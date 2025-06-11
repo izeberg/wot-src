@@ -109,7 +109,7 @@ package net.wg.gui.battle.views
       
       protected var excludedComponentAliases:Vector.<String>;
       
-      protected var _messagesContainer:Sprite = null;
+      private var _messagesContainer:Sprite = null;
       
       private var _componentsStorage:Object;
       
@@ -138,19 +138,20 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          var _loc3_:int = param1 >> 1;
-         var _loc4_:int = param2 >> 1;
+         _loc4_ = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
          this.prebattleTimer.updateStage(param1,param2);
          this.updatePrebattleTimerPosition(_loc3_);
          this.damagePanel.x = 0;
-         this.damagePanel.y = param2 - this.damagePanel.initedHeight;
+         this.damagePanel.y = param2 - this.damagePanel.initedHeight | 0;
          if(this.battleTimer)
          {
             this.battleTimer.x = param1 - this.battleTimer.initedWidth;

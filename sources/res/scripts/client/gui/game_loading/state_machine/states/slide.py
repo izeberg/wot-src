@@ -26,7 +26,8 @@ def _showImage(image, settings):
        'transitionTime': image.transition, 
        'ageRatingPath': settings.ageRatingPath, 
        'info': settings.info, 
-       'infoStyle': InfoStyles.DEFAULT.value}
+       'infoStyle': InfoStyles.DEFAULT.value, 
+       'hasVignette': settings.hasVignette}
     game_loading_bindings.setViewData(data)
     _logger.debug('Image [%s] shown.', image)
 

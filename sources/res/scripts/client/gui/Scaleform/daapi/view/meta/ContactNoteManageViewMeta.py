@@ -1,0 +1,10 @@
+from gui.Scaleform.daapi.view.meta.BaseManageContactViewMeta import BaseManageContactViewMeta
+
+class ContactNoteManageViewMeta(BaseManageContactViewMeta):
+
+    def sendData(self, data):
+        self._printOverrideError('sendData')
+
+    def as_setUserPropsS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setUserProps(value)

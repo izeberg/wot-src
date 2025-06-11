@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G178_Sturmtiger_V1/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.822977 -0.633144 -3.193680</min>
+		<max>1.824572 2.468293 3.111450</max>
+	</visibilityBox>
+	<parent>vehicles/german/G178_Sturmtiger_V1/normal/lod3/Hull</parent>
+	<extent>96</extent>
+</root>

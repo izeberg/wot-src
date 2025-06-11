@@ -416,139 +416,67 @@ msgid "chapter/currentStep/colon"
 msgstr "Бягучы этап:"
 
 msgid "chapter/fullName/1"
-msgstr "Сіла духу"
+msgstr "Сярод ліян"
 
-msgid "chapter/fullName/145"
-msgstr "Чырвоная Фурыя"
+msgid "chapter/fullName/171"
+msgstr "Сярод ліян"
 
-msgid "chapter/fullName/151"
-msgstr "Петрапаўлаўскі маяк"
+msgid "chapter/fullName/172"
+msgstr "Палярнае ззянне"
 
-msgid "chapter/fullName/152"
-msgstr "Шторм скораны"
+msgid "chapter/fullName/173"
+msgstr "Пяскі Калахары"
 
-msgid "chapter/fullName/153"
-msgstr "Сілавое поле"
-
-msgid "chapter/fullName/154"
-msgstr "Сумленная праца"
-
-msgid "chapter/fullName/161"
-msgstr "Сіла духу"
-
-msgid "chapter/fullName/162"
-msgstr "Усходні вецер"
-
-msgid "chapter/fullName/163"
-msgstr "Узвіся, сцяг!"
-
-msgid "chapter/fullName/164"
-msgstr "Пераможны марш"
-
-msgid "chapter/fullName/165"
-msgstr "Паляванне на мышэй"
+msgid "chapter/fullName/174"
+msgstr "Камчацкая балада"
 
 msgid "chapter/fullName/2"
-msgstr "Усходні вецер"
+msgstr "Палярнае ззянне"
 
 msgid "chapter/fullName/3"
-msgstr "Узвіся, сцяг!"
+msgstr "Пяскі Калахары"
 
 msgid "chapter/fullName/4"
-msgstr "Пераможны марш"
+msgstr "Камчацкая балада"
 
 msgid "chapter/fullName/5"
 msgstr "Паляванне на мышэй"
 
-msgid "chapter/fullName/quoted/145"
-msgstr "Чырвоная Фурыя"
+msgid "chapter/fullName/quoted/171"
+msgstr "Сярод ліян"
 
-msgid "chapter/fullName/quoted/151"
-msgstr "Петрапаўлаўскі маяк"
+msgid "chapter/fullName/quoted/172"
+msgstr "Палярнае ззянне"
 
-msgid "chapter/fullName/quoted/152"
-msgstr "Шторм скораны"
+msgid "chapter/fullName/quoted/173"
+msgstr "Пяскі Калахары"
 
-msgid "chapter/fullName/quoted/153"
-msgstr "Сілавое поле"
+msgid "chapter/fullName/quoted/174"
+msgstr "Камчацкая балада"
 
-msgid "chapter/fullName/quoted/154"
-msgstr "Сумленная праца"
+msgid "chapter/fullNameUppercased/171"
+msgstr "СЯРОД ЛІЯН"
 
-msgid "chapter/fullName/quoted/161"
-msgstr "Сіла духу"
+msgid "chapter/fullNameUppercased/172"
+msgstr "ПАЛЯРНАЕ ЗЗЯННЕ"
 
-msgid "chapter/fullName/quoted/162"
-msgstr "Усходні вецер"
+msgid "chapter/fullNameUppercased/173"
+msgstr "ПЯСКІ КАЛАХАРЫ"
 
-msgid "chapter/fullName/quoted/163"
-msgstr "Узвіся, сцяг!"
+msgid "chapter/fullNameUppercased/174"
+msgstr "КАМЧАЦКАЯ БАЛАДА"
 
-msgid "chapter/fullName/quoted/164"
-msgstr "Пераможны марш"
+msgid "chapter/fullNameUppercased/quoted/171"
+msgstr "СЯРОД ЛІЯН"
 
-msgid "chapter/fullName/quoted/165"
-msgstr "Паляванне на мышэй"
+msgid "chapter/fullNameUppercased/quoted/172"
+msgstr "ПАЛЯРНАЕ ЗЗЯННЕ"
 
-msgid "chapter/fullNameUppercased/145"
-msgstr "ЧЫРВОНАЯ ФУРЫЯ"
+msgid "chapter/fullNameUppercased/quoted/173"
+msgstr "ПЯСКІ КАЛАХАРЫ"
 
-msgid "chapter/fullNameUppercased/151"
-msgstr "ПЕТРАПАЎЛАЎСКІ МАЯК"
-
-msgid "chapter/fullNameUppercased/152"
-msgstr "ШТОРМ СКОРАНЫ"
-
-msgid "chapter/fullNameUppercased/153"
-msgstr "СІЛАВОЕ ПОЛЕ"
-
-msgid "chapter/fullNameUppercased/154"
-msgstr "СУМЛЕННАЯ ПРАЦА"
-
-msgid "chapter/fullNameUppercased/161"
-msgstr "СІЛА ДУХУ"
-
-msgid "chapter/fullNameUppercased/162"
-msgstr "УСХОДНІ ВЕЦЕР"
-
-msgid "chapter/fullNameUppercased/163"
-msgstr "УЗВІСЯ, СЦЯГ!"
-
-msgid "chapter/fullNameUppercased/164"
-msgstr "ПЕРАМОЖНЫ МАРШ"
-
-msgid "chapter/fullNameUppercased/165"
-msgstr "ПАЛЯВАННЕ НА МЫШЭЙ"
-
-msgid "chapter/fullNameUppercased/quoted/145"
-msgstr "ЧЫРВОНАЯ ФУРЫЯ"
-
-msgid "chapter/fullNameUppercased/quoted/151"
-msgstr "ПЕТРАПАЎЛАЎСКІ МАЯК"
-
-msgid "chapter/fullNameUppercased/quoted/152"
-msgstr "ШТОРМ СКОРАНЫ"
-
-msgid "chapter/fullNameUppercased/quoted/153"
-msgstr "СІЛАВОЕ ПОЛЕ"
-
-msgid "chapter/fullNameUppercased/quoted/154"
-msgstr "СУМЛЕННАЯ ПРАЦА"
-
-msgid "chapter/fullNameUppercased/quoted/161"
-msgstr "СІЛА ДУХУ"
-
-msgid "chapter/fullNameUppercased/quoted/162"
-msgstr "УСХОДНІ ВЕЦЕР"
-
-msgid "chapter/fullNameUppercased/quoted/163"
-msgstr "УЗВІСЯ, СЦЯГ!"
-
-msgid "chapter/fullNameUppercased/quoted/164"
-msgstr "ПЕРАМОЖНЫ МАРШ"
-
-msgid "chapter/fullNameUppercased/quoted/165"
-msgstr "ПАЛЯВАННЕ НА МЫШЭЙ"
+msgid "chapter/fullNameUppercased/quoted/174"
+msgstr "КАМЧАЦКАЯ БАЛАДА"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -813,8 +741,8 @@ msgstr "Узнагарода за ўзроўні фронту"
 
 msgid "howToEarnPoints/card/limitPoints/text"
 msgstr ""
-"Пасля дасягнення ліміту ачкоў на тэхніцы вы будзеце атрымліваць ва "
-"ўзнагароду дадатковыя ачкі."
+"Пры дасягненні ліміту ачкоў на тэхніцы вы будзеце атрымліваць ва ўзнагароду "
+"дадатковыя ачкі."
 
 msgid "howToEarnPoints/card/limitPoints/title"
 msgstr "Узнагарода за ліміт ачкоў"
@@ -853,7 +781,7 @@ msgid "howToEarnPoints/lose/43"
 msgstr "Паражэнне / нічыя"
 
 msgid "howToEarnPoints/lose/50"
-msgstr "Паражэнне"
+msgstr "Паражэнне / нічыя"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Месца %(startLevel)d–%(endLevel)d"
@@ -901,7 +829,7 @@ msgid "howToEarnPoints/text/21"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
 msgid "howToEarnPoints/text/22"
-msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)."
 
 msgid "howToEarnPoints/text/27"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
@@ -913,7 +841,7 @@ msgid "howToEarnPoints/text/43"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
 msgid "howToEarnPoints/text/50"
-msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)."
 
 msgid "howToEarnPoints/title"
 msgstr "ЯК ЗДАБЫЦЬ АЧКІ"
@@ -944,8 +872,8 @@ msgstr "ПРА БАЯВЫ ПРОПУСК"
 
 msgid "intro/bonus/text"
 msgstr ""
-"Пры дасягненні ліміту ачкоў на тэхніцы вам будуць налічаны ва ўзнагароду "
-"бонусныя ачкі. Узнагарода будзе даступная кожны тыдзень пасля абнаўлення "
+"Пры дасягненні ліміту ачкоў на пэўнай машыне вам будуць налічаны бонусныя "
+"ачкі ва ўзнагароду, якая будзе даступнай кожны тыдзень пасля абнаўлення "
 "ліміту. Больш інфармацыі можна знайсці ва ўкладцы «Як здабыць ачкі»."
 
 msgid "intro/bonus/title"
@@ -980,18 +908,19 @@ msgstr "ДАСТУПНЫ АДМЫСЛОВЫ РАЗДЗЕЛ"
 
 msgid "intro/subTitle"
 msgstr ""
-"Сезон прысвечаны 80-годдзю Перамогі ў Вялікай Айчыннай вайне. Вас чакаюць "
-"тэматычныя члены экіпажа, стылі і памятныя ўзнагароды, прымеркаваныя да "
-"гэтай знамянальнай падзеі."
+"У гэтым сезоне Канстанцін Кашчэеў пазнаёміць з пэўнымі эпізодамі свайго "
+"мінулага жыцця, якія адбыліся да таго, як ён патрапіў у «Перспектыву». Новыя"
+" героі, раскіданыя па ўсіх закутках свету, новыя выклікі і небяспечныя місіі"
+" — у Кашчэева знойдзецца куча гісторый для вячорак ля вогнішча."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: ПАЛЯВАННЕ НА МЫШЭЙ"
+msgstr "БАЯВЫ ПРОПУСК: ВАКОЛ СВЕТУ"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"У гэтым сезоне прадстаўлена новая ключавая тэхніка:т ІС-7, Аб. 268, Т-100 "
-"ЛТ. Гуляючы на гэтай тэхніцы вы зможаце здабыць больш бонусных ачкоў за "
-"дасягненне штодзённага ліміту ачкоў."
+"У гэтым сезоне прадстаўлена новая ключавая тэхніка: Rinoceronte, Wz.70 Żubr "
+"і Manticore. Гуляючы на гэтай тэхніцы, вы зможаце заслужыць больш бонусных "
+"ачкоў Баявога пропуска за дасягненне штодзённага ліміту ачкоў."
 
 msgid "intro/vehicles/title"
 msgstr "Новая ключавая тэхніка"
@@ -1469,7 +1398,7 @@ msgstr ""
 
 msgid "tooltips/RandomQuestTooltip/rewards/money"
 msgstr ""
-"%(whiteSpanish_Open)sКрэдыты, боны і вольны досвед%(whiteSpanish_Close)s"
+"%(whiteSpanish_Open)sСрэбра, боны і вольны досвед%(whiteSpanish_Close)s"
 
 msgid "tooltips/RandomQuestTooltip/rewards/personal_reserves"
 msgstr "%(whiteSpanish_Open)sАсабістыя рэзервы%(whiteSpanish_Close)s"
@@ -1684,6 +1613,9 @@ msgid "tooltips/inProgress/playGame/stronghold_units"
 msgstr ""
 "Правілы налічэння ачкоў у Вылазках і Наступленнях на тэхніцы VI, VII і X "
 "узроўняў."
+
+msgid "tooltips/inProgress/playGame/versus_ai"
+msgstr "Правілы налічэння ачкоў у Палігоне на тэхніцы VI-X узроўняў."
 
 msgid "tooltips/inProgress/timeLeft"
 msgstr "Засталося:"
@@ -1967,7 +1899,7 @@ msgid "trophyDeviceUpgradeConfim/submit"
 msgstr "Правесці наладку"
 
 msgid "trophyDeviceUpgradeConfim/submitTooltip"
-msgstr "Не стае крэдытаў на наладку"
+msgstr "Не стае срэбра на наладку"
 
 msgid "trophyDeviceUpgradeConfim/title"
 msgstr ""

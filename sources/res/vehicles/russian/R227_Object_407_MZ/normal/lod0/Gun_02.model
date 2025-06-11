@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.275171 -0.214079 -0.106450</min>
+		<max>0.349659 0.275078 6.380155</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R227_Object_407_MZ/normal/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R227_Object_407_MZ/normal/lod0/Gun_02</nodefullVisual>
+</root>

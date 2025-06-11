@@ -273,4 +273,12 @@
 		<PsIllumMultDeferred>1.000000</PsIllumMultDeferred>
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
 	</VFXLighting>
+	<WeatherDependentSettings>
+		<environment_dependent_emission>
+			<enabled>false</enabled>
+		</environment_dependent_emission>
+		<environment_dependent_lights>
+			<enabled>false</enabled>
+		</environment_dependent_lights>
+	</WeatherDependentSettings>
 </root>

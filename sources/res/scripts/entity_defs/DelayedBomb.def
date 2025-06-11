@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<ownerVehicleID>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</ownerVehicleID>
+		<size>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</size>
+		<hitYaw>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</hitYaw>
+		<hitPitch>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</hitPitch>
+		<prefab>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</prefab>
+	</Properties>
+	<CellMethods/>
+	<ClientMethods/>
+	<TempProperties/>
+	<shouldBackup>false</shouldBackup>
+</root>

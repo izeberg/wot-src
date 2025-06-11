@@ -1,14 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>
-			-0.387392 -0.10811 -0.12
-			<!--BW_String-->
-		</min>
-		<max>
-			0.388431 8 0.12
-			<!--BW_String-->
-		</max>
+		<min>-0.387392 -0.108110 -0.120000</min>
+		<max>0.388431 8.000000 0.120000</max>
 	</visibilityBox>
 	<parent>content/Environment/hd_env_UNI_414_Pole/normal/lod1/hd_env_UNI_414_Pole_07</parent>
 	<extent>48.000000</extent>

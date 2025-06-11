@@ -51,7 +51,7 @@ msgstr ""
 "золота:{orange_Close}"
 
 msgid "activation/clanBoostersDescription"
-msgstr "Кредиты и боевой опыт"
+msgstr "Серебро и боевой опыт"
 
 msgid "activation/clanBoostersDescriptionCrewAndFree"
 msgstr "Комбинированный опыт"
@@ -72,10 +72,10 @@ msgid "activation/comboXPTitle"
 msgstr "Комбинированный опыт"
 
 msgid "activation/creditsDescription"
-msgstr "Бонус к кредитам на 1 ч"
+msgstr "Бонус к серебру на 1 ч."
 
 msgid "activation/creditsTitle"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "activation/frontLineXPDescription"
 msgstr "Бонус к фронтовому опыту на 1 ч"
@@ -95,14 +95,14 @@ msgstr "Стоимость:"
 msgid "activation/subTitle/main"
 msgstr ""
 "Активируйте {whiteSpanish_Open}до трёх личных резервов{whiteSpanish_Close}, "
-"чтобы зарабатывать больше кредитов и опыта в бою. Вы можете приобрести "
-"больше личных резервов в %(store)s."
+"чтобы зарабатывать больше серебра и опыта в бою. Вы можете приобрести больше"
+" личных резервов в %(store)s."
 
 msgid "activation/subTitle/store"
 msgstr "Магазине"
 
 msgid "activation/terms/booster_credits"
-msgstr "кредитам"
+msgstr "серебру"
 
 msgid "activation/terms/booster_fl_xp"
 msgstr "фронтовому опыту"
@@ -154,10 +154,10 @@ msgid "conversionView/boosterDescription"
 msgstr "%(value)s на %(effectTime)s"
 
 msgid "conversionView/creditsSubtitle"
-msgstr "Конвертация кредитов"
+msgstr "Конвертация серебра"
 
 msgid "conversionView/creditsTitle"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "conversionView/crewAndFreeXPSubtitle"
 msgstr "Конвертация опыта экипажа и свободного опыта"
@@ -221,7 +221,7 @@ msgstr ""
 
 msgid "intro/pages/description2"
 msgstr ""
-"Улучшенные личные резервы дают увеличенный бонус к кредитам и опыту за бой. "
+"Улучшенные личные резервы дают увеличенный бонус к серебру и опыту за бой. "
 "Вы можете приобрести их за золото."
 
 msgid "intro/pages/description3"

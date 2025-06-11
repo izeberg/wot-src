@@ -2373,6 +2373,8 @@ package
       
       public static const TOKEN_DEFAULT_WOT:String = "#quests:token/default/wot";
       
+      public static const TOKEN_DEFAULT_DEFAULT:String = "#quests:token/default/default";
+      
       public static const TOKEN_DEFAULT_LIGHTTANK:String = "#quests:token/default/lightTank";
       
       public static const TOKEN_DEFAULT_MEDIUMTANK:String = "#quests:token/default/mediumTank";
@@ -2576,6 +2578,8 @@ package
       public static const BONUSNAME_TEAM_CREDITS_BONUS:String = "#quests:bonusName/team_credits_bonus";
       
       public static const BONUSNAME_DAILY_QUESTS_REWARDS:String = "#quests:bonusName/daily_quests_rewards";
+      
+      public static const BONUSNAME_BUMBLEBEE_COIN:String = "#quests:bonusName/bumblebee_coin";
       
       public static const ACTION_AUTO_CALENDAR:String = "#quests:action/auto/calendar";
       

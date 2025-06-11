@@ -38,10 +38,6 @@
 						normalMap
 						<Texture>content/Environment/hd_env_SU_1009_Embankment_Colonnade/hd_env_SU_1009_Embankment_Colonnade_BANM.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-0.009458 5.781716 -0.196952</groupOrigin>
 			</primitiveGroup>

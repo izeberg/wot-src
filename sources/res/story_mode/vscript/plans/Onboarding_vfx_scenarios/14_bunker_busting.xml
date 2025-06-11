@@ -46,25 +46,21 @@
 				</slots>
 			</block>
 			<block>
-				<class>Delay</class>
-				<id>Delay_5</id>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
 				<params>
 					<param>
-						StringT
-						<name>Value Type</name>
-						<type>TypeT</type>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
-				<slots>
-					<slot>
-						<name>time</name>
-						<const>\9.500000\</const>
-					</slot>
-					<slot>
-						<name>stack</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
 				<class>FindFirstNode</class>
@@ -94,26 +90,30 @@
 				<slots/>
 			</block>
 			<block>
+				<class>Delay</class>
+				<id>Delay_5</id>
+				<params>
+					<param>
+						StringT
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>time</name>
+						<const>\9.500000\</const>
+					</slot>
+					<slot>
+						<name>stack</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>ActivateGameObject</class>
 				<id>ActivateGameObject_2</id>
 				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
-				<params>
-					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						getSelf
-						<name>Member Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
 				<slots/>
 			</block>
 			<block>
@@ -122,16 +122,8 @@
 				<params/>
 				<slots>
 					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
 						<name>maxCount</name>
-						<const>\3\</const>
-					</slot>
-					<slot>
-						<name>cooldown</name>
-						<const>\10.000000\</const>
+						<const>\1\</const>
 					</slot>
 				</slots>
 			</block>
@@ -298,12 +290,6 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>ActivateGameObject_1</from>
-				<input>input</input>
-				<to>Delay_5</to>
-				<output>out</output>
-			</connection>
-			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>FindFirstNode_3</to>
@@ -332,6 +318,12 @@
 				<input>gameObject</input>
 				<to>ActivateGameObject_1</to>
 				<output>node</output>
+			</connection>
+			<connection>
+				<from>ActivateGameObject_1</from>
+				<input>input</input>
+				<to>Delay_5</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>Delay_5</from>

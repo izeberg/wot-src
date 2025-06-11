@@ -29,11 +29,7 @@ package net.wg.gui.lobby.battleResults.components
       
       private static const LINK_BTN:String = "LinkBtn_UI";
       
-      private static const TEXT_HEIGHT:int = 6;
-      
-      private static const CONDITION_STATUS_PADDING_TOP:int = 2;
-      
-      private static const MAIN_COND_PADDING_TOP:int = 10;
+      private static const CONDITIONS_BASE_OFFSET:int = 19;
       
       private static const LINK_BTN_PADDING_TOP:int = 1;
       
@@ -41,15 +37,13 @@ package net.wg.gui.lobby.battleResults.components
       
       private static const LINK_BTN_PADDING_H:int = 5;
       
-      private static const ADD_COND_PADDING_TOP:int = 9;
+      private static const BOTTOM_QUEST_OFFSET:int = 24;
       
       private static const QUEST_STATUS_PADDING_TOP:int = 4;
       
       private static const QUEST_DESCR_CONTENT_TF_Y:int = 38;
       
       private static const QUEST_DESCR_TF_Y:int = 29;
-      
-      private static const PERSONAL_INFO_VISIBLE_LEN:int = 2;
       
       private static const TF_X:int = 20;
       
@@ -60,6 +54,8 @@ package net.wg.gui.lobby.battleResults.components
       private static const DOTS:String = "...";
       
       private static const QUEST_TITLE_TF_MAX_WIDTH:int = 280;
+      
+      private static const PERSONAL_QUEST_LINK:String = "PersonalConditionUI";
        
       
       public var questTitleTF:TextField = null;
@@ -68,17 +64,11 @@ package net.wg.gui.lobby.battleResults.components
       
       public var questStatus:PersonalQuestState = null;
       
-      public var mainConditionTF:TextField = null;
-      
-      public var additionalConditionTF:TextField = null;
-      
       public var lineMC:MovieClip = null;
       
       public var collapsedToggleBtn:ISoundButtonEx = null;
       
-      public var mainStatusTF:TextField = null;
-      
-      public var additionalStatusTF:TextField = null;
+      public var quests:Vector.<PersonalCondition> = null;
       
       private var _model:BattleResultsQuestVO = null;
       
@@ -89,6 +79,10 @@ package net.wg.gui.lobby.battleResults.components
       private var _factory:IClassFactory;
       
       private var _toolTipMgr:ITooltipMgr;
+      
+      private var prevCondHeight:int = 0;
+      
+      private var lastYpos:int = 0;
       
       public function BattleResultsPersonalQuest()
       {
@@ -102,16 +96,11 @@ package net.wg.gui.lobby.battleResults.components
          super.configUI();
          this.collapsedToggleBtn.selected = true;
          this.collapsedToggleBtn.addEventListener(ButtonEvent.CLICK,this.onCollapsedToggleBtnClickHandler);
-         this.mainConditionTF.addEventListener(MouseEvent.ROLL_OVER,this.onMainConditionTFRollOverHandler);
-         this.mainConditionTF.addEventListener(MouseEvent.ROLL_OUT,this.onMainConditionTFRollOutHandler);
-         this.additionalConditionTF.addEventListener(MouseEvent.ROLL_OVER,this.onAdditionalConditionTFRollOverHandler);
-         this.additionalConditionTF.addEventListener(MouseEvent.ROLL_OUT,this.onAdditionalConditionTFRollOutHandler);
+         this.quests = new Vector.<PersonalCondition>();
       }
       
       override protected function draw() : void
       {
-         var _loc1_:PersonalInfoVO = null;
-         var _loc2_:PersonalInfoVO = null;
          super.draw();
          if(this._model != null && isInvalid(InvalidationType.DATA))
          {
@@ -145,27 +134,39 @@ package net.wg.gui.lobby.battleResults.components
                this.questDescrTF.htmlText = this._model.descr;
                App.utils.commons.updateTextFieldSize(this.questDescrTF);
             }
-            _loc1_ = this._model.personalInfo[0];
-            this.mainConditionTF.htmlText = _loc1_.text;
-            this.mainConditionTF.height = this.mainConditionTF.textHeight + TEXT_HEIGHT | 0;
-            this.mainStatusTF.htmlText = _loc1_.statusText;
-            App.utils.commons.updateTextFieldSize(this.mainStatusTF);
-            this.mainStatusTF.x = width - this.mainStatusTF.width | 0;
-            if(this._model.personalInfo.length == PERSONAL_INFO_VISIBLE_LEN)
-            {
-               _loc2_ = this._model.personalInfo[1];
-               this.additionalConditionTF.htmlText = _loc2_.text;
-               this.additionalConditionTF.height = this.additionalConditionTF.textHeight + TEXT_HEIGHT | 0;
-               this.additionalStatusTF.htmlText = _loc2_.statusText;
-               App.utils.commons.updateTextFieldSize(this.additionalStatusTF);
-               this.additionalStatusTF.x = width - this.additionalStatusTF.width | 0;
-            }
+            this.deleteConditions();
+            this.setQuestInfo();
             this.doLayout();
          }
       }
       
+      private function setQuestInfo() : void
+      {
+         var _loc3_:Boolean = false;
+         var _loc4_:int = 0;
+         var _loc5_:PersonalInfoVO = null;
+         var _loc6_:PersonalCondition = null;
+         var _loc1_:int = this._model.personalInfo.length;
+         var _loc2_:int = 0;
+         while(_loc2_ < _loc1_)
+         {
+            _loc3_ = _loc2_ % 2 == 0;
+            _loc4_ = 0;
+            while(_loc4_ < this._model.personalInfo[_loc2_].length)
+            {
+               _loc5_ = this._model.personalInfo[_loc2_][_loc4_];
+               _loc6_ = this.createCondition(_loc5_.text,_loc5_.statusText,_loc3_);
+               this.quests.push(_loc6_);
+               _loc4_++;
+            }
+            _loc2_++;
+         }
+         this.setQuestPosition();
+      }
+      
       override protected function onDispose() : void
       {
+         var _loc1_:PersonalCondition = null;
          if(this._linkBtn != null)
          {
             this._linkBtn.removeEventListener(ButtonEvent.CLICK,this.onLinkBtnClickHandler);
@@ -193,17 +194,15 @@ package net.wg.gui.lobby.battleResults.components
          this.questTitleTF.removeEventListener(MouseEvent.ROLL_OUT,this.onQuestTitleTFRollOutHandler);
          this.questTitleTF.removeEventListener(MouseEvent.ROLL_OVER,this.onQuestTitleTFRollOverHandler);
          this.questTitleTF = null;
-         this.mainConditionTF.removeEventListener(MouseEvent.ROLL_OVER,this.onMainConditionTFRollOverHandler);
-         this.mainConditionTF.removeEventListener(MouseEvent.ROLL_OUT,this.onMainConditionTFRollOutHandler);
-         this.additionalConditionTF.removeEventListener(MouseEvent.ROLL_OVER,this.onAdditionalConditionTFRollOverHandler);
-         this.additionalConditionTF.removeEventListener(MouseEvent.ROLL_OUT,this.onAdditionalConditionTFRollOutHandler);
-         this.mainConditionTF = null;
-         this.additionalConditionTF = null;
-         this.questDescrTF = null;
-         this.mainStatusTF = null;
-         this.additionalStatusTF = null;
          this._factory = null;
          this._toolTipMgr = null;
+         this.deleteConditions();
+         for each(_loc1_ in this.quests)
+         {
+            _loc1_.dispose();
+         }
+         this.quests.splice(0,this.quests.length);
+         this.quests = null;
          super.onDispose();
       }
       
@@ -226,7 +225,8 @@ package net.wg.gui.lobby.battleResults.components
       
       private function doLayout() : void
       {
-         var _loc1_:TextField = null;
+         var _loc1_:int = 0;
+         var _loc2_:int = 0;
          this.questStatus.x = width - this.questStatus.width - STATE_RIGHT | 0;
          this.questStatus.y = this.questTitleTF.y + QUEST_STATUS_PADDING_TOP | 0;
          this.lineMC.y = this.questTitleTF.y + this.questTitleTF.height + LINE_SEPARATOR_PADDING | 0;
@@ -238,24 +238,15 @@ package net.wg.gui.lobby.battleResults.components
          if(this.collapsedToggleBtn.selected && this._model.collapsedToggleBtnVisible && this._model.personalInfo != null)
          {
             this.questDescrTF.y = QUEST_DESCR_CONTENT_TF_Y;
-            _loc1_ = !!this._hasQuestDescr ? this.questDescrTF : this.questTitleTF;
-            this.mainConditionTF.y = _loc1_.y + _loc1_.height + MAIN_COND_PADDING_TOP | 0;
-            this.mainStatusTF.y = this.mainConditionTF.y + CONDITION_STATUS_PADDING_TOP | 0;
-            if(this._model.personalInfo.length == PERSONAL_INFO_VISIBLE_LEN)
-            {
-               this.additionalConditionTF.y = this.mainConditionTF.y + this.mainConditionTF.height + ADD_COND_PADDING_TOP | 0;
-               this.additionalConditionTF.visible = true;
-               this.additionalStatusTF.y = this.additionalConditionTF.y + CONDITION_STATUS_PADDING_TOP | 0;
-               this.additionalStatusTF.visible = true;
-               this.lineMC.y = this.additionalConditionTF.y + this.additionalConditionTF.height + LINE_SEPARATOR_PADDING | 0;
-            }
-            else
-            {
-               this.lineMC.y = this.mainConditionTF.y + this.mainConditionTF.height + LINE_SEPARATOR_PADDING | 0;
-            }
+            this.setQuestPosition();
+            this.lineMC.y = this.lastYpos + this.prevCondHeight + LINE_SEPARATOR_PADDING | 0;
             this.questDescrTF.visible = this._hasQuestDescr;
-            this.mainConditionTF.visible = true;
-            this.mainStatusTF.visible = true;
+            _loc1_ = 0;
+            while(_loc1_ < this.quests.length)
+            {
+               this.quests[_loc1_].visible = true;
+               _loc1_++;
+            }
          }
          else
          {
@@ -270,17 +261,68 @@ package net.wg.gui.lobby.battleResults.components
                this.questDescrTF.y = 0;
                this.questDescrTF.visible = false;
             }
-            this.mainConditionTF.y = 0;
-            this.additionalConditionTF.y = 0;
-            this.mainStatusTF.y = 0;
-            this.additionalStatusTF.y = 0;
-            this.mainConditionTF.visible = false;
-            this.additionalConditionTF.visible = false;
-            this.mainStatusTF.visible = false;
-            this.additionalStatusTF.visible = false;
+            _loc2_ = 0;
+            while(_loc2_ < this.quests.length)
+            {
+               this.quests[_loc2_].y = 0;
+               this.quests[_loc2_].visible = false;
+               _loc2_++;
+            }
          }
          setSize(width,this.lineMC.y);
          dispatchEvent(new Event(Event.RESIZE,true));
+      }
+      
+      private function setQuestPosition() : void
+      {
+         var _loc1_:PersonalCondition = null;
+         this.prevCondHeight = 0;
+         this.lastYpos = 0;
+         for each(_loc1_ in this.quests)
+         {
+            if(this.lastYpos <= 0)
+            {
+               this.lastYpos = CONDITIONS_BASE_OFFSET;
+            }
+            else
+            {
+               this.lastYpos = CONDITIONS_BASE_OFFSET / 2 - 2 + this.prevCondHeight;
+            }
+            _loc1_.y = this.lastYpos;
+            this.prevCondHeight = _loc1_.getTextHeight() + BOTTOM_QUEST_OFFSET;
+         }
+      }
+      
+      private function createCondition(param1:String, param2:String, param3:Boolean) : PersonalCondition
+      {
+         var _loc4_:PersonalCondition = App.utils.classFactory.getComponent(PERSONAL_QUEST_LINK,PersonalCondition);
+         _loc4_.setData(param1,param2,param3);
+         var _loc5_:Function = !!param3 ? this.onMainConditionTFRollOverHandler : this.onAdditionalConditionTFRollOverHandler;
+         var _loc6_:Function = !!param3 ? this.onMainConditionTFRollOutHandler : this.onAdditionalConditionTFRollOutHandler;
+         _loc4_.addEventListener(MouseEvent.ROLL_OVER,_loc5_);
+         _loc4_.addEventListener(MouseEvent.ROLL_OUT,_loc6_);
+         addChild(_loc4_);
+         return _loc4_;
+      }
+      
+      private function deleteConditions() : void
+      {
+         var _loc1_:PersonalCondition = null;
+         var _loc2_:Function = null;
+         var _loc3_:Function = null;
+         if(this.quests != null)
+         {
+            for each(_loc1_ in this.quests)
+            {
+               removeChild(_loc1_);
+               _loc2_ = !!_loc1_.isMainQuest() ? this.onMainConditionTFRollOverHandler : this.onAdditionalConditionTFRollOverHandler;
+               _loc3_ = !!_loc1_.isMainQuest() ? this.onMainConditionTFRollOutHandler : this.onAdditionalConditionTFRollOutHandler;
+               _loc1_.removeEventListener(MouseEvent.ROLL_OVER,_loc2_);
+               _loc1_.removeEventListener(MouseEvent.ROLL_OUT,_loc3_);
+               _loc1_.dispose();
+            }
+            this.quests.splice(0,this.quests.length);
+         }
       }
       
       private function createLinkBtn() : void

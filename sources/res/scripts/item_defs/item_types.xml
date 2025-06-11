@@ -84,9 +84,6 @@
 			<private/>
 			<disabledInRoaming/>
 			<event_battles/>
-			<event_premium_vehicle/>
-			<event_not_elite_vehicle/>
-			<event_overturn_recovery/>
 			<fallout/>
 			<epic_battles/>
 			<bob/>
@@ -101,23 +98,6 @@
 			<premiumIGR/>
 			<HD/>
 			<pillbox/>
-			<stationary/>
-			<supply/>
-			<supply_Pillbox/>
-			<supply_Bunker/>
-			<supply_ATgun/>
-			<supply_Barricades/>
-			<supply_WatchTower/>
-			<supply_Mortar/>
-			<supply_Flamer/>
-			<supply_hull_bsp_model/>
-			<supply_turret_bsp_model/>
-			<supply_WithoutSelfRamming/>
-			<supply_WithoutRamming/>
-			<supply_structure/>
-			<noCollisionWhenDestroyed/>
-			<isDestructibleSupply/>
-			<visibleToWatchTower/>
 			<dog/>
 			<excluded_from_sandbox/>
 			<testTank/>
@@ -137,7 +117,6 @@
 			<wheeledVehicle/>
 			<wheeledVehicleWithoutFeatures/>
 			<magneticAutoAim/>
-			<burnout/>
 			<lockDevices/>
 			<lockEquipment/>
 			<lockShells/>
@@ -184,7 +163,6 @@
 			<rentEligible/>
 			<bot_hunter/>
 			<debutBoxes/>
-			<notInShop/>
 		</tags>
 	</vehicle>
 	<vehicleChassis>
@@ -275,7 +253,6 @@
 			<minefield/>
 			<artillery/>
 			<bomber/>
-			<pick-up/>
 		</tags>
 	</shell>
 	<equipment>
@@ -316,18 +293,13 @@
 			<additInvisibilityDevice/>
 			<commandersView/>
 			<notBuyWhenAutoEquip/>
-			<eventItem/>
-			<eventBuff/>
-			<event_battles/>
-			<hb_ability/>
-			<hb_passive_ability/>
-			<hb_roleAbility/>
 			<repairKitBattleRoyale/>
 			<advancedLogging/>
 			<hideIfNotInShop/>
 			<builtinPerkBooster/>
 			<roleEquipment/>
 			<poiEquipment/>
+			<visualScriptAbilityEquipment/>
 			<abilityEquipment/>
 			<public/>
 			<stopOutsideBattle/>
@@ -399,7 +371,6 @@
 			<offspringArenaMusic/>
 			<sabatonArenaMusic/>
 			<ariaArenaMusic/>
-			<event_battles/>
 		</tags>
 	</customizationItem>
 	<crewSkin>

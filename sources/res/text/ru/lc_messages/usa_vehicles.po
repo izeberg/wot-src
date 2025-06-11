@@ -59,6 +59,25 @@ msgstr "T28 HTC"
 msgid "A102_T28_concept_short_special"
 msgstr "Достойное бронирование, прекрасные УГН"
 
+msgid "A1038_T92_T"
+msgstr "T92 HMC T"
+
+msgid "A1038_T92_T_descr"
+msgstr ""
+"Американская САУ, разработанная в 1945 году на базе танка Т26Е3 для "
+"разрушения бункеров и глубоких укрытий в боях с японскими войсками на "
+"островах Тихого океана. Было построено пять машин, включая опытный образец. "
+"Впоследствии работы над САУ были прекращены в связи с окончанием войны."
+
+msgid "A1038_T92_T_long_special"
+msgstr "?empty?"
+
+msgid "A1038_T92_T_short"
+msgstr "T92 HMC T"
+
+msgid "A1038_T92_T_short_special"
+msgstr "?empty?"
+
 msgid "A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
@@ -659,7 +678,7 @@ msgid "A132_T77_short"
 msgstr "T77"
 
 msgid "A132_T77_short_special"
-msgstr "Быстрая реализации магазина, хороший урон, удобные УВН."
+msgstr "Быстрая реализация магазина, хороший урон, удобные УВН."
 
 msgid "A134_M24E2_SuperChaffee"
 msgstr "M24E2 Super Chaffee"
@@ -1736,6 +1755,9 @@ msgstr "M56 Scorpion"
 msgid "Chassis_A102_T28_concept"
 msgstr "T28 Concept"
 
+msgid "Chassis_A1038_T92_T"
+msgstr "T92 HMC T"
+
 msgid "Chassis_A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
@@ -2759,6 +2781,9 @@ msgstr "Ford GAF"
 msgid "Ford_GAF_R1"
 msgstr "Ford GAF (T92 HMC)"
 
+msgid "Ford_GAF_R1_T"
+msgstr "Ford GAF (T92 HMC) T"
+
 msgid "Ford_GAF_V8"
 msgstr "Ford GAF V8"
 
@@ -3401,6 +3426,9 @@ msgstr "SCR 528AM"
 
 msgid "SCR_528R1"
 msgstr "SCR 528A"
+
+msgid "SCR_528R1_T"
+msgstr "SCR 528A T"
 
 msgid "SCR_528_594"
 msgstr "SCR 528"
@@ -4176,6 +4204,9 @@ msgstr "M56 Scorpion"
 
 msgid "Turret_1_A102_T28_concept"
 msgstr "T28 Concept"
+
+msgid "Turret_1_A1038_T92_T"
+msgstr "T92 HMC T"
 
 msgid "Turret_1_A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
@@ -5250,14 +5281,26 @@ msgstr "20 mm Hispano-Suiza"
 msgid "_240mm_HE_M146"
 msgstr "HE M146"
 
+msgid "_240mm_HE_M146_T"
+msgstr "HE M146 T"
+
 msgid "_240mm_HE_M160"
 msgstr "HE M160"
+
+msgid "_240mm_HE_M160_T"
+msgstr "HE M160 T"
 
 msgid "_240mm_Howitzer_M1"
 msgstr "240 mm Howitzer M1"
 
+msgid "_240mm_Howitzer_M1_T"
+msgstr "240 mm Howitzer M1 T"
+
 msgid "_240mm_M114_M78"
 msgstr "M114/M78"
+
+msgid "_240mm_M114_M78_T"
+msgstr "M114/M78 T"
 
 msgid "_2pdr_APCNR_Mk.1"
 msgstr "APCNR Mk. 1"

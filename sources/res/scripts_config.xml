@@ -161,6 +161,15 @@
 			<explosion_snow_GMM>
 				<texture>maps/fx/decal_snow_1_GMM.dds</texture>
 			</explosion_snow_GMM>
+			<explosion_snow_RW_AM>
+				<texture>maps/fx/decal_snow_RW_01_AM.dds</texture>
+			</explosion_snow_RW_AM>
+			<explosion_snow_RW_NM>
+				<texture>maps/fx/decal_snow_RW_01_NM.dds</texture>
+			</explosion_snow_RW_NM>
+			<explosion_snow_RW_GMM>
+				<texture>maps/fx/decal_snow_RW_01_GMM.dds</texture>
+			</explosion_snow_RW_GMM>
 			<explosion_stone_AM>
 				<texture>maps/fx/decal_stone_1_AM.dds</texture>
 			</explosion_stone_AM>
@@ -242,6 +251,15 @@
 			<flamethrower_GMM>
 				<texture>maps/fx/flamethrower_GMM.dds</texture>
 			</flamethrower_GMM>
+			<explosion_RW_AM>
+				<texture>maps/fx/decal_RW_01_AM.dds</texture>
+			</explosion_RW_AM>
+			<explosion_RW_NM>
+				<texture>maps/fx/decal_RW_01_NM.dds</texture>
+			</explosion_RW_NM>
+			<explosion_RW_GMM>
+				<texture>maps/fx/decal_RW_01_GMM.dds</texture>
+			</explosion_RW_GMM>
 		</textures>
 	</decal>
 	<camouflage>
@@ -259,7 +277,7 @@
 			<short_name>RU1</short_name>
 			<url>login.p1.tanki.su:20014</url>
 			<url_token>login2.p1.tanki.su:20014</url_token>
-			<public_key_path>loginapp_wot.pubkey</public_key_path>
+			<public_key_path>loginapp_mt.pubkey</public_key_path>
 			<periphery_id>101</periphery_id>
 		</host>
 		<host>
@@ -267,7 +285,7 @@
 			<short_name>RU2</short_name>
 			<url>login.p2.tanki.su:20014</url>
 			<url_token>login2.p2.tanki.su:20014</url_token>
-			<public_key_path>loginapp_wot.pubkey</public_key_path>
+			<public_key_path>loginapp_mt.pubkey</public_key_path>
 			<periphery_id>102</periphery_id>
 		</host>
 		<host>
@@ -275,7 +293,7 @@
 			<short_name>RU4</short_name>
 			<url>login.p4.tanki.su:20014</url>
 			<url_token>login2.p4.tanki.su:20014</url_token>
-			<public_key_path>loginapp_wot.pubkey</public_key_path>
+			<public_key_path>loginapp_mt.pubkey</public_key_path>
 			<periphery_id>104</periphery_id>
 		</host>
 		<host>
@@ -283,7 +301,7 @@
 			<short_name>RU6</short_name>
 			<url>login.p6.tanki.su:20014</url>
 			<url_token>login2.p6.tanki.su:20014</url_token>
-			<public_key_path>loginapp_wot.pubkey</public_key_path>
+			<public_key_path>loginapp_mt.pubkey</public_key_path>
 			<periphery_id>106</periphery_id>
 		</host>
 		<host>
@@ -291,7 +309,7 @@
 			<short_name>RU8</short_name>
 			<url>login.p8.tanki.su:20014</url>
 			<url_token>login2.p8.tanki.su:20014</url_token>
-			<public_key_path>loginapp_wot.pubkey</public_key_path>
+			<public_key_path>loginapp_mt.pubkey</public_key_path>
 			<periphery_id>108</periphery_id>
 		</host>
 		<host>
@@ -299,7 +317,7 @@
 			<short_name>RU9</short_name>
 			<url>login.p9.tanki.su:20014</url>
 			<url_token>login2.p9.tanki.su:20014</url_token>
-			<public_key_path>loginapp_wot.pubkey</public_key_path>
+			<public_key_path>loginapp_mt.pubkey</public_key_path>
 			<periphery_id>109</periphery_id>
 		</host>
 	</login>

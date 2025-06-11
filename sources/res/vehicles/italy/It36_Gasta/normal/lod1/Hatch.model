@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It36_Gasta/normal/lod1/Hatch</nodefullVisual>
+	<parent>vehicles/italy/It36_Gasta/normal/lod2/Hatch</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>1.083423 0.231461 -0.895444</min>
+		<max>1.259749 0.460040 -0.631956</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

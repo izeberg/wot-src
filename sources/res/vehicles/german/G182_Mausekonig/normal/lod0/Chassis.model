@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.201962 -0.000074 -4.854267</min>
+		<max>2.201962 1.304310 4.836025</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G182_Mausekonig/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G182_Mausekonig/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -1,0 +1,1049 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>60.000004</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Big</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_big.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.029900 -0.039867 -0.029900</inTangent>
+				<outTangent>-0.029900 -0.039867 -0.029900</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.033337</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.029900 -0.039867 -0.029900</inTangent>
+				<outTangent>-0.029900 -0.039867 -0.029900</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-4.070000 -4.590000 -2.660000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 40.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-2.420000 -4.590000 -3.990000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 70.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_03</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.990000 -4.590000 -4.530000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.270000 -4.590000 -4.520000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 100.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_05</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.690000 -4.590000 -4.140000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 140.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_06</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.030000 -4.590000 -3.300000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 170.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>small_07</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_small.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>4.560000 -4.590000 -1.990000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 200.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_01</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-4.780629 -4.590000 -1.200024</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 20.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_02</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-3.149614 -4.590000 -3.684223</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_03</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.678294 -4.590002 -4.562279</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 50.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_04</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.310000 -4.590003 -4.560000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 80.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_05</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.896626 -4.590003 -4.560001</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 120.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_06</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.440000 -4.590005 -3.910000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 160.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_07</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>3.961029 -4.590007 -2.765686</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 200.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>medium_08</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/h08_mt_hangar/h08_mt_fountain_medium.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>5.020568 -4.590010 -0.882359</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 220.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>30.000002</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>40.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>-0.030000 -0.040000 -0.030000</inTangent>
+				<outTangent>-0.030000 -0.040000 -0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>50.000004</startTime>
+				<value>0.400000 0.200000 0.400000</value>
+				<inTangent>0.030000 0.040000 0.030000</inTangent>
+				<outTangent>0.030000 0.040000 0.030000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>60.000004</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.060000 0.080000 0.060000</inTangent>
+				<outTangent>0.060000 0.080000 0.060000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

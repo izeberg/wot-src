@@ -44,6 +44,14 @@
 						g_surfaceSpecularMultiplier
 						<Float>0.000000</Float>
 					</property>
+					<property>
+						g_LumMap
+						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_PM.dds</Texture>
+					</property>
+					<property>
+						g_platesSelfIlluminationMap
+						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_PM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.437832 7.783343 -0.850488</groupOrigin>
 			</primitiveGroup>
@@ -123,6 +131,10 @@
 					<property>
 						g_tile0Tint
 						<Vector4>0.560784 0.501961 0.482353 1.000000</Vector4>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_railroad_01_DM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.434152 8.987350 -0.799642</groupOrigin>
@@ -460,10 +472,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-17.619135 -1.081346 -11.566666</min>
-		<max>18.639269 19.103071 9.764104</max>
+		<min>-17.619135 -1.084878 -11.088423</min>
+		<max>18.639269 19.103071 9.764098</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1818182</geometrySize>
+	<geometrySize>1818622</geometrySize>
 	<minUVDensity>0.001006</minUVDensity>
 </root>

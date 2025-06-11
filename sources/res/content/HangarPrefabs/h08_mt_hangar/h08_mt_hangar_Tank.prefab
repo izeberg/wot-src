@@ -511,7 +511,10 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>6 15</value>
+						<value>
+							6 13.2
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartYaw</name>

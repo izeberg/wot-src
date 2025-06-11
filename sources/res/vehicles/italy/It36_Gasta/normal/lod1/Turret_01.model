@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/italy/It36_Gasta/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.503351 -0.000000 -2.013610</min>
+		<max>1.499438 2.480156 1.374506</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It36_Gasta/normal/lod1/Turret_01</nodefullVisual>
+</root>

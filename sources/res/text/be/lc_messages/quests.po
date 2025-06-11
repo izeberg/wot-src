@@ -39,7 +39,7 @@ msgid "action/auto/equipment/mixed"
 msgstr "Зніжка на куплю рыштунку"
 
 msgid "action/auto/exchangeRate"
-msgstr "Бонус да абмену золата на крэдыты"
+msgstr "Бонус да абмену золата на срэбра"
 
 msgid "action/auto/femalePassportChangeCost"
 msgstr "Зніжка на змену дакументаў танкістаў"
@@ -165,7 +165,7 @@ msgid "action/auto/winXPFactorMode/daily"
 msgstr "Бонус да баявога досведу за першую перамогу за дзень"
 
 msgid "action/booster/booster_credits"
-msgstr "Крэдыты за бой"
+msgstr "Срэбра за бой"
 
 msgid "action/booster/booster_crew_xp"
 msgstr "Досвед экіпажу за бой"
@@ -423,12 +423,12 @@ msgstr ""
 
 msgid "action/full/creditsDropSkillsCost"
 msgstr ""
-"Скіньце выбраныя навыкі танкістаў за крэдыты са зніжкай %(discount)s. Гэта "
+"Скіньце выбраныя навыкі танкістаў за срэбра са зніжкай %(discount)s. Гэта "
 "дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі."
 
 msgid "action/full/creditsTankmanCost"
 msgstr ""
-"Навучыце або перавучыце экіпаж за крэдыты са зніжкай %(discount)s. Добра "
+"Навучыце або перавучыце экіпаж за срэбра са зніжкай %(discount)s. Добра "
 "спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней "
 "рэалізоўваць яе патэнцыял."
 
@@ -439,8 +439,9 @@ msgstr ""
 
 msgid "action/full/exchangeRate"
 msgstr ""
-"Абмяняйце золата на крэдыты па выгадным курсе %(discount)s. Такім чынам вы "
-"зэканоміце час і хутчэй купіце жаданую машыну, дарагое абсталяванне і г.д."
+"Абмяняйце золата на срэбра па выгадным курсе %(discount)s. Такім чынам вы "
+"зэканоміце час на заробак срэбра і хутчэй купіце жаданую машыну, дарагое "
+"абсталяванне і г.д."
 
 msgid "action/full/femalePassportChangeCost"
 msgstr ""
@@ -524,7 +525,7 @@ msgstr ""
 
 msgid "action/full/shell/creditsPriceMultiplier"
 msgstr ""
-"Купляйце снарады за крэдыты са зніжкай у %(discount)s. Папоўніўшы боезапас "
+"Купляйце снарады за срэбра са зніжкай у %(discount)s. Папоўніўшы боезапас "
 "зараз, вы зэканоміце свае рэсурсы ў далейшым."
 
 msgid "action/full/shell/goldPriceMultiplier"
@@ -597,13 +598,13 @@ msgstr ""
 
 msgid "action/hero/full/creditsDropSkillsCost"
 msgstr ""
-"Скіньце выбраныя навыкі танкістаў за крэдыты са зніжкай %(discount)s. Гэта дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі.\n"
+"Скіньце выбраныя навыкі танкістаў за срэбра са зніжкай %(discount)s. Гэта дапаможа пры пераводзе экіпажа на машыну з іншай роллю ў баі.\n"
 "\n"
-"Гэтая магчымасць будзе карыснай пры змене тыпу тэхнікі з захаваннем экіпажа або пры змене вашага стылю гульні: напрыклад, калі вы вырашыце выкарыстоўваць у баі тактыку скрытасці або пераведзяце экіпаж з цяжкага танка на СТ-САУ, то прыярытэтным навыкам будзе «Маскіроўка»."
+"Гэтая магчымасць будзе карыснай пры змене тыпу тэхнікі з захаваннем экіпажа або пры змене вашага стылю гульні: напрыклад, калі вы вырашыце выкарыстоўваць у баі тактыку скрытасці або пераведзяце экіпаж з цяжкага танка на СТ-САУ, то прыярытэтным навыкам стане «маскіроўка»."
 
 msgid "action/hero/full/creditsTankmanCost"
 msgstr ""
-"Навучыце або перавучыце экіпаж за крэдыты са зніжкай %(discount)s. Добра спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней рэалізоўваць яе патэнцыял.\n"
+"Навучыце або перавучыце экіпаж за срэбра са зніжкай %(discount)s. Добра спрактыкаваны экіпаж паляпшае характарыстыкі машыны і дапамагае эфектыўней рэалізоўваць яе патэнцыял.\n"
 "\n"
 "Звярніце ўвагу, што характарыстыкі машыны ў Гаражы паказаны з улікам экіпажу, спрактыкаванага на 100%%. Такім чынам, калі ў бой уступіць слабейшы экіпаж, характарыстыкі машыны будуць ніжэйшыя за заяўленыя ў Гаражы."
 
@@ -615,9 +616,9 @@ msgstr ""
 
 msgid "action/hero/full/exchangeRate"
 msgstr ""
-"Абмяняйце золата на крэдыты па выгадным курсе %(discount)s. Такім чынам вы зэканоміце час і хутчэй купіце жаданую машыну, дарагое абсталяванне і іншую ўнутрыгульнявую маёмасць.\n"
+"Абмяняйце золата на срэбра па выгадным курсе %(discount)s. Такім чынам вы зэканоміце час на заробак срэбра і хутчэй купіце жаданую машыну, дарагое абсталяванне і іншую гульнявую маёмасць.\n"
 "\n"
-"Не забывайцеся, што машыны Х узроўню зазвычай даволі затратныя, таму, каб вам заўсёды ставала на папаўненне боезапасу, рыштунку і рамонт машыны, старайцеся падтрымліваць баланс крэдытаў на належным узроўні."
+"Не забывайцеся, што гульня на Х узроўні зазвычай даволі затратная, таму старайцеся падтрымліваць баланс срэбра на належным узроўні, каб вам заўсёды ставала на папаўненне боезапасу, рыштунку і рамонт вашай машыны."
 
 msgid "action/hero/full/femalePassportChangeCost"
 msgstr ""
@@ -671,42 +672,42 @@ msgstr ""
 
 msgid "action/hero/full/premiumPacket14Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 14 дзён: %(discount)s"
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
+"Выгадны кошт куплі дзён або працягу Прэміум акаўнту на 14 дзён: %(discount)s"
 
 msgid "action/hero/full/premiumPacket180Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт куплі або працягу прэміум акаўнту на 180 дзён: %(discount)s"
 
 msgid "action/hero/full/premiumPacket1Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт куплі або працягу прэміум акаўнту на 1 дзень: %(discount)s"
 
 msgid "action/hero/full/premiumPacket30Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт куплі або працягу прэміум акаўнту на 30 дзён: %(discount)s"
 
 msgid "action/hero/full/premiumPacket360Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт куплі або працягу прэміум акаўнту на 360 дзён: %(discount)s"
 
 msgid "action/hero/full/premiumPacket3Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт куплі або працягу прэміум акаўнту на 3 дні: %(discount)s"
 
 msgid "action/hero/full/premiumPacket7Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт куплі або працягу прэміум акаўнту на 7 дзён: %(discount)s"
 
 msgid "action/hero/full/premiumPacket90Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да здабыванага досведу і крэдытаў у кожным баі. "
+"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
 "Выгадны кошт прэміум акаўнту (або яго працягу) на 90 дзён: %(discount)s"
 
 msgid "action/hero/full/set_ShellPrice"
@@ -717,7 +718,7 @@ msgstr ""
 
 msgid "action/hero/full/shell/creditsPriceMultiplier"
 msgstr ""
-"Купляйце снарады за крэдыты са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
+"Купляйце снарады за срэбра са зніжкай у %(discount)s. Папоўніўшы боезапас зараз, вы зэканоміце свае рэсурсы ў далейшым.\n"
 "\n"
 "Звярніце ўвагу, што гармату, да якой вы купляеце снарады, можна ўсталяваць на шмат якія машыны. Такім чынам, купіўшы ў запас самыя распаўсюджаныя снарады для дзяржавы, тэхніцы якой вы аддаяце перавагу ў гульні, вы надоўга забяспечыце боепрыпасамі мноства сваіх машын."
 
@@ -784,10 +785,10 @@ msgid "action/short/clanCreationCost"
 msgstr "Зніжка %(discount)s на стварэнне клана"
 
 msgid "action/short/creditsDropSkillsCost"
-msgstr "Зніжка %(discount)s на скідванне навыкаў танкістаў за крэдыты"
+msgstr "Зніжка %(discount)s на скідванне навыкаў танкістаў за срэбра"
 
 msgid "action/short/creditsTankmanCost"
-msgstr "Зніжка %(discount)s на навучанне і перавучванне экіпажу за крэдыты"
+msgstr "Зніжка %(discount)s на навучанне і перавучванне экіпажа за срэбра"
 
 msgid "action/short/dropSkills/mixed"
 msgstr "Зніжка %(discount)s на скідванне навыкаў танкістаў"
@@ -802,7 +803,7 @@ msgid "action/short/equipment/mixed"
 msgstr "Зніжка да %(discount)s на куплю рыштунку"
 
 msgid "action/short/exchangeRate"
-msgstr "Выгадны курс %(discount)s на абмен золата на крэдыты"
+msgstr "Выгадны курс %(discount)s на абмен золата на срэбра"
 
 msgid "action/short/femalePassportChangeCost"
 msgstr "Зніжка %(discount)s на змену дакументаў танкістаў"
@@ -892,7 +893,7 @@ msgid "action/short/set_ShellPrice"
 msgstr "Зніжка на куплю снарадаў %(discount)s"
 
 msgid "action/short/shell/creditsPriceMultiplier"
-msgstr "Зніжка да %(discount)s на куплю снарадаў за крэдыты"
+msgstr "Зніжка да %(discount)s на куплю снарадаў за срэбра"
 
 msgid "action/short/shell/goldPriceMultiplier"
 msgstr "Зніжка да %(discount)s на куплю снарадаў за золата"
@@ -1026,6 +1027,9 @@ msgstr "Жэтоны"
 msgid "bonusName/brcoin"
 msgstr "Сталёвыя пячаткі"
 
+msgid "bonusName/bumblebee_coin"
+msgstr "Жэтоны Летняга распродажу"
+
 msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
@@ -1129,10 +1133,10 @@ msgid "bonusName/completionTokens_7_4"
 msgstr "Чарцяжы 122-мм гарматы М62-Т2А"
 
 msgid "bonusName/credits"
-msgstr "Крэдыты"
+msgstr "Срэбра"
 
 msgid "bonusName/creditsFactor"
-msgstr "Каэфіцыент крэдытаў"
+msgstr "Каэфіцыент срэбра"
 
 msgid "bonusName/crew_bonus_x3"
 msgstr "?empty?"
@@ -1249,7 +1253,7 @@ msgid "bonusName/tankmenXPFactor"
 msgstr "Каэфіцыент досведу экіпажу"
 
 msgid "bonusName/team_credits_bonus"
-msgstr "Камандны бонус да крэдытаў"
+msgstr "Камандны бонус да срэбра"
 
 msgid "bonusName/tmanToken"
 msgstr "Член экіпажа"
@@ -1275,7 +1279,7 @@ msgid "bonuses/compensation/header"
 msgstr "Кампенсацыя"
 
 msgid "bonuses/credits/description"
-msgstr "%(value)s крэдытаў"
+msgstr "%(value)s срэбра"
 
 msgid "bonuses/crewBook/text"
 msgstr "%(name)s (x%(value)d)"
@@ -1317,7 +1321,7 @@ msgid "bonuses/item/berths"
 msgstr "Ложкаў у Жаўнерні:"
 
 msgid "bonuses/item/creditsFactor"
-msgstr "каэфіцыент крэдытаў"
+msgstr "каэфіцыент срэбра"
 
 msgid "bonuses/item/crewSkin"
 msgstr "Аблічча экіпажа:"
@@ -1745,7 +1749,7 @@ msgid "dailyWidget/tooltip/header/daily"
 msgstr "Стандартныя штодзённыя задачы"
 
 msgid "dailyWidget/tooltip/header/epic"
-msgstr "Штодзённая задача / Серыя ўваходаў"
+msgstr "Штодзённая задача / Ланцуг перамог"
 
 msgid "dailyWidget/tooltip/header/premium"
 msgstr "Штодзённыя прэміум задачы"
@@ -2195,7 +2199,7 @@ msgid "details/conditions/cumulative/noDamageDirectHitsReceived"
 msgstr "Атрыманыя траплянні без пашкоджанняў"
 
 msgid "details/conditions/cumulative/originalCredits"
-msgstr "Здабытыя крэдыты без надбавак"
+msgstr "Здабытае срэбра без надбавак"
 
 msgid "details/conditions/cumulative/originalXP"
 msgstr "Здабыты «чысты» досвед"
@@ -4181,7 +4185,7 @@ msgid "details/modifiers/booster"
 msgstr "На куплю асабістага рэзерву «%(boosterName)s»"
 
 msgid "details/modifiers/boosters/creditsPriceMultiplier"
-msgstr "На куплю асабістых рэзерваў за крэдыты да:"
+msgstr "На куплю асабістых рэзерваў за срэбра да:"
 
 msgid "details/modifiers/boosters/crystalPriceMultiplier"
 msgstr "На куплю асабістых рэзерваў за боны да:"
@@ -4199,17 +4203,17 @@ msgid "details/modifiers/economics/clanCreationCost"
 msgstr "На стварэнне клана"
 
 msgid "details/modifiers/economics/creditsDropSkillsCost"
-msgstr "На скідванне навыкаў экіпажа за крэдыты"
+msgstr "На скідванне навыкаў экіпажа за срэбра"
 
 msgid "details/modifiers/economics/creditsTankmanCost"
-msgstr "На навучанне і перавучванне экіпажу за крэдыты"
+msgstr "На навучанне і перавучванне экіпажа за срэбра"
 
 msgid "details/modifiers/economics/exchangeRate"
-msgstr "На абменны курс золата на крэдыты"
+msgstr "На абменны курс золата на срэбра"
 
 msgid "details/modifiers/economics/exchangeRateForShellsAndEqs"
 msgstr ""
-"На кошт набыцця палепшанага рыштунку і спецыяльных снарадаў за крэдыты да:"
+"На кошт набыцця палепшанага рыштунку і спецыяльных снарадаў за срэбра да:"
 
 msgid "details/modifiers/economics/femalePassportChangeCost"
 msgstr "На змену дакументаў жаночага экіпажу"
@@ -4257,10 +4261,10 @@ msgid "details/modifiers/economics/slotsPrices"
 msgstr "На куплю слотаў у Гаражы"
 
 msgid "details/modifiers/equipment/credits"
-msgstr "На куплю рыштунку %(eqName)s за крэдыты"
+msgstr "На куплю рыштунку %(eqName)s за срэбра"
 
 msgid "details/modifiers/equipment/creditsPriceMultiplier"
-msgstr "На куплю рыштунку за крэдыты да:"
+msgstr "На куплю рыштунку за срэбра да:"
 
 msgid "details/modifiers/equipment/crystal"
 msgstr "На куплю рыштунку %(eqName)s за боны"
@@ -4281,7 +4285,7 @@ msgid "details/modifiers/optDevice"
 msgstr "На куплю абсталявання %(devName)s"
 
 msgid "details/modifiers/optDevice/creditsPriceMultiplier"
-msgstr "На куплю абсталявання за крэдыты да:"
+msgstr "На куплю абсталявання за срэбра да:"
 
 msgid "details/modifiers/optDevice/goldPriceMultiplier"
 msgstr "На куплю абсталявання за золата да:"
@@ -4290,10 +4294,10 @@ msgid "details/modifiers/rentVehicle"
 msgstr "На пракат тэхнікі:"
 
 msgid "details/modifiers/shell/credits"
-msgstr "На куплю снарадаў %(shellName)s за крэдыты"
+msgstr "На куплю снарадаў %(shellName)s за срэбра"
 
 msgid "details/modifiers/shell/creditsPriceMultiplier"
-msgstr "На куплю снарадаў за крэдыты да:"
+msgstr "На куплю снарадаў за срэбра да:"
 
 msgid "details/modifiers/shell/gold"
 msgstr "На куплю снарадаў %(shellName)s за золата"
@@ -4302,7 +4306,7 @@ msgid "details/modifiers/shell/goldPriceMultiplier"
 msgstr "На куплю снарадаў за золата да:"
 
 msgid "details/modifiers/shell/nation/creditsPriceMultiplier"
-msgstr "На куплю снарадаў дзяржавы %(nation)s за крэдыты да:"
+msgstr "На куплю снарадаў дзяржавы %(nation)s за срэбра да:"
 
 msgid "details/modifiers/shell/nation/goldPriceMultiplier"
 msgstr "На куплю снарадаў дзяржавы %(nation)s за золата да:"
@@ -4323,25 +4327,25 @@ msgid "details/modifiers/vehicle"
 msgstr "На куплю тэхнікі:"
 
 msgid "details/modifiers/vehicle/creditsPriceMultiplier"
-msgstr "На куплю тэхнікі за крэдыты да:"
+msgstr "На куплю тэхнікі за срэбра да:"
 
 msgid "details/modifiers/vehicle/goldPriceMultiplier"
 msgstr "На куплю тэхнікі за золата да:"
 
 msgid "details/modifiers/vehicle/nation/creditsPriceMultiplier"
-msgstr "На куплю тэхнікі дзяржавы %(nation)s за крэдыты да:"
+msgstr "На куплю тэхнікі дзяржавы %(nation)s за срэбра да:"
 
 msgid "details/modifiers/vehicle/nation/goldPriceMultiplier"
 msgstr "На куплю тэхнікі дзяржавы %(nation)s за золата да:"
 
 msgid "details/modifiers/vehicle/rent/creditsPriceMultiplier"
-msgstr "На пракат тэхнікі за крэдыты да:"
+msgstr "На пракат тэхнікі за срэбра да:"
 
 msgid "details/modifiers/vehicle/rent/goldPriceMultiplier"
 msgstr "На пракат тэхнікі за золата да:"
 
 msgid "details/modifiers/vehicle/rent/nation/creditsPriceMultiplier"
-msgstr "На пракат тэхнікі дзяржавы %(nation)s за крэдыты да:"
+msgstr "На пракат тэхнікі дзяржавы %(nation)s за срэбра да:"
 
 msgid "details/modifiers/vehicle/rent/nation/goldPriceMultiplier"
 msgstr "На пракат тэхнікі дзяржавы %(nation)s за золата да:"
@@ -5591,7 +5595,7 @@ msgstr ""
 "ўзнагароды."
 
 msgid "premiumQuests/body/title"
-msgstr "Дадатковыя крэдыты, досвед і боны"
+msgstr "Дадатковае срэбра, досвед і боны"
 
 msgid "premiumQuests/condition/dmgTop_5"
 msgstr "Трапіць у топ-5 сваёй каманды паводле прычыненых пашкоджанняў"
@@ -5623,14 +5627,13 @@ msgstr "Купіць прэміум"
 msgid "premiumQuests/notPremiumAccount/paragraph"
 msgstr ""
 "Прэміум акаўнт адкрывае доступ да трох прэміум задач, а таксама дае іншыя "
-"перавагі: +50% да заробку досведу і крэдытаў, сховішча крэдытаў, дадатковы "
-"слот для выключэння мап і кіравальны бонус да досведу."
+"перавагі: +50% да заробку досведу і срэбра, сховішча срэбра, дадатковы слот "
+"для выключэння мап і кіравальны бонус да досведу."
 
 msgid "premiumQuests/notPremiumAccount/paragraphSmall"
 msgstr ""
 "Прэміум акаўнт адкрывае доступ да трох штодзённых прэміум задач, а таксама "
-"дае іншыя перавагі: +50% да заробку досведу і крэдытаў, сховішча крэдытаў і "
-"г.д."
+"дае іншыя перавагі: +50% да заробку досведу і срэбра, сховішча срэбра і г.д."
 
 msgid "premiumQuests/notPremiumAccount/title"
 msgstr "Для доступу да задач неабходны прэміум акаўнт."
@@ -5907,6 +5910,9 @@ msgstr "«Кітай»"
 
 msgid "token/default/czech"
 msgstr "«Чэхаславакія»"
+
+msgid "token/default/default"
+msgstr "«Танкавая пячатка»"
 
 msgid "token/default/fire"
 msgstr "«Падпал»"

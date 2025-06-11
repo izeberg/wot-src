@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Coutelas/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F131_Coutelas/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.721643 -0.000546 -3.555729</min>
+		<max>1.717031 1.027672 3.547243</max>
+	</visibilityBox>
+</root>

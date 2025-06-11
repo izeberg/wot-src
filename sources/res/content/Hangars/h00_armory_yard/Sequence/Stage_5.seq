@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>4.328125</duration>
+	<duration>4.333333</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -12,29 +12,36 @@
 			<property>spawnProgeression</property>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.815000</value>
-				<inTangent>0.046250</inTangent>
-				<outTangent>0.046250</outTangent>
+				<value>0.585000</value>
+				<inTangent>0.037895</inTangent>
+				<outTangent>0.037895</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>4.000000</startTime>
-				<value>1.000000</value>
-				<inTangent>0.046250</inTangent>
-				<outTangent>0.046250</outTangent>
-				<tangentMode>0</tangentMode>
+				<startTime>3.166667</startTime>
+				<value>0.705000</value>
+				<inTangent>0.037895</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>0.705000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound 0</name>
+		<name>Stage_05</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>4.000000</duration>
+				<duration>4.300000</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -54,9 +61,9 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>4.328125</duration>
-				<sequenceSound>ay_ep_05_seq_stage_05</sequenceSound>
-				<type>one_shot</type>
+				<duration>4.250167</duration>
+				<sequenceSound>ay_ep_06_seq_stage_05</sequenceSound>
+				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>

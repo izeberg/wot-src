@@ -20,7 +20,7 @@
 				<groupOrigin>0.194286 3.004392 -0.316128</groupOrigin>
 				<material>
 					<identifier>04 - Default</identifier>
-					<fx>shaders/particles/wg_particles.fx</fx>
+					<fx>shaders/particles/particles.fx</fx>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Coutelas/normal/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F131_Coutelas/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.815240 -0.531472 -3.393284</min>
+		<max>1.815240 3.212085 3.287196</max>
+	</visibilityBox>
+</root>

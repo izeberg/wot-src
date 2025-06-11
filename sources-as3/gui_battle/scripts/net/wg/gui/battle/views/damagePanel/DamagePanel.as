@@ -66,7 +66,7 @@ package net.wg.gui.battle.views.damagePanel
       
       private static const STUN_STATUS_ID:int = 0;
       
-      private static const BG_HEIGHT_COMPENSATE:int = 7;
+      private static const BG_HEIGHT_COMPENSATE:int = 14;
       
       private static const LABEL_SIEGE_MODE_DISABLED:String = "disabled";
       

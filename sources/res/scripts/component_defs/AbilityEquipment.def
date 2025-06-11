@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<equipmentStatePublic>
+			<Type>VISUAL_SCRIPT_EQUIPMENT_PUBLIC_STATE</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</equipmentStatePublic>
+		<compactDescr>
+			<Type>INT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</compactDescr>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>abilityEquipment</DefaultKeyName>
+</root>

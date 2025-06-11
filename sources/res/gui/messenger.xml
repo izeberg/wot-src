@@ -1364,9 +1364,19 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		</FinancialTransactionWithGoldHeaderSysMessage>
 		<FinancialTransactionWithArmoryCoinsHeaderSysMessage>
 			<type>yellow</type>
-			<icon>ArmoryCoinIcon</icon>
+			<icon>ArmoryFreeCoinIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</FinancialTransactionWithArmoryCoinsHeaderSysMessage>
+		<FinancialTransactionBuyAYCoinsSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</FinancialTransactionBuyAYCoinsSysMessage>
+		<FinancialTransactionBuyAYFreeCoinsSysMessage>
+			<type>yellow</type>
+			<icon>ArmoryFreeCoinIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</FinancialTransactionBuyAYFreeCoinsSysMessage>
 		<FinancialTransactionWithGoldAndArmoryCoinsHeaderSysMessage>
 			<type>yellow</type>
 			<icon>GoldIcon</icon>
@@ -2621,12 +2631,19 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
 		</MapboxEndedMessage>
 		<BattleMattersAwardsQuest>
-			<priority>low</priority>
+			<priority>medium</priority>
 			<type>grey</type>
 			<icon>battleMattersIcon</icon>
 			<bgIconSizeAuto>true</bgIconSizeAuto>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#messenger:serviceChannelMessages/battleMatters/awards/header)&lt;/font&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;%(body)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleMatters/awards/received)&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/battleMatters/awards/received/button)</label>
+					<action>openBattleMatters</action>
+				</button>
+			</buttonsLayout>
 		</BattleMattersAwardsQuest>
 		<BattleMattersTokenQuest>
 			<priority>low</priority>
@@ -2646,7 +2663,7 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			</buttonsLayout>
 		</BattleMattersTokenQuest>
 		<BattleMattersTokenAward>
-			<priority>low</priority>
+			<priority>medium</priority>
 			<type>grey</type>
 			<icon>battleMattersIcon</icon>
 			<bgIconSizeAuto>true</bgIconSizeAuto>
@@ -3420,6 +3437,25 @@ _(#lootboxes:notification/lootBoxesAutoOpen/boxes)&lt;br/&gt;%(rewards)s</messag
 				</button>
 			</buttonsLayout>
 		</ArmoryYardMainSysMessage>
+		<ArmoryYardInformationHeaderSysMessage>
+			<priority>medium</priority>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<filters>
+				<filter>
+					<name>glow</name>
+					<color>EA5200</color>
+				</filter>
+				<filter>
+					<name>dropshadow</name>
+					<color>
+						000000
+						<!--BW_String-->
+					</color>
+				</filter>
+			</filters>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</ArmoryYardInformationHeaderSysMessage>
 		<ArmoryYardPostprogressionSysMessage>
 			<type>grey</type>
 			<icon>InformationIcon</icon>

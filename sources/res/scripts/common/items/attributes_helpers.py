@@ -104,7 +104,10 @@ ALLOWED_DYNAMIC_ATTRS = {
  'vehicle/bkMaxSpeedBonus',
  'vehicle/fwMaxSpeedBonus',
  'moduleDamageFactor',
- 'engineAndFuelTanksDamageFactor'}
+ 'engineAndFuelTanksDamageFactor',
+ 'gun/chargeTimeBonus',
+ 'gun/reloadLockTimeBonus',
+ 'gun/loadShellIntoDualGunBonus'}
 AUTOSHOOT_DYNAMIC_ATTRS = {
  'rate/multiplier',
  'shotDispersionPerSecFactor',

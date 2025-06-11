@@ -169,12 +169,6 @@ msgstr "StuG III Ausf. B"
 msgid "Chassis_G101_StuG_III_2"
 msgstr "StuG III Ausf. E"
 
-msgid "Chassis_G101_StuG_III_2_SE22_Bot_PT2"
-msgstr "StuG III Ausf. E"
-
-msgid "Chassis_G101_StuG_III_SE22_Bot_PT2"
-msgstr "StuG III Ausf. B"
-
 msgid "Chassis_G103_RU_251"
 msgstr "Spähpanzer Ru 251 PT I"
 
@@ -357,6 +351,12 @@ msgstr "E 77"
 msgid "Chassis_G171_E77_02"
 msgstr "Находка-4"
 
+msgid "Chassis_G178_Sturmtiger_V1"
+msgstr "Pz.VI Ausf. E"
+
+msgid "Chassis_G182_Mausekonig"
+msgstr "Mausekönig"
+
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
 
@@ -478,27 +478,13 @@ msgstr "Leopard Prototyp A2"
 msgid "Chassis_Pz38_NA_1"
 msgstr "Pz.Kpfw. 38 (t) n.A."
 
-msgid "Chassis_Pz38_NA_1_SE22_Bot_LT2"
-msgstr "Pz.Kpfw. 38 (t) n.A."
-
 msgid "Chassis_Pz38_NA_1_short"
-msgstr "Pz.Kpfw. 38 (t) n.A."
-
-msgid "Chassis_Pz38_NA_1_short_SE22_Bot_LT2"
 msgstr "Pz.Kpfw. 38 (t) n.A."
 
 msgid "Chassis_Pz38_NA_2"
 msgstr "Pz.Kpfw. 38 (t) n.A. verstärkteketten"
 
-msgid "Chassis_Pz38_NA_2_SE22_Bot_LT2"
-msgstr "Pz.Kpfw. 38 (t) n.A. verstärkteketten"
-
 msgid "Chassis_Pz38_NA_2_short"
-msgstr ""
-"Pz.Kpfw. 38 (t) n.A.\n"
-"verstärkteketten"
-
-msgid "Chassis_Pz38_NA_2_short_SE22_Bot_LT2"
 msgstr ""
 "Pz.Kpfw. 38 (t) n.A.\n"
 "verstärkteketten"
@@ -549,18 +535,6 @@ msgstr "Pz.Kpfw. IV Ausf. C"
 
 msgid "Chassis_Pz_IV_AusfD_2"
 msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Chassis_Pz_IV_AusfD_2_SE22_Bot_MT2"
-msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Chassis_Pz_IV_AusfD_2_SE22_Bot_MT5_att"
-msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Chassis_Pz_IV_AusfD_SE22_Bot_MT2"
-msgstr "Pz.Kpfw. IV Ausf. C"
-
-msgid "Chassis_Pz_IV_AusfD_SE22_Bot_MT5_att"
-msgstr "Pz.Kpfw. IV Ausf. C"
 
 msgid "Chassis_Pz_IV_AusfH"
 msgstr "Pz.Kpfw. IV Ausf. G"
@@ -746,9 +720,6 @@ msgstr "Dicker Max"
 msgid "DickerMax_short_special"
 msgstr "Отличный обзор и углы склонения орудия, высокий разовый урон"
 
-msgid "Die_Signalfahnen_bot"
-msgstr "«Сигнальные флажки»"
-
 msgid "E-100"
 msgstr "E 100"
 
@@ -910,23 +881,11 @@ msgstr "FuG 12 A"
 msgid "FuG12_MapsTraining_Player_HT_2"
 msgstr "FuG 12"
 
-msgid "FuG12_SE22_Bot_HT2"
-msgstr "FuG 12"
-
-msgid "FuG12_SE22_Bot_MT3"
-msgstr "FuG 12"
-
-msgid "FuG12_SE22_Bot_MT4"
-msgstr "FuG 12"
-
-msgid "FuG12_SE22_Bot_MT6_att"
-msgstr "FuG 12"
-
-msgid "FuG12_SE22_Bot_MT7_att"
-msgstr "FuG 12"
-
 msgid "FuG12_SH"
 msgstr "FuG 12 L2"
+
+msgid "FuG12_ST"
+msgstr "FuG 12"
 
 msgid "FuG16"
 msgstr "Fu 16"
@@ -935,9 +894,6 @@ msgid "FuG2"
 msgstr "FuG 2"
 
 msgid "FuG2_bootcamp"
-msgstr "FuG 2"
-
-msgid "FuG2_bot"
 msgstr "FuG 2"
 
 msgid "FuG37"
@@ -967,15 +923,6 @@ msgstr "FuG 7 Ausf. F"
 msgid "FuG7F"
 msgstr "FuG 7 Ausf. F"
 
-msgid "FuG7_SE22_Bot_MT2"
-msgstr "FuG 7"
-
-msgid "FuG7_SE22_Bot_MT5_att"
-msgstr "FuG 7"
-
-msgid "FuG7_SE22_Bot_PT2"
-msgstr "FuG 7"
-
 msgid "FuG7_SH"
 msgstr "FuG 7 K"
 
@@ -984,9 +931,6 @@ msgstr "FuG 8"
 
 msgid "FuG8_1"
 msgstr "Fu 8"
-
-msgid "FuG8_SE22_Bot_LT2"
-msgstr "FuG 8"
 
 msgid "FuG8f"
 msgstr "FuG 8 (f)"
@@ -1081,9 +1025,6 @@ msgstr "Хороший разовый урон, комфортные УВН, б�
 msgid "G101_StuG_III"
 msgstr "StuG III Ausf. B"
 
-msgid "G101_StuG_III_SE22_Bot_PT2"
-msgstr "StuG III Ausf. B"
-
 msgid "G101_StuG_III_descr"
 msgstr ""
 "В 1935 г. Эрих фон Манштейн в письме к генералу Беку описал идею машин "
@@ -1092,18 +1033,7 @@ msgstr ""
 "изготовлены первые пять прототипов так называемой «нулевой» серии. Ранние "
 "модификации от Ausf.A до Ausf.F/8 выпускались до декабря 1942 года."
 
-msgid "G101_StuG_III_descr_SE22_Bot_PT2"
-msgstr ""
-"В 1935 Эрих фон Манштейн в письме к генералу Беку описал идею машин "
-"штурмовой артиллерии, главной задачей которых должна была стать "
-"непосредственная поддержка атакующих подразделений пехоты. В 1937 году были "
-"изготовлены первые пять прототипов так называемой «нулевой» серии. Ранние "
-"модификации от Ausf.A до Ausf.F/8 выпускались до декабря 1942 года."
-
 msgid "G101_StuG_III_short"
-msgstr "StuG III B"
-
-msgid "G101_StuG_III_short_SE22_Bot_PT2"
 msgstr "StuG III B"
 
 msgid "G103_RU_251"
@@ -2343,6 +2273,48 @@ msgstr "E 77"
 msgid "G171_E77_short_special"
 msgstr "Универсальность, сбалансированность ТТХ"
 
+msgid "G178_Sturmtiger_V1"
+msgstr "Sturmtiger"
+
+msgid "G178_Sturmtiger_V1_descr"
+msgstr ""
+"Опыт использования штурмовых орудий в Сталинграде показал, что для разрушения мощных фортификационных сооружений 150-мм орудия на базе Pz.Kpfw.IV не всегда бывало достаточно и что требуется создание машины на шасси тяжёлого танка. В мае 1943 фирма Alkett предложила концепцию штурмовой мортиры на базе тяжёлого танка Pz.Kpfw.Tiger Ausf.E, вооружённой 380-мм реактивным корабельным бомбометом 38cm Raketenwerfer 61. Первый образец был изготовлен осенью 1943 года и получил обозначение 38cm RW61 auf Sturmmörser. По сравнению с исходным танком боевая масса САУ выросла на несколько тонн. Всего было изготовлено 18 установок, неофициально прозванных Sturmtiger. Для постройки использовались шасси танков, доставленных для ремонта, поэтому все установки немного отличались друг от друга. Кроме того, машины постоянно дорабатывались. Готовые САУ свели в роты (батареи) штурмовых мортир. Всего за август-октябрь 1944 года было сформировано 3 роты с номерами: 1000, 1001 и 1002. В боях Sturmtiger применялись, начиная с августа 1944 при подавления Варшавского восстания, но наиболее интенсивно использовались на Западном фронте.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G178_Sturmtiger_V1_long_special"
+msgstr ""
+"Мощная штурмовая САУ с огромным 380-мм орудием, способным одним выстрелом "
+"отправить вражеский танк в ангар. Однако низкая мобильность и долгая "
+"перезарядка делают его уязвимым в ближнем бою, поэтому тактика игры строится"
+" вокруг поддержки союзников и точных выстрелов с дальних дистанций. "
+"Идеальный выбор для тех, кто любит наносить сокрушительные удары и менять "
+"ход боя одним снарядом."
+
+msgid "G178_Sturmtiger_V1_short"
+msgstr "Sturmtiger"
+
+msgid "G178_Sturmtiger_V1_short_special"
+msgstr "Огромный калибр, высокий разовый урон, слабая мобильность"
+
+msgid "G182_Mausekonig"
+msgstr "Mausekönig"
+
+msgid "G182_Mausekonig_descr"
+msgstr ""
+"В 1942 году началась разработка сверхтяжёлого танка Pz.Kpfw. Maus. В дополнение к нему родилась идея сверхтяжёлого танка, который мог использоваться в роли мобильной огневой точки. В начале 1943 года появился проект, получивший внутреннее обозначение Mausekönig («Мышиный король»). В нём использовались решения, близкие к Pz.Kpfw. Maus. В частности — электромеханическая трансмиссия. Учитывая массу в 250 тонн, для ходовой части была выбрана 4-гусеничная схема со съёмными бортовыми экранами, на которых крепились внешние гусеничные ветви ходовой части. В целях противовоздушной обороны танк оснастили зенитной башней и дополнительной установкой зенитной 20-мм автоматической пушки MG 151/20 в самой башне. В отличие от Pz.Kpfw.Maus боевая машина от Krupp создавалась как средство усиления оборонительных линий. Впрочем, неоднократные бомбардировки заводов Krupp не позволили развить тему Mausekönig дальше эскизных наработок.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G182_Mausekonig_long_special"
+msgstr "?empty?"
+
+msgid "G182_Mausekonig_short"
+msgstr "Mausekönig"
+
+msgid "G182_Mausekonig_short_special"
+msgstr "?empty?"
+
 msgid "G20_Marder_II"
 msgstr "Marder II"
 
@@ -2943,9 +2915,6 @@ msgstr "Jagdpanther verstärkteketten"
 msgid "Kdo_Funkstation_SE_407"
 msgstr "Kdo. Funkstation SE 407"
 
-msgid "Krupp_M301_bot"
-msgstr "Krupp M301"
-
 msgid "Krupp_M305"
 msgstr "Krupp M305"
 
@@ -2960,9 +2929,6 @@ msgstr "Leichttraktor"
 
 msgid "LeichtertaktorkettenB"
 msgstr "Leichttraktor verstärkteketten"
-
-msgid "Leichtertaktorketten_bot"
-msgstr "Leichttraktor"
 
 msgid "Leopard1"
 msgstr "Leopard 1"
@@ -3023,17 +2989,6 @@ msgstr "Точное и пробивное орудие, хорошая защи
 msgid "Ltraktor"
 msgstr "Leichttraktor"
 
-msgid "Ltraktor_bot"
-msgstr "Leichttraktor"
-
-msgid "Ltraktor_bot_descr"
-msgstr ""
-"В 1930–1934 гг. было изготовлено четыре опытных танка, различавшихся "
-"вооружением, составом экипажа, массой и особенностями ходовой части."
-
-msgid "Ltraktor_bot_short"
-msgstr "L.Tr."
-
 msgid "Ltraktor_descr"
 msgstr ""
 "В 1930–1934 гг. было изготовлено четыре опытных танка, различавшихся по "
@@ -3089,6 +3044,9 @@ msgstr "MB 838 CaM 500"
 
 msgid "MB507"
 msgstr "DB 603 A2"
+
+msgid "MB509"
+msgstr "MB 509"
 
 msgid "MB517"
 msgstr "MB 517"
@@ -3173,9 +3131,6 @@ msgstr "Maybach HL 45P1"
 msgid "Maybach_HL57TR"
 msgstr "Maybach HL 57 TR"
 
-msgid "Maybach_HL57TR_bot"
-msgstr "Maybach HL 57 TR"
-
 msgid "Maybach_HL62TR"
 msgstr "Maybach HL 62 TR"
 
@@ -3224,21 +3179,6 @@ msgstr "Maybach HL 120 TRM L"
 msgid "Maybach_HL_120_TRM_R"
 msgstr "Maybach HL 120 TRM R"
 
-msgid "Maybach_HL_120_TRM_SE22_Bot_MT2"
-msgstr "Maybach HL 120 TRM"
-
-msgid "Maybach_HL_120_TRM_SE22_Bot_MT3"
-msgstr "Maybach HL 120 TRM"
-
-msgid "Maybach_HL_120_TRM_SE22_Bot_MT5_att"
-msgstr "Maybach HL 120 TRM"
-
-msgid "Maybach_HL_120_TRM_SE22_Bot_MT6_att"
-msgstr "Maybach HL 120 TRM"
-
-msgid "Maybach_HL_120_TRM_SE22_Bot_PT2"
-msgstr "Maybach HL 120 TRM"
-
 msgid "Maybach_HL_120_TRM_x2"
 msgstr "2 x Maybach HL 120 TRM"
 
@@ -3249,12 +3189,6 @@ msgid "Maybach_HL_120_TR_R"
 msgstr "Maybach HL 120 TR R"
 
 msgid "Maybach_HL_150"
-msgstr "Maybach HL 150"
-
-msgid "Maybach_HL_150_SE22_Bot_MT4"
-msgstr "Maybach HL 150"
-
-msgid "Maybach_HL_150_SE22_Bot_MT7_att"
 msgstr "Maybach HL 150"
 
 msgid "Maybach_HL_157P"
@@ -3338,6 +3272,9 @@ msgstr ""
 
 msgid "Maybach_HL_224"
 msgstr "Maybach HL 224"
+
+msgid "Maybach_HL_230"
+msgstr "Maybach HL 230"
 
 msgid "Maybach_HL_230P30A"
 msgstr "Maybach HL 230 P30"
@@ -3563,9 +3500,6 @@ msgstr "2x Porsche Typ 100/3"
 msgid "Porsche_Typ_100_3A"
 msgstr "2x Porsche Typ 100/3A"
 
-msgid "Porsche_Typ_100_3_SE22_Bot_HT2"
-msgstr "2x Porsche Typ 100/3"
-
 msgid "Porsche_Typ_101_1_x2"
 msgstr "2 x Porsche Typ 101/1"
 
@@ -3594,9 +3528,6 @@ msgid "Praga_EPA_AC"
 msgstr "Praga EPA AC"
 
 msgid "Praga_NR"
-msgstr "Praga NR"
-
-msgid "Praga_NR_SE22_Bot_LT2"
 msgstr "Praga NR"
 
 msgid "Praga_NRi"
@@ -3702,9 +3633,6 @@ msgstr "Pz. 35 (t)"
 msgid "Pz38_NA"
 msgstr "Pz.Kpfw. 38 (t) n.A."
 
-msgid "Pz38_NA_SE22_Bot_LT2"
-msgstr "Pz.Kpfw. 38 (t) n.A."
-
 msgid "Pz38_NA_descr"
 msgstr ""
 "Разработка велась компанией BMM с июля 1940 года в рамках программы создания"
@@ -3714,19 +3642,7 @@ msgstr ""
 "машины достигла 64 км/ч. Работы по танку были свёрнуты в пользу VK 1303. "
 "Было выпущено пять опытных образцов."
 
-msgid "Pz38_NA_descr_SE22_Bot_LT2"
-msgstr ""
-"Разработка велась компанией BMM с июля 1940 года в рамках программы создания"
-" нового лёгкого разведывательного танка. Основой для проекта послужил "
-"Pz.Kpfw. 38 (t). Была применена сварка корпуса, установлены новый двигатель "
-"и переработанная коробка передач. В ходе испытаний максимальная скорость "
-"машины достигла 64 км/ч. Работы по танку были свёрнуты в пользу VK 1303. "
-"Было выпущено пять опытных образцов."
-
 msgid "Pz38_NA_short"
-msgstr "Pz. 38 nA"
-
-msgid "Pz38_NA_short_SE22_Bot_LT2"
 msgstr "Pz. 38 nA"
 
 msgid "Pz38t"
@@ -3783,12 +3699,6 @@ msgstr "Pz. III E"
 msgid "PzIII_AusfJ"
 msgstr "Pz.Kpfw. III Ausf. J"
 
-msgid "PzIII_AusfJ_SE22_Bot_MT3"
-msgstr "Pz.Kpfw. III Ausf. J"
-
-msgid "PzIII_AusfJ_SE22_Bot_MT6_att"
-msgstr "Pz.Kpfw. III Ausf. J"
-
 msgid "PzIII_AusfJ_descr"
 msgstr ""
 "Выпуск модификации J начался с марта 1941 года. Машина помимо усиления "
@@ -3799,33 +3709,7 @@ msgstr ""
 "50-миллиметровками. Всего была выпущена 5691 машина, из них 1969 с "
 "длинноствольной и 2391 с короткоствольной 50-мм пушкой."
 
-msgid "PzIII_AusfJ_descr_SE22_Bot_MT3"
-msgstr ""
-"Выпуск модификации J начался с марта 1941 года. Машина помимо усиления "
-"бронирования получила новое весьма удачное 50-мм орудие KwK38, а 1067 машин "
-"были вооружены орудием с ещё большей пробиваемостью — KwK39. Попытка "
-"установить 75-мм орудие (модификация N) была признана неудачной, и самыми "
-"крупносерийными стали модификации J, L и M с хорошо зарекомендовавшими себя "
-"50-миллиметровками. Всего было выпущено 5691 машина, из них 1969 с "
-"длинноствольной и 2391 с короткоствольной 50-мм пушкой."
-
-msgid "PzIII_AusfJ_descr_SE22_Bot_MT6_att"
-msgstr ""
-"Выпуск модификации J начался с марта 1941 года. Машина помимо усиления "
-"бронирования получила новое весьма удачное 50-мм орудие KwK38, а 1067 машин "
-"были вооружены орудием с ещё большей пробиваемостью — KwK39. Попытка "
-"установить 75-мм орудие (модификация N) была признана неудачной, и самыми "
-"крупносерийными стали модификации J, L и M с хорошо зарекомендовавшими себя "
-"50-миллиметровками. Всего было выпущено 5691 машина, из них 1969 с "
-"длинноствольной и 2391 с короткоствольной 50-мм пушкой."
-
 msgid "PzIII_AusfJ_short"
-msgstr "Pz. III J"
-
-msgid "PzIII_AusfJ_short_SE22_Bot_MT3"
-msgstr "Pz. III J"
-
-msgid "PzIII_AusfJ_short_SE22_Bot_MT6_att"
 msgstr "Pz. III J"
 
 msgid "PzIII_Ausf_A"
@@ -3847,23 +3731,7 @@ msgstr ""
 msgid "PzIII_Ausf_E"
 msgstr "Pz.Kpfw. III Ausf. J"
 
-msgid "PzIII_Ausf_E_SE22_Bot_MT3"
-msgstr "Pz.Kpfw. III Ausf. J"
-
-msgid "PzIII_Ausf_E_SE22_Bot_MT6_att"
-msgstr "Pz.Kpfw. III Ausf. J"
-
 msgid "PzIII_Ausf_E_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. J"
-
-msgid "PzIII_Ausf_E_short_SE22_Bot_MT3"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. J"
-
-msgid "PzIII_Ausf_E_short_SE22_Bot_MT6_att"
 msgstr ""
 "Pz.Kpfw. III\n"
 "Ausf. J"
@@ -3871,23 +3739,7 @@ msgstr ""
 msgid "PzIII_Ausf_M"
 msgstr "Pz.Kpfw. III Ausf. L"
 
-msgid "PzIII_Ausf_M_SE22_Bot_MT3"
-msgstr "Pz.Kpfw. III Ausf. L"
-
-msgid "PzIII_Ausf_M_SE22_Bot_MT6_att"
-msgstr "Pz.Kpfw. III Ausf. L"
-
 msgid "PzIII_Ausf_M_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. L"
-
-msgid "PzIII_Ausf_M_short_SE22_Bot_MT3"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. L"
-
-msgid "PzIII_Ausf_M_short_SE22_Bot_MT6_att"
 msgstr ""
 "Pz.Kpfw. III\n"
 "Ausf. L"
@@ -3925,23 +3777,7 @@ msgstr ""
 msgid "PzIIIketten_Ausf_J"
 msgstr "Pz.Kpfw. III Ausf. J"
 
-msgid "PzIIIketten_Ausf_J_SE22_Bot_MT3"
-msgstr "Pz.Kpfw. III Ausf. J"
-
-msgid "PzIIIketten_Ausf_J_SE22_Bot_MT6_att"
-msgstr "Pz.Kpfw. III Ausf. J"
-
 msgid "PzIIIketten_Ausf_J_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. J"
-
-msgid "PzIIIketten_Ausf_J_short_SE22_Bot_MT3"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. J"
-
-msgid "PzIIIketten_Ausf_J_short_SE22_Bot_MT6_att"
 msgstr ""
 "Pz.Kpfw. III\n"
 "Ausf. J"
@@ -3949,23 +3785,7 @@ msgstr ""
 msgid "PzIIIketten_Ausf_L"
 msgstr "Pz.Kpfw. III Ausf. L"
 
-msgid "PzIIIketten_Ausf_L_SE22_Bot_MT3"
-msgstr "Pz.Kpfw. III Ausf. L"
-
-msgid "PzIIIketten_Ausf_L_SE22_Bot_MT6_att"
-msgstr "Pz.Kpfw. III Ausf. L"
-
 msgid "PzIIIketten_Ausf_L_short"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. L"
-
-msgid "PzIIIketten_Ausf_L_short_SE22_Bot_MT3"
-msgstr ""
-"Pz.Kpfw. III\n"
-"Ausf. L"
-
-msgid "PzIIIketten_Ausf_L_short_SE22_Bot_MT6_att"
 msgstr ""
 "Pz.Kpfw. III\n"
 "Ausf. L"
@@ -4012,28 +3832,11 @@ msgstr "Pz.Kpfw. II Ausf. F"
 msgid "PzII_Standartturm"
 msgstr "Pz.Kpfw. II Ausf. b"
 
-msgid "PzII_Standartturm_bot"
-msgstr "Pz.Kpfw. II Ausf. b"
-
-msgid "PzII_Standartturm_bot_short"
-msgstr "Pz.Kpfw. II Ausf. b"
-
 msgid "PzII_Standartturm_short"
 msgstr "Pz.Kpfw. II Ausf. b"
 
 msgid "PzII_ausf_J"
 msgstr "Pz.Kpfw. II Ausf. J"
-
-msgid "PzII_bot"
-msgstr "Pz.Kpfw. II"
-
-msgid "PzII_bot_descr"
-msgstr ""
-"Образцы А, В, С и F выпускались с марта 1937 по апрель 1940 года и с марта "
-"1941 по декабрь 1942 года. Всего было выпущено 1637 машин этих типов."
-
-msgid "PzII_bot_short"
-msgstr "Pz. II"
 
 msgid "PzII_descr"
 msgstr ""
@@ -4044,14 +3847,6 @@ msgstr ""
 
 msgid "PzII_ketten_Ausf_A"
 msgstr "Pz.Kpfw. II Ausf. A"
-
-msgid "PzII_ketten_Ausf_A_bot"
-msgstr "Pz.Kpfw. II Ausf. A"
-
-msgid "PzII_ketten_Ausf_A_bot_short"
-msgstr ""
-"Pz.Kpfw. II\n"
-"Ausf. A"
 
 msgid "PzII_ketten_Ausf_A_short"
 msgstr ""
@@ -4444,12 +4239,6 @@ msgstr "Pz. IV A"
 msgid "Pz_IV_AusfD"
 msgstr "Pz.Kpfw. IV Ausf. D"
 
-msgid "Pz_IV_AusfD_SE22_Bot_MT2"
-msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Pz_IV_AusfD_SE22_Bot_MT5_att"
-msgstr "Pz.Kpfw. IV Ausf. D"
-
 msgid "Pz_IV_AusfD_descr"
 msgstr ""
 "Выпуск этой модификации танка Pz IV начался в октябре 1939 года. Основными "
@@ -4457,27 +4246,7 @@ msgstr ""
 "За время серийного выпуска, который продолжался до мая 1940 года, было "
 "выпущено 229 машин этого типа."
 
-msgid "Pz_IV_AusfD_descr_SE22_Bot_MT2"
-msgstr ""
-"Выпуск этой модификации танка Pz IV начался в октябре 1939 года. Основными "
-"отличиями стали усиленное бронирование и наружное расположение маски пушки. "
-"За время серийного выпуска, который продолжался до мая 1940 года, было "
-"выпущено 229 машин этого типа."
-
-msgid "Pz_IV_AusfD_descr_SE22_Bot_MT5_att"
-msgstr ""
-"Выпуск этой модификации танка Pz IV начался в октябре 1939 года. Основными "
-"отличиями стали усиленное бронирование и наружное расположение маски пушки. "
-"За время серийного выпуска, который продолжался до мая 1940 года, было "
-"выпущено 229 машин этого типа."
-
 msgid "Pz_IV_AusfD_short"
-msgstr "Pz. IV D"
-
-msgid "Pz_IV_AusfD_short_SE22_Bot_MT2"
-msgstr "Pz. IV D"
-
-msgid "Pz_IV_AusfD_short_SE22_Bot_MT5_att"
 msgstr "Pz. IV D"
 
 msgid "Pz_IV_AusfH"
@@ -4691,9 +4460,6 @@ msgstr "15 cm s.I.G. 33B Sfl. verstärkteketten"
 msgid "Swedish_Bofors"
 msgstr "Leichttraktor"
 
-msgid "Swedish_Bofors_bot"
-msgstr "Leichttraktor"
-
 msgid "T-15"
 msgstr "Pz.Kpfw. T 15"
 
@@ -4792,9 +4558,6 @@ msgid "Turret_1_G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
 
 msgid "Turret_1_G101_StuG_III"
-msgstr "StuG III Ausf. B"
-
-msgid "Turret_1_G101_StuG_III_SE22_Bot_PT2"
 msgstr "StuG III Ausf. B"
 
 msgid "Turret_1_G103_RU_251"
@@ -4967,6 +4730,12 @@ msgstr "E 77"
 msgid "Turret_1_G171_E77_02"
 msgstr "Находка-4"
 
+msgid "Turret_1_G178_Sturmtiger_V1"
+msgstr "Sturmtiger"
+
+msgid "Turret_1_G182_Mausekonig"
+msgstr "Mausekönig"
+
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
 
@@ -5038,9 +4807,6 @@ msgstr "Leopard Prototyp A2"
 msgid "Turret_1_Pz38_NA"
 msgstr "Pz.Kpfw. 38 (t) Ausf. G"
 
-msgid "Turret_1_Pz38_NA_SE22_Bot_LT2"
-msgstr "Pz.Kpfw. 38 (t) Ausf. G"
-
 msgid "Turret_1_PzI"
 msgstr "L.K.A. 2"
 
@@ -5065,12 +4831,6 @@ msgid "Turret_1_Pz_IV_AusfA"
 msgstr "Pz.Kpfw. IV Ausf. A"
 
 msgid "Turret_1_Pz_IV_AusfD"
-msgstr "Pz.Kpfw. IV Ausf. C"
-
-msgid "Turret_1_Pz_IV_AusfD_SE22_Bot_MT2"
-msgstr "Pz.Kpfw. IV Ausf. C"
-
-msgid "Turret_1_Pz_IV_AusfD_SE22_Bot_MT5_att"
 msgstr "Pz.Kpfw. IV Ausf. C"
 
 msgid "Turret_1_Pz_IV_AusfH"
@@ -5154,9 +4914,6 @@ msgstr "Porsche Standardpanzer"
 msgid "Turret_2_Pz38_NA"
 msgstr "Pz.Kpfw. 38 (t) n.A."
 
-msgid "Turret_2_Pz38_NA_SE22_Bot_LT2"
-msgstr "Pz.Kpfw. 38 (t) n.A."
-
 msgid "Turret_2_PzI"
 msgstr "Pz.Kpfw. I Breda"
 
@@ -5178,12 +4935,6 @@ msgid "Turret_2_Pz_IV_AusfA"
 msgstr "Pz.Kpfw. IV Ausf. B"
 
 msgid "Turret_2_Pz_IV_AusfD"
-msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Turret_2_Pz_IV_AusfD_SE22_Bot_MT2"
-msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Turret_2_Pz_IV_AusfD_SE22_Bot_MT5_att"
 msgstr "Pz.Kpfw. IV Ausf. D"
 
 msgid "Turret_2_Pz_IV_AusfH"
@@ -5282,34 +5033,10 @@ msgstr "VK 30.01 (H)"
 msgid "VK3001H_Eliteturm"
 msgstr "VK 36.01 (H)"
 
-msgid "VK3001H_Eliteturm_SE22_Bot_MT4"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3001H_Eliteturm_SE22_Bot_MT7_att"
-msgstr "VK 36.01 (H)"
-
 msgid "VK3001H_Eliteturm_short"
 msgstr "VK 36.01 (H)"
 
-msgid "VK3001H_Eliteturm_short_SE22_Bot_MT4"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3001H_Eliteturm_short_SE22_Bot_MT7_att"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3001H_SE22_Bot_MT4"
-msgstr "VK 30.01 (H)"
-
-msgid "VK3001H_SE22_Bot_MT7_att"
-msgstr "VK 30.01 (H)"
-
 msgid "VK3001H_Standardturm"
-msgstr "VK 30.01 (H) 0-Serie"
-
-msgid "VK3001H_Standardturm_SE22_Bot_MT4"
-msgstr "VK 30.01 (H) 0-Serie"
-
-msgid "VK3001H_Standardturm_SE22_Bot_MT7_att"
 msgstr "VK 30.01 (H) 0-Serie"
 
 msgid "VK3001H_Standardturm_short"
@@ -5317,36 +5044,10 @@ msgstr ""
 "VK 30.01 (H)\n"
 "0-Serie"
 
-msgid "VK3001H_Standardturm_short_SE22_Bot_MT4"
-msgstr ""
-"VK 30.01 (H)\n"
-"0-Serie"
-
-msgid "VK3001H_Standardturm_short_SE22_Bot_MT7_att"
-msgstr ""
-"VK 30.01 (H)\n"
-"0-Serie"
-
 msgid "VK3001H_ausf_B"
 msgstr "VK 30.01 (H) verstärkteketten"
 
-msgid "VK3001H_ausf_B_SE22_Bot_MT4"
-msgstr "VK 30.01 (H) verstärkteketten"
-
-msgid "VK3001H_ausf_B_SE22_Bot_MT7_att"
-msgstr "VK 30.01 (H) verstärkteketten"
-
 msgid "VK3001H_ausf_B_short"
-msgstr ""
-"VK 30.01 (H)\n"
-"verstärkteketten"
-
-msgid "VK3001H_ausf_B_short_SE22_Bot_MT4"
-msgstr ""
-"VK 30.01 (H)\n"
-"verstärkteketten"
-
-msgid "VK3001H_ausf_B_short_SE22_Bot_MT7_att"
 msgstr ""
 "VK 30.01 (H)\n"
 "verstärkteketten"
@@ -5361,33 +5062,7 @@ msgstr ""
 "тяжёлые истребители танков. Шесть башен, изготовленных компанией Krupp, были"
 " установлены на «Атлантическом валу»."
 
-msgid "VK3001H_descr_SE22_Bot_MT4"
-msgstr ""
-"Заказ на танк был выдан 9 сентября 1939 года. В процессе разработки инженеры"
-" компании Henschel активно использовали наработки по проекту DW II. Первые "
-"два прототипа были готовы к марту 1942 года, ещё два были построены к "
-"октябрю. Прототипы активно испытывались на заводском полигоне, однако без "
-"башни и вооружения. По окончании испытаний два шасси были переделаны в "
-"тяжёлые истребители танков. Шесть башен, изготовленных компанией Krupp, были"
-" установлены на «Атлантическом валу»."
-
-msgid "VK3001H_descr_SE22_Bot_MT7_att"
-msgstr ""
-"Заказ на танк был выдан 9 сентября 1939 года. В процессе разработки инженеры"
-" компании Henschel активно использовали наработки по проекту DW II. Первые "
-"два прототипа были готовы к марту 1942 года, ещё два были построены к "
-"октябрю. Прототипы активно испытывались на заводском полигоне, однако без "
-"башни и вооружения. По окончании испытаний два шасси были переделаны в "
-"тяжёлые истребители танков. Шесть башен, изготовленных компанией Krupp, были"
-" установлены на «Атлантическом валу»."
-
 msgid "VK3001H_short"
-msgstr "VK 30.01 H"
-
-msgid "VK3001H_short_SE22_Bot_MT4"
-msgstr "VK 30.01 H"
-
-msgid "VK3001H_short_SE22_Bot_MT7_att"
 msgstr "VK 30.01 H"
 
 msgid "VK3001P"
@@ -5396,19 +5071,10 @@ msgstr "VK 30.01 (P)"
 msgid "VK3001P_Krupp_turm"
 msgstr "Porsche Typ 100"
 
-msgid "VK3001P_Krupp_turm_SE22_Bot_HT2"
-msgstr "Porsche Typ 100"
-
 msgid "VK3001P_Krupp_turm_short"
 msgstr "Porsche Typ 100"
 
-msgid "VK3001P_Krupp_turm_short_SE22_Bot_HT2"
-msgstr "Porsche Typ 100"
-
 msgid "VK3001P_Porsche_turm"
-msgstr "VK 30.01 (P) Krupp Turm"
-
-msgid "VK3001P_Porsche_turm_SE22_Bot_HT2"
 msgstr "VK 30.01 (P) Krupp Turm"
 
 msgid "VK3001P_Porsche_turm_SH"
@@ -5419,26 +5085,10 @@ msgstr ""
 "VK 30.01 (P)\n"
 "Krupp Turm"
 
-msgid "VK3001P_Porsche_turm_short_SE22_Bot_HT2"
-msgstr ""
-"VK 30.01 (P)\n"
-"Krupp Turm"
-
-msgid "VK3001P_SE22_Bot_HT2"
-msgstr "VK 30.01 (P)"
-
 msgid "VK3001P_ausf_B"
 msgstr "VK 30.01 (P) verstärkteketten"
 
-msgid "VK3001P_ausf_B_SE22_Bot_HT2"
-msgstr "VK 30.01 (P) verstärkteketten"
-
 msgid "VK3001P_ausf_B_short"
-msgstr ""
-"VK 30.01 (P)\n"
-"verstärkteketten"
-
-msgid "VK3001P_ausf_B_short_SE22_Bot_HT2"
 msgstr ""
 "VK 30.01 (P)\n"
 "verstärkteketten"
@@ -5453,20 +5103,7 @@ msgstr ""
 "макет башни, а также деревянный макет корпуса. В 1942 году проект закрыли в "
 "пользу новых тяжёлых танков."
 
-msgid "VK3001P_descr_SE22_Bot_HT2"
-msgstr ""
-"Идея проекта нового танка компании Porsche появилась ещё в 1939 году, когда "
-"была разработана новая концепция. После многочисленных согласований 5 марта "
-"1941 года были разработаны чертежи, а в июле 1941 был изготовлен корпус из "
-"мягкой стали. Корпус и шасси прошли ходовые испытания, в том числе с "
-"навесным оборудованием для рытья траншей. Был сделан только один деревянный "
-"макет башни, а также деревянный макет корпуса. В 1942 году проект закрыли в "
-"пользу новых тяжёлых танков."
-
 msgid "VK3001P_short"
-msgstr "VK 30.01 P"
-
-msgid "VK3001P_short_SE22_Bot_HT2"
 msgstr "VK 30.01 P"
 
 msgid "VK3002DB"
@@ -5948,12 +5585,6 @@ msgstr "Sprgr 18 K"
 msgid "_105mm_Sprg_K"
 msgstr "Sprgr K"
 
-msgid "_105mm_Sprg_K_SE22_Bot_MT4"
-msgstr "Sprgr K"
-
-msgid "_105mm_Sprg_K_SE22_Bot_MT7_att"
-msgstr "Sprgr K"
-
 msgid "_105mm_Sprg_L"
 msgstr "Sprgr L"
 
@@ -5972,12 +5603,6 @@ msgstr "10,5 cm Stu.H. 42 L/28"
 msgid "_105mm_StuH42_L28Pz"
 msgstr "10,5 cm Kw.K. L/28"
 
-msgid "_105mm_StuH42_L28Pz_SE22_Bot_MT4"
-msgstr "10,5 cm Kw.K. L/28"
-
-msgid "_105mm_StuH42_L28Pz_SE22_Bot_MT7_att"
-msgstr "10,5 cm Kw.K. L/28"
-
 msgid "_105mm_StuH42_L28Pz_SH"
 msgstr "10,5 cm Kw.K. L/28"
 
@@ -5988,6 +5613,9 @@ msgid "_105mm_leFH18_L28"
 msgstr "10,5 cm le.F.H. 18 L/28"
 
 msgid "_10WSc"
+msgstr "10WSc"
+
+msgid "_10WSc_MK"
 msgstr "10WSc"
 
 msgid "_10WSc_WT"
@@ -6053,6 +5681,9 @@ msgstr "12,8 cm Kw.K. Ausf. E"
 msgid "_128mm_KwK44_L55_SH"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
+msgid "_128mm_KwK44_L55_x2"
+msgstr "12,8 cm Kw.K. 44 L/55 x2"
+
 msgid "_128mm_KwK46_L61"
 msgstr "12,8 cm Kw.K. 46 L/61"
 
@@ -6098,6 +5729,9 @@ msgstr "Pzgr 39"
 msgid "_128mm_PzGr39A"
 msgstr "Pzgr 39 A"
 
+msgid "_128mm_PzGr39D"
+msgstr "Pzgr 39 D"
+
 msgid "_128mm_PzGr39E"
 msgstr "Pzgr 39 E"
 
@@ -6124,6 +5758,9 @@ msgstr "Pzgr 40"
 
 msgid "_128mm_PzGr40A"
 msgstr "Pzgr 40 A"
+
+msgid "_128mm_PzGr40D"
+msgstr "DT13"
 
 msgid "_128mm_PzGr40E"
 msgstr "Pzgr 40 E"
@@ -6163,6 +5800,9 @@ msgstr "Sprgr 18"
 
 msgid "_128mm_SprG18A"
 msgstr "Sprgr 18 A"
+
+msgid "_128mm_SprG18D"
+msgstr "Sprgr L/4,5"
 
 msgid "_128mm_SprG18E"
 msgstr "Sprgr 18 E"
@@ -6329,9 +5969,6 @@ msgstr "2 cm Kw.K. 30"
 msgid "_20mm_KwK_30A"
 msgstr "2 cm Kw.K. 30"
 
-msgid "_20mm_KwK_30_bot"
-msgstr "2 cm Kw.K. 30"
-
 msgid "_20mm_KwK_38_L55"
 msgstr "2 cm Kw.K. 38"
 
@@ -6343,9 +5980,6 @@ msgstr "Pzgr 39"
 
 msgid "_20mm_Pzgr39_S"
 msgstr "20×138mmB"
-
-msgid "_20mm_Pzgr39_bot"
-msgstr "Pzgr 39"
 
 msgid "_20mm_Solothurn_S_18_1000"
 msgstr "Solothurn S-18/1000"
@@ -6398,16 +6032,10 @@ msgstr "3,7 cm Kw.K. 38 (t) L/47"
 msgid "_37mm_KwK_38t_L47_A"
 msgstr "3,7 cm Kw.K. 38 (t) L/47"
 
-msgid "_37mm_KwK_38t_L47_SE22_Bot_LT2"
-msgstr "3,7 cm Kw.K. 38 (t) L/47"
-
 msgid "_37mm_KwK_38t_L47_b"
 msgstr "3,7 cm Kw.K. 38 (t) L/47"
 
 msgid "_37mm_KwK_L46"
-msgstr "3,7 cm Kw.K. 36 L/46.5"
-
-msgid "_37mm_KwK_L46_bot"
 msgstr "3,7 cm Kw.K. 36 L/46.5"
 
 msgid "_37mm_PaK_38t_L47"
@@ -6416,13 +6044,7 @@ msgstr "3,7 cm Pak (t) L/47"
 msgid "_37mm_Pzgr36"
 msgstr "Pzgr 36"
 
-msgid "_37mm_Pzgr36_bot"
-msgstr "Pzgr 36"
-
 msgid "_37mm_Pzgr39t"
-msgstr "Pzgr 39 (t)"
-
-msgid "_37mm_Pzgr39t_SE22_Bot_LT2"
 msgstr "Pzgr 39 (t)"
 
 msgid "_37mm_SA_38f_L34"
@@ -6433,6 +6055,18 @@ msgstr "Sprgr 18"
 
 msgid "_37mm_Sprg.18t"
 msgstr "Sprgr 18 (t)"
+
+msgid "_380mm_R_Hlgr_4592"
+msgstr "R.Hlgr. 4592"
+
+msgid "_380mm_R_Hlgr_4592_M"
+msgstr "R.Hlgr. 4592 Mod."
+
+msgid "_380mm_R_Sprgr_4581"
+msgstr "R.Sprgr. 4581"
+
+msgid "_380mm_RaketenWerfer_61"
+msgstr "38 cm RaketenWerfer 61"
 
 msgid "_40mm_36_M_Pancelgranat"
 msgstr "36 M. páncélgránát"
@@ -6491,12 +6125,6 @@ msgstr "Sprgr 18 (t)"
 msgid "_50mm_KwK_38_L42"
 msgstr "5 cm Kw.K. 38 L/42"
 
-msgid "_50mm_KwK_38_L42_SE22_Bot_MT3"
-msgstr "5 cm Kw.K. 38 L/42"
-
-msgid "_50mm_KwK_38_L42_SE22_Bot_MT6_att"
-msgstr "5 cm Kw.K. 38 L/42"
-
 msgid "_50mm_KwK_39_L60"
 msgstr "5 cm Kw.K. 39 L/60"
 
@@ -6510,12 +6138,6 @@ msgid "_50mm_PaK_39_L60"
 msgstr "5 cm Pak 38 L/60"
 
 msgid "_50mm_Pzgr39"
-msgstr "Pzgr 39"
-
-msgid "_50mm_Pzgr39_SE22_Bot_MT3"
-msgstr "Pzgr 39"
-
-msgid "_50mm_Pzgr39_SE22_Bot_MT6_att"
 msgstr "Pzgr 39"
 
 msgid "_50mm_Pzgr40"
@@ -6551,15 +6173,6 @@ msgstr "7,5 cm Škoda A18"
 msgid "_75mm_APCBC"
 msgstr "APCBC"
 
-msgid "_75mm_APCBC_SE22_Bot_MT2"
-msgstr "APCBC"
-
-msgid "_75mm_APCBC_SE22_Bot_MT5_att"
-msgstr "APCBC"
-
-msgid "_75mm_APCBC_SE22_Bot_PT2"
-msgstr "APCBC"
-
 msgid "_75mm_Flak_L60"
 msgstr "7,5 cm Flak L/60"
 
@@ -6579,12 +6192,6 @@ msgid "_75mm_KwK_37_L24"
 msgstr "7,5 cm Kw.K. 37 L/24"
 
 msgid "_75mm_KwK_37_L24A"
-msgstr "7,5 cm Kw.K. 37 L/24"
-
-msgid "_75mm_KwK_37_L24_SE22_Bot_MT2"
-msgstr "7,5 cm Kw.K. 37 L/24"
-
-msgid "_75mm_KwK_37_L24_SE22_Bot_MT5_att"
 msgstr "7,5 cm Kw.K. 37 L/24"
 
 msgid "_75mm_KwK_40_L43"
@@ -6659,9 +6266,6 @@ msgstr "7,5 cm Pak 42 L/70"
 msgid "_75mm_StuK_37_L24"
 msgstr "7,5 cm Kanone L/24"
 
-msgid "_75mm_StuK_37_L24_SE22_Bot_PT2"
-msgstr "7,5 cm Kanone L/24"
-
 msgid "_75mm_StuK_40_L43"
 msgstr "7,5 cm Stu.K. 40 L/43"
 
@@ -6693,9 +6297,6 @@ msgid "_88mm_KwK_36_L56"
 msgstr "8,8 cm Kw.K. 36 L/56"
 
 msgid "_88mm_KwK_36_L56A"
-msgstr "8,8 cm Kw.K. 36 L/56"
-
-msgid "_88mm_KwK_36_L56_SE22_Bot_HT2"
 msgstr "8,8 cm Kw.K. 36 L/56"
 
 msgid "_88mm_KwK_43_L71"
@@ -6763,9 +6364,6 @@ msgstr "Pzgr ver. 39/43"
 
 msgid "_88mm_Pzgr39_43_n_MapsTraining_Player_HT_2"
 msgstr "Pzgr ver. 39/43"
-
-msgid "_88mm_Pzgr39_SE22_Bot_HT2"
-msgstr "Pzgr 39"
 
 msgid "_88mm_Pzgr40_43"
 msgstr "Pzgr. 40/43 Flak 41"

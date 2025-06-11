@@ -21,7 +21,7 @@
 					<identifier>lambert1</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/wg_particles/pbs_mesh_particles.fx</fx>
+					<fx>shaders/particles/pbs_mesh_particles.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>particles/mesh_particles/environment/hd_env_UNI_016_Flag/hd_env_UNI_016_Flag_AM.dds</Texture>

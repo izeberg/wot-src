@@ -8,10 +8,10 @@
 	</Properties>
 	<CellMethods>
 		<activateShooting>
-			<Exposed>OWN_CLIENT</Exposed>
+			<Exposed/>
 		</activateShooting>
 		<deactivateShooting>
-			<Exposed>OWN_CLIENT</Exposed>
+			<Exposed/>
 		</deactivateShooting>
 	</CellMethods>
 	<DefaultKeyName>autoShootGunController</DefaultKeyName>

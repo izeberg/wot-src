@@ -1,49 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<forward>
-		<name>default</name>
-		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_h08_mt_hangar.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/eff_tex_h08_mt_hangar.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_forward/PFX_textures/h08_walking_man.dds</texture>
-		</preload>
-		<fn_effect_bin>particles/environment/hangar/h08_walking_man.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h08_walking_man.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/hangar/h08_welding.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_welding.eff</fn_effect_bin>
-	</forward>
 	<deferred>
 		<name>default</name>
 		<preload>
-			<shader>\data\shaders\ps_long.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_h08_mt_hangar.dds</texture>
-		</preload>
-		<preload>
 			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_tex_h08_mt_hangar.dds</texture>
+			<texture>particles/content_deferred/PFX_textures/eff_indiansummer.dds</texture>
 		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/h08_walking_man.dds</texture>
-		</preload>
-		<preload>
-			<shader>\data\shaders\ps.fx</shader>
-			<texture>particles/content_deferred/PFX_textures/eff_leaves.dds</texture>
-		</preload>
-		<fn_effect_bin>particles/environment/hangar/h08_walking_man.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_walking_man.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_spring_wind.eff</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_spring_wind.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_spring_wind_s.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_welding.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/environment/hangar/h08_welding.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_mt_car_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/interior/h08_mt_car_splash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_mt_indiansummer.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/pfx/environment/hangar/h08_mt_indiansummer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/hangar/h08_mt_indiansummer.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/h08_mt_car_splash.vfx</fn_effect_bin>
 	</deferred>
+	<forward>
+		<fn_effect_bin>particles/environment/hangar/h08_mt_car_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/hangar/h08_mt_indiansummer.eff</fn_effect_bin>
+	</forward>
 </root>

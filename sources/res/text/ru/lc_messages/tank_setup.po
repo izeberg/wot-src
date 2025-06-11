@@ -484,10 +484,10 @@ msgstr "На наладку работы оборудования не хват�
 
 msgid "dialogs/exchangeToUpgrade/notPossible/status"
 msgstr ""
-"Наладка работы оборудования невозможна. Нужно обменять на кредиты %(gold)s"
+"Наладка работы оборудования невозможна. Нужно обменять на серебро %(gold)s."
 
 msgid "dialogs/exchangeToUpgrade/notRequired/status"
-msgstr "У вас уже достаточно кредитов для наладки оборудования."
+msgstr "У вас уже достаточно серебра для наладки оборудования."
 
 msgid "dialogs/exchangeToUpgrade/notRequired/title"
 msgstr "Обмен не требуется"
@@ -570,10 +570,10 @@ msgid "dialogs/goldExchange/notRequired/action/modification"
 msgstr "На модификацию"
 
 msgid "dialogs/goldExchange/notRequired/status"
-msgstr "Обмен не требуется. У вас достаточно кредитов."
+msgstr "Обмен не требуется. У вас достаточно серебра."
 
 msgid "dialogs/goldExchange/notRequired/title"
-msgstr "{action} уже хватает кредитов"
+msgstr "{action} уже хватает серебра."
 
 msgid "dialogs/goldExchange/refillShells/title"
 msgstr "На пополнение боекомплекта не хватает %(credits)s"
@@ -710,7 +710,7 @@ msgstr ""
 msgid "introduction/message/trophy"
 msgstr ""
 "Особая линейка предметов, которая при получении обладает параметрами "
-"штатного оборудования, но может быть улучшена за кредиты. Трофейное "
+"штатного оборудования, но может быть улучшена за серебро. Трофейное "
 "оборудование невозможно приобрести за игровую валюту, но можно получить в "
 "награду за определённые события."
 
@@ -753,7 +753,7 @@ msgstr "КАТЕГОРИИ ОБОРУДОВАНИЯ"
 msgid "introduction/slide/3/description/left"
 msgstr ""
 "Стоимость большинства существующего оборудования для II–IV уровней теперь не"
-" будет превышать 50 000 кредитов, для V–VII уровней — не больше 300 000, а "
+" будет превышать 50 000 серебра, для V–VII уровней — не больше 300 000, а "
 "для VIII–XI — до 600 000."
 
 msgid "introduction/slide/3/description/right"
@@ -953,6 +953,9 @@ msgstr ""
 "задержки срабатывания звуковой\n"
 "разведки"
 
+msgid "kpi/bonus/negative/chargeTimeBonus"
+msgstr "от времени подготовки залпа"
+
 msgid "kpi/bonus/negative/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
 "от дальности обзора при выведенных из\n"
@@ -1011,8 +1014,14 @@ msgstr "от скорости тушения пожара"
 msgid "kpi/bonus/negative/foliageMaskingFactor"
 msgstr "от эффекта маскировки от растительности"
 
+msgid "kpi/bonus/negative/loadShellIntoDualGunBonus"
+msgstr "от времени дозарядки снаряда"
+
 msgid "kpi/bonus/negative/minTimeBetweenReloadBoost"
 msgstr "задержка повторной активации"
+
+msgid "kpi/bonus/negative/penaltyAfterShotBonus"
+msgstr "от штрафа после залпа"
 
 msgid "kpi/bonus/negative/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1024,6 +1033,9 @@ msgstr "к защите радиста от ранений"
 
 msgid "kpi/bonus/negative/shotsLimitForGunBoost"
 msgstr "количество учитываемых попаданий"
+
+msgid "kpi/bonus/negative/speedLimitsBonus"
+msgstr "от макс. скорости / заднему ходу"
 
 msgid "kpi/bonus/negative/stunResistanceEffectFactor"
 msgstr ""
@@ -1211,6 +1223,9 @@ msgstr ""
 "задержки срабатывания звуковой\n"
 "разведки"
 
+msgid "kpi/bonus/positive/chargeTimeBonus"
+msgstr "к времени подготовки залпа"
+
 msgid "kpi/bonus/positive/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
 "к дальности обзора при выведенных из\n"
@@ -1272,8 +1287,14 @@ msgstr "к эффекту маскировки от растительности
 msgid "kpi/bonus/positive/limitsForGunBoost"
 msgstr "количество учитываемых попаданий"
 
+msgid "kpi/bonus/positive/loadShellIntoDualGunBonus"
+msgstr "к времени дозарядки снаряда"
+
 msgid "kpi/bonus/positive/minTimeBetweenReloadBoost"
 msgstr "задержка повторной активации"
+
+msgid "kpi/bonus/positive/penaltyAfterShotBonus"
+msgstr "к штрафу после залпа"
 
 msgid "kpi/bonus/positive/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1282,6 +1303,9 @@ msgstr ""
 
 msgid "kpi/bonus/positive/radiomanHitChance"
 msgstr "к защите радиста от ранений"
+
+msgid "kpi/bonus/positive/speedLimitsBonus"
+msgstr "к макс. скорости / заднему ходу"
 
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "к негативному эффекту оглушения"
@@ -1836,6 +1860,9 @@ msgstr "c"
 msgid "kpi/bonus/valueTypes/brackets"
 msgstr "(%(value)s)"
 
+msgid "kpi/bonus/valueTypes/chargeTimeBonus"
+msgstr "с"
+
 msgid "kpi/bonus/valueTypes/damagedModulesDetectionTime"
 msgstr "c"
 
@@ -1848,8 +1875,17 @@ msgstr " "
 msgid "kpi/bonus/valueTypes/limitsForGunBoostSpec"
 msgstr "c"
 
+msgid "kpi/bonus/valueTypes/loadShellIntoDualGunBonus"
+msgstr "с"
+
+msgid "kpi/bonus/valueTypes/penaltyAfterShotBonus"
+msgstr "с"
+
 msgid "kpi/bonus/valueTypes/radiomanActivityTimeAfterVehicleDestroy"
 msgstr "с"
+
+msgid "kpi/bonus/valueTypes/speedLimitsBonus"
+msgstr "км/ч"
 
 msgid "kpi/bonus/valueTypes/vehicleBackwardMaxSpeed"
 msgstr "км/ч"
@@ -1869,8 +1905,20 @@ msgstr "c"
 msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
+msgid "kpi/title/chargeTimeBonus"
+msgstr "Время залпа (с)"
+
 msgid "kpi/title/limitsForGunBoost"
 msgstr "Количество учитываемых попаданий (по количеству / по времени)"
+
+msgid "kpi/title/loadShellIntoDualGunBonus"
+msgstr "Уменьшение времени дозарядки"
+
+msgid "kpi/title/penaltyAfterShotBonus"
+msgstr "Уменьшение штрафа после залпа"
+
+msgid "kpi/title/speedLimitsBonus"
+msgstr "Макс. скорость / задний ход (км/ч)"
 
 msgid "kpi/title/temperatureCoolingDelay"
 msgstr "Задержка охлаждения (с)"

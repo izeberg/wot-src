@@ -25,8 +25,8 @@ package net.wg.gui.lobby.battleMatters
          "btnClose":MENU.AWARDWINDOW_CLOSEBUTTON,
          "textCommander":MENU.TRAINING_OWNERTITLE,
          "textRandomBattle":MENU.BONUSTYPE_1,
-         "textTopographyBattle":MENU.HEADERBUTTONS_BATTLE_TYPES_MAPSTRAINING,
-         "textTopography":MENU.HEADERBUTTONS_BATTLE_TYPES_MAPSTRAINING,
+         "textVersusAIBattle":MENU.BONUSTYPE_50,
+         "textVersusAI":MENU.BONUSTYPE_50,
          "textScenario1":_locale.makeString(MAPS_TRAINING.RESULT_SCENARIO,{"scenario":"1"}),
          "textScenario2":_locale.makeString(MAPS_TRAINING.RESULT_SCENARIO,{"scenario":"2"}),
          "textScenario3":_locale.makeString(MAPS_TRAINING.RESULT_SCENARIO,{"scenario":"3"}),
@@ -86,9 +86,9 @@ package net.wg.gui.lobby.battleMatters
       
       public var textRandomBattle:MovieClip;
       
-      public var textTopographyBattle:MovieClip;
+      public var textVersusAIBattle:MovieClip;
       
-      public var textTopography:MovieClip;
+      public var textVersusAI:MovieClip;
       
       public var textScenario1:MovieClip;
       
@@ -175,10 +175,10 @@ package net.wg.gui.lobby.battleMatters
                _loc3_++;
             }
          }
-         if(this.textTopographyBattle && this.textTopographyBattle.textField && this.textTopographyBattle.arrow)
+         if(this.textVersusAIBattle && this.textVersusAIBattle.textField && this.textVersusAIBattle.arrow)
          {
-            this.textTopographyBattle.textField.autoSize = TextFieldAutoSize.LEFT;
-            this.textTopographyBattle.arrow.x = this.textTopographyBattle.textField.x + this.textTopographyBattle.textField.width | 0;
+            this.textVersusAIBattle.textField.autoSize = TextFieldAutoSize.LEFT;
+            this.textVersusAIBattle.arrow.x = this.textVersusAIBattle.textField.x + this.textVersusAIBattle.textField.width | 0;
          }
          if(this.textRandomBattle && this.textRandomBattle.textField && this.textRandomBattle.arrow)
          {
@@ -206,8 +206,8 @@ package net.wg.gui.lobby.battleMatters
          this.textCommander = null;
          this.applyBooksBtn = null;
          this.textRandomBattle = null;
-         this.textTopographyBattle = null;
-         this.textTopography = null;
+         this.textVersusAIBattle = null;
+         this.textVersusAI = null;
          this.textScenario1 = null;
          this.textScenario2 = null;
          this.textScenario3 = null;

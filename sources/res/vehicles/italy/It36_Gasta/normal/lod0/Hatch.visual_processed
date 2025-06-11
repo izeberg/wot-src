@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>0.784612 -0.506827 0.357086</row0>
+				<row1>0.527667 0.848281 0.044577</row1>
+				<row2>-0.325502 0.153447 0.933007</row2>
+				<row3>-0.000001 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>hatch</identifier>
+				<transform>
+					<row0>0.233595 0.847858 -0.475994</row0>
+					<row1>-0.772801 0.458985 0.438306</row1>
+					<row2>0.590095 0.265463 0.762442</row2>
+					<row3>0.549051 0.896478 -0.954575</row3>
+				</transform>
+				<node>
+					<identifier>hatch_BlendBone</identifier>
+					<transform>
+						<row0>0.785605 -0.506827 0.354895</row0>
+						<row1>0.527789 0.848281 0.043105</row1>
+						<row2>0.322898 -0.153447 -0.933912</row2>
+						<row3>-1.342713 0.431233 0.165835</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>hatch_BlendBone</node>
+		<geometry>
+			<vertices>hatchShape.vertices</vertices>
+			<primitive>hatchShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/italy/It36_Gasta/Gasta_guns_ID.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/italy/It36_Gasta/Gasta_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/italy/It36_Gasta/Gasta_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/italy/It36_Gasta/Gasta_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/italy/It36_Gasta/Gasta_turret_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>1.171921 0.346055 0.763109</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>1.081929 0.228307 -0.895554</min>
+		<max>1.261912 0.463802 -0.630664</max>
+	</boundingBox>
+	<geometrySize>6640</geometrySize>
+	<minUVDensity>0.021463</minUVDensity>
+</root>

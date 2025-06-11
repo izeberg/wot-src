@@ -180,7 +180,7 @@
 			</sensitivityToImpulse>
 		</swinging>
 		<exhaust>
-			<pixie>diesel_large</pixie>
+			<pixie>diesel_medium</pixie>
 			<nodes>HP_Track_Exhaus_1 HP_Track_Exhaus_2</nodes>
 		</exhaust>
 		<turretPositions>
@@ -1567,7 +1567,7 @@
 			<drivingWheels>WD_L0 WD_L5</drivingWheels>
 			<effects>
 				<lodDist>MEDIUM</lodDist>
-				<mud>largeTankMud</mud>
+				<mud>mediumTankMud</mud>
 			</effects>
 			<wwsoundPC>treads_type_pc</wwsoundPC>
 			<wwsoundNPC>trds_med_npc</wwsoundNPC>
@@ -4004,7 +4004,6 @@
 	<useHullZOffset>True</useHullZOffset>
 	<effects>
 		<collision/>
-		<damagedStateGroup>large</damagedStateGroup>
 	</effects>
 	<emblems>
 		<default>15501</default>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod4/Hull</nodefullVisual>
 	<visibilityBox>
 		<min>-1.605177 -0.516647 -3.626074</min>
 		<max>1.602156 0.615167 3.592922</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/crash/lod4/Hull</nodefullVisual>
 </root>

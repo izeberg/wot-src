@@ -642,15 +642,6 @@ CHAT_COMMANDS = Enumeration('chatCommands', [
   {'battleCmd': 1}),
  (
   BATTLE_CHAT_COMMAND_NAMES.OVERHEAT_CANT_SHOOT,
-  {'battleCmd': 1}),
- (
-  BATTLE_CHAT_COMMAND_NAMES.OBJECTIVES_POINT,
-  {'battleCmd': 1}),
- (
-  BATTLE_CHAT_COMMAND_NAMES.HB_ARTILLERY_ON_YOURSELF,
-  {'battleCmd': 1}),
- (
-  BATTLE_CHAT_COMMAND_NAMES.HB_LAST_STAND,
   {'battleCmd': 1})], instance=AttributeEnumItem)
 CHAT_MEMBER_STATUSES = Enumeration('chatMemberStatuses', [
  'available',

@@ -414,139 +414,67 @@ msgid "chapter/currentStep/colon"
 msgstr "Текущий этап:"
 
 msgid "chapter/fullName/1"
-msgstr "Сила духа"
+msgstr "Среди лиан"
 
-msgid "chapter/fullName/145"
-msgstr "Красная Фурия"
+msgid "chapter/fullName/171"
+msgstr "Среди лиан"
 
-msgid "chapter/fullName/151"
-msgstr "Петропавловский маяк"
+msgid "chapter/fullName/172"
+msgstr "Полярное сияние"
 
-msgid "chapter/fullName/152"
-msgstr "Шторм покорённый"
+msgid "chapter/fullName/173"
+msgstr "Пески Калахари"
 
-msgid "chapter/fullName/153"
-msgstr "Силовое поле"
-
-msgid "chapter/fullName/154"
-msgstr "Работа на совесть"
-
-msgid "chapter/fullName/161"
-msgstr "Сила духа"
-
-msgid "chapter/fullName/162"
-msgstr "Восточный ветер"
-
-msgid "chapter/fullName/163"
-msgstr "Взвейся, знамя!"
-
-msgid "chapter/fullName/164"
-msgstr "Победный марш"
-
-msgid "chapter/fullName/165"
-msgstr "Охота на мышей"
+msgid "chapter/fullName/174"
+msgstr "Камчатская баллада"
 
 msgid "chapter/fullName/2"
-msgstr "Восточный ветер"
+msgstr "Полярное сияние"
 
 msgid "chapter/fullName/3"
-msgstr "Взвейся, знамя!"
+msgstr "Пески Калахари"
 
 msgid "chapter/fullName/4"
-msgstr "Победный марш"
+msgstr "Камчатская баллада"
 
 msgid "chapter/fullName/5"
 msgstr "Охота на мышей"
 
-msgid "chapter/fullName/quoted/145"
-msgstr "Красная Фурия"
+msgid "chapter/fullName/quoted/171"
+msgstr "Среди лиан"
 
-msgid "chapter/fullName/quoted/151"
-msgstr "Петропавловский маяк"
+msgid "chapter/fullName/quoted/172"
+msgstr "Полярное сияние"
 
-msgid "chapter/fullName/quoted/152"
-msgstr "Шторм покорённый"
+msgid "chapter/fullName/quoted/173"
+msgstr "Пески Калахари"
 
-msgid "chapter/fullName/quoted/153"
-msgstr "Силовое поле"
+msgid "chapter/fullName/quoted/174"
+msgstr "Камчатская баллада"
 
-msgid "chapter/fullName/quoted/154"
-msgstr "Работа на совесть"
+msgid "chapter/fullNameUppercased/171"
+msgstr "СРЕДИ ЛИАН"
 
-msgid "chapter/fullName/quoted/161"
-msgstr "Сила духа"
+msgid "chapter/fullNameUppercased/172"
+msgstr "ПОЛЯРНОЕ СИЯНИЕ"
 
-msgid "chapter/fullName/quoted/162"
-msgstr "Восточный ветер"
+msgid "chapter/fullNameUppercased/173"
+msgstr "ПЕСКИ КАЛАХАРИ"
 
-msgid "chapter/fullName/quoted/163"
-msgstr "Взвейся, знамя!"
+msgid "chapter/fullNameUppercased/174"
+msgstr "КАМЧАТСКАЯ БАЛЛАДА"
 
-msgid "chapter/fullName/quoted/164"
-msgstr "Победный марш"
+msgid "chapter/fullNameUppercased/quoted/171"
+msgstr "СРЕДИ ЛИАН"
 
-msgid "chapter/fullName/quoted/165"
-msgstr "Охота на мышей"
+msgid "chapter/fullNameUppercased/quoted/172"
+msgstr "ПОЛЯРНОЕ СИЯНИЕ"
 
-msgid "chapter/fullNameUppercased/145"
-msgstr "КРАСНАЯ ФУРИЯ"
+msgid "chapter/fullNameUppercased/quoted/173"
+msgstr "ПЕСКИ КАЛАХАРИ"
 
-msgid "chapter/fullNameUppercased/151"
-msgstr "ПЕТРОПАВЛОВСКИЙ МАЯК"
-
-msgid "chapter/fullNameUppercased/152"
-msgstr "ШТОРМ ПОКОРЁННЫЙ"
-
-msgid "chapter/fullNameUppercased/153"
-msgstr "СИЛОВОЕ ПОЛЕ"
-
-msgid "chapter/fullNameUppercased/154"
-msgstr "РАБОТА НА СОВЕСТЬ"
-
-msgid "chapter/fullNameUppercased/161"
-msgstr "СИЛА ДУХА"
-
-msgid "chapter/fullNameUppercased/162"
-msgstr "ВОСТОЧНЫЙ ВЕТЕР"
-
-msgid "chapter/fullNameUppercased/163"
-msgstr "ВЗВЕЙСЯ, ЗНАМЯ!"
-
-msgid "chapter/fullNameUppercased/164"
-msgstr "ПОБЕДНЫЙ МАРШ"
-
-msgid "chapter/fullNameUppercased/165"
-msgstr "ОХОТА НА МЫШЕЙ"
-
-msgid "chapter/fullNameUppercased/quoted/145"
-msgstr "КРАСНАЯ ФУРИЯ"
-
-msgid "chapter/fullNameUppercased/quoted/151"
-msgstr "ПЕТРОПАВЛОВСКИЙ МАЯК"
-
-msgid "chapter/fullNameUppercased/quoted/152"
-msgstr "ШТОРМ ПОКОРЁННЫЙ"
-
-msgid "chapter/fullNameUppercased/quoted/153"
-msgstr "СИЛОВОЕ ПОЛЕ"
-
-msgid "chapter/fullNameUppercased/quoted/154"
-msgstr "РАБОТА НА СОВЕСТЬ"
-
-msgid "chapter/fullNameUppercased/quoted/161"
-msgstr "СИЛА ДУХА"
-
-msgid "chapter/fullNameUppercased/quoted/162"
-msgstr "ВОСТОЧНЫЙ ВЕТЕР"
-
-msgid "chapter/fullNameUppercased/quoted/163"
-msgstr "ВЗВЕЙСЯ, ЗНАМЯ!"
-
-msgid "chapter/fullNameUppercased/quoted/164"
-msgstr "ПОБЕДНЫЙ МАРШ"
-
-msgid "chapter/fullNameUppercased/quoted/165"
-msgstr "ОХОТА НА МЫШЕЙ"
+msgid "chapter/fullNameUppercased/quoted/174"
+msgstr "КАМЧАТСКАЯ БАЛЛАДА"
 
 msgid "chapter/title"
 msgstr "ГЛАВА %(chapter)s"
@@ -810,7 +738,7 @@ msgstr "Награда за уровни фронта"
 
 msgid "howToEarnPoints/card/limitPoints/text"
 msgstr ""
-"При еженедельном достижении лимита очков на технике вы будете получать в "
+"При достижении еженедельного лимита очков на технике вы будете получать в "
 "награду дополнительные очки."
 
 msgid "howToEarnPoints/card/limitPoints/title"
@@ -850,7 +778,7 @@ msgid "howToEarnPoints/lose/43"
 msgstr "Поражение / ничья"
 
 msgid "howToEarnPoints/lose/50"
-msgstr "Поражение"
+msgstr "Поражение / ничья"
 
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Места %(startLevel)d–%(endLevel)d"
@@ -898,7 +826,7 @@ msgid "howToEarnPoints/text/21"
 msgstr "Играйте на подходящей для режима технике"
 
 msgid "howToEarnPoints/text/22"
-msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)"
+msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)."
 
 msgid "howToEarnPoints/text/27"
 msgstr "Играйте на подходящей для режима технике"
@@ -910,7 +838,7 @@ msgid "howToEarnPoints/text/43"
 msgstr "Играйте на подходящей для режима технике"
 
 msgid "howToEarnPoints/text/50"
-msgstr "Играйте на подходящей для режима технике"
+msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)."
 
 msgid "howToEarnPoints/title"
 msgstr "КАК ЗАРАБОТАТЬ ОЧКИ"
@@ -941,9 +869,10 @@ msgstr "О БОЕВОМ ПРОПУСКЕ"
 
 msgid "intro/bonus/text"
 msgstr ""
-"При достижении лимита очков на технике вам будут начислены в награду "
-"бонусные очки. Награда будет доступна каждую неделю после обновления лимита."
-" Больше информации можно найти во вкладке «Как заработать очки»."
+"По достижении лимита очков на определённой машине вам будут начислены "
+"бонусные очки в награду, которая будет доступна каждую неделю после "
+"обновления лимита. Больше информации можно найти во вкладке «Как заработать "
+"очки»."
 
 msgid "intro/bonus/title"
 msgstr "Бонус за достижение лимита"
@@ -964,7 +893,7 @@ msgstr "Глава «Охота на мышей»"
 msgid "intro/limit/text"
 msgstr ""
 "На всей технике VI-XI уровней устанавливаются одинаковые лимиты очков "
-"Боевого пропуска. Лимит обновляется еженедельно. При достижении "
+"Боевого пропуска. Лимит обновляется еженедельно. По достижении "
 "установленного лимита на следующей неделе будет установлен более высокий "
 "лимит."
 
@@ -979,18 +908,19 @@ msgstr "ДОСТУПНА СПЕЦИАЛЬНАЯ ГЛАВА"
 
 msgid "intro/subTitle"
 msgstr ""
-"Сезон посвящён 80-летию Победы в Великой Отечественной войне. Вас ждут "
-"тематические члены экипажа, стили и памятные награды, приуроченные к этому "
-"знаменательному событию."
+"В этом сезоне Константин Кощеев познакомит с некоторыми эпизодами своей "
+"прошлой жизни, произошедшими до того, как он попал в «Перспективу». Новые "
+"герои, раскиданные по всем уголкам света, новые вызовы и опасные миссии — у "
+"Кощеева найдётся куча историй для посиделок у костра."
 
 msgid "intro/title"
-msgstr "БОЕВОЙ ПРОПУСК: ОХОТА НА МЫШЕЙ"
+msgstr "БОЕВОЙ ПРОПУСК: ВОКРУГ СВЕТА"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"В этом сезоне представлена новая ключевая техника: ИС-7, Об. 268, Т-100 ЛТ. "
-"Играя на этой технике вы сможете заработать больше бонусных очков за "
-"достижение еженедельного лимита очков."
+"В этом сезоне представлена новая ключевая техника: Rinoceronte, Wz.70 Żubr и"
+" Manticore. Играя на этой технике, вы сможете заработать больше бонусных "
+"очков Боевого пропуска за достижение еженедельного лимита очков."
 
 msgid "intro/vehicles/title"
 msgstr "Новая ключевая техника"
@@ -1468,7 +1398,7 @@ msgstr ""
 
 msgid "tooltips/RandomQuestTooltip/rewards/money"
 msgstr ""
-"%(whiteSpanish_Open)sКредиты, боны и свободный опыт%(whiteSpanish_Close)s"
+"%(whiteSpanish_Open)sСеребро, боны и свободный опыт%(whiteSpanish_Close)s"
 
 msgid "tooltips/RandomQuestTooltip/rewards/personal_reserves"
 msgstr "%(whiteSpanish_Open)sЛичные резервы%(whiteSpanish_Close)s"
@@ -1683,6 +1613,9 @@ msgid "tooltips/inProgress/playGame/stronghold_units"
 msgstr ""
 "Правила начисления очков в Вылазках и Наступлениях на технике VI, VII и X "
 "уровней."
+
+msgid "tooltips/inProgress/playGame/versus_ai"
+msgstr "Правила начисления очков в Полигоне на технике VI-X уровней."
 
 msgid "tooltips/inProgress/timeLeft"
 msgstr "Осталось:"
@@ -1963,7 +1896,7 @@ msgid "trophyDeviceUpgradeConfim/submit"
 msgstr "Произвести наладку"
 
 msgid "trophyDeviceUpgradeConfim/submitTooltip"
-msgstr "Не хватает кредитов на наладку"
+msgstr "Не хватает серебра на наладку"
 
 msgid "trophyDeviceUpgradeConfim/title"
 msgstr ""

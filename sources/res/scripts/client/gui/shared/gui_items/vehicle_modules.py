@@ -8,7 +8,7 @@ from gui.impl.gen import R
 from gui.shared.items_parameters.params_cache import g_paramsCache
 from gui.shared.utils.functions import replaceHyphenToUnderscore
 from gui.shared.gui_items.fitting_item import FittingItem, ICONS_MASK
-from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTOSHOOT_FLAME
+from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_CAN_BE_AUTOSHOOT_FLAME, GUN_AUTOSHOOT_FLAME, GUN_AUTO_RELOAD_DUAL_GUN, GUN_CLIP_DUAL_GUN, GUN_CAN_BE_AUTO_RELOAD_DUAL_GUN, GUN_CAN_BE_CLIP_DUAL_GUN
 from gui.shared.money import Currency
 import nations
 from items import vehicles as veh_core
@@ -222,6 +222,14 @@ class VehicleGun(VehicleModule):
         typeToCheck = GUN_DUAL_GUN if vehicleDescr is not None else GUN_CAN_BE_DUAL_GUN
         return self.getReloadingType(vehicleDescr) == typeToCheck
 
+    def isAutoReloadableDualGun(self, vehicleDescr=None):
+        typeToCheck = GUN_AUTO_RELOAD_DUAL_GUN if vehicleDescr is not None else GUN_CAN_BE_AUTO_RELOAD_DUAL_GUN
+        return self.getReloadingType(vehicleDescr) == typeToCheck
+
+    def isClipDualGun(self, vehicleDescr=None):
+        typeToCheck = GUN_CLIP_DUAL_GUN if vehicleDescr is not None else GUN_CAN_BE_CLIP_DUAL_GUN
+        return self.getReloadingType(vehicleDescr) == typeToCheck
+
     def hasDualAccuracy(self, vehicleDescr=None):
         return vehicleDescr is not None and g_paramsCache.hasDualAccuracy(self.intCD, vehicleDescr.type.compactDescr)
 
@@ -272,6 +280,10 @@ class VehicleGun(VehicleModule):
         if self.isFlameGun():
             return backport.image(R.images.gui.maps.icons.modules.flameGunIcon())
         else:
+            if self.isAutoReloadableDualGun(vehDescr):
+                return backport.image(R.images.gui.maps.icons.modules.autoLoaderDualGunIcon())
+            if self.isClipDualGun(vehDescr):
+                return backport.image(R.images.gui.maps.icons.modules.magazineDualGunIcon())
             if self.isClipGun(vehDescr):
                 return backport.image(R.images.gui.maps.icons.modules.magazineGunIcon())
             if self.isAutoReloadable(vehDescr):
@@ -309,6 +321,10 @@ class VehicleGun(VehicleModule):
             return ('/').join((key, 'autoReload'))
         if self.isDualGun(vehicleDescr):
             return ('/').join((key, 'dualGun'))
+        if self.isAutoReloadableDualGun(vehicleDescr):
+            return ('/').join((key, 'autoReloadDualGun'))
+        if self.isClipDualGun(vehicleDescr):
+            return ('/').join((key, 'clipDualGun'))
         return key
 
 

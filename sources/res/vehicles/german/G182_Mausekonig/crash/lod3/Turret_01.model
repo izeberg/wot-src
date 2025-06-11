@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G182_Mausekonig/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G182_Mausekonig/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.699769 -0.004192 -3.719816</min>
+		<max>1.699769 2.060799 2.151957</max>
+	</visibilityBox>
+</root>

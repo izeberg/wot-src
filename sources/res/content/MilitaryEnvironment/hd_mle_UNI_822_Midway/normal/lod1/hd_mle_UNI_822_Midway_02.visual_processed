@@ -20,8 +20,78 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>s_nd9</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/deck_grey_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/rust_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/snow_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/MilitaryEnvironment/hd_mle_UNI_822_Midway/hd_mle_UNI_822_Midway_09_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/MilitaryEnvironment/00_Tiles/snow.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>1.000000 0.430000 0.380000 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.862745 0.941177 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/deck_grey_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/rust_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/snow_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/deck_grey_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/rust_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/MilitaryEnvironment/00_Tiles/dds/snow_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000003 15.491996 0.201107</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
 					<identifier>s_nd8</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -31,18 +101,6 @@
 					<property>
 						dirtMap
 						<Texture>content/MilitaryEnvironment/00_Tiles/snow.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -100,10 +158,10 @@
 				<groupOrigin>-0.204713 9.615416 0.749237</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				2
 				<material>
 					<identifier>s_nd6</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -113,18 +171,6 @@
 					<property>
 						dirtMap
 						<Texture>content/MilitaryEnvironment/00_Tiles/snow.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -186,7 +232,7 @@
 				<groupOrigin>-0.008510 18.456787 1.955513</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				3
 				<material>
 					<identifier>s_nd5</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -194,23 +240,11 @@
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
 						blendMask
-						<Texture>content/MilitaryEnvironment/hd_mle_UNI_822_Midway/hd_mle_UNI_822_Midway_atlas_blend.png</Texture>
+						<Texture>content/MilitaryEnvironment/hd_mle_UNI_822_Midway/hd_mle_UNI_822_Midway_04_blend.png</Texture>
 					</property>
 					<property>
 						dirtMap
 						<Texture>content/MilitaryEnvironment/00_Tiles/snow.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -269,13 +303,13 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000003 15.491996 -1.429989</groupOrigin>
+				<groupOrigin>-0.429632 1.084758 -1.851879</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				4
 				<material>
 					<identifier>s_nd4</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
@@ -287,18 +321,6 @@
 						<Texture>content/MilitaryEnvironment/00_Tiles/snow.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -308,7 +330,7 @@
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>0.995000 0.995000 0.995000 1.000000</Vector4>
+						<Vector4>1.000000 0.995000 0.995000 1.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -358,7 +380,7 @@
 				<groupOrigin>-0.043130 3.796848 -1.607658</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				5
 				<material>
 					<identifier>s_nd3</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -371,18 +393,6 @@
 					<property>
 						dirtMap
 						<Texture>content/MilitaryEnvironment/00_Tiles/snow.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
 					</property>
 					<property>
 						g_enableTerrainBlending
@@ -440,10 +450,10 @@
 				<groupOrigin>-16.675251 0.001075 0.000017</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				5
+				6
 				<material>
 					<identifier>s_nd1</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -457,10 +467,6 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_822_Midway/hd_mle_UNI_822_Midway_Details_02_GMM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
 					</property>
 					<property>
 						alphaTestEnable
@@ -478,10 +484,10 @@
 				<groupOrigin>-0.114444 13.505919 -1.830353</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				6
+				7
 				<material>
 					<identifier>s_nd0</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>112</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -495,10 +501,6 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_822_Midway/hd_mle_UNI_822_Midway_Details_01_GMM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
 					</property>
 					<property>
 						alphaTestEnable

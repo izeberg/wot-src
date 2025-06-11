@@ -11,8 +11,8 @@
 	<postProgressionTree>role_MT_sniper</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>70</forward>
-		<backward>25</backward>
+		<forward>65</forward>
+		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -4020,7 +4020,7 @@
 			<engines>
 				<GTD_2T4>
 					<smplEnginePower>1150</smplEnginePower>
-					<smplFwMaxSpeed>70</smplFwMaxSpeed>
+					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</GTD_2T4>
 			</engines>
 			<chassis>

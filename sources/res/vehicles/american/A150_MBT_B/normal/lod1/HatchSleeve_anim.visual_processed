@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.129382 0.704816 -0.671272</row3>
+					<row3>0.227532 0.133782 -0.000806</row3>
 				</transform>
 				<node>
 					<identifier>Ejector_1</identifier>
@@ -37,8 +37,8 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 -1.000000</row2>
-							<row3>0.207532 -0.649598 0.671254</row3>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.149382 -0.078564 0.000788</row3>
 						</transform>
 					</node>
 				</node>
@@ -48,7 +48,7 @@
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.129382 -0.704816 0.671272</row3>
+						<row3>-0.227532 -0.133782 0.000806</row3>
 					</transform>
 				</node>
 			</node>
@@ -69,24 +69,16 @@
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						diffuseMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_AO.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						g_detailUVTiling
@@ -100,15 +92,23 @@
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/american/A150_MBT_B/MBT_B_turret_01_ANM.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>-0.356387 0.570399 0.670465</groupOrigin>
+				<groupOrigin>0.000527 -0.000635 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.692869 0.395802 -0.840518</min>
-		<max>-0.019905 0.744997 -0.500413</max>
+		<min>-0.335955 -0.175232 -0.170053</min>
+		<max>0.337009 0.173963 0.170053</max>
 	</boundingBox>
 	<geometrySize>17260</geometrySize>
 	<minUVDensity>0.004751</minUVDensity>

@@ -75,7 +75,7 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setClipsParam(param1:Number, param2:Number, param3:Boolean = false) : void
+      public function setClipsParam(param1:Number, param2:Number, param3:int = 0) : void
       {
       }
       
@@ -99,7 +99,7 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:String, param11:Number, param12:String, param13:Boolean = false, param14:Boolean = false, param15:Boolean = false) : void
+      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:String, param11:Number, param12:String, param13:Boolean = false, param14:int = 0, param15:Boolean = false) : void
       {
          this.updatePlayerInfo(param7);
          this.updateAmmoState(param10);

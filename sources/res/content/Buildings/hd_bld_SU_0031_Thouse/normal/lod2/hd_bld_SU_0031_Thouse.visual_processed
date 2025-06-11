@@ -23,7 +23,7 @@
 					<identifier>s_nd8</identifier>
 					<fx>shaders/custom/interior_mapping.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						g_albedoMap
 						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_AM.dds</Texture>
@@ -44,6 +44,14 @@
 						g_surfaceSpecularMultiplier
 						<Float>0.000000</Float>
 					</property>
+					<property>
+						g_LumMap
+						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_PM.dds</Texture>
+					</property>
+					<property>
+						g_platesSelfIlluminationMap
+						<Texture>content/Buildings/00_Interiors/Interiors_RuinedCity_01_PM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.437832 7.783343 -0.684733</groupOrigin>
 			</primitiveGroup>
@@ -53,7 +61,7 @@
 					<identifier>s_nd7</identifier>
 					<fx>shaders/std_effects/PBS_glass.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						dirtAlbedoMap
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_AM.dds</Texture>
@@ -75,7 +83,7 @@
 					<identifier>s_nd6</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>108</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Wood_Planks_10_painted_512_AM.dds</Texture>
@@ -137,7 +145,7 @@
 					<identifier>s_nd5</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_crash_512_AM.dds</Texture>
@@ -207,7 +215,7 @@
 					<identifier>s_nd4</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Concrete_10_flat_512_AM.dds</Texture>
@@ -285,7 +293,7 @@
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>112</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_AM.dds</Texture>
@@ -363,7 +371,7 @@
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_07_Painted_03_AM.dds</Texture>
@@ -468,10 +476,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-17.619135 -1.081346 -11.566666</min>
-		<max>18.646576 19.103071 9.764104</max>
+		<min>-17.619135 -1.084878 -11.088423</min>
+		<max>18.646576 19.103071 9.764098</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>352430</geometrySize>
+	<geometrySize>353094</geometrySize>
 	<minUVDensity>0.000115</minUVDensity>
 </root>

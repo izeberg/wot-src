@@ -99,7 +99,7 @@
 				<material>
 					<identifier>s_nd7</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile1Tint
@@ -177,7 +177,7 @@
 				<material>
 					<identifier>s_nd4</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						g_tile2Tint
@@ -251,7 +251,7 @@
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						doubleSided
@@ -293,7 +293,7 @@
 				<material>
 					<identifier>s_nd6</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile2Tint
@@ -379,7 +379,7 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile2Tint
@@ -461,7 +461,7 @@
 				<material>
 					<identifier>s_nd9</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile2Tint
@@ -547,7 +547,7 @@
 				<material>
 					<identifier>s_nd8</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						doubleSided

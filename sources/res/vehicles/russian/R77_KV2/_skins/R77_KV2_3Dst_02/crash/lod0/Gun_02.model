@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/crash/lod0/Gun_02</nodelessVisual>
+	<visibilityBox>
+		<min>-0.487379 -0.613663 -1.278129</min>
+		<max>0.440791 0.481156 2.325260</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R77_KV2/_skins/R77_KV2_3Dst_02/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

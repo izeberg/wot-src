@@ -1,5 +1,5 @@
 from debug_utils import LOG_ERROR
-from messenger.gui.Scaleform.meta.BaseContactViewMeta import BaseContactViewMeta
+from gui.Scaleform.daapi.view.meta.BaseContactViewMeta import BaseContactViewMeta
 
 class BaseContactView(BaseContactViewMeta):
 

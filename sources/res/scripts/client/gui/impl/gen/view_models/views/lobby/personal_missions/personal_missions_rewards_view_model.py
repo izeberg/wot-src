@@ -8,6 +8,7 @@ class CompletedQuestsType(Enum):
     COMPLETE = 'complete'
     COMPLETE_WITH_HONOR = 'completeWithHonor'
     COMPLETE_ADD = 'completeAdd'
+    COMPLETE_BASIC = 'completeBasic'
 
 
 class LineType(Enum):

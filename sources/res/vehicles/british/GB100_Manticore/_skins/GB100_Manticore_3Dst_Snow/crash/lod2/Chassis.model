@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB100_Manticore/_skins/GB100_Manticore_3Dst_Snow/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.591329 -0.007081 -2.053234</min>
+		<max>1.591329 0.808187 2.819425</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB100_Manticore/_skins/GB100_Manticore_3Dst_Snow/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+</root>

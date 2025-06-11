@@ -346,6 +346,10 @@ package
       public static const DETAILSHELP_AUTOSHOOTFLAMETANK_PROSCONS_TITLE:String = "#ingame_help:detailsHelp/autoShootFlameTank/prosCons/title";
       
       public static const DETAILSHELP_AUTOSHOOTFLAMETANK_PROSCONS:String = "#ingame_help:detailsHelp/autoShootFlameTank/prosCons";
+      
+      public static const DETAILSHELP_DUALGUNWITHAUTORELOADCLIP_TITLE:String = "#ingame_help:detailsHelp/dualgunWithAutoreloadClip/title";
+      
+      public static const DETAILSHELP_DUALGUNWITHAUTORELOADCLIP_DESCRIPTION:String = "#ingame_help:detailsHelp/dualgunWithAutoreloadClip/description";
        
       
       public function INGAME_HELP()

@@ -16,7 +16,7 @@ msgstr "Актываваць"
 
 msgid "credits/description/active"
 msgstr ""
-"Месца, дзе захоўваюцца крэдыты перад тым, як паступіць на акаўнт гульца."
+"Месца, дзе захоўваецца срэбра перад тым, як паступіць на акаўнт гульца."
 
 msgid "credits/description/inactive"
 msgstr ""
@@ -24,18 +24,18 @@ msgstr ""
 "кожныя сем дзён."
 
 msgid "credits/status/suspended"
-msgstr "Актывуйце Танкавы прэміум акаўнт, каб працягваць назапашваць крэдыты."
+msgstr "Актывуйце Танкавы прэміум акаўнт, каб працягваць назапашваць срэбра."
 
 msgid "credits/status/suspendedFull"
 msgstr ""
-"Сховішча крэдытаў можна папоўніць толькі пры наяўнасці Танкавага прэміум "
+"Сховішча срэбра можна папоўніць толькі пры наяўнасці Танкавага прэміум "
 "акаўнту."
 
 msgid "credits/subheader"
 msgstr "Бонус Танкавага прэміум акаўнту"
 
 msgid "credits/title"
-msgstr "Сховішча крэдытаў"
+msgstr "Сховішча срэбра"
 
 msgid "emptyString"
 msgstr "?empty?"
@@ -45,7 +45,7 @@ msgstr "7 дзён"
 
 msgid "footer/text"
 msgstr ""
-"Сховішчы крэдытаў і золата адчыняюцца адначасова кожныя %(interval), пасля "
+"Сховішчы срэбра і золата адчыняюцца адначасова кожныя %(interval), пасля "
 "адкрыцця ўсе назапашаныя рэсурсы налічваюцца на ваш рахунак."
 
 msgid "gold/description/active"
@@ -77,13 +77,13 @@ msgstr "Так!"
 
 msgid "reservesAward/creditsSuspended"
 msgstr ""
-"Назапашванне крэдытаў прыпынена. \n"
+"Назапашванне срэбра прыпынена. \n"
 "Працягніце Танкавы прэміум акаўнт, каб надалей папаўняць сховішча. %(extendPremiumAccount)"
 
 msgid "reservesAward/goldAndCreditsSuspended"
 msgstr ""
-"Крэдыты не назапашваюцца. \n"
-"Актывуйце Танкавы прэміум акаўнт, каб пачаць назапашваць крэдыты. %(extendPremiumAccount)"
+"Срэбра не назапашваецца. \n"
+"Актывуйце Танкавы прэміум акаўнт, каб пачаць назапашваць срэбра. %(extendPremiumAccount)"
 
 msgid "reservesAward/goldSuspended"
 msgstr ""

@@ -21,13 +21,13 @@ class DestructibleStickers(object):
             self.__damageStickers.clear()
             return
 
-    def addDamageSticker(self, code, stickerID, segStart, segEnd):
+    def addDamageSticker(self, code, stickerID, segStart, segEnd, hitCompIndx, collisionComponent):
         if code in self.__damageStickers:
             return
         else:
             if self.__stickerModel is None:
                 return
-            handle = self.__stickerModel.addDamageSticker(stickerID, segStart, segEnd)
+            handle = self.__stickerModel.addDamageSticker(stickerID, segStart, segEnd, hitCompIndx, collisionComponent)
             self.__damageStickers[code] = VehicleStickers.DamageSticker(stickerID, segStart, segEnd, handle)
             return
 

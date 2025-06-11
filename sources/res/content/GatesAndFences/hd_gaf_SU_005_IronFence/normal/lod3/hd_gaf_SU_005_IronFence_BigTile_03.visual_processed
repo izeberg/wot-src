@@ -25,33 +25,6 @@
 					<row3>0.000000 0.000000 2.818381</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>lod3</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>d0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>n0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -144,6 +117,6 @@
 		<max>0.432723 3.128808 6.137203</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>6132</geometrySize>
+	<geometrySize>6310</geometrySize>
 	<minUVDensity>0.011952</minUVDensity>
 </root>

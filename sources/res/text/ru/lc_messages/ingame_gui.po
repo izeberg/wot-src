@@ -280,12 +280,6 @@ msgstr "Двигаюсь на позицию!"
 msgid "chat_shortcuts/going_there_gridInfo"
 msgstr "Двигаюсь в %(gridId)s"
 
-msgid "chat_shortcuts/hb_ability/artillery_on_yourself"
-msgstr "Вызываю огонь на себя!"
-
-msgid "chat_shortcuts/hb_ability/last_stand"
-msgstr "Бьёмся до конца!"
-
 msgid "chat_shortcuts/help_me"
 msgstr "Нужна помощь!"
 
@@ -681,9 +675,6 @@ msgstr "Урон артобстрелом"
 msgid "efficiencyRibbons/CannonDmg"
 msgstr "Урон орудием"
 
-msgid "efficiencyRibbons/HBDeathZone"
-msgstr "Урон от запретной зоны"
-
 msgid "efficiencyRibbons/armor"
 msgstr "Удар сдержан"
 
@@ -752,9 +743,6 @@ msgstr "Цель защищена"
 
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захвачена"
-
-msgid "efficiencyRibbons/eventDeathOnPhaseChange"
-msgstr "Машина уничтожена"
 
 msgid "efficiencyRibbons/kill"
 msgstr "Уничтожил"
@@ -877,7 +865,7 @@ msgid "flags/timer"
 msgstr "%(time)s с..."
 
 msgid "fortConsumables/timer/postfix"
-msgstr "с"
+msgstr "с..."
 
 msgid "helpScreen/hint/description"
 msgstr "для знакомства с особенностями машины"
@@ -1701,11 +1689,6 @@ msgstr ""
 "Esc > Выйти в Ангар.\n"
 "Начните бой на другой машине."
 
-msgid "postmortem/tips/exitHangar/text_hb"
-msgstr ""
-"Esc > Выйти в Ангар.\n"
-"Попробуйте свои силы в новом бою!"
-
 msgid "postmortem/tips/observerMode/label"
 msgstr "Режим Наблюдателя"
 
@@ -2157,14 +2140,14 @@ msgstr "Так точно!"
 
 msgid "rewardWindow/piggyBank/descText"
 msgstr ""
-"Накопление кредитов приостановлено. Продлите премиум аккаунт, чтобы "
-"продолжить пополнение хранилища кредитов."
+"Накопление серебра приостановлено. Продлите Премиум аккаунт, чтобы "
+"продолжить пополнение хранилища серебра."
 
 msgid "rewardWindow/piggyBank/headerText"
-msgstr "Кредиты получены"
+msgstr "Серебро получено"
 
 msgid "rewardWindow/piggyBank/subHeaderText"
-msgstr "Хранилище кредитов открыто"
+msgstr "Хранилище серебра открыто"
 
 msgid "rewardWindow/piggyBank/winHeaderText"
 msgstr "Поздравляем!"
@@ -2797,6 +2780,9 @@ msgstr "Урон в секунду: %(value)s ед."
 msgid "shells_kinds/params/damageRange"
 msgstr "Урон снаряда: %(value)s ед."
 
+msgid "shells_kinds/params/explosionDelay"
+msgstr "Таймер детонации: %(value)s с"
+
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радиус поражения: %(value)s м"
 
@@ -2897,7 +2883,7 @@ msgid "statistics/final/reasons/reason3"
 msgstr "Время боя истекло."
 
 msgid "statistics/final/stats/credits"
-msgstr "Кредиты:"
+msgstr "Серебро:"
 
 msgid "statistics/final/stats/experience"
 msgstr "Опыт:"

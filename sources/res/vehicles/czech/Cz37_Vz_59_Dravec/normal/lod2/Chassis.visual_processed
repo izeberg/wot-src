@@ -1100,10 +1100,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_chassis_01_GMM.dds</Texture>
 					</property>
@@ -1190,10 +1186,6 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap

@@ -20,7 +20,7 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>128</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						diffuseMap
@@ -38,16 +38,20 @@
 						normalMap
 						<Texture>content/Environment/hd_env_SU_1017_Signboard/hd_env_SU_1017_Signboard_ANM.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>1.235336 0.000000 -0.000000</groupOrigin>
+				<groupOrigin>0.904120 0.000000 -0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>0.662432 -0.483068 -0.023393</min>
+		<min>0.000000 -0.483068 -0.023393</min>
 		<max>1.808240 0.483068 0.023393</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>840</geometrySize>
+	<geometrySize>1120</geometrySize>
 	<minUVDensity>0.014849</minUVDensity>
 </root>

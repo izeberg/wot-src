@@ -116,7 +116,7 @@ msgid "branch/reseted/refund/appearance"
 msgstr "Элементы внешнего вида %(amounts)s."
 
 msgid "branch/reseted/refund/credits"
-msgstr "Кредиты: %(amounts)s."
+msgstr "Серебро: %(amounts)s."
 
 msgid "branch/reseted/refund/crew"
 msgstr "Члены экипажа %(amounts)s."
@@ -665,7 +665,7 @@ msgid "resetBranch/step1/total"
 msgstr "Всего очков прогрессии получите после победных боёв на технике:"
 
 msgid "resetBranch/step2/creditsBack"
-msgstr "Вернётся кредитов:"
+msgstr "Вернётся серебра:"
 
 msgid "resetBranch/step2/description"
 msgstr ""
@@ -730,7 +730,7 @@ msgstr ""
 "установленных модулей."
 
 msgid "resetBranch/tooltip/credits/header"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "resetBranch/tooltip/listSeparator"
 msgstr ", "
@@ -850,7 +850,7 @@ msgstr ""
 "Очки проекта «Орбита»: {whiteSpanish_open}%(current)s{whiteSpanish_close}"
 
 msgid "resetBranch/tooltip/resetButtonText3"
-msgstr "Вернётся кредитов: {cred_open}%(current)s{cred_close}"
+msgstr "Вернётся серебра: {cred_open}%(current)s{cred_close}"
 
 msgid "resetBranch/tooltip/returnBack/additionalDescription"
 msgstr ""

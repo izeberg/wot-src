@@ -59,6 +59,9 @@ msgstr "C42/B47 AFV stations complete"
 msgid "C42_B47_SH"
 msgstr "C42/B47 AFV SC"
 
+msgid "C42_T"
+msgstr "SR C42"
+
 msgid "C42_VHF"
 msgstr "C42 VHF"
 
@@ -73,6 +76,9 @@ msgstr "C45AG"
 
 msgid "C45A_SH"
 msgstr "SR C45"
+
+msgid "C45_T"
+msgstr "SR C45 T"
 
 msgid "Cadillac_75_x_3"
 msgstr "Cadillac \"75\" x3"
@@ -155,6 +161,9 @@ msgstr "LHMTV Mk.I"
 
 msgid "Chassis_GB102_LHMTV_Mk2"
 msgstr "LHMTV Mk.II"
+
+msgid "Chassis_GB1031_Conqueror_Gun_T"
+msgstr "Conqueror Gun Carriage T"
 
 msgid "Chassis_GB103_GSOR3301_AVR_MK1"
 msgstr "GSOR3301 Mk.I"
@@ -269,6 +278,15 @@ msgstr "Conqueror Mk. I"
 
 msgid "Chassis_GB12_Conqueror_2"
 msgstr "Conqueror Mk. II"
+
+msgid "Chassis_GB130_FV225"
+msgstr "FV225"
+
+msgid "Chassis_GB134_FV242B_Condor_T"
+msgstr "FV242B"
+
+msgid "Chassis_GB135_FV240_2_T"
+msgstr "FV240-2"
 
 msgid "Chassis_GB13_FV215b"
 msgstr "FV215"
@@ -795,6 +813,23 @@ msgstr ""
 
 msgid "GB102_LHMTV_short"
 msgstr "LHMTV"
+
+msgid "GB1031_Conqueror_Gun_T"
+msgstr "Conqueror Gun Carriage T"
+
+msgid "GB1031_Conqueror_Gun_T_descr"
+msgstr ""
+"Аванпраект 234-мм гаўбіцы на шасі танка Conqueror. Сілавая ўстаноўка "
+"размяшчалася ў пярэдняй частцы корпуса. Існаваў толькі ў эскізах."
+
+msgid "GB1031_Conqueror_Gun_T_long_special"
+msgstr "?empty?"
+
+msgid "GB1031_Conqueror_Gun_T_short"
+msgstr "Conqueror GC T"
+
+msgid "GB1031_Conqueror_Gun_T_short_special"
+msgstr "?empty?"
 
 msgid "GB103_GSOR3301_AVR_FS"
 msgstr "GSOR3301 AVR FS"
@@ -1399,6 +1434,77 @@ msgstr ""
 
 msgid "GB12_Conqueror_short"
 msgstr "Conqueror"
+
+msgid "GB130_FV225"
+msgstr "FV225 Crossbow"
+
+msgid "GB130_FV225_descr"
+msgstr ""
+"Яшчэ да пачатку Другой сусветнай вайны неаднаразова прапрацоўвалася канцэпцыя двухствольных танкаў і самаходных артылерыйскіх установак. Існавалі ў метале танкі з дзвюма гарматамі, якія вялі залпавы агонь. Займаліся падобнымі працамі і ў Англіі, вайскоўцы ставілі на залпавую канцэпцыю. Прапрацоўваліся як двухствольныя лёгкія танкі, так і значна цяжэйшыя машыны. Адной з іх стаў FV225 — спроба стварыць цяжэйшы, чым FV214, танк. Ён стаў адной з рэакцый на звесткі пра з'яўленне ў СССР цяжкіх танкаў Т10. Далей за праектныя прапрацоўкі справа з FV225 не зайшла. Галоўнай прычынай стала празмерная баявая маса.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "GB130_FV225_long_special"
+msgstr "?empty?"
+
+msgid "GB130_FV225_short"
+msgstr "Crossbow"
+
+msgid "GB130_FV225_short_special"
+msgstr "?empty?"
+
+msgid "GB134_FV242B_Condor_T"
+msgstr "FV242B Condor Test"
+
+msgid "GB134_FV242B_Condor_T_descr"
+msgstr ""
+"Праект брытанскага танка FV242B быў распрацаваны для адбіцця масаваных "
+"танкавых атак з боку войскаў Арганізацыі Варшаўскага дагавора, якія "
+"меркаваліся ў межах новай канцэпцыі вайны ў Еўропе. Праект прадугледжваў "
+"магутную бронеахову, высокую хуткастрэльнасць і шчыльнасць агню спараных "
+"105-мм гармат. Разам з тым танк вылучаўся аптымальнай рухомасцю. Насавая "
+"частка выканана з характэрнымі для савецкай тэхнікі дадатковымі скосамі "
+"(«шчупаковы нос»). Адліваная вежа з істотным нахілам у пярэдняй частцы мела "
+"спрыяць рыкашэтам пры траплянні снарадаў. У астатнім канструкцыя танка была "
+"ўвасабленнем брытанскай класікі. З'яўленне СТКР і ўжыванне аўтаматаў "
+"набівання зрабілі канцэпцыю двухствольных машын неактуальнай, ды і сусветная"
+" канструктарская думка паступова рухалася да распрацоўкі асноўных баявых "
+"танкаў. Праект быў згорнуты і не дачакаўся зборкі доследнага ўзору."
+
+msgid "GB134_FV242B_Condor_T_long_special"
+msgstr "?empty?"
+
+msgid "GB134_FV242B_Condor_T_short"
+msgstr "Condor (T)"
+
+msgid "GB134_FV242B_Condor_T_short_special"
+msgstr "?empty?"
+
+msgid "GB135_FV240_T"
+msgstr "FV240 Test"
+
+msgid "GB135_FV240_T_descr"
+msgstr ""
+"Праект танка FV240 распрацоўвалі ў 1948-1952 гадах. Меркавалася стварыць "
+"добра браніраваную машыну, асабліва спераду. Узбраенне складалася б са "
+"спараных 20-ці 32-фунтовых гармат, здольных прабіваць лабавую браню савецкіх"
+" танкаў, вядомых брытанцам. Кожная з гармат мусіла зараджацца паралельна, "
+"што давала тэарэтычны выйгрыш у баявой хуткастрэльнасці. Добрыя вуглы "
+"вертыкальнага навядзення дазволілі б працаваць па цэлях са зваротных схілаў "
+"узвышшаў. Нягледзячы на ​​перспектыўныя параметры машыны, праект не "
+"прасунуўся далей за чарцёжную дошку. Брытанскай разведцы стала вядома пра "
+"распрацоўку новых савецкіх цяжкіх танкаў, а для барацьбы з імі патрабавалася"
+" ўжо мацнейшае ўзбраенне. У серыю адправіўся іншы цяжкі танк з адной, але "
+"больш магутнай гарматай — FV214 «Conqueror»."
+
+msgid "GB135_FV240_T_long_special"
+msgstr "?empty?"
+
+msgid "GB135_FV240_T_short"
+msgstr "FV240 (T)"
+
+msgid "GB135_FV240_T_short_special"
+msgstr "?empty?"
 
 msgid "GB13_FV215b"
 msgstr "FV215b"
@@ -2776,6 +2882,9 @@ msgstr "Rolls-Royce B81"
 msgid "Rolls_Royce_Griffon"
 msgstr "Rolls-Royce Griffon"
 
+msgid "Rolls_Royce_Griffon_180P"
+msgstr "Rolls-Royce Griffon 180"
+
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
@@ -2824,6 +2933,12 @@ msgstr "Rolls-Royce Meteor"
 msgid "Rolls_Royse_Meteor_M120"
 msgstr "Rolls-Royce Meteor M120"
 
+msgid "Rolls_Royse_Meteor_M120T_T"
+msgstr "Rolls-Royce Meteor M120T"
+
+msgid "Rolls_Royse_Meteor_M120_T"
+msgstr "Rolls-Royce Meteor M120 T"
+
 msgid "Rolls_Royse_Meteor_Mk12"
 msgstr "Rolls-Royce Meteor Mk. 12"
 
@@ -2835,6 +2950,9 @@ msgstr "Rolls-Royce Meteor Mk. IVC"
 
 msgid "Rolls_Royse_Meteor_MkIV_Alligator"
 msgstr "Rolls-Royce Meteor Mk IV"
+
+msgid "Rolls_Royse_Meteor_MkIV_B_T"
+msgstr "Rolls-Royce Meteor Mk. IVB"
 
 msgid "Rolls_Royse_Meteor_MkV"
 msgstr "Rolls-Royce Meteor Mk. V"
@@ -2859,6 +2977,12 @@ msgstr "2x Rolls-Royce Phantom II"
 
 msgid "Rover_Meteorite"
 msgstr "Rover Meteorite"
+
+msgid "SR_C42"
+msgstr "SR C42"
+
+msgid "SR_C45_T"
+msgstr "SR C45"
 
 msgid "Sunbeam_Amazon"
 msgstr "Sunbeam Amazon"
@@ -2898,6 +3022,9 @@ msgstr "Senlac Mk1"
 
 msgid "Turret_1_GB102_LHMTV"
 msgstr "LHMTV Mk.I"
+
+msgid "Turret_1_GB1031_Conqueror_Gun_T"
+msgstr "Conqueror Gun Carriage T"
 
 msgid "Turret_1_GB103_GSOR3301_AVR_FS"
 msgstr "A.V.R.F/S turret"
@@ -2979,6 +3106,12 @@ msgstr "Alligator"
 
 msgid "Turret_1_GB12_Conqueror"
 msgstr "Conqueror Mk. II"
+
+msgid "Turret_1_GB130_FV225"
+msgstr "FV225"
+
+msgid "Turret_1_GB134_FV242B_Condor_T"
+msgstr "FV242B"
 
 msgid "Turret_1_GB13_FV215b"
 msgstr "FV215"
@@ -3232,6 +3365,9 @@ msgstr "FSV Scheme A"
 msgid "Turret_2_GB12_Conqueror"
 msgstr "Conqueror Mk. II ABP"
 
+msgid "Turret_2_GB135_FV240_T"
+msgstr "FV240-2"
+
 msgid "Turret_2_GB14_M2"
 msgstr "M2A4"
 
@@ -3329,6 +3465,12 @@ msgstr "APCR L5"
 msgid "_105mm_APCR_L7"
 msgstr "APDS L-28"
 
+msgid "_105mm_APCR_L7D"
+msgstr "APDS L28"
+
+msgid "_105mm_APCR_L7SD"
+msgstr "APDS L28S"
+
 msgid "_105mm_APCR_L7_proto"
 msgstr "APDS L-28P"
 
@@ -3356,6 +3498,12 @@ msgstr "105 mm Gun L7A2"
 msgid "_105mm_HEAT_L7"
 msgstr "US HEAT M456"
 
+msgid "_105mm_HEAT_L7D"
+msgstr "HEAT L51"
+
+msgid "_105mm_HEAT_L7SD"
+msgstr "HEAT L51S"
+
 msgid "_105mm_HEAT_L7_AL"
 msgstr "HEAT-T L-37"
 
@@ -3374,6 +3522,12 @@ msgstr "HESH-T L-37"
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
 
+msgid "_105mm_HE_L7D"
+msgstr "HESH L35"
+
+msgid "_105mm_HE_L7SD"
+msgstr "HESH L35S"
+
 msgid "_105mm_HE_L7_Mk13"
 msgstr "HE L7 Mk. 13"
 
@@ -3391,6 +3545,12 @@ msgstr "105mm HV HE"
 
 msgid "_105mm_HV_MK2_Gun"
 msgstr "105mm HV Gun Mk.II"
+
+msgid "_105mm_L7S_dualgun"
+msgstr "105 mm Dual Gun L7S"
+
+msgid "_105mm_L7_dualgun_T"
+msgstr "105 mm Dual Gun L7"
 
 msgid "_105mm_L7_proto"
 msgstr "105 mm L7 prototype"
@@ -3788,6 +3948,12 @@ msgstr "OQF 32-pdr Gun Mk. II"
 msgid "_32_pounder_Gun_OQF_SH"
 msgstr "OQF 32-pdr Gun Mk. II"
 
+msgid "_32_pounder_QF_dualgun_T"
+msgstr "QF 32-pdr Dual Gun"
+
+msgid "_32pdr_APCBC_Mk_1"
+msgstr "APCBC Mk. 1"
+
 msgid "_32pdr_APCBC_Mk_3"
 msgstr "APCBC Mk. 3"
 
@@ -3800,6 +3966,9 @@ msgstr "APDS Mk. 2T"
 msgid "_32pdr_APDS_Mk_3"
 msgstr "APDS Mk. 3"
 
+msgid "_32pdr_APDS_Mk_3D"
+msgstr "APDS Mk. 3"
+
 msgid "_32pdr_AP_MkI"
 msgstr "AP Mk. 1"
 
@@ -3808,6 +3977,9 @@ msgstr "AP Mk. 3"
 
 msgid "_32pdr_HE_MkI"
 msgstr "HE Mk. 1A"
+
+msgid "_32pdr_HE_Mk_1D"
+msgstr "HE Mk. 1"
 
 msgid "_32pdr_HE_Mk_3"
 msgstr "HE Mk. 3"
@@ -4187,14 +4359,26 @@ msgstr "85 mm HV L40"
 msgid "_9.2inch_AP_Mk_18"
 msgstr "AP Mk. 18"
 
+msgid "_9.2inch_AP_Mk_18_T"
+msgstr "AP Mk. 18 T"
+
 msgid "_9.2inch_HE_Mk_18"
 msgstr "HE Mk. 18"
+
+msgid "_9.2inch_HE_Mk_18_T"
+msgstr "HE Mk. 18 T"
 
 msgid "_9.2inch_HE_Mk_19"
 msgstr "HE Mk. 19"
 
+msgid "_9.2inch_HE_Mk_19_T"
+msgstr "HE Mk. 19 T"
+
 msgid "_9.2inch_SPG_Howitzer"
 msgstr "B.L. 9.2-in. Howitzer Mk. II"
+
+msgid "_9.2inch_SPG_Howitzer_T"
+msgstr "B.L. 9.2-in. Howitzer Mk. II T"
 
 msgid "_90mm_APFSDS_T312"
 msgstr "APFSDS T312"

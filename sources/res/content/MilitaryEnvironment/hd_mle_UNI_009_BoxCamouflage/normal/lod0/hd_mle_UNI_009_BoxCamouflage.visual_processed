@@ -37,10 +37,10 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>d_wood1_1</identifier>
+					<identifier>d_wood1</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
 						<Int>32</Int>
@@ -54,12 +54,12 @@
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_ANM.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.327618 0.095306 0.137820</groupOrigin>
@@ -67,21 +67,21 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>d_wood0_1</identifier>
+					<identifier>d_wood0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_ANM.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.123118 0.207842 -0.117485</groupOrigin>
@@ -89,10 +89,10 @@
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>n_wood1_1</identifier>
+					<identifier>n_wood1</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
 						<Int>32</Int>
@@ -106,12 +106,12 @@
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_ANM.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_UNI_000_Base/hd_bld_UNI_000_Base_Tent_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.137690 1.032315 -0.020710</groupOrigin>
@@ -119,21 +119,21 @@
 			<primitiveGroup>
 				3
 				<material>
-					<identifier>n_wood0_1</identifier>
+					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_ANM.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/MilitaryEnvironment/hd_mle_UNI_009_BoxCamouflage/hd_mle_UNI_009_BoxCamouflage_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.096761 1.004408 -0.022666</groupOrigin>
@@ -145,6 +145,6 @@
 		<max>1.974586 2.066965 2.414034</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>274368</geometrySize>
-	<minUVDensity>0.003268</minUVDensity>
+	<geometrySize>264816</geometrySize>
+	<minUVDensity>0.017278</minUVDensity>
 </root>

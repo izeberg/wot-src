@@ -362,8 +362,9 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'ParagonsFirstElevenVehicle', 'ParagonsFirstSeason', 'comp7_4_3', 'comp7_4_3_champion',
  'comp7_4_3_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16',
  'bob2025Lebwa', 'bob2025Yusha', 'bob2025NearYou', 'bob2025Jove',
- 'BattlePassCommonPr_16_Marathon', 'hb25MedalOffence', 'hb25MedalDefence',
- 'support_2025']
+ 'BattlePassCommonPr_16_Marathon',
+ 'hb25MedalOffence', 'hb25MedalDefence', 'support_2025', 'BattlePassCommonPr_17',
+ 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -425,11 +426,12 @@ _singleAchievementsPopUps = [
  'races24FirstPlace', 'races24Progression', 'comp7_4_1', 'comp7_4_1_champion',
  'comp7_4_1_legend', 'BattlePassCommonPr_15', '14YearsOfService', 'comp7_4_2',
  'comp7_4_2_champion', 'comp7_4_2_legend', 'NY25_AtmsphrLevel', 'personalMissionsThird',
- 'ParagonsFirstElevenVehicle', 'ParagonsFirstSeason', 'comp7_4_2', 'comp7_4_2_champion',
- 'comp7_4_2_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16',
+ 'ParagonsFirstElevenVehicle', 'ParagonsFirstSeason', 'comp7_4_3', 'comp7_4_3_champion',
+ 'comp7_4_3_legend', 'cosm2025_medal_1', 'cosm2025_medal_2', 'BattlePassCommonPr_16',
  'bob2025Lebwa', 'bob2025Yusha', 'bob2025NearYou', 'bob2025Jove',
- 'BattlePassCommonPr_16_Marathon', 'hb25MedalOffence', 'hb25MedalDefence',
- 'support_2025']
+ 'BattlePassCommonPr_16_Marathon',
+ 'hb25MedalOffence', 'hb25MedalDefence', 'support_2025', 'BattlePassCommonPr_17',
+ 'BattlePassCommonPr_16_Marathon', 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

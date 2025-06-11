@@ -19,7 +19,6 @@ from gui.shared.utils.decorators import ReprInjector
 from gui.sounds.epic_sound_constants import EPIC_SOUND
 from helpers import i18n, dependency
 from items import vehicles, EQUIPMENT_TYPES, ITEM_TYPES
-from items.components import component_constants
 from points_of_interest_shared import POI_EQUIPMENT_TAG
 from shared_utils import findFirst, forEach, CONST_CONTAINER
 from skeletons.gui.battle_session import IBattleSessionProvider
@@ -240,8 +239,7 @@ class _EquipmentItem(object):
         self._prevStage = self._stage
         self._stage = stage
         self._timeRemaining = timeRemaining
-        if not self.isReusable:
-            self._totalTime = totalTime
+        self._totalTime = totalTime
         self._soundUpdate(self._prevQuantity, quantity)
 
     def updateMapCase(self, stage=None):
@@ -340,12 +338,6 @@ class _EquipmentItem(object):
 
     def canDeactivate(self):
         return True
-
-    def getDelay(self):
-        return self._descriptor.delay
-
-    def getDuration(self):
-        return self._descriptor.duration
 
 
 class _RefillEquipmentItem(object):
@@ -965,17 +957,81 @@ class _RegenerationKitItem(_EquipmentItem):
         return super(_RegenerationKitItem, self).getAnimationType()
 
 
-class _VisualScriptItem(_TriggerItem):
+class _BaseAbilityItem(_TriggerItem):
+    _PRE_REFILL_TIME = 3
 
     def __init__(self, *args):
-        self.__canDeactivate = False
-        super(_VisualScriptItem, self).__init__(*args)
+        self._canDeactivate = False
+        self._preRefillCallback = None
+        super(_BaseAbilityItem, self).__init__(*args)
+        return
+
+    def canDeactivate(self):
+        return super(_BaseAbilityItem, self).canDeactivate() and self._canDeactivate
+
+    def getEntitiesIterator(self, avatar=None):
+        return iter(())
+
+    def getGuiIterator(self, avatar=None):
+        return iter(())
+
+    def deactivate(self):
+        super(_BaseAbilityItem, self).deactivate()
+        self._canDeactivate = False
+
+    def getAnimationType(self):
+        if self._stage == EQUIPMENT_STAGES.ACTIVE:
+            return ANIMATION_TYPES.MOVE_GREEN_BAR_DOWN | ANIMATION_TYPES.SHOW_COUNTER_GREEN | ANIMATION_TYPES.DARK_COLOR_TRANSFORM
+        return super(_BaseAbilityItem, self).getAnimationType()
 
     def _getErrorMsg(self):
-        stage = self.getStage()
-        if stage == EQUIPMENT_STAGES.COOLDOWN:
-            return InCooldownError(self._descriptor.userString)
+        if self._stage == EQUIPMENT_STAGES.ACTIVE:
+            return AbilityAlreadyActivated(self._descriptor.userString)
+        if self._stage == EQUIPMENT_STAGES.COOLDOWN:
+            return AbilityCooldown(self._descriptor.userString)
+        if self._stage in (EQUIPMENT_STAGES.EXHAUSTED, EQUIPMENT_STAGES.UNAVAILABLE):
+            return AbilityExhausted(self._descriptor.userString)
         return NotReadyError(self._descriptor.userString)
+
+    def _playSound(self, soundTypeName):
+        equipment = vehicles.g_cache.equipments()[self.getEquipmentID()]
+        soundName = getattr(equipment, soundTypeName, None)
+        if soundName is not None:
+            SoundGroups.g_instance.playSound2D(soundName)
+        return
+
+    def _soundUpdate(self, prevQuantity, quantity):
+        super(_BaseAbilityItem, self)._soundUpdate(prevQuantity, quantity)
+        if self.becomeActive:
+            self._playSound('activationSound')
+        if self.becomeDeactivated:
+            self._playSound('deactivationSound')
+        timeRemaining = self.getTimeRemaining()
+        if timeRemaining > self._PRE_REFILL_TIME and self._stage in (EQUIPMENT_STAGES.COOLDOWN,
+         EQUIPMENT_STAGES.SHARED_COOLDOWN):
+            if self._preRefillCallback is not None:
+                self._cancelCallback()
+            self._preRefillCallback = BigWorld.callback(timeRemaining - self._PRE_REFILL_TIME, self._preRefill)
+        return
+
+    def _preRefill(self):
+        self._preRefillCallback = None
+        self._playSound('refillSound')
+        return
+
+    def _cancelCallback(self):
+        BigWorld.cancelCallback(self._preRefillCallback)
+        self._preRefillCallback = None
+        return
+
+    def clear(self):
+        super(_BaseAbilityItem, self).clear()
+        if self._preRefillCallback is not None:
+            self._cancelCallback()
+        return
+
+
+class _VisualScriptItem(_BaseAbilityItem):
 
     def canActivate(self, entityName=None, avatar=None):
         if not avatar:
@@ -996,14 +1052,20 @@ class _VisualScriptItem(_TriggerItem):
         else:
             return super(_VisualScriptItem, self).canActivate(entityName=entityName, avatar=avatar)
 
-    def canDeactivate(self):
-        return super(_VisualScriptItem, self).canDeactivate() and self.__canDeactivate
+    def _getComponent(self, avatar=None):
+        if not avatar:
+            avatar = BigWorld.player()
+        vehicle = avatar.getVehicleAttached()
+        if vehicle is not None:
+            return vehicle.dynamicComponents.get(self._descriptor.name)
+        else:
+            return
 
-    def getEntitiesIterator(self, avatar=None):
-        return []
-
-    def getGuiIterator(self, avatar=None):
-        return []
+    def _getErrorMsg(self):
+        stage = self.getStage()
+        if stage == EQUIPMENT_STAGES.COOLDOWN:
+            return InCooldownError(self._descriptor.userString)
+        return NotReadyError(self._descriptor.userString)
 
     def updateMapCase(self, stage=None):
         if BigWorld.player().isObserver() and not BigWorld.player().isObserverFPV:
@@ -1026,7 +1088,7 @@ class _VisualScriptItem(_TriggerItem):
     def update(self, quantity, stage, timeRemaining, totalTime):
         self.updateMapCase(stage)
         if stage != self._stage:
-            self.__canDeactivate = stage in (EQUIPMENT_STAGES.PREPARING,)
+            self._canDeactivate = stage in (EQUIPMENT_STAGES.PREPARING,)
         super(_VisualScriptItem, self).update(quantity, stage, timeRemaining, totalTime)
         if stage in (EQUIPMENT_STAGES.COOLDOWN, EQUIPMENT_STAGES.ACTIVE):
             self._totalTime = timeRemaining
@@ -1036,24 +1098,6 @@ class _VisualScriptItem(_TriggerItem):
          EQUIPMENT_STAGES.PREPARING,
          EQUIPMENT_STAGES.EXHAUSTED):
             self._totalTime = 0
-
-    def deactivate(self):
-        super(_VisualScriptItem, self).deactivate()
-        self.__canDeactivate = False
-
-    def getAnimationType(self):
-        if self._stage == EQUIPMENT_STAGES.ACTIVE:
-            return ANIMATION_TYPES.MOVE_GREEN_BAR_DOWN | ANIMATION_TYPES.SHOW_COUNTER_GREEN | ANIMATION_TYPES.DARK_COLOR_TRANSFORM
-        return super(_VisualScriptItem, self).getAnimationType()
-
-    def _getComponent(self, avatar=None):
-        if not avatar:
-            avatar = BigWorld.player()
-        vehicle = avatar.getVehicleAttached()
-        if vehicle is not None:
-            return vehicle.dynamicComponents.get(self._descriptor.name)
-        else:
-            return
 
     def _getAimingControlMode(self):
         return
@@ -1070,6 +1114,12 @@ class _PoiEquipmentItemVS(_VisualScriptItem):
         if self._stage in (EQUIPMENT_STAGES.UNAVAILABLE, EQUIPMENT_STAGES.NOT_RUNNING, EQUIPMENT_STAGES.EXHAUSTED):
             return PoiUnavailableError(self._descriptor.userString)
         return super(_PoiEquipmentItemVS, self)._getErrorMsg()
+
+    def clear(self):
+        _EquipmentItem.clear(self)
+
+    def _soundUpdate(self, prevQuantity, quantity):
+        _EquipmentItem._soundUpdate(self, prevQuantity, quantity)
 
 
 class _PoiArtilleryItem(_ArtilleryItem):
@@ -1121,14 +1171,17 @@ class _RoleSkillVSItem(_VisualScriptItem):
             return (False, self._getErrorMsg())
         return super(_RoleSkillVSItem, self).canActivate(entityName, avatar)
 
+    def clear(self):
+        _EquipmentItem.clear(self)
+
+    def _soundUpdate(self, prevQuantity, quantity):
+        _EquipmentItem._soundUpdate(self, prevQuantity, quantity)
+
 
 class _AbilitySkillVSItem(_VisualScriptItem):
-    _PRE_REFILL_TIME = 3
 
-    def __init__(self, *args):
-        super(_AbilitySkillVSItem, self).__init__(*args)
-        self._preRefillCallback = None
-        return
+    def _getErrorMsg(self):
+        return _BaseAbilityItem._getErrorMsg(self)
 
     def canActivate(self, entityName=None, avatar=None):
         if self._stage in (
@@ -1137,51 +1190,15 @@ class _AbilitySkillVSItem(_VisualScriptItem):
             return (False, self._getErrorMsg())
         return super(_AbilitySkillVSItem, self).canActivate(entityName, avatar)
 
-    def clear(self):
-        super(_AbilitySkillVSItem, self).clear()
-        if self._preRefillCallback is not None:
-            self._cancelCallback()
-        return
 
-    def _getErrorMsg(self):
-        if self._stage == EQUIPMENT_STAGES.ACTIVE:
-            return AbilityAlreadyActivated(self._descriptor.userString)
-        if self._stage == EQUIPMENT_STAGES.COOLDOWN:
-            return AbilityCooldown(self._descriptor.userString)
-        if self._stage in (EQUIPMENT_STAGES.EXHAUSTED, EQUIPMENT_STAGES.UNAVAILABLE):
-            return AbilityExhausted(self._descriptor.userString)
-        return super(_AbilitySkillVSItem, self)._getErrorMsg()
+class _AbilitySkillItem(_BaseAbilityItem):
 
-    def _playSound(self, soundTypeName):
-        equipment = vehicles.g_cache.equipments()[self.getEquipmentID()]
-        soundName = getattr(equipment, soundTypeName, None)
-        if soundName is not None:
-            SoundGroups.g_instance.playSound2D(soundName)
-        return
-
-    def _soundUpdate(self, prevQuantity, quantity):
-        super(_AbilitySkillVSItem, self)._soundUpdate(prevQuantity, quantity)
-        if self.becomeActive:
-            self._playSound('activationSound')
-        if self.becomeDeactivated:
-            self._playSound('deactivationSound')
-        timeRemaining = self.getTimeRemaining()
-        if timeRemaining > self._PRE_REFILL_TIME and self._stage in (EQUIPMENT_STAGES.COOLDOWN,
-         EQUIPMENT_STAGES.SHARED_COOLDOWN):
-            if self._preRefillCallback is not None:
-                self._cancelCallback()
-            self._preRefillCallback = BigWorld.callback(timeRemaining - self._PRE_REFILL_TIME, self._preRefill)
-        return
-
-    def _preRefill(self):
-        self._preRefillCallback = None
-        self._playSound('refillSound')
-        return
-
-    def _cancelCallback(self):
-        BigWorld.cancelCallback(self._preRefillCallback)
-        self._preRefillCallback = None
-        return
+    def canActivate(self, entityName=None, avatar=None):
+        if self._stage in (
+         EQUIPMENT_STAGES.COOLDOWN, EQUIPMENT_STAGES.ACTIVE,
+         EQUIPMENT_STAGES.EXHAUSTED, EQUIPMENT_STAGES.UNAVAILABLE):
+            return (False, self._getErrorMsg())
+        return super(_AbilitySkillItem, self).canActivate(entityName, avatar)
 
 
 class _DeferredRoleSkillVSItem(_RoleSkillVSItem):
@@ -1246,107 +1263,6 @@ class _RepairPointItem(_TriggerItem):
 
     def getEntitiesIterator(self, avatar=None):
         return []
-
-
-class EventItem(_TriggerItem):
-
-    def update(self, quantity, stage, timeRemaining, totalTime):
-        super(EventItem, self).update(quantity, stage, timeRemaining, totalTime)
-        if stage in (EQUIPMENT_STAGES.COOLDOWN, EQUIPMENT_STAGES.READY):
-            self._totalTime = self._descriptor.cooldownSeconds
-        elif stage == EQUIPMENT_STAGES.ACTIVE:
-            self._totalTime = timeRemaining
-        elif stage == EQUIPMENT_STAGES.PREPARING:
-            self._totalTime = 0
-
-
-class _EventBuffItem(EventItem):
-    pass
-
-
-class _HpRepairAndCrewHeal(EventItem):
-
-    def canActivate(self, entityName=None, avatar=None):
-        avatar = avatar or BigWorld.player()
-        result, error = super(_HpRepairAndCrewHeal, self).canActivate(entityName, avatar)
-        if not result:
-            return (result, error)
-        else:
-            if avatar_getter.isVehicleInFire(avatar):
-                return (True, None)
-            vehicle = BigWorld.entities.get(avatar.playerVehicleID)
-            if not vehicle:
-                return (False, _ActivationError('hpRepairAndCrewHeal', {'name': self._descriptor.userString}))
-            if vehicle.maxHealth > vehicle.health:
-                return (True, None)
-            deviceStates = avatar_getter.getVehicleDeviceStates(avatar)
-            for item in self._getDevicesIterator():
-                if item[0] in deviceStates:
-                    isEntityNotRequired = not self.isEntityRequired()
-                    return (isEntityNotRequired, None if isEntityNotRequired else NeedEntitySelection('', None))
-
-            result, error = self._checkCrew(avatar)
-            if result:
-                return (result, error)
-            return (False,
-             _ActivationError('hpRepairAndCrewHeal', {'name': self._descriptor.userString}))
-
-    def _checkCrew(self, avatar):
-        result = False
-        error = None
-        deviceStates = avatar_getter.getVehicleDeviceStates(avatar)
-        for item in self._getCrewIterator():
-            if item[0] in deviceStates:
-                isEntityNotRequired = not self.isEntityRequired()
-                result = isEntityNotRequired
-                error = None if isEntityNotRequired else NeedEntitySelection('', None)
-                break
-
-        if not result and type(error) not in (NeedEntitySelection, NotApplyingError) and avatar_getter.isVehicleStunned() and self.isReusable:
-            return (True, IgnoreEntitySelection('', None))
-        else:
-            return (
-             False, None)
-
-    @staticmethod
-    def _getCrewIterator(avatar=None):
-        return vehicle_getter.TankmenStatesIterator(avatar_getter.getVehicleDeviceStates(avatar), avatar_getter.getVehicleTypeDescriptor(avatar))
-
-    @staticmethod
-    def _getDevicesIterator(avatar=None):
-        return vehicle_getter.VehicleDeviceStatesIterator(avatar_getter.getVehicleDeviceStates(avatar), avatar_getter.getVehicleTypeDescriptor(avatar))
-
-
-class _InstantReload(EventItem):
-    guiSessionProvider = dependency.descriptor(IBattleSessionProvider)
-
-    def canActivate(self, entityName=None, avatar=None):
-        avatar = avatar or BigWorld.player()
-        result, error = super(_InstantReload, self).canActivate(entityName, avatar)
-        if not result:
-            return (result, error)
-        else:
-            ammoCtrl = self.guiSessionProvider.shared.ammo
-            quantity, quantityInClip = ammoCtrl.getCurrentShells()
-            if not quantity:
-                return (False, None)
-            isGunReloading = ammoCtrl.isGunReloading()
-            if isGunReloading:
-                return (True, None)
-            if ammoCtrl.getGunSettings().isDualGun:
-                reloadingState = ammoCtrl.getGunReloadingState()
-                dualGunShellChangeTime = ammoCtrl.getDualGunShellChangeTime()
-                if reloadingState.getBaseValue() >= min(dualGunShellChangeTime.left, dualGunShellChangeTime.right):
-                    return (True, None)
-            if ammoCtrl.getGunSettings().isCassetteClip():
-                clipCapacity = ammoCtrl.getClipCapacity()
-                if clipCapacity > quantity:
-                    return (False, None)
-                if clipCapacity > quantityInClip:
-                    return (True, None)
-            return (
-             False,
-             _ActivationError('instantReload', {'name': self._descriptor.userString}))
 
 
 def _isBattleRoyaleBattle():
@@ -1435,7 +1351,8 @@ _EQUIPMENT_TAG_TO_ITEM = {('fuel',): _AutoItem,
    ('regenerationKit',): _RegenerationKitItem, 
    ('medkit', 'repairkit'): _RepairCrewAndModules, 
    (ROLE_EQUIPMENT_TAG,): _comp7ItemFactory, 
-   ('abilityEquipment',): _AbilitySkillVSItem, 
+   ('visualScriptAbilityEquipment',): _AbilitySkillVSItem, 
+   ('abilityEquipment',): _AbilitySkillItem, 
    (POI_EQUIPMENT_TAG,): _poiItemFactory}
 
 class _DAMAGE_PANEL_EQUIPMENT(CONST_CONTAINER):
@@ -1509,17 +1426,12 @@ class EquipmentsController(MethodsRules, IBattleController):
         item = cls._findExtendItem(False, descriptor.name, descriptor, quantity, stage, timeRemaining, totalTime)
         if item:
             return item
+        tags, clazz = _getInitialTagsAndClass(descriptor, _EQUIPMENT_TAG_TO_ITEM)
+        if tags:
+            item = clazz(descriptor, quantity, stage, timeRemaining, totalTime, tags)
         else:
-            if descriptor.ctrlItems is not None:
-                tags = descriptor.tags
-                clazz = descriptor.ctrlItems.get(component_constants.EquipmentCtrlItemKeys.default.name)
-            else:
-                tags, clazz = _getInitialTagsAndClass(descriptor, _EQUIPMENT_TAG_TO_ITEM)
-            if clazz is not None:
-                item = clazz(descriptor, quantity, stage, timeRemaining, totalTime, tags)
-            else:
-                item = _EquipmentItem(descriptor, quantity, stage, timeRemaining, totalTime, tags)
-            return item
+            item = _EquipmentItem(descriptor, quantity, stage, timeRemaining, totalTime, tags)
+        return item
 
     def clear(self, leave=True):
         super(EquipmentsController, self).clear(True)
@@ -1646,7 +1558,7 @@ class EquipmentsController(MethodsRules, IBattleController):
             result, error = False, None
             item = self.getEquipment(intCD)
             if item:
-                result, error = self._doChangeSetting(item, entityName, avatar)
+                result, error = self.__doChangeSetting(item, entityName, avatar)
             return (result, error)
 
     def changeSettingByTag(self, tag, entityName=None, avatar=None):
@@ -1656,7 +1568,7 @@ class EquipmentsController(MethodsRules, IBattleController):
             result, error = False, None
             filteredItems = [ item for item in self._equipments.itervalues() if tag in item.getTags() ]
             for item in filteredItems:
-                result, error = self._doChangeSetting(item, entityName, avatar)
+                result, error = self.__doChangeSetting(item, entityName, avatar)
                 if result:
                     return (True, error)
 
@@ -1675,7 +1587,7 @@ class EquipmentsController(MethodsRules, IBattleController):
         self.__preferredPosition = None
         return value
 
-    def _doChangeSetting(self, item, entityName=None, avatar=None):
+    def __doChangeSetting(self, item, entityName=None, avatar=None):
         result, error = item.canActivate(entityName, avatar)
         if result and avatar_getter.isPlayerOnArena(avatar):
             if item.getStage() == EQUIPMENT_STAGES.PREPARING:
@@ -2066,6 +1978,26 @@ class _ReplayAbilitySkillVSItem(_ReplayItem, _AbilitySkillVSItem):
         return _AbilitySkillVSItem._getErrorMsg(self)
 
 
+class _ReplayAbilitySkillItem(_ReplayItem, _AbilitySkillItem):
+
+    def _soundUpdate(self, prevQuantity, quantity):
+        _ReplayItem._soundUpdate(self, prevQuantity, quantity)
+        _AbilitySkillItem._soundUpdate(self, prevQuantity, quantity)
+
+    def getAnimationType(self):
+        return _AbilitySkillItem.getAnimationType(self)
+
+    def update(self, quantity, stage, timeRemaining, totalTime):
+        _ReplayItem.update(self, quantity, stage, timeRemaining, totalTime)
+        _AbilitySkillItem.update(self, quantity, stage, timeRemaining, totalTime)
+
+    def canActivate(self, entityName=None, avatar=None):
+        return _AbilitySkillItem.canActivate(self, entityName, avatar)
+
+    def _getErrorMsg(self):
+        return _AbilitySkillItem._getErrorMsg(self)
+
+
 class _ReplayRoleSkillArtyVSItem(_ReplayRoleSkillVSItem):
 
     def getMarker(self):
@@ -2133,8 +2065,9 @@ _REPLAY_EQUIPMENT_TAG_TO_ITEM = {('fuel',): _ReplayItem,
    ('regenerationKit',): _replayTriggerItemFactory, 
    ('medkit', 'repairkit'): _replayTriggerItemFactory, 
    (ROLE_EQUIPMENT_TAG,): _replayComp7ItemFactory, 
-   ('abilityEquipment',): _ReplayAbilitySkillVSItem, 
-   (POI_EQUIPMENT_TAG,): _replayPoiItemFactory}
+   ('visualScriptAbilityEquipment',): _ReplayAbilitySkillVSItem, 
+   (POI_EQUIPMENT_TAG,): _replayPoiItemFactory, 
+   ('abilityEquipment',): _ReplayAbilitySkillItem}
 
 class EquipmentsReplayPlayer(EquipmentsController):
     __slots__ = ('__callbackID', '__callbackTimeID', '__percentGetters', '__percents',
@@ -2195,17 +2128,12 @@ class EquipmentsReplayPlayer(EquipmentsController):
         item = cls._findExtendItem(True, descriptor.name, descriptor, quantity, stage, timeRemaining, totalTime)
         if item:
             return item
+        tags, clazz = _getInitialTagsAndClass(descriptor, _REPLAY_EQUIPMENT_TAG_TO_ITEM)
+        if tags:
+            item = clazz(descriptor, quantity, stage, timeRemaining, totalTime, tags)
         else:
-            if descriptor.ctrlItems is not None:
-                tags = descriptor.tags
-                clazz = descriptor.ctrlItems.get(component_constants.EquipmentCtrlItemKeys.replay.name)
-            else:
-                tags, clazz = _getInitialTagsAndClass(descriptor, _REPLAY_EQUIPMENT_TAG_TO_ITEM)
-            if clazz is not None:
-                item = clazz(descriptor, quantity, stage, timeRemaining, totalTime, tags)
-            else:
-                item = _ReplayItem(descriptor, quantity, stage, timeRemaining, totalTime, tags)
-            return item
+            item = _ReplayItem(descriptor, quantity, stage, timeRemaining, totalTime, tags)
+        return item
 
     def getActivationCode(self, intCD, entityName=None, avatar=None):
         return

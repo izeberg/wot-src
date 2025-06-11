@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Coutelas/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F131_Coutelas/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.741869 -0.023085 -1.746776</min>
+		<max>1.740613 1.503052 1.725755</max>
+	</visibilityBox>
+</root>

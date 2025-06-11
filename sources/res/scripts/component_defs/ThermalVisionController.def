@@ -9,7 +9,7 @@
 	</Properties>
 	<CellMethods>
 		<tryActivate>
-			<Exposed>OWN_CLIENT</Exposed>
+			<Exposed/>
 		</tryActivate>
 	</CellMethods>
 	<ClientMethods>

@@ -507,10 +507,10 @@ msgid "buyBerthsNotEnough/credits/cancel"
 msgstr "Так!"
 
 msgid "buyBerthsNotEnough/credits/message"
-msgstr "Недастаткова крэдытаў для куплі дадатковых месцаў у Жаўнерні."
+msgstr "Замала срэбра для куплі дадатковых месцаў у Жаўнерні."
 
 msgid "buyBerthsNotEnough/credits/title"
-msgstr "Замала крэдытаў"
+msgstr "Замала срэбра"
 
 msgid "buyConfirmation/cancel"
 msgstr "Скасаваць"
@@ -550,7 +550,7 @@ msgstr ""
 msgid "buyInstallConfirmation/messageCombine"
 msgstr ""
 "Ці купіць і ўсталяваць %(kind)s «%(name)s» на цяперашнюю машыну за %(price)s"
-" крэдытаў?"
+" срэбра?"
 
 msgid "buyInstallConfirmation/submit"
 msgstr "Купіць"
@@ -564,7 +564,7 @@ msgstr "Скасаваць"
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
 "Ці купіць прэміум акаўнт на %(days)s сут, заплаціўшы %(gold)s золата?\n"
-" %(alertIcon)s %(alertColorTagOpen)s Праз тэхнічныя праблемы дадатковы досвед і крэдыты не будуць налічаны. Вы можаце выбраць іншы бой або купіць прэміум акаўнт стандартным спосабам.%(tagClose)s"
+" %(alertIcon)s %(alertColorTagOpen)s Праз тэхнічныя праблемы дадатковы досвед і срэбра не будуць налічаны. Вы можаце выбраць іншы бой або купіць прэміум акаўнт стандартным спосабам.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купіць"
@@ -591,13 +591,13 @@ msgid "buySlotNotEnough/credits/cancel"
 msgstr "Добра"
 
 msgid "buySlotNotEnough/credits/message"
-msgstr "Замала крэдытаў, каб купіць дадатковы слот у Гаражы."
+msgstr "Замала срэбра, каб купіць дадатковы слот у Гаражы."
 
 msgid "buySlotNotEnough/credits/submit"
 msgstr "Добра"
 
 msgid "buySlotNotEnough/credits/title"
-msgstr "Замала крэдытаў"
+msgstr "Замала срэбра"
 
 msgid "buySlotNotEnough/gold/cancel"
 msgstr "Добра"
@@ -616,7 +616,7 @@ msgstr "Скасаваць"
 
 msgid "buySlotShopConfirmation/messageCombine"
 msgstr ""
-"Няма вольнага месца ў Гаражы. Ці купіць дадатковае месца за {%d} крэдытаў?"
+"Няма вольнага месца ў Гаражы. Ці купіць дадатковае месца за {%d} срэбра?"
 
 msgid "buySlotShopConfirmation/submit"
 msgstr "Купіць"
@@ -945,17 +945,17 @@ msgstr "Для куплі не стае:"
 
 msgid "confirmBuyAndInstall/insufficientFundsTooltip/body"
 msgstr ""
-"Зарабіце крэдыты ў баі, прадайце лішкі са Склада або абмяняйце золата."
+"Заслужыце срэбра ў баі, прадайце лішкі са Склада або абмяняйце золата."
 
 msgid "confirmBuyAndInstall/insufficientFundsTooltip/header"
-msgstr "Замала крэдытаў"
+msgstr "Замала срэбра"
 
 msgid "confirmBuyAndInstall/message"
 msgstr "Кошт модуля:"
 
 msgid "confirmBuyAndInstall/sellMessage"
 msgstr ""
-"Прадаць заменны модуль «%(previousModuleName)» за: %(previousModulePrice)"
+"Прадаць заменны модуль %(previousModuleName) за: %(previousModulePrice)"
 
 msgid "confirmBuyAndInstall/soldModuleInfo/compatibleTanks"
 msgstr "Гэты модуль сумяшчальны з:"
@@ -983,7 +983,7 @@ msgstr "Скасаваць"
 msgid "confirmExchangeDialog/exchangeCredits/exchangeNoNeedText"
 msgstr ""
 "Абмен для куплі не патрабуецца.\n"
-"У вас досыць крэдытаў."
+"У вас досыць срэбра."
 
 msgid "confirmExchangeDialog/exchangeCredits/goldNotEnoughText"
 msgstr ""
@@ -991,10 +991,10 @@ msgstr ""
 "Каб выканаць абмен, трэба %(gold)s"
 
 msgid "confirmExchangeDialog/exchangeCredits/needGoldText"
-msgstr "Ці абмяняць %(gold)s на крэдыты, якіх не стае?"
+msgstr "Ці абмяняць %(gold)s на срэбра, якіх не стае?"
 
 msgid "confirmExchangeDialog/exchangeCredits/needItemsStepperTitle"
-msgstr "Патрабуецца крэдытаў:"
+msgstr "Патрабуецца срэбра:"
 
 msgid "confirmExchangeDialog/exchangeCredits/needItemsText"
 msgstr "На куплянне не стае: %(value)s"
@@ -1042,7 +1042,7 @@ msgstr "Скасаваць"
 msgid "confirmExchangeDialog/restoreExchangeCredits/exchangeNoNeedText"
 msgstr ""
 "Абмен для аднаўлення не патрабуецца.\n"
-"У вас досыць крэдытаў."
+"У вас досыць срэбра."
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/goldNotEnoughText"
 msgstr ""
@@ -1050,10 +1050,10 @@ msgstr ""
 "Для абмену патрабуецца %(gold)s"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needGoldText"
-msgstr "Ці абмяняць %(gold)s на крэдыты, якіх не стае?"
+msgstr "Ці абмяняць %(gold)s на срэбра, якіх не стае?"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needItemsStepperTitle"
-msgstr "Патрабуецца крэдытаў:"
+msgstr "Патрабуецца срэбра:"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needItemsText"
 msgstr "На аднаўленне не стае: %(value)s"
@@ -2146,14 +2146,14 @@ msgstr "Скасаваць"
 
 msgid "limitedUIOffNotification/message"
 msgstr ""
-"Ці сапраўды хочаце адключыць паступовае з'яўленне схаваных інтэрфейсаў у Гаражы?\n"
+"Ці сапраўды хочаце адключыць паступовае з'яўленне схаваных элементаў інтэрфейсу ў Гаражы?\n"
 "%(icon)s%(alert)s"
 
 msgid "limitedUIOffNotification/message/alert"
-msgstr "Пасля адключэння гэтай налады вы не зможаце ўключыць яе зноў."
+msgstr "Адключыўшы гэту наладу, вы не зможаце ўключыць яе зноў."
 
 msgid "limitedUIOffNotification/submit"
-msgstr "Адключыць"
+msgstr "Пацвердзіць"
 
 msgid "limitedUIOffNotification/title"
 msgstr "Змена налад"
@@ -2271,7 +2271,7 @@ msgid "moneyTransfer/labelClan"
 msgstr "Клан:"
 
 msgid "moneyTransfer/labelClanCredits"
-msgstr "крэдыты"
+msgstr "срэбра"
 
 msgid "moneyTransfer/labelClanGold"
 msgstr "золата"
@@ -2286,7 +2286,7 @@ msgid "moneyTransfer/labelNormal"
 msgstr "Звычайны:"
 
 msgid "moneyTransfer/labelNormalCredits"
-msgstr "крэдыты"
+msgstr "срэбра"
 
 msgid "moneyTransfer/labelNormalGold"
 msgstr "золата"
@@ -2452,7 +2452,7 @@ msgstr "Азнаёміўся"
 
 msgid "punishmentWindow/message/extra/penalty"
 msgstr ""
-"%(colorTagOpen)sПазбаўленне 100%% здабытага за бой досведу, крэдытаў і ўзнагарод.\n"
+"%(colorTagOpen)sПазбаўленне 100%% здабытага за бой досведу, срэбра і ўзнагарод.\n"
 "\n"
 "%(colorTagClose)s"
 
@@ -2465,7 +2465,7 @@ msgstr ""
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
-"Шаноўны гулец, з прычыны парушэння вамі правіл гульні на мапе %(arenaName)s а %(time)s, а менавіта артыкула «%(reason)s», вам вынеслі першае і апошняе папярэджанне. Звярніце ўвагу, што пры паўторным парушэнні вы будзеце пазбаўлены ўсіх здабытых за бой крэдытаў, досведу і ўзнагарод. У тым выпадку, калі дачасны выхад з бою звязаны з абрывамі злучэння або іншымі тэхнічнымі праблемамі, звярніце ў Цэнтр падтрымкі карыстальнікаў.\n"
+"Шаноўны гулец, з прычыны парушэння вамі правіл гульні на мапе %(arenaName)s а %(time)s, а менавіта артыкула «%(reason)s», вам вынеслі першае і апошняе папярэджанне. Звярніце ўвагу, што пры паўторным парушэнні вы будзеце пазбаўлены ўсяго здабытага за бой срэбра, досведу і ўзнагарод. У тым выпадку, калі дачасны выхад з бою звязаны з абрывамі злучэння або іншымі тэхнічнымі цяжкасцямі, звярніце ў Цэнтр падтрымкі карыстальнікаў.\n"
 "\n"
 " "
 
@@ -2489,12 +2489,6 @@ msgstr "Выйсце з бою да яго заканчэння або да зн
 
 msgid "punishmentWindow/reason/epic_deserter"
 msgstr "Выйсце з бою да яго заканчэння або да знішчэння ўласнай машыны"
-
-msgid "punishmentWindow/reason/hb_afk"
-msgstr "?empty?"
-
-msgid "punishmentWindow/reason/hb_deserter"
-msgstr "?empty?"
 
 msgid "punishmentWindow/reason/suicide"
 msgstr "Наўмыснае знішчэнне сваёй машыны"
@@ -3476,7 +3470,7 @@ msgid "upgradeTankmanScoolConfirmation/cancel"
 msgstr "Скасаваць"
 
 msgid "upgradeTankmanScoolConfirmation/messageCombine"
-msgstr "Ці навучыць танкіста за {%d} крэдытаў?"
+msgstr "Ці навучыць танкіста за {%d} срэбра?"
 
 msgid "upgradeTankmanScoolConfirmation/submit"
 msgstr "Навучыць"
@@ -3488,13 +3482,13 @@ msgid "upgradeTankmanScoolNotEnoughMoney/cancel"
 msgstr "Добра"
 
 msgid "upgradeTankmanScoolNotEnoughMoney/message"
-msgstr "Замала крэдытаў, каб навучыць танкіста."
+msgstr "Замала срэбра, каб навучыць танкіста."
 
 msgid "upgradeTankmanScoolNotEnoughMoney/submit"
 msgstr "Добра"
 
 msgid "upgradeTankmanScoolNotEnoughMoney/title"
-msgstr "Замала крэдытаў."
+msgstr "Замала срэбра."
 
 msgid "vehConf/exitDialog/cancel"
 msgstr "Скасаваць"

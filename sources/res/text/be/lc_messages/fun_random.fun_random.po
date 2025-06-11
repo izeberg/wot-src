@@ -158,13 +158,13 @@ msgid "invite/tooltip/noVehicles"
 msgstr "Патрэбная прынамсі адна машына ў Гаражы."
 
 msgid "mapsView/carousel/title/hidden"
-msgstr "Мапы Аркады"
+msgstr "Мапы Палявых выпрабаванняў"
 
 msgid "mapsView/carousel/title/visible"
 msgstr "Выберыце мапу"
 
 msgid "mapsView/infoBlock/firstBlock/empty"
-msgstr "На выбранай мапе якія-небудзь мадыфікатары Аркады не дзейнічаюць."
+msgstr "На выбранай мапе мадыфікатары Палявых выпрабаванняў не дзейнічаюць."
 
 msgid "mapsView/infoBlock/firstBlock/title"
 msgstr "Дзейныя мадыфікатары на мапе:"
@@ -175,7 +175,8 @@ msgstr ""
 "пра ўсе асаблівасці."
 
 msgid "mapsView/infoBlock/secondBlock/empty"
-msgstr "На выбранай мапе няма асаблівых пунктаў інтарэсу Аркады."
+msgstr ""
+"На выбранай мапе няма асаблівых пунктаў інтарэсу Палявых выпрабаванняў."
 
 msgid "mapsView/infoBlock/secondBlock/repairZone/description"
 msgstr ""
@@ -187,7 +188,7 @@ msgid "mapsView/infoBlock/secondBlock/repairZone/title"
 msgstr "— Рамонтная зона"
 
 msgid "mapsView/title"
-msgstr "АСАБЛІВАСЦІ АРКАДЫ"
+msgstr "АСАБЛІВАСЦІ ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
 
 msgid "metaProgressionTooltip/header/completedFinal"
 msgstr "УСЕ ЭТАПЫ ПРОЙДЗЕНЫЯ"
@@ -323,6 +324,87 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fepArtRework135/capsUserName"
+msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
+
+msgid "modes/fepArtRework135/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fepArtRework135/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача Палявых выпрабаванняў. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fepArtRework135/metaProgressionTooltip/subheader"
+msgstr "Задача Палявых выпрабаванняў."
+
+msgid "modes/fepArtRework135/metaProgressionTooltip/timer/completedResettable"
+msgstr "да новай задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework135/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/fepArtRework135/modeSubSelector/progression/timer"
+msgstr "да новай задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework135/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/fepArtRework135/mode_selector/description"
+msgstr "Праверка змен механікі САУ і яе наладжванне."
+
+msgid "modes/fepArtRework135/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "modes/fepArtRework135/mode_selector/progression/resettable"
+msgstr "Да новай задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework135/notification/finishSubModes/withProgression"
+msgstr "Рэжым %(subModeName)s завершаны: прагрэсія скінута."
+
+msgid "modes/fepArtRework135/notification/finishSubModes/withoutProgression"
+msgstr "Рэжым %(subModeName)s завершаны."
+
+msgid "modes/fepArtRework135/notification/newSubModes/withProgression"
+msgstr "Даступныя новыя ўзнагароды і рэжым %(subModeName)s."
+
+msgid "modes/fepArtRework135/notification/newSubModes/withoutProgression"
+msgstr "Даступны новы рэжым — %(subModeName)s."
+
+msgid "modes/fepArtRework135/notification/switchOffSubModes"
+msgstr "Рэжым %(subModeName)s недаступны: вядуцца тэхнічныя працы."
+
+msgid "modes/fepArtRework135/notification/switchOnSubModes"
+msgstr "Рэжым %(subModeName)s зноў даступны."
+
+msgid "modes/fepArtRework135/progression/congratulation/descr"
+msgstr "Вы выканалі ўсе задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework135/progression/title"
+msgstr "ЗАДАЧА ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
+
+msgid "modes/fepArtRework135/scheduler/notification/available"
+msgstr "Баі рэжыму %(subModeName)s зноў даступныя."
+
+msgid "modes/fepArtRework135/scheduler/notification/available/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/fepArtRework135/scheduler/notification/primeTime"
+msgstr ""
+"Баі рэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення агню."
+
+msgid "modes/fepArtRework135/scheduler/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/fepArtRework135/tooltip/filter/body"
+msgstr ""
+"Паказваць/схаваць прыдатную тэхніку для рэжыму «Палявыя выпрабаванні»."
+
+msgid "modes/fepArtRework135/tooltip/filter/header"
+msgstr "Тэхніка рэжыму «Палявыя выпрабаванні»"
+
+msgid "modes/fepArtRework135/userName"
+msgstr "Палявыя выпрабаванні"
+
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
@@ -330,13 +412,14 @@ msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s: %(subModeName)s"
 
 msgid "modes/undefined/metaProgressionTooltip/header/active"
-msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+msgstr ""
+"Задача Палявых выпрабаванняў. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
 
 msgid "modes/undefined/metaProgressionTooltip/reward/tip"
 msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
 
 msgid "modes/undefined/metaProgressionTooltip/subheader"
-msgstr "Задача Аркады"
+msgstr "Задача Палявых выпрабаванняў"
 
 msgid "modes/undefined/metaProgressionTooltip/timer/completedResettable"
 msgstr "да новай задачы Аркады"
@@ -384,7 +467,7 @@ msgid "modes/undefined/progression/info"
 msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
 
 msgid "modes/undefined/progression/title"
-msgstr "ЗАДАЧА АРКАДЫ"
+msgstr "ЗАДАЧА ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
 
 msgid "modes/undefined/scheduler/notification/available"
 msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
@@ -401,10 +484,11 @@ msgid "modes/undefined/scheduler/notification/primeTime/title"
 msgstr "Рэжым спынення агню"
 
 msgid "modes/undefined/tooltip/filter/body"
-msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
+msgstr ""
+"Паказваць/схаваць прыдатную тэхніку для рэжыму «Палявыя выпрабаванні»."
 
 msgid "modes/undefined/tooltip/filter/header"
-msgstr "Аркадная тэхніка"
+msgstr "Тэхніка Палявых выпрабаванняў"
 
 msgid "modes/undefined/userName"
 msgstr "Аркада"
@@ -413,12 +497,12 @@ msgid "modifiersPanel/subtitle"
 msgstr "Падрабязней"
 
 msgid "modifiersPanel/title"
-msgstr "Асаблівасці Аркады"
+msgstr "Асаблівасці Палявых выпрабаванняў"
 
 msgid "modifiersPanel/tooltipBody"
 msgstr ""
 "Націсніце, каб даведацца падрабязней пра асаблівасці гульні на мапах рэжыму "
-"«Аркада»."
+"«Палявыя выпрабаванні»."
 
 msgid "navigationButton/goTo/maps_view"
 msgstr "Мапы Аркады"
@@ -685,6 +769,52 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fepArtRework135/capsUserName"
+msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
+
+msgid "sub_modes/fepArtRework135/detailsHelp/page1/description"
+msgstr ""
+"Палявыя выпрабаванні — гэта новы асобны рэжым, дзе будуць тэставацца розныя "
+"механікі і важныя змены да іх увядзення ў гульню."
+
+msgid "sub_modes/fepArtRework135/detailsHelp/page1/title"
+msgstr "Палявыя выпрабаванні"
+
+msgid "sub_modes/fepArtRework135/detailsHelpHint/description"
+msgstr "для знаёмства з асаблівасцямі рэжыму"
+
+msgid "sub_modes/fepArtRework135/detailsHelpHint/press"
+msgstr "Націсніце"
+
+msgid "sub_modes/fepArtRework135/detailsHelpTitle"
+msgstr "Палявыя выпрабаванні"
+
+msgid "sub_modes/fepArtRework135/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/fepArtRework135/subModeCard/description"
+msgstr ""
+"Стандартныя баі без мадыфікатараў\n"
+"і ўплыву на статыстыку"
+
+msgid "sub_modes/fepArtRework135/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "sub_modes/fepArtRework135/subModeCard/title"
+msgstr "Палявыя выпрабаванні"
+
+msgid "sub_modes/fepArtRework135/tips/tip1/description"
+msgstr "Праверка змен механікі САУ і яе наладжванне."
+
+msgid "sub_modes/fepArtRework135/tips/tip1/title"
+msgstr "Палявыя выпрабаванні"
+
+msgid "sub_modes/fepArtRework135/userName"
+msgstr "Палявыя выпрабаванні"
+
+msgid "sub_modes/fepArtRework135/userName/quoted"
+msgstr "Палявыя выпрабаванні"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

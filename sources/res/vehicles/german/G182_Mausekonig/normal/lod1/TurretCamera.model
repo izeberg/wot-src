@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/german/G182_Mausekonig/normal/lod1/TurretCamera</nodelessVisual>
+	<parent>vehicles/german/G182_Mausekonig/normal/lod2/TurretCamera</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.782913 0.000000 -0.786895</min>
+		<max>0.783189 0.527639 2.100812</max>
+	</visibilityBox>
+</root>

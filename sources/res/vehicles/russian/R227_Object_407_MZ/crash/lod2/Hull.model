@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R227_Object_407_MZ/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/russian/R227_Object_407_MZ/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.703097 -0.719938 -2.950027</min>
+		<max>1.683870 0.804454 3.010134</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

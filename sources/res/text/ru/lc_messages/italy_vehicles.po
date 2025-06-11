@@ -215,6 +215,9 @@ msgstr "Prototipo 6"
 msgid "Chassis_It33_Orso"
 msgstr "Orso"
 
+msgid "Chassis_It36_Gasta"
+msgstr "Gasta"
+
 msgid "Continental_AOI_1490_italy"
 msgstr "Continental AOI-1490-I"
 
@@ -810,6 +813,28 @@ msgstr "Orso"
 msgid "It33_Orso_short_special"
 msgstr "Достойное фронтальное бронирование, хороший урон в минуту"
 
+msgid "It36_Gasta"
+msgstr "Gasta"
+
+msgid "It36_Gasta_descr"
+msgstr ""
+"В начале 50-х годов итальянские военные желали получить относительно лёгкий и манёвренный средний танк, который не уступал бы танкам «Patton». В 1958 году было принято решение участвовать в разработке проекта «Европейский танк», совместно с ФРГ и Францией. Так, на основе европейского проекта, родилась параллельная разработка собственного танка «Gasta». В форме корпуса нового танка заметно влияние американских решений. Ходовая часть была разработана под французским влиянием. Оптические системы и основное вооружение разрабатывались в сотрудничестве с германскими специалистами. Участники проекта постоянно вносили коррективы в требования и по итогу стали разрабатывать собственные программы, из-за чего проект утратил статус международного. Поскольку в разработке «Gasta», без помощи партнёров было не обойтись, машина так и не вышла за стадию эскизного проекта.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "It36_Gasta_long_special"
+msgstr ""
+"Итальянский средний танк выделяется отличной точностью и высоким "
+"бронепробитием на всех снарядах. Машина отлично показывает себя в роли "
+"снайпера, перемещаясь по карте за счёт высокой мобильности и комфортного "
+"орудия."
+
+msgid "It36_Gasta_short"
+msgstr "Gasta"
+
+msgid "It36_Gasta_short_special"
+msgstr "Отличная точность, высокое бронепробитие"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -818,6 +843,9 @@ msgstr "MB 837 Aa"
 
 msgid "MB_837_Ea"
 msgstr "MB 837 Ea"
+
+msgid "MB_837_Ea_500"
+msgstr "MB 837 Ea-500"
 
 msgid "MB_837_Ea_P6"
 msgstr "MB 837C"
@@ -871,6 +899,9 @@ msgid "R528_LE"
 msgstr "R528M"
 
 msgid "RV_4"
+msgstr "RV 4"
+
+msgid "RV_4G"
 msgstr "RV 4"
 
 msgid "RV_4_213_V"
@@ -1050,6 +1081,9 @@ msgstr "Prototipo 6"
 msgid "Turret_1_It33_Orso"
 msgstr "Orso"
 
+msgid "Turret_1_It36_Gasta"
+msgstr "Gasta"
+
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42 modificata"
 
@@ -1125,6 +1159,9 @@ msgstr "Cannone da 105/56"
 msgid "_105mm_Cannone_Da_105_71"
 msgstr "Cannone da 105/71"
 
+msgid "_105mm_Cannone_Da_105_71G"
+msgstr "105 mm Cannone Da 105/71"
+
 msgid "_105mm_Cannone_Da_105_73"
 msgstr "Cannone da 105/73"
 
@@ -1136,6 +1173,15 @@ msgstr "Cannone da 105/25"
 
 msgid "_105mm_Cannone_da_105_58"
 msgstr "Cannone da 105/58"
+
+msgid "_105mm_GEF_mod_51"
+msgstr "G.E.F. mod 51"
+
+msgid "_105mm_GEP_mod_51"
+msgstr "G.E.P. mod 51"
+
+msgid "_105mm_GS_mod_57"
+msgstr "G.S. mod 57"
 
 msgid "_105mm_HE_M113"
 msgstr "c.g. 105/51 HE M113"

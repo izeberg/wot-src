@@ -6,13 +6,14 @@ from gui.impl.gen import R
 from gui.shared.money import Currency
 from gui.shared.formatters.currency import getBWFormatter
 CURRENCIES_FORMATTERS = {Currency.GOLD: "<font color='#FFC363'>{}</font>", 
-   Currency.AYCOIN: "<font color='#E9E2BF'>{}</font>"}
+   Currency.AYCOIN: "<font color='#E9E2BF'>{}</font>", 
+   Currency.CRYSTAL: "<font color='#C9C9B6'>{}</font>"}
 ITEMS_FORMATTER = "<font color='#CED9D9'>{}</font>"
 _ITEMS_WITHOUT_PIECES = frozenset({'freeXP', 'credits', 'premium_universal', 'crystal'})
 _BULLET = ' • '
 
 def formatSpentCurrencies(currencies):
-    included = [ backport.text(R.strings.armory_shop.notifications.description.dyn(currencyName)(), value=CURRENCIES_FORMATTERS[currencyName].format(currencyAmount)) for currencyName, currencyAmount in currencies if currencyAmount
+    included = [ backport.text(R.strings.armory_shop.notifications.description.dyn(currencyName)(), value=CURRENCIES_FORMATTERS[currencyName].format(getBWFormatter(currencyName)(currencyAmount))) for currencyName, currencyAmount in currencies if currencyAmount
                ]
     return ('\n').join(included)
 

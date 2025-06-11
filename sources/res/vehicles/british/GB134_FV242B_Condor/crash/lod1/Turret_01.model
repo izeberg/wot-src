@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB134_FV242B_Condor/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB134_FV242B_Condor/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.527010 -0.000001 -2.887808</min>
+		<max>1.666937 1.643079 1.582782</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

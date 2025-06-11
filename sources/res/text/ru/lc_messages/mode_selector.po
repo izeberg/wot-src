@@ -89,10 +89,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Событие «Грозовой медведь» завершено"
+msgstr "Событие «Каменный медведь» завершено."
 
 msgid "mode/comp7/seasonStart"
-msgstr "Событие «Грозовой медведь» начнётся %(date)s"
+msgstr "Событие «Каменный медведь» начнётся %(date)s."
 
 msgid "mode/comp7/warning"
 msgstr "Ранговая неактивность"
@@ -246,6 +246,15 @@ msgstr ""
 msgid "mode/trainingsList/description"
 msgstr "Ознакомительные бои."
 
+msgid "mode/versusAI/battlePassTooltip/body"
+msgstr ""
+"Играя в режиме {whiteSpanish_open}«Полигон»{whiteSpanish_close}, вы будете "
+"зарабатывать очки, которые пригодятся вам для продвижения по прогрессии "
+"Боевого пропуска."
+
+msgid "mode/versusAI/battlePassTooltip/header"
+msgstr "Очки Боевого пропуска"
+
 msgid "mode/versusAI/condition"
 msgstr "12x12 %(parSecondary_open)sI%(parSecondary_close)s I-X&nbsp;уровни"
 
@@ -292,7 +301,7 @@ msgid "reward/credits/description"
 msgstr "Награда определяется по показателю вашей эффективности в бою"
 
 msgid "reward/credits/name"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "reward/crew/description"
 msgstr "Играя в режиме, вы можете получить уникальных членов экипажа"

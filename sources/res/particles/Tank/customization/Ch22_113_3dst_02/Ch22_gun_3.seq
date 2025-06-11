@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/Ch22_113_3dst_02/Ch22_gun.model</resource>
+		<castsShadow>false</castsShadow>
+	</sequenceObject>
+	<events/>
+</root>

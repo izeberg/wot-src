@@ -18,16 +18,16 @@ msgid "closeBtn/label"
 msgstr "ЗАКРЫЦЬ"
 
 msgid "credits/description"
-msgstr "У наборы: %(value)s крэдытаў"
+msgstr "У наборы: %(value)s срэбра"
 
 msgid "credits/longDescription"
 msgstr ""
 "Асноўная гульнявая валюта.\n"
 "\n"
-"У наборы: %(value)s крэдытаў"
+"У наборы: %(value)s срэбра"
 
 msgid "credits/title"
-msgstr "Крэдыты"
+msgstr "Срэбра"
 
 msgid "crystal/description"
 msgstr "У наборы: %(value)s бонаў"
@@ -90,12 +90,15 @@ msgstr ""
 msgid "notifications/description/armory_coin"
 msgstr "Патрачана жэтонаў: %(value)s"
 
+msgid "notifications/description/crystal"
+msgstr "Патрачана бонаў: %(value)s"
+
 msgid "notifications/description/gold"
 msgstr "Патрачана золата: %(value)s"
 
 msgid "notifications/financialTransaction"
 msgstr ""
-"Дата:%(date)s\n"
+"Дата: %(date)s\n"
 "%(currencies)s"
 
 msgid "notifications/purchaseContent"
@@ -169,6 +172,13 @@ msgstr ""
 "трэба часта падстаўляцца пад агонь у адказ. Вялікая колькасць станоўчых "
 "характарыстык ураўнаважваецца сціплай дакладнасцю і невысокай удзельнай "
 "магутнасцю."
+
+msgid "product/bundle/longDescription/episode6"
+msgstr ""
+"Гэты цяжкі танк прарыву мае неблагую дынаміку, максімальную хуткасці і "
+"моцную лабавую браню. Задача машыны — праломваць кірунак і карыстацца "
+"перавагамі сваёй брані. Добры вугал нахілу гарматы дазваляе ўпэўнена "
+"пачувацца пры гульні «ад рэльефу»."
 
 msgid "product/bundle/title"
 msgstr "Набор з %(vehicleName)s"
@@ -325,6 +335,9 @@ msgstr ""
 "Вольныя жэтоны пачынаюць назапашвацца ў тым выпадку, калі гулец ужо завяршыў"
 " асноўную прагрэсію Зборачнага цэха."
 
+msgid "tooltip/shop/currency/gold"
+msgstr "золата"
+
 msgid "tooltip/shop/currency/header/description"
 msgstr "Зборачны цэх"
 
@@ -333,9 +346,11 @@ msgstr "Вольны жэтон"
 
 msgid "tooltip/shop/currency/info"
 msgstr ""
-"%(green_open)sАтрымаць жэтоны%(green_close)s можна ва ўзнагароду за задачы "
-"Зборачнага цэха, а таксама за %(gold_open)sзолата%(gold_close)s. Колькасць "
-"жэтонаў абмежаваная."
+"Атрымаць %(takeCoin)s можна ва ўзнагароду за задачы Зборачнага цэха, а "
+"таксама за %(gold)s. Колькасць жэтонаў абмежаваная."
+
+msgid "tooltip/shop/currency/takeCoin"
+msgstr "Атрымаць жэтоны"
 
 msgid "tooltip/shop/info/body"
 msgstr "Паўторны прагляд кароткага апісання працы крамы Зборачнага цэха."

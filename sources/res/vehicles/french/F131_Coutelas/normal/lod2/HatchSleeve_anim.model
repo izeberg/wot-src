@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F131_Coutelas/normal/lod2/HatchSleeve_anim</nodefullVisual>
+	<parent>vehicles/french/F131_Coutelas/normal/lod3/HatchSleeve_anim</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.171021 0.850356 -0.467222</min>
+		<max>-0.847186 0.898888 -0.247692</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

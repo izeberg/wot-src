@@ -25,17 +25,11 @@
 					<materialKind>111</materialKind>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.5 0.5 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_dirtColor
-						<Vector4>
-							0.47 0.43 0.38 0.02
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.470000 0.430000 0.380000 0.020000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -94,15 +88,15 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.013848 0.567637 0.021059</groupOrigin>
+				<groupOrigin>0.006515 0.573858 -0.010392</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.592880 0.007642 -2.223088</min>
-		<max>2.625609 1.183186 2.265206</max>
+		<min>-2.646453 0.000000 -2.285990</min>
+		<max>2.639171 1.203499 2.265206</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>4150</geometrySize>
-	<minUVDensity>0.045693</minUVDensity>
+	<geometrySize>11378</geometrySize>
+	<minUVDensity>0.189928</minUVDensity>
 </root>

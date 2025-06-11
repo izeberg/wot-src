@@ -166,4 +166,6 @@
 	<NonChunkUDO>true</NonChunkUDO>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
+	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
+	<overrideSHGridQuality>1</overrideSHGridQuality>
 </root>

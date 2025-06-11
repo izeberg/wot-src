@@ -6379,24 +6379,33 @@
 				<tracesParams>
 					<trackPairIdx>0</trackPairIdx>
 					<bufferPrefs>mediumTank</bufferPrefs>
-					<textureSet>ussr_01</textureSet>
+					<textureSet>usa_03</textureSet>
 					<size>
-						0.5 0.3
+						0.5 0.68
 						<!--BW_String-->
 					</size>
-					<offset>0 0</offset>
+					<offset>
+						0 2.5
+						<!--BW_String-->
+					</offset>
 					<centerOffsetFactor>1 1</centerOffsetFactor>
 				</tracesParams>
 				<tracesParams>
 					<trackPairIdx>1</trackPairIdx>
 					<bufferPrefs>mediumTank</bufferPrefs>
-					<textureSet>ussr_01</textureSet>
+					<textureSet>usa_03</textureSet>
 					<size>
-						0.5 0.3
+						0.5 0.68
 						<!--BW_String-->
 					</size>
-					<offset>0 0</offset>
-					<centerOffsetFactor>1 1</centerOffsetFactor>
+					<offset>
+						0 2.5
+						<!--BW_String-->
+					</offset>
+					<centerOffsetFactor>
+						1.45 1
+						<!--BW_String-->
+					</centerOffsetFactor>
 				</tracesParams>
 			</traces>
 			<tracks>
@@ -6820,6 +6829,17 @@
 					<count>8</count>
 					<trackPairIdx>1</trackPairIdx>
 				</group>
+				<generalWheels>true</generalWheels>
+				<traces>
+					<trackTrace>
+						<backmostGroundWheelName>W_L7</backmostGroundWheelName>
+						<frontmostGroundWheelName>W_L0</frontmostGroundWheelName>
+					</trackTrace>
+					<trackTrace>
+						<backmostGroundWheelName>W_R7</backmostGroundWheelName>
+						<frontmostGroundWheelName>W_R0</frontmostGroundWheelName>
+					</trackTrace>
+				</traces>
 			</wheels>
 			<drivingWheels>WD_L0 WD_L6</drivingWheels>
 			<effects>

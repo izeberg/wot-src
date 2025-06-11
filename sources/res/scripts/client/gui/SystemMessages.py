@@ -19,6 +19,8 @@ SM_TYPE = Enumeration('System message type', [
  'FinancialTransactionWithGoldHeader',
  'FinancialTransactionWithCredits',
  'FinancialTransactionWithArmoryCoinsHeader',
+ 'FinancialTransactionBuyAYCoins',
+ 'FinancialTransactionBuyAYFreeCoins',
  'FinancialTransactionWithGoldAndArmoryCoinsHeader',
  'FortificationStartUp',
  'PurchaseForGold',

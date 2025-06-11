@@ -63,7 +63,7 @@ msgid "common/details/buyPremiumBtn"
 msgstr "Купить премиум"
 
 msgid "common/details/creditsTitle"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "common/details/crystal"
 msgstr "Боны"
@@ -89,7 +89,7 @@ msgstr ""
 
 msgid "common/details/premiumPlus/premium"
 msgstr ""
-"Дополнительный опыт, кредиты, премиум задачи и взводные бонусы при наличии "
+"Дополнительный опыт, серебро, премиум задачи и взводные бонусы при наличии "
 "Танкового премиум аккаунта."
 
 msgid "common/details/premiumPlus/quests"
@@ -99,7 +99,7 @@ msgstr ""
 
 msgid "common/details/premiumPlus/squad"
 msgstr ""
-"Зарабатывайте больше кредитов во взводе при наличии Танкового премиум "
+"Зарабатывайте больше серебра во взводе при наличии Танкового премиум "
 "аккаунта."
 
 msgid "common/details/xpTitle"
@@ -122,8 +122,8 @@ msgstr "Примерно осталось боёв: %(battles)s"
 
 msgid "common/noIncome/alert/text"
 msgstr ""
-"После 10 боя кредиты, награды и опыт в данном режиме начисляться не будут, а"
-" результаты не отразятся на общей статистике."
+"После 10-го боя серебро, награды и опыт в данном режиме начисляться не "
+"будут, а результаты не отразятся на общей статистике."
 
 msgid "common/noIncome/alert/title"
 msgstr "Внимание!"
@@ -406,6 +406,9 @@ msgstr "Самоуничтожился на Линии фронта"
 msgid "common/vehicleState/dead13"
 msgstr "Уничтожен навыком игрока"
 
+msgid "common/vehicleState/dead15"
+msgstr "Уничтожен минным полем"
+
 msgid "common/vehicleState/dead2"
 msgstr "Уничтожен тараном"
 
@@ -566,7 +569,7 @@ msgstr "Добавлено в хранилище ресурсов"
 msgid "details/calculations/piggyBankInfo/tooltip"
 msgstr ""
 "У игроков с активным Танковым премиум аккаунтом в резервном хранилище "
-"накапливаются дополнительные кредиты, а у игроков с активной подпиской — "
+"накапливается дополнительное серебро, а у игроков с активной подпиской — "
 "золото."
 
 msgid "details/calculations/playerRankXP"
@@ -603,7 +606,7 @@ msgid "details/calculations/xpRecord"
 msgstr "Начислено за бой (%(color_tag_open)sрекорд%(color_tag_close)s)"
 
 msgid "details/credits"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "details/crystal"
 msgstr "Боны"
@@ -776,7 +779,7 @@ msgid "getPremiumPopover/actionBtn/label"
 msgstr "Выбрать срок действия"
 
 msgid "getPremiumPopover/award"
-msgstr "+50% к кредитам и опыту"
+msgstr "+50% к серебру и опыту"
 
 msgid "getPremiumPopover/descriptionText"
 msgstr "Купите %(prem)s и за все последующие бои будете получать %(award)s"

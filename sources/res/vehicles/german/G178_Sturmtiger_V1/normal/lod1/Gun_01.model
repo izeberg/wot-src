@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G178_Sturmtiger_V1/normal/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.485879 -0.406220 -0.319596</min>
+		<max>0.485879 0.403779 1.151797</max>
+	</visibilityBox>
+	<parent>vehicles/german/G178_Sturmtiger_V1/normal/lod2/Gun_01</parent>
+	<extent>64</extent>
+</root>

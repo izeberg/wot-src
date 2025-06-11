@@ -39,7 +39,7 @@ msgid "action/auto/equipment/mixed"
 msgstr "Скидка на покупку снаряжения"
 
 msgid "action/auto/exchangeRate"
-msgstr "Бонус к переводу золота в кредиты"
+msgstr "Бонус к переводу золота в серебро"
 
 msgid "action/auto/femalePassportChangeCost"
 msgstr "Скидка на смену документов членов экипажа"
@@ -165,7 +165,7 @@ msgid "action/auto/winXPFactorMode/daily"
 msgstr "Бонус к боевому опыту за первую победу"
 
 msgid "action/booster/booster_credits"
-msgstr "Кредиты за бой"
+msgstr "Серебро за бой"
 
 msgid "action/booster/booster_crew_xp"
 msgstr "Опыт экипажа за бой"
@@ -423,12 +423,12 @@ msgstr ""
 
 msgid "action/full/creditsDropSkillsCost"
 msgstr ""
-"Сбросьте выбранные навыки членов экипажа за кредиты со скидкой %(discount)s."
+"Сбросьте выбранные навыки членов экипажа за серебро со скидкой %(discount)s."
 " Это поможет, если вы пересаживаете экипаж на машину с другой ролью в бою."
 
 msgid "action/full/creditsTankmanCost"
 msgstr ""
-"Обучите или переобучите экипаж за кредиты со скидкой %(discount)s. Хорошо "
+"Обучите или переобучите экипаж за серебро со скидкой %(discount)s. Хорошо "
 "развитый экипаж дополняет характеристики машины и поможет эффективнее "
 "реализовывать потенциал вашей машины."
 
@@ -439,9 +439,9 @@ msgstr ""
 
 msgid "action/full/exchangeRate"
 msgstr ""
-"Переведите золото в кредиты по выгодному курсу: %(discount)s. Тем самым вы "
-"сэкономите время на заработок кредитов и быстрее купите понравившуюся "
-"машину, дорогостоящее оборудование и т.д."
+"Переведите золото в серебро по выгодному курсу: %(discount)s. Тем самым вы "
+"сэкономите время на заработок серебра и быстрее купите понравившуюся машину,"
+" дорогостоящее оборудование и т.д."
 
 msgid "action/full/femalePassportChangeCost"
 msgstr ""
@@ -534,7 +534,7 @@ msgstr ""
 
 msgid "action/full/shell/creditsPriceMultiplier"
 msgstr ""
-"Закупайте снаряды за кредиты со скидкой, которая составляет %(discount)s. "
+"Закупайте снаряды за серебро со скидкой, которая составляет %(discount)s. "
 "Пополнение боезапаса впрок сейчас сэкономит вам ресурсы в дальнейшем."
 
 msgid "action/full/shell/goldPriceMultiplier"
@@ -607,13 +607,13 @@ msgstr ""
 
 msgid "action/hero/full/creditsDropSkillsCost"
 msgstr ""
-"Сбросьте выбранные навыки членов экипажа за кредиты со скидкой %(discount)s. Это поможет, если вы пересаживаете экипаж на машину с другой ролью в бою.\n"
+"Сбросьте выбранные навыки членов экипажа за серебро со скидкой %(discount)s. Это поможет, если вы пересаживаете экипаж на машину с другой ролью в бою.\n"
 "\n"
 "Данная возможность будет полезна при смене типа техники с сохранением экипажа, либо же при смене вашего стиля игры: например, если вы решите играть от скрытности или пересадите экипаж с тяжёлого танка на ПТ-САУ, то приоритетным навыком станет «маскировка»."
 
 msgid "action/hero/full/creditsTankmanCost"
 msgstr ""
-"Обучите или переобучите экипаж за кредиты со скидкой %(discount)s. Хорошо развитый экипаж дополняет характеристики машины и поможет эффективнее реализовывать потенциал вашей машины.\n"
+"Обучите или переобучите экипаж за серебро со скидкой %(discount)s. Хорошо развитый экипаж дополняет характеристики машины и поможет эффективнее реализовывать потенциал вашей машины.\n"
 "\n"
 "Обратите внимание, что характеристики машины в Ангаре показаны с учётом экипажа, обученного на 100%%. Таким образом, если в бой пойдёт более слабый экипаж, характеристики машины будут заметно ниже заявленных в Ангаре."
 
@@ -625,9 +625,9 @@ msgstr ""
 
 msgid "action/hero/full/exchangeRate"
 msgstr ""
-"Переведите золото в кредиты по выгодному курсу: %(discount)s. Тем самым вы сэкономите время на заработок кредитов и быстрее купите понравившуюся машину, дорогостоящее оборудование и прочее игровое имущество.\n"
+"Переведите золото в серебро по выгодному курсу: %(discount)s. Тем самым вы сэкономите время на заработок серебра и быстрее купите понравившуюся машину, дорогостоящее оборудование и прочее игровое имущество.\n"
 "\n"
-"Не забывайте, что игра на Х уровне как правило довольно затратна, поэтому старайтесь поддерживать баланс кредитов всегда на должном уровне, чтобы хватало на пополнение боезапаса, снаряжения и ремонт вашей машины."
+"Не забывайте, что игра на Х уровне как правило довольно затратна, поэтому старайтесь поддерживать баланс серебра всегда на должном уровне, чтобы хватало на пополнение боезапаса, снаряжения и ремонт вашей машины."
 
 msgid "action/hero/full/femalePassportChangeCost"
 msgstr ""
@@ -681,50 +681,50 @@ msgstr ""
 
 msgid "action/hero/full/premiumPacket14Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки дней премиум аккаунта (или его продление) на 14 "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) на 14 "
 "дней: %(discount)s"
 
 msgid "action/hero/full/premiumPacket180Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки или продления премиум аккаунта на 180 дней: "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки или продления Премиум аккаунта на 180 дней: "
 "%(discount)s"
 
 msgid "action/hero/full/premiumPacket1Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки или продления премиум аккаунта на 1 день: "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки или продления Премиум аккаунта на 1 день: "
 "%(discount)s"
 
 msgid "action/hero/full/premiumPacket30Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки или продления премиум аккаунта на 30 дней: "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки или продления Премиум аккаунта на 30 дней: "
 "%(discount)s"
 
 msgid "action/hero/full/premiumPacket360Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки или продления премиум аккаунта на 360 дней: "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки или продления Премиум аккаунта на 360 дней: "
 "%(discount)s"
 
 msgid "action/hero/full/premiumPacket3Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки или продления премиум аккаунта на 3 дня: "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки или продления Премиум аккаунта на 3 дня: "
 "%(discount)s"
 
 msgid "action/hero/full/premiumPacket7Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки или продления премиум аккаунта на 7 дней: "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки или продления Премиум аккаунта на 7 дней: "
 "%(discount)s"
 
 msgid "action/hero/full/premiumPacket90Cost"
 msgstr ""
-"Премиум аккаунт — это +50%% к заработку опыта и кредитов в каждом бою. "
-"Выгодная стоимость покупки дней премиум аккаунта (или его продление) на 90 "
+"Премиум аккаунт — это +50%% к заработку опыта и серебра в каждом бою. "
+"Выгодная стоимость покупки дней Премиум аккаунта (или его продление) на 90 "
 "дней: %(discount)s"
 
 msgid "action/hero/full/set_ShellPrice"
@@ -735,7 +735,7 @@ msgstr ""
 
 msgid "action/hero/full/shell/creditsPriceMultiplier"
 msgstr ""
-"Закупайте снаряды за кредиты со скидкой, которая составляет %(discount)s. Пополнение боезапаса впрок сейчас сэкономит вам ресурсы в дальнейшем.\n"
+"Закупайте снаряды за серебро со скидкой, которая составляет %(discount)s. Пополнение боезапаса впрок сейчас сэкономит вам ресурсы в дальнейшем.\n"
 "\n"
 "Обратите внимание, что орудие, к которому вы покупаете снаряд, может устанавливаться на множестве разных машин. Таким образом, купив впрок самые распространённые снаряды для каждой нации, на технике которой вы предпочитаете играть, вы надолго обеспечите боеприпасами множество машин."
 
@@ -803,10 +803,10 @@ msgid "action/short/clanCreationCost"
 msgstr "Скидка %(discount)s на создание клана"
 
 msgid "action/short/creditsDropSkillsCost"
-msgstr "Скидка %(discount)s на сброс навыков членов экипажей за кредиты"
+msgstr "Скидка %(discount)s на сброс навыков членов экипажей за серебро"
 
 msgid "action/short/creditsTankmanCost"
-msgstr "Скидка %(discount)s на обучение и переобучение экипажа за кредиты"
+msgstr "Скидка %(discount)s на обучение и переобучение экипажа за серебро"
 
 msgid "action/short/dropSkills/mixed"
 msgstr "Скидка %(discount)s на сброс навыков членов экипажей"
@@ -821,7 +821,7 @@ msgid "action/short/equipment/mixed"
 msgstr "Скидка до %(discount)s на покупку снаряжения"
 
 msgid "action/short/exchangeRate"
-msgstr "Выгодный курс %(discount)s на перевод золота в кредиты"
+msgstr "Выгодный курс %(discount)s на перевод золота в серебро"
 
 msgid "action/short/femalePassportChangeCost"
 msgstr "Скидка %(discount)s на смену документов членов экипажа"
@@ -911,7 +911,7 @@ msgid "action/short/set_ShellPrice"
 msgstr "Скидка на покупку снарядов %(discount)s"
 
 msgid "action/short/shell/creditsPriceMultiplier"
-msgstr "Скидка до %(discount)s на покупку снарядов за кредиты"
+msgstr "Скидка до %(discount)s на покупку снарядов за серебро"
 
 msgid "action/short/shell/goldPriceMultiplier"
 msgstr "Скидка до %(discount)s на покупку снарядов за золото"
@@ -1045,6 +1045,9 @@ msgstr "Жетоны"
 msgid "bonusName/brcoin"
 msgstr "Стальные печати"
 
+msgid "bonusName/bumblebee_coin"
+msgstr "Жетоны Летней распродажи"
+
 msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
@@ -1148,10 +1151,10 @@ msgid "bonusName/completionTokens_7_4"
 msgstr "Чертежи 122-мм орудия М62-Т2А"
 
 msgid "bonusName/credits"
-msgstr "Кредиты"
+msgstr "Серебро"
 
 msgid "bonusName/creditsFactor"
-msgstr "Коэффициент кредитов"
+msgstr "Коэффициент серебра"
 
 msgid "bonusName/crew_bonus_x3"
 msgstr "?empty?"
@@ -1268,7 +1271,7 @@ msgid "bonusName/tankmenXPFactor"
 msgstr "Коэффициент опыта экипажа"
 
 msgid "bonusName/team_credits_bonus"
-msgstr "Командный бонус к кредитам"
+msgstr "Командный бонус к серебру"
 
 msgid "bonusName/tmanToken"
 msgstr "Член экипажа"
@@ -1293,7 +1296,7 @@ msgid "bonuses/compensation/header"
 msgstr "Компенсация"
 
 msgid "bonuses/credits/description"
-msgstr "%(value)s кредитов"
+msgstr "%(value)s серебра"
 
 msgid "bonuses/crewBook/text"
 msgstr "%(name)s (x%(value)d)"
@@ -1335,7 +1338,7 @@ msgid "bonuses/item/berths"
 msgstr "Мест в Казарме:"
 
 msgid "bonuses/item/creditsFactor"
-msgstr "коэффициент кредитов"
+msgstr "коэффициент серебра"
 
 msgid "bonuses/item/crewSkin"
 msgstr "Облик экипажа:"
@@ -1763,7 +1766,7 @@ msgid "dailyWidget/tooltip/header/daily"
 msgstr "Стандартные ежедневные задачи"
 
 msgid "dailyWidget/tooltip/header/epic"
-msgstr "Еженедельная задача / Серия входов"
+msgstr "Еженедельная задача / Цепь побед"
 
 msgid "dailyWidget/tooltip/header/premium"
 msgstr "Ежедневные премиум задачи"
@@ -2203,7 +2206,7 @@ msgid "details/conditions/cumulative/noDamageDirectHitsReceived"
 msgstr "Полученные попадания без урона"
 
 msgid "details/conditions/cumulative/originalCredits"
-msgstr "Заработанные кредиты без надбавок"
+msgstr "Заработанное серебро без надбавок"
 
 msgid "details/conditions/cumulative/originalXP"
 msgstr "Заработанный «чистый» опыт"
@@ -4104,7 +4107,7 @@ msgid "details/modifiers/booster"
 msgstr "На покупку личного резерва «%(boosterName)s»"
 
 msgid "details/modifiers/boosters/creditsPriceMultiplier"
-msgstr "На покупку личных резервов за кредиты до:"
+msgstr "На покупку личных резервов за серебро до:"
 
 msgid "details/modifiers/boosters/crystalPriceMultiplier"
 msgstr "На покупку личных резервов за боны до:"
@@ -4122,18 +4125,18 @@ msgid "details/modifiers/economics/clanCreationCost"
 msgstr "На создание клана"
 
 msgid "details/modifiers/economics/creditsDropSkillsCost"
-msgstr "На сброс навыков экипажа за кредиты"
+msgstr "На сброс навыков экипажа за серебро"
 
 msgid "details/modifiers/economics/creditsTankmanCost"
-msgstr "На обучение и переобучение экипажа за кредиты"
+msgstr "На обучение и переобучение экипажа за серебро"
 
 msgid "details/modifiers/economics/exchangeRate"
-msgstr "На стоимость обмена золота на кредиты"
+msgstr "На стоимость обмена золота на серебро"
 
 msgid "details/modifiers/economics/exchangeRateForShellsAndEqs"
 msgstr ""
 "На стоимость покупки улучшенного снаряжения и специальных снарядов за "
-"кредиты до:"
+"серебро до:"
 
 msgid "details/modifiers/economics/femalePassportChangeCost"
 msgstr "На смену документов женского экипажа"
@@ -4181,10 +4184,10 @@ msgid "details/modifiers/economics/slotsPrices"
 msgstr "На покупку слотов в Ангаре"
 
 msgid "details/modifiers/equipment/credits"
-msgstr "На покупку снаряжения %(eqName)s за кредиты"
+msgstr "На покупку снаряжения %(eqName)s за серебро"
 
 msgid "details/modifiers/equipment/creditsPriceMultiplier"
-msgstr "На покупку снаряжения за кредиты до:"
+msgstr "На покупку снаряжения за серебро до:"
 
 msgid "details/modifiers/equipment/crystal"
 msgstr "На покупку снаряжения %(eqName)s за боны"
@@ -4205,7 +4208,7 @@ msgid "details/modifiers/optDevice"
 msgstr "На покупку оборудования %(devName)s"
 
 msgid "details/modifiers/optDevice/creditsPriceMultiplier"
-msgstr "На покупку оборудования за кредиты до:"
+msgstr "На покупку оборудования за серебро до:"
 
 msgid "details/modifiers/optDevice/goldPriceMultiplier"
 msgstr "На покупку оборудования за золото до:"
@@ -4214,10 +4217,10 @@ msgid "details/modifiers/rentVehicle"
 msgstr "На аренду техники:"
 
 msgid "details/modifiers/shell/credits"
-msgstr "На покупку снарядов %(shellName)s за кредиты"
+msgstr "На покупку снарядов %(shellName)s за серебро"
 
 msgid "details/modifiers/shell/creditsPriceMultiplier"
-msgstr "На покупку снарядов за кредиты до:"
+msgstr "На покупку снарядов за серебро до:"
 
 msgid "details/modifiers/shell/gold"
 msgstr "На покупку снарядов %(shellName)s за золото"
@@ -4226,7 +4229,7 @@ msgid "details/modifiers/shell/goldPriceMultiplier"
 msgstr "На покупку снарядов за золото до:"
 
 msgid "details/modifiers/shell/nation/creditsPriceMultiplier"
-msgstr "На покупку снарядов нации %(nation)s за кредиты до:"
+msgstr "На покупку снарядов нации %(nation)s за серебро до:"
 
 msgid "details/modifiers/shell/nation/goldPriceMultiplier"
 msgstr "На покупку снарядов нации %(nation)s за золото до:"
@@ -4247,25 +4250,25 @@ msgid "details/modifiers/vehicle"
 msgstr "На покупку техники:"
 
 msgid "details/modifiers/vehicle/creditsPriceMultiplier"
-msgstr "На покупку техники за кредиты до:"
+msgstr "На покупку техники за серебро до:"
 
 msgid "details/modifiers/vehicle/goldPriceMultiplier"
 msgstr "На покупку техники за золото до:"
 
 msgid "details/modifiers/vehicle/nation/creditsPriceMultiplier"
-msgstr "На покупку техники нации %(nation)s за кредиты до:"
+msgstr "На покупку техники нации %(nation)s за серебро до:"
 
 msgid "details/modifiers/vehicle/nation/goldPriceMultiplier"
 msgstr "На покупку техники нации %(nation)s за золото до:"
 
 msgid "details/modifiers/vehicle/rent/creditsPriceMultiplier"
-msgstr "На аренду техники за кредиты до:"
+msgstr "На аренду техники за серебро до:"
 
 msgid "details/modifiers/vehicle/rent/goldPriceMultiplier"
 msgstr "На аренду техники за золото до:"
 
 msgid "details/modifiers/vehicle/rent/nation/creditsPriceMultiplier"
-msgstr "На аренду техники нации %(nation)s за кредиты до:"
+msgstr "На аренду техники нации %(nation)s за серебро до:"
 
 msgid "details/modifiers/vehicle/rent/nation/goldPriceMultiplier"
 msgstr "На аренду техники нации %(nation)s за золото до:"
@@ -5509,7 +5512,7 @@ msgstr ""
 "награды."
 
 msgid "premiumQuests/body/title"
-msgstr "Дополнительные кредиты, опыт и боны"
+msgstr "Дополнительное серебро, опыт и боны"
 
 msgid "premiumQuests/condition/dmgTop_5"
 msgstr "Попасть в топ-5 игроков по урону в своей команде"
@@ -5541,15 +5544,15 @@ msgstr "Купить премиум"
 msgid "premiumQuests/notPremiumAccount/paragraph"
 msgstr ""
 "Премиум аккаунт открывает доступ к трём ежедневным премиум задачам, а также "
-"даёт другие преимущества: +50% к заработку опыта и кредитов, хранилище "
-"кредитов, дополнительный слот для исключения карт и управляемый бонус к "
+"даёт другие преимущества: +50% к заработку опыта и серебра, хранилище "
+"серебра, дополнительный слот для исключения карт и управляемый бонус к "
 "опыту."
 
 msgid "premiumQuests/notPremiumAccount/paragraphSmall"
 msgstr ""
 "Премиум аккаунт открывает доступ к трём ежедневным премиум задачам, а также "
-"даёт другие преимущества: +50% к заработку опыта и кредитов, хранилище "
-"кредитов и т.д."
+"даёт другие преимущества: +50% к заработку опыта и серебра, хранилище "
+"серебра и т.д."
 
 msgid "premiumQuests/notPremiumAccount/title"
 msgstr "Для доступа к задачам необходим премиум аккаунт"
@@ -5829,6 +5832,9 @@ msgstr "«Китай»"
 
 msgid "token/default/czech"
 msgstr "«Чехословакия»"
+
+msgid "token/default/default"
+msgstr "«Танковая печать»"
 
 msgid "token/default/fire"
 msgstr "«Поджог»"

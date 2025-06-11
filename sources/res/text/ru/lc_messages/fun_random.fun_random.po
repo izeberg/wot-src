@@ -157,13 +157,14 @@ msgid "invite/tooltip/noVehicles"
 msgstr "Нужна хотя бы одна машина в Ангаре."
 
 msgid "mapsView/carousel/title/hidden"
-msgstr "Карты Аркады"
+msgstr "Карты Полевых испытаний"
 
 msgid "mapsView/carousel/title/visible"
 msgstr "Выберите карту"
 
 msgid "mapsView/infoBlock/firstBlock/empty"
-msgstr "На выбранной карте какие-либо модификаторы Аркады не действуют."
+msgstr ""
+"На выбранной карте какие-либо модификаторы Полевых испытаний не действуют."
 
 msgid "mapsView/infoBlock/firstBlock/title"
 msgstr "Действующие модификаторы на карте:"
@@ -174,7 +175,7 @@ msgstr ""
 "всех особенностях."
 
 msgid "mapsView/infoBlock/secondBlock/empty"
-msgstr "На выбранной карте нет особых точек интереса Аркады."
+msgstr "На выбранной карте нет особых точек интереса Полевых испытаний."
 
 msgid "mapsView/infoBlock/secondBlock/repairZone/description"
 msgstr ""
@@ -186,7 +187,7 @@ msgid "mapsView/infoBlock/secondBlock/repairZone/title"
 msgstr "— Ремонтная зона"
 
 msgid "mapsView/title"
-msgstr "ОСОБЕННОСТИ АРКАДЫ"
+msgstr "ОСОБЕННОСТИ ПОЛЕВЫХ ИСПЫТАНИЙ"
 
 msgid "metaProgressionTooltip/header/completedFinal"
 msgstr "ВСЕ ЭТАПЫ ПРОЙДЕНЫ"
@@ -322,6 +323,88 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/fepArtRework135/capsUserName"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
+
+msgid "modes/fepArtRework135/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fepArtRework135/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача Полевых испытаний. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fepArtRework135/metaProgressionTooltip/subheader"
+msgstr "Задача Полевых испытаний."
+
+msgid "modes/fepArtRework135/metaProgressionTooltip/timer/completedResettable"
+msgstr "до новой задачи Полевых испытаний"
+
+msgid "modes/fepArtRework135/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/fepArtRework135/modeSubSelector/progression/timer"
+msgstr "до новой задачи Полевых испытаний"
+
+msgid "modes/fepArtRework135/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/fepArtRework135/mode_selector/description"
+msgstr "Проверка изменений механики САУ и её настройка."
+
+msgid "modes/fepArtRework135/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "modes/fepArtRework135/mode_selector/progression/resettable"
+msgstr "До новой задачи Полевых испытаний"
+
+msgid "modes/fepArtRework135/notification/finishSubModes/withProgression"
+msgstr "Режим %(subModeName)s завершён: прогрессия сброшена."
+
+msgid "modes/fepArtRework135/notification/finishSubModes/withoutProgression"
+msgstr "Режим %(subModeName)s завершён."
+
+msgid "modes/fepArtRework135/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и режим %(subModeName)s."
+
+msgid "modes/fepArtRework135/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый режим — %(subModeName)s."
+
+msgid "modes/fepArtRework135/notification/switchOffSubModes"
+msgstr "Режим %(subModeName)s недоступен: ведутся технические работы."
+
+msgid "modes/fepArtRework135/notification/switchOnSubModes"
+msgstr "Режим %(subModeName)s снова доступен."
+
+msgid "modes/fepArtRework135/progression/congratulation/descr"
+msgstr "Вы выполнили все задачи Полевых испытаний"
+
+msgid "modes/fepArtRework135/progression/title"
+msgstr "ЗАДАЧА ПОЛЕВЫХ ИСПЫТАНИЙ"
+
+msgid "modes/fepArtRework135/scheduler/notification/available"
+msgstr "Бои режима %(subModeName)s снова доступны."
+
+msgid "modes/fepArtRework135/scheduler/notification/available/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fepArtRework135/scheduler/notification/primeTime"
+msgstr ""
+"Бои режима %(subModeName)s недоступны до окончания режима прекращения огня."
+
+msgid "modes/fepArtRework135/scheduler/notification/primeTime/title"
+msgstr "Режим прекращения огня"
+
+msgid "modes/fepArtRework135/tooltip/filter/body"
+msgstr ""
+"Включить/отключить отображение подходящей техники для режима «Полевые "
+"испытания»."
+
+msgid "modes/fepArtRework135/tooltip/filter/header"
+msgstr "Техника режима «Полевые испытания»"
+
+msgid "modes/fepArtRework135/userName"
+msgstr "Полевые испытания"
+
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
 
@@ -329,13 +412,14 @@ msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s: %(subModeName)s"
 
 msgid "modes/undefined/metaProgressionTooltip/header/active"
-msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+msgstr ""
+"Задача Полевых испытаний. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
 
 msgid "modes/undefined/metaProgressionTooltip/reward/tip"
 msgstr "Прогресс выполнения засчитывается в любом подрежиме Аркады."
 
 msgid "modes/undefined/metaProgressionTooltip/subheader"
-msgstr "Задача Аркады"
+msgstr "Задача Полевых испытаний"
 
 msgid "modes/undefined/metaProgressionTooltip/timer/completedResettable"
 msgstr "до новой задачи Аркады"
@@ -383,7 +467,7 @@ msgid "modes/undefined/progression/info"
 msgstr "Задачу можно выполнять в любом подрежиме Аркады."
 
 msgid "modes/undefined/progression/title"
-msgstr "ЗАДАЧА АРКАДЫ"
+msgstr "ЗАДАЧА ПОЛЕВЫХ ИСПЫТАНИЙ"
 
 msgid "modes/undefined/scheduler/notification/available"
 msgstr "Бои подрежима %(subModeName)s снова доступны."
@@ -401,10 +485,11 @@ msgstr "Режим прекращения огня"
 
 msgid "modes/undefined/tooltip/filter/body"
 msgstr ""
-"Включить/отключить отображение подходящей техники для режима «Аркада»."
+"Включить/отключить отображение подходящей техники для режима «Полевые "
+"испытания»."
 
 msgid "modes/undefined/tooltip/filter/header"
-msgstr "Аркадная техника"
+msgstr "Техника Полевых испытаний"
 
 msgid "modes/undefined/userName"
 msgstr "Аркада"
@@ -413,12 +498,12 @@ msgid "modifiersPanel/subtitle"
 msgstr "Подробнее"
 
 msgid "modifiersPanel/title"
-msgstr "Особенности Аркады"
+msgstr "Особенности Полевых испытаний"
 
 msgid "modifiersPanel/tooltipBody"
 msgstr ""
 "Нажмите, чтобы узнать подробнее об особенностях игры на картах режима "
-"«Аркада»."
+"«Полевые испытания»."
 
 msgid "navigationButton/goTo/maps_view"
 msgstr "Карты Аркады"
@@ -683,6 +768,52 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/fepArtRework135/capsUserName"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
+
+msgid "sub_modes/fepArtRework135/detailsHelp/page1/description"
+msgstr ""
+"Полевые испытания — это новый отдельный режим, где будут тестироваться "
+"различные механики и важные изменения до их внедрения в игру."
+
+msgid "sub_modes/fepArtRework135/detailsHelp/page1/title"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/fepArtRework135/detailsHelpHint/description"
+msgstr "для знакомства с особенностями режима"
+
+msgid "sub_modes/fepArtRework135/detailsHelpHint/press"
+msgstr "Нажмите"
+
+msgid "sub_modes/fepArtRework135/detailsHelpTitle"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/fepArtRework135/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/fepArtRework135/subModeCard/description"
+msgstr ""
+"Стандартные бои без модификаторов\n"
+"и влияния на статистику"
+
+msgid "sub_modes/fepArtRework135/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;уровни"
+
+msgid "sub_modes/fepArtRework135/subModeCard/title"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/fepArtRework135/tips/tip1/description"
+msgstr "Проверка изменений механики САУ и её настройка."
+
+msgid "sub_modes/fepArtRework135/tips/tip1/title"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/fepArtRework135/userName"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/fepArtRework135/userName/quoted"
+msgstr "Полевые испытания"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

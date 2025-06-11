@@ -113,7 +113,7 @@
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
@@ -163,7 +163,7 @@
 						diffuseMap
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/Progetto_M40_mod_65_3Dst_02_equipment_01_AM.dds</Texture>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>

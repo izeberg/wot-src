@@ -59,7 +59,7 @@
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<property>
@@ -93,7 +93,7 @@
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>
@@ -131,7 +131,7 @@
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
 					<property>
@@ -151,23 +151,19 @@
 						<Texture>vehicles/italy/It08_Progetto_M40_mod_65/_skin/It08_Progetto_M40_mod_65_3Dst_02/Progetto_M40_mod_65_3Dst_02_chassis_01_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.000641 -0.388736 0.026299</groupOrigin>
+				<groupOrigin>-0.008679 -0.358153 0.031564</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -175,6 +171,6 @@
 		<min>-1.711136 -0.904414 -3.626861</min>
 		<max>1.675475 0.659026 3.592282</max>
 	</boundingBox>
-	<geometrySize>138608</geometrySize>
+	<geometrySize>129060</geometrySize>
 	<minUVDensity>0.002324</minUVDensity>
 </root>

@@ -80,8 +80,8 @@ msgstr "Узнагароды пакуль недаступныя"
 msgid "window/playStreakRewards/periodicRewards/tooltip/body"
 msgstr ""
 "Працягнуўшы свой ланцуг перамог да ячэйкі, адзначанай у спісе штомесячных "
-"налічэнняў, вы штотыднёва будзеце атрымліваць адмысловую ўзнагароду. Гэтыя "
-"ўзнагароды сумуюцца: пасля дасягненне наступнай ячэйкі ў рамцы вы будзеце "
+"налічэнняў, вы штомесяц будзеце атрымліваць адмысловую ўзнагароду. Гэтыя "
+"ўзнагароды сумуюцца: па дасягненні наступнай ячэйкі ў рамцы вы будзеце "
 "атрымліваць дзве ўзнагароды. І так далей, пакуль ланцуг перамог не будзе "
 "парушаны."
 
@@ -125,7 +125,7 @@ msgid "window/playStreakRewards/recoveryMessage/head/complete"
 msgstr "Ланцуг перамог адноўлены"
 
 msgid "window/playStreakRewards/recoveryMessage/head/days"
-msgstr "%(day)s сут"
+msgstr "%(day)s сут."
 
 msgid "window/playStreakRewards/recoveryMessage/head/disable"
 msgstr "Ланцуг перамог будзе адноўлены праз"
@@ -193,7 +193,7 @@ msgid "window/playStreakRewards/tab/redemptionMaxDayCount/body"
 msgstr " / %(redemptionMaxDayCount)s"
 
 msgid "window/playStreakRewards/tab/tooltip/body"
-msgstr "Націсніце, каб падрабязней даведацца пра падзею «Ланцуг перамог»"
+msgstr "Націсніце, каб падрабязней даведацца пра падзею «Ланцуг перамог»."
 
 msgid "window/playStreakRewards/tab/tooltip/head"
 msgstr "Пра Ланцуг перамог"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB100_Manticore/_skins/GB100_Manticore_3Dst_Snow/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB100_Manticore/_skins/GB100_Manticore_3Dst_Snow/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.096187 -0.015450 -1.072952</min>
+		<max>1.092599 0.510990 1.000730</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

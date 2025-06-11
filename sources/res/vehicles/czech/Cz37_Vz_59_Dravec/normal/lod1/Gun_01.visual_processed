@@ -74,6 +74,7 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
@@ -87,7 +88,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>8.416441 4.208220 0.000000 0.000000</Vector4>
+						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss

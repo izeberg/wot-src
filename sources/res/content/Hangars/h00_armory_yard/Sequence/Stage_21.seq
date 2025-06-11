@@ -1,0 +1,4716 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>8.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_1_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_1_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.005833</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>1.326416</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_1_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_1_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_2_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_2_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.005833</inTangent>
+				<outTangent>0.652174</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.233333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.652174</inTangent>
+				<outTangent>1.326416</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_2_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_2_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.533333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.652174</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.233333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.652174</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_3_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_3_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_3_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_3_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_4_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_4_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_4_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_4_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.033334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_5_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_5_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_5_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_5_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_6_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_6_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_6_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_6_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.533334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_7_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_7_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_7_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_7_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_8_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_8_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_8_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_8_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.033334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_9_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_9_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_9_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_9_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_10_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_10_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_10_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_10_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.533334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_11_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_11_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.066667</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_11_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_11_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_12_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_12_outside.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_12_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_12_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.033334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.700000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_13_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_13_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.533334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_13_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_13_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.533334</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_14_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_14_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.533334</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_torsions_14_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_torsions_14_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.566667</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.764706 0.000000 0.000000</inTangent>
+				<outTangent>-1.764706 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.700000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.700000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_1_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_1_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_1_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_1_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714286 0.000000 0.000000</inTangent>
+				<outTangent>-1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_2_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_2_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>1.714286 0.000000 0.000000</inTangent>
+				<outTangent>1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_2_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_2_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>1.714286 0.000000 0.000000</inTangent>
+				<outTangent>1.714286 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_3_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_3_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_3_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_3_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.020301 -0.000000 -0.000000</inTangent>
+				<outTangent>0.020301 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_4_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_4_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714285 0.000000 0.000000</inTangent>
+				<outTangent>-1.714285 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_ved_4_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_ved_4_outside_DS.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.714285 0.000000 0.000000</inTangent>
+				<outTangent>-1.714285 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_1_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_1_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_1_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_1_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_2_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_2_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538462 0.000000 0.000000</inTangent>
+				<outTangent>-1.538462 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_2_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_2_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538462 0.000000 0.000000</inTangent>
+				<outTangent>-1.538462 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_3_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_3_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.666854 0.000000 0.000000</inTangent>
+				<outTangent>3.666854 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_3_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_3_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_4_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_4_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_4_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_4_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_5_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_5_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>4.188739 0.000000 0.000000</inTangent>
+				<outTangent>4.188739 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.600000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.136786 -0.000000 -0.000000</inTangent>
+				<outTangent>0.136786 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_5_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_5_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.752305 0.000000 0.000000</inTangent>
+				<outTangent>3.752305 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.600000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.035691 -0.000000 -0.000000</inTangent>
+				<outTangent>0.035691 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_6_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_6_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.578948 0.000000 0.000000</inTangent>
+				<outTangent>-1.578948 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.600000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.350600 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.350600 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_hydroabsorbers_6_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_hydroabsorbers_6_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.578948 0.000000 0.000000</inTangent>
+				<outTangent>-1.578948 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.600000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.350600 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.350600 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.666667</inTangent>
+				<outTangent>0.666667</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_1_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_1_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_1_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_1_outside_DS.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_2_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_2_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_2_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_2_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>1.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.133333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_3_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_3_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_3_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_3_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_4_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_4_outside_DS.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538462 0.000000 0.000000</inTangent>
+				<outTangent>-1.538462 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_4_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_4_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538462 0.000000 0.000000</inTangent>
+				<outTangent>-1.538462 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.633333</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_5_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_5_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_5_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_5_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_6_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_6_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_6_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_6_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_7_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_7_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_7_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_7_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_8_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_8_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_8_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_8_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_9_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_9_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_9_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_9_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_10_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_10_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>1.538461 0.000000 0.000000</inTangent>
+				<outTangent>1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_10_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_10_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>1.538461 0.000000 0.000000</inTangent>
+				<outTangent>1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_11_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_11_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_11_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_11_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_12_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_12_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_12_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_12_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.633334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.500000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_13_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_13_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_13_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_13_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_14_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_14_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_mounting_cover_14_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_mounting_cover_14_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_1_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_1_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_1_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_1_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_2_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_2_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_2_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_2_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.166667</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_3_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_3_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_3_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_3_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_4_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_4_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_4_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_4_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>2.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_5_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_5_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_5_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_5_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_6_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_6_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538462 0.000000 0.000000</inTangent>
+				<outTangent>-1.538462 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_6_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_6_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.200000</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538462 0.000000 0.000000</inTangent>
+				<outTangent>-1.538462 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>2.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_7_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_7_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_7_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_7_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_8_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_8_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538460 0.000000 0.000000</inTangent>
+				<outTangent>-1.538460 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_8_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_8_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>3.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538460 0.000000 0.000000</inTangent>
+				<outTangent>-1.538460 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_9_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_9_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.800000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545454</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545454</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_9_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_9_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.800000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545454</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545454</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_10_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_10_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.800000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545454</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545454</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_10_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_10_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>4.500000</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.800000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>3.666667</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545454</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.500000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545454</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_11_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_11_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.166667</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_11_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_11_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.166667</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_12_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_12_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.166667</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_12_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_12_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.166667</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538461 0.000000 0.000000</inTangent>
+				<outTangent>-1.538461 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.466667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>4.333333</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_13_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_13_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_13_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_13_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>-2.000000 0.000000 0.000000</value>
+				<inTangent>3.843284 0.000000 0.000000</inTangent>
+				<outTangent>3.843284 0.000000 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_14_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_14_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538460 0.000000 0.000000</inTangent>
+				<outTangent>-1.538460 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_14_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_14_outside_DS.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>5.833333</startTime>
+				<value>2.000000 0.000000 0.000000</value>
+				<inTangent>-1.538460 0.000000 0.000000</inTangent>
+				<outTangent>-1.538460 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.133334</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.011285 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.011285 -0.000000 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.500000</inTangent>
+				<outTangent>0.545455</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>6.833333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.545455</inTangent>
+				<outTangent>0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Stage_21</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>8.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.821118 -3.763554</value>
+				<inTangent>0.000000 0.000000 0.637487</inTangent>
+				<outTangent>0.000000 0.000000 0.637487</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>7.733334</startTime>
+				<value>0.000000 0.821118 1.166349</value>
+				<inTangent>-0.000000 -0.000000 0.637487</inTangent>
+				<outTangent>-0.000000 -0.000000 0.637487</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>ay_ep_06_seq_stage_21</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>7.766667</duration>
+				<sequenceSound>ay_ep_06_seq_stage_21</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>tank</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_tank.model</resource>
+		<castsShadow>false</castsShadow>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_15_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_15_outside.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_15_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_15_outside_DS.model</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_16_outside</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_16_outside.model</resource>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>stg_21_balansir_16_outside_DS</name>
+		<type>model</type>
+		<resource>content/Hangars/h00_armory_yard/environment/Constructor/Pl209_ULAN/normal/lod0/stg_21_balansir_16_outside_DS.model</resource>
+		<track>
+			<name>material property float</name>
+			<type>float</type>
+			<identifier>s_nd0</identifier>
+			<property>spawnProgeression</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.566667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.638298</inTangent>
+				<outTangent>0.638298</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

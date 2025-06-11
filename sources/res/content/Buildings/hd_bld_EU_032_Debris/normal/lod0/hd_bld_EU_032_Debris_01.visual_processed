@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<collisionFlags>16</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
 					<property>
@@ -57,22 +57,13 @@
 				</material>
 				<groupOrigin>-0.247096 1.875706 1.978064</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
-				</material>
-				<groupOrigin>-0.158812 2.035285 2.120798</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-10.031995 -1.320522 -13.763979</min>
-		<max>9.537804 5.089650 17.722214</max>
+		<max>9.537804 5.071935 17.720106</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>98776</geometrySize>
-	<minUVDensity>0.000700</minUVDensity>
+	<geometrySize>94934</geometrySize>
+	<minUVDensity>0.001475</minUVDensity>
 </root>

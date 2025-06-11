@@ -196,8 +196,6 @@ class ARENAS(object):
     C_503_KALININGRAD_DESCRIPTION = '#arenas:503_kaliningrad/description'
     H08_MT_HANGAR_NAME = '#arenas:h08_mt_hangar/name'
     H08_MT_HANGAR_DESCRIPTION = '#arenas:h08_mt_hangar/description'
-    H01_VICTORY_DAY_2025_NAME = '#arenas:h01_victory_day_2025/name'
-    H01_VICTORY_DAY_2025_DESCRIPTION = '#arenas:h01_victory_day_2025/description'
     ALL_ENUM = (
      TYPE_CTF_NAME,
      TYPE_CTF_DESCRIPTION,
@@ -393,9 +391,7 @@ class ARENAS(object):
      C_503_KALININGRAD_NAME,
      C_503_KALININGRAD_DESCRIPTION,
      H08_MT_HANGAR_NAME,
-     H08_MT_HANGAR_DESCRIPTION,
-     H01_VICTORY_DAY_2025_NAME,
-     H01_VICTORY_DAY_2025_DESCRIPTION)
+     H08_MT_HANGAR_DESCRIPTION)
 
     @classmethod
     def all(cls, key0):

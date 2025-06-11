@@ -19,9 +19,27 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>s_wall_1</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-1.360482 2.095625 2.823333</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>144</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-0.923381 5.959655 3.208709</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
 					<identifier>s_nd8</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						doubleSided
@@ -95,7 +113,7 @@
 				<groupOrigin>-0.945468 5.847559 2.667930</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
+				3
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -173,11 +191,11 @@
 				<groupOrigin>-0.930000 2.678391 1.109538</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				4
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						doubleSided
@@ -215,11 +233,11 @@
 				<groupOrigin>-0.490661 6.106186 1.864188</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				5
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile1Tint
@@ -293,11 +311,11 @@
 				<groupOrigin>-0.459929 6.068559 0.979520</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				6
 				<material>
 					<identifier>s_nd7</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile1Tint
@@ -371,11 +389,11 @@
 				<groupOrigin>-0.805000 7.346188 -0.372324</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				5
+				7
 				<material>
 					<identifier>s_nd6</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile2Tint
@@ -457,11 +475,11 @@
 				<groupOrigin>-0.913329 1.219410 -0.883180</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				6
+				8
 				<material>
 					<identifier>s_nd5</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<property>
 						g_tile1Tint
@@ -539,11 +557,11 @@
 				<groupOrigin>-0.930000 8.920271 -0.631763</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				7
+				9
 				<material>
 					<identifier>s_nd4</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						g_dirtColor
@@ -608,24 +626,6 @@
 				</material>
 				<groupOrigin>-0.819419 3.044554 -0.642470</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				8
-				<material>
-					<identifier>s_wall_1</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>0</materialKind>
-				</material>
-				<groupOrigin>-1.360482 2.095625 2.823333</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				9
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>144</collisionFlags>
-					<materialKind>0</materialKind>
-				</material>
-				<groupOrigin>-0.923381 5.959655 3.208709</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -633,6 +633,6 @@
 		<max>12.694769 12.758338 10.157502</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>146082</geometrySize>
+	<geometrySize>145842</geometrySize>
 	<minUVDensity>0.000377</minUVDensity>
 </root>

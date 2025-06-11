@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.736104 -0.725160 -3.866531</min>
+		<max>1.737919 0.745507 3.529016</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/italy/It36_Gasta/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/italy/It36_Gasta/normal/lod0/Hull</nodefullVisual>
+</root>

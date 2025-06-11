@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/normal/lod2/Saw</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.165765 -0.213234 2.659860</min>
+		<max>1.164466 0.271035 4.733908</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It15_Rinoceronte/_skins/It15_Rinoceronte_3dst_Jungle/normal/lod1/Saw</nodefullVisual>
+	<tank>true</tank>
+</root>

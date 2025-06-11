@@ -134,8 +134,8 @@
 	</havok>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
-	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
-	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<isSHGridQualityOverridden>true</isSHGridQualityOverridden>
+	<overrideSHGridQuality>1</overrideSHGridQuality>
 	<spaceVisibilityFlags>
 		<type>
 			<tag>ctf</tag>

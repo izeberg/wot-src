@@ -125,7 +125,7 @@ _UserPrefs = namedtuple('_UserPrefs', ('version', 'datetimeIdx', 'enableOlFilter
                                        'receiveInvitesInBattle'))
 
 def _makeDefUserPrefs():
-    return _UserPrefs(version=1, datetimeIdx=2, enableOlFilter=True, enableSpamFilter=False, invitesFromFriendsOnly=False, storeReceiverInBattle=False, disableBattleChat=False, chatContactsListOnly=False, receiveFriendshipRequest=True, receiveInvitesInBattle=True)
+    return _UserPrefs(version=1, datetimeIdx=2, enableOlFilter=True, enableSpamFilter=True, invitesFromFriendsOnly=False, storeReceiverInBattle=False, disableBattleChat=False, chatContactsListOnly=False, receiveFriendshipRequest=True, receiveInvitesInBattle=True)
 
 
 class MessengerSettings(object):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB100_Manticore/_skins/GB100_Manticore_3Dst_Snow/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB100_Manticore/_skins/GB100_Manticore_3Dst_Snow/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.249017 -0.399583 -2.106535</min>
+		<max>1.246445 0.438383 2.754567</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -2,6 +2,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
 {
    import flash.display.MovieClip;
    import flash.geom.Rectangle;
+   import net.wg.data.constants.Values;
    import net.wg.infrastructure.base.SimpleContainer;
    
    public class AutoloaderIndicator extends SimpleContainer
@@ -39,9 +40,9 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          super.draw();
          if(isInvalid(TOTAL_AMMO))
          {
-            this.cassette.totalAmmo = this._totalAmmo;
-            if(this._totalAmmo > -1)
+            if(this._totalAmmo > Values.DEFAULT_INT)
             {
+               this.cassette.totalAmmo = this._totalAmmo;
                _loc1_ = this._totalAmmo - 1;
                if(_loc1_ > SHELL_RELOAD_INDICATOR_OFFSETS_X.length - 1)
                {
@@ -79,7 +80,11 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       public function autoloaderShowShot() : void
       {
-         this.fireMc.gotoAndPlay(SHOOT_STATE);
+         if(this.fireMc)
+         {
+            this.fireMc.gotoAndPlay(SHOOT_STATE);
+         }
+         this.cassette.resetLastLoadedShell();
       }
       
       public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
