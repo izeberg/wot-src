@@ -78,8 +78,8 @@
 		<node>J_lamp_2_BlendBone</node>
 		<node>J_lamp_3_BlendBone</node>
 		<geometry>
-			<vertices>hull_equipment_lamp_anim_ShapeDeformed.vertices</vertices>
-			<primitive>hull_equipment_lamp_anim_ShapeDeformed.indices</primitive>
+			<vertices>hull_equipment_lamp_anim_Shape.vertices</vertices>
+			<primitive>hull_equipment_lamp_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -113,6 +113,6 @@
 		<min>-0.630407 0.653414 -2.888631</min>
 		<max>0.828722 2.212841 -1.564890</max>
 	</boundingBox>
-	<geometrySize>93256</geometrySize>
+	<geometrySize>94976</geometrySize>
 	<minUVDensity>0.005824</minUVDensity>
 </root>
