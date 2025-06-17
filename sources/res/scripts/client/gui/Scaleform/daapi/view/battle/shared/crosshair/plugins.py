@@ -541,12 +541,16 @@ class AmmoPlugin(CrosshairPlugin):
     def __setupGuiSettings(self, gunSettings):
         guiSettings = _createAmmoSettings(gunSettings)
         self.__guiSettings = guiSettings
-        self.__clipType = getClipType(gunSettings)
+        self.__changeClipType(gunSettings)
         clipCapacity = guiSettings.getClipCapacity()
         qtyGuns = gunSettings.getQtyGuns()
         if qtyGuns > 1:
             clipCapacity = max(0, clipCapacity - qtyGuns)
         self._parentObj.as_setClipParamsS(clipCapacity, guiSettings.getBurstSize(), self.__clipType)
+
+    def __changeClipType(self, gunSettings):
+        self.__clipType = getClipType(gunSettings)
+        self.__dualGunIsApplied = False
 
     def __onGunReloadCleared(self, state):
         self.__setReloadingState(state)
