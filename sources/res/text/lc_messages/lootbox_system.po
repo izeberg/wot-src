@@ -244,11 +244,10 @@ msgstr ""
 
 msgid "infoPage/footer/description/guaranteed"
 msgstr ""
-"Каждая %(guaranteed0)s-я коробка гарантированно содержит премиум машину "
-"VIII–IX уровня. Если вы откроете коробки, не получив такую технику в одной "
-"из них, то премиум машина VIII–IX уровня из списка наград, которой у вас ещё"
-" нет, выпадет из %(guaranteed0)s-й коробки. После выпадения техники счётчик "
-"сбрасывается."
+"Каждая %(guaranteed0)s-я коробка гарантированно содержит машину VIII–X "
+"уровня. Если при их открытии вам не выпадет такая техника, то в "
+"%(guaranteed0)s&zwnbsp;-й коробке вы обязательно найдёте машину VIII–X "
+"уровня, которой у вас ещё нет. После выпадения техники счётчик сбрасывается."
 
 msgid "infoPage/footer/title/autoOpen"
 msgstr "Автооткрытие"
@@ -389,16 +388,16 @@ msgid "singleRewardView/header/title/"
 msgstr "ПОЛУЧЕНЫ НАГРАДЫ"
 
 msgid "singleRewardView/tooltip/count/first"
-msgstr "%(count)-й"
+msgstr "%(count)"
 
 msgid "singleRewardView/tooltip/count/other"
-msgstr "%(count)-й"
+msgstr "%(count)"
 
 msgid "singleRewardView/tooltip/count/second"
-msgstr "%(count)-й"
+msgstr "%(count)"
 
 msgid "singleRewardView/tooltip/count/third"
-msgstr "%(count)-й"
+msgstr "%(count)"
 
 msgid "singleRewardView/tooltip/description/"
 msgstr ""

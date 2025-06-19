@@ -419,9 +419,6 @@ msgstr "Боевой пропуск"
 msgid "chapter/fullName/10021"
 msgstr "Песнь о зубре"
 
-msgid "chapter/fullName/1114"
-msgstr "Песнь о зубре"
-
 msgid "chapter/fullName/171"
 msgstr "Долг зовёт"
 
@@ -431,10 +428,16 @@ msgstr "Залповый огонь"
 msgid "chapter/fullName/173"
 msgstr "Перфекционист"
 
-msgid "chapter/fullNameUppercased/10021"
-msgstr "ПЕСНЬ О ЗУБРЕ"
+msgid "chapter/fullName/174"
+msgstr "Специальная глава 1"
 
-msgid "chapter/fullNameUppercased/1114"
+msgid "chapter/fullName/175"
+msgstr "Специальная глава 2"
+
+msgid "chapter/fullName/176"
+msgstr "Песнь о зубре"
+
+msgid "chapter/fullNameUppercased/10021"
 msgstr "ПЕСНЬ О ЗУБРЕ"
 
 msgid "chapter/fullNameUppercased/171"
@@ -445,6 +448,15 @@ msgstr "ЗАЛПОВЫЙ ОГОНЬ"
 
 msgid "chapter/fullNameUppercased/173"
 msgstr "ПЕРФЕКЦИОНИСТ"
+
+msgid "chapter/fullNameUppercased/174"
+msgstr "СПЕЦИАЛЬНАЯ ГЛАВА 1"
+
+msgid "chapter/fullNameUppercased/175"
+msgstr "СПЕЦИАЛЬНАЯ ГЛАВА 2"
+
+msgid "chapter/fullNameUppercased/176"
+msgstr "ПЕСНЬ О ЗУБРЕ"
 
 msgid "chapter/title"
 msgstr "ГЛАВА «%(chapter)s»"
@@ -541,7 +553,7 @@ msgid "chapterChoice/vehicleInHangar/tooltip/text"
 msgstr "В Ангаре"
 
 msgid "chosenBonuses/bonus/battle_booster_gift"
-msgstr "Предбоевые инструкции к оборудованию на выбор"
+msgstr "Инструкции на выбор"
 
 msgid "chosenBonuses/bonus/blueprint_gift"
 msgstr "Национальные фрагменты чертежей на выбор"
@@ -848,10 +860,22 @@ msgstr ""
 "Становится доступна после завершения всех глав. Глав завершено: "
 "%(completedChapters)/%(chaptersAmount)"
 
-msgid "postProgressionView/footer/extraChapter/description/text"
-msgstr "В ней вас ждут особые награды и элементы внешнего вида."
+msgid "postProgressionView/footer/extraChapter/description/174"
+msgstr "Вас ждут эксклюзивные награды и уникальные элементы внешнего вида."
 
-msgid "postProgressionView/footer/extraChapter/title/text"
+msgid "postProgressionView/footer/extraChapter/description/175"
+msgstr "Вас ждут эксклюзивные награды и уникальные элементы внешнего вида."
+
+msgid "postProgressionView/footer/extraChapter/description/176"
+msgstr "Вас ждут эксклюзивные награды и уникальные элементы внешнего вида."
+
+msgid "postProgressionView/footer/extraChapter/title/174"
+msgstr "Доступна специальная глава 1!"
+
+msgid "postProgressionView/footer/extraChapter/title/175"
+msgstr "Доступна специальная глава 2!"
+
+msgid "postProgressionView/footer/extraChapter/title/176"
 msgstr "Доступна специальная глава!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
@@ -1228,7 +1252,7 @@ msgid "season/fullNameUppercased/17"
 msgstr "ПОЛНАЯ ГОТОВНОСТЬ"
 
 msgid "selectBonus/battle_booster_gift"
-msgstr "Предбоевые инструкции к оборудованию на выбор"
+msgstr "Инструкции на выбор"
 
 msgid "selectBonus/blueprint_gift"
 msgstr "Фрагменты чертежей на выбор"

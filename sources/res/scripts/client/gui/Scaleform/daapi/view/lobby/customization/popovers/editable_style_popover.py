@@ -4,6 +4,7 @@ from gui import makeHtmlString
 from gui.Scaleform.daapi.view.lobby.customization.popovers import C11nPopoverItemData, orderKey
 from gui.Scaleform.daapi.view.lobby.customization.shared import ITEM_TYPE_TO_SLOT_TYPE, fitOutfit, getCurrentVehicleAvailableRegionsMap, isStyleEditedForCurrentVehicle
 from gui.Scaleform.daapi.view.meta.CustomizationEditedKitPopoverMeta import CustomizationEditedKitPopoverMeta
+from gui.customization.constants import CustomizationModes
 from gui.customization.shared import SEASONS_ORDER, SEASON_TYPE_TO_NAME, C11nId, EDITABLE_STYLE_IRREMOVABLE_TYPES, C11N_ITEM_TYPE_MAP
 from gui.impl import backport
 from gui.impl.gen import R
@@ -43,11 +44,13 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
         self.__ctx.mode.clearStyle()
 
     def removeAll(self):
-        if self.__ctx.has3DAttachments():
-            self.__ctx.mode.removeItemsFromSeason(SeasonType.ALL)
+        if self.__ctx.hasCommonItems():
+            self.__ctx.mode.removeItemsFromSeason(SeasonType.ALL, refresh=False)
         if self.__style is not None:
             self.__ctx.returnToStyleMode()
-            self.__ctx.mode.removeStyle(self.__style.intCD)
+            self.__ctx.mode.removeStyle(self.__style.intCD, refresh=False)
+        self.__ctx.refreshOutfit()
+        self.__ctx.events.onItemsRemoved()
         return
 
     def _populate(self):
@@ -73,7 +76,12 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
         return
 
     def __setHeader(self):
-        if self.__ctx.has3DAttachments():
+        if self.__ctx.isInStyleMode(CustomizationModes.STYLE_3D):
+            if self.__style is None:
+                header = backport.text(R.strings.vehicle_customization.customization.kitPopover.title.summary())
+            else:
+                header = backport.text(R.strings.tooltips.vehiclePreview.boxTooltip.style.header(), value=self.__style.userName)
+        elif self.__ctx.hasCommonItems():
             header = backport.text(R.strings.vehicle_customization.customization.kitPopover.title.summary())
         elif self.__style is None:
             header = backport.text(R.strings.vehicle_customization.customization.kitPopover.title.items())
@@ -84,7 +92,7 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
         return
 
     def __setClearMessage(self):
-        if self.__style is None and not self.__ctx.has3DAttachments():
+        if self.__style is None and not self.__ctx.hasCommonItems():
             clearMessage = R.strings.vehicle_customization.customization.itemsPopover.message.clear
             clearMessage = text_styles.main(backport.text(clearMessage()))
         else:
@@ -97,12 +105,17 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
         self.__style = self.__service.getItemByID(GUI_ITEM_TYPE.STYLE, outfit.id) if outfit.id else None
         if self.__style is not None and not self.__style.isEditable:
             self.destroy()
-        itemsList = self.__buildList()
-        self.as_setItemsS({'items': itemsList})
-        self.__setHeader()
-        self.__setClearMessage()
-        self.__updateClearStyleButton()
-        return
+            return
+        else:
+            if not self.__ctx.hasCommonItems() and self.__ctx.isInStyleMode(CustomizationModes.STYLE_3D):
+                self.destroy()
+                return
+            itemsList = self.__buildList()
+            self.as_setItemsS({'items': itemsList})
+            self.__setHeader()
+            self.__setClearMessage()
+            self.__updateClearStyleButton()
+            return
 
     def __updateClearStyleButton(self):
         if self.__style is not None:
@@ -115,7 +128,7 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
 
     def __buildList(self):
         data = []
-        if self.__style is None and not self.__ctx.has3DAttachments():
+        if self.__style is None and not self.__ctx.hasCommonItems():
             return data
         else:
             vehicleDescriptor = g_currentVehicle.item.descriptor
@@ -130,6 +143,8 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
             for season in POPOVER_SEASONS_ORDER:
                 seasonGroupVO = self.__getSeasonGroupVO(season)
                 itemsData = self.__getSeasonItemsData(season, seasonPurchaseItems[season], availableRegionsMap, vehicleDescriptor)
+                if season == SeasonType.ALL and self.__style and self.__style.is3D:
+                    itemsData.insert(0, self.__makeItemDataVO(C11nPopoverItemData(item=self.__style, season=season, isBase=True, isRemoved=False, isFromInventory=True)))
                 if itemsData:
                     data.append(seasonGroupVO)
                     data.extend(itemsData)
@@ -149,7 +164,7 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
                 isBase = not pItem.isEdited
                 if item.itemTypeID == GUI_ITEM_TYPE.STYLE:
                     isRemovable = False
-                elif item.itemTypeID == GUI_ITEM_TYPE.ATTACHMENT:
+                elif item.itemTypeID in GUI_ITEM_TYPE.COMMON_C11NS:
                     isRemovable = True
                 elif sType in self.__style.changeableSlotTypes:
                     if isBase:
@@ -199,7 +214,7 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
                 showStyle = True
                 key = (nationalEmblemItem.intCD, True)
                 itemData.pop(key)
-            if self.__style and showStyle and season != SeasonType.ALL:
+            if self.__style and not self.__style.is3D and showStyle and season != SeasonType.ALL:
                 key = (
                  self.__style.intCD, True)
                 itemData[key] = C11nPopoverItemData(item=self.__style, season=season, isBase=True, isRemoved=False, isFromInventory=True)
@@ -262,7 +277,7 @@ class EditableStylePopover(CustomizationEditedKitPopoverMeta):
 
     def __getBaseOutfit(self, season, vehicleCD=''):
         if season == SeasonType.ALL:
-            return self.__ctx.getCommonOutfit()
+            return self.__ctx.commonOriginalOutfit
         else:
             if self.__style:
                 return self.__style.getOutfit(season, vehicleCD=vehicleCD)

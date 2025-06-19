@@ -102,6 +102,13 @@
 				<!--BW_String-->
 			</minScale>
 		</DRRAutoscaler>
+		<DRRAutodetect>
+			<DRRScale>
+				0.80
+				<!--BW_String-->
+				<GPUScore>300</GPUScore>
+			</DRRScale>
+		</DRRAutodetect>
 		<globalVBSize>12582912</globalVBSize>
 		<globalIBSize>131072</globalIBSize>
 		<streaming>
@@ -396,6 +403,18 @@
 			1.2
 			<!--BW_String-->
 		</PS_PERFORMANCE_LOD_MULT>
+		<PS_PERFORMANCE_SIMPLIFIED_SPEED_MULT>
+			1.2
+			<!--BW_String-->
+		</PS_PERFORMANCE_SIMPLIFIED_SPEED_MULT>
+		<PS_PERFORMANCE_SIMPLIFIED_RATE_MULT>
+			0.3
+			<!--BW_String-->
+		</PS_PERFORMANCE_SIMPLIFIED_RATE_MULT>
+		<PS_PERFORMANCE_SIMPLIFIED_MESH_RATE_MULT>
+			0.3
+			<!--BW_String-->
+		</PS_PERFORMANCE_SIMPLIFIED_MESH_RATE_MULT>
 	</ParticleSystem>
 	<cat_config>
 		<isOnline>true</isOnline>
@@ -740,6 +759,12 @@
 				</bank>
 				<bank>
 					<name>fast_guns.pck</name>
+				</bank>
+				<bank>
+					<name>ev_fep_fast_gun.bnk</name>
+				</bank>
+				<bank>
+					<name>ev_fep_fast_gun.pck</name>
 				</bank>
 				<bank>
 					<name>ambient.bnk</name>

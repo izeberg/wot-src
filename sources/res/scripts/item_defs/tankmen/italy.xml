@@ -16128,5 +16128,25 @@
 				<_8281>tankmen_bp17_4.png</_8281>
 			</icons>
 		</tankmen_bp17_4>
+		<frontman>
+			<groupID>299</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_8285>#italy_crew:names/frontman_n</_8285>
+			</firstNames>
+			<lastNames>
+				<_8285>#italy_crew:names/frontman</_8285>
+			</lastNames>
+			<icons>
+				<_8285>frontman.png</_8285>
+			</icons>
+		</frontman>
 	</premiumGroups>
 </root>

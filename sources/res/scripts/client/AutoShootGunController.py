@@ -16,8 +16,7 @@ class AutoShootGunController(VehicleMechanicGunPrefabComponent):
     def __init__(self):
         super(AutoShootGunController, self).__init__()
         self.__gunsGroupSize = 0
-        self.__groupRatePerSecond = 0.0
-        self.__shotRatePerSecond = 0.0
+        self.__defaultShotRatePerSecond = 0.0
         self.__shootingEvents = AutoShootingEvents(self)
         AutoShootCustomIntegrations(self.entity, self).subscribe(self.__shootingEvents)
         self._initMechanic()
@@ -35,11 +34,18 @@ class AutoShootGunController(VehicleMechanicGunPrefabComponent):
         currDispersionFactor = stateStatus.dispersionFactor + dt * stateStatus.shotDispersionPerSec
         return min(currDispersionFactor, stateStatus.maxShotDispersion)
 
+    def getDefaultShotRatePerSecond(self):
+        return self.__defaultShotRatePerSecond
+
     def getGroupShotInterval(self):
-        return self.defaultShotRate
+        spinningRateFactor = self.__getSpinningRateFactor()
+        temperatureFactor = self.__getTemperatureFactor()
+        temperatureIntervalFactor = 1.0 / temperatureFactor if temperatureFactor > 0.0 else 1.0
+        spinningIntervalFactor = 1.0 / spinningRateFactor if spinningRateFactor > 0.0 else 1.0
+        return self.defaultShotRate * spinningIntervalFactor * temperatureIntervalFactor
 
     def getShotRatePerSecond(self):
-        return self.__shotRatePerSecond
+        return self.__defaultShotRatePerSecond * self.__getSpinningRateFactor() * self.__getTemperatureFactor()
 
     def set_defaultShotRate(self, _=None):
         self.__updateShootingRates()
@@ -72,8 +78,21 @@ class AutoShootGunController(VehicleMechanicGunPrefabComponent):
     def _onMechanicAppearanceUpdate(self):
         self.__shootingEvents.updateAutoShootingStatus(self.stateStatus)
 
+    def __getSpinningRateFactor(self):
+        spinningCtrl = self.entity.dynamicComponents.get('spinGunController', None)
+        if spinningCtrl is not None:
+            return spinningCtrl.getSpinningValue()
+        else:
+            return 1.0
+
+    def __getTemperatureFactor(self):
+        temperatureCtrl = self.entity.dynamicComponents.get('temperatureGunController', None)
+        if temperatureCtrl is not None:
+            return temperatureCtrl.getAutoShootRateFactor()
+        else:
+            return 1.0
+
     def __updateShootingRates(self):
         defaultShotRate = self.defaultShotRate
-        self.__groupRatePerSecond = 1.0 / defaultShotRate if defaultShotRate else 0.0
-        self.__shotRatePerSecond = self.__groupRatePerSecond * self.__gunsGroupSize
+        self.__defaultShotRatePerSecond = self.__gunsGroupSize / defaultShotRate if defaultShotRate else 0.0
         self.__shootingEvents.onShotRateUpdate(self.getShotRatePerSecond())

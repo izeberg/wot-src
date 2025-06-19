@@ -1,5 +1,5 @@
 import CGF
-from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerReplicableComponent, registerComponent
+from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerComponent
 _DEFAULT_HEALTH = 300
 
 class DEATH_REASON(object):
@@ -7,14 +7,12 @@ class DEATH_REASON(object):
     DESTROYED = 1
 
 
-@registerReplicableComponent
-class DeathComponent(object):
+class DeathComponentDescriptor(object):
     category = 'Common'
     editorTitle = 'Death Component'
 
 
-@registerReplicableComponent
-class HealthComponent(object):
+class HealthComponentDescriptor(object):
     category = 'Common'
     editorTitle = 'Health Component'
     maxHealth = ComponentProperty(type=CGFMetaTypes.INT, editorName='MaxHealth', value=_DEFAULT_HEALTH)

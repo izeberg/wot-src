@@ -1267,6 +1267,12 @@ msgstr "Добавлена декаль «%s»"
 msgid "customization/added/projectionDecalValue"
 msgstr "Добавлена декаль «%s» (x%s)"
 
+msgid "customization/added/statTracker"
+msgstr "Добавлен счётчик «%s»"
+
+msgid "customization/added/statTrackerValue"
+msgstr "Добавлены счётчики «%s»: (x%s)"
+
 msgid "customization/added/style"
 msgstr "Добавлен стиль «%s»"
 
@@ -1370,6 +1376,12 @@ msgstr "Списана декаль «%s»"
 
 msgid "customization/removed/projectionDecalValue"
 msgstr "Списана декаль «%s» (x%s)"
+
+msgid "customization/removed/statTracker"
+msgstr "Списан счётчик «%s»"
+
+msgid "customization/removed/statTrackerValue"
+msgstr "Списаны счётчики «%s»: (x%s)"
 
 msgid "customization/removed/style"
 msgstr "Списан стиль «%s»"

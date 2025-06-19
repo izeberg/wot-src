@@ -162,9 +162,6 @@ msgstr ""
 "Впоследствии схема бронирования с рациональными углами наклона бронелистов "
 "была применена на опытном танке А-20, а затем на Т-34."
 
-msgid "B_2"
-msgstr "Б-2"
-
 msgid "Bedford_Twin-Six"
 msgstr "Bedford Twin-Six"
 
@@ -689,6 +686,9 @@ msgstr "Объект 430"
 
 msgid "Chassis_R96_Object_430_2"
 msgstr "Объект 430 улучшенная"
+
+msgid "Chassis_R97_Object_140_FEP23"
+msgstr "Объект 143"
 
 msgid "Chassis_ST_I"
 msgstr "СТ-I"
@@ -1410,6 +1410,21 @@ msgstr "Об. 416"
 msgid "Object_140"
 msgstr "Объект 140"
 
+msgid "Object_140_FEP"
+msgstr "Объект 143 Прут"
+
+msgid "Object_140_FEP_descr"
+msgstr ""
+"Разработка эскизного проекта боевой машины поддержки танков на шасси "
+"Объекта 140 велась в инициативном порядке. По замыслу нижнетагильских "
+"инженеров счетверённая установка пушек «Амур» должна была обеспечить "
+"достаточную огневую мощь для защиты танков от пехоты и лёгкой бронетехники, "
+"оснащённой противотанковыми средствами. Проект не нашёл поддержки в ГКОТ, "
+"работы по нему были прекращены."
+
+msgid "Object_140_FEP_short"
+msgstr "Прут"
+
 msgid "Object_140_descr"
 msgstr ""
 "Опытный вариант среднего танка. Разрабатывался в 1953–1958 гг. в Нижнем "
@@ -1695,6 +1710,9 @@ msgstr "Р-113"
 
 msgid "R113M_DR"
 msgstr "Р-113Д"
+
+msgid "R113M_FEP"
+msgstr "Р-113М"
 
 msgid "R113T"
 msgstr "Р113Т"
@@ -4071,6 +4089,9 @@ msgstr "Отличный разовый урон, хорошая подвижн�
 msgid "RTY_RCEHb"
 msgstr "РТУ («Ясень»)"
 
+msgid "R_123B"
+msgstr "Р-123Б"
+
 msgid "S-51"
 msgstr "С-51"
 
@@ -4673,6 +4694,9 @@ msgstr ""
 msgid "TD-12"
 msgstr "ТД-12"
 
+msgid "TD-12_FEP"
+msgstr "ТД-12А"
+
 msgid "TD-30"
 msgstr "М-50Д"
 
@@ -5106,6 +5130,9 @@ msgstr "Объект 263"
 msgid "Turret_1_R96_Object_430"
 msgstr "Объект 430"
 
+msgid "Turret_1_R97_Object_140_FEP23"
+msgstr "Объект 143M"
+
 msgid "Turret_1_ST_I"
 msgstr "Объект 701-1"
 
@@ -5507,6 +5534,9 @@ msgstr "В-12-6В1"
 
 msgid "V_12_7"
 msgstr "В-12-7"
+
+msgid "V_2A"
+msgstr "В-2А"
 
 msgid "V_2IS_ISU"
 msgstr "В-2ИС (ИСУ)"
@@ -6239,9 +6269,6 @@ msgstr "122-мм М62-Т3СТ"
 msgid "_122mm_M62-T2_dualgun"
 msgstr "122 мм М62-CД"
 
-msgid "_122mm_M62VA"
-msgstr "122-мм М-62ВA"
-
 msgid "_122mm_M62_T2"
 msgstr "122 мм М62-T2У"
 
@@ -6250,6 +6277,9 @@ msgstr "122 мм М62-T2А"
 
 msgid "_122mm_M62_TS2"
 msgstr "122 мм М62-TС2"
+
+msgid "_122mm_M_62VA"
+msgstr "122-мм М-62ВA"
 
 msgid "_122mm_OF-462"
 msgstr "ОФ-462"
@@ -6770,8 +6800,17 @@ msgstr "УБР-20"
 msgid "_20mm_UBR_20_T_60"
 msgstr "УБР-20 (Т-60)"
 
+msgid "_23mm_AZP23x4_FEP"
+msgstr "4х23 мм АЗП-23"
+
 msgid "_23mm_BC-23"
 msgstr "БЦ-23"
+
+msgid "_23mm_BZK_FEP"
+msgstr "23 мм БЗК"
+
+msgid "_23mm_BZT_FEP"
+msgstr "23 мм БЗТ"
 
 msgid "_23mm_PT-23TB"
 msgstr "23 мм ПТ-23ТБ"

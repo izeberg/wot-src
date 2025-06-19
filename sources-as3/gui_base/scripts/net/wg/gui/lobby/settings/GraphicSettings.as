@@ -215,13 +215,13 @@ package net.wg.gui.lobby.settings
          _loc7_ = SettingsControlProp(data[_loc9_]);
          _loc6_ = this[_loc9_ + _loc7_.type];
          _loc6_.removeEventListener(ListEvent.INDEX_CHANGE,this.onGraphicsQualityIndexChangeHandler);
-         _loc9_ = SettingsConfigHelper.RENDER_PIPELINE;
+         _loc9_ = SettingsConfigHelper.RENDER_PIPELINE_QUALITY;
          _loc7_ = SettingsControlProp(data[_loc9_]);
          var _loc2_:RadioButtonBar = this[_loc9_ + _loc7_.type];
          _loc2_.removeEventListener(IndexEvent.INDEX_CHANGE,this.onGraphicsQualityRenderPipelineIndexChangeHandler);
          for(_loc9_ in this._graphicsQualityDataProv)
          {
-            if(_loc9_ == SettingsConfigHelper.RENDER_PIPELINE)
+            if(_loc9_ == SettingsConfigHelper.RENDER_PIPELINE_QUALITY)
             {
                continue;
             }
@@ -436,13 +436,16 @@ package net.wg.gui.lobby.settings
                {
                   for(_loc5_ in _loc8_.settings)
                   {
-                     _loc9_ = _loc8_.settings[_loc5_];
-                     _loc3_ = SettingsControlProp(this._graphicsQualityDataProv[_loc5_]);
-                     _loc10_ = Number(_loc3_.changedVal);
-                     if(_loc9_ != _loc10_)
+                     if(this._qualityOrderIdList.indexOf(_loc5_) >= 0)
                      {
-                        _loc7_ = false;
-                        break;
+                        _loc9_ = _loc8_.settings[_loc5_];
+                        _loc3_ = SettingsControlProp(this._graphicsQualityDataProv[_loc5_]);
+                        _loc10_ = Number(_loc3_.changedVal);
+                        if(_loc9_ != _loc10_)
+                        {
+                           _loc7_ = false;
+                           break;
+                        }
                      }
                   }
                   if(_loc7_)
@@ -695,24 +698,20 @@ package net.wg.gui.lobby.settings
       
       private function updateColorSettingsEnabled() : void
       {
-         var _loc1_:Boolean = false;
+         var _loc1_:Boolean = true;
          var _loc2_:Boolean = currentScreenModeId == SettingsConfigHelper.RESOLUTION;
          if(_loc2_)
          {
             _loc1_ = this.gammaSettingsEnabled();
          }
-         else
-         {
-            _loc1_ = this._isAdvanced;
-         }
          gammaSettingButton.enabled = _loc1_;
-         colorFilterButton.enabled = this._isAdvanced;
+         colorFilterButton.enabled = true;
       }
       
       private function gammaSettingsEnabled() : Boolean
       {
          var _loc1_:Object = this._settingsConfigHelper.changesData.getChanges();
-         return SettingsControlProp(data[SettingsConfigHelper.RESOLUTION]).changedVal == SettingsControlProp(data[SettingsConfigHelper.NATIVE_RESOLUTION]).changedVal && !_loc1_.hasOwnProperty(SettingsConfigHelper.RESOLUTION) && !_loc1_.hasOwnProperty(SettingsConfigHelper.RENDER_PIPELINE);
+         return SettingsControlProp(data[SettingsConfigHelper.RESOLUTION]).changedVal == SettingsControlProp(data[SettingsConfigHelper.NATIVE_RESOLUTION]).changedVal && !_loc1_.hasOwnProperty(SettingsConfigHelper.RESOLUTION);
       }
       
       private function setSizeControl(param1:Boolean = true) : void
@@ -958,7 +957,7 @@ package net.wg.gui.lobby.settings
          var _loc2_:SettingsControlProp = null;
          var _loc3_:Boolean = false;
          var _loc4_:ButtonBarEx = null;
-         var _loc1_:String = SettingsConfigHelper.RENDER_PIPELINE;
+         var _loc1_:String = SettingsConfigHelper.RENDER_PIPELINE_QUALITY;
          if(data[_loc1_] && this[_loc1_ + data[_loc1_].type] != undefined)
          {
             _loc2_ = SettingsControlProp(data[_loc1_]);
@@ -1006,7 +1005,7 @@ package net.wg.gui.lobby.settings
          var _loc5_:* = null;
          for(_loc1_ in this._graphicsQualityDataProv)
          {
-            if(_loc1_ == SettingsConfigHelper.RENDER_PIPELINE)
+            if(_loc1_ == SettingsConfigHelper.RENDER_PIPELINE_QUALITY)
             {
                continue;
             }
@@ -1043,7 +1042,7 @@ package net.wg.gui.lobby.settings
          var _loc3_:CheckBox = null;
          for(_loc1_ in this._graphicsQualityDataProv)
          {
-            if(_loc1_ != SettingsConfigHelper.RENDER_PIPELINE)
+            if(_loc1_ != SettingsConfigHelper.RENDER_PIPELINE_QUALITY)
             {
                if(this[_loc1_ + SettingsControlProp(this._graphicsQualityDataProv[_loc1_]).type])
                {
@@ -1199,12 +1198,12 @@ package net.wg.gui.lobby.settings
       
       private function updateSmoothingControl() : void
       {
-         CUSTOM_AA_MODELabel.visible = this._isAdvanced;
-         CUSTOM_AA_MODEValue.visible = this._isAdvanced;
-         CUSTOM_AA_MODEStepSlider.visible = this._isAdvanced;
-         MSAA_QUALITYLabel.visible = !this._isAdvanced;
-         MSAA_QUALITYValue.visible = !this._isAdvanced;
-         MSAA_QUALITYStepSlider.visible = !this._isAdvanced;
+         CUSTOM_AA_MODELabel.visible = true;
+         CUSTOM_AA_MODEValue.visible = true;
+         CUSTOM_AA_MODEStepSlider.visible = true;
+         MSAA_QUALITYLabel.visible = false;
+         MSAA_QUALITYValue.visible = false;
+         MSAA_QUALITYStepSlider.visible = false;
       }
       
       private function updateCurrentPropForGraphicsOrderInPreset(param1:Object) : void
@@ -1213,7 +1212,7 @@ package net.wg.gui.lobby.settings
          var _loc3_:SettingsControlProp = null;
          for(_loc2_ in param1)
          {
-            if(_loc2_ != SettingsConfigHelper.RENDER_PIPELINE)
+            if(_loc2_ != SettingsConfigHelper.RENDER_PIPELINE_QUALITY)
             {
                if(this._qualityOrderIdList.indexOf(_loc2_) >= 0)
                {
@@ -1222,7 +1221,7 @@ package net.wg.gui.lobby.settings
                }
                else
                {
-                  DebugUtils.LOG_WARNING(SET_DATA_ISSUE_MESSAGE + _loc2_);
+                  DebugUtils.LOG_DEBUG(SET_DATA_ISSUE_MESSAGE + _loc2_);
                }
             }
          }
@@ -1430,14 +1429,14 @@ package net.wg.gui.lobby.settings
             return;
          }
          this.updateCurrentPropForGraphicsOrderInPreset(_loc2_.settings);
-         var _loc4_:String = SettingsConfigHelper.RENDER_PIPELINE;
+         var _loc4_:String = SettingsConfigHelper.RENDER_PIPELINE_QUALITY;
          var _loc5_:* = data[_loc4_];
          if(_loc5_ && this[_loc4_ + _loc5_.type] != undefined)
          {
             _loc6_ = SettingsControlProp(_loc5_);
             _loc7_ = this[_loc4_ + _loc6_.type];
             _loc8_ = _loc7_.selectedItem[DATA_STR];
-            _loc9_ = _loc2_.settings[SettingsConfigHelper.RENDER_PIPELINE];
+            _loc9_ = _loc2_.settings[SettingsConfigHelper.RENDER_PIPELINE_QUALITY];
             if(_loc8_ != _loc9_)
             {
                _loc10_ = this.getDPItemIndex(_loc7_.dataProvider,_loc9_);

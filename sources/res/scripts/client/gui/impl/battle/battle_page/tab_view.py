@@ -386,7 +386,9 @@ class TabView(ViewImpl):
     def _invalidateVehicleStats(self, player):
         vehicleId = player.getVehicleId()
         if vehicleId:
-            player.setKills(self._visitor.getArenaStatistics().get(vehicleId, {}).get('frags', 0))
+            stats = self._visitor.getArenaStatistics().get(vehicleId, {})
+            kills = stats.get('frags', 0) - stats.get('tkills', 0)
+            player.setKills(kills)
 
     def _invalidateVehicleTypeInfo(self, player):
         vehicleId = player.getVehicleId()

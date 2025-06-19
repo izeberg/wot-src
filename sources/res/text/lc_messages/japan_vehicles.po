@@ -187,6 +187,9 @@ msgstr "SHB-1"
 msgid "Chassis_J41_Type_68_2"
 msgstr "SHB-1-2"
 
+msgid "Chassis_J42_Chi_Se"
+msgstr "Chi-Se"
+
 msgid "Chassis_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -802,6 +805,34 @@ msgstr ""
 msgid "J41_Type_68_short"
 msgstr "Type 68"
 
+msgid "J42_Chi_Se"
+msgstr "Chi-Se"
+
+msgid "J42_Chi_Se_descr"
+msgstr ""
+"В 1943 году делегация представителей Императорской армии Японии "
+"присутствовала на демонстрации немецкого тяжёлого танка Pz.Kpfw.Tiger "
+"Ausf.E. в Куммерсдорфе под Берлином. «Тигр» очень сильно впечатлил военных, "
+"поэтому было принято решение о создании аналогичной машины для нужд японской"
+" армии. Проект предусматривал использование многих технологических решений "
+"немецкой школы танкостроения, и боевая машина могла оказаться вполне "
+"удачной. Однако к 1945 году ситуация в стране стала крайне тяжёлой, из-за "
+"чего реализовать проект в металле было проблематично. По этой причине судьба"
+" последнего японского тяжёлого танка военного периода была предрешена."
+
+msgid "J42_Chi_Se_long_special"
+msgstr ""
+"Chi-Se — японский тяжёлый танк VIII уровня с неплохой мобильностью и "
+"достойным бронированием. Танк вооружён сбалансированным, точным орудием с "
+"хорошими показателями урона в минуту и бронепробития, а также комфортными "
+"УВН, что позволяет эффективно сражаться на разных позициях."
+
+msgid "J42_Chi_Se_short"
+msgstr "Chi-Se"
+
+msgid "J42_Chi_Se_short_special"
+msgstr "Отличные УВН, хорошая мобильность"
+
 msgid "J43_Type_4_Ju-To"
 msgstr "Type 4 Ju-To"
 
@@ -887,6 +918,9 @@ msgstr "JAN/GRC-4Z"
 
 msgid "Kawasaki_Ha_60_LB"
 msgstr "Kawasaki Ha-60-lb"
+
+msgid "Kawasaki_Ha_60_LC"
+msgstr "Kawasaki Ha-60-lc"
 
 msgid "Kawasaki_Ha_9_I"
 msgstr "Kawasaki Ha-9-l"
@@ -1161,6 +1195,9 @@ msgstr "SHB-2"
 msgid "Turret_1_J41_Type_68"
 msgstr "SHB-1"
 
+msgid "Turret_1_J42_Chi_Se"
+msgstr "Chi-Se"
+
 msgid "Turret_1_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -1289,6 +1326,12 @@ msgstr "AP Experimental Type 2 Toku Kou Kai"
 msgid "_105mm_AP_Experimental_Type2_TS"
 msgstr "AP Experimental Type 2 Toku Otsu"
 
+msgid "_105mm_AP_Experimental_Type5_TK"
+msgstr "AP Experimental Type 5 Toku Kou Kai"
+
+msgid "_105mm_AP_Experimental_Type5_TS"
+msgstr "AP Experimental Type 5 Toku Otsu"
+
 msgid "_105mm_AP_M68"
 msgstr "AP Common Type 68"
 
@@ -1370,6 +1413,9 @@ msgstr "HE Type 91"
 msgid "_105mm_HE_Type92"
 msgstr "HE Type 92"
 
+msgid "_105mm_HE_Type93"
+msgstr "HE Type 93"
+
 msgid "_105mm_HE_Type_1_Ni"
 msgstr "HE Type 1 Ni"
 
@@ -1423,6 +1469,9 @@ msgstr "HE Common Type 14 L/34"
 
 msgid "_105mm_Type_14_L34_2"
 msgstr "10.5 cm Type 14 L/34"
+
+msgid "_105mm_Type_5_Se"
+msgstr "105 mm Type 5 Se"
 
 msgid "_105mm_Type_92_Gun_Mod1952"
 msgstr "105 mm Gun Type 92 SHA-1"
@@ -2032,6 +2081,9 @@ msgstr "Type 3 Ko-B"
 
 msgid "_Type3_Ko_BP"
 msgstr "Type 3 Ko"
+
+msgid "_Type3_Ko_Se"
+msgstr "Type 3 Ko Se"
 
 msgid "_Type3_Ko_notInShop"
 msgstr "Type 3 Ko"

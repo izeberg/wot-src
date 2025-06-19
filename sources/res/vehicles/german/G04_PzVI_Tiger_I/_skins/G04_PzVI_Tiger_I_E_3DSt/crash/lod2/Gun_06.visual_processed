@@ -55,7 +55,7 @@
 						<Texture>vehicles/german/G04_PzVI_Tiger_I/_skins/G04_PzVI_Tiger_I_E_3DSt/PzVI_Tiger_I_E_3DSt_guns_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.060071 -0.055588 1.780610</groupOrigin>
+				<groupOrigin>-0.060463 -0.055588 1.780609</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -64,6 +64,5 @@
 		<max>0.728046 0.284151 5.439610</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>29342</geometrySize>
-	<minUVDensity>0.005816</minUVDensity>
+	<geometrySize>40440</geometrySize>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F120_Projet_Louis/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.500000 -0.200717 -1.522558</min>
+		<max>0.222000 0.295257 5.137892</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F120_Projet_Louis/normal/lod2/Gun_01</nodefullVisual>
+</root>

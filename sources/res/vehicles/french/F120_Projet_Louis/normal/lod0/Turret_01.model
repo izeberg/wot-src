@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.081413 -0.005455 -1.359070</min>
+		<max>1.068687 2.259998 1.044998</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F120_Projet_Louis/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F120_Projet_Louis/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

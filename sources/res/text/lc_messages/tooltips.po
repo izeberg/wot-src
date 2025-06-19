@@ -2966,10 +2966,6 @@ msgstr ""
 "Доступ к коллекционной технике временно приостановлен.\n"
 "Ведутся технические работы."
 
-msgid "colorFilter/attention"
-msgstr ""
-"Цветокоррекция возможна только при выборе в настройках «Улучшенной» графики."
-
 msgid "colorFilter/body"
 msgstr ""
 "Здесь вы можете выбрать один из готовых фильтров или вручную настроить "
@@ -3410,6 +3406,9 @@ msgstr "Эмблемы"
 msgid "customization/storage/filters/paints/title"
 msgstr "Краски"
 
+msgid "customization/storage/filters/statTrackers/title"
+msgstr "Счётчики статистики"
+
 msgid "customization/storage/filters/style/title"
 msgstr "Стили"
 
@@ -3452,6 +3451,9 @@ msgid "customization/tabs/projectionDecal/body"
 msgstr ""
 "Декали наносятся на несколько частей машины и подчёркивают её "
 "индивидуальность."
+
+msgid "customization/tabs/statTracker/body"
+msgstr "Счётчики статистики отображают ключевые показатели выбранной техники."
 
 msgid "customization/tabs/uncustomStyle/body"
 msgstr ""
@@ -5291,10 +5293,8 @@ msgstr "Получено звание «%(rank)s»"
 
 msgid "gamma/attention"
 msgstr ""
-"Настройка гаммы недоступна в оконном режиме\n"
-"при стандартном качестве графики (раздел «Расширенные»).\n"
-"В оконном режиме используются текущие настройки\n"
-"операционной системы."
+"Настройки гаммы недоступны в оконном режиме. При выборе оконного режима "
+"используются текущие настройки операционной системы."
 
 msgid "gamma/body"
 msgstr ""
@@ -8141,6 +8141,24 @@ msgstr "Рекрутирование"
 
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "«Нулевые» навыки"
+
+msgid "notrecruitedtankman/frontman/desc"
+msgstr ""
+"«Меня зовут Маршалл Ганн — фронтмен, ставший командиром танка. Раньше нашим "
+"полем боя была сцена — можно сказать, я засыпал и просыпался в полевых "
+"условиях. В моей истории были головокружительные взлёты и жёсткие падения, и"
+" эта жизнь почти полностью поглотила меня. Когда группа распалась, я сменил "
+"шесть струн на шестьдесят тонн металла. Давно позади те дни, когда мы "
+"собирали стадионы. Мой путь теперь — это хаос и дым, за которыми неизменно "
+"следует звенящая тишина, в которой я остаюсь один на один с демонами "
+"прошлого. Что ж, если дьяволу захочется забрать своё — он знает, где меня "
+"найти»."
+
+msgid "notrecruitedtankman/frontman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/frontman/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/howToGet"
 msgstr "Как получить:"
@@ -12863,6 +12881,28 @@ msgstr ""
 msgid "showVehModelsOnMap/header"
 msgstr "Дополнительные возможности мини-карты"
 
+msgid "skill/name/brotherhood"
+msgstr "Боевое братство"
+
+msgid "skill/name/commander_sixthSense"
+msgstr "Шестое чувство"
+
+msgid "skill/newPerk/perk/text"
+msgstr ""
+"У этого члена экипажа есть «нулевой» навык. Количество требуемого опыта "
+"снижено."
+
+msgid "skill/newPerk/perk/title"
+msgstr "Навык доступен для изучения"
+
+msgid "skill/newPerk/zeroPerk/text"
+msgstr ""
+"«Нулевые» навыки всегда помещаются в первый слот, даже если одновременно "
+"выбрано несколько навыков."
+
+msgid "skill/newPerk/zeroPerk/title"
+msgstr "«Нулевой» навык доступен для изучения"
+
 msgid "skill/untrained/additional"
 msgstr ""
 "Переобучите члена экипажа на эту машину, чтобы восстановить все навыки и "
@@ -14418,6 +14458,9 @@ msgstr "Декаль «%(value)s»"
 
 msgid "vehiclePreview/boxTooltip/shell/header"
 msgstr "Снаряд «%(value)s»"
+
+msgid "vehiclePreview/boxTooltip/statTracker/header"
+msgstr "%(value)s"
 
 msgid "vehiclePreview/boxTooltip/style/header"
 msgstr "Стиль «%(value)s»"

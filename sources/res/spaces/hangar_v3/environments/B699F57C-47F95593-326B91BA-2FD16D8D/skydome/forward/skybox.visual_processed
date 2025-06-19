@@ -79,6 +79,26 @@
 						<Float>0.000000</Float>
 					</property>
 					<property>
+						g_hdrExposure
+						<Float>0.250000</Float>
+					</property>
+					<property>
+						g_hdrInvReinhard
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_hdrBlackPoint
+						<Vector3>0.000000 0.000000 0.000000</Vector3>
+					</property>
+					<property>
+						g_hdrWhitePoint
+						<Vector3>1.060000 1.050000 1.020000</Vector3>
+					</property>
+					<property>
+						g_hdrFogElevation
+						<Float>0.000000</Float>
+					</property>
+					<property>
 						g_horizontalFlip
 						<Float>0.000000</Float>
 					</property>
@@ -92,5 +112,4 @@
 		<max>20.007030 20.000000 20.005039</max>
 	</boundingBox>
 	<geometrySize>92384</geometrySize>
-	<minUVDensity>0.000001</minUVDensity>
 </root>

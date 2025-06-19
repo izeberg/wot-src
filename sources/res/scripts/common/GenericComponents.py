@@ -1,4 +1,5 @@
 import enum
+COMPOSITION_ROOT_SLOT_NAME = 'compositionRootSlot'
 
 class TransformComponent:
 

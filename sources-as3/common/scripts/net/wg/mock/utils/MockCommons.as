@@ -30,7 +30,15 @@ package net.wg.mock.utils
       {
       }
       
+      public function addEmptyHitArea(param1:Sprite) : void
+      {
+      }
+      
       public function addMultipleHandlers(param1:Vector.<IEventDispatcher>, param2:String, param3:Function) : void
+      {
+      }
+      
+      public function addOverlayToBtn(param1:IUIComponentEx, param2:String, param3:Point, param4:Padding) : void
       {
       }
       
@@ -44,8 +52,17 @@ package net.wg.mock.utils
          return "";
       }
       
+      public function dispose() : void
+      {
+      }
+      
       public function flipHorizontal(param1:DisplayObject) : void
       {
+      }
+      
+      public function formatNumberToStringWithSpaces(param1:int) : String
+      {
+         return "";
       }
       
       public function formatPlayerName(param1:TextField, param2:IUserProps, param3:Boolean = false, param4:Boolean = false) : Boolean
@@ -67,9 +84,22 @@ package net.wg.mock.utils
       {
       }
       
+      public function invalidateOverlayPosition(param1:IUIComponentEx) : void
+      {
+      }
+      
+      public function isDisposed() : Boolean
+      {
+         return false;
+      }
+      
       public function keyToString(param1:Number) : KeyProps
       {
          return null;
+      }
+      
+      public function makeGrayscaleFilter(param1:Sprite, param2:Number, param3:Number) : void
+      {
       }
       
       public function moveDsiplObjToEndOfText(param1:DisplayObject, param2:TextField, param3:int = 0, param4:int = 0) : void
@@ -81,6 +111,10 @@ package net.wg.mock.utils
       }
       
       public function removeMultipleHandlers(param1:Vector.<IEventDispatcher>, param2:String, param3:Function) : void
+      {
+      }
+      
+      public function removeOverlayFromBtn(param1:IUIComponentEx) : void
       {
       }
       
@@ -146,36 +180,6 @@ package net.wg.mock.utils
       }
       
       public function isRightButton(param1:MouseEvent) : Boolean
-      {
-         return false;
-      }
-      
-      public function addEmptyHitArea(param1:Sprite) : void
-      {
-      }
-      
-      public function formatNumberToStringWithSpaces(param1:int) : String
-      {
-         return "";
-      }
-      
-      public function addOverlayToBtn(param1:IUIComponentEx, param2:String, param3:Point, param4:Padding) : void
-      {
-      }
-      
-      public function removeOverlayFromBtn(param1:IUIComponentEx) : void
-      {
-      }
-      
-      public function invalidateOverlayPosition(param1:IUIComponentEx) : void
-      {
-      }
-      
-      public function dispose() : void
-      {
-      }
-      
-      public function isDisposed() : Boolean
       {
          return false;
       }

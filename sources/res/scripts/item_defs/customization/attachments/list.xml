@@ -1345,6 +1345,61 @@
 		</attachment>
 	</itemGroup>
 	<itemGroup>
+		<name>testGunSlots</name>
+		<userString>#vehicle_customization:attachment/gunslot</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<attachment>
+			<id>2002</id>
+			<name>R45_gunsleeve_test</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/R45_gunsleeve_test/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/R45_gunsleeve_test</userString>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>ussr:R45_IS-7</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2003</id>
+			<name>GB142_gunsleeve_test</name>
+			<leftModelName>content/CGFPrefabs/3D_Customization/gun_slots/GB142_gunsleeve_test/attachment_left.prefab</leftModelName>
+			<rightModelName>content/CGFPrefabs/3D_Customization/gun_slots/GB142_gunsleeve_test/attachment_right.prefab</rightModelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/GB142_gunsleeve_test</userString>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>uk:GB142_FV230_Canopener</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+		<attachment>
+			<id>2004</id>
+			<name>It08_gunsleeve_test</name>
+			<modelName>content/CGFPrefabs/3D_Customization/gun_slots/It08_gunsleeve_test/attachment.prefab</modelName>
+			<attachmentLogic>prefab</attachmentLogic>
+			<applyType>gun</applyType>
+			<rarity>epic</rarity>
+			<priceGroup>attachments 1300g notInShop</priceGroup>
+			<userString>#vehicle_customization:attachment/gunslot/It08_gunsleeve_test</userString>
+			<tags>showDisabled</tags>
+			<vehicleFilter>
+				<include>
+					<vehicles>italy:It08_Progetto_M40_mod_65</vehicles>
+				</include>
+			</vehicleFilter>
+		</attachment>
+	</itemGroup>
+	<itemGroup>
 		<name>attachments</name>
 		<userString>#vehicle_customization:attachment/general</userString>
 		<season>ALL</season>

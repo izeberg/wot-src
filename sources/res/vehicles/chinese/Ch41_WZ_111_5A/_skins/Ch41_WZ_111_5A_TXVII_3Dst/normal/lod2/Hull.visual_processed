@@ -171,6 +171,10 @@
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_hull_01_AO.dds</Texture>
 					</property>
 					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						alphaReference
 						<Int>64</Int>
 					</property>
@@ -212,6 +216,10 @@
 						normalMap
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_equipment_01_ANM.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.005703 0.239351 -0.094223</groupOrigin>
 			</primitiveGroup>
@@ -231,6 +239,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_net_01_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -256,5 +268,4 @@
 		<max>1.906411 0.744654 3.879059</max>
 	</boundingBox>
 	<geometrySize>201818</geometrySize>
-	<minUVDensity>0.000817</minUVDensity>
 </root>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<state>
+			<Type>UINT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</state>
+		<temperatureProgress>
+			<Type>FLOAT</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+			<Default>0</Default>
+		</temperatureProgress>
+		<isOverheated>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isOverheated>
+	</Properties>
+	<DefaultKeyName>temperatureGunController</DefaultKeyName>
+</root>

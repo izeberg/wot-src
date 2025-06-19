@@ -3232,7 +3232,7 @@
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_16>
-						<gun>35</gun>
+						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
 						0.37
@@ -4158,7 +4158,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				1 -0.071 0.897 0 0.496 0.123 0.531 0.5 0.435 0.5 0.013 0.5 0.1 0.457 0
+				1.007 -0.171 0.957 0 0.814 -0.129 0.686 0.421 0.239 0.5 0.264 0.5 0.229 0.693 0.089
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
@@ -4174,14 +4174,14 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<AN_VRC-3I>shared</AN_VRC-3I>
+		<AN_VRC_3I>shared</AN_VRC_3I>
 	</radios>
 	<clientAdjustmentFactors/>
 	<physics>
 		<detailed>
 			<engines>
 				<Continental_AVI_1790I>
-					<smplEnginePower>850</smplEnginePower>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</Continental_AVI_1790I>
 			</engines>

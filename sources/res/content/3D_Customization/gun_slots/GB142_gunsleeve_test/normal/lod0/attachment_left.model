@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/GB142_gunsleeve_test/normal/lod0/attachment_left</nodefullVisual>
+	<visibilityBox>
+		<min>-0.440930 -0.311220 -2.082510</min>
+		<max>-0.019085 0.222768 1.250217</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/gun_slots/GB142_gunsleeve_test/normal/lod1/attachment_left</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

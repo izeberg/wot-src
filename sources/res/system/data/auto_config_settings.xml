@@ -46,18 +46,8 @@
 		<GPUShared>0</GPUShared>
 		<RAM>2000</RAM>
 		<VirtualMemory>2000</VirtualMemory>
-		<GPUScore>150</GPUScore>
+		<GPUScore>300</GPUScore>
 		<CPUScore>50000</CPUScore>
-		<CPUCores>2</CPUCores>
-	</graphicsPreferences>
-	<graphicsPreferences>
-		MIN
-		<GPUMemory>64</GPUMemory>
-		<GPUShared>0</GPUShared>
-		<RAM>1500</RAM>
-		<VirtualMemory>1500</VirtualMemory>
-		<GPUScore>50</GPUScore>
-		<CPUScore>10000</CPUScore>
 		<CPUCores>2</CPUCores>
 	</graphicsPreferences>
 </root>

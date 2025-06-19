@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G176_Jagdpanzer_E90/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/german/G176_Jagdpanzer_E90/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.992274 -0.001912 -3.982930</min>
+		<max>1.992274 1.325146 3.827509</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

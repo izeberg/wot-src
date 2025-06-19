@@ -59,6 +59,7 @@
 		<R113T>229</R113T>
 		<SCR_508I>230</SCR_508I>
 		<R123U>232</R123U>
+		<R_123B>234</R_123B>
 		<_10RK_IGR>60001</_10RK_IGR>
 		<_12RT_IGR>60002</_12RT_IGR>
 		<R113_IGR>60003</R113_IGR>
@@ -70,6 +71,7 @@
 		<R113_SH>316</R113_SH>
 		<_10RK-26_7x7>502</_10RK-26_7x7>
 		<R113M_7x7>503</R113M_7x7>
+		<R113M_FEP>601</R113M_FEP>
 		<Development_Radio>65000</Development_Radio>
 		<_9RM_MapsTraining_Dummy_LT_1>12</_9RM_MapsTraining_Dummy_LT_1>
 		<_12LL_MapsTraining_Dummy_SPG_1>33</_12LL_MapsTraining_Dummy_SPG_1>
@@ -701,6 +703,18 @@
 				<!--BW_String-->
 			</repairCost>
 		</R123U>
+		<R_123B>
+			<userString>#ussr_vehicles:R_123B</userString>
+			<tags/>
+			<level>9</level>
+			<notInShop>true</notInShop>
+			<price>40000</price>
+			<weight>80</weight>
+			<distance>670</distance>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</R_123B>
 		<R123_K>
 			<userString>#ussr_vehicles:R123_K</userString>
 			<tags/>
@@ -884,6 +898,18 @@
 				<!--BW_String-->
 			</repairCost>
 		</_10RK-26M>
+		<R113M_FEP>
+			<userString>#ussr_vehicles:R113M_FEP</userString>
+			<tags/>
+			<level>10</level>
+			<price>0</price>
+			<notInShop>true</notInShop>
+			<weight>80</weight>
+			<distance>730</distance>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>150</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</R113M_FEP>
 		<_10RK_IGR>
 			<userString>#igr_vehicles:_10RK_IGR</userString>
 			<tags/>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/R45_gunsleeve_test/normal/lod1/attachment</nodefullVisual>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/R45_gunsleeve_test/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.172150 -0.227429 -1.631612</min>
+		<max>0.237376 0.239759 2.439401</max>
+	</visibilityBox>
+</root>

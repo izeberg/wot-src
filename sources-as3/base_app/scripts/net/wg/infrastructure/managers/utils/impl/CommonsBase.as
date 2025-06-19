@@ -384,6 +384,12 @@ package net.wg.infrastructure.managers.utils.impl
          param1.filters = _loc3_;
       }
       
+      public function makeGrayscaleFilter(param1:Sprite, param2:Number, param3:Number) : void
+      {
+         var _loc4_:Array = [new ColorMatrixFilter([param2,param2,param2,0,0,param2,param2,param2,0,0,param2,param2,param2,0,0,0,0,0,param3,0])];
+         param1.filters = _loc4_;
+      }
+      
       public function setSaturation(param1:Sprite, param2:Number) : void
       {
          var object:Sprite = param1;

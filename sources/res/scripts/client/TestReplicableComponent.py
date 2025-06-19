@@ -1,8 +1,39 @@
-import BigWorld, CGF, GenericComponents, GameplayDebug, cgf_demo.test_replicable
+import CGF, GenericComponents, GameplayDebug
+from Event import Event
 from cgf_script.managers_registrator import onAddedQuery, onProcessQuery
+from cgf_demo.test_replicable import TestReplicableComponentDescriptor
+from cgf_script.component_meta_class import registerReplicableComponent
+from constants import IS_EDITOR
+if IS_EDITOR:
 
-class TestReplicableComponent(BigWorld.DynamicScriptComponent, cgf_demo.test_replicable.TestReplicableComponent):
-    pass
+    class DynamicScriptComponent(object):
+        pass
+
+
+else:
+    from BigWorld import DynamicScriptComponent
+
+@registerReplicableComponent
+class TestReplicableComponent(DynamicScriptComponent, TestReplicableComponentDescriptor):
+
+    def __init__(self):
+        super(TestReplicableComponent, self).__init__()
+        self.onReplicated = Event()
+
+    def set_replicableInt(self, old):
+        self.onReplicated(old, self.replicableInt)
+
+    def set_replicableFloat(self, old):
+        self.onReplicated(old, self.replicableFloat)
+
+    def set_replicableString(self, old):
+        self.onReplicated(old, self.replicableFloat)
+
+    def set_replicableVector3(self, old):
+        self.onReplicated(old, self.replicableFloat)
+
+    def set_replicableStringList(self, old):
+        self.onReplicated(old, self.replicableFloat)
 
 
 class DisplayReplicableValuesManager(CGF.ComponentManager):

@@ -33,11 +33,11 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>20.000000 1.300000 1.000000 0.000000</Vector4>
+						<Vector4>0.350000 1.300000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						TintlColor
-						<Vector4>1.000000 0.803922 0.545098 0.380000</Vector4>
+						<Vector4>1.000000 1.000000 1.000000 0.376471</Vector4>
 					</property>
 					<property>
 						softFactor
@@ -69,5 +69,4 @@
 		<max>0.460823 0.460823 -0.000000</max>
 	</boundingBox>
 	<geometrySize>684</geometrySize>
-	<minUVDensity>1.176951</minUVDensity>
 </root>

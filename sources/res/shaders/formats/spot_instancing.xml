@@ -2,14 +2,9 @@
 <root>
 	<elements>
 		<TEXCOORD>
-			<semanticIndex>4</semanticIndex>
-			<stream>9</stream>
-			<offset>0</offset>
-			<type>FLOAT4</type>
-		</TEXCOORD>
-		<TEXCOORD>
 			<semanticIndex>5</semanticIndex>
 			<stream>9</stream>
+			<offset>0</offset>
 			<type>FLOAT4</type>
 		</TEXCOORD>
 		<TEXCOORD>
@@ -19,6 +14,16 @@
 		</TEXCOORD>
 		<TEXCOORD>
 			<semanticIndex>7</semanticIndex>
+			<stream>9</stream>
+			<type>FLOAT4</type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<semanticIndex>8</semanticIndex>
+			<stream>9</stream>
+			<type>FLOAT4</type>
+		</TEXCOORD>
+		<TEXCOORD>
+			<semanticIndex>9</semanticIndex>
 			<stream>9</stream>
 			<type>FLOAT4</type>
 		</TEXCOORD>

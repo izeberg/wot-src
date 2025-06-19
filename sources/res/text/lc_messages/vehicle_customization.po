@@ -141,6 +141,18 @@ msgstr ""
 msgid "attachment/general"
 msgstr "Общие"
 
+msgid "attachment/gunslot"
+msgstr "Кожух ствола"
+
+msgid "attachment/gunslot/GB142_gunsleeve_test"
+msgstr "Кожух ствола для FV230 "
+
+msgid "attachment/gunslot/It08_gunsleeve_test"
+msgstr "Кожух ствола для Progetto M40 mod. 65"
+
+msgid "attachment/gunslot/R45_gunsleeve_test"
+msgstr "Кожух ствола для ИС-7"
+
 msgid "attachment/iron_fury"
 msgstr "Стальная ярость"
 
@@ -3316,6 +3328,12 @@ msgstr "?empty?"
 msgid "camouflage/clans_event_2024/label"
 msgstr "Извержение"
 
+msgid "camouflage/cn360_relaunch_820/description"
+msgstr "?empty?"
+
+msgid "camouflage/cn360_relaunch_820/label"
+msgstr "Ведомые"
+
 msgid "camouflage/cn_dragon_boat_festival_blue/description"
 msgstr ""
 "Стиль с традиционным китайским узором в цветах синего дракона. Выдаётся "
@@ -3630,6 +3648,12 @@ msgstr ""
 msgid "camouflage/cracked_stone_camo/label"
 msgstr "Колотый камень"
 
+msgid "camouflage/crimson_wind/description"
+msgstr "?empty?"
+
+msgid "camouflage/crimson_wind/label"
+msgstr "Багровый ветер"
+
 msgid "camouflage/czech/Cz_dust/description"
 msgstr ""
 "Летом 1942 г. в 22-й танковой дивизии на танки чехословацкого производства "
@@ -3848,6 +3872,9 @@ msgstr "?empty?"
 
 msgid "camouflage/elephant23/label"
 msgstr "Боевой слон"
+
+msgid "camouflage/empty/description"
+msgstr "?empty?"
 
 msgid "camouflage/eu_community_2020/description"
 msgstr "?empty?"
@@ -4929,6 +4956,12 @@ msgstr "?empty?"
 msgid "camouflage/liveops_2/label"
 msgstr "Хозяин леса"
 
+msgid "camouflage/liveops_backtoschool_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/liveops_backtoschool_2025/label"
+msgstr "Без тормозов"
+
 msgid "camouflage/liveops_manga/description"
 msgstr "?empty?"
 
@@ -5012,6 +5045,12 @@ msgstr "?empty?"
 
 msgid "camouflage/liveops_summer_festival_2025_2/label"
 msgstr "На рыбалку"
+
+msgid "camouflage/liveops_upsell_1/label"
+msgstr "Священная клятва"
+
+msgid "camouflage/liveops_upsell_2/label"
+msgstr "Клятвопреступник"
 
 msgid "camouflage/localpartner2_2018/description"
 msgstr ""
@@ -5594,6 +5633,15 @@ msgstr "?empty?"
 msgid "camouflage/onguard/label"
 msgstr "На страже"
 
+msgid "camouflage/onslaught_autumn_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_autumn_2025_blue_gold/label"
+msgstr "Стальная буря"
+
+msgid "camouflage/onslaught_autumn_2025_blue_silver/label"
+msgstr "Железная воля"
+
 msgid "camouflage/onslaught_ep2/description"
 msgstr "?empty?"
 
@@ -5663,6 +5711,12 @@ msgstr "Чемпион"
 msgid "camouflage/onslaught_season_2023-2024_6/label"
 msgstr "Легенда"
 
+msgid "camouflage/onslaught_spring_2026_green_gold/label"
+msgstr "Неукротимый дух"
+
+msgid "camouflage/onslaught_spring_2026_green_silver/label"
+msgstr "Марш храбрых"
+
 msgid "camouflage/onslaught_spring_gold/description"
 msgstr "?empty?"
 
@@ -5680,6 +5734,12 @@ msgstr "?empty?"
 
 msgid "camouflage/onslaught_tournaments/label"
 msgstr "Среди первых"
+
+msgid "camouflage/onslaught_winter_2026_red_gold/label"
+msgstr "Шипящая ярость"
+
+msgid "camouflage/onslaught_winter_2026_red_silver/label"
+msgstr "Отмеченный славой"
 
 msgid "camouflage/opaque"
 msgstr "Укрывистые"
@@ -5816,6 +5876,12 @@ msgstr "?empty?"
 msgid "camouflage/pub_west/label"
 msgstr "Залог победы"
 
+msgid "camouflage/pub_west_bastille_day/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_west_bastille_day/label"
+msgstr "14 Juillet"
+
 msgid "camouflage/pub_west_charity_1/description"
 msgstr "?empty?"
 
@@ -5845,6 +5911,18 @@ msgstr "?empty?"
 
 msgid "camouflage/pub_west_token_2/label"
 msgstr "Опаловый отлив"
+
+msgid "camouflage/pub_west_ua/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_west_ua/label"
+msgstr "Батьківщина"
+
+msgid "camouflage/pub_west_warsaw_uprising/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_west_warsaw_uprising/label"
+msgstr "Wzory ludowe"
 
 msgid "camouflage/quicky_baby/description"
 msgstr "?empty?"
@@ -7762,6 +7840,15 @@ msgstr ""
 "Измените параметры фильтра или закройте меню настройки декали, чтобы "
 "отобразить элементы внешнего вида."
 
+msgid "carousel/message/statTracker/default/description"
+msgstr ""
+"Счётчики статистики — это элементы внешнего вида, которые отображают "
+"ключевые показатели для выбранной техники. Их можно заработать при "
+"продвижении по прогрессии или купить в Магазине."
+
+msgid "carousel/message/statTracker/default/header"
+msgstr "НЕТ СЧЁТЧИКОВ СТАТИСТИКИ"
+
 msgid "carousel/rentalBattles"
 msgstr "%(battlesNum)s боёв за"
 
@@ -8106,6 +8193,12 @@ msgstr "Красок на машине: %(filled)s/%(available)s"
 
 msgid "customization/header/counter/projectionDecal"
 msgstr "Декалей на машине: %(filled)s/%(available)s"
+
+msgid "customization/header/counter/statTracker/installed"
+msgstr "Счётчик статистики установлен"
+
+msgid "customization/header/counter/statTracker/notInstalled"
+msgstr "Счётчик статистики не установлен"
 
 msgid "customization/header/counter/uncustomStyle/installed"
 msgstr "3D-стиль нанесён"
@@ -9736,6 +9829,12 @@ msgstr "эмблемы"
 
 msgid "customization/tooltip/slot/inscription"
 msgstr "надписи"
+
+msgid "customization/tooltip/statTracker/counter/kills"
+msgstr "Машин уничтожено: %(value)s"
+
+msgid "customization/tooltip/statTracker/description"
+msgstr "Отображаемая статистика обновляется в реальном времени во время боя."
 
 msgid "customization/tooltip/status/alreadyHave"
 msgstr "В наличии"
@@ -15476,6 +15575,15 @@ msgstr "Мы справились!"
 msgid "inscription/special/special_81"
 msgstr "За Родину!"
 
+msgid "inscription/special/special_821"
+msgstr "Лига «Натиска», осень 2025"
+
+msgid "inscription/special/special_822"
+msgstr "Лига «Натиска», зима 2026"
+
+msgid "inscription/special/special_823"
+msgstr "Лига «Натиска», весна 2026"
+
 msgid "inscription/special/special_90"
 msgstr "Гранд-финал 2017 Москва"
 
@@ -17418,6 +17526,9 @@ msgstr "Износ покрытия 05"
 msgid "modifications/age_effect_06"
 msgstr "Износ покрытия 06"
 
+msgid "modifications/age_effect_07"
+msgstr "Износ покрытия 07"
+
 msgid "notification/slotIsFilled/title"
 msgstr "Недоступно: очистите одну из занятых ячеек"
 
@@ -17561,7 +17672,7 @@ msgid "progression/about"
 msgstr "ОБ ЭЛЕМЕНТАХ"
 
 msgid "progression/entryPoint"
-msgstr "Этапные элементы"
+msgstr "Этапные декали"
 
 msgid "progression/item/done"
 msgstr "Уровень {level} достигнут"
@@ -22041,6 +22152,15 @@ msgstr ""
 "Изображение той самой противоречивой (но многими любимой) карты, выведенной "
 "из игры. Сталь, масло."
 
+msgid "projection_decals/special/projection_decal_920"
+msgstr "5 лет вместе"
+
+msgid "projection_decals/special/projection_decal_921"
+msgstr "Подавляющее огневое преимущество"
+
+msgid "projection_decals/special/projection_decal_922"
+msgstr "Следы прогресса"
+
 msgid "projection_decals/special/projection_decal_93"
 msgstr "Мастер на все руки"
 
@@ -22057,11 +22177,17 @@ msgstr ""
 "Нанесение этой декали на танк автоматически снимает с вас ответственность за"
 " любые действия в бою (но это не точно)."
 
+msgid "projection_decals/special/projection_decal_949"
+msgstr "Мастер риффов"
+
 msgid "projection_decals/special/projection_decal_95"
 msgstr "Хьюстон, у нас... проблемы?"
 
 msgid "projection_decals/special/projection_decal_95/description"
 msgstr "Летящий по небу AMX ELC bis — ну, это нормально. Это нормально."
+
+msgid "projection_decals/special/projection_decal_950"
+msgstr "Маска самурая"
 
 msgid "projection_decals/special/projection_decal_96"
 msgstr "Броня (условно)"
@@ -22187,6 +22313,9 @@ msgstr "Снять декаль [Delete]"
 msgid "propertySheet/actionBtn/remove/seasons"
 msgstr "Снять для всех карт"
 
+msgid "propertySheet/actionBtn/remove/statTracker"
+msgstr "Снять счётчик статистики [удалить]"
+
 msgid "propertySheet/actionBtn/remove/tank"
 msgstr "Снять с машины [Delete]"
 
@@ -22278,7 +22407,7 @@ msgstr ""
 "от %(start)s до %(end)s."
 
 msgid "propertySheet/keyboard/hint"
-msgstr "НАЖИМАЙТЕ КЛАВИШИ, ЧТОБЫ ПЕРЕКРАСИТЬ ЭЛЕМЕНТ"
+msgstr "ДЛЯ СМЕНЫ ИСПОЛЬЗУЙТЕ СЛЕДУЮЩИЕ КЛАВИШИ"
 
 msgid "propertySheet/map/all"
 msgstr "Все сезоны"
@@ -22334,45 +22463,6 @@ msgstr ""
 "При нанесении данной декали в эту ячейку для всех\n"
 "карт установленные декали %(season)s картах будут\n"
 "%(removed)s с машины, т. к. данная ячейка на этих картах недоступна."
-
-msgid "propertySheet/title/allMaps"
-msgstr "Нанесено для всех карт"
-
-msgid "propertySheet/title/allTankPainted"
-msgstr "Покрашена вся машина"
-
-msgid "propertySheet/title/appliedTo"
-msgstr "Нанесено на: %(elementType)s"
-
-msgid "propertySheet/title/appliedToMap"
-msgstr "Нанесено для: %(mapType)s"
-
-msgid "propertySheet/title/color"
-msgstr "Цветовая схема"
-
-msgid "propertySheet/title/remove/attachment"
-msgstr "Снять 3D-объект"
-
-msgid "propertySheet/title/remove/camouflage"
-msgstr "Удаление камуфляжа"
-
-msgid "propertySheet/title/remove/emblem"
-msgstr "Удаление эмблемы"
-
-msgid "propertySheet/title/remove/inscription"
-msgstr "Удаление надписи"
-
-msgid "propertySheet/title/remove/modification"
-msgstr "Удаление эффекта"
-
-msgid "propertySheet/title/remove/paint"
-msgstr "Удаление краски"
-
-msgid "propertySheet/title/remove/projectionDecal"
-msgstr "Удаление декали"
-
-msgid "propertySheet/title/scale"
-msgstr "Масштабирование рисунка"
 
 msgid "questProgress/cust_progress_1026_1"
 msgstr "?empty?"
@@ -23198,6 +23288,9 @@ msgstr "В космос!"
 
 msgid "repaint/cosmonautics_day_2022"
 msgstr "Вверх"
+
+msgid "repaint/crimson_wind"
+msgstr "Багровый ветер"
 
 msgid "repaint/custom_color_01"
 msgstr "Пурпурный"
@@ -28956,6 +29049,24 @@ msgstr ""
 " и никто не сможет бросить мне вызов. Пусть люди дрожат от страха. В конце "
 "концов, они пробудили чудовище и должны за это заплатить."
 
+msgid "special_style/cn360_relaunch_820"
+msgstr "Ведомые"
+
+msgid "special_style/cn360_relaunch_820_desc"
+msgstr ""
+"Всесезонный стиль, посвящённый тем, кто защищает своих братьев по оружию с "
+"высоты."
+
+msgid "special_style/cn360_relaunch_820_desc/long"
+msgstr ""
+"Среди взрывов и пулемётных очередей танковые экипажи всегда находили "
+"спасение в рёве двигателей над головой, ведь знали, что всевидящие глаза, "
+"парящие высоко в небе, готовы нанести удар в любой момент. От гулких "
+"пропеллеров прошлого до современных реактивных двигателей — авиация меняла "
+"ход сражений, неся разрушение одним и защищая других. Этот стиль вдохновлён "
+"неустанной погоней за инновациями, когда сталь на земле и крылья в воздухе "
+"действуют как единое целое, прокладывая путь в новую военную эпоху."
+
 msgid "special_style/cn_dragon_boat_festival_blue"
 msgstr "Синяя чешуя"
 
@@ -29295,6 +29406,17 @@ msgid "special_style/cracked_stone_style_desc"
 msgstr ""
 "Уникальный стиль — награда игрокам за персональные и клановые достижения на "
 "Глобальной карте."
+
+msgid "special_style/crimson_wind"
+msgstr "Багровый ветер"
+
+msgid "special_style/crimson_wind_desc"
+msgstr "?empty?"
+
+msgid "special_style/crimson_wind_desc/long"
+msgstr ""
+"Говорят, есть место, где ветер стал багровым. Земля там наполнена кровью, а листья деревьев тлеют, словно угли.\n"
+"Никто не видел того самурая. Но в звуках блуждающего ветра всё ещё можно услышать мелодию его клинка. Так рассказывают старейшины о безымянном воине, увековеченном в блекнущих чернилах, в доспехах, потускневших от времени. Его битва осталась в прошлом, его история почти забыта... но клятва жива. И не ради славы он обнажает свой меч, а во имя неоплатного долга и великой чести. Когда в следующий раз поднимется буря, прислушайтесь — багровый ветер всё ещё хранит его обет."
 
 msgid "special_style/czech_style"
 msgstr "Establishment of Czechoslovakia"
@@ -30522,6 +30644,24 @@ msgstr ""
 " дезинформировать противника относительно размеров объекта и его дальности. "
 "А это уже весомое преимущество в условиях боевых действий."
 
+msgid "special_style/liveops_backtoschool_2025"
+msgstr "Без тормозов"
+
+msgid "special_style/liveops_backtoschool_2025_desc"
+msgstr "Всесезонный стиль для тех, кем движет прогресс."
+
+msgid "special_style/liveops_backtoschool_2025_desc/long"
+msgstr ""
+"«Не стоит держаться за то, что проверено временем. Прогресс не стоит на "
+"месте: новое заменяет старое, и это происходит быстрее, чем когда-либо. То, "
+"что раньше казалось невозможным, сейчас — отправная точка. С каждым прорывом"
+" растёт эффективность, увеличивается мощность, появляются характеристики, "
+"которые ещё вчера были фантастикой. Возьмём, к примеру, этот двигатель: "
+"неудержимый механизм, опережающий своё время. И давайте будем честны — он "
+"выглядит круто. Очень круто. Изящный, мощный и даже... завораживающий. Кто-"
+"то спросит: \"Насколько крутым может быть двигатель?\" И, откровенно говоря,"
+" мы даже не приблизились к пределу»."
+
 msgid "special_style/liveops_desc"
 msgstr "Всесезонный стиль, созданный для маскировки техники любого уровня."
 
@@ -30747,6 +30887,36 @@ msgstr ""
 " тихо и спокойно, только птицы щебечут на деревьях. Ты натягиваешь леску и "
 "забрасываешь удочку в воду. Когда же клюнет? Теперь это единственное, что "
 "тебя волнует."
+
+msgid "special_style/liveops_upsell_1"
+msgstr "Священная клятва"
+
+msgid "special_style/liveops_upsell_1_desc"
+msgstr "Всесезонный стиль для тех, кто сражается на стороне света и добра."
+
+msgid "special_style/liveops_upsell_1_desc/long"
+msgstr ""
+"«Не каждый достоин такой чести. Вглядись — она не просто выкована, но и освящена. Этот блеск — отражение цели. Слепит, как клинок, обнажённый, чтобы защищать то, что правильно. Гравюры рассказывают историю — о битвах, где храбро сражались, и о победах, заслуженных, а не отнятых. А сапфировые акценты — чисты и непоколебимы, словно добродетель, стоящая перед лицом греха.\n"
+"Она скользит изящно, будто плывёт по облакам. Выше искушений. Выше упрёков. Далеко не каждому дано её понять, и ещё меньше тех, кто её достоин. Но воинам, что сражаются с чистым сердцем… она непременно ответит»."
+
+msgid "special_style/liveops_upsell_2"
+msgstr "Клятвопреступник"
+
+msgid "special_style/liveops_upsell_2_desc"
+msgstr ""
+"Зловещий всесезонный стиль для тех, кто готов принять свою тёмную сторону."
+
+msgid "special_style/liveops_upsell_2_desc/long"
+msgstr ""
+"«Хочешь знать, откуда у меня это? Что ж, вряд ли это можно назвать простой "
+"удачей. Пока другие довольствовались тем, что им швыряли, я забрал то, к "
+"чему никто не осмеливался прикоснуться. Это золото — символ моей "
+"безграничной силы, и узоры на нём вырезаны руками лучших мастеров. Я знаю, "
+"тебя завораживают эти драгоценные камни, но они никому не падают с неба. "
+"Пойми — это не просто доспехи. Это орудие господства... алтарь моей власти. "
+"Любуйся, сколько хочешь, но оно не станет твоим, пока ты не поднимешься выше"
+" толпы, как это сделал я. А если это и случится — берегись, друг мой: тяжела"
+" голова, что носит корону»."
 
 msgid "special_style/localpartner2_2018_style_01"
 msgstr "Сеть"
@@ -31776,6 +31946,14 @@ msgstr ""
 "прогулок — зависит от собаки. Так или иначе, желаем ещё 40 000 лет таких "
 "отношений!"
 
+msgid "special_style/onslaught_autumn_2025_blue"
+msgstr "Железная воля"
+
+msgid "special_style/onslaught_autumn_2025_blue_desc"
+msgstr ""
+"Всесезонный стиль, выдаваемый в награду за поддержку Лиги «Натиска» летом "
+"2025 года."
+
 msgid "special_style/onslaught_black_season_progression"
 msgstr "Небесный скакун"
 
@@ -31947,6 +32125,14 @@ msgstr ""
 msgid "special_style/onslaught_spring"
 msgstr "Смелый духом"
 
+msgid "special_style/onslaught_spring_2026_green"
+msgstr "Марш храбрых"
+
+msgid "special_style/onslaught_spring_2026_green_desc"
+msgstr ""
+"Всесезонный стиль, выдаваемый в награду за поддержку Лиги «Натиска» весной "
+"2026 года."
+
 msgid "special_style/onslaught_spring_desc"
 msgstr ""
 "Всесезонный стиль, выдаваемый в награду за поддержку Лиги «Натиска» весной "
@@ -31959,6 +32145,14 @@ msgid "special_style/onslaught_tournaments_desc"
 msgstr ""
 "Всесезонный стиль, выдаваемый зрителям и участникам первых турниров в режиме"
 " «Натиск»."
+
+msgid "special_style/onslaught_winter_2026_red"
+msgstr "Отмеченный славой"
+
+msgid "special_style/onslaught_winter_2026_red_desc"
+msgstr ""
+"Всесезонный стиль, выдаваемый в награду за поддержку Лиги «Натиска» зимой "
+"2026 года."
 
 msgid "special_style/paint_light_green"
 msgstr "Светло-зелёная краска (США)"
@@ -32035,6 +32229,23 @@ msgstr ""
 
 msgid "special_style/pub_west"
 msgstr "Залог победы"
+
+msgid "special_style/pub_west_bastille_day"
+msgstr "14 Juillet"
+
+msgid "special_style/pub_west_bastille_day_desc"
+msgstr "Всесезонный стиль, посвящённый Дню взятия Бастилии."
+
+msgid "special_style/pub_west_bastille_day_desc/long"
+msgstr ""
+"14 июля 1789 года сотни парижан взяли штурмом Бастилию — королевскую "
+"крепость и символ тирании, который в тот день пал под натиском обычных "
+"людей. За время Великой французской революции произошло немало значимых "
+"событий, но ни одно не имело столь мощного символического значения. Весть о "
+"падении Бастилии разлетелась по всей Франции: дни старого режима были "
+"сочтены, и страна готовилась к переменам. В память об этих событиях каждый "
+"год 14 июля французы отмечают свой главный национальный праздник — День "
+"взятия Бастилии."
 
 msgid "special_style/pub_west_charity_1"
 msgstr "Луч надежды"
@@ -32119,6 +32330,37 @@ msgstr ""
 "ночи. Вы уверенно мчитесь вперёд, движимые чёткой целью. Вы доверяете своему"
 " опыту и инстинктам, и эта уверенность передаётся окружающим. Пусть смотрят."
 " Пусть восхищаются. Это ваш мир, и вы играете здесь главную роль."
+
+msgid "special_style/pub_west_ua"
+msgstr "Батьківщина"
+
+msgid "special_style/pub_west_ua_desc"
+msgstr "Всесезонный стиль, посвящённый несгибаемому духу Украины."
+
+msgid "special_style/pub_west_ua_desc/long"
+msgstr ""
+"24 августа в Украине отмечается главный национальный праздник — День "
+"независимости (или День Незалежності), установленный в честь исторического "
+"решения 1991 года о выходе из состава СССР. В этот день по всей стране "
+"проходят празднования в честь её богатой национальной культуры и истории. "
+"Золотые поля пшеницы символизируют процветание, а чистое синее небо на "
+"украинском флаге напоминает о несгибаемом духе страны и её народа."
+
+msgid "special_style/pub_west_warsaw_uprising"
+msgstr "Wzory ludowe"
+
+msgid "special_style/pub_west_warsaw_uprising_desc"
+msgstr ""
+"Всесезонный стиль, который украсит вашу технику польскими народными узорами."
+
+msgid "special_style/pub_west_warsaw_uprising_desc/long"
+msgstr ""
+"Традиционная вышивка, или «гафт», — это польское ремесло с вековой историей,"
+" воплощающее богатое художественное наследие страны. От берегов Померании до"
+" гор Подгале каждый регион славится своим уникальным стилем, вдохновлённым "
+"местными обычаями и природой. Яркие цвета и сложные цветочные узоры "
+"передаются из поколения в поколение, формируя самобытность и укрепляя связь "
+"между ремеслом и национальным духом."
 
 msgid "special_style/quicky_baby"
 msgstr "QuickyBaby"
@@ -33872,6 +34114,15 @@ msgstr ""
 " правителей, и никто кроме них не мог его использовать. Чёрный цвет издевле "
 "почитался сильнее, чем любой другой. Он, пожалуй, включает в себя самый "
 "широкий спектр значений, от резко негативных и до крайне положительных."
+
+msgid "statTrackers"
+msgstr "Счётчики статистики"
+
+msgid "statTrackers/statTracker_01"
+msgstr "Счётчик статистики"
+
+msgid "statsTracker/entryPoint"
+msgstr "Счётчики статистики"
 
 msgid "styleInfo/bonus"
 msgstr "бонус к маскировке"

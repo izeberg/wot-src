@@ -29,5 +29,11 @@
 			<Exposed/>
 			<ExposedForReplay>true</ExposedForReplay>
 		</environment>
+		<replicableHash>
+			<Type>UINT64</Type>
+			<Exposed/>
+			<ExposedForReplay>true</ExposedForReplay>
+			<Default>0</Default>
+		</replicableHash>
 	</Properties>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.410962 -0.000089 -2.777316</min>
+		<max>1.410964 1.153741 3.282241</max>
+	</visibilityBox>
+	<parent>vehicles/french/F120_Projet_Louis/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F120_Projet_Louis/crash/lod0/Chassis</nodefullVisual>
+</root>

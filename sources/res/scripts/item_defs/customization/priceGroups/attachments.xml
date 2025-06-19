@@ -170,4 +170,14 @@
 		</price>
 		<notInShop>True</notInShop>
 	</priceGroup>
+	<priceGroup>
+		<id>150</id>
+		<name>attachments 1300g notInShop</name>
+		<tags>attachments notInShop</tags>
+		<price>
+			1300
+			<gold/>
+		</price>
+		<notInShop>True</notInShop>
+	</priceGroup>
 </root>

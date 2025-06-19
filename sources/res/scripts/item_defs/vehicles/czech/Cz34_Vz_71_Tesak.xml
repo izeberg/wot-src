@@ -1906,6 +1906,13 @@
 				<showOn>16</showOn>
 				<clipAngle>0.843381</clipAngle>
 			</slot>
+			<slot>
+				<slotType>statTracker</slotType>
+				<slotId>18000</slotId>
+				<position>-1.345167 0.259594 2.870373</position>
+				<rotation>-0 -0 0</rotation>
+				<scale>1 1 1</scale>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>

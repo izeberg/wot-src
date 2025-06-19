@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Statracker_01_anim</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+		<node>
+			<identifier>joint_1</identifier>
+			<transform>
+				<row0>-0.000100 0.996195 -0.087156</row0>
+				<row1>1.000000 0.000100 -0.000000</row1>
+				<row2>0.000009 -0.087156 -0.996195</row2>
+				<row3>0.201350 0.189158 0.098662</row3>
+			</transform>
+			<node>
+				<identifier>joint_1_1</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000000</row0>
+					<row1>1.000000 0.000100 0.000000</row1>
+					<row2>0.000000 -0.000000 -1.000000</row2>
+					<row3>0.066387 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_1_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000009</row0>
+						<row1>0.000000 0.996195 0.087156</row1>
+						<row2>-0.000009 0.087156 -0.996195</row2>
+						<row3>-0.201345 -0.246227 -0.114771</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_1_BlendBone</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000009</row0>
+					<row1>0.996195 0.000100 -0.087156</row1>
+					<row2>0.087156 0.000000 0.996195</row2>
+					<row3>-0.179820 -0.201369 0.114771</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>joint_2</identifier>
+			<transform>
+				<row0>-0.000100 0.996195 -0.087156</row0>
+				<row1>1.000000 0.000100 -0.000000</row1>
+				<row2>0.000009 -0.087156 -0.996195</row2>
+				<row3>0.122456 0.189158 0.098662</row3>
+			</transform>
+			<node>
+				<identifier>joint_2_1</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000000</row0>
+					<row1>1.000000 0.000100 0.000000</row1>
+					<row2>0.000000 -0.000000 -1.000000</row2>
+					<row3>0.066387 0.000000 -0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_2_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000009</row0>
+						<row1>0.000000 0.996195 0.087156</row1>
+						<row2>-0.000009 0.087156 -0.996195</row2>
+						<row3>-0.122450 -0.246227 -0.114771</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_2_BlendBone</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000009</row0>
+					<row1>0.996195 0.000100 -0.087156</row1>
+					<row2>0.087156 0.000000 0.996195</row2>
+					<row3>-0.179827 -0.122475 0.114771</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>joint_3</identifier>
+			<transform>
+				<row0>-0.000100 0.996195 -0.087156</row0>
+				<row1>1.000000 0.000100 -0.000000</row1>
+				<row2>0.000009 -0.087156 -0.996195</row2>
+				<row3>0.043310 0.189158 0.098662</row3>
+			</transform>
+			<node>
+				<identifier>joint_3_1</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000000</row0>
+					<row1>1.000000 0.000100 0.000000</row1>
+					<row2>0.000000 -0.000000 -1.000000</row2>
+					<row3>0.066387 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_3_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000009</row0>
+						<row1>0.000000 0.996195 0.087156</row1>
+						<row2>-0.000009 0.087156 -0.996195</row2>
+						<row3>-0.043304 -0.246227 -0.114772</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_3_BlendBone</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000009</row0>
+					<row1>0.996195 0.000100 -0.087156</row1>
+					<row2>0.087156 0.000000 0.996195</row2>
+					<row3>-0.179835 -0.043329 0.114772</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>joint_4</identifier>
+			<transform>
+				<row0>-0.000100 0.996195 -0.087156</row0>
+				<row1>1.000000 0.000100 -0.000000</row1>
+				<row2>0.000009 -0.087156 -0.996195</row2>
+				<row3>-0.035242 0.189158 0.098662</row3>
+			</transform>
+			<node>
+				<identifier>joint_4_1</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000000</row0>
+					<row1>1.000000 0.000100 0.000000</row1>
+					<row2>0.000000 -0.000000 -1.000000</row2>
+					<row3>0.066387 -0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_4_1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000009</row0>
+						<row1>0.000000 0.996195 0.087156</row1>
+						<row2>-0.000009 0.087156 -0.996195</row2>
+						<row3>0.035248 -0.246227 -0.114773</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_4_BlendBone</identifier>
+				<transform>
+					<row0>-0.000100 1.000000 0.000009</row0>
+					<row1>0.996195 0.000100 -0.087156</row1>
+					<row2>0.087156 0.000000 0.996195</row2>
+					<row3>-0.179843 0.035223 0.114773</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_2_BlendBone</node>
+		<node>joint_2_1_BlendBone</node>
+		<geometry>
+			<vertices>s0_02Shape.vertices</vertices>
+			<stream>s0_02Shape.colour</stream>
+			<primitive>s0_02Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.122000 0.223109 -0.098350</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_1_BlendBone</node>
+		<node>joint_1_1_BlendBone</node>
+		<geometry>
+			<vertices>s0_01Shape.vertices</vertices>
+			<stream>s0_01Shape.colour</stream>
+			<primitive>s0_01Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.201000 0.223109 -0.098350</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s0</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>43</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>6.000000 3.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.145530 0.039462</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_4_BlendBone</node>
+		<node>joint_4_1_BlendBone</node>
+		<geometry>
+			<vertices>s0_04Shape.vertices</vertices>
+			<stream>s0_04Shape.colour</stream>
+			<primitive>s0_04Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.035000 0.223109 -0.098350</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_3_BlendBone</node>
+		<node>joint_3_1_BlendBone</node>
+		<geometry>
+			<vertices>s0_03Shape.vertices</vertices>
+			<stream>s0_03Shape.colour</stream>
+			<primitive>s0_03Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Statrackers/Statracker_01/Statracker_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.043000 0.223109 -0.098350</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.250313 -0.000216 -0.033764</min>
+		<max>0.250313 0.291276 0.112688</max>
+	</boundingBox>
+	<geometrySize>38172</geometrySize>
+</root>

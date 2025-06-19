@@ -40,7 +40,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>12.000000 1.000000 1.000000 0.000000</Vector4>
+						<Vector4>3.000000 1.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						TintlColor
@@ -60,5 +60,4 @@
 		<max>0.087583 0.087584 0.004008</max>
 	</boundingBox>
 	<geometrySize>13672</geometrySize>
-	<minUVDensity>15.768698</minUVDensity>
 </root>

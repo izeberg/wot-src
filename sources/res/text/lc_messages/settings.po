@@ -119,20 +119,21 @@ msgstr ""
 "\n"
 "Уменьшение значения параметра может повысить быстродействие игры."
 
-msgid "RENDER_PIPELINE"
+msgid "RENDER_PIPELINE_QUALITY"
 msgstr "Графика"
 
-msgid "RENDER_PIPELINE/description"
+msgid "RENDER_PIPELINE_QUALITY/description"
 msgstr ""
 "Улучшенная: позволяет добиться максимального качества изображения.\n"
 "\n"
-"Стандартная: позволяет добиться максимального быстродействия, упрощая или отключая некоторые визуальные эффекты."
+"Упрощённая: позволяет добиться максимального быстродействия, упрощая или отключая некоторые визуальные эффекты."
 
-msgid "RENDER_PIPELINE/label"
+msgid "RENDER_PIPELINE_QUALITY/label"
 msgstr "Графика:"
 
-msgid "RENDER_PIPELINE/warning"
-msgstr "Изменение данного параметра вступит в силу после перезапуска игры."
+msgid "RENDER_PIPELINE_QUALITY/warning"
+msgstr ""
+"Изменения этих настроек вступят в силу после перезапуска игрового клиента."
 
 msgid "SEMITRANSPARENT_LEAVES_ENABLED"
 msgstr "Прозрачность листвы"
@@ -217,7 +218,7 @@ msgstr ""
 "• качество ландшафта — высокое, максимум или ультра;\n"
 "• наличие DirectX 11.\n"
 "\n"
-"Если у вас установлен DirectX старше 11-й версии, то изменение настройки недоступно.\n"
+"Если у вас установлен DirectX старше 11-й версии, изменение настройки недоступно.\n"
 "\n"
 "Отключение параметра может повысить быстродействие игры."
 
@@ -258,7 +259,7 @@ msgid "VEHICLE_TRACES_ENABLED/description"
 msgstr ""
 "Отображение следов гусениц и колёс на поверхности.\n"
 "\n"
-"Недоступно при стандартных настройках графики и низком значении качества декалей."
+"Недоступно при упрощённых настройках графики и низком значении качества декалей."
 
 msgid "WATER_QUALITY"
 msgstr "Качество воды"
@@ -1625,6 +1626,12 @@ msgstr "Выключено"
 
 msgid "graphicsSettingsOptions/ON"
 msgstr "Включено"
+
+msgid "graphicsSettingsOptions/PIPELINE_SIMPLIFIED"
+msgstr "Упрощённая"
+
+msgid "graphicsSettingsOptions/PIPELINE_STANDARD"
+msgstr "Улучшенная"
 
 msgid "graphicsSettingsOptions/POINT"
 msgstr "Точечная"

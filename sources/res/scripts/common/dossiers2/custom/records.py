@@ -5248,7 +5248,8 @@ RECORD_DB_IDS.update({('vehTypeFrags', ''): 863,
    ('comp7CutArchiveGriffin', ''): 1913, 
    ('vehicleAchievements', ''): 1936, 
    ('customizationAchievements', ''): 1937, 
-   ('comp7CutArchivePegasus', ''): 1999})
+   ('comp7CutArchivePegasus', ''): 1999, 
+   ('statTrackersVehStatsCut', ''): 2023})
 BATTLE_HERO_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor in [
  (
   'achievements', 'warrior'),

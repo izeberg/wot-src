@@ -36,7 +36,7 @@ package net.wg.gui.lobby.epicBattles.components.prestigeView
       
       private var _awardsNum:int = 0;
       
-      private var _awardSize:int = 80;
+      private var _awardSize:int = 0;
       
       private var _awardGap:int = 0;
       
@@ -129,7 +129,7 @@ package net.wg.gui.lobby.epicBattles.components.prestigeView
       public function set awardSize(param1:int) : void
       {
          var _loc2_:int = 0;
-         if(this._awardSize != param1)
+         if(this._awardSize != param1 && this._awardsNum)
          {
             this._awardSize = param1;
             _loc2_ = 0;

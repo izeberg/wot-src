@@ -195,7 +195,7 @@ DestructibleMaterialInfo = namedtuple('DestructibleMaterialInfo', ('kind', 'armo
                                                                    'useHitAngle',
                                                                    'mayRicochet',
                                                                    'collideOnceOnly',
-                                                                   'checkCaliberForRichet',
+                                                                   'checkCaliberForRicochet',
                                                                    'checkCaliberForHitAngleNorm'))
 
 def _readMaterials(parentXmlCtx, section):
@@ -212,6 +212,6 @@ def _readMaterials(parentXmlCtx, section):
         effectMaterialIdx = EFFECT_MATERIAL_INDEXES_BY_NAMES.get(effectMaterialName)
         if effectMaterialIdx is None:
             _xml.raiseWrongXml(xmlCtx, matName, 'Unknown effect material %s' % effectMaterialName)
-        materials[matKind] = DestructibleMaterialInfo(kind=matKind, armor=_xml.readInt(xmlCtx, matSection, 'armor'), extra=None, vehicleDamageFactor=_xml.readFraction(xmlCtx, matSection, 'vehicleDamageFactor'), useHitAngle=_xml.readBool(xmlCtx, matSection, 'useHitAngle'), mayRicochet=_xml.readBool(xmlCtx, matSection, 'mayRicochet'), collideOnceOnly=True, checkCaliberForRichet=_xml.readBool(xmlCtx, matSection, 'checkCaliberForRichet'), checkCaliberForHitAngleNorm=_xml.readBool(xmlCtx, matSection, 'checkCaliberForHitAngleNorm'), effectMaterialIdx=effectMaterialIdx)
+        materials[matKind] = DestructibleMaterialInfo(kind=matKind, armor=_xml.readInt(xmlCtx, matSection, 'armor'), extra=None, vehicleDamageFactor=_xml.readFraction(xmlCtx, matSection, 'vehicleDamageFactor'), useHitAngle=_xml.readBool(xmlCtx, matSection, 'useHitAngle'), mayRicochet=_xml.readBool(xmlCtx, matSection, 'mayRicochet'), collideOnceOnly=True, checkCaliberForRicochet=_xml.readBool(xmlCtx, matSection, 'checkCaliberForRicochet'), checkCaliberForHitAngleNorm=_xml.readBool(xmlCtx, matSection, 'checkCaliberForHitAngleNorm'), effectMaterialIdx=effectMaterialIdx)
 
     return materials

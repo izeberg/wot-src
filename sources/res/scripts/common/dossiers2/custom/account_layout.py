@@ -100,12 +100,14 @@ class VEHICLE_STATS:
     PRESTIGE_SYSTEM = 'prestigeSystem'
     VEHICLE_ACHIEVEMENTS = 'vehicleAchievements'
     CUSTOMIZATION_ACHIEVEMENTS = 'customizationAchievements'
+    STAT_TRACKERS_VEH_STATS_CUT = 'statTrackersVehStatsCut'
     ALL = (
      FRAGS, A15x15_CUT, A30x30_CUT, A7x7_CUT, HISTORICAL_CUT, FORT_SORTIES_CUT, FORT_BATTLES_CUT, RANKED_CUT,
      RANKED_CUT_SEASON_1, RANKED_CUT_SEASON_2, RANKED_CUT_SEASON_3, RANKED_CUT_ARCHIVE, RANKED_CUT_10X10,
      RATED_7x7_CUT, GLOBAL_MAP_COMMON_CUT, FALLOUT_CUT, MARK_OF_MASTERY_CUT, EPIC_BATTLE_CUT,
      COMP7_CUT_SEASON_1, COMP7_CUT_SEASON_2, COMP7_CUT_SEASON_3, COMP7_CUT_ARCHIVE_GRIFFIN, PRESTIGE_SYSTEM,
-     VEHICLE_ACHIEVEMENTS, CUSTOMIZATION_ACHIEVEMENTS, COMP7_CUT_ARCHIVE_PEGASUS)
+     VEHICLE_ACHIEVEMENTS, CUSTOMIZATION_ACHIEVEMENTS, COMP7_CUT_ARCHIVE_PEGASUS,
+     STAT_TRACKERS_VEH_STATS_CUT)
 
 
 _vehTypeFragsBlockBuilder = DictBlockBuilder(VEHICLE_STATS.FRAGS, 'I', 'H', VEH_TYPE_FRAGS_DEPENDENCIES)
@@ -131,6 +133,7 @@ _comp7CutSeason2BlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_SEASON_2
 _comp7CutSeason3BlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_SEASON_3, 'I', 'IIII', {})
 _comp7CutArchiveGriffinBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_GRIFFIN, 'I', 'IIII', {})
 _comp7CutArchivePegasusBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_PEGASUS, 'I', 'IIII', {})
+_statTrackersVehStatsCutBlockBuilder = DictBlockBuilder(VEHICLE_STATS.STAT_TRACKERS_VEH_STATS_CUT, 'I', 'I', {})
 _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'fragsBeast', 'sniperSeries', 'maxSniperSeries', 'invincibleSeries',
  'maxInvincibleSeries', 'diehardSeries', 'maxDiehardSeries', 'killingSeries',
@@ -532,7 +535,8 @@ accountDossierLayout = (
  _customizationAchievementsBlockBuilder,
  _comp7ArchivePegasusBlockBuilder, _maxComp7ArchivePegasusBlockBuilder,
  _comp7CutArchivePegasusBlockBuilder,
- _commendationsBlockBuilder)
+ _commendationsBlockBuilder,
+ _statTrackersVehStatsCutBlockBuilder)
 ACCOUNT_DOSSIER_BLOCKS = {b.name:b for b in accountDossierLayout}
 ACCOUNT_DOSSIER_STATIC_BLOCKS = frozenset(b.name for b in accountDossierLayout if type(b) == StaticSizeBlockBuilder)
 ACCOUNT_DOSSIER_BINARY_SET_BLOCKS = [ b.name for b in accountDossierLayout if type(b) == BinarySetDossierBlockBuilder ]

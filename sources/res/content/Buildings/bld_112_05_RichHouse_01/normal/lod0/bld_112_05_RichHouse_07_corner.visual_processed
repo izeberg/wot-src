@@ -51,7 +51,7 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						diffuseMap2
@@ -92,5 +92,4 @@
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>783174</geometrySize>
-	<minUVDensity>0.000629</minUVDensity>
 </root>

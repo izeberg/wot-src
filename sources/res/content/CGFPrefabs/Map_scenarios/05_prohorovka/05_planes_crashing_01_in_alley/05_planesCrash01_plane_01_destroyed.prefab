@@ -3299,6 +3299,611 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>SequenceComponent</type>
+			<version>3</version>
+			<component>
+				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>pauseOnEnd</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>alwaysEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>duration</name>
+						<value>10</value>
+					</property>
+					<property>
+						<name>tracks</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>ae8e5833-20dd-353f-8523-195838cf4da4</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.9333
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>e0605a1f-078e-35d1-9f89-33f1d938c7fe</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.33
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>83168ac7-4399-3409-906f-53cad38840bf</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.0666
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>00d604ad-47e1-3914-9154-4d6096663ce2</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>595223fe-d0ff-3183-ab4b-641dddcb53d3</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>93b6ef4c-dfdd-3ff6-99ff-046132872a5d</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>63bcaae6-d5fc-420a-862f-d71134a630b2</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>8</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>8</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 0 0
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>b4367740-2f3c-4caf-9137-e1636abd837b</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>458b06dc-0044-4ce8-aad5-b70fc4f55148</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.4
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>bf6cddfb-1894-49bc-8b08-3764dd423222</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>35f35d3f-c7af-4b9c-aab4-8bb580225f03</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.5
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>d527d645-143a-4689-9321-5dddba5e945e</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>2dd730d3-f0c4-444a-8a5a-76bbf9162bc4</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.93
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>f74476f6-1607-4219-a72c-8e63901e7727</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>f549dd74-6a09-413a-8a95-097e0d8d12ca</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>86235d85-c758-4301-b745-fc34a6c40801</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.9
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>c821b219-6fff-46af-9b4e-b489e72dc3a7</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.8
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>354846d1-6aae-48d2-b242-32125021608d</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.5
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>44c5a009-542d-4045-b513-ebb29331a9c2</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>b83f2f38-25a9-43d4-802c-63733b616c41</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.33
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>36d90e88-64da-49bd-8c8e-956e5ad91c11</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.91
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>Transform</type>
 			<version>1</version>
 			<component>
@@ -8352,7 +8957,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8373,7 +8978,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8394,7 +8999,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8415,7 +9020,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8436,7 +9041,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8457,7 +9062,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8478,7 +9083,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8568,7 +9173,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8589,7 +9194,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8652,7 +9257,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8673,7 +9278,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -8694,7 +9299,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -9012,619 +9617,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SequenceComponent</type>
-			<version>3</version>
-			<component>
-				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>pauseOnEnd</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>alwaysEnabled</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>duration</name>
-						<value>10</value>
-					</property>
-					<property>
-						<name>tracks</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>ae8e5833-20dd-353f-8523-195838cf4da4</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.9333
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>e0605a1f-078e-35d1-9f89-33f1d938c7fe</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.33
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>83168ac7-4399-3409-906f-53cad38840bf</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.0666
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>00d604ad-47e1-3914-9154-4d6096663ce2</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>595223fe-d0ff-3183-ab4b-641dddcb53d3</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>93b6ef4c-dfdd-3ff6-99ff-046132872a5d</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>63bcaae6-d5fc-420a-862f-d71134a630b2</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>2</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>Animator</value>
-													</property>
-													<property>
-														<name>property</name>
-														<value>time</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 0 0
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 0 0
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>real</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>8</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>8</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 0 0
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 0 0
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
-										</collection>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>b4367740-2f3c-4caf-9137-e1636abd837b</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.8
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>458b06dc-0044-4ce8-aad5-b70fc4f55148</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.4
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>bf6cddfb-1894-49bc-8b08-3764dd423222</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.8
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>35f35d3f-c7af-4b9c-aab4-8bb580225f03</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.5
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>d527d645-143a-4689-9321-5dddba5e945e</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>2dd730d3-f0c4-444a-8a5a-76bbf9162bc4</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.93
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>f74476f6-1607-4219-a72c-8e63901e7727</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.8
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>f549dd74-6a09-413a-8a95-097e0d8d12ca</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.8
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>86235d85-c758-4301-b745-fc34a6c40801</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.9
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>c821b219-6fff-46af-9b4e-b489e72dc3a7</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.8
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>354846d1-6aae-48d2-b242-32125021608d</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.5
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>44c5a009-542d-4045-b513-ebb29331a9c2</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>2</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>b83f2f38-25a9-43d4-802c-63733b616c41</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.33
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>36d90e88-64da-49bd-8c8e-956e5ad91c11</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.91
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>AnimationTimeSyncComponent</type>
-			<version>1</version>
-			<component>
-				<UUID>63bcaae6-d5fc-420a-862f-d71134a630b2</UUID>
-				<flags>35</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>NetworkComponent</type>
 			<version>1</version>
 			<component>
@@ -9650,14 +9642,6 @@
 					<property>
 						<name>filterType</name>
 						<value>0</value>
-					</property>
-					<property>
-						<name>lagDelay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>extrapolate</name>
-						<value>1</value>
 					</property>
 					<property>
 						<name>detailed</name>
@@ -12983,29 +12967,45 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>AIZonesPatch</type>
+			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
-				<UUID>36d90e88-64da-49bd-8c8e-956e5ad91c11</UUID>
-				<flags>32</flags>
+				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
+				<flags>2</flags>
 				<config>
 					<property>
-						<name>patchTag</name>
+						<name>patchName</name>
 						<value>05_planesCrash01_ai</value>
 					</property>
 				</config>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>NavmeshPatch</type>
-			<version>2</version>
+			<type>AIDynamicEvent</type>
+			<version>1</version>
 			<component>
-				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
-				<flags>34</flags>
+				<UUID>36d90e88-64da-49bd-8c8e-956e5ad91c11</UUID>
+				<flags>32</flags>
 				<config>
 					<property>
-						<name>patchName</name>
+						<name>navmeshPatchTag</name>
 						<value>05_planesCrash01_ai</value>
+					</property>
+					<property>
+						<name>zonePatchTag</name>
+						<value>05_planesCrash01_ai</value>
+					</property>
+					<property>
+						<name>coverPatchTag</name>
+						<value>05_planesCrash01_ai</value>
+					</property>
+					<property>
+						<name>deathZoneGUID</name>
+						<value/>
+					</property>
+					<property>
+						<name>dangerMapPatchTag</name>
+						<value/>
 					</property>
 				</config>
 			</component>
@@ -14145,14 +14145,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ShotsReceiver</type>
-			<version>1</version>
-			<component>
-				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
-				<flags>35</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>VehicleDamageLoggerComponent</type>
 			<version>1</version>
 			<component>
@@ -14181,6 +14173,14 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>ShotsReceiver</type>
+			<version>1</version>
+			<component>
+				<UUID>c09879f3-bec5-496f-9e54-b82a9a6993a7</UUID>
+				<flags>35</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>ShootingObstacle</type>
 			<version>1</version>
 			<component>
@@ -14190,10 +14190,6 @@
 					<property>
 						<name>colliders</name>
 						<link>68cf5b8c-7290-32a4-b24e-5a8b1dd2b1b3</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14210,10 +14206,6 @@
 						<link>cba036ea-5567-3b80-ac8e-68079317fc40</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14226,10 +14218,6 @@
 					<property>
 						<name>colliders</name>
 						<link>66a1c38e-9286-37ec-8c0c-db5f8ed2997f</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14246,10 +14234,6 @@
 						<link>ff26e843-2a7b-33b5-845f-f1803aa8b003</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14262,10 +14246,6 @@
 					<property>
 						<name>colliders</name>
 						<link>3e737091-5e27-3cea-86fc-5bf0da9bf962</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14282,10 +14262,6 @@
 						<link>fe23a874-2a27-30e7-848b-15460e3f4fc2</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14298,10 +14274,6 @@
 					<property>
 						<name>colliders</name>
 						<link>842a93d2-f185-3c62-b487-75ff708f1d3e</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14318,10 +14290,6 @@
 						<link>3e751066-3278-3c5c-97e3-19b7dc393fa5</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14334,10 +14302,6 @@
 					<property>
 						<name>colliders</name>
 						<link>78479cde-dac8-3bb6-b668-845b106ca0b1</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14354,10 +14318,6 @@
 						<link>4f21290e-974e-3089-8b03-b9cc8e8fd963</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14370,10 +14330,6 @@
 					<property>
 						<name>colliders</name>
 						<link>6d7f4f4f-5d34-3428-b1fd-7f1083c31ee3</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14390,10 +14346,6 @@
 						<link>88324391-0abd-308c-886a-fd6a1af8c793</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14406,10 +14358,6 @@
 					<property>
 						<name>colliders</name>
 						<link>2508a692-46a6-3501-9ead-e9591b7a5a35</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14426,10 +14374,6 @@
 						<link>04284ed6-1184-3859-b437-9c59b2203eed</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14442,10 +14386,6 @@
 					<property>
 						<name>colliders</name>
 						<link>8701f205-85aa-33ff-aea4-f90841424ede</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14462,10 +14402,6 @@
 						<link>faa74e73-b830-3d4e-b51f-7878fc5f4725</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14478,10 +14414,6 @@
 					<property>
 						<name>colliders</name>
 						<link>2106f336-c757-30ed-ba92-b89a1f79c164</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14498,10 +14430,6 @@
 						<link>a3107547-8b41-3669-bc9e-1dc98de25aeb</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14514,10 +14442,6 @@
 					<property>
 						<name>colliders</name>
 						<link>c219b71d-dc20-337d-b885-864f7cd06921</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14534,10 +14458,6 @@
 						<link>2385b4f5-0582-3e0e-ae98-d2f4a76552c1</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14550,10 +14470,6 @@
 					<property>
 						<name>colliders</name>
 						<link>af3aac95-005f-37a0-a54a-5df7fc5b1d4f</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14570,10 +14486,6 @@
 						<link>37076898-3b37-30b2-befa-924f532c5864</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14586,10 +14498,6 @@
 					<property>
 						<name>colliders</name>
 						<link>3efde835-d10b-3f71-bf2a-dbe166f1f9a0</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14606,10 +14514,6 @@
 						<link>687b4b5b-06e6-311b-94e1-4933f342bba2</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14622,10 +14526,6 @@
 					<property>
 						<name>colliders</name>
 						<link>741d1f02-bf04-316b-9edb-22c170490933</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14642,10 +14542,6 @@
 						<link>99a84737-8bc2-3f25-b100-cde27a1e5ab3</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14658,10 +14554,6 @@
 					<property>
 						<name>colliders</name>
 						<link>8dfab985-b0f8-37fd-b4d1-e44dc5d7066e</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14678,10 +14570,6 @@
 						<link>898eba0b-3f63-3e8f-9af7-997ff57673ac</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14694,10 +14582,6 @@
 					<property>
 						<name>colliders</name>
 						<link>8cd3bbe6-eb83-3eee-bf53-e527c17ed7bd</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14714,10 +14598,6 @@
 						<link>6cb1f6cc-2e0d-3321-861a-5990ec79cb43</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14730,10 +14610,6 @@
 					<property>
 						<name>colliders</name>
 						<link>44b7f32d-ab7f-31fb-b57d-e4c2617fde4c</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14750,10 +14626,6 @@
 						<link>08c0bea5-cb30-37ed-bbaf-760e26890bef</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14766,10 +14638,6 @@
 					<property>
 						<name>colliders</name>
 						<link>0fd8ea6b-271d-3c46-8575-fde4d6435eca</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14786,10 +14654,6 @@
 						<link>654a6296-a90b-3ff5-a893-bd8a8c665202</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14802,10 +14666,6 @@
 					<property>
 						<name>colliders</name>
 						<link>8b562d09-bf1e-3899-9293-80491202d60a</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14822,10 +14682,6 @@
 						<link>62271204-02e2-3b9d-b910-7c1d7e294f97</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14838,10 +14694,6 @@
 					<property>
 						<name>colliders</name>
 						<link>44e79dcd-c598-3871-8aed-17624eb4f32c</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -14858,10 +14710,6 @@
 						<link>7c0bbc03-646b-39cc-96fa-ec3b058de59a</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>c09879f3-bec5-496f-9e54-b82a9a6993a7</link>
 					</property>
@@ -14874,10 +14722,6 @@
 					<property>
 						<name>colliders</name>
 						<link>dbaf0866-1df1-3ad6-8ace-dca161a73cab</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>

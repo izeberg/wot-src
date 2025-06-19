@@ -2526,7 +2526,7 @@ msgid "serviceChannelMessages/epicReward/battlePassPoints"
 msgstr "• Очки Боевого пропуска"
 
 msgid "serviceChannelMessages/epicReward/brochure_gift"
-msgstr "• Универсальное пособие"
+msgstr "• Универсальная брошюра"
 
 msgid "serviceChannelMessages/epicReward/crystal"
 msgstr "• Боны"
@@ -2537,8 +2537,14 @@ msgstr "• Очки боевых резервов"
 msgid "serviceChannelMessages/epicReward/expequipments_gift"
 msgstr "• Экспериментальное оборудование на выбор"
 
+msgid "serviceChannelMessages/epicReward/mentoringLicense_gift"
+msgstr "• Сертификат наставника"
+
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• Бланки переподготовки"
+
+msgid "serviceChannelMessages/epicReward/universalBook_gift"
+msgstr "• Универсальное пособие"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "От администрации получено юбилейных монет: %(eventCoin)s."

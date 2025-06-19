@@ -10051,6 +10051,99 @@
 		<name>BattlePass 2025</name>
 	</itemGroup>
 	<itemGroup>
+		<name>PUB CN360 Relaunch anniversary aka 820</name>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>projection_decals 160g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>1240</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_920.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_920</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1241</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_921.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_921</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+		<projection_decal>
+			<id>1242</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_922.dds</texture>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_922</userString>
+			<tags>formfactor_square disableVerticalMirror</tags>
+			<mirror>false</mirror>
+		</projection_decal>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:projection_decals/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>projection_decals 160g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A104_M4A3E8A usa:A126_PzVI_Tiger_II_capt usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<projection_decal>
+			<id>1248</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_931.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_autumn_2025_blue_silver/label</userString>
+			<tags>styleOnly formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_937.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1249</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_932.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_autumn_2025_blue_gold/label</userString>
+			<tags>styleOnly formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_937.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1250</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_933.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_winter_2026_red_silver/label</userString>
+			<tags>styleOnly formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_937.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1251</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_934.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_winter_2026_red_gold/label</userString>
+			<tags>styleOnly formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_937.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1252</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_935.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_spring_2026_green_silver/label</userString>
+			<tags>styleOnly formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_937.dds</glossTexture>
+		</projection_decal>
+		<projection_decal>
+			<id>1253</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_936.dds</texture>
+			<userString>#vehicle_customization:camouflage/onslaught_spring_2026_green_gold/label</userString>
+			<tags>styleOnly formfactor_square direction_left_to_right disableVerticalMirror</tags>
+			<mirror>false</mirror>
+			<glossTexture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_937.dds</glossTexture>
+		</projection_decal>
+		<name>Onslaught 2025 2026</name>
+	</itemGroup>
+	<itemGroup>
 		<userString>#vehicle_customization:projection_decals/animals</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -12231,7 +12324,7 @@
 		<name>GB HT Line</name>
 	</itemGroup>
 	<itemGroup>
-		<name>Boosteroid</name>
+		<name>Extraordinary</name>
 		<userString>#vehicle_customization:projection_decals/special</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -12295,6 +12388,20 @@
 			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_917.dds</texture>
 			<mirror>true</mirror>
 			<userString>#vehicle_customization:projection_decals/special/projection_decal_917</userString>
+			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
+		</projection_decal>
+		<projection_decal>
+			<id>16051</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_949.dds</texture>
+			<mirror>true</mirror>
+			<tags>disableVerticalMirror formfactor_square direction_right_to_left</tags>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_949</userString>
+		</projection_decal>
+		<projection_decal>
+			<id>16052</id>
+			<texture>gui/maps/vehicles/decals/projection_decals/special/projection_decal_950.dds</texture>
+			<mirror>true</mirror>
+			<userString>#vehicle_customization:projection_decals/special/projection_decal_950</userString>
 			<tags>direction_right_to_left disableVerticalMirror formfactor_square</tags>
 		</projection_decal>
 	</itemGroup>

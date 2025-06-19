@@ -11,13 +11,12 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.data.constants.Cursors;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CUSTOMIZATION_ALIASES;
-   import net.wg.data.constants.generated.TEXT_MANAGER_STYLES;
    import net.wg.gui.components.advanced.tutorial.TutorialHint;
    import net.wg.gui.events.LobbyEvent;
    import net.wg.gui.interfaces.IMagneticClickHandler;
+   import net.wg.gui.lobby.vehicleCustomization.controls.C11nInnerEntryPoint;
    import net.wg.gui.lobby.vehicleCustomization.controls.CarouselItemRenderer;
    import net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttachedBase;
-   import net.wg.gui.lobby.vehicleCustomization.controls.ProgressionEntryPoint;
    import net.wg.gui.lobby.vehicleCustomization.controls.magneticTool.MagneticToolController;
    import net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet.CustomizationPropertiesSheet;
    import net.wg.gui.lobby.vehicleCustomization.controls.seasonBar.CustomizaionSeasonsBar;
@@ -26,6 +25,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorsSetVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationAnchorsStateVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationHeaderVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationInnerEntryPointVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSlotIdVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationSlotUpdateVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselRendererVO;
@@ -60,11 +60,15 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const INV_FOCUS_CHAIN:String = "InvFocusChain";
       
+      private static const INV_ENTRY_POINTS_SIZE:String = "InvEntryPointsSize";
+      
       private static const HIDE_CONTAINER_NAME:String = "hideContainer";
       
       private static const SIDEBAR_MIN_SCREEN_SIZE:int = 1367;
       
       private static const SEASON_BAR_DEFAULT_OFFSET_X:int = 50;
+      
+      private static const SEASON_TOP_SHIFT:int = 54;
       
       private static const SEASON_BAR_SMALL_OFFSET_X:int = -150;
       
@@ -88,13 +92,23 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const STYLE_INFO_ANIMATION_DELAY:int = 200;
       
-      private static const ENTRY_POINT:int = -35;
-      
-      private static const ENTRY_POINT_MIN:int = 10;
-      
-      public static const ENTRY_POINT_SCALE:Number = 0.9;
+      public static const ENTRY_POINT_SCALE:Number = 1;
       
       private static const ENTRY_POINT_MIN_SCALE:Number = 0.75;
+      
+      private static const FIRST_ENTRY_POINT_SMALL_GAP:int = 13;
+      
+      private static const FIRST_ENTRY_POINT_GAP:int = 20;
+      
+      private static const ENTRY_POINT_SMALL_START_X:int = 40;
+      
+      private static const ENTRY_POINT_START_X:int = 0;
+      
+      private static const ENTRY_POINT_SMALL_SHORT_START_X:int = 10;
+      
+      private static const ENTRY_POINT_SHORT_START_X:int = 0;
+      
+      private static const SINGLE_ENTRY_POINT_Y_SHIFT:int = 21;
        
       
       public var notification:CustomizationNotification = null;
@@ -112,8 +126,6 @@ package net.wg.gui.lobby.vehicleCustomization
       public var background:Sprite = null;
       
       public var seasonsBar:CustomizaionSeasonsBar = null;
-      
-      public var progressionEntryPoint:ProgressionEntryPoint = null;
       
       private var _actualWidth:int = 0;
       
@@ -139,7 +151,9 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private var _customizationAnchorInitData:CustomizationAnchorInitVO = null;
       
-      private var _progressionEntryPointVisible:Boolean = false;
+      private var _innerEntriesData:Vector.<CustomizationInnerEntryPointVO> = null;
+      
+      private var _entries:Vector.<C11nInnerEntryPoint> = null;
       
       private var _tweens:Vector.<Tween>;
       
@@ -178,7 +192,6 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          var _loc1_:Boolean = false;
          var _loc2_:int = 0;
-         var _loc3_:Number = NaN;
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
@@ -190,13 +203,13 @@ package net.wg.gui.lobby.vehicleCustomization
             this.bottomPanel.width = this._actualWidth;
             this.background.width = App.appWidth;
             this.background.height = App.appHeight;
-            _loc3_ = !!_loc1_ ? Number(ENTRY_POINT_MIN_SCALE) : Number(ENTRY_POINT_SCALE);
-            this.progressionEntryPoint.setScale(_loc3_);
-            this.progressionEntryPoint.x = 0;
-            this.progressionEntryPoint.y = this.bottomPanel.y - this.progressionEntryPoint.height;
-            this.progressionEntryPoint.y += !!_loc1_ ? ENTRY_POINT_MIN : ENTRY_POINT;
             this.bottomPanel.invalidateSize();
             this.updateSeasonsBar();
+            invalidate(INV_ENTRY_POINTS_SIZE);
+         }
+         if(isInvalid(INV_ENTRY_POINTS_SIZE))
+         {
+            this.updateInnerEntryPoints();
          }
          if(isInvalid(INV_FOCUS_CHAIN))
          {
@@ -222,7 +235,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this.customizationHeader.addEventListener(CustomizationEvent.CLOSE_VIEW,this.onCloseViewHandler);
          this.customizationHeader.addEventListener(CustomizationEvent.SHOW_PROGRESSION_INFO,this.onShowProgressionInfoHandler);
          addEventListener(CustomizationEvent.SHOW_BUY_WINDOW,this.onShowBuyWindowHandler);
-         addEventListener(CustomizationEvent.SHOW_PROGRESSION_DECALS_WINDOW,this.onProgressionEntryPointHandler);
+         addEventListener(CustomizationEvent.ENTRY_POINT_CLICKED,this.onEntryPointClickHandler);
          addEventListener(CustomizationEvent.SHOW_SHOP,this.onShopEntryPointHandler);
          addEventListener(CustomizationItemEvent.SEEN_ITEM,this.onSeenItemHandler);
          addEventListener(CustomizationAnchorEvent.SELECT_ANCHOR,this.onSelectAnchorHandler);
@@ -251,8 +264,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this.addToHideContainer();
          propertiesSheetSetS(this.propertiesSheet,this.propertiesSheet.width,this.propertiesSheet.height,CustomizationPropertiesSheet.OFFSET_X,CustomizationPropertiesSheet.OFFSET_Y);
          this.styleInfo.visible = false;
-         this.progressionEntryPoint.label = App.textMgr.getTextStyleById(TEXT_MANAGER_STYLES.MIDDLE_TITLE,App.utils.locale.makeString(VEHICLE_CUSTOMIZATION.PROGRESSION_ENTRYPOINT));
-         this.updateProgressionEntryPointVisibility();
+         this.invalidateInnerEntriesData();
       }
       
       override protected function onPopulate() : void
@@ -265,6 +277,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function onDispose() : void
       {
+         var _loc1_:C11nInnerEntryPoint = null;
          App.popoverMgr.hide();
          App.stage.removeEventListener(LobbyEvent.DRAGGING_START,this.onStageDraggingStartHandler);
          App.stage.removeEventListener(LobbyEvent.DRAGGING_END,this.onStageDraggingEndHandler);
@@ -275,7 +288,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this.customizationHeader.removeEventListener(CustomizationEvent.CLOSE_VIEW,this.onCloseViewHandler);
          this.customizationHeader.removeEventListener(CustomizationEvent.SHOW_PROGRESSION_INFO,this.onShowProgressionInfoHandler);
          removeEventListener(CustomizationEvent.SHOW_BUY_WINDOW,this.onShowBuyWindowHandler);
-         removeEventListener(CustomizationEvent.SHOW_PROGRESSION_DECALS_WINDOW,this.onProgressionEntryPointHandler);
+         removeEventListener(CustomizationEvent.ENTRY_POINT_CLICKED,this.onEntryPointClickHandler);
          removeEventListener(CustomizationEvent.SHOW_SHOP,this.onShopEntryPointHandler);
          this._gameInputMgr.clearKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.onKeyDownHandler);
          this._gameInputMgr.clearKeyHandler(Keyboard.LEFT,KeyboardEvent.KEY_DOWN,this.onKeyDownHandler);
@@ -310,7 +323,6 @@ package net.wg.gui.lobby.vehicleCustomization
          this._tweens = null;
          this.notification.dispose();
          this.notification = null;
-         this._hideContainer = null;
          this._cursor = null;
          this.customizationHeader.dispose();
          this.customizationHeader = null;
@@ -325,10 +337,21 @@ package net.wg.gui.lobby.vehicleCustomization
          this.background = null;
          this.seasonsBar.dispose();
          this.seasonsBar = null;
-         this.progressionEntryPoint.dispose();
-         this.progressionEntryPoint = null;
+         if(this._entries)
+         {
+            for each(_loc1_ in this._entries)
+            {
+               _loc1_.dispose();
+               _loc1_.removeEventListener(Event.RESIZE,this.onEntryPointResizeChanged);
+               this._hideContainer.removeChild(_loc1_);
+            }
+            this._entries.splice(0,this._entries.length);
+            this._entries = null;
+         }
+         this._hideContainer = null;
          this._customizationAnchorInitData = null;
          App.stage.dispatchEvent(new KeyboardEvent(KeyboardEvent.KEY_UP,true,false,0,Keyboard.ESCAPE));
+         this._innerEntriesData = null;
          super.onDispose();
       }
       
@@ -440,6 +463,12 @@ package net.wg.gui.lobby.vehicleCustomization
          this._magneticTool.attachDataToCursor(param1);
       }
       
+      override protected function updateInnerEntries(param1:Vector.<CustomizationInnerEntryPointVO>) : void
+      {
+         this._innerEntriesData = param1;
+         this.invalidateInnerEntriesData();
+      }
+      
       public function as_enableDND(param1:Boolean) : void
       {
          this._magneticTool.enableSelected = param1;
@@ -450,12 +479,6 @@ package net.wg.gui.lobby.vehicleCustomization
          this.resetMagneticTool();
          this.alpha = !!param1 ? Number(SHOW_ALPHA) : Number(HIDE_ALPHA);
          mouseEnabled = mouseChildren = param1;
-      }
-      
-      public function as_progressionEntryPointVisible(param1:Boolean) : void
-      {
-         this._progressionEntryPointVisible = param1;
-         this.updateProgressionEntryPointVisibility();
       }
       
       public function as_releaseItem(param1:Boolean) : void
@@ -485,9 +508,131 @@ package net.wg.gui.lobby.vehicleCustomization
       {
       }
       
-      private function updateProgressionEntryPointVisibility() : void
+      private function updateInnerEntryPoints() : void
       {
-         this.progressionEntryPoint.visible = this._progressionEntryPointVisible;
+         if(this._entries == null || this._entries.length <= 0)
+         {
+            return;
+         }
+         var _loc1_:C11nInnerEntryPoint = this.getFirstVisibleEntry();
+         if(_loc1_ == null)
+         {
+            return;
+         }
+         var _loc2_:Boolean = App.appWidth < SIDEBAR_MIN_SCREEN_SIZE;
+         var _loc3_:Boolean = App.appHeight < MIN_RESOLUTION;
+         var _loc4_:Number = !!_loc3_ ? Number(ENTRY_POINT_MIN_SCALE) : Number(ENTRY_POINT_SCALE);
+         var _loc5_:int = this.getInnerEntriesCount();
+         var _loc6_:Boolean = _loc5_ > 1;
+         var _loc7_:int = this.bottomPanel.y - (this.bottomPanel.y >> 2);
+         var _loc8_:int = _loc1_.height * _loc4_;
+         var _loc9_:int = (!!_loc6_ ? FIRST_ENTRY_POINT_SMALL_GAP : FIRST_ENTRY_POINT_GAP) * _loc4_;
+         var _loc10_:int = _loc8_ + _loc9_;
+         var _loc11_:int = Values.ZERO;
+         if(_loc2_)
+         {
+            _loc11_ = !!_loc6_ ? int(ENTRY_POINT_SMALL_SHORT_START_X) : int(ENTRY_POINT_SHORT_START_X);
+         }
+         else
+         {
+            _loc11_ = !!_loc6_ ? int(ENTRY_POINT_SMALL_START_X) : int(ENTRY_POINT_START_X);
+         }
+         var _loc12_:int = _loc7_ - (_loc5_ * _loc10_ - _loc9_ >> 1) - _loc1_.hitMc.y * _loc4_ + (!!_loc6_ ? 0 : SINGLE_ENTRY_POINT_Y_SHIFT);
+         var _loc13_:C11nInnerEntryPoint = null;
+         var _loc14_:int = this._entries.length;
+         var _loc15_:int = 0;
+         while(_loc15_ < _loc14_)
+         {
+            _loc13_ = this._entries[_loc15_];
+            if(this._innerEntriesData[_loc15_].isVisible)
+            {
+               _loc13_.setScale(_loc4_);
+               _loc13_.x = _loc11_;
+               _loc13_.y = _loc12_;
+               _loc12_ += _loc10_;
+            }
+            _loc15_++;
+         }
+      }
+      
+      private function getFirstVisibleEntry() : C11nInnerEntryPoint
+      {
+         var _loc1_:C11nInnerEntryPoint = null;
+         for each(_loc1_ in this._entries)
+         {
+            if(_loc1_.visible)
+            {
+               return _loc1_;
+            }
+         }
+         return null;
+      }
+      
+      private function getInnerEntriesCount() : uint
+      {
+         var _loc2_:CustomizationInnerEntryPointVO = null;
+         if(!this._innerEntriesData)
+         {
+            return Values.ZERO;
+         }
+         var _loc1_:int = Values.ZERO;
+         for each(_loc2_ in this._innerEntriesData)
+         {
+            if(_loc2_.isVisible)
+            {
+               _loc1_++;
+            }
+         }
+         return _loc1_;
+      }
+      
+      private function invalidateInnerEntriesData() : void
+      {
+         if(this._innerEntriesData == null)
+         {
+            return;
+         }
+         var _loc1_:C11nInnerEntryPoint = null;
+         var _loc2_:uint = this._innerEntriesData.length;
+         var _loc3_:Boolean = this.getInnerEntriesCount() > 1;
+         var _loc4_:int = 0;
+         if(this._entries == null)
+         {
+            this._entries = new Vector.<C11nInnerEntryPoint>();
+            this.createHideContainer();
+         }
+         var _loc5_:int = this._entries.length;
+         if(_loc5_ > _loc2_)
+         {
+            _loc4_ = _loc5_ - _loc2_;
+            while(_loc4_ > 0)
+            {
+               _loc1_ = this._entries.pop();
+               this._hideContainer.removeChild(_loc1_);
+               _loc1_.dispose();
+               _loc1_ = null;
+               _loc4_--;
+            }
+         }
+         _loc4_ = 0;
+         while(_loc4_ < _loc2_)
+         {
+            this._innerEntriesData[_loc4_].isSmall = _loc3_;
+            if(_loc4_ < _loc5_)
+            {
+               this._entries[_loc4_].setData(this._innerEntriesData[_loc4_]);
+            }
+            else
+            {
+               _loc1_ = App.utils.classFactory.getComponent(CUSTOMIZATION_ALIASES.INNER_ENTRY_POINT,C11nInnerEntryPoint);
+               _loc1_.addEventListener(Event.RESIZE,this.onEntryPointResizeChanged);
+               this._hideContainer.addChild(_loc1_);
+               this._entries.push(_loc1_);
+               _loc1_.initData(this._innerEntriesData[_loc4_]);
+            }
+            _loc4_++;
+         }
+         invalidateSize();
       }
       
       private function getMagneticClickHandlers() : Vector.<IMagneticClickHandler>
@@ -511,23 +656,29 @@ package net.wg.gui.lobby.vehicleCustomization
          }
       }
       
+      private function createHideContainer() : void
+      {
+         if(this._hideContainer == null)
+         {
+            this._hideContainer = new Sprite();
+            this._hideContainer.name = HIDE_CONTAINER_NAME;
+            addChild(this._hideContainer);
+         }
+      }
+      
       private function addToHideContainer() : void
       {
-         this._hideContainer = new Sprite();
-         this._hideContainer.name = HIDE_CONTAINER_NAME;
-         addChild(this._hideContainer);
+         this.createHideContainer();
          removeChild(this.seasonsBar);
          removeChild(this.bottomPanel);
          removeChild(this.vehicleView);
          removeChild(this.propertiesSheet);
          removeChild(this.notification);
-         removeChild(this.progressionEntryPoint);
          this._hideContainer.addChild(this.vehicleView);
          this._hideContainer.addChild(this.notification);
          this._hideContainer.addChild(this.seasonsBar);
          this._hideContainer.addChild(this.bottomPanel);
          this._hideContainer.addChild(this.propertiesSheet);
-         this._hideContainer.addChild(this.progressionEntryPoint);
       }
       
       private function removeTweens() : void
@@ -586,10 +737,20 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function updateSeasonsBar() : void
       {
+         var _loc4_:int = 0;
          var _loc1_:Boolean = this.styleInfo.visible || App.appWidth < SIDEBAR_MIN_SCREEN_SIZE;
          var _loc2_:int = !!_loc1_ ? int(SEASON_BAR_SMALL_OFFSET_X) : int(SEASON_BAR_DEFAULT_OFFSET_X);
+         var _loc3_:Boolean = this.getInnerEntriesCount() > 1;
          this.seasonsBar.x = _loc2_;
-         this.seasonsBar.y = (this._actualHeight - this.seasonsBar.height >> 1) + (!!this.styleInfo.visible ? SEASON_BAR_STYLE_INFO_OFFSET_Y : SEASON_BAR_OFFSET_Y);
+         if(_loc3_ && !this.styleInfo.visible)
+         {
+            _loc4_ = this.bottomPanel.y >> 2;
+            this.seasonsBar.y = Math.max(Values.ZERO,_loc4_ - (this.seasonsBar.height >> 1)) + SEASON_TOP_SHIFT;
+         }
+         else
+         {
+            this.seasonsBar.y = (this._actualHeight - this.seasonsBar.height >> 1) + (!!this.styleInfo.visible ? SEASON_BAR_STYLE_INFO_OFFSET_Y : SEASON_BAR_OFFSET_Y);
+         }
          this.updateSeasonRenders(_loc1_);
       }
       
@@ -614,6 +775,11 @@ package net.wg.gui.lobby.vehicleCustomization
          this.vehicleView.anchorsSet.onMagneticReset();
          this._magneticTool.resetSelect();
          this.clearSelectedItem(param1);
+      }
+      
+      private function onEntryPointResizeChanged(param1:Event) : void
+      {
+         invalidate(INV_ENTRY_POINTS_SIZE);
       }
       
       private function onShopEntryPointHandler(param1:CustomizationEvent) : void
@@ -889,9 +1055,17 @@ package net.wg.gui.lobby.vehicleCustomization
          onButtonPressedS(param1.name);
       }
       
-      private function onProgressionEntryPointHandler(param1:CustomizationEvent) : void
+      private function onEntryPointClickHandler(param1:CustomizationEvent) : void
       {
-         onProgressionEntryPointClickS();
+         var _loc2_:int = this._innerEntriesData.length;
+         var _loc3_:int = 0;
+         while(_loc3_ < _loc2_)
+         {
+            this._innerEntriesData[_loc3_].isSelected = this._innerEntriesData[_loc3_].itemId == param1.group && !this._innerEntriesData[_loc3_].isSelected;
+            _loc3_++;
+         }
+         this.invalidateInnerEntriesData();
+         onEntryPointClickS(param1.group);
       }
       
       private function onKeyDownHandler(param1:InputEvent = null) : void

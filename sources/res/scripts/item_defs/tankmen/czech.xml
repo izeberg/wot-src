@@ -7237,5 +7237,25 @@
 				<_3281>tankmen_bp17_4.png</_3281>
 			</icons>
 		</tankmen_bp17_4>
+		<frontman>
+			<groupID>299</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3285>#czech_crew:names/frontman_n</_3285>
+			</firstNames>
+			<lastNames>
+				<_3285>#czech_crew:names/frontman</_3285>
+			</lastNames>
+			<icons>
+				<_3285>frontman.png</_3285>
+			</icons>
+		</frontman>
 	</premiumGroups>
 </root>

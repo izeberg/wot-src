@@ -1674,6 +1674,14 @@
 				<applyType>universal</applyType>
 				<size>medium</size>
 			</slot>
+			<slot>
+				<slotType>statTracker</slotType>
+				<slotId>18004</slotId>
+				<position>-1.409532 0.226791 3.222341</position>
+				<rotation>-0 -0 0</rotation>
+				<scale>1 1 1</scale>
+				<compatibleModels>NYst R45_IS_7_3DSt_HW_21 default</compatibleModels>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -4029,6 +4037,14 @@
 							<size>medium</size>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48001</slotId>
+							<position>0.000000 0.000000 0.000000</position>
+							<rotation>-0 -0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gun</applyType>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
@@ -5478,7 +5494,7 @@
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
 					<position>
-						0.060198 0.721715 -1.577
+						0.0602 0.971997 -1.577
 						<!--BW_String-->
 					</position>
 					<rotation>-0 -0 0</rotation>

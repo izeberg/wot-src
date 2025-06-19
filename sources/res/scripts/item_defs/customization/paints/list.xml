@@ -9487,6 +9487,39 @@
 		</usages>
 	</itemGroup>
 	<itemGroup>
+		<name>Liveops Back to School 2025</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>553</id>
+			<texture>gui/maps/vehicles/repaints/germany_base_color.png</texture>
+			<color>71 74 74 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/liveops_backtoschool_2025</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<usages>
+			<item>
+				<componentType>ALL</componentType>
+				<cost>1</cost>
+			</item>
+		</usages>
+	</itemGroup>
+	<itemGroup>
 		<name>LS 25</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -9587,6 +9620,75 @@
 				<cost>1</cost>
 			</item>
 		</usages>
+	</itemGroup>
+	<itemGroup>
+		<name>PUB CN360 Relaunch anniversary aka 820</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>566</id>
+			<texture>gui/maps/vehicles/repaints/italy_color_07.png</texture>
+			<color>138 52 61 255</color>
+			<gloss>
+				0.4
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/cn360_relaunch_820</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>Liveops Upsell</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>579</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_03.png</texture>
+			<color>94 108 128 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/liveops_upsell_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>580</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<color>25 25 25 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/liveops_upsell_2</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>theboys</name>
@@ -10392,7 +10494,7 @@
 		</usages>
 	</itemGroup>
 	<itemGroup>
-		<name>Boosteroid</name>
+		<name>Extraordinary</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
 		<historical>1</historical>
@@ -10452,6 +10554,21 @@
 			<texture>gui/maps/vehicles/repaints/custom_color_05.png</texture>
 			<userString>#vehicle_customization:repaint/boosteroid_04</userString>
 			<color>24 66 81 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>1042</id>
+			<texture>gui/maps/vehicles/repaints/china_color_05.png</texture>
+			<userString>#vehicle_customization:repaint/crimson_wind</userString>
+			<color>140 117 83 255</color>
 			<gloss>
 				0.63
 				<!--BW_String-->
@@ -10697,6 +10814,33 @@
 				<cost>1</cost>
 			</item>
 		</usages>
+	</itemGroup>
+	<itemGroup>
+		<name>PUB West Bastille Day</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>france</nations>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>544</id>
+			<texture>gui/maps/vehicles/repaints/italy_color_05.png</texture>
+			<color>176 161 127 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/pub_west_bastille_day</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>germany colors</name>
@@ -11816,6 +11960,48 @@
 				<cost>1</cost>
 			</item>
 		</usages>
+	</itemGroup>
+	<itemGroup>
+		<name>PUB West Warsaw Uprising</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<include>
+				<nations>poland</nations>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>554</id>
+			<texture>gui/maps/vehicles/repaints/italy_color_07.png</texture>
+			<color>133 37 50 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/pub_west_warsaw_uprising</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>555</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_11.png</texture>
+			<color>163 163 163 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/pub_west_warsaw_uprising</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>nations base colors</name>

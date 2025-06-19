@@ -883,8 +883,6 @@ package
       
       public static const COLORFILTER_BODY:String = "#tooltips:colorFilter/body";
       
-      public static const COLORFILTER_ATTENTION:String = "#tooltips:colorFilter/attention";
-      
       public static const GOLD_HEADER:String = "#tooltips:gold/header";
       
       public static const GOLD_BODY:String = "#tooltips:gold/body";
@@ -4207,6 +4205,8 @@ package
       
       public static const CUSTOMIZATION_TABS_ATTACHMENT_BODY:String = "#tooltips:customization/tabs/attachment/body";
       
+      public static const CUSTOMIZATION_TABS_STATTRACKER_BODY:String = "#tooltips:customization/tabs/statTracker/body";
+      
       public static const CUSTOMIZATION_DISABLEDTABS_PAINT_BODY:String = "#tooltips:customization/disabledTabs/paint/body";
       
       public static const CUSTOMIZATION_DISABLEDTABS_CAMOUFLAGE_BODY:String = "#tooltips:customization/disabledTabs/camouflage/body";
@@ -4610,6 +4610,8 @@ package
       public static const VEHICLEPREVIEW_BOXTOOLTIP_BATTLEBOOSTER_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/battleBooster/header";
       
       public static const VEHICLEPREVIEW_BOXTOOLTIP_ATTACHMENT_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/attachment/header";
+      
+      public static const VEHICLEPREVIEW_BOXTOOLTIP_STATTRACKER_HEADER:String = "#tooltips:vehiclePreview/boxTooltip/statTracker/header";
       
       public static const CONTENTBUYVIEW_SLOTCHECKBOX_NOTENOUGHSLOTS_HEADER:String = "#tooltips:contentBuyView/slotCheckbox/notEnoughSlots/header";
       
@@ -6493,6 +6495,8 @@ package
       
       public static const CUSTOMIZATION_STORAGE_FILTERS_ATTACHMENTS_TITLE:String = "#tooltips:customization/storage/filters/attachments/title";
       
+      public static const CUSTOMIZATION_STORAGE_FILTERS_STATTRACKERS_TITLE:String = "#tooltips:customization/storage/filters/statTrackers/title";
+      
       public static const SENIORITYAWARDS_HANGARENTRYPOINT_TOOLTIP_HEADER:String = "#tooltips:seniorityAwards/hangarEntryPoint/tooltip/header";
       
       public static const SENIORITYAWARDS_HANGARENTRYPOINT_TOOLTIP_BODY:String = "#tooltips:seniorityAwards/hangarEntryPoint/tooltip/body";
@@ -8236,6 +8240,24 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_4/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_4/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_FRONTMAN_LABEL:String = "#tooltips:notrecruitedtankman/frontman/label";
+      
+      public static const NOTRECRUITEDTANKMAN_FRONTMAN_DESC:String = "#tooltips:notrecruitedtankman/frontman/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_FRONTMAN_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/frontman/howToGetInfo";
+      
+      public static const SKILL_NEWPERK_ZEROPERK_TITLE:String = "#tooltips:skill/newPerk/zeroPerk/title";
+      
+      public static const SKILL_NEWPERK_ZEROPERK_TEXT:String = "#tooltips:skill/newPerk/zeroPerk/text";
+      
+      public static const SKILL_NEWPERK_PERK_TITLE:String = "#tooltips:skill/newPerk/perk/title";
+      
+      public static const SKILL_NEWPERK_PERK_TEXT:String = "#tooltips:skill/newPerk/perk/text";
+      
+      public static const SKILL_NAME_COMMANDER_SIXTHSENSE:String = "#tooltips:skill/name/commander_sixthSense";
+      
+      public static const SKILL_NAME_BROTHERHOOD:String = "#tooltips:skill/name/brotherhood";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

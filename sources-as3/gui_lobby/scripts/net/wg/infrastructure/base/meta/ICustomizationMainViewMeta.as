@@ -42,9 +42,9 @@ package net.wg.infrastructure.base.meta
       
       function resetC11nItemsNoveltyS(param1:Array) : void;
       
-      function onProgressionEntryPointClickS() : void;
-      
       function onShopEntryPointClickS() : void;
+      
+      function onEntryPointClickS(param1:String) : void;
       
       function as_hide(param1:Boolean) : void;
       
@@ -78,6 +78,6 @@ package net.wg.infrastructure.base.meta
       
       function as_attachToCursor(param1:Object) : void;
       
-      function as_progressionEntryPointVisible(param1:Boolean) : void;
+      function as_updateInnerEntries(param1:Array) : void;
    }
 }

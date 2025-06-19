@@ -113,6 +113,7 @@ class Matrix(MatrixProvider):
 	def get(self, *args, **kwargs): pass
 	def getElement(self, *args, **kwargs): pass
 	def invert(self, *args, **kwargs): pass
+	def invertOrthonormal(self, *args, **kwargs): pass
 	isMirrored = property(lambda self: None)
 	def lookAt(self, *args, **kwargs): pass
 	def orthogonalProjection(self, *args, **kwargs): pass

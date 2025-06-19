@@ -2951,6 +2951,32 @@
 							<size>medium</size>
 						</slot>
 						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48001</slotId>
+							<position>0 0 0</position>
+							<rotation>0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gun</applyType>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48002</slotId>
+							<position>0.001000 0.000000 0.000000</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<hiddenForUser>true</hiddenForUser>
+							<applyType>gunRight</applyType>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48003</slotId>
+							<position>-0.001000 0.000000 0.000000</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<hiddenForUser>true</hiddenForUser>
+							<applyType>gunLeft</applyType>
+						</slot>
+						<slot>
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>

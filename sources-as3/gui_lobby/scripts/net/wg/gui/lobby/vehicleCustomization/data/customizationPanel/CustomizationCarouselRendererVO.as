@@ -112,6 +112,8 @@ package net.wg.gui.lobby.vehicleCustomization.data.customizationPanel
       
       public var rarityBackgroundIconSource:String = "";
       
+      public var showDisabled:Boolean = false;
+      
       public function CustomizationCarouselRendererVO(param1:Object)
       {
          super(param1);

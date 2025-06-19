@@ -1,5 +1,6 @@
 from frameworks.wulf import Array
 from frameworks.wulf import ViewModel
+from gui.impl.gen.view_models.views.lobby.battle_pass.skill_model import SkillModel
 
 class CharacterModel(ViewModel):
     __slots__ = ()
@@ -24,6 +25,10 @@ class CharacterModel(ViewModel):
 
     def setSkills(self, value):
         self._setArray(2, value)
+
+    @staticmethod
+    def getSkillsType():
+        return SkillModel
 
     def getTooltipId(self):
         return self._getString(3)
