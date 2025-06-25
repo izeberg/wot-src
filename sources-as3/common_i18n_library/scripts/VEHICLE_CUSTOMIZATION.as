@@ -4203,6 +4203,10 @@ package
       
       public static const CAMOUFLAGE_BP2025_S17_4_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_s17_4/description";
       
+      public static const CAMOUFLAGE_GB134_GRYPHON_RW7_3DST_LABEL:String = "#vehicle_customization:camouflage/GB134_Gryphon_RW7_3Dst/label";
+      
+      public static const CAMOUFLAGE_GB134_GRYPHON_RW7_3DST_DESCRIPTION:String = "#vehicle_customization:camouflage/GB134_Gryphon_RW7_3Dst/description";
+      
       public static const EMBLEM:String = "#vehicle_customization:emblem";
       
       public static const EMBLEM_CLAN_CONTENT:String = "#vehicle_customization:emblem/clan_content";
@@ -14460,6 +14464,10 @@ package
       public static const SPECIAL_STYLE_CH41_WZ_111_5A_TXVII_3DST:String = "#vehicle_customization:special_style/Ch41_WZ_111_5A_TXVII_3Dst";
       
       public static const SPECIAL_STYLE_CH41_WZ_111_5A_TXVII_3DST_DESC_LONG:String = "#vehicle_customization:special_style/Ch41_WZ_111_5A_TXVII_3Dst_desc/long";
+      
+      public static const SPECIAL_STYLE_GB134_GRYPHON_RW7_3DST:String = "#vehicle_customization:special_style/GB134_Gryphon_RW7_3Dst";
+      
+      public static const SPECIAL_STYLE_GB134_GRYPHON_RW7_3DST_DESC_LONG:String = "#vehicle_customization:special_style/GB134_Gryphon_RW7_3Dst_desc/long";
       
       public static const SPECIAL_STYLE_A120_M48A5_TXVII_3DST:String = "#vehicle_customization:special_style/A120_M48A5_TXVII_3Dst";
       

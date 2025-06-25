@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.390302 -0.000390 -2.904938</min>
+		<max>1.415139 2.484666 1.579169</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>
