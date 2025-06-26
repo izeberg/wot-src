@@ -993,8 +993,9 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
 
     def getMatinfo(self, partIndex, matKind):
         matInfo = None
-        if partIndex > self.appearance.collisions.maxStaticPartIndex:
-            matInfo = BigWorld.getMaterialInfo(self.appearance.collisions.getPartGameObject(partIndex), matKind)
+        collisionComponent = self.appearance.collisions
+        if collisionComponent is not None and partIndex > collisionComponent.maxStaticPartIndex:
+            matInfo = BigWorld.getMaterialInfo(collisionComponent.getPartGameObject(partIndex), matKind)
         elif partIndex == TankPartIndexes.CHASSIS:
             matInfo = self.typeDescriptor.chassis.materials.get(matKind)
         elif partIndex == TankPartIndexes.HULL:
@@ -1007,8 +1008,8 @@ class Vehicle(BigWorld.Entity, BWEntitiyComponentTracker, BattleAbilitiesCompone
             trackPairIdx = collisionIdxToTrackPairIdx(partIndex, self.typeDescriptor)
             if trackPairIdx is not None:
                 matInfo = self.typeDescriptor.chassis.tracks[trackPairIdx].materials.get(matKind)
-        elif self.isWheeledTech and self.appearance.collisions is not None:
-            wheelName = self.appearance.collisions.getPartName(partIndex)
+        elif self.isWheeledTech and collisionComponent is not None:
+            wheelName = collisionComponent.getPartName(partIndex)
             if wheelName is not None:
                 matInfo = self.typeDescriptor.chassis.wheelsArmor.get(wheelName, None)
         if matInfo is None:

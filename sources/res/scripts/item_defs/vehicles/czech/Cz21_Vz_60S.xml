@@ -11,7 +11,7 @@
 	<postProgressionTree>role_HT_break</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>45</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -83,7 +83,7 @@
 	<hull>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>28000</weight>
-		<maxHealth>1680</maxHealth>
+		<maxHealth>1760</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>188</maxRegenHealth>
@@ -2953,7 +2953,7 @@
 			<notInShop>true</notInShop>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>12500</weight>
-			<maxHealth>420</maxHealth>
+			<maxHealth>440</maxHealth>
 			<rotationSpeed>25</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>185</maxHealth>
@@ -3013,10 +3013,7 @@
 						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						11.7
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>11</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -3965,8 +3962,8 @@
 		<detailed>
 			<engines>
 				<Skoda_AHK_60>
-					<smplEnginePower>950</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplEnginePower>1000</smplEnginePower>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</Skoda_AHK_60>
 			</engines>
 			<chassis>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.858499 -0.698636 -3.894150</min>
+		<max>1.958953 0.745425 3.698757</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

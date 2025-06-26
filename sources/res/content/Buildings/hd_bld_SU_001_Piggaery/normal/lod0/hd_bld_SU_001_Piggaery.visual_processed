@@ -19,15 +19,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
-				</material>
-				<groupOrigin>-1.204048 1.477083 -1.767036</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
 					<collisionFlags>0</collisionFlags>
@@ -55,6 +46,15 @@
 				</material>
 				<groupOrigin>-1.250683 3.084930 0.019735</groupOrigin>
 			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-1.251486 1.477083 -1.767036</groupOrigin>
+			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -62,5 +62,5 @@
 		<max>6.411861 8.042020 18.300440</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>469602</geometrySize>
+	<geometrySize>466454</geometrySize>
 </root>

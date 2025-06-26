@@ -51,9 +51,9 @@
 				<material>
 					<identifier>s_wall_0</identifier>
 					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
+					<materialKind>0</materialKind>
 				</material>
-				<groupOrigin>-1.204048 1.477083 -1.767036</groupOrigin>
+				<groupOrigin>-1.251486 1.477083 -1.767036</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -62,5 +62,5 @@
 		<max>6.419301 8.042020 18.300440</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>209060</geometrySize>
+	<geometrySize>209112</geometrySize>
 </root>

@@ -14,6 +14,7 @@ from items import vehicles
 from shared_utils.vehicle_utils import createWheelFilters
 from skeletons.vehicle_appearance_cache import IAppearanceCache
 from vehicle_systems.tankStructure import TankPartIndexes
+from helpers_common import setEncodedSegmentContextData
 import GenericComponents
 _logger = logging.getLogger(__name__)
 _UNSPOTTED_CONE_WIDTH_SCALE = 1
@@ -250,7 +251,7 @@ class SimulatedVehicle(BigWorld.Entity, VehicleBase, ScriptGameObject):
         else:
             for hitPoint in hitPoints:
                 sticker = copy(hitPoint)
-                sticker['segment'] |= stickerID
+                sticker['segment'] = setEncodedSegmentContextData(sticker['segment'], stickerID)
                 self.__decodeAndAddSticker(sticker)
 
             return

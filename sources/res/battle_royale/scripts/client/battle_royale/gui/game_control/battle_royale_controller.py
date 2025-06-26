@@ -89,15 +89,16 @@ class BattleRoyaleController(Notifiable, SeasonProvider, IBattleRoyaleController
 
     def __init__(self):
         super(BattleRoyaleController, self).__init__()
-        self.onUpdated = Event.Event()
-        self.onPrimeTimeStatusUpdated = Event.Event()
-        self.onWidgetUpdate = Event.Event()
-        self.onBalanceUpdated = Event.Event()
-        self.onSubModeUpdated = Event.Event()
-        self.onBattleRoyaleSpaceLoaded = Event.Event()
-        self.onStatusTick = Event.Event()
-        self.onTournamentBannerStateChanged = Event.Event()
-        self.onEntryPointUpdated = Event.Event()
+        self.__em = Event.EventManager()
+        self.onUpdated = Event.Event(self.__em)
+        self.onPrimeTimeStatusUpdated = Event.Event(self.__em)
+        self.onWidgetUpdate = Event.Event(self.__em)
+        self.onBalanceUpdated = Event.Event(self.__em)
+        self.onSubModeUpdated = Event.Event(self.__em)
+        self.onBattleRoyaleSpaceLoaded = Event.Event(self.__em)
+        self.onStatusTick = Event.Event(self.__em)
+        self.onTournamentBannerStateChanged = Event.Event(self.__em)
+        self.onEntryPointUpdated = Event.Event(self.__em)
         self.__balance = None
         self.__clientValuesInited = False
         self.__clientShields = {}
@@ -138,9 +139,7 @@ class BattleRoyaleController(Notifiable, SeasonProvider, IBattleRoyaleController
         self.__equipmentCount = None
         self.__defaultHangars = None
         self.__urlMacros = None
-        self.onUpdated.clear()
-        self.onPrimeTimeStatusUpdated.clear()
-        self.onEntryPointUpdated.clear()
+        self.__em.clear()
         self.__spaceSwitchController.onCheckSceneChange -= self.__onCheckSceneChange
         self.clearNotification()
         if self.__callbackID is not None:

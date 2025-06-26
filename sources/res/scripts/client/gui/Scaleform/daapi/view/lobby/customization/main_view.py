@@ -224,7 +224,6 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         self.__dontPlayTabChangeSound = False
         self.__resetCameraDistance = False
         self.__itemsGrabMode = False
-        self.__finishGrabModeCallback = None
         self.__closeConfirmatorHelper = _CustomizationCloseConfirmatorsHelper()
         self.__closed = False
         self.__exitingToShop = False
@@ -509,9 +508,6 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         self.__ctx.mode.selectSlot(slotId)
 
     def __onItemLimitReached(self, item):
-        if self.__itemsGrabMode:
-            self.__clearGrabModeCallback()
-            self.__finishGrabMode(playSound=False)
         self.as_releaseItemS()
 
     def __onItemsRemoved(self, slotId=None):
@@ -642,7 +638,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
                         normal.setPitchYaw(anchorParams.location.normal.pitch, worldRotation.yaw)
                 elif slotId.slotType in GUI_ITEM_TYPE.ATTACHMENT_TYPES:
                     normal = anchorParams.location.normal
-                    up = -anchorParams.location.up
+                    up = anchorParams.location.up
                 else:
                     normal = None
                     up = anchorParams.location.up
@@ -918,13 +914,12 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
         if self.__initAnchorsPositionsCallback is not None:
             BigWorld.cancelCallback(self.__initAnchorsPositionsCallback)
             self.__initAnchorsPositionsCallback = None
+        if self.__itemsGrabMode:
+            self.__finishGrabMode()
         super(MainView, self)._dispose()
         self.__ctx = None
         self.service.closeCustomization()
         self.__closeConfirmatorHelper.stop()
-        if self.__itemsGrabMode:
-            self.__clearGrabModeCallback()
-            self.__finishGrabMode()
         return
 
     def __setEnvironment(self):
@@ -1027,8 +1022,6 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
                 self.__itemsGrabMode = True
                 if self.__ctx.mode.tabId != CustomizationTabs.ATTACHMENTS:
                     self.soundManager.playInstantSound(SOUNDS.PICK)
-            else:
-                self.__clearGrabModeCallback()
         if self.__ctx.mode.isRegion:
             outfit = self.__ctx.mode.currentOutfit
             slotType = self.__ctx.mode.slotType
@@ -1040,25 +1033,16 @@ class MainView(LobbySubView, CustomizationMainViewMeta, LobbyHeaderVisibility):
     def __onItemUnselected(self):
         self.__slotSelector.unselectItem()
         if self.__itemsGrabMode:
-            self.__clearGrabModeCallback()
-            self.__finishGrabModeCallback = BigWorld.callback(0.5, self.__finishGrabMode)
+            self.__finishGrabMode()
             self.as_releaseItemS()
         if self.__ctx.mode.isRegion:
             self.service.highlightRegions(ApplyArea.NONE)
         self.__updateDnd()
 
-    def __finishGrabMode(self, playSound=True):
-        self.__finishGrabModeCallback = None
+    def __finishGrabMode(self):
         self.__itemsGrabMode = False
-        if playSound:
+        if self.__ctx.mode.tabId != CustomizationTabs.ATTACHMENTS:
             self.soundManager.playInstantSound(SOUNDS.RELEASE)
-        return
-
-    def __clearGrabModeCallback(self):
-        if self.__finishGrabModeCallback is not None:
-            BigWorld.cancelCallback(self.__finishGrabModeCallback)
-            self.__finishGrabModeCallback = None
-        return
 
     def __onSlotSelected(self, slotId):
         if self.__ctx.mode.isRegion:

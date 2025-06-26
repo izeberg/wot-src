@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod3/hd_bld_SU_001_Piggaery</parent>
-	<extent>225</extent>
-	<nodelessVisual>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod2/hd_bld_SU_001_Piggaery</nodelessVisual>
+	<extent>225.000000</extent>
+	<visibilityBox>
+		<min>-8.900016 -1.904000 -18.260969</min>
+		<max>6.398649 8.042020 18.300440</max>
+	</visibilityBox>
+	<nodefullVisual>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod2/hd_bld_SU_001_Piggaery</nodefullVisual>
 </root>

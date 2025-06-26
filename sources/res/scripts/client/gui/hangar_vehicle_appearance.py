@@ -14,7 +14,7 @@ from vehicle_outfit.outfit import Area, ANCHOR_TYPE_TO_SLOT_TYPE_MAP, SLOT_TYPES
 from gui.shared.gui_items.customization.slots import SLOT_ASPECT_RATIO, BaseCustomizationSlot, EmblemSlot, getProgectionDecalAspect
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from helpers import dependency
-from items.components.c11n_constants import ApplyArea
+from items.components.c11n_constants import ApplyArea, AttachmentType
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
@@ -984,7 +984,10 @@ class HangarVehicleAppearance(ScriptGameObject):
             rotationMatrix.setRotateYPR((pyr.y, pyr.x, pyr.z))
             normal = rotationMatrix.applyVector((0, 1, 0))
             normal.normalise()
-            up = rotationMatrix.applyVector((0, 0, 1))
+            if anchor.applyType in AttachmentType.GUN_SLOTS:
+                up = rotationMatrix.applyVector((-1, 0, 0))
+            else:
+                up = rotationMatrix.applyVector((0, 0, -1))
             up.normalise()
             position = Math.Vector3(anchor.position)
         else:
