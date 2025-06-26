@@ -6223,6 +6223,16 @@ package
       
       public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB12_CONQUEROR_S94X80:String = "../maps/icons/advanced_achievements/icons/GB12_Conqueror_s94x80.png";
       
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB134_GRYPHON_TROPHY_S144X116:String = "../maps/icons/advanced_achievements/icons/GB134_Gryphon_trophy_s144x116.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB134_GRYPHON_TROPHY_S218X176:String = "../maps/icons/advanced_achievements/icons/GB134_Gryphon_trophy_s218x176.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB134_GRYPHON_TROPHY_S52X44:String = "../maps/icons/advanced_achievements/icons/GB134_Gryphon_trophy_s52x44.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB134_GRYPHON_TROPHY_S68X56:String = "../maps/icons/advanced_achievements/icons/GB134_Gryphon_trophy_s68x56.png";
+      
+      public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB134_GRYPHON_TROPHY_S94X80:String = "../maps/icons/advanced_achievements/icons/GB134_Gryphon_trophy_s94x80.png";
+      
       public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB140_FV224_CHOPPER_S144X116:String = "../maps/icons/advanced_achievements/icons/GB140_FV224_Chopper_s144x116.png";
       
       public static const MAPS_ICONS_ADVANCED_ACHIEVEMENTS_ICONS_GB140_FV224_CHOPPER_S218X176:String = "../maps/icons/advanced_achievements/icons/GB140_FV224_Chopper_s218x176.png";
