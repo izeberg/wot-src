@@ -17641,8 +17641,21 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>300 300</piercingPower>
+					<piercingPower>320 320</piercingPower>
 				</_380mm_R_Hlgr_4592>
+				<_380mm_R_Hlgr_4592_M>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>360</speed>
+					<gravity>
+						19.86
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>400 400</piercingPower>
+				</_380mm_R_Hlgr_4592_M>
 				<_380mm_R_Sprgr_4581>
 					<defaultPortion>
 						0.25

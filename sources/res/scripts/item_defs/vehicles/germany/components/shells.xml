@@ -4426,7 +4426,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>700</armor>
+				<armor>950</armor>
 				<devices>125</devices>
 			</damage>
 		</armorSpalls>
@@ -4461,21 +4461,30 @@
 	<_380mm_R_Hlgr_4592_M>
 		<id>31017</id>
 		<userString>#germany_vehicles:_380mm_R_Hlgr_4592_M</userString>
-		<icon>hc</icon>
+		<icon>hc_premium</icon>
 		<price>7600</price>
+		<improved>true</improved>
 		<kind>HOLLOW_CHARGE</kind>
 		<caliber>380</caliber>
 		<isTracer>true</isTracer>
 		<isForceTracer>true</isForceTracer>
 		<effects>hugeHollowCharge</effects>
 		<damage>
-			<armor>1650</armor>
+			<armor>1450</armor>
 			<devices>250</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>
 			0.05
 			<!--BW_String-->
 		</piercingPowerLossFactorByDistance>
+		<hitDeviceChanceMultiplier>
+			0.5
+			<!--BW_String-->
+		</hitDeviceChanceMultiplier>
+		<hitCrewChanceMultiplier>
+			0.25
+			<!--BW_String-->
+		</hitCrewChanceMultiplier>
 	</_380mm_R_Hlgr_4592_M>
 	<ArtilleryPreparation_small>
 		<id>124</id>
