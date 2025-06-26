@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/crash/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.663493 -0.000085 -3.691202</min>
+		<max>1.663494 1.195285 3.560050</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

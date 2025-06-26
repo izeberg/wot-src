@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/normal/lod1/Lamp_01</nodelessVisual>
+	<visibilityBox>
+		<min>-1.448274 -0.002032 -2.903758</min>
+		<max>1.390576 2.468750 1.453982</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB134_Gryphon/_skins/GB134_Gryphon_RW7_3Dst/normal/lod2/Lamp_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>
