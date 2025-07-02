@@ -96,6 +96,10 @@ package net.wg.data.constants.generated
       public static const GRAND_TITLE_YELLOW:String = "grandTitleYellow";
       
       public static const GRAND_TITLE_TK:String = "grandTitleTK";
+      
+      public static const WHITE_TITLE_15:String = "whiteTitle15";
+      
+      public static const WHITE_TITLE_12:String = "whiteTitle12";
        
       
       public function TEXT_MANAGER_STYLES()

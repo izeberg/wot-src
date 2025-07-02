@@ -3,14 +3,8 @@
 	<nodefullVisual>content/GatesAndFences/hd_gaf_EU_018_StoneFence/normal/lod3/hd_gaf_EU_018_StoneFence_End_01</nodefullVisual>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.991841 -9.34059 -1.02028
-			<!--BW_String-->
-		</min>
-		<max>
-			0.991841 2.17642 1.00141
-			<!--BW_String-->
-		</max>
+		<min>-0.991841 -9.340590 -1.020280</min>
+		<max>0.991841 2.176420 1.001410</max>
 	</visibilityBox>
 	<havok>
 		<damagedState>true</damagedState>

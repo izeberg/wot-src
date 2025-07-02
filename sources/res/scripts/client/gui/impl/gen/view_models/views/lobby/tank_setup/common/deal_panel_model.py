@@ -1,11 +1,18 @@
+from enum import Enum
 from gui.impl.gen.view_models.common.price_model import PriceModel
+
+class AutoRenewalType(Enum):
+    UNDEFINED = 'Undefined'
+    SOFT = 'soft'
+    HARD = 'hard'
+
 
 class DealPanelModel(PriceModel):
     __slots__ = ('onDealConfirmed', 'onDealCancelled', 'onAutoRenewalChanged')
     GENERAL = 'general'
     REPAIR = 'repair'
 
-    def __init__(self, properties=10, commands=3):
+    def __init__(self, properties=11, commands=3):
         super(DealPanelModel, self).__init__(properties=properties, commands=commands)
 
     def getDealType(self):
@@ -44,6 +51,12 @@ class DealPanelModel(PriceModel):
     def setTotalItemsInStorage(self, value):
         self._setNumber(9, value)
 
+    def getSelectedAutoRenewalType(self):
+        return AutoRenewalType(self._getString(10))
+
+    def setSelectedAutoRenewalType(self, value):
+        self._setString(10, value.value)
+
     def _initialize(self):
         super(DealPanelModel, self)._initialize()
         self._addStringProperty('dealType', '')
@@ -52,6 +65,7 @@ class DealPanelModel(PriceModel):
         self._addBoolProperty('isAutoRenewalEnabled', False)
         self._addBoolProperty('isDisabled', False)
         self._addNumberProperty('totalItemsInStorage', 0)
+        self._addStringProperty('selectedAutoRenewalType', AutoRenewalType.UNDEFINED.value)
         self.onDealConfirmed = self._addCommand('onDealConfirmed')
         self.onDealCancelled = self._addCommand('onDealCancelled')
         self.onAutoRenewalChanged = self._addCommand('onAutoRenewalChanged')

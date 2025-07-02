@@ -3,9 +3,9 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
    import flash.display.MovieClip;
    import flash.geom.Rectangle;
    import net.wg.data.constants.Values;
-   import net.wg.infrastructure.base.SimpleContainer;
+   import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    
-   public class AutoloaderIndicator extends SimpleContainer
+   public class AutoloaderIndicator extends ClipQuantityIndicator
    {
       
       private static const TOTAL_AMMO:String = "TOTAL_AMMO_INVALID";
@@ -32,6 +32,69 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       public function AutoloaderIndicator()
       {
          super();
+      }
+      
+      override public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
+      {
+         this.boostndicator.autoloaderBoostUpdate(param1,param2,param3);
+      }
+      
+      override public function autoloaderBoostUpdateAsPercent(param1:Number, param2:Number) : void
+      {
+         this.boostndicator.autoloaderBoostUpdateAsPercent(param1,param2);
+      }
+      
+      override public function autoloaderShowShot() : void
+      {
+         if(this.fireMc)
+         {
+            this.fireMc.gotoAndPlay(SHOOT_STATE);
+         }
+         this.cassette.resetLastLoadedShell();
+      }
+      
+      override public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
+      {
+         this.cassette.autoloadProgress(param1,param2,param3,param4);
+      }
+      
+      override public function getTimerRect() : Rectangle
+      {
+         return this.cassette.getTimerRect();
+      }
+      
+      override public function setGunReloadingPercent(param1:Number) : void
+      {
+         this.cassette.reloadingPercent(param1);
+      }
+      
+      override public function updateCritical(param1:Boolean) : void
+      {
+         this.cassette.updateCritical(param1);
+      }
+      
+      override public function updateCurrentAmmo(param1:int) : void
+      {
+         if(this._currentAmmo != param1)
+         {
+            this._currentAmmo = param1;
+            invalidate(CURRENT_AMMO);
+         }
+      }
+      
+      override public function updateQuantityInClip(param1:int, param2:int) : void
+      {
+         this.updateCurrentAmmo(param1);
+         this.updateTotalAmmo(param2);
+      }
+      
+      override public function updateTotalAmmo(param1:int) : void
+      {
+         if(this._totalAmmo != param1)
+         {
+            this._totalAmmo = param1;
+            invalidate(TOTAL_AMMO);
+         }
       }
       
       override protected function draw() : void
@@ -68,70 +131,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          super.onDispose();
       }
       
-      public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
-      {
-         this.boostndicator.autoloaderBoostUpdate(param1,param2,param3);
-      }
-      
-      public function autoloaderBoostUpdateAsPercent(param1:Number, param2:Number) : void
-      {
-         this.boostndicator.autoloaderBoostUpdateAsPercent(param1,param2);
-      }
-      
-      public function autoloaderShowShot() : void
-      {
-         if(this.fireMc)
-         {
-            this.fireMc.gotoAndPlay(SHOOT_STATE);
-         }
-         this.cassette.resetLastLoadedShell();
-      }
-      
-      public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
-      {
-         this.cassette.autoloadProgress(param1,param2,param3,param4);
-      }
-      
-      public function getTimerRect() : Rectangle
-      {
-         return this.cassette.getTimerRect();
-      }
-      
-      public function setGunReloadingPercent(param1:Number) : void
-      {
-         this.cassette.reloadingPercent(param1);
-      }
-      
-      public function updateCritical(param1:Boolean) : void
-      {
-         this.cassette.updateCritical(param1);
-      }
-      
-      public function updateCurrentAmmo(param1:int) : void
-      {
-         if(this._currentAmmo != param1)
-         {
-            this._currentAmmo = param1;
-            invalidate(CURRENT_AMMO);
-         }
-      }
-      
-      public function updateQuantityInClip(param1:int, param2:int) : void
-      {
-         this.updateCurrentAmmo(param1);
-         this.updateTotalAmmo(param2);
-      }
-      
-      public function updateTotalAmmo(param1:int) : void
-      {
-         if(this._totalAmmo != param1)
-         {
-            this._totalAmmo = param1;
-            invalidate(TOTAL_AMMO);
-         }
-      }
-      
-      public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
+      override public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
       {
          return this.boostndicator.stateParams;
       }

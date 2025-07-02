@@ -651,4 +651,9 @@ def isActiveEarlyAccessQuest(eventID, earlyAccessCtrl=None):
 
 @dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
 def isPlayStreakEnable(lobbyContext=None):
-    return lobbyContext.getServerSettings().getPlayStreakConfig().get('isEnabled', False)# Decompile failed :(
+    return lobbyContext.getServerSettings().getPlayStreakConfig().get('isEnabled', False)
+
+
+@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
+def isIngameBrowserEventEnable(lobbyContext=None):
+    return lobbyContext.getServerSettings().getIngameBrowserEventConfig().get('isEnabled', False)# Decompile failed :(

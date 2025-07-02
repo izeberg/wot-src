@@ -26,6 +26,8 @@ TAG_NOT_FOR_SALE = 'notForSale'
 TAG_TRIGGER = 'trigger'
 TAG_BUILTIN_PERK_BOOSTER = 'builtinPerkBooster'
 TAG_CREW_BATTLE_BOOSTER = 'crewSkillBattleBooster'
+TAG_ECONOMIC_DIRECTIVE_BATTLE_BOOSTER = 'economicDirectiveBattleBooster'
+TAG_EQUIPMENT_BATTLE_BOOSTER = 'equipmentBattleBooster'
 TAG_EQUEPMENT_BUILTIN = 'builtin'
 TAG_OPT_DEVICE_DELUXE = 'deluxe'
 TAG_OPT_DEVICE_TROPHY_BASIC = 'trophyBasic'
@@ -197,6 +199,12 @@ class Equipment(VehicleArtefact):
     def isCrewBooster(self):
         return False
 
+    def isEconomicBooster(self):
+        return False
+
+    def isEquipmentBooster(self):
+        return False
+
     def isHideIfNotInShop(self):
         return False
 
@@ -219,6 +227,9 @@ class Equipment(VehicleArtefact):
         return ''
 
     def getCrewBoosterAction(self, isPerkReplace):
+        return ''
+
+    def getEconomicDirectivesDescription(self):
         return ''
 
     def getOptDeviceBoosterDescription(self, vehicle, valueFormatter=None):
@@ -262,6 +273,12 @@ class BattleBooster(Equipment):
     def isCrewBooster(self):
         return TAG_CREW_BATTLE_BOOSTER in self.tags
 
+    def isEconomicBooster(self):
+        return TAG_ECONOMIC_DIRECTIVE_BATTLE_BOOSTER in self.tags
+
+    def isEquipmentBooster(self):
+        return TAG_EQUIPMENT_BATTLE_BOOSTER in self.tags
+
     def isBuiltinPerkBooster(self):
         return TAG_BUILTIN_PERK_BOOSTER in self.tags
 
@@ -271,20 +288,19 @@ class BattleBooster(Equipment):
         return False
 
     def isAffectsOnVehicle(self, vehicle, setupIdx=None):
-        if self.isCrewBooster():
+        if self.isCrewBooster() or self.isEconomicBooster():
             return True
+        if setupIdx is not None:
+            for device in vehicle.optDevices.setupLayouts.setups[setupIdx]:
+                if self.isOptionalDeviceCompatible(device):
+                    return True
+
         else:
-            if setupIdx is not None:
-                for device in vehicle.optDevices.setupLayouts.setups[setupIdx]:
-                    if self.isOptionalDeviceCompatible(device):
-                        return True
+            for device in vehicle.optDevices.installed:
+                if self.isOptionalDeviceCompatible(device):
+                    return True
 
-            else:
-                for device in vehicle.optDevices.installed:
-                    if self.isOptionalDeviceCompatible(device):
-                        return True
-
-            return False
+        return False
 
     def isInstalled(self, vehicle, slotIdx=None):
         if vehicle is None:
@@ -317,18 +333,17 @@ class BattleBooster(Equipment):
         return RES_ICONS.getBonusIcon(size, self.name.split('_')[0])
 
     def isOptionalDeviceCompatible(self, optionalDevice):
-        return not self.isCrewBooster() and optionalDevice is not None and self.descriptor.getLevelParamsForDevice(optionalDevice.descriptor) is not None
+        return self.isEquipmentBooster() and optionalDevice is not None and self.descriptor.getLevelParamsForDevice(optionalDevice.descriptor) is not None
 
     def getCrewBonus(self, vehicle):
-        if self.isCrewBooster():
+        if self.isCrewBooster() or self.isEconomicBooster():
             return 0
-        else:
-            for device in vehicle.optDevices.installed.getItems():
-                levelParams = self.descriptor.getLevelParamsForDevice(device.descriptor)
-                if levelParams is not None and 'crewLevelIncrease' in levelParams:
-                    return levelParams[1]
+        for device in vehicle.optDevices.installed.getItems():
+            levelParams = self.descriptor.getLevelParamsForDevice(device.descriptor)
+            if levelParams is not None and 'crewLevelIncrease' in levelParams:
+                return levelParams[1]
 
-            return 0
+        return 0
 
     def getAffectedSkillName(self):
         if self.isCrewBooster():
@@ -371,15 +386,20 @@ class BattleBooster(Equipment):
         return i18n.makeString(ARTEFACTS.getCrewActionForBattleBooster(self.name, token))
 
     def getOptDeviceBoosterDescription(self, vehicle, valueFormatter=None):
-        if self.isCrewBooster():
-            raise SoftException('This description is only for Opt. Dev. Booster!')
+        if not self.isEquipmentBooster():
+            raise SoftException('This description is only for Battle Booster!')
         gain = self.getOptDeviceBoosterGainValue(vehicle=vehicle)
         formatted = valueFormatter(gain) if valueFormatter is not None else gain
         return self.shortDescription % formatted
 
+    def getEconomicDirectivesDescription(self):
+        if not self.isEconomicBooster():
+            raise SoftException('This action description is only for Economic directives!')
+        return self.shortDescription
+
     def getOptDeviceBoosterGainValue(self, vehicle):
-        if self.isCrewBooster():
-            raise SoftException('This description is only for Opt. Dev. Booster!')
+        if not self.isEquipmentBooster():
+            raise SoftException('This description is only for Battle Booster!')
         deviceType = TOKEN_OPT_DEVICE_SIMPLE
         if vehicle is not None:
             for device in vehicle.optDevices.installed:
@@ -394,6 +414,8 @@ class BattleBooster(Equipment):
         if self.isCrewBooster():
             return self.getCrewBoosterDescription(isPerkReplace=False, formatter=None)
         else:
+            if self.isEconomicBooster():
+                return self.getEconomicDirectivesDescription()
             return self.getOptDeviceBoosterDescription(vehicle=None, valueFormatter=None)
 
     def _getAltPrice(self, buyPrice, proxy):

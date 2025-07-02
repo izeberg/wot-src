@@ -42,7 +42,7 @@ class SteamCompletionController(ISteamCompletionController):
 
     @property
     def isSteamAccount(self):
-        return self._loginManager.isWgcSteam
+        return self._loginManager.isLgcSteam
 
     def onLobbyStarted(self, ctx):
         lockNotificationManager(lock=True)

@@ -2964,15 +2964,15 @@
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.36
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.5
+						9.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -2982,7 +2982,7 @@
 					<multiGunEffects>shot_dualgun_main_L shot_dualgun_main_R</multiGunEffects>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3001,13 +3001,10 @@
 						</chargeTime>
 						<shootImpulse>200</shootImpulse>
 						<reloadLockTime>
-							3.0
+							4.0
 							<!--BW_String-->
 						</reloadLockTime>
-						<reloadTimes>
-							8.5 8.5
-							<!--BW_String-->
-						</reloadTimes>
+						<reloadTimes>9 9</reloadTimes>
 						<rateTime>3</rateTime>
 						<chargeThreshold>
 							0.5

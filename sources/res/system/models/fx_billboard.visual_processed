@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>billboard</identifier>
-					<fx>shaders/std_effects/lightonly.fx</fx>
+					<fx>shaders/std_effects/lightonly_helpers.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>maps/system/aid_thisway.bmp</Texture>

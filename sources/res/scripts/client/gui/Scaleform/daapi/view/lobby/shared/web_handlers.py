@@ -19,7 +19,21 @@ from web.web_client_api.uilogging import UILoggingWebApi
 from web.web_client_api.vehicles import VehiclesWebApi
 if typing.TYPE_CHECKING:
     from typing import Dict, List, Optional
-_DEFAULT_WEB_API_COLLECTION = (CloseWindowWebApi,
+
+class ExtBrowserWebHandlers(object):
+    REGISTERED_WEB_API = []
+
+    @classmethod
+    def registerHandler(cls, webApi):
+        cls.REGISTERED_WEB_API.append(webApi)
+
+    @classmethod
+    def unregisterHandler(cls, webApi):
+        cls.REGISTERED_WEB_API.remove(webApi)
+
+
+_DEFAULT_WEB_API_COLLECTION = (
+ CloseWindowWebApi,
  OpenWindowWebApi,
  NotificationWebApi,
  OpenTabWebApi,
@@ -44,7 +58,9 @@ _DEFAULT_WEB_API_COLLECTION = (CloseWindowWebApi,
  UILoggingWebApi)
 
 def createWebHandlers(replaces=None):
-    handlers = webApiCollection(*_DEFAULT_WEB_API_COLLECTION)
+    handlersList = list(_DEFAULT_WEB_API_COLLECTION)
+    handlersList.extend(ExtBrowserWebHandlers.REGISTERED_WEB_API)
+    handlers = webApiCollection(*handlersList)
     if replaces:
         replaceHandlers(handlers, replaces)
     return handlers

@@ -102,100 +102,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Animator</type>
-			<version>2</version>
-			<component>
-				<objectIndex>1</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Auto Start</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Layers</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>Path</name>
-										<isAsset>true</isAsset>
-										<value>vehicles/russian/R224_IS_3_1945/Sequence/Flag_02_Idle.seq</value>
-									</property>
-									<property>
-										<name>Properties</name>
-										<object>
-											<property>
-												<name>delay</name>
-												<value>0</value>
-											</property>
-											<property>
-												<name>speed</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loop</name>
-												<value>1</value>
-											</property>
-											<property>
-												<name>loopCount</name>
-												<value>-1</value>
-											</property>
-										</object>
-									</property>
-									<property>
-										<name>Clip</name>
-										<value>&lt;Default Clip&gt;</value>
-									</property>
-									<property>
-										<name>LayerName</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>Weight</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>LOD Scale</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Auto Start</name>
-										<value>1</value>
-									</property>
-									<property>
-										<name>Graphics preset</name>
-										<value>2</value>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-					<property>
-						<name>Path</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/russian/R224_IS_3_1945/Sequence/Flag_02_Idle.seq</value>
-					</property>
-					<property>
-						<name>Delay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Speed</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Loop Count</name>
-						<value>-1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
@@ -205,7 +111,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/russian/R224_IS_3_1945/normal/lod0/Flag_02.model</value>
+						<value>vehicles/russian/R224_IS_3_1945/normal/lod0/animation_flag_lil.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>

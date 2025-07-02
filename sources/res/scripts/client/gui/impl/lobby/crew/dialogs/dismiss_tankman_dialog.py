@@ -35,7 +35,7 @@ class DismissTankmanDialog(BaseCrewDialogTemplateView):
 
     def _setResult(self, result):
         if result == DialogButtons.SUBMIT:
-            factory.doAction(factory.DISMISS_TANKMAN, self._tankman.invID)
+            factory.doAction(factory.DISMISS_TANKMAN, [self._tankman])
         super(DismissTankmanDialog, self)._setResult(result)
 
     def _updateViewModel(self):

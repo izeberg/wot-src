@@ -7,6 +7,7 @@ class SkillType(Enum):
     LEARNING = 'learning'
     IRRELEVANT = 'irrelevant'
     POSSIBLE = 'possible'
+    ZEROSKILL = 'zeroSkill'
 
 
 class CrewWidgetTankmanSkillModel(ViewModel):

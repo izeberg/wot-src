@@ -51,6 +51,8 @@ package
       
       public static const CARD_FREEEXP_ADDITIONALTEXT:String = "#crew_books:card/freeExp/additionalText";
       
+      public static const CARD_FREEEXP_ADDITIONALTEXTVALUES:String = "#crew_books:card/freeExp/additionalTextValues";
+      
       public static const CARD_FREEEXP_DISCOUNTVALUE:String = "#crew_books:card/freeExp/discountValue";
       
       public static const CARD_NATIONBOOK_TITLE_BROCHURE:String = "#crew_books:card/nationBook/title/brochure";

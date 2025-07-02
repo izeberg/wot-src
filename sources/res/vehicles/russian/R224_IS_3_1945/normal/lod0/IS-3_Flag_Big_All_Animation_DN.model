@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R224_IS_3_1945/normal/lod0/IS-3_Flag_Big_All_Animation_DN</nodelessVisual>
+	<visibilityBox>
+		<min>-0.212987 -0.875157 -1.282145</min>
+		<max>0.725602 0.568856 -0.007753</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R224_IS_3_1945/normal/lod1/IS-3_Flag_Big_All_Animation_DN</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

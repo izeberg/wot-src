@@ -378,6 +378,9 @@ msgstr "БОПС"
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "ОФ"
 
+msgid "damageLog/shellType/DELAYED_HE"
+msgstr "ОФ"
+
 msgid "damageLog/shellType/FLAME"
 msgstr "ОС"
 
@@ -2140,7 +2143,7 @@ msgstr "Так точно!"
 
 msgid "rewardWindow/piggyBank/descText"
 msgstr ""
-"Накопление серебра приостановлено. Продлите Премиум аккаунт, чтобы "
+"Накопление серебра приостановлено. Продлите Танковый премиум аккаунт, чтобы "
 "продолжить пополнение хранилища серебра."
 
 msgid "rewardWindow/piggyBank/headerText"
@@ -2761,6 +2764,9 @@ msgstr "%(caliber)s мм БОПС %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s мм бронебойный каморный снаряд %(userString)s"
+
+msgid "shells_kinds/DELAYED_HE"
+msgstr "%(caliber)s мм снаряд с задержкой взрывателя %(userString)s"
 
 msgid "shells_kinds/FLAME"
 msgstr "Огнемётная смесь %(userString)s"

@@ -97,8 +97,41 @@ class ActiveWidgets(object):
         return False
 
 
-QUEST_TYPE_BY_PM_BRANCH = {PM_BRANCH.REGULAR: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_REGULAR, 
-   PM_BRANCH.PERSONAL_MISSION_2: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_PM2, 
+class EconomyWidgetContent(object):
+
+    @classmethod
+    def isEconomyWidgetVisible(cls):
+        raise NotImplementedError
+
+    @classmethod
+    def backportEconomyWidgetText(cls):
+        raise NotImplementedError
+
+
+class EconomyWidgetHandler(object):
+    __widgetContent = None
+
+    @classmethod
+    def overrideWidgetContent(cls, widgetContent):
+        if not issubclass(widgetContent, EconomyWidgetContent):
+            _logger.error('Parameter is not a subclass of EconomyWidgetContent %s', widgetContent)
+            return
+        cls.__widgetContent = widgetContent
+
+    @classmethod
+    def isEconomyWidgetVisible(cls):
+        if cls.__widgetContent:
+            return cls.__widgetContent.isEconomyWidgetVisible()
+        return False
+
+    @classmethod
+    def backportEconomyWidgetText(cls):
+        if cls.__widgetContent:
+            return cls.__widgetContent.backportEconomyWidgetText()
+        return ''
+
+
+QUEST_TYPE_BY_PM_BRANCH = {PM_BRANCH.REGULAR: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_REGULAR, PM_BRANCH.PERSONAL_MISSION_2: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_PM2, 
    PM_BRANCH.PERSONAL_MISSION_3: HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_PM3}
 HANGAR_HEADER_QUESTS_TO_PM_BRANCH = {value:key for key, value in QUEST_TYPE_BY_PM_BRANCH.iteritems()}
 FLAG_BY_QUEST_TYPE = {HANGAR_HEADER_QUESTS.QUEST_TYPE_PERSONAL_REGULAR: RES_ICONS.MAPS_ICONS_LIBRARY_HANGARFLAG_FLAG_VINOUS, 
@@ -379,6 +412,8 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__updateResourceWellEntryPoint()
         self.__updateCollectiveGoalEntryPoint()
         self.__updateUniversalFlagEntryPoint()
+        self.as_updateEconomyWidgetS({'isVisible': EconomyWidgetHandler.isEconomyWidgetVisible(), 
+           'bonusValue': EconomyWidgetHandler.backportEconomyWidgetText()})
 
     def updateRankedHeader(self, *_):
         self.__updateWidget()

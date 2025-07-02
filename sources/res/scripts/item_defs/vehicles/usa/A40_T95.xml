@@ -3345,29 +3345,26 @@
 					<bufferPrefs>mediumTank</bufferPrefs>
 					<textureSet>usa_03</textureSet>
 					<size>
-						0.5 0.68
+						0.5 0.67
 						<!--BW_String-->
 					</size>
-					<offset>
-						0 2.5
+					<offset>0 0</offset>
+					<centerOffsetFactor>
+						1 0.91
 						<!--BW_String-->
-					</offset>
-					<centerOffsetFactor>1 1</centerOffsetFactor>
+					</centerOffsetFactor>
 				</tracesParams>
 				<tracesParams>
 					<trackPairIdx>1</trackPairIdx>
 					<bufferPrefs>mediumTank</bufferPrefs>
 					<textureSet>usa_03</textureSet>
 					<size>
-						0.5 0.68
+						0.5 0.67
 						<!--BW_String-->
 					</size>
-					<offset>
-						0 2.5
-						<!--BW_String-->
-					</offset>
+					<offset>0 0</offset>
 					<centerOffsetFactor>
-						1.45 1
+						1.45 0.91
 						<!--BW_String-->
 					</centerOffsetFactor>
 				</tracesParams>
@@ -6381,7 +6378,7 @@
 					<bufferPrefs>mediumTank</bufferPrefs>
 					<textureSet>usa_03</textureSet>
 					<size>
-						0.5 0.68
+						0.5 0.67
 						<!--BW_String-->
 					</size>
 					<offset>
@@ -6395,7 +6392,7 @@
 					<bufferPrefs>mediumTank</bufferPrefs>
 					<textureSet>usa_03</textureSet>
 					<size>
-						0.5 0.68
+						0.5 0.67
 						<!--BW_String-->
 					</size>
 					<offset>

@@ -47,7 +47,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>1.753425 1.753425 0.000000 0.000000</Vector4>
+						<Vector4>1.753500 1.753500 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -81,7 +81,7 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>128</Int>
 					</property>
 				</material>
 				<groupOrigin>-0.001058 -0.009754 -0.002642</groupOrigin>

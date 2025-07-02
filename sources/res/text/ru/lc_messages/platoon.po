@@ -203,10 +203,12 @@ msgid "headerButton/tooltips/mapboxSquad/header"
 msgstr "Разведка боем: взвод"
 
 msgid "headerButton/tooltips/rankedSquad/body"
-msgstr "В Ранговых боях игра в составе формирования недоступна."
+msgstr ""
+"Вы можете создать взвод или присоединиться к существующему. В Ранговых боях "
+"доступны взводы из 2 игроков."
 
 msgid "headerButton/tooltips/rankedSquad/header"
-msgstr "Создать взвод"
+msgstr "Взвод"
 
 msgid "headerButton/tooltips/searching/body"
 msgstr "Идёт поиск игроков..."
@@ -317,6 +319,9 @@ msgstr "+++NO BONUS TOOLTIP BODY PLACEHOLDER+++"
 msgid "members/header/noBonusPlaceholder/tooltip/header"
 msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
+msgid "members/header/ranked"
+msgstr ": Ранговый бой"
+
 msgid "members/header/squad"
 msgstr ": Случайный бой"
 
@@ -349,6 +354,23 @@ msgstr "Взвод должен состоять из трёх специаль�
 
 msgid "members/header/tooltip/event/header"
 msgstr "Правила формирования взвода"
+
+msgid "members/header/tooltip/ranked/header"
+msgstr "Правила формирования взвода"
+
+msgid "members/header/tooltip/ranked/restriction"
+msgstr "Взвод не имеет ограничений по формированию."
+
+msgid "members/header/tooltip/ranked/restriction_division"
+msgstr "Игроки должны находиться в одном дивизионе."
+
+msgid "members/header/tooltip/ranked/restriction_rank"
+msgstr "Разница в рангах между игроками взвода не должна превышать %(rank)s."
+
+msgid "members/header/tooltip/ranked/restriction_rank_division"
+msgstr ""
+"• Разница в рангах между игроками взвода не должна превышать %(rank)s.\n"
+"• Игроки должны находиться в одном дивизионе."
 
 msgid "members/header/tooltip/standard/body"
 msgstr "Взвод должен состоять из машин одного уровня."

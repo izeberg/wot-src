@@ -18,16 +18,16 @@ msgid "closeBtn/label"
 msgstr "ЗАКРЫЦЬ"
 
 msgid "credits/description"
-msgstr "В наборе: %(value)s серебра"
+msgstr "У наборы: %(value)s срэбра"
 
 msgid "credits/longDescription"
 msgstr ""
-"Основная игровая валюта.\n"
+"Асноўная гульнявая валюта.\n"
 "\n"
-"В наборе: %(value)s серебра"
+"У наборы: %(value)s срэбра"
 
 msgid "credits/title"
-msgstr "Серебро"
+msgstr "Срэбра"
 
 msgid "crystal/description"
 msgstr "У наборы: %(value)s бонаў"
@@ -91,7 +91,7 @@ msgid "notifications/description/armory_coin"
 msgstr "Патрачана жэтонаў: %(value)s"
 
 msgid "notifications/description/crystal"
-msgstr "Потрачено бон: %(value)s"
+msgstr "Патрачана бонаў: %(value)s"
 
 msgid "notifications/description/gold"
 msgstr "Патрачана золата: %(value)s"
@@ -175,10 +175,10 @@ msgstr ""
 
 msgid "product/bundle/longDescription/episode6"
 msgstr ""
-"Этот тяжёлый танк прорыва обладает неплохой динамикой, максимальной "
-"скоростью и крепким лобовым бронированием. Задача машины — проламывать "
-"направление и пользоваться преимуществами своей брони. Хороший угол "
-"склонения орудия позволяет уверенно чувствовать себя при игре «от рельефа»."
+"Гэты цяжкі танк прарыву мае неблагую дынаміку, максімальную хуткасці і "
+"моцную лабавую браню. Задача машыны — праломваць кірунак і карыстацца "
+"перавагамі сваёй брані. Добры вугал нахілу гарматы дазваляе ўпэўнена "
+"пачувацца пры гульні «ад рэльефу»."
 
 msgid "product/bundle/title"
 msgstr "Набор з %(vehicleName)s"
@@ -336,7 +336,7 @@ msgstr ""
 " асноўную прагрэсію Зборачнага цэха."
 
 msgid "tooltip/shop/currency/gold"
-msgstr "золото"
+msgstr "золата"
 
 msgid "tooltip/shop/currency/header/description"
 msgstr "Зборачны цэх"
@@ -346,11 +346,11 @@ msgstr "Вольны жэтон"
 
 msgid "tooltip/shop/currency/info"
 msgstr ""
-"%(takeCoin)s можно в награду за задачи Сборочного цеха, а также за %(gold)s."
-" Количество жетонов ограничено."
+"Получить %(takeCoin)s можно в награду за задачи Сборочного цеха, а также за "
+"%(gold)s. Количество жетонов ограничено."
 
 msgid "tooltip/shop/currency/takeCoin"
-msgstr "Получить жетоны"
+msgstr "Атрымаць жэтоны"
 
 msgid "tooltip/shop/info/body"
 msgstr "Паўторны прагляд кароткага апісання працы крамы Зборачнага цэха."

@@ -93,8 +93,8 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         invalidateSize();
          super.updateStage(param1,param2);
+         invalidateSize();
       }
       
       override protected function initialize() : void

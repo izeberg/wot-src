@@ -18,7 +18,7 @@ msgid "bundles/backCaption"
 msgstr "НАЗАД"
 
 msgid "bundles/backGoto"
-msgstr "В СБОРОЧНЫЙ ЦЕХ"
+msgstr "У ЗБОРАЧНЫ ЦЭХ"
 
 msgid "bundles/building"
 msgstr "БУДАЎНІЦТВА"
@@ -136,7 +136,7 @@ msgid "buyBundle/title"
 msgstr "ЖЭТОНЫ БУДАЎНІЦТВА"
 
 msgid "buyView/backButton/mainView"
-msgstr "В СБОРОЧНЫЙ ЦЕХ"
+msgstr "У ЗБОРАЧНЫ ЦЭХ"
 
 msgid "buyView/backButton/vehiclePreview"
 msgstr "У ГАРАЖ ПЕРАДПРАГЛЯДУ"
@@ -170,11 +170,13 @@ msgstr "{from} - {to}"
 
 msgid "buyView/rewards/manySteps"
 msgstr ""
-"Вам сразу будут начислены награды за этапы строительства: %(completedSteps)s"
+"Вам адразу будуць налічаны ўзнагароды за этапы будаўніцтва: "
+"%(completedSteps)s"
 
 msgid "buyView/rewards/singleStep"
 msgstr ""
-"Вам сразу будут начислены награды за этапы строительства: %(completedSteps)s"
+"Вам адразу будуць налічаны ўзнагароды за этапы будаўніцтва: "
+"%(completedSteps)s"
 
 msgid "buyView/selected"
 msgstr "Выбрана этапаў: %(amount)s"
@@ -206,7 +208,7 @@ msgid "entryPoint/tooltips/active/announce"
 msgstr "З %(day)d %(month)s %(year)d г. %(time)s."
 
 msgid "entryPoint/tooltips/active/description"
-msgstr "Выполняется задач: %(questsInProgress)s"
+msgstr "Выконваецца задач: %(questsInProgress)s"
 
 msgid "entryPoint/tooltips/active/endOfEventTime/hours"
 msgstr "Задачы можна выконваць яшчэ: %(hour)s ч %(min)s хв"
@@ -257,7 +259,7 @@ msgid "entryPoint/tooltips/active/tokensValue"
 msgstr "%(receivedTokens)s / %(totalTokens)s"
 
 msgid "entryPoint/tooltips/beforeProgression/available"
-msgstr "Будет доступно"
+msgstr "Будзе даступна"
 
 msgid "entryPoint/tooltips/beforeProgression/body"
 msgstr ""
@@ -268,7 +270,7 @@ msgid "entryPoint/tooltips/beforeProgression/header"
 msgstr "Задачы Зборачнага цэха"
 
 msgid "entryPoint/tooltips/beforeProgression/info"
-msgstr "%(available)s с %(day)d %(month)s %(year)d г. %(time)s."
+msgstr "%(available)s з %(day)d %(month)s %(year)d г. %(time)s."
 
 msgid "entryPoint/tooltips/disabled/body"
 msgstr ""
@@ -360,13 +362,13 @@ msgid "mainView/chapter/index/4"
 msgstr "Навясное абсталяванне"
 
 msgid "mainView/chapter/quests/label"
-msgstr "Выполнено задач:"
+msgstr "Выканана задач:"
 
 msgid "mainView/chapter/quests/progress"
 msgstr "%(completed)s / %(total)s"
 
 msgid "mainView/chapter/title"
-msgstr "Глава %(index)s: %(text)s"
+msgstr "Раздзел %(index)s: %(text)s"
 
 msgid "mainView/chapter/tokens/progress"
 msgstr "%(received)s / %(total)s"
@@ -509,58 +511,59 @@ msgid "mainView/title/step/1"
 msgstr "Знаёмства з ТЗ"
 
 msgid "mainView/title/step/10"
-msgstr "Установка системы охлаждения"
+msgstr "Усталяванне сістэмы ахаладжэння"
 
 msgid "mainView/title/step/11"
-msgstr "Установка смазочного оборудования"
+msgstr "Усталяванне змазачнага абсталявання"
 
 msgid "mainView/title/step/12"
-msgstr "Установка топливной системы"
+msgstr "Усталяванне паліўнай сістэмы"
 
 msgid "mainView/title/step/13"
-msgstr "Установка органов управления, системы сжатого воздуха и пожаротушения"
+msgstr ""
+"Усталяванне органаў кіравання, сістэмы сціснутага паветра і пажаратушэння"
 
 msgid "mainView/title/step/14"
-msgstr "Доставка орудия"
+msgstr "Дастаўка гарматы"
 
 msgid "mainView/title/step/15"
-msgstr "Монтаж аккумулятора и электроконтуров"
+msgstr "Мантаж акумулятара і электраконтураў"
 
 msgid "mainView/title/step/16"
-msgstr "Установка элементов управления боевого отделения"
+msgstr "Усталяванне элементаў кіравання баявога аддзялення"
 
 msgid "mainView/title/step/17"
-msgstr "Установка стеллажей для боекомплекта"
+msgstr "Усталяванне стэлажоў для боекамплекту"
 
 msgid "mainView/title/step/18"
-msgstr "Установка внутреннего оборудования башни"
+msgstr "Усталяванне ўнутранага абсталявання вежы"
 
 msgid "mainView/title/step/19"
-msgstr "Установка башни и орудия"
+msgstr "Усталяванне вежы і гарматы"
 
 msgid "mainView/title/step/2"
 msgstr "Габарыты машыны"
 
 msgid "mainView/title/step/20"
-msgstr "Размещение ММГ снарядов"
+msgstr "Размяшчэнне ММГ снарадаў"
 
 msgid "mainView/title/step/21"
-msgstr "Установка ведущих колёс"
+msgstr "Усталяванне вядучых колаў"
 
 msgid "mainView/title/step/22"
-msgstr "Установка поддерживающих катков"
+msgstr "Усталяванне падтрымных каткоў"
 
 msgid "mainView/title/step/23"
-msgstr "Протяжка гусеничных лент"
+msgstr "Працяжка тракавых пасаў"
 
 msgid "mainView/title/step/24"
-msgstr "Покраска"
+msgstr "Пафарбоўка"
 
 msgid "mainView/title/step/25"
-msgstr "Установка навесного оборудования"
+msgstr "Усталяванне навяснога абсталявання"
 
 msgid "mainView/title/step/26"
-msgstr "Выкатка машины"
+msgstr "Выкатка машыны"
 
 msgid "mainView/title/step/3"
 msgstr "Канструкцыя вежы і гарматы"
@@ -569,19 +572,19 @@ msgid "mainView/title/step/4"
 msgstr "Разнясенне таўшчынь брані"
 
 msgid "mainView/title/step/5"
-msgstr "Компоновочная схема силовой установки"
+msgstr "Кампанавальная схема сілавой устаноўкі"
 
 msgid "mainView/title/step/6"
-msgstr "Схема дополнительной защиты и боевого отделения"
+msgstr "Схема дадатковай аховы і баявога аддзялення"
 
 msgid "mainView/title/step/7"
-msgstr "Закалка брони"
+msgstr "Загартоўка брані"
 
 msgid "mainView/title/step/8"
-msgstr "Установка двигателя"
+msgstr "Усталяванне рухавіка"
 
 msgid "mainView/title/step/9"
-msgstr "Монтаж трансмиссии и приводов"
+msgstr "Мантаж трансмісіі і прыводаў"
 
 msgid "mainView/title/step/final"
 msgstr "Будаўніцтва завершана"
@@ -603,27 +606,27 @@ msgstr "Раздзел %(count)d: %(chapter_name)s будзе даступны %
 
 msgid "notifications/announcement/event"
 msgstr ""
-"Бойцы! У вас есть возможность построить уникальную машину — %(typeName)s "
-"%(roleName)s %(tankLevel)s уровня %(tankName)s. Событие начинается "
+"Байцы! У вас ёсць магчымасць пабудаваць унікальную машыну — %(typeName)s "
+"%(roleName)s %(tankLevel)s узроўню %(tankName)s. Падзея пачынаецца "
 "%(startDate)s."
 
 msgid "notifications/announcement/heavyTank"
-msgstr "тяжёлый танк"
+msgstr "цяжкі танк"
 
 msgid "notifications/announcement/lightTank"
-msgstr "лёгкий танк"
+msgstr "лёгкі танк"
 
 msgid "notifications/announcement/mediumTank"
-msgstr "средний танк"
+msgstr "сярэдні танк"
 
 msgid "notifications/announcement/premium"
-msgstr "премиум"
+msgstr "прэміум"
 
 msgid "notifications/announcement/special"
-msgstr "наградной"
+msgstr "узнагароднай"
 
 msgid "notifications/announcement/specialSPG"
-msgstr "наградная"
+msgstr "узнагародная"
 
 msgid "notifications/bundleOutTime"
 msgstr ""
@@ -789,33 +792,33 @@ msgid "tooltip/chapter/disabled/header"
 msgstr "Раздзел недаступны"
 
 msgid "tooltip/currency/availability"
-msgstr "Доступны:"
+msgstr "Даступныя:"
 
 msgid "tooltip/currency/availabilityPeriod"
 msgstr ""
-"%(availability)s с %(startDay)d %(startMonth)s %(startYear)d г. "
-"%(startTime)s до %(endDay)d %(endMonth)s %(endYear)d г. %(endTime)s"
+"%(availability)s з %(startDay)d %(startMonth)s %(startYear)d г. "
+"%(startTime)s да %(endDay)d %(endMonth)s %(endYear)d г. %(endTime)s"
 
 msgid "tooltip/currency/availabilityPeriodShort"
 msgstr ""
-"%(availability)s с %(startDay)d %(startMonth)s %(startTime)s до %(endDay)d "
+"%(availability)s з %(startDay)d %(startMonth)s %(startTime)s да %(endDay)d "
 "%(endMonth)s %(endYear)d г. %(endTime)s"
 
 msgid "tooltip/currency/description"
 msgstr ""
-"Особый ресурс, доступный во время проведения события %(featureName)s. "
-"Используется для прохождения этапов строительства."
+"Асаблівы рэсурс, даступны падчас правядзення падзеі %(featureName)s. "
+"Выкарыстоўваецца для праходжання этапаў будаўніцтва."
 
 msgid "tooltip/currency/featureName"
-msgstr "«Сборочный цех»"
+msgstr "«Зборачны цэх»"
 
 msgid "tooltip/currency/gain/currency"
 msgstr "жэтоны будаўніцтва"
 
 msgid "tooltip/currency/gain/description"
 msgstr ""
-"Выполняйте задачи в главах, чтобы получать %(token)s. Учтите, что количество"
-" жетонов в каждой главе ограничено."
+"Выконвайце задачы ў раздзелах, каб атрымліваць %(token)s. Улічыце, што "
+"колькасць жэтонаў у кожным раздзеле абмежаваная."
 
 msgid "tooltip/currency/gain/title"
 msgstr "Як атрымаць"
@@ -825,8 +828,8 @@ msgstr "Аўтаматычна дадаецца да прагрэсіі."
 
 msgid "tooltip/currency/postProgression/description"
 msgstr ""
-"Особый ресурс, доступный во время проведения события %(featureName)s. "
-"Используется в магазине Сборочного цеха."
+"Асаблівы рэсурс, даступны падчас правядзення падзеі %(featureName)s. "
+"Выкарыстоўваецца ў краме Зборачнага цэха."
 
 msgid "tooltip/currency/postProgression/gain/currency"
 msgstr "вольныя жэтоны"

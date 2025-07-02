@@ -120,6 +120,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldNW_001_Fisherhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldNW_002_Fisherhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_building_fire_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_env_AM_016_AdvertisingBigBoard_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_env_AM_016_AdvertisingBigBoard_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_hd_bld_AM_012_CottageLong.vfx</fn_effect_bin>
@@ -254,6 +255,7 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldNW_001_Fisherhouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldNW_002_Fisherhouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_AM_016_AdvertisingBigBoard_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_AM_016_AdvertisingBigBoard_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_012_CottageLong.eff</fn_effect_bin>
@@ -284,8 +286,8 @@
 		<fn_effect_bin>particles/Environment/interior/252_br_steam_02_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_steam_pipes_underground_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_water_dust_big.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/252_br_water_splash_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/252_br_water_splash_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/252_br_water_splash_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/252_br_water_splash_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_water_splash_steam_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_waterfall_deform.eff</fn_effect_bin>
@@ -575,6 +577,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldNW_001_Fisherhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldNW_002_Fisherhouse.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_building_fire_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_building_fire_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_env_AM_016_AdvertisingBigBoard_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_env_AM_016_AdvertisingBigBoard_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_hd_bld_AM_012_CottageLong.vfx</fn_effect_bin>
@@ -732,6 +735,7 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bldNW_001_Fisherhouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldNW_002_Fisherhouse.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/buildings/inf_building_fire_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_AM_016_AdvertisingBigBoard_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_env_AM_016_AdvertisingBigBoard_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_012_CottageLong.eff</fn_effect_bin>
@@ -762,8 +766,8 @@
 		<fn_effect_bin>particles/Environment/interior/252_br_steam_02_3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_steam_pipes_underground_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_water_dust_big.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/252_br_water_splash_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/252_br_water_splash_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/252_br_water_splash_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/252_br_water_splash_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_water_splash_steam_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/252_br_waterfall_deform.eff</fn_effect_bin>

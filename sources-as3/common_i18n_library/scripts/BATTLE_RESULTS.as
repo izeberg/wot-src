@@ -705,6 +705,10 @@ package
       
       public static const DETAILS_CALCULATIONS_CRYSTAL_EVENTS:String = "#battle_results:details/calculations/crystal/events";
       
+      public static const DETAILS_CALCULATIONS_BIRTHDAYECONOMICSBONUS:String = "#battle_results:details/calculations/birthdayEconomicsBonus";
+      
+      public static const DETAILS_CALCULATIONS_DIRECTIVES:String = "#battle_results:details/calculations/directives";
+      
       public static const TANKSELECTOR_NEXT:String = "#battle_results:tankSelector/next";
       
       public static const VICTORYSCORE:String = "#battle_results:victoryScore";

@@ -4434,15 +4434,15 @@
 			<price>46000</price>
 			<armor>
 				<armor_1>
-					82.6
+					203.2
 					<!--BW_String-->
 				</armor_1>
 				<armor_2>
-					69.9
+					165.1
 					<!--BW_String-->
 				</armor_2>
 				<armor_3>
-					63.5
+					120.7
 					<!--BW_String-->
 				</armor_3>
 				<armor_4>
@@ -4517,7 +4517,7 @@
 							<!--BW_String-->
 						</armor_4>
 						<armor_5>
-							152.4
+							171.5
 							<!--BW_String-->
 						</armor_5>
 						<armor_7>
@@ -4541,7 +4541,10 @@
 							25.4
 							<!--BW_String-->
 						</armor_12>
-						<armor_13>127</armor_13>
+						<armor_13>
+							171.5
+							<!--BW_String-->
+						</armor_13>
 						<armor_14>
 							101.6
 							<!--BW_String-->
@@ -4552,7 +4555,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_15>
 						<armor_16>
-							101.6
+							190.5
 							<!--BW_String-->
 						</armor_16>
 						<gun>20</gun>
@@ -5477,7 +5480,7 @@
 							<!--BW_String-->
 						</armor_4>
 						<armor_5>
-							152.4
+							171.5
 							<!--BW_String-->
 						</armor_5>
 						<armor_7>
@@ -5501,7 +5504,10 @@
 							25.4
 							<!--BW_String-->
 						</armor_12>
-						<armor_13>127</armor_13>
+						<armor_13>
+							171.5
+							<!--BW_String-->
+						</armor_13>
 						<armor_14>
 							101.6
 							<!--BW_String-->
@@ -5512,7 +5518,7 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_15>
 						<armor_16>
-							101.6
+							190.5
 							<!--BW_String-->
 						</armor_16>
 						<gun>35</gun>
@@ -5521,7 +5527,7 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>24</reloadTime>
+					<reloadTime>21</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.16

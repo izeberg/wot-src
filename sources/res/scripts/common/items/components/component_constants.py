@@ -10,12 +10,9 @@ SpinGun = collections.namedtuple('SpinGun', [
  'spinUpTimeout', 'spinDownTimeout', 'isSpinUpShootingEnable', 'startFactor'])
 DualGun = reflectedNamedTuple('DualGun', [
  'chargeTime', 'shootImpulse', 'reloadLockTime', 'reloadTimes', 'rateTime', 'chargeThreshold',
- 'afterShotDelay', 'preChargeIndication', 'chargeCancelTime', 'resetReloadAfterShot'])
+ 'afterShotDelay', 'preChargeIndication', 'chargeCancelTime', 'resetReloadAfterShot', 'autoloadWithClip'])
 DualAccuracy = collections.namedtuple('DualAccuracy', [
  'afterShotDispersionAngle', 'coolingDelay'])
-DelayedBomb = collections.namedtuple('DelayedBomb', [
- 'explosionDelay', 'isDestroyAvailable', 'size', 'isProximityEnabled', 'underWaterDelta', 'isShotZoneVisible',
- 'isOwnShotZoneVisible', 'isDestroyWithExplosion'])
 UNDEFINED_ITEM_TYPE_ID = 0
 ZERO_FLOAT = 0.0
 ZERO_INT = 0
@@ -43,7 +40,7 @@ DEFAULT_GUN_AUTORELOAD = Autoreload(reloadTime=(0.0, ), boostStartTime=0.0, boos
 DEFAULT_GUN_BURST = (1, 0.0)
 DEFAULT_GUN_CLIP = (1, 0.0)
 DEFAULT_GUN_DUALGUN = DualGun(chargeTime=4.0, shootImpulse=100.0, reloadLockTime=10.0, reloadTimes=(10,
-                                                                                                    8), rateTime=5, chargeThreshold=0.5, afterShotDelay=0.5, preChargeIndication=0.25, chargeCancelTime=0.18, resetReloadAfterShot=True)
+                                                                                                    8), rateTime=5, chargeThreshold=0.5, afterShotDelay=0.5, preChargeIndication=0.25, chargeCancelTime=0.18, resetReloadAfterShot=True, autoloadWithClip=False)
 DEFAULT_GUN_DUAL_ACCURACY = DualAccuracy(afterShotDispersionAngle=1.0, coolingDelay=5.0)
 DEFAULT_GUN_AUTOSHOOT = AutoShoot(shotDispersionPerSec=0.0, maxShotDispersion=0.0, shotInterval=0.0)
 DEFAULT_SPIN_GUN = SpinGun(startFactor=0.0, spinUpTimeout=0.0, spinDownTimeout=0.0, isSpinUpShootingEnable=True)
@@ -57,7 +54,6 @@ DEFAULT_PIERCING_POWER_RANDOMIZATION = 0.25
 DEFAULT_MODERN_HE_OBSTACLE_PENETRATION = True
 DEFAULT_MODERN_HE_SHIELD_PENETRATION = True
 DEFAULT_PIERCING_SPALLS = True
-DEFAULT_SHELL_DELAYED_BOMB = DelayedBomb(explosionDelay=0, isDestroyAvailable=False, size=0, isProximityEnabled=False, underWaterDelta=0, isShotZoneVisible=False, isOwnShotZoneVisible=False, isDestroyWithExplosion=False)
 MODERN_HE_PIERCING_POWER_REDUCTION_FACTOR_FOR_DESTRUCTIBLES = 1.0
 MODERN_HE_PIERCING_POWER_REDUCTION_FACTOR_FOR_SHIELDS = 3.0
 MODERN_HE_DAMAGE_ABSORPTION_FACTOR = 0.0

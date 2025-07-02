@@ -11,6 +11,7 @@ from gui.wgcg.base.handlers import BaseRequestHandlers
 from gui.wgcg.clan.handlers import ClanRequestHandlers
 from gui.wgcg.elen.handlers import ElenRequestHandlers
 from gui.wgcg.agate.handlers import AgateRequestHandlers
+from gui.wgcg.gold_wagon.handlers import GoldWagonRequestHandlers
 from gui.wgcg.utils.handlers import UtilsRequestHandlers
 from gui.wgcg.hof.handlers import HofRequestHandlers
 from gui.wgcg.mapbox.handlers import MapboxRequestHandlers
@@ -109,6 +110,7 @@ class WgcgRequestsController(RequestsController):
         self.__handlers.update(UILoggingRequestHandlers(requester).get())
         self.__handlers.update(AgateRequestHandlers(requester).get())
         self.__handlers.update(ShopRequestHandlers(requester).get())
+        self.__handlers.update(GoldWagonRequestHandlers(requester).get())
 
     def fini(self):
         super(WgcgRequestsController, self).fini()

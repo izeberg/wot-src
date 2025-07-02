@@ -51,7 +51,8 @@ SuspensionLever = reflectedNamedTuple('SuspensionLever', ('startNodeName', 'join
                                                           'trackNodeName', 'minAngle',
                                                           'maxAngle', 'collisionSamplesCount',
                                                           'hasLiftMode', 'affectedWheelName'))
-SplineSegmentModelSet = reflectedNamedTuple('SplineSegmentModelSet', ('left', 'right',
+SplineSegmentModelSet = reflectedNamedTuple('SplineSegmentModelSet', ('modelsSetName',
+                                                                      'left', 'right',
                                                                       'secondLeft',
                                                                       'secondRight'))
 
@@ -84,7 +85,7 @@ class SplineTrackPairDesc(object):
                 secondRight = tuple(path_builder.makeIndexes(setPaths.secondRight))
             else:
                 secondRight = None
-            self.segmentModelSets[setName] = SplineSegmentModelSet(left, right, secondLeft, secondRight)
+            self.segmentModelSets[setName] = SplineSegmentModelSet(setName, left, right, secondLeft, secondRight)
 
         return
 

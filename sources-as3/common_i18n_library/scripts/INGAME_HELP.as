@@ -350,6 +350,10 @@ package
       public static const DETAILSHELP_DUALGUNWITHAUTORELOADCLIP_TITLE:String = "#ingame_help:detailsHelp/dualgunWithAutoreloadClip/title";
       
       public static const DETAILSHELP_DUALGUNWITHAUTORELOADCLIP_DESCRIPTION:String = "#ingame_help:detailsHelp/dualgunWithAutoreloadClip/description";
+      
+      public static const DETAILSHELP_DUALGUNWITHCLIP_TITLE:String = "#ingame_help:detailsHelp/dualgunWithClip/title";
+      
+      public static const DETAILSHELP_DUALGUNWITHCLIP_DESCRIPTION:String = "#ingame_help:detailsHelp/dualgunWithClip/description";
        
       
       public function INGAME_HELP()

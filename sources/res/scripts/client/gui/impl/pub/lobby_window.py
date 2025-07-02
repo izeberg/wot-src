@@ -66,3 +66,6 @@ class LobbyNotificationWindow(LobbyWindow):
     def _getParent(self, parent, content):
         self.__initialParent = super(LobbyNotificationWindow, self)._getParent(parent, content)
         return
+
+    def waitData(self, timeout):
+        pass

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB137_CVT_Spider/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB137_CVT_Spider/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.292075 -0.709546 -3.159688</min>
+		<max>1.270460 0.361161 2.746712</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

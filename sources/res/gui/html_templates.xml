@@ -727,7 +727,6 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 				<crystal>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/CrystalIcon-2.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</crystal>
 				<equipCoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/equipCoin-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</equipCoin>
 				<eventCoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/EventCoinIcon-2.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</eventCoin>
-				<platformCurrency>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/%(iconName)sIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</platformCurrency>
 				<bpcoin>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/BpcoinIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</bpcoin>
 				<xp>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/XpIcon-1.png&apos; width=&apos;16&apos; height=&apos;15&apos; vspace=&apos;-3&apos; /&gt;</xp>
 				<freeXP>&lt;font color=&apos;#95907F&apos;&gt;%(value)s &lt;/font&gt;&lt;img src=&apos;img://gui/maps/icons/library/FreeXpIcon-1.png&apos; width=&apos;16&apos; height=&apos;16&apos; vspace=&apos;-3&apos; /&gt;</freeXP>
@@ -1156,6 +1155,8 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			<poiCapturedBoldText>&lt;font size=&apos;18&apos; face=&apos;$TitleFont&apos;&gt;&lt;b&gt;%(message)s&lt;/b&gt;&lt;/font&gt;</poiCapturedBoldText>
 			<poiCapturedRegularText>&lt;font size=&apos;16&apos; face=&apos;$TitleFont&apos;&gt;%(message)s&lt;/font&gt;</poiCapturedRegularText>
 			<robotoCondensed>&lt;font face=&apos;$FieldFont&apos; size=&apos;16&apos; color=&apos;#F2F2F2&apos;&gt;%(message)s&lt;/font&gt;</robotoCondensed>
+			<whiteTitle15>&lt;font size=&apos;15&apos; face=&apos;$TitleFont&apos; color=&apos;#FFFFFF&apos;&gt;%(message)s&lt;/font&gt;</whiteTitle15>
+			<whiteTitle12>&lt;font size=&apos;12&apos; face=&apos;$TitleFont&apos; color=&apos;#FFFFFF&apos;&gt;%(message)s&lt;/font&gt;</whiteTitle12>
 		</textStyle>
 		<profileStatistics>
 			<marksOfMasteryText>%(marksOfMastery)s&lt;font size=&apos;14&apos; color=&apos;#939188&apos;&gt;/%(totalVehicles)s&lt;/font&gt;</marksOfMasteryText>
@@ -1353,4 +1354,10 @@ _(#invites:invites/text/fort/defence) &lt;font color=&quot;#c9c9b6&quot;&gt;%(cl
 			</roleSkill>
 		</tooltips>
 	</comp7>
+	<ranked>
+		<voiceChat>
+			<fullStatsStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#cbac77&apos;&gt;%(message)s&lt;/font&gt;</fullStatsStyle>
+			<playersPanelStyle>&lt;font face=&apos;$FieldFont&apos; size=&apos;12&apos; color=&apos;#ffdd99&apos;&gt;%(message)s&lt;/font&gt;</playersPanelStyle>
+		</voiceChat>
+	</ranked>
 </root>

@@ -1,6 +1,6 @@
 import typing
 from web.web_client_api import w2capi
-from constants import WGC_PUBLICATION
+from constants import LGC_PUBLICATION
 from helpers import dependency
 from skeletons.gui.login_manager import ILoginManager
 from soft_exception import SoftException
@@ -18,9 +18,9 @@ class PlatformWebApi(object):
 
     def __init__(self):
         super(PlatformWebApi, self).__init__()
-        self.__mapping = {WGC_PUBLICATION.WGC_STEAM: SteamPlatformWebApi(), 
-           WGC_PUBLICATION.WGC_360: China360PlatformWebApi(), 
-           WGC_PUBLICATION.WGC_PC: WgPlatformWebApi()}
+        self.__mapping = {LGC_PUBLICATION.LGC_STEAM: SteamPlatformWebApi(), 
+           LGC_PUBLICATION.LGC_CN360: China360PlatformWebApi(), 
+           LGC_PUBLICATION.LGC_BASE: WgPlatformWebApi()}
 
     @w2c(W2CSchema, 'get_type')
     def getType(self, _):
@@ -39,7 +39,7 @@ class PlatformWebApi(object):
         return getattr(self.__getApi(), 'isOverlayEnabled', lambda : False)()
 
     def __getApi(self):
-        pub = self.__loginManager.getWgcPublication()
+        pub = self.__loginManager.getLgcPublication()
         if pub not in self.__mapping:
             raise SoftException('Unknown platform type: %r' % pub)
         return self.__mapping[pub]

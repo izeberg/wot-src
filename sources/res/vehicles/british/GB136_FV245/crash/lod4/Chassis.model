@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB136_FV245/crash/lod4/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>
+			-2.02409 0.00006 -3.990452
+			<!--BW_String-->
+		</min>
+		<max>2.024089 1.367283 3.839484</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

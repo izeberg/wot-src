@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.245437 -0.049147 -2.032858</min>
+		<max>1.246634 1.571475 1.680272</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz38_Projekt_SAT/crash/lod0/Turret_01</nodefullVisual>
+</root>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<teamVivoxChannel>
+			<Type>PYTHON</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+			<Default>{}</Default>
+		</teamVivoxChannel>
+	</Properties>
+	<CellMethods>
+		<setVivoxPresence>
+			<Arg>BOOL</Arg>
+			<Exposed/>
+		</setVivoxPresence>
+	</CellMethods>
+	<ofEntity>
+		<TeamInfo/>
+	</ofEntity>
+</root>

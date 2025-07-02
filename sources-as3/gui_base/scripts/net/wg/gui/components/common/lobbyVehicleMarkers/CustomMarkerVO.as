@@ -8,6 +8,8 @@ package net.wg.gui.components.common.lobbyVehicleMarkers
       
       public var text:String = "";
       
+      public var iconPosition:String = "";
+      
       public function CustomMarkerVO()
       {
          super();

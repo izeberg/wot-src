@@ -11,11 +11,17 @@ package net.wg.gui.components.common.lobbyVehicleMarkers
    {
       
       private static const IMG_ICON_OFFSET_X:int = 12;
+      
+      private static const IMG_ICON_OFFSET_Y:int = 8;
+      
+      private static const ICON_POSITION_BOTTOM:String = "bottom";
        
       
       public var imgIcon:Image = null;
       
       public var tf:TextField;
+      
+      private var _isBottom:Boolean = false;
       
       private var _model:CustomMarkerVO = null;
       
@@ -52,17 +58,27 @@ package net.wg.gui.components.common.lobbyVehicleMarkers
          }
          if(isInvalid(InvalidationType.SIZE))
          {
-            this.imgIcon.x = this.tf.x - (this.imgIcon.width >> 1) - IMG_ICON_OFFSET_X;
-            this.imgIcon.y = this.tf.height - this.imgIcon.height >> 1;
+            if(this._isBottom)
+            {
+               this.imgIcon.x = -this.imgIcon.width >> 1;
+               this.imgIcon.y = this.tf.height + this.imgIcon.height >> 1 + IMG_ICON_OFFSET_Y;
+            }
+            else
+            {
+               this.imgIcon.x = this.tf.x - (this.imgIcon.width >> 1) - IMG_ICON_OFFSET_X;
+               this.imgIcon.y = this.tf.height - this.imgIcon.height >> 1;
+            }
          }
       }
       
-      public function setInfo(param1:String, param2:String) : void
+      public function setInfo(param1:String, param2:String, param3:String) : void
       {
          this._model = new CustomMarkerVO();
          this._model.icon = param1;
          this._model.text = param2;
+         this._model.iconPosition = param3;
          this.imgIcon.source = this._model.icon;
+         this._isBottom = this._model.iconPosition == ICON_POSITION_BOTTOM;
          invalidateData();
       }
       

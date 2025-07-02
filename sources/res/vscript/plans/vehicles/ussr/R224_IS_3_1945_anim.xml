@@ -158,6 +158,18 @@
 				<slots/>
 			</block>
 			<block>
+				<class>Macro</class>
+				<id>Macro_1</id>
+				<params>
+					<param>
+						getArrayRandomValue
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_2</id>
 				<buddy>Variable_2</buddy>
@@ -377,18 +389,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
-				<params>
-					<param>
-						getArrayRandomValue
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>SetVariable</class>
 				<id>SetVariable_1</id>
 				<buddy>Variable_1</buddy>
@@ -438,6 +438,18 @@
 					<param>
 						destroyFuelTankModel
 						<name>Event Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
+					<param>
+						getArrayRandomValue
+						<name>Macro Name</name>
 						<type>StringT</type>
 					</param>
 				</params>
@@ -517,18 +529,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
-				<params>
-					<param>
-						getArrayRandomValue
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>ArenaPeriodStartEvent</class>
 				<id>ArenaPeriodStartEvent_1</id>
 				<params>
@@ -573,51 +573,6 @@
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_6</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>IsPlayerVehicle</class>
-				<id>IsPlayerVehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>RemoveGameObject</class>
-				<id>RemoveGameObject_4</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GameObjectToVehicle</class>
-				<id>GameObjectToVehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>FindFirstNode</class>
-				<id>FindFirstNode_5</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>name</name>
-						<const>\equipment_GO\</const>
-					</slot>
-					<slot>
-						<name>includingInactive</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -841,6 +796,12 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>ListenLocalEvent_1</from>
+				<input>input</input>
+				<to>Macro_1</to>
+				<output>exec</output>
+			</connection>
+			<connection>
 				<from>Macro_1</from>
 				<input>input</input>
 				<to>SetVariable_2</to>
@@ -955,12 +916,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ListenLocalEvent_1</from>
-				<input>input</input>
-				<to>Macro_1</to>
-				<output>exec</output>
-			</connection>
-			<connection>
 				<from>Sequence_2</from>
 				<input>input</input>
 				<to>SetVariable_1</to>
@@ -983,6 +938,12 @@
 				<input>gameObject</input>
 				<to>FindFirstNode_1</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>ListenLocalEvent_2</from>
+				<input>input</input>
+				<to>Macro_2</to>
+				<output>exec</output>
 			</connection>
 			<connection>
 				<from>Macro_2</from>
@@ -1021,12 +982,6 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>ListenLocalEvent_2</from>
-				<input>input</input>
-				<to>Macro_2</to>
-				<output>exec</output>
-			</connection>
-			<connection>
 				<from>If_5</from>
 				<input>input</input>
 				<to>SendLocalEvent_1</to>
@@ -1035,56 +990,8 @@
 			<connection>
 				<from>StartScript_1</from>
 				<input>input</input>
-				<to>If_6</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>IsPlayerVehicle_1</from>
-				<input>value</input>
-				<to>If_6</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_1</from>
-				<input>vehicle</input>
-				<to>IsPlayerVehicle_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>If_6</from>
-				<input>in</input>
-				<to>RemoveGameObject_4</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>FindFirstNode_5</from>
-				<input>gameObject</input>
-				<to>RemoveGameObject_4</to>
-				<output>node</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_1</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>FindFirstNode_5</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>If_6</from>
-				<input>input</input>
 				<to>Sequence_2</to>
-				<output>true</output>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>Sequence_2</from>

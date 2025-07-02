@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A164_TS_6/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.610252 0.000037 -3.543560</min>
+		<max>1.610187 1.002156 3.578475</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A164_TS_6/normal/lod3/Chassis</nodefullVisual>
+</root>

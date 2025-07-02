@@ -1,4 +1,4 @@
-from constants import WG_GAMES
+from constants import CURRENT_GAME_ID
 from gui.platform.base.request import Params, ContentType
 from gui.platform.wgnp.demo_account.response import WGNPDemoAccCredentialsAddResponse, WGNPDemoAccCredentialsConfirmResponse, WGNPDemoAccChangeNicknameResponse, WGNPDemoAccValidateNicknameResponse
 
@@ -14,7 +14,7 @@ class AddCredentialsParams(Params):
     proofOfWorkURL = './personal/api/v2/account/credentials/basic/create/challenge/?type=pow'
     method = 'POST'
     queryParams = {'type': 'pow'}
-    postData = {'game': WG_GAMES.TANKS}
+    postData = {'game': CURRENT_GAME_ID}
 
     def __init__(self, urlHost, login, password):
         super(AddCredentialsParams, self).__init__(urlHost)
@@ -27,7 +27,7 @@ class ConfirmCredentialsParams(Params):
     url = './personal/api/v2/account/credentials/basic/activate/'
     headers = {'Content-Type': ContentType.FORM_URLENCODED.value}
     method = 'POST'
-    postData = {'game': WG_GAMES.TANKS}
+    postData = {'game': CURRENT_GAME_ID}
 
     def __init__(self, urlHost, code):
         super(ConfirmCredentialsParams, self).__init__(urlHost)
@@ -58,7 +58,7 @@ class ChangeNicknameParams(Params):
     url = './personal/api/v2/account/name/update/'
     headers = {'Content-Type': ContentType.FORM_URLENCODED.value}
     method = 'POST'
-    postData = {'game': WG_GAMES.TANKS, 'via': WG_GAMES.TANKS}
+    postData = {'game': CURRENT_GAME_ID, 'via': CURRENT_GAME_ID}
 
     def __init__(self, urlHost, nickname, cost):
         super(ChangeNicknameParams, self).__init__(urlHost)

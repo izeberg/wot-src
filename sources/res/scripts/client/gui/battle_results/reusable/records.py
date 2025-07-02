@@ -97,6 +97,9 @@ _SUPPORTED_OPS = {ValueReplay.SET: ReplayRecord,
 
 class ReplayRecords(ResultRecord):
     __slots__ = ('_records', )
+    __BIRTHDAY_MAP = {'eventCreditsFactor100List_mt_birthday_economics##credits_gold': 'birthdayCreditsBonus', 
+       'eventXPFactor100List_mt_birthday_economics##xp_freeXP': 'birthdayXPFactorBonus', 
+       'eventFreeXPFactor100List_mt_birthday_economics##xp_freeXP': 'birthdayFreeXPFactorBonus'}
 
     def __init__(self, replay, *last):
         super(ReplayRecords, self).__init__()
@@ -142,7 +145,13 @@ class ReplayRecords(ResultRecord):
     def _addRecord(self, op, name, value, diff):
         if op in _SUPPORTED_OPS:
             clazz = _SUPPORTED_OPS[op]
-            self._records[name] = clazz(name, value, diff)
+            birthdayName = self.__remapForBirthday(name)
+            self._records[birthdayName] = clazz(birthdayName, value, diff)
+
+    def __remapForBirthday(self, name):
+        if name in self.__BIRTHDAY_MAP:
+            return self.__BIRTHDAY_MAP[name]
+        return name
 
 
 class RecordsIterator(ResultRecord):

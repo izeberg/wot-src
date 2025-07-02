@@ -74,15 +74,15 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.000002 0.007170 -0.000000</groupOrigin>
+				<groupOrigin>-0.000003 0.012685 -0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-8.032858 -0.067452 -9.475568</min>
-		<max>8.032852 0.081792 9.475567</max>
+		<min>-8.032858 -0.067443 -9.475568</min>
+		<max>8.032852 0.092814 9.475567</max>
 	</boundingBox>
-	<geometrySize>157000</geometrySize>
+	<geometrySize>197960</geometrySize>
 	<minUVDensity>0.000294</minUVDensity>
 </root>

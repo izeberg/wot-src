@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.246561 -0.000001 -2.033161</min>
+		<max>1.247759 1.571475 1.680250</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz38_Projekt_SAT/normal/lod1/Turret_01</nodefullVisual>
+</root>

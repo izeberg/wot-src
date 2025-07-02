@@ -234,11 +234,6 @@
 		<min>-0.227566 -0.320623 -0.002499</min>
 		<max>0.309262 0.560628 4.437312</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>lambert1</identifier>
-		</material>
-	</missingBspMaterial>
 	<geometrySize>240702</geometrySize>
 	<minUVDensity>0.042914</minUVDensity>
 </root>

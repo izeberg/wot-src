@@ -147,6 +147,10 @@ package net.wg.gui.lobby.header.mainMenuButtonBar
       override protected function draw() : void
       {
          var _loc1_:Button = null;
+         if(_baseDisposed)
+         {
+            return;
+         }
          if(isInvalid(InvalidationType.RENDERERS) || isInvalid(InvalidationType.DATA) || isInvalid(InvalidationType.SETTINGS) || isInvalid(InvalidationType.SIZE))
          {
             removeChild(container);

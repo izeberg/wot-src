@@ -28,7 +28,7 @@
 				0
 				<material>
 					<identifier>s_nd_0</identifier>
-					<fx>shaders/std_effects/lightonly.fx</fx>
+					<fx>shaders/std_effects/lightonly_helpers.fx</fx>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>

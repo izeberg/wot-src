@@ -11,6 +11,7 @@ from dossiers2.custom.dependencies import RANKED_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import A30X30_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import EPIC_BATTLE_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import STEAM_ACHIEVEMENT_DEPENDENCIES
+from dossiers2.custom.dependencies import MEDAL_ALIASES
 from battle_statistics_layouts import *
 TOTAL_BLOCK_LAYOUT = [
  'creationTime', 'lastBattleTime', 'battleLifeTime', 'treesCut', 'mileage']
@@ -137,19 +138,19 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'maxKillingSeries', 'piercingSeries', 'maxPiercingSeries', 'battleHeroes',
  'warrior', 'invader',
  'sniper', 'defender', 'steelwall', 'supporter', 'scout', 'evileye', 'medalKay',
- 'medalCarius',
- 'medalKnispel', 'medalPoppel', 'medalAbrams', 'medalLeClerc', 'medalLavrinenko',
+ 'medalSamokhin',
+ 'medalGudz', 'medalPoppel', 'medalAbrams', 'medalLeClerc', 'medalLavrinenko',
  'medalEkins',
- 'medalWittmann', 'medalOrlik', 'medalOskin', 'medalHalonen', 'medalBurda',
+ 'medalUshakov', 'medalOrlik', 'medalOskin', 'medalKrysov', 'medalBurda',
  'medalBillotte',
  'medalKolobanov', 'medalFadin', 'medalRadleyWalters', 'medalBrunoPietro',
- 'medalTarczay',
- 'medalPascucci', 'medalDumitru', 'medalLehvaslaiho', 'medalNikolas',
+ 'medalLyubushkin',
+ 'medalPascucci', 'medalDumitru', 'medalKhazov', 'medalNikolas',
  'medalLafayettePool',
  'sinai', 'heroesOfRassenay', 'beasthunter', 'mousebane', 'tankExpertStrg',
  'raider', 'kamikaze', 'lumberjack',
  'medalBrothersInArms', 'medalCrucialContribution', 'medalDeLanglade',
- 'medalTamadaYoshio',
+ 'medalTrubin',
  'bombardier', 'huntsman', 'alaric', 'sturdy', 'ironMan', 'luckyDevil',
  'pattonValley',
  'fragsPatton', 'mechanicEngineerStrg', 'sniper2', 'mainGun',
@@ -179,14 +180,14 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'wt2024HunterWins', 'wt2024BossWins', 'wt2024MaxPlasma']
 _achievements15x15PopUps = [
  'warrior', 'invader', 'sniper', 'defender', 'steelwall', 'supporter',
- 'scout', 'medalKay', 'medalCarius', 'medalKnispel', 'medalPoppel', 'medalAbrams',
+ 'scout', 'medalKay', 'medalSamokhin', 'medalGudz', 'medalPoppel', 'medalAbrams',
  'medalLeClerc',
- 'medalLavrinenko', 'medalEkins', 'medalWittmann', 'medalOrlik', 'medalOskin',
- 'medalHalonen',
+ 'medalLavrinenko', 'medalEkins', 'medalUshakov', 'medalOrlik', 'medalOskin',
+ 'medalKrysov',
  'medalBurda', 'medalBillotte', 'medalKolobanov', 'medalFadin', 'beasthunter', 'mousebane',
  'tankExpert', 'raider',
  'kamikaze', 'lumberjack', 'evileye', 'medalRadleyWalters', 'medalLafayettePool',
- 'medalBrunoPietro', 'medalTarczay', 'medalPascucci', 'medalDumitru', 'medalLehvaslaiho',
+ 'medalBrunoPietro', 'medalLyubushkin', 'medalPascucci', 'medalDumitru', 'medalKhazov',
  'medalNikolas', 'sinai', 'pattonValley', 'heroesOfRassenay', 'mechanicEngineer',
  'tankExpert0',
  'tankExpert1', 'tankExpert2', 'tankExpert3', 'tankExpert4', 'tankExpert5', 'tankExpert6',
@@ -197,7 +198,7 @@ _achievements15x15PopUps = [
  'mechanicEngineer3', 'mechanicEngineer4', 'mechanicEngineer5', 'mechanicEngineer6',
  'mechanicEngineer7', 'mechanicEngineer8', 'mechanicEngineer9', 'mechanicEngineer10',
  'mechanicEngineer11', 'mechanicEngineer12', 'mechanicEngineer13', 'mechanicEngineer14',
- 'medalBrothersInArms', 'medalCrucialContribution', 'medalDeLanglade', 'medalTamadaYoshio',
+ 'medalBrothersInArms', 'medalCrucialContribution', 'medalDeLanglade', 'medalTrubin',
  'bombardier', 'huntsman', 'alaric', 'sturdy', 'ironMan', 'luckyDevil', 'sniper2',
  'mainGun',
  'medalMonolith', 'medalAntiSpgFire', 'medalGore', 'medalCoolBlood',
@@ -223,7 +224,7 @@ _achievements15x15PopUps = [
  'wclTournamentParticipant', 'wclParticipant',
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
  'wt2024HunterWins', 'wt2024BossWins', 'wt2024MaxPlasma']
-_achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps)
+_achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps, aliases=MEDAL_ALIASES)
 _STEAM_BLOCK_LAYOUT = [
  'steamBattleCredits', 'steamLittleSavingsMedal', 'steamMintedCoinMedal', 'steamKingMidasMedal',
  'steamBattleXP', 'steamGoodStudentMedal', 'steamBattleHardenedMedal', 'steamExperienceMedal',
@@ -364,7 +365,7 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'bob2025Lebwa', 'bob2025Yusha', 'bob2025NearYou', 'bob2025Jove',
  'BattlePassCommonPr_16_Marathon',
  'hb25MedalOffence', 'hb25MedalDefence', 'support_2025', 'BattlePassCommonPr_17',
- 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend']
+ 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend', 'BirthdayPr_2025']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -431,7 +432,8 @@ _singleAchievementsPopUps = [
  'bob2025Lebwa', 'bob2025Yusha', 'bob2025NearYou', 'bob2025Jove',
  'BattlePassCommonPr_16_Marathon',
  'hb25MedalOffence', 'hb25MedalDefence', 'support_2025', 'BattlePassCommonPr_17',
- 'BattlePassCommonPr_16_Marathon', 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend']
+ 'BattlePassCommonPr_16_Marathon', 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend',
+ 'BirthdayPr_2025']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

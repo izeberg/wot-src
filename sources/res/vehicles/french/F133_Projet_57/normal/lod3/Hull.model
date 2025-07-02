@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F133_Projet_57/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.793817 -0.567305 -4.215324</min>
+		<max>1.790000 1.001173 3.978828</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F133_Projet_57/normal/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+</root>

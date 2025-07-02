@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB137_CVT_Spider/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.254517 0.008695 -2.796338</min>
+		<max>1.254517 0.866749 2.769906</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB137_CVT_Spider/normal/lod3/Chassis</nodefullVisual>
+</root>

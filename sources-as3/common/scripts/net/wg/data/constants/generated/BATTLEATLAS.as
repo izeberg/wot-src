@@ -243,6 +243,10 @@ package net.wg.data.constants.generated
       
       public static const BADGE_15:String = "badge_15";
       
+      public static const BADGE_150:String = "badge_150";
+      
+      public static const BADGE_151:String = "badge_151";
+      
       public static const BADGE_16:String = "badge_16";
       
       public static const BADGE_17:String = "badge_17";
@@ -877,6 +881,8 @@ package net.wg.data.constants.generated
       
       public static const CZECH_CZ37_VZ_59_DRAVEC:String = "czech-Cz37_Vz_59_Dravec";
       
+      public static const CZECH_CZ38_PROJEKT_SAT:String = "czech-Cz38_Projekt_SAT";
+      
       public static const DAMAGE_BAR_GREEN:String = "damageBar_green";
       
       public static const DAMAGE_BLOCKED_BY_ARMOR:String = "damageBlockedByArmor";
@@ -1339,6 +1345,8 @@ package net.wg.data.constants.generated
       
       public static const FRANCE_F131_COUTELAS:String = "france-F131_Coutelas";
       
+      public static const FRANCE_F133_PROJET_57:String = "france-F133_Projet_57";
+      
       public static const FRANCE_F14_AMX40:String = "france-F14_AMX40";
       
       public static const FRANCE_F15_AMX_12T:String = "france-F15_AMX_12t";
@@ -1470,6 +1478,8 @@ package net.wg.data.constants.generated
       public static const FRANCE_F85_M4_A1_FL10:String = "france-F85_M4A1_FL10";
       
       public static const FRANCE_F87_BATIGNOLLES_CHATILLON_12T:String = "france-F87_Batignolles-Chatillon_12t";
+      
+      public static const FRANCE_F87_BATIGNOLLES_CHATILLON_12T_FL:String = "france-F87_Batignolles-Chatillon_12t_FL";
       
       public static const FRANCE_F88_AMX_13_105:String = "france-F88_AMX_13_105";
       
@@ -1727,6 +1737,8 @@ package net.wg.data.constants.generated
       
       public static const GERMANY_G182_MAUSEKONIG:String = "germany-G182_Mausekonig";
       
+      public static const GERMANY_G189_E100_02:String = "germany-G189_E100_02";
+      
       public static const GERMANY_G19_WESPE:String = "germany-G19_Wespe";
       
       public static const GERMANY_G20_MARDER_II:String = "germany-G20_Marder_II";
@@ -1836,6 +1848,8 @@ package net.wg.data.constants.generated
       public static const GERMANY_G63_PZ_I_AUSF_C:String = "germany-G63_PzI_ausf_C";
       
       public static const GERMANY_G64_PANTHER_II:String = "germany-G64_Panther_II";
+      
+      public static const GERMANY_G64_PANTHER_II_FL:String = "germany-G64_Panther_II_FL";
       
       public static const GERMANY_G64_PANTHER_II_IGR:String = "germany-G64_Panther_II_IGR";
       
@@ -3347,9 +3361,19 @@ package net.wg.data.constants.generated
       
       public static const UK_GB130_FV225:String = "uk-GB130_FV225";
       
+      public static const UK_GB133_CYCLONE_MK_2:String = "uk-GB133_Cyclone_Mk_2";
+      
+      public static const UK_GB134_FV242_B_CONDOR:String = "uk-GB134_FV242B_Condor";
+      
       public static const UK_GB134_FV242_B_CONDOR_T:String = "uk-GB134_FV242B_Condor_T";
       
+      public static const UK_GB135_FV240:String = "uk-GB135_FV240";
+      
       public static const UK_GB135_FV240_T:String = "uk-GB135_FV240_T";
+      
+      public static const UK_GB136_FV245:String = "uk-GB136_FV245";
+      
+      public static const UK_GB137_CVT_SPIDER:String = "uk-GB137_CVT_Spider";
       
       public static const UK_GB14_M2:String = "uk-GB14_M2";
       
@@ -3683,6 +3707,8 @@ package net.wg.data.constants.generated
       
       public static const USA_A163_H_3_2:String = "usa-A163_H_3_2";
       
+      public static const USA_A164_TS_6:String = "usa-A164_TS_6";
+      
       public static const USA_A165_XM57:String = "usa-A165_XM57";
       
       public static const USA_A169_TF_3:String = "usa-A169_TF_3";
@@ -3786,6 +3812,8 @@ package net.wg.data.constants.generated
       public static const USA_A67_T57_58_T:String = "usa-A67_T57_58_T";
       
       public static const USA_A68_T28_PROTOTYPE:String = "usa-A68_T28_Prototype";
+      
+      public static const USA_A68_T28_PROTOTYPE_FL:String = "usa-A68_T28_Prototype_FL";
       
       public static const USA_A69_T110_E5:String = "usa-A69_T110E5";
       
@@ -4099,6 +4127,8 @@ package net.wg.data.constants.generated
       
       public static const USSR_R19_IS_3:String = "ussr-R19_IS-3";
       
+      public static const USSR_R19_IS_3_FL:String = "ussr-R19_IS-3_FL";
+      
       public static const USSR_R19_IS_3_IGR:String = "ussr-R19_IS-3_IGR";
       
       public static const USSR_R191_OBJECT_283:String = "ussr-R191_Object_283";
@@ -4132,6 +4162,8 @@ package net.wg.data.constants.generated
       public static const USSR_R202_SU_2_122:String = "ussr-R202_SU_2_122";
       
       public static const USSR_R203_OBJECT_168_N:String = "ussr-R203_Object_168N";
+      
+      public static const USSR_R204_ISU_122_2:String = "ussr-R204_ISU_122_2";
       
       public static const USSR_R205_TANK_ROZANOVA:String = "ussr-R205_Tank_Rozanova";
       

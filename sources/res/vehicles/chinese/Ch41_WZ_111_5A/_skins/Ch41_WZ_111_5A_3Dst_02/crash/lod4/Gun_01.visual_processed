@@ -63,11 +63,6 @@
 		<min>-0.410498 -0.259451 0.096332</min>
 		<max>0.623246 0.237035 6.343511</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>tank_proxy</identifier>
-		</material>
-	</missingBspMaterial>
 	<geometrySize>1964</geometrySize>
 	<minUVDensity>0.006004</minUVDensity>
 </root>

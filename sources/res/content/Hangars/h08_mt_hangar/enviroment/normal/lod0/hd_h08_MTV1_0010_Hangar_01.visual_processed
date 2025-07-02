@@ -114,6 +114,15 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
+				<node>
+					<identifier>s9</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -203,11 +212,11 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.100000 0.500000 1.000000 0.500000</Vector4>
+						<Vector4>0.100000 0.850000 1.000000 0.500000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>0.549020 0.533333 0.521569 1.000000</Vector4>
+						<Vector4>0.521569 0.513726 0.505882 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -248,10 +257,43 @@
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s9</node>
+		<geometry>
+			<vertices>s9Shape.vertices</vertices>
+			<primitive>s9Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd9</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Hangar_Railway_02_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Hangar_Railway_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Hangar_Railway_02_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>1.327208 -0.575029 -136.692169</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>s8</node>
 		<geometry>
 			<vertices>s8Shape.vertices</vertices>
-			<stream>s8Shape.colour</stream>
 			<primitive>s8Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -277,7 +319,7 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0010_Hangar_Railway_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001547 -0.440002 -119.507309</groupOrigin>
+				<groupOrigin>1.309121 -0.391252 -135.809662</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -342,7 +384,7 @@
 					</property>
 					<property>
 						g_tile1Tint
-						<Vector4>0.901961 0.901961 0.901961 1.000000</Vector4>
+						<Vector4>0.650980 0.650980 0.650980 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile2Tint
@@ -418,7 +460,6 @@
 		<geometry>
 			<vertices>s4Shape.vertices</vertices>
 			<stream>s4Shape.uv2</stream>
-			<stream>s4Shape.colour</stream>
 			<primitive>s4Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -492,7 +533,7 @@
 						<Vector4>0.521569 0.501961 0.482353 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-5.202314 19.792425 -122.490555</groupOrigin>
+				<groupOrigin>-5.202314 19.792452 -122.490555</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -575,7 +616,7 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/00_Tiles/Metal_01_Painted_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.023973 16.808956 -122.322113</groupOrigin>
+				<groupOrigin>0.023972 16.808990 -122.322113</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -798,8 +839,8 @@
 	<constraints/>
 	<boundingBox>
 		<min>-51.951576 -1.000786 -208.345795</min>
-		<max>41.973377 33.585186 -68.714668</max>
+		<max>41.973377 33.585213 -68.714668</max>
 	</boundingBox>
-	<geometrySize>1707882</geometrySize>
+	<geometrySize>1549918</geometrySize>
 	<minUVDensity>0.001725</minUVDensity>
 </root>

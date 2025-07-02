@@ -638,6 +638,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.DetailsStatsView;
    import net.wg.gui.lobby.battleResults.EpicStats;
    import net.wg.gui.lobby.battleResults.IEmblemLoadedDelegate;
+   import net.wg.gui.lobby.battleResults.PostbattleExtraTab;
    import net.wg.gui.lobby.battleResults.TeamStats;
    import net.wg.gui.lobby.battleResults.components.AlertMessage;
    import net.wg.gui.lobby.battleResults.components.BattleResultImageSwitcherView;
@@ -735,6 +736,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.event.TeamTableSortEvent;
    import net.wg.gui.lobby.battleResults.managers.IStatsUtilsManager;
    import net.wg.gui.lobby.battleResults.managers.impl.StatsUtilsManager;
+   import net.wg.gui.lobby.battleResults.postbattleExtraTab.PostbattleExtraTabContent;
    import net.wg.gui.lobby.battleResults.progressReport.BattleResultUnlockDogTag;
    import net.wg.gui.lobby.battleResults.progressReport.BattleResultUnlockDogTagVO;
    import net.wg.gui.lobby.battleResults.progressReport.BattleResultUnlockItem;
@@ -1159,6 +1161,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.CrewDropDownEvent;
    import net.wg.gui.lobby.hangar.CrewPanelInject;
    import net.wg.gui.lobby.hangar.DailyQuestWidget;
+   import net.wg.gui.lobby.hangar.EconomyWidget;
    import net.wg.gui.lobby.hangar.Hangar;
    import net.wg.gui.lobby.hangar.HangarAmunitionSwitchAnimator;
    import net.wg.gui.lobby.hangar.HangarContentHelper;
@@ -1177,6 +1180,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.ammunitionPanelInject.data.HelpLayoutDataVO;
    import net.wg.gui.lobby.hangar.ammunitionPanelInject.events.AmmunitionPanelInjectEvents;
    import net.wg.gui.lobby.hangar.data.AlertMessageBlockVO;
+   import net.wg.gui.lobby.hangar.data.EconomyWidgetVO;
    import net.wg.gui.lobby.hangar.data.HangarHeaderVO;
    import net.wg.gui.lobby.hangar.data.HeaderQuestGroupVO;
    import net.wg.gui.lobby.hangar.data.HeaderQuestsVO;
@@ -1191,6 +1195,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.data.EntryPointVO;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ArmoryYardWidgetEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BREntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BirthdayBannerEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CollectionEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CommonEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.Comp7EntryPoint;
@@ -4342,6 +4347,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_IEMBLEMLOADEDDELEGATE:Class = IEmblemLoadedDelegate;
       
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_POSTBATTLEEXTRATAB:Class = PostbattleExtraTab;
+      
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_TEAMSTATS:Class = TeamStats;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_COMPONENTS_ALERTMESSAGE:Class = AlertMessage;
@@ -4535,6 +4542,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_MANAGERS_ISTATSUTILSMANAGER:Class = IStatsUtilsManager;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_MANAGERS_IMPL_STATSUTILSMANAGER:Class = StatsUtilsManager;
+      
+      public static const NET_WG_GUI_LOBBY_BATTLERESULTS_POSTBATTLEEXTRATAB_POSTBATTLEEXTRATABCONTENT:Class = PostbattleExtraTabContent;
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_PROGRESSREPORT_BATTLERESULTUNLOCKDOGTAG:Class = BattleResultUnlockDogTag;
       
@@ -5366,6 +5375,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DAILYQUESTWIDGET:Class = DailyQuestWidget;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_ECONOMYWIDGET:Class = EconomyWidget;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_HANGAR:Class = Hangar;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_HANGARAMUNITIONSWITCHANIMATOR:Class = HangarAmunitionSwitchAnimator;
@@ -5402,6 +5413,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_ALERTMESSAGEBLOCKVO:Class = AlertMessageBlockVO;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_DATA_ECONOMYWIDGETVO:Class = EconomyWidgetVO;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_HANGARHEADERVO:Class = HangarHeaderVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DATA_HEADERQUESTGROUPVO:Class = HeaderQuestGroupVO;
@@ -5427,6 +5440,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_DATA_ENTRYPOINTVO:Class = EntryPointVO;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_ARMORYYARDWIDGETENTRYPOINT:Class = ArmoryYardWidgetEntryPoint;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BIRTHDAYBANNERENTRYPOINT:Class = BirthdayBannerEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BRENTRYPOINT:Class = BREntryPoint;
       

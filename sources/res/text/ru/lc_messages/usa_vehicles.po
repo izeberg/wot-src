@@ -1322,6 +1322,24 @@ msgid "A163_H_3_short_special"
 msgstr ""
 "Достойное фронтальное бронирование, хорошие УВН, магазин на два снаряда"
 
+msgid "A164_TS_6"
+msgstr "TS-6"
+
+msgid "A164_TS_6_descr"
+msgstr ""
+"К началу 50-х годов работы по американской танковой программе заметно ускорились, и связано это было с войной в Корее. Одним из проектов, появившихся в ходе конференции Question Mark III, стал TS-6. Новый танк должен был обладать высокой огневой мощью и хорошим уровнем защиты. Корпус планировалось делать из комбинации литых и катаных листов, а в ходовой части использовать опорные катки большого диаметра. Однако было решено развивать тему Heavy Tank T43E2, а другие проекты тяжёлых танков убрали в архив.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A164_TS_6_long_special"
+msgstr "?empty?"
+
+msgid "A164_TS_6_short"
+msgstr "TS-6"
+
+msgid "A164_TS_6_short_special"
+msgstr "?empty?"
+
 msgid "A165_XM57"
 msgstr "XM57"
 
@@ -1664,6 +1682,9 @@ msgstr "AN-VRC-7A"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
+msgid "AN_GRC_7"
+msgstr "AN/GRC-7"
+
 msgid "AN_GRC_7A"
 msgstr "AN/GRC-7A"
 
@@ -1725,6 +1746,14 @@ msgstr ""
 
 msgid "AOI_695"
 msgstr "AOI-695"
+
+msgid "AVI_1790_8"
+msgstr "Continental AVI-1790-8"
+
+msgid "AVI_1790_8_short"
+msgstr ""
+"Continental\n"
+"AVI-1790-8"
 
 msgid "AX_1170"
 msgstr "AX-1170"
@@ -1946,6 +1975,9 @@ msgstr "H-3"
 
 msgid "Chassis_A163_H_3_2"
 msgstr "H-3"
+
+msgid "Chassis_A164_TS_6"
+msgstr "TS-6"
 
 msgid "Chassis_A165_XM57"
 msgstr "XM-57"
@@ -3803,6 +3835,18 @@ msgstr "T28"
 msgid "T28_Prototype"
 msgstr "T28 Prototype"
 
+msgid "T28_Prototype_FL"
+msgstr "T28 Prototype FL"
+
+msgid "T28_Prototype_FL_long_special"
+msgstr "?empty?"
+
+msgid "T28_Prototype_FL_short"
+msgstr "T28 Prot. FL"
+
+msgid "T28_Prototype_FL_short_special"
+msgstr "?empty?"
+
 msgid "T28_Prototype_descr"
 msgstr ""
 "Ранний прототип тяжёлого танка прорыва, предназначенного для преодоления "
@@ -4363,6 +4407,9 @@ msgstr "H-3"
 
 msgid "Turret_1_A163_H_3_2"
 msgstr "H-3"
+
+msgid "Turret_1_A164_TS_6"
+msgstr "TS-6"
 
 msgid "Turret_1_A165_XM57"
 msgstr "XM-57"
@@ -5032,6 +5079,9 @@ msgstr "AP"
 msgid "_120mm_AP_T42"
 msgstr "AP T42"
 
+msgid "_120mm_AP_T_M358"
+msgstr "AP-T M358"
+
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
 
@@ -5064,6 +5114,9 @@ msgstr "120 mm Gun T123E6"
 
 msgid "_120mm_Gun_T123E6_66"
 msgstr "120 mm Gun T123E6/66"
+
+msgid "_120mm_Gun_T123E7"
+msgstr "120 mm Gun T123E7"
 
 msgid "_120mm_Gun_T124"
 msgstr "120 mm Gun T124"
@@ -5101,6 +5154,9 @@ msgstr "HEAT M830"
 msgid "_120mm_HEAT_M835"
 msgstr "HEAT M835"
 
+msgid "_120mm_HEAT_T_M469"
+msgstr "HEAT-T M469"
+
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
 
@@ -5112,6 +5168,9 @@ msgstr "HE M358"
 
 msgid "_120mm_HE_Shot"
 msgstr "HE Shell"
+
+msgid "_120mm_HE_T_M356"
+msgstr "HE-T M356"
 
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"

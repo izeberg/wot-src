@@ -18,10 +18,13 @@ msgid "buttons/learn"
 msgstr "Выкарыстаць"
 
 msgid "card/freeExp/additionalText"
-msgstr "{whiteSpanish_Start}Курс абмену:{whiteSpanish_End} %(freeXp) = %(xp)"
+msgstr "Курс обмена: %(value)s"
+
+msgid "card/freeExp/additionalTextValues"
+msgstr "%(freeXp)s = %(xp)s"
 
 msgid "card/freeExp/discountValue"
-msgstr "-%(discount)%"
+msgstr "-%(discount)s%"
 
 msgid "card/freeExp/mainText"
 msgstr ""
@@ -33,43 +36,43 @@ msgstr "ВОЛЬНЫ ДОСВЕД"
 
 msgid "card/nationBook/additionalText"
 msgstr ""
-"• Узровень валодання асноўнай спецыяльнасцю: 100%\n"
-"• Спецыялізацыя: %(vehicleName)."
+"• Уровень владения основной специальностью: 100%\n"
+"• Специализация: %(vehicleName)s."
 
 msgid "card/nationBook/mainText"
 msgstr ""
-"Прымяняецца да ўсяго экіпажа.\n"
-"Вывучэнне дае %(xp) досведу кожнаму члену экіпажа."
+"Применяется ко всему экипажу.\n"
+"Изучение даёт %(xp)s опыта каждому члену экипажа."
 
 msgid "card/nationBook/title/brochure"
-msgstr "НАВУЧАЛЬНАЯ БРАШУРА (&zwnbsp;%(nation)&zwnbsp;)"
+msgstr "УЧЕБНАЯ БРОШЮРА (&zwnbsp;%(nation)s&zwnbsp;)"
 
 msgid "card/nationBook/title/crewBook"
-msgstr "НАВУЧАЛЬНЫ ДАПАМОЖНІК (&zwnbsp;%(nation)&zwnbsp;)"
+msgstr "УЧЕБНОЕ ПОСОБИЕ (&zwnbsp;%(nation)s&zwnbsp;)"
 
 msgid "card/nationBook/title/guide"
-msgstr "ПАДРУЧНІК (&zwnbsp;%(nation)&zwnbsp;)"
+msgstr "УЧЕБНОЕ РУКОВОДСТВО (&zwnbsp;%(nation)s&zwnbsp;)"
 
 msgid "card/personalBook/additionalText"
 msgstr "Прымяняецца без абмежаванняў."
 
 msgid "card/personalBook/mainText"
 msgstr ""
-"Прымяняецца да выбранага члена экіпажа.\n"
-"Вывучэнне дае яму %(xp) досведу."
+"Применяется к выбранному члену экипажа.\n"
+"Изучение даёт ему %(xp)s опыта."
 
 msgid "card/personalBook/title"
 msgstr "ПЕРСАНАЛЬНЫ НАВУЧАЛЬНЫ ДАПАМОЖНІК"
 
 msgid "card/universalBook/additionalText"
 msgstr ""
-"• Узровень валодання асноўнай спецыяльнасцю: 100%\n"
-"• Спецыялізацыя: %(vehicleName)."
+"• Уровень владения основной специальностью: 100%\n"
+"• Специализация: %(vehicleName)s."
 
 msgid "card/universalBook/mainText"
 msgstr ""
-"Прымяняецца да ўсяго экіпажа.\n"
-"Вывучэнне дае %(xp) досведу кожнаму члену экіпажа."
+"Применяется ко всему экипажу.\n"
+"Изучение даёт %(xp)s опыта каждому члену экипажа."
 
 msgid "card/universalBook/title/universalBook"
 msgstr "УНІВЕРСАЛЬНЫ ДАПАМОЖНІК"
@@ -81,16 +84,16 @@ msgid "card/universalBook/title/universalGuide"
 msgstr "УНІВЕРСАЛЬНЫ ПАДРУЧНІК"
 
 msgid "confirm/crewLabel"
-msgstr "Кожны танкіст экіпажа атрымае %(xpValue)"
+msgstr "Каждый член экипажа получит %(xpValue)s"
 
 msgid "confirm/crewLabelSeparated"
-msgstr "Кожны танкіст экіпажа атрымае %(xpValue),"
+msgstr "Каждый член экипажа получит %(xpValue)s,"
 
 msgid "confirm/personalExtraLabel"
-msgstr " %(memberName) атрымае дадаткова %(xpValue)"
+msgstr " %(memberName)s получит дополнительно %(xpValue)s"
 
 msgid "confirm/personalLabel"
-msgstr "%(memberName) атрымае %(xpValue)"
+msgstr "%(memberName)s получит %(xpValue)s"
 
 msgid "items/brochure/Name"
 msgstr "Навучальная брашура (%(nation)s)"
@@ -159,17 +162,17 @@ msgid "tooltip/sale/header"
 msgstr "Выгадны курс абмену"
 
 msgid "tooltip/sale/newRate"
-msgstr "Новы курс абмену: %(freeXp) = %(xp)"
+msgstr "Новый курс обмена: %(freeXp)s = %(xp)s"
 
 msgid "tooltip/sale/oldRate"
-msgstr "Папярэдні курс абмену: %(freeXp) = %(xp)"
+msgstr "Предыдущий курс обмена: %(freeXp)s = %(xp)s"
 
 msgid "tooltip/stepper/levelUpdate"
 msgstr ""
-"Націсніце %(controlsImg), каб павялічыць/паменшыць узровень вывучэння навыку"
-" на 1%."
+"Нажмите %(controlsImg)s, чтобы увеличить/уменьшить уровень изучения навыка "
+"на 1%."
 
 msgid "tooltip/stepper/perkUpdate"
 msgstr ""
-"Націсніце %(pgupImg)/%(pgdownImg), каб павялічыць узровень вывучэння навыку "
-"да 100% (без вучэбных матэрыялаў) / вярнуцца да папярэдняга навыку."
+"Нажмите %(pgupImg)s/%(pgdownImg)s, чтобы увеличить уровень изучения навыка "
+"до 100% (без учебных материалов) / вернуться к предыдущему навыку."

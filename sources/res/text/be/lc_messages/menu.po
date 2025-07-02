@@ -91,7 +91,7 @@ msgid "account/profile/emptyBattleList"
 msgstr "У баях не ўдзельнічаў"
 
 msgid "accountInfo/credits"
-msgstr "Серебро:"
+msgstr "Срэбра:"
 
 msgid "accountInfo/crystal"
 msgstr "Боны:"
@@ -685,6 +685,9 @@ msgstr "Лінія фронту"
 msgid "bonusType/29"
 msgstr "«Сталёвы паляўнічы»"
 
+msgid "bonusType/30"
+msgstr "«Стальной охотник» (взвод)"
+
 msgid "bonusType/32"
 msgstr "«Бітва блогераў»"
 
@@ -725,7 +728,7 @@ msgid "bonusType/9"
 msgstr "Адмысловы гульнявы рэжым"
 
 msgid "booster/bonus/booster_credits"
-msgstr "%(effectValue)s на %(effectHours)s к серебру за бой"
+msgstr "%(effectValue)s на %(effectHours)s да срэбра за бой"
 
 msgid "booster/bonus/booster_crew_xp"
 msgstr "%(effectValue)s на %(effectHours)s да досведу экіпажу за бой"
@@ -744,7 +747,7 @@ msgid "booster/bonus/booster_xp"
 msgstr "%(effectValue)s на %(effectHours)s да досведу за бой"
 
 msgid "booster/description/bonusValueTime/booster_credits"
-msgstr "Бонус %(effectValue)s к серебру за бой на %(effectTime)s"
+msgstr "Бонус %(effectValue)s да срэбра за бой на %(effectTime)s"
 
 msgid "booster/description/bonusValueTime/booster_crew_xp"
 msgstr "Бонус %(effectValue)s да досведу экіпажу за бой на %(effectTime)s"
@@ -763,7 +766,7 @@ msgid "booster/description/bonusValueTime/booster_xp"
 msgstr "Бонус %(effectValue)s да досведу за бой на %(effectTime)s"
 
 msgid "booster/description/booster_credits"
-msgstr "%(effectValue)s к серебру за бой"
+msgstr "%(effectValue)s к серебру за бой."
 
 msgid "booster/description/booster_crew_xp"
 msgstr "%(effectValue)s да досведу экіпажу за бой"
@@ -790,7 +793,7 @@ msgid "booster/description/effectValueTime"
 msgstr "%(effectValue)s на %(effectTime)s"
 
 msgid "booster/influence/booster_credits"
-msgstr "к серебру за бой"
+msgstr "да срэбра за бой"
 
 msgid "booster/influence/booster_crew_xp"
 msgstr "да досведу экіпажа за бой"
@@ -820,7 +823,7 @@ msgid "booster/quality/small"
 msgstr "(малы)"
 
 msgid "booster/userName/booster_credits"
-msgstr "Дополнительное серебро за бой"
+msgstr "Дадатковае срэбра за бой"
 
 msgid "booster/userName/booster_crew_xp"
 msgstr "Дадатковы досвед экіпажу за бой"
@@ -1107,6 +1110,9 @@ msgstr "Разведка боем: стварыць звяз"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
+
+msgid "contextMenu/createRankedSquad"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "contextMenu/createSquad"
 msgstr "Стварыць звяз"
@@ -1993,13 +1999,13 @@ msgstr ""
 
 msgid "descriptions/vehicleGun/autoReloadDualGun"
 msgstr ""
-"Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s; "
-"Средняя пробиваемость: %(avgPiercingPower)s мм"
+"Набіванне гарматы: %(reloadTimeSecs)s с; Сярэднія пашкоджанні: "
+"%(avgDamageList)s; Сярэдняя прабівальнасць: %(avgPiercingPower)s мм"
 
 msgid "descriptions/vehicleGun/clipDualGun"
 msgstr ""
-"Заряжание орудия: %(reloadTimeSecs)s с; Средний урон: %(avgDamageList)s; "
-"Средняя пробиваемость: %(avgPiercingPower)s мм"
+"Набіванне гарматы: %(reloadTimeSecs)s с; Сярэднія пашкоджанні: "
+"%(avgDamageList)s; Сярэдняя прабівальнасць: %(avgPiercingPower)s мм"
 
 msgid "descriptions/vehicleGun/dualGun"
 msgstr ""
@@ -2148,7 +2154,7 @@ msgstr ""
 "моманту атрымання папярэджання."
 
 msgid "extraParams/name/chargeTimeBonus"
-msgstr "Параметр, отвечающий за уменьшение времени подготовки к залпу."
+msgstr "Параметр, які адказвае за памяншэнне часу падрыхтоўкі да залпу."
 
 msgid "extraParams/name/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
@@ -2226,7 +2232,7 @@ msgstr ""
 "пачнуць паскараць перанабіванне."
 
 msgid "extraParams/name/loadShellIntoDualGunBonus"
-msgstr "Параметр, отвечающий за ускорение дозарядки снаряда в орудии."
+msgstr "Параметр, які адказвае за паскарэнне данабівання снарада ў гармаце."
 
 msgid "extraParams/name/minTimeBetweenReloadBoost"
 msgstr ""
@@ -2235,8 +2241,8 @@ msgstr ""
 
 msgid "extraParams/name/penaltyAfterShotBonus"
 msgstr ""
-"Параметр, отвечающий за уменьшение времени штрафа после залпа, в течение "
-"которого орудие не может заряжаться."
+"Параметр, які адказвае за памяншэнне часу штрафу пасля залпу, на працягу "
+"якога гармата не можа набівацца."
 
 msgid "extraParams/name/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -2248,8 +2254,8 @@ msgstr "Параметр, які адказвае за шанц пазбегну
 
 msgid "extraParams/name/speedLimitsBonus"
 msgstr ""
-"Параметр, отвечающий за увеличение максимальной скорости и скорости заднего "
-"хода."
+"Параметр, які адказвае за павелічэнне максімальнай хуткасці і хуткасці "
+"задняга ходу."
 
 msgid "extraParams/name/stunResistanceEffectFactor"
 msgstr ""
@@ -2462,6 +2468,9 @@ msgstr "Падрабязная справаздача"
 
 msgid "finalStatistic/tabs/epicStats"
 msgstr "Асабісты вынік"
+
+msgid "finalStatistic/tabs/postbattleExtraTab"
+msgstr "Праздничная почта"
 
 msgid "finalStatistic/tabs/teamStats"
 msgstr "Камандны вынік"
@@ -3079,7 +3088,7 @@ msgid "headerButtons/battle/types/mapbox/availability/hours"
 msgstr "%(hour)s гадз."
 
 msgid "headerButtons/battle/types/mapbox/availability/lessThanHour"
-msgstr "менее 1 ч."
+msgstr "менш за 1 гадз."
 
 msgid "headerButtons/battle/types/mapbox/extra/endsIn"
 msgstr "Да канца падзеі: %(timeLeft)s"
@@ -3143,6 +3152,9 @@ msgstr ""
 
 msgid "headerButtons/battle/types/rankedLeave/descr"
 msgstr "Выйсці з бою"
+
+msgid "headerButtons/battle/types/rankedSquad"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "headerButtons/battle/types/rts"
 msgstr "Мастацтва стратэгіі"
@@ -4174,13 +4186,13 @@ msgstr "Падрабязней"
 msgid "login/server"
 msgstr "Сервер і пінг (мс):"
 
+msgid "login/social/status/LGC_ERROR"
+msgstr "Памылка аўтарызацыі. Увядзіце эл. пошту і пароль."
+
 msgid "login/social/status/SYSTEM_ERROR"
 msgstr ""
 "Памылка аўтарызацыі праз сац. сетку або  Леста ID. Паспрабуйце ўвайсці "
 "стандартным спосабам, скарыстаўшы логін і пароль."
-
-msgid "login/social/status/WGC_ERROR"
-msgstr "Памылка аўтарызацыі. Увядзіце эл. пошту і пароль."
 
 msgid "login/social/warning/SOCIAL_NETWORK_LOGOUT"
 msgstr ""
@@ -4210,6 +4222,11 @@ msgid "login/status/DNS_LOOKUP_FAILED"
 msgstr ""
 "Не ўдалося злучыцца з серверам.\n"
 "Магчыма, сервер недаступны ці патрэбна праверыць налады сеткавага злучэння."
+
+msgid "login/status/LGC_LOGOUT"
+msgstr ""
+"Вы выйшлі з акаўнта %(userName)s. Увядзіце электронную пошту і пароль, каб "
+"увайсці ў гульню."
 
 msgid "login/status/LOGIN_BAD_PROTOCOL_VERSION"
 msgstr "Трэба абнавіць кліента гульні."
@@ -4336,11 +4353,6 @@ msgstr "Памылка аўтарызацыі. Націсніце «Увайсц
 
 msgid "login/status/UNKNOWN_ERROR"
 msgstr "Невядомая памылка."
-
-msgid "login/status/WGC_LOGOUT"
-msgstr ""
-"Вы выйшлі з акаўнта %(userName)s. Увядзіце электронную пошту і пароль, каб "
-"увайсці ў гульню."
 
 msgid "login/status/accessForbiddenToPeriphery"
 msgstr ""
@@ -4488,12 +4500,12 @@ msgid "moduleInfo/additionalInfo"
 msgstr "Характарыстыкі снарада залежаць ад гарматы."
 
 msgid "moduleInfo/autoReloadDualGunLabel"
-msgstr "Спаренная установка с системой дозарядки"
+msgstr "Спараная ўстаноўка з сістэмай данабівання"
 
 msgid "moduleInfo/autoReloadDualGunWithoutResetReloadLabel"
 msgstr ""
-"Спаренная установка с системой дозарядки.\n"
-"Процесс заряжания одного орудия не прерывается во время выстрела из другого."
+"Спараная ўстаноўка з сістэмай данабівання.\n"
+"Працэс набівання адной гарматы не перапыняецца падчас стрэлу з іншай."
 
 msgid "moduleInfo/autoReloadGunLabel"
 msgstr "Сістэма данабівання магазіна"
@@ -4507,12 +4519,22 @@ msgid "moduleInfo/autoShootFlameGunLabel"
 msgstr "Агнямётная безмагазінная сістэма"
 
 msgid "moduleInfo/clipDualGunLabel"
-msgstr "Спаренная установка с системой заряжания"
+msgstr "Спараная ўстаноўка з сістэмай набівання"
+
+msgid "moduleInfo/clipDualGunWithAutoloadWithClipLabel"
+msgstr ""
+"Спаренная установка с системой заряжания.\n"
+"Снаряды заряжаются в орудия вместе с зарядкой магазина."
+
+msgid "moduleInfo/clipDualGunWithoutResetReloadAndWithAutoloadWithClipLabel"
+msgstr ""
+"Спаренная установка с системой заряжания.\n"
+"Снаряды заряжаются в орудия вместе с зарядкой магазина. Процесс заряжания одного орудия не прерывается во время выстрела из другого."
 
 msgid "moduleInfo/clipDualGunWithoutResetReloadLabel"
 msgstr ""
-"Спаренная установка с системой заряжания.\n"
-"Процесс заряжания одного орудия не прерывается во время выстрела из другого."
+"Спараная ўстаноўка з сістэмай набівання.\n"
+"Працэс набівання адной гарматы не перапыняецца падчас стрэлу з іншай."
 
 msgid "moduleInfo/clipGunLabel"
 msgstr "Магазінная сістэма набівання"
@@ -5116,29 +5138,29 @@ msgstr "САУ чакаюць бою даўжэй за іншыя тыпы тэ�
 
 msgid "premium/bonus"
 msgstr ""
-"Серебра и опыта\n"
-"за каждый бой"
+"Срэбра і досведу\n"
+"за кожны бой"
 
 msgid "premium/buyMessage"
-msgstr "Купіць прэміум акаўнт"
+msgstr "Купить Премиум аккаунт"
 
 msgid "premium/buyTitle"
-msgstr "Купля прэміум акаўнту"
+msgstr "Покупка Премиум аккаунта"
 
 msgid "premium/cancel"
 msgstr "Скасаваць"
 
 msgid "premium/continueMessage"
-msgstr "Працягнуць прэміум акаўнт"
+msgstr "Продлить Премиум аккаунт"
 
 msgid "premium/continueTitle"
-msgstr "Працяг прэміум акаўнту"
+msgstr "Продление Премиум аккаунта"
 
 msgid "premium/gold"
 msgstr "золата"
 
 msgid "premium/ofCreditsAndExperience"
-msgstr "серебра и опыта"
+msgstr "срэбра і досведу"
 
 msgid "premium/packet/days1"
 msgstr "1 суткі"
@@ -5166,13 +5188,13 @@ msgstr "90 сутак"
 
 msgid "premium/packet/longDescriptionSpecial"
 msgstr ""
-"Наличие премиум аккаунта позволяет вам быстрее развиваться в игре, "
+"Наличие Премиум аккаунта позволяет вам быстрее развиваться в игре, "
 "обеспечивая дополнительный заработок серебра и опыта. Премиум аккаунт един "
 "для Мира танков и Мира кораблей, поэтому, покупая его для одной игры, вы "
 "автоматически получаете его в другой."
 
 msgid "premium/packet/shortDescriptionSpecial"
-msgstr "+50% к опыту, серебру и опыту экипажа за бой"
+msgstr "+50% да досведу, срэбра і досведу экіпажу за бой"
 
 msgid "premium/perEverButtle"
 msgstr "за кожны бой"
@@ -5205,7 +5227,7 @@ msgid "premium/periods/days90"
 msgstr "На 3 месяцы (90 сутак)"
 
 msgid "premium/promoMessage"
-msgstr "Даёт на 50% больше серебра и на 50% больше опыта за каждый бой."
+msgstr "Дае на 50% больш срэбра і досведу за кожны бой."
 
 msgid "premium/submitBuy"
 msgstr "Купіць"
@@ -5226,7 +5248,7 @@ msgid "price/bpcoin"
 msgstr "жэтонаў Баявога пропуска"
 
 msgid "price/credits"
-msgstr "серебра"
+msgstr "срэбра"
 
 msgid "price/crystal"
 msgstr "бонаў"
@@ -5259,7 +5281,7 @@ msgid "profile/creationTime"
 msgstr "Створаны:"
 
 msgid "profile/credits"
-msgstr "Серебро:"
+msgstr "Срэбра:"
 
 msgid "profile/crystal"
 msgstr "Боны:"
@@ -5334,7 +5356,7 @@ msgid "profile/premiumBuy"
 msgstr "Купіць прэміум"
 
 msgid "profile/premiumContinue"
-msgstr "Працягнуць прэміум акаўнт"
+msgstr "Продлить Премиум аккаунт"
 
 msgid "profile/premiunExpirationDate"
 msgstr "Заканчваецца %s"
@@ -5567,7 +5589,7 @@ msgid "research/labels/vehXP"
 msgstr "Баявы досвед"
 
 msgid "research/premium/benefits/first"
-msgstr "Больше серебра за каждый бой"
+msgstr "Больш срэбра за кожны бой"
 
 msgid "research/premium/benefits/fourth"
 msgstr "Абмен баявога досведу на вольны з першага бою"
@@ -6054,7 +6076,7 @@ msgid "shop/menu/vehicle/name"
 msgstr "Тэхніка"
 
 msgid "shop/menu/vehicle/obtainingType/restoreVehicle/name"
-msgstr "Восстановление за серебро"
+msgstr "Аднаўленне за срэбра"
 
 msgid "shop/menu/vehicle/obtainingType/tradeInVehicle/name"
 msgstr "Абмен тэхнікі"
@@ -6996,8 +7018,8 @@ msgstr "Стварыць пакой"
 
 msgid "training/description"
 msgstr ""
-"Опыт и серебро в Тренировочных боях не начисляются, однако всё обслуживание "
-"техники полностью бесплатное."
+"Досвед і срэбра ў Супольных вучэннях не налічваюцца, аднак усё абслугоўванне"
+" тэхнікі цалкам бясплатнае."
 
 msgid "training/info/deleteButton"
 msgstr "Выдаліць пакой"

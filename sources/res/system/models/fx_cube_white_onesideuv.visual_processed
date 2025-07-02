@@ -22,7 +22,7 @@
 					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
-					<fx>shaders/std_effects/lightonly.fx</fx>
+					<fx>shaders/std_effects/lightonly_helpers.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>system/models/fx_cube_white_onesideuv_AM.dds</Texture>

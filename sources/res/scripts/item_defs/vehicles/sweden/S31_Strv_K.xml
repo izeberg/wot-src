@@ -3508,10 +3508,13 @@
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>
-					152.4
+					222.3
 					<!--BW_String-->
 				</armor_1>
-				<armor_2>254</armor_2>
+				<armor_2>
+					304.8
+					<!--BW_String-->
+				</armor_2>
 				<armor_3>
 					88.9
 					<!--BW_String-->
@@ -3550,7 +3553,7 @@
 					<!--BW_String-->
 				</armor_14>
 				<armor_16>
-					177.8
+					222.3
 					<!--BW_String-->
 				</armor_16>
 			</armor>
@@ -3581,16 +3584,16 @@
 					<maxAmmo>45</maxAmmo>
 					<armor>
 						<armor_1>
-							235
+							330.2
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							88.9
-							<!--BW_String-->
+							127
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
-							101.6
+							152.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_3>
@@ -3599,12 +3602,12 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_5>
-							203.2
+							279.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							152.4
+							190.5
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
@@ -3626,7 +3629,10 @@
 						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>
+						10.5
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
 						2.5
 						<!--BW_String-->

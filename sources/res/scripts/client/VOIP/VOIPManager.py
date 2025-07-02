@@ -594,8 +594,7 @@ class VOIPManager(VOIPHandler):
             return
         self.__channelUsers[dbid] = {'talking': False, 'uri': uri, 'muted': False}
         user = self.usersStorage.getUser(dbid)
-        if user and user.isMuted():
-            self.__muteParticipantForMe(dbid, True)
+        self.__muteParticipantForMe(dbid, user and user.isMuted())
 
     def onParticipantRemoved(self, data):
         if int(data[VOIPCommon.KEY_RETURN_CODE]) != VOIPCommon.CODE_SUCCESS:

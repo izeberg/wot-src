@@ -151,15 +151,6 @@
 					<row3>0.000000 1.131370 0.380518</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>HP_hullAbillity</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -238,10 +229,14 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>hull_equipment_01</identifier>
+					<identifier>tank_equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G182_Mausekonig/Mausekonig_turret_01_AM.dds</Texture>
@@ -255,6 +250,10 @@
 						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
@@ -266,23 +265,15 @@
 						normalMap
 						<Texture>vehicles/german/G182_Mausekonig/Mausekonig_turret_01_ANM.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						g_useDetailMetallic
-						<Bool>true</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.000000 0.223375 -0.215219</groupOrigin>
+				<groupOrigin>0.000000 0.316097 -0.215219</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.374613 -0.818980 -5.248830</min>
+		<min>-2.374613 -0.640822 -5.248830</min>
 		<max>2.374613 1.336370 5.113351</max>
 	</boundingBox>
-	<geometrySize>1496364</geometrySize>
+	<geometrySize>1318060</geometrySize>
 	<minUVDensity>0.001315</minUVDensity>
 </root>

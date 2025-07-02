@@ -1248,9 +1248,6 @@ msgstr "Спісана ачкоў Баявога пропуска"
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "Спісана сталёвых пячатак"
 
-msgid "platformCurrencyMsg/debited/bumblebee_coin"
-msgstr "Списано Жетонов Летней распродажи"
-
 msgid "platformCurrencyMsg/debited/equip_coin"
 msgstr "Спісана кампанентаў"
 
@@ -1263,17 +1260,11 @@ msgstr "Вольны досвед спісаны"
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Спісана жэтонаў за выслугу гадоў"
 
-msgid "platformCurrencyMsg/debited/summergames_coin"
-msgstr "Списано жетонов «Танкового многоборья»"
-
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Налічана ачкоў Баявога пропуска"
 
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "Налічана сталёвых пячатак"
-
-msgid "platformCurrencyMsg/received/bumblebee_coin"
-msgstr "Начислено Жетонов Летней распродажи"
 
 msgid "platformCurrencyMsg/received/equip_coin"
 msgstr "Налічана кампанентаў"
@@ -1286,9 +1277,6 @@ msgstr "Атрымана вольнага досведу"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Дададзена жэтонаў за выслугу гадоў"
-
-msgid "platformCurrencyMsg/received/summergames_coin"
-msgstr "Добавлено жетонов «Танкового многоборья»"
 
 msgid "prebattle/addAllBtn/tooltip/body"
 msgstr "Дадаць усе кантакты ў спіс адрасатаў."
@@ -1613,6 +1601,12 @@ msgstr ""
 "Не ўдалося папоўніць рыштунак у %s. Усё ваша золата будзе даступнае пасля "
 "аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
 
+msgid "serviceChannelMessages/autoEquipNotEnough"
+msgstr ""
+"На Складе закончились инструкции, выбранные для %s. Чтобы продолжить "
+"использовать инструкции, включите докупку закончившихся инструкций или "
+"выберите имеющиеся в наличии."
+
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr ""
 "Не ўдалося аўтаматычна папоўніць рыштунак у %s. Загрузіце рыштунак уручную."
@@ -1892,7 +1886,7 @@ msgid "serviceChannelMessages/battleResults/actionsResultsBpcoin"
 msgstr "%s жэтонаў"
 
 msgid "serviceChannelMessages/battleResults/actionsResultsCredits"
-msgstr "%s серебра"
+msgstr "%s срэбра"
 
 msgid "serviceChannelMessages/battleResults/actionsResultsCrystal"
 msgstr "%s бонаў"
@@ -1922,7 +1916,7 @@ msgid "serviceChannelMessages/battleResults/contributionForDamageAllies"
 msgstr "кампенсацыя за пашкоджанні ад хаўруснікаў: %s"
 
 msgid "serviceChannelMessages/battleResults/credits"
-msgstr "Получено серебра"
+msgstr "Атрымана срэбра"
 
 msgid "serviceChannelMessages/battleResults/crystal"
 msgstr "Атрымана бонаў"
@@ -2013,7 +2007,7 @@ msgstr ""
 "За паспяховае выкананне асабістых баявых задач кампаніі %(text)s вам нададзены наступныя ўзнагароды"
 
 msgid "serviceChannelMessages/battleResults/piggyBank"
-msgstr "В хранилище серебра поступило"
+msgstr "У сховішча срэбра паступіла"
 
 msgid "serviceChannelMessages/battleResults/quests"
 msgstr "Баявая задача выканана! Узнагарода"
@@ -2031,7 +2025,7 @@ msgid "serviceChannelMessages/battleResults/quests/bpcoin"
 msgstr "Дададзены жэтоны"
 
 msgid "serviceChannelMessages/battleResults/quests/credits"
-msgstr "Добавлено серебра"
+msgstr "Налічана срэбра"
 
 msgid "serviceChannelMessages/battleResults/quests/crystal"
 msgstr "Дададзена бонаў"
@@ -2248,7 +2242,7 @@ msgid "serviceChannelMessages/boosterExpired"
 msgstr "Час дзеяння асабістага рэзерву «%(boosterName)s» скончыўся."
 
 msgid "serviceChannelMessages/boosterExpiredResourceName/credits"
-msgstr "серебру"
+msgstr "срэбра"
 
 msgid "serviceChannelMessages/boosterExpiredResourceName/freeXP"
 msgstr "вольнага досведу"
@@ -2289,10 +2283,10 @@ msgstr ""
 "краме Націску."
 
 msgid "serviceChannelMessages/creditsAndGoldReceivedAsGift"
-msgstr "От администрации получено золота: %(gold)s, серебра: %(credits)s."
+msgstr "Ад адміністрацыі атрымана золата: %(gold)s, срэбра: %(credits)s."
 
 msgid "serviceChannelMessages/creditsReceivedAsGift"
-msgstr "От администрации получено серебра: %(credits)s."
+msgstr "Ад адміністрацыі атрымана срэбра: %(credits)s."
 
 msgid "serviceChannelMessages/crewBooksCount"
 msgstr "%(label)s ×%(count)s"
@@ -2316,7 +2310,7 @@ msgid "serviceChannelMessages/currencyUpdate/debited/bpcoin"
 msgstr "Спісана жэтонаў"
 
 msgid "serviceChannelMessages/currencyUpdate/debited/credits"
-msgstr "Списано серебра"
+msgstr "Спісана срэбра"
 
 msgid "serviceChannelMessages/currencyUpdate/debited/crystal"
 msgstr "Спісана бонаў"
@@ -2343,7 +2337,7 @@ msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Атрымана жэтонаў"
 
 msgid "serviceChannelMessages/currencyUpdate/received/credits"
-msgstr "Получено серебра"
+msgstr "Атрымана срэбра"
 
 msgid "serviceChannelMessages/currencyUpdate/received/crystal"
 msgstr "Атрымана бонаў"
@@ -2689,7 +2683,7 @@ msgid "serviceChannelMessages/invoiceReceived/compensation/camouflage"
 msgstr "Камуфляж"
 
 msgid "serviceChannelMessages/invoiceReceived/compensation/credits"
-msgstr "серебром"
+msgstr "срэбрам"
 
 msgid "serviceChannelMessages/invoiceReceived/compensation/crystal"
 msgstr "бонамі"
@@ -2728,10 +2722,10 @@ msgid "serviceChannelMessages/invoiceReceived/compensation/style"
 msgstr "Стыль"
 
 msgid "serviceChannelMessages/invoiceReceived/creditsAccrued"
-msgstr "Начислено серебра"
+msgstr "Налічана срэбра"
 
 msgid "serviceChannelMessages/invoiceReceived/creditsDebited"
-msgstr "С вашего счёта списано серебра"
+msgstr "З вашага рахунку спісана срэбра"
 
 msgid "serviceChannelMessages/invoiceReceived/crewBooksAccrued"
 msgstr "Налічаны вучэбныя матэрыялы"
@@ -3072,7 +3066,7 @@ msgid "serviceChannelMessages/piggyBank/continueAfterSmashed/piggyBankWotPlus"
 msgstr "Пачаўся новы цыкл назапашвання."
 
 msgid "serviceChannelMessages/piggyBank/onPause"
-msgstr "Накопление серебра в хранилище приостановлено."
+msgstr "Назапашванне срэбра ў сховішчы прыпынена."
 
 msgid "serviceChannelMessages/piggyBank/title"
 msgstr "Рэзервовае сховішча адчынена!"
@@ -3106,8 +3100,8 @@ msgstr "Прагрэс падзеі «Ланцуг перамог» абнуле
 
 msgid "serviceChannelMessages/playStreakFreezes/body"
 msgstr ""
-"Цепь побед была прервана. Для восстановления счётчика необходимо выполнять "
-"боевую задачу события «Цепь побед» %(savedData)s дней подряд."
+"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выконваць "
+"баявую задачу падзеі «Ланцуг перамог» %(savedData)s дзён запар."
 
 msgid "serviceChannelMessages/playStreakFreezesEnd/body"
 msgstr "Ланцуг перамог адноўлены."
@@ -3368,7 +3362,7 @@ msgid "serviceChannelMessages/rentCompensation/compensation"
 msgstr "Кампенсацыя"
 
 msgid "serviceChannelMessages/rentCompensation/creditsReceived"
-msgstr "Начислено серебра за неиспользованное время аренды %(vehicleName)s"
+msgstr "Налічана срэбра за нескарыстаны час пракату «%(vehicleName)s»"
 
 msgid "serviceChannelMessages/rentCompensation/goldReceived"
 msgstr "Налічана золата за нявыкарыстаны час пракату «%(vehicleName)s»"
@@ -3386,7 +3380,7 @@ msgid "serviceChannelMessages/resourceWell/breakLine"
 msgstr "<br/>"
 
 msgid "serviceChannelMessages/resourceWell/credits"
-msgstr "Серебра: %(count)s"
+msgstr "Срэбра: %(count)s"
 
 msgid "serviceChannelMessages/resourceWell/crystal"
 msgstr "Бонаў: %(count)s"
@@ -3533,10 +3527,10 @@ msgid "serviceChannelMessages/sysMsg/converter/camouflages"
 msgstr "Камуфляж зменены"
 
 msgid "serviceChannelMessages/sysMsg/converter/creditsReceived"
-msgstr "Начислено серебра: %(credits)s"
+msgstr "Налічана срэбра: %(credits)s"
 
 msgid "serviceChannelMessages/sysMsg/converter/creditsWithdrawn"
-msgstr "Списано серебра: %(credits)s"
+msgstr "Спісана срэбра: %(credits)s"
 
 msgid "serviceChannelMessages/sysMsg/converter/crystalReceived"
 msgstr "Боны: %(crystal)s"

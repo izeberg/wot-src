@@ -72,11 +72,11 @@ def getNationSettings(customTooltipBody=None):
 
 
 def getTankmanKindSettings(labelResId=R.invalid(), options=None, dismissedTooltipTargetId=R.invalid()):
-    kindList = options or (TankmanKind.RECRUIT, TankmanKind.TANKMAN, TankmanKind.DISMISSED)
+    kindList = options or (TankmanKind.RECRUIT, TankmanKind.TANKMAN, TankmanKind.UNIQUE, TankmanKind.DISMISSED)
     toggles = []
     for kind in kindList:
         if kind == TankmanKind.DISMISSED:
-            toggles.append(ToggleButtonSettings(toggleID=kind.value, icon=R.images.gui.maps.icons.tankmen.card.location.dismissed(), tooltipContentId=R.views.lobby.crew.tooltips.DismissedToggleTooltip(), tooltipTargetId=dismissedTooltipTargetId))
+            toggles.append(ToggleButtonSettings(toggleID=kind.value, icon=R.images.gui.maps.icons.tankmen.card.location.dismissed(), tooltipContentId=R.views.lobby.crew.tooltips.DismissedToggleTooltip(), tooltipTargetId=dismissedTooltipTargetId, tooltipHeader=R.strings.crew.filter.tooltip.tankmanKind.dismissed.title()))
         else:
             toggles.append(_createTankmanKindToggle(kind.value))
 
@@ -86,7 +86,8 @@ def getTankmanKindSettings(labelResId=R.invalid(), options=None, dismissedToolti
 def getTankmanLocationSettings():
     toggles = _getTankmanLocationToggles() + [ _createTankmanKindToggle(kind.value) for kind in (
      TankmanKind.RECRUIT,
-     TankmanKind.TANKMAN)
+     TankmanKind.TANKMAN,
+     TankmanKind.UNIQUE)
                                              ]
     return FilterGroupSettings(toggleID=ToggleGroupType.LOCATION.value, labelResId=R.invalid(), toggleType=ToggleGroupType.LOCATION, toggles=toggles)
 
@@ -130,6 +131,7 @@ def getPersonalDataCardTypeSettings():
 def _createTankmanKindToggle(tankmanKind):
     tankmanKindIcons = {TankmanKind.TANKMAN.value: R.images.gui.maps.icons.library.tankman(), 
        TankmanKind.RECRUIT.value: R.images.gui.maps.icons.library.friendshipIcon_1(), 
+       TankmanKind.UNIQUE.value: R.images.gui.maps.icons.library.unique_tankman(), 
        TankmanKind.DISMISSED.value: R.images.gui.maps.icons.tankmen.card.location.dismissed()}
     return ToggleButtonSettings(toggleID=tankmanKind, icon=tankmanKindIcons.get(tankmanKind), tooltipBody=R.strings.crew.filter.tooltip.tankmanKind.dyn(tankmanKind).body(), tooltipHeader=R.strings.crew.filter.tooltip.tankmanKind.dyn(tankmanKind).title())
 

@@ -7,6 +7,8 @@
 		<VehicleInBattleSwitch/>
 		<TeamInfoInBattleVehicleSwitch/>
 		<ArenaTriggerSystemComponent/>
+		<AccountRankedComponent/>
+		<ArenaRankedComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -19,6 +21,7 @@
 		<AtGunpoint/>
 		<EnemyShotPredictorController/>
 		<BombController/>
+		<ArtilleryShotZoneController/>
 		<MapsTrainingStorageComponent/>
 		<BattleHintsComponent/>
 		<Fire/>
@@ -64,5 +67,6 @@
 		<EntityVisualScriptRunner/>
 		<SequenceNetworkSync/>
 		<DualAccuracy/>
+		<RankedVoiceComponent/>
 	</DynamicComponents>
 </root>

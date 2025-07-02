@@ -1,5 +1,6 @@
 import logging, random, re
 from collections import namedtuple
+from ExtensionsManager import g_extensionsManager
 import nations
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import WATCHED_PRE_BATTLE_TIPS_SECTION
@@ -254,7 +255,8 @@ class _TipsValidator(object):
          _RankedBattlesValidator(),
          _PostProgressionValidator(),
          _ChassisTypeValidator(),
-         _VehPropertyValidator())
+         _VehPropertyValidator(),
+         _BirthdayValidator())
 
     def validateRegularTip(self, tipFilter, ctx=None):
         if not tipFilter:
@@ -457,6 +459,22 @@ class _PostProgressionValidator(object):
     def validate(self, tipFilter, _):
         if 'isPostProgressionEnabled' in tipFilter:
             return tipFilter['isPostProgressionEnabled'] == self._isPostProgressionEnabled
+        return True
+
+
+class _BirthdayValidator(object):
+    __slots__ = ('_isActiveEvent', )
+
+    def __init__(self):
+        super(_BirthdayValidator, self).__init__()
+        self._isActiveEvent = False
+        if g_extensionsManager.isExtensionEnabled('mt_birthday'):
+            from mt_birthday.gui.birthday_helpers.tips_helpers import isBirthdayActive
+            self._isActiveEvent = isBirthdayActive()
+
+    def validate(self, tipFilter, _):
+        if 'isBirthdayActive' in tipFilter:
+            return tipFilter['isBirthdayActive'] == self._isActiveEvent
         return True
 
 

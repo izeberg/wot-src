@@ -63,7 +63,7 @@ msgid "common/details/buyPremiumBtn"
 msgstr "Купіць прэміум"
 
 msgid "common/details/creditsTitle"
-msgstr "Серебро"
+msgstr "Срэбра"
 
 msgid "common/details/crystal"
 msgstr "Боны"
@@ -89,8 +89,8 @@ msgstr ""
 
 msgid "common/details/premiumPlus/premium"
 msgstr ""
-"Дополнительный опыт, серебро, премиум задачи и взводные бонусы при наличии "
-"Танкового премиум аккаунта."
+"Дадатковы досвед, срэбра, прэміум задачы і звязовыя бонусы пры наяўнасці "
+"Танкавага прэміум акаўнту."
 
 msgid "common/details/premiumPlus/quests"
 msgstr ""
@@ -99,8 +99,7 @@ msgstr ""
 
 msgid "common/details/premiumPlus/squad"
 msgstr ""
-"Зарабатывайте больше серебра во взводе при наличии Танкового премиум "
-"аккаунта."
+"Здабывайце больш срэбра ў звязе пры наяўнасці Танкавага прэміум акаўнту."
 
 msgid "common/details/xpTitle"
 msgstr "Досвед"
@@ -122,8 +121,8 @@ msgstr "Засталося баёў (прыблізна): %(battles)s"
 
 msgid "common/noIncome/alert/text"
 msgstr ""
-"После 10 боя серебро, награды и опыт в данном режиме начисляться не будут, а"
-" результаты не отразятся на общей статистике."
+"После 10-го боя серебро, награды и опыт в данном режиме начисляться не "
+"будут, а результаты не отразятся на общей статистике."
 
 msgid "common/noIncome/alert/title"
 msgstr "Увага!"
@@ -407,7 +406,7 @@ msgid "common/vehicleState/dead13"
 msgstr "Знішчаны звычкай гульца"
 
 msgid "common/vehicleState/dead15"
-msgstr "Уничтожен минным полем"
+msgstr "Знішчаны мінным полем"
 
 msgid "common/vehicleState/dead2"
 msgstr "Знішчаны таранам"
@@ -490,6 +489,9 @@ msgstr "Налічана за бой"
 msgid "details/calculations/battlePayments"
 msgstr "Баявыя выплаты"
 
+msgid "details/calculations/birthdayEconomicsBonus"
+msgstr "Бонус Дня рождения игры"
+
 msgid "details/calculations/boosters"
 msgstr "Эфект ад асабістых рэзерваў"
 
@@ -498,6 +500,9 @@ msgstr "За выкананне задач"
 
 msgid "details/calculations/crystal/total"
 msgstr "За асаблівыя ўласцівасці машыны"
+
+msgid "details/calculations/directives"
+msgstr "Бонус от экономической инструкции"
 
 msgid "details/calculations/event"
 msgstr "Бонус за баявыя задачы і падзеі"
@@ -568,9 +573,8 @@ msgstr "Дададзена ў сховішча рэсурсаў"
 
 msgid "details/calculations/piggyBankInfo/tooltip"
 msgstr ""
-"У игроков с активным Танковым премиум аккаунтом в резервном хранилище "
-"накапливается дополнительное серебро, а у игроков с активной подпиской — "
-"золото."
+"У гульцоў з актыўным Танкавым прэміум акаўнтам у рэзервовым сховішчы "
+"назапашваецца дадатковае срэбра, а ў гульцоў з актыўнай падпіскай — золата."
 
 msgid "details/calculations/playerRankXP"
 msgstr "Надбаўка за званне"
@@ -606,7 +610,7 @@ msgid "details/calculations/xpRecord"
 msgstr "Налічана за бой (%(color_tag_open)sрэкорд%(color_tag_close)s)"
 
 msgid "details/credits"
-msgstr "Серебро"
+msgstr "Срэбра"
 
 msgid "details/crystal"
 msgstr "Боны"
@@ -779,7 +783,7 @@ msgid "getPremiumPopover/actionBtn/label"
 msgstr "Выбраць тэрмін дзеяння"
 
 msgid "getPremiumPopover/award"
-msgstr "+50% к серебру и опыту"
+msgstr "+50% да срэбра і досведу"
 
 msgid "getPremiumPopover/descriptionText"
 msgstr "Купіце %(prem)s і за ўсе баі будзеце атрымліваць %(award)s"

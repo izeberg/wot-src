@@ -7593,26 +7593,29 @@
 			<price>66000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>108</armor_1>
+				<armor_1>
+					228.6
+					<!--BW_String-->
+				</armor_1>
 				<armor_2>
-					88.9
+					177.8
 					<!--BW_String-->
 				</armor_2>
 				<armor_3>
-					69.9
+					139.7
 					<!--BW_String-->
 				</armor_3>
 				<armor_4>
 					50.8
 					<!--BW_String-->
 				</armor_4>
-				<armor_5>
-					50.8
+				<armor_5>80</armor_5>
+				<armor_6>
+					241.3
 					<!--BW_String-->
-				</armor_5>
-				<armor_6>127</armor_6>
+				</armor_6>
 				<armor_7>
-					50.8
+					101.6
 					<!--BW_String-->
 				</armor_7>
 				<armor_8>0</armor_8>
@@ -7650,12 +7653,15 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							152.4
+							228.6
 							<!--BW_String-->
 						</armor_1>
-						<armor_2>127</armor_2>
+						<armor_2>
+							190.5
+							<!--BW_String-->
+						</armor_2>
 						<armor_3>
-							63.5
+							101.6
 							<!--BW_String-->
 						</armor_3>
 						<armor_4>
@@ -7672,7 +7678,8 @@
 						</armor_6>
 						<armor_8>0</armor_8>
 						<armor_9>
-							127
+							241.3
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_9>
 						<armor_10>127</armor_10>
@@ -7695,7 +7702,7 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>25</reloadTime>
+					<reloadTime>22</reloadTime>
 					<aimingTime>
 						2.6
 						<!--BW_String-->
@@ -8820,12 +8827,15 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							152.4
+							228.6
 							<!--BW_String-->
 						</armor_1>
-						<armor_2>127</armor_2>
+						<armor_2>
+							190.5
+							<!--BW_String-->
+						</armor_2>
 						<armor_3>
-							63.5
+							101.6
 							<!--BW_String-->
 						</armor_3>
 						<armor_4>
@@ -8842,7 +8852,8 @@
 						</armor_6>
 						<armor_8>0</armor_8>
 						<armor_9>
-							127
+							241.3
+							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_9>
 						<armor_10>127</armor_10>
@@ -8865,7 +8876,7 @@
 						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>36</reloadTime>
+					<reloadTime>32</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1

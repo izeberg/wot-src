@@ -274,7 +274,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.components.stats.playersPanel.events.PlayersPanelItemEvent;
    import net.wg.gui.battle.components.stats.playersPanel.interfaces.IPlayersPanelListItem;
    import net.wg.gui.battle.components.stats.playersPanel.interfaces.IRandomPlayersPanelListItem;
-   import net.wg.gui.battle.components.stats.playersPanel.interfaces.IRankedPlayersPanelListItem;
    import net.wg.gui.battle.components.stats.playersPanel.list.BasePlayersListItemHolder;
    import net.wg.gui.battle.components.stats.playersPanel.list.BasePlayersPanelList;
    import net.wg.gui.battle.components.stats.playersPanel.list.BasePlayersPanelListItem;
@@ -462,16 +461,22 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.ranked.battleloading.renderers.TablePlayerItemRenderer;
    import net.wg.gui.battle.ranked.battleloading.renderers.TipPlayerItemRenderer;
    import net.wg.gui.battle.ranked.infrastructure.RankedStatisticsDataController;
+   import net.wg.gui.battle.ranked.stats.components.RankedVoiceChatActivation;
+   import net.wg.gui.battle.ranked.stats.components.data.VoiceChatActivationVO;
+   import net.wg.gui.battle.ranked.stats.components.events.VoiceChatActivationEvent;
    import net.wg.gui.battle.ranked.stats.components.fullStats.FullStats;
    import net.wg.gui.battle.ranked.stats.components.fullStats.FullStatsTable;
    import net.wg.gui.battle.ranked.stats.components.fullStats.FullStatsTableCtrl;
    import net.wg.gui.battle.ranked.stats.components.fullStats.tableItem.StatsTableItem;
    import net.wg.gui.battle.ranked.stats.components.fullStats.tableItem.StatsTableItemHolder;
-   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.PlayersPanelList;
-   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.PlayersPanelListItem;
-   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.PlayersPanelListItemHolder;
-   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.PlayersPanelListLeft;
-   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.PlayersPanelListRight;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.RankedPlayersPanel;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.interfaces.IRankedPlayersPanelListItem;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.interfaces.IRankedPlayersPanelListLeft;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.RankedPlayersPanelList;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.RankedPlayersPanelListItem;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.RankedPlayersPanelListItemHolder;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.RankedPlayersPanelListLeft;
+   import net.wg.gui.battle.ranked.stats.components.playersPanel.list.RankedPlayersPanelListRight;
    import net.wg.gui.battle.views.BaseBattlePage;
    import net.wg.gui.battle.views.BattlePageQuestsProgress;
    import net.wg.gui.battle.views.actionMarkers.ActionMarkerStates;
@@ -1548,8 +1553,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_COMPONENTS_STATS_PLAYERSPANEL_INTERFACES_IRANDOMPLAYERSPANELLISTITEM:Class = IRandomPlayersPanelListItem;
       
-      public static const NET_WG_GUI_BATTLE_COMPONENTS_STATS_PLAYERSPANEL_INTERFACES_IRANKEDPLAYERSPANELLISTITEM:Class = IRankedPlayersPanelListItem;
-      
       public static const NET_WG_GUI_BATTLE_COMPONENTS_STATS_PLAYERSPANEL_LIST_BASEPLAYERSLISTITEMHOLDER:Class = BasePlayersListItemHolder;
       
       public static const NET_WG_GUI_BATTLE_COMPONENTS_STATS_PLAYERSPANEL_LIST_BASEPLAYERSPANELLIST:Class = BasePlayersPanelList;
@@ -1920,6 +1923,12 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_RANKED_INFRASTRUCTURE_RANKEDSTATISTICSDATACONTROLLER:Class = RankedStatisticsDataController;
       
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_RANKEDVOICECHATACTIVATION:Class = RankedVoiceChatActivation;
+      
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_DATA_VOICECHATACTIVATIONVO:Class = VoiceChatActivationVO;
+      
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_EVENTS_VOICECHATACTIVATIONEVENT:Class = VoiceChatActivationEvent;
+      
       public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_FULLSTATS_FULLSTATS:Class = FullStats;
       
       public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_FULLSTATS_FULLSTATSTABLE:Class = FullStatsTable;
@@ -1930,15 +1939,21 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_FULLSTATS_TABLEITEM_STATSTABLEITEMHOLDER:Class = StatsTableItemHolder;
       
-      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_PLAYERSPANELLIST:Class = PlayersPanelList;
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_RANKEDPLAYERSPANEL:Class = RankedPlayersPanel;
       
-      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_PLAYERSPANELLISTITEM:Class = PlayersPanelListItem;
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_INTERFACES_IRANKEDPLAYERSPANELLISTITEM:Class = IRankedPlayersPanelListItem;
       
-      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_PLAYERSPANELLISTITEMHOLDER:Class = PlayersPanelListItemHolder;
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_INTERFACES_IRANKEDPLAYERSPANELLISTLEFT:Class = IRankedPlayersPanelListLeft;
       
-      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_PLAYERSPANELLISTLEFT:Class = PlayersPanelListLeft;
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_RANKEDPLAYERSPANELLIST:Class = RankedPlayersPanelList;
       
-      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_PLAYERSPANELLISTRIGHT:Class = PlayersPanelListRight;
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_RANKEDPLAYERSPANELLISTITEM:Class = RankedPlayersPanelListItem;
+      
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_RANKEDPLAYERSPANELLISTITEMHOLDER:Class = RankedPlayersPanelListItemHolder;
+      
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_RANKEDPLAYERSPANELLISTLEFT:Class = RankedPlayersPanelListLeft;
+      
+      public static const NET_WG_GUI_BATTLE_RANKED_STATS_COMPONENTS_PLAYERSPANEL_LIST_RANKEDPLAYERSPANELLISTRIGHT:Class = RankedPlayersPanelListRight;
       
       public static const NET_WG_GUI_BATTLE_RANKED_VO_DAAPI_RANKEDDAAPIVEHICLEINFOVO:Class = RankedDAAPIVehicleInfoVO;
       

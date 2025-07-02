@@ -1,4 +1,4 @@
-import functools, BattleReplay, BigWorld, WGC, VOIP
+import functools, BattleReplay, BigWorld, LGC, VOIP
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import COLOR_SETTINGS_TAB_IDX
 from account_helpers.settings_core.ServerSettingsManager import LIMITED_UI_KEY
@@ -117,7 +117,7 @@ class SettingsWindow(SettingsWindowMeta):
 
     def __restartGame(self):
         BigWorld.savePreferences()
-        WGC.notifyRestart()
+        LGC.notifyRestart()
         BigWorld.worldDrawEnabled(False)
         BigWorld.restartGame()
 

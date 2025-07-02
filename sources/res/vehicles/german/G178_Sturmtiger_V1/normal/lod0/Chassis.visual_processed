@@ -1166,6 +1166,10 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.419800 0.593892 -0.039628</groupOrigin>
 			</primitiveGroup>
@@ -1234,6 +1238,10 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>3.506849 0.876712 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.419800 0.593892 -0.039628</groupOrigin>

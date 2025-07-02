@@ -9,15 +9,15 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "widget/content/quest"
-msgstr "Перамагчы ў баі або атрымаць 350 адз. «чыстага» досведу"
+msgstr "Победить в бою или получить 250 ед. «чистого» опыта"
 
 msgid "widget/content/tooltip/blocked/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для аднаўлення лічыльніка неабходна выконваць баявую задачу «Ланцуг перамог»"
+" %(redemptionMaxDayCount)s дзён запар."
 
 msgid "widget/content/tooltip/blocked/head"
-msgstr "Цепь побед прервана"
+msgstr "Ланцуг перамог перарваны."
 
 msgid "widget/content/tooltip/body"
 msgstr ""
@@ -79,10 +79,11 @@ msgstr "Узнагароды пакуль недаступныя"
 
 msgid "window/playStreakRewards/periodicRewards/tooltip/body"
 msgstr ""
-"Продлив свою цепь побед до ячейки, отмеченной в списке ежемесячных "
-"начислений, вы ежемесячно будете получать специальную награду. Эти награды "
-"суммируются: по достижении следующей ячейки в рамке вы будете получать две "
-"награды. И так далее, пока цепь побед не будет нарушена."
+"Працягнуўшы свой ланцуг перамог да ячэйкі, адзначанай у спісе штомесячных "
+"налічэнняў, вы штомесяц будзеце атрымліваць адмысловую ўзнагароду. Гэтыя "
+"ўзнагароды сумуюцца: па дасягненні наступнай ячэйкі ў рамцы вы будзеце "
+"атрымліваць дзве ўзнагароды. І так далей, пакуль ланцуг перамог не будзе "
+"парушаны."
 
 msgid "window/playStreakRewards/periodicRewards/tooltip/head"
 msgstr "Рэгулярныя ўзнагароды"
@@ -91,7 +92,7 @@ msgid "window/playStreakRewards/postProgression/bestRewards/head"
 msgstr "Найлепшыя ўзнагароды"
 
 msgid "window/playStreakRewards/postProgression/bestRewards/preview"
-msgstr "Посмотреть в Ангаре"
+msgstr "Паглядзець у Гаражы"
 
 msgid "window/playStreakRewards/postProgression/content/blocked/body"
 msgstr ""
@@ -124,7 +125,7 @@ msgid "window/playStreakRewards/recoveryMessage/head/complete"
 msgstr "Ланцуг перамог адноўлены"
 
 msgid "window/playStreakRewards/recoveryMessage/head/days"
-msgstr "%(day)s д."
+msgstr "%(day)s сут."
 
 msgid "window/playStreakRewards/recoveryMessage/head/disable"
 msgstr "Ланцуг перамог будзе адноўлены праз"
@@ -138,7 +139,8 @@ msgid "window/playStreakRewards/recoveryMessage/tooltip/head"
 msgstr "Ланцуг перамог перарваны."
 
 msgid "window/playStreakRewards/rewardProgression/body"
-msgstr "Так держать! Продолжайте выполнять боевые задачи и получать награды."
+msgstr ""
+"Так трымаць! Працягвайце выконваць баявыя задачы і атрымліваць узнагароды."
 
 msgid "window/playStreakRewards/rewardProgression/hangar"
 msgstr "Паглядзець у Гаражы"
@@ -161,15 +163,15 @@ msgid "window/playStreakRewards/tab/content/pause"
 msgstr "Засталося паўзаў: %(skipDayCount)s"
 
 msgid "window/playStreakRewards/tab/content/quest"
-msgstr "Перамагчы ў баі або атрымаць 350 адз. «чыстага» досведу."
+msgstr "Победить в бою или получить 250 ед. «чистого» опыта."
 
 msgid "window/playStreakRewards/tab/head"
 msgstr "Ланцуг перамог"
 
 msgid "window/playStreakRewards/tab/help/blocked/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для аднаўлення лічыльніка неабходна выконваць баявую задачу «Ланцуг перамог»"
+" %(redemptionMaxDayCount)s дзён запар."
 
 msgid "window/playStreakRewards/tab/help/blocked/head"
 msgstr "Ланцуг перамог перарваны."
@@ -191,7 +193,7 @@ msgid "window/playStreakRewards/tab/redemptionMaxDayCount/body"
 msgstr " / %(redemptionMaxDayCount)s"
 
 msgid "window/playStreakRewards/tab/tooltip/body"
-msgstr "Нажмите, чтобы подробнее узнать о событии «Цепь побед»."
+msgstr "Націсніце, каб падрабязней даведацца пра падзею «Ланцуг перамог»."
 
 msgid "window/playStreakRewards/tab/tooltip/head"
 msgstr "Пра Ланцуг перамог"

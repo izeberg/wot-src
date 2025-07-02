@@ -26,6 +26,13 @@ class ShopPageTarget(object):
         self.relativeUrl = relativeUrl
 
 
+class TopSubBrowserTarget(object):
+    __slots__ = ('url', )
+
+    def __init__(self, url):
+        self.url = url
+
+
 class NopeTarget(object):
     __slots__ = tuple()
 
@@ -169,6 +176,8 @@ class _TargetField(fields.Field):
             return FullScreenBrowserTarget(incoming['fullScreenBrowser'])
         if 'shopPage' in incoming:
             return ShopPageTarget(incoming['shopPage'])
+        if 'topSubBrowser' in incoming:
+            return TopSubBrowserTarget(incoming['topSubBrowser'])
         if 'nope' in incoming:
             return NopeTarget()
         raise fields.ValidationError('Invalid flag entry point target config')
@@ -181,6 +190,8 @@ class _TargetField(fields.Field):
                 return {'fullScreenBrowser': incoming.url}
             if isinstance(incoming, ShopPageTarget):
                 return {'shopPage': incoming.relativeUrl}
+            if isinstance(incoming, TopSubBrowserTarget):
+                return {'topSubBrowser': incoming.url}
             if isinstance(incoming, NopeTarget):
                 return {'nope': None}
             raise ValidationError('Wrong target type.')

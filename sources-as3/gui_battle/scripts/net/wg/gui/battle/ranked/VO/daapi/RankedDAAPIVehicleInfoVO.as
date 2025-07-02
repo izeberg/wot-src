@@ -12,6 +12,8 @@ package net.wg.gui.battle.ranked.VO.daapi
       
       public var isGroup:Boolean;
       
+      public var voiceChatConnected:Boolean;
+      
       public function RankedDAAPIVehicleInfoVO(param1:Object = null)
       {
          super(param1);

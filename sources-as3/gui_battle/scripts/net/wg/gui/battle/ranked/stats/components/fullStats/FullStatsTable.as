@@ -2,14 +2,12 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
 {
    import flash.display.MovieClip;
    import flash.text.TextField;
-   import net.wg.data.constants.ImageCacheTypes;
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.components.PlayerStatusView;
    import net.wg.gui.battle.views.stats.SpeakAnimation;
    import net.wg.gui.battle.views.stats.fullStats.FullStatsTableBase;
    import net.wg.gui.components.controls.BadgeComponent;
-   import net.wg.gui.components.controls.Image;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class FullStatsTable extends FullStatsTableBase
@@ -17,8 +15,6 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
       
       private static const NUM_ROWS:int = 10;
        
-      
-      public var background:Image = null;
       
       public var leftTank:BattleAtlasSprite = null;
       
@@ -391,6 +387,66 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
       public var noSound_c2r9:BattleAtlasSprite = null;
       
       public var noSound_c2r10:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r1:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r2:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r3:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r4:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r5:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r6:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r7:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r8:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r9:BattleAtlasSprite = null;
+      
+      public var squadIcon_c1r10:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_1:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_2:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_3:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_4:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_5:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_6:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_7:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_8:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_9:BattleAtlasSprite = null;
+      
+      public var noSoundIcon_10:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r1:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r2:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r3:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r4:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r5:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r6:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r7:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r8:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r9:BattleAtlasSprite = null;
+      
+      public var squadIcon_c2r10:BattleAtlasSprite = null;
       
       public var playerName_c1r1:TextField = null;
       
@@ -824,6 +880,10 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
       
       public var icoTesterCollection:Vector.<BattleAtlasSprite> = null;
       
+      public var squadIconCollection:Vector.<BattleAtlasSprite> = null;
+      
+      public var noSoundIconCollection:Vector.<BattleAtlasSprite> = null;
+      
       public function FullStatsTable()
       {
          super();
@@ -846,8 +906,8 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
          this.vehicleTypeCollection = new <BattleAtlasSprite>[this.vehicleType_c1r1,this.vehicleType_c1r2,this.vehicleType_c1r3,this.vehicleType_c1r4,this.vehicleType_c1r5,this.vehicleType_c1r6,this.vehicleType_c1r7,this.vehicleType_c1r8,this.vehicleType_c1r9,this.vehicleType_c1r10,this.vehicleType_c2r1,this.vehicleType_c2r2,this.vehicleType_c2r3,this.vehicleType_c2r4,this.vehicleType_c2r5,this.vehicleType_c2r6,this.vehicleType_c2r7,this.vehicleType_c2r8,this.vehicleType_c2r9,this.vehicleType_c2r10];
          this.testerBackCollection = new <BattleAtlasSprite>[this.testerBack_c1r1,this.testerBack_c1r2,this.testerBack_c1r3,this.testerBack_c1r4,this.testerBack_c1r5,this.testerBack_c1r6,this.testerBack_c1r7,this.testerBack_c1r8,this.testerBack_c1r9,this.testerBack_c1r10,this.testerBack_c2r1,this.testerBack_c2r2,this.testerBack_c2r3,this.testerBack_c2r4,this.testerBack_c2r5,this.testerBack_c2r6,this.testerBack_c2r7,this.testerBack_c2r8,this.testerBack_c2r9,this.testerBack_c2r10];
          this.icoTesterCollection = new <BattleAtlasSprite>[this.icoTester_c1r1,this.icoTester_c1r2,this.icoTester_c1r3,this.icoTester_c1r4,this.icoTester_c1r5,this.icoTester_c1r6,this.icoTester_c1r7,this.icoTester_c1r8,this.icoTester_c1r9,this.icoTester_c1r10,this.icoTester_c2r1,this.icoTester_c2r2,this.icoTester_c2r3,this.icoTester_c2r4,this.icoTester_c2r5,this.icoTester_c2r6,this.icoTester_c2r7,this.icoTester_c2r8,this.icoTester_c2r9,this.icoTester_c2r10];
-         this.background.cacheType = ImageCacheTypes.NOT_USE_CACHE;
-         this.background.source = RES_ICONS.MAPS_ICONS_BATTLE_STATS_TABLE_BG;
+         this.squadIconCollection = new <BattleAtlasSprite>[this.squadIcon_c1r1,this.squadIcon_c1r2,this.squadIcon_c1r3,this.squadIcon_c1r4,this.squadIcon_c1r5,this.squadIcon_c1r6,this.squadIcon_c1r7,this.squadIcon_c1r8,this.squadIcon_c1r9,this.squadIcon_c1r10,this.squadIcon_c2r1,this.squadIcon_c2r2,this.squadIcon_c2r3,this.squadIcon_c2r4,this.squadIcon_c2r5,this.squadIcon_c2r6,this.squadIcon_c2r7,this.squadIcon_c2r8,this.squadIcon_c2r9,this.squadIcon_c2r10];
+         this.noSoundIconCollection = new <BattleAtlasSprite>[this.noSoundIcon_1,this.noSoundIcon_2,this.noSoundIcon_3,this.noSoundIcon_4,this.noSoundIcon_5,this.noSoundIcon_6,this.noSoundIcon_7,this.noSoundIcon_8,this.noSoundIcon_9,this.noSoundIcon_10];
          this.leftTank.imageName = BATTLEATLAS.STATS_TABLE_TANK;
          this.leftFrag.imageName = BATTLEATLAS.STATS_TABLE_FRAGS;
          this.leftRank.imageName = BATTLEATLAS.ICON_RANK;
@@ -875,8 +935,12 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
          }
          this.icoTesterCollection.length = 0;
          this.testerBackCollection.length = 0;
+         this.squadIconCollection.length = 0;
+         this.noSoundIconCollection.length = 0;
          this.icoTesterCollection = null;
          this.testerBackCollection = null;
+         this.squadIconCollection = null;
+         this.noSoundIconCollection = null;
          this.deadBg_c1r1 = null;
          this.deadBg_c1r2 = null;
          this.deadBg_c1r3 = null;
@@ -1017,6 +1081,26 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
          this.noSound_c2r8 = null;
          this.noSound_c2r9 = null;
          this.noSound_c2r10 = null;
+         this.squadIcon_c1r1 = null;
+         this.squadIcon_c1r2 = null;
+         this.squadIcon_c1r3 = null;
+         this.squadIcon_c1r4 = null;
+         this.squadIcon_c1r5 = null;
+         this.squadIcon_c1r6 = null;
+         this.squadIcon_c1r7 = null;
+         this.squadIcon_c1r8 = null;
+         this.squadIcon_c1r9 = null;
+         this.squadIcon_c1r10 = null;
+         this.squadIcon_c2r1 = null;
+         this.squadIcon_c2r2 = null;
+         this.squadIcon_c2r3 = null;
+         this.squadIcon_c2r4 = null;
+         this.squadIcon_c2r5 = null;
+         this.squadIcon_c2r6 = null;
+         this.squadIcon_c2r7 = null;
+         this.squadIcon_c2r8 = null;
+         this.squadIcon_c2r9 = null;
+         this.squadIcon_c2r10 = null;
          this.playerName_c1r1 = null;
          this.playerName_c1r2 = null;
          this.playerName_c1r3 = null;
@@ -1245,8 +1329,6 @@ package net.wg.gui.battle.ranked.stats.components.fullStats
          this.vehicleIconCollection = null;
          this.vehicleLevelCollection = null;
          this.vehicleTypeCollection = null;
-         this.background.dispose();
-         this.background = null;
          this.leftTank = null;
          this.leftFrag = null;
          this.leftRank = null;

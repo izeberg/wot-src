@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB133_Cyclone_Mk_2/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB133_Cyclone_Mk_2/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.772743 -0.562140 -3.798983</min>
+		<max>1.772068 0.845058 3.574252</max>
+	</visibilityBox>
+</root>

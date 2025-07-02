@@ -376,6 +376,9 @@ msgstr "БАПС"
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "АФ"
 
+msgid "damageLog/shellType/DELAYED_HE"
+msgstr "АФ"
+
 msgid "damageLog/shellType/FLAME"
 msgstr "АС"
 
@@ -863,7 +866,7 @@ msgid "flags/timer"
 msgstr "%(time)s з..."
 
 msgid "fortConsumables/timer/postfix"
-msgstr "с..."
+msgstr "з..."
 
 msgid "helpScreen/hint/description"
 msgstr ", каб азнаёміцца з асаблівасцямі машыны"
@@ -2140,14 +2143,14 @@ msgstr "Так!"
 
 msgid "rewardWindow/piggyBank/descText"
 msgstr ""
-"Накопление серебра приостановлено. Продлите премиум аккаунт, чтобы "
+"Накопление серебра приостановлено. Продлите Премиум аккаунт, чтобы "
 "продолжить пополнение хранилища серебра."
 
 msgid "rewardWindow/piggyBank/headerText"
-msgstr "Серебро получено"
+msgstr "Срэбра атрымана"
 
 msgid "rewardWindow/piggyBank/subHeaderText"
-msgstr "Хранилище серебра открыто"
+msgstr "Сховішча срэбра адчынена"
 
 msgid "rewardWindow/piggyBank/winHeaderText"
 msgstr "Віншуем!"
@@ -2759,6 +2762,9 @@ msgstr "%(caliber)s мм БАПС %(userString)s"
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s-мм бранябойны каморны снарад %(userString)s"
 
+msgid "shells_kinds/DELAYED_HE"
+msgstr "%(caliber)s мм снаряд с задержкой взрывателя %(userString)s"
+
 msgid "shells_kinds/FLAME"
 msgstr "Агнямётная сумесь %(userString)s"
 
@@ -2880,7 +2886,7 @@ msgid "statistics/final/reasons/reason3"
 msgstr "Час бою скончыўся."
 
 msgid "statistics/final/stats/credits"
-msgstr "Серебро:"
+msgstr "Срэбра:"
 
 msgid "statistics/final/stats/experience"
 msgstr "Досвед:"

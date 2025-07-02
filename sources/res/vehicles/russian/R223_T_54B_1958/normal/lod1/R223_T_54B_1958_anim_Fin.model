@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.295740 0.002186 -0.078106</min>
+		<max>1.231284 0.438366 0.806519</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R223_T_54B_1958/normal/lod2/R223_T_54B_1958_anim_Fin</parent>
+	<extent>20.000000</extent>
+	<nodelessVisual>vehicles/russian/R223_T_54B_1958/normal/lod1/R223_T_54B_1958_anim_Fin</nodelessVisual>
+	<tank>true</tank>
+</root>

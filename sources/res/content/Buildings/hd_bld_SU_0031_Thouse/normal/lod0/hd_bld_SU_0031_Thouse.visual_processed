@@ -13,10 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s8Shape3.vertices</vertices>
+			<stream>s8Shape3.uv2</stream>
+			<primitive>s8Shape3.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -57,28 +56,6 @@
 			</primitiveGroup>
 			<primitiveGroup>
 				1
-				<material>
-					<identifier>s_nd7</identifier>
-					<fx>shaders/std_effects/PBS_glass.fx</fx>
-					<materialKind>111</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						dirtAlbedoMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_AM.dds</Texture>
-					</property>
-					<property>
-						glassMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.483047 9.003654 -0.776244</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
 				<material>
 					<identifier>s_nd6</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -140,7 +117,7 @@
 				<groupOrigin>0.434152 8.987350 -0.799642</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				2
 				<material>
 					<identifier>s_nd5</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -206,7 +183,7 @@
 				<groupOrigin>0.404831 7.955116 -0.252907</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				3
 				<material>
 					<identifier>s_nd4</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -284,7 +261,7 @@
 				<groupOrigin>0.404831 7.608338 -0.662162</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				5
+				4
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -362,7 +339,7 @@
 				<groupOrigin>0.395877 15.643323 -0.158606</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				6
+				5
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -435,8 +412,47 @@
 				</material>
 				<groupOrigin>0.407887 8.883344 -0.843754</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s7Shape.vertices</vertices>
+			<primitive>s7Shape.indices</primitive>
 			<primitiveGroup>
-				7
+				0
+				<material>
+					<identifier>s_nd7</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.483047 9.003654 -0.776244</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape12.vertices</vertices>
+			<stream>s0Shape12.colour</stream>
+			<primitive>s0Shape12.indices</primitive>
+			<primitiveGroup>
+				0
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -476,6 +492,6 @@
 		<max>18.639269 19.103071 9.764098</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1818622</geometrySize>
+	<geometrySize>1608246</geometrySize>
 	<minUVDensity>0.001006</minUVDensity>
 </root>

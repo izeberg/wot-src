@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -39,15 +39,15 @@
 						<Texture>content/Hangars/h08_mt_hangar/personalization_objects/entourage/hd_h08_MTV1_Entourage_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.010528 0.000000</groupOrigin>
+				<groupOrigin>0.000000 0.021650 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.920667 -0.695458 -11.125770</min>
+		<min>-2.920667 -0.695458 -11.125769</min>
 		<max>3.111036 0.819092 11.658445</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>20756</geometrySize>
-	<minUVDensity>0.002959</minUVDensity>
+	<geometrySize>26356</geometrySize>
+	<minUVDensity>0.002690</minUVDensity>
 </root>

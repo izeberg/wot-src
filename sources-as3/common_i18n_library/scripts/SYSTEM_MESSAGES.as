@@ -591,20 +591,6 @@ package
       
       public static const ACCOUNT_WAS_RESTORED:String = "#system_messages:account_was_restored";
       
-      public static const LOGIN_TO_OTHER_GAME_WOT:String = "#system_messages:login_to_other_game_wot";
-      
-      public static const LOGIN_TO_OTHER_GAME_WOWP:String = "#system_messages:login_to_other_game_wowp";
-      
-      public static const LOGIN_TO_OTHER_GAME_WOTG:String = "#system_messages:login_to_other_game_wotg";
-      
-      public static const LOGIN_TO_OTHER_GAME_WOWS:String = "#system_messages:login_to_other_game_wows";
-      
-      public static const LOGIN_TO_OTHER_GAME_WOTB:String = "#system_messages:login_to_other_game_wotb";
-      
-      public static const LOGIN_TO_OTHER_GAME_UNKNOWN:String = "#system_messages:login_to_other_game_unknown";
-      
-      public static const LOGIN_TO_OTHER_GAME_WEB:String = "#system_messages:login_to_other_game_web";
-      
       public static const RECRUIT_WINDOW_SERVER_ERROR:String = "#system_messages:recruit_window/server_error";
       
       public static const RECRUIT_WINDOW_SUCCESS:String = "#system_messages:recruit_window/success";
@@ -2330,6 +2316,8 @@ package
       public static const CREWSKINSNOTIFICATION_SKINGAIN:String = "#system_messages:crewSkinsNotification/SkinGain";
       
       public static const CREWSKINSNOTIFICATION_SKINCHANGED:String = "#system_messages:crewSkinsNotification/SkinChanged";
+      
+      public static const CREWSKINSNOTIFICATION_ERROR:String = "#system_messages:crewSkinsNotification/Error";
       
       public static const BLUEPRINTS_SWITCH_OFF:String = "#system_messages:blueprints/switch_off";
       

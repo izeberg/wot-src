@@ -111,15 +111,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/RedBrick_11_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.073077 4.328487 0.000000</groupOrigin>
+				<groupOrigin>0.073078 4.328487 -0.002171</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-6.728849 -0.087118 -3.416054</min>
-		<max>6.875004 8.744092 3.416054</max>
+		<min>-6.728849 -0.087117 -3.420398</min>
+		<max>6.875003 8.744093 3.416056</max>
 	</boundingBox>
-	<geometrySize>268692</geometrySize>
-	<minUVDensity>0.051197</minUVDensity>
+	<geometrySize>304340</geometrySize>
+	<minUVDensity>0.045237</minUVDensity>
 </root>

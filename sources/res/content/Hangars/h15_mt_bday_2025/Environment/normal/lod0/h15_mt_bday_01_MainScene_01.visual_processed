@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_08_Decoration_Garland_AM.dds</Texture>
+					</property>
+					<property>
+						selfIllumination
+						<Float>30.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>4.292078 20.772957 -0.028009</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.175654 13.172684 -32.550770</min>
+		<max>10.759810 28.373232 32.494751</max>
+	</boundingBox>
+	<geometrySize>3976</geometrySize>
+	<minUVDensity>0.117775</minUVDensity>
+</root>

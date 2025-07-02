@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB136_FV245/normal/lod3/HatchSleeve_02_Left_anim</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.157036 0.336157 -1.440619</min>
+		<max>-1.015981 0.638703 -1.103006</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB136_FV245/normal/lod2/HatchSleeve_02_Left_anim</nodefullVisual>
+</root>

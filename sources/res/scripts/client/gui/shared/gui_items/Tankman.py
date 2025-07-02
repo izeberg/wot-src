@@ -36,11 +36,13 @@ class CrewTypes(object):
     CREW_AVAILABLE_SKILLS = (SKILL_50, SKILL_75, SKILL_100)
 
 
+SINGLE_SKILL_ON_VEHICLE = 'singleOnVehicle'
 BROTHERHOOD_SKILL_NAME = 'brotherhood'
 REPAIR_SKILL_NAME = 'repair'
 NO_TANKMAN = -1
 NO_SLOT = -1
 MAX_ROLE_LEVEL = 100
+MAX_SAME_SKILL = 2
 RRLBonuses = namedtuple('RRLBonuses', 'commBonus, brothersBonus, eqsBonus, optDevsBonus, penalty')
 
 class RealRoleLevel(namedtuple('RealRoleLevel', 'lvl_, bonuses_')):
@@ -428,6 +430,17 @@ class Tankman(GUIItem):
 
     @property
     def newSkillCount(self):
+        return self.getNewSkillCount()
+
+    @property
+    def newFreeSkillsCount(self):
+        return self.descriptor.freeSkills.count('any')
+
+    @property
+    def efficiencyRoleLevel(self):
+        return round(self.roleLevel * self.specialityFactor)
+
+    def getNewSkillCount(self, onlyFull=False):
         if self.hasNewSkill(useCombinedRoles=True):
             tmanDescr = tankmen.TankmanDescr(self.strCD)
             i = 0
@@ -441,16 +454,13 @@ class Tankman(GUIItem):
                     tmanDescr.addSkill(skillname)
                     i += 1
 
-            return (i, tmanDescr.lastSkillLevel)
+            count = i
+            lastSkillLevel = tmanDescr.lastSkillLevel
+            if onlyFull and lastSkillLevel != tankmen.MAX_SKILL_LEVEL:
+                count = max(count - 1, 0)
+            return (
+             count, lastSkillLevel)
         return (0, 0)
-
-    @property
-    def newFreeSkillsCount(self):
-        return self.descriptor.freeSkills.count('any')
-
-    @property
-    def efficiencyRoleLevel(self):
-        return round(self.roleLevel * self.specialityFactor)
 
     def getNextLevelXpCost(self):
         descr = self.descriptor
@@ -707,7 +717,7 @@ class Tankman(GUIItem):
 
 class TankmanSkill(GUIItem):
     __slots__ = ('_name', '_level', '_roleType', '_isEnable', '_isFemale', '_isPermanent',
-                 '_customName', '_isAlreadyEarned', '_packer', '_typeName')
+                 '_customName', '_isAlreadyEarned', '_packer', '_typeName', '_tags')
     _CUSTOM_NAME_EXT = ''
 
     def __init__(self, skillName, tankman=None, proxy=None, skillLevel=0):
@@ -715,6 +725,7 @@ class TankmanSkill(GUIItem):
         self._name = skillName
         self._level = skillLevel
         self._typeName = getSkillTypeName(skillName)
+        self._tags = getSkillTags(skillName)
         if tankman is not None:
             tdescr = tankman.descriptor
             skills = tdescr.skills
@@ -800,6 +811,10 @@ class TankmanSkill(GUIItem):
     @property
     def isSituational(self):
         return self._typeName is SkillTypeName.SITUATIONAL
+
+    @property
+    def isSingleOnVehicle(self):
+        return SINGLE_SKILL_ON_VEHICLE in self._tags
 
     @property
     def userName(self):
@@ -1140,6 +1155,10 @@ def getSkillTypeName(skillName):
     return tankmen.getSkillsConfig().getSkill(skillName).typeName
 
 
+def getSkillTags(skillName):
+    return tankmen.getSkillsConfig().getSkill(skillName).tags
+
+
 def calculateRoleLevel(startRoleLevel, freeXpValue=0, typeID=(0, 0)):
     return __makeFakeTankmanDescr(startRoleLevel, freeXpValue, typeID).roleLevel
 
@@ -1161,6 +1180,17 @@ def __getPersonalSkillLearningProgress(tankman, skillName):
     if __tankmanHasSkill(tankman, skillName):
         return tankman.skillsMap[skillName].level
     return tankmen.NO_SKILL
+
+
+def isLockSingleSkill(skillName, currentTankman, crew):
+    tankmenWithSkill = [ tankman for _, tankman in crew if __tankmanHasSkill(tankman, skillName) ]
+    if tankmenWithSkill:
+        if len(tankmenWithSkill) == MAX_SAME_SKILL:
+            tankman = min(tankmenWithSkill, key=lambda tankman: tankman.skillsMap[skillName].level)
+            return tankman.invID == currentTankman.invID and tankman.skillsMap[skillName].level != tankmen.MAX_SKILL_LEVEL
+        if skillName in currentTankman.availableSkills():
+            return True
+    return False
 
 
 def isSkillLearnt(skillName, vehicle):

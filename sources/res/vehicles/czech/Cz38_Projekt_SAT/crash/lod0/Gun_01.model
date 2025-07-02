@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.835192 -0.508799 -1.592951</min>
+		<max>0.835192 0.508589 4.923509</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/czech/Cz38_Projekt_SAT/crash/lod0/Gun_01</nodelessVisual>
+</root>

@@ -1,0 +1,2 @@
+CUSTOM_NOTIFICATIONS_EVENT_TYPE = 'customNotificationStart'
+CUSTOM_NOTIFICATIONS_SEEN = 'customNotificationSeen'

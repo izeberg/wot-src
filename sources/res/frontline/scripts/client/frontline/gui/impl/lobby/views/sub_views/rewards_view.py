@@ -1,3 +1,4 @@
+from gui.impl.lobby.frontline import RegisteredFrontlineTooltips
 from helpers import dependency
 from battle_pass_common import BattlePassState
 from frameworks.wulf import ViewFlags, ViewSettings
@@ -45,7 +46,14 @@ class RewardsView(ViewImpl):
 
     @createTooltipContentDecorator()
     def createToolTipContent(self, event, contentID):
-        return
+        if contentID in RegisteredFrontlineTooltips.REGISTERED_SIMPLE_TOOLTIPS:
+            view = RegisteredFrontlineTooltips.REGISTERED_SIMPLE_TOOLTIPS.get(contentID)
+            return view()
+        else:
+            if contentID in RegisteredFrontlineTooltips.REGISTERED_TOOLTIPS:
+                view = RegisteredFrontlineTooltips.REGISTERED_TOOLTIPS.get(contentID)
+                return view(event)
+            return
 
     @property
     def viewModel(self):

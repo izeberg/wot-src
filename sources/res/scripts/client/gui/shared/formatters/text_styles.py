@@ -61,7 +61,9 @@ __all__ = (
  'yellowText',
  'greenText',
  'poiCapturedBoldText',
- 'poiCapturedRegularText')
+ 'poiCapturedRegularText',
+ 'whiteTitle15',
+ 'whiteTitle12')
 
 def _getStyle(style, ctx=None):
     if ctx is None:
@@ -481,6 +483,14 @@ def poiCapturedBoldText(text):
 
 def poiCapturedRegularText(text):
     return _formatText('poiCapturedRegularText', text)
+
+
+def whiteTitle15(text):
+    return _formatText('whiteTitle15', text)
+
+
+def whiteTitle12(text):
+    return _formatText('whiteTitle12', text)
 
 
 def getRawStyles(names):

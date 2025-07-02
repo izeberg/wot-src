@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz38_Projekt_SAT/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.838722 -0.266131 -0.077903</min>
+		<max>0.834874 0.582345 4.923563</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

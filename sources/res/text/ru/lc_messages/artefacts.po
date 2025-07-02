@@ -611,6 +611,54 @@ msgstr "Только для техники США."
 msgid "cocacola/short_special"
 msgstr "Повышает эффективность американских экипажей"
 
+msgid "comboXpDirectivesBattleBooster1/descr"
+msgstr "+100% к заработанному свободному опыту и опыту экипажа по итогам боя."
+
+msgid "comboXpDirectivesBattleBooster1/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "comboXpDirectivesBattleBooster1/name"
+msgstr "Данные аэрофотосъёмки, тип 1"
+
+msgid "comboXpDirectivesBattleBooster1/short_special"
+msgstr ""
+"Добавляет +100% к заработанному свободному опыту и опыту экипажа на 1 бой."
+
+msgid "comboXpDirectivesBattleBooster2/descr"
+msgstr "+200% к заработанному свободному опыту и опыту экипажа по итогам боя."
+
+msgid "comboXpDirectivesBattleBooster2/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "comboXpDirectivesBattleBooster2/name"
+msgstr "Данные аэрофотосъёмки, тип 2"
+
+msgid "comboXpDirectivesBattleBooster2/short_special"
+msgstr ""
+"Добавляет +200% к заработанному свободному опыту и опыту экипажа на 1 бой."
+
+msgid "comboXpDirectivesBattleBooster3/descr"
+msgstr "+600% к заработанному свободному опыту и опыту экипажа по итогам боя."
+
+msgid "comboXpDirectivesBattleBooster3/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "comboXpDirectivesBattleBooster3/name"
+msgstr "Данные аэрофотосъёмки, тип 3"
+
+msgid "comboXpDirectivesBattleBooster3/short_special"
+msgstr ""
+"Добавляет +600% к заработанному свободному опыту и опыту экипажа на 1 бой."
+
 msgid "commandersView/long_special"
 msgstr ""
 "Снижает незаметность противника, находящегося в движении, и маскировочные "
@@ -817,6 +865,51 @@ msgstr "Кислотный снаряд"
 msgid "corrodingShot/shortDescr"
 msgstr "Кислотный снаряд"
 
+msgid "creditsDirectivesBattleBooster1/descr"
+msgstr "+25% к заработанному серебру по итогам боя."
+
+msgid "creditsDirectivesBattleBooster1/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "creditsDirectivesBattleBooster1/name"
+msgstr "Доплата за выслугу, тип 1"
+
+msgid "creditsDirectivesBattleBooster1/short_special"
+msgstr "Добавляет +25% к заработанному серебру на 1 бой."
+
+msgid "creditsDirectivesBattleBooster2/descr"
+msgstr "+50% к заработанному серебру по итогам боя."
+
+msgid "creditsDirectivesBattleBooster2/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "creditsDirectivesBattleBooster2/name"
+msgstr "Доплата за выслугу, тип 2"
+
+msgid "creditsDirectivesBattleBooster2/short_special"
+msgstr "Добавляет +50% к заработанному серебру на 1 бой."
+
+msgid "creditsDirectivesBattleBooster3/descr"
+msgstr "+200% к заработанному серебру по итогам боя."
+
+msgid "creditsDirectivesBattleBooster3/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "creditsDirectivesBattleBooster3/name"
+msgstr "Доплата за выслугу, тип 3"
+
+msgid "creditsDirectivesBattleBooster3/short_special"
+msgstr "Добавляет +200% к заработанному серебру на 1 бой."
+
 msgid "crewBattleBooster/descr/boost"
 msgstr "Усиливает"
 
@@ -1000,6 +1093,9 @@ msgstr "Полевой ремонт"
 msgid "eb_regenerationKit/short_descr"
 msgstr ""
 "Постепенно восстанавливает фиксированный процент прочности вашей машины."
+
+msgid "economicBattleBooster/effect"
+msgstr "Бонус: "
 
 msgid "empty"
 msgstr "?empty?"
@@ -3809,3 +3905,48 @@ msgstr "Полоса препятствий"
 
 msgid "virtuosoBattleBooster/short_special"
 msgstr "Даёт навык «Виртуоз» или усиливает его"
+
+msgid "xpDirectivesBattleBooster1/descr"
+msgstr "+50% к заработанному боевому опыту по итогам боя."
+
+msgid "xpDirectivesBattleBooster1/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "xpDirectivesBattleBooster1/name"
+msgstr "Руководство по тактике, тип 1"
+
+msgid "xpDirectivesBattleBooster1/short_special"
+msgstr "Добавляет +50% к боевому опыту на 1 бой."
+
+msgid "xpDirectivesBattleBooster2/descr"
+msgstr "+100% к заработанному боевому опыту по итогам боя."
+
+msgid "xpDirectivesBattleBooster2/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "xpDirectivesBattleBooster2/name"
+msgstr "Руководство по тактике, тип 2"
+
+msgid "xpDirectivesBattleBooster2/short_special"
+msgstr "Добавляет +100% к боевому опыту на 1 бой."
+
+msgid "xpDirectivesBattleBooster3/descr"
+msgstr "+300% к заработанному боевому опыту по итогам боя."
+
+msgid "xpDirectivesBattleBooster3/long_special"
+msgstr ""
+"Увеличивает заработок машины. Действует в Случайных боях, Генеральных "
+"сражениях, Ранговых боях, в Натиске, на Полигоне и Линии фронта, а также в "
+"режиме «Разведка боем». Расходуется за 1 бой."
+
+msgid "xpDirectivesBattleBooster3/name"
+msgstr "Руководство по тактике, тип 3"
+
+msgid "xpDirectivesBattleBooster3/short_special"
+msgstr "Добавляет +300% к боевому опыту на 1 бой."

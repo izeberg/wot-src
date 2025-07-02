@@ -144,11 +144,6 @@
 		<min>-0.304359 -0.417541 -0.560672</min>
 		<max>0.304359 2.291116 2.261688</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>tank_guns</identifier>
-		</material>
-	</missingBspMaterial>
 	<geometrySize>100780</geometrySize>
 	<minUVDensity>0.011866</minUVDensity>
 </root>

@@ -83,6 +83,14 @@
 						diffuseMap
 						<Texture>content/Environment/hd_envEU_010_Cars_03/hd_envEU_010_Cars_03_AM.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>96</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.010110 0.686439 -0.112064</groupOrigin>
 			</primitiveGroup>

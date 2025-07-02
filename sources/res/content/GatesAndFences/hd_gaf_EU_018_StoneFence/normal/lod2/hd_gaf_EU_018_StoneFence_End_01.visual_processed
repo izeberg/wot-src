@@ -25,32 +25,14 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s_ramp0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>d0Shape.vertices</vertices>
+			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -59,19 +41,19 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						normalMap
-						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_ANM.dds</Texture>
+						diffuseMap
+						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_GMM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_AM.dds</Texture>
+						normalMap
+						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.012836 -1.548700 -0.121601</groupOrigin>
+				<groupOrigin>0.012836 0.230886 -0.121601</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -81,16 +63,16 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						normalMap
-						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_ANM.dds</Texture>
+						diffuseMap
+						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_GMM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_AM.dds</Texture>
+						normalMap
+						<Texture>content/GatesAndFences/hd_gaf_EU_018_StoneFence/hd_gaf_EU_018_StoneFence_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.000447 0.884595 -0.010184</groupOrigin>
@@ -99,18 +81,18 @@
 				2
 				<material>
 					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
 					<materialKind>111</materialKind>
+					<collisionFlags>131</collisionFlags>
 				</material>
 				<groupOrigin>0.000000 0.225000 -0.009437</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.991841 -3.750500 -1.082893</min>
+		<min>-0.991841 -0.419054 -1.082893</min>
 		<max>0.991841 2.194982 1.001406</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>2282</geometrySize>
+	<geometrySize>2794</geometrySize>
 	<minUVDensity>0.007041</minUVDensity>
 </root>

@@ -105,7 +105,7 @@ _SHELL_KINDS = (
  SHELL_TYPES.HOLLOW_CHARGE, SHELL_TYPES.HIGH_EXPLOSIVE,
  SHELL_TYPES.ARMOR_PIERCING, SHELL_TYPES.ARMOR_PIERCING_HE,
  SHELL_TYPES.ARMOR_PIERCING_CR, SHELL_TYPES.ARMOR_PIERCING_FSDS,
- SHELL_TYPES.FLAME)
+ SHELL_TYPES.FLAME, SHELL_TYPES.DELAYED_HE)
 _POWER_PIERCING_SHELLS = (
  SHELL_TYPES.ARMOR_PIERCING,
  SHELL_TYPES.ARMOR_PIERCING_CR,
@@ -780,6 +780,9 @@ class VehicleParams(_ParameterBase):
         shotShell = self._itemDescr.shot.shell
         if shotShell.kind in HAS_EXPLOSION:
             return round(shotShell.type.explosionRadius, 2)
+        if shotShell.kind == SHELL_TYPES.DELAYED_HE:
+            delayedShellDescr = vehicles.getItemByCompactDescr(shotShell.type.delayedShell)
+            return round(delayedShellDescr.type.explosionRadius, 2)
         return 0
 
     @property
@@ -1799,6 +1802,9 @@ class ShellParams(CompatibleParams):
     def explosionRadius(self):
         if self._itemDescr.kind in HAS_EXPLOSION:
             return self._itemDescr.type.explosionRadius
+        if self._itemDescr.kind == SHELL_TYPES.DELAYED_HE:
+            delayedShellDescr = vehicles.getItemByCompactDescr(self._itemDescr.type.delayedShell)
+            return delayedShellDescr.type.explosionRadius
         return 0
 
     @property
@@ -1838,8 +1844,8 @@ class ShellParams(CompatibleParams):
 
     @property
     def explosionDelay(self):
-        if self._itemDescr.isDelayedBomb:
-            return self._itemDescr.delayedBomb.explosionDelay
+        if self._itemDescr.kind == SHELL_TYPES.DELAYED_HE:
+            return self._itemDescr.type.explosionDelay
         else:
             return
 

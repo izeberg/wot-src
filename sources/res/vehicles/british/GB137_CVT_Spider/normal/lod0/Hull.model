@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB137_CVT_Spider/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.293422 -0.425180 -3.163515</min>
+		<max>1.292148 0.359591 2.827966</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB137_CVT_Spider/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

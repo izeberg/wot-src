@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.379999 -0.254384 -0.953269</min>
+		<max>0.380001 0.251862 3.059371</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB137_CVT_Spider/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB137_CVT_Spider/crash/lod0/Gun_01</nodefullVisual>
+</root>

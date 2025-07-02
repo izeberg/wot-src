@@ -36,7 +36,7 @@ msgid "compensationTooltip/footerDetails/vehicles"
 msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
 
 msgid "compensationTooltip/title/credits"
-msgstr "Серебро"
+msgstr "Срэбра"
 
 msgid "compensationTooltip/title/gold"
 msgstr "Золата"
@@ -125,7 +125,7 @@ msgid "guaranteedReward/next/bonus"
 msgstr "Гарантаваная ўзнагарода ў наступным кантэйнеры!"
 
 msgid "guaranteedReward/next/vehicle"
-msgstr "Гарантаваная машына %(level)s узроўню ў наступным кантэйнеры!"
+msgstr "Гарантированная машина %(level)s уровня уже в следующем контейнере!"
 
 msgid "guaranteedRewardTooltip/block1/bonus/text"
 msgstr ""
@@ -138,9 +138,9 @@ msgstr "Механіка гарантаванай узнагароды"
 
 msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
-"Гарантированный танк — техника %(level)s уровня из списка возможных наград в"
-" контейнерах. Вы гарантированно получите танк, которого ещё нет на вашем "
-"аккаунте, из %(boxNumber)s-го контейнера. Если танк выпадет ранее, отсчёт "
+"Гарантированный танк — машина %(level)s уровня из списка возможного "
+"содержимого контейнеров. Танк гарантированно выпадет не позднее "
+"%(boxNumber)s-го контейнера. Если получите какую-либо машину ранее, отсчёт "
 "начнётся заново."
 
 msgid "guaranteedRewardTooltip/block1/vehicle/title"
@@ -166,12 +166,13 @@ msgstr ""
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
-"Если вся техника из списка наград уже есть на вашем аккаунте, то все "
-"следующие машины, полученные из контейнеров, будут компенсированы "
-"соответствующим количеством игрового золота."
+"Если у вас уже есть вся техника из списка возможного содержимого "
+"контейнеров, то по механике выпадения гарантированного танка все последующие"
+" машины, полученные из контейнеров, будут компенсированы соответствующей "
+"валютой."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/title"
-msgstr "После получения всей техники:"
+msgstr "Когда вся техника уже получена"
 
 msgid "keyWelcomeScreen/content/first/description"
 msgstr ""
@@ -228,6 +229,18 @@ msgstr "Спісы змесціва"
 msgid "lootboxesWithKeys/about/default"
 msgstr "Пра кантэйнер"
 
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_large"
+msgstr "О контейнерах события"
+
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_large_test"
+msgstr "О контейнерах события"
+
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_small"
+msgstr "О контейнерах события"
+
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_small_test"
+msgstr "О контейнерах события"
+
 msgid "lootboxesWithKeys/availableLockpicks"
 msgstr "Даступна адмычак для кантэйнераў: %(icon) %(count)"
 
@@ -280,6 +293,9 @@ msgstr "ДА АСКЕПКАЎ"
 msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
+msgid "openBoxScreen/backBtn/5"
+msgstr "К ПРАЗДНИЧНОЙ ПОЧТЕ"
+
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
 
@@ -294,8 +310,9 @@ msgstr "У вас няма кантэйнераў"
 
 msgid "openBoxScreen/noLootboxesSecondary"
 msgstr ""
-"Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
-"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы."
+"Чтобы получить контейнеры, участвуйте в&nbsp;определённых событиях "
+"и&nbsp;выполняйте связанные с&nbsp;ними боевые задачи. Некоторые контейнеры "
+"можно докупить в магазине события."
 
 msgid "openBoxScreen/noLootboxesShopSecondary"
 msgstr ""
@@ -413,12 +430,26 @@ msgstr "Так!"
 msgid "rewards/controls/showVehicle"
 msgstr "Паглядзець у Гаражы"
 
+msgid "rewards/gift/header/moreSenders"
+msgid_plural "moreSendersCount"
+msgstr[0] "и еще %(moreSendersCount)d игрока"
+msgstr[1] "и еще %(moreSendersCount)d игроков"
+msgstr[2] "и еще %(moreSendersCount)d игроков"
+
+msgid "rewards/gift/header/subTitle/moreSenders"
+msgstr ""
+"Открыты посылки от игрока {cream_Open}%(senderName)s{cream_Close} "
+"%(moreSenders)"
+
+msgid "rewards/gift/header/subTitle/single"
+msgstr "Открыта посылка от игрока {cream_Open}%(senderName)s{cream_Close}"
+
 msgid "rewards/header/subTitle"
 msgstr ""
 "Гульнявая маёмасць з кантэйнера {cream_Open}«%(lootboxName)s»{cream_Close}"
 
 msgid "rewards/header/title"
-msgstr "ВОТ ЧТО ВНУТРИ"
+msgstr "ВОСЬ ШТО ЎНУТРЫ"
 
 msgid "rewards/rent/battles"
 msgid_plural "battles"
@@ -527,8 +558,8 @@ msgstr "Адмычак няма ў наяўнасці"
 
 msgid "tooltips/infoType/premVehicle/body"
 msgstr ""
-"Премиум техника не требует исследования и зарабатывает больше серебра, а "
-"также имеет ряд других преимуществ."
+"Прэміум тэхніка не патрабуе даследавання і прыносіць больш срэбра, а таксама"
+" мае шэраг іншых пераваг."
 
 msgid "tooltips/infoType/premVehicle/header"
 msgstr "Прэміум машына"
@@ -596,10 +627,13 @@ msgid "triggerHint/title"
 msgstr "Наяўныя ключы і адмычкі ад кантэйнераў «Дзень нараджэння 2024»."
 
 msgid "videoreward/button/title"
-msgstr "Працягнуць"
+msgstr "Так точно!"
+
+msgid "videoreward/button/titleGuaranteed"
+msgstr "Это прекрасно!"
 
 msgid "videoreward/description/commonText"
-msgstr "Гарантаваная ўзнагарода!"
+msgstr "В Ангаре пополнение!"
 
 msgid "videoreward/description/vehicleText"
 msgstr "Прыбыў гарантаваны танк!"

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.749082 -0.372189 -1.398944</min>
+		<max>0.755195 0.274550 3.518845</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB133_Cyclone_Mk_2/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>vehicles/british/GB133_Cyclone_Mk_2/crash/lod0/Gun_01</nodelessVisual>
+</root>

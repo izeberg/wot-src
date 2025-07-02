@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB133_Cyclone_Mk_2/normal/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.755446 -0.000000 -3.586936</min>
+		<max>1.755446 1.117145 3.604510</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB133_Cyclone_Mk_2/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+</root>

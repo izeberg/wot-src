@@ -31,8 +31,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>d0Shape.vertices</vertices>
+			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -42,7 +42,7 @@
 						diffuseMap
 						<Texture>content/Environment/hd_env406_Flowerbed/hd_env406_flowerbed_AM.dds</Texture>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
 						metallicGlossMap
@@ -64,7 +64,7 @@
 						diffuseMap
 						<Texture>content/Environment/hd_env406_Flowerbed/hd_env406_flowerbed_AM.dds</Texture>
 					</property>
-					<collisionFlags>131</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
 						metallicGlossMap
@@ -81,8 +81,8 @@
 				2
 				<material>
 					<identifier>s_wall_0</identifier>
-					<collisionFlags>131</collisionFlags>
 					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
 				</material>
 				<groupOrigin>0.004372 0.858673 -0.010676</groupOrigin>
 			</primitiveGroup>

@@ -37,6 +37,9 @@ msgstr ""
 "Націсніце, каб падрабязней даведацца пра\n"
 "кампанію «Новыя гарызонты»."
 
+msgid "OperationsView/lastOperation/inGame"
+msgstr "(в игре с 03.09.2025)"
+
 msgid "OperationsView/operationName"
 msgstr "АПЕРАЦЫЯ"
 
@@ -440,7 +443,7 @@ msgid "RewardsView/header/taskStatus/completeAdd"
 msgstr "Дадатковая ўмова выканана"
 
 msgid "RewardsView/header/taskStatus/completeBasic"
-msgstr "Выполнены все условия"
+msgstr "Выкананы ўсе ўмовы"
 
 msgid "RewardsView/header/taskStatus/completeWithHonor"
 msgstr "Выканана з адзнакай"
@@ -653,16 +656,22 @@ msgstr ""
 "«&zwnbsp;%(name)s» стане даступным."
 
 msgid "tooltips/OperationsView/lastOperation/development/footer"
-msgstr "Хутка ў гульні"
+msgstr "В игре с 03.09.2025"
 
 msgid "tooltips/OperationsView/lastOperation/development/header"
 msgstr "Этап «%(name)s» (у распрацоўцы)"
+
+msgid "tooltips/OperationsView/lastOperation/development/rewardReceived"
+msgstr "Награда получена"
 
 msgid "tooltips/OperationsView/lastOperation/development/rewards"
 msgstr "Узнагарода за датэрміновае выкананне этапу:"
 
 msgid "tooltips/OperationsView/lastOperation/development/subtitle"
 msgstr "Узнагарода за выкананне этапу:"
+
+msgid "tooltips/OperationsView/lastOperation/developmentCompleted/footer"
+msgstr "Награда получена"
 
 msgid "tooltips/OperationsView/lastOperation/header"
 msgstr "Этап «%(name)s»"

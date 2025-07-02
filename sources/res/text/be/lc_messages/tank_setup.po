@@ -152,6 +152,12 @@ msgstr "Абсталяванне для {name}"
 msgid "dealPanel/autoRenew"
 msgstr "Аўтапапаўненне"
 
+msgid "dealPanel/autoRenewType/hard"
+msgstr "Докупать автоматически"
+
+msgid "dealPanel/autoRenewType/soft"
+msgstr "Только со Склада"
+
 msgid "dealPanel/button/apply"
 msgstr "Прымяніць"
 
@@ -483,10 +489,10 @@ msgstr "На наладку абсталявання не стае %(credits)s"
 
 msgid "dialogs/exchangeToUpgrade/notPossible/status"
 msgstr ""
-"Наладка работы оборудования невозможна. Нужно обменять на серебро %(gold)s"
+"Наладка работы оборудования невозможна. Нужно обменять на серебро %(gold)s."
 
 msgid "dialogs/exchangeToUpgrade/notRequired/status"
-msgstr "У вас уже достаточно серебра для наладки оборудования."
+msgstr "У вас ужо дастаткова срэбра для наладкі абсталявання."
 
 msgid "dialogs/exchangeToUpgrade/notRequired/title"
 msgstr "Абмен не патрэбны"
@@ -569,10 +575,10 @@ msgid "dialogs/goldExchange/notRequired/action/modification"
 msgstr "На мадыфікацыю"
 
 msgid "dialogs/goldExchange/notRequired/status"
-msgstr "Обмен не требуется. У вас достаточно серебра."
+msgstr "Абмен не патрабуецца. У вас дастаткова срэбра."
 
 msgid "dialogs/goldExchange/notRequired/title"
-msgstr "{action} уже хватает серебра"
+msgstr "{action} уже хватает серебра."
 
 msgid "dialogs/goldExchange/refillShells/title"
 msgstr "Для папаўнення боекамплекту не стае %(credits)s"
@@ -692,11 +698,22 @@ msgstr "боны"
 msgid "introduction/currency/modernized"
 msgstr "кампаненты"
 
+msgid "introduction/directives/showButton"
+msgstr "Показать экономические инструкции"
+
+msgid "introduction/equipments/showButton"
+msgstr "Паказаць абсталяванне"
+
 msgid "introduction/message/deluxe"
 msgstr ""
 "Гэтае абсталяванне можна купіць за %(currencyName)s (%(currencyIcon)s). "
 "Таксама яго можна атрымаць ва ўзнагароду за пэўныя гульнёвыя дасягненні і "
 "падзеі."
+
+msgid "introduction/message/economic"
+msgstr ""
+"Установите подходящую инструкцию и выйдите с ней в бой. По итогам боя "
+"заработок будет увеличен, а инструкция спишется."
 
 msgid "introduction/message/modernized"
 msgstr ""
@@ -708,13 +725,10 @@ msgstr ""
 
 msgid "introduction/message/trophy"
 msgstr ""
-"Особая линейка предметов, которая при получении обладает параметрами "
-"штатного оборудования, но может быть улучшена за серебро. Трофейное "
-"оборудование невозможно приобрести за игровую валюту, но можно получить в "
-"награду за определённые события."
-
-msgid "introduction/showButton"
-msgstr "Паказаць абсталяванне"
+"Асаблівая лінейка прадметаў, якая пры атрыманні мае параметры штатнага "
+"абсталявання, але можа быць палепшаная за срэбра. Трафейнае абсталяванне "
+"нельга набыць за гульнявую валюту, але можна атрымаць ва ўзнагароду за "
+"пэўныя падзеі."
 
 msgid "introduction/slide/1/description"
 msgstr ""
@@ -751,9 +765,9 @@ msgstr "КАТЭГОРЫЯ АБСТАЛЯВАННЯ"
 
 msgid "introduction/slide/3/description/left"
 msgstr ""
-"Стоимость большинства существующего оборудования для II–IV уровней теперь не"
-" будет превышать 50 000 серебра, для V–VII уровней — не больше 300 000, а "
-"для VIII–XI — до 600 000."
+"Кошт большай часткі існуючага абсталявання для II–IV узроўняў цяпер не будзе"
+" перавышаць 50 000 срэбра, для V–VII узроўняў — не больш за 300 000, а для "
+"VIII–XI — да 600 000."
 
 msgid "introduction/slide/3/description/right"
 msgstr ""
@@ -806,6 +820,9 @@ msgstr "«Мокрая» боеўкладка"
 
 msgid "introduction/title/withEquipments/deluxe"
 msgstr "Удасканаленае абсталяванне"
+
+msgid "introduction/title/withEquipments/economic"
+msgstr "Экономические инструкции"
 
 msgid "introduction/title/withEquipments/modernized"
 msgstr "Эксперыментальнае абсталяванне"
@@ -954,7 +971,7 @@ msgstr ""
 "разведкі"
 
 msgid "kpi/bonus/negative/chargeTimeBonus"
-msgstr "от времени подготовки залпа"
+msgstr "ад часу падрыхтоўкі залпа"
 
 msgid "kpi/bonus/negative/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
@@ -1015,13 +1032,13 @@ msgid "kpi/bonus/negative/foliageMaskingFactor"
 msgstr "ад эфекту масіроўкі ад расліннасці"
 
 msgid "kpi/bonus/negative/loadShellIntoDualGunBonus"
-msgstr "от времени дозарядки снаряда"
+msgstr "ад часу данабівання снарада"
 
 msgid "kpi/bonus/negative/minTimeBetweenReloadBoost"
 msgstr "затрымка паўторнай актывацыі"
 
 msgid "kpi/bonus/negative/penaltyAfterShotBonus"
-msgstr "от штрафа после залпа"
+msgstr "ад штрафу пасля залпа"
 
 msgid "kpi/bonus/negative/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1035,7 +1052,7 @@ msgid "kpi/bonus/negative/shotsLimitForGunBoost"
 msgstr "колькасць траплянняў, якія ўлічваюцца"
 
 msgid "kpi/bonus/negative/speedLimitsBonus"
-msgstr "от макс. скорости / заднему ходу"
+msgstr "ад макс. хуткасці / задняга ходу"
 
 msgid "kpi/bonus/negative/stunResistanceEffectFactor"
 msgstr ""
@@ -1224,7 +1241,7 @@ msgstr ""
 "разведкі"
 
 msgid "kpi/bonus/positive/chargeTimeBonus"
-msgstr "к времени подготовки залпа"
+msgstr "да часу падрыхтоўкі залпа"
 
 msgid "kpi/bonus/positive/circularVisionRadiusWhileSurveyingDeviceDamaged"
 msgstr ""
@@ -1288,13 +1305,13 @@ msgid "kpi/bonus/positive/limitsForGunBoost"
 msgstr "колькасць траплянняў, якія ўлічваюцца"
 
 msgid "kpi/bonus/positive/loadShellIntoDualGunBonus"
-msgstr "к времени дозарядки снаряда"
+msgstr "да часу данабівання снарада"
 
 msgid "kpi/bonus/positive/minTimeBetweenReloadBoost"
 msgstr "затрымка паўторнай актывацыі"
 
 msgid "kpi/bonus/positive/penaltyAfterShotBonus"
-msgstr "к штрафу после залпа"
+msgstr "да штрафу пасля залпа"
 
 msgid "kpi/bonus/positive/radiomanActivityTimeAfterVehicleDestroy"
 msgstr ""
@@ -1305,7 +1322,7 @@ msgid "kpi/bonus/positive/radiomanHitChance"
 msgstr "да абароны радыстаў ад раненняў"
 
 msgid "kpi/bonus/positive/speedLimitsBonus"
-msgstr "к макс. скорости / заднему ходу"
+msgstr "да макс. хуткасці / задняга ходу"
 
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "да негатыўнага эфекту аглушэння"
@@ -1906,19 +1923,19 @@ msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "c"
 
 msgid "kpi/title/chargeTimeBonus"
-msgstr "Время залпа (с)"
+msgstr "Час залпу (с)"
 
 msgid "kpi/title/limitsForGunBoost"
 msgstr "Колькасць улічаных траплянняў (паводле колькасці / часу)"
 
 msgid "kpi/title/loadShellIntoDualGunBonus"
-msgstr "Уменьшение времени дозарядки"
+msgstr "Памяншэнне часу данабівання"
 
 msgid "kpi/title/penaltyAfterShotBonus"
-msgstr "Уменьшение штрафа после залпа"
+msgstr "Памяншэнне часу пасля залпа"
 
 msgid "kpi/title/speedLimitsBonus"
-msgstr "Макс. скорость / задний ход (км/ч)"
+msgstr "Макс. хуткасць / задні ход (км/гадз)"
 
 msgid "kpi/title/temperatureCoolingDelay"
 msgstr "Затрымка ахаладжэння (с)"
@@ -2016,6 +2033,9 @@ msgstr "Па экіпажы"
 msgid "tabs/deluxe"
 msgstr "Удасканаленае"
 
+msgid "tabs/economic"
+msgstr "Экономические"
+
 msgid "tabs/modernized"
 msgstr "Эксперыментальнае"
 
@@ -2030,9 +2050,7 @@ msgstr "Трафейнае"
 
 msgid "tooltip/autoRenewal/body/boosters"
 msgstr ""
-"Настаўленне будзе выконвацца аўтаматычная пасля вяртання машыны з бою. "
-"Папаўненне ідзе са Склада пры наяўнасці запасу настаўленняў або за валюту "
-"гульні."
+"Инструкция будет пополняться автоматически после возврата машины из боя."
 
 msgid "tooltip/autoRenewal/body/consumables"
 msgstr ""
@@ -2048,6 +2066,22 @@ msgid "tooltip/autoRenewal/body/shells"
 msgstr ""
 "Боекамплект будзе папаўняцца аўтаматычна (калі гэта неабходна) пасля "
 "вяртання машыны з бою."
+
+msgid "tooltip/autoRenewal/dropdown/body/hard"
+msgstr ""
+"Пополнение идёт со Склада при наличии инструкций. При отсутствии инструкций "
+"на Складе они будут автоматически докупаться за игровую валюту."
+
+msgid "tooltip/autoRenewal/dropdown/body/soft"
+msgstr ""
+"Пополнение идёт со Склада при наличии инструкций. При отсутствии инструкций "
+"на Складе слот останется пустым."
+
+msgid "tooltip/autoRenewal/dropdown/header/hard"
+msgstr "Докупать недостающие"
+
+msgid "tooltip/autoRenewal/dropdown/header/soft"
+msgstr "Только со Склада"
 
 msgid "tooltip/autoRenewal/header/general"
 msgstr "Папаўняць аўтаматычна"

@@ -11,8 +11,6 @@ package net.wg.gui.notification.custom
       
       private static const WIDTH:int = 288;
       
-      private static const POP_UP_WIDTH:int = 301;
-      
       private static const GF_NOTIFICATION_ALIAS_POSTFIX:String = "PopUp";
        
       
@@ -48,10 +46,6 @@ package net.wg.gui.notification.custom
       
       override public function get width() : Number
       {
-         if(this.isPopUp)
-         {
-            return POP_UP_WIDTH;
-         }
          return WIDTH;
       }
       

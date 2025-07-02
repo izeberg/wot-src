@@ -7,6 +7,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "EULA/buttons/apply"
 msgstr "Прымаю"
@@ -507,10 +513,10 @@ msgid "buyBerthsNotEnough/credits/cancel"
 msgstr "Так!"
 
 msgid "buyBerthsNotEnough/credits/message"
-msgstr "Недостаточно серебра для покупки дополнительных мест в Казарме."
+msgstr "Замала срэбра для куплі дадатковых месцаў у Жаўнерні."
 
 msgid "buyBerthsNotEnough/credits/title"
-msgstr "Недостаточно серебра"
+msgstr "Замала срэбра"
 
 msgid "buyConfirmation/cancel"
 msgstr "Скасаваць"
@@ -549,8 +555,8 @@ msgstr ""
 
 msgid "buyInstallConfirmation/messageCombine"
 msgstr ""
-"Купить и установить %(kind)s «%(name)s» на текущую машину за %(price)s "
-"серебра?"
+"Ці купіць і ўсталяваць %(kind)s «%(name)s» на цяперашнюю машыну за %(price)s"
+" срэбра?"
 
 msgid "buyInstallConfirmation/submit"
 msgstr "Купіць"
@@ -563,8 +569,8 @@ msgstr "Скасаваць"
 
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
-"Купить премиум аккаунт на %(days)s д за %(gold)s золота?\n"
-" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить премиум аккаунт стандартным способом.%(tagClose)s"
+"Купить Премиум аккаунт на %(days)s д за %(gold)s золота?\n"
+" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Премиум аккаунт стандартным способом.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купіць"
@@ -591,13 +597,13 @@ msgid "buySlotNotEnough/credits/cancel"
 msgstr "Добра"
 
 msgid "buySlotNotEnough/credits/message"
-msgstr "Недостаточно серебра для покупки дополнительного слота в Ангаре."
+msgstr "Замала срэбра, каб купіць дадатковы слот у Гаражы."
 
 msgid "buySlotNotEnough/credits/submit"
 msgstr "Добра"
 
 msgid "buySlotNotEnough/credits/title"
-msgstr "Недостаточно серебра"
+msgstr "Замала срэбра"
 
 msgid "buySlotNotEnough/gold/cancel"
 msgstr "Добра"
@@ -616,7 +622,7 @@ msgstr "Скасаваць"
 
 msgid "buySlotShopConfirmation/messageCombine"
 msgstr ""
-"Нет свободных слотов в Ангаре. Купить дополнительный слот за {%d} серебра?"
+"Няма вольнага месца ў Гаражы. Ці купіць дадатковае месца за {%d} срэбра?"
 
 msgid "buySlotShopConfirmation/submit"
 msgstr "Купіць"
@@ -945,17 +951,17 @@ msgstr "Для куплі не стае:"
 
 msgid "confirmBuyAndInstall/insufficientFundsTooltip/body"
 msgstr ""
-"Заработайте серебро в бою, продайте излишки со Склада или обменяйте золото."
+"Заслужыце срэбра ў баі, прадайце лішкі са Склада або абмяняйце золата."
 
 msgid "confirmBuyAndInstall/insufficientFundsTooltip/header"
-msgstr "Недостаточно серебра"
+msgstr "Замала срэбра"
 
 msgid "confirmBuyAndInstall/message"
 msgstr "Кошт модуля:"
 
 msgid "confirmBuyAndInstall/sellMessage"
 msgstr ""
-"Продать заменяемый модуль %(previousModuleName) за: %(previousModulePrice)"
+"Прадаць заменны модуль %(previousModuleName) за: %(previousModulePrice)"
 
 msgid "confirmBuyAndInstall/soldModuleInfo/compatibleTanks"
 msgstr "Гэты модуль сумяшчальны з:"
@@ -982,8 +988,8 @@ msgstr "Скасаваць"
 
 msgid "confirmExchangeDialog/exchangeCredits/exchangeNoNeedText"
 msgstr ""
-"Обмен для покупки не требуется.\n"
-"У вас достаточно серебра."
+"Абмен для куплі не патрабуецца.\n"
+"У вас досыць срэбра."
 
 msgid "confirmExchangeDialog/exchangeCredits/goldNotEnoughText"
 msgstr ""
@@ -991,10 +997,10 @@ msgstr ""
 "Каб выканаць абмен, трэба %(gold)s"
 
 msgid "confirmExchangeDialog/exchangeCredits/needGoldText"
-msgstr "Обменять %(gold)s на недостающее серебро?"
+msgstr "Ці абмяняць %(gold)s на срэбра, якіх не стае?"
 
 msgid "confirmExchangeDialog/exchangeCredits/needItemsStepperTitle"
-msgstr "Необходимо серебра:"
+msgstr "Патрабуецца срэбра:"
 
 msgid "confirmExchangeDialog/exchangeCredits/needItemsText"
 msgstr "На куплянне не стае: %(value)s"
@@ -1041,8 +1047,8 @@ msgstr "Скасаваць"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/exchangeNoNeedText"
 msgstr ""
-"Обмен для восстановления не требуется.\n"
-"У вас достаточно серебра."
+"Абмен для аднаўлення не патрабуецца.\n"
+"У вас досыць срэбра."
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/goldNotEnoughText"
 msgstr ""
@@ -1050,10 +1056,10 @@ msgstr ""
 "Для абмену патрабуецца %(gold)s"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needGoldText"
-msgstr "Обменять %(gold)s на недостающее серебро?"
+msgstr "Ці абмяняць %(gold)s на срэбра, якіх не стае?"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needItemsStepperTitle"
-msgstr "Необходимо серебра:"
+msgstr "Патрабуецца срэбра:"
 
 msgid "confirmExchangeDialog/restoreExchangeCredits/needItemsText"
 msgstr "На аднаўленне не стае: %(value)s"
@@ -1443,13 +1449,69 @@ msgstr ""
 msgid "disconnected/title"
 msgstr "Злучэнне спынена"
 
+msgid "dismissOrRestore/dismiss/capcha/title/limitError"
+msgstr ""
+"Для совершения операции введите количество членов экипажа, %(highlight)s"
+
+msgid "dismissOrRestore/dismiss/capcha/title/normal"
+msgstr ""
+"Для совершения операции введите количество членов экипажа с %(highlight)s"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlight/limitError"
+msgstr ""
+"которые будут заменены %(keyword)s в буфере мобилизованных (%(count)s)"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlight/normal"
+msgstr "возможностью восстановления (%(count)s)"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlightKeyword"
+msgstr "безвозвратно"
+
+msgid "dismissOrRestore/error/text"
+msgstr "Вы ввели неправильное значение!"
+
+msgid "dismissOrRestore/header/dismiss"
+msgstr "Демобилизовать выбранных членов экипажа?"
+
+msgid "dismissOrRestore/header/restore"
+msgstr "Восстановить выбранных членов экипажа?"
+
+msgid "dismissOrRestore/limitError/error"
+msgid_plural "error"
+msgstr[0] ""
+"Превышен лимит буфера демобилизованных: %(count)s член экипажа будет заменён"
+" безвозвратно."
+msgstr[1] ""
+"Превышен лимит буфера демобилизованных: %(count)s члена экипажа будут "
+"заменены безвозвратно."
+msgstr[2] ""
+"Превышен лимит буфера демобилизованных: %(count)s членов экипажа будут "
+"заменены безвозвратно."
+
+msgid "dismissOrRestore/restore/currency"
+msgstr "Итоговая стоимость:"
+
+msgid "dismissOrRestore/selectTankmans/dismiss"
+msgstr ""
+"Всего выбрано членов экипажа для демобилизации: %(total)s (из них с "
+"возможностью восстановления %(restorable)s)"
+
+msgid "dismissOrRestore/selectTankmans/restore"
+msgstr "Всего выбрано членов экипажа для восстановления: %(count)s"
+
 msgid "dismissTankman/buttons/dismiss"
 msgstr "Дэмабілізаваць"
 
+msgid "dismissTankman/buttons/restore"
+msgstr "Аднавіць"
+
 msgid "dismissTankman/description/time"
 msgstr ""
-"Выбраны танкіст будзе дэмабілізаваны. Вы можаце вярнуць яго ў строй на "
-"працягу {whiteOrange_Open}%(time)s д{whiteOrange_Close}."
+"Выбранный член экипажа будет демобилизован. Вы можете вернуть его в строй в "
+"течение %(time)s."
+
+msgid "dismissTankman/description/timeText"
+msgstr "%(time)s д"
 
 msgid "dismissTankman/header"
 msgstr "Дэмабілізацыя танкіста"
@@ -1489,18 +1551,6 @@ msgstr "Пацвердзіць"
 
 msgid "dismissedBufferOverFlawMultiple/title"
 msgstr "Буфер дэмабілізаваных запоўнены"
-
-msgid "documentChangeDialog/button/submit"
-msgstr "Замяніць"
-
-msgid "documentChangeDialog/dropdown/firstName"
-msgstr "Імя"
-
-msgid "documentChangeDialog/dropdown/lastName"
-msgstr "Прозвішча"
-
-msgid "documentChangeDialog/title"
-msgstr "Змяніць імя і выгляд?"
 
 msgid "dropSkill/cancel"
 msgstr "Скасаваць"
@@ -2146,14 +2196,14 @@ msgstr "Скасаваць"
 
 msgid "limitedUIOffNotification/message"
 msgstr ""
-"Вы уверены, что хотите отключить постепенное появление скрытых элементов интерфейса в Ангаре?\n"
+"Ці сапраўды хочаце адключыць паступовае з'яўленне схаваных элементаў інтэрфейсу ў Гаражы?\n"
 "%(icon)s%(alert)s"
 
 msgid "limitedUIOffNotification/message/alert"
-msgstr "Отключив эту настройку, вы не сможете включить её обратно."
+msgstr "Адключыўшы гэту наладу, вы не зможаце ўключыць яе зноў."
 
 msgid "limitedUIOffNotification/submit"
-msgstr "Подтвердить"
+msgstr "Пацвердзіць"
 
 msgid "limitedUIOffNotification/title"
 msgstr "Змена налад"
@@ -2271,7 +2321,7 @@ msgid "moneyTransfer/labelClan"
 msgstr "Клан:"
 
 msgid "moneyTransfer/labelClanCredits"
-msgstr "серебро"
+msgstr "срэбра"
 
 msgid "moneyTransfer/labelClanGold"
 msgstr "золата"
@@ -2286,7 +2336,7 @@ msgid "moneyTransfer/labelNormal"
 msgstr "Звычайны:"
 
 msgid "moneyTransfer/labelNormalCredits"
-msgstr "серебро"
+msgstr "срэбра"
 
 msgid "moneyTransfer/labelNormalGold"
 msgstr "золата"
@@ -2452,7 +2502,7 @@ msgstr "Азнаёміўся"
 
 msgid "punishmentWindow/message/extra/penalty"
 msgstr ""
-"%(colorTagOpen)sЛишение 100%% заработанного за бой опыта, серебра и наград.\n"
+"%(colorTagOpen)sПазбаўленне 100%% здабытага за бой досведу, срэбра і ўзнагарод.\n"
 "\n"
 "%(colorTagClose)s"
 
@@ -2465,7 +2515,7 @@ msgstr ""
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
-"Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», вам объявлено первое и последнее предупреждение. Обратите внимание, что в случае повторного нарушения вы будете лишены всего заработанного за бой серебра, опыта и наград. В том случае, если досрочный выход из боя связан с разрывами соединения или иными техническими трудностями, обратитесь в Центр поддержки пользователей.\n"
+"Шаноўны гулец, з прычыны парушэння вамі правіл гульні на мапе %(arenaName)s а %(time)s, а менавіта артыкула «%(reason)s», вам вынеслі першае і апошняе папярэджанне. Звярніце ўвагу, што пры паўторным парушэнні вы будзеце пазбаўлены ўсяго здабытага за бой срэбра, досведу і ўзнагарод. У тым выпадку, калі дачасны выхад з бою звязаны з абрывамі злучэння або іншымі тэхнічнымі цяжкасцямі, звярніце ў Цэнтр падтрымкі карыстальнікаў.\n"
 "\n"
 " "
 
@@ -2988,6 +3038,9 @@ msgstr ""
 msgid "retrain/cancel"
 msgstr "Скасаваць"
 
+msgid "retrain/header"
+msgstr "Выберите способ переобучения"
+
 msgid "retrain/massive/tankmenCount"
 msgstr ""
 "Будзе перавучана танкістаў: {whiteSpanish_Open}%(count)s{whiteSpanish_Close}"
@@ -3011,7 +3064,7 @@ msgid "retrain/single/checkBoxLabel"
 msgstr "Размясціць у гэтай машыне"
 
 msgid "retrain/submit"
-msgstr "Перавучыць"
+msgstr "Выбрать"
 
 msgid "retrain/title/massive"
 msgstr "Перавучыць экіпаж на %(vehicleName)s?"
@@ -3086,6 +3139,21 @@ msgstr "Памылка сінхранізацыі"
 
 msgid "skinApplyDialog/button/submit"
 msgstr "Прымяніць"
+
+msgid "skinApplyDialog/warning"
+msgstr "Этот образ имеет неизменяемые имя и фамилию"
+
+msgid "skinChangeDialog/button/submit"
+msgstr "Змяніць"
+
+msgid "skinChangeDialog/text"
+msgstr "Внешность члена экипажа будет изменена."
+
+msgid "skinChangeDialog/title"
+msgstr "Сменить внешность?"
+
+msgid "skinChangeDialog/warning"
+msgstr "Этот образ имеет неизменяемые имя и фамилию"
 
 msgid "soundModeInvalid/cancel"
 msgstr "Скасаваць"
@@ -3352,6 +3420,12 @@ msgstr "Перайсці"
 msgid "switchPeripheryWindow/windowTitle"
 msgstr "Пераход на іншы сервер"
 
+msgid "tankmanRetraining/cancel"
+msgstr "Скасаваць"
+
+msgid "tankmanRetraining/submit"
+msgstr "Выбрать"
+
 msgid "tradeInConfirmation/cancel"
 msgstr "Скасаваць"
 
@@ -3470,7 +3544,7 @@ msgid "upgradeTankmanScoolConfirmation/cancel"
 msgstr "Скасаваць"
 
 msgid "upgradeTankmanScoolConfirmation/messageCombine"
-msgstr "Обучить члена экипажа за {%d} серебра?"
+msgstr "Ці навучыць танкіста за {%d} срэбра?"
 
 msgid "upgradeTankmanScoolConfirmation/submit"
 msgstr "Навучыць"
@@ -3482,13 +3556,13 @@ msgid "upgradeTankmanScoolNotEnoughMoney/cancel"
 msgstr "Добра"
 
 msgid "upgradeTankmanScoolNotEnoughMoney/message"
-msgstr "Недостаточно серебра для обучения члена экипажа."
+msgstr "Замала срэбра, каб навучыць танкіста."
 
 msgid "upgradeTankmanScoolNotEnoughMoney/submit"
 msgstr "Добра"
 
 msgid "upgradeTankmanScoolNotEnoughMoney/title"
-msgstr "Недостаточно серебра."
+msgstr "Замала срэбра."
 
 msgid "vehConf/exitDialog/cancel"
 msgstr "Скасаваць"

@@ -11,11 +11,8 @@
 	<postProgressionTree>role_HT_support</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>
-			35.4
-			<!--BW_String-->
-		</forward>
-		<backward>14</backward>
+		<forward>40</forward>
+		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -3574,11 +3571,11 @@
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>
-					152.4
+					228.6
 					<!--BW_String-->
 				</armor_1>
 				<armor_2>
-					139.7
+					190.5
 					<!--BW_String-->
 				</armor_2>
 				<armor_3>127</armor_3>
@@ -3587,7 +3584,10 @@
 					<!--BW_String-->
 				</armor_4>
 				<armor_5>0</armor_5>
-				<armor_6>127</armor_6>
+				<armor_6>
+					165.1
+					<!--BW_String-->
+				</armor_6>
 				<armor_8>0</armor_8>
 				<armor_9>
 					101.6
@@ -3651,14 +3651,17 @@
 					</pitchLimits>
 					<armor>
 						<armor_1>
-							203.2
+							304.8
 							<!--BW_String-->
 						</armor_1>
 						<armor_2>
 							152.4
 							<!--BW_String-->
 						</armor_2>
-						<armor_3>127</armor_3>
+						<armor_3>
+							177.8
+							<!--BW_String-->
+						</armor_3>
 						<armor_4>
 							139.7
 							<!--BW_String-->
@@ -3672,7 +3675,7 @@
 							<!--BW_String-->
 						</armor_6>
 						<armor_7>
-							190.5
+							241.3
 							<!--BW_String-->
 						</armor_7>
 						<armor_8>0</armor_8>
@@ -3681,15 +3684,12 @@
 							<!--BW_String-->
 						</armor_9>
 						<armor_10>
-							177.8
+							266.7
 							<!--BW_String-->
 						</armor_10>
-						<armor_11>
-							177.8
-							<!--BW_String-->
-						</armor_11>
+						<armor_11>254</armor_11>
 						<armor_12>
-							139.7
+							158.8
 							<!--BW_String-->
 						</armor_12>
 						<armor_13>
@@ -4791,14 +4791,8 @@
 		<detailed>
 			<engines>
 				<Continental_AV_1790_5C>
-					<smplEnginePower>
-						856.3977
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>
-						35.4
-						<!--BW_String-->
-					</smplFwMaxSpeed>
+					<smplEnginePower>900</smplEnginePower>
+					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</Continental_AV_1790_5C>
 			</engines>
 			<chassis>

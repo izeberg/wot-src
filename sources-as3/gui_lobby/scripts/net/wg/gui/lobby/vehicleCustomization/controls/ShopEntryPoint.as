@@ -74,7 +74,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          var _loc2_:MouseEventEx = param1 as MouseEventEx;
          if(_loc2_ != null && _loc2_.buttonIdx == MouseEventEx.LEFT_BUTTON)
          {
-            dispatchEvent(new CustomizationSoundEvent(CustomizationSoundEvent.PLAY_SOUND,SoundTypes.CUSTOMIZATION_SELECT));
+            dispatchEvent(new CustomizationSoundEvent(CustomizationSoundEvent.PLAY_SOUND,SoundTypes.CUSTOMIZATION_SELECT_DOUBLE));
             dispatchEvent(new CustomizationEvent(CustomizationEvent.SHOW_SHOP));
          }
       }

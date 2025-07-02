@@ -151,15 +151,6 @@
 					<row3>0.000000 1.131370 0.380518</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>HP_hullAbillity</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -185,7 +176,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap

@@ -100,6 +100,21 @@ msgstr "Получен новый ранг"
 msgid "awards/yes"
 msgstr "Так точно!"
 
+msgid "battleMessages/enableVOIP"
+msgstr ""
+"Команда сформирована. Выбирайте технику и в бой!\n"
+"Войти в голосовой чат (%(keyName)s)"
+
+msgid "battleMessages/specifyVOIP"
+msgstr ""
+"Команда сформирована. Выбирайте технику и в бой!\n"
+"Для быстрого доступа к голосовой связи назначьте горячую клавишу."
+
+msgid "battleMessages/withoutVOIP"
+msgstr ""
+"Команда сформирована. Выбирайте технику и в бой!\n"
+"Для использования голосовой связи включите эту функцию в настройках игры."
+
 msgid "battleResult/losers"
 msgstr "Проигравшие"
 
@@ -419,7 +434,7 @@ msgid "entryPoint/season/starts"
 msgstr "С %(day)s %(month)s"
 
 msgid "entryPoint/title"
-msgstr "РАНГОВЫЙ БОЙ"
+msgstr "РАНГОВЫЕ БОИ"
 
 msgid "introPage/alert/beforeSeason"
 msgstr "До начала события:"
@@ -429,32 +444,33 @@ msgstr "Режим временно недоступен. Зайдите поз�
 
 msgid "introPage/blocks/block1/description"
 msgstr ""
-"Бои проходят только на технике VI уровня и по правилам Стандартного боя. "
-"Формат — 10х10 игроков, продолжительность боя — 10 минут."
+"Бои проходят на технике VI уровня и по правилам Стандартного боя. Вам "
+"предстоит пройти 3 дивизиона по 5 рангов. Каждый новый ранг принесёт вам "
+"достойное вознаграждение."
 
 msgid "introPage/blocks/block1/title"
 msgstr "Основные правила"
 
 msgid "introPage/blocks/block2/description"
 msgstr ""
-"Ваша задача — пройти 3 дивизиона, в каждом из которых необходимо получить 5 "
-"рангов. За каждый новый ранг вам полагается достойная награда."
+"Участвуя в Ранговых боях, вы будете зарабатывать очки Боевого пропуска, "
+"продвигаясь по главам события и получая за это уникальные награды."
 
 msgid "introPage/blocks/block2/title"
-msgstr "Ранговая карьера"
+msgstr "Очки Боевого пропуска"
 
 msgid "introPage/blocks/block3/description"
 msgstr ""
-"Участвуя в Ранговых боях, вы будете зарабатывать очки Боевого пропуска, "
-"продвигаясь по главам события и получая за это уникальные награды."
+"Теперь в Ранговых боях можно использовать голосовую связь для лучшей "
+"координации действий, а также играть взводом — это и веселее, и эффективнее!"
 
 msgid "introPage/blocks/block3/title"
-msgstr "Очки Боевого пропуска"
+msgstr "Взводы и голосовая связь"
 
 msgid "introPage/blocks/yearRewardDisabled"
 msgstr ""
-"Участвуя в Ранговых боях, вы будете зарабатывать очки Боевого пропуска, "
-"продвигаясь по главам события и получая за это уникальные награды."
+"Теперь в Ранговых боях можно использовать голосовую связь для лучшей "
+"координации действий, а также играть взводом — это и веселее, и эффективнее!"
 
 msgid "introPage/btns/accept"
 msgstr "Так точно!"
@@ -748,6 +764,9 @@ msgstr "Недоступно: до конца сезона менее минут
 msgid "questsTooltip/unavailable/seasonEnd/min"
 msgstr "Недоступно: до конца сезона %(min)s мин"
 
+msgid "rankTooltip/body"
+msgstr "Текущий ранг игрока."
+
 msgid "rankedAwards/awardsBlock/awardsHeaderTxt"
 msgstr "Награда за достигнутые ранги"
 
@@ -850,7 +869,8 @@ msgstr " "
 
 msgid "rankedBattleMainView/infoPage/header"
 msgstr ""
-"Бои 10х10, VI уровень техники, 3 дивизиона на пути к финальной награде."
+"Соревновательный режим, где мастерство продвигает вас по рангам и приносит "
+"уникальные награды."
 
 msgid "rankedBattleMainView/leaguesView/descr"
 msgstr "Вы можете продолжать играть в режиме."
@@ -1507,8 +1527,8 @@ msgstr "Усовершенствованное оборудование на в�
 
 msgid "selectorTooltip/desc"
 msgstr ""
-"Бои на технике VI уровня по правилам Стандартного боя. Формат — 10×10 "
-"игроков. Продолжительность боя — 10 минут."
+"Соревновательный режим, где мастерство продвигает вас по рангам и приносит "
+"уникальные награды."
 
 msgid "selectorTooltip/tillEnd"
 msgstr "До конца боёв:"
@@ -1602,6 +1622,18 @@ msgstr "или"
 
 msgid "tooltip/step/winners"
 msgstr "победившей команде"
+
+msgid "unit/message/divisionRestriction"
+msgstr "Игроки взвода должны находиться в одном дивизионе"
+
+msgid "unit/message/rankRestriction"
+msgstr "Разница в рангах между игроками взвода превышает %(rank)s"
+
+msgid "voiceChat/active"
+msgstr "Выйти из голосового чата"
+
+msgid "voiceChat/inactive"
+msgstr "Войти в голосовой чат"
 
 msgid "welcomeScreen/btn"
 msgstr "Вперёд!"

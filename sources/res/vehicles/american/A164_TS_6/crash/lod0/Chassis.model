@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.610252 -0.003205 -3.702843</min>
+		<max>1.610226 0.993612 3.865632</max>
+	</visibilityBox>
+	<parent>vehicles/american/A164_TS_6/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A164_TS_6/crash/lod0/Chassis</nodefullVisual>
+</root>

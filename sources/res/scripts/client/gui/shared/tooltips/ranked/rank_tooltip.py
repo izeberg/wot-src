@@ -76,7 +76,10 @@ class RankedTooltipData(BlocksTooltipData):
             if comment is not None:
                 result.append(comment)
 
-        return formatters.packTextBlockData(('\n\n').join(result))
+        if result:
+            return formatters.packTextBlockData(('\n\n').join(result))
+        else:
+            return ''
 
     def __getDivisionComment(self):
         comment = None

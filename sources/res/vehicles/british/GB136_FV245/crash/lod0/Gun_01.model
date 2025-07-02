@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB136_FV245/crash/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.867729 -0.344213 -1.721772</min>
+		<max>0.862402 0.631623 4.724033</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB136_FV245/crash/lod1/Gun_01</parent>
+	<extent>32</extent>
+</root>

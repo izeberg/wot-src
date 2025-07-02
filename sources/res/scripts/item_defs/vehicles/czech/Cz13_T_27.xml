@@ -11,7 +11,7 @@
 	<postProgressionTree>role_MT_support</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>50</forward>
+		<forward>55</forward>
 		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
@@ -1634,7 +1634,7 @@
 			</terrainResistance>
 			<brakeForce>40000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -3745,10 +3745,10 @@
 						</rate>
 					</clip>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>24</reloadTime>
+					<reloadTime>22</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -5037,7 +5037,7 @@
 			<engines>
 				<Skoda_16_AH_145_A>
 					<smplEnginePower>900</smplEnginePower>
-					<smplFwMaxSpeed>50</smplFwMaxSpeed>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Skoda_16_AH_145_A>
 			</engines>
 			<chassis>
@@ -5052,13 +5052,13 @@
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.08895
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0805
+								0.0684
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

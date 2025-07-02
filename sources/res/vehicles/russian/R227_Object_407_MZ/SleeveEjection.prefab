@@ -22,6 +22,11 @@
 			<UUID>d1d47d64-1b56-3a74-bd5f-d0a384ed073c</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>HP_sleeveSpawnPoint</name>
+			<UUID>91ac7ed8-3d86-4366-9369-21b3cf0508b9</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -33,7 +38,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>3ebee7d1-33de-47b1-9cbc-72f76168f5da</link>
+						<link>91ac7ed8-3d86-4366-9369-21b3cf0508b9</link>
 					</property>
 				</config>
 			</component>
@@ -49,6 +54,16 @@
 			</component>
 			<component>
 				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>3ebee7d1-33de-47b1-9cbc-72f76168f5da</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -86,7 +101,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0.00237483 0.267668 -1.15919
+							0.00237656 0.267668 -1.15919
 							<!--BW_String-->
 						</value>
 					</property>
@@ -106,7 +121,10 @@
 				<config>
 					<property>
 						<name>Position</name>
-						<value>0 0 0</value>
+						<value>
+							0 -0.0539107 0.196835
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Scale</name>
@@ -115,7 +133,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							-0 0 1.5708
+							1.74228e-08 1.5708 0.296637
 							<!--BW_String-->
 						</value>
 					</property>
@@ -139,13 +157,31 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Animator</type>
 			<version>2</version>
 			<component>
 				<objectIndex>3</objectIndex>
-				<flags>2</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>Auto Start</name>
@@ -263,7 +299,7 @@
 			<version>2</version>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>2</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>Model name</name>
@@ -280,7 +316,7 @@
 					</property>
 					<property>
 						<name>Initial Speed</name>
-						<value>5</value>
+						<value>7</value>
 					</property>
 					<property>
 						<name>Stuck Body Timeout</name>
@@ -296,7 +332,10 @@
 					</property>
 					<property>
 						<name>Direction</name>
-						<value>-0.436332 -0.436332 -0.785398</value>
+						<value>
+							-0 0 -1.5708
+							<!--BW_String-->
+						</value>
 					</property>
 				</config>
 			</component>
@@ -306,7 +345,7 @@
 			<version>1</version>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>2</flags>
+				<flags>3</flags>
 				<config>
 					<property>
 						<name>sleeveEjection</name>
@@ -318,7 +357,7 @@
 					</property>
 					<property>
 						<name>spawnSound</name>
-						<value>TST_shell_extraction</value>
+						<value>R227_Object_407_MZ_hatch_opening</value>
 					</property>
 					<property>
 						<name>debrisAnimationSequence</name>
@@ -328,7 +367,7 @@
 					<property>
 						<name>spawnDelay</name>
 						<value>
-							0.64
+							0.8
 							<!--BW_String-->
 						</value>
 					</property>
@@ -342,7 +381,7 @@
 					<property>
 						<name>spawnStopAnimationSequenceDelay</name>
 						<value>
-							1.1
+							1.4
 							<!--BW_String-->
 						</value>
 					</property>
@@ -372,7 +411,25 @@
 			<type>NodeFollower</type>
 			<version>1</version>
 			<component>
-				<objectIndex>0</objectIndex>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>NodeName</name>
+						<value>HP_sleeve</value>
+					</property>
+					<property>
+						<name>DeactivateIfInvalid</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>modelLink</name>
+						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -386,6 +443,25 @@
 					<property>
 						<name>modelLink</name>
 						<link>00000000-0000-0000-0000-000000000001</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VSEComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Path</name>
+						<isAsset>true</isAsset>
+						<value>vscript/plans/vehicles/ussr/R227_Object_407_MZ.xml</value>
+					</property>
+					<property>
+						<name>AutoStart</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

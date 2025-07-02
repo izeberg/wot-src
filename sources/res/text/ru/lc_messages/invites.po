@@ -205,6 +205,11 @@ msgstr ""
 "После принятия приглашения вы будете автоматически исключены из состава "
 "взвода в режиме «Разведка боем» и перемещены на сервер %(host)s."
 
+msgid "invites/note/change_and_leave/PREBATTLE_RANKED"
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава "
+"формирования и перемещены на сервер %(host)s."
+
 msgid "invites/note/change_and_leave/PREBATTLE_RTS_TRAINING"
 msgstr ""
 "Приняв приглашение, вы будете автоматически исключены из списка участников "
@@ -347,6 +352,11 @@ msgid "invites/note/leave/PREBATTLE_MAPBOX"
 msgstr ""
 "После принятия приглашения вы будете автоматически исключены из состава "
 "взвода в режиме «Разведка боем»."
+
+msgid "invites/note/leave/PREBATTLE_RANKED"
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава "
+"формирования."
 
 msgid "invites/note/leave/PREBATTLE_RTS_TRAINING"
 msgstr ""
@@ -505,6 +515,9 @@ msgstr "Приглашение войти в состав взвода «Раз�
 
 msgid "invites/text/MAPS_TRAINING"
 msgstr "Приглашение поучаствовать в изучении карт"
+
+msgid "invites/text/RANKED"
+msgstr "Приглашение войти в состав взвода режима «Ранговый бой»"
 
 msgid "invites/text/SORTIE"
 msgstr "Приглашение в отряд"

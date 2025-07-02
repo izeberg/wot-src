@@ -44,7 +44,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setUserPreferences(param1:String) : void;
       
-      function as_setReceivers(param1:Array) : void;
+      function as_setReceivers(param1:Array, param2:int) : void;
       
       function as_enableToSendMessage() : void;
       

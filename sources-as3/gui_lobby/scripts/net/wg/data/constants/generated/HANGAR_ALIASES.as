@@ -170,6 +170,8 @@ package net.wg.data.constants.generated
       public static const COLLECTION_ENTRY_POINT:String = "CollectionEntryPoint";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
+      
+      public static const BIRTHDAY_BANNER_ENTRY_POINT:String = "BirthdayBannerEntryPoint";
        
       
       public function HANGAR_ALIASES()

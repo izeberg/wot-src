@@ -22,12 +22,15 @@ msgstr "Ускоренное обучение"
 msgid "barracks/action/enlarge"
 msgstr "Расширить"
 
+msgid "barracks/berthsAmountDivider"
+msgstr "/"
+
 msgid "barracks/bunks/title"
 msgstr "Койки:"
 
 msgid "barracks/enlarge/contentLine"
 msgstr ""
-"Укажите количество коек для покупки. Свободных коек в Казарме: "
+"Укажите количество коек для покупки. Мест занято / всего: "
 "%(freeBunksCount)s/%(allBunksCount)s."
 
 msgid "barracks/enlarge/discountTooltip/header"
@@ -50,6 +53,9 @@ msgstr "Нажмите, чтобы расширить Казарму."
 
 msgid "barracks/tooltip/enlarge/header"
 msgstr "Расширение Казармы"
+
+msgid "changeTankmanSkinView/header"
+msgstr "Настройка внешности"
 
 msgid "common/exclamationMark"
 msgstr "!"
@@ -80,6 +86,9 @@ msgstr "В АНГАР"
 
 msgid "common/navigation/toPersonalFile"
 msgstr "К ПРОФИЛЮ"
+
+msgid "common/recruitLock"
+msgstr "Новобранец"
 
 msgid "confirmSkills/percent"
 msgstr "%(value)s %"
@@ -230,16 +239,22 @@ msgid "filter/tooltip/tankmanKind/dismissed/title"
 msgstr "Демобилизованные"
 
 msgid "filter/tooltip/tankmanKind/recruit/body"
-msgstr "Включить/отключить отображение новобранцев."
+msgstr "Включить отображение только новобранцев."
 
 msgid "filter/tooltip/tankmanKind/recruit/title"
 msgstr "Новобранцы"
 
 msgid "filter/tooltip/tankmanKind/tankman/body"
-msgstr "Включить/отключить отображение членов экипажа."
+msgstr "Включить отображение всех членов экипажа."
 
 msgid "filter/tooltip/tankmanKind/tankman/title"
 msgstr "Члены экипажа"
+
+msgid "filter/tooltip/tankmanKind/unique/body"
+msgstr "Включить отображение только уникальных членов экипажа."
+
+msgid "filter/tooltip/tankmanKind/unique/title"
+msgstr "Уникальные члены экипажа"
 
 msgid "filter/tooltip/tankmanRole/body"
 msgstr "Включить/отключить отображение членов экипажа данной специальности."
@@ -284,6 +299,30 @@ msgstr "Нажмите, чтобы сбросить фильтр."
 
 msgid "filterPanel/counter/reset/header"
 msgstr "Сбросить все фильтры"
+
+msgid "filterPanel/counter/selectLimit/body"
+msgstr "За одну транзакцию можно демобилизовать не более 200 членов экипажа."
+
+msgid "filterPanel/counter/selectLimit/header"
+msgstr "Лимит за одну транзакцию"
+
+msgid "filterPanel/counterMultySelect/reset/body"
+msgstr "Нажмите, чтобы сбросить выделение членов экипажа."
+
+msgid "filterPanel/counterMultySelect/reset/header"
+msgstr "Сбросить"
+
+msgid "filterPanel/demobilize/cancel"
+msgstr "Отменить"
+
+msgid "filterPanel/demobilize/confirm"
+msgstr "Демобилизовать"
+
+msgid "filterPanel/restore/confirm"
+msgstr "Восстановить"
+
+msgid "filterPanel/selectMode/title"
+msgstr "Выбрать"
 
 msgid "matrix/increaseButton"
 msgstr "Улучшить"
@@ -395,7 +434,7 @@ msgid "personalData/card/restrictions"
 msgstr "Ограничения: {restrictions}"
 
 msgid "personalData/card/tooltip/document/body"
-msgstr "Нажмите, чтобы сменить имя и внешность члена экипажа."
+msgstr "Нажмите, чтобы сменить внешность члена экипажа."
 
 msgid "personalData/card/tooltip/document/title"
 msgstr "Внешность"
@@ -453,6 +492,9 @@ msgstr "В машине: %(vehicle)s"
 
 msgid "personalFile/premiumVehicle"
 msgstr "Премиум машина"
+
+msgid "personalFile/profileEdit"
+msgstr "Редактировать профиль"
 
 msgid "personalFile/retrain"
 msgstr "Переобучить"
@@ -570,6 +612,122 @@ msgstr "Уникальная озвучка"
 msgid "tankman/recruit"
 msgstr "Рекрутировать"
 
+msgid "tankman/tooltip/cantBeSelected/body"
+msgstr "Превышен лимит членов экипажа за одну транзакцию"
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/applyButton"
+msgstr "Сменить"
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/attention"
+msgstr ""
+"Вы можете пересаживать экипажи на премиум машины того же типа без штрафов и "
+"переобучения."
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/cancelButton"
+msgstr "Отменить"
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/fullName"
+msgstr "%(name)s %(surname)s"
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/header"
+msgstr "Внести изменения в профиль?"
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/listItem/role"
+msgstr ""
+"Специальность %(from)s будет изменена на %(to)s. После смены специальности "
+"все навыки будут сброшены."
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/listItem/tech"
+msgstr ""
+"Текущая специализация: %(from)s. Специализация члена экипажа будет изменена "
+"на %(to)s."
+
+msgid "tankmanChangeAndRecruitView/ConfirmBlock/price"
+msgstr "Итоговая стоимость:"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/attention"
+msgstr ""
+"Вы можете пересаживать экипажи на премиум машины того же типа без штрафов и "
+"переобучения."
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/cancelButton"
+msgstr "Отменить"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/changeButton"
+msgstr "Сменить"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/changeHeader"
+msgstr "Изменение профиля члена экипажа"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/chooseButton"
+msgstr "Выбрать"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/free"
+msgstr "-"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/nameText"
+msgstr "Имя"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/nationText"
+msgstr "Нация"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/price"
+msgstr "Итоговая стоимость:"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/recruitButton"
+msgstr "Рекрутировать"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/recruitHeader"
+msgstr "Рекрутировать новобранца?"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/retraining/academy"
+msgstr "Танковая академия"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/retraining/free"
+msgstr "Ускоренные курсы"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/retraining/silver"
+msgstr "Полковая школа"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/retrainingText"
+msgstr "Переобучение"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/setInTech"
+msgstr "Разместить в этой машине"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/specChange"
+msgstr "Выберите специальность и специализацию:"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/specialtyText"
+msgstr "Специальность"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/surnameText"
+msgstr "Фамилия"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/techNameText"
+msgstr "Машина"
+
+msgid "tankmanChangeAndRecruitView/TankmanChange/techTypeText"
+msgstr "Тип техники"
+
+msgid "tankmanChangeAndRecruitView/closeButton"
+msgstr "ЗАКРЫТЬ"
+
+msgid "tankmanChangeAndRecruitView/switchButton"
+msgstr "Сменить"
+
+msgid "tankmanChangePreviewTooltip/header"
+msgstr "Стоимость:"
+
+msgid "tankmanChangePreviewTooltip/retrainig/button"
+msgstr "Выбрать"
+
+msgid "tankmanChangePreviewTooltip/speciality"
+msgstr "Смена специальности: %(value)s"
+
+msgid "tankmanChangePreviewTooltip/specialization"
+msgstr "Смена специализации: %(value)s"
+
 msgid "tankmanContainer/tab/personalData"
 msgstr "Внешность"
 
@@ -591,8 +749,17 @@ msgstr "Ничего не найдено. Измените настройки �
 msgid "tankmanList/emptyState/noItems"
 msgstr "Ничего не найдено. Рекрутируйте члена экипажа."
 
+msgid "tankmanList/emptyState/noItemsWithoutFilters"
+msgstr "Ничего не найдено."
+
 msgid "tankmanList/filter/title"
 msgstr "Членов экипажа:"
+
+msgid "tankmanList/selected/title"
+msgstr "Выбрано членов экипажа:"
+
+msgid "tankmanList/selected/titleSmall"
+msgstr "Выбрано:"
 
 msgid "tankmanList/tooltip/location/dismissed/body"
 msgstr ""
@@ -612,6 +779,9 @@ msgstr "Включить/отключить отображение членов 
 
 msgid "tankmanList/tooltip/location/in_tank/title"
 msgstr "На местах"
+
+msgid "tankmanList/tooltip/location/in_vehicle/title"
+msgstr "В машине"
 
 msgid "tankmanList/tooltip/nation/body"
 msgstr "Включить/отключить отображение обликов данной нации."

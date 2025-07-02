@@ -1,0 +1,596 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>First</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>First_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Fourth</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Fourth_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_Loader</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Main</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.000000 1.455657 0.680715</row3>
+					</transform>
+					<node>
+						<identifier>Jib_1</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 4.136723 -2.537545</row3>
+						</transform>
+						<node>
+							<identifier>Jib_2</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.965926 0.258819</row1>
+								<row2>0.000000 -0.258819 0.965926</row2>
+								<row3>0.000000 1.079726 -5.442614</row3>
+							</transform>
+							<node>
+								<identifier>Claw_0</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 0.965926 -0.258819</row1>
+									<row2>-0.000000 0.258819 0.965926</row2>
+									<row3>-0.000000 -0.796793 -0.024729</row3>
+								</transform>
+								<node>
+									<identifier>Claw_E</identifier>
+									<transform>
+										<row0>0.000000 0.000000 -1.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>1.000000 0.000000 0.000000</row2>
+										<row3>-0.214316 -0.795456 -0.000206</row3>
+									</transform>
+									<node>
+										<identifier>Claw_E_BlendBone</identifier>
+										<transform>
+											<row0>0.000000 0.000000 1.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>1.000000 0.000000 0.000000</row2>
+											<row3>-7.529760 -5.113408 0.214316</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Claw_N</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 -0.000000 1.000000</row2>
+										<row3>0.000207 -0.795456 -0.214316</row3>
+									</transform>
+									<node>
+										<identifier>Claw_N_BlendBone</identifier>
+										<transform>
+											<row0>1.000000 0.000000 0.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>-0.000207 -5.113408 7.743871</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Claw_S</identifier>
+									<transform>
+										<row0>-1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>-0.000000 0.000000 -1.000000</row2>
+										<row3>-0.000206 -0.795456 0.214317</row3>
+									</transform>
+									<node>
+										<identifier>Claw_S_BlendBone</identifier>
+										<transform>
+											<row0>-1.000000 0.000000 -0.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>-0.000206 -5.113408 -7.315238</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Claw_W</identifier>
+									<transform>
+										<row0>0.000000 0.000000 1.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>-1.000000 -0.000000 0.000000</row2>
+										<row3>0.214317 -0.795456 0.000206</row3>
+									</transform>
+									<node>
+										<identifier>Claw_W_BlendBone</identifier>
+										<transform>
+											<row0>0.000000 0.000000 -1.000000</row0>
+											<row1>0.000000 1.000000 0.000000</row1>
+											<row2>-1.000000 0.000000 0.000000</row2>
+											<row3>7.529348 -5.113408 0.214317</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Claw_0_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>0.000000 -5.908864 7.529554</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Jib_2_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 0.965926 -0.258819</row1>
+									<row2>0.000000 -0.258819 -0.965926</row2>
+									<row3>-0.000000 -4.555527 8.777589</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Jib_1_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.000000 -5.592380 1.856830</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Main_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -1.455657 -0.680715</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Root_Loader_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_MailCar</identifier>
+				<transform>
+					<row0>-0.000000 0.739138 -0.673554</row0>
+					<row1>0.000000 -0.673554 -0.739138</row1>
+					<row2>-1.000000 -0.000000 -0.000000</row2>
+					<row3>0.000000 0.020000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Body_M</identifier>
+					<transform>
+						<row0>0.739138 -0.673554 -0.000000</row0>
+						<row1>0.673554 0.739138 0.000000</row1>
+						<row2>-0.000000 0.000000 1.000000</row2>
+						<row3>0.720956 0.000000 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Body_M_BlendBone</identifier>
+						<transform>
+							<row0>-0.000000 0.000000 -1.000000</row0>
+							<row1>1.000000 -0.000000 -0.000000</row1>
+							<row2>0.000000 1.000000 0.000000</row2>
+							<row3>-0.552886 -0.485602 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.257440 -0.966294 0.000000</row1>
+						<row2>-0.966294 -0.257440 -0.000000</row2>
+						<row3>-0.615769 -1.295723 -1.007179</row3>
+					</transform>
+					<node>
+						<identifier>backWheel_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 0.841135 -0.540825</row1>
+							<row2>0.000000 -0.540825 -0.841135</row2>
+							<row3>-1.007179 -1.110349 -0.917768</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>backWheel_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.739138 -0.673554 0.000000</row1>
+						<row2>-0.673554 -0.739138 -0.000000</row2>
+						<row3>-0.615769 -1.295723 1.007179</row3>
+					</transform>
+					<node>
+						<identifier>backWheel_R_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>0.000000 -0.000000 -1.000000</row2>
+							<row3>1.007179 -0.437601 -1.372472</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel_L</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.990572 -0.136994 0.000000</row1>
+						<row2>-0.136994 -0.990572 -0.000000</row2>
+						<row3>1.598899 1.134589 -0.905430</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel_L_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 0.824442 0.565946</row1>
+							<row2>0.000000 0.565946 -0.824442</row2>
+							<row3>-0.905430 -1.444882 1.331613</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>frontWheel_R</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>0.739138 -0.673554 0.000000</row1>
+						<row2>-0.673554 -0.739138 -0.000000</row2>
+						<row3>1.598899 1.134589 0.905430</row3>
+					</transform>
+					<node>
+						<identifier>frontWheel_R_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>0.000000 -0.000000 -1.000000</row2>
+							<row3>0.905430 -0.437600 1.915563</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+			<node>
+				<identifier>Second</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Second_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Third</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Third_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Jib_1_BlendBone</node>
+		<node>Jib_2_BlendBone</node>
+		<node>Main_BlendBone</node>
+		<node>Claw_N_BlendBone</node>
+		<node>Claw_0_BlendBone</node>
+		<node>Root_Loader_BlendBone</node>
+		<node>Claw_E_BlendBone</node>
+		<node>Claw_S_BlendBone</node>
+		<node>Claw_W_BlendBone</node>
+		<node>Body_M_BlendBone</node>
+		<node>backWheel_R_BlendBone</node>
+		<node>backWheel_L_BlendBone</node>
+		<node>frontWheel_L_BlendBone</node>
+		<node>frontWheel_R_BlendBone</node>
+		<node>First_BlendBone</node>
+		<node>Second_BlendBone</node>
+		<node>Third_BlendBone</node>
+		<node>Fourth_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Loader_0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 3.726300 2.330891</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>Loader_1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.066402 3.212513 -1.325159</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>Loader_2_skinned</identifier>
+					<fx>shaders/std_effects/glow_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_05_Loader_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						selfIllumination
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+				</material>
+				<groupOrigin>-0.321424 4.451198 3.010921</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>MailCar_0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>90</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_06_MailCar_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_06_MailCar_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_06_MailCar_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.027045 0.001755</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>MailCar_1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_glass_skinned.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_06_MailCar_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_06_MailCar_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_06_MailCar_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 1.354940 1.399838</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				5
+				<material>
+					<identifier>MailCar_2_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>114</materialKind>
+					<property>
+						alphaReference
+						<Int>170</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0106_Worker_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0106_Worker_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0106_Worker_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.438192 1.415000 0.908146</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				6
+				<material>
+					<identifier>LootboxPaid_0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_42_Lootbox_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_42_Lootbox_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h15_mt_bday_2025/Environment/h15_mt_bday_42_Lootbox_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000012 0.427519 0.002376</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-10.738737 -0.021993 -10.754084</min>
+		<max>8.738737 7.439014 30.092300</max>
+	</boundingBox>
+	<geometrySize>533838</geometrySize>
+	<minUVDensity>0.002418</minUVDensity>
+</root>

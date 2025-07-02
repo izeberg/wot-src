@@ -2540,18 +2540,24 @@
 					</secSegment>
 					<springsLength>
 						<backwardMovement>
-							<back>0.091625</back>
+							<back>
+								0.08917
+								<!--BW_String-->
+							</back>
 							<top>0.078876</top>
-							<front>0.084406</front>
+							<front>0.086953</front>
 							<bottom>
 								0.06581
 								<!--BW_String-->
 							</bottom>
 						</backwardMovement>
 						<forwardMovement>
-							<back>0.081281</back>
+							<back>0.085329</back>
 							<top>0.083611</top>
-							<front>0.090307</front>
+							<front>
+								0.08912
+								<!--BW_String-->
+							</front>
 							<bottom>
 								0.06581
 								<!--BW_String-->
@@ -2896,18 +2902,24 @@
 					</secSegment>
 					<springsLength>
 						<backwardMovement>
-							<back>0.091625</back>
+							<back>
+								0.08917
+								<!--BW_String-->
+							</back>
 							<top>0.078876</top>
-							<front>0.084406</front>
+							<front>0.086953</front>
 							<bottom>
 								0.06581
 								<!--BW_String-->
 							</bottom>
 						</backwardMovement>
 						<forwardMovement>
-							<back>0.081281</back>
+							<back>0.085329</back>
 							<top>0.083611</top>
-							<front>0.090307</front>
+							<front>
+								0.08912
+								<!--BW_String-->
+							</front>
 							<bottom>
 								0.06581
 								<!--BW_String-->

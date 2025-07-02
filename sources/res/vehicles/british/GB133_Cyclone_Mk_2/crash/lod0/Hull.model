@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.775267 -0.886892 -3.827486</min>
+		<max>1.825793 0.973238 3.594655</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB133_Cyclone_Mk_2/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB133_Cyclone_Mk_2/crash/lod0/Hull</nodefullVisual>
+</root>

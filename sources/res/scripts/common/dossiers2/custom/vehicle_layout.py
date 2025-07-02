@@ -8,6 +8,7 @@ from dossiers2.custom.dependencies import GLOBAL_MAP_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import RANKED_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import A30X30_STATS_DEPENDENCIES
 from dossiers2.custom.dependencies import EPIC_BATTLE_STATS_DEPENDENCIES
+from dossiers2.custom.dependencies import MEDAL_ALIASES
 TOTAL_BLOCK_LAYOUT = [
  'creationTime', 'lastBattleTime', 'battleLifeTime', 'treesCut', 'mileage']
 _totalBlockBuilder = StaticSizeBlockBuilder('total', TOTAL_BLOCK_LAYOUT, {}, [])
@@ -83,27 +84,27 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'scout',
  'evileye',
  'medalKay',
- 'medalCarius',
- 'medalKnispel',
+ 'medalSamokhin',
+ 'medalGudz',
  'medalPoppel',
  'medalAbrams',
  'medalLeClerc',
  'medalLavrinenko',
  'medalEkins',
- 'medalWittmann',
+ 'medalUshakov',
  'medalOrlik',
  'medalOskin',
- 'medalHalonen',
+ 'medalKrysov',
  'medalBurda',
  'medalBillotte',
  'medalKolobanov',
  'medalFadin',
  'medalRadleyWalters',
  'medalBrunoPietro',
- 'medalTarczay',
+ 'medalLyubushkin',
  'medalPascucci',
  'medalDumitru',
- 'medalLehvaslaiho',
+ 'medalKhazov',
  'medalNikolas',
  'medalLafayettePool',
  'sinai',
@@ -117,7 +118,7 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'medalBrothersInArms',
  'medalCrucialContribution',
  'medalDeLanglade',
- 'medalTamadaYoshio',
+ 'medalTrubin',
  'bombardier',
  'huntsman',
  'alaric',
@@ -178,7 +179,7 @@ _achievements15x15PopUps = [
  'bonecrusher',
  'charmed',
  'even']
-_achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps)
+_achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps, aliases=MEDAL_ALIASES)
 ACHIEVEMENTS7X7_BLOCK_LAYOUT = [
  'wolfAmongSheep', 'wolfAmongSheepMedal', 'geniusForWar',
  'geniusForWarMedal', 'kingOfTheHill', 'tacticalBreakthroughSeries',

@@ -54,7 +54,7 @@ class AddPlatformTagLinksHandler(OpenBrowserHandler):
         return False
 
     def _getPlatform(self):
-        if self.__loginManager.isWgcSteam:
+        if self.__loginManager.isLgcSteam:
             return DISTRIBUTION_PLATFORM.STEAM.value
         return ''
 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>1.240025 0.186200 0.596490</min>
+		<max>1.362219 0.483341 0.984934</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB136_FV245/normal/lod1/HatchSleeve_01_Right_anim</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB136_FV245/normal/lod0/HatchSleeve_01_Right_anim</nodefullVisual>
+</root>

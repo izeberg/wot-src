@@ -151,15 +151,6 @@
 					<row3>0.000000 1.131370 0.380518</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>HP_hullAbillity</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -234,10 +225,14 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>hull_equipment_01</identifier>
+					<identifier>tank_equipment</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/german/G182_Mausekonig/Mausekonig_turret_01_AM.dds</Texture>
@@ -248,7 +243,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						<Vector4>7.014000 7.014000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicDetailMap
@@ -262,19 +257,15 @@
 						normalMap
 						<Texture>vehicles/german/G182_Mausekonig/Mausekonig_turret_01_ANM.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>-0.008943 0.219009 -0.203718</groupOrigin>
+				<groupOrigin>-0.008943 0.312700 -0.203718</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.344382 -0.818981 -5.181654</min>
+		<min>-2.344382 -0.638529 -5.181654</min>
 		<max>2.329979 1.256999 5.089705</max>
 	</boundingBox>
-	<geometrySize>160372</geometrySize>
+	<geometrySize>141222</geometrySize>
 	<minUVDensity>0.000314</minUVDensity>
 </root>
