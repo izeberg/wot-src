@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/japan/J42_Chi_Se/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.607271 0.000053 -3.739676</min>
+		<max>1.607271 1.246596 3.664627</max>
+	</visibilityBox>
+</root>

@@ -1,5 +1,4 @@
 import BigWorld
-from adisp import adisp_async
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IGiftSystemRequester
 
@@ -9,6 +8,5 @@ class GiftSystemRequester(AbstractSyncDataRequester, IGiftSystemRequester):
     def isHistoryReady(self):
         return bool(self.getCacheValue('isReady', False))
 
-    @adisp_async
-    def _requestCache(self, callback):
+    def _requestCache(self, callback=None):
         BigWorld.player().giftSystem.getCache(lambda resID, value: self._response(resID, value, callback))

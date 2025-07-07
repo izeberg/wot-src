@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000000 0.438212 1.482944</row3>
+					<row3>-0.000000 0.412212 1.591944</row3>
 				</transform>
 			</node>
 		</node>
@@ -65,14 +65,13 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.002688 0.619312 -0.441862</groupOrigin>
+				<groupOrigin>-0.002688 0.593312 -0.332862</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.727726 -0.000000 -2.630774</min>
-		<max>1.722349 1.238624 1.747051</max>
+		<min>-1.727726 -0.026000 -2.521775</min>
+		<max>1.722349 1.212624 1.856050</max>
 	</boundingBox>
-	<geometrySize>117460</geometrySize>
-	<minUVDensity>0.009263</minUVDensity>
+	<geometrySize>129872</geometrySize>
 </root>

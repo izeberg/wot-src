@@ -431,6 +431,7 @@
 			</beamLength>
 			<bindNode>HP_gunFire</bindNode>
 		</laserSight>
+		<multiShoot>ShowShootingMultiGun : MultiShoot</multiShoot>
 	</extras>
 	<deviceExtras>
 		<devices>
@@ -466,7 +467,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_1>
 		<armor_2>
@@ -479,7 +480,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_2>
 		<armor_3>
@@ -492,7 +493,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_3>
 		<armor_4>
@@ -505,7 +506,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_4>
 		<armor_5>
@@ -518,7 +519,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_5>
 		<armor_6>
@@ -531,7 +532,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_6>
 		<armor_7>
@@ -544,7 +545,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_7>
 		<armor_8>
@@ -557,7 +558,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_8>
 		<armor_9>
@@ -570,7 +571,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_9>
 		<armor_10>
@@ -583,7 +584,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_10>
 		<armor_11>
@@ -596,7 +597,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_11>
 		<armor_12>
@@ -609,7 +610,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_12>
 		<armor_13>
@@ -622,7 +623,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_13>
 		<armor_14>
@@ -635,7 +636,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_14>
 		<armor_15>
@@ -648,7 +649,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_15>
 		<armor_16>
@@ -661,7 +662,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_16>
 		<armor_17>
@@ -674,7 +675,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_17>
 		<armor_18>
@@ -687,7 +688,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_18>
 		<armor_19>
@@ -700,7 +701,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_19>
 		<armor_20>
@@ -713,7 +714,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_20>
 		<armor_21>
@@ -726,7 +727,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_21>
 		<armor_22>
@@ -739,7 +740,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_22>
 		<armor_23>
@@ -752,7 +753,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_23>
 		<armor_24>
@@ -765,7 +766,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_24>
 		<armor_25>
@@ -778,7 +779,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_25>
 		<armor_26>
@@ -791,7 +792,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_26>
 		<armor_27>
@@ -804,7 +805,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_27>
 		<armor_28>
@@ -817,7 +818,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_28>
 		<armor_29>
@@ -830,7 +831,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_29>
 		<armor_30>
@@ -843,7 +844,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_30>
 		<armor_31>
@@ -856,7 +857,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_31>
 		<armor_32>
@@ -869,7 +870,7 @@
 			<useAntifragmentationLining>true</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>true</checkCaliberForRichet>
+			<checkCaliberForRicochet>true</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>true</checkCaliberForHitAngleNorm>
 		</armor_32>
 		<engine>
@@ -883,7 +884,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -907,7 +908,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -931,7 +932,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -955,7 +956,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -979,7 +980,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1004,7 +1005,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>auto</damageKind>
 			<chanceToHitByProjectile>
@@ -1029,7 +1030,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>auto</damageKind>
 			<chanceToHitByProjectile>
@@ -1054,7 +1055,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>auto</damageKind>
 			<chanceToHitByProjectile>
@@ -1078,7 +1079,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1102,7 +1103,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>true</mayRicochet>
 			<collideOnceOnly>false</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1126,7 +1127,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1150,7 +1151,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1174,7 +1175,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1198,7 +1199,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1222,7 +1223,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1246,7 +1247,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1270,7 +1271,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1294,7 +1295,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1318,7 +1319,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>
@@ -1342,7 +1343,7 @@
 			<useAntifragmentationLining>false</useAntifragmentationLining>
 			<mayRicochet>false</mayRicochet>
 			<collideOnceOnly>true</collideOnceOnly>
-			<checkCaliberForRichet>false</checkCaliberForRichet>
+			<checkCaliberForRicochet>false</checkCaliberForRicochet>
 			<checkCaliberForHitAngleNorm>false</checkCaliberForHitAngleNorm>
 			<damageKind>device</damageKind>
 			<chanceToHitByProjectile>

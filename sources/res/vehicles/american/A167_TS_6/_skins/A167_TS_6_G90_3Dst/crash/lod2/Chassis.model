@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.613441 -0.005047 -3.628536</min>
+		<max>1.616935 1.001078 3.648571</max>
+	</visibilityBox>
+	<parent>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod3/Chassis</parent>
+	<extent>96</extent>
+</root>

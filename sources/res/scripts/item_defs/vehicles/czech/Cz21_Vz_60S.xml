@@ -11,7 +11,7 @@
 	<postProgressionTree>role_HT_break</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>45</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -83,7 +83,7 @@
 	<hull>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>28000</weight>
-		<maxHealth>1680</maxHealth>
+		<maxHealth>1760</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>250</maxHealth>
 			<maxRegenHealth>188</maxRegenHealth>
@@ -1454,10 +1454,7 @@
 			<slot>
 				<slotType>attachment</slotType>
 				<slotId>18000</slotId>
-				<position>
-					-1.75552 0.093679 -1.433829
-					<!--BW_String-->
-				</position>
+				<position>-1.731707 0.093679 -1.433829</position>
 				<rotation>0.000001 0.000003 1.533159</rotation>
 				<scale>
 					0.999995 0.999995 1
@@ -1470,7 +1467,7 @@
 				<slotType>attachment</slotType>
 				<slotId>18001</slotId>
 				<position>
-					1.756 0.094 -1.434
+					1.732 0.094 -1.434
 					<!--BW_String-->
 				</position>
 				<rotation>
@@ -2956,7 +2953,7 @@
 			<notInShop>true</notInShop>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>12500</weight>
-			<maxHealth>420</maxHealth>
+			<maxHealth>440</maxHealth>
 			<rotationSpeed>25</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>185</maxHealth>
@@ -3016,10 +3013,7 @@
 						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						11.7
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>11</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -3930,7 +3924,7 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>0.200276 0.981539 -1.282095</position>
+					<position>-0.043078 0.981541 -1.282095</position>
 					<rotation>-0 0 0</rotation>
 					<scale>1 1 1</scale>
 					<applyType>gunMantlet</applyType>
@@ -3968,8 +3962,8 @@
 		<detailed>
 			<engines>
 				<Skoda_AHK_60>
-					<smplEnginePower>950</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplEnginePower>1000</smplEnginePower>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</Skoda_AHK_60>
 			</engines>
 			<chassis>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/crash/lod2/Gun_02</nodelessVisual>
+	<parent>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.583555 -0.258428 -0.736430</min>
+		<max>0.580828 0.364970 4.458143</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -1939,6 +1939,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_EPICREWARD_BROCHURE_GIFT:String = "#messenger:serviceChannelMessages/epicReward/brochure_gift";
       
+      public static const SERVICECHANNELMESSAGES_EPICREWARD_UNIVERSALBOOK_GIFT:String = "#messenger:serviceChannelMessages/epicReward/universalBook_gift";
+      
       public static const SERVICECHANNELMESSAGES_EPICREWARD_BATTLEBOOSTER_GIFT:String = "#messenger:serviceChannelMessages/epicReward/battleBooster_gift";
       
       public static const SERVICECHANNELMESSAGES_EPICREWARD_EXPEQUIPMENTS_GIFT:String = "#messenger:serviceChannelMessages/epicReward/expequipments_gift";
@@ -1946,6 +1948,8 @@ package
       public static const SERVICECHANNELMESSAGES_EPICREWARD_BATTLEPASSPOINTS:String = "#messenger:serviceChannelMessages/epicReward/battlePassPoints";
       
       public static const SERVICECHANNELMESSAGES_EPICREWARD_EPICABILITYPOINTS:String = "#messenger:serviceChannelMessages/epicReward/epicAbilityPoints";
+      
+      public static const SERVICECHANNELMESSAGES_EPICREWARD_MENTORINGLICENSE_GIFT:String = "#messenger:serviceChannelMessages/epicReward/mentoringLicense_gift";
       
       public static const SERVICECHANNELMESSAGES_EPICREWARD_RECERTIFICATIONFORM_GIFT:String = "#messenger:serviceChannelMessages/epicReward/recertificationForm_gift";
       

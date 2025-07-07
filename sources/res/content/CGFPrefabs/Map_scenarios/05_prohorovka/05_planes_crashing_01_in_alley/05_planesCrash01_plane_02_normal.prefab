@@ -119,163 +119,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Transform</type>
-			<version>1</version>
-			<component>
-				<UUID>f4afa5f9-98a2-4d9e-aa7b-0957d532725d</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>dfcb4083-d597-4d93-8caa-2c00cf483332</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							0.99997 0.99998 0.999964
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>72c3c278-46d3-485e-8287-3b8c6dfe9330</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-10.813 -0.498711 6.11172
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>ce66f5dc-5d28-47f3-b77c-dd6b66cf23ef</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-11.482 -1e-06 0
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>74af17b2-f2e2-46a5-840f-19cc2eb4f6c1</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>3d67b183-0f72-4b74-94d7-a043d52e923d</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>1627805b-d14b-4c98-8665-ece73b0dc4a2</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>336ec872-f1e4-4405-80c3-795dff159b99</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>SequenceComponent</type>
 			<version>3</version>
 			<component>
@@ -288,11 +131,11 @@
 					</property>
 					<property>
 						<name>autoStart</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>pauseOnEnd</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>alwaysEnabled</name>
@@ -1571,7 +1414,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			0.0 -111.777190336 -5.49999949238e-05
+																			0 -111.777 -5.5e-05
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1589,14 +1432,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-1.67952 0.488281 8.14907e-06
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-1.67952 0.488281 8.14907e-06
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1613,7 +1456,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			-11.1624210605 -111.714164979 0.0
+																			-11.1624 -111.714 0
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1634,14 +1477,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-0.671387 0.488281 -1.85567e-06
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-0.671387 0.488281 -1.85567e-06
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1658,7 +1501,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			2.75601866783 -119.638744243 -6.69999656892e-05
+																			2.75602 -119.639 -6.7e-05
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1679,14 +1522,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					0.911713 -0.732422 -9.8953e-07
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					0.911713 -0.732422 -9.8953e-07
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1703,7 +1546,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			3.27032850305 -130.852101252 0.0
+																			3.27033 -130.852 0
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1724,14 +1567,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-1.80054 -1.95312 -1.82994
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-1.80054 -1.95312 -1.82994
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1748,7 +1591,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			0.187836191725 -133.153099757 -3.30000198726e-05
+																			0.187836 -133.153 -3.3e-05
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1769,14 +1612,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.23215 0.488281 2.47782
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.23215 0.488281 2.47782
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1793,7 +1636,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			17.3272750488 -134.976824419 19.5196980519
+																			17.3273 -134.977 19.5197
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1814,14 +1657,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					4.88281 -1.46484 4.39453
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					4.88281 -1.46484 4.39453
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1838,7 +1681,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			14.1689024989 -145.150263029 10.6276795503
+																			14.1689 -145.15 10.6277
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1859,14 +1702,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-2.0752 -3.90625 -3.479
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-2.0752 -3.90625 -3.479
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1883,7 +1726,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			2.75319971547 -146.579219771 2.33869912816
+																			2.7532 -146.579 2.3387
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1904,14 +1747,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-5.32532 0 -4.16565
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-5.32532 0 -4.16565
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1928,7 +1771,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			-1.39786805109 -146.210807908 -0.646325040797
+																			-1.39787 -146.211 -0.646325
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1949,14 +1792,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-51.7578 0 -13.1836
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					-51.7578 0 -13.1836
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -1973,7 +1816,7 @@
 																	<property>
 																		<name>value</name>
 																		<value>
-																			-0.692608571488 -146.265238899 1.45927766757
+																			-0.692609 -146.265 1.45928
 																			<!--BW_String-->
 																		</value>
 																	</property>
@@ -1994,14 +1837,14 @@
 																			<property>
 																				<name>left</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
 																			<property>
 																				<name>right</name>
 																				<value>
-																					1.5708 1.5708 1.5708
+																					1.17549e-38 1.17549e-38 1.17549e-38
 																					<!--BW_String-->
 																				</value>
 																			</property>
@@ -2131,7 +1974,7 @@
 									<property>
 										<name>end</name>
 										<value>
-											27.3
+											26.3
 											<!--BW_String-->
 										</value>
 									</property>
@@ -2271,6 +2114,169 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>f4afa5f9-98a2-4d9e-aa7b-0957d532725d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>dfcb4083-d597-4d93-8caa-2c00cf483332</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-863.219 0 -280.717
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							0.99997 0.99998 0.999964
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.0547292 -2.02723 -7.33117e-07
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>72c3c278-46d3-485e-8287-3b8c6dfe9330</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-10.813 -0.498711 6.11172
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ce66f5dc-5d28-47f3-b77c-dd6b66cf23ef</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-11.482 -1e-06 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>74af17b2-f2e2-46a5-840f-19cc2eb4f6c1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>3d67b183-0f72-4b74-94d7-a043d52e923d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1627805b-d14b-4c98-8665-ece73b0dc4a2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>336ec872-f1e4-4405-80c3-795dff159b99</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>Colliders</type>
 			<version>1</version>
 			<component>
@@ -2294,11 +2300,11 @@
 												<value>(( 69.0951,-2.38419e-07,3.62657e-06,       0), (       0,  3.9036,-9.27192e-09,       0), (1.67266e-06,2.98023e-08, 33.5123,       0), (       0,       0,-3.00562,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 69.0951,-2.38419e-07,3.62657e-06,       0), (       0,  3.9036,-9.27192e-09,       0), (1.67266e-06,2.98023e-08, 33.5123,       0), (       0,       0,-3.00562,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 69.0951,-2.38419e-07,3.62657e-06,       0), (       0,  3.9036,-9.27192e-09,       0), (1.67266e-06,2.98023e-08, 33.5123,       0), (       0,       0,-3.00562,       1))</value>
 											</property>
 										</object>
@@ -2320,6 +2326,10 @@
 					<property>
 						<name>Simulation object state</name>
 						<value>2</value>
+					</property>
+					<property>
+						<name>generateVelocities</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Is Trigger</name>
@@ -2572,6 +2582,38 @@
 						<name>oneTimeEffect</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -2593,6 +2635,38 @@
 					</property>
 					<property>
 						<name>oneTimeEffect</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
 						<value>1</value>
 					</property>
 				</config>
@@ -2688,6 +2762,20 @@
 					<property>
 						<name>Loop Count</name>
 						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AIDataPatch</type>
+			<version>2</version>
+			<component>
+				<UUID>f4afa5f9-98a2-4d9e-aa7b-0957d532725d</UUID>
+				<flags>2</flags>
+				<config>
+					<property>
+						<name>patchName</name>
+						<value>05_planesCrash01_ai</value>
 					</property>
 				</config>
 			</component>

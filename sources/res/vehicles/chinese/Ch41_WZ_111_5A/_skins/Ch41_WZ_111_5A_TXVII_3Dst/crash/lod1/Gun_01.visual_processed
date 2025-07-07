@@ -42,6 +42,10 @@
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.068386 0.070671 2.580287</groupOrigin>
 			</primitiveGroup>
@@ -53,5 +57,4 @@
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>90720</geometrySize>
-	<minUVDensity>0.001716</minUVDensity>
 </root>

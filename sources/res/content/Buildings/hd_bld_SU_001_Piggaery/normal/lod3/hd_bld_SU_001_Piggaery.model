@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod3/hd_bld_SU_001_Piggaery</nodelessVisual>
+	<visibilityBox>
+		<min>-9.015224 -1.239357 -18.260969</min>
+		<max>6.398649 8.055044 18.300440</max>
+	</visibilityBox>
+	<nodefullVisual>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod3/hd_bld_SU_001_Piggaery</nodefullVisual>
 </root>

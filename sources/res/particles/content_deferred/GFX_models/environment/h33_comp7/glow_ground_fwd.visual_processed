@@ -33,11 +33,11 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>18.000000 0.200000 1.000000 0.000000</Vector4>
+						<Vector4>0.700000 0.200000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						TintlColor
-						<Vector4>1.000000 0.925490 0.866667 1.000000</Vector4>
+						<Vector4>1.000000 0.952941 0.909804 1.000000</Vector4>
 					</property>
 					<property>
 						softFactor
@@ -60,6 +60,15 @@
 		<min>-0.460823 -0.460823 -0.004979</min>
 		<max>0.460823 0.460823 -0.000000</max>
 	</boundingBox>
+	<missingBspMaterial>
+		<material>
+			<identifier>lambert2_0_ncl1_1</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>lambert2_0_ncl1_1</identifier>
+		</material>
+	</missingBspMaterial>
 	<geometrySize>924</geometrySize>
-	<minUVDensity>1.176947</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/japan/J42_Chi_Se/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.391968 0.013609 -1.879583</min>
+		<max>1.394620 2.765466 1.365944</max>
+	</visibilityBox>
+</root>

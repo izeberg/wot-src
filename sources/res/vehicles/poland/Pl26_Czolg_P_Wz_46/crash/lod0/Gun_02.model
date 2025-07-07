@@ -4,4 +4,8 @@
 	<nodelessVisual>vehicles/poland/Pl26_Czolg_P_Wz_46/crash/lod0/Gun_02</nodelessVisual>
 	<parent>vehicles/poland/Pl26_Czolg_P_Wz_46/crash/lod1/Gun_02</parent>
 	<extent>32</extent>
+	<visibilityBox>
+		<min>-0.422899 -0.384283 -1.402815</min>
+		<max>0.433950 0.338763 6.484809</max>
+	</visibilityBox>
 </root>

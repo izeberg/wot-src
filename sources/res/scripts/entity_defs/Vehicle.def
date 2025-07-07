@@ -98,7 +98,7 @@
 		<damageStickers>
 			<Type>
 				ARRAY
-				<of>UINT64</of>
+				<of>VEHICLE_HIT_POINT</of>
 			</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</damageStickers>
@@ -368,6 +368,10 @@
 			<Type>UINT8</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</botDisplayStatus>
+		<stFrags>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</stFrags>
 	</Properties>
 	<TempProperties>
 		<events/>
@@ -408,6 +412,7 @@
 		<showShooting>
 			<Arg>UINT8</Arg>
 			<Arg>INT8</Arg>
+			<Arg>UINT8</Arg>
 		</showShooting>
 		<updateLaserSight>
 			<Arg>OBJECT_ID</Arg>
@@ -418,12 +423,16 @@
 			<Arg>OBJECT_ID</Arg>
 			<Arg>
 				ARRAY
-				<of>UINT64</of>
+				<of>VEHICLE_HIT_POINT</of>
 			</Arg>
+			<Arg>UINT8</Arg>
 			<Arg>UINT8</Arg>
 			<Arg>INT32</Arg>
 			<Arg>UINT8</Arg>
 			<Arg>BOOL</Arg>
+			<Arg>UINT8</Arg>
+			<Arg>FLOAT32</Arg>
+			<Arg>FLOAT32</Arg>
 		</showDamageFromShot>
 		<showDamageFromExplosion>
 			<Arg>OBJECT_ID</Arg>

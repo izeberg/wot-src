@@ -1,16 +1,16 @@
+import json
 from collections import namedtuple
-import json, typing, BigWorld
+import typing, BigWorld
 from account_helpers.premium_info import PremiumInfo
-from adisp import adisp_async
+from constants import SPA_ATTRS, MIN_VEHICLE_LEVEL
 from gui.shared.money import Money, Currency, DynamicMoney
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from gui.veh_post_progression.models.ext_money import ExtendedMoney
 from helpers import time_utils, dependency
-from constants import SPA_ATTRS, MIN_VEHICLE_LEVEL
+from nation_change.nation_change_helpers import NationalGroupDataAccumulator
 from skeletons.gui.game_control import IWalletController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared.utils.requesters import IStatsRequester
-from nation_change.nation_change_helpers import NationalGroupDataAccumulator
 if typing.TYPE_CHECKING:
     from typing import List, Tuple
 _ADDITIONAL_XP_DATA_KEY = '_additionalXPCache'
@@ -346,8 +346,7 @@ class StatsRequester(AbstractSyncDataRequester, IStatsRequester):
     def getABGroup(self, feature):
         return self.getCacheValue('abFeatureTest', {}).get(feature)
 
-    @adisp_async
-    def _requestCache(self, callback):
+    def _requestCache(self, callback=None):
         BigWorld.player().stats.getCache(lambda resID, value: self._response(resID, value, callback))
 
     def _preprocessValidData(self, data):

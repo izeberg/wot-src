@@ -38,12 +38,12 @@ class MemoryCriticalController(object):
         self.__loweredSettings = [ t for t in BigWorld.graphicsSettings() if t[0] == 'TEXTURE_QUALITY'
                                  ]
         texQuality = BigWorld.getGraphicsSetting('TEXTURE_QUALITY')
-        pipelineType = BigWorld.getGraphicsSetting('RENDER_PIPELINE')
+        isLowPreset = BigWorld.isForwardPipeline() or BigWorld.isSimplifiedPipeline()
         textureSettings = [ t for t in self.__loweredSettings if t[0] == 'TEXTURE_QUALITY' ][0][2]
         textureMinQuality = len(textureSettings) - 1
         if textureSettings[textureMinQuality][0] == 'OFF':
             textureMinQuality -= 1
-        while textureSettings[textureMinQuality][1] is False or pipelineType == 1 and textureSettings[textureMinQuality][2] is True:
+        while textureSettings[textureMinQuality][1] is False or isLowPreset and textureSettings[textureMinQuality][2] is True:
             textureMinQuality -= 1
 
         if textureMinQuality < texQuality:

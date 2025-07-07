@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.715780 0.000348 -2.949031</min>
+		<max>1.715780 1.056843 2.865378</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

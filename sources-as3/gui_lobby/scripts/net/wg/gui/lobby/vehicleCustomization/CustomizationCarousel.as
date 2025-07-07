@@ -5,6 +5,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.display.MovieClip;
    import flash.events.Event;
    import flash.events.MouseEvent;
+   import flash.geom.Point;
    import flash.geom.Rectangle;
    import net.wg.data.ListDAAPIDataProvider;
    import net.wg.data.VO.TankCarouselFilterInitVO;
@@ -85,6 +86,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const SHOP_ENTRY_Y_BIG:int = 26;
       
       private static const SHOP_ENTRY_X:int = 0;
+      
+      private static const SHORT_LIST_MAX_LEFT_OFFSET:int = 90;
        
       
       public var emptyStateComponent:EmptyStateComponent = null;
@@ -182,7 +185,11 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function updateLayout(param1:int, param2:int = 0) : void
       {
-         var _loc6_:Rectangle = null;
+         var _loc7_:Number = NaN;
+         var _loc8_:Number = NaN;
+         var _loc9_:Point = null;
+         var _loc10_:Number = NaN;
+         var _loc11_:Rectangle = null;
          var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
          var _loc5_:int = _loc4_ + leftArrowOffset - rightArrowOffset;
@@ -193,14 +200,35 @@ package net.wg.gui.lobby.vehicleCustomization
          }
          this.filterCounter.x = FILTERS_COUNTER_OFFSET + this.leftOffset;
          this.carouselFilters.x = FILTERS_LEFT_OFFSET + this.leftOffset;
-         super.updateLayout(_loc4_,(_loc4_ - _loc5_ >> 1) + _loc3_);
+         _loc3_ = (_loc4_ - _loc5_ >> 1) + _loc3_;
+         var _loc6_:HorizontalScroller = HorizontalScroller(scrollList);
+         if(_loc6_.minHorizontalScrollPosition == _loc6_.maxHorizontalScrollPosition && _loc6_.maxHorizontalScrollPosition == 0)
+         {
+            _loc7_ = scrollList.viewPort.visibleWidth;
+            _loc8_ = 0;
+            if(_loc6_.usesLayoutController())
+            {
+               _loc9_ = this._layoutController.getMaxExtents();
+               _loc8_ = _loc9_.x - _loc7_;
+            }
+            else
+            {
+               _loc8_ = _loc6_.minHorizontalScrollPosition + scrollList.viewPort.validWidth - _loc7_;
+            }
+            if(_loc8_ < 0)
+            {
+               _loc10_ = Math.min(-1 * _loc8_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
+               _loc3_ -= _loc10_;
+            }
+         }
+         super.updateLayout(_loc4_,_loc3_);
          this.scrollBar.setVisibleBookmarks(scrollList.viewPort.width / _loc4_ > BOOKMARKS_COEFFICIENT);
          this.dragBlocker.width = param1;
          if(hasScrollButtons)
          {
-            _loc6_ = CustomizationShared.computeItemSize(false,this._isMinResolution);
-            leftArrow.height = _loc6_.height;
-            rightArrow.height = _loc6_.height;
+            _loc11_ = CustomizationShared.computeItemSize(false,this._isMinResolution);
+            leftArrow.height = _loc11_.height;
+            rightArrow.height = _loc11_.height;
          }
          this.scrollBar.width = scrollList.width;
          this.scrollBar.x = scrollList.x;
@@ -314,12 +342,6 @@ package net.wg.gui.lobby.vehicleCustomization
          }
       }
       
-      public function setCurrentGroupId(param1:int) : void
-      {
-         this._currentGroupId = param1;
-         invalidateData();
-      }
-      
       public function clearSelected() : void
       {
          selectedIndex = Values.DEFAULT_INT;
@@ -381,6 +403,12 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          this.carouselFilters.initData(param1);
          this.updatePopoverData();
+      }
+      
+      public function setCurrentGroupId(param1:int) : void
+      {
+         this._currentGroupId = param1;
+         invalidateData();
       }
       
       public function setData(param1:CustomizationCarouselDataVO) : void
@@ -453,8 +481,9 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function addBookmarkItem(param1:Rectangle, param2:CustomizationCarouselBookmarkVO, param3:Boolean) : void
       {
+         var _loc5_:CustomizationCarouselBookmark = null;
          var _loc4_:Class = App.instance.utils.classFactory.getClass(BOOK_MARK_BACK_MOVIE);
-         var _loc5_:CustomizationCarouselBookmark = new _loc4_() as CustomizationCarouselBookmark;
+         _loc5_ = new _loc4_() as CustomizationCarouselBookmark;
          if(_loc5_ != null)
          {
             _loc5_.visible = true;

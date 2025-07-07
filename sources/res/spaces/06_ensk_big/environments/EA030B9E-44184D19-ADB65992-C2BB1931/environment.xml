@@ -19,6 +19,21 @@
 			<skyLow>-0.010000</skyLow>
 			<skyHigh>0.140000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<edgeFogInnerBB>-500.000000 -565.000000 500.000000 565.000000</edgeFogInnerBB>
+			<edgeFogOuterBB>-690.000000 -675.000000 690.000000 695.000000</edgeFogOuterBB>
+			<color>0.682353 0.803922 0.984314 1.150000</color>
+			<density>0.000700</density>
+			<height>162.339996</height>
+			<heightFalloff>0.007000</heightFalloff>
+			<startDistance>0.000000</startDistance>
+			<scatterStart>320.000000</scatterStart>
+			<scatterExponent>13.000000</scatterExponent>
+			<scatterColor>1.000000 0.278431 0.019608 4.400000</scatterColor>
+			<skyLow>0.010000</skyLow>
+			<skyHigh>0.350000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<edgeFogInnerBB>-500.000000 -500.000000 500.000000 500.000000</edgeFogInnerBB>
@@ -194,12 +209,18 @@
 			<angle>14.000000</angle>
 			<angleZ>48.000000</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>14.000000</angle>
+		</simplified_deferred>
 		<sunScale>0.000000</sunScale>
 		<sunColor>255.000000 174.000000 92.000000</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.603922 0.317647</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>1.000000 0.537255 0.270588</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>0.541176 0.725490 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>0.100000</sunScaleForward>
 		<sunColorForward>58.000000 38.000000 18.000000</sunColorForward>
 		<sunTextureForward/>
@@ -250,6 +271,7 @@
 	</DOF>
 	<VolumetricFog>
 		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
 		<sampleShadows>false</sampleShadows>
 		<temporalReprojection>true</temporalReprojection>
 		<fogDistance>500.000000</fogDistance>
@@ -266,4 +288,12 @@
 		<enableLocalLights>false</enableLocalLights>
 		<densityFix>1.000000</densityFix>
 	</VolumetricFog>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>1.000000</terrainBakedShadowFactor>
+		<bakedAOToShadow>1.400000</bakedAOToShadow>
+		<bakedAOPower>0.350000</bakedAOPower>
+		<vegetationMetallicMult>0.400000</vegetationMetallicMult>
+		<transmissionMult>0.200000</transmissionMult>
+		<waterReflectionAttenuation>0.030000</waterReflectionAttenuation>
+	</SimplifiedDeferred>
 </root>

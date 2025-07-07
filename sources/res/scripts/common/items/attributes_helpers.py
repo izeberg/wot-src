@@ -85,6 +85,7 @@ ALLOWED_DYNAMIC_ATTRS = {
  'gun/shotDispersionFactors/turretRotation',
  'healthBurnPerSecLossFraction',
  'healthFactor',
+ 'multShotDispersionFactor',
  'radio/distance',
  'ramming',
  'repairSpeed',

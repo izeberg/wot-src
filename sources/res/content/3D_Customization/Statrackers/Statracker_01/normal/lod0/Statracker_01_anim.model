@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.250313 -0.000216 -0.033764</min>
+		<max>0.250313 0.291276 0.112688</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Statrackers/Statracker_01/normal/lod1/Statracker_01_anim</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Statrackers/Statracker_01/normal/lod0/Statracker_01_anim</nodefullVisual>
+</root>

@@ -193,25 +193,7 @@ package
       
       public static const DOWNLOAD_RECYCLEBIN:String = "#waiting:download/recycleBin";
       
-      public static const DOWNLOAD_RANKED:String = "#waiting:download/ranked";
-      
-      public static const DOWNLOAD_BADGES:String = "#waiting:download/badges";
-      
-      public static const DOWNLOAD_EPICMETAGAME:String = "#waiting:download/epicMetaGame";
-      
-      public static const DOWNLOAD_BLUEPRINTS:String = "#waiting:download/blueprints";
-      
-      public static const DOWNLOAD_TOKENS:String = "#waiting:download/tokens";
-      
-      public static const DOWNLOAD_FESTIVITY:String = "#waiting:download/festivity";
-      
-      public static const DOWNLOAD_ANONYMIZER:String = "#waiting:download/anonymizer";
-      
-      public static const DOWNLOAD_BATTLEPASS:String = "#waiting:download/battlePass";
-      
-      public static const DOWNLOAD_GIFTSYSTEM:String = "#waiting:download/giftSystem";
-      
-      public static const DOWNLOAD_GAMERESTRICTIONS:String = "#waiting:download/gameRestrictions";
+      public static const DOWNLOAD_COMMON:String = "#waiting:download/common";
       
       public static const UPDATINGSKILLWINDOW:String = "#waiting:updatingSkillWindow";
       
@@ -328,8 +310,6 @@ package
       public static const PUTRESOURCES:String = "#waiting:putResources";
       
       public static const ACHIVEMENTS20:String = "#waiting:achivements20";
-      
-      public static const DOWNLOAD_ACHIEVEMENTS20:String = "#waiting:download/achievements20";
       
       public static const EASYTANKEQUIPAPPLY:String = "#waiting:easyTankEquipApply";
        

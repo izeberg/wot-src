@@ -84,14 +84,6 @@ class _ClanCache(object):
     def onDisconnected(self):
         self.__stopProviders(withClear=True)
 
-    @property
-    def waitForSync(self):
-        return self.__waitForSync
-
-    @adisp_async
-    def update(self, diff=None, callback=None):
-        self.__invalidateData(diff, callback)
-
     def clear(self):
         self.__stopProviders()
 
@@ -179,16 +171,6 @@ class _ClanCache(object):
         return self.__providers.get(ProviderNames.CLAN_SUPPLY)
 
     @adisp_async
-    @adisp_process
-    def getClanEmblemID(self, callback):
-        clanEmblem = None
-        if self.isInClan:
-            tID = 'clanInfo' + BigWorld.player().name
-            clanEmblem = yield self.getClanEmblemTextureID(self.clanDBID, False, tID)
-        callback(clanEmblem)
-        return
-
-    @adisp_async
     def getFileFromServer(self, clanId, fileType, callback):
         if not BigWorld.player().serverSettings['file_server'].has_key(fileType):
             LOG_ERROR("Invalid server's file type: %s" % fileType)
@@ -226,13 +208,6 @@ class _ClanCache(object):
              self.__class__.__name__, code2str(resID), resID))
             return callback(value)
         callback(value)
-
-    def _onResync(self):
-        if not self.__waitForSync:
-            self.__invalidateData()
-
-    def __invalidateData(self, diff=None, callback=lambda *args: None):
-        callback(True)
 
     def __registerProvider(self, providerName, providerClazz, args):
         self.__providers[providerName] = providerClazz(*args)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G176_Jagdpanzer_E90/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-2.413893 -1.040691 -4.710154</min>
+		<max>2.342864 2.862972 4.071160</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G176_Jagdpanzer_E90/crash/lod0/Hull</nodefullVisual>
+</root>

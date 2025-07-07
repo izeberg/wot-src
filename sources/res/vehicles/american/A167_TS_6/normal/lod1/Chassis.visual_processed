@@ -1347,10 +1347,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>28</Int>
 					</property>
 					<property>
-						alphaTestEnable
+						dynamicObject
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -1419,10 +1419,10 @@
 					</property>
 					<property>
 						alphaReference
-						<Int>64</Int>
+						<Int>28</Int>
 					</property>
 					<property>
-						alphaTestEnable
+						dynamicObject
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -1436,5 +1436,4 @@
 		<max>1.613441 1.016156 3.597386</max>
 	</boundingBox>
 	<geometrySize>370754</geometrySize>
-	<minUVDensity>0.028060</minUVDensity>
 </root>

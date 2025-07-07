@@ -153,8 +153,9 @@ package net.wg.gui.battle.eventBattle.views.loading
       
       private function updateUIPosition() : void
       {
+         var _loc2_:int = 0;
          var _loc1_:int = App.appWidth;
-         var _loc2_:int = App.appHeight;
+         _loc2_ = App.appHeight;
          var _loc3_:Boolean = _loc1_ >= SMALL_SCREEN_WIDTH && _loc2_ >= SMALL_SCREEN_HEIGHT;
          if(this._introData)
          {

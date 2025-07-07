@@ -62,7 +62,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
          this.anchorSwitchers.mouseEnabled = false;
          this.anchorSwitchers.visible = false;
          addEventListener(CustomizationSheetRendererEvent.ACTION_BTN_CLICK,this.onActionBtnClickHandler);
-         this.elementsControls.addEventListener(CustomizationEvent.ELEMENTS_CONROLS_HIDE,this.onElementsControlHideHandler);
+         this.elementsControls.addEventListener(CustomizationEvent.ELEMENTS_CONTROLS_HIDE,this.onElementsControlHideHandler);
          App.stage.addEventListener(Event.RESIZE,this.onStageResizeHandler);
          this.onStageResizeHandler();
       }
@@ -70,7 +70,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
       override protected function onDispose() : void
       {
          removeEventListener(CustomizationSheetRendererEvent.ACTION_BTN_CLICK,this.onActionBtnClickHandler);
-         this.elementsControls.removeEventListener(CustomizationEvent.ELEMENTS_CONROLS_HIDE,this.onElementsControlHideHandler);
+         this.elementsControls.removeEventListener(CustomizationEvent.ELEMENTS_CONTROLS_HIDE,this.onElementsControlHideHandler);
          App.stage.removeEventListener(Event.RESIZE,this.onStageResizeHandler);
          this.elementsControls.dispose();
          this.elementsControls = null;

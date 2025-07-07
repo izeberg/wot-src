@@ -2986,10 +2986,6 @@ msgstr ""
 "Access to Collectors' vehicles is temporarily unavailable\n"
 "due to maintenance."
 
-msgid "colorFilter/attention"
-msgstr ""
-"Color adjustment is available only when Improved Graphics is selected."
-
 msgid "colorFilter/body"
 msgstr ""
 "In this section, you can select one of the preset filters or manually "
@@ -3432,6 +3428,9 @@ msgstr "Emblems"
 msgid "customization/storage/filters/paints/title"
 msgstr "Paints"
 
+msgid "customization/storage/filters/statTrackers/title"
+msgstr "Stat Trackers"
+
 msgid "customization/storage/filters/style/title"
 msgstr "Styles"
 
@@ -3475,6 +3474,9 @@ msgid "customization/tabs/projectionDecal/body"
 msgstr ""
 "Decals are applied to several vehicles modules and add individuality to a "
 "particular vehicle."
+
+msgid "customization/tabs/statTracker/body"
+msgstr "Stat Trackers display a key statistic on your vehicle."
 
 msgid "customization/tabs/uncustomStyle/body"
 msgstr "3D styles give specific vehicles a new look with intricate details."
@@ -5346,10 +5348,8 @@ msgstr "%(rank)s rank achieved"
 
 msgid "gamma/attention"
 msgstr ""
-"Gamma settings are not available in windowed mode with\n"
-"standard graphics quality (the Details option).\n"
-"In windowed mode, current operating system\n"
-"settings are used."
+"Gamma settings are not available in windowed mode. In windowed mode, the "
+"current operating system settings are applied."
 
 msgid "gamma/body"
 msgstr ""
@@ -8172,6 +8172,23 @@ msgstr "Recruitment"
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "Zero Perks"
 
+msgid "notrecruitedtankman/frontman/desc"
+msgstr ""
+"Name's Marshall Gunn—frontman turned tank commander. I lit up stages, burned"
+" bridges, and woke up in warzones long before I ever saw a battlefield. "
+"Lived hard and crashed harder until life on the road damn near swallowed me "
+"whole. When the band split and the music faded, I swapped my six-string for "
+"sixty tons of heavy metal. No more cheering crowds or sold-out stadiums—just"
+" mayhem and smoke, followed by a silence that's loud enough to drown out the"
+" demons of my past. If the devil wants his due, he knows exactly where to "
+"find me."
+
+msgid "notrecruitedtankman/frontman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/frontman/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/howToGet"
 msgstr "How to receive:"
 
@@ -9914,6 +9931,23 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp17_1/label"
 msgstr "Battle Pass Season XVII"
 
+msgid "notrecruitedtankman/tankmen_bp17_10/desc"
+msgstr ""
+"A brilliant anthropologist and one of Lara's few intellectual equals, Amanda"
+" Evert was one of her closest friends during their university days—until a "
+"mysterious, tragic event in Peru changed everything. Now, shaped by "
+"resentment and a lingering sense of betrayal, Amanda has become both a rival"
+" and an uneasy counterpart to Lara. Her fascination with the mystical, the "
+"unexplained, and ancient secrets has grown into an obsession—one that often "
+"puts her at odds with Lara. Though their paths frequently clash, they remain"
+" bonded by their shared past—and their relentless search for truth."
+
+msgid "notrecruitedtankman/tankmen_bp17_10/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_10/label"
+msgstr "Battle Pass: Tomb Raider"
+
 msgid "notrecruitedtankman/tankmen_bp17_2/desc"
 msgstr ""
 "Angus William Buchanan—better known as \"Cannon\" for short—may just be "
@@ -9963,6 +9997,87 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp17_4/label"
 msgstr "Battle Pass Season XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/desc"
+msgstr ""
+"Now you see him, now you're dead. Duke is here, and damn, is he looking "
+"good! He needs no introduction, but just in case you’ve been living under a "
+"rock—meet the world’s greatest action hero, live and uncensored. He’s faced "
+"the meanest foes, conquered the deadliest threats, and always emerged "
+"victorious. Now he’s back—to kick ass, dominate the battlefield, and save "
+"Earth once again. When Duke's around, a few things are guaranteed: big guns,"
+" bigger explosions, and all-out destruction. Hail to the king, baby!"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/label"
+msgstr "Battle Pass: Duke Nukem"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/desc"
+msgstr ""
+"An evil cyborg with an army of loyal Techbots to do his bidding, Dr. Proton "
+"is Duke's arch-nemesis—and mankind's greatest threat. Once a brilliant "
+"robotics researcher, excessive radiation exposure shattered his mind and "
+"twisted his genius into madness. Now, consumed by a thirst for total "
+"domination, the Dr. is hell-bent on reshaping the world in his image. Deep "
+"in his underground lair, he plots his ultimate victory—and only Duke stands "
+"between him and the annihilation of humanity."
+
+msgid "notrecruitedtankman/tankmen_bp17_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/label"
+msgstr "Battle Pass: Duke Nukem"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/desc"
+msgstr ""
+"Duke may go where he pleases—and please where he goes—but if there's one "
+"person he knows he can count on when things get hot, it's General Graves. A "
+"seasoned professional with a hardened, no-nonsense demeanor, the General has"
+" a plan for every alien invasion. With years of fighting existential threats"
+" in the Earth Defense Force under his belt, he's armed with unmatched "
+"tactical acumen—and the intel Duke needs to get the job done. Together, they"
+" make sure the bad guys never stand a chance."
+
+msgid "notrecruitedtankman/tankmen_bp17_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/label"
+msgstr "Battle Pass: Duke Nukem"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/desc"
+msgstr ""
+"Tomb Raider, relic hunter, and adventure icon, Lara Croft is an intrepid "
+"explorer who believes that the extraordinary lies in what we do, not who we "
+"are. Heiress to the Croft legacy, she found herself drawn to the allure of "
+"the unknown, opting for a life of adventure far beyond the confines of her "
+"high-society upbringing. While Lara carries herself with grace and poise, "
+"mistake her good manners and charisma for weakness at your peril. Fearless "
+"and tenacious, she's no stranger to a hard-fought battle—and can disarm foes"
+" just as easily with her razor-sharp wit as with her combat skills."
+
+msgid "notrecruitedtankman/tankmen_bp17_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/label"
+msgstr "Battle Pass: Tomb Raider"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/desc"
+msgstr ""
+"A sailor and cook with a big appetite and an even bigger heart, Jonah Maiava"
+" is Lara's closest friend and most trusted confidant. His thoughtful, "
+"introspective nature helps keep Lara grounded when her drive pushes her to "
+"the edge—while his protection instincts and calm demeanor make him a "
+"steadfast companion on even the most perilous expeditions. A true gentle "
+"giant with a kind soul, Jonah knows Lara better than anyone else and remains"
+" utterly dedicated to his best friend—no matter what the stakes."
+
+msgid "notrecruitedtankman/tankmen_bp17_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/label"
+msgstr "Battle Pass: Tomb Raider"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -12896,6 +13011,28 @@ msgstr ""
 msgid "showVehModelsOnMap/header"
 msgstr "Expanded Minimap Features"
 
+msgid "skill/name/brotherhood"
+msgstr "Brothers in Arms"
+
+msgid "skill/name/commander_sixthSense"
+msgstr "Sixth Sense"
+
+msgid "skill/newPerk/perk/text"
+msgstr ""
+"The total amount of XP required is reduced because this crew member has a "
+"zero perk."
+
+msgid "skill/newPerk/perk/title"
+msgstr "Perk Available for Training"
+
+msgid "skill/newPerk/zeroPerk/text"
+msgstr ""
+"Zero perks are always placed in the first slot, even when multiple perks are"
+" selected at once."
+
+msgid "skill/newPerk/zeroPerk/title"
+msgstr "Zero Perk Available for Training"
+
 msgid "skill/untrained/additional"
 msgstr ""
 "Retrain the crew member for this vehicle to restore all perks and improve "
@@ -14455,6 +14592,9 @@ msgstr "Decal %(value)s"
 
 msgid "vehiclePreview/boxTooltip/shell/header"
 msgstr "Shell %(value)s"
+
+msgid "vehiclePreview/boxTooltip/statTracker/header"
+msgstr "%(value)s"
 
 msgid "vehiclePreview/boxTooltip/style/header"
 msgstr "%(value)s Style"

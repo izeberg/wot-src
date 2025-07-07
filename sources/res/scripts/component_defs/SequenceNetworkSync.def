@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<Implements>
+		<Interface>ReplicableComponent</Interface>
+	</Implements>
 	<Properties>
 		<syncTime>
 			<Type>FLOAT</Type>

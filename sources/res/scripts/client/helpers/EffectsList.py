@@ -1245,26 +1245,40 @@ class _LightEffectDesc(_EffectDesc):
         if not _ALLOW_DYNAMIC_LIGHTS:
             return
         else:
+            if elem['isDynCollision']:
+                self.delete(elem, EFFECT_DELETE_REASON.FORCE_DELETE)
+                return
             nodePos = self._nodeName
             if elem['newPos'] is not None:
                 nodePos = string.split(elem['newPos'][0], '/') if elem['newPos'][0] else []
-            elem['model'] = model
-            elem['node'] = _findTargetNode(model, nodePos)
+            node = _findTargetNode(model, nodePos)
+            elem['source'] = node.actualNode
             if elem['light'] is not None:
-                elem['light'].source = elem['node'].actualNode
+                elem['light'].source = elem['source']
             return
 
     def create(self, model, effects, args):
         if not _ALLOW_DYNAMIC_LIGHTS:
             return
         else:
-            elem = {}
-            elem['newPos'] = args.get('position', None)
-            nodePos = self._nodeName
-            if elem['newPos'] is not None:
-                nodePos = string.split(elem['newPos'][0], '/') if elem['newPos'][0] else []
-            elem['model'] = model
-            elem['node'] = _findTargetNode(model, nodePos)
+            elem = dict()
+            elem['isDynCollision'] = args.get('isDynCollision', False)
+            if elem['isDynCollision']:
+                componentIdx = args.get('componentIdx')
+                entity_id = args.get('entity_id')
+                if componentIdx is None or entity_id is None:
+                    return
+                provider = _getDynCollisionTransformProvider(entity_id, componentIdx)
+                if not provider:
+                    return
+                elem['source'] = provider
+            else:
+                elem['newPos'] = args.get('position', None)
+                nodePos = self._nodeName
+                if elem['newPos'] is not None:
+                    nodePos = string.split(elem['newPos'][0], '/') if elem['newPos'][0] else []
+                node = _findTargetNode(model, nodePos)
+                elem['source'] = node.actualNode
             elem['typeDesc'] = self
             elem['light'] = None
             if not IS_EDITOR:
@@ -1292,7 +1306,7 @@ class _LightEffectDesc(_EffectDesc):
         light.outerRadius = self._outerRadius
         light.castShadows = self._castShadows
         light.offset = self._offset
-        light.source = elem['node'].actualNode
+        light.source = elem['source']
         light.colorAnimator = colorAnimator
         light.multiplierAnimator = multiplierAnimator
         elem['light'] = light
@@ -1410,6 +1424,17 @@ def __getTransformAlongNormal(localTransform, worldTransform, normal):
     localTransform.postMultiply(invWorldOrient)
     localTransform.translation = originalTranslation
     return localTransform
+
+
+def _getDynCollisionTransformProvider(entityID, componentIDx):
+    vehicle = BigWorld.entity(entityID)
+    if not vehicle:
+        return
+    else:
+        go = vehicle.appearance.collisions.getPartGameObject(componentIDx)
+        if go.isValid():
+            return vehicle.appearance.collisions.getPartTransformProvider(componentIDx)
+        return
 
 
 def _getSurfaceAlignedTransform(model, nodeName, localTransform, precalculatedNormal=None):

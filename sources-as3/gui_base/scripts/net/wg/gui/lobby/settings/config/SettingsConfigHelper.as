@@ -221,6 +221,8 @@ package net.wg.gui.lobby.settings.config
       
       public static const RENDER_PIPELINE:String = "RENDER_PIPELINE";
       
+      public static const RENDER_PIPELINE_QUALITY:String = "RENDER_PIPELINE_QUALITY";
+      
       public static const CUSTOM:String = "CUSTOM";
       
       public static const GRAPHIC_QUALITY:String = "graphicsQuality";

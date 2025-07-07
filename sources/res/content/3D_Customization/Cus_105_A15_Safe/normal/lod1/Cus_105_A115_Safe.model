@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_105_A15_Safe/normal/lod1/Cus_105_A115_Safe</nodefullVisual>
+	<parent>content/3D_Customization/Cus_105_A15_Safe/normal/lod2/Cus_105_A115_Safe</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.526339 -0.000000 -0.452550</min>
+		<max>0.038100 0.503092 0.468021</max>
+	</visibilityBox>
+</root>

@@ -1,17 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Railway/hd_rw_UNI_403_LoadingWinch/normal/lod1/hd_rw_UNI_403_LoadingWinch</nodefullVisual>
 	<parent>content/Railway/hd_rw_UNI_403_LoadingWinch/normal/lod2/hd_rw_UNI_403_LoadingWinch</parent>
-	<extent>64</extent>
+	<extent>64.000000</extent>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-2.96756 -0.0092392 -4.43031
-			<!--BW_String-->
-		</min>
-		<max>
-			2.82729 4.76818 3.12677
-			<!--BW_String-->
-		</max>
+		<min>-2.967560 -0.009239 -4.430310</min>
+		<max>2.827290 4.768180 3.126770</max>
 	</visibilityBox>
+	<nodefullVisual>content/Railway/hd_rw_UNI_403_LoadingWinch/normal/lod1/hd_rw_UNI_403_LoadingWinch</nodefullVisual>
 </root>

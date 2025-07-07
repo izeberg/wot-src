@@ -32,7 +32,6 @@ package net.wg.gui.notification
       
       override protected function configUI() : void
       {
-         var _loc2_:Sprite = null;
          super.configUI();
          var _loc1_:ScrollConfig = new ScrollConfig();
          _loc1_.normalizeWheelScrollDelta = false;
@@ -41,7 +40,7 @@ package net.wg.gui.notification
          cropContent = true;
          useTimer = true;
          touchScrollEnabled = false;
-         _loc2_ = new Sprite();
+         var _loc2_:Sprite = new Sprite();
          hitArea = _loc2_;
          addChild(_loc2_);
          this._viewPort = new VerticalListViewPort();

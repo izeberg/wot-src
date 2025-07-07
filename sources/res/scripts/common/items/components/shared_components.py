@@ -1,3 +1,4 @@
+import Math
 from collections import namedtuple
 from constants import IS_CLIENT, IS_WEB, IS_EDITOR, IS_BOT
 from items.components import component_constants, c11n_constants
@@ -25,7 +26,7 @@ MaterialInfo = reflectedNamedTuple('MaterialInfo', ('kind', 'armor', 'extra', 'm
                                                     'vehicleDamageFactor', 'useArmorHomogenization',
                                                     'useHitAngle', 'useAntifragmentationLining',
                                                     'mayRicochet', 'collideOnceOnly',
-                                                    'checkCaliberForRichet', 'checkCaliberForHitAngleNorm',
+                                                    'checkCaliberForRicochet', 'checkCaliberForHitAngleNorm',
                                                     'damageKind', 'chanceToHitByProjectile',
                                                     'chanceToHitByExplosion', 'continueTraceIfNoHit'))
 DEFAULT_MATERIAL_INFO = MaterialInfo(0, 0, None, False, 0.0, False, False, False, False, False, False, False, 0, 0.0, 0.0, False)
@@ -77,9 +78,10 @@ class ProjectionDecalSlotDescription(object):
 class AttachmentSlotDescription(object):
     __metaclass__ = ReflectionMetaclass
     __slots__ = ('type', 'slotId', 'position', 'rotation', 'scale', 'attachNode', 'hiddenForUser',
-                 'applyType', 'size', 'hangerId', 'hangerRotation')
+                 'applyType', 'size', 'hangerId', 'hangerRotation', 'compatibleModels')
 
-    def __init__(self, slotType='', slotId=0, position=None, rotation=None, scale=None, attachNode=None, hiddenForUser=False, applyType='', size='', hangerId=0, hangerRotation=None):
+    def __init__(self, slotType='', slotId=0, position=None, rotation=None, scale=None, attachNode=None, hiddenForUser=False, applyType='', size='', hangerId=0, hangerRotation=None, compatibleModels=(
+ c11n_constants.SLOT_DEFAULT_ALLOWED_MODEL,)):
         self.type = slotType
         self.slotId = slotId
         self.position = position
@@ -91,6 +93,7 @@ class AttachmentSlotDescription(object):
         self.size = size
         self.hangerId = hangerId
         self.hangerRotation = hangerRotation
+        self.compatibleModels = compatibleModels
 
     @property
     def scaleFactorId(self):
@@ -217,14 +220,16 @@ class I18nComponent(object):
 
 
 class I18nExposedComponent(I18nComponent):
-    __slots__ = ('__userKey', '__descriptionKey', '__longDescriptionSpecialKey', '__name')
+    __slots__ = ('__userKey', '__descriptionKey', '__longDescriptionSpecialKey', '__name',
+                 '__shortDescriptionSpecialKey')
 
-    def __init__(self, userStringKey, descriptionKey, longDescriptionSpecialKey='', name=''):
-        super(I18nExposedComponent, self).__init__(userStringKey, descriptionKey, longDescriptionSpecialKey=longDescriptionSpecialKey)
+    def __init__(self, userStringKey, descriptionKey, longDescriptionSpecialKey='', name='', shortDescriptionSpecialKey=''):
+        super(I18nExposedComponent, self).__init__(userStringKey, descriptionKey, longDescriptionSpecialKey=longDescriptionSpecialKey, shortDescriptionSpecialKey=shortDescriptionSpecialKey)
         self.__userKey = userStringKey
         self.__descriptionKey = descriptionKey
         self.__longDescriptionSpecialKey = longDescriptionSpecialKey
         self.__name = name
+        self.__shortDescriptionSpecialKey = shortDescriptionSpecialKey
 
     @property
     def userKey(self):
@@ -241,6 +246,10 @@ class I18nExposedComponent(I18nComponent):
     @property
     def name(self):
         return self.__name
+
+    @property
+    def shortDescriptionSpecialKey(self):
+        return self.__shortDescriptionSpecialKey
 
 
 class DeviceHealth(object):
@@ -333,3 +342,6 @@ class RocketAccelerationParams(object):
 
     def __repr__(self):
         return ('deployTime={}, reloadTime={}, reuseCount={}, duration={}, impulse={}, modifiers={}').format(self.deployTime, self.reloadTime, self.reuseCount, self.duration, self.impulse, self.modifiers)
+
+
+ObjectSlot = reflectedNamedTuple('ObjectSlot', ('name', 'type', 'position', 'rotation'))

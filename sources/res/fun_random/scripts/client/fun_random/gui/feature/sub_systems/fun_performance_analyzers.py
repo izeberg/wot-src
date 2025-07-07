@@ -1,5 +1,5 @@
 import BigWorld
-from gui.shared.utils.graphics import isRendererPipelineDeferred
+from gui.shared.utils.graphics import isLowPreset
 
 class PerformanceGroup(object):
     LOW_RISK = 0
@@ -15,7 +15,7 @@ class IPerformanceAlertHandler(object):
 
 class GraphicsPresetAnalyzerHandler(IPerformanceAlertHandler):
     __ALERT_LEVELS_KEYS = {PerformanceGroup.HIGH_RISK: [
-                                  'MIN', 'LOW'], 
+                                  'LOW'], 
        PerformanceGroup.MEDIUM_RISK: [
                                     'MEDIUM']}
 
@@ -33,7 +33,7 @@ class GraphicsPresetAnalyzerHandler(IPerformanceAlertHandler):
 class RenderPipelineAnalyzerHandler(IPerformanceAlertHandler):
 
     def analyze(self):
-        if not isRendererPipelineDeferred():
+        if isLowPreset():
             return PerformanceGroup.MEDIUM_RISK
         return PerformanceGroup.LOW_RISK
 

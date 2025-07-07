@@ -1,6 +1,5 @@
 from collections import namedtuple
 import BigWorld
-from adisp import adisp_async
 from constants import ARENA_BONUS_TYPE
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from helpers import dependency
@@ -182,8 +181,7 @@ class SessionStatsRequester(AbstractSyncDataRequester, ISessionStatsRequester):
     def getAccountWtr(self):
         return self.getCacheValue('wtr', {}).get('wtr_general', None)
 
-    @adisp_async
-    def _requestCache(self, callback):
+    def _requestCache(self, callback=None):
         BigWorld.player().sessionStats.getCache(lambda res_id, value: self._response(res_id, value, callback))
 
     def __getStats(self, arenaType, statsKind=_StatKind.DAY_STAT, isVehStats=False, vehicleId=None):
