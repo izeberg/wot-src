@@ -3959,6 +3959,1952 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>SequenceComponent</type>
+			<version>3</version>
+			<component>
+				<UUID>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>pauseOnEnd</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>alwaysEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>duration</name>
+						<value>15</value>
+					</property>
+					<property>
+						<name>tracks</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>019900ad-2405-35c4-99e7-cc1b762b8bd8</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>SequenceComponent</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>10</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>10</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>10</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>15</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>32f51f30-24f4-38f8-bd6a-0fbce36223d1</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.05
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>1499cf4a-b13c-341e-a2cb-8770a4d3ba70</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>SequenceComponent</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>15</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>15</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>eb864a09-0fc3-4c42-be2f-8be9af4672a7</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											14.9
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>a5dc564f-c483-4148-8872-66d83d5c093c</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.6
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>257165a0-9b62-3e46-bbf8-cabd20f1ecd9</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.85
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>8ea468b0-3639-325a-9142-29c99463dfca</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>67d227e4-2b19-4b02-a59a-f1884e36e6db</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											14.9
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>19824a6f-f264-4226-9ff8-d54b7ae5b2ff</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>7</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>
+											14.9
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>019900ad-2405-35c4-99e7-cc1b762b8bd8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>pauseOnEnd</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>alwaysEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>duration</name>
+						<value>10</value>
+					</property>
+					<property>
+						<name>tracks</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>eb1164d6-1b2e-4fe9-bab9-24b8f3baeae7</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.15
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>03fd5d91-3ddb-4ee5-96ef-93ec949d99b5</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.25
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>f529d244-a27b-44f9-a212-bc02ae138e71</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											1.85
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>1630987b-a2b4-44b1-8756-484cf52a8069</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>eaa22bb2-bbf5-46fa-b683-b3186f0cfc7d</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>6311816f-646d-4cb7-84cf-7c323f78a34c</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.55
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>fa9175a1-096c-4c9c-86a4-0ef4e38726a8</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.35
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>1318fd77-8aa5-43ec-abde-5973f5006b8e</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.075
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>b8028f75-3f80-3bbd-a155-e2b20fbff990</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>39e653e5-91ea-3e51-a311-8e21973b6e83</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.35
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>b0fa5476-470f-3ecc-99d5-511263d70c4e</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.7
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>1499cf4a-b13c-341e-a2cb-8770a4d3ba70</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>loop</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>pauseOnEnd</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>alwaysEnabled</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>duration</name>
+						<value>15</value>
+					</property>
+					<property>
+						<name>tracks</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>243bc322-a9b0-31a4-9dc1-abfedb9671b1</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											11.63
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>2</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>2</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>2</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			3.37
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>688dd5a9-dc5f-4a50-8601-d4081a53216d</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>0eb970a9-9a46-49b7-bcad-9a3586b47746</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>2f42cc96-e88e-4866-a5c0-52e1e89cdf23</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>66d6893e-78fb-44a8-adec-b1762672e85b</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>a20af5a9-65db-432f-9c93-8ae0d9e2bde7</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.55
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>2fa7639c-982e-40f6-93f8-8112723a406e</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>e60aa133-6706-3270-abba-f80bb3863ac4</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>2</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>2</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>2</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			12.8
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>dcdd6c2e-d2bf-4ef2-9f02-724e097a3752</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>10</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>5fabfaeb-4285-3853-86e5-0f0e34597748</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>1c4647dc-93f8-3373-a13e-aeaa39634165</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection/>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>b4f09812-54b1-3b41-a91a-3219a313ad0f</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											0.85
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>
+																			0.5
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			0.5
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>
+																			0.5
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			14.15
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>ea02a2c4-8946-3cd4-a4e8-8846bd459744</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			12.8
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>f0e81178-b58e-3740-8221-f6934b50001d</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			12.8
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>object</name>
+										<link>d104ce64-8903-3fdc-b062-7b830a43e856</link>
+									</property>
+									<property>
+										<name>start</name>
+										<value>
+											2.2
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>end</name>
+										<value>15</value>
+									</property>
+									<property>
+										<name>parameters</name>
+										<collection>
+											<item>
+												<object>
+													<property>
+														<name>component</name>
+														<value>Animator</value>
+													</property>
+													<property>
+														<name>property</name>
+														<value>time</value>
+													</property>
+													<property>
+														<name>keys</name>
+														<collection>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>0</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>
+																			12.8
+																			<!--BW_String-->
+																		</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+														</collection>
+													</property>
+												</object>
+											</item>
+										</collection>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>Transform</type>
 			<version>1</version>
 			<component>
@@ -4300,7 +6246,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.58077 -0.835724 0.99338
+							1.58078 -0.835724 0.99338
 							<!--BW_String-->
 						</value>
 					</property>
@@ -4489,7 +6435,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							1.60935 -0.0976787 -0.601522
+							1.60935 -0.0976789 -0.601522
 							<!--BW_String-->
 						</value>
 					</property>
@@ -10788,912 +12734,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>SequenceComponent</type>
-			<version>3</version>
-			<component>
-				<UUID>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>pauseOnEnd</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>alwaysEnabled</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>duration</name>
-						<value>15</value>
-					</property>
-					<property>
-						<name>tracks</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>019900ad-2405-35c4-99e7-cc1b762b8bd8</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>32f51f30-24f4-38f8-bd6a-0fbce36223d1</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.05
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>1499cf4a-b13c-341e-a2cb-8770a4d3ba70</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>eb864a09-0fc3-4c42-be2f-8be9af4672a7</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>
-											14.9
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>a5dc564f-c483-4148-8872-66d83d5c093c</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.6
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>257165a0-9b62-3e46-bbf8-cabd20f1ecd9</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.85
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>8ea468b0-3639-325a-9142-29c99463dfca</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.1
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>67d227e4-2b19-4b02-a59a-f1884e36e6db</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>
-											14.9
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>19824a6f-f264-4226-9ff8-d54b7ae5b2ff</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>7</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>
-											14.9
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>019900ad-2405-35c4-99e7-cc1b762b8bd8</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>pauseOnEnd</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>alwaysEnabled</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>duration</name>
-						<value>10</value>
-					</property>
-					<property>
-						<name>tracks</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>eb1164d6-1b2e-4fe9-bab9-24b8f3baeae7</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.15
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>03fd5d91-3ddb-4ee5-96ef-93ec949d99b5</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.25
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>f529d244-a27b-44f9-a212-bc02ae138e71</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											1.85
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>1630987b-a2b4-44b1-8756-484cf52a8069</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>2</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>eaa22bb2-bbf5-46fa-b683-b3186f0cfc7d</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>6311816f-646d-4cb7-84cf-7c323f78a34c</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.55
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>fa9175a1-096c-4c9c-86a4-0ef4e38726a8</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.35
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>1318fd77-8aa5-43ec-abde-5973f5006b8e</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.075
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>b8028f75-3f80-3bbd-a155-e2b20fbff990</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>2</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>39e653e5-91ea-3e51-a311-8e21973b6e83</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.35
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>b0fa5476-470f-3ecc-99d5-511263d70c4e</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.7
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>1499cf4a-b13c-341e-a2cb-8770a4d3ba70</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>loop</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>pauseOnEnd</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>alwaysEnabled</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>duration</name>
-						<value>15</value>
-					</property>
-					<property>
-						<name>tracks</name>
-						<collection>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>243bc322-a9b0-31a4-9dc1-abfedb9671b1</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											11.63
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>688dd5a9-dc5f-4a50-8601-d4081a53216d</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.1
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>0eb970a9-9a46-49b7-bcad-9a3586b47746</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>2f42cc96-e88e-4866-a5c0-52e1e89cdf23</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>66d6893e-78fb-44a8-adec-b1762672e85b</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.1
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>a20af5a9-65db-432f-9c93-8ae0d9e2bde7</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.55
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>2fa7639c-982e-40f6-93f8-8112723a406e</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>3</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>e60aa133-6706-3270-abba-f80bb3863ac4</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>dcdd6c2e-d2bf-4ef2-9f02-724e097a3752</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>10</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>5fabfaeb-4285-3853-86e5-0f0e34597748</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>1c4647dc-93f8-3373-a13e-aeaa39634165</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>0</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>b4f09812-54b1-3b41-a91a-3219a313ad0f</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											0.85
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>ea02a2c4-8946-3cd4-a4e8-8846bd459744</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>f0e81178-b58e-3740-8221-f6934b50001d</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-							<item>
-								<object>
-									<property>
-										<name>object</name>
-										<link>d104ce64-8903-3fdc-b062-7b830a43e856</link>
-									</property>
-									<property>
-										<name>start</name>
-										<value>
-											2.2
-											<!--BW_String-->
-										</value>
-									</property>
-									<property>
-										<name>end</name>
-										<value>15</value>
-									</property>
-									<property>
-										<name>parameters</name>
-										<collection/>
-									</property>
-								</object>
-							</item>
-						</collection>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>AnimationTimeSyncComponent</type>
-			<version>1</version>
-			<component>
-				<UUID>e60aa133-6706-3270-abba-f80bb3863ac4</UUID>
-				<flags>35</flags>
-			</component>
-			<component>
-				<UUID>b4f09812-54b1-3b41-a91a-3219a313ad0f</UUID>
-				<flags>35</flags>
-			</component>
-			<component>
-				<UUID>243bc322-a9b0-31a4-9dc1-abfedb9671b1</UUID>
-				<flags>35</flags>
-			</component>
-			<component>
-				<UUID>ea02a2c4-8946-3cd4-a4e8-8846bd459744</UUID>
-				<flags>35</flags>
-			</component>
-			<component>
-				<UUID>f0e81178-b58e-3740-8221-f6934b50001d</UUID>
-				<flags>35</flags>
-			</component>
-			<component>
-				<UUID>d104ce64-8903-3fdc-b062-7b830a43e856</UUID>
-				<flags>35</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>NetworkComponent</type>
 			<version>1</version>
 			<component>
@@ -11719,14 +12759,6 @@
 					<property>
 						<name>filterType</name>
 						<value>0</value>
-					</property>
-					<property>
-						<name>lagDelay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>extrapolate</name>
-						<value>1</value>
 					</property>
 					<property>
 						<name>detailed</name>
@@ -12353,11 +13385,11 @@
 												<value>((       1,       0,       0,       0), (       0, 7.60164,2.84217e-14,       0), (       0,       0, 20.8723,       0), ( 18.4825, 2.59988,-0.96936,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>((       1,       0,       0,       0), (       0, 7.60164,2.84217e-14,       0), (       0,       0, 20.8723,       0), ( 18.4825, 2.59988,-0.96936,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>((       1,       0,       0,       0), (       0, 7.60164,2.84217e-14,       0), (       0,       0, 20.8723,       0), ( 18.4825, 2.59988,-0.96936,       1))</value>
 											</property>
 										</object>
@@ -12378,11 +13410,11 @@
 												<value>(( 12.3926,1.47977e-07, -3.1425,       0), (-1.37028e-07,  7.4404,-1.90017e-07,       0), (0.367191,4.37433e-08, 1.44804,       0), ( 15.0312,  2.6647, 11.4458,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 12.3926,1.47977e-07, -3.1425,       0), (-1.37028e-07,  7.4404,-1.90017e-07,       0), (0.367191,4.37433e-08, 1.44804,       0), ( 15.0312,  2.6647, 11.4458,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 12.3926,1.47977e-07, -3.1425,       0), (-1.37028e-07,  7.4404,-1.90017e-07,       0), (0.367191,4.37433e-08, 1.44804,       0), ( 15.0312,  2.6647, 11.4458,       1))</value>
 											</property>
 										</object>
@@ -12403,11 +13435,11 @@
 												<value>(( 7.89457,2.07067e-06,  1.8869,       0), (-2.59835e-06, 7.47564,2.66748e-06,       0), (-1.24326,-2.28819e-06, 5.20165,       0), ( 6.44266, 2.49754, 9.97755,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 7.89457,2.07067e-06,  1.8869,       0), (-2.59835e-06, 7.47564,2.66748e-06,       0), (-1.24326,-2.28819e-06, 5.20165,       0), ( 6.44266, 2.49754, 9.97755,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 7.89457,2.07067e-06,  1.8869,       0), (-2.59835e-06, 7.47564,2.66748e-06,       0), (-1.24326,-2.28819e-06, 5.20165,       0), ( 6.44266, 2.49754, 9.97755,       1))</value>
 											</property>
 										</object>
@@ -12428,11 +13460,11 @@
 												<value>(( 8.06774,-5.91597e-07, 6.03151,       0), (8.19006e-08, 5.71564,4.51065e-07,       0), (-1.43386,-1.30812e-07, 1.91792,       0), ( 1.22986, 3.00122,  6.2776,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 8.06774,-5.91597e-07, 6.03151,       0), (8.19006e-08, 5.71564,4.51065e-07,       0), (-1.43386,-1.30812e-07, 1.91792,       0), ( 1.22986, 3.00122,  6.2776,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 8.06774,-5.91597e-07, 6.03151,       0), (8.19006e-08, 5.71564,4.51065e-07,       0), (-1.43386,-1.30812e-07, 1.91792,       0), ( 1.22986, 3.00122,  6.2776,       1))</value>
 											</property>
 										</object>
@@ -12453,11 +13485,11 @@
 												<value>((  4.8813,-2.08316e-06,-7.31085,       0), (1.19567e-06, 7.73172,-1.40476e-06,       0), ( 1.42851,-4.7621e-08,0.953785,       0), (-3.84387,  2.4611, 7.00768,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>((  4.8813,-2.08316e-06,-7.31085,       0), (1.19567e-06, 7.73172,-1.40476e-06,       0), ( 1.42851,-4.7621e-08,0.953785,       0), (-3.84387,  2.4611, 7.00768,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>((  4.8813,-2.08316e-06,-7.31085,       0), (1.19567e-06, 7.73172,-1.40476e-06,       0), ( 1.42851,-4.7621e-08,0.953785,       0), (-3.84387,  2.4611, 7.00768,       1))</value>
 											</property>
 										</object>
@@ -12478,11 +13510,11 @@
 												<value>(( 11.7919,4.95863e-06, 1.76966,       0), (-3.52946e-06, 10.4658,-5.80741e-06,       0), (-0.288858,9.70623e-07, 1.92476,       0), (-11.2487,0.455602, 9.29697,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 11.7919,4.95863e-06, 1.76966,       0), (-3.52946e-06, 10.4658,-5.80741e-06,       0), (-0.288858,9.70623e-07, 1.92476,       0), (-11.2487,0.455602, 9.29697,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 11.7919,4.95863e-06, 1.76966,       0), (-3.52946e-06, 10.4658,-5.80741e-06,       0), (-0.288858,9.70623e-07, 1.92476,       0), (-11.2487,0.455602, 9.29697,       1))</value>
 											</property>
 										</object>
@@ -12503,11 +13535,11 @@
 												<value>(( 1.95714,2.50813e-08,0.136471,       0), (-6.35226e-08, 5.65628,-1.28559e-07,       0), (-0.993397,3.12642e-07, 14.2464,       0), (-12.2703, 1.32022,-10.1535,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 1.95714,2.50813e-08,0.136471,       0), (-6.35226e-08, 5.65628,-1.28559e-07,       0), (-0.993397,3.12642e-07, 14.2464,       0), (-12.2703, 1.32022,-10.1535,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 1.95714,2.50813e-08,0.136471,       0), (-6.35226e-08, 5.65628,-1.28559e-07,       0), (-0.993397,3.12642e-07, 14.2464,       0), (-12.2703, 1.32022,-10.1535,       1))</value>
 											</property>
 										</object>
@@ -12528,11 +13560,11 @@
 												<value>(( 2.47034,-5.17892e-08,-0.844042,       0), (4.44718e-07, 4.75395,1.0099e-06,       0), ( 2.45121,-1.75334e-06, 7.17418,       0), (-11.2092, 1.43028,-0.760696,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>(( 2.47034,-5.17892e-08,-0.844042,       0), (4.44718e-07, 4.75395,1.0099e-06,       0), ( 2.45121,-1.75334e-06, 7.17418,       0), (-11.2092, 1.43028,-0.760696,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>(( 2.47034,-5.17892e-08,-0.844042,       0), (4.44718e-07, 4.75395,1.0099e-06,       0), ( 2.45121,-1.75334e-06, 7.17418,       0), (-11.2092, 1.43028,-0.760696,       1))</value>
 											</property>
 										</object>
@@ -12553,11 +13585,11 @@
 												<value>((  4.8279,       0,-1.01644e-20,       0), (5.68434e-14, 6.58363,-2.84217e-14,       0), (4.40457e-20,       0, 4.84388,       0), (-13.5417,0.442815, 4.07449,       1))</value>
 											</property>
 											<property>
-												<name>Rotation</name>
+												<name>Size</name>
 												<value>((  4.8279,       0,-1.01644e-20,       0), (5.68434e-14, 6.58363,-2.84217e-14,       0), (4.40457e-20,       0, 4.84388,       0), (-13.5417,0.442815, 4.07449,       1))</value>
 											</property>
 											<property>
-												<name>Size</name>
+												<name>Rotation</name>
 												<value>((  4.8279,       0,-1.01644e-20,       0), (5.68434e-14, 6.58363,-2.84217e-14,       0), (4.40457e-20,       0, 4.84388,       0), (-13.5417,0.442815, 4.07449,       1))</value>
 											</property>
 										</object>
@@ -13006,6 +14038,10 @@
 					<property>
 						<name>Simulation object state</name>
 						<value>1</value>
+					</property>
+					<property>
+						<name>generateVelocities</name>
+						<value>0</value>
 					</property>
 					<property>
 						<name>Is Trigger</name>
@@ -14923,7 +15959,7 @@
 									</property>
 									<property>
 										<name>Auto Start</name>
-										<value>1</value>
+										<value>0</value>
 									</property>
 									<property>
 										<name>Graphics preset</name>
@@ -15016,7 +16052,7 @@
 									</property>
 									<property>
 										<name>Auto Start</name>
-										<value>1</value>
+										<value>0</value>
 									</property>
 									<property>
 										<name>Graphics preset</name>
@@ -15109,7 +16145,7 @@
 									</property>
 									<property>
 										<name>Auto Start</name>
-										<value>1</value>
+										<value>0</value>
 									</property>
 									<property>
 										<name>Graphics preset</name>
@@ -15414,6 +16450,18 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>NavigationHelper</type>
+			<version>2</version>
+			<component>
+				<UUID>1425a808-bbd9-49d0-855c-389f782bcbd1</UUID>
+				<flags>34</flags>
+			</component>
+			<component>
+				<UUID>6303003b-82e0-4172-aeed-818f07f398d5</UUID>
+				<flags>34</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>AIDataPatch</type>
 			<version>2</version>
 			<component>
@@ -15425,18 +16473,6 @@
 						<value>127_bunkerCrash01_ai</value>
 					</property>
 				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>NavigationHelper</type>
-			<version>2</version>
-			<component>
-				<UUID>1425a808-bbd9-49d0-855c-389f782bcbd1</UUID>
-				<flags>34</flags>
-			</component>
-			<component>
-				<UUID>6303003b-82e0-4172-aeed-818f07f398d5</UUID>
-				<flags>34</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
@@ -15460,6 +16496,10 @@
 					</property>
 					<property>
 						<name>deathZoneGUID</name>
+						<value/>
+					</property>
+					<property>
+						<name>dangerMapPatchTag</name>
 						<value/>
 					</property>
 				</config>
@@ -17289,10 +18329,6 @@
 						<link>3e928163-599c-3c7e-b58f-5d7f662b84d0</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17305,10 +18341,6 @@
 					<property>
 						<name>colliders</name>
 						<link>f283f08c-b280-38ed-877c-1157d313fd20</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17325,10 +18357,6 @@
 						<link>9e2d9068-3a48-34ae-b33c-017ff7d91b23</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17341,10 +18369,6 @@
 					<property>
 						<name>colliders</name>
 						<link>2f61fda6-8b84-3a65-a231-d7597285ed06</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17361,10 +18385,6 @@
 						<link>b166105a-65cc-3376-96d9-2efefad11a09</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17377,10 +18397,6 @@
 					<property>
 						<name>colliders</name>
 						<link>cd95ca9b-a972-33d9-bfe3-ffbdf328bfee</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17397,10 +18413,6 @@
 						<link>3b257388-bfff-3703-be69-9bb3c0f491e5</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17413,10 +18425,6 @@
 					<property>
 						<name>colliders</name>
 						<link>73600680-4a96-34ac-8459-6643f07ea2d6</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17433,10 +18441,6 @@
 						<link>01aff99c-88f4-32f5-b488-256f765abd1c</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17449,10 +18453,6 @@
 					<property>
 						<name>colliders</name>
 						<link>5407203e-8fac-3f91-a5bf-44da1e730019</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17469,10 +18469,6 @@
 						<link>3752a35f-690d-3d75-a8f6-047fe9f6131e</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17485,10 +18481,6 @@
 					<property>
 						<name>colliders</name>
 						<link>e60aa133-6706-3270-abba-f80bb3863ac4</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17505,10 +18497,6 @@
 						<link>36a5c1a7-aaa2-3f59-b348-3e54204d2462</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17521,10 +18509,6 @@
 					<property>
 						<name>colliders</name>
 						<link>beb5f58a-cbc9-3c63-a358-704139b96856</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17541,10 +18525,6 @@
 						<link>b4f09812-54b1-3b41-a91a-3219a313ad0f</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17557,10 +18537,6 @@
 					<property>
 						<name>colliders</name>
 						<link>a0bde19d-1659-3da3-81c6-9d46414971ae</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17577,10 +18553,6 @@
 						<link>5fabfaeb-4285-3853-86e5-0f0e34597748</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17593,10 +18565,6 @@
 					<property>
 						<name>colliders</name>
 						<link>243bc322-a9b0-31a4-9dc1-abfedb9671b1</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17613,10 +18581,6 @@
 						<link>70d348b6-84f6-3bbb-b8ca-18ac0129744a</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17629,10 +18593,6 @@
 					<property>
 						<name>colliders</name>
 						<link>18547641-9060-30c6-b0b1-8af2e591ca24</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17649,10 +18609,6 @@
 						<link>ea02a2c4-8946-3cd4-a4e8-8846bd459744</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17665,10 +18621,6 @@
 					<property>
 						<name>colliders</name>
 						<link>f0e81178-b58e-3740-8221-f6934b50001d</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17685,10 +18637,6 @@
 						<link>d104ce64-8903-3fdc-b062-7b830a43e856</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17701,10 +18649,6 @@
 					<property>
 						<name>colliders</name>
 						<link>7663b35f-2d5f-3094-ad44-c699cc455736</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>
@@ -17721,10 +18665,6 @@
 						<link>4471fb4f-7cb2-324c-9ab5-9a160e9cf095</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17739,10 +18679,6 @@
 						<link>da70ec14-b7bf-38dd-83ce-4311f4df8f18</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>6e1e6c3b-3441-411c-a6ae-8a442e8edcbb</link>
 					</property>
@@ -17755,10 +18691,6 @@
 					<property>
 						<name>colliders</name>
 						<link>1cf11dc2-f0c4-35e4-b6f5-523c9e9fa8ac</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>

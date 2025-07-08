@@ -52,6 +52,24 @@
 					</node>
 				</node>
 				<node>
+					<identifier>joint_upper</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 -0.012674 2.562054</row3>
+					</transform>
+					<node>
+						<identifier>joint_upper_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.012674 -2.562054</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
 					<identifier>Gun_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
@@ -61,11 +79,31 @@
 					</transform>
 				</node>
 			</node>
+			<node>
+				<identifier>joint_lower</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.248020 0.615726</row3>
+				</transform>
+				<node>
+					<identifier>joint_lower_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.248020 -0.615726</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Gun_BlendBone</node>
+		<node>joint_upper_BlendBone</node>
+		<node>joint_lower_BlendBone</node>
 		<node>G_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>
@@ -108,5 +146,4 @@
 		<max>0.532080 0.458305 6.636798</max>
 	</boundingBox>
 	<geometrySize>11792</geometrySize>
-	<minUVDensity>0.004020</minUVDensity>
 </root>

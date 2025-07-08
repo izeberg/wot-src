@@ -228,7 +228,6 @@ class EditableStyleMode(CustomMode):
         super(EditableStyleMode, self)._onStop()
 
     def _cancelChanges(self):
-        super(EditableStyleMode, self)._cancelChanges()
         self.__isCanceled = True
 
     @adisp_async

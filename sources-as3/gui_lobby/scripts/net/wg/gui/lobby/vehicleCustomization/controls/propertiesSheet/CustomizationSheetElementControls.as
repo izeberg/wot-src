@@ -145,6 +145,9 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
          this.second = null;
          this.third = null;
          this.fourth = null;
+         this.fifth = null;
+         this.six = null;
+         this.seventh = null;
          super.onDispose();
       }
       
@@ -332,7 +335,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
          if(this._hideElementsAnimationsCount <= 0)
          {
             visible = false;
-            dispatchEvent(new CustomizationEvent(CustomizationEvent.ELEMENTS_CONROLS_HIDE));
+            dispatchEvent(new CustomizationEvent(CustomizationEvent.ELEMENTS_CONTROLS_HIDE));
          }
       }
       

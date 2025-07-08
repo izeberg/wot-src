@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.549251 -0.003183 -0.750625</min>
+		<max>0.085156 0.493244 0.774462</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_106_A15_Cinema_Set/normal/lod1/Cus_106_A15_Cinema_Set</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_106_A15_Cinema_Set/normal/lod0/Cus_106_A15_Cinema_Set</nodefullVisual>
+</root>

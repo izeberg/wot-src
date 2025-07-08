@@ -445,6 +445,8 @@ package
       
       public static const CUSTOMIZATION_ADDED_ATTACHMENT:String = "#system_messages:customization/added/attachment";
       
+      public static const CUSTOMIZATION_ADDED_STATTRACKER:String = "#system_messages:customization/added/statTracker";
+      
       public static const CUSTOMIZATION_ADDED_PAINTVALUE:String = "#system_messages:customization/added/paintValue";
       
       public static const CUSTOMIZATION_ADDED_CAMOUFLAGEVALUE:String = "#system_messages:customization/added/camouflageValue";
@@ -468,6 +470,8 @@ package
       public static const CUSTOMIZATION_ADDED_PERSONALNUMBER_1VALUE:String = "#system_messages:customization/added/personalNumber_1Value";
       
       public static const CUSTOMIZATION_ADDED_ATTACHMENTVALUE:String = "#system_messages:customization/added/attachmentValue";
+      
+      public static const CUSTOMIZATION_ADDED_STATTRACKERVALUE:String = "#system_messages:customization/added/statTrackerValue";
       
       public static const CUSTOMIZATION_REMOVED_PAINT:String = "#system_messages:customization/removed/paint";
       
@@ -493,6 +497,8 @@ package
       
       public static const CUSTOMIZATION_REMOVED_ATTACHMENT:String = "#system_messages:customization/removed/attachment";
       
+      public static const CUSTOMIZATION_REMOVED_STATTRACKER:String = "#system_messages:customization/removed/statTracker";
+      
       public static const CUSTOMIZATION_REMOVED_PAINTVALUE:String = "#system_messages:customization/removed/paintValue";
       
       public static const CUSTOMIZATION_REMOVED_CAMOUFLAGEVALUE:String = "#system_messages:customization/removed/camouflageValue";
@@ -516,6 +522,8 @@ package
       public static const CUSTOMIZATION_REMOVED_PERSONALNUMBER_1VALUE:String = "#system_messages:customization/removed/personalNumber_1Value";
       
       public static const CUSTOMIZATION_REMOVED_ATTACHMENTVALUE:String = "#system_messages:customization/removed/attachmentValue";
+      
+      public static const CUSTOMIZATION_REMOVED_STATTRACKERVALUE:String = "#system_messages:customization/removed/statTrackerValue";
       
       public static const CUSTOMIZATION_PROGRESSION_UP_STYLE:String = "#system_messages:customization/progression/up/style";
       

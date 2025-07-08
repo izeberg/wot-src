@@ -63,7 +63,7 @@
 		<damageStickers>
 			<Type>
 				ARRAY
-				<of>UINT64</of>
+				<of>VEHICLE_HIT_POINT</of>
 			</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</damageStickers>

@@ -384,6 +384,22 @@ msgstr ""
 msgid "Bat_Chatillon155_55_short"
 msgstr "B-C 155 55"
 
+msgid "Bat_Chatillon155_58_FEP23"
+msgstr "B-C CS 59"
+
+msgid "Bat_Chatillon155_58_FEP23_descr"
+msgstr ""
+"During experiments on a sapper vehicle similar to the American T31 project, "
+"a specially designed turret with two Lance-brouillard Mle. 45 rocket "
+"launchers for the 150 mm fusée Mle. 45 was mounted on the Bat.-Châtillon 155"
+" chassis. Both were copies of German designs. There were also plans to equip"
+" the vehicle with a dozer blade, similar to the T31 model. Work on it was "
+"halted at the prototype stage as the project did not fit into the new "
+"concept of highly maneuverable warfare."
+
+msgid "Bat_Chatillon155_58_FEP23_short"
+msgstr "B-C CS 59"
+
 msgid "Bat_Chatillon155_descr"
 msgstr ""
 "An experimental project for an SPG that used some elements of the U.S. M47 "
@@ -493,6 +509,9 @@ msgid "Canon_de_155mm_de_33_calibres_short"
 msgstr ""
 "Canon de 155 mm\n"
 "de 33 calibres"
+
+msgid "Canon_de_75_mm_Mle_55_70"
+msgstr "Canon de 75 mm Mle. 55-70"
 
 msgid "Canon_de_75mm_Vo_1000_m_s"
 msgstr "Canon de 75 mm Vo 1000 m/s"
@@ -650,6 +669,9 @@ msgstr "B1"
 msgid "Chassis_B1_2"
 msgstr "B1 bis"
 
+msgid "Chassis_BC155_58NW_FEP23"
+msgstr "Batignolles-Châtillon modifier"
+
 msgid "Chassis_BDR_G1B"
 msgstr "Baudet-Donon-Roussel G1"
 
@@ -716,6 +738,9 @@ msgstr "Hotchkiss EBR bis"
 msgid "Chassis_F108_Panhard_EBR_105"
 msgstr "Panhard EBR 105"
 
+msgid "Chassis_F108_Panhard_EBR_105_FEP"
+msgstr "Panhard EBR 40 ter"
+
 msgid "Chassis_F109_AMD_Panhard_178B"
 msgstr "Panhard AMD 178"
 
@@ -757,6 +782,9 @@ msgstr "Char Mle. 75"
 
 msgid "Chassis_F119_Char_Murat"
 msgstr "Char Murat"
+
+msgid "Chassis_F120_Projet_Louis"
+msgstr "Projet Louis"
 
 msgid "Chassis_F122_VCS_6x6_TS90"
 msgstr "VCS 6x6 TS 90"
@@ -1125,6 +1153,20 @@ msgstr "EBR Hotch."
 msgid "F108_Panhard_EBR_105"
 msgstr "Panhard EBR 105"
 
+msgid "F108_Panhard_EBR_105_FEP23"
+msgstr "Panhard EBR 40 ter"
+
+msgid "F108_Panhard_EBR_105_FEP23_descr"
+msgstr ""
+"An \"economical\" project armed with the 40 mm Mle51 T1 gun. It was expected"
+" to be better suited for jungle combat, where a long-barreled gun would be "
+"impractical, as well as in places where the main opposing force were "
+"irregular army units acting from ambushes with no armored vehicles. It "
+"existed only in blueprints."
+
+msgid "F108_Panhard_EBR_105_FEP23_short"
+msgstr "EBR 40"
+
 msgid "F108_Panhard_EBR_105_descr"
 msgstr ""
 "A variant of the Panhard EBR armored vehicle with more powerful armament. It"
@@ -1420,6 +1462,34 @@ msgstr "Char Murat"
 
 msgid "F119_Char_Murat_short_special"
 msgstr "Magazine loading system, high dynamics and mobility"
+
+msgid "F120_Projet_Louis"
+msgstr "Projet Louis"
+
+msgid "F120_Projet_Louis_descr"
+msgstr ""
+"This experimental light tank had a far-from-classic layout. The engine and "
+"main transmission were located at the front, while the cooling system was in"
+" the rear. An 880-10 series engine with an inline cylinder arrangement "
+"ensured excellent mobility, and the dual-loop caterpillar propulsion system "
+"was fitted with two drive wheels. The commander and gunner were located in a"
+" compact turret with a low profile and little front and side projection. As "
+"with many French developments, the gun could be tilted vertically by raising"
+" the turret roof section above the breech. Due to time and financial "
+"constraints, the project was closed at the blueprint stage."
+
+msgid "F120_Projet_Louis_long_special"
+msgstr ""
+"The Projet Louis is a Tier IX French light tank with an unusual layout. Its "
+"75 mm autoloader has a clip that holds a lot of shells with a very short in-"
+"clip reload and a quick full reload. It is built for near-constant fire, "
+"dealing small but steady damage to enemies."
+
+msgid "F120_Projet_Louis_short"
+msgstr "Projet Louis"
+
+msgid "F120_Projet_Louis_short_special"
+msgstr "Autoloader, good mobility"
 
 msgid "F122_VCS_6x6_TS90"
 msgstr "VCS 6x6 TS 90"
@@ -2281,6 +2351,9 @@ msgstr "Hispano-Suiza HS 110"
 msgid "Hispano-Suiza_HS110_A"
 msgstr "Hispano-Suiza HS 110 pré-série"
 
+msgid "Hispano-Suiza_HS110_FEP"
+msgstr "Hispano-Suiza HS 110 M"
+
 msgid "Hispano-Suiza_HS110_SH"
 msgstr "Hispano-Suiza HS 110"
 
@@ -2362,6 +2435,9 @@ msgstr "Lorr. 40 t"
 
 msgid "MATHIS"
 msgstr "Mathis 250"
+
+msgid "MTU_880_10"
+msgstr "MTU 880-10"
 
 msgid "Mathis_210"
 msgstr "Mathis 210"
@@ -2512,6 +2588,9 @@ msgid "Panhard_12H_6000_63"
 msgstr "Panhard 12H 6000 mle. 63"
 
 msgid "Panhard_12H_6000_X"
+msgstr "Panhard 12H 6000 X"
+
+msgid "Panhard_12H_6000_X_FEP"
 msgstr "Panhard 12H 6000 X"
 
 msgid "Panhard_4E"
@@ -2708,6 +2787,9 @@ msgstr "SCR 528F"
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
+msgid "SCR_528_FEP"
+msgstr "SCR 528C"
+
 msgid "SCR_528_F_SH"
 msgstr "SCR-528 F"
 
@@ -2860,6 +2942,9 @@ msgstr "TRVP-13-A3"
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
 
+msgid "TRVP_13_A_2"
+msgstr "TRVP-13-A2"
+
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
 
@@ -2998,6 +3083,9 @@ msgstr "Hotchkiss EBR"
 msgid "Turret_1_F108_Panhard_EBR_105"
 msgstr "Panhard EBR 105"
 
+msgid "Turret_1_F108_Panhard_EBR_105_FEP23"
+msgstr "Panhard EBR 40 ter"
+
 msgid "Turret_1_F109_AMD_Panhard_178B"
 msgstr "Panhard AMD 178 CDM"
 
@@ -3034,6 +3122,9 @@ msgstr "Char Mle. 75"
 msgid "Turret_1_F119_Char_Murat"
 msgstr "Char Murat"
 
+msgid "Turret_1_F120_Projet_Louis"
+msgstr "Projet Louis"
+
 msgid "Turret_1_F122_VCS_6x6_TS90"
 msgstr "VCS 6x6 TS 90"
 
@@ -3060,6 +3151,9 @@ msgstr "Vercingétorix"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
+
+msgid "Turret_1_F38_Bat_Chatillon155_58_FEP23"
+msgstr "Batignolles-Châtillon tourelle lourde"
 
 msgid "Turret_1_F39_AMR_P103"
 msgstr "AMR P.103"
@@ -3596,6 +3690,15 @@ msgstr "Capped Common Semi-AP"
 msgid "_130mm_Common_HE"
 msgstr "Common HE"
 
+msgid "_150mm_NW41_FEP"
+msgstr "2x6 Lance-brouillard Mle. 45"
+
+msgid "_150mm_NW_Rocket_1_FEP"
+msgstr "150 mm fusée Mle. 45"
+
+msgid "_150mm_NW_Rocket_2_FEP"
+msgstr "150 mm fusée Mle. 45A"
+
 msgid "_155_OE_mle_1956"
 msgstr "OE mle. 1956"
 
@@ -3707,6 +3810,15 @@ msgstr "37 mm SA38"
 msgid "_3_inch_AT_Gun_M7"
 msgstr "3-inch AT Gun M7"
 
+msgid "_40mm_Mle51_EBR_FEP"
+msgstr "40 mm mle. 51 T1"
+
+msgid "_40mm_OCC_40_D_255_EBR_FEP"
+msgstr "OFL-40 D. 255 (EBR)"
+
+msgid "_40mm_OFL_40_D_233_EBR_FEP"
+msgstr "OFL-40 D. 233 (EBR)"
+
 msgid "_47mm_Odr_mle._1892"
 msgstr "ODR mle. 1892"
 
@@ -3794,6 +3906,9 @@ msgstr "Frt.Prf. mle. 1944"
 msgid "_75mm_FrtPrf1944A"
 msgstr "Frt.Prf. mle. 1944A"
 
+msgid "_75mm_FrtPrf1944B"
+msgstr "Frt.Prf. mle. 1944 B"
+
 msgid "_75mm_FrtPrf1946_SH"
 msgstr "75 Frt.Prf. mle. 1945"
 
@@ -3854,6 +3969,9 @@ msgstr "OE mle. 1924"
 msgid "_75mm_OE_mle_1924A"
 msgstr "OE mle. 1924A"
 
+msgid "_75mm_OE_mle_1924B"
+msgstr "OE mle. 1924 B"
+
 msgid "_75mm_OE_mle_1939"
 msgstr "OE mle. 1939"
 
@@ -3889,6 +4007,9 @@ msgstr "Prf. mle. 1930"
 
 msgid "_75mm_Prf1930A"
 msgstr "Prf. mle. 1930A"
+
+msgid "_75mm_Prf1930B"
+msgstr "Prf. mle. 1930 B"
 
 msgid "_75mm_Pzgr.40"
 msgstr "Pzgr. 40"

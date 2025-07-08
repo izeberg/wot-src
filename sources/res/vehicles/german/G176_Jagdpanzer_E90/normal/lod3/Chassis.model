@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G176_Jagdpanzer_E90/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.990745 0.042844 -3.920236</min>
+		<max>1.990755 1.287548 3.772047</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G176_Jagdpanzer_E90/normal/lod3/Chassis</nodefullVisual>
+</root>

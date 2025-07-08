@@ -11,12 +11,13 @@ from items.components.component_constants import MAIN_TRACK_PAIR_IDX, DEFAULT_TR
 from vehicle_systems.components.terrain_circle_component import TerrainCircleComponent
 from vehicle_systems.components import engine_state
 from vehicle_systems.stricted_loading import makeCallbackWeak, loadingPriority
-from vehicle_systems.tankStructure import VehiclePartsTuple, TankNodeNames, TankPartNames, TankPartIndexes, TankSoundObjectsIndexes
+from vehicle_systems.tankStructure import VehiclePartsTuple, TankNodeNames, TankPartIndexes, TankSoundObjectsIndexes
 from vehicle_systems.components.highlighter import Highlighter
+from vehicle_systems.vehicle_composition import getExtraSlotMap, getObjectSlots, createVehicleComposition, removeComposition
 from helpers.CallbackDelayer import CallbackDelayer
 from helpers.EffectsList import SpecialKeyPointNames
+from objects_hierarchy import PrefabsMapItem
 from vehicle_systems import camouflages
-from vehicle_systems import vehicle_composition
 from cgf_obsolete_script.script_game_object import ComponentDescriptor
 from vehicle_systems import model_assembler
 from VehicleEffects import DamageFromShotDecoder
@@ -76,7 +77,6 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
     burnoutLevel = property(lambda self: self._vehicle.burnoutLevel / 255.0 if self._vehicle is not None else 0.0)
     isConstructed = property(lambda self: self.__isConstructed)
     highlighter = ComponentDescriptor()
-    compoundHolder = ComponentDescriptor()
     partsGameObjects = ComponentDescriptor()
 
     def __init__(self):
@@ -100,6 +100,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
 
     def setVehicle(self, vehicle):
         self._vehicle = vehicle
+        self._entityGameObject = vehicle.entityGameObject
         if self.customEffectManager is not None:
             self.customEffectManager.setVehicle(vehicle)
         if self.crashedTracksController is not None:
@@ -146,13 +147,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         isPlayerVehicle = self._vehicle.isPlayerVehicle or self._vehicle.id == player.observedVehicleID
         self.__originalFilter = self._vehicle.filter
         if isPlayerVehicle and self.collisions is not None:
-            colliderData = (
-             self.collisions.getColliderID(),
-             (
-              TankPartNames.getIdx(TankPartNames.HULL),
-              TankPartNames.getIdx(TankPartNames.TURRET),
-              TankPartNames.getIdx(TankPartNames.GUN)))
-            BigWorld.appendCameraCollider(colliderData)
+            self.addCameraCollider()
             self.__inSpeedTreeCollision = True
             BigWorld.setSpeedTreeCollisionBody(self.compoundModel.getBoundsForPart(TankPartIndexes.HULL))
         self.__linkCompound()
@@ -293,6 +288,8 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         model = self.compoundModel
         self.waterSensor.sensorPlaneLink = model.root
         self.dirtComponent = None
+        if self.tracks is not None:
+            self.tracks.reset()
         self.tracks = None
         if self.collisionObstaclesCollector is not None and not self.collisionObstaclesCollector.activePostmortem:
             self.collisionObstaclesCollector = None
@@ -544,7 +541,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
 
     def getBounds(self, partIdx):
         if self.collisions is not None:
-            return self.collisions.getBoundingBox(DamageFromShotDecoder.convertComponentIndex(partIdx, vehicleDesc=self.typeDescriptor))
+            return self.collisions.getBoundingBox(DamageFromShotDecoder.convertComponentIndex(partIdx, self.collisions))
         else:
             return (
              Math.Vector3(0.0, 0.0, 0.0), Math.Vector3(0.0, 0.0, 0.0), 0)
@@ -566,11 +563,10 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             return
         else:
             self.highlighter.highlight(False)
-            oldHolder = self.findComponentByType(CompoundHolder)
-            if oldHolder is not None:
-                self.gameObject.removeComponent(oldHolder)
-            holder = self.gameObject.createComponent(CompoundHolder, self._vehicle.model)
-            self.gameObject.removeComponent(holder)
+            holder = CGF.GameObject(self.spaceID)
+            holder.createComponent(CompoundHolder, self._vehicle.model)
+            holder.createComponent(GenericComponents.RemoveGoDelayedComponent, 1.0)
+            holder.transferOwnershipToWorld()
             prevTurretYaw = Math.Matrix(self.turretMatrix).yaw
             prevGunPitch = Math.Matrix(self.gunMatrix).pitch
             newCompoundModel = resourceList[self.typeDescriptor.name]
@@ -601,11 +597,14 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
             self._connectCollider()
             self.filter.syncGunAngles(prevTurretYaw, prevGunPitch)
             self._updateAttachments()
-            prefabMap = [ CGF.PrefabsMapItem(attachment.slotName, attachment.modelName) for attachment in self.attachments if not attachment.hiddenForUser
+            prefabMap = [ PrefabsMapItem(attachment.slotName, attachment.modelName) for attachment in self.attachments if not attachment.hidden
                         ]
-            extraSlots = vehicle_composition.getExtraSlotMap(self.typeDescriptor, self)
-            vehicle_composition.removeComposition(self.gameObject)
-            vehicle_composition.createVehicleComposition(self.gameObject, prefabMap=prefabMap, followNodes=True, extraSlots=extraSlots)
+            extraSlots = getExtraSlotMap(self.typeDescriptor, self) + getObjectSlots(self.typeDescriptor)
+            dynSlots = None
+            if self.typeDescriptor.type.isWheeledVehicle:
+                dynSlots = self.typeDescriptor.chassis.generalWheelsAnimatorConfig.getNonTrackWheelNodeNames()
+            removeComposition(self.gameObject)
+            createVehicleComposition(gameObject=self.gameObject, vehicleGameObject=self._entityGameObject, prefabMap=prefabMap, followNodes=True, extraSlots=extraSlots, dynSlotNodes=dynSlots)
             self.onModelChanged()
             return
 
@@ -795,11 +794,7 @@ class CompoundAppearance(CommonTankAppearance, CallbackDelayer):
         collider = self.collisions
         if collider is not None:
             colliderData = (
-             collider.getColliderID(),
-             (
-              TankPartNames.getIdx(TankPartNames.HULL),
-              TankPartNames.getIdx(TankPartNames.TURRET),
-              TankPartNames.getIdx(TankPartNames.GUN)))
+             collider.getColliderID(), tuple(collider.partIndices))
             BigWorld.appendCameraCollider(colliderData)
         return
 

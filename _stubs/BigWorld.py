@@ -1033,17 +1033,29 @@ class CollisionComponent(PyComponentWrapperBase):
 	def collideAllWorld(self, *args, **kwargs): pass
 	def collideLocal(self, *args, **kwargs): pass
 	def collideLocalPoint(self, *args, **kwargs): pass
+	def collideLocalRecursively(self, *args, **kwargs): pass
 	def collideShape(self, *args, **kwargs): pass
 	def collideWorld(self, *args, **kwargs): pass
+	def collideWorldRecursively(self, *args, **kwargs): pass
 	def connect(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
 	def getBoundingBox(self, *args, **kwargs): pass
+	def getChildrenPartIndices(self, *args, **kwargs): pass
 	def getColliderID(self, *args, **kwargs): pass
 	def getColliderType(self, *args, **kwargs): pass
+	def getExtendedBoundingBox(self, *args, **kwargs): pass
+	def getParentPartIndex(self, *args, **kwargs): pass
+	def getPartGameObject(self, *args, **kwargs): pass
 	def getPartName(self, *args, **kwargs): pass
+	def getPartTransform(self, *args, **kwargs): pass
+	def getPartTransformProvider(self, *args, **kwargs): pass
+	def hasAttachment(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
+	maxStaticPartIndex = property(lambda self: None)
+	partIndices = property(lambda self: None)
 	def removeAttachment(self, *args, **kwargs): pass
 	def setColliderType(self, *args, **kwargs): pass
+	spaceID = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass
 
 ColorPassBit = 1
@@ -1571,6 +1583,7 @@ class Entity(pybind11_object):
 	aoiEntities = property(lambda self: None)
 	base = property(lambda self: None)
 	cell = property(lambda self: None)
+	className = property(lambda self: None)
 	components = property(lambda self: None)
 	def delModel(self, *args, **kwargs): pass
 	dynamicComponents = property(lambda self: None)
@@ -4295,6 +4308,7 @@ class Space(pybind11_object):
 	id = property(lambda self: None)
 	def resetEnvironment(self, *args, **kwargs): pass
 	def setEnvironment(self, *args, **kwargs): pass
+	def setReplicableHash(self, *args, **kwargs): pass
 
 
 class SpaceIDList(pybind11_object):
@@ -5073,6 +5087,7 @@ class WGGunRotatorImpl(pybind11_object):
 	gotTurretYawLimits = property(lambda self: None)
 	gravity = property(lambda self: None)
 	gunAnglesEncoded = property(lambda self: None)
+	gunLocalTransform = property(lambda self: None)
 	gunPitch = property(lambda self: None)
 	gunPositionLocal = property(lambda self: None)
 	gunRotationSpeed = property(lambda self: None)
@@ -5080,6 +5095,7 @@ class WGGunRotatorImpl(pybind11_object):
 	hullPitchCorrectionToApply = property(lambda self: None)
 	hullPitchFlexible = property(lambda self: None)
 	hullPitchRequired = property(lambda self: None)
+	hullPositionLocal = property(lambda self: None)
 	isAutorotationModeChanged = property(lambda self: None)
 	isDispersionChanged = property(lambda self: None)
 	isFixed = property(lambda self: None)
@@ -5095,6 +5111,7 @@ class WGGunRotatorImpl(pybind11_object):
 	shotPoint = property(lambda self: None)
 	targetPoint = property(lambda self: None)
 	turretLastRotationSpeed = property(lambda self: None)
+	turretLocalTransform = property(lambda self: None)
 	turretPositionLocal = property(lambda self: None)
 	turretRotationSpeed = property(lambda self: None)
 	turretYaw = property(lambda self: None)
@@ -5188,6 +5205,7 @@ class WGPhysicalBody(pybind11_object):
 	freezeAngVelEpsilon = property(lambda self: None)
 	freezePosErrorEpsilon = property(lambda self: None)
 	freezeVelEpsilon = property(lambda self: None)
+	def getPastTransform(self, *args, **kwargs): pass
 	def getProjectionArea(self, *args, **kwargs): pass
 	gravity = property(lambda self: None)
 	hydroResistanceFactor = property(lambda self: None)
@@ -5592,6 +5610,7 @@ class WGVehiclePhysics(pybind11_object):
 	fwSpeedLimitScale = property(lambda self: None)
 	gear = property(lambda self: None)
 	def getAggressiveImpacts(self, *args, **kwargs): pass
+	def getPastTransform(self, *args, **kwargs): pass
 	def getPointVelocity(self, *args, **kwargs): pass
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
@@ -5738,6 +5757,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	fwSpeedLimitScale = property(lambda self: None)
 	gear = property(lambda self: None)
 	def getAggressiveImpacts(self, *args, **kwargs): pass
+	def getPastTransform(self, *args, **kwargs): pass
 	def getPointVelocity(self, *args, **kwargs): pass
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
@@ -6107,6 +6127,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	gear = property(lambda self: None)
 	getActualWheelTransforms = property(lambda self: None)
 	def getAggressiveImpacts(self, *args, **kwargs): pass
+	def getPastTransform(self, *args, **kwargs): pass
 	def getPointVelocity(self, *args, **kwargs): pass
 	def getRollerPosition(self, *args, **kwargs): pass
 	def getTouchedGround(self, *args, **kwargs): pass
@@ -6618,6 +6639,7 @@ def getColorGradingStrength(*args, **kwargs): pass
 def getColorSaturation(*args, **kwargs): pass
 def getDRRAutoscalerBaseScale(*args, **kwargs): pass
 def getDRRScale(*args, **kwargs): pass
+def getDynamicVisibilityPoints(*args, **kwargs): pass
 def getExclusiveFullscreenMonitorIndex(*args, **kwargs): pass
 def getExtensionsDirList(*args, **kwargs): pass
 def getFPS(*args, **kwargs): pass
@@ -6634,6 +6656,7 @@ def getGraphicsSettingApplyMethod(*args, **kwargs): pass
 def getHeapMemory(*args, **kwargs): pass
 def getImageMemory(*args, **kwargs): pass
 def getIsImpassableZoneEnabled(*args, **kwargs): pass
+def getMaterialInfo(*args, **kwargs): pass
 def getMaterialKinds(*args, **kwargs): pass
 def getMemoryInfoKB(*args, **kwargs): pass
 def getScaleformMemory(*args, **kwargs): pass
@@ -6703,6 +6726,7 @@ def isKeyDown(*args, **kwargs): pass
 def isNextTickPending(*args, **kwargs): pass
 def isSSAOEnabled(*args, **kwargs): pass
 def isShadowsEnabled(*args, **kwargs): pass
+def isSimplifiedPipeline(*args, **kwargs): pass
 def isTesselationSupported(*args, **kwargs): pass
 def isTripleBuffered(*args, **kwargs): pass
 def isVideoVSync(*args, **kwargs): pass

@@ -46,6 +46,9 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
+msgid "Chassis_Cz04_T50_51_FEP"
+msgstr "PTV-51"
+
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34/85"
 
@@ -151,6 +154,9 @@ msgstr "LPT-67 Šelma druhý model"
 msgid "Chassis_Cz29_Pzw_39"
 msgstr "Panzerwagen 39"
 
+msgid "Chassis_Cz30_TBT"
+msgstr "TBT"
+
 msgid "Chassis_Cz32_Vz_58_Koncept"
 msgstr "Vz. 58 Medvěd"
 
@@ -224,6 +230,19 @@ msgstr "LT vz. 35"
 
 msgid "Cz04_T50_51"
 msgstr "TVP T 50/51"
+
+msgid "Cz04_T50_51_FEP23"
+msgstr "PTV-51"
+
+msgid "Cz04_T50_51_FEP23_descr"
+msgstr ""
+"A vehicle projected for escorting attacking tank units. Its developers "
+"envisioned that it would hit lightly armored vehicles and enemy manpower "
+"while also providing protection against RPG and ATGM fire. The project "
+"existed only in blueprints."
+
+msgid "Cz04_T50_51_FEP23_short"
+msgstr "PTV-51"
 
 msgid "Cz04_T50_51_descr"
 msgstr ""
@@ -675,6 +694,34 @@ msgstr "Pzw. 39"
 msgid "Cz29_Pzw_39_short_special"
 msgstr "A fast-firing gun and good maneuverability"
 
+msgid "Cz30_TBT"
+msgstr "TBT"
+
+msgid "Cz30_TBT_descr"
+msgstr ""
+"In the late 1950s, the Czechoslovakian government prioritized mastering "
+"Soviet medium tanks. At the same time, they also made attempts to build "
+"their own vehicles, which included the TBT (Těžký bojový tank) project. It "
+"was developed with the T-10 heavy tank in mind and featured forged bent "
+"armor plates, since cast plates were less durable. The vehicle was based on "
+"a mobile heavy tank concept capable of cooperating with medium tanks, but "
+"Czechoslovakian industry did not manage to build a prototype. The TBT "
+"remained only in blueprints."
+
+msgid "Cz30_TBT_long_special"
+msgstr ""
+"The TBT is a Tier IX Czechoslovakian heavy tank. Like all high-tier vehicles"
+" in the Vz. 55 line, it has a two-shell autoloader. However, unlike its "
+"counterparts, it also boasts excellent hull and turret armor, with no "
+"cupolas on the turret. This makes the TBT more effective in positional "
+"battles. The vehicle also has decent mobility."
+
+msgid "Cz30_TBT_short"
+msgstr "TBT"
+
+msgid "Cz30_TBT_short_special"
+msgstr "Two-shell autoloader, good hull and turret armor"
+
 msgid "Cz32_Vz_58_Koncept"
 msgstr "Vz. 58 Medvěd"
 
@@ -909,6 +956,9 @@ msgstr "Nárazový vz. 57"
 msgid "Praga_AXK"
 msgstr "Praga AXK"
 
+msgid "Praga_AXK_FEP"
+msgstr "Praga AXK M"
+
 msgid "Praga_NR"
 msgstr "Praga NR"
 
@@ -959,6 +1009,12 @@ msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "Radiostanice RM-31T GW"
+
+msgid "Radiostanice_RM_31T_A_FEP"
+msgstr "Radiostanice RM-31T M"
+
+msgid "Radiostanice_RM_31T_TBT"
+msgstr "Radiostanice RM-31T"
 
 msgid "Radiostanice_R_112"
 msgstr "Radiostanice R-112"
@@ -1071,6 +1127,9 @@ msgstr "LT vz. 35"
 msgid "Turret_1_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
+msgid "Turret_1_Cz04_T50_51_FEP"
+msgstr "PTV-51"
+
 msgid "Turret_1_Cz05_T34_100"
 msgstr "Konštrukta T-34/100 varianta II"
 
@@ -1139,6 +1198,9 @@ msgstr "LPT-67 Šelma první model"
 
 msgid "Turret_1_Cz29_Pzw_39"
 msgstr "Panzerwagen 39"
+
+msgid "Turret_1_Cz30_TBT"
+msgstr "TBT"
 
 msgid "Turret_1_Cz32_Vz_58_Koncept"
 msgstr "Vz. 58 Medvěd"
@@ -1220,6 +1282,9 @@ msgstr "UTD-20-71TD"
 
 msgid "V12_TD"
 msgstr "V12 TD"
+
+msgid "V_12F"
+msgstr "V-12F"
 
 msgid "V_2_34"
 msgstr "V-2-34"
@@ -1392,6 +1457,9 @@ msgstr "130 mm 59-130M"
 msgid "_130mm_Narazovy_59-56G"
 msgstr "Nárazový vz. 130M"
 
+msgid "_130mm_Narazovy_59_57"
+msgstr "Nárazový vz. 57"
+
 msgid "_130mm_Narazovy_vz_51"
 msgstr "Nárazový vz. 51"
 
@@ -1403,6 +1471,12 @@ msgstr "Průrazný vz. 130M"
 
 msgid "_130mm_Prurazny_59-56G_s_oc_jadrem"
 msgstr "Průrazný vz. 130M (s jádrem)"
+
+msgid "_130mm_Prurazny_59_57"
+msgstr "Průrazný vz. 57"
+
+msgid "_130mm_Prurazny_59_57_s_oc_jadrem"
+msgstr "Průrazný vz. 57 (s jádrem)"
 
 msgid "_130mm_Prurazny_vz_51"
 msgstr "Průrazný vz. 51"
@@ -1427,6 +1501,9 @@ msgstr "130 mm vz. 54 2A"
 
 msgid "_130mm_vz_54_2A_CN"
 msgstr "130 mm vz. 54 2 GW"
+
+msgid "_130mm_vz_57"
+msgstr "130 mm vz.57"
 
 msgid "_152_mm_D_20SM"
 msgstr "152 mm D-20SM"
@@ -1601,6 +1678,15 @@ msgstr "57 mm automatický dvojkanón 535Š"
 
 msgid "_57_mm_automaticky_dvojkanon_535T"
 msgstr "57 mm automatický dvojkanón 535T"
+
+msgid "_57mm_BR-281U_FEP"
+msgstr "57 mm BR-281"
+
+msgid "_57mm_BR-281_FEP"
+msgstr "57 mm BR-281SP"
+
+msgid "_57mm_C68x2_FEP"
+msgstr "2x57 mm C-68"
 
 msgid "_5_TD_DBV"
 msgstr "5TD"

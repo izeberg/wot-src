@@ -4,4 +4,8 @@
 	<nodefullVisual>vehicles/poland/Pl26_Czolg_P_Wz_46/normal/lod0/Gun_02</nodefullVisual>
 	<parent>vehicles/poland/Pl26_Czolg_P_Wz_46/normal/lod1/Gun_02</parent>
 	<extent>32</extent>
+	<visibilityBox>
+		<min>-0.422899 -0.302014 -0.031853</min>
+		<max>0.422895 0.338762 6.484808</max>
+	</visibilityBox>
 </root>

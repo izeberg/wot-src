@@ -333,6 +333,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.editBtn.mouseEnabledOnDisabled = this.editBtnSmall.mouseEnabledOnDisabled = true;
          this.editBtn.visible = this.editBtnSmall.visible = this.btnBackground.visible = this.editBtnHint.visible = this.editBtnCounter.visible = this.editableSlotHint.visible = false;
          this.editableSlotHint.mouseChildren = this.editBtnCounter.mouseChildren = this.editBtnHint.mouseChildren = this.editableSlotHint.mouseEnabled = this.editBtnCounter.mouseEnabled = this.editBtnHint.mouseEnabled = false;
+         this.editableSlotHint.stop();
          this.storageIcon.visible = this.storageTF.visible = false;
          this.storageIcon.addEventListener(Event.CHANGE,this.onStorageIconChangeHandler);
          this.storageIcon.source = RES_ICONS.MAPS_ICONS_CUSTOMIZATION_STORAGE_ICON;
@@ -597,15 +598,24 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          {
             this.frontground.visible = false;
          }
-         this.editableSlotHint.visible = this._data.showEditableHint;
+         if(this._data.showEditableHint)
+         {
+            this.editableSlotHint.visible = true;
+            this.editableSlotHint.play();
+         }
+         else
+         {
+            this.editableSlotHint.stop();
+            this.editableSlotHint.visible = false;
+         }
          this.editBtnHint.visible = this.btnBackground.visible && this._data.showEditBtnHint;
          if(this.editBtnHint.visible)
          {
             this.editBtnHint.play();
          }
-         this.disabledFill.visible = this._data.locked;
-         this.lockedIcon.visible = this._data.locked && !this._data.isLinked;
-         this.iconLockGrey.visible = this._data.locked && this._data.isLinked;
+         this.disabledFill.visible = this._data.locked || this._data.showDisabled;
+         this.lockedIcon.visible = this._data.locked && !this._data.isLinked && !this._data.showDisabled;
+         this.iconLockGrey.visible = this._data.locked && (this._data.isLinked || this._data.showDisabled);
          this.iconLockGrey.x = this.lockedIcon.x = this._customWidth - this.lockedIcon.width - ICON_PADDING_RIGHT;
          this.iconLockGrey.y = this._customHeight - this.iconLockGrey.height + ICON_LOCK_GREY_BOTTOM_OFFSET;
          this.iconInProgress.visible = this._data.isInProgress;
@@ -651,7 +661,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          }
          this.editableImg.visible = this._data.isEditableStyle;
          this.nonHistoricImgPosition();
-         this.imgIcon.alpha = !!this._data.locked ? Number(LOCKED_IMG_ALPHA) : Number(this._data.defaultIconAlpha);
+         this.imgIcon.alpha = this._data.locked || this._data.showDisabled ? Number(LOCKED_IMG_ALPHA) : Number(this._data.defaultIconAlpha);
          this.alertIcon.visible = this._data.showAlert;
          this.formIcon.y = !!_loc2_ ? Number(FORM_ICON_OFFSET_SMALL_Y) : Number(FORM_ICON_OFFSET_Y);
          this.formIcon.visible = StringUtils.isNotEmpty(this._data.formIconSource);
@@ -806,7 +816,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
             this.compoundPrice.setData(this._data.buyPrice);
             this.compoundPrice.validateNow();
             this.buyOperationAllowed = this._data.buyOperationAllowed;
-            this.compoundPrice.visible = StringUtils.isEmpty(this._data.quantity);
+            this.compoundPrice.visible = StringUtils.isEmpty(this._data.quantity) && !this._data.showDisabled;
             if(this.compoundPrice.visible)
             {
                _loc11_ = this._data.buyPrice.action != null;
@@ -844,7 +854,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                this.storageIcon.y = this._customHeight - this.storageIcon.height ^ 0;
             }
          }
-         else if(StringUtils.isNotEmpty(this._data.quantity))
+         else if(StringUtils.isNotEmpty(this._data.quantity) && !this._data.showDisabled)
          {
             this.rentalTF.visible = this.rentalIcon.visible = false;
             this.storageIcon.visible = this.storageTF.visible = true;

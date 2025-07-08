@@ -11,16 +11,16 @@
 	<postProgressionTree>role_MT_universal</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>50</forward>
-		<backward>18</backward>
+		<forward>45</forward>
+		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.185
+			0.203
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.245
+			0.27
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.368
+			0.405
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -149,14 +149,11 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>21770</weight>
-		<maxHealth>1040</maxHealth>
+		<maxHealth>1120</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>240</maxHealth>
-			<maxRegenHealth>160</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>158</maxRegenHealth>
+			<repairCost>8</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/american/A159_Chrysler_MTC_2/normal/lod0/Hull.model</undamaged>
@@ -204,10 +201,7 @@
 			<slot>
 				<slotType>paint</slotType>
 				<slotId>11000</slotId>
-				<anchorPosition>
-					0.002193 0.356596 -2.89157
-					<!--BW_String-->
-				</anchorPosition>
+				<anchorPosition>0.002193 0.356596 -1.970574</anchorPosition>
 				<anchorDirection>
 					-0 0.71435 -0.699788
 					<!--BW_String-->
@@ -216,10 +210,7 @@
 			<slot>
 				<slotType>camouflage</slotType>
 				<slotId>12000</slotId>
-				<anchorPosition>
-					0.000351 0.356895 -2.89141
-					<!--BW_String-->
-				</anchorPosition>
+				<anchorPosition>0.000351 0.356895 -1.932356</anchorPosition>
 				<anchorDirection>
 					0 0.714343 -0.699796
 					<!--BW_String-->
@@ -238,7 +229,7 @@
 					<!--BW_String-->
 				</rotation>
 				<scale>
-					0.824874 0.2 0.824874
+					0.824874 0.21 0.824874
 					<!--BW_String-->
 				</scale>
 				<showOn>16</showOn>
@@ -489,6 +480,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.161342</anchorShift>
 			</slot>
 			<slot>
@@ -509,6 +501,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.111342</anchorShift>
 			</slot>
 			<slot>
@@ -529,6 +522,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.111342</anchorShift>
 			</slot>
 			<slot>
@@ -549,6 +543,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.111342</anchorShift>
 			</slot>
 			<slot>
@@ -569,6 +564,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.161342</anchorShift>
 			</slot>
 			<slot>
@@ -589,6 +585,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.111342</anchorShift>
 			</slot>
 			<slot>
@@ -609,6 +606,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.111342</anchorShift>
 			</slot>
 			<slot>
@@ -629,6 +627,7 @@
 				</scale>
 				<showOn>16</showOn>
 				<clipAngle>0.603544</clipAngle>
+				<verticalMirror>true</verticalMirror>
 				<anchorShift>0.111342</anchorShift>
 			</slot>
 			<slot>
@@ -879,6 +878,57 @@
 				<clipAngle>0.603544</clipAngle>
 				<anchorShift>0.191342</anchorShift>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>
+					-1.783 0.239537 -0.25
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 1.53589
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999999 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>
+					1.783 0.239718 -0.25
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 3.141593 1.570796
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					1 0.999999 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>small</size>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18002</slotId>
+				<position>-0.000002 -0.051939 -3.552057</position>
+				<rotation>
+					-0 -1.570799 1.228416
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.999997 0.999996 1
+					<!--BW_String-->
+				</scale>
+				<applyType>universal</applyType>
+				<size>medium</size>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -906,19 +956,19 @@
 			<weight>11500</weight>
 			<maxLoad>53000</maxLoad>
 			<terrainResistance>
-				0.9 1.1 1.9
+				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>50000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.13
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.14
+					0.13
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -926,12 +976,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>200</maxHealth>
-			<maxRegenHealth>150</maxRegenHealth>
-			<repairCost>
-				7.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>165</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/american/A159_Chrysler_MTC_2/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/american/A159_Chrysler_MTC_2/crash/lod0/Chassis.model</destroyed>
@@ -1183,7 +1230,7 @@
 				<slot>
 					<slotType>paint</slotType>
 					<slotId>21000</slotId>
-					<anchorPosition>-1.749416 0.747363 0.067065</anchorPosition>
+					<anchorPosition>-1.749418 0.420067 -0.062331</anchorPosition>
 					<anchorDirection>-0.925074 0.378266 0.033944</anchorDirection>
 				</slot>
 				<slot>
@@ -1458,13 +1505,16 @@
 					<springsLength>
 						<backwardMovement>
 							<back>0.097722</back>
-							<top>0.097043</top>
-							<front>0.091863</front>
+							<top>0.087464</top>
+							<front>0.096554</front>
 							<bottom>0.077331</bottom>
 						</backwardMovement>
 						<forwardMovement>
-							<back>0.092644</back>
-							<top>0.097043</top>
+							<back>
+								0.09021
+								<!--BW_String-->
+							</back>
+							<top>0.093863</top>
 							<front>0.097722</front>
 							<bottom>0.077331</bottom>
 						</forwardMovement>
@@ -1842,13 +1892,13 @@
 					<springsLength>
 						<backwardMovement>
 							<back>0.097722</back>
-							<top>0.097037</top>
-							<front>0.091863</front>
+							<top>0.087464</top>
+							<front>0.096554</front>
 							<bottom>0.077327</bottom>
 						</backwardMovement>
 						<forwardMovement>
-							<back>0.092644</back>
-							<top>0.097037</top>
+							<back>0.090209</back>
+							<top>0.093863</top>
 							<front>0.097722</front>
 							<bottom>0.077327</bottom>
 						</forwardMovement>
@@ -2133,7 +2183,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				5.71428585
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_A159_Chrysler_MTC_2>
@@ -2146,9 +2196,12 @@
 			<price>30000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>254</armor_1>
-				<armor_2>
+				<armor_1>
 					228.6
+					<!--BW_String-->
+				</armor_1>
+				<armor_2>
+					203.2
 					<!--BW_String-->
 				</armor_2>
 				<armor_3>
@@ -2173,19 +2226,19 @@
 				</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>
-					114.3
+					139.7
 					<!--BW_String-->
 				</armor_9>
 				<armor_10>
-					203.2
+					171.5
 					<!--BW_String-->
 				</armor_10>
 				<armor_11>
-					177.8
+					165.1
 					<!--BW_String-->
 				</armor_11>
 				<armor_12>
-					152.4
+					139.7
 					<!--BW_String-->
 				</armor_12>
 				<armor_13>
@@ -2213,27 +2266,56 @@
 					38.1
 					<!--BW_String-->
 				</armor_19>
+				<armor_20>
+					146.1
+					<!--BW_String-->
+				</armor_20>
+				<armor_21>
+					95.3
+					<!--BW_String-->
+				</armor_21>
+				<armor_23>
+					88.9
+					<!--BW_String-->
+				</armor_23>
+				<armor_25>127</armor_25>
+				<armor_26>
+					133.4
+					<!--BW_String-->
+				</armor_26>
+				<armor_27>108</armor_27>
+				<armor_28>108</armor_28>
+				<armor_29>
+					95.3
+					<!--BW_String-->
+				</armor_29>
+				<armor_30>
+					114.3
+					<!--BW_String-->
+				</armor_30>
+				<armor_31>
+					50.8
+					<!--BW_String-->
+				</armor_31>
+				<armor_32>
+					50.8
+					<!--BW_String-->
+				</armor_32>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>12340</weight>
-			<maxHealth>260</maxHealth>
-			<rotationSpeed>34</rotationSpeed>
+			<maxHealth>280</maxHealth>
+			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>150</maxHealth>
-				<maxRegenHealth>75</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>155</maxHealth>
+				<maxRegenHealth>78</maxRegenHealth>
+				<repairCost>8</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<repairCost>2</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<_105mm_Gun_T140E5>
@@ -2242,7 +2324,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.40 10 0.45 4 0.55 4 0.60 10 1 10
+							0 8 0.40 8 0.45 4 0.55 4 0.60 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -2323,16 +2405,19 @@
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_17>
-						<gun>35</gun>
+						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>
+						10.8
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -2345,11 +2430,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
-						0.209
+						0.12
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<customizationSlots>
@@ -2436,7 +2521,7 @@
 				<collisionModelClient>vehicles/american/A159_Chrysler_MTC_2/collision_client/Turret_01.model</collisionModelClient>
 			</hitTester>
 			<gunPosition>
-				0 0.438212 1.48294
+				0 0.412212 1.591944
 				<!--BW_String-->
 			</gunPosition>
 			<customizationSlots>
@@ -2455,9 +2540,12 @@
 				<slot>
 					<slotType>player</slotType>
 					<slotId>33000</slotId>
-					<rayStart>-1.400747 0.398494 0.786324</rayStart>
-					<rayEnd>-1.237242 0.300824 0.725278</rayEnd>
-					<rayUp>0.452007 0.872543 -0.185361</rayUp>
+					<rayStart>-1.361554 0.431394 0.788556</rayStart>
+					<rayEnd>-1.200899 0.331377 0.723852</rayEnd>
+					<rayUp>
+						0.46278 0.865973 -0.18954
+						<!--BW_String-->
+					</rayUp>
 					<size>
 						0.32
 						<!--BW_String-->
@@ -2467,9 +2555,12 @@
 					<slotType>player</slotType>
 					<slotId>33001</slotId>
 					<isMirrored>true</isMirrored>
-					<rayStart>1.399001 0.399331 0.786345</rayStart>
-					<rayEnd>1.233943 0.301377 0.730121</rayEnd>
-					<rayUp>-0.463608 0.871853 -0.157922</rayUp>
+					<rayStart>
+						1.36348 0.441353 0.76838
+						<!--BW_String-->
+					</rayStart>
+					<rayEnd>1.202824 0.341337 0.703674</rayEnd>
+					<rayUp>-0.473792 0.865664 -0.161703</rayUp>
 					<size>
 						0.32
 						<!--BW_String-->
@@ -2479,8 +2570,8 @@
 				<slot>
 					<slotType>inscription</slotType>
 					<slotId>34000</slotId>
-					<rayStart>-1.649437 0.435456 0.122461</rayStart>
-					<rayEnd>-1.312478 0.232975 0.048609</rayEnd>
+					<rayStart>-1.624263 0.477585 0.120887</rayStart>
+					<rayEnd>-1.287304 0.275104 0.047035</rayEnd>
 					<rayUp>0.494475 0.862409 -0.108374</rayUp>
 					<size>
 						0.7
@@ -2490,9 +2581,15 @@
 				<slot>
 					<slotType>inscription</slotType>
 					<slotId>34001</slotId>
-					<rayStart>1.649479 0.435457 0.122461</rayStart>
-					<rayEnd>1.312521 0.232975 0.048609</rayEnd>
-					<rayUp>-0.494477 0.862408 -0.108376</rayUp>
+					<rayStart>
+						1.63095 0.477892 0.089527
+						<!--BW_String-->
+					</rayStart>
+					<rayEnd>
+						1.293992 0.27541 0.015675
+						<!--BW_String-->
+					</rayEnd>
+					<rayUp>-0.494477 0.862407 -0.108376</rayUp>
 					<size>
 						0.7
 						<!--BW_String-->
@@ -2503,7 +2600,7 @@
 					<slotId>35000</slotId>
 					<tags>formfactor_square</tags>
 					<position>
-						0.00271 2.03159 1.47708
+						0.00271 2.00598 1.57431
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2523,7 +2620,7 @@
 					<slotId>35001</slotId>
 					<tags>formfactor_rect1x2</tags>
 					<position>
-						0.00271 2.03159 1.47708
+						0.00271 2.00598 1.57431
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2543,7 +2640,7 @@
 					<slotId>35002</slotId>
 					<tags>formfactor_rect1x3</tags>
 					<position>
-						0.002955 2.04522 1.33697
+						0.002955 2.0196 1.4342
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2563,7 +2660,7 @@
 					<slotId>35003</slotId>
 					<tags>formfactor_rect1x4</tags>
 					<position>
-						0.003044 2.05015 1.28628
+						0.003044 2.02453 1.38351
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2583,7 +2680,7 @@
 					<slotId>35004</slotId>
 					<tags>formfactor_rect1x2 direction_right_to_left</tags>
 					<position>
-						-0.000877 2.06684 0.291129
+						-0.000877 2.04122 0.388362
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2604,7 +2701,7 @@
 					<slotId>35005</slotId>
 					<tags>formfactor_rect1x3 direction_right_to_left</tags>
 					<position>
-						-0.000945 2.06855 0.252384
+						-0.000945 2.04293 0.349617
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2625,7 +2722,7 @@
 					<slotId>35006</slotId>
 					<tags>formfactor_rect1x4 direction_right_to_left</tags>
 					<position>
-						-0.000974 2.0693 0.235226
+						-0.000974 2.04368 0.332459
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2646,7 +2743,7 @@
 					<slotId>35007</slotId>
 					<tags>formfactor_square</tags>
 					<position>
-						0.000007 2.01465 -1.055
+						0.000007 1.98904 -0.957766
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2664,7 +2761,7 @@
 					<slotId>35008</slotId>
 					<tags>formfactor_rect1x2</tags>
 					<position>
-						0.000006 2.01532 -1.00549
+						0.000006 1.98971 -0.908256
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2685,7 +2782,7 @@
 					<slotId>35009</slotId>
 					<tags>formfactor_rect1x3</tags>
 					<position>
-						0.000006 2.01532 -1.00549
+						0.000006 1.98971 -0.908256
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2706,7 +2803,7 @@
 					<slotId>35010</slotId>
 					<tags>formfactor_square direction_right_to_left</tags>
 					<position>
-						-1.33048 1.72164 0.688805
+						-1.33048 1.69603 0.786038
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2726,7 +2823,7 @@
 					<slotId>35011</slotId>
 					<tags>formfactor_square direction_right_to_left</tags>
 					<position>
-						-0.860595 1.68755 1.76092
+						-0.860595 1.66194 1.85815
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2746,7 +2843,7 @@
 					<slotId>35012</slotId>
 					<tags>formfactor_square direction_right_to_left</tags>
 					<position>
-						-1.22157 1.76783 -0.271448
+						-1.22157 1.74222 -0.174215
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2763,7 +2860,7 @@
 					<slotId>35013</slotId>
 					<tags>formfactor_rect1x2 direction_right_to_left</tags>
 					<position>
-						-1.33048 1.72164 0.688805
+						-1.33048 1.69603 0.786038
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2783,7 +2880,7 @@
 					<slotId>35014</slotId>
 					<tags>formfactor_rect1x2 direction_right_to_left</tags>
 					<position>
-						-0.945426 1.68014 1.65956
+						-0.945426 1.65453 1.75679
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2803,7 +2900,7 @@
 					<slotId>35015</slotId>
 					<tags>formfactor_rect1x3 direction_right_to_left</tags>
 					<position>
-						-1.33048 1.72164 0.688806
+						-1.33048 1.69603 0.786039
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2823,7 +2920,7 @@
 					<slotId>35016</slotId>
 					<tags>formfactor_rect1x4 direction_right_to_left</tags>
 					<position>
-						-1.33048 1.72164 0.688806
+						-1.33048 1.69603 0.786039
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2843,7 +2940,7 @@
 					<slotId>35017</slotId>
 					<tags>formfactor_rect1x6 direction_right_to_left</tags>
 					<position>
-						-1.31085 1.76556 0.687757
+						-1.31085 1.73995 0.78499
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2866,7 +2963,7 @@
 					<slotId>35018</slotId>
 					<tags>formfactor_square direction_left_to_right</tags>
 					<position>
-						1.33047 1.72162 0.688816
+						1.33047 1.696 0.786049
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2886,7 +2983,7 @@
 					<slotId>35019</slotId>
 					<tags>formfactor_square direction_left_to_right</tags>
 					<position>
-						0.860581 1.68754 1.76093
+						0.860581 1.66193 1.85816
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2894,7 +2991,7 @@
 						<!--BW_String-->
 					</rotation>
 					<scale>
-						0.850784 0.3 0.850781
+						0.850785 0.35 0.850781
 						<!--BW_String-->
 					</scale>
 					<showOn>256</showOn>
@@ -2906,7 +3003,7 @@
 					<slotId>35020</slotId>
 					<tags>formfactor_square direction_left_to_right</tags>
 					<position>
-						1.22157 1.76781 -0.271438
+						1.22157 1.7422 -0.174205
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2923,7 +3020,7 @@
 					<slotId>35021</slotId>
 					<tags>formfactor_rect1x2 direction_left_to_right</tags>
 					<position>
-						1.33047 1.72162 0.688816
+						1.33047 1.696 0.786049
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2943,7 +3040,7 @@
 					<slotId>35022</slotId>
 					<tags>formfactor_rect1x2 direction_left_to_right</tags>
 					<position>
-						0.945412 1.68012 1.65957
+						0.945412 1.65451 1.7568
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2963,7 +3060,7 @@
 					<slotId>35023</slotId>
 					<tags>formfactor_rect1x3 direction_left_to_right</tags>
 					<position>
-						1.33047 1.72162 0.688817
+						1.33047 1.696 0.78605
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -2983,7 +3080,7 @@
 					<slotId>35024</slotId>
 					<tags>formfactor_rect1x4 direction_left_to_right</tags>
 					<position>
-						1.33047 1.72162 0.688817
+						1.33047 1.696 0.78605
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3003,7 +3100,7 @@
 					<slotId>35025</slotId>
 					<tags>formfactor_rect1x6 direction_left_to_right</tags>
 					<position>
-						1.31085 1.76554 0.687768
+						1.31085 1.73993 0.785001
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3026,7 +3123,7 @@
 					<slotId>35026</slotId>
 					<tags>formfactor_rect1x2 mimic left direction_right_to_left</tags>
 					<position>
-						-1.33048 1.72164 0.688805
+						-1.33048 1.69603 0.786038
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3047,7 +3144,7 @@
 					<slotId>35027</slotId>
 					<tags>formfactor_rect1x2 mimic right direction_left_to_right</tags>
 					<position>
-						1.33047 1.72162 0.688816
+						1.33047 1.696 0.786049
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3068,7 +3165,7 @@
 					<slotId>35028</slotId>
 					<tags>formfactor_square safe left direction_right_to_left</tags>
 					<position>
-						-1.18053 1.96515 0.641563
+						-1.18053 1.93954 0.738796
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3086,7 +3183,7 @@
 					<slotId>35029</slotId>
 					<tags>formfactor_square safe right direction_left_to_right</tags>
 					<position>
-						1.18053 1.96513 0.641573
+						1.18053 1.93951 0.738806
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3104,7 +3201,7 @@
 					<slotId>35030</slotId>
 					<tags>formfactor_rect1x2 safe left direction_right_to_left</tags>
 					<position>
-						-1.18053 1.96515 0.641563
+						-1.18053 1.93954 0.738796
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3122,7 +3219,7 @@
 					<slotId>35031</slotId>
 					<tags>formfactor_rect1x2 safe right direction_left_to_right</tags>
 					<position>
-						1.18053 1.96513 0.641573
+						1.18053 1.93951 0.738806
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3140,7 +3237,7 @@
 					<slotId>35032</slotId>
 					<tags>formfactor_rect1x2 cover direction_right_to_left</tags>
 					<position>
-						-0.002349 1.22809 0.134834
+						-0.002349 1.20248 0.135984
 						<!--BW_String-->
 					</position>
 					<rotation>
@@ -3159,7 +3256,29 @@
 						<!--BW_String-->
 					</anchorShift>
 				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>0.002733 1.158855 -0.919484</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>turret</applyType>
+					<size>medium</size>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38001</slotId>
+					<position>-0.756816 1.040408 0.514126</position>
+					<rotation>-0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<applyType>gunMantlet</applyType>
+					<size>medium</size>
+				</slot>
 			</customizationSlots>
+			<physicsShape>
+				1.041 0.213 1.025 -0.001 0.512 0.178 0.542 0.51 0.488 0.5 0.305 0.506 0.23 0 0.048
+				<!--BW_String-->
+			</physicsShape>
 			<customization>
 				<customizableVehicleAreas>
 					<paint>TURRET</paint>
@@ -3191,8 +3310,8 @@
 		<detailed>
 			<engines>
 				<AOI_1195D>
-					<smplEnginePower>700</smplEnginePower>
-					<smplFwMaxSpeed>50</smplFwMaxSpeed>
+					<smplEnginePower>850</smplEnginePower>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</AOI_1195D>
 			</engines>
 			<chassis>
@@ -3200,19 +3319,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.15295
+								0.161
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

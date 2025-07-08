@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert2</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						emissionMap
+						<Texture>particles/Tank/customization/A167_TS_6_G90_3Dst/Noise01.dds</Texture>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>80.000000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.850980 0.898039 0.968627 1.000000</Vector4>
+					</property>
+					<property>
+						waveLen
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_forwardMult
+						<Float>4.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.339884 -3.689435</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.550064 0.313813 -3.692368</min>
+		<max>1.550064 0.365954 -3.686501</max>
+	</boundingBox>
+	<geometrySize>1248</geometrySize>
+</root>

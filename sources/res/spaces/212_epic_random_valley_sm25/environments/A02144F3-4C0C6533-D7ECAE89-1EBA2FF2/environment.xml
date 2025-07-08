@@ -41,6 +41,21 @@
 			<skyLow>0.000000</skyLow>
 			<skyHigh>1.200000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<edgeFogInnerBB>-100.000000 -400.000000 450.000000 600.000000</edgeFogInnerBB>
+			<edgeFogOuterBB>-2700.000000 -1300.000000 1200.000000 2800.000000</edgeFogOuterBB>
+			<color>0.231373 0.227451 0.341176 5.000000</color>
+			<density>0.018000</density>
+			<height>9.000000</height>
+			<heightFalloff>0.090000</heightFalloff>
+			<startDistance>50.000000</startDistance>
+			<scatterStart>2000.000000</scatterStart>
+			<scatterExponent>1.000000</scatterExponent>
+			<scatterColor>0.121569 0.117647 0.113725 8.000000</scatterColor>
+			<useEdgeFog>true</useEdgeFog>
+			<skyLow>0.050000</skyLow>
+			<skyHigh>0.450000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<edgeFogInnerBB>-700.000000 -700.000000 700.000000 700.000000</edgeFogInnerBB>

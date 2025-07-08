@@ -160,9 +160,6 @@ msgstr ""
 "passed trials but did not see service. Subsequently, its sloped armor design"
 " was used for the A-20 experimental tank and T-34."
 
-msgid "B_2"
-msgstr "B-2"
-
 msgid "Bedford_Twin-Six"
 msgstr "Bedford Twin-Six"
 
@@ -687,6 +684,9 @@ msgstr "Object 430"
 
 msgid "Chassis_R96_Object_430_2"
 msgstr "Object 430 improved"
+
+msgid "Chassis_R97_Object_140_FEP23"
+msgstr "Object 143"
 
 msgid "Chassis_ST_I"
 msgstr "ST-I"
@@ -1419,6 +1419,21 @@ msgstr "Obj. 416"
 msgid "Object_140"
 msgstr "Object 140"
 
+msgid "Object_140_FEP"
+msgstr "Object 143 Prut"
+
+msgid "Object_140_FEP_descr"
+msgstr ""
+"This prototype of a support battle vehicle based on the Object 140 chassis "
+"was developed on the initiative of its Nizhny Tagil engineers. They designed"
+" it with the Amur quadruple gun system in mind to provide the necessary "
+"firepower to protect tanks from infantry and light armored vehicles armed "
+"with anti-tank weapons. The project was not supported by the U.S.S.R.'s "
+"State Committee for Defense Technology and was therefore canceled."
+
+msgid "Object_140_FEP_short"
+msgstr "Prut"
+
 msgid "Object_140_descr"
 msgstr ""
 "An experimental medium tank. Developed between 1953 and 1958 in Nizhny Tagil"
@@ -1702,6 +1717,9 @@ msgstr "R-113"
 
 msgid "R113M_DR"
 msgstr "R-113D"
+
+msgid "R113M_FEP"
+msgstr "R-113M"
 
 msgid "R113T"
 msgstr "R113T"
@@ -4055,6 +4073,9 @@ msgstr "Great damage per shot, and good mobility and concealment"
 msgid "RTY_RCEHb"
 msgstr "RTU (\"Yasen\")"
 
+msgid "R_123B"
+msgstr "R-123B"
+
 msgid "S-51"
 msgstr "S-51"
 
@@ -4659,6 +4680,9 @@ msgstr ""
 msgid "TD-12"
 msgstr "TD-12"
 
+msgid "TD-12_FEP"
+msgstr "TD-12A"
+
 msgid "TD-30"
 msgstr "M-50D"
 
@@ -5093,6 +5117,9 @@ msgstr "Object 263"
 msgid "Turret_1_R96_Object_430"
 msgstr "Object 430"
 
+msgid "Turret_1_R97_Object_140_FEP23"
+msgstr "Object 143M"
+
 msgid "Turret_1_ST_I"
 msgstr "Object 701-1"
 
@@ -5494,6 +5521,9 @@ msgstr "V-12-6V1"
 
 msgid "V_12_7"
 msgstr "V-12-7"
+
+msgid "V_2A"
+msgstr "V-2A"
 
 msgid "V_2IS_ISU"
 msgstr "V-2IS (ISU)"
@@ -6228,9 +6258,6 @@ msgstr "122 mm M62-T3ST"
 msgid "_122mm_M62-T2_dualgun"
 msgstr "122 mm M62-SD"
 
-msgid "_122mm_M62VA"
-msgstr "122 mm M-62VA"
-
 msgid "_122mm_M62_T2"
 msgstr "122 mm M62-T2U"
 
@@ -6239,6 +6266,9 @@ msgstr "122 mm M62-T2A"
 
 msgid "_122mm_M62_TS2"
 msgstr "122 mm M62-TS2"
+
+msgid "_122mm_M_62VA"
+msgstr "122 mm M-62VA"
 
 msgid "_122mm_OF-462"
 msgstr "OF-462"
@@ -6759,8 +6789,17 @@ msgstr "UBR-20"
 msgid "_20mm_UBR_20_T_60"
 msgstr "UBR-20 (T-60)"
 
+msgid "_23mm_AZP23x4_FEP"
+msgstr "4x23 mm AZP-23"
+
 msgid "_23mm_BC-23"
 msgstr "BC-23"
+
+msgid "_23mm_BZK_FEP"
+msgstr "23 mm BZK"
+
+msgid "_23mm_BZT_FEP"
+msgstr "23 mm BZT"
 
 msgid "_23mm_PT-23TB"
 msgstr "23 mm PT-23TB"

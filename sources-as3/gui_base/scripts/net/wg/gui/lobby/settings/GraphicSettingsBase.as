@@ -87,9 +87,9 @@ package net.wg.gui.lobby.settings
       
       public var dynamicFovCheckbox:CheckBox = null;
       
-      public var RENDER_PIPELINELabel:LabelControl = null;
+      public var RENDER_PIPELINE_QUALITYLabel:LabelControl = null;
       
-      public var RENDER_PIPELINEButtonBar:RadioButtonBar = null;
+      public var RENDER_PIPELINE_QUALITYButtonBar:RadioButtonBar = null;
       
       public var TEXTURE_QUALITYLabel:LabelControl = null;
       
@@ -260,8 +260,8 @@ package net.wg.gui.lobby.settings
          this.MSAA_QUALITYLabel = null;
          this.MSAA_QUALITYValue = null;
          this.MSAA_QUALITYStepSlider = null;
-         this.RENDER_PIPELINELabel = null;
-         this.RENDER_PIPELINEButtonBar = null;
+         this.RENDER_PIPELINE_QUALITYLabel = null;
+         this.RENDER_PIPELINE_QUALITYButtonBar = null;
          this.TEXTURE_QUALITYLabel = null;
          this.TEXTURE_QUALITYValue = null;
          this.TEXTURE_QUALITYStepSlider = null;
@@ -360,8 +360,8 @@ package net.wg.gui.lobby.settings
          registerToolTip(this.fovRangeSlider,SettingsConfigHelper.FOV);
          registerToolTip(this.fovLabel,SettingsConfigHelper.FOV);
          registerToolTip(this.dynamicFovCheckbox,SettingsConfigHelper.DYNAMIC_FOV);
-         registerToolTip(this.RENDER_PIPELINEButtonBar,SettingsConfigHelper.RENDER_PIPELINE);
-         registerToolTip(this.RENDER_PIPELINELabel,SettingsConfigHelper.RENDER_PIPELINE);
+         registerToolTip(this.RENDER_PIPELINE_QUALITYButtonBar,SettingsConfigHelper.RENDER_PIPELINE_QUALITY);
+         registerToolTip(this.RENDER_PIPELINE_QUALITYLabel,SettingsConfigHelper.RENDER_PIPELINE_QUALITY);
          registerToolTip(this.TEXTURE_QUALITYLabel,SettingsConfigHelper.TEXTURE_QUALITY);
          registerToolTip(this.TEXTURE_QUALITYValue,SettingsConfigHelper.TEXTURE_QUALITY);
          registerToolTip(this.SHADOWS_QUALITYLabel,SettingsConfigHelper.SHADOWS_QUALITY);
@@ -431,8 +431,8 @@ package net.wg.gui.lobby.settings
          this.dynamicFovCheckbox = this.screenForm.dynamicFovCheckbox;
          var _loc1_:AdvancedGraphicContentForm = this.advancedForm.scrollPane.target as AdvancedGraphicContentForm;
          App.utils.asserter.assertNotNull(_loc1_,"advancedForm.scrollPane.target must be AdvancedGraphicContentForm");
-         this.RENDER_PIPELINELabel = _loc1_.RENDER_PIPELINELabel;
-         this.RENDER_PIPELINEButtonBar = _loc1_.RENDER_PIPELINEButtonBar;
+         this.RENDER_PIPELINE_QUALITYLabel = _loc1_.RENDER_PIPELINE_QUALITYLabel;
+         this.RENDER_PIPELINE_QUALITYButtonBar = _loc1_.RENDER_PIPELINE_QUALITYButtonBar;
          this.TEXTURE_QUALITYLabel = _loc1_.TEXTURE_QUALITYLabel;
          this.TEXTURE_QUALITYValue = _loc1_.TEXTURE_QUALITYValue;
          this.TEXTURE_QUALITYStepSlider = _loc1_.TEXTURE_QUALITYStepSlider;

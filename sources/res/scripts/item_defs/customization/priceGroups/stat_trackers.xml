@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<priceGroup>
+		<id>1138</id>
+		<name>statracker 50g notInShop</name>
+		<tags>notInShop</tags>
+		<price>
+			50
+			<gold/>
+		</price>
+		<notInShop>True</notInShop>
+	</priceGroup>
+</root>

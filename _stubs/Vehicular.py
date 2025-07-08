@@ -603,7 +603,35 @@ class GunEffectsController(PyComponentWrapperBase):
 	shotsPerSec = property(lambda self: None)
 	def singleShot(self, *args, **kwargs): pass
 	def startContinuousBurst(self, *args, **kwargs): pass
+	def startSpin(self, *args, **kwargs): pass
 	def stopContinuousBurst(self, *args, **kwargs): pass
+	def stopSpin(self, *args, **kwargs): pass
+	def valid(self, *args, **kwargs): pass
+
+
+class GunEffectsInfoComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'GunEffectsInfoComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	gunFireSlots = property(lambda self: None)
+	def id(self, *args, **kwargs): pass
+	shotPrefabs = property(lambda self: None)
 	def valid(self, *args, **kwargs): pass
 
 
@@ -818,6 +846,30 @@ class OnPlayerInZoneComponent(PyComponentWrapperBase):
 	exitReactionID = property(lambda self: None)
 	def id(self, *args, **kwargs): pass
 	prefabPath = property(lambda self: None)
+	def valid(self, *args, **kwargs): pass
+
+
+class OverheatValueGetter(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'Vehicular'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'OverheatValueGetter'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
 
@@ -1552,6 +1604,7 @@ class WaterSensor(PyComponentWrapperBase):
 __doc__ = None
 __name__ = 'Vehicular'
 __package__ = None
+def connectVehicleHierarchy(*args, **kwargs): pass
 def getDummyLodLink(*args, **kwargs): pass
 def getMatKindsUnderTheVehicle(*args, **kwargs): pass
 def getVehicleComponentMatrices(*args, **kwargs): pass

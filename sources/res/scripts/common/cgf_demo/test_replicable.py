@@ -1,10 +1,8 @@
-import CGF, Math
-from Event import Event
+import Math
 from cgf_demo.demo_category import DEMO_CATEGORY
-from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerReplicableComponent
+from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes
 
-@registerReplicableComponent
-class TestReplicableComponent(object):
+class TestReplicableComponentDescriptor(object):
     category = DEMO_CATEGORY
     editorTitle = 'Test Replication Types'
     replicableInt = ComponentProperty(type=CGFMetaTypes.INT, editorName='IntValue', value=777)
@@ -16,21 +14,3 @@ class TestReplicableComponent(object):
                                                                                                         'three'))
     assetIndex = ComponentProperty(type=CGFMetaTypes.INT, editorName='Default asset', value=0)
     assets = ComponentProperty(type=CGFMetaTypes.STRING_LIST, editorName='Models')
-
-    def __init__(self):
-        self.onReplicated = Event()
-
-    def set_replicableInt(self, old):
-        self.onReplicated(old, self.replicableInt)
-
-    def set_replicableFloat(self, old):
-        self.onReplicated(old, self.replicableFloat)
-
-    def set_replicableString(self, old):
-        self.onReplicated(old, self.replicableFloat)
-
-    def set_replicableVector3(self, old):
-        self.onReplicated(old, self.replicableFloat)
-
-    def set_replicableStringList(self, old):
-        self.onReplicated(old, self.replicableFloat)

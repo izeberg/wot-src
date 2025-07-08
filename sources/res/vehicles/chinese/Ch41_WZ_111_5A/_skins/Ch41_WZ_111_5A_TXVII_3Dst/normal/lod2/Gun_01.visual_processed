@@ -97,7 +97,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						colorIdMap
-						<Texture>vehicles/chinese/Ch41_WZ_111_5A/WZ_111_5A_guns_ID.dds</Texture>
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -134,5 +134,4 @@
 		<max>0.601384 0.403892 6.372044</max>
 	</boundingBox>
 	<geometrySize>37070</geometrySize>
-	<minUVDensity>0.010863</minUVDensity>
 </root>

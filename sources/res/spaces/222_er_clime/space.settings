@@ -73,7 +73,7 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>2048</width>
+					<width>2304</width>
 					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
@@ -85,7 +85,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>2048</width>
+					<width>2304</width>
 					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
@@ -97,7 +97,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>2048</width>
+					<width>2304</width>
 					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
@@ -131,4 +131,6 @@
 	</speedtree>
 	<navmeshGenerator>navgen</navmeshGenerator>
 	<enableClusteredShading>false</enableClusteredShading>
+	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
 </root>

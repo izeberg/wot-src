@@ -11,7 +11,7 @@ package net.wg.gui.lobby.vehicleCustomization.events
       
       public static const SHOW_BUY_WINDOW:String = "showBuyWindow";
       
-      public static const SHOW_PROGRESSION_DECALS_WINDOW:String = "showProgressionDecalsWindow";
+      public static const ENTRY_POINT_CLICKED:String = "onEntryPointClicked";
       
       public static const SHOW_SHOP:String = "showShop";
       
@@ -31,7 +31,7 @@ package net.wg.gui.lobby.vehicleCustomization.events
       
       public static const BUTTON_PRESSED:String = "buttonPressed";
       
-      public static const ELEMENTS_CONROLS_HIDE:String = "customizationControlsHideInvalid";
+      public static const ELEMENTS_CONTROLS_HIDE:String = "customizationControlsHideInvalid";
       
       public static const ITEMS_POPOVER_CLOSED:String = "customizationItemsPopoverStateInvalid";
       

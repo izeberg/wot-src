@@ -13,6 +13,10 @@ package net.wg.data.constants.generated
       
       public static const PROGRESSIVE_ITEMS_BROWSER_VIEW:String = "ProgressiveItemsBrowserView";
       
+      public static const INNER_ENTRY_POINT:String = "C11nInnerEntryPointUI";
+      
+      public static const INNER_ENTRY_POINT_STATS_TRACKER_ANIM:String = "EntryPointIconStatsTrackerAnimUI";
+      
       public static const CUSTOMIZATION_SHEET_ACTION_APPLY_TO_ALL_PARTS:int = 0;
       
       public static const CUSTOMIZATION_SHEET_ACTION_APPLY_TO_ALL_SEASONS:int = 1;

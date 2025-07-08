@@ -2,7 +2,6 @@ from collections import namedtuple
 import logging
 from pprint import pformat
 import BigWorld
-from adisp import adisp_async
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 _logger = logging.getLogger(__name__)
 
@@ -23,8 +22,7 @@ FestivityQuestsHangarFlag = namedtuple('FestivityQuestsHangarFlag', 'icon, iconD
 class BaseFestivityRequester(AbstractSyncDataRequester):
     dataKey = None
 
-    @adisp_async
-    def _requestCache(self, callback):
+    def _requestCache(self, callback=None):
         BigWorld.player().festivities.getCache(lambda resID, value: self._response(resID, value, callback))
 
     def _preprocessValidData(self, data):

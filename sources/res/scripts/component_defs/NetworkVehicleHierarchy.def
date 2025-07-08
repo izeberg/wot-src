@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<hierarchyInfo>
+			<Type>
+				ARRAY
+				<of>VEHICLE_HIERARCHY_INFO</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</hierarchyInfo>
+	</Properties>
+	<CellMethods/>
+	<ClientMethods/>
+	<DefaultKeyName>networkVehicleHierarchy</DefaultKeyName>
+</root>

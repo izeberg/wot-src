@@ -1111,6 +1111,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.HangarHeader;
    import net.wg.gui.lobby.hangar.PrestigeProgressInject;
    import net.wg.gui.lobby.hangar.ResearchPanel;
+   import net.wg.gui.lobby.hangar.StrengthsWeaknessesPanelInject;
    import net.wg.gui.lobby.hangar.SwitchModePanel;
    import net.wg.gui.lobby.hangar.VehPostProgressionBtn;
    import net.wg.gui.lobby.hangar.VehicleParameters;
@@ -2408,6 +2409,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.ItemBrowserDisableOverlay;
    import net.wg.gui.lobby.vehicleCustomization.PropertySheetSeasonItemPopover;
    import net.wg.gui.lobby.vehicleCustomization.StyleInfoRenderer;
+   import net.wg.gui.lobby.vehicleCustomization.controls.C11nInnerEntryPoint;
+   import net.wg.gui.lobby.vehicleCustomization.controls.C11nInnerEntryPointIcon;
    import net.wg.gui.lobby.vehicleCustomization.controls.CarouselItemRenderer;
    import net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttached;
    import net.wg.gui.lobby.vehicleCustomization.controls.CarouselRendererAttachedBase;
@@ -2427,7 +2430,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.controls.ImageHitAreaWrapper;
    import net.wg.gui.lobby.vehicleCustomization.controls.ItemSlot;
    import net.wg.gui.lobby.vehicleCustomization.controls.PriceItemRenderer;
-   import net.wg.gui.lobby.vehicleCustomization.controls.ProgressionEntryPoint;
    import net.wg.gui.lobby.vehicleCustomization.controls.RadioButtonListSelectionNavigator;
    import net.wg.gui.lobby.vehicleCustomization.controls.RadioRenderer;
    import net.wg.gui.lobby.vehicleCustomization.controls.ShopEntryPoint;
@@ -2472,6 +2474,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationBottomPanelNotificationVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationEditedKitPopoverListVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationHeaderVO;
+   import net.wg.gui.lobby.vehicleCustomization.data.CustomizationInnerEntryPointVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationItemIconRendererVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationItemPopoverHeaderVO;
    import net.wg.gui.lobby.vehicleCustomization.data.CustomizationPopoverEditedItemRendererVO;
@@ -5196,6 +5199,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_RESEARCHPANEL:Class = ResearchPanel;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_STRENGTHSWEAKNESSESPANELINJECT:Class = StrengthsWeaknessesPanelInject;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_SWITCHMODEPANEL:Class = SwitchModePanel;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_VEHICLEPARAMETERS:Class = VehicleParameters;
@@ -7766,6 +7771,10 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_STYLEINFORENDERER:Class = StyleInfoRenderer;
       
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_C11NINNERENTRYPOINT:Class = C11nInnerEntryPoint;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_C11NINNERENTRYPOINTICON:Class = C11nInnerEntryPointIcon;
+      
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CAROUSELITEMRENDERER:Class = CarouselItemRenderer;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_CAROUSELRENDERERATTACHED:Class = CarouselRendererAttached;
@@ -7803,8 +7812,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_ITEMSLOT:Class = ItemSlot;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PRICEITEMRENDERER:Class = PriceItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_PROGRESSIONENTRYPOINT:Class = ProgressionEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_CONTROLS_RADIOBUTTONLISTSELECTIONNAVIGATOR:Class = RadioButtonListSelectionNavigator;
       
@@ -7893,6 +7900,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONEDITEDKITPOPOVERLISTVO:Class = CustomizationEditedKitPopoverListVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONHEADERVO:Class = CustomizationHeaderVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONINNERENTRYPOINTVO:Class = CustomizationInnerEntryPointVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLECUSTOMIZATION_DATA_CUSTOMIZATIONITEMICONRENDERERVO:Class = CustomizationItemIconRendererVO;
       

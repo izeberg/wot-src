@@ -3,7 +3,6 @@ from gui.battle_pass.battle_pass_decorators import createBackportTooltipDecorato
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.common.awards_view_model import AwardsViewModel
 from gui.impl.gen.view_models.views.lobby.common.reward_item_model import RewardItemModel
-from gui.impl.gui_decorators import args2params
 from gui.impl.pub import ViewImpl
 from gui.impl.pub.lobby_window import LobbyNotificationWindow
 from gui.server_events.bonuses import getNonQuestBonuses, mergeBonuses, splitBonuses
@@ -11,13 +10,11 @@ from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.missions.packers.bonus import ItemBonusUIPacker, BonusUIPacker, getDefaultBonusPackersMap
 from helpers import dependency
 from skeletons.gui.game_control import IEpicBattleMetaGameController
-from uilogging.epic_battle.constants import EpicBattleLogKeys, EpicBattleLogButtons, EpicBattleLogActions
-from uilogging.epic_battle.loggers import EpicBattleTooltipLogger
 MAIN_REWARDS_LIMIT = 4
 
 class AwardsView(ViewImpl):
     __slots__ = ('__tooltipItems', '__onCloseCallback', '__onAnimationEndedCallback',
-                 '__isAnimationEnded', '__uiEpicBattleLogger')
+                 '__isAnimationEnded')
 
     def __init__(self, bonuses, onCloseCallback=None, onAnimationEnded=None):
         settings = ViewSettings(R.views.lobby.common.AwardsView())
@@ -28,7 +25,6 @@ class AwardsView(ViewImpl):
         self.__tooltipItems = {}
         self.__onCloseCallback = onCloseCallback
         self.__onAnimationEndedCallback = onAnimationEnded
-        self.__uiEpicBattleLogger = EpicBattleTooltipLogger()
 
     @property
     def viewModel(self):
@@ -49,13 +45,8 @@ class AwardsView(ViewImpl):
         else:
             return self.__tooltipItems.get(tooltipId)
 
-    def _initialize(self, *args, **kwargs):
-        super(AwardsView, self)._initialize(*args, **kwargs)
-        self.__uiEpicBattleLogger.initialize(EpicBattleLogKeys.AWARDS_VIEW.value)
-
     def _finalize(self):
         super(AwardsView, self)._finalize()
-        self.__uiEpicBattleLogger.reset()
         self.__safeCall(self.__onCloseCallback)
 
     def _onLoading(self, bonuses, *args, **kwargs):
@@ -74,16 +65,7 @@ class AwardsView(ViewImpl):
     def _getEvents(self):
         return (
          (
-          self.viewModel.onAnimationEnded, self.__onAnimationEnded),
-         (
-          self.viewModel.onClose, self.__onClose))
-
-    @args2params(str)
-    def __onClose(self, reason):
-        if reason == AwardsViewModel.CLOSE_REASON_CANCEL:
-            self.__uiEpicBattleLogger.log(EpicBattleLogActions.CLOSE, EpicBattleLogKeys.AWARDS_VIEW, EpicBattleLogKeys.AWARDS_VIEW)
-        else:
-            self.__uiEpicBattleLogger.log(EpicBattleLogActions.CLICK, EpicBattleLogButtons.AWARDS_OK, EpicBattleLogKeys.AWARDS_VIEW)
+          self.viewModel.onAnimationEnded, self.__onAnimationEnded),)
 
     def __onAnimationEnded(self):
         if not self.__isAnimationEnded:

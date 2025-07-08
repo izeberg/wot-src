@@ -8,9 +8,6 @@ from helpers import dependency, time_utils
 from skeletons.gui.game_control import IEpicBattleMetaGameController
 from gui.ClientUpdateManager import g_clientUpdateManager
 from epic_constants import EPIC_CHOICE_REWARD_OFFER_GIFT_TOKENS
-from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
-from uilogging.epic_battle.constants import EpicBattleLogKeys
-from uilogging.epic_battle.loggers import EpicBattleTooltipLogger
 EpicBattlesWidgetVO = namedtuple('EpicBattlesWidgetVO', ('epicMetaLevelIconData', 'points',
                                                          'counterValue'))
 
@@ -20,7 +17,6 @@ class EpicBattlesWidget(EpicBattlesWidgetMeta):
     def __init__(self):
         super(EpicBattlesWidget, self).__init__()
         self.__periodicNotifier = None
-        self.__uiEpicBattleLogger = EpicBattleTooltipLogger()
         return
 
     def onWidgetClick(self):
@@ -39,8 +35,6 @@ class EpicBattlesWidget(EpicBattlesWidgetMeta):
             self.__periodicNotifier.startNotification()
             g_clientUpdateManager.addCallbacks({'epicMetaGame': self.__onEpicUpdated, 
                'tokens': self.__onTokensUpdate})
-            self.__uiEpicBattleLogger.initialize(EpicBattleLogKeys.HANGAR.value, (
-             TOOLTIPS_CONSTANTS.EPIC_BATTLE_WIDGET_INFO,))
             self.__update()
             return
 
@@ -67,7 +61,6 @@ class EpicBattlesWidget(EpicBattlesWidgetMeta):
             self.__periodicNotifier = None
         super(EpicBattlesWidget, self)._dispose()
         self.__periodicNotifier = None
-        self.__uiEpicBattleLogger.reset()
         return
 
     def __buildVO(self):

@@ -55,7 +55,7 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var graphicsQualityHDSDHigh:SettingsControlProp = null;
       
-      public var RENDER_PIPELINE:SettingsControlProp = null;
+      public var RENDER_PIPELINE_QUALITY:SettingsControlProp = null;
       
       public var TEXTURE_QUALITY:SettingsControlProp = null;
       
@@ -136,7 +136,7 @@ package net.wg.gui.lobby.settings.vo.config
             "graphicsQuality":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
             "graphicsQualityHDSD":createControl(ControlsFactory.TYPE_LABEL).build(),
             "graphicsQualityHDSDHigh":createControl(ControlsFactory.TYPE_LABEL).build(),
-            "RENDER_PIPELINE":createControl(ControlsFactory.TYPE_BUTTON_BAR).build(),
+            "RENDER_PIPELINE_QUALITY":createControl(ControlsFactory.TYPE_BUTTON_BAR).build(),
             "TEXTURE_QUALITY":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "SHADOWS_QUALITY":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).build(),
             "TERRAIN_QUALITY":createControl(ControlsFactory.TYPE_STEP_SLIDER).hasLabel(true).isDependOn(SettingsConfigHelper.TERRAIN_TESSELLATION_ENABLED).build(),
@@ -193,7 +193,7 @@ package net.wg.gui.lobby.settings.vo.config
          this.graphicsQuality = null;
          this.graphicsQualityHDSD = null;
          this.graphicsQualityHDSDHigh = null;
-         this.RENDER_PIPELINE = null;
+         this.RENDER_PIPELINE_QUALITY = null;
          this.TEXTURE_QUALITY = null;
          this.SHADOWS_QUALITY = null;
          this.TERRAIN_QUALITY = null;

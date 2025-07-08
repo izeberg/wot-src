@@ -2,5 +2,9 @@
 <root>
 	<parent>content/Buildings/hd_bld_AM_001_CornerHouse_01/normal/lod2/hd_bld_AM_001_CornerHouse_01</parent>
 	<extent>150.000000</extent>
-	<nodelessVisual>content/Buildings/hd_bld_AM_001_CornerHouse_01/normal/lod1/hd_bld_AM_001_CornerHouse_01</nodelessVisual>
+	<nodefullVisual>content/Buildings/hd_bld_AM_001_CornerHouse_01/normal/lod1/hd_bld_AM_001_CornerHouse_01</nodefullVisual>
+	<visibilityBox>
+		<min>-6.334355 -1.047618 -3.936678</min>
+		<max>5.854355 10.529901 3.673215</max>
+	</visibilityBox>
 </root>

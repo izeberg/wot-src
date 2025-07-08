@@ -421,9 +421,6 @@ msgstr "Battle Pass"
 msgid "chapter/fullName/10021"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/1114"
-msgstr "Carmen de Bisonte"
-
 msgid "chapter/fullName/171"
 msgstr "Driven by Duty"
 
@@ -433,10 +430,16 @@ msgstr "Salvo Fire"
 msgid "chapter/fullName/173"
 msgstr "Perfectionist"
 
-msgid "chapter/fullNameUppercased/10021"
-msgstr "CARMEN DE BISONTE"
+msgid "chapter/fullName/174"
+msgstr "Duke Nukem"
 
-msgid "chapter/fullNameUppercased/1114"
+msgid "chapter/fullName/175"
+msgstr "Tomb Raider"
+
+msgid "chapter/fullName/176"
+msgstr "Carmen de Bisonte"
+
+msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
 
 msgid "chapter/fullNameUppercased/171"
@@ -447,6 +450,15 @@ msgstr "SALVO FIRE"
 
 msgid "chapter/fullNameUppercased/173"
 msgstr "PERFECTIONIST"
+
+msgid "chapter/fullNameUppercased/174"
+msgstr "DUKE NUKEM"
+
+msgid "chapter/fullNameUppercased/175"
+msgstr "TOMB RAIDER"
+
+msgid "chapter/fullNameUppercased/176"
+msgstr "CARMEN DE BISONTE"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -543,7 +555,7 @@ msgid "chapterChoice/vehicleInHangar/tooltip/text"
 msgstr "In Garage"
 
 msgid "chosenBonuses/bonus/battle_booster_gift"
-msgstr "Equipment directives to select from"
+msgstr "Directives to Select From"
 
 msgid "chosenBonuses/bonus/blueprint_gift"
 msgstr "National Blueprint Fragments to Select From"
@@ -846,10 +858,22 @@ msgstr ""
 "Available after all Chapters are completed. Chapters completed: "
 "%(completedChapters)/%(chaptersAmount)"
 
-msgid "postProgressionView/footer/extraChapter/description/text"
+msgid "postProgressionView/footer/extraChapter/description/174"
+msgstr "Crew members, a vehicle with 3D style, and more await. Groovy!"
+
+msgid "postProgressionView/footer/extraChapter/description/175"
+msgstr "Rare treasures await—crew members, a vehicle with 3D style, and more."
+
+msgid "postProgressionView/footer/extraChapter/description/176"
 msgstr "Dive into it for exclusive rewards and unique customization elements."
 
-msgid "postProgressionView/footer/extraChapter/title/text"
+msgid "postProgressionView/footer/extraChapter/title/174"
+msgstr "Duke Nukem is here!"
+
+msgid "postProgressionView/footer/extraChapter/title/175"
+msgstr "Tomb Raider is here!"
+
+msgid "postProgressionView/footer/extraChapter/title/176"
 msgstr "The Special Chapter is here!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
@@ -1231,7 +1255,7 @@ msgid "season/fullNameUppercased/17"
 msgstr "COMBAT READY"
 
 msgid "selectBonus/battle_booster_gift"
-msgstr "Equipment directives to select from"
+msgstr "Directives to Select From"
 
 msgid "selectBonus/blueprint_gift"
 msgstr "Blueprint Fragments to Select From"
