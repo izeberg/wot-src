@@ -365,9 +365,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function setBottomPanelTabsData(param1:CustomizationTabNavigatorVO) : void
       {
-         var _loc2_:Boolean = false;
          this.tabNavigator.setData(param1);
-         _loc2_ = param1.selectedTab == Values.DEFAULT_INT;
+         var _loc2_:Boolean = param1.selectedTab == Values.DEFAULT_INT;
          this.infoLabel.visible = _loc2_;
          this.tabNavigator.switchState(!_loc2_);
       }

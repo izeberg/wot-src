@@ -46,6 +46,9 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T50/51"
 
+msgid "Chassis_Cz04_T50_51_FEP"
+msgstr "PTV-51"
+
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34-85"
 
@@ -151,6 +154,9 @@ msgstr "LPT-67 S II型"
 msgid "Chassis_Cz29_Pzw_39"
 msgstr "Pzw.39"
 
+msgid "Chassis_Cz30_TBT"
+msgstr "TBT"
+
 msgid "Chassis_Cz32_Vz_58_Koncept"
 msgstr "Vz.58 \"熊\""
 
@@ -210,6 +216,16 @@ msgstr "LT vz.35"
 
 msgid "Cz04_T50_51"
 msgstr "TVP T50"
+
+msgid "Cz04_T50_51_FEP23"
+msgstr "PTV-51"
+
+msgid "Cz04_T50_51_FEP23_descr"
+msgstr ""
+"用于掩护装甲部队发起进攻的坦克项目，设计师认为它能够在打击敌方轻装甲目标和步兵单位的同时，防御敌方火箭助推榴弹和反坦克导弹的攻击。该项目仅存在于蓝图中。"
+
+msgid "Cz04_T50_51_FEP23_short"
+msgstr "PTV-51"
 
 msgid "Cz04_T50_51_descr"
 msgstr "?empty?"
@@ -511,6 +527,23 @@ msgstr "Pzw.39"
 msgid "Cz29_Pzw_39_short_special"
 msgstr "高射速火炮，良好的操控性"
 
+msgid "Cz30_TBT"
+msgstr "TBT"
+
+msgid "Cz30_TBT_descr"
+msgstr ""
+"20世纪50年代末，J系优先考虑掌握S系中型坦克的建造技术。与此同时，他们还尝试制造自己的坦克，其中包括TBT计划。该计划以T-10重型坦克为目标，由于铸造装甲板的使用寿命较短，遂采用锻造弯曲装甲板。该坦克基于可与中型坦克协同作战的机动重型坦克概念，但J系的军工厂未能建造出原型车。TBT仅停留在蓝图阶段。"
+
+msgid "Cz30_TBT_long_special"
+msgstr ""
+"TBT是一辆J系IX级重型坦克。与Vz.55坦克线的所有高等级坦克一样，它配备一门2连发弹夹炮。同时，与同类坦克相比，它还拥有出色的车体和炮塔装甲，炮塔上也没有车长塔弱点。凭借这些优势，TBT能在阵地战中高效作战。该坦克还具有不俗的机动性。"
+
+msgid "Cz30_TBT_short"
+msgstr "TBT"
+
+msgid "Cz30_TBT_short_special"
+msgstr "2连发弹夹炮，良好的车体和炮塔装甲"
+
 msgid "Cz32_Vz_58_Koncept"
 msgstr "Vz.58 \"熊\""
 
@@ -671,6 +704,9 @@ msgstr "HE vz.57"
 msgid "Praga_AXK"
 msgstr "普拉加 AXK"
 
+msgid "Praga_AXK_FEP"
+msgstr "普拉加 AXK M"
+
 msgid "Praga_NR"
 msgstr "普拉加 NR"
 
@@ -721,6 +757,12 @@ msgstr "RM-31T"
 
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "RM-31T(GW)"
+
+msgid "Radiostanice_RM_31T_A_FEP"
+msgstr "RM-31T M"
+
+msgid "Radiostanice_RM_31T_TBT"
+msgstr "RM-31T"
 
 msgid "Radiostanice_R_112"
 msgstr "R-112"
@@ -833,6 +875,9 @@ msgstr "LT vz.35"
 msgid "Turret_1_Cz04_T50_51"
 msgstr "TVP T50/51"
 
+msgid "Turret_1_Cz04_T50_51_FEP"
+msgstr "PTV-51"
+
 msgid "Turret_1_Cz05_T34_100"
 msgstr "T-34-100 II型"
 
@@ -901,6 +946,9 @@ msgstr "LPT-67 S I型"
 
 msgid "Turret_1_Cz29_Pzw_39"
 msgstr "Pzw.39"
+
+msgid "Turret_1_Cz30_TBT"
+msgstr "TBT"
 
 msgid "Turret_1_Cz32_Vz_58_Koncept"
 msgstr "Vz.58 \"熊\""
@@ -982,6 +1030,9 @@ msgstr "UTD-20-71TD"
 
 msgid "V12_TD"
 msgstr "V12 TD"
+
+msgid "V_12F"
+msgstr "V-12F"
 
 msgid "V_2_34"
 msgstr "V-2-34"
@@ -1156,6 +1207,9 @@ msgstr "130mm 59-130M炮"
 msgid "_130mm_Narazovy_59-56G"
 msgstr "HE vz.130M"
 
+msgid "_130mm_Narazovy_59_57"
+msgstr "HE vz.57"
+
 msgid "_130mm_Narazovy_vz_51"
 msgstr "HE vz.51"
 
@@ -1167,6 +1221,12 @@ msgstr "AP vz.130M"
 
 msgid "_130mm_Prurazny_59-56G_s_oc_jadrem"
 msgstr "APCR vz.130M"
+
+msgid "_130mm_Prurazny_59_57"
+msgstr "AP vz.57"
+
+msgid "_130mm_Prurazny_59_57_s_oc_jadrem"
+msgstr "APCR vz.57"
 
 msgid "_130mm_Prurazny_vz_51"
 msgstr "AP vz.51"
@@ -1191,6 +1251,9 @@ msgstr "130mm vz.54 2A炮"
 
 msgid "_130mm_vz_54_2A_CN"
 msgstr "130mm vz.54 2A炮(GW)"
+
+msgid "_130mm_vz_57"
+msgstr "130mm vz.57炮"
 
 msgid "_152_mm_D_20SM"
 msgstr "152mm D-20SM炮"
@@ -1365,6 +1428,15 @@ msgstr "57mm 535S双管自动炮"
 
 msgid "_57_mm_automaticky_dvojkanon_535T"
 msgstr "57mm 535T双管自动炮"
+
+msgid "_57mm_BR-281U_FEP"
+msgstr "57mm BR-281"
+
+msgid "_57mm_BR-281_FEP"
+msgstr "57mm BR-281 SP"
+
+msgid "_57mm_C68x2_FEP"
+msgstr "2x57mm C-68炮"
 
 msgid "_5_TD_DBV"
 msgstr "5TD"

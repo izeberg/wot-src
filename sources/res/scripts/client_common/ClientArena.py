@@ -376,7 +376,7 @@ class ClientArena(object):
 
     def __vehicleStatisticsAsDict(self, stats):
         return (
-         stats[0], {'frags': stats[1]})
+         stats[0], {'frags': stats[1], 'tkills': stats[2]})
 
     def runVsePlan(self, planName, params, key='', context=None):
         if self._vsePlans is not None:

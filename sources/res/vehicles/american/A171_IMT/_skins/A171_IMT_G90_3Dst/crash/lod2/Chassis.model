@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.715780 -0.006806 -3.624105</min>
+		<max>1.715780 1.061099 3.006036</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

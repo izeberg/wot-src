@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.410615 -0.272410 -1.920007</min>
+		<max>0.925138 0.242884 5.727021</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/czech/Cz30_TBT/crash/lod0/Gun_02</nodelessVisual>
+	<parent>vehicles/czech/Cz30_TBT/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+</root>

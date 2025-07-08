@@ -124,8 +124,6 @@ class _ShowPromoParser(SectionParser):
         return 'show_promo_teaser'
 
     def parse(self, section):
-        data = dict(section)
-        data['data'] = dict(section['data'])
         return proxy_data.ShowTeaserItem(PromoDataParser.parseXML(section))
 
 

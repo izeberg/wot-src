@@ -6,7 +6,7 @@ from debug_utils import LOG_CURRENT_EXCEPTION
 from items import vehicles
 from items.components import shared_components
 from soft_exception import SoftException
-from items.components.c11n_constants import ApplyArea, SeasonType, Options, ItemTags, CustomizationType, MAX_CAMOUFLAGE_PATTERN_SIZE, DecalType, HIDDEN_CAMOUFLAGE_ID, PROJECTION_DECALS_SCALE_ID_VALUES, MAX_USERS_PROJECTION_DECALS, CustomizationTypeNames, DecalTypeNames, ProjectionDecalFormTags, DEFAULT_SCALE_FACTOR_ID, CUSTOMIZATION_SLOTS_VEHICLE_PARTS, CamouflageTilingType, SLOT_TYPE_NAMES, EMPTY_ITEM_ID, SLOT_DEFAULT_ALLOWED_MODEL, EDITING_STYLE_REASONS, CustomizationDisplayType, AttachmentSize, AttachmentTags
+from items.components.c11n_constants import ApplyArea, SeasonType, Options, ItemTags, CustomizationType, MAX_CAMOUFLAGE_PATTERN_SIZE, DecalType, HIDDEN_CAMOUFLAGE_ID, PROJECTION_DECALS_SCALE_ID_VALUES, MAX_USERS_PROJECTION_DECALS, CustomizationTypeNames, DecalTypeNames, ProjectionDecalFormTags, DEFAULT_SCALE_FACTOR_ID, CUSTOMIZATION_SLOTS_VEHICLE_PARTS, CamouflageTilingType, SLOT_TYPE_NAMES, EMPTY_ITEM_ID, SLOT_DEFAULT_ALLOWED_MODEL, EDITING_STYLE_REASONS, CustomizationDisplayType, AttachmentSize, AttachmentTags, AttachmentType
 from typing import TYPE_CHECKING, Union
 from string import lower, upper
 from copy import deepcopy
@@ -245,7 +245,7 @@ class CamouflageItem(BaseCustomizationItem):
     itemType = CustomizationType.CAMOUFLAGE
     __slots__ = ('palettes', 'compatibleParts', 'componentsCovering', 'invisibilityFactor',
                  'tiling', 'tilingSettings', 'scales', 'rotation', 'glossMetallicSettings',
-                 'styleId', 'emissionParams')
+                 'styleId', 'emissionParams', 'normalMapSettings')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
@@ -260,6 +260,7 @@ class CamouflageItem(BaseCustomizationItem):
         self.glossMetallicSettings = {'glossMetallicMap': '', 'gloss': Math.Vector4(0.0), 'metallic': Math.Vector4(0.0)}
         self.styleId = None
         self.emissionParams = EmissionParams()
+        self.normalMapSettings = {'normalMap': '', 'normalStrength': 0.0}
         super(CamouflageItem, self).__init__(parentGroup)
         return
 
@@ -276,6 +277,7 @@ class CamouflageItem(BaseCustomizationItem):
         newItem.glossMetallicSettings = deepcopy(self.glossMetallicSettings)
         newItem.styleId = self.styleId
         newItem.emissionParams = deepcopy(self.emissionParams)
+        newItem.normalMapSettings = deepcopy(self.normalMapSettings)
         super(CamouflageItem, self)._copy(newItem)
         return newItem
 
@@ -320,14 +322,17 @@ class SequenceItem(BaseCustomizationItem):
 class AttachmentItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.ATTACHMENT
-    __slots__ = ('modelName', 'hangarModelName', 'crashModelName', 'sequenceId', 'attachmentLogic',
-                 'applyType', 'size')
+    __slots__ = ('modelName', 'hangarModelName', 'crashModelName', 'leftModelName',
+                 'rightModelName', 'sequenceId', 'attachmentLogic', 'applyType',
+                 'size')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
         self.modelName = ''
         self.hangarModelName = ''
         self.crashModelName = ''
+        self.leftModelName = ''
+        self.rightModelName = ''
         self.sequenceId = 0
         self.attachmentLogic = ''
         self.applyType = ''
@@ -347,18 +352,45 @@ class AttachmentItem(BaseCustomizationItem):
         return AttachmentTags.SCALABLE in self.tags
 
 
+class StatTrackerItem(AttachmentItem):
+    __metaclass__ = ReflectionMetaclass
+    __prohibitedNumbers = ()
+    itemType = CustomizationType.STAT_TRACKER
+    __slots__ = ('trackedStatistic', )
+    allSlots = AttachmentItem.allSlots + __slots__
+
+    def __init__(self, parentGroup=None):
+        self.trackedStatistic = ''
+        super(StatTrackerItem, self).__init__(parentGroup)
+
+    @classmethod
+    def setProhibitedNumbers(cls, prohibitedNumbers):
+        cls.__prohibitedNumbers = frozenset(int(number) for number in prohibitedNumbers)
+
+    @classmethod
+    def adjustToAllowedNumber(cls, number):
+        while number in cls.__prohibitedNumbers:
+            number -= 1
+
+        return number
+
+
 class ModificationItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.MODIFICATION
-    __slots__ = ('effects', )
+    __slots__ = ('effects', 'useNewWear')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
         self.effects = {}
+        self.useNewWear = False
         super(ModificationItem, self).__init__(parentGroup)
 
     def getEffectValue(self, type, default=0.0):
         return self.effects.get(type, default)
+
+    def getToggleValue(self, default=False):
+        return self.useNewWear
 
 
 class StyleItem(BaseCustomizationItem):
@@ -601,7 +633,8 @@ if IS_EDITOR:
        CustomizationType.INSIGNIA: InsigniaItem, 
        CustomizationType.SEQUENCE: SequenceItem, 
        CustomizationType.FONT: Font, 
-       CustomizationType.ATTACHMENT: AttachmentItem}
+       CustomizationType.ATTACHMENT: AttachmentItem, 
+       CustomizationType.STAT_TRACKER: StatTrackerItem}
     CUSTOMIZATION_CLASSES = {v:k for k, v in CUSTOMIZATION_TYPES.items()}
 
 class _Filter(object):
@@ -848,7 +881,7 @@ class CustomizationCache(object):
                  'itemTypes', 'priceGroupTags', '__victimStyles', 'personal_numbers',
                  'fonts', 'sequences', 'attachments', 'customizationWithProgression',
                  'itemToQuestProgressionStyle', '__questStyles', 'itemGroupByProgressionBonusType',
-                 'topVehiclesByNation')
+                 'topVehiclesByNation', 'stat_trackers')
 
     def __init__(self):
         self.priceGroupTags = {}
@@ -869,6 +902,7 @@ class CustomizationCache(object):
         self.fonts = {}
         self.sequences = {}
         self.attachments = {}
+        self.stat_trackers = {}
         self.__victimStyles = {}
         self.customizationWithProgression = {}
         self.itemToQuestProgressionStyle = {}
@@ -884,7 +918,8 @@ class CustomizationCache(object):
            CustomizationType.PROJECTION_DECAL: self.projection_decals, 
            CustomizationType.INSIGNIA: self.insignias, 
            CustomizationType.SEQUENCE: self.sequences, 
-           CustomizationType.ATTACHMENT: self.attachments}
+           CustomizationType.ATTACHMENT: self.attachments, 
+           CustomizationType.STAT_TRACKER: self.stat_trackers}
         super(CustomizationCache, self).__init__()
         return
 
@@ -1083,7 +1118,7 @@ def _adjustSerialNumber(component, style, serialNumbersStorage, force=False):
 def _validateItem(typeName, item, season, tokens, vehType, styleID):
     if not item.matchVehicleType(vehType):
         raise SoftException(('{} {} incompatible vehicle {}').format(typeName, item.id, vehType))
-    if not item.season & season:
+    if not item.season & season or season == SeasonType.ALL and item.season != SeasonType.ALL:
         raise SoftException(('{} {} incompatible season {}').format(typeName, item.id, season))
     if not item.isUnlocked(tokens):
         raise SoftException(('{} {} locked').format(typeName, item.id))
@@ -1334,11 +1369,11 @@ def getAvailableDecalRegions(vehDescr):
 
 
 def splitIntDescr(intDescr):
-    itemType, customizationType, id = items.parseIntCompactDescr(intDescr)
-    if itemType != 12 or customizationType not in CustomizationType.RANGE:
+    itemType, customizationType, itemId = items.parseIntCompactDescr(intDescr)
+    if itemType != items.ITEM_TYPES.customizationItem or customizationType not in CustomizationType.RANGE:
         raise SoftException('intDescr is not correct customization item int descriptor', intDescr)
     return (
-     customizationType, id)
+     customizationType, itemId)
 
 
 def validateCustomizationEnabled(gameParams):
@@ -1350,7 +1385,7 @@ def validateCustomizationTypeEnabled(gameParams, customizationType):
 
 
 def getVehicleAttachmentSlotParams(vehicleDescr, vehicleSlotId):
-    return getVehicleSlotParams('attachment', vehicleDescr, vehicleSlotId)
+    return getVehicleSlotParams(SLOT_TYPE_NAMES.ATTACHMENT, vehicleDescr, vehicleSlotId)
 
 
 def getVehicleProjectionDecalSlotParams(vehicleDescr, vehicleSlotId, partNames=CUSTOMIZATION_SLOTS_VEHICLE_PARTS):
@@ -1371,6 +1406,10 @@ def getVehicleSlotParams(slotTypeName, vehicleDescr, vehicleSlotId, partNames=CU
 
 def isPersonalNumberAllowed(personalNumber):
     return personalNumber not in PersonalNumberItem.getProhibitedNumbers()
+
+
+def adjustToAllowedStatTrackerNumber(number):
+    return StatTrackerItem.adjustToAllowedNumber(number)
 
 
 def getAvailableSlotsCount(item, vehicleDescriptor):
@@ -1422,4 +1461,8 @@ def getSlotType(itemType, decalType=None):
         slotType = SLOT_TYPE_NAMES.INSIGNIA
     elif itemType == CustomizationType.PERSONAL_NUMBER:
         slotType = SLOT_TYPE_NAMES.INSCRIPTION
+    elif itemType == CustomizationType.ATTACHMENT:
+        slotType = SLOT_TYPE_NAMES.ATTACHMENT
+    elif itemType == CustomizationType.STAT_TRACKER:
+        slotType = SLOT_TYPE_NAMES.STAT_TRACKER
     return slotType

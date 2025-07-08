@@ -1,7 +1,6 @@
 import typing, operator
 from collections import defaultdict
 import BigWorld, personal_missions
-from adisp import adisp_async, adisp_process
 from constants import BATTLE_MODE_VEHICLE_TAGS, MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from gui.server_events import event_items
 from gui.server_events.finders import BRANCH_TO_OPERATION_IDS
@@ -16,6 +15,7 @@ from shared_utils import first
 from skeletons.account_helpers.settings_core import ISettingsCore, ISettingsCache
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
+from wg_async import wg_await, wg_async
 _SETTINGS_SYNCED = 1
 _EVENTS_CACHE_UPDATED = 2
 _ALL_SYNCED = _SETTINGS_SYNCED | _EVENTS_CACHE_UPDATED
@@ -238,15 +238,12 @@ class PersonalMissionsCache(object):
         else:
             return False
 
-    @adisp_async
-    @adisp_process
-    def questsProgressRequest(self, callback=None):
+    @wg_async
+    def questsProgressRequest(self):
         for branch in PM_BRANCH.ACTIVE_BRANCHES:
             qp = self.getQuestsProgress(branch)
             if qp:
-                yield qp.request()
-
-        callback(self)
+                yield wg_await(qp.request())
 
     def isQuestsProgressSynced(self):
         for qd in self.__questsData.itervalues():

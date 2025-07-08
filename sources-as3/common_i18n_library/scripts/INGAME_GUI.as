@@ -85,6 +85,8 @@ package
       
       public static const PLAYER_ERRORS_CANT_SHOOT_GUN_LOCKED:String = "#ingame_gui:player_errors/cant_shoot/gun_locked";
       
+      public static const PLAYER_ERRORS_CANT_SHOOT_GUN_OVERHEATED:String = "#ingame_gui:player_errors/cant_shoot/gun_overheated";
+      
       public static const PLAYER_ERRORS_CANT_SWITCH_ENGINE_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/engine_destroyed";
       
       public static const PLAYER_ERRORS_CANT_SWITCH_GUN_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/gun_destroyed";

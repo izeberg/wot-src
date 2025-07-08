@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/japan/J42_Chi_Se/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.364911 -0.217149 -0.168817</min>
+		<max>0.261088 0.421027 4.559999</max>
+	</visibilityBox>
+</root>

@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>
-			-8.91323 -1.87216 -18.261
-			<!--BW_String-->
-		</min>
-		<max>
-			6.41186 8.04202 18.3004
-			<!--BW_String-->
-		</max>
+		<min>-8.913227 -1.872161 -18.260969</min>
+		<max>6.411861 8.042020 18.300440</max>
 	</visibilityBox>
+	<extent>75.000000</extent>
+	<nodefullVisual>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod0/hd_bld_SU_001_Piggaery</nodefullVisual>
 	<parent>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod1/hd_bld_SU_001_Piggaery</parent>
-	<extent>
-		75.0
-		<!--BW_String-->
-	</extent>
-	<nodelessVisual>content/Buildings/hd_bld_SU_001_Piggaery/normal/lod0/hd_bld_SU_001_Piggaery</nodelessVisual>
 </root>

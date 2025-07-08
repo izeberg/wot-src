@@ -276,7 +276,7 @@ class _PreBattleDispatcher(ListenersCollection):
             return PlayerDecorator()
 
     def doAction(self, action=None):
-        if not (g_currentVehicle.isPresent() or g_currentPreviewVehicle.isPresent() or self.__entity.canDoActionWithoutVehicle()):
+        if not (g_currentVehicle.isPresent() or g_currentPreviewVehicle.isPresent() or self.__entity.canDoActionWithoutVehicle() or self.__entity.hasSpecialVehicles()):
             SystemMessages.pushMessage(messages.getInvalidVehicleMessage(PREBATTLE_RESTRICTION.VEHICLE_NOT_PRESENT), type=SystemMessages.SM_TYPE.Error)
             return False
         LOG_DEBUG('Do GUI action', action)

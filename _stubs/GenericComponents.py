@@ -137,6 +137,7 @@ class AttachToTerrain(PyComponentWrapperBase):
 	def valid(self, *args, **kwargs): pass
 	yCutOffDistance = property(lambda self: None)
 
+COMPOSITION_ROOT_SLOT_NAME = u'compositionRootSlot'
 
 class ControlModeStatus(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
@@ -183,6 +184,7 @@ class DecalComponent(PyComponentWrapperBase):
 	def __subclasshook__(*args, **kwargs): pass
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
+	def getStickerCount(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
 	partHandle = property(lambda self: None)
 	receiver = property(lambda self: None)
@@ -216,6 +218,30 @@ class DistToTerrain(PyComponentWrapperBase):
 	value = property(lambda self: None)
 
 
+class DynamicDamageSticker(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'DynamicDamageSticker'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
+	def valid(self, *args, **kwargs): pass
+
+
 class DynamicModelComponent(PyComponentWrapperBase):
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
@@ -234,9 +260,12 @@ class DynamicModelComponent(PyComponentWrapperBase):
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
+	def attachToCompound(self, *args, **kwargs): pass
 	def clear(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
+	def detachFromCompound(self, *args, **kwargs): pass
 	def getModelName(self, *args, **kwargs): pass
+	def getRootSuperModel(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
 	def setMaterialParameterFloat(self, *args, **kwargs): pass
 	def setMaterialParameterVector2(self, *args, **kwargs): pass
@@ -397,6 +426,30 @@ class HierarchyComponent(PyComponentWrapperBase):
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
 	parent = property(lambda self: None)
+	def valid(self, *args, **kwargs): pass
+
+
+class MatrixGetterFollowerComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'MatrixGetterFollowerComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
 
@@ -804,50 +857,6 @@ class TransformComponent(PyComponentWrapperBase):
 	worldRotationYPR = property(lambda self: None)
 	worldScale = property(lambda self: None)
 	worldTransform = property(lambda self: None)
-
-
-class ComponentManager(pybind11_object):
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(*args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(self, *args, **kwargs): pass
-	__module__ = 'CGF'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'ComponentManager'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	clock = property(lambda self: None)
-	def getManager(self, *args, **kwargs): pass
-	spaceID = property(lambda self: None)
-
-
-class TransformManager(ComponentManager):
-	def __delattr__(*args, **kwargs): pass
-	__doc__ = None
-	def __format__(*args, **kwargs): pass
-	def __getattribute__(*args, **kwargs): pass
-	def __hash__(*args, **kwargs): pass
-	def __init__(*args, **kwargs): pass
-	__module__ = 'GenericComponents'
-	def __new__(*args, **kwargs): pass
-	__qualname__ = 'TransformManager'
-	def __reduce__(*args, **kwargs): pass
-	def __reduce_ex__(*args, **kwargs): pass
-	def __repr__(*args, **kwargs): pass
-	def __setattr__(*args, **kwargs): pass
-	def __sizeof__(*args, **kwargs): pass
-	def __str__(*args, **kwargs): pass
-	def __subclasshook__(*args, **kwargs): pass
-	clock = property(lambda self: None)
-	def getManager(self, *args, **kwargs): pass
-	spaceID = property(lambda self: None)
 
 
 class VSEComponent(PyComponentWrapperBase):

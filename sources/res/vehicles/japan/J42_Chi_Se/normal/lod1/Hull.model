@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/japan/J42_Chi_Se/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.826753 -0.658481 -3.950033</min>
+		<max>1.826753 0.749204 3.675864</max>
+	</visibilityBox>
+</root>

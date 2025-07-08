@@ -175,8 +175,8 @@ class DetachedTurret(BigWorld.Entity, ScriptGameObject):
         return
 
     def showDamageFromShot(self, points, effectsIndex):
-        decodedPoints = DamageFromShotDecoder.decodeHitPoints(points, self.collisions)
-        for shotPoint in decodedPoints:
+        parsedPoints = DamageFromShotDecoder.parseHitPoints(points, self.collisions)
+        for shotPoint in parsedPoints:
             if shotPoint.componentName == TankPartNames.TURRET or shotPoint.componentName == TankPartNames.GUN:
                 self.__hitEffects.showHit(shotPoint, effectsIndex, shotPoint.componentName)
             else:

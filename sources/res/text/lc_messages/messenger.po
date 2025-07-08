@@ -2417,7 +2417,7 @@ msgid "serviceChannelMessages/epicReward/battlePassPoints"
 msgstr "• 战斗通行证点数"
 
 msgid "serviceChannelMessages/epicReward/brochure_gift"
-msgstr "• 通用手册"
+msgstr "• 通用简册"
 
 msgid "serviceChannelMessages/epicReward/crystal"
 msgstr "• 战争债券"
@@ -2428,8 +2428,14 @@ msgstr "• 战斗储备积分"
 msgid "serviceChannelMessages/epicReward/expequipments_gift"
 msgstr "• 自选试验型配件"
 
+msgid "serviceChannelMessages/epicReward/mentoringLicense_gift"
+msgstr "• 授业许可"
+
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• 再训练命令"
+
+msgid "serviceChannelMessages/epicReward/universalBook_gift"
+msgstr "• 通用手册"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "您已获得周年纪念币：%(eventCoin)s。"

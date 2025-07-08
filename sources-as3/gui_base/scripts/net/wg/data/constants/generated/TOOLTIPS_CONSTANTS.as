@@ -563,6 +563,10 @@ package net.wg.data.constants.generated
       
       public static const FUN_RANDOM_REWARDS:String = "funRandomRewards";
       
+      public static const FUN_RANDOM_CAROUSEL_VEHICLE:String = "funRandomCarouselVehicle";
+      
+      public static const FUN_RANDOM_VEHICLE:String = "funRandomVehicle";
+      
       public static const BLOCKS_DEFAULT_UI:String = "ToolTipInblocksDefaultUI";
       
       public static const TANKMEN_UI:String = "ToolTipTankmenUI";
@@ -841,7 +845,7 @@ package net.wg.data.constants.generated
       
       public static const ACCOUNT_COMPLETION_SET:Array = [ACCOUNT_COMPLETION];
       
-      public static const FUN_RANDOM_LOBBY_SET:Array = [FUN_RANDOM_CALENDAR_DAY,FUN_RANDOM_MODE_SELECTOR_CALENDAR_DAY,FUN_RANDOM_REWARDS];
+      public static const FUN_RANDOM_LOBBY_SET:Array = [FUN_RANDOM_CALENDAR_DAY,FUN_RANDOM_MODE_SELECTOR_CALENDAR_DAY,FUN_RANDOM_CAROUSEL_VEHICLE,FUN_RANDOM_VEHICLE,FUN_RANDOM_REWARDS];
       
       public static const REFERRAL_PROGRAM_SET:Array = [REFERRAL_AWARDS];
       

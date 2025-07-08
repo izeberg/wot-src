@@ -62,6 +62,7 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
         super(CustomizationBottomPanel, self)._populate()
         self.__isInited = False
         self.__isEscHelpSeen = False
+        self.__isEscHelpVisible = False
         self.__ctx = self.service.getCtx()
         self._carouselDP = CustomizationCarouselDataProvider(self._carouseItemWrapper)
         self._carouselDP.setFlashObject(self.getDp())
@@ -120,6 +121,7 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
         self.__serverSettings = None
         self.__isInited = False
         self.__isEscHelpSeen = False
+        self.__isEscHelpVisible = False
         self.__uiLogger = None
         super(CustomizationBottomPanel, self)._dispose()
         return
@@ -263,13 +265,16 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
            'unseenTabs': unseenTabs})
 
     def __getItemFilter(self, tabId):
-        if self.__ctx.modeId == CustomizationModes.STYLE_2D_EDITABLE:
-            return self.__ctx.mode.style.isItemInstallable
-        if tabId == CustomizationTabs.STYLES_2D:
-            return lambda item: not item.is3D
-        if tabId == CustomizationTabs.STYLES_3D:
-            return lambda item: item.is3D
-        return lambda item: not item.isStyleOnly
+        if tabId == CustomizationTabs.STAT_TRACKERS:
+            return None
+        else:
+            if self.__ctx.modeId == CustomizationModes.STYLE_2D_EDITABLE:
+                return self.__ctx.mode.style.isItemInstallable
+            if tabId == CustomizationTabs.STYLES_2D:
+                return lambda item: not item.is3D
+            if tabId == CustomizationTabs.STYLES_3D:
+                return lambda item: item.is3D
+            return lambda item: not item.isStyleOnly
 
     def __resetTabs(self):
         self.as_setBottomPanelTabsDataS({'tabsDP': [], 'selectedTab': -1})
@@ -281,8 +286,7 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
            'selectedTab': selectedTab})
 
     def __setFooterInitData(self):
-        self.as_setBottomPanelInitDataS({'tabsAvailableRegions': CustomizationTabs.MODES[CustomizationModes.CUSTOM], 
-           'filtersVO': {'popoverAlias': VIEW_ALIAS.CUSTOMIZATION_FILTER_POPOVER, 
+        self.as_setBottomPanelInitDataS({'filtersVO': {'popoverAlias': VIEW_ALIAS.CUSTOMIZATION_FILTER_POPOVER, 
                          'mainBtn': {'value': RES_ICONS.MAPS_ICONS_BUTTONS_FILTER, 
                                      'tooltip': VEHICLE_CUSTOMIZATION.CAROUSEL_FILTER_MAINBTN}, 
                          'hotFilters': [
@@ -316,23 +320,30 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
     def __getDecalSlotMessage(self):
         return {'message': ('{}{}\n{}').format(icons.makeImageTag(RES_ICONS.MAPS_ICONS_LIBRARY_ATTENTIONICONFILLED, vSpace=-3), text_styles.neutral(backport.text(R.strings.vehicle_customization.carousel.message.default.header())), text_styles.main(backport.text(R.strings.vehicle_customization.carousel.message.propertysheet())))}
 
+    def __getNoStatTrackersMessage(self):
+        return {'message': ('{}\n{}').format(text_styles.middleTitle(backport.text(R.strings.vehicle_customization.carousel.message.statTracker.default.header())), text_styles.main(backport.text(R.strings.vehicle_customization.carousel.message.statTracker.default.description())))}
+
     def __getFallbackMessage(self):
         selectedSlot = self.__ctx.mode.selectedSlot
         isEmptyTab = not self._carouselDP.collection
+        hasNoItemsForTab = not self._carouselDP.getItemsData()
+        tabId = self.__ctx.mode.tabId
         if selectedSlot is not None:
             if selectedSlot.slotType == GUI_ITEM_TYPE.PROJECTION_DECAL:
                 return self.__getDecalSlotMessage()
-        if self.__ctx.mode.tabId == CustomizationTabs.ATTACHMENTS:
+        if tabId == CustomizationTabs.ATTACHMENTS:
             attachments = g_currentVehicle.itemsCache.items.getItems(GUI_ITEM_TYPE.ATTACHMENT, REQ_CRITERIA.CUSTOMIZATION.ON_ACCOUNT | REQ_CRITERIA.CUSTOM(lambda item: not item.descriptor.isHiddenInUI()))
             if not attachments:
                 return self.__getNoAttachementMessage()
             if not vehicleHasSlot(GUI_ITEM_TYPE.ATTACHMENT, g_currentVehicle.item):
                 return self.__getUnsupportAttachementMessage()
-            if isEmptyTab:
+            if hasNoItemsForTab:
                 return self.__getNoAttachementMessage()
-        if self.__ctx.mode.tabId == CustomizationTabs.PROJECTION_DECALS and isEmptyTab:
+        if tabId == CustomizationTabs.PROJECTION_DECALS and isEmptyTab:
             return self.__getNoDecalMessage()
         else:
+            if tabId == CustomizationTabs.STAT_TRACKERS and hasNoItemsForTab:
+                return self.__getNoStatTrackersMessage()
             return self.__getFilterMessage()
 
     def __buildCustomizationCarouselDataVO(self):
@@ -548,6 +559,7 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
         self.__rebuildCarousel()
         self.__updateStyleLabel()
         self.__setNotificationCounters()
+        self.__updatefilterFallbackData()
 
     def __onVehicleChanged(self):
         self._carouselDP.invalidateItems()
@@ -568,15 +580,22 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
         self.__scrollToNewItem()
 
     def __updateHelpMessage(self):
-        visibility = False
-        if self.__ctx.modeId == CustomizationModes.STYLE_2D_EDITABLE and not self.__isEscHelpSeen:
-            self.__isEscHelpSeen = True
-            visibility = True
-        self.as_updateEscHelpMessageS(visibility)
+        tabId = self.__ctx.mode.tabId
+        if self.__ctx.mode.prevTabId == CustomizationTabs.STAT_TRACKERS:
+            self.__isEscHelpVisible = False
+        elif self.__ctx.modeId == CustomizationModes.STYLE_2D_EDITABLE or tabId == CustomizationTabs.STAT_TRACKERS:
+            if not self.__isEscHelpSeen:
+                self.__isEscHelpSeen = True
+                self.__isEscHelpVisible = True
+        else:
+            self.__isEscHelpVisible = False
+        self.as_updateEscHelpMessageS(self.__isEscHelpVisible)
 
     def __updatePopoverBtn(self):
         itemsPopoverBtnEnabled = False
-        if self.__ctx.modeId != CustomizationModes.STYLE_3D:
+        if self.__ctx.isInStyleMode(CustomizationModes.STYLE_3D):
+            itemsPopoverBtnEnabled = self.__ctx.hasCommonItems()
+        else:
             for outfit in self.__ctx.mode.outfits.itervalues():
                 for intCD, component, _, _, _ in outfit.itemsFull():
                     isMatchingProjection = component.customType == ProjectionDecalComponent.customType and component.matchingTag is not None
@@ -625,6 +644,7 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
         self.__updateHints()
         self.__updatefilterFallbackData()
         self.__updateVehiclesSidebarBtn()
+        self.__updateHelpMessage()
         if itemCD is not None:
             self.__scrollToItem(itemCD)
         elif self._selectedItem is None:
@@ -648,7 +668,6 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
         self.__setFooterInitData()
         self.__refreshHotFilters()
         self.__updatePopoverBtn()
-        self.__updateHelpMessage()
 
     def __onChangesCanceled(self):
         self.__updateTabs()
@@ -739,7 +758,7 @@ class CustomizationBottomPanel(CustomizationBottomPanelMeta):
 
     def __updateStageSwitcherVisibility(self):
         newVisibility = False
-        if self.__ctx.modeId in CustomizationModes.BASE_STYLES:
+        if self.__ctx.mode.tabId in CustomizationTabs.STYLES:
             styleItem = self.__ctx.mode.currentOutfit.style
             if styleItem:
                 newVisibility = styleItem.isProgression

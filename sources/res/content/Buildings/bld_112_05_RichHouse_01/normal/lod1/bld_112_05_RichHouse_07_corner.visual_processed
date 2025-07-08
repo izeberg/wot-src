@@ -75,7 +75,7 @@
 						diffuseMap
 						<Texture>content/Buildings/bld_112_04_MiddleHouse_01/bld_112_04_MiddleHouse_details_AM.dds</Texture>
 					</property>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
 						g_enableTerrainBlending
@@ -92,5 +92,4 @@
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>477976</geometrySize>
-	<minUVDensity>0.000228</minUVDensity>
 </root>

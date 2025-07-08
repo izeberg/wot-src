@@ -22,6 +22,16 @@
 			<UUID>e3bd8e95-d558-3478-a065-0556ca47d354</UUID>
 			<flags>8</flags>
 		</GameObject>
+		<GameObject>
+			<name>start_spin_event</name>
+			<UUID>ad03e737-bcea-4a25-8cdf-874300b9f0b3</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>stop_spin_event</name>
+			<UUID>e0b20196-fa41-440d-9beb-13720dfcc137</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -49,6 +59,26 @@
 			</component>
 			<component>
 				<UUID>e3bd8e95-d558-3478-a065-0556ca47d354</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ad03e737-bcea-4a25-8cdf-874300b9f0b3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e0b20196-fa41-440d-9beb-13720dfcc137</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -133,6 +163,42 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>ad03e737-bcea-4a25-8cdf-874300b9f0b3</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e0b20196-fa41-440d-9beb-13720dfcc137</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>GunEffect</type>
@@ -164,6 +230,26 @@
 					<property>
 						<name>effectMask</name>
 						<value>4</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ad03e737-bcea-4a25-8cdf-874300b9f0b3</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectMask</name>
+						<value>32</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e0b20196-fa41-440d-9beb-13720dfcc137</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effectMask</name>
+						<value>64</value>
 					</property>
 				</config>
 			</component>
@@ -261,6 +347,66 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>ad03e737-bcea-4a25-8cdf-874300b9f0b3</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>isPlayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>priority</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>wwSoundPC</name>
+						<value>spin_auto_shoot_start_PC</value>
+					</property>
+					<property>
+						<name>wwSoundNPC</name>
+						<value>spin_auto_shoot_start_NPC</value>
+					</property>
+					<property>
+						<name>audioOutput</name>
+						<link>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e0b20196-fa41-440d-9beb-13720dfcc137</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>isPlayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>priority</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>wwSoundPC</name>
+						<value>spin_auto_shoot_stop_PC</value>
+					</property>
+					<property>
+						<name>wwSoundNPC</name>
+						<value>spin_auto_shoot_stop_NPC</value>
+					</property>
+					<property>
+						<name>audioOutput</name>
+						<link>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</link>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>KineticEnergyGetter</type>
@@ -280,6 +426,14 @@
 		</ComponentPool>
 		<ComponentPool>
 			<type>RemainingAmmoClipPercentGetter</type>
+			<version>1</version>
+			<component>
+				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>OverheatValueGetter</type>
 			<version>1</version>
 			<component>
 				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
@@ -364,6 +518,27 @@
 											<property>
 												<name>type</name>
 												<value>3</value>
+											</property>
+											<property>
+												<name>value</name>
+												<value>0</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+							<item>
+								<object>
+									<property>
+										<name>name</name>
+										<value>RTPC_ext_acann_overheat</value>
+									</property>
+									<property>
+										<name>rtpc</name>
+										<object>
+											<property>
+												<name>type</name>
+												<value>5</value>
 											</property>
 											<property>
 												<name>value</name>

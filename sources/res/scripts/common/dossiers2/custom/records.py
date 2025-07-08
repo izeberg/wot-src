@@ -3460,9 +3460,9 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_17', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_2', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_17extra_1', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_3', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_17extra_2', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_4', 'p', 'B', 1),
  (
@@ -5212,8 +5212,8 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'BattlePassCommonPr_NY25'): 2009, 
    ('singleAchievements', 'BattlePassCommonPr_16'): 2010, 
    ('singleAchievements', 'BattlePassCommonPr_17'): 2011, 
-   ('singleAchievements', 'BPReserveAchievement_2'): 2012, 
-   ('singleAchievements', 'BPReserveAchievement_3'): 2013, 
+   ('singleAchievements', 'BattlePassCommonPr_17extra_1'): 2012, 
+   ('singleAchievements', 'BattlePassCommonPr_17extra_2'): 2013, 
    ('singleAchievements', 'BPReserveAchievement_4'): 2014, 
    ('singleAchievements', 'BPReserveAchievement_5'): 2015, 
    ('singleAchievements', 'BPReserveAchievement_6'): 2016, 
@@ -5248,7 +5248,8 @@ RECORD_DB_IDS.update({('vehTypeFrags', ''): 863,
    ('comp7CutArchiveGriffin', ''): 1913, 
    ('vehicleAchievements', ''): 1936, 
    ('customizationAchievements', ''): 1937, 
-   ('comp7CutArchivePegasus', ''): 1999})
+   ('comp7CutArchivePegasus', ''): 1999, 
+   ('statTrackersVehStatsCut', ''): 2023})
 BATTLE_HERO_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor in [
  (
   'achievements', 'warrior'),

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.051430 -0.000140 -1.762489</min>
+		<max>1.051430 1.882188 1.108527</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

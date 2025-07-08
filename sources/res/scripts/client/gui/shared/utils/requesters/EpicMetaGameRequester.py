@@ -1,5 +1,4 @@
 import typing, BigWorld
-from adisp import adisp_async
 from gui.shared.utils.requesters.abstract import AbstractSyncDataRequester
 from skeletons.gui.shared.utils.requesters import IEpicMetaGameRequester
 
@@ -38,8 +37,7 @@ class EpicMetaGameRequester(AbstractSyncDataRequester, IEpicMetaGameRequester):
             return self.getCacheValue('famePts', 0) / self.battleCount
         return 0
 
-    @adisp_async
-    def _requestCache(self, callback):
+    def _requestCache(self, callback=None):
         BigWorld.player().epicMetaGame.getCache(lambda resID, value: self._response(resID, value, callback))
 
     def _preprocessValidData(self, data):

@@ -187,6 +187,9 @@ msgstr "SHB-1"
 msgid "Chassis_J41_Type_68_2"
 msgstr "SHB-1-2"
 
+msgid "Chassis_J42_Chi_Se"
+msgstr "十三式重战"
+
 msgid "Chassis_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -624,6 +627,23 @@ msgstr ""
 msgid "J41_Type_68_short"
 msgstr "六八式"
 
+msgid "J42_Chi_Se"
+msgstr "十三式重战"
+
+msgid "J42_Chi_Se_descr"
+msgstr ""
+"1943年，R系陆军代表团在库默斯多夫观摩了D系\"虎\"式E型重型坦克的演示，并对该坦克印象深刻。他们随即决定为R系陆军打造一辆类似的坦克。设计采用大量D系坦克的技术方案，本有望大获成功。然而到1945年，R系内部局势已极度恶化，建造坦克面临重重挑战。正因如此，R系战时最后一辆重型坦克的命运就此终结。"
+
+msgid "J42_Chi_Se_long_special"
+msgstr ""
+"十三式重战是一辆R系VIII级重型坦克。它拥有相对于重型坦克来说良好的机动性，装甲也不错。其火炮性能全面，集良好的精度、平均每分钟损伤和穿透力于一身。这辆坦克的主要特点是其出色的火炮俯角，使其能够利用各种点位展开攻击。"
+
+msgid "J42_Chi_Se_short"
+msgstr "十三式重战"
+
+msgid "J42_Chi_Se_short_special"
+msgstr "出色的火炮俯角，良好的机动性"
+
 msgid "J43_Type_4_Ju-To"
 msgstr "七式重战"
 
@@ -683,6 +703,9 @@ msgstr "JAN/GRC-4Z"
 
 msgid "Kawasaki_Ha_60_LB"
 msgstr "川崎 Ha-60-lb"
+
+msgid "Kawasaki_Ha_60_LC"
+msgstr "川崎 Ha-60-lc"
 
 msgid "Kawasaki_Ha_9_I"
 msgstr "川崎 Ha-9-l"
@@ -924,6 +947,9 @@ msgstr "SHB-2"
 msgid "Turret_1_J41_Type_68"
 msgstr "SHB-1"
 
+msgid "Turret_1_J42_Chi_Se"
+msgstr "十三式重战"
+
 msgid "Turret_1_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -1050,6 +1076,12 @@ msgstr "AP 试制二式特 甲型"
 msgid "_105mm_AP_Experimental_Type2_TS"
 msgstr "AP 试制二式特 乙型"
 
+msgid "_105mm_AP_Experimental_Type5_TK"
+msgstr "AP 试制五式特 甲型"
+
+msgid "_105mm_AP_Experimental_Type5_TS"
+msgstr "AP 试制五式特 乙型"
+
 msgid "_105mm_AP_M68"
 msgstr "AP 六八式通常弹"
 
@@ -1131,6 +1163,9 @@ msgstr "HE 九一式"
 msgid "_105mm_HE_Type92"
 msgstr "HE 九二式"
 
+msgid "_105mm_HE_Type93"
+msgstr "HE 九三式"
+
 msgid "_105mm_HE_Type_1_Ni"
 msgstr "HE 一式II"
 
@@ -1184,6 +1219,9 @@ msgstr "HE 一四式 L/34通常弹"
 
 msgid "_105mm_Type_14_L34_2"
 msgstr "10.5cm 一四式 L/34炮"
+
+msgid "_105mm_Type_5_Se"
+msgstr "105mm 五式重战车炮"
 
 msgid "_105mm_Type_92_Gun_Mod1952"
 msgstr "105mm 九二式 SHA-1炮"
@@ -1793,6 +1831,9 @@ msgstr "三式甲型B"
 
 msgid "_Type3_Ko_BP"
 msgstr "三式改"
+
+msgid "_Type3_Ko_Se"
+msgstr "三式重战甲型"
 
 msgid "_Type3_Ko_notInShop"
 msgstr "三式甲型"

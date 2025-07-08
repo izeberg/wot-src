@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.510818 -0.670026 -3.092087</min>
+		<max>1.508636 0.736834 3.729561</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F120_Projet_Louis/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/french/F120_Projet_Louis/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

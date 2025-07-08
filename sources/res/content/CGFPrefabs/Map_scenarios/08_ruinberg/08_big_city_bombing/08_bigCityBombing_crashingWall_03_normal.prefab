@@ -89,136 +89,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Transform</type>
-			<version>1</version>
-			<component>
-				<UUID>076ff286-7146-4544-9534-93f5453bb05f</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>cfe3183b-460d-4fa8-9c62-826bf6df9461</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>0.999997 0.999997 0.999997</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 2.95222 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>5b61187a-1267-4658-8fda-01d24423bd01</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-2.35501 -3.55546 8.3048
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>0.999996 0.999997 0.999996</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 1.41005 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>d9597f7f-3e45-31b7-8167-39e0b12946b9</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>0.999997 0.999997 0.999997</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 2.95222 0
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>cb99d830-4287-33f9-8b05-0a9d87211ce9</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>ebde6691-4c26-3a05-b90b-e730addbbdda</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-1.181 0.21114 -15.6593
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0.00409891 -1.77099 -2.63101e-08
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>SequenceComponent</type>
 			<version>3</version>
 			<component>
@@ -235,7 +105,7 @@
 					</property>
 					<property>
 						<name>pauseOnEnd</name>
-						<value>1</value>
+						<value>0</value>
 					</property>
 					<property>
 						<name>alwaysEnabled</name>
@@ -346,6 +216,136 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>076ff286-7146-4544-9534-93f5453bb05f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cfe3183b-460d-4fa8-9c62-826bf6df9461</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>0.999997 0.999997 0.999997</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 2.95222 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b61187a-1267-4658-8fda-01d24423bd01</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-2.35501 -3.55546 8.3048
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>0.999996 0.999997 0.999996</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 1.41005 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d9597f7f-3e45-31b7-8167-39e0b12946b9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>0.999997 0.999997 0.999997</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 2.95222 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cb99d830-4287-33f9-8b05-0a9d87211ce9</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ebde6691-4c26-3a05-b90b-e730addbbdda</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-1.181 0.21114 -15.6593
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.00409891 -1.77099 -2.63101e-08
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>NetworkComponent</type>
 			<version>1</version>
 			<component>
@@ -371,14 +371,6 @@
 					<property>
 						<name>filterType</name>
 						<value>0</value>
-					</property>
-					<property>
-						<name>lagDelay</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>extrapolate</name>
-						<value>1</value>
 					</property>
 					<property>
 						<name>detailed</name>
@@ -558,10 +550,6 @@
 						<link>cfe3183b-460d-4fa8-9c62-826bf6df9461</link>
 					</property>
 					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
-					</property>
-					<property>
 						<name>receiver</name>
 						<link>076ff286-7146-4544-9534-93f5453bb05f</link>
 					</property>
@@ -574,10 +562,6 @@
 					<property>
 						<name>colliders</name>
 						<link>5b61187a-1267-4658-8fda-01d24423bd01</link>
-					</property>
-					<property>
-						<name>rigidBody</name>
-						<link>00000000-0000-0000-0000-000000000000</link>
 					</property>
 					<property>
 						<name>receiver</name>

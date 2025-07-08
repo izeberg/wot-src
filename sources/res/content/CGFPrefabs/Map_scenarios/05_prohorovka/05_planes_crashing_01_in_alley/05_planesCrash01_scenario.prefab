@@ -8,11 +8,6 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>05_planesCrash01_background.prefab</name>
-			<UUID>e1d385e1-8d62-4442-b469-ad79f2e98916</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
 			<name>05_planesCrash01_plane_02_complete.prefab</name>
 			<UUID>0abc4e8b-85d5-4e10-a07f-d36623a24065</UUID>
 			<flags>8</flags>
@@ -37,16 +32,6 @@
 		<ComponentPool>
 			<type>Hierarchy</type>
 			<version>2</version>
-			<component>
-				<UUID>e1d385e1-8d62-4442-b469-ad79f2e98916</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>1bfffce2-9d14-4e34-9b15-de4220437976</link>
-					</property>
-				</config>
-			</component>
 			<component>
 				<UUID>0abc4e8b-85d5-4e10-a07f-d36623a24065</UUID>
 				<flags>35</flags>
@@ -93,24 +78,6 @@
 			<version>1</version>
 			<component>
 				<UUID>1bfffce2-9d14-4e34-9b15-de4220437976</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>e1d385e1-8d62-4442-b469-ad79f2e98916</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -744,18 +711,6 @@
 		<ComponentPool>
 			<type>Prefab</type>
 			<version>2</version>
-			<component>
-				<UUID>e1d385e1-8d62-4442-b469-ad79f2e98916</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>content</name>
-						<section>
-							<resource>content/CGFPrefabs/Map_scenarios/05_prohorovka/05_planes_crashing_01_in_alley/05_planesCrash01_background.prefab</resource>
-						</section>
-					</property>
-				</config>
-			</component>
 			<component>
 				<UUID>0abc4e8b-85d5-4e10-a07f-d36623a24065</UUID>
 				<flags>35</flags>

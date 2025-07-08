@@ -90,6 +90,10 @@
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_turret_01_AO.dds</Texture>
 					</property>
 					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
@@ -112,6 +116,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch41_WZ_111_5A/_skins/Ch41_WZ_111_5A_TXVII_3Dst/WZ_111_5A_TXVII_3Dst_net_01_ANM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -137,5 +145,4 @@
 		<max>1.625749 1.604069 1.724899</max>
 	</boundingBox>
 	<geometrySize>56236</geometrySize>
-	<minUVDensity>0.000336</minUVDensity>
 </root>

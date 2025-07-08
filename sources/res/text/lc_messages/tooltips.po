@@ -2593,9 +2593,6 @@ msgstr ""
 "由于维护\n"
 "暂时无法访问收藏坦克。"
 
-msgid "colorFilter/attention"
-msgstr "仅在选择了改进的图形时才可以使用颜色调整。"
-
 msgid "colorFilter/body"
 msgstr "这个部分中您可以选择其中一个预设滤镜或手动配置图像饱和度、亮度和对比度。"
 
@@ -3010,6 +3007,9 @@ msgstr "徽章"
 msgid "customization/storage/filters/paints/title"
 msgstr "喷漆"
 
+msgid "customization/storage/filters/statTrackers/title"
+msgstr "战绩追踪器"
+
 msgid "customization/storage/filters/style/title"
 msgstr "风格"
 
@@ -3042,6 +3042,9 @@ msgstr "喷漆改变默认坦克的颜色。"
 
 msgid "customization/tabs/projectionDecal/body"
 msgstr "贴花可应用于坦克的数个模块，为特定坦克增添个性。"
+
+msgid "customization/tabs/statTracker/body"
+msgstr "战绩追踪器在您的坦克上显示关键统计数据。"
 
 msgid "customization/tabs/uncustomStyle/body"
 msgstr "3D风格可通过精致的细节赋予特定坦克全新外观。"
@@ -4739,11 +4742,7 @@ msgid "frontlineRank/header"
 msgstr "%(rank)s军阶达成。"
 
 msgid "gamma/attention"
-msgstr ""
-"伽马设置在具有标准图形质量的\n"
-"窗口模式下不可用(详细信息选项)。\n"
-"在窗口模式下，使用当前的操作\n"
-"系统设置。"
+msgstr "窗口模式下，伽马设置不可用，将沿用当前操作系统设置。"
 
 msgid "gamma/body"
 msgstr ""
@@ -7136,6 +7135,16 @@ msgstr "招募"
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "零历练特长"
 
+msgid "notrecruitedtankman/frontman/desc"
+msgstr ""
+"马歇尔·古恩——从主唱到坦克指挥官。我曾在舞台聚光灯下大放异彩，在真正踏上战场前，我早就在人生战场上燃烧激情、放飞自我。放纵的生活让我坠入深渊，巡演生涯几乎将我彻底吞噬。乐队解散，乐声消散，我放下六弦吉他，执掌六十吨重的钢铁猛兽。再没有欢呼的人群，再没有爆满的场馆——唯有战乱与硝烟，以及震耳欲聋的寂静，这寂静足以淹没我过往的梦魇。如果恶魔要来讨债，他非常清楚该去哪儿找我。"
+
+msgid "notrecruitedtankman/frontman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/frontman/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/howToGet"
 msgstr "如何获得:"
 
@@ -8348,6 +8357,16 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp17_1/label"
 msgstr "战斗通行证赛季XVII"
 
+msgid "notrecruitedtankman/tankmen_bp17_10/desc"
+msgstr ""
+"阿曼达·埃弗特是一位杰出的人类学家，也是为数不多可以匹敌劳拉学识的人之一。在大学时期，她是劳拉最亲密的朋友之一，但在秘鲁发生的一场神秘事故改变了这一切。如今，阿曼达满怀怨恨并且对劳拉的“背叛”难以释怀，因此她选择站在劳拉的对立面。她对神秘事物、未解之谜和远古秘密的好奇已发展成一种痴迷，这使她常常与劳拉产生冲突。虽然她们的偶遇一般都会不欢而散，但两人之间的关系仍因共同的经历而紧密相连，并且她们一直都在不遗余力地追寻真相。"
+
+msgid "notrecruitedtankman/tankmen_bp17_10/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_10/label"
+msgstr "战斗通行证:古墓丽影"
+
 msgid "notrecruitedtankman/tankmen_bp17_2/desc"
 msgstr ""
 "安格斯·威廉·布坎南可能是高原上最优秀的神枪手，人称\"加农炮\"。这不足为奇，毕竟，他从小就在高地荒原上狩猎，多年来，他在那片狂野之地上磨练出了惊人的眼力。安格斯的射击技巧如此高超，以至于他偶尔会想放弃坦克，申请加入特种空勤团。不过眼下，他对自己那辆双管猛兽座驾相当满意。虽然他长着一头火焰般的红发，但其性格却并非如此。他头脑冷静、做事严谨。安格斯从不仓促开火，也几乎从不失手。"
@@ -8378,6 +8397,56 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp17_4/label"
 msgstr "战斗通行证赛季XVII"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/desc"
+msgstr ""
+"如果反派见到他，那他们必然命不久矣。公爵驾到，他简直太酷了！除非你的地区消息闭塞，否则你肯定认识这位大明星——世界上最伟大的动作英雄，毁灭公爵本人大驾光临。他曾面对过最凶恶的敌人，消灭了最致命的威胁，总是凯旋而归。现在他回来了——为了打败敌人，主宰战场，并再次拯救地球。公爵出品，必是精品：大口径枪械，壮观的爆炸，以及毁灭性打击。向国王致敬吧，我的宝贝儿！"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/label"
+msgstr "战斗通行证:毁灭公爵"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/desc"
+msgstr ""
+"这位邪恶的赛博格拥有一支忠诚的机器人队伍，质子博士是毁灭公爵的头号对手——也是人类存亡的最大威胁。他曾经是一位杰出的机器人研究员，过量的辐射暴露摧毁了他的心智，将这名天才变为一名疯子。现在，他渴望统治全世界，并按照自己的意愿来重塑世界。他在地下基地的深处谋划着如何取得最终的胜利——只有毁灭公爵能阻止他，确保全人类的安全。"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/label"
+msgstr "战斗通行证:毁灭公爵"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/desc"
+msgstr ""
+"一般情况下，没有人能阻挡毁灭公爵的步伐，即便事态危急他也拥有值得信赖的外援——格雷夫斯将军。他是一位经验丰富的职业军人，作风严谨、不苟言笑，无论是哪种外星人入侵，这名将军都能制定应对计划。他在地球防卫军中服役多年，累积了丰富的战斗经验，并练就了敏锐的战术直觉，还可以为毁灭公爵提供情报，帮助他完成任务。一旦他们联手，坏人必败无疑。"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/label"
+msgstr "战斗通行证:毁灭公爵"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/desc"
+msgstr ""
+"古墓丽影、遗物猎人、探险偶像，劳拉·克劳馥是一位勇敢的探险家，她相信行动才是造就伟大事迹的关键，而非身份。作为克劳馥家族的继承人，她被未知的事物深深吸引，因此出生在上流社会的她毅然决定经历充满冒险的人生。劳拉举止优雅，但她的礼貌和魅力并非软弱的表现，胆敢触怒她的人一定会付出代价。这名身经百战的探险家无所畏惧、顽强不屈，而且智勇双全，无论是智取还是正面对决都能轻松地击败敌人。"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/label"
+msgstr "战斗通行证:古墓丽影"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/desc"
+msgstr ""
+"约拿·迈亚瓦是一名水手兼厨师，胃口很大、心胸宽广，是劳拉最亲密的朋友和最值得信赖的伙伴。有时候探索未知的欲望会导致劳拉的行为越发激进，约拿体贴且内省的性格则可以帮助她重整旗鼓；其保护本能和冷静的个性使他成为了劳拉坚实的后盾，即使路途多么危险也不离不弃。拥有善良灵魂的约拿是一位名副其实的温柔巨人，他是劳拉的知己，无论面临任何艰险都对挚友忠贞不渝。"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/label"
+msgstr "战斗通行证:古墓丽影"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -10820,6 +10889,24 @@ msgstr ""
 msgid "showVehModelsOnMap/header"
 msgstr "启用小地图功能"
 
+msgid "skill/name/brotherhood"
+msgstr "兄弟连"
+
+msgid "skill/name/commander_sixthSense"
+msgstr "战场直觉"
+
+msgid "skill/newPerk/perk/text"
+msgstr "该乘员有1项零历练特长，训练所需经验总数减少。"
+
+msgid "skill/newPerk/perk/title"
+msgstr "可训练的特长"
+
+msgid "skill/newPerk/zeroPerk/text"
+msgstr "零历练特长始终会放在第一个栏位中，即使同时选择数项特长也是如此。"
+
+msgid "skill/newPerk/zeroPerk/title"
+msgstr "可训练的零历练特长"
+
 msgid "skill/untrained/additional"
 msgstr "乘员接受这辆坦克的相关再训练即可恢复全部特长，并提高坦克效能。"
 
@@ -12196,6 +12283,9 @@ msgstr "贴花%(value)s"
 
 msgid "vehiclePreview/boxTooltip/shell/header"
 msgstr "%(value)s炮弹"
+
+msgid "vehiclePreview/boxTooltip/statTracker/header"
+msgstr "%(value)s"
 
 msgid "vehiclePreview/boxTooltip/style/header"
 msgstr "%(value)s风格"

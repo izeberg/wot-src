@@ -1050,70 +1050,76 @@ msgid "customization/added/attachmentValue"
 msgstr "已添加\"%s\"3D附件: (x%s)"
 
 msgid "customization/added/camouflage"
-msgstr "已添加%s涂装"
+msgstr "已添加\"%s\"涂装"
 
 msgid "customization/added/camouflageValue"
-msgstr "已添加%s涂装: (x%s)"
+msgstr "已添加\"%s\"涂装: (x%s)"
 
 msgid "customization/added/decal"
-msgstr "已添加%s贴花"
+msgstr "已添加\"%s\"贴花"
 
 msgid "customization/added/decalValue"
-msgstr "已添加%s贴花: (x%s)"
+msgstr "已添加\"%s\"贴花: (x%s)"
 
 msgid "customization/added/emblem"
-msgstr "已添加%s徽章"
+msgstr "已添加\"%s\"徽章"
 
 msgid "customization/added/emblemValue"
-msgstr "已添加%s徽章: (x%s)"
+msgstr "已添加\"%s\"徽章: (x%s)"
 
 msgid "customization/added/inscription"
-msgstr "已添加%s签名"
+msgstr "已添加\"%s\"签名"
 
 msgid "customization/added/inscriptionValue"
-msgstr "已添加%s签名: (x%s)"
+msgstr "已添加\"%s\"签名: (x%s)"
 
 msgid "customization/added/modification"
-msgstr "已添加%s效果"
+msgstr "已添加\"%s\"效果"
 
 msgid "customization/added/modificationValue"
-msgstr "已添加%s效果: (x%s)"
+msgstr "已添加\"%s\"效果: (x%s)"
 
 msgid "customization/added/paint"
-msgstr "已添加%s喷漆"
+msgstr "已添加\"%s\"喷漆"
 
 msgid "customization/added/paintValue"
-msgstr "已添加%s喷漆: (x%s)"
+msgstr "已添加\"%s\"喷漆: (x%s)"
 
 msgid "customization/added/personalNumber_1"
-msgstr "已添加%s一位数"
+msgstr "已添加\"%s\"一位数"
 
 msgid "customization/added/personalNumber_1Value"
-msgstr "已添加%s一位数: (x%s)"
+msgstr "已添加\"%s\"一位数: (x%s)"
 
 msgid "customization/added/personalNumber_2"
-msgstr "已添加%s两位数"
+msgstr "已添加\"%s\"两位数"
 
 msgid "customization/added/personalNumber_2Value"
-msgstr "已添加%s两位数: (x%s)"
+msgstr "已添加\"%s\"两位数: (x%s)"
 
 msgid "customization/added/personalNumber_3"
-msgstr "已添加%s三位数"
+msgstr "已添加\"%s\"三位数"
 
 msgid "customization/added/personalNumber_3Value"
-msgstr "已添加%s三位数:(x%s)"
+msgstr "已添加\"%s\"三位数: (x%s)"
 
 msgid "customization/added/projectionDecal"
-msgstr "已添加%s贴花"
+msgstr "已添加\"%s\"贴花"
 
 msgid "customization/added/projectionDecalValue"
-msgstr "已添加%s贴花: (x%s)"
+msgstr "已添加\"%s\"贴花: (x%s)"
+
+msgid "customization/added/statTracker"
+msgstr "已添加\"%s\""
+
+msgid "customization/added/statTrackerValue"
+msgstr "已添加\"%s\": (x%s)"
 
 msgid "customization/added/style"
-msgstr "已添加%s风格"
+msgstr "已添加\"%s\"风格"
 
 msgid "customization/added/styleValue"
-msgstr "已添加%s风格:(x%s)"
+msgstr "已添加\"%s\"风格: (x%s)"
 
 msgid "customization/credits_and_gold_not_enough"
 msgstr "个性化失败。没有足够的银币和金币。"
@@ -1154,70 +1160,76 @@ msgid "customization/removed/attachmentValue"
 msgstr "已移除\"%s\"3D附件: (x%s)"
 
 msgid "customization/removed/camouflage"
-msgstr "移除涂装%s"
+msgstr "已移除\"%s\"涂装"
 
 msgid "customization/removed/camouflageValue"
-msgstr "涂装(x%s)被移除:(x%s)"
+msgstr "已移除\"%s\"涂装: (x%s)"
 
 msgid "customization/removed/decal"
-msgstr "移除贴花%s"
+msgstr "已移除\"%s\"贴花"
 
 msgid "customization/removed/decalValue"
-msgstr "%s贴花被移除:(x%s)"
+msgstr "已移除\"%s\"贴花: (x%s)"
 
 msgid "customization/removed/emblem"
-msgstr "移除徽章%s"
+msgstr "已移除\"%s\"徽章"
 
 msgid "customization/removed/emblemValue"
-msgstr "%s徽章被移除:(x%s)"
+msgstr "已移除\"%s\"徽章: (x%s)"
 
 msgid "customization/removed/inscription"
-msgstr "移除签名%s"
+msgstr "已移除\"%s\"签名"
 
 msgid "customization/removed/inscriptionValue"
-msgstr "%s签名被移除:(x%s)"
+msgstr "已移除\"%s\"签名: (x%s)"
 
 msgid "customization/removed/modification"
-msgstr "移除效果%s"
+msgstr "已移除\"%s\"效果"
 
 msgid "customization/removed/modificationValue"
-msgstr "%s效果被移除:(x%s)"
+msgstr "已移除\"%s\"效果: (x%s)"
 
 msgid "customization/removed/paint"
-msgstr "移除喷漆%s"
+msgstr "已移除\"%s\"喷漆"
 
 msgid "customization/removed/paintValue"
-msgstr "%s喷漆被移除:(x%s)"
+msgstr "已移除\"%s\"喷漆: (x%s)"
 
 msgid "customization/removed/personalNumber_1"
-msgstr "已删除%s一位数"
+msgstr "已移除\"%s\"一位数"
 
 msgid "customization/removed/personalNumber_1Value"
-msgstr "已删除%s一位数: (x%s)"
+msgstr "已移除\"%s\"一位数: (x%s)"
 
 msgid "customization/removed/personalNumber_2"
-msgstr "已删除%s两位数"
+msgstr "已移除\"%s\"两位数"
 
 msgid "customization/removed/personalNumber_2Value"
-msgstr "已删除%s两位数: (x%s)"
+msgstr "已移除\"%s\"两位数: (x%s)"
 
 msgid "customization/removed/personalNumber_3"
-msgstr "移除三位数%s"
+msgstr "已移除\"%s\"三位数"
 
 msgid "customization/removed/personalNumber_3Value"
-msgstr "%s三位数被移除:(x%s)"
+msgstr "已移除\"%s\"三位数: (x%s)"
 
 msgid "customization/removed/projectionDecal"
-msgstr "移除贴花%s"
+msgstr "已移除\"%s\"贴花"
 
 msgid "customization/removed/projectionDecalValue"
-msgstr "%s贴花被移除:(x%s)"
+msgstr "已移除\"%s\"贴花: (x%s)"
+
+msgid "customization/removed/statTracker"
+msgstr "已移除\"%s\""
+
+msgid "customization/removed/statTrackerValue"
+msgstr "已移除\"%s\": (x%s)"
 
 msgid "customization/removed/style"
-msgstr "%s风格被移除"
+msgstr "已移除\"%s\"风格"
 
 msgid "customization/removed/styleValue"
-msgstr "%s风格被移除:(x%s)"
+msgstr "已移除\"%s\"风格: (x%s)"
 
 msgid "customization/server_error"
 msgstr "无法个性化。"
@@ -4340,7 +4352,7 @@ msgid "vehicle_trade_in/server_error_centerDown"
 msgstr "无法置换成%(vehName)s。购买/置换服务暂时无法使用。"
 
 msgid "vehicle_trade_in/success"
-msgstr "%(tradeOffVehName)s已被移除。%(vehName)s已被购买并花费%(price)s。"
+msgstr "已移除%(tradeOffVehName)s。已花费%(price)s购买%(vehName)s。"
 
 msgid "vehicle_trade_in/vehicle_cannot_be_sold"
 msgstr "无法置换%(tradeOffVehName)s。该坦克将会被自动移除。"

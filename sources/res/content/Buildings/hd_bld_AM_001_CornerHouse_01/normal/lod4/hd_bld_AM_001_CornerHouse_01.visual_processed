@@ -42,39 +42,12 @@
 				</material>
 				<groupOrigin>-0.240000 4.453391 0.000000</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_nd1</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_AM_001_CornerHouse_01/hd_bld_AM_001_CornerHouse_01_BAM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_AM_001_CornerHouse_01/hd_bld_AM_001_CornerHouse_01_BGMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_AM_001_CornerHouse_01/hd_bld_AM_001_CornerHouse_01_BANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.419128 0.221802 1.483547</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-6.319256 -1.036840 -3.663392</min>
-		<max>5.839256 9.943621 3.663393</max>
+		<min>-6.334355 -1.036881 -3.663392</min>
+		<max>5.854355 9.943621 3.663393</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>6930</geometrySize>
-	<minUVDensity>0.000989</minUVDensity>
+	<geometrySize>6816</geometrySize>
 </root>

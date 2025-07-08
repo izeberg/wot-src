@@ -273,6 +273,17 @@ msgstr "?empty?"
 msgid "Bat_Chatillon155_55_short"
 msgstr "查狄伦155 55"
 
+msgid "Bat_Chatillon155_58_FEP23"
+msgstr "B-C CS 59"
+
+msgid "Bat_Chatillon155_58_FEP23_descr"
+msgstr ""
+"在对一辆类似M系T31工兵坦克的测试过程中，工程师们对炮塔进行了特别设计，使之能够容纳两组可发射150毫米Mle. "
+"45火箭弹的\"喷烟者\"发射器，并将其安装在查狄伦155的底盘上。两者均参考了D系的同类设计。同时，工程师们还计划为该坦克配备类似T31的推土铲。由于不符合高机动作战的新概念，该计划的研发工作最终停留在了原型车阶段。"
+
+msgid "Bat_Chatillon155_58_FEP23_short"
+msgstr "B-C CS 59"
+
 msgid "Bat_Chatillon155_descr"
 msgstr "?empty?"
 
@@ -375,6 +386,9 @@ msgid "Canon_de_155mm_de_33_calibres_short"
 msgstr ""
 "33倍径\n"
 "155mm炮"
+
+msgid "Canon_de_75_mm_Mle_55_70"
+msgstr "75mm Mle.55-70炮"
 
 msgid "Canon_de_75mm_Vo_1000_m_s"
 msgstr "1000米/秒初速75mm炮"
@@ -532,6 +546,9 @@ msgstr "夏尔B1"
 msgid "Chassis_B1_2"
 msgstr "夏尔B1 II型"
 
+msgid "Chassis_BC155_58NW_FEP23"
+msgstr "查狄伦改进型"
+
 msgid "Chassis_BDR_G1B"
 msgstr "BDR G1"
 
@@ -598,6 +615,9 @@ msgstr "霍奇基斯 EBR II型"
 msgid "Chassis_F108_Panhard_EBR_105"
 msgstr "潘哈德 EBR 105"
 
+msgid "Chassis_F108_Panhard_EBR_105_FEP"
+msgstr "潘哈德 EBR 40 III型"
+
 msgid "Chassis_F109_AMD_Panhard_178B"
 msgstr "潘哈德 AMD 178"
 
@@ -639,6 +659,9 @@ msgstr "夏尔75"
 
 msgid "Chassis_F119_Char_Murat"
 msgstr "\"缪拉\""
+
+msgid "Chassis_F120_Projet_Louis"
+msgstr "路易斯工程"
 
 msgid "Chassis_F122_VCS_6x6_TS90"
 msgstr "VCS 6x6 TS 90"
@@ -981,6 +1004,17 @@ msgstr "霍奇基斯 EBR"
 msgid "F108_Panhard_EBR_105"
 msgstr "潘哈德 EBR 105"
 
+msgid "F108_Panhard_EBR_105_FEP23"
+msgstr "潘哈德 EBR 40 III型"
+
+msgid "F108_Panhard_EBR_105_FEP23_descr"
+msgstr ""
+"装备40mm Mle.51 "
+"T1炮的\"低配版\"。由于长身管火炮在丛林环境中难以操作，加上面临的敌人多是未装备坦克、采用伏击战术的非正规军，该坦克被认为更能适应当地的战场环境。仅存在于蓝图中。"
+
+msgid "F108_Panhard_EBR_105_FEP23_short"
+msgstr "潘哈德 EBR 40"
+
 msgid "F108_Panhard_EBR_105_descr"
 msgstr "?empty?"
 
@@ -1173,6 +1207,24 @@ msgstr "\"缪拉\""
 
 msgid "F119_Char_Murat_short_special"
 msgstr "弹夹装填系统，出色的操控性和机动性"
+
+msgid "F120_Projet_Louis"
+msgstr "路易斯工程"
+
+msgid "F120_Projet_Louis_descr"
+msgstr ""
+"这辆试验型轻型坦克采用非常规布局: "
+"发动机和主传动装置前置，冷却系统后置。880-10系列直列式气缸发动机为其提供了卓越的机动性，同时，其4履带行走机构还配备双驱动轮。车长与炮手位于低矮紧凑的炮塔内，正面与侧面投影面积较小。与许多F系坦克设计一样，其火炮可通过抬高后膛上方的炮塔顶盖，实现垂直俯仰调节。由于时间与资金限制，该计划在蓝图阶段被终止。"
+
+msgid "F120_Projet_Louis_long_special"
+msgstr ""
+"路易斯工程是一辆F系IX级轻型坦克，采用非常规布局。它装备一门75毫米弹夹炮，弹夹容量大，短装填时间短，完整装填速度也可圈可点。该坦克专为持续火力输出而设计，能够对敌人造成小额但稳定的损伤。"
+
+msgid "F120_Projet_Louis_short"
+msgstr "路易斯工程"
+
+msgid "F120_Projet_Louis_short_special"
+msgstr "弹夹炮，良好的机动性"
 
 msgid "F122_VCS_6x6_TS90"
 msgstr "VCS 6x6 TS 90"
@@ -1773,6 +1825,9 @@ msgstr "希斯帕诺-絮扎 HS-110"
 msgid "Hispano-Suiza_HS110_A"
 msgstr "希斯帕诺-絮扎 HS-110预生产型"
 
+msgid "Hispano-Suiza_HS110_FEP"
+msgstr "希斯帕诺-苏沙 HS-110M"
+
 msgid "Hispano-Suiza_HS110_SH"
 msgstr "希斯帕诺-絮扎 HS-110"
 
@@ -1838,6 +1893,9 @@ msgstr "洛林 40t"
 
 msgid "MATHIS"
 msgstr "马西斯 250"
+
+msgid "MTU_880_10"
+msgstr "MTU 880-10"
 
 msgid "Mathis_210"
 msgstr "马西斯 210"
@@ -1988,6 +2046,9 @@ msgid "Panhard_12H_6000_63"
 msgstr "潘哈德 12H 6000 mle.63"
 
 msgid "Panhard_12H_6000_X"
+msgstr "潘哈德 12H6000 X"
+
+msgid "Panhard_12H_6000_X_FEP"
 msgstr "潘哈德 12H6000 X"
 
 msgid "Panhard_4E"
@@ -2151,6 +2212,9 @@ msgstr "SCR 528F"
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
+msgid "SCR_528_FEP"
+msgstr "SCR 528C"
+
 msgid "SCR_528_F_SH"
 msgstr "SCR-528 F"
 
@@ -2282,6 +2346,9 @@ msgstr "TRVP-13-A3"
 
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
+
+msgid "TRVP_13_A_2"
+msgstr "TRVP-13-A2"
 
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
@@ -2421,6 +2488,9 @@ msgstr "霍奇基斯 EBR"
 msgid "Turret_1_F108_Panhard_EBR_105"
 msgstr "潘哈德 EBR 105"
 
+msgid "Turret_1_F108_Panhard_EBR_105_FEP23"
+msgstr "潘哈德 EBR 40 ter"
+
 msgid "Turret_1_F109_AMD_Panhard_178B"
 msgstr "潘哈德 AMD 178 CDM"
 
@@ -2457,6 +2527,9 @@ msgstr "夏尔75"
 msgid "Turret_1_F119_Char_Murat"
 msgstr "\"缪拉\""
 
+msgid "Turret_1_F120_Projet_Louis"
+msgstr "路易斯工程"
+
 msgid "Turret_1_F122_VCS_6x6_TS90"
 msgstr "VCS 6x6 TS 90"
 
@@ -2483,6 +2556,9 @@ msgstr "\"维钦托利\""
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "洛林 40t"
+
+msgid "Turret_1_F38_Bat_Chatillon155_58_FEP23"
+msgstr "查狄伦重型炮塔"
 
 msgid "Turret_1_F39_AMR_P103"
 msgstr "AMR P.103"
@@ -3013,6 +3089,15 @@ msgstr "通常弹(被帽半穿甲)"
 msgid "_130mm_Common_HE"
 msgstr "通常弹(高爆)"
 
+msgid "_150mm_NW41_FEP"
+msgstr "2x6联装\"喷烟者\"Mle.45火箭发射器"
+
+msgid "_150mm_NW_Rocket_1_FEP"
+msgstr "150mm Mle.45火箭弹"
+
+msgid "_150mm_NW_Rocket_2_FEP"
+msgstr "150mm Mle.45A火箭弹"
+
 msgid "_155_OE_mle_1956"
 msgstr "OE mle.56"
 
@@ -3124,6 +3209,15 @@ msgstr "37mm SA38炮"
 msgid "_3_inch_AT_Gun_M7"
 msgstr "3英寸 M7 AT炮"
 
+msgid "_40mm_Mle51_EBR_FEP"
+msgstr "40mm mle.51 T1炮"
+
+msgid "_40mm_OCC_40_D_255_EBR_FEP"
+msgstr "OFL-40 D. 255 (EBR)"
+
+msgid "_40mm_OFL_40_D_233_EBR_FEP"
+msgstr "OFL-40 D. 233 (EBR)"
+
 msgid "_47mm_Odr_mle._1892"
 msgstr "ODR mle.1892"
 
@@ -3211,6 +3305,9 @@ msgstr "Frt.Prf. mle.44"
 msgid "_75mm_FrtPrf1944A"
 msgstr "Frt.Prf. mle.44A"
 
+msgid "_75mm_FrtPrf1944B"
+msgstr "Frt.Prf. mle.1944 B"
+
 msgid "_75mm_FrtPrf1946_SH"
 msgstr "Frt.Prf. mle.45"
 
@@ -3271,6 +3368,9 @@ msgstr "OE mle.24"
 msgid "_75mm_OE_mle_1924A"
 msgstr "OE mle.24A"
 
+msgid "_75mm_OE_mle_1924B"
+msgstr "OE mle.1924 B"
+
 msgid "_75mm_OE_mle_1939"
 msgstr "OE mle.39"
 
@@ -3306,6 +3406,9 @@ msgstr "Prf. mle.30"
 
 msgid "_75mm_Prf1930A"
 msgstr "Prf. mle.30A"
+
+msgid "_75mm_Prf1930B"
+msgstr "Prf. mle.1930 B"
 
 msgid "_75mm_Pzgr.40"
 msgstr "Pzgr 40"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.529018 -0.424936 -1.374833</min>
+		<max>0.529905 0.452932 6.638681</max>
+	</visibilityBox>
+	<parent>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96</extent>
+</root>

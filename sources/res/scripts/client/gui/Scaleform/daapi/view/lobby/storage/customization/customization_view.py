@@ -33,6 +33,7 @@ class _CustomizationFilterBit(CONST_CONTAINER):
     PERSONAL_NUMBER = 32
     MODIFICATION = 64
     ATTACHMENT = 128
+    STAT_TRACKER = 256
 
 
 _TYPE_BIT_TO_CUSTOMIZATION_TYPE_MAP = {_CustomizationFilterBit.STYLE: (
@@ -50,10 +51,13 @@ _TYPE_BIT_TO_CUSTOMIZATION_TYPE_MAP = {_CustomizationFilterBit.STYLE: (
    _CustomizationFilterBit.MODIFICATION: (
                                         GUI_ITEM_TYPE.MODIFICATION,), 
    _CustomizationFilterBit.ATTACHMENT: (
-                                      GUI_ITEM_TYPE.ATTACHMENT,)}
+                                      GUI_ITEM_TYPE.ATTACHMENT,), 
+   _CustomizationFilterBit.STAT_TRACKER: (
+                                        GUI_ITEM_TYPE.STAT_TRACKER,)}
 _CUSTOMIZATION_ITEM_TYPES = (
  GUI_ITEM_TYPE.STYLE,
  GUI_ITEM_TYPE.ATTACHMENT,
+ GUI_ITEM_TYPE.STAT_TRACKER,
  GUI_ITEM_TYPE.PAINT,
  GUI_ITEM_TYPE.CAMOUFLAGE,
  GUI_ITEM_TYPE.PROJECTION_DECAL,
@@ -70,6 +74,10 @@ _TYPE_FILTER_ITEMS = [
     'selected': False, 
     'tooltip': makeTooltip(body=backport.text(R.strings.tooltips.customization.storage.filters.attachments.title())), 
     'icon': backport.image(R.images.gui.maps.icons.storage.filters.attachments())},
+ {'filterValue': _CustomizationFilterBit.STAT_TRACKER, 
+    'selected': False, 
+    'tooltip': makeTooltip(body=backport.text(R.strings.tooltips.customization.storage.filters.statTrackers.title())), 
+    'icon': backport.image(R.images.gui.maps.icons.storage.filters.statTrackers())},
  {'filterValue': _CustomizationFilterBit.PAINT, 
     'selected': False, 
     'tooltip': makeTooltip(body=backport.text(R.strings.tooltips.customization.storage.filters.paints.title())), 
@@ -95,13 +103,14 @@ _TYPE_FILTER_ITEMS = [
     'tooltip': makeTooltip(body=backport.text(R.strings.tooltips.customization.storage.filters.effects.title())), 
     'icon': backport.image(R.images.gui.maps.icons.storage.filters.effects())}]
 _TABS_SORT_ORDER = {GUI_ITEM_TYPE.ATTACHMENT: 1, 
-   GUI_ITEM_TYPE.PAINT: 3, 
-   GUI_ITEM_TYPE.CAMOUFLAGE: 4, 
-   GUI_ITEM_TYPE.PROJECTION_DECAL: 5, 
-   GUI_ITEM_TYPE.EMBLEM: 6, 
-   GUI_ITEM_TYPE.PERSONAL_NUMBER: 7, 
-   GUI_ITEM_TYPE.INSCRIPTION: 8, 
-   GUI_ITEM_TYPE.MODIFICATION: 9}
+   GUI_ITEM_TYPE.STAT_TRACKER: 2, 
+   GUI_ITEM_TYPE.PAINT: 4, 
+   GUI_ITEM_TYPE.CAMOUFLAGE: 5, 
+   GUI_ITEM_TYPE.PROJECTION_DECAL: 6, 
+   GUI_ITEM_TYPE.EMBLEM: 7, 
+   GUI_ITEM_TYPE.PERSONAL_NUMBER: 8, 
+   GUI_ITEM_TYPE.INSCRIPTION: 9, 
+   GUI_ITEM_TYPE.MODIFICATION: 10}
 
 class _VehiclesFilter(object):
     __slots__ = ('vehicles', )
@@ -234,11 +243,11 @@ class StorageCategoryCustomizationView(StorageCategoryCustomizationViewMeta):
              self._getVO(item)]
         else:
             voList = []
+            inventoryVehicles = tuple(_VehiclesFilter(self._invVehicles).getVehicles(item))
             if item.boundInventoryCount() > 0:
-                inventoryVehicles = [ vehicle.intCD for vehicle in _VehiclesFilter(self._invVehicles).getVehicles(item) ]
-                vehicleDiff = item.getBoundVehicles().difference(inventoryVehicles)
+                vehicleDiff = item.getBoundVehicles().difference(vehicle.intCD for vehicle in inventoryVehicles)
                 voList = [ self._getVO(item, vehicle) for vehicle in vehicleDiff if item.boundInventoryCount(vehicle) ]
-            if item.inventoryCount > 0:
+            if item.inventoryCount > 0 and all(not item.mayInstall(vehicle) for vehicle in inventoryVehicles):
                 voList.append(self._getVO(item))
         return voList
 
@@ -304,7 +313,7 @@ class StorageCategoryCustomizationView(StorageCategoryCustomizationViewMeta):
         if item.itemTypeID == GUI_ITEM_TYPE.STYLE:
             if item.is3D:
                 return 0
-            return 2
+            return 3
         return _TABS_SORT_ORDER[item.itemTypeID]
 
     def _getComparator(self):

@@ -538,7 +538,7 @@ class ProgressionController(IProgressionController, ViewComponentsController):
                  '__enemyTeamsAmount', '__isStarted', '__upgradesAvailability', '__tmpProgressionRecord',
                  'onVehicleUpgradeStarted', 'onVehicleUpgradeFinished', '__vehicleHolder',
                  '__moduleChangeReq', '__initialModulesRecord', '__battleRoyaleArenaLevel',
-                 'notificationManager')
+                 'notificationManager', '__em')
     __itemsFactory = dependency.descriptor(IGuiItemsFactory)
     __sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
@@ -556,8 +556,9 @@ class ProgressionController(IProgressionController, ViewComponentsController):
         self.__moduleChangeReq = None
         self.__tmpProgressionRecord = TmpBRProgressionCacheRecord.get()
         self.__initialModulesRecord = BRInitialModules.get()
-        self.onVehicleUpgradeStarted = Event.Event()
-        self.onVehicleUpgradeFinished = Event.Event()
+        self.__em = Event.EventManager()
+        self.onVehicleUpgradeStarted = Event.Event(self.__em)
+        self.onVehicleUpgradeFinished = Event.Event(self.__em)
         self.__battleRoyaleArenaLevel = _BattleRoyaleArenaLevel()
         self.notificationManager = notificationManager
         return
@@ -639,8 +640,7 @@ class ProgressionController(IProgressionController, ViewComponentsController):
         if ctrl is not None:
             ctrl.onRespawnBaseMoving -= self.__onRespawnBaseMoving
         self.clearViewComponents()
-        self.onVehicleUpgradeStarted.clear()
-        self.onVehicleUpgradeFinished.clear()
+        self.__em.clear()
         self.__tmpProgressionRecord = None
         self.__initialModulesRecord = None
         if self.notificationManager:

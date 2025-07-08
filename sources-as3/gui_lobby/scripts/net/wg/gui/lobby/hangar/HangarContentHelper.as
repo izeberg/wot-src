@@ -94,6 +94,9 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.BATTLE_ROYALE_TOURNAMENT_BANNER:
                   this._hangar.removeEventTournamentBanner(HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT_BANNER);
                   break;
+               case HANGAR_CONSTS.STRENGTHS_WEAKNESSES:
+                  this._hangar.removeStrengthsWeaknessesPanel();
+                  break;
             }
          }
       }
@@ -162,6 +165,9 @@ package net.wg.gui.lobby.hangar
                   break;
                case HANGAR_CONSTS.BATTLE_ROYALE_TOURNAMENT_BANNER:
                   this._hangar.addEventTournamentBanner(HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT_BANNER);
+                  break;
+               case HANGAR_CONSTS.STRENGTHS_WEAKNESSES:
+                  this._hangar.addStrengthsWeaknessesPanel();
                   break;
             }
          }

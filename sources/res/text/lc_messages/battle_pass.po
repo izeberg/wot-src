@@ -384,9 +384,6 @@ msgstr "战斗通行证"
 msgid "chapter/fullName/10021"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullName/1114"
-msgstr "猎牛之歌"
-
 msgid "chapter/fullName/171"
 msgstr "责无旁贷"
 
@@ -396,10 +393,16 @@ msgstr "双管齐下"
 msgid "chapter/fullName/173"
 msgstr "一丝不苟"
 
-msgid "chapter/fullNameUppercased/10021"
+msgid "chapter/fullName/174"
+msgstr "毁灭公爵"
+
+msgid "chapter/fullName/175"
+msgstr "古墓丽影"
+
+msgid "chapter/fullName/176"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullNameUppercased/1114"
+msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
 
 msgid "chapter/fullNameUppercased/171"
@@ -410,6 +413,15 @@ msgstr "双管齐下"
 
 msgid "chapter/fullNameUppercased/173"
 msgstr "一丝不苟"
+
+msgid "chapter/fullNameUppercased/174"
+msgstr "毁灭公爵"
+
+msgid "chapter/fullNameUppercased/175"
+msgstr "古墓丽影"
+
+msgid "chapter/fullNameUppercased/176"
+msgstr "猎牛之歌"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -499,7 +511,7 @@ msgid "chapterChoice/vehicleInHangar/tooltip/text"
 msgstr "在车库中"
 
 msgid "chosenBonuses/bonus/battle_booster_gift"
-msgstr "自选配件指令"
+msgstr "自选指令"
 
 msgid "chosenBonuses/bonus/blueprint_gift"
 msgstr "可选择的系别蓝图碎片"
@@ -780,10 +792,22 @@ msgstr "前往章节"
 msgid "postProgressionView/footer/description/text"
 msgstr "完成所有章节后开放。已完成章节: %(completedChapters)/%(chaptersAmount)"
 
-msgid "postProgressionView/footer/extraChapter/description/text"
+msgid "postProgressionView/footer/extraChapter/description/174"
+msgstr "乘员、附带3D风格的坦克，以及其他好物等待着您。好极了！"
+
+msgid "postProgressionView/footer/extraChapter/description/175"
+msgstr "稀有宝藏等待着您——乘员、附带3D风格的坦克，以及其他好物。"
+
+msgid "postProgressionView/footer/extraChapter/description/176"
 msgstr "投身其中，获取专属奖励和独特个性化元素。"
 
-msgid "postProgressionView/footer/extraChapter/title/text"
+msgid "postProgressionView/footer/extraChapter/title/174"
+msgstr "毁灭公爵来了！"
+
+msgid "postProgressionView/footer/extraChapter/title/175"
+msgstr "古墓丽影来了！"
+
+msgid "postProgressionView/footer/extraChapter/title/176"
 msgstr "特殊章节来了！"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
@@ -1148,7 +1172,7 @@ msgid "season/fullNameUppercased/17"
 msgstr "蓄势待发"
 
 msgid "selectBonus/battle_booster_gift"
-msgstr "自选配件指令"
+msgstr "自选指令"
 
 msgid "selectBonus/blueprint_gift"
 msgstr "可选择的蓝图碎片"

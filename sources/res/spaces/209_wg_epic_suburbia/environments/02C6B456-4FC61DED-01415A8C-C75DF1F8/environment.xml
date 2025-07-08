@@ -19,6 +19,19 @@
 			<skyLow>0.000000</skyLow>
 			<skyHigh>0.780000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.341850 0.470242 0.795000 2.500000</color>
+			<density>0.001100</density>
+			<height>-50.000000</height>
+			<heightFalloff>0.004000</heightFalloff>
+			<startDistance>17.110001</startDistance>
+			<scatterStart>68.110001</scatterStart>
+			<scatterExponent>10.360000</scatterExponent>
+			<scatterColor>1.000000 0.188200 0.010000 2.000000</scatterColor>
+			<skyLow>0.000000</skyLow>
+			<skyHigh>0.230000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<color>0.583263 0.637103 0.758242 0.000000</color>
@@ -245,12 +258,18 @@
 			<angle>8.000000</angle>
 			<angleZ>278.399994</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>8.000000</angle>
+		</simplified_deferred>
 		<sunScale>1.000000</sunScale>
 		<sunColor>248.624985 126.102592 57.183750</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.496281 0.250000</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>1.000000 0.498039 0.250980</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>0.000000</sunScaleForward>
 		<sunColorForward>246.074997 206.181580 163.639877</sunColorForward>
 		<sunTextureForward/>
@@ -275,7 +294,7 @@
 			<row0>-0.357227 0.000000 0.934018</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
 			<row2>-0.934018 0.000000 -0.357227</row2>
-			<row3>0.000000 499.000000 0.000000</row3>
+			<row3>0.000000 400.000000 0.000000</row3>
 		</worldMatrixForward>
 	</SkyDome>
 	<Wetness>
@@ -291,4 +310,31 @@
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.141320</waveMaskSpeed>
 	</Wetness>
+	<VolumetricFog>
+		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
+		<sampleShadows>true</sampleShadows>
+		<temporalReprojection>true</temporalReprojection>
+		<fogDistance>500.000000</fogDistance>
+		<fogStart>0.000000</fogStart>
+		<hdrScale>1.000000</hdrScale>
+		<sunLightScatterCoef>0.100000</sunLightScatterCoef>
+		<shadowCoef>0.400000</shadowCoef>
+		<numOfLightMarchSteps>5</numOfLightMarchSteps>
+		<shadowDensity>1.650000</shadowDensity>
+		<shadowStepLength>0.350000</shadowStepLength>
+		<useLightMarching>false</useLightMarching>
+		<curveCConst>4.400000</curveCConst>
+		<curvePConst>26.000000</curvePConst>
+		<enableLocalLights>false</enableLocalLights>
+		<densityFix>1.000000</densityFix>
+	</VolumetricFog>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>0.900000</terrainBakedShadowFactor>
+		<bakedAOToShadow>1.400000</bakedAOToShadow>
+		<bakedAOPower>1.000000</bakedAOPower>
+		<vegetationMetallicMult>0.450000</vegetationMetallicMult>
+		<transmissionMult>0.800000</transmissionMult>
+		<waterReflectionAttenuation>0.300000</waterReflectionAttenuation>
+	</SimplifiedDeferred>
 </root>

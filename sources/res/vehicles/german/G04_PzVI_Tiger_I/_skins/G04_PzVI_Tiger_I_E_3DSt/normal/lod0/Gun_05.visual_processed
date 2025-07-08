@@ -87,8 +87,8 @@
 		<node>static_joint_BlendBone</node>
 		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_05Shape.vertices</vertices>
-			<primitive>gun_05Shape.indices</primitive>
+			<vertices>gun_05Shape4.vertices</vertices>
+			<primitive>gun_05Shape4.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -243,5 +243,4 @@
 		<max>0.926439 0.405438 4.088975</max>
 	</boundingBox>
 	<geometrySize>151162</geometrySize>
-	<minUVDensity>0.035151</minUVDensity>
 </root>

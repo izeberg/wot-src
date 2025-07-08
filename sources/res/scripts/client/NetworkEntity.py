@@ -1,4 +1,4 @@
-import CGF, BigWorld, cgf_network
+import CGF, BigWorld
 from debug_utils import LOG_DEBUG_DEV
 
 class NetworkEntity(BigWorld.Entity):
@@ -40,27 +40,6 @@ class NetworkEntity(BigWorld.Entity):
         if not self.isConnected:
             return
         self.__processRemoveComponent(self.entityGameObject, component)
-
-    def activateGameObject(self, id):
-        cgf_network.activateGameObject(self.gameObject, id)
-
-    def activateGameObjectUnique(self, id):
-        cgf_network.activateGameObjectByUniqueID(self.gameObject, id)
-
-    def deactivateGameObject(self, id):
-        cgf_network.deactivateGameObject(self.gameObject, id)
-
-    def deactivateGameObjectUnique(self, id):
-        cgf_network.deactivateGameObjectByUniqueID(self.gameObject, id)
-
-    def createGameObject(self, id):
-        cgf_network.createGameObject(self.gameObject, id)
-
-    def removeGameObject(self, id):
-        cgf_network.removeGameObject(self.gameObject, id)
-
-    def removeGameObjectUnique(self, id):
-        cgf_network.removeGameObjectByUniqueID(self.gameObject, id)
 
     @staticmethod
     def __processAddComponent(go, component):

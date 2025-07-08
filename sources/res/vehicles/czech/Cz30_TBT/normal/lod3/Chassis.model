@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.694886 0.000047 -3.609968</min>
+		<max>1.694886 1.130028 3.744451</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz30_TBT/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/czech/Cz30_TBT/normal/lod3/Chassis</nodefullVisual>
+</root>

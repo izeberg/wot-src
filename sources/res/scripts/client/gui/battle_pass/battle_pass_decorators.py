@@ -8,6 +8,7 @@ from gui.impl.lobby.battle_pass.tooltips.battle_pass_points_view import BattlePa
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_quests_chain_tooltip_view import BattlePassQuestsChainTooltipView
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_taler_tooltip import BattlePassTalerTooltip
 from gui.impl.lobby.battle_pass.tooltips.battle_pass_upgrade_style_tooltip_view import BattlePassUpgradeStyleTooltipView
+from gui.impl.lobby.battle_pass.tooltips.crew_member_skill_tooltip import CrewMemberSkillTooltip
 from gui.impl.lobby.battle_pass.tooltips.random_quest_tooltip import RandomQuestTooltip
 from gui.impl.lobby.lootbox_system.base.tooltips.box_tooltip import BoxTooltip
 if typing.TYPE_CHECKING:
@@ -72,6 +73,8 @@ def createTooltipContentDecorator():
                     return BoxTooltip(*tooltipData.specialArgs)
                 if contentID == R.views.lobby.battle_pass.tooltips.BattlePassTalerTooltip():
                     return BattlePassTalerTooltip()
+                if contentID == R.views.lobby.battle_pass.tooltips.CrewMemberSkillTooltip():
+                    return CrewMemberSkillTooltip(event.getArgument('name'), event.getArgument('isZero'), event.getArgument('hasZeroPerk'))
                 return func(self, event, contentID)
 
         return wrapper

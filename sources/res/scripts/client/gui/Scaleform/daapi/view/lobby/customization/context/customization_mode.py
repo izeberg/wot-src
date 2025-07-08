@@ -7,7 +7,7 @@ from adisp import adisp_process, adisp_async
 from gui import SystemMessages
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.Scaleform.daapi.view.lobby.customization.shared import OutfitInfo, getItemAppliedCount, isItemLimitReached, getComponentFromSlot, getItemInventoryCount, getPurchaseLimit, CustomizationTabs, getItemFromSlot, getSlotDataFromSlot, getCurrentVehicleAvailableRegionsMap, fitOutfit, ITEM_TYPE_TO_SLOT_TYPE, removeItemsFromOutfit, isItemsQuantityLimitReached, isSlotFilled, customizationSlotIdToUid, CustomizationSlotUpdateVO
+from gui.Scaleform.daapi.view.lobby.customization.shared import OutfitInfo, getItemAppliedCount, isItemLimitReached, getComponentFromSlot, getItemInventoryCount, getPurchaseLimit, CustomizationTabs, getItemFromSlot, getSlotDataFromSlot, getCurrentVehicleAvailableRegionsMap, fitOutfit, ITEM_TYPE_TO_SLOT_TYPE, removeItemsFromOutfit, isItemsQuantityLimitReached, isSlotFilled, customizationSlotIdToUid, CustomizationSlotUpdateVO, COMMON_C11N_AUTO_INSTALL_TYPES, getAvailableSlots
 from gui.Scaleform.locale.SYSTEM_MESSAGES import SYSTEM_MESSAGES
 from gui.customization.constants import CustomizationModeSource
 from gui.customization.shared import SeasonType, C11nId, C11N_ITEM_TYPE_MAP
@@ -45,6 +45,7 @@ class CustomizationMode(object):
         self._ctx = ctx
         self._isInited = False
         self._tabId = None
+        self._prevTabId = None
         self._source = None
         self._originalOutfits = {}
         self._modifiedOutfits = {}
@@ -64,6 +65,10 @@ class CustomizationMode(object):
         return self._tabId
 
     @property
+    def prevTabId(self):
+        return self._prevTabId
+
+    @property
     def tabs(self):
         return CustomizationTabs.MODES[self._ctx.modeId]
 
@@ -77,11 +82,17 @@ class CustomizationMode(object):
 
     @property
     def currentOutfit(self):
-        return self._modifiedOutfits[self.season].adjust(self._ctx.commonOutfit)
+        return self._modifiedOutfits[self.season].adjust(self._ctx.commonModifiedOutfit)
+
+    @property
+    def originalOutfits(self):
+        outfits = {SeasonType.ALL: self._ctx.commonOriginalOutfit}
+        outfits.update(self._originalOutfits)
+        return outfits
 
     @property
     def outfits(self):
-        outfits = {SeasonType.ALL: self._ctx.commonOutfit}
+        outfits = {SeasonType.ALL: self._ctx.commonModifiedOutfit}
         outfits.update(self._modifiedOutfits)
         return outfits
 
@@ -135,9 +146,16 @@ class CustomizationMode(object):
             return
         self.unselectItem()
         self.unselectSlot(False)
+        self._prevTabId = self._tabId
         self._tabId = tabId
         if not self._ctx.isModeChangeInProgress:
             self._events.onTabChanged(tabId, itemCD)
+
+    def returnToPreviousTab(self):
+        if self._tabId != CustomizationTabs.STAT_TRACKERS:
+            return False
+        self.changeTab(self._prevTabId or first(self.tabs))
+        return True
 
     def selectSlot(self, slotId):
         if self._selectSlot(slotId):
@@ -148,6 +166,10 @@ class CustomizationMode(object):
             self._events.onSlotUnselected(isResetCamera)
 
     def selectItem(self, intCD, progressionLevel=-1):
+        if self._selectCommonItem(intCD, progressionLevel):
+            if self.selectedItem:
+                self._events.onItemSelected(self.selectedItem.intCD)
+            return
         if self._selectItem(intCD, progressionLevel) and self.selectedItem:
             self._events.onItemSelected(self.selectedItem.intCD)
 
@@ -163,17 +185,17 @@ class CustomizationMode(object):
                 error()
 
             return False
-        if not self._installItem(intCD, slotId, season, component):
-            return False
-        else:
-            component = self.getComponentFromSlot(slotId, season)
-            if refresh:
-                self._ctx.refreshOutfit(season)
-                self._events.onItemInstalled(item, slotId, season, component)
-            if isItemLimitReached(item, self._modifiedOutfits, self):
-                if component is None or component.isFilled():
-                    self._events.onItemLimitReached(item)
-            return True
+        if not self._installCommonItem(intCD, slotId, season, component):
+            if not self._installItem(intCD, slotId, season, component):
+                return False
+        component = self.getComponentFromSlot(slotId, season)
+        if refresh:
+            self._ctx.refreshOutfit(season)
+            self._events.onItemInstalled(item, slotId, season, component)
+        if isItemLimitReached(item, self._modifiedOutfits, self):
+            if component is None or component.isFilled():
+                self._events.onItemLimitReached(item)
+        return True
 
     def removeItem(self, slotId, season=None, refresh=True):
         item = self.getItemFromSlot(slotId, season)
@@ -198,8 +220,8 @@ class CustomizationMode(object):
     def removeItemsFromSeason(self, season=None, filterMethod=None, refresh=True, revertToPrevious=False):
         season = season or self.season
         if season == SeasonType.ALL:
-            outfit = self._ctx.getCommonModifiedOutfit()
-            originalOutfit = self._ctx.getCommonOutfit()
+            outfit = self._ctx.commonModifiedOutfit
+            originalOutfit = self._ctx.commonOriginalOutfit
         else:
             outfit = self._modifiedOutfits[season]
             originalOutfit = self._originalOutfits[season]
@@ -344,7 +366,7 @@ class CustomizationMode(object):
         return anchorParams
 
     def rotateAttachment(self, slotId):
-        component = getComponentFromSlot(self._ctx.commonOutfit, slotId)
+        component = getComponentFromSlot(self._ctx.commonModifiedOutfit, slotId)
         if component is not None:
             component.rotated = 0 if component.isRotated else 1
             self._ctx.refreshOutfit()
@@ -352,7 +374,7 @@ class CustomizationMode(object):
         return
 
     def changeAttachmentScale(self, slotId, scaleFactorId):
-        component = getComponentFromSlot(self._ctx.commonOutfit, slotId)
+        component = getComponentFromSlot(self._ctx.commonModifiedOutfit, slotId)
         if component is not None:
             if component.scaleFactorId != scaleFactorId:
                 component.scaleFactorId = scaleFactorId
@@ -373,7 +395,7 @@ class CustomizationMode(object):
 
     def _getRequestData(self, purchaseItems):
         requestData = []
-        outfit = self._ctx.commonOutfit.copy()
+        outfit = self._ctx.commonModifiedOutfit
         for pItem in purchaseItems:
             if not pItem.selected:
                 if pItem.slotType:
@@ -413,10 +435,20 @@ class CustomizationMode(object):
             return False
 
     def _selectItem(self, intCD, progressionLevel):
+        raise NotImplementedError
+
+    def _selectCommonItem(self, intCD, progressionLevel):
         item = self._service.getItemByCD(intCD)
         if C11N_ITEM_TYPE_MAP[item.itemTypeID] in CustomizationType.COMMON_TYPES:
+            if self.selectedSlot is None and item.itemTypeID in COMMON_C11N_AUTO_INSTALL_TYPES:
+                slots = getAvailableSlots(self.slotType)
+                if len(slots) == 1:
+                    self.selectSlot(slots[0])
             if self.selectedSlot is None:
                 self._selectedItem = item
+                return True
+            currentItem = self.getItemFromSlot(self._selectedSlot)
+            if currentItem is not None and currentItem.intCD == intCD:
                 return True
             self.installItem(intCD, self.selectedSlot)
             return True
@@ -431,8 +463,11 @@ class CustomizationMode(object):
             return False
 
     def _installItem(self, intCD, slotId, season=None, component=None):
+        raise NotImplementedError
+
+    def _installCommonItem(self, intCD, slotId, season=None, component=None):
         if C11N_ITEM_TYPE_MAP[slotId.slotType] in CustomizationType.COMMON_TYPES:
-            outfit = self._ctx.commonOutfit
+            outfit = self._ctx.commonModifiedOutfit
             if isItemsQuantityLimitReached(outfit, slotId.slotType) and not isSlotFilled(outfit, slotId):
                 return False
             item = self._service.getItemByCD(intCD)
@@ -448,9 +483,9 @@ class CustomizationMode(object):
 
     def _removeCommonItem(self, slotId, season=None):
         if C11N_ITEM_TYPE_MAP[slotId.slotType] in CustomizationType.COMMON_TYPES:
-            multiSlot = self._ctx.commonOutfit.getContainer(slotId.areaId).slotFor(slotId.slotType)
+            multiSlot = self._ctx.commonModifiedOutfit.getContainer(slotId.areaId).slotFor(slotId.slotType)
             multiSlot.remove(slotId.regionIdx)
-            self._ctx.commonOutfit.invalidate()
+            self._ctx.commonModifiedOutfit.invalidate()
             return True
         return False
 
@@ -469,11 +504,11 @@ class CustomizationMode(object):
 
     def _getAppliedItems(self, isOriginal=True):
         if isOriginal:
-            outfits = self._originalOutfits
-            seasons = SeasonType.COMMON_SEASONS
+            outfits = self.originalOutfits
         else:
             outfits = self.outfits
-            seasons = (self._ctx.season, SeasonType.ALL)
+        seasons = (
+         self._ctx.season, SeasonType.ALL)
         appliedItems = set()
         for seasonType in seasons:
             outfit = outfits[seasonType]

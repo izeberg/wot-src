@@ -4,8 +4,7 @@ from soft_exception import SoftException
 _MATERIAL_KINDS_FILE = 'system/data/material_kinds.xml'
 _EFFECT_MATERIALS_FILE = 'system/data/effect_materials.xml'
 IDS_BY_NAMES = None
-if IS_EDITOR:
-    NAMES_BY_IDS = None
+NAMES_BY_IDS = None
 EFFECT_MATERIALS = None
 EFFECT_MATERIAL_INDEXES_BY_NAMES = None
 EFFECT_MATERIAL_NAMES_BY_INDEXES = None
@@ -25,8 +24,7 @@ def _init():
     global NAMES_BY_IDS
     global NOT_GROUND_MATERIALS
     IDS_BY_NAMES = {}
-    if IS_EDITOR:
-        NAMES_BY_IDS = {}
+    NAMES_BY_IDS = {}
     EFFECT_MATERIALS = []
     EFFECT_MATERIAL_INDEXES_BY_NAMES = {}
     EFFECT_MATERIAL_NAMES_BY_INDEXES = {}
@@ -46,8 +44,7 @@ def _init():
             _raiseWrongXml(xmlPath, "wrong or non-unique 'id' or 'desc' (%d, '%s')" % (id, name))
         ids.add(id)
         IDS_BY_NAMES[name] = id
-        if IS_EDITOR:
-            NAMES_BY_IDS[id] = name
+        NAMES_BY_IDS[id] = name
         matName = s.readString('effect_material')
         if matName:
             matName = intern(matName)

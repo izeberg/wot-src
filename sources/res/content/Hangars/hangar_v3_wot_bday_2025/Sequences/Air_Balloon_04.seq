@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>150.000015</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.270393 0.325820 -0.000000</inTangent>
+				<outTangent>-0.270393 0.325820 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>75.400002</startTime>
+				<value>-20.387600 24.566799 -0.000008</value>
+				<inTangent>0.001450 -0.001747 -0.000000</inTangent>
+				<outTangent>0.001450 -0.001747 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>150.000015</startTime>
+				<value>-0.000003 0.000010 -0.000061</value>
+				<inTangent>0.273292 -0.329313 -0.000001</inTangent>
+				<outTangent>0.273292 -0.329313 -0.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -1,12 +1,22 @@
 import BigWorld
-from cgf_components_common.bunkers import BunkerLogicComponent as BunkerLogicComponentCGF
-from constants import IS_CGF_DUMP
+from cgf_components_common.bunkers import BunkerLogicComponentDescriptor
+from constants import IS_CGF_DUMP, IS_EDITOR
 from helpers import dependency
 from skeletons.gui.battle_session import IBattleSessionProvider
-if not IS_CGF_DUMP:
+from cgf_script.component_meta_class import registerReplicableComponent
+if not IS_CGF_DUMP and not IS_EDITOR:
     from gui.battle_control.battle_constants import FEEDBACK_EVENT_ID, ENTITY_IN_FOCUS_TYPE
+if IS_EDITOR:
 
-class BunkerLogicComponent(BigWorld.DynamicScriptComponent, BunkerLogicComponentCGF):
+    class DynamicScriptComponent(object):
+        pass
+
+
+else:
+    from BigWorld import DynamicScriptComponent
+
+@registerReplicableComponent
+class BunkerLogicComponent(DynamicScriptComponent, BunkerLogicComponentDescriptor):
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
     def bunkerDestroyed(self):

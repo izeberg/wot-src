@@ -59,85 +59,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Transform</type>
-			<version>1</version>
-			<component>
-				<UUID>829dd4a8-457b-4967-85c3-33bc77763a78</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>38988807-5e7f-4bd1-a06e-6bbd6c716005</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>e38acab0-c0f1-47b5-909d-809e444564f1</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>e6f499ad-4d1b-4a84-98b3-386c95c1ace6</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							11.5219 1.1132 5.705
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>SequenceComponent</type>
 			<version>3</version>
 			<component>
@@ -216,62 +137,6 @@
 									<property>
 										<name>parameters</name>
 										<collection>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>SequenceComponent</value>
-													</property>
-													<property>
-														<name>property</name>
-														<value>autoStart</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>bool</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
 											<item>
 												<object>
 													<property>
@@ -402,62 +267,6 @@
 													</property>
 													<property>
 														<name>property</name>
-														<value>autoStart</value>
-													</property>
-													<property>
-														<name>keys</name>
-														<collection>
-															<item>
-																<object>
-																	<property>
-																		<name>valueType</name>
-																		<value>bool</value>
-																	</property>
-																	<property>
-																		<name>value</name>
-																		<value>1</value>
-																	</property>
-																	<property>
-																		<name>type</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>time</name>
-																		<value>0</value>
-																	</property>
-																	<property>
-																		<name>tangents</name>
-																		<object>
-																			<property>
-																				<name>left</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																			<property>
-																				<name>right</name>
-																				<value>
-																					1.5708 1.5708 1.5708
-																					<!--BW_String-->
-																				</value>
-																			</property>
-																		</object>
-																	</property>
-																</object>
-															</item>
-														</collection>
-													</property>
-												</object>
-											</item>
-											<item>
-												<object>
-													<property>
-														<name>component</name>
-														<value>SequenceComponent</value>
-													</property>
-													<property>
-														<name>property</name>
 														<value>time</value>
 													</property>
 													<property>
@@ -510,7 +319,46 @@
 																	</property>
 																	<property>
 																		<name>value</name>
-																		<value>20</value>
+																		<value>15</value>
+																	</property>
+																	<property>
+																		<name>type</name>
+																		<value>1</value>
+																	</property>
+																	<property>
+																		<name>time</name>
+																		<value>15</value>
+																	</property>
+																	<property>
+																		<name>tangents</name>
+																		<object>
+																			<property>
+																				<name>left</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																			<property>
+																				<name>right</name>
+																				<value>
+																					1.5708 1.5708 1.5708
+																					<!--BW_String-->
+																				</value>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</item>
+															<item>
+																<object>
+																	<property>
+																		<name>valueType</name>
+																		<value>real</value>
+																	</property>
+																	<property>
+																		<name>value</name>
+																		<value>15</value>
 																	</property>
 																	<property>
 																		<name>type</name>
@@ -550,6 +398,85 @@
 								</object>
 							</item>
 						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>829dd4a8-457b-4967-85c3-33bc77763a78</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>38988807-5e7f-4bd1-a06e-6bbd6c716005</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e38acab0-c0f1-47b5-909d-809e444564f1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>e6f499ad-4d1b-4a84-98b3-386c95c1ace6</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							11.5219 1.1132 5.705
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>

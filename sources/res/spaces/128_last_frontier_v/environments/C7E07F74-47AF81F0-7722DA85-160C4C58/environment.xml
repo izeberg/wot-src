@@ -19,6 +19,19 @@
 			<skyLow>0.420000</skyLow>
 			<skyHigh>0.900000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.400000 0.592157 1.000000 5.500000</color>
+			<density>0.001000</density>
+			<height>16.799999</height>
+			<heightFalloff>0.005000</heightFalloff>
+			<startDistance>80.000000</startDistance>
+			<scatterStart>600.000000</scatterStart>
+			<scatterExponent>4.000000</scatterExponent>
+			<scatterColor>1.000000 0.803922 0.560784 5.000000</scatterColor>
+			<skyLow>0.000000</skyLow>
+			<skyHigh>0.200000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<color>0.470588 0.592157 0.721569 0.000000</color>
@@ -200,12 +213,18 @@
 			<angle>35.000000</angle>
 			<angleZ>61.000000</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>35.000000</angle>
+		</simplified_deferred>
 		<sunScale>1.000000</sunScale>
 		<sunColor>255.000000 216.000000 163.000000</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
 		<sunLightColor>1.000000 0.890196 0.780392</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>1.000000 0.890196 0.780392</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>0.800000</sunScaleForward>
 		<sunColorForward>255.000000 255.000000 255.000000</sunColorForward>
 		<sunTextureForward>system/maps/psf_rgbe.dds</sunTextureForward>
@@ -248,6 +267,7 @@
 	</Wetness>
 	<VolumetricFog>
 		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
 		<sampleShadows>true</sampleShadows>
 		<temporalReprojection>true</temporalReprojection>
 		<fogDistance>500.000000</fogDistance>
@@ -264,4 +284,12 @@
 		<enableLocalLights>false</enableLocalLights>
 		<densityFix>1.000000</densityFix>
 	</VolumetricFog>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>0.900000</terrainBakedShadowFactor>
+		<bakedAOToShadow>1.400000</bakedAOToShadow>
+		<bakedAOPower>0.750000</bakedAOPower>
+		<vegetationMetallicMult>0.850000</vegetationMetallicMult>
+		<transmissionMult>0.600000</transmissionMult>
+		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
+	</SimplifiedDeferred>
 </root>

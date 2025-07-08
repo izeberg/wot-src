@@ -123,7 +123,6 @@ def WW_isInitialised(*args, **kwargs): pass
 def WW_onMemoryCritical(*args, **kwargs): pass
 def WW_playCameraOriented(*args, **kwargs): pass
 def WW_prepareMP3(*args, **kwargs): pass
-def WW_reinit(*args, **kwargs): pass
 def WW_removeMarkerListener(*args, **kwargs): pass
 def WW_setLowQuality(*args, **kwargs): pass
 def WW_setMasterVolume(*args, **kwargs): pass

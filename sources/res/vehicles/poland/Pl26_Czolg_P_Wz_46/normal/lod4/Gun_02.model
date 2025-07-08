@@ -2,4 +2,8 @@
 <root>
 	<nodefullVisual>vehicles/poland/Pl26_Czolg_P_Wz_46/normal/lod4/Gun_02</nodefullVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.432680 -0.304426 -0.015293</min>
+		<max>0.434628 0.386619 6.496402</max>
+	</visibilityBox>
 </root>

@@ -228,7 +228,7 @@ msgstr "如果您已拥有补给品内容列表中的全部坦克，之后从开
 
 msgid "infoPage/footer/description/guaranteed"
 msgstr ""
-"每%(guaranteed0)s个补给品都保底内含1辆VIII–X级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品(取决于补给品类型)时，必定会掉落1辆您尚未拥有的VIII–X级坦克。补给品掉落坦克后，计数器将重置。"
+"每%(guaranteed0)s个补给品都保底内含1辆VIII–X级坦克。如果这些补给品始终未掉落保底坦克，那么当您开启第%(guaranteed0)s个补给品(取决于补给品类型)时，必定会掉落1辆您车库中尚未拥有的VIII–X级坦克。补给品掉落坦克后，计数器将重置。"
 
 msgid "infoPage/footer/title/autoOpen"
 msgstr "自动开启"

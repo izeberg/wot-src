@@ -171,12 +171,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
       override public function onClickHandler() : void
       {
          super.onClickHandler();
-         var _loc1_:String = SoundTypes.CUSTOMIZATION_DEFAULT;
-         if(this.model.actionType == ACTION_REMOVE_ONE || this.model.actionType == ACTION_REMOVE_FROM_ALL_PARTS)
+         if(this.model.actionType != ACTION_REMOVE_ONE && this.model.actionType != ACTION_REMOVE_FROM_ALL_PARTS)
          {
-            _loc1_ = SoundTypes.CUSTOMIZATION_REMOVE;
+            this._sound.playControlsSnd(SoundManagerStates.SND_PRESS,SoundTypes.CUSTOMIZATION_DEFAULT,Values.EMPTY_STR);
          }
-         this._sound.playControlsSnd(SoundManagerStates.SND_PRESS,_loc1_,Values.EMPTY_STR);
          this.dispatchClickAction();
       }
       

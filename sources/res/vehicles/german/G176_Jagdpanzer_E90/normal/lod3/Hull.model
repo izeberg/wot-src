@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G176_Jagdpanzer_E90/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.197060 -0.649888 -4.717159</min>
+		<max>2.196596 2.353419 4.058323</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G176_Jagdpanzer_E90/normal/lod3/Hull</nodefullVisual>
+</root>

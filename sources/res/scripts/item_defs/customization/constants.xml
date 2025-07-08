@@ -46,6 +46,10 @@
 				<range_min>18000</range_min>
 				<range_max>18059</range_max>
 			</sequence>
+			<statTracker>
+				<range_min>18000</range_min>
+				<range_max>18059</range_max>
+			</statTracker>
 			<fixedProjectionDecal>
 				<range_min>19000</range_min>
 				<range_max>19100</range_max>
@@ -80,6 +84,10 @@
 				<range_min>28000</range_min>
 				<range_max>28059</range_max>
 			</sequence>
+			<statTracker>
+				<range_min>28000</range_min>
+				<range_max>28059</range_max>
+			</statTracker>
 			<fixedProjectionDecal>
 				<range_min>29000</range_min>
 				<range_max>29100</range_max>
@@ -130,6 +138,10 @@
 				<range_min>38000</range_min>
 				<range_max>38049</range_max>
 			</sequence>
+			<statTracker>
+				<range_min>38000</range_min>
+				<range_max>38049</range_max>
+			</statTracker>
 			<fixedProjectionDecal>
 				<range_min>39000</range_min>
 				<range_max>39100</range_max>
@@ -180,6 +192,10 @@
 				<range_min>48000</range_min>
 				<range_max>48050</range_max>
 			</sequence>
+			<statTracker>
+				<range_min>48000</range_min>
+				<range_max>48050</range_max>
+			</statTracker>
 			<fixedProjectionDecal>
 				<range_min>49000</range_min>
 				<range_max>49100</range_max>
@@ -325,6 +341,23 @@
 				</shift>
 			</large>
 		</gunMantlet>
+		<statTracker>
+			<medium>
+				<size>
+					0.5 0.3 0.1
+					<!--BW_String-->
+				</size>
+				<premount_size>
+					0.1 0.1 0.05
+					<!--BW_String-->
+				</premount_size>
+				<mount_size>0 0 0</mount_size>
+				<shift>
+					0 0.05
+					<!--BW_String-->
+				</shift>
+			</medium>
+		</statTracker>
 	</attachment_slot_sizes>
 	<attachment_hanging_effects>
 		<universal>
@@ -339,5 +372,9 @@
 			<epic>particles/3D_Customization/cus_hanging_vertical_epic.seq</epic>
 			<legendary>particles/3D_Customization/cus_hanging_vertical_legendary.seq</legendary>
 		</gunMantlet>
+		<gun>
+			<epic>particles/3D_Customization/cus_hanging_gunslot_epic.seq</epic>
+			<legendary>particles/3D_Customization/cus_hanging_gunslot_legendary.seq</legendary>
+		</gun>
 	</attachment_hanging_effects>
 </root>
