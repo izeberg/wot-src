@@ -95,7 +95,7 @@ class KillModeBase(IControlMode, CallbackDelayer):
 
     @property
     def _killerIsSpotted(self):
-        return self._rawSimulationData and self._rawSimulationData['attacker'] and self._rawSimulationData['attacker']['spotted']
+        return self._rawSimulationData and self._rawSimulationData.get('attacker', {}).get('spotted')
 
     def create(self):
         self._cam.create(onChangeControlMode=None, postmortemMode=True, smartPointCalculator=True)

@@ -1250,6 +1250,14 @@
 						g_detailUVTiling
 						<Vector4>3.506849 3.506849 0.000000 0.000000</Vector4>
 					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.361315 0.637707 -0.113459</groupOrigin>
 			</primitiveGroup>
@@ -1320,6 +1328,14 @@
 						g_detailUVTiling
 						<Vector4>3.506849 3.506849 0.000000 0.000000</Vector4>
 					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.361104 0.637707 -0.111593</groupOrigin>
 			</primitiveGroup>
@@ -1331,5 +1347,4 @@
 		<max>1.701847 1.224316 3.952619</max>
 	</boundingBox>
 	<geometrySize>440256</geometrySize>
-	<minUVDensity>0.020604</minUVDensity>
 </root>

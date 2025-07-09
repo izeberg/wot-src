@@ -1,4 +1,4 @@
-import WWISE, BigWorld
+import WWISE, Sound, BigWorld
 from debug_utils import LOG_DEBUG, LOG_ERROR, LOG_WARNING
 from gui.sounds.abstract import SoundSystemAbstract
 from gui.sounds.sound_constants import SoundSystems, SPEAKERS_CONFIG
@@ -167,7 +167,7 @@ class WWISESoundSystem(SoundSystemAbstract):
         else:
             WWISE.WW_setUserSpeakersConfig(presetID)
             LOG_DEBUG(('WWISE: New sounds preset is set. New value is {}').format(presetID))
-            WWISE.WW_reinit()
+            Sound.reloadSoundEngine()
             LOG_DEBUG('WWISE: Sound system is reinitialized')
             BigWorld.reinitVideoSound()
 

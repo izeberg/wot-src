@@ -4505,6 +4505,26 @@
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
+								0.000065 -0.026 1.48338
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0.000065 -0.026 2.23338
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.126 0 0
+								<!--BW_String-->
+							</rayUp>
+							<size>
+								0.75
+								<!--BW_String-->
+							</size>
+						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
 								0.000065 -0.026 2.03
 								<!--BW_String-->
 							</rayStart>
@@ -4516,6 +4536,7 @@
 								0.15 0 0
 								<!--BW_String-->
 							</rayUp>
+							<compatibleModels>Ch41_WZ_111_5A_TXVII_3Dst</compatibleModels>
 							<size>
 								0.75
 								<!--BW_String-->

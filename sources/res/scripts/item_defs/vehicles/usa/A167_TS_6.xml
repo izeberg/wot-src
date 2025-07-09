@@ -131,6 +131,13 @@
 			<undamaged>vehicles/american/A167_TS_6/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/american/A167_TS_6/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/american/A167_TS_6/crash/lod0/Hull.model</exploded>
+			<sets>
+				<A167_TS_6_G90_3Dst>
+					<undamaged>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Hull.model</exploded>
+				</A167_TS_6_G90_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -1194,6 +1201,13 @@
 				<undamaged>vehicles/american/A167_TS_6/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/american/A167_TS_6/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/american/A167_TS_6/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<A167_TS_6_G90_3Dst>
+						<undamaged>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Chassis.model</exploded>
+					</A167_TS_6_G90_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1292,6 +1306,39 @@
 									<row3>0.000000 0.781265 -3.683000</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>A167_TS_6_G90_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.910978 0.000000 0.000000</row0>
+									<row1>0.000000 1.480612 0.000000</row1>
+									<row2>0.000000 0.000000 7.059170</row2>
+									<row3>0.000000 1.204906 0.033350</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.353396 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 0.000000</row1>
+									<row2>0.000000 0.000000 7.573378</row2>
+									<row3>0.000000 1.344237 0.069104</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.496492 0.000000 0.000000</row0>
+									<row1>0.000000 0.474162 0.000000</row1>
+									<row2>0.000000 0.000000 0.300000</row2>
+									<row3>0.000000 0.984084 3.808381</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 0.000000</row1>
+									<row2>0.000000 0.000000 7.573380</row2>
+									<row3>-1.811452 1.136342 0.000000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.554212 0.000000</row1>
+									<row2>0.000000 0.000000 4.232820</row2>
+									<row3>-1.804561 0.921114 1.592422</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1364,6 +1411,39 @@
 									<row1>0.000000 0.300000 0.000000</row1>
 									<row2>0.000000 0.000000 0.300000</row2>
 									<row3>0.000000 0.781265 -3.683000</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>A167_TS_6_G90_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.910978 0.000000 0.000000</row0>
+									<row1>0.000000 1.480612 0.000000</row1>
+									<row2>0.000000 0.000000 7.059170</row2>
+									<row3>-0.000000 1.204906 0.033350</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.353396 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 0.000000</row1>
+									<row2>0.000000 0.000000 7.573378</row2>
+									<row3>-0.000000 1.344237 0.069104</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.496492 0.000000 0.000000</row0>
+									<row1>0.000000 0.474162 0.000000</row1>
+									<row2>0.000000 0.000000 0.300000</row2>
+									<row3>-0.000000 0.984084 3.808381</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 0.000000</row1>
+									<row2>0.000000 0.000000 7.573380</row2>
+									<row3>1.811452 1.136342 0.000000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>0.000000 0.554212 0.000000</row1>
+									<row2>0.000000 0.000000 4.232820</row2>
+									<row3>1.804561 0.921114 1.592422</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -3301,7 +3381,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.7
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3317,7 +3397,7 @@
 					</pitchLimits>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3391,6 +3471,13 @@
 						<undamaged>vehicles/american/A167_TS_6/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/american/A167_TS_6/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/american/A167_TS_6/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<A167_TS_6_G90_3Dst>
+								<undamaged>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Gun_01.model</exploded>
+							</A167_TS_6_G90_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/american/A167_TS_6/collision/Gun_01.model</collisionModelServer>
@@ -3399,6 +3486,97 @@
 					<effects>shot_large_mb</effects>
 					<reloadEffect>reload115_152</reloadEffect>
 					<edgeByVisualModel>false</edgeByVisualModel>
+					<drivenJoints>
+						<master>
+							<node>Gun</node>
+							<table>
+								<row>
+									-15.0
+									<!--BW_String-->
+								</row>
+								<row>
+									-10.0
+									<!--BW_String-->
+								</row>
+								<row>
+									-5.0
+									<!--BW_String-->
+								</row>
+								<row>
+									0.0
+									<!--BW_String-->
+								</row>
+								<row>
+									10.0
+									<!--BW_String-->
+								</row>
+								<row>
+									15.0
+									<!--BW_String-->
+								</row>
+							</table>
+							<slaves>
+								<slave>
+									<node>joint_lower</node>
+									<table>
+										<row>
+											-19.097
+											<!--BW_String-->
+										</row>
+										<row>
+											-12.765
+											<!--BW_String-->
+										</row>
+										<row>
+											-6.532
+											<!--BW_String-->
+										</row>
+										<row>
+											-0.182
+											<!--BW_String-->
+										</row>
+										<row>
+											13.426
+											<!--BW_String-->
+										</row>
+										<row>
+											19.932
+											<!--BW_String-->
+										</row>
+									</table>
+								</slave>
+								<slave>
+									<node>joint_upper</node>
+									<table>
+										<row>
+											-3.445
+											<!--BW_String-->
+										</row>
+										<row>
+											-2.579
+											<!--BW_String-->
+										</row>
+										<row>
+											-1.106
+											<!--BW_String-->
+										</row>
+										<row>
+											0.404
+											<!--BW_String-->
+										</row>
+										<row>
+											2.489
+											<!--BW_String-->
+										</row>
+										<row>
+											4.686
+											<!--BW_String-->
+										</row>
+									</table>
+								</slave>
+							</slaves>
+						</master>
+					</drivenJoints>
 					<camouflage>
 						<density>115.139297 115.247955</density>
 						<aoTextureSize>512 256</aoTextureSize>
@@ -3409,6 +3587,13 @@
 				<undamaged>vehicles/american/A167_TS_6/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/american/A167_TS_6/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/american/A167_TS_6/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<A167_TS_6_G90_3Dst>
+						<undamaged>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod0/Turret_01.model</exploded>
+					</A167_TS_6_G90_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/american/A167_TS_6/collision/Turret_01.model</collisionModelServer>
@@ -4507,7 +4692,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<physicsShape>
-				1 0 0.984 -0.087 0.608 0.166 0.529 0.366 0.496 0.461 0.165 0.5 0 0 0
+				1 0 0.984 -0.087 0.892 -0.073 0.569 0.402 0.279 0.252 0.188 0.5 0.053 0.319 0.113
 				<!--BW_String-->
 			</physicsShape>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>

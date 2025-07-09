@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G176_Jagdpanzer_E90/normal/lod2/Gun_03</nodefullVisual>
+	<parent>vehicles/german/G176_Jagdpanzer_E90/normal/lod3/Gun_03</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.442357 -0.428717 0.306312</min>
+		<max>0.442357 0.585423 6.195053</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

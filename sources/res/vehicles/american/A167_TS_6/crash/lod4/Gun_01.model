@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/american/A167_TS_6/crash/lod4/Gun_01</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.526404 -0.411396 -0.017248</min>
+		<max>0.537843 0.447829 6.642657</max>
+	</visibilityBox>
 </root>

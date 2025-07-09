@@ -251,6 +251,8 @@ package
       
       public static const CUSTOMIZATION_ATTACHMENT:String = "#item_types:customization/attachment";
       
+      public static const CUSTOMIZATION_STATTRACKER:String = "#item_types:customization/statTracker";
+      
       public static const CUSTOMIZATION_PLURAL_PAINT:String = "#item_types:customization/plural/paint";
       
       public static const CUSTOMIZATION_PLURAL_CAMOUFLAGE:String = "#item_types:customization/plural/camouflage";
@@ -274,6 +276,8 @@ package
       public static const CUSTOMIZATION_PLURAL_PERSONALNUMBER:String = "#item_types:customization/plural/personalNumber";
       
       public static const CUSTOMIZATION_PLURAL_ATTACHMENT:String = "#item_types:customization/plural/attachment";
+      
+      public static const CUSTOMIZATION_PLURAL_STATTRACKER:String = "#item_types:customization/plural/statTracker";
       
       public static const CREWSKINS_ITEMTYPE_COMMON:String = "#item_types:crewSkins/itemType/common";
       

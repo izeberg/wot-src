@@ -1976,17 +1976,17 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promoscreens/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promoscreens/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promoscreens/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 				<name>NA</name>
 				<type>url</type>
 			</item>
@@ -1996,34 +1996,34 @@
 				<macros>AREA_ID</macros>
 				<value>
 					<item>
-						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promoscreens/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 						<name>1500100</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promoscreens/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 						<name>1500200</name>
 						<type>url</type>
 					</item>
 					<item>
-						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promoscreens/
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 						<name>default</name>
 						<type>url</type>
 					</item>
 				</value>
 			</item>
 			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promoscreens/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-sandbox.worldoftanks.com/$LANGUAGE_CODE/promoscreens/
+				https://webbrg-sandbox.worldoftanks.com/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 				<name>SB</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promoscreens/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promoscreens/?is_steam=$IS_STEAM
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -2689,9 +2689,25 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapter
 				<name>extraInfoPage</name>
-				<type>url</type>
+				<type>dict</type>
+				<value>
+					<item>
+						/$LANGUAGE_CODE/promocontent/chapterd/
+						<name>174</name>
+						<type>url</type>
+					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/chapterl/
+						<name>175</name>
+						<type>url</type>
+					</item>
+					<item>
+						/$LANGUAGE_CODE/promocontent/17BPContentPage
+						<name>176</name>
+						<type>url</type>
+					</item>
+				</value>
 			</item>
 			<item>
 				/$LANGUAGE_CODE/promocontent/17BPIntroVideo/
@@ -2699,7 +2715,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapterVideo/
+				/$LANGUAGE_CODE/promocontent/specialchapterVideodl/
 				<name>extraIntroVideo</name>
 				<type>url</type>
 			</item>
@@ -2715,12 +2731,7 @@
 					<item>
 						<name>hasAdditionalBackground</name>
 						<type>bool</type>
-						<value>False</value>
-					</item>
-					<item>
-						<name>hasSpecialTankmenScreen</name>
-						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 				</value>
 			</item>
@@ -2744,6 +2755,21 @@
 							</item>
 							<item>
 								<name>173</name>
+								<type>bool</type>
+								<value>False</value>
+							</item>
+							<item>
+								<name>174</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								<name>175</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								<name>176</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>

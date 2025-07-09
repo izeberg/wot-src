@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.911945 0.103443 -3.828932</min>
+		<max>1.912351 1.945212 3.797178</max>
+	</visibilityBox>
+	<parent>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod2/Hull</parent>
+	<extent>64</extent>
+	<nodefullVisual>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/crash/lod1/Hull</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J42_Chi_Se/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.665574 -1.006868 -4.095082</min>
+		<max>1.710901 0.732428 3.666855</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+</root>

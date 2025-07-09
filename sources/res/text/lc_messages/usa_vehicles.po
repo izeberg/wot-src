@@ -243,6 +243,21 @@ msgstr "Strong frontal armor and good damage per shot"
 msgid "A116_XM551"
 msgstr "XM551 Sheridan"
 
+msgid "A116_XM551_FEP"
+msgstr "XM551E4 Hailstorm"
+
+msgid "A116_XM551_FEP_descr"
+msgstr ""
+"The designers' idea was for the T250 cannon 6x37 gun to be powerful enough "
+"to destroy enemy infantry and lightly-armored vehicles. Later, the project "
+"was supposed to increase the elevation angle of the gun to fire at low-"
+"flying targets, but the limited ammunition that could fit in the improved "
+"turret and the awkward placement of the crew led to the project being "
+"abandoned."
+
+msgid "A116_XM551_FEP_short"
+msgstr "Hailstorm"
+
 msgid "A116_XM551_descr"
 msgstr ""
 "Work on the vehicle started under the AR/AAV project (Armored "
@@ -825,6 +840,18 @@ msgstr "Pawlack Tank"
 msgid "A143_M_V_Y"
 msgstr "M-V-Y"
 
+msgid "A143_M_V_Y_FEP"
+msgstr "M5YE2 Thunderclap"
+
+msgid "A143_M_V_Y_FEP_descr"
+msgstr ""
+"An experimental piece with a 75 mm ARES XM274 gun. The project was canceled "
+"because of the poor positioning of the gun in the standard turret, which was"
+" hard to maintain."
+
+msgid "A143_M_V_Y_FEP_short"
+msgstr "Thunderclap"
+
 msgid "A143_M_V_Y_descr"
 msgstr ""
 "In June 1953, H.L. Yoh Company Inc. presented seven prototypes of a "
@@ -1321,6 +1348,36 @@ msgstr "ARMT"
 
 msgid "A161_ARMT_short_special"
 msgstr "Magazine loading and good mobility"
+
+msgid "A166_H_3"
+msgstr "H3"
+
+msgid "A166_H_3_descr"
+msgstr ""
+"In the second half of the 1940s, the U.S. was carrying out unhurried work on"
+" a heavy tank and had not moved beyond the prototype phase. The Korean War "
+"was a strong impetus to progress, and the early 1950s saw the appearance of "
+"the T43 heavy tank, which transformed into the serially produced M103 heavy "
+"tank. Work then began on designing heavier tanks, and the H3 heavy tank was "
+"among the presented concepts. The U.S. clearly drew upon experience of the "
+"French AMX 50 in its creation. The vehicle was equipped with an oscillating "
+"turret and an autoloader but remained an original design—this also concerned"
+" the turret. The hull was made as low as possible. In addition, the tank had"
+" a high power-to-weight ratio. Work on the H3 heavy tank did not go beyond "
+"design proposals."
+
+msgid "A166_H_3_long_special"
+msgstr ""
+"The H3 is a Tier IX American heavy tank. Its main feature is a five-shell "
+"autoloading gun with exceptional total clip damage and good accuracy. While "
+"the armor isn't very strong, the H3 has top-notch mobility for a heavy tank,"
+" allowing it to easily reposition around the battlefield."
+
+msgid "A166_H_3_short"
+msgstr "H3"
+
+msgid "A166_H_3_short_special"
+msgstr "Large autoloader, good mobility"
 
 msgid "A167_TS_6"
 msgstr "TS-6"
@@ -1827,7 +1884,7 @@ msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
 
 msgid "AN_GRC_8D"
-msgstr "AN/GRC-8"
+msgstr "AN/GRC-8D"
 
 msgid "AN_GRC_8E"
 msgstr "AN GRC 8E"
@@ -1847,8 +1904,8 @@ msgstr "AN/VRC-24"
 msgid "AN_VRC-3"
 msgstr "AN/VRC-3"
 
-msgid "AN_VRC-3I"
-msgstr "AN/VRC-3I"
+msgid "AN_VRC-3_FEP"
+msgstr "AN/VRC-3M"
 
 msgid "AN_VRC-3_Rush_Ep1"
 msgstr "AN/VRC-3S"
@@ -1861,6 +1918,12 @@ msgstr "AN/VRC-12"
 
 msgid "AN_VRC_3B"
 msgstr "AN/VRC-3B"
+
+msgid "AN_VRC_3H"
+msgstr "AN/VRC-3H"
+
+msgid "AN_VRC_3I"
+msgstr "AN/VRC-3I"
 
 msgid "AN_VRC_3_XM"
 msgstr "AN/VRC-3XM"
@@ -1958,6 +2021,9 @@ msgstr "Chrysler K GF"
 msgid "Chassis_A116_XM551"
 msgstr "AR/AAV XM551 Sheridan"
 
+msgid "Chassis_A116_XM551_FEP"
+msgstr "XM551E4"
+
 msgid "Chassis_A117_T26E5"
 msgstr "T26E5"
 
@@ -2036,6 +2102,9 @@ msgstr "Pawlack Tank B"
 msgid "Chassis_A143_M_V_Y"
 msgstr "M-V-Y"
 
+msgid "Chassis_A143_M_V_Y_FEP"
+msgstr "M-V-Y II"
+
 msgid "Chassis_A144_M_VI_Y"
 msgstr "M-VI-Y A"
 
@@ -2094,13 +2163,16 @@ msgid "Chassis_A158_T832"
 msgstr "T-832"
 
 msgid "Chassis_A159_Chrysler_MTC_2"
-msgstr "Chrysler MTC 2 track configuration"
+msgstr "Chrysler MTC 2TC"
 
 msgid "Chassis_A160_M24_594"
 msgstr "M24 Chaffee No. 594"
 
 msgid "Chassis_A161_ARMT"
 msgstr "ARMT"
+
+msgid "Chassis_A166_H_3"
+msgstr "H3"
 
 msgid "Chassis_A167_TS_6"
 msgstr "TS-6"
@@ -2538,6 +2610,12 @@ msgstr ""
 "Continental\n"
 "AOSI-1195-5 Y VI B"
 
+msgid "Continental_AOSI_1195_5_Y_V_FEP"
+msgstr "Continental AOSI-1195-7 Y V M"
+
+msgid "Continental_AOSI_1195_5_Y_V_FEP_short"
+msgstr "Continental AOSI-1195-7 Y V M"
+
 msgid "Continental_AOSI_1195_5_Y_V_short"
 msgstr ""
 "Continental\n"
@@ -2771,6 +2849,14 @@ msgstr ""
 "Continental\n"
 "AV-1790-7-12B"
 
+msgid "Continental_AX_1770"
+msgstr "Continental AX-1770"
+
+msgid "Continental_AX_1770_short"
+msgstr ""
+"Continental\n"
+"AX-1770"
+
 msgid "Continental_R-670-5"
 msgstr "Continental R-670-5"
 
@@ -2977,6 +3063,12 @@ msgstr "General Motors 6046"
 
 msgid "General_Motors_6V53T"
 msgstr "General Motors 6V53T"
+
+msgid "General_Motors_6V53T_FEP"
+msgstr "General Motors 6V53TA2"
+
+msgid "General_Motors_6V53T_FEP_short"
+msgstr "General Motors 6V53TA2"
 
 msgid "General_Motors_6V53T_short"
 msgstr ""
@@ -4253,6 +4345,9 @@ msgstr "Chrysler K GF"
 msgid "Turret_1_A116_XM551"
 msgstr "AR/AAV XM551 Sheridan"
 
+msgid "Turret_1_A116_XM551_FEP"
+msgstr "XM551E4"
+
 msgid "Turret_1_A117_T26E5"
 msgstr "T26E5"
 
@@ -4319,6 +4414,9 @@ msgstr "Pawlack A"
 msgid "Turret_1_A143_M_V_Y"
 msgstr "M-V-Y JJ"
 
+msgid "Turret_1_A143_M_V_Y_FEP"
+msgstr "M-V-Y II"
+
 msgid "Turret_1_A144_M_VI_Y"
 msgstr "M-VI-Y A"
 
@@ -4375,6 +4473,9 @@ msgstr "M24 Chaffee No. 594"
 
 msgid "Turret_1_A161_ARMT"
 msgstr "ARMT"
+
+msgid "Turret_1_A166_H_3"
+msgstr "H3"
 
 msgid "Turret_1_A167_TS_6"
 msgstr "TS-6"
@@ -5118,6 +5219,9 @@ msgstr "APBC M358"
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
+msgid "_120mm_APCR_T62E1"
+msgstr "APCR T62E1"
+
 msgid "_120mm_APCR_T62_28P"
 msgstr "APCR T62/28P"
 
@@ -5141,6 +5245,9 @@ msgstr "AP"
 
 msgid "_120mm_AP_T42"
 msgstr "AP T42"
+
+msgid "_120mm_AP_T42E1"
+msgstr "AP T42E1"
 
 msgid "_120mm_AP_T42_28P"
 msgstr "AP T42/28P"
@@ -5211,6 +5318,9 @@ msgstr "120 mm Gun T179S"
 msgid "_120mm_Gun_T53A1"
 msgstr "120 mm Gun T53A1"
 
+msgid "_120mm_Gun_T53E1"
+msgstr "120 mm Gun T53E1"
+
 msgid "_120mm_HE-T67"
 msgstr "HE T67"
 
@@ -5252,6 +5362,9 @@ msgstr "HE Shell"
 
 msgid "_120mm_HE_Shot_C"
 msgstr "HE Shell C"
+
+msgid "_120mm_HE_T67E1"
+msgstr "HE T67E1"
 
 msgid "_120mm_HE_T67_28P"
 msgstr "HE T67/28P"
@@ -5540,8 +5653,17 @@ msgstr "37 mm Gun M6"
 msgid "_37mm_M-6_L53M2"
 msgstr "37 mm Gun M6"
 
+msgid "_37mm_M1305_AP_FEP"
+msgstr "HVAP T1301"
+
+msgid "_37mm_M1305_HEAT_FEP"
+msgstr "APDS T1305"
+
 msgid "_37mm_T16"
 msgstr "37 mm Gun T16"
+
+msgid "_37mm_T250_FEP"
+msgstr "37 mm Rotary Gun T250"
 
 msgid "_37mm_semiautomatic_gun_M1924"
 msgstr "37 mm Semiautomatic Gun M1924"
@@ -5621,6 +5743,12 @@ msgstr "75 mm Gun T13E1"
 msgid "_75mm_HEAT_M66"
 msgstr "HEAT M66"
 
+msgid "_75mm_HEAT_T0305_FEP"
+msgstr "APFSDS T036"
+
+msgid "_75mm_HVAP_M45A3_FEP"
+msgstr "HVAP T035"
+
 msgid "_75mm_Howitzer_M1A1"
 msgstr "75 mm AT Howitzer M1A1"
 
@@ -5668,6 +5796,9 @@ msgstr "Pzgr39L (captured)"
 
 msgid "_75mm_Sprg.18L"
 msgstr "Sprg.18L (captured)"
+
+msgid "_75mm_XM247_FEP"
+msgstr "75 mm XM247 ARES"
 
 msgid "_76mm_APDS_M331A2"
 msgstr "HVAP-DS-T M331A2"

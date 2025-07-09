@@ -115,7 +115,7 @@
 						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-1.465431 0.739676 -0.004189</groupOrigin>
+				<groupOrigin>-1.465431 0.741281 -0.004189</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -180,6 +180,5 @@
 		<min>-1.819649 0.004433 -3.262711</min>
 		<max>1.819649 1.472359 3.275018</max>
 	</boundingBox>
-	<geometrySize>275268</geometrySize>
-	<minUVDensity>0.512791</minUVDensity>
+	<geometrySize>275172</geometrySize>
 </root>

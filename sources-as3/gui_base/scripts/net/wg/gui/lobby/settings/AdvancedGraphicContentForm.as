@@ -25,9 +25,9 @@ package net.wg.gui.lobby.settings
       
       public var blockEffects:FieldSet = null;
       
-      public var RENDER_PIPELINELabel:LabelControl = null;
+      public var RENDER_PIPELINE_QUALITYLabel:LabelControl = null;
       
-      public var RENDER_PIPELINEButtonBar:RadioButtonBar = null;
+      public var RENDER_PIPELINE_QUALITYButtonBar:RadioButtonBar = null;
       
       public var TEXTURE_QUALITYLabel:LabelControl = null;
       
@@ -154,17 +154,17 @@ package net.wg.gui.lobby.settings
          this.blockLandscapeAndWater.label = SETTINGS.GRAPHICS_BLOCK_LANDSCAPEANDWATER;
          this.blockGreenery.label = SETTINGS.GRAPHICS_BLOCK_GREENERY;
          this.blockEffects.label = SETTINGS.GRAPHICS_BLOCK_EFFECTS;
-         this.RENDER_PIPELINELabel.text = SETTINGS.RENDER_PIPELINE_LABEL;
-         this.RENDER_PIPELINELabel.validateNow();
-         this.RENDER_PIPELINEButtonBar.x = this.RENDER_PIPELINELabel.x + this.RENDER_PIPELINELabel.width + RADIO_BAR_OFFSET;
+         this.RENDER_PIPELINE_QUALITYLabel.text = SETTINGS.RENDER_PIPELINE_QUALITY_LABEL;
+         this.RENDER_PIPELINE_QUALITYLabel.validateNow();
+         this.RENDER_PIPELINE_QUALITYButtonBar.x = this.RENDER_PIPELINE_QUALITYLabel.x + this.RENDER_PIPELINE_QUALITYLabel.width + RADIO_BAR_OFFSET;
          dispatchEvent(new Event(Event.RESIZE));
          visible = true;
       }
       
       override protected function onDispose() : void
       {
-         this.RENDER_PIPELINELabel.dispose();
-         this.RENDER_PIPELINEButtonBar.dispose();
+         this.RENDER_PIPELINE_QUALITYLabel.dispose();
+         this.RENDER_PIPELINE_QUALITYButtonBar.dispose();
          this.TEXTURE_QUALITYLabel.dispose();
          this.TEXTURE_QUALITYValue.dispose();
          this.TEXTURE_QUALITYStepSlider.dispose();
@@ -220,8 +220,8 @@ package net.wg.gui.lobby.settings
          this.MSAA_QUALITYLabel.dispose();
          this.MSAA_QUALITYValue.dispose();
          this.MSAA_QUALITYStepSlider.dispose();
-         this.RENDER_PIPELINELabel = null;
-         this.RENDER_PIPELINEButtonBar = null;
+         this.RENDER_PIPELINE_QUALITYLabel = null;
+         this.RENDER_PIPELINE_QUALITYButtonBar = null;
          this.TEXTURE_QUALITYLabel = null;
          this.TEXTURE_QUALITYValue = null;
          this.TEXTURE_QUALITYStepSlider = null;
@@ -292,7 +292,7 @@ package net.wg.gui.lobby.settings
       
       private function initTexts() : void
       {
-         this.RENDER_PIPELINELabel.text = Values.EMPTY_STR;
+         this.RENDER_PIPELINE_QUALITYLabel.text = Values.EMPTY_STR;
          this.TEXTURE_QUALITYLabel.text = Values.EMPTY_STR;
          this.SHADOWS_QUALITYLabel.text = Values.EMPTY_STR;
          this.TERRAIN_QUALITYLabel.text = Values.EMPTY_STR;

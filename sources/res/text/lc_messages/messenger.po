@@ -2525,7 +2525,7 @@ msgid "serviceChannelMessages/epicReward/battlePassPoints"
 msgstr "• Battle Pass Points"
 
 msgid "serviceChannelMessages/epicReward/brochure_gift"
-msgstr "• Universal Manual"
+msgstr "• Universal Booklet"
 
 msgid "serviceChannelMessages/epicReward/crystal"
 msgstr "• Bonds"
@@ -2536,8 +2536,14 @@ msgstr "• Combat Reserve Points"
 msgid "serviceChannelMessages/epicReward/expequipments_gift"
 msgstr "• Experimental Equipment to Select From"
 
+msgid "serviceChannelMessages/epicReward/mentoringLicense_gift"
+msgstr "• Mentoring License"
+
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• Retraining Orders"
+
+msgid "serviceChannelMessages/epicReward/universalBook_gift"
+msgstr "• Universal Manual"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "You have been granted Anniversary Coins: %(eventCoin)s."

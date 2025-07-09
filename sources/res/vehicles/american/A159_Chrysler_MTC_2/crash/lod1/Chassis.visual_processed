@@ -68,9 +68,9 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
-			<primitive>track_R_Shape.indices</primitive>
+			<vertices>track_RShape.vertices</vertices>
+			<stream>track_RShape.uv2</stream>
+			<primitive>track_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -124,9 +124,9 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_L_Shape.vertices</vertices>
-			<stream>track_L_Shape.uv2</stream>
-			<primitive>track_L_Shape.indices</primitive>
+			<vertices>track_LShape.vertices</vertices>
+			<stream>track_LShape.uv2</stream>
+			<primitive>track_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -177,9 +177,8 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.774756 -0.000000 -3.446039</min>
-		<max>1.774673 1.127260 3.668924</max>
+		<min>-1.769621 -0.000000 -3.446039</min>
+		<max>1.769575 1.127259 3.668924</max>
 	</boundingBox>
-	<geometrySize>94872</geometrySize>
-	<minUVDensity>0.515280</minUVDensity>
+	<geometrySize>88704</geometrySize>
 </root>

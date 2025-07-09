@@ -461,6 +461,14 @@ msgstr "15 tonnin rynnäkkötykkipanssarivaunu BT-42"
 msgid "Chassis_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
 
+msgid "Chassis_G176_Jagdpanzer_E90"
+msgstr "Jagdpanzer E 90"
+
+msgid "Chassis_G176_Jagdpanzer_E90_short"
+msgstr ""
+"Jagdpanzer\n"
+"E 90"
+
 msgid "Chassis_G177_E65_Zwilling"
 msgstr "E 65 Zwilling"
 
@@ -529,6 +537,9 @@ msgstr "VK 45.02(P) Ausf. B"
 
 msgid "Chassis_G72_JagdPz_E100"
 msgstr "Jagdpanzer E 100"
+
+msgid "Chassis_G72_JagdPz_E100_FEP23"
+msgstr "Sturmgeschütz E 100 Ketten"
 
 msgid "Chassis_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -978,6 +989,12 @@ msgstr "E 50 M"
 msgid "Engine_Auf_Panther"
 msgstr "Maybach HL 295 Ausf. A"
 
+msgid "Flakmausketten_FEP"
+msgstr "Flakmausketten"
+
+msgid "Flakmausturm_FEP"
+msgstr "Flakmausturm für 8,8 cm Flakzwilling"
+
 msgid "FuG10"
 msgstr "FuG 10"
 
@@ -1067,6 +1084,9 @@ msgstr "Fu 12"
 
 msgid "Fu_7S"
 msgstr "Fu 7S"
+
+msgid "Fu_7_90"
+msgstr "Fu 7/90"
 
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
@@ -2597,6 +2617,35 @@ msgstr "GST Turm"
 msgid "G174_Kpz3_GST_Turm_short_special"
 msgstr "Solid frontal armor, automatic hydropneumatic suspension"
 
+msgid "G176_Jagdpanzer_E90"
+msgstr "Jagdpanzer E 90"
+
+msgid "G176_Jagdpanzer_E90_descr"
+msgstr ""
+"A project for a heavy tank destroyer based on the chassis of the advanced E "
+"90 tank, developed in 1945 as part of the E series tank concept. The vehicle"
+" combined high firepower and good defense, including against infantry anti-"
+"tank grenade launchers. The tank destroyer was designed with a formidable 15"
+" cm gun with a length of 44 calibers in mind. To increase the rate of fire, "
+"an autoloader was planned. In addition, a special jet ammunition was "
+"developed for the vehicle, which allowed for firing with minimal recoil "
+"while elevating the gun as high as possible. The project did not go beyond "
+"the blueprint phase. No prototype was built."
+
+msgid "G176_Jagdpanzer_E90_long_special"
+msgstr ""
+"The Jagdpanzer E 90 is a classic Tier IX assault tank destroyer with "
+"excellent armor and a powerful gun. Besides high alpha, the gun boasts good "
+"shooting comfort, allowing it to deal damage consistently. Overall, the "
+"vehicle is typical for its class: It can push through enemy lines, block "
+"incoming shells, and inflict substantial damage."
+
+msgid "G176_Jagdpanzer_E90_short"
+msgstr "Jg.Pz. E 90"
+
+msgid "G176_Jagdpanzer_E90_short_special"
+msgstr "Excellent armor, powerful gun"
+
 msgid "G177_E65_Zwilling"
 msgstr "E 65 Zwilling"
 
@@ -2860,6 +2909,18 @@ msgstr ""
 "produced in April and May 1943. They first saw combat in the Battle of Kursk"
 " (Operation Citadel)."
 
+msgid "G42_Maus_FEP23"
+msgstr "Flakpanzer VIII Flakmaus"
+
+msgid "G42_Maus_FEP23_descr"
+msgstr ""
+"Project of an anti-aircraft vehicle based on the Maus superheavy tank. "
+"Different variants of gun systems on the superheavy chassis, including dual "
+"88-mm guns, were considered for adoption. The vehicle was never produced."
+
+msgid "G42_Maus_FEP23_short"
+msgstr "Flakmaus"
+
 msgid "G44_JagdTiger"
 msgstr "Jagdtiger"
 
@@ -2920,6 +2981,19 @@ msgstr ""
 
 msgid "G72_JagdPz_E100"
 msgstr "Jagdpanzer E 100"
+
+msgid "G72_JagdPz_E100_FEP23"
+msgstr "Sturmgeschütz E 100"
+
+msgid "G72_JagdPz_E100_FEP23_descr"
+msgstr ""
+"According to the designers' plan, the heavy 50-mm rotary gun was supposed to"
+" clear the area under attack, sweeping away enemy infantry and destroying "
+"their positions from machine-gun nests to pillboxes. The project was not "
+"built due to the discontinuation of work on the rotary gun."
+
+msgid "G72_JagdPz_E100_FEP23_short"
+msgstr "StuG E 100"
 
 msgid "G72_JagdPz_E100_descr"
 msgstr ""
@@ -3461,6 +3535,9 @@ msgstr "DB 603 A2"
 msgid "MB507_7x7"
 msgstr "DB 603 A2"
 
+msgid "MB507_FEP"
+msgstr "Maybach 507 Ausf. F"
+
 msgid "MB517"
 msgstr "MB 517"
 
@@ -3541,8 +3618,15 @@ msgstr "Maus 7v7"
 
 msgid "Maus_7x7_descr"
 msgstr ""
-"Developed from June 1942 through July 1944, with two prototypes produced, "
-"only one of which received a turret and armament."
+"The most protected production heavy tank from World War II. It was equipped "
+"with the most armor-piercing gun, but had an overloaded engine, "
+"transmission, and suspension, and was very heavy. Henschel worked on the "
+"hull from 1942, and the more technologically advanced turret was the second "
+"Krupp design for this vehicle. In long-range combat, the Tiger II's "
+"advantages in firepower and armor were overwhelming over all Allied "
+"production tanks. Due to its overly heavy design, overloaded engine and "
+"suspension, and the small number of vehicles built, the Tiger II was unable "
+"to make a serious impact on the course of combat operations."
 
 msgid "Maus_7x7_short"
 msgstr "Maus 7v7"
@@ -3863,6 +3947,12 @@ msgstr "Maybach HL 295 (A)"
 msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
 
+msgid "Maybach_HL_234P60_E100_FEP"
+msgstr "Maybach Neues Projekt F"
+
+msgid "Maybach_HL_234P60_E100_FEP_short"
+msgstr "Maybach Neues Projekt F"
+
 msgid "Maybach_HL_234P60_P"
 msgstr "Maybach Neues Projekt P"
 
@@ -3938,6 +4028,9 @@ msgstr "Maybach HL 98"
 
 msgid "Maybach_NL38TR"
 msgstr "Maybach HL 38 TR"
+
+msgid "Maybach_Neues_Projekt_90"
+msgstr "Maybach Neues Projekt 90"
 
 msgid "Maybach_Neues_Projekt_J"
 msgstr "Maybach Neues Projekt (J)"
@@ -5206,6 +5299,9 @@ msgstr "BT-rynnäkkötykki"
 msgid "Turret_1_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
 
+msgid "Turret_1_G176_Jagdpanzer_E90"
+msgstr "Jagdpanzer E 90"
+
 msgid "Turret_1_G177_E65_Zwilling"
 msgstr "E 65 Zwilling"
 
@@ -5244,6 +5340,9 @@ msgstr "VK 45.02 (P) Ausf. B"
 
 msgid "Turret_1_G72_JagdPz_E100"
 msgstr "Jagdpanzer E 100"
+
+msgid "Turret_1_G72_JagdPz_E100_FEP23"
+msgstr "Sturmgeschütz E 100"
 
 msgid "Turret_1_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -6136,6 +6235,9 @@ msgstr "10,5 cm Panzerkanone L7A3"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_10WSc_FEP"
+msgstr "10WSc M"
+
 msgid "_10WSc_P"
 msgstr "10WSc P"
 
@@ -6466,6 +6568,9 @@ msgstr "15 cm Gr. 19 Stg"
 msgid "_150mm_Gr_19_Stg_FES"
 msgstr "15 cm Gr. 19 Stg FES"
 
+msgid "_150mm_Gr_44_Hl_A"
+msgstr "Gr. 44 Hl/A"
+
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
@@ -6481,6 +6586,9 @@ msgstr "15 cm Kw.K. L/38"
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
 
+msgid "_150mm_Pak_L_44"
+msgstr "15 cm Pak L/44"
+
 msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
 
@@ -6489,6 +6597,9 @@ msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
 msgstr "Pzgr."
+
+msgid "_150mm_Pzgr_44"
+msgstr "Pzgr. 44"
 
 msgid "_150mm_Pzgr_m_Hb"
 msgstr "Pzgr. (m.Hb)"
@@ -6522,6 +6633,9 @@ msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
 msgstr "Sprgr."
+
+msgid "_150mm_Sprgr_G_44"
+msgstr "Sprgr. G 44"
 
 msgid "_150mm_Sprgr_Kz_m_Hb"
 msgstr "Sprgr. Kz (m.Hb)"
@@ -6802,14 +6916,23 @@ msgstr "5 cm Kw.K. 38 L/42 Ausf. J"
 msgid "_50mm_Kw_K_39_L_60_Ausf_L"
 msgstr "5 cm Kw.K. 39 L/60 Ausf. L"
 
+msgid "_50mm_MK_46_ROTARY_FEP"
+msgstr "5 cm MK-272 L/60"
+
 msgid "_50mm_PaK_39_L60"
 msgstr "5 cm Pak 38 L/60"
 
 msgid "_50mm_Pzgr39"
 msgstr "Pzgr 39"
 
+msgid "_50mm_Pzgr39_FEP"
+msgstr "5 cm H-Pzgr. Patr. 272 (w)"
+
 msgid "_50mm_Pzgr40"
 msgstr "Pzgr 40"
+
+msgid "_50mm_Pzgr47_FEP"
+msgstr "5 cm H-Pzgr. Patr. 272S (u)"
 
 msgid "_50mm_Pzgr_39E"
 msgstr "Pzgr. 39E"
@@ -7127,11 +7250,20 @@ msgstr "7,5 cm Pak 42 L/70 (IV)"
 msgid "_7_5_cm_Stu_K_40_L_43_B"
 msgstr "7,5 cm Stu.K. 40 L/43 (B)"
 
+msgid "_88mm_FlakGr39_FEP"
+msgstr "8,8 cm Pzgr 39/46 für HA"
+
+msgid "_88mm_FlakGr40_FEP"
+msgstr "8,8 cm Pzgr 40/46 für HA"
+
 msgid "_88mm_Flak_37_L56"
 msgstr "8,8 cm Flak 37 L/56"
 
 msgid "_88mm_Flak_41_L74"
 msgstr "8,8 cm Flak 41 L/74"
+
+msgid "_88mm_Flakzwilling_FEP"
+msgstr "8,8 cm Flak 41 Zwilling"
 
 msgid "_88mm_KwK_36_L56"
 msgstr "8,8 cm Kw.K. 36 L/56"

@@ -182,3 +182,4 @@ class SoundZoneComponent(PyComponentWrapperBase):
 __doc__ = None
 __name__ = 'Sound'
 __package__ = None
+def reloadSoundEngine(*args, **kwargs): pass

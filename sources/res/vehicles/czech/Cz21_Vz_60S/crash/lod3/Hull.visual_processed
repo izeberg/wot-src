@@ -108,8 +108,8 @@
 				<material>
 					<identifier>tank_chassis_01</identifier>
 					<property>
-						selfIllumination
-						<Float>0.000000</Float>
+						g_crashUVTiling
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -154,8 +154,8 @@
 				<material>
 					<identifier>tank_hull_01</identifier>
 					<property>
-						selfIllumination
-						<Float>0.000000</Float>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
@@ -202,5 +202,4 @@
 		<max>1.792113 0.669008 3.669749</max>
 	</boundingBox>
 	<geometrySize>141974</geometrySize>
-	<minUVDensity>0.002227</minUVDensity>
 </root>

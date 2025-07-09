@@ -19,6 +19,19 @@
 			<skyLow>0.030000</skyLow>
 			<skyHigh>0.750000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.349020 0.462745 0.811765 10.000000</color>
+			<density>0.000700</density>
+			<height>-89.589996</height>
+			<heightFalloff>0.003000</heightFalloff>
+			<startDistance>10.000000</startDistance>
+			<scatterStart>880.000000</scatterStart>
+			<scatterExponent>8.000000</scatterExponent>
+			<scatterColor>0.675000 0.853749 1.000000 6.010000</scatterColor>
+			<skyLow>0.010000</skyLow>
+			<skyHigh>0.400000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<color>0.669600 0.773760 0.930000 5.000000</color>
@@ -165,7 +178,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>0.800000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
+		<flakesUvScale>0.800000</flakesUvScale>
+		<flakesGloss>0.890000</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 	</PBS>
 	<Weather>
 		<wind>
@@ -176,6 +193,7 @@
 	<overlayMaterial>
 		<enable>true</enable>
 		<applyOnVehicles>false</applyOnVehicles>
+		<colorTintMap/>
 		<layer>
 			<texture>maps/overlay/Ice_wall_3.dds</texture>
 			<normalMap>maps/overlay/Ice_wall_3_NM.dds</normalMap>
@@ -226,17 +244,24 @@
 		<forward>
 			<angle>26.000000</angle>
 			<angleZ>241.539993</angleZ>
+			<angleShadow>26.000000</angleShadow>
 		</forward>
 		<deferred>
 			<angle>26.410000</angle>
 			<angleZ>241.539993</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>26.410000</angle>
+		</simplified_deferred>
 		<sunScale>4.000000</sunScale>
 		<sunColor>248.624985 153.458191 57.183750</sunColor>
 		<sunTexture/>
 		<sunLightColor>1.000000 0.734000 0.650000</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>0.658824 0.403922 0.152941</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>0.921569 0.956863 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>0.000000</sunScaleForward>
 		<sunColorForward>0.000000 0.000000 0.000000</sunColorForward>
 		<sunTextureForward/>
@@ -285,4 +310,31 @@
 		<farDist>20.000000</farDist>
 		<blurRadius>0.006000</blurRadius>
 	</DOF>
+	<VolumetricFog>
+		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
+		<sampleShadows>true</sampleShadows>
+		<temporalReprojection>true</temporalReprojection>
+		<fogDistance>500.000000</fogDistance>
+		<fogStart>0.000000</fogStart>
+		<hdrScale>1.000000</hdrScale>
+		<sunLightScatterCoef>0.100000</sunLightScatterCoef>
+		<shadowCoef>0.400000</shadowCoef>
+		<numOfLightMarchSteps>5</numOfLightMarchSteps>
+		<shadowDensity>1.650000</shadowDensity>
+		<shadowStepLength>0.350000</shadowStepLength>
+		<useLightMarching>false</useLightMarching>
+		<curveCConst>4.400000</curveCConst>
+		<curvePConst>26.000000</curvePConst>
+		<enableLocalLights>false</enableLocalLights>
+		<densityFix>1.000000</densityFix>
+	</VolumetricFog>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>1.000000</terrainBakedShadowFactor>
+		<bakedAOToShadow>1.400000</bakedAOToShadow>
+		<bakedAOPower>0.900000</bakedAOPower>
+		<vegetationMetallicMult>0.900000</vegetationMetallicMult>
+		<transmissionMult>0.600000</transmissionMult>
+		<waterReflectionAttenuation>1.000000</waterReflectionAttenuation>
+	</SimplifiedDeferred>
 </root>

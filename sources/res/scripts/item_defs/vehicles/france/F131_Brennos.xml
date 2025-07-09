@@ -17,11 +17,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.015
+			0.018
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.03
+			0.035
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -29,7 +29,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.045
+			0.053
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -128,7 +128,7 @@
 				<!--BW_String-->
 			</rollParams>
 			<sensitivityToImpulse>
-				0.94
+				0.3
 				<!--BW_String-->
 			</sensitivityToImpulse>
 		</swinging>
@@ -1581,12 +1581,12 @@
 			<weight>15000</weight>
 			<maxLoad>75000</maxLoad>
 			<terrainResistance>
-				1.3 1.5 2.5
+				1 1.2 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>65000</brakeForce>
-			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationIsAroundCenter>true</rotationIsAroundCenter>
+			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -3314,6 +3314,10 @@
 						1.8
 						<!--BW_String-->
 					</aimingTime>
+					<invisibilityFactorAtShot>
+						0.12
+						<!--BW_String-->
+					</invisibilityFactorAtShot>
 					<customizationSlots>
 						<slot>
 							<slotType>paint</slotType>
@@ -4181,19 +4185,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.161
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

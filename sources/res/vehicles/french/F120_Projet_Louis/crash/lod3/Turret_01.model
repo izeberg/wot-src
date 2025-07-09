@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F120_Projet_Louis/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.144996 -0.169192 -1.334709</min>
+		<max>1.057564 2.259996 1.044999</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F120_Projet_Louis/crash/lod3/Turret_01</nodefullVisual>
+</root>

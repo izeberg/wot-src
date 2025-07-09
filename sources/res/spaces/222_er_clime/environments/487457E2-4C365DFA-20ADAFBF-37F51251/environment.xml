@@ -18,6 +18,19 @@
 			<skyLow>0.000000</skyLow>
 			<skyHigh>0.500000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.227451 0.329412 0.505882 0.800000</color>
+			<density>0.001600</density>
+			<height>30.000000</height>
+			<heightFalloff>0.012000</heightFalloff>
+			<startDistance>120.000000</startDistance>
+			<scatterStart>880.000000</scatterStart>
+			<scatterExponent>2.600000</scatterExponent>
+			<scatterColor>1.000000 0.615686 0.301961 1.396440</scatterColor>
+			<skyLow>-0.100000</skyLow>
+			<skyHigh>0.240000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<color>0.374400 0.489493 0.640000 5.000000</color>
@@ -164,7 +177,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.000000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
+		<flakesUvScale>0.800000</flakesUvScale>
+		<flakesGloss>0.890000</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 	</PBS>
 	<Weather>
 		<wind>
@@ -181,17 +198,24 @@
 		<forward>
 			<angle>25.000000</angle>
 			<angleZ>343.410004</angleZ>
+			<angleShadow>25.000000</angleShadow>
 		</forward>
 		<deferred>
 			<angle>25.000000</angle>
 			<angleZ>343.410004</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>25.000000</angle>
+		</simplified_deferred>
 		<sunScale>1.000000</sunScale>
 		<sunColor>253.000000 184.690002 116.379997</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
 		<sunLightColor>1.000000 0.757500 0.515000</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>1.000000 0.757500 0.515000</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>3.320000</sunScaleForward>
 		<sunColorForward>102.000000 86.464600 57.119999</sunColorForward>
 		<sunTextureForward>system/maps/PSF_ldr.dds</sunTextureForward>
@@ -216,7 +240,7 @@
 			<row0>-0.957823 0.000000 0.287360</row0>
 			<row1>0.000000 1.000000 0.000000</row1>
 			<row2>-0.287360 0.000000 -0.957823</row2>
-			<row3>0.000000 2350.000000 0.000000</row3>
+			<row3>0.000000 1700.000000 0.000000</row3>
 		</worldMatrixForward>
 	</SkyDome>
 	<Wetness>
@@ -241,4 +265,31 @@
 		<farDist>20.000000</farDist>
 		<blurRadius>0.003200</blurRadius>
 	</DOF>
+	<VolumetricFog>
+		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
+		<sampleShadows>true</sampleShadows>
+		<temporalReprojection>true</temporalReprojection>
+		<fogDistance>500.000000</fogDistance>
+		<fogStart>0.000000</fogStart>
+		<hdrScale>1.000000</hdrScale>
+		<sunLightScatterCoef>0.100000</sunLightScatterCoef>
+		<shadowCoef>0.400000</shadowCoef>
+		<numOfLightMarchSteps>5</numOfLightMarchSteps>
+		<shadowDensity>1.650000</shadowDensity>
+		<shadowStepLength>0.350000</shadowStepLength>
+		<useLightMarching>false</useLightMarching>
+		<curveCConst>4.400000</curveCConst>
+		<curvePConst>26.000000</curvePConst>
+		<enableLocalLights>false</enableLocalLights>
+		<densityFix>1.000000</densityFix>
+	</VolumetricFog>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>0.950000</terrainBakedShadowFactor>
+		<bakedAOToShadow>1.200000</bakedAOToShadow>
+		<bakedAOPower>0.650000</bakedAOPower>
+		<vegetationMetallicMult>0.350000</vegetationMetallicMult>
+		<transmissionMult>0.720000</transmissionMult>
+		<waterReflectionAttenuation>0.050000</waterReflectionAttenuation>
+	</SimplifiedDeferred>
 </root>

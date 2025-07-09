@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.744879 -0.882873 -4.010549</min>
+		<max>1.788418 0.693250 3.836946</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz30_TBT/crash/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/czech/Cz30_TBT/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+</root>

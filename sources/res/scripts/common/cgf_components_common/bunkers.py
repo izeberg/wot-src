@@ -1,9 +1,8 @@
 import CGF
-from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes, registerReplicableComponent
+from cgf_script.component_meta_class import ComponentProperty, CGFMetaTypes
 from constants import ATTACK_REASON
 
-@registerReplicableComponent
-class BunkerLogicComponent(object):
+class BunkerLogicComponentDescriptor(object):
     category = 'Bunker'
     editorTitle = 'Bunker Logic'
     domain = CGF.DomainOption.DomainAll
@@ -15,7 +14,3 @@ class BunkerLogicComponent(object):
      ATTACK_REASON.RAM,
      ATTACK_REASON.BATTLESHIP,
      ATTACK_REASON.DESTROYER))
-
-    def __init__(self):
-        super(BunkerLogicComponent, self).__init__()
-        self.vehicleIDs = []

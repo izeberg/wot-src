@@ -27,6 +27,8 @@ package net.wg.utils
       
       function setSaturation(param1:Sprite, param2:Number) : void;
       
+      function makeGrayscaleFilter(param1:Sprite, param2:Number, param3:Number) : void;
+      
       function setGlowFilter(param1:DisplayObject, param2:Number) : void;
       
       function setShadowFilter(param1:DisplayObject, param2:uint) : void;

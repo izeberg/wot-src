@@ -234,6 +234,7 @@ class AwardController(IAwardController, IGlobalListener):
             handler.stop()
 
         self.__viewLifecycleWatcher.stop()
+        self.__postpone = False
 
     def onLobbyInited(self, *args):
         self.startGlobalListening()

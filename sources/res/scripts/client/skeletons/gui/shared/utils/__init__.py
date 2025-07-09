@@ -1,4 +1,4 @@
-from typing import TYPE_CHECKING, Optional
+from typing import TYPE_CHECKING, Optional, Dict
 from skeletons.gui.shared.utils import requesters
 if TYPE_CHECKING:
     from gui.shared.gui_items import ItemsCollection
@@ -162,6 +162,9 @@ class IItemsRequester(requesters.IRequester):
         raise NotImplementedError
 
     def getBadges(self, criteria=None):
+        raise NotImplementedError
+
+    def getReceivedBadges(self, onlySelected=False):
         raise NotImplementedError
 
     def getBadgeByID(self, badgeID):

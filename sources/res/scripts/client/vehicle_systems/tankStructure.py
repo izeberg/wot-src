@@ -1,4 +1,5 @@
 from collections import namedtuple
+from constants import VehiclePartName
 
 class CgfTankNodes(object):
     TANK_ROOT = 'Tank.Root'
@@ -42,10 +43,10 @@ class TankCollisionPartNames(object):
 
 
 class TankPartNames(object):
-    CHASSIS = 'chassis'
-    HULL = 'hull'
-    TURRET = 'turret'
-    GUN = 'gun'
+    CHASSIS = VehiclePartName.CHASSIS
+    HULL = VehiclePartName.HULL
+    TURRET = VehiclePartName.TURRET
+    GUN = VehiclePartName.GUN
     ALL = (
      CHASSIS, HULL, TURRET, GUN)
 
@@ -100,7 +101,7 @@ class TankPartIndexes(object):
 
     @staticmethod
     def getName(idx):
-        if idx < len(TankPartNames.ALL):
+        if 0 <= idx < len(TankPartNames.ALL):
             return TankPartNames.ALL[idx]
         else:
             return

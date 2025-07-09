@@ -1546,7 +1546,7 @@ class SPGAimSetting(StorageDumpSetting):
 class _BaseAimContourSetting(StorageDumpSetting):
     _RES_ROOT = None
     _OPTIONS_NUMBER = None
-    _LOW_QUALITY_PRESETS = ('LOW', 'MIN')
+    _LOW_QUALITY_PRESETS = ('LOW', )
     _DEFAULT_VALUE = None
 
     def getDefaultValue(self):
@@ -3241,7 +3241,7 @@ class QuestsProgressDisplayType(GroupSetting):
 
 class SwitchSetupsInLoadingSetting(AccountSetting):
     _PackStructure = namedtuple('SwitchSetupsInLoadingSettingData', 'current options extraData')
-    _ENABLED_BY_DEFAULT = ('LOW', 'MIN')
+    _ENABLED_BY_DEFAULT = ('LOW', )
     __postProgressionCtrl = dependency.descriptor(IVehiclePostProgressionController)
 
     def pack(self):

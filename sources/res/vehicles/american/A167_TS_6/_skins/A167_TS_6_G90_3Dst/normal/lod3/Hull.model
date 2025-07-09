@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.681765 -0.445848 -3.806668</min>
+		<max>1.673191 1.106230 3.589007</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod4/Hull</parent>
+	<extent>192</extent>
+</root>

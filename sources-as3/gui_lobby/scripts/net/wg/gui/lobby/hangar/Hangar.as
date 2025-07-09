@@ -236,6 +236,8 @@ package net.wg.gui.lobby.hangar
       
       private var _eventTournamentBanner:EventTournamentBannerInject = null;
       
+      private var _strengthsWeaknessesPanelInject:StrengthsWeaknessesPanelInject;
+      
       private var _appStage:Stage;
       
       private var _topMargin:int = 0;
@@ -332,6 +334,10 @@ package net.wg.gui.lobby.hangar
             _loc3_ = this.vehResearchBG.getBounds(this.vehResearchBG);
             this.vehResearchBG.x = param1 - _loc3_.x - _loc3_.width - RIGHT_MARGIN >> 0;
          }
+         if(this._strengthsWeaknessesPanelInject != null)
+         {
+            this._strengthsWeaknessesPanelInject.x = param1 - this._strengthsWeaknessesPanelInject.width >> 0;
+         }
          this._helpLayout.hide();
          invalidate(ENTRY_POINT_POSITION_INVALID);
       }
@@ -393,6 +399,7 @@ package net.wg.gui.lobby.hangar
          this.tryRemoveBattleRoyaleContainer();
          this.removeComp7ModifiersPanel();
          this.removePrestigeWidgetPanel();
+         this.removeStrengthsWeaknessesPanel();
          this.bottomBg.dispose();
          this.bottomBg = null;
          this.teaser.dispose();
@@ -699,6 +706,19 @@ package net.wg.gui.lobby.hangar
          }
       }
       
+      public function addStrengthsWeaknessesPanel() : void
+      {
+         if(!this._strengthsWeaknessesPanelInject)
+         {
+            this._strengthsWeaknessesPanelInject = new StrengthsWeaknessesPanelInject();
+            this._strengthsWeaknessesPanelInject.setManageSize(true);
+            this._strengthsWeaknessesPanelInject.x = _originalWidth - this._strengthsWeaknessesPanelInject.width >> 0;
+            this._strengthsWeaknessesPanelInject.y = StrengthsWeaknessesPanelInject.STRENGTHS_WEAKNESSES_PANEL_INJECT_OFFSET_Y;
+            addChild(this._strengthsWeaknessesPanelInject);
+            registerFlashComponentS(this._strengthsWeaknessesPanelInject,HANGAR_ALIASES.STRENGTHS_WEAKNESSES_PANEL);
+         }
+      }
+      
       public function as_closeHelpLayout() : void
       {
          this._helpLayout.hide();
@@ -949,6 +969,19 @@ package net.wg.gui.lobby.hangar
       {
          this.removePrestigeWidgetPanel();
          invalidate(INVALIDATE_PRESTIGE_WIDGET_VISIBILITY);
+      }
+      
+      public function removeStrengthsWeaknessesPanel() : void
+      {
+         if(this._strengthsWeaknessesPanelInject != null)
+         {
+            removeChild(this._strengthsWeaknessesPanelInject);
+            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.STRENGTHS_WEAKNESSES_PANEL))
+            {
+               unregisterFlashComponentS(HANGAR_ALIASES.STRENGTHS_WEAKNESSES_PANEL);
+            }
+            this._strengthsWeaknessesPanelInject = null;
+         }
       }
       
       public function setAnimatorVisibility(param1:Boolean) : void

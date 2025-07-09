@@ -4,4 +4,8 @@
 	<parent>vehicles/poland/Pl26_Czolg_P_Wz_46/crash/lod3/Hull</parent>
 	<extent>96</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.875044 -0.773129 -4.028568</min>
+		<max>1.749393 0.896334 3.716651</max>
+	</visibilityBox>
 </root>

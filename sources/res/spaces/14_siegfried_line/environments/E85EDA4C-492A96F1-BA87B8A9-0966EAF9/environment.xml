@@ -4,21 +4,28 @@
 		<forward>
 			<angle>46.000000</angle>
 			<angleZ>237.000000</angleZ>
+			<angleShadow>46.000000</angleShadow>
 		</forward>
 		<deferred>
 			<angle>28.110001</angle>
 			<angleZ>237.000000</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>28.110001</angle>
+		</simplified_deferred>
 		<sunScale>0.310000</sunScale>
 		<sunColor>255.000000 215.526016 163.199997</sunColor>
 		<sunTexture>system/maps/sun.dds</sunTexture>
 		<sunLightColor>1.000000 0.812500 0.550000</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>0.831373 0.674510 0.454902</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>0.000000</sunScaleForward>
 		<sunColorForward>0.000000 0.000000 0.000000</sunColorForward>
 		<sunTextureForward>system/maps/sun_aberation3.dds</sunTextureForward>
-		<sunLightColorForward>1.000000 0.787154 0.505000</sunLightColorForward>
+		<sunLightColorForward>1.000000 0.788235 0.509804</sunLightColorForward>
 		<ambientColorForward>0.795000 0.858550 1.000000</ambientColorForward>
 		<starttime>10.000000</starttime>
 	</day_night_cycle>
@@ -40,6 +47,19 @@
 			<skyLow>0.000000</skyLow>
 			<skyHigh>0.800000</skyHigh>
 		</deferred>
+		<simplifiedDeferred>
+			<useEdgeFog>true</useEdgeFog>
+			<color>0.411765 0.552941 0.980392 1.250000</color>
+			<density>0.001000</density>
+			<height>9.475240</height>
+			<heightFalloff>0.005000</heightFalloff>
+			<startDistance>90.000000</startDistance>
+			<scatterStart>1028.989990</scatterStart>
+			<scatterExponent>6.000000</scatterExponent>
+			<scatterColor>0.740000 0.511831 0.192400 3.000000</scatterColor>
+			<skyLow>0.050000</skyLow>
+			<skyHigh>0.800000</skyHigh>
+		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
 			<color>0.608300 0.684008 0.790000 0.000000</color>
@@ -99,10 +119,10 @@
 			<scale>0.100000</scale>
 		</filmgrain>
 		<camera>
-			<fnumberDown>10.000000</fnumberDown>
-			<fnumberUp>5.500000</fnumberUp>
+			<fnumberDown>8.000000</fnumberDown>
+			<fnumberUp>5.700000</fnumberUp>
 			<shutterSpeed>6.906890</shutterSpeed>
-			<keyValue>0.120000</keyValue>
+			<keyValue>0.150000</keyValue>
 		</camera>
 	</HDR>
 	<LensFlare>
@@ -167,7 +187,7 @@
 		<sunAngleOffset>25.520000</sunAngleOffset>
 		<layer0>
 			<texture>maps/fx/cloud_2.dds</texture>
-			<windDir>0.207912 0.978147</windDir>
+			<windDir>0.207912 0.978148</windDir>
 			<windStrength>8.670000</windStrength>
 			<angle>75.000000</angle>
 			<offset>0.000000 0.000000</offset>
@@ -186,7 +206,11 @@
 	</cloudsShadow>
 	<PBS>
 		<ForwardSHMultiplier>1.300000</ForwardSHMultiplier>
+		<flakesEnabled>false</flakesEnabled>
 		<flakesDensityThreshold>0.800000</flakesDensityThreshold>
+		<flakesUvScale>0.800000</flakesUvScale>
+		<flakesGloss>0.890000</flakesGloss>
+		<flakesSurfNormalNoiseWeight>0.100000</flakesSurfNormalNoiseWeight>
 	</PBS>
 	<Weather>
 		<wind>
@@ -197,6 +221,7 @@
 	<overlayMaterial>
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
+		<colorTintMap/>
 	</overlayMaterial>
 	<dirt>
 		<normal>vehicles/russian/Tank_detail/Dirt3NM.dds</normal>
@@ -232,4 +257,39 @@
 		<waveMaskUVScale>0.250000</waveMaskUVScale>
 		<waveMaskSpeed>0.141320</waveMaskSpeed>
 	</Wetness>
+	<VolumetricFog>
+		<enabled>false</enabled>
+		<enableGameplay>false</enableGameplay>
+		<sampleShadows>true</sampleShadows>
+		<temporalReprojection>true</temporalReprojection>
+		<fogDistance>500.000000</fogDistance>
+		<fogStart>0.000000</fogStart>
+		<hdrScale>1.000000</hdrScale>
+		<sunLightScatterCoef>0.100000</sunLightScatterCoef>
+		<shadowCoef>0.400000</shadowCoef>
+		<numOfLightMarchSteps>5</numOfLightMarchSteps>
+		<shadowDensity>1.650000</shadowDensity>
+		<shadowStepLength>0.350000</shadowStepLength>
+		<useLightMarching>false</useLightMarching>
+		<curveCConst>4.400000</curveCConst>
+		<curvePConst>26.000000</curvePConst>
+		<enableLocalLights>false</enableLocalLights>
+		<densityFix>1.000000</densityFix>
+	</VolumetricFog>
+	<DOF>
+		<enable>false</enable>
+		<nearStart>2.000000</nearStart>
+		<nearDist>3.000000</nearDist>
+		<farStart>50.000000</farStart>
+		<farDist>20.000000</farDist>
+		<blurRadius>0.006000</blurRadius>
+	</DOF>
+	<SimplifiedDeferred>
+		<terrainBakedShadowFactor>0.900000</terrainBakedShadowFactor>
+		<bakedAOToShadow>0.900000</bakedAOToShadow>
+		<bakedAOPower>0.950000</bakedAOPower>
+		<vegetationMetallicMult>0.500000</vegetationMetallicMult>
+		<transmissionMult>0.450000</transmissionMult>
+		<waterReflectionAttenuation>0.600000</waterReflectionAttenuation>
+	</SimplifiedDeferred>
 </root>

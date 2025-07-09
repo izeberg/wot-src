@@ -1242,6 +1242,12 @@ msgstr "%s decal added"
 msgid "customization/added/projectionDecalValue"
 msgstr "%s decal added: (x%s)"
 
+msgid "customization/added/statTracker"
+msgstr "%s added"
+
+msgid "customization/added/statTrackerValue"
+msgstr "%s added: (x%s)"
+
 msgid "customization/added/style"
 msgstr "%s style added"
 
@@ -1345,6 +1351,12 @@ msgstr "%s decal removed"
 
 msgid "customization/removed/projectionDecalValue"
 msgstr "%s decal removed: (x%s)"
+
+msgid "customization/removed/statTracker"
+msgstr "%s removed"
+
+msgid "customization/removed/statTrackerValue"
+msgstr "%s removed: (x%s)"
 
 msgid "customization/removed/style"
 msgstr "%s style removed"

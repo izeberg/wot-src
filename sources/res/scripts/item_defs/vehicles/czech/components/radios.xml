@@ -17,6 +17,7 @@
 		<Lorenz_vz_38>15</Lorenz_vz_38>
 		<Radiostanice_RM_31T_56G>17</Radiostanice_RM_31T_56G>
 		<Radiostanice_R_123T>18</Radiostanice_R_123T>
+		<Radiostanice_RM_31T_TBT>20</Radiostanice_RM_31T_TBT>
 		<Radiostanice_R_112>21</Radiostanice_R_112>
 		<Radiostanice_R_123S>22</Radiostanice_R_123S>
 		<Radiostanice_R_123>23</Radiostanice_R_123>
@@ -24,6 +25,7 @@
 		<_10_RT_26>28</_10_RT_26>
 		<Radiostanice_R_113_JA>29</Radiostanice_R_113_JA>
 		<_10_RT_26L>30</_10_RT_26L>
+		<Radiostanice_RM_31T_A_FEP>601</Radiostanice_RM_31T_A_FEP>
 		<Development_Radio>65000</Development_Radio>
 	</ids>
 	<shared>
@@ -200,6 +202,18 @@
 				<!--BW_String-->
 			</repairCost>
 		</Radiostanice_RM_31T_56G>
+		<Radiostanice_RM_31T_TBT>
+			<userString>#czech_vehicles:Radiostanice_RM_31T_TBT</userString>
+			<tags/>
+			<level>9</level>
+			<price>40000</price>
+			<notInShop>true</notInShop>
+			<weight>60</weight>
+			<distance>670</distance>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</Radiostanice_RM_31T_TBT>
 		<Radiostanice_RM_31T_A>
 			<userString>#czech_vehicles:Radiostanice_RM_31T_A</userString>
 			<tags/>
@@ -330,6 +344,21 @@
 				<!--BW_String-->
 			</repairCost>
 		</Radiostanice_RM_31T_A_CN>
+		<Radiostanice_RM_31T_A_FEP>
+			<userString>#czech_vehicles:Radiostanice_RM_31T_A_FEP</userString>
+			<tags/>
+			<level>10</level>
+			<price>0</price>
+			<notInShop>true</notInShop>
+			<weight>62</weight>
+			<distance>850</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</Radiostanice_RM_31T_A_FEP>
 		<Development_Radio>
 			<userString>Development Radio</userString>
 			<tags/>
