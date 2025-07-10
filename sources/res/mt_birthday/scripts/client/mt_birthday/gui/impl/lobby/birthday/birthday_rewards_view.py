@@ -11,6 +11,7 @@ from gui.impl.pub import ViewImpl
 from mt_birthday.gui.impl.gen.view_models.views.lobby.tooltips.gold_ticket_tooltip_model import GoldTicketTooltipModel
 from mt_birthday.gui.shared.event_dispatcher import showGoldWagon, showGoldWagonTankMail
 from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
+from mt_birthday.gui.impl.sounds import BIRTHDAY_REWARD_SCREEN_SOUND_SPACE
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.shared import IItemsCache
 _logger = logging.getLogger(__name__)
@@ -19,6 +20,7 @@ class BirthdayRewardsView(ViewImpl):
     __itemsCache = dependency.descriptor(IItemsCache)
     __tankBirthdayController = dependency.descriptor(ITanksBirthdayController)
     __gui = dependency.descriptor(IGuiLoader)
+    _COMMON_SOUND_SPACE = BIRTHDAY_REWARD_SCREEN_SOUND_SPACE
     __slots__ = ('__tooltipData', '__rewards', '__bloggerName', '__stage', '__isRewardSeen',
                  '__isFinalReward', '__phraseID', '__spaID', '__isNameLoading', '__userInfoHelper')
 

@@ -25063,6 +25063,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_380:String = "../maps/icons/quests/bonuses/s296x222/style_380.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D:String = "../maps/icons/quests/bonuses/s296x222/style_3d.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31013.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_499:String = "../maps/icons/quests/bonuses/s296x222/style_499.png";

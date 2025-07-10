@@ -20,7 +20,7 @@
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>

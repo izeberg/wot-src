@@ -1030,7 +1030,7 @@ package net.wg.gui.components.crosshairPanel
          {
             return;
          }
-         var _loc1_:Number = 0;
+         var _loc1_:Number = 1;
          var _loc2_:Number = this._autoloaderBaseTime;
          if(this._autoloaderState != CrosshairConsts.RELOADING_END)
          {

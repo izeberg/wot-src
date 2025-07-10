@@ -4587,7 +4587,7 @@
 		<isTracer>true</isTracer>
 		<effects>hugeSH_artillery</effects>
 		<damage>
-			<armor>2000</armor>
+			<armor>2450</armor>
 			<devices>160</devices>
 		</damage>
 		<obstaclePenetration>True</obstaclePenetration>
@@ -4605,7 +4605,7 @@
 		<isTracer>true</isTracer>
 		<effects>hugeSH_artillery</effects>
 		<damage>
-			<armor>2000</armor>
+			<armor>2450</armor>
 			<devices>160</devices>
 		</damage>
 		<isArtilleryShotZoneVisible>False</isArtilleryShotZoneVisible>

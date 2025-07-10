@@ -286,7 +286,10 @@ package net.wg.gui.battle.views.dualGunPanel
          {
             this.getGunById(param1).changeActiveGun();
          }
-         this.activateTimer(TIMER_ID_ACTIVE_GUN_CHANGE,param2,param3);
+         if(param2 > 0)
+         {
+            this.activateTimer(TIMER_ID_ACTIVE_GUN_CHANGE,param2,param3);
+         }
       }
       
       public function as_updateTotalTime(param1:Number) : void
