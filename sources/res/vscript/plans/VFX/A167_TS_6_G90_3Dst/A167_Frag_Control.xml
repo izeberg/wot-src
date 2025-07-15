@@ -10,6 +10,38 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
+				<id>Variable_9</id>
+				<params>
+					<param>
+						PlayerVehicle
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_8</id>
 				<params>
 					<param>
@@ -55,9 +87,16 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVehicleGameObject</class>
-				<id>GetVehicleGameObject_2</id>
-				<params/>
+				<class>SetVariable</class>
+				<id>SetVariable_20</id>
+				<buddy>Variable_9</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -76,51 +115,53 @@
 				</slots>
 			</block>
 			<block>
-				<class>ContextGetSelf</class>
-				<id>ContextGetSelf_1</id>
+				<class>GetVehicleGameObject</class>
+				<id>GetVehicleGameObject_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GameObjectToVehicle</class>
+				<id>GameObjectToVehicle_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_44</id>
+				<buddy>Variable_9</buddy>
 				<params>
 					<param>
-						CGFGameObjectContext
-						<name>Context Name</name>
-						<type>StringT</type>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_2</id>
+				<params>
 					<param>
-						getSelf
-						<name>Member Name</name>
+						CustomizationVehicleEvents
+						<name>Macro Name</name>
 						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
 			</block>
 			<block>
-				<class>OnAnyVehicleDestroyed</class>
-				<id>OnAnyVehicleDestroyed_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>active</name>
-						<const>\true\</const>
-					</slot>
-					<slot>
-						<name>maxCount</name>
-						<const>\15\</const>
-					</slot>
-					<slot>
-						<name>cooldown</name>
-						<const>\0.010000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_20</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>IsPlayerVehicle</class>
-				<id>IsPlayerVehicle_1</id>
-				<params/>
+				<class>GetVariable</class>
+				<id>GetVariable_43</id>
+				<buddy>Variable_8</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 				<slots/>
 			</block>
 			<block>
@@ -149,14 +190,18 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_43</id>
-				<buddy>Variable_8</buddy>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
 				<params>
 					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						CGFGameObjectContext
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -182,10 +227,16 @@
 				<output>node</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_2</to>
-				<output>value</output>
+				<from>SetVariable_19</from>
+				<input>input</input>
+				<to>SetVariable_20</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>GameObjectToVehicle_3</from>
+				<input>value</input>
+				<to>SetVariable_20</to>
+				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>GetVehicleGameObject_2</from>
@@ -194,28 +245,34 @@
 				<output>vehicleObject</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
-				<input>input</input>
-				<to>If_20</to>
-				<output>onDestroyed</output>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
-				<from>IsPlayerVehicle_1</from>
-				<input>value</input>
-				<to>If_20</to>
-				<output>res</output>
+				<from>GetVehicleGameObject_2</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_3</to>
+				<output>vehicleObject</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDestroyed_1</from>
+				<from>GetVariable_44</from>
 				<input>vehicle</input>
-				<to>IsPlayerVehicle_1</to>
-				<output>attacker</output>
+				<to>Macro_2</to>
+				<output>value</output>
 			</connection>
 			<connection>
-				<from>If_20</from>
+				<from>Macro_2</from>
 				<input>in</input>
 				<to>ComponentMethod_44</to>
-				<output>true</output>
+				<output>onKill</output>
+			</connection>
+			<connection>
+				<from>Macro_2</from>
+				<input>in</input>
+				<to>ComponentMethod_44</to>
+				<output>onKillStreak</output>
 			</connection>
 			<connection>
 				<from>GetVariable_43</from>
