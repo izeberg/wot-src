@@ -1,9 +1,9 @@
 REWARD_VIDEO_CONFIG = {'tanks_birthday_2025': {'vehicles': {'hasFooter': True, 
                                         'videos': [
                                                  {'videoResName': 'intro', 
-                                                    'duration': 18},
+                                                    'duration': 16},
                                                  {'videoResName': None, 
-                                                    'duration': 10, 
+                                                    'duration': 9, 
                                                     'showFooterTiming': 3}]}}, 
    'cosmic_2025': {'vehicles': {'hasFooter': True, 
                                 'videos': [

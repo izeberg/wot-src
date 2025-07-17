@@ -76,8 +76,11 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>152</armor_1>
-			<armor_2>127</armor_2>
+			<armor_1>127</armor_1>
+			<armor_2>
+				101.6
+				<!--BW_String-->
+			</armor_2>
 			<armor_3>76</armor_3>
 			<armor_4>38</armor_4>
 			<armor_5>51</armor_5>
@@ -87,7 +90,10 @@
 			<armor_9>27</armor_9>
 			<armor_10>203</armor_10>
 			<armor_11>25</armor_11>
-			<armor_12>203</armor_12>
+			<armor_12>
+				177.8
+				<!--BW_String-->
+			</armor_12>
 			<armor_13>
 				25
 				<vehicleDamageFactor>0</vehicleDamageFactor>
@@ -5432,15 +5438,15 @@
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.36
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.5
+						9.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5450,7 +5456,7 @@
 					<multiGunEffects>shot_dualgun_main_L shot_dualgun_main_R</multiGunEffects>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5469,13 +5475,10 @@
 						</chargeTime>
 						<shootImpulse>200</shootImpulse>
 						<reloadLockTime>
-							3.0
+							4.0
 							<!--BW_String-->
 						</reloadLockTime>
-						<reloadTimes>
-							8.5 8.5
-							<!--BW_String-->
-						</reloadTimes>
+						<reloadTimes>9 9</reloadTimes>
 						<rateTime>3</rateTime>
 						<chargeThreshold>
 							0.5

@@ -24171,6 +24171,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_380:String = "../maps/icons/quests/bonuses/s180x135/style_380.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D:String = "../maps/icons/quests/bonuses/s180x135/style_3d.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_499:String = "../maps/icons/quests/bonuses/s180x135/style_499.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_PROGRESS_31199_1:String = "../maps/icons/quests/bonuses/s180x135/style_progress_31199_1.png";
