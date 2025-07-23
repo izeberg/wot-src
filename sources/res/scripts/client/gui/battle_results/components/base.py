@@ -1,4 +1,4 @@
-import typing
+import copy, typing
 from collections import defaultdict, namedtuple
 import inspect, operator
 from soft_exception import SoftException
@@ -30,6 +30,9 @@ class StatsComponent(object):
         raise NotImplementedError
 
     def getVO(self):
+        raise NotImplementedError
+
+    def getMeta(self):
         raise NotImplementedError
 
 
@@ -72,6 +75,9 @@ class StatsItem(StatsComponent):
 
     def getVO(self):
         return self._value
+
+    def getMeta(self):
+        return self._meta
 
     def _convert(self, value, reusable):
         return value
@@ -195,6 +201,9 @@ class ListMeta(VOMeta):
     def getDefault(self, field):
         return
 
+    def copy(self):
+        return self.__class__(copy.deepcopy(self._meta), self._registered, self._runtime)
+
     def isComponentGenerated(self, index):
         return not self._runtime
 
@@ -209,6 +218,13 @@ class ListMeta(VOMeta):
             vo.append(component.getVO())
 
         return vo
+
+    def addMeta(self, meta):
+        if meta not in self._meta:
+            self._meta.append(meta)
+
+    def popMeta(self, meta):
+        self._meta = [ item for item in self._meta if item != meta ]
 
 
 def _getPropertyGetter(idx):
@@ -395,6 +411,9 @@ class StatsBlock(StatsComponent):
 
     def getField(self):
         return self._field
+
+    def getMeta(self):
+        return self._meta
 
     def getVO(self):
         return self._meta.generateVO(self._components)

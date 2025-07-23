@@ -73,11 +73,6 @@
 		<min>-0.010000 -0.043000 -0.037500</min>
 		<max>0.010000 0.043000 0.037500</max>
 	</boundingBox>
-	<missingBspMaterial>
-		<material>
-			<identifier>tank_hull_01</identifier>
-		</material>
-	</missingBspMaterial>
 	<geometrySize>102</geometrySize>
 	<minUVDensity>133.351044</minUVDensity>
 </root>

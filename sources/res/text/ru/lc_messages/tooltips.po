@@ -14,24 +14,6 @@ msgstr "Нажмите, чтобы перейти к следующему мес
 msgid "Calendar/prevMonth"
 msgstr "Нажмите, чтобы перейти к предыдущему месяцу."
 
-msgid "Contact/resource/mob"
-msgstr "Находится в мобильном чате."
-
-msgid "Contact/resource/web"
-msgstr "Находится в web-чате."
-
-msgid "Contact/resource/wotb"
-msgstr "Находится в игре «Tanks Blitz»."
-
-msgid "Contact/resource/wotg"
-msgstr "Находится в другой игре."
-
-msgid "Contact/resource/wowp"
-msgstr "Находится в другой игре."
-
-msgid "Contact/resource/wows"
-msgstr "Находится в игре «Мир кораблей»."
-
 msgid "Contact/status/inBattle/bootcamp"
 msgstr "В Боевом обучении"
 
@@ -730,6 +712,9 @@ msgstr "Подкалиберный снаряд"
 msgid "advanced/header/shellType/ARMOR_PIERCING_FSDS"
 msgstr "Бронебойный оперённый подкалиберный снаряд"
 
+msgid "advanced/header/shellType/DELAYED_HE"
+msgstr "Снаряд с задержкой взрывателя"
+
 msgid "advanced/header/shellType/FLAME"
 msgstr "Огнемётная смесь"
 
@@ -771,8 +756,8 @@ msgstr "Дополнительная информация"
 msgid "advanced/instructions"
 msgstr ""
 "Действует на протяжении одного боя. В зависимости от типа: усиливают эффект "
-"от установленного оборудования или усиливают изученные/активируют "
-"неизученные навыки экипажа."
+"от установленного оборудования, усиливают изученные/активируют неизученные "
+"навыки экипажа или дают дополнительный экономический бонус."
 
 msgid "advanced/largeMedkit"
 msgstr ""
@@ -1079,15 +1064,6 @@ msgstr ""
 
 msgid "awardItem/brcoin/header"
 msgstr "Стальные печати"
-
-msgid "awardItem/bumblebee_coin/body"
-msgstr ""
-"Временная валюта события, за которую можно приобрести особо ценные товары в "
-"соответствующем разделе Магазина. Жетоны можно получить в награду за боевые "
-"задачи или в составе специальных наборов в Магазине."
-
-msgid "awardItem/bumblebee_coin/header"
-msgstr "Жетоны Летней распродажи"
 
 msgid "awardItem/comp7TokenCouponReward/body"
 msgstr ""
@@ -1487,6 +1463,14 @@ msgstr ""
 msgid "awardItem/premium_plus/header"
 msgstr "Танковый премиум аккаунт"
 
+msgid "awardItem/quests/body"
+msgstr ""
+"Разблокированы боевые задачи с возможностью получить специальные награды. С "
+"полным списком поручений можете ознакомиться в разделе «Задачи»."
+
+msgid "awardItem/quests/header"
+msgstr "Доступ к особой категории задач"
+
 msgid "awardItem/randomBooklet/body"
 msgstr ""
 "Вы получите учебную брошюру для случайной нации. Применяется ко всему "
@@ -1699,13 +1683,20 @@ msgstr ""
 "(навык «%s» не изучен до максимального значения членами экипажа, которым он "
 "доступен)"
 
-msgid "battleBooster/useless/body"
+msgid "battleBooster/useless/compare"
+msgstr "Не влияет на расчёт ТТХ машины."
+
+msgid "battleBooster/useless/header"
+msgstr "Установка бесполезна"
+
+msgid "battleBooster/useless/no_suitable_equipment"
 msgstr ""
 "Инструкция работает только при установленном оборудовании соответствующего "
 "типа."
 
-msgid "battleBooster/useless/header"
-msgstr "Установка бесполезна"
+msgid "battleBooster/useless/unsuitable_battlemode"
+msgstr ""
+"Экономические инструкции не работают в режимах с отключённой экономикой."
 
 msgid "battleBorderMapModeButtonBar/info/body"
 msgstr ""
@@ -3903,10 +3894,10 @@ msgstr ""
 "потратить на изучение хотя бы одного навыка)."
 
 msgid "dismissedToggle/footer/body"
-msgstr "Вмещает %(quantity)s членов экипажа с возможностью их восстановления."
+msgstr "За один раз вы можете демобилизовать не более 200 членов экипажа."
 
 msgid "dismissedToggle/footer/header"
-msgstr "Буфер демобилизованных"
+msgstr "Ограничение на демобилизацию"
 
 msgid "dismissedToggle/header"
 msgstr "Демобилизованные члены экипажа"
@@ -4835,7 +4826,7 @@ msgid "epicBattlesOffer/point"
 msgstr "• %(item)s"
 
 msgid "epicBattlesOffer/title/battleBooster_gift"
-msgstr "Инструкции к оборудованию на выбор"
+msgstr "Инструкции на выбор"
 
 msgid "epicBattlesOffer/title/book_gift"
 msgstr "Учебное пособие"
@@ -5269,8 +5260,9 @@ msgstr "Недоступно"
 msgid "hangar/ammo_panel/battleBooster/empty/body"
 msgstr ""
 "Место для предбоевых инструкций — предметов, усиливающих эффект от "
-"установленного оборудования или изученных навыков экипажа. Если навык не "
-"изучен, инструкция добавляет его 100%-й эффект."
+"установленного оборудования и изученных навыков экипажа. Если навык не "
+"изучен, инструкция добавляет его 100%-й эффект. Отдельные экономические "
+"инструкции добавляют бонус к заработку по итогам боя."
 
 msgid "hangar/ammo_panel/battleBooster/empty/header"
 msgstr "Слот для инструкций"
@@ -6936,6 +6928,12 @@ msgstr ""
 "Чтобы установить снаряжение в этот слот, сначала перенесите встроенное "
 "снаряжение в другой."
 
+msgid "moduleFits/compare/header"
+msgstr "Установка бесполезна"
+
+msgid "moduleFits/compare/text"
+msgstr "Не влияет на расчёт ТТХ машины."
+
 msgid "moduleFits/credits_error/header"
 msgstr "Недостаточно серебра"
 
@@ -7023,6 +7021,13 @@ msgstr "Модуль не исследован."
 
 msgid "moduleFits/unlock_error/text"
 msgstr "Исследуйте его в окне исследований текущей машины."
+
+msgid "moduleFits/unsuitable_battlemode/header"
+msgstr "Установка бесполезна"
+
+msgid "moduleFits/unsuitable_battlemode/text"
+msgstr ""
+"Экономические инструкции не работают в режимах с отключённой экономикой."
 
 msgid "moduleFits/upgradable/modernized/price"
 msgstr "Наладка %(level)s уровня"
@@ -7425,12 +7430,6 @@ msgstr ""
 msgid "notrecruitedtankman/commander_Nikolay_Kuznetsov/label"
 msgstr "Командир, доступный в рамках совместной акции с «Миром кораблей»."
 
-msgid "notrecruitedtankman/commander_baroness/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_baroness/label"
-msgstr "?empty?"
-
 msgid "notrecruitedtankman/commander_bingo/desc"
 msgstr ""
 "Ну вот, опять то же самое. Снова какой-то выскочка хочет стать засечкой на "
@@ -7534,12 +7533,6 @@ msgstr ""
 msgid "notrecruitedtankman/commander_cobra/label"
 msgstr "Уникальный член экипажа"
 
-msgid "notrecruitedtankman/commander_cover_girl/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_cover_girl/label"
-msgstr "?empty?"
-
 msgid "notrecruitedtankman/commander_duke/desc"
 msgstr ""
 "Дьюк — лидер команды G.I. Joe и настоящий лидер, готовый сражаться с любым "
@@ -7548,12 +7541,6 @@ msgstr ""
 msgid "notrecruitedtankman/commander_duke/label"
 msgstr "Уникальный член экипажа"
 
-msgid "notrecruitedtankman/commander_ferenc/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_ferenc/label"
-msgstr "?empty?"
-
 msgid "notrecruitedtankman/commander_gagarin21/desc"
 msgstr ""
 "«Облетев Землю в корабле-спутнике, я увидел, как прекрасна наша планета. "
@@ -7561,21 +7548,6 @@ msgstr ""
 
 msgid "notrecruitedtankman/commander_gagarin21/label"
 msgstr "Уникальный член экипажа"
-
-msgid "notrecruitedtankman/commander_hillen/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_hillen/label"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_hob/desc"
-msgstr ""
-"Knabe is a force to be reckoned with. He once pulled five tanks out of the "
-"mud with his bare hands and hardly broke a sweat! As a tank commander, he "
-"leads his team to victory—even if the team actively resists."
-
-msgid "notrecruitedtankman/commander_hob/label"
-msgstr "Уникальный командир"
 
 msgid "notrecruitedtankman/commander_maeve/desc"
 msgstr ""
@@ -7634,12 +7606,6 @@ msgstr ""
 "Уникальный командир, созданный в сотрудничестве с «Мосфильм», доступный в "
 "рамках специальной совместной акции."
 
-msgid "notrecruitedtankman/commander_nansen/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_nansen/label"
-msgstr "?empty?"
-
 msgid "notrecruitedtankman/commander_omelia/desc"
 msgstr ""
 "Мы наконец говорим 2020-му «Давай, до свидания» и встречаем новый год с "
@@ -7668,12 +7634,6 @@ msgstr ""
 msgid "notrecruitedtankman/commander_patrick/label"
 msgstr "Уникальный член экипажа"
 
-msgid "notrecruitedtankman/commander_quickybaby/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_quickybaby/label"
-msgstr "?empty?"
-
 msgid "notrecruitedtankman/commander_rebranding/desc"
 msgstr ""
 "Бравый командир, в совершенстве владеющий искусством ведения танкового боя. "
@@ -7693,12 +7653,6 @@ msgstr ""
 msgid "notrecruitedtankman/commander_starlight/label"
 msgstr "Уникальный член экипажа"
 
-msgid "notrecruitedtankman/commander_tolmeron/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_tolmeron/label"
-msgstr "?empty?"
-
 msgid "notrecruitedtankman/commander_twitch_ermelinda/desc"
 msgstr ""
 "Эрмелинда — молодая исследовательница, создавшая автоматических стражей для "
@@ -7717,12 +7671,6 @@ msgstr ""
 
 msgid "notrecruitedtankman/commander_twitch_mochizuki/label"
 msgstr "Уникальный командир"
-
-msgid "notrecruitedtankman/commander_whiskers/desc"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/commander_whiskers/label"
-msgstr "?empty?"
 
 msgid "notrecruitedtankman/cosm25_1/desc"
 msgstr ""
@@ -8783,6 +8731,48 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_BP17_5/label"
 msgstr "Боевой пропуск, «Вокруг света»"
 
+msgid "notrecruitedtankman/tankmen_DR2025_1/desc"
+msgstr ""
+"Душа компании — и притом серьёзнейший специалист конструкторского бюро. "
+"Известная на всю «Перспективу» меломанка. Ни один танцевальный вечер не "
+"обходится без Гали Синичкиной, которая чудом (назовём так её неотразимую "
+"улыбку в сочетании с неподражаемым чувством юмора) ухитряется добывать "
+"пластинки с редкими записями."
+
+msgid "notrecruitedtankman/tankmen_DR2025_1/label"
+msgstr "День рождения игры"
+
+msgid "notrecruitedtankman/tankmen_DR2025_2/desc"
+msgstr ""
+"Белокурые локоны и озорной взгляд из-под длинных ресниц не раз вводили в "
+"заблуждение коллег Марины. «Что за очаровательное создание», — думают они, "
+"даже не подозревая, кто скрывается за этой ангельской внешностью. Сильно "
+"удивились бы поклонники Марины, увидев её в пылу работы! Не зря эта девушка "
+"— гордость космического отдела НППО «Перспектива»."
+
+msgid "notrecruitedtankman/tankmen_DR2025_2/label"
+msgstr "День рождения игры"
+
+msgid "notrecruitedtankman/tankmen_DR2025_3/desc"
+msgstr ""
+"Кто бы мог подумать, что тихая Леночка из отдела кадров станет главным "
+"украшением праздника «Перспективы»! В конкурсе на лучшее исполнение песни ей"
+" попросту не было равных."
+
+msgid "notrecruitedtankman/tankmen_DR2025_3/label"
+msgstr "День рождения игры"
+
+msgid "notrecruitedtankman/tankmen_DR2025_4/desc"
+msgstr ""
+"Кто не знает Свету из отдела культурно-массовой работы НППО? Эта энергичная "
+"особа обладает удивительным свойством — находиться в нескольких местах "
+"одновременно. Пожалуй, только этим можно объяснить то, что ей удалось "
+"организовать такой масштабный летний праздник в «Перспективе» — и сделать "
+"это практически в одиночку!"
+
+msgid "notrecruitedtankman/tankmen_DR2025_4/label"
+msgstr "День рождения игры"
+
 msgid "notrecruitedtankman/tankmen_Inzhener_2/desc"
 msgstr ""
 "Механик танковой роты, «отец солдатам». Чувствует огромную ответственность "
@@ -9056,36 +9046,6 @@ msgstr ""
 
 msgid "notrecruitedtankman/tankmen_WT2024_Marat/label"
 msgstr "Событие «Ваффентрагер: вызов»"
-
-msgid "notrecruitedtankman/tankmen_auc_1/desc"
-msgstr ""
-"Технодесантник-примарис. Даже будучи возведённым в ранг Астартес, не потерял"
-" приобретённого ещё в детстве увлечения тяжёлой техникой. Обладает особым "
-"профессиональным чутьём. Добивается от машины производительности, "
-"превышающей стандартные технические характеристики. Общению с боевыми "
-"товарищами предпочитает духов машин и постоянно находится в компании "
-"техники, пытаясь довести до совершенства священные отношения между человеком"
-" и машиной."
-
-msgid "notrecruitedtankman/tankmen_auc_1/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_auc_1/label"
-msgstr "Warhammer 40 000: специальное предложение"
-
-msgid "notrecruitedtankman/tankmen_auc_2/desc"
-msgstr ""
-"Сержант 6-й роты Ультрамаринов, действующий командир репульсора «Палач». "
-"Особое удовольствие испытывает от общения с духом машины, часто применяя "
-"агрессивные тактики прорыва в тыл, делая ставку на бронирование собственного"
-" танка и эффект неожиданности. К счастью, выдающееся мастерство и полное "
-"бесстрашие позволяют проводить такие авантюры без сбоев."
-
-msgid "notrecruitedtankman/tankmen_auc_2/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_auc_2/label"
-msgstr "Warhammer 40 000: специальное предложение"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -9483,81 +9443,6 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp7_4/label"
 msgstr "Боевой пропуск, седьмой сезон"
-
-msgid "notrecruitedtankman/tankmen_bp8_1/desc"
-msgstr ""
-"Компетентный, надёжный и трезвомыслящий офицер, командир 2-й боевой роты "
-"Ультрамаринов, лейтенант. На протяжении десятилетий руководил "
-"подразделениями «Импульсоров» на полях сражений, применяя на практике учения"
-" Кодекса Астартес. Эти годы отточили его тактические навыки, и он умело "
-"прорывает оборону противника с чрезвычайной эффективностью."
-
-msgid "notrecruitedtankman/tankmen_bp8_1/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bp8_1/label"
-msgstr "Боевой пропуск, восьмой сезон"
-
-msgid "notrecruitedtankman/tankmen_bp8_2/desc"
-msgstr ""
-"Чемпион одного из элитных подразделений Гвардии Смерти, известного как "
-"поксмонгеры. Безжалостный воин, однако с разрешения Нургла предпочитает "
-"неспешно наслаждаться благословениями даров Великого Отца. При первой же "
-"возможности старается нарушить планы бывших братьев. Им движет чистая злоба,"
-" и он с огромным удовольствием выполнит свою миссию против Ультрамаринов. В "
-"погоне за победой он, как известно, использует самые... невообразимые "
-"средства."
-
-msgid "notrecruitedtankman/tankmen_bp8_2/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bp8_2/label"
-msgstr "Боевой пропуск, восьмой сезон"
-
-msgid "notrecruitedtankman/tankmen_bp8_3/desc"
-msgstr ""
-"Безбашенный мекбой, который всегда преследует только две цели: больше "
-"скорости и больше «дакки», игнорируя всё остальное, что не подпадает под эти"
-" два понятия. Прекрасно знает вражескую технику, рассматривая её не как "
-"угрозу, но скорее как объект возможного разграбления, ведь так можно "
-"получить ещё больше скорости и ещё больше «дакки»!"
-
-msgid "notrecruitedtankman/tankmen_bp8_3/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bp8_3/label"
-msgstr "Боевой пропуск, восьмой сезон"
-
-msgid "notrecruitedtankman/tankmen_bp8_4/desc"
-msgstr ""
-"По собственному мнению — один из фаворитов Нургла. Хотя, возможно, ставит "
-"себя слишком высоко. Не стесняется никаких средств, включая грубую силу, "
-"чтобы доказать свою преданность Великому Отцу, если посчитает, что эти "
-"методы помогут ему добиться благосклонности. Исключительная амбициозность и "
-"фанатичное желание выслужиться могли бы считаться негативными качествами, но"
-" пока исправно приносят свои плоды."
-
-msgid "notrecruitedtankman/tankmen_bp8_4/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bp8_4/label"
-msgstr "Боевой пропуск, восьмой сезон"
-
-msgid "notrecruitedtankman/tankmen_bp8_5/desc"
-msgstr ""
-"Сестра-настоятельница, обладающая выдающимся мастерством. С юных лет всецело"
-" посвящала себя благочестивым обязанностям, так как нашла своё призвание в "
-"сражениях во имя Императора, ещё будучи ученицей Схолы Прогениум. "
-"Относительно недавно варп-шторм помешал ей прибыть на последнее поле битвы, "
-"из-за чего она винит себя, что не смогла исполнить волю Императора. Считает "
-"это величайшим позором, поэтому с особой фанатичностью ищет искупления в "
-"любом бою, где участвует её Орден, а значит — и её болтер с танком."
-
-msgid "notrecruitedtankman/tankmen_bp8_5/howToGetInfo"
-msgstr "?empty?"
-
-msgid "notrecruitedtankman/tankmen_bp8_5/label"
-msgstr "Боевой пропуск, восьмой сезон"
 
 msgid "notrecruitedtankman/tankmen_bp8_6/desc"
 msgstr ""
@@ -12062,6 +11947,12 @@ msgstr "Бонусы за игру взводом"
 msgid "squadBonus/complex/header"
 msgstr "Бонус за игру взводом"
 
+msgid "squadBonus/complex/ranked/body"
+msgstr "Играя взводом, вы можете получать дополнительные серебро и опыт."
+
+msgid "squadBonus/complex/ranked/header"
+msgstr "Бонусы за игру взводом"
+
 msgid "squadBonus/credits/bonusWithPremium"
 msgstr "+{value}, если у вас есть Танковый премиум аккаунт;"
 
@@ -12083,6 +11974,9 @@ msgstr ""
 
 msgid "squadBonus/experience/header"
 msgstr "Дополнительный опыт"
+
+msgid "squadBonus/ranked/description"
+msgstr "Играя взводом, вы можете получать дополнительные серебро и опыт."
 
 msgid "squadBonus/title"
 msgstr "Бонусы за игру взводом"
@@ -12136,6 +12030,9 @@ msgstr "Подкалиберные снаряды"
 
 msgid "storage/filter/shells/btns/type/armor_piercing_fsds"
 msgstr "Бронебойные оперённые подкалиберные снаряды"
+
+msgid "storage/filter/shells/btns/type/delayed_he"
+msgstr "Осколочно-фугасные снаряды с задержкой взрывателя"
 
 msgid "storage/filter/shells/btns/type/flame"
 msgstr "Огнемётная смесь"
@@ -13227,13 +13124,6 @@ msgstr "<h1>Урон</h1> <h2>(hp)</h2>"
 
 msgid "vehicle/deal/epic/main"
 msgstr "Машина для режима «Линия фронта»"
-
-msgid "vehicle/deal/telecom/main/Twitchprime"
-msgstr "Машина доступна игрокам-участникам соответствующей акции."
-
-msgid "vehicle/deal/telecom/main/default"
-msgstr ""
-"Машина доступна абонентам тарифного плана «Игровой» от вашего провайдера."
 
 msgid "vehicle/debut_box_available"
 msgstr "Награда за выполнение специальной задачи"

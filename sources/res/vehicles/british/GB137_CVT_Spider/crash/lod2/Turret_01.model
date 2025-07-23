@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB137_CVT_Spider/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.054001 -0.000006 -1.953491</min>
+		<max>1.044492 1.199100 1.247159</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB137_CVT_Spider/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+</root>

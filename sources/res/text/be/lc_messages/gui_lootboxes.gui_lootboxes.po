@@ -125,7 +125,7 @@ msgid "guaranteedReward/next/bonus"
 msgstr "Гарантаваная ўзнагарода ў наступным кантэйнеры!"
 
 msgid "guaranteedReward/next/vehicle"
-msgstr "Гарантаваная машына %(level)s узроўню ў наступным кантэйнеры!"
+msgstr "Гарантаваная машына %(level)s узроўню ўжо ў наступным кантэйнеры!"
 
 msgid "guaranteedRewardTooltip/block1/bonus/text"
 msgstr ""
@@ -138,10 +138,10 @@ msgstr "Механіка гарантаванай узнагароды"
 
 msgid "guaranteedRewardTooltip/block1/vehicle/text"
 msgstr ""
-"Гарантаваны танк — прэміум машына %(level)s узроўню са спіса магчымых "
-"узнагарод у кантэйнерах. Вы гарантавана атрымаеце танк, якога яшчэ няма на "
-"вашым акаўнце, з %(boxNumber)s-га кантэйнера. Калі танк выпадзе раней, адлік"
-" пачнецца нанова."
+"Гарантаваны танк — машына %(level)s узроўню са спіса магчымага змесціва "
+"кантэйнераў. Танк гарантавана выпадзе не пазней за %(boxNumber)s-ы "
+"кантэйнер. Калі вы атрымаеце якую-небудзь машыну раней, адлік пачнецца "
+"нанова."
 
 msgid "guaranteedRewardTooltip/block1/vehicle/title"
 msgstr "Механіка гарантаванага танка"
@@ -166,12 +166,12 @@ msgstr ""
 
 msgid "guaranteedRewardTooltip/block4/vehicle/text"
 msgstr ""
-"Калі вы ўжо маеце на сваім акаўнце ўсю тэхніку са спіса ўзнагарод, то ўсе "
-"наступныя машыны, атрыманыя з кантэйнераў, будуць кампенсаваны адпаведнай "
-"колькасцю гульнявога золата."
+"Калі вы ўжо маеце ўсю тэхніку са спіса магчымага змесціва кантэйнераў, то "
+"паводле механікі выпадання гарантаванага танка ўсе наступныя машыны, "
+"атрыманыя з кантэйнераў, будуць кампенсаваны адпаведнай валютай."
 
 msgid "guaranteedRewardTooltip/block4/vehicle/title"
-msgstr "Пасля атрымання ўсёй тэхнікі:"
+msgstr "Калі ўся тэхніка ўжо атрымана"
 
 msgid "keyWelcomeScreen/content/first/description"
 msgstr ""
@@ -228,6 +228,18 @@ msgstr "Спісы змесціва"
 msgid "lootboxesWithKeys/about/default"
 msgstr "Пра кантэйнер"
 
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_large"
+msgstr "Пра кантэйнеры падзеі"
+
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_large_test"
+msgstr "Пра кантэйнеры падзеі"
+
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_small"
+msgstr "Пра кантэйнеры падзеі"
+
+msgid "lootboxesWithKeys/about/tanks_birthday_2025_small_test"
+msgstr "Пра кантэйнеры падзеі"
+
 msgid "lootboxesWithKeys/availableLockpicks"
 msgstr "Даступна адмычак для кантэйнераў: %(icon) %(count)"
 
@@ -280,6 +292,9 @@ msgstr "ДА АСКЕПКАЎ"
 msgid "openBoxScreen/backBtn/4"
 msgstr "ДА РЭФЕРАЛЬНАЙ ПРАГРАМЫ"
 
+msgid "openBoxScreen/backBtn/5"
+msgstr "ДА СВЯТОЧНАЙ ПОШТЫ"
+
 msgid "openBoxScreen/backBtnMain"
 msgstr "У Гараж"
 
@@ -295,7 +310,8 @@ msgstr "У вас няма кантэйнераў"
 msgid "openBoxScreen/noLootboxesSecondary"
 msgstr ""
 "Каб атрымаць кантэйнеры, бярыце ўдзел у&nbsp;пэўных падзеях "
-"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы."
+"і&nbsp;выконвайце звязаныя з&nbsp;імі баявыя задачы. Пэўныя кантэйнеры можна"
+" дакупіць у краме падзеі."
 
 msgid "openBoxScreen/noLootboxesShopSecondary"
 msgstr ""
@@ -412,6 +428,20 @@ msgstr "Так!"
 
 msgid "rewards/controls/showVehicle"
 msgstr "Паглядзець у Гаражы"
+
+msgid "rewards/gift/header/moreSenders"
+msgid_plural "moreSendersCount"
+msgstr[0] "і яшчэ %(moreSendersCount)d гульцы"
+msgstr[1] "і яшчэ %(moreSendersCount)d гульцоў"
+msgstr[2] "і яшчэ %(moreSendersCount)d гульцоў"
+
+msgid "rewards/gift/header/subTitle/moreSenders"
+msgstr ""
+"Адкрыты пасылкі ад гульца {cream_Open}%(senderName)s{cream_Close} "
+"%(moreSenders)"
+
+msgid "rewards/gift/header/subTitle/single"
+msgstr "Адкрыта пасылка ад гульца {cream_Open}%(senderName)s{cream_Close}"
 
 msgid "rewards/header/subTitle"
 msgstr ""
@@ -596,10 +626,13 @@ msgid "triggerHint/title"
 msgstr "Наяўныя ключы і адмычкі ад кантэйнераў «Дзень нараджэння 2024»."
 
 msgid "videoreward/button/title"
-msgstr "Працягнуць"
+msgstr "Так!"
+
+msgid "videoreward/button/titleGuaranteed"
+msgstr "Гэта выдатна!"
 
 msgid "videoreward/description/commonText"
-msgstr "Гарантаваная ўзнагарода!"
+msgstr "У Гаражы папаўненне!"
 
 msgid "videoreward/description/vehicleText"
 msgstr "Прыбыў гарантаваны танк!"

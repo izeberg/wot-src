@@ -1253,9 +1253,6 @@ msgstr "Списано очков Боевого пропуска"
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "Списано стальных печатей"
 
-msgid "platformCurrencyMsg/debited/bumblebee_coin"
-msgstr "Списано жетонов Летней распродажи"
-
 msgid "platformCurrencyMsg/debited/equip_coin"
 msgstr "Списано компонентов"
 
@@ -1268,17 +1265,11 @@ msgstr "Списано свободного опыта"
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Списано жетонов за выслугу лет"
 
-msgid "platformCurrencyMsg/debited/summergames_coin"
-msgstr "Списано жетонов Танкового многоборья"
-
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Начислено очков Боевого пропуска"
 
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "Начислено стальных печатей"
-
-msgid "platformCurrencyMsg/received/bumblebee_coin"
-msgstr "Начислено жетонов Летней распродажи"
 
 msgid "platformCurrencyMsg/received/equip_coin"
 msgstr "Начислено компонентов"
@@ -1291,9 +1282,6 @@ msgstr "Получено свободного опыта"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Добавлено жетонов за выслугу лет"
-
-msgid "platformCurrencyMsg/received/summergames_coin"
-msgstr "Добавлено жетонов Танкового многоборья"
 
 msgid "prebattle/addAllBtn/tooltip/body"
 msgstr "Добавить все контакты в список адресатов."
@@ -1620,6 +1608,12 @@ msgid "serviceChannelMessages/autoEquipErrorNoWallet"
 msgstr ""
 "Не удалось пополнить снаряжение на %s. Всё ваше золото станет доступно после"
 " автоматического восстановления работоспособности Единого кошелька."
+
+msgid "serviceChannelMessages/autoEquipNotEnough"
+msgstr ""
+"На Складе закончились инструкции, выбранные для %s. Чтобы продолжить "
+"использовать инструкции, включите докупку закончившихся инструкций или "
+"выберите имеющиеся в наличии."
 
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr ""
@@ -3114,8 +3108,8 @@ msgstr "Прогресс события «Цепь побед» обнулён."
 
 msgid "serviceChannelMessages/playStreakFreezes/body"
 msgstr ""
-"Цепь побед была прервана. Для восстановления счётчика необходимо выполнять "
-"боевую задачу события «Цепь побед» %(savedData)s дней подряд."
+"Цепь побед была прервана. Для восстановления счётчика вам необходимо "
+"выполнить боевую задачу «Цепь побед» %(savedData)s раз."
 
 msgid "serviceChannelMessages/playStreakFreezesEnd/body"
 msgstr "Цепь побед восстановлена."

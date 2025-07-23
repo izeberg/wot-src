@@ -1,12 +1,12 @@
 package net.wg.gui.battle.ranked.battleloading.renderers
 {
    import net.wg.data.constants.generated.BATTLEATLAS;
-   import net.wg.gui.battle.battleloading.renderers.BasePlayerItemRenderer;
    import net.wg.gui.battle.battleloading.renderers.BaseRendererContainer;
    import net.wg.gui.battle.components.BattleAtlasSprite;
+   import net.wg.gui.battle.random.battleloading.renderers.RandomPlayerItemRenderer;
    import net.wg.gui.battle.ranked.VO.daapi.RankedDAAPIVehicleInfoVO;
    
-   public class RankedPlayerItemRenderer extends BasePlayerItemRenderer
+   public class RankedPlayerItemRenderer extends RandomPlayerItemRenderer
    {
        
       

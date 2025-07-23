@@ -5,7 +5,9 @@ from functools import partial
 from itertools import chain, ifilter
 import ArenaType, BigWorld, gui.awards.event_dispatcher as award_events
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_rewards_view_model import CompletedQuestsType
+from gui.impl.lobby import promo_code_reward_screen
 from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsVideoRewardView, showPersonalMissionsRewardsView, showOperationAdditionRewardsView
+from gui.impl.lobby.promo_code_reward_screen import REWARDS_SOURCE_INVOICE, REWARDS_SOURCE_BATTLE_RESULTS, REWARDS_SOURCE_TOKEN_QUESTS
 from gui.shared.account_settings_helper import AccountSettingsHelper
 import personal_missions, wg_async
 from PlayerEvents import g_playerEvents
@@ -53,7 +55,7 @@ from gui.server_events.events_helpers import isACEmailConfirmationQuest, isDaily
 from gui.server_events.finders import CHAMPION_BADGES_BY_BRANCH, CHAMPION_BADGE_AT_OPERATION_ID, PM_FINAL_TOKEN_QUEST_IDS_BY_OPERATION_ID, getBranchByOperationId, BRANCH_TO_OPERATION_IDS
 from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
 from gui.shared import event_dispatcher
-from gui.shared.event_dispatcher import showBadgeInvoiceAwardWindow, showBattlePassAwardsWindow, showBattlePassVehicleAwardWindow, showDedicationRewardWindow, showEliteWindow, showMultiAwardWindow, showProgressionRequiredStyleUnlockedWindow, showProgressiveItemsRewardWindow, showProgressiveRewardAwardWindow, showRankedSeasonCompleteView, showRankedSelectableReward, showRankedYearAwardWindow, showRankedYearLBAwardWindow, showResourceWellAwardWindow, showSeniorityRewardAwardWindow, showBlankGiftWindow, showCollectionAwardsWindow, showParagonsRewardsWindow, showDailyEpicQuestRewardWindow
+from gui.shared.event_dispatcher import showBadgeInvoiceAwardWindow, showBattlePassAwardsWindow, showBattlePassVehicleAwardWindow, showDedicationRewardWindow, showEliteWindow, showMultiAwardWindow, showProgressionRequiredStyleUnlockedWindow, showProgressiveItemsRewardWindow, showProgressiveRewardAwardWindow, showRankedSeasonCompleteView, showRankedSelectableReward, showRankedYearAwardWindow, showRankedYearLBAwardWindow, showResourceWellAwardWindow, showSeniorityRewardAwardWindow, showBlankGiftWindow, showCollectionAwardsWindow, showParagonsRewardsWindow, showDailyEpicQuestRewardWindow, showPromoCodeRewardScreen
 from gui.shared.events import PersonalMissionsEvent
 from gui.shared.gui_items.dossier.factories import getAchievementFactory
 from gui.shared.system_factory import registerAwardControllerHandlers, collectAwardControllerHandlers
@@ -1997,6 +1999,57 @@ class DailyEpicQuestsHandler(ServiceChannelHandler):
         return bool(self._qId)
 
 
+class PromoCodeInvoiceHandler(MultiTypeServiceChannelHandler):
+
+    def __init__(self, awardCtrl):
+        super(PromoCodeInvoiceHandler, self).__init__((
+         SYS_MESSAGE_TYPE.invoiceReceived.index(),
+         SYS_MESSAGE_TYPE.tokenQuests.index(),
+         SYS_MESSAGE_TYPE.battleResults.index()), awardCtrl)
+
+    def _needToShowAward(self, ctx):
+        _, message = ctx
+        if not super(PromoCodeInvoiceHandler, self)._needToShowAward(ctx):
+            return False
+        if not promo_code_reward_screen.isPromoCodeRewardScreenEnabled():
+            return False
+        data = message.data
+        if message.type == SYS_MESSAGE_TYPE.invoiceReceived.index():
+            for token in data['data'].get('tokens', {}):
+                if promo_code_reward_screen.isPromoCodeToken(token):
+                    return True
+
+            return False
+        if message.type in (SYS_MESSAGE_TYPE.battleResults.index(), SYS_MESSAGE_TYPE.tokenQuests.index()):
+            for _, rewards in data.get('detailedRewards', {}).iteritems():
+                for token in rewards.get('tokens', {}):
+                    if promo_code_reward_screen.isPromoCodeToken(token):
+                        return True
+
+        return False
+
+    def _showAward(self, ctx):
+        _, message = ctx
+        data = message.data
+        rewards = {}
+        if message.type == SYS_MESSAGE_TYPE.invoiceReceived.index():
+            for token in data['data'].get('tokens', {}):
+                if promo_code_reward_screen.isPromoCodeToken(token):
+                    rewards[token] = (
+                     data['data'], REWARDS_SOURCE_INVOICE)
+
+        if message.type in (SYS_MESSAGE_TYPE.battleResults.index(), SYS_MESSAGE_TYPE.tokenQuests.index()):
+            for _, rwrds in data.get('detailedRewards', {}).iteritems():
+                for token in rwrds.get('tokens', {}):
+                    if promo_code_reward_screen.isPromoCodeToken(token):
+                        rewardsSource = REWARDS_SOURCE_BATTLE_RESULTS if message.type else REWARDS_SOURCE_TOKEN_QUESTS
+                        rewards[token] = (rwrds, rewardsSource)
+                        break
+
+        for token, reward in rewards.iteritems():
+            showPromoCodeRewardScreen(token, [reward[0]], reward[1])
+
+
 registerAwardControllerHandlers((
  BattleQuestsAutoWindowHandler,
  PunishWindowHandler,
@@ -2043,4 +2096,5 @@ registerAwardControllerHandlers((
  PremiumSubsEntitlementReceivedHandler,
  Comp7CouponHandler,
  EarlyAccessQuestHandler,
- DailyEpicQuestsHandler))
+ DailyEpicQuestsHandler,
+ PromoCodeInvoiceHandler))

@@ -1,4 +1,4 @@
-import WGAI, math
+import AI_Common, math
 from constants import SERVER_TICK_LENGTH, SHELL_TRAJECTORY_EPSILON_SERVER
 __DIST_LIMIT_TAGS = [
  'lightTank', 'mediumTank', 'heavyTank', 'AT-SPG']
@@ -33,7 +33,7 @@ def getPyShootingTest(spaceID, vehicleDescr):
     shotDescr = vehicleDescr.shot
     gunDescr = vehicleDescr.gun
     vehicleTags = vehicleDescr.type.tags
-    shootingTest = WGAI.PyShootingTest()
+    shootingTest = AI_Common.PyShootingTest()
     shootingTest.speed = shotDescr.speed
     shootingTest.gravity = shotDescr.gravity
     turPos = vehicleDescr.hull.turretPositions[0] + vehicleDescr.chassis.hullPosition
@@ -111,7 +111,7 @@ class ShootingTest(object):
         self.__impl.destructibleHealthCb = destructibleHealthCallback
 
     def canShootAtPoint(self, targetPosition):
-        return WGAI.canShootAtPoint(self.__impl, targetPosition)
+        return AI_Common.canShootAtPoint(self.__impl, targetPosition)
 
     def canShootAtPointFixedAngles(self, targetPosition, turretYaw, gunPitch):
-        return WGAI.canShootAtPointFixedAngles(self.__impl, targetPosition, turretYaw, gunPitch)
+        return AI_Common.canShootAtPointFixedAngles(self.__impl, targetPosition, turretYaw, gunPitch)

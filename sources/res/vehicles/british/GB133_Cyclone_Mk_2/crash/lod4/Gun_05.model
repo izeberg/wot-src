@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.756935 -0.296205 -0.101835</min>
+		<max>0.756935 0.323562 3.422241</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB133_Cyclone_Mk_2/crash/lod4/Gun_05</nodefullVisual>
+</root>

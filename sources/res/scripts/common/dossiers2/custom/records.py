@@ -862,9 +862,9 @@ RECORDS = (
  (
   'achievements', 'medalKay', 'p', 'B', 4),
  (
-  'achievements', 'medalCarius', 'p', 'B', 4),
+  'achievements', 'medalSamokhin', 'p', 'B', 4),
  (
-  'achievements', 'medalKnispel', 'p', 'B', 4),
+  'achievements', 'medalGudz', 'p', 'B', 4),
  (
   'achievements', 'medalPoppel', 'p', 'B', 4),
  (
@@ -888,7 +888,7 @@ RECORDS = (
  (
   'achievements', 'marksOnGun', 'p', 'B', 3),
  (
-  'achievements', 'medalWittmann', 'p', 'H', 60001),
+  'achievements', 'medalUshakov', 'p', 'H', 60001),
  (
   'achievements', 'medalRadleyWalters', 'p', 'H', 60001),
  (
@@ -900,7 +900,7 @@ RECORDS = (
  (
   'achievements', 'medalBrunoPietro', 'p', 'H', 60001),
  (
-  'achievements', 'medalTarczay', 'p', 'H', 60001),
+  'achievements', 'medalLyubushkin', 'p', 'H', 60001),
  (
   'achievements', 'medalBurda', 'p', 'H', 60001),
  (
@@ -910,7 +910,7 @@ RECORDS = (
  (
   'achievements', 'medalOskin', 'p', 'H', 60001),
  (
-  'achievements', 'medalLehvaslaiho', 'p', 'H', 60001),
+  'achievements', 'medalKhazov', 'p', 'H', 60001),
  (
   'achievements', 'medalNikolas', 'p', 'H', 60001),
  (
@@ -920,7 +920,7 @@ RECORDS = (
  (
   'achievements', 'medalOrlik', 'p', 'H', 60001),
  (
-  'achievements', 'medalHalonen', 'p', 'H', 60001),
+  'achievements', 'medalKrysov', 'p', 'H', 60001),
  (
   'achievements', 'medalKolobanov', 'p', 'H', 60001),
  (
@@ -928,7 +928,7 @@ RECORDS = (
  (
   'achievements', 'medalDeLanglade', 'p', 'H', 60001),
  (
-  'achievements', 'medalTamadaYoshio', 'p', 'H', 60001),
+  'achievements', 'medalTrubin', 'p', 'H', 60001),
  (
   'singleAchievements', 'titleSniper', 'p', 'B', 1),
  (
@@ -3544,7 +3544,9 @@ RECORDS = (
  (
   'singleAchievements', 'comp7_4_4_champion', 'p', 'B', 1),
  (
-  'singleAchievements', 'comp7_4_4_legend', 'p', 'B', 1))
+  'singleAchievements', 'comp7_4_4_legend', 'p', 'B', 1),
+ (
+  'singleAchievements', 'BirthdayPr_2025', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -3746,35 +3748,35 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('achievements', 'piercingSeries'): 31, 
    ('achievements', 'maxPiercingSeries'): 32, 
    ('achievements', 'medalKay'): 41, 
-   ('achievements', 'medalCarius'): 42, 
-   ('achievements', 'medalKnispel'): 43, 
+   ('achievements', 'medalSamokhin'): 42, 
+   ('achievements', 'medalGudz'): 43, 
    ('achievements', 'medalPoppel'): 44, 
    ('achievements', 'medalAbrams'): 45, 
    ('achievements', 'medalLeClerc'): 46, 
    ('achievements', 'medalLavrinenko'): 47, 
    ('achievements', 'medalEkins'): 48, 
    ('achievements', 'markOfMastery'): 79, 
-   ('achievements', 'medalWittmann'): 49, 
+   ('achievements', 'medalUshakov'): 49, 
    ('achievements', 'medalRadleyWalters'): 73, 
    ('achievements', 'medalLafayettePool'): 74, 
    ('achievements', 'heroesOfRassenay'): 110, 
    ('achievements', 'medalBillotte'): 54, 
    ('achievements', 'medalBrunoPietro'): 75, 
-   ('achievements', 'medalTarczay'): 76, 
+   ('achievements', 'medalLyubushkin'): 76, 
    ('achievements', 'medalBurda'): 53, 
    ('achievements', 'medalPascucci'): 77, 
    ('achievements', 'medalDumitru'): 78, 
    ('achievements', 'medalOskin'): 51, 
-   ('achievements', 'medalLehvaslaiho'): 106, 
+   ('achievements', 'medalKhazov'): 106, 
    ('achievements', 'medalNikolas'): 107, 
    ('achievements', 'medalBrothersInArms'): 143, 
    ('achievements', 'medalCrucialContribution'): 144, 
    ('achievements', 'medalOrlik'): 50, 
-   ('achievements', 'medalHalonen'): 52, 
+   ('achievements', 'medalKrysov'): 52, 
    ('achievements', 'medalKolobanov'): 55, 
    ('achievements', 'medalFadin'): 56, 
    ('achievements', 'medalDeLanglade'): 145, 
-   ('achievements', 'medalTamadaYoshio'): 146, 
+   ('achievements', 'medalTrubin'): 146, 
    ('singleAchievements', 'titleSniper'): 58, 
    ('singleAchievements', 'invincible'): 59, 
    ('singleAchievements', 'diehard'): 60, 
@@ -5318,7 +5320,8 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'BattlePassCommonPr_17'): 31132, 
    ('singleAchievements', 'comp7_4_4'): 31133, 
    ('singleAchievements', 'comp7_4_4_champion'): 31134, 
-   ('singleAchievements', 'comp7_4_4_legend'): 31135}
+   ('singleAchievements', 'comp7_4_4_legend'): 31135, 
+   ('singleAchievements', 'BirthdayPr_2025'): 31136}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 
@@ -5366,7 +5369,7 @@ BATTLE_HERO_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDes
   'achievements', 'evileye')]}
 EPIC_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor in [
  (
-  'achievements', 'medalWittmann'),
+  'achievements', 'medalUshakov'),
  (
   'achievements', 'medalRadleyWalters'),
  (
@@ -5378,7 +5381,7 @@ EPIC_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor
  (
   'achievements', 'medalBrunoPietro'),
  (
-  'achievements', 'medalTarczay'),
+  'achievements', 'medalLyubushkin'),
  (
   'achievements', 'medalBurda'),
  (
@@ -5388,13 +5391,13 @@ EPIC_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor
  (
   'achievements', 'medalOskin'),
  (
-  'achievements', 'medalLehvaslaiho'),
+  'achievements', 'medalKhazov'),
  (
   'achievements', 'medalNikolas'),
  (
   'achievements', 'medalOrlik'),
  (
-  'achievements', 'medalHalonen'),
+  'achievements', 'medalKrysov'),
  (
   'achievements', 'medalKolobanov'),
  (
@@ -5406,7 +5409,7 @@ EPIC_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor
  (
   'achievements', 'huntsman'),
  (
-  'achievements', 'medalTamadaYoshio'),
+  'achievements', 'medalTrubin'),
  (
   'achievements', 'medalStark')]}
 BIT_STORAGES = {}

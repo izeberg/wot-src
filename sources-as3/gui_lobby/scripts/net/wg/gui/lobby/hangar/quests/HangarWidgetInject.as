@@ -37,5 +37,10 @@ package net.wg.gui.lobby.hangar.quests
       {
          this._alias = param1;
       }
+      
+      public function get visibleHeight() : int
+      {
+         return 0;
+      }
    }
 }

@@ -376,6 +376,9 @@ msgstr "БАПС"
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "АФ"
 
+msgid "damageLog/shellType/DELAYED_HE"
+msgstr "АФ"
+
 msgid "damageLog/shellType/FLAME"
 msgstr "АС"
 
@@ -2140,7 +2143,7 @@ msgstr "Так!"
 
 msgid "rewardWindow/piggyBank/descText"
 msgstr ""
-"Назапашванне срэбра прыпынена. Працягніце прэміум акаўнт, каб далей "
+"Назапашванне срэбра прыпынена. Працягніце Танкавы прэміум акаўнт, каб далей "
 "папаўняць сховішча срэбра."
 
 msgid "rewardWindow/piggyBank/headerText"
@@ -2758,6 +2761,9 @@ msgstr "%(caliber)s мм БАПС %(userString)s"
 
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s-мм бранябойны каморны снарад %(userString)s"
+
+msgid "shells_kinds/DELAYED_HE"
+msgstr "%(caliber)s мм снарад з затрымкай дэтанатара %(userString)s"
 
 msgid "shells_kinds/FLAME"
 msgstr "Агнямётная сумесь %(userString)s"

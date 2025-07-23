@@ -8,27 +8,60 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 -1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>joint1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.001312 0.122214 0.099977</row3>
+				</transform>
+				<node>
+					<identifier>joint1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.001312 -0.122214 -0.099977</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
 	</node>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
-		<node>Scene Root</node>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint1_BlendBone</node>
+		<node>Root_BlendBone</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>anim_Shape.vertices</vertices>
+			<primitive>anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_01</identifier>
-					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R227_Object_407_MZ/Object_407_MZ_turret_01_AM.dds</Texture>
-					</property>
-					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R227_Object_407_MZ/Object_407_MZ_turret_01_AO.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -38,15 +71,24 @@
 						normalMap
 						<Texture>vehicles/russian/R227_Object_407_MZ/Object_407_MZ_turret_01_ANM.dds</Texture>
 					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R227_Object_407_MZ/Object_407_MZ_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>0.000950 0.330825 -1.218798</groupOrigin>
+				<groupOrigin>0.001235 0.018578 -0.047209</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
+	<constraints/>
 	<boundingBox>
-		<min>-0.203073 0.166327 -1.363441</min>
-		<max>0.204974 0.495324 -1.074154</max>
+		<min>-0.202788 -0.145920 -0.097434</min>
+		<max>0.205258 0.183077 0.191852</max>
 	</boundingBox>
-	<geometrySize>3114</geometrySize>
+	<geometrySize>3786</geometrySize>
 	<minUVDensity>0.028051</minUVDensity>
 </root>

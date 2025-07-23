@@ -179,10 +179,5 @@ package net.wg.gui.lobby.epicBattles.components
       {
          invalidateSize();
       }
-      
-      private function onStageResizeHandler(param1:Event) : void
-      {
-         invalidateSize();
-      }
    }
 }

@@ -953,6 +953,12 @@ class IRankedBattlesController(IGameController, ISeasonProvider):
     def getBonusBattlesMultiplier(self):
         raise NotImplementedError
 
+    def getRankSquadRestriction(self):
+        raise NotImplementedError
+
+    def getDivisionSquadRestriction(self):
+        raise NotImplementedError
+
     def getStepsList(self):
         raise NotImplementedError
 
@@ -2508,6 +2514,7 @@ class IGuiLootBoxesController(IGameController, IEntitlementsConsumer):
     onKeysUpdate = None
     onBoxesHistoryUpdate = None
     onBoxInfoUpdated = None
+    onStorageVisited = None
 
     @property
     def isConsumesEntitlements(self):

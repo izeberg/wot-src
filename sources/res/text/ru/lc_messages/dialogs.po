@@ -7,6 +7,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "EULA/buttons/apply"
 msgstr "Принимаю"
@@ -560,8 +566,8 @@ msgstr "Отменить"
 
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
-"Купить Премиум аккаунт на %(days)s д за %(gold)s золота?\n"
-" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Премиум аккаунт стандартным способом.%(tagClose)s"
+"Купить Танковый премиум аккаунт на %(days)s д за %(gold)s золота?\n"
+" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Танковый премиум аккаунт стандартным способом.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купить"
@@ -1443,13 +1449,69 @@ msgstr ""
 msgid "disconnected/title"
 msgstr "Потеря соединения"
 
+msgid "dismissOrRestore/dismiss/capcha/title/limitError"
+msgstr ""
+"Для совершения операции введите количество членов экипажа, %(highlight)s"
+
+msgid "dismissOrRestore/dismiss/capcha/title/normal"
+msgstr ""
+"Для совершения операции введите количество членов экипажа с %(highlight)s"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlight/limitError"
+msgstr ""
+"которые будут заменены %(keyword)s в буфере мобилизованных (%(count)s)"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlight/normal"
+msgstr "возможностью восстановления (%(count)s)"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlightKeyword"
+msgstr "безвозвратно"
+
+msgid "dismissOrRestore/error/text"
+msgstr "Вы ввели неправильное значение!"
+
+msgid "dismissOrRestore/header/dismiss"
+msgstr "Демобилизовать выбранных членов экипажа?"
+
+msgid "dismissOrRestore/header/restore"
+msgstr "Восстановить выбранных членов экипажа?"
+
+msgid "dismissOrRestore/limitError/error"
+msgid_plural "error"
+msgstr[0] ""
+"Превышен лимит буфера демобилизованных: %(count)s член экипажа будет заменён"
+" безвозвратно."
+msgstr[1] ""
+"Превышен лимит буфера демобилизованных: %(count)s члена экипажа будут "
+"заменены безвозвратно."
+msgstr[2] ""
+"Превышен лимит буфера демобилизованных: %(count)s членов экипажа будут "
+"заменены безвозвратно."
+
+msgid "dismissOrRestore/restore/currency"
+msgstr "Итоговая стоимость:"
+
+msgid "dismissOrRestore/selectTankmans/dismiss"
+msgstr ""
+"Всего выбрано членов экипажа для демобилизации: %(total)s (из них с "
+"возможностью восстановления %(restorable)s)"
+
+msgid "dismissOrRestore/selectTankmans/restore"
+msgstr "Всего выбрано членов экипажа для восстановления: %(count)s"
+
 msgid "dismissTankman/buttons/dismiss"
 msgstr "Демобилизовать"
+
+msgid "dismissTankman/buttons/restore"
+msgstr "Восстановить"
 
 msgid "dismissTankman/description/time"
 msgstr ""
 "Выбранный член экипажа будет демобилизован. Вы можете вернуть его в строй в "
-"течение {whiteOrange_Open}%(time)s д{whiteOrange_Close}."
+"течение %(time)s."
+
+msgid "dismissTankman/description/timeText"
+msgstr "%(time)s д."
 
 msgid "dismissTankman/header"
 msgstr "Демобилизация члена экипажа"
@@ -1489,18 +1551,6 @@ msgstr "Подтвердить"
 
 msgid "dismissedBufferOverFlawMultiple/title"
 msgstr "Буфер демобилизованных заполнен"
-
-msgid "documentChangeDialog/button/submit"
-msgstr "Заменить"
-
-msgid "documentChangeDialog/dropdown/firstName"
-msgstr "Имя"
-
-msgid "documentChangeDialog/dropdown/lastName"
-msgstr "Фамилия"
-
-msgid "documentChangeDialog/title"
-msgstr "Сменить имя и внешность?"
 
 msgid "dropSkill/cancel"
 msgstr "Отменить"
@@ -2995,6 +3045,9 @@ msgstr ""
 msgid "retrain/cancel"
 msgstr "Отменить"
 
+msgid "retrain/header"
+msgstr "Выберите способ переобучения"
+
 msgid "retrain/massive/tankmenCount"
 msgstr ""
 "Будет переобучено членов экипажа: "
@@ -3019,7 +3072,7 @@ msgid "retrain/single/checkBoxLabel"
 msgstr "Разместить в этой машине"
 
 msgid "retrain/submit"
-msgstr "Переобучить"
+msgstr "Выбрать"
 
 msgid "retrain/title/massive"
 msgstr "Переобучить экипаж на %(vehicleName)s?"
@@ -3094,6 +3147,21 @@ msgstr "Рассинхронизация"
 
 msgid "skinApplyDialog/button/submit"
 msgstr "Применить"
+
+msgid "skinApplyDialog/warning"
+msgstr "Этот образ имеет неизменяемые имя и фамилию"
+
+msgid "skinChangeDialog/button/submit"
+msgstr "Сменить"
+
+msgid "skinChangeDialog/text"
+msgstr "Внешность члена экипажа будет изменена."
+
+msgid "skinChangeDialog/title"
+msgstr "Сменить внешность?"
+
+msgid "skinChangeDialog/warning"
+msgstr "Этот образ имеет неизменяемые имя и фамилию"
 
 msgid "soundModeInvalid/cancel"
 msgstr "Отменить"
@@ -3361,6 +3429,12 @@ msgstr "Перейти"
 
 msgid "switchPeripheryWindow/windowTitle"
 msgstr "Переход на другой сервер"
+
+msgid "tankmanRetraining/cancel"
+msgstr "Отменить"
+
+msgid "tankmanRetraining/submit"
+msgstr "Выбрать"
 
 msgid "tradeInConfirmation/cancel"
 msgstr "Отменить"

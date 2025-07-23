@@ -1,9 +1,9 @@
 package net.wg.gui.battle.ranked.battleloading.renderers
 {
-   import net.wg.gui.battle.battleloading.renderers.BaseRendererContainer;
    import net.wg.gui.battle.components.BattleAtlasSprite;
+   import net.wg.gui.battle.random.battleloading.renderers.RandomRendererContainer;
    
-   public class RankedRendererContainer extends BaseRendererContainer
+   public class RankedRendererContainer extends RandomRendererContainer
    {
        
       

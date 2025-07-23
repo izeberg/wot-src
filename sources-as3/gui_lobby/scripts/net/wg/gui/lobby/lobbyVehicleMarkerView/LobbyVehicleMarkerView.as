@@ -33,13 +33,13 @@ package net.wg.gui.lobby.lobbyVehicleMarkerView
          return false;
       }
       
-      public function as_createCustomMarker(param1:int, param2:String, param3:String) : DisplayObject
+      public function as_createCustomMarker(param1:int, param2:String, param3:String, param4:String) : DisplayObject
       {
-         var _loc4_:CustomMarker = App.instance.utils.classFactory.getComponent(Linkages.CUSTOM_MARKER,CustomMarker);
-         _loc4_.setInfo(param2,param3);
-         addChild(_loc4_);
-         this._markers[param1] = _loc4_;
-         return _loc4_;
+         var _loc5_:CustomMarker = App.instance.utils.classFactory.getComponent(Linkages.CUSTOM_MARKER,CustomMarker);
+         _loc5_.setInfo(param2,param3,param4);
+         addChild(_loc5_);
+         this._markers[param1] = _loc5_;
+         return _loc5_;
       }
       
       public function as_createMarker(param1:int, param2:String, param3:String) : DisplayObject

@@ -37,6 +37,9 @@ msgstr ""
 "Нажмите, чтобы подробнее узнать о\n"
 "кампании «Новые горизонты»."
 
+msgid "OperationsView/lastOperation/inGame"
+msgstr "(в игре с 03.09.2025)"
+
 msgid "OperationsView/operationName"
 msgstr "ОПЕРАЦИЯ"
 
@@ -657,16 +660,22 @@ msgstr ""
 "«&zwnbsp;%(name)s» станет доступен."
 
 msgid "tooltips/OperationsView/lastOperation/development/footer"
-msgstr "Скоро в игре"
+msgstr "В игре с 03.09.2025"
 
 msgid "tooltips/OperationsView/lastOperation/development/header"
 msgstr "Этап «%(name)s» (в разработке)"
+
+msgid "tooltips/OperationsView/lastOperation/development/rewardReceived"
+msgstr "Награда получена"
 
 msgid "tooltips/OperationsView/lastOperation/development/rewards"
 msgstr "Награда за досрочное выполнение этапа:"
 
 msgid "tooltips/OperationsView/lastOperation/development/subtitle"
 msgstr "Награда за выполнение этапа:"
+
+msgid "tooltips/OperationsView/lastOperation/developmentCompleted/footer"
+msgstr "Награда получена"
 
 msgid "tooltips/OperationsView/lastOperation/header"
 msgstr "Этап «%(name)s»"

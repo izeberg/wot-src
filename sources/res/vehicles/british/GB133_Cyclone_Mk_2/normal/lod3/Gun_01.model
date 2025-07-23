@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB133_Cyclone_Mk_2/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB133_Cyclone_Mk_2/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.740977 -0.294368 -0.044696</min>
+		<max>0.742709 0.262982 3.531203</max>
+	</visibilityBox>
+</root>

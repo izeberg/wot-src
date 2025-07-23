@@ -1093,6 +1093,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_AUTOEQUIPSUCCESS:String = "#messenger:serviceChannelMessages/autoEquipSuccess";
       
+      public static const SERVICECHANNELMESSAGES_AUTOEQUIPNOTENOUGH:String = "#messenger:serviceChannelMessages/autoEquipNotEnough";
+      
       public static const SERVICECHANNELMESSAGES_AUTOEQUIPBOOSTERSUCCESS:String = "#messenger:serviceChannelMessages/autoEquipBoosterSuccess";
       
       public static const SERVICECHANNELMESSAGES_AUTORENTSTYLESUCCESS:String = "#messenger:serviceChannelMessages/autoRentStyleSuccess";
@@ -2253,10 +2255,6 @@ package
       
       public static const PLATFORMCURRENCYMSG_DEBITED_SACOIN:String = "#messenger:platformCurrencyMsg/debited/sacoin";
       
-      public static const PLATFORMCURRENCYMSG_RECEIVED_SUMMERGAMES_COIN:String = "#messenger:platformCurrencyMsg/received/summergames_coin";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_SUMMERGAMES_COIN:String = "#messenger:platformCurrencyMsg/debited/summergames_coin";
-      
       public static const PLATFORMCURRENCYMSG_RECEIVED_BPBIT:String = "#messenger:platformCurrencyMsg/received/bpbit";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_BPBIT:String = "#messenger:platformCurrencyMsg/debited/bpbit";
@@ -2272,10 +2270,6 @@ package
       public static const PLATFORMCURRENCYMSG_RECEIVED_FAMECOIN:String = "#messenger:platformCurrencyMsg/received/famecoin";
       
       public static const PLATFORMCURRENCYMSG_DEBITED_FAMECOIN:String = "#messenger:platformCurrencyMsg/debited/famecoin";
-      
-      public static const PLATFORMCURRENCYMSG_RECEIVED_BUMBLEBEE_COIN:String = "#messenger:platformCurrencyMsg/received/bumblebee_coin";
-      
-      public static const PLATFORMCURRENCYMSG_DEBITED_BUMBLEBEE_COIN:String = "#messenger:platformCurrencyMsg/debited/bumblebee_coin";
       
       public static const PLATFORMCURRENCYMSG_RECEIVED_FREEXP:String = "#messenger:platformCurrencyMsg/received/freeXP";
       

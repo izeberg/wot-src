@@ -286,7 +286,10 @@ package net.wg.gui.battle.views.dualGunPanel
          {
             this.getGunById(param1).changeActiveGun();
          }
-         this.activateTimer(TIMER_ID_ACTIVE_GUN_CHANGE,param2,param3);
+         if(param2 > 0)
+         {
+            this.activateTimer(TIMER_ID_ACTIVE_GUN_CHANGE,param2,param3);
+         }
       }
       
       public function as_updateTotalTime(param1:Number) : void
@@ -428,7 +431,7 @@ package net.wg.gui.battle.views.dualGunPanel
          else if(_loc2_.isRunning || _loc3_.isRunning)
          {
             _loc6_ = !!_loc1_.isRunning ? DualGunPanelTimer.STYLE_PRIMARY_LOADING : DualGunPanelTimer.STYLE_SECONDARY_LOADING;
-            if(this.hasAutoloader)
+            if(this.isClipGun)
             {
                _loc7_ = !!_loc2_.isRunning ? Number(_loc2_.timeLeft) : Number(_loc3_.timeLeft);
             }
@@ -437,7 +440,7 @@ package net.wg.gui.battle.views.dualGunPanel
                _loc7_ = _loc2_.timeLeft + _loc3_.timeLeft;
             }
          }
-         else if(this.hasAutoloader)
+         else if(this.isClipGun)
          {
             _loc7_ = this.getTimerById(RELOADING_TIMERS[this._activeGunId]).totalTime;
             _loc6_ = _loc7_ > Values.ZERO ? DualGunPanelTimer.STYLE_IDLE : DualGunPanelTimer.STYLE_PRIMARY_LOADING;
@@ -551,9 +554,9 @@ package net.wg.gui.battle.views.dualGunPanel
          this.updatePanelTimer();
       }
       
-      private function get hasAutoloader() : Boolean
+      private function get isClipGun() : Boolean
       {
-         return this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
+         return this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER || this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_CASSETTE;
       }
    }
 }

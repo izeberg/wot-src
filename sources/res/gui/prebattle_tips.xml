@@ -112,6 +112,10 @@
 			</preceding>
 		</filter>
 		<filter>
+			<id>from_5_to_11_levels</id>
+			<levels>5 6 7 8 9 10 11</levels>
+		</filter>
+		<filter>
 			<id>only_AT-SPG</id>
 			<vehicleClass>AT-SPG</vehicleClass>
 		</filter>
@@ -215,6 +219,10 @@
 			<preceding>
 				<showTimes>10</showTimes>
 			</preceding>
+		</filter>
+		<filter>
+			<id>birthday_event_on</id>
+			<isBirthdayActive>True</isBirthdayActive>
 		</filter>
 	</filters>
 	<tips>
@@ -950,6 +958,22 @@
 			<filter>only_dualAccuracy_first_5_times</filter>
 		</tip>
 		<tip>
+			<id>tip205</id>
+			<status>tip205Status</status>
+			<filter>birthday_event_on</filter>
+		</tip>
+		<tip>
+			<id>tip206</id>
+			<status>tip206Status</status>
+			<filter>birthday_event_on</filter>
+		</tip>
+		<tip>
+			<id>tip207</id>
+			<status>economicDirectives</status>
+			<group>economics</group>
+			<filter>from_5_to_11_levels</filter>
+		</tip>
+		<tip>
 			<id>tip31001</id>
 			<status>payAttention</status>
 			<group>all</group>
@@ -1149,8 +1173,16 @@
 			<status>rankedStatus3</status>
 		</tip>
 		<tip>
+			<id>ranked4</id>
+			<status>rankedStatus4</status>
+		</tip>
+		<tip>
 			<id>ranked5</id>
 			<status>rankedStatus5</status>
+		</tip>
+		<tip>
+			<id>ranked6</id>
+			<status>rankedStatus6</status>
 		</tip>
 		<tip>
 			<id>ranked7</id>

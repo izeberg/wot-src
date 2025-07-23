@@ -1462,6 +1462,11 @@ def _migrateTo138(core, data, initialized):
     data[GUI_START_BEHAVIOR][GuiSettingsBehavior.COMP7_WHATS_NEW_SHOWN] = True
 
 
+def _migrateTo139(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
+    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED] = False
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1736,7 +1741,9 @@ _versions = (
  (
   137, _migrateTo137, False, False),
  (
-  138, _migrateTo138, False, False))
+  138, _migrateTo138, False, False),
+ (
+  139, _migrateTo139, False, False))
 
 @adisp_async
 @adisp_process

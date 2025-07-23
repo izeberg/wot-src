@@ -92,7 +92,7 @@ package net.wg.gui.battle.views.dualGunPanel
       
       public function updateClipType(param1:int) : void
       {
-         if(param1 == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER)
+         if(CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_TYPES.indexOf(param1) != -1)
          {
             this.totalTimer.alpha = Values.ZERO;
             this.timerIdle.alpha = Values.DEFAULT_ALPHA;

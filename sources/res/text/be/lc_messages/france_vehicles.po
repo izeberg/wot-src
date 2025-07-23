@@ -798,6 +798,9 @@ msgstr "AMX Tracteur D"
 msgid "Chassis_F131_Coutelas"
 msgstr "Coutelas"
 
+msgid "Chassis_F133_Projet_57"
+msgstr "Projet 57"
+
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -1536,6 +1539,24 @@ msgstr "Coutelas"
 msgid "F131_Coutelas_short_special"
 msgstr "?empty?"
 
+msgid "F133_Projet_57"
+msgstr "Projet 57"
+
+msgid "F133_Projet_57_descr"
+msgstr ""
+"Французскі цяжкі танк, які з'явіўся як развіццё праекта Somua SM. У абноўленай версіі канструктары пастараліся выправіць недахопы зыходнага праекта і павысіць характарыстыкі машыны. Так, машына павінна была атрымаць іншую вежу больш снарадаўстойлівай формы, шасі была спраектавана нанова з улікам узрослых хуткасцяў і масы. Агнявая моц таксама павінна былі ўзрасці: прадугледжвалася магчымасць усталявання 100-мм або 120-мм гарматы з аўтаматызаваным набіваннем. Высокая рухомасць забяспечвалася новым дызельным рухавіком МР 65 фірмы Saurer. Паводле сукупнасці асноўных параметраў машына магла стаць грозным праціўнікам для танкаў Варшаўскага дагавора. Эскізны праект быў гатовы да 1958 г., але ў тым жа годзе AMX-50 з падобнымі характарыстыкамі і аналагічнай канструкцыяй ужо праходзіў выпрабаванні. Падчас выпрабаванняў стала зразумела, што сама канцэпцыя прапусціла свой час. У выніку ў 1959-м годзе праграма AMX-50 была канчаткова закрыта на карысць новага праекта Europanzer, а Projet 57 паўтарыў яе лёс.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "F133_Projet_57_long_special"
+msgstr "?empty?"
+
+msgid "F133_Projet_57_short"
+msgstr "Projet 57"
+
+msgid "F133_Projet_57_short_special"
+msgstr "?empty?"
+
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -1938,6 +1959,18 @@ msgstr "Магазінная гармата з высокай забойнасц
 
 msgid "F87_Batignolles-Chatillon_12t"
 msgstr "Bat.-Châtillon 12 t"
+
+msgid "F87_Batignolles-Chatillon_12t_FL"
+msgstr "Bat.-Châtillon 12 t FL"
+
+msgid "F87_Batignolles-Chatillon_12t_FL_long_special"
+msgstr "?empty?"
+
+msgid "F87_Batignolles-Chatillon_12t_FL_short"
+msgstr "B-C 12 t FL"
+
+msgid "F87_Batignolles-Chatillon_12t_FL_short_special"
+msgstr "?empty?"
 
 msgid "F87_Batignolles-Chatillon_12t_descr"
 msgstr ""
@@ -2592,6 +2625,9 @@ msgstr "Saurer 1000"
 msgid "Saurer_F155"
 msgstr "Saurer 1000F"
 
+msgid "Saurer_MP_65"
+msgstr "Saurer MP 65"
+
 msgid "Somua_190CV_V8"
 msgstr "Somua V8"
 
@@ -2662,6 +2698,9 @@ msgstr "TRVP-13-A3"
 
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
+
+msgid "TRVP_13_P"
+msgstr "TRVP-13"
 
 msgid "TRVP_13_SH"
 msgstr "TRVP-13"
@@ -2840,6 +2879,9 @@ msgstr "AMX Tracteur D"
 
 msgid "Turret_1_F131_Coutelas"
 msgstr "Coutelas"
+
+msgid "Turret_1_F133_Projet_57"
+msgstr "Projet 57"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -3286,6 +3328,9 @@ msgstr "ОCC M469"
 msgid "_120mm_OE120"
 msgstr "OE 120"
 
+msgid "_120mm_OE120_57"
+msgstr "ОЕ 120"
+
 msgid "_120mm_OE_1930"
 msgstr "ОЕ Mle 1930"
 
@@ -3301,8 +3346,14 @@ msgstr "OE mle. 1951"
 msgid "_120mm_OP120"
 msgstr "OP 120"
 
+msgid "_120mm_OP120_57"
+msgstr "ОР 120"
+
 msgid "_120mm_OPS120"
 msgstr "OPS 120"
+
+msgid "_120mm_OPS120_57"
+msgstr "ОPS 120"
 
 msgid "_120mm_OP_1943"
 msgstr "ОР Mle 1943"
@@ -3318,6 +3369,9 @@ msgstr "Prf. mle. 1951"
 
 msgid "_120mm_SA_46"
 msgstr "120 mm SA46"
+
+msgid "_120mm_SA_46A"
+msgstr "120 mm SA 46A"
 
 msgid "_120mm_SA_46_AC"
 msgstr "120 mm AC SA46"

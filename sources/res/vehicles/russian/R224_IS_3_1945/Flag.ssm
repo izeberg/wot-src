@@ -2,24 +2,112 @@
 <root>
 	<params>
 		<param>
-			<name>isDeferred</name>
-			<type>bool</type>
-		</param>
-		<param>
 			<name>speed</name>
 			<type>float</type>
 		</param>
+		<param>
+			<name>isDeferred</name>
+			<type>bool</type>
+		</param>
 	</params>
 	<node>
-		<name>idle</name>
+		<name>Idle</name>
 		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Idle_01.seq</resource>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/0.seq</resource>
 		<isLoop>true</isLoop>
-		<loop>-1</loop>
+		<loop>1</loop>
 		<transition>
-			<to>speed_05</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>Idle Reset</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Idle-&gt;</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.100000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>0.100000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>44.500000 -412.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>1</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/1.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>1-&gt;Idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.100000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>0.100000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>1 Reset</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>1-&gt;2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.100000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>2.000000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-679.000000 -403.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Idle-&gt;</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F0.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
 				<condition>
 					<type>float</type>
 					<name>speed</name>
@@ -29,88 +117,147 @@
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_06</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>2</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
-					<type>float</type>
-					<name>speed</name>
-					<rangeStart>1.000000</rangeStart>
-					<rangeEnd>2.000000</rangeEnd>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
 				</condition>
-			</conditions>
-		</transition>
-		<transition>
-			<to>speed_07</to>
-			<blendDuration>0.500000</blendDuration>
-			<conditions>
 				<condition>
 					<type>float</type>
 					<name>speed</name>
 					<rangeStart>2.000000</rangeStart>
-					<rangeEnd>4.000000</rangeEnd>
+					<rangeEnd>3.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_08</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>3</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
 				<condition>
 					<type>float</type>
 					<name>speed</name>
-					<rangeStart>4.000000</rangeStart>
-					<rangeEnd>6.000000</rangeEnd>
+					<rangeStart>3.000000</rangeStart>
+					<rangeEnd>5.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_09</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>4</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
 				<condition>
 					<type>float</type>
 					<name>speed</name>
-					<rangeStart>6.000000</rangeStart>
-					<rangeEnd>8.000000</rangeEnd>
+					<rangeStart>5.000000</rangeStart>
+					<rangeEnd>7.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_10</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>5</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
 				<condition>
 					<type>float</type>
 					<name>speed</name>
-					<rangeStart>8.000000</rangeStart>
-					<rangeEnd>10.000000</rangeEnd>
+					<rangeStart>7.000000</rangeStart>
+					<rangeEnd>9.000000</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-145.500000 -213.500000 0.000000</uiPosition>
-	</node>
-	<node>
-		<name>speed_05</name>
-		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Speed5.seq</resource>
-		<isLoop>true</isLoop>
-		<loop>-1</loop>
 		<transition>
-			<to>speed_06</to>
-			<blendDuration>0.200000</blendDuration>
+			<to>6</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
 				<condition>
 					<type>float</type>
 					<name>speed</name>
-					<rangeStart>2.000000</rangeStart>
+					<rangeStart>9.000000</rangeStart>
 					<rangeEnd>inf</rangeEnd>
 				</condition>
 			</conditions>
 		</transition>
+		<uiPosition>-2.000000 -335.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>1-&gt;Idle</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F1.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
 		<transition>
-			<to>idle</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>Idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-326.000000 -425.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Idle Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/0.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Idle-&gt;</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>0.100000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-44.500000 -456.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Idle Reset</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F0.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Idle Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>15.000000 -491.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>1 Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/1.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>1-&gt;Idle</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -120,17 +267,83 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-394.000000 -104.000000 0.000000</uiPosition>
+		<transition>
+			<to>1-&gt;2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>2.000000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-714.500000 -432.500000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>speed_06</name>
+		<name>1 Reset</name>
 		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Speed6.seq</resource>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F1.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>1 Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-686.000000 -461.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>2 -&gt;1</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F2.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-585.000000 -324.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>2 Reset</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F2.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>2 Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-677.000000 -116.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>2 Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/2.seq</resource>
 		<isLoop>true</isLoop>
 		<loop>-1</loop>
 		<transition>
-			<to>speed_05</to>
-			<blendDuration>0.200000</blendDuration>
+			<to>2 -&gt;1</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -141,8 +354,8 @@
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_07</to>
-			<blendDuration>0.400000</blendDuration>
+			<to>2-&gt;3</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -152,17 +365,135 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-360.000000 -1.000000 0.000000</uiPosition>
+		<uiPosition>-672.500000 -146.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>speed_07</name>
+		<name>2</name>
 		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Speed7.seq</resource>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/2.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>2 Reset</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>2 -&gt;1</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.200000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>2.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>2-&gt;3</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.200000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>3.000000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-677.000000 -178.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>1-&gt;2</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F1.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-703.500000 -287.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>3</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/3.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>3 Reset</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>3-&gt;</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.100000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>3.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>3-&gt;4</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.100000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>5.000000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-223.500000 -74.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>3 Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/3.seq</resource>
 		<isLoop>true</isLoop>
 		<loop>-1</loop>
 		<transition>
-			<to>speed_06</to>
-			<blendDuration>0.400000</blendDuration>
+			<to>3-&gt;</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -173,8 +504,8 @@
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_08</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>3-&gt;4</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -184,17 +515,157 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-268.500000 79.500000 0.000000</uiPosition>
+		<uiPosition>-222.000000 -43.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>speed_08</name>
+		<name>3-&gt;</name>
 		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Speed8.seq</resource>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F3.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>2</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-500.500000 -30.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>3 Reset</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F3.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>3 Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-223.000000 -10.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>2-&gt;3</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F2.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>3</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-405.000000 -128.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>3-&gt;4</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F3.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>4</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>9.500000 -106.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>4-&gt;3</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F4.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>3</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>4.000000 4.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>4</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/4.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>4-&gt;3</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.400000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>5.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>4 Reset</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>4-&gt;5</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.400000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>7.000000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>255.000000 -71.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>4 Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/4.seq</resource>
 		<isLoop>true</isLoop>
 		<loop>-1</loop>
 		<transition>
-			<to>speed_07</to>
-			<blendDuration>0.500000</blendDuration>
+			<to>4-&gt;3</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -205,8 +676,8 @@
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_09</to>
-			<blendDuration>0.400000</blendDuration>
+			<to>4-&gt;5</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -216,17 +687,89 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>-12.500000 78.000000 0.000000</uiPosition>
+		<uiPosition>256.500000 -38.500000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>speed_09</name>
+		<name>4 Reset</name>
 		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Speed9.seq</resource>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F4.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>4 Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>260.000000 -3.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>4-&gt;5</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F4.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>5</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>392.000000 -162.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>5-&gt;4</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F5.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>4</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>498.500000 0.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>5 Reset</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F5.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>5 Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>642.000000 -103.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>5 Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/5.seq</resource>
 		<isLoop>true</isLoop>
 		<loop>-1</loop>
 		<transition>
-			<to>speed_08</to>
-			<blendDuration>0.300000</blendDuration>
+			<to>5-&gt;4</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -237,8 +780,8 @@
 			</conditions>
 		</transition>
 		<transition>
-			<to>speed_10</to>
-			<blendDuration>0.200000</blendDuration>
+			<to>5-&gt;6</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -248,17 +791,137 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>109.000000 -9.000000 0.000000</uiPosition>
+		<uiPosition>672.500000 -136.000000 0.000000</uiPosition>
 	</node>
 	<node>
-		<name>speed_10</name>
+		<name>5</name>
 		<type>sequence</type>
-		<resource>vehicles/russian/R224_IS_3_1945/Sequence/Speed10.seq</resource>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/5.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>5-&gt;4</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.500000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>7.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>5-&gt;6</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.500000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>9.000000</rangeStart>
+					<rangeEnd>inf</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>5 Reset</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>647.500000 -168.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>5-&gt;6</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F5.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>6</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>577.000000 -301.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>6-&gt;5</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F6.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>5</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>675.500000 -340.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>6</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/6.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>6 Reset</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>6-&gt;5</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>0.500000</exitOffset>
+				</condition>
+				<condition>
+					<type>float</type>
+					<name>speed</name>
+					<rangeStart>-inf</rangeStart>
+					<rangeEnd>9.000000</rangeEnd>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>604.500000 -483.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>6 Loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/6.seq</resource>
 		<isLoop>true</isLoop>
 		<loop>-1</loop>
 		<transition>
-			<to>speed_09</to>
-			<blendDuration>0.200000</blendDuration>
+			<to>6-&gt;5</to>
+			<blendDuration>0.000000</blendDuration>
 			<conditions>
 				<condition>
 					<type>float</type>
@@ -268,6 +931,24 @@
 				</condition>
 			</conditions>
 		</transition>
-		<uiPosition>110.000000 -129.000000 0.000000</uiPosition>
+		<uiPosition>663.000000 -451.500000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>6 Reset</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R224_IS_3_1945/Sequence/F6.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>6 Loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>607.000000 -423.500000 0.000000</uiPosition>
 	</node>
 </root>

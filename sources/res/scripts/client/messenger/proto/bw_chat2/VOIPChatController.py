@@ -182,6 +182,9 @@ class VOIPChatController(IVOIPChatController):
         if arenaBonusType == ARENA_BONUS_TYPE.COMP7:
             cls.__showComp7Message(enable)
             return
+        if arenaBonusType == ARENA_BONUS_TYPE.RANKED:
+            cls.__showRankedMessage(enable)
+            return
         if enable:
             msg = backport.text(R.strings.messenger.client.dynSquad.enableVOIP())
         else:
@@ -200,3 +203,11 @@ class VOIPChatController(IVOIPChatController):
         else:
             msg = backport.text(R.strings.messenger.client.COMP7.disableVOIP(), keyName=getReadableKey(CommandMapping.CMD_VOICECHAT_ENABLE))
         g_messengerEvents.onComp7VOIPNotificationReceived(ClientActionMessage(msg=msg, type_=ACTION_MESSAGE_TYPE.PLAYER if enable else ACTION_MESSAGE_TYPE.WARNING))
+
+    @staticmethod
+    def __showRankedMessage(enable):
+        if enable:
+            msg = backport.text(R.strings.messenger.client.dynSquad.enableVOIP())
+        else:
+            msg = backport.text(R.strings.messenger.client.COMP7.disableVOIP(), keyName=getReadableKey(CommandMapping.CMD_VOICECHAT_ENABLE))
+        g_messengerEvents.onRankedVOIPNotificationReceived(ClientActionMessage(msg=msg, type_=ACTION_MESSAGE_TYPE.PLAYER if enable else ACTION_MESSAGE_TYPE.WARNING))

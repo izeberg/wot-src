@@ -16,9 +16,19 @@ package net.wg.gui.lobby.hangar.quests
       private static const SIZE:int = 256;
       
       private static const SIZE_SMALL:int = 255;
+      
+      private static const VISIBLE_SIZE_HEIGHT:int = 135;
+      
+      private static const VISIBLE_SMALL_SIZE_HEIGHT:int = 105;
+      
+      private static const VISIBLE_SMALL_SIZE_CHOSEN_HEIGHT:int = 117;
+      
+      private static const VISIBLE_SIZE_CHOSEN_HEIGHT:int = 153;
        
       
       private var _isSmall:Boolean = false;
+      
+      private var _isChapterChosen:Boolean = false;
       
       public function BattlePassEntryPoint()
       {
@@ -65,6 +75,12 @@ package net.wg.gui.lobby.hangar.quests
          super.onDispose();
       }
       
+      public function as_isChapterChosen(param1:Boolean) : void
+      {
+         this._isChapterChosen = param1;
+         invalidateSize();
+      }
+      
       private function setIsSmallSize(param1:Boolean) : void
       {
          var _loc2_:int = 0;
@@ -89,6 +105,15 @@ package net.wg.gui.lobby.hangar.quests
       override public function get marginLeft() : int
       {
          return !!this._isSmall ? int(BP_ENTRY_POINT_OUTER_MARGIN_SMALL_X) : int(BP_ENTRY_POINT_OUTER_MARGIN_X);
+      }
+      
+      override public function get visibleHeight() : int
+      {
+         if(this._isChapterChosen)
+         {
+            return !!this._isSmall ? int(VISIBLE_SMALL_SIZE_CHOSEN_HEIGHT) : int(VISIBLE_SIZE_CHOSEN_HEIGHT);
+         }
+         return !!this._isSmall ? int(VISIBLE_SMALL_SIZE_HEIGHT) : int(VISIBLE_SIZE_HEIGHT);
       }
       
       private function onStageResizeHandler(param1:Event) : void

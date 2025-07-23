@@ -16,5 +16,7 @@ package net.wg.gui.lobby.hangar.quests
       function get marginLeft() : int;
       
       function get marginTop() : int;
+      
+      function get visibleHeight() : int;
    }
 }

@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -39,15 +39,15 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0087_Wires_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.127293 0.004664 0.206729</groupOrigin>
+				<groupOrigin>0.127401 0.004677 0.206808</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-7.380583 -0.404815 -17.304720</min>
-		<max>7.635168 0.690698 17.718178</max>
+		<min>-7.387166 -0.404816 -17.311749</min>
+		<max>7.641968 0.690695 17.725365</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>108544</geometrySize>
-	<minUVDensity>225.882172</minUVDensity>
+	<geometrySize>147232</geometrySize>
+	<minUVDensity>133.836334</minUVDensity>
 </root>

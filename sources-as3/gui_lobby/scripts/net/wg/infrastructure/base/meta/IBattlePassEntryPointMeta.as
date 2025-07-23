@@ -7,5 +7,7 @@ package net.wg.infrastructure.base.meta
        
       
       function setIsSmallS(param1:Boolean) : void;
+      
+      function as_isChapterChosen(param1:Boolean) : void;
    }
 }

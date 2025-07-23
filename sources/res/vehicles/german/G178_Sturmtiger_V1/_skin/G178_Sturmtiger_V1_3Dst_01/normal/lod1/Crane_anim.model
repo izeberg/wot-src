@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G178_Sturmtiger_V1/_skin/G178_Sturmtiger_V1_3Dst_01/normal/lod1/Crane_anim</nodefullVisual>
+	<parent>vehicles/german/G178_Sturmtiger_V1/_skin/G178_Sturmtiger_V1_3Dst_01/normal/lod2/Crane_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>0.256868 1.148043 -1.178516</min>
+		<max>1.358761 2.467544 -0.096493</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

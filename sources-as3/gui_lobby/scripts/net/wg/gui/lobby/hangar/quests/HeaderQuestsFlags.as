@@ -103,6 +103,10 @@ package net.wg.gui.lobby.hangar.quests
       
       private var _secondaryEntryPointRight:IHeaderSecondaryWidget = null;
       
+      private var _noEntryPointLeftMargin:int = 0;
+      
+      private var _noEntryPointRightMargin:int = 0;
+      
       public function HeaderQuestsFlags()
       {
          super();
@@ -754,6 +758,16 @@ package net.wg.gui.lobby.hangar.quests
          }
       }
       
+      public function set noEntryPointLeftMargin(param1:int) : void
+      {
+         this._noEntryPointLeftMargin = param1;
+      }
+      
+      public function set noEntryPointRightMargin(param1:int) : void
+      {
+         this._noEntryPointRightMargin = param1;
+      }
+      
       private function get entryPointWidth() : int
       {
          return Boolean(this._entryPoint) ? int(this._entryPoint.width) : int(0);
@@ -761,12 +775,12 @@ package net.wg.gui.lobby.hangar.quests
       
       private function get entryPointMarginRight() : int
       {
-         return Boolean(this._entryPoint) ? int(this._entryPoint.marginRight) : int(0);
+         return Boolean(this._entryPoint) ? int(this._entryPoint.marginRight) : int(this._noEntryPointRightMargin);
       }
       
       private function get entryPointMarginLeft() : int
       {
-         return Boolean(this._entryPoint) ? int(this._entryPoint.marginLeft) : int(0);
+         return Boolean(this._entryPoint) ? int(this._entryPoint.marginLeft) : int(this._noEntryPointLeftMargin);
       }
       
       private function get entryPointMarginTop() : int

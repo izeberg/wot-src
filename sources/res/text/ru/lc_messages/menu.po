@@ -688,6 +688,9 @@ msgstr "Линия фронта"
 msgid "bonusType/29"
 msgstr "«Стальной охотник»"
 
+msgid "bonusType/30"
+msgstr "«Стальной охотник» (взвод)"
+
 msgid "bonusType/32"
 msgstr "«Битва блогеров»"
 
@@ -1112,6 +1115,9 @@ msgstr "Разведка боем: создать взвод"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Отправить сообщение"
+
+msgid "contextMenu/createRankedSquad"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "contextMenu/createSquad"
 msgstr "Создать взвод"
@@ -2478,6 +2484,9 @@ msgstr "Подробный отчёт"
 msgid "finalStatistic/tabs/epicStats"
 msgstr "Личный результат"
 
+msgid "finalStatistic/tabs/postbattleExtraTab"
+msgstr "Праздничная почта"
+
 msgid "finalStatistic/tabs/teamStats"
 msgstr "Командный результат"
 
@@ -3157,6 +3166,9 @@ msgstr ""
 
 msgid "headerButtons/battle/types/rankedLeave/descr"
 msgstr "Выйти из боя"
+
+msgid "headerButtons/battle/types/rankedSquad"
+msgstr "Создать взвод для Рангового боя"
 
 msgid "headerButtons/battle/types/rts"
 msgstr "Искусство стратегии"
@@ -4188,15 +4200,15 @@ msgstr "Подробнее"
 msgid "login/server"
 msgstr "Сервер и пинг (мс):"
 
+msgid "login/social/status/LGC_ERROR"
+msgstr ""
+"При авторизации произошла ошибка. Пожалуйста, введите электронную почту и "
+"пароль."
+
 msgid "login/social/status/SYSTEM_ERROR"
 msgstr ""
 "Ошибка авторизации через соц.сеть или Леста ID. Попробуйте стандартный "
 "способ входа, используя логин и пароль."
-
-msgid "login/social/status/WGC_ERROR"
-msgstr ""
-"При авторизации произошла ошибка. Пожалуйста, введите электронную почту и "
-"пароль."
 
 msgid "login/social/warning/SOCIAL_NETWORK_LOGOUT"
 msgstr ""
@@ -4226,6 +4238,11 @@ msgid "login/status/DNS_LOOKUP_FAILED"
 msgstr ""
 "Не удаётся установить соединение с сервером.\n"
 "Возможно, сервер недоступен или требуется проверка настроек сетевого подключения."
+
+msgid "login/status/LGC_LOGOUT"
+msgstr ""
+"Вы вышли из аккаунта %(userName)s. Для входа в игру введите электронную "
+"почту и пароль."
 
 msgid "login/status/LOGIN_BAD_PROTOCOL_VERSION"
 msgstr "Требуется обновление клиентского приложения."
@@ -4352,11 +4369,6 @@ msgstr "Ошибка авторизации. Нажмите «Войти», чт
 
 msgid "login/status/UNKNOWN_ERROR"
 msgstr "Возникла нераспознанная ошибка."
-
-msgid "login/status/WGC_LOGOUT"
-msgstr ""
-"Вы вышли из аккаунта %(userName)s. Для входа в игру введите электронную "
-"почту и пароль."
 
 msgid "login/status/accessForbiddenToPeriphery"
 msgstr ""
@@ -4525,6 +4537,16 @@ msgstr "Огнемётная безмагазинная система"
 
 msgid "moduleInfo/clipDualGunLabel"
 msgstr "Спаренная установка с системой заряжания"
+
+msgid "moduleInfo/clipDualGunWithAutoloadWithClipLabel"
+msgstr ""
+"Спаренная установка с системой заряжания.\n"
+"Снаряды заряжаются в орудия вместе с зарядкой магазина."
+
+msgid "moduleInfo/clipDualGunWithoutResetReloadAndWithAutoloadWithClipLabel"
+msgstr ""
+"Спаренная установка с системой заряжания.\n"
+"Снаряды заряжаются в орудия вместе с зарядкой магазина. Процесс заряжания одного орудия не прерывается во время выстрела из другого."
 
 msgid "moduleInfo/clipDualGunWithoutResetReloadLabel"
 msgstr ""
@@ -5141,19 +5163,19 @@ msgstr ""
 "за каждый бой"
 
 msgid "premium/buyMessage"
-msgstr "Купить Премиум аккаунт"
+msgstr "Купить Танковый премиум аккаунт"
 
 msgid "premium/buyTitle"
-msgstr "Покупка Премиум аккаунта"
+msgstr "Покупка Танкового премиум аккаунта"
 
 msgid "premium/cancel"
 msgstr "Отменить"
 
 msgid "premium/continueMessage"
-msgstr "Продлить Премиум аккаунт"
+msgstr "Продлить Танковый премиум аккаунт"
 
 msgid "premium/continueTitle"
-msgstr "Продление Премиум аккаунта"
+msgstr "Продление Танкового премиум аккаунта"
 
 msgid "premium/gold"
 msgstr "золота"
@@ -5355,7 +5377,7 @@ msgid "profile/premiumBuy"
 msgstr "Купить премиум"
 
 msgid "profile/premiumContinue"
-msgstr "Продлить Премиум аккаунт"
+msgstr "Продлить Танковый премиум аккаунт"
 
 msgid "profile/premiunExpirationDate"
 msgstr "Истекает %s"

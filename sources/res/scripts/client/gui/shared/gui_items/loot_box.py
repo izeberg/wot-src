@@ -88,7 +88,7 @@ _BONUS_GROUPS = {BonusGroup.VEHICLE: ipTypeGroup.VEHICLE,
                                     ipType.PLAYER_BADGE, ipType.CUSTOM_DOG_TAG), 
    BonusGroup.FEATUREITEMS: (
                            ipType.CUSTOM_COLLECTION_ENTITLEMENT, ipType.CUSTOM_ANY_COLLECTION_ITEM,
-                           ipType.CUSTOM_LOOTBOX, ipType.CUSTOM_LOOTBOXKEY)}
+                           ipType.CUSTOM_LOOTBOX, ipType.CUSTOM_LOOTBOXKEY, ipType.ENTITLEMENTS)}
 _GROUP_PRIORITIES = [
  BonusGroup.LOOTBOX_STAGE_ROTATION, BonusGroup.VEHICLE, BonusGroup.PREMIUM, BonusGroup.CURRENCY,
  BonusGroup.VEHICLECUSTOMIZATIONS, BonusGroup.CREW, BonusGroup.BOOSTERS, BonusGroup.EQUIPMENTS,
@@ -111,7 +111,7 @@ class LootBox(GUIItem):
                  '__userNameKey', '__iconName', '__description', '__videoKey', '__weight',
                  '__bonusGroups', '__autoOpenTime', '__rotationLists', '__config',
                  '__rotationStage', '__tags', '__unlockKeys', '__manualMaxOpenCount',
-                 '__lootBoxInfoPageURL')
+                 '__lootBoxInfoPageURL', '__lootBoxShopURL')
 
     def __init__(self, lootBoxID, lootBoxConfig, invCount):
         super(LootBox, self).__init__()
@@ -145,6 +145,9 @@ class LootBox(GUIItem):
 
     def isExtendedTooltip(self):
         return ClientLootBoxTags.EXTENDED_TOOLTIP.value in self.__tags
+
+    def isTagExist(self, tag):
+        return tag in self.__tags
 
     def isVisible(self):
         return ClientLootBoxTags.HIDDEN.value not in self.__tags
@@ -218,6 +221,11 @@ class LootBox(GUIItem):
     def getLootBoxInfoPageURL(self):
         if self.__lootBoxInfoPageURL:
             return self.__lootBoxInfoPageURL
+        return ''
+
+    def getLootBoxShopURL(self):
+        if self.__lootBoxShopURL:
+            return self.__lootBoxShopURL
         return ''
 
     def getCategory(self):
@@ -318,6 +326,7 @@ class LootBox(GUIItem):
         self.__videoKey = assetsConfig.get('video', '')
         self.__tags = assetsConfig.get('tags', set())
         self.__lootBoxInfoPageURL = assetsConfig.get('lootBoxInfoPageURL', '')
+        self.__lootBoxShopURL = assetsConfig.get('lootBoxShopURL', '')
         self.__unlockKeys = lootBoxConfig.get('unlockKeys', set())
         self.__manualMaxOpenCount = lootBoxConfig.get('manualMaxOpenCount')
         return

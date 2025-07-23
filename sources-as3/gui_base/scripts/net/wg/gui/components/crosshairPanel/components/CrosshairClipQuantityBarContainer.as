@@ -1,14 +1,15 @@
 package net.wg.gui.components.crosshairPanel.components
 {
    import flash.utils.getDefinitionByName;
-   import net.wg.infrastructure.base.SimpleContainer;
    
-   public class CrosshairClipQuantityBarContainer extends SimpleContainer
+   public class CrosshairClipQuantityBarContainer extends ClipQuantityIndicator
    {
       
       private static const MEDIUM_LIMIT:int = 31;
       
       private static const HEAVY_LIMIT:int = 13;
+      
+      private static const HEAVY_MB_LIMIT:int = 19;
       
       private static const LIGHT_CLIP_QUANTITY_BAR_TOTAL_FRAMES:int = 100;
       
@@ -16,11 +17,15 @@ package net.wg.gui.components.crosshairPanel.components
       
       private static const HEAVY_CLIP_QUANTITY_BAR_TOTAL_FRAMES:int = 13;
       
+      private static const HEAVY_CLIP_QUANTITY_BAR_MB_TOTAL_FRAMES:int = 19;
+      
       public static const TYPE_LIGHT:String = "ClipQuantityBarLightUI";
       
       public static const TYPE_MEDIUM:String = "ClipQuantityBarMediumUI";
       
       public static const TYPE_HEAVY:String = "ClipQuantityBarHeavyUI";
+      
+      public static const TYPE_HEAVY_MB:String = "ClipQuantityBarHeavyMbUI";
       
       private static const CLIP_CAPACITY_VALIDATION:String = "clipCapacityInvalid";
       
@@ -30,6 +35,8 @@ package net.wg.gui.components.crosshairPanel.components
       public var isUseFrameAnimation:Boolean = true;
       
       private var _clipCapacity:Number = -1;
+      
+      private var _multipleBarrel:Boolean = false;
       
       private var _burst:Number = -1;
       
@@ -44,6 +51,25 @@ package net.wg.gui.components.crosshairPanel.components
       public function CrosshairClipQuantityBarContainer()
       {
          super();
+      }
+      
+      override public function setClipsParam(param1:Number, param2:Number, param3:Boolean) : void
+      {
+         if(this._clipCapacity != param1 || this._burst != param2)
+         {
+            this._clipCapacity = param1;
+            this._burst = param2;
+            this._multipleBarrel = param3;
+            invalidate(CLIP_CAPACITY_VALIDATION);
+         }
+      }
+      
+      override public function updateInfo(param1:Number, param2:String, param3:Boolean) : void
+      {
+         this._quantityInClip = param1;
+         this._clipState = param2;
+         this._isReloaded = param3;
+         invalidate(CLIP_INFO_VALIDATION);
       }
       
       override protected function onDispose() : void
@@ -62,6 +88,7 @@ package net.wg.gui.components.crosshairPanel.components
          var mode:String = null;
          var clipTotalFrames:int = 0;
          var metric:Number = NaN;
+         var heavyClipQuantityBarTotalFrames:int = 0;
          var viewClass:Class = null;
          super.draw();
          if(isInvalid(CLIP_CAPACITY_VALIDATION))
@@ -82,18 +109,19 @@ package net.wg.gui.components.crosshairPanel.components
                {
                   metric = Math.ceil(this._clipCapacity / this._burst);
                }
-               if(metric < HEAVY_LIMIT)
+               if(metric < this._multipleBarrel ? Boolean(HEAVY_MB_LIMIT) : Boolean(HEAVY_LIMIT))
                {
-                  viewType = TYPE_HEAVY;
+                  viewType = !!this._multipleBarrel ? TYPE_HEAVY_MB : TYPE_HEAVY;
+                  heavyClipQuantityBarTotalFrames = !!this._multipleBarrel ? int(HEAVY_CLIP_QUANTITY_BAR_MB_TOTAL_FRAMES) : int(HEAVY_CLIP_QUANTITY_BAR_TOTAL_FRAMES);
                   if(this._burst > 1)
                   {
                      mode = CrosshairClipQuantityBar.MODE_QUEUE;
-                     clipTotalFrames = Math.min(metric + 1,HEAVY_CLIP_QUANTITY_BAR_TOTAL_FRAMES);
+                     clipTotalFrames = Math.min(metric + 1,heavyClipQuantityBarTotalFrames);
                   }
                   else
                   {
                      mode = CrosshairClipQuantityBar.MODE_AMMO;
-                     clipTotalFrames = Math.min(this._clipCapacity + 1,HEAVY_CLIP_QUANTITY_BAR_TOTAL_FRAMES);
+                     clipTotalFrames = Math.min(this._clipCapacity + 1,heavyClipQuantityBarTotalFrames);
                   }
                }
                else if(metric < MEDIUM_LIMIT)
@@ -128,24 +156,6 @@ package net.wg.gui.components.crosshairPanel.components
          {
             this._currBar.updateInfo(this._quantityInClip,this._clipState,this._isReloaded);
          }
-      }
-      
-      public function setClipsParam(param1:Number, param2:Number) : void
-      {
-         if(this._clipCapacity != param1 || this._burst != param2)
-         {
-            this._clipCapacity = param1;
-            this._burst = param2;
-            invalidate(CLIP_CAPACITY_VALIDATION);
-         }
-      }
-      
-      public function updateInfo(param1:Number, param2:String, param3:Boolean) : void
-      {
-         this._quantityInClip = param1;
-         this._clipState = param2;
-         this._isReloaded = param3;
-         invalidate(CLIP_INFO_VALIDATION);
       }
    }
 }

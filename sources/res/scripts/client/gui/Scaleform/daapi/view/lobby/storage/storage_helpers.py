@@ -103,6 +103,9 @@ def getStorageItemDescr(item):
             if item.isCrewBooster():
                 desc = item.shortDescriptionSpecial
                 return text_styles.main(desc)
+            if item.isEconomicBooster():
+                desc = item.shortDescriptionSpecial
+                return text_styles.main(desc)
             return text_styles.main(item.getOptDeviceBoosterDescription(None, text_styles.bonusAppliedText))
         if itemType == GUI_ITEM_TYPE.OPTIONALDEVICE:
             return OptDeviceBonusesDescriptionBuilder().getEffectDescription(item)

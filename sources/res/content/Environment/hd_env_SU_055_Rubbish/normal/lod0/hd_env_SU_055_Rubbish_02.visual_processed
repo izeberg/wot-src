@@ -64,39 +64,20 @@
 				1
 				<material>
 					<identifier>n_stone0</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>128</collisionFlags>
 					<materialKind>73</materialKind>
 					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
 					<property>
 						g_detailInfluences
-						<Vector4>
-							0.5 0.5 1 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.500000 0.500000 1.000000 1.000000</Vector4>
 					</property>
 					<property>
 						g_detailRejectTiling
-						<Vector4>1 1 3 3</Vector4>
-					</property>
-					<property>
-						alphaReference
-						<Int>0</Int>
+						<Vector4>1.000000 1.000000 3.000000 3.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
 					</property>
 					<property>
 						g_detailMap

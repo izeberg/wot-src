@@ -493,6 +493,8 @@ package
       
       public static const SHELLS_KINDS_ARMOR_PIERCING:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING";
       
+      public static const SHELLS_KINDS_DELAYED_HE:String = "#ingame_gui:shells_kinds/DELAYED_HE";
+      
       public static const SHELLS_KINDS_ARMOR_PIERCING_HE:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_HE";
       
       public static const SHELLS_KINDS_ARMOR_PIERCING_CR:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_CR";
@@ -1300,6 +1302,8 @@ package
       public static const DAMAGELOG_SHELLTYPE_HIGH_EXPLOSIVE:String = "#ingame_gui:damageLog/shellType/HIGH_EXPLOSIVE";
       
       public static const DAMAGELOG_SHELLTYPE_FLAME:String = "#ingame_gui:damageLog/shellType/FLAME";
+      
+      public static const DAMAGELOG_SHELLTYPE_DELAYED_HE:String = "#ingame_gui:damageLog/shellType/DELAYED_HE";
       
       public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING_HE:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING_HE";
       

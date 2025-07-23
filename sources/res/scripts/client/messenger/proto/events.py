@@ -134,7 +134,7 @@ class _MessengerEvents(object):
     __slots__ = ('__channels', '__users', '__serviceChannel', '__voip', '__shadow',
                  '__eventManager', 'onErrorReceived', 'onWarningReceived', 'onPluginConnected',
                  'onPluginDisconnected', 'onPluginConnectFailed', 'onLockPopUpMessages',
-                 'onUnlockPopUpMessages', 'onComp7VOIPNotificationReceived')
+                 'onUnlockPopUpMessages', 'onComp7VOIPNotificationReceived', 'onRankedVOIPNotificationReceived')
 
     def __init__(self):
         super(_MessengerEvents, self).__init__()
@@ -147,6 +147,7 @@ class _MessengerEvents(object):
         self.onErrorReceived = Event.Event(self.__eventManager)
         self.onWarningReceived = Event.Event(self.__eventManager)
         self.onComp7VOIPNotificationReceived = Event.Event(self.__eventManager)
+        self.onRankedVOIPNotificationReceived = Event.Event(self.__eventManager)
         self.onPluginConnected = Event.Event(self.__eventManager)
         self.onPluginDisconnected = Event.Event(self.__eventManager)
         self.onPluginConnectFailed = Event.Event(self.__eventManager)

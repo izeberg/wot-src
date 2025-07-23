@@ -355,6 +355,8 @@ package
       
       public static const FIREFIGHTING_ALT_INFO:String = "#crew_perks:fireFighting/alt/info";
       
+      public static const SINGLEONVEHCILE_ALERTDESCRIPTION:String = "#crew_perks:singleOnVehcile/alertDescription";
+      
       public static const PERKROLE_COMMON:String = "#crew_perks:perkRole/common";
       
       public static const PERKROLE_COMMANDER:String = "#crew_perks:perkRole/commander";

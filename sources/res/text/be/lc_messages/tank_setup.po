@@ -152,6 +152,12 @@ msgstr "Абсталяванне для {name}"
 msgid "dealPanel/autoRenew"
 msgstr "Аўтапапаўненне"
 
+msgid "dealPanel/autoRenewType/hard"
+msgstr "Дакупаць аўтаматычна"
+
+msgid "dealPanel/autoRenewType/soft"
+msgstr "Толькі са Склада"
+
 msgid "dealPanel/button/apply"
 msgstr "Прымяніць"
 
@@ -691,11 +697,22 @@ msgstr "боны"
 msgid "introduction/currency/modernized"
 msgstr "кампаненты"
 
+msgid "introduction/directives/showButton"
+msgstr "Паказаць эканамічныя настаўленні"
+
+msgid "introduction/equipments/showButton"
+msgstr "Паказаць абсталяванне"
+
 msgid "introduction/message/deluxe"
 msgstr ""
 "Гэтае абсталяванне можна купіць за %(currencyName)s (%(currencyIcon)s). "
 "Таксама яго можна атрымаць ва ўзнагароду за пэўныя гульнёвыя дасягненні і "
 "падзеі."
+
+msgid "introduction/message/economic"
+msgstr ""
+"Усталюйце прыдатнае настаўленне і ўступіце з ім у бой. Па выніках бою "
+"заробак будзе павялічаны, а настаўленне спішацца."
 
 msgid "introduction/message/modernized"
 msgstr ""
@@ -711,9 +728,6 @@ msgstr ""
 "абсталявання, але можа быць палепшаная за срэбра. Трафейнае абсталяванне "
 "нельга набыць за гульнявую валюту, але можна атрымаць ва ўзнагароду за "
 "пэўныя падзеі."
-
-msgid "introduction/showButton"
-msgstr "Паказаць абсталяванне"
 
 msgid "introduction/slide/1/description"
 msgstr ""
@@ -805,6 +819,9 @@ msgstr "«Мокрая» боеўкладка"
 
 msgid "introduction/title/withEquipments/deluxe"
 msgstr "Удасканаленае абсталяванне"
+
+msgid "introduction/title/withEquipments/economic"
+msgstr "Эканамічныя настаўленні"
 
 msgid "introduction/title/withEquipments/modernized"
 msgstr "Эксперыментальнае абсталяванне"
@@ -2015,6 +2032,9 @@ msgstr "Па экіпажы"
 msgid "tabs/deluxe"
 msgstr "Удасканаленае"
 
+msgid "tabs/economic"
+msgstr "Эканамічныя"
+
 msgid "tabs/modernized"
 msgstr "Эксперыментальнае"
 
@@ -2029,9 +2049,7 @@ msgstr "Трафейнае"
 
 msgid "tooltip/autoRenewal/body/boosters"
 msgstr ""
-"Настаўленне будзе выконвацца аўтаматычная пасля вяртання машыны з бою. "
-"Папаўненне ідзе са Склада пры наяўнасці запасу настаўленняў або за валюту "
-"гульні."
+"Настаўленне будзе выконвацца аўтаматычная пасля вяртання машыны з бою."
 
 msgid "tooltip/autoRenewal/body/consumables"
 msgstr ""
@@ -2047,6 +2065,23 @@ msgid "tooltip/autoRenewal/body/shells"
 msgstr ""
 "Боекамплект будзе папаўняцца аўтаматычна (калі гэта неабходна) пасля "
 "вяртання машыны з бою."
+
+msgid "tooltip/autoRenewal/dropdown/body/hard"
+msgstr ""
+"Папаўненне ідзе са Склада пры наяўнасці настаўленняў. Пры адсутнасці "
+"настаўленняў на Складзе яны будуць аўтаматычна дакупацца за гульнявую "
+"валюту."
+
+msgid "tooltip/autoRenewal/dropdown/body/soft"
+msgstr ""
+"Папаўненне ідзе са Склада пры наяўнасці настаўленняў. Пры адсутнасці "
+"настаўленняў на Складзе слот застаецца пустым."
+
+msgid "tooltip/autoRenewal/dropdown/header/hard"
+msgstr "Дакупаць тыя, якіх не стае"
+
+msgid "tooltip/autoRenewal/dropdown/header/soft"
+msgstr "Толькі са Склада"
 
 msgid "tooltip/autoRenewal/header/general"
 msgstr "Папаўняць аўтаматычна"

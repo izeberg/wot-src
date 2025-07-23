@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB133_Cyclone_Mk_2/normal/lod2/Turret_02</nodefullVisual>
+	<parent>vehicles/british/GB133_Cyclone_Mk_2/normal/lod3/Turret_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.436769 -0.000291 -2.610289</min>
+		<max>1.358863 2.002979 1.254989</max>
+	</visibilityBox>
+</root>

@@ -10,11 +10,6 @@
 		<GameObject>
 			<name>Curtain_anim</name>
 			<UUID>99addc6e-4026-42ad-8b46-670b22751d84</UUID>
-			<flags>8</flags>
-		</GameObject>
-		<GameObject>
-			<name>Curtain_folded</name>
-			<UUID>708a536a-1c07-4e58-926f-1f29e629736a</UUID>
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
@@ -39,16 +34,6 @@
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>aa3bb4c6-dcaa-4b48-8be3-e8e4a2c114a5</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -115,24 +100,6 @@
 					</property>
 				</config>
 			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>0 0 0</value>
-					</property>
-				</config>
-			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Animator</type>
@@ -153,7 +120,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>vehicles/russian/R223_T_54B_1958/Sequence/Curtain_01.seq</value>
+										<value>vehicles/russian/R223_T_54B_1958/Sequence/Cloth_Anim.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -207,7 +174,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/russian/R223_T_54B_1958/Sequence/Curtain_01.seq</value>
+						<value>vehicles/russian/R223_T_54B_1958/Sequence/Cloth_Anim.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -331,56 +298,6 @@
 					</property>
 				</config>
 			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>EdgeDrawerComponent</type>
@@ -413,20 +330,6 @@
 					</property>
 				</config>
 			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>triggerSource</name>
-						<link>00000000-0000-0000-0000-000000000001</link>
-					</property>
-					<property>
-						<name>isAnimated</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -438,7 +341,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/russian/R223_T_54B_1958/normal/lod0/Curtain_anim_01.model</value>
+						<value>vehicles/russian/R223_T_54B_1958/normal/lod0/R223_T_54B_1958_anim_Fin.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -448,21 +351,6 @@
 			</component>
 			<component>
 				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>vehicles/russian/R223_T_54B_1958/normal/lod0/Curtain_02.model</value>
-					</property>
-					<property>
-						<name>Cast Shadows</name>
-						<value>0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
 				<flags>3</flags>
 				<config>
 					<property>

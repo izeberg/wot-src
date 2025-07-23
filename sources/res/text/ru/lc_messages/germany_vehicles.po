@@ -357,6 +357,9 @@ msgstr "Pz.VI Ausf. E"
 msgid "Chassis_G182_Mausekonig"
 msgstr "Mausekönig"
 
+msgid "Chassis_G189_E100_02"
+msgstr "E 100"
+
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
 
@@ -2278,16 +2281,16 @@ msgstr "Sturmtiger"
 
 msgid "G178_Sturmtiger_V1_descr"
 msgstr ""
-"Опыт использования штурмовых орудий в Сталинграде показал, что для разрушения мощных фортификационных сооружений 150-мм орудия на базе Pz.Kpfw.IV не всегда бывало достаточно и что требуется создание машины на шасси тяжёлого танка. В мае 1943 фирма Alkett предложила концепцию штурмовой мортиры на базе тяжёлого танка Pz.Kpfw.Tiger Ausf.E, вооружённой 380-мм реактивным корабельным бомбометом 38cm Raketenwerfer 61. Первый образец был изготовлен осенью 1943 года и получил обозначение 38cm RW61 auf Sturmmörser. По сравнению с исходным танком боевая масса САУ выросла на несколько тонн. Всего было изготовлено 18 установок, неофициально прозванных Sturmtiger. Для постройки использовались шасси танков, доставленных для ремонта, поэтому все установки немного отличались друг от друга. Кроме того, машины постоянно дорабатывались. Готовые САУ свели в роты (батареи) штурмовых мортир. Всего за август-октябрь 1944 года было сформировано 3 роты с номерами: 1000, 1001 и 1002. В боях Sturmtiger применялись, начиная с августа 1944 при подавления Варшавского восстания, но наиболее интенсивно использовались на Западном фронте.\n"
+"Опыт использования штурмовых орудий в Сталинграде показал, что для разрушения мощных фортификационных сооружений 150-мм орудия на базе Pz.Kpfw.IV не всегда бывало достаточно, и что требуется создание машины на шасси тяжёлого танка. В мае 1943 фирма Alkett предложила концепцию штурмовой мортиры на базе тяжёлого танка Pz.Kpfw.Tiger Ausf.E, вооружённой 380-мм реактивным корабельным бомбометом 38cm Raketenwerfer 61. Первый образец был изготовлен осенью 1943 года и получил обозначение 38cm RW61 auf Sturmmörser. По сравнению с исходным танком боевая масса САУ выросла на несколько тонн. Всего было изготовлено 18 установок, неофициально прозванных Sturmtiger. Для постройки использовались шасси танков, доставленных для ремонта, поэтому все установки немного отличались друг от друга. Кроме того, машины постоянно дорабатывались. Готовые САУ свели в роты (батареи) штурмовых мортир. Всего за август-октябрь 1944 года было сформировано 3 роты с номерами: 1000, 1001 и 1002. В боях Sturmtiger применялись, начиная с августа 1944 при подавления Варшавского восстания, но наиболее интенсивно использовались на Западном фронте.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
 msgid "G178_Sturmtiger_V1_long_special"
 msgstr ""
-"Мощная штурмовая САУ с огромным 380-мм орудием, способным одним выстрелом "
-"отправить вражеский танк в ангар. Однако низкая мобильность и долгая "
-"перезарядка делают его уязвимым в ближнем бою, поэтому тактика игры строится"
-" вокруг поддержки союзников и точных выстрелов с дальних дистанций. "
+"Уникальная ПТ-САУ поддержки с огромным 380-мм орудием, способным одним "
+"выстрелом отправить танк противника на слом. Однако низкая мобильность и "
+"долгая перезарядка делают эту машину уязвимой в ближнем бою, поэтому тактика"
+" игры строится вокруг поддержки союзников и выстрелов с дальних дистанций. "
 "Идеальный выбор для тех, кто любит наносить сокрушительные удары и менять "
 "ход боя одним снарядом."
 
@@ -2295,7 +2298,7 @@ msgid "G178_Sturmtiger_V1_short"
 msgstr "Sturmtiger"
 
 msgid "G178_Sturmtiger_V1_short_special"
-msgstr "Огромный калибр, высокий разовый урон, слабая мобильность"
+msgstr "Огромный калибр, высокий разовый урон"
 
 msgid "G182_Mausekonig"
 msgstr "Mausekönig"
@@ -2313,6 +2316,24 @@ msgid "G182_Mausekonig_short"
 msgstr "Mausekönig"
 
 msgid "G182_Mausekonig_short_special"
+msgstr "?empty?"
+
+msgid "G189_E100_02"
+msgstr "E 100 Test"
+
+msgid "G189_E100_02_descr"
+msgstr ""
+"В июне 1943 года компания Adlerwerke получила заказ на разработку танка E 100. Однако в 1944 году все работы над тяжёлыми танками были прекращены. К концу войны было изготовлено шасси прототипа, захваченное впоследствии британской армией.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G189_E100_02_long_special"
+msgstr "?empty?"
+
+msgid "G189_E100_02_short"
+msgstr "E 100 (T)"
+
+msgid "G189_E100_02_short_special"
 msgstr "?empty?"
 
 msgid "G20_Marder_II"
@@ -3344,6 +3365,12 @@ msgstr "Maybach HL 295 (A)"
 msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
 
+msgid "Maybach_HL_234P60_02"
+msgstr "Maybach Neues Projekt"
+
+msgid "Maybach_HL_234P60_02_short"
+msgstr "Maybach Neues Projekt"
+
 msgid "Maybach_HL_234P60_WT"
 msgstr "Maybach Neues Projekt A"
 
@@ -3411,6 +3438,18 @@ msgstr "Nashorn"
 
 msgid "Panther_II"
 msgstr "Panther II"
+
+msgid "Panther_II_FL"
+msgstr "Panther II FL"
+
+msgid "Panther_II_FL_long_special"
+msgstr "?empty?"
+
+msgid "Panther_II_FL_short"
+msgstr "Panther II FL"
+
+msgid "Panther_II_FL_short_special"
+msgstr "?empty?"
 
 msgid "Panther_II_descr"
 msgstr ""
@@ -4902,6 +4941,9 @@ msgstr "Spähpanzer SP I C PT II Rh.-Nr. WK-G2"
 msgid "Turret_2_G126_HWK_12"
 msgstr "HWK 12 verbessert"
 
+msgid "Turret_2_G189_E100_02"
+msgstr "E 100"
+
 msgid "Turret_2_Indien_Panzer"
 msgstr "Indien-Panzer"
 
@@ -5615,6 +5657,9 @@ msgstr "10,5 cm le.F.H. 18 L/28"
 msgid "_10WSc"
 msgstr "10WSc"
 
+msgid "_10WSc_02"
+msgstr "10WSc"
+
 msgid "_10WSc_MK"
 msgstr "10WSc"
 
@@ -5840,6 +5885,9 @@ msgstr "Gr 39 H2A G"
 msgid "_150mmGr_39H3A_G"
 msgstr "Gr 39 H3A G"
 
+msgid "_150mmGr_39H3A_G_02"
+msgstr "Gr 39 H3A G"
+
 msgid "_150mm_Erich_Konzept_I"
 msgstr "GShL 152"
 
@@ -5867,6 +5915,9 @@ msgstr "Gr. HL"
 msgid "_150mm_KwK44_L38"
 msgstr "15 cm Kw.K. L/38"
 
+msgid "_150mm_KwK44_L38_02"
+msgstr "15 cm Kw.K. L/38"
+
 msgid "_150mm_KwK44_L38_SH"
 msgstr "15 cm Kw.K. L/38"
 
@@ -5877,6 +5928,9 @@ msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
 
 msgid "_150mm_PzGr42"
+msgstr "Pzgr 42"
+
+msgid "_150mm_PzGr42_02"
 msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
@@ -5901,6 +5955,9 @@ msgid "_150mm_SprgG36"
 msgstr "Sprgr 36"
 
 msgid "_150mm_SprgG_ausf_45"
+msgstr "Sprgr G 45"
+
+msgid "_150mm_SprgG_ausf_45_02"
 msgstr "Sprgr G 45"
 
 msgid "_150mm_Sprg_L"

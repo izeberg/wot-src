@@ -203,10 +203,12 @@ msgid "headerButton/tooltips/mapboxSquad/header"
 msgstr "Разведка боем: звяз"
 
 msgid "headerButton/tooltips/rankedSquad/body"
-msgstr "У Рангавых баях гульня ў складзе фарміравання недаступная."
+msgstr ""
+"Вы можаце стварыць звяз або далучыцца да існуючага. У Рангавых баях "
+"даступныя звязы з 2 гульцоў."
 
 msgid "headerButton/tooltips/rankedSquad/header"
-msgstr "Стварыць звяз"
+msgstr "Звяз"
 
 msgid "headerButton/tooltips/searching/body"
 msgstr "Пошук гульцоў..."
@@ -317,6 +319,9 @@ msgstr "+++NO BONUS TOOLTIP BODY PLACEHOLDER+++"
 msgid "members/header/noBonusPlaceholder/tooltip/header"
 msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
+msgid "members/header/ranked"
+msgstr ": Рангавы бой"
+
 msgid "members/header/squad"
 msgstr ": Выпадковы бой"
 
@@ -348,6 +353,23 @@ msgstr "Звяз павінен складацца з трох адмыслов�
 
 msgid "members/header/tooltip/event/header"
 msgstr "Правілы фармавання звязу"
+
+msgid "members/header/tooltip/ranked/header"
+msgstr "Правілы фармавання звязу"
+
+msgid "members/header/tooltip/ranked/restriction"
+msgstr "Звяз не мае абмежаванняў паводле фармавання."
+
+msgid "members/header/tooltip/ranked/restriction_division"
+msgstr "Гульцы павінны знаходзіцца ў адным дывізіёне."
+
+msgid "members/header/tooltip/ranked/restriction_rank"
+msgstr "Розніца ў рангах паміж гульцамі звязу не павінна перавышаць %(rank)s."
+
+msgid "members/header/tooltip/ranked/restriction_rank_division"
+msgstr ""
+"• Розніца ў рангах паміж гульцамі звязу не павінна перавышаць %(rank)s.\n"
+"• Гульца павінны знаходзіцца ў адным дывізіёне."
 
 msgid "members/header/tooltip/standard/body"
 msgstr "Звяз павінен складацца з машын аднаго ўзроўню."

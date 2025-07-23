@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.900453 -0.000353 -7.707746</min>
+		<max>
+			0.900453 1.24113 0.62493
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Characters/hd_anml_m_0006_Goat/normal/lod2/hd_anml_m_0006_Goat</parent>
+	<extent>40.000000</extent>
+	<nodefullVisual>content/Characters/hd_anml_m_0006_Goat/normal/lod1/hd_anml_m_0006_Goat</nodefullVisual>
+</root>

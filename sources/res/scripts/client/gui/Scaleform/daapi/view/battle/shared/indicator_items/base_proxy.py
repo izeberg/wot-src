@@ -33,6 +33,7 @@ class BaseIndicatorProxy(object):
 
     def fini(self):
         g_indicatorsStorage.onNewItem -= self.__onNewItem
+        self.hide()
 
     @noexcept
     def setState(self, stateStatus):

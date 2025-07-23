@@ -3098,6 +3098,11 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 				</button>
 			</buttonsLayout>
 		</TradingCaravanRefillSysMessage>
+		<CustomNotificationSysMessage>
+			<type>grey</type>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</CustomNotificationSysMessage>
 		<IntegratedAuctionStageStart>
 			<type>auctionStart</type>
 			<linkage>AuctionMessage</linkage>

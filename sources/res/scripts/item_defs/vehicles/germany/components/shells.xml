@@ -4095,6 +4095,65 @@
 			<devices>203</devices>
 		</damage>
 	</_150mm_PzGr42>
+	<_150mm_SprgG_ausf_45_02>
+		<id>31021</id>
+		<userString>#germany_vehicles:_150mm_SprgG_ausf_45_02</userString>
+		<icon>he_modern</icon>
+		<price>1120</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>151</caliber>
+		<explosionRadius>
+			3.57
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>860</armor>
+			<devices>203</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				3.57
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>430</armor>
+				<devices>100</devices>
+			</damage>
+		</armorSpalls>
+	</_150mm_SprgG_ausf_45_02>
+	<_150mmGr_39H3A_G_02>
+		<id>31022</id>
+		<userString>#germany_vehicles:_150mmGr_39H3A_G_02</userString>
+		<icon>ap_cr_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>151</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>650</armor>
+			<devices>203</devices>
+		</damage>
+	</_150mmGr_39H3A_G_02>
+	<_150mm_PzGr42_02>
+		<id>31023</id>
+		<userString>#germany_vehicles:_150mm_PzGr42_02</userString>
+		<icon>ap</icon>
+		<price>1260</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>151</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>650</armor>
+			<devices>203</devices>
+		</damage>
+	</_150mm_PzGr42_02>
 	<_150mm_Pzgr>
 		<id>154</id>
 		<userString>#germany_vehicles:_150mm_Pzgr</userString>

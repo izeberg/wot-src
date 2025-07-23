@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>vehicles/russian/R227_Object_407_MZ/normal/lod0/HatchSleeve_anim</nodelessVisual>
+	<visibilityBox>
+		<min>-0.205862 0.165047 -1.363627</min>
+		<max>0.204293 0.495362 -1.074155</max>
+	</visibilityBox>
 	<parent>vehicles/russian/R227_Object_407_MZ/normal/lod1/HatchSleeve_anim</parent>
 	<extent>32.000000</extent>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R227_Object_407_MZ/normal/lod0/HatchSleeve_anim</nodefullVisual>
 </root>

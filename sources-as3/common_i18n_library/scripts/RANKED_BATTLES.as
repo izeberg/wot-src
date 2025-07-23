@@ -1084,6 +1084,22 @@ package
       public static const RANKEDSELECTEDREWARDVIEW_TITLE:String = "#ranked_battles:rankedSelectedRewardView/title";
       
       public static const RANKEDSELECTEDREWARDVIEW_SUBTITLE:String = "#ranked_battles:rankedSelectedRewardView/subtitle";
+      
+      public static const VOICECHAT_ACTIVE:String = "#ranked_battles:voiceChat/active";
+      
+      public static const VOICECHAT_INACTIVE:String = "#ranked_battles:voiceChat/inactive";
+      
+      public static const BATTLEMESSAGES_WITHOUTVOIP:String = "#ranked_battles:battleMessages/withoutVOIP";
+      
+      public static const BATTLEMESSAGES_ENABLEVOIP:String = "#ranked_battles:battleMessages/enableVOIP";
+      
+      public static const BATTLEMESSAGES_SPECIFYVOIP:String = "#ranked_battles:battleMessages/specifyVOIP";
+      
+      public static const UNIT_MESSAGE_RANKRESTRICTION:String = "#ranked_battles:unit/message/rankRestriction";
+      
+      public static const UNIT_MESSAGE_DIVISIONRESTRICTION:String = "#ranked_battles:unit/message/divisionRestriction";
+      
+      public static const RANKTOOLTIP_BODY:String = "#ranked_battles:rankTooltip/body";
        
       
       public function RANKED_BATTLES()

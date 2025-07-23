@@ -35,6 +35,7 @@ from skeletons.gui.game_control import IGuiLootBoxesController, IGuiLootBoxesInt
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
+from uilogging.lootboxes import LootboxStorageLogger
 from wg_async import AsyncEvent
 if typing.TYPE_CHECKING:
     import Event
@@ -58,7 +59,7 @@ class LootBoxesStorageView(ViewImpl):
      _LOSE_REWARD_SCREEN)
     __slots__ = ('__context', '__currentLootBoxId', '__openingAnimEvent', '__uniqueRewardsViewId',
                  '__uniqueRewardsViewClosedEvent', '__waitStatesHandlers', '__returnPlace',
-                 '__initialLootBox', '__closeCallback', '__infoPageUrl')
+                 '__initialLootBox', '__closeCallback', '__infoPageUrl', '_uiLogger')
 
     def __init__(self, layoutID, returnPlace=ReturnPlaces.TO_HANGAR, initialLootBox=0, closeCallback=None):
         settings = ViewSettings(layoutID)
@@ -74,6 +75,7 @@ class LootBoxesStorageView(ViewImpl):
         self.__returnPlace = ReturnPlaces(returnPlace)
         self.__closeCallback = closeCallback
         self.__infoPageUrl = None
+        self._uiLogger = LootboxStorageLogger()
         return
 
     @property
@@ -191,6 +193,11 @@ class LootBoxesStorageView(ViewImpl):
         self.__setInfoPageByLootboxType()
         model.setCurrentLootboxID(lootBoxID)
         model.setIsShowInfoButton(bool(self.__infoPageUrl))
+        model.setIfHasUniqueURL(self.__ifHasUniqueURL(lootBoxID))
+
+    def __ifHasUniqueURL(self, lootBoxID):
+        lootBox = self.__itemsCache.items.tokens.getLootBoxByID(lootBoxID)
+        return bool(lootBox.getLootBoxShopURL())
 
     def __repeatopenLootBoxes(self, event):
         self.__openLootBoxes(event.ctx)
@@ -208,7 +215,9 @@ class LootBoxesStorageView(ViewImpl):
         self.__openingAnimEvent.set()
 
     def __onBuyBox(self, args):
-        lootBoxID = args.get('lootBoxID')
+        lootBoxID = args.get('lootBoxID') or self.__currentLootBoxId
+        buttonID = args.get('buttonID', 0)
+        self._uiLogger.logBuyBtnClick(lootBoxID, buttonID)
         if self.__guiLootBoxesCtr.isBuyAvailable():
             self.__context.setReturnPlace(ReturnPlaces.TO_SHOP)
             self.destroyWindow()
@@ -371,11 +380,14 @@ class LootBoxesStorageView(ViewImpl):
         if isEnabled is not None and self.__guiLootBoxesCtr.getSetting(LOOT_BOXES_OPEN_ANIMATION_ENABLED) != isEnabled and self.__context.getCurrentState() == States.STORAGE_VIEWING:
             self.__guiLootBoxesCtr.setSetting(LOOT_BOXES_OPEN_ANIMATION_ENABLED, isEnabled)
             self.viewModel.setIsAnimationEnabled(isEnabled)
+            if not args.get('autoSwitch', False):
+                self._uiLogger.logAnimationSwitch(isEnabled)
         return
 
     def __showBonusProbabilities(self):
         lootBox = self.__itemsCache.items.tokens.getLootBoxByID(self.__currentLootBoxId)
         if lootBox is not None:
+            self._uiLogger.logOpenProbabilityClick(lootBox)
             showBonusProbabilitiesWindow(lootBox, parent=self.getParentWindow())
         return
 

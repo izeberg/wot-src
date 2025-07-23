@@ -165,6 +165,8 @@ package
       
       public static const MEMBERS_HEADER_COMP7:String = "#platoon:members/header/comp7";
       
+      public static const MEMBERS_HEADER_RANKED:String = "#platoon:members/header/ranked";
+      
       public static const MEMBERS_HEADER_TOOLTIP_STANDARD_HEADER:String = "#platoon:members/header/tooltip/standard/header";
       
       public static const MEMBERS_HEADER_TOOLTIP_STANDARD_BODY:String = "#platoon:members/header/tooltip/standard/body";
@@ -188,6 +190,16 @@ package
       public static const MEMBERS_HEADER_TOOLTIP_COMP7_DROPDOWN:String = "#platoon:members/header/tooltip/comp7/dropdown";
       
       public static const MEMBERS_HEADER_TOOLTIP_COMP7_DROPDOWN_ITEM:String = "#platoon:members/header/tooltip/comp7/dropdown/item";
+      
+      public static const MEMBERS_HEADER_TOOLTIP_RANKED_HEADER:String = "#platoon:members/header/tooltip/ranked/header";
+      
+      public static const MEMBERS_HEADER_TOOLTIP_RANKED_RESTRICTION:String = "#platoon:members/header/tooltip/ranked/restriction";
+      
+      public static const MEMBERS_HEADER_TOOLTIP_RANKED_RESTRICTION_RANK:String = "#platoon:members/header/tooltip/ranked/restriction_rank";
+      
+      public static const MEMBERS_HEADER_TOOLTIP_RANKED_RESTRICTION_DIVISION:String = "#platoon:members/header/tooltip/ranked/restriction_division";
+      
+      public static const MEMBERS_HEADER_TOOLTIP_RANKED_RESTRICTION_RANK_DIVISION:String = "#platoon:members/header/tooltip/ranked/restriction_rank_division";
       
       public static const MEMBERS_CARD_DISABLED:String = "#platoon:members/card/disabled";
       

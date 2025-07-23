@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.799871 -0.000002 -3.760647</min>
+		<max>1.799871 1.155339 3.786231</max>
+	</visibilityBox>
+	<parent>vehicles/french/F133_Projet_57/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F133_Projet_57/normal/lod0/Chassis</nodefullVisual>
+</root>

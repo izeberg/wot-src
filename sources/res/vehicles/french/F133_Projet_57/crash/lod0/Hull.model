@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/french/F133_Projet_57/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.884495 -0.907286 -4.221499</min>
+		<max>1.850994 1.018040 3.976013</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F133_Projet_57/crash/lod0/Hull</nodefullVisual>
+</root>

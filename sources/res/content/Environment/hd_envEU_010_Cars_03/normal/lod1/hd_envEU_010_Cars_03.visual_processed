@@ -82,6 +82,14 @@
 						selfIllumination
 						<Float>0.000000</Float>
 					</property>
+					<property>
+						alphaReference
+						<Int>96</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.009687 0.686439 -0.110359</groupOrigin>
 			</primitiveGroup>

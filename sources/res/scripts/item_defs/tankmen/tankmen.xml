@@ -533,6 +533,7 @@
 					</param>
 				</params>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</gunner_smoothTurret>
 		<gunner_gunsmith>
 			<vsePerk>205</vsePerk>
@@ -560,6 +561,7 @@
 					</mul>
 				</kpi>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</gunner_gunsmith>
 		<gunner_sniper>
 			<vsePerk>202</vsePerk>
@@ -586,6 +588,7 @@
 					</mul>
 				</kpi>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</gunner_sniper>
 		<gunner_rancorous>
 			<vsePerk>203</vsePerk>
@@ -609,6 +612,7 @@
 					</add>
 				</kpi>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</gunner_rancorous>
 		<loader_pedant>
 			<vsePerk>402</vsePerk>
@@ -635,6 +639,7 @@
 					</mul>
 				</kpi>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</loader_pedant>
 		<loader_desperado>
 			<vsePerk>401</vsePerk>
@@ -729,6 +734,7 @@
 					</param>
 				</params>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</loader_desperado>
 		<loader_intuition>
 			<vsePerk>403</vsePerk>
@@ -782,6 +788,7 @@
 					</param>
 				</params>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</radioman_finder>
 		<radioman_inventor>
 			<vsePerk>505</vsePerk>
@@ -809,6 +816,7 @@
 					</param>
 				</params>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</radioman_inventor>
 		<radioman_lastEffort>
 			<durationPerLevel>
@@ -838,6 +846,7 @@
 					</add>
 				</kpi>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</radioman_lastEffort>
 		<radioman_retransmitter>
 			<teamRadioBonusFactorPerLevel>
@@ -868,6 +877,7 @@
 					</mul>
 				</kpi>
 			</UISettings>
+			<tags>singleOnVehicle</tags>
 		</radioman_retransmitter>
 	</skills>
 </root>

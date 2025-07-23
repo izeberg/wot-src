@@ -22,7 +22,15 @@ package net.wg.gui.battle.ranked.stats.components.fullStats.tableItem
          {
             _loc2_ = this.getStatsItem;
             _loc2_.setRank(_loc1_.division,_loc1_.level,_loc1_.isGroup);
+            _loc2_.setVoiceChatConnected(_loc1_.voiceChatConnected);
          }
+      }
+      
+      override protected function applyPlayerStatus() : void
+      {
+         super.applyPlayerStatus();
+         var _loc1_:StatsTableItem = this.getStatsItem;
+         _loc1_.setSquadIndex(data.squadIndex);
       }
       
       private function get getStatsItem() : StatsTableItem

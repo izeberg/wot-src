@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A164_TS_6/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.532911 -0.446093 -1.634523</min>
+		<max>0.529655 0.440603 6.651597</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/american/A164_TS_6/crash/lod1/Gun_01</nodelessVisual>
+</root>

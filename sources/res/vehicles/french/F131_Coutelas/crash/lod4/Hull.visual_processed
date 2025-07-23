@@ -82,6 +82,10 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000208 0.456758 -0.199939</groupOrigin>
 			</primitiveGroup>

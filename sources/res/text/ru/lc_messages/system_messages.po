@@ -1148,6 +1148,9 @@ msgstr ""
 "%(name)s (%(count)s шт.).\n"
 "Получено серебра: %(money)s."
 
+msgid "crewSkinsNotification/Error"
+msgstr "Не удалось изменить облик члена экипажа."
+
 msgid "crewSkinsNotification/SkinChanged"
 msgstr "Изменён облик члена экипажа."
 
@@ -2300,40 +2303,6 @@ msgid "limitedUI/switchOn"
 msgstr ""
 "Постепенное появление скрытых интерфейсов снова включено. Отключить можно в "
 "настройках игры."
-
-msgid "login_to_other_game_unknown"
-msgstr ""
-"текущая игровая сессия прервана. Ваш Леста&nbsp;ID был использован для входа"
-" в другую игру"
-
-msgid "login_to_other_game_web"
-msgstr ""
-"текущая игровая сессия прервана. Вы отключены от сервера через портал игры"
-
-msgid "login_to_other_game_wot"
-msgstr ""
-"текущая игровая сессия прервана. Ваш Леста&nbsp;ID был использован для входа"
-" в Мир&nbsp;танков"
-
-msgid "login_to_other_game_wotb"
-msgstr ""
-"текущая игровая сессия прервана. Ваш Леста&nbsp;ID был использован для входа"
-" в Tanks&nbsp;Blitz"
-
-msgid "login_to_other_game_wotg"
-msgstr ""
-"текущая игровая сессия прервана. Ваш Леста&nbsp;ID был использован для входа"
-" в другую игру"
-
-msgid "login_to_other_game_wowp"
-msgstr ""
-"текущая игровая сессия прервана. Ваш Леста&nbsp;ID был использован для входа"
-" в другую игру"
-
-msgid "login_to_other_game_wows"
-msgstr ""
-"текущая игровая сессия прервана. Ваш Леста&nbsp;ID был использован для входа"
-" в Мир&nbsp;кораблей"
 
 msgid "lootboxes/open/server_error"
 msgstr "Ошибка открытия контейнера: серверный сбой."

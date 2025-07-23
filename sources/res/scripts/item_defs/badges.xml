@@ -7588,5 +7588,59 @@
 				</item>
 			</value>
 		</badge>
+		<badge>
+			<name>birthday_gifts</name>
+			<type>dict</type>
+			<value>
+				<item>
+					150
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					4.003
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>gold_cart_leaderboard</name>
+			<type>dict</type>
+			<value>
+				<item>
+					151
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					4.004
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
 	</badges>
 </root>

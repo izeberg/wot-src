@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>angle_marker_material</identifier>
-					<fx>shaders/std_effects/lightonly_alpha.fx</fx>
+					<fx>shaders/std_effects/lightonly_alpha_helpers.fx</fx>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>

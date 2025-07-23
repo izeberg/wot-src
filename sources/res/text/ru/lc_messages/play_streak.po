@@ -13,8 +13,8 @@ msgstr "Победить в бою или получить 350 ед. «чист�
 
 msgid "widget/content/tooltip/blocked/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
+"побед» %(redemptionMaxDayCount)s раз."
 
 msgid "widget/content/tooltip/blocked/head"
 msgstr "Цепь побед прервана"
@@ -95,16 +95,16 @@ msgstr "Посмотреть в Ангаре"
 
 msgid "window/playStreakRewards/postProgression/content/blocked/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
+"побед» %(redemptionMaxDayCount)s раз."
 
 msgid "window/playStreakRewards/postProgression/content/blocked/head"
 msgstr "Цепь побед будет восстановлена через"
 
 msgid "window/playStreakRewards/postProgression/content/blocked/tooltip/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
+"побед» %(redemptionMaxDayCount)s раз."
 
 msgid "window/playStreakRewards/postProgression/content/blocked/tooltip/head"
 msgstr "Цепь побед прервана"
@@ -131,8 +131,8 @@ msgstr "Цепь побед будет восстановлена через"
 
 msgid "window/playStreakRewards/recoveryMessage/tooltip/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
+"побед» %(redemptionMaxDayCount)s раз."
 
 msgid "window/playStreakRewards/recoveryMessage/tooltip/head"
 msgstr "Цепь побед прервана."
@@ -167,8 +167,8 @@ msgstr "Цепь побед"
 
 msgid "window/playStreakRewards/tab/help/blocked/body"
 msgstr ""
-"Для восстановления счётчика необходимо выполнять боевую задачу «Цепь побед» "
-"%(redemptionMaxDayCount)s дней подряд."
+"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
+"побед» %(redemptionMaxDayCount)s раз."
 
 msgid "window/playStreakRewards/tab/help/blocked/head"
 msgstr "Цепь побед прервана."

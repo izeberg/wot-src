@@ -3,7 +3,7 @@ from frameworks.wulf import ViewModel
 class BunksConfirmDiscountTooltipViewModel(ViewModel):
     __slots__ = ()
 
-    def __init__(self, properties=4, commands=0):
+    def __init__(self, properties=5, commands=0):
         super(BunksConfirmDiscountTooltipViewModel, self).__init__(properties=properties, commands=commands)
 
     def getBunksCount(self):
@@ -30,9 +30,16 @@ class BunksConfirmDiscountTooltipViewModel(ViewModel):
     def setIsEnough(self, value):
         self._setBool(3, value)
 
+    def getCurrencyType(self):
+        return self._getString(4)
+
+    def setCurrencyType(self, value):
+        self._setString(4, value)
+
     def _initialize(self):
         super(BunksConfirmDiscountTooltipViewModel, self)._initialize()
         self._addNumberProperty('bunksCount', 1)
         self._addNumberProperty('oldCost', 1)
         self._addNumberProperty('newCost', 1)
         self._addBoolProperty('isEnough', False)
+        self._addStringProperty('currencyType', 'credits')

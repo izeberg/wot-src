@@ -197,6 +197,9 @@ msgstr "Бронебойный оперённый"
 msgid "shell/kinds/ARMOR_PIERCING_HE"
 msgstr "Бронебойный каморный"
 
+msgid "shell/kinds/DELAYED_HE"
+msgstr "С задержкой взрывателя"
+
 msgid "shell/kinds/FLAME"
 msgstr "Огнемётная смесь"
 
@@ -217,6 +220,9 @@ msgstr "БОПС"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING_HE"
 msgstr "БК"
+
+msgid "shell/kindsAbbreviation/DELAYED_HE"
+msgstr "ОФ"
 
 msgid "shell/kindsAbbreviation/FLAME"
 msgstr "ОC"

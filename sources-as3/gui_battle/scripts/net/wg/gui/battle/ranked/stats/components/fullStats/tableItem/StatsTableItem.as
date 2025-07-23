@@ -4,13 +4,24 @@ package net.wg.gui.battle.ranked.stats.components.fullStats.tableItem
    import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.gui.battle.components.BattleAtlasSprite;
    import net.wg.gui.battle.views.stats.constants.FullStatsValidationType;
+   import net.wg.gui.battle.views.stats.constants.SquadInvalidationType;
    import net.wg.gui.battle.views.stats.fullStats.StatsTableItemCommon;
    
    public class StatsTableItem extends StatsTableItemCommon
    {
       
+      private static const NOSOUND_ICON_SQUAD_Y_OFFSET:int = 4;
+      
       private static const NUM_ROWS:int = 10;
        
+      
+      private var _noSoundIcon:BattleAtlasSprite = null;
+      
+      private var _squadIcon:BattleAtlasSprite = null;
+      
+      private var _squadIndex:int = 0;
+      
+      private var _voiceChatConnected:Boolean = true;
       
       private var _rankIcon:BattleAtlasSprite;
       
@@ -20,11 +31,22 @@ package net.wg.gui.battle.ranked.stats.components.fullStats.tableItem
       
       private var _isGroup:Boolean;
       
+      private var _noSoundIconOriginalY:int = -1;
+      
+      private var _noSoundIconSquadY:int = -1;
+      
       public function StatsTableItem(param1:MovieClip, param2:int, param3:int)
       {
          super(param1,param2,param3);
          var _loc4_:int = param2 * this.numRows + param3;
          this._rankIcon = param1.rankIconsCollection[_loc4_];
+         this._squadIcon = param1.squadIconCollection[_loc4_];
+         if(param2 == 0)
+         {
+            this._noSoundIcon = param1.noSoundIconCollection[_loc4_];
+            this._noSoundIconOriginalY = this._noSoundIcon.y;
+            this._noSoundIconSquadY = this._noSoundIconOriginalY + NOSOUND_ICON_SQUAD_Y_OFFSET;
+         }
       }
       
       override public function reset() : void
@@ -36,6 +58,9 @@ package net.wg.gui.battle.ranked.stats.components.fullStats.tableItem
       override protected function draw() : void
       {
          var _loc1_:Function = null;
+         var _loc2_:Boolean = false;
+         var _loc3_:Function = null;
+         var _loc4_:Boolean = false;
          super.draw();
          if(isInvalid(FullStatsValidationType.RANK))
          {
@@ -46,11 +71,37 @@ package net.wg.gui.battle.ranked.stats.components.fullStats.tableItem
                this._rankIcon.imageName = _loc1_(this._division.toString(),this._level.toString());
             }
          }
+         if(isInvalid(SquadInvalidationType.SQUAD_INDEX))
+         {
+            _loc2_ = this._squadIndex > 0;
+            this._squadIcon.visible = _loc2_;
+            if(_loc2_)
+            {
+               _loc3_ = !!isSquadPersonal ? BATTLEATLAS.squad_gold : BATTLEATLAS.squad_silver;
+               this._squadIcon.imageName = _loc3_(this._squadIndex.toString());
+            }
+            this.updateNoSoundIconY();
+         }
+         if(isInvalid(FullStatsValidationType.VOICE_CHAT_STATUS_CHANGED))
+         {
+            if(this._noSoundIcon)
+            {
+               _loc4_ = userProps && !this._voiceChatConnected;
+               if(_loc4_)
+               {
+                  this._noSoundIcon.imageName = BATTLEATLAS.ICON_NO_SOUND;
+                  this.updateNoSoundIconY();
+               }
+               this._noSoundIcon.visible = _loc4_;
+            }
+         }
       }
       
       override protected function onDispose() : void
       {
          this._rankIcon = null;
+         this._squadIcon = null;
+         this._noSoundIcon = null;
          super.onDispose();
       }
       
@@ -64,6 +115,33 @@ package net.wg.gui.battle.ranked.stats.components.fullStats.tableItem
          this._division = param1;
          this._isGroup = param3;
          invalidate(FullStatsValidationType.RANK);
+      }
+      
+      public function setSquadIndex(param1:int) : void
+      {
+         if(this._squadIndex == param1)
+         {
+            return;
+         }
+         this._squadIndex = param1;
+         invalidate(SquadInvalidationType.SQUAD_INDEX);
+      }
+      
+      public function setVoiceChatConnected(param1:Boolean) : void
+      {
+         if(this._voiceChatConnected != param1)
+         {
+            this._voiceChatConnected = param1;
+            invalidate(FullStatsValidationType.VOICE_CHAT_STATUS_CHANGED);
+         }
+      }
+      
+      private function updateNoSoundIconY() : void
+      {
+         if(this._noSoundIcon)
+         {
+            this._noSoundIcon.y = !!this._squadIcon.visible ? Number(this._noSoundIconSquadY) : Number(this._noSoundIconOriginalY);
+         }
       }
       
       override protected function get numRows() : uint

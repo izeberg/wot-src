@@ -154,6 +154,12 @@ msgstr "Оборудование для {name}"
 msgid "dealPanel/autoRenew"
 msgstr "Автопополнение"
 
+msgid "dealPanel/autoRenewType/hard"
+msgstr "Докупать автоматически"
+
+msgid "dealPanel/autoRenewType/soft"
+msgstr "Только со Склада"
+
 msgid "dealPanel/button/apply"
 msgstr "Применить"
 
@@ -693,11 +699,22 @@ msgstr "боны"
 msgid "introduction/currency/modernized"
 msgstr "компоненты"
 
+msgid "introduction/directives/showButton"
+msgstr "Показать экономические инструкции"
+
+msgid "introduction/equipments/showButton"
+msgstr "Показать оборудование"
+
 msgid "introduction/message/deluxe"
 msgstr ""
 "Данное оборудование доступно для покупки за %(currencyName)s "
 "(%(currencyIcon)s). Также его можно получить в награду за определённые "
 "игровые достижения и события."
+
+msgid "introduction/message/economic"
+msgstr ""
+"Установите подходящую инструкцию и выйдите с ней в бой. По итогам боя "
+"заработок будет увеличен, а инструкция спишется."
 
 msgid "introduction/message/modernized"
 msgstr ""
@@ -713,9 +730,6 @@ msgstr ""
 "штатного оборудования, но может быть улучшена за серебро. Трофейное "
 "оборудование невозможно приобрести за игровую валюту, но можно получить в "
 "награду за определённые события."
-
-msgid "introduction/showButton"
-msgstr "Показать оборудование"
 
 msgid "introduction/slide/1/description"
 msgstr ""
@@ -807,6 +821,9 @@ msgstr "«Мокрая» боеукладка"
 
 msgid "introduction/title/withEquipments/deluxe"
 msgstr "Усовершенствованное оборудование"
+
+msgid "introduction/title/withEquipments/economic"
+msgstr "Экономические инструкции"
 
 msgid "introduction/title/withEquipments/modernized"
 msgstr "Экспериментальное оборудование"
@@ -2016,6 +2033,9 @@ msgstr "Для экипажа"
 msgid "tabs/deluxe"
 msgstr "Усовершенствованное"
 
+msgid "tabs/economic"
+msgstr "Экономические"
+
 msgid "tabs/modernized"
 msgstr "Экспериментальное"
 
@@ -2030,9 +2050,7 @@ msgstr "Трофейное"
 
 msgid "tooltip/autoRenewal/body/boosters"
 msgstr ""
-"Инструкция будет пополняться автоматически после выхода машины из боя. "
-"Пополнение идёт со Склада при наличии запаса инструкций или за игровую "
-"валюту."
+"Инструкция будет пополняться автоматически после возврата машины из боя."
 
 msgid "tooltip/autoRenewal/body/consumables"
 msgstr ""
@@ -2048,6 +2066,22 @@ msgid "tooltip/autoRenewal/body/shells"
 msgstr ""
 "Боекомплект будет пополняться автоматически (если это необходимо) после "
 "выхода машины из боя."
+
+msgid "tooltip/autoRenewal/dropdown/body/hard"
+msgstr ""
+"Пополнение идёт со Склада при наличии инструкций. При отсутствии инструкций "
+"на Складе они будут автоматически докупаться за игровую валюту."
+
+msgid "tooltip/autoRenewal/dropdown/body/soft"
+msgstr ""
+"Пополнение идёт со Склада при наличии инструкций. При отсутствии инструкций "
+"на Складе слот останется пустым."
+
+msgid "tooltip/autoRenewal/dropdown/header/hard"
+msgstr "Докупать недостающие"
+
+msgid "tooltip/autoRenewal/dropdown/header/soft"
+msgstr "Только со Склада"
 
 msgid "tooltip/autoRenewal/header/general"
 msgstr "Пополнять автоматически"

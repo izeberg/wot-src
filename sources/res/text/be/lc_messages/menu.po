@@ -685,6 +685,9 @@ msgstr "Лінія фронту"
 msgid "bonusType/29"
 msgstr "«Сталёвы паляўнічы»"
 
+msgid "bonusType/30"
+msgstr "«Сталёвы паляўнічы» (звяз)"
+
 msgid "bonusType/32"
 msgstr "«Бітва блогераў»"
 
@@ -763,7 +766,7 @@ msgid "booster/description/bonusValueTime/booster_xp"
 msgstr "Бонус %(effectValue)s да досведу за бой на %(effectTime)s"
 
 msgid "booster/description/booster_credits"
-msgstr "%(effectValue)s да срэбра за бой"
+msgstr "%(effectValue)s да срэбра за бой."
 
 msgid "booster/description/booster_crew_xp"
 msgstr "%(effectValue)s да досведу экіпажу за бой"
@@ -1107,6 +1110,9 @@ msgstr "Разведка боем: стварыць звяз"
 
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
+
+msgid "contextMenu/createRankedSquad"
+msgstr "Стварыць звяз для Рангавага бою"
 
 msgid "contextMenu/createSquad"
 msgstr "Стварыць звяз"
@@ -2463,6 +2469,9 @@ msgstr "Падрабязная справаздача"
 msgid "finalStatistic/tabs/epicStats"
 msgstr "Асабісты вынік"
 
+msgid "finalStatistic/tabs/postbattleExtraTab"
+msgstr "Святочная пошта"
+
 msgid "finalStatistic/tabs/teamStats"
 msgstr "Камандны вынік"
 
@@ -3143,6 +3152,9 @@ msgstr ""
 
 msgid "headerButtons/battle/types/rankedLeave/descr"
 msgstr "Выйсці з бою"
+
+msgid "headerButtons/battle/types/rankedSquad"
+msgstr "Стварыць звяз для Рангавага бою"
 
 msgid "headerButtons/battle/types/rts"
 msgstr "Мастацтва стратэгіі"
@@ -4174,13 +4186,13 @@ msgstr "Падрабязней"
 msgid "login/server"
 msgstr "Сервер і пінг (мс):"
 
+msgid "login/social/status/LGC_ERROR"
+msgstr "Памылка аўтарызацыі. Увядзіце эл. пошту і пароль."
+
 msgid "login/social/status/SYSTEM_ERROR"
 msgstr ""
 "Памылка аўтарызацыі праз сац. сетку або  Леста ID. Паспрабуйце ўвайсці "
 "стандартным спосабам, скарыстаўшы логін і пароль."
-
-msgid "login/social/status/WGC_ERROR"
-msgstr "Памылка аўтарызацыі. Увядзіце эл. пошту і пароль."
 
 msgid "login/social/warning/SOCIAL_NETWORK_LOGOUT"
 msgstr ""
@@ -4210,6 +4222,11 @@ msgid "login/status/DNS_LOOKUP_FAILED"
 msgstr ""
 "Не ўдалося злучыцца з серверам.\n"
 "Магчыма, сервер недаступны ці патрэбна праверыць налады сеткавага злучэння."
+
+msgid "login/status/LGC_LOGOUT"
+msgstr ""
+"Вы выйшлі з акаўнта %(userName)s. Увядзіце электронную пошту і пароль, каб "
+"увайсці ў гульню."
 
 msgid "login/status/LOGIN_BAD_PROTOCOL_VERSION"
 msgstr "Трэба абнавіць кліента гульні."
@@ -4336,11 +4353,6 @@ msgstr "Памылка аўтарызацыі. Націсніце «Увайсц
 
 msgid "login/status/UNKNOWN_ERROR"
 msgstr "Невядомая памылка."
-
-msgid "login/status/WGC_LOGOUT"
-msgstr ""
-"Вы выйшлі з акаўнта %(userName)s. Увядзіце электронную пошту і пароль, каб "
-"увайсці ў гульню."
 
 msgid "login/status/accessForbiddenToPeriphery"
 msgstr ""
@@ -4508,6 +4520,16 @@ msgstr "Агнямётная безмагазінная сістэма"
 
 msgid "moduleInfo/clipDualGunLabel"
 msgstr "Спараная ўстаноўка з сістэмай набівання"
+
+msgid "moduleInfo/clipDualGunWithAutoloadWithClipLabel"
+msgstr ""
+"Спараная ўстаноўка з сістэмай набівання.\n"
+"Снарады набіваюцца ў гарматы разам з зарадкай магазіна."
+
+msgid "moduleInfo/clipDualGunWithoutResetReloadAndWithAutoloadWithClipLabel"
+msgstr ""
+"Спараная ўстаноўка з сістэмай набівання.\n"
+"Снарады набіваюцца ў гарматы разам з зарадкай магазіна. Працэс набівання адной гарматы не перапыняецца падчас стрэлу з іншай."
 
 msgid "moduleInfo/clipDualGunWithoutResetReloadLabel"
 msgstr ""
@@ -4975,7 +4997,7 @@ msgid "nations/sweden"
 msgstr "Швецыя"
 
 msgid "nations/title"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "nations/uk"
 msgstr "Вялікабрытанія"
@@ -5120,19 +5142,19 @@ msgstr ""
 "за кожны бой"
 
 msgid "premium/buyMessage"
-msgstr "Купіць прэміум акаўнт"
+msgstr "Купіць Танкавы прэміум акаўнт"
 
 msgid "premium/buyTitle"
-msgstr "Купля прэміум акаўнту"
+msgstr "Купля Танкавага прэміум акаўнту"
 
 msgid "premium/cancel"
 msgstr "Скасаваць"
 
 msgid "premium/continueMessage"
-msgstr "Працягнуць прэміум акаўнт"
+msgstr "Працягнуць Танкавы прэміум акаўнт"
 
 msgid "premium/continueTitle"
-msgstr "Працяг прэміум акаўнту"
+msgstr "Працяг Танкавага прэміум акаўнту"
 
 msgid "premium/gold"
 msgstr "золата"
@@ -5166,10 +5188,10 @@ msgstr "90 сутак"
 
 msgid "premium/packet/longDescriptionSpecial"
 msgstr ""
-"Прэміум акаўнт дазваляе хутчэй развівацца ў гульні, забяспечваючы дадатковы "
-"заробак срэбра і досведу. Прэміум акаўнт адзіны для гульняў «Мир танков» і "
-"«Мир кораблей», таму, купляючы яго для адной гульні, вы аўтаматычна "
-"атрымліваеце яго ў іншай."
+"Наяўнасць Прэміум акаўнту дазваляе вам хутчэй развівацца ў гульні, "
+"забяспечваючы дадатковы заробак срэбра і досведу. Прэміум акаўнт адзіны для "
+"гульняў «Мир танков» і «Мир кораблей», таму, купляючы яго для адной гульні, "
+"вы аўтаматычна атрымліваеце яго ў іншай."
 
 msgid "premium/packet/shortDescriptionSpecial"
 msgstr "+50% да досведу, срэбра і досведу экіпажу за бой"
@@ -5334,7 +5356,7 @@ msgid "profile/premiumBuy"
 msgstr "Купіць прэміум"
 
 msgid "profile/premiumContinue"
-msgstr "Працягнуць прэміум акаўнт"
+msgstr "Працягнуць Танкавы прэміум акаўнт"
 
 msgid "profile/premiunExpirationDate"
 msgstr "Заканчваецца %s"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz38_Projekt_SAT/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.610950 -0.000003 -3.201761</min>
+		<max>1.610935 1.048507 3.271242</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

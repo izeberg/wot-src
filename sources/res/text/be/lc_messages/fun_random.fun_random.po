@@ -324,85 +324,171 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/fepArtRework135/capsUserName"
-msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
+msgid "modes/fep136/capsUserName"
+msgstr "АРКАДА: КАЎКАЗ"
 
-msgid "modes/fepArtRework135/detailedUserName"
+msgid "modes/fep136/detailedUserName"
 msgstr "%(modeName)s"
 
-msgid "modes/fepArtRework135/metaProgressionTooltip/header/active"
-msgstr ""
-"Задача Палявых выпрабаванняў. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+msgid "modes/fep136/metaProgressionTooltip/header/active"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/fepArtRework135/metaProgressionTooltip/subheader"
-msgstr "Задача Палявых выпрабаванняў."
+msgid "modes/fep136/metaProgressionTooltip/reward/tip"
+msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
 
-msgid "modes/fepArtRework135/metaProgressionTooltip/timer/completedResettable"
-msgstr "да новай задачы Палявых выпрабаванняў"
+msgid "modes/fep136/metaProgressionTooltip/subheader"
+msgstr "Задача Аркады"
 
-msgid "modes/fepArtRework135/modeSubSelector/progression/info"
-msgstr "?empty?"
+msgid "modes/fep136/metaProgressionTooltip/timer/completedResettable"
+msgstr "да новай задачы Аркады"
 
-msgid "modes/fepArtRework135/modeSubSelector/progression/timer"
-msgstr "да новай задачы Палявых выпрабаванняў"
+msgid "modes/fep136/modeSubSelector/progression/info"
+msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
 
-msgid "modes/fepArtRework135/mode_selector/battleCondition"
+msgid "modes/fep136/modeSubSelector/progression/timer"
+msgstr "да новай задачы Аркады"
+
+msgid "modes/fep136/mode_selector/battleCondition"
 msgstr "15x15"
 
-msgid "modes/fepArtRework135/mode_selector/description"
-msgstr "Праверка змен механікі САУ і яе наладжванне."
+msgid "modes/fep136/mode_selector/description"
+msgstr "Класічныя баі без мадыфікатараў"
 
-msgid "modes/fepArtRework135/mode_selector/levelCondition"
+msgid "modes/fep136/mode_selector/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
 
-msgid "modes/fepArtRework135/mode_selector/progression/resettable"
-msgstr "Да новай задачы Палявых выпрабаванняў"
+msgid "modes/fep136/mode_selector/progression/resettable"
+msgstr "да новай задачы Аркады"
 
-msgid "modes/fepArtRework135/notification/finishSubModes/withProgression"
-msgstr "Рэжым %(subModeName)s завершаны: прагрэсія скінута."
+msgid "modes/fep136/notification/finishSubModes/withProgression"
+msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінутая."
 
-msgid "modes/fepArtRework135/notification/finishSubModes/withoutProgression"
-msgstr "Рэжым %(subModeName)s завершаны."
+msgid "modes/fep136/notification/finishSubModes/withoutProgression"
+msgstr "Падрэжым %(subModeName)s завершаны."
 
-msgid "modes/fepArtRework135/notification/newSubModes/withProgression"
-msgstr "Даступныя новыя ўзнагароды і рэжым %(subModeName)s."
+msgid "modes/fep136/notification/newSubModes/withProgression"
+msgstr "Даступныя новыя ўзнагароды і падрэжым %(subModeName)s."
 
-msgid "modes/fepArtRework135/notification/newSubModes/withoutProgression"
-msgstr "Даступны новы рэжым — %(subModeName)s."
+msgid "modes/fep136/notification/newSubModes/withoutProgression"
+msgstr "Даступны новы падрэжым — %(subModeName)s."
 
-msgid "modes/fepArtRework135/notification/switchOffSubModes"
-msgstr "Рэжым %(subModeName)s недаступны: вядуцца тэхнічныя працы."
+msgid "modes/fep136/notification/switchOffSubModes"
+msgstr "Падрэжым %(subModeName)s недаступны: вядуцца тэхнічныя работы."
 
-msgid "modes/fepArtRework135/notification/switchOnSubModes"
-msgstr "Рэжым %(subModeName)s зноў даступны."
+msgid "modes/fep136/notification/switchOnSubModes"
+msgstr "Падрэжым %(subModeName)s зноў даступны."
 
-msgid "modes/fepArtRework135/progression/congratulation/descr"
-msgstr "Вы выканалі ўсе задачы Палявых выпрабаванняў"
+msgid "modes/fep136/progression/congratulation/descr"
+msgstr "Вы прайшлі ўсе этапы Аркады"
 
-msgid "modes/fepArtRework135/progression/title"
-msgstr "ЗАДАЧА ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
+msgid "modes/fep136/progression/info"
+msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
 
-msgid "modes/fepArtRework135/scheduler/notification/available"
-msgstr "Баі рэжыму %(subModeName)s зноў даступныя."
+msgid "modes/fep136/progression/title"
+msgstr "ЗАДАЧА АРКАДЫ"
 
-msgid "modes/fepArtRework135/scheduler/notification/available/title"
+msgid "modes/fep136/scheduler/notification/available"
+msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
+
+msgid "modes/fep136/scheduler/notification/available/title"
 msgstr "Рэжым спынення агню"
 
-msgid "modes/fepArtRework135/scheduler/notification/primeTime"
+msgid "modes/fep136/scheduler/notification/primeTime"
+msgstr ""
+"Баі падрэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення "
+"агню."
+
+msgid "modes/fep136/scheduler/notification/primeTime/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/fep136/tooltip/filter/body"
+msgstr "Паказваць/схаваць прыдатную тэхніку для рэжыму «Аркада»."
+
+msgid "modes/fep136/tooltip/filter/header"
+msgstr "Аркадная тэхніка"
+
+msgid "modes/fep136/userName"
+msgstr "Аркада: Каўказ"
+
+msgid "modes/fepArtRework136/capsUserName"
+msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
+
+msgid "modes/fepArtRework136/detailedUserName"
+msgstr "%(modeName)s"
+
+msgid "modes/fepArtRework136/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача палявых выпрабаванняў. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/fepArtRework136/metaProgressionTooltip/subheader"
+msgstr "Задача палявых выпрабаванняў."
+
+msgid "modes/fepArtRework136/metaProgressionTooltip/timer/completedResettable"
+msgstr "да новай задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework136/modeSubSelector/progression/info"
+msgstr "?empty?"
+
+msgid "modes/fepArtRework136/modeSubSelector/progression/timer"
+msgstr "да новай задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework136/mode_selector/battleCondition"
+msgstr "15x15"
+
+msgid "modes/fepArtRework136/mode_selector/description"
+msgstr "Праверка змен механікі САУ і яе наладка."
+
+msgid "modes/fepArtRework136/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+
+msgid "modes/fepArtRework136/mode_selector/progression/resettable"
+msgstr "Да новай задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework136/notification/finishSubModes/withProgression"
+msgstr "Рэжым %(subModeName)s завершаны: прагрэсія скінута."
+
+msgid "modes/fepArtRework136/notification/finishSubModes/withoutProgression"
+msgstr "Рэжым %(subModeName)s завершаны."
+
+msgid "modes/fepArtRework136/notification/newSubModes/withProgression"
+msgstr "Даступны новыя ўзнагароды і рэжым %(subModeName)s."
+
+msgid "modes/fepArtRework136/notification/newSubModes/withoutProgression"
+msgstr "Даступны новы рэжым — %(subModeName)s."
+
+msgid "modes/fepArtRework136/notification/switchOffSubModes"
+msgstr "Рэжым %(subModeName)s недаступны: вядуцца тэхнічныя працы."
+
+msgid "modes/fepArtRework136/notification/switchOnSubModes"
+msgstr "Рэжым %(subModeName)s зноў даступны."
+
+msgid "modes/fepArtRework136/progression/congratulation/descr"
+msgstr "Вы выканалі ўсе задачы Палявых выпрабаванняў"
+
+msgid "modes/fepArtRework136/progression/title"
+msgstr "ЗАДАЧА ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
+
+msgid "modes/fepArtRework136/scheduler/notification/available"
+msgstr "Баі рэжыму %(subModeName)s зноў даступныя."
+
+msgid "modes/fepArtRework136/scheduler/notification/available/title"
+msgstr "Рэжым спынення агню"
+
+msgid "modes/fepArtRework136/scheduler/notification/primeTime"
 msgstr ""
 "Баі рэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення агню."
 
-msgid "modes/fepArtRework135/scheduler/notification/primeTime/title"
+msgid "modes/fepArtRework136/scheduler/notification/primeTime/title"
 msgstr "Рэжым спынення агню"
 
-msgid "modes/fepArtRework135/tooltip/filter/body"
+msgid "modes/fepArtRework136/tooltip/filter/body"
 msgstr ""
 "Паказваць/схаваць прыдатную тэхніку для рэжыму «Палявыя выпрабаванні»."
 
-msgid "modes/fepArtRework135/tooltip/filter/header"
+msgid "modes/fepArtRework136/tooltip/filter/header"
 msgstr "Тэхніка рэжыму «Палявыя выпрабаванні»"
 
-msgid "modes/fepArtRework135/userName"
+msgid "modes/fepArtRework136/userName"
 msgstr "Палявыя выпрабаванні"
 
 msgid "modes/undefined/capsUserName"
@@ -412,14 +498,13 @@ msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s: %(subModeName)s"
 
 msgid "modes/undefined/metaProgressionTooltip/header/active"
-msgstr ""
-"Задача Палявых выпрабаванняў. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
 
 msgid "modes/undefined/metaProgressionTooltip/reward/tip"
 msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
 
 msgid "modes/undefined/metaProgressionTooltip/subheader"
-msgstr "Задача Палявых выпрабаванняў"
+msgstr "Задача Аркады"
 
 msgid "modes/undefined/metaProgressionTooltip/timer/completedResettable"
 msgstr "да новай задачы Аркады"
@@ -467,7 +552,7 @@ msgid "modes/undefined/progression/info"
 msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
 
 msgid "modes/undefined/progression/title"
-msgstr "ЗАДАЧА ПАЛЯВЫХ ВЫПРАБАВАННЯЎ"
+msgstr "ЗАДАЧА АРКАДЫ"
 
 msgid "modes/undefined/scheduler/notification/available"
 msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
@@ -488,7 +573,7 @@ msgstr ""
 "Паказваць/схаваць прыдатную тэхніку для рэжыму «Палявыя выпрабаванні»."
 
 msgid "modes/undefined/tooltip/filter/header"
-msgstr "Тэхніка Палявых выпрабаванняў"
+msgstr "Аркадная тэхніка"
 
 msgid "modes/undefined/userName"
 msgstr "Аркада"
@@ -722,6 +807,55 @@ msgstr "Камандзір звязу змяніў падрэжым на %(subMo
 msgid "scheduler/notification/squadModeSwitch/title"
 msgstr "Змена падрэжыму"
 
+msgid "sub_modes/classicBattle136/capsUserName"
+msgstr "Аркада: Каўказ"
+
+msgid "sub_modes/classicBattle136/detailsHelp/page1/description"
+msgstr ""
+"У гэтым рэжыме няма ніякіх мадыфікатараў, а ўмовы перамогі аналагічныя "
+"Выпадковым баям. Вынікі не ідуць у статыстыку, таму гуляйце, эксперыментуйце"
+" і атрымлівайце задавальненне. Скарыстайцеся магчымасцю паспрабаваць "
+"нестандартныя тактыкі і выкарыстаць здабыты досвед у Звычайных баях."
+
+msgid "sub_modes/classicBattle136/detailsHelp/page1/title"
+msgstr "Класічны бой"
+
+msgid "sub_modes/classicBattle136/detailsHelpHint/description"
+msgstr "для знаёмства з асаблівасцямі рэжыму"
+
+msgid "sub_modes/classicBattle136/detailsHelpHint/press"
+msgstr "Націсніце"
+
+msgid "sub_modes/classicBattle136/detailsHelpTitle"
+msgstr "Аркада: Каўказ"
+
+msgid "sub_modes/classicBattle136/subModeCard/battleCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/classicBattle136/subModeCard/description"
+msgstr "Аркада: Каўказ"
+
+msgid "sub_modes/classicBattle136/subModeCard/levelCondition"
+msgstr "?empty?"
+
+msgid "sub_modes/classicBattle136/subModeCard/title"
+msgstr "Аркада: Каўказ"
+
+msgid "sub_modes/classicBattle136/tips/tip1/description"
+msgstr ""
+"Класічны бой паводле звычайных правіл. Не бойцеся за сваю статыстыку: "
+"гуляйце з задавальненнем і скарыстайцеся шанцам адпрацаваць нестандартныя "
+"тактыкі."
+
+msgid "sub_modes/classicBattle136/tips/tip1/title"
+msgstr "Класічны бой"
+
+msgid "sub_modes/classicBattle136/userName"
+msgstr "Каўказ"
+
+msgid "sub_modes/classicBattle136/userName/quoted"
+msgstr "«Каўказ»"
+
 msgid "sub_modes/development/capsUserName"
 msgstr "?empty?"
 
@@ -770,50 +904,50 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/fepArtRework135/capsUserName"
+msgid "sub_modes/fepArtRework136/capsUserName"
 msgstr "ПАЛЯВЫЯ ВЫПРАБАВАННІ"
 
-msgid "sub_modes/fepArtRework135/detailsHelp/page1/description"
+msgid "sub_modes/fepArtRework136/detailsHelp/page1/description"
 msgstr ""
-"Палявыя выпрабаванні — гэта новы асобны рэжым, дзе будуць тэставацца розныя "
-"механікі і важныя змены да іх увядзення ў гульню."
+"Палявыя выпрабаванні — гэта асобны рэжым, дзе будуць тэставацца розныя "
+"механікі і важныя змены да ўкаранення іх у гульню."
 
-msgid "sub_modes/fepArtRework135/detailsHelp/page1/title"
+msgid "sub_modes/fepArtRework136/detailsHelp/page1/title"
 msgstr "Палявыя выпрабаванні"
 
-msgid "sub_modes/fepArtRework135/detailsHelpHint/description"
+msgid "sub_modes/fepArtRework136/detailsHelpHint/description"
 msgstr "для знаёмства з асаблівасцямі рэжыму"
 
-msgid "sub_modes/fepArtRework135/detailsHelpHint/press"
+msgid "sub_modes/fepArtRework136/detailsHelpHint/press"
 msgstr "Націсніце"
 
-msgid "sub_modes/fepArtRework135/detailsHelpTitle"
+msgid "sub_modes/fepArtRework136/detailsHelpTitle"
 msgstr "Палявыя выпрабаванні"
 
-msgid "sub_modes/fepArtRework135/subModeCard/battleCondition"
+msgid "sub_modes/fepArtRework136/subModeCard/battleCondition"
 msgstr "15x15"
 
-msgid "sub_modes/fepArtRework135/subModeCard/description"
+msgid "sub_modes/fepArtRework136/subModeCard/description"
 msgstr ""
-"Стандартныя баі без мадыфікатараў\n"
-"і ўплыву на статыстыку"
+"Звычайныя баі без мадыфікатараў\n"
+"і ўліку статыстыкі"
 
-msgid "sub_modes/fepArtRework135/subModeCard/levelCondition"
+msgid "sub_modes/fepArtRework136/subModeCard/levelCondition"
 msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
 
-msgid "sub_modes/fepArtRework135/subModeCard/title"
+msgid "sub_modes/fepArtRework136/subModeCard/title"
 msgstr "Палявыя выпрабаванні"
 
-msgid "sub_modes/fepArtRework135/tips/tip1/description"
-msgstr "Праверка змен механікі САУ і яе наладжванне."
+msgid "sub_modes/fepArtRework136/tips/tip1/description"
+msgstr "Праверка змен механікі САУ і яе наладка."
 
-msgid "sub_modes/fepArtRework135/tips/tip1/title"
+msgid "sub_modes/fepArtRework136/tips/tip1/title"
 msgstr "Палявыя выпрабаванні"
 
-msgid "sub_modes/fepArtRework135/userName"
+msgid "sub_modes/fepArtRework136/userName"
 msgstr "Палявыя выпрабаванні"
 
-msgid "sub_modes/fepArtRework135/userName/quoted"
+msgid "sub_modes/fepArtRework136/userName/quoted"
 msgstr "Палявыя выпрабаванні"
 
 msgid "sub_modes/undefined/capsUserName"

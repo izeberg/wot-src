@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB137_CVT_Spider/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB137_CVT_Spider/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.379999 -0.198055 -0.023440</min>
+		<max>0.380001 0.251115 3.059384</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

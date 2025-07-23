@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -39,15 +39,14 @@
 						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h08_MTV1_0021_GridFence_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.014332 0.532053 -2.393708</groupOrigin>
+				<groupOrigin>0.014333 0.525261 -2.393708</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.194831 0.000000 -4.787416</min>
-		<max>0.208598 1.064106 0.000000</max>
+		<min>-0.173181 -0.013586 -4.794130</min>
+		<max>0.201848 1.064107 0.006714</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>7168</geometrySize>
-	<minUVDensity>0.045927</minUVDensity>
+	<geometrySize>7320</geometrySize>
+	<minUVDensity>0.034206</minUVDensity>
 </root>

@@ -1,0 +1,862 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>3</version>
+	<GameObjects>
+		<GameObject>
+			<name>Spot Light Customization</name>
+			<UUID>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Spot Light</name>
+			<UUID>07e2d27c-b722-4fb2-970f-26899382301b</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>Spot Light</name>
+			<UUID>d520cc94-6de4-41a9-8dee-7a22b383634c</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>Spot Light</name>
+			<UUID>7243b546-1d52-36fa-a851-89bb3b2562ae</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>Spot Light</name>
+			<UUID>fb7e47dd-2b2b-37f9-a938-9e9e60fe9c8c</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>Spot Light</name>
+			<UUID>1d5fe15c-961c-35ad-b0b0-e0ae4a376567</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name/>
+			<UUID>879f4b7f-2500-4a74-8db1-b1a99601a898</UUID>
+			<flags>8</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9ac1ba57-d81a-457b-bd9f-30c31c04bc3d</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.20738 -3.111 -9.62878
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1 0.999999 1
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0.172437 -0.00698007 0.000872498
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-7.40971 0.17687 -0.776903
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.00001 1 1.00001
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.404904 1.33816 3.54519e-06
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							7.0838 -2.40008 -3.75113
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.00001 1 1.00001
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.104494 -1.03175 -3.15017e-06
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							8.4539 -0.744582 13.0348
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.00001 1 1.00001
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.497262 -2.3641 -2.63402e-06
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.12564 2.96777 1.66607
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.00001 0.999999 1.00001
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							1.57031 1.54037 0.00635594
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							1.07054 -4.50623 1.47408
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Particle</type>
+			<version>1</version>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/Environment/hangar/h15_mt_bd_25_ground_fog.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SpotLightComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>spotLightDesc</name>
+						<object>
+							<property>
+								<name>Common</name>
+								<object>
+									<property>
+										<name>Disable On Generating Lights</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Use color temperature</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Color temperature (Kelvins)</name>
+										<value>1000</value>
+									</property>
+									<property>
+										<name>Color</name>
+										<value>
+											1 0.976471 0.870588 1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Inner Radius</name>
+										<value>6</value>
+									</property>
+									<property>
+										<name>Outer Radius</name>
+										<value>11</value>
+									</property>
+									<property>
+										<name>Lod Shift</name>
+										<value>
+											730.789
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (nits)</name>
+										<value>
+											50.6606
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (lumens)</name>
+										<value>2000</value>
+									</property>
+									<property>
+										<name>Units</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Casts Shadows</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Quality</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Type</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadow bias</name>
+										<value>
+											0.0001
+											<!--BW_String-->
+										</value>
+									</property>
+								</object>
+							</property>
+							<property>
+								<name>Cone Angle</name>
+								<value>60</value>
+							</property>
+							<property>
+								<name>Pulse</name>
+								<object>
+									<property>
+										<name>Time scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Duration</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Frames</name>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>spotLightDesc</name>
+						<object>
+							<property>
+								<name>Common</name>
+								<object>
+									<property>
+										<name>Disable On Generating Lights</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Use color temperature</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Color temperature (Kelvins)</name>
+										<value>1000</value>
+									</property>
+									<property>
+										<name>Color</name>
+										<value>
+											0.992157 0.8 0.541176 1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Inner Radius</name>
+										<value>
+											1.35988
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Outer Radius</name>
+										<value>
+											11.5619
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Lod Shift</name>
+										<value>
+											730.789
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (nits)</name>
+										<value>
+											75.9909
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (lumens)</name>
+										<value>3000</value>
+									</property>
+									<property>
+										<name>Units</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Casts Shadows</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Quality</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Type</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>Shadow bias</name>
+										<value>
+											0.0001
+											<!--BW_String-->
+										</value>
+									</property>
+								</object>
+							</property>
+							<property>
+								<name>Cone Angle</name>
+								<value>
+									72.019
+									<!--BW_String-->
+								</value>
+							</property>
+							<property>
+								<name>Pulse</name>
+								<object>
+									<property>
+										<name>Time scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Duration</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Frames</name>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>spotLightDesc</name>
+						<object>
+							<property>
+								<name>Common</name>
+								<object>
+									<property>
+										<name>Disable On Generating Lights</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Use color temperature</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Color temperature (Kelvins)</name>
+										<value>1000</value>
+									</property>
+									<property>
+										<name>Color</name>
+										<value>
+											1 0.909804 0.509804 1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Inner Radius</name>
+										<value>6</value>
+									</property>
+									<property>
+										<name>Outer Radius</name>
+										<value>
+											7.44159
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Lod Shift</name>
+										<value>
+											730.789
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (nits)</name>
+										<value>0.759909</value>
+									</property>
+									<property>
+										<name>Multiplier (lumens)</name>
+										<value>30</value>
+									</property>
+									<property>
+										<name>Units</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Casts Shadows</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Quality</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Type</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>Shadow bias</name>
+										<value>
+											0.0001
+											<!--BW_String-->
+										</value>
+									</property>
+								</object>
+							</property>
+							<property>
+								<name>Cone Angle</name>
+								<value>
+									68.443
+									<!--BW_String-->
+								</value>
+							</property>
+							<property>
+								<name>Pulse</name>
+								<object>
+									<property>
+										<name>Time scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Duration</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Frames</name>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>spotLightDesc</name>
+						<object>
+							<property>
+								<name>Common</name>
+								<object>
+									<property>
+										<name>Disable On Generating Lights</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Use color temperature</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Color temperature (Kelvins)</name>
+										<value>1000</value>
+									</property>
+									<property>
+										<name>Color</name>
+										<value>
+											1 0.933333 0.560784 1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Inner Radius</name>
+										<value>0.980355</value>
+									</property>
+									<property>
+										<name>Outer Radius</name>
+										<value>
+											13.8925
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Lod Shift</name>
+										<value>
+											730.789
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (nits)</name>
+										<value>
+											2.53303
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (lumens)</name>
+										<value>100</value>
+									</property>
+									<property>
+										<name>Units</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Casts Shadows</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Quality</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Type</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>Shadow bias</name>
+										<value>
+											0.0001
+											<!--BW_String-->
+										</value>
+									</property>
+								</object>
+							</property>
+							<property>
+								<name>Cone Angle</name>
+								<value>
+									66.442
+									<!--BW_String-->
+								</value>
+							</property>
+							<property>
+								<name>Pulse</name>
+								<object>
+									<property>
+										<name>Time scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Duration</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Frames</name>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>spotLightDesc</name>
+						<object>
+							<property>
+								<name>Common</name>
+								<object>
+									<property>
+										<name>Disable On Generating Lights</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Use color temperature</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Color temperature (Kelvins)</name>
+										<value>1000</value>
+									</property>
+									<property>
+										<name>Color</name>
+										<value>
+											0.992157 0.8 0.541176 1
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Inner Radius</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Outer Radius</name>
+										<value>13</value>
+									</property>
+									<property>
+										<name>Lod Shift</name>
+										<value>
+											730.789
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (nits)</name>
+										<value>
+											481.276
+											<!--BW_String-->
+										</value>
+									</property>
+									<property>
+										<name>Multiplier (lumens)</name>
+										<value>19000</value>
+									</property>
+									<property>
+										<name>Units</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Casts Shadows</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Shadows Quality</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Shadows Type</name>
+										<value>2</value>
+									</property>
+									<property>
+										<name>Shadow bias</name>
+										<value>
+											0.0001
+											<!--BW_String-->
+										</value>
+									</property>
+								</object>
+							</property>
+							<property>
+								<name>Cone Angle</name>
+								<value>90</value>
+							</property>
+							<property>
+								<name>Pulse</name>
+								<object>
+									<property>
+										<name>Time scale</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>Duration</name>
+										<value>0</value>
+									</property>
+									<property>
+										<name>Frames</name>
+									</property>
+								</object>
+							</property>
+						</object>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>OnC11nAppearComponent</type>
+			<version>1</version>
+			<component>
+				<objectIndex>0</objectIndex>
+				<flags>1</flags>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

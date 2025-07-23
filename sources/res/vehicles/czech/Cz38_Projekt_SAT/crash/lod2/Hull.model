@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/czech/Cz38_Projekt_SAT/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.620606 -0.823904 -3.323506</min>
+		<max>1.622451 0.643470 3.004703</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

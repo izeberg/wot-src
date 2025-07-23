@@ -165,7 +165,8 @@ package net.wg.gui.battle.views.sixthSense
       
       private function applyPosition() : void
       {
-         var _loc1_:int = this._stageH >> 1;
+         var _loc1_:int = 0;
+         _loc1_ = this._stageH >> 1;
          var _loc2_:int = this._stageW >> 1;
          var _loc3_:Number = App.appScale;
          if(this._stageH >= StageSizeBoundaries.HEIGHT_1600 && _loc3_ == 1)

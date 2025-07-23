@@ -411,6 +411,8 @@ def makeBattleBoosterFormatter(fittedVehGetter=None):
     def formatBoosterType(i):
         if i.isCrewBooster():
             return 'skill'
+        if i.isEconomicBooster():
+            return 'economic'
         return 'device'
 
     def formatBoosterTypeName(i):
@@ -424,6 +426,8 @@ def makeBattleBoosterFormatter(fittedVehGetter=None):
         if i.isCrewBooster():
             return i.getCrewBoosterDescription(False)
         else:
+            if i.isEconomicBooster():
+                return i.getEconomicDirectivesDescription()
             return i.getOptDeviceBoosterDescription(vehicle=None, valueFormatter=formatValueToColorTag)
 
     fields.extend([

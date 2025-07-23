@@ -909,6 +909,14 @@ package
       
       public static const BADGE_149_DESCR:String = "#badge:badge_149_descr";
       
+      public static const BADGE_150:String = "#badge:badge_150";
+      
+      public static const BADGE_150_DESCR:String = "#badge:badge_150_descr";
+      
+      public static const BADGE_151:String = "#badge:badge_151";
+      
+      public static const BADGE_151_DESCR:String = "#badge:badge_151_descr";
+      
       public static const BADGE_10038:String = "#badge:badge_10038";
       
       public static const BADGE_10038_DESCR:String = "#badge:badge_10038_descr";

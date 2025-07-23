@@ -1248,9 +1248,6 @@ msgstr "Спісана ачкоў Баявога пропуска"
 msgid "platformCurrencyMsg/debited/brcoin"
 msgstr "Спісана сталёвых пячатак"
 
-msgid "platformCurrencyMsg/debited/bumblebee_coin"
-msgstr "Спісана жэтонаў Летняга распродажу"
-
 msgid "platformCurrencyMsg/debited/equip_coin"
 msgstr "Спісана кампанентаў"
 
@@ -1263,17 +1260,11 @@ msgstr "Вольны досвед спісаны"
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Спісана жэтонаў за выслугу гадоў"
 
-msgid "platformCurrencyMsg/debited/summergames_coin"
-msgstr "Спісана жэтонаў Танкавага мнагабор'я"
-
 msgid "platformCurrencyMsg/received/bpbit"
 msgstr "Налічана ачкоў Баявога пропуска"
 
 msgid "platformCurrencyMsg/received/brcoin"
 msgstr "Налічана сталёвых пячатак"
-
-msgid "platformCurrencyMsg/received/bumblebee_coin"
-msgstr "Налічана жэтонаў Летняга распродажу"
 
 msgid "platformCurrencyMsg/received/equip_coin"
 msgstr "Налічана кампанентаў"
@@ -1286,9 +1277,6 @@ msgstr "Атрымана вольнага досведу"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Дададзена жэтонаў за выслугу гадоў"
-
-msgid "platformCurrencyMsg/received/summergames_coin"
-msgstr "Дададзена жэтонаў Танкавага мнагабор'я"
 
 msgid "prebattle/addAllBtn/tooltip/body"
 msgstr "Дадаць усе кантакты ў спіс адрасатаў."
@@ -1612,6 +1600,12 @@ msgid "serviceChannelMessages/autoEquipErrorNoWallet"
 msgstr ""
 "Не ўдалося папоўніць рыштунак у %s. Усё ваша золата будзе даступнае пасля "
 "аўтаматычнага аднаўлення функцыянавання Адзінага Кашалька."
+
+msgid "serviceChannelMessages/autoEquipNotEnough"
+msgstr ""
+"На Складзе скончыліся настаўленні, выбраныя для %s. Каб далей выкарыстоўваць"
+" настаўленні, уключыце дакупку настаўленняў, якія скончыліся, або выберыце "
+"наяўныя."
 
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr ""
@@ -3106,8 +3100,8 @@ msgstr "Прагрэс падзеі «Ланцуг перамог» абнуле
 
 msgid "serviceChannelMessages/playStreakFreezes/body"
 msgstr ""
-"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выконваць "
-"баявую задачу падзеі «Ланцуг перамог» %(savedData)s дзён запар."
+"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выканаць "
+"баявую задачу «Ланцуг перамог» %(savedData)s разоў."
 
 msgid "serviceChannelMessages/playStreakFreezesEnd/body"
 msgstr "Ланцуг перамог адноўлены."

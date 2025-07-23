@@ -1122,6 +1122,9 @@ msgstr ""
 "%(name)s (%(count)s шт.).\n"
 "Атрымана срэбра %(money)s."
 
+msgid "crewSkinsNotification/Error"
+msgstr "Не ўдалося змяніць аблічча члена экіпажа."
+
 msgid "crewSkinsNotification/SkinChanged"
 msgstr "Аблічча танкіста зменена."
 
@@ -2258,41 +2261,6 @@ msgstr ""
 "Паступовае з'яўленне схаваных інтэрфейсаў зноў уключана. Адключыць можна ў "
 "наладах гульні."
 
-msgid "login_to_other_game_unknown"
-msgstr ""
-"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
-"увайсці ў іншую гульню"
-
-msgid "login_to_other_game_web"
-msgstr ""
-"бягучы сеанс гульні быў перапынены. Вы адлучаны ад сервера праз партал "
-"гульні"
-
-msgid "login_to_other_game_wot"
-msgstr ""
-"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
-"увайсці ў  Мир&nbsp;танков"
-
-msgid "login_to_other_game_wotb"
-msgstr ""
-"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
-"увайсці ў Tanks&nbsp;Blitz"
-
-msgid "login_to_other_game_wotg"
-msgstr ""
-"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
-"увайсці ў іншую гульню"
-
-msgid "login_to_other_game_wowp"
-msgstr ""
-"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
-"увайсці ў іншую гульню"
-
-msgid "login_to_other_game_wows"
-msgstr ""
-"бягучы сеанс гульні перапынены. Ваш Леста&nbsp;ID быў выкарыстаны, каб "
-"увайсці ў Мир&nbsp;кораблей"
-
 msgid "lootboxes/open/server_error"
 msgstr "Памылка адкрыцця кантэйнера: серверны збой."
 
@@ -3064,7 +3032,7 @@ msgstr "Замала золата, каб купіць прэміум акаўн
 
 msgid "premium/post_battle_premium"
 msgstr ""
-"Дзякуючы куплі прэміум акаўнту вы дадаткова атрымліваеце %(xpDiff)d досведу "
+"Дзякуючы куплі Прэміум акаўнту вы дадаткова атрымліваеце %(xpDiff)d досведу "
 "і %(creditDiff)d срэбра за бой."
 
 msgid "premium/server_error"

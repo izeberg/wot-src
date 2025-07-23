@@ -116,26 +116,26 @@ package net.wg.infrastructure.base.meta.impl
          }
       }
       
-      public final function as_setReceivers(param1:Array) : void
+      public final function as_setReceivers(param1:Array, param2:int) : void
       {
-         var _loc5_:BattleMessengerReceiverVO = null;
-         var _loc2_:Vector.<BattleMessengerReceiverVO> = this._vectorBattleMessengerReceiverVO;
+         var _loc6_:BattleMessengerReceiverVO = null;
+         var _loc3_:Vector.<BattleMessengerReceiverVO> = this._vectorBattleMessengerReceiverVO;
          this._vectorBattleMessengerReceiverVO = new Vector.<BattleMessengerReceiverVO>(0);
-         var _loc3_:uint = param1.length;
-         var _loc4_:int = 0;
-         while(_loc4_ < _loc3_)
+         var _loc4_:uint = param1.length;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc4_)
          {
-            this._vectorBattleMessengerReceiverVO[_loc4_] = new BattleMessengerReceiverVO(param1[_loc4_]);
-            _loc4_++;
+            this._vectorBattleMessengerReceiverVO[_loc5_] = new BattleMessengerReceiverVO(param1[_loc5_]);
+            _loc5_++;
          }
-         this.setReceivers(this._vectorBattleMessengerReceiverVO);
-         if(_loc2_)
+         this.setReceivers(this._vectorBattleMessengerReceiverVO,param2);
+         if(_loc3_)
          {
-            for each(_loc5_ in _loc2_)
+            for each(_loc6_ in _loc3_)
             {
-               _loc5_.dispose();
+               _loc6_.dispose();
             }
-            _loc2_.splice(0,_loc2_.length);
+            _loc3_.splice(0,_loc3_.length);
          }
       }
       
@@ -153,11 +153,11 @@ package net.wg.infrastructure.base.meta.impl
          throw new AbstractException(_loc3_);
       }
       
-      protected function setReceivers(param1:Vector.<BattleMessengerReceiverVO>) : void
+      protected function setReceivers(param1:Vector.<BattleMessengerReceiverVO>, param2:int) : void
       {
-         var _loc2_:String = "as_setReceivers" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc2_);
-         throw new AbstractException(_loc2_);
+         var _loc3_:String = "as_setReceivers" + Errors.ABSTRACT_INVOKE;
+         DebugUtils.LOG_ERROR(_loc3_);
+         throw new AbstractException(_loc3_);
       }
    }
 }

@@ -344,9 +344,10 @@ package net.wg.gui.battle.views.battleMessenger
          this.updateReceivers();
       }
       
-      override protected function setReceivers(param1:Vector.<BattleMessengerReceiverVO>) : void
+      override protected function setReceivers(param1:Vector.<BattleMessengerReceiverVO>, param2:int) : void
       {
          this._receivers = param1;
+         this._receiverIdx = param2;
          this.updateReceivers();
       }
       

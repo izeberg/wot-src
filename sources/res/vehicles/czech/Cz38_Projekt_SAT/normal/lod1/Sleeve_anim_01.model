@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz38_Projekt_SAT/normal/lod2/Sleeve_anim_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.153898 -0.071131 -0.132737</min>
+		<max>0.165825 0.106118 0.307241</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz38_Projekt_SAT/normal/lod1/Sleeve_anim_01</nodefullVisual>
+</root>

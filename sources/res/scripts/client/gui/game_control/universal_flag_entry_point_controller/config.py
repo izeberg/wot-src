@@ -26,7 +26,18 @@ class ShopPageTarget(object):
         self.relativeUrl = relativeUrl
 
 
+class TopSubBrowserTarget(object):
+    __slots__ = ('url', )
+
+    def __init__(self, url):
+        self.url = url
+
+
 class NopeTarget(object):
+    __slots__ = tuple()
+
+
+class ShowGoldWagonTarget(object):
     __slots__ = tuple()
 
 
@@ -169,8 +180,12 @@ class _TargetField(fields.Field):
             return FullScreenBrowserTarget(incoming['fullScreenBrowser'])
         if 'shopPage' in incoming:
             return ShopPageTarget(incoming['shopPage'])
+        if 'topSubBrowser' in incoming:
+            return TopSubBrowserTarget(incoming['topSubBrowser'])
         if 'nope' in incoming:
             return NopeTarget()
+        if 'showGoldWagon' in incoming:
+            return ShowGoldWagonTarget()
         raise fields.ValidationError('Invalid flag entry point target config')
 
     def _serialize(self, incoming, **kwargs):
@@ -181,8 +196,12 @@ class _TargetField(fields.Field):
                 return {'fullScreenBrowser': incoming.url}
             if isinstance(incoming, ShopPageTarget):
                 return {'shopPage': incoming.relativeUrl}
+            if isinstance(incoming, TopSubBrowserTarget):
+                return {'topSubBrowser': incoming.url}
             if isinstance(incoming, NopeTarget):
                 return {'nope': None}
+            if isinstance(incoming, ShowGoldWagonTarget):
+                return {'showGoldWagon': None}
             raise ValidationError('Wrong target type.')
             return
 

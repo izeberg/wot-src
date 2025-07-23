@@ -782,6 +782,15 @@ class RankedBattlesController(IRankedBattlesController, Notifiable, SeasonProvid
     def getYearRewardCount(self):
         return RankedSelectableRewardManager.getRemainedChoicesForFeature()
 
+    def getRankSquadRestriction(self):
+        return self.__rankedSettings.squadRankRestrictions.get('rankDiff')
+
+    def getDivisionSquadRestriction(self):
+        if self.__rankedSettings.squadRankRestrictions.get('sameDivisionOnly'):
+            return True
+        else:
+            return
+
     def _createSeason(self, cycleInfo, seasonData):
         return RankedSeason(cycleInfo, seasonData, self.hasSpecialSeason())
 

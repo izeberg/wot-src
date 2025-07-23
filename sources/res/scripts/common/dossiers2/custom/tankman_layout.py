@@ -1,4 +1,5 @@
 from dossiers2.common.DossierBlockBuilders import *
+from dossiers2.custom.dependencies import MEDAL_ALIASES
 _tmanTotalBlockLayout = [
  'battlesCount']
 _tmanTotalBlockBuilder = StaticSizeBlockBuilder('total', _tmanTotalBlockLayout, {}, [])
@@ -11,29 +12,29 @@ TMAN_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'supporter',
  'scout',
  'evileye',
- 'medalWittmann',
+ 'medalUshakov',
  'medalOrlik',
  'medalOskin',
- 'medalHalonen',
+ 'medalKrysov',
  'medalBurda',
  'medalBillotte',
  'medalKolobanov',
  'medalFadin',
  'medalRadleyWalters',
  'medalBrunoPietro',
- 'medalTarczay',
+ 'medalLyubushkin',
  'medalPascucci',
  'medalDumitru',
- 'medalLehvaslaiho',
+ 'medalKhazov',
  'medalNikolas',
  'medalLafayettePool',
  'heroesOfRassenay',
  'medalDeLanglade',
- 'medalTamadaYoshio',
+ 'medalTrubin',
  'huntsman',
  'sniper2',
  'mainGun']
-_tankmanAchievementsBlockBuilder = StaticSizeBlockBuilder('achievements', TMAN_ACHIEVEMENTS_BLOCK_LAYOUT, {}, [])
+_tankmanAchievementsBlockBuilder = StaticSizeBlockBuilder('achievements', TMAN_ACHIEVEMENTS_BLOCK_LAYOUT, {}, [], aliases=MEDAL_ALIASES)
 tmanDossierLayout = (
  _tmanTotalBlockBuilder,
  _tankmanAchievementsBlockBuilder)

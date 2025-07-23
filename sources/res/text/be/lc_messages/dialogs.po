@@ -7,6 +7,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "EULA/buttons/apply"
 msgstr "Прымаю"
@@ -563,8 +569,8 @@ msgstr "Скасаваць"
 
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
-"Ці купіць прэміум акаўнт на %(days)s сут, заплаціўшы %(gold)s золата?\n"
-" %(alertIcon)s %(alertColorTagOpen)s Праз тэхнічныя праблемы дадатковы досвед і срэбра не будуць налічаны. Вы можаце выбраць іншы бой або купіць прэміум акаўнт стандартным спосабам.%(tagClose)s"
+"Ці купіць Танкавы прэміум акаўнт на %(days)s сут за %(gold)s золата?\n"
+" %(alertIcon)s %(alertColorTagOpen)s? Праз тэхнічныя праблемы дадатковы досвед і срэбра не будуць налічаны. Вы можаце выбраць іншы бой або купіць Танкавы прэміум акаўнт стандартным спосабам.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купіць"
@@ -1443,13 +1449,68 @@ msgstr ""
 msgid "disconnected/title"
 msgstr "Злучэнне спынена"
 
+msgid "dismissOrRestore/dismiss/capcha/title/limitError"
+msgstr ""
+"Для выканання аперацыі ўвядзіце колькасць членаў экіпажа, %(highlight)s"
+
+msgid "dismissOrRestore/dismiss/capcha/title/normal"
+msgstr ""
+"Для выканання аперацыі ўвядзіце колькасць членаў экіпажа з %(highlight)s"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlight/limitError"
+msgstr "якія будуць заменены %(keyword)s у буферы мабілізаваных (%(count)s)"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlight/normal"
+msgstr "магчымасць аднаўлення (%(count)s)"
+
+msgid "dismissOrRestore/dismiss/capcha/titleHighlightKeyword"
+msgstr "незваротна"
+
+msgid "dismissOrRestore/error/text"
+msgstr "Вы ўвялі няправільнае значэнне!"
+
+msgid "dismissOrRestore/header/dismiss"
+msgstr "Дэмабілізаваць выбраных членаў экіпажа?"
+
+msgid "dismissOrRestore/header/restore"
+msgstr "Аднавіць выбраных членаў экіпажа?"
+
+msgid "dismissOrRestore/limitError/error"
+msgid_plural "error"
+msgstr[0] ""
+"Перавышаны ліміт буфера дэмабілізаваных: %(count)s член экіпажа будзе "
+"заменены незваротна."
+msgstr[1] ""
+"Перавышаны ліміт буфера дэмабілізаваных: %(count)s члены экіпажа будуць "
+"заменены незваротна."
+msgstr[2] ""
+"Перавышаны ліміт буфера дэмабілізаваных: %(count)s членаў экіпажа будуць "
+"заменены незваротна."
+
+msgid "dismissOrRestore/restore/currency"
+msgstr "Канчатковы кошт:"
+
+msgid "dismissOrRestore/selectTankmans/dismiss"
+msgstr ""
+"Усяго выбрана членаў экіпажа для дэмабілізацыі: %(total)s (з іх з магчымасцю"
+" аднаўлення %(restorable)s)"
+
+msgid "dismissOrRestore/selectTankmans/restore"
+msgstr "Усяго выбрана членаў экіпажа для аднаўлення: %(count)s"
+
 msgid "dismissTankman/buttons/dismiss"
 msgstr "Дэмабілізаваць"
 
+msgid "dismissTankman/buttons/restore"
+msgstr "Аднавіць"
+
 msgid "dismissTankman/description/time"
 msgstr ""
-"Выбраны танкіст будзе дэмабілізаваны. Вы можаце вярнуць яго ў строй на "
-"працягу {whiteOrange_Open}%(time)s д{whiteOrange_Close}."
+"Выбраны член экіпажа будзе дэмабілізаваны. Вы можаце вярнуць яго ў строй на "
+"працягу %(time)s."
+
+msgid "dismissTankman/description/timeText"
+msgstr "%(time)s сут"
 
 msgid "dismissTankman/header"
 msgstr "Дэмабілізацыя танкіста"
@@ -1489,18 +1550,6 @@ msgstr "Пацвердзіць"
 
 msgid "dismissedBufferOverFlawMultiple/title"
 msgstr "Буфер дэмабілізаваных запоўнены"
-
-msgid "documentChangeDialog/button/submit"
-msgstr "Замяніць"
-
-msgid "documentChangeDialog/dropdown/firstName"
-msgstr "Імя"
-
-msgid "documentChangeDialog/dropdown/lastName"
-msgstr "Прозвішча"
-
-msgid "documentChangeDialog/title"
-msgstr "Змяніць імя і выгляд?"
 
 msgid "dropSkill/cancel"
 msgstr "Скасаваць"
@@ -2782,7 +2831,7 @@ msgid "recruitWindow/menuEmptyRow"
 msgstr "Не выбрана"
 
 msgid "recruitWindow/nation"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "recruitWindow/specialization"
 msgstr "Спецыяльнасць"
@@ -2988,6 +3037,9 @@ msgstr ""
 msgid "retrain/cancel"
 msgstr "Скасаваць"
 
+msgid "retrain/header"
+msgstr "Выберыце спосаб перавучвання"
+
 msgid "retrain/massive/tankmenCount"
 msgstr ""
 "Будзе перавучана танкістаў: {whiteSpanish_Open}%(count)s{whiteSpanish_Close}"
@@ -3011,7 +3063,7 @@ msgid "retrain/single/checkBoxLabel"
 msgstr "Размясціць у гэтай машыне"
 
 msgid "retrain/submit"
-msgstr "Перавучыць"
+msgstr "Выбраць"
 
 msgid "retrain/title/massive"
 msgstr "Перавучыць экіпаж на %(vehicleName)s?"
@@ -3086,6 +3138,21 @@ msgstr "Памылка сінхранізацыі"
 
 msgid "skinApplyDialog/button/submit"
 msgstr "Прымяніць"
+
+msgid "skinApplyDialog/warning"
+msgstr "Гэты вобраз мае нязменныя імя і прозвішча"
+
+msgid "skinChangeDialog/button/submit"
+msgstr "Змяніць"
+
+msgid "skinChangeDialog/text"
+msgstr "Выгляд члена экіпажа будзе зменены."
+
+msgid "skinChangeDialog/title"
+msgstr "Змяніць выгляд?"
+
+msgid "skinChangeDialog/warning"
+msgstr "Гэты вобраз мае нязменныя імя і прозвішча"
 
 msgid "soundModeInvalid/cancel"
 msgstr "Скасаваць"
@@ -3352,6 +3419,12 @@ msgstr "Перайсці"
 msgid "switchPeripheryWindow/windowTitle"
 msgstr "Пераход на іншы сервер"
 
+msgid "tankmanRetraining/cancel"
+msgstr "Скасаваць"
+
+msgid "tankmanRetraining/submit"
+msgstr "Выбраць"
+
 msgid "tradeInConfirmation/cancel"
 msgstr "Скасаваць"
 
@@ -3393,7 +3466,7 @@ msgid "tradeInPopover/sorting/nation/body"
 msgstr "Паказвае дзяржавы выбраных машын."
 
 msgid "tradeInPopover/sorting/nation/header"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "tradeInPopover/sorting/saving/body"
 msgstr "Паказвае эканомію пры абмене выбраных машын"

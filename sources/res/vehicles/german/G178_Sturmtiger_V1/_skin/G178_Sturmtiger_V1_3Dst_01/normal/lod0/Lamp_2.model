@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/german/G178_Sturmtiger_V1/_skin/G178_Sturmtiger_V1_3Dst_01/normal/lod0/Lamp_2</nodelessVisual>
+	<parent>vehicles/german/G178_Sturmtiger_V1/_skin/G178_Sturmtiger_V1_3Dst_01/normal/lod1/Lamp_2</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.925403 1.317059 -0.972012</min>
+		<max>0.827689 2.890441 3.067201</max>
+	</visibilityBox>
+</root>

@@ -637,6 +637,8 @@ package
       
       public static const MAPS_ICONS_BATTLEHELP_CLIPDUALGUNHELP_DUALGUN_WITH_AUTORELOAD_CLIP:String = "../maps/icons/battleHelp/clipDualGunHelp/dualgun_with_autoreload_clip.png";
       
+      public static const MAPS_ICONS_BATTLEHELP_CLIPDUALGUNHELP_DUALGUN_WITH_CLIP:String = "../maps/icons/battleHelp/clipDualGunHelp/dualgun_with_clip.png";
+      
       public static const MAPS_ICONS_BATTLEHELP_DEVMAPS_MARKERS:String = "../maps/icons/battleHelp/devMaps/markers.png";
       
       public static const MAPS_ICONS_BATTLEHELP_DEVMAPS_ZONE:String = "../maps/icons/battleHelp/devMaps/zone.png";
@@ -829,7 +831,11 @@ package
       
       public static const MAPS_ICONS_BATTLELOADING_TIPS_RANKED3:String = "../maps/icons/battleLoading/tips/ranked3.png";
       
+      public static const MAPS_ICONS_BATTLELOADING_TIPS_RANKED4:String = "../maps/icons/battleLoading/tips/ranked4.png";
+      
       public static const MAPS_ICONS_BATTLELOADING_TIPS_RANKED5:String = "../maps/icons/battleLoading/tips/ranked5.png";
+      
+      public static const MAPS_ICONS_BATTLELOADING_TIPS_RANKED6:String = "../maps/icons/battleLoading/tips/ranked6.png";
       
       public static const MAPS_ICONS_BATTLELOADING_TIPS_RANKED7:String = "../maps/icons/battleLoading/tips/ranked7.png";
       
@@ -902,6 +908,12 @@ package
       public static const MAPS_ICONS_BATTLELOADING_TIPS_TIP203:String = "../maps/icons/battleLoading/tips/tip203.png";
       
       public static const MAPS_ICONS_BATTLELOADING_TIPS_TIP204:String = "../maps/icons/battleLoading/tips/tip204.png";
+      
+      public static const MAPS_ICONS_BATTLELOADING_TIPS_TIP205:String = "../maps/icons/battleLoading/tips/tip205.png";
+      
+      public static const MAPS_ICONS_BATTLELOADING_TIPS_TIP206:String = "../maps/icons/battleLoading/tips/tip206.png";
+      
+      public static const MAPS_ICONS_BATTLELOADING_TIPS_TIP207:String = "../maps/icons/battleLoading/tips/tip207.png";
       
       public static const MAPS_ICONS_BATTLELOADING_TIPS_TIP23:String = "../maps/icons/battleLoading/tips/tip23.png";
       
@@ -3295,7 +3307,7 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_TOOLTIPS_POINTS_136:String = "../maps/icons/battlePass/tooltips/points_136.png";
       
-      public static const MAPS_ICONS_BATTLEPASS_TOOLTIPS_POINTS_17:String = "../maps/icons/battlePass/tooltips/points_17.png";
+      public static const MAPS_ICONS_BATTLEPASS_TOOLTIPS_POINTS_16:String = "../maps/icons/battlePass/tooltips/points_16.png";
       
       public static const MAPS_ICONS_BATTLEPASS_TOOLTIPS_POINTS_24:String = "../maps/icons/battlePass/tooltips/points_24.png";
       
@@ -4229,6 +4241,8 @@ package
       
       public static const MAPS_ICONS_BATTLETYPES_40X40_RANKED:String = "../maps/icons/battleTypes/40x40/ranked.png";
       
+      public static const MAPS_ICONS_BATTLETYPES_40X40_RANKEDSQUAD:String = "../maps/icons/battleTypes/40x40/rankedSquad.png";
+      
       public static const MAPS_ICONS_BATTLETYPES_40X40_ROYALESQUAD:String = "../maps/icons/battleTypes/40x40/royaleSquad.png";
       
       public static const MAPS_ICONS_BATTLETYPES_40X40_SPECBATTLESLIST:String = "../maps/icons/battleTypes/40x40/specBattlesList.png";
@@ -4315,6 +4329,8 @@ package
       
       public static const MAPS_ICONS_BATTLETYPES_64X64_RANKED:String = "../maps/icons/battleTypes/64x64/ranked.png";
       
+      public static const MAPS_ICONS_BATTLETYPES_64X64_RANKEDSQUAD:String = "../maps/icons/battleTypes/64x64/rankedSquad.png";
+      
       public static const MAPS_ICONS_BATTLETYPES_64X64_RANKED_EPICRANDOM:String = "../maps/icons/battleTypes/64x64/ranked_epicRandom.png";
       
       public static const MAPS_ICONS_BATTLETYPES_64X64_RESOURCEPOINTS:String = "../maps/icons/battleTypes/64x64/resourcePoints.png";
@@ -4336,12 +4352,6 @@ package
       public static const MAPS_ICONS_BATTLETYPES_64X64_WINBACK:String = "../maps/icons/battleTypes/64x64/winback.png";
       
       public static const MAPS_ICONS_BATTLETYPES_BACKGROUNDS_RANDOM:String = "../maps/icons/battleTypes/backgrounds/random.png";
-      
-      public static const MAPS_ICONS_BIRTHDAY2023_BACKGROUND:String = "../maps/icons/birthday2023/background.png";
-      
-      public static const MAPS_ICONS_BIRTHDAY2023_BLUR:String = "../maps/icons/birthday2023/blur.png";
-      
-      public static const MAPS_ICONS_BIRTHDAY2023_IMAGE:String = "../maps/icons/birthday2023/image.png";
       
       public static const MAPS_ICONS_BLUEPRINTS_BLUECHECK:String = "../maps/icons/blueprints/blueCheck.png";
       
@@ -7201,6 +7211,12 @@ package
       
       public static const MAPS_ICONS_CREW_DISCOUNTSMALL:String = "../maps/icons/crew/discountSmall.png";
       
+      public static const MAPS_ICONS_CREW_DOUBLEPERKDISABLED_BIG:String = "../maps/icons/crew/doublePerkDisabled_big.png";
+      
+      public static const MAPS_ICONS_CREW_DOUBLEPERKDISABLED_SMALL:String = "../maps/icons/crew/doublePerkDisabled_small.png";
+      
+      public static const MAPS_ICONS_CREW_FOLDERLIGHT:String = "../maps/icons/crew/folderLight.png";
+      
       public static const MAPS_ICONS_CREW_IRRELEVANTSKILLFRAME_BIG:String = "../maps/icons/crew/irrelevantSkillFrame_big.png";
       
       public static const MAPS_ICONS_CREW_IRRELEVANTSKILLFRAME_SMALL:String = "../maps/icons/crew/irrelevantSkillFrame_small.png";
@@ -7219,6 +7235,10 @@ package
       
       public static const MAPS_ICONS_CREW_STORAGE:String = "../maps/icons/crew/storage.png";
       
+      public static const MAPS_ICONS_CREW_ZEROSKILLSKILLFRAME_BIG:String = "../maps/icons/crew/zeroSkillSkillFrame_big.png";
+      
+      public static const MAPS_ICONS_CREW_ZEROSKILLSKILLFRAME_SMALL:String = "../maps/icons/crew/zeroSkillSkillFrame_small.png";
+      
       public static const MAPS_ICONS_CREW_CARDGLOW_BUY:String = "../maps/icons/crew/cardGlow/buy.png";
       
       public static const MAPS_ICONS_CREW_CARDGLOW_BUY_HOVER:String = "../maps/icons/crew/cardGlow/buy_hover.png";
@@ -7226,6 +7246,8 @@ package
       public static const MAPS_ICONS_CREW_CARDGLOW_CARD_BOTTOM:String = "../maps/icons/crew/cardGlow/card_bottom.png";
       
       public static const MAPS_ICONS_CREW_CARDGLOW_DISCOUNT:String = "../maps/icons/crew/cardGlow/discount.png";
+      
+      public static const MAPS_ICONS_CREW_DIALOGS_DISMISSORRESTORE_ALERT:String = "../maps/icons/crew/dialogs/dismissOrRestore/alert.png";
       
       public static const MAPS_ICONS_CREW_FILTER_GLOW:String = "../maps/icons/crew/filter/glow.png";
       
@@ -7331,11 +7353,37 @@ package
       
       public static const MAPS_ICONS_CREW_PERSONALDATA_34X24_SUITABLESKIN:String = "../maps/icons/crew/personalData/34x24/suitableSkin.png";
       
+      public static const MAPS_ICONS_CREW_RETRAINING_ACADEMY:String = "../maps/icons/crew/retraining/academy.png";
+      
+      public static const MAPS_ICONS_CREW_RETRAINING_FREE:String = "../maps/icons/crew/retraining/free.png";
+      
+      public static const MAPS_ICONS_CREW_RETRAINING_SILVER:String = "../maps/icons/crew/retraining/silver.png";
+      
       public static const MAPS_ICONS_CREW_SERVICERECORD_AVERAGEXPICON:String = "../maps/icons/crew/serviceRecord/averageXPIcon.png";
       
       public static const MAPS_ICONS_CREW_SERVICERECORD_BATTLESCOUNTICON:String = "../maps/icons/crew/serviceRecord/battlesCountIcon.png";
       
       public static const MAPS_ICONS_CREW_SERVICERECORD_NOACHIEVEMENTSICON:String = "../maps/icons/crew/serviceRecord/noAchievementsIcon.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCARD_SELECTDISABLED:String = "../maps/icons/crew/tankmanCard/selectDisabled.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_ALERTICON:String = "../maps/icons/crew/tankmanChangeAndRecruitView/alertIcon.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_BG:String = "../maps/icons/crew/tankmanChangeAndRecruitView/bg.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_CHANGEARRROW:String = "../maps/icons/crew/tankmanChangeAndRecruitView/changeArrrow.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_FOLDERIMAGE:String = "../maps/icons/crew/tankmanChangeAndRecruitView/folderImage.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_INFORMATION:String = "../maps/icons/crew/tankmanChangeAndRecruitView/information.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_PLUSICON:String = "../maps/icons/crew/tankmanChangeAndRecruitView/plusIcon.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_SHADOW:String = "../maps/icons/crew/tankmanChangeAndRecruitView/shadow.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_SWITCHBTN:String = "../maps/icons/crew/tankmanChangeAndRecruitView/switchBTN.png";
+      
+      public static const MAPS_ICONS_CREW_TANKMANCHANGEANDRECRUITVIEW_TANKMANFRAME:String = "../maps/icons/crew/tankmanChangeAndRecruitView/tankmanFrame.png";
       
       public static const MAPS_ICONS_CREW_TIPS_INFOBTNCLOSE:String = "../maps/icons/crew/tips/infoBtnClose.png";
       
@@ -8246,6 +8294,8 @@ package
       public static const MAPS_ICONS_CREWWIDGET_SLOT_BTN_CREW_CHANGE_HOVER:String = "../maps/icons/crewWidget/slot/btn_crew_change_hover.png";
       
       public static const MAPS_ICONS_CREWWIDGET_SLOT_DISABLEDLAYER:String = "../maps/icons/crewWidget/slot/disabledLayer.png";
+      
+      public static const MAPS_ICONS_CREWWIDGET_SLOT_DOGINFO:String = "../maps/icons/crewWidget/slot/dogInfo.png";
       
       public static const MAPS_ICONS_CREWWIDGET_SLOT_DOGPAW:String = "../maps/icons/crewWidget/slot/dogPaw.png";
       
@@ -13469,10 +13519,6 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BR_PROGRESSION_ICON_1:String = "../maps/icons/library/br_progression_icon-1.png";
       
-      public static const MAPS_ICONS_LIBRARY_BUMBLEBEE_COIN_1:String = "../maps/icons/library/bumblebee_coin-1.png";
-      
-      public static const MAPS_ICONS_LIBRARY_BUMBLEBEE_COINICON_1:String = "../maps/icons/library/bumblebee_coinIcon-1.png";
-      
       public static const MAPS_ICONS_LIBRARY_BUTTON_LINK:String = "../maps/icons/library/button_link.png";
       
       public static const MAPS_ICONS_LIBRARY_BUTTON_TRADEIN:String = "../maps/icons/library/button_tradein.png";
@@ -13624,6 +13670,10 @@ package
       public static const MAPS_ICONS_LIBRARY_EARLY_ACCESS:String = "../maps/icons/library/early_access.png";
       
       public static const MAPS_ICONS_LIBRARY_EASOONICON:String = "../maps/icons/library/EaSoonIcon.png";
+      
+      public static const MAPS_ICONS_LIBRARY_ECONOMYBONUS_BIG:String = "../maps/icons/library/economyBonus_big.png";
+      
+      public static const MAPS_ICONS_LIBRARY_ECONOMYBONUS_SMALL:String = "../maps/icons/library/economyBonus_small.png";
       
       public static const MAPS_ICONS_LIBRARY_ELITEXPICON_2:String = "../maps/icons/library/EliteXpIcon-2.png";
       
@@ -13983,6 +14033,8 @@ package
       
       public static const MAPS_ICONS_LIBRARY_RANKEDDAILYBATTLES:String = "../maps/icons/library/rankedDailyBattles.png";
       
+      public static const MAPS_ICONS_LIBRARY_RANKEDINVITEICON_1:String = "../maps/icons/library/rankedInviteIcon-1.png";
+      
       public static const MAPS_ICONS_LIBRARY_RANKEDYEARLB_1:String = "../maps/icons/library/RankedYearLB-1.png";
       
       public static const MAPS_ICONS_LIBRARY_RECERTIFICATIONICON_1:String = "../maps/icons/library/RecertificationIcon-1.png";
@@ -14041,6 +14093,8 @@ package
       
       public static const MAPS_ICONS_LIBRARY_SORTIEINVITEICON_1:String = "../maps/icons/library/sortieInviteIcon-1.png";
       
+      public static const MAPS_ICONS_LIBRARY_SPINNER:String = "../maps/icons/library/spinner.png";
+      
       public static const MAPS_ICONS_LIBRARY_SQUADINVITEICON_1:String = "../maps/icons/library/squadInviteIcon-1.png";
       
       public static const MAPS_ICONS_LIBRARY_STEAMICON_1:String = "../maps/icons/library/SteamIcon-1.png";
@@ -14050,8 +14104,6 @@ package
       public static const MAPS_ICONS_LIBRARY_STORAGE_ICON:String = "../maps/icons/library/storage_icon.png";
       
       public static const MAPS_ICONS_LIBRARY_STRONGHOLDINVITEICON_1:String = "../maps/icons/library/strongholdInviteIcon-1.png";
-      
-      public static const MAPS_ICONS_LIBRARY_SUMMERGAMES_COINICON_1:String = "../maps/icons/library/Summergames_CoinIcon-1.png";
       
       public static const MAPS_ICONS_LIBRARY_SWORDSICON:String = "../maps/icons/library/swordsIcon.png";
       
@@ -14088,6 +14140,8 @@ package
       public static const MAPS_ICONS_LIBRARY_TROPHY_UPGRADE_ICON:String = "../maps/icons/library/trophy_upgrade_icon.png";
       
       public static const MAPS_ICONS_LIBRARY_TUTORIALINFOICON:String = "../maps/icons/library/tutorialInfoIcon.png";
+      
+      public static const MAPS_ICONS_LIBRARY_UNIQUE_TANKMAN:String = "../maps/icons/library/unique_tankman.png";
       
       public static const MAPS_ICONS_LIBRARY_UNITINVITEICON_1:String = "../maps/icons/library/unitInviteIcon-1.png";
       
@@ -14254,6 +14308,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_149:String = "../maps/icons/library/badges/110x110/badge_149.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_15:String = "../maps/icons/library/badges/110x110/badge_15.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_150:String = "../maps/icons/library/badges/110x110/badge_150.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_151:String = "../maps/icons/library/badges/110x110/badge_151.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_110X110_BADGE_16:String = "../maps/icons/library/badges/110x110/badge_16.png";
       
@@ -14484,6 +14542,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_149:String = "../maps/icons/library/badges/220x220/badge_149.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_15:String = "../maps/icons/library/badges/220x220/badge_15.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_150:String = "../maps/icons/library/badges/220x220/badge_150.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_151:String = "../maps/icons/library/badges/220x220/badge_151.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_220X220_BADGE_16:String = "../maps/icons/library/badges/220x220/badge_16.png";
       
@@ -14778,6 +14840,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_149:String = "../maps/icons/library/badges/24x24/badge_149.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_15:String = "../maps/icons/library/badges/24x24/badge_15.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_150:String = "../maps/icons/library/badges/24x24/badge_150.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_151:String = "../maps/icons/library/badges/24x24/badge_151.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_24X24_BADGE_16:String = "../maps/icons/library/badges/24x24/badge_16.png";
       
@@ -15185,6 +15251,10 @@ package
       
       public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_149:String = "../maps/icons/library/badges/400x300/badge_149.png";
       
+      public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_150:String = "../maps/icons/library/badges/400x300/badge_150.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_151:String = "../maps/icons/library/badges/400x300/badge_151.png";
+      
       public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_31001:String = "../maps/icons/library/badges/400x300/badge_31001.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_400X300_BADGE_31002:String = "../maps/icons/library/badges/400x300/badge_31002.png";
@@ -15422,6 +15492,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_149:String = "../maps/icons/library/badges/48x48/badge_149.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_15:String = "../maps/icons/library/badges/48x48/badge_15.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_150:String = "../maps/icons/library/badges/48x48/badge_150.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_151:String = "../maps/icons/library/badges/48x48/badge_151.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_48X48_BADGE_16:String = "../maps/icons/library/badges/48x48/badge_16.png";
       
@@ -15858,6 +15932,10 @@ package
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_149:String = "../maps/icons/library/badges/80x80/badge_149.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_15:String = "../maps/icons/library/badges/80x80/badge_15.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_150:String = "../maps/icons/library/badges/80x80/badge_150.png";
+      
+      public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_151:String = "../maps/icons/library/badges/80x80/badge_151.png";
       
       public static const MAPS_ICONS_LIBRARY_BADGES_80X80_BADGE_16:String = "../maps/icons/library/badges/80x80/badge_16.png";
       
@@ -16951,41 +17029,17 @@ package
       
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_BUSYBLIND:String = "../maps/icons/library/userStatus/busyBlind.png";
       
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_MOB:String = "../maps/icons/library/userStatus/mob.png";
-      
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_OFFLINE:String = "../maps/icons/library/userStatus/offline.png";
       
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_ONLINE:String = "../maps/icons/library/userStatus/online.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_WEB:String = "../maps/icons/library/userStatus/web.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_WOTB:String = "../maps/icons/library/userStatus/wotb.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_WOTG:String = "../maps/icons/library/userStatus/wotg.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_WOWP:String = "../maps/icons/library/userStatus/wowp.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_WOWS:String = "../maps/icons/library/userStatus/wows.png";
       
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_BUSY:String = "../maps/icons/library/userStatus/small/busy.png";
       
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_BUSYBLIND:String = "../maps/icons/library/userStatus/small/busyBlind.png";
       
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_MOB:String = "../maps/icons/library/userStatus/small/mob.png";
-      
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_OFFLINE:String = "../maps/icons/library/userStatus/small/offline.png";
       
       public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_ONLINE:String = "../maps/icons/library/userStatus/small/online.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_WEB:String = "../maps/icons/library/userStatus/small/web.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_WOTB:String = "../maps/icons/library/userStatus/small/wotb.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_WOTG:String = "../maps/icons/library/userStatus/small/wotg.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_WOWP:String = "../maps/icons/library/userStatus/small/wowp.png";
-      
-      public static const MAPS_ICONS_LIBRARY_USERSTATUS_SMALL_WOWS:String = "../maps/icons/library/userStatus/small/wows.png";
       
       public static const MAPS_ICONS_LINKEDSET_MISSIONICONITEM1:String = "../maps/icons/linkedSet/missionIconItem1.png";
       
@@ -18623,6 +18677,10 @@ package
       
       public static const MAPS_ICONS_MARATHON_TANKTYPES_TYPE_TANK_BIG_SPG:String = "../maps/icons/marathon/tankTypes/type_tank_big_spg.png";
       
+      public static const MAPS_ICONS_MARKERS_PRESENT:String = "../maps/icons/markers/present.png";
+      
+      public static const MAPS_ICONS_MARKERS_WAGON:String = "../maps/icons/markers/wagon.png";
+      
       public static const MAPS_ICONS_MATCHMAKER_10X10:String = "../maps/icons/matchmaker/10x10.png";
       
       public static const MAPS_ICONS_MATCHMAKER_GLOW_EFFECT:String = "../maps/icons/matchmaker/glow_effect.png";
@@ -18739,8 +18797,6 @@ package
       
       public static const MAPS_ICONS_MESSENGER_ICONS_UP:String = "../maps/icons/messenger/icons/up.png";
       
-      public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_MOB:String = "../maps/icons/messenger/status/24x24/chat_icon_mob.png";
-      
       public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_UNKNOWN:String = "../maps/icons/messenger/status/24x24/chat_icon_unknown.png";
       
       public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_USER_IS_BUSY:String = "../maps/icons/messenger/status/24x24/chat_icon_user_is_busy.png";
@@ -18749,18 +18805,6 @@ package
       
       public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_USER_IS_ONLINE:String = "../maps/icons/messenger/status/24x24/chat_icon_user_is_online.png";
       
-      public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_WEB:String = "../maps/icons/messenger/status/24x24/chat_icon_web.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_WOTB:String = "../maps/icons/messenger/status/24x24/chat_icon_wotb.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_WOTG:String = "../maps/icons/messenger/status/24x24/chat_icon_wotg.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_WOWP:String = "../maps/icons/messenger/status/24x24/chat_icon_wowp.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_24X24_CHAT_ICON_WOWS:String = "../maps/icons/messenger/status/24x24/chat_icon_wows.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_MOB:String = "../maps/icons/messenger/status/48x48/chat_icon_mob.png";
-      
       public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_UNKNOWN:String = "../maps/icons/messenger/status/48x48/chat_icon_unknown.png";
       
       public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_USER_IS_BUSY:String = "../maps/icons/messenger/status/48x48/chat_icon_user_is_busy.png";
@@ -18768,16 +18812,6 @@ package
       public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_USER_IS_BUSY_VIOLET:String = "../maps/icons/messenger/status/48x48/chat_icon_user_is_busy_violet.png";
       
       public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_USER_IS_ONLINE:String = "../maps/icons/messenger/status/48x48/chat_icon_user_is_online.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_WEB:String = "../maps/icons/messenger/status/48x48/chat_icon_web.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_WOTB:String = "../maps/icons/messenger/status/48x48/chat_icon_wotb.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_WOTG:String = "../maps/icons/messenger/status/48x48/chat_icon_wotg.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_WOWP:String = "../maps/icons/messenger/status/48x48/chat_icon_wowp.png";
-      
-      public static const MAPS_ICONS_MESSENGER_STATUS_48X48_CHAT_ICON_WOWS:String = "../maps/icons/messenger/status/48x48/chat_icon_wows.png";
       
       public static const MAPS_ICONS_MILITARYBADGE_GLOW:String = "../maps/icons/militaryBadge/glow.png";
       
@@ -19113,6 +19147,10 @@ package
       
       public static const MAPS_ICONS_MODULES_DUALGUN:String = "../maps/icons/modules/dualGun.png";
       
+      public static const MAPS_ICONS_MODULES_ECONOMICOVERLAY:String = "../maps/icons/modules/economicOverlay.png";
+      
+      public static const MAPS_ICONS_MODULES_ECONOMICOVERLAYBIG:String = "../maps/icons/modules/economicOverlayBig.png";
+      
       public static const MAPS_ICONS_MODULES_ENGINE:String = "../maps/icons/modules/engine.png";
       
       public static const MAPS_ICONS_MODULES_ENGINEBIG:String = "../maps/icons/modules/engineBig.png";
@@ -19209,6 +19247,12 @@ package
       
       public static const MAPS_ICONS_MODULETYPES_COCACOLA:String = "../maps/icons/moduleTypes/cocacola.png";
       
+      public static const MAPS_ICONS_MODULETYPES_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/moduleTypes/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/moduleTypes/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/moduleTypes/comboXpDirectivesBattleBooster3.png";
+      
       public static const MAPS_ICONS_MODULETYPES_COMMANDERSVIEW:String = "../maps/icons/moduleTypes/commandersView.png";
       
       public static const MAPS_ICONS_MODULETYPES_COMMANDER_EAGLEEYE:String = "../maps/icons/moduleTypes/commander_eagleEye.png";
@@ -19224,6 +19268,12 @@ package
       public static const MAPS_ICONS_MODULETYPES_COMMANDER_TUTOR:String = "../maps/icons/moduleTypes/commander_tutor.png";
       
       public static const MAPS_ICONS_MODULETYPES_COMMANDER_UNIVERSALIST:String = "../maps/icons/moduleTypes/commander_universalist.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/moduleTypes/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/moduleTypes/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/moduleTypes/creditsDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_MODULETYPES_CREW:String = "../maps/icons/moduleTypes/crew.png";
       
@@ -19406,6 +19456,12 @@ package
       public static const MAPS_ICONS_MODULETYPES_VEHICLETURRET:String = "../maps/icons/moduleTypes/vehicleTurret.png";
       
       public static const MAPS_ICONS_MODULETYPES_VEHICLEWHEELEDCHASSIS:String = "../maps/icons/moduleTypes/vehicleWheeledChassis.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/moduleTypes/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/moduleTypes/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_MODULETYPES_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/moduleTypes/xpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_NATIONCHANGE_EMPTY_SLOT_ICON:String = "../maps/icons/nationChange/empty_slot_icon.png";
       
@@ -20663,6 +20719,8 @@ package
       
       public static const MAPS_ICONS_PERSONALMISSIONS3_TOOLTIPS_LASTOPERATIONTOOLTIP_BG_DEVELOPMENT:String = "../maps/icons/personalMissions3/tooltips/LastOperationTooltip/bg_development.png";
       
+      public static const MAPS_ICONS_PERSONALMISSIONS3_TOOLTIPS_LASTOPERATIONTOOLTIP_CLOCK:String = "../maps/icons/personalMissions3/tooltips/LastOperationTooltip/clock.png";
+      
       public static const MAPS_ICONS_PERSONALMISSIONS3_TOOLTIPS_LASTOPERATIONTOOLTIP_COUNTER_BG:String = "../maps/icons/personalMissions3/tooltips/LastOperationTooltip/counter_bg.png";
       
       public static const MAPS_ICONS_PERSONALMISSIONS3_TOOLTIPS_OPERATIONSTOOLTIP_BGWITHOUTPERFECT:String = "../maps/icons/personalMissions3/tooltips/OperationsTooltip/bgWithoutPerfect.png";
@@ -20954,6 +21012,12 @@ package
       public static const MAPS_ICONS_PLATOON_MEMBERS_WINDOW_BACKGROUNDS_MAPBOX_HORIZONTAL_LIST:String = "../maps/icons/platoon/members_window/backgrounds/mapbox_horizontal_list.png";
       
       public static const MAPS_ICONS_PLATOON_MEMBERS_WINDOW_BACKGROUNDS_MAPBOX_VERTICAL_LIST:String = "../maps/icons/platoon/members_window/backgrounds/mapbox_vertical_list.png";
+      
+      public static const MAPS_ICONS_PLATOON_MEMBERS_WINDOW_BACKGROUNDS_RANKED_HORIZONTAL_LIST:String = "../maps/icons/platoon/members_window/backgrounds/ranked_horizontal_list.png";
+      
+      public static const MAPS_ICONS_PLATOON_MEMBERS_WINDOW_BACKGROUNDS_RANKED_HORIZONTAL_SHORT_LIST:String = "../maps/icons/platoon/members_window/backgrounds/ranked_horizontal_short_list.png";
+      
+      public static const MAPS_ICONS_PLATOON_MEMBERS_WINDOW_BACKGROUNDS_RANKED_VERTICAL_LIST:String = "../maps/icons/platoon/members_window/backgrounds/ranked_vertical_list.png";
       
       public static const MAPS_ICONS_PLATOON_MEMBERS_WINDOW_BACKGROUNDS_SQUAD_HORIZONTAL_LIST:String = "../maps/icons/platoon/members_window/backgrounds/squad_horizontal_list.png";
       
@@ -21589,6 +21653,38 @@ package
       
       public static const MAPS_ICONS_PROGRESSIVEREWARD_SCREENBG_RECEIVED:String = "../maps/icons/progressiveReward/screenBg/received.png";
       
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_BLINK:String = "../maps/icons/promo_code_reward_screen/blink.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_INFO:String = "../maps/icons/promo_code_reward_screen/info.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_BACKGROUNDS_DEFAULT:String = "../maps/icons/promo_code_reward_screen/backgrounds/default.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_COMPENSATIONVEHICLES:String = "../maps/icons/promo_code_reward_screen/rewards/compensationVehicles.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_COMPENSATION_48X48:String = "../maps/icons/promo_code_reward_screen/rewards/compensation_48x48.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_RAYS:String = "../maps/icons/promo_code_reward_screen/rewards/rays.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_RENTREWARD:String = "../maps/icons/promo_code_reward_screen/rewards/rentReward.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_RENTREWARDLARGE:String = "../maps/icons/promo_code_reward_screen/rewards/rentRewardLarge.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_RENTTIP:String = "../maps/icons/promo_code_reward_screen/rewards/rentTip.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_REWARDS_STARS:String = "../maps/icons/promo_code_reward_screen/rewards/stars.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_RIBBONS_GOLD_LARGE:String = "../maps/icons/promo_code_reward_screen/ribbons/gold/large.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_RIBBONS_GOLD_MEDIUM:String = "../maps/icons/promo_code_reward_screen/ribbons/gold/medium.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_RIBBONS_GOLD_SMALL:String = "../maps/icons/promo_code_reward_screen/ribbons/gold/small.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_RIBBONS_RED_LARGE:String = "../maps/icons/promo_code_reward_screen/ribbons/red/large.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_RIBBONS_RED_MEDIUM:String = "../maps/icons/promo_code_reward_screen/ribbons/red/medium.png";
+      
+      public static const MAPS_ICONS_PROMO_CODE_REWARD_SCREEN_RIBBONS_RED_SMALL:String = "../maps/icons/promo_code_reward_screen/ribbons/red/small.png";
+      
       public static const MAPS_ICONS_QUESTS_AT_SPGAWARDBACK:String = "../maps/icons/quests/AT-SPGAwardBack.png";
       
       public static const MAPS_ICONS_QUESTS_AWARDRIBBON:String = "../maps/icons/quests/awardRibbon.png";
@@ -21913,6 +22009,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_15:String = "../maps/icons/quests/bonuses/badges/110x110/badge_15.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_150:String = "../maps/icons/quests/bonuses/badges/110x110/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_151:String = "../maps/icons/quests/bonuses/badges/110x110/badge_151.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_16:String = "../maps/icons/quests/bonuses/badges/110x110/badge_16.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_110X110_BADGE_17:String = "../maps/icons/quests/bonuses/badges/110x110/badge_17.png";
@@ -22061,6 +22161,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_15:String = "../maps/icons/quests/bonuses/badges/220x220/badge_15.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_150:String = "../maps/icons/quests/bonuses/badges/220x220/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_151:String = "../maps/icons/quests/bonuses/badges/220x220/badge_151.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_16:String = "../maps/icons/quests/bonuses/badges/220x220/badge_16.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_220X220_BADGE_17:String = "../maps/icons/quests/bonuses/badges/220x220/badge_17.png";
@@ -22183,6 +22287,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_149:String = "../maps/icons/quests/bonuses/badges/232x174/badge_149.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_150:String = "../maps/icons/quests/bonuses/badges/232x174/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_151:String = "../maps/icons/quests/bonuses/badges/232x174/badge_151.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_31005:String = "../maps/icons/quests/bonuses/badges/232x174/badge_31005.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_232X174_BADGE_31006:String = "../maps/icons/quests/bonuses/badges/232x174/badge_31006.png";
@@ -22286,6 +22394,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_149:String = "../maps/icons/quests/bonuses/badges/24x24/badge_149.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_15:String = "../maps/icons/quests/bonuses/badges/24x24/badge_15.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_150:String = "../maps/icons/quests/bonuses/badges/24x24/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_151:String = "../maps/icons/quests/bonuses/badges/24x24/badge_151.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_24X24_BADGE_16:String = "../maps/icons/quests/bonuses/badges/24x24/badge_16.png";
       
@@ -22541,6 +22653,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_149:String = "../maps/icons/quests/bonuses/badges/296x222/badge_149.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_150:String = "../maps/icons/quests/bonuses/badges/296x222/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_151:String = "../maps/icons/quests/bonuses/badges/296x222/badge_151.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_31005:String = "../maps/icons/quests/bonuses/badges/296x222/badge_31005.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_296X222_BADGE_31006:String = "../maps/icons/quests/bonuses/badges/296x222/badge_31006.png";
@@ -22600,6 +22716,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_148:String = "../maps/icons/quests/bonuses/badges/400x300/badge_148.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_149:String = "../maps/icons/quests/bonuses/badges/400x300/badge_149.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_150:String = "../maps/icons/quests/bonuses/badges/400x300/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_151:String = "../maps/icons/quests/bonuses/badges/400x300/badge_151.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_400X300_BADGE_31005:String = "../maps/icons/quests/bonuses/badges/400x300/badge_31005.png";
       
@@ -22710,6 +22830,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_149:String = "../maps/icons/quests/bonuses/badges/48x48/badge_149.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_15:String = "../maps/icons/quests/bonuses/badges/48x48/badge_15.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_150:String = "../maps/icons/quests/bonuses/badges/48x48/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_151:String = "../maps/icons/quests/bonuses/badges/48x48/badge_151.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_48X48_BADGE_16:String = "../maps/icons/quests/bonuses/badges/48x48/badge_16.png";
       
@@ -22949,6 +23073,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_600X450_BADGE_149:String = "../maps/icons/quests/bonuses/badges/600x450/badge_149.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_600X450_BADGE_150:String = "../maps/icons/quests/bonuses/badges/600x450/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_600X450_BADGE_151:String = "../maps/icons/quests/bonuses/badges/600x450/badge_151.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_600X450_BADGE_31041:String = "../maps/icons/quests/bonuses/badges/600x450/badge_31041.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_600X450_BADGE_31042:String = "../maps/icons/quests/bonuses/badges/600x450/badge_31042.png";
@@ -23046,6 +23174,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_149:String = "../maps/icons/quests/bonuses/badges/80x80/badge_149.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_15:String = "../maps/icons/quests/bonuses/badges/80x80/badge_15.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_150:String = "../maps/icons/quests/bonuses/badges/80x80/badge_150.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_151:String = "../maps/icons/quests/bonuses/badges/80x80/badge_151.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BADGES_80X80_BADGE_16:String = "../maps/icons/quests/bonuses/badges/80x80/badge_16.png";
       
@@ -23303,6 +23435,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_BERTHS:String = "../maps/icons/quests/bonuses/big/berths.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/big/birthday2025_golden_ticket.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_BLUEPRINT_GIFT:String = "../maps/icons/quests/bonuses/big/blueprint_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_BLUEPRINT_TUBE:String = "../maps/icons/quests/bonuses/big/blueprint_tube.png";
@@ -23335,8 +23469,6 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_BROCHURE_GIFT:String = "../maps/icons/quests/bonuses/big/brochure_gift.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_BUMBLEBEE_COIN:String = "../maps/icons/quests/bonuses/big/bumblebee_coin.png";
-      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CAMOUFLAGE:String = "../maps/icons/quests/bonuses/big/camouflage.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CAMOUFLAGEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/camouflageBattleBooster.png";
@@ -23354,6 +23486,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COCACOLA:String = "../maps/icons/quests/bonuses/big/cocacola.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBATPAYMENTS:String = "../maps/icons/quests/bonuses/big/combatPayments.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/big/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBOXPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/comboXpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/big/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/comboXpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/big/comboXpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMBOXPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/comboXpDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/big/commandersView.png";
       
@@ -23442,6 +23586,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_COSMIC_2025_2:String = "../maps/icons/quests/bonuses/big/cosmic_2025_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITS:String = "../maps/icons/quests/bonuses/big/credits.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/big/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITSDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/creditsDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/big/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITSDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/creditsDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/big/creditsDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREDITSDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/creditsDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_CREW:String = "../maps/icons/quests/bonuses/big/crew.png";
       
@@ -23534,6 +23690,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G105_T_55_NVA_DDR:String = "../maps/icons/quests/bonuses/big/germany-G105_T-55_NVA_DDR.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GERMANY_G182_MAUSEKONIG:String = "../maps/icons/quests/bonuses/big/germany-G182_Mausekonig.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GIFTSYSTEM_4_STAMP:String = "../maps/icons/quests/bonuses/big/giftsystem_4_stamp.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_GOLD:String = "../maps/icons/quests/bonuses/big/gold.png";
       
@@ -23677,6 +23835,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_QUALITYOIL:String = "../maps/icons/quests/bonuses/big/qualityOil.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_QUESTS:String = "../maps/icons/quests/bonuses/big/quests.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/big/radioman_lastEffort.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_RAMMER:String = "../maps/icons/quests/bonuses/big/rammer.png";
@@ -23745,6 +23905,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE:String = "../maps/icons/quests/bonuses/big/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_31376:String = "../maps/icons/quests/bonuses/big/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_31377:String = "../maps/icons/quests/bonuses/big/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_31379:String = "../maps/icons/quests/bonuses/big/style_31379.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_3D:String = "../maps/icons/quests/bonuses/big/style_3d.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_STYLE_PROGRESS_31315_1:String = "../maps/icons/quests/bonuses/big/style_progress_31315_1.png";
@@ -23772,6 +23938,10 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKS_BIRTHDAY_2024_KEY:String = "../maps/icons/quests/bonuses/big/tanks_birthday_2024_key.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/big/tanks_birthday_2024_lockpick.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/big/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/big/tanks_birthday_2025_small.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_TANKWOMAN:String = "../maps/icons/quests/bonuses/big/tankwoman.png";
       
@@ -23809,6 +23979,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/virtuosoBattleBooster.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s180x135/additionalInvisibilityDevice.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_AIMINGSTABILIZER:String = "../maps/icons/quests/bonuses/s180x135/aimingStabilizer.png";
@@ -23824,6 +24006,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_BATTLE_BONUS_X5:String = "../maps/icons/quests/bonuses/s180x135/battle_bonus_x5.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_BERTHS:String = "../maps/icons/quests/bonuses/s180x135/berths.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/s180x135/birthday2025_golden_ticket.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_BOOK_GIFT:String = "../maps/icons/quests/bonuses/s180x135/book_gift.png";
       
@@ -23847,6 +24031,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COATEDOPTICS:String = "../maps/icons/quests/bonuses/s180x135/coatedOptics.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s180x135/comboXpDirectivesBattleBooster3.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s180x135/commander_sixthSense.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COMMON:String = "../maps/icons/quests/bonuses/s180x135/common.png";
@@ -23854,6 +24044,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_COSMIC_2024_2:String = "../maps/icons/quests/bonuses/s180x135/cosmic_2024_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CREDITS:String = "../maps/icons/quests/bonuses/s180x135/credits.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s180x135/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s180x135/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s180x135/creditsDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_CREW_BONUS_X3:String = "../maps/icons/quests/bonuses/s180x135/crew_bonus_x3.png";
       
@@ -23943,6 +24139,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_PREMIUM_PLUS_2:String = "../maps/icons/quests/bonuses/s180x135/premium_plus_2.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_PREMIUM_PLUS_3:String = "../maps/icons/quests/bonuses/s180x135/premium_plus_3.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_PREMIUM_PLUS_5:String = "../maps/icons/quests/bonuses/s180x135/premium_plus_5.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_PREMIUM_UNIVERSAL:String = "../maps/icons/quests/bonuses/s180x135/premium_universal.png";
@@ -23961,6 +24159,22 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STEREOSCOPE:String = "../maps/icons/quests/bonuses/s180x135/stereoscope.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE:String = "../maps/icons/quests/bonuses/s180x135/style.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_290:String = "../maps/icons/quests/bonuses/s180x135/style_290.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_31376:String = "../maps/icons/quests/bonuses/s180x135/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_31377:String = "../maps/icons/quests/bonuses/s180x135/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_31379:String = "../maps/icons/quests/bonuses/s180x135/style_31379.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_380:String = "../maps/icons/quests/bonuses/s180x135/style_380.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_3D:String = "../maps/icons/quests/bonuses/s180x135/style_3d.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_499:String = "../maps/icons/quests/bonuses/s180x135/style_499.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_PROGRESS_31199_1:String = "../maps/icons/quests/bonuses/s180x135/style_progress_31199_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_STYLE_PROGRESS_31199_2:String = "../maps/icons/quests/bonuses/s180x135/style_progress_31199_2.png";
@@ -23977,11 +24191,21 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/s180x135/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/s180x135/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/s180x135/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TIMER:String = "../maps/icons/quests/bonuses/s180x135/timer.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_TURBOCHARGER:String = "../maps/icons/quests/bonuses/s180x135/turbocharger.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_VEHICLES:String = "../maps/icons/quests/bonuses/s180x135/vehicles.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s180x135/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s180x135/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s180x135/xpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s232x174/additionalInvisibilityDevice.png";
       
@@ -24012,6 +24236,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_BATTLE_BONUS_X5:String = "../maps/icons/quests/bonuses/s232x174/battle_bonus_x5.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_BERTHS:String = "../maps/icons/quests/bonuses/s232x174/berths.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/s232x174/birthday2025_golden_ticket.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_BLUEPRINT_GIFT:String = "../maps/icons/quests/bonuses/s232x174/blueprint_gift.png";
       
@@ -24055,6 +24281,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COCACOLA:String = "../maps/icons/quests/bonuses/s232x174/cocacola.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s232x174/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMBOXPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/comboXpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s232x174/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/comboXpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s232x174/comboXpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMBOXPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/comboXpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/s232x174/commandersView.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s232x174/commander_sixthSense.png";
@@ -24070,6 +24308,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_COSMIC_2025_2:String = "../maps/icons/quests/bonuses/s232x174/cosmic_2025_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITS:String = "../maps/icons/quests/bonuses/s232x174/credits.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s232x174/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITSDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/creditsDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s232x174/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITSDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/creditsDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s232x174/creditsDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREDITSDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/creditsDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_CREW_BONUS_X3:String = "../maps/icons/quests/bonuses/s232x174/crew_bonus_x3.png";
       
@@ -24094,6 +24344,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_EQUIPMENTMODERNIZED_3_OVERLAY:String = "../maps/icons/quests/bonuses/s232x174/equipmentModernized_3_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_EQUIPMENTPLUS_OVERLAY:String = "../maps/icons/quests/bonuses/s232x174/equipmentPlus_overlay.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_EQUIPMENTTROPHYBASIC_OVERLAY:String = "../maps/icons/quests/bonuses/s232x174/equipmentTrophyBasic_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_EXPEQUIPMENTS_GIFT:String = "../maps/icons/quests/bonuses/s232x174/expequipments_gift.png";
       
@@ -24223,6 +24475,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_QUALITYOIL:String = "../maps/icons/quests/bonuses/s232x174/qualityOil.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_QUESTS:String = "../maps/icons/quests/bonuses/s232x174/quests.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s232x174/radioman_lastEffort.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RAMMER:String = "../maps/icons/quests/bonuses/s232x174/rammer.png";
@@ -24271,9 +24525,21 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE:String = "../maps/icons/quests/bonuses/s232x174/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_290:String = "../maps/icons/quests/bonuses/s232x174/style_290.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_31376:String = "../maps/icons/quests/bonuses/s232x174/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_31377:String = "../maps/icons/quests/bonuses/s232x174/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_31379:String = "../maps/icons/quests/bonuses/s232x174/style_31379.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_380:String = "../maps/icons/quests/bonuses/s232x174/style_380.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D:String = "../maps/icons/quests/bonuses/s232x174/style_3d.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s232x174/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_499:String = "../maps/icons/quests/bonuses/s232x174/style_499.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_STYLE_PROGRESS_31045_1:String = "../maps/icons/quests/bonuses/s232x174/style_progress_31045_1.png";
       
@@ -24415,6 +24681,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/s232x174/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/s232x174/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/s232x174/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_TIMER:String = "../maps/icons/quests/bonuses/s232x174/timer.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_TROPHYBASICADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s232x174/trophyBasicAdditionalInvisibilityDevice.png";
@@ -24451,6 +24721,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/virtuosoBattleBooster.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s232x174/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_XPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/xpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s232x174/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/xpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s232x174/xpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_XPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/xpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s296x222/additionalInvisibilityDevice.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_ADDITIONALINVISIBILITYDEVICEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/additionalInvisibilityDeviceBattleBooster.png";
@@ -24480,6 +24762,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_BATTLE_BONUS_X5:String = "../maps/icons/quests/bonuses/s296x222/battle_bonus_x5.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_BERTHS:String = "../maps/icons/quests/bonuses/s296x222/berths.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/s296x222/birthday2025_golden_ticket.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_BLUEPRINT_GIFT:String = "../maps/icons/quests/bonuses/s296x222/blueprint_gift.png";
       
@@ -24521,6 +24805,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COCACOLA:String = "../maps/icons/quests/bonuses/s296x222/cocacola.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s296x222/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMBOXPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/comboXpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s296x222/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/comboXpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s296x222/comboXpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMBOXPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/comboXpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/s296x222/commandersView.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s296x222/commander_sixthSense.png";
@@ -24536,6 +24832,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_COSMIC_2025_2:String = "../maps/icons/quests/bonuses/s296x222/cosmic_2025_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITS:String = "../maps/icons/quests/bonuses/s296x222/credits.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s296x222/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITSDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/creditsDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s296x222/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITSDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/creditsDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s296x222/creditsDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREDITSDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/creditsDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_CREWSKIN1:String = "../maps/icons/quests/bonuses/s296x222/crewSkin1.png";
       
@@ -24566,6 +24874,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_EQUIPMENTMODERNIZED_3_OVERLAY:String = "../maps/icons/quests/bonuses/s296x222/equipmentModernized_3_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_EQUIPMENTPLUS_OVERLAY:String = "../maps/icons/quests/bonuses/s296x222/equipmentPlus_overlay.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_EQUIPMENTTROPHYBASIC_OVERLAY:String = "../maps/icons/quests/bonuses/s296x222/equipmentTrophyBasic_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_EXPEQUIPMENTS_GIFT:String = "../maps/icons/quests/bonuses/s296x222/expequipments_gift.png";
       
@@ -24693,6 +25003,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_QUALITYOIL:String = "../maps/icons/quests/bonuses/s296x222/qualityOil.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_QUESTS:String = "../maps/icons/quests/bonuses/s296x222/quests.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_R207_HT_130:String = "../maps/icons/quests/bonuses/s296x222/R207_HT_130.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s296x222/radioman_lastEffort.png";
@@ -24743,7 +25055,21 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE:String = "../maps/icons/quests/bonuses/s296x222/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_290:String = "../maps/icons/quests/bonuses/s296x222/style_290.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_31376:String = "../maps/icons/quests/bonuses/s296x222/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_31377:String = "../maps/icons/quests/bonuses/s296x222/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_31379:String = "../maps/icons/quests/bonuses/s296x222/style_31379.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_380:String = "../maps/icons/quests/bonuses/s296x222/style_380.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D:String = "../maps/icons/quests/bonuses/s296x222/style_3d.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s296x222/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_499:String = "../maps/icons/quests/bonuses/s296x222/style_499.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_STYLE_PROGRESS_31045_1:String = "../maps/icons/quests/bonuses/s296x222/style_progress_31045_1.png";
       
@@ -24885,6 +25211,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/s296x222/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/s296x222/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/s296x222/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TIMER:String = "../maps/icons/quests/bonuses/s296x222/timer.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TROPHYBASICADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s296x222/trophyBasicAdditionalInvisibilityDevice.png";
@@ -24921,6 +25251,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/virtuosoBattleBooster.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s296x222/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_XPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/xpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s296x222/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/xpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s296x222/xpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_XPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/xpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s360x270/additionalInvisibilityDevice.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_AIMINGSTABILIZER:String = "../maps/icons/quests/bonuses/s360x270/aimingStabilizer.png";
@@ -24932,6 +25274,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_BATTLEBOOSTER_HIGHLIGHT:String = "../maps/icons/quests/bonuses/s360x270/battleBooster_highlight.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_BATTLEPASSPOINTS:String = "../maps/icons/quests/bonuses/s360x270/battlePassPoints.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/s360x270/birthday2025_golden_ticket.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_BOOK_GIFT:String = "../maps/icons/quests/bonuses/s360x270/book_gift.png";
       
@@ -24963,6 +25307,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COCACOLA:String = "../maps/icons/quests/bonuses/s360x270/cocacola.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s360x270/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s360x270/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s360x270/comboXpDirectivesBattleBooster3.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/s360x270/commandersView.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s360x270/commander_sixthSense.png";
@@ -24972,6 +25322,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COSMIC_2024_1:String = "../maps/icons/quests/bonuses/s360x270/cosmic_2024_1.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_COSMIC_2024_2:String = "../maps/icons/quests/bonuses/s360x270/cosmic_2024_2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s360x270/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s360x270/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s360x270/creditsDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_CRYSTAL:String = "../maps/icons/quests/bonuses/s360x270/crystal.png";
       
@@ -25075,7 +25431,19 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STEREOSCOPE:String = "../maps/icons/quests/bonuses/s360x270/stereoscope.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_290:String = "../maps/icons/quests/bonuses/s360x270/style_290.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_31376:String = "../maps/icons/quests/bonuses/s360x270/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_31377:String = "../maps/icons/quests/bonuses/s360x270/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_31379:String = "../maps/icons/quests/bonuses/s360x270/style_31379.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_380:String = "../maps/icons/quests/bonuses/s360x270/style_380.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_3D:String = "../maps/icons/quests/bonuses/s360x270/style_3d.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_STYLE_499:String = "../maps/icons/quests/bonuses/s360x270/style_499.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TANKMEN:String = "../maps/icons/quests/bonuses/s360x270/tankmen.png";
       
@@ -25083,11 +25451,21 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/s360x270/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/s360x270/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/s360x270/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TIMER:String = "../maps/icons/quests/bonuses/s360x270/timer.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_TURBOCHARGER:String = "../maps/icons/quests/bonuses/s360x270/turbocharger.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_UNIVERSALBOOK:String = "../maps/icons/quests/bonuses/s360x270/universalBook.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s360x270/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s360x270/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S360X270_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s360x270/xpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s400x300/additionalInvisibilityDevice.png";
       
@@ -25118,6 +25496,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_BATTLE_BONUS_X5:String = "../maps/icons/quests/bonuses/s400x300/battle_bonus_x5.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_BERTHS:String = "../maps/icons/quests/bonuses/s400x300/berths.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/s400x300/birthday2025_golden_ticket.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_BLUEPRINT_GIFT:String = "../maps/icons/quests/bonuses/s400x300/blueprint_gift.png";
       
@@ -25161,6 +25541,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COCACOLA:String = "../maps/icons/quests/bonuses/s400x300/cocacola.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s400x300/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMBOXPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/comboXpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s400x300/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/comboXpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s400x300/comboXpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMBOXPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/comboXpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/s400x300/commandersView.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s400x300/commander_sixthSense.png";
@@ -25176,6 +25568,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_COSMIC_2025_2:String = "../maps/icons/quests/bonuses/s400x300/cosmic_2025_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITS:String = "../maps/icons/quests/bonuses/s400x300/credits.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s400x300/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITSDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/creditsDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s400x300/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITSDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/creditsDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s400x300/creditsDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREDITSDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/creditsDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_CREWSKIN1:String = "../maps/icons/quests/bonuses/s400x300/crewSkin1.png";
       
@@ -25206,6 +25610,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_EQUIPMENTMODERNIZED_3_OVERLAY:String = "../maps/icons/quests/bonuses/s400x300/equipmentModernized_3_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_EQUIPMENTPLUS_OVERLAY:String = "../maps/icons/quests/bonuses/s400x300/equipmentPlus_overlay.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_EQUIPMENTTROPHYBASIC_OVERLAY:String = "../maps/icons/quests/bonuses/s400x300/equipmentTrophyBasic_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_EXPEQUIPMENTS_GIFT:String = "../maps/icons/quests/bonuses/s400x300/expequipments_gift.png";
       
@@ -25337,6 +25743,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_QUALITYOIL:String = "../maps/icons/quests/bonuses/s400x300/qualityOil.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_QUESTS:String = "../maps/icons/quests/bonuses/s400x300/quests.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_R207_HT_130:String = "../maps/icons/quests/bonuses/s400x300/R207_HT_130.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s400x300/radioman_lastEffort.png";
@@ -25387,9 +25795,21 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE:String = "../maps/icons/quests/bonuses/s400x300/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_290:String = "../maps/icons/quests/bonuses/s400x300/style_290.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_31376:String = "../maps/icons/quests/bonuses/s400x300/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_31377:String = "../maps/icons/quests/bonuses/s400x300/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_31379:String = "../maps/icons/quests/bonuses/s400x300/style_31379.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_380:String = "../maps/icons/quests/bonuses/s400x300/style_380.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D:String = "../maps/icons/quests/bonuses/s400x300/style_3d.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s400x300/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_499:String = "../maps/icons/quests/bonuses/s400x300/style_499.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_STYLE_PROGRESS_31045_1:String = "../maps/icons/quests/bonuses/s400x300/style_progress_31045_1.png";
       
@@ -25533,6 +25953,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/s400x300/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/s400x300/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/s400x300/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TIMER:String = "../maps/icons/quests/bonuses/s400x300/timer.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TROPHYBASICADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s400x300/trophyBasicAdditionalInvisibilityDevice.png";
@@ -25569,6 +25993,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/virtuosoBattleBooster.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s400x300/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_XPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/xpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s400x300/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/xpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s400x300/xpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_XPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/xpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_ADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s600x450/additionalInvisibilityDevice.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_ADDITIONALINVISIBILITYDEVICEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/additionalInvisibilityDeviceBattleBooster.png";
@@ -25596,6 +26032,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_BATTLE_BONUS_X5:String = "../maps/icons/quests/bonuses/s600x450/battle_bonus_x5.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_BERTHS:String = "../maps/icons/quests/bonuses/s600x450/berths.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/s600x450/birthday2025_golden_ticket.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_BLUEPRINT_GIFT:String = "../maps/icons/quests/bonuses/s600x450/blueprint_gift.png";
       
@@ -25641,6 +26079,18 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COCACOLA:String = "../maps/icons/quests/bonuses/s600x450/cocacola.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s600x450/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMBOXPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/comboXpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s600x450/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMBOXPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/comboXpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s600x450/comboXpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMBOXPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/comboXpDirectivesBattleBooster3BattleBooster.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/s600x450/commandersView.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COMMANDER_SIXTHSENSE:String = "../maps/icons/quests/bonuses/s600x450/commander_sixthSense.png";
@@ -25656,6 +26106,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_COSMIC_2025_2:String = "../maps/icons/quests/bonuses/s600x450/cosmic_2025_2.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITS:String = "../maps/icons/quests/bonuses/s600x450/credits.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s600x450/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITSDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/creditsDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s600x450/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITSDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/creditsDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s600x450/creditsDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREDITSDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/creditsDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_CREWSKIN1:String = "../maps/icons/quests/bonuses/s600x450/crewSkin1.png";
       
@@ -25686,6 +26148,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_EQUIPMENTMODERNIZED_3_OVERLAY:String = "../maps/icons/quests/bonuses/s600x450/equipmentModernized_3_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_EQUIPMENTPLUS_OVERLAY:String = "../maps/icons/quests/bonuses/s600x450/equipmentPlus_overlay.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_EQUIPMENTTROPHYBASIC_OVERLAY:String = "../maps/icons/quests/bonuses/s600x450/equipmentTrophyBasic_overlay.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_EXPEQUIPMENTS_GIFT:String = "../maps/icons/quests/bonuses/s600x450/expequipments_gift.png";
       
@@ -25801,6 +26265,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_PROJECTIONDECAL:String = "../maps/icons/quests/bonuses/s600x450/projectionDecal.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_QUESTS:String = "../maps/icons/quests/bonuses/s600x450/quests.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_R207_HT_130:String = "../maps/icons/quests/bonuses/s600x450/R207_HT_130.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/s600x450/radioman_lastEffort.png";
@@ -25851,9 +26317,21 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE:String = "../maps/icons/quests/bonuses/s600x450/style.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_290:String = "../maps/icons/quests/bonuses/s600x450/style_290.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_31376:String = "../maps/icons/quests/bonuses/s600x450/style_31376.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_31377:String = "../maps/icons/quests/bonuses/s600x450/style_31377.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_31379:String = "../maps/icons/quests/bonuses/s600x450/style_31379.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_380:String = "../maps/icons/quests/bonuses/s600x450/style_380.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D:String = "../maps/icons/quests/bonuses/s600x450/style_3d.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_3D_31013:String = "../maps/icons/quests/bonuses/s600x450/style_3d_31013.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_499:String = "../maps/icons/quests/bonuses/s600x450/style_499.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_STYLE_PROGRESS_31045_1:String = "../maps/icons/quests/bonuses/s600x450/style_progress_31045_1.png";
       
@@ -25999,6 +26477,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/s600x450/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/s600x450/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/s600x450/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_TIMER:String = "../maps/icons/quests/bonuses/s600x450/timer.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_TROPHYBASICADDITIONALINVISIBILITYDEVICE:String = "../maps/icons/quests/bonuses/s600x450/trophyBasicAdditionalInvisibilityDevice.png";
@@ -26036,6 +26518,18 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_VEHICLES_RENT:String = "../maps/icons/quests/bonuses/s600x450/vehicles_rent.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/virtuosoBattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/s600x450/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_XPDIRECTIVESBATTLEBOOSTER1BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/xpDirectivesBattleBooster1BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/s600x450/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_XPDIRECTIVESBATTLEBOOSTER2BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/xpDirectivesBattleBooster2BattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/s600x450/xpDirectivesBattleBooster3.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_XPDIRECTIVESBATTLEBOOSTER3BATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/xpDirectivesBattleBooster3BattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_ABILITYTOKEN:String = "../maps/icons/quests/bonuses/small/abilityToken.png";
       
@@ -26075,6 +26569,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_BERTHS:String = "../maps/icons/quests/bonuses/small/berths.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_BIRTHDAY2025_GOLDEN_TICKET:String = "../maps/icons/quests/bonuses/small/birthday2025_golden_ticket.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_BLUEPRINT_GIFT:String = "../maps/icons/quests/bonuses/small/blueprint_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_BLUEPRINT_TUBE:String = "../maps/icons/quests/bonuses/small/blueprint_tube.png";
@@ -26109,8 +26605,6 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_BUILTINEQUIPMENT_OVERLAY:String = "../maps/icons/quests/bonuses/small/builtInEquipment_overlay.png";
       
-      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_BUMBLEBEE_COIN:String = "../maps/icons/quests/bonuses/small/bumblebee_coin.png";
-      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CAMOUFLAGE:String = "../maps/icons/quests/bonuses/small/camouflage.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CAMOUFLAGEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/small/camouflageBattleBooster.png";
@@ -26126,6 +26620,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COCACOLA:String = "../maps/icons/quests/bonuses/small/cocacola.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBATPAYMENTS:String = "../maps/icons/quests/bonuses/small/combatPayments.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/small/comboXpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_COMMANDERSVIEW:String = "../maps/icons/quests/bonuses/small/commandersView.png";
       
@@ -26217,6 +26717,12 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CREDITS:String = "../maps/icons/quests/bonuses/small/credits.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/small/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/small/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/small/creditsDirectivesBattleBooster3.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CREW:String = "../maps/icons/quests/bonuses/small/crew.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_CREWSKIN1:String = "../maps/icons/quests/bonuses/small/crewSkin1.png";
@@ -26294,6 +26800,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_GASOLINE100:String = "../maps/icons/quests/bonuses/small/gasoline100.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_GASOLINE105:String = "../maps/icons/quests/bonuses/small/gasoline105.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_GIFTSYSTEM_4_STAMP:String = "../maps/icons/quests/bonuses/small/giftsystem_4_stamp.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_GOLD:String = "../maps/icons/quests/bonuses/small/gold.png";
       
@@ -26431,6 +26939,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_QUALITYOIL:String = "../maps/icons/quests/bonuses/small/qualityOil.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_QUESTS:String = "../maps/icons/quests/bonuses/small/quests.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_RADIOMAN_LASTEFFORT:String = "../maps/icons/quests/bonuses/small/radioman_lastEffort.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_RAMMER:String = "../maps/icons/quests/bonuses/small/rammer.png";
@@ -26517,6 +27027,10 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKS_BIRTHDAY_2024_LOCKPICK:String = "../maps/icons/quests/bonuses/small/tanks_birthday_2024_lockpick.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKS_BIRTHDAY_2025_LARGE:String = "../maps/icons/quests/bonuses/small/tanks_birthday_2025_large.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKS_BIRTHDAY_2025_SMALL:String = "../maps/icons/quests/bonuses/small/tanks_birthday_2025_small.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TANKWOMAN:String = "../maps/icons/quests/bonuses/small/tankwoman.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_TESTENTITLEMENT:String = "../maps/icons/quests/bonuses/small/testEntitlement.png";
@@ -26536,6 +27050,12 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_VEHICLES_RENT:String = "../maps/icons/quests/bonuses/small/vehicles_rent.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/small/virtuosoBattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/quests/bonuses/small/xpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_RANKEDBATTLES_CHECK:String = "../maps/icons/rankedBattles/check.png";
       
@@ -27805,9 +28325,11 @@ package
       
       public static const MAPS_ICONS_RESOURCEWELL_AWARD_LINES:String = "../maps/icons/resourceWell/award/lines.png";
       
-      public static const MAPS_ICONS_RESOURCEWELL_AWARD_MUZZLE_M:String = "../maps/icons/resourceWell/award/muzzle_m.png";
+      public static const MAPS_ICONS_RESOURCEWELL_AWARD_NUMBER_3:String = "../maps/icons/resourceWell/award/number_3.png";
       
-      public static const MAPS_ICONS_RESOURCEWELL_AWARD_MUZZLE_S:String = "../maps/icons/resourceWell/award/muzzle_s.png";
+      public static const MAPS_ICONS_RESOURCEWELL_AWARD_NUMBER_4:String = "../maps/icons/resourceWell/award/number_4.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_AWARD_NUMBER_5:String = "../maps/icons/resourceWell/award/number_5.png";
       
       public static const MAPS_ICONS_RESOURCEWELL_AWARD_NUMBER_SHADOW:String = "../maps/icons/resourceWell/award/number_shadow.png";
       
@@ -28092,6 +28614,14 @@ package
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G162_PROJECT_KPZ_07P_E_600X450:String = "../maps/icons/resourceWell/vehicles/G162_Project_Kpz_07P_E_600x450.png";
       
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G162_PROJECT_KPZ_07P_E_600X450_3D:String = "../maps/icons/resourceWell/vehicles/G162_Project_Kpz_07P_E_600x450_3d.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G178_STURMTIGER_V1_400X300:String = "../maps/icons/resourceWell/vehicles/G178_Sturmtiger_V1_400x300.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G178_STURMTIGER_V1_400X300_3D:String = "../maps/icons/resourceWell/vehicles/G178_Sturmtiger_V1_400x300_3d.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G178_STURMTIGER_V1_600X450:String = "../maps/icons/resourceWell/vehicles/G178_Sturmtiger_V1_600x450.png";
+      
+      public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_G178_STURMTIGER_V1_600X450_3D:String = "../maps/icons/resourceWell/vehicles/G178_Sturmtiger_V1_600x450_3d.png";
       
       public static const MAPS_ICONS_RESOURCEWELL_VEHICLES_IT33_ORSO_400X300:String = "../maps/icons/resourceWell/vehicles/It33_Orso_400x300.png";
       
@@ -28691,7 +29221,19 @@ package
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_COCACOLA:String = "../maps/icons/selectableReward/reward/s180x135/cocacola.png";
       
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/selectableReward/reward/s180x135/comboXpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/selectableReward/reward/s180x135/comboXpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_COMBOXPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/selectableReward/reward/s180x135/comboXpDirectivesBattleBooster3.png";
+      
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_COMMANDERSVIEW:String = "../maps/icons/selectableReward/reward/s180x135/commandersView.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_CREDITSDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/selectableReward/reward/s180x135/creditsDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_CREDITSDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/selectableReward/reward/s180x135/creditsDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_CREDITSDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/selectableReward/reward/s180x135/creditsDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_CREWBOOK_CHINA:String = "../maps/icons/selectableReward/reward/s180x135/crewBook_china.png";
       
@@ -28902,6 +29444,12 @@ package
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_TURBOCHARGER_TIER2:String = "../maps/icons/selectableReward/reward/s180x135/turbocharger_tier2.png";
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_TURBOCHARGER_TIER3:String = "../maps/icons/selectableReward/reward/s180x135/turbocharger_tier3.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/selectableReward/reward/s180x135/xpDirectivesBattleBooster1.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_XPDIRECTIVESBATTLEBOOSTER2:String = "../maps/icons/selectableReward/reward/s180x135/xpDirectivesBattleBooster2.png";
+      
+      public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_S180X135_XPDIRECTIVESBATTLEBOOSTER3:String = "../maps/icons/selectableReward/reward/s180x135/xpDirectivesBattleBooster3.png";
       
       public static const MAPS_ICONS_SELECTABLEREWARD_REWARD_SELECTBUTTON_MINUS_DISABLED:String = "../maps/icons/selectableReward/reward/selectButton/minus_disabled.png";
       
@@ -29198,8 +29746,6 @@ package
       public static const MAPS_ICONS_SEQUENCE_GOLDEN_PARTICLES_SPRITE_3:String = "../maps/icons/sequence/golden_particles/sprite_3.png";
       
       public static const MAPS_ICONS_SEQUENCE_NEW_SKILL_SKILL_0:String = "../maps/icons/sequence/new_skill/skill_0.png";
-      
-      public static const MAPS_ICONS_SEQUENCE_NEW_SKILL_SKILL_SMALL_0:String = "../maps/icons/sequence/new_skill/skill_small_0.png";
       
       public static const MAPS_ICONS_SEQUENCE_SUN_SHINE_LOOP_0000:String = "../maps/icons/sequence/sun_shine/Loop_0000.png";
       
@@ -29859,6 +30405,8 @@ package
       
       public static const MAPS_ICONS_TANKMEN_CREW_INFORMATION:String = "../maps/icons/tankmen/crew/information.png";
       
+      public static const MAPS_ICONS_TANKMEN_CREW_RECRUITLOCK:String = "../maps/icons/tankmen/crew/recruitLock.png";
+      
       public static const MAPS_ICONS_TANKMEN_CREW_REFRESH:String = "../maps/icons/tankmen/crew/refresh.png";
       
       public static const MAPS_ICONS_TANKMEN_CREW_RETRAIN:String = "../maps/icons/tankmen/crew/retrain.png";
@@ -30203,6 +30751,14 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/204x256/tankmen_BP17_5.png";
       
+      public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/204x256/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/204x256/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/204x256/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/204x256/tankmen_DR2025_4.png";
+      
       public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_INZHENER_2:String = "../maps/icons/tankmen/icons/204x256/tankmen_Inzhener_2.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_204X256_TANKMEN_MAY25_1:String = "../maps/icons/tankmen/icons/204x256/tankmen_May25_1.png";
@@ -30397,10 +30953,6 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_204X256_CREWSKINS_ZELENY:String = "../maps/icons/tankmen/icons/204x256/crewSkins/zeleny.png";
       
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_AUCTION_1:String = "../maps/icons/tankmen/icons/barracks/auction_1.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_AUCTION_2:String = "../maps/icons/tankmen/icons/barracks/auction_2.png";
-      
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_ASIA:String = "../maps/icons/tankmen/icons/barracks/bob20_commander1_asia.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_EU:String = "../maps/icons/tankmen/icons/barracks/bob20_commander1_eu.png";
@@ -30535,16 +31087,6 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_4:String = "../maps/icons/tankmen/icons/barracks/bp_commander_7_4.png";
       
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_1:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_1.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_2:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_2.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_3:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_3.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_4:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_4.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_5:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_5.png";
-      
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_6:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_6.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_7:String = "../maps/icons/tankmen/icons/barracks/bp_commander_8_7.png";
@@ -30646,8 +31188,6 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_TRUS:String = "../maps/icons/tankmen/icons/barracks/commander_mf_Trus.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_NIKOLAY_KUZNETSOV:String = "../maps/icons/tankmen/icons/barracks/commander_Nikolay_Kuznetsov.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_QUICKYBABY:String = "../maps/icons/tankmen/icons/barracks/commander_quickybaby.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COSM25_1:String = "../maps/icons/tankmen/icons/barracks/cosm25_1.png";
       
@@ -30956,12 +31496,6 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_REIZEI:String = "../maps/icons/tankmen/icons/barracks/girls_und_panzer_reizei.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_TAKEBE:String = "../maps/icons/tankmen/icons/barracks/girls_und_panzer_takebe.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GI_JOE_2022_BARONESS:String = "../maps/icons/tankmen/icons/barracks/gi_joe_2022_baroness.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GI_JOE_2022_COVER_GIRL:String = "../maps/icons/tankmen/icons/barracks/gi_joe_2022_cover_girl.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HANDOFBLOOD:String = "../maps/icons/tankmen/icons/barracks/HandOfBlood.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_1:String = "../maps/icons/tankmen/icons/barracks/hunter_1.png";
       
@@ -31675,6 +32209,14 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/barracks/tankmen_BP17_5.png";
       
+      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/barracks/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/barracks/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/barracks/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/barracks/tankmen_DR2025_4.png";
+      
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_BABAYAGA:String = "../maps/icons/tankmen/icons/barracks/tankmen_hw_BabaYaga.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_IVANCAREVICH:String = "../maps/icons/tankmen/icons/barracks/tankmen_hw_IvanCarevich.png";
@@ -31746,8 +32288,6 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH33:String = "../maps/icons/tankmen/icons/barracks/twitch33.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH34:String = "../maps/icons/tankmen/icons/barracks/twitch34.png";
-      
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH35:String = "../maps/icons/tankmen/icons/barracks/twitch35.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH6_PUMPKIN_TWITCH:String = "../maps/icons/tankmen/icons/barracks/twitch6_pumpkin_twitch.png";
       
@@ -32357,6 +32897,14 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/s232x174/tankmen_BP17_5.png";
       
+      public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/s232x174/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/s232x174/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/s232x174/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/s232x174/tankmen_DR2025_4.png";
+      
       public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_HW_BABAYAGA:String = "../maps/icons/tankmen/icons/s232x174/tankmen_hw_BabaYaga.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S232X174_TANKMEN_HW_IVANCAREVICH:String = "../maps/icons/tankmen/icons/s232x174/tankmen_hw_IvanCarevich.png";
@@ -32474,6 +33022,14 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_BP17_4:String = "../maps/icons/tankmen/icons/s296x222/tankmen_BP17_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/s296x222/tankmen_BP17_5.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/s296x222/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/s296x222/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/s296x222/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/s296x222/tankmen_DR2025_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S296X222_TANKMEN_HW_BABAYAGA:String = "../maps/icons/tankmen/icons/s296x222/tankmen_hw_BabaYaga.png";
       
@@ -32593,6 +33149,14 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/s400x300/tankmen_BP17_5.png";
       
+      public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/s400x300/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/s400x300/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/s400x300/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/s400x300/tankmen_DR2025_4.png";
+      
       public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_HW_BABAYAGA:String = "../maps/icons/tankmen/icons/s400x300/tankmen_hw_BabaYaga.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S400X300_TANKMEN_HW_IVANCAREVICH:String = "../maps/icons/tankmen/icons/s400x300/tankmen_hw_IvanCarevich.png";
@@ -32654,6 +33218,14 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_S48X48_TANKMEN_BP17_4:String = "../maps/icons/tankmen/icons/s48x48/tankmen_BP17_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S48X48_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/s48x48/tankmen_BP17_5.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S48X48_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/s48x48/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S48X48_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/s48x48/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S48X48_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/s48x48/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S48X48_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/s48x48/tankmen_DR2025_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_BOB25_COMMANDER_1:String = "../maps/icons/tankmen/icons/s600x450/bob25_commander_1.png";
       
@@ -32740,6 +33312,14 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_BP17_4:String = "../maps/icons/tankmen/icons/s600x450/tankmen_BP17_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/s600x450/tankmen_BP17_5.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/s600x450/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/s600x450/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/s600x450/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/s600x450/tankmen_DR2025_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S600X450_TANKMEN_HW_BABAYAGA:String = "../maps/icons/tankmen/icons/s600x450/tankmen_hw_BabaYaga.png";
       
@@ -32864,6 +33444,14 @@ package
       public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_BP17_4:String = "../maps/icons/tankmen/icons/s80x80/tankmen_BP17_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_BP17_5:String = "../maps/icons/tankmen/icons/s80x80/tankmen_BP17_5.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/s80x80/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/s80x80/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/s80x80/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/s80x80/tankmen_DR2025_4.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_S80X80_TANKMEN_MAY25_1:String = "../maps/icons/tankmen/icons/s80x80/tankmen_May25_1.png";
       
@@ -33033,6 +33621,14 @@ package
       
       public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_BP16_M:String = "../maps/icons/tankmen/icons/special/tankmen_BP16_M.png";
       
+      public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_DR2025_1:String = "../maps/icons/tankmen/icons/special/tankmen_DR2025_1.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_DR2025_2:String = "../maps/icons/tankmen/icons/special/tankmen_DR2025_2.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_DR2025_3:String = "../maps/icons/tankmen/icons/special/tankmen_DR2025_3.png";
+      
+      public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_DR2025_4:String = "../maps/icons/tankmen/icons/special/tankmen_DR2025_4.png";
+      
       public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_INZHENER_2:String = "../maps/icons/tankmen/icons/special/tankmen_Inzhener_2.png";
       
       public static const MAPS_ICONS_TANKMEN_ICONS_SPECIAL_TANKMEN_MF_1:String = "../maps/icons/tankmen/icons/special/tankmen_MF_1.png";
@@ -33200,6 +33796,14 @@ package
       public static const MAPS_ICONS_TANKMEN_ROLES_WHITE_LOADER:String = "../maps/icons/tankmen/roles/white/loader.png";
       
       public static const MAPS_ICONS_TANKMEN_ROLES_WHITE_RADIOMAN:String = "../maps/icons/tankmen/roles/white/radioman.png";
+      
+      public static const MAPS_ICONS_TANKMEN_SELECT_LEFT_ROW:String = "../maps/icons/tankmen/select/left_row.png";
+      
+      public static const MAPS_ICONS_TANKMEN_SELECT_LEFT_ROW_ACTIVE:String = "../maps/icons/tankmen/select/left_row_active.png";
+      
+      public static const MAPS_ICONS_TANKMEN_SELECT_RIGHT_ROW:String = "../maps/icons/tankmen/select/right_row.png";
+      
+      public static const MAPS_ICONS_TANKMEN_SELECT_RIGHT_ROW_ACTIVE:String = "../maps/icons/tankmen/select/right_row_active.png";
       
       public static const MAPS_ICONS_TANKMEN_SKILLS_22X22_BROTHERHOOD:String = "../maps/icons/tankmen/skills/22x22/brotherhood.png";
       
@@ -35327,7 +35931,7 @@ package
       
       public static const MAPS_ICONS_BUTTONS_ENUM:Array = [MAPS_ICONS_BUTTONS_BACK_SECONDARY,MAPS_ICONS_BUTTONS_BOOKMARK,MAPS_ICONS_BUTTONS_BUTTON_BACK_ARROW,MAPS_ICONS_BUTTONS_BUTTON_NEXT_ARROW,MAPS_ICONS_BUTTONS_BUTTON_PLAY2,MAPS_ICONS_BUTTONS_CALENDAR,MAPS_ICONS_BUTTONS_CHECKMARK,MAPS_ICONS_BUTTONS_CLAN_LIST,MAPS_ICONS_BUTTONS_CLAN_STATS,MAPS_ICONS_BUTTONS_DESTROY,MAPS_ICONS_BUTTONS_EDITABLE_SMALL,MAPS_ICONS_BUTTONS_ENTERWHITE,MAPS_ICONS_BUTTONS_ENVELOPE,MAPS_ICONS_BUTTONS_ENVELOPEOPENED,MAPS_ICONS_BUTTONS_EQUIPPED_ICON,MAPS_ICONS_BUTTONS_EXPLORE,MAPS_ICONS_BUTTONS_EXP_GATHERING,MAPS_ICONS_BUTTONS_FANTASTICAL,MAPS_ICONS_BUTTONS_FILTER,MAPS_ICONS_BUTTONS_FOOTHOLD,MAPS_ICONS_BUTTONS_GOLD_EXCHANGING,MAPS_ICONS_BUTTONS_HIST_SMALL,MAPS_ICONS_BUTTONS_HORN,MAPS_ICONS_BUTTONS_ICONDESTROY,MAPS_ICONS_BUTTONS_ICONDOWN,MAPS_ICONS_BUTTONS_ICONUP,MAPS_ICONS_BUTTONS_ICONUPGRADE,MAPS_ICONS_BUTTONS_ICON_ARROW_FORMATION_LEFT,MAPS_ICONS_BUTTONS_ICON_ARROW_FORMATION_LEFT_DOUBLE,MAPS_ICONS_BUTTONS_ICON_ARROW_FORMATION_RIGHT,MAPS_ICONS_BUTTONS_ICON_ARROW_FORMATION_RIGHT_DOUBLE,MAPS_ICONS_BUTTONS_ICON_BUTTON_ARROW,MAPS_ICONS_BUTTONS_ICON_CHANNELS_HIDE_SYMBOLS,MAPS_ICONS_BUTTONS_ICON_CHANNELS_SHOW_SYMBOLS_097,MAPS_ICONS_BUTTONS_ICON_TABLE_COMPARISON_CHECKMARK,MAPS_ICONS_BUTTONS_ICON_TABLE_COMPARISON_INHANGAR,MAPS_ICONS_BUTTONS_INDICATOR_SELECTED_BOX,MAPS_ICONS_BUTTONS_LEVEL_UP,MAPS_ICONS_BUTTONS_MAINMENU,MAPS_ICONS_BUTTONS_MAITENANCE,MAPS_ICONS_BUTTONS_NATION_CHANGE,MAPS_ICONS_BUTTONS_NC_ICON_MEDIUM,MAPS_ICONS_BUTTONS_NEXTPAGE,MAPS_ICONS_BUTTONS_NON_EDITABLE,MAPS_ICONS_BUTTONS_NON_HISTORICAL,MAPS_ICONS_BUTTONS_PAUSE,MAPS_ICONS_BUTTONS_PLAY,MAPS_ICONS_BUTTONS_PLAYERS,MAPS_ICONS_BUTTONS_PP_ICON,MAPS_ICONS_BUTTONS_PP_LOCK,MAPS_ICONS_BUTTONS_PREMIUM,MAPS_ICONS_BUTTONS_PREVIOUSPAGE,MAPS_ICONS_BUTTONS_PROGRESSION,MAPS_ICONS_BUTTONS_REFILL_ACCOUNT,MAPS_ICONS_BUTTONS_REFRESH,MAPS_ICONS_BUTTONS_REMOVE,MAPS_ICONS_BUTTONS_REMOVEGOLD,MAPS_ICONS_BUTTONS_REVERT_24X24,MAPS_ICONS_BUTTONS_SEARCH,MAPS_ICONS_BUTTONS_SELECTORRENDERERBGBR,MAPS_ICONS_BUTTONS_SELECTORRENDERERBGEVENT,MAPS_ICONS_BUTTONS_SELECTORRENDEREREXTRABGEVENT,MAPS_ICONS_BUTTONS_SETTINGS,MAPS_ICONS_BUTTONS_SMALLATTACKICON,MAPS_ICONS_BUTTONS_SOUND,MAPS_ICONS_BUTTONS_SPEAKER_SMALL,MAPS_ICONS_BUTTONS_SPEAKER_SUB,MAPS_ICONS_BUTTONS_STROKE,MAPS_ICONS_BUTTONS_SWAP,MAPS_ICONS_BUTTONS_SWAP2,MAPS_ICONS_BUTTONS_SWAP3,MAPS_ICONS_BUTTONS_SWAP3_ROTATED,MAPS_ICONS_BUTTONS_TANK_ICO,MAPS_ICONS_BUTTONS_TANKMAN_SKILLS_DROP,MAPS_ICONS_BUTTONS_TIMER,MAPS_ICONS_BUTTONS_TOGGLE_ACTIVE,MAPS_ICONS_BUTTONS_TOGGLE_CHECK,MAPS_ICONS_BUTTONS_TOGGLE_DISABLE,MAPS_ICONS_BUTTONS_TOGGLE_HOVER,MAPS_ICONS_BUTTONS_TOGGLE_INDICATOR,MAPS_ICONS_BUTTONS_TOGGLE_INDICATOR_ACTIVE,MAPS_ICONS_BUTTONS_TOGGLE_SHINE,MAPS_ICONS_BUTTONS_TOGGLE_SWITCHER_OFF,MAPS_ICONS_BUTTONS_TOGGLE_SWITCHER_ON,MAPS_ICONS_BUTTONS_TOGGLE_TEXTURE,MAPS_ICONS_BUTTONS_TRANSPORTING,MAPS_ICONS_BUTTONS_TRANSPORTINGARROW,MAPS_ICONS_BUTTONS_TUNING,MAPS_ICONS_BUTTONS_VEHICLE_FILTER,MAPS_ICONS_BUTTONS_VEHICLECOMPAREBTN,MAPS_ICONS_BUTTONS_SOCIAL_FACEBOOK,MAPS_ICONS_BUTTONS_SOCIAL_GOOGLE,MAPS_ICONS_BUTTONS_SOCIAL_NAVER,MAPS_ICONS_BUTTONS_SOCIAL_VKONTAKTE,MAPS_ICONS_BUTTONS_SOCIAL_WGNI,MAPS_ICONS_BUTTONS_SOCIAL_YAHOO,MAPS_ICONS_BUTTONS_SOCIAL_COLOR_FACEBOOK,MAPS_ICONS_BUTTONS_SOCIAL_COLOR_GOOGLE,MAPS_ICONS_BUTTONS_SOCIAL_COLOR_NAVER,MAPS_ICONS_BUTTONS_SOCIAL_COLOR_VKONTAKTE,MAPS_ICONS_BUTTONS_SOCIAL_COLOR_WGNI,MAPS_ICONS_BUTTONS_SOCIAL_COLOR_YAHOO,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_ASCENDINGSORTARROW,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_ASCPROFILESORTARROW,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_DAMAGE,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_DEATHS,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_DESCENDINGSORTARROW,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_DESCPROFILESORTARROW,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_FALLOUTRESOURCEPOINTS,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_FLAG,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_FRAG,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_HEALTH,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_LEVEL,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_LEVEL_6_8,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_MEDAL,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_NOTAVAILABLE,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_OK,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_PLAYER,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_PLAYERNUMBER,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_PLAYERRANK,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_PRESTIGEPOINTS,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_RANK,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_RESOURCECOUNT,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_RESPAWN,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_SQUAD,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_STAR_RED,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_TABLEHEADERBG,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_TABLEHEADERSORTEDBG,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_TANK,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_TEAMSCORE,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_VICTORYSCORE,MAPS_ICONS_BUTTONS_TAB_SORT_BUTTON_XP];
       
-      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ENUM:Array = [MAPS_ICONS_TANKMEN_ICONS_BARRACKS_AUCTION_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_AUCTION_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER3_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER3_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER4_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER4_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER4_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER4_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER5_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER6_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER7_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER8_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOSS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_1_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_1_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_10_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_10_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_10_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_2_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_2_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_3_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_3_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_3_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_5_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_5_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_5_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_6_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_6_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_6_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_9_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_9_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_9_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_BABAYAGA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_IVANCAREVICH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_KASHCHEI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_VASILISA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MARINA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_BALBES,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_BYVALY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_TRUS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_NIKOLAY_KUZNETSOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_QUICKYBABY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COSM25_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COSM25_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CROSSIVENT_EKIPAZH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_EMPTY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_EMPTYRED,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GAGARIN21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRL_EMPTY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_AKIYAMA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_ISUZU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_NISHIZUMI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_REIZEI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_TAKEBE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GI_JOE_2022_BARONESS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GI_JOE_2022_COVER_GIRL,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HANDOFBLOOD,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_TAILRIUS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_AURELIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_DEIRDRA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_KORDELIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_SIBILLA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_BUFFON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_CARISA_CONTZEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_GUNNER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_GUNNER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_GUSURG,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_ISARA_GUNTHER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_KREIS_CZHERNY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_LOADER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_LOADER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_RADIO_OPERATOR,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_WELKIN_GUNTHER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_CHRISTMAS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_FAIRYTALE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_NEWYEAR,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_ORIENTAL,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_SNOWMEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_MEN_A,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23RUBY_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_M,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_PROCYON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_HVATAIKA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_MATROSKIN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_SHARIK,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TAMATAMA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_STRATEGIST,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_21_KOS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_22_CZERESNIAK,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_23_SAAKASZWILI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_24_JELEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_RACE19_COMMANDER_A,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_RACE19_COMMANDER_B,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_RACE19_COMMANDER_C,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_36,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_37,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_38,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_39,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_40,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_41,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_42,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMAN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_ARTILLERYMAN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_DUBININ,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_HOLSTININ,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_POPOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_UDALOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_ZHITNYAKOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_ZHORIK,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_M,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_BABAYAGA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_IVANCAREVICH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_KASHCHEI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_KATRINA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_VASILISA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_INZHENER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MAY25_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MAY25_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MAY25_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_5_D_VOVA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_6_SCRIPACH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_7_UEF,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_8_BI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_RAZVEDCHIK_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_WT2024_ELISA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_WT2024_MARAT,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH6_PUMPKIN_TWITCH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH_GIRL,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH_GUY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_36,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_37,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_38,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_39,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_40,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_41,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_42,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_43,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_44,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_45,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_46,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_47,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_WT_2022_BOSS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_WT_2022_HUNTER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YANDEX_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_COMMANDER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_DRIVER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_GUNNER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_LOADER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_RADIO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_ALICE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE01,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE02,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE03,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE04,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE05,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE06,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE07,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE08,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE09,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_ADAMS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_FARMER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_GEORGE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_HORTON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_KOSTRITSYN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_DEGAULLE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_DURDEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_EEKEEBOO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_CRAYFISH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_DEER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_RNGESUS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_TOMATO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_UNICORN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_GRADOVSKIY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_KADETTKNABE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_KATUKOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_KRIEGER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_LAUDORF,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_LEGRASSE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_PATTON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE01,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE02,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE03,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE04,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE05,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE06,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE07,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE08,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE09,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RAMIREZ,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RYBALKO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SAFRONOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SALDERN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SELEZNEV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE01,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE02,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE03,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE04,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE05,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE06,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_VOJTECH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_ZELENY];
+      public static const MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ENUM:Array = [MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER1_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER2_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER3_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER3_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER4_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB20_COMMANDER4_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER1_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER2_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_ASIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_NA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER3_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER4_EU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER4_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER5_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER6_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER7_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB21_BLOGGER8_RU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOB25_COMMANDER_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BOSS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_1_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_1_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_10_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_10_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_10_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_11_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_12_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_2_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_2_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_3_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_3_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_3_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_5_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_5_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_5_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_6_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_6_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_6_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_7_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_8_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_9_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_9_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_BP_COMMANDER_9_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CHINA_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_BABAYAGA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_IVANCAREVICH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_KASHCHEI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_BP_VASILISA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MARINA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_BALBES,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_BYVALY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_MF_TRUS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COMMANDER_NIKOLAY_KUZNETSOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COSM25_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_COSM25_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CROSSIVENT_EKIPAZH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CZECH_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_EMPTY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_EMPTYRED,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_FRANCE_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GAGARIN21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GERMANY_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRL_EMPTY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_AKIYAMA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_ISUZU,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_NISHIZUMI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_REIZEI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_GIRLS_UND_PANZER_TAKEBE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HUNTER_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW19_COMMANDER5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW21_COMMANDER5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_TAILRIUS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_AURELIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_DEIRDRA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_KORDELIA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_HW22_WITCH_SIBILLA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_INTUNION_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_BUFFON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_ITALY_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_CARISA_CONTZEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_GUNNER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_GUNNER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_GUSURG,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_ISARA_GUNTHER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_KREIS_CZHERNY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_LOADER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_LOADER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_RADIO_OPERATOR,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_JAPAN_WELKIN_GUNTHER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_LADS_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY19_WOMAN_L8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_CHRISTMAS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_FAIRYTALE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_NEWYEAR,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_GIRL_ORIENTAL,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY20_SNOWMEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_GIRL_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY21_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_GIRL_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_MEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY22_MEN_A,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23RUBY_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY23_GIRL_M,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY24_TANKMEN_PROCYON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_HVATAIKA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_MATROSKIN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_SHARIK,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TAMATAMA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_NY25_TANKMEN_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_STRATEGIST,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_OOW21_TANKER4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_21_KOS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_22_CZERESNIAK,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_23_SAAKASZWILI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_24_JELEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_POLAND_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_RACE19_COMMANDER_A,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_RACE19_COMMANDER_B,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_RACE19_COMMANDER_C,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_36,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_37,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_38,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_39,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_40,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_41,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_42,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_SWEDEN_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMAN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_2024_RACER_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_ARTILLERYMAN_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_DUBININ,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_HOLSTININ,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_POPOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_UDALOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_ZHITNYAKOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_AR_ZHORIK,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP12MT_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP13_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP14_AC_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP15_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP16_M,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_BP17_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_DR2025_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_BABAYAGA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_IVANCAREVICH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_KASHCHEI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_KATRINA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_HW_VASILISA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_INZHENER_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MAY25_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MAY25_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MAY25_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_5_D_VOVA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_6_SCRIPACH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_7_UEF,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_MF_8_BI,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_RAZVEDCHIK_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_T3_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_WT2024_ELISA,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TANKMEN_WT2024_MARAT,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH6_PUMPKIN_TWITCH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH_GIRL,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_TWITCH_GUY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_UK_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_35,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_36,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_37,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_38,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_39,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_40,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_41,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_42,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_43,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_44,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_45,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_46,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_47,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USA_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_20,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_21,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_22,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_23,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_24,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_25,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_26,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_27,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_28,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_29,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_30,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_31,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_32,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_33,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_34,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_17,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_18,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_19,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_2,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_3,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_4,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_5,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_6,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_7,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_8,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_USSR_FEMALE_9,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_WT_2022_BOSS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_WT_2022_HUNTER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YANDEX_1,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_COMMANDER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_DRIVER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_GUNNER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_LOADER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_YHA_RADIO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_ALICE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE01,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE02,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE03,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE04,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE05,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE06,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE07,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE08,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE09,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_BRAVE16,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_ADAMS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_FARMER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_GEORGE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_HORTON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_COSM_KOSTRITSYN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_DEGAULLE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_DURDEN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_EEKEEBOO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_CRAYFISH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_DEER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_RNGESUS,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_TOMATO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_FOOLSDAY_UNICORN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_GRADOVSKIY,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_KADETTKNABE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_KATUKOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_KRIEGER,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_LAUDORF,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_LEGRASSE,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_PATTON,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE01,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE02,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE03,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE04,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE05,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE06,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE07,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE08,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE09,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE10,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE11,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE12,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE13,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE14,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RACE15,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RAMIREZ,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_RYBALKO,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SAFRONOV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SALDERN,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SELEZNEV,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE01,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE02,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE03,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE04,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE05,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_SPACE06,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_VOJTECH,MAPS_ICONS_TANKMEN_ICONS_BARRACKS_CREWSKINS_ZELENY];
       
       public static const MAPS_ICONS_TANKMEN_SKILLS_SMALL_ENUM:Array = [MAPS_ICONS_TANKMEN_SKILLS_SMALL_BROTHERHOOD,MAPS_ICONS_TANKMEN_SKILLS_SMALL_CAMOUFLAGE,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_EAGLEEYE,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_ENEMYSHOTPREDICTOR,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_EXPERT,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_PRACTICAL,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_SIXTHSENSE,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_TUTOR,MAPS_ICONS_TANKMEN_SKILLS_SMALL_COMMANDER_UNIVERSALIST,MAPS_ICONS_TANKMEN_SKILLS_SMALL_DRIVER_BADROADSKING,MAPS_ICONS_TANKMEN_SKILLS_SMALL_DRIVER_RAMMINGMASTER,MAPS_ICONS_TANKMEN_SKILLS_SMALL_DRIVER_SMOOTHDRIVING,MAPS_ICONS_TANKMEN_SKILLS_SMALL_DRIVER_TIDYPERSON,MAPS_ICONS_TANKMEN_SKILLS_SMALL_DRIVER_VIRTUOSO,MAPS_ICONS_TANKMEN_SKILLS_SMALL_FIREFIGHTING,MAPS_ICONS_TANKMEN_SKILLS_SMALL_GUNNER_GUNSMITH,MAPS_ICONS_TANKMEN_SKILLS_SMALL_GUNNER_RANCOROUS,MAPS_ICONS_TANKMEN_SKILLS_SMALL_GUNNER_SMOOTHTURRET,MAPS_ICONS_TANKMEN_SKILLS_SMALL_GUNNER_SNIPER,MAPS_ICONS_TANKMEN_SKILLS_SMALL_LOADER_DESPERADO,MAPS_ICONS_TANKMEN_SKILLS_SMALL_LOADER_INTUITION,MAPS_ICONS_TANKMEN_SKILLS_SMALL_LOADER_PEDANT,MAPS_ICONS_TANKMEN_SKILLS_SMALL_NEW_CURRENT_SKILL,MAPS_ICONS_TANKMEN_SKILLS_SMALL_NEW_SKILL,MAPS_ICONS_TANKMEN_SKILLS_SMALL_OFFSPRING_BROTHERHOOD,MAPS_ICONS_TANKMEN_SKILLS_SMALL_RADIOMAN_FINDER,MAPS_ICONS_TANKMEN_SKILLS_SMALL_RADIOMAN_INVENTOR,MAPS_ICONS_TANKMEN_SKILLS_SMALL_RADIOMAN_LASTEFFORT,MAPS_ICONS_TANKMEN_SKILLS_SMALL_RADIOMAN_RETRANSMITTER,MAPS_ICONS_TANKMEN_SKILLS_SMALL_REPAIR,MAPS_ICONS_TANKMEN_SKILLS_SMALL_SABATON_BROTHERHOOD,MAPS_ICONS_TANKMEN_SKILLS_SMALL_WITCHES_BROTHERHOOD,MAPS_ICONS_TANKMEN_SKILLS_SMALL_YHA_BROTHERHOOD];
       
@@ -35345,7 +35949,7 @@ package
       
       public static const MAPS_ICONS_BATTLETYPES_136X136_ENUM:Array = [MAPS_ICONS_BATTLETYPES_136X136_ASSAULT,MAPS_ICONS_BATTLETYPES_136X136_ASSAULT1,MAPS_ICONS_BATTLETYPES_136X136_ASSAULT2,MAPS_ICONS_BATTLETYPES_136X136_BATTLE_ROYALE,MAPS_ICONS_BATTLETYPES_136X136_BOOTCAMP,MAPS_ICONS_BATTLETYPES_136X136_CLAN,MAPS_ICONS_BATTLETYPES_136X136_COMP7,MAPS_ICONS_BATTLETYPES_136X136_COMP7_1,MAPS_ICONS_BATTLETYPES_136X136_COMP7_2,MAPS_ICONS_BATTLETYPES_136X136_CTF,MAPS_ICONS_BATTLETYPES_136X136_CTF30X30,MAPS_ICONS_BATTLETYPES_136X136_DOMINATION,MAPS_ICONS_BATTLETYPES_136X136_DOMINATION3,MAPS_ICONS_BATTLETYPES_136X136_DOMINATION30X30,MAPS_ICONS_BATTLETYPES_136X136_EPICBATTLE,MAPS_ICONS_BATTLETYPES_136X136_ESCORT,MAPS_ICONS_BATTLETYPES_136X136_FALLOUT,MAPS_ICONS_BATTLETYPES_136X136_FALLOUT_CLASSIC,MAPS_ICONS_BATTLETYPES_136X136_FALLOUT_MULTITEAM,MAPS_ICONS_BATTLETYPES_136X136_FORTIFICATIONS,MAPS_ICONS_BATTLETYPES_136X136_HISTORICAL,MAPS_ICONS_BATTLETYPES_136X136_MAPBOX,MAPS_ICONS_BATTLETYPES_136X136_MAPSTRAINING,MAPS_ICONS_BATTLETYPES_136X136_NATIONS,MAPS_ICONS_BATTLETYPES_136X136_NEUTRAL,MAPS_ICONS_BATTLETYPES_136X136_PLATOON,MAPS_ICONS_BATTLETYPES_136X136_RANDOM,MAPS_ICONS_BATTLETYPES_136X136_RANKED,MAPS_ICONS_BATTLETYPES_136X136_RESOURCEPOINTS,MAPS_ICONS_BATTLETYPES_136X136_SQUAD,MAPS_ICONS_BATTLETYPES_136X136_TEAM,MAPS_ICONS_BATTLETYPES_136X136_TEAM7X7,MAPS_ICONS_BATTLETYPES_136X136_TRAINING,MAPS_ICONS_BATTLETYPES_136X136_VERSUSAI,MAPS_ICONS_BATTLETYPES_136X136_WINBACK];
       
-      public static const MAPS_ICONS_BATTLETYPES_64X64_ENUM:Array = [MAPS_ICONS_BATTLETYPES_64X64_ASSAULT,MAPS_ICONS_BATTLETYPES_64X64_ASSAULT1,MAPS_ICONS_BATTLETYPES_64X64_ASSAULT2,MAPS_ICONS_BATTLETYPES_64X64_BATTLEROYALEQUEUE,MAPS_ICONS_BATTLETYPES_64X64_BATTLEROYALESQUAD,MAPS_ICONS_BATTLETYPES_64X64_BATTLE_ROYALE,MAPS_ICONS_BATTLETYPES_64X64_BOOTCAMP,MAPS_ICONS_BATTLETYPES_64X64_COMP7,MAPS_ICONS_BATTLETYPES_64X64_COMP7SQUAD,MAPS_ICONS_BATTLETYPES_64X64_COMP7_1,MAPS_ICONS_BATTLETYPES_64X64_COMP7_2,MAPS_ICONS_BATTLETYPES_64X64_CTF,MAPS_ICONS_BATTLETYPES_64X64_CTF30X30,MAPS_ICONS_BATTLETYPES_64X64_DOMINATION,MAPS_ICONS_BATTLETYPES_64X64_DOMINATION3,MAPS_ICONS_BATTLETYPES_64X64_EPICBATTLE,MAPS_ICONS_BATTLETYPES_64X64_EPICQUEUE,MAPS_ICONS_BATTLETYPES_64X64_EPICTRAININGSLIST,MAPS_ICONS_BATTLETYPES_64X64_ESCORT,MAPS_ICONS_BATTLETYPES_64X64_ESPORT,MAPS_ICONS_BATTLETYPES_64X64_EVENT,MAPS_ICONS_BATTLETYPES_64X64_EVENTSQUAD,MAPS_ICONS_BATTLETYPES_64X64_FALLOUT,MAPS_ICONS_BATTLETYPES_64X64_FALLOUT_CLASSIC,MAPS_ICONS_BATTLETYPES_64X64_FALLOUT_MULTITEAM,MAPS_ICONS_BATTLETYPES_64X64_FORT,MAPS_ICONS_BATTLETYPES_64X64_FORTIFICATIONS,MAPS_ICONS_BATTLETYPES_64X64_FRONTLINE,MAPS_ICONS_BATTLETYPES_64X64_HISTORICAL,MAPS_ICONS_BATTLETYPES_64X64_MAPBOX,MAPS_ICONS_BATTLETYPES_64X64_MAPSTRAINING,MAPS_ICONS_BATTLETYPES_64X64_NATIONS,MAPS_ICONS_BATTLETYPES_64X64_NEUTRAL,MAPS_ICONS_BATTLETYPES_64X64_RANDOM,MAPS_ICONS_BATTLETYPES_64X64_RANKED,MAPS_ICONS_BATTLETYPES_64X64_RANKED_EPICRANDOM,MAPS_ICONS_BATTLETYPES_64X64_RESOURCEPOINTS,MAPS_ICONS_BATTLETYPES_64X64_SPECBATTLESLIST,MAPS_ICONS_BATTLETYPES_64X64_SQUAD,MAPS_ICONS_BATTLETYPES_64X64_STEELHUNT,MAPS_ICONS_BATTLETYPES_64X64_STRONGHOLDSBATTLESLIST,MAPS_ICONS_BATTLETYPES_64X64_TEAM7X7,MAPS_ICONS_BATTLETYPES_64X64_TRAININGSLIST,MAPS_ICONS_BATTLETYPES_64X64_VERSUSAI,MAPS_ICONS_BATTLETYPES_64X64_WINBACK];
+      public static const MAPS_ICONS_BATTLETYPES_64X64_ENUM:Array = [MAPS_ICONS_BATTLETYPES_64X64_ASSAULT,MAPS_ICONS_BATTLETYPES_64X64_ASSAULT1,MAPS_ICONS_BATTLETYPES_64X64_ASSAULT2,MAPS_ICONS_BATTLETYPES_64X64_BATTLEROYALEQUEUE,MAPS_ICONS_BATTLETYPES_64X64_BATTLEROYALESQUAD,MAPS_ICONS_BATTLETYPES_64X64_BATTLE_ROYALE,MAPS_ICONS_BATTLETYPES_64X64_BOOTCAMP,MAPS_ICONS_BATTLETYPES_64X64_COMP7,MAPS_ICONS_BATTLETYPES_64X64_COMP7SQUAD,MAPS_ICONS_BATTLETYPES_64X64_COMP7_1,MAPS_ICONS_BATTLETYPES_64X64_COMP7_2,MAPS_ICONS_BATTLETYPES_64X64_CTF,MAPS_ICONS_BATTLETYPES_64X64_CTF30X30,MAPS_ICONS_BATTLETYPES_64X64_DOMINATION,MAPS_ICONS_BATTLETYPES_64X64_DOMINATION3,MAPS_ICONS_BATTLETYPES_64X64_EPICBATTLE,MAPS_ICONS_BATTLETYPES_64X64_EPICQUEUE,MAPS_ICONS_BATTLETYPES_64X64_EPICTRAININGSLIST,MAPS_ICONS_BATTLETYPES_64X64_ESCORT,MAPS_ICONS_BATTLETYPES_64X64_ESPORT,MAPS_ICONS_BATTLETYPES_64X64_EVENT,MAPS_ICONS_BATTLETYPES_64X64_EVENTSQUAD,MAPS_ICONS_BATTLETYPES_64X64_FALLOUT,MAPS_ICONS_BATTLETYPES_64X64_FALLOUT_CLASSIC,MAPS_ICONS_BATTLETYPES_64X64_FALLOUT_MULTITEAM,MAPS_ICONS_BATTLETYPES_64X64_FORT,MAPS_ICONS_BATTLETYPES_64X64_FORTIFICATIONS,MAPS_ICONS_BATTLETYPES_64X64_FRONTLINE,MAPS_ICONS_BATTLETYPES_64X64_HISTORICAL,MAPS_ICONS_BATTLETYPES_64X64_MAPBOX,MAPS_ICONS_BATTLETYPES_64X64_MAPSTRAINING,MAPS_ICONS_BATTLETYPES_64X64_NATIONS,MAPS_ICONS_BATTLETYPES_64X64_NEUTRAL,MAPS_ICONS_BATTLETYPES_64X64_RANDOM,MAPS_ICONS_BATTLETYPES_64X64_RANKED,MAPS_ICONS_BATTLETYPES_64X64_RANKEDSQUAD,MAPS_ICONS_BATTLETYPES_64X64_RANKED_EPICRANDOM,MAPS_ICONS_BATTLETYPES_64X64_RESOURCEPOINTS,MAPS_ICONS_BATTLETYPES_64X64_SPECBATTLESLIST,MAPS_ICONS_BATTLETYPES_64X64_SQUAD,MAPS_ICONS_BATTLETYPES_64X64_STEELHUNT,MAPS_ICONS_BATTLETYPES_64X64_STRONGHOLDSBATTLESLIST,MAPS_ICONS_BATTLETYPES_64X64_TEAM7X7,MAPS_ICONS_BATTLETYPES_64X64_TRAININGSLIST,MAPS_ICONS_BATTLETYPES_64X64_VERSUSAI,MAPS_ICONS_BATTLETYPES_64X64_WINBACK];
       
       public static const MAPS_ICONS_RANKEDBATTLES_STATS_ALL_ENUM:Array = [MAPS_ICONS_RANKEDBATTLES_STATS_42_EFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_42_POSITION,MAPS_ICONS_RANKEDBATTLES_STATS_50_BATTLES,MAPS_ICONS_RANKEDBATTLES_STATS_50_BATTLESTOTAL,MAPS_ICONS_RANKEDBATTLES_STATS_50_DIVISIONEFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_50_EFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_50_POSITION,MAPS_ICONS_RANKEDBATTLES_STATS_50_STRIPES,MAPS_ICONS_RANKEDBATTLES_STATS_50_STRIPESTOTAL,MAPS_ICONS_RANKEDBATTLES_STATS_52_BATTLES,MAPS_ICONS_RANKEDBATTLES_STATS_52_BATTLESTOTAL,MAPS_ICONS_RANKEDBATTLES_STATS_52_DIVISIONEFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_52_EFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_52_STRIPES,MAPS_ICONS_RANKEDBATTLES_STATS_52_STRIPESTOTAL,MAPS_ICONS_RANKEDBATTLES_STATS_64_EFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_64_POSITION,MAPS_ICONS_RANKEDBATTLES_STATS_64_STEPS,MAPS_ICONS_RANKEDBATTLES_STATS_70_BATTLES,MAPS_ICONS_RANKEDBATTLES_STATS_70_BATTLESTOTAL,MAPS_ICONS_RANKEDBATTLES_STATS_70_DIVISIONEFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_70_EFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_70_STRIPES,MAPS_ICONS_RANKEDBATTLES_STATS_70_STRIPESTOTAL,MAPS_ICONS_RANKEDBATTLES_STATS_84_EFFICIENCY,MAPS_ICONS_RANKEDBATTLES_STATS_84_POSITION,MAPS_ICONS_RANKEDBATTLES_STATS_84_STEPS];
       
@@ -35361,7 +35965,7 @@ package
       
       public static const MAPS_ICONS_VEHPREVIEW_ENUM:Array = [MAPS_ICONS_VEHPREVIEW_BONUS_BATTLE,MAPS_ICONS_VEHPREVIEW_BONUS_CREDIT,MAPS_ICONS_VEHPREVIEW_BONUS_CREW,MAPS_ICONS_VEHPREVIEW_BONUS_REPLACE,MAPS_ICONS_VEHPREVIEW_VEHICLECHASSIS,MAPS_ICONS_VEHPREVIEW_VEHICLEENGINE,MAPS_ICONS_VEHPREVIEW_VEHICLEGUN,MAPS_ICONS_VEHPREVIEW_VEHICLERADIO,MAPS_ICONS_VEHPREVIEW_VEHICLETURRET,MAPS_ICONS_VEHPREVIEW_PROGRESSIONSTYLES_BPCOIN,MAPS_ICONS_VEHPREVIEW_PROGRESSIONSTYLES_BUYINGPANELBG,MAPS_ICONS_VEHPREVIEW_PROGRESSIONSTYLES_SEPARATOR];
       
-      public static const MAPS_ICONS_MODULETYPES_ENUM:Array = [MAPS_ICONS_MODULETYPES_ADDITIONALINVISIBILITYDEVICE,MAPS_ICONS_MODULETYPES_AFTERBURNING,MAPS_ICONS_MODULETYPES_AIMINGSTABILIZER,MAPS_ICONS_MODULETYPES_ANTIFRAGMENTATIONLINING,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_CR,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_CR_PREMIUM,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_FSDS,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_FSDS_PREMIUM,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_HE,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_PREMIUM,MAPS_ICONS_MODULETYPES_ARTILLERY,MAPS_ICONS_MODULETYPES_AUTOEXTINGUISHERS,MAPS_ICONS_MODULETYPES_BOMBER,MAPS_ICONS_MODULETYPES_BROTHERHOOD,MAPS_ICONS_MODULETYPES_CAMOUFLAGE,MAPS_ICONS_MODULETYPES_CAMOUFLAGENET,MAPS_ICONS_MODULETYPES_CHOCOLATE,MAPS_ICONS_MODULETYPES_COATEDOPTICS,MAPS_ICONS_MODULETYPES_COCACOLA,MAPS_ICONS_MODULETYPES_COMMANDERSVIEW,MAPS_ICONS_MODULETYPES_COMMANDER_EAGLEEYE,MAPS_ICONS_MODULETYPES_COMMANDER_ENEMYSHOTPREDICTOR,MAPS_ICONS_MODULETYPES_COMMANDER_EXPERT,MAPS_ICONS_MODULETYPES_COMMANDER_PRACTICAL,MAPS_ICONS_MODULETYPES_COMMANDER_SIXTHSENSE,MAPS_ICONS_MODULETYPES_COMMANDER_TUTOR,MAPS_ICONS_MODULETYPES_COMMANDER_UNIVERSALIST,MAPS_ICONS_MODULETYPES_CREW,MAPS_ICONS_MODULETYPES_CREWBOOK_BROCHURE,MAPS_ICONS_MODULETYPES_CREWBOOK_CREWBOOK,MAPS_ICONS_MODULETYPES_CREWBOOK_GUIDE,MAPS_ICONS_MODULETYPES_CREWBOOK_PERSONALBOOK,MAPS_ICONS_MODULETYPES_CREWBOOK_UNIVERSALBOOK,MAPS_ICONS_MODULETYPES_CREWBOOK_UNIVERSALBROCHURE,MAPS_ICONS_MODULETYPES_CREWBOOK_UNIVERSALGUIDE,MAPS_ICONS_MODULETYPES_DESTROY,MAPS_ICONS_MODULETYPES_DRIVER_BADROADSKING,MAPS_ICONS_MODULETYPES_DRIVER_RAMMINGMASTER,MAPS_ICONS_MODULETYPES_DRIVER_SMOOTHDRIVING,MAPS_ICONS_MODULETYPES_DRIVER_TIDYPERSON,MAPS_ICONS_MODULETYPES_DRIVER_VIRTUOSO,MAPS_ICONS_MODULETYPES_EMPTY,MAPS_ICONS_MODULETYPES_EMPTYABILITYSLOT,MAPS_ICONS_MODULETYPES_EMPTYBOOSTER,MAPS_ICONS_MODULETYPES_EMPTYORDER,MAPS_ICONS_MODULETYPES_ENHANCEDAIMDRIVES,MAPS_ICONS_MODULETYPES_EXTRAHEALTHRESERVE,MAPS_ICONS_MODULETYPES_FIREFIGHTING,MAPS_ICONS_MODULETYPES_FLAME,MAPS_ICONS_MODULETYPES_FLAME_ALTERNATIVE,MAPS_ICONS_MODULETYPES_GASOLINE100,MAPS_ICONS_MODULETYPES_GASOLINE105,MAPS_ICONS_MODULETYPES_GROUSERS,MAPS_ICONS_MODULETYPES_GUNNER_GUNSMITH,MAPS_ICONS_MODULETYPES_GUNNER_RANCOROUS,MAPS_ICONS_MODULETYPES_GUNNER_SMOOTHTURRET,MAPS_ICONS_MODULETYPES_GUNNER_SNIPER,MAPS_ICONS_MODULETYPES_HANDEXTINGUISHERS,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_MODERN,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_MODERN_PREMIUM,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_PREMIUM,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_SPG,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_SPG_STUN,MAPS_ICONS_MODULETYPES_HOLLOW_CHARGE,MAPS_ICONS_MODULETYPES_HOLLOW_CHARGE_PREMIUM,MAPS_ICONS_MODULETYPES_HOTCOFFEE,MAPS_ICONS_MODULETYPES_HYDROMETHANOL,MAPS_ICONS_MODULETYPES_IMPROVEDCONFIGURATION,MAPS_ICONS_MODULETYPES_IMPROVEDPROVISION,MAPS_ICONS_MODULETYPES_IMPROVEDRADIOCOMMUNICATION,MAPS_ICONS_MODULETYPES_IMPROVEDROTATIONMECHANISM,MAPS_ICONS_MODULETYPES_IMPROVEDSIGHTS,MAPS_ICONS_MODULETYPES_IMPROVEDVENTILATION,MAPS_ICONS_MODULETYPES_INSPIRE,MAPS_ICONS_MODULETYPES_LARGEMEDKIT,MAPS_ICONS_MODULETYPES_LARGEREPAIRKIT,MAPS_ICONS_MODULETYPES_LENDLEASEOIL,MAPS_ICONS_MODULETYPES_LOADER_DESPERADO,MAPS_ICONS_MODULETYPES_LOADER_INTUITION,MAPS_ICONS_MODULETYPES_LOADER_PEDANT,MAPS_ICONS_MODULETYPES_NATURALCOVER,MAPS_ICONS_MODULETYPES_NITROUSOXIDE,MAPS_ICONS_MODULETYPES_NOTFOUND,MAPS_ICONS_MODULETYPES_PASSIVE_ENGINEERING,MAPS_ICONS_MODULETYPES_QUALITYOIL,MAPS_ICONS_MODULETYPES_RADIOMAN_FINDER,MAPS_ICONS_MODULETYPES_RADIOMAN_INVENTOR,MAPS_ICONS_MODULETYPES_RADIOMAN_LASTEFFORT,MAPS_ICONS_MODULETYPES_RADIOMAN_RETRANSMITTER,MAPS_ICONS_MODULETYPES_RAMMER,MAPS_ICONS_MODULETYPES_RATION,MAPS_ICONS_MODULETYPES_RATION_CHINA,MAPS_ICONS_MODULETYPES_RATION_CZECH,MAPS_ICONS_MODULETYPES_RATION_INTUNION,MAPS_ICONS_MODULETYPES_RATION_ITALY,MAPS_ICONS_MODULETYPES_RATION_JAPAN,MAPS_ICONS_MODULETYPES_RATION_POLAND,MAPS_ICONS_MODULETYPES_RATION_SWEDEN,MAPS_ICONS_MODULETYPES_RATION_UK,MAPS_ICONS_MODULETYPES_RECON,MAPS_ICONS_MODULETYPES_REMOVE,MAPS_ICONS_MODULETYPES_REMOVEDRPMLIMITER,MAPS_ICONS_MODULETYPES_REMOVEGOLD,MAPS_ICONS_MODULETYPES_REPAIR,MAPS_ICONS_MODULETYPES_SLOTS,MAPS_ICONS_MODULETYPES_SMALLMEDKIT,MAPS_ICONS_MODULETYPES_SMALLREPAIRKIT,MAPS_ICONS_MODULETYPES_SMOKE,MAPS_ICONS_MODULETYPES_STEREOSCOPE,MAPS_ICONS_MODULETYPES_TURBOCHARGER,MAPS_ICONS_MODULETYPES_VEHICLECHASSIS,MAPS_ICONS_MODULETYPES_VEHICLEDUALGUN,MAPS_ICONS_MODULETYPES_VEHICLEENGINE,MAPS_ICONS_MODULETYPES_VEHICLEGUN,MAPS_ICONS_MODULETYPES_VEHICLERADIO,MAPS_ICONS_MODULETYPES_VEHICLETURRET,MAPS_ICONS_MODULETYPES_VEHICLEWHEELEDCHASSIS];
+      public static const MAPS_ICONS_MODULETYPES_ENUM:Array = [MAPS_ICONS_MODULETYPES_ADDITIONALINVISIBILITYDEVICE,MAPS_ICONS_MODULETYPES_AFTERBURNING,MAPS_ICONS_MODULETYPES_AIMINGSTABILIZER,MAPS_ICONS_MODULETYPES_ANTIFRAGMENTATIONLINING,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_CR,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_CR_PREMIUM,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_FSDS,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_FSDS_PREMIUM,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_HE,MAPS_ICONS_MODULETYPES_ARMOR_PIERCING_PREMIUM,MAPS_ICONS_MODULETYPES_ARTILLERY,MAPS_ICONS_MODULETYPES_AUTOEXTINGUISHERS,MAPS_ICONS_MODULETYPES_BOMBER,MAPS_ICONS_MODULETYPES_BROTHERHOOD,MAPS_ICONS_MODULETYPES_CAMOUFLAGE,MAPS_ICONS_MODULETYPES_CAMOUFLAGENET,MAPS_ICONS_MODULETYPES_CHOCOLATE,MAPS_ICONS_MODULETYPES_COATEDOPTICS,MAPS_ICONS_MODULETYPES_COCACOLA,MAPS_ICONS_MODULETYPES_COMBOXPDIRECTIVESBATTLEBOOSTER1,MAPS_ICONS_MODULETYPES_COMBOXPDIRECTIVESBATTLEBOOSTER2,MAPS_ICONS_MODULETYPES_COMBOXPDIRECTIVESBATTLEBOOSTER3,MAPS_ICONS_MODULETYPES_COMMANDERSVIEW,MAPS_ICONS_MODULETYPES_COMMANDER_EAGLEEYE,MAPS_ICONS_MODULETYPES_COMMANDER_ENEMYSHOTPREDICTOR,MAPS_ICONS_MODULETYPES_COMMANDER_EXPERT,MAPS_ICONS_MODULETYPES_COMMANDER_PRACTICAL,MAPS_ICONS_MODULETYPES_COMMANDER_SIXTHSENSE,MAPS_ICONS_MODULETYPES_COMMANDER_TUTOR,MAPS_ICONS_MODULETYPES_COMMANDER_UNIVERSALIST,MAPS_ICONS_MODULETYPES_CREDITSDIRECTIVESBATTLEBOOSTER1,MAPS_ICONS_MODULETYPES_CREDITSDIRECTIVESBATTLEBOOSTER2,MAPS_ICONS_MODULETYPES_CREDITSDIRECTIVESBATTLEBOOSTER3,MAPS_ICONS_MODULETYPES_CREW,MAPS_ICONS_MODULETYPES_CREWBOOK_BROCHURE,MAPS_ICONS_MODULETYPES_CREWBOOK_CREWBOOK,MAPS_ICONS_MODULETYPES_CREWBOOK_GUIDE,MAPS_ICONS_MODULETYPES_CREWBOOK_PERSONALBOOK,MAPS_ICONS_MODULETYPES_CREWBOOK_UNIVERSALBOOK,MAPS_ICONS_MODULETYPES_CREWBOOK_UNIVERSALBROCHURE,MAPS_ICONS_MODULETYPES_CREWBOOK_UNIVERSALGUIDE,MAPS_ICONS_MODULETYPES_DESTROY,MAPS_ICONS_MODULETYPES_DRIVER_BADROADSKING,MAPS_ICONS_MODULETYPES_DRIVER_RAMMINGMASTER,MAPS_ICONS_MODULETYPES_DRIVER_SMOOTHDRIVING,MAPS_ICONS_MODULETYPES_DRIVER_TIDYPERSON,MAPS_ICONS_MODULETYPES_DRIVER_VIRTUOSO,MAPS_ICONS_MODULETYPES_EMPTY,MAPS_ICONS_MODULETYPES_EMPTYABILITYSLOT,MAPS_ICONS_MODULETYPES_EMPTYBOOSTER,MAPS_ICONS_MODULETYPES_EMPTYORDER,MAPS_ICONS_MODULETYPES_ENHANCEDAIMDRIVES,MAPS_ICONS_MODULETYPES_EXTRAHEALTHRESERVE,MAPS_ICONS_MODULETYPES_FIREFIGHTING,MAPS_ICONS_MODULETYPES_FLAME,MAPS_ICONS_MODULETYPES_FLAME_ALTERNATIVE,MAPS_ICONS_MODULETYPES_GASOLINE100,MAPS_ICONS_MODULETYPES_GASOLINE105,MAPS_ICONS_MODULETYPES_GROUSERS,MAPS_ICONS_MODULETYPES_GUNNER_GUNSMITH,MAPS_ICONS_MODULETYPES_GUNNER_RANCOROUS,MAPS_ICONS_MODULETYPES_GUNNER_SMOOTHTURRET,MAPS_ICONS_MODULETYPES_GUNNER_SNIPER,MAPS_ICONS_MODULETYPES_HANDEXTINGUISHERS,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_MODERN,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_MODERN_PREMIUM,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_PREMIUM,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_SPG,MAPS_ICONS_MODULETYPES_HIGH_EXPLOSIVE_SPG_STUN,MAPS_ICONS_MODULETYPES_HOLLOW_CHARGE,MAPS_ICONS_MODULETYPES_HOLLOW_CHARGE_PREMIUM,MAPS_ICONS_MODULETYPES_HOTCOFFEE,MAPS_ICONS_MODULETYPES_HYDROMETHANOL,MAPS_ICONS_MODULETYPES_IMPROVEDCONFIGURATION,MAPS_ICONS_MODULETYPES_IMPROVEDPROVISION,MAPS_ICONS_MODULETYPES_IMPROVEDRADIOCOMMUNICATION,MAPS_ICONS_MODULETYPES_IMPROVEDROTATIONMECHANISM,MAPS_ICONS_MODULETYPES_IMPROVEDSIGHTS,MAPS_ICONS_MODULETYPES_IMPROVEDVENTILATION,MAPS_ICONS_MODULETYPES_INSPIRE,MAPS_ICONS_MODULETYPES_LARGEMEDKIT,MAPS_ICONS_MODULETYPES_LARGEREPAIRKIT,MAPS_ICONS_MODULETYPES_LENDLEASEOIL,MAPS_ICONS_MODULETYPES_LOADER_DESPERADO,MAPS_ICONS_MODULETYPES_LOADER_INTUITION,MAPS_ICONS_MODULETYPES_LOADER_PEDANT,MAPS_ICONS_MODULETYPES_NATURALCOVER,MAPS_ICONS_MODULETYPES_NITROUSOXIDE,MAPS_ICONS_MODULETYPES_NOTFOUND,MAPS_ICONS_MODULETYPES_PASSIVE_ENGINEERING,MAPS_ICONS_MODULETYPES_QUALITYOIL,MAPS_ICONS_MODULETYPES_RADIOMAN_FINDER,MAPS_ICONS_MODULETYPES_RADIOMAN_INVENTOR,MAPS_ICONS_MODULETYPES_RADIOMAN_LASTEFFORT,MAPS_ICONS_MODULETYPES_RADIOMAN_RETRANSMITTER,MAPS_ICONS_MODULETYPES_RAMMER,MAPS_ICONS_MODULETYPES_RATION,MAPS_ICONS_MODULETYPES_RATION_CHINA,MAPS_ICONS_MODULETYPES_RATION_CZECH,MAPS_ICONS_MODULETYPES_RATION_INTUNION,MAPS_ICONS_MODULETYPES_RATION_ITALY,MAPS_ICONS_MODULETYPES_RATION_JAPAN,MAPS_ICONS_MODULETYPES_RATION_POLAND,MAPS_ICONS_MODULETYPES_RATION_SWEDEN,MAPS_ICONS_MODULETYPES_RATION_UK,MAPS_ICONS_MODULETYPES_RECON,MAPS_ICONS_MODULETYPES_REMOVE,MAPS_ICONS_MODULETYPES_REMOVEDRPMLIMITER,MAPS_ICONS_MODULETYPES_REMOVEGOLD,MAPS_ICONS_MODULETYPES_REPAIR,MAPS_ICONS_MODULETYPES_SLOTS,MAPS_ICONS_MODULETYPES_SMALLMEDKIT,MAPS_ICONS_MODULETYPES_SMALLREPAIRKIT,MAPS_ICONS_MODULETYPES_SMOKE,MAPS_ICONS_MODULETYPES_STEREOSCOPE,MAPS_ICONS_MODULETYPES_TURBOCHARGER,MAPS_ICONS_MODULETYPES_VEHICLECHASSIS,MAPS_ICONS_MODULETYPES_VEHICLEDUALGUN,MAPS_ICONS_MODULETYPES_VEHICLEENGINE,MAPS_ICONS_MODULETYPES_VEHICLEGUN,MAPS_ICONS_MODULETYPES_VEHICLERADIO,MAPS_ICONS_MODULETYPES_VEHICLETURRET,MAPS_ICONS_MODULETYPES_VEHICLEWHEELEDCHASSIS,MAPS_ICONS_MODULETYPES_XPDIRECTIVESBATTLEBOOSTER1,MAPS_ICONS_MODULETYPES_XPDIRECTIVESBATTLEBOOSTER2,MAPS_ICONS_MODULETYPES_XPDIRECTIVESBATTLEBOOSTER3];
       
       public static const MAPS_ICONS_RESERVETYPES_ENUM:Array = [MAPS_ICONS_RESERVETYPES_ARTILLERYSUPPORT,MAPS_ICONS_RESERVETYPES_ARTILLERYSUPPORTBIG,MAPS_ICONS_RESERVETYPES_ARTILLERYSUPPORTBIGGLOW,MAPS_ICONS_RESERVETYPES_ARTILLERYSUPPORTGLOW,MAPS_ICONS_RESERVETYPES_FIRESUPPORTPLUS,MAPS_ICONS_RESERVETYPES_HEAVYTRUCKS,MAPS_ICONS_RESERVETYPES_HEAVYTRUCKSBIG,MAPS_ICONS_RESERVETYPES_HEAVYTRUCKSBIGGLOW,MAPS_ICONS_RESERVETYPES_HEAVYTRUCKSGLOW,MAPS_ICONS_RESERVETYPES_HEAVYTRUCKSPLUS,MAPS_ICONS_RESERVETYPES_INSPIRE,MAPS_ICONS_RESERVETYPES_INSPIREBIG,MAPS_ICONS_RESERVETYPES_INSPIREBIGGLOW,MAPS_ICONS_RESERVETYPES_INSPIREGLOW,MAPS_ICONS_RESERVETYPES_INSPIREPLUS,MAPS_ICONS_RESERVETYPES_REQUISITION,MAPS_ICONS_RESERVETYPES_REQUISITIONBIG,MAPS_ICONS_RESERVETYPES_REQUISITIONBIGGLOW,MAPS_ICONS_RESERVETYPES_REQUISITIONGLOW,MAPS_ICONS_RESERVETYPES_REQUISITIONPLUS];
       

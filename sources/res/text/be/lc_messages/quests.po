@@ -672,43 +672,51 @@ msgstr ""
 
 msgid "action/hero/full/premiumPacket14Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі дзён або працягу Прэміум акаўнту на 14 дзён: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 14 дзён: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket180Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 180 дзён: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 180 дзён: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket1Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 1 дзень: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 1 дзень: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket30Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 30 дзён: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 30 дзён: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket360Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 360 дзён: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 360 дзён: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket3Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 3 дні: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 3 дні: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket7Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт куплі або працягу прэміум акаўнту на 7 дзён: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 7 дзён: "
+"%(discount)s"
 
 msgid "action/hero/full/premiumPacket90Cost"
 msgstr ""
-"Прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным баі. "
-"Выгадны кошт прэміум акаўнту (або яго працягу) на 90 дзён: %(discount)s"
+"Танкавы прэміум акаўнт — гэта +50%% да заробку досведу і срэбра ў кожным "
+"баі. Выгадны кошт куплі або працягу Танкавага прэміум акаўнту на 90 дзён: "
+"%(discount)s"
 
 msgid "action/hero/full/set_ShellPrice"
 msgstr ""
@@ -1027,9 +1035,6 @@ msgstr "Жэтоны"
 msgid "bonusName/brcoin"
 msgstr "Сталёвыя пячаткі"
 
-msgid "bonusName/bumblebee_coin"
-msgstr "Жэтоны Летняга распродажу"
-
 msgid "bonusName/camouflage"
 msgstr "Камуфляж"
 
@@ -1224,6 +1229,9 @@ msgstr "Танкавы прэміум акаўнт"
 
 msgid "bonusName/projectionDecal"
 msgstr "Дэколь"
+
+msgid "bonusName/quests"
+msgstr "Доступ для асаблівай катэгорыі задач"
 
 msgid "bonusName/rankedBonusBattles"
 msgstr "Стандартны прызавы бой."
@@ -1749,7 +1757,7 @@ msgid "dailyWidget/tooltip/header/daily"
 msgstr "Стандартныя штодзённыя задачы"
 
 msgid "dailyWidget/tooltip/header/epic"
-msgstr "Штодзённая задача / Ланцуг перамог"
+msgstr "Штотыднёвая задача / Ланцуг перамог"
 
 msgid "dailyWidget/tooltip/header/premium"
 msgstr "Штодзённыя прэміум задачы"
@@ -3795,9 +3803,6 @@ msgstr "Медаль Бруна"
 msgid "details/dossier/medalBurda"
 msgstr "Медаль Бурды"
 
-msgid "details/dossier/medalCarius"
-msgstr "Ступень медаля Самохіна"
-
 msgid "details/dossier/medalCrucialContribution"
 msgstr "«Вырашальны ўнёсак»"
 
@@ -3813,17 +3818,20 @@ msgstr "Ступень медаля Ікінза"
 msgid "details/dossier/medalFadin"
 msgstr "Медаль Фадзіна"
 
-msgid "details/dossier/medalHalonen"
-msgstr "Медаль Крысава"
+msgid "details/dossier/medalGudz"
+msgstr "Ступень медаля Гудзя"
 
 msgid "details/dossier/medalKay"
 msgstr "Ступень медаля Кэя"
 
-msgid "details/dossier/medalKnispel"
-msgstr "Ступень медаля Гудзя"
+msgid "details/dossier/medalKhazov"
+msgstr "Медаль Хазава"
 
 msgid "details/dossier/medalKolobanov"
 msgstr "Медаль Калабанава"
+
+msgid "details/dossier/medalKrysov"
+msgstr "Медаль Крысава"
 
 msgid "details/dossier/medalLafayettePool"
 msgstr "Медаль Пула"
@@ -3834,8 +3842,8 @@ msgstr "Ступень медаля Лаўрыненкі"
 msgid "details/dossier/medalLeClerc"
 msgstr "Ступень медаля Леклéрка"
 
-msgid "details/dossier/medalLehvaslaiho"
-msgstr "Медаль Хазава"
+msgid "details/dossier/medalLyubushkin"
+msgstr "Медаль Любушкіна"
 
 msgid "details/dossier/medalNikolas"
 msgstr "Медаль Нікалза"
@@ -3855,13 +3863,13 @@ msgstr "Ступень медаля Попеля"
 msgid "details/dossier/medalRadleyWalters"
 msgstr "Медаль Рэдлі-Уолтэрза"
 
-msgid "details/dossier/medalTamadaYoshio"
+msgid "details/dossier/medalSamokhin"
+msgstr "Ступень медаля Самохіна"
+
+msgid "details/dossier/medalTrubin"
 msgstr "Медаль Трубіна"
 
-msgid "details/dossier/medalTarczay"
-msgstr "Медаль Любушкіна"
-
-msgid "details/dossier/medalWittmann"
+msgid "details/dossier/medalUshakov"
 msgstr "Медаль Ушакова"
 
 msgid "details/dossier/mousebane"
@@ -6045,7 +6053,7 @@ msgid "tooltip/vehTable/nation/body"
 msgstr "Упарадкаваць паводле дзяржавы"
 
 msgid "tooltip/vehTable/nation/header"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "weeklyQuest/countDown/tooltip/body"
 msgstr ""
