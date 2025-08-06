@@ -1104,6 +1104,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.CrewDropDownEvent;
    import net.wg.gui.lobby.hangar.CrewPanelInject;
    import net.wg.gui.lobby.hangar.DailyQuestWidget;
+   import net.wg.gui.lobby.hangar.EventEntrancePointWidget;
    import net.wg.gui.lobby.hangar.EventTournamentBannerInject;
    import net.wg.gui.lobby.hangar.Hangar;
    import net.wg.gui.lobby.hangar.HangarAmunitionSwitchAnimator;
@@ -5184,6 +5185,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_CREWPANELINJECT:Class = CrewPanelInject;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_DAILYQUESTWIDGET:Class = DailyQuestWidget;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRANCEPOINTWIDGET:Class = EventEntrancePointWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTTOURNAMENTBANNERINJECT:Class = EventTournamentBannerInject;
       

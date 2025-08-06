@@ -743,6 +743,8 @@ package
       
       public static const DETAILS_CALCULATIONS_REFERRALBONUS_SIMPLELABEL:String = "#battle_results:details/calculations/referralBonus/simpleLabel";
       
+      public static const DETAILS_CALCULATIONS_VETERANBONUS:String = "#battle_results:details/calculations/veteranBonus";
+      
       public static const DETAILS_CALCULATIONS_MULTIPLIERINFO_HEADER:String = "#battle_results:details/calculations/multiplierInfo/header";
       
       public static const DETAILS_CALCULATIONS_MULTIPLIERINFO_BODY:String = "#battle_results:details/calculations/multiplierInfo/body";

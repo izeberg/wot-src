@@ -145,15 +145,6 @@ msgstr "• 授予完成进度的玩家。"
 msgid "BPReserveAchievement_10_descr"
 msgstr "授予在活动期间达成成就的玩家"
 
-msgid "BPReserveAchievement_4"
-msgstr "战斗通行证储备成就4"
-
-msgid "BPReserveAchievement_4_condition"
-msgstr "• 授予完成进度的玩家。"
-
-msgid "BPReserveAchievement_4_descr"
-msgstr "授予在活动期间达成成就的玩家"
-
 msgid "BPReserveAchievement_5"
 msgstr "战斗通行证储备成就5"
 
@@ -354,6 +345,15 @@ msgstr "• 授予完成进度的玩家。"
 
 msgid "BattlePassCommonPr_17extra_2_descr"
 msgstr "授予在战斗通行证:古墓丽影期间达成成就的玩家。"
+
+msgid "BattlePassCommonPr_17extra_3"
+msgstr "不止15年"
+
+msgid "BattlePassCommonPr_17extra_3_condition"
+msgstr "• 授予完成进度的玩家。"
+
+msgid "BattlePassCommonPr_17extra_3_descr"
+msgstr "授予在战斗通行证: 战地狂欢期间达成成就的玩家。"
 
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• 主线进度包含45个阶段。"
@@ -4855,6 +4855,24 @@ msgstr ""
 
 msgid "wolfAmongSheepMedal_descr"
 msgstr "进行获得损伤排名第一的战斗100场。"
+
+msgid "wot15thAnniversary"
+msgstr "《坦克世界》15周年纪念"
+
+msgid "wot15thAnniversaryElite"
+msgstr "《坦克世界》15周年纪念精英"
+
+msgid "wot15thAnniversaryElite_condition"
+msgstr "授予在《坦克世界》15周年纪念活动期间坚持不懈、全情投入的玩家。"
+
+msgid "wot15thAnniversaryElite_descr"
+msgstr "完成活动进度。"
+
+msgid "wot15thAnniversary_condition"
+msgstr "授予参与《坦克世界》15周年纪念活动的玩家。"
+
+msgid "wot15thAnniversary_descr"
+msgstr "完成活动进度的首个阶段。"
 
 msgid "wt2022BossWins"
 msgstr "荣格永存"

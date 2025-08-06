@@ -400,7 +400,7 @@ msgid "chapter/fullName/175"
 msgstr "古墓丽影"
 
 msgid "chapter/fullName/176"
-msgstr "猎牛之歌"
+msgstr "战地狂欢"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
@@ -421,7 +421,7 @@ msgid "chapter/fullNameUppercased/175"
 msgstr "古墓丽影"
 
 msgid "chapter/fullNameUppercased/176"
-msgstr "猎牛之歌"
+msgstr "战地狂欢"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -799,7 +799,7 @@ msgid "postProgressionView/footer/extraChapter/description/175"
 msgstr "稀有宝藏等待着您——乘员、附带3D风格的坦克，以及其他好物。"
 
 msgid "postProgressionView/footer/extraChapter/description/176"
-msgstr "投身其中，获取专属奖励和独特个性化元素。"
+msgstr "获取一辆VIII级坦克和专属个性化元素。"
 
 msgid "postProgressionView/footer/extraChapter/title/174"
 msgstr "毁灭公爵来了！"
@@ -808,7 +808,7 @@ msgid "postProgressionView/footer/extraChapter/title/175"
 msgstr "古墓丽影来了！"
 
 msgid "postProgressionView/footer/extraChapter/title/176"
-msgstr "特殊章节来了！"
+msgstr "战地狂欢已降临！"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "购买高级通行证，获取更多奖励！"
@@ -990,6 +990,9 @@ msgid "progression/extraChapterWidget/tank/description/14"
 msgstr ""
 "纪念诺曼底行动\n"
 "80周年"
+
+msgid "progression/extraChapterWidget/tank/description/17"
+msgstr "《坦克世界》15周年纪念"
 
 msgid "progression/extraChapterWidget/tankName"
 msgstr "%(vehicleName)s"
@@ -1227,9 +1230,6 @@ msgstr "收到！"
 
 msgid "tankmenVoiceover/close"
 msgstr "关闭"
-
-msgid "tankmenVoiceover/description"
-msgstr "全部乘员均附带足以将3项特长训练至100%熟练度的乘员经验。"
 
 msgid "tankmenVoiceover/free"
 msgstr ""

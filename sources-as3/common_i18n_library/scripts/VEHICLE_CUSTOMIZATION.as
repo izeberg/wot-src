@@ -4263,6 +4263,30 @@ package
       
       public static const CAMOUFLAGE_BP2025_DN_2_DESCRIPTION:String = "#vehicle_customization:camouflage/bp2025_dn_2/description";
       
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_LABEL:String = "#vehicle_customization:camouflage/15th_anniversary/label";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_ST1_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_st1/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_ST2_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_st2/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_ST3_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_st3/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_ST4_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_st4/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_ST5_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_st5/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_1_LABEL:String = "#vehicle_customization:camouflage/15th_anniversary_1/label";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_1_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_1/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_2_LABEL:String = "#vehicle_customization:camouflage/15th_anniversary_2/label";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_2_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_2/description";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_3_LABEL:String = "#vehicle_customization:camouflage/15th_anniversary_3/label";
+      
+      public static const CAMOUFLAGE_15TH_ANNIVERSARY_3_DESCRIPTION:String = "#vehicle_customization:camouflage/15th_anniversary_3/description";
+      
       public static const EMBLEM:String = "#vehicle_customization:emblem";
       
       public static const EMBLEM_CLAN_CONTENT:String = "#vehicle_customization:emblem/clan_content";
@@ -6142,6 +6166,16 @@ package
       public static const EMBLEM_SPECIAL_STICKER_860:String = "#vehicle_customization:emblem/special/sticker_860";
       
       public static const EMBLEM_SPECIAL_STICKER_861:String = "#vehicle_customization:emblem/special/sticker_861";
+      
+      public static const EMBLEM_SPECIAL_STICKER_867:String = "#vehicle_customization:emblem/special/sticker_867";
+      
+      public static const EMBLEM_SPECIAL_STICKER_868:String = "#vehicle_customization:emblem/special/sticker_868";
+      
+      public static const EMBLEM_SPECIAL_STICKER_869:String = "#vehicle_customization:emblem/special/sticker_869";
+      
+      public static const EMBLEM_SPECIAL_STICKER_870:String = "#vehicle_customization:emblem/special/sticker_870";
+      
+      public static const EMBLEM_SPECIAL_STICKER_871:String = "#vehicle_customization:emblem/special/sticker_871";
       
       public static const INSCRIPTION:String = "#vehicle_customization:inscription";
       
@@ -8356,6 +8390,14 @@ package
       public static const INSCRIPTION_SPECIAL_SPECIAL_810:String = "#vehicle_customization:inscription/special/special_810";
       
       public static const INSCRIPTION_SPECIAL_SPECIAL_811:String = "#vehicle_customization:inscription/special/special_811";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_825:String = "#vehicle_customization:inscription/special/special_825";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_826:String = "#vehicle_customization:inscription/special/special_826";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_827:String = "#vehicle_customization:inscription/special/special_827";
+      
+      public static const INSCRIPTION_SPECIAL_SPECIAL_828:String = "#vehicle_customization:inscription/special/special_828";
       
       public static const ITEM_EMBLEM1:String = "#vehicle_customization:item/emblem1";
       
@@ -14751,6 +14793,30 @@ package
       
       public static const SPECIAL_STYLE_BP2025_DN_2_DESC_LONG:String = "#vehicle_customization:special_style/bp2025_dn_2_desc/long";
       
+      public static const SPECIAL_STYLE_G42_MAUS_SFV_3DST:String = "#vehicle_customization:special_style/G42_Maus_SFV_3Dst";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY:String = "#vehicle_customization:special_style/15th_anniversary";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_DESC:String = "#vehicle_customization:special_style/15th_anniversary_desc";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_1:String = "#vehicle_customization:special_style/15th_anniversary_1";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_1_DESC:String = "#vehicle_customization:special_style/15th_anniversary_1_desc";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_1_DESC_LONG:String = "#vehicle_customization:special_style/15th_anniversary_1_desc/long";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_2:String = "#vehicle_customization:special_style/15th_anniversary_2";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_2_DESC:String = "#vehicle_customization:special_style/15th_anniversary_2_desc";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_2_DESC_LONG:String = "#vehicle_customization:special_style/15th_anniversary_2_desc/long";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_3:String = "#vehicle_customization:special_style/15th_anniversary_3";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_3_DESC:String = "#vehicle_customization:special_style/15th_anniversary_3_desc";
+      
+      public static const SPECIAL_STYLE_15TH_ANNIVERSARY_3_DESC_LONG:String = "#vehicle_customization:special_style/15th_anniversary_3_desc/long";
+      
       public static const CUSTOMIZATION_POPOVER_STYLE_SUMMER:String = "#vehicle_customization:customization/popover/style/summer";
       
       public static const CUSTOMIZATION_POPOVER_STYLE_DESERT:String = "#vehicle_customization:customization/popover/style/desert";
@@ -17799,9 +17865,27 @@ package
       
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_922:String = "#vehicle_customization:projection_decals/special/projection_decal_922";
       
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_945:String = "#vehicle_customization:projection_decals/special/projection_decal_945";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_946:String = "#vehicle_customization:projection_decals/special/projection_decal_946";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_947:String = "#vehicle_customization:projection_decals/special/projection_decal_947";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_948:String = "#vehicle_customization:projection_decals/special/projection_decal_948";
+      
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_949:String = "#vehicle_customization:projection_decals/special/projection_decal_949";
       
       public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_950:String = "#vehicle_customization:projection_decals/special/projection_decal_950";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_952:String = "#vehicle_customization:projection_decals/special/projection_decal_952";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_953:String = "#vehicle_customization:projection_decals/special/projection_decal_953";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_954:String = "#vehicle_customization:projection_decals/special/projection_decal_954";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_955:String = "#vehicle_customization:projection_decals/special/projection_decal_955";
+      
+      public static const PROJECTION_DECALS_SPECIAL_PROJECTION_DECAL_956:String = "#vehicle_customization:projection_decals/special/projection_decal_956";
       
       public static const ATTACHMENT_GENERAL:String = "#vehicle_customization:attachment/general";
       

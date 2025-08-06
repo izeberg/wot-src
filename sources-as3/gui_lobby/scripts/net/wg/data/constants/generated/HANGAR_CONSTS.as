@@ -44,6 +44,8 @@ package net.wg.data.constants.generated
       public static const HEADER_QUEST_FLAGS:String = "headerQuestFlags";
       
       public static const STRENGTHS_WEAKNESSES:String = "StrengthsWeaknesses";
+      
+      public static const EVENT_ENTRANCE_POINT:String = "eventEntrancePoint";
        
       
       public function HANGAR_CONSTS()

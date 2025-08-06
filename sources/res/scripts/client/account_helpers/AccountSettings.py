@@ -344,6 +344,12 @@ class OptionalDevicesAssistant(object):
     SELECTED_PRESET = 'optionalDevicesAssistantSelectedPreset'
 
 
+class WotAnniversary15(object):
+    SETTINGS = 'wotAnniversary15th'
+    IS_ALBUM_ANIMATIONS_DISABLED = 'wotAnniversary15thIsAlbumAnimationsDisabled'
+    ALBUM_LAST_SEEN_DATE = 'wotAnniversary15thIsAlbumLastSeenDate'
+
+
 KNOWN_SELECTOR_BATTLES = 'knownSelectorBattles'
 MODE_SELECTOR_BATTLE_PASS_SHOWN = 'modeSelectorBattlePassShown'
 RANKED_LAST_CYCLE_ID = 'rankedLastCycleID'
@@ -803,7 +809,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                       GuiSettingsBehavior.COMP7_YEARLY_ANIMATION_SEEN: False, 
                                       GuiSettingsBehavior.CLAN_SUPPLY_INTRO_SHOWN: False, 
                                       GuiSettingsBehavior.CREW_NPS_WELCOME_SHOWN: False, 
-                                      GuiSettingsBehavior.CREW_NPS_INTRO_SHOWN: False}, 
+                                      GuiSettingsBehavior.CREW_NPS_INTRO_SHOWN: False, 
+                                      GuiSettingsBehavior.WOT_ANNIVERSARY_15_WELCOME_SHOWN: False}, 
                  EULA_VERSION: {'version': 0}, FORT_MEMBER_TUTORIAL: {'wasShown': False}, IGR_PROMO: {'wasShown': False}, CONTACTS: {'showOfflineUsers': True, 'showOthersCategory': True}, GOLD_FISH_LAST_SHOW_TIME: 0, 
                  BOOSTERS_FILTER: 0, 
                  'cs_intro_view_vehicle': {'nation': -1, 'vehicleType': 'none', 'isMain': False, 'level': -1, 'compatibleOnly': True}, 
@@ -1170,7 +1177,9 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   AdventCalendar.SETTINGS: {AdventCalendar.INTRO_SHOWN: False, 
                                             AdventCalendar.LAST_HIGHLIGHTED_DOOR: -1, 
                                             AdventCalendar.FIRST_ENTRY_NOTIFICATION_SHOWN: False, 
-                                            AdventCalendar.LAST_DAY_POPUP_SEEN: 0}}, 
+                                            AdventCalendar.LAST_DAY_POPUP_SEEN: 0}, 
+                  WotAnniversary15.SETTINGS: {WotAnniversary15.IS_ALBUM_ANIMATIONS_DISABLED: False, 
+                                              WotAnniversary15.ALBUM_LAST_SEEN_DATE: 0}}, 
    KEY_COUNTERS: {NEW_HOF_COUNTER: {PROFILE_CONSTANTS.HOF_ACHIEVEMENTS_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VEHICLES_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VIEW_RATING_BUTTON: True}, 

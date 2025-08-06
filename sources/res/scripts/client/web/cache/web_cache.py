@@ -36,6 +36,8 @@ def generateKey(url, appName=None):
     md.update(url)
     if appName == 'server_replays':
         return md.hexdigest() + '.wotsrvreplay'
+    if appName == 'webmvideo':
+        return md.hexdigest() + '.webm'
     return md.hexdigest()
 
 
@@ -190,7 +192,7 @@ class WebExternalCache(IWebExternalCache):
                 for curfile in files:
                     url = urlparse.urljoin(host, curfile)
                     url = url.replace(' ', '%20')
-                    key = generateKey(url)
+                    key = generateKey(url, appName=appName)
                     if key not in self._cache or not self._storage.isAppFileExist(appName, key):
                         _logger.debug('Resource not found in cache. Download from web: %s', url)
                         filesToDownload[url] = appName
