@@ -2704,7 +2704,7 @@
 						<type>url</type>
 					</item>
 					<item>
-						/$LANGUAGE_CODE/promocontent/17BPContentPage
+						/$LANGUAGE_CODE/promocontent/bp-wot-anniversary-2025/
 						<name>176</name>
 						<type>url</type>
 					</item>
@@ -2716,7 +2716,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapterVideodl/
+				/$LANGUAGE_CODE/promocontent/bp-wot-anniversary-2025-Video/
 				<name>extraIntroVideo</name>
 				<type>url</type>
 			</item>
@@ -2772,7 +2772,7 @@
 							<item>
 								<name>176</name>
 								<type>bool</type>
-								<value>False</value>
+								<value>True</value>
 							</item>
 						</value>
 					</item>

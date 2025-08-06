@@ -60,6 +60,10 @@
 					<name>StrengthsWeaknesses</name>
 					<visible>True</visible>
 				</component>
+				<component>
+					<name>eventEntrancePoint</name>
+					<visible>True</visible>
+				</component>
 			</components>
 		</preset>
 	</presets>

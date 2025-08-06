@@ -3458,5 +3458,10 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>MentorLicenceIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#mentoring_license:serviceChannelMessages/TransferXP/body)&lt;font color=&apos;#E9E2BF&apos;&gt;%(xp)s&lt;/font&gt;&lt;br&gt;%(xpLost)s%(amount)s&lt;/font&gt;</message>
 		</MentorAssignmentSysMessage>
+		<WotAnniversaryRewardSysMessage>
+			<priority>low</priority>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;8&quot;&gt; &lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</WotAnniversaryRewardSysMessage>
 	</htmlTemplates>
 </root>

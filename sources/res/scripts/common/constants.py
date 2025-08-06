@@ -828,6 +828,7 @@ class Configs(enum.Enum):
     COMMENDATIONS_CONFIG = 'commendations_config'
     SENIORITY_AWARDS_CONFIG = 'seniority_awards_config'
     WTR_CONFIG = 'wtr_config'
+    WOT_ANNIVERSARY_CONFIG = 'wot_anniversary_config'
 
 
 INBATTLE_CONFIGS = [
@@ -1813,6 +1814,7 @@ class REQUEST_COOLDOWN:
     FILL_ALL_TANKMEN_SKILLS = 60.0
     CMD_EASY_TANK_EQUIP_APPLY = 1.0
     CMD_SELLING = 5.0
+    CMD_WOT_ANNIVERSARY_OPEN_ENVELOPE = 2.0
 
 
 IS_SHOW_INGAME_HELP_FIRST_TIME = False
@@ -2017,10 +2019,11 @@ class USER_SERVER_SETTINGS:
     SENIORITY_AWARDS = 113
     REFERRAL_PROGRAM = 114
     ADVANCED_ACHIEVEMENTS_STORAGE = 115
+    WOT_ANNIVERSARY = 124
     _ALL = (
      GAME, HIDE_MARKS_ON_GUN, EULA_VERSION, GAME_EXTENDED, BATTLE_MATTERS_QUESTS, SESSION_STATS, DOG_TAGS,
      GAME_EXTENDED_2, BATTLE_HUD, CONTOUR, UI_STORAGE_2, BATTLE_EVENTS, SENIORITY_AWARDS,
-     ADVANCED_ACHIEVEMENTS_STORAGE, BATTLE_COMM)
+     ADVANCED_ACHIEVEMENTS_STORAGE, BATTLE_COMM, WOT_ANNIVERSARY)
 
     @classmethod
     def isBattleInvitesForbidden(cls, settings):
@@ -2151,7 +2154,8 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    120: 'Mapbox carousel filter 3', 
    121: 'Competitive7x7 carousel filter 3', 
    122: 'Fun Random carousel filter 3', 
-   123: 'Carousel filter 3'}
+   123: 'Carousel filter 3', 
+   124: USER_SERVER_SETTINGS.WOT_ANNIVERSARY}
 
 class WG_GAMES:
     TANKS = 'wot'
@@ -3119,6 +3123,7 @@ class GF_RES_PROTOCOL(object):
     CAMO = 'camo://'
     PNUM = 'pnum://'
     SWF = 'swf://'
+    VIDEO = 'video://'
 
 
 class CollisionFlags(object):

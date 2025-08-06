@@ -204,12 +204,18 @@
 			<angle>9.890000</angle>
 			<angleZ>44.139999</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>9.890000</angle>
+		</simplified_deferred>
 		<sunScale>1.200000</sunScale>
 		<sunColor>255.000000 123.000000 41.000000</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
 		<sunLightColor>1.000000 0.533333 0.243137</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
+		<sunLightColorSimplifiedDeferred>1.000000 0.533333 0.243137</sunLightColorSimplifiedDeferred>
+		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>5.000000</sunScaleForward>
 		<sunColorForward>168.299988 89.156929 24.403507</sunColorForward>
 		<sunTextureForward>system/maps/PSF_ldr.dds</sunTextureForward>
