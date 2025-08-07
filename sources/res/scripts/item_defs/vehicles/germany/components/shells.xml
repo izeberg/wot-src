@@ -3692,7 +3692,7 @@
 					<!--BW_String-->
 				</min>
 				<max>
-					6.0
+					5.0
 					<!--BW_String-->
 				</max>
 			</distance>
@@ -3807,11 +3807,6 @@
 			6.7
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			7.3
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>largeSH</effects>
 		<damage>
@@ -3866,11 +3861,6 @@
 			6.2
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			4.6
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>largeSH</effects>
 		<damage>
@@ -3910,11 +3900,6 @@
 			6.7
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			11.2
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>largeSH</effects>
 		<damage>
@@ -4017,11 +4002,6 @@
 			7.2
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			12.6
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>largeSH</effects>
 		<damage>
@@ -4363,11 +4343,6 @@
 			8.5
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			16.6
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>
@@ -4418,11 +4393,6 @@
 			11.4
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			18.5
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>

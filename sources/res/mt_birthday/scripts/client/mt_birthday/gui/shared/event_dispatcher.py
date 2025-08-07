@@ -92,3 +92,8 @@ def sendBloggerGift(pid):
 
     tbc = dependency.instance(ITanksBirthdayController)
     tbc.giftSystem.sendGifts(BIRTHDAY_2025_STAMP_CODE_SPECIAL, [pid], 1, printer)
+
+
+def showCollageView():
+    from mt_birthday.gui.impl.lobby.birthday.collage_view import CollageView
+    g_eventBus.handleEvent(events.LoadGuiImplViewEvent(loadParams=GuiImplViewLoadParams(R.views.mt_birthday.lobby.birthday.CollageView(), CollageView, ScopeTemplates.DEFAULT_SCOPE)))

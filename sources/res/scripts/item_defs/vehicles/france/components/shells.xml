@@ -3099,11 +3099,6 @@
 			6.7
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			7.3
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>
@@ -3176,8 +3171,6 @@
 			7.6
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>17</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>
@@ -3280,11 +3273,6 @@
 			7.6
 			<!--BW_String-->
 		</explosionRadius>
-		<hasStun>true</hasStun>
-		<stunDuration>
-			15.4
-			<!--BW_String-->
-		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>

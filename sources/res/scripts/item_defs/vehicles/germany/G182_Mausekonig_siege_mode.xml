@@ -13,7 +13,7 @@
 	<postProgressionTree>role_XI_Mausekonig</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>20</forward>
+		<forward>25</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -82,7 +82,7 @@
 	<hull>
 		<armor>
 			<armor_1>250</armor_1>
-			<armor_2>210</armor_2>
+			<armor_2>240</armor_2>
 			<armor_3>100</armor_3>
 			<armor_4>200</armor_4>
 			<armor_5>50</armor_5>
@@ -90,7 +90,7 @@
 			<armor_7>250</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>40</armor_9>
-			<armor_10>100</armor_10>
+			<armor_10>120</armor_10>
 			<armor_11>
 				100
 				<vehicleDamageFactor>0</vehicleDamageFactor>
@@ -102,10 +102,10 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>132440</weight>
-		<maxHealth>2400</maxHealth>
+		<maxHealth>2200</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>280</maxHealth>
-			<maxRegenHealth>190</maxRegenHealth>
+			<maxHealth>300</maxHealth>
+			<maxRegenHealth>200</maxRegenHealth>
 			<repairCost>
 				1.0
 				<!--BW_String-->
@@ -1219,7 +1219,7 @@
 			</terrainResistance>
 			<brakeForce>250000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>15</rotationSpeed>
+			<rotationSpeed>20</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -4407,14 +4407,14 @@
 				<armor_6>50</armor_6>
 				<armor_7>50</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>240</armor_9>
+				<armor_9>200</armor_9>
 				<armor_10>200</armor_10>
 				<armor_11>180</armor_11>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>70000</weight>
 			<maxHealth>1000</maxHealth>
-			<rotationSpeed>16</rotationSpeed>
+			<rotationSpeed>20</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>180</maxHealth>
 				<maxRegenHealth>90</maxRegenHealth>
@@ -4502,10 +4502,10 @@
 							2.5
 							<!--BW_String-->
 						</chargeTime>
-						<shootImpulse>150</shootImpulse>
+						<shootImpulse>100</shootImpulse>
 						<reloadLockTime>2</reloadLockTime>
-						<reloadTimes>6 6</reloadTimes>
-						<rateTime>6</rateTime>
+						<reloadTimes>8 8</reloadTimes>
+						<rateTime>8</rateTime>
 						<chargeThreshold>
 							0.5
 							<!--BW_String-->
@@ -4520,7 +4520,7 @@
 						<count>6</count>
 					</clip>
 					<autoreload>
-						<reloadTime>13 13 13 13 13 13</reloadTime>
+						<reloadTime>10 10 10 10 10 10</reloadTime>
 					</autoreload>
 					<customizationSlots>
 						<slot>
@@ -5306,7 +5306,7 @@
 			<engines>
 				<MB509>
 					<smplEnginePower>2400</smplEnginePower>
-					<smplFwMaxSpeed>20</smplFwMaxSpeed>
+					<smplFwMaxSpeed>25</smplFwMaxSpeed>
 				</MB509>
 			</engines>
 			<chassis>

@@ -4889,11 +4889,11 @@
 	</physics>
 	<rocketAcceleration>
 		<deployTime>10</deployTime>
-		<reloadTime>20</reloadTime>
-		<reuseCount>4</reuseCount>
-		<duration>8</duration>
+		<reloadTime>15</reloadTime>
+		<reuseCount>5</reuseCount>
+		<duration>10</duration>
 		<impulse>
-			<magnitude>70</magnitude>
+			<magnitude>100</magnitude>
 			<applyPoint>
 				-0.062 -1.743 -2.12
 				<!--BW_String-->
@@ -4914,7 +4914,7 @@
 			<mul>
 				<name>dynAttrs/vehicle/maxSpeed/forward</name>
 				<value>
-					1.333
+					1.5
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -4944,7 +4944,7 @@
 			<mul>
 				<name>vehicleForwardMaxSpeed</name>
 				<value>
-					1.333
+					1.5
 					<!--BW_String-->
 				</value>
 			</mul>
