@@ -76,6 +76,10 @@
 					<name>StrengthsWeaknesses</name>
 					<visible>False</visible>
 				</component>
+				<component>
+					<name>eventEntrancePoint</name>
+					<visible>False</visible>
+				</component>
 			</components>
 		</preset>
 		<preset>
@@ -134,6 +138,10 @@
 					<name>comp7GrandTournamentBanner</name>
 					<visible>True</visible>
 				</component>
+				<component>
+					<name>eventEntrancePoint</name>
+					<visible>True</visible>
+				</component>
 			</components>
 		</preset>
 		<preset>
@@ -159,6 +167,10 @@
 					<name>comp7GrandTournamentBanner</name>
 					<visible>False</visible>
 				</component>
+				<component>
+					<name>eventEntrancePoint</name>
+					<visible>False</visible>
+				</component>
 			</components>
 		</preset>
 		<preset>
@@ -177,6 +189,10 @@
 				</component>
 				<component>
 					<name>comp7GrandTournamentBanner</name>
+					<visible>False</visible>
+				</component>
+				<component>
+					<name>eventEntrancePoint</name>
 					<visible>False</visible>
 				</component>
 			</components>
@@ -216,6 +232,10 @@
 				</component>
 				<component>
 					<name>comp7GrandTournamentBanner</name>
+					<visible>False</visible>
+				</component>
+				<component>
+					<name>eventEntrancePoint</name>
 					<visible>False</visible>
 				</component>
 			</components>

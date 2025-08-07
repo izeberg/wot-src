@@ -14,7 +14,7 @@ def registerContext():
 
 def registerForGeneral():
     registerContext()
-    import arena_blocks, vehicle_blocks, scene_blocks, event_platform_blocks, triggers_blocks, player_blocks, sound_blocks, game_settings_blocks, camera_blocks, battle_hud_block, bitmask_blocks, cgf_blocks, pve_battle_hud_blocks, battle_hints_blocks
+    import arena_blocks, vehicle_blocks, scene_blocks, event_platform_blocks, triggers_blocks, player_blocks, sound_blocks, game_settings_blocks, camera_blocks, battle_hud_block, bitmask_blocks, cgf_blocks, pve_battle_hud_blocks, battle_hints_blocks, wot_anniversary_blocks
     g_blockRegistrar.regBlocksFromModule(event_platform_blocks)
     g_blockRegistrar.regBlocksFromModule(arena_blocks)
     g_blockRegistrar.regBlocksFromModule(vehicle_blocks)
@@ -32,6 +32,7 @@ def registerForGeneral():
     g_blockRegistrar.regBlocksFromModule(pve_battle_hud_blocks)
     g_blockRegistrar.regContext(EntityContextClient)
     g_blockRegistrar.regContext(VehicleContextClient)
+    g_blockRegistrar.regBlocksFromModule(wot_anniversary_blocks)
 
 
 def registerForUEEditor():

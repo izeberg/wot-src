@@ -12,6 +12,8 @@
 		<ArenaFairplayKafkaLoggingComponent/>
 		<AccountFairplayComponent/>
 		<ArenaCommendationsMasterComponent/>
+		<ArenaVeteranComponent/>
+		<AccountVeteranComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -88,5 +90,6 @@
 		<AvatarFairplayMessageComponent/>
 		<NetworkReplicationPointComponent/>
 		<NetworkVehicleHierarchy/>
+		<VeteranInfo/>
 	</DynamicComponents>
 </root>

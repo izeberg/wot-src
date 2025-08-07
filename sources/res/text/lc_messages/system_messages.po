@@ -440,7 +440,7 @@ msgid "battlePass/extraFinish/body"
 msgstr "The %(name)s event has finished. Thank you for your participation!"
 
 msgid "battlePass/extraFinish/header"
-msgstr "Battle Pass: \"%(name)s\" Chapter"
+msgstr "Battle Pass: %(name)s Chapter"
 
 msgid "battlePass/extraStarted/body"
 msgstr ""
@@ -452,11 +452,11 @@ msgstr "Battle Pass: A New Chapter Is Available!"
 
 msgid "battlePass/extraWillEndSoon/body"
 msgstr ""
-"Commander! There is only a short time left before the \"%(name)s\" Chapter "
-"will end. Hurry up!"
+"Commander! There is only a short time left before the %(name)s Chapter will "
+"end. Hurry up!"
 
 msgid "battlePass/extraWillEndSoon/header"
-msgstr "Battle Pass: \"%(name)s\" Chapter"
+msgstr "Battle Pass: %(name)s Chapter"
 
 msgid "battlePass/gameModeEnabled/body/22"
 msgstr ""

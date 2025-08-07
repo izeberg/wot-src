@@ -104,3 +104,7 @@ class HangarMeta(View):
     def as_setComp7SpaceLoadedS(self, isLoaded):
         if self._isDAAPIInited():
             return self.flashObject.as_setComp7SpaceLoaded(isLoaded)
+
+    def as_setEventEntryPointVisibleS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setEventEntryPointVisible(value)
