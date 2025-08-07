@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.380529 -1.099687 -4.553099</min>
+		<max>2.079198 1.198156 4.732501</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

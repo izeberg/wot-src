@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/normal/lod2/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/normal/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.584700 -0.578917 0.288837</min>
+		<max>0.624459 0.595794 5.360609</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

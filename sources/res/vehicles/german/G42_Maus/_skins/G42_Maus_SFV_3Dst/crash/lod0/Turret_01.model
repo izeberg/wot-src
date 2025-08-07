@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.860600 -0.256898 -2.797726</min>
+		<max>1.987987 1.529209 2.175969</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/crash/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

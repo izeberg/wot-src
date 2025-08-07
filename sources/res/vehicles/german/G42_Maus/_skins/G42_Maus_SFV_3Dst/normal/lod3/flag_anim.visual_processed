@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.686535 4.529913 -1.874808</row3>
+			</transform>
+			<node>
+				<identifier>Flag1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 -0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Flag2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.001553 -0.183430 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>Flag3</identifier>
+						<transform>
+							<row0>-0.348628 -0.937260 0.001715</row0>
+							<row1>-0.937248 0.348632 0.004610</row1>
+							<row2>-0.004918 -0.000000 -0.999988</row2>
+							<row3>-0.071057 -0.175172 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Flag4</identifier>
+							<transform>
+								<row0>0.998665 0.050595 0.010366</row0>
+								<row1>-0.050832 0.998417 0.024057</row1>
+								<row2>-0.009133 -0.024552 0.999657</row2>
+								<row3>0.133432 -0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Flag5</identifier>
+								<transform>
+									<row0>0.986651 0.162463 0.011211</row0>
+									<row1>-0.162729 0.986233 0.029409</row1>
+									<row2>-0.006278 -0.030841 0.999505</row2>
+									<row3>0.108879 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Flag5_BlendBone</identifier>
+									<transform>
+										<row0>-0.539281 -0.840515 0.052069</row0>
+										<row1>-0.841820 0.539720 -0.006439</row1>
+										<row2>0.022691 0.047305 0.998623</row2>
+										<row3>3.562247 -1.777886 -1.874807</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Flag4_BlendBone</identifier>
+								<transform>
+									<row0>-0.395633 -0.918162 0.021279</row0>
+									<row1>-0.918370 0.395723 0.000000</row1>
+									<row2>0.008421 0.019542 0.999774</row2>
+									<row3>3.924657 -1.116854 -1.886229</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Flag3_BlendBone</identifier>
+							<transform>
+								<row0>-0.348628 -0.937248 -0.004918</row0>
+								<row1>-0.937260 0.348632 -0.000000</row1>
+								<row2>-0.001715 -0.004610 0.999988</row2>
+								<row3>4.126849 -0.870209 -1.871766</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Flag6</identifier>
+						<transform>
+							<row0>0.229377 -0.973304 -0.008122</row0>
+							<row1>0.972694 0.229520 -0.034441</row1>
+							<row2>0.035385 0.000000 0.999374</row2>
+							<row3>0.067157 -0.182656 -0.000685</row3>
+						</transform>
+						<node>
+							<identifier>Flag7</identifier>
+							<transform>
+								<row0>0.992356 0.122805 0.012154</row0>
+								<row1>-0.123144 0.991847 0.032795</row1>
+								<row2>-0.008027 -0.034041 0.999388</row2>
+								<row3>0.122743 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Flag8</identifier>
+								<transform>
+									<row0>0.987687 0.153414 -0.030630</row0>
+									<row1>-0.155546 0.983947 -0.087484</row1>
+									<row2>0.016717 0.091172 0.995695</row2>
+									<row3>0.111985 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Flag8_BlendBone</identifier>
+									<transform>
+										<row0>0.487067 0.868537 0.091708</row0>
+										<row1>-0.872820 0.487779 0.016007</row1>
+										<row2>0.030831 0.087841 -0.995657</row2>
+										<row3>2.981489 -2.797882 1.730171</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Flag7_BlendBone</identifier>
+								<transform>
+									<row0>0.347505 0.937678 0.000411</row0>
+									<row1>-0.937678 0.347505 0.000000</row1>
+									<row2>0.000143 0.000385 -1.000000</row2>
+									<row3>3.520885 -2.137825 1.876169</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Flag6_BlendBone</identifier>
+							<transform>
+								<row0>0.229377 0.972694 0.035385</row0>
+								<row1>-0.973304 0.229520 0.000000</row1>
+								<row2>0.008122 0.034441 -0.999374</row2>
+								<row3>3.864914 -1.751879 1.847704</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Flag2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.684982 -4.346484 1.874808</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Flag1_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.686535 -4.529913 1.874808</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>connect</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 -0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.851035 -0.000464</row3>
+				</transform>
+				<node>
+					<identifier>connect_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.686535 -3.678878 1.875272</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>-0.686535 -4.529913 1.874808</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Root_BlendBone</node>
+		<node>Flag1_BlendBone</node>
+		<node>Flag2_BlendBone</node>
+		<node>Flag3_BlendBone</node>
+		<node>Flag7_BlendBone</node>
+		<node>Flag8_BlendBone</node>
+		<node>Flag6_BlendBone</node>
+		<node>connect_BlendBone</node>
+		<node>Flag4_BlendBone</node>
+		<node>Flag5_BlendBone</node>
+		<geometry>
+			<vertices>flag_lod3_Shape.vertices</vertices>
+			<primitive>flag_lod3_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_equipment1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/Maus_SFV_3Dst_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/Maus_SFV_3Dst_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/Maus_SFV_3Dst_equipment_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>0.684114 4.154462 1.864393</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>0.474021 3.785434 -1.884177</min>
+		<max>0.894207 4.523491 -1.844610</max>
+	</boundingBox>
+	<geometrySize>1240</geometrySize>
+</root>

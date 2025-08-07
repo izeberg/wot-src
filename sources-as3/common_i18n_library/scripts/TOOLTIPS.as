@@ -8295,6 +8295,36 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_10_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_10/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_11_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_11/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_11_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_11/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_11_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_11/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_12_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_12/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_12_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_12/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_12_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_12/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_13_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_13/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_13_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_13/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_13_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_13/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_14_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_14/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_14_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_14/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_14_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_14/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_15_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp17_15/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_15_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_15/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_15_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_15/howToGetInfo";
+      
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       
       public static const ELEN_SUMMARY_PARAM_ALL_ALL_HEADER_ENUM:Array = [ELEN_SUMMARY_PARAM_MAX_ORIGINALXP_HEADER,ELEN_SUMMARY_PARAM_MAX_XP_HEADER,ELEN_SUMMARY_PARAM_MAX_DAMAGEDEALT_HEADER,ELEN_SUMMARY_PARAM_MAX_DAMAGEASSISTED_HEADER,ELEN_SUMMARY_PARAM_SUMALL_ORIGINALXP_HEADER,ELEN_SUMMARY_PARAM_SUMALL_XP_HEADER,ELEN_SUMMARY_PARAM_SUMALL_DAMAGEDEALT_HEADER,ELEN_SUMMARY_PARAM_SUMALL_DAMAGEASSISTED_HEADER];

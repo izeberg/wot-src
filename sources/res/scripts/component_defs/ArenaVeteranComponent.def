@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods>
+		<setupArena>
+			<Args>
+				<veteransMessageInfo>PYTHON</veteransMessageInfo>
+			</Args>
+		</setupArena>
+	</CellMethods>
+	<Properties/>
+	<ofEntity>
+		<Arena/>
+	</ofEntity>
+	<DefaultKeyName>arenaVeteranComponent</DefaultKeyName>
+</root>

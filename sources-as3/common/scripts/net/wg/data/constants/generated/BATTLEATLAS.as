@@ -349,6 +349,8 @@ package net.wg.data.constants.generated
       
       public static const BADGE_198:String = "badge_198";
       
+      public static const BADGE_199:String = "badge_199";
+      
       public static const BADGE_2:String = "badge_2";
       
       public static const BADGE_20:String = "badge_20";

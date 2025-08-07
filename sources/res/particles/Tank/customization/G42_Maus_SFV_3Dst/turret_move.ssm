@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Stop</name>
+			<type>trigger</type>
+		</param>
+		<param>
+			<name>Move</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>idle</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/G42_Maus_SFV_3Dst/turret_static.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Fadeout</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Move</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-156.000000 -228.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Move</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/empty_sequence.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Fadein</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Stop</name>
+				</condition>
+			</conditions>
+		</transition>
+		<transition>
+			<to>Move</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Move</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-123.000000 125.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Fadeout</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/G42_Maus_SFV_3Dst/turret_fadeout.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Move</to>
+			<blendDuration>1.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-383.000000 -34.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Fadein</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/G42_Maus_SFV_3Dst/turret_fadein.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Temp2</to>
+			<blendDuration>1.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>136.000000 -28.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Temp2</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>81.000000 -166.000000 0.000000</uiPosition>
+	</node>
+</root>

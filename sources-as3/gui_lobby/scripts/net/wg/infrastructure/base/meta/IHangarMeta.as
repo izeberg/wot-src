@@ -59,5 +59,7 @@ package net.wg.infrastructure.base.meta
       function as_setBattleRoyaleSpaceLoaded(param1:Boolean) : void;
       
       function as_setComp7SpaceLoaded(param1:Boolean) : void;
+      
+      function as_setEventEntryPointVisible(param1:Boolean) : void;
    }
 }

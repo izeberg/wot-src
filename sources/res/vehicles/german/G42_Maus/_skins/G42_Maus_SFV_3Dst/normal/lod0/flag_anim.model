@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>0.474021 3.691790 -1.892900</min>
+		<max>0.894427 4.547700 -1.845778</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/normal/lod1/flag_anim</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G42_Maus/_skins/G42_Maus_SFV_3Dst/normal/lod0/flag_anim</nodefullVisual>
+</root>
