@@ -1,10 +1,9 @@
-import CGF, functools
+import CGF
 from helpers import dependency
 from cgf_components.hover_component import SelectionComponent, IsHoveredComponent
 from cgf_script.managers_registrator import onAddedQuery, onRemovedQuery
 from cgf_script.component_meta_class import registerComponent, ComponentProperty, CGFMetaTypes
 from constants import IS_CLIENT
-from debug_utils import LOG_ERROR
 from mt_birthday.skeletons.mt_birthday_controller import ITanksBirthdayController
 from mt_birthday.birthday_constants import AnchorNames
 from skeletons.gui.app_loader import IAppLoader
@@ -29,18 +28,13 @@ class BirthdayClickManager(CGF.ComponentManager):
 
     @onAddedQuery(BirthdayOutlineGoComponent, SelectionComponent)
     def handleBirthdayClickAdded(self, outlineComponent, selectionComponent):
-        selectionComponent.onClickAction += functools.partial(self.__onClickAction, outlineComponent)
+        method = _METHOD_BY_ANCHOR_NAME[outlineComponent.objectName]
+        selectionComponent.onClickAction += method
 
     @onRemovedQuery(BirthdayOutlineGoComponent, SelectionComponent)
     def handleBirthdayClickRemoved(self, outlineComponent, selectionComponent):
-        selectionComponent.onClickAction -= functools.partial(self.__onClickAction, outlineComponent)
-
-    def __onClickAction(self, anchorObject):
-        method = _METHOD_BY_ANCHOR_NAME.get(anchorObject.objectName)
-        if not method:
-            LOG_ERROR(('{} is not defined, check METHOD_BY_ANCHOR_NAME').format(anchorObject.objectName))
-            return
-        method()
+        method = _METHOD_BY_ANCHOR_NAME[outlineComponent.objectName]
+        selectionComponent.onClickAction -= method
 
 
 class BirthdayTooltipManager(CGF.ComponentManager):

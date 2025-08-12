@@ -36,7 +36,7 @@ class BirthdayRewardsView(ViewImpl):
         self.__stage = stage or 0
         self.__isRewardSeen = isRewardSeen
         self.__isFinalReward = isFinalReward
-        self.__phraseID = phraseID or 0
+        self.__phraseID = phraseID or 1
         self.__spaID = spaID or 0
         self.__isNameLoading = isNameLoading or None
         self.__userInfoHelper = self.__tankBirthdayController.userInfoHelper
@@ -116,6 +116,9 @@ class BirthdayRewardsView(ViewImpl):
             return self.__tooltipData.get(tooltipId)
 
     def __buildModel(self):
+        phraseID = self.__phraseID
+        if ('c_{}').format(phraseID) not in R.strings.player_phrases.player.keys():
+            phraseID = 1
         if self.__isNameLoading:
             self.__userInfoHelper.syncUsersInfo()
         with self.viewModel.transaction() as (tx):
@@ -123,7 +126,7 @@ class BirthdayRewardsView(ViewImpl):
             tx.setStage(self.__stage)
             tx.setIsRewardSeen(self.__isRewardSeen)
             tx.setIsFinalReward(self.__isFinalReward)
-            tx.setPhraseID(self.__phraseID)
+            tx.setPhraseID(phraseID)
             tx.setIsNameLoading(self.__isNameLoading)
             mainRewards = tx.getMainRewards()
             mainRewards.clear()

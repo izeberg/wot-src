@@ -55,11 +55,10 @@ class LobbyVehicleMarkerView(LobbyVehicleMarkerViewMeta):
         self.removeListener(events.HangarVehicleEvent.ON_HERO_TANK_LOADED, self.__onHeroTankLoaded, EVENT_BUS_SCOPE.LOBBY)
         self.removeListener(events.HangarVehicleEvent.ON_HERO_TANK_DESTROY, self._onHeroPlatoonTankDestroy, EVENT_BUS_SCOPE.LOBBY)
         self.hangarSpace.onSpaceDestroy -= self.__onSpaceDestroy
-        self.__markersCache = None
         self.removeListener(events.HangarVehicleEvent.ON_PLATOON_TANK_LOADED, self._onPlatoonTankLoaded, EVENT_BUS_SCOPE.LOBBY)
         self.removeListener(events.HangarVehicleEvent.ON_PLATOON_TANK_DESTROY, self._onHeroPlatoonTankDestroy, EVENT_BUS_SCOPE.LOBBY)
         self.guiLoader.windowsManager.onWindowStatusChanged -= self.__onWindowStatusChanged
-        return
+        self.__destroyAllMarkers()
 
     def __onSpaceDestroy(self, _):
         self.__destroyAllMarkers()
@@ -90,6 +89,7 @@ class LobbyVehicleMarkerView(LobbyVehicleMarkerViewMeta):
 
     def __removeCgfMarker(self, event):
         markerId = event.ctx['markerId']
+        _logger.info('remove cgf marker %s', markerId)
         self.__destroyMarker(markerId)
 
     def __cgfMarkerInitResponse(self, event):
@@ -173,11 +173,13 @@ class LobbyVehicleMarkerView(LobbyVehicleMarkerViewMeta):
         return
 
     def __destroyAllMarkers(self):
-        for k in self.__markersCache.keys():
+        for k, marker in self.__markersCache.iteritems():
             self.as_removeMarkerS(k)
-            self.__markersCache.pop(k)
+            if marker is not None:
+                marker.markerSetActive(False)
 
         self.__markersCache.clear()
+        return
 
     def __onWindowStatusChanged(self, uniqueID, newStatus):
         if newStatus in (WindowStatus.LOADING, WindowStatus.DESTROYED):
