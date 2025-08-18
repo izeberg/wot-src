@@ -200,6 +200,18 @@ msgstr ""
 msgid "AMX_50_100"
 msgstr "AMX 50 100"
 
+msgid "AMX_50_100_FL"
+msgstr "AMX 50 100 FL"
+
+msgid "AMX_50_100_FL_long_special"
+msgstr "?empty?"
+
+msgid "AMX_50_100_FL_short"
+msgstr "AMX 50 100 FL"
+
+msgid "AMX_50_100_FL_short_special"
+msgstr "?empty?"
+
 msgid "AMX_50_100_descr"
 msgstr ""
 "Цяжкі танк AMX 50 100 быў далейшым развіццём праекта M4. У 1949 г. быў "
@@ -508,9 +520,6 @@ msgstr ""
 "Canon de 155 mm\n"
 "mle. 1917 G.P.F."
 
-msgid "Canon_de_155mm_T"
-msgstr "Canon de 155 mm T"
-
 msgid "Canon_de_155mm_de_33_calibres"
 msgstr "Canon de 155 mm de 33 calibres"
 
@@ -645,6 +654,9 @@ msgstr "AMX AC mle. 49"
 msgid "Chassis_AMX_Chasseur_de_char_46"
 msgstr "AMX Chasseur de chars"
 
+msgid "Chassis_AMX_Chasseur_de_char_46_02"
+msgstr "AMX Chasseur de chars"
+
 msgid "Chassis_AMX_M4_1945"
 msgstr "AMX M4 mle. 45"
 
@@ -726,9 +738,6 @@ msgstr "Panhard EBR 90"
 msgid "Chassis_F100_Panhard_EBR_90_2"
 msgstr "Panhard EBR 90 bis"
 
-msgid "Chassis_F1038_Bat_Chatillon155_58_T"
-msgstr "Batignolles-Châtillon 155 mle. 58 T"
-
 msgid "Chassis_F106_Panhard_EBR_75_Mle1954"
 msgstr "Panhard EBR 75 (FL 10)"
 
@@ -800,6 +809,12 @@ msgstr "Coutelas"
 
 msgid "Chassis_F133_Projet_57"
 msgstr "Projet 57"
+
+msgid "Chassis_F133_Projet_57_Ampere"
+msgstr "Projet 57 Ampere"
+
+msgid "Chassis_F18_Bat_Chatillon25t_hound_TLXXL"
+msgstr "Batignolles-Châtillon «Foudre»"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -1087,24 +1102,6 @@ msgstr ""
 
 msgid "F100_Panhard_EBR_90_short"
 msgstr "EBR 90"
-
-msgid "F1038_Bat_Chatillon155_58_T"
-msgstr "Bat.-Châtillon 155 58 T"
-
-msgid "F1038_Bat_Chatillon155_58_T_descr"
-msgstr ""
-"Адзін з варыянтаў аванпраекта САУ з выкарыстаннем элементаў шасі "
-"амерыканскага танка М47. Ад Bat.-Châtillon 155 55 адрозніваўся вежай і "
-"наяўнасцю аўтамата набівання. Доследны ўзор пабудаваны не быў."
-
-msgid "F1038_Bat_Chatillon155_58_T_long_special"
-msgstr "?empty?"
-
-msgid "F1038_Bat_Chatillon155_58_T_short"
-msgstr "B-C 155 58 T"
-
-msgid "F1038_Bat_Chatillon155_58_T_short_special"
-msgstr "?empty?"
 
 msgid "F106_Panhard_EBR_75_Mle1954"
 msgstr "Panhard EBR 75 (FL 10)"
@@ -1502,9 +1499,9 @@ msgstr "AMX Tracteur D"
 
 msgid "F130_AMX_Tracteur_D_descr"
 msgstr ""
-"Пасля заканчэння Першай сусветнай вайны французскае камандаванне прадумвала канцэпцыю цяжкага танка, прызначанага для ўзмацнення Лініі Мажыно. У маі 1936 года праектаванне даручылі фірмам AMX, ARL і FCM. Фірмай AMX распрацоўваўся праект звышцяжкага танка прарыву Tracteur C з улікам досведу баявых дзеянняў Першай сусветнай вайны. Праект Tracteur D быў далейшым развіццём праекта Tracteur С. Новы танк прадугледжваў супрацьснараднае браніраванне, дапаможную вежу на карме (як у AMX Tracteur C), а галоўную вежу спраектавалі нанова. Паколькі з рухавікамі ASTER узніклі праблемы, праект перапрацавалі пад авіяцыйны рухавік Hispano-Suiza. На момант з'яўлення праекта AMX Tracteur D у 1940 годзе французам было ўжо не да танкаў прарыву, таму праект застаўся толькі ў выглядзе эскіза.\n"
+"После окончания Первой мировой войны французское командование продумывало концепцию тяжёлого танка, предназначенного для усиления Линии Мажино. В мае 1936 года задачу по проектированию возложили на фирмы: AMX, ARL и FCM. Фирмой AMX разрабатывался проект сверхтяжёлого танка прорыва Tracteur С на основе опыта боевых действий Первой мировой войны. Проект Tracteur D был дальнейшим развитием проекта Tracteur С. Новый танк предусматривал противоснарядное бронирование, вспомогательную башню на корме (как у AMX Tracteur C), главную башню спроектировали заново. Поскольку с двигателями ASTER возникли проблемы, проект переработали под авиационный двигатель Hispano-Suiza. К моменту появления проекта AMX Tracteur D в 1940 году французам было уже не до танков прорыва, поэтому проект остался только в виде эскиза.\n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "F130_AMX_Tracteur_D_long_special"
 msgstr ""
@@ -1542,9 +1539,27 @@ msgstr "?empty?"
 msgid "F133_Projet_57"
 msgstr "Projet 57"
 
+msgid "F133_Projet_57_Ampere"
+msgstr "Projet 57 Ampere"
+
+msgid "F133_Projet_57_Ampere_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "F133_Projet_57_Ampere_long_special"
+msgstr "?empty?"
+
+msgid "F133_Projet_57_Ampere_short"
+msgstr "Projet 57 A"
+
+msgid "F133_Projet_57_Ampere_short_special"
+msgstr "?empty?"
+
 msgid "F133_Projet_57_descr"
 msgstr ""
-"Французский тяжёлый танк, который появился как развитие проекта Somua SM. В обновлённой версии конструкторы постарались исправить недостатки исходного проекта и повысить характеристики машины. Так, машина должна была получить другую башню, более снарядостойкой формы, ходовая часть была спроектирована заново с учётом возросших скоростей и массы. Огневая мощь также должна были возрасти: предусматривалась возможность установки 100мм либо 120мм орудия с автоматизированным заряжанием. Высокая подвижность обеспечивалась новым дизельным двигатель МР 65 фирмы Saurer. По совокупности основных параметров машина могла стать грозным противником для танков Варшавского договора. Эскизный проект был готов к 1958г., но в том же году AMX-50 со схожими характеристиками и аналогичной конструкцией уже проходил испытания. В ходе испытаний стало понятно, что сама концепция упустила своё время. В итоге в 1959 году программа AMX-50 была окончательно закрыта в пользу нового проекта Europanzer, а Projet 57 повторил её судьбу.\n"
+"Французский тяжёлый танк, который появился как развитие проекта Somua SM. В обновлённой версии конструкторы постарались исправить недостатки исходного проекта и повысить характеристики машины. Так, машина должна была получить другую башню более снарядостойкой формы, ходовая часть была спроектирована заново с учётом возросших скоростей и массы. Огневая мощь также должна были возрасти: предусматривалась возможность установки 100-мм либо 120-мм орудия с автоматизированным заряжанием. Высокая подвижность обеспечивалась новым дизельным двигатель МР 65 фирмы Saurer. По совокупности основных параметров машина могла стать грозным противником для танков Варшавского договора. Эскизный проект был готов к 1958 г., но в том же году AMX-50 со схожими характеристиками и аналогичной конструкцией уже проходил испытания. В ходе испытаний стало понятно, что сама концепция упустила своё время. В итоге в 1959-м году программа AMX-50 была окончательно закрыта в пользу нового проекта Europanzer, а Projet 57 повторил её судьбу.\n"
 "\n"
 "Характеристики машины могут быть изменены без компенсации."
 
@@ -1556,6 +1571,20 @@ msgstr "Projet 57"
 
 msgid "F133_Projet_57_short_special"
 msgstr "?empty?"
+
+msgid "F18_Bat_Chatillon25t_hound_TLXXL"
+msgstr "Foudre"
+
+msgid "F18_Bat_Chatillon25t_hound_TLXXL_descr"
+msgstr ""
+"«Это выглядело какой-то шуткой до того момента, пока я не забрался внутрь. Ну они серьёзно? Засовывать чуть ли не целую электростанцию в стальную коробку? Это же как трансформаторная будка! На них же всегда пишут предупреждения, а тут — лезь внутрь всем экипажем, воюй. Но нет, они всё-таки нашли возможность использовать карболит и резину, чтобы всё изолировать. Спасибо, это они учли.\n"
+"Вот только никто не догадался сделать нормальную вентиляцию, и теперь, если нас не сожгут собственные молнии, то мы определённо сваримся в этой дикой жаре и духоте. Я только недавно бился за Бир-Хакейм, только забыл эту страшную жару — но нет. Африку я покинул, но она опять меня нашла»."
+
+msgid "F18_Bat_Chatillon25t_hound_TLXXL_short"
+msgstr "Foudre"
+
+msgid "F18_Bat_Chatillon25t_hound_TLXXL_short_special"
+msgstr "ОБТ с глубокой модернизацией"
 
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -1671,6 +1700,31 @@ msgstr "Foch B"
 
 msgid "F68_AMX_Chasseur_de_char_46"
 msgstr "AMX Chasseur de chars"
+
+msgid "F68_AMX_Chasseur_de_char_46_02"
+msgstr "AMX CDC Test"
+
+msgid "F68_AMX_Chasseur_de_char_46_02_descr"
+msgstr ""
+"Аванпраект новай машыны быў прадстаўлены кампаніяй AMX у 1946 г. Магутны "
+"рухавік і невялікая вага мусілі забяспечыць новай машыне выдатную рухомасць,"
+" а 90-мм гармата з механізаванай боеўкладкай — добрую хуткастрэльнасць. "
+"Аднак вялікія памеры пры даволі слабым браніраванні, а таксама вельмі "
+"складаная і дарагая канструкцыя не былі ўхвалены камісіяй. Існавала толькі ў"
+" эскізах."
+
+msgid "F68_AMX_Chasseur_de_char_46_02_long_special"
+msgstr ""
+"Надзвычай дынамічная машына, адна з самых хуткіх сярод машын свайго ўзроўню,"
+" да таго ўзброеная выдатнай гарматай. Аднак за хуткасць даводзіцца плаціць "
+"вельмі тонкай бранёй, што робіць танк уразлівым для любога супраціўніка. Але"
+" ж супраціўніку трэба яшчэ ў яе трапіць!"
+
+msgid "F68_AMX_Chasseur_de_char_46_02_short"
+msgstr "AMX CDC (T)"
+
+msgid "F68_AMX_Chasseur_de_char_46_02_short_special"
+msgstr "Выгодная гармата, выдатная дынаміка, добры агляд"
 
 msgid "F68_AMX_Chasseur_de_char_46_descr"
 msgstr ""
@@ -2140,8 +2194,8 @@ msgstr "Hispano-Suiza HS 110 pré-série"
 msgid "Hispano-Suiza_HS110_SH"
 msgstr "Hispano-Suiza HS 110"
 
-msgid "Hispano-Suiza_HS110_T"
-msgstr "Hispano-Suiza HS 110 T"
+msgid "Hispano-Suiza_HS110_WT"
+msgstr "Hispano-Suiza HS 110 «Foudre»"
 
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
@@ -2310,6 +2364,9 @@ msgid "Maybach_HL_295_F"
 msgstr "Maybach HL 295 F"
 
 msgid "Maybach_HL_295_FA"
+msgstr "Maybach HL 295 F"
+
+msgid "Maybach_HL_295_FA_02"
 msgstr "Maybach HL 295 F"
 
 msgid "Maybach_HL_295_F_fallout"
@@ -2545,6 +2602,9 @@ msgstr "SCR 508"
 msgid "SCR_528"
 msgstr "SCR 528F"
 
+msgid "SCR_528A_02"
+msgstr "SCR 528F"
+
 msgid "SCR_528C"
 msgstr "SCR 528"
 
@@ -2560,8 +2620,8 @@ msgstr "SCR-528 F"
 msgid "SCR_528_Fr"
 msgstr "SCR-528 Fr"
 
-msgid "SCR_528_T"
-msgstr "SCR 528F T"
+msgid "SCR_528_WT"
+msgstr "SCR-528 «Foudre»"
 
 msgid "SCR_610"
 msgstr "SCR 610"
@@ -2768,6 +2828,9 @@ msgstr "AMX AC mle. 48"
 msgid "Turret_1_AMX_Chasseur_de_char_46"
 msgstr "AMX Chasseur de chars"
 
+msgid "Turret_1_AMX_Chasseur_de_char_46_02"
+msgstr "AMX Chasseur de chars"
+
 msgid "Turret_1_AMX_M4_1945"
 msgstr "ARL 44"
 
@@ -2819,9 +2882,6 @@ msgstr "AMX ELC bis"
 
 msgid "Turret_1_F100_Panhard_EBR_90"
 msgstr "Panhard EBR 90"
-
-msgid "Turret_1_F1038_Bat_Chatillon155_58_T"
-msgstr "Batignolles-Châtillon 155 mle. 58 T"
 
 msgid "Turret_1_F106_Panhard_EBR_75_Mle1954"
 msgstr "Panhard EBR 75 (FL 10)"
@@ -2882,6 +2942,17 @@ msgstr "Coutelas"
 
 msgid "Turret_1_F133_Projet_57"
 msgstr "Projet 57"
+
+msgid "Turret_1_F133_Projet_57_Ampere"
+msgstr "Projet 57 Ampere"
+
+msgid "Turret_1_F18_Bat_Chatillon25t_hound_TLXXL"
+msgstr "Batignolles-Châtillon «Foudre»"
+
+msgid "Turret_1_F18_Bat_Chatillon25t_hound_TLXXL_short"
+msgstr ""
+"Batignolles-Châtillon\n"
+"«Foudre»"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -3136,6 +3207,20 @@ msgstr "105 mm OFL-105E3"
 msgid "_105mm_APCR_OFL_E1"
 msgstr "OFL-105-57"
 
+msgid "_105mm_APCR_OFL_E1_WT"
+msgstr "Серебряная пуля"
+
+msgid "_105mm_APCR_OFL_E1_WT_descr"
+msgstr "Гордость оружейников Альянса."
+
+msgid "_105mm_APCR_OFL_E1_WT_long_special"
+msgstr ""
+"При перегрузке генератора гончие получают заряд плазмы, который увеличивает "
+"наносимый урон на 25%, вплоть до 100%."
+
+msgid "_105mm_APCR_OFL_E1_WT_short_special"
+msgstr "Дополнительный урон плазмой"
+
 msgid "_105mm_APCR_OFL_SH"
 msgstr "APCR-OLF"
 
@@ -3150,6 +3235,9 @@ msgstr "105 mm mle. 57 (D. 1504)"
 
 msgid "_105mm_CN_105_57_SH"
 msgstr "105 mm mle. 57 (D. 1504)"
+
+msgid "_105mm_CN_105_57_WT"
+msgstr "105 mm mle. 57 (D. 1504) «Foudre»"
 
 msgid "_105mm_D1504"
 msgstr "105 mm D. 1504"
@@ -3448,9 +3536,6 @@ msgstr "AP-T T368"
 msgid "_155mm_AP_M112"
 msgstr "AP M112"
 
-msgid "_155mm_AP_M112_T"
-msgstr "AP M112 T"
-
 msgid "_155mm_HEAT_T267"
 msgstr "HEAT T267"
 
@@ -3466,14 +3551,8 @@ msgstr "OCO mle. 1944"
 msgid "_155mm_OE_M101M4"
 msgstr "OE M101M4"
 
-msgid "_155mm_OE_M101M4_T"
-msgstr "OE M101M4 T"
-
 msgid "_155mm_OE_M101M6"
 msgstr "OE M101M6"
-
-msgid "_155mm_OE_M101M6_T"
-msgstr "OE M101M6 T"
 
 msgid "_155mm_OE_mle_1917"
 msgstr "OE mle. 1917"
@@ -3829,6 +3908,9 @@ msgstr "90 mm F3M"
 msgid "_90mm_FrtPrf1944"
 msgstr "Frt.Prf. mle. 1944"
 
+msgid "_90mm_FrtPrf1944_02"
+msgstr "OCC mle. 1944"
+
 msgid "_90mm_FrtPrf1945_SH"
 msgstr "90 Frt.Prf. mle. 1945"
 
@@ -3856,6 +3938,9 @@ msgstr "OE-90 D. 919"
 msgid "_90mm_OE_mle_1924"
 msgstr "OE mle. 1924"
 
+msgid "_90mm_OE_mle_1924_02"
+msgstr "OE mle. 1924"
+
 msgid "_90mm_OFL"
 msgstr "OFL"
 
@@ -3873,6 +3958,9 @@ msgstr "POT-90 D. 919"
 
 msgid "_90mm_Prf1941"
 msgstr "Prf. mle. 1941"
+
+msgid "_90mm_Prf1941_02"
+msgstr "Frt.Prf. mle. 1941"
 
 msgid "_90mm_canon_DCA_30"
 msgstr "90 mm DCA 30"
@@ -3893,6 +3981,9 @@ msgstr "90 mm AC DCA 45"
 
 msgid "_90mm_canon_DCA_45_AC_A"
 msgstr "90 mm AC DCA 45"
+
+msgid "_90mm_canon_DCA_45_AC_A_02"
+msgstr "90 mm AC DCA 45 Auto"
 
 msgid "_90mm_canon_DCA_45_AC_A_dualgun_SH"
 msgstr "90 mm AC DCA 45 DP"

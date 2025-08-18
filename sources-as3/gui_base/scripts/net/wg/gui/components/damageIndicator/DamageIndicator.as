@@ -41,7 +41,7 @@ package net.wg.gui.components.damageIndicator
       
       private var _yPos:Number = 0;
       
-      private var _guiScale:int = 1;
+      private var _guiScale:Number = 1.0;
       
       private var _isStandard:Boolean = false;
       
@@ -86,6 +86,11 @@ package net.wg.gui.components.damageIndicator
       public function as_setYaw(param1:int, param2:Number) : void
       {
          this._items[param1].setYaw(param2);
+      }
+      
+      public function as_setAlpha(param1:int, param2:Number) : void
+      {
+         this._items[param1].alpha = param2;
       }
       
       public function as_showExtended(param1:int, param2:String, param3:String, param4:int, param5:String, param6:String, param7:String, param8:Boolean) : void

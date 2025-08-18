@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params/>
+	<node>
+		<name>start</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R232_IS-7W/Sequence/Antena_animation_start_01.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>loop</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>exit_time</type>
+					<exitOffset>1.000000</exitOffset>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-242.000000 -146.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>loop</name>
+		<type>sequence</type>
+		<resource>vehicles/russian/R232_IS-7W/Sequence/Antena_animation_loop_01.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<uiPosition>-241.500000 89.000000 0.000000</uiPosition>
+	</node>
+</root>

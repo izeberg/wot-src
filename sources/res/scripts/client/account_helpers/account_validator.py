@@ -1,4 +1,4 @@
-import logging, BigWorld, wg_async, constants
+import logging, BigWorld, th_async, constants
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import dependency
 from items import vehicles, tankmen, ITEM_TYPE_NAMES
@@ -43,12 +43,12 @@ class AccountValidator(object):
     itemsCache = dependency.descriptor(IItemsCache)
     itemsFactory = dependency.descriptor(IGuiItemsFactory)
 
-    @wg_async.wg_async
+    @th_async.th_async
     def validate(self, callback=None):
         handlers = self._getHandlers()
         for handler in handlers:
             try:
-                yield wg_async.wg_await(handler())
+                yield th_async.th_await(handler())
             except ValidateException as e:
                 _logger.error('There is exception while validating item %s (%s)', e.itemData, e.msg)
                 callback(e.code)
@@ -66,7 +66,7 @@ class InventoryVehiclesValidator(AccountValidator):
         return (
          self.__validateInventoryVehicles,)
 
-    @wg_async.wg_async
+    @th_async.th_async
     def __validateInventoryVehicles(self):
         inventory = self.itemsCache.items.inventory
         vehsInvData = inventory.getCacheValue(GUI_ITEM_TYPE.VEHICLE, {})
@@ -78,7 +78,7 @@ class InventoryVehiclesValidator(AccountValidator):
                 except Exception as e:
                     raise ValidateException(e.message, ValidationCodes.VEHICLE_MISMATCH, _packItemData(GUI_ITEM_TYPE.VEHICLE, (invID, vehCompDescr)))
 
-        yield wg_async.wg_await(wg_async.distributeLoopOverTicks(createVehicleDescrAsync(), minPerTick=10, maxPerTick=100, logID='createVehicleDescrAsync', tickLength=0.0))
+        yield th_async.th_await(th_async.distributeLoopOverTicks(createVehicleDescrAsync(), minPerTick=10, maxPerTick=100, logID='createVehicleDescrAsync', tickLength=0.0))
 
         def validateTankmanAsync():
             for vehInvData in inventory.getItemsData(GUI_ITEM_TYPE.VEHICLE).values():
@@ -91,7 +91,7 @@ class InventoryVehiclesValidator(AccountValidator):
 
             return
 
-        yield wg_async.wg_await(wg_async.distributeLoopOverTicks(validateTankmanAsync(), minPerTick=10, maxPerTick=100, logID='validateTankmanAsync', tickLength=0.0))
+        yield th_async.th_await(th_async.distributeLoopOverTicks(validateTankmanAsync(), minPerTick=10, maxPerTick=100, logID='validateTankmanAsync', tickLength=0.0))
 
 
 class InventoryOutfitValidator(AccountValidator):
@@ -100,7 +100,7 @@ class InventoryOutfitValidator(AccountValidator):
         return (
          self.__validateInventoryOutfit,)
 
-    @wg_async.wg_async
+    @th_async.th_async
     def __validateInventoryOutfit(self):
         c11nData = self.itemsCache.items.inventory.getCacheValue(GUI_ITEM_TYPE.CUSTOMIZATION, {})
 
@@ -123,7 +123,7 @@ class InventoryOutfitValidator(AccountValidator):
 
             return
 
-        yield wg_async.wg_await(wg_async.distributeLoopOverTicks(validateOutfitsAsync(), minPerTick=10, maxPerTick=100, logID='validateOutfitsAsync', tickLength=0.0))
+        yield th_async.th_await(th_async.distributeLoopOverTicks(validateOutfitsAsync(), minPerTick=10, maxPerTick=100, logID='validateOutfitsAsync', tickLength=0.0))
 
 
 class InventoryTankmenValidator(AccountValidator):
@@ -132,7 +132,7 @@ class InventoryTankmenValidator(AccountValidator):
         return (
          self.__validateInventoryTankmen,)
 
-    @wg_async.wg_async
+    @th_async.th_async
     def __validateInventoryTankmen(self):
         tmenInvData = self.itemsCache.items.inventory.getCacheValue(GUI_ITEM_TYPE.TANKMAN, {})
 
@@ -147,4 +147,4 @@ class InventoryTankmenValidator(AccountValidator):
 
             return
 
-        yield wg_async.wg_await(wg_async.distributeLoopOverTicks(validateInventoryTankmenAsync(), minPerTick=10, maxPerTick=100, logID='validateOutfitsAsync', tickLength=0.0))
+        yield th_async.th_await(th_async.distributeLoopOverTicks(validateInventoryTankmenAsync(), minPerTick=10, maxPerTick=100, logID='validateOutfitsAsync', tickLength=0.0))

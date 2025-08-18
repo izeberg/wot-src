@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.581690 0.075757 -3.329023</min>
+		<max>1.613217 1.786509 3.522982</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/crash/lod2/Hull</nodefullVisual>
+</root>

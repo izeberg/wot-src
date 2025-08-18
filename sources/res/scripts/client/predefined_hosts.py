@@ -213,7 +213,7 @@ class _PingRequester(object):
         self.__lastUpdateTime = 0
         self.__setPingCallback = False
         try:
-            BigWorld.WGPinger.setOnPingCallback(self.__pingCallback)
+            BigWorld.Pinger.setOnPingCallback(self.__pingCallback)
             self.__setPingCallback = True
         except AttributeError:
             LOG_CURRENT_EXCEPTION()
@@ -231,7 +231,7 @@ class _PingRequester(object):
                     LOG_DEBUG('Ping starting', peripheries)
                     self.__isRequestPingInProgress = True
                     self.__updatePing(pData, PING_STATUSES.REQUESTED)
-                    BigWorld.WGPinger.ping(peripheries)
+                    BigWorld.Pinger.ping(peripheries)
                 except (AttributeError, TypeError):
                     LOG_CURRENT_EXCEPTION()
                     self.__updatePing(pData, PING_STATUSES.UNDEFINED)
@@ -251,7 +251,7 @@ class _PingRequester(object):
         self.__pingPerformedCallback = None
         self.clear()
         try:
-            BigWorld.WGPinger.clearOnPingCallback()
+            BigWorld.Pinger.clearOnPingCallback()
         except AttributeError:
             LOG_CURRENT_EXCEPTION()
 

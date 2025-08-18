@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -33,10 +33,6 @@
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						atlasAlbedoHeight
@@ -74,20 +70,15 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_BANM.dds</Texture>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-0.106505 6.618984 -7.514860</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.687433 -0.131018 -15.750566</min>
-		<max>1.508984 13.580715 0.736822</max>
+		<min>-1.578005 -0.131018 -15.305060</min>
+		<max>1.364995 13.368985 0.275340</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
 	<geometrySize>2586</geometrySize>
 	<minUVDensity>0.000481</minUVDensity>
 </root>

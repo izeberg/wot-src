@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.680133 -2.016492 -0.693117</min>
-		<max>1.118384 2.454074 1.153836</max>
+		<min>-0.694754 -0.020374 -0.655018</min>
+		<max>1.080562 0.903537 1.153836</max>
 	</visibilityBox>
-	<extent>800.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<extent>400.000000</extent>
 	<nodefullVisual>content/Environment/hd_env_SU_1080_BoxSnow/normal/lod3/hd_env_SU_1080_BoxGroupSnow_02</nodefullVisual>
 </root>

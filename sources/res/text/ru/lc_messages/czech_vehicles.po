@@ -47,6 +47,9 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
+msgid "Chassis_Cz04_T50_51_Waf_Hound_3DSt"
+msgstr "Jiskra"
+
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34/85"
 
@@ -257,6 +260,20 @@ msgstr "LT vz. 35"
 
 msgid "Cz04_T50_51"
 msgstr "TVP T 50/51"
+
+msgid "Cz04_T50_51_Waf_Hound_3DSt"
+msgstr "Jiskra"
+
+msgid "Cz04_T50_51_Waf_Hound_3DSt_descr"
+msgstr ""
+"«Типовой разведчик Альянса, представляющий собой довольно удобную платформу для бесконечных модернизаций. Выживаемость машины была сразу отодвинута на задний план, что высвободило ресурсы для работы непосредственно над мобильностью и вооружением. Один на один этот танк, конечно, не может составить конкуренцию более крепким и универсальным машинам, но если эти \"Молнии\" налетают на противника стаей, от последнего вряд ли что-то останется, кроме воспоминаний. На то и ставка».\n"
+"Серьёзно? Вот это они скармливают своим новобранцам в качестве рекламы машины? Мол, мы дадим вам пушку и скорость, но вы ничего не сможете сделать без помощи союзников? Отличный ход, вы действительно умеете заинтересовать потенциальные экипажи лезть в это жестяное ведро."
+
+msgid "Cz04_T50_51_Waf_Hound_3DSt_short"
+msgstr "Jiskra"
+
+msgid "Cz04_T50_51_Waf_Hound_3DSt_short_special"
+msgstr "ОБТ с глубокой модернизацией"
 
 msgid "Cz04_T50_51_descr"
 msgstr ""
@@ -918,6 +935,9 @@ msgstr "LT vz. 35"
 msgid "Turret_1_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
+msgid "Turret_1_Cz04_T50_51_Waf_Hound_3DSt"
+msgstr "Jiskra"
+
 msgid "Turret_1_Cz05_T34_100"
 msgstr "Konštrukta T-34/100 varianta II"
 
@@ -1100,6 +1120,20 @@ msgstr "Průrazný vz. 49 (s jádrem)"
 
 msgid "_100mm_Prurazny_vz_50"
 msgstr "Průrazný vz. 50"
+
+msgid "_100mm_Prurazny_vz_50_WT"
+msgstr "Серебряная пуля"
+
+msgid "_100mm_Prurazny_vz_50_WT_descr"
+msgstr "Гордость оружейников Альянса."
+
+msgid "_100mm_Prurazny_vz_50_WT_long_special"
+msgstr ""
+"При перегрузке генератора гончие получают заряд плазмы, который увеличивает "
+"наносимый урон на 25%, вплоть до 100%"
+
+msgid "_100mm_Prurazny_vz_50_WT_short_special"
+msgstr "Дополнительный урон плазмой"
 
 msgid "_100mm_Prurazny_vz_PJ8_Dravec"
 msgstr "Průrazný vz. PJ8"

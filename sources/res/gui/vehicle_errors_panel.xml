@@ -382,5 +382,29 @@
 				<item>yellow</item>
 			</value>
 		</message>
+		<message>
+			<name>wtEventTankIsAtFullHP</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/equipment/wtEvent/healthAtFullHP)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>wtHunterAbilitiesDisabled</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/equipment/wtEvent/hunterAbilitiesDisabled)</item>
+				<item>yellow</item>
+			</value>
+		</message>
+		<message>
+			<name>wtNoActiveShieldOnBoss</name>
+			<type>list</type>
+			<value>
+				<item>_(#ingame_gui:player_messages/equipment/wtEvent/noActiveShieldOnBoss)</item>
+				<item>yellow</item>
+			</value>
+		</message>
 	</messages>
 </root>

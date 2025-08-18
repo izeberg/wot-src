@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>lambert2</identifier>
-					<fx>shaders/controlPoint/wg_controlPointRadius.fx</fx>
+					<fx>shaders/controlPoint/controlPointRadius.fx</fx>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>

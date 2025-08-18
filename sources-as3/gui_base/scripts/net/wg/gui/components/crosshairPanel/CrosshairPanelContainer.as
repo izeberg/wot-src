@@ -76,7 +76,7 @@ package net.wg.gui.components.crosshairPanel
       
       private var _isDistanceShown:Boolean = true;
       
-      private var _scale:Number = 1;
+      private var _scale:Number = 1.0;
       
       private var _reloadingInterval:Number = -1;
       
@@ -833,6 +833,26 @@ package net.wg.gui.components.crosshairPanel
          {
             this.clearAutoloaderReloadTimer();
             this._currentCrosshair.autoloaderShowShot();
+         }
+      }
+      
+      public function as_showPlasmaIndicator(param1:Number, param2:Number, param3:String) : void
+      {
+         if(this._currentCrosshair is WTCrosshairBase)
+         {
+            (this._currentCrosshair as WTCrosshairBase).showPlasmaIndicator(param1,param2,param3);
+         }
+      }
+      
+      public function as_showExplosiveShotIndicator(param1:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setExplosiveShotMarker(param1);
+         }
+         if(this._currentCrosshair is WTCrosshairBase)
+         {
+            (this._currentCrosshair as WTCrosshairBase).setExplosiveShotVisible(param1);
          }
       }
       

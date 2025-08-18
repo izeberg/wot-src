@@ -43,6 +43,7 @@ class SPECIAL_VOICE_TAG(object):
     WHITE_TIGER_EVENT_2021 = ('letov_SpecialVoice', 'armand_SpecialVoice', 'elisa_SpecialVoice',
                               'krieger_SpecialVoice')
     WHITE_TIGER_EVENT_2022 = ('villanelle_SpecialVoice', 'ermelinda_SpecialVoice')
+    WHITE_TIGER_EVENT_2023 = ('hannelore_SpecialVoice', 'jana_SpecialVoice')
     SABATON_2021 = 'sabaton21_specialVoice'
     BPH_MT_2022 = ('IvanCarevichSpecialVoice', 'VasilisaSpecialVoice', 'KashcheiSpecialVoice',
                    'BabaYagaSpecialVoice')
@@ -54,7 +55,7 @@ class SPECIAL_VOICE_TAG(object):
     BATTLE_OF_BLOGGERS_2025 = ('bob25_commander_1_specialVoice', 'bob25_commander_2_specialVoice',
                                'bob25_commander_3_specialVoice', 'bob25_commander_4_specialVoice')
     ALL = (
-     ARIA_2023, BUFFON, SABATON, OFFSPRING, RACER, RACER_EN, CELEBRITY_2021, MIHO, YHA, CELEBRITY_2022, DAY_OF_COSMONAUTICS_21, SABATON_2021, WITCHES_CREW, HW_CREW, CELEBRITY_2023, A157F) + BATTLE_OF_BLOGGERS + BATTLE_OF_BLOGGERS_2021 + G_I_JOE_TWITCH_2021 + WHITE_TIGER_EVENT_2021 + WHITE_TIGER_EVENT_2022 + BPH_MT_2022 + MOSFILM_2023 + HW_2023 + KIN_DZA_DZA_2024 + BATTLE_OF_BLOGGERS_2025
+     ARIA_2023, BUFFON, SABATON, OFFSPRING, RACER, RACER_EN, CELEBRITY_2021, MIHO, YHA, CELEBRITY_2022, DAY_OF_COSMONAUTICS_21, SABATON_2021, WITCHES_CREW, HW_CREW, CELEBRITY_2023, A157F) + BATTLE_OF_BLOGGERS + BATTLE_OF_BLOGGERS_2021 + G_I_JOE_TWITCH_2021 + WHITE_TIGER_EVENT_2021 + WHITE_TIGER_EVENT_2022 + BPH_MT_2022 + MOSFILM_2023 + HW_2023 + KIN_DZA_DZA_2024 + BATTLE_OF_BLOGGERS_2025 + WHITE_TIGER_EVENT_2023
 
 
 class SPECIAL_CREW_TAG(object):

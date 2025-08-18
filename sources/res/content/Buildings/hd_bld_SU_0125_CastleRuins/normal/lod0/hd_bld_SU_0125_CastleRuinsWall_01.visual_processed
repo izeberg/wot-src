@@ -13,9 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>sShape2.vertices</vertices>
+			<primitive>sShape2.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -42,17 +41,22 @@
 				</material>
 				<groupOrigin>-0.112263 6.911881 -7.430746</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.uv2</stream>
+			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
-				1
+				0
 				<material>
 					<identifier>s_nd1</identifier>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
@@ -105,24 +109,16 @@
 						colorTex
 						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_GCM.dds</Texture>
 					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>-0.094049 6.821979 -7.555962</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>s_nd0</identifier>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
@@ -175,10 +171,6 @@
 						colorTex
 						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_GCM.dds</Texture>
 					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>-0.106955 6.825028 -7.536209</groupOrigin>
 			</primitiveGroup>
@@ -189,6 +181,6 @@
 		<max>1.532867 13.615746 0.759878</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>626848</geometrySize>
+	<geometrySize>541992</geometrySize>
 	<minUVDensity>0.011235</minUVDensity>
 </root>

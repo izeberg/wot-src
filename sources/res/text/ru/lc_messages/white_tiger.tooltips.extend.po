@@ -1,0 +1,121 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "WTAnyCrewbook/info"
+msgstr ""
+"Применяется ко всему экипажу. Изучение даёт опыт каждому члену экипажа."
+
+msgid "WtEventBattlesEndTooltipView/description"
+msgstr ""
+"Вы можете продолжить покупки в разделе Магазина события и открывать порталы."
+
+msgid "WtEventBattlesEndTooltipView/portals"
+msgstr "Порталы доступны %(brown_Open)sдо %(date)s%(brown_Close)s."
+
+msgid "WtEventBattlesEndTooltipView/title"
+msgstr "Бои события завершены"
+
+msgid "WtProgressionEntryPointTooltip/completed"
+msgstr "ВСЕ ЭТАПЫ ПРОЙДЕНЫ!"
+
+msgid "WtProgressionEntryPointTooltip/currentStage"
+msgstr "Текущий этап"
+
+msgid "WtProgressionEntryPointTooltip/duration/days"
+msgstr "{days} д."
+
+msgid "WtProgressionEntryPointTooltip/duration/hours"
+msgstr "{hours} ч."
+
+msgid "WtProgressionEntryPointTooltip/duration/lessMinute"
+msgstr "менее минуты"
+
+msgid "WtProgressionEntryPointTooltip/duration/minutes"
+msgstr "{minutes} мин."
+
+msgid "WtProgressionEntryPointTooltip/stageAwards"
+msgstr "Награды этапа"
+
+msgid "WtProgressionEntryPointTooltip/stampsFormat"
+msgstr "%(stampsCurrent)/%(stampsMax)"
+
+msgid "WtProgressionEntryPointTooltip/subtitle"
+msgstr "До конца события: %(timeLeft)"
+
+msgid "WtProgressionEntryPointTooltip/title"
+msgstr "Ваффентрагер: реванш"
+
+msgid "cinematicTooltip/description"
+msgstr ""
+"Перед фон Кригером и Лемартеном стоит задача, все решения которой одинаково "
+"опасны. И если авантюрист Лемартен напрочь лишён инстинкта самосохранения, "
+"то фон Кригер понимает, что второй попытки не будет. Нужно собрать нервы в "
+"кулак и напасть на Альянс первыми."
+
+msgid "cinematicTooltip/description_outro"
+msgstr ""
+"Вылазка прошла успешно, но она даже близко не стояла по опасности с тем, что"
+" сейчас предстоит осуществить фон Кригеру и его помощнику. Отступать некуда,"
+" каждая минута промедления может стать последней для тех немногочисленных "
+"людей, кто дорог фон Кригеру. Кого он считает другом."
+
+msgid "cinematicTooltip/locked"
+msgstr "Видео станет доступно после прохождения всех этапов прогрессии."
+
+msgid "cinematicTooltip/subTitle"
+msgstr "Вступительный ролик события «Ваффентрагер: реванш»."
+
+msgid "cinematicTooltip/subTitle_outro"
+msgstr "Финальный ролик события «Ваффентрагер: реванш»."
+
+msgid "cinematicTooltip/title"
+msgstr "Медблок"
+
+msgid "cinematicTooltip/title_outro"
+msgstr "Сквозь портал"
+
+msgid "wtBonusGroupTooltip/header/description"
+msgstr "Случайное выпадение одной награды из списка"
+
+msgid "wtBonusGroupTooltip/header/title/wt_group_battleBoosters"
+msgstr "Случайная инструкция"
+
+msgid "wtBonusGroupTooltip/header/title/wt_group_consumables"
+msgstr "Случайное снаряжение"
+
+msgid "wtBonusGroupTooltip/header/title/wt_group_crewBooks"
+msgstr "Случайный учебный материал"
+
+msgid "wtBonusGroupTooltip/possibleRewards"
+msgid_plural "count"
+msgstr[0] "И ещё %(count)s возможная награда"
+msgstr[1] "И ещё %(count)s возможные награды"
+msgstr[2] "И ещё %(count)s возможных наград"
+
+msgid "wtRentVehicle/common/text"
+msgstr "Машина и её экипаж будут списаны по истечении срока аренды."
+
+msgid "wtRentVehicle/common/title"
+msgstr "Общее:"
+
+msgid "wtRentVehicle/crew/body"
+msgstr "%(value)s%%-й экипаж с навыками"
+
+msgid "wtRentVehicle/rent/battles"
+msgstr "Бои в аренду"
+
+msgid "wtRentVehicle/rentLeft/battles"
+msgstr "Осталось боёв до завершения аренды"

@@ -130,6 +130,22 @@ package net.wg.data.constants.generated
       public static const ABILITY:String = "ability";
       
       public static const THERMAL_VISION_WARNING:String = "thermalVisionWarning";
+      
+      public static const WT_HYPERION_WARNING_FIRING:String = "wtHyperionFiring";
+      
+      public static const WT_HYPERION_WARNING_CHARGING:String = "wtHyperionCharging";
+      
+      public static const WT_BOMB_CAPTURE:String = "wtBombCapture";
+      
+      public static const WT_BOMB_DEPLOY:String = "wtBombDeploy";
+      
+      public static const WT_BOMB_ABSORB:String = "wtBombAbsorb";
+      
+      public static const WT_BOMB_CARRY:String = "wtBombCarry";
+      
+      public static const WT_STUN_AREA:String = "wtStunArea";
+      
+      public static const WT_HYPERION_2025_WARNING_CHARGING:String = "wtHyperion2025Charging";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_TYPES()

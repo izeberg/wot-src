@@ -8,6 +8,33 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>hd_bld_SU_0118_Dam_02</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -88,7 +115,7 @@
 						<Vector4>0.949020 0.949020 0.949020 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.836923 1.017698</groupOrigin>
+				<groupOrigin>0.000000 0.400877 1.050107</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -158,7 +185,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_Bright_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.197904 1.785522</groupOrigin>
+				<groupOrigin>0.000000 0.231026 1.758630</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -167,6 +194,6 @@
 		<max>8.192435 2.469781 4.571172</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>16050</geometrySize>
+	<geometrySize>16130</geometrySize>
 	<minUVDensity>0.006659</minUVDensity>
 </root>

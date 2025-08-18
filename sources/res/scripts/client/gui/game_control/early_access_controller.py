@@ -447,7 +447,7 @@ class _EarlyAccessSystemMessagesController(object):
 
     def checkStartCycles(self):
         ctrl = self.__earlyAccessController
-        if ctrl.isEnabled():
+        if ctrl.isEnabled() and ctrl.isAnyQuestAvailable():
             nowTime = time_utils.getServerUTCTime()
             _, finishProgressionTime = ctrl.getProgressionTimes()
             lastAnnounceChapter = None
@@ -464,7 +464,7 @@ class _EarlyAccessSystemMessagesController(object):
 
     def checkFinishCycles(self):
         ctrl = self.__earlyAccessController
-        if ctrl.isEnabled():
+        if ctrl.isEnabled() and ctrl.isAnyQuestAvailable():
             nowTime = time_utils.getServerUTCTime()
             _, finishProgressionTime = ctrl.getProgressionTimes()
             _, finishSeasonTime = ctrl.getSeasonInterval()

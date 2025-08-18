@@ -139,6 +139,10 @@
 						g_detailUVTiling
 						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.504541 0.638466 0.029721</groupOrigin>
 			</primitiveGroup>
@@ -219,6 +223,10 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.504555 0.650385 -0.118335</groupOrigin>

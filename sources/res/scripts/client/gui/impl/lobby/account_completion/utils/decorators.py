@@ -1,5 +1,5 @@
 from functools import wraps
-from wg_async import wg_async, wg_await, delay
+from th_async import th_async, th_await, delay
 from helpers import dependency
 from skeletons.gui.game_control import IOverlayController
 _WAITING_DELAY = 0.001
@@ -7,11 +7,11 @@ _WAITING_DELAY = 0.001
 def waitShowOverlay(func):
 
     @wraps(func)
-    @wg_async
+    @th_async
     def _wrapper(*args, **kwargs):
         overlay = dependency.instance(IOverlayController)
-        yield wg_await(overlay.waitShow())
-        yield wg_await(delay(_WAITING_DELAY))
+        yield th_await(overlay.waitShow())
+        yield th_await(delay(_WAITING_DELAY))
         func(*args, **kwargs)
 
     return _wrapper

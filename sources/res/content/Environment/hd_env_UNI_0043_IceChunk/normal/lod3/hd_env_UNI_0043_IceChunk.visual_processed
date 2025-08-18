@@ -36,10 +36,6 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Environment/hd_env_UNI_0043_IceChunk/hd_env_UNI_0043_IceChunk_01_blend.png</Texture>
 					</property>
@@ -50,10 +46,6 @@
 					<property>
 						g_dirtColorParams
 						<Vector4>0.100000 0.000000 0.000000 0.010000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tileUVScale

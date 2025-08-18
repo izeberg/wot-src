@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G189_E100_02/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G189_E100_02/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>
+			-0.511144 -0.325682 0.15488
+			<!--BW_String-->
+		</min>
+		<max>0.511062 0.615517 4.610638</max>
+	</visibilityBox>
+</root>

@@ -102,18 +102,18 @@ msgstr "Так!"
 
 msgid "battleMessages/enableVOIP"
 msgstr ""
-"Команда сформирована. Выбирайте технику и в бой!\n"
-"Войти в голосовой чат (%(keyName)s)"
+"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
+"Увайсці ў галасавы чат (%(keyName)s)"
 
 msgid "battleMessages/specifyVOIP"
 msgstr ""
-"Команда сформирована. Выбирайте технику и в бой!\n"
-"Для быстрого доступа к голосовой связи назначьте горячую клавишу."
+"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
+"Для хуткага доступу да галасавой сувязі прызначце гарачую клавішу."
 
 msgid "battleMessages/withoutVOIP"
 msgstr ""
-"Команда сформирована. Выбирайте технику и в бой!\n"
-"Для использования голосовой связи включите эту функцию в настройках игры."
+"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
+"Для выкарыстання галасавой сувязі ўключыце гэтую функцыю ў наладах гульні."
 
 msgid "battleResult/losers"
 msgstr "Пераможаныя"
@@ -450,7 +450,7 @@ msgid "entryPoint/season/starts"
 msgstr "З %(day)s %(month)s"
 
 msgid "entryPoint/title"
-msgstr "РАНГОВЫЕ БОИ"
+msgstr "РАНГАВЫЯ БАІ"
 
 msgid "introPage/alert/beforeSeason"
 msgstr "Да пачатку падзеі:"
@@ -460,33 +460,35 @@ msgstr "Рэжым часова недаступны. Зайдзіце пазн�
 
 msgid "introPage/blocks/block1/description"
 msgstr ""
-"Бои проходят на технике VI уровня и по правилам Стандартного боя. Вам "
-"предстоит пройти 3 дивизиона по 5 рангов. Каждый новый ранг принесёт вам "
-"достойное вознаграждение."
+"Баі праходзяць толькі на тэхніцы VI узроўню і паводле правіл Звычайнага бою."
+" Вам давядзецца прайсці 3 дывізіёны па 5 рангаў. Кожны новы ранг прынясе вас"
+" годную ўзнагароду."
 
 msgid "introPage/blocks/block1/title"
 msgstr "Асноўныя правілы"
 
 msgid "introPage/blocks/block2/description"
 msgstr ""
-"Участвуя в Ранговых боях, вы будете зарабатывать очки Боевого пропуска, "
-"продвигаясь по главам события и получая за это уникальные награды."
+"У Рангавых баях вы будзеце здабываць ачкі Баявога пропуска, прасоўваючыся па"
+" раздзелах падзеі і атрымліваючы за гэта ўнікальныя ўзнагароды."
 
 msgid "introPage/blocks/block2/title"
-msgstr "Очки Боевого пропуска"
+msgstr "Ачкі Баявога пропуска"
 
 msgid "introPage/blocks/block3/description"
 msgstr ""
-"Теперь в Ранговых боях можно использовать голосовую связь для лучшей "
-"координации действий, а также играть взводом — это и веселее, и эффективнее!"
+"Цяпер у Рангавых баях можна выкарыстоўваць галасавую сувязь для лепшай "
+"каардынацыі дзеянняў, а таксама гуляць звязам — гэта і весялей, і больш "
+"эфектыўна!"
 
 msgid "introPage/blocks/block3/title"
-msgstr "Взводы и голосовая связь"
+msgstr "Звязы і галасавая сувязь"
 
 msgid "introPage/blocks/yearRewardDisabled"
 msgstr ""
-"Теперь в Ранговых боях можно использовать голосовую связь для лучшей "
-"координации действий, а также играть взводом — это и веселее, и эффективнее!"
+"Цяпер у Рангавых баях можна выкарыстоўваць галасавую сувязь для лепшай "
+"каардынацыі дзеянняў, а таксама гуляць звязам — гэта і весялей, і больш "
+"эфектыўна!"
 
 msgid "introPage/btns/accept"
 msgstr "Так!"
@@ -542,6 +544,58 @@ msgstr "ранг машыны атрыманы"
 
 msgid "notification/vehicleRankLost"
 msgstr "ранг машыны страчаны"
+
+msgid "postbattleStatus/controls/confirmButton"
+msgstr "Так!"
+
+msgid "postbattleStatus/controls/skipAnimation"
+msgstr "Паказваць анімацыю"
+
+msgid "postbattleStatus/controls/takeReward"
+msgstr "Забраць узнагароду"
+
+msgid "postbattleStatus/title/final"
+msgstr ""
+"Дивизионы пройдены.\n"
+"Награды получены."
+
+msgid "postbattleStatus/title/finalWithReward"
+msgstr ""
+"Дивизионы пройдены.\n"
+"Заберите свою заслуженную награду!"
+
+msgid "postbattleStatus/title/getChevron"
+msgstr "Получен шеврон!"
+
+msgid "postbattleStatus/title/getChevrons"
+msgstr "Получены шевроны!"
+
+msgid "postbattleStatus/title/getDivision"
+msgstr "Дивизион повышен!"
+
+msgid "postbattleStatus/title/getRank"
+msgstr "Получен новый ранг!"
+
+msgid "postbattleStatus/title/saveChevron"
+msgstr "Шаўрон захаваны"
+
+msgid "postbattleStatus/title/saveDivision"
+msgstr "Дивизион защищён"
+
+msgid "postbattleStatus/title/saveRank"
+msgstr "Ранг защищён"
+
+msgid "postbattleStatus/title/wasteChevron"
+msgstr "Шаўрон страчаны"
+
+msgid "postbattleStatus/title/wasteChevrons"
+msgstr "Шевроны потеряны"
+
+msgid "postbattleStatus/title/wasteDivision"
+msgstr "Дивизион понижен"
+
+msgid "postbattleStatus/title/wasteRank"
+msgstr "Ранг страчаны"
 
 msgid "primeTimes/serverTooltip/allNotAvailable"
 msgstr ""
@@ -782,7 +836,7 @@ msgid "questsTooltip/unavailable/seasonEnd/min"
 msgstr "Недаступна: до канца сезона %(min)s хв"
 
 msgid "rankTooltip/body"
-msgstr "Текущий ранг игрока."
+msgstr "Бягучы ранг гульца."
 
 msgid "rankedAwards/awardsBlock/awardsHeaderTxt"
 msgstr "Узнагарода за дасягнутыя рангі"
@@ -885,8 +939,8 @@ msgstr " "
 
 msgid "rankedBattleMainView/infoPage/header"
 msgstr ""
-"Соревновательный режим, где мастерство продвигает вас по рангам и приносит "
-"уникальные награды."
+"Спаборніцкі рэжым, дзе майстэрства прасоўвае вас па рангах і прыносіць "
+"унікальныя ўзнагароды."
 
 msgid "rankedBattleMainView/leaguesView/descr"
 msgstr "Вы можаце надалей гуляць у рэжыме."
@@ -1378,6 +1432,9 @@ msgstr "Дывізіён пройдзены"
 msgid "rankedDivisionStatus/locked"
 msgstr "Дывізіён яшчэ не дасягнуты"
 
+msgid "rankedHangarWidget/bonusBattles"
+msgstr "Прызавыя баі: %(battlesCount)s"
+
 msgid "rankedSeasonCompleted/header/description"
 msgstr "Вы можаце працягваць гуляць у рэжыме"
 
@@ -1541,8 +1598,8 @@ msgstr "Удасканаленае абсталяванне на выбар"
 
 msgid "selectorTooltip/desc"
 msgstr ""
-"Соревновательный режим, где мастерство продвигает вас по рангам и приносит "
-"уникальные награды."
+"Спаборніцкі рэжым, дзе майстэрства прасоўвае вас па рангах і прыносіць "
+"унікальныя ўзнагароды."
 
 msgid "selectorTooltip/tillEnd"
 msgstr "Да канца баёў:"
@@ -1642,16 +1699,16 @@ msgid "tooltip/step/winners"
 msgstr "камандзе-пераможцы"
 
 msgid "unit/message/divisionRestriction"
-msgstr "Игроки взвода должны находиться в одном дивизионе"
+msgstr "Гульцы звязу павінны знаходзіцца ў адным дывізіёне"
 
 msgid "unit/message/rankRestriction"
-msgstr "Разница в рангах между игроками взвода превышает %(rank)s"
+msgstr "Розніца ў рангах паміж гульцамі звязу перавышае %(rank)s"
 
 msgid "voiceChat/active"
-msgstr "Выйти из голосового чата"
+msgstr "Выйсці з галасавога чата"
 
 msgid "voiceChat/inactive"
-msgstr "Войти в голосовой чат"
+msgstr "Увайсці ў галасавы чат"
 
 msgid "welcomeScreen/btn"
 msgstr "Наперад!"

@@ -47,6 +47,11 @@
 			<UUID>3d11029f-41a4-4c19-9674-96a4f0a7550a</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>hd_h08_MTV1_0020_PetZone_01</name>
+			<UUID>0492b467-3a04-480d-99f5-deb84968b514</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -124,6 +129,16 @@
 			</component>
 			<component>
 				<objectIndex>8</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>d02da205-7931-40e9-8059-2339730fe8c5</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -361,6 +376,30 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							6.90652 -0.052 -13.5907
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 3.14159 0
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>ModelDitheringComponent</type>
@@ -509,6 +548,24 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Force full dithering distance</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Start dithering distance</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Dithering animation speed</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -626,6 +683,21 @@
 						<name>Model name</name>
 						<isAsset>true</isAsset>
 						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0076_Cart_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/Hangars/h08_mt_hangar/enviroment/normal/lod0/hd_h08_MTV1_0020_PetZone_01.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>

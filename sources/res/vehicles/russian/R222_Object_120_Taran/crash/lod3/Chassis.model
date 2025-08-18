@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R222_Object_120_Taran/crash/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.540758 -0.002317 -3.782852</min>
+		<max>1.540758 1.078773 4.526063</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R222_Object_120_Taran/crash/lod3/Chassis</nodefullVisual>
+</root>

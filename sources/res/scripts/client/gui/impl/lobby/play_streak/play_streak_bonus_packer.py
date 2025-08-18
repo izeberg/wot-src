@@ -3,7 +3,6 @@ from gui.impl import backport
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.play_streak.play_streak_bonus_model import PlayStreakBonusModel
 from gui.impl.gen.view_models.views.lobby.play_streak.play_streak_style_bonus_model import PlayStreakStyleBonusModel
-from gui.shared.utils.functions import makeTooltip
 from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyleCamouflage
 from gui.shared.gui_items.customization.c11n_helpers import getProgressionStyle
 from gui.shared.gui_items.Vehicle import getNationLessName
@@ -96,8 +95,7 @@ class PlayStreakTokenBonusUIPacker(TokenBonusUIPacker):
     @classmethod
     def _getTooltipsPackers(cls):
         packers = super(PlayStreakTokenBonusUIPacker, cls)._getTooltipsPackers()
-        packers.update({RANDOM_GOODIE_TOKEN: cls.__getPlayStreakTokenGoodieToolTip, 
-           RANDOM_EQUIPMENT_TOKEN: cls.__getPlayStreakTokenEquipmentToolTip})
+        packers.update({RANDOM_GOODIE_TOKEN: cls.__getPlayStreakTokenGoodieToolTip})
         return packers
 
     @classmethod
@@ -121,8 +119,4 @@ class PlayStreakTokenBonusUIPacker(TokenBonusUIPacker):
 
     @classmethod
     def __getPlayStreakTokenGoodieToolTip(cls, *_):
-        return backport.createTooltipData(makeTooltip(header=backport.text(R.strings.tooltips.playStreak.randomGoodie.label()), body=backport.text(R.strings.tooltips.playStreak.randomGoodie.desc())))
-
-    @classmethod
-    def __getPlayStreakTokenEquipmentToolTip(cls, *_):
-        return backport.createTooltipData(makeTooltip(header=backport.text(R.strings.tooltips.playStreak.randomEquipment.label()), body=backport.text(R.strings.tooltips.playStreak.randomEquipment.desc())))
+        return {'contentId': R.views.lobby.daily.tooltips.RandomGoodieTooltip()}

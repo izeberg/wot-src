@@ -128,6 +128,11 @@ msgstr "Аренда только для режима «Линия фронта�
 msgid "buyingPanel/personalTradeIn/title"
 msgstr "Обмен машины: %(name)s"
 
+msgid "buyingPanel/pmCampaignVehicleLabel"
+msgstr ""
+"Покупка недоступна: эта машина — награда за выполнение всех задач кампании "
+"«%(operationName)s» с отличием."
+
 msgid "buyingPanel/pmOperationVehicleLabel"
 msgstr ""
 "Покупка недоступна: эта машина — награда за выполнение всех задач операции "
@@ -253,7 +258,7 @@ msgid "header/backBtn/descrLabel/ranked"
 msgstr "К РАНГОВЫМ БОЯМ"
 
 msgid "header/backBtn/descrLabel/referralProgram"
-msgstr "К ВЫБОРУ НАГРАДЫ"
+msgstr "К КОНТЕЙНЕРУ"
 
 msgid "header/backBtn/descrLabel/researchTree"
 msgstr "К ДЕРЕВУ ИССЛЕДОВАНИЙ"

@@ -27,15 +27,6 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>polySurface1_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
 			<identifier>polySurface2__C0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
@@ -46,15 +37,6 @@
 		</node>
 		<node>
 			<identifier>polySurface2__C1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>polySurface2_</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -81,15 +63,6 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>polySurface5_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
 			<identifier>polySurface6__C0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
@@ -108,15 +81,6 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>polySurface6_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
 			<identifier>polySurface7__C0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
@@ -127,6 +91,42 @@
 		</node>
 		<node>
 			<identifier>polySurface7__C1</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>polySurface1_</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>polySurface2_</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>polySurface5_</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>polySurface6_</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -175,18 +175,18 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>polySurface1__C0</node>
 		<node>polySurface1__C1</node>
-		<node>polySurface1_</node>
 		<node>polySurface2__C0</node>
 		<node>polySurface2__C1</node>
-		<node>polySurface2_</node>
 		<node>polySurface5__C0</node>
 		<node>polySurface5__C1</node>
-		<node>polySurface5_</node>
 		<node>polySurface6__C0</node>
 		<node>polySurface6__C1</node>
-		<node>polySurface6_</node>
 		<node>polySurface7__C0</node>
 		<node>polySurface7__C1</node>
+		<node>polySurface1_</node>
+		<node>polySurface2_</node>
+		<node>polySurface5_</node>
+		<node>polySurface6_</node>
 		<node>polySurface7_</node>
 		<node>polySurface4__C0</node>
 		<node>polySurface9</node>
@@ -212,6 +212,10 @@
 						diffuseMap
 						<Texture>content/Environment/hd_env_UNI_0058_BarrierRepairwork/hd_env_UNI_0058_BarrierRepairwork_AM.dds</Texture>
 					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
@@ -228,6 +232,10 @@
 					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_UNI_0058_BarrierRepairwork/hd_env_UNI_0058_BarrierRepairwork_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
 					</property>
 					<property>
 						texRandom
@@ -250,6 +258,6 @@
 		<min>-0.698487 0.000067 -1.256657</min>
 		<max>0.550122 1.575869 1.270187</max>
 	</boundingBox>
-	<geometrySize>64638</geometrySize>
+	<geometrySize>64530</geometrySize>
 	<minUVDensity>0.034053</minUVDensity>
 </root>

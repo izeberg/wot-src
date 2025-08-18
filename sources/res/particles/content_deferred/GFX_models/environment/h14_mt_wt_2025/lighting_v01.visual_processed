@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert1</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.001000 1.000000 0.200000</Vector4>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/wt_mask_gradient_01.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>1.000000 0.200000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.010000 1.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/wt_noise_01.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.023529 0.215686 0.713726 1.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>5.000000 5.000000 5.000000 0.000000</Vector4>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.207843 0.352941 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseUVTilling
+						<Vector4>1.000000 0.100000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						softBordersBot
+						<Float>0.570000</Float>
+					</property>
+					<property>
+						softBordersLeft
+						<Float>0.540000</Float>
+					</property>
+					<property>
+						softBordersRight
+						<Float>0.520000</Float>
+					</property>
+					<property>
+						softBordersTop
+						<Float>0.520000</Float>
+					</property>
+					<property>
+						useSoftEdges
+						<Bool>true</Bool>
+					</property>
+					<property>
+						texAddressMode
+						<Int>2</Int>
+					</property>
+				</material>
+				<groupOrigin>0.078171 -3.782106 1.058308</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.348957 -7.646695 -1.729056</min>
+		<max>1.505298 0.082482 3.845671</max>
+	</boundingBox>
+	<geometrySize>126196</geometrySize>
+	<minUVDensity>0.048087</minUVDensity>
+</root>

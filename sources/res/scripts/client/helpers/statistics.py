@@ -148,7 +148,7 @@ class StatisticsCollector(IStatisticsCollector):
         self.__needCollectSessionData = value
 
     def getSessionData(self):
-        stat = BigWorld.wg_getClientStatistics()
+        stat = BigWorld.getClientStatistics()
         if stat:
             return self.__getSessionData(stat)
         else:
@@ -156,8 +156,8 @@ class StatisticsCollector(IStatisticsCollector):
 
     def getStatistics(self, andStop=True):
         result = {'system': None, 'session': None}
-        stat = BigWorld.wg_getClientStatistics()
-        BigWorld.wg_clearCrashedState()
+        stat = BigWorld.getClientStatistics()
+        BigWorld.clearCrashedState()
         if not stat:
             return result
         else:

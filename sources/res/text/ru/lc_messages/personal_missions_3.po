@@ -464,6 +464,9 @@ msgstr ""
 msgid "VehicleTabs/tooltip/title"
 msgstr "Ветка %(minVehicleLevel)s-%(maxVehicleLevel)s уровня"
 
+msgid "VehicleView/additionalRewards/body/campaign"
+msgstr "За выполнение кампании с отличием"
+
 msgid "VehicleView/additionalRewards/body/default"
 msgstr "За выполнение операции"
 
@@ -504,8 +507,20 @@ msgstr ""
 "местности и особенности рельефа лучшими союзниками. Машина оснащена "
 "многогусеничным движителем, что косвенно влияет на выживаемость."
 
+msgid "VehicleView/description/G182_Mausekonig"
+msgstr ""
+"Тяжёлый штурмовой самоходный бункер — по-настоящему достойная награда для "
+"самых опытных и целеустремлённых игроков. Отличная машина для продавливания "
+"направлений и позиционных боёв, оснащённая мощной двухорудийной установкой. "
+"Крепкая броня, некоторые листы которой расположены под рациональными углами,"
+" позволяет прощать ошибки и могут дать дополнительную возможность "
+"реализовать огневой потенциал."
+
 msgid "VehicleView/goTo"
 msgstr "К ОПЕРАЦИИ"
+
+msgid "VehicleView/goToMany"
+msgstr "К ОПЕРАЦИИЯМ"
 
 msgid "VehicleView/preview/label"
 msgstr "Предпросмотр"
@@ -513,6 +528,11 @@ msgstr "Предпросмотр"
 msgid "VehicleView/researchCondition/body"
 msgstr ""
 "Для получения машины необходимо выполнить все задачи операции %(name)s"
+
+msgid "VehicleView/researchCondition/finalBody"
+msgstr ""
+"Для получения машины необходимо выполнить все замыкающие задачи кампании "
+"«&zwnbsp;Новые&nbsp;горизонты&zwnbsp;»"
 
 msgid "VehicleView/researchCondition/header"
 msgstr "УСЛОВИЯ ПОЛУЧЕНИЯ ТЕХНИКИ"
@@ -542,7 +562,10 @@ msgid "VehicleView/restoreTooltip/seconds"
 msgstr "< 1м"
 
 msgid "VehicleView/title"
-msgstr "НАГРАДЫ ОПЕРАЦИИ %(name)s"
+msgstr "НАГРАДЫ ОПЕРАЦИИ «%(name)s»"
+
+msgid "VehicleView/titleMany"
+msgstr "НАГРАДЫ КАМПАНИИ «НОВЫЕ ГОРИЗОНТЫ»"
 
 msgid "VehicleView/vehicleInfo/body/inHangar"
 msgstr "В Ангаре"
@@ -590,8 +613,7 @@ msgid "introView/infoCard/second"
 msgstr "Новые танки VII-X уровня: ARMT, TF-2 CLARK и Projet Murat."
 
 msgid "introView/infoCard/third"
-msgstr ""
-"Вишенка на торте: сверхтяжёлый двухорудийный танк XI уровня (в разработке)"
+msgstr "Главная награда: сверхтяжёлый двухорудийный танк XI уровня Mausekönig"
 
 msgid "introView/videoButton/buttonText"
 msgstr "О КАМПАНИИ"

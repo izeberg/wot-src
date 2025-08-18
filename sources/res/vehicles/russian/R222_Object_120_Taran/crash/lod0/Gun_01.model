@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R222_Object_120_Taran/crash/lod1/Gun_01</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.313344 -0.356060 -1.495869</min>
+		<max>0.561430 0.325764 7.010535</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R222_Object_120_Taran/crash/lod0/Gun_01</nodefullVisual>
+</root>

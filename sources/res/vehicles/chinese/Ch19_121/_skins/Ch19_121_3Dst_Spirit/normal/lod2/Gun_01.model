@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod2/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.252881 -0.258395 -0.023246</min>
+		<max>0.649271 0.610142 5.564275</max>
+	</visibilityBox>
+</root>

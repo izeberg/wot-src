@@ -8,47 +8,20 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_SU_0116_WareHouse</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod3</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_nd2.vertices</vertices>
+			<primitive>s_nd2.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd2</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0116_WareHouse/hd_bld_SU_0116_WareHouse_BAM.dds</Texture>
@@ -65,25 +38,24 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0116_WareHouse/hd_bld_SU_0116_WareHouse_BANM.dds</Texture>
 					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>3.500000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.803922 0.596078 0.341176 0.000000</Vector4>
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>0.045679 4.470847 -0.122101</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_wall_0</identifier>
-					<materialKind>108</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.428601 4.720819 2.022417</groupOrigin>
+				<groupOrigin>0.045680 4.470848 -0.122101</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-6.881185 -0.461962 -11.368523</min>
-		<max>6.983983 9.392059 11.124321</max>
+		<min>-6.881184 -0.450075 -11.368523</min>
+		<max>6.972543 9.391771 11.124321</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>8104</geometrySize>
+	<geometrySize>8016</geometrySize>
 	<minUVDensity>0.000424</minUVDensity>
 </root>

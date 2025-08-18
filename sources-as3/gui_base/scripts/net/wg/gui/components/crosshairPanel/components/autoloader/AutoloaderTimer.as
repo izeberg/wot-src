@@ -26,7 +26,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       private var _currentLabel:String = "";
       
-      private var _mathAbs:Function = null;
+      private var _currentSec:Number = 0.0;
       
       private var _disposed:Boolean = false;
       
@@ -34,7 +34,6 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       {
          super();
          this._currentTimer = this.timerIdle;
-         this._mathAbs = Math.abs;
          this.timerReloading.noTranslateTextfield = true;
          this.timerAutoload.noTranslateTextfield = true;
          this.timerStun.noTranslateTextfield = true;
@@ -54,24 +53,29 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
          this.timerIdle.dispose();
          this.timerIdle = null;
          this._currentTimer = null;
-         this._mathAbs = null;
          this.reloadingBg = null;
       }
       
       public function updateTimer(param1:Number, param2:Boolean) : void
       {
-         var _loc3_:String = null;
          var _loc4_:String = null;
+         var _loc5_:String = null;
+         var _loc3_:Number = Math.round(param1 * 10) / 10;
+         if(this._currentSec == _loc3_)
+         {
+            return;
+         }
+         this._currentSec = _loc3_;
          if(param2)
          {
-            _loc4_ = ExternalInterface.call.apply(this,[FRACTIONAL_FORMAT_CMD,this._mathAbs.call(null,param1)]);
-            _loc3_ = _loc4_.slice(0,_loc4_.length - 1);
+            _loc5_ = ExternalInterface.call(FRACTIONAL_FORMAT_CMD,Math.abs(_loc3_));
+            _loc4_ = _loc5_.slice(0,_loc5_.length - 1);
          }
          else
          {
-            _loc3_ = Values.EMPTY_STR;
+            _loc4_ = Values.EMPTY_STR;
          }
-         this._currentLabel = _loc3_;
+         this._currentLabel = _loc4_;
          this._currentTimer.label = this._currentLabel;
       }
       

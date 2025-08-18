@@ -288,10 +288,10 @@ msgstr ""
 msgid "clanInvitesWindow/tooltips/table/cantSendInvite/body"
 msgstr "Немагчыма прыняць гульцоў у клан: у клане няма вольных месцаў."
 
-msgid "clanInvitesWindow/tooltips/table/invites/awgExp/body"
+msgid "clanInvitesWindow/tooltips/table/invites/avgXP/body"
 msgstr "Сярэдні досвед за бой запрошанага гульца (прэміум акаўнт улічваецца)"
 
-msgid "clanInvitesWindow/tooltips/table/invites/awgExp/header"
+msgid "clanInvitesWindow/tooltips/table/invites/avgXP/header"
 msgstr "Сярэдні досвед за бой"
 
 msgid "clanInvitesWindow/tooltips/table/invites/battlesCount/body"
@@ -347,11 +347,11 @@ msgstr "Заяву можна зацвердзіць або адхіліць."
 msgid "clanInvitesWindow/tooltips/table/requests/actions/header"
 msgstr "Дзеянні"
 
-msgid "clanInvitesWindow/tooltips/table/requests/awgExp/body"
+msgid "clanInvitesWindow/tooltips/table/requests/avgXP/body"
 msgstr ""
 "Сярэдні досвед за бой гульца, які падаў заяўку (прэміум акаўнт улічваецца)"
 
-msgid "clanInvitesWindow/tooltips/table/requests/awgExp/header"
+msgid "clanInvitesWindow/tooltips/table/requests/avgXP/header"
 msgstr "Сярэдні досвед за бой"
 
 msgid "clanInvitesWindow/tooltips/table/requests/battlesCount/body"
@@ -461,12 +461,12 @@ msgid "clanPersonalInvitesWindow/tooltips/table/cantAcceptRequestDueToCD/body"
 msgstr ""
 "Вы нядаўна пакінулі клан. Прымаць запрашэнні ў клан вы зможаце не раней за:"
 
-msgid "clanPersonalInvitesWindow/tooltips/table/invites/awgExp/body"
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/avgXP/body"
 msgstr ""
 "Сярэдні досвед за бой членаў клана, ад імя якога адпраўлена запрашэнне "
 "(сярэднеўзважана па Выпадковых баях)"
 
-msgid "clanPersonalInvitesWindow/tooltips/table/invites/awgExp/header"
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/avgXP/header"
 msgstr "Сярэдні досвед за бой"
 
 msgid "clanPersonalInvitesWindow/tooltips/table/invites/battlesCount/body"

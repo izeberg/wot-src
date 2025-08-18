@@ -1077,6 +1077,38 @@ package
       
       public static const PROGRESSION_STATS_TOTALSTAGES:String = "#ranked_battles:progression/stats/totalStages";
       
+      public static const POSTBATTLESTATUS_TITLE_GETCHEVRON:String = "#ranked_battles:postbattleStatus/title/getChevron";
+      
+      public static const POSTBATTLESTATUS_TITLE_GETCHEVRONS:String = "#ranked_battles:postbattleStatus/title/getChevrons";
+      
+      public static const POSTBATTLESTATUS_TITLE_WASTECHEVRON:String = "#ranked_battles:postbattleStatus/title/wasteChevron";
+      
+      public static const POSTBATTLESTATUS_TITLE_WASTECHEVRONS:String = "#ranked_battles:postbattleStatus/title/wasteChevrons";
+      
+      public static const POSTBATTLESTATUS_TITLE_SAVECHEVRON:String = "#ranked_battles:postbattleStatus/title/saveChevron";
+      
+      public static const POSTBATTLESTATUS_TITLE_GETRANK:String = "#ranked_battles:postbattleStatus/title/getRank";
+      
+      public static const POSTBATTLESTATUS_TITLE_SAVERANK:String = "#ranked_battles:postbattleStatus/title/saveRank";
+      
+      public static const POSTBATTLESTATUS_TITLE_WASTERANK:String = "#ranked_battles:postbattleStatus/title/wasteRank";
+      
+      public static const POSTBATTLESTATUS_TITLE_SAVEDIVISION:String = "#ranked_battles:postbattleStatus/title/saveDivision";
+      
+      public static const POSTBATTLESTATUS_TITLE_GETDIVISION:String = "#ranked_battles:postbattleStatus/title/getDivision";
+      
+      public static const POSTBATTLESTATUS_TITLE_WASTEDIVISION:String = "#ranked_battles:postbattleStatus/title/wasteDivision";
+      
+      public static const POSTBATTLESTATUS_TITLE_FINAL:String = "#ranked_battles:postbattleStatus/title/final";
+      
+      public static const POSTBATTLESTATUS_TITLE_FINALWITHREWARD:String = "#ranked_battles:postbattleStatus/title/finalWithReward";
+      
+      public static const POSTBATTLESTATUS_CONTROLS_SKIPANIMATION:String = "#ranked_battles:postbattleStatus/controls/skipAnimation";
+      
+      public static const POSTBATTLESTATUS_CONTROLS_CONFIRMBUTTON:String = "#ranked_battles:postbattleStatus/controls/confirmButton";
+      
+      public static const POSTBATTLESTATUS_CONTROLS_TAKEREWARD:String = "#ranked_battles:postbattleStatus/controls/takeReward";
+      
       public static const RANKEDSELECTEDREWARDVIEW_ADDITIONALREWARDS_BUTTON:String = "#ranked_battles:rankedSelectedRewardView/additionalRewards/button";
       
       public static const RANKEDSELECTEDREWARDVIEW_ADDITIONALREWARDS_REMAINTEXT:String = "#ranked_battles:rankedSelectedRewardView/additionalRewards/remainText";
@@ -1100,6 +1132,8 @@ package
       public static const UNIT_MESSAGE_DIVISIONRESTRICTION:String = "#ranked_battles:unit/message/divisionRestriction";
       
       public static const RANKTOOLTIP_BODY:String = "#ranked_battles:rankTooltip/body";
+      
+      public static const RANKEDHANGARWIDGET_BONUSBATTLES:String = "#ranked_battles:rankedHangarWidget/bonusBattles";
        
       
       public function RANKED_BATTLES()

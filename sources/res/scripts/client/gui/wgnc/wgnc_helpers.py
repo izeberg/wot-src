@@ -1,4 +1,5 @@
 from debug_utils import LOG_ERROR
+from gui.shared.view_helpers.UsersInfoHelper import UsersInfoHelper
 
 def parseSize(sizeStr):
     if sizeStr:
@@ -13,3 +14,11 @@ def parseSize(sizeStr):
     else:
         size = None
     return size
+
+
+def spa2Nickname(value):
+    helper = UsersInfoHelper()
+    contact = helper.getContact(value)
+    name = ('<font color="#DFDFDF">{}</font>').format(contact.getName())
+    clanAbbrev = ('<font color="#8C8C7E">[{}]</font>').format(contact.getClanAbbrev()) if contact.getClanAbbrev() else ''
+    return ('{}{}').format(name, clanAbbrev)

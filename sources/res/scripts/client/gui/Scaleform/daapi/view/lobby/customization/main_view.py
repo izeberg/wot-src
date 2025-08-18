@@ -7,7 +7,7 @@ from Event import Event
 from Math import Matrix
 from account_helpers.AccountSettings import AccountSettings, CUSTOMIZATION_SECTION, CAROUSEL_ARROWS_HINT_SHOWN_FIELD, IS_CUSTOMIZATION_INTRO_VIEWED
 import adisp
-from wg_async import wg_async, wg_await
+from th_async import th_async, th_await
 from gui import g_tankActiveCamouflage, SystemMessages
 from gui.Scaleform.Waiting import Waiting
 from gui.Scaleform.daapi import LobbySubView
@@ -61,6 +61,7 @@ from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
 from vehicle_outfit.outfit import Area
 from constants import NC_MESSAGE_PRIORITY
+from skeletons.gui.game_control import IWhiteTigerController
 if typing.TYPE_CHECKING:
     from gui.Scaleform.daapi.view.lobby.customization.context.context import CustomizationContext
 _logger = logging.getLogger(__name__)
@@ -205,6 +206,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
     appLoader = dependency.descriptor(IAppLoader)
     guiLoader = dependency.descriptor(IGuiLoader)
     settingsCore = dependency.descriptor(ISettingsCore)
+    __wtController = dependency.descriptor(IWhiteTigerController)
 
     def __init__(self, ctx=None):
         super(MainView, self).__init__()
@@ -234,7 +236,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
     def showQuestProgressionInfoWindow(self):
         showOnboardingView()
 
-    @wg_async
+    @th_async
     def showBuyWindow(self, ctx=None):
         if self.__propertiesSheet.handleBuyWindow():
             return
@@ -246,7 +248,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
         purchaseItems = self.__ctx.mode.getPurchaseItems()
         cart = getTotalPurchaseInfo(purchaseItems)
         if cart.totalPrice == ITEM_PRICE_EMPTY:
-            positive = yield wg_await(tryToShowReplaceExistingStyleDialog(self))
+            positive = yield th_await(tryToShowReplaceExistingStyleDialog(self))
             if not positive:
                 self.onBuyConfirmed(False)
                 return
@@ -255,7 +257,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
                 builder = ResSimpleDialogBuilder()
                 builder.setPreset(DialogPresets.CUSTOMIZATION_INSTALL_BOUND)
                 builder.setMessagesAndButtons(R.strings.dialogs.customization.change_install_bound)
-                isOk = yield wg_await(dialogs.showSimple(builder.build(self)))
+                isOk = yield th_await(dialogs.showSimple(builder.build(self)))
                 self.onBuyConfirmed(isOk)
             else:
                 self.__applyItems(purchaseItems)
@@ -831,7 +833,8 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
         self.hangarSpace.onSpaceDestroy -= self.__onSpaceDestroyHandler
         self.hangarSpace.onSpaceRefresh -= self.__onSpaceRefreshHandler
         self.service.onRegionHighlighted -= self.__onRegionHighlighted
-        if g_currentVehicle.isPresent():
+        isActive = self.__wtController.isEventPrbActive()
+        if g_currentVehicle.isPresent() and not isActive:
             g_tankActiveCamouflage[g_currentVehicle.item.intCD] = self.__ctx.season
             g_currentVehicle.refreshModel()
         self.__propertiesSheet = None
@@ -1233,13 +1236,13 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
     def __getProgressiveView(self):
         return self.guiLoader.windowsManager.getViewByLayoutID(R.views.lobby.customization.progressive_items_view.ProgressiveItemsView())
 
-    @wg_async
+    @th_async
     def __confirmClose(self):
         if self.__hasOpenedChildWindow() or self.__isGamefaceBuyViewOpened():
             return
-        yield wg_await(self.__closeConfirmator())
+        yield th_await(self.__closeConfirmator())
 
-    @wg_async
+    @th_async
     def __closeConfirmator(self):
         if self.__closed or not self.__ctx.isOutfitsModified():
             result = True
@@ -1252,7 +1255,7 @@ class MainView(LobbySubView, CustomizationMainViewMeta):
             builder = ResPureDialogBuilder()
             builder.setMessagesAndButtons(closeDialogStrings, focused=DialogButtons.CANCEL)
             self.__onViewCreatedCallback()
-            result = yield wg_await(dialogs.showSimple(builder.build(self)))
+            result = yield th_await(dialogs.showSimple(builder.build(self)))
             self.__onViewDestroyedCallback()
         if result:
             self.__onCloseWindow()

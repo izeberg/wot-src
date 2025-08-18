@@ -9,7 +9,7 @@ from gui.impl.gen_utils import DynAccessor
 from helpers import dependency
 from skeletons.gui.app_loader import IAppLoader
 from skeletons.gui.impl import IGuiLoader
-from wg_async import wg_async, wg_await, await_callback, AsyncSemaphore, BrokenPromiseError
+from th_async import th_async, th_await, await_callback, AsyncSemaphore, BrokenPromiseError
 if typing.TYPE_CHECKING:
     from typing import Callable, Optional, Union
 _logger = logging.getLogger(__name__)
@@ -136,11 +136,11 @@ class FadeManager(object):
     def isAnimating(self):
         return self._currentWindow is not None
 
-    @wg_async
+    @th_async
     def show(self):
         yield self._transit(self._doShow)
 
-    @wg_async
+    @th_async
     def hide(self):
         yield self._transit(self._doHide)
 
@@ -151,7 +151,7 @@ class FadeManager(object):
             self._currentWindow = None
         return
 
-    @wg_async
+    @th_async
     def _doShow(self):
         if self._isDestroyed:
             return
@@ -165,7 +165,7 @@ class FadeManager(object):
         self._gui.windowsManager.onWindowStatusChanged += self._windowStatusChanged
         yield await_callback(self._currentWindow.fadeOut)()
 
-    @wg_async
+    @th_async
     def _doHide(self):
         if self._isDestroyed:
             return
@@ -175,7 +175,7 @@ class FadeManager(object):
         yield await_callback(self._currentWindow.fadeIn)()
         self.hideImmediately()
 
-    @wg_async
+    @th_async
     def _transit(self, transition):
         yield self._semaphore.acquire()
         try:
@@ -216,14 +216,14 @@ class useFade(object):
     def __call__(self, func):
 
         @wraps(func)
-        @wg_async
+        @th_async
         def wrapper(*args, **kwargs):
             with FadeManager(self._layer, self._createCover) as (fadeManager):
-                yield wg_await(fadeManager.show())
+                yield th_await(fadeManager.show())
                 result = func(*args, **kwargs)
                 if isAsync(func):
                     yield await_callback(result)(*args, **kwargs)
-                yield wg_await(fadeManager.hide())
+                yield th_await(fadeManager.hide())
 
         return wrapper
 

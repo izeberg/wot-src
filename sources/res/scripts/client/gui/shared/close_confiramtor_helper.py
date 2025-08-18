@@ -1,5 +1,5 @@
 import adisp
-from wg_async import wg_async, wg_await
+from th_async import th_async, th_await
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.impl.gen import R
 from gui.prb_control.entities.base.ctx import LeavePrbAction
@@ -65,7 +65,7 @@ class CloseConfirmatorsHelper(object):
         self._lobbyContext.deletePlatoonCreationConfirmator(self.__confirmPlatoonCreation)
 
     @adisp.adisp_async
-    @wg_async
+    @th_async
     def __confirmEvent(self, event, callback):
         if event.eventType == events.ViewEventType.LOAD_VIEW:
             if event.alias not in self.getRestrictedSfViews():
@@ -80,17 +80,17 @@ class CloseConfirmatorsHelper(object):
                 if event.action.ignoreConfirmation:
                     callback(True)
                     return
-        result = yield wg_await(self.__closeConfirmator())
+        result = yield th_await(self.__closeConfirmator())
         callback(result)
 
     @adisp.adisp_async
-    @wg_async
+    @th_async
     def __confirmHeaderNavigation(self, callback, alias=None):
-        result = yield wg_await(self.__closeConfirmator())
+        result = yield th_await(self.__closeConfirmator())
         callback(result)
 
     @adisp.adisp_async
-    @wg_async
+    @th_async
     def __confirmPlatoonCreation(self, callback):
-        result = yield wg_await(self.__closeConfirmator())
+        result = yield th_await(self.__closeConfirmator())
         callback(result)

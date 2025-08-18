@@ -1,6 +1,6 @@
 import logging
 from gui.prb_control.dispatcher import g_prbLoader
-from wg_async import wg_async, wg_await, await_callback
+from th_async import th_async, th_await, await_callback
 from BWUtil import AsyncReturn
 from constants import QUEUE_TYPE
 from gui.impl.lobby.tank_setup.tank_setup_sounds import playSlotActionSound
@@ -70,12 +70,12 @@ class TankSetupAsyncCommandLock(object):
     def isLocked(self):
         return self.__inProcess
 
-    @wg_async
+    @th_async
     def tryAsyncCommand(self, func, *args, **kwargs):
         if not self.__inProcess:
             try:
                 self._lock()
-                result = yield wg_await(func(*args, **kwargs))
+                result = yield th_await(func(*args, **kwargs))
                 raise AsyncReturn(result)
             finally:
                 self._unlock()
@@ -85,7 +85,7 @@ class TankSetupAsyncCommandLock(object):
             raise AsyncReturn(None)
         return
 
-    @wg_async
+    @th_async
     def tryAsyncCommandWithCallback(self, func, *args, **kwargs):
         if not self.__inProcess:
             try:

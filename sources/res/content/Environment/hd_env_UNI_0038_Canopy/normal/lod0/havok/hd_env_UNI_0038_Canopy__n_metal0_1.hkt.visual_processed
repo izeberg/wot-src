@@ -227,25 +227,17 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>H1_1_1</node>
-		<node>H0_1_7</node>
-		<node>H1_1_3</node>
-		<node>H1_1_6</node>
-		<node>H1_1_14</node>
-		<node>H1_1_19</node>
-		<node>H1_1_16</node>
-		<node>H1_1_5</node>
-		<node>H1_1_2_1</node>
-		<node>H1_1_4</node>
 		<node>H1_1_13</node>
-		<node>H1_1_17</node>
-		<node>H1_1</node>
+		<node>H1_1_3</node>
+		<node>H1_1_1</node>
+		<node>H1_1_6</node>
+		<node>H1_1_5</node>
+		<node>H1_1_14</node>
+		<node>H1_1_4</node>
+		<node>H1_1_2_1</node>
 		<node>H1_1_8</node>
-		<node>H1_1_10</node>
-		<node>H1_1_11</node>
-		<node>H1_1_18</node>
-		<node>H1_1_20</node>
 		<node>H1_1_7</node>
+		<node>H1_1_11</node>
 		<geometry>
 			<vertices>part0a.vertices</vertices>
 			<stream>part0a.uv2</stream>
@@ -305,6 +297,10 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
 						g_enableTerrainBlending
 						<Bool>false</Bool>
 					</property>
@@ -362,6 +358,10 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
 						g_enableTerrainBlending
 						<Bool>false</Bool>
 					</property>
@@ -378,25 +378,25 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.516287 3.651555 -3.337762</groupOrigin>
+				<groupOrigin>-0.446087 3.454037 -3.543464</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>H0_1_7</node>
-		<node>H1_1_20</node>
+		<node>H1_1</node>
+		<node>H1_1_16</node>
 		<node>H0_1_6</node>
 		<node>H0_1_1</node>
 		<node>H0_1_14</node>
 		<node>H0_1_17</node>
-		<node>H1_1_16</node>
-		<node>H1_1_19</node>
-		<node>H0_1_20</node>
-		<node>H1_1</node>
-		<node>H1_1_10</node>
 		<node>H1_1_17</node>
+		<node>H1_1_10</node>
 		<node>H1_1_18</node>
+		<node>H1_1_20</node>
+		<node>H0_1_20</node>
+		<node>H0_1_7</node>
+		<node>H1_1_19</node>
 		<geometry>
 			<vertices>part1a.vertices</vertices>
 			<stream>part1a.uv2</stream>
@@ -448,6 +448,14 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_07_DM.dds</Texture>
+					</property>
+					<property>
 						g_enableTerrainBlending
 						<Bool>false</Bool>
 					</property>
@@ -497,6 +505,14 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_07_DM.dds</Texture>
+					</property>
+					<property>
 						g_enableTerrainBlending
 						<Bool>false</Bool>
 					</property>
@@ -513,7 +529,7 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.152768 6.580691 -3.352660</groupOrigin>
+				<groupOrigin>-0.152768 6.426455 -3.352502</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -521,6 +537,6 @@
 		<min>-3.439242 0.093410 -7.523180</min>
 		<max>3.133707 7.352180 0.818175</max>
 	</boundingBox>
-	<geometrySize>345372</geometrySize>
+	<geometrySize>380880</geometrySize>
 	<minUVDensity>0.072480</minUVDensity>
 </root>

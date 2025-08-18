@@ -1,14 +1,13 @@
 package net.wg.gui.battle.views.dualGunPanel
 {
-   import flash.display.MovieClip;
    import flash.external.ExternalInterface;
    import flash.text.TextField;
    import net.wg.data.constants.Time;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
-   import net.wg.infrastructure.interfaces.entity.IDisposable;
+   import net.wg.infrastructure.base.SimpleDisposable;
    
-   public class DualGunPanelTimer extends MovieClip implements IDisposable
+   public class DualGunPanelTimer extends SimpleDisposable
    {
       
       private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
@@ -36,18 +35,17 @@ package net.wg.gui.battle.views.dualGunPanel
       
       public var totalTimer:TextField = null;
       
-      private var _mathAbs:Function = null;
-      
       private var _timersMap:Object;
       
       private var _currentTimer:TextField;
       
-      private var _disposed:Boolean = false;
+      private var _currentStyle:String = "";
+      
+      private var _lastValue:String = "";
       
       public function DualGunPanelTimer()
       {
          super();
-         this._mathAbs = Math.abs;
          this._currentTimer = this.timerIdle;
          this._timersMap = {};
          this._timersMap[STYLE_DEBUFF] = this.timerReloading;
@@ -58,36 +56,29 @@ package net.wg.gui.battle.views.dualGunPanel
          this._timersMap[STYLE_CRITICAL] = this.timerStun;
       }
       
-      public final function dispose() : void
+      override protected function onDispose() : void
       {
-         this._disposed = true;
          App.utils.data.cleanupDynamicObject(this._timersMap);
          this.timerReloading = null;
          this.timerAutoload = null;
          this.timerIdle = null;
          this.timerStun = null;
-         this._mathAbs = null;
          this._currentTimer = null;
          this.totalTimer = null;
       }
       
       public function setTextStyle(param1:String) : void
       {
+         if(this._currentStyle == param1)
+         {
+            return;
+         }
+         this._currentStyle = param1;
          var _loc2_:TextField = this._timersMap[param1];
          if(_loc2_)
          {
             this.switchCurrentTimers(_loc2_);
          }
-      }
-      
-      public function updateTimerValue(param1:Number) : void
-      {
-         this._currentTimer.text = this.convertTimerValue(param1);
-      }
-      
-      public function updateTotalTime(param1:Number) : void
-      {
-         this.totalTimer.text = param1 > Values.DEFAULT_INT ? this.convertTimerValue(param1) : Values.EMPTY_STR;
       }
       
       public function updateClipType(param1:int) : void
@@ -104,6 +95,21 @@ package net.wg.gui.battle.views.dualGunPanel
          }
       }
       
+      public function updateTimerValue(param1:Number) : void
+      {
+         var _loc2_:String = this.convertTimerValue(param1);
+         if(this._lastValue != _loc2_)
+         {
+            this._lastValue = _loc2_;
+            this._currentTimer.text = _loc2_;
+         }
+      }
+      
+      public function updateTotalTime(param1:Number) : void
+      {
+         this.totalTimer.text = param1 > Values.DEFAULT_INT ? this.convertTimerValue(param1) : Values.EMPTY_STR;
+      }
+      
       private function switchCurrentTimers(param1:TextField) : void
       {
          this._currentTimer.visible = false;
@@ -114,14 +120,8 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private function convertTimerValue(param1:Number) : String
       {
-         var _loc2_:Number = param1 / Time.MILLISECOND_IN_SECOND;
-         var _loc3_:String = ExternalInterface.call.apply(this,[FRACTIONAL_FORMAT_CMD,this._mathAbs.call(null,_loc2_)]);
-         return _loc3_.slice(0,_loc3_.length - 1);
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
+         var _loc2_:String = ExternalInterface.call(FRACTIONAL_FORMAT_CMD,Math.abs(param1 / Time.MILLISECOND_IN_SECOND));
+         return _loc2_.slice(0,_loc2_.length - 1);
       }
    }
 }

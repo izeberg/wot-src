@@ -17,7 +17,7 @@ package net.wg.gui.lobby.clans.profile.VOs
       
       public var wins:String = "";
       
-      public var awgExp:String = "";
+      public var avgXP:String = "";
       
       public var daysInClan:String = "";
       

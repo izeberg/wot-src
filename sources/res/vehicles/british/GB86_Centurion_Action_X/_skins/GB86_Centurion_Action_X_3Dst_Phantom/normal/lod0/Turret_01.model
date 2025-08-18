@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.448750 -0.059652 -2.481339</min>
+		<max>1.877624 1.590644 1.375367</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod0/Turret_01</nodefullVisual>
+</root>

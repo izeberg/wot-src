@@ -70,6 +70,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.EPICBATTLES_ALIASES;
    import net.wg.data.constants.generated.EVENTBOARDS_ALIASES;
    import net.wg.data.constants.generated.EVENTPROGRESSION_ALIASES;
+   import net.wg.data.constants.generated.EVENT_BATTLES_ALIASES;
    import net.wg.data.constants.generated.FITTING_TYPES;
    import net.wg.data.constants.generated.FORTIFICATION_ALIASES;
    import net.wg.data.constants.generated.FUNRANDOM_ALIASES;
@@ -1209,6 +1210,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ResizableEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ShopSalesEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.StrongholdEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.WTEventEntryPoint;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
@@ -1242,6 +1244,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
    import net.wg.gui.lobby.hangar.quests.UniversalFlagEntryPoint;
+   import net.wg.gui.lobby.hangar.quests.WhiteTigerWidget;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
    import net.wg.gui.lobby.hangar.tcarousel.CarouselProgressionPoints;
@@ -1267,6 +1270,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamAbility;
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRenderer;
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRendererWithHighlight;
+   import net.wg.gui.lobby.hangar.wtEvent.WTEventBoxEntryPointWidget;
+   import net.wg.gui.lobby.hangar.wtEvent.WTEventCarouselWidget;
+   import net.wg.gui.lobby.hangar.wtEvent.WTEventCrewWidget;
+   import net.wg.gui.lobby.hangar.wtEvent.WTEventParamsWidget;
    import net.wg.gui.lobby.header.BadgeSlot;
    import net.wg.gui.lobby.header.LobbyHeader;
    import net.wg.gui.lobby.header.OnlineCounter;
@@ -1951,17 +1958,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.rankedBattles19.components.stats.RankedBattleStats;
    import net.wg.gui.lobby.rankedBattles19.components.stats.RankedBattleStatsDelta;
    import net.wg.gui.lobby.rankedBattles19.components.stats.RankedBattleStatsInfo;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.LeagueImageContainer;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.RankIcon;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.RankShield;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.RankShieldContainer;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.RankWidgetAnimator;
    import net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.StatsDelta;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.WidgetBonusBattles;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.WidgetDivision;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.WidgetLeague;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.WidgetStepsContainer;
    import net.wg.gui.lobby.rankedBattles19.constants.LeagueIconConsts;
    import net.wg.gui.lobby.rankedBattles19.constants.RankedHelper;
    import net.wg.gui.lobby.rankedBattles19.constants.StatsConsts;
@@ -3136,6 +3133,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EVENTBOARDS_ALIASES:Class = EVENTBOARDS_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EVENTPROGRESSION_ALIASES:Class = EVENTPROGRESSION_ALIASES;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_EVENT_BATTLES_ALIASES:Class = EVENT_BATTLES_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_FITTING_TYPES:Class = FITTING_TYPES;
       
@@ -5471,6 +5470,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_STRONGHOLDENTRYPOINT:Class = StrongholdEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_WTEVENTENTRYPOINT:Class = WTEventEntryPoint;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_INTERFACES_IHANGAR:Class = IHangar;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_INTERFACES_IHANGARHEADER:Class = IHangarHeader;
@@ -5537,6 +5538,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_UNIVERSALFLAGENTRYPOINT:Class = UniversalFlagEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WHITETIGERWIDGET:Class = WhiteTigerWidget;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WINBACKWIDGET:Class = WinbackWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_TCAROUSEL_BASETANKICON:Class = BaseTankIcon;
@@ -5586,6 +5589,14 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_VEHICLEPARAMETERS_COMPONENTS_VEHPARAMRENDERER:Class = VehParamRenderer;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_VEHICLEPARAMETERS_COMPONENTS_VEHPARAMRENDERERWITHHIGHLIGHT:Class = VehParamRendererWithHighlight;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTBOXENTRYPOINTWIDGET:Class = WTEventBoxEntryPointWidget;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTCAROUSELWIDGET:Class = WTEventCarouselWidget;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTCREWWIDGET:Class = WTEventCrewWidget;
+      
+      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTPARAMSWIDGET:Class = WTEventParamsWidget;
       
       public static const NET_WG_GUI_LOBBY_HEADER_BADGESLOT:Class = BadgeSlot;
       
@@ -6955,27 +6966,7 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_STATS_RANKEDBATTLESTATSINFO:Class = RankedBattleStatsInfo;
       
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_LEAGUEIMAGECONTAINER:Class = LeagueImageContainer;
-      
       public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_RANKEDBATTLESHANGARWIDGET:Class = RankedBattlesHangarWidget;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_RANKICON:Class = RankIcon;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_RANKSHIELD:Class = RankShield;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_RANKSHIELDCONTAINER:Class = RankShieldContainer;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_RANKWIDGETANIMATOR:Class = RankWidgetAnimator;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_STATSDELTA:Class = StatsDelta;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_WIDGETBONUSBATTLES:Class = WidgetBonusBattles;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_WIDGETDIVISION:Class = WidgetDivision;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_WIDGETLEAGUE:Class = WidgetLeague;
-      
-      public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_COMPONENTS_WIDGET_WIDGETSTEPSCONTAINER:Class = WidgetStepsContainer;
       
       public static const NET_WG_GUI_LOBBY_RANKEDBATTLES19_CONSTANTS_LEAGUEICONCONSTS:Class = LeagueIconConsts;
       

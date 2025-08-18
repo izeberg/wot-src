@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-8.446439 0.000000 -26.258459</min>
-		<max>8.446440 18.232290 26.258459</max>
+		<min>12.522160 -1.000088 -36.968742</min>
+		<max>35.844540 18.972839 36.968781</max>
 	</visibilityBox>
 	<parent>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/normal/lod1/hd_bld_SU_0097_HouseBalticFleet</parent>
 	<extent>96.000000</extent>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/normal/lod0/hd_bld_SU_0097_HouseBalticFleet</nodefullVisual>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/normal/lod0/hd_bld_SU_0097_HouseBalticFleet</nodelessVisual>
 </root>

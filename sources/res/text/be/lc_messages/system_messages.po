@@ -989,6 +989,9 @@ msgstr "Дзеянне недаступнае. Замала паўнамоцтв
 msgid "clans/request/errors/Global map error was occurred"
 msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
 
+msgid "clans/request/errors/Grs error was occurred"
+msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
+
 msgid "clans/request/errors/Invite does not exist"
 msgstr "Дзеянне недаступнае. Такога запрашэння не існуе."
 
@@ -1020,9 +1023,6 @@ msgid "clans/request/errors/WGCCBE error was occurred"
 msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
 
 msgid "clans/request/errors/WGCCFE error was occurred"
-msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
-
-msgid "clans/request/errors/Wgrs error was occurred"
 msgstr "Дзеянне недаступнае. Паспрабуйце пазней."
 
 msgid "clans/request/errors/user is in clan already"
@@ -1123,7 +1123,7 @@ msgstr ""
 "Атрымана срэбра %(money)s."
 
 msgid "crewSkinsNotification/Error"
-msgstr "Не удалось изменить облик члена экипажа."
+msgstr "Не ўдалося змяніць аблічча члена экіпажа."
 
 msgid "crewSkinsNotification/SkinChanged"
 msgstr "Аблічча танкіста зменена."
@@ -3032,8 +3032,8 @@ msgstr "Замала золата, каб купіць прэміум акаўн
 
 msgid "premium/post_battle_premium"
 msgstr ""
-"Благодаря покупке Премиум аккаунта вы дополнительно получаете %(xpDiff)d "
-"опыта и %(creditDiff)d серебра за бой."
+"Дзякуючы куплі Прэміум акаўнту вы дадаткова атрымліваеце %(xpDiff)d досведу "
+"і %(creditDiff)d срэбра за бой."
 
 msgid "premium/server_error"
 msgstr ""

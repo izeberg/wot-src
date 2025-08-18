@@ -17,6 +17,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.VO.CrosshairSettingsVO;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
+   import net.wg.gui.components.crosshairPanel.WTCrosshairBase;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
@@ -55,6 +56,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatMarkersDrawer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim;
+   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaDamageIndicator;
+   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaIndicator;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    
    public class ClassManagerBattleCrosshairsMeta
@@ -87,6 +90,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_ICROSSHAIR:Class = ICrosshair;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_ICROSSHAIRPANELCONTAINER:Class = ICrosshairPanelContainer;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WTCROSSHAIRBASE:Class = WTCrosshairBase;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CLIPQUANTITYINDICATOR:Class = ClipQuantityIndicator;
       
@@ -163,6 +168,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETER:Class = Speedometer;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETERWARNINGANIM:Class = SpeedometerWarningAnim;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMADAMAGEINDICATOR:Class = PlasmaDamageIndicator;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMAINDICATOR:Class = PlasmaIndicator;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_CROSSHAIRCONSTS:Class = CrosshairConsts;
       

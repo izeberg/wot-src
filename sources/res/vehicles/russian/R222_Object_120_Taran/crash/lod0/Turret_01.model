@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R222_Object_120_Taran/crash/lod1/Turret_01</parent>
+	<tank>true</tank>
+	<extent>
+		32.0
+		<!--BW_String-->
+	</extent>
+	<visibilityBox>
+		<min>-1.415265 -0.214731 -2.405231</min>
+		<max>1.415265 1.597833 1.550397</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R222_Object_120_Taran/crash/lod0/Turret_01</nodefullVisual>
+</root>

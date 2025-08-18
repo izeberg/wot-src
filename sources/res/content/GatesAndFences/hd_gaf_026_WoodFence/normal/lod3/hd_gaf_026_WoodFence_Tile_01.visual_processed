@@ -74,6 +74,10 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						alphaReference
+						<Int>173</Int>
+					</property>
 				</material>
 				<groupOrigin>-0.131358 0.232385 -1.984063</groupOrigin>
 			</primitiveGroup>

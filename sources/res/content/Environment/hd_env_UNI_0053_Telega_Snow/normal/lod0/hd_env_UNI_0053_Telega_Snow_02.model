@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Environment/hd_env_UNI_0053_Telega_Snow/normal/lod0/hd_env_UNI_0053_Telega_Snow_02</nodefullVisual>
 	<materialNames/>
 	<visibilityBox>
 		<min>-2.472610 -0.008941 -0.947590</min>
@@ -8,4 +7,8 @@
 	</visibilityBox>
 	<parent>content/Environment/hd_env_UNI_0053_Telega_Snow/normal/lod1/hd_env_UNI_0053_Telega_Snow_02</parent>
 	<extent>48.000000</extent>
+	<nodefullVisual>content/Environment/hd_env_UNI_0053_Telega_Snow/normal/lod0/hd_env_UNI_0053_Telega_Snow_02</nodefullVisual>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
 </root>

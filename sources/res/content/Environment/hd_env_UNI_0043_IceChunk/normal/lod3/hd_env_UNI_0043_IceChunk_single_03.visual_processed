@@ -36,10 +36,6 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Environment/hd_env_UNI_0043_IceChunk/hd_env_UNI_0043_IceChunk_01_blend.png</Texture>
 					</property>
@@ -54,10 +50,6 @@
 					<property>
 						g_dirtColorParams
 						<Vector4>0.100000 0.000000 0.000000 0.010000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tileUVScale
@@ -96,15 +88,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.119890 0.223391 -0.053759</groupOrigin>
+				<groupOrigin>0.150955 0.269223 -0.132536</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.235539 -0.177541 -2.853617</min>
-		<max>2.226811 0.624323 2.746100</max>
+		<min>-1.943333 -0.090982 -2.820965</min>
+		<max>2.230228 0.576903 2.595800</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1720</geometrySize>
-	<minUVDensity>0.001734</minUVDensity>
+	<geometrySize>2456</geometrySize>
+	<minUVDensity>0.002993</minUVDensity>
 </root>

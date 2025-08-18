@@ -1603,9 +1603,9 @@ msgstr ""
 
 msgid "serviceChannelMessages/autoEquipNotEnough"
 msgstr ""
-"На Складе закончились инструкции, выбранные для %s. Чтобы продолжить "
-"использовать инструкции, включите докупку закончившихся инструкций или "
-"выберите имеющиеся в наличии."
+"На Складзе скончыліся настаўленні, выбраныя для %s. Каб далей выкарыстоўваць"
+" настаўленні, уключыце дакупку настаўленняў, якія скончыліся, або выберыце "
+"наяўныя."
 
 msgid "serviceChannelMessages/autoEquipSkipped"
 msgstr ""
@@ -2018,6 +2018,10 @@ msgstr "Дасягненні"
 msgid "serviceChannelMessages/battleResults/quests/battlePassPoints"
 msgstr "Атрымана ачкоў Баявога пропуска: %(value)s"
 
+msgid ""
+"serviceChannelMessages/battleResults/quests/battleQuestsBattlePassPoints"
+msgstr "Получено очков Боевого пропуска"
+
 msgid "serviceChannelMessages/battleResults/quests/berths"
 msgstr "У Жаўнерню дададзены ложкі"
 
@@ -2128,12 +2132,12 @@ msgstr ""
 msgid "serviceChannelMessages/battleResults/rankedState/rankEarned"
 msgstr ""
 " \n"
-"Атрыманы %(rankName)s ранг (%(divisionName)s)"
+"Получен новый ранг"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankLost"
 msgstr ""
 " \n"
-"Страчаны %(rankName)s ранг (%(divisionName)s)"
+"Ранг потерян"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankShieldProtected"
 msgstr ""
@@ -2153,7 +2157,7 @@ msgstr ""
 msgid "serviceChannelMessages/battleResults/rankedState/stageNotEarned"
 msgstr ""
 " \n"
-"Шаўрон захаваны"
+"Шеврон защищён"
 
 msgid "serviceChannelMessages/battleResults/rankedState/stepEarned"
 msgstr ""
@@ -2429,6 +2433,12 @@ msgstr "• Эксперыментальнае абсталяванне на в�
 
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• Бланкі перападрыхтоўкі"
+
+msgid "serviceChannelMessages/event/lootboxes"
+msgstr "Получено стартеров:"
+
+msgid "serviceChannelMessages/event/tickets"
+msgstr "Получено ключей:"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "Ад адміністрацыі атрымана юбілейных манет: %(eventCoin)s."
@@ -2940,7 +2950,7 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "Паглядзець"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
-msgstr "Адкрыта парталаў: %(boxes)s"
+msgstr "Списано: %(boxes)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/counter"
 msgstr "%(boxName)s (x%(count)d)"
@@ -3100,8 +3110,8 @@ msgstr "Прагрэс падзеі «Ланцуг перамог» абнуле
 
 msgid "serviceChannelMessages/playStreakFreezes/body"
 msgstr ""
-"Цепь побед была прервана. Для восстановления счётчика вам необходимо "
-"выполнить боевую задачу «Цепь побед» %(savedData)s раз."
+"Ланцуг перамог быў перарваны. Для аднаўлення лічыльніка неабходна выканаць "
+"баявую задачу «Ланцуг перамог» %(savedData)s разоў."
 
 msgid "serviceChannelMessages/playStreakFreezesEnd/body"
 msgstr "Ланцуг перамог адноўлены."

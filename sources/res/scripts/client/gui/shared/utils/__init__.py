@@ -176,7 +176,7 @@ def changeStringCasing(string, isUpper):
             langID = str(langID).lower()
             if langID in _STR_CASING_OPTIONS:
                 plID, slID, sortOrder = _STR_CASING_OPTIONS[langID]
-                string = BigWorld.wg_changeStringCasing(string, plID, slID, sortOrder, isUpper)
+                string = BigWorld.changeStringCasing(string, plID, slID, sortOrder, isUpper)
             else:
                 string = string.upper() if isUpper else string.lower()
             if langID in _REPLACEMENTS:
@@ -198,7 +198,7 @@ def toUpper(string):
 
 
 def copyToClipboard(text):
-    BigWorld.wg_copyToClipboard(unicode(text, 'utf-8', errors='ignore'))
+    BigWorld.copyToClipboard(unicode(text, 'utf-8', errors='ignore'))
     LOG_DEBUG('Text has been copied to the clipboard', text)
 
 
@@ -246,16 +246,16 @@ def mapTextureToTheMemory(textureData, uniqueID=None, temp=True):
     if textureData and imghdr.what(None, textureData) is not None:
         uniqueID = str(uniqueID or uuid.uuid4())
         if temp:
-            BigWorld.wg_addTempScaleformTexture(uniqueID, textureData)
+            BigWorld.addTempScaleformTexture(uniqueID, textureData)
         else:
-            BigWorld.wg_addScaleformTexture(uniqueID, textureData)
+            BigWorld.addScaleformTexture(uniqueID, textureData)
         return uniqueID
     LOG_WARNING('There is invalid data for the memory mapping', textureData, uniqueID)
     return
 
 
 def removeTextureFromMemory(textureID):
-    BigWorld.wg_eraseScaleformTexture(textureID)
+    BigWorld.eraseScaleformTexture(textureID)
 
 
 def getImageSize(imageData):
@@ -278,7 +278,7 @@ def getImageSize(imageData):
 
 def showInvitationInWindowsBar():
     try:
-        BigWorld.WGWindowsNotifier.onInvitation()
+        BigWorld.WindowsNotifier.onInvitation()
     except AttributeError:
         LOG_CURRENT_EXCEPTION()
 

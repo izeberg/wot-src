@@ -31,7 +31,7 @@ package net.wg.gui.lobby.clans.invites.renderers
       
       public var winsTF:TextField = null;
       
-      public var awgExpTF:TextField = null;
+      public var avgXPTF:TextField = null;
       
       public var statusTF:TextField = null;
       
@@ -73,7 +73,7 @@ package net.wg.gui.lobby.clans.invites.renderers
          this.personalRatingTF = null;
          this.battlesCountTF = null;
          this.winsTF = null;
-         this.awgExpTF = null;
+         this.avgXPTF = null;
          this.statusTF = null;
          this._rendererVO = null;
          this._commons = null;
@@ -98,7 +98,7 @@ package net.wg.gui.lobby.clans.invites.renderers
          this.personalRatingTF.visible = _loc3_;
          this.battlesCountTF.visible = _loc3_;
          this.winsTF.visible = _loc3_;
-         this.awgExpTF.visible = _loc3_;
+         this.avgXPTF.visible = _loc3_;
          this.statusTF.visible = _loc3_;
          this.messageIcon.visible = _loc3_;
          this.showMoreButton.visible = _loc1_ && _loc2_;
@@ -109,7 +109,7 @@ package net.wg.gui.lobby.clans.invites.renderers
                this.personalRatingTF.htmlText = this._rendererVO.personalRating;
                this.battlesCountTF.htmlText = this._rendererVO.battlesCount;
                this.winsTF.htmlText = this._rendererVO.wins;
-               this.awgExpTF.htmlText = this._rendererVO.awgExp;
+               this.avgXPTF.htmlText = this._rendererVO.avgXP;
                this.statusTF.htmlText = this._rendererVO.status.text;
                this.messageIcon.visible = StringUtils.isNotEmpty(this._rendererVO.messageTooltip);
                this.messageIcon.source = RES_ICONS.MAPS_ICONS_CLANS_INVITESWINDOW_ICON_INVITE_MESSAGE;

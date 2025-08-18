@@ -110,6 +110,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_1031_Rotunda.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_1033_Pire_End_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_1033_Pire_Tile.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_SU_1040_Embankment_Constr.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_UNI_048_Stage.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_UNI_048_Stage_Boxes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_UNI_055_GardenBench.vfx</fn_effect_bin>
@@ -282,6 +283,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_SU_1031_Rotunda.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1033_pire_end_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1033_pire_tile.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_env_SU_1040_Embankment_Constr.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_048_Stage.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_048_Stage_Boxes.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_055_GardenBench.eff</fn_effect_bin>
@@ -394,6 +396,7 @@
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
@@ -565,6 +568,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_1031_Rotunda.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_1033_Pire_End_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_1033_Pire_Tile.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_SU_1040_Embankment_Constr.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_UNI_048_Stage.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_UNI_048_Stage_Boxes.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_UNI_055_GardenBench.vfx</fn_effect_bin>
@@ -737,6 +741,7 @@
 		<fn_effect_bin>particles/environment/objects/hd_env_SU_1031_Rotunda.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1033_pire_end_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/objects/hd_env_su_1033_pire_tile.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/hd_env_SU_1040_Embankment_Constr.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_048_Stage.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_048_Stage_Boxes.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_UNI_055_GardenBench.eff</fn_effect_bin>
@@ -849,6 +854,7 @@
 		<preloadVisual>particles/mesh_particles/wood_broken_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_log_02.visual</preloadVisual>
+		<preloadVisual>particles/mesh_particles/wood_plank_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/wood_stick_03.visual</preloadVisual>
 	</deferred>

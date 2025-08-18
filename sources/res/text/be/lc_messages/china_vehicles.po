@@ -20,6 +20,9 @@ msgstr "A-220B-2"
 msgid "A-220B-2_70"
 msgstr "A-220B-2"
 
+msgid "A-220B-2_70_T"
+msgstr "A-220B-2"
+
 msgid "A-220B_1"
 msgstr "A-220B"
 
@@ -61,6 +64,9 @@ msgstr "A-220B QL"
 
 msgid "A_220_57"
 msgstr "A-220"
+
+msgid "A_220_STT"
+msgstr "A-220A"
 
 msgid "Armstrong_Siddeley"
 msgstr "Armstrong Siddeley V4"
@@ -1183,6 +1189,24 @@ msgstr "Магутная гармата, моцная браня"
 msgid "Ch57_BZT_70"
 msgstr "BZT-70"
 
+msgid "Ch57_BZT_70_T"
+msgstr "BZT-70 Test"
+
+msgid "Ch57_BZT_70_T_descr"
+msgstr ""
+"Праект танка вылучаўся гранічнымі для свайго часу паказчыкамі браніравання і агнявой моцы, за што давялося расплачвацца вялізнай масай машыны. Ідэя гусенічнага рухача, якія складаўся з чатырох гусенічных стужак, была пазычана ў амерыканскай САУ Т28. Кітайскія інжынеры спрабавалі стварыць добра абаронены танк з адносна невялікай лабавой праекцыяй, які перавышаў паводле сваіх паказчыкаў абароны большасць сучаснікаў. Аднак праект аказаўся вельмі дарагім і застаўся на паперы.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "Ch57_BZT_70_T_long_special"
+msgstr "?empty?"
+
+msgid "Ch57_BZT_70_T_short"
+msgstr "BZT-70 (T)"
+
+msgid "Ch57_BZT_70_T_short_special"
+msgstr "?empty?"
+
 msgid "Ch57_BZT_70_descr"
 msgstr ""
 "Праект танка вылучаўся гранічнымі для свайго часу паказчыкамі браніравання і агнявой моцы, за што давялося расплачвацца вялізнай масай машыны. Ідэя гусенічнага рухача, якія складаўся з чатырох гусенічных стужак, была пазычана ў амерыканскай САУ Т28. Кітайскія інжынеры спрабавалі стварыць добра абаронены танк з адносна невялікай лабавой праекцыяй, які перавышаў паводле сваіх паказчыкаў абароны большасць сучаснікаў. Аднак праект аказаўся вельмі дарагім і застаўся на паперы.\n"
@@ -1290,6 +1314,24 @@ msgstr "DZT-159"
 
 msgid "Ch61_DZT_159_short_special"
 msgstr "Ракетныя паскаральнікі, вялікі запас трываласці"
+
+msgid "Ch63_STT_617Q"
+msgstr "STT-617Q"
+
+msgid "Ch63_STT_617Q_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Ch63_STT_617Q_long_special"
+msgstr "?empty?"
+
+msgid "Ch63_STT_617Q_short"
+msgstr "617Q"
+
+msgid "Ch63_STT_617Q_short_special"
+msgstr "?empty?"
 
 msgid "Ch70_GPT_58"
 msgstr "GPT-58"
@@ -1685,6 +1727,9 @@ msgstr "BZ-74-1"
 msgid "Chassis_Ch57_BZT_70"
 msgstr "BZT-70"
 
+msgid "Chassis_Ch57_BZT_70_T"
+msgstr "BZT-70"
+
 msgid "Chassis_Ch58_111_Vz51"
 msgstr "WZ-111 model 6"
 
@@ -1696,6 +1741,9 @@ msgstr "Vickers Mk. E Type B"
 
 msgid "Chassis_Ch61_DZT_159"
 msgstr "DZT-159"
+
+msgid "Chassis_Ch63_STT_617Q"
+msgstr "STT-617Q"
 
 msgid "Chassis_Ch70_GPT_58"
 msgstr "GPT-58"
@@ -1972,6 +2020,9 @@ msgstr "BZ-74-1"
 msgid "Turret_1_Ch57_BZT_70"
 msgstr "BZT-70"
 
+msgid "Turret_1_Ch57_BZT_70_T"
+msgstr "BZT-70"
+
 msgid "Turret_1_Ch58_111_Vz51"
 msgstr "WZ-111 model 6"
 
@@ -1983,6 +2034,9 @@ msgstr "Vickers Mk. E Type B"
 
 msgid "Turret_1_Ch61_DZT_159"
 msgstr "DZT-159"
+
+msgid "Turret_1_Ch63_STT_617Q"
+msgstr "STT-617Q"
 
 msgid "Turret_1_Ch70_GPT_58"
 msgstr "GPT-58"
@@ -2167,6 +2221,12 @@ msgstr "100 mm 62-100TA"
 msgid "_100mm_62-100TA_HEAT_G5_SH"
 msgstr "62-100TA HEAT"
 
+msgid "_100mm_CB_412D"
+msgstr "100 mm Cb-412D"
+
+msgid "_100mm_CC_412P"
+msgstr "100 mm Cc-412P"
+
 msgid "_100mm_CJ-412G"
 msgstr "Chuan jian-412G"
 
@@ -2188,6 +2248,9 @@ msgstr "Sha bao-412G"
 msgid "_100mm_SB-412GX"
 msgstr "Sha bao-412GX"
 
+msgid "_100mm_SB_412"
+msgstr "100 mm Sb-412"
+
 msgid "_100mm_SB_Type_59_2"
 msgstr "Sha bao Type 59M"
 
@@ -2199,6 +2262,9 @@ msgstr "Tuo chuan-412GX"
 
 msgid "_100mm_Type_59_2"
 msgstr "100 mm Type 59M"
+
+msgid "_100mm_Type_59_2_Dual"
+msgstr "100 mm Type 59-2 Dual"
 
 msgid "_100mm_UBR-412"
 msgstr "Chuan bei-412"
@@ -2358,6 +2424,9 @@ msgstr "NORINCO 12150L (a)"
 
 msgid "_12150L_7BW"
 msgstr "12150L-7BW"
+
+msgid "_12150ZL"
+msgstr "12150ZL"
 
 msgid "_122-mm_37-122JT"
 msgstr "122 mm 37-122JT"
@@ -2644,20 +2713,32 @@ msgstr "160 mm Type 60"
 msgid "_180_mm_S-23CH_70"
 msgstr "180mm S-23CH"
 
+msgid "_180_mm_S-23CH_70_T"
+msgstr "180mm S-23CH"
+
 msgid "_180mm_AP_65"
 msgstr "Sb-572"
 
 msgid "_180mm_AP_G-572CH_70"
 msgstr "Chuan bei-G572"
 
+msgid "_180mm_AP_G-572CH_70_T"
+msgstr "Chuan bei-G572 T"
+
 msgid "_180mm_HEAT_F-572CH_70"
 msgstr "53BRP572O"
+
+msgid "_180mm_HEAT_F-572CH_70_T"
+msgstr "53BRP572O T"
 
 msgid "_180mm_HESH_65"
 msgstr "Po-572"
 
 msgid "_180mm_HE_VO28CH_70"
 msgstr "Sha bao-VO28"
+
+msgid "_180mm_HE_VO28CH_70_T"
+msgstr "Sha bao-VO28 T"
 
 msgid "_180mm_Type_65"
 msgstr "180mm Type 65"
@@ -2666,6 +2747,9 @@ msgid "_2x_GAZ_203"
 msgstr "2x GAZ-203"
 
 msgid "_2x_V-12_70"
+msgstr "2x V-12"
+
+msgid "_2x_V-12_70_T"
 msgstr "2x V-12"
 
 msgid "_37cm_Pzgr40"

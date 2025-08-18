@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_gaf_SU_005_IronFence_BigTile_03</identifier>
+			<identifier>hd_gaf_SU_0004_IronFence_BigTile_03</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -25,6 +25,24 @@
 					<row3>0.000000 0.000000 2.818381</row3>
 				</transform>
 			</node>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s_wall</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -35,15 +53,6 @@
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
-				<material>
-					<identifier>s_wall0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>73</materialKind>
-				</material>
-				<groupOrigin>-0.008504 1.511248 3.176965</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
 				<material>
 					<identifier>d_stone0</identifier>
 					<collisionFlags>255</collisionFlags>
@@ -65,11 +74,15 @@
 						metallicGlossMap
 						<Texture>content/GatesAndFences/hd_gaf_SU_0004_IronFence/hd_gaf_SU_0004_IronFence_GMM.dds</Texture>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.001872 -0.091441 2.935635</groupOrigin>
+				<groupOrigin>0.001872 -0.091442 2.935634</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>n_stone0</identifier>
 					<collisionFlags>0</collisionFlags>
@@ -77,7 +90,7 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
 						alphaReference
-						<Int>90</Int>
+						<Int>135</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -95,16 +108,37 @@
 						metallicGlossMap
 						<Texture>content/GatesAndFences/hd_gaf_SU_0004_IronFence/hd_gaf_SU_0004_IronFence_GMM.dds</Texture>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.001872 1.354464 2.906666</groupOrigin>
+				<groupOrigin>0.002422 1.354464 2.906666</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_wall0</identifier>
+					<collisionFlags>131</collisionFlags>
+					<materialKind>73</materialKind>
+				</material>
+				<groupOrigin>-0.008503 1.511248 3.176966</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.431293 -0.419929 -0.323871</min>
-		<max>0.432723 3.128808 6.137203</max>
+		<min>-0.431131 -0.419881 -0.323871</min>
+		<max>0.433273 3.128808 6.137203</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>30548</geometrySize>
+	<geometrySize>34232</geometrySize>
 	<minUVDensity>0.005245</minUVDensity>
 </root>

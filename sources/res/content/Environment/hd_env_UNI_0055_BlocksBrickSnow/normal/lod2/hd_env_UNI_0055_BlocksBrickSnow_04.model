@@ -2,9 +2,9 @@
 <root>
 	<parent>content/Environment/hd_env_UNI_0055_BlocksBrickSnow/normal/lod3/hd_env_UNI_0055_BlocksBrickSnow_04</parent>
 	<extent>150.000000</extent>
-	<nodefullVisual>content/Environment/hd_env_UNI_0055_BlocksBrickSnow/normal/lod2/hd_env_UNI_0055_BlocksBrickSnow_04</nodefullVisual>
 	<visibilityBox>
 		<min>-2.342960 -0.070380 -2.197250</min>
 		<max>2.058962 3.222364 1.449856</max>
 	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_UNI_0055_BlocksBrickSnow/normal/lod2/hd_env_UNI_0055_BlocksBrickSnow_04</nodefullVisual>
 </root>

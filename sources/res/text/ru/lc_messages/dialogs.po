@@ -1095,6 +1095,19 @@ msgstr "Итого"
 msgid "confirmModuleDialog/totalLabel"
 msgstr "Итого:"
 
+msgid "confirmReward/cancel"
+msgstr "Отменить"
+
+msgid "confirmReward/message"
+msgstr ""
+" Если имущество получено из портала Инженера, вы не сможете его заменить."
+
+msgid "confirmReward/submit"
+msgstr "Забрать"
+
+msgid "confirmReward/title"
+msgstr "Забрать награду"
+
 msgid "confirmUnlock/cancel"
 msgstr "Нет"
 
@@ -2513,8 +2526,7 @@ msgid "punishmentWindow/message/penalty"
 msgstr ""
 "Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», к вам применено дисциплинарное взыскание. Указанный ниже штраф является крайней мерой наказания.\n"
 "\n"
-"Принятые меры:\n"
-" "
+"Принятые меры:"
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
@@ -2992,6 +3004,18 @@ msgstr "Продолжить"
 
 msgid "reportBug/title"
 msgstr "Переход на форум игры"
+
+msgid "rerollReward/cancel"
+msgstr "Отменить"
+
+msgid "rerollReward/confirm"
+msgstr "Заменить"
+
+msgid "rerollReward/message"
+msgstr "Это обойдётся в"
+
+msgid "rerollReward/title"
+msgstr "Желаете заменить предлагаемую награду?"
 
 msgid "resetGraphics/cancel"
 msgstr "Продолжить"
@@ -3792,6 +3816,21 @@ msgstr ""
 
 msgid "waterQualityNotPossible/title"
 msgstr "Качество воды недоступно"
+
+msgid "white_tiger/deserter/cancel"
+msgstr "Отменить"
+
+msgid "white_tiger/deserter/message"
+msgstr ""
+"Бегство с поля боя до окончания сражения расценивается как дезертирство, "
+"влечёт применение дисциплинарного взыскания и лишение прогресса по текущим "
+"задачам. Одумайтесь!"
+
+msgid "white_tiger/deserter/submit"
+msgstr "Бежать"
+
+msgid "white_tiger/deserter/title"
+msgstr "Покинуть бой?"
 
 msgid "wotPlusRental/cancel"
 msgstr "Отменить"

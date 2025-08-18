@@ -2028,6 +2028,10 @@ msgstr "Достижения"
 msgid "serviceChannelMessages/battleResults/quests/battlePassPoints"
 msgstr "Получено очков Боевого пропуска: %(value)s"
 
+msgid ""
+"serviceChannelMessages/battleResults/quests/battleQuestsBattlePassPoints"
+msgstr "Получено очков Боевого пропуска"
+
 msgid "serviceChannelMessages/battleResults/quests/berths"
 msgstr "Добавлено коек в Казарму"
 
@@ -2138,12 +2142,12 @@ msgstr ""
 msgid "serviceChannelMessages/battleResults/rankedState/rankEarned"
 msgstr ""
 " \n"
-"Получен %(rankName)s ранг (%(divisionName)s)"
+"Получен новый ранг"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankLost"
 msgstr ""
 " \n"
-"Потерян %(rankName)s ранг (%(divisionName)s)"
+"Ранг потерян"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankShieldProtected"
 msgstr ""
@@ -2163,7 +2167,7 @@ msgstr ""
 msgid "serviceChannelMessages/battleResults/rankedState/stageNotEarned"
 msgstr ""
 " \n"
-"Шеврон сохранён"
+"Шеврон защищён"
 
 msgid "serviceChannelMessages/battleResults/rankedState/stepEarned"
 msgstr ""
@@ -2441,6 +2445,12 @@ msgstr "• Экспериментальное оборудование на в�
 
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• Бланки переподготовки"
+
+msgid "serviceChannelMessages/event/lootboxes"
+msgstr "Получено стартеров:"
+
+msgid "serviceChannelMessages/event/tickets"
+msgstr "Получено ключей:"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "От администрации получено юбилейных монет: %(eventCoin)s."
@@ -2950,7 +2960,7 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "Посмотреть"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
-msgstr "Открыто порталов: %(boxes)s"
+msgstr "Списано: %(boxes)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/counter"
 msgstr "%(boxName)s (x%(count)d)"

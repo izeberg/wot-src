@@ -416,67 +416,67 @@ msgid "chapter/currentStep/colon"
 msgstr "Бягучы этап:"
 
 msgid "chapter/fullName/1"
-msgstr "Сярод ліян"
+msgstr "Задача без решения"
 
-msgid "chapter/fullName/171"
-msgstr "Сярод ліян"
+msgid "chapter/fullName/181"
+msgstr "Задача без решения"
 
-msgid "chapter/fullName/172"
-msgstr "Палярнае ззянне"
+msgid "chapter/fullName/182"
+msgstr "В ад и обратно"
 
-msgid "chapter/fullName/173"
-msgstr "Пяскі Калахары"
+msgid "chapter/fullName/183"
+msgstr "Пепел на ветру"
 
-msgid "chapter/fullName/174"
-msgstr "Камчацкая балада"
+msgid "chapter/fullName/184"
+msgstr "Лучик надежды"
 
 msgid "chapter/fullName/2"
-msgstr "Палярнае ззянне"
+msgstr "В ад и обратно"
 
 msgid "chapter/fullName/3"
-msgstr "Пяскі Калахары"
+msgstr "Пепел на ветру"
 
 msgid "chapter/fullName/4"
-msgstr "Камчацкая балада"
+msgstr "Лучик надежды"
 
 msgid "chapter/fullName/5"
 msgstr "Паляванне на мышэй"
 
-msgid "chapter/fullName/quoted/171"
-msgstr "Сярод ліян"
+msgid "chapter/fullName/quoted/181"
+msgstr "Задача без решения"
 
-msgid "chapter/fullName/quoted/172"
-msgstr "Палярнае ззянне"
+msgid "chapter/fullName/quoted/182"
+msgstr "В ад и обратно"
 
-msgid "chapter/fullName/quoted/173"
-msgstr "Пяскі Калахары"
+msgid "chapter/fullName/quoted/183"
+msgstr "Пепел на ветру"
 
-msgid "chapter/fullName/quoted/174"
-msgstr "Камчацкая балада"
+msgid "chapter/fullName/quoted/184"
+msgstr "Лучик надежды"
 
-msgid "chapter/fullNameUppercased/171"
-msgstr "СЯРОД ЛІЯН"
+msgid "chapter/fullNameUppercased/181"
+msgstr "ЗАДАЧА БЕЗ РЕШЕНИЯ"
 
-msgid "chapter/fullNameUppercased/172"
-msgstr "ПАЛЯРНАЕ ЗЗЯННЕ"
+msgid "chapter/fullNameUppercased/182"
+msgstr "В АД И ОБРАТНО"
 
-msgid "chapter/fullNameUppercased/173"
-msgstr "ПЯСКІ КАЛАХАРЫ"
+msgid "chapter/fullNameUppercased/183"
+msgstr "ПЕПЕЛ НА ВЕТРУ"
 
-msgid "chapter/fullNameUppercased/174"
-msgstr "КАМЧАЦКАЯ БАЛАДА"
+msgid "chapter/fullNameUppercased/184"
+msgstr "ЛУЧИК НАДЕЖДЫ"
 
-msgid "chapter/fullNameUppercased/quoted/171"
-msgstr "СЯРОД ЛІЯН"
+msgid "chapter/fullNameUppercased/quoted/181"
+msgstr "ЗАДАЧА БЕЗ РЕШЕНИЯ"
 
-msgid "chapter/fullNameUppercased/quoted/172"
-msgstr "ПАЛЯРНАЕ ЗЗЯННЕ"
+msgid "chapter/fullNameUppercased/quoted/182"
+msgstr "В АД И ОБРАТНО"
 
-msgid "chapter/fullNameUppercased/quoted/173"
-msgstr "ПЯСКІ КАЛАХАРЫ"
+msgid "chapter/fullNameUppercased/quoted/183"
+msgstr "ПЕПЕЛ НА ВЕТРУ"
 
-msgid "chapter/fullNameUppercased/quoted/174"
-msgstr "КАМЧАЦКАЯ БАЛАДА"
+msgid "chapter/fullNameUppercased/quoted/184"
+msgstr "ЛУЧИК НАДЕЖДЫ"
 
 msgid "chapter/title"
 msgstr "РАЗДЗЕЛ %(chapter)s"
@@ -829,7 +829,7 @@ msgid "howToEarnPoints/text/21"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
 msgid "howToEarnPoints/text/22"
-msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)."
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)."
 
 msgid "howToEarnPoints/text/27"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
@@ -841,7 +841,7 @@ msgid "howToEarnPoints/text/43"
 msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы"
 
 msgid "howToEarnPoints/text/50"
-msgstr "Играйте на подходящей для режима технике (начиная с VI уровня)."
+msgstr "Гуляйце на прыдатнай для рэжыму тэхніцы (пачынаючы з VI узроўню)."
 
 msgid "howToEarnPoints/title"
 msgstr "ЯК ЗДАБЫЦЬ АЧКІ"
@@ -872,10 +872,9 @@ msgstr "ПРА БАЯВЫ ПРОПУСК"
 
 msgid "intro/bonus/text"
 msgstr ""
-"По достижении лимита очков на определённой машине вам будут начислены "
-"бонусные очки в награду, которая будет доступна каждую неделю после "
-"обновления лимита. Больше информации можно найти во вкладке «Как заработать "
-"очки»."
+"Пры дасягненні ліміту ачкоў на пэўнай машыне вам будуць налічаны бонусныя "
+"ачкі ва ўзнагароду, якая будзе даступнай кожны тыдзень пасля абнаўлення "
+"ліміту. Больш інфармацыі можна знайсці ва ўкладцы «Як здабыць ачкі»."
 
 msgid "intro/bonus/title"
 msgstr "Бонус за дасягненне ліміту"
@@ -909,19 +908,19 @@ msgstr "ДАСТУПНЫ АДМЫСЛОВЫ РАЗДЗЕЛ"
 
 msgid "intro/subTitle"
 msgstr ""
-"У гэтым сезоне Канстанцін Кашчэеў пазнаёміць з пэўнымі эпізодамі свайго "
-"мінулага жыцця, якія адбыліся да таго, як ён патрапіў у «Перспектыву». Новыя"
-" героі, раскіданыя па ўсіх закутках свету, новыя выклікі і небяспечныя місіі"
-" — у Кашчэева знойдзецца куча гісторый для вячорак ля вогнішча."
+"Самая авантюрная, неблагодарная и опасная операция Альянса, которая свернула"
+" не туда уже на этапе планирования. Напоминание всем, что у каждого действия"
+" есть последствия, а некоторые знания могут обойтись очень и очень дорого."
 
 msgid "intro/title"
-msgstr "БАЯВЫ ПРОПУСК: ВАКОЛ СВЕТУ"
+msgstr "БОЕВОЙ ПРОПУСК: ОБРАТНАЯ СТОРОНА"
 
 msgid "intro/vehicles/text"
 msgstr ""
-"У гэтым сезоне прадстаўлена новая ключавая тэхніка: Rinoceronte, Wz.70 Żubr "
-"і Manticore. Гуляючы на гэтай тэхніцы, вы зможаце заслужыць больш бонусных "
-"ачкоў Баявога пропуска за дасягненне штодзённага ліміту ачкоў."
+"В этом сезоне представлена новая ключевая техника: Rheinmetall Panzerwagen, "
+"Centurion Action X и 121. Играя на этой технике, вы сможете заработать "
+"больше бонусных очков Боевого пропуска за достижение еженедельного лимита "
+"очков."
 
 msgid "intro/vehicles/title"
 msgstr "Новая ключавая тэхніка"

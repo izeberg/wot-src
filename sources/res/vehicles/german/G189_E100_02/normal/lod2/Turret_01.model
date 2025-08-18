@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G189_E100_02/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.600576 0.022597 -2.172663</min>
+		<max>1.627694 1.533397 2.046714</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G189_E100_02/normal/lod2/Turret_01</nodefullVisual>
+</root>

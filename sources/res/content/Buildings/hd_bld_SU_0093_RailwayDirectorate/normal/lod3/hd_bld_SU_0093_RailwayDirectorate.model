@@ -2,5 +2,9 @@
 <root>
 	<parent>content/Buildings/hd_bld_SU_0093_RailwayDirectorate/normal/lod4/hd_bld_SU_0093_RailwayDirectorate</parent>
 	<extent>375.000000</extent>
+	<visibilityBox>
+		<min>-34.773758 -0.618524 -8.702007</min>
+		<max>34.778000 22.199186 8.732256</max>
+	</visibilityBox>
 	<nodelessVisual>content/Buildings/hd_bld_SU_0093_RailwayDirectorate/normal/lod3/hd_bld_SU_0093_RailwayDirectorate</nodelessVisual>
 </root>

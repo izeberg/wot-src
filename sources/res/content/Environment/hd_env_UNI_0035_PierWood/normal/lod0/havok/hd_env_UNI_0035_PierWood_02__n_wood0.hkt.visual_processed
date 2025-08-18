@@ -210,7 +210,7 @@
 				<material>
 					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_AM.dds</Texture>
@@ -263,9 +263,10 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
+					<materialKind>0</materialKind>
 					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
 				<fade_material>

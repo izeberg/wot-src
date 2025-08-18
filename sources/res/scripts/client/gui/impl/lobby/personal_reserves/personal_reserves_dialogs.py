@@ -1,6 +1,6 @@
 from typing import TYPE_CHECKING
 from uilogging.personal_reserves.loggers import BuyAndActivateDialogsLogger
-from wg_async import wg_async
+from th_async import th_async
 from adisp import adisp_async
 from goodies.goodie_constants import GOODIE_RESOURCE_TYPE
 from gui.goodies.goodie_items import Booster
@@ -31,7 +31,7 @@ UPGRADE_IMAGE_LOOKUP = {GOODIE_RESOURCE_TYPE.XP: R.images.gui.maps.icons.persona
    GOODIE_RESOURCE_TYPE.FREE_XP_CREW_XP: R.images.gui.maps.icons.personal_reserves.upgrade_combined_xp()}
 
 @adisp_async
-@wg_async
+@th_async
 def showDialogAndLogInteraction(dialog, dialogLogItem, callback):
     logger = BuyAndActivateDialogsLogger(dialogLogItem)
     dialog.load()

@@ -88,10 +88,6 @@
 						g_tile1Tint
 						<Vector4>0.980392 0.980392 0.980392 1.000000</Vector4>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>-0.527319 1.885312 -7.063468</groupOrigin>
 			</primitiveGroup>

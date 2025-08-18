@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>sShape1.vertices</vertices>
+			<stream>sShape1.uv2</stream>
+			<primitive>sShape1.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -23,10 +23,6 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
@@ -94,10 +90,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
 					</property>
@@ -149,20 +141,15 @@
 						colorTex
 						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_GCM.dds</Texture>
 					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
-					</property>
 				</material>
 				<groupOrigin>-0.106505 6.825027 -7.545910</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.687433 0.068927 -15.750566</min>
-		<max>1.508984 13.580715 0.736822</max>
+		<min>-1.687433 0.068927 -15.742562</min>
+		<max>1.508984 13.575027 0.647537</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
 	<geometrySize>70872</geometrySize>
 	<minUVDensity>0.020301</minUVDensity>
 </root>

@@ -170,6 +170,10 @@ package net.wg.gui.lobby.settings
       
       public var hangarCamFieldSet:FieldSet = null;
       
+      public var hangarCrewWidgetFieldSet:FieldSet = null;
+      
+      public var hangarCrewWidgetButtonBar:RadioButtonBar = null;
+      
       public var carouselTypeFieldSet:FieldSet = null;
       
       public var carouselTypeButtonBar:RadioButtonBar = null;
@@ -197,6 +201,10 @@ package net.wg.gui.lobby.settings
       public var showDogTagToKillerCheckbox:CheckBox = null;
       
       public var showVictimsDogTagCheckbox:CheckBox = null;
+      
+      private var _initYHangarCrewWidgetFieldSet:int;
+      
+      private var _initYHangarCrewWidgetButtonBar:int;
       
       private var _initYCarouselTypeFieldSet:int;
       
@@ -360,6 +368,7 @@ package net.wg.gui.lobby.settings
          this.disableThermalVisionSectorEffectCheckbox.label = SETTINGS.GAME_DISABLETHERMALVISIONSECTOREFFECT;
          this.showVehicleHPinPlayersPanelLabel.text = SETTINGS.GAME_SHOWVEHICLEHPINPLAYERSPANEL;
          this.showVehicleHPinMinimapLabel.text = SETTINGS.GAME_SHOWVEHICLEHPINMINIMAP;
+         this.hangarCrewWidgetFieldSet.label = SETTINGS.GAME_HANGARCREWWIDGET;
          this.carouselTypeFieldSet.label = SETTINGS.GAME_CAROUSELTYPE;
          this.doubleCarouselLabel.text = SETTINGS.GAME_DOUBLECAROUSEL_LABEL;
          this.vehicleCarouselStatsCheckbox.label = SETTINGS.GAME_CAROUSELVEHICLE_CHECKBOX_STATS;
@@ -532,6 +541,10 @@ package net.wg.gui.lobby.settings
          this.minimapMinSpottingRangeCheckbox = null;
          this.minimapDrawRangeCheckbox.dispose();
          this.minimapDrawRangeCheckbox = null;
+         this.hangarCrewWidgetFieldSet.dispose();
+         this.hangarCrewWidgetFieldSet = null;
+         this.hangarCrewWidgetButtonBar.dispose();
+         this.hangarCrewWidgetButtonBar = null;
          this.carouselTypeFieldSet.dispose();
          this.carouselTypeFieldSet = null;
          this.carouselTypeButtonBar.dispose();
@@ -571,6 +584,8 @@ package net.wg.gui.lobby.settings
          {
             this.gameplay_only10ModeCheckbox.y = this._initYGameplayOnly10ModeCheckbox + OFFSET_CB_DISABLED;
          }
+         this.hangarCrewWidgetFieldSet.y = this._initYHangarCrewWidgetFieldSet + _loc4_;
+         this.hangarCrewWidgetButtonBar.y = this._initYHangarCrewWidgetButtonBar + _loc4_;
          this.carouselTypeFieldSet.y = this._initYCarouselTypeFieldSet + _loc4_;
          this.carouselTypeButtonBar.y = this._initYCarouselTypeButtonBar + _loc4_;
          this.doubleCarouselLabel.y = this._initYDoubleCarouselLabel + _loc4_;
@@ -589,6 +604,8 @@ package net.wg.gui.lobby.settings
       private function setDependentVisibleControlsY() : void
       {
          this._initYGameplayOnly10ModeCheckbox = this.gameplay_only10ModeCheckbox.y;
+         this._initYHangarCrewWidgetFieldSet = this.hangarCrewWidgetFieldSet.y;
+         this._initYHangarCrewWidgetButtonBar = this.hangarCrewWidgetButtonBar.y;
          this._initYCarouselTypeFieldSet = this.carouselTypeFieldSet.y;
          this._initYCarouselTypeButtonBar = this.carouselTypeButtonBar.y;
          this._initYDoubleCarouselLabel = this.doubleCarouselLabel.y;

@@ -34,13 +34,17 @@
 						diffuseMap
 						<Texture>content/Railway/hd_rw_SU_1002_TramRails/hd_rw_SU_1002_TramRails_AM.dds</Texture>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.122097 0.089215 1.498864</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.871612 -0.490220 -0.200129</min>
+		<min>-0.871612 -0.002789 -0.000405</min>
 		<max>1.115806 0.181219 2.998133</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

@@ -120,6 +120,9 @@ msgstr "Уключыць галасавую сувязь"
 msgid "buttons/unMute/description"
 msgstr "Націсніце, каб уключыць галасавую сувязь у звязе."
 
+msgid "event_squad"
+msgstr "Взвод Гончих"
+
 msgid "headerButton/inSquad"
 msgstr "У звязе"
 
@@ -177,11 +180,14 @@ msgstr "Звяз"
 
 msgid "headerButton/tooltips/eventSquad/body"
 msgstr ""
-"Стварэнне фармавання з 2–3 гульцоў для сумеснай гульні ў падзеі «Вялікія "
-"гонкі»."
+"Создание формирования из 2-3 игроков для совместной игры в режиме "
+"«Ваффентрагер: Наследие» на стороне Гончих."
 
 msgid "headerButton/tooltips/eventSquad/header"
-msgstr "Звяз падзеі «Вялікія гонкі»."
+msgstr "Взвод Гончих"
+
+msgid "headerButton/tooltips/inEventSquad/header"
+msgstr "Взвод Гончих"
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
 msgstr "Націсніце, каб перайсці ў меню звязу."
@@ -204,11 +210,11 @@ msgstr "Разведка боем: звяз"
 
 msgid "headerButton/tooltips/rankedSquad/body"
 msgstr ""
-"Вы можете создать взвод или присоединиться к существующему. В Ранговых боях "
-"доступны взводы из 2 игроков."
+"Вы можаце стварыць звяз або далучыцца да існуючага. У Рангавых баях "
+"даступныя звязы з 2 гульцоў."
 
 msgid "headerButton/tooltips/rankedSquad/header"
-msgstr "Взвод"
+msgstr "Звяз"
 
 msgid "headerButton/tooltips/searching/body"
 msgstr "Пошук гульцоў..."
@@ -308,7 +314,7 @@ msgid "members/header/epic"
 msgstr ": Лінія фронту"
 
 msgid "members/header/event"
-msgstr ": Падзея"
+msgstr ": Ваффентрагер: вызов"
 
 msgid "members/header/mapbox"
 msgstr ": Разведка боем"
@@ -320,7 +326,7 @@ msgid "members/header/noBonusPlaceholder/tooltip/header"
 msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
 
 msgid "members/header/ranked"
-msgstr ": Ранговый бой"
+msgstr ": Рангавы бой"
 
 msgid "members/header/squad"
 msgstr ": Выпадковы бой"
@@ -348,9 +354,6 @@ msgstr ""
 msgid "members/header/tooltip/epic/header"
 msgstr "Правілы фармавання звязу"
 
-msgid "members/header/tooltip/event/body"
-msgstr "Звяз павінен складацца з трох адмысловых машын рэжыму."
-
 msgid "members/header/tooltip/event/header"
 msgstr "Правілы фармавання звязу"
 
@@ -358,18 +361,18 @@ msgid "members/header/tooltip/ranked/header"
 msgstr "Правілы фармавання звязу"
 
 msgid "members/header/tooltip/ranked/restriction"
-msgstr "Взвод не имеет ограничений по формированию."
+msgstr "Звяз не мае абмежаванняў паводле фармавання."
 
 msgid "members/header/tooltip/ranked/restriction_division"
-msgstr "Игроки должны находиться в одном дивизионе."
+msgstr "Гульцы павінны знаходзіцца ў адным дывізіёне."
 
 msgid "members/header/tooltip/ranked/restriction_rank"
-msgstr "Разница в рангах между игроками взвода не должна превышать %(rank)s."
+msgstr "Розніца ў рангах паміж гульцамі звязу не павінна перавышаць %(rank)s."
 
 msgid "members/header/tooltip/ranked/restriction_rank_division"
 msgstr ""
-"• Разница в рангах между игроками взвода не должна превышать %(rank)s.\n"
-"• Игроки должны находиться в одном дивизионе."
+"• Розніца ў рангах паміж гульцамі звязу не павінна перавышаць %(rank)s.\n"
+"• Гульца павінны знаходзіцца ў адным дывізіёне."
 
 msgid "members/header/tooltip/standard/body"
 msgstr "Звяз павінен складацца з машын аднаго ўзроўню."

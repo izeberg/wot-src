@@ -13,9 +13,39 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s2Shape.vertices</vertices>
+			<primitive>s2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.019045 6.636709 -1.788374</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.uv2</stream>
+			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -23,10 +53,6 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_tile0Tint
 						<Vector4>0.865000 0.865000 0.865000 1.000000</Vector4>
@@ -102,10 +128,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
 					</property>
@@ -167,10 +189,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.711437 -0.005017 -4.778809</min>
-		<max>1.719163 12.333142 0.978188</max>
+		<min>-1.711437 -0.005017 -4.681412</min>
+		<max>1.719163 12.333142 1.009112</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>21886</geometrySize>
+	<geometrySize>80246</geometrySize>
 	<minUVDensity>0.012713</minUVDensity>
 </root>

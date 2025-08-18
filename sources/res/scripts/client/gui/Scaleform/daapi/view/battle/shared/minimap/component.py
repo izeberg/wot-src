@@ -161,7 +161,7 @@ class MinimapComponent(MinimapMeta, IMinimapComponent):
         return setup
 
     def _createFlashComponent(self):
-        return GUI.WGMinimapFlashAS3(self.app.movie, settings.MINIMAP_COMPONENT_PATH)
+        return GUI.MinimapFlashAS3(self.app.movie, settings.MINIMAP_COMPONENT_PATH)
 
     def _getMinimapSize(self):
         return minimap_utils.MINIMAP_SIZE
@@ -187,7 +187,7 @@ class MinimapComponent(MinimapMeta, IMinimapComponent):
         if self.__component is None:
             return False
         else:
-            self.__component.wg_inputKeyMode = InputKeyMode.NO_HANDLE
+            self.__component.inputKeyMode = InputKeyMode.NO_HANDLE
             self.app.component.addChild(self.__component, self._getFlashName())
             bl, tr = self.getBoundingBox()
             self.__component.setArenaBB(bl, tr)

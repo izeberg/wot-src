@@ -643,6 +643,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_BPCOIN:String = "#messenger:serviceChannelMessages/battleResults/quests/bpcoin";
       
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_BATTLEQUESTSBATTLEPASSPOINTS:String = "#messenger:serviceChannelMessages/battleResults/quests/battleQuestsBattlePassPoints";
+      
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_EQUIPCOIN:String = "#messenger:serviceChannelMessages/battleResults/quests/equipCoin";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_BERTHS:String = "#messenger:serviceChannelMessages/battleResults/quests/berths";
@@ -980,6 +982,10 @@ package
       public static const SERVICECHANNELMESSAGES_OFFERTOKENBONUS_ALTERNATIVETITLE:String = "#messenger:serviceChannelMessages/offerTokenBonus/alternativeTitle";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED:String = "#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued";
+      
+      public static const SERVICECHANNELMESSAGES_EVENT_LOOTBOXES:String = "#messenger:serviceChannelMessages/event/lootboxes";
+      
+      public static const SERVICECHANNELMESSAGES_EVENT_TICKETS:String = "#messenger:serviceChannelMessages/event/tickets";
       
       public static const SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES:String = "#messenger:serviceChannelMessages/durationOfPremiumAccountExpires";
       

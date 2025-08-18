@@ -1,6 +1,6 @@
 import logging, typing
 from PlayerEvents import g_playerEvents
-from wg_async import AsyncScope, AsyncEvent, wg_await, wg_async, BrokenPromiseError, AsyncReturn
+from th_async import AsyncScope, AsyncEvent, th_await, th_async, BrokenPromiseError, AsyncReturn
 from frameworks.wulf import WindowLayer
 from gui.impl import backport
 from gui.impl.backport.backport_tooltip import BackportTooltipWindow, createTooltipData
@@ -34,10 +34,10 @@ class FullScreenDialogBaseView(ViewImpl):
         self.__event = AsyncEvent(scope=self.__scope)
         self.__result = DialogButtons.CANCEL
 
-    @wg_async
+    @th_async
     def wait(self):
         try:
-            yield wg_await(self.__event.wait())
+            yield th_await(self.__event.wait())
         except BrokenPromiseError:
             _logger.debug('%s has been destroyed without user decision', self)
 
@@ -177,10 +177,10 @@ class FullScreenDialogWindowWrapper(LobbyWindow):
         self._wrappedView.stopWaiting(result)
 
     @classmethod
-    def createIfNotExist(cls, layoutID, wrappedViewClass, parent=None, *args, **kwargs):
+    def createIfNotExist(cls, layoutID, wrappedViewClass, parent=None, layer=WindowLayer.UNDEFINED, *args, **kwargs):
         currentView = cls.__gui.windowsManager.getViewByLayoutID(layoutID)
         if currentView is None:
-            return FullScreenDialogWindowWrapper(wrappedViewClass(*args, **kwargs), parent)
+            return FullScreenDialogWindowWrapper(wrappedViewClass(*args, **kwargs), parent, layer=layer)
         else:
             return
 

@@ -8,54 +8,18 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_SU_0115_THouse_14</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s5</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s6</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -67,6 +31,10 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
+						g_simpleEmissionColor
+						<Vector4>0.874510 0.772549 0.541176 0.000000</Vector4>
+					</property>
+					<property>
 						metallicGlossMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_14_BGMM.dds</Texture>
 					</property>
@@ -74,16 +42,19 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_14_BANM.dds</Texture>
 					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>2.000000 1.100000 0.000000 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>0.000000 7.711039 0.000000</groupOrigin>
+				<groupOrigin>0.000000 7.711040 0.000002</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.610489 -1.002371 -4.788773</min>
-		<max>3.607738 16.424446 4.765849</max>
+		<min>-3.555089 -1.002367 -4.596227</min>
+		<max>3.555089 16.424446 4.596231</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>9490</geometrySize>
+	<geometrySize>9554</geometrySize>
 	<minUVDensity>0.001278</minUVDensity>
 </root>

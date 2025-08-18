@@ -14,7 +14,8 @@ class _WWISE_EVENTS(object):
 _SWF_FILE_NAME = 'BattleEndWarningPanel.swf'
 
 class Comp7BattleEndWarningPanel(BattleEndWarningPanelMeta, IAbstractPeriodView):
-    __slots__ = ('__duration', '__appearTime', '__roundLength', '__isShown', '__warningIsValid')
+    __slots__ = ('__duration', '__appearTime', '__extraAppearTime', '__roundLength',
+                 '__isShown', '__warningIsValid', '__extraWarningIsValid')
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
 
     def __init__(self):
@@ -22,9 +23,11 @@ class Comp7BattleEndWarningPanel(BattleEndWarningPanelMeta, IAbstractPeriodView)
         arenaVisitor = self.sessionProvider.arenaVisitor
         self.__duration = arenaVisitor.type.getBattleEndWarningDuration()
         self.__appearTime = arenaVisitor.type.getBattleEndWarningAppearTime()
+        self.__extraAppearTime = arenaVisitor.type.getBattleEndWarningExtraAppearTime()
         self.__roundLength = arenaVisitor.getRoundLength()
         self.__isShown = False
         self.__warningIsValid = self.__validateWarningTime()
+        self.__extraWarningIsValid = self.__validateExtraWarningTime()
 
     def isLoaded(self):
         return True
@@ -37,13 +40,19 @@ class Comp7BattleEndWarningPanel(BattleEndWarningPanelMeta, IAbstractPeriodView)
         secondsStr = ('{:02d}').format(seconds)
         if self.__isShown:
             self.as_setTotalTimeS(minutesStr, secondsStr)
-        if totalTime == self.__appearTime and self.__warningIsValid:
+        isAppearTime = totalTime == self.__appearTime
+        isExtraAppearTime = totalTime == self.__extraAppearTime
+        if isAppearTime and self.__warningIsValid or isExtraAppearTime and self.__extraWarningIsValid:
             WWISE.WW_eventGlobal(_WWISE_EVENTS.APPEAR)
             self.as_setTotalTimeS(minutesStr, secondsStr)
             self.as_setTextInfoS(self.__getWarningText())
             self.as_setStateS(True)
             self.__isShown = True
-        if (totalTime <= self.__appearTime - self.__duration or totalTime > self.__appearTime) and self.__isShown:
+        isBeforeWarning = totalTime <= self.__appearTime - self.__duration
+        isAfterWarning = totalTime > self.__appearTime
+        isBeforeExtraWarning = totalTime <= self.__extraAppearTime - self.__duration
+        isAfterExtraWarning = totalTime > self.__extraAppearTime
+        if (isBeforeWarning or isAfterWarning) and (isBeforeExtraWarning or isAfterExtraWarning) and self.__isShown:
             self.as_setStateS(False)
             self.__isShown = False
 
@@ -57,5 +66,10 @@ class Comp7BattleEndWarningPanel(BattleEndWarningPanelMeta, IAbstractPeriodView)
 
     def __validateWarningTime(self):
         if self.__appearTime < self.__duration or self.__appearTime <= 0 or self.__duration <= 0 or self.__appearTime > self.__roundLength or self.__duration > self.__roundLength and self.sessionProvider.arenaVisitor.isBattleEndWarningEnabled():
+            return False
+        return True
+
+    def __validateExtraWarningTime(self):
+        if self.__extraAppearTime < self.__duration or self.__extraAppearTime <= 0 or self.__duration <= 0 or self.__extraAppearTime > self.__roundLength or self.__duration > self.__roundLength and self.sessionProvider.arenaVisitor.isBattleEndWarningEnabled():
             return False
         return True

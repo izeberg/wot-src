@@ -2537,6 +2537,28 @@
 					<!--BW_String-->
 				</specValue>
 			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					0.9
+					<!--BW_String-->
+				</value>
+				<specValue>
+					0.875
+					<!--BW_String-->
+				</specValue>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					0.9
+					<!--BW_String-->
+				</value>
+				<specValue>
+					0.875
+					<!--BW_String-->
+				</specValue>
+			</mul>
 		</kpi>
 		<tooltipSection>equipment</tooltipSection>
 		<archetype>improvedRotationMechanism</archetype>
@@ -2627,6 +2649,28 @@
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersion</name>
+				<value>
+					0.9
+					<!--BW_String-->
+				</value>
+				<specValue>
+					0.875
+					<!--BW_String-->
+				</specValue>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					0.9
+					<!--BW_String-->
+				</value>
+				<specValue>
+					0.875
+					<!--BW_String-->
+				</specValue>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionAfterShot</name>
 				<value>
 					0.9
 					<!--BW_String-->

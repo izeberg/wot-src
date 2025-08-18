@@ -739,6 +739,9 @@ msgstr ""
 msgid "edgeDetectAA"
 msgstr "Edge detect AA"
 
+msgid "eventSettingDisabled"
+msgstr "Часть настроек недоступна"
+
 msgid "feedBack"
 msgstr "Информирование в бою"
 
@@ -1282,6 +1285,15 @@ msgstr "45 секунд"
 msgid "game/hangarCamPeriod/type2"
 msgstr "60 секунд"
 
+msgid "game/hangarCrewWidget"
+msgstr "Панель экипажа"
+
+msgid "game/hangarCrewWidget/compact"
+msgstr "Компактная"
+
+msgid "game/hangarCrewWidget/extended"
+msgstr "Расширенная"
+
 msgid "game/horStabilizationSnp"
 msgstr "Горизонтальная стабилизация в снайперском режиме"
 
@@ -1720,6 +1732,9 @@ msgstr ""
 "Настройка работает в тестовом режиме\n"
 "и не влияет на быстродействие игры."
 
+msgid "interfaceScale/auto"
+msgstr "Авто"
+
 msgid "interfaceScale/body"
 msgstr ""
 "Автоматическое увеличение элементов интерфейса\n"
@@ -1729,6 +1744,9 @@ msgid "interfaceScale/description"
 msgstr ""
 "Автоматическое увеличение элементов интерфейса при увеличении экрана/окна "
 "игры."
+
+msgid "interfaceScale/dropDownItem"
+msgstr "x%s"
 
 msgid "interfaceScale/header"
 msgstr "Масштабирование интерфейса"

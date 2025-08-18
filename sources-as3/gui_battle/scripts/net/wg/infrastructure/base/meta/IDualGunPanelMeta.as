@@ -10,6 +10,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setView(param1:int) : void;
       
+      function as_updateLayout(param1:Number, param2:Number) : void;
+      
       function as_setVisible(param1:Boolean) : void;
       
       function as_setPlaybackSpeed(param1:Number) : void;

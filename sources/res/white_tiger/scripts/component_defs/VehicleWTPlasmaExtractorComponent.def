@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<plasmaCounter>
+			<Type>INT8</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</plasmaCounter>
+		<multiplierDamagePerPlasma>
+			<Type>FLOAT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>0</Default>
+		</multiplierDamagePerPlasma>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>VehicleWTPlasmaExtractorComponent</DefaultKeyName>
+</root>

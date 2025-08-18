@@ -537,7 +537,7 @@ msgid "barracks/dismissedTankmenCount"
 msgstr "Дэмабілізаваныя танкісты: %(curValue)s из %(total)s"
 
 msgid "barracks/menu/locationFilter/barracks"
-msgstr "У Жаўнерні"
+msgstr "В казарме"
 
 msgid "barracks/menu/locationFilter/barracksAndTanks"
 msgstr "У Жаўнерні і на тэхніцы"
@@ -686,7 +686,7 @@ msgid "bonusType/29"
 msgstr "«Сталёвы паляўнічы»"
 
 msgid "bonusType/30"
-msgstr "«Стальной охотник» (взвод)"
+msgstr "«Сталёвы паляўнічы» (звяз)"
 
 msgid "bonusType/32"
 msgstr "«Бітва блогераў»"
@@ -766,7 +766,7 @@ msgid "booster/description/bonusValueTime/booster_xp"
 msgstr "Бонус %(effectValue)s да досведу за бой на %(effectTime)s"
 
 msgid "booster/description/booster_credits"
-msgstr "%(effectValue)s к серебру за бой."
+msgstr "%(effectValue)s да срэбра за бой."
 
 msgid "booster/description/booster_crew_xp"
 msgstr "%(effectValue)s да досведу экіпажу за бой"
@@ -1112,10 +1112,13 @@ msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
 
 msgid "contextMenu/createRankedSquad"
-msgstr "Создать взвод для Рангового боя"
+msgstr "Стварыць звяз для Рангавага бою"
 
 msgid "contextMenu/createSquad"
 msgstr "Стварыць звяз"
+
+msgid "contextMenu/createWhiteTigerSquad"
+msgstr "Создать взвод Гончих"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Змяніць члена экіпажа"
@@ -1417,9 +1420,7 @@ msgstr ""
 "бітва"
 
 msgid "crystals/info/tab/earn/level/mod/2"
-msgstr ""
-"Рангавы\n"
-"бой"
+msgstr "Натиск"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УЗРОВЕНЬ ТЭХНІКІ"
@@ -1444,6 +1445,9 @@ msgstr "ІНДЫКАТАР ЗАРОБКУ БОНАЎ"
 msgid "crystals/info/tab/earnTab"
 msgstr "Як здабыць"
 
+msgid "crystals/info/tab/get/card/comp7Description"
+msgstr "Топ-%(position)s по очкам престижа"
+
 msgid "crystals/info/tab/get/card/condition"
 msgstr "Умовы"
 
@@ -1455,6 +1459,9 @@ msgstr "Топ-%(position)s паводле досведу"
 
 msgid "crystals/info/tab/get/card/win"
 msgstr "Перамога"
+
+msgid "crystals/info/tab/get/comp7"
+msgstr "НАТИСК"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
@@ -1474,6 +1481,14 @@ msgstr "РАНГАВЫ БОЙ"
 
 msgid "crystals/info/tab/getTab"
 msgstr "Умовы налічэння"
+
+msgid "crystals/info/tab/spend/card/comp7Shop/description"
+msgstr ""
+"В магазине Натиска вас ожидают эксклюзивная техника и стили, а также "
+"выгодная система скидок."
+
+msgid "crystals/info/tab/spend/card/comp7Shop/title"
+msgstr "Магазин Натиска"
 
 msgid "crystals/info/tab/spend/card/instructions/description"
 msgstr "Узмацняюць эфект, які дае ўсталяванае абсталяванне."
@@ -1723,6 +1738,9 @@ msgstr "Пракат машыны даступны"
 msgid "currentVehicleStatus/rentableAgain"
 msgstr "Прадоўжыць пракат"
 
+msgid "currentVehicleStatus/rentalBattleIsOver"
+msgstr "Бои исчерпаны"
+
 msgid "currentVehicleStatus/rentalIsOver"
 msgstr "Час пракату закончыўся"
 
@@ -1740,6 +1758,9 @@ msgstr "Падпіска скасавана"
 
 msgid "currentVehicleStatus/tempUnavailable"
 msgstr "Часова недаступна"
+
+msgid "currentVehicleStatus/ticketsShortage"
+msgstr "Нет ключа"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "Да бою гатовы!"
@@ -2470,7 +2491,7 @@ msgid "finalStatistic/tabs/epicStats"
 msgstr "Асабісты вынік"
 
 msgid "finalStatistic/tabs/postbattleExtraTab"
-msgstr "Праздничная почта"
+msgstr "Святочная пошта"
 
 msgid "finalStatistic/tabs/teamStats"
 msgstr "Камандны вынік"
@@ -2610,6 +2631,9 @@ msgstr "Абслугоўванне"
 
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Выгляд"
+
+msgid "hangar/closeBtn"
+msgstr "ПОКИНУТЬ РЕЖИМ"
 
 msgid "hangar/crew/rody/dog/moreInfoLabel"
 msgstr "Падрабязней"
@@ -3042,6 +3066,9 @@ msgstr "Супольныя вучэнні"
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
 
+msgid "headerButtons/battle/types/event"
+msgstr "Ваффентрагер: Наследие"
+
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
 
@@ -3154,7 +3181,7 @@ msgid "headerButtons/battle/types/rankedLeave/descr"
 msgstr "Выйсці з бою"
 
 msgid "headerButtons/battle/types/rankedSquad"
-msgstr "Создать взвод для Рангового боя"
+msgstr "Стварыць звяз для Рангавага бою"
 
 msgid "headerButtons/battle/types/rts"
 msgstr "Мастацтва стратэгіі"
@@ -4523,13 +4550,13 @@ msgstr "Спараная ўстаноўка з сістэмай набіванн
 
 msgid "moduleInfo/clipDualGunWithAutoloadWithClipLabel"
 msgstr ""
-"Спаренная установка с системой заряжания.\n"
-"Снаряды заряжаются в орудия вместе с зарядкой магазина."
+"Спараная ўстаноўка з сістэмай набівання.\n"
+"Снарады набіваюцца ў гарматы разам з зарадкай магазіна."
 
 msgid "moduleInfo/clipDualGunWithoutResetReloadAndWithAutoloadWithClipLabel"
 msgstr ""
-"Спаренная установка с системой заряжания.\n"
-"Снаряды заряжаются в орудия вместе с зарядкой магазина. Процесс заряжания одного орудия не прерывается во время выстрела из другого."
+"Спараная ўстаноўка з сістэмай набівання.\n"
+"Снарады набіваюцца ў гарматы разам з зарадкай магазіна. Працэс набівання адной гарматы не перапыняецца падчас стрэлу з іншай."
 
 msgid "moduleInfo/clipDualGunWithoutResetReloadLabel"
 msgstr ""
@@ -4719,9 +4746,6 @@ msgstr "Магутнасць рухавіка"
 
 msgid "moduleInfo/params/enginePowerPerTon"
 msgstr "Да ўдзельнай магутнасці (к.с./т) "
-
-msgid "moduleInfo/params/explosionDelay"
-msgstr "Таймер детонации"
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радыус паражэння"
@@ -4997,7 +5021,7 @@ msgid "nations/sweden"
 msgstr "Швецыя"
 
 msgid "nations/title"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "nations/uk"
 msgstr "Вялікабрытанія"
@@ -5142,19 +5166,19 @@ msgstr ""
 "за кожны бой"
 
 msgid "premium/buyMessage"
-msgstr "Купить Премиум аккаунт"
+msgstr "Купить Танковый премиум аккаунт"
 
 msgid "premium/buyTitle"
-msgstr "Покупка Премиум аккаунта"
+msgstr "Покупка Танкового премиум аккаунта"
 
 msgid "premium/cancel"
 msgstr "Скасаваць"
 
 msgid "premium/continueMessage"
-msgstr "Продлить Премиум аккаунт"
+msgstr "Продлить Танковый премиум аккаунт"
 
 msgid "premium/continueTitle"
-msgstr "Продление Премиум аккаунта"
+msgstr "Продление Танкового премиум аккаунта"
 
 msgid "premium/gold"
 msgstr "золата"
@@ -5188,10 +5212,10 @@ msgstr "90 сутак"
 
 msgid "premium/packet/longDescriptionSpecial"
 msgstr ""
-"Наличие Премиум аккаунта позволяет вам быстрее развиваться в игре, "
-"обеспечивая дополнительный заработок серебра и опыта. Премиум аккаунт един "
-"для Мира танков и Мира кораблей, поэтому, покупая его для одной игры, вы "
-"автоматически получаете его в другой."
+"Наяўнасць Прэміум акаўнту дазваляе вам хутчэй развівацца ў гульні, "
+"забяспечваючы дадатковы заробак срэбра і досведу. Прэміум акаўнт адзіны для "
+"гульняў «Мир танков» і «Мир кораблей», таму, купляючы яго для адной гульні, "
+"вы аўтаматычна атрымліваеце яго ў іншай."
 
 msgid "premium/packet/shortDescriptionSpecial"
 msgstr "+50% да досведу, срэбра і досведу экіпажу за бой"
@@ -5356,7 +5380,7 @@ msgid "profile/premiumBuy"
 msgstr "Купіць прэміум"
 
 msgid "profile/premiumContinue"
-msgstr "Продлить Премиум аккаунт"
+msgstr "Продлить Танковый премиум аккаунт"
 
 msgid "profile/premiunExpirationDate"
 msgstr "Заканчваецца %s"
@@ -6409,6 +6433,9 @@ msgstr "Прадоўжыць пракат"
 msgid "tankCarousel/vehicleStates/rentableAgain/ranked"
 msgstr "Прадоўжыць пракат"
 
+msgid "tankCarousel/vehicleStates/rentalBattleIsOver"
+msgstr "Бои исчерпаны"
+
 msgid "tankCarousel/vehicleStates/rentalIsOver"
 msgstr "Час пракату закончыўся"
 
@@ -6434,6 +6461,9 @@ msgstr ""
 
 msgid "tankCarousel/vehicleStates/tempUnavailable"
 msgstr "Часова недаступна"
+
+msgid "tankCarousel/vehicleStates/ticketsShortage"
+msgstr "Нет ключа"
 
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недаступна"
@@ -6556,9 +6586,6 @@ msgstr "Магутнасць рухавіка"
 
 msgid "tank_params/enginePowerPerTon"
 msgstr "Удзельная магутнасць"
-
-msgid "tank_params/explosionDelay"
-msgstr "Таймер детонации"
 
 msgid "tank_params/explosionRadius"
 msgstr "Радыус паражэння"
@@ -7181,7 +7208,7 @@ msgid "vehicle/igrRentLeft/hours"
 msgstr "гадзін: %(hours)s"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Баёў даступна: %(battles)s"
+msgstr "Ещё боёв: %(battles)s"
 
 msgid "vehicle/rentLeft/days"
 msgstr "Сутак пракату: %(days)s"

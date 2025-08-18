@@ -1,5 +1,6 @@
 from collections import namedtuple
 import json, typing, BigWorld
+from constants import CURRENT_GAME_ID
 from account_helpers.premium_info import PremiumInfo
 from adisp import adisp_async
 from gui.shared.money import Money, Currency, DynamicMoney
@@ -160,7 +161,7 @@ class StatsRequester(AbstractSyncDataRequester, IStatsRequester):
 
     @property
     def isSubscriptionEnabled(self):
-        subscriptionKey = '/wot/game/premium_subscription'
+        subscriptionKey = '/%s/game/premium_subscription' % CURRENT_GAME_ID
         return subscriptionKey in self.SPA
 
     @property

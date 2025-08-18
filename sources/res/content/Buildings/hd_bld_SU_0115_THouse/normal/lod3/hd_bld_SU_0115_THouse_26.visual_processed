@@ -9,22 +9,46 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 	</node>
+	<customBsp>true</customBsp>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd7</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd7</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd7</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd7</identifier>
+		</material>
+	</missingBspMaterial>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_26_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -35,8 +59,12 @@
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_26_BANM.dds</Texture>
 					</property>
 					<property>
-						g_enableAO
-						<Bool>true</Bool>
+						g_simpleEmissionColor
+						<Vector4>0.878431 0.745098 0.607843 0.000000</Vector4>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>2.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>-3.878610 11.016514 0.101092</groupOrigin>
@@ -44,10 +72,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-9.892813 -0.916190 -11.186044</min>
-		<max>2.188820 23.375031 11.388228</max>
+		<min>-9.790686 -0.916190 -11.186044</min>
+		<max>2.033465 22.949219 11.388228</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>18974</geometrySize>
+	<geometrySize>19038</geometrySize>
 	<minUVDensity>0.000330</minUVDensity>
 </root>

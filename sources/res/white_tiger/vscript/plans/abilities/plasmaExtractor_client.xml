@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>abilities/plasmaExtractor_client</name>
+		<isMacro>false</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>ContextEventReceive</class>
+				<id>ContextEventReceive_1</id>
+				<params>
+					<param>
+						AbilityContextClient
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						canActive
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ContextEventReceive</class>
+				<id>ContextEventReceive_3</id>
+				<params>
+					<param>
+						AbilityContextClient
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						active
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ContextGetSelf</class>
+				<id>ContextGetSelf_1</id>
+				<params>
+					<param>
+						AbilityContextClient
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						getSelf
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ContextEventReceive</class>
+				<id>ContextEventReceive_4</id>
+				<params>
+					<param>
+						AbilityContextClient
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						cooldown
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ContextEventReceive</class>
+				<id>ContextEventReceive_2</id>
+				<params>
+					<param>
+						AbilityContextClient
+						<name>Context Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						cleanup
+						<name>Member Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>active</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+		</blocks>
+		<connections/>
+		<macros/>
+		<curves/>
+	</info>
+</root>

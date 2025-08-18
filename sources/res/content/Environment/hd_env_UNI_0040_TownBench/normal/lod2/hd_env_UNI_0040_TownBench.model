@@ -3,8 +3,11 @@
 	<parent>content/Environment/hd_env_UNI_0040_TownBench/normal/lod3/hd_env_UNI_0040_TownBench</parent>
 	<extent>120.000000</extent>
 	<visibilityBox>
-		<min>-2.496655 -0.230065 -0.495942</min>
-		<max>2.504600 2.303398 0.472716</max>
+		<min>-2.887125 -0.230065 -1.529632</min>
+		<max>2.540100 1.580809 1.031544</max>
 	</visibilityBox>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
 	<nodefullVisual>content/Environment/hd_env_UNI_0040_TownBench/normal/lod2/hd_env_UNI_0040_TownBench</nodefullVisual>
 </root>

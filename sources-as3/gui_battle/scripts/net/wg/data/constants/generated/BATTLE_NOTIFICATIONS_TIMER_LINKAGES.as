@@ -168,6 +168,24 @@ package net.wg.data.constants.generated
       public static const ABILITY_ICON:String = "secondaryAbilityIconUI";
       
       public static const THERMAL_VISION_WARNING:String = "thermalVisionWarningUI";
+      
+      public static const WT_TIMER_UI:String = "WtTimerUI";
+      
+      public static const WT_STUN_ICON:String = "secondaryWTStunIconUI";
+      
+      public static const WT_STUN_AREA_ICON:String = "secondaryWTStunAreaIconUI";
+      
+      public static const WT_HYPERION_WARNING_ICON:String = "destroyTimerWtHyperionUI";
+      
+      public static const WT_HYPERION_WARNING_2025_ICON:String = "destroyTimerWtHyperion2025UI";
+      
+      public static const WT_BOMB_CAPTURE:String = "WtBombCaptureUI";
+      
+      public static const WT_BOMB_DEPLOY:String = "WtBombDeployUI";
+      
+      public static const WT_BOMB_ABSORB:String = "WtBombAbsorbUI";
+      
+      public static const WT_BOMB_CARRY:String = "WtBombCarryUI";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_LINKAGES()

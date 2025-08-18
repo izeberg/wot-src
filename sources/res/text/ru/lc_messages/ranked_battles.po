@@ -526,6 +526,58 @@ msgstr "получен ранг машины"
 msgid "notification/vehicleRankLost"
 msgstr "потерян ранг машины"
 
+msgid "postbattleStatus/controls/confirmButton"
+msgstr "Так точно!"
+
+msgid "postbattleStatus/controls/skipAnimation"
+msgstr "Показывать анимацию"
+
+msgid "postbattleStatus/controls/takeReward"
+msgstr "Забрать награду"
+
+msgid "postbattleStatus/title/final"
+msgstr ""
+"Дивизионы пройдены.\n"
+"Награды получены."
+
+msgid "postbattleStatus/title/finalWithReward"
+msgstr ""
+"Дивизионы пройдены.\n"
+"Заберите свою заслуженную награду!"
+
+msgid "postbattleStatus/title/getChevron"
+msgstr "Получен шеврон!"
+
+msgid "postbattleStatus/title/getChevrons"
+msgstr "Получены шевроны!"
+
+msgid "postbattleStatus/title/getDivision"
+msgstr "Дивизион повышен!"
+
+msgid "postbattleStatus/title/getRank"
+msgstr "Получен новый ранг!"
+
+msgid "postbattleStatus/title/saveChevron"
+msgstr "Шеврон защищён"
+
+msgid "postbattleStatus/title/saveDivision"
+msgstr "Дивизион защищён"
+
+msgid "postbattleStatus/title/saveRank"
+msgstr "Ранг защищён"
+
+msgid "postbattleStatus/title/wasteChevron"
+msgstr "Шеврон потерян"
+
+msgid "postbattleStatus/title/wasteChevrons"
+msgstr "Шевроны потеряны"
+
+msgid "postbattleStatus/title/wasteDivision"
+msgstr "Дивизион понижен"
+
+msgid "postbattleStatus/title/wasteRank"
+msgstr "Ранг потерян"
+
 msgid "primeTimes/serverTooltip/allNotAvailable"
 msgstr ""
 "Сервер %(serverName)s\n"
@@ -1362,6 +1414,9 @@ msgstr "Дивизион пройден"
 
 msgid "rankedDivisionStatus/locked"
 msgstr "Дивизион ещё не достигнут"
+
+msgid "rankedHangarWidget/bonusBattles"
+msgstr "Призовые бои: %(battlesCount)s"
 
 msgid "rankedSeasonCompleted/header/description"
 msgstr "Вы можете продолжать играть в режиме"

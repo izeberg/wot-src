@@ -4,7 +4,7 @@ DEFAULT_STATUS = 'payAttention'
 DEFAULT_GROUP = 'all'
 _OPTIONAL_FILTER_FLAGS = ('isBattlePassActiveSeason', 'isRankedYearRewardEnabled',
                           'isRankedLeaderboardEnabled', 'isRankedShopEnabled', 'isRankedLeagueRewardEnabled',
-                          'isPostProgressionEnabled', 'isBirthdayActive')
+                          'isPostProgressionEnabled')
 
 def readPreBattleTips(prebattleXmlPath):
     filters = dict()

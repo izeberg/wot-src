@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A174_M36B1_GMC/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A174_M36B1_GMC/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.369649 -0.000074 -2.925074</min>
+		<max>1.369649 1.130718 2.811994</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.759871 -0.000002 -4.147610</min>
+		<max>1.759871 1.155066 3.809954</max>
+	</visibilityBox>
+	<parent>vehicles/french/F133_Projet_57_Ampere/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F133_Projet_57_Ampere/crash/lod0/Chassis</nodefullVisual>
+</root>

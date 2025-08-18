@@ -153,13 +153,15 @@ class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlob
         return
 
     def _isQueueEnabled(self):
-        return self.__isQueueSelected(QUEUE_TYPE.RANDOMS)
+        queues = (
+         QUEUE_TYPE.RANDOMS, QUEUE_TYPE.COMP7, QUEUE_TYPE.STRONGHOLD_UNITS, QUEUE_TYPE.RANKED)
+        return self.__isQueueSelected(queues)
 
-    def __isQueueSelected(self, queueType):
-        if self.prbDispatcher is not None:
-            return self.prbDispatcher.getFunctionalState().isQueueSelected(queueType)
-        else:
-            return False
+    def __isQueueSelected(self, queueTypes):
+        dispatcher = self.prbDispatcher
+        if dispatcher is not None:
+            return any([ dispatcher.getFunctionalState().isQueueSelected(queue) for queue in queueTypes ])
+        return False
 
     def __onServerSettingsChanged(self, serverSettings):
         if self.__serverSettings is not None:
@@ -217,6 +219,13 @@ class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlob
 
         return nearestDate - currentTime + _SECONDS_BEFORE_UPDATE
 
+    def __strongholdEntryPointValidator(self, entry):
+        strongholdQueues = (
+         QUEUE_TYPE.COMP7, QUEUE_TYPE.STRONGHOLD_UNITS, QUEUE_TYPE.RANKED)
+        if any([ self.prbDispatcher.getFunctionalState().isQueueSelected(queue) for queue in strongholdQueues ]):
+            return entry.data.get('id') == LuiRules.STRONGHOLD_ENTRY_POINT.value
+        return True
+
     def __updateEntries(self):
         data = []
         if not self.__bootcamp.isInBootcamp() and self._isQueueEnabled():
@@ -227,7 +236,7 @@ class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlob
             sortedEntries = sorted(self.__entries.itervalues(), key=attrgetter('priority', 'startDate'))
             for entry in sortedEntries:
                 isValidCount = count < _COUNT_VISIBLE_ENTRY_POINTS
-                if isValidCount and entry.getIsValidDateForCreation() and entry.getIsEnabledByValidator() and self.__luiController.isRuleCompleted(entry.getLUIRule()):
+                if isValidCount and entry.getIsValidDateForCreation() and entry.getIsEnabledByValidator() and self.__luiController.isRuleCompleted(entry.getLUIRule()) and self.__strongholdEntryPointValidator(entry):
                     count += 1
                     data.append({'entryLinkage': entry.id, 
                        'swfPath': _ADDITIONAL_SWFS_MAP.get(entry.id, '')})

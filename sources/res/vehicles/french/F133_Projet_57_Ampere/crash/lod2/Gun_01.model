@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F133_Projet_57_Ampere/crash/lod3/Gun_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.251008 -0.763171 -2.399771</min>
+		<max>1.251008 0.802595 6.513325</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F133_Projet_57_Ampere/crash/lod2/Gun_01</nodefullVisual>
+</root>

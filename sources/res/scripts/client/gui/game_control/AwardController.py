@@ -6,10 +6,9 @@ from itertools import chain, ifilter
 import ArenaType, BigWorld, gui.awards.event_dispatcher as award_events
 from gui.impl.gen.view_models.views.lobby.personal_missions.personal_missions_rewards_view_model import CompletedQuestsType
 from gui.impl.lobby import promo_code_reward_screen
-from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsVideoRewardView, showPersonalMissionsRewardsView, showOperationAdditionRewardsView
 from gui.impl.lobby.promo_code_reward_screen import REWARDS_SOURCE_INVOICE, REWARDS_SOURCE_BATTLE_RESULTS, REWARDS_SOURCE_TOKEN_QUESTS
 from gui.shared.account_settings_helper import AccountSettingsHelper
-import personal_missions, wg_async
+import personal_missions, th_async
 from PlayerEvents import g_playerEvents
 from account_helpers.AccountSettings import AccountSettings, RANKED_CURRENT_AWARDS_BUBBLE_YEAR_REACHED, RANKED_YEAR_POSITION, SPEAKERS_DEVICE, PersonalMissions
 from account_helpers.settings_core.settings_constants import SOUND
@@ -43,6 +42,8 @@ from gui.impl.lobby.early_access.early_access_window_events import showEarlyAcce
 from gui.impl.lobby.awards.items_collection_provider import MultipleAwardRewardsMainPacker
 from gui.impl.lobby.comp7.comp7_quest_helpers import isComp7VisibleQuest, getComp7QuestType, parseComp7RanksQuestID, parseComp7TokensQuestID
 from gui.impl.lobby.mapbox.map_box_awards_view import MapBoxAwardsViewWindow
+from gui.impl.lobby.personal_missions.personal_missions_window_events import showPersonalMissionsRewardsView
+from gui.impl.lobby.personal_missions.personal_missions_window_events import showOperationAdditionRewardsView
 from gui.impl.pub.notification_commands import WindowNotificationCommand
 from gui.limited_ui.lui_rules_storage import LuiRules
 from gui.prb_control.entities.listener import IGlobalListener
@@ -69,7 +70,7 @@ from messenger.formatters.service_channel import TelecomReceivedInvoiceFormatter
 from messenger.m_constants import SCH_CLIENT_MSG_TYPE
 from messenger.proto.events import g_messengerEvents
 from nations import NAMES
-from personal_missions_constants import PM3_PREFIX_NAME
+from personal_missions_constants import PM3_PREFIX_NAME, PM3_FINAL_REWARD_VIEW_ID
 from paragons_common import getParagonsEntitlement, ParagonsEntitlements, PARAGONS_SELECTED_REWARD_TOKEN_PREFIX
 from renewable_subscription_common.settings_constants import WotPlusState
 from shared_utils import first, findFirst
@@ -85,6 +86,7 @@ from skeletons.gui.shared import IItemsCache
 from skeletons.gui.shared.utils import IHangarSpace
 from skeletons.gui.sounds import ISoundsController
 from skeletons.gui.system_messages import ISystemMessages
+from personal_missions import PM_BRANCH
 if typing.TYPE_CHECKING:
     from typing import Tuple, Union, Dict, Literal
     from messenger.proto.bw.wrappers import _ServiceChannelData
@@ -925,25 +927,26 @@ class PersonalMissionAutoWindowHandler(BattleQuestsAutoWindowHandler):
             quests_events.showPersonalMissionAward(dataWindow['quest'], dataWindow['context'])
 
     def __updateCompletedOperationId(self, questId):
-        quest = self.__pmController.getQuest(questId)
+        pmCtrl = self.__pmController
+        quest = pmCtrl.getQuest(questId)
         if quest is None or quest.getQuestBranchName() != PM3_PREFIX_NAME:
             return
         operationID = quest.getOperationID()
-        operation = self.__pmController.getOperationById(operationID)
+        operation = pmCtrl.getOperationById(operationID)
         if operation is None or not operation.isCompleted():
             return
         settings = AccountSettings.getPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS)
         if settings.get(operationID, False) and operation.isFullCompleted():
             self.__openedRewardOperationsIds.add(operationID)
             showOperationAdditionRewardsView(operationID, addToQueue=True)
-            return
-        else:
-            settings.setdefault(operationID, False)
-            settings[operationID] = True
-            AccountSettings.setPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS, settings)
+        if not settings.get(operationID, False):
             self.__openedRewardOperationsIds.add(operationID)
-            showPersonalMissionsVideoRewardView(operationID, addToQueue=True)
-            return
+            pmCtrl.openVideoRewardAndUpdateAccSettings(operationID, settings)
+        if all(pmCtrl.getOperationById(operationId).isFullCompleted() for operationId in BRANCH_TO_OPERATION_IDS[personal_missions.PM_BRANCH.PERSONAL_MISSION_3]):
+            self.__openedRewardOperationsIds.add(PM3_FINAL_REWARD_VIEW_ID)
+            pmCtrl.openVideoRewardAndUpdateAccSettings(PM3_FINAL_REWARD_VIEW_ID, settings)
+        AccountSettings.setPersonalMissions(PersonalMissions.OPERATIONS_VIDEO_REWARDS_STATUS, settings)
+        return
 
     def __onRewardsPmViewClose(self, event):
         self.__getCloseEvent(questId=event.ctx.get('questID'), operationId=event.ctx.get('operationID'))
@@ -1044,6 +1047,8 @@ class PersonalMissionOperationAwardHandler(BattleQuestsAutoWindowHandler):
                     if pqType.isFinal:
                         self.__openedOperationsAwards.add((pqType.id, pqType.tileID))
                 for operationID, prefix in self.__getFinalTokenQuestIdsByOperationId():
+                    if uniqueQuestID == CHAMPION_BADGES_BY_BRANCH[PM_BRANCH.PERSONAL_MISSION_3]:
+                        return False
                     if uniqueQuestID in self.__CHAMPION_BADGES_IDS:
                         return True
                     if uniqueQuestID.startswith(prefix):
@@ -1708,14 +1713,14 @@ class MapboxProgressionRewardHandler(AwardHandler):
         _, __, settings = args
         return settings.messageSubtype == SCH_CLIENT_MSG_TYPE.MAPBOX_PROGRESSION_REWARD
 
-    @wg_async.wg_async
+    @th_async.th_async
     def _showAward(self, ctx):
         _, message, __ = ctx
         bonuses = chain.from_iterable([ getServiceBonuses(name, value) for name, value in message['savedData'].get('rewards', {}).iteritems() ])
         window = MapBoxAwardsViewWindow(message['savedData']['battles'], bonuses)
         self.__notificationMgr.append(WindowNotificationCommand(window))
         self.__eventsCache.onEventsVisited()
-        yield wg_async.wg_await(self.__mapboxCtrl.forceUpdateProgressData())
+        yield th_async.th_await(self.__mapboxCtrl.forceUpdateProgressData())
 
 
 class PurchaseHandler(ServiceChannelHandler):

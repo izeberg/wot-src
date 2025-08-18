@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0095_ConstructionSchool/normal/lod4/hd_bld_SU_0095_ConstructionSchool</nodefullVisual>
+	<visibilityBox>
+		<min>-25.492716 -3.959614 -12.773731</min>
+		<max>26.330118 30.233139 12.183818</max>
+	</visibilityBox>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0095_ConstructionSchool/normal/lod4/hd_bld_SU_0095_ConstructionSchool</nodelessVisual>
 </root>

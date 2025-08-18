@@ -44,16 +44,12 @@
 						<Vector4>0.100000 0.330000 0.000000 0.150000</Vector4>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.170000 1.000000 0.000000</Vector4>
+						<Vector4>0.110000 0.050000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						globalTex
-						<Texture>content/Environment/hd_env_UNI_0037_HeapOfSand/hd_env_UNI_0037_HeapOfSand_01_GT.dds</Texture>
+						<Texture>content/Environment/hd_env_UNI_0037_HeapOfSand/hd_env_UNI_0037_HeapOfSand_01_GNM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -72,15 +68,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.154387 1.387092 -0.475646</groupOrigin>
+				<groupOrigin>-1.163893 1.401327 -0.458314</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-6.955452 -0.178947 -8.560102</min>
-		<max>4.629954 2.953131 7.650144</max>
+		<min>-6.955452 -0.073548 -8.558696</min>
+		<max>4.610942 2.878947 7.650144</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>2852</geometrySize>
-	<minUVDensity>0.069327</minUVDensity>
+	<geometrySize>5846</geometrySize>
+	<minUVDensity>0.052911</minUVDensity>
 </root>

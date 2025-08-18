@@ -14,7 +14,7 @@ package net.wg.gui.lobby.clans.invites.VOs
       
       public var wins:String = "";
       
-      public var awgExp:String = "";
+      public var avgXP:String = "";
       
       public var messageTooltip:String = "";
       

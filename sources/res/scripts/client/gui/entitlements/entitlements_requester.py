@@ -1,6 +1,6 @@
 import copy, logging, typing
 from adisp import adisp_process, adisp_async
-from gui.wgcg.agate.contexts import AgateGetInventoryEntitlementsCtx
+from gui.clientgw.agate.contexts import AgateGetInventoryEntitlementsCtx
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
 from skeletons.gui.web import IWebController

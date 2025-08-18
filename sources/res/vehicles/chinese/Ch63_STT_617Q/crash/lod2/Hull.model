@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch63_STT_617Q/crash/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch63_STT_617Q/crash/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.714324 -0.854694 -3.632809</min>
+		<max>1.737444 0.701037 3.634441</max>
+	</visibilityBox>
+</root>

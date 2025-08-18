@@ -32,14 +32,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_tile1Tint
 						<Vector4>0.820000 0.820000 0.820000 1.000000</Vector4>
 					</property>
@@ -91,6 +83,10 @@
 						colorTex
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.003463 6.628256 -2.128213</groupOrigin>
 			</primitiveGroup>
@@ -108,14 +104,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -161,14 +149,18 @@
 						colorTex
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.003463 6.610456 -2.073637</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.536702 -0.005276 -4.861684</min>
-		<max>1.524764 13.299066 0.718356</max>
+		<min>-1.557678 -0.005276 -4.861684</min>
+		<max>1.548846 13.299066 0.834815</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>3476</geometrySize>

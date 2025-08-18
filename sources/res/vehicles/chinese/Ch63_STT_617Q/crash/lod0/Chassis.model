@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.630311 -0.002321 -3.897949</min>
+		<max>1.612195 1.059123 3.829687</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_STT_617Q/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch63_STT_617Q/crash/lod0/Chassis</nodefullVisual>
+</root>

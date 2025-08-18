@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.536992 0.001995 -3.205504</min>
+		<max>1.537295 1.142807 4.264091</max>
+	</visibilityBox>
+	<parent>vehicles/russian/R229_Object_718B/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R229_Object_718B/crash/lod0/Chassis</nodefullVisual>
+</root>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<customBsp>true</customBsp>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0163_UniverSecondary/hd_bld_SU_0163_UniverSecondary_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0163_UniverSecondary/hd_bld_SU_0163_UniverSecondary_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0163_UniverSecondary/hd_bld_SU_0163_UniverSecondary_BANM.dds</Texture>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>1.000000 0.862745 0.701961 0.000000</Vector4>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>7.500000 1.500000 0.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 10.355955 0.036549</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-7.654605 -0.694587 -28.785025</min>
+		<max>7.654605 21.406498 28.858122</max>
+	</boundingBox>
+	<geometrySize>23352</geometrySize>
+	<minUVDensity>0.000178</minUVDensity>
+</root>

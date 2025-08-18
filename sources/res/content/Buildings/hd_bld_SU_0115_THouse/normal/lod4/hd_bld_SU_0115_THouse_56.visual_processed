@@ -9,23 +9,19 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_nd1.vertices</vertices>
+			<primitive>s_nd1.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd1</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_56_BAM.dds</Texture>
@@ -42,16 +38,23 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_56_BANM.dds</Texture>
 					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>2.000000 1.200000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.925490 0.796078 0.709804 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>-0.175329 9.420777 -1.093400</groupOrigin>
+				<groupOrigin>-0.175329 9.420773 -1.093392</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-10.420220 -2.815901 -28.250633</min>
-		<max>10.360517 21.657455 26.063833</max>
+		<min>-10.420218 -2.815910 -28.250626</min>
+		<max>10.069560 21.657455 26.063841</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>18440</geometrySize>
+	<geometrySize>18504</geometrySize>
 	<minUVDensity>0.000108</minUVDensity>
 </root>

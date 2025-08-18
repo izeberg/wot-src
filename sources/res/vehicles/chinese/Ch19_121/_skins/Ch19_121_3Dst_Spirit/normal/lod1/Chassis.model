@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod2/Chassis</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod1/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.610888 0.006558 -3.165173</min>
+		<max>1.610888 1.069349 3.178855</max>
+	</visibilityBox>
+</root>

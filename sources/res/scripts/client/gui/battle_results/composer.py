@@ -131,7 +131,6 @@ class RankedBattlesStatsComposer(StatsComposer):
         self.__resultsTeamsBlock = base.StatsBlock(templates.RANKED_RESULTS_BLOCK)
         self.__resultsTeamsBlock.addNextComponent(templates.RANKED_RESULTS_TEAMS_STATS_BLOCK.clone())
         self.__resultsTeamsBlock.addNextComponent(templates.RANKED_ENABLE_ANIMATION_BLOCK.clone())
-        self.__resultsTeamsBlock.addNextComponent(templates.RANKED_SHOW_WIDGET_BLOCK.clone())
         self.__resultsTeamsBlock.addNextComponent(templates.RANKED_RESULTS_STATUS_BLOCK.clone())
         self.__resultsTeamsBlock.addNextComponent(templates.RANKED_RESULTS_STATE_BLOCK.clone())
 

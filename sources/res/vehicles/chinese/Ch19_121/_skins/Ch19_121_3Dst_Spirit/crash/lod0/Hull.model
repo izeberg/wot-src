@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/crash/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.842329 -0.860841 -3.672548</min>
+		<max>1.723439 0.640476 3.658217</max>
+	</visibilityBox>
+</root>

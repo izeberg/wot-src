@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<nodefullVisual>content/Environment/hd_env_UNI_0048_OldSailboatSnow/normal/lod0/hd_env_UNI_0048_OldSailboatSnow</nodefullVisual>
 	<visibilityBox>
-		<min>-5.038486 -2.130541 -18.734694</min>
-		<max>2.809216 11.446760 20.592192</max>
+		<min>-5.033965 -2.130541 -18.734694</min>
+		<max>2.813738 11.446761 20.592192</max>
 	</visibilityBox>
 	<parent>content/Environment/hd_env_UNI_0048_OldSailboatSnow/normal/lod1/hd_env_UNI_0048_OldSailboatSnow</parent>
-	<extent>96.000000</extent>
-	<nodefullVisual>content/Environment/hd_env_UNI_0048_OldSailboatSnow/normal/lod0/hd_env_UNI_0048_OldSailboatSnow</nodefullVisual>
+	<extent>48.000000</extent>
 </root>

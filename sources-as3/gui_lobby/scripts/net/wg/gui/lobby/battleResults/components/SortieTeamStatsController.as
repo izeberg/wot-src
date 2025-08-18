@@ -53,9 +53,8 @@ package net.wg.gui.lobby.battleResults.components
       
       override protected function setupResources(param1:BattleResultsVO) : void
       {
-         var _loc2_:Boolean = false;
          teamResourceTotal.htmlText = param1.common.totalFortResourceStr;
-         _loc2_ = StringUtils.isNotEmpty(param1.common.totalInfluenceStr);
+         var _loc2_:Boolean = StringUtils.isNotEmpty(param1.common.totalInfluenceStr);
          teamInfluenceTotal.visible = _loc2_;
          if(_loc2_)
          {

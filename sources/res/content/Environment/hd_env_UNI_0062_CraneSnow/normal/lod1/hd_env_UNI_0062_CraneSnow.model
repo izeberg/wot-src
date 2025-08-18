@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Environment/hd_env_UNI_0062_CraneSnow/normal/lod2/hd_env_UNI_0062_CraneSnow</parent>
-	<extent>96.000000</extent>
+	<extent>165.000000</extent>
+	<visibilityBox>
+		<min>-16.849400 0.000000 -27.005156</min>
+		<max>5.976682 38.198551 8.465943</max>
+	</visibilityBox>
 	<nodelessVisual>content/Environment/hd_env_UNI_0062_CraneSnow/normal/lod1/hd_env_UNI_0062_CraneSnow</nodelessVisual>
 </root>

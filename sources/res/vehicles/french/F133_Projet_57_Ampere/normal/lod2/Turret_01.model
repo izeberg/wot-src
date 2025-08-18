@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F133_Projet_57_Ampere/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F133_Projet_57_Ampere/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.410785 -0.013743 -1.305243</min>
+		<max>1.410785 0.712532 1.313848</max>
+	</visibilityBox>
+</root>

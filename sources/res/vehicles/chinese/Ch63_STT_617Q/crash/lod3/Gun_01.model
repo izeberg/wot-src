@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/chinese/Ch63_STT_617Q/crash/lod3/Gun_01</nodelessVisual>
+	<parent>vehicles/chinese/Ch63_STT_617Q/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.557709 -0.276089 -0.830772</min>
+		<max>0.458621 0.322489 5.159091</max>
+	</visibilityBox>
+</root>

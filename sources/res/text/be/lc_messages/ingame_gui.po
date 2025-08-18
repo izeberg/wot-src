@@ -376,9 +376,6 @@ msgstr "БАПС"
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "АФ"
 
-msgid "damageLog/shellType/DELAYED_HE"
-msgstr "АФ"
-
 msgid "damageLog/shellType/FLAME"
 msgstr "АС"
 
@@ -745,6 +742,9 @@ msgstr "Цэль абаронена"
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захоплена"
 
+msgid "efficiencyRibbons/healthAdded"
+msgstr "Машина отремонтирована"
+
 msgid "efficiencyRibbons/kill"
 msgstr "Знішчыў"
 
@@ -804,6 +804,9 @@ msgstr "Машына пакінута"
 
 msgid "efficiencyRibbons/worldCollision"
 msgstr "Пашкоджанні пры падзенні"
+
+msgid "efficiencyRibbons/wtReceivedCircuitOverload"
+msgstr "Урон электричеством"
 
 msgid "epic_players_panel/state/hidden/body"
 msgstr "Схаваць панэлі камандаў."
@@ -1574,6 +1577,15 @@ msgstr "База%s супраціўніка захоплена!"
 msgid "player_messages/enemy_team_name"
 msgstr "Праціўнік"
 
+msgid "player_messages/equipment/wtEvent/healthAtFullHP"
+msgstr "[%(name)s] Ремонт не требуется: повреждений нет."
+
+msgid "player_messages/equipment/wtEvent/hunterAbilitiesDisabled"
+msgstr "Недоступно: машина обесточена."
+
+msgid "player_messages/equipment/wtEvent/noActiveShieldOnBoss"
+msgstr "Способность недоступна без активного щита."
+
 msgid "player_messages/poi_equipment_used_by_ally"
 msgstr "Хаўруснік %(name)s прымяніў тактычную звычку «%(equipment)s»"
 
@@ -2143,7 +2155,7 @@ msgstr "Так!"
 
 msgid "rewardWindow/piggyBank/descText"
 msgstr ""
-"Накопление серебра приостановлено. Продлите Премиум аккаунт, чтобы "
+"Накопление серебра приостановлено. Продлите Танковый премиум аккаунт, чтобы "
 "продолжить пополнение хранилища серебра."
 
 msgid "rewardWindow/piggyBank/headerText"
@@ -2762,9 +2774,6 @@ msgstr "%(caliber)s мм БАПС %(userString)s"
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s-мм бранябойны каморны снарад %(userString)s"
 
-msgid "shells_kinds/DELAYED_HE"
-msgstr "%(caliber)s мм снаряд с задержкой взрывателя %(userString)s"
-
 msgid "shells_kinds/FLAME"
 msgstr "Агнямётная сумесь %(userString)s"
 
@@ -2782,9 +2791,6 @@ msgstr "Пашкоджанні за секунду: %(value)s адз."
 
 msgid "shells_kinds/params/damageRange"
 msgstr "Пашкоджанні снарада: %(value)s адз."
-
-msgid "shells_kinds/params/explosionDelay"
-msgstr "Таймер детонации: %(value)s с"
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"
@@ -3243,3 +3249,15 @@ msgstr "Тактычная звычка «%(equipment)s» выкарыстана
 
 msgid "warning_zone/indicator"
 msgstr "Асцярожна! Вы побач з небяспечнай зонай."
+
+msgid "wt_vehicle_messages/DECREASE_PLASMA_COUNT"
+msgstr "Заряд плазмы утерян."
+
+msgid "wt_vehicle_messages/INCREASE_PLASMA_COUNT"
+msgstr "Заряд плазмы получен"
+
+msgid "wt_vehicle_messages/STUN_AREA_APPLIED"
+msgstr "Машина обесточена способностью Ваффентрагера «Электромагнитная сеть»!"
+
+msgid "wt_vehicle_messages/STUN_AREA_STOPPED"
+msgstr "Напряжение в машине восстановлено."

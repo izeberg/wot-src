@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod2/Turret_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.356751 -0.144809 -1.934294</min>
+		<max>1.475335 1.160624 1.373159</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/normal/lod0/G125_Spz_57_Rh_3Dst_Veilflower_Anim_Hull_Legs_teleport</nodefullVisual>
+	<visibilityBox>
+		<min>-2.052703 -1.141893 -2.036822</min>
+		<max>2.086697 0.803666 3.489422</max>
+	</visibilityBox>
+	<parent>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/normal/lod1/G125_Spz_57_Rh_3Dst_Veilflower_Anim_Hull_Legs_teleport</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

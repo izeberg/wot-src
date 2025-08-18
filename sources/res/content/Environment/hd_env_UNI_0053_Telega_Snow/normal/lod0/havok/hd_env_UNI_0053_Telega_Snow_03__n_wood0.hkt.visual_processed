@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>havok005</identifier>
+			<identifier>suspension</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -18,7 +18,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok006</identifier>
+			<identifier>wheel_l</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -27,7 +27,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok025</identifier>
+			<identifier>wheel_l3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -36,7 +36,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok026</identifier>
+			<identifier>n15</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -45,7 +45,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok027</identifier>
+			<identifier>n16</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -54,7 +54,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>polySurface46</identifier>
+			<identifier>n17</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -63,7 +63,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok021</identifier>
+			<identifier>n18</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -72,7 +72,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok022</identifier>
+			<identifier>n19</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -81,7 +81,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok002</identifier>
+			<identifier>n20</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -90,7 +90,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok014</identifier>
+			<identifier>n21</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -99,7 +99,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok015</identifier>
+			<identifier>n22</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -108,7 +108,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>havok007</identifier>
+			<identifier>pillar_l1</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -117,7 +117,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object027</identifier>
+			<identifier>pillar_l2</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -126,7 +126,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object028</identifier>
+			<identifier>pillar_l</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -135,7 +135,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object030</identifier>
+			<identifier>pillar_r3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -144,7 +144,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd007</identifier>
+			<identifier>pillar_r</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -153,7 +153,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd008</identifier>
+			<identifier>n8</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -162,7 +162,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object029</identifier>
+			<identifier>n9</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -171,7 +171,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object026</identifier>
+			<identifier>n10</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -180,7 +180,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object025</identifier>
+			<identifier>n28</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -189,7 +189,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd001</identifier>
+			<identifier>n26</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -198,7 +198,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd002</identifier>
+			<identifier>n0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -207,7 +207,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd003</identifier>
+			<identifier>n25</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -216,7 +216,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd004</identifier>
+			<identifier>n32</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -225,7 +225,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd005</identifier>
+			<identifier>n30</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -234,7 +234,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd009</identifier>
+			<identifier>n34</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -243,7 +243,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>ddddddddd010</identifier>
+			<identifier>stand_r</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -252,7 +252,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object024</identifier>
+			<identifier>stand_r2</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -261,7 +261,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object023</identifier>
+			<identifier>log_l2</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -270,7 +270,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object022</identifier>
+			<identifier>log_l</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -279,7 +279,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object021</identifier>
+			<identifier>log_l4</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -288,7 +288,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object020</identifier>
+			<identifier>log_r1</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -297,34 +297,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>Object019</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>Object031</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>Object032</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>Object033</identifier>
+			<identifier>log_r</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -335,74 +308,144 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>ddddddddd005</node>
-		<node>havok007</node>
-		<node>Object027</node>
-		<node>havok014</node>
-		<node>havok015</node>
-		<node>Object028</node>
-		<node>ddddddddd008</node>
-		<node>Object029</node>
-		<node>Object030</node>
-		<node>ddddddddd007</node>
-		<node>havok025</node>
-		<node>havok026</node>
-		<node>havok005</node>
-		<node>havok006</node>
-		<node>havok027</node>
-		<node>havok022</node>
-		<node>havok002</node>
-		<node>polySurface46</node>
-		<node>havok021</node>
-		<node>Object022</node>
-		<node>Object021</node>
-		<node>Object024</node>
-		<node>Object023</node>
+		<node>n25</node>
+		<node>n22</node>
+		<node>pillar_l1</node>
+		<node>n20</node>
+		<node>n21</node>
+		<node>pillar_r3</node>
+		<node>pillar_r</node>
+		<node>pillar_l2</node>
+		<node>pillar_l</node>
+		<node>wheel_l3</node>
+		<node>n15</node>
+		<node>suspension</node>
+		<node>wheel_l</node>
+		<node>n18</node>
+		<node>n19</node>
+		<node>n16</node>
+		<node>n17</node>
+		<node>n8</node>
+		<node>stand_r2</node>
+		<node>log_l2</node>
+		<node>n34</node>
+		<node>stand_r</node>
+		<node>log_r1</node>
 		<geometry>
 			<vertices>part0a.vertices</vertices>
+			<stream>part0a.uv2</stream>
 			<primitive>part0a.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>n_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_GMM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_AM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_AM.dds</Texture>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_blend.png</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>0</Int>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
 					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.500000 0.470000 0.000000</Vector4>
+					</property>
+					<materialKind>0</materialKind>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_GMM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_AM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_AM.dds</Texture>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_blend.png</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.500000 0.470000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
 					</property>
 					<property>
 						texRandom
@@ -417,70 +460,137 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.003212 0.714173 -0.001192</groupOrigin>
+				<groupOrigin>-0.005638 0.712938 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>ddddddddd004</node>
-		<node>Object020</node>
-		<node>Object032</node>
-		<node>Object033</node>
-		<node>Object019</node>
-		<node>Object031</node>
-		<node>ddddddddd001</node>
-		<node>ddddddddd002</node>
-		<node>Object026</node>
-		<node>Object025</node>
-		<node>ddddddddd003</node>
-		<node>ddddddddd009</node>
-		<node>ddddddddd010</node>
+		<node>n0</node>
+		<node>log_r</node>
+		<node>log_l</node>
+		<node>log_l4</node>
+		<node>n28</node>
+		<node>n26</node>
+		<node>n9</node>
+		<node>n10</node>
+		<node>n32</node>
+		<node>n30</node>
 		<geometry>
 			<vertices>part0b.vertices</vertices>
+			<stream>part0b.uv2</stream>
 			<primitive>part0b.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>n_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_GMM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_AM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_AM.dds</Texture>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_blend.png</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>0</Int>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
 					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.500000 0.470000 0.000000</Vector4>
+					</property>
+					<materialKind>0</materialKind>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_GMM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_AM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_AM.dds</Texture>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_blend.png</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_46_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0053_Telega_Snow/hd_env_UNI_0053_Telega_Snow_03_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.500000 0.470000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
 					</property>
 					<property>
 						texRandom
@@ -495,14 +605,14 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.468089 0.975812 0.006449</groupOrigin>
+				<groupOrigin>0.000001 0.828152 -0.051619</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.657798 -0.036587 -0.786754</min>
-		<max>1.615906 1.464933 0.784371</max>
+		<min>-1.639699 -0.008755 -0.785489</min>
+		<max>1.639701 1.434630 0.785489</max>
 	</boundingBox>
-	<geometrySize>106236</geometrySize>
-	<minUVDensity>0.006986</minUVDensity>
+	<geometrySize>294156</geometrySize>
+	<minUVDensity>0.207993</minUVDensity>
 </root>

@@ -1,6 +1,6 @@
 import logging, math
 from collections import namedtuple
-import BigWorld, CGF, DataLinks, GenericComponents, Math, Vehicular, WWISE, WoT, material_kinds, math_utils
+import BigWorld, CGF, DataLinks, GenericComponents, Math, Vehicular, WWISE, material_kinds, math_utils
 from constants import IS_DEVELOPMENT, IS_EDITOR, IS_UE_EDITOR
 from helpers import DecalMap, dependency
 from items.components import shared_components, component_constants
@@ -569,7 +569,7 @@ def setupTurretRotations(appearance):
 
 
 def createVehicleFilter(typeDescriptor):
-    vehicleFilter = BigWorld.WGVehicleFilter()
+    vehicleFilter = BigWorld.VehicleFilter()
     vehicleFilter.hullLocalPosition = typeDescriptor.chassis.hullPosition
     vehicleFilter.vehicleWidth = typeDescriptor.chassis.topRightCarryingPoint[0] * 2
     vehicleFilter.maxMove = typeDescriptor.physics['speedLimits'][0] * 2.0
@@ -633,10 +633,10 @@ def setupSplineTracks(fashion, vDesc, chassisModel, prereqs, modelsSet):
                 if not chassisModel.isValid():
                     _logger.error('chassisModel is not valid')
                     return
-                track = BigWorld.wg_createSplineTrack(chassisModel, trackDesc.leftDesc, idx, trackDesc.segmentLength, segmentModelLeft, trackDesc.segmentOffset, segment2ModelLeft, trackDesc.segment2Offset, _ROOT_NODE_NAME, trackDesc.atlasUTiles, trackDesc.atlasVTiles, trackDesc.castShadows)
+                track = BigWorld.createSplineTrack(chassisModel, trackDesc.leftDesc, idx, trackDesc.segmentLength, segmentModelLeft, trackDesc.segmentOffset, segment2ModelLeft, trackDesc.segment2Offset, _ROOT_NODE_NAME, trackDesc.atlasUTiles, trackDesc.atlasVTiles, trackDesc.castShadows)
                 if track is not None:
                     leftSpline.append(track)
-                track = BigWorld.wg_createSplineTrack(chassisModel, trackDesc.rightDesc, idx, trackDesc.segmentLength, segmentModelRight, trackDesc.segmentOffset, segment2ModelRight, trackDesc.segment2Offset, _ROOT_NODE_NAME, trackDesc.atlasUTiles, trackDesc.atlasVTiles, trackDesc.castShadows)
+                track = BigWorld.createSplineTrack(chassisModel, trackDesc.rightDesc, idx, trackDesc.segmentLength, segmentModelRight, trackDesc.segmentOffset, segment2ModelRight, trackDesc.segment2Offset, _ROOT_NODE_NAME, trackDesc.atlasUTiles, trackDesc.atlasVTiles, trackDesc.castShadows)
                 if track is not None:
                     rightSpline.append(track)
 
@@ -718,7 +718,7 @@ def assembleDrivetrain(appearance, isPlayerVehicle):
             engineState.physicGearLink = lambda : gearbox.gear
         elif not IS_EDITOR:
             p = BigWorld.player()
-            engineState.physicRPMLink = lambda : WoT.unpackAuxVehiclePhysicsData(p.ownVehicleAuxPhysicsData)[5]
+            engineState.physicRPMLink = lambda : BigWorld.unpackAuxVehiclePhysicsData(p.ownVehicleAuxPhysicsData)[5]
             engineState.physicGearLink = lambda : BigWorld.player().ownVehicleGear
     else:
         engineState.physicRPMLink = None

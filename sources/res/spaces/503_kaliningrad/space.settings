@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<chunkSize>100.000000</chunkSize>
+	<borderMask>borderMask.dds</borderMask>
 	<flora>spaces/503_kaliningrad/flora.xml</flora>
 	<bounds>
 		<minX>-7</minX>
@@ -27,33 +28,28 @@
 		<option>
 			<label>MAX</label>
 			<value>
-				0.8
+				0.6
 				<!--BW_String-->
 			</value>
 		</option>
 		<option>
 			<label>HIGH</label>
 			<value>
-				0.8
+				0.5
 				<!--BW_String-->
 			</value>
 		</option>
 		<option>
 			<label>MEDIUM</label>
 			<value>
-				0.6
+				0.4
 				<!--BW_String-->
 			</value>
-			<switch_distance>50</switch_distance>
-			<second_value>
-				0.8
-				<!--BW_String-->
-			</second_value>
 		</option>
 		<option>
 			<label>LOW</label>
 			<value>
-				0.4
+				0.3
 				<!--BW_String-->
 			</value>
 		</option>

@@ -326,5 +326,5 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
                     visibilityMask = self._defaultHangarSpaceConfig.getVisibilityMask(self.hangarSpace.isPremium)
                 else:
                     visibilityMask = self._sceneSpaceParams[self.currentSceneName].getVisibilityMask()
-                BigWorld.wg_setSpaceItemsVisibilityMask(self.hangarSpace.space.spaceId, visibilityMask)
+                BigWorld.setSpaceItemsVisibilityMask(self.hangarSpace.space.spaceId, visibilityMask)
             return

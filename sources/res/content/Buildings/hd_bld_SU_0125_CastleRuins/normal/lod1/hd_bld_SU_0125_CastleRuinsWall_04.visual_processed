@@ -36,10 +36,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_tile1Tint
 						<Vector4>0.820000 0.820000 0.820000 1.000000</Vector4>
 					</property>
@@ -114,10 +110,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
 					</property>
@@ -167,8 +159,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.536702 -0.005276 -4.861684</min>
-		<max>1.524764 13.299066 0.747299</max>
+		<min>-1.557678 -0.005276 -4.861684</min>
+		<max>1.548846 13.299066 0.834815</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>24910</geometrySize>

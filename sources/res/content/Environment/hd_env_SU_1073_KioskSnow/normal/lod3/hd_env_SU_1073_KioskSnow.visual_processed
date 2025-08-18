@@ -105,15 +105,6 @@
 						<row3>0.000000 0.000000 0.000000</row3>
 					</transform>
 				</node>
-				<node>
-					<identifier>s_ramp</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
 			</node>
 		</node>
 	</node>
@@ -121,9 +112,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -136,16 +126,8 @@
 						<Int>104</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_SU_1073_KioskSnow/hd_env_SU_1073_KioskSnow_BAM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_enableAO
@@ -200,8 +182,17 @@
 				</material>
 				<groupOrigin>0.117316 1.644461 0.000001</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>d1Shape.vertices</vertices>
+			<stream>d1Shape.uv2</stream>
+			<primitive>d1Shape.indices</primitive>
 			<primitiveGroup>
-				2
+				0
 				<material>
 					<identifier>d_wood1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -278,22 +269,13 @@
 				</material>
 				<groupOrigin>0.451222 0.418520 -0.231165</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				3
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<materialKind>0</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>0.360743 0.000892 0.000995</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.930205 -0.294234 -2.802743</min>
-		<max>2.591824 2.966960 2.804733</max>
+		<min>-1.899746 -0.010683 -2.663771</min>
+		<max>2.134378 2.966960 2.663774</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>13010</geometrySize>
-	<minUVDensity>0.005016</minUVDensity>
+	<geometrySize>11134</geometrySize>
+	<minUVDensity>0.005975</minUVDensity>
 </root>

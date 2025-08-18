@@ -9,14 +9,13 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.uv2</stream>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -95,8 +94,16 @@
 				</material>
 				<groupOrigin>0.062431 5.157784 0.151059</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd1.vertices</vertices>
+			<stream>s_nd1.uv2</stream>
+			<primitive>s_nd1.indices</primitive>
 			<primitiveGroup>
-				1
+				0
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -159,10 +166,19 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.098499 5.515903 0.030755</groupOrigin>
+				<groupOrigin>-0.098499 5.515903 0.030756</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd2.vertices</vertices>
+			<stream>s_nd2.uv2</stream>
+			<stream>s_nd2.colour</stream>
+			<primitive>s_nd2.indices</primitive>
 			<primitiveGroup>
-				2
+				0
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -235,8 +251,15 @@
 				</material>
 				<groupOrigin>-0.132795 5.157784 0.002171</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd3.vertices</vertices>
+			<primitive>s_nd3.indices</primitive>
 			<primitiveGroup>
-				3
+				0
 				<material>
 					<identifier>s_nd3</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -267,67 +290,330 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.085737 5.797919 0.072402</groupOrigin>
+				<groupOrigin>-0.085737 6.083370 0.072403</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd4.vertices</vertices>
+			<stream>s_nd4.uv2</stream>
+			<stream>s_nd4.uv3</stream>
+			<primitive>s_nd4.indices</primitive>
 			<primitiveGroup>
-				4
+				0
 				<material>
 					<identifier>s_nd4</identifier>
-					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<fx>shaders/custom/interior_mapping_glass.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>255</collisionFlags>
-					<property>
-						dirtAlbedoMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_01_AM.dds</Texture>
-					</property>
-					<property>
-						glassMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_01_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.217870 5.409108 0.194137</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				5
-				<material>
-					<identifier>s_nd5</identifier>
-					<fx>shaders/custom/interior_mapping.fx</fx>
-					<materialKind>111</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						g_albedoMap
-						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_AM.dds</Texture>
-					</property>
 					<property>
 						g_dirtMap
-						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_PM.dds</Texture>
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_04_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtMaterialParams
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtPlanksTint
+						<Vector4>0.498039 0.372549 0.372549 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissionMultipliers
+						<Vector4>0.000000 3.000000 0.000000 1.500000</Vector4>
+					</property>
+					<property>
+						g_emissionTint
+						<Vector4>1.000000 0.858824 0.698039 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTile
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_glassAlbedoMap
+						<Texture>content/UniversalTextures/GlassTint/Glass_tint_sea.dds</Texture>
+					</property>
+					<property>
+						g_glassMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_04_GMM.dds</Texture>
+					</property>
+					<property>
+						g_innerSide
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_interiorAlbedoMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_IAM.dds</Texture>
+					</property>
+					<property>
+						g_interiorEmissionMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_IEM.dds</Texture>
+					</property>
+					<property>
+						g_lodBlurDistance
+						<Vector4>100.000000 200.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_LumMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_LM.dds</Texture>
+					</property>
+					<property>
+						g_normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_04_ANM.dds</Texture>
+					</property>
+					<property>
+						g_parallaxParams
+						<Vector4>0.150000 1.100000 5.000000 0.750000</Vector4>
 					</property>
 					<property>
 						g_platesMap
-						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_DM.dds</Texture>
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_Curtains_AM.dds</Texture>
 					</property>
 					<property>
-						g_platesSelfIlluminationMap
-						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_PM.dds</Texture>
+						g_platesMaterialParams
+						<Vector4>0.000000 0.750000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_selfIllumDeferredMultipliers
-						<Vector4>-1.000000 -1.000000 6.800000 0.000000</Vector4>
+						g_platesUVScale
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_refractionIOR
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_tileMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_Frost_AM.dds</Texture>
+					</property>
+					<property>
+						g_tileNormal
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_Frost_ANM.dds</Texture>
+					</property>
+					<property>
+						g_tileParams
+						<Vector4>5.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_disableSpecularOnBakeLod
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_emissionTintFwd
+						<Vector4>0.901961 0.725490 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_glassColorFwd
+						<Vector4>0.850980 0.827451 0.784314 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.293370 5.273422 0.178556</groupOrigin>
+				<groupOrigin>-0.298428 5.432745 0.194566</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd5.vertices</vertices>
+			<stream>s_nd5.uv2</stream>
+			<stream>s_nd5.uv3</stream>
+			<primitive>s_nd5.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd5</identifier>
+					<fx>shaders/custom/interior_mapping_glass.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						g_dirtMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_05_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtMaterialParams
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtPlanksTint
+						<Vector4>0.498039 0.372549 0.372549 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissionMultipliers
+						<Vector4>0.000000 3.000000 0.000000 1.500000</Vector4>
+					</property>
+					<property>
+						g_emissionTint
+						<Vector4>1.000000 0.858824 0.698039 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTile
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_glassAlbedoMap
+						<Texture>content/UniversalTextures/GlassTint/Glass_tint_sea.dds</Texture>
+					</property>
+					<property>
+						g_glassMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_05_GMM.dds</Texture>
+					</property>
+					<property>
+						g_innerSide
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_interiorAlbedoMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_IAM.dds</Texture>
+					</property>
+					<property>
+						g_interiorEmissionMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_IEM.dds</Texture>
+					</property>
+					<property>
+						g_lodBlurDistance
+						<Vector4>100.000000 200.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_LumMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_LM.dds</Texture>
+					</property>
+					<property>
+						g_normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_04_ANM.dds</Texture>
+					</property>
+					<property>
+						g_parallaxParams
+						<Vector4>0.140000 1.620000 45.000000 0.750000</Vector4>
+					</property>
+					<property>
+						g_platesMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_Curtains_AM.dds</Texture>
+					</property>
+					<property>
+						g_platesMaterialParams
+						<Vector4>0.000000 0.750000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_platesUVScale
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_refractionIOR
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_tileMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_Frost_AM.dds</Texture>
+					</property>
+					<property>
+						g_tileNormal
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_Frost_ANM.dds</Texture>
+					</property>
+					<property>
+						g_tileParams
+						<Vector4>5.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_disableSpecularOnBakeLod
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_emissionTintFwd
+						<Vector4>0.901961 0.725490 0.521569 1.000000</Vector4>
+					</property>
+					<property>
+						g_glassColorFwd
+						<Vector4>0.850980 0.827451 0.784314 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.183537 4.371860 4.301014</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd6.vertices</vertices>
+			<stream>s_nd6.uv2</stream>
+			<primitive>s_nd6.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd6</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/custom/glow_animated.fx</fx>
+					<property>
+						destBlend
+						<Int>3</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_freshnelColor
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_freshnelParamsPacked
+						<Vector4>1.100000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_glowColorMasked
+						<Vector4>1.000000 1.000000 1.000000 0.800000</Vector4>
+					</property>
+					<property>
+						g_glowColorProcedural
+						<Vector4>1.000000 0.674510 0.301961 0.800000</Vector4>
+					</property>
+					<property>
+						g_lightCenterOffsetAndMult
+						<Vector4>0.000000 3.170000 0.000000 0.100000</Vector4>
+					</property>
+					<property>
+						g_lightMultipliersPacked
+						<Vector4>1.000000 0.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_lightMultWeatherDependent
+						<Float>30.000000</Float>
+					</property>
+					<property>
+						g_linZOffset
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_pointLightingParamsPacked
+						<Vector4>10.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useFreshnel
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useMask1
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useMask2
+						<Bool>false</Bool>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+				</material>
+				<groupOrigin>-1.156599 2.731566 -0.843987</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-7.865640 -0.510141 -7.496141</min>
-		<max>7.680784 12.105977 7.557651</max>
+		<min>-7.865640 -0.510142 -7.496140</min>
+		<max>7.679560 12.105977 7.557651</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>641484</geometrySize>
+	<geometrySize>545624</geometrySize>
 	<minUVDensity>0.002812</minUVDensity>
 </root>

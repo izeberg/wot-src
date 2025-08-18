@@ -50,7 +50,7 @@
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_flat_painted_512_AM.dds</Texture>
@@ -190,7 +190,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_Bright_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.013041 3.669143 -3.730658</groupOrigin>
+				<groupOrigin>0.013041 3.675266 -3.729750</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -199,6 +199,6 @@
 		<max>13.038580 5.820886 -0.620824</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>146688</geometrySize>
+	<geometrySize>123852</geometrySize>
 	<minUVDensity>0.128180</minUVDensity>
 </root>

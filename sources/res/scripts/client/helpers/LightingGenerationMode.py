@@ -1,4 +1,4 @@
-import sys, math, BigWorld, GUI, Keys, Math, ResMgr, WWISE
+import sys, math, BigWorld, GUI, Keys, Math, ResMgr
 from debug_utils import LOG_DEBUG, LOG_ERROR
 import game_mode_emulator
 g_lightGenModeEnabled = False
@@ -171,8 +171,6 @@ def adjustFOV(diff):
     newFov = BigWorld.projection().fov + diff
     newFov = min(max(newFov, FOV_MIN), FOV_MAX)
     BigWorld.projection().rampFov(newFov, 0.1)
-    if WWISE.enabled:
-        WWISE.WG_loadBanks('', False)
 
 
 def handleKeyEvent(event):

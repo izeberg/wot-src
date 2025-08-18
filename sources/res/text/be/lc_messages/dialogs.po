@@ -569,8 +569,8 @@ msgstr "Скасаваць"
 
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
-"Купить Премиум аккаунт на %(days)s д за %(gold)s золота?\n"
-" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Премиум аккаунт стандартным способом.%(tagClose)s"
+"Купить Танковый премиум аккаунт на %(days)s д за %(gold)s золота?\n"
+" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Танковый премиум аккаунт стандартным способом.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купіць"
@@ -1094,6 +1094,19 @@ msgstr "Агулам"
 msgid "confirmModuleDialog/totalLabel"
 msgstr "Агулам:"
 
+msgid "confirmReward/cancel"
+msgstr "Скасаваць"
+
+msgid "confirmReward/message"
+msgstr ""
+" Если имущество получено из портала Инженера, вы не сможете его заменить."
+
+msgid "confirmReward/submit"
+msgstr "Забрать"
+
+msgid "confirmReward/title"
+msgstr "Забрать награду"
+
 msgid "confirmUnlock/cancel"
 msgstr "Не"
 
@@ -1451,53 +1464,52 @@ msgstr "Злучэнне спынена"
 
 msgid "dismissOrRestore/dismiss/capcha/title/limitError"
 msgstr ""
-"Для совершения операции введите количество членов экипажа, %(highlight)s"
+"Для выканання аперацыі ўвядзіце колькасць членаў экіпажа, %(highlight)s"
 
 msgid "dismissOrRestore/dismiss/capcha/title/normal"
 msgstr ""
-"Для совершения операции введите количество членов экипажа с %(highlight)s"
+"Для выканання аперацыі ўвядзіце колькасць членаў экіпажа з %(highlight)s"
 
 msgid "dismissOrRestore/dismiss/capcha/titleHighlight/limitError"
-msgstr ""
-"которые будут заменены %(keyword)s в буфере мобилизованных (%(count)s)"
+msgstr "якія будуць заменены %(keyword)s у буферы мабілізаваных (%(count)s)"
 
 msgid "dismissOrRestore/dismiss/capcha/titleHighlight/normal"
-msgstr "возможностью восстановления (%(count)s)"
+msgstr "магчымасць аднаўлення (%(count)s)"
 
 msgid "dismissOrRestore/dismiss/capcha/titleHighlightKeyword"
-msgstr "безвозвратно"
+msgstr "незваротна"
 
 msgid "dismissOrRestore/error/text"
-msgstr "Вы ввели неправильное значение!"
+msgstr "Вы ўвялі няправільнае значэнне!"
 
 msgid "dismissOrRestore/header/dismiss"
-msgstr "Демобилизовать выбранных членов экипажа?"
+msgstr "Дэмабілізаваць выбраных членаў экіпажа?"
 
 msgid "dismissOrRestore/header/restore"
-msgstr "Восстановить выбранных членов экипажа?"
+msgstr "Аднавіць выбраных членаў экіпажа?"
 
 msgid "dismissOrRestore/limitError/error"
 msgid_plural "error"
 msgstr[0] ""
-"Превышен лимит буфера демобилизованных: %(count)s член экипажа будет заменён"
-" безвозвратно."
+"Перавышаны ліміт буфера дэмабілізаваных: %(count)s член экіпажа будзе "
+"заменены незваротна."
 msgstr[1] ""
-"Превышен лимит буфера демобилизованных: %(count)s члена экипажа будут "
-"заменены безвозвратно."
+"Перавышаны ліміт буфера дэмабілізаваных: %(count)s члены экіпажа будуць "
+"заменены незваротна."
 msgstr[2] ""
-"Превышен лимит буфера демобилизованных: %(count)s членов экипажа будут "
-"заменены безвозвратно."
+"Перавышаны ліміт буфера дэмабілізаваных: %(count)s членаў экіпажа будуць "
+"заменены незваротна."
 
 msgid "dismissOrRestore/restore/currency"
-msgstr "Итоговая стоимость:"
+msgstr "Канчатковы кошт:"
 
 msgid "dismissOrRestore/selectTankmans/dismiss"
 msgstr ""
-"Всего выбрано членов экипажа для демобилизации: %(total)s (из них с "
-"возможностью восстановления %(restorable)s)"
+"Усяго выбрана членаў экіпажа для дэмабілізацыі: %(total)s (з іх з магчымасцю"
+" аднаўлення %(restorable)s)"
 
 msgid "dismissOrRestore/selectTankmans/restore"
-msgstr "Всего выбрано членов экипажа для восстановления: %(count)s"
+msgstr "Усяго выбрана членаў экіпажа для аднаўлення: %(count)s"
 
 msgid "dismissTankman/buttons/dismiss"
 msgstr "Дэмабілізаваць"
@@ -1507,11 +1519,11 @@ msgstr "Аднавіць"
 
 msgid "dismissTankman/description/time"
 msgstr ""
-"Выбранный член экипажа будет демобилизован. Вы можете вернуть его в строй в "
-"течение %(time)s."
+"Выбраны член экіпажа будзе дэмабілізаваны. Вы можаце вярнуць яго ў строй на "
+"працягу %(time)s."
 
 msgid "dismissTankman/description/timeText"
-msgstr "%(time)s д"
+msgstr "%(time)s д."
 
 msgid "dismissTankman/header"
 msgstr "Дэмабілізацыя танкіста"
@@ -2508,10 +2520,9 @@ msgstr ""
 
 msgid "punishmentWindow/message/penalty"
 msgstr ""
-"Шаноўны гулец, за парушэнне вамі правіл гульні на мапе %(arenaName)s у %(time)s, а менавіта артыкула «%(reason)s», на вас накладзена дысцыплінарнае спагнанне. Паказаны ніжэй штраф з'яўляецца крайняй мерай пакарання.\n"
+"Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», к вам применено дисциплинарное взыскание. Указанный ниже штраф является крайней мерой наказания.\n"
 "\n"
-"Прынятыя меры:\n"
-" "
+"Принятые меры:"
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
@@ -2832,7 +2843,7 @@ msgid "recruitWindow/menuEmptyRow"
 msgstr "Не выбрана"
 
 msgid "recruitWindow/nation"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "recruitWindow/specialization"
 msgstr "Спецыяльнасць"
@@ -2986,6 +2997,18 @@ msgstr "Працягнуць"
 msgid "reportBug/title"
 msgstr "Пераход на форум гульні"
 
+msgid "rerollReward/cancel"
+msgstr "Скасаваць"
+
+msgid "rerollReward/confirm"
+msgstr "Замяніць"
+
+msgid "rerollReward/message"
+msgstr "Это обойдётся в"
+
+msgid "rerollReward/title"
+msgstr "Желаете заменить предлагаемую награду?"
+
 msgid "resetGraphics/cancel"
 msgstr "Працягнуць"
 
@@ -3039,7 +3062,7 @@ msgid "retrain/cancel"
 msgstr "Скасаваць"
 
 msgid "retrain/header"
-msgstr "Выберите способ переобучения"
+msgstr "Выберыце спосаб перавучвання"
 
 msgid "retrain/massive/tankmenCount"
 msgstr ""
@@ -3064,7 +3087,7 @@ msgid "retrain/single/checkBoxLabel"
 msgstr "Размясціць у гэтай машыне"
 
 msgid "retrain/submit"
-msgstr "Выбрать"
+msgstr "Выбраць"
 
 msgid "retrain/title/massive"
 msgstr "Перавучыць экіпаж на %(vehicleName)s?"
@@ -3141,19 +3164,19 @@ msgid "skinApplyDialog/button/submit"
 msgstr "Прымяніць"
 
 msgid "skinApplyDialog/warning"
-msgstr "Этот образ имеет неизменяемые имя и фамилию"
+msgstr "Гэты вобраз мае нязменныя імя і прозвішча"
 
 msgid "skinChangeDialog/button/submit"
 msgstr "Змяніць"
 
 msgid "skinChangeDialog/text"
-msgstr "Внешность члена экипажа будет изменена."
+msgstr "Выгляд члена экіпажа будзе зменены."
 
 msgid "skinChangeDialog/title"
-msgstr "Сменить внешность?"
+msgstr "Змяніць выгляд?"
 
 msgid "skinChangeDialog/warning"
-msgstr "Этот образ имеет неизменяемые имя и фамилию"
+msgstr "Гэты вобраз мае нязменныя імя і прозвішча"
 
 msgid "soundModeInvalid/cancel"
 msgstr "Скасаваць"
@@ -3424,7 +3447,7 @@ msgid "tankmanRetraining/cancel"
 msgstr "Скасаваць"
 
 msgid "tankmanRetraining/submit"
-msgstr "Выбрать"
+msgstr "Выбраць"
 
 msgid "tradeInConfirmation/cancel"
 msgstr "Скасаваць"
@@ -3467,7 +3490,7 @@ msgid "tradeInPopover/sorting/nation/body"
 msgstr "Паказвае дзяржавы выбраных машын."
 
 msgid "tradeInPopover/sorting/nation/header"
-msgstr "Дзяржава"
+msgstr "Нацыя"
 
 msgid "tradeInPopover/sorting/saving/body"
 msgstr "Паказвае эканомію пры абмене выбраных машын"
@@ -3783,6 +3806,21 @@ msgstr ""
 
 msgid "waterQualityNotPossible/title"
 msgstr "Якасць вады недаступная"
+
+msgid "white_tiger/deserter/cancel"
+msgstr "Скасаваць"
+
+msgid "white_tiger/deserter/message"
+msgstr ""
+"Бегство с поля боя до окончания сражения расценивается как дезертирство, "
+"влечёт применение дисциплинарного взыскания и лишение прогресса по текущим "
+"задачам. Одумайтесь!"
+
+msgid "white_tiger/deserter/submit"
+msgstr "Уцячы"
+
+msgid "white_tiger/deserter/title"
+msgstr "Пакінуць бой?"
 
 msgid "wotPlusRental/cancel"
 msgstr "Скасаваць"

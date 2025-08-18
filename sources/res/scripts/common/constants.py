@@ -925,15 +925,17 @@ SPA_RESTR_NAME_TO_RESTR_TYPE = {'game': RESTRICTION_TYPE.BAN,
    'chat': RESTRICTION_TYPE.CHAT_BAN, 
    'clan': RESTRICTION_TYPE.CLAN}
 RESTR_TYPE_TO_SPA_NAME = dict((x[1], x[0]) for x in SPA_RESTR_NAME_TO_RESTR_TYPE.iteritems())
+CURRENT_GAME_ID = '%st' % ('wo' if CURRENT_REALM else 'm')
+GAME_ROOT_DIR_NAME = CURRENT_GAME_ID
 
 class SPA_ATTRS:
-    ANONYM_RESTRICTED = '/wot/game/anonym_restricted/'
+    ANONYM_RESTRICTED = '/%s/game/anonym_restricted/' % CURRENT_GAME_ID
     GOLFISH_BONUS_APPLIED = '/common/goldfish_bonus_applied/'
-    BOOTCAMP_DISABLED = '/wot/game/bootcamp_disabled/'
-    LOGGING_ENABLED = '/wot/game/logging_enabled/'
-    BOOTCAMP_VIDEO_DISABLED = '/wot/game/bc_video_disabled/'
-    STEAM_ALLOW = '/wot/steam/allow/'
-    RSS = '/wot/game/service/rss/'
+    BOOTCAMP_DISABLED = '/%s/game/bootcamp_disabled/' % CURRENT_GAME_ID
+    LOGGING_ENABLED = '/%s/game/logging_enabled/' % CURRENT_GAME_ID
+    BOOTCAMP_VIDEO_DISABLED = '/%s/game/bc_video_disabled/' % CURRENT_GAME_ID
+    STEAM_ALLOW = '/%s/steam/allow/' % CURRENT_GAME_ID
+    RSS = '/%s/game/service/rss/' % CURRENT_GAME_ID
     USER_COUNTRY = 'user_stated_country'
 
     @staticmethod
@@ -1167,6 +1169,8 @@ class ATTACK_REASON(object):
     STATIC_DEATH_ZONE = 'static_deathzone'
     CGF_WORLD = 'cgf_world'
     AUTOSHOOT = 'autoshoot'
+    CIRCUIT_OVERLOAD = 'circuitOverload'
+    ABILITY_SHELL = 'ability_shell'
     NONE = 'none'
 
     @classmethod
@@ -1186,7 +1190,7 @@ ATTACK_REASONS = (
  ATTACK_REASON.THUNDER_STRIKE, ATTACK_REASON.FIRE_CIRCLE, ATTACK_REASON.CLING_BRANDER,
  ATTACK_REASON.CLING_BRANDER_RAM, ATTACK_REASON.BRANDER_RAM,
  ATTACK_REASON.FORT_ARTILLERY_EQ, ATTACK_REASON.STATIC_DEATH_ZONE, ATTACK_REASON.AUTOSHOOT,
- ATTACK_REASON.CGF_WORLD)
+ ATTACK_REASON.CIRCUIT_OVERLOAD, ATTACK_REASON.CGF_WORLD, ATTACK_REASON.ABILITY_SHELL)
 ATTACK_REASON_INDICES = dict((value, index) for index, value in enumerate(ATTACK_REASONS))
 BOT_RAM_REASONS = (
  ATTACK_REASON.BRANDER_RAM, ATTACK_REASON.CLING_BRANDER_RAM)
@@ -1264,7 +1268,8 @@ DAMAGE_INFO_CODES = ('DEVICE_CRITICAL', 'DEVICE_DESTROYED', 'TANKMAN_HIT', 'DEVI
                      'DEATH_FROM_ARTILLERY_PROTECTION', 'DEATH_FROM_ARTILLERY_SECTOR',
                      'DEATH_FROM_BOMBER', 'DEATH_FROM_RECOVERY', 'DEATH_FROM_KAMIKAZE',
                      'DEATH_FROM_FIRE_CIRCLE', 'DEATH_FROM_THUNDER_STRIKE', 'DEATH_FROM_CORRODING_SHOT',
-                     'DEATH_FROM_CLING_BRANDER')
+                     'DEATH_FROM_CLING_BRANDER', 'INCREASE_PLASMA_COUNT', 'DECREASE_PLASMA_COUNT',
+                     'STUN_AREA_APPLIED', 'STUN_AREA_STOP')
 
 class IGR_TYPE:
     NONE = 0
@@ -1483,16 +1488,16 @@ class INVOICE_EMITTER:
     CN_GIFT = 6
     CN_BUY = 7
     ACTION_APPLIER = 9
-    WG = 10
-    WGCW = 11
+    DEPRECATED_PLATFORM_EMITTER = 10
+    GLOBAL_MAP = 11
     PSS = 12
-    WOTRP = 13
-    WOTRP_CASHBACK = 14
+    MTRP = 13
+    MTRP_CASHBACK = 14
     NEGATIVE = (
-     BACKYARD, COMMUNITY, PORTAL, DEVELOPMENT, CN_GIFT, CN_BUY, WG, WGCW, PSS, WOTRP)
+     BACKYARD, COMMUNITY, PORTAL, DEVELOPMENT, CN_GIFT, CN_BUY, GLOBAL_MAP, PSS, MTRP)
     RANGE = (
      PAYMENT_SYSTEM, BACKYARD, COMMUNITY, PORTAL, DEVELOPMENT,
-     CN_GIFT, CN_BUY, ACTION_APPLIER, WG, WGCW, PSS, WOTRP, WOTRP_CASHBACK)
+     CN_GIFT, CN_BUY, ACTION_APPLIER, DEPRECATED_PLATFORM_EMITTER, GLOBAL_MAP, PSS, MTRP, MTRP_CASHBACK)
 
 
 class INVOICE_ASSET:
@@ -1651,6 +1656,8 @@ class REQUEST_COOLDOWN:
     RUN_QUEST = 1.0
     PAWN_FREE_AWARD_LIST = 1.0
     LOOTBOX = 1.0
+    LOOTBOX_REROLL = 1.0
+    LOOTBOX_RECORDS = 1.0
     BADGES = 2.0
     CREW_SKINS = 0.3
     BPF_COMMAND = 1.0
@@ -2060,7 +2067,6 @@ INT_USER_SETTINGS_KEYS = {USER_SERVER_SETTINGS.VERSION: 'Settings version',
    31001: 'Armory Yard progression', 
    31002: 'Versus AI carousel filter 1', 
    31003: 'Versus AI carousel filter 2'}
-CURRENT_GAME_ID = '%st' % ('wo' if CURRENT_REALM else 'm')
 
 class TOKEN_TYPE:
     XMPPCS = 1
@@ -2138,13 +2144,16 @@ class FAIRPLAY_VIOLATIONS:
     COMP7_DESERTER = 'comp7_deserter'
     BATTLEROYALE_DESERTER = 'battleroyale_deserter'
     BATTLEROYALE_AFK = 'battleroyale_afk'
+    WT_DESERTER = 'wt_deserter'
+    WT_AFK = 'wt_afk'
 
 
 FAIRPLAY_VIOLATIONS_NAMES = (
  FAIRPLAY_VIOLATIONS.DESERTER, FAIRPLAY_VIOLATIONS.SUICIDE, FAIRPLAY_VIOLATIONS.AFK,
  FAIRPLAY_VIOLATIONS.EVENT_DESERTER, FAIRPLAY_VIOLATIONS.EVENT_AFK,
  FAIRPLAY_VIOLATIONS.EPIC_DESERTER, FAIRPLAY_VIOLATIONS.COMP7_DESERTER,
- FAIRPLAY_VIOLATIONS.BATTLEROYALE_DESERTER, FAIRPLAY_VIOLATIONS.BATTLEROYALE_AFK)
+ FAIRPLAY_VIOLATIONS.BATTLEROYALE_DESERTER, FAIRPLAY_VIOLATIONS.BATTLEROYALE_AFK,
+ FAIRPLAY_VIOLATIONS.WT_AFK, FAIRPLAY_VIOLATIONS.WT_DESERTER)
 FAIRPLAY_VIOLATIONS_MASKS = {name:1 << index for index, name in enumerate(FAIRPLAY_VIOLATIONS_NAMES)}
 
 class INVALID_CLIENT_STATS:
@@ -2455,8 +2464,8 @@ class VISIBILITY:
     MIN_RADIUS = 50.0
 
 
-VEHICLE_ATTRS_TO_SYNC = frozenset(['circularVisionRadius', 'gun/piercing'])
-VEHICLE_ATTRS_TO_SYNC_ALIASES = {'gun/piercing': 'gunPiercing'}
+VEHICLE_ATTRS_TO_SYNC = frozenset(['circularVisionRadius', 'gun/piercing', 'gun/canShoot'])
+VEHICLE_ATTRS_TO_SYNC_ALIASES = {'gun/piercing': 'gunPiercing', 'gun/canShoot': 'gunCanShoot'}
 
 class OBSTACLE_KIND:
     CHUNK_DESTRUCTIBLE = 1
@@ -2474,7 +2483,6 @@ class SHELL_TYPES(object):
     ARMOR_PIERCING_FSDS = 'ARMOR_PIERCING_FSDS'
     SMOKE = 'SMOKE'
     FLAME = 'FLAME'
-    DELAYED_HE = 'DELAYED_HE'
 
 
 HAS_EXPLOSION_EFFECT = (
@@ -2485,7 +2493,7 @@ SHELL_TYPES_LIST = (
  SHELL_TYPES.ARMOR_PIERCING, SHELL_TYPES.ARMOR_PIERCING_HE,
  SHELL_TYPES.ARMOR_PIERCING_CR, SHELL_TYPES.SMOKE,
  SHELL_TYPES.ARMOR_PIERCING_FSDS,
- SHELL_TYPES.FLAME, SHELL_TYPES.DELAYED_HE)
+ SHELL_TYPES.FLAME)
 BATTLE_RESULT_WAITING_TIMEOUT = 0.1
 BATTLE_RESULTS_MAXIMUM_CACHE_SIZE = 3
 SHELL_TYPES_INDICES = dict((value, index) for index, value in enumerate(SHELL_TYPES_LIST))
@@ -2496,7 +2504,6 @@ class StunTypes(enum.IntEnum):
     DEFAULT = 1
     FLAME = 2
     BULLET = 3
-    ARTILLERY_REWORK = 4
 
 
 AVAILABLE_STUN_TYPES_NAMES = [ key for key, value in StunTypes.__members__.iteritems() if value > 0 ]
@@ -2518,7 +2525,6 @@ class BATTLE_LOG_SHELL_TYPES(enum.IntEnum):
     HE_LEGACY_NO_STUN = 7
     FLAME = 8
     ARMOR_PIERCING_FSDS = 9
-    DELAYED_HE = 10
 
     @classmethod
     def getType(cls, shellDescr):
@@ -2731,10 +2737,12 @@ class BotNamingType(object):
     CREW_MEMBER = 1
     VEHICLE_MODEL = 2
     CUSTOM = 3
+    LABEL = 4
     DEFAULT = CREW_MEMBER
     _parseDict = {'crew': CREW_MEMBER, 
        'vehicle': VEHICLE_MODEL, 
        'custom': CUSTOM, 
+       'label': LABEL, 
        'default': DEFAULT}
 
     @classmethod
@@ -3147,11 +3155,13 @@ class DamageAbsorptionTypes(object):
     FRAGMENTS = 0
     BLAST = 1
     SPALLS = 2
+    NONE = 3
 
 
 DamageAbsorptionLabelToType = {'FRAGMENTS': DamageAbsorptionTypes.FRAGMENTS, 
    'BLAST': DamageAbsorptionTypes.BLAST, 
-   'SPALLS': DamageAbsorptionTypes.SPALLS}
+   'SPALLS': DamageAbsorptionTypes.SPALLS, 
+   'NONE': DamageAbsorptionTypes.NONE}
 DamageAbsorptionTypeToLabel = dict((type, label) for label, type in DamageAbsorptionLabelToType.items())
 EQUIPMENT_COOLDOWN_MOD_SUFFIX = 'CooldownMod'
 CHANCE_TO_HIT_SUFFIX_FACTOR = 'ChanceToHitDeviceMod'
@@ -3373,6 +3383,7 @@ class BuffDisplayedState(enum.IntEnum):
 
 class EntityCaptured(object):
     POI_CAPTURABLE = 'poiCapturable'
+    WT_GENERATOR = 'captureGenerator'
 
 
 class VehicleSelectionPlayerStatus(object):
@@ -3438,6 +3449,8 @@ class MarkerItem(object):
     POLYGONAL_ZONE = 2
     STATIC_DEATH_ZONE = 3
     STATIC_DEATH_ZONE_PROXIMITY = 4
+    GEN_ON = 5
+    GEN_OFF = 6
 
 
 class DROP_SKILL_OPTIONS(object):
@@ -3509,8 +3522,3 @@ class UNIQUE_UNLOCK_FEATURE_NAMES:
 
 ALL_EVENT_TYPES_FOR_BONUSES = 'all'
 EXTENSIONS_BONUSES = {}
-
-class ArtilleryZoneType:
-    EXPLOSION = 1
-    SHOT = 2
-    FRIENDLY = 3

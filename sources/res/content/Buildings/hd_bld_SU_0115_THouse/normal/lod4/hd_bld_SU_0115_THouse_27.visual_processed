@@ -10,33 +10,32 @@
 		</transform>
 	</node>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_27_BAM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_emissionStrength
+						<Vector4>3.200000 1.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
+						g_simpleEmissionColor
+						<Vector4>0.600000 0.494118 0.364706 0.000000</Vector4>
 					</property>
 					<property>
 						metallicGlossMap
@@ -47,15 +46,14 @@
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_27_BANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-3.235512 9.559333 -3.658987</groupOrigin>
+				<groupOrigin>-3.235512 9.559335 -3.658982</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-13.916951 -0.749486 -14.217187</min>
-		<max>7.291133 19.953938 6.818893</max>
+		<min>-13.762156 -0.745973 -14.136859</min>
+		<max>7.291132 19.864643 6.818895</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>27986</geometrySize>
+	<geometrySize>28434</geometrySize>
 	<minUVDensity>0.000178</minUVDensity>
 </root>

@@ -378,9 +378,6 @@ msgstr "БОПС"
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "ОФ"
 
-msgid "damageLog/shellType/DELAYED_HE"
-msgstr "ОФ"
-
 msgid "damageLog/shellType/FLAME"
 msgstr "ОС"
 
@@ -747,6 +744,9 @@ msgstr "Цель защищена"
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захвачена"
 
+msgid "efficiencyRibbons/healthAdded"
+msgstr "Машина отремонтирована"
+
 msgid "efficiencyRibbons/kill"
 msgstr "Уничтожил"
 
@@ -806,6 +806,9 @@ msgstr "Машина оставлена"
 
 msgid "efficiencyRibbons/worldCollision"
 msgstr "Урон от падения"
+
+msgid "efficiencyRibbons/wtReceivedCircuitOverload"
+msgstr "Урон электричеством"
 
 msgid "epic_players_panel/state/hidden/body"
 msgstr "Скрыть панели команд."
@@ -1573,6 +1576,15 @@ msgstr "База%s противника захвачена!"
 
 msgid "player_messages/enemy_team_name"
 msgstr "Противник"
+
+msgid "player_messages/equipment/wtEvent/healthAtFullHP"
+msgstr "[%(name)s] Ремонт не требуется: повреждений нет."
+
+msgid "player_messages/equipment/wtEvent/hunterAbilitiesDisabled"
+msgstr "Недоступно: машина обесточена."
+
+msgid "player_messages/equipment/wtEvent/noActiveShieldOnBoss"
+msgstr "Способность недоступна без активного щита."
 
 msgid "player_messages/poi_equipment_used_by_ally"
 msgstr "Союзник %(name)s применил тактический навык «%(equipment)s»"
@@ -2765,9 +2777,6 @@ msgstr "%(caliber)s мм БОПС %(userString)s"
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s мм бронебойный каморный снаряд %(userString)s"
 
-msgid "shells_kinds/DELAYED_HE"
-msgstr "%(caliber)s мм снаряд с задержкой взрывателя %(userString)s"
-
 msgid "shells_kinds/FLAME"
 msgstr "Огнемётная смесь %(userString)s"
 
@@ -2785,9 +2794,6 @@ msgstr "Урон в секунду: %(value)s ед."
 
 msgid "shells_kinds/params/damageRange"
 msgstr "Урон снаряда: %(value)s ед."
-
-msgid "shells_kinds/params/explosionDelay"
-msgstr "Таймер детонации: %(value)s с"
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радиус поражения: %(value)s м"
@@ -3248,3 +3254,15 @@ msgstr "Тактический навык «%(equipment)s» применён!"
 
 msgid "warning_zone/indicator"
 msgstr "Осторожно! Вы рядом с опасной зоной."
+
+msgid "wt_vehicle_messages/DECREASE_PLASMA_COUNT"
+msgstr "Заряд плазмы утерян."
+
+msgid "wt_vehicle_messages/INCREASE_PLASMA_COUNT"
+msgstr "Заряд плазмы получен"
+
+msgid "wt_vehicle_messages/STUN_AREA_APPLIED"
+msgstr "Машина обесточена способностью Ваффентрагера «Электромагнитная сеть»!"
+
+msgid "wt_vehicle_messages/STUN_AREA_STOPPED"
+msgstr "Напряжение в машине восстановлено."

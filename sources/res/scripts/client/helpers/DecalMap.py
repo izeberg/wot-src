@@ -19,10 +19,10 @@ class DecalMap(object):
             return
         try:
             for group in self.__cfg['groups'].items():
-                BigWorld.wg_addDecalGroup(group[0], group[1]['lifeTime'] * scaleFactor, group[1]['trianglesCount'] * scaleFactor)
+                BigWorld.addDecalGroup(group[0], group[1]['lifeTime'] * scaleFactor, group[1]['trianglesCount'] * scaleFactor)
 
             for tex in self.__cfg['textures'].items():
-                index = BigWorld.wg_decalTextureIndex(tex[1])
+                index = BigWorld.decalTextureIndex(tex[1])
                 if index == -1:
                     LOG_ERROR("texture '%s' is not exist or to more textures added to the texture atlas.Max textures count is 16." % tex[1])
                 else:
@@ -90,7 +90,7 @@ class DecalMap(object):
             for sMatId in dataSec['scales'].values():
                 scaleU = _readFloat(sMatId, 'scaleU', 1, 2, 1)
                 for matKind in material_kinds.EFFECT_MATERIAL_IDS_BY_NAMES[sMatId.name]:
-                    BigWorld.wg_addMatkindScaleU(sMatId.name, matKind, scaleU)
+                    BigWorld.addMatkindScaleU(sMatId.name, matKind, scaleU)
 
             for dsTexSet in dataSec['textureSets'].values():
                 ts = {}
@@ -103,7 +103,7 @@ class DecalMap(object):
                     ts[dsMaterial.name] = tsMaterial
                     for dsTexture in dsMaterial.values():
                         texName = dsMaterial.readString(dsTexture.name)
-                        texIndex = BigWorld.wg_traceTextureIndex(texName)
+                        texIndex = BigWorld.traceTextureIndex(texName)
                         self.__texMap[texName] = texIndex
                         textListIndex = _DIF_TEXT
                         if dsTexture.name == 'ANM':

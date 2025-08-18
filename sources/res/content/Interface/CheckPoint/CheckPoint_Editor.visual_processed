@@ -21,7 +21,7 @@
 					<identifier>s_wall_1</identifier>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
-					<fx>shaders/controlPoint/wg_controlPointRadius.fx</fx>
+					<fx>shaders/controlPoint/controlPointRadius.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Interface/CheckPoint/circle.dds</Texture>

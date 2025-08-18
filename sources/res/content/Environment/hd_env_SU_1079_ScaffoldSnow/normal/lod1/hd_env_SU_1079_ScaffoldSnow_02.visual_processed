@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_env_SU_1019_Scaffold_02</identifier>
+			<identifier>hd_env_SU_1079_ScaffoldSnow_02</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 1.511205 0.000000</row3>
+					<row3>0.000000 1.821734 0.000000</row3>
 				</transform>
 			</node>
 		</node>
@@ -43,7 +43,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile1
@@ -75,7 +75,7 @@
 					</property>
 					<property>
 						g_tile0Tint
-						<Vector4>0.800000 0.800000 0.800000 1.000000</Vector4>
+						<Vector4>0.988235 0.988235 0.988235 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -87,7 +87,7 @@
 					</property>
 					<property>
 						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile1
@@ -99,7 +99,7 @@
 					</property>
 					<property>
 						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile1
@@ -260,6 +260,10 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.011588 4.364165 -0.013650</groupOrigin>

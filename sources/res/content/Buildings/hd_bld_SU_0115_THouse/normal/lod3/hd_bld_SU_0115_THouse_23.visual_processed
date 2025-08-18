@@ -8,48 +8,20 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_SU_0115_THouse_23</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s6</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.colour</stream>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_23_BAM.dds</Texture>
@@ -66,16 +38,23 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_23_BANM.dds</Texture>
 					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>2.000000 1.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.800000 0.619608 0.396078 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>0.092147 5.825385 0.000001</groupOrigin>
+				<groupOrigin>0.092147 5.825384 0.000003</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-6.414128 -0.510140 -3.033959</min>
-		<max>6.598422 12.227185 3.033961</max>
+		<min>-6.414128 -0.510141 -3.033957</min>
+		<max>6.598422 12.160909 3.033963</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
 	<geometrySize>10092</geometrySize>
 	<minUVDensity>0.001187</minUVDensity>
 </root>

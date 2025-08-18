@@ -38,8 +38,12 @@
 						diffuseMap
 						<Texture>content/Environment/hd_env_UNI_0049_BoatCraneSnow/hd_env_UNI_0049_BoatCraneSnow_AM.dds</Texture>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.000000 2.349458 0.107426</groupOrigin>
+				<groupOrigin>0.000000 2.419809 0.107426</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -48,6 +52,6 @@
 		<max>3.589344 14.249687 15.380223</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>7402</geometrySize>
-	<minUVDensity>0.000033</minUVDensity>
+	<geometrySize>9826</geometrySize>
+	<minUVDensity>0.000154</minUVDensity>
 </root>

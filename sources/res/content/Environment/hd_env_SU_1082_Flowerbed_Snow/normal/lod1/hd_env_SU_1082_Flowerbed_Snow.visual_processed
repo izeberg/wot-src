@@ -34,6 +34,10 @@
 						diffuseMap
 						<Texture>content/Environment/hd_env_SU_1082_Flowerbed_Snow/hd_env_SU_1082_Flowerbed_Snow_AM.dds</Texture>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.027777 0.016610 0.013035</groupOrigin>
 			</primitiveGroup>

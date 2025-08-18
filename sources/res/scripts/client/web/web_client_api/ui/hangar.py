@@ -1,5 +1,5 @@
 import logging, adisp
-from wg_async import wg_async, wg_await
+from th_async import th_async, th_await
 from gui import DialogsInterface
 from gui.Scaleform.daapi.view.dialogs.ExchangeDialogMeta import ExchangeCreditsWebProductMeta
 from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import HeaderMenuVisibilityState
@@ -84,10 +84,10 @@ class HangarWindowsWebApiMixin(object):
             return True
 
     @adisp.adisp_async
-    @wg_async
+    @th_async
     def __showExchangeItemDialog(self, itemCD, count, callback):
         for browser in self.__browserController.getAllBrowsers().values():
             browser.unfocus()
 
-        result = yield wg_await(showExchangeToBuyItemsDialog(itemsCountMap={itemCD: count}))
+        result = yield th_await(showExchangeToBuyItemsDialog(itemsCountMap={itemCD: count}))
         callback(result)

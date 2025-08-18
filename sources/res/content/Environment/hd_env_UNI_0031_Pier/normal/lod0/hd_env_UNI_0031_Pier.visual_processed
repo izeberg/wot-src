@@ -68,7 +68,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -134,7 +134,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -200,7 +200,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -266,7 +266,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -332,7 +332,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -376,10 +376,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.016971 -0.682017 -4.928763</min>
-		<max>1.861298 3.383214 4.732276</max>
+		<min>-3.016382 -0.682017 -4.928763</min>
+		<max>1.861298 3.383214 4.708718</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>213528</geometrySize>
+	<geometrySize>213328</geometrySize>
 	<minUVDensity>0.022169</minUVDensity>
 </root>

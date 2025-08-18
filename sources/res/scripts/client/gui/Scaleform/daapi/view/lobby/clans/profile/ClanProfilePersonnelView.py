@@ -16,7 +16,7 @@ from gui.shared.event_dispatcher import showClanInvitesWindow
 from gui.shared.formatters import text_styles
 from gui.shared.utils import sortByFields, weightedAvg
 from gui.shared.view_helpers import UsersInfoHelper
-from gui.wgcg.web_controller import SYNC_KEYS
+from gui.clientgw.web_controller import SYNC_KEYS
 from helpers import i18n
 from helpers.i18n import makeString as _ms
 from messenger.gui.Scaleform.data.contacts_vo_converter import ContactConverter
@@ -222,7 +222,7 @@ class _ClanMembersDataProvider(SortableDAAPIDataProvider, UsersInfoHelper):
            _SORT_IDS.RATING: self.__getMemberRating, 
            _SORT_IDS.BATTLES_COUNT: self.__getMemberBattlesCount, 
            _SORT_IDS.BATTLES_PERFORMANCE: self.__getMemberBattlesPerformance, 
-           _SORT_IDS.AWG_XP: self.__getMemberAwgExp, 
+           _SORT_IDS.AWG_XP: self.__getMemberAvgXP, 
            _SORT_IDS.DAYS_IN_CLAN: self.__getMemberDaysInClan}
         return
 
@@ -333,7 +333,7 @@ class _ClanMembersDataProvider(SortableDAAPIDataProvider, UsersInfoHelper):
            'personalRating': items.formatField(getter=memberData.getGlobalRating, formatter=backport.getIntegralFormat), 
            'battlesCount': items.formatField(getter=memberData.getBattlesCount, formatter=backport.getIntegralFormat), 
            'wins': items.formatField(getter=memberData.getBattlesPerformanceAvg, formatter=lambda x: backport.getNiceNumberFormat(x) + '%'), 
-           'awgExp': items.formatField(getter=memberData.getBattleXpAvg, formatter=backport.getIntegralFormat), 
+           'avgXP': items.formatField(getter=memberData.getBattleXpAvg, formatter=backport.getIntegralFormat), 
            'daysInClan': items.formatField(getter=memberData.getDaysInClan, formatter=backport.getIntegralFormat), 
            'canShowContextMenu': memberDBID != getAccountDatabaseID(), 
            'contactItem': userVO}
@@ -382,7 +382,7 @@ class _ClanMembersDataProvider(SortableDAAPIDataProvider, UsersInfoHelper):
             return memberData.getBattlesPerformanceAvg()
         return _UNAVAILABLE_EFFICIENCY_VALUE
 
-    def __getMemberAwgExp(self, memberData):
+    def __getMemberAvgXP(self, memberData):
         if memberData.getBattlesCount() > 0:
             return memberData.getBattleXpAvg()
         return _UNAVAILABLE_EFFICIENCY_VALUE

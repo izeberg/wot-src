@@ -42,7 +42,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1069_FightingBisons/hd_env_SU_1069_FightingBisons2_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1069_FightingBisons/hd_env_SU_1069_FightingBisons_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -87,6 +87,10 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_10_crash_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000006 -1.971998 -0.032515</groupOrigin>

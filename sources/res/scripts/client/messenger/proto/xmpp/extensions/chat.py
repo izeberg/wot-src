@@ -9,7 +9,7 @@ from messenger.proto.xmpp.extensions.ext_constants import XML_TAG_NAME as _TAG
 from messenger.proto.xmpp.extensions.shared_handlers import IQHandler
 from messenger.proto.xmpp.extensions.shared_queries import MessageQuery
 from messenger.proto.xmpp.extensions.shared_queries import PresenceQuery
-from messenger.proto.xmpp.extensions.wg_items import WgSharedExtension
+from messenger.proto.xmpp.extensions.custom_items import SharedExtension
 from messenger.proto.xmpp.gloox_constants import IQ_TYPE, CHAT_STATE, MESSAGE_TYPE_ATTR, PRESENCE
 from messenger.proto.xmpp.wrappers import ChatMessage
 
@@ -79,8 +79,8 @@ class DelayExtension(PyExtension):
 class MessageIDExtension(PyExtension):
 
     def __init__(self):
-        super(MessageIDExtension, self).__init__(_TAG.WG_MESSAGE_ID)
-        self.setXmlNs(_NS.WG_MESSAGE_ID)
+        super(MessageIDExtension, self).__init__(_TAG.MESSAGE_ID)
+        self.setXmlNs(_NS.MESSAGE_ID)
 
     @classmethod
     def getDefaultData(cls):
@@ -94,7 +94,7 @@ class ChatHistoryQuery(PyExtension):
 
     def __init__(self, jid, limit):
         super(ChatHistoryQuery, self).__init__(_TAG.QUERY)
-        self.setXmlNs(_NS.WG_PRIVATE_HISTORY)
+        self.setXmlNs(_NS.PRIVATE_HISTORY)
         self.setAttribute('with', str(jid))
         self.setAttribute('limit', limit)
 
@@ -102,8 +102,8 @@ class ChatHistoryQuery(PyExtension):
 class PrivateHistoryItem(PyExtension):
 
     def __init__(self):
-        super(PrivateHistoryItem, self).__init__(_TAG.WG_PRIVATE_HISTORY)
-        self.setXmlNs(_NS.WG_PRIVATE_HISTORY)
+        super(PrivateHistoryItem, self).__init__(_TAG.PRIVATE_HISTORY)
+        self.setXmlNs(_NS.PRIVATE_HISTORY)
 
     @classmethod
     def getDefaultData(cls):
@@ -122,7 +122,7 @@ class PrivateHistoryItem(PyExtension):
 class _MucPrivilegesExtension(PyExtension):
 
     def __init__(self, affiliation='', role=''):
-        super(_MucPrivilegesExtension, self).__init__(_TAG.WG_MUC_PRIVILEGES)
+        super(_MucPrivilegesExtension, self).__init__(_TAG.MUC_PRIVILEGES)
         self.setAttribute('affiliation', affiliation)
         self.setAttribute('role', role)
 
@@ -137,18 +137,18 @@ class _MucPrivilegesExtension(PyExtension):
          affiliation, role)
 
 
-class MessageWgSharedExtension(WgSharedExtension):
+class MessageSharedExtension(SharedExtension):
 
     def __init__(self, includeNS=True):
-        super(MessageWgSharedExtension, self).__init__(includeNS)
+        super(MessageSharedExtension, self).__init__(includeNS)
         self.setChild(_MucPrivilegesExtension())
 
     @classmethod
     def getDefaultData(cls):
-        return super(MessageWgSharedExtension, cls).getDefaultData()
+        return super(MessageSharedExtension, cls).getDefaultData()
 
     def parseTag(self, pyGlooxTag):
-        info = super(MessageWgSharedExtension, self).parseTag(pyGlooxTag)
+        info = super(MessageSharedExtension, self).parseTag(pyGlooxTag)
         affiliation, role = self._getChildData(pyGlooxTag, 0, _MucPrivilegesExtension.getDefaultData())
         info['affiliation'] = affiliation
         info['role'] = role
@@ -161,7 +161,7 @@ class _MessageCustomExtension(PyExtension):
         super(_MessageCustomExtension, self).__init__(_TAG.MESSAGE)
         self.setAttribute('type', msgType)
         self.setChild(ChatStateExtension(state))
-        self.setChild(MessageWgSharedExtension(False))
+        self.setChild(MessageSharedExtension(False))
         self.setChild(DelayExtension())
         self.setChild(MessageIDExtension())
         self.setChild(PrivateHistoryItem())
@@ -173,7 +173,7 @@ class _MessageCustomExtension(PyExtension):
     def parseTag(self, pyGlooxTag):
         message = ChatMessage()
         message.state = self._getChildData(pyGlooxTag, 0, ChatStateExtension.getDefaultData())
-        info = self._getChildData(pyGlooxTag, 1, MessageWgSharedExtension.getDefaultData())
+        info = self._getChildData(pyGlooxTag, 1, MessageSharedExtension.getDefaultData())
         if info:
             message.accountDBID = info['dbID']
             message.accountName = info['name']

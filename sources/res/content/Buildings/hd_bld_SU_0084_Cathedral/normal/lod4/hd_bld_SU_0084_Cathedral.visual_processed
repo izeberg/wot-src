@@ -9,64 +9,43 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 	</node>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd4</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd4</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd4</identifier>
+		</material>
+	</missingBspMaterial>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd5</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>112</materialKind>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BAM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BGMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>12.516481 32.006535 0.074833</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BAM.dds</Texture>
 					</property>
 					<property>
-						g_enableAO
-						<Bool>true</Bool>
+						g_emissionStrength
+						<Vector4>2.000000 3.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_enableTerrainBlending
+						g_enableAO
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -77,16 +56,19 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BANM.dds</Texture>
 					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.980392 0.760784 0.486275 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>13.114429 15.351435 0.111931</groupOrigin>
+				<groupOrigin>13.148639 28.692230 0.111931</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-31.043034 -1.499958 -15.898758</min>
-		<max>57.340305 52.523529 16.122620</max>
+		<min>-31.043036 -1.499955 -15.898760</min>
+		<max>57.340313 58.884415 16.122622</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>61420</geometrySize>
-	<minUVDensity>0.000008</minUVDensity>
+	<geometrySize>160234</geometrySize>
+	<minUVDensity>0.000005</minUVDensity>
 </root>

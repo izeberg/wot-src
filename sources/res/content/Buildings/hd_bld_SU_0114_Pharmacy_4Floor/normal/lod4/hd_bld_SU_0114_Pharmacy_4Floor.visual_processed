@@ -8,51 +8,32 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_SU_0114_Pharmacy_4Floor</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s6</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<stream>s_nd0.colour</stream>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0114_Pharmacy_4Floor/hd_bld_SU_0114_Pharmacy_4Floor_BAM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.100000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicGlossMap
@@ -63,27 +44,22 @@
 						<Texture>content/Buildings/hd_bld_SU_0114_Pharmacy_4Floor/hd_bld_SU_0114_Pharmacy_4Floor_BANM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
+						g_simpleEmissionColor
+						<Vector4>1.000000 0.803922 0.623529 0.000000</Vector4>
 					</property>
 					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_vertexAnimationParams
-						<Vector4>0.100000 1.000000 0.000000 0.000000</Vector4>
+						g_emissionStrength
+						<Vector4>5.000000 1.350000 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.016586 8.633850 -0.231503</groupOrigin>
+				<groupOrigin>-0.016586 8.633849 -0.231501</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-5.819148 -1.465684 -6.464198</min>
-		<max>5.785976 18.733383 5.881041</max>
+		<min>-5.819148 -1.465685 -6.344046</min>
+		<max>5.785976 18.733383 5.881043</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>4668</geometrySize>
+	<geometrySize>4740</geometrySize>
 	<minUVDensity>0.000161</minUVDensity>
 </root>

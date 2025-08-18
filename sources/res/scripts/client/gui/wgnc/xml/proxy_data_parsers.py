@@ -1,6 +1,6 @@
 import logging, json
 from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import isReferralProgramEnabled
-from gui.wgcg.promo_screens.parsers import PromoDataParser
+from gui.clientgw.promo_screens.parsers import PromoDataParser
 from gui.wgnc import proxy_data
 from gui.wgnc.errors import ParseError
 from gui.wgnc.wgnc_helpers import parseSize

@@ -1,0 +1,996 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>n_wood2</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood3</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood11</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood27</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood143</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood141</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood18</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood16</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood149</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood33</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood43</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood35</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood31</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood145</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood45</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood165</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood70</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood71</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood52</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood53</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood163</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood95</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood159</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood76</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood88</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood155</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood74</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood77</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood153</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood98</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood99</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood114</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood105</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood96</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood169</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood121</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood120</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood128</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood118</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>n_wood170</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>n_wood155</node>
+		<node>n_wood70</node>
+		<node>n_wood71</node>
+		<node>n_wood52</node>
+		<node>n_wood145</node>
+		<node>n_wood45</node>
+		<node>n_wood165</node>
+		<node>n_wood159</node>
+		<node>n_wood76</node>
+		<node>n_wood88</node>
+		<node>n_wood53</node>
+		<node>n_wood163</node>
+		<node>n_wood95</node>
+		<node>n_wood31</node>
+		<node>n_wood27</node>
+		<node>n_wood143</node>
+		<node>n_wood141</node>
+		<node>n_wood2</node>
+		<node>n_wood3</node>
+		<node>n_wood11</node>
+		<node>n_wood33</node>
+		<node>n_wood43</node>
+		<node>n_wood35</node>
+		<geometry>
+			<vertices>part0a.vertices</vertices>
+			<stream>part0a.uv2</stream>
+			<primitive>part0a.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<fade_material>
+					<identifier>n_wood0_fade</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						texRandom
+						<Texture>maps/fx/random.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</fade_material>
+				<groupOrigin>0.212319 0.729101 -0.364240</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>n_wood77</node>
+		<node>n_wood18</node>
+		<node>n_wood16</node>
+		<node>n_wood149</node>
+		<node>n_wood120</node>
+		<node>n_wood153</node>
+		<node>n_wood169</node>
+		<node>n_wood105</node>
+		<node>n_wood121</node>
+		<node>n_wood99</node>
+		<node>n_wood114</node>
+		<node>n_wood98</node>
+		<node>n_wood118</node>
+		<node>n_wood96</node>
+		<node>n_wood170</node>
+		<node>n_wood74</node>
+		<node>n_wood128</node>
+		<geometry>
+			<vertices>part0b.vertices</vertices>
+			<stream>part0b.uv2</stream>
+			<primitive>part0b.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<fade_material>
+					<identifier>n_wood0_fade</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						texRandom
+						<Texture>maps/fx/random.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</fade_material>
+				<groupOrigin>0.111812 0.730810 0.205828</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>n_wood165</node>
+		<node>n_wood169</node>
+		<node>n_wood33</node>
+		<node>n_wood149</node>
+		<node>n_wood120</node>
+		<node>n_wood11</node>
+		<node>n_wood118</node>
+		<node>n_wood143</node>
+		<node>n_wood16</node>
+		<node>n_wood121</node>
+		<node>n_wood141</node>
+		<node>n_wood53</node>
+		<node>n_wood163</node>
+		<node>n_wood52</node>
+		<node>n_wood77</node>
+		<node>n_wood155</node>
+		<node>n_wood76</node>
+		<node>n_wood74</node>
+		<node>n_wood159</node>
+		<node>n_wood31</node>
+		<node>n_wood145</node>
+		<node>n_wood43</node>
+		<node>n_wood105</node>
+		<geometry>
+			<vertices>part1a.vertices</vertices>
+			<stream>part1a.uv2</stream>
+			<primitive>part1a.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>d_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<fade_material>
+					<identifier>d_wood0_fade</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						texRandom
+						<Texture>maps/fx/random.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</fade_material>
+				<groupOrigin>0.121095 0.660156 -0.321285</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>n_wood98</node>
+		<node>n_wood153</node>
+		<node>n_wood71</node>
+		<geometry>
+			<vertices>part1b.vertices</vertices>
+			<stream>part1b.uv2</stream>
+			<primitive>part1b.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>d_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<fade_material>
+					<identifier>d_wood0_fade</identifier>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1080_BoxSnow/hd_env_SU_1080_BoxGroupSnow_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.400000 0.400000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Horizontal_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						texRandom
+						<Texture>maps/fx/random.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>1</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</fade_material>
+				<groupOrigin>-0.452547 0.414126 -0.529465</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.680732 -0.028905 -1.612462</min>
+		<max>1.105369 1.487106 1.108846</max>
+	</boundingBox>
+	<geometrySize>345428</geometrySize>
+	<minUVDensity>0.183813</minUVDensity>
+</root>

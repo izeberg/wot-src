@@ -13,8 +13,8 @@ msgstr "Победить в бою или получить 250 ед. «чист�
 
 msgid "widget/content/tooltip/blocked/body"
 msgstr ""
-"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
-"побед» %(redemptionMaxDayCount)s раз."
+"Для аднаўлення лічыльніка вам неабходна выконваць баявую задачу «Ланцуг "
+"перамог» %(redemptionMaxDayCount)s разоў."
 
 msgid "widget/content/tooltip/blocked/head"
 msgstr "Ланцуг перамог перарваны."
@@ -29,6 +29,9 @@ msgstr "Ланцуг перамог"
 
 msgid "window/playStreakPreview/backBtnLabel"
 msgstr "У ЛАНЦУГ ПЕРАМОГ"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/info/body"
+msgstr "С выходом обновлённого контейнера данная награда будет заменена."
 
 msgid "window/playStreakRewards/calendar/card/tooltip/monthly/body"
 msgstr ""
@@ -48,6 +51,26 @@ msgstr ""
 
 msgid "window/playStreakRewards/calendar/card/tooltip/periodic/head"
 msgstr "Часовае карыстанне"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/body"
+msgstr ""
+"Каждый раз при начислении еженедельной награды вы получите один случайный "
+"предмет из списка:"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/head"
+msgstr "Случайные личные резервы"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/item1"
+msgstr "Личные резервы — бонус 100% к боевому опыту на 1 ч."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/item2"
+msgstr "Личные резервы — бонус 50% к серебру на 1 ч."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/item3"
+msgstr "Личные резервы — бонус 300% к комбинированному опыту на 1 ч."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/rewards/head"
+msgstr "Награды:"
 
 msgid "window/playStreakRewards/calendar/card/tooltip/weekly/body"
 msgstr ""
@@ -96,16 +119,16 @@ msgstr "Паглядзець у Гаражы"
 
 msgid "window/playStreakRewards/postProgression/content/blocked/body"
 msgstr ""
-"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
-"побед» %(redemptionMaxDayCount)s раз."
+"Для аднаўлення лічыльніка вам неабходна выконваць баявую задачу «Ланцуг "
+"перамог» %(redemptionMaxDayCount)s разоў."
 
 msgid "window/playStreakRewards/postProgression/content/blocked/head"
 msgstr "Ланцуг перамог будзе адноўлены праз"
 
 msgid "window/playStreakRewards/postProgression/content/blocked/tooltip/body"
 msgstr ""
-"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
-"побед» %(redemptionMaxDayCount)s раз."
+"Для аднаўлення лічыльніка вам неабходна выконваць баявую задачу «Ланцуг "
+"перамог» %(redemptionMaxDayCount)s разоў."
 
 msgid "window/playStreakRewards/postProgression/content/blocked/tooltip/head"
 msgstr "Ланцуг перамог перарваны"
@@ -132,8 +155,8 @@ msgstr "Ланцуг перамог будзе адноўлены праз"
 
 msgid "window/playStreakRewards/recoveryMessage/tooltip/body"
 msgstr ""
-"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
-"побед» %(redemptionMaxDayCount)s раз."
+"Для аднаўлення лічыльніка вам неабходна выконваць баявую задачу «Ланцуг "
+"перамог» %(redemptionMaxDayCount)s разоў."
 
 msgid "window/playStreakRewards/recoveryMessage/tooltip/head"
 msgstr "Ланцуг перамог перарваны."
@@ -170,8 +193,8 @@ msgstr "Ланцуг перамог"
 
 msgid "window/playStreakRewards/tab/help/blocked/body"
 msgstr ""
-"Для восстановления счётчика вам необходимо выполнить боевую задачу «Цепь "
-"побед» %(redemptionMaxDayCount)s раз."
+"Для аднаўлення лічыльніка вам неабходна выконваць баявую задачу «Ланцуг "
+"перамог» %(redemptionMaxDayCount)s разоў."
 
 msgid "window/playStreakRewards/tab/help/blocked/head"
 msgstr "Ланцуг перамог перарваны."

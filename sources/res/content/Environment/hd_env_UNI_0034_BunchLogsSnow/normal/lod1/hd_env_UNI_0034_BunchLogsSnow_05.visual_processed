@@ -8,73 +8,195 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
+		<node>
+			<identifier>hd_env_UNI_0034_BunchLogsSnow_05</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.005464</row3>
+				</transform>
+			</node>
+		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>d0Shape.vertices</vertices>
+			<stream>d0Shape.uv2</stream>
+			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>108</materialKind>
+					<identifier>d_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_10_Logs_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_03_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>1.000000 0.550000 0.630000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.913725 0.905882 0.905882 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.937255 0.929412 1.000000 0.950000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>1.000000 1.000000 1.000000 0.900000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_10_Logs_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_10_Logs_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>0.161009 0.218953 0.026447</groupOrigin>
+				<groupOrigin>0.363257 0.233267 -0.143588</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>d_wood1</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>87</materialKind>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_02_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_02_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_02_GMM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.180785 0.350150 0.109621</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>n_wood1</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_02_AM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_10_Logs_512_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_02_ANM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_02_GMM.dds</Texture>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_03_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0034_BunchLogsSnow/hd_env_UNI_0034_BunchLogsSnow_03_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_fountain_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>1.000000 0.550000 0.630000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.913725 0.905882 0.905882 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.937255 0.929412 1.000000 0.950000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>1.000000 1.000000 1.000000 0.900000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_10_Logs_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_10_Logs_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.229409 1.029920 -0.035446</groupOrigin>
+				<groupOrigin>0.075932 1.001914 -0.039079</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.539635 -0.176193 -4.646271</min>
-		<max>3.861653 2.243878 4.699165</max>
+		<min>-1.592375 -0.201492 -3.529882</min>
+		<max>1.875854 2.205321 3.242706</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>89772</geometrySize>
-	<minUVDensity>0.001980</minUVDensity>
+	<geometrySize>154492</geometrySize>
+	<minUVDensity>0.152715</minUVDensity>
 </root>

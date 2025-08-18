@@ -1,4 +1,5 @@
 import copy
+from battle_modifiers_common import ModifiersContext
 from constants import BonusTypes, PenaltyTypes
 from gui.Scaleform.daapi.view.lobby.hangar.VehicleParameters import VehicleParameters, _VehParamsDataProvider, _VehParamsGenerator
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
@@ -24,6 +25,8 @@ def _visionRadiusCalcDiff(value, originalValue):
 
 _SUPPORTED_MODIFIERS = {'visionRadius': (
                   'circularVisionRadius', _visionRadiusCalcDiff), 
+   'radioDistance': (
+                   'radioDistance', _simpleValueDiff), 
    'vehicleHealth': (
                    'maxHealth', _simpleValueDiff), 
    'thermalVisionDistance': (
@@ -98,7 +101,7 @@ class Comp7VehicleParameters(VehicleParameters):
         modifiers = self._comp7Controller.getBattleModifiersObject()
         if modifiers is not None and g_currentVehicle.isPresent():
             vehicle = self._itemsCache.items.getVehicleCopy(g_currentVehicle.item)
-            vehicle.descriptor.battleModifiers = modifiers
+            vehicle.descriptor.battleModifiers = ModifiersContext(modifiers, vehType=vehicle.descriptor.type)
             vehicle.descriptor.rebuildAttrs()
             g_comp7Vehicle.setCustomVehicle(vehicle)
         else:

@@ -9,7 +9,6 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
    import net.wg.gui.components.controls.CloseButtonText;
    import net.wg.gui.components.controls.CompactCheckBox;
    import net.wg.gui.components.controls.universalBtn.UniversalBtn;
-   import net.wg.gui.lobby.rankedBattles19.components.widget.RankedBattlesHangarWidget;
    import net.wg.gui.lobby.rankedBattles19.data.RankedBattleResultsVO;
    import net.wg.gui.lobby.rankedBattles19.events.RankWidgetEvent;
    import net.wg.infrastructure.base.meta.IRankedBattlesBattleResultsMeta;
@@ -68,8 +67,6 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       
       private var _readyBtn:UniversalBtn = null;
       
-      private var _widget:RankedBattlesHangarWidget = null;
-      
       private var _isWidgetShown:Boolean = false;
       
       private var _isAnimationsComplete:Boolean = false;
@@ -100,15 +97,12 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       override protected function initialize() : void
       {
          super.initialize();
-         this._widget = this.widgetAnimation.widgetContainer.battleResWidget;
-         this._widget.bg.visible = false;
          this._widjetAnimTotalFrames = this.widgetAnimation.totalFrames - 1;
       }
       
       override protected function onPopulate() : void
       {
          super.onPopulate();
-         registerFlashComponentS(this._widget,RANKEDBATTLES_ALIASES.RANKED_BATTLE_RESULTS_WIDGET);
       }
       
       override protected function configUI() : void
@@ -124,7 +118,6 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
          this.animationCheckBox.visible = false;
          this.resultsContainer.init();
          this.widgetAnimation.gotoAndStop(1);
-         this._widget.visible = false;
          this._statusTF = this.statusAnim.statusMc.statusTF;
       }
       
@@ -201,7 +194,6 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
          this._readyBtn = null;
          this.closeBtn = null;
          this.titleTF = null;
-         this._widget = null;
          this.widgetAnimation = null;
          this.statusAnim = null;
          this._statusTF = null;
@@ -218,15 +210,12 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       
       private function startRankChainAnimation() : void
       {
-         this._widget.visible = true;
          this.widgetAnimation.addFrameScript(WIDGET_ANIM_PRE_END_LABEL,this.endOfWidgetAnimation);
          this.widgetAnimation.gotoAndPlay(1);
       }
       
       private function endOfWidgetAnimation() : void
       {
-         this._widget.addEventListener(RankWidgetEvent.READY,this.onWidgetReadyHandler);
-         this._widget.enableRanksReflections(false);
          onWidgetUpdateS();
          this.titleTF.visible = false;
          switch(this._data.state)
@@ -291,16 +280,12 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       private function showWidgetFinalState() : void
       {
          onWidgetUpdateS();
-         this._widget.enableRanksReflections(false);
-         this._widget.showFinalState();
-         this._widget.visible = true;
          this.titleTF.visible = false;
          this.statusAnim.gotoAndStop(STATUS_ANIM_SHOW_LABEL);
       }
       
       private function resetAnimation() : void
       {
-         this._widget.removeEventListener(RankWidgetEvent.READY,this.onWidgetReadyHandler);
          this.widgetAnimation.addFrameScript(WIDGET_ANIM_PRE_END_LABEL,null);
          this.widgetAnimation.stop();
       }
@@ -333,7 +318,6 @@ package net.wg.gui.lobby.rankedBattles19.rankedBattlesBattleResults
       
       private function onWidgetReadyHandler(param1:RankWidgetEvent) : void
       {
-         this._widget.removeEventListener(RankWidgetEvent.READY,this.onWidgetReadyHandler);
          this.onWidgetAnimComplete();
       }
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G189_E100_02/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G189_E100_02/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-2.359478 -0.677968 -4.729067</min>
+		<max>2.323889 0.859345 4.804759</max>
+	</visibilityBox>
+</root>

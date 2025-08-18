@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_gaf_UNI_0023_ParkFence_Big</identifier>
+			<identifier>hd_gaf_UNI_0023_ParkFence_BigEnd</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -25,24 +25,6 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 			</node>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s_wall</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -54,15 +36,6 @@
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
-				<material>
-					<identifier>s_wall0</identifier>
-					<materialKind>73</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.008591 0.738339 2.944398</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
 				<material>
 					<identifier>d_metal0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -124,7 +97,7 @@
 				<groupOrigin>-0.000001 -0.003618 2.965668</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>n_metal0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -185,13 +158,22 @@
 				</material>
 				<groupOrigin>-0.000001 0.155211 2.965743</groupOrigin>
 			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>-0.008591 0.760854 2.944398</groupOrigin>
+			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-0.067661 -0.154409 -0.067620</min>
-		<max>0.067659 1.476678 5.999105</max>
+		<max>0.067659 1.521709 5.999105</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>9494</geometrySize>
-	<minUVDensity>0.007168</minUVDensity>
+	<geometrySize>9574</geometrySize>
+	<minUVDensity>0.006956</minUVDensity>
 </root>

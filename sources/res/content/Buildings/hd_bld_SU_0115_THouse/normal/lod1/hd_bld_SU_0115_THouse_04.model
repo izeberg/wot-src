@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<visibilityBox>
+		<min>-6.716357 -1.000001 -9.875304</min>
+		<max>5.889485 15.140882 10.437204</max>
+	</visibilityBox>
 	<parent>content/Buildings/hd_bld_SU_0115_THouse/normal/lod2/hd_bld_SU_0115_THouse_04</parent>
 	<extent>150.000000</extent>
-	<visibilityBox>
-		<min>-6.716357 -1.000003 -9.875305</min>
-		<max>5.889485 15.140883 10.437203</max>
-	</visibilityBox>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod1/hd_bld_SU_0115_THouse_04</nodefullVisual>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod1/hd_bld_SU_0115_THouse_04</nodelessVisual>
 </root>

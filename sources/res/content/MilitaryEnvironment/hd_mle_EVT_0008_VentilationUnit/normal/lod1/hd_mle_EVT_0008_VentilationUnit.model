@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_EVT_0008_VentilationUnit/normal/lod1/hd_mle_EVT_0008_VentilationUnit</nodefullVisual>
+	<parent>content/MilitaryEnvironment/hd_mle_EVT_0008_VentilationUnit/normal/lod2/hd_mle_EVT_0008_VentilationUnit</parent>
+	<visibilityBox>
+		<min>-1.515920 -0.171640 -1.608437</min>
+		<max>1.617586 2.407810 1.548286</max>
+	</visibilityBox>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<extent>70.000000</extent>
+</root>

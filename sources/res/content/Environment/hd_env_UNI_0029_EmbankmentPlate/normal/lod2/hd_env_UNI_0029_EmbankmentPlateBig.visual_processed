@@ -60,10 +60,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.800000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_tile1Tint
 						<Vector4>0.690196 0.666667 0.627451 1.000000</Vector4>
 					</property>
@@ -101,7 +97,7 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.825332 -1.599753 -0.000001</min>
+		<min>-0.825332 -1.599753 -0.000003</min>
 		<max>42.092030 0.032666 3.654673</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

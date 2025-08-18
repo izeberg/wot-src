@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>15.000001</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>lightning</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/F133_Projet_57_Ampere/F133_hull_lightning.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.321569 0.584314 1.000000</value>
+				<inTangent>0.000000 0.031373 0.007843 0.000000</inTangent>
+				<outTangent>0.000000 0.031373 0.007843 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 0.384314 0.600000 1.000000</value>
+				<inTangent>-0.000000 0.031373 0.007843 -0.000000</inTangent>
+				<outTangent>0.000000 -0.004278 -0.002139 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.000001</startTime>
+				<value>1.000000 0.337255 0.576471 1.000000</value>
+				<inTangent>-0.000000 -0.004278 -0.002139 -0.000000</inTangent>
+				<outTangent>0.000000 0.003922 -0.029412 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.000001</startTime>
+				<value>1.000000 0.345098 0.517647 0.000000</value>
+				<inTangent>-0.000000 0.003922 -0.029412 -0.500000</inTangent>
+				<outTangent>-0.000000 0.003922 -0.029412 -0.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>mto</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/F133_Projet_57_Ampere/F133_hull_mto_100.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.207843 0.447059 0.000000</value>
+				<inTangent>0.000000 -0.015686 -0.019608 0.000000</inTangent>
+				<outTangent>0.000000 -0.015686 -0.019608 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.192157 0.427451 0.000000</value>
+				<inTangent>-0.000000 -0.015686 -0.019608 -0.000000</inTangent>
+				<outTangent>0.000000 -0.009804 -0.035294 0.400000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000 0.172549 0.356863 0.800000</value>
+				<inTangent>-0.000000 -0.009804 -0.035294 0.400000</inTangent>
+				<outTangent>0.000000 0.003922 0.003922 0.200000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000 0.176471 0.360784 1.000000</value>
+				<inTangent>-0.000000 0.003922 0.003922 0.200000</inTangent>
+				<outTangent>0.000000 0.002179 0.007843 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.000001</startTime>
+				<value>1.000000 0.196078 0.431373 1.000000</value>
+				<inTangent>-0.000000 0.002179 0.007843 -0.000000</inTangent>
+				<outTangent>0.000000 0.007843 -0.023529 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.000001</startTime>
+				<value>1.000000 0.211765 0.384314 0.000000</value>
+				<inTangent>-0.000000 0.007843 -0.023529 -0.500000</inTangent>
+				<outTangent>-0.000000 0.007843 -0.023529 -0.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.396078 0.560784 0.000000</value>
+				<inTangent>0.000000 -0.005229 0.007843 0.000000</inTangent>
+				<outTangent>0.000000 -0.005229 0.007843 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.000000</startTime>
+				<value>1.000000 0.380392 0.584314 0.000000</value>
+				<inTangent>-0.000000 -0.005229 0.007843 -0.000000</inTangent>
+				<outTangent>0.000000 -0.050980 -0.074510 1.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>4.000000</startTime>
+				<value>1.000000 0.329412 0.509804 1.000000</value>
+				<inTangent>0.000000 -0.024837 -0.035076 0.500000</inTangent>
+				<outTangent>0.000000 -0.024837 -0.035076 0.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>13.000001</startTime>
+				<value>1.000000 0.341176 0.549020 1.000000</value>
+				<inTangent>-0.000000 0.001307 0.004357 -0.000000</inTangent>
+				<outTangent>0.000000 -0.031373 -0.001961 -0.500000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.000001</startTime>
+				<value>1.000000 0.278431 0.545098 0.000000</value>
+				<inTangent>-0.000000 -0.031373 -0.001961 -0.500000</inTangent>
+				<outTangent>-0.000000 -0.031373 -0.001961 -0.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>F133_Projet_57_Ampere_hull_Hangar</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>15.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.055969 0.785368 -2.716797</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>15.000000</duration>
+				<sequenceSound>F133_Projet_57_Ampere_hull_Hangar</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

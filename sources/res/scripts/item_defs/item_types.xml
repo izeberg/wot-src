@@ -84,6 +84,13 @@
 			<private/>
 			<disabledInRoaming/>
 			<event_battles/>
+			<wt_boss/>
+			<wt_boss_2025/>
+			<wt_hunter/>
+			<special_wt_boss/>
+			<squad_restricted/>
+			<random_only/>
+			<wt_bot/>
 			<fallout/>
 			<epic_battles/>
 			<bob/>
@@ -163,6 +170,24 @@
 			<rentEligible/>
 			<bot_hunter/>
 			<debutBoxes/>
+			<noSortBuiltinEquipment/>
+			<builtinLargeMedkit_wt_user/>
+			<builtinRepairkit_wt_user/>
+			<builtinInstantStunShoot_wt_user/>
+			<builtinImpulse_wt_user/>
+			<builtinAfterburning_wt_user/>
+			<builtinShield_wt_user/>
+			<builtinSelfRepair_wt_user/>
+			<builtinStronghold_wt_user/>
+			<builtinTeleport_wt_user/>
+			<builtinTeleport_wt_2025_user/>
+			<builtinChargedShot_wt_user/>
+			<builtinExplosiveShot_wt_user/>
+			<builtinHyperion_wt_user/>
+			<builtinUnionStrength_wt_user/>
+			<builtinPlasmaExtractor_wt_user/>
+			<builtinHyperion_wt_2025_user/>
+			<builtinStunArea_wt_user/>
 		</tags>
 	</vehicle>
 	<vehicleChassis>
@@ -285,7 +310,9 @@
 			<firepower/>
 			<mobility/>
 			<premium_equipment/>
+			<eventShellOverride/>
 			<builtin/>
+			<hideBuiltinInfo/>
 			<trophyUpgraded/>
 			<turbocharger/>
 			<healthReserve/>
@@ -304,6 +331,10 @@
 			<abilityEquipment/>
 			<public/>
 			<stopOutsideBattle/>
+			<eventItem/>
+			<eventPassiveItem/>
+			<wtEquipmentItem/>
+			<hidden/>
 		</tags>
 	</equipment>
 	<customizationItem>
@@ -372,6 +403,7 @@
 			<offspringArenaMusic/>
 			<sabatonArenaMusic/>
 			<ariaArenaMusic/>
+			<WTEvent/>
 		</tags>
 	</customizationItem>
 	<crewSkin>

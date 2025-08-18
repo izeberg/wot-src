@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/normal/lod0/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.494823 0.001147 -3.119948</min>
+		<max>1.494091 1.190976 3.297700</max>
+	</visibilityBox>
+</root>

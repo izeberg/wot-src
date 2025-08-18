@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<visibilityBox>
+		<min>-3.282604 -0.053208 -0.740935</min>
+		<max>3.403676 1.500000 0.740935</max>
+	</visibilityBox>
 	<havok>
-		<damagedState>false</damagedState>
+		<damagedState>true</damagedState>
 	</havok>
 	<nodefullVisual>content/Environment/hd_env_UNI_0033_Boat/normal/lod4/hd_env_UNI_0033_Boat</nodefullVisual>
-	<visibilityBox>
-		<min>-3.323416 -0.078926 -0.879800</min>
-		<max>3.332042 1.989776 1.334390</max>
-	</visibilityBox>
-	<extent>450.000000</extent>
 </root>

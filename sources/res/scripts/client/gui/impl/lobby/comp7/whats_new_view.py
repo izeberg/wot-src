@@ -166,10 +166,6 @@ class WhatsNewView(ViewImpl, IGlobalListener):
         event_dispatcher.showHangar()
         self.destroyWindow()
 
-    @staticmethod
-    def __getWhatsNewPageKey():
-        return 'whatsNewPageComp7'
-
 
 class WhatsNewViewWindow(LobbyNotificationWindow):
     __slots__ = ()

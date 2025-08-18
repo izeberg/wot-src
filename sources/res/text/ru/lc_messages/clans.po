@@ -287,12 +287,12 @@ msgstr "Игрок недавно покинул клан. Вы сможете �
 msgid "clanInvitesWindow/tooltips/table/cantSendInvite/body"
 msgstr "Невозможно принять игроков в состав: в клане нет свободных мест."
 
-msgid "clanInvitesWindow/tooltips/table/invites/awgExp/body"
+msgid "clanInvitesWindow/tooltips/table/invites/avgXP/body"
 msgstr ""
 "Средний опыт за бой игрока, которому отправлено приглашение (с учётом "
 "премиум аккаунта)"
 
-msgid "clanInvitesWindow/tooltips/table/invites/awgExp/header"
+msgid "clanInvitesWindow/tooltips/table/invites/avgXP/header"
 msgstr "Средний опыт за бой"
 
 msgid "clanInvitesWindow/tooltips/table/invites/battlesCount/body"
@@ -348,11 +348,11 @@ msgstr "Заявку можно принять или отклонить."
 msgid "clanInvitesWindow/tooltips/table/requests/actions/header"
 msgstr "Действия"
 
-msgid "clanInvitesWindow/tooltips/table/requests/awgExp/body"
+msgid "clanInvitesWindow/tooltips/table/requests/avgXP/body"
 msgstr ""
 "Средний опыт за бой игрока, подавшего заявку (с учётом премиум аккаунта)."
 
-msgid "clanInvitesWindow/tooltips/table/requests/awgExp/header"
+msgid "clanInvitesWindow/tooltips/table/requests/avgXP/header"
 msgstr "Средний опыт за бой"
 
 msgid "clanInvitesWindow/tooltips/table/requests/battlesCount/body"
@@ -464,12 +464,12 @@ msgid "clanPersonalInvitesWindow/tooltips/table/cantAcceptRequestDueToCD/body"
 msgstr ""
 "Вы недавно покинули клан. Принимать приглашения в клан вы сможете не ранее:"
 
-msgid "clanPersonalInvitesWindow/tooltips/table/invites/awgExp/body"
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/avgXP/body"
 msgstr ""
 "Средний опыт за бой игроков клана, приславшего приглашение (средневзвешенное"
 " по Случайным боям)"
 
-msgid "clanPersonalInvitesWindow/tooltips/table/invites/awgExp/header"
+msgid "clanPersonalInvitesWindow/tooltips/table/invites/avgXP/header"
 msgstr "Средний опыт за бой"
 
 msgid "clanPersonalInvitesWindow/tooltips/table/invites/battlesCount/body"

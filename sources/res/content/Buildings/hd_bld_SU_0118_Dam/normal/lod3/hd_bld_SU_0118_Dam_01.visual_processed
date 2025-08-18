@@ -50,7 +50,7 @@
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>111</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Plaster_11_flat_painted_512_AM.dds</Texture>
@@ -78,10 +78,6 @@
 					<property>
 						g_dirtColorParams
 						<Vector4>0.100000 0.600000 0.650000 0.410000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile0Tint
@@ -154,10 +150,6 @@
 						<Vector4>0.100000 0.600000 1.000000 1.000000</Vector4>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_tile0Tint
 						<Vector4>1.000000 0.901961 0.768627 1.000000</Vector4>
 					</property>
@@ -188,6 +180,10 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_Bright_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.013041 3.669143 -3.729745</groupOrigin>

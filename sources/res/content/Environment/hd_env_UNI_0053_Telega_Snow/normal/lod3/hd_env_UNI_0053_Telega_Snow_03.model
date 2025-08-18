@@ -5,6 +5,10 @@
 		<min>-2.338500 -0.000000 -0.868175</min>
 		<max>0.512740 2.007800 0.849778</max>
 	</visibilityBox>
-	<extent>800.000000</extent>
+	<extent>250.000000</extent>
 	<nodefullVisual>content/Environment/hd_env_UNI_0053_Telega_Snow/normal/lod3/hd_env_UNI_0053_Telega_Snow_03</nodefullVisual>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
+	<parent>content/Environment/hd_env_UNI_0053_Telega_Snow/normal/lod4/hd_env_UNI_0053_Telega_Snow_03</parent>
 </root>

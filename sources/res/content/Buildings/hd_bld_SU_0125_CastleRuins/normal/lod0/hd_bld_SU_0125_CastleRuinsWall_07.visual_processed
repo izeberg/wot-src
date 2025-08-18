@@ -24,10 +24,6 @@
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_AM.dds</Texture>
 					</property>
@@ -49,10 +45,6 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_tile0Tint
 						<Vector4>0.865000 0.865000 0.865000 1.000000</Vector4>
@@ -118,7 +110,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.016963 6.133832 -1.937958</groupOrigin>
+				<groupOrigin>0.016959 6.133848 -1.937955</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -127,10 +119,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
@@ -194,9 +182,9 @@
 	</renderSet>
 	<boundingBox>
 		<min>-1.711437 -0.005017 -4.778809</min>
-		<max>1.719163 12.333142 1.009112</max>
+		<max>1.719164 12.333142 1.009112</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>263108</geometrySize>
+	<geometrySize>260580</geometrySize>
 	<minUVDensity>0.024607</minUVDensity>
 </root>

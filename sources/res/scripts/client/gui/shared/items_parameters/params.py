@@ -105,7 +105,7 @@ _SHELL_KINDS = (
  SHELL_TYPES.HOLLOW_CHARGE, SHELL_TYPES.HIGH_EXPLOSIVE,
  SHELL_TYPES.ARMOR_PIERCING, SHELL_TYPES.ARMOR_PIERCING_HE,
  SHELL_TYPES.ARMOR_PIERCING_CR, SHELL_TYPES.ARMOR_PIERCING_FSDS,
- SHELL_TYPES.FLAME, SHELL_TYPES.DELAYED_HE)
+ SHELL_TYPES.FLAME)
 _POWER_PIERCING_SHELLS = (
  SHELL_TYPES.ARMOR_PIERCING,
  SHELL_TYPES.ARMOR_PIERCING_CR,
@@ -768,7 +768,7 @@ class VehicleParams(_ParameterBase):
         skillName = 'radioman_inventor'
         argName = 'radioDistance'
         factor = self.__getFactorValueFromSkill(skillName, argName, Tankman.ROLES.RADIOMAN)
-        return int(baseDistance * factor)
+        return int(self._itemDescr.battleModifiers(BattleParams.RADIO_DISTANCE, baseDistance * factor))
 
     @property
     def turretArmor(self):
@@ -780,9 +780,6 @@ class VehicleParams(_ParameterBase):
         shotShell = self._itemDescr.shot.shell
         if shotShell.kind in HAS_EXPLOSION:
             return round(shotShell.type.explosionRadius, 2)
-        if shotShell.kind == SHELL_TYPES.DELAYED_HE:
-            delayedShellDescr = vehicles.getItemByCompactDescr(shotShell.type.delayedShell)
-            return round(delayedShellDescr.type.explosionRadius, 2)
         return 0
 
     @property
@@ -815,9 +812,11 @@ class VehicleParams(_ParameterBase):
 
     @property
     def reloadTimeSecs(self):
-        if self.__hasDualGun():
-            return tuple(_timesToSecs(reloadTime) for reloadTime in self.__calcReloadTime())
+        if self.__hasClipGun() and self.__hasDualGun():
+            return self._itemDescr.gun.dualGun.reloadTimes
         else:
+            if self.__hasDualGun():
+                return tuple(_timesToSecs(reloadTime) for reloadTime in self.__calcReloadTime())
             if self.__hasClipGun() or self.__hasAutoReload() or self.__hasAutoShoot():
                 return None
             return (
@@ -989,11 +988,20 @@ class VehicleParams(_ParameterBase):
 
     @property
     def clipFireRate(self):
-        if self.__hasDualGun():
-            reloadTimes = items_utils.getDualGunReloadTime(self._itemDescr, self.__factors)
+        if self.__hasDualGun() and self.__hasClipGun():
+            gunParams = self._itemDescr.gun
+            clipData = gunParams.clip
+            if self.__hasAutoReload():
+                reloadTime = sum(items_utils.getClipReloadTime(self._itemDescr, self.__factors))
+            else:
+                reloadTime = items_utils.getReloadTime(self._itemDescr, self.__factors)
             return (
-             sum(reloadTimes), self._itemDescr.gun.dualGun.rateTime, len(reloadTimes))
+             reloadTime, self._itemDescr.gun.dualGun.rateTime, clipData[0])
         else:
+            if self.__hasDualGun():
+                reloadTimes = items_utils.getDualGunReloadTime(self._itemDescr, self.__factors)
+                return (
+                 sum(reloadTimes), self._itemDescr.gun.dualGun.rateTime, len(reloadTimes))
             if self.__hasClipGun():
                 gunParams = self._itemDescr.gun
                 clipData = gunParams.clip
@@ -1802,9 +1810,6 @@ class ShellParams(CompatibleParams):
     def explosionRadius(self):
         if self._itemDescr.kind in HAS_EXPLOSION:
             return self._itemDescr.type.explosionRadius
-        if self._itemDescr.kind == SHELL_TYPES.DELAYED_HE:
-            delayedShellDescr = vehicles.getItemByCompactDescr(self._itemDescr.type.delayedShell)
-            return delayedShellDescr.type.explosionRadius
         return 0
 
     @property
@@ -1839,13 +1844,6 @@ class ShellParams(CompatibleParams):
     def flameMaxDistance(self):
         if self._itemDescr.kind == SHELL_TYPES.FLAME:
             return self.maxShotDistance
-        else:
-            return
-
-    @property
-    def explosionDelay(self):
-        if self._itemDescr.kind == SHELL_TYPES.DELAYED_HE:
-            return self._itemDescr.type.explosionDelay
         else:
             return
 

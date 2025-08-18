@@ -153,10 +153,10 @@ msgid "dealPanel/autoRenew"
 msgstr "Аўтапапаўненне"
 
 msgid "dealPanel/autoRenewType/hard"
-msgstr "Докупать автоматически"
+msgstr "Дакупаць аўтаматычна"
 
 msgid "dealPanel/autoRenewType/soft"
-msgstr "Только со Склада"
+msgstr "Толькі са Склада"
 
 msgid "dealPanel/button/apply"
 msgstr "Прымяніць"
@@ -488,8 +488,7 @@ msgid "dialogs/exchangeToUpgrade/items/title"
 msgstr "На наладку абсталявання не стае %(credits)s"
 
 msgid "dialogs/exchangeToUpgrade/notPossible/status"
-msgstr ""
-"Наладка работы оборудования невозможна. Нужно обменять на серебро %(gold)s."
+msgstr "Немагчыма наладзіць абсталяванне. Трэба абмяняць на срэбра %(gold)s"
 
 msgid "dialogs/exchangeToUpgrade/notRequired/status"
 msgstr "У вас ужо дастаткова срэбра для наладкі абсталявання."
@@ -578,7 +577,7 @@ msgid "dialogs/goldExchange/notRequired/status"
 msgstr "Абмен не патрабуецца. У вас дастаткова срэбра."
 
 msgid "dialogs/goldExchange/notRequired/title"
-msgstr "{action} уже хватает серебра."
+msgstr "{action} ужо хапае срэбра."
 
 msgid "dialogs/goldExchange/refillShells/title"
 msgstr "Для папаўнення боекамплекту не стае %(credits)s"
@@ -699,7 +698,7 @@ msgid "introduction/currency/modernized"
 msgstr "кампаненты"
 
 msgid "introduction/directives/showButton"
-msgstr "Показать экономические инструкции"
+msgstr "Паказаць эканамічныя настаўленні"
 
 msgid "introduction/equipments/showButton"
 msgstr "Паказаць абсталяванне"
@@ -712,8 +711,8 @@ msgstr ""
 
 msgid "introduction/message/economic"
 msgstr ""
-"Установите подходящую инструкцию и выйдите с ней в бой. По итогам боя "
-"заработок будет увеличен, а инструкция спишется."
+"Усталюйце прыдатнае настаўленне і ўступіце з ім у бой. Па выніках бою "
+"заробак будзе павялічаны, а настаўленне спішацца."
 
 msgid "introduction/message/modernized"
 msgstr ""
@@ -822,7 +821,7 @@ msgid "introduction/title/withEquipments/deluxe"
 msgstr "Удасканаленае абсталяванне"
 
 msgid "introduction/title/withEquipments/economic"
-msgstr "Экономические инструкции"
+msgstr "Эканамічныя настаўленні"
 
 msgid "introduction/title/withEquipments/modernized"
 msgstr "Эксперыментальнае абсталяванне"
@@ -863,9 +862,7 @@ msgstr ""
 "спрашчае выяўленне праціўніка."
 
 msgid "kpi/bonus/longDescr/negative/vehicleGunShotDispersion"
-msgstr ""
-"ад роскіду падчас руху і паваротаў машыны, а таксама пры гарызантальным "
-"навядзенні і пасля стрэлу"
+msgstr "от разброса при движении и поворотах машины"
 
 msgid "kpi/bonus/longDescr/negative/vehicleOwnSpottingTime"
 msgstr "ад часу вашай бачнасці"
@@ -928,9 +925,7 @@ msgstr ""
 "спрашчае выкрыццё праціўніка."
 
 msgid "kpi/bonus/longDescr/positive/vehicleGunShotDispersion"
-msgstr ""
-"да роскіду падчас руху і паваротаў машыны, а таксама пры гарызантальным "
-"навядзенні і пасля стрэлу"
+msgstr "к разбросу при движении и поворотах машины"
 
 msgid "kpi/bonus/longDescr/positive/vehicleOwnSpottingTime"
 msgstr "да часу вашай бачнасці"
@@ -2034,7 +2029,7 @@ msgid "tabs/deluxe"
 msgstr "Удасканаленае"
 
 msgid "tabs/economic"
-msgstr "Экономические"
+msgstr "Эканамічныя"
 
 msgid "tabs/modernized"
 msgstr "Эксперыментальнае"
@@ -2050,7 +2045,7 @@ msgstr "Трафейнае"
 
 msgid "tooltip/autoRenewal/body/boosters"
 msgstr ""
-"Инструкция будет пополняться автоматически после возврата машины из боя."
+"Настаўленне будзе выконвацца аўтаматычная пасля вяртання машыны з бою."
 
 msgid "tooltip/autoRenewal/body/consumables"
 msgstr ""
@@ -2069,19 +2064,20 @@ msgstr ""
 
 msgid "tooltip/autoRenewal/dropdown/body/hard"
 msgstr ""
-"Пополнение идёт со Склада при наличии инструкций. При отсутствии инструкций "
-"на Складе они будут автоматически докупаться за игровую валюту."
+"Папаўненне ідзе са Склада пры наяўнасці настаўленняў. Пры адсутнасці "
+"настаўленняў на Складзе яны будуць аўтаматычна дакупацца за гульнявую "
+"валюту."
 
 msgid "tooltip/autoRenewal/dropdown/body/soft"
 msgstr ""
-"Пополнение идёт со Склада при наличии инструкций. При отсутствии инструкций "
-"на Складе слот останется пустым."
+"Папаўненне ідзе са Склада пры наяўнасці настаўленняў. Пры адсутнасці "
+"настаўленняў на Складзе слот застаецца пустым."
 
 msgid "tooltip/autoRenewal/dropdown/header/hard"
-msgstr "Докупать недостающие"
+msgstr "Дакупаць тыя, якіх не стае"
 
 msgid "tooltip/autoRenewal/dropdown/header/soft"
-msgstr "Только со Склада"
+msgstr "Толькі са Склада"
 
 msgid "tooltip/autoRenewal/header/general"
 msgstr "Папаўняць аўтаматычна"

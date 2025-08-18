@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.uv2</stream>
+			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -23,10 +23,6 @@
 					<collisionFlags>255</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
@@ -93,10 +89,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
-					</property>
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
@@ -167,10 +159,9 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.485540 -0.015112 -15.119400</min>
-		<max>1.639760 12.598387 0.629501</max>
+		<min>-1.485540 -0.015112 -15.104598</min>
+		<max>1.639760 12.598387 0.606995</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>39378</geometrySize>
+	<geometrySize>39138</geometrySize>
 	<minUVDensity>0.001941</minUVDensity>
 </root>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<parent>content/GatesAndFences/hd_gaf_UNI_0023_ParkFence/normal/lod1/hd_gaf_UNI_0023_ParkFence_Big</parent>
-	<extent>20.249086</extent>
-	<nodefullVisual>content/GatesAndFences/hd_gaf_UNI_0023_ParkFence/normal/lod0/hd_gaf_UNI_0023_ParkFence_Big</nodefullVisual>
 	<visibilityBox>
 		<min>-0.067661 -0.154409 -0.058594</min>
 		<max>0.067659 1.476678 5.908141</max>
 	</visibilityBox>
+	<parent>content/GatesAndFences/hd_gaf_UNI_0023_ParkFence/normal/lod1/hd_gaf_UNI_0023_ParkFence_Big</parent>
+	<extent>40.000000</extent>
+	<nodefullVisual>content/GatesAndFences/hd_gaf_UNI_0023_ParkFence/normal/lod0/hd_gaf_UNI_0023_ParkFence_Big</nodefullVisual>
 </root>

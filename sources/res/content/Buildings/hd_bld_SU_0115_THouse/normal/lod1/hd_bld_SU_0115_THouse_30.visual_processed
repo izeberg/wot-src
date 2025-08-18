@@ -85,7 +85,7 @@
 						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_PM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.001588 11.204778 -0.012452</groupOrigin>
+				<groupOrigin>0.001588 11.204777 -0.012453</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -145,7 +145,7 @@
 						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Kaliningrad_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.007891 10.501175 -0.004024</groupOrigin>
+				<groupOrigin>0.007891 10.501175 -0.005759</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -363,7 +363,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.014017 10.946305 -0.733976</groupOrigin>
+				<groupOrigin>0.015348 10.946305 -0.733976</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				6
@@ -516,10 +516,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.556117 -1.019831 -16.054829</min>
-		<max>3.584150 22.111399 16.011864</max>
+		<min>-3.556813 -1.019831 -16.054829</min>
+		<max>3.587509 22.111399 16.011864</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>583976</geometrySize>
+	<geometrySize>593982</geometrySize>
 	<minUVDensity>0.000358</minUVDensity>
 </root>

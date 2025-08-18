@@ -8,11 +8,462 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "WTEventAwardsView/mainReward/rent"
+msgstr "Боёв в аренду: %(count)s"
+
+msgid "WTEventAwardsView/mainRewards/back_portal"
+msgstr "К порталам"
+
+msgid "WTEventAwardsView/mainRewards/button"
+msgstr "Так точно!"
+
+msgid "WTEventAwardsView/mainRewards/main_prize_discount"
+msgstr "Скидка на запуск портала %(discount)s%%"
+
+msgid "WTEventAwardsView/mainRewards/premium_plus"
+msgstr "Премиум дни"
+
+msgid "WTEventAwardsView/mainRewards/wt_boss"
+msgstr "Стартер Инженера"
+
+msgid "WTEventAwardsView/status/all"
+msgstr "ВСЕ ЭТАПЫ ЗАВЕРШЕНЫ!"
+
+msgid "WTEventAwardsView/status/part"
+msgstr "%(elements)s ЭТАП ПРОЙДЕН!"
+
+msgid "WTEventAwardsView/status/postBattle"
+msgstr "ПОБЕДА НАД АЛАИДОМ-Б!"
+
+msgid "WTEventAwardsView/title"
+msgstr "СОБЫТИЕ «ВАФФЕНТРАГЕР: РЕВАНШ»"
+
+msgid "WTEventWelcomeView/welcome/asymmetry_text"
+msgstr ""
+"Выполняйте задания Гончих и Инженера, чтобы заработать марки и продвинуться "
+"по прогрессии. Задачи обновляются ежедневно для обеих сторон."
+
+msgid "WTEventWelcomeView/welcome/asymmetry_title"
+msgstr "Прогрессия"
+
+msgid "WTEventWelcomeView/welcome/collection_text"
+msgstr ""
+"Помимо уже знакомых машин, у вас появится возможность управлять новым "
+"инженерным шедевром Кригера и Лемартена — танком Алаид. Получайте ключи для "
+"игры на машинах Инженера и выкурите Гончих из их логова."
+
+msgid "WTEventWelcomeView/welcome/collection_title"
+msgstr "Особые машины"
+
+msgid "WTEventWelcomeView/welcome/confirm_btn"
+msgstr "Продолжить"
+
+msgid "WTEventWelcomeView/welcome/title"
+msgstr "ВАФФЕНТРАГЕР: РЕВАНШ"
+
+msgid "WTEventWelcomeView/welcome/wt_welcome_text"
+msgstr ""
+"В событии существует 3 портала: портал Гончих, портал Инженера и портал с "
+"танком. Запускайте порталы с помощью стартеров и получайте ценное игровое "
+"имущество, включая премиум технику. "
+
+msgid "WTEventWelcomeView/welcome/wt_welcome_title"
+msgstr "Порталы"
+
+msgid "WTEventsCarouselView/inBattleText"
+msgstr "В бою"
+
+msgid "WTEventsCarouselView/inPlatoonText"
+msgstr "В формировании"
+
+msgid "WTEventsCarouselView/noBattlesLeft"
+msgstr "Бои исчерпаны"
+
+msgid "WTEventsCarouselView/specialBattlesLeft"
+msgstr "Боёв доступно: %(count)s"
+
+msgid "WTEventsCarouselView/ticketNeededText"
+msgstr "Нужен ключ"
+
+msgid "WTEventsCarouselView/unsuitableText"
+msgstr "Не подходит"
+
+msgid "WTEventsTicketMessageView/boss/description"
+msgstr "Для выхода в бой на %(boss)s нужен ключ."
+
+msgid "WTEventsTicketMessageView/buyText"
+msgstr "Купить"
+
+msgid "WTEventsTicketMessageView/taskText"
+msgstr "К задачам"
+
+msgid "WtEventAmmunitionTooltipView/additionalInfoTitle"
+msgstr "Особенности:"
+
+msgid "WtEventBuyLootBoxesTooltipView/additionalInfo"
+msgstr ""
+"Это ограничение не распространяется на количество запусков порталов и замен "
+"наград."
+
+msgid "WtEventBuyLootBoxesTooltipView/amountLeft"
+msgstr "Осталось покупок на сегодня"
+
+msgid "WtEventBuyLootBoxesTooltipView/description"
+msgstr ""
+"Нажмите, чтобы перейти в Магазин для покупки специальных наборов, содержащих"
+" стартеры Инженера."
+
+msgid "WtEventBuyLootBoxesTooltipView/info"
+msgstr ""
+"Количество стартеров Инженера, полученных из наборов в день, не может "
+"превышать %(amountMax)."
+
+msgid "WtEventBuyLootBoxesTooltipView/title"
+msgstr "Стартер Инженера"
+
+msgid "WtEventLootBoxesInfoView/tooltip/bossSubtitle"
+msgstr "Стартеры Инженера выдаются:"
+
+msgid "WtEventLootBoxesInfoView/tooltip/bossText"
+msgstr ""
+"• За прохождение 20-го этапа прогрессии.\n"
+"• За уничтожение Алаида-Б.\n"
+"• За покупку определённых наборов в Магазине."
+
+msgid "WtEventLootBoxesInfoView/tooltip/hunterSubtitle"
+msgstr "Стартеры Гончих выдаются:"
+
+msgid "WtEventLootBoxesInfoView/tooltip/hunterText"
+msgstr ""
+"• За выполнение боевых задач события «Ваффентрагер: реванш».\n"
+"• За прохождение некоторых этапов прогрессии."
+
+msgid "WtEventLootBoxesInfoView/tooltip/title"
+msgstr "Стартеры для запуска порталов"
+
+msgid "WtEventPortals/boss/left"
+msgstr ""
+"Ещё запусков портала (включая замены наград) до гарантированной премиум "
+"машины: %(attemptsCount)"
+
+msgid "WtEventPortals/boss/oneLeft"
+msgstr "Премиум машина уже при следующем запуске!"
+
+msgid "WtEventPortals/buyButton"
+msgstr "ДОКУПИТЬ"
+
+msgid "WtEventPortals/buyButtonCNText"
+msgstr "Осталось покупок: %(number)"
+
+msgid "WtEventPortals/buyButtonTooltip"
+msgstr ""
+"Нажмите, чтобы перейти к покупке стартеров Инженера во внутриигровом "
+"Магазине."
+
+msgid "WtEventPortals/collectionTooltip/randomCamouflage/title"
+msgstr ""
+"Камуфляжные схемы, выполненные в тематике события\n"
+"«Ваффентрагер: реванш»"
+
+msgid "WtEventPortals/collectionTooltip/randomDecal/title"
+msgstr "Тематические декали события «Ваффентрагер: реванш»"
+
+msgid "WtEventPortals/collectionTooltip/randomEmblem/title"
+msgstr "Тематические эмблемы события «Ваффентрагер: реванш»"
+
+msgid "WtEventPortals/collectionTooltip/randomInscription/title"
+msgstr "Надпись"
+
+msgid "WtEventPortals/collectionTooltip/randomStyle2d/title"
+msgstr ""
+"Стили, выполненные в тематике события\n"
+"«Ваффентрагер: реванш»"
+
+msgid "WtEventPortals/description/boss"
+msgstr ""
+"Можно получить за покупку определённых наборов в Магазине, за прохождение "
+"20-го этапа прогрессии или уничтожив в бою танк Алаид-Б."
+
+msgid "WtEventPortals/description/hunter"
+msgstr "Можно получить, выполняя боевые задачи и проходя этапы прогрессии."
+
+msgid "WtEventPortals/inside/buttonRunPortal"
+msgstr "Запустить"
+
+msgid "WtEventPortals/inside/currentKeysAmount/boss"
+msgstr "Доступно: %(number)"
+
+msgid "WtEventPortals/inside/currentKeysAmount/hunter"
+msgstr "Доступно : %(number)"
+
+msgid "WtEventPortals/inside/currentKeysAmount/tank"
+msgstr "В наличии стартеров Инженера: %(number)"
+
+msgid "WtEventPortals/inside/currentKeysAmountIs0/boss"
+msgstr "Стартеры закончились"
+
+msgid "WtEventPortals/inside/currentKeysAmountIs0/hunter"
+msgstr "Стартеры закончились"
+
+msgid "WtEventPortals/inside/currentKeysAmountIs0/tank"
+msgstr "Стартеры Инженера закончились"
+
+msgid "WtEventPortals/inside/firstLaunch/reward"
+msgstr "Гарантированно:"
+
+msgid "WtEventPortals/inside/firstLaunch/tooltip/body"
+msgstr ""
+"При первом запуске каждого портала Инженера вы гарантированно получаете "
+"золото. Оно не подлежит замене и сразу начисляется на ваш аккаунт."
+
+msgid "WtEventPortals/inside/firstLaunch/tooltip/header"
+msgstr "Гарантированное золото"
+
+msgid "WtEventPortals/inside/guaranteedProbability"
+msgstr "Гарантированная награда (если ещё не собрана коллекция):"
+
+msgid "WtEventPortals/inside/highProbability"
+msgstr "Стандартные награды:"
+
+msgid "WtEventPortals/inside/highProbabilityBoss"
+msgstr ""
+"Стандартные награды (гарантированное выпадение двух наград из категории):"
+
+msgid "WtEventPortals/inside/lowProbability"
+msgstr "Ценные награды:"
+
+msgid "WtEventPortals/inside/lowProbabilityBoss"
+msgstr "Лучшие награды:"
+
+msgid "WtEventPortals/inside/mediumProbability"
+msgstr "Ценные награды:"
+
+msgid "WtEventPortals/inside/numbering"
+msgstr "%(number). %(title)"
+
+msgid "WtEventPortals/inside/pluralTimes"
+msgstr "%(times) раз"
+
+msgid "WtEventPortals/inside/showAnimation"
+msgstr "Показывать анимацию"
+
+msgid "WtEventPortals/inside/subtitle"
+msgstr "ВОЗМОЖНОЕ СОДЕРЖИМОЕ"
+
+msgid "WtEventPortals/inside/tankRental"
+msgstr "Аренда:"
+
+msgid "WtEventPortals/inside/times"
+msgstr "%(times) раз"
+
+msgid "WtEventPortals/mainTitle"
+msgstr "ПОРТАЛЫ"
+
+msgid "WtEventPortals/price"
+msgstr "Стоимость запуска:"
+
+msgid "WtEventPortals/subtitle/boss"
+msgstr "Стартеры Инженера"
+
+msgid "WtEventPortals/subtitle/hunter"
+msgstr "Стартеры Гончих"
+
+msgid "WtEventPortals/tank/noDiscount"
+msgstr "Скидка еще не получена."
+
+msgid "WtEventPortals/text/discount"
+msgstr "-%(discount)%"
+
+msgid "WtEventPortals/text/tankBought"
+msgstr "%(tank) уже получен"
+
+msgid "WtGuaranteedRewardTooltipView/allCollected"
+msgstr ""
+"Механика гарантированной награды отключена: у вас уже есть вся премиум "
+"техника из списка."
+
+msgid "WtGuaranteedRewardTooltipView/description"
+msgstr ""
+"Если за %(portalRuns) запуска портала (включая замены наград) вы не получили"
+" премиум машину, то она гарантированно выпадает при следующем запуске."
+
+msgid "WtGuaranteedRewardTooltipView/footerDesc"
+msgstr ""
+"Если у вас уже есть вся техника из списка возможного содержимого портала, то"
+" по механике выпадения гарантированного танка все последующие машины, "
+"полученные из портала, будут компенсированы соответствующей валютой."
+
+msgid "WtGuaranteedRewardTooltipView/footerTitle"
+msgstr "Когда вся техника уже получена:"
+
+msgid "WtGuaranteedRewardTooltipView/portalRuns"
+msgstr "%(count)"
+
+msgid "WtGuaranteedRewardTooltipView/portalRunsLeft"
+msgstr "Столько запусков осталось до выпадения гарантированной машины."
+
+msgid "WtGuaranteedRewardTooltipView/title"
+msgstr "Гарантированная награда"
+
+msgid "WtGuaranteedRewardTooltipView/vehiclesDescription"
+msgstr "Гарантированной наградой станет одна из следующих машин:"
+
+msgid "WtGuaranteedRewardTooltipView/vehiclesTitle"
+msgstr "Премиум техника"
+
+msgid "award/value"
+msgstr "x{count}"
+
+msgid "awardView/backToAwards"
+msgstr "К НАГРАДАМ"
+
+msgid "awardView/previewBtnText"
+msgstr "Просмотр"
+
 msgid "battleHints/testMessage"
 msgstr "testMessage"
 
 msgid "battleHints/testMessageWithParams"
 msgstr "testMessageWithParams {param1}"
+
+msgid "battleQueue/avgWaitTime/label"
+msgstr "Среднее время ожидания для %(vehName)s:"
+
+msgid "battleQueue/widget/bonus"
+msgstr "БОНУС"
+
+msgid "battleQueue/widget/bonusDescr"
+msgstr "Вы можете выйти в бой без ключа от Ваффентрагера."
+
+msgid "battleQueue/widget/btnLabel"
+msgstr "В бой на %(vehicle)s"
+
+msgid "battleQueue/widget/calculatedText"
+msgstr "Среднее время ожидания для %(vehicle)s"
+
+msgid "battleQueue/widget/changeTitle"
+msgstr "Выйти в бой на %(vehicle)s?"
+
+msgid "battleQueue/widget/offerHunterTtile"
+msgstr "Вы можете выбрать одну из гончих для незамедлительного выхода в бой!"
+
+msgid "battleQueue/widget/ticketText"
+msgstr "Будет потрачен один ключ"
+
+msgid "bombDeploy/indicator"
+msgstr "Перегрузка генератора..."
+
+msgid "bonusName/slots"
+msgstr "Слот в Ангаре"
+
+msgid "bonusTooltip/booster_credits/body"
+msgstr "Увеличенный коэффициент заработка кредитов по итогам боёв."
+
+msgid "bonusTooltip/booster_credits/header"
+msgstr "Личный резерв на кредиты"
+
+msgid "bonusTooltip/booster_crew_xp/body"
+msgstr "Увеличенный коэффициент заработка опыта экипажа по итогам боёв."
+
+msgid "bonusTooltip/booster_crew_xp/header"
+msgstr "Личный резерв на опыт экипажа"
+
+msgid "bonusTooltip/booster_free_xp/body"
+msgstr "Увеличенный коэффициент заработка свободного опыта по итогам боёв."
+
+msgid "bonusTooltip/booster_free_xp/header"
+msgstr "Личный резерв на свободный опыт"
+
+msgid "bonusTooltip/booster_free_xp_and_crew_xp/body"
+msgstr ""
+"Увеличенный коэффициент заработка свободного опыта и опыта экипажа по итогам"
+" боёв."
+
+msgid "bonusTooltip/booster_free_xp_and_crew_xp/header"
+msgstr "Личный резерв на свободный опыт и опыт экипажа"
+
+msgid "bonusTooltip/booster_xp/body"
+msgstr "Увеличенный коэффициент заработка боевого опыта по итогам боёв."
+
+msgid "bonusTooltip/booster_xp/header"
+msgstr "Личный резерв на боевой опыт"
+
+msgid "bonusTooltip/gold/body"
+msgstr ""
+"Ценная игровая валюта, которую можно потратить на широкий спектр целей: "
+"Танковый премиум аккаунт, техника, перевод опыта и т.д."
+
+msgid "bonusTooltip/gold/header"
+msgstr "Золото"
+
+msgid "bonuses/random_collection_element_WT/tooltip/body"
+msgstr ""
+"За выполнение задачи вам будет начислен случайный элемент внешнего вида, в "
+"том числе с прошлых столкновений Гончих с Инженером. Это может быть декаль, "
+"надпись или эмблема."
+
+msgid "bonuses/random_collection_element_WT/tooltip/header"
+msgstr "Случайный элемент внешнего вида"
+
+msgid "boss/widget/shield/stage1"
+msgstr "25%"
+
+msgid "boss/widget/shield/stage2"
+msgstr "50%"
+
+msgid "boss/widget/shield/stage3"
+msgstr "75%"
+
+msgid "boss/widget/shield/stage4"
+msgstr "95%"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s — %(end)s"
+
+msgid "calendarDay/title"
+msgstr "Расписание"
+
+msgid "characteristicsPanel/cons"
+msgstr "Слабые стороны"
+
+msgid "characteristicsPanel/features"
+msgstr "Особенности машины"
+
+msgid "characteristicsPanel/pros"
+msgstr "Сильные стороны"
+
+msgid "characteristicsPanel/specialInfo/boss"
+msgstr ""
+"При активном щите машина почти неуязвима, но без щита — это лёгкая цель, в "
+"которую сложно промахнуться и на которой та ещё задача скрыться."
+
+msgid "characteristicsPanel/specialInfo/boss_2025"
+msgstr ""
+"Щит уступает по прочности Ваффентрагеру, однако по броне и динамике эта "
+"машина заметно лучше."
+
+msgid "characteristicsPanel/specialInfo/hunter_1"
+msgstr ""
+"Танк хорошо расправляется с часовыми, благодаря привычному орудию и понятной"
+" игровой роли. Отлично подходит для стрельбы с близкой дистанции."
+
+msgid "characteristicsPanel/specialInfo/hunter_2"
+msgstr ""
+"Штурмовая машина, хорошо держит удар. Мобильность довольно скромная, поэтому"
+" лучше при атаке соблюдать дистанцию."
+
+msgid "characteristicsPanel/specialInfo/hunter_3"
+msgstr ""
+"Машина не очень эффективна против часовых, но благодаря мобильности и щиту "
+"сильна против Ваффентрагера и Алаида."
+
+msgid "characteristicsPanel/specialInfo/hunter_4"
+msgstr ""
+"Универсальная машина: быстро и точно наносит урон со средней дистанции "
+"любому противнику, будучи в безопасности может восстановить прочность."
 
 msgid "craftMachine/endDateText"
 msgstr "Да {day} {month}"
@@ -23,11 +474,443 @@ msgstr "На Глабальнай карце"
 msgid "craftMachine/title"
 msgstr "Летняя экспедыцыя"
 
+msgid "elementBonus/desc/style3d"
+msgstr "3D-стиль «%(value)s» для %(vehicle)s"
+
+msgid "hangar/startBtn/eventSquadNotReady/wrongVehicleCount/body"
+msgstr "Создайте формирование из 2-3 игроков для совместной игры"
+
+msgid "hangar/startBtn/eventSquadNotReady/wrongVehicleCount/header"
+msgstr "Недоступно"
+
+msgid "hangar/startBtn/rentalsIsOver/body"
+msgstr ""
+"Вы провели все доступные бои на Алаиде-Б.\n"
+"Пожалуйста, выберите другую машину."
+
+msgid "hangar/startBtn/rentalsIsOver/header"
+msgstr "Арендные бои исчерпаны"
+
+msgid "hunterRespawn/hintText"
+msgstr "Выберите точку возрождения, или она будет выбрана автоматически"
+
+msgid "hunterRespawn/timerText"
+msgstr "До возвращения в бой..."
+
+msgid "loading/battleTypes/wt"
+msgstr "Ваффентрагер: реванш"
+
+msgid "loading/boss/header/1"
+msgstr ""
+"1. Продержитесь как можно дольше. Если Гончие не успеют вас уничтожить — "
+"победа."
+
+msgid "loading/boss/header/2"
+msgstr ""
+"2. Помогайте часовым и старайтесь оборонять все три генератора как можно "
+"дольше, чтобы не позволить Гончим получить преимущество."
+
+msgid "loading/boss/header/3"
+msgstr ""
+"3. Быстро меняйте позиции! При каждой перегрузке генератора вы временно  "
+"теряете свой щит и способности, что делает вас уязвимым."
+
+msgid "loading/boss/header/4"
+msgstr ""
+"4. Заряжайте ваше супероружие, нанося урон Гончим. Используйте его с умом, "
+"чтобы нанести огромный урон по большой площади."
+
+msgid "loading/boss/header/5"
+msgstr ""
+"5. Уничтожайте Гончих, чтобы лишить их зарядов плазмы и бонусов к огневой "
+"мощи. Начинайте с самых сильных."
+
+msgid "loading/hunter/header/1"
+msgstr ""
+"1. Уничтожьте Инженера, пока не вышло время! Перегружайте генераторы, чтобы "
+"временно отключить его щит."
+
+msgid "loading/hunter/header/2"
+msgstr ""
+"2. Уничтожайте часовых, которые защищают три генератора. Часовые становятся "
+"сильнее после восстановления генератора."
+
+msgid "loading/hunter/header/3"
+msgstr ""
+"3. Быстро перегружайте генераторы! Это добавит время на бой, починит всех "
+"Гончих, а также ненадолго отключает способности Инженера."
+
+msgid "loading/hunter/header/4"
+msgstr ""
+"4. Не попадите под супероружие инженера, которое заряжается нанесением урона"
+" по Гончим!"
+
+msgid "loading/hunter/header/5"
+msgstr ""
+"5. Перегрузив генератор, все живые Гончие получают заряд плазмы, который "
+"увеличивает урон. Бонус теряется при уничтожении машины."
+
+msgid "loading/winText/boss"
+msgstr "А вот и они! Господа Инженеры, вы знаете, что делать."
+
+msgid "loading/winText/hunters"
+msgstr "Остановите фон Кригера любым доступным способом."
+
+msgid "lootBoxTooltip/howItWorks/description/boss"
+msgstr ""
+"Позволяют единожды запустить портал Инженера и получить из него ценные "
+"награды, в том числе премиум технику. Предлагаемую награду можно заменить на"
+" что-то новое за золото. Накопив необходимое количество стартеров, можно "
+"единожды запустить портал с танком и сразу получить новую машину."
+
+msgid "lootBoxTooltip/howItWorks/description/hunter"
+msgstr ""
+"Позволяют единожды запустить портал Гончих и получить из него множество "
+"ценных наград."
+
+msgid "lootBoxTooltip/howItWorks/title"
+msgstr "Для чего нужны"
+
+msgid "lootBoxTooltip/howToGet/description/boss"
+msgstr ""
+"• За прохождение 20-го этапа прогрессии.\n"
+"• За уничтожение Алаида-Б.\n"
+"• За покупку определённых наборов в Магазине."
+
+msgid "lootBoxTooltip/howToGet/description/hunter"
+msgstr ""
+"• За выполнение боевых задач события «Ваффентрагер: реванш».\n"
+"• За прохождение этапов прогрессии."
+
+msgid "lootBoxTooltip/howToGet/title/boss"
+msgstr "Как получить"
+
+msgid "lootBoxTooltip/howToGet/title/hunter"
+msgstr "Как получить"
+
+msgid "lootBoxTooltip/title/boss"
+msgstr "Стартеры Инженера"
+
+msgid "lootBoxTooltip/title/hunter"
+msgstr "Стартеры Гончих"
+
+msgid "menu/selector/title"
+msgstr "Ваффентрагер: реванш"
+
+msgid "menu/selector/unavailable"
+msgstr "По техническим причинам бои временно недоступны."
+
+msgid "minimap/respawnEntry/hintText"
+msgstr "Вы начнёте тут"
+
+msgid "notifications/battleResults/battle"
+msgstr "Бой"
+
+msgid "notifications/battleResults/buttonLabel"
+msgstr "Подробнее"
+
+msgid "notifications/battleResults/defeat/header"
+msgstr "Поражение"
+
+msgid "notifications/battleResults/disableInQueue"
+msgstr "Вы в очереди в бой: послебоевая статистика недоступна."
+
+msgid "notifications/battleResults/disableNotInPrebattle"
+msgstr ""
+"Для просмотра послебоевой статистики перейдите в режим «Ваффентрагер: "
+"реванш»."
+
+msgid "notifications/battleResults/event"
+msgstr "Событие"
+
+msgid "notifications/battleResults/eventName"
+msgstr "«Ваффентрагер: реванш»"
+
+msgid "notifications/battleResults/lootboxes/wt_boss"
+msgstr "Получено стартеров инженера: %(count)s"
+
+msgid "notifications/battleResults/lootboxes/wt_hunter"
+msgstr "Получено стартеров гончих: %(count)s"
+
+msgid "notifications/battleResults/questCompleted"
+msgstr "Задач в бою выполнено: %(questsCompleted)s"
+
+msgid "notifications/battleResults/stamp"
+msgstr "Получены марки: %(count)s"
+
+msgid "notifications/battleResults/victory/header"
+msgstr "Победа!"
+
+msgid "notifications/lootboxAutoOpen/wt_boss"
+msgstr "Инженера"
+
+msgid "notifications/lootboxAutoOpen/wt_hunter"
+msgstr "Гончих"
+
+msgid "notifications/progression/header"
+msgstr "Поздравляем!"
+
+msgid "notifications/progression/openBtnLabel"
+msgstr "Подробнее"
+
+msgid "notifications/quickBossTicketToken/withdrawn/body"
+msgstr ""
+"В этот раз вы провели бой на машине Инженера без ключа! В дальнейшем ключи "
+"можно получить в награду за задачи, за этапы прогрессии или в составе "
+"специальных наборов, приобретаемых в Магазине."
+
+msgid "notifications/ticket/withdrawn/body"
+msgstr ""
+"Списан ключ за игру на Waffenträger.\n"
+"\n"
+"Ключ можно получить в награду за задачи, за этапы прогрессии или в составе специальных наборов, приобретаемых в Магазине.\n"
+"\n"
+"Осталось ключей: %(ticketsCount)s"
+
+msgid "notifications/ticket2025/withdrawn/body"
+msgstr ""
+"Списан ключ за игру на Алаиде.\n"
+"\n"
+"Ключ можно получить в награду за задачи, за этапы прогрессии или в составе специальных наборов, приобретаемых в Магазине.\n"
+"\n"
+"Осталось ключей: %(ticketsCount)s"
+
+msgid "notifications/ticketToken/withdrawn/openPurchasingBtn"
+msgstr "К покупке"
+
+msgid "notifications/ticketToken/withdrawn/openQuestsBtn"
+msgstr "К задачам"
+
+msgid "pbt/defeat/1/1"
+msgstr "Ничего, вы ещё посчитаетесь с ними"
+
+msgid "pbt/defeat/2/1"
+msgstr "Все Гончие уничтожены"
+
+msgid "pbt/defeat/2/3"
+msgstr "Вы не успели уничтожить противника"
+
+msgid "pbt/victory/1/1"
+msgstr "Все Гончие закономерно перебиты"
+
+msgid "pbt/victory/1/3"
+msgstr "Ха! Они не отбились, как предсказуемо"
+
+msgid "pbt/victory/1/5"
+msgstr "Противник позорно сбежал!"
+
+msgid "pbt/victory/2/1"
+msgstr "Противник позорно сбежал!"
+
+msgid "pbt/victory/2/5"
+msgstr "Противник позорно сбежал!"
+
+msgid "playersPanel/bombLabel"
+msgstr "Плазма %(id)s"
+
+msgid "playersPanel/botName"
+msgstr "Часовой"
+
+msgid "playersPanel/campLabel"
+msgstr "Генератор %(index)s"
+
+msgid "portalAward/OpenLastButton"
+msgstr "Запустить ещё раз"
+
+msgid "portalAward/OpenOneMoreButton"
+msgstr "Запустить следующий"
+
+msgid "portalAward/acceptButton"
+msgstr "Так точно!"
+
+msgid "portalAward/additionalTitle"
+msgstr "Также получено:"
+
+msgid "portalAward/backTo"
+msgstr "К ПОРТАЛАМ"
+
+msgid "portalAward/backToPortalButton"
+msgstr "К порталам"
+
+msgid "portalAward/claimAndContinueButton"
+msgstr "Забрать и запустить новый"
+
+msgid "portalAward/claimRewardButton"
+msgstr "Забрать награду"
+
+msgid "portalAward/description"
+msgstr "Вот что выпало из %(highlight)"
+
+msgid "portalAward/firstLaunchRewardTitle"
+msgstr "Начислено:"
+
+msgid "portalAward/highlightDescriptionBoss"
+msgstr "{count} запусков портала Инженера"
+
+msgid "portalAward/highlightDescriptionHunter"
+msgstr "{count} запусков портала Гончих"
+
+msgid "portalAward/multiplyOpen/rowText"
+msgstr "Запуск портала %(portalNumber)"
+
+msgid "portalAward/openMoreButton"
+msgstr "Запустить ещё {quantity}"
+
+msgid "portalAward/reRollButton"
+msgstr "Заменить"
+
+msgid "portalAward/reRollInformation"
+msgstr "Попыток замены: %(leftAttemptsCount)"
+
+msgid "portalAward/reRollTooltipBossBody"
+msgstr ""
+"Возможность замены финальной награды.\n"
+"Заменить награду можно 2 раза."
+
+msgid "portalAward/reRollTooltipHeader"
+msgstr "Повторный запуск"
+
+msgid "portalAward/reRollTooltipHunterBody"
+msgstr ""
+"Возможность замены финальной награды.\n"
+"Заменить награду можно 2 раза."
+
+msgid "portalAward/takeAndOpenGarageButton"
+msgstr "Забрать и перейти в Ангар"
+
+msgid "portalAward/title"
+msgstr "ВОТ, ЧТО ВНУТРИ:"
+
+msgid "portalAward/titleTank"
+msgstr "СЛЫШИМ ЛЯЗГ ГУСЕНИЦ!"
+
+msgid "portalVehicleAward/title"
+msgstr "ПОЗДРАВЛЯЕМ!"
+
+msgid "postbattle/boxAmount"
+msgstr "x{amount}"
+
+msgid "postbattle/button/wt_boss"
+msgstr "К порталам"
+
+msgid "postbattle/button/wt_hunter"
+msgstr "К порталам"
+
+msgid "postbattle/button/wtevent_ticket"
+msgstr "Бой на WT"
+
+msgid "postbattle/button/wtevent_ticket2025"
+msgstr "Бой на Алаиде"
+
+msgid "postbattle/label/wt_boss"
+msgstr "Получен стартер Инженера"
+
+msgid "postbattle/label/wt_hunter"
+msgstr "Получен стартер Гончих"
+
+msgid "postbattle/label/wtevent_ticket"
+msgstr "Получен Ключ"
+
+msgid "postbattle/label/wtevent_ticket2025"
+msgstr "Получен Ключ"
+
+msgid "postbattle/reward"
+msgstr "Награда"
+
+msgid "postbattle/rewardReceived"
+msgstr "Награда получена"
+
+msgid "postbattle_screen/botName"
+msgstr "Часовой"
+
+msgid "progression/about"
+msgstr "О СОБЫТИИ"
+
+msgid "progression/card/currentLevel"
+msgstr "Текущий этап"
+
+msgid "progression/card/rewardReceived"
+msgstr "Награда получена"
+
+msgid "progression/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "progression/congrats"
+msgstr "Поздравляем!"
+
+msgid "progression/pointsFormat"
+msgstr "%(currentPoints)/%(maxPoints)"
+
+msgid "progression/stages/completed/subtitle"
+msgstr "Задачи обновились — вы можете получить ещё больше наград."
+
+msgid "progression/stages/completed/title"
+msgstr "Все этапы пройдены!"
+
+msgid "progression/stages/progress/subtitle"
+msgstr "Марки выдаются за выполнение задач события."
+
+msgid "progression/stages/progress/title"
+msgstr "Этапов пройдено: %(currentLevel)/%(totalLevel)"
+
+msgid "progression/subtitle"
+msgstr ""
+"Выполняйте задания и зарабатывайте марки, чтобы продвигаться по этапам "
+"прогрессии."
+
+msgid "progression/tab/engineer"
+msgstr "Путь Инженера"
+
+msgid "progression/tab/harrier"
+msgstr "Путь Гончих"
+
+msgid "progression/timer"
+msgstr "Новые задачи появятся через %(countdown)"
+
+msgid "progression/title"
+msgstr "ПРОГРЕССИЯ"
+
+msgid "progression/tokensLeft"
+msgstr "Ещё марок до следующего этапа: %(tokensLeft)"
+
 msgid "punishmentWindow/reason/event_afk"
 msgstr "Бяздзейнасць у баі"
 
 msgid "punishmentWindow/reason/event_deserter"
 msgstr "Выйсце з бою да яго заканчэння або да знішчэння ўласнай машыны"
+
+msgid "quests/error/no_ticket"
+msgstr " для выхода в бой нужен ключ."
+
+msgid "quests/error/no_ticket/tooltip/body"
+msgstr "Задача недоступна: для выхода в бой нужен ключ."
+
+msgid "quests/error/no_ticket/tooltip/header"
+msgstr "Нет ключа"
+
+msgid "reticle/dmg"
+msgstr "+%(num)s%% К УРОНУ"
+
+msgid "selectorTooltip/header"
+msgstr "Ваффентрагер: реванш"
+
+msgid "selectorTooltip/tillEnd"
+msgstr "До конца события: %(value)s"
+
+msgid "selectorTooltip/timeTable/title"
+msgstr "Расписание боёв"
+
+msgid "serverAlertMessage"
+msgstr "Режим прекращения огня на %(serverName)s"
+
+msgid "serverAlertMessage/battlesEnd"
+msgstr "Бои режима завершены"
+
+msgid "serverAlertMessage/button"
+msgstr "Сменить сервер"
+
+msgid "serverAlertMessage/unsuitablePeriphery"
+msgstr "На текущем сервере бои недоступны"
 
 msgid "shopSales/endDateText"
 msgstr "Да {day} {month}"
@@ -41,6 +924,233 @@ msgstr "Да пачатку %(timerText)"
 msgid "shopSales/title"
 msgstr "ГАНДЛЁВЫ КАРАВАН"
 
+msgid "simpleSquad/selectRestriction"
+msgstr "Выберите машину Гончих"
+
+msgid "stats/team/boss"
+msgstr "Инженер"
+
+msgid "stats/team/hunters"
+msgstr "Гончие"
+
+msgid "status/timeLeft/days"
+msgstr "%(day)s д"
+
+msgid "status/timeLeft/hours"
+msgstr "%(hour)s ч"
+
+msgid "status/timeLeft/lessHour"
+msgstr "менее 1 ч"
+
+msgid "status/timeLeft/lessMin"
+msgstr "1 мин"
+
+msgid "status/timeLeft/min"
+msgstr "%(min)s мин"
+
+msgid "status/unavailable"
+msgstr "Технические неполадки в электросети базы фон Кригера. Скоро вернёмся."
+
+msgid "stun/indicator"
+msgstr "Отказ электрики"
+
+msgid "tankmanTooltip/boss/descr"
+msgstr ""
+"«Опять Альянс отправляет своё дырявое железо на утилизацию, хоть часы по ним"
+" сверяй. Даже защищая свою территорию, они выставляют какой-то хлам. "
+"Никакого уважения. И единственное, что меня беспокоит, — мой свежесваренный "
+"кофе наверняка остынет, когда эти выскочки в очередной раз испытают Ein "
+"Sturz in den Malstrom с известным и неизменным результатом. Ваши скудоумные "
+"заказчики забыли предупредить, что фон Кригер не даёт второго шанса. "
+"Открывайте ворота, мы уже тут»."
+
+msgid "tankmanTooltip/boss_2025/descr"
+msgstr ""
+"Правая рука фон Кригера, техник и авантюрист до мозга костей, бывший механик"
+" проекта «Стальной охотник», нынешний биограф и второй пилот инженера. Один "
+"из немногих, кто способен терпеть скверный характер фон Кригера, умея удачно"
+" и остроумно парировать любые шпильки в свой адрес. Напрочь лишён инстинкта "
+"самосохранения."
+
+msgid "tankmanTooltip/hunter_1/descr"
+msgstr ""
+"Вожак стаи. В прошлом — простой наёмник, дослужившийся на «полевых работах» "
+"Альянса до командира подразделения. Уравновешенный и трезвомыслящий солдат, "
+"сохранивший понятия чести и достоинства. Балансируя между подчинением "
+"начальству и собственными понятиями, нередко задаёт себе вопрос, а туда ли "
+"вообще он когда-то свернул."
+
+msgid "tankmanTooltip/hunter_2/descr"
+msgstr ""
+"Одна из отставных инструкторов, покинувшая «Эн-Кейв» уже после того, как тот"
+" из простой учебки был преобразован в полноценную военную академию — кузницу"
+" элитных кадров Альянса. Настоящее имя неизвестно; взятый псевдоним — дань "
+"уважения одной из Гончих, которая ранее была командиром танка «Thunderbolt» "
+"и не вернулась с очередного задания."
+
+msgid "tankmanTooltip/hunter_3/descr"
+msgstr ""
+"Идеальный патрон в обойме Альянса. Один из немногих, кто никогда не задаёт "
+"вопросов. Сначала выполнение приказа, а потом уже редкие размышления о его "
+"правильности, о морали, о смыслах и подтекстах, да и то разве что в "
+"свободные минуты, никогда не вынося на общее обсуждение. Убедил себя, что "
+"вся ответственность за решения всегда на командире."
+
+msgid "tankmanTooltip/hunter_4/descr"
+msgstr ""
+"Молодая штабистка, направленная Альянсом в качестве сдерживающего фактора "
+"для остальных членов отряда, чтобы те в очередной раз не разнесли всю "
+"материальную часть до состояния металлолома. Единственная, кто относится к "
+"атаке Кригера серьёзно, предполагая, что провал этой оборонительной операции"
+" закономерно станет началом конца для Альянса."
+
+msgid "tankmanTooltip/skillsTitle"
+msgstr "Изученные умения и навыки"
+
+msgid "tankmanTooltip/status/boss"
+msgstr "Повелитель молний"
+
+msgid "tankmanTooltip/status/boss_2025"
+msgstr "Бог грома"
+
+msgid "tankmanTooltip/status/hunter"
+msgstr "Командир танка «%(vehicle)s»"
+
+msgid "tooltips/header/quests/bottom"
+msgstr "Ещё задач: %(count)d"
+
+msgid "tooltips/header/quests/header/description/till_end"
+msgstr "До конца события: %(time)s"
+
+msgid "tooltips/header/quests/header/description/till_upd"
+msgstr "Новые задачи появятся через: %(time)s"
+
+msgid "tooltips/header/quests/header/description/unavailable"
+msgstr "Выполнение задач недоступно по техническим причинам."
+
+msgid "tooltips/header/quests/header/special_wt_boss"
+msgstr "Задачи Инженера"
+
+msgid "tooltips/header/quests/header/unavailable"
+msgstr "Задачи недоступны"
+
+msgid "tooltips/header/quests/header/wt_boss"
+msgstr "?empty?"
+
+msgid "tooltips/header/quests/header/wt_hunter"
+msgstr "Задачи Гончих"
+
+msgid "tooltips/high_risk/subtitle"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. Будут "
+"наблюдаться проблемы с графикой и перемещением техники, возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "tooltips/high_risk/title"
+msgstr "Низкая производительность"
+
+msgid "tooltips/informative/subtitle"
+msgstr ""
+"В случае недостаточной производительности попробуйте понизить настройки "
+"графики."
+
+msgid "tooltips/informative/title"
+msgstr "Режим требователен к компьютеру"
+
+msgid "tooltips/medium_risk/subtitle"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "tooltips/medium_risk/title"
+msgstr "Снижение производительности"
+
+msgid "tooltips/selector/desc"
+msgstr "Особые правила и техника. Формат: 1х6 игроков."
+
+msgid "tooltips/selector/timeTable/empty"
+msgstr "—"
+
+msgid "tooltips/selector/timeTable/tillEnd"
+msgstr "До конца события: %(time)s"
+
+msgid "tooltips/selector/timeTable/title"
+msgstr "Расписание"
+
+msgid "tooltips/selector/timeTable/today"
+msgstr "Сегодня"
+
+msgid "tooltips/selector/timeTable/tomorrow"
+msgstr "Завтра"
+
+msgid "tooltips/selector/title"
+msgstr "Ваффентрагер: реванш"
+
+msgid "ttx/accuracy"
+msgstr "Точность"
+
+msgid "ttx/armor"
+msgstr "Защищённость"
+
+msgid "ttx/damage"
+msgstr "Разовый урон"
+
+msgid "ttx/description/accuracy"
+msgstr ""
+"Параметр, влияющий на отклонение снаряда при выстреле от точки прицеливания."
+
+msgid "ttx/description/armor"
+msgstr "Параметр, отвечающий за толщины брони корпуса и башни."
+
+msgid "ttx/description/damage"
+msgstr ""
+"Средний урон, наносимый базовым снарядом за один выстрел при пробитии брони."
+
+msgid "ttx/description/dpm"
+msgstr ""
+"Количество урона, потенциально наносимого противнику за 1 минуту при "
+"постоянном пробитии брони."
+
+msgid "ttx/description/durability"
+msgstr "Количество очков прочности машины."
+
+msgid "ttx/description/energy"
+msgstr ""
+"Массивный щит и огневая мощь требуют большого притока внешней энергии. Эту "
+"проблему можно решить с помощью дополнительных генераторов."
+
+msgid "ttx/description/mobility"
+msgstr ""
+"Комплекс параметров, отвечающих за скорость изменения позиции машины на поле"
+" боя."
+
+msgid "ttx/description/revolver"
+msgstr ""
+"Вид заряжания, позволяющий нанести значительный урон за короткий промежуток "
+"времени."
+
+msgid "ttx/description/speed"
+msgstr "Паспортная скорость машины."
+
+msgid "ttx/dpm"
+msgstr "Урон в минуту"
+
+msgid "ttx/durability"
+msgstr "Прочность"
+
+msgid "ttx/energy"
+msgstr "Энергопотребление"
+
+msgid "ttx/mobility"
+msgstr "Мобильность"
+
+msgid "ttx/revolver"
+msgstr "Магазинное заряжание"
+
+msgid "ttx/speed"
+msgstr "Максимальная скорость"
+
 msgid "universalFlag/timerFormat"
 msgstr "{prefix} %(timerText)"
 
@@ -49,3 +1159,21 @@ msgstr "Падзея недаступная"
 
 msgid "universalFlag/unavalibleText"
 msgstr "Падзея недаступная з тэхнічных прычын"
+
+msgid "vehicle/tags/wt_boss/name"
+msgstr "Инженеров"
+
+msgid "vehicle/tags/wt_hunter/name"
+msgstr "Гончих"
+
+msgid "vehiclePortal/backToPortalButton"
+msgstr "К порталам"
+
+msgid "vehiclePortal/openAllRewardsButton"
+msgstr "Посмотреть все награды"
+
+msgid "vehiclePortal/openGarageButton"
+msgstr "Посмотреть в Ангаре"
+
+msgid "window/unit/message/vehicleNotSelected"
+msgstr "Выберите машину Гончих"

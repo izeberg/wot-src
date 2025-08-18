@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>n0_1</identifier>
+			<identifier>n0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -18,7 +18,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n0_2_CompoundRoot|n0_2</identifier>
+			<identifier>n0FBXASC046001</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -27,7 +27,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n0_2_CompoundRoot|n0_6</identifier>
+			<identifier>n0FBXASC046002</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -36,7 +36,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n0_3</identifier>
+			<identifier>n0FBXASC046003</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -45,7 +45,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n0_4</identifier>
+			<identifier>n0FBXASC046004</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -54,7 +54,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n0_5</identifier>
+			<identifier>n0FBXASC046005</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -63,16 +63,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n0_6_CompoundRoot|n0_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n0_6_CompoundRoot|n0_6</identifier>
+			<identifier>n0FBXASC046006</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -83,14 +74,13 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>n0_1</node>
-		<node>n0_2_CompoundRoot|n0_2</node>
-		<node>n0_2_CompoundRoot|n0_6</node>
-		<node>n0_3</node>
-		<node>n0_4</node>
-		<node>n0_5</node>
-		<node>n0_6_CompoundRoot|n0_2</node>
-		<node>n0_6_CompoundRoot|n0_6</node>
+		<node>n0</node>
+		<node>n0FBXASC046001</node>
+		<node>n0FBXASC046002</node>
+		<node>n0FBXASC046003</node>
+		<node>n0FBXASC046004</node>
+		<node>n0FBXASC046005</node>
+		<node>n0FBXASC046006</node>
 		<geometry>
 			<vertices>part.vertices</vertices>
 			<stream>part.uv2</stream>
@@ -231,14 +221,14 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.000001 0.276303 2.958459</groupOrigin>
+				<groupOrigin>-0.000001 0.360122 2.958459</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.067661 0.087643 -0.060473</min>
-		<max>0.067659 0.464963 5.977391</max>
+		<min>-0.067661 0.171462 -0.060473</min>
+		<max>0.067659 0.548782 5.977391</max>
 	</boundingBox>
-	<geometrySize>33732</geometrySize>
+	<geometrySize>17216</geometrySize>
 	<minUVDensity>0.283792</minUVDensity>
 </root>

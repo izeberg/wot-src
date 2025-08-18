@@ -226,6 +226,10 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.515720 3.545644 3.691468</groupOrigin>
 			</primitiveGroup>
@@ -287,6 +291,10 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.494358 3.569334 -3.347553</groupOrigin>

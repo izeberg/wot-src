@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>s1_1_1_1_1</identifier>
+			<identifier>n0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -18,7 +18,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_1_1_1_2</identifier>
+			<identifier>n0_3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -27,7 +27,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_1</identifier>
+			<identifier>n0_7</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -36,7 +36,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_2_1</identifier>
+			<identifier>n0_6</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -45,7 +45,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_2_2</identifier>
+			<identifier>n0_1</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -54,7 +54,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_3_1</identifier>
+			<identifier>n0_4</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -63,7 +63,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_3_2</identifier>
+			<identifier>n0_5</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -72,142 +72,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_3_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_4</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_2_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_2_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_2_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_2_4</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_1_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_1_4</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_3_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_3_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_4_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_4_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_3_5</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s2</identifier>
+			<identifier>n0_2</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -218,31 +83,17 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>s1_1_1_1_1</node>
-		<node>s1_1_1_1_2</node>
-		<node>s1_1</node>
-		<node>s1_2_1</node>
-		<node>s1_2_2</node>
-		<node>s1_3_1</node>
-		<node>s1_3_2</node>
-		<node>s1_3_3</node>
-		<node>s1_3_4</node>
-		<node>s1_3_2_1</node>
-		<node>s1_3_2_2</node>
-		<node>s1_3_2_3</node>
-		<node>s1_3_2_4</node>
-		<node>s1_3_1_1</node>
-		<node>s1_3_1_2</node>
-		<node>s1_3_1_3</node>
-		<node>s1_3_1_4</node>
-		<node>s1_3_3_1</node>
-		<node>s1_3_3_2</node>
-		<node>s1_3_4_1</node>
-		<node>s1_3_4_2</node>
-		<node>s1_3_5</node>
-		<node>s2</node>
+		<node>n0</node>
+		<node>n0_3</node>
+		<node>n0_7</node>
+		<node>n0_6</node>
+		<node>n0_1</node>
+		<node>n0_4</node>
+		<node>n0_5</node>
+		<node>n0_2</node>
 		<geometry>
 			<vertices>part.vertices</vertices>
+			<stream>part.uv2</stream>
 			<primitive>part.indices</primitive>
 			<primitiveGroup>
 				0
@@ -255,10 +106,6 @@
 						<Int>128</Int>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
@@ -273,6 +120,14 @@
 					<property>
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<fade_material>
@@ -280,8 +135,8 @@
 					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						diffuseMap
@@ -296,26 +151,30 @@
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
 					</property>
 					<property>
-						texRandom
-						<Texture>maps/fx/random.dds</Texture>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						texRandom
+						<Texture>maps/fx/random.dds</Texture>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.000000 3.293502 -0.069825</groupOrigin>
+				<groupOrigin>0.006360 3.310018 -0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.108516 -0.003668 -0.527536</min>
-		<max>1.108516 6.590672 0.387885</max>
+		<min>-1.106985 -0.003656 -0.387885</min>
+		<max>1.119705 6.623692 0.387885</max>
 	</boundingBox>
-	<geometrySize>345168</geometrySize>
-	<minUVDensity>0.009590</minUVDensity>
+	<geometrySize>213876</geometrySize>
+	<minUVDensity>0.018725</minUVDensity>
 </root>

@@ -1,5 +1,5 @@
 import typing, BigWorld
-from wg_async import wg_await, wg_async, AsyncReturn
+from th_async import th_await, th_async, AsyncReturn
 from gui.impl.backport import text as loc
 from gui.impl.dialogs import dialogs
 from gui.impl.dialogs.gf_builders import ResDialogBuilder
@@ -19,7 +19,7 @@ from skeletons.gui.game_control import IDemoAccCompletionController, IBootcampCo
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.platform.wgnp_controllers import IWGNPDemoAccRequestController
 if typing.TYPE_CHECKING:
-    from wg_async import _Future
+    from th_async import _Future
     from gui.platform.wgnp.demo_account.request import ChangeNicknameParams
 _res = R.strings.dialogs.accountCompletion.renamingOverlay
 
@@ -55,13 +55,13 @@ class DemoRenamingOverlayView(BaseWGNPOverlayView):
         self._name.clear()
         super(DemoRenamingOverlayView, self).deactivate()
 
-    @wg_async
+    @th_async
     def _closeClickedHandler(self):
         CurtainWindow.getInstance().hide()
         if self._bootcampCtrl.isInBootcamp():
             builder = ResDialogBuilder()
             builder.setMessagesAndButtons(R.strings.dialogs.accountCompletion.renaming.skip)
-            result = yield wg_await(dialogs.show(builder.build()))
+            result = yield th_await(dialogs.show(builder.build()))
             if result.result != DialogButtons.SUBMIT:
                 CurtainWindow.getInstance().reveal()
                 return
@@ -82,7 +82,7 @@ class DemoRenamingOverlayView(BaseWGNPOverlayView):
         self._name.validate()
         return self._name.isValid
 
-    @wg_async
+    @th_async
     def _confirmClickedHandler(self):
         if not self._name.isAlreadyRemotelyValidated:
             yield self._name.remotelyValidate()
@@ -92,12 +92,12 @@ class DemoRenamingOverlayView(BaseWGNPOverlayView):
     def _doRequest(self):
         return self._request()
 
-    @wg_async
+    @th_async
     def _request(self):
         self._requestedName = self._name.value
         self._name.cancelRemoteValidation()
-        status = yield wg_await(self._wgnpDemoAccCtrl.getNicknameStatus())
-        response = yield wg_await(self._wgnpDemoAccCtrl.changeNickname(self._requestedName, status.cost))
+        status = yield th_await(self._wgnpDemoAccCtrl.getNicknameStatus())
+        response = yield th_await(self._wgnpDemoAccCtrl.changeNickname(self._requestedName, status.cost))
         raise AsyncReturn(response)
 
     def _handleSuccess(self, *_):

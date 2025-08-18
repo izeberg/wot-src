@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s5Shape.vertices</vertices>
+			<primitive>s5Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -22,10 +22,6 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>112</materialKind>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_UNI_0047_BoatSnow/hd_env_UNI_0047_BoatSnow_01_BAM.dds</Texture>
@@ -48,10 +44,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.477510 -1.222670 -9.298693</min>
-		<max>2.477510 5.009826 8.734228</max>
+		<min>-2.566133 -1.222670 -9.298021</min>
+		<max>2.566137 5.009826 8.823689</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>14812</geometrySize>
-	<minUVDensity>0.000234</minUVDensity>
+	<minUVDensity>0.000226</minUVDensity>
 </root>

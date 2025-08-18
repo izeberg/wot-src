@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<customBsp>true</customBsp>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0158_ShopWindow/hd_bld_SU_0158_ShopWindow_BAM.dds</Texture>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>2.000000 1.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.658824 0.466667 0.290196 0.000000</Vector4>
+					</property>
+					<property>
+						g_vertexAnimationParams
+						<Vector4>0.100000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0158_ShopWindow/hd_bld_SU_0158_ShopWindow_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0158_ShopWindow/hd_bld_SU_0158_ShopWindow_BANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000250 2.061284 -0.008127</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.890226 -0.202577 -0.973139</min>
+		<max>2.890726 4.325145 0.956884</max>
+	</boundingBox>
+	<geometrySize>3056</geometrySize>
+	<minUVDensity>0.021094</minUVDensity>
+</root>

@@ -1,6 +1,6 @@
 import typing
 from adisp import adisp_process
-from wg_async import wg_async, await_callback
+from th_async import th_async, await_callback
 from gui import shop
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.impl.gen.view_models.views.lobby.tank_setup.sub_views.base_setup_model import BaseSetupModel
@@ -85,7 +85,7 @@ class BattleBoosterInteractor(BaseBattleBoosterInteractor):
         self.onSlotAction(actionType=BaseSetupModel.REVERT_SLOT_ACTION)
         self.itemUpdated()
 
-    @wg_async
+    @th_async
     def applyQuit(self, callback, skipApplyAutoRenewal):
         if not self.isPlayerLayout():
             yield await_callback(self.confirm)(skipDialog=True)

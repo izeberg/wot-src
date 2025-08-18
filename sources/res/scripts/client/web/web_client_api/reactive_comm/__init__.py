@@ -1,4 +1,4 @@
-import adisp, wg_async
+import adisp, th_async
 from gui.game_control.reactive_comm import Subscription, SubscriptionClientStatus, SubscriptionServerStatus
 from helpers import dependency
 from skeletons.gui.game_control import IReactiveCommunicationService
@@ -69,9 +69,9 @@ class ReactiveCommunicationWebApi(object):
         self.__subscriptions.clear()
 
     @adisp.adisp_async
-    @wg_async.wg_async
+    @th_async.th_async
     def __doSubscribe(self, subscription, callback):
-        status = yield wg_async.wg_await(self.__service.subscribeToChannel(subscription))
+        status = yield th_async.th_await(self.__service.subscribeToChannel(subscription))
         callback(status)
 
     def __getLastMessage(self, subscription):

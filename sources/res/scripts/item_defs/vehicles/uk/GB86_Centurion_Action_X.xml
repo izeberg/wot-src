@@ -140,6 +140,11 @@
 					<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Hull.model</exploded>
 				</GB86_Centurion_Action_X_3DSt_BVI>
+				<GB86_Centurion_Action_X_3Dst_Phantom>
+					<undamaged>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Hull.model</exploded>
+				</GB86_Centurion_Action_X_3Dst_Phantom>
 			</sets>
 		</models>
 		<swinging>
@@ -2065,11 +2070,62 @@
 				</anchorShift>
 			</slot>
 			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15083</slotId>
+				<tags>formfactor_square direction_left_to_right</tags>
+				<compatibleModels>GB86_Centurion_Action_X_3Dst_Phantom</compatibleModels>
+				<position>
+					1.99204 0.911821 0.228205
+					<!--BW_String-->
+				</position>
+				<rotation>
+					1.568783 -0.64783 0.921519
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.67 0.955382 0.67
+					<!--BW_String-->
+				</scale>
+				<showOn>16</showOn>
+				<clipAngle>0.908817</clipAngle>
+				<anchorShift>
+					-0.20857
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15084</slotId>
+				<tags>formfactor_square direction_right_to_left</tags>
+				<compatibleModels>GB86_Centurion_Action_X_3Dst_Phantom</compatibleModels>
+				<position>
+					-1.98539 0.913272 2.496785
+					<!--BW_String-->
+				</position>
+				<rotation>1.568905 0.643733 -0.925842</rotation>
+				<scale>
+					0.66 0.955386 0.66
+					<!--BW_String-->
+				</scale>
+				<showOn>16</showOn>
+				<clipAngle>0.908817</clipAngle>
+				<anchorShift>
+					-0.20857
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
 				<slotType>sequence</slotType>
 				<slotId>18000</slotId>
 				<position>0 0 0</position>
 				<rotation>0 0 0</rotation>
 				<attachNode>V</attachNode>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
 			</slot>
 		</customizationSlots>
 		<customization>
@@ -2139,6 +2195,11 @@
 						<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Chassis.model</exploded>
 					</GB86_Centurion_Action_X_3DSt_BVI>
+					<GB86_Centurion_Action_X_3Dst_Phantom>
+						<undamaged>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Chassis.model</exploded>
+					</GB86_Centurion_Action_X_3Dst_Phantom>
 				</sets>
 			</models>
 			<traces>
@@ -4505,6 +4566,11 @@
 								<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Gun_01.model</exploded>
 							</GB86_Centurion_Action_X_3DSt_BVI>
+							<GB86_Centurion_Action_X_3Dst_Phantom>
+								<undamaged>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Gun_01.model</exploded>
+							</GB86_Centurion_Action_X_3Dst_Phantom>
 						</sets>
 					</models>
 					<hitTester>
@@ -4555,6 +4621,28 @@
 								<!--BW_String-->
 							</size>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								-0.0125 0.028701 2.06
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								-0.0125 0.028701 2.563
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.159 0 0
+								<!--BW_String-->
+							</rayUp>
+							<applyToFabric>false</applyToFabric>
+							<compatibleModels>GB86_Centurion_Action_X_3Dst_Phantom</compatibleModels>
+							<size>
+								0.503
+								<!--BW_String-->
+							</size>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -4562,6 +4650,7 @@
 							<camouflage>GUN</camouflage>
 						</customizableVehicleAreas>
 					</customization>
+					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
 							0.9 0.6 0.000000 0.1
@@ -4585,6 +4674,11 @@
 						<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3DSt_BVI/crash/lod0/Turret_01.model</exploded>
 					</GB86_Centurion_Action_X_3DSt_BVI>
+					<GB86_Centurion_Action_X_3Dst_Phantom>
+						<undamaged>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/crash/lod0/Turret_01.model</exploded>
+					</GB86_Centurion_Action_X_3Dst_Phantom>
 				</sets>
 			</models>
 			<hitTester>
@@ -5361,6 +5455,46 @@
 						1.57346
 						<!--BW_String-->
 					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35033</slotId>
+					<tags>formfactor_square direction_left_to_right</tags>
+					<compatibleModels>GB86_Centurion_Action_X_3Dst_Phantom</compatibleModels>
+					<position>-0.308359 2.584565 -0.626417</position>
+					<rotation>
+						3.141593 0 0
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.4 0.237333 0.4
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						1.03785
+						<!--BW_String-->
+					</clipAngle>
+					<verticalMirror>true</verticalMirror>
+					<anchorShift>0.120597</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35034</slotId>
+					<tags>formfactor_square direction_left_to_right</tags>
+					<compatibleModels>GB86_Centurion_Action_X_3Dst_Phantom</compatibleModels>
+					<position>0.697188 2.332112 -0.821502</position>
+					<rotation>1.570796 -0.773216 -0.109038</rotation>
+					<scale>
+						0.49 0.237333 0.49
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						1.03785
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>0.120597</anchorShift>
 				</slot>
 			</customizationSlots>
 			<customization>

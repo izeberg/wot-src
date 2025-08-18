@@ -9,23 +9,56 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 	</node>
+	<customBsp>true</customBsp>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
+	<missingBspMaterial>
+		<material>
+			<identifier>s_nd2</identifier>
+		</material>
+	</missingBspMaterial>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_32_BAM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_enableAO
@@ -39,16 +72,23 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_32_BANM.dds</Texture>
 					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.905882 0.843137 0.784314 0.000000</Vector4>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>1.500000 1.000000 0.000000 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>-0.159808 8.055676 0.167914</groupOrigin>
+				<groupOrigin>-0.151178 8.055676 0.159286</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-7.032984 -0.886548 -6.580442</min>
-		<max>6.595217 17.000055 7.046832</max>
+		<min>-6.914284 -0.885002 -6.597701</min>
+		<max>6.611928 16.996353 6.916272</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>10638</geometrySize>
-	<minUVDensity>0.000726</minUVDensity>
+	<geometrySize>11990</geometrySize>
+	<minUVDensity>0.000354</minUVDensity>
 </root>

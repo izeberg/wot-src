@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.400000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Rotor_2</name>
+		<type>model</type>
+		<resource>vehicles/russian/R232_IS-7W/normal/lod0/Hull_anim_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.400000</duration>
+				<resourceID>vehicles/russian/R232_IS-7W/Animation/Hull_02_animation_loop_01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>4.666667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

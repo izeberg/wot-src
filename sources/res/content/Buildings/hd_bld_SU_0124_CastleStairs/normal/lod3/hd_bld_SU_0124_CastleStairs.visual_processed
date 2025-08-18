@@ -88,10 +88,6 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/03_Concrete_floor_03_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>0.045919 1.932425 -2.820819</groupOrigin>
 			</primitiveGroup>
@@ -161,10 +157,6 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.039369 1.886094 -2.551498</groupOrigin>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F133_Projet_57_Ampere/crash/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.371969 -0.012404 -1.305243</min>
+		<max>1.371969 0.712532 1.313848</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F133_Projet_57_Ampere/crash/lod2/Turret_01</nodefullVisual>
+</root>

@@ -2,5 +2,9 @@
 <root>
 	<parent>content/Buildings/hd_bld_SU_0092_ChurchHolyFamily/normal/lod3/hd_bld_SU_0092_ChurchHolyFamily</parent>
 	<extent>400.000000</extent>
+	<visibilityBox>
+		<min>-26.049232 -2.070768 -14.709056</min>
+		<max>27.735380 61.268631 14.386868</max>
+	</visibilityBox>
 	<nodelessVisual>content/Buildings/hd_bld_SU_0092_ChurchHolyFamily/normal/lod2/hd_bld_SU_0092_ChurchHolyFamily</nodelessVisual>
 </root>

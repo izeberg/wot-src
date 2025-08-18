@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s5Shape.vertices</vertices>
+			<primitive>s5Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -39,10 +39,6 @@
 						<Texture>content/Environment/hd_env_UNI_0047_BoatSnow/hd_env_UNI_0047_BoatSnow_01_BANM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						doubleSided
 						<Bool>true</Bool>
 					</property>
@@ -52,10 +48,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.477510 -1.219064 -9.298693</min>
-		<max>2.477510 4.681306 8.734228</max>
+		<min>-2.566133 -1.092577 -9.298021</min>
+		<max>2.566137 4.681306 8.823689</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>4254</geometrySize>
-	<minUVDensity>0.000234</minUVDensity>
+	<minUVDensity>0.000226</minUVDensity>
 </root>

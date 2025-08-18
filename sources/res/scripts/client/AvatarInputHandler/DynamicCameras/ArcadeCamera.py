@@ -384,7 +384,7 @@ class ArcadeCamera(CameraWithSettings, CallbackDelayer, TimeDeltaMeter):
         return
 
     def __refineVehicleMProv(self, vehicleMProv):
-        vehicleTranslationOnly = Math.WGTranslationOnlyMP()
+        vehicleTranslationOnly = Math.TranslationOnlyMP()
         vehicleTranslationOnly.source = vehicleMProv
         refinedMatrixProvider = Math.MatrixProduct()
         refinedMatrixProvider.a = math_utils.createIdentityMatrix()

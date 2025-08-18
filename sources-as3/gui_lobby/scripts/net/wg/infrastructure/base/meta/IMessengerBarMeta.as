@@ -33,5 +33,7 @@ package net.wg.infrastructure.base.meta
       function as_setSessionStatsButtonEnable(param1:Boolean, param2:String) : void;
       
       function as_setSessionStatsButtonSettingsUpdate(param1:Boolean, param2:String) : void;
+      
+      function as_setChannelButtonVisible(param1:Boolean) : void;
    }
 }

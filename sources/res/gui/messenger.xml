@@ -581,6 +581,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<battleQuestsEventCoin>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/eventCoin): &lt;font color=&apos;#C9C9B6&apos;&gt;%(eventCoin)s&lt;/font&gt;&lt;/font&gt;</battleQuestsEventCoin>
 		<battleQuestsBpcoin>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/bpcoin): &lt;font color=&apos;#C9C9B6&apos;&gt;%(bpcoin)s&lt;/font&gt;&lt;/font&gt;</battleQuestsBpcoin>
 		<battleQuestsEquipCoin>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/equipCoin): &lt;font color=&apos;#C9C9B6&apos;&gt;%(equipCoin)s&lt;/font&gt;&lt;/font&gt;</battleQuestsEquipCoin>
+		<battleQuestsBattlePassPoints>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/battleQuestsBattlePassPoints): &lt;font color=&apos;#C9C9B6&apos;&gt;%(battleQuestsBattlePassPoints)s&lt;/font&gt;&lt;/font&gt;</battleQuestsBattlePassPoints>
 		<battleQuestsBerths>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/berths): &lt;font color=&apos;#D6D7D4&apos;&gt;%(berths)s&lt;/font&gt;&lt;/font&gt;</battleQuestsBerths>
 		<battleQuestsPopUps>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/achievements): &lt;font color=&apos;#D6D7D4&apos;&gt;%(achievements)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPopUps>
 		<battleQuestsPremium>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/premium): &lt;font color=&apos;#D6D7D4&apos;&gt;%(days)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPremium>
@@ -661,6 +662,8 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<rankedBonusBattlesAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/rankedBonusBattlesAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;%(bonusBattles)s&lt;/font&gt;</rankedBonusBattlesAccruedInvoiceReceived>
 		<rankedBonusBattlesDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/rankedBonusBattlesDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;%(bonusBattles)s&lt;/font&gt;</rankedBonusBattlesDebitedInvoiceReceived>
 		<questTokenInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</questTokenInvoiceReceived>
+		<lootboxesReceived>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/event/lootboxes) &lt;font color=&apos;#8C8C7E&apos;&gt;%(amount)s&lt;/font&gt;</lootboxesReceived>
+		<ticketsReceived>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/event/tickets) &lt;font color=&apos;#8C8C7E&apos;&gt;%(amount)s&lt;/font&gt;</ticketsReceived>
 		<offersAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/offersAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;%(offer)s&lt;/font&gt;</offersAccruedInvoiceReceived>
 		<offersDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/offersDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;%(offer)s&lt;/font&gt;</offersDebitedInvoiceReceived>
 		<lbKeysAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;%(lootbox_key)s(x%(amount)s)&lt;/font&gt;</lbKeysAccruedInvoiceReceived>
@@ -967,12 +970,12 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/currencyUpdate/date):&lt;/font&gt; &lt;font color=&apos;#8C8C7E&apos;&gt;%(at)s&lt;/font&gt;&lt;/br&gt;
 %(text)s</message>
 		</resourceWellInvoiceReceived>
-		<WOTRPCachbackInvoiceReceived>
+		<ReferralProgramCashbackInvoiceReceived>
 			<type>yellow</type>
 			<icon>GoldIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/referralProgramCashback/header)&lt;/font&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralProgramCashback/text)&lt;/font&gt;</message>
-		</WOTRPCachbackInvoiceReceived>
+		</ReferralProgramCashbackInvoiceReceived>
 		<rpLootBoxesInvoiceReceived>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
@@ -2230,12 +2233,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#lootboxes:notification/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
 		</LootBoxRewardsSysMessage>
-		<WtEventLootBoxesAutoOpenMessage>
-			<priority>high</priority>
-			<type>yellow</type>
-			<icon>WarningIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/header)&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/text)&lt;/font&gt;&lt;br/&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/boxes)&lt;br/&gt;%(rewards)s</message>
-		</WtEventLootBoxesAutoOpenMessage>
 		<LunarBoxesAutoOpenMessage>
 			<priority>high</priority>
 			<type>yellow</type>

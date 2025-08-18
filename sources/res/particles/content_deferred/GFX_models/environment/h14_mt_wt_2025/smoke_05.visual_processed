@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Glow.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>10.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
+					</property>
+					<property>
+						softFactor
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>1.000000 0.101961 0.000000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.216742 1.173199 -0.042292</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFreshnelEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/h11_smoke.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>3.000000 6.530000 4.120000 0.000000</Vector4>
+					</property>
+					<property>
+						softFactor
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.027451 0.027451 0.027451 1.000000</Vector4>
+					</property>
+					<property>
+						forwardMultiplier
+						<Float>10.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.007985 1.190911 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.079163 0.001006 -1.623281</min>
+		<max>0.245192 2.380815 1.623281</max>
+	</boundingBox>
+	<geometrySize>6376</geometrySize>
+	<minUVDensity>0.109777</minUVDensity>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod3/Manipulator_anim_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.898392 -0.406946 -4.211548</min>
+		<max>0.746522 1.483188 -3.199489</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod2/Manipulator_anim_01</nodefullVisual>
+</root>
