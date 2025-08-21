@@ -125,7 +125,7 @@ package net.wg.gui.prebattle.controls
          {
             this.vehicleLevelField.text = Values.EMPTY_STR;
          }
-         this.vehicleNameField.htmlText = this.model && this.model.vShortName ? this.model.vShortName : Values.EMPTY_STR;
+         this.updateVehicleName();
          this.updateVoiceWave();
          var _loc1_:Number = Boolean(this.model) ? Number(this.model.getCurrentColor()) : Number(Number.NaN);
          if(!isNaN(_loc1_))
@@ -163,6 +163,18 @@ package net.wg.gui.prebattle.controls
             textField.text = Values.EMPTY_STR;
          }
          this._playerNameStr = textField.htmlText;
+      }
+      
+      protected function updateVehicleName() : void
+      {
+         if(this.model && this.model.vShortName)
+         {
+            App.utils.commons.truncateTextFieldText(this.vehicleNameField,this.model.vShortName);
+         }
+         else
+         {
+            this.vehicleNameField.text = Values.EMPTY_STR;
+         }
       }
       
       protected function afterSetData() : void

@@ -418,16 +418,16 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Ball_jnt_BlendBone</node>
 		<geometry>
-			<vertices>s2Shapebsf.vertices</vertices>
-			<stream>s2Shapebsf.colour</stream>
-			<primitive>s2Shapebsf.indices</primitive>
+			<vertices>s3_2Shape.vertices</vertices>
+			<stream>s3_2Shape.colour</stream>
+			<primitive>s3_2Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd8_skinned</identifier>
+					<identifier>s_nd2_skinned</identifier>
 					<fx>shaders/std_effects/glow_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_glow_AM.dds</Texture>
@@ -461,19 +461,23 @@
 		<node>Rope02_07_jnt_BlendBone</node>
 		<node>Rope02_08_jnt_BlendBone</node>
 		<geometry>
-			<vertices>s1Shapesder.vertices</vertices>
-			<stream>s1Shapesder.colour</stream>
-			<primitive>s1Shapesder.indices</primitive>
+			<vertices>s3_1Shape.vertices</vertices>
+			<stream>s3_1Shape.colour</stream>
+			<primitive>s3_1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd7_skinned</identifier>
+					<identifier>s_nd1_skinned</identifier>
 					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -482,10 +486,6 @@
 					<property>
 						normalMap
 						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_01_ANM.dds</Texture>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.057443 34.233315 -0.108397</groupOrigin>
@@ -500,19 +500,23 @@
 		<node>Rope01_02_jnt_BlendBone</node>
 		<node>Rope01_03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>s0Shapeasf.vertices</vertices>
-			<stream>s0Shapeasf.colour</stream>
-			<primitive>s0Shapeasf.indices</primitive>
+			<vertices>s3_0Shape.vertices</vertices>
+			<stream>s3_0Shape.colour</stream>
+			<primitive>s3_0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd6_skinned</identifier>
+					<identifier>s_nd0_skinned</identifier>
 					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
@@ -521,10 +525,6 @@
 					<property>
 						normalMap
 						<Texture>content/MilitaryEnvironment/hd_mle_EVT_0002_EnergyAntenna/hd_mle_EVT_0002_EnergyAntenna_ANM.dds</Texture>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 41.457359 -0.000010</groupOrigin>

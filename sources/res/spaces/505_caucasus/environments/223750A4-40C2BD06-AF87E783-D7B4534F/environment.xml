@@ -78,7 +78,7 @@
 			<map>system/maps/post_processing/cube/505_caucasus_02.dds</map>
 		</colorCorrection>
 		<rainDistortion>
-			<map>system/maps/post_processing/rain_drips/rain_drips_01.dds</map>
+			<map/>
 			<enable>false</enable>
 			<dropsStrength>40.000000</dropsStrength>
 			<dripsStrength>0.600000</dripsStrength>
@@ -203,25 +203,10 @@
 		</wind>
 	</Weather>
 	<overlayMaterial>
-		<enable>true</enable>
+		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap/>
 		<layerMask/>
-		<layer>
-			<texture>maps/overlay/Rock_moss_green.dds</texture>
-			<normalMap>maps/overlay/moss_NM.dds</normalMap>
-			<slope1>0.000000</slope1>
-			<slope2>90.000000</slope2>
-			<twoSided>false</twoSided>
-			<amount>1.000000</amount>
-			<tiling>1.000000</tiling>
-			<minAltitude>-100.000000</minAltitude>
-			<maxAltitude>100.000000</maxAltitude>
-			<altitudeFalloff>100.000000</altitudeFalloff>
-			<tileRotation>0.000000</tileRotation>
-			<azimuth>38.299999</azimuth>
-			<inclination>180.000000</inclination>
-		</layer>
 	</overlayMaterial>
 	<day_night_cycle>
 		<forward>

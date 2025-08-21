@@ -23905,11 +23905,11 @@ package
       
       public static const BP18_03_STYLE_2025_LONGDESCRIPTION:String = "#vehicle_customization:BP18_03_Style_2025/longDescription";
       
-      public static const GB86_CENTURION_ACTION_X_NAME:String = "#vehicle_customization:GB86_Centurion_Action_X/name";
+      public static const GB86_CENTURION_ACTION_X_3DST_PHANTOM_NAME:String = "#vehicle_customization:GB86_Centurion_Action_X_3Dst_Phantom/name";
       
-      public static const GB86_CENTURION_ACTION_X_DESCRIPTION:String = "#vehicle_customization:GB86_Centurion_Action_X/description";
+      public static const GB86_CENTURION_ACTION_X_3DST_PHANTOM_DESCRIPTION:String = "#vehicle_customization:GB86_Centurion_Action_X_3Dst_Phantom/description";
       
-      public static const GB86_CENTURION_ACTION_X_LONGDESCRIPTION:String = "#vehicle_customization:GB86_Centurion_Action_X/longDescription";
+      public static const GB86_CENTURION_ACTION_X_3DST_PHANTOM_LONGDESCRIPTION:String = "#vehicle_customization:GB86_Centurion_Action_X_3Dst_Phantom/longDescription";
       
       public static const WT_01_PAINT_2025_NAME:String = "#vehicle_customization:WT_01_Paint_2025/name";
       

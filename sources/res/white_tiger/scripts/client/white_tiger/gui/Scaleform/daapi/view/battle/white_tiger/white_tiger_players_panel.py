@@ -33,6 +33,9 @@ class WhiteTigerPlayersPanel(WTPlayersPanelMeta, IPlayersPanelListener):
         super(WhiteTigerPlayersPanel, self)._dispose()
         return
 
+    def switchToOtherPlayer(self, vehicleID):
+        pass
+
     def updateVehicleHealth(self, vehicleID, newHealth, maxHealth):
         if newHealth < 0:
             newHealth = 0

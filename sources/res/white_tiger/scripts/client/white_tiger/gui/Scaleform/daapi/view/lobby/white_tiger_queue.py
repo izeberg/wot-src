@@ -74,7 +74,7 @@ class WhiteTigerQueueProvider(RandomQueueProvider):
             vehicleType = WT_TAGS.WT_BOSS
         else:
             vehicleType = WT_TAGS.WT_HUNTER
-        self._proxy.as_setAverageTimeS(i18n.makeString(backport.text(R.strings.white_tiger.battleQueue.avgWaitTime.label(), vehName=R.strings.white_tiger.vehicle.tags.dyn(vehicleType).name())), _timeLabel(avgWaitTime))
+        self._proxy.as_setAverageTimeS(i18n.makeString(backport.text(R.strings.white_tiger.battleQueue.avgWaitTime.label(), vehName=backport.text(R.strings.white_tiger.vehicle.tags.dyn(vehicleType).name()))), _timeLabel(avgWaitTime))
         return
 
     def __onChanged(self):

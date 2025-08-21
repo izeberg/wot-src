@@ -1090,7 +1090,10 @@
 						<collisionModelServer>vehicles/german/G98_Waffentrager_E100_TLXXL/collision/Gun_01.model</collisionModelServer>
 						<collisionModelClient>vehicles/german/G98_Waffentrager_E100_TLXXL/collision_client/Gun_01.model</collisionModelClient>
 					</hitTester>
-					<shotOffset>-0.000001 -0.159988 -0.105363</shotOffset>
+					<shotOffset>
+						-0.000001 -0.159988 0.115
+						<!--BW_String-->
+					</shotOffset>
 					<camouflage>
 						<density>109.181145 109.012146</density>
 						<aoTextureSize>2048 2048</aoTextureSize>

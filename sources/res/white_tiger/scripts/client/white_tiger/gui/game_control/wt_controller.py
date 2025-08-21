@@ -475,6 +475,9 @@ class WhiteTigerController(IWhiteTigerController, Notifiable, SeasonProvider, IG
     def getWtBossMainVehicleIntCD(self):
         return self.__boxesCtrl.getMainPrizeVehicles()[0]
 
+    def canShowEntryPoint(self):
+        return self.__itemsCache.items.getAccountDossier().getTotalStats().getBattlesCount() > 0
+
     def __enableStreaming(self):
         if not self.__streamingIsEnabled:
             self.__streamingIsEnabled = True

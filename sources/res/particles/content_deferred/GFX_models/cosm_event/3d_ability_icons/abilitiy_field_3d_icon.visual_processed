@@ -33,7 +33,7 @@
 					</property>
 					<property>
 						diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_ANM.dds</Texture>
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/null.dds</Texture>
 					</property>
 					<property>
 						doubleSided
@@ -48,20 +48,12 @@
 						<Float>1.000000</Float>
 					</property>
 					<property>
-						gradientMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/PzKpfw_red_gradien_lumps.dds</Texture>
-					</property>
-					<property>
 						lightMultipliers
 						<Vector4>2.000000 2.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						opacity_UV_Speed_Scale
 						<Vector4>0.100000 0.100000 1.000000 1.000000</Vector4>
-					</property>
-					<property>
-						opacityMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_ANM.dds</Texture>
 					</property>
 					<property>
 						rampFreshnelMap

@@ -9,7 +9,7 @@
 	</crew>
 	<supplySlots>1 6 6 6 6 8 8 8</supplySlots>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>45</forward>
 		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
@@ -104,7 +104,7 @@
 		</armor>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>150000</weight>
-		<maxHealth>20000</maxHealth>
+		<maxHealth>21600</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>210</maxHealth>
 			<maxRegenHealth>140</maxRegenHealth>
@@ -1705,7 +1705,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>14200</weight>
-			<maxHealth>5000</maxHealth>
+			<maxHealth>5400</maxHealth>
 			<rotationSpeed>27</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>170</maxHealth>
@@ -1945,7 +1945,7 @@
 			<engines>
 				<M_50TI_W>
 					<smplEnginePower>3000</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</M_50TI_W>
 			</engines>
 			<chassis>
@@ -1977,7 +1977,7 @@
 	</physics>
 	<rocketAcceleration>
 		<deployTime>5</deployTime>
-		<reloadTime>4</reloadTime>
+		<reloadTime>5</reloadTime>
 		<reuseCount>15</reuseCount>
 		<duration>7</duration>
 		<impulse>

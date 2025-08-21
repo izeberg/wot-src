@@ -21,7 +21,7 @@ from gui.game_control.shop_sales_event_controller import getShopSalesEntryPointI
 from helpers import dependency
 from helpers.time_utils import getServerUTCTime, ONE_DAY
 from helpers.time_utils import getTimestampByStrDate
-from skeletons.gui.game_control import IEventsNotificationsController, IBootcampController, ILimitedUIController
+from skeletons.gui.game_control import IEventsNotificationsController, IBootcampController, ILimitedUIController, IWhiteTigerController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 _HANGAR_ENTRY_POINTS = 'hangarEntryPoints'
@@ -50,6 +50,7 @@ _logger = logging.getLogger(__name__)
 class _EntryPointData(object):
     __slots__ = [
      'id', 'startDate', 'endDate', 'priority', 'data', '__isValidData']
+    __wtCtrl = dependency.descriptor(IWhiteTigerController)
 
     def __init__(self, entryData):
         super(_EntryPointData, self).__init__()
@@ -103,6 +104,15 @@ class _EntryPointData(object):
 
     def getLUIRule(self):
         return collectBannerEntryPointLUIRule(self.id)
+
+    def hasExtValidation(self):
+        return self.id == 'WTEventEntryPoint'
+
+    def isExtValidationOk(self):
+        if not self.hasExtValidation():
+            return False
+        res = self.__wtCtrl.canShowEntryPoint()
+        return res
 
 
 class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlobalListener):
@@ -236,10 +246,13 @@ class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlob
             sortedEntries = sorted(self.__entries.itervalues(), key=attrgetter('priority', 'startDate'))
             for entry in sortedEntries:
                 isValidCount = count < _COUNT_VISIBLE_ENTRY_POINTS
-                if isValidCount and entry.getIsValidDateForCreation() and entry.getIsEnabledByValidator() and self.__luiController.isRuleCompleted(entry.getLUIRule()) and self.__strongholdEntryPointValidator(entry):
-                    count += 1
-                    data.append({'entryLinkage': entry.id, 
-                       'swfPath': _ADDITIONAL_SWFS_MAP.get(entry.id, '')})
+                if isValidCount and entry.getIsValidDateForCreation() and entry.getIsEnabledByValidator() and self.__strongholdEntryPointValidator(entry):
+                    state1 = not entry.hasExtValidation() and self.__luiController.isRuleCompleted(entry.getLUIRule())
+                    state2 = entry.hasExtValidation() and entry.isExtValidationOk()
+                    if state1 or state2:
+                        count += 1
+                        data.append({'entryLinkage': entry.id, 
+                           'swfPath': _ADDITIONAL_SWFS_MAP.get(entry.id, '')})
 
         self.as_updateEntriesS(data)
 

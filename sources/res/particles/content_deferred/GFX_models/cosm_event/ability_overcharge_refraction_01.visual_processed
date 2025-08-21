@@ -44,10 +44,6 @@
 						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						phaseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_GMM.dds</Texture>
-					</property>
-					<property>
 						rampFresnelMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Gradient_transparentEdge_02.dds</Texture>
 					</property>

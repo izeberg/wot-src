@@ -1,6 +1,7 @@
 import logging, json
 from gui.Scaleform.daapi.view.lobby.referral_program.referral_program_helpers import isReferralProgramEnabled
 from gui.clientgw.promo_screens.parsers import PromoDataParser
+from gui.referral_program import ScoresLimitReachedError
 from gui.wgnc import proxy_data
 from gui.wgnc.errors import ParseError
 from gui.wgnc.wgnc_helpers import parseSize
@@ -218,7 +219,7 @@ class _ReferralProgramPGBFullChecker(SectionParser):
         isCurrentlyFull = self.__referralProgramController.isScoresLimitReached()
         value = section.asBool
         if value != isCurrentlyFull:
-            raise ParseError(('Referral Program PGB is {}').format('full' if isCurrentlyFull else 'not full'))
+            raise ScoresLimitReachedError(('Referral Program PGB is {}').format('full' if isCurrentlyFull else 'not full'))
 
 
 class _CheckClientStateParser(ParsersCollection):

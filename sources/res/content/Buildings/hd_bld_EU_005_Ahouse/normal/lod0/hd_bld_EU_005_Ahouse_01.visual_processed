@@ -276,10 +276,6 @@
 						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
 					</property>
 					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
@@ -670,6 +666,6 @@
 		<max>11.331949 18.031084 10.173223</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>1218308</geometrySize>
+	<geometrySize>1217824</geometrySize>
 	<minUVDensity>0.000107</minUVDensity>
 </root>

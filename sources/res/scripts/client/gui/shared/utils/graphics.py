@@ -174,7 +174,7 @@ def getInterfaceScalesList(size):
     screenWidth, screenHeight = size
     scaleSetting = None
     for value in _SCALES:
-        if screenWidth <= value.width and screenHeight <= value.height:
+        if screenWidth <= value.width or screenHeight <= value.height:
             scaleSetting = value
             break
 

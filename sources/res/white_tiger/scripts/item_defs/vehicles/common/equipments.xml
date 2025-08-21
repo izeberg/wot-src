@@ -276,7 +276,7 @@
 		<script>
 			VisualScriptEquipment
 			<deploySeconds>60</deploySeconds>
-			<cooldownSeconds>120</cooldownSeconds>
+			<cooldownSeconds>90</cooldownSeconds>
 			<consumeSeconds>7</consumeSeconds>
 			<reuseCount>-1</reuseCount>
 			<visualScript>
@@ -540,9 +540,9 @@
 		</vehicleFilter>
 		<script>
 			white_tiger_common.wt_artefacts.WTUnionStrength
-			<effectDuration>10</effectDuration>
+			<effectDuration>7</effectDuration>
 			<receiveDamageFactor>
-				0.25
+				0.20
 				<!--BW_String-->
 			</receiveDamageFactor>
 			<visualEffects>
@@ -619,7 +619,7 @@
 						<name>abilities/plasmaExtractor</name>
 						<params>
 							<damageMultiplierPerPlasma>
-								0.2
+								0.25
 								<!--BW_String-->
 							</damageMultiplierPerPlasma>
 							<maxPlasmaTakeFromHunter>1</maxPlasmaTakeFromHunter>
@@ -630,7 +630,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				45
+				30
 				<exports>vse</exports>
 			</cooldownSeconds>
 		</script>
@@ -814,7 +814,7 @@
 		<script>
 			VisualScriptEquipment
 			<deploySeconds>60</deploySeconds>
-			<cooldownSeconds>120</cooldownSeconds>
+			<cooldownSeconds>90</cooldownSeconds>
 			<consumeSeconds>7</consumeSeconds>
 			<reuseCount>-1</reuseCount>
 			<visualScript>

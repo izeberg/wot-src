@@ -183,7 +183,7 @@ package net.wg.gui.prebattle.controls
             this.numberField.textColor = _loc2_;
             vehicleLevelField.textColor = _loc2_;
          }
-         vehicleNameField.htmlText = model.vShortName;
+         updateVehicleName();
          this.updateValidVehicleState(this.isVehicleValid);
          if(isNaN(model.orderNumber))
          {
@@ -226,7 +226,7 @@ package net.wg.gui.prebattle.controls
          TextFieldEx.setVerticalAlign(textField,TextFieldEx.VALIGN_TOP);
          TextFieldEx.setVerticalAlign(vehicleNameField,TextFieldEx.VALIGN_TOP);
          TextFieldEx.setVerticalAlign(this.numberField,TextFieldEx.VALIGN_TOP);
-         vehicleNameField.htmlText = Boolean(model) ? model.vShortName : Values.EMPTY_STR;
+         updateVehicleName();
          this.numberField.text = Boolean(model) ? String(model.orderNumber) : Values.EMPTY_STR;
          var _loc1_:Number = Boolean(model) ? Number(model.getCurrentColor()) : Number(Number.NaN);
          if(!isNaN(_loc1_))

@@ -35,8 +35,8 @@ class PlayStreakStyleProgressBonusUIPacker(StyleProgressBonusUIPacker):
         progressLevel = bonus.getProgressLevel()
         camo = getProgressionStyleCamouflage(styleID, branchID, progressLevel)
         if camo is not None:
-            icon = cls.__getIcon(styleID, progressLevel)
-            label = cls.__getLabel(camo)
+            icon = cls._getIcon(styleID, progressLevel)
+            label = cls._getLabel(camo)
         else:
             _logger.error('Missing camouflage for StyleProgressBonus: styleID=%s; level=%s', styleID, progressLevel)
             icon = ''
@@ -51,11 +51,11 @@ class PlayStreakStyleProgressBonusUIPacker(StyleProgressBonusUIPacker):
         return model
 
     @staticmethod
-    def __getIcon(styleID, progressLevel):
+    def _getIcon(styleID, progressLevel):
         return ('style_progress_{styleID}_{progressLevel}').format(styleID=styleID, progressLevel=progressLevel)
 
     @staticmethod
-    def __getLabel(camo):
+    def _getLabel(camo):
         return camo.longUserName
 
 
