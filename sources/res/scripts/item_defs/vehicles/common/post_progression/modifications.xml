@@ -7379,7 +7379,7 @@
 			<mul>
 				<name>miscAttrs/enginePowerFactor</name>
 				<value>
-					1.16
+					1.12
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -7390,7 +7390,7 @@
 			<mul>
 				<name>miscAttrs/gunReloadTimeFactor</name>
 				<value>
-					1.06
+					1.07
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -7399,7 +7399,7 @@
 			<mul>
 				<name>vehicleEnginePower</name>
 				<value>
-					1.16
+					1.12
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -7410,7 +7410,7 @@
 			<mul>
 				<name>vehicleGunReloadTime</name>
 				<value>
-					1.06
+					1.07
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -7423,14 +7423,14 @@
 			<mul>
 				<name>miscAttrs/gunReloadTimeFactor</name>
 				<value>
-					0.94
+					0.97
 					<!--BW_String-->
 				</value>
 			</mul>
 			<mul>
 				<name>miscAttrs/enginePowerFactor</name>
 				<value>
-					0.84
+					0.88
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -7443,14 +7443,14 @@
 			<mul>
 				<name>vehicleGunReloadTime</name>
 				<value>
-					0.94
+					0.97
 					<!--BW_String-->
 				</value>
 			</mul>
 			<mul>
 				<name>vehicleEnginePower</name>
 				<value>
-					0.84
+					0.88
 					<!--BW_String-->
 				</value>
 			</mul>

@@ -11709,13 +11709,13 @@
 						0.8
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>1250</speed>
+					<speed>950</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>218 185</piercingPower>
+					<piercingPower>208 176</piercingPower>
 				</_105mm_APDS_L28>
 				<_105mm_HEAT_L51>
 					<defaultPortion>
@@ -11728,7 +11728,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>260 260</piercingPower>
+					<piercingPower>250 250</piercingPower>
 				</_105mm_HEAT_L51>
 				<_105mm_HESH_L35>
 					<defaultPortion>

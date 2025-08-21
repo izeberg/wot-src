@@ -2452,7 +2452,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.0
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
@@ -2461,7 +2461,10 @@
 					</shotDispersionRadius>
 					<clip>
 						<count>2</count>
-						<rate>24</rate>
+						<rate>
+							17.14
+							<!--BW_String-->
+						</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>13 20</reloadTime>
