@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/A182_gunsleeve_bully/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.199964 -0.272802 -1.870020</min>
+		<max>0.187396 0.185839 2.688405</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/A182_gunsleeve_bully/normal/lod1/attachment</nodefullVisual>
+</root>

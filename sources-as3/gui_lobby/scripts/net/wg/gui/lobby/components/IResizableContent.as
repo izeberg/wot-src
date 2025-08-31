@@ -1,12 +1,13 @@
 package net.wg.gui.lobby.components
 {
+   import flash.geom.Rectangle;
    import net.wg.infrastructure.interfaces.IViewStackContent;
    
    public interface IResizableContent extends IViewStackContent
    {
        
       
-      function setViewSize(param1:Number, param2:Number) : void;
+      function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void;
       
       function get centerOffset() : int;
       

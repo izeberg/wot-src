@@ -21,7 +21,6 @@ from gui.impl.backport import BackportTooltipWindow
 from gui.impl.gen import R
 from gui.impl.gui_decorators import args2params
 from gui.impl.lobby.tooltips.additional_rewards_tooltip import AdditionalRewardsTooltip
-from gui.shared.event_dispatcher import showStylePreview
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from helpers import dependency
 from items.vehicles import makeVehicleTypeCompDescrByName
@@ -40,7 +39,7 @@ _BonusData = namedtuple('_BonusData', ('bonus', 'tooltip'))
 _DEFAULT_PREVIEW_VEHICLE = 'uk:GB91_Super_Conqueror'
 
 class RankRewardsPage(PageSubModelPresenter):
-    __slots__ = ('__bonusData', '__rankQuests', '__periodicQuests')
+    __slots__ = ('__bonusData', '__rankQuests', '__periodicQuests', '__itemIndex')
     __itemsCache = dependency.descriptor(IItemsCache)
     __c11nService = dependency.descriptor(ICustomizationService)
     __eventsCache = dependency.descriptor(IEventsCache)
@@ -51,6 +50,7 @@ class RankRewardsPage(PageSubModelPresenter):
         self.__rankQuests = {}
         self.__periodicQuests = {}
         self.__bonusData = {}
+        self.__itemIndex = RankRewardsModel.DEFAULT_ITEM_INDEX
 
     @property
     def pageId(self):
@@ -63,6 +63,10 @@ class RankRewardsPage(PageSubModelPresenter):
     @property
     def ranksConfig(self):
         return self.__comp7Controller.getRanksConfig()
+
+    @property
+    def itemIndex(self):
+        return self.__itemIndex
 
     def createToolTip(self, event):
         if event.contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
@@ -83,21 +87,23 @@ class RankRewardsPage(PageSubModelPresenter):
             bonuses = [ d.bonus for d in self.__bonusData[rank][fromIndex:] ]
             return AdditionalRewardsTooltip(bonuses)
         else:
-            if contentID == R.views.comp7.lobby.tooltips.GeneralRankTooltip():
+            if contentID == R.views.comp7.mono.lobby.tooltips.general_rank_tooltip():
                 params = {'rank': Rank(event.getArgument('rank')), 'divisions': event.getArgument('divisions'), 
                    'from': event.getArgument('from'), 
                    'to': event.getArgument('to')}
                 return GeneralRankTooltip(params=params)
-            if contentID == R.views.comp7.lobby.tooltips.FifthRankTooltip():
+            if contentID == R.views.comp7.mono.lobby.tooltips.fifth_rank_tooltip():
                 return FifthRankTooltip()
-            if contentID == R.views.comp7.lobby.tooltips.SixthRankTooltip():
+            if contentID == R.views.comp7.mono.lobby.tooltips.sixth_rank_tooltip():
                 return SixthRankTooltip()
             return
 
-    def initialize(self, index=None, *args, **kwargs):
-        super(RankRewardsPage, self).initialize()
+    def initialize(self, **params):
+        super(RankRewardsPage, self).initialize(**params)
+        index = params.get('index')
         if index is None:
             index = RankRewardsModel.DEFAULT_ITEM_INDEX
+        self.__itemIndex = index
         with self.viewModel.transaction() as (tx):
             tx.setInitialItemIndex(index)
             comp7_model_helpers.setElitePercentage(tx)
@@ -182,13 +188,15 @@ class RankRewardsPage(PageSubModelPresenter):
 
     @args2params(int, int)
     def __onPreviewOpen(self, rank, index):
+        self.__itemIndex = index
         bonus = first(self.__bonusData[rank]).bonus
         style = self.__c11nService.getItemByID(GUI_ITEM_TYPE.STYLE, bonus.getStyleID())
         vehIntCD = getStylePreviewVehicle(style, makeVehicleTypeCompDescrByName(_DEFAULT_PREVIEW_VEHICLE))
         vehicle = self.__itemsCache.items.getItemByCD(vehIntCD)
         compactDescr = vehicle.descriptor.makeCompactDescr()
-        outfit = getPreviewOutfit(style, bonus.getBranchID(), bonus.getProgressLevel(), compactDescr)
-        showStylePreview(vehIntCD, style, backCallback=partial(comp7_events.showComp7MetaRootView, self.pageId, index), outfit=outfit)
+        params = {'outfit': getPreviewOutfit(style, bonus.getBranchID(), bonus.getProgressLevel(), compactDescr), 
+           'backCallback': partial(comp7_events.showComp7MetaRootTab, self.pageId, index=index)}
+        comp7_events.showComp7StylePreview(vehIntCD, style, **params)
 
     @staticmethod
     def __setRewards(itemModel, bonusData):

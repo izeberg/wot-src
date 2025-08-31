@@ -97,12 +97,12 @@
 			<vehicleClass>SPG</vehicleClass>
 		</filter>
 		<filter>
-			<id>from_2_to_10_levels</id>
-			<levels>2 3 4 5 6 7 8 9 10</levels>
+			<id>from_2_to_11_levels</id>
+			<levels>2 3 4 5 6 7 8 9 10 11</levels>
 		</filter>
 		<filter>
-			<id>from_5_to_10_levels</id>
-			<levels>5 6 7 8 9 10</levels>
+			<id>from_5_to_11_levels</id>
+			<levels>5 6 7 8 9 10 11</levels>
 		</filter>
 		<filter>
 			<id>opt_device_category</id>
@@ -224,12 +224,6 @@
 			<filter>from_151_battles</filter>
 		</tip>
 		<tip>
-			<id>tip20</id>
-			<status>payAttention</status>
-			<group>economics</group>
-			<filter>from_50_to_500_battles</filter>
-		</tip>
-		<tip>
 			<id>tip23</id>
 			<status>payAttention</status>
 			<filter>from_200_battles</filter>
@@ -348,12 +342,6 @@
 			<filter>from_500_battles</filter>
 		</tip>
 		<tip>
-			<id>tip59</id>
-			<status>payAttention</status>
-			<group>economics</group>
-			<filter>from_100_to_500_battles</filter>
-		</tip>
-		<tip>
 			<id>tip60</id>
 			<status>payAttention</status>
 			<group>economics</group>
@@ -410,7 +398,7 @@
 		<tip>
 			<id>tip77</id>
 			<status>payAttention</status>
-			<filter>from_5_to_10_levels</filter>
+			<filter>from_5_to_11_levels</filter>
 		</tip>
 		<tip>
 			<id>tip78</id>
@@ -501,7 +489,7 @@
 		<tip>
 			<id>tip98</id>
 			<status>payAttention</status>
-			<filter>from_2_to_10_levels</filter>
+			<filter>from_2_to_11_levels</filter>
 		</tip>
 		<tip>
 			<id>tip99</id>
@@ -940,7 +928,7 @@
 		<tip>
 			<id>tip191</id>
 			<status>payAttention</status>
-			<filter>from_2_to_10_levels</filter>
+			<filter>from_2_to_11_levels</filter>
 		</tip>
 		<tip>
 			<id>tip192</id>
@@ -950,7 +938,7 @@
 		<tip>
 			<id>tip193</id>
 			<status>payAttention</status>
-			<filter>from_2_to_10_levels</filter>
+			<filter>from_2_to_11_levels</filter>
 		</tip>
 		<tip>
 			<id>tip194</id>
@@ -1242,154 +1230,162 @@
 			<status>battleRoyale6Status</status>
 		</tip>
 		<tip>
-			<id>comp70</id>
-			<status>comp70Status</status>
+			<id>comp7Ranked0</id>
+			<status>comp7Ranked0Status</status>
 		</tip>
 		<tip>
-			<id>comp71</id>
-			<status>comp71Status</status>
+			<id>comp7Ranked1</id>
+			<status>comp7Ranked1Status</status>
 		</tip>
 		<tip>
-			<id>comp72</id>
-			<status>comp72Status</status>
+			<id>comp7Ranked2</id>
+			<status>comp7Ranked2Status</status>
 		</tip>
 		<tip>
-			<id>comp73</id>
-			<status>comp73Status</status>
+			<id>comp7Ranked3</id>
+			<status>comp7Ranked3Status</status>
 		</tip>
 		<tip>
-			<id>comp74</id>
-			<status>comp74Status</status>
+			<id>comp7Ranked4</id>
+			<status>comp7Ranked4Status</status>
 		</tip>
 		<tip>
-			<id>comp75</id>
-			<status>comp75Status</status>
+			<id>comp7Core5</id>
+			<status>comp7Core5Status</status>
 		</tip>
 		<tip>
-			<id>comp76</id>
-			<status>comp76Status</status>
+			<id>comp7Core6</id>
+			<status>comp7Core6Status</status>
 		</tip>
 		<tip>
-			<id>comp77</id>
-			<status>comp77Status</status>
+			<id>comp7Ranked7</id>
+			<status>comp7Ranked7Status</status>
 		</tip>
 		<tip>
-			<id>comp78</id>
-			<status>comp78Status</status>
+			<id>comp7Light7</id>
+			<status>comp7Light7Status</status>
 		</tip>
 		<tip>
-			<id>comp79</id>
-			<status>comp79Status</status>
+			<id>comp7Core8</id>
+			<status>comp7Core8Status</status>
 		</tip>
 		<tip>
-			<id>comp710</id>
-			<status>comp710Status</status>
+			<id>comp7Ranked9</id>
+			<status>comp7Ranked9Status</status>
 		</tip>
 		<tip>
-			<id>comp711</id>
-			<status>comp711Status</status>
+			<id>comp7Light9</id>
+			<status>comp7Light9Status</status>
 		</tip>
 		<tip>
-			<id>comp712</id>
-			<status>comp712Status</status>
+			<id>comp7Core10</id>
+			<status>comp7Core10Status</status>
 		</tip>
 		<tip>
-			<id>comp713</id>
-			<status>comp713Status</status>
+			<id>comp7Core11</id>
+			<status>comp7Core11Status</status>
 		</tip>
 		<tip>
-			<id>comp714</id>
-			<status>comp714Status</status>
+			<id>comp7Core12</id>
+			<status>comp7Core12Status</status>
 		</tip>
 		<tip>
-			<id>comp715</id>
-			<status>comp715Status</status>
+			<id>comp7Core13</id>
+			<status>comp7Core13Status</status>
 		</tip>
 		<tip>
-			<id>comp716</id>
-			<status>comp716Status</status>
+			<id>comp7Core14</id>
+			<status>comp7Core14Status</status>
 		</tip>
 		<tip>
-			<id>comp717</id>
-			<status>comp717Status</status>
+			<id>comp7Core15</id>
+			<status>comp7Core15Status</status>
 		</tip>
 		<tip>
-			<id>comp718</id>
-			<status>comp718Status</status>
+			<id>comp7Core16</id>
+			<status>comp7Core16Status</status>
 		</tip>
 		<tip>
-			<id>comp719</id>
-			<status>comp719Status</status>
+			<id>comp7Core17</id>
+			<status>comp7Core17Status</status>
 		</tip>
 		<tip>
-			<id>comp720</id>
-			<status>comp720Status</status>
+			<id>comp7Core18</id>
+			<status>comp7Core18Status</status>
 		</tip>
 		<tip>
-			<id>comp721</id>
-			<status>comp721Status</status>
+			<id>comp7Core19</id>
+			<status>comp7Core19Status</status>
 		</tip>
 		<tip>
-			<id>comp722</id>
-			<status>comp722Status</status>
+			<id>comp7Ranked20</id>
+			<status>comp7Ranked20Status</status>
 		</tip>
 		<tip>
-			<id>comp723</id>
-			<status>comp723Status</status>
+			<id>comp7Core21</id>
+			<status>comp7Core21Status</status>
 		</tip>
 		<tip>
-			<id>comp724</id>
-			<status>comp724Status</status>
+			<id>comp7Core22</id>
+			<status>comp7Core22Status</status>
+		</tip>
+		<tip>
+			<id>comp7Core23</id>
+			<status>comp7Core23Status</status>
+		</tip>
+		<tip>
+			<id>comp7Core24</id>
+			<status>comp7Core24Status</status>
 			<filter>nonCnRealms</filter>
 		</tip>
 		<tip>
-			<id>comp725</id>
-			<status>comp725Status</status>
+			<id>comp7Core25</id>
+			<status>comp7Core25Status</status>
 			<filter>nonCnRealms</filter>
 		</tip>
 		<tip>
-			<id>comp726</id>
-			<status>comp726Status</status>
+			<id>comp7Ranked26</id>
+			<status>comp7Ranked26Status</status>
 		</tip>
 		<tip>
-			<id>comp727</id>
-			<status>comp727Status</status>
+			<id>comp7Ranked27</id>
+			<status>comp7Ranked27Status</status>
 		</tip>
 		<tip>
-			<id>comp728</id>
-			<status>comp728Status</status>
+			<id>comp7Ranked28</id>
+			<status>comp7Ranked28Status</status>
 		</tip>
 		<tip>
-			<id>comp729</id>
-			<status>comp729Status</status>
+			<id>comp7Core29</id>
+			<status>comp7Core29Status</status>
 		</tip>
 		<tip>
-			<id>comp731</id>
-			<status>comp731Status</status>
+			<id>comp7Core31</id>
+			<status>comp7Core31Status</status>
 		</tip>
 		<tip>
-			<id>comp732</id>
-			<status>comp732Status</status>
+			<id>comp7Core32</id>
+			<status>comp7Core32Status</status>
 		</tip>
 		<tip>
-			<id>comp733</id>
-			<status>comp733Status</status>
+			<id>comp7Core33</id>
+			<status>comp7Core33Status</status>
 		</tip>
 		<tip>
-			<id>comp734</id>
-			<status>comp734Status</status>
+			<id>comp7Core34</id>
+			<status>comp7Core34Status</status>
 		</tip>
 		<tip>
-			<id>comp735</id>
-			<status>comp735Status</status>
+			<id>comp7Core35</id>
+			<status>comp7Core35Status</status>
 		</tip>
 		<tip>
-			<id>comp736</id>
-			<status>comp736Status</status>
+			<id>comp7Ranked36</id>
+			<status>comp7Ranked36Status</status>
 		</tip>
 		<tip>
-			<id>comp737</id>
-			<status>comp737Status</status>
+			<id>comp7Core37</id>
+			<status>comp7Core37Status</status>
 		</tip>
 		<tip>
 			<id>winback1</id>

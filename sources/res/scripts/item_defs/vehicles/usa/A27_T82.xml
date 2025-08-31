@@ -2796,7 +2796,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				1.5 1.8 2.7
 				<!--BW_String-->
@@ -5089,7 +5088,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>18000</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.5
 				<!--BW_String-->
@@ -7409,11 +7407,13 @@
 							12.7
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_1>
 						<armor_2>
 							6.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_2>
 						<gun>20</gun>
 					</armor>
@@ -7501,7 +7501,7 @@
 			</guns>
 			<ceilless>true</ceilless>
 			<userString>#usa_vehicles:Turret_1_A27_T82</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach  turretless</tags>
 			<level>4</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -7681,7 +7681,7 @@
 			</guns>
 			<ceilless>true</ceilless>
 			<userString>#usa_vehicles:Turret_2_A27_T82</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>4</level>
 			<price>100</price>
 			<notInShop>true</notInShop>

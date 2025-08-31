@@ -2,15 +2,13 @@ import BigWorld, nations
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import VEHICLES_WITH_BLUEPRINT_CONFIRM, STORAGE_BLUEPRINTS_CAROUSEL_FILTER
 from adisp import adisp_process
+from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from wg_async import wg_async, wg_await
 from blueprints.BlueprintTypes import BlueprintTypes
 from frameworks.wulf import ViewSettings
 from frameworks.wulf.gui_constants import ViewFlags, ViewStatus
 from gui.ClientUpdateManager import g_clientUpdateManager
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-from gui.Scaleform.daapi.view.lobby.go_back_helper import getBackBtnDescription
 from gui.Scaleform.daapi.view.lobby.techtree.techtree_dp import g_techTreeDP
-from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.impl.backport import createTooltipData, BackportTooltipWindow
 from gui.impl.dialogs import dialogs
@@ -23,8 +21,7 @@ from gui.impl.lobby.blueprints import getBlueprintTooltipData
 from gui.impl.lobby.blueprints.fragments_balance_content import FragmentsBalanceContent
 from gui.impl.pub import ViewImpl
 from gui.server_events.formatters import DISCOUNT_TYPE
-from gui.shared import g_eventBus, event_dispatcher, events
-from gui.shared.event_bus import EVENT_BUS_SCOPE
+from gui.shared import event_dispatcher
 from gui.shared.gui_items.items_actions import factory
 from gui.shared.gui_items.items_actions.actions import UnlockItemActionWithResult
 from gui.shared.utils.functions import getVehTypeIconName
@@ -38,7 +35,7 @@ class BlueprintScreen(ViewImpl):
     __itemsCache = dependency.descriptor(IItemsCache)
     __connectionMgr = dependency.descriptor(IConnectionManager)
     __slots__ = ('__vehicle', '__xpCost', '__fullXpCost', '__discount', '__convertedIndexes',
-                 '__exitEvent', '__accountSettings')
+                 '__accountSettings')
 
     def __init__(self, viewKey, viewModelClazz=BlueprintScreenModel, ctx=None):
         settings = ViewSettings(viewKey)
@@ -46,7 +43,6 @@ class BlueprintScreen(ViewImpl):
         settings.model = viewModelClazz()
         super(BlueprintScreen, self).__init__(settings)
         self.__vehicle = self.__itemsCache.items.getItemByCD(ctx.get('vehicleCD', None))
-        self.__exitEvent = ctx.get('exitEvent') if ctx is not None else None
         self.__xpCost = 0
         self.__fullXpCost = 0
         self.__discount = 0
@@ -107,9 +103,9 @@ class BlueprintScreen(ViewImpl):
             model.setMaxConvertibleFragmentCount(maxFragmentCount)
             self.__updateLayout(model, layout)
             model.setShowUnavailableConfirm(not isAvailableForUnlock and not isSchemeFullCompleted and vehicle.intCD not in self.__accountSettings)
+            model.setBackBtnLabel(getLobbyStateMachine().backNavigationDescription)
             conversionMaxCost = model.conversionMaxCost
             self.__updateConversionData(conversionMaxCost)
-            model.setBackBtnLabel(getBackBtnDescription(self.__exitEvent, self.__exitEvent.name, vehicle.shortUserName))
             model.setCurrentStateView(BlueprintScreenModel.INIT)
         self.setChildView(R.dynamic_ids.blueprint_screen.balance_content(), FragmentsBalanceContent(vehicle.intCD))
 
@@ -122,11 +118,9 @@ class BlueprintScreen(ViewImpl):
         self.__accountSettings = None
         if self.__connectionMgr.isConnected():
             BigWorld.worldDrawEnabled(True)
-        if self.__exitEvent is not None:
-            storageFilter = AccountSettings.getSessionSettings(STORAGE_BLUEPRINTS_CAROUSEL_FILTER)
-            storageFilter['scroll_to'] = None
-            AccountSettings.setSessionSettings(STORAGE_BLUEPRINTS_CAROUSEL_FILTER, storageFilter)
-            self.__exitEvent = None
+        storageFilter = AccountSettings.getSessionSettings(STORAGE_BLUEPRINTS_CAROUSEL_FILTER)
+        storageFilter['scroll_to'] = None
+        AccountSettings.setSessionSettings(STORAGE_BLUEPRINTS_CAROUSEL_FILTER, storageFilter)
         super(BlueprintScreen, self)._finalize()
         return
 
@@ -166,18 +160,13 @@ class BlueprintScreen(ViewImpl):
             factory.doAction(factory.CONVERT_BLUEPRINT_FRAGMENT, self.__vehicle.intCD, fragmentCount, usedNationalFragments=usedFragmentsData)
 
     def __onCloseAction(self):
-        if self.__exitEvent is not None:
-            g_eventBus.handleEvent(self.__exitEvent, scope=EVENT_BUS_SCOPE.LOBBY)
-            self.__exitEvent = None
-        else:
-            self.destroyWindow()
-        return
+        self.destroyWindow()
 
     def __onSubmitUnavailableConfirm(self):
         self.__accountSettings.add(self.__vehicle.intCD)
 
     def __onOpenVehicleViewBtnClicked(self):
-        event_dispatcher.showResearchView(self.__vehicle.intCD, exitEvent=events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_TECHTREE), ctx={'nation': self.__vehicle.nationName}))
+        event_dispatcher.showVehicleHubModules(self.__vehicle.intCD)
 
     @adisp_process
     def __onResearchVehicle(self, _=None):

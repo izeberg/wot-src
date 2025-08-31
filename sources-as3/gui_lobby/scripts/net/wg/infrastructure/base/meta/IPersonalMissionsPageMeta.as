@@ -8,7 +8,7 @@ package net.wg.infrastructure.base.meta
       
       function onBarClickS(param1:int, param2:int) : void;
       
-      function onSkipTaskClickS() : void;
+      function onSkipTaskClickS(param1:int) : void;
       
       function onBackBtnClickS() : void;
       

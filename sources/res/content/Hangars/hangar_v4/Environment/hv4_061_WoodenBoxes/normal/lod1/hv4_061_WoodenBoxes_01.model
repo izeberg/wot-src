@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_061_WoodenBoxes/normal/lod2/hv4_061_WoodenBoxes_01</parent>
+	<extent>70.000000</extent>
+	<visibilityBox>
+		<min>-0.572291 -0.000001 -1.226965</min>
+		<max>0.572807 1.068896 1.226964</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_061_WoodenBoxes/normal/lod1/hv4_061_WoodenBoxes_01</nodefullVisual>
+</root>

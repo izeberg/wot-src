@@ -12,6 +12,11 @@
 			<UUID>09bb9229-84af-4c68-8d46-391928e7d3a2</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>2228a5f0-a368-475d-a281-936b4513d4d1</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -19,6 +24,16 @@
 			<version>2</version>
 			<component>
 				<UUID>09bb9229-84af-4c68-8d46-391928e7d3a2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>2228a5f0-a368-475d-a281-936b4513d4d1</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2228a5f0-a368-475d-a281-936b4513d4d1</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -64,6 +79,50 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>2228a5f0-a368-475d-a281-936b4513d4d1</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1a3a2659-efa2-4abb-9942-2b755bb617c0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>2228a5f0-a368-475d-a281-936b4513d4d1</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -135,6 +194,14 @@
 						<name>Visible in TWIN_GUN MODE</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -152,6 +219,20 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1a3a2659-efa2-4abb-9942-2b755bb617c0</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
 						<value>1</value>
 					</property>
 				</config>

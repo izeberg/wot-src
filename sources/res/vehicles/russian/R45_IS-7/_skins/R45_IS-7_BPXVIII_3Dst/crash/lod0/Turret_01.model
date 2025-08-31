@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.550370 -0.000701 -2.578907</min>
+		<max>1.550371 1.283049 1.527454</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/crash/lod0/Turret_01</nodefullVisual>
+</root>

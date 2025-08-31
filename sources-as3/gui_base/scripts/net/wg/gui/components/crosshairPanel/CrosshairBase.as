@@ -1,18 +1,24 @@
 package net.wg.gui.components.crosshairPanel
 {
+   import com.gskinner.motion.GTweener;
+   import com.gskinner.motion.easing.Cubic;
    import flash.display.MovieClip;
    import flash.display.Sprite;
    import flash.external.ExternalInterface;
+   import flash.filters.BevelFilter;
+   import flash.filters.BitmapFilterType;
+   import flash.geom.ColorTransform;
    import flash.text.TextField;
-   import flash.utils.getDefinitionByName;
-   import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.CLIP_RELOADING_TYPES;
    import net.wg.data.constants.generated.CROSSHAIR_CONSTANTS;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
-   import net.wg.gui.components.crosshairPanel.components.OverheatBar;
    import net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderIndicator;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
+   import net.wg.gui.components.crosshairPanel.components.controllableLoader.ControllableReloadCassette;
+   import net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipPanel;
+   import net.wg.gui.components.crosshairPanel.components.gunStack.ReloadBoostBorder;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    
    public class CrosshairBase extends MovieClip implements ICrosshair
@@ -22,7 +28,23 @@ package net.wg.gui.components.crosshairPanel
       
       private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
       
+      private static const RELOAD_TIME_BLINK_DURATION:Number = 0.5;
+      
+      private static const RELOAD_TIME_COLOR_TRANSFORM_BLINK_VALUES:Object = {
+         "redOffset":255,
+         "greenOffset":255,
+         "blueOffset":255
+      };
+      
       private static const TF_LEFT_MARGIN:int = 2;
+      
+      private static const RELOAD_BORDER_OFFSET:int = 91;
+      
+      private static const SIEGE_PILLBOX_NET_TYPES:Vector.<int> = new <int>[4,5];
+      
+      private static const BOOSTED_TEXT_COLOR:uint = 14286645;
+      
+      private static const BOOSTED_TEXT_COLOR_RELOAD:uint = 15356485;
        
       
       public var timerProgressTextField:TextField = null;
@@ -45,13 +67,21 @@ package net.wg.gui.components.crosshairPanel
       
       public var netMC:Sprite = null;
       
-      public var netSeparator:Sprite = null;
+      public var netSeparator:CrosshairNetSeparator = null;
       
       public var distance:CrosshairDistanceContainer = null;
       
       public var averageDamage:CrosshairAverageDamageContainer = null;
       
       public var autoloaderComponent:AutoloaderIndicator = null;
+      
+      public var extraShotClipPanel:ExtraShotClipPanel = null;
+      
+      public var controllableReloadCassette:ControllableReloadCassette = null;
+      
+      public var reloadBoostBorder:ReloadBoostBorder = null;
+      
+      private var _isOverheat:Boolean = false;
       
       protected var health:Number = 0;
       
@@ -75,9 +105,21 @@ package net.wg.gui.components.crosshairPanel
       
       protected var reloadingTimeFieldAlpha:Number = 1.0;
       
-      private var _overheatBar:OverheatBar = null;
+      private var _netSeparatorType:String = "default";
       
-      private var _isAutoloader:Boolean = false;
+      private var _timerProgressTextFieldColor:uint = 0;
+      
+      private var _timerCompleteTextFieldColor:uint = 0;
+      
+      private var _timerProgressTextFieldFilter:Array;
+      
+      private var _timerCompleteTextFieldFilter:Array;
+      
+      private var _timerBoostedFilter:Array;
+      
+      private var _reloadTimeColorTransform:ColorTransform;
+      
+      private var _clipReloadingType:int = 0;
       
       private var _currentTimerTextField:TextField = null;
       
@@ -101,8 +143,22 @@ package net.wg.gui.components.crosshairPanel
       
       private var _disposed:Boolean = false;
       
+      private var _width:Number = 0;
+      
+      private var _height:Number = 0;
+      
+      private var _isReloadBoost:Boolean = false;
+      
+      private var _isReloadBoostBorder:Boolean = false;
+      
+      private var _isReloadBoostBorderActive:Boolean = false;
+      
       public function CrosshairBase()
       {
+         this._timerProgressTextFieldFilter = [];
+         this._timerCompleteTextFieldFilter = [];
+         this._timerBoostedFilter = [];
+         this._reloadTimeColorTransform = new ColorTransform();
          super();
          this.cassetteMC.isUseFrameAnimation = this._isUseFrameAnimation;
          this.timerProgressTextField.visible = false;
@@ -110,21 +166,53 @@ package net.wg.gui.components.crosshairPanel
          this.updateQuickReloadingTimer();
          addEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
          this._reloadTimeBlinkYPos = this.getReloadTimeBlinkYPos();
+         this._timerProgressTextFieldColor = this.timerProgressTextField.textColor;
+         this._reloadTimeColorTransform.color = this._timerProgressTextFieldColor;
+         this._timerProgressTextFieldFilter = this.timerProgressTextField.filters;
+         this._timerCompleteTextFieldColor = this.timerCompleteTextField.textColor;
+         this._timerCompleteTextFieldFilter = this.timerCompleteTextField.filters;
+         var _loc1_:BevelFilter = new BevelFilter();
+         _loc1_.blurX = 2;
+         _loc1_.blurY = 2;
+         _loc1_.distance = 1.5;
+         _loc1_.highlightColor = 16711680;
+         _loc1_.shadowColor = 1461759;
+         _loc1_.type = BitmapFilterType.OUTER;
+         this._timerBoostedFilter = [_loc1_];
       }
       
-      public function addOverheat(param1:Number) : void
+      public function set reloadBoost(param1:Boolean) : void
       {
-         var _loc2_:Class = null;
-         if(!this._overheatBar)
+         this._isReloadBoost = param1;
+         this.timerProgressTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR_RELOAD) : uint(this._timerProgressTextFieldColor);
+         this.timerProgressTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerProgressTextFieldFilter;
+         this.timerCompleteTextField.textColor = !!param1 ? uint(BOOSTED_TEXT_COLOR) : uint(this._timerCompleteTextFieldColor);
+         this.timerCompleteTextField.filters = !!param1 ? this._timerBoostedFilter : this._timerCompleteTextFieldFilter;
+      }
+      
+      public function set overheatIndicatorVisible(param1:Boolean) : void
+      {
+         this._isOverheat = param1;
+      }
+      
+      public function setReloadBoostBorderVisible(param1:Boolean, param2:Boolean, param3:Boolean) : void
+      {
+         this._isReloadBoostBorder = param1;
+         this._isReloadBoostBorderActive = param2;
+         if(this.reloadBoostBorder)
          {
-            _loc2_ = Class(getDefinitionByName(Linkages.OVERHEAT_WIDGET));
-            this._overheatBar = OverheatBar(new _loc2_());
-            addChild(this._overheatBar);
-            this._overheatBar.x = OverheatBar.X_OFFSET;
-            this._overheatBar.y = OverheatBar.Y_OFFSET;
+            this.reloadBoostBorder.visible = this._isReloadBoostBorder;
+            this.reloadBoostBorder.updateState(this._isReloadBoostBorderActive,param3);
+            this.reloadBoostBorder.x = this.timerProgressTextField.x - RELOAD_BORDER_OFFSET;
          }
-         this._overheatBar.setOverheatMark(param1);
-         this._overheatBar.visible = true;
+      }
+      
+      public function setReloadBoostBorderBlink() : void
+      {
+         if(this.reloadBoostBorder)
+         {
+            this.reloadBoostBorder.blink();
+         }
       }
       
       public function autoloaderBoostUpdate(param1:BoostIndicatorStateParamsVO, param2:Number, param3:Boolean = false) : void
@@ -137,17 +225,22 @@ package net.wg.gui.components.crosshairPanel
          this.autoloaderComponent.autoloaderBoostUpdateAsPercent(param1,param2);
       }
       
-      public function autoloaderShowShot() : void
+      public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean, param6:Boolean = false) : void
       {
-         if(this._isAutoloader)
+         switch(this._clipReloadingType)
          {
-            this.autoloaderComponent.autoloaderShowShot();
+            case CLIP_RELOADING_TYPES.AUTO_LOADER_CLIP:
+               this.autoloaderComponent.autoloaderUpdate(param1,param2,param4,param5);
+               this.autoloaderComponent.updateCritical(param3);
+               break;
+            case CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD:
+               this.controllableReloadCassette.reloadingPercent = param1;
+               this.controllableReloadCassette.setTimer(param4,param2,param3);
+               if(param6)
+               {
+                  this.controllableReloadCassette.applyNow();
+               }
          }
-      }
-      
-      public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
-      {
-         this.autoloaderComponent.autoloaderUpdate(param1,param2,param3,param4);
       }
       
       public function blinkReloadTime(param1:int) : void
@@ -183,29 +276,32 @@ package net.wg.gui.components.crosshairPanel
          return this._disposed;
       }
       
-      public function removeOverheat() : void
+      public function setAmmoStock(param1:uint, param2:Number, param3:String, param4:Boolean = false) : void
       {
-         if(this._overheatBar)
+         switch(this._clipReloadingType)
          {
-            this._overheatBar.visible = false;
+            case CLIP_RELOADING_TYPES.CASSETTE_CLIP:
+               this.cassetteMC.updateInfo(param2,param3,param4);
+               break;
+            case CLIP_RELOADING_TYPES.AUTO_LOADER_CLIP:
+               this.autoloaderComponent.updateCurrentAmmo(param2);
+               break;
+            case CLIP_RELOADING_TYPES.EXTRA_SHOT_CLIP:
+               this.extraShotClipPanel.totalAmmo = param1;
+               this.extraShotClipPanel.shellCount = param2;
+               this.extraShotClipPanel.clipState = param3;
+               break;
+            case CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD:
+               this.controllableReloadCassette.updateInfo(param2,param3);
          }
       }
       
-      public function setAmmoStock(param1:Number, param2:String, param3:Boolean = false) : void
+      public function setAutoloaderReloadingAsPercent(param1:Number) : void
       {
-         if(this._isAutoloader)
+         if(this.isAutoloader)
          {
-            this.autoloaderComponent.updateCurrentAmmo(param1);
+            this.autoloaderComponent.setGunReloadingPercent(param1);
          }
-         else
-         {
-            this.cassetteMC.updateInfo(param1,param2,param3);
-         }
-      }
-      
-      public function setAutoloaderReloadingAsPercent(param1:Number, param2:Boolean) : void
-      {
-         this.autoloaderComponent.setGunReloadingPercent(param1);
       }
       
       public function setAverageDamage(param1:String) : void
@@ -222,20 +318,28 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setClipsParam(param1:Number, param2:Number, param3:Boolean = false) : void
+      public function setClipsParam(param1:Number, param2:Number, param3:int) : void
       {
-         this._isAutoloader = param3;
+         this._clipReloadingType = param3;
          this.updateNetSeparatorVisibility();
-         if(this._isAutoloader)
+         switch(this._clipReloadingType)
          {
-            this.autoloaderComponent.updateTotalAmmo(param1);
+            case CLIP_RELOADING_TYPES.CASSETTE_CLIP:
+               this.cassetteMC.setClipsParam(param1,param2);
+               break;
+            case CLIP_RELOADING_TYPES.AUTO_LOADER_CLIP:
+               this.autoloaderComponent.updateTotalAmmo(param1);
+               break;
+            case CLIP_RELOADING_TYPES.EXTRA_SHOT_CLIP:
+               this.extraShotClipPanel.clipCapacity = param1;
+               break;
+            case CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD:
+               this.controllableReloadCassette.setClipsParam(param1);
          }
-         else
-         {
-            this.cassetteMC.setClipsParam(param1,param2);
-         }
-         this.autoloaderComponent.visible = this._isAutoloader;
-         this.cassetteMC.visible = !this._isAutoloader;
+         this.cassetteMC.visible = this.isCassette;
+         this.autoloaderComponent.visible = this.isAutoloader;
+         this.extraShotClipPanel.visible = this.isExtraShot;
+         this.controllableReloadCassette.visible = this.isControllableReload;
       }
       
       public function setComponentsAlpha(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number, param6:Number, param7:Number) : void
@@ -258,6 +362,15 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      public function setExtraShotClipReloading(param1:String, param2:Number, param3:Boolean, param4:Boolean = false) : void
+      {
+         this.extraShotClipPanel.setReloading(param1,param2,param3);
+         if(param4)
+         {
+            this.extraShotClipPanel.applyNow();
+         }
+      }
+      
       public function setGunMarkersData(param1:Vector.<GunMarkerIndicatorVO>, param2:Boolean) : void
       {
       }
@@ -272,20 +385,32 @@ package net.wg.gui.components.crosshairPanel
          this.updateHealthBarMC();
       }
       
-      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:String, param11:Number, param12:String, param13:String, param14:Boolean = false, param15:Boolean = false, param16:Boolean = false) : void
+      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:int, param11:String, param12:uint, param13:Number, param14:String, param15:String, param16:Boolean = false, param17:Boolean = false, param18:Boolean = false, param19:Boolean = false, param20:Boolean = false, param21:Boolean = false) : void
       {
-         this.setClipsParam(param8,param9,param15);
+         this.setClipsParam(param8,param9,param10);
          this.setHealth(param1);
          this.setZoom(param2);
          this.setReloadingState(param3);
          this.showReloadingTimeField(param4);
          this.setDistanceVisibility(param5);
          this.setDistance(param6);
-         this.setAverageDamage(param13);
+         this.setAverageDamage(param15);
          this.updatePlayerInfo(param7);
-         this.setAmmoStock(param11,param12,param14);
-         this.updateAmmoState(param10);
-         this.updateAutoloaderState(param8,param11,param16);
+         this.setAmmoStock(param12,param13,param14,param16);
+         this.updateAmmoState(param11);
+         this.updateAutoloaderState(param8,param13);
+         this.reloadBoost = param18;
+         this.setReloadBoostBorderVisible(param19,param20,true);
+         this.overheatIndicatorVisible = param21;
+         this.setIsInControllableReload(param17);
+      }
+      
+      public function setIsInControllableReload(param1:Boolean) : void
+      {
+         if(this._clipReloadingType == CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD)
+         {
+            this.controllableReloadCassette.isReloading = param1;
+         }
       }
       
       public function setNetSeparatorVisible(param1:Boolean) : void
@@ -300,21 +425,22 @@ package net.wg.gui.components.crosshairPanel
          {
             this.netType = param1;
             this.updateNetType();
+            this.updateNetSeparatorType();
             this.updateCenterMC();
             this.updateComponentsAlpha();
             this.updateHealthBarMC();
             this.setReloadingBarFrame();
             this.updateNetSeparatorVisibility();
             this.updateQuickReloadingTimer();
+            this.overheatIndicatorVisible = this._isOverheat;
+            this.setReloadBoostBorderVisible(this._isReloadBoostBorder,this._isReloadBoostBorderActive,true);
          }
       }
       
-      public function setOverheatProgress(param1:Number, param2:Boolean) : void
+      public function setNetSeparatorType(param1:String) : void
       {
-         if(this._overheatBar)
-         {
-            this._overheatBar.updateInfo(param1,param2);
-         }
+         this._netSeparatorType = param1;
+         this.updateNetSeparatorType();
       }
       
       public function setQuickReloadingTime(param1:Boolean, param2:Number) : void
@@ -353,6 +479,13 @@ package net.wg.gui.components.crosshairPanel
             this._currentReloadingTime = param1 < 0 ? Number(0) : Number(param1);
             this.applyReloadingData();
          }
+      }
+      
+      public function setSize(param1:Number, param2:Number) : void
+      {
+         this._width = param1;
+         this._height = param2;
+         this.updateNetSize();
       }
       
       public function setTimerReloadingState() : void
@@ -412,32 +545,36 @@ package net.wg.gui.components.crosshairPanel
          this.updateQuickReloadingTimer();
       }
       
+      public function showShot() : void
+      {
+         if(this.isAutoloader)
+         {
+            this.autoloaderComponent.autoloaderShowShot();
+         }
+         else if(this.isExtraShot)
+         {
+            this.extraShotClipPanel.showShot();
+            if(this._isReloadInProgress)
+            {
+               GTweener.removeTweens(this._reloadTimeColorTransform);
+               this._reloadTimeColorTransform.color = this._timerProgressTextFieldColor;
+               GTweener.from(this._reloadTimeColorTransform,RELOAD_TIME_BLINK_DURATION,RELOAD_TIME_COLOR_TRANSFORM_BLINK_VALUES,{
+                  "ease":Cubic.easeIn,
+                  "onChange":this.onReloadTimeColorTransformChange
+               });
+            }
+         }
+      }
+      
       public function updateAmmoState(param1:String) : void
       {
       }
       
-      public function updateAutoloaderState(param1:Number, param2:Number, param3:Boolean) : void
+      public function updateAutoloaderState(param1:Number, param2:Number) : void
       {
-         if(this._isAutoloader)
+         if(this.isAutoloader)
          {
             this.autoloaderComponent.updateQuantityInClip(param2,param1);
-            this.autoloaderComponent.updateCritical(param3);
-         }
-      }
-      
-      public function updateCritical(param1:Boolean) : void
-      {
-         if(this._isAutoloader)
-         {
-            this.autoloaderComponent.updateCritical(param1);
-         }
-      }
-      
-      public function updateOverheatColorBlind(param1:Boolean) : void
-      {
-         if(this._overheatBar)
-         {
-            this._overheatBar.isColorBlind = param1;
          }
       }
       
@@ -449,9 +586,15 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      protected function getSiegeNetScale(param1:Number, param2:Number) : Number
+      {
+         return Values.DEFAULT_SCALE;
+      }
+      
       protected function onDispose() : void
       {
          removeEventListener(CrosshairPanelEvent.SOUND,this.onCrosshairPanelSoundHandler);
+         GTweener.removeTweens(this._reloadTimeColorTransform);
          this.reloadTimeBlink = null;
          this.timerProgressTextField = null;
          this.timerCompleteTextField = null;
@@ -463,22 +606,29 @@ package net.wg.gui.components.crosshairPanel
          this.centerMC = null;
          this.netMC = null;
          this.netSeparator = null;
+         this.reloadBoostBorder = null;
+         this._timerProgressTextFieldFilter.length = 0;
+         this._timerProgressTextFieldFilter = null;
+         this._timerCompleteTextFieldFilter.length = 0;
+         this._timerCompleteTextFieldFilter = null;
+         this._timerBoostedFilter.length = 0;
+         this._timerBoostedFilter = null;
          this.autoloaderComponent.dispose();
          this.autoloaderComponent = null;
+         this.extraShotClipPanel.dispose();
+         this.extraShotClipPanel = null;
+         this.controllableReloadCassette.dispose();
+         this.controllableReloadCassette = null;
          if(this.averageDamage)
          {
             this.averageDamage.dispose();
             this.averageDamage = null;
          }
+         this.netSeparator = null;
          this.distance.dispose();
          this.distance = null;
          this.cassetteMC.dispose();
          this.cassetteMC = null;
-         if(this._overheatBar)
-         {
-            this._overheatBar.dispose();
-            this._overheatBar = null;
-         }
          if(this._reloadTimeBlinkYPos)
          {
             this._reloadTimeBlinkYPos.length = 0;
@@ -495,6 +645,7 @@ package net.wg.gui.components.crosshairPanel
       protected function updateNetType() : void
       {
          gotoAndStop(TYPE_PREFIX + this.netType);
+         this.updateNetSize();
       }
       
       protected function updateReloadingState() : void
@@ -521,6 +672,21 @@ package net.wg.gui.components.crosshairPanel
          return null;
       }
       
+      private function onReloadTimeColorTransformChange() : void
+      {
+         this.timerProgressTextField.textColor = this._reloadTimeColorTransform.color;
+      }
+      
+      private function updateNetSize() : void
+      {
+         var _loc1_:Number = Values.DEFAULT_SCALE;
+         if(SIEGE_PILLBOX_NET_TYPES.indexOf(this.netType) >= 0)
+         {
+            _loc1_ = this.getSiegeNetScale(this._width,this._height);
+         }
+         this.netMC.scaleX = this.netMC.scaleY = _loc1_;
+      }
+      
       private function updateQuickReloadingTimer() : void
       {
          var _loc1_:String = null;
@@ -543,7 +709,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this.netSeparator)
          {
-            this.netSeparator.visible = !this._isAutoloader && this._netSeparatorVisible;
+            this.netSeparator.visible = this._netSeparatorVisible && !this.isExtraShot;
          }
       }
       
@@ -616,6 +782,16 @@ package net.wg.gui.components.crosshairPanel
          this.reloadingAnimationMC.alpha = this.reloadingBarAlpha;
          this.cassetteMC.alpha = this.cassetteAlpha;
          this.autoloaderComponent.alpha = this.cassetteAlpha;
+         this.extraShotClipPanel.alpha = this.cassetteAlpha;
+         this.controllableReloadCassette.alpha = this.cassetteAlpha;
+      }
+      
+      private function updateNetSeparatorType() : void
+      {
+         if(this.netSeparator)
+         {
+            this.netSeparator.updateType(this._netSeparatorType);
+         }
       }
       
       public function get autoloaderBoostParams() : BoostIndicatorStateParamsVO
@@ -632,9 +808,24 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function get isAutoloader() : Boolean
+      protected function get isCassette() : Boolean
       {
-         return this._isAutoloader;
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.CASSETTE_CLIP;
+      }
+      
+      protected function get isAutoloader() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.AUTO_LOADER_CLIP;
+      }
+      
+      protected function get isExtraShot() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.EXTRA_SHOT_CLIP;
+      }
+      
+      protected function get isControllableReload() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD;
       }
       
       private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void

@@ -1,8 +1,8 @@
 from debug_utils import LOG_DEBUG
-from server_side_replay.gui.Scaleform import registerLobbyHeaderTabs
+from server_side_replay.gui.Scaleform import registerMainMenuEntries
 
 def preInit():
-    registerLobbyHeaderTabs()
+    registerMainMenuEntries()
 
 
 def init():

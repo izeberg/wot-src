@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.220442 -0.817856 -4.659372</min>
+		<max>2.220660 1.156469 4.597231</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/normal/lod2/Hull</nodefullVisual>
+</root>

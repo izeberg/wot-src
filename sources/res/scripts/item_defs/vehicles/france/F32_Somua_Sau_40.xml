@@ -2812,14 +2812,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Somua_Sau_40>
-			<userString>#france_vehicles:Chassis_Somua_Sau_40</userString>
+		<Chassis_F32_Somua_Sau_40>
+			<userString>#france_vehicles:Chassis_F32_Somua_Sau_40</userString>
 			<tags/>
 			<level>3</level>
 			<price>1660</price>
 			<unlocks>
 				<chassis>
-					Chassis_Somua_Sau_40_2
+					Chassis_F32_Somua_Sau_40_2
 					<cost>1115</cost>
 				</chassis>
 			</unlocks>
@@ -2828,14 +2828,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5350</weight>
-			<maxLoad>24500</maxLoad>
 			<terrainResistance>
-				1.4 1.6 2.7
+				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.26
@@ -5281,31 +5280,24 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Somua_Sau_40>
-		<Chassis_Somua_Sau_40_2>
-			<userString>#france_vehicles:Chassis_Somua_Sau_40_2</userString>
+		</Chassis_F32_Somua_Sau_40>
+		<Chassis_F32_Somua_Sau_40_2>
+			<userString>#france_vehicles:Chassis_F32_Somua_Sau_40_2</userString>
 			<tags/>
 			<level>4</level>
 			<price>4760</price>
-			<unlocks>
-				<vehicle>
-					F33_S_35CA
-					<cost>12550</cost>
-				</vehicle>
-			</unlocks>
 			<armor>
 				<leftTrack>15</leftTrack>
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5350</weight>
-			<maxLoad>26000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>38</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -7754,11 +7746,11 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Somua_Sau_40_2>
+		</Chassis_F32_Somua_Sau_40_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Somua_Sau_40>
-			<userString>#france_vehicles:Turret_1_Somua_Sau_40</userString>
+		<Turret_1_F32_Somua_Sau_40>
+			<userString>#france_vehicles:Turret_1_F32_Somua_Sau_40</userString>
 			<tags>cannotDetach</tags>
 			<level>4</level>
 			<price>100</price>
@@ -7812,11 +7804,11 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.45
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.8
+						3.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7831,7 +7823,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.7
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7914,6 +7906,14 @@
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
+						<vehicle>
+							F22_AMX_105AM
+							<cost>15220</cost>
+						</vehicle>
+						<vehicle>
+							F33_S_35CA
+							<cost>12550</cost>
+						</vehicle>
 						<gun>
 							Canon_de_105_court_mle_1934S_AC
 							<cost>3900</cost>
@@ -7935,7 +7935,7 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.41
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7954,7 +7954,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.7
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8032,12 +8032,6 @@
 				</_75mm_Long_44_AC>
 				<Canon_de_105_court_mle_1934S_AC>
 					shared
-					<unlocks>
-						<vehicle>
-							F22_AMX_105AM
-							<cost>15220</cost>
-						</vehicle>
-					</unlocks>
 					<maxAmmo>45</maxAmmo>
 					<armor>
 						<armor_1>
@@ -8172,86 +8166,40 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</Turret_1_Somua_Sau_40>
+		</Turret_1_F32_Somua_Sau_40>
 	</turrets0>
 	<engines>
-		<Somua_S-40>
+		<Somua_S40_SAu>
 			shared
 			<unlocks>
 				<engine>
-					Somua_S-40Bis
+					Somua_S40_Bis_SAu
 					<cost>1180</cost>
 				</engine>
 			</unlocks>
-		</Somua_S-40>
-		<Somua_S-40Bis>shared</Somua_S-40Bis>
+		</Somua_S40_SAu>
+		<Somua_S40_Bis_SAu>shared</Somua_S40_Bis_SAu>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<ER_52>
-			shared
-			<unlocks>
-				<radio>
-					ER_53
-					<cost>610</cost>
-				</radio>
-			</unlocks>
-		</ER_52>
-		<ER_53>
-			shared
-			<unlocks>
-				<radio>
-					ER_56
-					<cost>650</cost>
-				</radio>
-			</unlocks>
-		</ER_53>
 		<ER_56>shared</ER_56>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Somua_S-40>
-					<smplEnginePower>
-						232.6019
-						<!--BW_String-->
-					</smplEnginePower>
+				<Somua_S40_SAu>
+					<smplEnginePower>330</smplEnginePower>
 					<smplFwMaxSpeed>37</smplFwMaxSpeed>
-				</Somua_S-40>
-				<Somua_S-40Bis>
-					<smplEnginePower>
-						274.8931
-						<!--BW_String-->
-					</smplEnginePower>
+				</Somua_S40_SAu>
+				<Somua_S40_Bis_SAu>
+					<smplEnginePower>350</smplEnginePower>
 					<smplFwMaxSpeed>37</smplFwMaxSpeed>
-				</Somua_S-40Bis>
+				</Somua_S40_Bis_SAu>
 			</engines>
 			<chassis>
-				<Chassis_Somua_Sau_40>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.21735
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1288
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Somua_Sau_40>
-				<Chassis_Somua_Sau_40_2>
+				<Chassis_F32_Somua_Sau_40>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8272,7 +8220,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Somua_Sau_40_2>
+				</Chassis_F32_Somua_Sau_40>
+				<Chassis_F32_Somua_Sau_40_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.20125
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_F32_Somua_Sau_40_2>
 			</chassis>
 		</detailed>
 	</physics>

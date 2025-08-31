@@ -1,6 +1,6 @@
 from enum import Enum
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.gen.view_models.common.bonuses_model import BonusesModel
 
 class ModificationType(Enum):

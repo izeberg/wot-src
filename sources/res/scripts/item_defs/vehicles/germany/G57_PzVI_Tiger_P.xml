@@ -99,7 +99,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>30100</weight>
-		<maxHealth>1080</maxHealth>
+		<maxHealth>1240</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2059,15 +2059,15 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_PzVI_Tiger_P>
-			<userString>#germany_vehicles:Chassis_PzVI_Tiger_P</userString>
-			<shortUserString>#germany_vehicles:Chassis_PzVI_Tiger_P_short</shortUserString>
+		<Chassis_G57_PzVI_Tiger_P>
+			<userString>#germany_vehicles:Chassis_G57_PzVI_Tiger_P</userString>
+			<shortUserString>#germany_vehicles:Chassis_G57_PzVI_Tiger_P_short</shortUserString>
 			<tags/>
 			<level>6</level>
 			<price>15100</price>
 			<unlocks>
 				<chassis>
-					Chassis_PzVI_Tiger_P_2
+					Chassis_G57_PzVI_Tiger_P_2
 					<cost>7970</cost>
 				</chassis>
 			</unlocks>
@@ -2076,14 +2076,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>18000</weight>
-			<maxLoad>61000</maxLoad>
 			<terrainResistance>
-				1.4 1.7 3.4
+				1.3 1.5 3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>26</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.23
@@ -3886,10 +3885,10 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_PzVI_Tiger_P>
-		<Chassis_PzVI_Tiger_P_2>
-			<userString>#germany_vehicles:Chassis_PzVI_Tiger_P_2</userString>
-			<shortUserString>#germany_vehicles:Chassis_PzVI_Tiger_P_2_short</shortUserString>
+		</Chassis_G57_PzVI_Tiger_P>
+		<Chassis_G57_PzVI_Tiger_P_2>
+			<userString>#germany_vehicles:Chassis_G57_PzVI_Tiger_P_2</userString>
+			<shortUserString>#germany_vehicles:Chassis_G57_PzVI_Tiger_P_2_short</shortUserString>
 			<tags/>
 			<level>7</level>
 			<price>17750</price>
@@ -3898,14 +3897,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>18000</weight>
-			<maxLoad>65200</maxLoad>
 			<terrainResistance>
 				1.3 1.5 3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>22</rotationSpeed>
+			<rotationSpeed>29</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.21
@@ -5708,12 +5706,12 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_PzVI_Tiger_P_2>
+		</Chassis_G57_PzVI_Tiger_P_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_PzVI_Tiger_P>
-			<userString>#germany_vehicles:Turret_1_PzVI_Tiger_P</userString>
-			<shortUserString>#germany_vehicles:Turret_1_PzVI_Tiger_P_short</shortUserString>
+		<Turret_1_G57_PzVI_Tiger_P>
+			<userString>#germany_vehicles:Turret_1_G57_PzVI_Tiger_P</userString>
+			<shortUserString>#germany_vehicles:Turret_1_G57_PzVI_Tiger_P_short</shortUserString>
 			<tags/>
 			<level>6</level>
 			<price>20440</price>
@@ -5735,7 +5733,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8900</weight>
-			<maxHealth>320</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>23</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -5764,10 +5762,13 @@
 							<cost>16500</cost>
 						</gun>
 					</unlocks>
-					<reloadTime>7</reloadTime>
+					<reloadTime>
+						6.1
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6026,17 +6027,17 @@
 					<maxAmmo>68</maxAmmo>
 					<unlocks>
 						<turret>
-							Turret_2_PzVI_Tiger_P
+							Turret_2_G57_PzVI_Tiger_P
 							<cost>12520</cost>
 						</turret>
 					</unlocks>
 					<reloadTime>
-						8.2
+						7.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6088,7 +6089,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.7
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -7288,10 +7289,10 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_PzVI_Tiger_P>
-		<Turret_2_PzVI_Tiger_P>
-			<userString>#germany_vehicles:Turret_2_PzVI_Tiger_P</userString>
-			<shortUserString>#germany_vehicles:Turret_2_PzVI_Tiger_P_short</shortUserString>
+		</Turret_1_G57_PzVI_Tiger_P>
+		<Turret_2_G57_PzVI_Tiger_P>
+			<userString>#germany_vehicles:Turret_2_G57_PzVI_Tiger_P</userString>
+			<shortUserString>#germany_vehicles:Turret_2_G57_PzVI_Tiger_P_short</shortUserString>
 			<tags/>
 			<unlocks>
 				<vehicle>
@@ -7323,7 +7324,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>9500</weight>
-			<maxHealth>420</maxHealth>
+			<maxHealth>310</maxHealth>
 			<rotationSpeed>23</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -7347,7 +7348,7 @@
 					shared
 					<maxAmmo>92</maxAmmo>
 					<reloadTime>
-						6.6
+						6.1
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7404,7 +7405,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -7661,7 +7662,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.6
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -8855,7 +8856,7 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_PzVI_Tiger_P>
+		</Turret_2_G57_PzVI_Tiger_P>
 	</turrets0>
 	<engines>
 		<Porsche_Typ_100_1A>
@@ -8879,38 +8880,16 @@
 		<detailed>
 			<engines>
 				<Porsche_Typ_100_1A>
-					<smplEnginePower>600</smplEnginePower>
+					<smplEnginePower>750</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</Porsche_Typ_100_1A>
 				<Porsche_Typ_101_P>
-					<smplEnginePower>720</smplEnginePower>
+					<smplEnginePower>820</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</Porsche_Typ_101_P>
 			</engines>
 			<chassis>
-				<Chassis_PzVI_Tiger_P>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.2737
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.13685
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_PzVI_Tiger_P>
-				<Chassis_PzVI_Tiger_P_2>
+				<Chassis_G57_PzVI_Tiger_P>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8931,7 +8910,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_PzVI_Tiger_P_2>
+				</Chassis_G57_PzVI_Tiger_P>
+				<Chassis_G57_PzVI_Tiger_P_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.2415
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G57_PzVI_Tiger_P_2>
 			</chassis>
 		</detailed>
 	</physics>

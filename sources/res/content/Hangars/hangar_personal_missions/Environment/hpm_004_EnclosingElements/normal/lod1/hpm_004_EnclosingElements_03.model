@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_004_EnclosingElements/normal/lod2/hpm_004_EnclosingElements_03</parent>
+	<extent>63.000000</extent>
+	<visibilityBox>
+		<min>-15.566511 -0.009157 -2.096989</min>
+		<max>15.544418 2.152788 2.096989</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_004_EnclosingElements/normal/lod1/hpm_004_EnclosingElements_03</nodefullVisual>
+</root>

@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.game_mode_cell_model import GameModeCellModel
 
 class GameModeRowsModel(ViewModel):

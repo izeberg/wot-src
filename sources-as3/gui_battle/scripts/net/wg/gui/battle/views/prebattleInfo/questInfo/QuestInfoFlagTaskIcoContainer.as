@@ -33,5 +33,15 @@ package net.wg.gui.battle.views.prebattleInfo.questInfo
       {
          return this._disposed;
       }
+      
+      public function setTaskIconSaturation(param1:Number) : void
+      {
+         App.utils.commons.setSaturation(this.taskIco,param1);
+      }
+      
+      public function setTaskIconBlendMode(param1:String) : void
+      {
+         this.taskIco.blendMode = param1;
+      }
    }
 }

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz21_Vz_60S_Dravec/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.780515 -0.565139 -4.002295</min>
+		<max>1.791725 0.668575 3.747055</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz21_Vz_60S_Dravec/normal/lod3/Hull</nodefullVisual>
+</root>

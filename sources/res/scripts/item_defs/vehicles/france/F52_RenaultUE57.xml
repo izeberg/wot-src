@@ -1669,7 +1669,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>500</weight>
-			<maxLoad>7800</maxLoad>
 			<terrainResistance>
 				1.2 1.5 2.7
 				<!--BW_String-->
@@ -3005,7 +3004,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>500</weight>
-			<maxLoad>7800</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -4333,7 +4331,7 @@
 		<Turret_1_RenaultUE57>
 			<ceilless>true</ceilless>
 			<userString>#france_vehicles:Turret_1_RenaultUE57</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>2</level>
 			<price>120</price>
 			<notInShop>true</notInShop>

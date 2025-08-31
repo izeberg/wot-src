@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "card/about_vehicle"
+msgstr "About vehicle"
+
+msgid "card/unknown"
+msgstr "Unknown vehicle"
+
+msgid "defaultName"
+msgstr "New Playlist {{count}}"
+
+msgid "dialogs/delete/button/cancel"
+msgstr "Cancel"
+
+msgid "dialogs/delete/button/submit"
+msgstr "Delete"
+
+msgid "dialogs/delete/title"
+msgstr "Delete the {{playlistTitle}} playlist?"
+
+msgid "dialogs/import/button/submit"
+msgstr "Import"
+
+msgid "dialogs/import/input/alert"
+msgstr "Incorrect code"
+
+msgid "dialogs/import/input/message"
+msgstr "Playlist code"
+
+msgid "dialogs/import/title"
+msgstr "Import playlist:"
+
+msgid "dialogs/save/button/cancel"
+msgstr "Exit"
+
+msgid "dialogs/save/button/submit"
+msgstr "Save and Exit"
+
+msgid "dialogs/save/title"
+msgstr "Save playlist before exiting?"
+
+msgid "editScreen/button/exit"
+msgstr "Exit"
+
+msgid "editScreen/button/save"
+msgstr "Save Playlist"
+
+msgid "editScreen/create/body"
+msgstr "Press \\+\\ or drag vehicles to this area to create a new playlist"
+
+msgid "editScreen/create/title"
+msgstr "Add vehicles"
+
+msgid "editScreen/input/placeholder"
+msgstr "Enter playlist name"
+
+msgid "edit_button/body"
+msgstr "Use edit mode to edit or delete playlists"
+
+msgid "edit_button/title"
+msgstr "Edit mode"
+
+msgid "empty_state/empty_list/body"
+msgstr "Enter edit mode to add vehicles to this playlist."
+
+msgid "empty_state/empty_list/title"
+msgstr "Playlist empty"
+
+msgid "empty_state/not_found/body"
+msgstr "Try adjusting the filter settings to see more."
+
+msgid "empty_state/not_found/title"
+msgstr "No vehicles found"
+
+msgid "imports/trigger"
+msgstr "Import Playlist"
+
+msgid "list/create"
+msgstr "Create Playlist"
+
+msgid "list/remove"
+msgstr "Delete Playlist"
+
+msgid "share/copy_button/body"
+msgstr "Use playlist codes to import playlists"
+
+msgid "share/copy_button/title"
+msgstr "Copy playlist code"
+
+msgid "trigger/explain"
+msgstr "Use the dropdown menu to view and switch between playlists"
+
+msgid "unnamedTemplate"
+msgstr "Unnamed playlist {{count}}"
+
+msgid "validation/unavailable/body"
+msgstr ""
+"This playlist contains vehicles that are not in your Garage.\n"
+"You can view all vehicles in this playlist in edit mode."
+
+msgid "validation/unavailable/title"
+msgstr "Vehicles unavailable ({{display}}/{{total}})"

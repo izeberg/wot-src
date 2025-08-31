@@ -44,6 +44,8 @@ package net.wg.data.constants.generated
       public static const TOGGLE_PLAYER_PANEL_MODES:String = "togglePlayerPanelModes";
       
       public static const STOP_FIRE:String = "stop_fire";
+      
+      public static const TOGGLE_FLASHLIGHT:String = "toggleFlashlight";
        
       
       public function KEYBOARD_KEYS()

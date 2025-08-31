@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.821501 -0.000032 -3.539014</min>
+		<max>1.821501 1.209031 3.664910</max>
+	</visibilityBox>
+	<parent>vehicles/american/A182_T803/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A182_T803/normal/lod0/Chassis</nodefullVisual>
+</root>

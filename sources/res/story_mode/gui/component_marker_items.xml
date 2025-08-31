@@ -126,6 +126,37 @@
 			</MINIMAP_MARKER>
 		</components>
 	</SM_LOOT_PLAN>
+	<SM_LOOT_TANK>
+		<visible>true</visible>
+		<components>
+			<MARKER_2D>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.LootMarkerComponent</class>
+					<config>
+						<symbol>StoryModeLootMarkerYellowUI</symbol>
+						<is_sticky>false</is_sticky>
+						<display_distance>false</display_distance>
+						<cull_distance>
+							300.0
+							<!--BW_String-->
+						</cull_distance>
+						<loot_type>tank</loot_type>
+					</config>
+				</item>
+			</MARKER_2D>
+			<MINIMAP_MARKER>
+				<item>
+					<class>story_mode.gui.scaleform.daapi.view.battle.markers_components.LootMinimapComponent</class>
+					<config>
+						<symbol>StoryModeLootMinimapUI</symbol>
+						<container>points</container>
+						<onlyTranslation>true</onlyTranslation>
+						<loot_type>tank</loot_type>
+					</config>
+				</item>
+			</MINIMAP_MARKER>
+		</components>
+	</SM_LOOT_TANK>
 	<SM_RECON_ABILITY>
 		<visible>true</visible>
 		<components>

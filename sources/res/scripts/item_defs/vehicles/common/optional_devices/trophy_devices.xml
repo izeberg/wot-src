@@ -478,7 +478,7 @@
 			<include>
 				<vehicle>
 					<minLevel>5</minLevel>
-					<maxLevel>10</maxLevel>
+					<maxLevel>11</maxLevel>
 				</vehicle>
 			</include>
 		</vehicleFilter>
@@ -598,7 +598,7 @@
 			<include>
 				<vehicle>
 					<minLevel>5</minLevel>
-					<maxLevel>10</maxLevel>
+					<maxLevel>11</maxLevel>
 				</vehicle>
 			</include>
 		</vehicleFilter>
@@ -713,7 +713,7 @@
 			<include>
 				<vehicle>
 					<minLevel>5</minLevel>
-					<maxLevel>10</maxLevel>
+					<maxLevel>11</maxLevel>
 				</vehicle>
 			</include>
 		</vehicleFilter>
@@ -806,7 +806,7 @@
 			<include>
 				<vehicle>
 					<minLevel>5</minLevel>
-					<maxLevel>10</maxLevel>
+					<maxLevel>11</maxLevel>
 				</vehicle>
 			</include>
 		</vehicleFilter>
@@ -893,7 +893,7 @@
 				<vehicle>
 					<tags>lightTank mediumTank heavyTank AT-SPG</tags>
 					<minLevel>5</minLevel>
-					<maxLevel>10</maxLevel>
+					<maxLevel>11</maxLevel>
 				</vehicle>
 			</include>
 		</vehicleFilter>
@@ -946,7 +946,7 @@
 				<vehicle>
 					<tags>lightTank mediumTank heavyTank AT-SPG</tags>
 					<minLevel>5</minLevel>
-					<maxLevel>10</maxLevel>
+					<maxLevel>11</maxLevel>
 				</vehicle>
 			</include>
 		</vehicleFilter>
@@ -1252,10 +1252,6 @@
 		</vehicleFilter>
 		<script>
 			UpgradableExtraHealthReserve
-			<chassisMaxLoadFactor>
-				1.1
-				<!--BW_String-->
-			</chassisMaxLoadFactor>
 			<factors>
 				<factor>
 					<attribute>miscAttrs/healthFactor</attribute>
@@ -1318,13 +1314,6 @@
 				</value>
 			</mul>
 			<mul>
-				<name>vehicleChassisLoad</name>
-				<value>
-					1.1
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>vehicleChassisFallDamage</name>
 				<value>
 					0.5
@@ -1357,10 +1346,6 @@
 		</vehicleFilter>
 		<script>
 			UpgradedExtraHealthReserve
-			<chassisMaxLoadFactor>
-				1.1
-				<!--BW_String-->
-			</chassisMaxLoadFactor>
 			<factors>
 				<factor>
 					<attribute>miscAttrs/healthFactor</attribute>
@@ -1415,13 +1400,6 @@
 				<name>vehicleChassisRepairSpeed</name>
 				<value>
 					1.25
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
-				<name>vehicleChassisLoad</name>
-				<value>
-					1.1
 					<!--BW_String-->
 				</value>
 			</mul>

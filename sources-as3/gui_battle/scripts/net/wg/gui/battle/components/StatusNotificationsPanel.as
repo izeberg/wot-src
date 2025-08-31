@@ -84,7 +84,7 @@ package net.wg.gui.battle.components
          if(isInvalid(INVALID_STATE))
          {
             x = this._stageWidth >> 1;
-            y = (this._stageHeight >> 1) + this._additionalTopOffset * App.appScale | 0;
+            y = (this._stageHeight >> 1) + this._additionalTopOffset | 0;
          }
       }
       

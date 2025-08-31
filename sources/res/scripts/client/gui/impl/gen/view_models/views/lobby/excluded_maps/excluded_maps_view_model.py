@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.account_dashboard.map_model import MapModel
 from gui.impl.gen.view_models.views.lobby.excluded_maps.filter_model import FilterModel
 from gui.impl.gen.view_models.views.lobby.excluded_maps.map_item_model import MapItemModel

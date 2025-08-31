@@ -100,7 +100,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22325</weight>
-		<maxHealth>880</maxHealth>
+		<maxHealth>920</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>160</maxHealth>
 			<maxRegenHealth>100</maxRegenHealth>
@@ -2014,14 +2014,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<KV-1s>
-			<userString>#ussr_vehicles:Chassis_KV-1s</userString>
+		<Chassis_R13_KV-1s>
+			<userString>#ussr_vehicles:Chassis_R13_KV-1s</userString>
 			<tags/>
 			<level>5</level>
 			<price>9000</price>
 			<unlocks>
 				<chassis>
-					KV-1s_bis
+					Chassis_R13_KV-1s_2
 					<cost>4450</cost>
 				</chassis>
 			</unlocks>
@@ -2030,9 +2030,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11500</weight>
-			<maxLoad>45400</maxLoad>
 			<terrainResistance>
-				1.3 1.5 2.5
+				1.2 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>45400</brakeForce>
@@ -3739,9 +3738,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</KV-1s>
-		<KV-1s_bis>
-			<userString>#ussr_vehicles:KV-1s_bis</userString>
+		</Chassis_R13_KV-1s>
+		<Chassis_R13_KV-1s_2>
+			<userString>#ussr_vehicles:Chassis_R13_KV-1s_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>16390</price>
@@ -3750,7 +3749,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11500</weight>
-			<maxLoad>48200</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.3
 				<!--BW_String-->
@@ -5459,11 +5457,11 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</KV-1s_bis>
+		</Chassis_R13_KV-1s_2>
 	</chassis>
 	<turrets0>
-		<KV1S_mod_42>
-			<userString>#ussr_vehicles:KV1S_mod_42</userString>
+		<Turret_1_R13_KV-1s>
+			<userString>#ussr_vehicles:Turret_1_R13_KV-1s</userString>
 			<tags/>
 			<level>5</level>
 			<price>10000</price>
@@ -5485,7 +5483,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7020</weight>
-			<maxHealth>170</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -5495,7 +5493,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>320</circularVisionRadius>
+			<circularVisionRadius>330</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>80</maxHealth>
 				<maxRegenHealth>40</maxRegenHealth>
@@ -5505,7 +5503,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_76mm_ZiS-5>
+				<_76mm_ZiS_5_KV_1S>
 					shared
 					<maxAmmo>135</maxAmmo>
 					<pitchLimits>
@@ -5513,12 +5511,8 @@
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<unlocks>
-						<turret>
-							KV1S_mod_43
-							<cost>4650</cost>
-						</turret>
 						<gun>
-							_85mm_S-31_M
+							_85mm_S_31M
 							<cost>4350</cost>
 						</gun>
 					</unlocks>
@@ -5542,21 +5536,30 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.2
+						3.4
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.26
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>3</afterShot>
+						<turretRotation>
+							0.08
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R13_KV-1s/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R13_KV-1s/crash/lod0/Gun_01.model</destroyed>
@@ -5635,16 +5638,19 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_76mm_ZiS-5>
-				<_85mm_S-31_M>
+				</_76mm_ZiS_5_KV_1S>
+				<_85mm_S_31M>
 					shared
 					<maxAmmo>70</maxAmmo>
+					<unlocks>
+						<turret>
+							Turret_2_R13_KV-1s
+							<cost>4650</cost>
+						</turret>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
-						<maxPitch>
-							0 3.5 1 3.5
-							<!--BW_String-->
-						</maxPitch>
+						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<armor>
 						<armor_2>
@@ -5666,35 +5672,30 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.9
+						5.2
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						2.7
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.25
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.13
+							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R13_KV-1s/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/russian/R13_KV-1s/crash/lod0/Gun_02.model</destroyed>
@@ -5779,7 +5780,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_85mm_S-31_M>
+				</_85mm_S_31M>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R13_KV-1s/normal/lod0/Turret_01.model</undamaged>
@@ -6751,15 +6752,19 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</KV1S_mod_42>
-		<KV1S_mod_43>
-			<userString>#ussr_vehicles:KV1S_mod_43</userString>
+		</Turret_1_R13_KV-1s>
+		<Turret_2_R13_KV-1s>
+			<userString>#ussr_vehicles:Turret_2_R13_KV-1s</userString>
 			<tags/>
 			<level>6</level>
 			<price>17500</price>
 			<unlocks>
+				<vehicle>
+					R01_IS
+					<cost>49480</cost>
+				</vehicle>
 				<gun>
-					_122mm_S-41
+					_122mm_Howitzer_S_41
 					<cost>3720</cost>
 				</gun>
 			</unlocks>
@@ -6783,7 +6788,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7620</weight>
-			<maxHealth>220</maxHealth>
+			<maxHealth>230</maxHealth>
 			<rotationSpeed>31</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -6803,7 +6808,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_76mm_ZiS-5>
+				<_76mm_ZiS_5_KV_1S>
 					shared
 					<maxAmmo>135</maxAmmo>
 					<pitchLimits>
@@ -6830,18 +6835,33 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>4</reloadTime>
+					<reloadTime>
+						3.3
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.26
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>3</afterShot>
+						<turretRotation>
+							0.08
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R13_KV-1s/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/russian/R13_KV-1s/crash/lod0/Gun_03.model</destroyed>
@@ -6920,8 +6940,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_76mm_ZiS-5>
-				<_85mm_S-31_M>
+				</_76mm_ZiS_5_KV_1S>
+				<_85mm_S_31M>
 					shared
 					<maxAmmo>70</maxAmmo>
 					<pitchLimits>
@@ -6948,15 +6968,15 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.6
+						5.1
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6965,7 +6985,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.11
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -6974,6 +6994,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R13_KV-1s/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/russian/R13_KV-1s/crash/lod0/Gun_04.model</destroyed>
@@ -7058,8 +7079,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_85mm_S-31_M>
-				<_122mm_S-41>
+				</_85mm_S_31M>
+				<_122mm_Howitzer_S_41>
 					shared
 					<maxAmmo>85</maxAmmo>
 					<pitchLimits>
@@ -7197,7 +7218,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122mm_S-41>
+				</_122mm_Howitzer_S_41>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R13_KV-1s/normal/lod0/Turret_02.model</undamaged>
@@ -8120,94 +8141,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</KV1S_mod_43>
+		</Turret_2_R13_KV-1s>
 	</turrets0>
 	<engines>
-		<V-2K>
+		<V_2K_KV_1S>
 			shared
 			<unlocks>
 				<engine>
-					V-2IS
+					V_2IS_KV_1S
 					<cost>11000</cost>
 				</engine>
 			</unlocks>
-		</V-2K>
-		<V-2IS>
-			shared
-			<unlocks>
-				<vehicle>
-					R01_IS
-					<cost>49480</cost>
-				</vehicle>
-			</unlocks>
-		</V-2IS>
+		</V_2K_KV_1S>
+		<V_2IS_KV_1S>shared</V_2IS_KV_1S>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<_9R>
-			shared
-			<unlocks>
-				<radio>
-					_10R
-					<cost>610</cost>
-				</radio>
-			</unlocks>
-		</_9R>
-		<_10R>
-			shared
-			<unlocks>
-				<radio>
-					_10RK
-					<cost>3100</cost>
-				</radio>
-			</unlocks>
-		</_10R>
 		<_10RK>shared</_10RK>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<V-2K>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+				<V_2K_KV_1S>
+					<smplEnginePower>580</smplEnginePower>
 					<smplFwMaxSpeed>43</smplFwMaxSpeed>
-				</V-2K>
-				<V-2IS>
-					<smplEnginePower>
-						634.3687
-						<!--BW_String-->
-					</smplEnginePower>
+				</V_2K_KV_1S>
+				<V_2IS_KV_1S>
+					<smplEnginePower>660</smplEnginePower>
 					<smplFwMaxSpeed>43</smplFwMaxSpeed>
-				</V-2IS>
+				</V_2IS_KV_1S>
 			</engines>
 			<chassis>
-				<KV-1s>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</KV-1s>
-				<KV-1s_bis>
+				<Chassis_R13_KV-1s>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8228,7 +8195,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</KV-1s_bis>
+				</Chassis_R13_KV-1s>
+				<Chassis_R13_KV-1s_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_R13_KV-1s_2>
 			</chassis>
 		</detailed>
 	</physics>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>ReactivateGameObject</name>
+		<isMacro>true</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_1</id>
+				<params>
+					<param>
+						in
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_1</id>
+				<params>
+					<param>
+						out
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_11</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_14</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_2</id>
+				<params>
+					<param>
+						gameObject
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						GameObjectT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>ActivateGameObject_11</from>
+				<input>out</input>
+				<to>MacroOutput_1</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>DeactivateGameObject_14</from>
+				<input>in</input>
+				<to>ActivateGameObject_11</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>DeactivateGameObject_14</from>
+				<input>gameObject</input>
+				<to>ActivateGameObject_11</to>
+				<output>object</output>
+			</connection>
+			<connection>
+				<from>MacroInput_1</from>
+				<input>in</input>
+				<to>DeactivateGameObject_14</to>
+				<output>in</output>
+			</connection>
+			<connection>
+				<from>MacroInput_2</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_14</to>
+				<output>gameObject</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

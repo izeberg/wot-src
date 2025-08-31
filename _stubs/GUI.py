@@ -2780,6 +2780,7 @@ def setBlurAlphaParams(*args, **kwargs): pass
 def setBlurCenter(*args, **kwargs): pass
 def setBlurDispatches(*args, **kwargs): pass
 def setBlurIntensity(*args, **kwargs): pass
+def setBlurMipsCount(*args, **kwargs): pass
 def setBlurParams(*args, **kwargs): pass
 def setDragDistance(*args, **kwargs): pass
 def setHorizontalBlurAlphas(*args, **kwargs): pass
@@ -2788,5 +2789,6 @@ def setRadialApplianceBlurRadius(*args, **kwargs): pass
 def setResolutionOverride(*args, **kwargs): pass
 def setVerticalBlurAlphas(*args, **kwargs): pass
 def setVerticalBlurParams(*args, **kwargs): pass
+def switchArmorInspectorCursor(*args, **kwargs): pass
 def syncMousePosition(*args, **kwargs): pass
 def wg_setGlyphCacheParams(*args, **kwargs): pass

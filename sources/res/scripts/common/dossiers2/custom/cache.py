@@ -8,7 +8,7 @@ PRESTIGE_ALLOWED_TAGS = {
  'role_ATSPG_assault', 'role_HT_assault', 'special', 'collectorVehicle', 'secret', 'testTank',
  'private', 'event_battles', 'fallout', 'epic_battles', 'mapbox', 'fun_random',
  'rent_promotion', 'premiumIGR', 'pillbox', 'fr_hidden', 'mode_hidden', 'disableIBA', 'comp7',
- 'bot_hunter', 'clanWarsBattles'}
+ 'comp7_light', 'bot_hunter', 'clanWarsBattles'}
 EXCLUDE_VEHICLE_BY_TAGS = {
  'bob', 'battle_royale', 'maps_training', 'bunkerTurret', 'event_battles'}
 
@@ -60,10 +60,9 @@ def buildCache():
         if bool(vehiclesInNationTree):
             nationsWithVehiclesInTree.append(nationIdx)
 
-    vehicles8p = vehiclesByLevel[8] | vehiclesByLevel[9] | vehiclesByLevel[10]
+    vehicles8p = vehiclesByLevel[8] | vehiclesByLevel[9] | vehiclesByLevel[10] | vehiclesByLevel[11]
     _g_cache.update({'vehiclesByLevel': vehiclesByLevel, 
        'vehicles8+': vehicles8p, 
-       'vehiclesInTreesWithout1Lvl': vehiclesInTree - vehiclesByLevel[1], 
        'vehiclesByTag': vehiclesByTag, 
        'mausTypeCompDescr': vehicles.makeVehicleTypeCompDescrByName('germany:G42_Maus'), 
        'vehiclesInTreesByNation': vehiclesInTreeByNation, 

@@ -69,6 +69,12 @@ msgstr "OPERATION POSTMAN"
 msgid "battleResult/missionName/1004"
 msgstr "OPERATION POSTMAN"
 
+msgid "battleResult/missionName/1005"
+msgstr "OPERATION BOILING POINT"
+
+msgid "battleResult/missionName/1006"
+msgstr "OPERATION BOILING POINT"
+
 msgid "battleResult/missionName/2"
 msgstr "TIGER HUNTER: Operation Trapper"
 
@@ -153,41 +159,23 @@ msgstr "Confirm"
 msgid "dialogs/missionCompleted/title"
 msgstr "No Active Missions in This Operation"
 
-msgid "entryPoint/new"
-msgstr "NEW"
-
-msgid "entryPoint/subtitle/newMission"
-msgstr "NEW MISSIONS AVAILABLE"
-
-msgid "entryPoint/subtitle/newMode"
-msgstr "NEW STORY AVAILABLE"
-
-msgid "entryPoint/timer/dates"
-msgstr "%(startDate)s – %(endDate)"
-
-msgid "entryPoint/title/newMission"
-msgstr "OPERATION POSTMAN"
-
-msgid "entryPoint/title/newMode"
-msgstr "OPERATION POSTMAN"
-
 msgid "eventWelcomeScreen/column/subtitle/1"
 msgstr ""
-"This story is dedicated to the 80th anniversary of the end of the war in "
-"Europe. Deliver the ceasefire order to your allies and stop the bloodshed."
+"Identify the unknown threat, stop the missile launch, and make sure the new "
+"technologies fall into the right hands."
 
 msgid "eventWelcomeScreen/column/subtitle/2"
 msgstr ""
-"Play solo and sneak past AI-driven enemies in this epic stealth story. Evade"
-" enemy patrols, give them false orders, and unleash your tactical abilities."
+"Play solo and fight against AI-driven enemies in this epic story featuring "
+"commanders from Sector 3!"
 
 msgid "eventWelcomeScreen/column/subtitle/3"
 msgstr ""
-"Complete all missions to receive a commemorative badge, a Premium vehicle "
-"with 3D style, and other valuable rewards."
+"Complete all missions to receive a commemorative badge and medal, themed 2D "
+"styles, and other valuable rewards."
 
 msgid "eventWelcomeScreen/column/title/1"
-msgstr "Historical Events"
+msgstr "A New Era Dawns"
 
 msgid "eventWelcomeScreen/column/title/2"
 msgstr "Solo Story"
@@ -196,7 +184,7 @@ msgid "eventWelcomeScreen/column/title/3"
 msgstr "Rewards"
 
 msgid "eventWelcomeScreen/header"
-msgstr "OPERATION POSTMAN"
+msgstr "OPERATION BOILING POINT"
 
 msgid "eventWelcomeScreen/subheader"
 msgstr "%(startDate)s – %(endDate)"
@@ -208,9 +196,7 @@ msgid "missionSelection/about"
 msgstr "ABOUT STORIES"
 
 msgid "missionSelection/difficulty/hard"
-msgstr ""
-"Rigorous\n"
-"Covert Op"
+msgstr "Rigorous"
 
 msgid "missionSelection/difficulty/normal"
 msgstr "Regular"
@@ -289,6 +275,22 @@ msgstr ""
 "\n"
 "Roll out.\""
 
+msgid "missionSelection/missionDescription/1005"
+msgstr ""
+"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
+"\n"
+"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
+"\n"
+"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
+
+msgid "missionSelection/missionDescription/1006"
+msgstr ""
+"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
+"\n"
+"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
+"\n"
+"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
+
 msgid "missionSelection/missionDescription/2"
 msgstr ""
 "MacLeod: \"Ah, Tigers—those are the worst ye can face on the battlefield. And if the command says they have a problem, they probably mean Tigers. We cannot contact the first assault squad, the second's just departed, and here we are—sent to follow them.\n"
@@ -343,6 +345,12 @@ msgstr "OPERATION POSTMAN"
 msgid "missionSelection/missionName/1004"
 msgstr "OPERATION POSTMAN"
 
+msgid "missionSelection/missionName/1005"
+msgstr "OPERATION BOILING POINT"
+
+msgid "missionSelection/missionName/1006"
+msgstr "OPERATION BOILING POINT"
+
 msgid "missionSelection/missionName/2"
 msgstr "OPERATION TRAPPER"
 
@@ -362,7 +370,7 @@ msgid "missionSelection/specialVehicle"
 msgstr "Special Vehicle"
 
 msgid "missionSelection/tab/event"
-msgstr "OPERATION POSTMAN"
+msgstr "OPERATION BOILING POINT"
 
 msgid "missionSelection/tab/newbies"
 msgstr "TUTORIAL STORIES"
@@ -400,6 +408,24 @@ msgid "missionSelection/taskDescription/1004/3"
 msgstr ""
 "Complete the main mission objectives without taking damage from enemy mines "
 "and artillery."
+
+msgid "missionSelection/taskDescription/1005/1"
+msgstr "Reach the command center and stop the missile launch."
+
+msgid "missionSelection/taskDescription/1005/2"
+msgstr "Complete the main mission objectives in under %(win_timer)s."
+
+msgid "missionSelection/taskDescription/1005/3"
+msgstr "Complete the main mission objectives without losing a single vehicle."
+
+msgid "missionSelection/taskDescription/1006/1"
+msgstr "Reach the command center and stop the missile launch."
+
+msgid "missionSelection/taskDescription/1006/2"
+msgstr "Complete the main mission objectives in under %(win_timer)s."
+
+msgid "missionSelection/taskDescription/1006/3"
+msgstr "Complete the main mission objectives without losing a single vehicle."
 
 msgid "missionSelection/taskDescription/2/1"
 msgstr "Attack the town and destroy enemy vehicles."
@@ -478,13 +504,12 @@ msgid "mode/story_mode/description"
 msgstr "Complete scripted operations against AI-driven vehicles"
 
 msgid "mode/story_mode_event/callToAction"
-msgstr "Operation Postman available"
+msgstr "Operation Boiling Point available"
 
 msgid "newbieAdvertisingScreen/column/subtitle/1"
 msgstr ""
-"You can find your currently selected game mode next to the "
-"&zwnbsp;{whiteSpanish_Open}Battle!{whiteSpanish_Close}&zwnbsp; button. Click"
-" the mode name to see what else is available."
+"You can find your currently selected game mode at the top of the Garage main"
+" menu. Click the mode name to see what else is available."
 
 msgid "newbieAdvertisingScreen/column/subtitle/2"
 msgstr ""
@@ -511,12 +536,6 @@ msgstr "STORIES"
 
 msgid "newbieAdvertisingScreen/subheader"
 msgstr "Scripted scenarios await"
-
-msgid "newbieEntryPoint/subtitle/newStorie"
-msgstr "New Operation Available"
-
-msgid "newbieEntryPoint/title/newStorie"
-msgstr "STORIES"
 
 msgid "onboardingBattleResult/startButton"
 msgstr "Restart"
@@ -594,15 +613,19 @@ msgstr "Completed missions"
 msgid "tooltips/battleResultStat/missions/info"
 msgstr ""
 "The number of completed missions and\n"
-"all currently available missions."
+"all currently available missions.\n"
+"Missions completed on Rigorous difficulty\n"
+"are also automatically completed\n"
+"on Regular."
 
 msgid "tooltips/difficulty/available"
 msgstr "Available"
 
 msgid "tooltips/difficulty/hard/description"
 msgstr ""
-"A more challenging version of the Covert Op stage of the operation—with a non-linear structure, more enemies, and additional map pieces to collect.\n"
-"Offers increased battle rewards."
+"Enemies' reaction speed and accuracy have been increased, and they will "
+"attack you more aggressively. In return, you will receive extra rewards upon"
+" mission completion."
 
 msgid "tooltips/difficulty/hard/info/body"
 msgstr ""
@@ -615,7 +638,7 @@ msgid "tooltips/difficulty/hard/info/title"
 msgstr "Additional condition"
 
 msgid "tooltips/difficulty/hard/title"
-msgstr "Rigorous, Covert Op"
+msgstr "Rigorous"
 
 msgid "tooltips/difficulty/locked/body"
 msgstr ""
@@ -627,9 +650,8 @@ msgstr "Locked"
 
 msgid "tooltips/difficulty/normal/description"
 msgstr ""
-"Fewer enemies and a linear operation structure to introduce you to the mode rules and objectives.\n"
-"Includes Introductory, Covert Op, and Minefield stages.\n"
-"Standard battle rewards apply."
+"Opponents are slower and less accurate, and you receive standard rewards "
+"upon mission completion."
 
 msgid "tooltips/difficulty/normal/title"
 msgstr "Regular"
@@ -644,6 +666,45 @@ msgstr ""
 
 msgid "tooltips/difficulty/very_hard/title"
 msgstr "Rigorous, Minefield"
+
+msgid "tooltips/eventBannerTooltip/eventText"
+msgstr ""
+"Identify the unknown threat, stop the missile launch, and make sure the new "
+"technologies fall into the right hands."
+
+msgid "tooltips/eventBannerTooltip/eventTitle"
+msgstr "Operation Boiling Point"
+
+msgid "tooltips/eventBannerTooltip/mode"
+msgstr "MODE"
+
+msgid "tooltips/eventBannerTooltip/modeText"
+msgstr "— Game mode. Click to explore"
+
+msgid "tooltips/eventBannerTooltip/text"
+msgstr ""
+"Play solo and fight against AI-driven enemies in this epic story featuring "
+"commanders from Sector 3!"
+
+msgid "tooltips/eventBannerTooltip/timerText"
+msgstr "Event available for {timer}"
+
+msgid "tooltips/eventBannerTooltip/title"
+msgstr "STORIES"
+
+msgid "tooltips/newbieBannerTooltip/mode"
+msgstr "MODE"
+
+msgid "tooltips/newbieBannerTooltip/modeText"
+msgstr "— Game mode. Click to explore"
+
+msgid "tooltips/newbieBannerTooltip/text"
+msgstr ""
+"Special scripted scenarios. Embark on your journey into the world of armored"
+" vehicles and prove your worth fighting against AI-driven enemies."
+
+msgid "tooltips/newbieBannerTooltip/title"
+msgstr "Stories"
 
 msgid "tooltips/task/active"
 msgstr "Active"

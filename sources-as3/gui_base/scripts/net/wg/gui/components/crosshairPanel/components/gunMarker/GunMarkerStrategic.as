@@ -102,9 +102,48 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
       }
       
+      override protected function onDispose() : void
+      {
+         this._nodes.splice(0,this._nodes.length);
+         this._nodes = null;
+         super.onDispose();
+      }
+      
+      public function setAimDamageStage(param1:String) : void
+      {
+      }
+      
+      public function setColor(param1:String) : void
+      {
+      }
+      
+      public function setDualAccActive(param1:Boolean) : void
+      {
+      }
+      
+      public function setIsSecondary(param1:Boolean) : void
+      {
+      }
+      
+      public function setMixingScale(param1:Number) : void
+      {
+      }
+      
       public function setReloadingParams(param1:Number, param2:String) : void
       {
          this.setCurrentReloading(param1);
+      }
+      
+      public function setScale(param1:Number) : void
+      {
+      }
+      
+      public function setSettings(param1:Number, param2:Number, param3:Number, param4:Number) : void
+      {
+      }
+      
+      public function setZoomFactor(param1:Number) : void
+      {
       }
       
       protected function setCurrentReloading(param1:Number) : void
@@ -118,42 +157,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
       }
       
-      public function setSettings(param1:Number, param2:Number, param3:Number, param4:Number) : void
-      {
-      }
-      
-      public function setColor(param1:String) : void
-      {
-      }
-      
-      public function setScale(param1:Number) : void
-      {
-      }
-      
-      override protected function onDispose() : void
-      {
-         this._nodes.splice(0,this._nodes.length);
-         this._nodes = null;
-         super.onDispose();
-      }
-      
-      public function setMixingScale(param1:Number) : void
-      {
-      }
-      
-      public function setDualAccActive(param1:Boolean) : void
-      {
-      }
-      
-      public function setIsSecondary(param1:Boolean) : void
-      {
-      }
-      
-      public function setAimDamageStage(param1:String) : void
-      {
-      }
-      
-      public function setZoomFactor(param1:Number) : void
+      public function showPenetrationFx() : void
       {
       }
    }

@@ -24,7 +24,7 @@ package net.wg.infrastructure.base.meta.impl
       
       public var request4VehCompare:Function;
       
-      public var onBlueprintModeSwitch:Function;
+      public var onBlueprintModeSwitchToggle:Function;
       
       public var onGoToPremiumShop:Function;
       
@@ -108,10 +108,10 @@ package net.wg.infrastructure.base.meta.impl
          this.request4VehCompare(param1);
       }
       
-      public function onBlueprintModeSwitchS(param1:Boolean) : void
+      public function onBlueprintModeSwitchToggleS(param1:Boolean) : void
       {
-         App.utils.asserter.assertNotNull(this.onBlueprintModeSwitch,"onBlueprintModeSwitch" + Errors.CANT_NULL);
-         this.onBlueprintModeSwitch(param1);
+         App.utils.asserter.assertNotNull(this.onBlueprintModeSwitchToggle,"onBlueprintModeSwitchToggle" + Errors.CANT_NULL);
+         this.onBlueprintModeSwitchToggle(param1);
       }
       
       public function onGoToPremiumShopS(param1:String, param2:int) : void

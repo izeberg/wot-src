@@ -1,6 +1,5 @@
 from enum import IntEnum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.game_mode_card_model import GameModeCardModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.game_mode_rows_model import GameModeRowsModel
 
@@ -10,6 +9,7 @@ class ArenaBonusType(IntEnum):
     BATTLE_ROYALE_SOLO = 29
     EPIC_BATTLE = 27
     COMP7 = 43
+    COMP7_LIGHT = 49
 
 
 class GameModeModel(ViewModel):

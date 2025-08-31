@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 
 class OptionalDevicesAssistantItem(ViewModel):
     __slots__ = ()

@@ -20,83 +20,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_wall_0</identifier>
-					<materialKind>112</materialKind>
-					<collisionFlags>144</collisionFlags>
-				</material>
-				<groupOrigin>-0.799923 10.699490 6.468566</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_nd2</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>112</materialKind>
-					<collisionFlags>255</collisionFlags>
-					<property>
-						alphaReference
-						<Int>90</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_AM.dds</Texture>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>-0.216012 10.691480 5.955764</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>s_nd1</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>112</materialKind>
-					<property>
-						alphaReference
-						<Int>70</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_AM.dds</Texture>
-					</property>
-					<property>
-						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_ANM.dds</Texture>
-					</property>
-				</material>
-				<groupOrigin>0.333527 10.461564 5.494184</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				3
-				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
 					<materialKind>112</materialKind>
@@ -141,15 +64,104 @@
 						g_vertexColorMode
 						<Int>1</Int>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.041581 10.030318 6.967669</groupOrigin>
+				<groupOrigin>0.041571 10.030318 6.967684</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>112</materialKind>
+					<collisionFlags>144</collisionFlags>
+				</material>
+				<groupOrigin>-0.799923 10.699490 6.468566</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaReference
+						<Int>90</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_ANM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.216012 10.691480 5.955764</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>70</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_ANM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.333527 10.461564 6.028317</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-8.301035 -0.799759 -19.546896</min>
+		<min>-8.301035 -0.799759 -18.478628</min>
 		<max>8.401887 22.198738 30.810617</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>524820</geometrySize>
+	<geometrySize>602912</geometrySize>
 </root>

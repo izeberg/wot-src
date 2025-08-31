@@ -96,7 +96,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>3739</weight>
-		<maxHealth>648</maxHealth>
+		<maxHealth>800</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>190</maxHealth>
 			<maxRegenHealth>130</maxRegenHealth>
@@ -1611,14 +1611,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>9330</maxLoad>
 			<terrainResistance>
-				1 1.1 2
+				0.8 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>9000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>60</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -3302,14 +3301,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>10900</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>11000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>64</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -4963,7 +4961,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1500</weight>
-			<maxHealth>162</maxHealth>
+			<maxHealth>150</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -4973,7 +4971,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>370</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>90</maxHealth>
 				<maxRegenHealth>45</maxRegenHealth>
@@ -5013,11 +5011,11 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.5
+						7.7
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5035,9 +5033,10 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/german/G113_SP_I_C/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/german/G113_SP_I_C/crash/lod0/Gun_01.model</destroyed>
@@ -6251,7 +6250,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>232</maxHealth>
+			<maxHealth>200</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -6309,7 +6308,10 @@
 						0.238
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>8</reloadTime>
+					<reloadTime>
+						7.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.10
@@ -6325,9 +6327,14 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionRadius>
+						0.36
+						<!--BW_String-->
+					</shotDispersionRadius>
 					<models>
 						<undamaged>vehicles/german/G113_SP_I_C/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/german/G113_SP_I_C/crash/lod0/Gun_02.model</destroyed>
@@ -6787,6 +6794,7 @@
 						2.2
 						<!--BW_String-->
 					</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/german/G113_SP_I_C/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/german/G113_SP_I_C/crash/lod0/Gun_03.model</destroyed>
@@ -8026,62 +8034,53 @@
 		</Turret_2_G113_SP_I_C>
 	</turrets0>
 	<engines>
-		<Hotchkiss_6_Zyl_Benzin_164_PS>
+		<Hotchkiss_6_Zyl_Benzin_PT_I>
 			shared
 			<unlocks>
 				<engine>
-					Hotchkiss_6_Zyl_Benzin_195_PS
+					Hotchkiss_6_Zyl_Benzin_PT_II
 					<cost>10200</cost>
 				</engine>
 			</unlocks>
-		</Hotchkiss_6_Zyl_Benzin_164_PS>
-		<Hotchkiss_6_Zyl_Benzin_195_PS>shared</Hotchkiss_6_Zyl_Benzin_195_PS>
+		</Hotchkiss_6_Zyl_Benzin_PT_I>
+		<Hotchkiss_6_Zyl_Benzin_PT_II>shared</Hotchkiss_6_Zyl_Benzin_PT_II>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-4>
-			shared
-			<unlocks>
-				<radio>
-					AN-GRC-7
-					<cost>9100</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-4>
 		<AN-GRC-7>shared</AN-GRC-7>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Hotchkiss_6_Zyl_Benzin_164_PS>
+				<Hotchkiss_6_Zyl_Benzin_PT_I>
 					<smplEnginePower>190</smplEnginePower>
 					<smplFwMaxSpeed>58</smplFwMaxSpeed>
-				</Hotchkiss_6_Zyl_Benzin_164_PS>
-				<Hotchkiss_6_Zyl_Benzin_195_PS>
+				</Hotchkiss_6_Zyl_Benzin_PT_I>
+				<Hotchkiss_6_Zyl_Benzin_PT_II>
 					<smplEnginePower>230</smplEnginePower>
 					<smplFwMaxSpeed>58</smplFwMaxSpeed>
-				</Hotchkiss_6_Zyl_Benzin_195_PS>
+				</Hotchkiss_6_Zyl_Benzin_PT_II>
 			</engines>
 			<chassis>
 				<Chassis_G113_SP_I_C>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.161
+								0.1449
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.07245
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0805
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

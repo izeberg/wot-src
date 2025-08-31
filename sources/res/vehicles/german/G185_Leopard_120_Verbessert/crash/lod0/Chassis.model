@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.632318 -0.000583 -3.444127</min>
+		<max>1.624276 1.211985 3.250597</max>
+	</visibilityBox>
+	<parent>vehicles/german/G185_Leopard_120_Verbessert/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G185_Leopard_120_Verbessert/crash/lod0/Chassis</nodefullVisual>
+</root>

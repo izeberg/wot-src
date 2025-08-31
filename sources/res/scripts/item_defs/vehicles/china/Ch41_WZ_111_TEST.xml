@@ -1640,7 +1640,6 @@
 			<level>10</level>
 			<price>61350</price>
 			<weight>10000</weight>
-			<maxLoad>55000</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.5
 				<!--BW_String-->
@@ -4902,10 +4901,7 @@
 		<detailed>
 			<engines>
 				<_V-2-54SC_TEST>
-					<smplEnginePower>
-						792.9609
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>850</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_V-2-54SC_TEST>
 			</engines>

@@ -148,7 +148,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_10</primaryArmor>
 		<weight>10533</weight>
-		<maxHealth>760</maxHealth>
+		<maxHealth>960</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1579,14 +1579,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_M41_Bulldog>
-			<userString>#usa_vehicles:Chassis_M41_Bulldog</userString>
+		<Chassis_A97_M41_Bulldog>
+			<userString>#usa_vehicles:Chassis_A97_M41_Bulldog</userString>
 			<tags/>
 			<level>7</level>
 			<price>21000</price>
 			<unlocks>
 				<chassis>
-					Chassis_M41_Bulldog_2
+					Chassis_A97_M41_Bulldog_2
 					<cost>15100</cost>
 				</chassis>
 			</unlocks>
@@ -1595,14 +1595,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>23650</maxLoad>
 			<terrainResistance>
-				0.6 0.7 1.2
+				0.5 0.6 1.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>24000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>54</rotationSpeed>
+			<rotationSpeed>62</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -3154,9 +3153,9 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M41_Bulldog>
-		<Chassis_M41_Bulldog_2>
-			<userString>#usa_vehicles:Chassis_M41_Bulldog_2</userString>
+		</Chassis_A97_M41_Bulldog>
+		<Chassis_A97_M41_Bulldog_2>
+			<userString>#usa_vehicles:Chassis_A97_M41_Bulldog_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>33500</price>
@@ -3165,14 +3164,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>26000</maxLoad>
 			<terrainResistance>
 				0.5 0.6 1.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>28000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>56</rotationSpeed>
+			<rotationSpeed>65</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -4724,11 +4722,11 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M41_Bulldog_2>
+		</Chassis_A97_M41_Bulldog_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_M41_Bulldog>
-			<userString>#usa_vehicles:Turret_1_M41_Bulldog</userString>
+		<Turret_1_A97_M41_Bulldog>
+			<userString>#usa_vehicles:Turret_1_A97_M41_Bulldog</userString>
 			<tags/>
 			<level>7</level>
 			<price>21750</price>
@@ -4793,7 +4791,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>4750</weight>
-			<maxHealth>190</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -4803,7 +4801,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -4818,7 +4816,7 @@
 					<maxAmmo>57</maxAmmo>
 					<unlocks>
 						<turret>
-							Turret_2_M41_Bulldog
+							Turret_2_A97_M41_Bulldog
 							<cost>15250</cost>
 						</turret>
 					</unlocks>
@@ -4854,17 +4852,31 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						5.3
+						4.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.08
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A97_M41_Bulldog/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/american/A97_M41_Bulldog/crash/lod0/Gun_02.model</destroyed>
@@ -6034,9 +6046,9 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_M41_Bulldog>
-		<Turret_2_M41_Bulldog>
-			<userString>#usa_vehicles:Turret_2_M41_Bulldog</userString>
+		</Turret_1_A97_M41_Bulldog>
+		<Turret_2_A97_M41_Bulldog>
+			<userString>#usa_vehicles:Turret_2_A97_M41_Bulldog</userString>
 			<tags/>
 			<level>8</level>
 			<price>34050</price>
@@ -6162,17 +6174,31 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						5.3
+						4.6
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.8
 						<!--BW_String-->
 					</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.07
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A97_M41_Bulldog/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/american/A97_M41_Bulldog/crash/lod0/Gun_04.model</destroyed>
@@ -6304,6 +6330,12 @@
 				<_76mm_Gun_M32_late>
 					shared
 					<maxAmmo>65</maxAmmo>
+					<unlocks>
+						<vehicle>
+							A100_T49
+							<cost>177000</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							31.8
@@ -6347,6 +6379,20 @@
 						1.7
 						<!--BW_String-->
 					</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.06
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A97_M41_Bulldog/normal/lod0/Gun_05.model</undamaged>
 						<destroyed>vehicles/american/A97_M41_Bulldog/crash/lod0/Gun_05.model</destroyed>
@@ -7512,79 +7558,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_M41_Bulldog>
+		</Turret_2_A97_M41_Bulldog>
 	</turrets0>
 	<engines>
-		<Continental_AOS-895-3A>
+		<Continental_AOS_895_3A>
 			shared
 			<unlocks>
 				<engine>
-					Continental_AOSI-895-5A
+					Continental_AOSI_895_5A_M41
 					<cost>18800</cost>
 				</engine>
 			</unlocks>
-		</Continental_AOS-895-3A>
-		<Continental_AOSI-895-5A>
-			shared
-			<unlocks>
-				<vehicle>
-					A100_T49
-					<cost>177000</cost>
-				</vehicle>
-			</unlocks>
-		</Continental_AOSI-895-5A>
+		</Continental_AOS_895_3A>
+		<Continental_AOSI_895_5A_M41>shared</Continental_AOSI_895_5A_M41>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-3>
-			shared
-			<unlocks>
-				<radio>
-					AN-ARC-27
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-3>
 		<AN-ARC-27>shared</AN-ARC-27>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Continental_AOS-895-3A>
-					<smplEnginePower>600</smplEnginePower>
+				<Continental_AOS_895_3A>
+					<smplEnginePower>730</smplEnginePower>
 					<smplFwMaxSpeed>68</smplFwMaxSpeed>
-				</Continental_AOS-895-3A>
-				<Continental_AOSI-895-5A>
+				</Continental_AOS_895_3A>
+				<Continental_AOSI_895_5A_M41>
 					<smplEnginePower>800</smplEnginePower>
 					<smplFwMaxSpeed>68</smplFwMaxSpeed>
-				</Continental_AOSI-895-5A>
+				</Continental_AOSI_895_5A_M41>
 			</engines>
 			<chassis>
-				<Chassis_M41_Bulldog>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.05635
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.0483
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_M41_Bulldog>
-				<Chassis_M41_Bulldog_2>
+				<Chassis_A97_M41_Bulldog>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7605,7 +7612,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_M41_Bulldog_2>
+				</Chassis_A97_M41_Bulldog>
+				<Chassis_A97_M41_Bulldog_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.0483
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.04025
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A97_M41_Bulldog_2>
 			</chassis>
 		</detailed>
 	</physics>

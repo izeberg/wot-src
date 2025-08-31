@@ -123,7 +123,9 @@ package net.wg.data
       
       public static const MINIMAP_ON_BATTLE_LOADING:String = "minimapOnBattleLoading";
       
-      public static const LOBBY_HEADER:String = "lobbyHeader";
+      public static const LOBBY_HEADER_OVERLAPPING:String = "lobbyHeaderOverlapping";
+      
+      public static const LOBBY_FOOTER_OVERLAPPING:String = "lobbyFooterOverlapping";
       
       public static const CUSTOMIZATION_PROPERTIES_SHEET:String = "customizationPropertiesSheet";
       
@@ -132,8 +134,6 @@ package net.wg.data
       public static const CUSTOMIZATION_INSCRIPTION_CONTROLLER:String = "customizationInscriptionController";
       
       public static const SYSTEM_MESSAGES:String = "systemMessages";
-      
-      public static const MESSENGER_BAR:String = "messengerBar";
       
       public static const RECRUIT_PARAMS:String = "recruitParams";
       

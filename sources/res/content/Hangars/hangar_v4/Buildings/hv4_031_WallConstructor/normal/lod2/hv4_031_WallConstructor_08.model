@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Buildings/hv4_031_WallConstructor/normal/lod3/hv4_031_WallConstructor_08</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-6.879472 -0.992361 -0.622533</min>
+		<max>6.201037 26.505075 0.622544</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Buildings/hv4_031_WallConstructor/normal/lod2/hv4_031_WallConstructor_08</nodefullVisual>
+</root>

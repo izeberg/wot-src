@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<CellMethods/>
+	<ClientMethods/>
+	<Properties>
+		<plasmaBonusPerVehicle>
+			<Type>
+				ARRAY
+				<of>
+					TUPLE
+					<of>UINT32</of>
+					<size>2</size>
+				</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</plasmaBonusPerVehicle>
+		<plasmaBonusLevelMultipliers>
+			<Type>
+				ARRAY
+				<of>FLOAT32</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<AllowUnsafeData>true</AllowUnsafeData>
+		</plasmaBonusLevelMultipliers>
+	</Properties>
+	<ofEntity>
+		<ArenaInfo/>
+	</ofEntity>
+	<DefaultKeyName>wtPlasmaBonusComponent</DefaultKeyName>
+</root>

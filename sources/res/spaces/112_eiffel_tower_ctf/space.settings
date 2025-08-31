@@ -25,7 +25,7 @@
 				<name>GBufferDecals</name>
 				<atlas>
 					<width>4096</width>
-					<height>4096</height>
+					<height>4864</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>128</minWidth>
@@ -37,7 +37,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>4096</height>
+					<height>4864</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>128</minWidth>
@@ -49,7 +49,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>4096</height>
+					<height>4864</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>128</minWidth>

@@ -261,7 +261,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
 			</component>
@@ -499,6 +499,91 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::variables::VariableStorageComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>varInitialValues</name>
+						<object>
+							<property>
+								<name>entries</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/caliber</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>94</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+									<item>
+										<object>
+											<property>
+												<name>var</name>
+												<object>
+													<property>
+														<name>name</name>
+														<value>vehicle/gun/gunLength</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>initValExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::ConstantFloatExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>value</name>
+																<value>
+																	4.495
+																	<!--BW_String-->
+																</value>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
 					</property>
 				</config>
 			</component>
@@ -845,7 +930,7 @@
 			<version>1</version>
 			<component>
 				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
-				<flags>3</flags>
+				<flags>1</flags>
 				<config>
 					<property>
 						<name>NodeName</name>

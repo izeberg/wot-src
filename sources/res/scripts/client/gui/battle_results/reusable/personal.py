@@ -128,7 +128,7 @@ class PersonalInfo(shared.UnpackedInfo):
                  '__questsProgress', '__PM2Progress', '__rankInfo', '__isTeamKiller',
                  '__progressiveReward', '__premiumMask', '__isWotPlus', '__isAddXPBonusApplied',
                  '__c11nProgress', '__dogTags', '__goldBankGain', '__xpProgress',
-                 '__prestigeResults', '__questTokensCount')
+                 '__prestigeResults', '__questTokensCount', '__questTokensConvertion')
     itemsCache = dependency.descriptor(IItemsCache)
 
     def __init__(self, bonusType, personal, bonusCapsOverrides=None):
@@ -154,6 +154,7 @@ class PersonalInfo(shared.UnpackedInfo):
         self.__dogTags = {}
         self.__prestigeResults = {}
         self.__questTokensCount = {}
+        self.__questTokensConvertion = {}
         self.__goldBankGain = 0
         if not self.hasUnpackedItems():
             self.__collectRequiredData(personal)
@@ -257,6 +258,9 @@ class PersonalInfo(shared.UnpackedInfo):
     def getQuestTokensCount(self):
         return self.__questTokensCount
 
+    def getQuestTokensConvertion(self):
+        return self.__questTokensConvertion
+
     def getRankInfo(self):
         return self.__rankInfo
 
@@ -321,6 +325,7 @@ class PersonalInfo(shared.UnpackedInfo):
             self.__questsProgress.update(infoAvatar.get('questsProgress', {}))
             self.__PM2Progress.update(infoAvatar.get('PM2Progress', {}))
             self.__questTokensCount.update(infoAvatar.get('questTokensCount', {}))
+            self.__questTokensConvertion.update(infoAvatar.get('questTokensConvertion', {}))
             self.__rankInfo = PostBattleRankInfo.fromDict(infoAvatar)
             self.__progressiveReward = infoAvatar.get('progressiveReward')
             self.__dogTags.update(infoAvatar.get('dogTags', {}))

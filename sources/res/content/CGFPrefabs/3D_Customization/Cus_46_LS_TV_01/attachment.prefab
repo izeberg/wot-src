@@ -17,6 +17,11 @@
 			<UUID>61e6b416-fe36-4c70-b15e-02a6ae0452f8</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>80a08ca0-34a9-4feb-89a0-bcb5b80d930b</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -28,12 +33,22 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>1f494f4f-21ff-4986-84fd-9d8178dc618c</link>
+						<link>80a08ca0-34a9-4feb-89a0-bcb5b80d930b</link>
 					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>61e6b416-fe36-4c70-b15e-02a6ae0452f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>80a08ca0-34a9-4feb-89a0-bcb5b80d930b</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>80a08ca0-34a9-4feb-89a0-bcb5b80d930b</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -103,6 +118,50 @@
 							0.164067 -0.000834648 -0.00019976
 							<!--BW_String-->
 						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>80a08ca0-34a9-4feb-89a0-bcb5b80d930b</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1f494f4f-21ff-4986-84fd-9d8178dc618c</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>80a08ca0-34a9-4feb-89a0-bcb5b80d930b</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -446,6 +505,20 @@
 					<property>
 						<name>Loop Count</name>
 						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1f494f4f-21ff-4986-84fd-9d8178dc618c</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

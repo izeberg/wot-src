@@ -1305,9 +1305,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>46000</maxLoad>
 			<terrainResistance>
-				1.1 1.2 1.9
+				1 1.1 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
@@ -1327,12 +1326,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>170</maxHealth>
-			<maxRegenHealth>130</maxRegenHealth>
-			<repairCost>
-				5.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>95</maxHealth>
+			<maxRegenHealth>71</maxRegenHealth>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/japan/J45_Mitsu_108/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/japan/J45_Mitsu_108/crash/lod0/Chassis.model</destroyed>
@@ -3273,7 +3269,7 @@
 				</right>
 			</physicalTracks>
 			<repairTime>
-				6.85714293
+				6.73684216
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_J45_Mitsu_108>
@@ -3287,7 +3283,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>50000</maxLoad>
 			<terrainResistance>
 				1 1.1 1.8
 				<!--BW_String-->
@@ -5282,7 +5277,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7400</weight>
-			<maxHealth>130</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -5292,7 +5287,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>340</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>70</maxHealth>
 				<maxRegenHealth>35</maxRegenHealth>
@@ -5308,7 +5303,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.00000 10.00 0.05000 5.00 0.13889 5.00 0.25000 10.00 0.40278 9.00 0.50000 9.00 0.59722 9.00 0.75000 10.00 0.86111 5.00 0.95000 5.00 1.00000 10.00
+							0.00000 10.00 0.03333 10.00 0.04722 5.00 0.13333 5.00 0.14722 10.00 0.49167 10.00 0.50278 9.00 0.51389 9.00 0.52500 10.00 0.85278 10.00 0.86667 5.00 0.95278 5.00 0.96667 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5336,21 +5331,18 @@
 							0.14
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.41
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						5.4
+						4.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -6237,7 +6229,7 @@
 							<!--BW_String-->
 						</minPitch>
 						<maxPitch>
-							0.00000 10.00 0.05000 5.00 0.13889 5.00 0.25000 10.00 0.40278 9.00 0.50000 9.00 0.59722 9.00 0.75000 10.00 0.86111 5.00 0.95000 5.00 1.00000 10.00
+							0.00000 10.00 0.03333 10.00 0.04722 5.00 0.13333 5.00 0.14722 10.00 0.49167 10.00 0.50278 9.00 0.51389 9.00 0.52500 10.00 0.85278 10.00 0.86667 5.00 0.95278 5.00 0.96667 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6265,21 +6257,18 @@
 							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.39
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						5.1
+						4.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -6403,7 +6392,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0.00000 10.00 0.05000 2.00 0.13889 2.00 0.25000 10.00 0.40278 9.00 0.50000 9.00 0.59722 9.00 0.75000 10.00 0.86111 2.00 0.95000 2.00 1.00000 10.00
+							0.00000 10.00 0.03333 10.00 0.04722 2.00 0.13333 2.00 0.14722 10.00 0.49167 10.00 0.50278 9.00 0.51389 9.00 0.52500 10.00 0.85278 10.00 0.86667 2.00 0.95278 2.00 0.96667 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7209,15 +7198,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<_Type96_Bo>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Otsu
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</_Type96_Bo>
 		<_Type3_Otsu>shared</_Type3_Otsu>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -7238,19 +7218,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.15295
+								0.1449
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

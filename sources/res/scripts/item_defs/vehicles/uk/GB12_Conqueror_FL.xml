@@ -2185,14 +2185,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>68000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>48000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>26</rotationSpeed>
+			<rotationSpeed>33</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -4906,6 +4905,7 @@
 						<armor_7>
 							14
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_7>
 						<gun>50</gun>
 					</armor>
@@ -6047,7 +6047,7 @@
 		<detailed>
 			<engines>
 				<Rolls_Royce_Griffon_FL>
-					<smplEnginePower>950</smplEnginePower>
+					<smplEnginePower>1000</smplEnginePower>
 					<smplFwMaxSpeed>
 						34.3
 						<!--BW_String-->

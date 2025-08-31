@@ -1993,7 +1993,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>9000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->
@@ -4038,7 +4037,7 @@
 			</gunPosition>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				0.991 0.082 0.93 0 0.568 -0.273 0.528 0.369 0.214 0.5 0 0.5 0 0 0
+				0.991 -0.092 0.93 0 0.333 0.178 0.528 0.369 0.214 0.5 0 0.5 0 0 0
 				<!--BW_String-->
 			</physicsShape>
 			<customizationSlots>

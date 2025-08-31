@@ -6,9 +6,9 @@ from gui.impl.gen.view_models.views.lobby.crew.quick_training.mentoring_license_
 from gui.impl.gen.view_models.views.lobby.crew.quick_training.tips_list_component_model import TipsListComponentModel
 
 class QuickTrainingViewModel(BaseCrewViewModel):
-    __slots__ = ('mouseLeave', )
+    __slots__ = ('mouseLeave', 'goToProfile')
 
-    def __init__(self, properties=14, commands=5):
+    def __init__(self, properties=14, commands=6):
         super(QuickTrainingViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -108,3 +108,4 @@ class QuickTrainingViewModel(BaseCrewViewModel):
         self._addBoolProperty('isCurrentTankmanHasPerkLimit', False)
         self._addBoolProperty('isCurrentTankmanHasLowEfficiency', False)
         self.mouseLeave = self._addCommand('mouseLeave')
+        self.goToProfile = self._addCommand('goToProfile')

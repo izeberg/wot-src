@@ -7,7 +7,7 @@ package net.wg.gui.lobby.eventBoards
    import net.wg.gui.lobby.eventBoards.data.MissionsEventBoardsPackVO;
    import net.wg.gui.lobby.eventBoards.events.ServerEvent;
    import net.wg.gui.lobby.eventBoards.events.TypeEvent;
-   import net.wg.gui.lobby.missions.event.MissionHeaderEvent;
+   import net.wg.gui.lobby.userMissions.event.MissionHeaderEvent;
    import net.wg.infrastructure.base.meta.IMissionsEventBoardsViewMeta;
    import net.wg.infrastructure.base.meta.impl.MissionsEventBoardsViewMeta;
    import scaleform.clik.constants.InvalidationType;

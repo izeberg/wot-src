@@ -31,26 +31,29 @@ msgstr ""
 "Competitive mode: 7v7 %(parSecondary_open)sI%(parSecondary_close)s "
 "Tier&nbsp;X"
 
+msgid "mode/comp7/progress"
+msgstr "%(score)s/%(scoreToNextDivision)s"
+
 msgid "mode/comp7/seasonEnd/first"
-msgstr "Season of the Azure Manticore has ended"
+msgstr "Season of the Azure Dragon has ended"
 
 msgid "mode/comp7/seasonEnd/second"
-msgstr "Season of the Crimson Manticore has ended"
+msgstr "Season of the Crimson Dragon has ended"
 
 msgid "mode/comp7/seasonEnd/third"
-msgstr "Season of the Jade Manticore has ended"
+msgstr "Season of the Jade Dragon has ended"
 
 msgid "mode/comp7/seasonStart/first"
-msgstr "Season of the Azure Manticore will start on %(date)s"
+msgstr "Season of the Azure Dragon will start on %(date)s"
 
 msgid "mode/comp7/seasonStart/second"
-msgstr "Season of the Crimson Manticore will start on %(date)s"
+msgstr "Season of the Crimson Dragon will start on %(date)s"
 
 msgid "mode/comp7/seasonStart/third"
-msgstr "Season of the Jade Manticore will start on %(date)s"
+msgstr "Season of the Jade Dragon will start on %(date)s"
 
 msgid "mode/comp7/warning"
-msgstr "Rank Inactivity"
+msgstr "Rank Inactivity: %(count)s"
 
 msgid "mode/comp7/widgetDescription/qualification"
 msgid_plural "plural/calendarDay/timeLeft"
@@ -70,4 +73,4 @@ msgstr ""
 "%(division)s"
 
 msgid "mode/comp7/yearEnd"
-msgstr "Year of the Manticore has ended"
+msgstr "Year of the Dragon has ended"

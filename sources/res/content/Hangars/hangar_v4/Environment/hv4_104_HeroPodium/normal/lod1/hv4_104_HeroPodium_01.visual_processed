@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.050129 0.564465 0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_02_Clean_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Painted_Steel_seamless_01_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Bare_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_CaucasusBridge_02.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>1.000000 0.430000 0.380000 0.050000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.090000 0.700000 0.700000 0.410000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_02_Clean_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Painted_Steel_seamless_01_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Bare_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_02_Clean_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Painted_Steel_seamless_01_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Bare_01_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.375116 -0.000000</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_plate_floor_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_plate_floor_Gloss_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Painted_Steel_seamless_01_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/hv4_104_HeroPodium_01_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Oil_01_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>1.000000 0.430000 0.380000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.090000 0.470000 0.630000 0.340000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>1.000000 0.819608 0.278431 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_plate_floor_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_plate_floor_Gloss_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Painted_Steel_seamless_01_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_plate_floor_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Metal_plate_floor_Gloss_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_104_HeroPodium/Painted_Steel_seamless_01_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.357082 -0.000001</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-7.644122 -0.001046 -5.203025</min>
+		<max>7.644122 1.128929 5.203025</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>797318</geometrySize>
+</root>

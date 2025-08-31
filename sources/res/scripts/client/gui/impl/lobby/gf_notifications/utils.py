@@ -10,4 +10,5 @@ if typing.TYPE_CHECKING:
 def pushGFNotification(gfTemplate, data, systemMessages=None):
     gfDataID = str(uuid.uuid4())
     getCache().setPayload(gfDataID, data)
-    systemMessages.proto.serviceChannel.pushClientMessage({'data': {'gfDataID': gfDataID}, 'template': gfTemplate}, msgType=SCH_CLIENT_MSG_TYPE.GF_SM_TYPE)
+    systemMessages.proto.serviceChannel.pushClientMessage({'data': {'gfDataID': gfDataID}, 
+       'template': gfTemplate}, msgType=SCH_CLIENT_MSG_TYPE.GF_SM_TYPE)

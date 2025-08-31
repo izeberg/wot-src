@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<unspottedMarkers>
+			<Type>
+				ARRAY
+				<of>TARGET_DESIGNATOR_UNSPOTTED_MARKER</of>
+			</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</unspottedMarkers>
+	</Properties>
+	<ofEntity>
+		<TeamInfo/>
+	</ofEntity>
+	<DefaultKeyName>targetDesignatorTeamController</DefaultKeyName>
+</root>

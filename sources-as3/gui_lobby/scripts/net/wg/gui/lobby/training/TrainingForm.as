@@ -2,6 +2,7 @@ package net.wg.gui.lobby.training
 {
    import flash.display.InteractiveObject;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.ui.Keyboard;
    import net.wg.data.VO.TrainingFormInfoVO;
@@ -14,6 +15,7 @@ package net.wg.gui.lobby.training
    import net.wg.gui.events.TrainingEvent;
    import net.wg.infrastructure.base.meta.ITrainingFormMeta;
    import net.wg.infrastructure.base.meta.impl.TrainingFormMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.utils.IGameInputManager;
    import scaleform.clik.constants.ConstrainMode;
    import scaleform.clik.constants.InvalidationType;
@@ -21,7 +23,7 @@ package net.wg.gui.lobby.training
    import scaleform.clik.events.InputEvent;
    import scaleform.clik.utils.Constraints;
    
-   public class TrainingForm extends TrainingFormMeta implements ITrainingFormMeta
+   public class TrainingForm extends TrainingFormMeta implements ITrainingFormMeta, IInnerView
    {
       
       private static const ASSERT_MSG_LIST_NAME:String = "_data.listData";
@@ -53,6 +55,8 @@ package net.wg.gui.lobby.training
       
       public var playersLabel:TextField;
       
+      private var _topOffset:uint = 0;
+      
       private var _data:TrainingFormVO;
       
       private var _roomsLabelText:String = "";
@@ -77,13 +81,12 @@ package net.wg.gui.lobby.training
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         this.setViewSize(param1,param2);
+         assertUpdateStageMethod();
       }
       
       override protected function configUI() : void
       {
          super.configUI();
-         this.updateStage(App.appWidth,App.appHeight);
          this.battleIcon.type = BattleTypeIcon.TYPE_TRAINING;
          this.ownerTitle.text = MENU.TRAINING_OWNERTITLE;
          this.playersTitle.text = MENU.TRAINING_PLAYERSTITLE;
@@ -102,7 +105,7 @@ package net.wg.gui.lobby.training
          if(isInvalid(InvalidationType.SIZE))
          {
             x = this._myWidth - _originalWidth >> 1;
-            y = -SUB_VIEW_MARGIN;
+            y = -SUB_VIEW_MARGIN + this._topOffset;
          }
          if(this._data && isInvalid(InvalidationType.DATA))
          {
@@ -111,6 +114,11 @@ package net.wg.gui.lobby.training
             this.roomsLabel.htmlText = this._roomsLabelText;
             this.playersLabel.htmlText = this._playersLabelText;
          }
+      }
+      
+      override protected function onPopulate() : void
+      {
+         super.onPopulate();
       }
       
       override protected function onDispose() : void
@@ -165,6 +173,17 @@ package net.wg.gui.lobby.training
          assertNotNull(this._data.listData,ASSERT_MSG_LIST_NAME + Errors.CANT_NULL);
          this.list.dataProvider = this._data.listData;
          invalidateData();
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this.setViewSize(param1,param2);
       }
       
       private function onOpenTrainingRoomHandler(param1:TrainingEvent) : void

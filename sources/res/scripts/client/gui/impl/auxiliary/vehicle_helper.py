@@ -1,4 +1,4 @@
-import typing
+import math, typing
 from gui.shared.gui_items.Vehicle import VEHICLE_TAGS
 if typing.TYPE_CHECKING:
     from typing import Optional, Iterable
@@ -6,8 +6,8 @@ if typing.TYPE_CHECKING:
     from gui.shared.gui_items.Vehicle import Vehicle
 
 def fillVehicleInfo(vehInfo, vehicle, separateIGRTag=False, tags=None):
-    isElite = not vehicle.getEliteStatusProgress().toUnlock or vehicle.isElite
-    vehInfo.setIsElite(isElite)
+    vehInfo.setIsElite(vehicle.isElite)
+    vehInfo.setIsPremium(vehicle.isPremium)
     vehInfo.setVehicleLvl(vehicle.level)
     vehInfo.setVehicleType(vehicle.type)
     vehInfo.setVehicleNation(vehicle.nationName)
@@ -19,3 +19,13 @@ def fillVehicleInfo(vehInfo, vehicle, separateIGRTag=False, tags=None):
         vehInfo.setVehicleName(vehicle.descriptor.type.userString)
     else:
         vehInfo.setVehicleName(vehicle.descriptor.type.shortUserString)
+    vehInfo.setVehicleId(vehicle.intCD)
+    vehInfo.setInventoryId(vehicle.invID)
+    vehInfo.setVehicleLongName(vehicle.descriptor.type.userString)
+    vehInfo.setVehicleRole(vehicle.role)
+    vehInfo.setRentLeftTime((math.isinf(vehicle.rentLeftTime) or vehicle).rentLeftTime if 1 else -1)
+    vehInfo.setRentLeftBattles(vehicle.rentLeftBattles or 0)
+    vehInfo.setRentLeftWins(vehicle.rentLeftWins or 0)
+    vState, _ = vehicle.getState()
+    vehInfo.setState(vState)
+    vehInfo.setFromWotPlus(vehicle.isWotPlus)

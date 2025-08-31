@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
 from gui.impl.gen.view_models.views.lobby.player_subscriptions.main_reward_model import MainRewardModel
 

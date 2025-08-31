@@ -1,7 +1,6 @@
 import typing
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.platoon.tiers_settings_model import TiersSettingsModel
 from gui.impl.gen.view_models.views.lobby.platoon.voice_chat_settings_model import VoiceChatSettingsModel
 F = typing.TypeVar('F')

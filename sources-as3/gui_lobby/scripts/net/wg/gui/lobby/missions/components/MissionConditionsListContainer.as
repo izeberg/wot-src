@@ -6,10 +6,10 @@ package net.wg.gui.lobby.missions.components
    import net.wg.gui.components.controls.SimpleTileList;
    import net.wg.gui.interfaces.IUpdatableComponent;
    import net.wg.gui.lobby.missions.data.ConditionRendererVO;
-   import net.wg.gui.lobby.missions.data.MissionConditionsContainerVO;
    import net.wg.gui.lobby.missions.data.MissionDetailsTokenRendererVO;
-   import net.wg.gui.lobby.missions.data.TokenRendererVO;
-   import net.wg.gui.lobby.missions.interfaces.IConditionVO;
+   import net.wg.gui.lobby.userMissions.data.MissionConditionsContainerVO;
+   import net.wg.gui.lobby.userMissions.data.TokenRendererVO;
+   import net.wg.gui.lobby.userMissions.interfaces.IConditionVO;
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    import scaleform.clik.constants.DirectionMode;

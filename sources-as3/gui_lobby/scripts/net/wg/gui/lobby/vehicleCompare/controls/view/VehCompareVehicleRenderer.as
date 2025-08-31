@@ -108,8 +108,6 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
          this.revertBtn.visible = false;
          this.revertBtn.tooltip = VEH_COMPARE.VEHCONF_TOOLTIPS_REVERTBTN;
          this.addVehicleBtn.visible = false;
-         this.attentionIcon.addEventListener(MouseEvent.ROLL_OVER,this.onAttentionIconRollOverHandler);
-         this.attentionIcon.addEventListener(MouseEvent.ROLL_OUT,this.onAttentionIconRollOutHandler);
       }
       
       override protected function draw() : void
@@ -181,8 +179,6 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
             this._rendererData.removeEventListener(Event.CHANGE,this.onDataChangeHandler);
             this._rendererData = null;
          }
-         this.attentionIcon.removeEventListener(MouseEvent.ROLL_OVER,this.onAttentionIconRollOverHandler);
-         this.attentionIcon.removeEventListener(MouseEvent.ROLL_OUT,this.onAttentionIconRollOutHandler);
          this.attentionIcon = null;
          this.revertBtn.removeEventListener(ButtonEvent.CLICK,this.onRevertBtnClickHandler);
          this.revertBtn.dispose();
@@ -337,16 +333,6 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
          var _loc2_:VehCompareVehicleRendererEvent = new VehCompareVehicleRendererEvent(this._rendererData.id,VehCompareVehicleRendererEvent.MODULES_CLICK,true);
          _loc2_.index = this._rendererData.index;
          dispatchEvent(_loc2_);
-      }
-      
-      private function onAttentionIconRollOverHandler(param1:MouseEvent) : void
-      {
-         this._tooltipMgr.showComplex(VEH_COMPARE.VEHICLECOMPAREVIEW_TOOLTIPS_ATTENTIONEQUIPMENT);
-      }
-      
-      private function onAttentionIconRollOutHandler(param1:MouseEvent) : void
-      {
-         this._tooltipMgr.hide();
       }
    }
 }

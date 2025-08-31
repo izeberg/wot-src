@@ -1,5 +1,5 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_results.currency_value_model import CurrencyValueModel
 
 class CurrencyRecordModel(ViewModel):

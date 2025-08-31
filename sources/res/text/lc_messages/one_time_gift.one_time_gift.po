@@ -1,0 +1,353 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "added/attachment"
+msgstr "3D attachments added:"
+
+msgid "added/battle_bonus_x5"
+msgstr "x5 XP missions added: %(amount)s"
+
+msgid "added/credits"
+msgstr "Credits: %(amount)s"
+
+msgid "added/crewRetraining"
+msgstr "Retraining Orders added: %(amount)s"
+
+msgid "added/crew_bonus_x3"
+msgstr "x3 Crew XP missions added: %(amount)s"
+
+msgid "added/crystal"
+msgstr "Bonds: %(amount)s"
+
+msgid "added/currencies"
+msgstr "Currencies added:"
+
+msgid "added/emblem"
+msgstr "\"%(element_name)s\" emblem added"
+
+msgid "added/equipment"
+msgstr "Equipment added:"
+
+msgid "added/gold"
+msgstr "Gold: %(amount)s"
+
+msgid "added/inscription"
+msgstr "\"%(element_name)s\" inscription added"
+
+msgid "added/medal"
+msgstr "\"%(element_name)s\" medal added"
+
+msgid "added/pm_token"
+msgstr "Series of missions added"
+
+msgid "added/premium"
+msgstr "Days of WoT Premium Account added: %(amount)s"
+
+msgid "added/premiumVehicles"
+msgstr "Premium vehicles added:"
+
+msgid "added/projectionDecal"
+msgstr "\"%(element_name)s\" decal added"
+
+msgid "added/rentedDays"
+msgstr "%(vehName)s (for %(days)s days)"
+
+msgid "added/slots"
+msgstr "Slots added:"
+
+msgid "added/style"
+msgstr "\"%(element_name)s\" 2D style added"
+
+msgid "added/universalManual"
+msgstr "Universal Manuals added: %(amount)s"
+
+msgid "added/vehicles"
+msgstr "Vehicles added:"
+
+msgid "added/vehiclesRented"
+msgstr "Premium vehicles added for rent:"
+
+msgid "addedCollector/badge"
+msgstr "%(element_name)s added"
+
+msgid "addedCollector/medal"
+msgstr "\"%(element_name)s\" medal added"
+
+msgid "addedCollector/stripe"
+msgstr "\"%(element_name)s\" stripe added"
+
+msgid "additionReward/title"
+msgstr "Also received:"
+
+msgid "awardNameTemplate/badge"
+msgstr "{name}"
+
+msgid "awardNameTemplate/medal"
+msgstr "Medal: {name}"
+
+msgid "awardNameTemplate/stripe"
+msgstr "Stripe: {name}"
+
+msgid "awards/additionalRewardFull/bottomNote"
+msgstr "Also received:"
+
+msgid "awards/additionalRewardFull/button/submit"
+msgstr "Affirmative!"
+
+msgid "awards/additionalRewardFull/reward/missions"
+msgstr "Series of Missions"
+
+msgid "awards/additionalRewardFull/title"
+msgstr "REWARDS RECEIVED!"
+
+msgid "awards/bonusVehiclesReward/button/submit"
+msgstr "More Rewards!"
+
+msgid "awards/bonusVehiclesReward/subTitle"
+msgstr "BONUS REWARD"
+
+msgid "awards/bonusVehiclesReward/title"
+msgstr "{gold_Open}PREMIUM VEHICLES{gold_Close}&nbsp;RECEIVED!"
+
+msgid "awards/branchReward/button/affirmative"
+msgstr "Affirmative!"
+
+msgid "awards/branchReward/button/moreRewards"
+msgstr "More Rewards!"
+
+msgid "awards/branchReward/button/moreVehicles"
+msgstr "More Vehicles!"
+
+msgid "awards/branchReward/button/selectAnotherBranch"
+msgstr "Select Another Branch"
+
+msgid "awards/branchReward/title"
+msgstr "BRANCH RECEIVED!"
+
+msgid "awards/collectorsCompensation/button/affirmative"
+msgstr "Affirmative!"
+
+msgid "awards/collectorsCompensation/button/moreRewards"
+msgstr "More Rewards!"
+
+msgid "awards/collectorsCompensation/subTitle"
+msgstr "CONGRATULATIONS"
+
+msgid "awards/collectorsCompensation/title"
+msgstr "YOU ARE A {gold_Open}COLLECTOR!{gold_Close}"
+
+msgid "awards/collectorsCompensation/underTitle"
+msgstr ""
+"You have researched and purchased every Tier VI–X vehicle—a truly remarkable"
+" feat. Your dedication and passion for the game are commendable. As a token "
+"of our appreciation, we award you the Collector title. Wear it with "
+"pride—you've earned it!"
+
+msgid "branchSelection/branchCounter/progress"
+msgstr "%(value) / %(maxValue)"
+
+msgid "branchSelection/branchCounter/text"
+msgstr "Branch:"
+
+msgid "branchSelection/claimButton/disabledTooltip/text"
+msgstr "Select a Tech Tree branch to receive"
+
+msgid "branchSelection/claimButton/text"
+msgstr "Claim Reward"
+
+msgid "branchSelection/disabledNationFlagTooltip/text"
+msgstr "All available vehicles of this nation are already in your Garage."
+
+msgid "branchSelection/navigationPanel/pageTitle"
+msgstr "CLAIM REWARD"
+
+msgid "branchSelection/navigationPanel/tooltip"
+msgstr "Click to learn more about the event"
+
+msgid "branchSelection/selectLaterButton/text"
+msgstr "Select Later"
+
+msgid "branchSelection/selectionIndicator/text"
+msgstr "You will receive:"
+
+msgid "branchSelection/selectionIndicator/vehiclesCounter"
+msgid_plural "plural/branchSelection/selectionIndicator/vehiclesCounter"
+msgstr[0] "%(value) vehicle"
+msgstr[1] "%(value) vehicles"
+msgstr[2] "%(value) vehicles"
+
+msgid "branchSelection/title"
+msgstr "SELECT BRANCH TO RECEIVE"
+
+msgid "branchSelection/vehiclesObtained/button/text"
+msgstr "Select Another Branch"
+
+msgid "branchSelection/vehiclesObtained/header/text"
+msgstr "BRANCH SELECTION"
+
+msgid "branchSelection/vehiclesObtained/text"
+msgstr "You already own all vehicles from this list"
+
+msgid "equipmentSet/rewards/label"
+msgstr "Equipment Set (%(count)s items)"
+
+msgid "equipmentSet/tooltip/header"
+msgstr "Equipment Set:"
+
+msgid "introPage/button/confirm"
+msgstr "Claim Reward"
+
+msgid "introPage/button/youtube"
+msgstr "About the Reward"
+
+msgid "introPage/content/section1/description"
+msgstr ""
+"The Tier VI–X vehicles from your selected branch will be researched and "
+"credited to your account, except for those you already own."
+
+msgid "introPage/content/section1/title"
+msgstr "Tech Branch"
+
+msgid "introPage/content/section2/description"
+msgstr ""
+"You will receive all modules for your selected vehicles, as well as a "
+"generous supply of battle resources."
+
+msgid "introPage/content/section2/title"
+msgstr "Ready for Battle"
+
+msgid "introPage/content/section3/description"
+msgstr ""
+"If you joined the game after the release of WoT 2.0, you can select an "
+"additional branch to receive."
+
+msgid "introPage/content/section3/title"
+msgstr "Branch for Newcomers"
+
+msgid "introPage/deadline"
+msgstr "Claim reward by %(datetime)"
+
+msgid "introPage/title"
+msgstr "GET A FREE TECH TREE BRANCH!"
+
+msgid "nations/china"
+msgstr "China"
+
+msgid "nations/czech"
+msgstr "Czechoslovakia"
+
+msgid "nations/france"
+msgstr "France"
+
+msgid "nations/germany"
+msgstr "Germany"
+
+msgid "nations/italy"
+msgstr "Italy"
+
+msgid "nations/japan"
+msgstr "Japan"
+
+msgid "nations/poland"
+msgstr "Poland"
+
+msgid "nations/sweden"
+msgstr "Sweden"
+
+msgid "nations/uk"
+msgstr "U.K."
+
+msgid "nations/usa"
+msgstr "U.S.A."
+
+msgid "nations/ussr"
+msgstr "U.S.S.R."
+
+msgid "notAvailableVehicleTooltip/description"
+msgstr "This vehicle cannot be received during this event"
+
+msgid "notAvailableVehicleTooltip/level_and_type"
+msgstr "Tier: %(vehicleLevel) %(vehicleType)"
+
+msgid "notAvailableVehicleTooltip/title"
+msgstr "Unavailable"
+
+msgid "notification/claimButton/text"
+msgstr "Claim Reward"
+
+msgid "notification/disabledClaimButtonTooltip/text"
+msgstr ""
+"This feature is unavailable when you are in a Platoon, in the queue to join "
+"a battle, or in a training room."
+
+msgid "notification/title"
+msgstr "Claim your WoT 2.0 reward now!"
+
+msgid "rewardReceived/title"
+msgstr "Reward received"
+
+msgid "selectionConfirm/cancelButton/text"
+msgstr "Cancel"
+
+msgid "selectionConfirm/claimButton/text"
+msgstr "Claim Reward"
+
+msgid "selectionConfirm/description"
+msgstr "You will not be able to change your selection after confirmation"
+
+msgid "selectionConfirm/title"
+msgid_plural "plural/selectionConfirm/title"
+msgstr[0] "Claim %(count) vehicle from the %(branchName) branch?"
+msgstr[1] "Claim %(count) vehicles from the %(branchName) branch?"
+msgstr[2] "Claim %(count) vehicles from the %(branchName) branch?"
+
+msgid "selectionConfirm/vehiclesDivider"
+msgstr ", "
+
+msgid "selectionConfirm/warning/moreThanOneVehicle"
+msgstr ""
+"{{vehiclesList}} are already in your Garage and will not be credited or "
+"compensated"
+
+msgid "selectionConfirm/warning/oneVehicle"
+msgstr ""
+"{{vehiclesList}} is already in your Garage and will not be credited or "
+"compensated"
+
+msgid "tooltips/OTGQuestTooltip/expireTime"
+msgstr ""
+"{whiteSpanish_Open}Missions{whiteSpanish_Close} are available "
+"{whiteSpanish_Open}until %(month)s %(day)s{whiteSpanish_Close}"
+
+msgid "tooltips/OTGQuestTooltip/rewards/personalReserves"
+msgstr "30 Personal Reserves"
+
+msgid "tooltips/OTGQuestTooltip/rewards/premium"
+msgstr "30 Days of WoT Premium Account"
+
+msgid "tooltips/OTGQuestTooltip/rewards/x3CrewExperience"
+msgstr "30 Missions for x3 Crew XP"
+
+msgid "tooltips/OTGQuestTooltip/rewards/x5BattleExperience"
+msgstr "30 Missions for x5 XP"
+
+msgid "tooltips/OTGQuestTooltip/rewardsTitle"
+msgstr ""
+"Grants access to a series of missions with additional rewards upon "
+"completion:"
+
+msgid "tooltips/OTGQuestTooltip/title"
+msgstr "Series of Missions"

@@ -23,6 +23,15 @@
 			<SMDistractionAbilityArenaInfoComponent/>
 			<SMDetectionDelayObserverComponent/>
 			<SMDetectionDelayObservableComponent/>
+			<SMAbilitiesTrackerComponent/>
+			<SMAbilitiesRechargeComponent/>
+			<SMAbilitiesInterruptComponent/>
+			<SMInterruptibleShotComponent/>
+			<SMInterruptibleGroupsComponent/>
+			<SMDisableShotSNComponent/>
+			<SMArtilleryStrikeChannelComponent/>
+			<SMVehicleRespawnComponent/>
+			<SMVehicleRocketAccelerationEffectComponent/>
 		</DynamicComponents>
 	</Components>
 	<Entities>

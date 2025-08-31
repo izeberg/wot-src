@@ -61,6 +61,7 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
             this.vehCompareTableContent.width = width;
             this.leftBg.height = height - this.leftBg.y;
             this.bottomShadow.y = height - this.bottomShadow.height;
+            invalidate(SCROLL_PANE_SIZE_INV);
          }
          if(isInvalid(InvalidationType.DATA))
          {

@@ -6,8 +6,6 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function onBackClickS() : void;
-      
       function onGoToPreviewClickS(param1:Number) : void;
       
       function onGoToHangarClickS(param1:Number) : void;
@@ -23,8 +21,6 @@ package net.wg.infrastructure.base.meta
       function onRevertVehicleS(param1:Number) : void;
       
       function onRemoveAllVehiclesS() : void;
-      
-      function as_setStaticData(param1:Object) : void;
       
       function as_setParamsDelta(param1:Object) : void;
       

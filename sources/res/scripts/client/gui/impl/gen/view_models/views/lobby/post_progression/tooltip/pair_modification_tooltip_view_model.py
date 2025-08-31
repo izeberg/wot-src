@@ -1,5 +1,5 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.gen.view_models.common.bonuses_model import BonusesModel
 from gui.impl.gen.view_models.common.price_model import PriceModel
 from gui.impl.gen.view_models.views.lobby.post_progression.multi_step_model import MultiStepModel

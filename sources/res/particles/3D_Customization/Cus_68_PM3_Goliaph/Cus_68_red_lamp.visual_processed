@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>lambert1</identifier>
+					<fx>shaders/custom/emissive_angle_falloff.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_angleFalloffParams
+						<Vector4>0.700000 0.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_emissiveMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Graybox_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_lightMultipliers
+						<Vector4>600.000000 600.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>1.000000 0.000000 0.000000 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.000000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.990000 -0.990000 -0.990000</min>
+		<max>0.990000 0.990000 0.990000</max>
+	</boundingBox>
+	<geometrySize>20364</geometrySize>
+</root>

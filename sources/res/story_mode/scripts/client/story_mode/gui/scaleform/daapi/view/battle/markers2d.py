@@ -147,7 +147,9 @@ class StoryModeVehicleMarkerPlugin(RespawnableVehicleMarkerPlugin, MarkerPluginW
         super(StoryModeVehicleMarkerPlugin, self).stop()
 
     def _getHitState(self, eventID):
-        if self._storyModeCtrl.isSelectedMissionOnboarding and eventID in _MARKER_CRITICAL_HIT_STATES:
+        isOnboarding = self._storyModeCtrl.isOnboarding
+        isSelectedMissionOnboarding = self._storyModeCtrl.isSelectedMissionOnboarding
+        if (isOnboarding or isSelectedMissionOnboarding) and eventID in _MARKER_CRITICAL_HIT_STATES:
             return MARKER_EMPTY_HIT_STATE
         return super(StoryModeVehicleMarkerPlugin, self)._getHitState(eventID)
 

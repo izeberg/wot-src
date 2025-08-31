@@ -871,7 +871,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10350</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				0.8 1 2.1
 				<!--BW_String-->
@@ -2619,7 +2618,7 @@
 	<turrets0>
 		<Turret_1_G165_Erich_Konzept_I>
 			<userString>#germany_vehicles:Turret_1_G165_Erich_Konzept_I</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach oscillating</tags>
 			<level>9</level>
 			<price>60000</price>
 			<notInShop>true</notInShop>

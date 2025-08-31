@@ -132,7 +132,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>13081</weight>
-		<maxHealth>488</maxHealth>
+		<maxHealth>560</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>170</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2299,9 +2299,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>8200</weight>
-			<maxLoad>25600</maxLoad>
 			<terrainResistance>
-				1 1.2 2
+				0.9 1 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>17000</brakeForce>
@@ -3397,7 +3396,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>8200</weight>
-			<maxLoad>27500</maxLoad>
 			<terrainResistance>
 				0.9 1 1.8
 				<!--BW_String-->
@@ -4492,12 +4490,6 @@
 			<tags/>
 			<level>4</level>
 			<price>3980</price>
-			<unlocks>
-				<turret>
-					Turret_2_GB107_Cavalier
-					<cost>2400</cost>
-				</turret>
-			</unlocks>
 			<armor>
 				<armor_1>
 					76.2
@@ -4525,7 +4517,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3153</weight>
-			<maxHealth>92</maxHealth>
+			<maxHealth>110</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -4535,7 +4527,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>340</circularVisionRadius>
+			<circularVisionRadius>350</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>70</maxHealth>
 				<maxRegenHealth>35</maxRegenHealth>
@@ -4545,19 +4537,19 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<QF_6_pounder_Mk_III>
+				<QF_6_pdr_Mk_III_A24>
 					shared
 					<maxAmmo>115</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.111111 7 0.174773 12 0.325227 12 0.388889 1 0.611111 1 0.674773 12 0.825227 12 0.888889 7 1 7
+							0.00000 7.00 0.06944 7.00 0.12500 12.00 0.37500 12.00 0.45833 1.00 0.54167 1.00 0.62500 12.00 0.87500 12.00 0.93056 7.00 1.00000 7.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<unlocks>
 						<gun>
-							QF_6_pounder_Mk_V
+							QF_6_pdr_Mk_V_A24
 							<cost>3700</cost>
 						</gun>
 					</unlocks>
@@ -4565,11 +4557,11 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.43
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.0
+						2.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -4577,19 +4569,13 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.28
 						<!--BW_String-->
@@ -4675,14 +4661,20 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</QF_6_pounder_Mk_III>
-				<QF_6_pounder_Mk_V>
+				</QF_6_pdr_Mk_III_A24>
+				<QF_6_pdr_Mk_V_A24>
 					shared
 					<maxAmmo>115</maxAmmo>
+					<unlocks>
+						<turret>
+							Turret_2_GB107_Cavalier
+							<cost>2400</cost>
+						</turret>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.111111 7 0.174773 12 0.325227 12 0.388889 1 0.611111 1 0.674773 12 0.825227 12 0.888889 7 1 7
+							0.00000 7.00 0.06944 7.00 0.12500 12.00 0.37500 12.00 0.45833 1.00 0.54167 1.00 0.62500 12.00 0.87500 12.00 0.93056 7.00 1.00000 7.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -4690,11 +4682,11 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.41
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.8
+						2.1
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -4702,19 +4694,13 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.266
 						<!--BW_String-->
@@ -4806,7 +4792,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</QF_6_pounder_Mk_V>
+				</QF_6_pdr_Mk_V_A24>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB107_Cavalier/normal/lod0/Turret_01.model</undamaged>
@@ -5584,10 +5570,6 @@
 			<level>5</level>
 			<price>11000</price>
 			<unlocks>
-				<gun>
-					_75mm_Gun_Mk_V
-					<cost>4000</cost>
-				</gun>
 				<vehicle>
 					GB21_Cromwell
 					<cost>25000</cost>
@@ -5620,7 +5602,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3390</weight>
-			<maxHealth>122</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5640,13 +5622,13 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<QF_6_pounder_Mk_III>
+				<QF_6_pdr_Mk_III_A24>
 					shared
 					<maxAmmo>115</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.111111 7 0.174773 12 0.325227 12 0.388889 1 0.611111 1 0.674773 12 0.825227 12 0.888889 7 1 7
+							0.00000 7.00 0.06944 7.00 0.12500 12.00 0.37500 12.00 0.45833 1.00 0.54167 1.00 0.62500 12.00 0.87500 12.00 0.93056 7.00 1.00000 7.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5654,11 +5636,11 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.0
+						2.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5666,17 +5648,14 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5764,14 +5743,14 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</QF_6_pounder_Mk_III>
-				<QF_6_pounder_Mk_V>
+				</QF_6_pdr_Mk_III_A24>
+				<QF_6_pdr_Mk_V_A24>
 					shared
 					<maxAmmo>115</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.111111 7 0.174773 12 0.325227 12 0.388889 1 0.611111 1 0.674773 12 0.825227 12 0.888889 7 1 7
+							0.00000 7.00 0.06944 7.00 0.12500 12.00 0.37500 12.00 0.45833 1.00 0.54167 1.00 0.62500 12.00 0.87500 12.00 0.93056 7.00 1.00000 7.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5779,11 +5758,11 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.8
+						2.1
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5791,17 +5770,14 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5895,252 +5871,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</QF_6_pounder_Mk_V>
-				<_75mm_Gun_Mk_V>
-					shared
-					<maxAmmo>75</maxAmmo>
-					<unlocks>
-						<gun>
-							_3.7inch_Howitzer
-							<cost>2300</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<gun>20</gun>
-					</armor>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 7 0.111111 7 0.174773 12 0.325227 12 0.388889 1 0.611111 1 0.674773 12 0.825227 12 0.888889 7 1 7
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.41
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.3
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/british/GB107_Cavalier/normal/lod0/Gun_07.model</undamaged>
-						<destroyed>vehicles/british/GB107_Cavalier/crash/lod0/Gun_07.model</destroyed>
-						<exploded>vehicles/british/GB107_Cavalier/crash/lod0/Gun_07.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB107_Cavalier/collision/Gun_07.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB107_Cavalier/collision_client/Gun_07.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium_mb</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.042709 -0.021162 1.11811
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.020939 -0.021162 1.11811
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								0.004322 1.89658 1.34686
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.56894 3.12639 0.009556
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.28313 0.286641 1.28313
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.263835</clipAngle>
-							<anchorShift>0.381062</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.044317 -0.042236 1.56818
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.044317 -0.042236 1.96818
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.062 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.4
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<camouflage>
-						<density>
-							136.582 138.113
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 256</aoTextureSize>
-					</camouflage>
-				</_75mm_Gun_Mk_V>
-				<_3.7inch_Howitzer>
-					shared
-					<maxAmmo>48</maxAmmo>
-					<armor>
-						<gun>40</gun>
-					</armor>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 6 0.111111 6 0.174773 12 0.325227 12 0.388889 1 0.611111 1 0.674773 12 0.825227 12 0.888889 6 1 6
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.53
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						7.5
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.25
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/british/GB107_Cavalier/normal/lod0/Gun_08.model</undamaged>
-						<destroyed>vehicles/british/GB107_Cavalier/crash/lod0/Gun_08.model</destroyed>
-						<exploded>vehicles/british/GB107_Cavalier/crash/lod0/Gun_08.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB107_Cavalier/collision/Gun_08.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB107_Cavalier/collision_client/Gun_08.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_main</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>-0.047688 0.026327 0.784557</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.02071 -0.017376 0.719209
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								0.004325 1.89924 1.34673
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.45382 -0.024916 3.14143
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.28314 0.286642 1.28313
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.263835</clipAngle>
-							<anchorShift>0.628564</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>-0.044116 -0.037808 0.817951</rayStart>
-							<rayEnd>-0.044116 -0.037808 1.217951</rayEnd>
-							<rayUp>
-								0.085065 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.4
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<camouflage>
-						<density>
-							138.025 139.126
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 256</aoTextureSize>
-					</camouflage>
-				</_3.7inch_Howitzer>
+				</QF_6_pdr_Mk_V_A24>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB107_Cavalier/normal/lod0/Turret_02.model</undamaged>
@@ -6935,15 +6666,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<N19Mk1>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk2
-					<cost>3600</cost>
-				</radio>
-			</unlocks>
-		</N19Mk1>
 		<N19Mk2>shared</N19Mk2>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -6951,11 +6673,11 @@
 		<detailed>
 			<engines>
 				<Nuffield_liberty_MKIII>
-					<smplEnginePower>390</smplEnginePower>
+					<smplEnginePower>435</smplEnginePower>
 					<smplFwMaxSpeed>46</smplFwMaxSpeed>
 				</Nuffield_liberty_MKIII>
 				<Nuffield_liberty_MKIVA>
-					<smplEnginePower>450</smplEnginePower>
+					<smplEnginePower>475</smplEnginePower>
 					<smplFwMaxSpeed>46</smplFwMaxSpeed>
 				</Nuffield_liberty_MKIVA>
 			</engines>
@@ -6965,19 +6687,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.161
+								0.1449
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0805
+								0.07245
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

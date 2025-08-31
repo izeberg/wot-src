@@ -61,8 +61,6 @@ package net.wg.gui.lobby.settings
       
       private static const COUNTER_CHECKBOX_OFFSET_X:Number = -11;
       
-      private static const BATTLE_TYPES_HEIGHT_EXTRA:int = 186;
-      
       private static const LIMITED_UI_SETTING_BLOCK_X:uint = 400;
       
       private static const LIMITED_UI_SETTING_BLOCK_PADDING:uint = 80;
@@ -174,6 +172,7 @@ package net.wg.gui.lobby.settings
                         _loc9_.toolTip = _loc14_.tooltip;
                         _loc9_.visible = _loc14_.visible;
                         _loc9_.enabled = _loc14_.enabled;
+                        _loc11_ = _loc14_.visible;
                         _loc14_.dispose();
                      }
                      else if(_loc5_ == SHOW_VEHICLE_HP_IN_MINIMAP || _loc5_ == SWITCH_EQUIPMENT)
@@ -185,7 +184,6 @@ package net.wg.gui.lobby.settings
                      {
                         _loc16_ = new DevMapsVO(_loc6_.extraData);
                         _loc9_.visible = _loc16_.enabled;
-                        _loc11_ = _loc16_.enabled;
                      }
                      else if(_loc5_ == SettingsConfigHelper.NEWBIE_PREBATTLE_HINTS)
                      {
@@ -232,7 +230,7 @@ package net.wg.gui.lobby.settings
             }
             _loc12_++;
          }
-         _loc7_.updateDependentVisibleControls(_loc11_,BATTLE_TYPES_HEIGHT_EXTRA);
+         _loc7_.updateDependentVisibleControls(_loc11_);
       }
       
       override protected function onDispose() : void

@@ -21,6 +21,8 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
       
       private static const SCROLL_BAR_PADDING:int = 10;
       
+      private static const BACK_BUTTON_PADDING:int = 80;
+      
       private static const SCROLL_STEP_FACTOR:Number = 30;
       
       private static const BACK_BTN_RIGHT_MARGIN:int = 7;
@@ -87,28 +89,11 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
          super();
       }
       
-      override public function setSize(param1:Number, param2:Number) : void
-      {
-         super.setSize(param1,param2);
-         this.content.setSize(param1,param2);
-         this.infoResizableScrollPane.setSize(param1,param2);
-         this.arrowRight.visiblePagination = this.arrowLeft.visiblePagination = param1 > HIDE_ARROW_PAGINATION_WIDTH_BREAK_POINT;
-         this.arrowLeft.height = this.arrowRight.height = _height - (SCROLL_BAR_PADDING << 1);
-      }
-      
-      override public function set visible(param1:Boolean) : void
-      {
-         super.visible = param1;
-         this.hideControls();
-      }
-      
       override protected function configUI() : void
       {
          super.configUI();
          this.hideControls();
          this.backBtn.label = PERSONAL_MISSIONS.PERSONALMISSIONFIRSTENTRYVIEW_DETAILEDDESCRIPTION_BTNBACK;
-         this.scrollBar.y = SCROLL_BAR_PADDING;
-         this.arrowLeft.y = this.arrowRight.y = SCROLL_BAR_PADDING;
          this.infoResizableScrollPane.scrollBar = this.scrollBar;
          this.infoResizableScrollPane.scrollStepFactor = SCROLL_STEP_FACTOR;
          this.infoResizableScrollPane.isTargetHorizontalCentered = true;
@@ -176,7 +161,6 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
                this.solidBg.x = -_loc1_;
                this.backBtn.x = -_loc1_ + BACK_BTN_RIGHT_MARGIN;
                this.scrollBar.x = _loc1_ - this.scrollBar.width - SCROLL_BAR_PADDING;
-               this.scrollBar.height = _height - (SCROLL_BAR_PADDING << 1);
                this.arrowLeft.x = -_loc1_ + ARROW_MARGIN;
                this.arrowRight.x = _loc1_ - ARROW_MARGIN;
             }
@@ -198,6 +182,21 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
          this._allCards = param2;
          this._dataData = param1;
          invalidateData();
+      }
+      
+      public function setSizeWithOffsets(param1:Number, param2:Number, param3:Number, param4:Number) : void
+      {
+         var _loc5_:uint = param2 - param3 - param4 | 0;
+         super.setSize(param1,param2);
+         this.infoResizableScrollPane.contentPaddings.top = param3;
+         this.infoResizableScrollPane.contentPaddings.bottom = param4;
+         this.infoResizableScrollPane.setSize(param1,param2);
+         this.arrowRight.visiblePagination = this.arrowLeft.visiblePagination = param1 > HIDE_ARROW_PAGINATION_WIDTH_BREAK_POINT;
+         this.arrowLeft.height = this.arrowRight.height = _loc5_ - (SCROLL_BAR_PADDING << 1);
+         this.arrowLeft.y = this.arrowRight.y = SCROLL_BAR_PADDING + param3;
+         this.scrollBar.height = _loc5_ - (SCROLL_BAR_PADDING << 1);
+         this.scrollBar.y = SCROLL_BAR_PADDING + param3;
+         this.backBtn.y = BACK_BUTTON_PADDING + param3;
       }
       
       public function updateSettings(param1:PMInfoAdditionalViewSettings) : void
@@ -254,33 +253,34 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
       
       private function showAnimContent() : void
       {
-         var _loc2_:int = 0;
          var _loc3_:int = 0;
+         var _loc4_:int = 0;
          this.clearAllTweens();
          this.hideControls();
          this._isTweenInProgress = true;
          this.content.alpha = Values.ZERO;
-         this.content.y = TWEEN_CONTENT_DELTA_Y;
+         var _loc1_:uint = this.infoResizableScrollPane.contentPaddings.top;
+         this.content.y = TWEEN_CONTENT_DELTA_Y + _loc1_;
          this.infoResizableScrollPane.enabled = false;
-         var _loc1_:int = !!this._firstShow ? int(CONTENT_SHOW_DELAY) : int(Values.ZERO);
+         var _loc2_:int = !!this._firstShow ? int(CONTENT_SHOW_DELAY) : int(Values.ZERO);
          this._tweenContent = new Tween(TWEEN_CONTENT_SHOW_DURATION,this.content,{
-            "y":0,
+            "y":_loc1_,
             "alpha":Values.DEFAULT_ALPHA
          },{
             "paused":false,
             "ease":Cubic.easeOut,
-            "delay":_loc1_,
+            "delay":_loc2_,
             "fastTransform":false,
             "onComplete":(!!this._firstShow ? null : this.onShowControlsCompleted)
          });
          if(this._firstShow)
          {
-            _loc2_ = _width >> 1;
-            _loc3_ = Values.ZERO;
-            _loc3_ = -_loc2_ + ARROW_MARGIN;
-            this.arrowLeft.x = _loc3_ - TWEEN_ARROW_DELTA_X;
+            _loc3_ = _width >> 1;
+            _loc4_ = Values.ZERO;
+            _loc4_ = -_loc3_ + ARROW_MARGIN;
+            this.arrowLeft.x = _loc4_ - TWEEN_ARROW_DELTA_X;
             this._arrowLeftTween = new Tween(TWEEN_CONTROLS_SHOW_DURATION,this.arrowLeft,{
-               "x":_loc3_,
+               "x":_loc4_,
                "alpha":Values.DEFAULT_ALPHA
             },{
                "paused":false,
@@ -288,10 +288,10 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
                "delay":TWEEN_ARROW_DELAY,
                "fastTransform":false
             });
-            _loc3_ = _loc2_ - ARROW_MARGIN;
-            this.arrowRight.x = _loc3_ + TWEEN_ARROW_DELTA_X;
+            _loc4_ = _loc3_ - ARROW_MARGIN;
+            this.arrowRight.x = _loc4_ + TWEEN_ARROW_DELTA_X;
             this._arrowRightTween = new Tween(TWEEN_CONTROLS_SHOW_DURATION,this.arrowRight,{
-               "x":_loc3_,
+               "x":_loc4_,
                "alpha":Values.DEFAULT_ALPHA
             },{
                "paused":false,
@@ -299,10 +299,10 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
                "delay":TWEEN_ARROW_DELAY,
                "fastTransform":false
             });
-            _loc3_ = -_loc2_ + BACK_BTN_RIGHT_MARGIN;
-            this.backBtn.x = _loc3_ + TWEEN_BACK_BTN_DELTA_X;
+            _loc4_ = -_loc3_ + BACK_BTN_RIGHT_MARGIN;
+            this.backBtn.x = _loc4_ + TWEEN_BACK_BTN_DELTA_X;
             this._backBtnTween = new Tween(TWEEN_CONTROLS_SHOW_DURATION,this.backBtn,{
-               "x":_loc3_,
+               "x":_loc4_,
                "alpha":Values.DEFAULT_ALPHA
             },{
                "paused":false,
@@ -334,6 +334,12 @@ package net.wg.gui.lobby.personalMissions.components.firstEntry
          this.arrowLeft.alpha = this.arrowRight.alpha = this.scrollBar.alpha = this.backBtn.alpha = Values.DEFAULT_ALPHA;
          this.infoResizableScrollPane.enabled = true;
          this._isTweenInProgress = false;
+      }
+      
+      override public function set visible(param1:Boolean) : void
+      {
+         super.visible = param1;
+         this.hideControls();
       }
       
       private function onArrowMouseWheelHandler(param1:MouseEvent) : void

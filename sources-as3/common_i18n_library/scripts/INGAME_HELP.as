@@ -41,6 +41,10 @@ package
       
       public static const BATTLECONTROLS_TOGGLESNIPERMODE_EXT:String = "#ingame_help:battleControls/toggleSniperMode/ext";
       
+      public static const BATTLECONTROLS_TOGGLEAFL:String = "#ingame_help:battleControls/toggleAFL";
+      
+      public static const BATTLECONTROLS_TOGGLEAFL_EXT:String = "#ingame_help:battleControls/toggleAFL/ext";
+      
       public static const BATTLECONTROLS_TOGGLEPLAYERPANELMODES:String = "#ingame_help:battleControls/togglePlayerPanelModes";
       
       public static const BATTLECONTROLS_TOGGLEPLAYERPANELMODES_EXT:String = "#ingame_help:battleControls/togglePlayerPanelModes/ext";
@@ -179,29 +183,123 @@ package
       
       public static const DETAILSHELP_ENGINEMODE_ENGINEMODEPAGE2:String = "#ingame_help:detailsHelp/engineMode/engineModePage2";
       
-      public static const DETAILSHELP_ROCKETACCELERATION_PAGE1_TITLE:String = "#ingame_help:detailsHelp/rocketAcceleration/page1/title";
+      public static const DETAILSHELP_MECHANICS_ROCKETACCELERATION_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/rocketAcceleration/page1/title";
       
-      public static const DETAILSHELP_ROCKETACCELERATION_PAGE1:String = "#ingame_help:detailsHelp/rocketAcceleration/page1";
+      public static const DETAILSHELP_MECHANICS_ROCKETACCELERATION_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/rocketAcceleration/page1/description";
       
-      public static const DETAILSHELP_ROCKETACCELERATION_PAGE2_TITLE:String = "#ingame_help:detailsHelp/rocketAcceleration/page2/title";
+      public static const DETAILSHELP_MECHANICS_ROCKETACCELERATION_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/rocketAcceleration/page2/title";
       
-      public static const DETAILSHELP_ROCKETACCELERATION_PAGE2:String = "#ingame_help:detailsHelp/rocketAcceleration/page2";
+      public static const DETAILSHELP_MECHANICS_ROCKETACCELERATION_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/rocketAcceleration/page2/description";
       
-      public static const DETAILSHELP_DUALACCURACY_MECHANICS_TITLE:String = "#ingame_help:detailsHelp/dualAccuracy/mechanics/title";
+      public static const DETAILSHELP_MECHANICS_DUALACCURACY_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/dualAccuracy/page1/title";
       
-      public static const DETAILSHELP_DUALACCURACY_MECHANICS:String = "#ingame_help:detailsHelp/dualAccuracy/mechanics";
+      public static const DETAILSHELP_MECHANICS_DUALACCURACY_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/dualAccuracy/page1/description";
       
-      public static const DETAILSHELP_AUTOSHOOTGUN_MECHANICS_TITLE:String = "#ingame_help:detailsHelp/autoShootGun/mechanics/title";
+      public static const DETAILSHELP_MECHANICS_AUTOSHOOTGUN_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/autoShootGun/page1/title";
       
-      public static const DETAILSHELP_AUTOSHOOTGUN_MECHANICS:String = "#ingame_help:detailsHelp/autoShootGun/mechanics";
+      public static const DETAILSHELP_MECHANICS_AUTOSHOOTGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/autoShootGun/page1/description";
       
-      public static const DETAILSHELP_TWINGUN_MECHANICS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/twinGun/mechanics/page1/title";
+      public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/twinGun/page1/title";
       
-      public static const DETAILSHELP_TWINGUN_MECHANICS_PAGE1:String = "#ingame_help:detailsHelp/twinGun/mechanics/page1";
+      public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/twinGun/page1/description";
       
-      public static const DETAILSHELP_TWINGUN_MECHANICS_PAGE2_TITLE:String = "#ingame_help:detailsHelp/twinGun/mechanics/page2/title";
+      public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/twinGun/page2/title";
       
-      public static const DETAILSHELP_TWINGUN_MECHANICS_PAGE2:String = "#ingame_help:detailsHelp/twinGun/mechanics/page2";
+      public static const DETAILSHELP_MECHANICS_TWINGUN_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/twinGun/page2/description";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1/title";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE1_PRESSANDHOLD:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page1/pressAndHold";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE2_TITLE:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page2/title";
+      
+      public static const DETAILSHELP_PILLBOXSIEGE_MECHANICS_PAGE2:String = "#ingame_help:detailsHelp/pillboxSiege/mechanics/page2";
+      
+      public static const DETAILSHELP_MECHANICS_CONCENTRATIONMODE_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/concentrationMode/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_CONCENTRATIONMODE_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/concentrationMode/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_OVERHEATSTACKS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/overheatStacks/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_OVERHEATSTACKS_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/overheatStacks/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_OVERHEATSTACKS_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/overheatStacks/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_OVERHEATSTACKS_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/overheatStacks/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_RECHARGEABLENITRO_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/rechargeableNitro/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_RECHARGEABLENITRO_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/rechargeableNitro/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_RECHARGEABLENITRO_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/rechargeableNitro/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_RECHARGEABLENITRO_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/rechargeableNitro/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_CHARGESHOT_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/chargeShot/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_CHARGESHOT_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/chargeShot/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_CHARGESHOT_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/chargeShot/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_CHARGESHOT_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/chargeShot/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_TARGETDESIGNATOR_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/targetDesignator/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_TARGETDESIGNATOR_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/targetDesignator/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_TARGETDESIGNATOR_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/targetDesignator/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_TARGETDESIGNATOR_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/targetDesignator/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_STANCEDANCE_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/stanceDance/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_STANCEDANCE_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stanceDance/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_STANCEDANCE_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/stanceDance/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_STANCEDANCE_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stanceDance/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_EXTRASHOTCLIP_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/extraShotClip/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_EXTRASHOTCLIP_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/extraShotClip/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_POWERMODE_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/powerMode/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_POWERMODE_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/powerMode/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_BATTLEFURY_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/battleFury/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_BATTLEFURY_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/battleFury/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_ACCURACYSTACKS_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/accuracyStacks/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_ACCURACYSTACKS_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/accuracyStacks/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_ACCURACYSTACKS_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/accuracyStacks/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_ACCURACYSTACKS_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/accuracyStacks/page2/description";
+      
+      public static const DETAILSHELP_MECHANICS_IMPROVEDRAMMING_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/improvedRamming/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_IMPROVEDRAMMING_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/improvedRamming/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_CHARGEABLEBURST_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/chargeableBurst/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_CHARGEABLEBURST_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/chargeableBurst/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_SUPPORTWEAPON_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/supportWeapon/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_SUPPORTWEAPON_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/supportWeapon/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_STATIONARYRELOAD_PAGE1_TITLE:String = "#ingame_help:detailsHelp/mechanics/stationaryReload/page1/title";
+      
+      public static const DETAILSHELP_MECHANICS_STATIONARYRELOAD_PAGE1_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stationaryReload/page1/description";
+      
+      public static const DETAILSHELP_MECHANICS_STATIONARYRELOAD_PAGE2_TITLE:String = "#ingame_help:detailsHelp/mechanics/stationaryReload/page2/title";
+      
+      public static const DETAILSHELP_MECHANICS_STATIONARYRELOAD_PAGE2_DESCRIPTION:String = "#ingame_help:detailsHelp/mechanics/stationaryReload/page2/description";
       
       public static const DETAILSHELP_NOKEYSWARNING:String = "#ingame_help:detailsHelp/noKeysWarning";
       

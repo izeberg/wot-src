@@ -51,7 +51,7 @@ class ProjectileMover(object):
 
         return
 
-    def add(self, shotID, effectsDescr, prefabEffIndex, gravity, refStartPoint, refVelocity, startPoint, maxDistance, shellTypeIdx, shellCaliber, attackerID=0, tracerCameraPos=None):
+    def add(self, shotID, effectsDescr, prefabEffIndex, gravity, refStartPoint, refVelocity, startPoint, maxDistance, shellTypeIdx, shellCaliber, attackerID=0, tracerCameraPos=None, gunInstallationIndex=constants.DEFAULT_GUN_INSTALLATION_INDEX):
         tracerCameraPos = tracerCameraPos or Math.Vector3(0, 0, 0)
         import BattleReplay
         if BattleReplay.g_replayCtrl.isTimeWarpInProgress or self.__isPaused:
@@ -81,6 +81,7 @@ class ProjectileMover(object):
                'showExplosion': False, 
                'fireMissedTrigger': isOwnShoot, 
                'autoScaleProjectile': isOwnShoot, 
+               'gunInstallationIndex': gunInstallationIndex, 
                'attackerID': attackerID, 
                'effectsData': {}}
             if not gEffectsDisabled():
@@ -124,7 +125,7 @@ class ProjectileMover(object):
         else:
             if proj['fireMissedTrigger']:
                 proj['fireMissedTrigger'] = False
-                TriggersManager.g_manager.fireTrigger(TRIGGER_TYPE.PLAYER_SHOT_MISSED)
+                TriggersManager.g_manager.fireTrigger(TRIGGER_TYPE.PLAYER_SHOT_MISSED, gunInstallationIndex=proj['gunInstallationIndex'])
             params = self.__ballistics.explodeProjectile(shotID, endPoint)
             if params is not None:
                 proj['shellType'] = shellType
@@ -210,7 +211,7 @@ class ProjectileMover(object):
         else:
             self.__delProjectile(shotID)
             if proj['fireMissedTrigger']:
-                TriggersManager.g_manager.fireTrigger(TRIGGER_TYPE.PLAYER_SHOT_MISSED)
+                TriggersManager.g_manager.fireTrigger(TRIGGER_TYPE.PLAYER_SHOT_MISSED, gunInstallationIndex=proj['gunInstallationIndex'])
             return
 
     def __addWaterRipples(self, position, rippleDiameter, ripplesLeft):

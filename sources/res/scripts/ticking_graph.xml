@@ -12,6 +12,7 @@
 		<transformUpdate/>
 		<transformPostUpdate/>
 		<modelUpdate/>
+		<vehicleHierarchyCleanup/>
 		<vehicleHierarchyUpdate/>
 		<compositionUpdate/>
 		<vehicleHierarchyPostUpdate/>
@@ -25,6 +26,7 @@
 			<before>true</before>
 		</NetworkFilter>
 		<Sensor/>
+		<PostSimulation/>
 	</Simulation>
 	<PostTick>
 		<postTickUpdate/>

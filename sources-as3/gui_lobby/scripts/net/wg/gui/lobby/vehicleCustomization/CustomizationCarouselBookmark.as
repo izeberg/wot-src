@@ -46,12 +46,10 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          var _loc3_:String = null;
          this.bookmarkNameTF.autoSize = TextFieldAutoSize.LEFT;
-         this.bookmarkNameTF.htmlText = param1;
+         this.removeBookmarkNameTextListeners();
          if(param2)
          {
-            this.bookmarkNameTF.autoSize = TextFieldAutoSize.NONE;
             this.bookmarkNameTF.width = _width;
-            this.removeBookmarkNameTextListeners();
             this._fullName = param1;
             _loc3_ = App.utils.commons.truncateTextFieldText(this.bookmarkNameTF,param1,true,true,DOTS);
             this._isBookmarkNameTextTruncated = !StringUtils.equals(param1,_loc3_);
@@ -60,6 +58,11 @@ package net.wg.gui.lobby.vehicleCustomization
                this.bookmarkNameTF.addEventListener(MouseEvent.ROLL_OVER,this.onBookmarkNameTextRollOverHandler);
                this.bookmarkNameTF.addEventListener(MouseEvent.ROLL_OUT,this.onBookmarkNameTextRollOutHandler);
             }
+         }
+         else
+         {
+            this._fullName = null;
+            this.bookmarkNameTF.htmlText = param1;
          }
       }
       

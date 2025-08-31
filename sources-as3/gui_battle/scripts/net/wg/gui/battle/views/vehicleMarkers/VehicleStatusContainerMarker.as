@@ -47,6 +47,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public var shotPassionMarker:VehicleStatusIconMarker = null;
       
+      public var targetDesignatorMarker:VehicleStunMarker = null;
+      
       public var statusMarker:VehicleStatusMarker = null;
       
       private var _statusEffectMarkers:Dictionary = null;
@@ -92,11 +94,13 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.setupMarker(BATTLE_MARKER_STATES.COMP7_AGGRESSIVE_DETECTION_STATE,this.statusMarker);
          this.setupMarker(BATTLE_MARKER_STATES.COMP7_POINT_RECON_STATE,this.statusMarker);
          this.setupMarker(BATTLE_MARKER_STATES.CONFIRMED_STATE,this.statusMarker);
+         this.setupMarker(BATTLE_MARKER_STATES.TARGET_DESIGNATOR_SPOTTED_MARKER,this.targetDesignatorMarker);
       }
       
       override protected function configUI() : void
       {
          super.configUI();
+         this.targetDesignatorMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.stunMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.baseEngineerMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
@@ -111,6 +115,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.shotPassionMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.adaptationHealthRestoreMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.statusMarker.addEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
+         this.targetDesignatorMarker.setupFrameEvents();
          this.stunMarker.setupFrameEvents();
          this.baseEngineerMarker.setupFrameEvents();
          this.inspireMarker.setupFrameEvents();
@@ -129,6 +134,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       override protected function onBeforeDispose() : void
       {
+         this.targetDesignatorMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.stunMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.baseEngineerMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
          this.inspireMarker.removeEventListener(StatusAnimationEvent.EVENT_HIDDEN,this.onStatusAnimationEventHiddenHandler);
@@ -153,6 +159,8 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.baseEngineerMarker = null;
          this.inspireMarker.dispose();
          this.inspireMarker = null;
+         this.targetDesignatorMarker.dispose();
+         this.targetDesignatorMarker = null;
          this.stunMarker.dispose();
          this.stunMarker = null;
          this.inspireTargetMarker.dispose();
@@ -245,6 +253,7 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function setDebuffEffectColor(param1:String, param2:uint) : void
       {
+         this.targetDesignatorMarker.setEffectColor(param1,param2);
          this.stunMarker.setEffectColor(param1,param2);
          this.baseEngineerMarker.setEffectColor(param1,param2);
          this.stealthMarker.setEffectColor(param1,param2);
@@ -260,6 +269,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.inspireMarker.setSecondString(param1);
          this.healMarker.setSecondString(param1);
          this.statusMarker.setSecondString(param1);
+         this.targetDesignatorMarker.setSecondString(param1);
       }
       
       public function showMarker(param1:int, param2:int, param3:Boolean, param4:Number, param5:int, param6:int, param7:Boolean = true, param8:Boolean = true) : void

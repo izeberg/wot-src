@@ -10,6 +10,11 @@
 		<GameObject>
 			<name>Mines_Sign</name>
 			<UUID>154b87c9-6069-4a79-bdfe-db4563bf5fe8</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>minefield_beach_02_cb</name>
+			<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
 			<flags>8</flags>
 		</GameObject>
 	</GameObjects>
@@ -19,6 +24,16 @@
 			<version>2</version>
 			<component>
 				<UUID>154b87c9-6069-4a79-bdfe-db4563bf5fe8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -67,6 +82,58 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
+				<flags>33</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkEntity</type>
+			<version>1</version>
+			<component>
+				<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
+				<flags>33</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>NetworkTransformComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
+				<flags>33</flags>
+				<config>
+					<property>
+						<name>filterType</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>detailed</name>
+						<value>0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>DynamicModel</type>
@@ -104,6 +171,14 @@
 						<value>1</value>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SequenceNetworkSync</type>
+			<version>1</version>
+			<component>
+				<UUID>fd143d34-7e54-4e23-a6bf-6ecd1d3dd5a2</UUID>
+				<flags>35</flags>
 			</component>
 		</ComponentPool>
 	</components>

@@ -265,6 +265,96 @@ msgstr "Water Quality"
 msgid "WATER_QUALITY/description"
 msgstr "Determines the draw quality of water surfaces."
 
+msgid "aim/armorFlashlight/colorSchema/greenShades/label"
+msgstr "Weak armor only"
+
+msgid "aim/armorFlashlight/colorSchema/greenShades/tooltip/body"
+msgstr ""
+"If active, the Flashlight highlights only weak target armor.\n"
+"\n"
+"Armor with a high penetration chance is highlighted in solid green, while armor with a moderate penetration chance is semi-transparent green. The colors may be different in colorblind mode."
+
+msgid "aim/armorFlashlight/colorSchema/greenShades/tooltip/header"
+msgstr "Highlight Weak Armor Only"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/label"
+msgstr "Strong armor only"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/tooltip/body"
+msgstr ""
+"If active, the Flashlight highlights only strong target armor.\n"
+"\n"
+"Armor with a low to zero penetration chance is highlighted in solid red, while armor with a moderate penetration chance is semi-transparent red. The colors may be different in colorblind mode."
+
+msgid "aim/armorFlashlight/colorSchema/redShades/tooltip/header"
+msgstr "Highlight Strong Armor Only"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/label"
+msgstr "All armor"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/tooltip/body"
+msgstr ""
+"If active, the Flashlight highlights all target armor.\n"
+"\n"
+"Armor with a low to zero penetration chance is highlighted in red, armor with a high penetration chance is green, and armor with a moderate penetration chance is yellow. The colors may be different in colorblind mode."
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/tooltip/header"
+msgstr "Highlight All Armor"
+
+msgid "aim/armorFlashlight/colorSchemas"
+msgstr "Armor Highlights"
+
+msgid "aim/armorFlashlight/enabled/label"
+msgstr "Enable at start of battle"
+
+msgid "aim/armorFlashlight/enabled/tooltip/body"
+msgstr ""
+"The default Flashlight state at the start of battle. You can toggle the Flashlight on or off using the assigned hotkey at any time.\n"
+"\n"
+"When enabled, the Flashlight functions only in Sniper mode.\n"
+"\n"
+"Supported game modes:\n"
+"• Random Battles and Team Training;\n"
+"• Frontline;\n"
+"• Arcade Battles;\n"
+"• Onslaught;\n"
+"• Certain other modes and events. \n"
+"\n"
+"Additional modes and events may be supported in future."
+
+msgid "aim/armorFlashlight/enabled/tooltip/header"
+msgstr "Enable at Start of Battle"
+
+msgid "aim/armorFlashlight/fill/label"
+msgstr "Flashlight Texture"
+
+msgid "aim/armorFlashlight/fill/pattern1"
+msgstr "Solid"
+
+msgid "aim/armorFlashlight/fill/pattern2"
+msgstr "Sparse Pattern"
+
+msgid "aim/armorFlashlight/fill/pattern3"
+msgstr "Dense Pattern"
+
+msgid "aim/armorFlashlight/opacity"
+msgstr "Opacity"
+
+msgid "aim/armorFlashlight/performanceImpact"
+msgstr "Performance Warning"
+
+msgid "aim/armorFlashlight/resolution/high"
+msgstr "High"
+
+msgid "aim/armorFlashlight/resolution/low"
+msgstr "Low"
+
+msgid "aim/armorFlashlight/resolution/medium"
+msgstr "Medium"
+
+msgid "aim/armorFlashlight/resolutionScaling"
+msgstr "Flashlight Resolution"
+
 msgid "aim/cassette"
 msgstr "Containers"
 
@@ -615,6 +705,9 @@ msgstr "Image Adjustment Options"
 
 msgid "cursor/ArcadeTitle"
 msgstr "Arcade"
+
+msgid "cursor/ArmorFlashlight"
+msgstr "Armor Flashlight"
 
 msgid "cursor/ArtyTitle"
 msgstr "Artillery"
@@ -1191,9 +1284,6 @@ msgstr "Battle Communication"
 msgid "game/fieldset/headerChat"
 msgstr "Chat"
 
-msgid "game/fieldset/headerGameplay"
-msgstr "Random Battle Types"
-
 msgid "game/fieldset/headerMinimap"
 msgstr "Minimap"
 
@@ -1419,23 +1509,8 @@ msgstr "Configuration switching on loading screen"
 msgid "gameTitle"
 msgstr "General"
 
-msgid "gameplay/assault"
-msgstr "Assault (after researching Tier VI vehicles)"
-
-msgid "gameplay/ctf"
-msgstr "Standard Battle"
-
 msgid "gameplay/devMaps"
-msgstr "Maps Under Development"
-
-msgid "gameplay/domination"
-msgstr "Encounter Battle (after researching Tier IV vehicles)"
-
-msgid "gameplay/epic_encounter"
-msgstr "Grand Battle (for Tier X vehicles)"
-
-msgid "gameplay/epic_standard"
-msgstr "Grand Battle (for Tier X vehicles)"
+msgstr "Play on maps with Random Events"
 
 msgid "gameplay/nations"
 msgstr "Confrontation"
@@ -1864,11 +1939,17 @@ msgstr "Zoom Out"
 msgid "keyboard/keysBlocks/command/sizeUp"
 msgstr "Zoom In"
 
+msgid "keyboard/keysBlocks/command/specialAbility"
+msgstr "Special Ability"
+
 msgid "keyboard/keysBlocks/command/stop_fire"
 msgstr "Stop and Fire"
 
 msgid "keyboard/keysBlocks/command/thankYou"
 msgstr "Thank you!"
+
+msgid "keyboard/keysBlocks/command/toggleFlashlight"
+msgstr "Toggle Armor Flashlight"
 
 msgid "keyboard/keysBlocks/command/trajectory_view"
 msgstr "Trajectory View"

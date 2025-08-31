@@ -2,7 +2,7 @@ from gui.veh_post_progression.helpers import getInstalledShells, setFeatures, se
 from helpers import dependency
 from items import vehicles
 from battle_modifiers_common import EXT_DATA_MODIFIERS_KEY
-from post_progression_common import EXT_DATA_PROGRESSION_KEY, EXT_DATA_SLOT_KEY, VehicleState
+from post_progression_common import EXT_DATA_PROGRESSION_KEY, EXT_DATA_SLOT_KEY, VehicleState, unpackActionCDs
 from skeletons.gui.shared.gui_items import IGuiItemsFactory
 
 class VehicleBuilder(object):
@@ -46,7 +46,8 @@ class VehicleBuilder(object):
     def setPostProgressionState(self, vehPostProgression, disabledSwitchGroupIDs):
         self.__assertNotSet(self.__extData, EXT_DATA_PROGRESSION_KEY)
         vehState = VehicleState()
-        setFeatures(vehState, vehPostProgression)
+        actionCDs = self.__getUnpackedPostProgressionActionCDs(vehPostProgression)
+        setFeatures(vehState, actionCDs)
         setDisabledSwitches(vehState, disabledSwitchGroupIDs)
         self.__setExtData(EXT_DATA_PROGRESSION_KEY, vehState)
 
@@ -64,6 +65,11 @@ class VehicleBuilder(object):
         if self.__extData and EXT_DATA_PROGRESSION_KEY in self.__extData:
             vehicle.installPostProgressionItem(self.__itemsFactory.createVehPostProgression(vehicle.compactDescr, self.__extData[EXT_DATA_PROGRESSION_KEY], vehicle.typeDescr))
         return vehicle
+
+    def __getUnpackedPostProgressionActionCDs(self, packedCDs):
+        vppCache = vehicles.g_cache.postProgression()
+        vehType = vehicles.getVehicleType(self.__strCD)
+        return unpackActionCDs(packedCDs, vppCache, vehType.postProgressionTree)
 
     def __setInvData(self, key, value):
         if self.__invData is None:

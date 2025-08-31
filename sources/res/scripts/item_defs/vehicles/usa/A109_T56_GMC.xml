@@ -3248,7 +3248,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				1.8 2.1 2.9
 				<!--BW_String-->
@@ -5442,7 +5441,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>16500</maxLoad>
 			<terrainResistance>
 				1.7 1.9 2.7
 				<!--BW_String-->
@@ -7634,7 +7632,7 @@
 		<Turret_1_A109_T56_GMC>
 			<ceilless>true</ceilless>
 			<userString>#usa_vehicles:Turret_1_A109_T56_GMC</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -7804,7 +7802,7 @@
 		<Turret_2_A109_T56_GMC>
 			<ceilless>true</ceilless>
 			<userString>#usa_vehicles:Turret_2_A109_T56_GMC</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>100</price>
 			<notInShop>true</notInShop>

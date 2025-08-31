@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/S36_gunsleeve_nightmare/normal/lod2/attachment</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.370766 -0.248460 -1.366072</min>
+		<max>0.396207 0.512774 1.370620</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/S36_gunsleeve_nightmare/normal/lod1/attachment</nodefullVisual>
+</root>

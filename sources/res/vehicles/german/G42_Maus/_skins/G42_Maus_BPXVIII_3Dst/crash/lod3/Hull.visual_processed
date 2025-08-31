@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.193007 1.598533</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.193007 -3.248838</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.906250 -1.144700</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_chassis_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -0.509019 0.079613</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.005497 0.190124 0.004824</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_equipment</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_equipment_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.006377 0.169973 -0.395245</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>tank_damage</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						crashTileMap
+						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_damage_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_damage_AO.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>1.000000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_damage_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/Maus_BPXVIII_3Dst_damage_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000364 0.514272 1.898355</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.179425 -1.099687 -4.584338</min>
+		<max>2.168432 1.195894 4.593985</max>
+	</boundingBox>
+	<geometrySize>177212</geometrySize>
+</root>

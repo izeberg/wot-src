@@ -2206,14 +2206,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>70000</maxLoad>
 			<terrainResistance>
 				1.8 2 3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>65000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>22</rotationSpeed>
+			<rotationSpeed>25</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.26
@@ -4996,7 +4995,7 @@
 		<detailed>
 			<engines>
 				<Rolls_Royce_Griffon_7x7>
-					<smplEnginePower>1000</smplEnginePower>
+					<smplEnginePower>1050</smplEnginePower>
 					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Rolls_Royce_Griffon_7x7>
 			</engines>

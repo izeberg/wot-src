@@ -9,6 +9,7 @@ if typing.TYPE_CHECKING:
     from frameworks.wulf import Array
     from gui.battle_results.stats_ctrl import BattleResults
     from gui.battle_results.reusable.shared import VehicleSummarizeInfo
+    from gui.battle_results.presenters.packers.team.stats_params_settings import _Parameter
 
 class Statistics(IStatisticsPacker):
     __ALL_PARAMETERS = {}
@@ -46,6 +47,11 @@ class Statistics(IStatisticsPacker):
         return cls.__ALL_PARAMETERS
 
     @classmethod
+    def _packParamLabel(cls, model, paramSettings):
+        model.setLabel(paramSettings.path())
+        model.setLabelKey(paramSettings.stringId)
+
+    @classmethod
     def __packDetails(cls, detailsModel, paramType, info, battleResults):
         details = cls._getAllParameters()[paramType].details
         detailsModel.clear()
@@ -62,8 +68,8 @@ class Statistics(IStatisticsPacker):
 
     @classmethod
     def __packParameter(cls, model, paramSettings, info, battleResults):
-        model.setLabel(paramSettings.stringId())
         model.setParamValueType(paramSettings.valueType)
+        cls._packParamLabel(model, paramSettings)
         cls.__packValue(model.getValue(), paramSettings.extractor(info, paramSettings.fields, battleResults))
 
     @classmethod

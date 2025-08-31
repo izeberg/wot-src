@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
 
 msgid "buyVehicleWindow/buyBtn"
 msgstr "Purchase"
@@ -111,3 +115,81 @@ msgstr "Trade-in"
 
 msgid "buyVehicleWindow/tradeInBtnLabel"
 msgstr "Trade In"
+
+msgid "carousel/filters/allVehicle"
+msgstr "All My Vehicles"
+
+msgid "rentalCounter/count/battles"
+msgid_plural "plural/rentalCounter/count/battles"
+msgstr[0] "{{count}} battle"
+msgstr[1] "{{count}} battles"
+msgstr[2] "{{count}} battles"
+
+msgid "rentalCounter/count/days"
+msgid_plural "plural/rentalCounter/count/days"
+msgstr[0] "{{count}} day"
+msgstr[1] "{{count}} days"
+msgstr[2] "{{count}} days"
+
+msgid "rentalCounter/count/hours"
+msgid_plural "plural/rentalCounter/count/hours"
+msgstr[0] "{{count}} hour"
+msgstr[1] "{{count}} hours"
+msgstr[2] "{{count}} hours"
+
+msgid "rentalCounter/count/wins"
+msgid_plural "plural/rentalCounter/count/wins"
+msgstr[0] "{{count}} victory"
+msgstr[1] "{{count}} victories"
+msgstr[2] "{{count}} victories"
+
+msgid "tooltip/filters/myVehicle/body"
+msgstr "Click to go to your vehicle playlists"
+
+msgid "tooltip/filters/myVehicle/header"
+msgstr "My Vehicles"
+
+msgid "vehicleMenu/menuItem/aboutVehicle/title"
+msgstr "ABOUT VEHICLE"
+
+msgid "vehicleMenu/menuItem/armorInspector/title"
+msgstr "ARMOR"
+
+msgid "vehicleMenu/menuItem/compare/title"
+msgstr "COMPARE"
+
+msgid "vehicleMenu/menuItem/counter"
+msgstr " [{{count}}]"
+
+msgid "vehicleMenu/menuItem/crewAutoReturn/title"
+msgstr "AUTO RETURN"
+
+msgid "vehicleMenu/menuItem/crewBack/title"
+msgstr "RETURN CREW"
+
+msgid "vehicleMenu/menuItem/crewOut/title"
+msgstr "SEND TO BARRACKS"
+
+msgid "vehicleMenu/menuItem/crewRetrain/title"
+msgstr "RETRAIN CREW"
+
+msgid "vehicleMenu/menuItem/easyEquip/title"
+msgstr "QUICK SERVICE"
+
+msgid "vehicleMenu/menuItem/fieldModification/title"
+msgstr "FIELD MODIFICATION"
+
+msgid "vehicleMenu/menuItem/nationChange/title"
+msgstr "CHANGE NATION"
+
+msgid "vehicleMenu/menuItem/quickTraining/title"
+msgstr "QUICK TRAINING"
+
+msgid "vehicleMenu/menuItem/repairs/title"
+msgstr "REPAIRS"
+
+msgid "vehicleMenu/menuItem/research/title"
+msgstr "RESEARCH"
+
+msgid "vehicleMenu/menuItem/vehSkillTree/title"
+msgstr "UPGRADES"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>last_stand/vehicles/british/GB24_Centurion_Mk3_LS_BOT/normal/lod3/Turret_02</nodefullVisual>
+	<parent>last_stand/vehicles/british/GB24_Centurion_Mk3_LS_BOT/normal/lod4/Turret_02</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.656527 0.061093 -2.995053</min>
+		<max>1.653588 1.327491 1.133923</max>
+	</visibilityBox>
+</root>

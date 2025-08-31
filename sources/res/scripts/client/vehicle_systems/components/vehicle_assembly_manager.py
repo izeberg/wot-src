@@ -1,22 +1,15 @@
 from collections import namedtuple
-import typing, logging, enum, CGF, GenericComponents, GpuDecals, Vehicular, DataLinks, math_utils, Compound, BattleReplay
+import typing, logging, CGF, GenericComponents, GpuDecals, Vehicular, DataLinks, math_utils, Compound
+from cgf_components.client_worlds_helpers import ClientWorld, clientWorldsManager, getClientWorld
 from cgf_script.managers_registrator import autoregister, onAddedQuery
 from constants import IS_UE_EDITOR
-from helpers import isPlayerAccount, isPlayerAvatar
 from vehicle_systems import vehicle_composition as veh_comp
 from vehicle_systems.components import vehicle_variable_storage, gun_info
-from vehicle_systems.tankStructure import TankPartNames, TankRenderMode
+from vehicle_systems.tankStructure import TankPartNames, TankRenderMode, ModelStates
 if typing.TYPE_CHECKING:
     from common_tank_appearance import CommonTankAppearance
     from gui.hangar_vehicle_appearance import HangarVehicleAppearance
 _logger = logging.getLogger(__name__)
-
-class AssemblyType(enum.IntEnum):
-    NONE = 0
-    BATTLE = 1
-    HANGAR = 2
-    EDITOR = 4
-
 
 class Assembler(object):
 
@@ -91,20 +84,21 @@ class RecoilAssembler(Assembler):
 
     def assemble(self, gameObject, _):
         appearance = veh_comp.findParentVehicleAppearance(gameObject)
-        if appearance is not None:
+        if appearance is None:
+            return
+        else:
             if self._createComponent(gameObject, appearance) is not None:
                 appearance.setGunRecoil(gameObject)
-        return
+            return
 
     def _createComponent(self, gameObject, appearance):
-        vehicleDesc = appearance.typeDescriptor
-        recoilDescr = vehicleDesc.gun.recoil
-        if recoilDescr is None:
+        recoil = appearance.typeDescriptor.gun.recoil
+        if recoil is None:
             return
         else:
             self._replaceWithNodeDriver(gameObject, appearance)
             gameObject.removeComponentByType(Vehicular.GunRecoilComponent)
-            return gameObject.createComponent(Vehicular.GunRecoilComponent, recoilDescr.backoffTime, recoilDescr.returnTime, recoilDescr.amplitude, False)
+            return gameObject.createComponent(Vehicular.GunRecoilComponent, recoil.backoffTime, recoil.returnTime, recoil.amplitude, False)
 
 
 class MultiGunRecoilAssembler(RecoilAssembler):
@@ -117,16 +111,16 @@ class MultiGunRecoilAssembler(RecoilAssembler):
 
     def assemble(self, gameObject, slotMarker):
         appearance = veh_comp.findParentVehicleAppearance(gameObject)
-        if appearance is not None and not appearance.damageState.isCurrentModelDamaged:
-            if self._createComponent(gameObject, appearance) is not None:
-                multiGun = appearance.typeDescriptor.turret.multiGun
-                gunIndex = 0
-                for i, gunInstance in enumerate(multiGun):
-                    if gunInstance.node == slotMarker.slotName:
-                        gunIndex = i
-                        break
+        if appearance is None or appearance.damageState.isCurrentModelDamaged:
+            return
+        gunIndex = -1
+        for i, gunInstance in enumerate(appearance.typeDescriptor.gun.multiGun or ()):
+            if gunInstance.node == slotMarker.slotName:
+                gunIndex = i
+                break
 
-                appearance.gunAnimators.set(gunIndex, gameObject)
+        if gunIndex >= 0 and self._createComponent(gameObject, appearance) is not None:
+            appearance.gunAnimators.set(gunIndex, gameObject)
         return
 
 
@@ -229,32 +223,25 @@ class GunInfoAssembler(Assembler):
         return
 
 
-_AssemblerData = namedtuple('_AssemblerData', ('typeFlags', 'assembler'))
+_AssemblerData = namedtuple('_AssemblerData', ('worldFlags', 'assembler'))
 
 @autoregister(presentInAllWorlds=True, domain=CGF.DomainOption.DomainClient | CGF.DomainOption.DomainEditor)
 class VehicleAssemblyManager(CGF.ComponentManager):
     _assemblers = (
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, TurretGunRotationAssembler),
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, RecoilAssembler),
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, MultiGunRecoilAssembler),
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, SwingingAnimationManager),
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.HANGAR | AssemblyType.EDITOR, DecalsAssembler),
-     _AssemblerData(AssemblyType.BATTLE | AssemblyType.EDITOR, GunInfoAssembler))
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, TurretGunRotationAssembler),
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, RecoilAssembler),
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, MultiGunRecoilAssembler),
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, SwingingAnimationManager),
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.HANGAR | ClientWorld.EDITOR, DecalsAssembler),
+     _AssemblerData(ClientWorld.BATTLE | ClientWorld.EDITOR, GunInfoAssembler))
 
     def __init__(self):
         super(VehicleAssemblyManager, self).__init__()
-        if IS_UE_EDITOR:
-            assemblyType = AssemblyType.EDITOR
-        elif isPlayerAccount():
-            assemblyType = AssemblyType.HANGAR
-        elif isPlayerAvatar() or BattleReplay.isPlaying() or BattleReplay.isServerSideReplay():
-            assemblyType = AssemblyType.BATTLE
+        clientWorld = getClientWorld()
+        if clientWorld != ClientWorld.NONE:
+            self.__assemblers = [ assemblerData.assembler() for assemblerData in VehicleAssemblyManager._assemblers if assemblerData.worldFlags & clientWorld ]
         else:
-            assemblyType = AssemblyType.NONE
-            _logger.warning("Can't recognize assembly type")
-        if assemblyType != AssemblyType.NONE:
-            self.__assemblers = [ assemblerData.assembler() for assemblerData in VehicleAssemblyManager._assemblers if assemblerData.typeFlags & assemblyType ]
-        else:
+            _logger.warning("Can't recognize client world")
             self.__assemblers = []
 
     @onAddedQuery(CGF.GameObject, GenericComponents.SlotMarkerComponent)
@@ -262,3 +249,21 @@ class VehicleAssemblyManager(CGF.ComponentManager):
         for assembler in self.__assemblers:
             if assembler.checkSlotMarker(slotMarker):
                 assembler.assemble(gameObject, slotMarker)
+
+
+@clientWorldsManager(ClientWorld.HANGAR | ClientWorld.EDITOR)
+class HangarVehicleStateSwitcherManager(CGF.ComponentManager):
+
+    @onAddedQuery(CGF.GameObject, GenericComponents.StateSwitcherComponent)
+    def onAddedVehicleStateSwitcher(self, go, switcher):
+        appearance = veh_comp.findParentVehicleAppearance(go)
+        if not appearance:
+            return
+        if IS_UE_EDITOR:
+            state = appearance.damageState.modelState
+        else:
+            state = appearance.vehicleState
+        if state == ModelStates.UNDAMAGED:
+            switcher.requestState(GenericComponents.StateSwitcherComponent.NORMAL_STATE)
+        elif state in (ModelStates.DESTROYED, ModelStates.EXPLODED):
+            switcher.requestState(GenericComponents.StateSwitcherComponent.DAMAGED_STATE)

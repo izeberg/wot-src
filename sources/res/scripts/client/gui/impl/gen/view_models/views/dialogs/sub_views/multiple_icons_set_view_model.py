@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.dialogs.sub_views.icon_view_model import IconViewModel
 
 class IconPositionLogicEnum(Enum):

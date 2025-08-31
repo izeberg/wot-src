@@ -165,6 +165,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_26</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_11</id>
 				<params>
@@ -207,6 +213,34 @@
 					<slot>
 						<name>i3</name>
 						<const>\enemy_sector2_4\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_2</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_47</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>Labels</name>
+						<const>\ZW5lbXlfc2VjdG9yM18z\</const>
 					</slot>
 				</slots>
 			</block>
@@ -280,6 +314,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_25</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_5</id>
 				<params>
@@ -305,6 +345,59 @@
 					<slot>
 						<name>event</name>
 						<const>\ob_music_int_01\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_46</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_70</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						3
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\enemy_sector2_1\</const>
+					</slot>
+					<slot>
+						<name>i1</name>
+						<const>\enemy_sector2_2\</const>
+					</slot>
+					<slot>
+						<name>i2</name>
+						<const>\enemy_sector2_3\</const>
 					</slot>
 				</slots>
 			</block>
@@ -378,6 +471,12 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_27</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>CreateArray</class>
 				<id>CreateArray_62</id>
 				<params>
@@ -400,6 +499,59 @@
 					<slot>
 						<name>i1</name>
 						<const>\enemy_sector3_3\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_48</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_71</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						3
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\enemy_sector4_1\</const>
+					</slot>
+					<slot>
+						<name>i1</name>
+						<const>\enemy_sector4_2\</const>
+					</slot>
+					<slot>
+						<name>i2</name>
+						<const>\enemy_sector4_4\</const>
 					</slot>
 				</slots>
 			</block>
@@ -498,6 +650,65 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_28</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_49</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_72</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						3
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\enemy_sector4_6\</const>
+					</slot>
+					<slot>
+						<name>i1</name>
+						<const>\enemy_sector4_3\</const>
+					</slot>
+					<slot>
+						<name>i2</name>
+						<const>\enemy_sector4_5\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_34</id>
 				<params>
@@ -567,6 +778,12 @@
 				</slots>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_30</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_37</id>
 				<params>
@@ -592,6 +809,63 @@
 					<slot>
 						<name>event</name>
 						<const>\ob_music_int_01\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_6</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_51</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_74</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						4
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\enemy_sector7_1\</const>
+					</slot>
+					<slot>
+						<name>i1</name>
+						<const>\enemy_sector7_3\</const>
+					</slot>
+					<slot>
+						<name>i2</name>
+						<const>\enemy_sector7_2\</const>
+					</slot>
+					<slot>
+						<name>i3</name>
+						<const>\enemy_sector7_4\</const>
 					</slot>
 				</slots>
 			</block>
@@ -787,6 +1061,69 @@
 				</params>
 				<slots/>
 			</block>
+			<block>
+				<class>If</class>
+				<id>If_29</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_50</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_5</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_73</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						4
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\enemy_sector5_2\</const>
+					</slot>
+					<slot>
+						<name>i1</name>
+						<const>\enemy_sector5_3\</const>
+					</slot>
+					<slot>
+						<name>i2</name>
+						<const>\enemy_sector5_4\</const>
+					</slot>
+					<slot>
+						<name>i3</name>
+						<const>\enemy_sector5_1\</const>
+					</slot>
+				</slots>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -808,16 +1145,34 @@
 				<output>anyDetected</output>
 			</connection>
 			<connection>
-				<from>Macro_11</from>
+				<from>If_26</from>
 				<input>in</input>
 				<to>Macro_14</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Macro_11</from>
+				<input>input</input>
+				<to>If_26</to>
 				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>LogicGate_2</from>
+				<input>value</input>
+				<to>If_26</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>CreateArray_60</from>
 				<input>Labels</input>
 				<to>Macro_11</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_47</from>
+				<input>false</input>
+				<to>LogicGate_2</to>
+				<output>anyDetected</output>
 			</connection>
 			<connection>
 				<from>CreateArray_55</from>
@@ -838,16 +1193,40 @@
 				<output>completed</output>
 			</connection>
 			<connection>
+				<from>Macro_5</from>
+				<input>input</input>
+				<to>If_25</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>LogicGate_1</from>
+				<input>value</input>
+				<to>If_25</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>CreateArray_55</from>
 				<input>Labels</input>
 				<to>Macro_5</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>Macro_5</from>
+				<from>If_25</from>
 				<input>in</input>
 				<to>Macro_7</to>
-				<output>allDestroyed</output>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Macro_46</from>
+				<input>false</input>
+				<to>LogicGate_1</to>
+				<output>anyDetected</output>
+			</connection>
+			<connection>
+				<from>CreateArray_70</from>
+				<input>Labels</input>
+				<to>Macro_46</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>Macro_16</from>
@@ -862,15 +1241,39 @@
 				<output>completed</output>
 			</connection>
 			<connection>
-				<from>Macro_18</from>
+				<from>If_27</from>
 				<input>in</input>
 				<to>Macro_21</to>
-				<output>allDestroyed</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CreateArray_62</from>
 				<input>Labels</input>
 				<to>Macro_18</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_18</from>
+				<input>input</input>
+				<to>If_27</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>LogicGate_3</from>
+				<input>value</input>
+				<to>If_27</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_48</from>
+				<input>false</input>
+				<to>LogicGate_3</to>
+				<output>anyDetected</output>
+			</connection>
+			<connection>
+				<from>CreateArray_71</from>
+				<input>Labels</input>
+				<to>Macro_48</to>
 				<output>res</output>
 			</connection>
 			<connection>
@@ -898,10 +1301,34 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>Macro_25</from>
+				<from>If_28</from>
 				<input>in</input>
 				<to>Macro_27</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Macro_25</from>
+				<input>input</input>
+				<to>If_28</to>
 				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>LogicGate_4</from>
+				<input>value</input>
+				<to>If_28</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Macro_49</from>
+				<input>false</input>
+				<to>LogicGate_4</to>
+				<output>anyDetected</output>
+			</connection>
+			<connection>
+				<from>CreateArray_72</from>
+				<input>Labels</input>
+				<to>Macro_49</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>CreateArray_68</from>
@@ -922,16 +1349,40 @@
 				<output>completed</output>
 			</connection>
 			<connection>
+				<from>Macro_37</from>
+				<input>input</input>
+				<to>If_30</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>LogicGate_6</from>
+				<input>value</input>
+				<to>If_30</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>CreateArray_68</from>
 				<input>Labels</input>
 				<to>Macro_37</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>Macro_37</from>
+				<from>If_30</from>
 				<input>in</input>
 				<to>Macro_39</to>
-				<output>allDestroyed</output>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Macro_51</from>
+				<input>false</input>
+				<to>LogicGate_6</to>
+				<output>anyDetected</output>
+			</connection>
+			<connection>
+				<from>CreateArray_74</from>
+				<input>Labels</input>
+				<to>Macro_51</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>CreateArray_69</from>
@@ -982,16 +1433,40 @@
 				<output>completed</output>
 			</connection>
 			<connection>
-				<from>Macro_31</from>
+				<from>If_29</from>
 				<input>in</input>
 				<to>Macro_33</to>
-				<output>allDestroyed</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>CreateArray_67</from>
 				<input>Labels</input>
 				<to>Macro_31</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_31</from>
+				<input>input</input>
+				<to>If_29</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>LogicGate_5</from>
+				<input>value</input>
+				<to>If_29</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CreateArray_73</from>
+				<input>Labels</input>
+				<to>Macro_50</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_50</from>
+				<input>false</input>
+				<to>LogicGate_5</to>
+				<output>anyDetected</output>
 			</connection>
 		</connections>
 		<macros>

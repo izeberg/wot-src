@@ -8,6 +8,7 @@ package net.wg.gui.lobby.missions
    import net.wg.gui.components.advanced.vo.DummyVO;
    import net.wg.gui.components.controls.UILoaderAlt;
    import net.wg.gui.components.wulf.ChildViewProxy;
+   import net.wg.gui.lobby.userMissions.components.MissionsViewBase;
    import net.wg.infrastructure.base.meta.IInjectComponentMeta;
    
    public class MissionsMultipleGFContainerView extends MissionsViewBase implements IInjectComponentMeta

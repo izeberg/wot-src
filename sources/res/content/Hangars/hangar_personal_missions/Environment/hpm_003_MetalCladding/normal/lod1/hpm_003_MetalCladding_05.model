@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_003_MetalCladding/normal/lod2/hpm_003_MetalCladding_05</parent>
+	<extent>60.000000</extent>
+	<visibilityBox>
+		<min>-0.891600 -0.000000 -0.050703</min>
+		<max>1.368225 1.629243 0.050702</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_003_MetalCladding/normal/lod1/hpm_003_MetalCladding_05</nodefullVisual>
+</root>

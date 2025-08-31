@@ -31,6 +31,8 @@ package net.wg.gui.lobby.personalMissions.data
       
       public var tooltipAlias:String = "";
       
+      public var isWulfTooltip:Boolean = false;
+      
       public function OperationVO(param1:Object, param2:int = 0)
       {
          super(param1);

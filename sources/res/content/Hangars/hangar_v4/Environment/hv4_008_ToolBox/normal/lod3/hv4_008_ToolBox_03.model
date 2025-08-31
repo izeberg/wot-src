@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_008_ToolBox/normal/lod4/hv4_008_ToolBox_03</parent>
+	<extent>130.000000</extent>
+	<visibilityBox>
+		<min>-0.360000 -0.000000 -0.130925</min>
+		<max>0.360000 0.522165 0.211051</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_008_ToolBox/normal/lod3/hv4_008_ToolBox_03</nodefullVisual>
+</root>

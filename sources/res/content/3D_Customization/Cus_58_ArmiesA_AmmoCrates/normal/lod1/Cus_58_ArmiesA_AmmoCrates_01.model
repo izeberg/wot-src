@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_58_ArmiesA_AmmoCrates/normal/lod1/Cus_58_ArmiesA_AmmoCrates_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_58_ArmiesA_AmmoCrates/normal/lod2/Cus_58_ArmiesA_AmmoCrates_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.542704 -0.007006 -0.570090</min>
+		<max>0.075529 0.451428 0.636744</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

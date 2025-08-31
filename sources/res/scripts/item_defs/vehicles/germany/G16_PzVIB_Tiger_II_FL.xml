@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>32300</weight>
-		<maxHealth>1200</maxHealth>
+		<maxHealth>1360</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1953,14 +1953,13 @@
 				<rightTrack>40</rightTrack>
 			</armor>
 			<weight>22350</weight>
-			<maxLoad>74000</maxLoad>
 			<terrainResistance>
 				1 1.2 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>68000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -3760,7 +3759,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_2 armor_4</primaryArmor>
 			<weight>10938</weight>
-			<maxHealth>400</maxHealth>
+			<maxHealth>340</maxHealth>
 			<rotationSpeed>27</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -3796,7 +3795,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3848,7 +3847,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5082,10 +5081,7 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_230_TRM_P45_FL>
-					<smplEnginePower>
-						740.0968
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>38</smplFwMaxSpeed>
 				</Maybach_HL_230_TRM_P45_FL>
 			</engines>

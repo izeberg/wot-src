@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>344.066681</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>14.066668</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 -0.610858</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>74.133339</startTime>
+				<value>0.000000 0.000000 -49.976646</value>
+				<inTangent>-0.000000 -0.000000 -0.476747</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>106.100006</startTime>
+				<value>0.000000 0.000000 -49.976646</value>
+				<inTangent>0.000000 0.000000 -0.011147</inTangent>
+				<outTangent>0.000000 0.000000 0.515342</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>240.066681</startTime>
+				<value>0.000000 0.000000 60.230331</value>
+				<inTangent>-0.000000 -0.000000 0.576473</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>280.400024</startTime>
+				<value>0.000000 0.000000 60.230331</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 -0.734976</outTangent>
+				<tangentMode>66305</tangentMode>
+			</frame>
+			<frame>
+				<startTime>334.000031</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.787961</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>65795</tangentMode>
+			</frame>
+			<frame>
+				<startTime>344.066681</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>hangar_v4_overhead_crane</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.266667</startTime>
+				<duration>343.566681</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>overhead_crane</name>
+			<type>sound</type>
+			<frame>
+				<startTime>13.900001</startTime>
+				<duration>60.266670</duration>
+				<sequenceSound>hangar_v4_overhead_crane</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>106.300003</startTime>
+				<duration>133.933350</duration>
+				<sequenceSound>hangar_v4_overhead_crane</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>280.233337</startTime>
+				<duration>53.400024</duration>
+				<sequenceSound>hangar_v4_overhead_crane</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>crane_stop</name>
+			<type>sound</type>
+			<frame>
+				<startTime>73.766670</startTime>
+				<duration>2.067314</duration>
+				<sequenceSound>hangar_v4_overhead_crane_stop</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>239.533340</startTime>
+				<duration>2.066666</duration>
+				<sequenceSound>hangar_v4_overhead_crane_stop</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>332.733337</startTime>
+				<duration>2.066681</duration>
+				<sequenceSound>hangar_v4_overhead_crane_stop</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>crane_start</name>
+			<type>sound</type>
+			<frame>
+				<startTime>13.866668</startTime>
+				<duration>0.633333</duration>
+				<sequenceSound>hangar_v4_overhead_crane_start</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>106.133339</startTime>
+				<duration>0.633331</duration>
+				<sequenceSound>hangar_v4_overhead_crane_start</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+			<frame>
+				<startTime>280.200012</startTime>
+				<duration>0.633331</duration>
+				<sequenceSound>hangar_v4_overhead_crane_start</sequenceSound>
+				<type>one_shot</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>344.066681</duration>
+				<value>Root|Scene Root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>19.566299 0.571577 1.057793</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 2</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/hangar_v4/v4_lamp_red.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>344.066681</duration>
+				<value>Root|Scene Root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-20.309937 0.571577 1.057793</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.500000 1.500000 1.500000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

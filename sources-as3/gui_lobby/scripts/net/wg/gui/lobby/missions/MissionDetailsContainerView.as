@@ -81,13 +81,15 @@ package net.wg.gui.lobby.missions
       
       override protected function updateLayout() : void
       {
-         var _loc1_:int = 0;
+         var _loc3_:int = 0;
          super.updateLayout();
-         _loc1_ = _height / MIN_HEIGHT * MIN_CMP_PADDING;
-         var _loc2_:int = view.height + BTN_CLOSE_HEIGHT + NUM_BTN_HEIGHT + (_loc1_ << 1);
-         btnClose.y = (height - _loc2_ - TOP_PANEL_HEIGHT >> 1) + TOP_PANEL_HEIGHT;
+         var _loc1_:uint = _height - _paddings.y;
+         var _loc2_:uint = _paddings.y > 0 ? uint(0) : uint(TOP_PANEL_HEIGHT);
+         _loc3_ = _height / MIN_HEIGHT * MIN_CMP_PADDING;
+         var _loc4_:int = view.height + BTN_CLOSE_HEIGHT + NUM_BTN_HEIGHT + (_loc3_ << 1);
+         btnClose.y = Math.max((_loc1_ - _loc4_ - _loc2_ >> 1) + _loc2_,_paddings.y);
          btnClose.x = (_width + VIEW_WIDTH >> 1) - BTN_CLOSE_WIDTH;
-         view.y = btnClose.y + BTN_CLOSE_HEIGHT + _loc1_ >> 0;
+         view.y = btnClose.y + BTN_CLOSE_HEIGHT + _loc3_ >> 0;
          this._vehicleSelector.x = view.x - (this._vehicleSelector.width >> 1) + VEHICLE_SELECTOR_LEFT;
          this._vehicleSelector.y = view.y + VEHICLE_SELECTOR_TOP;
       }

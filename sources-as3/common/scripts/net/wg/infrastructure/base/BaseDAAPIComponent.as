@@ -44,6 +44,7 @@ package net.wg.infrastructure.base
          try
          {
             dispatchEvent(new LifeCycleEvent(LifeCycleEvent.ON_BEFORE_DISPOSE));
+            this._isDAAPIInited = false;
             dispose();
             if(parent)
             {
@@ -67,7 +68,7 @@ package net.wg.infrastructure.base
          {
             return null;
          }
-         return new <Rectangle>[getBounds(App.stage)];
+         return new <Rectangle>[new Rectangle(0,0,App.appWidth,App.appHeight)];
       }
       
       public function get disposed() : Boolean

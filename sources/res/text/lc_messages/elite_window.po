@@ -16,11 +16,15 @@ msgstr "Affirmative!"
 msgid "elite_window/buttons/post_progression"
 msgstr "To Modification"
 
+msgid "elite_window/buttons/vanity_progression"
+msgstr "To Elite Rewards"
+
 msgid "elite_window/elite/description"
 msgstr ""
-"Given to a vehicle with all available modules and technical branches "
-"researched. Combat XP earned in Elite vehicles can either be converted to "
-"Free XP for gold or used to accelerate crew training."
+"Elite status is given to vehicles with all available modules, Upgrades, and "
+"technical branches researched, including the vehicle(s) from the subsequent "
+"tier. Combat XP earned in Elite vehicles can either be converted to Free XP "
+"for gold or used to accelerate crew training."
 
 msgid "elite_window/elite/title"
 msgstr "Elite Status"
@@ -40,3 +44,11 @@ msgstr "Elite System"
 
 msgid "elite_window/title"
 msgstr "ELITE STATUS ACQUIRED"
+
+msgid "elite_window/vanity_progression/description"
+msgstr ""
+"Receive exclusive rewards for Tier XI vehicles including a unique volumetric"
+" style, Stat Tracker, and gun sleeve!"
+
+msgid "elite_window/vanity_progression/title"
+msgstr "Elite Rewards system now available"

@@ -13,6 +13,7 @@ package net.wg.gui.lobby.personalMissions.components.operationsHeader
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.ICommons;
+   import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.gfx.TextFieldEx;
@@ -27,6 +28,8 @@ package net.wg.gui.lobby.personalMissions.components.operationsHeader
       private static const LABEL_TF_HEIGHT:int = 23;
       
       private static const LABEL_TF_Y:int = 58;
+      
+      private static const BTN_AWARD_TOP_MARGIN_WITHOUT_LABEL:int = 7;
        
       
       public var titleTF:TextField;
@@ -85,7 +88,14 @@ package net.wg.gui.lobby.personalMissions.components.operationsHeader
             this.labelTF.x = width - this.labelTF.width >> 1;
             this.labelTF.y = !!this._isCompactLayout ? Number(this.titleTF.y) : Number(LABEL_TF_Y);
             this.awardsButton.x = width - this.awardsButton.width >> 1;
-            this.awardsButton.y = this.labelTF.y + LABEL_TF_HEIGHT + BTN_AWARD_TOP_MARGIN ^ 0;
+            if(StringUtils.isNotEmpty(this._data.label))
+            {
+               this.awardsButton.y = this.labelTF.y + LABEL_TF_HEIGHT + BTN_AWARD_TOP_MARGIN ^ 0;
+            }
+            else
+            {
+               this.awardsButton.y = this.labelTF.y + BTN_AWARD_TOP_MARGIN_WITHOUT_LABEL ^ 0;
+            }
          }
       }
       

@@ -37,7 +37,7 @@ class Comp7OfferTokenListener(BaseReminderListener, Notifiable):
     def start(self, model):
         result = super(Comp7OfferTokenListener, self).start(model)
         if result:
-            self.__comp7Controller.onComp7ConfigChanged += self.__onComp7ConfigChanged
+            self.__comp7Controller.onModeConfigChanged += self.__onComp7ConfigChanged
             if self.__guiLoader.windowsManager is not None:
                 self.__guiLoader.windowsManager.onViewStatusChanged += self.__onViewStatusChanged
             g_clientUpdateManager.addCallbacks({'tokens': self.__onTokensUpdate})
@@ -46,7 +46,7 @@ class Comp7OfferTokenListener(BaseReminderListener, Notifiable):
 
     def stop(self):
         super(Comp7OfferTokenListener, self).stop()
-        self.__comp7Controller.onComp7ConfigChanged -= self.__onComp7ConfigChanged
+        self.__comp7Controller.onModeConfigChanged -= self.__onComp7ConfigChanged
         if self.__guiLoader.windowsManager is not None:
             self.__guiLoader.windowsManager.onViewStatusChanged -= self.__onViewStatusChanged
         g_clientUpdateManager.removeObjectCallbacks(self)

@@ -95,7 +95,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_9 armor_4</primaryArmor>
 		<weight>7600</weight>
-		<maxHealth>340</maxHealth>
+		<maxHealth>344</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>100</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -2161,9 +2161,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5000</weight>
-			<maxLoad>15900</maxLoad>
 			<terrainResistance>
-				1.1 1.2 2.1
+				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>16000</brakeForce>
@@ -2171,7 +2170,7 @@
 			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.26
+					0.22
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
@@ -3951,7 +3950,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5000</weight>
-			<maxLoad>18000</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
@@ -3961,7 +3959,7 @@
 			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.24
+					0.2
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
@@ -5738,6 +5736,12 @@
 			<tags/>
 			<level>2</level>
 			<price>840</price>
+			<unlocks>
+				<turret>
+					Turret_2_Ch08_Type97_Chi_Ha
+					<cost>350</cost>
+				</turret>
+			</unlocks>
 			<armor>
 				<armor_1>35</armor_1>
 				<armor_2>25</armor_2>
@@ -5755,7 +5759,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1300</weight>
-			<maxHealth>65</maxHealth>
+			<maxHealth>66</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -5765,7 +5769,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>310</circularVisionRadius>
+			<circularVisionRadius>320</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>50</maxHealth>
 				<maxRegenHealth>25</maxRegenHealth>
@@ -5775,112 +5779,6 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_57mm_Gun_Type_97>
-					shared
-					<maxAmmo>210</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 9 1 9</maxPitch>
-					</pitchLimits>
-					<unlocks>
-						<gun>
-							_45mm_20K
-							<cost>125</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							30
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_3>
-							12
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.46
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>3</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.28
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/chinese/Ch08_Type97_Chi_Ha/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/chinese/Ch08_Type97_Chi_Ha/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/chinese/Ch08_Type97_Chi_Ha/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.038114 -0.027153 0.360474</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.079007 0.023409 0.055575</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.03821 0.021033 0.360473
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.43 0.43 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							153.37 154.61
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 256</aoTextureSize>
-					</camouflage>
-				</_57mm_Gun_Type_97>
 				<_45mm_20K>
 					shared
 					<maxAmmo>240</maxAmmo>
@@ -5888,12 +5786,6 @@
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>0 9 1 9</maxPitch>
 					</pitchLimits>
-					<unlocks>
-						<turret>
-							Turret_2_Ch08_Type97_Chi_Ha
-							<cost>350</cost>
-						</turret>
-					</unlocks>
 					<armor>
 						<armor_1>
 							30
@@ -5906,13 +5798,10 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.43
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						2.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>2</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -5935,6 +5824,7 @@
 						0.29
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/chinese/Ch08_Type97_Chi_Ha/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_02.model</destroyed>
@@ -6778,7 +6668,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1839</weight>
-			<maxHealth>85</maxHealth>
+			<maxHealth>86</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -6802,101 +6692,13 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_57mm_Gun_Type_97>
-					shared
-					<maxAmmo>210</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 15 0.388889 15 0.402778 9 0.444444 9 0.458333 15 0.541667 15 0.555556 9 0.597222 9 0.611111 15 1 15
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							30
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.46
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>3</reloadTime>
-					<aimingTime>
-						1.8
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.28
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/chinese/Ch08_Type97_Chi_Ha/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/chinese/Ch08_Type97_Chi_Ha/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/chinese/Ch08_Type97_Chi_Ha/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.077479 0.045693 0.36047
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.018881 0.085417 0.015178</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.03821 0.021033 0.360473
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.25 0.25 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							153.37 154.61
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 256</aoTextureSize>
-					</camouflage>
-				</_57mm_Gun_Type_97>
 				<_45mm_20K>
 					shared
 					<maxAmmo>240</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 15 0.388889 15 0.402778 9 0.444444 9 0.458333 14 0.541667 14 0.555556 9 0.597222 9 0.611111 15 1 15
+							0.00000 15.00 0.42500 15.00 0.44167 9.00 0.46944 9.00 0.48333 14.00 0.53889 14.00 0.55278 9.00 0.59444 9.00 0.61111 15.00 1.00000 15.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6912,13 +6714,10 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						2.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>2</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.08
@@ -6941,6 +6740,7 @@
 						0.29
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/chinese/Ch08_Type97_Chi_Ha/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_04.model</destroyed>
@@ -7012,7 +6812,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 15 0.388889 15 0.402778 9 0.444444 9 0.458333 13 0.541667 13 0.555556 9 0.597222 9 0.611111 15 1 15
+							0.00000 15.00 0.42500 15.00 0.44167 9.00 0.46944 9.00 0.48333 14.00 0.53889 14.00 0.55278 9.00 0.59444 9.00 0.61111 15.00 1.00000 15.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7037,9 +6837,24 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.44
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+						<turretRotation>
+							0.14
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/chinese/Ch08_Type97_Chi_Ha/normal/lod0/Gun_05.model</undamaged>
 						<destroyed>vehicles/chinese/Ch08_Type97_Chi_Ha/crash/lod0/Gun_05.model</destroyed>
@@ -7944,15 +7759,6 @@
 		</Turret_2_Ch08_Type97_Chi_Ha>
 	</turrets0>
 	<engines>
-		<_Type97>
-			shared
-			<unlocks>
-				<engine>
-					_Type100_W
-					<cost>350</cost>
-				</engine>
-			</unlocks>
-		</_Type97>
 		<_Type100_W>
 			shared
 			<unlocks>
@@ -7968,39 +7774,17 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<_Type94_Hei>
-			shared
-			<unlocks>
-				<radio>
-					_Type96_Bo
-					<cost>1400</cost>
-				</radio>
-			</unlocks>
-		</_Type94_Hei>
 		<_Type96_Bo>shared</_Type96_Bo>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<_Type97>
-					<smplEnginePower>
-						179.7378
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>40</smplFwMaxSpeed>
-				</_Type97>
 				<_Type100_W>
-					<smplEnginePower>
-						211.4562
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>260</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</_Type100_W>
 				<_Type100_A>
-					<smplEnginePower>
-						253.7475
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>280</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</_Type100_A>
 			</engines>
@@ -8009,19 +7793,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.16905
+								0.15295
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

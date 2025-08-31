@@ -15,7 +15,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.06
+			0.067
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -95,7 +95,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22550</weight>
-		<maxHealth>960</maxHealth>
+		<maxHealth>1080</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2199,14 +2199,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11500</weight>
-			<maxLoad>45500</maxLoad>
 			<terrainResistance>
-				1.1 1.7 2.6
+				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>32</rotationSpeed>
+			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.23
@@ -4637,14 +4636,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11500</weight>
-			<maxLoad>47400</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>35</rotationSpeed>
+			<rotationSpeed>40</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.21
@@ -7097,7 +7095,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7200</weight>
-			<maxHealth>230</maxHealth>
+			<maxHealth>220</maxHealth>
 			<rotationSpeed>38</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -7157,7 +7155,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.375 8 0.388889 6 0.422222 4 0.577778 4 0.611111 6 0.625 8 1 8
+							0.00000 8.00 0.37500 8.00 0.42222 4.00 0.57778 4.00 0.62500 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8315,7 +8313,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>240</maxHealth>
+			<maxHealth>270</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -8379,7 +8377,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.375 8 0.388889 6 0.422222 4 0.577778 4 0.611111 6 0.625 8 1 8
+							0.00000 8.00 0.37500 8.00 0.42222 4.00 0.57778 4.00 0.62500 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8527,7 +8525,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.375 8 0.388889 6 0.422222 4 0.577778 4 0.611111 6 0.625 8 1 8
+							0.00000 8.00 0.37500 8.00 0.42222 4.00 0.57778 4.00 0.62500 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -9703,13 +9701,13 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.2093
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.13685
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>

@@ -593,6 +593,9 @@ msgstr "Onslaught"
 msgid "bonusType/44"
 msgstr "Warm-Up"
 
+msgid "bonusType/49"
+msgstr "Onslaught Light"
+
 msgid "bonusType/5"
 msgstr "Special Battle"
 
@@ -878,6 +881,12 @@ msgstr "SPGs"
 msgid "carousel_tank_filter/all"
 msgstr "All"
 
+msgid "carousel_tank_filter/assault"
+msgstr "Assault"
+
+msgid "carousel_tank_filter/break"
+msgstr "Breakthrough"
+
 msgid "carousel_tank_filter/canInstallAttachments"
 msgstr "3D attachments"
 
@@ -895,6 +904,18 @@ msgstr "3D styles"
 
 msgid "carousel_tank_filter/ready"
 msgstr "Primary only"
+
+msgid "carousel_tank_filter/sniper"
+msgstr "Sniper"
+
+msgid "carousel_tank_filter/support"
+msgstr "Support"
+
+msgid "carousel_tank_filter/universal"
+msgstr "Versatile"
+
+msgid "carousel_tank_filter/wheeled"
+msgstr "Wheeled"
 
 msgid "centerIsAvailable"
 msgstr "All servers are available again."
@@ -1009,6 +1030,9 @@ msgstr "Copy to clipboard"
 
 msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "Create a Steel Hunter Platoon"
+
+msgid "contextMenu/createComp7LightSquad"
+msgstr "Create Onslaught Light Platoon"
 
 msgid "contextMenu/createComp7Squad"
 msgstr "Create Onslaught Platoon"
@@ -1229,6 +1253,9 @@ msgstr "Player's Service Record"
 msgid "contextMenu/userVehicleCompare"
 msgstr "Add to Comparison"
 
+msgid "contextMenu/vehSkillTree"
+msgstr "To Upgrades"
+
 msgid "contextMenu/vehicleBuy"
 msgstr "To purchase"
 
@@ -1236,10 +1263,10 @@ msgid "contextMenu/vehicleCheck"
 msgstr "Set as Primary"
 
 msgid "contextMenu/vehicleInfo"
-msgstr "Vehicle details"
+msgstr "About Vehicle"
 
 msgid "contextMenu/vehicleInfoEx"
-msgstr "Vehicle details"
+msgstr "About Vehicle"
 
 msgid "contextMenu/vehiclePostProgression"
 msgstr "To Field Modification"
@@ -1289,11 +1316,11 @@ msgstr "BONDS FOR EVENTS"
 
 msgid "crystals/info/tab/earn/level/description"
 msgstr ""
-"Bonds are earned in %(level10) vehicles and %(level9) Premium vehicles\n"
-"with an active indicator in the following modes:"
+"Bonds are earned in %(level10And11) researchable vehicles and %(level9) Premium vehicles\n"
+"with an active indicator in the following mode:"
 
-msgid "crystals/info/tab/earn/level/descriptionContent/level10"
-msgstr "Tier X"
+msgid "crystals/info/tab/earn/level/descriptionContent/level10And11"
+msgstr "Tier X-XI"
 
 msgid "crystals/info/tab/earn/level/descriptionContent/level9"
 msgstr "Tier IX"
@@ -1301,11 +1328,6 @@ msgstr "Tier IX"
 msgid "crystals/info/tab/earn/level/mod/0"
 msgstr ""
 "Random\n"
-"Battle"
-
-msgid "crystals/info/tab/earn/level/mod/1"
-msgstr ""
-"Grand\n"
 "Battle"
 
 msgid "crystals/info/tab/earn/level/title"
@@ -1345,12 +1367,9 @@ msgstr "Victory"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
-"Fight in Random and Grand Battles in vehicles with an active indicator for "
-"earning bonds. The higher your position in the battle results by base "
-"experience earned, the more bonds you receive for the battle."
-
-msgid "crystals/info/tab/get/general"
-msgstr "GRAND BATTLE"
+"Fight in Random Battles in vehicles with an active indicator for earning "
+"bonds. The higher your position in the battle results by base experience "
+"earned, the more bonds you receive for the battle."
 
 msgid "crystals/info/tab/get/random"
 msgstr "RANDOM BATTLE"
@@ -1620,9 +1639,6 @@ msgstr "Server limit"
 
 msgid "currentVehicleStatus/subscription_suspended"
 msgstr "WoT Plus subscription suspended"
-
-msgid "currentVehicleStatus/tooHeavy"
-msgstr "Vehicle overloaded"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "Ready for battle!"
@@ -1943,9 +1959,7 @@ msgid "descriptions/vehicle"
 msgstr "%(weight)s t; Armor: up to %(hullArmor)s mm; Gun %(caliber)s mm"
 
 msgid "descriptions/vehicleChassis"
-msgstr ""
-"Traverse Speed: up to %(rotationSpeed)s deg/s\n"
-"Load Limit: %(maxLoad)s t"
+msgstr "Traverse Speed: up to %(rotationSpeed)s deg/s"
 
 msgid "descriptions/vehicleEngine"
 msgstr ""
@@ -1986,9 +2000,7 @@ msgstr ""
 "View Range: aprx %(circularVisionRadius)s m"
 
 msgid "descriptions/vehicleWheeledChassis"
-msgstr ""
-"Maximum Wheel Turning Angle: up to %(maxSteeringLockAngle)s deg\n"
-"Load Limit: %(maxLoad)s t"
+msgstr "Maximum Wheel Turning Angle: up to %(maxSteeringLockAngle)s deg"
 
 msgid "disconnect/codes/0"
 msgstr "<?empty?>"
@@ -2108,8 +2120,9 @@ msgstr "Bonus %(paramName)s"
 
 msgid "extraParams/multiDesc"
 msgstr ""
-"The total bonus is calculated multiplicatively and may vary from nominal "
-"values."
+"The total bonus is calculated using both additive and multiplicative "
+"modifiers, so it may end up either higher or lower than the values indicated"
+" here."
 
 msgid "extraParams/name/artNotificationDelayFactor"
 msgstr ""
@@ -2288,10 +2301,14 @@ msgstr ""
 "more accurate the gun."
 
 msgid "extraParams/name/vehicleGunShotDispersionChassisRotation"
-msgstr "This parameter shows the dispersion during hull traverse."
+msgstr ""
+"This parameter shows the dispersion during hull traverse. The lower the "
+"value, the more accurate the gun."
 
 msgid "extraParams/name/vehicleGunShotDispersionTurretRotation"
-msgstr "This parameter shows the dispersion during gun traverse."
+msgstr ""
+"This parameter shows the dispersion during gun traverse. The lower the "
+"value, the more accurate the gun."
 
 msgid "extraParams/name/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""
@@ -2709,6 +2726,9 @@ msgstr "I"
 msgid "header/level/10"
 msgstr "X"
 
+msgid "header/level/11"
+msgstr "XI"
+
 msgid "header/level/2"
 msgstr "II"
 
@@ -2823,9 +2843,6 @@ msgstr "Extend"
 msgid "headerButtons/barracks"
 msgstr "Barracks"
 
-msgid "headerButtons/battle"
-msgstr "Battle!"
-
 msgid "headerButtons/battle/availableSince"
 msgstr "Available from: %(datetime)s"
 
@@ -2837,6 +2854,9 @@ msgstr "Available through: %(datetime)s"
 
 msgid "headerButtons/battle/availableUntilSoon"
 msgstr "Finish time: %(time)s"
+
+msgid "headerButtons/battle/button/battle"
+msgstr "Battle!"
 
 msgid "headerButtons/battle/menu/attention/lowPerformance"
 msgstr "Low Performance"
@@ -2898,6 +2918,9 @@ msgstr "Hunter Platoon"
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Create a Platoon of 2 players"
 
+msgid "headerButtons/battle/types/comp7LightSquad"
+msgstr "Create Onslaught Light Platoon"
+
 msgid "headerButtons/battle/types/comp7Squad"
 msgstr "Create Onslaught Platoon"
 
@@ -2924,6 +2947,9 @@ msgstr "Team Training"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Frontline"
+
+msgid "headerButtons/battle/types/event"
+msgstr "Event Battle"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Event Platoon"
@@ -3124,9 +3150,7 @@ msgid "headerButtons/btnLabel/gold"
 msgstr "Purchase"
 
 msgid "headerButtons/btnLabel/premShop"
-msgstr ""
-"Premium\n"
-"Shop"
+msgstr "Premium Shop"
 
 msgid "headerButtons/btnLabel/premium"
 msgstr "Premium"
@@ -3150,10 +3174,10 @@ msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/body"
-msgstr "You can continue fighting in other modes."
+msgstr "You are temporarily blocked from this mode."
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/header"
-msgstr "You are temporarily blocked from this mode."
+msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/body"
 msgstr "The vehicle you have selected can only be used in Onslaught mode."
@@ -3162,34 +3186,59 @@ msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/body"
-msgstr "Ceasefire is in effect on this server. Please select another server."
+msgstr ""
+"This mode is currently unavailable on all servers. Availability details are "
+"listed below."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/header"
 msgstr "Unable to Enter Battle"
 
-msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
+msgid "headerButtons/fightBtn/tooltip/comp7LightDisabled/body"
+msgstr "Ceasefire is in effect on this server. Please select another server."
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightDisabled/header"
+msgstr "Unable to Enter Battle"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightNotSet/body"
 msgstr "This mode is not available on the selected server"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightNotSet/header"
+msgstr "Unable to Enter Battle"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/body"
+msgstr "No suitable Tier %(levels)s vehicles in the Garage"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/delimiter"
+msgstr ", "
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/header"
+msgstr "Unable to Enter Battle"
+
+msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
+msgstr ""
+"This mode is currently unavailable on your server. Server details are listed"
+" below. "
 
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/body"
-msgstr "Mode unavailable: Database error."
+msgstr "This mode is unavailable due to a database error."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/body"
-msgstr "Mode unavailable: Season has not started"
+msgstr "Season has not started."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "Unable to Enter Battle"
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
 msgstr ""
-"The calculation of the rating based on the results of the Qualification may "
-"take several minutes. After that, you will be assigned a rank and you will "
-"be able to continue playing in Onslaught."
+"It may take up to five minutes to calculate your rating based on the "
+"Qualification results. After receiving a rank, you can continue to play "
+"Onslaught."
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/header"
 msgstr "Unable to Enter Battle"
@@ -3362,6 +3411,12 @@ msgstr "Menu"
 msgid "headerButtons/missions"
 msgstr "Missions"
 
+msgid "headerButtons/modeSelector"
+msgstr "Battle Modes"
+
+msgid "headerButtons/navigation/back"
+msgstr "Back"
+
 msgid "headerButtons/notReady"
 msgstr "Not ready"
 
@@ -3375,7 +3430,7 @@ msgid "headerButtons/rating"
 msgstr "Rating"
 
 msgid "headerButtons/ready"
-msgstr "Ready!"
+msgstr "Ready"
 
 msgid "headerButtons/shop"
 msgstr "Store"
@@ -3686,6 +3741,9 @@ msgstr "Tier I"
 msgid "levels/10"
 msgstr "Tier X"
 
+msgid "levels/11"
+msgstr "Tier XI"
+
 msgid "levels/2"
 msgstr "Tier II"
 
@@ -3718,6 +3776,9 @@ msgstr "Tier I"
 
 msgid "levels/roman/10"
 msgstr "Tier X"
+
+msgid "levels/roman/11"
+msgstr "Tier XI"
 
 msgid "levels/roman/2"
 msgstr "Tier II"
@@ -3818,6 +3879,9 @@ msgstr "Onslaught"
 msgid "loading/battleTypes/34"
 msgstr "Onslaught Training"
 
+msgid "loading/battleTypes/35"
+msgstr "Onslaught Light"
+
 msgid "loading/battleTypes/4"
 msgstr "Battle Training"
 
@@ -3912,6 +3976,9 @@ msgid "loading/battleTypes/desc/33"
 msgstr " "
 
 msgid "loading/battleTypes/desc/34"
+msgstr " "
+
+msgid "loading/battleTypes/desc/35"
 msgstr " "
 
 msgid "loading/battleTypes/desc/4"
@@ -4328,20 +4395,11 @@ msgstr "Demount"
 msgid "moduleFits/removeToolTip"
 msgstr " "
 
-msgid "moduleFits/remove_too_heavy"
-msgstr "Modules are too heavy."
-
 msgid "moduleFits/similar_device_already_installed"
 msgstr "?empty?"
 
 msgid "moduleFits/title"
 msgstr "%(moduleName)s for the %(vehicleName)s"
-
-msgid "moduleFits/too_heavy"
-msgstr "Insufficient load capacity"
-
-msgid "moduleFits/too_heavy_chassis"
-msgstr "Modules are too heavy."
 
 msgid "moduleFits/unlock_error"
 msgstr "Research"
@@ -4547,6 +4605,10 @@ msgstr "Flight Time"
 msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "Top Speed"
 
+msgid "moduleInfo/params/guaranteedDamage/footnote"
+msgstr ""
+"The shell deals a small percentage of damage if armor is not penetrated."
+
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "Weight"
 
@@ -4573,9 +4635,6 @@ msgstr "Hit Points"
 
 msgid "moduleInfo/params/maxHullHealth"
 msgstr "Hit Points"
-
-msgid "moduleInfo/params/maxLoad"
-msgstr "Load Limit"
 
 msgid "moduleInfo/params/maxShotDistance"
 msgstr "Firing Range"
@@ -4839,6 +4898,9 @@ msgstr "Medium"
 msgid "prebattle/already_in_awaiting_battle"
 msgstr "You are already awaiting a battle."
 
+msgid "prebattle/battleReady"
+msgstr "Battle ready!"
+
 msgid "prebattle/battleRoyale/solo"
 msgstr "For playing Solo"
 
@@ -4904,6 +4966,9 @@ msgstr "Players in queue:"
 
 msgid "prebattle/rts/tankLabel"
 msgstr "Your role:"
+
+msgid "prebattle/searchPlayers"
+msgstr "Search players"
 
 msgid "prebattle/sideA"
 msgstr "Side A:"
@@ -5340,6 +5405,9 @@ msgstr "credits"
 
 msgid "repair/repairstatus"
 msgstr "Repairs:"
+
+msgid "report_content"
+msgstr "Report Content"
 
 msgid "research/labels/button/addToCompare"
 msgstr "Add to Comparison"
@@ -6089,10 +6157,10 @@ msgid "tankCarousel/vehicleStates/buySlot"
 msgstr "Purchase Slot"
 
 msgid "tankCarousel/vehicleStates/buyTank"
-msgstr "Purchase a vehicle"
+msgstr "Purchase Vehicle"
 
 msgid "tankCarousel/vehicleStates/buyTankEmptyCount"
-msgstr "Vacant Slots: %(count)d"
+msgstr "Vacant slots: %(count)d"
 
 msgid "tankCarousel/vehicleStates/clanLocked"
 msgstr "?empty?"
@@ -6187,9 +6255,6 @@ msgstr "Server limit"
 msgid "tankCarousel/vehicleStates/subscription_suspended"
 msgstr "Suspended"
 
-msgid "tankCarousel/vehicleStates/tooHeavy"
-msgstr "Vehicle overloaded"
-
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Unavailable"
 
@@ -6220,8 +6285,34 @@ msgstr "Rent a Vehicle"
 msgid "tankCarousel/wotPlusSelectionPending"
 msgstr "Rental Pending"
 
+msgid "tank_params/accuracyDispersionCap"
+msgstr "Dispersion at Maximum Accuracy Level"
+
+msgid "tank_params/accuracyDispersionPerLevel"
+msgstr "Dispersion at 100 m per Accuracy Level"
+
+msgid "tank_params/accuracyLevelGainTime"
+msgstr "Time to Gain Accuracy Level"
+
+msgid "tank_params/accuracySpeedLimit"
+msgstr "Speed Limit"
+
+msgid "tank_params/accuracyWhileMovingDispersionCap"
+msgstr "Dispersion on Movement/Traverse at Maximum Accuracy Level"
+
+msgid "tank_params/activeCoincideceShootingCharge"
+msgstr ""
+"Coincidence Electromechanical Sight Charge (% per hit) (Engagement mode, "
+"active)"
+
 msgid "tank_params/aimingTime"
 msgstr "Aiming Time"
+
+msgid "tank_params/aimingTimeCoincidenceElectromechanicalSight"
+msgstr "Aiming Time (s) (Coincidence Electromechanical Sight)"
+
+msgid "tank_params/aimingTimeTurbo"
+msgstr "Aiming Time (s) (Turbo mode)"
 
 msgid "tank_params/attainableSpeed"
 msgstr "Speed After 5 Seconds of Acceleration"
@@ -6247,6 +6338,12 @@ msgstr "Damage per Second"
 msgid "tank_params/avgPiercingPower"
 msgstr "Average Penetration"
 
+msgid "tank_params/boosterCoolingTime"
+msgstr "Booster Cooling Time"
+
+msgid "tank_params/boosterDuration"
+msgstr "Booster Duration"
+
 msgid "tank_params/burstFireRate"
 msgstr "Shell Container"
 
@@ -6255,6 +6352,18 @@ msgstr "(s/quantity/quantity)"
 
 msgid "tank_params/chargeTime"
 msgstr "Salvo Preparation"
+
+msgid "tank_params/chargeableBurstDispersion"
+msgstr "Second Shot Dispersion at 100 m"
+
+msgid "tank_params/chargeableBurstPenetrationCount"
+msgstr "Penetrations to Activate Mode"
+
+msgid "tank_params/chargeableBurstReload"
+msgstr "Burst Mode Reload"
+
+msgid "tank_params/chargeableBurstSize"
+msgstr "Shells in Cassette"
 
 msgid "tank_params/chassisModuleRotationSpeed"
 msgstr "Traverse Speed"
@@ -6280,17 +6389,38 @@ msgstr "(magazine/shell or container/quantity)"
 msgid "tank_params/cnt"
 msgstr "(item(s))"
 
+msgid "tank_params/coincidenceElectromechanicalSightDuration"
+msgstr "Coincidence Electromechanical Sight Duration"
+
+msgid "tank_params/concentrationModeCooldown"
+msgstr "Cooldown"
+
+msgid "tank_params/concentrationModeDuration"
+msgstr "Duration"
+
 msgid "tank_params/continuousShotsPerMinute"
 msgstr "Rate of Continuous Fire"
 
 msgid "tank_params/damage"
 msgstr "Standard Shell Damage"
 
+msgid "tank_params/designatorCooldownS"
+msgstr "Cooldown"
+
+msgid "tank_params/designatorInitialCooldownS"
+msgstr "Initial Cooldown"
+
+msgid "tank_params/designatorMarkDurationS"
+msgstr "Mark Duration"
+
+msgid "tank_params/designatorMarkedEnemiesAdditionalDamage"
+msgstr "Additional Damage to Marked Enemies"
+
+msgid "tank_params/dispersionAt100mCoincidenceElectromechanicalSight"
+msgstr "Dispersion at 100 m (%) (Coincidence Electromechanical Sight)"
+
 msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "Gun cooling time"
-
-msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
-msgstr "Gun cooling time after firing"
 
 msgid "tank_params/enginePower"
 msgstr "Engine Power"
@@ -6298,17 +6428,50 @@ msgstr "Engine Power"
 msgid "tank_params/enginePowerPerTon"
 msgstr "Specific Power"
 
+msgid "tank_params/enginePowerWithBoosters"
+msgstr "Engine Power (With Boosters)"
+
+msgid "tank_params/engineTurboPowerCap"
+msgstr "Engine Power (h.p.) (Turbo mode)"
+
 msgid "tank_params/explosionRadius"
 msgstr "Damage Radius"
+
+msgid "tank_params/extendedTitle/dualAccuracyCoolingDelay"
+msgstr "Gun cooling time after firing"
 
 msgid "tank_params/extraRepairSpeed"
 msgstr "to repair speed"
 
+msgid "tank_params/extraShotClipReloadTime"
+msgstr "Penalty to Reload"
+
 msgid "tank_params/faceFrontBoardInMM"
 msgstr "(front/sides/rear mm)"
 
+msgid "tank_params/factor"
+msgstr "(%)"
+
 msgid "tank_params/forwardMaxSpeed"
 msgstr "Top Speed"
+
+msgid "tank_params/furyMaxReloadEffAvgDpm"
+msgstr "Average DPM at Maximum Reload Efficiency Level"
+
+msgid "tank_params/furyMaxReloadEfficiencyLevel"
+msgstr "Μaximum Reload Efficiency Level"
+
+msgid "tank_params/furyReloadEfficiencyLevelDuration"
+msgstr "Reload Efficiency Level Duration"
+
+msgid "tank_params/furyReloadEfficiencyLevelPerDestruction"
+msgstr "Reload Efficiency Level per Destruction"
+
+msgid "tank_params/furyReloadEfficiencyLevelPerHit"
+msgstr "Reload Efficiency Level per Hit"
+
+msgid "tank_params/furyReloadSpeedBonusPerEfficiencyLevel"
+msgstr "Reload Speed Bonus per Efficiency Level"
 
 msgid "tank_params/gps"
 msgstr "(deg/s)"
@@ -6319,14 +6482,38 @@ msgstr "(deg)"
 msgid "tank_params/gunModuleAvgDamageList"
 msgstr "Average Damage"
 
+msgid "tank_params/gunTraverseDispersionTurbo"
+msgstr "Dispersion During Gun Traverse (%) (Turbo mode)"
+
 msgid "tank_params/gunYawLimits"
 msgstr "Gun Traverse Limits"
 
 msgid "tank_params/h"
 msgstr "(rounds)"
 
+msgid "tank_params/heatAvgDmgPerLvl"
+msgstr "Average Damage per Heat Level"
+
+msgid "tank_params/heatChargeOverheatDuration"
+msgstr "Charge Overheating Duration"
+
+msgid "tank_params/heatTimeBeforeOverheat"
+msgstr "Time Before Charge Overheating"
+
+msgid "tank_params/heatTimeToReachLevel"
+msgstr "Time to Reach Heat Level"
+
 msgid "tank_params/hullArmor"
 msgstr "Hull Armor"
+
+msgid "tank_params/hullTraverseDispersionTurbo"
+msgstr "Dispersion During Hull Traverse (%) (Turbo mode)"
+
+msgid "tank_params/improvedDamageEnemiesByRamming"
+msgstr "Ramming Damage Caused"
+
+msgid "tank_params/improvedDamageEnemiesChassisByRamming"
+msgstr "Ramming Damage Caused to Suspension"
 
 msgid "tank_params/increaseHealth"
 msgstr "Durability Increase"
@@ -6337,11 +6524,29 @@ msgstr "Moving Vehicle (%)"
 msgid "tank_params/invisibilityStillFactor"
 msgstr "Stationary Vehicle (%)"
 
+msgid "tank_params/ionAfterburnerActiveTurboCharge"
+msgstr "Ion-Discharge Afterburner Charge (% per s) (Turbo mode, active)"
+
+msgid "tank_params/ionAfterburnerDuration"
+msgstr "Ion-Discharge Afterburner Duration"
+
+msgid "tank_params/ionAfterburnerDurationEnginePower"
+msgstr "Engine Power (h.p.) (Ion-Discharge Afterburner)"
+
+msgid "tank_params/ionAfterburnerDurationSpeedCap"
+msgstr "Top Speed/Reverse Speed (km/h) (Ion-Discharge Afterburner)"
+
+msgid "tank_params/ionAfterburnerPassiveTurboCharge"
+msgstr "Ion-Discharge Afterburner Charge (% per s) (Turbo mode, passive)"
+
 msgid "tank_params/kg"
 msgstr "(kg)"
 
 msgid "tank_params/m"
 msgstr "(m)"
+
+msgid "tank_params/maxAccuracyLevel"
+msgstr "Maximum Accuracy Level"
 
 msgid "tank_params/maxAmmo"
 msgstr "Ammunition"
@@ -6354,6 +6559,9 @@ msgstr "Maximum Wheel Turning Angle"
 
 msgid "tank_params/mm"
 msgstr "(mm)"
+
+msgid "tank_params/movementTraverseDispersionTurbo"
+msgstr "Dispersion During Movement (%) (Turbo mode)"
 
 msgid "tank_params/mph"
 msgstr "(km/h)"
@@ -6376,20 +6584,67 @@ msgstr "(h.p.)"
 msgid "tank_params/param12"
 msgstr "Terrain Crossing Capacity"
 
+msgid "tank_params/passiveCoincideceShootingCharge"
+msgstr ""
+"Coincidence Electromechanical Sight Charge (% per s) (Engagement mode, "
+"passive)"
+
+msgid "tank_params/perActivation"
+msgstr "(per activation)"
+
 msgid "tank_params/percent"
 msgstr " "
 
 msgid "tank_params/piercingPower"
 msgstr "Standard Shell Penetration"
 
+msgid "tank_params/pillboxHorizontalRotationSpeed"
+msgstr "Horizontal Traverse Speed"
+
+msgid "tank_params/pillboxSwitchOffTime"
+msgstr "Switching to Travel Mode"
+
+msgid "tank_params/pillboxSwitchOnTime"
+msgstr "Switching to Pillbox Mode"
+
+msgid "tank_params/pillboxVerticalRotationSpeed"
+msgstr "Vertical Traverse Speed"
+
 msgid "tank_params/pitchLimits"
 msgstr "Gun Depression/Elevation Angles"
+
+msgid "tank_params/powerModeDuration"
+msgstr "Maximum Performance"
+
+msgid "tank_params/powerModeThreshold"
+msgstr "Mode Activation"
+
+msgid "tank_params/preheatDispersionCap"
+msgstr "Dispersion at Full Preheat"
+
+msgid "tank_params/preheatDmgCap"
+msgstr "Average Damage at Full Preheat"
+
+msgid "tank_params/preheatSpeedLimit"
+msgstr "Speed Limit"
+
+msgid "tank_params/preheatTimeToFull"
+msgstr "Time to Full Preheat"
+
+msgid "tank_params/preheatTimeToZero"
+msgstr "Time to Zero Preheat"
+
+msgid "tank_params/preheatTransitionDelay"
+msgstr "Preheat Transition Delay"
 
 msgid "tank_params/pt"
 msgstr "(h.p./t)"
 
 msgid "tank_params/qpt"
 msgstr "(number/duration)"
+
+msgid "tank_params/quantity"
+msgstr "(quantity)"
 
 msgid "tank_params/radarCooldown"
 msgstr "Radio Detection Cooldown"
@@ -6399,6 +6654,12 @@ msgstr "Detection Radius"
 
 msgid "tank_params/radioDistance"
 msgstr "Signal Range"
+
+msgid "tank_params/reactivationDelay"
+msgstr "Reactivation Delay"
+
+msgid "tank_params/reactivationLimit"
+msgstr "Reactivation Limit"
 
 msgid "tank_params/relativeArmor"
 msgstr "Survivability"
@@ -6418,8 +6679,14 @@ msgstr "Spotting"
 msgid "tank_params/reloadTime"
 msgstr "Rate of Fire"
 
+msgid "tank_params/reloadTimeCoincidence"
+msgstr "Reload time (%) (Coincidence Electromechanical Sight)"
+
 msgid "tank_params/reloadTimeSecs"
 msgstr "Gun Loading"
+
+msgid "tank_params/reverseSpeedReductionWithBoosters"
+msgstr "Reverse Speed Reduction (With Boosters)"
 
 msgid "tank_params/rocketAccelerationEnginePower"
 msgstr "Engine Power (With Boosters)"
@@ -6432,6 +6699,18 @@ msgstr "Top Speed / Reverse Speed (With Boosters)"
 
 msgid "tank_params/s"
 msgstr "(s)"
+
+msgid "tank_params/secondaryAvgDamage"
+msgstr "Average Damage Per Shell"
+
+msgid "tank_params/secondaryAvgPiercingPower"
+msgstr "Average Shell Penetration"
+
+msgid "tank_params/secondaryReloadTimeSecs"
+msgstr "Auxiliary Weapon Loading"
+
+msgid "tank_params/secondaryTotalBurstSize"
+msgstr "Auxiliary Weapon Shells"
 
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Penetration:"
@@ -6451,6 +6730,12 @@ msgstr "(rounds/min)"
 msgid "tank_params/sqm"
 msgstr "(m²)"
 
+msgid "tank_params/stationaryReloadSwitchOffTime"
+msgstr "Reload Interruption"
+
+msgid "tank_params/stationaryReloadSwitchOnTime"
+msgstr "Reload Activation"
+
 msgid "tank_params/stunDurationList"
 msgstr "Stun Duration"
 
@@ -6459,6 +6744,9 @@ msgstr "Maximum Stun Duration"
 
 msgid "tank_params/stunMinDuration"
 msgstr "Minimum Stun Duration"
+
+msgid "tank_params/switchEngineModeBothModes"
+msgstr "Time to Switch Engine Modes"
 
 msgid "tank_params/switchOffTime"
 msgstr "Switching to Travel mode "
@@ -6474,6 +6762,15 @@ msgstr "(t)"
 
 msgid "tank_params/timeOfReaching"
 msgstr "Time to Travel 100 m"
+
+msgid "tank_params/topSpeedWithBoosters"
+msgstr "Top Speed (With Boosters)"
+
+msgid "tank_params/traverseSpeedReductionWithBoosters"
+msgstr "Traverse Speed Reduction (With Boosters)"
+
+msgid "tank_params/turboSpeedCap"
+msgstr "Top Speed/Reverse Speed (km/h) (Turbo mode)"
 
 msgid "tank_params/turboshaftBurstFireRate"
 msgstr "Shell Container (Turbo)"
@@ -6554,7 +6851,7 @@ msgid "tank_params/values/param12/value3"
 msgstr "poor"
 
 msgid "tank_params/vehicleWeight"
-msgstr "Weight/Load Limit"
+msgstr "Weight"
 
 msgid "tank_params/vpm"
 msgstr "(HP/min)"
@@ -7135,7 +7432,7 @@ msgid "vehicleInfo/params/twinGunTopSpeed"
 msgstr "Top Speed/Reverse Speed (Single Fire Mode/Salvo Fire Mode) (km/h)"
 
 msgid "vehicleInfo/params/vehicleWeight"
-msgstr "Weight/Load Limit (t)"
+msgstr "Weight (t)"
 
 msgid "vehicleInfo/params/wheeledSpeedModeSpeed"
 msgstr "Top Speed / Reverse Speed (Rapid, km/h)"

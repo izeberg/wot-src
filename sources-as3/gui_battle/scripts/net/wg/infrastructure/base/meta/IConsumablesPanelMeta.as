@@ -44,7 +44,7 @@ package net.wg.infrastructure.base.meta
       
       function as_hideGlow(param1:int) : void;
       
-      function as_setEquipmentActivated(param1:int, param2:Boolean, param3:Boolean) : void;
+      function as_setEquipmentActivated(param1:int, param2:Boolean) : void;
       
       function as_handleAsReplay() : void;
       

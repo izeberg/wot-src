@@ -5,6 +5,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
    import flash.filters.DropShadowFilter;
    import flash.text.TextField;
    import net.wg.data.constants.LobbyMetrics;
+   import net.wg.data.constants.Values;
    import net.wg.gui.components.assets.data.SeparatorConstants;
    import net.wg.gui.components.assets.interfaces.ISeparatorAsset;
    import net.wg.gui.interfaces.ISoundButtonEx;
@@ -42,7 +43,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
       
       private static const TUTORIAL_TEXT_STYLE_FILTER:DropShadowFilter = new DropShadowFilter(0,0,16711680,1,16,16,2,2);
       
-      private static const STATUS_TEXT_WIDTH:int = 495;
+      private static const STATUS_TEXT_WIDTH:int = 500;
        
       
       public var statusText:TextField = null;
@@ -87,6 +88,8 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
       override protected function draw() : void
       {
          var _loc1_:int = 0;
+         var _loc2_:int = 0;
+         var _loc3_:int = 0;
          super.draw();
          if(this._data != null && isInvalid(InvalidationType.DATA))
          {
@@ -101,7 +104,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
             if(this._data.btnVisible)
             {
                this.skipTaskBtn.label = this._data.btnLabel;
-               this.skipTaskBtn.tooltip = this._data.tooltip;
+               this.skipTaskBtn.tooltip = !!this._data.tooltipOnStatus ? Values.EMPTY_STR : this._data.tooltip;
             }
             this.statusText.filters = null;
             this.descrText.visible = false;
@@ -116,12 +119,21 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
             }
             invalidateSize();
          }
-         if(isInvalid(InvalidationType.SIZE))
+         if(this._data != null && isInvalid(InvalidationType.SIZE))
          {
             _loc1_ = width - LobbyMetrics.MIN_STAGE_WIDTH >> 1;
             this.shadow.width = this.shadow.x = width;
-            this.separator.x = _loc1_ - SEPARATORS_CENTER_SHIFT + SEPARATORS_X_SHIFT;
-            this.statusText.x = this.separator.x + SEPARATORS_CENTER_SHIFT + STATUS_TEXT_X_SHIFT;
+            if(this._data.sheetsBlockData.visible || this._data.tankgirlsBlockData.visible)
+            {
+               this.separator.x = _loc1_ - SEPARATORS_CENTER_SHIFT + SEPARATORS_X_SHIFT;
+               this.statusText.x = this.separator.x + SEPARATORS_CENTER_SHIFT + STATUS_TEXT_X_SHIFT;
+            }
+            else
+            {
+               _loc2_ = !!this.descrText.visible ? int(DESCR_X_SHIFT + this.descrText.textWidth) : int(0);
+               _loc3_ = !!this.skipTaskBtn.visible ? int(FREE_SHEET_BTN_X_SHIFT + this.skipTaskBtn.width) : int(0);
+               this.statusText.x = width - this.statusText.textWidth - _loc2_ - _loc3_ >> 1;
+            }
             if(this.descrText.visible)
             {
                this.descrText.x = this.statusText.x + this.statusText.textWidth + DESCR_X_SHIFT | 0;
@@ -130,8 +142,14 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
             {
                this.skipTaskBtn.x = this.statusText.numLines > 1 ? Number(FREE_SHEET_BTN_X_BIG) : Number(this.statusText.x + this.statusText.textWidth + FREE_SHEET_BTN_X_SHIFT | 0);
             }
-            this.sheetsBlock.x = this.statusText.x + FIRST_BLOCK_WIDTH + FREE_SHEET_BLOCK_X_SHIFT;
-            this.tankgirlsBlock.x = this.sheetsBlock.x - this.tankgirlsBlock.width >> 0;
+            if(this.sheetsBlock.visible)
+            {
+               this.sheetsBlock.x = this.statusText.x + FIRST_BLOCK_WIDTH + FREE_SHEET_BLOCK_X_SHIFT;
+            }
+            if(this.tankgirlsBlock.visible)
+            {
+               this.tankgirlsBlock.x = this.sheetsBlock.x - this.tankgirlsBlock.width >> 0;
+            }
          }
       }
       
@@ -170,6 +188,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
             this.sheetsBlock.update(this._data.sheetsBlockData);
             this.tankgirlsBlock.update(this._data.tankgirlsBlockData);
             invalidateData();
+            this.separator.visible = this._data.sheetsBlockData.visible || this._data.tankgirlsBlockData.visible;
          }
       }
       
@@ -180,12 +199,12 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
       
       private function onSkipTaskBtnClickHandler(param1:ButtonEvent) : void
       {
-         dispatchEvent(new StatusFooterEvent(StatusFooterEvent.SKIP_TASK));
+         dispatchEvent(new StatusFooterEvent(StatusFooterEvent.SKIP_TASK,this._data.btnID));
       }
       
       private function onStatusTextRollOverHandler(param1:MouseEvent) : void
       {
-         if(this._data && !this._data.btnVisible && StringUtils.isNotEmpty(this._data.tooltip))
+         if(this._data && (!this._data.btnVisible || this._data.tooltipOnStatus) && StringUtils.isNotEmpty(this._data.tooltip))
          {
             App.toolTipMgr.showComplex(this._data.tooltip);
          }

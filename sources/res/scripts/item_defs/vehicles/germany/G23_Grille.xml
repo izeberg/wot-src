@@ -101,12 +101,9 @@
 		<weight>4640</weight>
 		<maxHealth>252</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>80</maxHealth>
-			<maxRegenHealth>40</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>150</maxHealth>
+			<maxRegenHealth>113</maxRegenHealth>
+			<repairCost>5</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/german/G23_Grille/normal/lod0/Hull.model</undamaged>
@@ -2299,14 +2296,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Grilleketten_ausf_A>
-			<userString>#germany_vehicles:Grilleketten_ausf_A</userString>
+		<Chassis_G23_Grille>
+			<userString>#germany_vehicles:Chassis_G23_Grille</userString>
 			<tags/>
 			<level>4</level>
 			<price>3600</price>
 			<unlocks>
 				<chassis>
-					Grilleketten_ausf_B
+					Chassis_G23_Grille_2
 					<cost>2150</cost>
 				</chassis>
 			</unlocks>
@@ -2315,9 +2312,8 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>5000</weight>
-			<maxLoad>11700</maxLoad>
 			<terrainResistance>
-				1.3 1.5 2.5
+				1.2 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>11000</brakeForce>
@@ -3825,9 +3821,9 @@
 				8.39999962
 				<!--BW_String-->
 			</repairTime>
-		</Grilleketten_ausf_A>
-		<Grilleketten_ausf_B>
-			<userString>#germany_vehicles:Grilleketten_ausf_B</userString>
+		</Chassis_G23_Grille>
+		<Chassis_G23_Grille_2>
+			<userString>#germany_vehicles:Chassis_G23_Grille_2</userString>
 			<tags/>
 			<level>5</level>
 			<price>8600</price>
@@ -3836,7 +3832,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>5000</weight>
-			<maxLoad>14000</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.3
 				<!--BW_String-->
@@ -5343,13 +5338,13 @@
 				7.38461542
 				<!--BW_String-->
 			</repairTime>
-		</Grilleketten_ausf_B>
+		</Chassis_G23_Grille_2>
 	</chassis>
 	<turrets0>
-		<Grille_mod_1>
+		<Turret_1_G23_Grille>
 			<ceilless>true</ceilless>
-			<userString>#germany_vehicles:Grille_mod_1</userString>
-			<tags>cannotDetach</tags>
+			<userString>#germany_vehicles:Turret_1_G23_Grille</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>5</level>
 			<price>200</price>
 			<notInShop>true</notInShop>
@@ -5377,7 +5372,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_150mm_sIG33L11>
+				<_150mm_s_I_G_33_L_11_Grille>
 					shared
 					<pitchLimits>
 						<minPitch>0 -72 1 -72</minPitch>
@@ -5387,7 +5382,7 @@
 					<reloadTime>16</reloadTime>
 					<unlocks>
 						<gun>
-							_150mm_sFH13_L17
+							_150mm_s_F_H_13_L_17_Grille
 							<cost>5500</cost>
 						</gun>
 					</unlocks>
@@ -5395,11 +5390,11 @@
 						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.84
+						0.82
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						6.5
+						6.2
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5408,7 +5403,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.44
+							0.42
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5524,8 +5519,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_150mm_sIG33L11>
-				<_150mm_sFH13_L17>
+				</_150mm_s_I_G_33_L_11_Grille>
+				<_150mm_s_F_H_13_L_17_Grille>
 					shared
 					<pitchLimits>
 						<minPitch>0 -72 1 -72</minPitch>
@@ -5672,7 +5667,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_150mm_sFH13_L17>
+				</_150mm_s_F_H_13_L_17_Grille>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G23_Grille/normal/lod0/Turret_01.model</undamaged>
@@ -5722,42 +5717,24 @@
 				</density>
 				<aoTextureSize>256 256</aoTextureSize>
 			</camouflage>
-		</Grille_mod_1>
+		</Turret_1_G23_Grille>
 	</turrets0>
 	<engines>
 		<Praga_EPA>
 			shared
 			<unlocks>
 				<engine>
-					Praga_EPA_AC
+					Praga_EPA_AC_Grille
 					<cost>850</cost>
 				</engine>
 			</unlocks>
 		</Praga_EPA>
-		<Praga_EPA_AC>shared</Praga_EPA_AC>
+		<Praga_EPA_AC_Grille>shared</Praga_EPA_AC_Grille>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<FuG37>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG37>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
@@ -5770,38 +5747,16 @@
 					</smplEnginePower>
 					<smplFwMaxSpeed>42</smplFwMaxSpeed>
 				</Praga_EPA>
-				<Praga_EPA_AC>
+				<Praga_EPA_AC_Grille>
 					<smplEnginePower>
 						158.5922
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>42</smplFwMaxSpeed>
-				</Praga_EPA_AC>
+				</Praga_EPA_AC_Grille>
 			</engines>
 			<chassis>
-				<Grilleketten_ausf_A>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Grilleketten_ausf_A>
-				<Grilleketten_ausf_B>
+				<Chassis_G23_Grille>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -5822,7 +5777,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Grilleketten_ausf_B>
+				</Chassis_G23_Grille>
+				<Chassis_G23_Grille_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G23_Grille_2>
 			</chassis>
 		</detailed>
 	</physics>

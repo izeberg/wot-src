@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_024_Tank_USA_M46/normal/lod3/hv4_024_Tank_USA_M46_01</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-1.756270 -0.000000 -7.221222</min>
+		<max>1.767375 3.123687 3.321319</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_024_Tank_USA_M46/normal/lod2/hv4_024_Tank_USA_M46_01</nodefullVisual>
+</root>

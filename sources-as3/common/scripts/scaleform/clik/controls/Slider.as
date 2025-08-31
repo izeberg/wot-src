@@ -219,6 +219,7 @@ package scaleform.clik.controls
       override protected function configUI() : void
       {
          addEventListener(InputEvent.INPUT,this.handleInput,false,0,true);
+         addEventListener(MouseEvent.MOUSE_UP,this.simulateClick,false,0,true);
          this.thumb.addEventListener(MouseEvent.MOUSE_DOWN,this.beginDrag,false,0,true);
          this.track.addEventListener(MouseEvent.MOUSE_DOWN,this.trackPress,false,0,true);
          tabEnabled = true;
@@ -330,6 +331,14 @@ package scaleform.clik.controls
          _loc4_.localX = this.thumb.mouseX;
          _loc4_.localY = this.thumb.mouseY;
          this.thumb.dispatchEvent(_loc4_);
+      }
+      
+      protected function simulateClick(param1:MouseEvent) : void
+      {
+         if(this._trackPressed)
+         {
+            dispatchEvent(new MouseEvent(MouseEvent.CLICK,true,false,param1.localX,param1.localY,param1.relatedObject,param1.ctrlKey,param1.altKey,param1.shiftKey));
+         }
       }
       
       protected function lockValue(param1:Number) : Number

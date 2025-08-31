@@ -6,8 +6,8 @@ package net.wg.gui.lobby.missions.components
    import net.wg.data.constants.generated.QUESTS_ALIASES;
    import net.wg.gui.components.advanced.interfaces.IDummy;
    import net.wg.gui.components.controls.SimpleTileList;
-   import net.wg.gui.lobby.missions.data.MissionPackMarathonBodyVO;
    import net.wg.gui.lobby.missions.interfaces.IMissionPackBody;
+   import net.wg.gui.lobby.userMissions.data.MissionPackMarathonBodyVO;
    import net.wg.infrastructure.base.UIComponentEx;
    import scaleform.clik.constants.DirectionMode;
    import scaleform.clik.constants.InvalidationType;

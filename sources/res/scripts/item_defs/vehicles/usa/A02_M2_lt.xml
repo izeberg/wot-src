@@ -1754,14 +1754,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<VVSS_T16E1>
-			<userString>#usa_vehicles:VVSS_T16E1</userString>
+		<Chassis_A02_M2_lt>
+			<userString>#usa_vehicles:Chassis_A02_M2_lt</userString>
 			<tags/>
 			<level>1</level>
 			<price>330</price>
 			<unlocks>
 				<chassis>
-					VVSS_T16E2
+					Chassis_A02_M2_lt_2
 					<cost>105</cost>
 				</chassis>
 			</unlocks>
@@ -1770,21 +1770,20 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3300</weight>
-			<maxLoad>11500</maxLoad>
 			<terrainResistance>
-				1 1.5 3.4
+				0.9 1.5 3.4
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>36</rotationSpeed>
+			<rotationSpeed>45</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.28
+					0.26
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.28
+					0.26
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3944,9 +3943,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</VVSS_T16E1>
-		<VVSS_T16E2>
-			<userString>#usa_vehicles:VVSS_T16E2</userString>
+		</Chassis_A02_M2_lt>
+		<Chassis_A02_M2_lt_2>
+			<userString>#usa_vehicles:Chassis_A02_M2_lt_2</userString>
 			<tags/>
 			<level>2</level>
 			<price>620</price>
@@ -3955,21 +3954,20 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3300</weight>
-			<maxLoad>11500</maxLoad>
 			<terrainResistance>
 				0.9 1.5 3.4
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>50</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.25
+					0.24
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.25
+					0.24
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -6129,17 +6127,17 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</VVSS_T16E2>
+		</Chassis_A02_M2_lt_2>
 	</chassis>
 	<turrets0>
-		<M2D27810>
-			<userString>#usa_vehicles:M2D27810</userString>
+		<Turret_1_A02_M2_lt>
+			<userString>#usa_vehicles:Turret_1_A02_M2_lt</userString>
 			<tags>cannotDetach</tags>
 			<level>1</level>
 			<price>450</price>
 			<unlocks>
 				<turret>
-					M2D27812
+					Turret_2_A02_M2_lt
 					<cost>105</cost>
 				</turret>
 			</unlocks>
@@ -6196,7 +6194,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>260</circularVisionRadius>
+			<circularVisionRadius>310</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>40</maxHealth>
 				<maxRegenHealth>20</maxRegenHealth>
@@ -6206,149 +6204,24 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_12.7mm_MG_HB_M2>
-					shared
-					<maxAmmo>3600</maxAmmo>
-					<reloadTime>
-						22.9
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							1.1
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<unlocks>
-						<gun>
-							_20mm_Hispano_Suiza_Birgikt_gun
-							<cost>140</cost>
-						</gun>
-					</unlocks>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.375 10 0.396997 10 0.401965 8 0.420179 8 0.430045 10 0.568065 10 0.576359 8 0.594449 8 0.599825 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_2>
-							15.9
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.57
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.238
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/american/A02_M2_lt/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/american/A02_M2_lt/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A02_M2_lt/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A02_M2_lt/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_auto</effects>
-					<reloadEffect>reload12_25</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>-0.000667 0.000856 0.375955</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.085092 0.085092
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.000667 0.000856 0.375955</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								0.028949 1.90427 0.835705
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.43719 -0.003463 3.14156
-								<!--BW_String-->
-							</rotation>
-							<scale>0.527573 0.382038 0.527573</scale>
-							<showOn>4096</showOn>
-							<anchorShift>0.206322</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.25 0.25 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							116.917 117.019
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>256 256</aoTextureSize>
-					</camouflage>
-				</_12.7mm_MG_HB_M2>
-				<_20mm_Hispano_Suiza_Birgikt_gun>
+				<_20mm_Hispano_Suiza_Birgikt_Gun_M2>
 					shared
 					<maxAmmo>2400</maxAmmo>
-					<reloadTime>8</reloadTime>
+					<reloadTime>
+						9.4
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
 						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							1.4
+							1.3
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -6359,7 +6232,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.375 10 0.39097 10 0.396997 6 0.401965 6 0.420179 6 0.430045 10 0.568065 10 0.576359 6 0.594449 6 0.599825 6 0.607778 10 1 10
+							0.00000 10.00 0.37778 10.00 0.40556 5.50 0.43333 10.00 0.56667 10.00 0.59444 5.50 0.62222 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6379,6 +6252,15 @@
 						0.224
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<burst>
+						<count>3</count>
+						<rate>600</rate>
+					</burst>
+					<clip>
+						<count>15</count>
+						<rate>600</rate>
+					</clip>
 					<models>
 						<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/american/A02_M2_lt/crash/lod0/Gun_02.model</destroyed>
@@ -6458,7 +6340,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_20mm_Hispano_Suiza_Birgikt_gun>
+				</_20mm_Hispano_Suiza_Birgikt_Gun_M2>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Turret_01.model</undamaged>
@@ -7203,15 +7085,15 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</M2D27810>
-		<M2D27812>
-			<userString>#usa_vehicles:M2D27812</userString>
+		</Turret_1_A02_M2_lt>
+		<Turret_2_A02_M2_lt>
+			<userString>#usa_vehicles:Turret_2_A02_M2_lt</userString>
 			<tags/>
 			<level>2</level>
 			<price>640</price>
 			<unlocks>
 				<gun>
-					_37mm_M-5
+					_37mm_Gun_M5_M2
 					<cost>90</cost>
 				</gun>
 			</unlocks>
@@ -7286,118 +7168,11 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_12.7mm_MG_HB_M2>
-					shared
-					<maxAmmo>3600</maxAmmo>
-					<reloadTime>
-						17.1
-						<!--BW_String-->
-					</reloadTime>
-					<pitchLimits>
-						<minPitch>0 -19 1 -19</minPitch>
-						<maxPitch>
-							0 10 0.28356 10 0.347222 10 0.652778 10 0.71644 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.57
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.238
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/american/A02_M2_lt/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/american/A02_M2_lt/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A02_M2_lt/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A02_M2_lt/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_auto</effects>
-					<reloadEffect>reload12_25</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.018582 0.013068 0.41163
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.132878 0.132878
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.018582 0.013068 0.41163
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.25 0.25 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							116.917 117.019
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>256 256</aoTextureSize>
-					</camouflage>
-				</_12.7mm_MG_HB_M2>
-				<_20mm_Hispano_Suiza_Birgikt_gun>
+				<_20mm_Hispano_Suiza_Birgikt_Gun_M2>
 					shared
 					<maxAmmo>2400</maxAmmo>
 					<reloadTime>
-						7.7
+						9.4
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7417,7 +7192,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.389814 10 0.401409 7.6 0.421131 8.8 0.423361 10 0.570361 10 0.57697 8.7 0.593562 7.7 0.600367 7.7 0.605614 10 1 10
+							0.00000 10.00 0.37778 10.00 0.40556 7.50 0.43333 10.00 0.56667 10.00 0.59444 7.50 0.62222 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7450,6 +7225,15 @@
 						0.224
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<burst>
+						<count>3</count>
+						<rate>600</rate>
+					</burst>
+					<clip>
+						<count>15</count>
+						<rate>600</rate>
+					</clip>
 					<models>
 						<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/american/A02_M2_lt/crash/lod0/Gun_04.model</destroyed>
@@ -7507,8 +7291,8 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_20mm_Hispano_Suiza_Birgikt_gun>
-				<_37mm_M-5>
+				</_20mm_Hispano_Suiza_Birgikt_Gun_M2>
+				<_37mm_Gun_M5_M2>
 					shared
 					<maxAmmo>205</maxAmmo>
 					<unlocks>
@@ -7520,7 +7304,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.389791 10 0.398288 10 0.401671 9 0.416667 9 0.430556 10 0.433871 10 0.574639 10 0.583333 9 0.596775 9 0.606409 10 1 10
+							0.00000 10.00 0.37778 10.00 0.40556 7.50 0.43333 10.00 0.56667 10.00 0.59444 7.50 0.62222 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7551,17 +7335,26 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.5
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
 						2.1
 						<!--BW_String-->
-					</aimingTime>
+					</reloadTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.255
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>3</afterShot>
+						<turretRotation>
+							0.12
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Gun_05.model</undamaged>
 						<destroyed>vehicles/american/A02_M2_lt/crash/lod0/Gun_05.model</destroyed>
@@ -7619,7 +7412,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_37mm_M-5>
+				</_37mm_Gun_M5_M2>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A02_M2_lt/normal/lod0/Turret_02.model</undamaged>
@@ -8409,19 +8202,19 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</M2D27812>
+		</Turret_2_A02_M2_lt>
 	</turrets0>
 	<engines>
-		<Cuiberson_T-10204>
+		<Cuiberson_T_10204>
 			shared
 			<unlocks>
 				<engine>
-					Continental_W670-7
+					Continental_W_670_7
 					<cost>190</cost>
 				</engine>
 			</unlocks>
-		</Cuiberson_T-10204>
-		<Continental_W670-7>shared</Continental_W670-7>
+		</Cuiberson_T_10204>
+		<Continental_W_670_7>shared</Continental_W_670_7>
 	</engines>
 	<fuelTanks>
 		<Small>shared</Small>
@@ -8432,45 +8225,17 @@
 	<physics>
 		<detailed>
 			<engines>
-				<Cuiberson_T-10204>
-					<smplEnginePower>
-						232.6019
-						<!--BW_String-->
-					</smplEnginePower>
+				<Cuiberson_T_10204>
+					<smplEnginePower>250</smplEnginePower>
 					<smplFwMaxSpeed>58</smplFwMaxSpeed>
-				</Cuiberson_T-10204>
-				<Continental_W670-7>
-					<smplEnginePower>
-						277.0077
-						<!--BW_String-->
-					</smplEnginePower>
+				</Cuiberson_T_10204>
+				<Continental_W_670_7>
+					<smplEnginePower>285</smplEnginePower>
 					<smplFwMaxSpeed>58</smplFwMaxSpeed>
-				</Continental_W670-7>
+				</Continental_W_670_7>
 			</engines>
 			<chassis>
-				<VVSS_T16E1>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.2737
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.0805
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</VVSS_T16E1>
-				<VVSS_T16E2>
+				<Chassis_A02_M2_lt>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8491,7 +8256,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</VVSS_T16E2>
+				</Chassis_A02_M2_lt>
+				<Chassis_A02_M2_lt_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.2737
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.07245
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A02_M2_lt_2>
 			</chassis>
 		</detailed>
 	</physics>

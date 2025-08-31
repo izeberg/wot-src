@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>comp7_sh_grid_patches_01</name>
+			<UUID>7dae469f-3a18-4812-8346-a855b33d0037</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>sh_grid_patch_01</name>
+			<UUID>cd2bdb63-dcb2-3885-938a-5b15a41780cd</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>sh_grid_patch_02</name>
+			<UUID>0b513f73-abb7-36cb-bc64-db0fffecec8a</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>cd2bdb63-dcb2-3885-938a-5b15a41780cd</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7dae469f-3a18-4812-8346-a855b33d0037</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0b513f73-abb7-36cb-bc64-db0fffecec8a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>7dae469f-3a18-4812-8346-a855b33d0037</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>7dae469f-3a18-4812-8346-a855b33d0037</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>cd2bdb63-dcb2-3885-938a-5b15a41780cd</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0b513f73-abb7-36cb-bc64-db0fffecec8a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SHPatchComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>cd2bdb63-dcb2-3885-938a-5b15a41780cd</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>zoneId</name>
+						<value>3600091028</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0b513f73-abb7-36cb-bc64-db0fffecec8a</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>zoneId</name>
+						<value>2532260849</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

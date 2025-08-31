@@ -1,0 +1,348 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "battle_pass_widget/countdownSeparator"
+msgstr "|"
+
+msgid "battle_pass_widget/progress"
+msgstr ""
+"{{pointsEarned}}{{@ class $progressSeparatorClass}}/{{/}}{{levelPoints}}"
+
+msgid "battle_pass_widget/stage"
+msgstr "Stage {{level}}"
+
+msgid "battle_pass_widget/sub_title/activate_extra_chapter"
+msgstr "Special Chapter"
+
+msgid "battle_pass_widget/sub_title/completed"
+msgstr "Completed"
+
+msgid "battle_pass_widget/sub_title/select_chapter"
+msgstr "Select Chapter"
+
+msgid "battle_pass_widget/sub_title/unavailable"
+msgstr "Temporarily unavailable"
+
+msgid "battle_pass_widget/title"
+msgstr "Battle Pass"
+
+msgid "common/daterange/divider"
+msgstr "{{startDate}} - {{endDate}}"
+
+msgid "common/duration/days"
+msgstr "{{days}} d"
+
+msgid "common/duration/days_hrs"
+msgstr "{{days}} d {{hours}} h"
+
+msgid "common/duration/hrs"
+msgstr "{{hours}} h"
+
+msgid "common/duration/hrs_mins"
+msgstr "{{hours}} h {{minutes}} m"
+
+msgid "common/duration/mins"
+msgstr "{{minutes}} m"
+
+msgid "hub/basic_missions/daily/bonus_daily_missions_lock_info"
+msgstr ""
+"Bonus Mission\n"
+"Complete 3 Standard Missions to unlock"
+
+msgid "hub/basic_missions/daily/bonus_daily_missions_timer/tooltip"
+msgstr "Time left to complete Bonus Mission"
+
+msgid "hub/basic_missions/daily/new_daily_missions_timer/message"
+msgstr "New Daily Missions in"
+
+msgid "hub/basic_missions/daily/new_daily_missions_timer/tooltip"
+msgstr "That's all for now. New Daily Missions will be available soon."
+
+msgid "hub/basic_missions/daily/premium/locked_mission/tooltip"
+msgstr "Complete the previous mission to unlock this one"
+
+msgid "hub/basic_missions/daily/premium/not_available/generic"
+msgstr "Premium Missions are temporarily unavailable"
+
+msgid "hub/basic_missions/daily/purchase_premium/button"
+msgstr "Purchase Premium"
+
+msgid "hub/basic_missions/daily/purchase_premium/message"
+msgstr "Require WoT Premium Account"
+
+msgid "hub/basic_missions/daily/purchase_premium/title"
+msgstr "Premium Missions"
+
+msgid "hub/basic_missions/daily/regular/not_available/generic"
+msgstr "Daily Missions are temporarily unavailable"
+
+msgid "hub/basic_missions/daily/reroll_button"
+msgstr "Re-roll"
+
+msgid "hub/basic_missions/daily/title"
+msgstr "DAILY"
+
+msgid "hub/basic_missions/personal/button/to_campaign"
+msgstr "To Campaigns"
+
+msgid "hub/basic_missions/personal/button/to_completed_operation"
+msgstr "Improve Result"
+
+msgid "hub/basic_missions/personal/button/to_operation"
+msgstr "To Operation"
+
+msgid "hub/basic_missions/personal/description/campaignNotActivated"
+msgstr ""
+"A real challenge for experienced fighters with unique vehicles as a reward."
+
+msgid "hub/basic_missions/personal/description/completed"
+msgstr ""
+"You have completed the {{currentOperationName}} operation! You can continue "
+"improving your result to complete it with honors—or take on a new challenge "
+"in the {{nextOperationName}} operation."
+
+msgid ""
+"hub/basic_missions/personal/description/completedWithHonors/allCompleted"
+msgstr "You can still improve your result in the {{nextOperationName}}."
+
+msgid "hub/basic_missions/personal/description/completedWithHonors/default"
+msgstr ""
+"You have completed the {{currentOperationName}} operation with honors! The "
+"{{nextOperationName}} operation is now available."
+
+msgid "hub/basic_missions/personal/description/inProgress"
+msgstr ""
+"Campaign Points can be earned by completing Personal Missions, Daily "
+"Missions, and Weekly Missions."
+
+msgid "hub/basic_missions/personal/description/inProgressForHonors"
+msgstr ""
+"Complete all {{totalProgress}} missions to complete the operation with "
+"honors and earn extra rewards."
+
+msgid "hub/basic_missions/personal/detail/tooltip/body"
+msgstr ""
+"Mount all parts to receive your reward—the {{vehicleName}}. To collect "
+"vehicle parts, earn Campaign Points by completing Personal Missions, as well"
+" as Daily and Weekly Missions."
+
+msgid "hub/basic_missions/personal/detail_description"
+msgstr ""
+"Mount all parts to receive your reward—the {{vehicleName}}. To collect "
+"vehicle parts, earn Campaign Points by completing Personal Missions, as well"
+" as Daily and Weekly Missions."
+
+msgid "hub/basic_missions/personal/progress/inProgressForHonors"
+msgstr "Missions completed: {{progress}}"
+
+msgid "hub/basic_missions/personal/title/campaignNotActivated"
+msgstr "The new Sector 3 campaign is available!"
+
+msgid "hub/basic_missions/personal/title/completed"
+msgstr "Operation: {{nextOperationName}} available!"
+
+msgid "hub/basic_missions/personal/title/completedWithHonors/allCompleted"
+msgstr "Operation: {{currentOperationName}} completed with honors!"
+
+msgid "hub/basic_missions/personal/title/completedWithHonors/default"
+msgstr "Operation: {{nextOperationName}} available!"
+
+msgid "hub/basic_missions/personal/title/inProgress"
+msgstr "Operation: {{currentOperationName}} | Stage {{stageNumber}}"
+
+msgid "hub/basic_missions/personal/title/inProgressForHonors"
+msgstr "Completing the {{currentOperationName}} operation with honors"
+
+msgid "hub/basic_missions/title"
+msgstr "REGULAR MISSIONS"
+
+msgid "hub/basic_missions/weekly/title"
+msgstr "WEEKLY"
+
+msgid "hub/basic_missions/weekly/update_info"
+msgstr "Updated every {{weekDay}}"
+
+msgid "hub/common_missions/title"
+msgstr "EXTRA MISSIONS"
+
+msgid "hub/reward_progress/epic_quest_progress/collect_win_back"
+msgstr "Claim Rewards"
+
+msgid "hub/reward_progress/epic_quest_progress/disabled"
+msgstr "Epic Reward is temporarily unavailable"
+
+msgid "hub/reward_progress/epic_quest_progress/sub_title"
+msgstr ""
+"Every completed Standard, Premium, or Bonus Mission contributes toward your "
+"progress."
+
+msgid "hub/reward_progress/epic_quest_progress/time_left"
+msgstr "Available"
+
+msgid "hub/reward_progress/epic_quest_progress/title"
+msgstr "Complete Daily Missions to earn Epic Rewards"
+
+msgid "hub/reward_progress/win_back_quest_progress/claim"
+msgstr "Claim Reward"
+
+msgid "hub/reward_progress/win_back_quest_progress/claim_main"
+msgstr "Claim Rewards"
+
+msgid "hub/reward_progress/win_back_quest_progress/sub_title"
+msgstr ""
+"Every completed Standard, Premium, or Bonus Mission contributes toward your "
+"progress."
+
+msgid "hub/reward_progress/win_back_quest_progress/time_left"
+msgstr "Available"
+
+msgid "hub/reward_progress/win_back_quest_progress/title"
+msgstr ""
+"Back in Action! Complete Daily Missions to earn Epic Rewards: {progres}"
+
+msgid "info_page/additional/bonus/description"
+msgstr ""
+"Once you complete three Standard Missions, a Bonus Mission becomes "
+"available, offering even more valuable rewards. The Bonus Mission must be "
+"completed by the end of the day, or it will expire."
+
+msgid "info_page/additional/bonus/title"
+msgstr "Bonus Mission"
+
+msgid "info_page/additional/conditions/description"
+msgstr ""
+"Some missions must be completed in one battle, while others are accumulative"
+" and can be completed over any number of battles. Accumulative missions have"
+" a progress bar. You can complete missions in Random Battles."
+
+msgid "info_page/additional/conditions/title"
+msgstr "Conditions"
+
+msgid "info_page/additional/reroll/description"
+msgstr ""
+"You can re-roll an unwanted Standard Mission to receive a random new one. "
+"After this, the Mission Re-roll button will become unavailable for {{time}}."
+" Re-rolling a mission may cause you to lose your progress if one or more of "
+"your vehicles are in battle."
+
+msgid "info_page/additional/reroll/title"
+msgstr "Mission Re-roll"
+
+msgid "info_page/additional/reward/description"
+msgstr ""
+"Epic Reward is a marathon-like cycle, with every completed Standard, "
+"Premium, and Bonus Mission contributing toward its progress. Once the cycle "
+"is completed, it resets and starts over. The Epic Reward cycle has no time "
+"limit and can be completed at any time."
+
+msgid "info_page/additional/reward/title"
+msgstr "Epic Reward"
+
+msgid "info_page/header"
+msgstr "ABOUT MISSIONS"
+
+msgid "info_page/main/premium/description"
+msgstr ""
+"With WoT Premium Account, you gain access to three sequential Premium "
+"Missions. These can be completed in Random Battles and Onslaught, with "
+"progress updated after each battle. During game events, Premium Missions "
+"provide event-specific rewards."
+
+msgid "info_page/main/premium/title"
+msgstr "Premium Missions"
+
+msgid "info_page/main/standard/description"
+msgstr ""
+"Standard Missions are random daily conditions whose progress is updated "
+"after each battle. We recommend completing them the day you receive them, as"
+" unfinished missions carry over to the next day and block new ones. Standard"
+" Missions provide Battle Pass Points during Battle Pass and event-specific "
+"rewards during other game events."
+
+msgid "info_page/main/standard/title"
+msgstr "Standard Missions"
+
+msgid "info_page/main/weekly/description"
+msgstr ""
+"Weekly Missions are a set of tasks available every week. Progress is updated"
+" after each battle, and completed missions are replaced with new ones when "
+"the next weekly cycle begins. You can complete Weekly Missions in Random "
+"Battles and Onslaught mode to receive additional bonuses."
+
+msgid "info_page/main/weekly/title"
+msgstr "Weekly Missions"
+
+msgid "quests/daily_quests/all_completed"
+msgstr "All regular missions completed for today"
+
+msgid "quests/daily_quests/completed"
+msgstr "All Daily Missions completed"
+
+msgid "tooltip/common/timer"
+msgstr "Available in {{timeLeft}}"
+
+msgid "tooltip/daily_quests/all_quest_completed"
+msgstr ""
+"All regular missions completed! You can find more in Extra Missions tab."
+
+msgid "tooltip/daily_quests/bonus_mission"
+msgstr "Bonus Mission"
+
+msgid "tooltip/daily_quests/completed"
+msgstr "Completed"
+
+msgid "tooltip/daily_quests/daily_mission"
+msgstr "Daily Mission"
+
+msgid "tooltip/daily_quests/expires"
+msgstr "Expires in {{timeLeft}}"
+
+msgid "tooltip/daily_quests/new_daily_missions"
+msgstr "New Daily Missions in {{timeLeft}}"
+
+msgid "tooltip/daily_quests/premium_daily_mission"
+msgstr "Premium Mission"
+
+msgid "tooltip/daily_quests/rewards"
+msgstr "Rewards:"
+
+msgid "tooltip/daily_reroll/description"
+msgstr ""
+"You can re-roll an unwanted mission \n"
+"for a new one every {time}."
+
+msgid "tooltip/daily_reroll/header"
+msgstr "Mission Re-roll"
+
+msgid "tooltip/hub/info_button/body"
+msgstr "Click for additional information"
+
+msgid "tooltip/hub/info_button/header"
+msgstr "About Missions"
+
+msgid "tooltip/vehicle_restrictions"
+msgstr "Vehicle restrictions:"
+
+msgid "tooltip/weekly_mission"
+msgstr "Weekly Mission"
+
+msgid "tooltip/weekly_reroll/description"
+msgstr ""
+"You can re-roll an unwanted mission\n"
+"for a new one every {{time}}."
+
+msgid "welcome/button"
+msgstr "Acknowledged!"

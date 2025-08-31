@@ -95,6 +95,7 @@ class _EntryPointData(object):
 
 
 class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlobalListener):
+    _ENABLED = False
     __notificationsCtrl = dependency.descriptor(IEventsNotificationsController)
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __itemsCache = dependency.descriptor(IItemsCache)
@@ -112,6 +113,8 @@ class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlob
         self.__updateEntries()
 
     def _dispose(self):
+        if not self._ENABLED:
+            return
         self.__unsubscribeLUI()
         self.as_updateEntriesS([])
         self.stopGlobalListening()
@@ -124,6 +127,8 @@ class EventEntryPointsContainer(EventEntryPointsContainerMeta, Notifiable, IGlob
         super(EventEntryPointsContainer, self)._dispose()
 
     def _populate(self):
+        if not self._ENABLED:
+            return
         super(EventEntryPointsContainer, self)._populate()
         self.__notificationsCtrl.onEventNotificationsChanged += self.__onEventNotification
         self.__handleNotifications(self.__notificationsCtrl.getEventsNotifications())

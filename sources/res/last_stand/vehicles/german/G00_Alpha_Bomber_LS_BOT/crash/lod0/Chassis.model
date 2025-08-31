@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.945157 -0.005851 -2.915002</min>
+		<max>0.945771 5.864454 2.954388</max>
+	</visibilityBox>
+	<parent>last_stand/vehicles/german/G00_Alpha_Bomber_LS_BOT/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>last_stand/vehicles/german/G00_Alpha_Bomber_LS_BOT/crash/lod0/Chassis</nodefullVisual>
+</root>

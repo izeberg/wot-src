@@ -17,6 +17,12 @@ NOTIFICATION_GROUP = Enumeration('Group of members for notification', [
  'Originator',
  'ExceptOriginator'])
 
+class CHAT_STATUS:
+    OK = 0
+    NONE_OR_DESTROYED = 1
+    ORIGIN_DISCONNECTED = 2
+
+
 def __notifyFilterAll(originatorId, entityId):
     return True
 
@@ -301,7 +307,7 @@ CHAT_RESPONSES = Enumeration('chatActionResponses', ('success', 'internalError',
                                                      'inviteCreationNotAllowed',
                                                      'incorrectCommandArgument',
                                                      'invalidChannelName', 'setMutedError',
-                                                     'unsetMutedError'))
+                                                     'unsetMutedError', 'channelEntityUnreachable'))
 __DEFAULT_COOLDOWN = 0.5
 __BATTLE_COMMANDS_DEFAULT_COOLDOWN = __DEFAULT_COOLDOWN
 __CHINA_USER_MESSAGE_COOLDOWN = 3.0
@@ -1445,6 +1451,16 @@ class ChannelNotExists(ChatException):
         return 'Channel with id: %s not exists' % self.__channelId
 
 
+class ChannelEntityUnreachable(ChatException):
+
+    def __init__(self, id):
+        ChatException.__init__(self, CHAT_RESPONSES.channelEntityUnreachable)
+        self.__channelId = id
+
+    def _getMessage(self):
+        return 'Base entity of channel with id: %s was invalidated. Probably center is down. ' % self.__channelId
+
+
 class UserNotExists(ChatException):
 
     def __init__(self, nickname):
@@ -1594,7 +1610,10 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'externalVehicleRentExpired',
  'mentorAssignmentUsed',
  'battlePassPostProgressionActivated',
- 'battlePassPostProgressionPaused'])
+ 'battlePassPostProgressionPaused',
+ 'personalMission3Quest',
+ 'prestigeMilestoneReward',
+ 'prestigeMilestoneRewardError'])
 SYS_MESSAGE_IMPORTANCE = Enumeration('systemMessageImportance', [
  'normal',
  'high'])
@@ -1602,7 +1621,7 @@ SM_REQUEST_PERSONAL_MESSAGES_FLAG = 1
 SM_REQUEST_SYSTEM_MESSAGES_FLAG = 2
 SM_REQUEST_INTERNAL_SYS_MESSAGES_FLAG = 4
 
-class MapRemovedFromBLReason(object):
+class MapRemovalReason(object):
     MAP_DISABLED = 1
     SLOT_DISABLED = 2
 

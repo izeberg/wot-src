@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F135_AS_XX_40_t/crash/lod1/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/french/F135_AS_XX_40_t/crash/lod2/Turret_01</parent>
+	<extent>64</extent>
+	<visibilityBox>
+		<min>-1.364682 0.006147 -1.111404</min>
+		<max>1.367584 0.674902 1.100244</max>
+	</visibilityBox>
+</root>

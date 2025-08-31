@@ -1,0 +1,51 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "primeTimeView/endOfCycle"
+msgstr "The Stage on the %(server)s server has finished"
+
+msgid "primeTimeView/server"
+msgstr "Available server: %(server)s."
+
+msgid "primeTimeView/serverTooltip"
+msgstr ""
+"%(server)s server\n"
+"Battles will be available for another %(time)s"
+
+msgid "primeTimeView/serverUnavailableTooltip"
+msgstr ""
+"%(server)s server\n"
+"Battles will be available in %(time)s"
+
+msgid "primeTimeView/servers"
+msgstr "Available servers:"
+
+msgid "primeTimeView/status/allServersDisabled"
+msgstr "Battles are unavailable on all servers"
+
+msgid "primeTimeView/status/disableFirst"
+msgstr "This mode is unavailable on the %(server)s server"
+
+msgid "primeTimeView/status/primeIsAvailable"
+msgstr ""
+"Battles on the %(server)s server will be available for another %(time)s"
+
+msgid "primeTimeView/status/primeWillBeAvailable"
+msgstr "Battles will start on the %(server)s server in %(time)s"
+
+msgid "primeTimeView/status/untill"
+msgstr ""
+"Battles will not be available until %(startTime)s on the %(server)s server"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.844387 -0.663111 -4.104455</min>
+		<max>1.828372 0.804838 3.902770</max>
+	</visibilityBox>
+</root>

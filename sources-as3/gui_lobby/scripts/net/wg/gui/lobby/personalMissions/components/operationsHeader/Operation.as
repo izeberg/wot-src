@@ -288,7 +288,14 @@ package net.wg.gui.lobby.personalMissions.components.operationsHeader
          this._scheduler.cancelTask(this.showTooltip);
          if(this._data)
          {
-            this._tooltipMgr.showSpecial(this._data.tooltipAlias,null,this.id);
+            if(this._data.isWulfTooltip)
+            {
+               this._tooltipMgr.showWulfTooltip(this._data.tooltipAlias,null);
+            }
+            else
+            {
+               this._tooltipMgr.showSpecial(this._data.tooltipAlias,null,this.id);
+            }
          }
       }
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl37_CS_67_Szakal/normal/lod2/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl37_CS_67_Szakal/normal/lod3/Hull</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.742943 -0.780683 -3.774927</min>
+		<max>1.747479 0.620053 3.508752</max>
+	</visibilityBox>
+</root>

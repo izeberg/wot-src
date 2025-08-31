@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodelessVisual>content/Environment/hd_env_UNI_161_Zeppelin/normal/lod3/hd_env_UNI_161_Zeppelin_05</nodelessVisual>
+	<nodefullVisual>content/Environment/hd_env_UNI_161_Zeppelin/normal/lod3/hd_env_UNI_161_Zeppelin_05</nodefullVisual>
+	<visibilityBox>
+		<min>-8.301035 -0.799759 -18.477608</min>
+		<max>8.385690 22.198738 30.810617</max>
+	</visibilityBox>
 </root>

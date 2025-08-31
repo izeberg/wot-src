@@ -11,6 +11,7 @@ package net.wg.gui.battle.battleRoyale.views.configurator
    import net.wg.data.constants.Linkages;
    import net.wg.gui.battle.battleRoyale.views.configurator.data.ModuleInfoVO;
    import net.wg.gui.battle.battleRoyale.views.configurator.data.ModuleParameterVO;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.gui.components.battleRoyale.IConfiguratorRenderer;
    import net.wg.gui.components.hintPanel.KeyViewersList;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
@@ -132,9 +133,9 @@ package net.wg.gui.battle.battleRoyale.views.configurator
          this.updateKeyViewerPosition();
       }
       
-      public function setHotKeys(param1:Array, param2:Array) : void
+      public function setHotKeys(param1:Vector.<IngameDetailsKeyVO>) : void
       {
-         this._keyViewerList.setKeys(param1,param2);
+         this._keyViewerList.setKeys(param1);
       }
       
       protected function onDispose() : void

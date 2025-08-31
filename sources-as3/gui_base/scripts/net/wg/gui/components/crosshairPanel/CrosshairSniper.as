@@ -1,6 +1,7 @@
 package net.wg.gui.components.crosshairPanel
 {
    import flash.text.TextField;
+   import net.wg.utils.StageSizeBoundaries;
    
    public class CrosshairSniper extends CrosshairWithCassette
    {
@@ -22,6 +23,16 @@ package net.wg.gui.components.crosshairPanel
       private static const RELOAD_TIME_BLINK_Y_DASHED:int = 39;
       
       private static const RELOAD_TIME_BLINK_Y_SIEGE:int = 25;
+      
+      private static const RELOAD_TIME_BLINK_Y_PILLBOX:int = 25;
+      
+      private static const SIEGE_NET_SCALE_SMALL:Number = 0.72;
+      
+      private static const SIEGE_NET_SCALE_NORMAL:Number = 1;
+      
+      private static const ZOOM_OVERHEAT_POSITION_X:int = 240;
+      
+      private static const ZOOM_OVERHEAT_POSITION_Y:int = 20;
        
       
       public var zoomTF:TextField = null;
@@ -40,6 +51,16 @@ package net.wg.gui.components.crosshairPanel
          this._zoomIndicatorAlphaValue = param7;
          super.setComponentsAlpha(param1,param2,param3,param4,param5,param6,param7);
          this.zoomTF.alpha = this._zoomIndicatorAlphaValue;
+      }
+      
+      override public function set overheatIndicatorVisible(param1:Boolean) : void
+      {
+         if(param1)
+         {
+            this.zoomTF.x = ZOOM_OVERHEAT_POSITION_X;
+            this.zoomTF.y = ZOOM_OVERHEAT_POSITION_Y;
+         }
+         super.overheatIndicatorVisible = param1;
       }
       
       override public function setNetType(param1:Number) : void
@@ -72,7 +93,16 @@ package net.wg.gui.components.crosshairPanel
       
       override protected function getReloadTimeBlinkYPos() : Array
       {
-         return [RELOAD_TIME_BLINK_Y_DIAGONAL,RELOAD_TIME_BLINK_Y_HORIZONTAL,RELOAD_TIME_BLINK_Y_RADIAL,RELOAD_TIME_BLINK_Y_DASHED,RELOAD_TIME_BLINK_Y_SIEGE];
+         return [RELOAD_TIME_BLINK_Y_DIAGONAL,RELOAD_TIME_BLINK_Y_HORIZONTAL,RELOAD_TIME_BLINK_Y_RADIAL,RELOAD_TIME_BLINK_Y_DASHED,RELOAD_TIME_BLINK_Y_SIEGE,RELOAD_TIME_BLINK_Y_PILLBOX];
+      }
+      
+      override protected function getSiegeNetScale(param1:Number, param2:Number) : Number
+      {
+         if(param1 < StageSizeBoundaries.WIDTH_1920)
+         {
+            return SIEGE_NET_SCALE_SMALL;
+         }
+         return SIEGE_NET_SCALE_NORMAL;
       }
    }
 }

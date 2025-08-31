@@ -2,6 +2,7 @@ package net.wg.gui.lobby.profile.components
 {
    import flash.display.InteractiveObject;
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import net.wg.gui.lobby.components.IResizableContent;
    import net.wg.infrastructure.base.UIComponentEx;
    
@@ -10,6 +11,8 @@ package net.wg.gui.lobby.profile.components
        
       
       protected var currentDimension:Point = null;
+      
+      protected var _paddings:Rectangle = null;
       
       private var _centerOffset:int = 0;
       
@@ -36,6 +39,7 @@ package net.wg.gui.lobby.profile.components
       override protected function onDispose() : void
       {
          this.currentDimension = null;
+         this._paddings = null;
          super.onDispose();
       }
       
@@ -53,7 +57,7 @@ package net.wg.gui.lobby.profile.components
          return null;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          if(!this.currentDimension)
          {
@@ -61,6 +65,7 @@ package net.wg.gui.lobby.profile.components
          }
          this.currentDimension.x = param1;
          this.currentDimension.y = param2;
+         this._paddings = param3;
          invalidate(ResizableInvalidationTypes.CURRENT_DIMENSION_INVALID);
       }
       

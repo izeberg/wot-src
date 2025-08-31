@@ -10,6 +10,111 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "A01_T1_Cunningham"
+msgstr "T1 Cunningham"
+
+msgid "A01_T1_Cunningham_descr"
+msgstr ""
+"The experimental T1E1 light tank designed by the Cunningham company was a "
+"further development of the T1 tank. By April 1928, four vehicles were "
+"produced. After the vehicle underwent trials in November 1928, a decision "
+"was made to enhance the armor, which led to creating the subsequent "
+"modification designated the T1E2."
+
+msgid "A01_T1_Cunningham_short"
+msgstr "T1"
+
+msgid "A02_M2_lt"
+msgstr "M2 Light"
+
+msgid "A02_M2_lt_descr"
+msgstr ""
+"Development of the vehicle based on the M2A3 model was started in December "
+"1938. The tank featured a new two-man turret with more powerful armament. A "
+"total of 365 vehicles were manufactured from May 1940 through March 1941. In"
+" April 1942, ten additional tanks were produced for training purposes. Some "
+"vehicles were supplied to the U.K. under Lend-Lease, others were deployed "
+"with the U.S. Marine Corps and saw combat in the Pacific Theater."
+
+msgid "A02_M2_lt_short"
+msgstr "M2"
+
+msgid "A03_M3_Stuart"
+msgstr "M3 Stuart"
+
+msgid "A03_M3_Stuart_descr"
+msgstr ""
+"Developed in 1938 through 1941 on the basis of the M2. Mass-produced from "
+"1941. More than 13,000 vehicles in various versions were built, from the M3 "
+"to the M3A3, all of which were supplied to almost every allied nation under "
+"Lend-Lease. The M3 tanks were designated Stuart I by the British, while the "
+"M3A1 version received the designation Stuart III. The M3 first saw action in"
+" the battle at Sidi Rezegh."
+
+msgid "A05_M4_Sherman"
+msgstr "M4A1 Sherman"
+
+msgid "A05_M4_Sherman_descr"
+msgstr ""
+"The first production version of the Sherman, the most common American tank, "
+"with an amazing total of 49,234 vehicles manufactured. The Sherman first saw"
+" combat in North Africa."
+
+msgid "A05_M4_Sherman_short"
+msgstr "M4 Sherman"
+
+msgid "A06_M4A3E8_Sherman"
+msgstr "M4A3E8 Sherman"
+
+msgid "A06_M4A3E8_Sherman_descr"
+msgstr ""
+"The M4A3E8 is one of the most mass-produced modifications of the main U.S. "
+"armored vehicle of the World War II period. The tank featured the welded "
+"hull and Ford GAA carburetor engine. A total of 11,424 vehicles with the "
+"improved HVSS suspension were produced by Fisher Tank Arsenal and Detroit "
+"Tank Arsenal from June 1942 through March 1945. The vehicle is also known as"
+" M4A3(76)W. It took part in many after-war conflicts up to the Indo-"
+"Pakistani War of 1965."
+
+msgid "A06_M4A3E8_Sherman_short"
+msgstr "E8 Sherman"
+
+msgid "A07_T20"
+msgstr "T20"
+
+msgid "A07_T20_descr"
+msgstr ""
+"The first in a series of 1942–1943 U.S. medium tank designs intended as "
+"replacements for the M4 Sherman. The first prototype was produced in May "
+"1943, and trials went on until 1944. The vehicle was not approved for mass "
+"production, but subsequent prototypes, the T22 and T23, were created on the "
+"basis of this development. They, in turn, served as precursors of the T25 "
+"and T26. Eventually, the M26 Pershing emerged on their basis and was adopted"
+" for service."
+
+msgid "A09_T1_hvy"
+msgstr "T1 Heavy"
+
+msgid "A09_T1_hvy_descr"
+msgstr ""
+"Development of the T1E2 started in the U.S.A. in May 1940. The vehicle was "
+"designed as a heavy tank. The distinctive features of the vehicle were a "
+"cast hull and hydromechanical transmission with a double-disc hydraulic "
+"converter. Later, the tank was designated M6. A total of 9 vehicles (1 of "
+"which was experimental) were produced. The tank never saw action."
+
+msgid "A09_T1_hvy_short"
+msgstr "T1"
+
+msgid "A100_T49"
+msgstr "T49"
+
+msgid "A100_T49_descr"
+msgstr ""
+"A variant of the M41 light tank with an enlarged turret and 90-mm gun. "
+"Trials started on May 5, 1954. The trials were a success, but the tank never"
+" saw mass production due to lack of interest from the military authorities."
+
 msgid "A101_M56"
 msgstr "M56 Scorpion"
 
@@ -131,6 +236,17 @@ msgstr ""
 " demonstrated that the gun was too heavy for the light tank chassis. Never "
 "entered mass production."
 
+msgid "A10_M6"
+msgstr "M6"
+
+msgid "A10_M6_descr"
+msgstr ""
+"A variant of the heavy tank developed in the U.S. from May 1940, this "
+"vehicle featured a cast hull and hydromechanical suspension with a two-disc "
+"hydraulic converter. The vehicle was standardized on May 26, 1942. A total "
+"of 9 vehicles were manufactured (8 serial and 1 experimental), but never saw"
+" action."
+
 msgid "A111_T25_Pilot"
 msgstr "T25 Pilot Number 1"
 
@@ -243,21 +359,6 @@ msgstr "Strong frontal armor and good damage per shot"
 msgid "A116_XM551"
 msgstr "XM551 Sheridan"
 
-msgid "A116_XM551_FEP"
-msgstr "XM551E4 Hailstorm"
-
-msgid "A116_XM551_FEP_descr"
-msgstr ""
-"The designers' idea was for the T250 cannon 6x37 gun to be powerful enough "
-"to destroy enemy infantry and lightly-armored vehicles. Later, the project "
-"was supposed to increase the elevation angle of the gun to fire at low-"
-"flying targets, but the limited ammunition that could fit in the improved "
-"turret and the awkward placement of the crew led to the project being "
-"abandoned."
-
-msgid "A116_XM551_FEP_short"
-msgstr "Hailstorm"
-
 msgid "A116_XM551_descr"
 msgstr ""
 "Work on the vehicle started under the AR/AAV project (Armored "
@@ -354,6 +455,16 @@ msgstr "Thunderbolt"
 msgid "A118_M4_Thunderbolt_short_special"
 msgstr ""
 "Nice gun elevation/depression angles, damage per minute, and view range"
+
+msgid "A11_T29"
+msgstr "T29"
+
+msgid "A11_T29_descr"
+msgstr ""
+"Development of this experimental heavy tank started in 1944. The prototype "
+"was built in 1947. The vehicle featured the 105 mm T5E1 gun. After the war, "
+"the mass production of heavy tanks was deemed unreasonable, and only a few "
+"prototypes of this vehicle were built."
 
 msgid "A120_M48A5"
 msgstr "M48A5 Patton"
@@ -584,7 +695,10 @@ msgstr ""
 "vehicle under the Medium Tank M4 designation."
 
 msgid "A129_T6_medium_short"
-msgstr "T6 Medium"
+msgstr "T6"
+
+msgid "A12_T32"
+msgstr "T32"
 
 msgid "A12_T32_FL_long_special"
 msgstr ""
@@ -617,6 +731,12 @@ msgstr "T32M"
 
 msgid "A12_T32_M_short_special"
 msgstr "An accurate gun and sturdy turret"
+
+msgid "A12_T32_descr"
+msgstr ""
+"An experimental World War II American heavy tank. Developed on the basis of "
+"the M26 Pershing and T29 tanks. Prototypes were built in 1946; however, the "
+"T32 never entered mass production."
 
 msgid "A130_Super_Hellcat"
 msgstr "Super Hellcat"
@@ -839,18 +959,6 @@ msgstr "Pawlack Tank"
 
 msgid "A143_M_V_Y"
 msgstr "M-V-Y"
-
-msgid "A143_M_V_Y_FEP"
-msgstr "M5YE2 Thunderclap"
-
-msgid "A143_M_V_Y_FEP_descr"
-msgstr ""
-"An experimental piece with a 75 mm ARES XM274 gun. The project was canceled "
-"because of the poor positioning of the gun in the standard turret, which was"
-" hard to maintain."
-
-msgid "A143_M_V_Y_FEP_short"
-msgstr "Thunderclap"
 
 msgid "A143_M_V_Y_descr"
 msgstr ""
@@ -1592,6 +1700,97 @@ msgstr "M103M"
 msgid "A176_M103_110_short_special"
 msgstr "High rate of fire, good frontal armor"
 
+msgid "A179_Black_Rock"
+msgstr "Black Rock"
+
+msgid "A179_Black_Rock_descr"
+msgstr ""
+"In the 1970s, the U.S. military started developing a next-generation heavy "
+"tank with maximum crew protection. The ammunition was located separately "
+"from the crew in different parts of the hull, and the designers planned to "
+"equip the vehicle with advanced electronics and an automatic loading system."
+" During development the available technologies were found to be "
+"insufficiently reliable. They were too likely to malfunction and no "
+"duplicate manual systems were planned other than periscopes. The tank's "
+"concept was clearly ahead of its time, and because of the technical "
+"limitations the project was closed before a prototype was built."
+
+msgid "A179_Black_Rock_long_special"
+msgstr ""
+"The Black Rock is a classic, versatile heavy tank with no major weaknesses. "
+"It performs effectively in most battlefield scenarios. Its accurate and "
+"comfortable gun delivers damage from any range. High mobility lets it keep "
+"up with the pace of battle, while strong turret armor supports aggressive "
+"gameplay."
+
+msgid "A179_Black_Rock_short"
+msgstr "Black Rock"
+
+msgid "A179_Black_Rock_short_special"
+msgstr "Comfortable gun, strong turret armor, good mobility"
+
+msgid "A182_T803"
+msgstr "T803"
+
+msgid "A182_T803_descr"
+msgstr ""
+"After the program for the promising MBT-70 was closed due to high costs, the"
+" U.S. decided to create a simplified version of it. Despite reduced "
+"expenses, the designers planned to fit out the T803 with many modern "
+"developments: day and night sights, a laser rangefinder, a commander's all-"
+"round observation optical device, a VHF radio slot antenna, and other "
+"equipment. However, inflation made the project even more expensive, and the "
+"decision was taken to change the configuration, leading to the creation of "
+"the XM803, which was later abandoned in favor of the XM1."
+
+msgid "A182_T803_long_special"
+msgstr ""
+"With its balanced profile and lack of clear weaknesses, the T803 is an "
+"adaptable heavy tank fit for diverse combat operations. From tactical "
+"movement to methodical positional engagements, it is well-suited to a range "
+"of battlefield roles. It is also armed with an experimental firing system, "
+"allowing it to pursue opponents even more aggressively and unleashing its "
+"full firepower potential."
+
+msgid "A182_T803_short"
+msgstr "T803"
+
+msgid "A183_XM69_Hacker"
+msgstr "XM69 Hacker"
+
+msgid "A183_XM69_Hacker_descr"
+msgstr ""
+"An M60 tank modernization project based on experience gained from combat, "
+"aimed at rectifying the identified problems. The designers proposed a "
+"better-protected turret, as well as a hull made from rolled armor parts, "
+"which, in turn, required installing new suspension. An enhanced 110 mm gun "
+"took care of firepower, and the tank had an innovative stabilization system "
+"with optical sensors to account for the barrel position. Moreover, the "
+"modernization was 40% more expensive than the price of the mass produced "
+"M60A1 and was no more affordable than producing a new vehicle. Despite all "
+"the benefits, the project did not solve several layout problems and it was "
+"terminated."
+
+msgid "A183_XM69_Hacker_long_special"
+msgstr ""
+"The logical continuation of the M48 Patton concept, the XM69 Hacker is a "
+"versatile, all-around medium tank with no major weaknesses. Its combination "
+"of decent mobility, strong armor, and an excellent gun makes it well-"
+"equipped for a variety of battlefield roles—while its firepower can also be "
+"further enhanced when the need arises."
+
+msgid "A183_XM69_Hacker_short"
+msgstr "Hacker"
+
+msgid "A18_M41"
+msgstr "M41"
+
+msgid "A18_M41_descr"
+msgstr ""
+"Light SPG on the M24 chassis saw service in the U.S. Army until the mid "
+"1950s. Some vehicles were supplied to France. According to various sources, "
+"about 85–250 SPGs were manufactured."
+
 msgid "A21_T14_long_special"
 msgstr ""
 "A Tier V American heavy tank with sloped frontal armor, decent damage per "
@@ -1600,6 +1799,18 @@ msgstr ""
 
 msgid "A21_T14_short_special"
 msgstr "Good damage per minute, strong turret front armor, and great dynamics"
+
+msgid "A22_M5_Stuart"
+msgstr "M5 Stuart"
+
+msgid "A22_M5_Stuart_descr"
+msgstr ""
+"A further modification of the M3 Stuart, the M5 entered production in April "
+"1942. By June 1944 a total of 8,884 vehicles in two variants had been "
+"produced. The tank was used in all theaters of war."
+
+msgid "A22_M5_Stuart_short"
+msgstr "M5 Stuart"
 
 msgid "A27_T82"
 msgstr "T82 HMC"
@@ -1612,6 +1823,43 @@ msgstr ""
 "Aberdeen Proving Ground. On June 21, 1945, the project was discontinued due "
 "to the lack of interest in vehicles of this type."
 
+msgid "A30_M10_Wolverine"
+msgstr "M10 Wolverine"
+
+msgid "A30_M10_Wolverine_descr"
+msgstr ""
+"The most widely produced American tank destroyer, with a total of 6,706 "
+"vehicles manufactured from September 1942 through January 1944. More than a "
+"third of all Wolverines were supplied to the Allied nations under Lend-"
+"Lease."
+
+msgid "A30_M10_Wolverine_short"
+msgstr "Wolverine"
+
+msgid "A31_M36_Slagger"
+msgstr "M36 Jackson"
+
+msgid "A31_M36_Slagger_descr"
+msgstr ""
+"The most powerful American tank destroyer. The M36 was developed on the "
+"chassis of the M10A1 and M10, with a total of 2,324 vehicles manufactured "
+"from November 1943 through September 1945."
+
+msgid "A31_M36_Slagger_short"
+msgstr "Jackson"
+
+msgid "A32_M12"
+msgstr "M12"
+
+msgid "A32_M12_descr"
+msgstr ""
+"Development of the SPG started in the second half of 1941. The prototype "
+"underwent trials on February 12, 1942 and saw service in July 1942. The "
+"Pressed Steel Car Company produced 100 vehicles. Baldwin Locomotive Works "
+"modified the SPGs and re-equipped some M30 carriers. The vehicle saw service"
+" in the field artillery battalions and was used by the U.S.A. forces in "
+"Western Europe."
+
 msgid "A33_MTLS-1G14_long_special"
 msgstr ""
 "A Tier III American light tank. Although this vehicle can't boast "
@@ -1620,6 +1868,9 @@ msgstr ""
 
 msgid "A33_MTLS-1G14_short_special"
 msgstr "Great gun, nice dynamics, and good depression/elevation angles"
+
+msgid "A34_M24_Chaffee"
+msgstr "M24 Chaffee"
 
 msgid "A34_M24_Chaffee_CFE_V"
 msgstr "Chaffee Camouflaged"
@@ -1643,6 +1894,75 @@ msgstr "Chaffee Camo"
 
 msgid "A34_M24_Chaffee_CFE_V_short_special"
 msgstr "Good power-to-weight ratio, good handling"
+
+msgid "A34_M24_Chaffee_descr"
+msgstr ""
+"The vehicle was intended as a replacement for the M3 Stuart. The M24 entered"
+" service in September 1943. They were produced at Massey-Harris and General "
+"Motors factories until July 1945, with a total of 4,731 vehicles "
+"manufactured."
+
+msgid "A34_M24_Chaffee_short"
+msgstr "Chaffee"
+
+msgid "A35_Pershing"
+msgstr "M26 Pershing"
+
+msgid "A35_Pershing_descr"
+msgstr ""
+"American medium tank, named in honor of General John Pershing, who led the "
+"American Expeditionary Force during World War I. In 1944–1946 in the U.S. "
+"Army, the M26 was temporarily classified as heavy tank. Starting in February"
+" 1945 these vehicles took part in World War II; in 1950–1951 the vehicle saw"
+" combat in the Korean War."
+
+msgid "A35_Pershing_short"
+msgstr "Pershing"
+
+msgid "A37_M40M43"
+msgstr "M40/M43"
+
+msgid "A37_M40M43_descr"
+msgstr ""
+"Development started in the spring of 1944 due to a shortage of M1918 guns "
+"for the M12. The vehicle was based on the M4 Sherman and featured a HVSS-"
+"type suspension. The design allowed the 155-mm M1 gun and 203-mm M1 howitzer"
+" to be interchangeable (an SPG with the latter was designated the M43). The "
+"vehicle first saw service during Operation Zebra. A total of 418 M40 and 48 "
+"M43 vehicles were manufactured (another 24 M40s were reequipped)."
+
+msgid "A38_T92"
+msgstr "T92 HMC"
+
+msgid "A38_T92_descr"
+msgstr ""
+"A U.S. SPG developed in 1945 on the basis of the T26E3 for destroying "
+"bunkers and underground hideouts on islands of the Pacific. Five vehicles "
+"were built, including the experimental one. The project was discontinued "
+"when the war ended."
+
+msgid "A39_T28"
+msgstr "T28"
+
+msgid "A39_T28_descr"
+msgstr ""
+"The development of a superheavy vehicle with enhanced armor started in the "
+"second half of 1943. The design featured the power unit and electrical "
+"transmission of the experimental T23 medium tank. The vehicle was supposed "
+"to feature a new 105-mm anti-aircraft gun. The design was later used for the"
+" creation of the T95 assault tank. Existed only in blueprints."
+
+msgid "A39_T28_short"
+msgstr "T28"
+
+msgid "A40_T95"
+msgstr "T95"
+
+msgid "A40_T95_descr"
+msgstr ""
+"Development of this vehicle started in 1943, with 25 vehicles planned for "
+"production within a year. Two prototypes passed trials, but never saw "
+"action."
 
 msgid "A41_M18_Hellcat"
 msgstr "M18 Hellcat"
@@ -1668,6 +1988,19 @@ msgstr ""
 "chassis. Only one prototype was built. The trials demonstrated a number of "
 "technical and functional problems, and the vehicle never saw service."
 
+msgid "A57_M8A1"
+msgstr "M8A1"
+
+msgid "A57_M8A1_descr"
+msgstr ""
+"Developed in 1941 through 1942 on the basis of the M5 Stuart light tank. "
+"This SPG is an example of the successful use of an outdated chassis. The "
+"vehicle was equipped with a 75 mm short-barrel howitzer; however, attempts "
+"were made to fit a 75 mm tank gun into a modernized turret."
+
+msgid "A57_M8A1_short"
+msgstr "M8A1"
+
 msgid "A62_Ram-II_long_special"
 msgstr ""
 "A Tier V American medium tank. It has a fast-firing gun, a good amount of "
@@ -1677,6 +2010,9 @@ msgstr ""
 
 msgid "A62_Ram-II_short_special"
 msgstr "A fast-firing gun and sloped frontal armor"
+
+msgid "A63_M46_Patton"
+msgstr "M46 Patton"
 
 msgid "A63_M46_Patton_KR"
 msgstr "M46 Patton KR"
@@ -1698,6 +2034,51 @@ msgstr "M46 KR"
 msgid "A63_M46_Patton_KR_short_special"
 msgstr "A decent gun depression angle and view range"
 
+msgid "A63_M46_Patton_descr"
+msgstr ""
+"Developed in 1948 and 1949, the M46 Patton was a modernized and improved "
+"version of the M26 Pershing. A total of 1,168 M46 tanks, in two basic "
+"variants, were manufactured between 1949 and 1951. Pattons saw wide use in "
+"the Korean War."
+
+msgid "A63_M46_Patton_short"
+msgstr "M46 Patton"
+
+msgid "A64_T25_AT"
+msgstr "T25 AT"
+
+msgid "A64_T25_AT_descr"
+msgstr ""
+"The vehicle was developed based on the T23 tank, but the work on the project"
+" was discontinued at the concept exploration stage. The Command of the "
+"United States Army did not like the electric transmission and poor gun "
+"traverse limits."
+
+msgid "A64_T25_AT_short"
+msgstr "T25 AT"
+
+msgid "A66_M103"
+msgstr "M103"
+
+msgid "A66_M103_descr"
+msgstr ""
+"The development started in 1948. In 1952 the order was placed for production"
+" of 300 vehicles to fight in the Korean War. The tank was designated as "
+"M103."
+
+msgid "A67_T57_58"
+msgstr "T57 Heavy"
+
+msgid "A67_T57_58_descr"
+msgstr ""
+"A project for a heavy tank with an oscillating turret and automatic loader, "
+"developed from 1951. Experimental turrets for 120 mm and 155 mm guns were "
+"manufactured by 1957. However, the project was deemed unsuccessful and "
+"development was discontinued."
+
+msgid "A67_T57_58_short"
+msgstr "T57 Heavy"
+
 msgid "A68_T28_Prototype"
 msgstr "T28 Prototype"
 
@@ -1709,13 +2090,24 @@ msgstr ""
 "1943."
 
 msgid "A68_T28_Prototype_short"
-msgstr "T28 Prot."
+msgstr "T28 Prototype"
+
+msgid "A69_T110E5"
+msgstr "T110E5"
 
 msgid "A69_T110E5_7x7"
 msgstr "T110E5 7x7"
 
 msgid "A69_T110E5_7x7_short"
 msgstr "T110E5 7x7"
+
+msgid "A69_T110E5_descr"
+msgstr ""
+"Developed from 1952 as a heavy tank with more powerful armament, compared to"
+" the T-43 (M103). Restrictions were placed on the vehicle sizing as the tank"
+" was supposed to pass through the narrow tunnels of the Bernese Alps. "
+"Several designs were considered, but the project was canceled. No vehicles "
+"were ever manufactured."
 
 msgid "A72_T25_2"
 msgstr "T25/2"
@@ -1806,6 +2198,63 @@ msgstr ""
 msgid "A83_T110E4_short"
 msgstr "T110E4"
 
+msgid "A85_T110E3"
+msgstr "T110E3"
+
+msgid "A85_T110E3_descr"
+msgstr ""
+"In 1954, a conference on future heavy tanks was held in Detroit. Alongside "
+"other advanced projects, the Chrysler Corporation suggested a new tank on "
+"the basis of the TS-31 project. The main goal was to make the tank fit the "
+"Bern national tunnel. Several variants were considered, but the project was "
+"canceled."
+
+msgid "A85_T110E3_short"
+msgstr "T110E3"
+
+msgid "A87_M44"
+msgstr "M44"
+
+msgid "A87_M44_descr"
+msgstr ""
+"A 155 mm SPG on the chassis of the M41 light tank. The vehicle saw action in"
+" the Korean War. In the early 1960s, improved SPGs of this type with "
+"rotating turrets were introduced, and the M44 was removed from service. "
+"According to different sources, between 250 and 600 vehicles were "
+"manufactured from 1953 through 1954."
+
+msgid "A88_M53_55"
+msgstr "M53/M55"
+
+msgid "A88_M53_55_descr"
+msgstr ""
+"SPG on a modified chassis of the M47 medium tank. The prototype was produced"
+" in 1952, and in 1956 the SPG entered service in two variants: the M55 for "
+"the Army and the M53 for the Marines."
+
+msgid "A89_T54E1"
+msgstr "T54E1"
+
+msgid "A89_T54E1_descr"
+msgstr ""
+"A heavy tank with an oscillating turret and magazine loading system, it was "
+"developed from the M48 tank in the mid-50s. Two prototypes were built. "
+"However, during trials, the magazine loading system proved faulty and "
+"development was discontinued in 1957."
+
+msgid "A90_T69"
+msgstr "T69"
+
+msgid "A90_T69_descr"
+msgstr ""
+"A prototype with an oscillating turret and an automatic loading system "
+"developed at the beginning of 1955 and based on the T42 experimental medium "
+"tank. The vehicle underwent trials from June 1955 through April 1956. The "
+"vehicle never entered mass production or saw service."
+
+msgid "A90_T69_short"
+msgstr "T69"
+
 msgid "A93_T7_Combat_Car_long_special"
 msgstr ""
 "A Tier II American light tank with machine gun armament and good "
@@ -1817,6 +2266,19 @@ msgstr ""
 msgid "A93_T7_Combat_Car_short_special"
 msgstr "Good dynamics and great depression/elevation angles"
 
+msgid "A94_T37"
+msgstr "T37"
+
+msgid "A94_T37_descr"
+msgstr ""
+"The T37 light tank was developed by Detroit Arsenal in the late 1940s to "
+"replace the M24 Chaffee. An order was placed for three prototypes. Later, "
+"some technical innovations were applied in the development of the T41 and "
+"M41 tanks."
+
+msgid "A94_T37_short"
+msgstr "T37"
+
 msgid "A95_T95_E6_long_special"
 msgstr ""
 "A Tier X American medium tank with high damage per shot and good damage per "
@@ -1826,6 +2288,18 @@ msgstr ""
 
 msgid "A95_T95_E6_short_special"
 msgstr "Good damage per minute, decent dynamics, and a strong turret"
+
+msgid "A97_M41_Bulldog"
+msgstr "M41 Walker Bulldog"
+
+msgid "A97_M41_Bulldog_descr"
+msgstr ""
+"A further development of the T37 experimental tank. Underwent trials in "
+"1949. In 1950, the contract for mass production was signed. The tank was "
+"produced by the Cadillac Motor Car Division, a division of General Motors."
+
+msgid "A97_M41_Bulldog_short"
+msgstr "Bulldog"
 
 msgid "A99_T92_LT"
 msgstr "T92"
@@ -1880,6 +2354,9 @@ msgstr "AN/GRC-7A"
 msgid "AN_GRC_7B"
 msgstr "AN/GRC-7"
 
+msgid "AN_GRC_7BR"
+msgstr "AN/GRC-7BR"
+
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
 
@@ -1904,9 +2381,6 @@ msgstr "AN/VRC-24"
 msgid "AN_VRC-3"
 msgstr "AN/VRC-3"
 
-msgid "AN_VRC-3_FEP"
-msgstr "AN/VRC-3M"
-
 msgid "AN_VRC-3_Rush_Ep1"
 msgstr "AN/VRC-3S"
 
@@ -1927,6 +2401,12 @@ msgstr "AN/VRC-3I"
 
 msgid "AN_VRC_3_XM"
 msgstr "AN/VRC-3XM"
+
+msgid "AN_VRC_46"
+msgstr "AN/VRC-46"
+
+msgid "AN_VRC_47"
+msgstr "AN/VRC-47"
 
 msgid "AOI-1490"
 msgstr "Continental AOI-1490"
@@ -1964,6 +2444,45 @@ msgstr "Wireless Set No. 19"
 msgid "Buick_series_60"
 msgstr "Buick Series 60"
 
+msgid "Chassis_A01_T1_Cunningham"
+msgstr "T1 Cunningham"
+
+msgid "Chassis_A02_M2_lt"
+msgstr "M2A1 Light"
+
+msgid "Chassis_A02_M2_lt_2"
+msgstr "M2A4 Light"
+
+msgid "Chassis_A03_M3_Stuart"
+msgstr "M3 Stuart"
+
+msgid "Chassis_A03_M3_Stuart_2"
+msgstr "M3A1 Stuart"
+
+msgid "Chassis_A05_M4_Sherman"
+msgstr "M4A1 Sherman (early)"
+
+msgid "Chassis_A05_M4_Sherman_2"
+msgstr "M4A1 Sherman (late)"
+
+msgid "Chassis_A06_M4A3E8_Sherman"
+msgstr "M4A3E8 Sherman (early)"
+
+msgid "Chassis_A06_M4A3E8_Sherman_2"
+msgstr "M4A3E8 Sherman (late)"
+
+msgid "Chassis_A07_T20"
+msgstr "T20"
+
+msgid "Chassis_A07_T20_2"
+msgstr "T22E1"
+
+msgid "Chassis_A09_T1_hvy"
+msgstr "T1E2"
+
+msgid "Chassis_A09_T1_hvy_2"
+msgstr "T1E3"
+
 msgid "Chassis_A100_T49"
 msgstr "T49"
 
@@ -2000,6 +2519,12 @@ msgstr "T56 GMC"
 msgid "Chassis_A109_T56_GMC_2"
 msgstr "T57 GMC"
 
+msgid "Chassis_A10_M6"
+msgstr "M6"
+
+msgid "Chassis_A10_M6_2"
+msgstr "M6A1"
+
 msgid "Chassis_A111_T25_Pilot"
 msgstr "T25 Pilot Number 1"
 
@@ -2021,9 +2546,6 @@ msgstr "Chrysler K GF"
 msgid "Chassis_A116_XM551"
 msgstr "AR/AAV XM551 Sheridan"
 
-msgid "Chassis_A116_XM551_FEP"
-msgstr "XM551E4"
-
 msgid "Chassis_A117_T26E5"
 msgstr "T26E5"
 
@@ -2032,6 +2554,12 @@ msgstr "T26E5 Patriot"
 
 msgid "Chassis_A118_M4_Thunderbolt"
 msgstr "M4A3E8 Thunderbolt VII"
+
+msgid "Chassis_A11_T29"
+msgstr "T29"
+
+msgid "Chassis_A11_T29_2"
+msgstr "T29E3"
 
 msgid "Chassis_A120_M48A5"
 msgstr "M48A5 Patton"
@@ -2065,6 +2593,12 @@ msgstr "VVSS T412"
 
 msgid "Chassis_A129_T6_medium_2"
 msgstr "VVSS T482"
+
+msgid "Chassis_A12_T32"
+msgstr "T32"
+
+msgid "Chassis_A12_T32_2"
+msgstr "T32E1"
 
 msgid "Chassis_A130_Super_Hellcat"
 msgstr "Super Hellcat"
@@ -2101,9 +2635,6 @@ msgstr "Pawlack Tank B"
 
 msgid "Chassis_A143_M_V_Y"
 msgstr "M-V-Y"
-
-msgid "Chassis_A143_M_V_Y_FEP"
-msgstr "M-V-Y II"
 
 msgid "Chassis_A144_M_VI_Y"
 msgstr "M-VI-Y A"
@@ -2198,14 +2729,86 @@ msgstr "M103M"
 msgid "Chassis_A176_M103_110_CFE_R"
 msgstr "Rambo"
 
+msgid "Chassis_A179_Black_Rock"
+msgstr "Black Rock"
+
+msgid "Chassis_A182_T803"
+msgstr "T803"
+
+msgid "Chassis_A183_XM69_Hacker"
+msgstr "XM69 Hacker"
+
+msgid "Chassis_A18_M41"
+msgstr "T72"
+
+msgid "Chassis_A18_M41_2"
+msgstr "T72E1"
+
+msgid "Chassis_A22_M5_Stuart"
+msgstr "M5 Stuart"
+
+msgid "Chassis_A22_M5_Stuart_2"
+msgstr "M5A1 Stuart"
+
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
 
 msgid "Chassis_A27_T82_2"
 msgstr "T82 Pilot No. 2"
 
+msgid "Chassis_A30_M10_Wolverine"
+msgstr "M10 Wolverine (early)"
+
+msgid "Chassis_A30_M10_Wolverine_2"
+msgstr "M10 Wolverine (late)"
+
+msgid "Chassis_A31_M36_Slagger"
+msgstr "M36 Jackson"
+
+msgid "Chassis_A31_M36_Slagger_2"
+msgstr "M36B2 Jackson"
+
+msgid "Chassis_A32_M12"
+msgstr "M12T48"
+
+msgid "Chassis_A32_M12_2"
+msgstr "M12T51"
+
+msgid "Chassis_A34_M24_Chaffee"
+msgstr "T24 Chaffee"
+
+msgid "Chassis_A34_M24_Chaffee_2"
+msgstr "M24 Chaffee"
+
 msgid "Chassis_A34_M24_Chaffee_CFE_V"
 msgstr "Chaffee Camouflaged"
+
+msgid "Chassis_A35_Pershing"
+msgstr "T26E1"
+
+msgid "Chassis_A35_Pershing_2"
+msgstr "M26 Pershing"
+
+msgid "Chassis_A37_M40M43"
+msgstr "M40"
+
+msgid "Chassis_A37_M40M43_2"
+msgstr "M43"
+
+msgid "Chassis_A38_T92"
+msgstr "T92 HMC"
+
+msgid "Chassis_A39_T28"
+msgstr "T28 1944"
+
+msgid "Chassis_A39_T28_2"
+msgstr "T28 1945"
+
+msgid "Chassis_A40_T95"
+msgstr "T95 number 1"
+
+msgid "Chassis_A40_T95_2"
+msgstr "T95 number 2"
 
 msgid "Chassis_A41_M18_Hellcat"
 msgstr "T70"
@@ -2219,11 +2822,41 @@ msgstr "T3 HMC"
 msgid "Chassis_A46_T3_2"
 msgstr "T3 HMC improved"
 
+msgid "Chassis_A57_M8A1"
+msgstr "M8 HMC Scott"
+
+msgid "Chassis_A57_M8A1_2"
+msgstr "M8 GMC"
+
+msgid "Chassis_A63_M46_Patton"
+msgstr "M46 Patton"
+
+msgid "Chassis_A63_M46_Patton_2"
+msgstr "M46E1 Patton"
+
+msgid "Chassis_A64_T25_AT"
+msgstr "T25 AT (early)"
+
+msgid "Chassis_A64_T25_AT_2"
+msgstr "T25 AT (late)"
+
+msgid "Chassis_A66_M103"
+msgstr "T43"
+
+msgid "Chassis_A66_M103_2"
+msgstr "M103"
+
+msgid "Chassis_A67_T57_58"
+msgstr "T57 Heavy"
+
 msgid "Chassis_A68_T28_Prototype"
 msgstr "T28 Prototype"
 
 msgid "Chassis_A68_T28_Prototype_2"
 msgstr "T28E1 Prototype"
+
+msgid "Chassis_A69_T110E5"
+msgstr "T110E5"
 
 msgid "Chassis_A72_T25_2"
 msgstr "T25/2"
@@ -2237,65 +2870,50 @@ msgstr "M3A3 Stuart"
 msgid "Chassis_A83_T110E4"
 msgstr "T110E4"
 
+msgid "Chassis_A85_T110E3"
+msgstr "T110E3"
+
+msgid "Chassis_A87_M44"
+msgstr "T99E1"
+
+msgid "Chassis_A87_M44_2"
+msgstr "M44"
+
+msgid "Chassis_A88_M53_55"
+msgstr "T97/T108"
+
+msgid "Chassis_A88_M53_55_2"
+msgstr "M53/M55"
+
+msgid "Chassis_A89_T54E1"
+msgstr "T54E1 Pilot 1"
+
+msgid "Chassis_A89_T54E1_2"
+msgstr "T54E1 Pilot 2"
+
+msgid "Chassis_A90_T69"
+msgstr "T69 1955"
+
+msgid "Chassis_A90_T69_2"
+msgstr "T69 1956"
+
+msgid "Chassis_A94_T37"
+msgstr "T37"
+
+msgid "Chassis_A94_T37_2"
+msgstr "T41 pilot number 1"
+
+msgid "Chassis_A97_M41_Bulldog"
+msgstr "M41 Walker Bulldog"
+
+msgid "Chassis_A97_M41_Bulldog_2"
+msgstr "M41A1 Walker Bulldog"
+
 msgid "Chassis_A99_T92_LT"
 msgstr "T92"
 
-msgid "Chassis_M103"
-msgstr "T97E1"
-
-msgid "Chassis_M103_2"
-msgstr "T97E2"
-
-msgid "Chassis_M10_Wolverine"
-msgstr "M10T41"
-
-msgid "Chassis_M10_Wolverine_2"
-msgstr "M10T42"
-
-msgid "Chassis_M12"
-msgstr "M12T48"
-
-msgid "Chassis_M12_2"
-msgstr "M12T51"
-
 msgid "Chassis_M22_Locust"
 msgstr "VVST78"
-
-msgid "Chassis_M24_Chaffee"
-msgstr "T24"
-
-msgid "Chassis_M24_Chaffee_2"
-msgstr "M24"
-
-msgid "Chassis_M36_Slagger_4"
-msgstr "M36T41"
-
-msgid "Chassis_M36_Slagger_5"
-msgstr "M36T42"
-
-msgid "Chassis_M40M43"
-msgstr "M40"
-
-msgid "Chassis_M40M43_2"
-msgstr "M43"
-
-msgid "Chassis_M41_Bulldog"
-msgstr "M41"
-
-msgid "Chassis_M41_Bulldog_2"
-msgstr "M41A1"
-
-msgid "Chassis_M44"
-msgstr "T99E1"
-
-msgid "Chassis_M44_2"
-msgstr "M44"
-
-msgid "Chassis_M46_Patton"
-msgstr "M46T80E1"
-
-msgid "Chassis_M46_Patton_2"
-msgstr "M46T81"
 
 msgid "Chassis_M46_Patton_KR"
 msgstr "M46 Patton KR"
@@ -2306,35 +2924,17 @@ msgstr "M4A2E4T42"
 msgid "Chassis_M4_Improved"
 msgstr "M4 Improved"
 
-msgid "Chassis_M53_55"
-msgstr "T97/T108"
-
-msgid "Chassis_M53_55_2"
-msgstr "M53/M55"
-
 msgid "Chassis_M60"
 msgstr "M60"
 
 msgid "Chassis_M6A2E1"
 msgstr "M6A2E1HVSS"
 
-msgid "Chassis_M8A1"
-msgstr "VVS T16"
-
-msgid "Chassis_M8A1_2"
-msgstr "T36 E6"
-
 msgid "Chassis_Sherman_Jumbo"
 msgstr "VVSST48E2"
 
 msgid "Chassis_Sherman_Jumbo_2"
 msgstr "VVSST51E2"
-
-msgid "Chassis_T110"
-msgstr "T110E27"
-
-msgid "Chassis_T110E3"
-msgstr "T110E3"
 
 msgid "Chassis_T18"
 msgstr "T18E1"
@@ -2354,29 +2954,11 @@ msgstr "VVSS T48M1A2"
 msgid "Chassis_T25_2_SH"
 msgstr "T25/2M"
 
-msgid "Chassis_T25_AT"
-msgstr "T25T1"
-
-msgid "Chassis_T25_AT_2"
-msgstr "T25T2"
-
 msgid "Chassis_T26_E4_SuperPershing"
 msgstr "M26T80E1"
 
 msgid "Chassis_T26_E4_SuperPershing_SH"
 msgstr "T26E4M"
-
-msgid "Chassis_T28"
-msgstr "T28VVSS T46"
-
-msgid "Chassis_T28_2"
-msgstr "T28VVSS T56"
-
-msgid "Chassis_T37"
-msgstr "T37"
-
-msgid "Chassis_T37_2"
-msgstr "T41 pilot number 1"
 
 msgid "Chassis_T40"
 msgstr "T40T41"
@@ -2390,21 +2972,6 @@ msgstr "T49E1"
 msgid "Chassis_T49_2"
 msgstr "T49E2"
 
-msgid "Chassis_T54E1"
-msgstr "T54E1"
-
-msgid "Chassis_T54E1_2"
-msgstr "T54E1M2"
-
-msgid "Chassis_T57_58"
-msgstr "T97"
-
-msgid "Chassis_T69"
-msgstr "T84E1"
-
-msgid "Chassis_T69_2"
-msgstr "T95"
-
 msgid "Chassis_T69_2_SH"
 msgstr "T69M"
 
@@ -2416,15 +2983,6 @@ msgstr "T71 DA improved"
 
 msgid "Chassis_T7_Combat_Car"
 msgstr "T7 Combat Car"
-
-msgid "Chassis_T92"
-msgstr "T92 HMC"
-
-msgid "Chassis_T95"
-msgstr "T95HVSS"
-
-msgid "Chassis_T95_2"
-msgstr "T95HVSSM2"
 
 msgid "Chassis_T95_E2"
 msgstr "T95E2"
@@ -2491,62 +3049,46 @@ msgstr ""
 "Continental\n"
 "AOI-628-2"
 
+msgid "Continental_AOI_1490E3"
+msgstr "Continental AOI-1490E3"
+
+msgid "Continental_AOI_1490E3_short"
+msgstr ""
+"Continental\n"
+"AOI-1490E3"
+
+msgid "Continental_AOI_1490E5"
+msgstr "Continental AOI-1490E5"
+
+msgid "Continental_AOI_1490E5_short"
+msgstr ""
+"Continental\n"
+"AOI-1490E5"
+
 msgid "Continental_AOI_1490_1"
 msgstr "Continental AOI-1490-1"
+
+msgid "Continental_AOI_628_1_CMCD"
+msgstr "Continental AOI-628-1 (CMCD)"
+
+msgid "Continental_AOI_628_1_CMCD_short"
+msgstr ""
+"Continental\n"
+"AOI-628-1 (CMCD)"
 
 msgid "Continental_AOI_628_2A"
 msgstr "Continental AOI-628-2A"
 
-msgid "Continental_AOS-895-1"
-msgstr "Continental AOS-895-1"
+msgid "Continental_AOI_628_2_CMCD"
+msgstr "Continental AOI-628-2 (CMCD)"
 
-msgid "Continental_AOS-895-1_short"
+msgid "Continental_AOI_628_2_CMCD_short"
 msgstr ""
 "Continental\n"
-"AOS-895-1"
-
-msgid "Continental_AOS-895-3"
-msgstr "Continental AOS-895-3"
-
-msgid "Continental_AOS-895-3A"
-msgstr "Continental AOS-895-3A"
-
-msgid "Continental_AOS-895-3A_short"
-msgstr ""
-"Continental\n"
-"AOS-895-3A"
-
-msgid "Continental_AOS-895-3_short"
-msgstr ""
-"Continental\n"
-"AOS-895-3"
-
-msgid "Continental_AOSI-895-5"
-msgstr "Continental AOSI-895-5"
-
-msgid "Continental_AOSI-895-5A"
-msgstr "Continental AOSI-895-5A"
-
-msgid "Continental_AOSI-895-5A_short"
-msgstr ""
-"Continental\n"
-"AOSI-895-5A"
-
-msgid "Continental_AOSI-895-5B"
-msgstr "Continental AOSI-895-5B"
-
-msgid "Continental_AOSI-895-5B_short"
-msgstr ""
-"Continental\n"
-"AOSI-895-5B"
+"AOI-628-2 (CMCD)"
 
 msgid "Continental_AOSI-895-5_SH"
 msgstr "Continental AOSI-895-5C"
-
-msgid "Continental_AOSI-895-5_short"
-msgstr ""
-"Continental\n"
-"AOSI-895-5"
 
 msgid "Continental_AOSI_1195_5"
 msgstr "Continental AOSI-1195-5"
@@ -2610,12 +3152,6 @@ msgstr ""
 "Continental\n"
 "AOSI-1195-5 Y VI B"
 
-msgid "Continental_AOSI_1195_5_Y_V_FEP"
-msgstr "Continental AOSI-1195-7 Y V M"
-
-msgid "Continental_AOSI_1195_5_Y_V_FEP_short"
-msgstr "Continental AOSI-1195-7 Y V M"
-
 msgid "Continental_AOSI_1195_5_Y_V_short"
 msgstr ""
 "Continental\n"
@@ -2626,8 +3162,88 @@ msgstr ""
 "Continental\n"
 "AOSI-1195-5"
 
+msgid "Continental_AOSI_895_5"
+msgstr "Continental AOSI-895-5"
+
+msgid "Continental_AOSI_895_5A"
+msgstr "Continental AOSI-895-5A"
+
+msgid "Continental_AOSI_895_5A_M41"
+msgstr "Continental AOSI-895-5A (M41)"
+
+msgid "Continental_AOSI_895_5A_M41_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-5A (M41)"
+
+msgid "Continental_AOSI_895_5A_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-5A"
+
+msgid "Continental_AOSI_895_5B"
+msgstr "Continental AOSI-895-5B"
+
+msgid "Continental_AOSI_895_5B_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-5B"
+
+msgid "Continental_AOSI_895_5_M44"
+msgstr "Continental AOSI-895-5 (M44)"
+
+msgid "Continental_AOSI_895_5_M44_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-5 (M44)"
+
+msgid "Continental_AOSI_895_5_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-5"
+
+msgid "Continental_AOS_895_1"
+msgstr "Continental AOS-895-1"
+
+msgid "Continental_AOS_895_1_short"
+msgstr ""
+"Continental\n"
+"AOS-895-1"
+
+msgid "Continental_AOS_895_3"
+msgstr "Continental AOS-895-3"
+
+msgid "Continental_AOS_895_3A"
+msgstr "Continental AOS-895-3A"
+
+msgid "Continental_AOS_895_3A_T37"
+msgstr "Continental AOS-895-3A (T37)"
+
+msgid "Continental_AOS_895_3A_T37_short"
+msgstr ""
+"Continental\n"
+"AOS-895-3A (T37)"
+
+msgid "Continental_AOS_895_3A_short"
+msgstr ""
+"Continental\n"
+"AOS-895-3A"
+
 msgid "Continental_AOS_895_3B"
 msgstr "Continental AOS-895-3B"
+
+msgid "Continental_AOS_895_3_M44"
+msgstr "Continental AOS-895-3 (M44)"
+
+msgid "Continental_AOS_895_3_M44_short"
+msgstr ""
+"Continental\n"
+"AOS-895-3 (M44)"
+
+msgid "Continental_AOS_895_3_short"
+msgstr ""
+"Continental\n"
+"AOS-895-3"
 
 msgid "Continental_AV-1790-1"
 msgstr "Continental AV-1790-1"
@@ -2639,14 +3255,6 @@ msgid "Continental_AV-1790-1A_short"
 msgstr ""
 "Continental\n"
 "AV-1790-1"
-
-msgid "Continental_AV-1790-1M2"
-msgstr "Continental AV-1790-7"
-
-msgid "Continental_AV-1790-1M2_short"
-msgstr ""
-"Continental\n"
-"AV-1790-7"
 
 msgid "Continental_AV-1790-1_short"
 msgstr ""
@@ -2675,37 +3283,13 @@ msgstr ""
 msgid "Continental_AV-1790-5"
 msgstr "Continental AV-1790-5"
 
-msgid "Continental_AV-1790-5B"
-msgstr "Continental AV-1790-5B"
-
 msgid "Continental_AV-1790-5B_E2"
 msgstr "Continental AV-1790-5B E2"
-
-msgid "Continental_AV-1790-5B_short"
-msgstr ""
-"Continental\n"
-"AV-1790-5B"
 
 msgid "Continental_AV-1790-5_short"
 msgstr ""
 "Continental\n"
 "AV-1790-5"
-
-msgid "Continental_AV-1790-7B"
-msgstr "Continental AV-1790-7B"
-
-msgid "Continental_AV-1790-7B_short"
-msgstr ""
-"Continental\n"
-"AV-1790-7B"
-
-msgid "Continental_AV-1790-7C"
-msgstr "Continental AV-1790-7C"
-
-msgid "Continental_AV-1790-7C_short"
-msgstr ""
-"Continental\n"
-"AV-1790-7C"
 
 msgid "Continental_AV-1790-7M"
 msgstr "Continental AV-1790-7M"
@@ -2714,6 +3298,14 @@ msgid "Continental_AV-1790-7M_short"
 msgstr ""
 "Continental\n"
 "AV-1790-7M"
+
+msgid "Continental_AVCR_1100_2"
+msgstr "Continental AVCR-1100-2"
+
+msgid "Continental_AVCR_1100_2_short"
+msgstr ""
+"Continental\n"
+"AVCR-1100-2"
 
 msgid "Continental_AVCR_1100_3"
 msgstr "Continental AVCR-1100-3"
@@ -2726,6 +3318,9 @@ msgstr ""
 "Continental\n"
 "AVDS-1790-2"
 
+msgid "Continental_AVDS_1790_2"
+msgstr "Continental AVDS-1790-2"
+
 msgid "Continental_AVDS_1790_2D"
 msgstr "Continental AVDS-1790-2D"
 
@@ -2733,6 +3328,9 @@ msgid "Continental_AVDS_1790_2D_short"
 msgstr ""
 "Continental\n"
 "AVDS-1790-2D"
+
+msgid "Continental_AVDS_1790_8BR"
+msgstr "Continental AVDS-1790-8BR"
 
 msgid "Continental_AVI-1790-8"
 msgstr "Continental AVI-1790-8"
@@ -2798,6 +3396,38 @@ msgstr ""
 "Continental\n"
 "AV-1790-1/2"
 
+msgid "Continental_AV_1790_1_M26"
+msgstr "Continental AV-1790-1 (M26)"
+
+msgid "Continental_AV_1790_1_M26_short"
+msgstr ""
+"Continental\n"
+"AV-1790-1 (M26)"
+
+msgid "Continental_AV_1790_1_M46"
+msgstr "Continental AV-1790-1 (M46)"
+
+msgid "Continental_AV_1790_1_M46_short"
+msgstr ""
+"Continental\n"
+"AV-1790-1 (M46)"
+
+msgid "Continental_AV_1790_1_T25_AT"
+msgstr "Continental AV-1790-1 (T25 AT)"
+
+msgid "Continental_AV_1790_1_T25_AT_short"
+msgstr ""
+"Continental\n"
+"AV-1790-1 (T25 AT)"
+
+msgid "Continental_AV_1790_1_T54E1"
+msgstr "Continental AV-1790-1 (T54E1)"
+
+msgid "Continental_AV_1790_1_T54E1_short"
+msgstr ""
+"Continental\n"
+"AV-1790-1 (T54E1)"
+
 msgid "Continental_AV_1790_3_30"
 msgstr "Continental AV-1790-3/30"
 
@@ -2805,6 +3435,14 @@ msgid "Continental_AV_1790_3_30_short"
 msgstr ""
 "Continental\n"
 "AV-1790-3/30"
+
+msgid "Continental_AV_1790_3_T32"
+msgstr "Continental AV-1790-3 (T32)"
+
+msgid "Continental_AV_1790_3_T32_short"
+msgstr ""
+"Continental\n"
+"AV-1790-3 (T32)"
 
 msgid "Continental_AV_1790_5A"
 msgstr "Continental AV-1790-5A"
@@ -2825,6 +3463,22 @@ msgstr ""
 "Continental\n"
 "AV-1790-5B-3"
 
+msgid "Continental_AV_1790_5B_M103"
+msgstr "Continental AV-1790-5B (M103)"
+
+msgid "Continental_AV_1790_5B_M103_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5B (M103)"
+
+msgid "Continental_AV_1790_5B_T54E1"
+msgstr "Continental AV-1790-5B (T54E1)"
+
+msgid "Continental_AV_1790_5B_T54E1_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5B"
+
 msgid "Continental_AV_1790_5C"
 msgstr "Continental AV-1790-5C"
 
@@ -2841,6 +3495,25 @@ msgstr ""
 "Continental\n"
 "AV-1790-5C"
 
+msgid "Continental_AV_1790_7"
+msgstr "Continental AV-1790-7"
+
+msgid "Continental_AV_1790_7B"
+msgstr "Continental AV-1790-7B"
+
+msgid "Continental_AV_1790_7B_short"
+msgstr ""
+"Continental\n"
+"AV-1790-7B"
+
+msgid "Continental_AV_1790_7C"
+msgstr "Continental AV-1790-7C"
+
+msgid "Continental_AV_1790_7C_short"
+msgstr ""
+"Continental\n"
+"AV-1790-7C"
+
 msgid "Continental_AV_1790_7_12B"
 msgstr "Continental AV-1790-7-12B"
 
@@ -2848,6 +3521,11 @@ msgid "Continental_AV_1790_7_12B_short"
 msgstr ""
 "Continental\n"
 "AV-1790-7-12B"
+
+msgid "Continental_AV_1790_7_short"
+msgstr ""
+"Continental\n"
+"AV-1790-7"
 
 msgid "Continental_AX_1770"
 msgstr "Continental AX-1770"
@@ -2865,10 +3543,18 @@ msgstr ""
 "Continental\n"
 "R-670-5"
 
-msgid "Continental_R-975-C1"
+msgid "Continental_R_975_C1"
 msgstr "Continental R-975-C1"
 
-msgid "Continental_R-975-C1_short"
+msgid "Continental_R_975_C1_M8A1"
+msgstr "Continental R-975-C1 (M8A1)"
+
+msgid "Continental_R_975_C1_M8A1_short"
+msgstr ""
+"Continental\n"
+"R-975-C1 (M8A1)"
+
+msgid "Continental_R_975_C1_short"
 msgstr ""
 "Continental\n"
 "R-975-C1"
@@ -2897,10 +3583,10 @@ msgstr ""
 "Continental\n"
 "W-670"
 
-msgid "Continental_W670-7"
+msgid "Continental_W_670_7"
 msgstr "Continental W-670-7"
 
-msgid "Continental_W670-7_short"
+msgid "Continental_W_670_7_short"
 msgstr ""
 "Continental\n"
 "W-670-7"
@@ -2913,13 +3599,29 @@ msgstr ""
 "Continental\n"
 "W-670-9A"
 
+msgid "Continental_W_670_M3"
+msgstr "Continental W-670 (M3)"
+
+msgid "Continental_W_670_M3_short"
+msgstr ""
+"Continental\n"
+"W-670 (M3)"
+
+msgid "Continental_W_670_M41"
+msgstr "Continental W-670 (M41)"
+
+msgid "Continental_W_670_M41_short"
+msgstr ""
+"Continental\n"
+"W-670 (M41)"
+
 msgid "Crysler_A57"
 msgstr "Chrysler A57"
 
-msgid "Cuiberson_T-10204"
+msgid "Cuiberson_T_10204"
 msgstr "Guiberson T-10204"
 
-msgid "Cuiberson_T-10204_short"
+msgid "Cuiberson_T_10204_short"
 msgstr ""
 "Guiberson\n"
 "T-10204"
@@ -2930,35 +3632,14 @@ msgstr "Cunningham V-type"
 msgid "Cunningham_D1"
 msgstr "Cunningham D1"
 
-msgid "Cunningham_D2"
-msgstr "Cunningham D2"
-
 msgid "Cunningham_E1"
 msgstr "Cunningham E1"
-
-msgid "Cunningham_E2"
-msgstr "Cunningham E2"
 
 msgid "Cunningham_type_3"
 msgstr "Cunningham V8"
 
 msgid "Curtiss_D_12"
 msgstr "Curtiss D-12"
-
-msgid "D37812"
-msgstr "D37812"
-
-msgid "D39273"
-msgstr "D39273"
-
-msgid "D51066"
-msgstr "D51066"
-
-msgid "D51072"
-msgstr "D51072"
-
-msgid "D51080"
-msgstr "D51080"
 
 msgid "D51080_BPXIV"
 msgstr "D51080"
@@ -2975,17 +3656,38 @@ msgstr "Ford GAA A"
 msgid "Ford_GAA_BPXIV"
 msgstr "Ford GAA"
 
+msgid "Ford_GAA_M10"
+msgstr "Ford GAA (M10)"
+
+msgid "Ford_GAA_M36"
+msgstr "Ford GAA (M36)"
+
+msgid "Ford_GAA_M4A3"
+msgstr "Ford GAA (M4A3)"
+
 msgid "Ford_GAA_R"
 msgstr "Ford GAA early"
 
+msgid "Ford_GAA_T20"
+msgstr "Ford GAA (T20)"
+
+msgid "Ford_GAA_early_M12"
+msgstr "Ford GAA early (M12)"
+
+msgid "Ford_GAA_early_M43"
+msgstr "Ford GAA early (M43)"
+
 msgid "Ford_GAC"
-msgstr "Ford GAZ"
+msgstr "Ford GAC"
 
 msgid "Ford_GAC_MapsTraining_Player_HT_1"
-msgstr "Ford GAZ"
+msgstr "Ford GAC"
 
 msgid "Ford_GAC_R"
 msgstr "Ford GAC"
+
+msgid "Ford_GAC_T29"
+msgstr "Ford GAC (T29)"
 
 msgid "Ford_GAF"
 msgstr "Ford GAF"
@@ -2995,6 +3697,12 @@ msgstr "Ford GAFM2A1"
 
 msgid "Ford_GAFM2_28P"
 msgstr "Ford GAFM2/28P"
+
+msgid "Ford_GAFM2_T28"
+msgstr "Ford GAFM2 (T28)"
+
+msgid "Ford_GAFM2_T95"
+msgstr "Ford GAFM2 (T95)"
 
 msgid "Ford_GAFM4"
 msgstr "Ford GAFM2A2"
@@ -3007,6 +3715,12 @@ msgstr "Ford GAF (500)"
 
 msgid "Ford_GAF_R1"
 msgstr "Ford GAF (T92 HMC)"
+
+msgid "Ford_GAF_T28"
+msgstr "Ford GAF (T28)"
+
+msgid "Ford_GAF_T95"
+msgstr "Ford GAF (T95)"
 
 msgid "Ford_GAF_V8"
 msgstr "Ford GAF V8"
@@ -3032,19 +3746,20 @@ msgstr "Ford GAN B"
 msgid "Ford_GAN_T"
 msgstr "Ford GAN No. 17"
 
+msgid "Ford_GAN_T20"
+msgstr "Ford GAN (T20)"
+
+msgid "Ford_GAN_T25_AT"
+msgstr "Ford GAN (T25 AT)"
+
 msgid "FuG_7_Ausf_F"
 msgstr "FuG 7 Ausf. F"
 
 msgid "GMC_6046"
 msgstr "GMC 6046"
 
-msgid "GMC_Allison_V1710-E32"
-msgstr "GMC Allison V1710-E32"
-
-msgid "GMC_Allison_V1710-E32_short"
-msgstr ""
-"GMC Allison\n"
-"V1710-E32"
+msgid "GMC_6046_M10"
+msgstr "GMC 6046 (M10)"
 
 msgid "GM_12V71T"
 msgstr "GM 12V71T"
@@ -3064,16 +3779,18 @@ msgstr "General Motors 6046"
 msgid "General_Motors_6V53T"
 msgstr "General Motors 6V53T"
 
-msgid "General_Motors_6V53T_FEP"
-msgstr "General Motors 6V53TA2"
-
-msgid "General_Motors_6V53T_FEP_short"
-msgstr "General Motors 6V53TA2"
-
 msgid "General_Motors_6V53T_short"
 msgstr ""
 "General Motors\n"
 "6V53T"
+
+msgid "General_Motors_Allison_V_1710_E32"
+msgstr "General Motors Allison V-1710-E32"
+
+msgid "General_Motors_Allison_V_1710_E32_short"
+msgstr ""
+"GM Allison\n"
+"V-1710-E32"
 
 msgid "Guiberson_T-1020-4"
 msgstr "Guiberson T-1020-4"
@@ -3083,23 +3800,13 @@ msgstr ""
 "Guiberson\n"
 "T-1020-4"
 
-msgid "HVS1"
-msgstr "HVS1"
+msgid "Guiberson_T_1020_4_M3"
+msgstr "Guiberson T-1020-4 (M3)"
 
-msgid "HVS2"
-msgstr "HVS2"
-
-msgid "HVSST31"
-msgstr "HVSS T31"
-
-msgid "HVSST35"
-msgstr "HVSS T35"
-
-msgid "HVSS_T48"
-msgstr "HVSS T48"
-
-msgid "HVSS_T51"
-msgstr "HVSS T51"
+msgid "Guiberson_T_1020_4_M3_short"
+msgstr ""
+"Guiberson\n"
+"T-1020-4 (M3)"
 
 msgid "Hercules_HXE"
 msgstr "Hercules HXE"
@@ -3121,40 +3828,6 @@ msgstr "Liberty L12"
 
 msgid "Licoming_0-435t"
 msgstr "Lycoming O-435T"
-
-msgid "M103"
-msgstr "M103"
-
-msgid "M103_descr"
-msgstr ""
-"The development started in 1948. In 1952 the order was placed for production"
-" of 300 vehicles to fight in the Korean War. The tank was designated as "
-"M103."
-
-msgid "M10_Wolverine"
-msgstr "M10 Wolverine"
-
-msgid "M10_Wolverine_descr"
-msgstr ""
-"The most widely produced American tank destroyer, with a total of 6,706 "
-"vehicles manufactured from September 1942 through January 1944. More than a "
-"third of all Wolverines were supplied to the Allied nations under Lend-"
-"Lease."
-
-msgid "M10_Wolverine_short"
-msgstr "Wolverine"
-
-msgid "M12"
-msgstr "M12"
-
-msgid "M12_descr"
-msgstr ""
-"Development of the SPG started in the second half of 1941. The prototype "
-"underwent trials on February 12, 1942 and saw service in July 1942. The "
-"Pressed Steel Car Company produced 100 vehicles. Baldwin Locomotive Works "
-"modified the SPGs and re-equipped some M30 carriers. The vehicle saw service"
-" in the field artillery battalions and was used by the U.S.A. forces in "
-"Western Europe."
 
 msgid "M22_Locust"
 msgstr "M22 Locust"
@@ -3181,45 +3854,11 @@ msgstr "A great top speed and dynamics, with good concealment"
 msgid "M24A1"
 msgstr "M24A1"
 
-msgid "M24_Chaffee"
-msgstr "M24 Chaffee"
-
-msgid "M24_Chaffee_descr"
-msgstr ""
-"The vehicle was intended as a replacement for the M3 Stuart. The M24 entered"
-" service in September 1943. They were produced at Massey-Harris and General "
-"Motors factories until July 1945, with a total of 4,731 vehicles "
-"manufactured."
-
-msgid "M24_Chaffee_short"
-msgstr "Chaffee"
-
-msgid "M2D27810"
-msgstr "M2D27810"
-
-msgid "M2D27812"
-msgstr "M2D27812"
-
 msgid "M2M19"
 msgstr "M2M19"
 
 msgid "M2M7"
 msgstr "M2M7"
-
-msgid "M2_lt"
-msgstr "M2 Light Tank"
-
-msgid "M2_lt_descr"
-msgstr ""
-"Development of the vehicle based on the M2A3 model was started in December "
-"1938. The tank featured a new two-man turret with more powerful armament. A "
-"total of 365 vehicles were manufactured from May 1940 through March 1941. In"
-" April 1942, ten additional tanks were produced for training purposes. Some "
-"vehicles were supplied to the U.K. under Lend-Lease, others were deployed "
-"with the U.S. Marine Corps and saw combat in the Pacific Theater."
-
-msgid "M2_lt_short"
-msgstr "M2 Light"
 
 msgid "M2_med"
 msgstr "M2 Medium Tank"
@@ -3236,18 +3875,6 @@ msgstr ""
 
 msgid "M2_med_short"
 msgstr "M2 Medium"
-
-msgid "M36_Slagger"
-msgstr "M36 Jackson"
-
-msgid "M36_Slagger_descr"
-msgstr ""
-"The most powerful American tank destroyer. The M36 was developed on the "
-"chassis of the M10A1 and M10, with a total of 2,324 vehicles manufactured "
-"from November 1943 through September 1945."
-
-msgid "M36_Slagger_short"
-msgstr "Jackson"
 
 msgid "M37"
 msgstr "M37"
@@ -3276,78 +3903,17 @@ msgstr ""
 msgid "M3_S"
 msgstr "M3 S"
 
-msgid "M3_Stuart"
-msgstr "M3 Stuart"
-
-msgid "M3_Stuart_descr"
-msgstr ""
-"Developed in 1938 through 1941 on the basis of the M2. Mass-produced from "
-"1941. More than 13,000 vehicles in various versions were built, from the M3 "
-"to the M3A3, all of which were supplied to almost every allied nation under "
-"Lend-Lease. The M3 tanks were designated Stuart I by the British, while the "
-"M3A1 version received the designation Stuart III. The M3 first saw action in"
-" the battle at Sidi Rezegh."
-
-msgid "M40M43"
-msgstr "M40/M43"
-
-msgid "M40M43_descr"
-msgstr ""
-"Development started in the spring of 1944 due to a shortage of M1918 guns "
-"for the M12. The vehicle was based on the M4 Sherman and featured a HVSS-"
-"type suspension. The design allowed the 155-mm M1 gun and 203-mm M1 howitzer"
-" to be interchangeable (an SPG with the latter was designated the M43). The "
-"vehicle first saw service during Operation Zebra. A total of 418 M40 and 48 "
-"M43 vehicles were manufactured (another 24 M40s were reequipped)."
-
-msgid "M41"
-msgstr "M41 HMC"
-
-msgid "M41_Bulldog"
-msgstr "M41 Walker Bulldog"
-
 msgid "M41_Bulldog_FL"
 msgstr "M41 Walker Bulldog FL"
 
 msgid "M41_Bulldog_FL_short"
 msgstr "Bulldog FL"
 
-msgid "M41_Bulldog_descr"
-msgstr ""
-"A further development of the T37 experimental tank. Underwent trials in "
-"1949. In 1950, the contract for mass production was signed. The tank was "
-"produced by the Cadillac Motor Car Division, a division of General Motors."
-
-msgid "M41_Bulldog_short"
-msgstr "M41 Bulldog"
-
-msgid "M41_descr"
-msgstr ""
-"Light SPG on the M24 chassis saw service in the U.S. Army until the mid "
-"1950s. Some vehicles were supplied to France. According to various sources, "
-"about 85–250 SPGs were manufactured."
-
-msgid "M44"
-msgstr "M5"
-
-msgid "M46_Patton"
-msgstr "M46 Patton"
-
 msgid "M46_Patton_FL"
 msgstr "M46 Patton FL"
 
 msgid "M46_Patton_FL_short"
 msgstr "M46 FL"
-
-msgid "M46_Patton_descr"
-msgstr ""
-"Developed in 1948 and 1949, the M46 Patton was a modernized and improved "
-"version of the M26 Pershing. A total of 1,168 M46 tanks, in two basic "
-"variants, were manufactured between 1949 and 1951. Pattons saw wide use in "
-"the Korean War."
-
-msgid "M46_Patton_short"
-msgstr "M46 Patton"
 
 msgid "M47"
 msgstr "M47"
@@ -3373,58 +3939,6 @@ msgstr "M4A2E4"
 
 msgid "M4A2E4_short_special"
 msgstr "Good frontal armoring and view range"
-
-msgid "M4A3E8_Sherman"
-msgstr "M4A3E8 Sherman"
-
-msgid "M4A3E8_Sherman_descr"
-msgstr ""
-"The M4A3E8 is one of the most mass-produced modifications of the main U.S. "
-"armored vehicle of the World War II period. The tank featured the welded "
-"hull and Ford GAA carburetor engine. A total of 11,424 vehicles with the "
-"improved HVSS suspension were produced by Fisher Tank Arsenal and Detroit "
-"Tank Arsenal from June 1942 through March 1945. The vehicle is also known as"
-" M4A3(76)W. It took part in many after-war conflicts up to the Indo-"
-"Pakistani War of 1965."
-
-msgid "M4A3E8_Sherman_short"
-msgstr "M4A3E8"
-
-msgid "M4_Sherman"
-msgstr "M4A1 Sherman"
-
-msgid "M4_Sherman_descr"
-msgstr ""
-"The first production version of the Sherman, the most common American tank, "
-"with an amazing total of 49,234 vehicles manufactured. The Sherman first saw"
-" combat in North Africa."
-
-msgid "M4_Sherman_short"
-msgstr "M4A1"
-
-msgid "M53_55"
-msgstr "M53/M55"
-
-msgid "M53_55_descr"
-msgstr ""
-"SPG on a modified chassis of the M47 medium tank. The prototype was produced"
-" in 1952, and in 1956 the SPG entered service in two variants: the M55 for "
-"the Army and the M53 for the Marines."
-
-msgid "M5_Stuart"
-msgstr "M5 Stuart"
-
-msgid "M5_Stuart_descr"
-msgstr ""
-"A further modification of the M3 Stuart, the M5 entered production in April "
-"1942. By June 1944 a total of 8,884 vehicles in two variants had been "
-"produced. The tank was used in all theaters of war."
-
-msgid "M5_Stuart_short"
-msgstr "M5 Stuart"
-
-msgid "M6"
-msgstr "M6"
 
 msgid "M60"
 msgstr "M60"
@@ -3469,23 +3983,6 @@ msgstr ""
 msgid "M6A2E1_short_special"
 msgstr "Decent frontal armor and good depression/elevation angles"
 
-msgid "M6D1"
-msgstr "M6D1"
-
-msgid "M6D2"
-msgstr "M6D2"
-
-msgid "M6_descr"
-msgstr ""
-"A variant of the heavy tank developed in the U.S. from May 1940, this "
-"vehicle featured a cast hull and hydromechanical suspension with a two-disc "
-"hydraulic converter. The vehicle was standardized on May 26, 1942. A total "
-"of 9 vehicles were manufactured (8 serial and 1 experimental), but never saw"
-" action."
-
-msgid "M7"
-msgstr "M5A1"
-
 msgid "M7D1"
 msgstr "M7D1"
 
@@ -3512,19 +4009,6 @@ msgstr ""
 
 msgid "M7_med_short"
 msgstr "M7"
-
-msgid "M8A1"
-msgstr "M8A1"
-
-msgid "M8A1_descr"
-msgstr ""
-"Developed in 1941 through 1942 on the basis of the M5 Stuart light tank. "
-"This SPG is an example of the successful use of an outdated chassis. The "
-"vehicle was equipped with a 75 mm short-barrel howitzer; however, attempts "
-"were made to fit a 75 mm tank gun into a modernized turret."
-
-msgid "M8A1_short"
-msgstr "M8A1"
 
 msgid "MTLS-1G14"
 msgstr "MTLS-1G14"
@@ -3553,12 +4037,6 @@ msgstr "Maybach HL 230 P30"
 msgid "N19Mk1_Crab"
 msgstr "WS No. 19 Mk. I"
 
-msgid "NVSS_T66"
-msgstr "NVSS T66"
-
-msgid "NVSS_T80"
-msgstr "NVSS T80"
-
 msgid "NVSS_T80_BPXIV"
 msgstr "NVSS T80"
 
@@ -3570,26 +4048,6 @@ msgstr "QF 2-pdr Mk. IX"
 
 msgid "PLT_27"
 msgstr "PLT-27"
-
-msgid "Pershing"
-msgstr "M26 Pershing"
-
-msgid "Pershing_descr"
-msgstr ""
-"American medium tank, named in honor of General John Pershing, who led the "
-"American Expeditionary Force during World War I. In 1944–1946 in the U.S. "
-"Army, the M26 was temporarily classified as heavy tank. Starting in February"
-" 1945 these vehicles took part in World War II; in 1950–1951 the vehicle saw"
-" combat in the Korean War."
-
-msgid "Pershing_short"
-msgstr "Pershing"
-
-msgid "Pershingchassis1"
-msgstr "M26T80E1"
-
-msgid "Pershingchassis2"
-msgstr "M26T81"
 
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6-pdr Mk. III"
@@ -3700,23 +4158,6 @@ msgstr "T14"
 msgid "T-14_MapsTraining_Player_HT_1"
 msgstr "T14"
 
-msgid "T110"
-msgstr "T110E5"
-
-msgid "T110E3"
-msgstr "T110E3"
-
-msgid "T110E3_descr"
-msgstr ""
-"In 1954, a conference on future heavy tanks was held in Detroit. Alongside "
-"other advanced projects, the Chrysler Corporation suggested a new tank on "
-"the basis of the TS-31 project. The main goal was to make the tank fit the "
-"Bern national tunnel. Several variants were considered, but the project was "
-"canceled."
-
-msgid "T110E3_short"
-msgstr "T110E3"
-
 msgid "T110E4_7x7"
 msgstr "T110E4 7v7"
 
@@ -3734,25 +4175,8 @@ msgstr "T110E4 7v7"
 msgid "T110_cl"
 msgstr "T110E5 CL"
 
-msgid "T110_descr"
-msgstr ""
-"Developed from 1952 as a heavy tank with more powerful armament, compared to"
-" the T-43 (M103). Restrictions were placed on the vehicle sizing as the tank"
-" was supposed to pass through the narrow tunnels of the Bernese Alps. "
-"Several designs were considered, but the project was canceled. No vehicles "
-"were ever manufactured."
-
-msgid "T119"
-msgstr "T119"
-
 msgid "T119_M"
 msgstr "T119M"
-
-msgid "T123"
-msgstr "T123"
-
-msgid "T136"
-msgstr "T136"
 
 msgid "T14"
 msgstr "T14"
@@ -3787,26 +4211,6 @@ msgstr ""
 "started in October 1941. The first prototype passed trials in the spring of "
 "1942, but the vehicle never saw mass production."
 
-msgid "T1D5"
-msgstr "T1D5"
-
-msgid "T1D6"
-msgstr "T1D6"
-
-msgid "T1_Cunningham"
-msgstr "T1 Cunningham"
-
-msgid "T1_Cunningham_descr"
-msgstr ""
-"The experimental T1E1 light tank designed by the Cunningham company was a "
-"further development of the T1 tank. By April 1928, four vehicles were "
-"produced. After the vehicle underwent trials in November 1928, a decision "
-"was made to enhance the armor, which led to creating the subsequent "
-"modification designated the T1E2."
-
-msgid "T1_Cunningham_short"
-msgstr "T1"
-
 msgid "T1_E6"
 msgstr "T1E6"
 
@@ -3819,39 +4223,6 @@ msgstr ""
 
 msgid "T1_E6_short"
 msgstr "T1E6"
-
-msgid "T1_hvy"
-msgstr "T1 Heavy Tank"
-
-msgid "T1_hvy_descr"
-msgstr ""
-"Development of the T1E2 started in the U.S.A. in May 1940. The vehicle was "
-"designed as a heavy tank. The distinctive features of the vehicle were a "
-"cast hull and hydromechanical transmission with a double-disc hydraulic "
-"converter. Later, the tank was designated M6. A total of 9 vehicles (1 of "
-"which was experimental) were produced. The tank never saw action."
-
-msgid "T1_hvy_short"
-msgstr "T1 Heavy"
-
-msgid "T20"
-msgstr "T20"
-
-msgid "T20D1"
-msgstr "T20D1"
-
-msgid "T20D2"
-msgstr "T20D2"
-
-msgid "T20_descr"
-msgstr ""
-"The first in a series of 1942–1943 U.S. medium tank designs intended as "
-"replacements for the M4 Sherman. The first prototype was produced in May "
-"1943, and trials went on until 1944. The vehicle was not approved for mass "
-"production, but subsequent prototypes, the T22 and T23, were created on the "
-"basis of this development. They, in turn, served as precursors of the T25 "
-"and T26. Eventually, the M26 Pershing emerged on their basis and was adopted"
-" for service."
 
 msgid "T21"
 msgstr "T21"
@@ -3909,19 +4280,6 @@ msgstr ""
 msgid "T25_2_SH_short"
 msgstr "Raven"
 
-msgid "T25_AT"
-msgstr "T25 AT"
-
-msgid "T25_AT_descr"
-msgstr ""
-"The vehicle was developed based on the T23 tank, but the work on the project"
-" was discontinued at the concept exploration stage. The Command of the "
-"United States Army did not like the electric transmission and poor gun "
-"traverse limits."
-
-msgid "T25_AT_short"
-msgstr "T25 AT"
-
 msgid "T26_E4_SuperPershing"
 msgstr "T26E4 SuperPershing"
 
@@ -3950,30 +4308,6 @@ msgstr "T26E4"
 
 msgid "T26_E4_SuperPershing_short_special"
 msgstr "An accurate gun, and great frontal armoring"
-
-msgid "T28"
-msgstr "T28"
-
-msgid "T28_descr"
-msgstr ""
-"The development of a superheavy vehicle with enhanced armor started in the "
-"second half of 1943. The design featured the power unit and electrical "
-"transmission of the experimental T23 medium tank. The vehicle was supposed "
-"to feature a new 105-mm anti-aircraft gun. The design was later used for the"
-" creation of the T95 assault tank. Existed only in blueprints."
-
-msgid "T28_short"
-msgstr "T28"
-
-msgid "T29"
-msgstr "T29"
-
-msgid "T29_descr"
-msgstr ""
-"Development of this experimental heavy tank started in 1944. The prototype "
-"was built in 1947. The vehicle featured the 105 mm T5E1 gun. After the war, "
-"the mass production of heavy tanks was deemed unreasonable, and only a few "
-"prototypes of this vehicle were built."
 
 msgid "T2D1"
 msgstr "T2D1"
@@ -4024,20 +4358,11 @@ msgstr ""
 msgid "T2_med_short"
 msgstr "T2 Medium"
 
-msgid "T32"
-msgstr "T32"
-
 msgid "T32_FL"
 msgstr "T32 FL"
 
 msgid "T32_FL_short"
 msgstr "T32 FL"
-
-msgid "T32_descr"
-msgstr ""
-"An experimental World War II American heavy tank. Developed on the basis of "
-"the M26 Pershing and T29 tanks. Prototypes were built in 1946; however, the "
-"T32 never entered mass production."
 
 msgid "T34T7"
 msgstr "T34T7"
@@ -4091,19 +4416,6 @@ msgstr ""
 msgid "T34_hvy_short_special"
 msgstr "High damage per shot and a well-armored turret"
 
-msgid "T37"
-msgstr "T37"
-
-msgid "T37_descr"
-msgstr ""
-"The T37 light tank was developed by Detroit Arsenal in the late 1940s to "
-"replace the M24 Chaffee. An order was placed for three prototypes. Later, "
-"some technical innovations were applied in the development of the T41 and "
-"M41 tanks."
-
-msgid "T37_short"
-msgstr "T37"
-
 msgid "T40"
 msgstr "T40"
 
@@ -4112,52 +4424,17 @@ msgstr ""
 "Experimental tank destroyer developed on the basis of the M3 tank in the "
 "spring of 1942. The vehicle never entered mass production, nor saw service."
 
-msgid "T41"
-msgstr "T41"
-
-msgid "T42"
-msgstr "T42"
-
 msgid "T48"
 msgstr "T48"
 
 msgid "T49"
 msgstr "T49"
 
-msgid "T49_descr"
-msgstr ""
-"A variant of the M41 light tank with an enlarged turret and 90-mm gun. "
-"Trials started on May 5, 1954. The trials were a success, but the tank never"
-" saw mass production due to lack of interest from the military authorities."
-
 msgid "T51D1"
 msgstr "T51D1"
 
-msgid "T54E1"
-msgstr "T54E1"
-
-msgid "T54E1_descr"
-msgstr ""
-"A heavy tank with an oscillating turret and magazine loading system, it was "
-"developed from the M48 tank in the mid-50s. Two prototypes were built. "
-"However, during trials, the magazine loading system proved faulty and "
-"development was discontinued in 1957."
-
 msgid "T57"
 msgstr "T57"
-
-msgid "T57_58"
-msgstr "T57 Heavy Tank"
-
-msgid "T57_58_descr"
-msgstr ""
-"A project for a heavy tank with an oscillating turret and automatic loader, "
-"developed from 1951. Experimental turrets for 120 mm and 155 mm guns were "
-"manufactured by 1957. However, the project was deemed unsuccessful and "
-"development was discontinued."
-
-msgid "T57_58_short"
-msgstr "T57 Heavy"
 
 msgid "T57_descr"
 msgstr ""
@@ -4174,19 +4451,6 @@ msgstr ""
 "prototypes were manufactured. The vehicle saw neither mass production nor "
 "service."
 
-msgid "T69"
-msgstr "T69"
-
-msgid "T69_descr"
-msgstr ""
-"A prototype with an oscillating turret and an automatic loading system "
-"developed at the beginning of 1955 and based on the T42 experimental medium "
-"tank. The vehicle underwent trials from June 1955 through April 1956. The "
-"vehicle never entered mass production or saw service."
-
-msgid "T69_short"
-msgstr "T69"
-
 msgid "T71"
 msgstr "T71 DA"
 
@@ -4196,12 +4460,6 @@ msgstr ""
 "loading. Developed by Detroit Arsenal from 1952 through 1953 as a "
 "replacement for M41. The armament was deemed ineffective, and the "
 "development was stopped after one wooden prototype had been built."
-
-msgid "T72"
-msgstr "T72"
-
-msgid "T72E1"
-msgstr "T72E1"
 
 msgid "T7_Combat_Car"
 msgstr "T7 Combat Car"
@@ -4222,18 +4480,6 @@ msgstr "T80E3"
 msgid "T80E3_BF"
 msgstr "T80E3"
 
-msgid "T84E1"
-msgstr "T84E1"
-
-msgid "T84E1A"
-msgstr "T84E1A"
-
-msgid "T84E3"
-msgstr "T84E3"
-
-msgid "T84E3A"
-msgstr "T84E3A"
-
 msgid "T84E3A_M"
 msgstr "T84E3AM"
 
@@ -4242,19 +4488,6 @@ msgstr "T85E1"
 
 msgid "T85E2"
 msgstr "T85E2"
-
-msgid "T92"
-msgstr "T92 HMC"
-
-msgid "T92_descr"
-msgstr ""
-"A U.S. SPG developed in 1945 on the basis of the T26E3 for destroying "
-"bunkers and underground hideouts on islands of the Pacific. Five vehicles "
-"were built, including the experimental one. The project was discontinued "
-"when the war ended."
-
-msgid "T95"
-msgstr "T95"
 
 msgid "T95_E2"
 msgstr "T95E2"
@@ -4294,17 +4527,29 @@ msgstr ""
 " unsuccessful, and the project was canceled on July 7th, 1960. Only one "
 "dummy vehicle was built."
 
-msgid "T95_descr"
-msgstr ""
-"Development of this vehicle started in 1943, with 25 vehicles planned for "
-"production within a year. Two prototypes passed trials, but never saw "
-"action."
-
-msgid "T99E2"
-msgstr "T99E2"
-
 msgid "Torsion_bar_T80"
 msgstr "T23E3"
+
+msgid "Turret_1_A01_T1_Cunningham"
+msgstr "T1 Cunningham"
+
+msgid "Turret_1_A02_M2_lt"
+msgstr "M2A1 Light"
+
+msgid "Turret_1_A03_M3_Stuart"
+msgstr "M3 Stuart"
+
+msgid "Turret_1_A05_M4_Sherman"
+msgstr "M4A1 Sherman (early)"
+
+msgid "Turret_1_A06_M4A3E8_Sherman"
+msgstr "M4A1(76)W"
+
+msgid "Turret_1_A07_T20"
+msgstr "T20"
+
+msgid "Turret_1_A09_T1_hvy"
+msgstr "T1E2"
 
 msgid "Turret_1_A100_T49"
 msgstr "T49"
@@ -4330,6 +4575,9 @@ msgstr "T18 HMC"
 msgid "Turret_1_A109_T56_GMC"
 msgstr "T56 GMC"
 
+msgid "Turret_1_A10_M6"
+msgstr "M6"
+
 msgid "Turret_1_A111_T25_Pilot"
 msgstr "T25 Pilot Number 1"
 
@@ -4345,9 +4593,6 @@ msgstr "Chrysler K GF"
 msgid "Turret_1_A116_XM551"
 msgstr "AR/AAV XM551 Sheridan"
 
-msgid "Turret_1_A116_XM551_FEP"
-msgstr "XM551E4"
-
 msgid "Turret_1_A117_T26E5"
 msgstr "T26E5"
 
@@ -4356,6 +4601,9 @@ msgstr "T26E5 Patriot"
 
 msgid "Turret_1_A118_M4_Thunderbolt"
 msgstr "M4A3E8 Thunderbolt VII"
+
+msgid "Turret_1_A11_T29"
+msgstr "T29"
 
 msgid "Turret_1_A120_M48A5"
 msgstr "M48A5 Patton"
@@ -4387,6 +4635,9 @@ msgstr "Concept 1b"
 msgid "Turret_1_A129_T6_medium"
 msgstr "T6"
 
+msgid "Turret_1_A12_T32"
+msgstr "T26E4"
+
 msgid "Turret_1_A132_T77"
 msgstr "T169"
 
@@ -4413,9 +4664,6 @@ msgstr "Pawlack A"
 
 msgid "Turret_1_A143_M_V_Y"
 msgstr "M-V-Y JJ"
-
-msgid "Turret_1_A143_M_V_Y_FEP"
-msgstr "M-V-Y II"
 
 msgid "Turret_1_A144_M_VI_Y"
 msgstr "M-VI-Y A"
@@ -4501,8 +4749,50 @@ msgstr "M103M"
 msgid "Turret_1_A176_M103_110_CFE_R"
 msgstr "Rambo"
 
+msgid "Turret_1_A179_Black_Rock"
+msgstr "Black Rock"
+
+msgid "Turret_1_A182_T803"
+msgstr "T803"
+
+msgid "Turret_1_A183_XM69_Hacker"
+msgstr "XM69 Hacker"
+
+msgid "Turret_1_A18_M41"
+msgstr "M41 HMC"
+
+msgid "Turret_1_A22_M5_Stuart"
+msgstr "M5 Stuart"
+
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
+
+msgid "Turret_1_A30_M10_Wolverine"
+msgstr "M10 Wolverine (early)"
+
+msgid "Turret_1_A31_M36_Slagger"
+msgstr "M36 Jackson"
+
+msgid "Turret_1_A32_M12"
+msgstr "M12M4"
+
+msgid "Turret_1_A34_M24_Chaffee"
+msgstr "T24 Chaffee"
+
+msgid "Turret_1_A35_Pershing"
+msgstr "M26 Pershing"
+
+msgid "Turret_1_A37_M40M43"
+msgstr "M40M43"
+
+msgid "Turret_1_A38_T92"
+msgstr "T92 HMC"
+
+msgid "Turret_1_A39_T28"
+msgstr "T28"
+
+msgid "Turret_1_A40_T95"
+msgstr "T95"
 
 msgid "Turret_1_A41_M18_Hellcat"
 msgstr "M18 Hellcat"
@@ -4510,8 +4800,26 @@ msgstr "M18 Hellcat"
 msgid "Turret_1_A46_T3"
 msgstr "T3 HMC"
 
+msgid "Turret_1_A57_M8A1"
+msgstr "M8 HMC Scott"
+
+msgid "Turret_1_A63_M46_Patton"
+msgstr "M46 Patton"
+
+msgid "Turret_1_A64_T25_AT"
+msgstr "T25 AT"
+
+msgid "Turret_1_A66_M103"
+msgstr "T43"
+
+msgid "Turret_1_A67_T57_58"
+msgstr "T57 Heavy"
+
 msgid "Turret_1_A68_T28_Prototype"
 msgstr "T28 Prototype"
+
+msgid "Turret_1_A69_T110E5"
+msgstr "T110E5"
 
 msgid "Turret_1_A72_T25_2"
 msgstr "T25/2"
@@ -4522,38 +4830,32 @@ msgstr "M3A3 Stuart"
 msgid "Turret_1_A83_T110E4"
 msgstr "T110E4"
 
+msgid "Turret_1_A85_T110E3"
+msgstr "T110E3"
+
+msgid "Turret_1_A87_M44"
+msgstr "M44"
+
+msgid "Turret_1_A88_M53_55"
+msgstr "M53/M55"
+
+msgid "Turret_1_A89_T54E1"
+msgstr "T54E1"
+
+msgid "Turret_1_A90_T69"
+msgstr "T69"
+
+msgid "Turret_1_A94_T37"
+msgstr "T37"
+
+msgid "Turret_1_A97_M41_Bulldog"
+msgstr "M41 Walker Bulldog"
+
 msgid "Turret_1_A99_T92_LT"
 msgstr "T92"
 
-msgid "Turret_1_M103"
-msgstr "M89"
-
-msgid "Turret_1_M10_Wolverine"
-msgstr "M10T72"
-
-msgid "Turret_1_M12"
-msgstr "M12M4"
-
 msgid "Turret_1_M22_Locust"
 msgstr "M22D1"
-
-msgid "Turret_1_M24_Chaffee"
-msgstr "T24"
-
-msgid "Turret_1_M36_Slagger_4"
-msgstr "M36T74"
-
-msgid "Turret_1_M40M43"
-msgstr "M40M43"
-
-msgid "Turret_1_M41_Bulldog"
-msgstr "M41"
-
-msgid "Turret_1_M44"
-msgstr "M44"
-
-msgid "Turret_1_M46_Patton"
-msgstr "M46M73"
 
 msgid "Turret_1_M46_Patton_KR"
 msgstr "M46 Patton KR"
@@ -4564,26 +4866,14 @@ msgstr "M4A2E4D51066"
 msgid "Turret_1_M4_Improved"
 msgstr "M4 Improved"
 
-msgid "Turret_1_M53_55"
-msgstr "M53/M55"
-
 msgid "Turret_1_M60"
 msgstr "M60"
 
 msgid "Turret_1_M6A2E1"
 msgstr "M6A2E1D4"
 
-msgid "Turret_1_M8A1"
-msgstr "M8 HMC Scott"
-
-msgid "Turret_1_Pershing"
-msgstr "M26M67"
-
 msgid "Turret_1_Sherman_Jumbo"
 msgstr "M4A2E2T110"
-
-msgid "Turret_1_T110E3"
-msgstr "T110E3"
 
 msgid "Turret_1_T1_E6"
 msgstr "T1"
@@ -4591,17 +4881,8 @@ msgstr "T1"
 msgid "Turret_1_T20D1_SH"
 msgstr "T20D1"
 
-msgid "Turret_1_T25_AT"
-msgstr "T25M1"
-
 msgid "Turret_1_T26_E4_SuperPershing"
 msgstr "T26E4"
-
-msgid "Turret_1_T28"
-msgstr "T28"
-
-msgid "Turret_1_T37"
-msgstr "T37"
 
 msgid "Turret_1_T40"
 msgstr "T40"
@@ -4609,26 +4890,11 @@ msgstr "T40"
 msgid "Turret_1_T49"
 msgstr "T49"
 
-msgid "Turret_1_T54E1"
-msgstr "T157"
-
-msgid "Turret_1_T57_58"
-msgstr "T169"
-
-msgid "Turret_1_T69"
-msgstr "T178"
-
 msgid "Turret_1_T71"
 msgstr "T71 DA"
 
 msgid "Turret_1_T7_Combat_Car"
 msgstr "T7 Combat Car"
-
-msgid "Turret_1_T92"
-msgstr "T92 HMC"
-
-msgid "Turret_1_T95"
-msgstr "T95"
 
 msgid "Turret_1_T95_E2"
 msgstr "T95E2"
@@ -4636,14 +4902,41 @@ msgstr "T95E2"
 msgid "Turret_1_T95_E6"
 msgstr "T95E6"
 
+msgid "Turret_2_A02_M2_lt"
+msgstr "M2A4 Light"
+
+msgid "Turret_2_A03_M3_Stuart"
+msgstr "M3A3 Stuart"
+
+msgid "Turret_2_A05_M4_Sherman"
+msgstr "M4A1 Sherman (late)"
+
+msgid "Turret_2_A06_M4A3E8_Sherman"
+msgstr "M4A3E8"
+
+msgid "Turret_2_A07_T20"
+msgstr "T22E1"
+
+msgid "Turret_2_A09_T1_hvy"
+msgstr "T1E3"
+
 msgid "Turret_2_A100_T49"
 msgstr "XM551 test bed"
 
 msgid "Turret_2_A109_T56_GMC"
 msgstr "T56 GMC"
 
+msgid "Turret_2_A10_M6"
+msgstr "T1E1"
+
+msgid "Turret_2_A11_T29"
+msgstr "T29E3"
+
 msgid "Turret_2_A129_T6_medium"
 msgstr "M4"
+
+msgid "Turret_2_A12_T32"
+msgstr "T32"
 
 msgid "Turret_2_A139_M_III_Y"
 msgstr "M-III-Y B"
@@ -4657,11 +4950,29 @@ msgstr "M-VI-Y B"
 msgid "Turret_2_A147_M_II_Y"
 msgstr "M-II-Y B"
 
+msgid "Turret_2_A22_M5_Stuart"
+msgstr "M5A1 Stuart"
+
 msgid "Turret_2_A27_T82"
 msgstr "T82 HMC"
 
+msgid "Turret_2_A30_M10_Wolverine"
+msgstr "M10 Wolverine (late)"
+
+msgid "Turret_2_A31_M36_Slagger"
+msgstr "M36B2 Jackson"
+
+msgid "Turret_2_A32_M12"
+msgstr "M12M4A1"
+
+msgid "Turret_2_A34_M24_Chaffee"
+msgstr "M24 Chaffee"
+
 msgid "Turret_2_A34_M24_Chaffee_CFE_V"
 msgstr "Chaffee Camouflaged"
+
+msgid "Turret_2_A35_Pershing"
+msgstr "M45"
 
 msgid "Turret_2_A41_M18_Hellcat"
 msgstr "M18/M36"
@@ -4669,50 +4980,35 @@ msgstr "M18/M36"
 msgid "Turret_2_A46_T3"
 msgstr "T3 HMC"
 
+msgid "Turret_2_A57_M8A1"
+msgstr "M8 GMC"
+
+msgid "Turret_2_A63_M46_Patton"
+msgstr "M46E1 Patton"
+
+msgid "Turret_2_A66_M103"
+msgstr "M103"
+
 msgid "Turret_2_A72_T25_2"
 msgstr "T25E1/2"
 
-msgid "Turret_2_M103"
-msgstr "T140"
-
-msgid "Turret_2_M10_Wolverine"
-msgstr "M10T72M1"
-
-msgid "Turret_2_M24_Chaffee"
-msgstr "M24"
-
-msgid "Turret_2_M36_Slagger_4"
-msgstr "M36T78"
-
-msgid "Turret_2_M41_Bulldog"
-msgstr "M41A1"
-
-msgid "Turret_2_M44"
+msgid "Turret_2_A87_M44"
 msgstr "M44"
 
-msgid "Turret_2_M46_Patton"
-msgstr "M46T119"
+msgid "Turret_2_A94_T37"
+msgstr "T41 pilot number 1"
+
+msgid "Turret_2_A97_M41_Bulldog"
+msgstr "M41A1 Walker Bulldog"
 
 msgid "Turret_2_M46_Patton_SH"
 msgstr "M46T119"
 
-msgid "Turret_2_M8A1"
-msgstr "M8 GMC"
-
-msgid "Turret_2_Pershing"
-msgstr "M26M71"
-
 msgid "Turret_2_Sherman_Jumbo"
 msgstr "M4A2E2D51080"
 
-msgid "Turret_2_T110"
-msgstr "T53"
-
 msgid "Turret_2_T21"
 msgstr "T21"
-
-msgid "Turret_2_T37"
-msgstr "T41 pilot number 1"
 
 msgid "Turret_2_T49"
 msgstr "T67"
@@ -4733,6 +5029,22 @@ msgid "Twin_Cadillac_42series_short"
 msgstr ""
 "Twin Cadillac,\n"
 "Series 42"
+
+msgid "Twin_Cadillac_Series_42_M8A1"
+msgstr "Twin Cadillac, Series 42 (M8A1)"
+
+msgid "Twin_Cadillac_Series_42_M8A1_short"
+msgstr ""
+"Twin Cadillac,\n"
+"Series 42 (M8A1)"
+
+msgid "Twin_Cadillac_Series_44T4_M41"
+msgstr "Twin Cadillac, Series 44T4 (M41)"
+
+msgid "Twin_Cadillac_Series_44T4_M41_short"
+msgstr ""
+"Twin Cadillac,\n"
+"Series 44T4 (M41)"
 
 msgid "Twin_Cadillac_series_44T4"
 msgstr "Twin Cadillac, Series 44T4"
@@ -4770,20 +5082,8 @@ msgstr "VVSS T49"
 msgid "VVSST51"
 msgstr "VVSS T51"
 
-msgid "VVSS_T16E1"
-msgstr "VVSS T16E1"
-
-msgid "VVSS_T16E2"
-msgstr "VVSS T16E2"
-
-msgid "VVSS_T16E3"
-msgstr "VVSS T16E3"
-
 msgid "VVSS_T36E6"
 msgstr "VVSS T36E6"
-
-msgid "VVSS_T36E8"
-msgstr "VVSS T36E8"
 
 msgid "VVSS_T48"
 msgstr "VVSS T48"
@@ -4836,17 +5136,11 @@ msgstr "Wright C. R-975C3"
 msgid "Wright_Continental_R-975C4"
 msgstr "Wright Continental R-975C4"
 
-msgid "Wright_Continental_R-975C4L"
-msgstr "Wright Continental R-975C4L"
-
 msgid "Wright_Continental_R-975C4LV"
 msgstr "Wright Continental R-975C4LV"
 
 msgid "Wright_Continental_R-975C4LV_short"
 msgstr "Wright C. R-975C4LV"
-
-msgid "Wright_Continental_R-975C4L_short"
-msgstr "Wright C. R-975C4L"
 
 msgid "Wright_Continental_R-975C4_ID"
 msgstr "Continental R-975C4"
@@ -4878,11 +5172,23 @@ msgstr "Wright Continental R-975C1/18"
 msgid "Wright_Continental_R_975C1_18_short"
 msgstr "Wright C. R-975C1/18"
 
+msgid "Wright_Continental_R_975C1_M12"
+msgstr "Wright Continental R-975C1 (M12)"
+
+msgid "Wright_Continental_R_975C1_M12_short"
+msgstr "Wright C. R-975C1 (M12)"
+
 msgid "Wright_Continental_R_975C1_N"
 msgstr "Wright Continental R-975C1N"
 
 msgid "Wright_Continental_R_975C1_N_short"
 msgstr "Wright C. R-975C4N"
+
+msgid "Wright_Continental_R_975C4L"
+msgstr "Wright Continental R-975C4L"
+
+msgid "Wright_Continental_R_975C4L_short"
+msgstr "Wright C. R-975C4L"
 
 msgid "Wright_Continental_R_975C4_18"
 msgstr "Wright Continental R-975C4/18"
@@ -4890,11 +5196,41 @@ msgstr "Wright Continental R-975C4/18"
 msgid "Wright_Continental_R_975C4_18_short"
 msgstr "Wright C. R-975C4/18"
 
+msgid "Wright_Continental_R_975C4_M40"
+msgstr "Wright Continental R-975C4 (M40)"
+
+msgid "Wright_Continental_R_975C4_M40_short"
+msgstr "Wright C. R-975C4 (M40)"
+
+msgid "Wright_Continental_R_975C4_M4A1"
+msgstr "Wright Continental R-975C4 (M4A1)"
+
+msgid "Wright_Continental_R_975C4_M4A1_short"
+msgstr "Wright C. R-975C4 (M4A1)"
+
+msgid "Wright_Continental_R_975C4_M4A3"
+msgstr "Wright Continental R-975C4 (M4A3)"
+
+msgid "Wright_Continental_R_975C4_M4A3_short"
+msgstr "Wright C. R-975C4 (M4A3)"
+
+msgid "Wright_Continental_R_975C4_T6"
+msgstr "Wright Continental R-975C4 (T6)"
+
+msgid "Wright_Continental_R_975C4_T6_short"
+msgstr "Wright C. R-975C4 (T6)"
+
 msgid "Wright_Continental_R_975EC2A1"
 msgstr "Wright Continental R-975EC2A1"
 
 msgid "Wright_Continental_R_975EC2A1_short"
 msgstr "Wright C. R-975EC2A1"
+
+msgid "Wright_Continental_R_975EC2_T6"
+msgstr "Wright Continental R-975EC2 (T6)"
+
+msgid "Wright_Continental_R_975EC2_T6_short"
+msgstr "Wright C. R-975EC2 (T6)"
 
 msgid "Wright_Continental_R_975_C4_858"
 msgstr "Wright Continental R-975-C4 (858)"
@@ -4905,14 +5241,6 @@ msgstr "Wright C. R-975-C4 (858)"
 msgid "Wright_G200A"
 msgstr "Wright G200"
 
-msgid "Wright_G200_m_781C9GC1"
-msgstr "Wright G200 M781C9GC1"
-
-msgid "Wright_G200_m_781C9GC1_short"
-msgstr ""
-"Wright G200\n"
-"M781C9GC1"
-
 msgid "Wright_G200_m_781C9GC5"
 msgstr "Wright G200 M781C9GC5"
 
@@ -4921,21 +5249,37 @@ msgstr ""
 "Wright G200\n"
 "M781C9GC5"
 
-msgid "Wright_G200_m_795C9GC1"
-msgstr "Wright G200 M795C9GC1"
+msgid "Wright_G_200_Model_781C9GC1_M6"
+msgstr "Wright G-200 Model 781C9GC1 (M6)"
 
-msgid "Wright_G200_m_795C9GC1_short"
+msgid "Wright_G_200_Model_781C9GC1_M6_short"
 msgstr ""
-"Wright G200\n"
-"M795C9GC1"
+"Wright G-200\n"
+"Model 781C9GC1 (M6)"
 
-msgid "Wright_G2X_m_781C9GC1"
-msgstr "Wright G2X M781C9GC1"
+msgid "Wright_G_200_Model_781C9GC1_T1"
+msgstr "Wright G-200 Model 781C9GC1 (T1)"
 
-msgid "Wright_G2X_m_781C9GC1_short"
+msgid "Wright_G_200_Model_781C9GC1_T1_short"
 msgstr ""
-"Wright G2X\n"
-"M781C9GC1"
+"Wright G-200\n"
+"Model 781C9GC1 (T1)"
+
+msgid "Wright_G_200_Model_795C9GC1_M6"
+msgstr "Wright G-200 Model 795C9GC1 (M6)"
+
+msgid "Wright_G_200_Model_795C9GC1_M6_short"
+msgstr ""
+"Wright G-200\n"
+"Model 795C9GC1 (M6)"
+
+msgid "Wright_G_200_Model_795C9GC1_T1"
+msgstr "Wright G-200 Model 795C9GC1 (T1)"
+
+msgid "Wright_G_200_Model_795C9GC1_T1_short"
+msgstr ""
+"Wright G-200\n"
+"Model 795C9GC1 (T1)"
 
 msgid "Wright_R-975EC2"
 msgstr "Wright R-975EC2"
@@ -4982,11 +5326,35 @@ msgstr "APCR T29E3/28P"
 msgid "_105mm_APCR_T29E3_M"
 msgstr "APCR T29E3 M"
 
+msgid "_105mm_APCR_T29E3_M_III_Y"
+msgstr "APCR T29E3 (M-III-Y)"
+
+msgid "_105mm_APCR_T29E3_T25_AT"
+msgstr "APCR T29E3 (T25 AT)"
+
+msgid "_105mm_APCR_T29E3_T28"
+msgstr "APCR T29E3 (T28)"
+
+msgid "_105mm_APCR_T29E3_T29"
+msgstr "APCR T29E3 (T29)"
+
+msgid "_105mm_APCR_T29E3_T32"
+msgstr "APCR T29E3 (T32)"
+
+msgid "_105mm_APCR_T29E3_T95"
+msgstr "APCR T29E3 (T95)"
+
+msgid "_105mm_APDS_M392_M48A5"
+msgstr "APDS M392 (M48A5)"
+
 msgid "_105mm_AP_T140E3"
 msgstr "AP-T T182E1"
 
 msgid "_105mm_AP_T32"
 msgstr "AP T32"
+
+msgid "_105mm_AP_T32E1"
+msgstr "AP T32E1"
 
 msgid "_105mm_AP_T32M2"
 msgstr "AP T32M2"
@@ -5006,6 +5374,24 @@ msgstr "AP T32/28P"
 msgid "_105mm_AP_T32_M"
 msgstr "AP T32M"
 
+msgid "_105mm_AP_T32_M_III_Y"
+msgstr "AP T32 (M-III-Y)"
+
+msgid "_105mm_AP_T32_M_VI_Y"
+msgstr "AP T32 (M-VI-Y)"
+
+msgid "_105mm_AP_T32_T25_AT"
+msgstr "AP T32 (T25 AT)"
+
+msgid "_105mm_AP_T32_T28"
+msgstr "AP T32 (T28)"
+
+msgid "_105mm_AP_T32_T29"
+msgstr "AP T32 (T29)"
+
+msgid "_105mm_AP_T32_T95"
+msgstr "AP T32 (T95)"
+
 msgid "_105mm_AT_Gun_T5A"
 msgstr "105 mm Gun T5"
 
@@ -5014,6 +5400,15 @@ msgstr "105 mm AT Gun T5E1"
 
 msgid "_105mm_AT_Gun_T5E1_28P"
 msgstr "105 mm AT Gun T5E1/28P"
+
+msgid "_105mm_AT_Gun_T5E1_T25_AT"
+msgstr "105 mm AT Gun T5E1 (T25 AT)"
+
+msgid "_105mm_AT_Gun_T5E1_T28"
+msgstr "105 mm AT Gun T5E1 (T28)"
+
+msgid "_105mm_AT_Gun_T5E1_T95"
+msgstr "105 mm AT Gun T5E1 (T95)"
 
 msgid "_105mm_AT_Howitzer_M3"
 msgstr "105 mm AT Howitzer M3"
@@ -5087,8 +5482,17 @@ msgstr "AP-T T384E4"
 msgid "_105mm_HEAT_M67"
 msgstr "HEAT M67"
 
+msgid "_105mm_HEAT_M67_M4A1"
+msgstr "HEAT M67 (M4A1)"
+
 msgid "_105mm_HEAT_M67_SH"
 msgstr "AP M67E2"
+
+msgid "_105mm_HEAT_T298E1"
+msgstr "HEAT T298E1"
+
+msgid "_105mm_HEAT_T384E4_M48A5"
+msgstr "HEAT T384E4 (M48A5)"
 
 msgid "_105mm_HEAT_T_T298E1"
 msgstr "HEAT-T T298E1"
@@ -5098,6 +5502,9 @@ msgstr "HEAT-T T298E2"
 
 msgid "_105mm_HEAT_T_T384E3"
 msgstr "HEAT-T T384E3"
+
+msgid "_105mm_HEP_M393_M48A5"
+msgstr "HEP M393 (M48A5)"
 
 msgid "_105mm_HE_M1"
 msgstr "HE M1"
@@ -5117,11 +5524,38 @@ msgstr "M11A2E5"
 msgid "_105mm_HE_M11A2E8"
 msgstr "M11A2E8"
 
+msgid "_105mm_HE_M11A2E_M_V_Y"
+msgstr "HE M11A2E (M-V-Y)"
+
 msgid "_105mm_HE_M11_28P"
 msgstr "HE M11/28P"
 
 msgid "_105mm_HE_M11_M"
 msgstr "HE M11 M"
+
+msgid "_105mm_HE_M11_M_III_Y"
+msgstr "HE M11 (M-III-Y)"
+
+msgid "_105mm_HE_M11_M_VI_Y"
+msgstr "HE M11 (M-VI-Y)"
+
+msgid "_105mm_HE_M11_T25_AT"
+msgstr "HE M11 (T25 AT)"
+
+msgid "_105mm_HE_M11_T28"
+msgstr "HE M11 (T28)"
+
+msgid "_105mm_HE_M11_T29"
+msgstr "HE M11 (T29)"
+
+msgid "_105mm_HE_M11_T32"
+msgstr "HE M11 (T32)"
+
+msgid "_105mm_HE_M11_T95"
+msgstr "HE M11 (T95)"
+
+msgid "_105mm_HE_M1_M4A1"
+msgstr "HE M1 (M4A1)"
 
 msgid "_105mm_HE_M39A1"
 msgstr "HE M393A1"
@@ -5131,6 +5565,9 @@ msgstr "HE M393A2"
 
 msgid "_105mm_HE_M68M2"
 msgstr "HEP-T M393"
+
+msgid "_105mm_HE_T140E2"
+msgstr "HE T140E2"
 
 msgid "_105mm_HVAPDS_T_T279E2"
 msgstr "HVAPDS-T T279E2"
@@ -5159,6 +5596,9 @@ msgstr "M392 AP"
 msgid "_105mm_M456_HEAT"
 msgstr "M456 HEAT"
 
+msgid "_105mm_M4_M4A1"
+msgstr "105 mm M4 (M4A1)"
+
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"
 
@@ -5170,6 +5610,18 @@ msgstr "105 mm T140 Y IV"
 
 msgid "_105mm_T254A"
 msgstr "105 mm T254A"
+
+msgid "_110mm_EXP_S"
+msgstr "110 mm EXP-S"
+
+msgid "_110mm_EXP_S_APDS"
+msgstr "EXP-S APDS"
+
+msgid "_110mm_EXP_S_HEAT"
+msgstr "EXP-S HEAT"
+
+msgid "_110mm_EXP_S_HEP"
+msgstr "EXP-S HEP"
 
 msgid "_110mm_Gun_EXP_7"
 msgstr "EXP-7"
@@ -5194,6 +5646,18 @@ msgstr "XL1E"
 
 msgid "_110mm_XL1M"
 msgstr "XL1M"
+
+msgid "_114mm_APCR_M73"
+msgstr "APCR M73"
+
+msgid "_114mm_Gun_M73"
+msgstr "114 mm Gun M73"
+
+msgid "_114mm_HEAT_M73"
+msgstr "HEAT M73"
+
+msgid "_114mm_HE_M73"
+msgstr "HE M73"
 
 msgid "_12.7mm_AP_M2"
 msgstr "AP M2"
@@ -5228,6 +5692,12 @@ msgstr "APCR T62/28P"
 msgid "_120mm_APCR_T62_30"
 msgstr "APCR T62/30"
 
+msgid "_120mm_APCR_T62_T28"
+msgstr "APCR T62 (T28)"
+
+msgid "_120mm_APCR_T62_T95"
+msgstr "APCR T62 (T95)"
+
 msgid "_120mm_APCR_T70"
 msgstr "APCR T70"
 
@@ -5240,8 +5710,23 @@ msgstr "APC T110"
 msgid "_120mm_AP_M355"
 msgstr "AP M355"
 
-msgid "_120mm_AP_Shot"
-msgstr "AP"
+msgid "_120mm_AP_M358"
+msgstr "AP M358"
+
+msgid "_120mm_AP_M358E5"
+msgstr "AP M358E5"
+
+msgid "_120mm_AP_M358_M103"
+msgstr "AP M358 (M103)"
+
+msgid "_120mm_AP_M358_M_VI_Y"
+msgstr "AP M358 (M-VI-Y)"
+
+msgid "_120mm_AP_M358_T57"
+msgstr "AP M358 (T57)"
+
+msgid "_120mm_AP_T117E8"
+msgstr "AP T117E8"
 
 msgid "_120mm_AP_T42"
 msgstr "AP T42"
@@ -5254,6 +5739,12 @@ msgstr "AP T42/28P"
 
 msgid "_120mm_AP_T42_30"
 msgstr "AP T42/30"
+
+msgid "_120mm_AP_T42_T28"
+msgstr "AP T42 (T28)"
+
+msgid "_120mm_AP_T42_T95"
+msgstr "AP T42 (T95)"
 
 msgid "_120mm_AP_T_M358E1"
 msgstr "AP-T M358E1"
@@ -5279,6 +5770,12 @@ msgstr "120 mm AT Gun T53/28P"
 msgid "_120mm_AT_Gun_T53_30"
 msgstr "120 mm AT Gun T53/30"
 
+msgid "_120mm_AT_Gun_T53_T28"
+msgstr "120 mm AT Gun T53 (T28)"
+
+msgid "_120mm_AT_Gun_T53_T95"
+msgstr "120 mm AT Gun T53 (T95)"
+
 msgid "_120mm_American_British_Gun"
 msgstr "120 mm American British Gun"
 
@@ -5287,6 +5784,9 @@ msgstr "120 mm Gun M58"
 
 msgid "_120mm_Gun_M58A"
 msgstr "120 mm Gun M58A"
+
+msgid "_120mm_Gun_M58_M103"
+msgstr "120 mm Gun M58 (M103)"
 
 msgid "_120mm_Gun_M58_SH"
 msgstr "120 mm Gun M58"
@@ -5302,6 +5802,9 @@ msgstr "120 mm Gun T123E6C"
 
 msgid "_120mm_Gun_T123E6_66"
 msgstr "120 mm Gun T123E6/66"
+
+msgid "_120mm_Gun_T123E8"
+msgstr "120 mm Gun T123E8"
 
 msgid "_120mm_Gun_T124"
 msgstr "120 mm Gun T124"
@@ -5333,14 +5836,32 @@ msgstr "HEAT-T M469C"
 msgid "_120mm_HEAT-T_M469_SH"
 msgstr "AP-T M469"
 
+msgid "_120mm_HEAT_M469E5"
+msgstr "HEAT M469E5"
+
 msgid "_120mm_HEAT_M469R"
 msgstr "HEAT M469R"
+
+msgid "_120mm_HEAT_M469_M103"
+msgstr "HEAT M469 (M103)"
+
+msgid "_120mm_HEAT_M469_M_VI_Y"
+msgstr "HEAT M469 (M-VI-Y)"
+
+msgid "_120mm_HEAT_M469_T122"
+msgstr "HEAT M469 (T122)"
+
+msgid "_120mm_HEAT_M469_T57"
+msgstr "HEAT M469 (T57)"
 
 msgid "_120mm_HEAT_M830"
 msgstr "HEAT M830"
 
 msgid "_120mm_HEAT_M835"
 msgstr "HEAT M835"
+
+msgid "_120mm_HEAT_T153E18"
+msgstr "HEAT T153E18"
 
 msgid "_120mm_HEAT_T_M469E1"
 msgstr "HEAT-T M469E1"
@@ -5350,6 +5871,15 @@ msgstr "HEAT-T M469E1"
 
 msgid "_120mm_HE_M356"
 msgstr "HE M356"
+
+msgid "_120mm_HE_M356E1_M_V_Y"
+msgstr "HE M356E1 (M-V-Y)"
+
+msgid "_120mm_HE_M356E5"
+msgstr "HE M356E5"
+
+msgid "_120mm_HE_M356_M103"
+msgstr "HE M356 (M103)"
 
 msgid "_120mm_HE_M358"
 msgstr "HE M358"
@@ -5363,6 +5893,18 @@ msgstr "HE Shell"
 msgid "_120mm_HE_Shot_C"
 msgstr "HE Shell C"
 
+msgid "_120mm_HE_T15E3_M_VI_Y"
+msgstr "HE T15E3 (M-VI-Y)"
+
+msgid "_120mm_HE_T15E3_T122"
+msgstr "HE T15E3 (T122)"
+
+msgid "_120mm_HE_T15E3_T57"
+msgstr "HE T15E3 (T57)"
+
+msgid "_120mm_HE_T15E8"
+msgstr "HE T15E8"
+
 msgid "_120mm_HE_T67E1"
 msgstr "HE T67E1"
 
@@ -5371,6 +5913,12 @@ msgstr "HE T67/28P"
 
 msgid "_120mm_HE_T67_30"
 msgstr "HE T67/30"
+
+msgid "_120mm_HE_T67_T28"
+msgstr "HE T67 (T28)"
+
+msgid "_120mm_HE_T67_T95"
+msgstr "HE T67 (T95)"
 
 msgid "_120mm_HE_T_M356E1"
 msgstr "HE-T M356E1"
@@ -5405,14 +5953,35 @@ msgstr "XM31"
 msgid "_152mm_Gun_Launcher_M81"
 msgstr "152 mm Gun-Launcher XM81 (conventional)"
 
+msgid "_152mm_Gun_Launcher_XM81_conventional_T49"
+msgstr "152 mm Gun-Launcher XM81 (conventional T49)"
+
 msgid "_152mm_HEAT_XM409"
 msgstr "HEAT XM409"
+
+msgid "_152mm_HEAT_XM409E1"
+msgstr "HEAT XM409E1"
+
+msgid "_152mm_HEAT_XM409E1_T49"
+msgstr "HEAT XM409E1 (T49)"
+
+msgid "_152mm_HEAT_XM409_T49"
+msgstr "HEAT XM409 (T49)"
 
 msgid "_152mm_HE_XM657E2"
 msgstr "HE XM657E2"
 
+msgid "_152mm_HE_XM657E2_T49"
+msgstr "HE XM657E2 (T49)"
+
 msgid "_152mm_HE_XM657E3"
 msgstr "HE XM657E3"
+
+msgid "_155mm_APCR_M112E3"
+msgstr "APCR M112E3"
+
+msgid "_155mm_APCR_M112_T95"
+msgstr "APCR M112 (T95)"
 
 msgid "_155mm_AP_M111"
 msgstr "AP M111"
@@ -5420,14 +5989,20 @@ msgstr "AP M111"
 msgid "_155mm_AP_M111E1"
 msgstr "AP M111E1"
 
+msgid "_155mm_AP_M111E3"
+msgstr "AP M111E3"
+
 msgid "_155mm_AP_M111E4"
 msgstr "AP M111E4"
 
 msgid "_155mm_AP_M111_30"
 msgstr "AP M111/30"
 
-msgid "_155mm_AP_M111_SPG"
-msgstr "AP M111"
+msgid "_155mm_AP_M111_M12"
+msgstr "AP M111 (M12)"
+
+msgid "_155mm_AP_M111_T95"
+msgstr "AP M111 (T95)"
 
 msgid "_155mm_AP_M111_XM57"
 msgstr "AP M111 XM57"
@@ -5444,8 +6019,14 @@ msgstr "APCR M112E4"
 msgid "_155mm_AP_M112_30"
 msgstr "AP M112/30"
 
-msgid "_155mm_AP_M112_SPG"
-msgstr "AP M112"
+msgid "_155mm_AP_M112_M12"
+msgstr "AP M112 (M12)"
+
+msgid "_155mm_AP_M112_M40"
+msgstr "AP M112 (M40)"
+
+msgid "_155mm_AP_M112_M53"
+msgstr "AP M112 (M53)"
 
 msgid "_155mm_AP_M112_XM57"
 msgstr "APCR M112 XM57"
@@ -5456,17 +6037,26 @@ msgstr "155 mm AT Gun T7"
 msgid "_155mm_AT_Gun_T7E2"
 msgstr "155 mm AT Gun T7E2"
 
+msgid "_155mm_AT_Gun_T7E3"
+msgstr "155 mm AT Gun T7E3"
+
 msgid "_155mm_AT_Gun_T7E4"
 msgstr "155 mm AT Gun T7E4"
 
 msgid "_155mm_AT_Gun_T7_30"
 msgstr "155 mm AT Gun T7/30"
 
+msgid "_155mm_AT_Gun_T7_T95"
+msgstr "155 mm AT Gun T7 (T95)"
+
 msgid "_155mm_Gun_M1918M1"
 msgstr "155 mm Gun M1918M1"
 
 msgid "_155mm_Gun_M1A1"
 msgstr "155 mm Gun M1A1"
+
+msgid "_155mm_Gun_M1A1_M12"
+msgstr "155 mm Gun M1A1 (M12)"
 
 msgid "_155mm_Gun_M46"
 msgstr "155 mm Gun M46"
@@ -5477,6 +6067,12 @@ msgstr "155 mm Gun T7XM"
 msgid "_155mm_HEAT_M167"
 msgstr "HEAT M167"
 
+msgid "_155mm_HEAT_M167_M1"
+msgstr "HEAT M167 (M1)"
+
+msgid "_155mm_HEAT_M167_M41"
+msgstr "HEAT M167 (M41)"
+
 msgid "_155mm_HE_M101"
 msgstr "HE M101"
 
@@ -5485,6 +6081,9 @@ msgstr "HE M101A1"
 
 msgid "_155mm_HE_M101E1"
 msgstr "HE M101E1"
+
+msgid "_155mm_HE_M101E3"
+msgstr "HE M101E3"
 
 msgid "_155mm_HE_M101E4"
 msgstr "HE M101E4"
@@ -5495,11 +6094,26 @@ msgstr "HE M101M2"
 msgid "_155mm_HE_M101M4"
 msgstr "HE M101M4"
 
+msgid "_155mm_HE_M101M4_M12"
+msgstr "HE M101M4 (M12)"
+
+msgid "_155mm_HE_M101M4_M40"
+msgstr "HE M101M4 (M40)"
+
 msgid "_155mm_HE_M101M6"
 msgstr "HE M101M6"
 
+msgid "_155mm_HE_M101M6_M12"
+msgstr "HE M101M6 (M12)"
+
+msgid "_155mm_HE_M101M6_M40"
+msgstr "HE M101M6 (M40)"
+
 msgid "_155mm_HE_M101_30"
 msgstr "HE M101/30"
+
+msgid "_155mm_HE_M101_T95"
+msgstr "HE M101 (T95)"
 
 msgid "_155mm_HE_M101_XM57"
 msgstr "HE M101 XM57"
@@ -5507,20 +6121,47 @@ msgstr "HE M101 XM57"
 msgid "_155mm_HE_M102"
 msgstr "HE M102"
 
+msgid "_155mm_HE_M102_M1"
+msgstr "HE M102 (M1)"
+
+msgid "_155mm_HE_M102_M41"
+msgstr "HE M102 (M41)"
+
 msgid "_155mm_HE_M107"
 msgstr "HE M107"
+
+msgid "_155mm_HE_M107_M1"
+msgstr "HE M107 (M1)"
+
+msgid "_155mm_HE_M107_M41"
+msgstr "HE M107 (M41)"
 
 msgid "_155mm_Howitzer_M1"
 msgstr "155 mm Howitzer M1"
 
+msgid "_155mm_Howitzer_M1_M41"
+msgstr "155 mm Howitzer M1 (M41)"
+
 msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
 
-msgid "_203mm_HE_A1M1"
-msgstr "HE M106"
+msgid "_203mm_AP_M106_M78"
+msgstr "AP M106/M78"
 
-msgid "_203mm_HE_M106"
-msgstr "HE A1M1"
+msgid "_203mm_AP_M106_M78_M43"
+msgstr "AP M106/M78 (M43)"
+
+msgid "_203mm_HE_M106_M43"
+msgstr "HE M106 (M43)"
+
+msgid "_203mm_HE_M106_M55"
+msgstr "HE M106 (M55)"
+
+msgid "_203mm_HE_Mk1A1_M43"
+msgstr "HE Mk1A1 (M43)"
+
+msgid "_203mm_HE_Mk1A1_M55"
+msgstr "HE Mk1A1 (M55)"
 
 msgid "_203mm_Howitzer_M1"
 msgstr "8-inch Howitzer M1"
@@ -5528,14 +6169,23 @@ msgstr "8-inch Howitzer M1"
 msgid "_203mm_Howitzer_M47"
 msgstr "8-inch Howitzer M47"
 
-msgid "_203mm_M106_M78"
-msgstr "M106/M78"
-
 msgid "_20mm_AP"
 msgstr "AP"
 
 msgid "_20mm_APCR"
 msgstr "APCR"
+
+msgid "_20mm_APCR_M2"
+msgstr "APCR (M2)"
+
+msgid "_20mm_AP_M2"
+msgstr "AP (M2)"
+
+msgid "_20mm_Hispano_Suiza_Birgikt_Gun_M2"
+msgstr "20 mm Hispano-Suiza Birkigt Gun (M2)"
+
+msgid "_20mm_Hispano_Suiza_Birgikt_Gun_M2_short"
+msgstr "20 mm Hispano-Suiza (M2)"
 
 msgid "_20mm_Hispano_Suiza_Birgikt_gun"
 msgstr "20 mm Hispano-Suiza Birkigt Gun"
@@ -5549,6 +6199,9 @@ msgstr "20 mm Hispano-Suiza"
 msgid "_20mm_Hispano_Suiza_Birgikt_gun_short"
 msgstr "20 mm Hispano-Suiza"
 
+msgid "_240mm_AP_M114_M78"
+msgstr "AP M114/M78"
+
 msgid "_240mm_HE_M146"
 msgstr "HE M146"
 
@@ -5557,9 +6210,6 @@ msgstr "HE M160"
 
 msgid "_240mm_Howitzer_M1"
 msgstr "240 mm Howitzer M1"
-
-msgid "_240mm_M114_M78"
-msgstr "M114/M78"
 
 msgid "_2pdr_APCNR_Mk.1"
 msgstr "APCNR Mk. 1"
@@ -5584,6 +6234,12 @@ msgstr "AP 1937"
 msgid "_37mm_APCBC1935"
 msgstr "APCBC 1935"
 
+msgid "_37mm_APCBC_1916_1935_T1"
+msgstr "APCBC 1916/1935 (T1)"
+
+msgid "_37mm_APCBC_1924_1935_T1"
+msgstr "APCBC 1924/1935 (T1)"
+
 msgid "_37mm_APC_M51"
 msgstr "APC M51"
 
@@ -5593,11 +6249,32 @@ msgstr "APC M51E3"
 msgid "_37mm_APC_M51_E2"
 msgstr "APC M51"
 
+msgid "_37mm_APC_M51_M2"
+msgstr "APC M51 (M2)"
+
+msgid "_37mm_APC_M51_M3_M5"
+msgstr "APC M51 (M3/M5)"
+
+msgid "_37mm_APC_M51_M3_M6"
+msgstr "APC M51 (M3/M6)"
+
+msgid "_37mm_APC_M51_M5_M6"
+msgstr "APC M51 (M5/M6)"
+
+msgid "_37mm_APC_M51_M5_T16"
+msgstr "APC M51 (M5/T16)"
+
 msgid "_37mm_APC_M59A1"
 msgstr "AAC APC"
 
 msgid "_37mm_APC_M59A5"
 msgstr "AAC APCR"
+
+msgid "_37mm_AP_1916_1937_T1"
+msgstr "AP 1916/1937 (T1)"
+
+msgid "_37mm_AP_1924_1937_T1"
+msgstr "AP 1924/1937 (T1)"
 
 msgid "_37mm_AP_M74"
 msgstr "AP M74"
@@ -5607,6 +6284,21 @@ msgstr "AP M74E3"
 
 msgid "_37mm_AP_M74_E2"
 msgstr "AP M74"
+
+msgid "_37mm_AP_M74_M2"
+msgstr "AP M74 (M2)"
+
+msgid "_37mm_AP_M74_M3_M5"
+msgstr "AP M74 (M3/M5)"
+
+msgid "_37mm_AP_M74_M3_M6"
+msgstr "AP M74 (M3/M6)"
+
+msgid "_37mm_AP_M74_M5_M6"
+msgstr "AP M74 (M5/M6)"
+
+msgid "_37mm_AP_M74_M5_T16"
+msgstr "AP M74 (M5/T16)"
 
 msgid "_37mm_Browning_Semi_Automatic"
 msgstr "37 mm Browning Semi-Automatic"
@@ -5623,11 +6315,29 @@ msgstr "37 mm Gun M1916"
 msgid "_37mm_Gun_M1916E2"
 msgstr "37 mm Gun M1916E2"
 
+msgid "_37mm_Gun_M5_M2"
+msgstr "37 mm Gun M5 (M2)"
+
+msgid "_37mm_Gun_M5_M3"
+msgstr "37 mm Gun M5 (M3)"
+
 msgid "_37mm_Gun_M6E3"
 msgstr "37 mm Gun M6E3"
 
+msgid "_37mm_Gun_M6_M3"
+msgstr "37 mm Gun M6 (M3)"
+
+msgid "_37mm_Gun_M6_M5"
+msgstr "37 mm Gun M6 (M5)"
+
 msgid "_37mm_HE1916"
 msgstr "HE 1916"
+
+msgid "_37mm_HE_1916_1924_T1"
+msgstr "HE 1916/1924 (T1)"
+
+msgid "_37mm_HE_1916_T1"
+msgstr "HE 1916 (T1)"
 
 msgid "_37mm_HE_M54"
 msgstr "AAC HE"
@@ -5641,6 +6351,21 @@ msgstr "HE M63E3"
 msgid "_37mm_HE_M63_E2"
 msgstr "HE M63"
 
+msgid "_37mm_HE_M63_M2"
+msgstr "HE M63 (M2)"
+
+msgid "_37mm_HE_M63_M3_M5"
+msgstr "HE M63 (M3/M5)"
+
+msgid "_37mm_HE_M63_M3_M6"
+msgstr "HE M63 (M3/M6)"
+
+msgid "_37mm_HE_M63_M5_M6"
+msgstr "HE M63 (M5/M6)"
+
+msgid "_37mm_HE_M63_M5_T16"
+msgstr "HE M63 (M5/T16)"
+
 msgid "_37mm_M-3_antitank_gun"
 msgstr "37 mm AT Gun M3"
 
@@ -5653,17 +6378,8 @@ msgstr "37 mm Gun M6"
 msgid "_37mm_M-6_L53M2"
 msgstr "37 mm Gun M6"
 
-msgid "_37mm_M1305_AP_FEP"
-msgstr "HVAP T1301"
-
-msgid "_37mm_M1305_HEAT_FEP"
-msgstr "APDS T1305"
-
 msgid "_37mm_T16"
 msgstr "37 mm Gun T16"
-
-msgid "_37mm_T250_FEP"
-msgstr "37 mm Rotary Gun T250"
 
 msgid "_37mm_semiautomatic_gun_M1924"
 msgstr "37 mm Semiautomatic Gun M1924"
@@ -5677,23 +6393,89 @@ msgstr "37 mm M1924A1"
 msgid "_37mm_semiautomatic_gun_M1924_short"
 msgstr "37 mm M1924"
 
+msgid "_3_inch_AP_M62_3_M10"
+msgstr "AP M62 (3\"/M10)"
+
+msgid "_3_inch_AP_M62_M6"
+msgstr "AP M62 (M6)"
+
+msgid "_3_inch_AP_M62_T1"
+msgstr "AP M62 (T1)"
+
+msgid "_3_inch_AT_Gun_M7_M10"
+msgstr "3-inch AT Gun M7 (M10)"
+
+msgid "_3_inch_Gun_M7"
+msgstr "3-inch Gun M7"
+
+msgid "_3_inch_Gun_M7_T1"
+msgstr "3-inch Gun M7 (T1)"
+
+msgid "_3_inch_HE_M42A1_3_M10"
+msgstr "HE M42A1 (3\"/M10)"
+
+msgid "_3_inch_HE_M42A1_M6"
+msgstr "HE M42A1 (M6)"
+
+msgid "_3_inch_HE_M42A1_T1"
+msgstr "HE M42A1 (T1)"
+
+msgid "_3_inch_HVAP_M93_3_M10"
+msgstr "HVAP M93 (3\"/M10)"
+
+msgid "_3_inch_HVAP_M93_M6"
+msgstr "HVAP M93 (M6)"
+
+msgid "_3_inch_HVAP_M93_T1"
+msgstr "HVAP M93(M7) (T1)"
+
 msgid "_57mm_APC_M86"
 msgstr "APC M86"
+
+msgid "_57mm_APC_M86_M8A1"
+msgstr "APC M86 (M8A1)"
 
 msgid "_57mm_AP_M70"
 msgstr "AP M70"
 
+msgid "_57mm_AP_M70_M8A1"
+msgstr "AP M70 (M8A1)"
+
 msgid "_57mm_Gun_M1_L50"
 msgstr "57 mm Gun M1"
 
+msgid "_57mm_Gun_M1_M8A1"
+msgstr "57 mm Gun M1 (M8A1)"
+
 msgid "_57mm_HE_T18"
 msgstr "HE T18"
+
+msgid "_57mm_HE_T18_M8A1"
+msgstr "HE T18 (M8A1)"
 
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APCR Mk. 1T"
 
 msgid "_6pdr_AP_MKs_4"
 msgstr "AP Mk. 4"
+
+msgid "_75mm_APC_M61_M24_M17"
+msgstr "APC M61 (M24/M17)"
+
+msgid "_75mm_APC_M61_M24_M6"
+msgstr "APC M61 (M24/M6)"
+
+msgid "_75mm_APC_M61_M4A1"
+msgstr "APC M61 (M4A1)"
+
+msgid "_75mm_APC_M61_M8A1"
+msgstr "APC M61 (M8A1)"
+
+msgid "_75mm_APC_M61_T6_M2"
+msgstr "APC M61 (T6/M2)"
+
+msgid "_75mm_APC_M61_T6_M3"
+msgstr "APC M61 (T6/M3)"
 
 msgid "_75mm_AT_Gun_M3_L37"
 msgstr "75 mm AT Gun M3"
@@ -5713,6 +6495,9 @@ msgstr "75 mm Gun M2"
 msgid "_75mm_Gun_M2_L28L"
 msgstr "75 mm Gun M2L"
 
+msgid "_75mm_Gun_M2_T6"
+msgstr "75 mm Gun M2 (T6)"
+
 msgid "_75mm_Gun_M3_L37"
 msgstr "75 mm Gun M3"
 
@@ -5728,14 +6513,14 @@ msgstr "75 mm Gun M3"
 msgid "_75mm_Gun_M3_L37_MapsTraining_Player_HT_1"
 msgstr "75 mm Gun M3"
 
+msgid "_75mm_Gun_M3_T6"
+msgstr "75 mm Gun M3 (T6)"
+
 msgid "_75mm_Gun_M6"
 msgstr "75 mm Gun M6"
 
 msgid "_75mm_Gun_M6V"
 msgstr "75 mm Gun M6V"
-
-msgid "_75mm_Gun_M7_L50"
-msgstr "3-inch Gun M7"
 
 msgid "_75mm_Gun_T13E1"
 msgstr "75 mm Gun T13E1"
@@ -5743,11 +6528,41 @@ msgstr "75 mm Gun T13E1"
 msgid "_75mm_HEAT_M66"
 msgstr "HEAT M66"
 
-msgid "_75mm_HEAT_T0305_FEP"
-msgstr "APFSDS T036"
+msgid "_75mm_HE_M48_M24_M17"
+msgstr "HE M48 (M24/M17)"
 
-msgid "_75mm_HVAP_M45A3_FEP"
-msgstr "HVAP T035"
+msgid "_75mm_HE_M48_M24_M6"
+msgstr "HE M48 (M24/M6)"
+
+msgid "_75mm_HE_M48_M4A1"
+msgstr "HE M48 (M4A1)"
+
+msgid "_75mm_HE_M48_M8A1"
+msgstr "HE M48 (M8A1)"
+
+msgid "_75mm_HE_M48_T6_M2"
+msgstr "HE M48 (T6/M2)"
+
+msgid "_75mm_HE_M48_T6_M3"
+msgstr "HE M48 (T6/M3)"
+
+msgid "_75mm_HVAP_T45_M24_M17"
+msgstr "HVAP T45 (M24/M17)"
+
+msgid "_75mm_HVAP_T45_M24_M6"
+msgstr "HVAP T45 (M24/M6)"
+
+msgid "_75mm_HVAP_T45_M4A1"
+msgstr "HVAP T45 (M4A1)"
+
+msgid "_75mm_HVAP_T45_M8A1"
+msgstr "HVAP T45 (M8A1)"
+
+msgid "_75mm_HVAP_T45_T6_M2"
+msgstr "HVAP T45 (T6/M2)"
+
+msgid "_75mm_HVAP_T45_T6_M3"
+msgstr "HVAP T45 (T6/M3)"
 
 msgid "_75mm_Howitzer_M1A1"
 msgstr "75 mm AT Howitzer M1A1"
@@ -5797,9 +6612,6 @@ msgstr "Pzgr39L (captured)"
 msgid "_75mm_Sprg.18L"
 msgstr "Sprg.18L (captured)"
 
-msgid "_75mm_XM247_FEP"
-msgstr "75 mm XM247 ARES"
-
 msgid "_76mm_APDS_M331A2"
 msgstr "HVAP-DS-T M331A2"
 
@@ -5812,6 +6624,27 @@ msgstr "AP M339"
 msgid "_76mm_AP_M339E5"
 msgstr "AP M339E5"
 
+msgid "_76mm_AP_M339_T37_T91"
+msgstr "AP M339 (T37/T91)"
+
+msgid "_76mm_AP_M339_T37_T94"
+msgstr "AP M339 (T37/T94)"
+
+msgid "_76mm_AP_M62_CMCD"
+msgstr "AP M62 (CMCD)"
+
+msgid "_76mm_AP_M62_M10"
+msgstr "AP M62 (M10)"
+
+msgid "_76mm_AP_M62_M36"
+msgstr "AP M62 (M36)"
+
+msgid "_76mm_AP_M62_M4A3_A1"
+msgstr "AP M62 (M4A3/A1)"
+
+msgid "_76mm_AP_M62_M4A3_A2"
+msgstr "AP M62 (M4A3/A2)"
+
 msgid "_76mm_AP_M79"
 msgstr "AP M62"
 
@@ -5823,6 +6656,12 @@ msgstr "AP M79"
 
 msgid "_76mm_AP_M79_18"
 msgstr "AP M62/18"
+
+msgid "_76mm_AP_M79_M4A1"
+msgstr "AP M62 (M4A1)"
+
+msgid "_76mm_AP_M79_T1"
+msgstr "AP M62 (T1)"
 
 msgid "_76mm_AP_M80"
 msgstr "AP-T M80"
@@ -5839,6 +6678,12 @@ msgstr "76 mm AT Gun M1A2"
 msgid "_76mm_AT_Gun_M1A2_18"
 msgstr "76 mm AT Gun M1A2/18"
 
+msgid "_76mm_AT_Gun_M1A2_M10"
+msgstr "76 mm AT Gun M1A2 (M10)"
+
+msgid "_76mm_AT_Gun_M1A2_M36"
+msgstr "76 mm AT Gun M1A2 (M36)"
+
 msgid "_76mm_Gun_M1918"
 msgstr "3-inch Gun T9"
 
@@ -5854,8 +6699,17 @@ msgstr "76 mm Gun M1A1L"
 msgid "_76mm_Gun_M1A1T"
 msgstr "76 mm Gun M1A1"
 
+msgid "_76mm_Gun_M1A1_M4A1"
+msgstr "76 mm Gun M1A1 (M4A1)"
+
+msgid "_76mm_Gun_M1A1_M4A3"
+msgstr "76 mm Gun M1A1 (M4A3)"
+
 msgid "_76mm_Gun_M1A1_RMT"
 msgstr "76 mm Gun M1A1 RMT"
+
+msgid "_76mm_Gun_M1A1_T1"
+msgstr "76 mm Gun M1A1 (T1)"
 
 msgid "_76mm_Gun_M1A2"
 msgstr "76 mm Gun M1A2"
@@ -5871,6 +6725,9 @@ msgstr "76 mm Gun M1A2L"
 
 msgid "_76mm_Gun_M1A2_BPXIV"
 msgstr "76 mm Gun M1A2"
+
+msgid "_76mm_Gun_M1A2_CMCD"
+msgstr "76 mm Gun M1A2 (CMCD)"
 
 msgid "_76mm_Gun_M32"
 msgstr "76 mm Gun M32"
@@ -5896,6 +6753,9 @@ msgstr "76 mm Gun T185"
 msgid "_76mm_Gun_T185_A_SH"
 msgstr "76 mm Gun T185"
 
+msgid "_76mm_Gun_T185_CMCD"
+msgstr "76 mm Gun T185 (CMCD)"
+
 msgid "_76mm_Gun_T91"
 msgstr "76 mm Gun T91"
 
@@ -5917,8 +6777,17 @@ msgstr "HEAT-T M496"
 msgid "_76mm_HEAT_M496A1"
 msgstr "HEAT-T M496A1"
 
+msgid "_76mm_HEAT_M496A1_M41"
+msgstr "HEAT M496A1 (M41)"
+
+msgid "_76mm_HEAT_M496_CMCD"
+msgstr "HEAT M496 (CMCD)"
+
 msgid "_76mm_HEAT_M496_SH"
 msgstr "AP-T M496"
+
+msgid "_76mm_HEAT_M496_T69"
+msgstr "HEAT M496 (T69)"
 
 msgid "_76mm_HE_M1A1-AR"
 msgstr "HE M1A1-AR"
@@ -5929,8 +6798,23 @@ msgstr "HE M352"
 msgid "_76mm_HE_M352A1"
 msgstr "HE M352A1"
 
+msgid "_76mm_HE_M352A1_M41"
+msgstr "HE M352A1 (M41)"
+
 msgid "_76mm_HE_M352E5"
 msgstr "HE M352E5"
+
+msgid "_76mm_HE_M352_CMCD"
+msgstr "HE M352 (CMCD)"
+
+msgid "_76mm_HE_M352_T37_T91"
+msgstr "HE M352 (T37/T91)"
+
+msgid "_76mm_HE_M352_T37_T94"
+msgstr "HE M352 (T37/T94)"
+
+msgid "_76mm_HE_M352_T69"
+msgstr "HE M352 (T69)"
 
 msgid "_76mm_HE_M42A1"
 msgstr "HE M42A1"
@@ -5941,14 +6825,50 @@ msgstr "HE M42A1E20"
 msgid "_76mm_HE_M42A1_18"
 msgstr "HE M42A1/18"
 
+msgid "_76mm_HE_M42A1_CMCD"
+msgstr "HE M42A1 (CMCD)"
+
+msgid "_76mm_HE_M42A1_M10"
+msgstr "HE M42A1 (M10)"
+
+msgid "_76mm_HE_M42A1_M36"
+msgstr "HE M42A1 (M36)"
+
+msgid "_76mm_HE_M42A1_M4A1"
+msgstr "HE M42A1 (M4A1)"
+
+msgid "_76mm_HE_M42A1_M4A3_A1"
+msgstr "HE M42A1 (M4A3/A1)"
+
+msgid "_76mm_HE_M42A1_M4A3_A2"
+msgstr "HE M42A1 (M4A3/A2)"
+
+msgid "_76mm_HE_M42A1_T1"
+msgstr "HE M42A1 (T1)"
+
 msgid "_76mm_HE_M42B1"
 msgstr "HE M42B1"
+
+msgid "_76mm_HVAP_DS_M331A2_CMCD"
+msgstr "HVAP-DS M331A2 (CMCD)"
+
+msgid "_76mm_HVAP_DS_M331A2_T69"
+msgstr "HVAP-DS M331A2 (T69)"
+
+msgid "_76mm_HVAP_DS_M331A3_M41"
+msgstr "HVAP-DS M331A3 (M41)"
 
 msgid "_76mm_HVAP_M319"
 msgstr "HVAP M319"
 
 msgid "_76mm_HVAP_M319E5"
 msgstr "HVAP M319E5"
+
+msgid "_76mm_HVAP_M319_T37_T91"
+msgstr "HVAP M319 (T37/T91)"
+
+msgid "_76mm_HVAP_M319_T37_T94"
+msgstr "HVAP M319 (T37/T94)"
 
 msgid "_76mm_HVAP_M93"
 msgstr "HVAP M93"
@@ -5958,6 +6878,27 @@ msgstr "HVAP M93E20"
 
 msgid "_76mm_HVAP_M93_18"
 msgstr "HVAP M93/18"
+
+msgid "_76mm_HVAP_M93_CMCD"
+msgstr "HVAP M93 (CMCD)"
+
+msgid "_76mm_HVAP_M93_M10"
+msgstr "HVAP M93 (M10)"
+
+msgid "_76mm_HVAP_M93_M36"
+msgstr "HVAP M93 (M36)"
+
+msgid "_76mm_HVAP_M93_M4A1"
+msgstr "HVAP M93 (M4A1)"
+
+msgid "_76mm_HVAP_M93_M4A3_A1"
+msgstr "HVAP M93 (M4A3/A1)"
+
+msgid "_76mm_HVAP_M93_M4A3_A2"
+msgstr "HVAP M93 (M4A3/A2)"
+
+msgid "_76mm_HVAP_M93_T1"
+msgstr "HVAP M93 (T1)"
 
 msgid "_76mm_HVAP_M94"
 msgstr "HVAP M94"
@@ -6013,14 +6954,26 @@ msgstr "AP M318"
 msgid "_90mm_AP_M318A1"
 msgstr "M318A1"
 
+msgid "_90mm_AP_M318A1_M_II_Y"
+msgstr "AP M318A1 (M-II-Y)"
+
 msgid "_90mm_AP_M318_L"
 msgstr "AP M318"
+
+msgid "_90mm_AP_M318_T54E1"
+msgstr "AP M318 (T54E1)"
+
+msgid "_90mm_AP_M318_T69"
+msgstr "AP M318 (T69)"
 
 msgid "_90mm_AP_M77"
 msgstr "AP M77"
 
 msgid "_90mm_AP_M77E2M2"
 msgstr "AP M77E2M2"
+
+msgid "_90mm_AP_M77E2M2_M26"
+msgstr "AP M77E2M2 (M26)"
 
 msgid "_90mm_AP_M77E2_2"
 msgstr "AP M77E2/2"
@@ -6034,8 +6987,35 @@ msgstr "AP M77/2"
 msgid "_90mm_AP_M77_ID"
 msgstr "AP M77"
 
+msgid "_90mm_AP_M77_M26"
+msgstr "AP M77 (M26)"
+
+msgid "_90mm_AP_M77_M36"
+msgstr "AP M77 (M36)"
+
+msgid "_90mm_AP_M77_M6"
+msgstr "AP M77 (M6)"
+
+msgid "_90mm_AP_M77_M_II_Y"
+msgstr "AP M77 (M-II-Y)"
+
+msgid "_90mm_AP_M77_PT"
+msgstr "AP M77 (PT)"
+
 msgid "_90mm_AP_M77_SH"
 msgstr "AP M77"
+
+msgid "_90mm_AP_M77_T20"
+msgstr "AP M77 (T20)"
+
+msgid "_90mm_AP_M77_T25_AT"
+msgstr "AP M77 (T25 AT)"
+
+msgid "_90mm_AP_M77_T29"
+msgstr "AP M77 (T29)"
+
+msgid "_90mm_AP_M77_T32"
+msgstr "AP M77 (T32)"
 
 msgid "_90mm_AP_M82_late"
 msgstr "AP M82 late"
@@ -6058,6 +7038,9 @@ msgstr "90 mm AT Gun M3/18"
 msgid "_90mm_AT_Gun_M3_2"
 msgstr "90 mm AT Gun M3/2"
 
+msgid "_90mm_AT_Gun_M3_M36"
+msgstr "90 mm AT Gun M3 (M36)"
+
 msgid "_90mm_AT_Gun_T15E2"
 msgstr "90 mm AT Gun T15E2"
 
@@ -6066,6 +7049,9 @@ msgstr "90 mm AT Gun T15E2/2"
 
 msgid "_90mm_AT_Gun_T15E2_SH"
 msgstr "90 mm AT Gun T15E2"
+
+msgid "_90mm_AT_Gun_T15E2_T25_AT"
+msgstr "90 mm AT Gun T15E2 (T25 AT)"
 
 msgid "_90mm_Gun_M3"
 msgstr "90 mm Gun M3"
@@ -6085,8 +7071,14 @@ msgstr "90 mm Gun M3E26"
 msgid "_90mm_Gun_M3_ID"
 msgstr "90mm Gun M3"
 
+msgid "_90mm_Gun_M3_M6"
+msgstr "90 mm Gun M3 (M6)"
+
 msgid "_90mm_Gun_M3_SH"
 msgstr "90 mm Gun M3"
+
+msgid "_90mm_Gun_M3_T29"
+msgstr "90 mm Gun M3 (T29)"
 
 msgid "_90mm_Gun_M41"
 msgstr "90 mm Gun M41"
@@ -6124,6 +7116,9 @@ msgstr "90 mm Gun T15E2M2"
 msgid "_90mm_Gun_T178"
 msgstr "90 mm Gun T178"
 
+msgid "_90mm_Gun_T178_T69"
+msgstr "90 mm Gun T178 (T69)"
+
 msgid "_90mm_Gun_T208_rifled"
 msgstr "90 mm Gun T208 (rifled)"
 
@@ -6142,8 +7137,17 @@ msgstr "HEAT-T M348"
 msgid "_90mm_HEAT_M348_L"
 msgstr "HEAT M431"
 
+msgid "_90mm_HEAT_M348_T54E1"
+msgstr "HEAT M348 (T54E1)"
+
+msgid "_90mm_HEAT_M348_T69"
+msgstr "HEAT M348 (T69)"
+
 msgid "_90mm_HEAT_M431"
 msgstr "HEAT M431"
+
+msgid "_90mm_HEAT_M431_M_III_Y"
+msgstr "HEAT M431 (M-III-Y)"
 
 msgid "_90mm_HEAT_M431_SH"
 msgstr "AP M431"
@@ -6160,6 +7164,9 @@ msgstr "HE M71"
 msgid "_90mm_HE_M71E2M2"
 msgstr "HE M71E2M2"
 
+msgid "_90mm_HE_M71E2M2_M26"
+msgstr "HE M71E2M2 (M26)"
+
 msgid "_90mm_HE_M71E2_2"
 msgstr "HE M71E2/2"
 
@@ -6172,8 +7179,38 @@ msgstr "HE M71/2"
 msgid "_90mm_HE_M71_ID"
 msgstr "HE M71"
 
+msgid "_90mm_HE_M71_M26"
+msgstr "HE M71 (M26)"
+
+msgid "_90mm_HE_M71_M36"
+msgstr "HE M71 (M36)"
+
+msgid "_90mm_HE_M71_M6"
+msgstr "HE M71 (M6)"
+
+msgid "_90mm_HE_M71_M_II_Y"
+msgstr "HE M71 (M-II-Y)"
+
+msgid "_90mm_HE_M71_PT"
+msgstr "HE M71 (PT)"
+
+msgid "_90mm_HE_M71_T20"
+msgstr "HE M71 (T20)"
+
+msgid "_90mm_HE_M71_T25_AT"
+msgstr "HE M71 (T25 AT)"
+
+msgid "_90mm_HE_M71_T29"
+msgstr "HE M71 (T29)"
+
+msgid "_90mm_HE_M71_T32"
+msgstr "HE M71 (T32)"
+
 msgid "_90mm_HE_T340"
 msgstr "HE T340"
+
+msgid "_90mm_HE_T340_M_II_Y"
+msgstr "HE T340 (M-II-Y)"
 
 msgid "_90mm_HE_T91E3"
 msgstr "HE T91E3"
@@ -6181,11 +7218,23 @@ msgstr "HE T91E3"
 msgid "_90mm_HE_T91E3_L"
 msgstr "HE T91E3"
 
+msgid "_90mm_HE_T91E3_T49"
+msgstr "HE T91E3 (T49)"
+
+msgid "_90mm_HE_T91E3_T54E1"
+msgstr "HE T91E3 (T54E1)"
+
+msgid "_90mm_HE_T91E3_T69"
+msgstr "HE T91E3 (T69)"
+
 msgid "_90mm_HVAP_M304"
 msgstr "HVAP M304"
 
 msgid "_90mm_HVAP_M304E2M2"
 msgstr "HVAP M304E2M2"
+
+msgid "_90mm_HVAP_M304E2M2_M26"
+msgstr "HVAP M304E2M2 (M26)"
 
 msgid "_90mm_HVAP_M304E2_2"
 msgstr "HVAP M304E2/2"
@@ -6198,6 +7247,33 @@ msgstr "HVAP M304/2"
 
 msgid "_90mm_HVAP_M304_ID"
 msgstr "HVAP M304"
+
+msgid "_90mm_HVAP_M304_M26"
+msgstr "HVAP M304 (M26)"
+
+msgid "_90mm_HVAP_M304_M36"
+msgstr "HVAP M304 (M36)"
+
+msgid "_90mm_HVAP_M304_M6"
+msgstr "HVAP M304 (M6)"
+
+msgid "_90mm_HVAP_M304_M_II_Y"
+msgstr "HVAP M304 (M-II-Y)"
+
+msgid "_90mm_HVAP_M304_PT"
+msgstr "HVAP M304 (PT)"
+
+msgid "_90mm_HVAP_M304_T20"
+msgstr "HVAP M304 (T20)"
+
+msgid "_90mm_HVAP_M304_T25_AT"
+msgstr "HVAP M304 (T25 AT)"
+
+msgid "_90mm_HVAP_M304_T29"
+msgstr "HVAP M304 (T29)"
+
+msgid "_90mm_HVAP_M304_T32"
+msgstr "HVAP M304 (T32)"
 
 msgid "_90mm_HVAP_T30E15"
 msgstr "HVAP T30E15"
@@ -6219,20 +7295,3 @@ msgstr "94 mm British DB Gun"
 
 msgid "_94mm_HE_MkI"
 msgstr "HE MB71"
-
-msgid "_M44"
-msgstr "M44"
-
-msgid "_M44_descr"
-msgstr ""
-"A 155 mm SPG on the chassis of the M41 light tank. The vehicle saw action in"
-" the Korean War. In the early 1960s, improved SPGs of this type with "
-"rotating turrets were introduced, and the M44 was removed from service. "
-"According to different sources, between 250 and 600 vehicles were "
-"manufactured from 1953 through 1954."
-
-msgid "chassisE1"
-msgstr "Stuart E1"
-
-msgid "chassisE2"
-msgstr "Stuart E2"

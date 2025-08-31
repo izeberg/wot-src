@@ -1,4 +1,5 @@
 import logging, weakref, typing
+from frameworks.wulf.gui_constants import ShowingStatus
 from wg_async import wg_async, wg_await, AsyncReturn
 import Event
 from frameworks.wulf import WindowSettings, Window, WindowStatus, WindowFlags
@@ -54,6 +55,12 @@ class SFWindow(Window):
         else:
             return status
 
+    @property
+    def showingStatus(self):
+        if self.windowStatus == WindowStatus.LOADED:
+            return ShowingStatus.SHOWN
+        return ShowingStatus.HIDDEN
+
     def isParamsEqual(self, loadParams, scope=EVENT_BUS_SCOPE.DEFAULT, fireEvent=True, *args, **kwargs):
         return self.__loadParams.viewKey == loadParams.viewKey and self.args == args and self.kwargs == kwargs
 
@@ -73,6 +80,7 @@ class SFWindow(Window):
         _logger.debug('Content has been loaded: %r', self)
         self.onContentLoaded(self)
         self.onStatusChanged(WindowStatus.LOADED)
+        self.isReady = True
 
     @wg_async
     def wait(self):

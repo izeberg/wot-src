@@ -1,0 +1,1011 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "campaignSelector/completedAll/subtitle"
+msgstr "All campaigns have been completed with honors"
+
+msgid "campaignSelector/completedAll/title"
+msgstr "Congratulations!"
+
+msgid "campaignSelector/locked"
+msgstr "Personal Missions can be completed in vehicles of Tier VI or higher"
+
+msgid "campaignSelector/operation/tooltip/locked"
+msgstr "Operation temporarily disabled"
+
+msgid "campaignSelector/status/button/activate"
+msgstr "Activate Campaign"
+
+msgid "campaignSelector/status/button/switchCampaign"
+msgstr "Resume Campaign"
+
+msgid "campaignSelector/status/button/switchCampaigns"
+msgstr "Resume Campaigns"
+
+msgid "campaignSelector/status/button/tooltip"
+msgstr ""
+"Wait until the vehicle is out of battle. You cannot switch campaigns or "
+"operations while a vehicle is in battle."
+
+msgid "campaignSelector/status/completed/firstTwo"
+msgstr ""
+"The {{firstCampaign}} and {{secondCampaign}} campaigns have been completed "
+"with honors!"
+
+msgid "campaignSelector/status/completed/third"
+msgstr "The {{thirdCampaign}} campaign has been completed with honors!"
+
+msgid "campaignSelector/status/text/activate"
+msgstr "The new {{thirdCampaign}} campaign is available!"
+
+msgid "campaignSelector/status/text/switchCampaign"
+msgstr "The {{thirdCampaign}} campaign is paused {{icon}}"
+
+msgid "campaignSelector/status/text/switchCampaigns"
+msgstr ""
+"The {{firstCampaign}} and {{secondCampaign}} campaigns are paused {{icon}}"
+
+msgid "campaignSelector/status/tooltip/firstTwo"
+msgstr ""
+"When the Long-Awaited Backup and Second Front campaigns are resumed, the "
+"Sector 3 campaign will be paused. All progress in the paused campaign will "
+"be saved and you can resume it at any time."
+
+msgid "campaignSelector/status/tooltip/third"
+msgstr ""
+"When the Sector 3 campaign is resumed, the Long-Awaited Backup and Second "
+"Front campaigns will be paused. All progress in the paused campaigns will be"
+" saved and you can resume them at any time."
+
+msgid "campaignSelector/status/tooltip/title"
+msgstr "Campaign Resumption"
+
+msgid "common/category/assault"
+msgstr "Vanguard"
+
+msgid "common/category/sniper"
+msgstr "Ambush"
+
+msgid "common/category/support"
+msgstr "Assistance"
+
+msgid "common/role/assault"
+msgstr "Assault"
+
+msgid "common/role/breakthrough"
+msgstr "Breakthrough"
+
+msgid "common/role/sniper"
+msgstr "Sniper"
+
+msgid "common/role/support"
+msgstr "Support"
+
+msgid "common/role/universal"
+msgstr "Versatile"
+
+msgid "conditions/requiredVehicle/bottomLabel"
+msgstr "Fulfill the condition in %(count)s different vehicles"
+
+msgid "detail/descr/historical/s3_t10_vehElement_1"
+msgstr ""
+"James Corvin, first entry. Today we began the assembly of my tank, Black Rock. Installed the turret. Composite construction of cast elements welded together. I approve of this design. It’s practical.\n"
+"\n"
+"Regarding our investigation—thorough examination of the island has disproven our theory. There is no top-secret Moretti bunker beneath us.\n"
+"\n"
+"This Moretti operated methodically, creating an entire network of false facilities and fabricated documents to confuse us.\n"
+"\n"
+"We've wasted too much time following a false lead. We need to reconsider our approach and act more thoughtfully—and base our every step on solid, proven facts."
+
+msgid "detail/descr/historical/s3_t10_vehElement_10"
+msgstr ""
+"Side plates installed today. A little extra protection is never a bad idea.\n"
+"\n"
+"Moretti's records shed light on the events at Morgenlicht. It was there that scientists accidentally discovered the KRONOS prototype's tendency to generate unexpected results by making probabilistic errors. This capacity for controlled error could be fine-tuned and honed—to generate unconventional solutions on demand.\n"
+"\n"
+"All they needed to unlock truly groundbreaking inventions was to increase computational power. Literally, by scaling up the machine's size. Exponentially."
+
+msgid "detail/descr/historical/s3_t10_vehElement_11"
+msgstr ""
+"Today we painted the tank black. The dark camouflage will give an additional psychological advantage over the enemy and enhance effectiveness during night operations.\n"
+"\n"
+"In our investigation, everything has fallen into place: KRONOS is a colossal computing system capable of \"creative mutations.\" And it is indeed the source of all these impossible technologies we've found in secret bunkers and that the Architect is distributing via satellite. Incredible.\n"
+"\n"
+"Moretti’s notes show that initially he admired his creation and believed he had built a tool capable of \"designing humanity's future.\" But after that it gets more interesting."
+
+msgid "detail/descr/historical/s3_t10_vehElement_12"
+msgstr ""
+"Installed the smoke mortars today. Seemingly unassuming components. But smoke screens have saved my previous tanks from destruction more than once.\n"
+"\n"
+"The tone of Moretti's notes changes dramatically. He was always cautious and never trusted anyone too much. But at some point, he becomes completely paranoid. He suspects not only the scientists, engineers, and staff, but KRONOS itself. He literally writes that he's convinced the machine has gained \"self-awareness\" and is manipulating people.\n"
+"\n"
+"The further we go, the more paranoid Moretti's entries become. Now we face a new mystery: was Moretti himself gradually descending into madness, or had he truly created something that transcended its programmed capabilities?"
+
+msgid "detail/descr/historical/s3_t10_vehElement_13"
+msgstr ""
+"We've installed a muzzle break, which will significantly reduce recoil. With that, the gun is finished.\n"
+"\n"
+"In Moretti's final entry, it appears he completely lost control of himself. He writes that the machine is pretending, that it \"knows everything.\" He explicitly calls for its destruction before it's too late.\n"
+"\n"
+"But there's nothing after that entry. We haven't found a single piece of evidence about KRONOS's subsequent fate. Was the machine really destroyed, or is it still operating somewhere in the snows of Antarctica? That would be frightening, especially considering the Architect's actions.\n"
+"\n"
+"What if he possesses even more recent KRONOS developments that are once again a decade ahead of our capabilities?"
+
+msgid "detail/descr/historical/s3_t10_vehElement_14"
+msgstr ""
+"The tank is now outfitted with all essentials. It'll be ready very soon.\n"
+"\n"
+"And just in time, too. Now we know what Moretti was hiding from us and where the Architect got all these technologies, we're left with our main mission—to find KRONOS.\n"
+"\n"
+"We're already preparing a military search operation in Antarctica. But why do I feel like this is all another one of Moretti's deceptions? Did Moretti even exist at all? After all his hoaxes, you start questioning everything and considering even the most out-there theories. Leni proposed that the Architect and Moretti might be the same person. And Teddy is absolutely convinced that the Architect is actually KRONOS itself.\n"
+"\n"
+"Whoever the Architect may be, he's several steps ahead of us. We need to find KRONOS to stop the Architect."
+
+msgid "detail/descr/historical/s3_t10_vehElement_15"
+msgstr ""
+"The tracks are installed. Black Rock is finally complete. Each component calibrated, every system tested. An engineering marvel ready to rise to any challenge.\n"
+"\n"
+"Throughout my career, I've commanded many tanks, but this one is something special. It represents the culmination of our efforts, recovered technologies, and our determination to counter the threat posed by the Architect.\n"
+"\n"
+"Whatever he has planned, whatever secrets await us in Antarctica or elsewhere, this machine improves our probability of success.\n"
+"\n"
+"History teaches us that preparation is the decisive factor between victory and defeat. I'm confident this will hold true in the battle that lies ahead."
+
+msgid "detail/descr/historical/s3_t10_vehElement_2"
+msgstr ""
+"Today we installed the suspension components. Nothing out of the ordinary. But the design is reliable, field-tested.\n"
+"\n"
+"We're still examining shipping manifests where Moretti's pseudonyms appear. Thanks to transport vessel routes and data from the Architect's satellite, we've located several dozen secret facilities.\n"
+"\n"
+"In these, we've found new blueprints and records created as part of Project KRONOS. But this doesn’t bring us any closer to understanding how German scientists managed to develop all these designs, nor to finding the main KRONOS bunker where something truly grand and dangerous was being built."
+
+msgid "detail/descr/historical/s3_t10_vehElement_3"
+msgstr ""
+"We installed road wheels today. The suspension system is nearly complete. This part is simple.\n"
+"\n"
+"Our investigation, however, remains challenging. What are we missing? Where in Europe could a secret bunker of such magnitude be concealed that we've failed to locate it thus far?\n"
+"\n"
+"Teddy suggests the facility might be underwater. He noted that submarine departure dates frequently aligned with transport vessel schedules. An intriguing observation, but constructing an underwater base in the 1940s would have been beyond even Moretti's capabilities.\n"
+"\n"
+"Teddy proposed another theory—that the secret base might be on the moon. We dismissed this immediately. The Architect only managed to launch a satellite recently. In the 1940s, space travel was the stuff of fantasy."
+
+msgid "detail/descr/historical/s3_t10_vehElement_4"
+msgstr ""
+"Commander's observation equipment installed. The rotating periscope provides complete 360-degree visibility. I can monitor the battlefield without being in the turret itself—sounds promising.\n"
+"\n"
+"We've identified unusual activity patterns from a fleet of small cargo vessels. They would leave port and return empty several hours later. According to ship logs, they always headed to the same coordinates in open water.\n"
+"\n"
+"Could it really be an underwater base?\n"
+"\n"
+"Leni shares my skepticism about this theory. However, she finds the transfer of containers to submarines more plausible. We need to determine where the submarines from this sector were headed."
+
+msgid "detail/descr/historical/s3_t10_vehElement_5"
+msgstr ""
+"Crew observation equipment installed today. At its core is a television-based observation system—another piece of KRONOS technology that's decades ahead of its time.\n"
+"\n"
+"Intelligence archives indicate increased submarine activity in the South Atlantic near the Argentine coast, with suspected movement patterns toward Antarctica. Recently deciphered documents confirm this theory.\n"
+"\n"
+"Antarctica appears to be the final destination for these shipments. The most remote location on Earth would indeed be the ideal place to hide something of this magnitude. Now we just need to determine what exactly Moretti wanted to conceal in the ice."
+
+msgid "detail/descr/historical/s3_t10_vehElement_6"
+msgstr ""
+"Installed a pair of Browning M2HB heavy machine guns. The remote control system allows us to engage targets without exposing the crew to return fire—a tactical advantage I value highly.\n"
+"\n"
+"We thought we were closing in on the truth about what Moretti was building, only to discover inconsistencies in the schematics of this gigantic Wunderwaffe from recently decrypted KRONOS archives. The blueprints contain deliberate errors that would render any assembled device inoperable.\n"
+"\n"
+"Damn! Another of Moretti's falsifications.\n"
+"\n"
+"What exactly was he hiding behind such elaborate disinformation? What could possibly be more classified than a Wunderwaffe?"
+
+msgid "detail/descr/historical/s3_t10_vehElement_7"
+msgstr ""
+"Main gun finally installed. A very unusual specimen of special caliber with an ejector that will ensure high accuracy and rate of fire. Exactly what I need.\n"
+"\n"
+"After analyzing and separating authentic blueprints from forgeries, we've made a breakthrough discovery: the \"wonder weapon\" we've been searching for isn't a weapon at all, but a computing center of incredible scale.\n"
+"\n"
+"I must acknowledge Moretti's genius in creating such an elaborate smokescreen of false projects and secret bases. Without the data from the Architect's satellite, we'd still be a long way away from this revelation."
+
+msgid "detail/descr/historical/s3_t10_vehElement_8"
+msgstr ""
+"Fenders and mudguards installed today. Nothing special, but they're another step toward completing the tank.\n"
+"\n"
+"Our investigation, however, has yielded something special. We've uncovered Moretti's personal records. He writes about creating a mechanical-electronic system capable of not just computing, but \"predicting\" new ideas.\n"
+"\n"
+"This appears to be the true KRONOS—the genuine source of all these incredible technologies. A machine that could design other machines.\n"
+"\n"
+"But how is it possible? Or is this just another of Moretti's elaborate deceptions—perhaps meant to distract intelligence agencies from an actual working \"wonder weapon\"?"
+
+msgid "detail/descr/historical/s3_t10_vehElement_9"
+msgstr ""
+"Infrared spotlights connected. These devices allow for combat operations in night conditions. A necessary minimum by today's standards.\n"
+"\n"
+"We're still deciphering Moretti's records. He writes that his machine was initially conceived as a giant engineering tool, but due to numerous design flaws, it began to \"hallucinate,\" generating answers, theories, and concepts that hadn't existed before. Most of this output was nonsensical, but among the chaos were genuine innovations.\n"
+"\n"
+"\"Mistakes lead to new discoveries. The perfect lacks creative spark. Everything obeys the laws of nature. Even machines.\" Hmm..."
+
+msgid "detail/descr/historical/s3_t8_vehElement_1"
+msgstr ""
+"Nebel speaking, log entry one. Today, construction of my Windhund vehicle has begun.\n"
+"\n"
+"Installed additional spaced armor. Valuable component. Such armor is effective against shaped charge shells.\n"
+"\n"
+"Our investigation also started today. Documents marked \"KRONOS\" contain technologies decades ahead of our current capabilities. Designs from the 1940s that simply shouldn't exist. Some match the data being transmitted by the Architect's satellite.\n"
+"\n"
+"So far, we've found only one lead: references to \"Schloss Morgenlicht.\" Morning Light Castle. We must locate this place and discover what activities were conducted there."
+
+msgid "detail/descr/historical/s3_t8_vehElement_10"
+msgstr ""
+"Mobile tactical ground-based pulse-Doppler radar. Impressive technology. Can identify target size and range. A skilled operator, like me, obviously, can distinguish between personnel, animals and vehicles from significant distances. Much more compact than anything we have available today.\n"
+"\n"
+"And all this thanks to a radar schematic from 1944 we found in the KRONOS archives. This technology isn't just ahead of its time—it's ahead of ours, too.\n"
+"\n"
+"If only I'd had this in my hands back then, I would have changed the course of history..."
+
+msgid "detail/descr/historical/s3_t8_vehElement_11"
+msgstr ""
+"Standard tank lighting system, rearview mirrors, and communications antennas. Nothing remarkable—just basic equipment for any modern combat vehicle.\n"
+"\n"
+"What is remarkable, though, is what we've learned about mid-1944. Something changed dramatically at Morgenlicht then: trucks began arriving during daylight hours, and one more wing of the clinic was completely handed over to Moranti.\n"
+"\n"
+"The timing coincides precisely with when the Reich was desperately trying to develop its \"Wunderwaffe\". Hmm..."
+
+msgid "detail/descr/historical/s3_t8_vehElement_12"
+msgstr ""
+"Smoke grenade launchers installed today. Effective for quick deployment of concealing smoke screens at close range.\n"
+"\n"
+"Our Moranti created his own concealing screen, which we're still trying to disperse.\n"
+"\n"
+"In documents from that period, we found mentions that his \"Geistesfessel\" experiment—\"Mind Shackles\"—was successful and ready for expansion.\n"
+"\n"
+"Sends chills down my spine when I start imagining what he must have done to those scientists to obtain all these technologies."
+
+msgid "detail/descr/historical/s3_t8_vehElement_13"
+msgstr ""
+"Outfitted the tank with the necessary entrenching tools. You can have the most advanced radar system, but sometimes you need to get your hands dirty to get out of trouble.\n"
+"\n"
+"In one of the secret bunkers we discovered, we found fragments of Morgenlicht's medical documentation. It contained a list of disturbing procedure names: \"Thought Collection,\" \"Mist Chamber,\" \"Dream Catcher,\" \"Mind Bridge,\" \"Mechanical Memory,\" \"Shadow Archive.\"\n"
+"\n"
+"The jigsaw is slowly coming together. I can feel we're getting closer to the truth—and soon we'll find the missing pieces."
+
+msgid "detail/descr/historical/s3_t8_vehElement_14"
+msgstr ""
+"Vehicle is almost complete. Secured my favorite camouflage nets today. Concealment is my specialty—both hiding myself and finding those who try to disappear.\n"
+"\n"
+"But tracking down Moranti has proven much more difficult. At some point, he suddenly vanishes from all documents, like he was eliminated as an unnecessary witness. But the experiments at Morgenlicht continued even without him.\n"
+"\n"
+"What really happened? Another staged disappearance? Or did Moranti cross some line? What could he have done that was beyond acceptable limits even for the Reich?"
+
+msgid "detail/descr/historical/s3_t8_vehElement_15"
+msgstr ""
+"Windhund is ready. Final systems check has been completed.\n"
+"\n"
+"This isn't just another combat vehicle. It's a predator created for hunting—stealthy, lethal at long distances, and capable of dissolving into the night.\n"
+"\n"
+"The hunt finally begins.\n"
+"\n"
+"Now our investigation will accelerate significantly. Some secrets can only be uncovered through fieldwork."
+
+msgid "detail/descr/historical/s3_t8_vehElement_2"
+msgstr ""
+"Hatches installed today. Convenient placement for rapid entry and exit. Practical, efficient. Exactly what I need.\n"
+"\n"
+"Found more information about Schloss Morgenlicht. It's a medical facility with a secret wing, located in a castle.\n"
+"\n"
+"Records mention the facility's supervisor - a \"Doctor Moranti.\"\n"
+"\n"
+"A medical institution with a secret department? Something doesn't add up here. We need to determine how it's connected to Project KRONOS and the encrypted blueprints."
+
+msgid "detail/descr/historical/s3_t8_vehElement_3"
+msgstr ""
+"First part of suspension system installed. Another step closer to completing Windhund.\n"
+"\n"
+"While studying the archives, we discovered a disturbing pattern. In 1943, prominent German scientists and engineers were systematically declared \"insane\" and disappeared at the Morgenlicht clinic.\n"
+"\n"
+"Too organized to be coincidental. These weren't random outbreaks of mental illness. This was deliberate collection of intellectual resources.\n"
+"\n"
+"Question is: what exactly were they doing with those resources?"
+
+msgid "detail/descr/historical/s3_t8_vehElement_4"
+msgstr ""
+"Road wheels installed. Four on each side. The front pair has metal rims instead of rubber. Standard rubber would deteriorate too quickly under that weight distribution.\n"
+"\n"
+"Found a former Morgenlicht orderly. His testimony is quite revealing. Military trucks under armed guard regularly arrived at the restricted wing. They brought people diagnosed with \"manic depression.\"\n"
+"\n"
+"So they were keeping scientists and engineers locked up. And under pressure, these captives were inventing new technologies? Is this what Project KRONOS was all about?"
+
+msgid "detail/descr/historical/s3_t8_vehElement_5"
+msgstr ""
+"Dust screens mounted on sides today. They'll increase the vehicle's endurance on long missions. Definitely a welcome addition.\n"
+"\n"
+"Found intriguing information in recovered Morgenlicht documents. An engineer officially declared \"killed in action\" in 1943 appears in the clinic's intake logs three weeks later.\n"
+"\n"
+"But was this forced confinement? Some evidence suggests certain specialists went there voluntarily, accepting staged deaths to continue working under Moranti's protection. A clever trick to hide their research from Allied intelligence.\n"
+"\n"
+"So who are you, Dr. Moranti? And how come I still don't know anything about you?"
+
+msgid "detail/descr/historical/s3_t8_vehElement_6"
+msgstr ""
+"We’ve installed a muzzle brake on the main gun. It significantly reduces recoil. Just what I need.\n"
+"\n"
+"Found a nurse's diary from Morgenlicht. She describes \"Doctor Moranti\" commanding both guards and patients with absolute authority. However, this doctor doesn't appear in any German medical registry or military archive. A true phantom.\n"
+"\n"
+"This only confirms my suspicions—there was no Doctor Moranti, just an alias created specifically for Project KRONOS. Someone preferred to pull the strings from the shadows."
+
+msgid "detail/descr/historical/s3_t8_vehElement_7"
+msgstr ""
+"Applied base camouflage. Black. I must admit, the black is the reason I joined Sector 3. That and the chance to track down a few more war criminals. And to build my dream combat vehicle. Fine. There were multiple reasons.\n"
+"\n"
+"The documents we've uncovered show patients at Morgenlicht were creating revolutionary designs while subjected to \"special procedures.\"\n"
+"\n"
+"No explanations about what these procedures entailed, but the reports track \"productivity increases\" after each session. Whatever they were doing to these scientists, it was systematic and delivered expected results. One more mystery for us to solve."
+
+msgid "detail/descr/historical/s3_t8_vehElement_8"
+msgstr ""
+"Low light level television camera mounted today. Remarkable technology. Can detect targets in near-total darkness. Resolution exceeds anything I've worked with before.\n"
+"\n"
+"We were able to produce a prototype based on optical surveillance system schematics from Project KRONOS. The designs were likely created using patient ideas. I don't even want to think about what methods Moranti used to extract these concepts from them.\n"
+"\n"
+"I hope he's still alive so we can find him. Justice never tires."
+
+msgid "detail/descr/historical/s3_t8_vehElement_9"
+msgstr ""
+"Infrared spotlight. Proven technology. I've used these before. Significantly improves target acquisition in darkness. And working in darkness is what I enjoy most.\n"
+"\n"
+"We've discovered evidence of equipment being transported out of Morgenlicht in early 1944. Documents mention \"special crates\" moved under armed guard.\n"
+"\n"
+"This means the clinic wasn't just a place for \"extracting scientific concepts.\" They were also creating equipment prototypes there. Looks like Moranti was hiding an advanced design bureau in plain sight."
+
+msgid "detail/descr/historical/s3_t9_vehElement_1"
+msgstr ""
+"First recording, Miroslav Kotva here, but everyone just calls me Teddy. Finally starting the assembly of my tank—the Dravec! Today, we mounted the turret. Welded construction, rolled armor. It's a beauty!\n"
+"\n"
+"The process is moving at full speed, and soon I'll have a new steel friend.\n"
+"\n"
+"But our investigation seems to have hit a dead end.\n"
+"\n"
+"We learned so much about this Morgenlicht clinic. Almost got to the bottom of it. And then suddenly we discovered that in mid-'44 there was a fire there. Everyone who knew the truth—patients, guards, staff—is officially listed as missing.\n"
+"\n"
+"Smells as fishy as a whole fish market on fire. Hah! Not my best joke."
+
+msgid "detail/descr/historical/s3_t9_vehElement_10"
+msgstr ""
+"Today we finally started applying the camouflage to the tank. Pure black—sleek and intimidating, just how I like it. Some say black makes you a more visible target, but they don't understand the psychological effect. When an enemy sees a pitch-black tank emerging from the fog, they freeze.\n"
+"\n"
+"Leni and our engineers are increasingly convinced that KRONOS is some kind of electromagnetic weapon. We've found blueprints for enormous radio tubes, powerful generators, and complex cooling systems.\n"
+"\n"
+"There's just one thing I don't understand—if it's such a powerful electromagnetic cannon, why give it such a boring name? \"KRONOS.\" Something doesn't add up."
+
+msgid "detail/descr/historical/s3_t9_vehElement_11"
+msgstr ""
+"Today the Dravec got its 902 Tucha system. The perfect addition to my black predator! Now I can disappear in a cloud of smoke in a matter of seconds. As my grandfather used to say: \"A smart warrior knows when to be seen and when to vanish.\"\n"
+"\n"
+"We've traced KRONOS equipment shipments to the North Sea coast, but then the trail goes cold.\n"
+"\n"
+"Massive transport loads, specialized equipment, tons of materials—all delivered to coastal facilities, and then...nothing. No records whatsoever of where everything went next.\n"
+"\n"
+"This Moretti really didn't want anyone following his tracks."
+
+msgid "detail/descr/historical/s3_t9_vehElement_12"
+msgstr ""
+"We installed the laser rangefinder today. It's amazing technology— determines distance to target with incredible precision. My Dravec is getting more new toys every day!\n"
+"\n"
+"Speaking of lasers—we're using KRONOS technology for this rangefinder. But our technicians had to rework everything. The original blueprints were drawn to a strange scale. Almost as if it was supposed to be a massive combat laser.\n"
+"\n"
+"The deeper we dig, the more questions we have. Was Moretti trying to build some kind of death ray? Sounds like something from those science fiction novels I read as a boy...but looking at these KRONOS schematics, I'm ready to believe anything."
+
+msgid "detail/descr/historical/s3_t9_vehElement_13"
+msgstr ""
+"Today we installed a new muzzle brake on the gun. It's a masterpiece! It significantly reduces recoil, which makes firing much more comfortable.\n"
+"\n"
+"But that's nothing. What we recently discovered...in one of the KRONOS documents, there's a description of a massive bunker built into coastal cliffs. Exact location not specified, of course—Moretti wouldn't give us a gift like that—but the scale itself is staggering.\n"
+"\n"
+"If the dimensions are accurate, there's enough space to hide something truly gigantic...\n"
+"\n"
+"I'm willing to bet that's where Moretti was assembling his Wunderwaffe."
+
+msgid "detail/descr/historical/s3_t9_vehElement_14"
+msgstr ""
+"Today we secured everything we might need to the tank: towing cables, smoke canisters, underwater driving equipment—the works. A good tank, like a good soldier, must be ready for anything.\n"
+"\n"
+"And we have plenty to be ready for. We've been studying maps of the North Sea...\n"
+"\n"
+"That bunker Moretti built is located on Norwegian islands. And we strongly suspect it's right on the same island where that American missile base was—the one those mercenaries captured and launched the satellite from.\n"
+"\n"
+"So it's right under our noses? Somewhere directly beneath us? All this time we've been sitting on top of the main KRONOS bunker?!"
+
+msgid "detail/descr/historical/s3_t9_vehElement_15"
+msgstr ""
+"The Dravec is ready! My new steel friend is armed and dangerous. Fast, armored, and with enough firepower to make enemies see their life flash before their eyes when my gun barrel points their way.\n"
+"\n"
+"Just look at those elegant lines and that menacing silhouette! It'll haunt our enemies' nightmares.\n"
+"\n"
+"What adventures await us—and what stories I'll be able to tell later!\n"
+"\n"
+"Let the hunt begin!"
+
+msgid "detail/descr/historical/s3_t9_vehElement_2"
+msgstr ""
+"Installed the running gear. The suspension is a masterpiece! It'll make the thing so smooth to ride, I'll be able to enjoy my coffee without spilling a drop. Well...not literally, of course. There'll still be some vibration. It is a tank, after all.\n"
+"\n"
+"Our investigation is moving forward again, too. We thought the case with the Morgenlicht fire was closed, but then Leni discovered something strange—the KRONOS blueprints we're using to build our tanks were created AFTER the fire.\n"
+"\n"
+"As they say in those detective novels—the plot thickens!"
+
+msgid "detail/descr/historical/s3_t9_vehElement_3"
+msgstr ""
+"Finally got my commander's cupola! It's absolutely brilliant—comes with a full set of observation devices that are a tanker's dream. I like the TKN-1 night vision system the most—lets me see in the dark, like a cat.\n"
+"\n"
+"We've developed a new theory about this whole KRONOS business. Either the patients' work was removed before the fire and processed somewhere else, or...and here's where it gets interesting...what if these \"mad scientists\" were just a cover story? What if the real source of these technologies isn't them at all?"
+
+msgid "detail/descr/historical/s3_t9_vehElement_4"
+msgstr ""
+"We added extra armor plating around the turret today—five powerful blocks filled with polyurethane and steel plates. Excellent protection against shaped charges. Can't wait to see how it holds up in combat!\n"
+"\n"
+"Meanwhile, it turns out Leni was right all along. There never was any \"Doctor Moranti!\" It was just one of dozens of pseudonyms used by the real mastermind—someone named Alessandro Moretti.\n"
+"\n"
+"Why would one man need so many names? Couldn't he decide which one he liked best?"
+
+msgid "detail/descr/historical/s3_t9_vehElement_5"
+msgstr ""
+"We installed the main gun today, and I can't wait to fire it! When you pull the trigger and feel the whole machine shudder...nothing quite compares to that feeling.\n"
+"\n"
+"Turns out this Moretti is a very interesting character. He wasn't just an engineer—he was a master at building secret facilities. And then, in '43, he completely disappears from all official records.\n"
+"\n"
+"And guess what? That's exactly when our \"Doctor Moranti\" suddenly appears! Then, after the Morgenlicht fire, the pseudonyms from our list suddenly start showing up in shipping manifests and other documents."
+
+msgid "detail/descr/historical/s3_t9_vehElement_6"
+msgstr ""
+"Today we installed the active protection system. It's an absolute revolution—it can detect incoming shells in a split second. Mind-blowing!\n"
+"\n"
+"By the way, we discovered something unexpected about Morgenlicht. Turns out it wasn't a prison or torture laboratory like we thought. It was just one link in a network of carefully disguised research centers.\n"
+"\n"
+"Seems our friend Moretti dreamed of becoming a horror writer. So much effort put into creating this cover, so many details in fake reports. Such talent gone to waste!"
+
+msgid "detail/descr/historical/s3_t9_vehElement_7"
+msgstr ""
+"Today we installed a thermal sleeve on the gun barrel. It's a good piece of kit—stops weather conditions affecting barrel accuracy.\n"
+"\n"
+"And Moretti keeps throwing us new puzzles. We've traced the supply chains connected to all those pseudonyms. Dozens of factories were involved in this Project KRONOS—electronics manufacturers, chemical plants, textile mills...and strangely enough, huge amber shipments.\n"
+"\n"
+"What the hell do they need amber for? And where did he get so much? Did Moretti steal the Amber Room or something?"
+
+msgid "detail/descr/historical/s3_t9_vehElement_8"
+msgstr ""
+"Today we installed the Oplot-MO active protection system, and it's really something! The radar detects anti-tank missiles flying at 600-800 m/s and automatically activates a six-barrel anti-aircraft gun that shoots them down right in mid-air. KRONOS has competition, because we've got some pretty impressive technology of our own!\n"
+"\n"
+"This Moretti...he's completely thrown me off. I was just starting to believe his story about mad scientists who drew him crazy blueprints, and now we're discovering he was building something big.\n"
+"\n"
+"But where did he get all these blueprints and technologies from?"
+
+msgid "detail/descr/historical/s3_t9_vehElement_9"
+msgstr ""
+"My Dravec is getting closer to completion. Buddy, soon we'll be heading into adventures worthy of a Hollywood movie!\n"
+"\n"
+"I'd make a film about KRONOS too. But tickets would only be sold to people with level five security clearance—an exclusive audience.\n"
+"\n"
+"Shame, because it would be quite a spectacle. Among the KRONOS blueprints, we've found something suspicious—component schemes pointing to some kind of Wunderwaffe. Nobody can figure out what, exactly.\n"
+"\n"
+"But whatever it was, it needed enough power to run an entire city."
+
+msgid "detail/name/s3_t10_vehElement_1"
+msgstr "Turret"
+
+msgid "detail/name/s3_t10_vehElement_10"
+msgstr "Side Plates"
+
+msgid "detail/name/s3_t10_vehElement_11"
+msgstr "Telecamera and Camo"
+
+msgid "detail/name/s3_t10_vehElement_12"
+msgstr "Smoke Mortars"
+
+msgid "detail/name/s3_t10_vehElement_13"
+msgstr "Muzzle Brake"
+
+msgid "detail/name/s3_t10_vehElement_14"
+msgstr "Entrenching Tools"
+
+msgid "detail/name/s3_t10_vehElement_15"
+msgstr "Tracks"
+
+msgid "detail/name/s3_t10_vehElement_2"
+msgstr "Suspension System"
+
+msgid "detail/name/s3_t10_vehElement_3"
+msgstr "Road Wheels"
+
+msgid "detail/name/s3_t10_vehElement_4"
+msgstr "Main Periscope"
+
+msgid "detail/name/s3_t10_vehElement_5"
+msgstr "Crew Periscopes"
+
+msgid "detail/name/s3_t10_vehElement_6"
+msgstr "Machine Guns"
+
+msgid "detail/name/s3_t10_vehElement_7"
+msgstr "Main Gun"
+
+msgid "detail/name/s3_t10_vehElement_8"
+msgstr "Fenders"
+
+msgid "detail/name/s3_t10_vehElement_9"
+msgstr "Infrared Spotlights"
+
+msgid "detail/name/s3_t8_vehElement_1"
+msgstr "Spaced Armor"
+
+msgid "detail/name/s3_t8_vehElement_10"
+msgstr "Radar"
+
+msgid "detail/name/s3_t8_vehElement_11"
+msgstr "Lighting System"
+
+msgid "detail/name/s3_t8_vehElement_12"
+msgstr "Smoke Launchers"
+
+msgid "detail/name/s3_t8_vehElement_13"
+msgstr "Entrenching Tools"
+
+msgid "detail/name/s3_t8_vehElement_14"
+msgstr "Camouflage Nets"
+
+msgid "detail/name/s3_t8_vehElement_15"
+msgstr "Tracks"
+
+msgid "detail/name/s3_t8_vehElement_2"
+msgstr "Hatches and Optics"
+
+msgid "detail/name/s3_t8_vehElement_3"
+msgstr "Suspension System"
+
+msgid "detail/name/s3_t8_vehElement_4"
+msgstr "Road Wheels"
+
+msgid "detail/name/s3_t8_vehElement_5"
+msgstr "Dust Screens"
+
+msgid "detail/name/s3_t8_vehElement_6"
+msgstr "Muzzle Brake"
+
+msgid "detail/name/s3_t8_vehElement_7"
+msgstr "Base Camouflage"
+
+msgid "detail/name/s3_t8_vehElement_8"
+msgstr "LLLTV Camera"
+
+msgid "detail/name/s3_t8_vehElement_9"
+msgstr "Infrared Spotlight"
+
+msgid "detail/name/s3_t9_vehElement_1"
+msgstr "Turret"
+
+msgid "detail/name/s3_t9_vehElement_10"
+msgstr "Headlights and Camo"
+
+msgid "detail/name/s3_t9_vehElement_11"
+msgstr "902 Tucha System"
+
+msgid "detail/name/s3_t9_vehElement_12"
+msgstr "Laser Rangefinder"
+
+msgid "detail/name/s3_t9_vehElement_13"
+msgstr "Muzzle Brake"
+
+msgid "detail/name/s3_t9_vehElement_14"
+msgstr "Tools and Screens"
+
+msgid "detail/name/s3_t9_vehElement_15"
+msgstr "Tracks"
+
+msgid "detail/name/s3_t9_vehElement_2"
+msgstr "Suspension System"
+
+msgid "detail/name/s3_t9_vehElement_3"
+msgstr "Commander's Cupola"
+
+msgid "detail/name/s3_t9_vehElement_4"
+msgstr "Extra Armor Plating"
+
+msgid "detail/name/s3_t9_vehElement_5"
+msgstr "Main Gun"
+
+msgid "detail/name/s3_t9_vehElement_6"
+msgstr "APS"
+
+msgid "detail/name/s3_t9_vehElement_7"
+msgstr "Thermal Gun Sleeve"
+
+msgid "detail/name/s3_t9_vehElement_8"
+msgstr "Oplot-MO APS"
+
+msgid "detail/name/s3_t9_vehElement_9"
+msgstr "Fenders"
+
+msgid "main/additionalMission/text/completed"
+msgstr "Additional Campaign Points earned."
+
+msgid "main/additionalMission/text/daily"
+msgstr "Complete Daily Missions to earn additional Campaign Points."
+
+msgid "main/additionalMission/text/weekly"
+msgstr "Complete Weekly Missions to earn additional Campaign Points."
+
+msgid "main/additionalMission/title/daily"
+msgstr "Daily Missions"
+
+msgid "main/additionalMission/title/weekly"
+msgstr "Weekly Missions"
+
+msgid "main/assembling/component"
+msgstr "Part"
+
+msgid "main/chain/Assault/name"
+msgstr "Vanguard"
+
+msgid "main/chain/Sniper/name"
+msgstr "Ambush"
+
+msgid "main/chain/Support/name"
+msgstr "Assistance"
+
+msgid "main/complete/button"
+msgstr "To Operation"
+
+msgid "main/complete/description/campaignFinished"
+msgstr "{{campaignName}} campaign completed! All rewards have been received."
+
+msgid "main/complete/description/notAllCompleted"
+msgstr ""
+"{{currentOperationName}} operation completed with honors! The "
+"{{nextOperationName}} operation is now available."
+
+msgid "main/complete/description/notAllCompletedWithHonor"
+msgstr ""
+"{{currentOperationName}} operation {{@ split}}completed with honors! "
+"{{/}}You can still improve your result in the {{nextOperationName}} "
+"operation."
+
+msgid "main/complete/title"
+msgstr "Congratulations!"
+
+msgid "main/menuItem/state/active"
+msgstr "Active"
+
+msgid "main/menuItem/state/available"
+msgstr "Available"
+
+msgid "main/menuItem/state/completed"
+msgstr "Vehicle received"
+
+msgid "main/menuItem/state/completedWithHonors"
+msgstr "Completed with honors"
+
+msgid "main/menuItem/state/unavailable"
+msgstr "Unavailable"
+
+msgid "main/menuItem/tooltip/videoIntro"
+msgstr "Watch a video introduction to this vehicle"
+
+msgid "main/mission/counter"
+msgstr "{{currentValue}} {{@ colorLegacy 'ede6d97f'}}/ {{maxValue}}{{/}}"
+
+msgid "main/mission/mission/quest/separator"
+msgstr "OR"
+
+msgid "main/mission/subtitle"
+msgstr "Active Mission"
+
+msgid "main/mission/text/alert"
+msgstr ""
+"Mission temporarily unavailable for completion. It will be available soon."
+
+msgid "main/mission/text/completed"
+msgstr ""
+"All {{missionType}} missions\n"
+"have been completed."
+
+msgid "main/missions/button/tooltip/toActiveMission"
+msgstr "Click to go to the current active mission."
+
+msgid "main/missions/card/tooltip/done"
+msgstr "Mission completed, reward received."
+
+msgid "main/missions/card/tooltip/locked"
+msgstr ""
+"Complete the preceding mission to unlock this one. All missions in a series "
+"must be completed sequentially."
+
+msgid "main/missions/category/description"
+msgstr ""
+"{{category}} missions in the {{operationName}} operation can be completed "
+"sequentially in {{@ colorLegacy 'ede6d9'}}Tier "
+"{{minLevel}}-{{maxLevel}}{{/}} vehicles of the following types:"
+
+msgid "main/missions/category/vehicles/assault"
+msgstr ""
+"{{HT}}, {{MT}}, {{TD}} with roles {{breakthrough}}, {{assault}}, "
+"{{universal}}."
+
+msgid "main/missions/category/vehicles/sniper"
+msgstr "{{HT}}, {{MT}}, {{TD}} with roles {{sniper}}, {{support}}."
+
+msgid "main/missions/category/vehicles/support"
+msgstr "{{LT}}, {{SPG}} regardless of role."
+
+msgid "main/operation/button/available/"
+msgstr "Activate"
+
+msgid "main/operation/button/completed"
+msgstr "Improve Result"
+
+msgid "main/operation/button/nextOperationAvailable"
+msgstr "To Operation"
+
+msgid "main/operation/button/paused"
+msgstr "Resume Operation"
+
+msgid "main/operation/button/precedingOperationNotCompleted"
+msgstr "To Operation"
+
+msgid "main/operation/status/available"
+msgstr "The {{currentOperationName}} operation is available!"
+
+msgid "main/operation/status/completed"
+msgstr ""
+"{{currentOperationName}} operation completed! You can complete it with "
+"honors to earn an even better reward."
+
+msgid "main/operation/status/nextOperationAvailable"
+msgstr ""
+"{{currentOperationName}} operation completed! The {{nextOperationName}} "
+"operation is now available."
+
+msgid "main/operation/status/paused"
+msgstr "The {{currentOperationName}} operation has been paused."
+
+msgid "main/operation/status/precedingOperationNotCompleted"
+msgstr "Operation unavailable: complete the preceding operation."
+
+msgid "main/operation/status/requiresVehicle"
+msgstr ""
+"Operation unavailable: vehicle of Tier {{requiredVehicleLevel}} or higher "
+"required."
+
+msgid "main/operation/status/vehicleIsInBattle"
+msgstr ""
+"You cannot switch campaigns or operations while a vehicle is in battle."
+
+msgid "main/progression/button"
+msgstr "Mount"
+
+msgid "main/progression/counter/zero"
+msgstr "0"
+
+msgid "main/progression/detail/status/active"
+msgstr ""
+"{{detailName}}: {{earnedPoint}} {{@ colorLegacy 'ede6d97f'}}/ "
+"{{maxPoint}}{{/}} {{icon}}"
+
+msgid "main/progression/detailNumber"
+msgstr "{{number}}"
+
+msgid "main/progression/mountButton/active"
+msgstr "Click to mount this part on the vehicle."
+
+msgid "main/progression/mountButton/disable"
+msgstr "Mount the preceding part first."
+
+msgid "main/progression/reward/previewButton"
+msgstr "View in the Garage"
+
+msgid "main/progression/reward/status/inProgress/campaign"
+msgstr ""
+"Operations completed with honors: {{completedTasks}} {{@ colorLegacy "
+"'ede6d97f'}}/ {{tasksNumber}}{{/}}"
+
+msgid "main/progression/reward/status/inProgress/operation"
+msgstr ""
+"Missions completed: {{completedTasks}} {{@ colorLegacy 'ede6d97f'}}/ "
+"{{tasksNumber}}{{/}}"
+
+msgid "main/progression/reward/status/received"
+msgstr "Received"
+
+msgid "main/progression/reward/title/campaign"
+msgstr "For completing campaign with honors"
+
+msgid "main/progression/reward/title/main"
+msgstr "Main rewards"
+
+msgid "main/progression/reward/title/operation"
+msgstr "For completing operation with honors"
+
+msgid "main/progression/tooltip/detail/notDone"
+msgstr "You will be able to view the part after it has been mounted."
+
+msgid "main/progression/tooltip/rewards/campaign"
+msgstr ""
+"Complete all missions in all three campaign operations to receive these "
+"rewards."
+
+msgid "main/progression/tooltip/rewards/main"
+msgstr ""
+"Complete the Progression and mount the final part to receive the main reward"
+" and the vehicle."
+
+msgid "main/progression/tooltip/rewards/operation"
+msgstr "Complete all operation missions to receive these rewards."
+
+msgid "main/progression/tooltip/toActiveStage"
+msgstr "Click to go to the current Stage."
+
+msgid "questStatus/topLabelAlreadyUsedVehicle"
+msgstr ""
+"Not available: You have already fulfilled the condition in the selected "
+"vehicle. Please choose another vehicle."
+
+msgid "questStatus/topLabelCompleted"
+msgstr "Completed"
+
+msgid "questStatus/topLabelCompletedForBattle"
+msgstr "Completed for current battle"
+
+msgid "rewards/additional"
+msgstr "Also received:"
+
+msgid "rewards/buttons/close"
+msgstr "Close"
+
+msgid "rewards/buttons/confirm"
+msgstr "Affirmative!"
+
+msgid "rewards/buttons/goToOperation"
+msgstr "Go to Operation"
+
+msgid "rewards/buttons/goToVehicle"
+msgstr "View in Garage"
+
+msgid "rewards/operationUnlocked"
+msgstr "The {{name}} operation is available"
+
+msgid "rewards/subTitle/campaignWithHonors"
+msgstr "Campaign: {{name}}"
+
+msgid "rewards/subTitle/operationWithHonors"
+msgstr "Operation: {{name}}"
+
+msgid "rewards/subTitle/vehiclePart"
+msgstr "Operation: {{name}}"
+
+msgid "rewards/title/campaignWithHonors"
+msgstr "COMPLETED WITH HONORS!"
+
+msgid "rewards/title/operation"
+msgstr "OPERATION: {{name}} COMPLETED!"
+
+msgid "rewards/title/operationWithHonors"
+msgstr "COMPLETED WITH HONORS!"
+
+msgid "rewards/title/vehiclePart"
+msgstr "PART AVAILABLE FOR MOUNTING"
+
+msgid "tooltip/assembling/viewAnimation"
+msgstr "Click to watch the mounting animation."
+
+msgid "tooltip/assembling/zoomOut"
+msgstr "Click to hide description."
+
+msgid "tooltip/missionProgress/completed"
+msgstr "Completed: {{completed}}{{@class $totalClass}} / {{total}}{{/}}"
+
+msgid "tooltip/missionProgress/description"
+msgstr ""
+"To complete the mission, you must fulfill its conditions multiple times "
+"using different eligible vehicles."
+
+msgid "tooltip/missionProgress/footer"
+msgstr ""
+"Once a vehicle has fulfilled the conditions, it cannot be used for this "
+"mission again until the mission is complete."
+
+msgid "tooltip/missionProgress/title"
+msgstr "Completing in different vehicles"
+
+msgid "tooltip/missionProgress/unknownVehicle"
+msgstr "?"
+
+msgid "tooltip/missionsCategory/description/assault"
+msgstr ""
+"Frontline vehicles that can impose their own rules on the battlefield."
+
+msgid "tooltip/missionsCategory/description/sniper"
+msgstr "Second-line vehicles that bolster attacks on enemy positions."
+
+msgid "tooltip/missionsCategory/description/support"
+msgstr ""
+"Airborne fire support and intelligence on enemy positions on the "
+"battlefield."
+
+msgid "tooltip/missionsCategory/footer"
+msgstr ""
+"{{@ split}}{{@ colorLegacy 'b2afab'}}{{operationName}}{{/}} operation "
+"missions can only be completed in Tier {{@ colorLegacy "
+"'b2afab'}}{{minLevel}}-{{maxLevel}}{{/}} vehicles."
+
+msgid "tooltip/missionsCategory/innerBlock/description/assault"
+msgstr "Vanguard missions can be completed sequentially in:"
+
+msgid "tooltip/missionsCategory/innerBlock/description/sniper"
+msgstr "Ambush missions can be completed sequentially in:"
+
+msgid "tooltip/missionsCategory/innerBlock/description/support"
+msgstr "Assistance missions can be completed sequentially in:"
+
+msgid "tooltip/missionsCategory/innerBlock/noRoles"
+msgstr "Vehicle types regardless of role:"
+
+msgid "tooltip/missionsCategory/innerBlock/vehiclesTypes"
+msgstr "Vehicle Types:"
+
+msgid "tooltip/missionsCategory/innerBlock/withRoles"
+msgstr "With roles:"
+
+msgid "tooltip/personalMissionsPoints/footer"
+msgstr ""
+"Remember to track completed Stages and mount vehicle components as you "
+"progress through them."
+
+msgid "tooltip/personalMissionsPoints/innerBlock/bulletItem1"
+msgstr ""
+"Campaign Points are awarded for completing Personal Missions in the Sector 3"
+" campaign."
+
+msgid "tooltip/personalMissionsPoints/innerBlock/bulletItem2"
+msgstr ""
+"You can also earn Campaign Points by completing Daily and Weekly Missions."
+
+msgid "tooltip/personalMissionsPoints/innerBlock/description"
+msgstr ""
+"Advance your progress through the active operation in the Sector 3 campaign."
+
+msgid "tooltip/personalMissionsPoints/innerBlock/subTitle"
+msgstr "How to Earn"
+
+msgid "tooltip/personalMissionsPoints/innerBlock/title"
+msgstr "Campaign Points"
+
+msgid "tooltip/progression/description"
+msgstr ""
+"Advance through Stages, collect parts, and mount them on your vehicle. Once "
+"all parts are collected, you will receive the operation vehicle as a reward."
+" To progress and complete Stages, you will need Campaign Points."
+
+msgid "tooltip/progression/footer"
+msgstr ""
+"Remember to track completed Stages and mount vehicle parts as you progress "
+"through them."
+
+msgid "tooltip/progression/innerBlock/bulletItem1"
+msgstr ""
+"Campaign Points are awarded for completing Personal Missions in the Sector 3"
+" campaign. "
+
+msgid "tooltip/progression/innerBlock/bulletItem2"
+msgstr ""
+"You can also earn Campaign Points by completing Daily and Weekly Missions."
+
+msgid "tooltip/progression/innerBlock/title"
+msgstr "How to Earn Campaign Points"
+
+msgid "tooltip/progression/title"
+msgstr "Vehicle Assembly Progress"

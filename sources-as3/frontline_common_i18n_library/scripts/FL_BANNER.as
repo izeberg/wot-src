@@ -5,6 +5,10 @@ package
       
       public static const TITLE:String = "#frontline.fl_banner:title";
       
+      public static const SUBTITLE_INTRO:String = "#frontline.fl_banner:subtitle/intro";
+      
+      public static const SUBTITLE_INPROGRESS:String = "#frontline.fl_banner:subtitle/inProgress";
+      
       public static const CHOOSEREWARD:String = "#frontline.fl_banner:chooseReward";
       
       public static const BATTLESFROZEN:String = "#frontline.fl_banner:battlesFrozen";

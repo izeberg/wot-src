@@ -32,7 +32,7 @@
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>112</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
 						<Int>90</Int>
@@ -57,6 +57,10 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_ANM.dds</Texture>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>5.849614 8.812566 1.483884</groupOrigin>
 			</primitiveGroup>
@@ -66,7 +70,7 @@
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>112</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaReference
 						<Int>70</Int>
@@ -90,6 +94,10 @@
 					<property>
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_ANM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>5.779804 8.426360 1.773824</groupOrigin>
@@ -141,6 +149,10 @@
 						g_vertexColorMode
 						<Int>1</Int>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>5.790032 8.255528 3.121445</groupOrigin>
 			</primitiveGroup>
@@ -151,5 +163,5 @@
 		<max>21.530199 17.170467 30.791405</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>935252</geometrySize>
+	<geometrySize>955844</geometrySize>
 </root>

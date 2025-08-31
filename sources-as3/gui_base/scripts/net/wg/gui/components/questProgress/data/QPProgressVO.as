@@ -29,6 +29,8 @@ package net.wg.gui.components.questProgress.data
       
       private var _state:int = -1;
       
+      private var _uniqueVehicles:int = -1;
+      
       private var _isHidden:Boolean = false;
       
       private var _isLocked:Boolean = false;
@@ -197,6 +199,16 @@ package net.wg.gui.components.questProgress.data
       public function set metricsValue(param1:Vector.<IQPMetrics>) : void
       {
          this._metrics = param1;
+      }
+      
+      public function get uniqueVehicles() : int
+      {
+         return this._uniqueVehicles;
+      }
+      
+      public function set uniqueVehicles(param1:int) : void
+      {
+         this._uniqueVehicles = param1;
       }
    }
 }

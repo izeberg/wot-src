@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.view.lobby.popover.vehicle_select_popover_base import VehicleSelectPopoverBase
 from gui.Scaleform.daapi.view.lobby.vehicle_compare.formatters import packHeaderColumnData
 from gui.Scaleform.daapi.view.lobby.vehicle_selector_base import VehicleSelectorBase

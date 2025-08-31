@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000068 0.000090 3.055411</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.000000 -0.165044</row3>
+				</transform>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.165044</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Gun_BlendBone</node>
+		<node>static_BlendBone</node>
+		<node>G_BlendBone</node>
+		<geometry>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R228_KR_1/KR_1_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R228_KR_1/KR_1_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R228_KR_1/KR_1_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R228_KR_1/KR_1_guns_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/R228_KR_1/KR_1_guns_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>4.208219 4.208219 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						DetailsMaps
+						<Texture>vehicles/russian/Tank_detail/Detail_T2DA.dds</Texture>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67059538</element>
+							<element>1006632960</element>
+							<element>263010212</element>
+							<element>979763200</element>
+							<element>1113471416</element>
+							<element>867057224</element>
+							<element>1170172917</element>
+							<element>1007943680</element>
+							<element>122117427</element>
+							<element>1016725504</element>
+							<element>231301376</element>
+							<element>998572032</element>
+							<element>436164188</element>
+							<element>998572032</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.380000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.639556</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.275111</Float>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.860000</Float>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.057517 0.312112 -3.041694</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.326161 -0.274155 -0.177213</min>
+		<max>0.441195 0.898380 6.260601</max>
+	</boundingBox>
+	<geometrySize>461912</geometrySize>
+</root>

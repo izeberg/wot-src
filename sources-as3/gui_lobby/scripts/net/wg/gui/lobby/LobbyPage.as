@@ -5,30 +5,29 @@ package net.wg.gui.lobby
    import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
+   import flash.events.Event;
    import flash.events.MouseEvent;
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import net.wg.data.Aliases;
    import net.wg.data.constants.Cursors;
    import net.wg.data.constants.DragType;
+   import net.wg.data.constants.Errors;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.LAYER_NAMES;
    import net.wg.gui.components.common.waiting.Waiting;
-   import net.wg.gui.components.containers.MainViewContainer;
-   import net.wg.gui.components.containers.ManagedContainer;
+   import net.wg.gui.components.containers.LobbyPageSubContainer;
+   import net.wg.gui.components.containers.inject.GFInjectComponent;
    import net.wg.gui.components.vehicleHitArea.VehicleHitAreaComponent;
    import net.wg.gui.events.LobbyEvent;
-   import net.wg.gui.lobby.header.LobbyHeader;
-   import net.wg.gui.lobby.header.headerButtonBar.HBC_Settings;
-   import net.wg.gui.lobby.header.headerButtonBar.HeaderButton;
-   import net.wg.gui.lobby.header.headerButtonBar.HeaderButtonsHelper;
    import net.wg.gui.lobby.interfaces.ILobbyPage;
-   import net.wg.gui.lobby.messengerBar.MessengerBar;
    import net.wg.gui.lobby.post.TeaserEvent;
    import net.wg.gui.lobby.settings.config.ControlsFactory;
    import net.wg.gui.notification.NotificationPopUpViewer;
    import net.wg.infrastructure.base.meta.impl.LobbyPageMeta;
-   import net.wg.infrastructure.interfaces.IManagedContainer;
-   import net.wg.infrastructure.interfaces.IManagedContent;
+   import net.wg.infrastructure.interfaces.ILobbyPageSubContainer;
+   import net.wg.utils.IAssertable;
+   import net.wg.utils.IClassFactory;
    import scaleform.clik.constants.ConstrainMode;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.motion.Tween;
@@ -50,17 +49,27 @@ package net.wg.gui.lobby
       
       public var vehicleHitArea:VehicleHitAreaComponent = null;
       
-      public var subTopContainer:IManagedContainer = null;
+      public var subTopContainer:ILobbyPageSubContainer = null;
       
-      public var subViewContainer:IManagedContainer = null;
-      
-      public var header:LobbyHeader;
+      public var subViewContainer:ILobbyPageSubContainer = null;
       
       public var notificationPopupViewer:NotificationPopUpViewer;
       
-      public var messengerBar:MessengerBar;
-      
       public var waiting:Waiting = null;
+      
+      private var _subContainers:Array;
+      
+      private var _asserter:IAssertable;
+      
+      private var _classFactory:IClassFactory;
+      
+      private var _header:GFInjectComponent;
+      
+      private var _footer:GFInjectComponent;
+      
+      private var _headerOffset:uint = 0;
+      
+      private var _footerOffset:uint = 0;
       
       private var _dragOffsetX:Number = 0;
       
@@ -74,44 +83,28 @@ package net.wg.gui.lobby
       
       private var _teaser:Bitmap;
       
+      private var _requiresFramedMode:Boolean = false;
+      
       public function LobbyPage()
       {
+         this._subContainers = [];
          super();
+         this._classFactory = App.utils.classFactory;
+         this._asserter = App.utils.asserter;
       }
       
       override public function getSubContainers() : Array
       {
-         return [this.subViewContainer,this.subTopContainer];
+         return this._subContainers;
       }
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc5_:IManagedContainer = null;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
          this.vehicleHitArea.width = param1;
          this.vehicleHitArea.height = param2 - this.vehicleHitArea.y;
-         this.messengerBar.updateStage(param1,param2);
-         var _loc3_:Array = this.getSubContainers();
-         var _loc4_:Number = param2 - TOP_SUB_VIEW_POSITION;
-         if(this.messengerBar.visible)
-         {
-            _loc4_ -= MessengerBar.BAR_VISIBLE_HEIGHT;
-         }
-         for each(_loc5_ in _loc3_)
-         {
-            if(_loc5_)
-            {
-               _loc5_.y = TOP_SUB_VIEW_POSITION;
-               _loc5_.updateStage(param1,_loc4_);
-            }
-         }
-         this.header.width = param1;
-         if(this.notificationPopupViewer)
-         {
-            this.notificationPopupViewer.updateStage(param1,param2);
-         }
          this.waiting.setSize(param1,param2);
       }
       
@@ -134,11 +127,14 @@ package net.wg.gui.lobby
       
       override protected function onSetModalFocus(param1:InteractiveObject) : void
       {
-         if(param1 == null)
-         {
-            setFocus(this.header.mainMenuButtonBar);
-         }
+         this.tryToFocusContent();
          super.onSetModalFocus(param1);
+      }
+      
+      override protected function onInitModalFocus(param1:InteractiveObject) : void
+      {
+         super.onInitModalFocus(param1);
+         this.tryToFocusContent();
       }
       
       override protected function draw() : void
@@ -147,25 +143,34 @@ package net.wg.gui.lobby
          if(isInvalid(InvalidationType.SIZE))
          {
             constraints.update(width,height);
+            invalidateLayout();
+         }
+         if(isInvalid(InvalidationType.LAYOUT))
+         {
+            this.updateInnerLayersSize(width,height);
+            this.updateHeaderLayout();
+            this.updateFooterLayout();
+            if(this.notificationPopupViewer)
+            {
+               this.notificationPopupViewer.updateStage(width,height - this._footerOffset);
+            }
          }
       }
       
       override protected function onPopulate() : void
       {
          super.onPopulate();
-         registerFlashComponentS(this.header,Aliases.LOBBY_HEADER);
          if(!this.notificationPopupViewer)
          {
-            this.notificationPopupViewer = new NotificationPopUpViewer(App.utils.classFactory.getClass(Linkages.SERVICE_MESSAGES_POPUP));
+            this.notificationPopupViewer = new NotificationPopUpViewer(this._classFactory.getClass(Linkages.SERVICE_MESSAGES_POPUP));
             addChild(this.notificationPopupViewer);
             registerFlashComponentS(this.notificationPopupViewer,Aliases.SYSTEM_MESSAGES);
          }
-         registerFlashComponentS(this.messengerBar,Aliases.MESSENGER_BAR);
          var _loc1_:uint = this.getChildIndex(this.waiting) + 1;
          this.subViewContainer = this.addSubContainer(LAYER_NAMES.SUBVIEW,_loc1_);
          this.subTopContainer = this.addSubContainer(LAYER_NAMES.TOP_SUB_VIEW,_loc1_ + 1);
-         this.subViewContainer.manageSize = false;
-         this.subTopContainer.manageSize = false;
+         this._subContainers = [this.subViewContainer,this.subTopContainer];
+         this.createPanels();
       }
       
       override protected function onDispose() : void
@@ -179,8 +184,11 @@ package net.wg.gui.lobby
          this.vehicleHitArea.removeEventListener(MouseEvent.ROLL_OUT,this.onVehicleHitAreaRollOutHandler);
          this.vehicleHitArea.dispose();
          this.vehicleHitArea = null;
+         this.removePanels();
          this.subViewContainer = null;
          this.subTopContainer = null;
+         this._subContainers.splice(0,this._subContainers.length);
+         this._subContainers = null;
          this.waiting.dispose();
          this.waiting = null;
          if(this._teaserTween)
@@ -195,10 +203,10 @@ package net.wg.gui.lobby
             this._teaser.bitmapData.dispose();
             this._teaser = null;
          }
-         this.header = null;
          this.notificationPopupViewer = null;
-         this.messengerBar = null;
          this._teaserOverlay = null;
+         this._asserter = null;
+         this._classFactory = null;
          ControlsFactory.instance.dispose();
          super.onDispose();
       }
@@ -217,6 +225,36 @@ package net.wg.gui.lobby
          this.waiting.hide();
       }
       
+      public function as_setSubContainerItemsVisibility(param1:Boolean) : void
+      {
+         var _loc4_:ILobbyPageSubContainer = null;
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
+         var _loc2_:InteractiveObject = null;
+         var _loc3_:DisplayObject = null;
+         for each(_loc4_ in this.getSubContainers())
+         {
+            _loc5_ = _loc4_.numChildren;
+            _loc6_ = 0;
+            while(_loc6_ < _loc5_)
+            {
+               _loc3_ = _loc4_.getChildAt(_loc6_);
+               _loc3_.visible = param1;
+               _loc2_ = _loc3_ as InteractiveObject;
+               _loc6_++;
+            }
+         }
+         if(param1 && _loc2_)
+         {
+            setFocus(_loc2_);
+         }
+      }
+      
+      public function as_setWalletStatus(param1:Object) : void
+      {
+         App.utils.voMgr.walletStatusVO.update(param1);
+      }
+      
       public function as_showHelpLayout() : void
       {
       }
@@ -226,34 +264,6 @@ package net.wg.gui.lobby
          this.waiting.setMessage(param1);
          this.waiting.setSize(_width,_height);
          this.waiting.show();
-      }
-      
-      public function as_setSubContainerItemsVisibility(param1:Boolean) : void
-      {
-         var _loc4_:IManagedContainer = null;
-         var _loc5_:int = 0;
-         var _loc6_:int = 0;
-         var _loc2_:IManagedContainer = null;
-         var _loc3_:IManagedContent = null;
-         for each(_loc4_ in this.getSubContainers())
-         {
-            _loc5_ = _loc4_.numChildren;
-            _loc6_ = 0;
-            while(_loc6_ < _loc5_)
-            {
-               _loc4_.getChildAt(_loc6_).visible = param1;
-               _loc6_++;
-            }
-            if(_loc5_ > 0)
-            {
-               _loc2_ = _loc4_;
-               _loc3_ = _loc4_.getChildAt(_loc5_ - 1) as IManagedContent;
-            }
-         }
-         if(param1 && _loc3_ && _loc2_)
-         {
-            _loc2_.setFocusedView(_loc3_ as IManagedContent);
-         }
       }
       
       public function getDragType() : String
@@ -296,6 +306,108 @@ package net.wg.gui.lobby
          this._dragOffsetY = stage.mouseY;
       }
       
+      private function tryToFocusContent() : void
+      {
+         var _loc4_:Boolean = false;
+         var _loc1_:ILobbyPageSubContainer = null;
+         var _loc2_:Array = this.getSubContainers();
+         var _loc3_:int = _loc2_.length - 1;
+         while(_loc3_ >= 0)
+         {
+            _loc1_ = ILobbyPageSubContainer(_loc2_[_loc3_]);
+            if(_loc1_.getTopmostView(true))
+            {
+               _loc4_ = true;
+               _loc1_.tryToSetFocus(false,_loc4_);
+               return;
+            }
+            _loc3_--;
+         }
+         setFocus(this);
+      }
+      
+      private function createPanels() : void
+      {
+         this._asserter.assertNull(this._header,Errors.MUST_NULL);
+         this._asserter.assertNull(this._footer,Errors.MUST_NULL);
+         var _loc1_:int = getChildIndex(this.notificationPopupViewer);
+         this._header = new GFInjectComponent();
+         this._header.name = Aliases.LOBBY_HEADER_OVERLAPPING;
+         this._footer = new GFInjectComponent();
+         this._footer.name = Aliases.LOBBY_FOOTER_OVERLAPPING;
+         this._header.addEventListener(Event.RESIZE,this.onHeaderResizeHandler);
+         this._footer.addEventListener(Event.RESIZE,this.onFooterResizeHandler);
+         addChildAt(this._footer,_loc1_);
+         addChildAt(this._header,_loc1_);
+         registerFlashComponentS(this._header,Aliases.LOBBY_HEADER_OVERLAPPING);
+         registerFlashComponentS(this._footer,Aliases.LOBBY_FOOTER_OVERLAPPING);
+         this._headerOffset = this.getHeaderOffset();
+         this._footerOffset = this.getFooterOffset();
+         invalidateLayout();
+      }
+      
+      private function removePanels() : void
+      {
+         if(this._header)
+         {
+            this._header.removeEventListener(Event.RESIZE,this.onHeaderResizeHandler);
+            if(isFlashComponentRegisteredS(Aliases.LOBBY_HEADER_OVERLAPPING))
+            {
+               unregisterFlashComponentS(Aliases.LOBBY_HEADER_OVERLAPPING);
+            }
+            this._header = null;
+         }
+         if(this._footer)
+         {
+            this._footer.removeEventListener(Event.RESIZE,this.onFooterResizeHandler);
+            if(isFlashComponentRegisteredS(Aliases.LOBBY_FOOTER_OVERLAPPING))
+            {
+               unregisterFlashComponentS(Aliases.LOBBY_FOOTER_OVERLAPPING);
+            }
+            this._footer = null;
+         }
+      }
+      
+      private function updateInnerLayersSize(param1:Number, param2:Number) : void
+      {
+         var _loc3_:ILobbyPageSubContainer = null;
+         for each(_loc3_ in this.getSubContainers())
+         {
+            _loc3_.updateStage(param1,param2,new Rectangle(0,this._headerOffset,0,this._footerOffset));
+         }
+      }
+      
+      private function updateHeaderLayout() : void
+      {
+         var _loc1_:int = 0;
+         if(this._header)
+         {
+            _loc1_ = this._header.width > 0 ? int(this._header.width) : int(width);
+            this._header.scaleX = width / _loc1_;
+         }
+      }
+      
+      private function updateFooterLayout() : void
+      {
+         var _loc1_:int = 0;
+         if(this._footer)
+         {
+            this._footer.y = height - this._footer.height;
+            _loc1_ = this._header.width > 0 ? int(this._header.width) : int(width);
+            this._footer.scaleX = width / _loc1_;
+         }
+      }
+      
+      private function getFooterOffset() : uint
+      {
+         return Boolean(this._footer) ? uint(this._footer.height - this._footer.hitRect.y) : uint(0);
+      }
+      
+      private function getHeaderOffset() : uint
+      {
+         return Boolean(this._header) ? uint(this._header.hitRect.y + this._header.hitRect.height) : uint(TOP_SUB_VIEW_POSITION);
+      }
+      
       private function createHintTween(param1:Point, param2:DisplayObject) : Tween
       {
          return new Tween(TEASER_ANIM_SPEED_TIME,param2,{
@@ -318,18 +430,17 @@ package net.wg.gui.lobby
          this._teaser = null;
          this._teaserTween = null;
          this._teaserOverlay = null;
-         var _loc1_:HeaderButton = this.header.getTabRenderer(HeaderButtonsHelper.ITEM_ID_SETTINGS);
-         HBC_Settings(_loc1_.content).showBlink();
       }
       
-      private function addSubContainer(param1:String, param2:int) : IManagedContainer
+      private function addSubContainer(param1:String, param2:int) : ILobbyPageSubContainer
       {
-         var _loc3_:ManagedContainer = new MainViewContainer(param1);
+         var _loc3_:LobbyPageSubContainer = new LobbyPageSubContainer(param1);
+         _loc3_.addEventListener(LobbyPageSubContainer.FRAMED_MODE_CHANGED,this.onSubContainerFramedModeChangedHandler,false,0,true);
          addChildAt(_loc3_,param2);
          return _loc3_;
       }
       
-      private function registerDraging() : void
+      private function registerDragging() : void
       {
          this.vehicleHitArea.hit.addEventListener(MouseEvent.MOUSE_WHEEL,this.onHitAreaMouseWheelHandler);
          App.cursor.registerDragging(this,Cursors.ROTATE);
@@ -341,20 +452,66 @@ package net.wg.gui.lobby
          App.cursor.unRegisterDragging(this);
       }
       
+      private function onSubContainerFramedModeChangedHandler(param1:Event) : void
+      {
+         var _loc4_:ILobbyPageSubContainer = null;
+         var _loc2_:Array = this.getSubContainers();
+         var _loc3_:Boolean = false;
+         for each(_loc4_ in _loc2_)
+         {
+            if(_loc4_.isFramedMode)
+            {
+               _loc3_ = true;
+               break;
+            }
+         }
+         if(this._requiresFramedMode != _loc3_)
+         {
+            this._requiresFramedMode = _loc3_;
+            setRequiresOldStyleS(this._requiresFramedMode);
+            invalidateLayout();
+         }
+      }
+      
+      private function onHeaderResizeHandler(param1:Event) : void
+      {
+         this.updateHeaderLayout();
+         var _loc2_:uint = this.getHeaderOffset();
+         if(this._headerOffset == _loc2_)
+         {
+            return;
+         }
+         this._headerOffset = _loc2_;
+         invalidateLayout();
+      }
+      
+      private function onFooterResizeHandler(param1:Event) : void
+      {
+         this.updateFooterLayout();
+         var _loc2_:uint = this.getFooterOffset();
+         if(this._footerOffset == _loc2_)
+         {
+            return;
+         }
+         this._footerOffset = _loc2_;
+         invalidateLayout();
+      }
+      
       private function onTeaserHideHandler(param1:TeaserEvent) : void
       {
-         var _loc2_:Point = null;
-         addChildAt(this._teaserOverlay = new Sprite(),getChildIndex(this.header) + 1);
+         addChildAt(this._teaserOverlay = new Sprite(),getChildIndex(this._header) + 1);
          this._teaser = param1.teaser.drawToBitmap();
-         _loc2_ = new Point(this._teaser.x,this._teaser.y);
+         var _loc2_:Point = new Point(this._teaser.x,this._teaser.y);
          _loc2_ = this._teaserOverlay.globalToLocal(_loc2_);
          this._teaser.x = _loc2_.x;
          this._teaser.y = _loc2_.y;
          this._teaserOverlay.addChild(this._teaser);
-         var _loc3_:HeaderButton = this.header.getTabRenderer(HeaderButtonsHelper.ITEM_ID_SETTINGS);
-         _loc2_.x = _loc3_.x + _loc3_.content.width >> 1;
-         _loc2_.y = _loc3_.y + _loc3_.content.height >> 1;
-         _loc2_ = _loc3_.parent.localToGlobal(_loc2_);
+         if(this._header)
+         {
+            _loc2_.x = this._header.x + this._header.width >> 1;
+            _loc2_.y = this._header.y + this._header.height >> 1;
+            _loc2_ = this._header.localToGlobal(_loc2_);
+         }
          _loc2_.offset(this._teaser.width * -TEASER_ANIMATION_SCALE >> 1,this._teaser.height * -TEASER_ANIMATION_SCALE >> 1);
          if(!this._teaserTween)
          {
@@ -380,7 +537,7 @@ package net.wg.gui.lobby
       
       private function onRegisterDraggingHandler(param1:LobbyEvent) : void
       {
-         this.registerDraging();
+         this.registerDragging();
       }
       
       private function onUnregisterDraggingHandler(param1:LobbyEvent) : void

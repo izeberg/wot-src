@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.collection.item_model import ItemModel
 from gui.impl.gen.view_models.views.lobby.collection.page_backgrounds_model import PageBackgroundsModel
 from gui.impl.gen.view_models.views.lobby.collection.reward_info_model import RewardInfoModel

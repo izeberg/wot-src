@@ -207,6 +207,16 @@ package
       
       public static const SHELL_KINDS_HIGH_EXPLOSIVE:String = "#item_types:shell/kinds/HIGH_EXPLOSIVE";
       
+      public static const SHELL_KINDS_UPPERCASE_ARMOR_PIERCING:String = "#item_types:shell/kinds/upperCase/ARMOR_PIERCING";
+      
+      public static const SHELL_KINDS_UPPERCASE_ARMOR_PIERCING_CR:String = "#item_types:shell/kinds/upperCase/ARMOR_PIERCING_CR";
+      
+      public static const SHELL_KINDS_UPPERCASE_ARMOR_PIERCING_HE:String = "#item_types:shell/kinds/upperCase/ARMOR_PIERCING_HE";
+      
+      public static const SHELL_KINDS_UPPERCASE_HOLLOW_CHARGE:String = "#item_types:shell/kinds/upperCase/HOLLOW_CHARGE";
+      
+      public static const SHELL_KINDS_UPPERCASE_HIGH_EXPLOSIVE:String = "#item_types:shell/kinds/upperCase/HIGH_EXPLOSIVE";
+      
       public static const SHELL_KINDSABBREVIATION_ARMOR_PIERCING:String = "#item_types:shell/kindsAbbreviation/ARMOR_PIERCING";
       
       public static const SHELL_KINDSABBREVIATION_ARMOR_PIERCING_CR:String = "#item_types:shell/kindsAbbreviation/ARMOR_PIERCING_CR";
@@ -251,6 +261,8 @@ package
       
       public static const CUSTOMIZATION_ATTACHMENT:String = "#item_types:customization/attachment";
       
+      public static const CUSTOMIZATION_ATTACHMENT_RARITY:String = "#item_types:customization/attachment/rarity";
+      
       public static const CUSTOMIZATION_STATTRACKER:String = "#item_types:customization/statTracker";
       
       public static const CUSTOMIZATION_PLURAL_PAINT:String = "#item_types:customization/plural/paint";
@@ -291,7 +303,7 @@ package
       
       public static const SHELL_KINDSABBREVIATION_ENUM:Array = [SHELL_KINDSABBREVIATION_ARMOR_PIERCING,SHELL_KINDSABBREVIATION_ARMOR_PIERCING_CR,SHELL_KINDSABBREVIATION_ARMOR_PIERCING_HE,SHELL_KINDSABBREVIATION_HOLLOW_CHARGE,SHELL_KINDSABBREVIATION_HIGH_EXPLOSIVE];
       
-      public static const SHELL_KINDS_ENUM:Array = [SHELL_KINDS_ARMOR_PIERCING,SHELL_KINDS_ARMOR_PIERCING_CR,SHELL_KINDS_ARMOR_PIERCING_HE,SHELL_KINDS_HOLLOW_CHARGE,SHELL_KINDS_HIGH_EXPLOSIVE];
+      public static const SHELL_KINDS_ENUM:Array = [SHELL_KINDS_ARMOR_PIERCING,SHELL_KINDS_ARMOR_PIERCING_CR,SHELL_KINDS_ARMOR_PIERCING_HE,SHELL_KINDS_HOLLOW_CHARGE,SHELL_KINDS_HIGH_EXPLOSIVE,SHELL_KINDS_UPPERCASE_ARMOR_PIERCING,SHELL_KINDS_UPPERCASE_ARMOR_PIERCING_CR,SHELL_KINDS_UPPERCASE_ARMOR_PIERCING_HE,SHELL_KINDS_UPPERCASE_HOLLOW_CHARGE,SHELL_KINDS_UPPERCASE_HIGH_EXPLOSIVE];
       
       public static const TANKMAN_SKILLS_TYPE_ENUM:Array = [TANKMAN_SKILLS_TYPE_SKILL,TANKMAN_SKILLS_TYPE_SKILL_SHORT,TANKMAN_SKILLS_TYPE_PERK,TANKMAN_SKILLS_TYPE_PERK_COMMON,TANKMAN_SKILLS_TYPE_PERK_SHORT];
        

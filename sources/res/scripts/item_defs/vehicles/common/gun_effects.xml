@@ -697,6 +697,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_medium_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -827,6 +834,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_medium_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_medium_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -966,6 +980,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -1099,6 +1120,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_main_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -1238,6 +1266,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -1374,6 +1409,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -1502,6 +1544,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_dualgun_main_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_dualgun_main_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -1637,6 +1686,13 @@
 					<pixie>
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
+						<file>particles/Tank/empty.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
 						<file>particles/Tank/empty.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
@@ -1777,6 +1833,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -1913,6 +1976,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -2041,6 +2111,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_dualgun_main_oil.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_dualgun_main_blacksand.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -2176,6 +2253,13 @@
 					<pixie>
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
+						<file>particles/Tank/empty.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
 						<file>particles/Tank/empty.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
@@ -2316,6 +2400,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -2449,6 +2540,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_main_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -2588,6 +2686,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -2724,6 +2829,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -2852,6 +2964,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_dualgun_main_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_dualgun_main_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -2987,6 +3106,13 @@
 					<pixie>
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
+						<file>particles/Tank/empty.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
 						<file>particles/Tank/empty.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
@@ -3127,6 +3253,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -3263,6 +3396,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_main_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -3391,6 +3531,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_dualgun_main_oil.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_dualgun_main_blacksand.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -3526,6 +3673,13 @@
 					<pixie>
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
+						<file>particles/Tank/empty.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
 						<file>particles/Tank/empty.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
@@ -3666,6 +3820,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -3799,6 +3960,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_large_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -3938,6 +4106,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -4074,6 +4249,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -4202,6 +4384,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_dualgun_large_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_dualgun_large_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -4337,6 +4526,13 @@
 					<pixie>
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
+						<file>particles/Tank/empty.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
 						<file>particles/Tank/empty.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
@@ -4477,6 +4673,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -4613,6 +4816,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -4741,6 +4951,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_dualgun_large_oil.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_dualgun_large_blacksand.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -4876,6 +5093,13 @@
 					<pixie>
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
+						<file>particles/Tank/empty.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
 						<file>particles/Tank/empty.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
@@ -5016,6 +5240,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -5149,6 +5380,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_large_oil_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand_mb.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -5291,6 +5529,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -5421,6 +5666,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_large_oil.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -5557,6 +5809,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand_mb.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -5687,6 +5946,13 @@
 						<startKey>start</startKey>
 						<surfaceMatKind>oil</surfaceMatKind>
 						<file>particles/Tank/shots/groundwave_large_oil.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
@@ -5823,6 +6089,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -5956,6 +6229,13 @@
 						<force>1</force>
 						<position>Scene Root</position>
 					</pixie>
+					<pixie>
+						<startKey>start</startKey>
+						<surfaceMatKind>blacksand</surfaceMatKind>
+						<file>particles/Tank/shots/groundwave_large_blacksand.eff</file>
+						<force>1</force>
+						<position>Scene Root</position>
+					</pixie>
 				</effects>
 			</groundWave>
 		</relatedEffects>
@@ -5981,34 +6261,4 @@
 			</shotSound>
 		</effects>
 	</shot_env_artillery>
-	<fep_qfg_shot_rocket>
-		<timeline>
-			<lighting2>
-				0.075
-				<!--BW_String-->
-			</lighting2>
-			<end>
-				0.3
-				<!--BW_String-->
-			</end>
-			<endpixie>
-				0.1
-				<!--BW_String-->
-			</endpixie>
-			<soundplaystop>8</soundplaystop>
-		</timeline>
-		<effects>
-			<pixie>
-				<startKey>start</startKey>
-				<endKey>endpixie</endKey>
-				<file>particles/Tank/fep_qfg/guns/fep_qfg_shot_rocket.eff</file>
-				<force>1</force>
-			</pixie>
-			<shotSound>
-				<startKey>start</startKey>
-				<wwsoundPC>wpn_mlrs_main_PC</wwsoundPC>
-				<wwsoundNPC>wpn_mlrs_main_NPC</wwsoundNPC>
-			</shotSound>
-		</effects>
-	</fep_qfg_shot_rocket>
 </root>

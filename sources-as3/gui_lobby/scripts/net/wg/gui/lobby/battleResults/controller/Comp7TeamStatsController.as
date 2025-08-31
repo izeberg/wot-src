@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.battleResults.controller
 {
    import flash.events.IEventDispatcher;
+   import net.wg.data.constants.ArenaBonusTypes;
    import net.wg.data.constants.Linkages;
    import net.wg.gui.lobby.battleResults.components.TeamStatsList;
    import net.wg.gui.lobby.battleResults.data.CommonStatsVO;
@@ -26,7 +27,14 @@ package net.wg.gui.lobby.battleResults.controller
          columnWidth[ColumnConstants.PLAYER] = !!param1.isShowSquad ? ColumnConstants.COMP7_PLAYER_COLUMN_WIDTH : ColumnConstants.COMP7_PLAYER_COLUMN_WIDTH + ColumnConstants.FIRST_COLUMN_WIDTH;
          columnWidth[ColumnConstants.PRESTIGE_POINTS] = ColumnConstants.PRESTIGE_POINTS_COLUMN_WIDTH;
          sortingKey[ColumnConstants.PRESTIGE_POINTS] = [ColumnConstants.PRESTIGE_POINTS];
-         columnTooltip[ColumnConstants.PRESTIGE_POINTS] = BATTLE_RESULTS.BATTLERESULT_TEAM_PRESTIGEPOINTS;
+         if(param1.bonusType == ArenaBonusTypes.COMP7_LIGHT)
+         {
+            columnTooltip[ColumnConstants.PRESTIGE_POINTS] = BATTLE_RESULTS.BATTLERESULT_COMP7LIGHT_TEAM_PRESTIGEPOINTS;
+         }
+         else
+         {
+            columnTooltip[ColumnConstants.PRESTIGE_POINTS] = BATTLE_RESULTS.BATTLERESULT_TEAM_PRESTIGEPOINTS;
+         }
       }
       
       override protected function getColumnIds(param1:CommonStatsVO) : Vector.<String>

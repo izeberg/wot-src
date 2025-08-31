@@ -10,20 +10,13 @@
 			<PrebattleComp7Component/>
 		</StaticComponents>
 		<DynamicComponents>
-			<TeamInfoComp7Component/>
 			<VehicleComp7Component/>
 			<ArenaInfoComp7Component/>
-			<ArenaObserverInfoComp7Component/>
-			<VehiclePrestigePoint/>
-			<VehicleRoleSkill/>
-			<VehicleInspireController/>
-			<VehicleHealController/>
 		</DynamicComponents>
 	</Components>
 	<Entities>
 		<ClientServerEntities>
 			<Comp7Lighting/>
-			<ApplicationPoint/>
 		</ClientServerEntities>
 		<ServerOnlyEntities>
 			<Comp7Mgr/>

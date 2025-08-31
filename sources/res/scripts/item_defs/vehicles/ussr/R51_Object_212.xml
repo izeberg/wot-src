@@ -18,7 +18,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.03
+			0.031
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -111,12 +111,9 @@
 		<weight>33010</weight>
 		<maxHealth>368</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>120</maxHealth>
-			<maxRegenHealth>60</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>173</maxRegenHealth>
+			<repairCost>9</repairCost>
 			<chanceToHit>
 				0.50
 				<!--BW_String-->
@@ -2766,14 +2763,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Object_212>
-			<userString>#ussr_vehicles:Chassis_Object_212</userString>
+		<Chassis_R51_Object_212>
+			<userString>#ussr_vehicles:Chassis_R51_Object_212</userString>
 			<tags/>
 			<level>8</level>
 			<price>30600</price>
 			<unlocks>
 				<chassis>
-					Chassis_Object_212_2
+					Chassis_R51_Object_212_2
 					<cost>23300</cost>
 				</chassis>
 			</unlocks>
@@ -2782,9 +2779,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>55500</maxLoad>
 			<terrainResistance>
-				1.4 1.6 2.7
+				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>50000</brakeForce>
@@ -4697,9 +4693,9 @@
 				8.5714283
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Object_212>
-		<Chassis_Object_212_2>
-			<userString>#ussr_vehicles:Chassis_Object_212_2</userString>
+		</Chassis_R51_Object_212>
+		<Chassis_R51_Object_212_2>
+			<userString>#ussr_vehicles:Chassis_R51_Object_212_2</userString>
 			<tags/>
 			<level>9</level>
 			<price>59400</price>
@@ -4708,7 +4704,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>57500</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -6623,11 +6618,11 @@
 				7.38461542
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Object_212_2>
+		</Chassis_R51_Object_212_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Object_212>
-			<userString>#ussr_vehicles:Turret_1_Object_212</userString>
+		<Turret_1_R51_Object_212>
+			<userString>#ussr_vehicles:Turret_1_R51_Object_212</userString>
 			<tags>cannotDetach</tags>
 			<level>9</level>
 			<price>120</price>
@@ -6639,12 +6634,9 @@
 			<maxHealth>92</maxHealth>
 			<rotationSpeed>12</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>170</maxHealth>
+				<maxRegenHealth>85</maxRegenHealth>
+				<repairCost>9</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>270</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -6656,7 +6648,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_152mm_BR-2>
+				<_152mm_BR_2_212A>
 					shared
 					<maxAmmo>47</maxAmmo>
 					<reloadTime>25</reloadTime>
@@ -6669,7 +6661,7 @@
 					</pitchLimits>
 					<unlocks>
 						<gun>
-							_203mm_B-4
+							_203mm_B_4_212A
 							<cost>64000</cost>
 						</gun>
 					</unlocks>
@@ -6946,8 +6938,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_152mm_BR-2>
-				<_203mm_B-4>
+				</_152mm_BR_2_212A>
+				<_203mm_B_4_212A>
 					shared
 					<maxAmmo>40</maxAmmo>
 					<shotDispersionRadius>
@@ -7237,7 +7229,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_203mm_B-4>
+				</_203mm_B_4_212A>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R51_Object_212/normal/lod0/Turret_01.model</undamaged>
@@ -7260,77 +7252,46 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</Turret_1_Object_212>
+		</Turret_1_R51_Object_212>
 	</turrets0>
 	<engines>
-		<M-17F_R>
+		<M_17F_212A>
 			shared
 			<unlocks>
 				<engine>
-					V-2-212
+					V_2K_forced
 					<cost>27000</cost>
 				</engine>
 			</unlocks>
-		</M-17F_R>
-		<V-2-212>shared</V-2-212>
+		</M_17F_212A>
+		<V_2K_forced>shared</V_2K_forced>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<_10R>
-			shared
-			<unlocks>
-				<radio>
-					_12RT
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_10R>
 		<_12RT>shared</_12RT>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<M-17F_R>
+				<M_17F_212A>
 					<smplEnginePower>
 						740.0968
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
-				</M-17F_R>
-				<V-2-212>
+				</M_17F_212A>
+				<V_2K_forced>
 					<smplEnginePower>
 						898.689
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
-				</V-2-212>
+				</V_2K_forced>
 			</engines>
 			<chassis>
-				<Chassis_Object_212>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.21735
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1288
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Object_212>
-				<Chassis_Object_212_2>
+				<Chassis_R51_Object_212>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7351,18 +7312,40 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Object_212_2>
+				</Chassis_R51_Object_212>
+				<Chassis_R51_Object_212_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.20125
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_R51_Object_212_2>
 			</chassis>
 		</detailed>
 	</physics>
 	<clientAdjustmentFactors>
 		<guns>
-			<_203mm_B-4>
+			<_203mm_B_4_212A>
 				<delta>
 					1.06
 					<!--BW_String-->
 				</delta>
-			</_203mm_B-4>
+			</_203mm_B_4_212A>
 		</guns>
 		<armour>
 			0.906774472

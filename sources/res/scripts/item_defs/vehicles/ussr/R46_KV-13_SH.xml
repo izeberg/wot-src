@@ -468,7 +468,6 @@
 			<price>0</price>
 			<notInShop>true</notInShop>
 			<weight>6520</weight>
-			<maxLoad>120000</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.2
 				<!--BW_String-->
@@ -1430,7 +1429,6 @@
 				</turret>
 			</unlocks>
 			<weight>11520</weight>
-			<maxLoad>120000</maxLoad>
 			<terrainResistance>
 				1 1.4 2.1
 				<!--BW_String-->
@@ -2851,7 +2849,6 @@
 				</turret>
 			</unlocks>
 			<weight>14520</weight>
-			<maxLoad>120000</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->
@@ -4827,6 +4824,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.190436 0.000003 -0.000000</shotOffset>
+					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
@@ -5108,6 +5106,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.190000 0.000000 0.000000</shotOffset>
+					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
@@ -5599,6 +5598,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.184236 0.000003 -0.000000</shotOffset>
+					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
@@ -5753,6 +5753,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.184000 0.000000 0.000000</shotOffset>
+					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
@@ -6346,6 +6347,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.143934 0.000002 -0.000000</shotOffset>
+					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>
@@ -6619,6 +6621,7 @@
 						</customizableVehicleAreas>
 					</customization>
 					<shotOffset>-0.144000 0.000000 0.000000</shotOffset>
+					<multiGunState/>
 					<edgeByVisualModel>false</edgeByVisualModel>
 					<camouflage>
 						<tiling>

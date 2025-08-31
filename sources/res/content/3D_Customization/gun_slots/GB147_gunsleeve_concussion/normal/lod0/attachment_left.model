@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/GB147_gunsleeve_concussion/normal/lod1/attachment_left</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.511873 -0.369451 -1.678375</min>
+		<max>0.049693 0.279416 3.719160</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/GB147_gunsleeve_concussion/normal/lod0/attachment_left</nodefullVisual>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_002_Gates/normal/lod1/hpm_002_Gates_02</parent>
+	<extent>30.000000</extent>
+	<visibilityBox>
+		<min>-6.631197 -0.107422 -0.753309</min>
+		<max>6.623727 6.453666 0.158994</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_002_Gates/normal/lod0/hpm_002_Gates_02</nodefullVisual>
+</root>

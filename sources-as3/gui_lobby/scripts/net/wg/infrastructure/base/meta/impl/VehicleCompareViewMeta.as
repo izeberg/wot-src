@@ -3,14 +3,11 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.Errors;
    import net.wg.gui.lobby.vehicleCompare.VehicleCompareCommonView;
    import net.wg.gui.lobby.vehicleCompare.data.VehCompareParamsDeltaVO;
-   import net.wg.gui.lobby.vehicleCompare.data.VehCompareStaticDataVO;
    import net.wg.infrastructure.exceptions.AbstractException;
    
    public class VehicleCompareViewMeta extends VehicleCompareCommonView
    {
        
-      
-      public var onBackClick:Function;
       
       public var onGoToPreviewClick:Function;
       
@@ -28,8 +25,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public var onRemoveAllVehicles:Function;
       
-      private var _vehCompareStaticDataVO:VehCompareStaticDataVO;
-      
       private var _vehCompareParamsDeltaVO:VehCompareParamsDeltaVO;
       
       private var _array:Array;
@@ -41,11 +36,6 @@ package net.wg.infrastructure.base.meta.impl
       
       override protected function onDispose() : void
       {
-         if(this._vehCompareStaticDataVO)
-         {
-            this._vehCompareStaticDataVO.dispose();
-            this._vehCompareStaticDataVO = null;
-         }
          if(this._vehCompareParamsDeltaVO)
          {
             this._vehCompareParamsDeltaVO.dispose();
@@ -57,12 +47,6 @@ package net.wg.infrastructure.base.meta.impl
             this._array = null;
          }
          super.onDispose();
-      }
-      
-      public function onBackClickS() : void
-      {
-         App.utils.asserter.assertNotNull(this.onBackClick,"onBackClick" + Errors.CANT_NULL);
-         this.onBackClick();
       }
       
       public function onGoToPreviewClickS(param1:Number) : void
@@ -113,17 +97,6 @@ package net.wg.infrastructure.base.meta.impl
          this.onRemoveAllVehicles();
       }
       
-      public final function as_setStaticData(param1:Object) : void
-      {
-         var _loc2_:VehCompareStaticDataVO = this._vehCompareStaticDataVO;
-         this._vehCompareStaticDataVO = new VehCompareStaticDataVO(param1);
-         this.setStaticData(this._vehCompareStaticDataVO);
-         if(_loc2_)
-         {
-            _loc2_.dispose();
-         }
-      }
-      
       public final function as_setParamsDelta(param1:Object) : void
       {
          var _loc2_:VehCompareParamsDeltaVO = this._vehCompareParamsDeltaVO;
@@ -144,13 +117,6 @@ package net.wg.infrastructure.base.meta.impl
          {
             _loc2_.splice(0,_loc2_.length);
          }
-      }
-      
-      protected function setStaticData(param1:VehCompareStaticDataVO) : void
-      {
-         var _loc2_:String = "as_setStaticData" + Errors.ABSTRACT_INVOKE;
-         DebugUtils.LOG_ERROR(_loc2_);
-         throw new AbstractException(_loc2_);
       }
       
       protected function setParamsDelta(param1:VehCompareParamsDeltaVO) : void

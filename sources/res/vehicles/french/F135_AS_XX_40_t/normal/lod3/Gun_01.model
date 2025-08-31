@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F135_AS_XX_40_t/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.081345 -0.747404 -2.210734</min>
+		<max>1.086525 2.745353 5.127344</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F135_AS_XX_40_t/normal/lod3/Gun_01</nodefullVisual>
+</root>

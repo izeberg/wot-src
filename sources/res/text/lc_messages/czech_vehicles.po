@@ -46,9 +46,6 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
-msgid "Chassis_Cz04_T50_51_FEP"
-msgstr "PTV-51"
-
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34/85"
 
@@ -132,6 +129,9 @@ msgstr "Šotek"
 
 msgid "Chassis_Cz21_Vz_60S"
 msgstr "Vz. 60S"
+
+msgid "Chassis_Cz21_Vz_60S_Dravec"
+msgstr "Vz. 60S Dravec"
 
 msgid "Chassis_Cz23_Skoda_T_17"
 msgstr "Škoda T 17 první model"
@@ -230,19 +230,6 @@ msgstr "LT vz. 35"
 
 msgid "Cz04_T50_51"
 msgstr "TVP T 50/51"
-
-msgid "Cz04_T50_51_FEP23"
-msgstr "PTV-51"
-
-msgid "Cz04_T50_51_FEP23_descr"
-msgstr ""
-"A vehicle projected for escorting attacking tank units. Its developers "
-"envisioned that it would hit lightly armored vehicles and enemy manpower "
-"while also providing protection against RPG and ATGM fire. The project "
-"existed only in blueprints."
-
-msgid "Cz04_T50_51_FEP23_short"
-msgstr "PTV-51"
 
 msgid "Cz04_T50_51_descr"
 msgstr ""
@@ -588,6 +575,37 @@ msgstr "High damage per minute and good penetration"
 
 msgid "Cz21_Vz_60S"
 msgstr "Vz. 60S"
+
+msgid "Cz21_Vz_60S_Dravec"
+msgstr "Vz. 60S Dravec"
+
+msgid "Cz21_Vz_60S_Dravec_descr"
+msgstr ""
+"Even though production of the T-55 was already established, Czechoslovak "
+"engineers continued to work on a promising tank. The mass-produced T-55 "
+"needed to have its armor enhanced, but just increasing the steel thickness "
+"did not solve the problem. The main focus in the Vz. 60S Dravec project was "
+"thus to increase the armoring and firepower. The vehicle was given spaced "
+"screen protection and Oplot-MO active protection. To improve the firepower, "
+"the tank was equipped with the Neva KTD-1 laser rangefinder, while the gun "
+"barrel had a thermal sleeve. For concealment in combat, the 902 Tucha smoke "
+"grenade system was mounted on the turret. Later, several of the project's "
+"solutions were used a basis for the T-55AM1 and T-55AM2 modifications of the"
+" T-55."
+
+msgid "Cz21_Vz_60S_Dravec_long_special"
+msgstr ""
+"The Vz. 60S Dravec is a Tier X heavy tank. The main feature of the vehicle "
+"is reliable protection based on thick sloped turret and hull armor plates, "
+"enhanced by additional spaced armor. Despite its strong armament, the "
+"vehicle boasts good mobility for a heavy tank. It is equipped with a "
+"balanced 122 mm gun with no glaring flaws."
+
+msgid "Cz21_Vz_60S_Dravec_short"
+msgstr "Dravec"
+
+msgid "Cz21_Vz_60S_Dravec_short_special"
+msgstr "Great armor, comfortable gun"
 
 msgid "Cz21_Vz_60S_descr"
 msgstr ""
@@ -956,9 +974,6 @@ msgstr "Nárazový vz. 57"
 msgid "Praga_AXK"
 msgstr "Praga AXK"
 
-msgid "Praga_AXK_FEP"
-msgstr "Praga AXK M"
-
 msgid "Praga_NR"
 msgstr "Praga NR"
 
@@ -1010,9 +1025,6 @@ msgstr "Radiostanice RM-31T"
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "Radiostanice RM-31T GW"
 
-msgid "Radiostanice_RM_31T_A_FEP"
-msgstr "Radiostanice RM-31T M"
-
 msgid "Radiostanice_RM_31T_TBT"
 msgstr "Radiostanice RM-31T"
 
@@ -1055,6 +1067,9 @@ msgstr "Škoda 16 ADH 134"
 msgid "Skoda_16_ADH_140"
 msgstr "Škoda 16 ADH 140"
 
+msgid "Skoda_16_ADH_140A_TVP"
+msgstr "Škoda 16 ADH 140A (TVP)"
+
 msgid "Skoda_16_ADH_140_A"
 msgstr "Škoda 16 ADH 140A"
 
@@ -1088,11 +1103,14 @@ msgstr "Škoda T-11/2"
 msgid "Skoda_V12_16_2_liter"
 msgstr "Škoda V12 16.2 liter"
 
-msgid "Skoda_V12_19_8_liter_450"
-msgstr "Škoda V12 19.8 liter (450)"
+msgid "Skoda_V12_19_8_liter_24"
+msgstr "Škoda V12 19.8 liter (24)"
 
-msgid "Skoda_V12_19_8_liter_500"
-msgstr "Škoda V12 19.8 liter (500)"
+msgid "Skoda_V12_19_8_liter_druhy_model"
+msgstr "Škoda V12 19.8 liter (druhý model)"
+
+msgid "Skoda_V12_19_8_liter_treti_model"
+msgstr "Škoda V12 19.8 liter (třetí model)"
 
 msgid "Skoda_V16_AHK_2"
 msgstr "Škoda V16 AHK-2"
@@ -1126,9 +1144,6 @@ msgstr "LT vz. 35"
 
 msgid "Turret_1_Cz04_T50_51"
 msgstr "TVP T 50/51"
-
-msgid "Turret_1_Cz04_T50_51_FEP"
-msgstr "PTV-51"
 
 msgid "Turret_1_Cz05_T34_100"
 msgstr "Konštrukta T-34/100 varianta II"
@@ -1186,6 +1201,9 @@ msgstr "Šotek"
 
 msgid "Turret_1_Cz21_Vz_60S"
 msgstr "Vz. 60S"
+
+msgid "Turret_1_Cz21_Vz_60S_Dravec"
+msgstr "Vz. 60S Dravec"
 
 msgid "Turret_1_Cz23_Skoda_T_17"
 msgstr "Škoda T 17 první model"
@@ -1304,23 +1322,41 @@ msgstr "100 mm A20"
 msgid "_100mm_AK1"
 msgstr "100 mm AK1"
 
+msgid "_100mm_AK1_50_51"
+msgstr "100 mm AK1 (50/51)"
+
 msgid "_100mm_BS_3"
 msgstr "100 mm BS-3"
 
 msgid "_100mm_JOF"
 msgstr "JOF"
 
+msgid "_100mm_JOF_T_34"
+msgstr "JOF (T-34)"
+
 msgid "_100mm_JPSv"
 msgstr "JPSv"
 
+msgid "_100mm_JPSv_T_34"
+msgstr "JPSv (T-34)"
+
 msgid "_100mm_JPrSv"
 msgstr "JPrSv"
+
+msgid "_100mm_JPrSv_T_34"
+msgstr "JPrSv (T-34)"
 
 msgid "_100mm_Narazovy_vz_49"
 msgstr "Nárazový vz. 49"
 
 msgid "_100mm_Narazovy_vz_50"
 msgstr "Nárazový vz. 50"
+
+msgid "_100mm_Narazovy_vz_50_51"
+msgstr "Nárazový vz. 50/51"
+
+msgid "_100mm_Narazovy_vz_50_TVP"
+msgstr "Nárazový vz. 50 (TVP)"
 
 msgid "_100mm_Narazovy_vz_62"
 msgstr "Nárazový vz. 62"
@@ -1330,6 +1366,9 @@ msgstr "Průpalný S 53"
 
 msgid "_100mm_Prupalny_vz_50"
 msgstr "Průpalný vz. 50"
+
+msgid "_100mm_Prupalny_vz_50_51"
+msgstr "Průpalný vz. 50/51"
 
 msgid "_100mm_Prupalny_vz_62"
 msgstr "Průpalný vz. 62"
@@ -1345,6 +1384,9 @@ msgstr "Průrazný vz. 49 (s jádrem)"
 
 msgid "_100mm_Prurazny_vz_50"
 msgstr "Průrazný vz. 50"
+
+msgid "_100mm_Prurazny_vz_50_51"
+msgstr "Průrazný vz. 50/51"
 
 msgid "_100mm_Prurazny_vz_62"
 msgstr "Průrazný vz. 62"
@@ -1363,6 +1405,42 @@ msgstr "Nárazový"
 
 msgid "_105mm_Narazovy_14_48"
 msgstr "Nárazový 14-48"
+
+msgid "_105mm_Narazovy_14_48_1000"
+msgstr "Nárazový 14-48 (1000)"
+
+msgid "_105mm_Narazovy_14_48_44"
+msgstr "Nárazový 14-48 (44)"
+
+msgid "_105mm_Narazovy_A"
+msgstr "Nárazový (A)"
+
+msgid "_105mm_Narazovy_TVP"
+msgstr "Nárazový (TVP)"
+
+msgid "_105mm_Vz_39N_OPG_A"
+msgstr "Vz. 39N OPG (A)"
+
+msgid "_105mm_Vz_39N_OPG_TVP"
+msgstr "Vz. 39N OPG (TVP)"
+
+msgid "_105mm_Vz_39N_VM_1000"
+msgstr "Vz. 39N VM (1000)"
+
+msgid "_105mm_Vz_39N_VM_44"
+msgstr "Vz. 39N VM (44)"
+
+msgid "_105mm_Vz_42N_OPG_A"
+msgstr "Vz. 42N OPG (A)"
+
+msgid "_105mm_Vz_42N_OPG_TVP"
+msgstr "Vz. 42N OPG (TVP)"
+
+msgid "_105mm_Vz_42N_VM_1000"
+msgstr "Vz. 42N VM (1000)"
+
+msgid "_105mm_Vz_42N_VM_44"
+msgstr "Vz. 42N VM (44)"
 
 msgid "_105mm_dvojkanon_vz_40N"
 msgstr "105 mm dvojkanón vz. 40N"
@@ -1388,6 +1466,9 @@ msgstr "Vz. 39N VM"
 msgid "_105mm_vz_40N"
 msgstr "105 mm vz. 40N"
 
+msgid "_105mm_vz_40N_1000"
+msgstr "105 mm vz. 40N (1000)"
+
 msgid "_105mm_vz_42N_OPG"
 msgstr "Vz. 42N OPG"
 
@@ -1412,6 +1493,9 @@ msgstr "Nárazový vz. 48"
 msgid "_122mm_Narazovy_vz_48_60"
 msgstr "Nárazový 48-60"
 
+msgid "_122mm_Narazovy_vz_48_A"
+msgstr "Nárazový vz. 48 (A)"
+
 msgid "_122mm_Narazovy_vz_52"
 msgstr "Nárazový vz. 52"
 
@@ -1420,6 +1504,12 @@ msgstr "Průrazný vz. 48"
 
 msgid "_122mm_Prurazny_vz_48_60"
 msgstr "Průrazný 48-60"
+
+msgid "_122mm_Prurazny_vz_48_A"
+msgstr "Průrazný vz. 48 (A)"
+
+msgid "_122mm_Prurazny_vz_50_A_s_oc_jadrem"
+msgstr "Průrazný vz. 50 (A. s jádrem)"
 
 msgid "_122mm_Prurazny_vz_50_s_oc_jadrem"
 msgstr "Průrazný vz. 50 (s jádrem)"
@@ -1463,6 +1553,12 @@ msgstr "Nárazový vz. 57"
 msgid "_130mm_Narazovy_vz_51"
 msgstr "Nárazový vz. 51"
 
+msgid "_130mm_Narazovy_vz_51_54"
+msgstr "Nárazový vz. 51/54"
+
+msgid "_130mm_Narazovy_vz_51_A"
+msgstr "Nárazový vz. 51 (A)"
+
 msgid "_130mm_Narazovy_vz_55"
 msgstr "Nárazový vz. 51"
 
@@ -1481,8 +1577,20 @@ msgstr "Průrazný vz. 57 (s jádrem)"
 msgid "_130mm_Prurazny_vz_51"
 msgstr "Průrazný vz. 51"
 
+msgid "_130mm_Prurazny_vz_54_55"
+msgstr "Průrazný vz. 54/55"
+
+msgid "_130mm_Prurazny_vz_54_55_s_oc_jadrem"
+msgstr "Průrazný vz. 54/55 (s jádrem)"
+
 msgid "_130mm_Prurazny_vz_55"
 msgstr "Průrazný vz. 55"
+
+msgid "_130mm_Prurazny_vz_55_A"
+msgstr "Průrazný vz. 55 (A)"
+
+msgid "_130mm_Prurazny_vz_55_A_s_oc_jadrem"
+msgstr "Průrazný vz. 55 (A. s jádrem)"
 
 msgid "_130mm_Prurazny_vz_55_s_oc_jadrem"
 msgstr "Průrazný vz. 55 (s jádrem)"
@@ -1559,6 +1667,12 @@ msgstr "Nárazový vz. 28"
 msgid "_37mm_Narazovy_vz_34"
 msgstr "Nárazový vz. 34"
 
+msgid "_37mm_Narazovy_vz_34_A3"
+msgstr "Nárazový vz. 34 (A3)"
+
+msgid "_37mm_Narazovy_vz_34_A8"
+msgstr "Nárazový vz. 34 (A8)"
+
 msgid "_37mm_Narazovy_vz_47"
 msgstr "Nárazový vz. 47"
 
@@ -1574,8 +1688,14 @@ msgstr "Průrazný vz. 28"
 msgid "_37mm_Prurazny_vz_34"
 msgstr "Průrazný vz. 34"
 
+msgid "_37mm_Prurazny_vz_34_A3"
+msgstr "Průrazný vz. 34 (A3)"
+
 msgid "_37mm_Prurazny_vz_37"
 msgstr "Průrazný vz. 37"
+
+msgid "_37mm_Prurazny_vz_40_A3_s_oc_jadrem"
+msgstr "Průrazný vz. 40 (A3 s oc. jádrem)"
 
 msgid "_37mm_Prurazny_vz_40_s_oc_jadrem"
 msgstr "Průrazný vz. 40 (s oc. jádrem)"
@@ -1607,6 +1727,9 @@ msgstr "Nárazový"
 msgid "_47mm_Narazovy_vz_36"
 msgstr "Nárazový vz. 36"
 
+msgid "_47mm_Narazovy_vz_36_A11"
+msgstr "Nárazový vz. 36 (A11)"
+
 msgid "_47mm_Prurazny"
 msgstr "Průrazný"
 
@@ -1615,6 +1738,12 @@ msgstr "Průrazný (s oc. jádrem)"
 
 msgid "_47mm_Prurazny_vz_36"
 msgstr "Průrazný vz. 36"
+
+msgid "_47mm_Prurazny_vz_36_A11"
+msgstr "Průrazný vz. 36 (A11)"
+
+msgid "_47mm_Prurazny_vz_40_A11_s_wolf_jadrem"
+msgstr "Průrazný vz. 40 (A11 s wolf. jádrem)"
 
 msgid "_47mm_Prurazny_vz_40_s_wolf_jadrem"
 msgstr "Průrazný vz. 40 (s wolf. jádrem)"
@@ -1679,15 +1808,6 @@ msgstr "57 mm automatický dvojkanón 535Š"
 msgid "_57_mm_automaticky_dvojkanon_535T"
 msgstr "57 mm automatický dvojkanón 535T"
 
-msgid "_57mm_BR-281U_FEP"
-msgstr "57 mm BR-281"
-
-msgid "_57mm_BR-281_FEP"
-msgstr "57 mm BR-281SP"
-
-msgid "_57mm_C68x2_FEP"
-msgstr "2x57 mm C-68"
-
 msgid "_5_TD_DBV"
 msgstr "5TD"
 
@@ -1706,11 +1826,38 @@ msgstr "Průrazný vz. 44 (s wolf. jádrem)"
 msgid "_75mm_Narazovy_vz_42"
 msgstr "Nárazový vz. 42"
 
+msgid "_75mm_Narazovy_vz_42_A"
+msgstr "Nárazový vz. 42 (A)"
+
+msgid "_75mm_Narazovy_vz_42_A13"
+msgstr "Nárazový vz. 42 (A13)"
+
+msgid "_75mm_Narazovy_vz_42_A18"
+msgstr "Nárazový vz. 42 (A18)"
+
 msgid "_75mm_Narazovy_vz_48"
 msgstr "Nárazový vz. 48"
 
 msgid "_75mm_Prurazny_vz_42"
 msgstr "Průrazný vz. 42"
+
+msgid "_75mm_Prurazny_vz_42_A"
+msgstr "Průrazný vz. 42 (A)"
+
+msgid "_75mm_Prurazny_vz_42_A13"
+msgstr "Průrazný vz. 42 (A13)"
+
+msgid "_75mm_Prurazny_vz_42_A13_s_wolf_jadrem"
+msgstr "Průrazný vz. 42 (A13 s wolf. jádrem)"
+
+msgid "_75mm_Prurazny_vz_42_A18"
+msgstr "Průrazný vz. 42 (A18)"
+
+msgid "_75mm_Prurazny_vz_42_A18_s_wolf_jadrem"
+msgstr "Průrazný vz. 42 (A18 s wolf. jádrem)"
+
+msgid "_75mm_Prurazny_vz_42_A_s_wolf_jadrem"
+msgstr "Průrazný vz. 42 (A. s wolf. jádrem)"
 
 msgid "_75mm_Prurazny_vz_42_s_wolf_jadrem"
 msgstr "Průrazný vz. 42 (s wolf. jádrem)"
@@ -1726,6 +1873,9 @@ msgstr "75 mm Škoda A13"
 
 msgid "_75mm_Skoda_A18"
 msgstr "75 mm Škoda A18"
+
+msgid "_75mm_Skoda_A18_24"
+msgstr "75 mm Škoda A18 (24)"
 
 msgid "_75mm_Skoda_A18_s_automatickym_nabijenim"
 msgstr "75 mm Škoda A18 (s automatickým nabíjením)"
@@ -1769,6 +1919,12 @@ msgstr "Nárazový vz. 44"
 msgid "_88mm_Narazovy"
 msgstr "Nárazový"
 
+msgid "_88mm_Narazovy_TVP"
+msgstr "Nárazový (TVP)"
+
+msgid "_88mm_Narazovy_VTU"
+msgstr "Nárazový (VTU)"
+
 msgid "_88mm_Skoda_vz_36N"
 msgstr "88 mm vz. 38N"
 
@@ -1780,6 +1936,18 @@ msgstr "8,8 cm vz. 37N"
 
 msgid "_88mm_Vz_37N_A"
 msgstr "8,8 cm vz. 37N"
+
+msgid "_88mm_Vz_39N_OPG_VTU"
+msgstr "Vz. 39N OPG (VTU)"
+
+msgid "_88mm_Vz_41N_OPG_TVP"
+msgstr "Vz. 41N OPG (TVP)"
+
+msgid "_88mm_Vz_42N_OPG_TVP"
+msgstr "Vz. 42N OPG (TVP)"
+
+msgid "_88mm_Vz_46_prupalny_VTU"
+msgstr "Vz. 46 průpalný (VTU)"
 
 msgid "_88mm_vz_41N"
 msgstr "8,8 cm vz. 41N"

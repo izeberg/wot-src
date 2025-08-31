@@ -135,6 +135,8 @@ package net.wg.data.constants.generated
       
       public static const EPIC_AWARD_BATTLE_BOOSTER:String = "epicAwardBattleBooster";
       
+      public static const SERVERS_INFO:String = "serversInfo";
+      
       public static const SHOP_MODULE:String = "shopModule";
       
       public static const SHOP_SHELL:String = "shopShell";
@@ -391,6 +393,10 @@ package net.wg.data.constants.generated
       
       public static const OPERATION_POSTPONED:String = "operationPostponed";
       
+      public static const PERSONAL_MISSIONS_POINTS:String = "personalMissionsPoints";
+      
+      public static const PERSONAL_MISSION_OPERATION_DISABLED:String = "personalMissionOperationDisabled";
+      
       public static const GF_TEST_TOOLTIP:String = "gfTestTooltip";
       
       public static const WOT_PLUS:String = "wotPlus";
@@ -563,10 +569,6 @@ package net.wg.data.constants.generated
       
       public static const FUN_RANDOM_REWARDS:String = "funRandomRewards";
       
-      public static const FUN_RANDOM_CAROUSEL_VEHICLE:String = "funRandomCarouselVehicle";
-      
-      public static const FUN_RANDOM_VEHICLE:String = "funRandomVehicle";
-      
       public static const BLOCKS_DEFAULT_UI:String = "ToolTipInblocksDefaultUI";
       
       public static const TANKMEN_UI:String = "ToolTipTankmenUI";
@@ -610,6 +612,8 @@ package net.wg.data.constants.generated
       public static const CLAN_INFO_UI:String = "ToolTipClanInfoUI";
       
       public static const SETTINGS_BUTTON_UI:String = "ToolTipInblocksDefaultUI";
+      
+      public static const SERVERS_INFO_UI:String = "ToolTipInblocksDefaultUI";
       
       public static const CUSTOMIZATION_ITEM_UI:String = "ToolTipCustomizationItemUI";
       
@@ -672,6 +676,10 @@ package net.wg.data.constants.generated
       public static const SETTINGS_KEY_SWITCH_MODE:String = "SettingKeySwitchMode";
       
       public static const SETTINGS_KEY_SWITCH_MODE_UI:String = "ToolTipInblocksDefaultUI";
+      
+      public static const SETTINGS_KEY_SPECIAL_ABILITY:String = "SettingKeySpecialAbility";
+      
+      public static const SETTINGS_KEY_SPECIAL_ABILITY_UI:String = "ToolTipInblocksDefaultUI";
       
       public static const SETTINGS_KEY_HIGHLIGHTLOCATION:String = "SettingsKeyHighlightLocation";
       
@@ -787,7 +795,7 @@ package net.wg.data.constants.generated
       
       public static const EPIC_IN_BATTE_SET:Array = [EPIC_RANK_UNLOCK_INFO];
       
-      public static const PERSONAL_MISSION_SET:Array = [PERSONAL_QUESTS_PREVIEW,PERSONAL_MISSIONS_TANKWOMAN,PERSONAL_MISSIONS_TANKMODULE,FREE_SHEET,FREE_SHEET_RETURN,FREE_SHEET_NOT_ENOUGH,FREE_SHEET_USED,BADGE,BADGE_LOYAL_SERVICE,OPERATION,PERSONAL_MISSION_INFO,PERSONAL_MISSIONS_MAP_REGION,OPERATIONS_CHAIN_DETAILS,OPERATION_POSTPONED];
+      public static const PERSONAL_MISSION_SET:Array = [PERSONAL_QUESTS_PREVIEW,PERSONAL_MISSIONS_TANKWOMAN,PERSONAL_MISSIONS_TANKMODULE,FREE_SHEET,FREE_SHEET_RETURN,FREE_SHEET_NOT_ENOUGH,FREE_SHEET_USED,BADGE,BADGE_LOYAL_SERVICE,OPERATION,PERSONAL_MISSION_INFO,PERSONAL_MISSIONS_MAP_REGION,OPERATIONS_CHAIN_DETAILS,OPERATION_POSTPONED,PERSONAL_MISSIONS_POINTS,PERSONAL_MISSION_OPERATION_DISABLED];
       
       public static const QUESTS_SET:Array = [QUESTS_PREVIEW,SHEDULE_QUEST,MISSION_VEHICLE,MISSION_VEHICLE_TYPE,ADDITIONAL_AWARDS,PACK_RENT_VEHICLES,UNAVAILABLE_QUEST];
       
@@ -797,7 +805,7 @@ package net.wg.data.constants.generated
       
       public static const RANKED_SET:Array = [RANKED_BATTLES_POSITION,RANKED_BATTLES_EFFICIENCY,RANKED_BATTLES_LEAGUE,RANKED_BATTLES_BONUS,RANKED_BATTLES_RANK,RANKED_STEP,RANKED_CALENDAR_DAY_INFO,RANKED_CALENDAR_DAY_INFO_EXTENDED,RANKED_SELECTOR_INFO,RANKED_UNAVAILABLE_INFO,RANKED_DIVISION_INFO,RANKED_BATTLES_YEAR_REWARD,RANKED_QUESTS_PREVIEW,RANKED_BATTLES_SELECTABLE_REWARD];
       
-      public static const SETTINGS_SET:Array = [SETTINGS_CONTROL,SETTINGS_BUTTON,SETTINGS_MINIMAP_CIRCLES,SETTINGS_KEY_SWITCH_MODE,SETTINGS_KEY_HIGHLIGHTLOCATION,SETTINGS_KEY_HIGHLIGHTTARGET,SETTINGS_KEY_SHOWRADIALMENU,SETTINGS_SHOW_LOCATION_MARKERS,SETTINGS_KEY_CHARGE_FIRE,SETTINGS_SWITCH_EQUIPMENT];
+      public static const SETTINGS_SET:Array = [SETTINGS_CONTROL,SETTINGS_BUTTON,SETTINGS_MINIMAP_CIRCLES,SETTINGS_KEY_SWITCH_MODE,SETTINGS_KEY_HIGHLIGHTLOCATION,SETTINGS_KEY_HIGHLIGHTTARGET,SETTINGS_KEY_SHOWRADIALMENU,SETTINGS_SHOW_LOCATION_MARKERS,SETTINGS_KEY_CHARGE_FIRE,SETTINGS_SWITCH_EQUIPMENT,SERVERS_INFO,SETTINGS_KEY_SPECIAL_ABILITY];
       
       public static const TUTORIAL_SET:Array = [HANGAR_TUTORIAL_CUSTOMIZATION_TYPES,HANGAR_TUTORIAL_PERSONAL_CASE_SKILLS,HANGAR_TUTORIAL_PERSONAL_CASE_FREE_SKILLS,HANGAR_TUTORIAL_PERSONAL_CASE_PERKS,HANGAR_TUTORIAL_PERSONAL_CASE_ADDITIONAL,HANGAR_TUTORIAL_AMMUNITION,HANGAR_TUTORIAL_EQUPMENT];
       
@@ -845,7 +853,7 @@ package net.wg.data.constants.generated
       
       public static const ACCOUNT_COMPLETION_SET:Array = [ACCOUNT_COMPLETION];
       
-      public static const FUN_RANDOM_LOBBY_SET:Array = [FUN_RANDOM_CALENDAR_DAY,FUN_RANDOM_MODE_SELECTOR_CALENDAR_DAY,FUN_RANDOM_CAROUSEL_VEHICLE,FUN_RANDOM_VEHICLE,FUN_RANDOM_REWARDS];
+      public static const FUN_RANDOM_LOBBY_SET:Array = [FUN_RANDOM_CALENDAR_DAY,FUN_RANDOM_MODE_SELECTOR_CALENDAR_DAY,FUN_RANDOM_REWARDS];
       
       public static const REFERRAL_PROGRAM_SET:Array = [REFERRAL_AWARDS];
       

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S36_Strv_107_12/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S36_Strv_107_12/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-2.099648 -0.870814 -2.498453</min>
+		<max>2.052442 1.303068 3.664712</max>
+	</visibilityBox>
+</root>

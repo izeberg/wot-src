@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.743089 -0.313282 -0.185164</min>
+		<max>0.743104 0.450791 5.032123</max>
+	</visibilityBox>
+	<parent>vehicles/american/A179_Black_Rock/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A179_Black_Rock/normal/lod1/Gun_02</nodefullVisual>
+</root>

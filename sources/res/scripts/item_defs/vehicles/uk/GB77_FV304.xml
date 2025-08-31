@@ -105,12 +105,9 @@
 		<weight>11056</weight>
 		<maxHealth>252</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>100</maxHealth>
-			<maxRegenHealth>50</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>128</maxRegenHealth>
+			<repairCost>6</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/british/GB77_FV304/normal/lod0/Hull.model</undamaged>
@@ -3021,9 +3018,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>20700</maxLoad>
 			<terrainResistance>
-				1.2 1.5 2.3
+				1.1 1.4 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>19000</brakeForce>
@@ -4661,7 +4657,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>22700</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.1
 				<!--BW_String-->
@@ -4683,12 +4678,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>90</maxHealth>
-			<maxRegenHealth>70</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>145</maxHealth>
+			<maxRegenHealth>109</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<models>
 				<undamaged>vehicles/british/GB77_FV304/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/british/GB77_FV304/crash/lod0/Chassis.model</destroyed>
@@ -6287,7 +6279,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.19999981
+				6.62068987
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB77_FV304_2>
@@ -6296,15 +6288,30 @@
 		<Turret_1_GB77_FV304>
 			<userString>#gb_vehicles:Turret_1_GB77_FV304</userString>
 			<tags>cannotDetach</tags>
-			<level>6</level>
+			<level>5</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>14</armor_1>
-				<armor_2>10</armor_2>
-				<armor_3>14</armor_3>
-				<armor_4>14</armor_4>
-				<armor_5>10</armor_5>
+				<armor_1>
+					14
+					<tags>hull</tags>
+				</armor_1>
+				<armor_2>
+					10
+					<tags>hull</tags>
+				</armor_2>
+				<armor_3>
+					14
+					<tags>hull</tags>
+				</armor_3>
+				<armor_4>
+					14
+					<tags>hull</tags>
+				</armor_4>
+				<armor_5>
+					10
+					<tags>hull</tags>
+				</armor_5>
 			</armor>
 			<weight>100</weight>
 			<maxHealth>63</maxHealth>
@@ -6327,12 +6334,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<OQF_25pdr_Gun_Mk_II>
+				<Q_F_25_Pr_Gun_How_304>
 					shared
 					<maxAmmo>110</maxAmmo>
 					<unlocks>
 						<gun>
-							_4.5inch_SPG_Howitzer
+							Q_F_4_5_in_Howitzer_304
 							<cost>4100</cost>
 						</gun>
 					</unlocks>
@@ -6344,11 +6351,11 @@
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.66
+						0.6
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.9
+						8.4
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -6363,7 +6370,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						4.8
+						4.2
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6469,7 +6476,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</OQF_25pdr_Gun_Mk_II>
+				</Q_F_25_Pr_Gun_How_304>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB77_FV304/normal/lod0/Turret_01.model</undamaged>
@@ -6776,11 +6783,26 @@
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>14</armor_1>
-				<armor_2>10</armor_2>
-				<armor_3>14</armor_3>
-				<armor_4>14</armor_4>
-				<armor_5>10</armor_5>
+				<armor_1>
+					14
+					<tags>hull</tags>
+				</armor_1>
+				<armor_2>
+					10
+					<tags>hull</tags>
+				</armor_2>
+				<armor_3>
+					14
+					<tags>hull</tags>
+				</armor_3>
+				<armor_4>
+					14
+					<tags>hull</tags>
+				</armor_4>
+				<armor_5>
+					10
+					<tags>hull</tags>
+				</armor_5>
 			</armor>
 			<weight>100</weight>
 			<maxHealth>63</maxHealth>
@@ -6803,7 +6825,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_4.5inch_SPG_Howitzer>
+				<Q_F_4_5_in_Howitzer_304>
 					shared
 					<maxAmmo>75</maxAmmo>
 					<unlocks>
@@ -6957,7 +6979,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_4.5inch_SPG_Howitzer>
+				</Q_F_4_5_in_Howitzer_304>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB77_FV304/normal/lod0/Turret_02.model</undamaged>
@@ -7274,24 +7296,6 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<N19Mk2>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk3
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</N19Mk2>
-		<N19Mk3>
-			shared
-			<unlocks>
-				<radio>
-					N22
-					<cost>4500</cost>
-				</radio>
-			</unlocks>
-		</N19Mk3>
 		<N22>shared</N22>
 	</radios>
 	<physics>
@@ -7323,19 +7327,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

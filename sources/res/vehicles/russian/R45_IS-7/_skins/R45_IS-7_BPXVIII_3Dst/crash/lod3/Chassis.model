@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.761549 -0.008689 -3.699535</min>
+		<max>1.763408 1.047640 3.656972</max>
+	</visibilityBox>
+</root>

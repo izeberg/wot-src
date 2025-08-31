@@ -1,6 +1,5 @@
 from enum import IntEnum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.tooltips.vehicle_item_model import VehicleItemModel
 
 class PointsCardType(IntEnum):
@@ -10,6 +9,7 @@ class PointsCardType(IntEnum):
     BATTLE = 3
     EPIC_BATTLE_POINTS = 4
     COMP7 = 5
+    COMP7_LIGHT = 6
 
 
 class GameModeCardModel(ViewModel):

@@ -8,9 +8,10 @@ package net.wg.gui.lobby.personalMissions.components
    import net.wg.gui.lobby.personalMissions.events.OperationEvent;
    import net.wg.infrastructure.base.meta.IPersonalMissionOperationsMeta;
    import net.wg.infrastructure.base.meta.impl.PersonalMissionOperationsMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    
-   public class PersonalMissionOperations extends PersonalMissionOperationsMeta implements IPersonalMissionOperationsMeta
+   public class PersonalMissionOperations extends PersonalMissionOperationsMeta implements IPersonalMissionOperationsMeta, IInnerView
    {
       
       private static const INVALID_OPERATIONS:String = "invalidOperations";
@@ -66,6 +67,11 @@ package net.wg.gui.lobby.personalMissions.components
          super.onBeforeDispose();
       }
       
+      override protected function isCloseButtonVisible() : Boolean
+      {
+         return false;
+      }
+      
       override protected function onDispose() : void
       {
          this.operationInfo.dispose();
@@ -114,21 +120,22 @@ package net.wg.gui.lobby.personalMissions.components
       
       private function updateSize() : void
       {
-         var _loc1_:String = null;
-         _loc1_ = calcPageHeightState(height);
-         if(this._pageHeightState != _loc1_)
+         var _loc1_:uint = _height - _topOffset - _bottomOffset | 0;
+         var _loc2_:String = calcPageHeightState(_loc1_);
+         if(this._pageHeightState != _loc2_)
          {
-            this._pageHeightState = _loc1_;
+            this._pageHeightState = _loc2_;
             this.updateDependentComponents(this._pageHeightState);
          }
-         var _loc2_:int = width >> 1;
-         var _loc3_:int = height >> 1;
-         this.content.x = _loc2_;
-         this.content.y = _loc1_ == PAGE_HEIGHT_STATE_SHORT ? Number(CONTENT_TOP_POSITION_MIN + (App.appHeight - LobbyMetrics.MIN_STAGE_HEIGHT >> 1)) : Number(_loc3_);
-         this.operationInfo.x = _loc2_;
-         this.operationInfo.y = Math.min(HEADER_TOP_POSITION_MIN + (App.appHeight - LobbyMetrics.MIN_STAGE_HEIGHT >> 1),HEADER_TOP_POSITION_MAX);
+         var _loc3_:int = width >> 1;
+         var _loc4_:int = _loc1_ >> 1;
+         this.content.x = _loc3_;
+         this.content.y = _loc2_ == PAGE_HEIGHT_STATE_SHORT ? Number(CONTENT_TOP_POSITION_MIN + (App.appHeight - LobbyMetrics.MIN_STAGE_HEIGHT >> 1)) : Number(_loc4_);
+         this.content.y += _topOffset;
+         this.operationInfo.x = _loc3_;
+         this.operationInfo.y = Math.min(HEADER_TOP_POSITION_MIN + (App.appHeight - LobbyMetrics.MIN_STAGE_HEIGHT >> 1),HEADER_TOP_POSITION_MAX) + _topOffset;
          this.bg.width = width;
-         this.bg.height = height + LobbyMetrics.LOBBY_MESSENGER_HEIGHT;
+         this.bg.height = height + (_bottomOffset > 0 ? 0 : LobbyMetrics.LOBBY_MESSENGER_HEIGHT);
       }
       
       private function updateDependentComponents(param1:String) : void

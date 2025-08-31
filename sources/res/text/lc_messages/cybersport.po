@@ -493,9 +493,6 @@ msgstr "Vehicle not ready for battle: rental period ended."
 msgid "window/unit/message/vehicleInNotReady/rotationGroupLocked"
 msgstr "The vehicle is not ready: group %(groupNum)s is locked."
 
-msgid "window/unit/message/vehicleInNotReady/tooHeavy"
-msgstr "Vehicle not ready for battle: modules are too heavy."
-
 msgid "window/unit/message/vehicleInNotReady/wrongMode"
 msgstr "Selected vehicle is not suitable for this battle mode"
 

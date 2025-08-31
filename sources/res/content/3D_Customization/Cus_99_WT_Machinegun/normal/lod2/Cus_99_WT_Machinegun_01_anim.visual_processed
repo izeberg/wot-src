@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>static_joint</identifier>
+				<transform>
+					<row0>0.000000 1.000000 0.000000</row0>
+					<row1>0.000000 0.000000 -1.000000</row1>
+					<row2>-1.000000 0.000000 0.000000</row2>
+					<row3>0.000000 0.053822 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint2</identifier>
+					<transform>
+						<row0>0.000000 -1.000000 0.000000</row0>
+						<row1>1.000000 0.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.119922 -0.072086 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>joint3</identifier>
+						<transform>
+							<row0>0.000000 0.000000 -1.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>1.000000 0.000000 0.000000</row2>
+							<row3>-0.193461 0.106658 -0.000000</row3>
+						</transform>
+						<node>
+							<identifier>joint4</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.000000 0.075249 1.078634</row3>
+							</transform>
+							<node>
+								<identifier>joint4_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.000000 -0.355652 -0.957260</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>joint3_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.000000 -0.280403 0.121375</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>joint2_BlendBone</identifier>
+						<transform>
+							<row0>0.000000 0.000000 -1.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-1.000000 0.000000 0.000000</row2>
+							<row3>-0.072086 -0.173745 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_joint_BlendBone</identifier>
+					<transform>
+						<row0>0.000000 0.000000 -1.000000</row0>
+						<row1>1.000000 0.000000 0.000000</row1>
+						<row2>0.000000 1.000000 0.000000</row2>
+						<row3>-0.053822 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint3_BlendBone</node>
+		<node>joint4_BlendBone</node>
+		<node>static_joint_BlendBone</node>
+		<node>joint2_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_99_WT_Machinegun/Cus_99_WT_Machinegun_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_99_WT_Machinegun/Cus_99_WT_Machinegun_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>10.000000 10.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_99_WT_Machinegun/Cus_99_WT_Machinegun_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_99_WT_Machinegun/Cus_99_WT_Machinegun_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.179544 -0.326204</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.178978 -0.200000 -0.569494</min>
+		<max>0.178978 0.644594 1.219375</max>
+	</boundingBox>
+	<geometrySize>33708</geometrySize>
+</root>

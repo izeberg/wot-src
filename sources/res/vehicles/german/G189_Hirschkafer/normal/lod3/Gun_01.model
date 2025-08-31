@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.516483 -0.422832 -1.707806</min>
+		<max>0.504365 0.785677 8.201229</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G189_Hirschkafer/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/german/G189_Hirschkafer/normal/lod3/Gun_01</nodefullVisual>
+</root>

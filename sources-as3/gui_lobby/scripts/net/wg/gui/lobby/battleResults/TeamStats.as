@@ -256,6 +256,7 @@ package net.wg.gui.lobby.battleResults
             case ArenaBonusTypes.COMP7:
             case ArenaBonusTypes.TRAINING_COMP7:
             case ArenaBonusTypes.TOURNAMENT_COMP7:
+            case ArenaBonusTypes.COMP7_LIGHT:
                this._controller = new Comp7TeamStatsController(this);
                break;
             default:

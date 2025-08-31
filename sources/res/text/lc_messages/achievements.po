@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
 
 msgid "01YearsOfService"
 msgstr "For 1 year of service"
@@ -171,15 +175,6 @@ msgid "BPReserveAchievement_10_condition"
 msgstr "• Awarded for completing the Progression."
 
 msgid "BPReserveAchievement_10_descr"
-msgstr "Awarded for your achievements during game"
-
-msgid "BPReserveAchievement_5"
-msgstr "BP Reserve Achievement 5"
-
-msgid "BPReserveAchievement_5_condition"
-msgstr "• Awarded for completing the Progression."
-
-msgid "BPReserveAchievement_5_descr"
 msgstr "Awarded for your achievements during game"
 
 msgid "BPReserveAchievement_6"
@@ -385,6 +380,15 @@ msgstr "• Awarded for completing the Progression."
 
 msgid "BattlePassCommonPr_17extra_3_descr"
 msgstr "Awarded for your achievements during Battle Pass: Field Festival."
+
+msgid "BattlePassCommonPr_18"
+msgstr "Tier Breaker"
+
+msgid "BattlePassCommonPr_18_condition"
+msgstr "• Awarded for completing all three Chapters."
+
+msgid "BattlePassCommonPr_18_descr"
+msgstr "Awarded for your achievements during Battle Pass Season XVIII."
 
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• The Main Progression consists of 45 Stages."
@@ -1514,7 +1518,7 @@ msgstr ""
 "\n"
 "• Löwe\n"
 "\n"
-"• Leopard&nbsp;prototyp&nbsp;A, Leopard&nbsp;1\n"
+"• Leopard&nbsp;prototyp&nbsp;A, Leopard&nbsp;1, Leopard&nbsp;120&nbsp;Verbessert\n"
 "\n"
 "• The total results for all vehicles are calculated.\n"
 "• Newly received awards are added together.\n"
@@ -2033,6 +2037,78 @@ msgid "comp7_4_yearly_silver_descr"
 msgstr ""
 "Awarded for collecting at least 9 Onslaught Colors in the Year of the "
 "Manticore in Onslaught mode."
+
+msgid "comp7_5_1"
+msgstr "Break the Ice"
+
+msgid "comp7_5_1_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Azure Dragon in"
+" Onslaught mode."
+
+msgid "comp7_5_2"
+msgstr "Crimson Dragon"
+
+msgid "comp7_5_2_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Crimson Dragon "
+"in Onslaught mode."
+
+msgid "comp7_5_3"
+msgstr "Jade Dragon"
+
+msgid "comp7_5_3_descr"
+msgstr ""
+"Awarded for completing a series of missions in Season of the Jade Dragon in "
+"Onslaught mode."
+
+msgid "comp7_5_yearly_bronze"
+msgstr "Bronze Dragon"
+
+msgid "comp7_5_yearly_bronze_descr"
+msgstr ""
+"Awarded for collecting at least 6 Onslaught Colors in the Year of the Dragon"
+" in Onslaught mode."
+
+msgid "comp7_5_yearly_champion"
+msgstr "Year of the Dragon Champion"
+
+msgid "comp7_5_yearly_champion_descr"
+msgstr ""
+"Awarded for collecting at least 15 Onslaught Colors in the Year of the "
+"Dragon in Onslaught mode."
+
+msgid "comp7_5_yearly_gold"
+msgstr "Golden Dragon"
+
+msgid "comp7_5_yearly_gold_descr"
+msgstr ""
+"Awarded for collecting at least 12 Onslaught Colors in the Year of the "
+"Dragon in Onslaught mode."
+
+msgid "comp7_5_yearly_iron"
+msgstr "Iron Dragon"
+
+msgid "comp7_5_yearly_iron_descr"
+msgstr ""
+"Awarded for collecting at least 3 Onslaught Colors in the Year of the Dragon"
+" in Onslaught mode."
+
+msgid "comp7_5_yearly_legend"
+msgstr "Year of the Dragon Legend"
+
+msgid "comp7_5_yearly_legend_descr"
+msgstr ""
+"Awarded for collecting at least 18 Onslaught Colors in the Year of the "
+"Dragon in Onslaught mode."
+
+msgid "comp7_5_yearly_silver"
+msgstr "Silver Dragon"
+
+msgid "comp7_5_yearly_silver_descr"
+msgstr ""
+"Awarded for collecting at least 9 Onslaught Colors in the Year of the Dragon"
+" in Onslaught mode."
 
 msgid "conqueror"
 msgstr "Capturer %(rank)s"
@@ -3013,6 +3089,17 @@ msgstr "Awarded to all players who fulfilled the conditions during the event."
 msgid "ls2025Medal_descr"
 msgstr "Decrypt all Records in Last Stand: Operation Pandora."
 
+msgid "ls2_0Medal"
+msgstr "Wave Breaker"
+
+msgid "ls2_0Medal_condition"
+msgstr ""
+"Awarded to players who fulfilled the conditions in the Last Stand: Proving "
+"Ground event."
+
+msgid "ls2_0Medal_descr"
+msgstr "Decrypt all Records in Last Stand: Proving Ground."
+
 msgid "luckyDevil"
 msgstr "Lucky"
 
@@ -3262,6 +3349,12 @@ msgstr ""
 "current rank is displayed<br/>in the battle results window.<br/>• Can be "
 "obtained in Random Battles only."
 
+msgid "marksOnGun/count"
+msgid_plural "plural/marksOnGun/count"
+msgstr[0] "Mark of Excellence"
+msgstr[1] "Marks of Excellence"
+msgstr[2] "Marks of Excellence"
+
 msgid "marksOnGun/descr/param/label/1"
 msgstr "1 Mark"
 
@@ -3321,11 +3414,11 @@ msgstr "Ranks by average damage:"
 
 msgid "marksOnGun_condition"
 msgstr ""
-"• Player's average damage is updated after each battle. Only the 100 recent battles are counted. \n"
-"• Obtained Marks do not disappear even if the player's average damage decreases.\n"
-"• Marks can be obtained in vehicles of Tiers V–X only.\n"
-"• Display of Marks on your vehicles can be disabled in game settings.\n"
-"• Can be obtained in Random Battles only."
+"• The player's average damage is updated after each battle based on the last 100 battles. \n"
+"• Obtained Marks are permanent and do not disappear even if the player's average damage decreases.\n"
+"• Mark can only be earned in Tier V–XI vehicles.\n"
+"• Display of Marks on your vehicles can be disabled in the game settings.\n"
+"• Marks can only be obtained in Random Battles."
 
 msgid "may21"
 msgstr "Rock Star"
@@ -3709,7 +3802,7 @@ msgid "medalEkins"
 msgstr "Ekins's Medal %(rank)s"
 
 msgid "medalEkins_descr"
-msgstr "For destroying Tier VIII–X enemy vehicles."
+msgstr "For destroying Tier VIII–XI enemy vehicles."
 
 msgid "medalEkins_heroInfo"
 msgstr ""
@@ -4116,6 +4209,20 @@ msgstr ""
 "Johannes Bölter was one of the most successful German tank aces of WWII. He "
 "participated in operations in the invasions of Poland, France, Greece, and "
 "the Soviet Union, as well as in the defense of France."
+
+msgid "meritPM3"
+msgstr "Intrusion"
+
+msgid "meritPM3_condition"
+msgstr "?empty?"
+
+msgid "meritPM3_descr"
+msgstr "Complete a mission in any operation in the Sector 3 campaign."
+
+msgid "meritPM3_notification"
+msgstr ""
+"For joining the ranks of Sector 3, you have been awarded the Intrusion "
+"medal."
 
 msgid "moonSphere"
 msgstr "Trickshot"
@@ -4624,6 +4731,15 @@ msgstr ""
 "Complete with honors 15 personal missions for Union. Reward: Exemplary "
 "Performance: Union medal, Class III."
 
+msgid "readyForBattleAssault"
+msgstr "Exemplary Performance: Vanguard"
+
+msgid "readyForBattleAssault_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleAssault_descr"
+msgstr "For completing all Vanguard missions in the Sector 3 campaign."
+
 msgid "readyForBattleHT"
 msgstr "Exemplary Performance: Heavy Tanks"
 
@@ -4748,6 +4864,24 @@ msgstr ""
 "Complete with honors 15 personal missions for SPGs. Reward: Exemplary "
 "Performance: SPG medal, Class IV."
 
+msgid "readyForBattleSniper"
+msgstr "Exemplary Performance: Ambush"
+
+msgid "readyForBattleSniper_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleSniper_descr"
+msgstr "For completing all Ambush missions in the Sector 3 campaign."
+
+msgid "readyForBattleSupport"
+msgstr "Exemplary Performance: Assistance"
+
+msgid "readyForBattleSupport_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleSupport_descr"
+msgstr "For completing all Assistance missions in the Sector 3 campaign."
+
 msgid "reliableComrade"
 msgstr "Battle Buddy"
 
@@ -4762,6 +4896,17 @@ msgstr ""
 
 msgid "reliableComrade_descr"
 msgstr "Do not cause any damage to allies for 50 battles."
+
+msgid "sccHero"
+msgstr "A New Era Dawns"
+
+msgid "sccHero_condition"
+msgstr ""
+"Awarded to players for completing all missions during the Operation Boiling "
+"Point event."
+
+msgid "sccHero_descr"
+msgstr "Complete the Boiling Point story."
 
 msgid "scout"
 msgstr "Scout"
@@ -4872,7 +5017,7 @@ msgstr "The Lion of Sinai"
 
 msgid "sinai_condition"
 msgstr ""
-"• IS, IS-M, IS-2, IS-2M, IS-2&nbsp;shielded, IS-2-II, IS-3, IS-3-II, IS-3A, IS-4, IS-5, IS-6, IS-6&nbsp;FL, IS-6&nbsp;B, IS-7, Kirovets-1, K-2, T-10\n"
+"• IS, IS-M, IS-2, IS-2M, IS-2&nbsp;shielded, IS-2-II, IS-3, IS-3-II, IS-3A, IS-4, IS-5, IS-6, IS-6&nbsp;FL, IS-6&nbsp;B, IS-7, KR-1, Kirovets-1, K-2, T-10\n"
 "\n"
 "• ISU-122S, ISU-122-2, ISU-130, ISU-152, ISU-152K\n"
 "\n"
@@ -5376,6 +5521,31 @@ msgstr "A unique medal included with Prime Gaming."
 msgid "twitchPrime_descr"
 msgstr "Issued to players during special package drops."
 
+msgid "twoPointZeroCollectorMedal"
+msgstr "Outstanding Collector"
+
+msgid "twoPointZeroCollectorMedal_condition"
+msgstr ""
+"Awarded to players who researched and purchased every Tier VI–X vehicle in "
+"the Tech Tree, then claimed their reward to celebrate the release of WoT "
+"2.0."
+
+msgid "twoPointZeroCollectorMedal_descr"
+msgstr ""
+"You amassed an impressive collection of high-tier vehicles by the launch of "
+"WoT 2.0."
+
+msgid "twoPointZeroMedal"
+msgstr "I Was There for 2.0"
+
+msgid "twoPointZeroMedal_condition"
+msgstr ""
+"Awarded to players who claimed their reward to celebrate the release of WoT "
+"2.0."
+
+msgid "twoPointZeroMedal_descr"
+msgstr "Thank you for being with us for the 2.0 launch!"
+
 msgid "unreachable"
 msgstr "Hail to the King, Baby!"
 
@@ -5468,6 +5638,9 @@ msgstr ""
 
 msgid "willToWinSpirit_descr"
 msgstr "Fight alone against at least 3 enemy vehicles and win the battle."
+
+msgid "winRate"
+msgstr "Victory Rate"
 
 msgid "winnerLaurels"
 msgstr "V for Victory %(rank)s"
@@ -5596,6 +5769,18 @@ msgstr "Awarded during Waffenträger: 2024."
 msgid "wt2024HunterWins_descr"
 msgstr ""
 "Defeat the Blitzträger auf E 110/220 when fighting in the Harrier Squad."
+
+msgid "wt2025progression"
+msgstr "Loopbreaker"
+
+msgid "wt2025progression_condition"
+msgstr ""
+"Awarded for completing the Progression in Waffenträger: Paradox. This honor "
+"is given to those who made it through the impossible—who faced von Krieger’s"
+" spatial-temporal trap and emerged not just alive, but victorious."
+
+msgid "wt2025progression_descr"
+msgstr "Complete the Waffenträger mode Progression."
 
 msgid "wtBossWins"
 msgstr "Master of Lightning"

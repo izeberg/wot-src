@@ -3,6 +3,7 @@ package net.wg.gui.lobby.personalMissions.components
    import flash.display.Sprite;
    import flash.events.Event;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.constants.LobbyMetrics;
    import net.wg.gui.components.advanced.interfaces.IBackButton;
@@ -17,10 +18,11 @@ package net.wg.gui.lobby.personalMissions.components
    import net.wg.gui.lobby.personalMissions.events.PersonalMissionsItemSlotEvent;
    import net.wg.infrastructure.base.meta.IPersonalMissionsAwardsViewMeta;
    import net.wg.infrastructure.base.meta.impl.PersonalMissionsAwardsViewMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    
-   public class PersonalMissionsAwardsView extends PersonalMissionsAwardsViewMeta implements IPersonalMissionsAwardsViewMeta
+   public class PersonalMissionsAwardsView extends PersonalMissionsAwardsViewMeta implements IPersonalMissionsAwardsViewMeta, IInnerView
    {
       
       private static const BACK_BTN_TOP_MARGIN:int = 58;
@@ -76,6 +78,10 @@ package net.wg.gui.lobby.personalMissions.components
       
       private var _smokeGenerator:SmokeGenerator;
       
+      private var _topOffset:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
+      
       public function PersonalMissionsAwardsView()
       {
          this._smokeGenerator = new SmokeGenerator();
@@ -84,7 +90,7 @@ package net.wg.gui.lobby.personalMissions.components
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         setViewSize(param1,param2);
+         assertUpdateStageMethod();
       }
       
       override protected function configUI() : void
@@ -93,7 +99,6 @@ package net.wg.gui.lobby.personalMissions.components
          App.gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.onEscapeKeyHandler,true);
          this.vehicleAward.addEventListener(AwardEvent.VEHICLE_PREVIEW,this.onVehicleAwardVehiclePreviewHandler);
          this.backBtn.addEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
-         this.backBtn.y = BACK_BTN_TOP_MARGIN;
          this.backBtn.x = BACK_BTN_RIGHT_MARGIN;
          addEventListener(PersonalMissionsItemSlotEvent.UNLOCK,this.onUnlockHandler);
          addEventListener(PersonalMissionsItemSlotEvent.CLICK,this.onClickHandler);
@@ -148,13 +153,6 @@ package net.wg.gui.lobby.personalMissions.components
       
       override protected function draw() : void
       {
-         var _loc1_:int = 0;
-         var _loc2_:int = 0;
-         var _loc3_:Boolean = false;
-         var _loc4_:int = 0;
-         var _loc5_:int = 0;
-         var _loc6_:int = 0;
-         var _loc7_:int = 0;
          super.draw();
          if(this._model != null && isInvalid(InvalidationType.DATA))
          {
@@ -163,31 +161,51 @@ package net.wg.gui.lobby.personalMissions.components
          }
          if(isInvalid(InvalidationType.SIZE))
          {
-            _loc1_ = _width >> 1;
-            _loc2_ = _height + LobbyMetrics.LOBBY_MESSENGER_HEIGHT;
-            _loc3_ = App.appHeight < COMPACT_HEIGHT;
-            this.vehicleAward.switchCompact(_loc3_);
-            this.screenBg.setSize(_width,_loc2_);
-            this.awardHeader.isCompact(_loc3_);
-            this.awardHeader.x = _loc1_;
-            this.awardHeader.y = !!_loc3_ ? Number(HEADER_Y_POS_COMPACT) : Number(HEADER_Y_POS);
-            _loc4_ = _loc2_ + (!!_loc3_ ? RIBBON_BOTTOM_PADDING_COMPACT : RIBBON_BOTTOM_PADDING);
-            _loc5_ = this.awardHeader.y + this.awardHeader.height;
-            _loc6_ = _loc4_ - _loc5_;
-            _loc7_ = _loc5_ + (_loc6_ >> 1);
-            this.vehicleAward.y = _loc7_ + (!!_loc3_ ? VEHICLE_Y_PADDING_COMPACT : VEHICLE_Y_PADDING);
-            this.vehicleAward.x = _loc1_;
-            this.bg.x = _loc1_ - (BG_WIDTH >> 1);
-            this.bg.y = _loc7_ + (!!_loc3_ ? BG_Y_PADDING_COMPACT : BG_Y_PADDING) - (BG_HEIGHT >> 1);
-            this.awardRibbon.x = _loc1_;
-            this.awardRibbon.y = _loc4_;
-            this.mainAwards.x = _loc1_ - this.mainAwards.getAwardsWidth() - MAIN_AWARDS_X_SHIFT;
-            this.mainAwards.y = _loc4_;
-            this.additionalAwards.x = _loc1_ + ADDITIONAL_AWARDS_X_SHIFT;
-            this.additionalAwards.y = _loc4_;
-            this._smokeGenerator.width = width;
-            this._smokeGenerator.y = this.bg.y + SMOKE_OFFSET_Y;
+            this.updateSize();
          }
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this._bottomOffset = param3.height;
+         setViewSize(param1,param2);
+      }
+      
+      private function updateSize() : void
+      {
+         var _loc3_:Boolean = false;
+         this.backBtn.y = BACK_BTN_TOP_MARGIN + this._topOffset;
+         var _loc1_:int = _width >> 1;
+         var _loc2_:int = _height + (this._bottomOffset > 0 ? 0 : LobbyMetrics.LOBBY_MESSENGER_HEIGHT);
+         _loc3_ = App.appHeight < COMPACT_HEIGHT;
+         this.vehicleAward.switchCompact(_loc3_);
+         this.screenBg.setSize(_width,_loc2_);
+         this.awardHeader.isCompact(_loc3_);
+         this.awardHeader.x = _loc1_;
+         this.awardHeader.y = !!_loc3_ ? Number(HEADER_Y_POS_COMPACT) : Number(HEADER_Y_POS);
+         this.awardHeader.y += this._topOffset;
+         var _loc4_:int = _loc2_ + (!!_loc3_ ? RIBBON_BOTTOM_PADDING_COMPACT : RIBBON_BOTTOM_PADDING);
+         var _loc5_:int = this.awardHeader.y + this.awardHeader.height;
+         var _loc6_:int = _loc4_ - _loc5_;
+         var _loc7_:int = _loc5_ + (_loc6_ >> 1);
+         this.vehicleAward.y = _loc7_ + (!!_loc3_ ? VEHICLE_Y_PADDING_COMPACT : VEHICLE_Y_PADDING);
+         this.vehicleAward.x = _loc1_;
+         this.bg.x = _loc1_ - (BG_WIDTH >> 1);
+         this.bg.y = _loc7_ + (!!_loc3_ ? BG_Y_PADDING_COMPACT : BG_Y_PADDING) - (BG_HEIGHT >> 1);
+         this.awardRibbon.x = _loc1_;
+         this.awardRibbon.y = _loc4_;
+         this.mainAwards.x = _loc1_ - this.mainAwards.getAwardsWidth() - MAIN_AWARDS_X_SHIFT;
+         this.mainAwards.y = _loc4_;
+         this.additionalAwards.x = _loc1_ + ADDITIONAL_AWARDS_X_SHIFT;
+         this.additionalAwards.y = _loc4_;
+         this._smokeGenerator.width = width;
+         this._smokeGenerator.y = this.bg.y + SMOKE_OFFSET_Y;
       }
       
       override public function get isModal() : Boolean

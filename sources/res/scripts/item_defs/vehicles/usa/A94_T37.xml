@@ -131,7 +131,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>10847</weight>
-		<maxHealth>544</maxHealth>
+		<maxHealth>640</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2000,14 +2000,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_T37>
-			<userString>#usa_vehicles:Chassis_T37</userString>
+		<Chassis_A94_T37>
+			<userString>#usa_vehicles:Chassis_A94_T37</userString>
 			<tags/>
 			<level>5</level>
 			<price>9800</price>
 			<unlocks>
 				<chassis>
-					Chassis_T37_2
+					Chassis_A94_T37_2
 					<cost>5300</cost>
 				</chassis>
 			</unlocks>
@@ -2016,14 +2016,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>22000</maxLoad>
 			<terrainResistance>
-				0.9 1.1 1.9
+				0.8 0.9 1.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>22000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>53</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -3629,9 +3628,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T37>
-		<Chassis_T37_2>
-			<userString>#usa_vehicles:Chassis_T37_2</userString>
+		</Chassis_A94_T37>
+		<Chassis_A94_T37_2>
+			<userString>#usa_vehicles:Chassis_A94_T37_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>15200</price>
@@ -3640,14 +3639,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>26000</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>28000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>48</rotationSpeed>
+			<rotationSpeed>57</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -5253,11 +5251,11 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T37_2>
+		</Chassis_A94_T37_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_T37>
-			<userString>#usa_vehicles:Turret_1_T37</userString>
+		<Turret_1_A94_T37>
+			<userString>#usa_vehicles:Turret_1_A94_T37</userString>
 			<tags/>
 			<level>5</level>
 			<price>9000</price>
@@ -5324,7 +5322,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3200</weight>
-			<maxHealth>106</maxHealth>
+			<maxHealth>120</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -5334,7 +5332,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>360</circularVisionRadius>
+			<circularVisionRadius>370</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>80</maxHealth>
 				<maxRegenHealth>40</maxRegenHealth>
@@ -5349,7 +5347,7 @@
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<turret>
-							Turret_2_T37
+							Turret_2_A94_T37
 							<cost>5450</cost>
 						</turret>
 					</unlocks>
@@ -5373,7 +5371,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 9 0.402778 9 0.416667 8 0.444444 8 0.458333 9 0.541667 9 0.555556 8 0.583333 8 0.597222 9 1 9
+							0.00000 9.00 1.00000 9.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5383,15 +5381,15 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.42
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.4
+						3.9
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -6416,9 +6414,9 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_T37>
-		<Turret_2_T37>
-			<userString>#usa_vehicles:Turret_2_T37</userString>
+		</Turret_1_A94_T37>
+		<Turret_2_A94_T37>
+			<userString>#usa_vehicles:Turret_2_A94_T37</userString>
 			<tags/>
 			<level>6</level>
 			<price>16200</price>
@@ -6491,7 +6489,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>4657</weight>
-			<maxHealth>136</maxHealth>
+			<maxHealth>160</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -6501,7 +6499,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>370</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>80</maxHealth>
 				<maxRegenHealth>40</maxRegenHealth>
@@ -6545,15 +6543,15 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.2
+						3.8
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -6711,11 +6709,11 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.45
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.7
+						4.1
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -7610,71 +7608,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_T37>
+		</Turret_2_A94_T37>
 	</turrets0>
 	<engines>
-		<Continental_AOS-895-1>
+		<Continental_AOS_895_1>
 			shared
 			<unlocks>
 				<engine>
-					Continental_AOS-895-3A
+					Continental_AOS_895_3A_T37
 					<cost>9500</cost>
 				</engine>
 			</unlocks>
-		</Continental_AOS-895-1>
-		<Continental_AOS-895-3A>shared</Continental_AOS-895-3A>
+		</Continental_AOS_895_1>
+		<Continental_AOS_895_3A_T37>shared</Continental_AOS_895_3A_T37>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-3>
-			shared
-			<unlocks>
-				<radio>
-					SCR_528
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-3>
 		<SCR_528>shared</SCR_528>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Continental_AOS-895-1>
-					<smplEnginePower>470</smplEnginePower>
+				<Continental_AOS_895_1>
+					<smplEnginePower>560</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
-				</Continental_AOS-895-1>
-				<Continental_AOS-895-3A>
-					<smplEnginePower>600</smplEnginePower>
+				</Continental_AOS_895_1>
+				<Continental_AOS_895_3A_T37>
+					<smplEnginePower>610</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
-				</Continental_AOS-895-3A>
+				</Continental_AOS_895_3A_T37>
 			</engines>
 			<chassis>
-				<Chassis_T37>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.15295
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.07245
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_T37>
-				<Chassis_T37_2>
+				<Chassis_A94_T37>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7695,7 +7662,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_T37_2>
+				</Chassis_A94_T37>
+				<Chassis_A94_T37_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.07245
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0644
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A94_T37_2>
 			</chassis>
 		</detailed>
 	</physics>

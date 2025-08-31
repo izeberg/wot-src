@@ -70,7 +70,7 @@ msgstr ""
 "VOUCHERS"
 
 msgid "battleBonusX5"
-msgstr "Mission for x5 to experience"
+msgstr "Mission for ×5 to experience"
 
 msgid "battlePassAwardsView/additionalRewards/bpBuyLevelAwardsText"
 msgstr ""
@@ -421,44 +421,32 @@ msgstr "Battle Pass"
 msgid "chapter/fullName/10021"
 msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/171"
-msgstr "Driven by Duty"
+msgid "chapter/fullName/1114"
+msgstr "Carmen de Bisonte"
 
-msgid "chapter/fullName/172"
-msgstr "Salvo Fire"
+msgid "chapter/fullName/181"
+msgstr "On the Hardline"
 
-msgid "chapter/fullName/173"
-msgstr "Perfectionist"
+msgid "chapter/fullName/182"
+msgstr "Project Überpanzer"
 
-msgid "chapter/fullName/174"
-msgstr "Duke Nukem"
-
-msgid "chapter/fullName/175"
-msgstr "Tomb Raider"
-
-msgid "chapter/fullName/176"
-msgstr "Field Festival"
+msgid "chapter/fullName/183"
+msgstr "Mechanized Momentum"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/171"
-msgstr "DRIVEN BY DUTY"
+msgid "chapter/fullNameUppercased/1114"
+msgstr "CARMEN DE BISONTE"
 
-msgid "chapter/fullNameUppercased/172"
-msgstr "SALVO FIRE"
+msgid "chapter/fullNameUppercased/181"
+msgstr "ON THE HARDLINE"
 
-msgid "chapter/fullNameUppercased/173"
-msgstr "PERFECTIONIST"
+msgid "chapter/fullNameUppercased/182"
+msgstr "PROJECT ÜBERPANZER"
 
-msgid "chapter/fullNameUppercased/174"
-msgstr "DUKE NUKEM"
-
-msgid "chapter/fullNameUppercased/175"
-msgstr "TOMB RAIDER"
-
-msgid "chapter/fullNameUppercased/176"
-msgstr "FIELD FESTIVAL"
+msgid "chapter/fullNameUppercased/183"
+msgstr "MECHANIZED MOMENTUM"
 
 msgid "chapter/title"
 msgstr "CHAPTER %(chapter)s"
@@ -590,6 +578,9 @@ msgstr "x%(multiplier)s"
 msgid "commonProgression/body/ended"
 msgstr "Battle Pass Season has finished"
 
+msgid "crewBonusX3"
+msgstr "Mission for ×3 Crew XP"
+
 msgid "equipCoinBonus"
 msgstr "Components: %(count)s"
 
@@ -698,6 +689,9 @@ msgstr "Steel Hunter"
 msgid "howToEarnPoints/battleTypeTitle/43"
 msgstr "Onslaught"
 
+msgid "howToEarnPoints/battleTypeTitle/49"
+msgstr "Onslaught Light"
+
 msgid "howToEarnPoints/bonus"
 msgstr "+%(bonus)s"
 
@@ -714,6 +708,12 @@ msgid "howToEarnPoints/card/comp7/text"
 msgstr "Complete missions in Onslaught mode and earn additional Points."
 
 msgid "howToEarnPoints/card/comp7/title"
+msgstr "Daily Missions"
+
+msgid "howToEarnPoints/card/comp7Light/text"
+msgstr "Complete missions in Onslaught Light mode and earn additional Points."
+
+msgid "howToEarnPoints/card/comp7Light/title"
 msgstr "Daily Missions"
 
 msgid "howToEarnPoints/card/daily/linkText"
@@ -766,6 +766,9 @@ msgstr "Defeat"
 msgid "howToEarnPoints/lose/43"
 msgstr "Defeat/Draw"
 
+msgid "howToEarnPoints/lose/49"
+msgstr "Defeat/Draw"
+
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "Positions %(startLevel)d–%(endLevel)d"
 
@@ -782,6 +785,9 @@ msgid "howToEarnPoints/rating/29"
 msgstr "Top %(level)d by XP"
 
 msgid "howToEarnPoints/rating/43"
+msgstr "Top %(level)d by Prestige Points"
+
+msgid "howToEarnPoints/rating/49"
 msgstr "Top %(level)d by Prestige Points"
 
 msgid "howToEarnPoints/singleLevel/29"
@@ -808,6 +814,9 @@ msgstr "Fight in special vehicles for this mode"
 msgid "howToEarnPoints/text/43"
 msgstr "Fight in Tier %(level)s vehicles"
 
+msgid "howToEarnPoints/text/49"
+msgstr "Fight in Tier %(level)s vehicles"
+
 msgid "howToEarnPoints/title"
 msgstr "HOW TO EARN POINTS"
 
@@ -823,6 +832,9 @@ msgstr "Victory"
 msgid "howToEarnPoints/win/43"
 msgstr "Victory"
 
+msgid "howToEarnPoints/win/49"
+msgstr "Victory"
+
 msgid "intro/aboutButton"
 msgstr "ABOUT BATTLE PASS"
 
@@ -831,18 +843,48 @@ msgstr "Affirmative!"
 
 msgid "intro/seasonDescription/text"
 msgstr ""
-"In Battle Pass Season XVII, you will have the chance to receive exclusive 3D"
-" styles for the Season's Core Vehicles: the&nbsp;M48A5&nbsp;Patton, "
-"WZ-111&nbsp;model&nbsp;5A, and FV230&nbsp;Canopener."
+"In Battle Pass Season XVIII, you will have the chance to receive exclusive "
+"3D styles for the Season's Core Vehicles: Maus, IS-7, and "
+"AMX&nbsp;50&nbsp;B."
 
 msgid "intro/seasonDescription/title"
 msgstr "NEW THEMED 3D STYLES"
 
 msgid "intro/title"
-msgstr "SEASON XVII: COMBAT READY"
+msgstr "SEASON XVIII: PATH TO PERFECTION"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
+
+msgid "navigation/buyLevels"
+msgstr "STAGE PURCHASE"
+
+msgid "navigation/buyLevelsRewards"
+msgstr "STAGE REWARDS"
+
+msgid "navigation/buyPass"
+msgstr "IMPROVED PASS"
+
+msgid "navigation/buyPassConfirm"
+msgstr "IMPROVED PASS PURCHASE"
+
+msgid "navigation/buyPassRewards"
+msgstr "IMPROVED PASS REWARDS"
+
+msgid "navigation/chapterChoice"
+msgstr "BATTLE PASS SEASON %(seasonNum)s"
+
+msgid "navigation/holidayFinal"
+msgstr "?empty?"
+
+msgid "navigation/intro"
+msgstr "BATTLE PASS SEASON %(seasonNum)s"
+
+msgid "navigation/postProgression"
+msgstr "BATTLE PASS ELITE CIRCUIT"
+
+msgid "navigation/progression"
+msgstr "BATTLE PASS CHAPTER"
 
 msgid "points/top"
 msgstr "%(vehicle): %(bonus) for %(top) by XP."
@@ -858,23 +900,11 @@ msgstr ""
 "Available after all Chapters are completed. Chapters completed: "
 "%(completedChapters)/%(chaptersAmount)"
 
-msgid "postProgressionView/footer/extraChapter/description/174"
-msgstr "Crew members, a vehicle with 3D style, and more await. Groovy!"
+msgid "postProgressionView/footer/extraChapter/description/text"
+msgstr "Dive into it for exclusive rewards and unique customization elements."
 
-msgid "postProgressionView/footer/extraChapter/description/175"
-msgstr "Rare treasures await—crew members, a vehicle with 3D style, and more."
-
-msgid "postProgressionView/footer/extraChapter/description/176"
-msgstr "Earn a Tier VIII vehicle and exclusive customization elements"
-
-msgid "postProgressionView/footer/extraChapter/title/174"
-msgstr "Duke Nukem is here!"
-
-msgid "postProgressionView/footer/extraChapter/title/175"
-msgstr "Tomb Raider is here!"
-
-msgid "postProgressionView/footer/extraChapter/title/176"
-msgstr "The Field Festival is here!"
+msgid "postProgressionView/footer/extraChapter/title/text"
+msgstr "The Special Chapter is here!"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "Purchase the Improved Pass and get more rewards!"
@@ -911,9 +941,6 @@ msgstr "Cyclical Progression"
 
 msgid "postProgressionView/toolbar/aboutBattlePass"
 msgstr "ABOUT BATTLE PASS"
-
-msgid "postProgressionView/toolbar/allChapters"
-msgstr "ALL CHAPTERS"
 
 msgid "postProgressionView/toolbar/howToEarnPoints"
 msgstr "HOW TO EARN POINTS"
@@ -971,9 +998,6 @@ msgstr ""
 
 msgid "progression/battlePassNextChapterEpisodesDescr"
 msgstr "Complete the previous Chapter to purchase Stages in this Chapter."
-
-msgid "progression/btnAllChapters"
-msgstr "ALL CHAPTERS"
 
 msgid "progression/btnExtras"
 msgstr ""
@@ -1072,9 +1096,6 @@ msgid "progression/extraChapterWidget/tank/description/14"
 msgstr ""
 "To commemorate 80 years\n"
 "since D-Day"
-
-msgid "progression/extraChapterWidget/tank/description/17"
-msgstr "In honor of World of Tanks' 15th Anniversary"
 
 msgid "progression/extraChapterWidget/tankName"
 msgstr "%(vehicleName)s"
@@ -1248,14 +1269,14 @@ msgstr "BATTLE PASS: %(chapter)s CHAPTER, STAGE %(level)s"
 msgid "season/fullName/1002"
 msgstr "Carmen de Bisonte"
 
-msgid "season/fullName/17"
-msgstr "Combat Ready"
+msgid "season/fullName/18"
+msgstr "Path to Perfection"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "CARMEN DE BISONTE"
 
-msgid "season/fullNameUppercased/17"
-msgstr "COMBAT READY"
+msgid "season/fullNameUppercased/18"
+msgstr "PATH TO PERFECTION"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "Directives to Select From"
@@ -1313,6 +1334,9 @@ msgstr "Affirmative!"
 
 msgid "tankmenVoiceover/close"
 msgstr "CLOSE"
+
+msgid "tankmenVoiceover/description"
+msgstr "All crew members have enough Crew XP to train three perks to 100%."
 
 msgid "tankmenVoiceover/free"
 msgstr ""
@@ -1588,6 +1612,11 @@ msgstr ""
 "Rules for earning Points in Tier X vehicles in "
 "%(bond_Open)sOnslaught%(bond_Close)s."
 
+msgid "tooltips/inProgress/playGame/comp7_light"
+msgstr ""
+"Rules for earning Points in Tier VIII vehicles in %(bond_Open)sOnslaught "
+"Light%(bond_Close)s."
+
 msgid "tooltips/inProgress/playGame/mapbox"
 msgstr ""
 "The rules of adding Battle Pass Points in Recon Mission for Tier VIII–X "
@@ -1595,8 +1624,8 @@ msgstr ""
 
 msgid "tooltips/inProgress/playGame/randoms"
 msgstr ""
-"Rules for earning Points in %(bond_Open)sRandom Battles%(bond_Close)s "
-"(except for Grand Battles) in Tier IV–X vehicles."
+"Rules for earning Points in %(bond_Open)sRandom Battles%(bond_Close)s in "
+"Tier IV–XI vehicles."
 
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "Rules for earning Points in Tier X vehicles in Ranked Battles."
@@ -1638,9 +1667,9 @@ msgstr "The Core Vehicles of the Season earn more Points:"
 msgid "tooltips/points/subtitle"
 msgstr ""
 "Battle Pass Points allow you to advance through the Progression. You can "
-"earn Points by fighting in Tier IV–X vehicles in Random Battles (except for "
-"Grand Battles) and other game modes, as well as by completing special "
-"missions and reaching a vehicle's Point Limit."
+"earn Points by fighting in Tier IV–XI vehicles in Random Battles and other "
+"game modes, as well as by completing special missions and reaching a "
+"vehicle's Point Limit."
 
 msgid "tooltips/points/title"
 msgstr "Battle Pass Points"
@@ -1686,7 +1715,7 @@ msgid "tooltips/prestigePoints/loseWithoutDraw"
 msgstr "Defeat"
 
 msgid "tooltips/prestigePoints/topPlace"
-msgstr "Top {place} by Prestige Points earned"
+msgstr "Top {place} by Prestige Points"
 
 msgid "tooltips/prestigePoints/win"
 msgstr "Victory"
@@ -1779,13 +1808,18 @@ msgstr ""
 "Fight in Onslaught mode, earn Points for effective gameplay, complete Battle"
 " Pass Progression Stages, and receive rewards."
 
+msgid "tooltips/vehiclePoints/comp7_light"
+msgstr ""
+"Earn Points for effective actions in Onslaught Light battles to advance "
+"through Battle Pass Progression Stages and receive rewards."
+
 msgid "tooltips/vehiclePoints/continuePlaying"
 msgstr "Fight in other vehicles for further progression in Stages."
 
 msgid "tooltips/vehiclePoints/descr"
 msgstr ""
-"Fight in Random Battles (except for Grand Battle), earn Points for effective"
-" gameplay, complete Battle Pass Progression Stages, and receive rewards."
+"Fight in Random Battles, earn Points for effective gameplay, complete Battle"
+" Pass Progression Stages, and receive rewards."
 
 msgid "tooltips/vehiclePoints/mapbox"
 msgstr ""

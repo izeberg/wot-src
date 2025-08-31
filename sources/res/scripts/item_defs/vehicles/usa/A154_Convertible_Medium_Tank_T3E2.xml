@@ -1784,7 +1784,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>3800</weight>
-			<maxLoad>13000</maxLoad>
 			<terrainResistance>
 				0.8 1 2.3
 				<!--BW_String-->
@@ -3271,6 +3270,7 @@
 							4.5
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_3>
 						<armor_4>
 							0

@@ -29,10 +29,6 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_setControlsVisible(value)
 
-    def as_setComp7ModifiersVisibleS(self, value):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setComp7ModifiersVisible(value)
-
     def as_setEventTournamentBannerVisibleS(self, alias, isVisible):
         if self._isDAAPIInited():
             return self.flashObject.as_setEventTournamentBannerVisible(alias, isVisible)
@@ -104,7 +100,3 @@ class HangarMeta(View):
     def as_setComp7SpaceLoadedS(self, isLoaded):
         if self._isDAAPIInited():
             return self.flashObject.as_setComp7SpaceLoaded(isLoaded)
-
-    def as_setEventEntryPointVisibleS(self, value):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setEventEntryPointVisible(value)

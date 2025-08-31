@@ -25,8 +25,6 @@ package net.wg.data.constants.generated
       
       public static const CAROUSEL:String = "carousel";
       
-      public static const COMP7_MODIFIERS:String = "comp7Modifiers";
-      
       public static const COMP7_TOURNAMENT_BANNER:String = "comp7TournamentBanner";
       
       public static const COMP7_GRAND_TOURNAMENT_BANNER:String = "comp7GrandTournamentBanner";
@@ -42,10 +40,6 @@ package net.wg.data.constants.generated
       public static const HEADER_WIDGET:String = "headerWidget";
       
       public static const HEADER_QUEST_FLAGS:String = "headerQuestFlags";
-      
-      public static const STRENGTHS_WEAKNESSES:String = "StrengthsWeaknesses";
-      
-      public static const EVENT_ENTRANCE_POINT:String = "eventEntrancePoint";
        
       
       public function HANGAR_CONSTS()

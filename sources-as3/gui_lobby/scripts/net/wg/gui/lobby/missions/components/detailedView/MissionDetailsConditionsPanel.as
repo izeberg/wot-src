@@ -3,7 +3,7 @@ package net.wg.gui.lobby.missions.components.detailedView
    import flash.display.DisplayObject;
    import net.wg.data.constants.generated.MISSIONS_ALIASES;
    import net.wg.gui.interfaces.IUpdatableComponent;
-   import net.wg.gui.lobby.missions.data.MissionConditionsContainerVO;
+   import net.wg.gui.lobby.userMissions.data.MissionConditionsContainerVO;
    import net.wg.infrastructure.base.UIComponentEx;
    
    public class MissionDetailsConditionsPanel extends UIComponentEx

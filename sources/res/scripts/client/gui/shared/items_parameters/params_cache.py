@@ -387,6 +387,9 @@ class _ParamsCache(object):
     def hasRocketAcceleration(self, itemCD):
         return self.getPrecachedParameters(itemCD).hasRocketAcceleration
 
+    def hasRechargeableNitro(self, itemCD):
+        return self.getPrecachedParameters(itemCD).hasRechargeableNitro
+
     def getSimplifiedCoefficients(self):
         return self.__simplifiedParamsCoefficients
 

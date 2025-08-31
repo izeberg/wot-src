@@ -1,6 +1,5 @@
 from enum import IntEnum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from story_mode.gui.impl.gen.view_models.views.lobby.reward_model import RewardModel
 
 class TaskStateEnum(IntEnum):

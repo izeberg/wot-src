@@ -115,7 +115,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>8800</weight>
-		<maxHealth>512</maxHealth>
+		<maxHealth>520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2277,9 +2277,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>17950</maxLoad>
 			<terrainResistance>
-				1.2 1.6 2.5
+				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>39500</brakeForce>
@@ -3871,7 +3870,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>21800</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.3
 				<!--BW_String-->
@@ -5508,7 +5506,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2300</weight>
-			<maxHealth>98</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>16</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -6482,7 +6480,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_7</primaryArmor>
 			<weight>4500</weight>
-			<maxHealth>128</maxHealth>
+			<maxHealth>130</maxHealth>
 			<rotationSpeed>16</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -7471,19 +7469,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1288
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

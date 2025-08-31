@@ -1,5 +1,7 @@
 package net.wg.gui.lobby.missions.data
 {
+   import net.wg.gui.lobby.userMissions.data.TokenRendererVO;
+   
    public class MissionDetailsTokenRendererVO extends TokenRendererVO
    {
       

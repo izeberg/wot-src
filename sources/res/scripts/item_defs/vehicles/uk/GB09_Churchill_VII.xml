@@ -16,7 +16,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.065
+			0.066
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -150,7 +150,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22050</weight>
-		<maxHealth>904</maxHealth>
+		<maxHealth>960</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2420,14 +2420,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8150</weight>
-			<maxLoad>40150</maxLoad>
 			<terrainResistance>
-				1.2 1.4 2.5
+				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>18</rotationSpeed>
+			<rotationSpeed>22</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -3948,14 +3947,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8150</weight>
-			<maxLoad>43000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>39000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>24</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -5879,6 +5877,12 @@
 			<tags/>
 			<level>5</level>
 			<price>8350</price>
+			<unlocks>
+				<turret>
+					Turret_2_GB09_Churchill_VII
+					<cost>3900</cost>
+				</turret>
+			</unlocks>
 			<armor>
 				<armor_1>
 					88.9
@@ -5936,7 +5940,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>176</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -5956,194 +5960,38 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<QF_6_pounder_Mk_V>
+				<_75mm_Gun_Mk_V_A22F>
 					shared
-					<maxAmmo>145</maxAmmo>
+					<maxAmmo>100</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 7 0.325226 7 0.388888 4 0.611112 4 0.674774 7 1 7
+							0 9 0.02222 9 0.04167 4 0.09167 4 0.13333 9 0.32523 9 0.38889 3 0.61111 3 0.67477 9 0.86667 9 0.90833 4 0.95833 4 0.97778 9 1 9
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<unlocks>
-						<turret>
-							Turret_2_GB09_Churchill_VII
-							<cost>3900</cost>
-						</turret>
-						<gun>
-							_3.7inch_Howitzer
-							<cost>2300</cost>
-						</gun>
-						<gun>
-							_75mm_Gun_Mk_V
-							<cost>4000</cost>
-						</gun>
-					</unlocks>
 					<armor>
-						<gun>15</gun>
+						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.2
+						4.5
 						<!--BW_String-->
 					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.266
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB09_Churchill_VII/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB09_Churchill_VII/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.060664 -0.00099 0.873195
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.117448 0.117448
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.060664 -0.00099 0.873195
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.022786 1.92722 1.13674
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.33029 -0.006654 -3.03989
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.34236 0.381269 1.34236
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.261145</clipAngle>
-							<anchorShift>0.295001</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.121328 -0.00198 1.16685
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.121328 -0.00198 1.46285
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.055 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.296
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						0.111 0 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.91 0.91 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							128.745 135.87
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</QF_6_pounder_Mk_V>
-				<_3.7inch_Howitzer>
-					shared
-					<maxAmmo>60</maxAmmo>
-					<pitchLimits>
-						<maxPitch>0 3 1 3</maxPitch>
-						<minPitch>0 -20 1 -20</minPitch>
-					</pitchLimits>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.51
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>7</reloadTime>
 					<aimingTime>
 						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
-						0.25
+						0.247
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.16
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6155,148 +6003,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB09_Churchill_VII/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB09_Churchill_VII/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_main</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.073223 0.002076 0.601223</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.068277 0.068277
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>0.073223 0.002076 0.601223</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.022803 1.92724 1.13673
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.33029 -0.006586 -3.03982
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.23452 0.350639 1.23452
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.261145</clipAngle>
-							<anchorShift>0.295002</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>0.146446 -0.002848 0.622738</rayStart>
-							<rayEnd>0.146446 -0.002848 0.896738</rayEnd>
-							<rayUp>
-								0.072 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.274
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						0.142 0 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.91 0.91 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							151.551 142.356
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_3.7inch_Howitzer>
-				<_75mm_Gun_Mk_V>
-					shared
-					<maxAmmo>100</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 4 0.325226 4 0.388888 3 0.611112 3 0.674774 4 1 4
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<unlocks>
-						<gun>
-							_75mm_Gun_Vickers_HV
-							<cost>5000</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.41
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>3</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
 					<models>
 						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_03.model</destroyed>
@@ -6404,158 +6110,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_Gun_Mk_V>
-				<_75mm_Gun_Vickers_HV>
-					shared
-					<maxAmmo>100</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -12 1 -12</minPitch>
-						<maxPitch>
-							0 4 0.325226 4 0.388888 3 0.611112 3 0.674774 4 1 4
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<gun>20</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.36
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						4.8
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_04.model</undamaged>
-						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_04.model</destroyed>
-						<exploded>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_04.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB09_Churchill_VII/collision/Gun_04.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB09_Churchill_VII/collision_client/Gun_04.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium_mb</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.060664 -0.001218 1.39985
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.117447 0.117447
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.060664 -0.001218 1.39985
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.022825 1.92718 1.13671
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.33029 -0.006487 -3.03972
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.23452 0.350639 1.23452
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.261145</clipAngle>
-							<anchorShift>0.295003</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.121328 -0.001636 1.68221
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.121328 -0.001636 2.08221
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.055 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.4
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						0.121 0.014 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.82 0.82 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							125.13 149.107
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_Gun_Vickers_HV>
+				</_75mm_Gun_Mk_V_A22F>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Turret_01.model</undamaged>
@@ -7264,7 +6819,7 @@
 			<price>17000</price>
 			<unlocks>
 				<gun>
-					OQF_77mm_Gun_MkII
+					OQF_77mm_Gun_Mk_II_A22F
 					<cost>14500</cost>
 				</gun>
 			</unlocks>
@@ -7324,7 +6879,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8000</weight>
-			<maxHealth>226</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -7344,174 +6899,38 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<QF_6_pounder_Mk_V>
+				<_75mm_Gun_Mk_V_A22F>
 					shared
-					<maxAmmo>145</maxAmmo>
+					<maxAmmo>100</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 5 0.077778 5 0.14144 12.5 0.325226 12.5 0.388888 3 0.611112 3 0.674774 12.5 0.85856 12.5 0.922222 5 1 5
+							0 9 0.02222 9 0.04167 4 0.09167 4 0.13333 9 0.32523 9 0.38889 3 0.61111 3 0.67477 9 0.86667 9 0.90833 4 0.95833 4 0.97778 9 1 9
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<armor>
-						<gun>15</gun>
+						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.2
+						4.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
-						0.266
+						0.247
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_05.model</undamaged>
-						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_05.model</destroyed>
-						<exploded>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_05.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB09_Churchill_VII/collision/Gun_05.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB09_Churchill_VII/collision_client/Gun_05.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.145223 -0.001036 0.873194</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.068246 0.068246
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>0.145223 -0.001036 0.873194</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.005328 1.92879 1.14571
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.33029 -0.006225 -3.03941
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.28426 0.364767 1.28426
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.261145</clipAngle>
-							<anchorShift>0.295005</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.145689 -0.002072 1.16928
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.145689 -0.002072 1.44928
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.055 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.28
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						0.14 0.0 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.94 0.94 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							128.745 135.87
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</QF_6_pounder_Mk_V>
-				<_3.7inch_Howitzer>
-					shared
-					<maxAmmo>60</maxAmmo>
-					<pitchLimits>
-						<maxPitch>0 3 1 3</maxPitch>
-						<minPitch>0 -20 1 -20</minPitch>
-					</pitchLimits>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.51
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>7</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.25
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7523,142 +6942,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_06.model</undamaged>
-						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_06.model</destroyed>
-						<exploded>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_06.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB09_Churchill_VII/collision/Gun_06.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB09_Churchill_VII/collision_client/Gun_06.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_main</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.141556 0.002076 0.601318</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.068277 0.068277
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>0.141556 0.002076 0.601318</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.005325 1.9288 1.1457
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.33029 -0.006258 -3.03947
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.28426 0.364767 1.28426
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.261145</clipAngle>
-							<anchorShift>0.295008</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>0.145696 -0.003848 0.623012</rayStart>
-							<rayEnd>0.145696 -0.003848 0.897012</rayEnd>
-							<rayUp>
-								0.072 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.274
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						0.14 0.0 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.955 0.955 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							151.551 142.356
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_3.7inch_Howitzer>
-				<_75mm_Gun_Mk_V>
-					shared
-					<maxAmmo>100</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 4 0.083333 4 0.146996 12.5 0.325226 12.5 0.388888 2 0.611112 2 0.674774 12.5 0.853004 12.5 0.916666 4 1 4
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.41
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>3</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
 					<models>
 						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_07.model</undamaged>
 						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_07.model</destroyed>
@@ -7766,165 +7049,14 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_Gun_Mk_V>
-				<_75mm_Gun_Vickers_HV>
-					shared
-					<maxAmmo>100</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -12 1 -12</minPitch>
-						<maxPitch>
-							0 4 0.325226 4 0.388888 2 0.611112 2 0.674774 4 1 4
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<gun>20</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.36
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						4.3
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.247
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Gun_08.model</undamaged>
-						<destroyed>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_08.model</destroyed>
-						<exploded>vehicles/british/GB09_Churchill_VII/crash/lod0/Gun_08.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB09_Churchill_VII/collision/Gun_08.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB09_Churchill_VII/collision_client/Gun_08.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium_mb</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.150162 -0.001218 1.39985
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.068246 0.068246
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.150162 -0.001218 1.39985
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.005036 1.92875 1.13863
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.33029 -0.006972 -3.04022
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.28426 0.364767 1.28426
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.261145</clipAngle>
-							<anchorShift>0.295007</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.150978 -0.001436 1.67798
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.150978 -0.001436 2.07798
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.055 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.4
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<shotOffset>
-						0.148 0.0 0
-						<!--BW_String-->
-					</shotOffset>
-					<camouflage>
-						<tiling>
-							0.94 0.94 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							125.13 149.107
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_Gun_Vickers_HV>
-				<OQF_77mm_Gun_MkII>
+				</_75mm_Gun_Mk_V_A22F>
+				<OQF_77mm_Gun_Mk_II_A22F>
 					shared
 					<maxAmmo>84</maxAmmo>
 					<pitchLimits>
-						<minPitch>0 -12 1 -12</minPitch>
+						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 4 0.325226 4 0.388888 2 0.611112 2 0.674774 4 1 4
+							0 8 0.02500 8 0.04167 4 0.09167 4 0.13333 8 0.32523 8 0.38889 3 0.61111 3 0.67477 8 0.86667 8 0.90833 4 0.95833 4 0.97500 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8074,7 +7206,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</OQF_77mm_Gun_MkII>
+				</OQF_77mm_Gun_Mk_II_A22F>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB09_Churchill_VII/normal/lod0/Turret_02.model</undamaged>
@@ -8763,77 +7895,53 @@
 		</Turret_2_GB09_Churchill_VII>
 	</turrets0>
 	<engines>
-		<Meadows_DAV>
+		<Meadows_D_A_V_A22F>
 			shared
 			<unlocks>
 				<engine>
-					Vauxhall_Bedford_Twin_Six
+					Bedford_Twin_Six_A22F
 					<cost>850</cost>
 				</engine>
 			</unlocks>
-		</Meadows_DAV>
-		<Vauxhall_Bedford_Twin_Six>shared</Vauxhall_Bedford_Twin_Six>
+		</Meadows_D_A_V_A22F>
+		<Bedford_Twin_Six_A22F>shared</Bedford_Twin_Six_A22F>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<N19Mk1>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk2
-					<cost>3600</cost>
-				</radio>
-			</unlocks>
-		</N19Mk1>
-		<N19Mk2>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk3
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</N19Mk2>
 		<N19Mk3>shared</N19Mk3>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Meadows_DAV>
-					<smplEnginePower>
-						317.1843
-						<!--BW_String-->
-					</smplEnginePower>
+				<Meadows_D_A_V_A22F>
+					<smplEnginePower>330</smplEnginePower>
 					<smplFwMaxSpeed>25</smplFwMaxSpeed>
-				</Meadows_DAV>
-				<Vauxhall_Bedford_Twin_Six>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
+				</Meadows_D_A_V_A22F>
+				<Bedford_Twin_Six_A22F>
+					<smplEnginePower>380</smplEnginePower>
 					<smplFwMaxSpeed>25</smplFwMaxSpeed>
-				</Vauxhall_Bedford_Twin_Six>
+				</Bedford_Twin_Six_A22F>
 			</engines>
 			<chassis>
 				<Chassis_GB09_Churchill_VII>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1127
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

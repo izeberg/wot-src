@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from comp7.gui.impl.gen.view_models.views.lobby.comp7_bonus_model import Comp7BonusModel
 from comp7.gui.impl.gen.view_models.views.lobby.season_point_model import SeasonPointModel
 from gui.impl.gen.view_models.views.lobby.common.vehicle_model import VehicleModel

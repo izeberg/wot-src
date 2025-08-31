@@ -101,7 +101,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_5</primaryArmor>
 		<weight>20514</weight>
-		<maxHealth>920</maxHealth>
+		<maxHealth>1040</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2142,30 +2142,29 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_It16_Carrodassalto_P88>
-			<userString>#italy_vehicles:Chassis_It16_Carrodassalto_P88</userString>
+		<Chassis_It16_Carro_d_assalto_P88>
+			<userString>#italy_vehicles:Chassis_It16_Carro_d_assalto_P88</userString>
 			<tags/>
 			<level>6</level>
 			<price>14500</price>
 			<unlocks>
 				<chassis>
-					Chassis_It16_Carrodassalto_P88_2
+					Chassis_It16_Carro_d_assalto_P88_2
 					<cost>9500</cost>
 				</chassis>
 			</unlocks>
 			<armor>
-				<leftTrack>25</leftTrack>
-				<rightTrack>25</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14000</weight>
-			<maxLoad>46900</maxLoad>
 			<terrainResistance>
-				1.1 1.7 2.5
+				1.1 1.2 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>26</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -3838,25 +3837,24 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_It16_Carrodassalto_P88>
-		<Chassis_It16_Carrodassalto_P88_2>
-			<userString>#italy_vehicles:Chassis_It16_Carrodassalto_P88_2</userString>
+		</Chassis_It16_Carro_d_assalto_P88>
+		<Chassis_It16_Carro_d_assalto_P88_2>
+			<userString>#italy_vehicles:Chassis_It16_Carro_d_assalto_P88_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>19500</price>
 			<armor>
-				<leftTrack>25</leftTrack>
-				<rightTrack>25</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14000</weight>
-			<maxLoad>47900</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>25</rotationSpeed>
+			<rotationSpeed>29</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -5529,17 +5527,17 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_It16_Carrodassalto_P88_2>
+		</Chassis_It16_Carro_d_assalto_P88_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_It16_Carrodassalto_P88>
-			<userString>#italy_vehicles:Turret_1_It16_Carrodassalto_P88</userString>
+		<Turret_1_It16_Carro_d_assalto_P88>
+			<userString>#italy_vehicles:Turret_1_It16_Carro_d_assalto_P88</userString>
 			<tags/>
 			<level>6</level>
 			<price>17500</price>
 			<unlocks>
 				<turret>
-					Turret_2_It16_Carrodassalto_P88
+					Turret_2_It16_Carro_d_assalto_P88
 					<cost>12500</cost>
 				</turret>
 			</unlocks>
@@ -5558,7 +5556,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 			<weight>8000</weight>
-			<maxHealth>230</maxHealth>
+			<maxHealth>200</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -5596,21 +5594,21 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.43
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.2
+						7.5
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.6
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.366894 8 0.430556 6 0.569444 6 0.633106 8 1 8
+							0.00000 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6612,9 +6610,9 @@
 					<!--BW_String-->
 				</tiling>
 			</camouflage>
-		</Turret_1_It16_Carrodassalto_P88>
-		<Turret_2_It16_Carrodassalto_P88>
-			<userString>#italy_vehicles:Turret_2_It16_Carrodassalto_P88</userString>
+		</Turret_1_It16_Carro_d_assalto_P88>
+		<Turret_2_It16_Carro_d_assalto_P88>
+			<userString>#italy_vehicles:Turret_2_It16_Carro_d_assalto_P88</userString>
 			<tags/>
 			<level>7</level>
 			<price>24000</price>
@@ -6639,7 +6637,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>330</maxHealth>
+			<maxHealth>260</maxHealth>
 			<rotationSpeed>31</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -6694,7 +6692,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.366894 8 0.430556 6 0.569444 6 0.633106 8 1 8
+							0.00000 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -6788,18 +6786,21 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>9</reloadTime>
+					<reloadTime>
+						8.5
+						<!--BW_String-->
+					</reloadTime>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.366894 8 0.430556 6 0.569444 6 0.633106 8 1 8
+							0.00000 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7803,7 +7804,7 @@
 					<!--BW_String-->
 				</tiling>
 			</camouflage>
-		</Turret_2_It16_Carrodassalto_P88>
+		</Turret_2_It16_Carro_d_assalto_P88>
 	</turrets0>
 	<engines>
 		<SPA_343_4>
@@ -7821,15 +7822,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<R_F_2_C_A>
-			shared
-			<unlocks>
-				<radio>
-					R_F_3_M_2
-					<cost>4080</cost>
-				</radio>
-			</unlocks>
-		</R_F_2_C_A>
 		<R_F_3_M_2>shared</R_F_3_M_2>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -7846,30 +7838,7 @@
 				</Alfa_RA1000_41>
 			</engines>
 			<chassis>
-				<Chassis_It16_Carrodassalto_P88>
-					<axleCount>5</axleCount>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.13685
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_It16_Carrodassalto_P88>
-				<Chassis_It16_Carrodassalto_P88_2>
+				<Chassis_It16_Carro_d_assalto_P88>
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
@@ -7891,7 +7860,30 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_It16_Carrodassalto_P88_2>
+				</Chassis_It16_Carro_d_assalto_P88>
+				<Chassis_It16_Carro_d_assalto_P88_2>
+					<axleCount>5</axleCount>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_It16_Carro_d_assalto_P88_2>
 			</chassis>
 		</detailed>
 	</physics>

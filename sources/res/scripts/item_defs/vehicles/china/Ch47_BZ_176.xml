@@ -1187,7 +1187,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
@@ -4518,11 +4517,9 @@
 		<collision/>
 		<damagedStateGroup>large</damagedStateGroup>
 	</effects>
-	<effectsPrefab>
-		<rocketAcceleration>
-			<prefab>particles/Tank/rocket_accelerator/Ch47_BZ_176_Rocket.prefab</prefab>
-		</rocketAcceleration>
-	</effectsPrefab>
+	<prefabs>
+		<mechanicEffects>particles/Tank/rocket_accelerator/Ch47_BZ_176_Rocket.prefab</mechanicEffects>
+	</prefabs>
 	<emblems>
 		<default>15505</default>
 		<lodDist>MEDIUM</lodDist>

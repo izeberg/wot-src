@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from server_side_replay.gui.impl.gen.view_models.views.lobby.player_model import PlayerModel
 from gui.impl.gen.view_models.views.lobby.common.vehicle_model import VehicleModel
 

@@ -9,13 +9,22 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>HP_gunJoint</identifier>
+			<identifier>nodes_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
 				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.008850 0.370760 1.260596</row3>
+				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.009496 0.370758 1.397029</row3>
+				</transform>
+			</node>
 		</node>
 	</node>
 	<renderSet>
@@ -83,5 +92,5 @@
 		<min>-1.192554 0.004208 -1.536632</min>
 		<max>1.210254 1.549971 1.395737</max>
 	</boundingBox>
-	<geometrySize>40230</geometrySize>
+	<geometrySize>40134</geometrySize>
 </root>

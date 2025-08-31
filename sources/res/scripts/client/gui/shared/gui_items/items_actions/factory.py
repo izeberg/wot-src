@@ -1,6 +1,7 @@
 import logging
 from adisp import adisp_process, adisp_async
 from gui.shared.gui_items.items_actions import actions
+from gui.shared.gui_items.items_actions.actions import PurchaseVehSkillTreeSteps
 _logger = logging.getLogger(__name__)
 SELL_ITEM = 'sellItemAction'
 SELL_MULTIPLE = 'sellMultipleItems'
@@ -48,6 +49,7 @@ PURCHASE_POST_PROGRESSION_PAIR = 'purchasePostProgressionPair'
 PURCHASE_POST_PROGRESSION_STEPS = 'purchasePostProgressionSteps'
 SWITCH_PREBATTLE_AMMO_PANEL_AVAILABILITY = 'switchPrebattleAmmoPanelAvailability'
 ADD_SKILLS_TANKMAN = 'addSkillsTankman'
+PURCHASE_VEH_SKILL_TREE_STEPS = 'purchaseVehSkillTreeSteps'
 _ACTION_MAP = {SELL_ITEM: actions.SellItemAction, 
    SELL_MULTIPLE: actions.SellMultipleItems, 
    UNLOCK_ITEM: actions.UnlockItemAction, 
@@ -92,7 +94,8 @@ _ACTION_MAP = {SELL_ITEM: actions.SellItemAction,
    PURCHASE_POST_PROGRESSION_STEPS: actions.PurchasePostProgressionSteps, 
    SET_EQUIPMENT_SLOT_TYPE: actions.SetEquipmentSlotType, 
    SWITCH_PREBATTLE_AMMO_PANEL_AVAILABILITY: actions.SwitchPrebattleAmmoPanelAvailabilityAction, 
-   ADD_SKILLS_TANKMAN: actions.TmanAddSkillsAction}
+   ADD_SKILLS_TANKMAN: actions.TmanAddSkillsAction, 
+   PURCHASE_VEH_SKILL_TREE_STEPS: PurchaseVehSkillTreeSteps}
 
 @adisp_process
 def doAction(actionType, *args, **kwargs):

@@ -2088,7 +2088,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>46500</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.3
 				<!--BW_String-->
@@ -4586,7 +4585,7 @@
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 10 0.35 10 0.375 5 0.444444 3 0.555556 3 0.625 5 0.65 10 1 10
+							0.00000 10.00 0.35000 10.00 0.37500 3.50 0.62500 3.50 0.65000 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>

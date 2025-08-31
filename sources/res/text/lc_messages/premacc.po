@@ -10,27 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "dailyExperiencePage/backBtnAddLabel"
-msgstr "TO ACCOUNT STATUS"
-
-msgid "dailyExperiencePage/bonus/countOfExp"
-msgstr "Number of applications left: {expCount}"
-
-msgid "dailyExperiencePage/bonus/description"
-msgstr ""
-"Apply the manageable bonus to experience for the last victorious Random "
-"Battle of the selected vehicle and receive even more experience! This bonus "
-"can be applied only to the last victorious battle of the selected vehicle "
-"from the battle results window. Manageable bonus can be applied together "
-"with or without the daily x2 bonus (or another multiplier). You can apply "
-"only {maxExpCount} bonus(es) per day."
-
-msgid "dailyExperiencePage/bonus/title"
-msgstr "Manageable Bonus to Experience"
-
-msgid "dailyExperiencePage/moreInfoBtn"
-msgstr "Details"
-
 msgid "dashboard/header/clanInfo/role"
 msgstr "{role} in the clan"
 
@@ -60,29 +39,25 @@ msgstr "Excluded Maps"
 
 msgid "mapsBlacklist/infoTooltip/desc"
 msgstr ""
-"With a Standard Account, you can exclude one map from the rotation. WoT "
-"Premium Account and an active WoT Plus subscription allow you to exclude one"
-" additional map each."
+"Exclude an unwanted map from your game rotation. Exclude one more map with "
+"WoT Premium and %(mapCount)s more with WoT Plus. If either subscription "
+"expires, excluded maps return to the rotation again from the rightmost one."
 
 msgid "mapsBlacklist/infoTooltip/header"
 msgstr "Excluded Maps"
 
 msgid "mapsBlacklist/infoTooltip/highlightDesc"
-msgstr ""
-"• Please note that maps can only be excluded in Random Battles of the "
-"Standard Battle type."
+msgstr "These maps are only excluded in Random Battles."
 
 msgid "mapsBlacklist/infoTooltip/rule1"
-msgstr ""
-"• You cannot replace a map for {maxCooldownTimeStr} after its exclusion."
+msgstr "You can replace an excluded map every %(maxCooldownTimeStr)s."
 
 msgid "mapsBlacklist/infoTooltip/rule2"
-msgstr "• You can exclude maps only for Tier IV vehicles or higher."
+msgstr "This feature is available for vehicles at Tier IV and higher."
 
 msgid "mapsBlacklist/infoTooltip/rule3"
 msgstr ""
-"• When playing in a Platoon, only maps selected by the Platoon Commander "
-"will be excluded."
+"In Platoons, only maps selected by the Platoon Commander are excluded."
 
 msgid "mapsBlacklist/mapName"
 msgstr "\"{mapName}\""
@@ -126,9 +101,7 @@ msgid "mapsBlacklist/selectDialog/description"
 msgstr "You can change your selection in {cooldownStr}."
 
 msgid "mapsBlacklist/selectDialog/header"
-msgstr ""
-"Exclude the {mapNameStr} map from Random Battles of the Standard Battle "
-"type?"
+msgstr "Exclude the {mapNameStr} map from Random Battles?"
 
 msgid "mapsBlacklist/selectDialog/okButton"
 msgstr "Exclude"
@@ -161,9 +134,7 @@ msgid "mapsBlacklist/smallSlot/active/label"
 msgstr "Not Selected"
 
 msgid "mapsBlacklist/smallSlotCardTooltip/active/body"
-msgstr ""
-"Click to select a map to exclude from Random Battles of the Standard Battle "
-"type."
+msgstr "Click to select a map to exclude from Random Battles."
 
 msgid "mapsBlacklist/smallSlotCardTooltip/active/header"
 msgstr "Map Not Selected"
@@ -188,17 +159,13 @@ msgid "mapsBlacklist/smallSlotCardTooltip/disabled/header"
 msgstr "Slot Unavailable"
 
 msgid "mapsBlacklist/smallSlotTooltip/active/body"
-msgstr ""
-"Select a map from the list below to exclude it from Random Battles of the "
-"Standard Battle type."
+msgstr "Select a map from the list below to exclude it from Random Battles."
 
 msgid "mapsBlacklist/smallSlotTooltip/active/header"
 msgstr "Map Not Selected"
 
 msgid "mapsBlacklist/smallSlotTooltip/change/body"
-msgstr ""
-"Select a map from the list below to exclude it from Random Battles of the "
-"Standard Battle type."
+msgstr "Select a map from the list below to exclude it from Random Battles."
 
 msgid "mapsBlacklist/smallSlotTooltip/change/header"
 msgstr "Replace Map Available"
@@ -221,22 +188,36 @@ msgid "mapsBlacklistConfim/cancel"
 msgstr "Cancel"
 
 msgid "mapsBlacklistConfim/message"
-msgstr "You can change your selection in {cooldownTimeStr}."
+msgstr ""
+"You can change your selection in "
+"{whiteSpanish_Open}%(cooldownTimeStr)s{whiteSpanish_Close}."
+
+msgid "mapsBlacklistConfim/replace"
+msgstr "Replace"
 
 msgid "mapsBlacklistConfim/submit"
 msgstr "Exclude"
 
 msgid "mapsBlacklistConfim/title"
-msgstr ""
-"Exclude the {mapName} map from Random Battles of the Standard Battle type?"
+msgstr "Exclude the %(mapName)s map from Random Battles?"
 
 msgid "mapsBlacklistReplace/message"
 msgstr ""
-"The selected map will be replaced with the {mapName} map. You can change "
-"your selection in {cooldownTimeStr}."
+"The selected map will be replaced with the "
+"{whiteSpanish_Open}%(mapName)s{whiteSpanish_Close} map. You can change your "
+"selection in %(cooldownTimeStr)s."
 
 msgid "mapsBlacklistReplace/title"
 msgstr "Which map do you want to replace?"
+
+msgid "mapsBlacklistReplaceOne/message"
+msgstr ""
+"This map will be replaced with the "
+"{whiteSpanish_Open}%(mapName)s{whiteSpanish_Close} map. You can change your "
+"selection in %(cooldownTimeStr)s."
+
+msgid "mapsBlacklistReplaceOne/title"
+msgstr "Do you want to replace this map?"
 
 msgid "parentControlCard/infoPopover/body"
 msgstr ""

@@ -2050,7 +2050,6 @@
 				<rightTrack>6</rightTrack>
 			</armor>
 			<weight>1800</weight>
-			<maxLoad>8300</maxLoad>
 			<terrainResistance>
 				1.03 1.37 2.29
 				<!--BW_String-->
@@ -2713,11 +2712,17 @@
 					<radiusOverrides>
 						<wheel>
 							<name>WD_L3</name>
-							<radius>0.236322</radius>
+							<radius>
+								0.248
+								<!--BW_String-->
+							</radius>
 						</wheel>
 						<wheel>
 							<name>WD_L0</name>
-							<radius>0.235395</radius>
+							<radius>
+								0.235
+								<!--BW_String-->
+							</radius>
 						</wheel>
 					</radiusOverrides>
 					<teethSyncs>
@@ -2733,7 +2738,10 @@
 						</sync>
 						<sync>
 							<name>WD_L0</name>
-							<startAngle>59.697399</startAngle>
+							<startAngle>
+								0.20944
+								<!--BW_String-->
+							</startAngle>
 							<teethCount>14</teethCount>
 						</sync>
 					</teethSyncs>
@@ -3191,12 +3199,15 @@
 					<radiusOverrides>
 						<wheel>
 							<name>WD_R3</name>
-							<radius>0.236317</radius>
+							<radius>
+								0.248
+								<!--BW_String-->
+							</radius>
 						</wheel>
 						<wheel>
 							<name>WD_R0</name>
 							<radius>
-								0.2354
+								0.235
 								<!--BW_String-->
 							</radius>
 						</wheel>
@@ -3215,7 +3226,7 @@
 						<sync>
 							<name>WD_R0</name>
 							<startAngle>
-								59.6973
+								0.20944
 								<!--BW_String-->
 							</startAngle>
 							<teethCount>14</teethCount>

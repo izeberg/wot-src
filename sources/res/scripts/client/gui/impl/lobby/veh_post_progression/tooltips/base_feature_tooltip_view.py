@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import ViewSettings
 from gui.impl.gen.view_models.views.lobby.post_progression.tooltip.feature_tooltip_view_model import FeatureTooltipViewModel
 from gui.impl.pub import ViewImpl

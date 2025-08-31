@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB147_FV4025_Contriver/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/british/GB147_FV4025_Contriver/crash/lod2/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.558395 -0.351115 -1.261698</min>
+		<max>0.576153 0.297522 7.529843</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

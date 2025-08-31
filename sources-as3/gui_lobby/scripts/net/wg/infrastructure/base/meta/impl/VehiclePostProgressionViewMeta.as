@@ -7,23 +7,13 @@ package net.wg.infrastructure.base.meta.impl
    {
        
       
-      public var onGoBackClick:Function;
-      
       public var goToVehicleView:Function;
       
       public var compareVehicle:Function;
       
-      public var onAboutClick:Function;
-      
       public function VehiclePostProgressionViewMeta()
       {
          super();
-      }
-      
-      public function onGoBackClickS() : void
-      {
-         App.utils.asserter.assertNotNull(this.onGoBackClick,"onGoBackClick" + Errors.CANT_NULL);
-         this.onGoBackClick();
       }
       
       public function goToVehicleViewS() : void
@@ -36,12 +26,6 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.compareVehicle,"compareVehicle" + Errors.CANT_NULL);
          this.compareVehicle();
-      }
-      
-      public function onAboutClickS() : void
-      {
-         App.utils.asserter.assertNotNull(this.onAboutClick,"onAboutClick" + Errors.CANT_NULL);
-         this.onAboutClick();
       }
    }
 }

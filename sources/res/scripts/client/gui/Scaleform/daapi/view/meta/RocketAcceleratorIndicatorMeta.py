@@ -1,14 +1,6 @@
-from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPIComponent
+from gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics.mechanic_widgets.vehicle_mechanic_widget import VehicleMechanicWidget
 
-class RocketAcceleratorIndicatorMeta(BaseDAAPIComponent):
-
-    def as_setStateS(self, state):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setState(state)
-
-    def as_setVisibleS(self, visible):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setVisible(visible)
+class RocketAcceleratorIndicatorMeta(VehicleMechanicWidget):
 
     def as_setCountS(self, count):
         if self._isDAAPIInited():
@@ -17,10 +9,6 @@ class RocketAcceleratorIndicatorMeta(BaseDAAPIComponent):
     def as_setProgressS(self, progress):
         if self._isDAAPIInited():
             return self.flashObject.as_setProgress(progress)
-
-    def as_setActiveTimeS(self, time):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setActiveTime(time)
 
     def as_updateLayoutS(self, x, y):
         if self._isDAAPIInited():

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>22.333334</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>22.333334</duration>
+				<resourceID>content/Hangars/CharacterAnimations/hangar_v4/animation/hv4_3_SecondFloor_Sc1_M_Engineers_SM0_By_LadderConversation.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>22.333334</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Engineer_on_ladder</name>
+		<type>model</type>
+		<resource>content/Hangars/CharacterAnimations/hangar_v4/normal/lod0/hv4_Engineer_Middle_02_anim.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>22.333334</duration>
+				<resourceID>content/Hangars/CharacterAnimations/hangar_v4/animation/hv4_3_SecondFloor_Sc1_M_Engineers_SM0_On_LadderConversation.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>22.333334</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ladder</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_015_HangarFilling/normal/lod0/hv4_015_HangarFilling_11.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.778000 0.740000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

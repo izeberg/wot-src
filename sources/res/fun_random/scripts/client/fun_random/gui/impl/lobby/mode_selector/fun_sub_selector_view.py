@@ -22,6 +22,7 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.mode_selector.tooltips.mode_selector_tooltips_constants import ModeSelectorTooltipsConstants
 from gui.impl.lobby.common.view_wrappers import createBackportTooltipDecorator
 from gui.impl.pub import ViewImpl
+from gui.impl.lobby.hangar.presenters.utils import fillMenuSharedItems, navigateTo
 from gui.shared import events, g_eventBus
 from gui.shared.events import ModeSubSelectorEvent, FullscreenModeSelectorEvent
 from gui.shared.utils.functions import makeTooltip
@@ -134,7 +135,9 @@ class FunModeSubSelectorView(ViewImpl, FunAssetPacksMixin, FunSubModesWatcher, F
          (
           self.viewModel.onInfoClicked, self.__onShowSubInfoPage),
          (
-          self.viewModel.onItemClicked, self.__onSelectSubMode))
+          self.viewModel.onItemClicked, self.__onSelectSubMode),
+         (
+          self.viewModel.onNavigate, navigateTo))
 
     def __addListeners(self):
         self.startSubSettingsListening(self.__invalidateAll)
@@ -214,6 +217,7 @@ class FunModeSubSelectorView(ViewImpl, FunAssetPacksMixin, FunSubModesWatcher, F
         with self.viewModel.transaction() as (model):
             model.setAssetsPointer(self.getModeAssetsPointer())
             self.__invalidateSubModesCards(model.getCardList())
+            fillMenuSharedItems(model)
             if status.state in FunSubModesState.INNER_STATES:
                 self.__fillProgression(model)
             else:

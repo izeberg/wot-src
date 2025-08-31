@@ -1,6 +1,5 @@
-from frameworks.wulf import Array
 from comp7.gui.impl.gen.view_models.views.lobby.enums import Rank
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from comp7.gui.impl.gen.view_models.views.lobby.progression_division import ProgressionDivision
 
 class ProgressionItemBaseModel(ViewModel):

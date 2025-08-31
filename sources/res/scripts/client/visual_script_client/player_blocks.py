@@ -1,5 +1,6 @@
 import weakref, typing, BigWorld
 from aih_constants import CTRL_MODES
+from constants import DEFAULT_GUN_INSTALLATION_INDEX
 from visual_script import ASPECT
 from visual_script.ability_common import Stage
 from visual_script.block import Meta, Block, InitParam, buildStrKeysValue
@@ -13,6 +14,10 @@ import items.vehicles as vehicles
 if typing.TYPE_CHECKING:
     from Vehicle import StunInfo
 helpers, TriggersManager, gun_marker_ctrl, equipment_ctrl, Avatar = dependencyImporter('helpers', 'TriggersManager', 'AvatarInputHandler.gun_marker_ctrl', 'gui.battle_control.controllers.consumables.equipment_ctrl', 'Avatar')
+
+def isMainGunInstallation(gunInstallationIndex):
+    return gunInstallationIndex == DEFAULT_GUN_INSTALLATION_INDEX
+
 
 class PlayerMeta(Meta):
 
@@ -316,11 +321,11 @@ class OnGunMarkerPenetrationStateChanged(TunableEventBlock, PlayerEventMeta):
             if crosshair:
                 crosshair.onGunMarkerStateChanged -= self._onGunMarkerStateChanged
 
-    def _onGunMarkerStateChanged(self, _, position, direction, collision):
+    def _onGunMarkerStateChanged(self, _, gunMarkerState, __):
         avatar = self._avatar
         if avatar:
             shotResultResolver = gun_marker_ctrl.createShotResultResolver()
-            result = shotResultResolver.getShotResult(position, collision, direction, excludeTeam=avatar.team)
+            result = shotResultResolver.getShotResult(gunMarkerState, excludeTeam=avatar.team)
             if result != self._oldResult:
                 self._oldResult = result
                 self._callOutput(result)
@@ -406,8 +411,12 @@ class OnPlayerVehicleDiscreteShoot(TunablePlayerVehicleEventBlock, PlayerEventMe
     _EVENT_SLOT_NAMES = [
      'onDiscreteShoot']
 
+    def onPlayerDiscreteShoot(self, gunInstallationIndex):
+        if isMainGunInstallation(gunInstallationIndex):
+            self._callOutput()
+
     @TunableEventBlock.eventProcessor
-    def onPlayerDiscreteShoot(self, aimInfo):
+    def _callOutput(self):
         pass
 
 
@@ -415,8 +424,12 @@ class OnPlayerShotMissed(TunablePlayerVehicleEventBlock, PlayerEventMeta):
     _EVENT_SLOT_NAMES = [
      'onMissed']
 
+    def onPlayerShotMissed(self, gunInstallationIndex):
+        if isMainGunInstallation(gunInstallationIndex):
+            self._callOutput()
+
     @TunableEventBlock.eventProcessor
-    def onPlayerShotMissed(self):
+    def _callOutput(self):
         pass
 
 
@@ -430,8 +443,12 @@ class OnPlayerShotHit(TunablePlayerVehicleEventBlock, PlayerEventMeta):
         self._flags = self._makeDataOutputSlot('hitFlags', SLOT_TYPE.INT, None)
         return
 
+    def onPlayerShotHit(self, target, flags, gunInstallationIndex):
+        if isMainGunInstallation(gunInstallationIndex):
+            self._callOutput(target, flags)
+
     @TunableEventBlock.eventProcessor
-    def onPlayerShotHit(self, target, flags):
+    def _callOutput(self, target, flags):
         if target is not None:
             self._target.setValue(weakref.proxy(target))
         else:
@@ -555,8 +572,12 @@ class OnPlayerVehicleContinuousBurstStart(TunablePlayerVehicleEventBlock, Player
     _EVENT_SLOT_NAMES = [
      'onContinuousBurstStart']
 
+    def onPlayerContinuousBurstStart(self, gunInstallationIndex):
+        if isMainGunInstallation(gunInstallationIndex):
+            self._callOutput()
+
     @TunableEventBlock.eventProcessor
-    def onPlayerContinuousBurstStart(self):
+    def _callOutput(self):
         pass
 
 
@@ -564,8 +585,12 @@ class OnPlayerVehicleContinuousBurstStop(TunablePlayerVehicleEventBlock, PlayerE
     _EVENT_SLOT_NAMES = [
      'onContinuousBurstStop']
 
+    def onPlayerContinuousBurstStop(self, gunInstallationIndex):
+        if isMainGunInstallation(gunInstallationIndex):
+            self._callOutput()
+
     @TunableEventBlock.eventProcessor
-    def onPlayerContinuousBurstStop(self):
+    def _callOutput(self):
         pass
 
 
@@ -664,8 +689,12 @@ class OnShowTracer(TunablePlayerVehicleEventBlock, PlayerEventMeta):
         self._maxDist = self._makeDataOutputSlot('maxDist', SLOT_TYPE.FLOAT, None)
         return
 
+    def onShowTracer(self, attacker, isRicochet, startPoint, velocity, gravity, maxShotDist, gunInstallationIndex):
+        if isMainGunInstallation(gunInstallationIndex):
+            self._callOutput(attacker, isRicochet, startPoint, velocity, gravity, maxShotDist)
+
     @TunableEventBlock.eventProcessor
-    def onShowTracer(self, attacker, isRicochet, startPoint, velocity, gravity, maxShotDist):
+    def _callOutput(self, attacker, isRicochet, startPoint, velocity, gravity, maxShotDist):
         if attacker is not None:
             self._attacker.setValue(weakref.proxy(attacker))
         else:
@@ -826,3 +855,25 @@ class OnPlayerUsedAOEEquipment(TunablePlayerVehicleEventBlock, PlayerEventMeta):
     def onPlayerUsedAoEEquipment(self, name, position):
         self._name.setValue(name)
         self._position.setValue(position)
+
+
+class GetPlayerShellsState(Block, PlayerMeta):
+
+    def __init__(self, *args, **kwargs):
+        super(GetPlayerShellsState, self).__init__(*args, **kwargs)
+        shells = self._shells
+        self._shellsLeft = self._makeDataOutputSlot('currentLeft', SLOT_TYPE.INT, shells)
+        self._shellsLoaded = self._makeDataOutputSlot('currentLoaded', SLOT_TYPE.INT, shells)
+        self._loadPercent = self._makeDataOutputSlot('clipLoadPercentLeft', SLOT_TYPE.FLOAT, self._curLoadPercentLeft)
+
+    def _shells(self):
+        avatar = self._avatar
+        if avatar:
+            shells = avatar.guiSessionProvider.shared.ammo.getCurrentShells()
+            self._shellsLeft.setValue(shells[0])
+            self._shellsLoaded.setValue(shells[1])
+
+    def _curLoadPercentLeft(self):
+        avatar = self._avatar
+        if avatar:
+            self._loadPercent.setValue(avatar.guiSessionProvider.shared.ammo.getClipPercentLeft())

@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>Cus_60_ArmiesA_Bazooka</name>
+			<UUID>bb2aa8f4-a0e6-4f36-a7d4-f5160ed23fcc</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>Cus_60_ArmiesA_Bazooka_01</name>
+			<UUID>0bee88ef-78a2-4ccf-95e4-4374746c6cb4</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>c05c41fa-4de9-4cf8-b75c-a54b02dfd1e5</UUID>
+			<flags>8</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>0bee88ef-78a2-4ccf-95e4-4374746c6cb4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>c05c41fa-4de9-4cf8-b75c-a54b02dfd1e5</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c05c41fa-4de9-4cf8-b75c-a54b02dfd1e5</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>bb2aa8f4-a0e6-4f36-a7d4-f5160ed23fcc</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>bb2aa8f4-a0e6-4f36-a7d4-f5160ed23fcc</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>0bee88ef-78a2-4ccf-95e4-4374746c6cb4</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c05c41fa-4de9-4cf8-b75c-a54b02dfd1e5</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>bb2aa8f4-a0e6-4f36-a7d4-f5160ed23fcc</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>c05c41fa-4de9-4cf8-b75c-a54b02dfd1e5</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<UUID>0bee88ef-78a2-4ccf-95e4-4374746c6cb4</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
+			<component>
+				<UUID>0bee88ef-78a2-4ccf-95e4-4374746c6cb4</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/3D_Customization/Cus_60_ArmiesA_Bazooka/normal/lod0/Cus_60_ArmiesA_Bazooka_01.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>bb2aa8f4-a0e6-4f36-a7d4-f5160ed23fcc</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

@@ -1833,7 +1833,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>5500</weight>
-			<maxLoad>34000</maxLoad>
 			<terrainResistance>
 				1.2 1.6 2.3
 				<!--BW_String-->
@@ -3686,7 +3685,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>35000</maxLoad>
 			<terrainResistance>
 				1.2 1.6 2.3
 				<!--BW_String-->
@@ -5538,10 +5536,22 @@
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>70</armor_1>
-				<armor_2>25</armor_2>
-				<armor_3>25</armor_3>
-				<armor_4>0</armor_4>
+				<armor_1>
+					70
+					<tags>hull</tags>
+				</armor_1>
+				<armor_2>
+					25
+					<tags>hull</tags>
+				</armor_2>
+				<armor_3>
+					25
+					<tags>hull</tags>
+				</armor_3>
+				<armor_4>
+					0
+					<tags>hull</tags>
+				</armor_4>
 			</armor>
 			<weight>6210</weight>
 			<maxHealth>130</maxHealth>

@@ -50,6 +50,30 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_SU_025_MineShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld205_bathhouse01_roof_01.vfx</fn_effect_bin>
@@ -343,6 +367,26 @@
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_SU_025_MineShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_UNI_712_LittleWoodShed.vfx</fn_effect_bin>

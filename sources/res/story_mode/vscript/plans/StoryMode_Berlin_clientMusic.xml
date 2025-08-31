@@ -84,171 +84,6 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_41</id>
-				<params>
-					<param>
-						AnyVehicleDetected
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>CreateArray</class>
-				<id>CreateArray_71</id>
-				<params>
-					<param>
-						StringArrayT
-						<name>Array Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						1
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>i0</name>
-						<const>\Last_Boss\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_43</id>
-				<params>
-					<param>
-						PlayMusic
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>event</name>
-						<const>\ob_music_int_02\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>DoOnce</class>
-				<id>DoOnce_15</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_75</id>
-				<params>
-					<param>
-						AnyVehicleDetected
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_71</id>
-				<params>
-					<param>
-						PlayMusic
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>event</name>
-						<const>\ob_music_int_03\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>CreateArray</class>
-				<id>CreateArray_83</id>
-				<params>
-					<param>
-						StringArrayT
-						<name>Array Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						1
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>i0</name>
-						<const>\Enemy_5_1_wave_1\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>DoOnce</class>
-				<id>DoOnce_17</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_35</id>
-				<params>
-					<param>
-						PlayMusic
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>event</name>
-						<const>\ob_music_int_01\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>CreateArray</class>
-				<id>CreateArray_57</id>
-				<params>
-					<param>
-						StringArrayT
-						<name>Array Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						1
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>i0</name>
-						<const>\Last_Boss\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_5</id>
-				<params>
-					<param>
-						VehiclesDestroyed
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
 				<id>Macro_27</id>
 				<params>
 					<param>
@@ -414,6 +249,171 @@
 			</block>
 			<block>
 				<class>Macro</class>
+				<id>Macro_41</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_71</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						1
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\Last_Boss\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_43</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_02\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>DoOnce</class>
+				<id>DoOnce_15</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_75</id>
+				<params>
+					<param>
+						AnyVehicleDetected
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_71</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_03\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_83</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						1
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\Enemy_5_1_wave_1\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>DoOnce</class>
+				<id>DoOnce_17</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_35</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_01\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CreateArray</class>
+				<id>CreateArray_57</id>
+				<params>
+					<param>
+						StringArrayT
+						<name>Array Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						1
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>i0</name>
+						<const>\Last_Boss\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_5</id>
+				<params>
+					<param>
+						VehiclesDestroyed
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
 				<id>Macro_33</id>
 				<params>
 					<param>
@@ -422,6 +422,12 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_25</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -478,8 +484,19 @@
 				</slots>
 			</block>
 			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>Macro</class>
-				<id>Macro_19</id>
+				<id>Macro_76</id>
 				<params>
 					<param>
 						VehiclesDestroyed
@@ -487,6 +504,12 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>DoOnce</class>
+				<id>DoOnce_18</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -507,6 +530,36 @@
 				</slots>
 			</block>
 			<block>
+				<class>Macro</class>
+				<id>Macro_19</id>
+				<params>
+					<param>
+						VehiclesDestroyed
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_27</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_5</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>CreateArray</class>
 				<id>CreateArray_61</id>
 				<params>
@@ -516,7 +569,7 @@
 						<type>TypeT</type>
 					</param>
 					<param>
-						3
+						4
 						<name>Input Count</name>
 						<type>IntT</type>
 					</param>
@@ -534,6 +587,44 @@
 						<name>i2</name>
 						<const>\EnemyBait\</const>
 					</slot>
+					<slot>
+						<name>i3</name>
+						<const>\First_Boss\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>DoOnce</class>
+				<id>DoOnce_19</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_78</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_02\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_3</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
 				</slots>
 			</block>
 			<block>
@@ -546,6 +637,12 @@
 						<type>StringT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>DoOnce</class>
+				<id>DoOnce_3</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -564,12 +661,6 @@
 						<const>\ob_music_int_02\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>DoOnce</class>
-				<id>DoOnce_3</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CreateArray</class>
@@ -603,29 +694,36 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_17</id>
-				<params>
-					<param>
-						PlayMusic
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>event</name>
-						<const>\ob_music_int_01\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
 				<id>Macro_21</id>
 				<params>
 					<param>
 						VehiclesDestroyed
 						<name>Macro Name</name>
 						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_28</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_29</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_2</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
 					</param>
 				</params>
 				<slots/>
@@ -669,6 +767,34 @@
 				</slots>
 			</block>
 			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_4</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_17</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_01\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_63</id>
 				<params>
@@ -679,6 +805,34 @@
 					</param>
 				</params>
 				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_65</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_03\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_5</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>CreateArray</class>
@@ -703,31 +857,43 @@
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_65</id>
-				<params>
-					<param>
-						PlayMusic
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>event</name>
-						<const>\ob_music_int_03\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>DoOnce</class>
 				<id>DoOnce_7</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
+				<class>And</class>
+				<id>And_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_6</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_26</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
-				<id>Macro_47</id>
+				<id>Macro_77</id>
 				<params>
 					<param>
 						PlayMusic
@@ -738,21 +904,9 @@
 				<slots>
 					<slot>
 						<name>event</name>
-						<const>\ob_music_int_01\</const>
+						<const>\ob_music_int_02\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_49</id>
-				<params>
-					<param>
-						VehiclesDestroyed
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CreateArray</class>
@@ -775,6 +929,30 @@
 						<const>\Enemy_3_1\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_49</id>
+				<params>
+					<param>
+						VehiclesDestroyed
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_3</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -839,6 +1017,64 @@
 			</block>
 			<block>
 				<class>Macro</class>
+				<id>Macro_80</id>
+				<params>
+					<param>
+						PlayMusic
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>event</name>
+						<const>\ob_music_int_01\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>LogicGate</class>
+				<id>LogicGate_7</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>valueAtStart</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_30</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_79</id>
+				<params>
+					<param>
+						VehiclesDestroyed
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_6</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
 				<id>Macro_61</id>
 				<params>
 					<param>
@@ -897,54 +1133,6 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>CreateArray_71</from>
-				<input>Labels</input>
-				<to>Macro_41</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>DoOnce_15</from>
-				<input>in</input>
-				<to>Macro_43</to>
-				<output>completed</output>
-			</connection>
-			<connection>
-				<from>Macro_41</from>
-				<input>input</input>
-				<to>DoOnce_15</to>
-				<output>detected</output>
-			</connection>
-			<connection>
-				<from>CreateArray_83</from>
-				<input>Labels</input>
-				<to>Macro_75</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>DoOnce_17</from>
-				<input>in</input>
-				<to>Macro_71</to>
-				<output>completed</output>
-			</connection>
-			<connection>
-				<from>Macro_75</from>
-				<input>input</input>
-				<to>DoOnce_17</to>
-				<output>detected</output>
-			</connection>
-			<connection>
-				<from>Macro_5</from>
-				<input>in</input>
-				<to>Macro_35</to>
-				<output>allDestroyed</output>
-			</connection>
-			<connection>
-				<from>CreateArray_57</from>
-				<input>Labels</input>
-				<to>Macro_5</to>
-				<output>res</output>
-			</connection>
-			<connection>
 				<from>CreateArray_65</from>
 				<input>Labels</input>
 				<to>Macro_27</to>
@@ -993,6 +1181,54 @@
 				<output>allDestroyed</output>
 			</connection>
 			<connection>
+				<from>CreateArray_71</from>
+				<input>Labels</input>
+				<to>Macro_41</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>DoOnce_15</from>
+				<input>in</input>
+				<to>Macro_43</to>
+				<output>completed</output>
+			</connection>
+			<connection>
+				<from>Macro_41</from>
+				<input>input</input>
+				<to>DoOnce_15</to>
+				<output>detected</output>
+			</connection>
+			<connection>
+				<from>CreateArray_83</from>
+				<input>Labels</input>
+				<to>Macro_75</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>DoOnce_17</from>
+				<input>in</input>
+				<to>Macro_71</to>
+				<output>completed</output>
+			</connection>
+			<connection>
+				<from>Macro_75</from>
+				<input>input</input>
+				<to>DoOnce_17</to>
+				<output>detected</output>
+			</connection>
+			<connection>
+				<from>Macro_5</from>
+				<input>in</input>
+				<to>Macro_35</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>CreateArray_57</from>
+				<input>Labels</input>
+				<to>Macro_5</to>
+				<output>res</output>
+			</connection>
+			<connection>
 				<from>CreateArray_67</from>
 				<input>Labels</input>
 				<to>Macro_33</to>
@@ -1001,13 +1237,49 @@
 			<connection>
 				<from>Macro_33</from>
 				<input>input</input>
-				<to>DoOnce_5</to>
+				<to>If_25</to>
 				<output>detected</output>
+			</connection>
+			<connection>
+				<from>LogicGate_1</from>
+				<input>value</input>
+				<to>If_25</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_25</from>
+				<input>input</input>
+				<to>DoOnce_5</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>DoOnce_5</from>
 				<input>in</input>
 				<to>Macro_29</to>
+				<output>completed</output>
+			</connection>
+			<connection>
+				<from>Macro_76</from>
+				<input>true</input>
+				<to>LogicGate_1</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>CreateArray_77</from>
+				<input>Labels</input>
+				<to>Macro_76</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_27</from>
+				<input>input</input>
+				<to>DoOnce_18</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>DoOnce_18</from>
+				<input>in</input>
+				<to>Macro_13</to>
 				<output>completed</output>
 			</connection>
 			<connection>
@@ -1017,10 +1289,40 @@
 				<output>res</output>
 			</connection>
 			<connection>
+				<from>Sequence_5</from>
+				<input>input</input>
+				<to>If_27</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>LogicGate_3</from>
+				<input>value</input>
+				<to>If_27</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Macro_19</from>
-				<input>in</input>
-				<to>Macro_13</to>
+				<input>input</input>
+				<to>Sequence_5</to>
 				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>If_27</from>
+				<input>input</input>
+				<to>DoOnce_19</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>DoOnce_19</from>
+				<input>in</input>
+				<to>Macro_78</to>
+				<output>completed</output>
+			</connection>
+			<connection>
+				<from>Sequence_6</from>
+				<input>true</input>
+				<to>LogicGate_3</to>
+				<output>o1</output>
 			</connection>
 			<connection>
 				<from>CreateArray_69</from>
@@ -1029,28 +1331,76 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>DoOnce_3</from>
-				<input>in</input>
-				<to>Macro_39</to>
-				<output>completed</output>
-			</connection>
-			<connection>
 				<from>Macro_37</from>
 				<input>input</input>
 				<to>DoOnce_3</to>
 				<output>detected</output>
 			</connection>
 			<connection>
-				<from>Macro_21</from>
+				<from>DoOnce_3</from>
 				<input>in</input>
-				<to>Macro_17</to>
-				<output>allDestroyed</output>
+				<to>Macro_39</to>
+				<output>completed</output>
 			</connection>
 			<connection>
 				<from>CreateArray_63</from>
 				<input>Labels</input>
 				<to>Macro_21</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>input</input>
+				<to>If_28</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>LogicGate_5</from>
+				<input>value</input>
+				<to>If_28</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_28</from>
+				<input>input</input>
+				<to>If_29</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>And_1</from>
+				<input>value</input>
+				<to>If_29</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_21</from>
+				<input>input</input>
+				<to>Sequence_2</to>
+				<output>allDestroyed</output>
+			</connection>
+			<connection>
+				<from>Sequence_2</from>
+				<input>true</input>
+				<to>LogicGate_4</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>If_26</from>
+				<input>in</input>
+				<to>Macro_17</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_29</from>
+				<input>in</input>
+				<to>Macro_17</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_28</from>
+				<input>in</input>
+				<to>Macro_17</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>CreateArray_79</from>
@@ -1065,22 +1415,64 @@
 				<output>completed</output>
 			</connection>
 			<connection>
+				<from>Macro_65</from>
+				<input>true</input>
+				<to>LogicGate_5</to>
+				<output>out</output>
+			</connection>
+			<connection>
 				<from>Macro_63</from>
 				<input>input</input>
 				<to>DoOnce_7</to>
 				<output>detected</output>
 			</connection>
 			<connection>
-				<from>Macro_49</from>
+				<from>LogicGate_5</from>
+				<input>i1</input>
+				<to>And_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>LogicGate_6</from>
+				<input>i2</input>
+				<to>And_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Sequence_3</from>
+				<input>true</input>
+				<to>LogicGate_6</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>Sequence_3</from>
+				<input>input</input>
+				<to>If_26</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>LogicGate_4</from>
+				<input>value</input>
+				<to>If_26</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_26</from>
 				<input>in</input>
-				<to>Macro_47</to>
-				<output>allDestroyed</output>
+				<to>Macro_77</to>
+				<output>false</output>
 			</connection>
 			<connection>
 				<from>CreateArray_73</from>
 				<input>Labels</input>
 				<to>Macro_49</to>
 				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_49</from>
+				<input>input</input>
+				<to>Sequence_3</to>
+				<output>allDestroyed</output>
 			</connection>
 			<connection>
 				<from>CreateArray_59</from>
@@ -1099,6 +1491,42 @@
 				<input>in</input>
 				<to>Macro_7</to>
 				<output>completed</output>
+			</connection>
+			<connection>
+				<from>If_30</from>
+				<input>in</input>
+				<to>Macro_80</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>Sequence_5</from>
+				<input>true</input>
+				<to>LogicGate_7</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>Sequence_6</from>
+				<input>input</input>
+				<to>If_30</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>LogicGate_7</from>
+				<input>value</input>
+				<to>If_30</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>CreateArray_59</from>
+				<input>Labels</input>
+				<to>Macro_79</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_79</from>
+				<input>input</input>
+				<to>Sequence_6</to>
+				<output>allDestroyed</output>
 			</connection>
 			<connection>
 				<from>CreateArray_77</from>

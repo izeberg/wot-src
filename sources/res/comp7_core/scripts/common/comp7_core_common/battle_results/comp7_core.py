@@ -1,0 +1,14 @@
+from battle_results.battle_results_constants import BATTLE_RESULT_ENTRY_TYPE as ENTRY_TYPE
+BATTLE_RESULTS = [
+ (
+  'comp7PrestigePoints', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'roleSkillUsed', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'healthRepair', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'alliedHealthRepair', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_ALL),
+ (
+  'fareTeamPrestigePointsPosition', int, 0, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'isSuperSquad', bool, False, None, 'skip', ENTRY_TYPE.ACCOUNT_ALL)]

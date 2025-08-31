@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R230_Object_432U/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/russian/R230_Object_432U/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.830000 -0.588613 -3.000605</min>
+		<max>1.830000 0.542974 3.359294</max>
+	</visibilityBox>
+</root>

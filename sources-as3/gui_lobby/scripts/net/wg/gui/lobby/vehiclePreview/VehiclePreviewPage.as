@@ -69,7 +69,7 @@ package net.wg.gui.lobby.vehiclePreview
       
       private static const VEH_DESCRIPTION_H_OFFSET:int = 2;
       
-      private static const VEH_PARAMS_H_OFFSET:int = 35;
+      private static const VEH_PARAMS_H_OFFSET:int = 27;
       
       private static const VEH_PARAMS_V_OFFSET:int = 20;
       

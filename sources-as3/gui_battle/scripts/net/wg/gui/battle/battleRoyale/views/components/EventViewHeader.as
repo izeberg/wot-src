@@ -108,12 +108,13 @@ package net.wg.gui.battle.battleRoyale.views.components
       {
          var _loc2_:Number = NaN;
          var _loc3_:Number = NaN;
+         var _loc5_:int = 0;
          _loc2_ = !!this._isSmallScreenSize ? Number(HEADER_BG_SMALL_HEIGHT) : Number(HEADER_BG_BIG_HEIGHT);
          _loc3_ = -this.battleIcon.width >> 1;
          this.battleIcon.x = _loc3_;
          this.battleIcon.y = _loc2_ - this.battleIcon.height >> 1;
          var _loc4_:int = this.titleTF.textHeight;
-         var _loc5_:int = !!this._isSmallScreenSize ? int(ICON_SMALL_MARGIN_X) : int(ICON_BIG_MARGIN_X);
+         _loc5_ = !!this._isSmallScreenSize ? int(ICON_SMALL_MARGIN_X) : int(ICON_BIG_MARGIN_X);
          this.titleTF.x = _loc3_ - _loc5_ - this.titleTF.width;
          this.subTitleTF.x = _loc3_ - _loc5_ - this.subTitleTF.width;
          var _loc6_:Number = _loc4_ + this.subTitleTF.textHeight;

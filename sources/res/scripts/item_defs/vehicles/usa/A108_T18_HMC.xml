@@ -3062,7 +3062,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				2 2.2 2.9
 				<!--BW_String-->
@@ -5328,7 +5327,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				2 2.2 2.9
 				<!--BW_String-->
@@ -7591,7 +7589,7 @@
 	<turrets0>
 		<Turret_1_A108_T18_HMC>
 			<userString>#usa_vehicles:Turret_1_A108_T18_HMC</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>100</price>
 			<notInShop>true</notInShop>

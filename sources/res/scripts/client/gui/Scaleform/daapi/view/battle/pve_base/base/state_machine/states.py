@@ -25,7 +25,7 @@ class BaseState(State):
     def update(self):
         self._updateView()
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         self._showView()
 
     def _showView(self):
@@ -46,7 +46,7 @@ class BaseTimerState(BaseState):
     def update(self):
         self._doUpdate = True
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         self._doShow = True
 
     def _onExited(self):

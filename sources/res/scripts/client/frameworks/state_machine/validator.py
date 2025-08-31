@@ -1,7 +1,10 @@
+import typing
 from . import states as _states
 from . import visitor
 from .exceptions import StateMachineError
-from .transitions import BaseTransition
+if typing.TYPE_CHECKING:
+    from .transitions import BaseTransition
+    from . import StateMachine
 
 def _validateTransition(transition, upper=None):
     source = transition.getSource()
@@ -10,6 +13,8 @@ def _validateTransition(transition, upper=None):
     targets = transition.getTargets()
     if not targets:
         raise StateMachineError(('{} has no targets').format(transition))
+    if None in targets:
+        raise StateMachineError(('{} cannot have a None target').format(transition))
     if visitor.getLCA([source] + targets, upper=upper) is None:
         raise StateMachineError(('States have no LCA in {}').format(transition))
     return
@@ -17,9 +22,8 @@ def _validateTransition(transition, upper=None):
 
 def _validateInitialState(state):
     initial = state.getInitial()
-    if initial is None:
+    if not initial:
         raise StateMachineError(('{} has no initial state').format(state))
-    return
 
 
 def _validateState(state, machine):

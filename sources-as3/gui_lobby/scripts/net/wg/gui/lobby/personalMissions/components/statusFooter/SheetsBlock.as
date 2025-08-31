@@ -58,6 +58,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
          super.draw();
          if(this._data != null && isInvalid(InvalidationType.DATA))
          {
+            this.visible = this._data.visible;
             this.freeSheetsTf.htmlText = this._data.freeSheetsText;
             this.pawnedSheetsTf.htmlText = this._data.pawnedSheetsText;
             icon.source = this._data.freeSheetsIcon;

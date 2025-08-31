@@ -41,6 +41,11 @@ package net.wg.mock
       {
       }
       
+      public function allowFocusNextLayer(param1:String) : Boolean
+      {
+         return false;
+      }
+      
       public function areInaccessibleObjectsUnderPoint(param1:Point) : Boolean
       {
          return false;
@@ -122,6 +127,11 @@ package net.wg.mock
       {
       }
       
+      public function isDisposed() : Boolean
+      {
+         return false;
+      }
+      
       public function localToGlobal(param1:Point) : Point
       {
          return null;
@@ -174,7 +184,7 @@ package net.wg.mock
       {
       }
       
-      public function setFocusedView(param1:IManagedContent) : void
+      public function setFocusedView(param1:IManagedContent, param2:Boolean = false) : void
       {
       }
       
@@ -202,7 +212,7 @@ package net.wg.mock
       {
       }
       
-      public function tryToSetFocus(param1:Boolean = false) : Boolean
+      public function tryToSetFocus(param1:Boolean = false, param2:Boolean = false) : Boolean
       {
          return false;
       }
@@ -211,13 +221,18 @@ package net.wg.mock
       {
       }
       
-      public function updateStage(param1:Number, param2:Number) : void
+      public function updateStage(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
       }
       
       public function willTrigger(param1:String) : Boolean
       {
          return false;
+      }
+      
+      public function get paddings() : Rectangle
+      {
+         return null;
       }
       
       public function get layer() : int
@@ -674,11 +689,6 @@ package net.wg.mock
       
       public function handleInput(param1:InputEvent) : void
       {
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return false;
       }
    }
 }

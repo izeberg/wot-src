@@ -204,7 +204,10 @@ package net.wg.gui.lobby.header
          this.fightBtn.removeEventListener(ButtonEvent.CLICK,this.onFightBtnClickHandler);
          this.fightBtn.removeEventListener(MouseEvent.MOUSE_OVER,this.onFightBtnMouseOverHandler);
          this.fightBtn.removeEventListener(MouseEvent.MOUSE_OUT,this.onFightBtnMouseOutHandler);
-         this.unregisterPR2WidgetBtn();
+         if(isDAAPIInited)
+         {
+            this.unregisterPR2WidgetBtn();
+         }
          super.onBeforeDispose();
       }
       
@@ -239,8 +242,11 @@ package net.wg.gui.lobby.header
          this.centerBg = null;
          this.centerMenuBg.dispose();
          this.centerMenuBg = null;
-         constraints.dispose();
-         constraints = null;
+         if(constraints)
+         {
+            constraints.dispose();
+            constraints = null;
+         }
          this._counterManager = null;
          this._scheduler = null;
          this._utils = null;
@@ -707,7 +713,10 @@ package net.wg.gui.lobby.header
          this.headerButtonBar.updateScreen(_loc1_,_loc4_,_loc2_,_loc3_);
          this.sparks.x = this.fightBtn.x + SPARKS_OFFSET_X;
          this.sparks.y = this.fightBtn.y + SPARKS_OFFSET_Y;
-         movePlatoonPopoverS(this.getSquadButtonMiddleXPosition(this._headerButtonsHelper.searchButtonById(HeaderButtonsHelper.ITEM_ID_SQUAD)));
+         if(isDAAPIInited)
+         {
+            movePlatoonPopoverS(this.getSquadButtonMiddleXPosition(this._headerButtonsHelper.searchButtonById(HeaderButtonsHelper.ITEM_ID_SQUAD)));
+         }
          dispatchEvent(new LifeCycleEvent(LifeCycleEvent.ON_GRAPHICS_RECTANGLES_UPDATE));
       }
       
@@ -864,7 +873,10 @@ package net.wg.gui.lobby.header
       
       private function onButtonBarHeaderItemsRepositionHandler(param1:HeaderEvents) : void
       {
-         movePlatoonPopoverS(this.getSquadButtonMiddleXPosition(this._headerButtonsHelper.searchButtonById(HeaderButtonsHelper.ITEM_ID_SQUAD)));
+         if(isDAAPIInited)
+         {
+            movePlatoonPopoverS(this.getSquadButtonMiddleXPosition(this._headerButtonsHelper.searchButtonById(HeaderButtonsHelper.ITEM_ID_SQUAD)));
+         }
       }
       
       private function onFightBtnMouseOverHandler(param1:MouseEvent) : void

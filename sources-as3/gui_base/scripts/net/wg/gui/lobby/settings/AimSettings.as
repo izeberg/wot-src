@@ -72,6 +72,8 @@ package net.wg.gui.lobby.settings
       private static const CONTOUR_PENETRABLE_ZONE_TAB_NAME:String = "contourPenetrableZone";
       
       private static const CONTOUR_IMPENETRABLE_ZONE_TAB_NAME:String = "contourImpenetrableZone";
+      
+      private static const ARMOR_FLASHLIGHT_TAB_INDEX:int = 4;
        
       
       private var _aimData:AimSettingsDataVo = null;
@@ -115,6 +117,7 @@ package net.wg.gui.lobby.settings
          sniperForm.addEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
          spgForm.addEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
          contourForm.addEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
+         armorFlashlightForm.addEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
       }
       
       override protected function setData(param1:SettingsDataVo) : void
@@ -173,10 +176,14 @@ package net.wg.gui.lobby.settings
          tabs.removeEventListener(IndexEvent.INDEX_CHANGE,this.onTabIndexChangeHandler);
          arcadeForm.removeEventListener(SettingsSubVewEvent.ON_CONTROL_CHANGE,this.onFormAimOnControlChangeHandler);
          sniperForm.removeEventListener(SettingsSubVewEvent.ON_CONTROL_CHANGE,this.onFormAimOnControlChangeHandler);
+         spgForm.removeEventListener(SettingsSubVewEvent.ON_CONTROL_CHANGE,this.onFormAimOnControlChangeHandler);
+         contourForm.removeEventListener(SettingsSubVewEvent.ON_CONTROL_CHANGE,this.onFormAimOnControlChangeHandler);
+         armorFlashlightForm.removeEventListener(SettingsSubVewEvent.ON_CONTROL_CHANGE,this.onFormAimOnControlChangeHandler);
          arcadeForm.removeEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
          sniperForm.removeEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
          spgForm.removeEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
          contourForm.removeEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
+         armorFlashlightForm.removeEventListener(SettingViewEvent.ON_CONTROL_NEW_COUNTERS_VISITED,this.onFormOnControlNewCountersVisitedHandler);
          this._colorSchemeMgr.removeEventListener(ColorSchemeEvent.SCHEMAS_UPDATED,this.onColorSchemesUpdatedHandler);
          this._colorSchemeMgr = null;
          super.onBeforeDispose();
@@ -313,6 +320,11 @@ package net.wg.gui.lobby.settings
             }
          }
          gunMarker.setSettings(_loc17_,_loc16_,_loc15_,_loc14_);
+         armorFlashlight.visible = param1 == ARMOR_FLASHLIGHT_TAB_INDEX;
+         if(armorFlashlight.visible)
+         {
+            armorFlashlight.setData(this._aimData.armorFlashlight,this._dynamicCursorsData[_loc2_]);
+         }
       }
       
       private function onFormOnControlNewCountersVisitedHandler(param1:SettingViewEvent) : void
@@ -334,6 +346,10 @@ package net.wg.gui.lobby.settings
          {
             this._dynamicCursorsData[_loc2_][param1.controlId] = param1.controlValue;
          }
+         if(_loc2_ == SettingsConfigHelper.ARMOR_FLASHLIGHT_STR)
+         {
+            _loc2_ = null;
+         }
          dispatchEvent(new SettingViewEvent(SettingViewEvent.ON_CONTROL_CHANGED,viewId,_loc2_,_loc3_,param1.controlValue));
          this.updateCrosshairs(this._currentTab);
       }
@@ -350,6 +366,7 @@ package net.wg.gui.lobby.settings
          artyShotIndicatorsPanel.setDummyData(_loc2_);
          artyShotNotify.gotoAndStop(!!_loc2_ ? ARTY_SHOT_NOTIFY_COLORBLIND : ARTY_SHOT_NOTIFY_NORMAL);
          contourCrosshair.isColorBlind = _loc2_;
+         armorFlashlight.setIsColorBlind(_loc2_);
       }
    }
 }
