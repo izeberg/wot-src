@@ -133,17 +133,15 @@ msgstr "Learn maps"
 
 msgid "mode/random/battlePassTooltip/body"
 msgstr ""
-"By fighting in Tier IV–X vehicles in {whiteSpanish_open}Random Battles "
-"(except for Grand Battles){whiteSpanish_close}, you will earn Points that "
-"allow you to advance through the Battle Pass Progression."
+"By fighting in Tier IV–XI vehicles in {whiteSpanish_open}Random "
+"Battles{whiteSpanish_close}, you will earn Points that allow you to advance "
+"through the Battle Pass Progression."
 
 msgid "mode/random/battlePassTooltip/header"
 msgstr "Battle Pass Points"
 
 msgid "mode/random/condition"
-msgstr ""
-"15v15 %(parSecondary_open)sI%(parSecondary_close)s 30v30 "
-"%(parSecondary_open)sI%(parSecondary_close)s Tiers&nbsp;I–X"
+msgstr "15v15 %(parSecondary_open)sI%(parSecondary_close)s Tiers&nbsp;I–XI"
 
 msgid "mode/random/description"
 msgstr "Battles with automatic matchmaking."
@@ -203,30 +201,12 @@ msgstr "Introductory battles."
 msgid "novelty"
 msgstr "NEW"
 
-msgid "popover/assault"
-msgstr "Assault"
-
-msgid "popover/default"
-msgstr "Standard Battle"
-
-msgid "popover/devMaps"
-msgstr "Maps Under Development"
-
-msgid "popover/domination"
-msgstr "Encounter Battle"
-
-msgid "popover/epicStandard"
-msgstr "Grand Battle"
-
-msgid "popover/header"
-msgstr "Battle Modes"
-
 msgid "ranked/widget/qualBattles"
 msgstr ""
 "Battles in Qualification: %(current) %(par_open)s/ %(max)%(par_close)s"
 
 msgid "reward/attachment/description"
-msgstr "You can receive unique 3D Attachments for playing the mode."
+msgstr "You can receive unique 3D attachments for playing the mode."
 
 msgid "reward/attachment/name"
 msgstr "3D Attachments"
@@ -260,6 +240,13 @@ msgstr "The reward is determined according to your battle performance."
 
 msgid "reward/experience/name"
 msgstr "Experience"
+
+msgid "reward/experimentalEquipment/description"
+msgstr ""
+"You can receive different Experimental Equipment for playing the mode."
+
+msgid "reward/experimentalEquipment/name"
+msgstr "Special Equipment"
 
 msgid "reward/improvedEquipment/description"
 msgstr "You can receive the %(name)s for playing the mode."

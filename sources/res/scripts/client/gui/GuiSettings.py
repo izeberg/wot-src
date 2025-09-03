@@ -121,7 +121,7 @@ _DEFAULT_SETTINGS = {'registrationURL': '',
    'premiumInfo': {}, 'crew': {'welcomeScreens': {}}, 'checkPromoFrequencyInBattles': 5, 
    'vivoxLicense': '', 
    'spgHitDirectionDelta': 10.0, 
-   'vehicleDisclaimerURLs': {}}
+   'vehicleDisclaimerURLs': {}, 'reportContentURL': ''}
 
 class GuiSettings(object):
 

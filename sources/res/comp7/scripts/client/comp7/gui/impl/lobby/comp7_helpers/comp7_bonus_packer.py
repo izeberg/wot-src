@@ -1,6 +1,4 @@
 import logging, typing
-from comp7_common_const import offerRewardGiftToken
-from shared_utils import findFirst, first
 from comp7.gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as COMP7_TOOLTIPS
 from comp7.gui.impl.gen.view_models.views.lobby.comp7_bonus_model import Comp7BonusModel, DogTagType
 from comp7.gui.impl.gen.view_models.views.lobby.comp7_style_bonus_model import Comp7StyleBonusModel
@@ -9,6 +7,7 @@ from comp7.gui.impl.lobby.comp7_helpers.comp7_c11n_helpers import getComp7Progre
 from comp7.gui.impl.lobby.comp7_helpers.comp7_quest_helpers import isComp7OfferYearlyRewardToken
 from comp7.gui.selectable_reward.common import Comp7SelectableRewardManager
 from comp7.gui.server_events.bonuses import COMP7_TOKEN_WEEKLY_REWARD_NAME
+from comp7_common_const import offerRewardGiftToken
 from dog_tags_common.components_config import componentConfigAdapter
 from dog_tags_common.config.common import ComponentViewType
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
@@ -26,6 +25,7 @@ from gui.shared.money import Currency
 from helpers import dependency
 from items import tankmen
 from items.tankmen import getNationConfig
+from shared_utils import findFirst, first
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import IComp7Controller
 from skeletons.gui.offers import IOffersDataProvider
@@ -55,6 +55,7 @@ _YEARLY_REWARD_META_BONUSES_ORDER = (
  BonusTypes.OFFER, BonusTypes.RENT_VEHICLE, BonusTypes.STYLE_3D_PROGRESS, BonusTypes.TOKEN, BonusTypes.STYLE_3D,
  BonusTypes.BADGE_SUFFIX, BonusTypes.BADGE, BonusTypes.CREW, BonusTypes.ACHIEVEMENT,
  BonusTypes.CRYSTAL, BonusTypes.STYLE)
+_OFFER_REWARDS_ORDER = ('deluxe', 'modernized_devices_t3')
 
 def _getComp7BonusPackersMap():
     mapping = getDefaultBonusPackersMap()
@@ -281,7 +282,7 @@ class Comp7YearlyCrewBonusUIPacker(TankmenBonusUIPacker):
         cls._packCommon(bonus, model)
         model.setName('onslaught_yearly_crew')
         model.setLabel(backport.text(R.strings.comp7_ext.yearlyRewards.rewards.crew()))
-        model.setTooltipContentId(str(R.views.comp7.lobby.tooltips.CrewMembersTooltip()))
+        model.setTooltipContentId(str(R.views.comp7.mono.lobby.tooltips.crew_members_tooltip()))
         return [
          model]
 
@@ -324,7 +325,7 @@ class Comp7OfferBonusUIPacker(BaseBonusUIPacker):
     def _pack(cls, bonus):
         giftCountPerToken = cls._selectableRewardManager.getGiftCountPerToken(bonus)
         models = []
-        for offerToken in bonus.getValue().iterkeys():
+        for offerToken in sorted(bonus.getValue().iterkeys(), key=_getOfferRewardTokensSortKey(_OFFER_REWARDS_ORDER)):
             giftCount = giftCountPerToken.get(offerToken)
             if giftCount <= 0:
                 continue
@@ -462,6 +463,18 @@ def _getSortKey(order):
         bonusType = getBonusType(bonus)
         try:
             return order.index(bonusType)
+        except ValueError:
+            return len(order)
+
+    return getSortKey
+
+
+def _getOfferRewardTokensSortKey(order):
+
+    def getSortKey(token):
+        reward = token.split(':')[(-1)]
+        try:
+            return order.index(reward)
         except ValueError:
             return len(order)
 

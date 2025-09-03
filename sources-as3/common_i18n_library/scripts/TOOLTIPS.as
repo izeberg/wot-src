@@ -285,6 +285,10 @@ package
       
       public static const LIMITEDUISETTINGBLOCK_INFO:String = "#tooltips:limitedUISettingBlock/info";
       
+      public static const ARMORFLASHLIGHT_PERFORMANCEIMPACTINFO:String = "#tooltips:armorFlashlight/performanceImpactInfo";
+      
+      public static const ARMORFLASHLIGHT_RESOLUTIONSCALINGINFO:String = "#tooltips:armorFlashlight/resolutionScalingInfo";
+      
       public static const CUSTOMIZATION_SCROLLBAR_BOOKMARK:String = "#tooltips:customization/scrollbar/bookmark";
       
       public static const GAMMA:String = "#tooltips:gamma";
@@ -873,6 +877,18 @@ package
       
       public static const LIMITEDUISETTINGBLOCK_INFO_ATTENTION:String = "#tooltips:limitedUISettingBlock/info/attention";
       
+      public static const ARMORFLASHLIGHT_PERFORMANCEIMPACTINFO_HEADER:String = "#tooltips:armorFlashlight/performanceImpactInfo/header";
+      
+      public static const ARMORFLASHLIGHT_PERFORMANCEIMPACTINFO_BODY:String = "#tooltips:armorFlashlight/performanceImpactInfo/body";
+      
+      public static const ARMORFLASHLIGHT_PERFORMANCEIMPACTINFO_ATTENTION:String = "#tooltips:armorFlashlight/performanceImpactInfo/attention";
+      
+      public static const ARMORFLASHLIGHT_RESOLUTIONSCALINGINFO_HEADER:String = "#tooltips:armorFlashlight/resolutionScalingInfo/header";
+      
+      public static const ARMORFLASHLIGHT_RESOLUTIONSCALINGINFO_BODY:String = "#tooltips:armorFlashlight/resolutionScalingInfo/body";
+      
+      public static const ARMORFLASHLIGHT_RESOLUTIONSCALINGINFO_ATTENTION:String = "#tooltips:armorFlashlight/resolutionScalingInfo/attention";
+      
       public static const GAMMA_HEADER:String = "#tooltips:gamma/header";
       
       public static const GAMMA_BODY:String = "#tooltips:gamma/body";
@@ -1209,8 +1225,6 @@ package
       
       public static const REDBUTTON_DISABLED_VEHICLE_NOT_SUPPORTED_BODY:String = "#tooltips:redButton/disabled/vehicle/not_supported/body";
       
-      public static const REDBUTTON_DISABLED_VEHICLE_TOOHEAVY_BODY:String = "#tooltips:redButton/disabled/vehicle/tooHeavy/body";
-      
       public static const REDBUTTON_DISABLED_CREW_NOTFULL_HEADER:String = "#tooltips:redButton/disabled/crew/notFull/header";
       
       public static const REDBUTTON_DISABLED_CREW_NOTFULL_BODY:String = "#tooltips:redButton/disabled/crew/notFull/body";
@@ -1252,8 +1266,6 @@ package
       public static const HANGAR_STARTBTN_BATTLEROYALESQUADNOTREADY_NOTREADY_BODY:String = "#tooltips:hangar/startBtn/battleRoyaleSquadNotReady/notReady/body";
       
       public static const HANGAR_STARTBTN_PREVIEW_BODY:String = "#tooltips:hangar/startBtn/preview/body";
-      
-      public static const HANGAR_STARTBTN_VEHICLETOHEAVY_BODY:String = "#tooltips:hangar/startBtn/vehicleToHeavy/body";
       
       public static const HANGAR_STARTBTN_MAPSTRAINING_NOTREADY_HEADER:String = "#tooltips:hangar/startBtn/mapsTraining/notReady/header";
       
@@ -1665,25 +1677,9 @@ package
       
       public static const MODULEFITS_NEED_GUN_TEXT:String = "#tooltips:moduleFits/need_gun/text";
       
-      public static const MODULEFITS_TOO_HEAVY_CHASSIS_HEADER:String = "#tooltips:moduleFits/too_heavy_chassis/header";
-      
-      public static const MODULEFITS_TOO_HEAVY_CHASSIS_TEXT:String = "#tooltips:moduleFits/too_heavy_chassis/text";
-      
-      public static const MODULEFITS_TOO_HEAVY_HEADER:String = "#tooltips:moduleFits/too_heavy/header";
-      
-      public static const MODULEFITS_TOO_HEAVY_TEXT:String = "#tooltips:moduleFits/too_heavy/text";
-      
-      public static const MODULEFITS_TOO_HEAVY_CHASSI_HEADER:String = "#tooltips:moduleFits/too_heavy_chassi/header";
-      
-      public static const MODULEFITS_TOO_HEAVY_CHASSI_TEXT:String = "#tooltips:moduleFits/too_heavy_chassi/text";
-      
       public static const MODULEFITS_NOT_FOR_THIS_VEHICLE_TYPE_HEADER:String = "#tooltips:moduleFits/not_for_this_vehicle_type/header";
       
       public static const MODULEFITS_NOT_FOR_THIS_VEHICLE_TYPE_TEXT:String = "#tooltips:moduleFits/not_for_this_vehicle_type/text";
-      
-      public static const MODULEFITS_REMOVE_TOO_HEAVY_HEADER:String = "#tooltips:moduleFits/remove_too_heavy/header";
-      
-      public static const MODULEFITS_REMOVE_TOO_HEAVY_TEXT:String = "#tooltips:moduleFits/remove_too_heavy/text";
       
       public static const MODULEFITS_ALREADY_INSTALLED_HEADER:String = "#tooltips:moduleFits/already_installed/header";
       
@@ -1744,18 +1740,6 @@ package
       public static const DEVICEFITS_NEED_TURRET_HEADER:String = "#tooltips:deviceFits/need_turret/header";
       
       public static const DEVICEFITS_NEED_TURRET_TEXT:String = "#tooltips:deviceFits/need_turret/text";
-      
-      public static const DEVICEFITS_TOO_HEAVY_HEADER:String = "#tooltips:deviceFits/too_heavy/header";
-      
-      public static const DEVICEFITS_TOO_HEAVY_TEXT:String = "#tooltips:deviceFits/too_heavy/text";
-      
-      public static const DEVICEFITS_TOO_HEAVY_CHASSI_HEADER:String = "#tooltips:deviceFits/too_heavy_chassi/header";
-      
-      public static const DEVICEFITS_TOO_HEAVY_CHASSI_TEXT:String = "#tooltips:deviceFits/too_heavy_chassi/text";
-      
-      public static const DEVICEFITS_REMOVE_TOO_HEAVY_HEADER:String = "#tooltips:deviceFits/remove_too_heavy/header";
-      
-      public static const DEVICEFITS_REMOVE_TOO_HEAVY_TEXT:String = "#tooltips:deviceFits/remove_too_heavy/text";
       
       public static const DEVICEFITS_ALREADY_INSTALLED_HEADER:String = "#tooltips:deviceFits/already_installed/header";
       
@@ -2213,6 +2197,8 @@ package
       
       public static const LEVEL_10:String = "#tooltips:level/10";
       
+      public static const LEVEL_11:String = "#tooltips:level/11";
+      
       public static const VEHICLE_INVENTORYCOUNT:String = "#tooltips:vehicle/inventoryCount";
       
       public static const BATTLEBOOSTER_INVENTORYCOUNT:String = "#tooltips:battleBooster/inventoryCount";
@@ -2230,6 +2216,10 @@ package
       public static const VEHICLE_LEVEL_AND_TYPE:String = "#tooltips:vehicle/level_and_type";
       
       public static const VEHICLE_CREW:String = "#tooltips:vehicle/crew";
+      
+      public static const VEHICLE_CREWROLES:String = "#tooltips:vehicle/crewRoles";
+      
+      public static const VEHICLE_ROLE:String = "#tooltips:vehicle/role";
       
       public static const VEHICLE_CREW_AWARD:String = "#tooltips:vehicle/crew_award";
       
@@ -2295,9 +2285,21 @@ package
       
       public static const VEHICLE_WOTPLUSRENTING:String = "#tooltips:vehicle/wotPlusRenting";
       
+      public static const VEHICLE_WOTPLUSRENTING_TITLE:String = "#tooltips:vehicle/wotPlusRenting/title";
+      
       public static const VEHICLE_WOTPLUSRENTING_INACTIVE:String = "#tooltips:vehicle/wotPlusRenting/inactive";
       
       public static const VEHICLE_WOTPLUSRENTING_REMAININGTIME:String = "#tooltips:vehicle/wotPlusRenting/remainingTime";
+      
+      public static const VEHICLE_BATTLEPASS_EARNINGLIMIT:String = "#tooltips:vehicle/battlePass/earningLimit";
+      
+      public static const VEHICLE_BATTLEPASS_REWARD:String = "#tooltips:vehicle/battlePass/reward";
+      
+      public static const VEHICLE_BATTLEPASS_LIMITREACHED:String = "#tooltips:vehicle/battlePass/limitReached";
+      
+      public static const VEHICLE_BONDS_EARNINGLIMIT:String = "#tooltips:vehicle/bonds/earningLimit";
+      
+      public static const VEHICLE_BONDS_LIMITREACHED:String = "#tooltips:vehicle/bonds/limitReached";
       
       public static const VEHICLE_TELECOMRENTAL_REMAININGTIME_DAYS:String = "#tooltips:vehicle/telecomRental/remainingTime/days";
       
@@ -2431,8 +2433,6 @@ package
       
       public static const VEHICLESTATUS_CREWNOTFULL_HEADER:String = "#tooltips:vehicleStatus/crewNotFull/header";
       
-      public static const VEHICLESTATUS_TOOHEAVY_HEADER:String = "#tooltips:vehicleStatus/tooHeavy/header";
-      
       public static const VEHICLESTATUS_NOTUNLOCKED_HEADER:String = "#tooltips:vehicleStatus/notUnlocked/header";
       
       public static const VEHICLESTATUS_INHANGAR_HEADER:String = "#tooltips:vehicleStatus/inHangar/header";
@@ -2553,6 +2553,14 @@ package
       
       public static const TRADEINNOVEHICLES_BODY:String = "#tooltips:tradeInNoVehicles/body";
       
+      public static const TANKCARUSELTOOLTIP_SERVICERECORDS_ELITESYSTEM:String = "#tooltips:tankCaruselTooltip/serviceRecords/eliteSystem";
+      
+      public static const TANKCARUSELTOOLTIP_SERVICERECORDS_PRESTIGEELITESYSTEM:String = "#tooltips:tankCaruselTooltip/serviceRecords/prestigeEliteSystem";
+      
+      public static const TANKCARUSELTOOLTIP_SERVICERECORDS_HEADER:String = "#tooltips:tankCaruselTooltip/serviceRecords/header";
+      
+      public static const TANKCARUSELTOOLTIP_EARNINGS_HEADER:String = "#tooltips:tankCaruselTooltip/earnings/header";
+      
       public static const ITEMSTATUS_NOTENOUGH:String = "#tooltips:itemStatus/notEnough";
       
       public static const TANKCARUSELTOOLTIP_VEHICLETYPE_NORMAL_LIGHTTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/normal/lightTank";
@@ -2574,6 +2582,26 @@ package
       public static const TANKCARUSELTOOLTIP_VEHICLETYPE_ELITE_AT_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/elite/AT-SPG";
       
       public static const TANKCARUSELTOOLTIP_VEHICLETYPE_ELITE_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/elite/SPG";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_NORMAL_LIGHTTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/normal/lightTank";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_NORMAL_MEDIUMTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/normal/mediumTank";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_NORMAL_HEAVYTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/normal/heavyTank";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_NORMAL_AT_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/normal/AT_SPG";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_NORMAL_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/normal/SPG";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_ELITE_LIGHTTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/elite/lightTank";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_ELITE_MEDIUMTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/elite/mediumTank";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_ELITE_HEAVYTANK:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/elite/heavyTank";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_ELITE_AT_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/elite/AT_SPG";
+      
+      public static const TANKCARUSELTOOLTIP_VEHICLETYPE_TIER_ELITE_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/tier/elite/SPG";
       
       public static const TANKMAN_SECTION_CURRENTVEHICLE:String = "#tooltips:tankman/section/currentVehicle";
       
@@ -2781,6 +2809,8 @@ package
       
       public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_NATIONALDESCRIPTION:String = "#tooltips:blueprint/BlueprintFragmentTooltip/nationalDescription";
       
+      public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_NATIONALDESCRIPTIONTIER:String = "#tooltips:blueprint/BlueprintFragmentTooltip/nationalDescriptionTier";
+      
       public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_INTELFRAGMENT:String = "#tooltips:blueprint/BlueprintFragmentTooltip/intelFragment";
       
       public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_RANDOMNATIONAL_HEADER:String = "#tooltips:blueprint/BlueprintFragmentTooltip/randomNational/header";
@@ -2800,6 +2830,8 @@ package
       public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_RANDOM_DESCRIPTION:String = "#tooltips:blueprint/BlueprintFragmentTooltip/random/description";
       
       public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_INTELDESCRIPTION:String = "#tooltips:blueprint/BlueprintFragmentTooltip/intelDescription";
+      
+      public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_INTELDESCRIPTIONTIER:String = "#tooltips:blueprint/BlueprintFragmentTooltip/intelDescriptionTier";
       
       public static const BLUEPRINT_BLUEPRINTFRAGMENTTOOLTIP_ADDITIONALINFO:String = "#tooltips:blueprint/BlueprintFragmentTooltip/additionalInfo";
       
@@ -4017,6 +4049,10 @@ package
       
       public static const AWARDITEM_EXCLUDED_MAP_BODY:String = "#tooltips:awardItem/excluded_map/body";
       
+      public static const AWARDITEM_EXCLUDED_MAPS_HEADER:String = "#tooltips:awardItem/excluded_maps/header";
+      
+      public static const AWARDITEM_EXCLUDED_MAPS_BODY:String = "#tooltips:awardItem/excluded_maps/body";
+      
       public static const AWARDITEM_FREE_EQUIPMENT_DEMOUNTING_HEADER:String = "#tooltips:awardItem/free_equipment_demounting/header";
       
       public static const AWARDITEM_FREE_EQUIPMENT_DEMOUNTING_BODY:String = "#tooltips:awardItem/free_equipment_demounting/body";
@@ -4253,6 +4289,110 @@ package
       
       public static const LOBBYMENU_VERSIONINFOBUTTON_MINICLIENT_BODY:String = "#tooltips:lobbyMenu/versionInfoButton/miniclient/body";
       
+      public static const TANK_PARAMS_DESC_FURYMAXRELOADEFFAVGDPM:String = "#tooltips:tank_params/desc/furyMaxReloadEffAvgDpm";
+      
+      public static const TANK_PARAMS_DESC_FURYMAXRELOADEFFICIENCYLEVEL:String = "#tooltips:tank_params/desc/furyMaxReloadEfficiencyLevel";
+      
+      public static const TANK_PARAMS_DESC_FURYRELOADSPEEDBONUSPEREFFICIENCYLEVEL:String = "#tooltips:tank_params/desc/furyReloadSpeedBonusPerEfficiencyLevel";
+      
+      public static const TANK_PARAMS_DESC_FURYRELOADEFFICIENCYLEVELDURATION:String = "#tooltips:tank_params/desc/furyReloadEfficiencyLevelDuration";
+      
+      public static const TANK_PARAMS_DESC_FURYRELOADEFFICIENCYLEVELPERHIT:String = "#tooltips:tank_params/desc/furyReloadEfficiencyLevelPerHit";
+      
+      public static const TANK_PARAMS_DESC_FURYRELOADEFFICIENCYLEVELPERDESTRUCTION:String = "#tooltips:tank_params/desc/furyReloadEfficiencyLevelPerDestruction";
+      
+      public static const TANK_PARAMS_DESC_ACCURACYDISPERSIONCAP:String = "#tooltips:tank_params/desc/accuracyDispersionCap";
+      
+      public static const TANK_PARAMS_DESC_ACCURACYWHILEMOVINGDISPERSIONCAP:String = "#tooltips:tank_params/desc/accuracyWhileMovingDispersionCap";
+      
+      public static const TANK_PARAMS_DESC_MAXACCURACYLEVEL:String = "#tooltips:tank_params/desc/maxAccuracyLevel";
+      
+      public static const TANK_PARAMS_DESC_ACCURACYDISPERSIONPERLEVEL:String = "#tooltips:tank_params/desc/accuracyDispersionPerLevel";
+      
+      public static const TANK_PARAMS_DESC_ACCURACYSPEEDLIMIT:String = "#tooltips:tank_params/desc/accuracySpeedLimit";
+      
+      public static const TANK_PARAMS_DESC_ACCURACYLEVELGAINTIME:String = "#tooltips:tank_params/desc/accuracyLevelGainTime";
+      
+      public static const TANK_PARAMS_DESC_PREHEATDMGCAP:String = "#tooltips:tank_params/desc/preheatDmgCap";
+      
+      public static const TANK_PARAMS_DESC_PREHEATDISPERSIONCAP:String = "#tooltips:tank_params/desc/preheatDispersionCap";
+      
+      public static const TANK_PARAMS_DESC_PREHEATTIMETOFULL:String = "#tooltips:tank_params/desc/preheatTimeToFull";
+      
+      public static const TANK_PARAMS_DESC_PREHEATTIMETOZERO:String = "#tooltips:tank_params/desc/preheatTimeToZero";
+      
+      public static const TANK_PARAMS_DESC_PREHEATSPEEDLIMIT:String = "#tooltips:tank_params/desc/preheatSpeedLimit";
+      
+      public static const TANK_PARAMS_DESC_PREHEATTRANSITIONDELAY:String = "#tooltips:tank_params/desc/preheatTransitionDelay";
+      
+      public static const TANK_PARAMS_DESC_ENGINEPOWERWITHBOOSTERS:String = "#tooltips:tank_params/desc/enginePowerWithBoosters";
+      
+      public static const TANK_PARAMS_DESC_TOPSPEEDWITHBOOSTERS:String = "#tooltips:tank_params/desc/topSpeedWithBoosters";
+      
+      public static const TANK_PARAMS_DESC_REVERSESPEEDREDUCTIONWITHBOOSTERS:String = "#tooltips:tank_params/desc/reverseSpeedReductionWithBoosters";
+      
+      public static const TANK_PARAMS_DESC_TRAVERSESPEEDREDUCTIONWITHBOOSTERS:String = "#tooltips:tank_params/desc/traverseSpeedReductionWithBoosters";
+      
+      public static const TANK_PARAMS_DESC_BOOSTERDURATION:String = "#tooltips:tank_params/desc/boosterDuration";
+      
+      public static const TANK_PARAMS_DESC_BOOSTERCOOLINGTIME:String = "#tooltips:tank_params/desc/boosterCoolingTime";
+      
+      public static const TANK_PARAMS_DESC_REACTIVATIONLIMIT:String = "#tooltips:tank_params/desc/reactivationLimit";
+      
+      public static const TANK_PARAMS_DESC_REACTIVATIONDELAY:String = "#tooltips:tank_params/desc/reactivationDelay";
+      
+      public static const TANK_PARAMS_DESC_HEATAVGDMGPERLVL:String = "#tooltips:tank_params/desc/heatAvgDmgPerLvl";
+      
+      public static const TANK_PARAMS_DESC_HEATTIMETOREACHLEVEL:String = "#tooltips:tank_params/desc/heatTimeToReachLevel";
+      
+      public static const TANK_PARAMS_DESC_HEATTIMEBEFOREOVERHEAT:String = "#tooltips:tank_params/desc/heatTimeBeforeOverheat";
+      
+      public static const TANK_PARAMS_DESC_HEATCHARGEOVERHEATDURATION:String = "#tooltips:tank_params/desc/heatChargeOverheatDuration";
+      
+      public static const TANK_PARAMS_DESC_PASSIVECOINCIDECESHOOTINGCHARGE:String = "#tooltips:tank_params/desc/passiveCoincideceShootingCharge";
+      
+      public static const TANK_PARAMS_DESC_ACTIVECOINCIDECESHOOTINGCHARGE:String = "#tooltips:tank_params/desc/activeCoincideceShootingCharge";
+      
+      public static const TANK_PARAMS_DESC_COINCIDENCEELECTROMECHANICALSIGHTDURATION:String = "#tooltips:tank_params/desc/coincidenceElectromechanicalSightDuration";
+      
+      public static const TANK_PARAMS_DESC_AIMINGTIMECOINCIDENCEELECTROMECHANICALSIGHT:String = "#tooltips:tank_params/desc/aimingTimeCoincidenceElectromechanicalSight";
+      
+      public static const TANK_PARAMS_DESC_DISPERSIONAT100MCOINCIDENCEELECTROMECHANICALSIGHT:String = "#tooltips:tank_params/desc/dispersionAt100mCoincidenceElectromechanicalSight";
+      
+      public static const TANK_PARAMS_DESC_RELOADTIMECOINCIDENCE:String = "#tooltips:tank_params/desc/reloadTimeCoincidence";
+      
+      public static const TANK_PARAMS_DESC_SWITCHENGINEMODEBOTHMODES:String = "#tooltips:tank_params/desc/switchEngineModeBothModes";
+      
+      public static const TANK_PARAMS_DESC_TURBOSPEEDCAP:String = "#tooltips:tank_params/desc/turboSpeedCap";
+      
+      public static const TANK_PARAMS_DESC_ENGINETURBOPOWERCAP:String = "#tooltips:tank_params/desc/engineTurboPowerCap";
+      
+      public static const TANK_PARAMS_DESC_AIMINGTIMETURBO:String = "#tooltips:tank_params/desc/aimingTimeTurbo";
+      
+      public static const TANK_PARAMS_DESC_MOVEMENTTRAVERSEDISPERSIONTURBO:String = "#tooltips:tank_params/desc/movementTraverseDispersionTurbo";
+      
+      public static const TANK_PARAMS_DESC_HULLTRAVERSEDISPERSIONTURBO:String = "#tooltips:tank_params/desc/hullTraverseDispersionTurbo";
+      
+      public static const TANK_PARAMS_DESC_GUNTRAVERSEDISPERSIONTURBO:String = "#tooltips:tank_params/desc/gunTraverseDispersionTurbo";
+      
+      public static const TANK_PARAMS_DESC_IONAFTERBURNERPASSIVETURBOCHARGE:String = "#tooltips:tank_params/desc/ionAfterburnerPassiveTurboCharge";
+      
+      public static const TANK_PARAMS_DESC_IONAFTERBURNERACTIVETURBOCHARGE:String = "#tooltips:tank_params/desc/ionAfterburnerActiveTurboCharge";
+      
+      public static const TANK_PARAMS_DESC_IONAFTERBURNERDURATION:String = "#tooltips:tank_params/desc/ionAfterburnerDuration";
+      
+      public static const TANK_PARAMS_DESC_IONAFTERBURNERDURATIONSPEEDCAP:String = "#tooltips:tank_params/desc/ionAfterburnerDurationSpeedCap";
+      
+      public static const TANK_PARAMS_DESC_IONAFTERBURNERDURATIONENGINEPOWER:String = "#tooltips:tank_params/desc/ionAfterburnerDurationEnginePower";
+      
+      public static const TANK_PARAMS_DESC_DESIGNATORINITIALCOOLDOWNS:String = "#tooltips:tank_params/desc/designatorInitialCooldownS";
+      
+      public static const TANK_PARAMS_DESC_DESIGNATORCOOLDOWNS:String = "#tooltips:tank_params/desc/designatorCooldownS";
+      
+      public static const TANK_PARAMS_DESC_DESIGNATORMARKDURATIONS:String = "#tooltips:tank_params/desc/designatorMarkDurationS";
+      
+      public static const TANK_PARAMS_DESC_DESIGNATORMARKEDENEMIESADDITIONALDAMAGE:String = "#tooltips:tank_params/desc/designatorMarkedEnemiesAdditionalDamage";
+      
       public static const TANK_PARAMS_DESC_MAXHEALTH:String = "#tooltips:tank_params/desc/maxHealth";
       
       public static const TANK_PARAMS_DESC_VEHICLEWEIGHT:String = "#tooltips:tank_params/desc/vehicleWeight";
@@ -4262,6 +4402,8 @@ package
       public static const TANK_PARAMS_DESC_ENGINEPOWERPERTON:String = "#tooltips:tank_params/desc/enginePowerPerTon";
       
       public static const TANK_PARAMS_DESC_SPEEDLIMITS:String = "#tooltips:tank_params/desc/speedLimits";
+      
+      public static const TANK_PARAMS_DESC_FORWARDMAXSPEED:String = "#tooltips:tank_params/desc/forwardMaxSpeed";
       
       public static const TANK_PARAMS_DESC_CHASSISROTATIONSPEED:String = "#tooltips:tank_params/desc/chassisRotationSpeed";
       
@@ -4405,6 +4547,48 @@ package
       
       public static const TANK_PARAMS_DESC_DUALACCURACYCOOLINGDELAY:String = "#tooltips:tank_params/desc/dualAccuracyCoolingDelay";
       
+      public static const TANK_PARAMS_DESC_IMPROVEDDAMAGEENEMIESBYRAMMING:String = "#tooltips:tank_params/desc/improvedDamageEnemiesByRamming";
+      
+      public static const TANK_PARAMS_DESC_IMPROVEDDAMAGEENEMIESCHASSISBYRAMMING:String = "#tooltips:tank_params/desc/improvedDamageEnemiesChassisByRamming";
+      
+      public static const TANK_PARAMS_DESC_CONCENTRATIONMODECOOLDOWN:String = "#tooltips:tank_params/desc/concentrationModeCooldown";
+      
+      public static const TANK_PARAMS_DESC_CONCENTRATIONMODEDURATION:String = "#tooltips:tank_params/desc/concentrationModeDuration";
+      
+      public static const TANK_PARAMS_DESC_EXTRASHOTCLIPRELOADTIME:String = "#tooltips:tank_params/desc/extraShotClipReloadTime";
+      
+      public static const TANK_PARAMS_DESC_POWERMODETHRESHOLD:String = "#tooltips:tank_params/desc/powerModeThreshold";
+      
+      public static const TANK_PARAMS_DESC_POWERMODEDURATION:String = "#tooltips:tank_params/desc/powerModeDuration";
+      
+      public static const TANK_PARAMS_DESC_SECONDARYRELOADTIMESECS:String = "#tooltips:tank_params/desc/secondaryReloadTimeSecs";
+      
+      public static const TANK_PARAMS_DESC_SECONDARYTOTALBURSTSIZE:String = "#tooltips:tank_params/desc/secondaryTotalBurstSize";
+      
+      public static const TANK_PARAMS_DESC_SECONDARYAVGDAMAGE:String = "#tooltips:tank_params/desc/secondaryAvgDamage";
+      
+      public static const TANK_PARAMS_DESC_SECONDARYAVGPIERCINGPOWER:String = "#tooltips:tank_params/desc/secondaryAvgPiercingPower";
+      
+      public static const TANK_PARAMS_DESC_PILLBOXHORIZONTALROTATIONSPEED:String = "#tooltips:tank_params/desc/pillboxHorizontalRotationSpeed";
+      
+      public static const TANK_PARAMS_DESC_PILLBOXVERTICALROTATIONSPEED:String = "#tooltips:tank_params/desc/pillboxVerticalRotationSpeed";
+      
+      public static const TANK_PARAMS_DESC_PILLBOXSWITCHONTIME:String = "#tooltips:tank_params/desc/pillboxSwitchOnTime";
+      
+      public static const TANK_PARAMS_DESC_PILLBOXSWITCHOFFTIME:String = "#tooltips:tank_params/desc/pillboxSwitchOffTime";
+      
+      public static const TANK_PARAMS_DESC_CHARGEABLEBURSTPENETRATIONCOUNT:String = "#tooltips:tank_params/desc/chargeableBurstPenetrationCount";
+      
+      public static const TANK_PARAMS_DESC_CHARGEABLEBURSTSIZE:String = "#tooltips:tank_params/desc/chargeableBurstSize";
+      
+      public static const TANK_PARAMS_DESC_CHARGEABLEBURSTRELOAD:String = "#tooltips:tank_params/desc/chargeableBurstReload";
+      
+      public static const TANK_PARAMS_DESC_CHARGEABLEBURSTDISPERSION:String = "#tooltips:tank_params/desc/chargeableBurstDispersion";
+      
+      public static const TANK_PARAMS_DESC_STATIONARYRELOADSWITCHONTIME:String = "#tooltips:tank_params/desc/stationaryReloadSwitchOnTime";
+      
+      public static const TANK_PARAMS_DESC_STATIONARYRELOADSWITCHOFFTIME:String = "#tooltips:tank_params/desc/stationaryReloadSwitchOffTime";
+      
       public static const VEHICLEPARAMS_TITLE_VALUETEMPLATE:String = "#tooltips:vehicleParams/title/valueTemplate";
       
       public static const VEHICLEPARAMS_POSSIBLEBONUSES_DESC:String = "#tooltips:vehicleParams/possibleBonuses/desc";
@@ -4430,6 +4614,8 @@ package
       public static const VEHICLEPARAMS_BONUS_VEHPOSTPROGRESSIONPAIRMODIFICATION_TEMPLATE:String = "#tooltips:vehicleParams/bonus/vehPostProgressionPairModification/template";
       
       public static const VEHICLEPARAMS_BONUS_VEHPOSTPROGRESSIONBASEMODIFICATION_TEMPLATE:String = "#tooltips:vehicleParams/bonus/vehPostProgressionBaseModification/template";
+      
+      public static const VEHICLEPARAMS_BONUS_VEHSKILLTREEPOSTPROGRESSIONBASEMODIFICATION_TEMPLATE:String = "#tooltips:vehicleParams/bonus/vehSkillTreePostProgressionBaseModification/template";
       
       public static const VEHICLEPARAMS_BONUS_EXTRA_CAMOUFLAGEEXTRAS:String = "#tooltips:vehicleParams/bonus/extra/camouflageExtras";
       
@@ -4697,6 +4883,10 @@ package
       
       public static const SETTINGS_SWITCHMODE_BODY:String = "#tooltips:settings/switchMode/body";
       
+      public static const SETTINGS_KEYSPECIALABILITY_TITLE:String = "#tooltips:settings/keySpecialAbility/title";
+      
+      public static const SETTINGS_KEYSPECIALABILITY_BODY:String = "#tooltips:settings/keySpecialAbility/body";
+      
       public static const SHELL_BASIC:String = "#tooltips:shell/basic";
       
       public static const SHELL_BASIC_DESCRIPTION_BOLD:String = "#tooltips:shell/basic/description/bold";
@@ -4916,6 +5106,10 @@ package
       public static const QUESTS_BONUSES_TOKEN_EXCHANGERATE_GOLD_EXCHANGE_HEADER:String = "#tooltips:quests/bonuses/token/exchangeRate/gold_exchange/header";
       
       public static const QUESTS_BONUSES_TOKEN_EXCHANGERATE_EXPERIENCE_TRANSLATION_HEADER:String = "#tooltips:quests/bonuses/token/exchangeRate/experience_translation/header";
+      
+      public static const QUESTS_BONUSES_TOKEN_PERSONAL_MISSIONS_POINTS_HEADER:String = "#tooltips:quests/bonuses/token/personal_missions_points/header";
+      
+      public static const QUESTS_BONUSES_TOKEN_PERSONAL_MISSIONS_POINTS_BODY:String = "#tooltips:quests/bonuses/token/personal_missions_points/body";
       
       public static const HANGAR_HEADER_WGMONEYTOOLTIP_GOLDNAME:String = "#tooltips:hangar/header/wgmoneyTooltip/goldName";
       
@@ -5159,19 +5353,35 @@ package
       
       public static const PERSONALMISSIONS_OPERATION_FOOTER_TITLE_INPROGRESS:String = "#tooltips:personalMissions/operation/footer/title/inProgress";
       
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_TITLE_ONPAUSE:String = "#tooltips:personalMissions/operation/footer/title/onPause";
+      
       public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_COMPLETIONTOKENS:String = "#tooltips:personalMissions/operation/footer/descr/completionTokens";
       
       public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_COMPLETIONTOKENS_PM2:String = "#tooltips:personalMissions/operation/footer/descr/completionTokens/pm2";
       
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_COMPLETIONTOKENS_PM3:String = "#tooltips:personalMissions/operation/footer/descr/completionTokens/pm3";
+      
       public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_FREESHEETS:String = "#tooltips:personalMissions/operation/footer/descr/freeSheets";
       
       public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_QUESTSFULLYDONE:String = "#tooltips:personalMissions/operation/footer/descr/questsFullyDone";
+      
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_MAINREWARDRECEIVED:String = "#tooltips:personalMissions/operation/footer/descr/mainRewardReceived";
       
       public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_POSTPONED:String = "#tooltips:personalMissions/operation/footer/descr/postponed";
       
       public static const PERSONALMISSIONS_OPERATION_FOOTER_TITLE_AVAILABLE:String = "#tooltips:personalMissions/operation/footer/title/available";
       
       public static const PERSONALMISSIONS_OPERATION_FOOTER_TITLE_EXCELLENTDONE:String = "#tooltips:personalMissions/operation/footer/title/excellentDone";
+      
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_DESCR_EXCELLENTDONE:String = "#tooltips:personalMissions/operation/footer/descr/excellentDone";
+      
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_ACTIVATECAMPAIGN_HEADER:String = "#tooltips:personalMissions/operation/footer/activateCampaign/header";
+      
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_ACTIVATECAMPAIGN_BODY:String = "#tooltips:personalMissions/operation/footer/activateCampaign/body";
+      
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_ACTIVATEMISSIONS_HEADER:String = "#tooltips:personalMissions/operation/footer/activateMissions/header";
+      
+      public static const PERSONALMISSIONS_OPERATION_FOOTER_ACTIVATEMISSIONS_BODY:String = "#tooltips:personalMissions/operation/footer/activateMissions/body";
       
       public static const PERSONALMISSIONS_OPERATIONTITLE_COMPLETESTATE_HEADER:String = "#tooltips:personalMissions/operationTitle/completeState/header";
       
@@ -6459,9 +6669,9 @@ package
       
       public static const SQUADBONUS_EXPERIENCE_BODY:String = "#tooltips:squadBonus/experience/body";
       
-      public static const SQUADBONUS_COMPLEX_HEADER:String = "#tooltips:squadBonus/complex/header";
+      public static const SQUADBONUS_COMPLEX_DEFAULT_HEADER:String = "#tooltips:squadBonus/complex/default/header";
       
-      public static const SQUADBONUS_COMPLEX_BODY:String = "#tooltips:squadBonus/complex/body";
+      public static const SQUADBONUS_COMPLEX_DEFAULT_BODY:String = "#tooltips:squadBonus/complex/default/body";
       
       public static const PREM_DASHBOARD_HEADER_BADGESLOT:String = "#tooltips:prem/dashboard/header/badgeSlot";
       
@@ -7204,28 +7414,6 @@ package
       public static const MODE_SELECTOR_UNAVAILABLE_NOTVEHICLES_LEVEL:String = "#tooltips:mode_selector/unavailable/notVehicles/level";
       
       public static const MODE_SELECTOR_POPOVER_BODY:String = "#tooltips:mode_selector/popover/body";
-      
-      public static const MODE_SELECTOR_POPOVER_DEFAULT_HEADER:String = "#tooltips:mode_selector/popover/default/header";
-      
-      public static const MODE_SELECTOR_POPOVER_DEFAULT_BODY:String = "#tooltips:mode_selector/popover/default/body";
-      
-      public static const MODE_SELECTOR_POPOVER_DOMINATION_HEADER:String = "#tooltips:mode_selector/popover/domination/header";
-      
-      public static const MODE_SELECTOR_POPOVER_DOMINATION_BODY:String = "#tooltips:mode_selector/popover/domination/body";
-      
-      public static const MODE_SELECTOR_POPOVER_ASSAULT_HEADER:String = "#tooltips:mode_selector/popover/assault/header";
-      
-      public static const MODE_SELECTOR_POPOVER_ASSAULT_BODY:String = "#tooltips:mode_selector/popover/assault/body";
-      
-      public static const MODE_SELECTOR_POPOVER_EPICSTANDARD_HEADER:String = "#tooltips:mode_selector/popover/epicStandard/header";
-      
-      public static const MODE_SELECTOR_POPOVER_EPICSTANDARD_BODY:String = "#tooltips:mode_selector/popover/epicStandard/body";
-      
-      public static const MODE_SELECTOR_POPOVER_EPICSTANDARD_ATTENTION:String = "#tooltips:mode_selector/popover/epicStandard/attention";
-      
-      public static const MODE_SELECTOR_POPOVER_DEVMAPS_HEADER:String = "#tooltips:mode_selector/popover/devMaps/header";
-      
-      public static const MODE_SELECTOR_POPOVER_DEVMAPS_BODY:String = "#tooltips:mode_selector/popover/devMaps/body";
       
       public static const MODE_SELECTOR_INFO_BODY:String = "#tooltips:mode_selector/info/body";
       
@@ -8247,6 +8435,54 @@ package
       
       public static const NOTRECRUITEDTANKMAN_FRONTMAN_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/frontman/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_pm3_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_pm3_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_pm3_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_pm3_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_pm3_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_pm3_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_pm3_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_pm3_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_PM3_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_pm3_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_BOSS_LABEL:String = "#tooltips:notrecruitedtankman/wt_clone_boss/label";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_BOSS_DESC:String = "#tooltips:notrecruitedtankman/wt_clone_boss/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_BOSS_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/wt_clone_boss/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_1_LABEL:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_1_DESC:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_2_LABEL:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_2_DESC:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_3_LABEL:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_3_DESC:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_4_LABEL:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_4_DESC:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_WT_CLONE_HUNTER_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/wt_clone_hunter_4/howToGetInfo";
+      
       public static const SKILL_NEWPERK_ZEROPERK_TITLE:String = "#tooltips:skill/newPerk/zeroPerk/title";
       
       public static const SKILL_NEWPERK_ZEROPERK_TEXT:String = "#tooltips:skill/newPerk/zeroPerk/text";
@@ -8324,6 +8560,30 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_15_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp17_15/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP17_15_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp17_15/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_1_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_1/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_1_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_1/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_1_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_1/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_2_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_2/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_2_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_2/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_2_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_2/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_3_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_3/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_3_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_3/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_3_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_3/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_4_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_4/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_4_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_4/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_4/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

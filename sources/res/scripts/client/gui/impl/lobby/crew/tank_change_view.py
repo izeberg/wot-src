@@ -102,7 +102,7 @@ class TankChangeView(BaseCrewView):
         self._filterPanelWidget = None
         self.__filterState = None
         self.__dataProvider = None
-        if self.tankman.isInTank and (not self.vehicle or not self.vehicle.hasCrew):
+        if self.tankman and self.tankman.isInTank and (not self.vehicle or not self.vehicle.hasCrew):
             self._destroySubViews()
         self._clear()
         return
@@ -133,12 +133,6 @@ class TankChangeView(BaseCrewView):
           'inventory', self._onInventoryUpdate),
          (
           'inventory.8.compDescr', self._onVehicleUpdated))
-
-    def _onClose(self, params=None):
-        if self.isPersonalFileOpened:
-            self._onBack()
-        else:
-            self._destroySubViews()
 
     def _onMembersUpdate(self):
         self.destroyWindow()

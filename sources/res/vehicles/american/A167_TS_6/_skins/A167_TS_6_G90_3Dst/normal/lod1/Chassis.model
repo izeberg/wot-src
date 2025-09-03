@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod1/Chassis</nodefullVisual>
 	<visibilityBox>
 		<min>-1.685343 0.000627 -3.534255</min>
 		<max>1.685343 1.016156 3.597386</max>
@@ -8,4 +7,5 @@
 	<tank>true</tank>
 	<parent>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod2/Chassis</parent>
 	<extent>64</extent>
+	<nodefullVisual>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/normal/lod1/Chassis</nodefullVisual>
 </root>

@@ -1,0 +1,18 @@
+from comp7_core.gui.shared.tooltips.comp7_core_tooltips import RoleSkillLobbyTooltipData, RoleSkillBattleTooltipData
+from helpers import dependency
+from skeletons.gui.game_control import IComp7LightController
+
+class Comp7LightRoleSkillLobbyTooltipData(RoleSkillLobbyTooltipData):
+    __comp7LightController = dependency.descriptor(IComp7LightController)
+
+    @property
+    def _modeController(self):
+        return self.__comp7LightController
+
+
+class Comp7LightRoleSkillBattleTooltipData(RoleSkillBattleTooltipData):
+    __comp7LightController = dependency.descriptor(IComp7LightController)
+
+    @property
+    def _modeController(self):
+        return self.__comp7LightController

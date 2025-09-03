@@ -3,6 +3,7 @@ package net.wg.gui.components.common.waiting
    import net.wg.data.constants.Values;
    import net.wg.infrastructure.base.meta.impl.WaitingViewMeta;
    import net.wg.infrastructure.events.ChildVisibilityEvent;
+   import net.wg.infrastructure.interfaces.IView;
    import net.wg.infrastructure.managers.IWaitingView;
    import scaleform.clik.events.InputEvent;
    
@@ -21,6 +22,8 @@ package net.wg.gui.components.common.waiting
       private var _stageWidth:int;
       
       private var _stageHeight:int;
+      
+      private var _showBg:Boolean = true;
       
       private var _isComponentShown:Boolean = false;
       
@@ -90,8 +93,9 @@ package net.wg.gui.components.common.waiting
          App.utils.scheduler.cancelTask(this.performHide);
          App.stage.addEventListener(InputEvent.INPUT,this.handleInput,false,int.MAX_VALUE,true);
          assertNotNull(this.waitingComponent,WAITING_COMPONENT_NAME);
-         this.waitingComponent.backgroundVisibility = param3;
+         this.waitingComponent.backgroundVisibility = false;
          this.waitingComponent.setMessage(param1);
+         this._showBg = param3;
          this.setAnimationStatus(true);
          if(param2)
          {
@@ -110,16 +114,24 @@ package net.wg.gui.components.common.waiting
       
       public function setAnimationStatus(param1:Boolean) : void
       {
-         var _loc2_:String = null;
+         var _loc3_:String = null;
          if(param1 != this.isOnStage && initialized)
          {
-            _loc2_ = !!param1 ? ChildVisibilityEvent.CHILD_SHOWN : ChildVisibilityEvent.CHILD_HIDDEN;
-            dispatchEvent(new ChildVisibilityEvent(_loc2_));
+            _loc3_ = !!param1 ? ChildVisibilityEvent.CHILD_SHOWN : ChildVisibilityEvent.CHILD_HIDDEN;
+            dispatchEvent(new ChildVisibilityEvent(_loc3_));
             assertNotNull(this.waitingComponent,WAITING_COMPONENT_NAME);
             this.waitingComponent.setAnimationStatus(!param1);
             this.waitingComponent.validateNow();
          }
-         App.containerMgr.updateFocus();
+         var _loc2_:IView = App.containerMgr.lastFocusedView;
+         if(_loc2_)
+         {
+            App.utils.focusHandler.setModalFocus(_loc2_);
+         }
+         else
+         {
+            App.containerMgr.updateFocus();
+         }
       }
       
       private function performHide() : void
@@ -127,12 +139,14 @@ package net.wg.gui.components.common.waiting
          App.utils.scheduler.cancelTask(this.showWaitingComponent);
          this._isComponentShown = false;
          this.waitingComponent.movieVisible = false;
+         this.waitingComponent.backgroundVisibility = false;
          this.setAnimationStatus(false);
       }
       
       private function showWaitingComponent() : void
       {
          this.waitingComponent.movieVisible = true;
+         this.waitingComponent.backgroundVisibility = this._showBg;
       }
       
       public function get isFocusable() : Boolean

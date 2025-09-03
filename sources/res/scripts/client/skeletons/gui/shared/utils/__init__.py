@@ -1,6 +1,7 @@
 from typing import TYPE_CHECKING, Optional, Dict
 from skeletons.gui.shared.utils import requesters
 if TYPE_CHECKING:
+    from gui.shared.utils.requesters import RequestCriteria
     from gui.shared.gui_items import ItemsCollection
     from gui.shared.gui_items.Tankman import Tankman
     from gui.shared.gui_items.Vehicle import Vehicle
@@ -128,7 +129,7 @@ class IItemsRequester(requesters.IRequester):
     def getTankmen(self, criteria=None):
         raise NotImplementedError
 
-    def getInventoryTankmen(self, criteria=None):
+    def getInventoryTankmen(self, criteria=None, limit=None):
         raise NotImplementedError
 
     def getInventoryTankmenRO(self):
@@ -149,7 +150,7 @@ class IItemsRequester(requesters.IRequester):
     def freeTankmenBerthsCount(self):
         raise NotImplementedError
 
-    def getItems(self, itemTypeID=None, criteria=None, nationID=None, onlyWithPrices=True):
+    def getItems(self, itemTypeID=None, criteria=None, nationID=None, onlyWithPrices=True, limit=None):
         raise NotImplementedError
 
     def getItemsAsync(self, itemTypeID=None, criteria=None, nationID=None, onlyWithPrices=True, callback=None):
@@ -258,6 +259,10 @@ class IHangarSpace(object):
         raise NotImplementedError
 
     @property
+    def isSelectionEnabled(self):
+        raise NotImplementedError
+
+    @property
     def isModelLoaded(self):
         raise NotImplementedError
 
@@ -303,9 +308,6 @@ class IHangarSpace(object):
     def onPremiumChanged(self, isPremium, attrs, premiumExpiryTime):
         raise NotImplementedError
 
-    def setVehicleSelectable(self, flag):
-        raise NotImplementedError
-
     def updateVehicleOutfit(self, outfit):
         raise NotImplementedError
 
@@ -322,6 +324,12 @@ class IHangarSpace(object):
         raise NotImplementedError
 
     def updateAnchorsParams(self, *args):
+        raise NotImplementedError
+
+    def lockVehicleSelectable(self, consumer):
+        raise NotImplementedError
+
+    def unlockVehicleSelectable(self, consumer):
         raise NotImplementedError
 
 

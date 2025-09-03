@@ -1,6 +1,7 @@
 package net.wg.gui.components.hintPanel
 {
    import flash.display.Sprite;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class KeyViewerContainer extends Sprite implements IDisposable
@@ -24,14 +25,16 @@ package net.wg.gui.components.hintPanel
          this.keyViewer = null;
       }
       
-      public function setKey(param1:String, param2:String) : void
-      {
-         this.keyViewer.setKey(param1,param2);
-      }
-      
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      public function setKey(param1:IngameDetailsKeyVO) : void
+      {
+         this.keyViewer.setKey(param1);
+         this.keyViewer.x = -(this.keyViewer.width >> 1);
+         this.keyViewer.y = -(this.keyViewer.height >> 1);
       }
    }
 }

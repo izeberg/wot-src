@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.379406 -0.004444 -1.220284</min>
+		<max>1.367264 0.871186 1.396158</max>
+	</visibilityBox>
+</root>

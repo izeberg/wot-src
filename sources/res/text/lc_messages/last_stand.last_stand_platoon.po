@@ -1,0 +1,78 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "headerButton/tooltips/squad/body"
+msgstr ""
+"Create a tactical unit of 2 to 5 players to cooperate\n"
+"in Last Stand."
+
+msgid "headerButton/tooltips/squad/header"
+msgstr "Platoon"
+
+msgid "members/header/last_stand"
+msgstr ": Last Stand: Proving Ground"
+
+msgid "members/header/tooltip/last_stand/body"
+msgstr ""
+"To enter an event battle all Platoon members must have access to the "
+"difficulty level selected by the Commander."
+
+msgid "members/header/tooltip/last_stand/header"
+msgstr "Rules for Platoon Creation"
+
+msgid "platoon/commander/difficulty_body"
+msgstr "You can select any of the available difficulty levels."
+
+msgid "platoon/difficulty/error_body_1"
+msgstr "Available difficulty levels: Basic."
+
+msgid "platoon/difficulty/error_body_2"
+msgstr "Available difficulty levels: Basic, Intense."
+
+msgid "platoon/difficulty/error_header"
+msgstr "Unavailable Difficulty"
+
+msgid "platoon/difficulty/level_1"
+msgstr "Difficulty: Basic"
+
+msgid "platoon/difficulty/level_2"
+msgstr "Difficulty: Intense"
+
+msgid "platoon/difficulty/level_3"
+msgstr "Difficulty: Brutal"
+
+msgid "platoon/difficulty/level_4"
+msgstr "Difficulty: Last Stand"
+
+msgid "platoon/difficulty/lock_header"
+msgstr "Difficulty Level Locked"
+
+msgid "platoon/difficulty/maxAvailable"
+msgstr "Available difficulty {%(icon)s}"
+
+msgid "platoon/difficulty/warning_body"
+msgstr "One or more Platoon members have not unlocked this difficulty level."
+
+msgid "platoon/difficulty/warning_header"
+msgstr "Incompatible Difficulty"
+
+msgid "platoon/player/difficulty_body"
+msgstr "Only the Platoon Commander can change the difficulty level."
+
+msgid "platoon/simpleState/difficultyDisabled"
+msgstr "Unavailable for technical reasons."
+
+msgid "platoon/simpleState/lockVehicle"
+msgstr "The selected vehicle is not available."
+
+msgid "platoon/simpleState/notAvailableLevel"
+msgstr "Incompatible difficulty level for the Platoon."

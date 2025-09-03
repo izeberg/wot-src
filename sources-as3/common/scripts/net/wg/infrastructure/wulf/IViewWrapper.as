@@ -27,7 +27,7 @@ package net.wg.infrastructure.wulf
       
       function setCursor(param1:String) : void;
       
-      function updateParentSize(param1:Number, param2:Number) : void;
+      function updateParentSize(param1:Number, param2:Number, param3:Rectangle = null) : void;
       
       function setContainerWrapper(param1:IBaseContainerWrapper) : void;
       
@@ -47,12 +47,20 @@ package net.wg.infrastructure.wulf
       
       function onHidden() : void;
       
+      function isFullScreenModeSupported() : Boolean;
+      
+      function setFullScreenModeSupported(param1:Boolean) : void;
+      
       function get hitRect() : Rectangle;
+      
+      function get paddings() : Rectangle;
+      
+      function set paddings(param1:Rectangle) : void;
       
       function get focused() : Boolean;
       
-      function get drawDebug() : Boolean;
+      function get debugMode() : uint;
       
-      function set drawDebug(param1:Boolean) : void;
+      function set debugMode(param1:uint) : void;
    }
 }

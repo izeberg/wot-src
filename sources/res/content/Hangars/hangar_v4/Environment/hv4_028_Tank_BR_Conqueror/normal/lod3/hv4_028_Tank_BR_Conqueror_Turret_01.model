@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_028_Tank_BR_Conqueror/normal/lod4/hv4_028_Tank_BR_Conqueror_Turret_01</parent>
+	<extent>250.000000</extent>
+	<visibilityBox>
+		<min>-1.561951 -0.005910 -2.360506</min>
+		<max>1.561951 1.338221 1.945849</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_028_Tank_BR_Conqueror/normal/lod3/hv4_028_Tank_BR_Conqueror_Turret_01</nodefullVisual>
+</root>

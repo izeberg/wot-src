@@ -26,7 +26,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.432
+			0.42
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -2240,9 +2240,8 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>12700</maxLoad>
 			<terrainResistance>
-				0.9 1.1 2.7
+				0.8 1 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>31000</brakeForce>
@@ -3738,7 +3737,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>14000</maxLoad>
 			<terrainResistance>
 				0.8 1 2.3
 				<!--BW_String-->
@@ -6325,15 +6323,6 @@
 		<Small>shared</Small>
 	</fuelTanks>
 	<radios>
-		<N2_M>
-			shared
-			<unlocks>
-				<radio>
-					N2_S
-					<cost>100</cost>
-				</radio>
-			</unlocks>
-		</N2_M>
 		<N2_S>shared</N2_S>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -6355,19 +6344,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.21735
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

@@ -2087,9 +2087,8 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3300</weight>
-			<maxLoad>10150</maxLoad>
 			<terrainResistance>
-				1.1 1.4 2.5
+				1 1.1 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
@@ -3892,7 +3891,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3300</weight>
-			<maxLoad>10800</maxLoad>
 			<terrainResistance>
 				1 1.1 2.3
 				<!--BW_String-->
@@ -5742,7 +5740,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_37mm_Bofors_wz_37>
+				<_37mm_Bofors_wz_37_7TP>
 					shared
 					<maxAmmo>140</maxAmmo>
 					<armor>
@@ -5838,7 +5836,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_37mm_Bofors_wz_37>
+				</_37mm_Bofors_wz_37_7TP>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl09_7TP/normal/lod0/Turret_01.model</undamaged>
@@ -6546,7 +6544,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_37mm_Bofors_wz_37>
+				<_37mm_Bofors_wz_37_7TP>
 					shared
 					<maxAmmo>140</maxAmmo>
 					<armor>
@@ -6716,7 +6714,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_37mm_Bofors_wz_37>
+				</_37mm_Bofors_wz_37_7TP>
 				<_40mm_DL55>
 					shared
 					<maxAmmo>120</maxAmmo>
@@ -7569,19 +7567,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1127
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

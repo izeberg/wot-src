@@ -1,10 +1,7 @@
 from frameworks.wulf import ViewFlags
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.entities.inject_component_adaptor import InjectComponentAdaptor
-from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.impl.gen import R
 from gui.impl.lobby.common.browser_view import BrowserView, makeSettings
-from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
 from gui.Scaleform.daapi.view.meta.LiveOpsWebEventsViewMeta import LiveOpsWebEventsViewMeta
 from helpers import dependency
 from skeletons.gui.game_control import ILiveOpsWebEventsController
@@ -44,4 +41,5 @@ class LiveOpsWebEventsBrowserView(BrowserView):
     @staticmethod
     def __returnCallback(*args, **kwargs):
         if kwargs.pop('forceClosed', False):
-            g_eventBus.handleEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_HANGAR)), EVENT_BUS_SCOPE.LOBBY)
+            from gui.shared.event_dispatcher import showHangar
+            showHangar()

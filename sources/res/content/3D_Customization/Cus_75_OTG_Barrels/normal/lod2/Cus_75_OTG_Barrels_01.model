@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_75_OTG_Barrels/normal/lod3/Cus_75_OTG_Barrels_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.352506 -0.000013 -0.605361</min>
+		<max>0.069376 0.413521 0.603247</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_75_OTG_Barrels/normal/lod2/Cus_75_OTG_Barrels_01</nodefullVisual>
+	<tank>true</tank>
+</root>

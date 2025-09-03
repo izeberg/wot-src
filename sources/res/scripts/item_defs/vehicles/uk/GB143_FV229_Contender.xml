@@ -1681,9 +1681,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>13800</weight>
-			<maxLoad>82000</maxLoad>
 			<terrainResistance>
-				1.2 1.5 2.5
+				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>77000</brakeForce>
@@ -3118,7 +3117,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14000</weight>
-			<maxLoad>83000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -4662,11 +4660,11 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.34
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.6
+						6.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -4681,7 +4679,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6087,7 +6085,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.3
+						6.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7129,19 +7127,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

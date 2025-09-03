@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl37_CS_67_Szakal/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl37_CS_67_Szakal/crash/lod4/Chassis</parent>
+	<extent>192</extent>
+	<visibilityBox>
+		<min>-1.613021 0.022426 -3.211906</min>
+		<max>1.612884 1.138483 3.292500</max>
+	</visibilityBox>
+</root>

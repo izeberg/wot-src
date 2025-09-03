@@ -121,7 +121,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>9800</weight>
-		<maxHealth>324</maxHealth>
+		<maxHealth>328</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>140</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -2270,14 +2270,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_M8A1>
-			<userString>#usa_vehicles:Chassis_M8A1</userString>
+		<Chassis_A57_M8A1>
+			<userString>#usa_vehicles:Chassis_A57_M8A1</userString>
 			<tags/>
 			<level>3</level>
 			<price>1850</price>
 			<unlocks>
 				<chassis>
-					Chassis_M8A1_2
+					Chassis_A57_M8A1_2
 					<cost>1100</cost>
 				</chassis>
 			</unlocks>
@@ -2286,14 +2286,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>16200</maxLoad>
 			<terrainResistance>
-				1.2 1.4 2.4
+				1 1.2 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>35</rotationSpeed>
+			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.29
@@ -4594,9 +4593,9 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M8A1>
-		<Chassis_M8A1_2>
-			<userString>#usa_vehicles:Chassis_M8A1_2</userString>
+		</Chassis_A57_M8A1>
+		<Chassis_A57_M8A1_2>
+			<userString>#usa_vehicles:Chassis_A57_M8A1_2</userString>
 			<tags/>
 			<level>4</level>
 			<price>5850</price>
@@ -4605,14 +4604,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>17500</maxLoad>
 			<terrainResistance>
 				1 1.2 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>46</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.27
@@ -6926,15 +6924,21 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M8A1_2>
+		</Chassis_A57_M8A1_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_M8A1>
+		<Turret_1_A57_M8A1>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:Turret_1_M8A1</userString>
+			<userString>#usa_vehicles:Turret_1_A57_M8A1</userString>
 			<tags>cannotDetach</tags>
 			<level>3</level>
 			<price>1890</price>
+			<unlocks>
+				<turret>
+					Turret_2_A57_M8A1
+					<cost>1200</cost>
+				</turret>
+			</unlocks>
 			<armor>
 				<armor_1>
 					38.1
@@ -6960,7 +6964,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1200</weight>
-			<maxHealth>61</maxHealth>
+			<maxHealth>62</maxHealth>
 			<rotationSpeed>18</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -6980,355 +6984,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_AT_Howitzer_M3>
-					shared
-					<maxAmmo>70</maxAmmo>
-					<unlocks>
-						<gun>
-							_75mm_AT_Gun_M3_L37
-							<cost>2100</cost>
-						</gun>
-						<gun>
-							_57mm_Gun_M1_L50
-							<cost>2350</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							12.7
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>20</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.53
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.7
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<pitchLimits>
-						<minPitch>0 -25 1 -25</minPitch>
-						<maxPitch>
-							0 10 0.333333 10 0.352778 -2 0.611111 -2 0.660884 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/american/A57_M8A1/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/american/A57_M8A1/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/american/A57_M8A1/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A57_M8A1/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A57_M8A1/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.000004 -0.007022 -0.246032</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.21129 0.21129
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>0.000004 -0.007022 -0.246032</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								0.001946 2.18738 1.2946
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801434 -0.001233 3.13709
-								<!--BW_String-->
-							</rotation>
-							<scale>0.310288 0.726968 0.310285</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.032405</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								0.006855 2.18494 1.2969
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.925972 0.925973 0.925971</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.012776</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.73 0.73 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							106.136 105.969
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_AT_Howitzer_M3>
-				<_75mm_AT_Gun_M3_L37>
-					shared
-					<maxAmmo>70</maxAmmo>
-					<unlocks>
-						<turret>
-							Turret_2_M8A1
-							<cost>1200</cost>
-						</turret>
-					</unlocks>
-					<armor>
-						<armor_1>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							12.7
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>20</gun>
-					</armor>
-					<reloadTime>
-						4.2
-						<!--BW_String-->
-					</reloadTime>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -25 1 -25</minPitch>
-						<maxPitch>
-							0 10 0.333333 10 0.352778 -2 0.611111 -2 0.660884 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.43
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.18
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/american/A57_M8A1/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/american/A57_M8A1/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/american/A57_M8A1/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A57_M8A1/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A57_M8A1/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0 -0.014208 1.38794
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								-0.000001 -0.00365 0.999993
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.211293 0.211293
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0 -0.014002 1.38785
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 -0.003535 0.999994
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								0.00198 2.18895 1.29457
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.310288 0.726968 0.310285</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.032416</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								0.006855 2.18494 1.2969
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.925973 0.925974 0.925971</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.012776</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.67 0.67 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							105.95 119.43
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_AT_Gun_M3_L37>
-				<_57mm_Gun_M1_L50>
+				<_57mm_Gun_M1_M8A1>
 					shared
 					<maxAmmo>115</maxAmmo>
 					<armor>
@@ -7370,7 +7026,7 @@
 					</armor>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.18
+							0.16
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7394,11 +7050,11 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.5
+						2.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7503,7 +7159,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_57mm_Gun_M1_L50>
+				</_57mm_Gun_M1_M8A1>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A57_M8A1/normal/lod0/Turret_01.model</undamaged>
@@ -7930,16 +7586,16 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_M8A1>
-		<Turret_2_M8A1>
+		</Turret_1_A57_M8A1>
+		<Turret_2_A57_M8A1>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:Turret_2_M8A1</userString>
+			<userString>#usa_vehicles:Turret_2_A57_M8A1</userString>
 			<tags>cannotDetach</tags>
 			<level>4</level>
 			<price>5180</price>
 			<unlocks>
 				<gun>
-					_75mm_AT_Gun_M7_L50
+					_75mm_AT_Gun_M3_L37
 					<cost>2250</cost>
 				</gun>
 			</unlocks>
@@ -7964,7 +7620,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1550</weight>
-			<maxHealth>81</maxHealth>
+			<maxHealth>82</maxHealth>
 			<rotationSpeed>18</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -7988,343 +7644,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_75mm_AT_Howitzer_M3>
-					shared
-					<maxAmmo>70</maxAmmo>
-					<armor>
-						<armor_1>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_6>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>20</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.53
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.7
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.333333 10 0.352778 -2 0.611111 -2 0.660884 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<models>
-						<undamaged>vehicles/american/A57_M8A1/normal/lod0/Gun_04.model</undamaged>
-						<destroyed>vehicles/american/A57_M8A1/crash/lod0/Gun_04.model</destroyed>
-						<exploded>vehicles/american/A57_M8A1/crash/lod0/Gun_04.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A57_M8A1/collision/Gun_04.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A57_M8A1/collision_client/Gun_04.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>-0.000002 -0.010038 0.632096</anchorPosition>
-							<anchorDirection>
-								-0.000001 0.000001 1
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.21129 0.21129
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.000002 -0.010033 0.632098</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								0.001975 2.18496 1.29691
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.320717 0.320717 0.320716</scale>
-							<showOn>4096</showOn>
-							<anchorShift>
-								-0.01278
-								<!--BW_String-->
-							</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								0.006855 2.18494 1.2969
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.925973 0.925974 0.925971</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.012776</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.55 0.55 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							106.136 105.969
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_AT_Howitzer_M3>
-				<_75mm_AT_Gun_M3_L37>
-					shared
-					<maxAmmo>70</maxAmmo>
-					<armor>
-						<armor_1>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_6>
-							38.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							19.1
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>20</gun>
-					</armor>
-					<reloadTime>
-						4.2
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.333333 10 0.352778 -2 0.611111 -2 0.660884 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.43
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<models>
-						<undamaged>vehicles/american/A57_M8A1/normal/lod0/Gun_05.model</undamaged>
-						<destroyed>vehicles/american/A57_M8A1/crash/lod0/Gun_05.model</destroyed>
-						<exploded>vehicles/american/A57_M8A1/crash/lod0/Gun_05.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A57_M8A1/collision/Gun_05.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A57_M8A1/collision_client/Gun_05.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000002 -0.006914 1.34102
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.211292 0.211292
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000002 -0.006914 1.34102
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								0.001977 2.18651 1.29691
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.320717 0.320717 0.320716</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.012775</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_rect1x3</tags>
-							<position>
-								0.006855 2.18494 1.2969
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.801433 -0.00126 3.13705
-								<!--BW_String-->
-							</rotation>
-							<scale>0.925973 0.925974 0.925971</scale>
-							<showOn>4096</showOn>
-							<anchorShift>-0.012776</anchorShift>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.55 0.55 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							105.95 119.43
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_AT_Gun_M3_L37>
-				<_57mm_Gun_M1_L50>
+				<_57mm_Gun_M1_M8A1>
 					shared
 					<maxAmmo>115</maxAmmo>
 					<armor>
@@ -8360,7 +7680,7 @@
 						<gun>20</gun>
 					</armor>
 					<reloadTime>
-						2.5
+						2.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8385,7 +7705,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.39
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
@@ -8491,11 +7811,15 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_57mm_Gun_M1_L50>
-				<_75mm_AT_Gun_M7_L50>
+				</_57mm_Gun_M1_M8A1>
+				<_75mm_AT_Gun_M3_L37>
 					shared
 					<maxAmmo>80</maxAmmo>
 					<unlocks>
+						<vehicle>
+							A18_M41
+							<cost>13150</cost>
+						</vehicle>
 						<vehicle>
 							A30_M10_Wolverine
 							<cost>10500</cost>
@@ -8534,7 +7858,7 @@
 						<gun>20</gun>
 					</armor>
 					<reloadTime>
-						4.2
+						3.9
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8551,17 +7875,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 8 0.333333 8 0.352778 -2 0.611111 -2 0.660884 8 1 8
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.43
-						<!--BW_String-->
-					</shotDispersionRadius>
 					<aimingTime>
 						1.7
 						<!--BW_String-->
@@ -8570,14 +7883,25 @@
 						0.26
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<pitchLimits>
+						<minPitch>0 -20 1 -20</minPitch>
+						<maxPitch>
+							0 10 0.333333 10 0.352778 -2 0.611111 -2 0.660884 10 1 10
+							<!--BW_String-->
+						</maxPitch>
+					</pitchLimits>
+					<shotDispersionRadius>
+						0.39
+						<!--BW_String-->
+					</shotDispersionRadius>
 					<models>
-						<undamaged>vehicles/american/A57_M8A1/normal/lod0/Gun_07.model</undamaged>
-						<destroyed>vehicles/american/A57_M8A1/crash/lod0/Gun_07.model</destroyed>
-						<exploded>vehicles/american/A57_M8A1/crash/lod0/Gun_07.model</exploded>
+						<undamaged>vehicles/american/A57_M8A1/normal/lod0/Gun_05.model</undamaged>
+						<destroyed>vehicles/american/A57_M8A1/crash/lod0/Gun_05.model</destroyed>
+						<exploded>vehicles/american/A57_M8A1/crash/lod0/Gun_05.model</exploded>
 					</models>
 					<hitTester>
-						<collisionModelServer>vehicles/american/A57_M8A1/collision/Gun_07.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A57_M8A1/collision_client/Gun_07.model</collisionModelClient>
+						<collisionModelServer>vehicles/american/A57_M8A1/collision/Gun_05.model</collisionModelServer>
+						<collisionModelClient>vehicles/american/A57_M8A1/collision_client/Gun_05.model</collisionModelClient>
 					</hitTester>
 					<effects>shot_medium</effects>
 					<reloadEffect>reload50_75</reloadEffect>
@@ -8586,10 +7910,10 @@
 							<slotType>paint</slotType>
 							<slotId>41000</slotId>
 							<anchorPosition>
-								-0.000001 -0.006915 1.39564
+								-0.000002 -0.006914 1.34102
 								<!--BW_String-->
 							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
+							<anchorDirection>-0 0 1</anchorDirection>
 							<applyTo>4096</applyTo>
 						</slot>
 						<slot>
@@ -8609,7 +7933,7 @@
 							<slotType>camouflage</slotType>
 							<slotId>42000</slotId>
 							<anchorPosition>
-								-0.000001 -0.006915 1.39564
+								-0.000002 -0.006914 1.34102
 								<!--BW_String-->
 							</anchorPosition>
 							<anchorDirection>0 0 1</anchorDirection>
@@ -8620,16 +7944,16 @@
 							<slotId>45000</slotId>
 							<tags>formfactor_square</tags>
 							<position>
-								0.001978 2.1877 1.29457
+								0.001977 2.18651 1.29691
 								<!--BW_String-->
 							</position>
 							<rotation>
 								0.801433 -0.00126 3.13705
 								<!--BW_String-->
 							</rotation>
-							<scale>0.310288 0.726968 0.310285</scale>
+							<scale>0.320717 0.320717 0.320716</scale>
 							<showOn>4096</showOn>
-							<anchorShift>-0.032412</anchorShift>
+							<anchorShift>-0.012775</anchorShift>
 						</slot>
 						<slot>
 							<slotType>projectionDecal</slotType>
@@ -8656,16 +7980,16 @@
 					</customization>
 					<camouflage>
 						<tiling>
-							0.61 0.61 0.000000 0.000000
+							0.55 0.55 0.000000 0.000000
 							<!--BW_String-->
 						</tiling>
 						<density>
-							106.195 121.904
+							105.95 119.43
 							<!--BW_String-->
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_AT_Gun_M7_L50>
+				</_75mm_AT_Gun_M3_L37>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A57_M8A1/normal/lod0/Turret_02.model</undamaged>
@@ -9085,94 +8409,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_M8A1>
+		</Turret_2_A57_M8A1>
 	</turrets0>
 	<engines>
-		<Twin_Cadillac_42series>
+		<Twin_Cadillac_Series_42_M8A1>
 			shared
 			<unlocks>
 				<engine>
-					Continental_R-975-C1
+					Continental_R_975_C1_M8A1
 					<cost>550</cost>
 				</engine>
 			</unlocks>
-		</Twin_Cadillac_42series>
-		<Continental_R-975-C1>
-			shared
-			<unlocks>
-				<vehicle>
-					A18_M41
-					<cost>13150</cost>
-				</vehicle>
-			</unlocks>
-		</Continental_R-975-C1>
+		</Twin_Cadillac_Series_42_M8A1>
+		<Continental_R_975_C1_M8A1>shared</Continental_R_975_C1_M8A1>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<SCR_510>
-			shared
-			<unlocks>
-				<radio>
-					SCR_610
-					<cost>1480</cost>
-				</radio>
-			</unlocks>
-		</SCR_510>
-		<SCR_610>
-			shared
-			<unlocks>
-				<radio>
-					SCR_619
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_610>
 		<SCR_619>shared</SCR_619>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Twin_Cadillac_42series>
-					<smplEnginePower>
-						338.33
-						<!--BW_String-->
-					</smplEnginePower>
+				<Twin_Cadillac_Series_42_M8A1>
+					<smplEnginePower>350</smplEnginePower>
 					<smplFwMaxSpeed>58</smplFwMaxSpeed>
-				</Twin_Cadillac_42series>
-				<Continental_R-975-C1>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
+				</Twin_Cadillac_Series_42_M8A1>
+				<Continental_R_975_C1_M8A1>
+					<smplEnginePower>380</smplEnginePower>
 					<smplFwMaxSpeed>58</smplFwMaxSpeed>
-				</Continental_R-975-C1>
+				</Continental_R_975_C1_M8A1>
 			</engines>
 			<chassis>
-				<Chassis_M8A1>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.1932
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_M8A1>
-				<Chassis_M8A1_2>
+				<Chassis_A57_M8A1>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9193,7 +8463,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_M8A1_2>
+				</Chassis_A57_M8A1>
+				<Chassis_A57_M8A1_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.1771
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A57_M8A1_2>
 			</chassis>
 		</detailed>
 	</physics>

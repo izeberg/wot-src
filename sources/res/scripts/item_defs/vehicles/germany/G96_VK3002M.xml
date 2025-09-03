@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>15950</weight>
-		<maxHealth>752</maxHealth>
+		<maxHealth>880</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>160</maxHealth>
 			<maxRegenHealth>110</maxRegenHealth>
@@ -2257,14 +2257,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_VK3002M>
-			<userString>#germany_vehicles:Chassis_VK3002M</userString>
+		<Chassis_G96_VK3002M>
+			<userString>#germany_vehicles:Chassis_G96_VK3002M</userString>
 			<tags/>
 			<level>5</level>
 			<price>9100</price>
 			<unlocks>
 				<chassis>
-					Chassis_VK3002M_2
+					Chassis_G96_VK3002M_2
 					<cost>5500</cost>
 				</chassis>
 			</unlocks>
@@ -2273,14 +2273,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>41000</maxLoad>
 			<terrainResistance>
-				1.1 1.3 2.5
+				1 1.2 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -3968,9 +3967,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_VK3002M>
-		<Chassis_VK3002M_2>
-			<userString>#germany_vehicles:Chassis_VK3002M_2</userString>
+		</Chassis_G96_VK3002M>
+		<Chassis_G96_VK3002M_2>
+			<userString>#germany_vehicles:Chassis_G96_VK3002M_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>15000</price>
@@ -3979,14 +3978,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>45000</maxLoad>
 			<terrainResistance>
 				1 1.2 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>40000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>38</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -5677,20 +5675,14 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_VK3002M_2>
+		</Chassis_G96_VK3002M_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_VK3002M>
-			<userString>#germany_vehicles:Turret_1_VK3002M</userString>
+		<Turret_1_G96_VK3002M>
+			<userString>#germany_vehicles:Turret_1_G96_VK3002M</userString>
 			<tags/>
 			<level>5</level>
 			<price>10000</price>
-			<unlocks>
-				<turret>
-					Turret_2_VK3002M
-					<cost>5200</cost>
-				</turret>
-			</unlocks>
 			<armor>
 				<armor_1>80</armor_1>
 				<armor_2>80</armor_2>
@@ -5705,7 +5697,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>6260</weight>
-			<maxHealth>138</maxHealth>
+			<maxHealth>170</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -5725,12 +5717,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_KwK_40_L48>
+				<_75mm_Kw_K_40_L_48_3002M>
 					shared
 					<maxAmmo>145</maxAmmo>
 					<unlocks>
 						<gun>
-							_75mm_KwK_L70
+							_75mm_Kw_K_42_L_70_3002M
 							<cost>4600</cost>
 						</gun>
 					</unlocks>
@@ -5763,16 +5755,16 @@
 						0.247
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>4</reloadTime>
+					<reloadTime>
+						4.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -5782,6 +5774,11 @@
 						2.3
 						<!--BW_String-->
 					</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionRadius>
+						0.37
+						<!--BW_String-->
+					</shotDispersionRadius>
 					<models>
 						<undamaged>vehicles/german/G96_VK3002M/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/german/G96_VK3002M/crash/lod0/Gun_01.model</destroyed>
@@ -5903,15 +5900,15 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_KwK_40_L48>
-				<_75mm_KwK_L70>
+				</_75mm_Kw_K_40_L_48_3002M>
+				<_75mm_Kw_K_42_L_70_3002M>
 					shared
 					<maxAmmo>95</maxAmmo>
 					<unlocks>
-						<vehicle>
-							G03_PzV_Panther
-							<cost>53000</cost>
-						</vehicle>
+						<turret>
+							Turret_2_G96_VK3002M
+							<cost>5200</cost>
+						</turret>
 					</unlocks>
 					<armor>
 						<armor_1>
@@ -5946,22 +5943,20 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.2
+							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/german/G96_VK3002M/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/german/G96_VK3002M/crash/lod0/Gun_02.model</destroyed>
@@ -6083,7 +6078,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_KwK_L70>
+				</_75mm_Kw_K_42_L_70_3002M>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G96_VK3002M/normal/lod0/Turret_01.model</undamaged>
@@ -6938,12 +6933,22 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_VK3002M>
-		<Turret_2_VK3002M>
-			<userString>#germany_vehicles:Turret_2_VK3002M</userString>
+		</Turret_1_G96_VK3002M>
+		<Turret_2_G96_VK3002M>
+			<userString>#germany_vehicles:Turret_2_G96_VK3002M</userString>
 			<tags/>
 			<level>6</level>
 			<price>17200</price>
+			<unlocks>
+				<vehicle>
+					G03_PzV_Panther
+					<cost>53000</cost>
+				</vehicle>
+				<vehicle>
+					G24_VK3002DB
+					<cost>46800</cost>
+				</vehicle>
+			</unlocks>
 			<armor>
 				<armor_1>100</armor_1>
 				<armor_2>100</armor_2>
@@ -6957,7 +6962,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7760</weight>
-			<maxHealth>188</maxHealth>
+			<maxHealth>220</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -6981,7 +6986,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_75mm_KwK_40_L48>
+				<_75mm_Kw_K_40_L_48_3002M>
 					shared
 					<maxAmmo>145</maxAmmo>
 					<armor>
@@ -7001,19 +7006,22 @@
 					</armor>
 					<pitchLimits>
 						<minPitch>0 -18 1 -18</minPitch>
-						<maxPitch>0 8 1 8</maxPitch>
+						<maxPitch>
+							0 7.5 1 7.5
+							<!--BW_String-->
+						</maxPitch>
 					</pitchLimits>
 					<invisibilityFactorAtShot>
 						0.247
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						3.6
+						4.2
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7026,9 +7034,14 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
+					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionRadius>
+						0.37
+						<!--BW_String-->
+					</shotDispersionRadius>
 					<models>
 						<undamaged>vehicles/german/G96_VK3002M/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/german/G96_VK3002M/crash/lod0/Gun_03.model</destroyed>
@@ -7153,8 +7166,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_KwK_40_L48>
-				<_75mm_KwK_L70>
+				</_75mm_Kw_K_40_L_48_3002M>
+				<_75mm_Kw_K_42_L_70_3002M>
 					shared
 					<maxAmmo>95</maxAmmo>
 					<armor>
@@ -7181,20 +7194,17 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.35
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
 						4.2
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7206,6 +7216,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/german/G96_VK3002M/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/german/G96_VK3002M/crash/lod0/Gun_04.model</destroyed>
@@ -7330,7 +7341,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_KwK_L70>
+				</_75mm_Kw_K_42_L_70_3002M>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G96_VK3002M/normal/lod0/Turret_02.model</undamaged>
@@ -8197,106 +8208,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_VK3002M>
+		</Turret_2_G96_VK3002M>
 	</turrets0>
 	<engines>
-		<MB-503>
+		<Maybach_HL_210_TRM_P30_3002M>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_210_TRM_P30
-					<cost>11250</cost>
-				</engine>
-			</unlocks>
-		</MB-503>
-		<Maybach_HL_210_TRM_P30>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_230_TRM_P30
+					Maybach_HL_230_TRM_P30_3002M
 					<cost>15800</cost>
 				</engine>
-				<vehicle>
-					G24_VK3002DB
-					<cost>46800</cost>
-				</vehicle>
 			</unlocks>
-		</Maybach_HL_210_TRM_P30>
-		<Maybach_HL_230_TRM_P30>shared</Maybach_HL_230_TRM_P30>
+		</Maybach_HL_210_TRM_P30_3002M>
+		<Maybach_HL_230_TRM_P30_3002M>shared</Maybach_HL_230_TRM_P30_3002M>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<MB-503>
-					<smplEnginePower>
-						613.2231
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_210_TRM_P30_3002M>
+					<smplEnginePower>710</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
-				</MB-503>
-				<Maybach_HL_210_TRM_P30>
-					<smplEnginePower>
-						687.2327
-						<!--BW_String-->
-					</smplEnginePower>
+				</Maybach_HL_210_TRM_P30_3002M>
+				<Maybach_HL_230_TRM_P30_3002M>
+					<smplEnginePower>760</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
-				</Maybach_HL_210_TRM_P30>
-				<Maybach_HL_230_TRM_P30>
-					<smplEnginePower>
-						740.0968
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>55</smplFwMaxSpeed>
-				</Maybach_HL_230_TRM_P30>
+				</Maybach_HL_230_TRM_P30_3002M>
 			</engines>
 			<chassis>
-				<Chassis_VK3002M>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_VK3002M>
-				<Chassis_VK3002M_2>
+				<Chassis_G96_VK3002M>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8317,7 +8262,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_VK3002M_2>
+				</Chassis_G96_VK3002M>
+				<Chassis_G96_VK3002M_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G96_VK3002M_2>
 			</chassis>
 		</detailed>
 	</physics>

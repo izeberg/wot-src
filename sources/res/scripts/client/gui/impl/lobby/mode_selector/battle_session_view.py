@@ -9,6 +9,7 @@ from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.mode_selector.battle_session_model import BattleSessionModel
 from gui.impl.pub import ViewImpl
 from gui.shared import g_eventBus, EVENT_BUS_SCOPE
+from gui.impl.lobby.hangar.presenters.utils import fillMenuSharedItems, navigateTo
 from gui.clans.clan_cache import g_clanCache
 from gui.shared.view_helpers.emblems import getClanEmblemURL, EmblemSize
 from gui.tournament.tournament_helpers import isTournamentEnabled, showTournaments
@@ -20,7 +21,7 @@ _GLOBAL_MAP_URL = 'globalMapURL'
 
 class BattleSessionView(ViewImpl):
     __slots__ = ()
-    layoutID = R.views.lobby.mode_selector.BattleSessionView()
+    LAYOUT_ID = R.views.lobby.mode_selector.BattleSessionView()
     __externalLinks = dependency.descriptor(IExternalLinksController)
     __lobbyContext = dependency.descriptor(ILobbyContext)
 
@@ -42,10 +43,13 @@ class BattleSessionView(ViewImpl):
          (
           self.viewModel.onGlobalMapClicked, self.__globalMapClickedHandler),
          (
-          self.viewModel.onCloseClicked, self.__closeClickedHandler))
+          self.viewModel.onCloseClicked, self.destroyWindow),
+         (
+          self.viewModel.onNavigate, navigateTo))
 
     def _onLoading(self):
         self.__updateModel()
+        self.__updateMenuItems()
         super(BattleSessionView, self)._onLoading()
 
     def __updateModel(self):
@@ -73,9 +77,6 @@ class BattleSessionView(ViewImpl):
         event = g_entitiesFactories.makeLoadEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_STRONGHOLD))
         g_eventBus.handleEvent(event, scope=EVENT_BUS_SCOPE.LOBBY)
 
-    def __closeClickedHandler(self):
-        self.destroyWindow()
-
     @adisp_process
     def __openUrl(self, name):
         url = yield self.__externalLinks.getURL(name)
@@ -84,3 +85,7 @@ class BattleSessionView(ViewImpl):
     def __onServerSettingsChanged(self, diff):
         if TOURNAMENT_CONFIG in diff:
             self.__updateModel()
+
+    def __updateMenuItems(self):
+        with self.viewModel.transaction() as (model):
+            fillMenuSharedItems(model)

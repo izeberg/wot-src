@@ -1,7 +1,6 @@
 from enum import Enum
-from frameworks.wulf import Array
 from resource_well.gui.impl.gen.view_models.views.lobby.enums import EventMode
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from resource_well.gui.impl.gen.view_models.views.lobby.tooltips.reward_info_model import RewardInfoModel
 
 class EventState(Enum):

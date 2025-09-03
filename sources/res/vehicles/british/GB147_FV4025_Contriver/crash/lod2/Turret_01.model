@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB147_FV4025_Contriver/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.556601 0.000003 -3.033382</min>
+		<max>1.556601 2.454928 2.328312</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB147_FV4025_Contriver/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+</root>

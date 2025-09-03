@@ -1,5 +1,5 @@
 import logging, Math
-from aih_constants import CTRL_MODE_NAME, GUN_MARKER_FLAG, STRATEGIC_CAMERA
+from aih_constants import CTRL_MODE_NAME, GUN_MARKER_FLAG, STRATEGIC_CAMERA, DEFAULT_GUN_MARKER_STATE
 from soft_exception import SoftException
 _logger = logging.getLogger(__name__)
 _FLOAT_EPSILON = 0.003
@@ -75,9 +75,9 @@ _DEFAULT_VALUES = {BINDING_ID.CTRL_MODE_NAME: lambda : _Observable(CTRL_MODE_NAM
    BINDING_ID.AIM_OFFSET: lambda : _ObservableVector2(), 
    BINDING_ID.ZOOM_FACTOR: lambda : _Observable(0.0), 
    BINDING_ID.GUN_MARKERS_FLAGS: lambda : _Observable(GUN_MARKER_FLAG.UNDEFINED), 
-   BINDING_ID.CLIENT_GUN_MARKER_STATE: lambda : _Observable((Math.Vector3(0.0, 0.0, 0.0), 0.0, None)), 
-   BINDING_ID.SERVER_GUN_MARKER_STATE: lambda : _Observable((Math.Vector3(0.0, 0.0, 0.0), 0.0, None)), 
-   BINDING_ID.DUAL_ACC_GUN_MARKER_STATE: lambda : _Observable((Math.Vector3(0.0, 0.0, 0.0), 0.0, None)), 
+   BINDING_ID.CLIENT_GUN_MARKER_STATE: lambda : _Observable((DEFAULT_GUN_MARKER_STATE, ())), 
+   BINDING_ID.SERVER_GUN_MARKER_STATE: lambda : _Observable((DEFAULT_GUN_MARKER_STATE, ())), 
+   BINDING_ID.DUAL_ACC_GUN_MARKER_STATE: lambda : _Observable((DEFAULT_GUN_MARKER_STATE, ())), 
    BINDING_ID.CLIENT_GUN_MARKER_DATA_PROVIDER: lambda : _Observable(None), 
    BINDING_ID.CLIENT_SPG_GUN_MARKER_DATA_PROVIDER: lambda : _Observable(None), 
    BINDING_ID.SERVER_GUN_MARKER_DATA_PROVIDER: lambda : _Observable(None), 

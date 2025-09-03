@@ -53,14 +53,6 @@ package net.wg.gui.battle.views.vehicleMarkers
          TextFieldEx.setNoTranslate(this.yellow,true);
          TextFieldEx.setNoTranslate(this.purple,true);
          TextFieldEx.setNoTranslate(this.white,true);
-         this.green.autoSize = TextFieldAutoSize.LEFT;
-         this.red.autoSize = TextFieldAutoSize.LEFT;
-         this.gold.autoSize = TextFieldAutoSize.LEFT;
-         this.blue.autoSize = TextFieldAutoSize.LEFT;
-         this.orange.autoSize = TextFieldAutoSize.LEFT;
-         this.yellow.autoSize = TextFieldAutoSize.LEFT;
-         this.purple.autoSize = TextFieldAutoSize.LEFT;
-         this.white.autoSize = TextFieldAutoSize.LEFT;
          this.tfMap["green"] = this.green;
          this.tfMap["red"] = this.red;
          this.tfMap["gold"] = this.gold;
@@ -69,6 +61,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.tfMap["yellow"] = this.yellow;
          this.tfMap["purple"] = this.purple;
          this.tfMap["white"] = this.white;
+         this.autoSize = TextFieldAutoSize.LEFT;
       }
       
       public function dispose() : void
@@ -129,6 +122,35 @@ package net.wg.gui.battle.views.vehicleMarkers
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      public function set autoSize(param1:String) : void
+      {
+         var _loc2_:TextField = null;
+         switch(param1)
+         {
+            case TextFieldAutoSize.CENTER:
+               for each(_loc2_ in this.tfMap)
+               {
+                  _loc2_.autoSize = TextFieldAutoSize.CENTER;
+                  _loc2_.x = _loc2_.width >> 1;
+               }
+               break;
+            case TextFieldAutoSize.RIGHT:
+               for each(_loc2_ in this.tfMap)
+               {
+                  _loc2_.autoSize = TextFieldAutoSize.RIGHT;
+                  _loc2_.x = _loc2_.width;
+               }
+               break;
+            case TextFieldAutoSize.LEFT:
+            default:
+               for each(_loc2_ in this.tfMap)
+               {
+                  _loc2_.autoSize = TextFieldAutoSize.LEFT;
+                  _loc2_.x = 0;
+               }
+         }
       }
    }
 }

@@ -9,6 +9,10 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setSettings(data)
 
+    def as_setSizeS(self, width, height):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setSize(width, height)
+
     def as_setScaleS(self, scale):
         if self._isDAAPIInited():
             return self.flashObject.as_setScale(scale)
@@ -25,13 +29,17 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setReloadingCounterShown(visible)
 
-    def as_setReloadingS(self, duration, baseTime, startTime, isReloading):
+    def as_setReloadingS(self, duration, baseTime, startTime, isReloading, isShotAvailable=False):
         if self._isDAAPIInited():
-            return self.flashObject.as_setReloading(duration, baseTime, startTime, isReloading)
+            return self.flashObject.as_setReloading(duration, baseTime, startTime, isReloading, isShotAvailable)
 
-    def as_setReloadingAsPercentS(self, percent, isReloading):
+    def as_setReloadingAsPercentS(self, time, percent, isReloading, isShotAvailable=False):
         if self._isDAAPIInited():
-            return self.flashObject.as_setReloadingAsPercent(percent, isReloading)
+            return self.flashObject.as_setReloadingAsPercent(time, percent, isReloading, isShotAvailable)
+
+    def as_setIsInControllableReloadS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setIsInControllableReload(value)
 
     def as_setBoostAsPercentS(self, percent, duration):
         if self._isDAAPIInited():
@@ -45,9 +53,9 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setAmmoStock(quantity, quantityInClip, clipState, clipReloaded)
 
-    def as_setClipParamsS(self, clipCapacity, burst, isAutoloader=False):
+    def as_setClipParamsS(self, clipCapacity, burst, reloadingType):
         if self._isDAAPIInited():
-            return self.flashObject.as_setClipParams(clipCapacity, burst, isAutoloader)
+            return self.flashObject.as_setClipParams(clipCapacity, burst, reloadingType)
 
     def as_setDistanceS(self, dist):
         if self._isDAAPIInited():
@@ -101,9 +109,9 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setNetType(netType)
 
-    def as_autoloaderUpdateS(self, timeLeft, baseTime, isPause=False, isStun=False, isTimerOn=False, isRedText=False):
+    def as_autoloaderUpdateS(self, timeLeft, baseTime, isCritical=False, isTimerOn=False, isRedText=False):
         if self._isDAAPIInited():
-            return self.flashObject.as_autoloaderUpdate(timeLeft, baseTime, isPause, isStun, isTimerOn, isRedText)
+            return self.flashObject.as_autoloaderUpdate(timeLeft, baseTime, isCritical, isTimerOn, isRedText)
 
     def as_setAutoloaderReloadingS(self, duration, baseTime):
         if self._isDAAPIInited():
@@ -125,9 +133,9 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setAutoloaderReloadasPercent(percent)
 
-    def as_setAutoloaderPercentS(self, percent, sec, isTimerOn, isTimerRed):
+    def as_setAutoloaderPercentS(self, percent, sec, isCritical, isTimerOn, isTimerRed):
         if self._isDAAPIInited():
-            return self.flashObject.as_setAutoloaderPercent(percent, sec, isTimerOn, isTimerRed)
+            return self.flashObject.as_setAutoloaderPercent(percent, sec, isCritical, isTimerOn, isTimerRed)
 
     def as_setSpeedModeS(self, value):
         if self._isDAAPIInited():
@@ -185,6 +193,10 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setTwinGunMarkerState(value)
 
+    def as_showPenetrationFxS(self):
+        if self._isDAAPIInited():
+            return self.flashObject.as_showPenetrationFx()
+
     def as_runCameraTransitionFxS(self, direction, duration):
         if self._isDAAPIInited():
             return self.flashObject.as_runCameraTransitionFx(direction, duration)
@@ -221,14 +233,34 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
         if self._isDAAPIInited():
             return self.flashObject.as_setAimDamageStage(value)
 
-    def as_setOverheatProgressS(self, value, isOverheated):
+    def as_setOverheatVisibleS(self, value):
         if self._isDAAPIInited():
-            return self.flashObject.as_setOverheatProgress(value, isOverheated)
+            return self.flashObject.as_setOverheatVisible(value)
 
-    def as_addOverheatS(self, overheatMark):
+    def as_setAccuracyStacksProgressS(self, count):
         if self._isDAAPIInited():
-            return self.flashObject.as_addOverheat(overheatMark)
+            return self.flashObject.as_setAccuracyStacksProgress(count)
 
-    def as_removeOverheatS(self):
+    def as_setChargeGunActiveS(self, value):
         if self._isDAAPIInited():
-            return self.flashObject.as_removeOverheat()
+            return self.flashObject.as_setChargeGunActive(value)
+
+    def as_setChargeGunStateS(self, progress, stacks, isShootBlock):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setChargeGunState(progress, stacks, isShootBlock)
+
+    def as_setReloadBoostS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setReloadBoost(value)
+
+    def as_setReloadBoostBorderS(self, boostVisible, active):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setReloadBoostBorder(boostVisible, active)
+
+    def as_setReloadBoostBorderBlinkS(self):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setReloadBoostBorderBlink()
+
+    def as_setNetSeparatorTypeS(self, netSeparatorType):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setNetSeparatorType(netSeparatorType)

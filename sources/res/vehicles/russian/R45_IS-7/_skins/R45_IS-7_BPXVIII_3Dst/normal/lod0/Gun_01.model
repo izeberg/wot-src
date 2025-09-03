@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.799016 -0.301461 0.138349</min>
+		<max>0.366702 0.538206 6.192736</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

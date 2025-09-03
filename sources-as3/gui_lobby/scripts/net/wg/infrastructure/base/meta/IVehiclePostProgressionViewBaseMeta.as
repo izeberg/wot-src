@@ -8,12 +8,12 @@ package net.wg.infrastructure.base.meta
       
       function demountAllPairsS() : void;
       
+      function onCloseS() : void;
+      
       function as_setVehicleTitle(param1:Object) : void;
       
       function as_setData(param1:Object) : void;
       
       function as_show() : void;
-      
-      function as_onEscPressed() : void;
    }
 }

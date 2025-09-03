@@ -131,7 +131,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>16662</weight>
-		<maxHealth>672</maxHealth>
+		<maxHealth>760</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1998,14 +1998,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7500</weight>
-			<maxLoad>33500</maxLoad>
 			<terrainResistance>
-				1.1 1.2 1.8
+				1 1.1 1.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>30000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>31</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -4441,14 +4440,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7500</weight>
-			<maxLoad>36800</maxLoad>
 			<terrainResistance>
 				1 1.1 1.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>34</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -6881,6 +6879,12 @@
 			<tags/>
 			<level>6</level>
 			<price>17500</price>
+			<unlocks>
+				<turret>
+					Turret_2_GB41_Challenger
+					<cost>11200</cost>
+				</turret>
+			</unlocks>
 			<armor>
 				<armor_1>
 					101.6
@@ -6913,7 +6917,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>168</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>16</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -6933,159 +6937,9 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_17pdr_OQF_AT_Mk_II>
+				<OQF_17_pdr_AT_Gun_Mk_VII_A30>
 					shared
 					<maxAmmo>60</maxAmmo>
-					<unlocks>
-						<gun>
-							_17pdr_OQF_AT_1
-							<cost>15000</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<invisibilityFactorAtShot>
-						0.234
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.34
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						4.5
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.1
-						<!--BW_String-->
-					</aimingTime>
-					<models>
-						<undamaged>vehicles/british/GB41_Challenger/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/british/GB41_Challenger/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/british/GB41_Challenger/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB41_Challenger/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB41_Challenger/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium_mb</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000063 -0.003519 1.90372
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.000072 0.117916 0.152405</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000063 -0.003519 1.90372
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								0.000573 2.14212 1.3853
-								<!--BW_String-->
-							</position>
-							<rotation>
-								1.41789 -0.011566 3.12989
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								1.86989 1.2973 1.86993
-								<!--BW_String-->
-							</scale>
-							<showOn>4352</showOn>
-							<clipAngle>0.591362</clipAngle>
-							<anchorShift>0.725852</anchorShift>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.000126 -0.006015 2.27349
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.000126 -0.006015 2.62349
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.067 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.35
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.7 0.7 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							106.444 124.013
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_17pdr_OQF_AT_Mk_II>
-				<_17pdr_OQF_AT_1>
-					shared
-					<maxAmmo>60</maxAmmo>
-					<unlocks>
-						<turret>
-							Turret_2_GB41_Challenger
-							<cost>11200</cost>
-						</turret>
-					</unlocks>
 					<armor>
 						<gun>30</gun>
 					</armor>
@@ -7102,7 +6956,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.4
+						3.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7110,10 +6964,7 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -7219,7 +7070,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_17pdr_OQF_AT_1>
+				</OQF_17_pdr_AT_Gun_Mk_VII_A30>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB41_Challenger/normal/lod0/Turret_01.model</undamaged>
@@ -8298,10 +8149,6 @@
 			<level>7</level>
 			<price>21000</price>
 			<unlocks>
-				<vehicle>
-					GB80_Charioteer
-					<cost>106250</cost>
-				</vehicle>
 				<gun>
 					_32_pounder_AT_Gun_OQF_Mk_II
 					<cost>16400</cost>
@@ -8336,7 +8183,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_14</primaryArmor>
 			<weight>5476</weight>
-			<maxHealth>228</maxHealth>
+			<maxHealth>190</maxHealth>
 			<rotationSpeed>18</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -8360,121 +8207,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_17pdr_OQF_AT_Mk_II>
-					shared
-					<maxAmmo>65</maxAmmo>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<invisibilityFactorAtShot>
-						0.234
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.33
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						4.3
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>2</aimingTime>
-					<models>
-						<undamaged>vehicles/british/GB41_Challenger/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/british/GB41_Challenger/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/british/GB41_Challenger/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB41_Challenger/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB41_Challenger/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium_mb</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0 0.000018 1.79202
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.014204 0.177921 -0.173039</anchorPosition>
-							<anchorDirection>
-								-0.00019 0.000006 1
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0 0.000018 1.79202
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0 0.000733 2.07746
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0 0.000733 2.42746
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.069 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.35
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<density>
-							106.444 124.013
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_17pdr_OQF_AT_Mk_II>
-				<_17pdr_OQF_AT_1>
+				<OQF_17_pdr_AT_Gun_Mk_VII_A30>
 					shared
 					<maxAmmo>65</maxAmmo>
 					<armor>
@@ -8493,7 +8226,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.9
+						3.5
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8501,10 +8234,7 @@
 							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -8593,10 +8323,16 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_17pdr_OQF_AT_1>
+				</OQF_17_pdr_AT_Gun_Mk_VII_A30>
 				<_32_pounder_AT_Gun_OQF_Mk_II>
 					shared
 					<maxAmmo>30</maxAmmo>
+					<unlocks>
+						<vehicle>
+							GB80_Charioteer
+							<cost>106250</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<gun>40</gun>
 					</armor>
@@ -9839,77 +9575,53 @@
 		</Turret_2_GB41_Challenger>
 	</turrets0>
 	<engines>
-		<Rolls_Royse_Meteor>
+		<Rolls_Royce_Meteor_A30>
 			shared
 			<unlocks>
 				<engine>
-					Rolls_Royse_Meteor_MkIV
+					Rolls_Royce_Meteor_Mk_IVB_A30
 					<cost>1900</cost>
 				</engine>
 			</unlocks>
-		</Rolls_Royse_Meteor>
-		<Rolls_Royse_Meteor_MkIV>shared</Rolls_Royse_Meteor_MkIV>
+		</Rolls_Royce_Meteor_A30>
+		<Rolls_Royce_Meteor_Mk_IVB_A30>shared</Rolls_Royce_Meteor_Mk_IVB_A30>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<N19Mk2>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk3
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</N19Mk2>
-		<N19Mk3>
-			shared
-			<unlocks>
-				<radio>
-					N22
-					<cost>4500</cost>
-				</radio>
-			</unlocks>
-		</N19Mk3>
 		<N22>shared</N22>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Rolls_Royse_Meteor>
-					<smplEnginePower>
-						634.3687
-						<!--BW_String-->
-					</smplEnginePower>
+				<Rolls_Royce_Meteor_A30>
+					<smplEnginePower>660</smplEnginePower>
 					<smplFwMaxSpeed>52</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor>
-				<Rolls_Royse_Meteor_MkIV>
-					<smplEnginePower>
-						687.2327
-						<!--BW_String-->
-					</smplEnginePower>
+				</Rolls_Royce_Meteor_A30>
+				<Rolls_Royce_Meteor_Mk_IVB_A30>
+					<smplEnginePower>700</smplEnginePower>
 					<smplFwMaxSpeed>52</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_MkIV>
+				</Rolls_Royce_Meteor_Mk_IVB_A30>
 			</engines>
 			<chassis>
 				<Chassis_GB41_Challenger>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1449
+								0.13685
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

@@ -118,7 +118,6 @@ class MarathonEventsController(IMarathonEventsController, Notifiable):
     def onLobbyStarted(self, ctx):
         super(MarathonEventsController, self).onLobbyStarted(ctx)
         self._eventsCache.onSyncCompleted += self.__onSyncCompleted
-        self._eventsCache.onProgressUpdated += self.__onSyncCompleted
         if self.app and self.app.loaderManager:
             self.app.loaderManager.onViewLoaded += self.__onViewLoaded
         self.__onSyncCompleted()
@@ -130,7 +129,7 @@ class MarathonEventsController(IMarathonEventsController, Notifiable):
 
     def __onViewLoaded(self, pyView, _):
         if self.__isLobbyInited:
-            if pyView.alias == VIEW_ALIAS.LOBBY_HANGAR:
+            if pyView.alias in (VIEW_ALIAS.LOBBY_HANGAR, VIEW_ALIAS.LEGACY_LOBBY_HANGAR):
                 self.__isInHangar = True
                 self.__tryShowRewardScreen()
             elif pyView.layer == WindowLayer.SUB_VIEW:
@@ -173,7 +172,6 @@ class MarathonEventsController(IMarathonEventsController, Notifiable):
     def __stop(self):
         self.clearNotification()
         self._eventsCache.onSyncCompleted -= self.__onSyncCompleted
-        self._eventsCache.onProgressUpdated -= self.__onSyncCompleted
         if self.app and self.app.loaderManager:
             self.app.loaderManager.onViewLoaded -= self.__onViewLoaded
         self.__isLobbyInited = False

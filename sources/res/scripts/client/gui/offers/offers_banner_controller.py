@@ -103,6 +103,9 @@ class OffersBannerController(IOffersBannerController):
     def __isHangarViewLoaded(self):
         app = self._appLoader.getApp(APP_NAME_SPACE.SF_LOBBY)
         if app and app.containerManager:
-            return app.containerManager.getViewByKey(ViewKey(VIEW_ALIAS.LOBBY_HANGAR)) is not None
+            hangarView = app.containerManager.getViewByKey(ViewKey(VIEW_ALIAS.LOBBY_HANGAR))
+            if hangarView is None:
+                hangarView = app.containerManager.getViewByKey(ViewKey(VIEW_ALIAS.LEGACY_LOBBY_HANGAR))
+            return hangarView is not None
         else:
             return False

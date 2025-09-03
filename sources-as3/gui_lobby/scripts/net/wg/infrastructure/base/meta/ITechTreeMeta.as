@@ -20,7 +20,7 @@ package net.wg.infrastructure.base.meta
       
       function request4VehCompareS(param1:Number) : void;
       
-      function onBlueprintModeSwitchS(param1:Boolean) : void;
+      function onBlueprintModeSwitchToggleS(param1:Boolean) : void;
       
       function onGoToPremiumShopS(param1:String, param2:int) : void;
       

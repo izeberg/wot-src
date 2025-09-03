@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Buildings/hv4_066_StreetFactory/normal/lod2/hv4_066_StreetFactory_Pipe_01</parent>
+	<extent>300.000000</extent>
+	<visibilityBox>
+		<min>-6.119971 -0.000001 -6.119939</min>
+		<max>6.119975 45.522991 6.119939</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Buildings/hv4_066_StreetFactory/normal/lod1/hv4_066_StreetFactory_Pipe_01</nodefullVisual>
+</root>

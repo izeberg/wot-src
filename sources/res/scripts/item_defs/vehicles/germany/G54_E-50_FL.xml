@@ -2274,7 +2274,7 @@
 	</hull>
 	<chassis>
 		<Chassis_E-50_2_FL>
-			<userString>#germany_vehicles:Chassis_E-50_2</userString>
+			<userString>#germany_vehicles:Chassis_G54_E-50_2</userString>
 			<tags/>
 			<level>9</level>
 			<price>62900</price>
@@ -2284,14 +2284,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>66000</maxLoad>
 			<terrainResistance>
 				0.8 1 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>60000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>32</rotationSpeed>
+			<rotationSpeed>44</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -4016,7 +4015,7 @@
 	</chassis>
 	<turrets0>
 		<Turret_2_E-50_FL>
-			<userString>#germany_vehicles:Turret_2_E-50</userString>
+			<userString>#germany_vehicles:Turret_2_G54_E-50</userString>
 			<tags/>
 			<level>9</level>
 			<price>52000</price>
@@ -5316,10 +5315,7 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_234_TRM_P30_FL>
-					<smplEnginePower>
-						951.553
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>1000</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</Maybach_HL_234_TRM_P30_FL>
 			</engines>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>last_stand/vehicles/german/G00_K_bomber_Boss_LS25_bot/normal/lod2/Hull</nodefullVisual>
+	<parent>last_stand/vehicles/german/G00_K_bomber_Boss_LS25_bot/normal/lod3/Hull</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-5.389336 -2.755586 -4.967485</min>
+		<max>5.389336 6.611131 4.921537</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

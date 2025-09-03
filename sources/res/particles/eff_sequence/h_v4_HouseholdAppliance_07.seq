@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>20.000002</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>UpperPart</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_014_HouseholdAppliance/normal/lod0/hv4_014_HouseholdAppliance_07_UpperPart.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.008246 0.293248 0.014284</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.115963 0.000000</inTangent>
+				<outTangent>0.000000 0.115963 0.000000</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.000000 0.042520 0.000000</value>
+				<inTangent>0.000000 0.025088 0.000000</inTangent>
+				<outTangent>0.000000 0.025088 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>9.500001</startTime>
+				<value>0.000000 100.475838 0.000000</value>
+				<inTangent>-0.000000 -0.345601 -0.000000</inTangent>
+				<outTangent>0.000000 -0.345601 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.500001</startTime>
+				<value>0.000000 100.000000 0.000000</value>
+				<inTangent>0.000000 0.152598 0.000000</inTangent>
+				<outTangent>0.000000 0.152598 0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>19.466667</startTime>
+				<value>0.000000 -0.101574 0.000000</value>
+				<inTangent>-0.000000 0.101786 -0.000000</inTangent>
+				<outTangent>-0.000000 0.101786 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 0.190451 -0.000000</inTangent>
+				<outTangent>-0.000000 0.190451 -0.000000</outTangent>
+				<tangentMode>3</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Propeller</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_014_HouseholdAppliance/normal/lod0/hv4_014_HouseholdAppliance_07_Propeller.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>20.000000</duration>
+				<value>UpperPart|</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000002 0.098407 -0.083261</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 361.204010</inTangent>
+				<outTangent>0.000000 0.000000 539.999939</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.000000 0.000000 10800.000000</value>
+				<inTangent>-0.000000 -0.000000 539.999939</inTangent>
+				<outTangent>-0.000000 -0.000000 361.204010</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>dust</name>
+		<type>particle</type>
+		<resource>particles/Environment/hangar/hangar_v4_small_vent_dust.eff</resource>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>20.000000</duration>
+				<value>UpperPart|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.127778 0.147176 -0.073776</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 180.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

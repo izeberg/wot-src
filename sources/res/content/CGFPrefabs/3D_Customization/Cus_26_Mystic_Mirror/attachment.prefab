@@ -7,8 +7,42 @@
 			<UUID>184b1f49-4d4e-44ef-9bc2-ea8dce184fc4</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>model_go</name>
+			<UUID>21c0247d-c803-42ab-ba59-060587770d00</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>ffb02a74-8292-42ba-9261-6623813195ed</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>21c0247d-c803-42ab-ba59-060587770d00</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>ffb02a74-8292-42ba-9261-6623813195ed</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ffb02a74-8292-42ba-9261-6623813195ed</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>184b1f49-4d4e-44ef-9bc2-ea8dce184fc4</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
 			<version>1</version>
@@ -30,12 +64,74 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>21c0247d-c803-42ab-ba59-060587770d00</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>ffb02a74-8292-42ba-9261-6623813195ed</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>184b1f49-4d4e-44ef-9bc2-ea8dce184fc4</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>ffb02a74-8292-42ba-9261-6623813195ed</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>ComponentsVisibilityController</type>
 			<version>1</version>
 			<component>
-				<UUID>184b1f49-4d4e-44ef-9bc2-ea8dce184fc4</UUID>
+				<UUID>21c0247d-c803-42ab-ba59-060587770d00</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -98,6 +194,14 @@
 						<name>Visible in TWIN_GUN MODE</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -105,7 +209,7 @@
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
-				<UUID>184b1f49-4d4e-44ef-9bc2-ea8dce184fc4</UUID>
+				<UUID>21c0247d-c803-42ab-ba59-060587770d00</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -115,6 +219,20 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>184b1f49-4d4e-44ef-9bc2-ea8dce184fc4</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
 						<value>1</value>
 					</property>
 				</config>

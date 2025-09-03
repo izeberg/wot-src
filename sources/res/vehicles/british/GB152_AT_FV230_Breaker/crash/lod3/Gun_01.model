@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB152_AT_FV230_Breaker/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB152_AT_FV230_Breaker/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.437562 -0.442890 -1.330605</min>
+		<max>0.435244 0.434839 6.068238</max>
+	</visibilityBox>
+</root>

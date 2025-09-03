@@ -1,5 +1,6 @@
 import logging
 from account_helpers.settings_core.settings_constants import GAME
+from constants import MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL
 from gui.impl.gen.view_models.views.lobby.platoon.settings_model import SettingsModel, SearchFilterTypes
 from gui.impl.gen.view_models.views.lobby.platoon.tier_button_model import TierButtonModel
 from UnitBase import UnitAssemblerSearchFlags, BitfieldHelper
@@ -19,8 +20,6 @@ class TiersFilterSubview(ViewImpl):
     __itemsCache = dependency.descriptor(IItemsCache)
     __lobbyContext = dependency.descriptor(ILobbyContext)
     __settingsCore = dependency.descriptor(ISettingsCore)
-    MIN_LEVEL = 1
-    MAX_LEVEL = 10
 
     def __init__(self):
         settings = ViewSettings(layoutID=R.views.lobby.platoon.subViews.SettingsContent(), model=SettingsModel())
@@ -54,7 +53,7 @@ class TiersFilterSubview(ViewImpl):
         with self.viewModel.transaction() as (model):
             tierArray = model.tiersSettings.getTierButtons()
             tierArray.clear()
-            for lvl in range(self.MIN_LEVEL, self.MAX_LEVEL + 1):
+            for lvl in range(MIN_VEHICLE_LEVEL, MAX_VEHICLE_LEVEL + 1):
                 isTierAvailable = self.__isTierAvailable(lvl)
                 isSelected = userSearchFlags.isSetBit(lvl)
                 self.__createTierButton(tierArray, lvl, isTierAvailable, isSelected)

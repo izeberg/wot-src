@@ -4,6 +4,7 @@ package net.wg.gui.components.hintPanel
    import flash.display.MovieClip;
    import net.wg.data.constants.generated.BATTLE_SOUND;
    import net.wg.gui.battle.events.BattleSoundEvent;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.gui.utils.FrameHelper;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
@@ -38,11 +39,18 @@ package net.wg.gui.components.hintPanel
          stop();
          this.keyViewerContainer.dispose();
          this.keyViewerContainer = null;
+         this._frameHelper.dispose();
+         this._frameHelper = null;
       }
       
-      public function setKey(param1:String, param2:String) : void
+      public function isDisposed() : Boolean
       {
-         this.keyViewerContainer.setKey(param1,param2);
+         return this._disposed;
+      }
+      
+      public function setKey(param1:IngameDetailsKeyVO) : void
+      {
+         this.keyViewerContainer.setKey(param1);
       }
       
       private function initFramesScript() : void
@@ -66,11 +74,6 @@ package net.wg.gui.components.hintPanel
       private function onPlaySnd() : void
       {
          dispatchEvent(new BattleSoundEvent(BattleSoundEvent.ON_SOUND_PLAY,BATTLE_SOUND.SOUND_TYPE_HINT_PANNEL_FLASH));
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

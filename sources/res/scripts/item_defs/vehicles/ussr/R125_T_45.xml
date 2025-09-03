@@ -1919,7 +1919,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>2000</weight>
-			<maxLoad>8600</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.1
 				<!--BW_String-->
@@ -5039,10 +5038,7 @@
 						89.8689
 						<!--BW_String-->
 					</smplEnginePower>
-					<smplFwMaxSpeed>
-						40.515
-						<!--BW_String-->
-					</smplFwMaxSpeed>
+					<smplFwMaxSpeed>41</smplFwMaxSpeed>
 				</ZiS-16_A>
 			</engines>
 			<chassis>

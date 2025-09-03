@@ -11,7 +11,7 @@
 	<supplySlots>2 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_MT_sniper</postProgressionTree>
 	<speedLimits>
-		<forward>42</forward>
+		<forward>45</forward>
 		<backward>18</backward>
 	</speedLimits>
 	<invisibility>
@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>13796</weight>
-		<maxHealth>920</maxHealth>
+		<maxHealth>1080</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>228</maxHealth>
 			<maxRegenHealth>156</maxRegenHealth>
@@ -2183,14 +2183,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Chi_Ri>
-			<userString>#japan_vehicles:Chassis_Chi_Ri</userString>
+		<Chassis_J11_Chi_Ri>
+			<userString>#japan_vehicles:Chassis_J11_Chi_Ri</userString>
 			<tags/>
 			<level>6</level>
 			<price>12000</price>
 			<unlocks>
 				<chassis>
-					Chassis_Chi_Ri_2
+					Chassis_J11_Chi_Ri_2
 					<cost>8800</cost>
 				</chassis>
 			</unlocks>
@@ -2199,14 +2199,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11600</weight>
-			<maxLoad>42300</maxLoad>
 			<terrainResistance>
-				1.1 1.2 2.4
+				1 1.1 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>31500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -3973,9 +3972,9 @@
 				5.71428537
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Chi_Ri>
-		<Chassis_Chi_Ri_2>
-			<userString>#japan_vehicles:Chassis_Chi_Ri_2</userString>
+		</Chassis_J11_Chi_Ri>
+		<Chassis_J11_Chi_Ri_2>
+			<userString>#japan_vehicles:Chassis_J11_Chi_Ri_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>19500</price>
@@ -3984,14 +3983,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11600</weight>
-			<maxLoad>44800</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>34</rotationSpeed>
+			<rotationSpeed>47</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -5761,14 +5759,20 @@
 				5.71428537
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Chi_Ri_2>
+		</Chassis_J11_Chi_Ri_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Chi_Ri>
-			<userString>#japan_vehicles:Turret_1_Chi_Ri</userString>
+		<Turret_1_J11_Chi_Ri>
+			<userString>#japan_vehicles:Turret_1_J11_Chi_Ri</userString>
 			<tags/>
 			<level>6</level>
 			<price>13000</price>
+			<unlocks>
+				<turret>
+					Turret_2_J11_Chi_Ri
+					<cost>10200</cost>
+				</turret>
+			</unlocks>
 			<armor>
 				<armor_1>75</armor_1>
 				<armor_2>95</armor_2>
@@ -5784,7 +5788,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>230</maxHealth>
+			<maxHealth>200</maxHealth>
 			<rotationSpeed>36</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>156</maxHealth>
@@ -5804,150 +5808,9 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_Gun_Type5>
-					shared
-					<maxAmmo>115</maxAmmo>
-					<unlocks>
-						<gun>
-							_75mm_Gun_Type5_M1
-							<cost>5400</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							20
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<gun>20</gun>
-					</armor>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.402778 10 0.416667 3 0.583333 3 0.597222 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.36
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.1
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<reloadTime>
-						4.7
-						<!--BW_String-->
-					</reloadTime>
-					<models>
-						<undamaged>vehicles/japan/J11_Chi_Ri/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/japan/J11_Chi_Ri/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/japan/J11_Chi_Ri/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/japan/J11_Chi_Ri/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/japan/J11_Chi_Ri/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000611 -0.004386 1.68594
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.000535 0.282689 0.290622</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000611 -0.004386 1.68594
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.001223 -0.008771 1.43
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.001223 -0.008771 1.93
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.072 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.5
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.2 0.2 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							98.8154 99.0984
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>256 256</aoTextureSize>
-					</camouflage>
-				</_75mm_Gun_Type5>
-				<_75mm_Gun_Type5_M1>
+				<_75mm_Tank_Gun_Type_5_Model_I_CR>
 					shared
 					<maxAmmo>97</maxAmmo>
-					<unlocks>
-						<turret>
-							Turret_2_Chi_Ri
-							<cost>10200</cost>
-						</turret>
-					</unlocks>
 					<armor>
 						<armor_1>
 							150
@@ -5967,7 +5830,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.36
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -5976,20 +5839,17 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6073,7 +5933,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_75mm_Gun_Type5_M1>
+				</_75mm_Tank_Gun_Type_5_Model_I_CR>
 			</guns>
 			<models>
 				<undamaged>vehicles/japan/J11_Chi_Ri/normal/lod0/Turret_01.model</undamaged>
@@ -7026,9 +6886,9 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_Chi_Ri>
-		<Turret_2_Chi_Ri>
-			<userString>#japan_vehicles:Turret_2_Chi_Ri</userString>
+		</Turret_1_J11_Chi_Ri>
+		<Turret_2_J11_Chi_Ri>
+			<userString>#japan_vehicles:Turret_2_J11_Chi_Ri</userString>
 			<tags/>
 			<level>7</level>
 			<price>21000</price>
@@ -7053,7 +6913,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>13752</weight>
-			<maxHealth>330</maxHealth>
+			<maxHealth>270</maxHealth>
 			<rotationSpeed>36</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>156</maxHealth>
@@ -7077,133 +6937,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_75mm_Gun_Type5>
-					shared
-					<maxAmmo>125</maxAmmo>
-					<armor>
-						<armor_1>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							20
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<gun>20</gun>
-					</armor>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.411111 10 0.425 2 0.575 2 0.588889 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionRadius>
-						0.35
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						4.5
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/japan/J11_Chi_Ri/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/japan/J11_Chi_Ri/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/japan/J11_Chi_Ri/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/japan/J11_Chi_Ri/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/japan/J11_Chi_Ri/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000613 -0.004381 1.68597
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.000536 0.277722 0.282459</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000613 -0.004381 1.68597
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.001226 -0.008763 1.43
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.001226 -0.008763 1.93
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.072 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.5
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.3 0.3 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							98.8154 99.0984
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>256 256</aoTextureSize>
-					</camouflage>
-				</_75mm_Gun_Type5>
-				<_75mm_Gun_Type5_M1>
+				<_75mm_Tank_Gun_Type_5_Model_I_CR>
 					shared
 					<maxAmmo>105</maxAmmo>
 					<armor>
@@ -7225,7 +6959,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.35
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7328,7 +7062,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_75mm_Gun_Type5_M1>
+				</_75mm_Tank_Gun_Type_5_Model_I_CR>
 				<_75mm_Gun_Type5_M1_auto>
 					shared
 					<maxAmmo>105</maxAmmo>
@@ -8502,7 +8236,7 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_Chi_Ri>
+		</Turret_2_J11_Chi_Ri>
 	</turrets0>
 	<engines>
 		<_Type4_V12_Kakyuu>
@@ -8520,77 +8254,22 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<_Hei>
-			shared
-			<unlocks>
-				<radio>
-					_Type96_Bo
-					<cost>1400</cost>
-				</radio>
-			</unlocks>
-		</_Hei>
-		<_Type96_Bo>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Otsu
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</_Type96_Bo>
-		<_Type3_Otsu>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Ko
-					<cost>9300</cost>
-				</radio>
-			</unlocks>
-		</_Type3_Otsu>
 		<_Type3_Ko>shared</_Type3_Ko>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
 				<_Type4_V12_Kakyuu>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>42</smplFwMaxSpeed>
+					<smplEnginePower>600</smplEnginePower>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</_Type4_V12_Kakyuu>
 				<_Type98_V12>
-					<smplEnginePower>
-						581.5046
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>42</smplFwMaxSpeed>
+					<smplEnginePower>650</smplEnginePower>
+					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</_Type98_V12>
 			</engines>
 			<chassis>
-				<Chassis_Chi_Ri>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.1932
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Chi_Ri>
-				<Chassis_Chi_Ri_2>
+				<Chassis_J11_Chi_Ri>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8611,7 +8290,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Chi_Ri_2>
+				</Chassis_J11_Chi_Ri>
+				<Chassis_J11_Chi_Ri_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.1771
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_J11_Chi_Ri_2>
 			</chassis>
 		</detailed>
 	</physics>

@@ -2234,6 +2234,122 @@
 			</item>
 		</value>
 	</personalMissions>
+	<personalMissions3>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>EU</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>infoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/personal_missions_september_2025/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>NA</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>infoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/personal_missions_september_2025/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>ASIA</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>infoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/personal_missions_september_2025/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>CN</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>infoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/personal_missions_september_2025/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>infoPage</name>
+						<type>dict</type>
+						<value>
+							<item>
+								<name>isEnabled</name>
+								<type>bool</type>
+								<value>True</value>
+							</item>
+							<item>
+								https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/personal_missions_september_2025/
+								<name>url</name>
+								<type>url</type>
+							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+		</value>
+	</personalMissions3>
 	<referralProgram>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -2684,39 +2800,23 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/17BPContentPage/
+				/$LANGUAGE_CODE/promocontent/18BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
 			<item>
+				/$LANGUAGE_CODE/promocontent/specialchapter
 				<name>extraInfoPage</name>
-				<type>dict</type>
-				<value>
-					<item>
-						/$LANGUAGE_CODE/promocontent/chapterd/
-						<name>174</name>
-						<type>url</type>
-					</item>
-					<item>
-						/$LANGUAGE_CODE/promocontent/chapterl/
-						<name>175</name>
-						<type>url</type>
-					</item>
-					<item>
-						/$LANGUAGE_CODE/promocontent/bp-wot-anniversary-2025/
-						<name>176</name>
-						<type>url</type>
-					</item>
-				</value>
+				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/17BPIntroVideo/
+				/$LANGUAGE_CODE/promocontent/18BPIntroVideo/
 				<name>introVideo</name>
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/bp-wot-anniversary-2025-Video/
-				<name>extraIntroVideo</name>
+				/$LANGUAGE_CODE/promocontent/specialchapterVideo/
+				<name>extraVideo</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -2731,7 +2831,7 @@
 					<item>
 						<name>hasAdditionalBackground</name>
 						<type>bool</type>
-						<value>True</value>
+						<value>False</value>
 					</item>
 				</value>
 			</item>
@@ -2744,34 +2844,19 @@
 						<type>dict</type>
 						<value>
 							<item>
-								<name>171</name>
+								<name>181</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
 							<item>
-								<name>172</name>
+								<name>182</name>
 								<type>bool</type>
 								<value>False</value>
 							</item>
 							<item>
-								<name>173</name>
+								<name>183</name>
 								<type>bool</type>
 								<value>False</value>
-							</item>
-							<item>
-								<name>174</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								<name>175</name>
-								<type>bool</type>
-								<value>True</value>
-							</item>
-							<item>
-								<name>176</name>
-								<type>bool</type>
-								<value>True</value>
 							</item>
 						</value>
 					</item>
@@ -2954,7 +3039,7 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/dragonboat-boxes-2025/
+				https://worldoftanks.asia/$LANGUAGE_CODE/news/specials/waffentrager-september-2025-bundles/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3181,42 +3266,6 @@
 			</item>
 		</value>
 	</globalMapURL>
-	<infoPageRandom>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>EU</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>ASIA</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>NA</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>CN</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/RandomBattles/
-				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</infoPageRandom>
 	<infoPageStrongholdsBattlesList>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -3383,32 +3432,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-april-2025/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/wot-plus-september-2025/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3455,32 +3504,32 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1/
 				<name>default</name>
 				<type>url</type>
 			</item>
@@ -3491,37 +3540,73 @@
 		<macros>AUTH_REALM</macros>
 		<value>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
 				<name>EU</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
 				<name>ASIA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
 				<name>NA</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
 				<name>CN</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
+				https://webbrg-ct.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
 				<name>CT</name>
 				<type>url</type>
 			</item>
 			<item>
-				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-manticore-episode-3Video/
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-season-of-dragon-episode-1-Video/
 				<name>default</name>
 				<type>url</type>
 			</item>
 		</value>
 	</whatsNewPageComp7>
+	<infoPageComp7Light>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				<name>EU</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				<name>ASIA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				<name>NA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				<name>CN</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/onslaught-light-september-2025/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</infoPageComp7Light>
 	<vehicleDisclaimerURLs>
 		<type>macros</type>
 		<macros>CURRENT_REALM</macros>
@@ -3860,4 +3945,502 @@
 			</item>
 		</value>
 	</comp7GrandTournamentBanner>
+	<reportContentURL>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://wargaming.net/support/products/wot/help/29691/29692/
+				<name>EU</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://wargaming.net/support/products/wot/help/29691/29692/
+				<name>ASIA</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://wargaming.net/support/products/wot/help/29691/29692/
+				<name>NA</name>
+				<type>url</type>
+			</item>
+			<item>
+				<name>CN</name>
+				<type>url</type>
+			</item>
+			<item>
+				<name>CT</name>
+				<type>url</type>
+			</item>
+			<item>
+				<name>SB</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://wargaming.net/support/products/wot/help/29691/29692/
+				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</reportContentURL>
+	<vehSkillTreeIntroSlides>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>list</type>
+				<value>
+					<item>
+						<type>string</type>
+						<value>progression</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>improvements</value>
+					</item>
+					<item>
+						<type>string</type>
+						<value>vanity</value>
+					</item>
+				</value>
+			</item>
+		</value>
+	</vehSkillTreeIntroSlides>
+	<mechanicsVideoUrls>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>EU</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_GB147_Video/
+						<name>twinGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_R228_Video/
+						<name>improvedRamming</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_A183_Video/
+						<name>concentrationMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_F136_Video/
+						<name>extraShotClip</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_GB152_Video/
+						<name>powerMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G187_Video/
+						<name>supportWeapon</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_S36_Video/
+						<name>pillboxSiegeMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_A179_Video/
+						<name>chargeableBurst</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_F135_Video/
+						<name>stationaryReload</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_A182_Video/
+						<name>battleFury</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G185_Video/
+						<name>accuracyStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G189_Video/
+						<name>overheatStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_Ch67_Video/
+						<name>rechargeableNitro</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_R230_Video/
+						<name>chargeShot</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_Pl37_Video/
+						<name>stanceDance</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
+						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>ASIA</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_GB147_Video/
+						<name>twinGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_R228_Video/
+						<name>improvedRamming</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_A183_Video/
+						<name>concentrationMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_F136_Video/
+						<name>extraShotClip</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_GB152_Video/
+						<name>powerMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_G187_Video/
+						<name>supportWeapon</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_S36_Video/
+						<name>pillboxSiegeMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_A179_Video/
+						<name>chargeableBurst</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_F135_Video/
+						<name>stationaryReload</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_A182_Video/
+						<name>battleFury</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_G185_Video/
+						<name>accuracyStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_G189_Video/
+						<name>overheatStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_Ch67_Video/
+						<name>rechargeableNitro</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_R230_Video/
+						<name>chargeShot</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_Pl37_Video/
+						<name>stanceDance</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.asia/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
+						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>NA</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_GB147_Video/
+						<name>twinGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_R228_Video/
+						<name>improvedRamming</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_A183_Video/
+						<name>concentrationMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_F136_Video/
+						<name>extraShotClip</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_GB152_Video/
+						<name>powerMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_G187_Video/
+						<name>supportWeapon</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_S36_Video/
+						<name>pillboxSiegeMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_A179_Video/
+						<name>chargeableBurst</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_F135_Video/
+						<name>stationaryReload</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_A182_Video/
+						<name>battleFury</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_G185_Video/
+						<name>accuracyStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_G189_Video/
+						<name>overheatStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_Ch67_Video/
+						<name>rechargeableNitro</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_R230_Video/
+						<name>chargeShot</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_Pl37_Video/
+						<name>stanceDance</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.com/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
+						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>CN</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_GB147_Video/
+						<name>twinGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_R228_Video/
+						<name>improvedRamming</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_A183_Video/
+						<name>concentrationMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_F136_Video/
+						<name>extraShotClip</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_GB152_Video/
+						<name>powerMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_G187_Video/
+						<name>supportWeapon</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_S36_Video/
+						<name>pillboxSiegeMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_A179_Video/
+						<name>chargeableBurst</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_F135_Video/
+						<name>stationaryReload</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_A182_Video/
+						<name>battleFury</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_G185_Video/
+						<name>accuracyStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_G189_Video/
+						<name>overheatStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_Ch67_Video/
+						<name>rechargeableNitro</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_R230_Video/
+						<name>chargeShot</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_Pl37_Video/
+						<name>stanceDance</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg-cn360.wotgame.cn/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
+						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_GB147_Video/
+						<name>twinGun</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_R228_Video/
+						<name>improvedRamming</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_A183_Video/
+						<name>concentrationMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_F136_Video/
+						<name>extraShotClip</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_GB152_Video/
+						<name>powerMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G187_Video/
+						<name>supportWeapon</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_S36_Video/
+						<name>pillboxSiegeMode</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_A179_Video/
+						<name>chargeableBurst</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_F135_Video/
+						<name>stationaryReload</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_A182_Video/
+						<name>battleFury</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G185_Video/
+						<name>accuracyStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G189_Video/
+						<name>overheatStacks</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_Ch67_Video/
+						<name>rechargeableNitro</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_R230_Video/
+						<name>chargeShot</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_Pl37_Video/
+						<name>stanceDance</name>
+						<type>url</type>
+					</item>
+					<item>
+						https://webbrg.worldoftanks.eu/$LANGUAGE_CODE/promocontent/black_box_G188_Video/
+						<name>targetDesignator</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+		</value>
+	</mechanicsVideoUrls>
 </root>

@@ -1,0 +1,351 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "alertMessage/button/changeServer"
+msgstr "Change Server"
+
+msgid "alertMessage/button/moreInfo"
+msgstr "Details"
+
+msgid "alertMessage/ceasefireAvailable"
+msgstr "The mode is unavailable on this server %(button)s"
+
+msgid "alertMessage/ceasefireUnavailable"
+msgstr "The mode is unavailable on all servers"
+
+msgid "alertMessage/modeOffline"
+msgstr "Database error. Game mode unavailable."
+
+msgid "alertMessage/noVehicles"
+msgstr "No suitable vehicles in your Garage %(button)s"
+
+msgid "battleQuestAwards/button"
+msgstr "Affirmative!"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "ONSLAUGHT LIGHT"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "FINAL STAGE COMPLETED!"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "STAGE %(level)s COMPLETED!"
+
+msgid "battleQuestTooltips/allMissionsCompleted"
+msgstr "All missions completed!"
+
+msgid "battleQuestTooltips/completed"
+msgstr "Completed"
+
+msgid "battleQuestTooltips/expiresIn"
+msgstr "Expires in: %(timeLeft)s"
+
+msgid "battleQuestTooltips/mission"
+msgstr "Onslaught Light Mission"
+
+msgid "battleQuestTooltips/newMissionsIn"
+msgstr "New Onslaught Light mission in: %(timeLeft)s"
+
+msgid "battleQuestTooltips/rewards"
+msgid_plural "plural/battleQuestTooltips/rewards"
+msgstr[0] "Reward:"
+msgstr[1] "Rewards:"
+msgstr[2] "Rewards:"
+
+msgid "battleResult/header/deserter"
+msgstr "You have received a disciplinary penalty"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s–%(end)s"
+
+msgid "calendarDay/timeLeft"
+msgid_plural "plural/calendarDay/timeLeft"
+msgstr[0] "Onslaught Light will last for %(days)d day"
+msgstr[1] "Onslaught Light will last for %(days)d days"
+msgstr[2] "Onslaught Light will last for %(days)d days"
+
+msgid "calendarDay/title"
+msgstr "Schedule"
+
+msgid "closeButtonLabel"
+msgstr "CLOSE"
+
+msgid "countDown/text"
+msgstr ""
+"Event starts in:\n"
+"%(timeLeft)s"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"A fast-paced mode featuring 7v7 battles in Tier %(levels)s vehicles. Enjoy "
+"the gameplay of the original Onslaught mode without Qualification, Ranks, or"
+" Service Records, and earn rewards in daily missions."
+
+msgid "entryPointTooltip/modeBtnText"
+msgstr "MODE"
+
+msgid "entryPointTooltip/modeDescription"
+msgstr "%(mode)s — Game mode. Click to explore"
+
+msgid "entryPointTooltip/modeName"
+msgstr "Onslaught Light"
+
+msgid "entryPointTooltip/status/active"
+msgstr "The mode is available for %(timer)s"
+
+msgid "entryPointTooltip/status/ceasefire"
+msgstr "Ceasefire%(timer)s"
+
+msgid "featureName"
+msgstr "Onslaught Light"
+
+msgid "featureNameCapitalized"
+msgstr "ONSLAUGHT LIGHT"
+
+msgid "intro/confirmButton"
+msgstr "Affirmative!"
+
+msgid "intro/description/lightGameplay"
+msgstr ""
+"Enjoy the gameplay of the original Onslaught mode without Qualification, "
+"Ranks or any Service Records."
+
+msgid "intro/description/onslaughtModifiers"
+msgstr ""
+"The mode has modifiers that change certain parameters of the vehicle, such "
+"as vehicle hit points, consumables cooldown time, time remaining visible, "
+"and more."
+
+msgid "intro/description/pointsOfInterest"
+msgstr ""
+"Once you capture certain areas of the map, you will be able to use Tactical "
+"Skills. There are two types of Points of Interest: the Artillery "
+"Headquarters will allow you to direct an artillery strike on a certain "
+"position, and the Comms Center will spot all enemy vehicles. Depending on "
+"the map, the presence and location of these Points of Interest can change."
+
+msgid "intro/description/roleSkills"
+msgstr ""
+"Depending on the role, each vehicle has a special skill with three charge levels. The higher the charge level when the skill is activated, the stronger the effect will be. The charge level will depend on the number of Prestige Points that can be earned for impressive performance in battle, capturing Points of Interest, using Tactical Skills, etc.\n"
+"\n"
+"Check out the mode regulations to learn more about the different ways you can earn Prestige Points."
+
+msgid "intro/description/vehiclesOnMap"
+msgstr ""
+"Only %(levels)s vehicles can be used in the mode (SPGs and some other tanks "
+"are not available). Prepare your vehicles in the Garage, then choose the "
+"best one based on the features of the given map once you get into battle. "
+"When selecting your vehicle, also consider which vehicles your allies have "
+"chosen."
+
+msgid "intro/title/lightGameplay"
+msgstr "CHILL OUT, COMMANDER"
+
+msgid "intro/title/onslaughtModifiers"
+msgstr "ONSLAUGHT MODIFIERS"
+
+msgid "intro/title/pointsOfInterest"
+msgstr "POINTS OF INTEREST"
+
+msgid "intro/title/roleSkills"
+msgstr "ROLE SKILLS"
+
+msgid "intro/title/vehiclesOnMap"
+msgstr "CHOOSE A VEHICLE FOR A SPECIFIC MAP"
+
+msgid "leaderboardRewardTooltip/column/0"
+msgstr "?empty?"
+
+msgid "leaderboardRewardTooltip/column/1"
+msgstr "Victory"
+
+msgid "leaderboardRewardTooltip/column/2"
+msgstr "Defeat/Draw"
+
+msgid "leaderboardRewardTooltip/description/completed"
+msgstr "Solid work, Commander, keep it up!"
+
+msgid "leaderboardRewardTooltip/description/inProgress"
+msgstr ""
+"Complete missions and reach top positions in Onslaught Light battles to "
+"increase your Progression level."
+
+msgid "leaderboardRewardTooltip/description/simplified"
+msgstr ""
+"The number of Progression Points you earn depends on your Prestige Points "
+"placement in battle."
+
+msgid "leaderboardRewardTooltip/eventEnds"
+msgstr "The mode ends in %(countdown)s"
+
+msgid "leaderboardRewardTooltip/heading/completed"
+msgstr "Main Progression complete"
+
+msgid "leaderboardRewardTooltip/modeName"
+msgstr "Onslaught Light"
+
+msgid "leaderboardRewardTooltip/top/0"
+msgstr "Top 2 by Prestige Points"
+
+msgid "leaderboardRewardTooltip/top/1"
+msgstr "Top 5 by Prestige Points"
+
+msgid "leaderboardRewardTooltip/top/2"
+msgstr "Top 7 by Prestige Points"
+
+msgid "listSeparator"
+msgstr ", "
+
+msgid "noVehicles/howTo/premium"
+msgstr "Use WoT Premium Account"
+
+msgid "noVehicles/howTo/reserves"
+msgstr "Activate Personal Reserves"
+
+msgid "noVehicles/howTo/tasks"
+msgstr "Complete Missions"
+
+msgid "noVehicles/howTo/title"
+msgstr "What is the fastest way to get Tier %(levels)s vehicles?"
+
+msgid "noVehicles/text/vehicleAvailableForBuy"
+msgstr ""
+"To participate in Onslaught Light, you need to have at least one Tier %(levels)s vehicle in the Garage that is suitable for the mode.\n"
+"You can purchase Premium Tier %(levels)s vehicles in the Tech Tree or the in-game Store."
+
+msgid "noVehicles/text/vehicleAvailableForRestore"
+msgstr ""
+"To participate in Onslaught Light, you need to have at least one Tier %(levels)s vehicle in the Garage that is suitable for the mode.\n"
+"You have a Tier %(levels)s vehicle available for recovery."
+
+msgid "noVehicles/text/vehicleUnavailable"
+msgstr ""
+"To participate in Onslaught Light, you need to have at least one Tier "
+"%(levels)s vehicle in the Garage that is suitable for the mode."
+
+msgid "noVehicles/title"
+msgstr "No suitable vehicles in your Garage"
+
+msgid "primeTimeView/status/seasonDisabled/first"
+msgstr "Season has ended on the %(server)s server."
+
+msgid "primeTimeView/status/seasonDisabled/second"
+msgstr "Season has ended on the %(server)s server."
+
+msgid "primeTimeView/status/seasonDisabled/third"
+msgstr "Season has ended on the %(server)s server."
+
+msgid "progressionEntryPoint/complete"
+msgstr "Main Progression complete!"
+
+msgid "progressionEntryPoint/counter"
+msgstr "%(current)s%(divider)s%(total)s"
+
+msgid "progressionEntryPoint/stage"
+msgstr "Stage %(current)s"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s or %(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "progressionView/battleQuests/timer/completed/text"
+msgstr "New missions in:"
+
+msgid "progressionView/battleQuests/timer/eventEnds"
+msgstr "Event ends in:"
+
+msgid "progressionView/battleQuests/timer/inProgress/text"
+msgstr "Missions will be updated in"
+
+msgid "progressionView/battleQuests/timer/title"
+msgstr "All daily missions completed."
+
+msgid "progressionView/card/points"
+msgstr "%(current)s/%(total)s"
+
+msgid "progressionView/subTitle/completed"
+msgstr "Progression completed. Play in Onslaught Light to earn more rewards."
+
+msgid "progressionView/subTitle/inProgress"
+msgstr ""
+"Complete missions and secure top positions in Onslaught Light battles to "
+"increase your Progression level. %(infotip)s"
+
+msgid "quests/bonuses/progressionToken/body"
+msgstr ""
+"Awarded for completing special missions and fighting battles in Onslaught "
+"Light. They allow you to advance through the Progression."
+
+msgid "quests/bonuses/progressionToken/header"
+msgstr "Onslaught Light Progression Points"
+
+msgid "selectorTooltip/desc"
+msgstr "Unranked mode. 7v7 | Tier %(tier)s"
+
+msgid "selectorTooltip/title"
+msgstr "Onslaught Light"
+
+msgid "selectorTooltip/unavailable/finished"
+msgstr ""
+"Follow the latest news on the game portal to stay up-to-date on the start of"
+" the new Season."
+
+msgid "selectorTooltip/unavailable/frozen"
+msgstr "This mode is temporarily unavailable for technical reasons."
+
+msgid "selectorTooltip/unavailable/nextSeason"
+msgstr "This mode will become available on %(time)s"
+
+msgid "serviceChannelMessages/battleResults/progressionPoints"
+msgstr "Progression Points received"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "Details"
+
+msgid "serviceChannelMessages/progressionName"
+msgstr "Onslaught Light"
+
+msgid "serviceChannelMessages/progressionSystem/awards"
+msgstr "Rewards received:"
+
+msgid "serviceChannelMessages/progressionSystem/body"
+msgstr ""
+"You have completed Progression Stage %(stage)s in the %(progressionName)s "
+"mode."
+
+msgid "serviceChannelMessages/progressionSystem/header"
+msgstr "Congratulations!"
+
+msgid "system_messages/primeTime/end/body"
+msgstr ""
+"Ceasefire in effect. Onslaught Light battles are temporarily unavailable."
+
+msgid "system_messages/primeTime/end/title"
+msgstr "Ceasefire"
+
+msgid "system_messages/primeTime/start/body"
+msgstr "Ceasefire over. Onslaught Light battles are available again."
+
+msgid "system_messages/primeTime/start/title"
+msgstr "Ceasefire"
+
+msgid "tooltip/infoPageButton/header"
+msgstr "About Onslaught Light"

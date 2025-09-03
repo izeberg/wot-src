@@ -215,8 +215,8 @@ package net.wg.gui.battle.battleRoyale.views.configurator
       
       public function setInitData(param1:UpgradePanelVO) : void
       {
-         this.firstInfoForSelect.setHotKeys(param1.firstItem.hotKeysVKeys,param1.firstItem.hotKeys);
-         this.secondInfoForSelect.setHotKeys(param1.secondItem.hotKeysVKeys,param1.secondItem.hotKeys);
+         this.firstInfoForSelect.setHotKeys(param1.firstItem.hotKeys);
+         this.secondInfoForSelect.setHotKeys(param1.secondItem.hotKeys);
       }
       
       public function setMouseEnabled(param1:Boolean) : void

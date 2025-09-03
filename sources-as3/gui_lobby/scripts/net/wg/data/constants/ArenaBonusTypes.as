@@ -38,6 +38,8 @@ package net.wg.data.constants
       public static const TOURNAMENT_COMP7:int = 47;
       
       public static const TRAINING_COMP7:int = 48;
+      
+      public static const COMP7_LIGHT:int = 49;
        
       
       public function ArenaBonusTypes()

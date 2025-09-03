@@ -2,8 +2,11 @@ package net.wg.gui.components.crosshairPanel
 {
    import flash.display.DisplayObject;
    import flash.display.DisplayObjectContainer;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.GUN_MARKER_VIEW_CONSTANTS;
    import net.wg.gui.components.crosshairPanel.VO.CrosshairSettingsVO;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarker;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarker;
@@ -24,6 +27,10 @@ package net.wg.gui.components.crosshairPanel
       
       private var _twinGunMarkers:Vector.<TwinGunMarker>;
       
+      private var _accuracyGunMarkers:Vector.<AccuracyGunMarker>;
+      
+      private var _chargeGunMarkers:Vector.<ChargeGunMarker>;
+      
       private var _scale:Number = 1;
       
       private var _markerSettings:CrosshairSettingsVO;
@@ -36,6 +43,10 @@ package net.wg.gui.components.crosshairPanel
       
       private var _disposed:Boolean = false;
       
+      private var _accuracyStacks:int = 0;
+      
+      private var _chargeGunActive:Boolean = false;
+      
       public function GunMarkersManager(param1:DisplayObjectContainer)
       {
          super();
@@ -43,6 +54,8 @@ package net.wg.gui.components.crosshairPanel
          this._dualGunMarkers = new Vector.<DualGunMarker>(0);
          this._dualAccGunMarkers = new Vector.<GunMarker>(0);
          this._twinGunMarkers = new Vector.<TwinGunMarker>(0);
+         this._accuracyGunMarkers = new Vector.<AccuracyGunMarker>(0);
+         this._chargeGunMarkers = new Vector.<ChargeGunMarker>(0);
          this._container = param1;
       }
       
@@ -62,6 +75,11 @@ package net.wg.gui.components.crosshairPanel
          return null;
       }
       
+      public function accuracyStacksProgress(param1:int) : void
+      {
+         this.setAccuracyStacks(param1);
+      }
+      
       public function addGunMarker(param1:IGunMarker, param2:String) : void
       {
          this.destroyGunMarker(param2);
@@ -72,9 +90,17 @@ package net.wg.gui.components.crosshairPanel
          {
             this._dualGunMarkers.push(param1);
          }
-         if(param1 is TwinGunMarker)
+         else if(param1 is TwinGunMarker)
          {
             this._twinGunMarkers.push(param1);
+         }
+         if(param1 is AccuracyGunMarker)
+         {
+            this._accuracyGunMarkers.push(param1);
+         }
+         if(param1 is ChargeGunMarker)
+         {
+            this._chargeGunMarkers.push(param1);
          }
          var _loc3_:Boolean = DUAL_ACC_NAMES.indexOf(param2) > -1;
          if(_loc3_)
@@ -87,6 +113,8 @@ package net.wg.gui.components.crosshairPanel
             param1.setSettings(this._markerSettings.gunTagType,this._markerSettings.mixingType,this._markerSettings.gunTagAlpha,this._markerSettings.mixingAlpha);
          }
          param1.setReloadingParams(this._currReloadingPercent,this._currReloadingState);
+         this.setAccuracyStacks(this._accuracyStacks);
+         this.setChargeGunActive(this._chargeGunActive);
          this._container.addChild(DisplayObject(param1));
       }
       
@@ -101,9 +129,10 @@ package net.wg.gui.components.crosshairPanel
       
       public function destroyGunMarker(param1:String) : Boolean
       {
-         var _loc3_:int = 0;
          var _loc4_:int = 0;
+         var _loc5_:int = 0;
          var _loc2_:IGunMarker = this._gunMarkers[param1];
+         var _loc3_:int = Values.DEFAULT_INT;
          if(_loc2_)
          {
             _loc3_ = this._dualGunMarkers.indexOf(_loc2_);
@@ -111,10 +140,20 @@ package net.wg.gui.components.crosshairPanel
             {
                this._dualGunMarkers.splice(_loc3_,1);
             }
-            _loc4_ = this._twinGunMarkers.indexOf(_loc2_);
+            _loc3_ = this._twinGunMarkers.indexOf(_loc2_);
+            if(_loc3_ != -1)
+            {
+               this._twinGunMarkers.splice(_loc3_,1);
+            }
+            _loc4_ = this._accuracyGunMarkers.indexOf(_loc2_);
             if(_loc4_ != -1)
             {
-               this._twinGunMarkers.splice(_loc4_,1);
+               this._accuracyGunMarkers.splice(_loc4_,1);
+            }
+            _loc5_ = this._chargeGunMarkers.indexOf(_loc2_);
+            if(_loc4_ != -1)
+            {
+               this._chargeGunMarkers.splice(_loc5_,1);
             }
             _loc2_.dispose();
             this._container.removeChild(DisplayObject(_loc2_));
@@ -139,6 +178,10 @@ package net.wg.gui.components.crosshairPanel
          this._dualAccGunMarkers = null;
          this._twinGunMarkers.length = 0;
          this._twinGunMarkers = null;
+         this._accuracyGunMarkers.length = 0;
+         this._accuracyGunMarkers = null;
+         this._chargeGunMarkers.length = 0;
+         this._chargeGunMarkers = null;
          this._markerSettings = null;
          this._container = null;
       }
@@ -157,12 +200,22 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function setZoomFactor(param1:Number) : void
+      public function setChargeGunActive(param1:Boolean) : void
       {
-         var _loc2_:IGunMarker = null;
-         for each(_loc2_ in this._gunMarkers)
+         var _loc2_:ChargeGunMarker = null;
+         this._chargeGunActive = param1;
+         for each(_loc2_ in this._chargeGunMarkers)
          {
-            _loc2_.setZoomFactor(param1);
+            _loc2_.chargeGunActive = param1;
+         }
+      }
+      
+      public function setChargeGunState(param1:Number, param2:uint, param3:Boolean) : void
+      {
+         var _loc4_:ChargeGunMarker = null;
+         for each(_loc4_ in this._chargeGunMarkers)
+         {
+            _loc4_.setChargeGunState(param1,param2,param3);
          }
       }
       
@@ -194,24 +247,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function startDualGunCharging(param1:Number, param2:Number) : void
-      {
-         var _loc3_:DualGunMarker = null;
-         for each(_loc3_ in this._dualGunMarkers)
-         {
-            _loc3_.startCharging(param1,param2);
-         }
-      }
-      
-      public function updateDualGunMarkerState(param1:int) : void
-      {
-         var _loc2_:DualGunMarker = null;
-         for each(_loc2_ in this._dualGunMarkers)
-         {
-            _loc2_.setMarkerState(param1);
-         }
-      }
-      
       public function setTwinGunActive(param1:Boolean) : void
       {
          var _loc2_:TwinGunMarker = null;
@@ -227,6 +262,42 @@ package net.wg.gui.components.crosshairPanel
          for each(_loc2_ in this._twinGunMarkers)
          {
             _loc2_.setTwinGunMarkerState(param1);
+         }
+      }
+      
+      public function setZoomFactor(param1:Number) : void
+      {
+         var _loc2_:IGunMarker = null;
+         for each(_loc2_ in this._gunMarkers)
+         {
+            _loc2_.setZoomFactor(param1);
+         }
+      }
+      
+      public function showPenetrationFx() : void
+      {
+         var _loc1_:IGunMarker = null;
+         for each(_loc1_ in this._gunMarkers)
+         {
+            _loc1_.showPenetrationFx();
+         }
+      }
+      
+      public function startDualGunCharging(param1:Number, param2:Number) : void
+      {
+         var _loc3_:DualGunMarker = null;
+         for each(_loc3_ in this._dualGunMarkers)
+         {
+            _loc3_.startCharging(param1,param2);
+         }
+      }
+      
+      public function updateDualGunMarkerState(param1:int) : void
+      {
+         var _loc2_:DualGunMarker = null;
+         for each(_loc2_ in this._dualGunMarkers)
+         {
+            _loc2_.setMarkerState(param1);
          }
       }
       
@@ -248,6 +319,16 @@ package net.wg.gui.components.crosshairPanel
          for each(_loc2_ in this._gunMarkers)
          {
             _loc2_.setSettings(param1.gunTagType,param1.mixingType,param1.gunTagAlpha,param1.mixingAlpha);
+         }
+      }
+      
+      private function setAccuracyStacks(param1:uint) : void
+      {
+         var _loc2_:AccuracyGunMarker = null;
+         this._accuracyStacks = param1;
+         for each(_loc2_ in this._accuracyGunMarkers)
+         {
+            _loc2_.setStacks(param1);
          }
       }
       

@@ -31,7 +31,9 @@ package net.wg.gui.components.advanced
       
       private static const ICON_OFFSET_X:int = -5;
       
-      private static const ICON_OFFSET_Y:int = -2;
+      private static const ICON_BIG_OFFSET_Y:int = -2;
+      
+      private static const ICON_SMALL_OFFSET_Y:int = 3;
       
       private static const INV_LAYOUT:String = "InvLayout";
       
@@ -226,28 +228,30 @@ package net.wg.gui.components.advanced
          var _loc2_:int = _height * (1 - this._padding.vertical);
          if(this._data.alignCenter)
          {
-            this.layoutCenter(_loc1_,_loc2_,this._data.inlineIcon);
+            this.layoutCenter(_loc1_,_loc2_,this._data.inlineIcon,this._data.smallIcon);
          }
          else
          {
-            this.layoutLeft(_loc1_,_loc2_);
+            this.layoutLeft(_loc1_,_loc2_,this._data.smallIcon);
          }
       }
       
-      private function layoutLeft(param1:int, param2:int) : void
+      private function layoutLeft(param1:int, param2:int, param3:Boolean) : void
       {
-         var _loc3_:int = 0;
+         var _loc6_:int = 0;
+         var _loc4_:int = 0;
          if(this._button)
          {
-            _loc3_ = this._button.height + BUTTON_GAP;
+            _loc4_ = this._button.height + BUTTON_GAP;
          }
-         var _loc4_:int = param2 - this.text.height - _loc3_ >> 1;
+         var _loc5_:int = param2 - this.text.height - _loc4_ >> 1;
          this.text.x = (param1 - this.text.textWidth >> 1) + this._padding.left * _width >> 0;
-         this.text.y = _loc4_ + this._padding.top * _height >> 0;
+         this.text.y = _loc5_ + this._padding.top * _height >> 0;
          if(this._icon)
          {
-            this._icon.x = this.text.x - this._icon.width + ICON_OFFSET_X;
-            this._icon.y = this.text.y + ICON_OFFSET_Y;
+            _loc6_ = !!param3 ? int(ICON_SMALL_OFFSET_Y) : int(ICON_BIG_OFFSET_Y);
+            this._icon.x = this.text.x - this._icon.width + _loc6_;
+            this._icon.y = this.text.y + _loc6_;
          }
          if(this._button)
          {
@@ -256,42 +260,44 @@ package net.wg.gui.components.advanced
          }
       }
       
-      private function layoutCenter(param1:int, param2:int, param3:Boolean) : void
+      private function layoutCenter(param1:int, param2:int, param3:Boolean, param4:Boolean) : void
       {
-         var _loc6_:int = 0;
-         var _loc4_:int = 0;
+         var _loc7_:int = 0;
+         var _loc9_:int = 0;
+         var _loc5_:int = 0;
          if(this._icon && !param3)
          {
-            _loc4_ = this._icon.height;
+            _loc5_ = this._icon.height;
          }
-         var _loc5_:int = 0;
+         var _loc6_:int = 0;
          if(this._button)
          {
-            _loc5_ = this._button.height + BUTTON_GAP;
+            _loc6_ = this._button.height + BUTTON_GAP;
          }
-         _loc6_ = param2 - this.text.height - _loc4_ - _loc5_ >> 1;
+         _loc7_ = param2 - this.text.height - _loc5_ - _loc6_ >> 1;
          this.text.x = (param1 - this.text.width >> 1) + this._padding.left * _width >> 0;
-         this.text.y = _loc6_ + this._padding.top * _height + _loc4_ >> 0;
-         var _loc7_:int = BUTTON_GAP;
+         this.text.y = _loc7_ + this._padding.top * _height + _loc5_ >> 0;
+         var _loc8_:int = BUTTON_GAP;
          if(this._icon)
          {
             if(param3)
             {
+               _loc9_ = !!param4 ? int(ICON_SMALL_OFFSET_Y) : int(ICON_BIG_OFFSET_Y);
                this.text.x += this._icon.width >> 1;
                this._icon.x = this.text.x - this._icon.width + ICON_OFFSET_X;
-               this._icon.y = this.text.y + ICON_OFFSET_Y;
+               this._icon.y = this.text.y + _loc9_;
             }
             else
             {
-               _loc7_ = _loc4_ * 0.5 + ADDITIONAL_BUTTON_GAP_AFTER_ICON;
+               _loc8_ = _loc5_ * 0.5 + ADDITIONAL_BUTTON_GAP_AFTER_ICON;
                this._icon.x = _width - this._icon.width >> 1;
-               this._icon.y = this.text.y - _loc4_ * 1.5;
+               this._icon.y = this.text.y - _loc5_ * 1.5;
             }
          }
          if(this._button)
          {
             this._button.x = _width - this._button.width >> 1;
-            this._button.y = this.text.y + this.text.height + _loc7_;
+            this._button.y = this.text.y + this.text.height + _loc8_;
          }
       }
       

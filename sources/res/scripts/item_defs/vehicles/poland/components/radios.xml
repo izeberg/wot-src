@@ -24,6 +24,8 @@
 		<R_123M>25</R_123M>
 		<R_123_OSP3>26</R_123_OSP3>
 		<RT10_26P_W>27</RT10_26P_W>
+		<R_123S>29</R_123S>
+		<R_113_CFE_A>28</R_113_CFE_A>
 		<R_123_7x7>502</R_123_7x7>
 		<Development_Radio>65000</Development_Radio>
 		<N2_C_SH>20</N2_C_SH>
@@ -51,6 +53,7 @@
 			<tags/>
 			<level>2</level>
 			<price>200</price>
+			<notInShop>true</notInShop>
 			<weight>50</weight>
 			<distance>300</distance>
 			<maxHealth>100</maxHealth>
@@ -80,6 +83,7 @@
 			<tags/>
 			<level>7</level>
 			<price>19800</price>
+			<notInShop>true</notInShop>
 			<weight>50</weight>
 			<distance>440</distance>
 			<maxHealth>150</maxHealth>
@@ -165,6 +169,7 @@
 			<tags/>
 			<level>8</level>
 			<price>25000</price>
+			<notInShop>true</notInShop>
 			<weight>160</weight>
 			<distance>650</distance>
 			<maxHealth>150</maxHealth>
@@ -187,6 +192,7 @@
 			<tags/>
 			<level>4</level>
 			<price>2200</price>
+			<notInShop>true</notInShop>
 			<weight>80</weight>
 			<distance>375</distance>
 			<maxHealth>110</maxHealth>
@@ -223,6 +229,7 @@
 			<tags/>
 			<level>6</level>
 			<price>10000</price>
+			<notInShop>true</notInShop>
 			<weight>41</weight>
 			<distance>480</distance>
 			<maxHealth>120</maxHealth>
@@ -247,6 +254,21 @@
 				<!--BW_String-->
 			</repairCost>
 		</R_113>
+		<R_113_CFE_A>
+			<userString>#poland_vehicles:R_113_CFE_A</userString>
+			<tags/>
+			<level>10</level>
+			<price>55000</price>
+			<notInShop>true</notInShop>
+			<weight>110</weight>
+			<distance>730</distance>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>115</maxRegenHealth>
+			<repairCost>
+				3.5
+				<!--BW_String-->
+			</repairCost>
+		</R_113_CFE_A>
 		<R_123>
 			<userString>#poland_vehicles:R_123</userString>
 			<tags/>
@@ -307,6 +329,18 @@
 				<!--BW_String-->
 			</repairCost>
 		</R_123M>
+		<R_123S>
+			<userString>#poland_vehicles:R_123S</userString>
+			<tags/>
+			<level>11</level>
+			<price>80000</price>
+			<notInShop>true</notInShop>
+			<weight>100</weight>
+			<distance>800</distance>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>125</maxRegenHealth>
+			<repairCost>4</repairCost>
+		</R_123S>
 		<R_123_1>
 			<userString>#poland_vehicles:R_123_1</userString>
 			<tags/>

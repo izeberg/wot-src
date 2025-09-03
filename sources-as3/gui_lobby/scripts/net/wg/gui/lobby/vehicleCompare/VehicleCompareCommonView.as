@@ -1,7 +1,6 @@
 package net.wg.gui.lobby.vehicleCompare
 {
    import flash.display.InteractiveObject;
-   import net.wg.gui.lobby.vehicleCompare.events.VehCompareEvent;
    import net.wg.infrastructure.base.meta.IVehicleCompareCommonViewMeta;
    import net.wg.infrastructure.base.meta.impl.VehicleCompareCommonViewMeta;
    
@@ -28,18 +27,6 @@ package net.wg.gui.lobby.vehicleCompare
          }
       }
       
-      override protected function configUI() : void
-      {
-         super.configUI();
-         addEventListener(VehCompareEvent.CLOSE_CLICK,this.onCloseClickHandler);
-      }
-      
-      override protected function onDispose() : void
-      {
-         removeEventListener(VehCompareEvent.CLOSE_CLICK,this.onCloseClickHandler);
-         super.onDispose();
-      }
-      
       override protected function onEscapeKeyDown() : void
       {
          closeViewS();
@@ -48,11 +35,6 @@ package net.wg.gui.lobby.vehicleCompare
       protected function getFocusChain() : Vector.<InteractiveObject>
       {
          return null;
-      }
-      
-      private function onCloseClickHandler(param1:VehCompareEvent) : void
-      {
-         closeViewS();
       }
    }
 }

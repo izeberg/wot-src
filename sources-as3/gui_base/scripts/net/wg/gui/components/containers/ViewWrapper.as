@@ -2,20 +2,25 @@ package net.wg.gui.components.containers
 {
    import flash.display.Bitmap;
    import flash.display.BitmapData;
+   import flash.display.DisplayObject;
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
    import flash.events.Event;
+   import flash.geom.Matrix;
    import flash.geom.Point;
    import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.text.TextFieldType;
+   import flash.text.TextFormat;
+   import net.wg.gui.tutorial.components.TutorialHintZone;
    import net.wg.infrastructure.events.ExternalCursorEvent;
+   import net.wg.utils.StaticUtils;
    import scaleform.gfx.TextFieldEx;
    
    public class ViewWrapper extends BaseWrapper
    {
       
-      private static var _drawDebug:Boolean = false;
+      private static var _debugMode:uint = 0;
       
       private static const HIT_AREA_SPRITE:String = "hitAreaSprite";
        
@@ -52,9 +57,8 @@ package net.wg.gui.components.containers
       
       override public function caretPosChanged(param1:Number, param2:Number) : void
       {
-         var _loc3_:Number = NaN;
          App.utils.asserter.assert(contains(this._inputTF),"_inputTF must be on stage during text input");
-         _loc3_ = this._inputTF.x;
+         var _loc3_:Number = this._inputTF.x;
          this._inputTF.x = param1 - this._inputTF.textWidth;
          this._inputTF.y = param2;
          this._inputTF.width -= this._inputTF.x - _loc3_;
@@ -184,7 +188,8 @@ package net.wg.gui.components.containers
       
       private function updateDebugGraphics() : void
       {
-         if(!_drawDebug)
+         var _loc1_:TutorialHintZone = null;
+         if(_debugMode == 0)
          {
             this._inputTF.alpha = 0;
             graphics.clear();
@@ -193,6 +198,19 @@ package net.wg.gui.components.containers
                removeChild(this._debugSprite);
                this._debugSprite = null;
             }
+            return;
+         }
+         if(_debugMode == 1)
+         {
+            this._inputTF.alpha = 0;
+            graphics.clear();
+            if(!this._debugSprite)
+            {
+               addChildAt(this._debugSprite = new Sprite(),getChildIndex(this._bitmap) + 1);
+               this._debugSprite.mouseEnabled = false;
+            }
+            this._debugSprite.graphics.clear();
+            this.drawCross(this,20,StaticUtils.number2Color(StaticUtils.string2Hash(name)),0.7);
             return;
          }
          if(this._width == 0 || this._height == 0)
@@ -206,23 +224,70 @@ package net.wg.gui.components.containers
          }
          this._inputTF.alpha = 1;
          graphics.clear();
-         graphics.beginFill(16776960,0.3);
+         graphics.beginFill(16776960,0.1);
          graphics.drawRect(0,0,this._width,this._height);
          graphics.endFill();
          this._debugSprite.graphics.clear();
+         this.drawBorder(hitArea,3,255,0.5);
          if(focused)
          {
-            this._debugSprite.graphics.lineStyle(5,16777215,0.5);
-            this._debugSprite.graphics.drawRect(0,0,this._width,this._height);
-            this._debugSprite.graphics.endFill();
+            this.drawBorder(hitArea,5,16777215,0.5);
          }
-         if(hitArea.width == 0 || hitArea.height == 0)
+         for each(_loc1_ in _tutorialHintZones)
          {
-            return;
+            this.drawBorder(_loc1_,3,16711680,0.5);
+            this.drawLabel(_loc1_,_loc1_.name);
          }
-         graphics.beginFill(255,0.3);
-         graphics.drawRect(hitArea.x,hitArea.y,hitArea.width,hitArea.height);
-         graphics.endFill();
+      }
+      
+      private function drawBorder(param1:DisplayObject, param2:Number, param3:uint, param4:Number) : void
+      {
+         if(param1.width > 0 && param1.height > 0)
+         {
+            this._debugSprite.graphics.lineStyle(param2,param3,param4);
+            this._debugSprite.graphics.drawRect(param1.x,param1.y,param1.width,param1.height);
+            this._debugSprite.graphics.lineStyle();
+         }
+      }
+      
+      private function drawCross(param1:DisplayObject, param2:Number, param3:uint, param4:Number) : void
+      {
+         var _loc5_:uint = param2 >> 1;
+         if(param1.width > 0 && param1.height > 0)
+         {
+            this._debugSprite.graphics.lineStyle(param2,param3,param4);
+            this._debugSprite.graphics.moveTo(_loc5_,_loc5_);
+            this._debugSprite.graphics.lineTo(param1.width - _loc5_,param1.height - _loc5_);
+            this._debugSprite.graphics.moveTo(_loc5_,param1.height - _loc5_);
+            this._debugSprite.graphics.lineTo(param1.width - _loc5_,_loc5_);
+            this._debugSprite.graphics.lineTo(param1.width - _loc5_,param1.height - _loc5_);
+            this._debugSprite.graphics.lineTo(_loc5_,param1.height - _loc5_);
+            this._debugSprite.graphics.lineTo(_loc5_,_loc5_);
+            this._debugSprite.graphics.lineTo(param1.width - _loc5_,_loc5_);
+            this._debugSprite.graphics.lineStyle();
+         }
+      }
+      
+      private function drawLabel(param1:DisplayObject, param2:String) : void
+      {
+         var _loc4_:TextField = null;
+         var _loc3_:TextFormat = new TextFormat();
+         _loc3_.font = "$FieldFont";
+         _loc3_.size = 14;
+         _loc3_.color = 16711680;
+         _loc4_ = new TextField();
+         _loc4_.text = param2;
+         _loc4_.setTextFormat(_loc3_);
+         App.utils.commons.updateTextFieldSize(_loc4_);
+         var _loc5_:uint = param1.x + (param1.width >> 1) - (_loc4_.width >> 1);
+         var _loc6_:uint = param1.y - _loc4_.height;
+         var _loc7_:BitmapData = new BitmapData(_loc4_.width,_loc4_.height,true,0);
+         _loc7_.draw(_loc4_);
+         var _loc8_:Matrix = new Matrix();
+         _loc8_.translate(_loc5_,_loc6_);
+         this._debugSprite.graphics.beginBitmapFill(_loc7_,_loc8_,false,true);
+         this._debugSprite.graphics.drawRect(_loc5_,_loc6_,_loc4_.width,_loc4_.height);
+         this._debugSprite.graphics.endFill();
       }
       
       private function addGFBitmap() : void
@@ -256,17 +321,17 @@ package net.wg.gui.components.containers
       
       override public function get hitRect() : Rectangle
       {
-         return new Rectangle(hitArea.x,hitArea.y,hitArea.width * scaleX,hitArea.height * scaleY);
+         return new Rectangle(hitArea.x * scaleX,hitArea.y * scaleY,hitArea.width * scaleX,hitArea.height * scaleY);
       }
       
-      override public function get drawDebug() : Boolean
+      override public function get debugMode() : uint
       {
-         return _drawDebug;
+         return _debugMode;
       }
       
-      override public function set drawDebug(param1:Boolean) : void
+      override public function set debugMode(param1:uint) : void
       {
-         _drawDebug = param1;
+         _debugMode = param1;
          this.updateDebugGraphics();
       }
       

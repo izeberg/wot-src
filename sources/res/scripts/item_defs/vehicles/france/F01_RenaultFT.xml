@@ -135,7 +135,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>2750</weight>
-		<maxHealth>196</maxHealth>
+		<maxHealth>200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>65</maxHealth>
 			<maxRegenHealth>45</maxRegenHealth>
@@ -1888,8 +1888,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_RenaultFT2>
-			<userString>#france_vehicles:Chassis_RenaultFT2</userString>
+		<Chassis_F01_RenaultFT>
+			<userString>#france_vehicles:Chassis_F01_RenaultFT</userString>
 			<tags/>
 			<level>1</level>
 			<price>0</price>
@@ -1899,7 +1899,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>1200</weight>
-			<maxLoad>6800</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
@@ -1909,11 +1908,11 @@
 			<rotationSpeed>60</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.38
+					0.33
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.38
+					0.33
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3260,11 +3259,11 @@
 				3.41880345
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_RenaultFT2>
+		</Chassis_F01_RenaultFT>
 	</chassis>
 	<turrets0>
-		<Turret_2_RenaultFT>
-			<userString>#france_vehicles:Turret_2_RenaultFT</userString>
+		<Turret_1_F01_RenaultFT>
+			<userString>#france_vehicles:Turret_1_F01_RenaultFT</userString>
 			<tags/>
 			<level>1</level>
 			<price>0</price>
@@ -3291,7 +3290,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>200</weight>
-			<maxHealth>49</maxHealth>
+			<maxHealth>50</maxHealth>
 			<rotationSpeed>34</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>50</maxHealth>
@@ -3301,7 +3300,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>280</circularVisionRadius>
+			<circularVisionRadius>300</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>30</maxHealth>
 				<maxRegenHealth>15</maxRegenHealth>
@@ -3311,29 +3310,29 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_37mm_APX_SA18>
+				<_37mm_APX_SA18_FT>
 					shared
 					<unlocks>
 						<gun>
-							_13.2mm_Hotchkiss_mle._1930
+							_13mm_Hotchkiss_mle_1930_FT
 							<cost>30</cost>
 						</gun>
 					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -35 1 -35</minPitch>
 						<maxPitch>
-							0 2 0.40856 2 0.472222 0 0.527778 0 0.59144 2 1 2
+							0 10 0.40856 10 0.472222 0 0.527778 0 0.59144 10 1 10
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<aimingTime>2</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -3354,11 +3353,11 @@
 						</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.54
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.5
+						2.2
 						<!--BW_String-->
 					</reloadTime>
 					<invisibilityFactorAtShot>
@@ -3452,8 +3451,8 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_37mm_APX_SA18>
-				<_13.2mm_Hotchkiss_mle._1930>
+				</_37mm_APX_SA18_FT>
+				<_13mm_Hotchkiss_mle_1930_FT>
 					shared
 					<unlocks>
 						<vehicle>
@@ -3477,6 +3476,7 @@
 						<armor_2>
 							8
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_2>
 						<gun>
 							10
@@ -3498,13 +3498,16 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.6
+						<!--BW_String-->
+					</aimingTime>
 					<reloadTime>
 						5.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionRadius>
-						0.58
+						0.52
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -3581,7 +3584,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_13.2mm_Hotchkiss_mle._1930>
+				</_13mm_Hotchkiss_mle_1930_FT>
 			</guns>
 			<models>
 				<undamaged>vehicles/french/F01_RenaultFT/normal/lod0/Turret_02.model</undamaged>
@@ -4293,10 +4296,10 @@
 				</density>
 				<aoTextureSize>256 256</aoTextureSize>
 			</camouflage>
-		</Turret_2_RenaultFT>
+		</Turret_1_F01_RenaultFT>
 	</turrets0>
 	<engines>
-		<Renault>shared</Renault>
+		<Renault_FT>shared</Renault_FT>
 	</engines>
 	<fuelTanks>
 		<Small>shared</Small>
@@ -4307,16 +4310,13 @@
 	<physics>
 		<detailed>
 			<engines>
-				<Renault>
-					<smplEnginePower>
-						41.23396
-						<!--BW_String-->
-					</smplEnginePower>
+				<Renault_FT>
+					<smplEnginePower>50</smplEnginePower>
 					<smplFwMaxSpeed>21</smplFwMaxSpeed>
-				</Renault>
+				</Renault_FT>
 			</engines>
 			<chassis>
-				<Chassis_RenaultFT2>
+				<Chassis_F01_RenaultFT>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -4337,7 +4337,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_RenaultFT2>
+				</Chassis_F01_RenaultFT>
 			</chassis>
 		</detailed>
 	</physics>

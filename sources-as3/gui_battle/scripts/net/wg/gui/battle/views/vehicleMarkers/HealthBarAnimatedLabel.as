@@ -6,8 +6,12 @@ package net.wg.gui.battle.views.vehicleMarkers
    public class HealthBarAnimatedLabel extends HealthBarAnimatedPart
    {
       
+      private static const TEXT_FIELD_BOUNDS_WIDTH:uint = 4;
+      
       private static const INVALIDATE_DAMAGE:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 4;
        
+      
+      public var damageLabelScreen:DamageLabelAnimatedScreen = null;
       
       public var damageLabel:DamageLabel = null;
       
@@ -27,6 +31,11 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       override protected function onDispose() : void
       {
+         if(this.damageLabelScreen)
+         {
+            this.damageLabelScreen.dispose();
+            this.damageLabelScreen = null;
+         }
          this.damageLabel.dispose();
          this.damageLabel = null;
          super.onDispose();
@@ -81,6 +90,19 @@ package net.wg.gui.battle.views.vehicleMarkers
       {
          this.damageLabel.color = param2;
          this.damageLabel.text = param1;
+         if(this.damageLabelScreen)
+         {
+            this.damageLabelScreen.setLabel(param1,param2);
+            this.damageLabelScreen.x = this.damageLabel.textWidth + TEXT_FIELD_BOUNDS_WIDTH >> 1;
+         }
+      }
+      
+      public function showScreenEffect() : void
+      {
+         if(this.damageLabelScreen && isActive())
+         {
+            this.damageLabelScreen.play();
+         }
       }
       
       public function get fakeDamage() : Number

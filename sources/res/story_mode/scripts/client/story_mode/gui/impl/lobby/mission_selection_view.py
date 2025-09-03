@@ -8,6 +8,7 @@ from gui.impl import backport
 from gui.impl.backport import BackportTooltipWindow, createTooltipData
 from gui.impl.gen import R
 from gui.impl.lobby.common.tooltips.extended_text_tooltip import ExtendedTextTooltip
+from gui.impl.lobby.hangar.presenters.utils import navigateTo, fillMenuSharedItems
 from gui.prb_control.events_dispatcher import g_eventDispatcher
 from gui.server_events.bonuses import getNonQuestBonuses
 from gui.shared.event_dispatcher import showBrowserOverlayView
@@ -17,13 +18,12 @@ from ids_generators import SequenceIDGenerator
 from items import vehicles
 from skeletons.gui.impl import IGuiLoader
 from skeletons.gui.shared import IItemsCache
-from story_mode.account_settings import setUnlockedTaskShown, isUnlockedTaskShown, isWelcomeScreenSeen
+from story_mode.account_settings import setUnlockedTaskShown, isUnlockedTaskShown, isWelcomeScreenSeen, getEventVisited, setEventVisited
 from story_mode.gui.impl.gen.view_models.views.lobby.mission_model import MissionModel
 from story_mode.gui.impl.gen.view_models.views.lobby.mission_selection_view_model import MissionSelectionViewModel, TabsEnum
 from story_mode.gui.impl.gen.view_models.views.lobby.task_model import TaskModel, TaskStateEnum
 from story_mode.gui.impl.lobby.base_prb_view import BasePrbView
 from story_mode.gui.impl.lobby.difficulty_tooltip import DifficultyTooltip
-from story_mode.gui.impl.lobby.event_entry_point_view import EventEntryPointView
 from story_mode.gui.impl.lobby.mission_tooltip import MissionTooltip
 from story_mode.gui.shared.event_dispatcher import sendViewLoadedEvent, showEventWelcomeWindow
 from story_mode.gui.shared.utils import formatAndFillRewards
@@ -103,14 +103,14 @@ class MissionSelectionView(BasePrbView):
             if bonus:
                 window = BackportTooltipWindow(createTooltipData(tooltip=bonus.tooltip, isSpecial=bonus.isSpecial, specialAlias=bonus.specialAlias, specialArgs=bonus.specialArgs, isWulfTooltip=bonus.isWulfTooltip), self.getParentWindow(), event)
                 window.load()
-                self._uiLogger.logTooltipShown(self._storyModeCtrl.selectedMissionId)
                 return window
         return super(MissionSelectionView, self).createToolTip(event)
 
     def _onLoading(self, *args, **kwargs):
         super(MissionSelectionView, self)._onLoading(*args, **kwargs)
-        model = self.getViewModel()
-        self.__updateSelectedMission(model)
+        with self.getViewModel().transaction() as (model):
+            fillMenuSharedItems(model)
+            self.__updateSelectedMission(model)
 
     def _onLoaded(self, *args, **kwargs):
         super(MissionSelectionView, self)._onLoaded(*args, **kwargs)
@@ -145,6 +145,8 @@ class MissionSelectionView(BasePrbView):
          (
           viewModel.onAboutClick, self.__openAbout),
          (
+          viewModel.onNavigate, navigateTo),
+         (
           self._gui.windowsManager.onViewStatusChanged, self.__onViewStatusChanged),
          (
           self._storyModeCtrl.onSyncDataUpdated, self.__onMissionsDataUpdated),
@@ -161,7 +163,6 @@ class MissionSelectionView(BasePrbView):
 
     def _quit(self):
         if self._isBackgroundLoaded:
-            self._uiLogger.logClick(LogButtons.CLOSE)
             super(MissionSelectionView, self)._quit()
 
     def __onViewStatusChanged(self, uniqueID, newState):
@@ -225,7 +226,10 @@ class MissionSelectionView(BasePrbView):
         self.__updateSelectedMissionModel(model, missionConfig)
         if updateMissions:
             self.__updateMissionsModels(model, currentTab)
-        EventEntryPointView.onMissionSelected(missionId)
+        if missionConfig.isEvent and not getEventVisited():
+            setEventVisited()
+        elif not missionConfig.isEvent and self._storyModeCtrl.isNewNeededForNewbies():
+            self._storyModeCtrl.setNewForNewbiesSeen()
         return prevMissionId != missionId
 
     def __onTaskUnlocked(self, args):

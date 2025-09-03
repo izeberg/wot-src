@@ -1,6 +1,6 @@
 package net.wg.infrastructure.base.meta.impl
 {
-   import net.wg.gui.lobby.missions.MissionsListViewBase;
+   import net.wg.gui.lobby.userMissions.components.MissionsListViewBase;
    
    public class CurrentVehicleMissionsViewMeta extends MissionsListViewBase
    {

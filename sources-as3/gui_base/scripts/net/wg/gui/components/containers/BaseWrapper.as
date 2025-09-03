@@ -26,6 +26,8 @@ package net.wg.gui.components.containers
       private static const UPDATE_CONTAINER_EVENT:String = "updateContainerSize";
        
       
+      protected var _tutorialHintZones:Dictionary;
+      
       private var _focused:Boolean = false;
       
       private var _containerWrapper:IBaseContainerWrapper;
@@ -34,7 +36,9 @@ package net.wg.gui.components.containers
       
       private var _tutorialId:String = "";
       
-      private var _tutorialHintZones:Dictionary;
+      private var _paddings:Rectangle = null;
+      
+      private var _fullScreenModeSupported:Boolean = false;
       
       public function BaseWrapper()
       {
@@ -128,6 +132,11 @@ package net.wg.gui.components.containers
          return this._disposed;
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return this._fullScreenModeSupported;
+      }
+      
       public function onHidden() : void
       {
          visible = false;
@@ -170,6 +179,11 @@ package net.wg.gui.components.containers
       {
       }
       
+      public function setFullScreenModeSupported(param1:Boolean) : void
+      {
+         this._fullScreenModeSupported = param1;
+      }
+      
       public function setHitAreaPaddings(param1:int, param2:int, param3:int, param4:int) : void
       {
       }
@@ -207,8 +221,9 @@ package net.wg.gui.components.containers
          }
       }
       
-      public function updateParentSize(param1:Number, param2:Number) : void
+      public function updateParentSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
+         this._paddings = param3;
          dispatchEvent(new Event(UPDATE_CONTAINER_EVENT));
       }
       
@@ -239,6 +254,16 @@ package net.wg.gui.components.containers
          return new Rectangle();
       }
       
+      public function get paddings() : Rectangle
+      {
+         return this._paddings;
+      }
+      
+      public function set paddings(param1:Rectangle) : void
+      {
+         this._paddings = param1;
+      }
+      
       public function get tutorialId() : String
       {
          return this._tutorialId;
@@ -258,12 +283,12 @@ package net.wg.gui.components.containers
          return true;
       }
       
-      public function get drawDebug() : Boolean
+      public function get debugMode() : uint
       {
-         return false;
+         return 0;
       }
       
-      public function set drawDebug(param1:Boolean) : void
+      public function set debugMode(param1:uint) : void
       {
       }
       

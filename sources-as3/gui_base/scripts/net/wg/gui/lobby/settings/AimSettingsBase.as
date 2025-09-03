@@ -2,6 +2,7 @@ package net.wg.gui.lobby.settings
 {
    import flash.display.MovieClip;
    import flash.display.Sprite;
+   import net.wg.data.constants.generated.CLIP_RELOADING_TYPES;
    import net.wg.gui.components.advanced.ButtonBarEx;
    import net.wg.gui.components.crosshairPanel.ICrosshair;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
@@ -20,6 +21,14 @@ package net.wg.gui.lobby.settings
       protected static const CROSSHAIR_SCALE:Number = 0.14;
       
       protected static const FORM:String = "Form";
+      
+      private static const RELOADING_PERCENT:Number = 1;
+      
+      private static const CLIP_CAPACITY:uint = 7;
+      
+      private static const TOTAL_AMMO:uint = 30;
+      
+      private static const BURST:uint = 1;
        
       
       public var bg:MovieClip = null;
@@ -34,6 +43,8 @@ package net.wg.gui.lobby.settings
       
       public var contourForm:SettingsContourForm = null;
       
+      public var armorFlashlightForm:SettingsArmorFlashlightForm = null;
+      
       public var arcadeCrosshair:ICrosshair = null;
       
       public var sniperCrosshair:ICrosshair = null;
@@ -47,6 +58,8 @@ package net.wg.gui.lobby.settings
       public var contourCrosshair:AimContourContent = null;
       
       public var artyShotIndicatorsPanel:ArtyShotIndicatorsPanel = null;
+      
+      public var armorFlashlight:ArmorFlashlightContent = null;
       
       public function AimSettingsBase()
       {
@@ -67,13 +80,13 @@ package net.wg.gui.lobby.settings
       {
          super.configUI();
          this.arcadeCrosshair.isUseFrameAnimation = false;
-         this.arcadeCrosshair.setClipsParam(7,1);
-         this.arcadeCrosshair.setAmmoStock(7,CrosshairClipQuantityBar.STATE_RELOAD_FINISHED,true);
+         this.arcadeCrosshair.setClipsParam(CLIP_CAPACITY,BURST,CLIP_RELOADING_TYPES.CASSETTE_CLIP);
+         this.arcadeCrosshair.setAmmoStock(TOTAL_AMMO,CLIP_CAPACITY,CrosshairClipQuantityBar.STATE_RELOAD_FINISHED,true);
          this.sniperCrosshair.isUseFrameAnimation = false;
-         this.sniperCrosshair.setClipsParam(7,1);
-         this.sniperCrosshair.setAmmoStock(7,CrosshairClipQuantityBar.STATE_RELOAD_FINISHED,true);
+         this.sniperCrosshair.setClipsParam(CLIP_CAPACITY,BURST,CLIP_RELOADING_TYPES.CASSETTE_CLIP);
+         this.sniperCrosshair.setAmmoStock(TOTAL_AMMO,CLIP_CAPACITY,CrosshairClipQuantityBar.STATE_RELOAD_FINISHED,true);
          this.gunMarker.setMixingScale(CROSSHAIR_SCALE);
-         this.gunMarker.setReloadingParams(1,CrosshairConsts.RELOADING_ENDED);
+         this.gunMarker.setReloadingParams(RELOADING_PERCENT,CrosshairConsts.RELOADING_ENDED);
       }
       
       override protected function onBeforeDispose() : void
@@ -105,6 +118,10 @@ package net.wg.gui.lobby.settings
          this.spgForm = null;
          this.contourForm.dispose();
          this.contourForm = null;
+         this.armorFlashlightForm.dispose();
+         this.armorFlashlightForm = null;
+         this.armorFlashlight.dispose();
+         this.armorFlashlight = null;
          super.onDispose();
       }
    }

@@ -22,8 +22,8 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>5120</width>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -34,8 +34,8 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>5120</width>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -46,8 +46,8 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>5120</width>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -136,7 +136,7 @@
 	<enableClusteredShading>true</enableClusteredShading>
 	<hangarSettings>
 		<customizationHangarSettings>
-			<v_start_pos>1.110000 206.300003 -0.852000</v_start_pos>
+			<v_start_pos>1.900000 200.975006 -1.750000</v_start_pos>
 			<v_start_angles>0.000000 0.000000 0.000000</v_start_angles>
 			<shadow_forward_y_offset>-0.020000</shadow_forward_y_offset>
 			<shadow_deferred_y_offset>0.000000</shadow_deferred_y_offset>
@@ -160,4 +160,5 @@
 	</hangarSettings>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
 </root>

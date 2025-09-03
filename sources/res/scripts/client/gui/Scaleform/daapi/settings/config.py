@@ -13,17 +13,31 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
                            'gui.Scaleform.daapi.view.lobby.messengerBar', 'gui.Scaleform.daapi.view.lobby.prb_windows',
                            'gui.Scaleform.daapi.view.lobby.profile', 'gui.Scaleform.daapi.view.lobby.rankedBattles',
                            'gui.Scaleform.daapi.view.lobby.epicBattle', 'gui.Scaleform.daapi.view.lobby.store',
-                           'gui.Scaleform.daapi.view.lobby.storage', 'gui.Scaleform.daapi.view.lobby.techtree',
-                           'gui.Scaleform.daapi.view.lobby.trainings', 'gui.Scaleform.daapi.view.lobby.vehicle_preview',
-                           'gui.Scaleform.daapi.view.lobby.vehicle_compare', 'gui.Scaleform.daapi.view.lobby.wgnc',
-                           'gui.Scaleform.daapi.view.login', 'messenger.gui.Scaleform.view.lobby',
-                           'gui.Scaleform.daapi.view.lobby.missions.regular', 'gui.Scaleform.daapi.view.lobby.missions.personal',
-                           'gui.Scaleform.daapi.view.lobby.event_boards', 'gui.Scaleform.daapi.view.lobby.shop',
-                           'gui.Scaleform.daapi.view.lobby.session_stats', 'gui.Scaleform.daapi.view.lobby.tank_setup',
-                           'gui.Scaleform.daapi.view.lobby.mapbox', 'gui.Scaleform.daapi.view.lobby.veh_post_progression')
+                           'gui.Scaleform.daapi.view.lobby.storage', 'gui.Scaleform.daapi.view.lobby.shared',
+                           'gui.Scaleform.daapi.view.lobby.techtree', 'gui.Scaleform.daapi.view.lobby.trainings',
+                           'gui.Scaleform.daapi.view.lobby.vehicle_preview', 'gui.Scaleform.daapi.view.lobby.vehicle_compare',
+                           'gui.Scaleform.daapi.view.lobby.wgnc', 'gui.Scaleform.daapi.view.login',
+                           'messenger.gui.Scaleform.view.lobby', 'gui.Scaleform.daapi.view.lobby.missions.regular',
+                           'gui.Scaleform.daapi.view.lobby.missions.personal', 'gui.Scaleform.daapi.view.lobby.event_boards',
+                           'gui.Scaleform.daapi.view.lobby.shop', 'gui.Scaleform.daapi.view.lobby.session_stats',
+                           'gui.Scaleform.daapi.view.lobby.tank_setup', 'gui.Scaleform.daapi.view.lobby.mapbox',
+                           'gui.Scaleform.daapi.view.lobby.veh_post_progression',
+                           'gui.Scaleform.daapi.view.lobby.battle_queue', 'gui.Scaleform.daapi.view.lobby.tank_setup',
+                           'gui.Scaleform.daapi.view.lobby.user_missions', 'gui.Scaleform.daapi.view.lobby.store.browser',
+                           'gui.Scaleform.daapi.view.lobby.wot_plus', 'gui.Scaleform.daapi.view.lobby.manual',
+                           'gui.impl.lobby.blueprints', 'gui.impl.lobby.currency_reserves',
+                           'gui.impl.lobby.crystals_promo', 'gui.impl.lobby.account_dashboard',
+                           'gui.impl.lobby.dog_tags', 'gui.impl.lobby.hangar', 'gui.impl.lobby.easy_tank_equip',
+                           'gui.impl.lobby.mode_selector', 'gui.impl.lobby.maps_training',
+                           'gui.impl.lobby.battle_results', 'gui.impl.lobby.vehicle_hub',
+                           'gui.impl.lobby.maps_blacklist', 'gui.impl.lobby.daily_experience',
+                           'gui.impl.lobby.personal_missions_30', 'gui.impl.lobby.personal_reserves',
+                           'gui.impl.lobby.battle_pass', 'gui.impl.lobby.clan_supply',
+                           'gui.impl.lobby.crew')
 _LOBBY_DEBUG_PACKAGES = ('gui.development.ui.messenger.view.lobby', 'gui.development.ui.demo',
                          'gui.development.ui.gf_viewer')
-_BATTLE_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.battle.shared', 'messenger.gui.Scaleform.view.battle')
+_BATTLE_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.battle.shared', 'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics',
+                            'messenger.gui.Scaleform.view.battle')
 _BATTLE_DEBUG_PACKAGES = ('gui.development.ui.battle', )
 _LOBBY_TOOLTIPS_BUILDERS_PATHS = [
  (
@@ -139,6 +153,7 @@ registerScaleformBattlePackages(ARENA_GUI_TYPE.EPIC_RANDOM_TRAINING, BATTLE_PACK
 registerScaleformBattlePackages(ARENA_GUI_TYPE.SORTIE_2, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.stronghold', ))
 registerScaleformBattlePackages(ARENA_GUI_TYPE.FORT_BATTLE_2, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.stronghold', ))
 registerScaleformBattlePackages(ARENA_GUI_TYPE.MAPS_TRAINING, ('messenger.gui.Scaleform.view.battle',
+                                                               'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics',
                                                                'gui.Scaleform.daapi.view.battle.maps_training') + (_BATTLE_DEBUG_PACKAGES if HAS_DEV_RESOURCES else ()))
 registerScaleformBattlePackages(ARENA_GUI_TYPE.WINBACK, BATTLE_PACKAGES + ('gui.Scaleform.daapi.view.battle.winback', ))
 registerBattleTooltipsBuilders(_BATTLE_TOOLTIPS_BUILDERS_PATHS)

@@ -1,0 +1,532 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>HP_cap_01_vfx</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 0.098532 -1.107580</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_cap_02_vfx</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 0.098532 -0.943216</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_cap_03_vfx</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 0.098532 -0.779069</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_cap_04_vfx</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 0.098532 -0.614185</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_charge_vfx</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 0.098532 -0.861598</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.000001 -0.004041 2.427794</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>L_cap_01_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.142000 0.166014 -1.161245</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_01_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.142000 -0.166014 -1.838755</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_01_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.148255 0.143937 -1.137558</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_01_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.148255 -0.143937 -1.862442</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_02_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.142000 0.166014 -0.997277</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_02_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.142000 -0.166014 -2.002723</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_02_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.148255 0.143937 -0.973590</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_02_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.148255 -0.143937 -2.026410</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_03_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.142000 0.166014 -0.833283</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_03_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.142000 -0.166014 -2.166717</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_03_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.148255 0.143937 -0.809595</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_03_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.148255 -0.143937 -2.190404</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_04_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.142000 0.166014 -0.669311</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_04_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.142000 -0.166014 -2.330689</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>L_cap_04_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.148255 0.143937 -0.645624</row3>
+						</transform>
+						<node>
+							<identifier>L_cap_04_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.148255 -0.143937 -2.354376</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_01_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.142000 0.166014 -1.161245</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_01_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.142000 -0.166014 -1.838755</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_01_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.148000 0.143937 -1.137558</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_01_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.148000 -0.143937 -1.862442</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_02_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.142000 0.166014 -0.997277</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_02_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.142000 -0.166014 -2.002723</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_02_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.148000 0.143937 -0.973590</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_02_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.148000 -0.143937 -2.026410</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_03_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.142000 0.166014 -0.833283</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_03_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.142000 -0.166014 -2.166717</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_03_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.148000 0.143937 -0.809595</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_03_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.148000 -0.143937 -2.190404</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_04_move</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.142000 0.166014 -0.669311</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_04_move_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.142000 -0.166014 -2.330689</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>R_cap_04_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.148000 0.143937 -0.645624</row3>
+						</transform>
+						<node>
+							<identifier>R_cap_04_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.148000 -0.143937 -2.354376</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.349898 -0.147878</row3>
+				</transform>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.349898 0.147878</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>G_BlendBone</node>
+		<node>Gun_BlendBone</node>
+		<node>static_BlendBone</node>
+		<node>L_cap_02_rotate_BlendBone</node>
+		<node>L_cap_01_rotate_BlendBone</node>
+		<node>L_cap_03_rotate_BlendBone</node>
+		<node>L_cap_04_rotate_BlendBone</node>
+		<node>L_cap_02_move_BlendBone</node>
+		<node>L_cap_03_move_BlendBone</node>
+		<node>L_cap_04_move_BlendBone</node>
+		<node>R_cap_02_rotate_BlendBone</node>
+		<node>R_cap_01_rotate_BlendBone</node>
+		<node>R_cap_03_rotate_BlendBone</node>
+		<node>R_cap_04_rotate_BlendBone</node>
+		<node>R_cap_02_move_BlendBone</node>
+		<node>R_cap_03_move_BlendBone</node>
+		<node>R_cap_04_move_BlendBone</node>
+		<node>L_cap_01_move_BlendBone</node>
+		<node>R_cap_01_move_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/R230_Object_432U/Object_432U_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/russian/R230_Object_432U/Object_432U_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/russian/R230_Object_432U/Object_432U_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R230_Object_432U/Object_432U_guns_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/R230_Object_432U/Object_432U_guns_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506849 3.506849 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						DetailsMaps
+						<Texture>vehicles/russian/Tank_detail/Detail_T2DA.dds</Texture>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67067904</element>
+							<element>1006632960</element>
+							<element>1168987136</element>
+							<element>1043529728</element>
+							<element>430983373</element>
+							<element>989200384</element>
+							<element>469720371</element>
+							<element>967704576</element>
+							<element>1158960128</element>
+							<element>1124401152</element>
+							<element>129191526</element>
+							<element>993198080</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>120996024</element>
+							<element>973078528</element>
+						</matrix>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.528444</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.275111</Float>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.450000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.119666 -2.816571</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.228963 -0.266176 -0.122492</min>
+		<max>0.228963 0.505508 5.755634</max>
+	</boundingBox>
+	<geometrySize>579772</geometrySize>
+</root>

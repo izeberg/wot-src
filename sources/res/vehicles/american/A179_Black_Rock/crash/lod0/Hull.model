@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A179_Black_Rock/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/american/A179_Black_Rock/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.766114 -0.919667 -3.846668</min>
+		<max>1.737891 0.695621 3.768232</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

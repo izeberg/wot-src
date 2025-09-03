@@ -2,11 +2,6 @@
 # import Input
 # <module 'Input' (built-in)>
 
-LANGUAGE_CHS = Language.LANGUAGE_CHS
-LANGUAGE_CHT = Language.LANGUAGE_CHT
-LANGUAGE_JAPANESE = Language.LANGUAGE_JAPANESE
-LANGUAGE_KOREAN = Language.LANGUAGE_KOREAN
-LANGUAGE_NON_IME = Language.LANGUAGE_NON_IME
 
 class pybind11_object(object):
 	def __delattr__(*args, **kwargs): pass
@@ -26,6 +21,246 @@ class pybind11_object(object):
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
 
+
+class InputAction(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputAction'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindEventReaction(self, *args, **kwargs): pass
+	def unbindEventReaction(self, *args, **kwargs): pass
+
+
+class ISingleton(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'CGF'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'ISingleton'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputSingleton(ISingleton):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputSingleton'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def addAction(self, *args, **kwargs): pass
+	def detach(self, *args, **kwargs): pass
+	def handleKeyEvent(self, *args, **kwargs): pass
+	def removeAction(self, *args, **kwargs): pass
+	def setCommandMappingImpl(self, *args, **kwargs): pass
+
+
+class InputTrigger(pybind11_object):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTrigger'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerContinuous(InputTrigger):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerContinuous'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerDown(InputTriggerContinuous):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerDown'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerHold(InputTriggerContinuous):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerHold'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerHoldAndRelease(InputTriggerContinuous):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerHoldAndRelease'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerPressed(InputTrigger):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerPressed'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerPulse(InputTriggerContinuous):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerPulse'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerReleased(InputTrigger):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerReleased'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+
+class InputTriggerTap(InputTriggerContinuous):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'Input'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'InputTriggerTap'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+LANGUAGE_CHS = Language.LANGUAGE_CHS
+LANGUAGE_CHT = Language.LANGUAGE_CHT
+LANGUAGE_JAPANESE = Language.LANGUAGE_JAPANESE
+LANGUAGE_KOREAN = Language.LANGUAGE_KOREAN
+LANGUAGE_NON_IME = Language.LANGUAGE_NON_IME
 
 class Language(pybind11_object):
 	LANGUAGE_CHS = Language.LANGUAGE_CHS
@@ -83,6 +318,43 @@ class State(pybind11_object):
 	def __ne__(self, *args, **kwargs): pass
 	def __new__(*args, **kwargs): pass
 	__qualname__ = 'State'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(self, *args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	name = property(lambda self: None)
+
+
+class TriggerEvent(pybind11_object):
+	Canceled = TriggerEvent.Canceled
+	Completed = TriggerEvent.Completed
+	OnProcess = TriggerEvent.OnProcess
+	Started = TriggerEvent.Started
+	Triggered = TriggerEvent.Triggered
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = u'Members:\n\n  Started\n\n  Canceled\n\n  Completed\n\n  OnProcess\n\n  Triggered'
+	__entries = {u'Started': (TriggerEvent.Started, None), u'Canceled': (TriggerEvent.Canceled, None), u'Completed': (TriggerEvent.Completed, None), u'OnProcess': (TriggerEvent.OnProcess, None), u'Triggered': (TriggerEvent.Triggered, None)}
+	def __eq__(self, *args, **kwargs): pass
+	def __format__(*args, **kwargs): pass
+	def __ge__(self, *args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
+	def __gt__(self, *args, **kwargs): pass
+	def __hash__(self, *args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __int__(self, *args, **kwargs): pass
+	def __le__(self, *args, **kwargs): pass
+	def __long__(self, *args, **kwargs): pass
+	def __lt__(self, *args, **kwargs): pass
+	__members__ = {u'Started': TriggerEvent.Started, u'Canceled': TriggerEvent.Canceled, u'Completed': TriggerEvent.Completed, u'OnProcess': TriggerEvent.OnProcess, u'Triggered': TriggerEvent.Triggered}
+	__module__ = 'Input'
+	def __ne__(self, *args, **kwargs): pass
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'TriggerEvent'
 	def __reduce__(*args, **kwargs): pass
 	def __reduce_ex__(*args, **kwargs): pass
 	def __repr__(self, *args, **kwargs): pass

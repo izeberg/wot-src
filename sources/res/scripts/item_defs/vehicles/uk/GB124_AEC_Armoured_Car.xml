@@ -104,7 +104,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7500</weight>
-		<maxHealth>464</maxHealth>
+		<maxHealth>520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>170</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2059,9 +2059,8 @@
 				</armor_32>
 			</armor>
 			<weight>2200</weight>
-			<maxLoad>15600</maxLoad>
 			<terrainResistance>
-				1 1.2 2
+				0.9 1 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>8000</brakeForce>
@@ -2477,7 +2476,6 @@
 				</armor_32>
 			</armor>
 			<weight>2200</weight>
-			<maxLoad>17500</maxLoad>
 			<terrainResistance>
 				0.9 1 1.8
 				<!--BW_String-->
@@ -2910,7 +2908,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3000</weight>
-			<maxHealth>86</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -2977,15 +2975,15 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -3581,7 +3579,7 @@
 			<price>9700</price>
 			<unlocks>
 				<gun>
-					QF_6_pounder_Mk_VM
+					QF_6_pdr_Mk_VA_AEC
 					<cost>4400</cost>
 				</gun>
 			</unlocks>
@@ -3597,7 +3595,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3230</weight>
-			<maxHealth>116</maxHealth>
+			<maxHealth>130</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -3624,15 +3622,15 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -3720,7 +3718,7 @@
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
 				</_2pdr_Gun_Mk_XB>
-				<QF_6_pounder_Mk_VM>
+				<QF_6_pdr_Mk_VA_AEC>
 					shared
 					<maxAmmo>80</maxAmmo>
 					<unlocks>
@@ -3737,7 +3735,7 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.39
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -3746,19 +3744,19 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.8
+						<!--BW_String-->
+					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.266
 						<!--BW_String-->
@@ -3831,7 +3829,7 @@
 						<density>147.340195 147.035385</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</QF_6_pounder_Mk_VM>
+				</QF_6_pdr_Mk_VA_AEC>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB124_AEC_Armoured_Car/normal/lod0/Turret_02.model</undamaged>
@@ -4520,15 +4518,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<N19Mk1>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk2
-					<cost>3600</cost>
-				</radio>
-			</unlocks>
-		</N19Mk1>
 		<N19Mk2>shared</N19Mk2>
 	</radios>
 	<physics>
@@ -4551,19 +4540,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.161
+								0.1449
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0805
+								0.07245
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

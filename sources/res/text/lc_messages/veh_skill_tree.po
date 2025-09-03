@@ -1,0 +1,1094 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "comparison/fullUpgrades/title"
+msgstr "Fully Researched"
+
+msgid "comparison/partialUpgrades/title"
+msgstr "Current"
+
+msgid "comparison/title"
+msgstr "Upgrades"
+
+msgid "comparison/tooltip/body"
+msgstr ""
+"The configuration screen shows how Upgrades affect vehicle characteristics. "
+"Select Fully Researched to see the full effect of all available Upgrades."
+
+msgid "comparison/tooltip/header"
+msgstr "Upgrades"
+
+msgid "comparison/zeroUpgrades/title"
+msgstr "Unresearched"
+
+msgid "dialog/altConfiguration/description"
+msgstr ""
+"Keep these options enabled to be able to switch loadout sets before battle."
+
+msgid "dialog/altConfiguration/info"
+msgstr "You can change these settings at any time."
+
+msgid "dialog/altConfiguration/optDevBoostersSwitch"
+msgstr "Auxiliary Loadout"
+
+msgid "dialog/altConfiguration/shellsConsumablesSwitch"
+msgstr "Essential Loadout"
+
+msgid "dialog/altConfiguration/title"
+msgstr "Alternate Configuration"
+
+msgid "dialog/common/accept"
+msgstr "Confirm"
+
+msgid "dialog/confirmation/researchPerks"
+msgid_plural "plural/dialog/confirmation/researchPerks"
+msgstr[0] "%(perks)s"
+msgstr[1] "%(perks)s nodes"
+msgstr[2] "%(perks)s nodes"
+
+msgid "intro/button"
+msgstr "Affirmative!"
+
+msgid "intro/button/tooltip"
+msgstr "About Upgrades"
+
+msgid "intro/improvements/description"
+msgstr ""
+"Earn Combat XP to unlock nodes that enhance your vehicle's characteristics. "
+"The final characteristics may end up either higher or lower than the values "
+"indicated due to additional additive and multiplicative modifiers applied "
+"after node bonuses."
+
+msgid "intro/improvements/title"
+msgstr "How It Works"
+
+msgid "intro/progression/description"
+msgstr ""
+"Available exclusively for Tier XI vehicles, Upgrades allow you to enhance "
+"your vehicles' characteristics even further."
+
+msgid "intro/progression/title"
+msgstr "Upgrades"
+
+msgid "intro/vanity/description"
+msgstr ""
+"After researching all nodes, you will gain access to Elite Rewards, which "
+"you can claim upon reaching certain Elite Levels. The rewards include a "
+"unique volumetric style, Stat Tracker, and gun sleeve!"
+
+msgid "intro/vanity/title"
+msgstr "Elite Rewards"
+
+msgid "kpi/bonus/valueTypes/cnt"
+msgstr " item(s)"
+
+msgid "kpi/bonus/valueTypes/default"
+msgstr "%"
+
+msgid "kpi/bonus/valueTypes/gps"
+msgstr " deg/s"
+
+msgid "kpi/bonus/valueTypes/grads"
+msgstr " deg"
+
+msgid "kpi/bonus/valueTypes/m"
+msgstr " m"
+
+msgid "kpi/bonus/valueTypes/mm"
+msgstr " mm"
+
+msgid "kpi/bonus/valueTypes/mph"
+msgstr " km/h"
+
+msgid "kpi/bonus/valueTypes/mps"
+msgstr " m/s"
+
+msgid "kpi/bonus/valueTypes/p"
+msgstr " h.p."
+
+msgid "kpi/bonus/valueTypes/s"
+msgstr " s"
+
+msgid "kpi/bonus/valueTypes/val"
+msgstr " HP"
+
+msgid "notifications/perkAvailable/disabledButtonTooltip"
+msgstr "This functionality is currently unavailable"
+
+msgid "notifications/perkAvailable/goToProgression"
+msgstr "Go to Upgrades"
+
+msgid "notifications/perkAvailable/title"
+msgstr "You have enough XP to enhance your vehicle!"
+
+msgid "research/allResearched"
+msgstr ""
+"All nodes have been researched. You can now access the Elite Rewards system."
+
+msgid "research/button/label"
+msgstr "Research"
+
+msgid "research/inBattle"
+msgstr "Node unavailable. The vehicle is in battle."
+
+msgid "research/inFormation"
+msgstr "Node unavailable. The vehicle is in a tactical unit."
+
+msgid "research/infoTooltipTitle"
+msgstr "Selected nodes"
+
+msgid "research/needsRepair"
+msgstr "Node unavailable. The vehicle requires repairs."
+
+msgid "research/noSelected"
+msgstr "Select a node or branch of nodes to research"
+
+msgid "research/notEnoughExp"
+msgstr "Not enough XP to research the selected nodes."
+
+msgid "research/notInInventory"
+msgstr "Purchase the vehicle to be able to research its nodes"
+
+msgid "research/perks"
+msgstr "{{amount}} nodes"
+
+msgid "research/selected"
+msgstr "Selected: {{selectedItem}}"
+
+msgid "research/tooltip/description"
+msgid_plural "plural/research/tooltip/description"
+msgstr[0] "• {{selectedPerks}},"
+msgstr[1] "• {{selectedPerks}}."
+msgstr[2] "• {{selectedPerks}}."
+
+msgid "rewardScreen/button/accept"
+msgstr "Affirmative"
+
+msgid "rewardScreen/button/check"
+msgstr "View in Exterior"
+
+msgid "rewardScreen/rewardName"
+msgstr "{{rarity}} {{rewardName}}"
+
+msgid "rewardScreen/subtitle"
+msgstr ""
+"For reaching Elite Level {{prestigeLevel}} in the {{level}} {{type}} "
+"{{name}}"
+
+msgid "rewardScreen/title"
+msgstr "ELITE REWARD"
+
+msgid "tooltips/backToMainProgressionEntryPoint/text"
+msgstr ""
+"Available exclusively for Tier XI vehicles, Upgrades allow you to enhance "
+"your vehicles' characteristics even further."
+
+msgid "tooltips/backToMainProgressionEntryPoint/title"
+msgstr "Upgrades"
+
+msgid "tooltips/common/cost"
+msgstr "Cost: {{amount}}"
+
+msgid "tooltips/description/HEDamageAbsorption"
+msgstr ""
+"Improves your vehicle's ability to absorb HE shell and ramming damage."
+
+msgid "tooltips/description/HEShellDamage"
+msgstr "Increases the damage caused by HE shells."
+
+msgid "tooltips/description/a179_mechanic_0"
+msgstr ""
+"Reduces the dispersion of the second shot in Burst mode by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a179_mechanic_1"
+msgstr ""
+"Reduces the cooldown for firing in Burst mode by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_0"
+msgstr ""
+"Increases the bonus to reload speed per efficiency level by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_1"
+msgstr ""
+"Extends the duration of reload efficiency levels by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_2"
+msgstr ""
+"Extends the duration of reload efficiency levels by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_3"
+msgstr ""
+"Increases the bonus to reload speed per efficiency level by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_0"
+msgstr ""
+"Reduces the cooldown time before the mechanic can be used again by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_1"
+msgstr ""
+"Reduces the cooldown time before the mechanic can be used again by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_2"
+msgstr "Extends mechanic duration by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_3"
+msgstr "Extends mechanic duration by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/advancedChassisProtection"
+msgstr "Increases suspension hit points and repair speed."
+
+msgid "tooltips/description/advancedModuleAndCrewProtection"
+msgstr ""
+"Reduces the penalty when the vehicle's ammo rack or engine are damaged, and "
+"reduces the chance of crew member injury when the vehicle is damaged."
+
+msgid "tooltips/description/aimingCircleSize"
+msgstr "Reduces the size of your aiming circle after firing."
+
+msgid "tooltips/description/aimingTime"
+msgstr "Reduces your vehicle's aiming time."
+
+msgid "tooltips/description/aimingTimeSalvo"
+msgstr "Reduces your vehicle's aiming time in Single Fire mode."
+
+msgid "tooltips/description/allShellDamage"
+msgstr "Increases the damage caused by all shell types."
+
+msgid "tooltips/description/allShellsVelocity"
+msgstr "Increases the velocity of all your shells."
+
+msgid "tooltips/description/ammoRackHP"
+msgstr ""
+"Increases the amount of damage the ammo rack can receive before being "
+"destroyed."
+
+msgid "tooltips/description/ammoRackPenalty"
+msgstr "Reduces the penalty when the vehicle's ammo rack is damaged."
+
+msgid "tooltips/description/ch67_mechanic_0"
+msgstr ""
+"Increases traverse speed while the boosters are active by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch67_mechanic_1"
+msgstr ""
+"Increases top speed while the boosters are active by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch67_mechanic_2"
+msgstr ""
+"Reduces the cooldown time until boosters are fully recharged by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/ch67_mechanic_3"
+msgstr ""
+"Extends maximum booster duration by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/crewProtection"
+msgstr "Reduces the chance of crew member injury when the vehicle is damaged."
+
+msgid "tooltips/description/damagedGunDispersion"
+msgstr "Reduces gun dispersion when your gun is damaged."
+
+msgid "tooltips/description/driveModeForwardSpeed"
+msgstr "Increases vehicle forward speed in Travel mode."
+
+msgid "tooltips/description/driveModeReverseSpeed"
+msgstr "Increases vehicle reverse speed in Travel mode."
+
+msgid "tooltips/description/enginePenalty"
+msgstr "Reduces the penalty when the vehicle's engine is damaged."
+
+msgid "tooltips/description/enginePower"
+msgstr ""
+"Increases engine power, allowing the vehicle to accelerate and move uphill "
+"quicker."
+
+msgid "tooltips/description/f135_mechanic_0"
+msgstr ""
+"Reduces time to start reload by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/f135_mechanic_1"
+msgstr ""
+"Reduces the delay before firing after reload is interrupted by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/f136_mechanic_0"
+msgstr ""
+"Reduces the penalty to reload time after firing the last shell in the "
+"cassette by {colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/forwardSpeed"
+msgstr "Increases vehicle speed when driving forward."
+
+msgid "tooltips/description/g185_mechanic_0"
+msgstr ""
+"Increases the dispersion bonus per accuracy level by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g185_mechanic_1"
+msgstr ""
+"Increases the maximum speed at which accuracy levels can be gained by "
+"{colorTagOpen}{value} km/h{colorTagClose}."
+
+msgid "tooltips/description/g185_mechanic_2"
+msgstr ""
+"Reduces the time taken to reach the next accuracy level by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/g185_mechanic_3"
+msgstr ""
+"Increases the stabilization bonus at maximum accuracy level by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g187_mechanic_0"
+msgstr ""
+"Reduces auxiliary gun reload time by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g187_mechanic_1"
+msgstr ""
+"Reduces auxiliary gun reload time by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_0"
+msgstr ""
+"Increases the time a marked enemy vehicle remains spotted by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_1"
+msgstr ""
+"Reduces the cooldown time before the mechanic can be used again by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_2"
+msgstr ""
+"Reduces the initial cooldown before the mechanic can be used by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_3"
+msgstr ""
+"Increases additional damage caused by allied shells to marked enemy vehicles"
+" by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_0"
+msgstr ""
+"Increases the maximum speed at which preheat can be generated by "
+"{colorTagOpen}{value} km/h{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_1"
+msgstr ""
+"Increases the maximum dispersion bonus from preheat by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_2"
+msgstr ""
+"Increases the maximum damage bonus from preheat by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_3"
+msgstr ""
+"Reduces the time taken to reach maximum preheat level by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/gb147_mechanic_0"
+msgstr ""
+"Reduces gun dispersion by {colorTagOpen}{value} meters{colorTagClose} in "
+"Salvo Fire mode."
+
+msgid "tooltips/description/gb147_mechanic_1"
+msgstr ""
+"Increases turret traverse speed by {colorTagOpen}{value} "
+"degrees{colorTagClose} in Salvo Fire mode."
+
+msgid "tooltips/description/gb147_mechanic_2"
+msgstr ""
+"Reduces aiming time by {colorTagOpen}{value} s{colorTagClose} in Salvo Fire "
+"mode."
+
+msgid "tooltips/description/gb147_mechanic_3"
+msgstr ""
+"Increases top forward speed by {colorTagOpen}{value} km/h{colorTagClose} in "
+"Salvo Fire mode."
+
+msgid "tooltips/description/gb152_mechanic_0"
+msgstr ""
+"Reduces the time taken to enter Direct Drive mode by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/gb152_mechanic_1"
+msgstr ""
+"Reduces the time taken to reach maximum performance in Direct Drive mode by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/gb152_mechanic_2"
+msgstr ""
+"Increases engine power by {colorTagOpen}{value}%{colorTagClose} in Direct "
+"Drive mode."
+
+msgid "tooltips/description/gb152_mechanic_3"
+msgstr ""
+"Increases forward speed by {colorTagOpen}{value}%{colorTagClose} in Direct "
+"Drive mode."
+
+msgid "tooltips/description/gunDepression"
+msgstr "Increases the gun's depression angle."
+
+msgid "tooltips/description/gunDispersion"
+msgstr "Improves shell grouping within the aiming circle."
+
+msgid "tooltips/description/gunDispersionSalvo"
+msgstr "Improves shell grouping within the aiming circle in Single Fire mode."
+
+msgid "tooltips/description/gunStabilization"
+msgstr "Improves gun stabilization in all situations."
+
+msgid "tooltips/description/gunStabilizationFromHull"
+msgstr "Improves gun stabilization during movement and hull traverse."
+
+msgid "tooltips/description/gunStabilizationFromHullMovement"
+msgstr "Improves gun stabilization during hull movement."
+
+msgid "tooltips/description/gunStabilizationFromHullRotation"
+msgstr "Improves gun stabilization during hull traverse."
+
+msgid "tooltips/description/gunStabilizationFromHullSalvo"
+msgstr ""
+"Improves gun stabilization during movement and hull traverse in Single Fire "
+"mode."
+
+msgid "tooltips/description/gunStabilizationFromTurret"
+msgstr "Improves gun stabilization during turret traverse."
+
+msgid "tooltips/description/gunStabilizationFromTurretSalvo"
+msgstr ""
+"Improves gun stabilization during turret traverse in Single Fire mode."
+
+msgid "tooltips/description/gunTraverse"
+msgstr "Increases the maximum horizontal gun traverse angles."
+
+msgid "tooltips/description/hitPoints"
+msgstr ""
+"Increases the vehicle's survivability, allowing it to receive more damage "
+"before being destroyed."
+
+msgid "tooltips/description/innerClipReloadTime"
+msgstr "Reduces the reload time between shells in your gun's clip."
+
+msgid "tooltips/description/invisibilityWhenShooting"
+msgstr "Reduces the chance of being spotted by enemy vehicles while firing."
+
+msgid "tooltips/description/nonHEShellDamage"
+msgstr "Increases the damage caused by non-HE shells."
+
+msgid "tooltips/description/opt_dev_boosters_switch"
+msgstr ""
+"Allows you to configure an alternative loadout of equipment and directives."
+
+msgid "tooltips/description/pl37_mechanic_0"
+msgstr ""
+"Reduces the time taken to switch between modes by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/pl37_mechanic_1"
+msgstr ""
+"Increases the amount of energy generated passively per second in Turbo mode "
+"by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/pl37_mechanic_2"
+msgstr ""
+"Increases the amount of energy generated passively per second in Engagement "
+"mode by {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/pl37_mechanic_3"
+msgstr ""
+"Extends effect duration by {colorTagOpen}{value} s{colorTagClose} in both "
+"Turbo and Engagement mode."
+
+msgid "tooltips/description/r228_mechanic_0"
+msgstr ""
+"Increases ramming damage caused to enemy vehicles by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_1"
+msgstr ""
+"Increases ramming damage caused to enemy vehicles' suspension by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_2"
+msgstr ""
+"Increases ramming damage caused to enemy vehicles by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_3"
+msgstr ""
+"Increases ramming damage caused to enemy vehicles by "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_0"
+msgstr ""
+"Reduces the time before firing again after charge overheating by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_1"
+msgstr ""
+"Increases the time available to fire at maximum heat level by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_2"
+msgstr ""
+"Reduces the time before firing again after charge overheating by "
+"{colorTagOpen}{value} s{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_3"
+msgstr ""
+"Increases the damage bonus per heat level by "
+"{colorTagOpen}{value0}%{colorTagClose}&nbsp;/&nbsp;{colorTagOpen}{value1}%{colorTagClose}&nbsp;/&nbsp;{colorTagOpen}{value2}%{colorTagClose}."
+
+msgid "tooltips/description/reducedRammingDamage"
+msgstr "Reduces the damage received from enemy ramming attacks."
+
+msgid "tooltips/description/reloadTimeTwinGun"
+msgstr "Reduces gun reload time in both Salvo Fire and Single Fire mode."
+
+msgid "tooltips/description/reverseSpeed"
+msgstr "Increases vehicle reverse speed."
+
+msgid "tooltips/description/roleSlot"
+msgstr "Assign a category to the second equipment slot."
+
+msgid "tooltips/description/s36_mechanic_0"
+msgstr ""
+"Improves hull traverse and gun elevation speed by "
+"{colorTagOpen}{value}%{colorTagClose} in Pillbox mode."
+
+msgid "tooltips/description/s36_mechanic_1"
+msgstr ""
+"Reduces the time taken to exit Pillbox mode by {colorTagOpen}{value} "
+"s{colorTagClose}."
+
+msgid "tooltips/description/s36_mechanic_2"
+msgstr ""
+"Reduces gun dispersion by {colorTagOpen}{value}%{colorTagClose} in Pillbox "
+"mode."
+
+msgid "tooltips/description/s36_mechanic_3"
+msgstr ""
+"Reduces gun reload time by {colorTagOpen}{value}%{colorTagClose} in Pillbox "
+"mode."
+
+msgid "tooltips/description/selectiveModuleHPBoost"
+msgstr ""
+"Increases the hit points of your vehicle's fuel tank and engine modules."
+
+msgid "tooltips/description/selectiveModuleProtection"
+msgstr "Reduces the penalty to a damaged ammo rack and engine."
+
+msgid "tooltips/description/shellModuleDamage"
+msgstr "Increases the damage your shells cause to enemy vehicles' modules."
+
+msgid "tooltips/description/shells_consumables_switch"
+msgstr ""
+"Allows you to configure an alternative loadout of ammunition and "
+"consumables."
+
+msgid "tooltips/description/specialShellPenetration"
+msgstr "Increases the penetration power of special shells."
+
+msgid "tooltips/description/specialShellVelocity"
+msgstr "Increases the velocity of special shells."
+
+msgid "tooltips/description/spottingBonusFoliage"
+msgstr "Reduces the concealment of enemy vehicles hiding behind foliage."
+
+msgid "tooltips/description/spottingBonusMovement"
+msgstr "Reduces the concealment of moving enemy vehicles."
+
+msgid "tooltips/description/standardShellPenetration"
+msgstr "Increases the penetration power of standard shells."
+
+msgid "tooltips/description/standardShellVelocity"
+msgstr "Increases the velocity of standard shells."
+
+msgid "tooltips/description/stunDuration"
+msgstr "Reduces the time your vehicle is stunned by enemy shots."
+
+msgid "tooltips/description/turretTraverse"
+msgstr "Increases the maximum horizontal turret traverse angles."
+
+msgid "tooltips/description/turretTraverseStability"
+msgstr "Reduces gun dispersion during turret traverse in Engagement mode."
+
+msgid "tooltips/description/vehicleSpeed"
+msgstr "Increases vehicle speed when driving forward and in reverse."
+
+msgid "tooltips/description/viewRange"
+msgstr "Allows you to spot enemy vehicles from a greater distance."
+
+msgid "tooltips/large/eliteStatus"
+msgstr "Grants vehicle Elite status"
+
+msgid "tooltips/large/perksResearchRequired"
+msgstr "Research all other nodes to be able to research this node."
+
+msgid "tooltips/paramNameWithUnit"
+msgstr "{paramName} ({unit})"
+
+msgid "tooltips/perk/category/concealment"
+msgstr "Category: Concealment"
+
+msgid "tooltips/perk/category/firepower"
+msgstr "Category: Firepower"
+
+msgid "tooltips/perk/category/mechanics"
+msgstr "Mechanic Upgrade"
+
+msgid "tooltips/perk/category/mobility"
+msgstr "Category: Mobility"
+
+msgid "tooltips/perk/category/special"
+msgstr "Special Upgrade"
+
+msgid "tooltips/perk/category/spotting"
+msgstr "Category: Spotting"
+
+msgid "tooltips/perk/category/survivability"
+msgstr "Category: Survivability"
+
+msgid "tooltips/special/tapToModify"
+msgstr "Click to modify after researching the node."
+
+msgid "tooltips/title/HEDamageAbsorption"
+msgstr "HE Damage Absorption"
+
+msgid "tooltips/title/HEShellDamage"
+msgstr "HE Shell Damage"
+
+msgid "tooltips/title/HEShellPenetration"
+msgstr "HE Shell Penetration"
+
+msgid "tooltips/title/a179_mechanic_0"
+msgstr "Semi-Active Mass Damper"
+
+msgid "tooltips/title/a179_mechanic_1"
+msgstr "Chain-Driven Rammer Enhancement"
+
+msgid "tooltips/title/a182_mechanic_0"
+msgstr "Semi-Automatic Torsion Extractor"
+
+msgid "tooltips/title/a182_mechanic_1"
+msgstr "Battle Compartment Advanced Air Filtration "
+
+msgid "tooltips/title/a182_mechanic_2"
+msgstr "Centrifugal Overpressure Fan"
+
+msgid "tooltips/title/a182_mechanic_3"
+msgstr "Modified Ammunition Clamps"
+
+msgid "tooltips/title/a183_mechanic_0"
+msgstr "High-Output Compressor"
+
+msgid "tooltips/title/a183_mechanic_1"
+msgstr "6,000-PSI Compressor Piston"
+
+msgid "tooltips/title/a183_mechanic_2"
+msgstr "6,000-PSI Pneumatic System"
+
+msgid "tooltips/title/a183_mechanic_3"
+msgstr "Additional High-Pressure Cylinder"
+
+msgid "tooltips/title/additionalShellAmmoCapacity"
+msgstr "Additional Ammo Capacity"
+
+msgid "tooltips/title/advancedChassisProtection"
+msgstr "Advanced Suspension Protection"
+
+msgid "tooltips/title/advancedModuleAndCrewProtection"
+msgstr "Advanced Module and Crew Protection"
+
+msgid "tooltips/title/aimingCircleSize"
+msgstr "Aiming Circle Size"
+
+msgid "tooltips/title/aimingTime"
+msgstr "Aiming Time"
+
+msgid "tooltips/title/aimingTimeSalvo"
+msgstr "Aiming Time"
+
+msgid "tooltips/title/allShellDamage"
+msgstr "All Shell Damage"
+
+msgid "tooltips/title/allShellsVelocity"
+msgstr "Shell Velocity"
+
+msgid "tooltips/title/ammoRackHP"
+msgstr "Ammo Rack HP"
+
+msgid "tooltips/title/ammoRackPenalty"
+msgstr "Ammo Rack Penalty"
+
+msgid "tooltips/title/ch67_mechanic_0"
+msgstr "Thrust Vectoring"
+
+msgid "tooltips/title/ch67_mechanic_1"
+msgstr "High-Flow Propellant Pump"
+
+msgid "tooltips/title/ch67_mechanic_2"
+msgstr "Evaporative Cooling"
+
+msgid "tooltips/title/ch67_mechanic_3"
+msgstr "Transpiration-Cooled Nozzles"
+
+msgid "tooltips/title/chassisHP"
+msgstr "Suspension HP"
+
+msgid "tooltips/title/chassisRepairSpeed"
+msgstr "Suspension Repair Speed"
+
+msgid "tooltips/title/crewProtection"
+msgstr "Crew Protection"
+
+msgid "tooltips/title/damagedGunDispersion"
+msgstr "Situational Gun Dispersion"
+
+msgid "tooltips/title/driveModeForwardSpeed"
+msgstr "Travel Mode Forward Speed"
+
+msgid "tooltips/title/driveModeReverseSpeed"
+msgstr "Travel Mode Reverse Speed"
+
+msgid "tooltips/title/engineFireChance"
+msgstr "Engine Fire Chance"
+
+msgid "tooltips/title/engineHP"
+msgstr "Engine HP"
+
+msgid "tooltips/title/enginePenalty"
+msgstr "Engine Penalty"
+
+msgid "tooltips/title/enginePower"
+msgstr "Engine Power"
+
+msgid "tooltips/title/f135_mechanic_0"
+msgstr "Hydraulic Hose Optimization"
+
+msgid "tooltips/title/f135_mechanic_1"
+msgstr "Loading Sequence Optimization"
+
+msgid "tooltips/title/f136_mechanic_0"
+msgstr "Improved Loading Mechanism"
+
+msgid "tooltips/title/forwardSpeed"
+msgstr "Forward Speed"
+
+msgid "tooltips/title/fuelTankHP"
+msgstr "Fuel Tank HP"
+
+msgid "tooltips/title/g185_mechanic_0"
+msgstr "Coriolis Force Sensor"
+
+msgid "tooltips/title/g185_mechanic_1"
+msgstr "Gyroscopic Inclination Sensor"
+
+msgid "tooltips/title/g185_mechanic_2"
+msgstr "Enhanced Input Terminal"
+
+msgid "tooltips/title/g185_mechanic_3"
+msgstr "High-Precision Traverse Sensor"
+
+msgid "tooltips/title/g187_mechanic_0"
+msgstr "Improved Auxiliary Shell Stowage"
+
+msgid "tooltips/title/g187_mechanic_1"
+msgstr "Auxiliary Gun Rammer"
+
+msgid "tooltips/title/g188_mechanic_0"
+msgstr "Advanced Tracking Mechanism"
+
+msgid "tooltips/title/g188_mechanic_1"
+msgstr "High-Efficiency Heatsink"
+
+msgid "tooltips/title/g188_mechanic_2"
+msgstr "High-Amp Generator"
+
+msgid "tooltips/title/g188_mechanic_3"
+msgstr "Low-Dispersion Ruby Laser"
+
+msgid "tooltips/title/g189_mechanic_0"
+msgstr "Modified Power Take-Off"
+
+msgid "tooltips/title/g189_mechanic_1"
+msgstr "Twin Thermal Control Sensor"
+
+msgid "tooltips/title/g189_mechanic_2"
+msgstr "Accurate Thermal Control"
+
+msgid "tooltips/title/g189_mechanic_3"
+msgstr "High-Output Alternator"
+
+msgid "tooltips/title/gb147_mechanic_0"
+msgstr "Preloaded Gun Cradles"
+
+msgid "tooltips/title/gb147_mechanic_1"
+msgstr "Advanced Rotation System"
+
+msgid "tooltips/title/gb147_mechanic_2"
+msgstr "Inclination Control System"
+
+msgid "tooltips/title/gb147_mechanic_3"
+msgstr "Released Torque Governor"
+
+msgid "tooltips/title/gb152_mechanic_0"
+msgstr "Gear Ratio Adjustment"
+
+msgid "tooltips/title/gb152_mechanic_1"
+msgstr "Turbine Geometry Optimization"
+
+msgid "tooltips/title/gb152_mechanic_2"
+msgstr "Tubular Manifold Optimization"
+
+msgid "tooltips/title/gb152_mechanic_3"
+msgstr "Modified RPM Limiter"
+
+msgid "tooltips/title/gunDepression"
+msgstr "Gun Depression"
+
+msgid "tooltips/title/gunDispersion"
+msgstr "Gun Dispersion"
+
+msgid "tooltips/title/gunDispersionSalvo"
+msgstr "Gun Dispersion"
+
+msgid "tooltips/title/gunElevation"
+msgstr "Gun Elevation"
+
+msgid "tooltips/title/gunStabilization"
+msgstr "Total Gun Stabilization"
+
+msgid "tooltips/title/gunStabilizationFromHull"
+msgstr "Partial Gun Stabilization"
+
+msgid "tooltips/title/gunStabilizationFromHullMovement"
+msgstr "Movement Stabilization"
+
+msgid "tooltips/title/gunStabilizationFromHullRotation"
+msgstr "Traverse Stabilization"
+
+msgid "tooltips/title/gunStabilizationFromHullSalvo"
+msgstr "Partial Gun Stabilization"
+
+msgid "tooltips/title/gunStabilizationFromTurret"
+msgstr "Partial Gun Stabilization"
+
+msgid "tooltips/title/gunStabilizationFromTurretSalvo"
+msgstr "Partial Gun Stabilization"
+
+msgid "tooltips/title/gunTraverse"
+msgstr "Improved Gun Traverse"
+
+msgid "tooltips/title/hitPoints"
+msgstr "Hit Points (HP)"
+
+msgid "tooltips/title/hullElevationSpeed"
+msgstr "Hull Elevation Speed"
+
+msgid "tooltips/title/hullTraverseSpeed"
+msgstr "Hull Traverse Speed"
+
+msgid "tooltips/title/innerClipReloadTime"
+msgstr "Inner Clip Reload Time"
+
+msgid "tooltips/title/invisibilityWhenShooting"
+msgstr "Concealment After Firing"
+
+msgid "tooltips/title/nonHEShellDamage"
+msgstr "Non-HE Shell Damage"
+
+msgid "tooltips/title/opt_dev_boosters_switch"
+msgstr "Equipment and Directives Loadout"
+
+msgid "tooltips/title/pl37_mechanic_0"
+msgstr "Lightweight Turbine Rotor"
+
+msgid "tooltips/title/pl37_mechanic_1"
+msgstr "High-Output Auxiliary Alternator"
+
+msgid "tooltips/title/pl37_mechanic_2"
+msgstr "Advanced Rectification Control"
+
+msgid "tooltips/title/pl37_mechanic_3"
+msgstr "Hybrid Capacitor Array"
+
+msgid "tooltips/title/r228_mechanic_0"
+msgstr "Local Edge Hardening"
+
+msgid "tooltips/title/r228_mechanic_1"
+msgstr "High-Alloy Steel Tracks"
+
+msgid "tooltips/title/r228_mechanic_2"
+msgstr "Deep Local Carburizing"
+
+msgid "tooltips/title/r228_mechanic_3"
+msgstr "Local Surface Carburizing"
+
+msgid "tooltips/title/r230_mechanic_0"
+msgstr "High-Accuracy Thermal Sensor"
+
+msgid "tooltips/title/r230_mechanic_1"
+msgstr "Low-Inertia Breech Heaters"
+
+msgid "tooltips/title/r230_mechanic_2"
+msgstr "Mechanized Charge Tray"
+
+msgid "tooltips/title/r230_mechanic_3"
+msgstr "Thermal Control Overload"
+
+msgid "tooltips/title/reducedRammingDamage"
+msgstr "Reduced Ramming Damage"
+
+msgid "tooltips/title/reloadTime"
+msgstr "Reload Time"
+
+msgid "tooltips/title/reloadTimeTwinGun"
+msgstr "Reload Time"
+
+msgid "tooltips/title/reverseSpeed"
+msgstr "Reverse Speed"
+
+msgid "tooltips/title/roleSlot"
+msgstr "Second Slot Category"
+
+msgid "tooltips/title/s36_mechanic_0"
+msgstr "Axial Piston Hydraulic Pump"
+
+msgid "tooltips/title/s36_mechanic_1"
+msgstr "Multi-Cone Powerpack Synchronizer"
+
+msgid "tooltips/title/s36_mechanic_2"
+msgstr "Precision-Balanced Rotor"
+
+msgid "tooltips/title/s36_mechanic_3"
+msgstr "Hydraulic-Driven Rammer"
+
+msgid "tooltips/title/selectiveModuleHPBoost"
+msgstr "Selective Module HP Boost"
+
+msgid "tooltips/title/selectiveModuleProtection"
+msgstr "Selective Module Protection"
+
+msgid "tooltips/title/shellModuleDamage"
+msgstr "Shell Module Damage"
+
+msgid "tooltips/title/shells_consumables_switch"
+msgstr "Ammo and Consumables Loadout"
+
+msgid "tooltips/title/specialShellPenetration"
+msgstr "Special Shell Penetration"
+
+msgid "tooltips/title/specialShellVelocity"
+msgstr "Special Shell Velocity"
+
+msgid "tooltips/title/spottingBonusFoliage"
+msgstr "Spotting Bonus: Foliage"
+
+msgid "tooltips/title/spottingBonusMovement"
+msgstr "Spotting Bonus: Movement"
+
+msgid "tooltips/title/standardShellPenetration"
+msgstr "Standard Shell Penetration"
+
+msgid "tooltips/title/standardShellVelocity"
+msgstr "Standard Shell Velocity"
+
+msgid "tooltips/title/stunDuration"
+msgstr "Stun Duration"
+
+msgid "tooltips/title/turretTraverse"
+msgstr "Improved Turret Traverse"
+
+msgid "tooltips/title/turretTraverseSpeed"
+msgstr "Turret Traverse Speed"
+
+msgid "tooltips/title/turretTraverseStability"
+msgstr "Turret Traverse Stabilization"
+
+msgid "tooltips/title/vehicleSpeed"
+msgstr "Vehicle Speed"
+
+msgid "tooltips/title/viewRange"
+msgstr "Increased View Range"
+
+msgid "tooltips/vanityEntryPoint/statusInfo"
+msgstr "Research the final node to unlock"
+
+msgid "tooltips/vanityEntryPoint/text"
+msgstr ""
+"Receive exclusive rewards for Tier XI vehicles including a volumetric style,"
+" Stat Tracker, and gun sleeve."
+
+msgid "tooltips/vanityEntryPoint/title"
+msgstr "Elite Rewards"
+
+msgid "vanity/available/subtitle"
+msgstr "Receive rewards for your vehicle's Elite Level"
+
+msgid "vanity/available/tooltip"
+msgstr "Current Elite Level"
+
+msgid "vanity/completed/subtitle"
+msgstr "Congratulations! All rewards received."
+
+msgid "vanity/completed/tooltip"
+msgstr "Current Elite Level"
+
+msgid "vanity/disabled/subtitle"
+msgstr "Can be earned after researching the final node"
+
+msgid "vanity/disabled/tooltip"
+msgstr "Vehicle does not have Elite status"
+
+msgid "vanity/reward/level/tooltip"
+msgstr "Elite Level required for reward"
+
+msgid "vanity/rewardType/description/attachment"
+msgstr ""
+"An exclusive gun sleeve that will instantly make your vehicle stand out on "
+"the battlefield."
+
+msgid "vanity/rewardType/description/stattracker"
+msgstr ""
+"A unique new customization element that shows how many vehicles you have "
+"destroyed."
+
+msgid "vanity/rewardType/description/style"
+msgstr ""
+"A special 2D style with a unique visual effect that gives it a 3D "
+"appearance, available exclusively for Tier XI vehicles."
+
+msgid "vanity/rewardType/title/attachment"
+msgstr "Gun Sleeve 3D Attachment"
+
+msgid "vanity/rewardType/title/stattracker"
+msgstr "Stat Tracker"
+
+msgid "vanity/rewardType/title/style"
+msgstr "Volumetric style"
+
+msgid "vanity/title"
+msgstr "ELITE REWARDS"

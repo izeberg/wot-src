@@ -13,6 +13,8 @@ package net.wg.data.constants
       
       public static const DEFAULT_ALPHA:Number = 1;
       
+      public static const DEFAULT_SCALE:Number = 1;
+      
       public static const EMPTY_UIID:uint = 4294967295;
       
       public static const NEW_LINE:String = "\n";

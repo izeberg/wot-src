@@ -5,7 +5,7 @@ package net.wg.gui.lobby.missions.components.headerComponents
    import net.wg.data.constants.generated.MISSIONS_ALIASES;
    import net.wg.gui.interfaces.ISoundButtonEx;
    import net.wg.gui.lobby.missions.data.CollapsedHeaderTitleBlockVO;
-   import net.wg.gui.lobby.missions.event.MissionHeaderEvent;
+   import net.wg.gui.lobby.userMissions.event.MissionHeaderEvent;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.ICommons;
    import org.idmedia.as3commons.util.StringUtils;

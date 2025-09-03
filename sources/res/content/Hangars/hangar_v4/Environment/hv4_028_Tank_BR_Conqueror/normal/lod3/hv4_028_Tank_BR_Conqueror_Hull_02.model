@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_028_Tank_BR_Conqueror/normal/lod4/hv4_028_Tank_BR_Conqueror_Hull_02</parent>
+	<extent>250.000000</extent>
+	<visibilityBox>
+		<min>-1.415867 -0.000000 -3.605742</min>
+		<max>1.415804 1.438702 3.561904</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_028_Tank_BR_Conqueror/normal/lod3/hv4_028_Tank_BR_Conqueror_Hull_02</nodefullVisual>
+</root>

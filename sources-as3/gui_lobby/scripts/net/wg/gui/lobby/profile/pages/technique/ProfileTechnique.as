@@ -138,11 +138,10 @@ package net.wg.gui.lobby.profile.pages.technique
       
       override protected function applyData(param1:Object) : void
       {
-         var _loc3_:Boolean = false;
          var _loc5_:TechniqueListVehicleVO = null;
          var _loc6_:Object = null;
          var _loc2_:DataProvider = new DataProvider();
-         _loc3_ = false;
+         var _loc3_:Boolean = false;
          var _loc4_:Array = param1 as Array;
          if(_loc4_)
          {
@@ -182,33 +181,35 @@ package net.wg.gui.lobby.profile.pages.technique
          else
          {
             this.listComponent.y = this.stackComponent.y = !!this.seasonDropdown.visible ? Number(CONTENT_Y_SEASON_DROPDOWN) : Number(CONTENT_Y_DEFAULT);
+            y = Math.max(paddings.y - TOP_PADDING,0);
          }
-         var _loc3_:int = currentDimension.y - this.listComponent.y + ADDITIONAL_LIST_HEIGHT;
-         var _loc4_:int = currentDimension.y - this.stackComponent.y + ADDITIONAL_STACK_HEIGHT;
-         var _loc5_:Boolean = isWindowed || !_loc2_;
+         var _loc3_:uint = y + paddings.height;
+         var _loc4_:int = currentDimension.y - this.listComponent.y + ADDITIONAL_LIST_HEIGHT - _loc3_;
+         var _loc5_:int = currentDimension.y - this.stackComponent.y + ADDITIONAL_STACK_HEIGHT - _loc3_;
+         var _loc6_:Boolean = isWindowed || !_loc2_;
          if(isWindowed)
          {
-            _loc3_ += WINDOW_LIST_ADDITIONAL_SIZE;
-            _loc4_ += ADDITIONAL_STACK_OFFSET_WINDOWED;
+            _loc4_ += WINDOW_LIST_ADDITIONAL_SIZE;
+            _loc5_ += ADDITIONAL_STACK_OFFSET_WINDOWED;
          }
-         if(!_loc5_)
+         if(!_loc6_)
          {
-            _loc3_ += ADDITIONAL_LIST_OFFSET_SMALL;
-            _loc4_ += ADDITIONAL_STACK_OFFSET_SMALL;
+            _loc4_ += ADDITIONAL_LIST_OFFSET_SMALL;
+            _loc5_ += ADDITIONAL_STACK_OFFSET_SMALL;
          }
          else
          {
-            _loc3_ += ADDITIONAL_LIST_OFFSET;
+            _loc4_ += ADDITIONAL_LIST_OFFSET;
          }
-         this.listComponent.setSize(currentDimension.x,_loc3_);
-         this.stackComponent.setViewSize(_loc1_ - this.stackComponent.x,_loc4_);
-         var _loc6_:Number = !!_loc5_ ? Number(1) : Number(SMALL_SCALE);
-         var _loc7_:int = !!_loc5_ ? int(0) : int(LIST_OFFSET_X);
-         var _loc8_:int = !!_loc5_ ? int(STACK_OFFSET_X) : int(STACK_OFFSET_OFFSET_X_SMALL);
-         this.listComponent.scaleX = this.listComponent.scaleY = _loc6_;
-         this.stackComponent.scaleX = this.stackComponent.scaleY = _loc6_;
-         this.listComponent.x = _loc7_;
-         this.stackComponent.x = _loc8_;
+         this.listComponent.setSize(currentDimension.x,_loc4_);
+         this.stackComponent.setViewSize(_loc1_ - this.stackComponent.x,_loc5_);
+         var _loc7_:Number = !!_loc6_ ? Number(1) : Number(SMALL_SCALE);
+         var _loc8_:int = !!_loc6_ ? int(0) : int(LIST_OFFSET_X);
+         var _loc9_:int = !!_loc6_ ? int(STACK_OFFSET_X) : int(STACK_OFFSET_OFFSET_X_SMALL);
+         this.listComponent.scaleX = this.listComponent.scaleY = _loc7_;
+         this.stackComponent.scaleX = this.stackComponent.scaleY = _loc7_;
+         this.listComponent.x = _loc8_;
+         this.stackComponent.x = _loc9_;
       }
       
       override protected function draw() : void
@@ -306,14 +307,14 @@ package net.wg.gui.lobby.profile.pages.technique
          }
       }
       
-      private function onSeasonDropdownIndexChangeHandler(param1:ListEvent) : void
-      {
-         setSeasonS(param1.itemData.key);
-      }
-      
       override public function set isWindowed(param1:Boolean) : void
       {
          super.isWindowed = param1;
+      }
+      
+      private function onSeasonDropdownIndexChangeHandler(param1:ListEvent) : void
+      {
+         setSeasonS(param1.itemData.key);
       }
       
       private function onListComponentSelectedIndexChangedHandler(param1:Event = null) : void

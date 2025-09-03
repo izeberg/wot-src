@@ -16,7 +16,7 @@ _logger = logging.getLogger(__name__)
 class NotificationWindowController(INotificationWindowController, IGlobalListener):
     __slots__ = ('__accountID', '__activeQueue', '__postponedQueue', '__currentWindow',
                  '__callbackID', '__isWaitingShown', '__processAfterWaiting', '__isLobbyLoaded',
-                 '__locks', '__isExecuting')
+                 '__locks', '__isExecuting', '__predicate')
     __gui = dependency.descriptor(IGuiLoader)
     __gameplay = dependency.descriptor(IGameplayLogic)
 
@@ -26,6 +26,7 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         self.__postponedQueue = []
         self.__locks = set()
         self.__currentWindow = None
+        self.__predicate = None
         self.__callbackID = None
         self.__isWaitingShown = False
         self.__processAfterWaiting = False
@@ -112,13 +113,20 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
         del self.__activeQueue[:]
         del self.__postponedQueue[:]
         self.__locks.clear()
+        self.__predicate = None
+        return
 
     def append(self, command):
-        _logger.debug('Append %r', command)
-        command.init()
-        self.__removeSameInstance(command)
-        self.__activeQueue.append(command)
-        self.__tryProcess()
+        if self.__predicate is not None and not self.__predicate(command):
+            _logger.debug('Skip append %r on predicate %r', command, self.__predicate)
+            return
+        else:
+            _logger.debug('Append %r', command)
+            command.init()
+            self.__removeSameInstance(command)
+            self.__activeQueue.append(command)
+            self.__tryProcess()
+            return
 
     def releasePostponed(self, fireReleased=True):
         _logger.debug('Releasing the postponed queue.')
@@ -164,6 +172,12 @@ class NotificationWindowController(INotificationWindowController, IGlobalListene
 
     def hasLock(self, key):
         return key in self.__locks
+
+    def setFilterPredicate(self, predicate):
+        if predicate is not None and self.__predicate is not None:
+            _logger.warning('Filter predicate %r is overwritten with %r', self.__predicate, predicate)
+        self.__predicate = predicate
+        return
 
     @staticmethod
     def __discardNonPersistentCommands(queue):

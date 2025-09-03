@@ -31,6 +31,18 @@ class BaseAmmunitionSetupView(ViewImpl):
     def viewModel(self):
         return super(BaseAmmunitionSetupView, self).getViewModel()
 
+    @property
+    def tankSetup(self):
+        return self._tankSetup
+
+    def hasChanged(self):
+        return self._tankSetup.getCurrentSubView().getInteractor().hasChanged()
+
+    @wg_async
+    def canQuit(self):
+        result = yield self._tankSetup.canQuit()
+        raise AsyncReturn(result)
+
     def createToolTip(self, event):
         if event.contentID == R.views.common.tooltip_window.backport_tooltip_content.BackportTooltipContent():
             tooltipData = self._getBackportTooltipData(event)
@@ -116,6 +128,7 @@ class BaseAmmunitionSetupView(ViewImpl):
     def _addListeners(self):
         self._vehItem.onItemUpdated += self._onVehicleItemUpdated
         self._vehItem.onSlotAction += self._onSlotAction
+        self._vehItem.onRevert += self._onVehicleItemUpdated
         self.viewModel.onClose += self._onClose
         self.viewModel.ammunitionPanel.onSectionSelect += self._onPanelSelected
         self.viewModel.ammunitionPanel.onSlotClear += self._onPanelSlotClear
@@ -125,6 +138,7 @@ class BaseAmmunitionSetupView(ViewImpl):
     def _removeListeners(self):
         self._vehItem.onItemUpdated -= self._onVehicleItemUpdated
         self._vehItem.onSlotAction -= self._onSlotAction
+        self._vehItem.onRevert -= self._onVehicleItemUpdated
         self.viewModel.onClose -= self._onClose
         self.viewModel.ammunitionPanel.onSectionSelect -= self._onPanelSelected
         self.viewModel.ammunitionPanel.onSlotClear -= self._onPanelSlotClear

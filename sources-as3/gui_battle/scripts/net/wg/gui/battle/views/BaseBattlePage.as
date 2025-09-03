@@ -16,6 +16,7 @@ package net.wg.gui.battle.views
    import net.wg.gui.battle.views.calloutPanel.CalloutPanel;
    import net.wg.gui.battle.views.damagePanel.DamagePanel;
    import net.wg.gui.battle.views.deathCamHud.DeathCamHud;
+   import net.wg.gui.battle.views.decorativeCrosshair.DecorativeCrosshairPanel;
    import net.wg.gui.battle.views.dualGunPanel.DualGunPanel;
    import net.wg.gui.battle.views.gameMessagesPanel.GameMessagesPanel;
    import net.wg.gui.battle.views.gameMessagesPanel.events.GameMessagesPanelEvent;
@@ -26,10 +27,11 @@ package net.wg.gui.battle.views
    import net.wg.gui.battle.views.piercingDebugPanel.PiercingDebugPanel;
    import net.wg.gui.battle.views.postmortemPanel.PostmortemPanel;
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanel;
-   import net.wg.gui.battle.views.rocketAcceleratorPanel.RocketAcceleratorPanel;
    import net.wg.gui.battle.views.situationIndicators.SituationIndicatorsPanel;
+   import net.wg.gui.battle.views.sixthSense.SixthSense;
    import net.wg.gui.battle.views.spectatorView.SpectatorView;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessages;
+   import net.wg.gui.battle.views.widgetsPanel.WidgetsPanel;
    import net.wg.gui.lobby.settings.config.ControlsFactory;
    import net.wg.infrastructure.base.meta.IBattlePageMeta;
    import net.wg.infrastructure.base.meta.impl.BattlePageMeta;
@@ -72,6 +74,10 @@ package net.wg.gui.battle.views
       private static const TWEEN_DURATION:uint = 300;
        
       
+      public var unspotted:SixthSense = null;
+      
+      public var sixthSense:SixthSense = null;
+      
       public var battleLoading:BaseBattleLoading = null;
       
       public var prebattleTimer:IPrebattleTimerBase = null;
@@ -80,7 +86,9 @@ package net.wg.gui.battle.views
       
       public var dualGunPanel:DualGunPanel = null;
       
-      public var rocketAcceleratorPanel:RocketAcceleratorPanel = null;
+      public var widgetsPanel:WidgetsPanel = null;
+      
+      public var decorativeCrosshairPanel:DecorativeCrosshairPanel = null;
       
       public var minimap:BaseMinimap = null;
       
@@ -147,11 +155,12 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         var _loc3_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
-         var _loc3_:int = param1 >> 1;
+         _loc3_ = param1 >> 1;
          var _loc4_:int = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
@@ -196,6 +205,10 @@ package net.wg.gui.battle.views
          this.playerMessageListPositionUpdate();
          this.vehicleMessageList.updateStage();
          this.vehicleMessageListPositionUpdate();
+         this.sixthSense.x = _loc3_;
+         this.sixthSense.y = param2 >> 2;
+         this.unspotted.x = _loc3_;
+         this.unspotted.y = param2 >> 2;
          if(this.battleLoading)
          {
             this.battleLoading.updateStage(param1,param2);
@@ -280,6 +293,8 @@ package net.wg.gui.battle.views
          this.registerComponent(this.vehicleErrorMessageList,BATTLE_VIEW_ALIASES.VEHICLE_ERROR_MESSAGES);
          this.registerComponent(this.playerMessageList,BATTLE_VIEW_ALIASES.PLAYER_MESSAGES);
          this.registerComponent(this.gameMessagesPanel,BATTLE_VIEW_ALIASES.GAME_MESSAGES_PANEL);
+         this.registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
+         this.registerComponent(this.unspotted,BATTLE_VIEW_ALIASES.TARGET_DESIGNATOR_UNSPOTTED_MARKER);
          if(this.calloutPanel)
          {
             this.registerComponent(this.calloutPanel,BATTLE_VIEW_ALIASES.CALLOUT_PANEL);
@@ -296,14 +311,6 @@ package net.wg.gui.battle.views
          {
             DebugUtils.LOG_DEBUG("dualGunPanel component doesn\'t configured for this Battle Page");
          }
-         if(this.rocketAcceleratorPanel)
-         {
-            this.registerComponent(this.rocketAcceleratorPanel,BATTLE_VIEW_ALIASES.ROCKET_ACCELERATOR_INDICATOR);
-         }
-         else
-         {
-            DebugUtils.LOG_DEBUG("rocketAcceleratorPanel component doesn\'t configured for this Battle Page");
-         }
          this.createPostmortemPanelComponent();
          if(this.spectatorViewUI)
          {
@@ -316,6 +323,14 @@ package net.wg.gui.battle.views
          if(this.ribbonsPanel)
          {
             this.ribbonsPanel.addEventListener(Event.CHANGE,this.onRibbonsPanelChangeHandler);
+         }
+         if(this.widgetsPanel)
+         {
+            this.registerComponent(this.widgetsPanel,BATTLE_VIEW_ALIASES.WIDGETS_PANEL);
+         }
+         if(this.decorativeCrosshairPanel)
+         {
+            this.registerComponent(this.decorativeCrosshairPanel,BATTLE_VIEW_ALIASES.DECORATIVE_CROSSHAIR_PANEL);
          }
          this.onRegisterStatisticController();
          super.onPopulate();
@@ -345,6 +360,8 @@ package net.wg.gui.battle.views
       
       override protected function onDispose() : void
       {
+         this.sixthSense = null;
+         this.unspotted = null;
          this.battleLoading = null;
          this.prebattleTimer = null;
          this.damagePanel = null;
@@ -353,7 +370,8 @@ package net.wg.gui.battle.views
          this.ribbonsPanel = null;
          this.situationIndicatorsPanel = null;
          this.dualGunPanel = null;
-         this.rocketAcceleratorPanel = null;
+         this.widgetsPanel = null;
+         this.decorativeCrosshairPanel = null;
          this.calloutPanel = null;
          this.gameMessagesPanel = null;
          this.minimap = null;

@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from battle_modifiers.gui.impl.gen.view_models.views.lobby.feature.limit_model import LimitModel
 
 class ModType(Enum):

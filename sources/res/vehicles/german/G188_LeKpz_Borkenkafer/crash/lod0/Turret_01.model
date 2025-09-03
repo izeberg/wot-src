@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.207226 -0.046790 -1.171367</min>
+		<max>1.207226 0.854060 1.462688</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G188_LeKpz_Borkenkafer/crash/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G188_LeKpz_Borkenkafer/crash/lod0/Turret_01</nodefullVisual>
+</root>

@@ -12,6 +12,16 @@
 			<UUID>d249de85-8083-4003-982c-f789aefb5973</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>Cus_12_Asia_Dragon_Head</name>
+			<UUID>46c8e16b-b603-49f5-ad32-c8d692c8bd9a</UUID>
+			<flags>0</flags>
+		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>680de90b-c1cc-41bf-818e-1690da0e925d</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -19,6 +29,26 @@
 			<version>2</version>
 			<component>
 				<UUID>d249de85-8083-4003-982c-f789aefb5973</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>680de90b-c1cc-41bf-818e-1690da0e925d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>46c8e16b-b603-49f5-ad32-c8d692c8bd9a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>680de90b-c1cc-41bf-818e-1690da0e925d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>680de90b-c1cc-41bf-818e-1690da0e925d</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -56,7 +86,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 0 0.127
+							0 0 0.127014
 							<!--BW_String-->
 						</value>
 					</property>
@@ -70,76 +100,72 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>46c8e16b-b603-49f5-ad32-c8d692c8bd9a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>680de90b-c1cc-41bf-818e-1690da0e925d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ComponentsVisibilityController</type>
+			<type>BW::StateSwitcherComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>a6d2bf0f-7206-4bb1-ba76-64670933ad6f</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>castShadows</name>
+						<name>normal</name>
+						<link>680de90b-c1cc-41bf-818e-1690da0e925d</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
 						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in KILL_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in LOOK_AT_KILLER MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in TWIN_GUN MODE</name>
-						<value>0</value>
 					</property>
 				</config>
 			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
 			<component>
 				<UUID>d249de85-8083-4003-982c-f789aefb5973</UUID>
 				<flags>3</flags>
@@ -203,6 +229,88 @@
 					<property>
 						<name>Visible in TWIN_GUN MODE</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>46c8e16b-b603-49f5-ad32-c8d692c8bd9a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>castShadows</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in KILL_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in LOOK_AT_KILLER MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in TWIN_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -211,13 +319,13 @@
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
-				<UUID>a6d2bf0f-7206-4bb1-ba76-64670933ad6f</UUID>
+				<UUID>d249de85-8083-4003-982c-f789aefb5973</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>content/3D_Customization/Cus_12_Asia_Dragon_Head/normal/lod0/attachment.model</value>
+						<value>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_dragon_yeys.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -226,13 +334,13 @@
 				</config>
 			</component>
 			<component>
-				<UUID>d249de85-8083-4003-982c-f789aefb5973</UUID>
+				<UUID>46c8e16b-b603-49f5-ad32-c8d692c8bd9a</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>particles/3D_Customization/Cus_12_Asia_Dragon_Head/cus_12_dragon_yeys.model</value>
+						<value>content/3D_Customization/Cus_12_Asia_Dragon_Head/normal/lod0/attachment.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -349,6 +457,20 @@
 					</property>
 					<property>
 						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>a6d2bf0f-7206-4bb1-ba76-64670933ad6f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
 						<value>1</value>
 					</property>
 				</config>

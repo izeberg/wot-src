@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.428770 -0.200000 -0.625690</min>
+		<max>0.328660 0.746572 1.104264</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_57_ArmiesA_Machinegun/normal/lod1/Cus_57_ArmiesA_Machinegun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>content/3D_Customization/Cus_57_ArmiesA_Machinegun/normal/lod0/Cus_57_ArmiesA_Machinegun_01</nodefullVisual>
+	<tank>true</tank>
+</root>

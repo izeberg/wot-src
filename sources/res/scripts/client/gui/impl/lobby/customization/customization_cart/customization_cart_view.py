@@ -186,6 +186,7 @@ class CustomizationCartView(ViewImpl):
     def _finalize(self):
         super(CustomizationCartView, self)._finalize()
         self.__removeListeners()
+        self.__blur.fini()
         if self.__c11nView is not None:
             if self.__isProlongStyleRent:
                 self.__c11nView.onCloseWindow(force=True)
@@ -194,7 +195,6 @@ class CustomizationCartView(ViewImpl):
                     self.__ctx.returnToStyleMode()
                 self.__c11nView.changeVisible(True)
             self.__c11nView = None
-        self.__blur.fini()
         self.__ctx = None
         self.__items.clear()
         del self.__purchaseItems[:]
@@ -235,7 +235,6 @@ class CustomizationCartView(ViewImpl):
         model.purchase.onBuyAction += self.__onBuy
         model.tutorial.onTutorialClose += self.__onTutorialClose
         g_clientUpdateManager.addMoneyCallback(self.__updateMoney)
-        g_currentVehicle.onChanged += self.__onVehicleChanged
 
     def __removeListeners(self):
         model = self.viewModel
@@ -245,7 +244,6 @@ class CustomizationCartView(ViewImpl):
         model.purchase.onBuyAction -= self.__onBuy
         model.tutorial.onTutorialClose -= self.__onTutorialClose
         g_clientUpdateManager.removeObjectCallbacks(self)
-        g_currentVehicle.onChanged -= self.__onVehicleChanged
 
     def __onWindowClose(self):
         if self.__hasOpenedChildWindow():
@@ -359,7 +357,7 @@ class CustomizationCartView(ViewImpl):
     def __onBuyConfirmed(self, isOk):
         if isOk:
             yield self.__c11nView.applyItems(self.__purchaseItems)
-            self.destroyWindow()
+            self.__onWindowClose()
 
     def __onSelectAutoRent(self, _=None):
         self.__ctx.mode.changeAutoRent()
@@ -408,7 +406,7 @@ class CustomizationCartView(ViewImpl):
 
     def __onVehicleChanged(self):
         self.__isProlongStyleRent = False
-        self.destroyWindow()
+        self.__onWindowClose()
 
     def __hasOpenedChildWindow(self):
 

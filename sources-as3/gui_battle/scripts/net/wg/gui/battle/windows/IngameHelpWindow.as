@@ -81,6 +81,10 @@ package net.wg.gui.battle.windows
       
       public var toggleSniperModeExt:TextField = null;
       
+      public var toggleAFL:TextField = null;
+      
+      public var toggleAFLExt:TextField = null;
+      
       public var togglePlayerPanelModes:TextField = null;
       
       public var togglePlayerPanelModesExt:TextField = null;
@@ -199,6 +203,8 @@ package net.wg.gui.battle.windows
       
       public var alternateModeTF:TextField = null;
       
+      public var toggleAFLTF:TextField = null;
+      
       public var togglePlayerPanelModesTF:TextField = null;
       
       public var showExPlayerInfoTF:TextField = null;
@@ -239,6 +245,7 @@ package net.wg.gui.battle.windows
          this._keysDictionary[KEYBOARD_KEYS.LOCK_TARGET] = this.lockTargetTF;
          this._keysDictionary[KEYBOARD_KEYS.LOCK_TARGET_OFF] = this.lockTargetOffTF;
          this._keysDictionary[KEYBOARD_KEYS.ALTERNATE_MODE] = this.alternateModeTF;
+         this._keysDictionary[KEYBOARD_KEYS.TOGGLE_FLASHLIGHT] = this.toggleAFLTF;
          this._keysDictionary[KEYBOARD_KEYS.TOGGLE_PLAYER_PANEL_MODES] = this.togglePlayerPanelModesTF;
          this._keysDictionary[KEYBOARD_KEYS.SHOW_EX_PLAYER_INFO] = this.showExPlayerInfoTF;
          this._keysDictionary[KEYBOARD_KEYS.SHOW_HUD] = this.showHUDTF;
@@ -312,6 +319,8 @@ package net.wg.gui.battle.windows
          this.disableLockTarget = null;
          this.toggleSniperMode = null;
          this.toggleSniperModeExt = null;
+         this.toggleAFL = null;
+         this.toggleAFLExt = null;
          this.togglePlayerPanelModes = null;
          this.togglePlayerPanelModesExt = null;
          this.showExPlayerInfo = null;
@@ -371,6 +380,7 @@ package net.wg.gui.battle.windows
          this.lockTargetTF = null;
          this.lockTargetOffTF = null;
          this.alternateModeTF = null;
+         this.toggleAFLTF = null;
          this.togglePlayerPanelModesTF = null;
          this.showExPlayerInfoTF = null;
          this.showHUDTF = null;
@@ -428,6 +438,8 @@ package net.wg.gui.battle.windows
          this.disableLockTarget.text = INGAME_HELP.BATTLECONTROLS_DISABLELOCKTARGET;
          this.toggleSniperMode.text = INGAME_HELP.BATTLECONTROLS_TOGGLESNIPERMODE;
          this.toggleSniperModeExt.text = INGAME_HELP.BATTLECONTROLS_TOGGLESNIPERMODE_EXT;
+         this.toggleAFL.text = INGAME_HELP.BATTLECONTROLS_TOGGLEAFL;
+         this.toggleAFLExt.text = INGAME_HELP.BATTLECONTROLS_TOGGLEAFL_EXT;
          this.togglePlayerPanelModes.text = INGAME_HELP.BATTLECONTROLS_TOGGLEPLAYERPANELMODES;
          this.togglePlayerPanelModesExt.text = INGAME_HELP.BATTLECONTROLS_TOGGLEPLAYERPANELMODES_EXT;
          this.showExPlayerInfo.text = INGAME_HELP.BATTLECONTROLS_SHOWEXPLAYERINFO;

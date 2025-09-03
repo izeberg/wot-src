@@ -77,7 +77,7 @@ package net.wg.gui.lobby.missions.components
             {
                this.icon.visible = false;
             }
-            if(this.rendererData.useWideTextField && !this.rendererData.isCondition)
+            if(this.rendererData.useWideTextField)
             {
                this.descTF.width = this.getDescTextFieldSize();
             }

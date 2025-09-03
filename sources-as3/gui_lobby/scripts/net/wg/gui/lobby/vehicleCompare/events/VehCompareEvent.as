@@ -5,10 +5,6 @@ package net.wg.gui.lobby.vehicleCompare.events
    public class VehCompareEvent extends Event
    {
       
-      public static const CLOSE_CLICK:String = "closeClick";
-      
-      public static const BACK_CLICK:String = "backClick";
-      
       public static const REMOVE_ALL_CLICK:String = "removeAllClick";
       
       public static const ADD:String = "addToCompare";

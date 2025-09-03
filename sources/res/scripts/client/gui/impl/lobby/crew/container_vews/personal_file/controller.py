@@ -1,11 +1,9 @@
 import typing
 from Event import Event
-from frameworks.wulf import ViewStatus
 from gui.impl.dialogs.dialogs import showPerksDropDialog
 from gui.impl.gen import R
 from gui.impl.lobby.crew.container_vews.common.base_personal_case_controller import BasePersonalCaseController
 from gui.impl.lobby.crew.container_vews.personal_file.events import PersonalFileComponentViewEvents
-from gui.impl.lobby.crew.container_vews.quick_training.quick_training_view import QuickTrainingView
 from gui.shared.event_dispatcher import showQuickTraining, showSkillsTraining, showCrewPostProgressionView
 from gui.shared.gui_items.Vehicle import NO_VEHICLE_ID
 from gui.shared.items_cache import CACHE_SYNC_REASON
@@ -35,8 +33,6 @@ class PersonalFileInteractionController(BasePersonalCaseController):
 
     def _getEvents(self):
         return super(PersonalFileInteractionController, self)._getEvents() + [
-         (
-          self.__guiLoader.windowsManager.onViewStatusChanged, self._onViewStatusChanged),
          (
           self.itemsCache.onSyncCompleted, self._onCacheResync),
          (
@@ -76,14 +72,6 @@ class PersonalFileInteractionController(BasePersonalCaseController):
 
     def _onWidgetClick(self):
         showCrewPostProgressionView()
-
-    def _onViewStatusChanged(self, uniqueID, newState):
-        view = self.__guiLoader.windowsManager.getView(uniqueID)
-        if isinstance(view, QuickTrainingView):
-            if newState == ViewStatus.CREATED:
-                self.view.updateAnimationShowing(False)
-            elif newState == ViewStatus.DESTROYING:
-                self.view.updateAnimationShowing(True)
 
     def _onCacheResync(self, reason, _):
         if reason in (CACHE_SYNC_REASON.STATS_RESYNC, CACHE_SYNC_REASON.SHOW_GUI):

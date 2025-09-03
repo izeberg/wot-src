@@ -119,7 +119,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>29175</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1160</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1673,9 +1673,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>46000</maxLoad>
 			<terrainResistance>
-				1.3 1.8 2.9
+				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
@@ -3331,7 +3330,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.3
 				<!--BW_String-->
@@ -4992,15 +4990,12 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>290</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>155</maxHealth>
+				<maxRegenHealth>78</maxRegenHealth>
+				<repairCost>8</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>350</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -5017,7 +5012,7 @@
 					<maxAmmo>52</maxAmmo>
 					<unlocks>
 						<gun>
-							GG_100_162_mm
+							GG_100_162_mm_58
 							<cost>44000</cost>
 						</gun>
 					</unlocks>
@@ -5046,7 +5041,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.9
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5173,7 +5168,7 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</GG_85_150_mm>
-				<GG_100_162_mm>
+				<GG_100_162_mm_58>
 					shared
 					<maxAmmo>45</maxAmmo>
 					<unlocks>
@@ -5330,7 +5325,7 @@
 						<density>109.657425 109.975243</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</GG_100_162_mm>
+				</GG_100_162_mm_58>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl30_SDP_Wz58T/normal/lod0/Turret_01.model</undamaged>
@@ -5371,15 +5366,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<RTU_Jesion_M>
-			shared
-			<unlocks>
-				<radio>
-					R_113_P
-					<cost>7300</cost>
-				</radio>
-			</unlocks>
-		</RTU_Jesion_M>
 		<R_113_P>shared</R_113_P>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -5400,19 +5386,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.23345
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1449
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

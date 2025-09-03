@@ -1,6 +1,9 @@
 import typing
 from comp7.gui.impl.gen.view_models.views.lobby.meta_view.pages.quest_card_model import QuestCardModel, CardState
+from comp7.gui.impl.gen.view_models.views.lobby.weekly_quest_model import WeeklyQuestModel
+from comp7.gui.impl.lobby.comp7_helpers.account_settings import getLastSeenQuestData
 from gui.impl.gen.view_models.common.missions.conditions.condition_group_model import ConditionGroupModel
+from gui.impl.gen.view_models.common.missions.conditions.preformatted_condition_model import PreformattedConditionModel
 from gui.periodic_battles.models import PeriodType as PT
 from gui.shared.missions.packers.conditions import BonusConditionPacker, PostBattleConditionPacker
 from gui.shared.missions.packers.events import findFirstConditionModel
@@ -69,3 +72,21 @@ class Comp7WeeklyQuestPacker(object):
             if not isQuestAvailable and not self.__hasSuitableVehicles and quest.getID().endswith('_1_1'):
                 return CardState.LOCKED_BY_NO_X_VEHICLES
         return CardState.LOCKED_BY_PREVIOUS_QUEST
+
+
+class Comp7WeeklyQuestWidgetPacker(Comp7WeeklyQuestPacker):
+
+    def pack(self, quest):
+        iconKey, currentProgress, totalProgress, description = self.getData(quest)
+        lastSeenProgress, isQuestAnimationSeen = getLastSeenQuestData(quest.getID())
+        model = WeeklyQuestModel()
+        model.setCurrentProgress(currentProgress)
+        model.setTotalProgress(totalProgress)
+        model.setDescription(description)
+        model.setIcon(iconKey)
+        model.setId(quest.getID())
+        model.setIsCompleted(quest.isCompleted())
+        model.setAnimateCompletion(not isQuestAnimationSeen and quest.isCompleted())
+        if not isQuestAnimationSeen:
+            model.setEarned(currentProgress - lastSeenProgress)
+        return model

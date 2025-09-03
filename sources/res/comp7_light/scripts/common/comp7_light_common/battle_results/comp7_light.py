@@ -1,0 +1,2 @@
+from comp7_core_common.battle_results.comp7_core import BATTLE_RESULTS as COMP7_BATTLE_RESULTS
+BATTLE_RESULTS = list(COMP7_BATTLE_RESULTS)

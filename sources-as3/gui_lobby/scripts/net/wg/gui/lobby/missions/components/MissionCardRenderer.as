@@ -12,8 +12,8 @@ package net.wg.gui.lobby.missions.components
    import net.wg.gui.components.controls.SoundListItemRenderer;
    import net.wg.gui.components.interfaces.IReusableListItemRenderer;
    import net.wg.gui.components.paginator.vo.ToolTipVO;
-   import net.wg.gui.lobby.missions.data.MissionCardViewVO;
-   import net.wg.gui.lobby.missions.data.MissionConditionsContainerVO;
+   import net.wg.gui.lobby.userMissions.data.MissionCardViewVO;
+   import net.wg.gui.lobby.userMissions.data.MissionConditionsContainerVO;
    import net.wg.infrastructure.interfaces.IImage;
    import net.wg.infrastructure.interfaces.entity.IUpdatable;
    import net.wg.infrastructure.managers.ITooltipMgr;

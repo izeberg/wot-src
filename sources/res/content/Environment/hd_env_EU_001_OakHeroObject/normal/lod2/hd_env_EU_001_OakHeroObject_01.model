@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_EU_001_OakHeroObject/normal/lod3/hd_env_EU_001_OakHeroObject_01</parent>
+	<extent>225.000000</extent>
+	<visibilityBox>
+		<min>-13.468847 -0.282217 -11.212928</min>
+		<max>8.384955 18.146727 10.910694</max>
+	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_EU_001_OakHeroObject/normal/lod2/hd_env_EU_001_OakHeroObject_01</nodefullVisual>
+</root>

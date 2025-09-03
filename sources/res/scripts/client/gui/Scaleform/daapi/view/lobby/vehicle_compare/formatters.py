@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.locale.VEH_COMPARE import VEH_COMPARE
 from gui.game_control.veh_comparison_basket import isValidVehicleForComparing
 from helpers import dependency

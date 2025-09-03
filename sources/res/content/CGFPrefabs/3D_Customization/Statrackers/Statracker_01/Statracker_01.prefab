@@ -12,6 +12,11 @@
 			<UUID>6cefde47-f98b-4bd6-b7dd-bb65fbba25aa</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>56a3f5b3-d1f6-4869-b54b-a240822510fe</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -19,6 +24,16 @@
 			<version>2</version>
 			<component>
 				<UUID>6cefde47-f98b-4bd6-b7dd-bb65fbba25aa</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>56a3f5b3-d1f6-4869-b54b-a240822510fe</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>56a3f5b3-d1f6-4869-b54b-a240822510fe</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -64,6 +79,50 @@
 					<property>
 						<name>Rotation</name>
 						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>56a3f5b3-d1f6-4869-b54b-a240822510fe</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>1b811e1d-7d7c-4d58-80d8-f0ecf9278c4a</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>56a3f5b3-d1f6-4869-b54b-a240822510fe</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -280,7 +339,7 @@
 					</property>
 					<property>
 						<name>LodDistance</name>
-						<value>12000</value>
+						<value>120000</value>
 					</property>
 					<property>
 						<name>CounterStickers</name>
@@ -535,6 +594,14 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::GpuDecalsReceiverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>6cefde47-f98b-4bd6-b7dd-bb65fbba25aa</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>StatisticDisplayComponent</type>
 			<version>1</version>
 			<component>
@@ -583,11 +650,17 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>BW::GpuDecalsReceiverComponent</type>
+			<type>VehicleHealthObserverComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>6cefde47-f98b-4bd6-b7dd-bb65fbba25aa</UUID>
+				<UUID>1b811e1d-7d7c-4d58-80d8-f0ecf9278c4a</UUID>
 				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
+					</property>
+				</config>
 			</component>
 		</ComponentPool>
 	</components>

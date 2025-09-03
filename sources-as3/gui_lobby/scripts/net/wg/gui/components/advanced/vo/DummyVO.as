@@ -10,6 +10,8 @@ package net.wg.gui.components.advanced.vo
       
       public var inlineIcon:Boolean = false;
       
+      public var smallIcon:Boolean = false;
+      
       public var iconSource:String = "";
       
       public var htmlText:String = "";

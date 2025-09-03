@@ -230,7 +230,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>36560</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.1
 				<!--BW_String-->
@@ -1434,7 +1433,7 @@
 	<turrets0>
 		<Turret_1_T69_IGR>
 			<userString>#igr_vehicles:Turret_1_T69_IGR</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>46000</price>
 			<notInShop>true</notInShop>
@@ -1550,6 +1549,7 @@
 							38.1
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_15>
 						<armor_16>
 							101.6

@@ -1593,6 +1593,12 @@ msgstr "Victory"
 msgid "serviceChannelMessages/Financial/add"
 msgstr "Added"
 
+msgid "serviceChannelMessages/PersonalMission3Quest/affirmative"
+msgstr "Affirmative!"
+
+msgid "serviceChannelMessages/PersonalMission3Quest/goToOperation"
+msgstr "Go to Operation"
+
 msgid "serviceChannelMessages/achievementReceived/message"
 msgstr "Service Record"
 
@@ -1795,13 +1801,15 @@ msgid "serviceChannelMessages/battleMatters/awards/tokenAward/body/vehicle"
 msgstr "Rental vehicles: %(vehName)s"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/body"
-msgstr "Go back to training missions and receive useful rewards."
+msgstr "Earn vehicles and useful resources by completing training missions."
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/button"
-msgstr "To Current Mission"
+msgstr "To Tank Academy"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/title"
-msgstr "TANK ACADEMY"
+msgstr ""
+"EVERYTHING YOU NEED\n"
+"TO GET STARTED"
 
 msgid "serviceChannelMessages/battleMatters/token"
 msgstr "Academy Token"
@@ -2072,6 +2080,37 @@ msgstr "Free Experience received"
 msgid "serviceChannelMessages/battleResults/gold"
 msgstr "Gold earned"
 
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/description"
+msgstr ""
+"For joining the ranks of %(campaignName)s, you have been awarded the "
+"%(nameMedal)s medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/header"
+msgstr "Congratulations!"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/1/description"
+msgstr ""
+"For successfully completing 45 missions in the %(categoryName)s series in "
+"the %(campaignName)s campaign, you have been awarded the %(nameMedal)s "
+"medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/2/description"
+msgstr ""
+"For successfully completing 30 missions in the %(categoryName)s series in "
+"the %(campaignName)s campaign, you have been awarded the %(nameMedal)s "
+"medal."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/3/description"
+msgstr ""
+"For successfully completing 15 missions in the %(categoryName)s series in "
+"the %(campaignName)s campaign, you have been awarded the %(nameMedal)s "
+"medal."
+
 msgid "serviceChannelMessages/battleResults/penaltyForDamageAllies"
 msgstr "fine for damage caused to allies: %s"
 
@@ -2089,6 +2128,11 @@ msgid "serviceChannelMessages/battleResults/personalMissions/2"
 msgstr ""
 "Congratulations!\n"
 "For successful completion of the Second Front campaign personal missions you have received the following rewards"
+
+msgid "serviceChannelMessages/battleResults/personalMissions/3"
+msgstr ""
+"+Congratulations!\n"
+"For successful completion of the Sector 3 campaign personal missions you have received the following rewards+"
 
 msgid "serviceChannelMessages/battleResults/personalMissions/both"
 msgstr ""
@@ -2142,6 +2186,9 @@ msgstr "Added"
 
 msgid "serviceChannelMessages/battleResults/quests/items/name"
 msgstr "%(name)s (x%(count)s)"
+
+msgid "serviceChannelMessages/battleResults/quests/personal_missions_points"
+msgstr "Campaign Points: %(count)s"
 
 msgid "serviceChannelMessages/battleResults/quests/premium"
 msgstr "Days of Wargaming Premium Account added"
@@ -2364,6 +2411,10 @@ msgstr "Close"
 
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "You left or were excluded from the clan:"
+
+msgid ""
+"serviceChannelMessages/commendations/battleResults/commendationsReceived"
+msgstr "Commendations received"
 
 msgid "serviceChannelMessages/commendations/liveTags/disable"
 msgstr "Live Tags are currently unavailable"
@@ -2955,6 +3006,9 @@ msgstr "Anniversary Coins added"
 msgid "serviceChannelMessages/invoiceReceived/eventCoinDebited"
 msgstr "Anniversary Coins removed"
 
+msgid "serviceChannelMessages/invoiceReceived/expirableBoosters"
+msgstr "Expirable Personal Reserves"
+
 msgid "serviceChannelMessages/invoiceReceived/freeAwardListsAccrued"
 msgstr "Orders added"
 
@@ -3354,6 +3408,16 @@ msgstr "%(vehName)s"
 
 msgid "serviceChannelMessages/prestige/lvlUp/title"
 msgstr "Elite Level Received"
+
+msgid "serviceChannelMessages/prestigeMilestone/error"
+msgstr "An error occurred while claiming the Elite Reward."
+
+msgid "serviceChannelMessages/prestigeMilestone/text"
+msgstr ""
+"%(rewardName)s %(typeReward)s received for reaching Elite Level %(lvl)s."
+
+msgid "serviceChannelMessages/prestigeMilestone/title"
+msgstr "Elite Reward Received"
 
 msgid "serviceChannelMessages/priorityMessageTitle"
 msgstr "Attention!"
@@ -4019,25 +4083,6 @@ msgstr "Select a vehicle from the list to rent."
 
 msgid "serviceChannelMessages/wotPlus/rental/noTank/title"
 msgstr "No rental vehicle selected"
-
-msgid ""
-"serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/additionalBonuses"
-msgstr "• choose to triple Combat XP"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/badges"
-msgstr "• spice up your nickname"
-
-msgid ""
-"serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/battleBonuses"
-msgstr "• earn +%(creditsFactor)d%% more each battle"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/body"
-msgstr ""
-"From now on you can:\n"
-"%(bonuses)s"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/title"
-msgstr "New WoT Plus Benefits Released!"
 
 msgid "serviceChannelMessages/wotPlus/tankRental/isPending/text"
 msgstr "The %(vehicle)s will soon be added to your account."

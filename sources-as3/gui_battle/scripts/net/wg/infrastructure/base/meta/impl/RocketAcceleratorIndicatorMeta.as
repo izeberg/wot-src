@@ -1,8 +1,8 @@
 package net.wg.infrastructure.base.meta.impl
 {
-   import net.wg.gui.battle.components.BattleDisplayable;
+   import net.wg.gui.battle.views.widgetsPanel.BaseVehicleMechanicsWidget;
    
-   public class RocketAcceleratorIndicatorMeta extends BattleDisplayable
+   public class RocketAcceleratorIndicatorMeta extends BaseVehicleMechanicsWidget
    {
        
       

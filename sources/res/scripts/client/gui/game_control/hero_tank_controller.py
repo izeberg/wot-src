@@ -1,6 +1,7 @@
 import logging, random
 from collections import namedtuple
 import ResMgr, Event
+from constants import IS_DEVELOPMENT
 from gui.shared import EVENT_BUS_SCOPE, events, g_eventBus
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.items_cache import CACHE_SYNC_REASON
@@ -29,6 +30,7 @@ class HeroTankController(IHeroTankController):
     def __init__(self):
         self.__data = {}
         self.__invVehiclesIntCD = tuple()
+        self.__debugTankCD = None
         self.__isEnabled = False
         self.__currentTankCD = None
         self.__actionInfo = None
@@ -74,12 +76,15 @@ class HeroTankController(IHeroTankController):
         return self.hasAdventHero() and self.__currentTankCD == self.__actionInfo.vehicleCD
 
     def getRandomTankCD(self):
-        adventTankCD, _ = self._getAdventHeroTankData()
-        if adventTankCD:
-            self.__currentTankCD = adventTankCD
+        if IS_DEVELOPMENT and self.__debugTankCD is not None:
+            return self.__debugTankCD
         else:
-            self.__currentTankCD = random.choice(self.__data.keys() or [None]) if self.isEnabled() else None
-        return self.__currentTankCD
+            adventTankCD, _ = self._getAdventHeroTankData()
+            if adventTankCD:
+                self.__currentTankCD = adventTankCD
+            else:
+                self.__currentTankCD = random.choice(self.__data.keys() or [None]) if self.isEnabled() else None
+            return self.__currentTankCD
 
     def getCurrentTankCD(self):
         return self.__currentTankCD
@@ -116,6 +121,11 @@ class HeroTankController(IHeroTankController):
 
     def setInteractive(self, interactive):
         self.onInteractive(interactive)
+
+    def setDebugTankCD(self, debugTankCD):
+        if debugTankCD != self.__debugTankCD:
+            self.__debugTankCD = debugTankCD
+            self.onUpdated()
 
     def _getAdventHeroTankData(self):
         if not self.hasAdventHero():

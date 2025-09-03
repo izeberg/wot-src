@@ -18,6 +18,8 @@ from gui.prb_control.dispatcher import g_prbLoader
 from gui.prb_control.entities.listener import IGlobalListener
 from gui.prb_control.settings import PREBATTLE_ACTION_NAME
 from gui.shared.system_factory import registerModeSelectorItem, collectModeSelectorItem
+from helpers import dependency
+from skeletons.gui.lobby_context import ILobbyContext
 if typing.TYPE_CHECKING:
     from gui.Scaleform.daapi.view.lobby.header.battle_selector_items import SelectorItem
     from gui.impl.lobby.mode_selector.items.base_item import ModeSelectorItem
@@ -34,6 +36,7 @@ registerModeSelectorItem(PREBATTLE_ACTION_NAME.WINBACK, WinbackModeSelectorItem)
 
 class ModeSelectorDataProvider(IGlobalListener):
     __slots__ = ('onListChanged', '_items')
+    __lobbyContext = dependency.descriptor(ILobbyContext)
     MAX_COLUMN_SIZE = 6
 
     def __init__(self):
@@ -44,6 +47,7 @@ class ModeSelectorDataProvider(IGlobalListener):
         self._initializeModeSelectorItems()
         self._updateItems(selected)
         self.startGlobalListening()
+        self.__lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
 
     @property
     def itemList(self):
@@ -67,6 +71,7 @@ class ModeSelectorDataProvider(IGlobalListener):
         items.select(modeName)
 
     def dispose(self):
+        self.__lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChange
         self.stopGlobalListening()
         self._clearItems()
 
@@ -90,6 +95,9 @@ class ModeSelectorDataProvider(IGlobalListener):
                 self._clearItem(self._items.pop(nameItem))
 
         self._updateItems()
+
+    def __onServerSettingsChange(self, _):
+        self.forceRefresh()
 
     def _onCardChangeHandler(self, *args, **kwargs):
         self.forceRefresh()
@@ -117,8 +125,7 @@ class ModeSelectorDataProvider(IGlobalListener):
         if not prbDispatcher:
             return None
         else:
-            state = prbDispatcher.getFunctionalState()
-            return battle_selector_items.getItems().update(state)
+            return battle_selector_items.getItems().getSelected()
 
     def _updateItems(self, selected=None):
         self._updateItemsPosition()
@@ -164,6 +171,9 @@ class ModeSelectorDataProvider(IGlobalListener):
             item.viewModel.commit()
 
     def __createItems(self, items):
+        prbDispatcher = g_prbLoader.getDispatcher()
+        if prbDispatcher:
+            battle_selector_items.getItems().update(prbDispatcher.getFunctionalState())
         for modeName in items:
             if modeName not in self._items:
                 item = self._getModeSelectorLegacyItem(modeName, items[modeName])

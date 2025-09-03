@@ -36,7 +36,7 @@ package net.wg.gui.lobby.missions.components.detailedView
       
       override protected function getDescTextFieldSize() : int
       {
-         if(rendererData.useWideTextField && !rendererData.isCondition)
+         if(rendererData.useWideTextField)
          {
             return descTF.width * DESC_WIDTH_SCALE >> 0;
          }

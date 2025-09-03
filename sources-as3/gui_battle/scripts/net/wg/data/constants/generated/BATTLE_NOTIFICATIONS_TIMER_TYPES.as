@@ -124,6 +124,8 @@ package net.wg.data.constants.generated
       public static const WARNING_VIEW:String = "warningView";
       
       public static const CRITICAL_VIEW:String = "criticalView";
+      
+      public static const TARGET_DESIGNATOR_SPOTTED_MARKER:String = "targetDesignator";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_TYPES()

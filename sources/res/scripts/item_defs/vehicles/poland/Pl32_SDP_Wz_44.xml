@@ -1946,9 +1946,8 @@
 				</chassis>
 			</unlocks>
 			<weight>8000</weight>
-			<maxLoad>35000</maxLoad>
 			<terrainResistance>
-				1.2 1.6 2.3
+				1.1 1.4 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>45500</brakeForce>
@@ -3549,7 +3548,6 @@
 			<level>6</level>
 			<price>15800</price>
 			<weight>8000</weight>
-			<maxLoad>38000</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.1
 				<!--BW_String-->
@@ -5187,7 +5185,7 @@
 					<maxAmmo>44</maxAmmo>
 					<unlocks>
 						<gun>
-							_100mm_DAP
+							_100mm_DAP_44
 							<cost>13500</cost>
 						</gun>
 					</unlocks>
@@ -5201,7 +5199,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.3
+						7.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5379,7 +5377,7 @@
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
 				</_90mm_wz_39_90>
-				<_100mm_DAP>
+				<_100mm_DAP_44>
 					shared
 					<maxAmmo>44</maxAmmo>
 					<unlocks>
@@ -5575,7 +5573,7 @@
 						<density>105.805191 98.628166</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_100mm_DAP>
+				</_100mm_DAP_44>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl32_SDP_Wz_44/normal/lod0/Turret_01.model</undamaged>
@@ -5634,15 +5632,6 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<N2_C>
-			shared
-			<unlocks>
-				<radio>
-					RKB_C
-					<cost>620</cost>
-				</radio>
-			</unlocks>
-		</N2_C>
 		<RKB_C>shared</RKB_C>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -5663,19 +5652,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1288
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

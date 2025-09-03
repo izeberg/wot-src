@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/F135_gunsleeve_woodpecker/normal/lod3/attachment</parent>
+	<visibilityBox>
+		<min>-0.286839 -0.313143 -1.869990</min>
+		<max>0.212510 0.197995 1.842984</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/F135_gunsleeve_woodpecker/normal/lod2/attachment</nodefullVisual>
+</root>

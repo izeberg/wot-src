@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.480591 0.000000 -1.050014</min>
+		<max>1.484502 0.068181 1.050014</max>
+	</visibilityBox>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_062_BureauFillingSet/normal/lod1/hv4_062_BureauFillingSet_02</parent>
+	<extent>60.000000</extent>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_062_BureauFillingSet/normal/lod0/hv4_062_BureauFillingSet_02</nodefullVisual>
+</root>

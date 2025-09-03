@@ -123,6 +123,7 @@ package net.wg.gui.lobby.menu
       {
          super.configUI();
          this.copyright.addEventListener(CopyrightEvent.TO_LEGAL,this.onCopyrightToLegalHandler);
+         this.copyright.addEventListener(CopyrightEvent.TO_REPORT_CONTENT,this.onReportContentHandler);
          this.copyright.addEventListener(Event.CHANGE,this.onCopyrightChangeHandler);
          TextFieldEx.setVerticalAlign(this.versionTF,TextFieldEx.VALIGN_BOTTOM);
          this.versionTF.alpha = TEXT_ALPHA;
@@ -155,6 +156,7 @@ package net.wg.gui.lobby.menu
          App.utils.data.cleanupDynamicObject(this._btns);
          this._btns = null;
          this.copyright.removeEventListener(CopyrightEvent.TO_LEGAL,this.onCopyrightToLegalHandler);
+         this.copyright.removeEventListener(CopyrightEvent.TO_REPORT_CONTENT,this.onReportContentHandler);
          this.copyright.removeEventListener(Event.CHANGE,this.onCopyrightChangeHandler);
          this.copyright.dispose();
          this.copyright = null;
@@ -300,9 +302,9 @@ package net.wg.gui.lobby.menu
          this.copyright.visible = param1;
       }
       
-      public function as_setCopyright(param1:String, param2:String) : void
+      public function as_setCopyright(param1:String, param2:String, param3:String) : void
       {
-         this.copyright.updateLabel(param1,param2);
+         this.copyright.updateLabel(param1,param2,param3);
          this.updateCopyrightPos();
       }
       
@@ -405,6 +407,11 @@ package net.wg.gui.lobby.menu
       private function onCopyrightToLegalHandler(param1:CopyrightEvent) : void
       {
          showLegalS();
+      }
+      
+      private function onReportContentHandler(param1:CopyrightEvent) : void
+      {
+         toReportContentS();
       }
       
       private function onCopyrightChangeHandler(param1:Event) : void

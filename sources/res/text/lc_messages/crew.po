@@ -154,6 +154,83 @@ msgstr ""
 "Free perk reset or autoselection of untrained perks for all crew members on "
 "your account"
 
+msgid "crewInfoTooltip/accelerateTraining"
+msgstr "Accelerate Crew Training is enabled"
+
+msgid "crewInfoTooltip/efficiencyBonus/title"
+msgstr "Efficiency bonus: {{@ style (color $color)}}+{{value}}%{{/}}"
+
+msgid "crewInfoTooltip/lowEfficiency/title"
+msgstr "Perk efficiency"
+
+msgid "crewInfoTooltip/penalty/description"
+msgstr ""
+"Perks are unavailable because the crew member is not trained for this "
+"vehicle."
+
+msgid "crewInfoTooltip/penalty/specialization"
+msgstr "Specialization:"
+
+msgid "crewInfoTooltip/penalty/title"
+msgstr "Perks Unavailable"
+
+msgid "crewInfoTooltip/perksBlock/bonus"
+msgstr "Bonus perks:"
+
+msgid "crewInfoTooltip/perksBlock/major"
+msgstr "Major qualification perks:"
+
+msgid "crewInfoTooltip/specialization/nation/china"
+msgstr "(China)"
+
+msgid "crewInfoTooltip/specialization/nation/czech"
+msgstr "(Czechoslovakia)"
+
+msgid "crewInfoTooltip/specialization/nation/france"
+msgstr "(France)"
+
+msgid "crewInfoTooltip/specialization/nation/germany"
+msgstr "(Germany)"
+
+msgid "crewInfoTooltip/specialization/nation/italy"
+msgstr "(Italy)"
+
+msgid "crewInfoTooltip/specialization/nation/japan"
+msgstr "(Japan)"
+
+msgid "crewInfoTooltip/specialization/nation/poland"
+msgstr "(Poland)"
+
+msgid "crewInfoTooltip/specialization/nation/sweden"
+msgstr "(Sweden)"
+
+msgid "crewInfoTooltip/specialization/nation/uk"
+msgstr "(U.K.)"
+
+msgid "crewInfoTooltip/specialization/nation/usa"
+msgstr "(U.S.A.)"
+
+msgid "crewInfoTooltip/specialization/nation/ussr"
+msgstr "(U.S.S.R.)"
+
+msgid "crewInfoTooltip/specialization/vehicleType/AT-SPG"
+msgstr "All Premium tank destroyers {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/SPG"
+msgstr "All Premium SPGs {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/heavyTank"
+msgstr "All Premium heavy tanks {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/lightTank"
+msgstr "All Premium light tanks {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/mediumTank"
+msgstr "All Premium medium tanks {{nation}}"
+
+msgid "dogPawTooltip/details/body"
+msgstr "Details"
+
 msgid "filter/group/details/title"
 msgstr "Details"
 

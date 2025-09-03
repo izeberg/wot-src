@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>11</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<F01_RenaultFT>
@@ -262,6 +262,9 @@
 		<F10_AMX_50B>
 			<row>4</row>
 			<column>10</column>
+			<lines>
+				<F136_AMX_67_Imbattable/>
+			</lines>
 		</F10_AMX_50B>
 		<F82_AMX_M4_Mle1949_Ter>
 			<row>6</row>
@@ -270,6 +273,9 @@
 		<F18_Bat_Chatillon25t>
 			<row>8</row>
 			<column>10</column>
+			<lines>
+				<F135_AS_XX_40_t/>
+			</lines>
 		</F18_Bat_Chatillon25t>
 		<F88_AMX_13_105>
 			<row>9</row>
@@ -279,5 +285,13 @@
 			<row>10</row>
 			<column>10</column>
 		</F108_Panhard_EBR_105>
+		<F135_AS_XX_40_t>
+			<row>8</row>
+			<column>11</column>
+		</F135_AS_XX_40_t>
+		<F136_AMX_67_Imbattable>
+			<row>4</row>
+			<column>11</column>
+		</F136_AMX_67_Imbattable>
 	</nodes>
 </root>

@@ -84,6 +84,18 @@
 			<description>_(#manual:chapter-5/lesson-5/description)</description>
 		</lesson>
 		<lesson>
+			<id>108</id>
+			<num>
+				5.15
+				<!--BW_String-->
+			</num>
+			<template>hints_page</template>
+			<background>../maps/icons/manual/backgrounds/armor_flashlight.png</background>
+			<title>_(#manual:chapter-5/lesson-15/title)</title>
+			<description>_(#manual:chapter-5/lesson-15/description)</description>
+			<new>True</new>
+		</lesson>
+		<lesson>
 			<id>44</id>
 			<num>
 				5.6

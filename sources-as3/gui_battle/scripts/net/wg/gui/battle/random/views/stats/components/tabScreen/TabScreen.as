@@ -156,7 +156,7 @@ package net.wg.gui.battle.random.views.stats.components.tabScreen
       
       protected function updateCurrentTab() : void
       {
-         var _loc1_:* = undefined;
+         var _loc1_:String = null;
          var _loc3_:Boolean = false;
          _loc1_ = this.getTabDataAlias(this.tabs.selectedIndex);
          var _loc2_:Boolean = _loc1_ == STATS_TAB_ALIAS;
@@ -270,7 +270,7 @@ package net.wg.gui.battle.random.views.stats.components.tabScreen
          this.updateStage();
       }
       
-      public function updateStage() : *
+      public function updateStage() : void
       {
          var _loc1_:int = this._stageWidth >> 1;
          var _loc2_:int = 0;

@@ -1,0 +1,5 @@
+
+
+class WT_BATTLE_NOTIFICATIONS_TIMER_TYPES(object):
+    WT_HYPERION_WARNING_FIRING = 'wtHyperionFiring'
+    WT_HYPERION_WARNING_CHARGING = 'wtHyperionCharging'

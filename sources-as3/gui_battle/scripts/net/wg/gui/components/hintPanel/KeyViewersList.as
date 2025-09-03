@@ -4,6 +4,7 @@ package net.wg.gui.components.hintPanel
    import flash.display.Sprite;
    import flash.utils.getDefinitionByName;
    import net.wg.data.constants.Linkages;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.gui.components.controls.Image;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
@@ -64,44 +65,43 @@ package net.wg.gui.components.hintPanel
          this._keyClass = null;
       }
       
-      public function setKeys(param1:Array, param2:Array) : void
+      public function isDisposed() : Boolean
       {
-         var _loc4_:Number = NaN;
-         var _loc5_:Boolean = false;
-         var _loc6_:int = 0;
-         var _loc7_:String = null;
-         var _loc8_:String = null;
-         var _loc9_:KeyViewer = null;
-         var _loc10_:Image = null;
+         return this._disposed;
+      }
+      
+      public function setKeys(param1:Vector.<IngameDetailsKeyVO>) : void
+      {
+         var _loc3_:Number = NaN;
+         var _loc4_:Boolean = false;
+         var _loc5_:IngameDetailsKeyVO = null;
+         var _loc6_:KeyViewer = null;
+         var _loc7_:Image = null;
          this.clearKeys();
-         var _loc3_:int = param2.length;
-         if(_loc3_ > 0)
+         var _loc2_:int = param1.length;
+         if(_loc2_ > 0)
          {
-            _loc4_ = 0;
-            _loc5_ = true;
-            _loc6_ = 0;
-            while(_loc6_ < _loc3_)
+            _loc3_ = 0;
+            _loc4_ = true;
+            for each(_loc5_ in param1)
             {
-               _loc7_ = param2[_loc6_];
-               _loc8_ = param1[_loc6_];
-               _loc9_ = new this._keyClass();
-               _loc9_.keySideOffset = this._keySideOffset;
-               _loc9_.setKey(_loc8_,_loc7_);
-               _loc9_.x = _loc4_ >> 0;
-               _loc4_ += _loc9_.width + this._keyGap;
-               if(!_loc5_)
+               _loc6_ = new this._keyClass();
+               _loc6_.keySideOffset = this._keySideOffset;
+               _loc6_.setKey(_loc5_);
+               _loc6_.x = _loc3_ >> 0;
+               _loc3_ += _loc6_.width + this._keyGap;
+               if(!_loc4_)
                {
-                  _loc10_ = new Image();
-                  _loc10_.source = RES_ICONS.MAPS_ICONS_LIBRARY_HINT_PLUS;
-                  _loc10_.x = _loc9_.x - (this._keyGap + PLUS_SIZE >> 1);
-                  _loc10_.y = _loc9_.height - PLUS_SIZE >> 1;
-                  this._pluses.push(_loc10_);
-                  addChild(_loc10_);
+                  _loc7_ = new Image();
+                  _loc7_.source = RES_ICONS.MAPS_ICONS_LIBRARY_HINT_PLUS;
+                  _loc7_.x = _loc6_.x - (this._keyGap + PLUS_SIZE >> 1);
+                  _loc7_.y = _loc6_.height - PLUS_SIZE >> 1;
+                  this._pluses.push(_loc7_);
+                  addChild(_loc7_);
                }
-               _loc5_ = false;
-               this._keys.push(_loc9_);
-               addChild(_loc9_);
-               _loc6_++;
+               _loc4_ = false;
+               this._keys.push(_loc6_);
+               addChild(_loc6_);
             }
             cacheAsBitmap = true;
             blendMode = BlendMode.SCREEN;
@@ -124,11 +124,6 @@ package net.wg.gui.components.hintPanel
       public function set keySideOffset(param1:int) : void
       {
          this._keySideOffset = param1;
-      }
-      
-      public function isDisposed() : Boolean
-      {
-         return this._disposed;
       }
    }
 }

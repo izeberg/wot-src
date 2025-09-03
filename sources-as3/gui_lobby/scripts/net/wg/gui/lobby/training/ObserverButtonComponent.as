@@ -107,8 +107,11 @@ package net.wg.gui.lobby.training
       override protected function onDispose() : void
       {
          this.button.removeEventListener(ButtonEvent.CLICK,this.onButtonClickHandler);
-         this._tooltipViewer.dispose();
-         this._tooltipViewer = null;
+         if(this._tooltipViewer)
+         {
+            this._tooltipViewer.dispose();
+            this._tooltipViewer = null;
+         }
          this.icon.dispose();
          this.icon = null;
          this.button.dispose();

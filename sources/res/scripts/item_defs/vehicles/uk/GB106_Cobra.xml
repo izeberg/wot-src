@@ -1657,7 +1657,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>33700</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
@@ -3381,7 +3380,7 @@
 	<turrets0>
 		<Turret_1_GB106_Cobra>
 			<userString>#gb_vehicles:Turret_1_GB106_Cobra</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>61000</price>
 			<notInShop>true</notInShop>
@@ -3449,6 +3448,7 @@
 						<armor_16>
 							20
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_16>
 						<gun>45</gun>
 					</armor>

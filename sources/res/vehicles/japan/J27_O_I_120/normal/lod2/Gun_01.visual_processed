@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>-0.000001 0.006720 1.183260</row3>
+							<row3>-0.000001 0.006720 1.516772</row3>
 						</transform>
 					</node>
 					<node>
@@ -65,11 +65,11 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_01Shape.vertices</vertices>
-			<primitive>gun_01Shape.indices</primitive>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -95,7 +95,7 @@
 					</property>
 					<property>
 						colorIdMap
-						<Texture>vehicles/japan/J27_O_I_120/O_I_120_guns_ID.dds</Texture>
+						<Texture>vehicles/japan/J27_O_I_120/O_I_120_guns_01_ID.dds</Texture>
 					</property>
 					<property>
 						alphaTestEnable
@@ -106,14 +106,14 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.000000 -0.055492 -2.038371</groupOrigin>
+				<groupOrigin>-0.000000 -0.055491 -2.206417</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.235952 -0.415124 -0.109094</min>
-		<max>0.235951 0.304140 4.185835</max>
+		<min>-0.235952 -0.415123 -0.109094</min>
+		<max>0.235951 0.304140 4.521927</max>
 	</boundingBox>
-	<geometrySize>15908</geometrySize>
+	<geometrySize>8240</geometrySize>
 </root>

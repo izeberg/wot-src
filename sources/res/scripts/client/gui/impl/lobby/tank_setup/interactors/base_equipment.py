@@ -14,6 +14,10 @@ class BaseEquipmentInteractor(BaseInteractor):
         self._resetPlayerLayout()
         self._resetInstalledIndices()
 
+    @property
+    def affectsTTC(self):
+        return True
+
     def getPlayerLayout(self):
         return self._playerLayout
 

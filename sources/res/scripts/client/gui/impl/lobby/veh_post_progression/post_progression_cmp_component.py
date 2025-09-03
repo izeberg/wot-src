@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from Event import Event
 from gui.impl.gen import R
@@ -61,7 +62,7 @@ class PostProgressionCmpComponentView(PostProgressionBaseComponentView):
         self.viewModel.compareControl.onResetAction -= self.__onResetAction
         super(PostProgressionCmpComponentView, self)._removeListeners()
 
-    def _updateVehicle(self, isReset=False, *args, **kwargs):
+    def _updateVehicle(self, isReset=False, **kwargs):
         mainCfgView = cmp_helpers.getCmpConfiguratorMainView()
         self._vehicle = mainCfgView.getInitialVehicleData()[0] if isReset else mainCfgView.getCurrentVehicle()
         self._selectionProvider.setPostProgression(self._vehicle.postProgression.clone())

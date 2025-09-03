@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>13400</weight>
-		<maxHealth>656</maxHealth>
+		<maxHealth>720</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>160</maxHealth>
 			<maxRegenHealth>110</maxRegenHealth>
@@ -2251,14 +2251,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>23000</maxLoad>
 			<terrainResistance>
-				1.2 1.3 2.1
+				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
-			<brakeForce>23000</brakeForce>
+			<brakeForce>23300</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>25</rotationSpeed>
+			<rotationSpeed>32</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -4098,14 +4097,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>27000</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>23000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -5977,7 +5975,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3500</weight>
-			<maxHealth>124</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -6039,13 +6037,16 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>5</reloadTime>
+					<reloadTime>
+						4.1
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.13
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6058,7 +6059,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -6214,10 +6215,10 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>12</reloadTime>
+					<reloadTime>11</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.15
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -6227,7 +6228,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -7207,12 +7208,16 @@
 			<price>16100</price>
 			<unlocks>
 				<vehicle>
+					Cz19_Vz_44_1
+					<cost>56600</cost>
+				</vehicle>
+				<vehicle>
 					Cz05_T34_100
 					<cost>57950</cost>
 				</vehicle>
 				<vehicle>
-					Cz19_Vz_44_1
-					<cost>56600</cost>
+					Cz23_Skoda_T_17
+					<cost>50750</cost>
 				</vehicle>
 			</unlocks>
 			<armor>
@@ -7229,7 +7234,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>3500</weight>
-			<maxHealth>164</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>36</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -7279,7 +7284,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.416667 10 0.419444 9.8 0.422222 9 0.425 8.8 0.427778 8.2 0.441667 8 0.558333 8 0.572222 8.2 0.575 8.8 0.577778 9 0.580556 9.8 0.583333 10 1 10
+							0.00000 10.00 0.41667 10.00 0.42778 8.00 0.57222 8.00 0.58333 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7288,13 +7293,10 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						4.7
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>4</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -7310,7 +7312,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -7469,7 +7471,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.416667 10 0.419444 9.8 0.422222 9 0.425 8.8 0.427778 8.2 0.441667 8 0.558333 8 0.572222 8.2 0.575 8.8 0.577778 9 0.580556 9.8 0.583333 10 1 10
+							0.00000 10.00 0.41667 10.00 0.42778 8.00 0.57222 8.00 0.58333 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8485,85 +8487,53 @@
 		</Turret_2_Cz08_T_25>
 	</turrets0>
 	<engines>
-		<Skoda_V12_19_8_liter_450>
+		<Skoda_V12_19_8_liter_druhy_model>
 			shared
 			<unlocks>
 				<engine>
-					Skoda_V12_19_8_liter_500
+					Skoda_V12_19_8_liter_treti_model
 					<cost>5600</cost>
 				</engine>
 			</unlocks>
-		</Skoda_V12_19_8_liter_450>
-		<Skoda_V12_19_8_liter_500>
-			shared
-			<unlocks>
-				<vehicle>
-					Cz23_Skoda_T_17
-					<cost>50750</cost>
-				</vehicle>
-			</unlocks>
-		</Skoda_V12_19_8_liter_500>
+		</Skoda_V12_19_8_liter_druhy_model>
+		<Skoda_V12_19_8_liter_treti_model>shared</Skoda_V12_19_8_liter_treti_model>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<Radiostanice_vz_37>
-			shared
-			<unlocks>
-				<radio>
-					Radiostanice_Fu_7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</Radiostanice_vz_37>
-		<Radiostanice_Fu_7>
-			shared
-			<unlocks>
-				<radio>
-					Radiostanice_Fu_12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</Radiostanice_Fu_7>
 		<Radiostanice_Fu_12>shared</Radiostanice_Fu_12>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Skoda_V12_19_8_liter_450>
-					<smplEnginePower>
-						475.7765
-						<!--BW_String-->
-					</smplEnginePower>
+				<Skoda_V12_19_8_liter_druhy_model>
+					<smplEnginePower>500</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
-				</Skoda_V12_19_8_liter_450>
-				<Skoda_V12_19_8_liter_500>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+				</Skoda_V12_19_8_liter_druhy_model>
+				<Skoda_V12_19_8_liter_treti_model>
+					<smplEnginePower>550</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
-				</Skoda_V12_19_8_liter_500>
+				</Skoda_V12_19_8_liter_treti_model>
 			</engines>
 			<chassis>
 				<Chassis_Cz08_T_25>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.16905
+								0.15295
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

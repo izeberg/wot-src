@@ -30,7 +30,7 @@ class ChapterType(Enum):
 
 
 class BattlePassProgressionsViewModel(CommonViewModel):
-    __slots__ = ('onClose', 'onActionClick', 'onTakeClick', 'onTakeAllClick', 'onOpenShopClick',
+    __slots__ = ('onClose', 'onChapterActivate', 'onTakeClick', 'onTakeAllClick', 'onOpenShopClick',
                  'onAboutClick', 'onPointsInfoClick', 'onFinishedAnimation', 'onLevelsAnimationFinished',
                  'onStyleBonusPreview', 'onChapterChoice', 'onViewLoaded')
 
@@ -312,7 +312,7 @@ class BattlePassProgressionsViewModel(CommonViewModel):
         self._addNumberProperty('seasonNum', 0)
         self._addNumberProperty('tankmenScreenID', 0)
         self.onClose = self._addCommand('onClose')
-        self.onActionClick = self._addCommand('onActionClick')
+        self.onChapterActivate = self._addCommand('onChapterActivate')
         self.onTakeClick = self._addCommand('onTakeClick')
         self.onTakeAllClick = self._addCommand('onTakeAllClick')
         self.onOpenShopClick = self._addCommand('onOpenShopClick')

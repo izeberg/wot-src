@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_tiled_atlas_global.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						atlasAlbedoHeight
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_AM.dds</Texture>
+					</property>
+					<property>
+						atlasBlend
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_Cliff_07_Atlas_Blend.png</Texture>
+					</property>
+					<property>
+						atlasMetallicAO
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_MAO.dds</Texture>
+					</property>
+					<property>
+						atlasNormalGlossSpec
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_GBMT.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Environment/hd_env_EU_005_Cliff_rocks/hd_env_EU_005_Cliff_rocks_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_atlasIndexes
+						<Vector4>0.000000 3.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>2.000000 2.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.875000 0.875000 0.875000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.985000 0.985000 0.985000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tileUVScale
+						<Vector4>16.000000 16.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EU_005_Cliff_rocks/hd_env_EU_005_Cliff_Cliff_07_NM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>33.484447 5.899121 -12.451628</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_tiled_atlas_global.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						atlasAlbedoHeight
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_AM.dds</Texture>
+					</property>
+					<property>
+						atlasBlend
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_Cliff_06_Atlas_Blend.png</Texture>
+					</property>
+					<property>
+						atlasMetallicAO
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_MAO.dds</Texture>
+					</property>
+					<property>
+						atlasNormalGlossSpec
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_GBMT.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Environment/hd_env_EU_005_Cliff_rocks/hd_env_EU_005_Cliff_rocks_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_atlasIndexes
+						<Vector4>0.000000 3.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>2.000000 2.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.880000 0.880000 0.880000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.985000 0.985000 0.985000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tileUVScale
+						<Vector4>16.000000 16.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EU_005_Cliff_rocks/hd_env_EU_005_Cliff_Cliff_06_NM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>18.966698 12.450840 -5.230769</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled_atlas_global.fx</fx>
+					<materialKind>111</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						atlasAlbedoHeight
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_AM.dds</Texture>
+					</property>
+					<property>
+						atlasBlend
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_Cliff_02_Atlas_Blend.png</Texture>
+					</property>
+					<property>
+						atlasMetallicAO
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_MAO.dds</Texture>
+					</property>
+					<property>
+						atlasNormalGlossSpec
+						<Texture>content/Environment/00_Atlases/hd_env_EU_005_Cliff_rocks_Atlas_GBMT.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Environment/hd_env_EU_005_Cliff_rocks/hd_env_EU_005_Cliff_rocks_02_DM.dds</Texture>
+					</property>
+					<property>
+						g_atlasIndexes
+						<Vector4>0.000000 3.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_atlasSizes
+						<Vector4>2.000000 2.000000 1.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.040000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.880000 0.880000 0.880000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.985000 0.985000 0.985000 1.000000</Vector4>
+					</property>
+					<property>
+						g_tileUVScale
+						<Vector4>32.000000 32.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						globalTex
+						<Texture>content/Environment/hd_env_EU_005_Cliff_rocks/hd_env_EU_005_Cliff_Cliff_02_NM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>29.821377 5.412140 -28.194239</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>5.425571 -7.779557 -57.019043</min>
+		<max>54.400547 19.181116 11.840693</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>36876</geometrySize>
+</root>

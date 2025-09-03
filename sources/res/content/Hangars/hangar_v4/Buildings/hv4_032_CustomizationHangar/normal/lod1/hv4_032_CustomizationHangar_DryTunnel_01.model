@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/normal/lod2/hv4_032_CustomizationHangar_DryTunnel_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-10.049096 -0.000002 -6.099587</min>
+		<max>10.049048 8.235306 6.099588</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/normal/lod1/hv4_032_CustomizationHangar_DryTunnel_01</nodefullVisual>
+</root>

@@ -10,6 +10,8 @@ package net.wg.gui.lobby.personalMissions.data
       
       public var pawnedSheetsText:String = "";
       
+      public var visible:Boolean = false;
+      
       public function SheetsBlockVO(param1:Object)
       {
          super(param1);

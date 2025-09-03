@@ -4,6 +4,7 @@ package net.wg.gui.components.hintPanel
    import flash.display.Sprite;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
    public class KeyViewer extends Sprite implements IDisposable
@@ -44,9 +45,15 @@ package net.wg.gui.components.hintPanel
       
       public var buttonBgMc:Sprite = null;
       
+      public var buttonLongBgMc:KeyViewerLongKeyBg = null;
+      
       public var customButtonIcon:MovieClip = null;
       
       private var _disposed:Boolean = false;
+      
+      private var _width:int = 0;
+      
+      private var _height:int = 0;
       
       private var _keySideOffset:int = 17;
       
@@ -61,37 +68,61 @@ package net.wg.gui.components.hintPanel
          this._disposed = true;
          this.keyTF = null;
          this.buttonBgMc = null;
+         this.buttonLongBgMc.dispose();
+         this.buttonLongBgMc = null;
          this.customButtonIcon = null;
-      }
-      
-      public function setKey(param1:String, param2:String) : void
-      {
-         var _loc3_:Boolean = false;
-         _loc3_ = BUTTONS_WITH_CUSTOM_ICON.indexOf(param1) >= 0;
-         this.customButtonIcon.visible = _loc3_;
-         this.keyTF.visible = !_loc3_;
-         this.buttonBgMc.visible = !_loc3_;
-         if(_loc3_)
-         {
-            this.customButtonIcon.gotoAndStop(param1);
-         }
-         else
-         {
-            this.keyTF.x = this._keySideOffset;
-            this.keyTF.text = param2;
-            this.keyTF.width = this.keyTF.textWidth + TEXTFIELD_PADDING | 0;
-            this.buttonBgMc.width = this.keyTF.width + (this._keySideOffset << 1);
-         }
-      }
-      
-      public function set keySideOffset(param1:int) : void
-      {
-         this._keySideOffset = param1;
       }
       
       public function isDisposed() : Boolean
       {
          return this._disposed;
+      }
+      
+      public function setKey(param1:IngameDetailsKeyVO) : void
+      {
+         var _loc2_:Boolean = BUTTONS_WITH_CUSTOM_ICON.indexOf(param1.vKey) >= 0;
+         this.customButtonIcon.visible = _loc2_;
+         this.keyTF.visible = !_loc2_;
+         this.buttonBgMc.visible = !_loc2_ && !param1.isLong;
+         this.buttonLongBgMc.visible = !_loc2_ && param1.isLong;
+         if(_loc2_)
+         {
+            this.customButtonIcon.gotoAndStop(param1.vKey);
+            this._width = this.customButtonIcon.width;
+            this._height = this.customButtonIcon.height;
+         }
+         else
+         {
+            this.keyTF.x = this._keySideOffset;
+            this.keyTF.text = param1.keyName;
+            this.keyTF.width = this.keyTF.textWidth + TEXTFIELD_PADDING | 0;
+            this._width = this.keyTF.width + (this._keySideOffset << 1);
+            if(param1.isLong)
+            {
+               this.buttonLongBgMc.setWidth(this._width);
+               this._height = this.buttonLongBgMc.height;
+            }
+            else
+            {
+               this.buttonBgMc.width = this._width;
+               this._height = this.buttonBgMc.height;
+            }
+         }
+      }
+      
+      override public function get width() : Number
+      {
+         return this._width;
+      }
+      
+      override public function get height() : Number
+      {
+         return this._height;
+      }
+      
+      public function set keySideOffset(param1:int) : void
+      {
+         this._keySideOffset = param1;
       }
    }
 }

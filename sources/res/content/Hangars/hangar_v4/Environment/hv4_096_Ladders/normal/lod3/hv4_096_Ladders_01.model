@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_096_Ladders/normal/lod4/hv4_096_Ladders_01</parent>
+	<extent>110.000000</extent>
+	<visibilityBox>
+		<min>-0.264500 -0.000000 -0.329868</min>
+		<max>0.264500 0.510110 0.329868</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_096_Ladders/normal/lod3/hv4_096_Ladders_01</nodefullVisual>
+</root>

@@ -46,6 +46,30 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/wood_board_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
@@ -62,10 +86,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_air_balloons.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_balloons_blue.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_balloons_red.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_balloons_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_butterfly_red.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/112_eiffel_tower_ctf_newspapers.vfx</fn_effect_bin>
@@ -181,9 +201,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_balloons.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_newspapers.eff</fn_effect_bin>
@@ -309,6 +328,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_112_eiffel_tower_ctf_playtest.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_02.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_solid.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -368,10 +391,53 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/plane_engine_sc_all.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_ashes_huge_area.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_bridge_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_building_hit_01.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_building_hit_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_collapse_dust.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_fires_medium.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_fires_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_ground_smoke_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_outworld_explosion.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_smoke_after.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/112_eiffel_tower_ctf_V-1_trail.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_ashes_huge_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_bridge_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_building_hit_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_building_hit_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_collapse_dust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_fires_medium.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_fires_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_ground_smoke_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_outworld_explosion.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_smoke_after.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/random_events/112_eiffel_tower_ctf_V-1_trail.eff</fn_effect_bin>
 		<preloadVisual>particles/mesh_particles/wood_board_03.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/vfx_m_newspapers_02.visual</preloadVisual>
+		<preloadVisual>particles/content_deferred/GFX_models/environment/ngm_destructions/112_eiffel_tower/normal/lod0/eiffel_tower_112_bridge_destruction_vat.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld002_MiddleWoodShed.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_112_04_TrocaderoFountain_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_112_04_TrocaderoFountain_01_2.vfx</fn_effect_bin>
@@ -384,10 +450,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bldSU_001_Outhouse_04.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_air_balloons.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_balloons_blue.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_balloons_red.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_balloons_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_butterfly_red.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_butterfly_white.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/112_eiffel_tower_ctf_newspapers.vfx</fn_effect_bin>
@@ -503,9 +565,8 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bldSU_001_Outhouse_04.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_balloons.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_red.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_butterfly_white.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/112_eiffel_tower_ctf_newspapers.eff</fn_effect_bin>

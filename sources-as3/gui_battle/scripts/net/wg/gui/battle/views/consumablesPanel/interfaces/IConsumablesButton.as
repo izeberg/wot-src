@@ -24,8 +24,6 @@ package net.wg.gui.battle.views.consumablesPanel.interfaces
       
       function clearColorTransform() : void;
       
-      function set noBack(param1:Boolean) : void;
-      
       function set activated(param1:Boolean) : void;
       
       function clearCoolDownTime() : void;

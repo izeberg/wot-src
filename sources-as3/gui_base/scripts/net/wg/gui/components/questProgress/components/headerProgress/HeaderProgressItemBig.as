@@ -42,12 +42,13 @@ package net.wg.gui.components.questProgress.components.headerProgress
       
       override protected function onDataUpdate(param1:IHeaderProgressData, param2:int) : void
       {
+         var _loc3_:int = 0;
          super.onDataUpdate(param1,param2);
          this._conditionGroup.dataProvider = new DataProvider(param1.conditions);
          this._conditionGroup.validateNow();
          valueTitleTf.visible = param1.conditions.length == 1;
          App.utils.commons.updateTextFieldSize(headerTf,true,false);
-         var _loc3_:int = headerTf.width + SEPARATOR_GAP + HEADER_TF_GAP + this._conditionGroup.width + CONDITION_GROUP_X;
+         _loc3_ = headerTf.width + SEPARATOR_GAP + HEADER_TF_GAP + this._conditionGroup.width + CONDITION_GROUP_X;
          if(valueTitleTf.visible)
          {
             _loc3_ += valueTitleTf.width;

@@ -1,4 +1,5 @@
-import logging
+import logging, typing, nations
+from shared_utils import CONST_CONTAINER, findFirst
 from constants import SHELL_TYPES, SHELL_MECHANICS_TYPE
 from gui.Scaleform.genConsts.FITTING_TYPES import FITTING_TYPES
 from gui.Scaleform.genConsts.STORE_CONSTANTS import STORE_CONSTANTS
@@ -8,10 +9,13 @@ from gui.impl.gen import R
 from gui.shared.items_parameters.params_cache import g_paramsCache
 from gui.shared.utils.functions import replaceHyphenToUnderscore
 from gui.shared.gui_items.fitting_item import FittingItem, ICONS_MASK
+from gui.shared.gui_items.vehicle_mechanic_item import extendMechanics, VEHICLE_MECHANICS_GUI_MAP, GUN_MECHANICS_OVERRIDES, CHASSIS_MECHANICS_OVERRIDES, ENGINE_MECHANICS_OVERRIDES
 from gui.shared.utils import GUN_CLIP, GUN_CAN_BE_CLIP, GUN_AUTO_RELOAD, GUN_CAN_BE_AUTO_RELOAD, GUN_DUAL_GUN, GUN_CAN_BE_DUAL_GUN, GUN_AUTO_SHOOT, GUN_CAN_BE_AUTO_SHOOT, GUN_CAN_BE_TWIN_GUN, GUN_TWIN_GUN
 from gui.shared.money import Currency
-import nations
 from items import vehicles as veh_core
+from vehicles.mechanics.mechanic_constants import VehicleMechanic
+if typing.TYPE_CHECKING:
+    from items.vehicles import VehicleDescr
 MODULE_TYPES_ORDER = ('vehicleGun', 'vehicleTurret', 'vehicleEngine', 'vehicleChassis',
                       'vehicleRadio', 'vehicleFuelTank')
 MODULE_TYPES_ORDER_INDICES = dict((n, i) for i, n in enumerate(MODULE_TYPES_ORDER))
@@ -19,10 +23,21 @@ SHELL_TYPES_ORDER = (
  SHELL_TYPES.ARMOR_PIERCING, SHELL_TYPES.ARMOR_PIERCING_CR,
  SHELL_TYPES.HOLLOW_CHARGE, SHELL_TYPES.HIGH_EXPLOSIVE, SHELL_TYPES.SMOKE)
 SHELL_TYPES_ORDER_INDICES = dict((n, i) for i, n in enumerate(SHELL_TYPES_ORDER))
+
+class ModulesIconNames(CONST_CONTAINER):
+    WHEELED_CHASSIS = 'wheeledChassis'
+    CHASSIS = 'chassis'
+    TURRET = 'tower'
+    GUN = 'gun'
+    ENGINE = 'engine'
+    RADIO = 'radio'
+
+
 _logger = logging.getLogger(__name__)
 
 class VehicleModule(FittingItem):
     __slots__ = ('_vehicleModuleDescriptor', )
+    _GUI_SUPPORTED_MECHANICS = set()
 
     def __init__(self, intCompactDescr, proxy=None, descriptor=None):
         super(VehicleModule, self).__init__(intCompactDescr, proxy)
@@ -30,6 +45,12 @@ class VehicleModule(FittingItem):
 
     @property
     def icon(self):
+        if not self.iconName:
+            return ''
+        return backport.image(R.images.gui.maps.icons.modules.dyn(self.iconName)())
+
+    @property
+    def iconName(self):
         return ''
 
     @property
@@ -39,8 +60,11 @@ class VehicleModule(FittingItem):
         else:
             return super(VehicleModule, self).descriptor
 
-    def _sortByType(self, other):
-        return MODULE_TYPES_ORDER_INDICES[self.itemTypeName] - MODULE_TYPES_ORDER_INDICES[other.itemTypeName]
+    def getBonusIcon(self, size='small'):
+        if size == 'small':
+            return self.icon
+        bigIconName = self.iconName + 'Big'
+        return backport.image(R.images.gui.maps.icons.modules.dyn(bigIconName)())
 
     def getGUIEmblemID(self):
         return self.itemTypeName
@@ -51,18 +75,25 @@ class VehicleModule(FittingItem):
             return backport.image(resID)
         return ''
 
+    def getVehicleMechanics(self, vehDescr):
+        return set()
+
+    def getVehicleMechanicsGuiNames(self, vehDescr):
+        return {VEHICLE_MECHANICS_GUI_MAP[mechanic] for mechanic in self.getVehicleMechanics(vehDescr) if mechanic in self._GUI_SUPPORTED_MECHANICS}
+
+    def _sortByType(self, other):
+        return MODULE_TYPES_ORDER_INDICES[self.itemTypeName] - MODULE_TYPES_ORDER_INDICES[other.itemTypeName]
+
 
 class VehicleChassis(VehicleModule):
     __slots__ = ()
+    _GUI_SUPPORTED_MECHANICS = {
+     VehicleMechanic.HYDRAULIC_WHEELED_CHASSIS,
+     VehicleMechanic.HYDRAULIC_CHASSIS,
+     VehicleMechanic.TRACK_WITHIN_TRACK}
 
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.chassis.intCD
-
-    def mayInstall(self, vehicle, slotIdx=None):
-        installPossible, reason = FittingItem.mayInstall(self, vehicle, slotIdx)
-        if not installPossible and reason == 'too heavy':
-            return (False, 'too heavy chassis')
-        return (installPossible, reason)
 
     def getInstalledVehicles(self, vehicles):
         result = set()
@@ -78,6 +109,9 @@ class VehicleChassis(VehicleModule):
     def isWheeledChassis(self):
         return g_paramsCache.isChassisWheeled(self.intCD)
 
+    def isHydraulicWheeledChassis(self):
+        return g_paramsCache.isChassisHydraulic(self.intCD) and g_paramsCache.isChassisWheeled(self.intCD)
+
     def isWheeledOnSpotRotationChassis(self):
         return g_paramsCache.isChassisWheeledOnSpotRotation(self.intCD)
 
@@ -88,17 +122,10 @@ class VehicleChassis(VehicleModule):
         return g_paramsCache.isTrackWithinTrack(self.intCD)
 
     @property
-    def icon(self):
+    def iconName(self):
         if self.isWheeledChassis():
-            return RES_ICONS.MAPS_ICONS_MODULES_WHEELEDCHASSIS
-        return RES_ICONS.MAPS_ICONS_MODULES_CHASSIS
-
-    def getBonusIcon(self, size='small'):
-        if size == 'small':
-            return self.icon
-        if self.isWheeledChassis():
-            return backport.image(R.images.gui.maps.icons.modules.wheeledChassisBig())
-        return backport.image(R.images.gui.maps.icons.modules.chassisBig())
+            return ModulesIconNames.WHEELED_CHASSIS
+        return ModulesIconNames.CHASSIS
 
     def getExtraIconInfo(self, vehDescr=None):
         if self.isHydraulicChassis():
@@ -122,6 +149,18 @@ class VehicleChassis(VehicleModule):
                 return backport.image(resID)
             return ''
         return super(VehicleChassis, self).getShopIcon(size)
+
+    def getVehicleMechanics(self, vehDescr):
+        mechanics = super(VehicleChassis, self).getVehicleMechanics(vehDescr)
+        mechanicChecks = [
+         (
+          self.isHydraulicWheeledChassis(), VehicleMechanic.HYDRAULIC_WHEELED_CHASSIS),
+         (
+          self.isHydraulicChassis(), VehicleMechanic.HYDRAULIC_CHASSIS),
+         (
+          self.isTrackWithinTrack(), VehicleMechanic.TRACK_WITHIN_TRACK)]
+        extendMechanics(mechanics, {}, mechanicChecks, CHASSIS_MECHANICS_OVERRIDES)
+        return mechanics
 
     def _getShortInfoKey(self):
         return ('#menu:descriptions/{}').format(FITTING_TYPES.VEHICLE_WHEELED_CHASSIS if self.isWheeledChassis() else self.itemTypeName)
@@ -158,13 +197,8 @@ class VehicleTurret(VehicleModule):
         return result
 
     @property
-    def icon(self):
-        return RES_ICONS.MAPS_ICONS_MODULES_TOWER
-
-    def getBonusIcon(self, size='small'):
-        if size == 'small':
-            return self.icon
-        return backport.image(R.images.gui.maps.icons.modules.towerBig())
+    def iconName(self):
+        return ModulesIconNames.TURRET
 
     @property
     def isGunCarriage(self):
@@ -173,6 +207,16 @@ class VehicleTurret(VehicleModule):
 
 class VehicleGun(VehicleModule):
     __slots__ = ('_defaultAmmo', '_maxAmmo')
+    _GUI_SUPPORTED_MECHANICS = {
+     VehicleMechanic.AUTO_SHOOT_GUN,
+     VehicleMechanic.DUAL_GUN,
+     VehicleMechanic.DUAL_ACCURACY,
+     VehicleMechanic.TWIN_GUN,
+     VehicleMechanic.MAGAZINE_GUN,
+     VehicleMechanic.AUTO_LOADER_GUN_BOOST,
+     VehicleMechanic.AUTO_LOADER_GUN,
+     VehicleMechanic.DAMAGE_MUTABLE,
+     VehicleMechanic.STUN}
 
     def __init__(self, intCompactDescr, proxy=None, descriptor=None):
         super(VehicleGun, self).__init__(intCompactDescr, proxy, descriptor)
@@ -198,6 +242,15 @@ class VehicleGun(VehicleModule):
     def isAutoReloadable(self, vehicleDescr=None):
         typeToCheck = GUN_AUTO_RELOAD if vehicleDescr is not None else GUN_CAN_BE_AUTO_RELOAD
         return self.getReloadingType(vehicleDescr) == typeToCheck
+
+    def isAutoReloadableWithBoost(self, vehicleDescr=None):
+        autoLoaderGunBoost = False
+        if vehicleDescr:
+            for gun in vehicleDescr.type.getGuns():
+                if gun.compactDescr == self.intCD and gun.autoreloadHasBoost:
+                    autoLoaderGunBoost = True
+
+        return self.isAutoReloadable(vehicleDescr) and autoLoaderGunBoost
 
     def isAutoShoot(self, vehicleDescr=None):
         typeToCheck = GUN_AUTO_SHOOT if vehicleDescr is not None else GUN_CAN_BE_AUTO_SHOOT
@@ -237,13 +290,8 @@ class VehicleGun(VehicleModule):
         return self._maxAmmo
 
     @property
-    def icon(self):
-        return RES_ICONS.MAPS_ICONS_MODULES_GUN
-
-    def getBonusIcon(self, size='small'):
-        if size == 'small':
-            return self.icon
-        return backport.image(R.images.gui.maps.icons.modules.gunBig())
+    def iconName(self):
+        return ModulesIconNames.GUN
 
     @property
     def userType(self):
@@ -259,11 +307,9 @@ class VehicleGun(VehicleModule):
             return backport.image(R.images.gui.maps.icons.modules.magazineGunIcon())
         else:
             if self.isAutoReloadable(vehDescr):
-                if vehDescr:
-                    for gun in vehDescr.type.getGuns():
-                        if gun.compactDescr == self.intCD and gun.autoreloadHasBoost:
-                            return backport.image(R.images.gui.maps.icons.modules.autoLoaderGunBoost())
-
+                descriptor = self.__getDescriptor(vehDescr)
+                if descriptor.autoreloadHasBoost:
+                    return backport.image(R.images.gui.maps.icons.modules.autoLoaderGunBoost())
                 return backport.image(R.images.gui.maps.icons.modules.autoLoaderGun())
             if self.isAutoShoot(vehDescr):
                 return backport.image(R.images.gui.maps.icons.modules.autoShootGun())
@@ -281,6 +327,32 @@ class VehicleGun(VehicleModule):
         if self.isDualGun():
             return FITTING_TYPES.VEHICLE_DUAL_GUN
         return super(VehicleGun, self).getGUIEmblemID()
+
+    def getVehicleMechanics(self, vehDescr):
+        mechanics = super(VehicleGun, self).getVehicleMechanics(vehDescr)
+        mechanicChecks = [
+         (
+          self.isAutoShoot(vehDescr), VehicleMechanic.AUTO_SHOOT_GUN),
+         (
+          self.isDualGun(vehDescr), VehicleMechanic.DUAL_GUN),
+         (
+          self.hasDualAccuracy(vehDescr), VehicleMechanic.DUAL_ACCURACY),
+         (
+          self.isTwinGun(vehDescr), VehicleMechanic.TWIN_GUN),
+         (
+          self.isClipGun(vehDescr), VehicleMechanic.MAGAZINE_GUN),
+         (
+          self.isAutoReloadableWithBoost(vehDescr), VehicleMechanic.AUTO_LOADER_GUN_BOOST),
+         (
+          self.isAutoReloadable(vehDescr) and not self.isAutoReloadableWithBoost(vehDescr),
+          VehicleMechanic.AUTO_LOADER_GUN),
+         (
+          self.isDamageMutable(), VehicleMechanic.DAMAGE_MUTABLE),
+         (
+          any(shell.descriptor.hasStun for shell in self.defaultAmmo), VehicleMechanic.STUN)]
+        descriptor = self.__getDescriptor(vehDescr)
+        extendMechanics(mechanics, descriptor.mechanicsParams, mechanicChecks, GUN_MECHANICS_OVERRIDES)
+        return mechanics
 
     def _getMaxAmmo(self):
         return self.descriptor.maxAmmo
@@ -305,9 +377,17 @@ class VehicleGun(VehicleModule):
             return ('/').join((key, 'twinGun'))
         return key
 
+    def __getDescriptor(self, vehDescr=None):
+        vehicleGuns = vehDescr.type.getGuns() if vehDescr is not None else ()
+        descriptor = findFirst(lambda gun: gun.compactDescr == self.intCD, vehicleGuns)
+        return descriptor or self.descriptor
+
 
 class VehicleEngine(VehicleModule):
     __slots__ = ()
+    _GUI_SUPPORTED_MECHANICS = {
+     VehicleMechanic.TURBOSHAFT_ENGINE,
+     VehicleMechanic.ROCKET_ACCELERATION}
 
     def isInstalled(self, vehicle, slotIdx=None):
         return self.intCD == vehicle.engine.intCD
@@ -338,14 +418,12 @@ class VehicleEngine(VehicleModule):
     def hasRocketAcceleration(self):
         return g_paramsCache.hasRocketAcceleration(self.intCD)
 
-    @property
-    def icon(self):
-        return RES_ICONS.MAPS_ICONS_MODULES_ENGINE
+    def hasRechargeableNitro(self):
+        return g_paramsCache.hasRechargeableNitro(self.intCD)
 
-    def getBonusIcon(self, size='small'):
-        if size == 'small':
-            return self.icon
-        return backport.image(R.images.gui.maps.icons.modules.engineBig())
+    @property
+    def iconName(self):
+        return ModulesIconNames.ENGINE
 
     def getExtraIconInfo(self, vehDescr=None):
         if self.hasTurboshaftEngine():
@@ -354,6 +432,16 @@ class VehicleEngine(VehicleModule):
             if self.hasRocketAcceleration():
                 return RES_ICONS.MAPS_ICONS_MODULES_ROCKETACCELERATIONICON
             return
+
+    def getVehicleMechanics(self, vehDescr):
+        mechanics = super(VehicleEngine, self).getVehicleMechanics(vehDescr)
+        mechanicChecks = [
+         (
+          vehDescr.hasTurboshaftEngine, VehicleMechanic.TURBOSHAFT_ENGINE),
+         (
+          vehDescr.hasRocketAcceleration, VehicleMechanic.ROCKET_ACCELERATION)]
+        extendMechanics(mechanics, {}, mechanicChecks, ENGINE_MECHANICS_OVERRIDES)
+        return mechanics
 
 
 class VehicleFuelTank(VehicleModule):
@@ -386,13 +474,8 @@ class VehicleRadio(VehicleModule):
         return result
 
     @property
-    def icon(self):
-        return RES_ICONS.MAPS_ICONS_MODULES_RADIO
-
-    def getBonusIcon(self, size='small'):
-        if size == 'small':
-            return self.icon
-        return backport.image(R.images.gui.maps.icons.modules.radioBig())
+    def iconName(self):
+        return ModulesIconNames.RADIO
 
 
 class Shell(FittingItem):

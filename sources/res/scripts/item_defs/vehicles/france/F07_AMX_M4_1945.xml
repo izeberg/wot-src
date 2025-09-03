@@ -100,7 +100,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>37000</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1160</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -2152,14 +2152,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_AMX_M4_1945>
-			<userString>#france_vehicles:Chassis_AMX_M4_1945</userString>
+		<Chassis_F07_AMX_M4_1945>
+			<userString>#france_vehicles:Chassis_F07_AMX_M4_1945</userString>
 			<tags/>
 			<level>6</level>
 			<price>9550</price>
 			<unlocks>
 				<chassis>
-					Chassis_AMX_M4_1945_2
+					Chassis_F07_AMX_M4_1945_2
 					<cost>8500</cost>
 				</chassis>
 			</unlocks>
@@ -2168,14 +2168,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>53000</maxLoad>
 			<terrainResistance>
-				1.4 1.6 2.7
+				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>22</rotationSpeed>
+			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -4397,9 +4396,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_AMX_M4_1945>
-		<Chassis_AMX_M4_1945_2>
-			<userString>#france_vehicles:Chassis_AMX_M4_1945_2</userString>
+		</Chassis_F07_AMX_M4_1945>
+		<Chassis_F07_AMX_M4_1945_2>
+			<userString>#france_vehicles:Chassis_F07_AMX_M4_1945_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>18500</price>
@@ -4408,14 +4407,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>38</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -6637,21 +6635,27 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_AMX_M4_1945_2>
+		</Chassis_F07_AMX_M4_1945_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_AMX_M4_1945>
-			<userString>#france_vehicles:Turret_1_AMX_M4_1945</userString>
+		<Turret_1_F07_AMX_M4_1945>
+			<userString>#france_vehicles:Turret_1_F07_AMX_M4_1945</userString>
 			<tags/>
 			<level>6</level>
 			<price>14520</price>
+			<unlocks>
+				<turret>
+					Turret_2_F07_AMX_M4_1945
+					<cost>9600</cost>
+				</turret>
+			</unlocks>
 			<armor>
-				<armor_1>110</armor_1>
+				<armor_1>180</armor_1>
 				<armor_2>50</armor_2>
-				<armor_3>30</armor_3>
+				<armor_3>70</armor_3>
 				<armor_4>30</armor_4>
 				<armor_5>50</armor_5>
-				<armor_6>10</armor_6>
+				<armor_6>30</armor_6>
 				<armor_7>10</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>30</armor_9>
@@ -6659,11 +6663,11 @@
 				<armor_11>50</armor_11>
 				<armor_12>30</armor_12>
 				<armor_13>50</armor_13>
-				<armor_14>40</armor_14>
+				<armor_14>70</armor_14>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>4000</weight>
-			<maxHealth>240</maxHealth>
+			<maxHealth>220</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -6673,7 +6677,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>350</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>90</maxHealth>
 				<maxRegenHealth>45</maxRegenHealth>
@@ -6683,18 +6687,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_90mm_canon_DCA_30>
+				<_90mm_DCA_30>
 					shared
 					<maxAmmo>90</maxAmmo>
-					<unlocks>
-						<gun>
-							_90mm_F3
-							<cost>15000</cost>
-						</gun>
-					</unlocks>
 					<armor>
 						<armor_1>
-							110
+							180
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -6708,16 +6706,13 @@
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						7.6
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>8</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6736,12 +6731,12 @@
 					<pitchLimits>
 						<minPitch>0 -14 1 -14</minPitch>
 						<maxPitch>
-							0 10 0.333333 10 0.347222 10 0.388889 10 0.402778 6 0.597222 6 0.611111 10 0.652778 10 0.666667 10 1 10
+							0.00000 10.00 0.42500 10.00 0.43611 5.50 0.56389 5.50 0.57500 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<aimingTime>
-						2.3
+						2.4
 						<!--BW_String-->
 					</aimingTime>
 					<models>
@@ -6821,280 +6816,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_canon_DCA_30>
-				<_90mm_F3>
-					shared
-					<maxAmmo>74</maxAmmo>
-					<unlocks>
-						<turret>
-							Turret_2_AMX_M4_1945
-							<cost>9600</cost>
-						</turret>
-						<gun>
-							_105mm_canon_13TR
-							<cost>16350</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							110
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							70
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>35</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.39
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						8.6
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<invisibilityFactorAtShot>
-						0.238
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -14 1 -14</minPitch>
-						<maxPitch>
-							0 10 0.333333 10 0.347222 10 0.388889 10 0.402778 6 0.597222 6 0.611111 10 0.652778 10 0.666667 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<models>
-						<undamaged>vehicles/french/F07_AMX_M4_1945/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/french/F07_AMX_M4_1945/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/french/F07_AMX_M4_1945/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/french/F07_AMX_M4_1945/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/french/F07_AMX_M4_1945/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_main_mb</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000054 -0.005417 1.77201
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.000076 0.268928 0.195097</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000054 -0.005417 1.77201
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.000109 -0.010835 2.03255
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.000109 -0.010835 2.59255
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.096 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.56
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.535 0.535 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							104.321 110.026
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_90mm_F3>
-				<_105mm_canon_13TR>
-					shared
-					<maxAmmo>60</maxAmmo>
-					<armor>
-						<armor_1>
-							110
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							70
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<gun>35</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.41
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>10</reloadTime>
-					<aimingTime>
-						2.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.209
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -14 1 -14</minPitch>
-						<maxPitch>
-							0 10 0.333333 10 0.347222 10 0.388889 10 0.402778 6 0.597222 6 0.611111 10 0.652778 10 0.666667 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.12
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<models>
-						<undamaged>vehicles/french/F07_AMX_M4_1945/normal/lod0/Gun_06.model</undamaged>
-						<destroyed>vehicles/french/F07_AMX_M4_1945/crash/lod0/Gun_06.model</destroyed>
-						<exploded>vehicles/french/F07_AMX_M4_1945/crash/lod0/Gun_06.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/french/F07_AMX_M4_1945/collision/Gun_06.model</collisionModelServer>
-						<collisionModelClient>vehicles/french/F07_AMX_M4_1945/collision_client/Gun_06.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000049 -0.005146 1.8733
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>0.000076 0.268868 0.195091</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000049 -0.005146 1.8733
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.000098 -0.010291 2.56697
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.000098 -0.010291 3.12697
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.087 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.56
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.505 0.505 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							105.649 110.631
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_105mm_canon_13TR>
+				</_90mm_DCA_30>
 			</guns>
 			<models>
 				<undamaged>vehicles/french/F07_AMX_M4_1945/normal/lod0/Turret_01.model</undamaged>
@@ -7954,21 +7676,17 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_AMX_M4_1945>
-		<Turret_2_AMX_M4_1945>
-			<userString>#france_vehicles:Turret_2_AMX_M4_1945</userString>
+		</Turret_1_F07_AMX_M4_1945>
+		<Turret_2_F07_AMX_M4_1945>
+			<userString>#france_vehicles:Turret_2_F07_AMX_M4_1945</userString>
 			<tags/>
 			<level>7</level>
 			<price>20500</price>
 			<unlocks>
 				<gun>
-					_90mm_canon_DCA_45
+					_90mm_DCA_45
 					<cost>18500</cost>
 				</gun>
-				<vehicle>
-					F08_AMX_50_100
-					<cost>81000</cost>
-				</vehicle>
 			</unlocks>
 			<armor>
 				<armor_1>200</armor_1>
@@ -7996,7 +7714,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>6400</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>290</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -8020,13 +7738,13 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_90mm_canon_DCA_30>
+				<_90mm_DCA_30>
 					shared
 					<maxAmmo>90</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -12 1 -12</minPitch>
 						<maxPitch>
-							0 10 0.158333 10 0.222222 1 0.777778 1 0.841667 10 1 10
+							0.00000 10.00 0.21111 10.00 0.22778 4.00 0.42500 4.00 0.43611 2.00 0.56389 2.00 0.57500 4.00 0.77222 4.00 0.78889 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8078,13 +7796,10 @@
 						<gun>35</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						7.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>8</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.14
@@ -8187,184 +7902,28 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_canon_DCA_30>
-				<_90mm_F3>
-					shared
-					<maxAmmo>74</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -12 1 -12</minPitch>
-						<maxPitch>
-							0 10 0.158333 10 0.222222 1 0.777778 1 0.841667 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							200
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							185
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							80
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							190
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							165
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							140
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<armor_8>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_8>
-						<armor_9>
-							130
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_9>
-						<armor_10>
-							115
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_10>
-						<armor_11>
-							110
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_11>
-						<gun>35</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.38
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<invisibilityFactorAtShot>
-						0.238
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<models>
-						<undamaged>vehicles/french/F07_AMX_M4_1945/normal/lod0/Gun_04.model</undamaged>
-						<destroyed>vehicles/french/F07_AMX_M4_1945/crash/lod0/Gun_04.model</destroyed>
-						<exploded>vehicles/french/F07_AMX_M4_1945/crash/lod0/Gun_04.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/french/F07_AMX_M4_1945/collision/Gun_04.model</collisionModelServer>
-						<collisionModelClient>vehicles/french/F07_AMX_M4_1945/collision_client/Gun_04.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_main_mb</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000016 0.003198 1.94834
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0.00007 0.29444 0.325964
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000016 0.003198 1.94834
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.000032 0.006397 2.52689
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.000032 0.006397 3.07689
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.095 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.55
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.55 0.55 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							104.321 110.026
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_90mm_F3>
-				<_90mm_canon_DCA_45>
+				</_90mm_DCA_30>
+				<_90mm_DCA_45>
 					shared
 					<maxAmmo>74</maxAmmo>
 					<unlocks>
 						<vehicle>
+							F08_AMX_50_100
+							<cost>81000</cost>
+						</vehicle>
+						<vehicle>
 							F81_Char_de_65t
 							<cost>62500</cost>
 						</vehicle>
+						<gun>
+							_105mm_Canon_13TR
+							<cost>16350</cost>
+						</gun>
 					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -12 1 -12</minPitch>
 						<maxPitch>
-							0 10 0.158333 10 0.222222 1 0.777778 1 0.841667 10 1 10
+							0.00000 10.00 0.21111 10.00 0.22778 4.00 0.42500 4.00 0.43611 1.50 0.56389 1.50 0.57500 4.00 0.77222 4.00 0.78889 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8420,7 +7979,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.6
+						8.4
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8522,14 +8081,14 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_canon_DCA_45>
-				<_105mm_canon_13TR>
+				</_90mm_DCA_45>
+				<_105mm_Canon_13TR>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -12 1 -12</minPitch>
 						<maxPitch>
-							0 10 0.158333 10 0.222222 1 0.777778 1 0.841667 10 1 10
+							0.00000 10.00 0.21111 10.00 0.22778 4.00 0.42500 4.00 0.43611 2.00 0.56389 2.00 0.57500 4.00 0.77222 4.00 0.78889 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8690,7 +8249,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_105mm_canon_13TR>
+				</_105mm_Canon_13TR>
 			</guns>
 			<models>
 				<undamaged>vehicles/french/F07_AMX_M4_1945/normal/lod0/Turret_02.model</undamaged>
@@ -9677,93 +9236,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_AMX_M4_1945>
+		</Turret_2_F07_AMX_M4_1945>
 	</turrets0>
 	<engines>
-		<Maybach_HL_230>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_230P45
-					<cost>18800</cost>
-				</engine>
-			</unlocks>
-		</Maybach_HL_230>
 		<Maybach_HL_230P45>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_295
+					Maybach_HL_295_M4
 					<cost>24700</cost>
 				</engine>
 			</unlocks>
 		</Maybach_HL_230P45>
-		<Maybach_HL_295>shared</Maybach_HL_295>
+		<Maybach_HL_295_M4>shared</Maybach_HL_295_M4>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_528
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_528>shared</SCR_528>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_230>
-					<smplEnginePower>
-						607.9366
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
-				</Maybach_HL_230>
 				<Maybach_HL_230P45>
-					<smplEnginePower>
-						792.9609
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>820</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</Maybach_HL_230P45>
-				<Maybach_HL_295>
-					<smplEnginePower>
-						898.689
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_295_M4>
+					<smplEnginePower>930</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
-				</Maybach_HL_295>
+				</Maybach_HL_295_M4>
 			</engines>
 			<chassis>
-				<Chassis_AMX_M4_1945>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.21735
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1288
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_AMX_M4_1945>
-				<Chassis_AMX_M4_1945_2>
+				<Chassis_F07_AMX_M4_1945>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9784,7 +9290,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_AMX_M4_1945_2>
+				</Chassis_F07_AMX_M4_1945>
+				<Chassis_F07_AMX_M4_1945_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.20125
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_F07_AMX_M4_1945_2>
 			</chassis>
 		</detailed>
 	</physics>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A182_T803/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/american/A182_T803/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.799430 0.000209 -3.563774</min>
+		<max>1.792540 1.217246 3.782458</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

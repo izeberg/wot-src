@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.battle.postmorten_panel.rating_button_model import RatingButtonModel
 
 class PostmortemInfoPanelViewModel(ViewModel):

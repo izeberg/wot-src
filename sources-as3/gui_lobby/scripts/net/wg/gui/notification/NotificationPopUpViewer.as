@@ -28,7 +28,7 @@ package net.wg.gui.notification
       
       private static const DELAY:int = 50;
       
-      private static const DEFAULT_PADDING:Point = new Point(5,40);
+      private static const DEFAULT_PADDING:Point = new Point(5,5);
       
       private static const LAYERS_DEF_PADDING:Vector.<String> = new <String>[LAYER_NAMES.FULLSCREEN_WINDOWS,LAYER_NAMES.OVERLAY,LAYER_NAMES.TOP_SUB_VIEW];
       
@@ -75,8 +75,6 @@ package net.wg.gui.notification
       
       private var _earningView:AdvancedAchievementEarningView = null;
       
-      private var _earningViewDisplayObject:DisplayObject = null;
-      
       public function NotificationPopUpViewer(param1:Class)
       {
          this._pendingForDisplay = new Vector.<PopUpNotificationInfoVO>();
@@ -106,7 +104,7 @@ package net.wg.gui.notification
          super.onPopulate();
          this._earningView = new AdvancedAchievementEarningView();
          this._earningView.name = EARNING_VIEW_NAME;
-         this._earningViewDisplayObject = DisplayObject(this._earningView);
+         this._earningView.focusable = false;
          this._smContainer.addChild(DisplayObject(this._earningView));
          registerFlashComponentS(this._earningView,Aliases.ADVANCED_ACHIEVEMENTS_EARNING_VIEW);
       }
@@ -154,7 +152,7 @@ package net.wg.gui.notification
                   _loc4_ += _loc2_;
                   this._displayingNowPopUps.splice(_loc7_,0,_loc1_);
                   _loc7_++;
-                  this._smContainer.setChildIndex(this._earningViewDisplayObject,this._smContainer.numChildren - 1);
+                  this._smContainer.setChildIndex(this._earningView,this._smContainer.numChildren - 1);
                }
                else
                {
@@ -247,7 +245,6 @@ package net.wg.gui.notification
          this._animationManager = null;
          this._padding = null;
          this._earningView = null;
-         this._earningViewDisplayObject = null;
          this._externalPadding = null;
          this._stageDimensions = null;
          this._popupClass = null;

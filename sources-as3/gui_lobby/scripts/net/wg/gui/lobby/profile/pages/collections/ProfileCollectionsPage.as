@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.profile.pages.collections
 {
    import flash.display.InteractiveObject;
+   import flash.geom.Rectangle;
    import net.wg.gui.components.containers.inject.GFInjectComponent;
    import net.wg.gui.lobby.components.IResizableContent;
    
@@ -26,8 +27,9 @@ package net.wg.gui.lobby.profile.pages.collections
          return null;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
+         setPaddings(param3);
          setSize(param1,param2);
       }
       

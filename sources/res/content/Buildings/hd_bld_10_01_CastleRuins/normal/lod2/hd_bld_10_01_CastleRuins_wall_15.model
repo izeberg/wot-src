@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Buildings/hd_bld_10_01_CastleRuins/normal/lod3/hd_bld_10_01_CastleRuins_wall_15</parent>
+	<extent>225.000000</extent>
+	<visibilityBox>
+		<min>-1.708636 -0.018829 -15.968472</min>
+		<max>1.686428 13.521084 0.744721</max>
+	</visibilityBox>
+	<nodefullVisual>content/Buildings/hd_bld_10_01_CastleRuins/normal/lod2/hd_bld_10_01_CastleRuins_wall_15</nodefullVisual>
+</root>

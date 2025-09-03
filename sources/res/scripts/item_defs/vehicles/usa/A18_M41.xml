@@ -137,12 +137,9 @@
 		<weight>6583</weight>
 		<maxHealth>240</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>90</maxHealth>
-			<maxRegenHealth>45</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>150</maxHealth>
+			<maxRegenHealth>113</maxRegenHealth>
+			<repairCost>5</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/american/A18_M41/normal/lod0/Hull.model</undamaged>
@@ -1994,14 +1991,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<T72>
-			<userString>#usa_vehicles:T72</userString>
+		<Chassis_A18_M41>
+			<userString>#usa_vehicles:Chassis_A18_M41</userString>
 			<tags/>
 			<level>4</level>
 			<price>4300</price>
 			<unlocks>
 				<chassis>
-					T72E1
+					Chassis_A18_M41_2
 					<cost>2180</cost>
 				</chassis>
 			</unlocks>
@@ -2010,7 +2007,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>19300</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -4518,9 +4514,9 @@
 				8.39999962
 				<!--BW_String-->
 			</repairTime>
-		</T72>
-		<T72E1>
-			<userString>#usa_vehicles:T72E1</userString>
+		</Chassis_A18_M41>
+		<Chassis_A18_M41_2>
+			<userString>#usa_vehicles:Chassis_A18_M41_2</userString>
 			<tags/>
 			<level>5</level>
 			<price>8700</price>
@@ -4529,7 +4525,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>21000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -4551,12 +4546,9 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>70</maxHealth>
-			<maxRegenHealth>55</maxRegenHealth>
-			<repairCost>
-				0.5
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>115</maxHealth>
+			<maxRegenHealth>86</maxRegenHealth>
+			<repairCost>4</repairCost>
 			<models>
 				<undamaged>vehicles/american/A18_M41/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/american/A18_M41/crash/lod0/Chassis.model</destroyed>
@@ -7034,16 +7026,16 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				8.39999962
+				6.72463751
 				<!--BW_String-->
 			</repairTime>
-		</T72E1>
+		</Chassis_A18_M41_2>
 	</chassis>
 	<turrets0>
-		<M14>
+		<Turret_1_A18_M41>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:T51D1</userString>
-			<tags>cannotDetach</tags>
+			<userString>#usa_vehicles:Turret_1_A18_M41</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>5</level>
 			<price>200</price>
 			<notInShop>true</notInShop>
@@ -7078,7 +7070,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_155mm_Howitzer_M1>
+				<_155mm_Howitzer_M1_M41>
 					shared
 					<reloadTime>29</reloadTime>
 					<maxAmmo>27</maxAmmo>
@@ -7203,7 +7195,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_155mm_Howitzer_M1>
+				</_155mm_Howitzer_M1_M41>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A18_M41/normal/lod0/Turret_01.model</undamaged>
@@ -7257,52 +7249,38 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</M14>
+		</Turret_1_A18_M41>
 	</turrets0>
 	<engines>
-		<Continental_W-670>
+		<Continental_W_670_M41>
 			shared
 			<unlocks>
 				<engine>
-					Twin_Cadillac_series_44T4
+					Twin_Cadillac_Series_44T4_M41
 					<cost>820</cost>
 				</engine>
 			</unlocks>
-		</Continental_W-670>
-		<Twin_Cadillac_series_44T4>shared</Twin_Cadillac_series_44T4>
-	</engines>
-	<fuelTanks>
-		<Medium>shared</Medium>
-	</fuelTanks>
-	<radios>
-		<SCR_510>
+		</Continental_W_670_M41>
+		<Twin_Cadillac_Series_44T4_M41>
 			shared
 			<unlocks>
-				<radio>
-					SCR_610
-					<cost>1480</cost>
-				</radio>
-			</unlocks>
-		</SCR_510>
-		<SCR_610>
-			shared
-			<unlocks>
-				<radio>
-					SCR_619
-					<cost>9000</cost>
-				</radio>
 				<vehicle>
 					A87_M44
 					<cost>33800</cost>
 				</vehicle>
 			</unlocks>
-		</SCR_610>
+		</Twin_Cadillac_Series_44T4_M41>
+	</engines>
+	<fuelTanks>
+		<Medium>shared</Medium>
+	</fuelTanks>
+	<radios>
 		<SCR_619>shared</SCR_619>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Continental_W-670>
+				<Continental_W_670_M41>
 					<smplEnginePower>
 						277.0077
 						<!--BW_String-->
@@ -7311,8 +7289,8 @@
 						56.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Continental_W-670>
-				<Twin_Cadillac_series_44T4>
+				</Continental_W_670_M41>
+				<Twin_Cadillac_Series_44T4_M41>
 					<smplEnginePower>
 						312.9552
 						<!--BW_String-->
@@ -7321,10 +7299,10 @@
 						56.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Twin_Cadillac_series_44T4>
+				</Twin_Cadillac_Series_44T4_M41>
 			</engines>
 			<chassis>
-				<T72>
+				<Chassis_A18_M41>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7345,8 +7323,8 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</T72>
-				<T72E1>
+				</Chassis_A18_M41>
+				<Chassis_A18_M41_2>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7367,7 +7345,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</T72E1>
+				</Chassis_A18_M41_2>
 			</chassis>
 		</detailed>
 	</physics>

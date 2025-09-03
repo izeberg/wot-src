@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.profile.pages.statistics.body
 {
    import flash.display.InteractiveObject;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import net.wg.gui.components.common.containers.EqualGapsHorizontalLayout;
    import net.wg.gui.lobby.components.IResizableContent;
@@ -46,7 +47,7 @@ package net.wg.gui.lobby.profile.pages.statistics.body
          return null;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          this.label.width = param1;
          EqualGapsHorizontalLayout(this.group.layout).availableSize = param1;

@@ -540,6 +540,20 @@ package net.wg.gui.components.controls
          invalidate(INVALIDATE_LAYOUT);
       }
       
+      public function setRenderersSize(param1:uint, param2:uint) : void
+      {
+         var _loc5_:IListItemRenderer = null;
+         var _loc3_:uint = this._renderers.length;
+         var _loc4_:int = 0;
+         while(_loc4_ < _loc3_)
+         {
+            _loc5_ = this._renderers[_loc4_];
+            _loc5_.width = param1;
+            _loc5_.height = param2;
+            _loc4_++;
+         }
+      }
+      
       protected function get renderers() : Vector.<IListItemRenderer>
       {
          return this._renderers;

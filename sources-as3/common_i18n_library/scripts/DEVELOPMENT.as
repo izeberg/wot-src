@@ -67,7 +67,9 @@ package
       
       public static const EDITOR_RESUME:String = "#development:editor/Resume";
       
-      public static const WULF_DEBUGON:String = "#development:wulf/debugOn";
+      public static const WULF_HITAREA:String = "#development:wulf/hitArea";
+      
+      public static const WULF_TEXTURE:String = "#development:wulf/texture";
       
       public static const WULF_DEBUGOFF:String = "#development:wulf/debugOff";
       

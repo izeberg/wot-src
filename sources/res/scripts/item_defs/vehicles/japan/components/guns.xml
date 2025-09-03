@@ -66,6 +66,26 @@
 		<_120mm_Type_71_Gun>64</_120mm_Type_71_Gun>
 		<_105mm_Gun_Type_91>68</_105mm_Gun_Type_91>
 		<_105mm_Cannon_Type_92_SP>72</_105mm_Cannon_Type_92_SP>
+		<_90mm_Gun_Type_61_MHI>2000</_90mm_Gun_Type_61_MHI>
+		<_105mm_Rifled_Gun_61>2001</_105mm_Rifled_Gun_61>
+		<_75mm_Tank_Gun_Type_5_Model_I_CR>2002</_75mm_Tank_Gun_Type_5_Model_I_CR>
+		<_75mm_Tank_Gun_Type_5_CT>2003</_75mm_Tank_Gun_Type_5_CT>
+		<_75mm_Tank_Gun_Type_3_Model_II>2004</_75mm_Tank_Gun_Type_3_Model_II>
+		<_13mm_Autocannon_Type_Ho_NC>2005</_13mm_Autocannon_Type_Ho_NC>
+		<_37mm_Sogekihou_NC>2006</_37mm_Sogekihou_NC>
+		<_37mm_Gun_Type_98_95>2007</_37mm_Gun_Type_98_95>
+		<_57mm_Gun_Type_97_95>2008</_57mm_Gun_Type_97_95>
+		<_57mm_Gun_Type_97_Shin>2009</_57mm_Gun_Type_97_Shin>
+		<_47mm_Gun_Type_1_Shin>2010</_47mm_Gun_Type_1_Shin>
+		<_47mm_Gun_Type_1_2>2011</_47mm_Gun_Type_1_2>
+		<Experimental_57_mm_Tank_Gun_Shin_2>2012</Experimental_57_mm_Tank_Gun_Shin_2>
+		<Experimental_57_mm_Tank_Gun_Shin_10>2013</Experimental_57_mm_Tank_Gun_Shin_10>
+		<_105mm_Cannon_Type_92_O_I>2014</_105mm_Cannon_Type_92_O_I>
+		<_150mm_Howitzer_Type_96_O_I>2015</_150mm_Howitzer_Type_96_O_I>
+		<_105mm_Cannon_Type_92_O_Ni>2016</_105mm_Cannon_Type_92_O_Ni>
+		<_140mm_50_3rd_Year_Type_4>2018</_140mm_50_3rd_Year_Type_4>
+		<_105mm_M68_L7_57>2020</_105mm_M68_L7_57>
+		<_127mm_50_3rd_Year_Type_O_Ho>2021</_127mm_50_3rd_Year_Type_O_Ho>
 		<_105mm_Rifled_Gun_7x7>502</_105mm_Rifled_Gun_7x7>
 		<_120mm_Type_71_Gun_7x7>503</_120mm_Type_71_Gun_7x7>
 		<_90mm_Gun_Type61_IGR>60001</_90mm_Gun_Type61_IGR>
@@ -176,6 +196,109 @@
 				</_13.2mm_Balle_T.P.>
 			</shots>
 		</_13.2mm_Type93>
+		<_13mm_Autocannon_Type_Ho_NC>
+			<userString>#japan_vehicles:_13mm_Autocannon_Type_Ho_NC</userString>
+			<tags/>
+			<level>1</level>
+			<price>0</price>
+			<impulse>
+				0.06
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>0.000000</amplitude>
+				<recoilEffect>auto</recoilEffect>
+			</recoil>
+			<effects>shot_auto</effects>
+			<reloadEffect>reload12_25</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -23.0 1.0 -23.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 20.0 1.0 20.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				5.7
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>720</maxAmmo>
+			<aimingTime>
+				1.9
+				<!--BW_String-->
+			</aimingTime>
+			<clip>
+				<count>15</count>
+				<rate>450</rate>
+			</clip>
+			<burst>
+				<count>5</count>
+				<rate>450</rate>
+			</burst>
+			<weight>38</weight>
+			<maxHealth>34</maxHealth>
+			<maxRegenHealth>17</maxRegenHealth>
+			<repairCost>1</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.58
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.12
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					1.1
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_13mm_Type_92_NC>
+					<defaultPortion>
+						1.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>800</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>400</maxDistance>
+					<piercingPower>33 25</piercingPower>
+				</_13mm_Type_92_NC>
+				<_13mm_Balle_T_P_NC>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1000</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>400</maxDistance>
+					<piercingPower>50 45</piercingPower>
+				</_13mm_Balle_T_P_NC>
+			</shots>
+		</_13mm_Autocannon_Type_Ho_NC>
 		<_20mm_Rifle_Type97>
 			<userString>#japan_vehicles:_20mm_Type97</userString>
 			<tags/>
@@ -394,11 +517,123 @@
 				</_37mm_HE_Type12>
 			</shots>
 		</_37mm_Sogekiho>
+		<_37mm_Sogekihou_NC>
+			<userString>#japan_vehicles:_37mm_Sogekihou_NC</userString>
+			<tags/>
+			<level>1</level>
+			<price>1900</price>
+			<impulse>
+				0.26
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.1
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>small</recoilEffect>
+			</recoil>
+			<effects>shot_small</effects>
+			<reloadEffect>reload20_45</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -23.0 1.0 -23.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 20.0 1.0 20.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.5
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>100</maxAmmo>
+			<aimingTime>
+				1.9
+				<!--BW_String-->
+			</aimingTime>
+			<weight>175</weight>
+			<maxHealth>54</maxHealth>
+			<maxRegenHealth>27</maxRegenHealth>
+			<repairCost>2</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.48
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_37mm_Type_94_NC>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>700</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>42 29</piercingPower>
+				</_37mm_Type_94_NC>
+				<_37mm_Ichi_Go_NC>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>700</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>65 53</piercingPower>
+				</_37mm_Ichi_Go_NC>
+				<_37mm_Type_12_NC>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>580</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>18 18</piercingPower>
+				</_37mm_Type_12_NC>
+			</shots>
+		</_37mm_Sogekihou_NC>
 		<_37mm_Type_94>
 			<userString>#japan_vehicles:_37mm_Type_94</userString>
 			<tags/>
 			<level>1</level>
 			<price>2000</price>
+			<notInShop>true</notInShop>
 			<impulse>
 				0.26
 				<!--BW_String-->
@@ -510,6 +745,7 @@
 			<tags/>
 			<level>2</level>
 			<price>2450</price>
+			<notInShop>true</notInShop>
 			<impulse>
 				0.22
 				<!--BW_String-->
@@ -613,6 +849,114 @@
 				</_37mm_HE_Type4>
 			</shots>
 		</_37mm_Type_98>
+		<_37mm_Gun_Type_98_95>
+			<userString>#japan_vehicles:_37mm_Gun_Type_98_95</userString>
+			<tags/>
+			<level>1</level>
+			<price>2450</price>
+			<impulse>
+				0.22
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.24
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>small</recoilEffect>
+			</recoil>
+			<effects>shot_small</effects>
+			<reloadEffect>reload20_45</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 15.0 1.0 15.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>40</rotationSpeed>
+			<reloadTime>
+				2.3
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>106</maxAmmo>
+			<aimingTime>
+				1.7
+				<!--BW_String-->
+			</aimingTime>
+			<weight>192</weight>
+			<maxHealth>60</maxHealth>
+			<maxRegenHealth>30</maxRegenHealth>
+			<repairCost>1</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_37mm_Type_94_95>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>685</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>48 40</piercingPower>
+				</_37mm_Type_94_95>
+				<_37mm_Type_1_95>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>685</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>75 63</piercingPower>
+				</_37mm_Type_1_95>
+				<_37mm_Type_4_95>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>685</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>18 18</piercingPower>
+				</_37mm_Type_4_95>
+			</shots>
+		</_37mm_Gun_Type_98_95>
 		<_37mm_Type_98A>
 			<userString>#japan_vehicles:_37mm_Type_98A</userString>
 			<tags/>
@@ -1158,6 +1502,228 @@
 				</_47mm_HE_Type94>
 			</shots>
 		</_47mm_Gun_Type1>
+		<_47mm_Gun_Type_1_2>
+			<userString>#japan_vehicles:_47mm_Gun_Type_1_2</userString>
+			<tags/>
+			<level>3</level>
+			<price>21000</price>
+			<impulse>
+				0.24
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.32
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>small</recoilEffect>
+			</recoil>
+			<effects>shot_small</effects>
+			<reloadEffect>reload20_45</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -25.0 1.0 -25.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.1
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>84</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>411</weight>
+			<maxHealth>76</maxHealth>
+			<maxRegenHealth>38</maxRegenHealth>
+			<repairCost>1</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.42
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_47mm_Type_1_2>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>81 69</piercingPower>
+				</_47mm_Type_1_2>
+				<_47mm_Type_1_Toku_Kou_2>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>122 81</piercingPower>
+				</_47mm_Type_1_Toku_Kou_2>
+				<_47mm_Type_94_2>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>25 25</piercingPower>
+				</_47mm_Type_94_2>
+			</shots>
+		</_47mm_Gun_Type_1_2>
+		<_47mm_Gun_Type_1_Shin>
+			<userString>#japan_vehicles:_47mm_Gun_Type_1_Shin</userString>
+			<tags/>
+			<level>3</level>
+			<price>21000</price>
+			<impulse>
+				0.24
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.32
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>small</recoilEffect>
+			</recoil>
+			<effects>shot_small</effects>
+			<reloadEffect>reload20_45</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -25.0 1.0 -25.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.1
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>84</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>411</weight>
+			<maxHealth>76</maxHealth>
+			<maxRegenHealth>38</maxRegenHealth>
+			<repairCost>1</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.42
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_47mm_Type_1_Shin>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>81 69</piercingPower>
+				</_47mm_Type_1_Shin>
+				<_47mm_Type_1_Toku_Kou_Shin>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>122 81</piercingPower>
+				</_47mm_Type_1_Toku_Kou_Shin>
+				<_47mm_Type_94_Shin>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>25 25</piercingPower>
+				</_47mm_Type_94_Shin>
+			</shots>
+		</_47mm_Gun_Type_1_Shin>
 		<_57mm_Gun_Type90>
 			<userString>#japan_vehicles:_57mm_Gun_Type90</userString>
 			<tags/>
@@ -1380,6 +1946,228 @@
 				</_57mm_HE_Type97>
 			</shots>
 		</_57mm_Gun_Type97>
+		<_57mm_Gun_Type_97_Shin>
+			<userString>#japan_vehicles:_57mm_Gun_Type_97_Shin</userString>
+			<tags/>
+			<level>2</level>
+			<price>2800</price>
+			<impulse>
+				0.26
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.04
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -12.0 1.0 -12.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.28
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>92</maxAmmo>
+			<aimingTime>
+				2.28
+				<!--BW_String-->
+			</aimingTime>
+			<weight>150</weight>
+			<maxHealth>84</maxHealth>
+			<maxRegenHealth>42</maxRegenHealth>
+			<repairCost>4</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.43
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_57mm_Type_92_Shin>
+					<defaultPortion>
+						0.65
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>710</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>60 48</piercingPower>
+				</_57mm_Type_92_Shin>
+				<_57mm_Type_3_Shin>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>615</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>95 95</piercingPower>
+				</_57mm_Type_3_Shin>
+				<_57mm_Type_90_Shin>
+					<defaultPortion>
+						0.35
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>615</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>28 28</piercingPower>
+				</_57mm_Type_90_Shin>
+			</shots>
+		</_57mm_Gun_Type_97_Shin>
+		<_57mm_Gun_Type_97_95>
+			<userString>#japan_vehicles:_57mm_Gun_Type_97_95</userString>
+			<tags/>
+			<level>2</level>
+			<price>2800</price>
+			<impulse>
+				0.26
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.04
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -12.0 1.0 -12.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.28
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>92</maxAmmo>
+			<aimingTime>
+				2.28
+				<!--BW_String-->
+			</aimingTime>
+			<weight>150</weight>
+			<maxHealth>84</maxHealth>
+			<maxRegenHealth>42</maxRegenHealth>
+			<repairCost>4</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.43
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_57mm_Type_92_95>
+					<defaultPortion>
+						0.65
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>710</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>60 48</piercingPower>
+				</_57mm_Type_92_95>
+				<_57mm_Type_3_95>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>615</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>95 95</piercingPower>
+				</_57mm_Type_3_95>
+				<_57mm_Type_90_95>
+					<defaultPortion>
+						0.35
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>615</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>28 28</piercingPower>
+				</_57mm_Type_90_95>
+			</shots>
+		</_57mm_Gun_Type_97_95>
 		<_57mm_Gun_Shin>
 			<userString>#japan_vehicles:_57mm_Gun_Shin</userString>
 			<tags/>
@@ -1491,6 +2279,228 @@
 				</_57mm_HE_Type2>
 			</shots>
 		</_57mm_Gun_Shin>
+		<Experimental_57_mm_Tank_Gun_Shin_10>
+			<userString>#japan_vehicles:Experimental_57_mm_Tank_Gun_Shin_10</userString>
+			<tags/>
+			<level>4</level>
+			<price>27500</price>
+			<impulse>
+				0.26
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.18
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -12.0 1.0 -12.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.28571428571429
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>92</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>543</weight>
+			<maxHealth>94</maxHealth>
+			<maxRegenHealth>47</maxRegenHealth>
+			<repairCost>4</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.43428571428571
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_57mm_Type_1_Model_II>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>110 98</piercingPower>
+				</_57mm_Type_1_Model_II>
+				<_57mm_Type_1_Toku_Kou_Model_II>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>139 126</piercingPower>
+				</_57mm_Type_1_Toku_Kou_Model_II>
+				<_57mm_Type_2_Model_II>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>29 29</piercingPower>
+				</_57mm_Type_2_Model_II>
+			</shots>
+		</Experimental_57_mm_Tank_Gun_Shin_10>
+		<Experimental_57_mm_Tank_Gun_Shin_2>
+			<userString>#japan_vehicles:Experimental_57_mm_Tank_Gun_Shin_2</userString>
+			<tags/>
+			<level>4</level>
+			<price>27500</price>
+			<impulse>
+				0.26
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.18
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -12.0 1.0 -12.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				43.75
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				2.28571428571429
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>92</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>543</weight>
+			<maxHealth>94</maxHealth>
+			<maxRegenHealth>47</maxRegenHealth>
+			<repairCost>4</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.43428571428571
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_57mm_Type_1_2>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>100 90</piercingPower>
+				</_57mm_Type_1_2>
+				<_57mm_Type_1_Toku_Kou_2>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>131 113</piercingPower>
+				</_57mm_Type_1_Toku_Kou_2>
+				<_57mm_Type_2_2>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>810</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>29 29</piercingPower>
+				</_57mm_Type_2_2>
+			</shots>
+		</Experimental_57_mm_Tank_Gun_Shin_2>
 		<_70mm_Gun_Type_94>
 			<userString>#japan_vehicles:_70mm_Gun_Type_94</userString>
 			<tags/>
@@ -1824,6 +2834,114 @@
 				</_75mm_HE_Type_94_424>
 			</shots>
 		</_75mm_Gun_Type3>
+		<_75mm_Tank_Gun_Type_3_Model_II>
+			<userString>#japan_vehicles:_75mm_Tank_Gun_Type_3_Model_II</userString>
+			<tags/>
+			<level>5</level>
+			<price>30500</price>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.36
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium_mb</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -17.0 1.0 -17.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.0 1.0 6.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>35</rotationSpeed>
+			<reloadTime>
+				4.28571428571429
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>87</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1400</weight>
+			<maxHealth>110</maxHealth>
+			<maxRegenHealth>55</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.41
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_75mm_Type_1_II>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>124 112</piercingPower>
+				</_75mm_Type_1_II>
+				<_75mm_Type_1_Toku_Kou_II>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>155 140</piercingPower>
+				</_75mm_Type_1_Toku_Kou_II>
+				<_75mm_Type_94_II>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>38 38</piercingPower>
+				</_75mm_Type_94_II>
+			</shots>
+		</_75mm_Tank_Gun_Type_3_Model_II>
 		<_75mm_Gun_Type5>
 			<userString>#japan_vehicles:_75mm_Gun_Type5</userString>
 			<tags/>
@@ -1932,6 +3050,114 @@
 				</_75mm_HE_Type_4_604>
 			</shots>
 		</_75mm_Gun_Type5>
+		<_75mm_Tank_Gun_Type_5_CT>
+			<userString>#japan_vehicles:_75mm_Tank_Gun_Type_5_CT</userString>
+			<tags/>
+			<level>5</level>
+			<price>42500</price>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.36
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.5 1.0 6.5
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				35.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>5</reloadTime>
+			<maxAmmo>55</maxAmmo>
+			<aimingTime>
+				2.5
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1489</weight>
+			<maxHealth>120</maxHealth>
+			<maxRegenHealth>60</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.41
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_75mm_Type_1_CT>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>140 126</piercingPower>
+				</_75mm_Type_1_CT>
+				<_75mm_Type_1_Toku_Kou_CT>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>170 153</piercingPower>
+				</_75mm_Type_1_Toku_Kou_CT>
+				<_75mm_Type_4_CT>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>38 38</piercingPower>
+				</_75mm_Type_4_CT>
+			</shots>
+		</_75mm_Tank_Gun_Type_5_CT>
 		<_75mm_Type5_1>
 			<userString>#japan_vehicles:_75mm_Type5_1</userString>
 			<tags/>
@@ -2044,7 +3270,7 @@
 		<_75mm_Gun_Type5_2>
 			<userString>#japan_vehicles:_75mm_Gun_Type5_2</userString>
 			<tags/>
-			<level>6</level>
+			<level>5</level>
 			<price>55000</price>
 			<impulse>
 				0.38
@@ -2257,10 +3483,118 @@
 				</_75mm_HE_Type_4_K_604>
 			</shots>
 		</_75mm_Gun_Type5_M1>
+		<_75mm_Tank_Gun_Type_5_Model_I_CR>
+			<userString>#japan_vehicles:_75mm_Tank_Gun_Type_5_Model_I_CR</userString>
+			<tags/>
+			<level>6</level>
+			<price>57000</price>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.36
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>medium</recoilEffect>
+			</recoil>
+			<effects>shot_medium</effects>
+			<reloadEffect>reload50_75</reloadEffect>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 6.5 1.0 6.5
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<rotationSpeed>
+				35.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>5</reloadTime>
+			<maxAmmo>55</maxAmmo>
+			<aimingTime>
+				2.5
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1764</weight>
+			<maxHealth>130</maxHealth>
+			<maxRegenHealth>65</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.41
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_75mm_Type_1_Toku_Kou_Kai_CR>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>155 140</piercingPower>
+				</_75mm_Type_1_Toku_Kou_Kai_CR>
+				<_75mm_Type_1_Toku_Otsu_CR>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>186 168</piercingPower>
+				</_75mm_Type_1_Toku_Otsu_CR>
+				<_75mm_Type_4_Kai_CR>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>821</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>38 38</piercingPower>
+				</_75mm_Type_4_Kai_CR>
+			</shots>
+		</_75mm_Tank_Gun_Type_5_Model_I_CR>
 		<_75mm_Gun_Type5_M1_auto>
 			<userString>#japan_vehicles:_75mm_Gun_Type5_M1_auto</userString>
 			<tags/>
-			<level>6</level>
+			<level>7</level>
 			<price>62000</price>
 			<impulse>
 				0.38
@@ -2324,7 +3658,7 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_75mm_AP_Type_1_TKK_604>
+				<_75mm_Type_1_Toku_Kou_Kai_A>
 					<defaultPortion>1</defaultPortion>
 					<speed>821</speed>
 					<gravity>
@@ -2333,8 +3667,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>155 140</piercingPower>
-				</_75mm_AP_Type_1_TKK_604>
-				<_75mm_AP_Type_1_TO_604>
+				</_75mm_Type_1_Toku_Kou_Kai_A>
+				<_75mm_Type_1_Toku_Otsu_A>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -2346,8 +3680,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>186 168</piercingPower>
-				</_75mm_AP_Type_1_TO_604>
-				<_75mm_HE_Type_4_K_604>
+				</_75mm_Type_1_Toku_Otsu_A>
+				<_75mm_Type_4_Kai_A>
 					<defaultPortion>0</defaultPortion>
 					<speed>821</speed>
 					<gravity>
@@ -2356,13 +3690,13 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>38 38</piercingPower>
-				</_75mm_HE_Type_4_K_604>
+				</_75mm_Type_4_Kai_A>
 			</shots>
 		</_75mm_Gun_Type5_M1_auto>
 		<_75mm_Type_88_Gun>
 			<userString>#japan_vehicles:_75mm_Type_88_Gun</userString>
 			<tags/>
-			<level>5</level>
+			<level>4</level>
 			<price>34000</price>
 			<impulse>
 				0.38
@@ -2470,7 +3804,7 @@
 		<_75mm_Type_88R_Gun>
 			<userString>#japan_vehicles:_75mm_Type_88R_Gun</userString>
 			<tags/>
-			<level>5</level>
+			<level>4</level>
 			<price>35000</price>
 			<impulse>
 				0.38
@@ -2578,7 +3912,7 @@
 		<_105mm_Type_14_L34_2>
 			<userString>#japan_vehicles:_105mm_Type_14_L34_2</userString>
 			<tags/>
-			<level>6</level>
+			<level>5</level>
 			<price>58500</price>
 			<impulse>
 				0.38
@@ -2751,7 +4085,7 @@
 					0.4
 					<!--BW_String-->
 				</afterShotDispersionRadius>
-				<coolingDelay>15</coolingDelay>
+				<coolingDelay>14</coolingDelay>
 			</dualAccuracy>
 			<shots>
 				<_105mm_AP_M68>
@@ -2765,7 +4099,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>225 204</piercingPower>
+					<piercingPower>235 226</piercingPower>
 				</_105mm_AP_M68>
 				<_105mm_APCR_M68>
 					<defaultPortion>
@@ -2778,7 +4112,7 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>252 230</piercingPower>
+					<piercingPower>261 239</piercingPower>
 				</_105mm_APCR_M68>
 				<_105mm_HE_M68>
 					<defaultPortion>
@@ -2795,6 +4129,121 @@
 				</_105mm_HE_M68>
 			</shots>
 		</_105mm_M68_L7>
+		<_105mm_M68_L7_57>
+			<userString>#japan_vehicles:_105mm_M68_L7_57</userString>
+			<tags/>
+			<level>8</level>
+			<price>120000</price>
+			<impulse>
+				0.48
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.12
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 10.0 1.0 10.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>10</reloadTime>
+			<maxAmmo>50</maxAmmo>
+			<aimingTime>
+				2.3
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1200</weight>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<dualAccuracy>
+				<afterShotDispersionRadius>
+					0.4
+					<!--BW_String-->
+				</afterShotDispersionRadius>
+				<coolingDelay>15</coolingDelay>
+			</dualAccuracy>
+			<shots>
+				<_105mm_AP_Common_Type_68_57>
+					<defaultPortion>
+						0.80
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1000</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>225 204</piercingPower>
+				</_105mm_AP_Common_Type_68_57>
+				<_105mm_APCR_Common_Type_68_57>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1200</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>252 230</piercingPower>
+				</_105mm_APCR_Common_Type_68_57>
+				<_105mm_HE_Common_Type_68_57>
+					<defaultPortion>
+						0.20
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_HE_Common_Type_68_57>
+			</shots>
+		</_105mm_M68_L7_57>
 		<_120mm_M58>
 			<userString>#japan_vehicles:_120mm_M58</userString>
 			<tags/>
@@ -2917,7 +4366,7 @@
 		<_120mm_Type_60_Gun>
 			<userString>#japan_vehicles:_120mm_Type_60_Gun</userString>
 			<tags/>
-			<level>10</level>
+			<level>9</level>
 			<price>310000</price>
 			<impulse>
 				0.68
@@ -3273,7 +4722,7 @@
 		<_75mm_Type_90_Gun>
 			<userString>#japan_vehicles:_75mm_Type_90_Gun</userString>
 			<tags/>
-			<level>6</level>
+			<level>5</level>
 			<price>47000</price>
 			<impulse>
 				0.38
@@ -3381,7 +4830,7 @@
 		<_75mm_Type_5_Gun_Ro>
 			<userString>#japan_vehicles:_75mm_Type_5_Gun_Ro</userString>
 			<tags/>
-			<level>6</level>
+			<level>5</level>
 			<price>58000</price>
 			<impulse>
 				0.38
@@ -3713,7 +5162,7 @@
 		<_88mm_Type3_Gun>
 			<userString>#japan_vehicles:_88mm_Type3_Gun</userString>
 			<tags/>
-			<level>7</level>
+			<level>6</level>
 			<price>76000</price>
 			<impulse>
 				0.38
@@ -3780,7 +5229,7 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_88mm_Pzgr39_3>
+				<_88mm_AP_Type_3>
 					<defaultPortion>
 						0.95
 						<!--BW_String-->
@@ -3792,8 +5241,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>150 134</piercingPower>
-				</_88mm_Pzgr39_3>
-				<_88mm_Pzgr.40_3>
+				</_88mm_AP_Type_3>
+				<_88mm_APCR_Type_3>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -3805,8 +5254,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>208 180</piercingPower>
-				</_88mm_Pzgr.40_3>
-				<_88mm_Sprg.18_3>
+				</_88mm_APCR_Type_3>
+				<_88mm_HE_Type_3>
 					<defaultPortion>
 						0.05
 						<!--BW_String-->
@@ -3818,13 +5267,13 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>44 44</piercingPower>
-				</_88mm_Sprg.18_3>
+				</_88mm_HE_Type_3>
 			</shots>
 		</_88mm_Type3_Gun>
 		<_88mm_Type3_Gun_L56>
 			<userString>#japan_vehicles:_88mm_Type3_Gun_L56</userString>
 			<tags/>
-			<level>7</level>
+			<level>6</level>
 			<price>78000</price>
 			<impulse>
 				0.38
@@ -3891,7 +5340,7 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_88mm_Pzgr39_3_L56>
+				<_88mm_AP_Type_3T>
 					<defaultPortion>
 						0.80
 						<!--BW_String-->
@@ -3903,8 +5352,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>175 155</piercingPower>
-				</_88mm_Pzgr39_3_L56>
-				<_88mm_Pzgr.40_3_L56>
+				</_88mm_AP_Type_3T>
+				<_88mm_APCR_Type_3T>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -3916,8 +5365,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>210 188</piercingPower>
-				</_88mm_Pzgr.40_3_L56>
-				<_88mm_Sprg.18_3_L56>
+				</_88mm_APCR_Type_3T>
+				<_88mm_HE_Type_3T>
 					<defaultPortion>
 						0.20
 						<!--BW_String-->
@@ -3929,7 +5378,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>44 44</piercingPower>
-				</_88mm_Sprg.18_3_L56>
+				</_88mm_HE_Type_3T>
 			</shots>
 		</_88mm_Type3_Gun_L56>
 		<_105mm_Type_92_L45>
@@ -4252,7 +5701,7 @@
 		<_105mm_Cannon_Type92_A>
 			<userString>#japan_vehicles:_105mm_Cannon_Type92_A</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>95000</price>
 			<impulse>
 				0.38
@@ -4360,7 +5809,7 @@
 		<_105mm_Cannon_Type_92_SP>
 			<userString>#japan_vehicles:_105mm_Cannon_Type_92_SP</userString>
 			<tags/>
-			<level>7</level>
+			<level>6</level>
 			<price>80000</price>
 			<impulse>
 				0.38
@@ -4468,7 +5917,7 @@
 		<_105mm_Gun_Shin>
 			<userString>#japan_vehicles:_105mm_Gun_Shin</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>115000</price>
 			<impulse>
 				0.38
@@ -4579,7 +6028,7 @@
 		<_105mm_Type_92_Gun_Ro>
 			<userString>#japan_vehicles:_105mm_Type_92_Gun_Ro</userString>
 			<tags/>
-			<level>8</level>
+			<level>6</level>
 			<price>90000</price>
 			<impulse>
 				0.38
@@ -4690,7 +6139,7 @@
 		<_120mm_Gun_Type_10>
 			<userString>#japan_vehicles:_120mm_Gun_Type_10</userString>
 			<tags/>
-			<level>9</level>
+			<level>8</level>
 			<price>190000</price>
 			<impulse>
 				0.38
@@ -4912,6 +6361,7 @@
 			<tags/>
 			<level>7</level>
 			<price>81000</price>
+			<notInShop>true</notInShop>
 			<impulse>
 				0.48
 				<!--BW_String-->
@@ -5021,7 +6471,7 @@
 		<_90mm_Rifled_Gun>
 			<userString>#japan_vehicles:_90mm_Rifled_Gun</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>95500</price>
 			<impulse>
 				0.48
@@ -5088,20 +6538,20 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_90mm_AP_M318A1>
+				<_90mm_M318A1_RG>
 					<defaultPortion>
 						0.95
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>853</speed>
+					<speed>957</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>212 190</piercingPower>
-				</_90mm_AP_M318A1>
-				<_90mm_HEAT_Type70>
+				</_90mm_M318A1_RG>
+				<_90mm_Type_70_RG>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -5113,8 +6563,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>275 275</piercingPower>
-				</_90mm_HEAT_Type70>
-				<_90mm_HE_M71>
+				</_90mm_Type_70_RG>
+				<_90mm_M71_RG>
 					<defaultPortion>
 						0.05
 						<!--BW_String-->
@@ -5126,7 +6576,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>45 45</piercingPower>
-				</_90mm_HE_M71>
+				</_90mm_M71_RG>
 			</shots>
 		</_90mm_Rifled_Gun>
 		<_90mm_Rifled_Gun_1>
@@ -5244,7 +6694,7 @@
 		<_90mm_Gun_Type61>
 			<userString>#japan_vehicles:_90mm_Gun_Type61</userString>
 			<tags/>
-			<level>9</level>
+			<level>8</level>
 			<price>160000</price>
 			<impulse>
 				0.48
@@ -5311,7 +6761,7 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_90mm_AP_M318A1>
+				<_90mm_M318A1_STA_1>
 					<defaultPortion>
 						0.95
 						<!--BW_String-->
@@ -5323,8 +6773,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>219 206</piercingPower>
-				</_90mm_AP_M318A1>
-				<_90mm_HEAT_Type70>
+				</_90mm_M318A1_STA_1>
+				<_90mm_Type_70_STA_1>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -5335,9 +6785,9 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>275 275</piercingPower>
-				</_90mm_HEAT_Type70>
-				<_90mm_HE_M71>
+					<piercingPower>285 285</piercingPower>
+				</_90mm_Type_70_STA_1>
+				<_90mm_M71_STA_1>
 					<defaultPortion>
 						0.05
 						<!--BW_String-->
@@ -5349,9 +6799,120 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>45 45</piercingPower>
-				</_90mm_HE_M71>
+				</_90mm_M71_STA_1>
 			</shots>
 		</_90mm_Gun_Type61>
+		<_90mm_Gun_Type_61_MHI>
+			<userString>#japan_vehicles:_90mm_Gun_Type_61_MHI</userString>
+			<tags/>
+			<level>8</level>
+			<price>160000</price>
+			<impulse>
+				0.48
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.38
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_main_mb</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -19.0 1.0 -19.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 9.0 1.0 9.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				35.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				7.51142857142857
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>60</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1150</weight>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>7</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.377142857142857
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.12
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.5
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_90mm_M318A1_61>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1080</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>235 218</piercingPower>
+				</_90mm_M318A1_61>
+				<_90mm_Type_70_61>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>914</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>300 300</piercingPower>
+				</_90mm_Type_70_61>
+				<_90mm_M71_61>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>914</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>45 45</piercingPower>
+				</_90mm_M71_61>
+			</shots>
+		</_90mm_Gun_Type_61_MHI>
 		<_105mm_Cannon_Type_14>
 			<userString>#japan_vehicles:_105mm_Cannon_Type_14</userString>
 			<tags/>
@@ -5469,6 +7030,7 @@
 			<tags/>
 			<level>7</level>
 			<price>68500</price>
+			<notInShop>true</notInShop>
 			<impulse>
 				0.38
 				<!--BW_String-->
@@ -5575,10 +7137,232 @@
 				</_105mm_HE_Type92>
 			</shots>
 		</_105mm_Cannon_Type92>
+		<_105mm_Cannon_Type_92_O_Ni>
+			<userString>#japan_vehicles:_105mm_Cannon_Type_92_O_Ni</userString>
+			<tags/>
+			<level>6</level>
+			<price>68500</price>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.56
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -17.0 1.0 -17.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				21.875
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				10.2
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>42</maxAmmo>
+			<aimingTime>
+				2.3
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1792</weight>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.36
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_105mm_Type_95_O_Ni>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>820</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>175 153</piercingPower>
+				</_105mm_Type_95_O_Ni>
+				<_105mm_Type_95_Toku_Kou_O_Ni>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>820</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>218 198</piercingPower>
+				</_105mm_Type_95_Toku_Kou_O_Ni>
+				<_105mm_Type_92_O_Ni>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>765</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_Type_92_O_Ni>
+			</shots>
+		</_105mm_Cannon_Type_92_O_Ni>
+		<_105mm_Cannon_Type_92_O_I>
+			<userString>#japan_vehicles:_105mm_Cannon_Type_92_O_I</userString>
+			<tags/>
+			<level>5</level>
+			<price>68500</price>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.56
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -17.0 1.0 -17.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				21.875
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				10.2
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>42</maxAmmo>
+			<aimingTime>
+				2.3
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1792</weight>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.36
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_105mm_Type_95_O_I>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>800</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>175 153</piercingPower>
+				</_105mm_Type_95_O_I>
+				<_105mm_Type_95_Toku_Kou_O_I>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>800</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>201 176</piercingPower>
+				</_105mm_Type_95_Toku_Kou_O_I>
+				<_105mm_Type_92_O_I>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>765</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_Type_92_O_I>
+			</shots>
+		</_105mm_Cannon_Type_92_O_I>
 		<_105mm_Experimental_Tank_Gun>
 			<userString>#japan_vehicles:_105mm_Experimental_Tank_Gun</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>110000</price>
 			<impulse>
 				0.38
@@ -5650,7 +7434,7 @@
 						0.9
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>916</speed>
+					<speed>910</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -5663,15 +7447,15 @@
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>916</speed>
+					<speed>910</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>215 188</piercingPower>
+					<piercingPower>235 215</piercingPower>
 				</_105mm_AP_Experimental_Type2_TK>
-				<_105mm_HE_Type91>
+				<_105mm_Type_91_O_Ni>
 					<defaultPortion>
 						0.1
 						<!--BW_String-->
@@ -5683,7 +7467,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>53 53</piercingPower>
-				</_105mm_HE_Type91>
+				</_105mm_Type_91_O_Ni>
 			</shots>
 		</_105mm_Experimental_Tank_Gun>
 		<_105mm_Rifled_Gun>
@@ -5769,7 +7553,7 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>258 232</piercingPower>
 				</_105mm_APDS_L28A1>
-				<_105mm_HEAT-T_T384E4>
+				<_105mm_M456>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -5781,7 +7565,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>330 330</piercingPower>
-				</_105mm_HEAT-T_T384E4>
+				</_105mm_M456>
 				<_105mm_HEPT_Type75>
 					<defaultPortion>
 						0.05
@@ -5797,6 +7581,117 @@
 				</_105mm_HEPT_Type75>
 			</shots>
 		</_105mm_Rifled_Gun>
+		<_105mm_Rifled_Gun_61>
+			<userString>#japan_vehicles:_105mm_Rifled_Gun_61</userString>
+			<tags/>
+			<level>9</level>
+			<price>290000</price>
+			<impulse>
+				0.48
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.24
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 10.0 1.0 10.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				20.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				7.5
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>72</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1150</weight>
+			<maxHealth>208</maxHealth>
+			<maxRegenHealth>104</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.422857142857143
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.05
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_105mm_M392XB_61>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1185</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>258 232</piercingPower>
+				</_105mm_M392XB_61>
+				<_105mm_M456_61>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>950</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>330 330</piercingPower>
+				</_105mm_M456_61>
+				<_105mm_Type_75_61>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>950</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_Type_75_61>
+			</shots>
+		</_105mm_Rifled_Gun_61>
 		<_105mm_Gun_Type_91>
 			<userString>#japan_vehicles:_105mm_Gun_Type_91</userString>
 			<tags/>
@@ -5984,7 +7879,7 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>258 232</piercingPower>
 				</_105mm_APDS_L28A1>
-				<_105mm_HEAT-T_T384E4>
+				<_105mm_M456>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -5996,7 +7891,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>330 330</piercingPower>
-				</_105mm_HEAT-T_T384E4>
+				</_105mm_M456>
 				<_105mm_HEPT_Type75>
 					<defaultPortion>
 						0.05
@@ -6015,7 +7910,7 @@
 		<_105mm_Experimental_Tank_Gun_Kai>
 			<userString>#japan_vehicles:_105mm_Experimental_Tank_Gun_Kai</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>124000</price>
 			<impulse>
 				0.38
@@ -6087,20 +7982,20 @@
 						0.9
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>916</speed>
+					<speed>900</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>215 188</piercingPower>
+					<piercingPower>220 197</piercingPower>
 				</_105mm_AP_Experimental_Type2_TKK>
 				<_105mm_AP_Experimental_Type2_TS>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
 					</defaultPortion>
-					<speed>916</speed>
+					<speed>900</speed>
 					<gravity>
 						9.81
 						<!--BW_String-->
@@ -6354,7 +8249,7 @@
 		<_105mm_Type_92_Gun_Mod1952>
 			<userString>#japan_vehicles:_105mm_Type_92_Gun_Mod1952</userString>
 			<tags/>
-			<level>8</level>
+			<level>7</level>
 			<price>105000</price>
 			<impulse>
 				0.48
@@ -6419,7 +8314,7 @@
 					0.42
 					<!--BW_String-->
 				</afterShotDispersionRadius>
-				<coolingDelay>16</coolingDelay>
+				<coolingDelay>15</coolingDelay>
 			</dualAccuracy>
 			<shots>
 				<_105mm_AP_Type_92>
@@ -6577,7 +8472,7 @@
 		<_127mm_Gun_Type_89_J>
 			<userString>#japan_vehicles:_127mm_Gun_Type_89_J</userString>
 			<tags/>
-			<level>9</level>
+			<level>8</level>
 			<price>210000</price>
 			<impulse>
 				0.38
@@ -6688,7 +8583,7 @@
 		<_149mm_Gun_Type_96>
 			<userString>#japan_vehicles:_149mm_Gun_Type_96</userString>
 			<tags/>
-			<level>10</level>
+			<level>9</level>
 			<price>330000</price>
 			<impulse>
 				0.56
@@ -6799,7 +8694,7 @@
 		<_127mm_50_3rd_Year_Type>
 			<userString>#japan_vehicles:_127mm_50_3rd_Year_Type</userString>
 			<tags/>
-			<level>9</level>
+			<level>8</level>
 			<price>230000</price>
 			<impulse>
 				0.38
@@ -6871,6 +8766,117 @@
 						0.75
 						<!--BW_String-->
 					</defaultPortion>
+					<speed>830</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>242 219</piercingPower>
+				</_127mm_Capped_Common_Semi_AP>
+				<_127mm_Capped_Common>
+					<defaultPortion>
+						0.00
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>277 248</piercingPower>
+				</_127mm_Capped_Common>
+				<_127mm_Common_Type_0_HE>
+					<defaultPortion>
+						0.25
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>730</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>64 64</piercingPower>
+				</_127mm_Common_Type_0_HE>
+			</shots>
+		</_127mm_50_3rd_Year_Type>
+		<_127mm_50_3rd_Year_Type_O_Ho>
+			<userString>#japan_vehicles:_127mm_50_3rd_Year_Type_O_Ho</userString>
+			<tags/>
+			<level>8</level>
+			<price>100000</price>
+			<impulse>
+				0.38
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.65
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>large</recoilEffect>
+			</recoil>
+			<effects>shot_largeext_mb</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -17.0 1.0 -17.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 8.0 1.0 8.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				21.875
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				10.0
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>36</maxAmmo>
+			<aimingTime>
+				2.5
+				<!--BW_String-->
+			</aimingTime>
+			<weight>4245</weight>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.36
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					3.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_127mm_Capped_Common_Semi_AP_O_Ho>
+					<defaultPortion>
+						0.75
+						<!--BW_String-->
+					</defaultPortion>
 					<speed>910</speed>
 					<gravity>
 						9.81
@@ -6878,8 +8884,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>230 202</piercingPower>
-				</_127mm_Capped_Common_Semi_AP>
-				<_127mm_Capped_Common>
+				</_127mm_Capped_Common_Semi_AP_O_Ho>
+				<_127mm_Capped_Common_O_Ho>
 					<defaultPortion>
 						0.00
 						<!--BW_String-->
@@ -6891,8 +8897,8 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>258 231</piercingPower>
-				</_127mm_Capped_Common>
-				<_127mm_Common_Type_0_HE>
+				</_127mm_Capped_Common_O_Ho>
+				<_127mm_Common_Type_0_HE_O_Ho>
 					<defaultPortion>
 						0.25
 						<!--BW_String-->
@@ -6904,9 +8910,9 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>64 64</piercingPower>
-				</_127mm_Common_Type_0_HE>
+				</_127mm_Common_Type_0_HE_O_Ho>
 			</shots>
-		</_127mm_50_3rd_Year_Type>
+		</_127mm_50_3rd_Year_Type_O_Ho>
 		<_127mm_Gun_Type_89>
 			<userString>#japan_vehicles:_127mm_Gun_Type_89</userString>
 			<tags/>
@@ -7021,6 +9027,7 @@
 			<tags/>
 			<level>10</level>
 			<price>332000</price>
+			<notInShop>true</notInShop>
 			<impulse>
 				0.62
 				<!--BW_String-->
@@ -7127,11 +9134,123 @@
 				</_140mm_Common_Type_0_HE>
 			</shots>
 		</_140mm_50_3rd_Year_Type>
+		<_140mm_50_3rd_Year_Type_4>
+			<userString>#japan_vehicles:_140mm_50_3rd_Year_Type_4</userString>
+			<tags/>
+			<level>9</level>
+			<price>332000</price>
+			<impulse>
+				0.62
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.66
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>huge</recoilEffect>
+			</recoil>
+			<effects>shot_superhuge_mb</effects>
+			<reloadEffect>reload115_152</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -12.0 1.0 -12.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 4.0 1.0 4.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				26.25
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				13.5
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>25</maxAmmo>
+			<aimingTime>
+				3.0
+				<!--BW_String-->
+			</aimingTime>
+			<weight>5600</weight>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>115</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.38
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.08
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_140mm_Capped_Common_4>
+					<defaultPortion>
+						0.75
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>850</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>257 227</piercingPower>
+				</_140mm_Capped_Common_4>
+				<_140mm_Capped_Common_Kai_4>
+					<defaultPortion>
+						0.00
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>900</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>290 256</piercingPower>
+				</_140mm_Capped_Common_Kai_4>
+				<_140mm_Common_Type_0_4>
+					<defaultPortion>
+						0.25
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>750</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>70 70</piercingPower>
+				</_140mm_Common_Type_0_4>
+			</shots>
+		</_140mm_50_3rd_Year_Type_4>
 		<_150mm_Howitzer_Type96>
 			<userString>#japan_vehicles:_150mm_Howitzer_Type96</userString>
 			<tags/>
 			<level>7</level>
 			<price>71200</price>
+			<notInShop>true</notInShop>
 			<impulse>
 				0.56
 				<!--BW_String-->
@@ -7238,6 +9357,117 @@
 				</_150mm_HE_Type96>
 			</shots>
 		</_150mm_Howitzer_Type96>
+		<_150mm_Howitzer_Type_96_O_I>
+			<userString>#japan_vehicles:_150mm_Howitzer_Type_96_O_I</userString>
+			<tags/>
+			<level>6</level>
+			<price>71200</price>
+			<impulse>
+				0.56
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.24
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>huge</recoilEffect>
+			</recoil>
+			<effects>shot_huge</effects>
+			<reloadEffect>reload155_170</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -23.0 1.0 -23.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 7.0 1.0 7.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				23.625
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				18.8571428571429
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>18</maxAmmo>
+			<aimingTime>
+				2.85714285714286
+				<!--BW_String-->
+			</aimingTime>
+			<weight>1432</weight>
+			<maxHealth>230</maxHealth>
+			<maxRegenHealth>115</maxRegenHealth>
+			<repairCost>10</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.422857142857143
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.12
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_150mm_Type_1_O_I>
+					<defaultPortion>
+						0.25
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>500</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>121 109</piercingPower>
+				</_150mm_Type_1_O_I>
+				<_150mm_Type_3_O_I>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>500</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>150 150</piercingPower>
+				</_150mm_Type_3_O_I>
+				<_150mm_Type_96_O_I>
+					<defaultPortion>
+						0.75
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>540</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>75 75</piercingPower>
+				</_150mm_Type_96_O_I>
+			</shots>
+		</_150mm_Howitzer_Type_96_O_I>
 		<_150mm_45_41st_Year_Type>
 			<userString>#japan_vehicles:_150mm_45_41st_Year_Type</userString>
 			<tags/>
@@ -7302,9 +9532,9 @@
 				</whileGunDamaged>
 			</shotDispersionFactors>
 			<shots>
-				<_150mm_Common_Type_0_HE>
+				<_150mm_Common_Type_91>
 					<defaultPortion>
-						0.5
+						0.75
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>850</speed>
@@ -7313,24 +9543,11 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>75 75</piercingPower>
-				</_150mm_Common_Type_0_HE>
-				<_150mm_Common_Type_0_HE_Kai>
+					<piercingPower>257 242</piercingPower>
+				</_150mm_Common_Type_91>
+				<_150mm_Common_Type_91_Kai>
 					<defaultPortion>
 						0.0
-						<!--BW_String-->
-					</defaultPortion>
-					<speed>850</speed>
-					<gravity>
-						9.81
-						<!--BW_String-->
-					</gravity>
-					<maxDistance>720</maxDistance>
-					<piercingPower>192 192</piercingPower>
-				</_150mm_Common_Type_0_HE_Kai>
-				<_150mm_Common_Type_91_AP>
-					<defaultPortion>
-						0.5
 						<!--BW_String-->
 					</defaultPortion>
 					<speed>900</speed>
@@ -7339,8 +9556,21 @@
 						<!--BW_String-->
 					</gravity>
 					<maxDistance>720</maxDistance>
-					<piercingPower>252 227</piercingPower>
-				</_150mm_Common_Type_91_AP>
+					<piercingPower>290 274</piercingPower>
+				</_150mm_Common_Type_91_Kai>
+				<_150mm_Common_Type_0>
+					<defaultPortion>
+						0.25
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>750</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>130 130</piercingPower>
+				</_150mm_Common_Type_0>
 			</shots>
 		</_150mm_45_41st_Year_Type>
 		<_149mm_Gun_Type_97>
@@ -7757,7 +9987,7 @@
 					<maxDistance>720</maxDistance>
 					<piercingPower>258 248</piercingPower>
 				</_105mm_APDS_L28A1>
-				<_105mm_HEAT-T_T384E4>
+				<_105mm_M456>
 					<defaultPortion>
 						0.0
 						<!--BW_String-->
@@ -7769,7 +9999,7 @@
 					</gravity>
 					<maxDistance>720</maxDistance>
 					<piercingPower>330 330</piercingPower>
-				</_105mm_HEAT-T_T384E4>
+				</_105mm_M456>
 				<_105mm_HEPT_Type75>
 					<defaultPortion>
 						0.4

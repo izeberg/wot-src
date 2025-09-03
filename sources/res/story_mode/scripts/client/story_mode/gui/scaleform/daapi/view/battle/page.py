@@ -42,7 +42,7 @@ ONBOARDING_CONFIG = ComponentsConfig(config=(
 class OnboardingBattlePage(StoryModeBattlePageBase, ClassicPage):
     storyModeCtrl = dependency.descriptor(IStoryModeController)
 
-    def __init__(self, components=ONBOARDING_CONFIG, external=STORY_MODE_EXTERNAL_COMPONENTS, fullStatsAlias=None):
+    def __init__(self, components=ONBOARDING_CONFIG, external=STORY_MODE_EXTERNAL_COMPONENTS, fullStatsAlias=None, **kwargs):
         super(OnboardingBattlePage, self).__init__(components=components, external=external, fullStatsAlias=fullStatsAlias)
         self._visibleComponents = set()
 

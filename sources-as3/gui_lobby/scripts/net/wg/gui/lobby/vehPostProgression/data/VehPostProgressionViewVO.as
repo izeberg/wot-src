@@ -11,10 +11,6 @@ package net.wg.gui.lobby.vehPostProgression.data
       private static const VEHICLE_INFO:String = "vehicleInfo";
        
       
-      public var backBtnLabel:String = "";
-      
-      public var backBtnDescrLabel:String = "";
-      
       public var demountAllButtonLabel:String = "";
       
       public var nation:String = "";

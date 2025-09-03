@@ -9,6 +9,80 @@
 		</aspect>
 		<blocks>
 			<block>
+				<class>VariableReadOnly</class>
+				<id>VariableReadOnly_1</id>
+				<params>
+					<param>
+						HP_10
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						true
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						0.100000
+						<name>Initial Value</name>
+						<type>FloatT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\0.100000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>VariableReadOnly</class>
+				<id>VariableReadOnly_2</id>
+				<params>
+					<param>
+						HP_20
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						true
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						0.200000
+						<name>Initial Value</name>
+						<type>FloatT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\0.200000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
 				<class>Variable</class>
 				<id>Variable_4</id>
 				<params>
@@ -448,6 +522,241 @@
 				</params>
 				<slots/>
 			</block>
+			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_2</id>
+				<params>
+					<param>
+						Waiting
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_13</id>
+				<params>
+					<param>
+						onBattleWaiting
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_14</id>
+				<params>
+					<param>
+						onPlayerAutoAim_ON
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>OnPlayerAutoAim</class>
+				<id>OnPlayerAutoAim_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetAnyVehicle</class>
+				<id>GetAnyVehicle_1</id>
+				<params>
+					<param>
+						Enemy
+						<name>Vehicle Team</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>IsVehicleValid</class>
+				<id>IsVehicleValid_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_15</id>
+				<params>
+					<param>
+						onPlayerAutoAim_OFF
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareFloats</class>
+				<id>CompareFloats_5</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>MultiplyFloat</class>
+				<id>MultiplyFloat_1</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_17</id>
+				<params>
+					<param>
+						HP_10_output
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_3</id>
+				<buddy>VariableReadOnly_2</buddy>
+				<params>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_14</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_13</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>OnVehicleShaked</class>
+				<id>OnVehicleShaked_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVehicleHealth</class>
+				<id>GetVehicleHealth_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_16</id>
+				<params>
+					<param>
+						HP_20_output
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVehicleMaxHealth</class>
+				<id>GetVehicleMaxHealth_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>type</name>
+						<const>\current\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>CompareFloats</class>
+				<id>CompareFloats_6</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>MultiplyFloat</class>
+				<id>MultiplyFloat_2</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_18</id>
+				<params>
+					<param>
+						above_20HP_output
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_2</id>
+				<buddy>VariableReadOnly_1</buddy>
+				<params>
+					<param>
+						FloatT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
@@ -647,6 +956,138 @@
 				<input>onBattleStart</input>
 				<to>MacroOutput_5</to>
 				<output>start</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_2</from>
+				<input>onBattleWaiting</input>
+				<to>MacroOutput_13</to>
+				<output>start</output>
+			</connection>
+			<connection>
+				<from>OnPlayerAutoAim_1</from>
+				<input>onPlayerAutoAim_ON</input>
+				<to>MacroOutput_14</to>
+				<output>onEnabled</output>
+			</connection>
+			<connection>
+				<from>IsVehicleValid_2</from>
+				<input>active</input>
+				<to>OnPlayerAutoAim_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetAnyVehicle_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_2</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>OnPlayerAutoAim_1</from>
+				<input>onPlayerAutoAim_OFF</input>
+				<to>MacroOutput_15</to>
+				<output>onDisabled</output>
+			</connection>
+			<connection>
+				<from>GetVehicleHealth_1</from>
+				<input>a</input>
+				<to>CompareFloats_5</to>
+				<output>health</output>
+			</connection>
+			<connection>
+				<from>MultiplyFloat_1</from>
+				<input>b</input>
+				<to>CompareFloats_5</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVehicleMaxHealth_1</from>
+				<input>i0</input>
+				<to>MultiplyFloat_1</to>
+				<output>maxHealth</output>
+			</connection>
+			<connection>
+				<from>GetVariable_3</from>
+				<input>i1</input>
+				<to>MultiplyFloat_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_14</from>
+				<input>HP_10_output</input>
+				<to>MacroOutput_17</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_13</from>
+				<input>input</input>
+				<to>If_14</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>CompareFloats_6</from>
+				<input>value</input>
+				<to>If_14</to>
+				<output>less</output>
+			</connection>
+			<connection>
+				<from>OnVehicleShaked_2</from>
+				<input>input</input>
+				<to>If_13</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>CompareFloats_5</from>
+				<input>value</input>
+				<to>If_13</to>
+				<output>less</output>
+			</connection>
+			<connection>
+				<from>MacroInput_1</from>
+				<input>vehicle</input>
+				<to>GetVehicleHealth_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>If_14</from>
+				<input>HP_20_output</input>
+				<to>MacroOutput_16</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>MacroInput_1</from>
+				<input>vehicle</input>
+				<to>GetVehicleMaxHealth_1</to>
+				<output>vehicle</output>
+			</connection>
+			<connection>
+				<from>GetVehicleHealth_1</from>
+				<input>a</input>
+				<to>CompareFloats_6</to>
+				<output>health</output>
+			</connection>
+			<connection>
+				<from>MultiplyFloat_2</from>
+				<input>b</input>
+				<to>CompareFloats_6</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVehicleMaxHealth_1</from>
+				<input>i0</input>
+				<to>MultiplyFloat_2</to>
+				<output>maxHealth</output>
+			</connection>
+			<connection>
+				<from>GetVariable_2</from>
+				<input>i1</input>
+				<to>MultiplyFloat_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_13</from>
+				<input>above_20HP_output</input>
+				<to>MacroOutput_18</to>
+				<output>false</output>
 			</connection>
 		</connections>
 		<macros/>

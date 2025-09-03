@@ -7,13 +7,14 @@ package net.wg.gui.components.containers
    import flash.geom.Rectangle;
    import net.wg.data.daapi.LoadViewVO;
    import net.wg.infrastructure.base.UIComponentEx;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.infrastructure.interfaces.IManagedContent;
    import net.wg.infrastructure.interfaces.IView;
    import net.wg.infrastructure.wulf.IBaseContainerWrapper;
    import net.wg.infrastructure.wulf.IViewWrapper;
    import scaleform.clik.motion.Tween;
    
-   public class BaseContainerWrapper extends UIComponentEx implements IBaseContainerWrapper
+   public class BaseContainerWrapper extends UIComponentEx implements IBaseContainerWrapper, IInnerView
    {
       
       protected static const FADE_IN_TIME:int = 300;
@@ -31,6 +32,7 @@ package net.wg.gui.components.containers
       
       public function BaseContainerWrapper(param1:Boolean)
       {
+         visible = false;
          super();
          name = !!param1 ? "Unbound window" : "Wulf window";
          var _loc2_:Class = !!param1 ? UssWrapper : ViewWrapper;
@@ -69,6 +71,11 @@ package net.wg.gui.components.containers
          return null;
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return this._wrapper.isFullScreenModeSupported();
+      }
+      
       public function leaveModalFocus() : void
       {
       }
@@ -81,6 +88,7 @@ package net.wg.gui.components.containers
             this._tweenCompleteFunction = param2;
             this._tween = new Tween(FADE_OUT_TIME,this,{"alpha":0},{
                "paused":false,
+               "fastTransform":false,
                "onComplete":this.onHidingComplete
             });
             return true;
@@ -90,6 +98,7 @@ package net.wg.gui.components.containers
       
       public function playShowTween(param1:DisplayObject, param2:Function = null) : Boolean
       {
+         visible = true;
          if(this._wrapper.visible)
          {
             this.alpha = 0;
@@ -97,6 +106,7 @@ package net.wg.gui.components.containers
             this._tweenCompleteFunction = param2;
             this._tween = new Tween(FADE_IN_TIME,this,{"alpha":1},{
                "paused":false,
+               "fastTransform":false,
                "onComplete":this.onShowingComplete
             });
             return true;
@@ -137,9 +147,15 @@ package net.wg.gui.components.containers
          this._wrapper.updateParentSize(param1,param2);
       }
       
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._wrapper.updateParentSize(param1,param2,param3);
+      }
+      
       private function onHidingComplete(param1:Tween) : void
       {
          this._wrapper.onHidden();
+         visible = false;
          if(this._tweenCompleteFunction != null)
          {
             this._tweenCompleteFunction(param1);

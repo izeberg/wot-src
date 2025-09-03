@@ -121,6 +121,97 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					0.8
+					<!--BW_String-->
+				</endpixie>
+				<end>1</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_AP_1.eff</file>
+					<file>particles/Shells_Eff/blacksandHit_AP_1_2.eff</file>
+					<file>particles/Shells_Eff/blacksandHit_AP_1_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>1</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>0</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>fast</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						1.1 1.1
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_automatic_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_automatic_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -1619,6 +1710,100 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_1.eff</file>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_1_2.eff</file>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_1_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>fast</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						1.1 1.1
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.16
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_automatic_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_automatic_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -3116,6 +3301,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>1</innerRadius>
+					<outerRadius>5</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						5.0 5.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -4346,6 +4618,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.8
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_1.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -5847,6 +6212,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.8
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_1.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -7351,6 +7809,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.8
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -8855,6 +9406,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.8
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_6.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -10349,6 +10993,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>1</innerRadius>
+					<outerRadius>5</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						3.0 3.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -11577,6 +12308,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_1.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>1</innerRadius>
+					<outerRadius>5</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						3.0 3.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -12805,6 +13623,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>1</innerRadius>
+					<outerRadius>5</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						3.0 3.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -14033,6 +14938,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_1_6.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>1</innerRadius>
+					<outerRadius>5</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						3.0 3.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -15262,6 +16254,98 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						3.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						3.0 3.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -16741,6 +17825,98 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_1.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>0</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -18237,6 +19413,98 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>0</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -19736,6 +21004,98 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>0</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -21235,6 +22595,98 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_1_6.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>0</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						2.0 2.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_small_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_small_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -22728,6 +24180,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.8
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>3</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						5.0 5.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -24203,6 +25745,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>4</soundplaystop>
+				<endpixie>1</endpixie>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -25672,6 +27303,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>4</soundplaystop>
+				<endpixie>1</endpixie>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -27141,6 +28861,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.15
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>4</soundplaystop>
+				<endpixie>1</endpixie>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_6.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.5
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_small_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -28604,6 +30413,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						1.5
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>16</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						5.0 5.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -29859,6 +31755,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						1.5
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>16</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						5.0 5.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -31114,6 +33097,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						1.5
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>16</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						5.0 5.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -32369,6 +34439,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_2_6.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						1.5
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>16</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>11</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						5.0 5.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -33622,6 +35779,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -35064,6 +37310,101 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.3
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>
+							0.5
+							<!--BW_String-->
+						</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -36601,6 +38942,101 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.3
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>
+							0.5
+							<!--BW_String-->
+						</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -38138,6 +40574,101 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.3
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>
+							0.5
+							<!--BW_String-->
+						</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -39675,6 +42206,101 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.17
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Tank/auto_shoot/hits/blacksandHit_AP_CR_2_6.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.125
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.3
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>
+							0.5
+							<!--BW_String-->
+						</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>autocannons</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_medium_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_medium_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -41203,6 +43829,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					0.8
+					<!--BW_String-->
+				</endpixie>
+				<end>1</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						6.0 6.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -42654,6 +45370,93 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>8</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>13</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>18</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>13</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>6</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -43895,6 +46698,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -45326,6 +48218,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.4
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						6.0 6.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -46807,6 +49792,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					0.8
+					<!--BW_String-->
+				</endpixie>
+				<end>1</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						6.0 6.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -48269,6 +51344,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>8</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>13</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>18</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>13</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>6</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -49544,6 +52708,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -50972,6 +54225,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.6
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -52429,6 +55772,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					5.5
+					<!--BW_String-->
+				</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						10.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.2
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -53715,6 +57151,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -55152,6 +58677,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>2</endpixie>
+				<end>
+					1.4
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -56660,6 +60278,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.6
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_SA_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -58128,6 +61836,101 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					5.5
+					<!--BW_String-->
+				</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_SH_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						10.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.2
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactNPC_NPC>imp_artillery_expl_surface_large</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<impactPC_NPC>imp_artillery_expl_surface_large</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -59454,6 +63257,101 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					5.5
+					<!--BW_String-->
+				</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_SF_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						10.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.2
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactNPC_NPC>imp_artillery_expl_surface_large</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<impactPC_NPC>imp_artillery_expl_surface_large</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -60774,6 +64672,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_SC_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -62208,6 +66195,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>2</endpixie>
+				<end>
+					0.6
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.3
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>10</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>10</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -63650,6 +67727,90 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>5</innerRadius>
+					<outerRadius>15</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>45</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>55</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>45</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>25</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -64864,6 +69025,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.3
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>10</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>10</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -66298,6 +70548,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>6</endpixie>
+				<end>
+					1.4
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.23
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>3</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>9</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -67767,6 +72107,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>2</endpixie>
+				<end>
+					0.6
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_SA_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.3
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>10</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>10</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -69220,6 +73650,92 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_SH_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>5</innerRadius>
+					<outerRadius>15</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>45</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>55</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>45</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>25</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactNPC_NPC>imp_artillery_expl_surface_huge</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<impactPC_NPC>imp_artillery_expl_surface_huge</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -70465,6 +74981,92 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_SF_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>5</innerRadius>
+					<outerRadius>15</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>45</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>55</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>45</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>25</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactNPC_NPC>imp_artillery_expl_surface_huge</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<impactPC_NPC>imp_artillery_expl_surface_huge</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -71713,6 +76315,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.24
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_SC_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.3
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>10</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>10</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_huge_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_huge_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -73140,6 +77831,90 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>5</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HE_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>8</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>13</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>18</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>13</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>6</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<wwsound/>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<oilHit>
 			<timeline>
 				<lightingEnd>
@@ -74497,6 +79272,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryPrep_groundHit.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Null.vfx</effect_explosion_add>
+				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
+				<effect_explosion_snp>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_snp>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -74876,6 +79658,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit_snp.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Null.vfx</effect_explosion_add>
+				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
+				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_groundHit_snp.vfx</effect_explosion_snp>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -75252,6 +80041,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/airstrike_waterHit_snp.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_waterHit.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Strike_Eff/airstrike_groundHit.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Strike_Eff/airstrike_groundHit.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Strike_Eff/airstrike_groundHit_add.vfx</effect_explosion_add>
+				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/airstrike_groundHit_snp.vfx</effect_explosion_snp>
+				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -75633,6 +80429,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit_snp.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Null.vfx</effect_explosion_add>
+				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
+				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_groundHit_snp.vfx</effect_explosion_snp>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -76006,6 +80809,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/airstrike_waterHit_snp.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_waterHit.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Strike_Eff/airstrike_groundHit.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Strike_Eff/airstrike_groundHit.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Strike_Eff/airstrike_groundHit_add.vfx</effect_explosion_add>
+				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/airstrike_groundHit_snp.vfx</effect_explosion_snp>
+				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -76151,6 +80961,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					0.8
+					<!--BW_String-->
+				</endpixie>
+				<end>1</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						6.0 6.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -77289,6 +82189,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -78403,6 +83392,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -79521,6 +84599,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.4
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						1.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						6.0 6.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -80672,6 +85843,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					0.6
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -81814,6 +87075,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					5.5
+					<!--BW_String-->
+				</endpixie>
+				<end>6</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_HC_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						2.0
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						10.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.2
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>20</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>15</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0</color>
+						<multiplier>8</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						10.0 10.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.15
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -82833,6 +88187,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -83953,6 +89396,95 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>1</endpixie>
+				<end>
+					1.2
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<file>particles/Shells_Eff/blacksandHit_HC_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>6</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						4.0 4.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HC</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -85077,6 +90609,99 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.22
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>2</endpixie>
+				<end>
+					1.4
+					<!--BW_String-->
+				</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_CR_4.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.2
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>
+						2.0
+						<!--BW_String-->
+					</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>3</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>5</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.75
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						7.0 7.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.2
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_large_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_large_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -86255,6 +91880,96 @@
 				</sound>
 			</effects>
 		</groundHit>
+		<blacksandHit>
+			<timeline>
+				<lightingEnd>
+					0.2
+					<!--BW_String-->
+				</lightingEnd>
+				<soundplaystop>7</soundplaystop>
+				<endpixie>
+					0.8
+					<!--BW_String-->
+				</endpixie>
+				<end>1</end>
+			</timeline>
+			<effects>
+				<pixie>
+					<startKey>start</startKey>
+					<endKey>endpixie</endKey>
+					<orientBySurfaceNormal>true</orientBySurfaceNormal>
+					<alwaysUpdateModel>true</alwaysUpdateModel>
+					<file>particles/Shells_Eff/blacksandHit_AP_3.eff</file>
+					<force>1</force>
+				</pixie>
+				<light>
+					<startKey>start</startKey>
+					<endKey>lightingEnd</endKey>
+					<innerRadius>
+						0.15
+						<!--BW_String-->
+					</innerRadius>
+					<outerRadius>4</outerRadius>
+					<castShadows>false</castShadows>
+					<position>Scene Root</position>
+					<animation>
+						<time>
+							0.0
+							<!--BW_String-->
+						</time>
+						<color>255 85 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.25
+							<!--BW_String-->
+						</time>
+						<color>255 150 100</color>
+						<multiplier>4</multiplier>
+					</animation>
+					<animation>
+						<time>
+							0.50
+							<!--BW_String-->
+						</time>
+						<color>125 45 0</color>
+						<multiplier>2</multiplier>
+					</animation>
+					<animation>
+						<time>
+							1.0
+							<!--BW_String-->
+						</time>
+						<color>0 0 0 0</color>
+						<multiplier>1</multiplier>
+					</animation>
+				</light>
+				<decal>
+					<startKey>start</startKey>
+					<groupName>slow</groupName>
+					<texName>explosion_blacksand_AM</texName>
+					<bumpTexName>explosion_blacksand_NM</bumpTexName>
+					<smTexName>explosion_blacksand_GMM</smTexName>
+					<size>
+						6.0 6.0
+						<!--BW_String-->
+					</size>
+					<variation>
+						0.25
+						<!--BW_String-->
+					</variation>
+					<randomYaw>True</randomYaw>
+				</decal>
+				<sound>
+					<startKey>start</startKey>
+					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
+					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
+					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
+					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_AP</SWITCH_ext_shell_type>
+				</sound>
+			</effects>
+		</blacksandHit>
 		<sandHit>
 			<timeline>
 				<lightingEnd>
@@ -87621,6 +93336,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Shells_Eff/waterHit_HE_4.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Null.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Null.vfx</effect_explosion_add>
+				<effect_explosion_snp>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_snp>
+				<effect_smoke>particles/content_deferred/PFX/Null.vfx</effect_smoke>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -87991,6 +93713,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Null.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Environment/Storymode/ability_battleship_strike_groundHit.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Environment/Storymode/ability_battleship_strike_groundHit.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Null.vfx</effect_explosion_add>
+				<effect_smoke>particles/content_deferred/PFX/Null.vfx</effect_smoke>
+				<effect_explosion_snp>particles/content_deferred/PFX/Environment/Storymode/ability_battleship_strike_groundHit.vfx</effect_explosion_snp>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -88361,6 +94090,13 @@
 				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit_snp.vfx</effect_explosion_snp>
 				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_waterHit.vfx</effect_smoke>
 			</water>
+			<blacksand>
+				<effect_explosion_fwd>particles/content_forward/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion_fwd>
+				<effect_explosion>particles/content_deferred/PFX/Shells_Eff/blacksandHit_HE_4.vfx</effect_explosion>
+				<effect_explosion_add>particles/content_deferred/PFX/Null.vfx</effect_explosion_add>
+				<effect_smoke>particles/content_deferred/PFX/Strike_Eff/airstrike_smoke.vfx</effect_smoke>
+				<effect_explosion_snp>particles/content_deferred/PFX/Strike_Eff/artilleryStrike_groundHit_snp.vfx</effect_explosion_snp>
+			</blacksand>
 			<decal>
 				<groupName>fast</groupName>
 				<size>
@@ -88381,1126 +94117,4 @@
 			<wwtracer>artilleryStrike_tracer</wwtracer>
 		</artillery>
 	</storyModeArtilleryStrike>
-	<fepQfgRocket>
-		<caliber>90</caliber>
-		<projectile>
-			<model>objects/misc/shell_glow/shell_heavy.model</model>
-			<modelOwnShot>objects/misc/shell_player/shell_player_medium.model</modelOwnShot>
-			<effects>
-				<pixie>
-					<startKey>flying</startKey>
-					<endKey>stopFlying</endKey>
-					<position>Scene Root</position>
-					<file>particles/Tank/fep_qfg/shots/trace_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<tracerSound>
-					<startKey>flying</startKey>
-					<type>HE</type>
-					<endKey>stopFlying</endKey>
-					<wwsoundNPC>psb_artillery_main_NPC</wwsoundNPC>
-					<wwsoundPC>psb_artillery_main_PC</wwsoundPC>
-					<doppler>RTPC_ext_artillery_doppler_factor</doppler>
-					<tracerDelaySound>
-						<wwsoundEnemy>imp_artillery_close_body_main_enemy</wwsoundEnemy>
-						<wwsoundAlly>imp_artillery_close_body_main_ally</wwsoundAlly>
-						<delayBeforeEnd>
-							0.5
-							<!--BW_String-->
-						</delayBeforeEnd>
-					</tracerDelaySound>
-				</tracerSound>
-			</effects>
-		</projectile>
-		<targetImpulse>
-			0.56
-			<!--BW_String-->
-		</targetImpulse>
-		<targetStickers>
-			<armorResisted>main_ricochet_he</armorResisted>
-			<armorPierced>main_hole_he</armorPierced>
-		</targetStickers>
-		<groundHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>5</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<alwaysUpdateModel>true</alwaysUpdateModel>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_ground_AM</texName>
-					<bumpTexName>explosion_ground_NM</bumpTexName>
-					<smTexName>explosion_ground_GMM</smTexName>
-					<size>
-						7.0 7.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.2
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_ground</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</groundHit>
-		<oilHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>5</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<alwaysUpdateModel>true</alwaysUpdateModel>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_oil_AM</texName>
-					<bumpTexName>explosion_oil_NM</bumpTexName>
-					<smTexName>explosion_oil_GMM</smTexName>
-					<size>
-						7.0 7.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.2
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_oil</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</oilHit>
-		<dirtHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>5</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<alwaysUpdateModel>true</alwaysUpdateModel>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_dirt_AM</texName>
-					<bumpTexName>explosion_dirt_NM</bumpTexName>
-					<smTexName>explosion_dirt_GMM</smTexName>
-					<size>
-						7.0 7.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.2
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_dirt</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</dirtHit>
-		<sandHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>5</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<alwaysUpdateModel>true</alwaysUpdateModel>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>2</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_sand_AM</texName>
-					<bumpTexName>explosion_sand_NM</bumpTexName>
-					<smTexName>explosion_sand_GMM</smTexName>
-					<size>
-						8.0 8.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.2
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_sand</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</sandHit>
-		<snowHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>5</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<alwaysUpdateModel>true</alwaysUpdateModel>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_snow_AM</texName>
-					<bumpTexName>explosion_snow_NM</bumpTexName>
-					<smTexName>explosion_snow_GMM</smTexName>
-					<size>
-						9.0 9.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.2
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_snow</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</snowHit>
-		<armorResisted>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>
-					0.8
-					<!--BW_String-->
-				</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_PC>imp_main_not_pierce_HE_NPC_PC</impactNPC_PC>
-					<impactFNPC_PC>imp_ff_NPC_PC</impactFNPC_PC>
-					<impactPC_NPC>imp_main_not_pierce_HE_PC_NPC</impactPC_NPC>
-					<impactNPC_NPC>imp_main_not_pierce_HE_NPC_NPC</impactNPC_NPC>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</armorResisted>
-		<armorHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>1</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_PC>imp_main_pierce_HE_NPC_PC</impactNPC_PC>
-					<impactNPC_PC>imp_artillery_expl_main_NPC_PC</impactNPC_PC>
-					<impactFNPC_PC>imp_ff_NPC_PC</impactFNPC_PC>
-					<impactPC_NPC>imp_main_pierce_HE_PC_NPC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_main_PC_NPC</impactPC_NPC>
-					<impactNPC_NPC>imp_main_pierce_HE_NPC_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_main_NPC_NPC</impactNPC_NPC>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</armorHit>
-		<armorSplashHit>
-			<timeline>
-				<soundplaystop>7</soundplaystop>
-			</timeline>
-			<effects>
-				<splashSound>
-					<startKey>start</startKey>
-					<wwsoundPC>imp_main_splash_HE_NPC_PC</wwsoundPC>
-					<wwsoundPC>imp_artillery_splash_main_NPC_PC</wwsoundPC>
-				</splashSound>
-			</effects>
-		</armorSplashHit>
-		<armorCriticalHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>1</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_PC>imp_main_critical_HE_NPC_PC</impactNPC_PC>
-					<impactNPC_PC>imp_artillery_expl_main_NPC_PC</impactNPC_PC>
-					<impactFNPC_PC>imp_ff_NPC_PC</impactFNPC_PC>
-					<impactPC_NPC>imp_main_critical_HE_PC_NPC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_main_PC_NPC</impactPC_NPC>
-					<impactNPC_NPC>imp_main_critical_HE_NPC_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_main_NPC_NPC</impactNPC_NPC>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</armorCriticalHit>
-		<woodHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>1</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_stone_AM</texName>
-					<bumpTexName>explosion_stone_NM</bumpTexName>
-					<smTexName>explosion_stone_NO_GMM</smTexName>
-					<size>
-						6.0 6.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.25
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_wood</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</woodHit>
-		<stoneHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>5</endpixie>
-			</timeline>
-			<effects>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_stone_AM</texName>
-					<bumpTexName>explosion_stone_NM</bumpTexName>
-					<smTexName>explosion_stone_GMM</smTexName>
-					<size>
-						7.0 7.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.25
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>2</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_stone</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</stoneHit>
-		<metalHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>
-					0.8
-					<!--BW_String-->
-				</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<orientBySurfaceNormal>true</orientBySurfaceNormal>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>2</innerRadius>
-					<outerRadius>6</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.50
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<decal>
-					<startKey>start</startKey>
-					<groupName>slow</groupName>
-					<texName>explosion_metal_AM</texName>
-					<bumpTexName>explosion_metal_NM</bumpTexName>
-					<smTexName>explosion_metal_GMM</smTexName>
-					<size>
-						7.0 7.0
-						<!--BW_String-->
-					</size>
-					<variation>
-						0.2
-						<!--BW_String-->
-					</variation>
-					<randomYaw>True</randomYaw>
-				</decal>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_metal</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</metalHit>
-		<waterParams>
-			<shallowWaterDepth>
-				1.2
-				<!--BW_String-->
-			</shallowWaterDepth>
-			<rippleDiameter>
-				6.0
-				<!--BW_String-->
-			</rippleDiameter>
-		</waterParams>
-		<shallowWaterHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>6</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						2.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>8</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 85 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>255 150 100</color>
-						<multiplier>18</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.75
-							<!--BW_String-->
-						</time>
-						<color>125 45 0</color>
-						<multiplier>13</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>6</multiplier>
-					</animation>
-				</light>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_water</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</shallowWaterHit>
-		<deepWaterHit>
-			<timeline>
-				<lightingEnd>
-					0.2
-					<!--BW_String-->
-				</lightingEnd>
-				<soundplaystop>7</soundplaystop>
-				<endpixie>6</endpixie>
-			</timeline>
-			<effects>
-				<pixie>
-					<startKey>start</startKey>
-					<endKey>endpixie</endKey>
-					<file>particles/Tank/fep_qfg/shots/fep_qfg_hit_rocket.eff</file>
-					<force>1</force>
-				</pixie>
-				<light>
-					<startKey>start</startKey>
-					<endKey>lightingEnd</endKey>
-					<innerRadius>
-						1.0
-						<!--BW_String-->
-					</innerRadius>
-					<outerRadius>4</outerRadius>
-					<castShadows>false</castShadows>
-					<position>Scene Root</position>
-					<animation>
-						<time>
-							0.0
-							<!--BW_String-->
-						</time>
-						<color>255 0 115</color>
-						<multiplier>5</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.25
-							<!--BW_String-->
-						</time>
-						<color>205 0 255</color>
-						<multiplier>10</multiplier>
-					</animation>
-					<animation>
-						<time>
-							0.75
-							<!--BW_String-->
-						</time>
-						<color>10 10 95</color>
-						<multiplier>5</multiplier>
-					</animation>
-					<animation>
-						<time>
-							1.0
-							<!--BW_String-->
-						</time>
-						<color>0 0 0 0</color>
-						<multiplier>1</multiplier>
-					</animation>
-				</light>
-				<sound>
-					<startKey>start</startKey>
-					<impactNPC_NPC>imp_surface_main_NPC</impactNPC_NPC>
-					<impactNPC_NPC>imp_artillery_expl_surface_main</impactNPC_NPC>
-					<impactPC_NPC>imp_surface_main_PC</impactPC_NPC>
-					<impactPC_NPC>imp_artillery_expl_surface_main</impactPC_NPC>
-					<SWITCH_ext_impact_surface>SWITCH_ext_impact_surface_water</SWITCH_ext_impact_surface>
-					<SWITCH_ext_shell_type>SWITCH_ext_shell_type_HE</SWITCH_ext_shell_type>
-				</sound>
-			</effects>
-		</deepWaterHit>
-		<physicsParams>
-			<shellVelocity>1000</shellVelocity>
-			<shellMass>2100</shellMass>
-			<splashRadius>5</splashRadius>
-			<splashStrength>9</splashStrength>
-		</physicsParams>
-	</fepQfgRocket>
 </root>

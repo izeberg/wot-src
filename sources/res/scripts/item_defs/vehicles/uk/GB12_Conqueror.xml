@@ -19,7 +19,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.039
+			0.04
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -126,7 +126,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>35270</weight>
-		<maxHealth>1480</maxHealth>
+		<maxHealth>1600</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -2240,14 +2240,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>65504</maxLoad>
 			<terrainResistance>
-				1.2 1.5 2.5
+				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>48000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>29</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -4845,14 +4844,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>68000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>48000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>26</rotationSpeed>
+			<rotationSpeed>33</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -7500,7 +7498,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>13800</weight>
-			<maxHealth>370</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>160</maxHealth>
@@ -7575,7 +7573,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8670,7 +8668,7 @@
 			<price>59000</price>
 			<unlocks>
 				<gun>
-					_120mm_Gun_L1A1
+					_120mm_Gun_L1A1_214
 					<cost>60000</cost>
 				</gun>
 			</unlocks>
@@ -8731,7 +8729,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>14400</weight>
-			<maxHealth>470</maxHealth>
+			<maxHealth>400</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -8785,6 +8783,7 @@
 						<armor_7>
 							14
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_7>
 						<gun>40</gun>
 					</armor>
@@ -8804,7 +8803,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8986,13 +8985,13 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_32_pounder_Gun_OQF>
-				<_120mm_Gun_L1A1>
+				<_120mm_Gun_L1A1_214>
 					shared
 					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 10 0.416667 10 0.444444 4.5 0.555556 4.5 0.583333 10 1 10
+							0.00000 10.00 0.41667 10.00 0.44444 5.00 0.55556 5.00 0.58333 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -9033,6 +9032,7 @@
 						<armor_7>
 							14
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_7>
 						<gun>50</gun>
 					</armor>
@@ -9189,7 +9189,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_120mm_Gun_L1A1>
+				</_120mm_Gun_L1A1_214>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB12_Conqueror/normal/lod0/Turret_02.model</undamaged>
@@ -10186,118 +10186,59 @@
 		</Turret_2_GB12_Conqueror>
 	</turrets0>
 	<engines>
-		<Rolls_Royse_Meteor_MkIV>
+		<Rolls_Royce_Meteor_M120>
 			shared
 			<unlocks>
 				<engine>
-					Rolls_Royse_Meteor_MkIVC
-					<cost>31000</cost>
-				</engine>
-			</unlocks>
-		</Rolls_Royse_Meteor_MkIV>
-		<Rolls_Royse_Meteor_MkIVC>
-			shared
-			<unlocks>
-				<engine>
-					Rolls_Royse_Meteor_M120
-					<cost>27000</cost>
-				</engine>
-			</unlocks>
-		</Rolls_Royse_Meteor_MkIVC>
-		<Rolls_Royse_Meteor_M120>
-			shared
-			<unlocks>
-				<engine>
-					Rolls_Royce_Griffon
+					Rolls_Royce_Griffon_214
 					<cost>45000</cost>
 				</engine>
 			</unlocks>
-		</Rolls_Royse_Meteor_M120>
-		<Rolls_Royce_Griffon>shared</Rolls_Royce_Griffon>
+		</Rolls_Royce_Meteor_M120>
+		<Rolls_Royce_Griffon_214>shared</Rolls_Royce_Griffon_214>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<N19Mk3>
-			shared
-			<unlocks>
-				<radio>
-					N22
-					<cost>4500</cost>
-				</radio>
-			</unlocks>
-		</N19Mk3>
-		<N22>
-			shared
-			<unlocks>
-				<radio>
-					C42
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</N22>
 		<C42>shared</C42>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Rolls_Royse_Meteor_MkIV>
-					<smplEnginePower>
-						687.2327
-						<!--BW_String-->
-					</smplEnginePower>
+				<Rolls_Royce_Meteor_M120>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>
 						34.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_MkIV>
-				<Rolls_Royse_Meteor_MkIVC>
-					<smplEnginePower>
-						792.9609
-						<!--BW_String-->
-					</smplEnginePower>
+				</Rolls_Royce_Meteor_M120>
+				<Rolls_Royce_Griffon_214>
+					<smplEnginePower>1000</smplEnginePower>
 					<smplFwMaxSpeed>
 						34.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_MkIVC>
-				<Rolls_Royse_Meteor_M120>
-					<smplEnginePower>
-						856.3977
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>
-						34.3
-						<!--BW_String-->
-					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_M120>
-				<Rolls_Royce_Griffon>
-					<smplEnginePower>950</smplEnginePower>
-					<smplFwMaxSpeed>
-						34.3
-						<!--BW_String-->
-					</smplFwMaxSpeed>
-				</Rolls_Royce_Griffon>
+				</Rolls_Royce_Griffon_214>
 			</engines>
 			<chassis>
 				<Chassis_GB12_Conqueror>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

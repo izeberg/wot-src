@@ -156,7 +156,6 @@ package net.wg.gui.lobby.messengerBar.carousel
       {
          App.utils.scheduler.cancelTask(this.onAppStagePinCarouselWindowHandler);
          this._dataProvider.removeEventListener(Event.CHANGE,this.onDataProviderChangeHandler);
-         this._preBattlesGroup.removeEventListener(Event.RESIZE,this.onPreBattlesGroupResizeHandler,false);
          removeEventListener(ChannelListEvent.OPEN_CHANNEL,this.onChannelOpenChannelHandler);
          removeEventListener(ChannelListEvent.CLOSE_CHANNEL,this.onChannelCloseChannelHandler);
          this._appStage.removeEventListener(MessengerBarEvent.PIN_CAROUSEL_WINDOW,this.onAppStagePinCarouselWindowHandler);
@@ -164,9 +163,13 @@ package net.wg.gui.lobby.messengerBar.carousel
          this._appStage.removeEventListener(MessengerBarChannelCarouselEvent.CHANNEL_WINDOW_FOCUS_OUT,this.onAppStageChannelWindowFocusOutHandler);
          this._appStage.removeEventListener(MessengerBarChannelCarouselEvent.CHANNEL_WINDOW_SHOW,this.onAppStageChannelWindowShowHandler);
          this._appStage.removeEventListener(MessengerBarChannelCarouselEvent.CHANNEL_WINDOW_HIDE,this.onAppStageChannelWindowHideHandler);
-         removeChild(DisplayObject(this._preBattlesGroup));
-         this._preBattlesGroup.dispose();
-         this._preBattlesGroup = null;
+         if(this._preBattlesGroup)
+         {
+            this._preBattlesGroup.removeEventListener(Event.RESIZE,this.onPreBattlesGroupResizeHandler,false);
+            removeChild(DisplayObject(this._preBattlesGroup));
+            this._preBattlesGroup.dispose();
+            this._preBattlesGroup = null;
+         }
          this._battlesDataProvider.cleanUp();
          this._battlesDataProvider = null;
          this._dataProvider.cleanUp();

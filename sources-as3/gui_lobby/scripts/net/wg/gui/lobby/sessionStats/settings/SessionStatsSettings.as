@@ -2,6 +2,7 @@ package net.wg.gui.lobby.sessionStats.settings
 {
    import flash.display.InteractiveObject;
    import flash.events.Event;
+   import flash.geom.Rectangle;
    import net.wg.gui.lobby.sessionStats.SessionStatsPopover;
    import net.wg.gui.lobby.sessionStats.data.SessionStatsSettingsControlsVO;
    import net.wg.gui.lobby.sessionStats.data.SessionStatsSettingsVO;
@@ -113,7 +114,7 @@ package net.wg.gui.lobby.sessionStats.settings
          return undefined;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          setSize(param1,param2);
       }

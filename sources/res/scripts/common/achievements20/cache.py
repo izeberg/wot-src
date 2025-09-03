@@ -530,6 +530,15 @@ class Achievement(object):
 
             return result
 
+    def getStageValue(self, stage):
+        stages = self.__data.get('stages')
+        if stages is None or stage > len(stages) or stage <= 0:
+            return 0
+        return stages[(stage - 1)]['value']
+
+    def getID(self):
+        return self.__data.get('id')
+
 
 def init():
     g_cache.init()

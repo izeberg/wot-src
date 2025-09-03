@@ -12,6 +12,12 @@ package net.wg.gui.battle.views.prebattleInfo.questInfo
       
       public var questIcon:String = "";
       
+      public var isProgressAvailable:Boolean = false;
+      
+      public var canBeDisabled:Boolean = false;
+      
+      public var questStatus:String = "";
+      
       public function QuestInfoFlagVO(param1:Object = null)
       {
          super(param1);

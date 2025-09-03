@@ -1,8 +1,7 @@
-import logging
 from comp7_common.comp7_constants import ARENA_GUI_TYPE
 from helpers.tips import TipsCriteria, readTips
-_logger = logging.getLogger(__name__)
-_COMP7_TIPS_PATTERN = '^(comp7\\d+$)'
+_COMP7_TIPS_PATTERN = '^(comp7(Core|Ranked)\\d+$)'
+_comp7Tips = readTips(_COMP7_TIPS_PATTERN)
 
 class Comp7TipsCriteria(TipsCriteria):
 
@@ -11,6 +10,3 @@ class Comp7TipsCriteria(TipsCriteria):
 
     def _getArenaGuiType(self):
         return ARENA_GUI_TYPE.COMP7
-
-
-_comp7Tips = readTips(_COMP7_TIPS_PATTERN)

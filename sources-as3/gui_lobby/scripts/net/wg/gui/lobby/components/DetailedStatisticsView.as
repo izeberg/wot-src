@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.components
 {
    import flash.display.InteractiveObject;
+   import flash.geom.Rectangle;
    import net.wg.data.constants.Linkages;
    import net.wg.gui.components.common.containers.EqualWidthHorizontalLayout;
    import net.wg.gui.components.containers.GroupEx;
@@ -46,7 +47,7 @@ package net.wg.gui.lobby.components
          return this;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          this._layout.availableSize = param1;
          invalidateLayout();

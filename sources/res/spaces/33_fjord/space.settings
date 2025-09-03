@@ -24,7 +24,7 @@
 				<name>GBufferDecals</name>
 				<atlas>
 					<width>4096</width>
-					<height>2048</height>
+					<height>4352</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
@@ -36,7 +36,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>2048</height>
+					<height>4352</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
@@ -48,7 +48,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>2048</height>
+					<height>4352</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
@@ -80,7 +80,7 @@
 				<name>GBufferDecals</name>
 				<atlas>
 					<width>2048</width>
-					<height>1024</height>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -92,7 +92,7 @@
 				</atlas>
 				<atlas>
 					<width>2048</width>
-					<height>1024</height>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -104,7 +104,7 @@
 				</atlas>
 				<atlas>
 					<width>2048</width>
-					<height>1024</height>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -137,4 +137,5 @@
 	<enableClusteredShading>false</enableClusteredShading>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
 </root>

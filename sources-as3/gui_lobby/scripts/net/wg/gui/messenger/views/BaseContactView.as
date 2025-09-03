@@ -2,6 +2,7 @@ package net.wg.gui.messenger.views
 {
    import flash.display.InteractiveObject;
    import flash.events.Event;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import net.wg.gui.lobby.components.IResizableContent;
    import net.wg.gui.messenger.controls.ContactsBtnBar;
@@ -69,15 +70,20 @@ package net.wg.gui.messenger.views
          super.onDispose();
       }
       
-      public function as_closeView() : void
-      {
-         dispatchEvent(new Event(ON_CANCEL_CLICKED,true));
-      }
-      
       override protected function setInitData(param1:ContactsViewInitDataVO) : void
       {
          this._initData = param1;
          invalidate(INIT_DATA_INV);
+      }
+      
+      override protected function getContactsViewInitDataVOForData(param1:Object) : ContactsViewInitDataVO
+      {
+         return new ContactsViewInitDataVO(param1);
+      }
+      
+      public function as_closeView() : void
+      {
+         dispatchEvent(new Event(ON_CANCEL_CLICKED,true));
       }
       
       public function as_setOkBtnEnabled(param1:Boolean) : void
@@ -104,7 +110,7 @@ package net.wg.gui.messenger.views
          return new <InteractiveObject>[this.btns.btnOk,this.btns.btnCancel];
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          setSize(param1,param2);
          invalidate();
@@ -112,11 +118,6 @@ package net.wg.gui.messenger.views
       
       public function update(param1:Object) : void
       {
-      }
-      
-      override protected function getContactsViewInitDataVOForData(param1:Object) : ContactsViewInitDataVO
-      {
-         return new ContactsViewInitDataVO(param1);
       }
       
       protected function applyInitData(param1:ContactsViewInitDataVO) : void

@@ -1,5 +1,7 @@
 package net.wg.gui.components.crosshairPanel
 {
+   import net.wg.utils.StageSizeBoundaries;
+   
    public class CrosshairArcade extends CrosshairWithCassette
    {
       
@@ -20,6 +22,12 @@ package net.wg.gui.components.crosshairPanel
       private static const RELOAD_TIME_BLINK_Y_DASHED:int = 39;
       
       private static const RELOAD_TIME_BLINK_Y_SIEGE:int = 22;
+      
+      private static const RELOAD_TIME_BLINK_Y_PILLBOX:int = 22;
+      
+      private static const SIEGE_NET_SCALE_SMALL:Number = 0.65;
+      
+      private static const SIEGE_NET_SCALE_NORMAL:Number = 0.8;
        
       
       public function CrosshairArcade()
@@ -34,7 +42,16 @@ package net.wg.gui.components.crosshairPanel
       
       override protected function getReloadTimeBlinkYPos() : Array
       {
-         return [RELOAD_TIME_BLINK_Y_DIAGONAL,RELOAD_TIME_BLINK_Y_HORIZONTAL,RELOAD_TIME_BLINK_Y_RADIAL,RELOAD_TIME_BLINK_Y_DASHED,RELOAD_TIME_BLINK_Y_SIEGE];
+         return [RELOAD_TIME_BLINK_Y_DIAGONAL,RELOAD_TIME_BLINK_Y_HORIZONTAL,RELOAD_TIME_BLINK_Y_RADIAL,RELOAD_TIME_BLINK_Y_DASHED,RELOAD_TIME_BLINK_Y_SIEGE,RELOAD_TIME_BLINK_Y_PILLBOX];
+      }
+      
+      override protected function getSiegeNetScale(param1:Number, param2:Number) : Number
+      {
+         if(param1 < StageSizeBoundaries.WIDTH_1920)
+         {
+            return SIEGE_NET_SCALE_SMALL;
+         }
+         return SIEGE_NET_SCALE_NORMAL;
       }
    }
 }

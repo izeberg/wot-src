@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>68.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Tilter</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_059_Tilter/normal/lod0/hv4_059_Tilter_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.902204 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 2.182952</inTangent>
+				<outTangent>0.000000 0.000000 2.908587</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>12.033334</startTime>
+				<value>0.000000 0.000000 35.000000</value>
+				<inTangent>-0.000000 -0.000000 2.908587</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.966667</startTime>
+				<value>0.000000 0.000000 35.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 -1.973684</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.033335</startTime>
+				<value>0.000000 0.000000 25.000000</value>
+				<inTangent>-0.000000 -0.000000 -1.973684</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>39.033337</startTime>
+				<value>0.000000 0.000000 25.000000</value>
+				<inTangent>0.000000 0.000000 -1.431981</inTangent>
+				<outTangent>0.000000 0.000000 -1.431981</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+			<frame>
+				<startTime>53.000004</startTime>
+				<value>0.000000 0.000000 -15.000000</value>
+				<inTangent>0.000000 0.000000 -1.431981</inTangent>
+				<outTangent>0.000000 0.000000 -1.431981</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>62.266670</startTime>
+				<value>0.000000 0.000000 -15.000000</value>
+				<inTangent>0.000000 0.000000 1.308140</inTangent>
+				<outTangent>0.000000 0.000000 1.308140</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>68.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 2.616281</inTangent>
+				<outTangent>-0.000000 -0.000000 2.616281</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Hull</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_026_Tank_GER_Tiger2/normal/lod0/hv4_026_Tank_GER_Tiger2_Hull_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>68.000000</duration>
+				<value>Tilter|root</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.201950 -0.665156 -0.196519</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

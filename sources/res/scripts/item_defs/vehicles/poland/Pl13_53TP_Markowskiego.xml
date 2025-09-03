@@ -100,7 +100,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>29091</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1280</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1722,9 +1722,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>55000</maxLoad>
 			<terrainResistance>
-				1.1 1.7 2.5
+				1 1.4 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
@@ -4209,7 +4208,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1 1.4 2.1
 				<!--BW_String-->
@@ -6722,7 +6720,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11000</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -6776,7 +6774,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.402778 8 0.416667 6 0.433333 5 0.441667 4 0.558333 4 0.566667 6 0.602778 8 1 8
+							0.00000 8.00 0.40278 8.00 0.44167 4.00 0.55833 4.00 0.59722 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7956,7 +7954,7 @@
 			<price>41000</price>
 			<unlocks>
 				<gun>
-					_122mm_wz_53
+					_122mm_wz_53_53TP
 					<cost>46000</cost>
 				</gun>
 			</unlocks>
@@ -7986,7 +7984,7 @@
 			</armor>
 			<primaryArmor>armor_3 armor_11 armor_4</primaryArmor>
 			<weight>13000</weight>
-			<maxHealth>330</maxHealth>
+			<maxHealth>320</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -8094,7 +8092,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.402778 8 0.416667 6 0.433333 5 0.441667 4 0.558333 4 0.566667 6 0.602778 8 1 8
+							0.00000 8.00 0.40278 8.00 0.43889 4.00 0.56111 4.00 0.59722 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8226,7 +8224,7 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_105mm_Bofors_wz_34M>
-				<_122mm_wz_53>
+				<_122mm_wz_53_53TP>
 					shared
 					<maxAmmo>34</maxAmmo>
 					<unlocks>
@@ -8285,7 +8283,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 8 0.402778 8 0.416667 6 0.433333 5 0.441667 4 0.558333 4 0.566667 6 0.602778 8 1 8
+							0.00000 8.00 0.40278 8.00 0.43889 4.00 0.56111 4.00 0.59722 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8447,7 +8445,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122mm_wz_53>
+				</_122mm_wz_53_53TP>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl13_53TP_Markowskiego/normal/lod0/Turret_02.model</undamaged>
@@ -9423,19 +9421,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.13685
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

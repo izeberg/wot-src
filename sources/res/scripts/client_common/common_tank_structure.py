@@ -6,3 +6,5 @@ VehicleAppearanceCacheInfo = namedtuple('VehicleAppearanceCacheInfo', ('typeDesc
                                                                        'outfitCD',
                                                                        'forceDynAttachmentLoading',
                                                                        'entityGameObject'))
+VehicleAppearanceCacheInfo.__new__.__defaults__ = (
+ None, 0, False, False, '', False)

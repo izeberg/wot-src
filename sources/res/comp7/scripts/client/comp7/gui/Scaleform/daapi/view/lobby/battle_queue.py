@@ -1,10 +1,15 @@
 import constants
-from comp7.gui.impl.lobby.comp7_helpers import comp7_shared, comp7_i18n_helpers, comp7_model_helpers
-from gui.Scaleform.daapi.view.lobby.battle_queue import RandomQueueProvider
+from comp7.gui.impl.gen.view_models.views.lobby.enums import SeasonName
+from comp7.gui.impl.lobby.comp7_helpers import comp7_shared, comp7_i18n_helpers
+from comp7_core.gui.impl.lobby.comp7_core_helpers import comp7_core_model_helpers
+from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
 from gui.impl import backport
 from gui.impl.gen import R
+from helpers import dependency
+from skeletons.gui.game_control import IComp7Controller
 
 class Comp7QueueProvider(RandomQueueProvider):
+    __comp7Controller = dependency.descriptor(IComp7Controller)
 
     def processQueueInfo(self, qInfo):
         info = dict(qInfo)
@@ -47,7 +52,7 @@ class Comp7QueueProvider(RandomQueueProvider):
         return ''
 
     def __getRankData(self, rankName, playersCount, isHighlight):
-        seasonName = comp7_model_helpers.getSeasonNameEnum().value
+        seasonName = comp7_core_model_helpers.getSeasonNameEnum(self.__comp7Controller, SeasonName).value
         rankImg = R.images.comp7.gui.maps.icons.ranks.dyn(seasonName).c_40.dyn(rankName)
         rankStr = R.strings.comp7_ext.rank.dyn(rankName)
         return {'type': backport.text(rankStr()), 

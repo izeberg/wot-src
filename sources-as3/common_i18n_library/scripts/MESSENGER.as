@@ -677,6 +677,8 @@ package
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_RANKEDBONUSBATTLES:String = "#messenger:serviceChannelMessages/battleResults/quests/rankedBonusBattles";
       
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_PERSONAL_MISSIONS_POINTS:String = "#messenger:serviceChannelMessages/battleResults/quests/personal_missions_points";
+      
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_RANKEDBONUSBATTLES_PERSISTENT:String = "#messenger:serviceChannelMessages/battleResults/quests/rankedBonusBattles/persistent";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_QUESTS_RANKEDBONUSBATTLES_DAILY:String = "#messenger:serviceChannelMessages/battleResults/quests/rankedBonusBattles/daily";
@@ -692,6 +694,18 @@ package
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_1:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/1";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_2:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/2";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_3:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/3";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_3_HEADER:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/3/header";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_3_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/3/description";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_3_STAGE_3_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/3/stage/3/description";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_3_STAGE_2_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/3/stage/2/description";
+      
+      public static const SERVICECHANNELMESSAGES_BATTLERESULTS_NOTIFICATION_PERSONALMISSIONS_3_STAGE_1_DESCRIPTION:String = "#messenger:serviceChannelMessages/battleResults/notification/personalMissions/3/stage/1/description";
       
       public static const SERVICECHANNELMESSAGES_BATTLERESULTS_PERSONALMISSIONS_BOTH:String = "#messenger:serviceChannelMessages/battleResults/personalMissions/both";
       
@@ -922,6 +936,8 @@ package
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_TANKMENTOREMOVE:String = "#messenger:serviceChannelMessages/invoiceReceived/tankmenToRemove";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_BOOSTERS:String = "#messenger:serviceChannelMessages/invoiceReceived/boosters";
+      
+      public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_EXPIRABLEBOOSTERS:String = "#messenger:serviceChannelMessages/invoiceReceived/expirableBoosters";
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_BOOSTERS_DEBITED:String = "#messenger:serviceChannelMessages/invoiceReceived/boosters/debited";
       
@@ -2211,16 +2227,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_WOTPLUS_DAILYATTENDANCEREWARDED_BIG_CYCLEENDED_ENDTEXT:String = "#messenger:serviceChannelMessages/wotPlus/dailyAttendanceRewarded/big/cycleEnded/endText";
       
-      public static const SERVICECHANNELMESSAGES_WOTPLUS_SUBSCRIBERSBENEFITSONBOARDING_TITLE:String = "#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/title";
-      
-      public static const SERVICECHANNELMESSAGES_WOTPLUS_SUBSCRIBERSBENEFITSONBOARDING_BODY:String = "#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/body";
-      
-      public static const SERVICECHANNELMESSAGES_WOTPLUS_SUBSCRIBERSBENEFITSONBOARDING_ADDITIONALBONUSES:String = "#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/additionalBonuses";
-      
-      public static const SERVICECHANNELMESSAGES_WOTPLUS_SUBSCRIBERSBENEFITSONBOARDING_BATTLEBONUSES:String = "#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/battleBonuses";
-      
-      public static const SERVICECHANNELMESSAGES_WOTPLUS_SUBSCRIBERSBENEFITSONBOARDING_BADGES:String = "#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/badges";
-      
       public static const SERVICECHANNELMESSAGES_BATTLEBONUSES_AVAILABLE_TITLE:String = "#messenger:serviceChannelMessages/battleBonuses/available/title";
       
       public static const SERVICECHANNELMESSAGES_BATTLEBONUSES_UNAVAILABLE_TITLE:String = "#messenger:serviceChannelMessages/battleBonuses/unavailable/title";
@@ -2510,6 +2516,18 @@ package
       public static const SERVICECHANNELMESSAGES_COMMENDATIONS_LIVETAGS_ENABLE:String = "#messenger:serviceChannelMessages/commendations/liveTags/enable";
       
       public static const SERVICECHANNELMESSAGES_COMMENDATIONS_LIVETAGS_DISABLE:String = "#messenger:serviceChannelMessages/commendations/liveTags/disable";
+      
+      public static const SERVICECHANNELMESSAGES_COMMENDATIONS_BATTLERESULTS_COMMENDATIONSRECEIVED:String = "#messenger:serviceChannelMessages/commendations/battleResults/commendationsReceived";
+      
+      public static const SERVICECHANNELMESSAGES_PERSONALMISSION3QUEST_GOTOOPERATION:String = "#messenger:serviceChannelMessages/PersonalMission3Quest/goToOperation";
+      
+      public static const SERVICECHANNELMESSAGES_PERSONALMISSION3QUEST_AFFIRMATIVE:String = "#messenger:serviceChannelMessages/PersonalMission3Quest/affirmative";
+      
+      public static const SERVICECHANNELMESSAGES_PRESTIGEMILESTONE_ERROR:String = "#messenger:serviceChannelMessages/prestigeMilestone/error";
+      
+      public static const SERVICECHANNELMESSAGES_PRESTIGEMILESTONE_TITLE:String = "#messenger:serviceChannelMessages/prestigeMilestone/title";
+      
+      public static const SERVICECHANNELMESSAGES_PRESTIGEMILESTONE_TEXT:String = "#messenger:serviceChannelMessages/prestigeMilestone/text";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

@@ -157,11 +157,6 @@ msgstr ""
 msgid "artefact_apply/error_not_for_this_vehicle_type"
 msgstr "%(kind)s \"%(name)s\" does not fit this vehicle."
 
-msgid "artefact_apply/error_too_heavy"
-msgstr ""
-"%(kind)s \"%(name)s\" is too heavy. Consider replacing the suspension or "
-"reducing the vehicle's weight."
-
 msgid "artefact_apply/invalid_vehicle"
 msgstr "Wrong vehicle. %(kind)s \"%(name)s\" not mounted."
 
@@ -186,11 +181,6 @@ msgstr ""
 
 msgid "artefact_buy/error_not_for_this_vehicle_type"
 msgstr "%(kind)s \"%(name)s\" does not fit this vehicle."
-
-msgid "artefact_buy/error_too_heavy"
-msgstr ""
-"%(kind)s \"%(name)s\" is too heavy. Consider replacing the suspension or "
-"reducing the vehicle's weight."
 
 msgid "artefact_buy/invalid_module"
 msgstr "Unable to purchase %(kind)s \"%(name)s\". Wrong module."
@@ -270,11 +260,6 @@ msgstr ""
 
 msgid "artefact_remove/demount_kit_success"
 msgstr "%(kind)s \"%(name)s\" demounted from vehicle. You spent a Demounting Kit."
-
-msgid "artefact_remove/error_too_heavy"
-msgstr ""
-"Unable to demount %(kind)s \"%(name)s\". Consider replacing the suspension "
-"or lightening the vehicle."
 
 msgid "artefact_remove/incompatibleEqs"
 msgstr ""
@@ -358,11 +343,6 @@ msgstr "Failed to purchase %(kind)s \"%(name)s\". Not enough bonds."
 msgid "battleBooster_buy/error_not_for_this_vehicle_type"
 msgstr "%(kind)s \"%(name)s\" does not fit this vehicle."
 
-msgid "battleBooster_buy/error_too_heavy"
-msgstr ""
-"%(kind)s \"%(name)s\" is too heavy. Consider replacing the suspension or "
-"reducing the vehicle's weight."
-
 msgid "battleBooster_buy/eventCoin_error"
 msgstr "Unable to purchase %(kind)s \"%(name)s\". Not enough Anniversary Coins."
 
@@ -440,7 +420,7 @@ msgid "battlePass/extraFinish/body"
 msgstr "The %(name)s event has finished. Thank you for your participation!"
 
 msgid "battlePass/extraFinish/header"
-msgstr "Battle Pass: %(name)s Chapter"
+msgstr "Battle Pass: \"%(name)s\" Chapter"
 
 msgid "battlePass/extraStarted/body"
 msgstr ""
@@ -452,11 +432,11 @@ msgstr "Battle Pass: A New Chapter Is Available!"
 
 msgid "battlePass/extraWillEndSoon/body"
 msgstr ""
-"Commander! There is only a short time left before the %(name)s Chapter will "
-"end. Hurry up!"
+"Commander! There is only a short time left before the \"%(name)s\" Chapter "
+"will end. Hurry up!"
 
 msgid "battlePass/extraWillEndSoon/header"
-msgstr "Battle Pass: %(name)s Chapter"
+msgstr "Battle Pass: \"%(name)s\" Chapter"
 
 msgid "battlePass/gameModeEnabled/body/22"
 msgstr ""
@@ -507,6 +487,11 @@ msgstr ""
 "Battle Pass Points cannot be earned in Onslaught mode at the moment due to "
 "maintenance."
 
+msgid "battlePass/switch_disable/comp7Light/body"
+msgstr ""
+"Battle Pass Points cannot be earned in Onslaught Light mode at the moment "
+"due to maintenance."
+
 msgid "battlePass/switch_disable/epicBattle/body"
 msgstr ""
 "Battle Pass is temporarily unavailable in Frontline due to maintenance."
@@ -524,6 +509,11 @@ msgid "battlePass/switch_enabled/comp7/body"
 msgstr ""
 "Battle Pass Points can be earned in Onslaught again. We apologize for the "
 "inconvenience."
+
+msgid "battlePass/switch_enabled/comp7Light/body"
+msgstr ""
+"Battle Pass Points can be earned in Onslaught Light again. We apologize for "
+"the inconvenience."
 
 msgid "battlePass/switch_enabled/epicBattle/body"
 msgstr ""
@@ -1048,11 +1038,6 @@ msgstr "%(userName)s is already a member of a clan."
 msgid "clientInstallError_not_for_this_vehicle_type"
 msgstr "%s \"%s\" does not fit this vehicle."
 
-msgid "clientInstallError_too_heavy"
-msgstr ""
-"%s \"%s\" is too heavy. Consider replacing the suspension or lightening the "
-"vehicle."
-
 msgid "clientInstallError_vehicleGun_not_for_current_vehicle"
 msgstr "%s \"%s\" does not fit this turret. Replace the turret."
 
@@ -1064,9 +1049,6 @@ msgstr "%s \"%s\" is the wrong nation."
 
 msgid "clientRemoveError_not_in_list"
 msgstr "%s \"%s\" does not fit this vehicle."
-
-msgid "clientRemoveError_too_heavy"
-msgstr "%s \"%s\" is too heavy. Consider lightening the vehicle."
 
 msgid "clientRemoveError_wrong_item_type"
 msgstr "%s \"%s\" is the wrong type."
@@ -1243,10 +1225,10 @@ msgid "customization/added/projectionDecalValue"
 msgstr "%s decal added: (x%s)"
 
 msgid "customization/added/statTracker"
-msgstr "%s added"
+msgstr "Stat Tracker: %s added"
 
 msgid "customization/added/statTrackerValue"
-msgstr "%s added: (x%s)"
+msgstr "Stat Trackers: %s added: (x%s)"
 
 msgid "customization/added/style"
 msgstr "%s style added"
@@ -1353,10 +1335,10 @@ msgid "customization/removed/projectionDecalValue"
 msgstr "%s decal removed: (x%s)"
 
 msgid "customization/removed/statTracker"
-msgstr "%s removed"
+msgstr "Stat Tracker: %s removed"
 
 msgid "customization/removed/statTrackerValue"
-msgstr "%s removed: (x%s)"
+msgstr "Stat Trackers: %s removed: (x%s)"
 
 msgid "customization/removed/style"
 msgstr "%s style removed"
@@ -2334,27 +2316,26 @@ msgstr ""
 
 msgid "maps_black_list/select/success"
 msgstr ""
-"The %(mapName)s map was excluded from Random Battles of the Standard Battle "
-"type. You can change your selection in %(time)s."
+"The %(mapName)s map was excluded from Random Battles. You can change your "
+"selection in %(time)s."
 
 msgid "maps_black_list/select/success/noSubscriptions"
 msgstr ""
-"The %(mapName)s map was excluded from Random Battles of the Standard Battle "
-"type. You can change your selection in %(time)s, or you can unlock an "
-"additional slot by activating WoT Premium Account or subscribing to WoT "
-"Plus."
+"The %(mapName)s map was excluded from Random Battles. You can change your "
+"selection in %(time)s, or you can unlock an additional slot by activating "
+"WoT Premium Account or subscribing to WoT Plus."
 
 msgid "maps_black_list/select/success/premium"
 msgstr ""
-"The %(mapName)s map was excluded from Random Battles of the Standard Battle "
-"type. You can change your selection in %(time)s, or you can unlock an "
-"additional slot by subscribing to WoT Plus."
+"The %(mapName)s map was excluded from Random Battles. You can change your "
+"selection in %(time)s, or you can unlock an additional slot by subscribing "
+"to WoT Plus."
 
 msgid "maps_black_list/select/success/wotPlus"
 msgstr ""
-"The %(mapName)s map was excluded from Random Battles of the Standard Battle "
-"type. You can change your selection in %(time)s, or you can unlock an "
-"additional slot by activating WoT Premium Account."
+"The %(mapName)s map was excluded from Random Battles. You can change your "
+"selection in %(time)s, or you can unlock an additional slot by activating "
+"WoT Premium Account."
 
 msgid "maps_black_list/switch_off/body"
 msgstr ""
@@ -2434,15 +2415,6 @@ msgstr "%(kind)s \"%(name)s\" does not fit this vehicle."
 msgid "module_apply/error_not_with_installed_equipment"
 msgstr "Module %(kind)s \"%(name)s\" is not compatible with consumables \"%s\"."
 
-msgid "module_apply/error_too_heavy"
-msgstr ""
-"Module %(kind)s \"%(name)s\" is too heavy. Consider replacing the suspension"
-" or lightening the vehicle."
-
-msgid "module_apply/error_too_heavy_chassis"
-msgstr ""
-"Module %(kind)s \"%(name)s\" is too heavy. Consider lightening the vehicle."
-
 msgid "module_apply/error_wrong_item_type"
 msgstr "%(kind)s \"%(name)s\" is the wrong type."
 
@@ -2497,14 +2469,6 @@ msgstr "%(kind)s \"%(name)s\" does not fit this vehicle."
 
 msgid "module_buy/error_not_with_installed_equipment"
 msgstr "Module %(kind)s \"%(name)s\" is not compatible with consumables \"%s\"."
-
-msgid "module_buy/error_too_heavy"
-msgstr ""
-"%(kind)s \"%(name)s\" is too heavy. Consider replacing the suspension or "
-"lightening the vehicle."
-
-msgid "module_buy/error_too_heavy_chassis"
-msgstr "%(kind)s \"%(name)s\" is too heavy. Consider lightening the vehicle."
 
 msgid "module_buy/error_wrong_item_type"
 msgstr "%(kind)s \"%(name)s\" is the wrong type."
@@ -2611,9 +2575,6 @@ msgstr "Special unavailable."
 msgid "optionalDevices_apply/error"
 msgstr "Equipment configuration error. Please try again later."
 
-msgid "optionalDevices_apply/error_too_heavy"
-msgstr "Insufficient load capacity: consider lightening the vehicle."
-
 msgid "optionalDevices_apply/not_enough_money"
 msgstr ""
 "Equipment configuration error. Insufficient funds to make the purchase."
@@ -2625,9 +2586,6 @@ msgstr ""
 
 msgid "optionalDevices_remove/error"
 msgstr "Equipment configuration error. Please try again later."
-
-msgid "optionalDevices_remove/error_too_heavy"
-msgstr "Insufficient load capacity: consider lightening the vehicle."
 
 msgid "otherRestriction/nonFriendPrivateMessagesForbidden"
 msgstr ""
@@ -2657,6 +2615,74 @@ msgstr "Age Confirmation"
 msgid "periphery/errors/isNotAvailable"
 msgstr "Transfer is unavailable. Unable to define the server."
 
+msgid "personalMission/CompletionNotification/body"
+msgstr "Reward received:"
+
+msgid "personalMission/awardsNotification/buttonLabel"
+msgstr "Go to Operation"
+
+msgid "personalMission/awardsNotification/missionCompleted"
+msgstr "Mission completed"
+
+msgid "personalMission/awardsNotification/notCompletedFooter"
+msgstr "Switch vehicles to continue completing the mission."
+
+msgid "personalMission/awardsNotification/operation"
+msgstr "Operation: %(operation)s"
+
+msgid "personalMission/awardsNotification/status"
+msgstr "Completed: %(completed)s%(all)s"
+
+msgid "personalMission/awardsNotification/status/all"
+msgstr " / %(all)d"
+
+msgid "personalMission/campaignCompleteHonor/title"
+msgstr "%(campaignName)s campaign completed with honors!"
+
+msgid "personalMission/operationComplete/title"
+msgstr "%(operationName)s operation completed!"
+
+msgid "personalMission/operationCompleteHonor/title"
+msgstr "%(operationName)s operation completed with honors!"
+
+msgid "personalMission/switcherNotification/allCampaignsOff"
+msgstr "Campaigns are temporarily unavailable due to maintenance."
+
+msgid "personalMission/switcherNotification/allCampaignsOn"
+msgstr "Campaigns are available again. We apologize for the inconvenience."
+
+msgid "personalMission/switcherNotification/campaignOff"
+msgstr ""
+"The %(campaignName)s campaign is temporarily unavailable due to maintenance."
+
+msgid "personalMission/switcherNotification/campaignOn"
+msgstr ""
+"The %(campaignName)s campaign is available again. We apologize for the "
+"inconvenience."
+
+msgid "personalMission/switcherNotification/missionOff"
+msgstr ""
+"The %(missionName)s mission in the %(operationName)s operation is "
+"temporarily unavailable due to maintenance."
+
+msgid "personalMission/switcherNotification/missionOn"
+msgstr ""
+"The %(missionName)s mission in the %(operationName)s operation is available "
+"again. We apologize for the inconvenience."
+
+msgid "personalMission/switcherNotification/operationOff"
+msgstr ""
+"The %(operationName)s operation in the %(campaignName)s campaign is "
+"temporarily unavailable due to maintenance."
+
+msgid "personalMission/switcherNotification/operationOn"
+msgstr ""
+"The %(operationName)s operation in the %(campaignName)s campaign is "
+"available again. We apologize for the inconvenience."
+
+msgid "personalMissions/activateSeason/server_error"
+msgstr "Error switching campaigns. Please try again later."
+
 msgid "personalMissions/badge"
 msgstr "Badge %(name)s received."
 
@@ -2667,6 +2693,40 @@ msgid "personalMissions/camouflageUnlocked"
 msgstr ""
 "Unique Camouflage for %(vehicleName)s is available for all vehicles of "
 "nation: %(nation)s."
+
+msgid "personalMissions/campaign12Paused/body"
+msgstr ""
+"All operation progress has been saved. You can resume the campaigns at any "
+"time."
+
+msgid "personalMissions/campaign12Paused/title"
+msgstr "%(campaignName1)s and %(campaignName2)s campaigns paused"
+
+msgid "personalMissions/campaign12Resumed/body"
+msgstr "Paused operations and their missions have been resumed."
+
+msgid "personalMissions/campaign12Resumed/title"
+msgstr "%(campaignName1)s and %(campaignName2)s campaigns resumed"
+
+msgid "personalMissions/campaign3Paused/body"
+msgstr ""
+"All operation progress has been saved. You can resume the campaign at any "
+"time."
+
+msgid "personalMissions/campaign3Paused/title"
+msgstr "%(campaignName)s campaign paused"
+
+msgid "personalMissions/campaign3Resumed/body"
+msgstr "Paused operations have been resumed."
+
+msgid "personalMissions/campaign3Resumed/title"
+msgstr "%(campaignName)s campaign resumed"
+
+msgid "personalMissions/detailInstalled/body"
+msgstr "The %(detailName)s has been successfully mounted."
+
+msgid "personalMissions/detailInstalled/title"
+msgstr "Operation: %(operationName)s"
 
 msgid "personalMissions/discard/server_error"
 msgstr "Unable to reset the mission. Try again later."
@@ -2698,6 +2758,34 @@ msgstr ""
 "Orders returned: %(count)s\n"
 "They can be used again."
 
+msgid "personalMissions/operationActivation/body"
+msgstr "The first mission in each series has been activated."
+
+msgid "personalMissions/operationActivation/title"
+msgstr "%(operationName)s operation activated!"
+
+msgid "personalMissions/operationComplete/body"
+msgstr ""
+"Reward received: \n"
+"%(reward list)s"
+
+msgid "personalMissions/operationComplete/title"
+msgstr "%(name)s operation completed!"
+
+msgid "personalMissions/operationPaused/body"
+msgstr ""
+"All mission progress has been saved. You can resume the operation at any "
+"time."
+
+msgid "personalMissions/operationPaused/title"
+msgstr "%(operationName)s operation paused"
+
+msgid "personalMissions/operationResumed/body"
+msgstr "Paused missions have been resumed."
+
+msgid "personalMissions/operationResumed/title"
+msgstr "%(operationName)s operation resumed"
+
 msgid "personalMissions/pause/server_error"
 msgstr "The mission was not paused. Try again later."
 
@@ -2724,6 +2812,12 @@ msgstr "Error. Unable to commit an order at the moment."
 
 msgid "personalMissions/pawn/success"
 msgstr "Orders committed to the %(questName)s mission: %(count)s"
+
+msgid "personalMissions/reward/pm3/server_error"
+msgstr "Error receiving rewards. Please try again later."
+
+msgid "personalMissions/reward/pm3/success"
+msgstr "The %(detail_name)s has been successfully mounted."
 
 msgid "personalMissions/reward/regular/server_error"
 msgstr "Unable to claim reward. Please try again later."
@@ -2760,6 +2854,9 @@ msgstr "Missions not selected: %(questNames)s. Please try again later."
 
 msgid "personalMissions/select/server_error/DISABLED"
 msgstr "Action unavailable. Missions temporarily disabled."
+
+msgid "personalMissions/select/server_error/INVALID_QUEST_ID"
+msgstr "Missions not selected: %(questNames)s. Please try again later."
 
 msgid "personalMissions/select/server_error/LOCKED_BY_VEHICLE_QUEST"
 msgstr ""
@@ -2806,6 +2903,9 @@ msgstr ""
 
 msgid "personalMissions/tankmenGain"
 msgstr "Added: female crew member"
+
+msgid "personalMissions30/select/server_error"
+msgstr "Error activating operation. Please try again later."
 
 msgid "piggyBank/piggyBankFull"
 msgstr "Credit Reserve is full, but it will open in %(timeValue)s"
@@ -4495,6 +4595,12 @@ msgstr ""
 "%(userString)s researched. Undistributed experience spent: %(unspentXP)s. "
 "Free Experience spent: %(freeXP)s."
 
+msgid "vehicleMilestones/vanityAvailable/text"
+msgstr "The Elite Rewards system is now available for the %(vehicle)s"
+
+msgid "vehicleMilestones/vanityAvailable/title"
+msgstr "Elite Rewards"
+
 msgid "vehiclePostProgression/buyPairModification/body"
 msgstr ""
 "The %(modification)s modification for the %(vehicle)s successfully "
@@ -4596,6 +4702,24 @@ msgstr ""
 "Vehicle Modification Tree available. You can configure your vehicles "
 "according to their roles and change their characteristics using various "
 "modifications."
+
+msgid "vehicleSkillTreeProgression/processorError/body"
+msgstr "Upgrade error. Please try again later."
+
+msgid "vehicleSkillTreeProgression/processorError/title"
+msgstr "Error"
+
+msgid "vehicleSkillTreeProgression/researchStep/body"
+msgstr "\"%(perk)s\" node successfully researched for the %(vehicle)s."
+
+msgid "vehicleSkillTreeProgression/researchStep/title"
+msgstr "Node Researched"
+
+msgid "vehicleSkillTreeProgression/researchSteps/body"
+msgstr "%(perk)s nodes successfully researched for the %(vehicle)s."
+
+msgid "vehicleSkillTreeProgression/researchSteps/title"
+msgstr "Nodes Researched"
 
 msgid "vehicle_auto_return/server_error"
 msgstr "Operation is not available. Please try again later."
@@ -4967,6 +5091,33 @@ msgid "wallet/not_available_gold"
 msgstr ""
 "Acquisition of balance data is in progress. All your gold will be available "
 "soon."
+
+msgid "weekly_quests/reroll/WQ_NOT_ENABLED"
+msgstr "Unable to re-roll Weekly Mission: operation blocked."
+
+msgid "weekly_quests/reroll/WQ_NO_SUCH_TOKEN"
+msgstr "Unable to re-roll Weekly Mission: invalid mission."
+
+msgid "weekly_quests/reroll/WQ_QUEST_COMPLETED"
+msgstr "Unable to re-roll Weekly Mission: mission already completed."
+
+msgid "weekly_quests/reroll/WQ_REROLL_TIMEOUT"
+msgstr "Unable to re-roll Weekly Mission: operation suspended."
+
+msgid "weekly_quests/reroll/success"
+msgstr "Weekly Mission successfully re-rolled."
+
+msgid "weekly_quests/reroll/unknown_error"
+msgstr "Unable to re-roll Weekly Mission. Try again later."
+
+msgid "weekly_quests/switch_off/body"
+msgstr ""
+"Weekly Missions are temporarily unavailable. We apologize for the "
+"inconvenience."
+
+msgid "weekly_quests/switch_on/body"
+msgstr ""
+"Weekly Missions are available again. We apologize for the inconvenience."
 
 msgid "winback/turnOffBattlesError"
 msgstr "Unable to exit Warm-Up. Please try again later."

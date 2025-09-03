@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_60_ArmiesA_Bazooka/normal/lod3/Cus_60_ArmiesA_Bazooka_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.538019 -0.000312 -0.684889</min>
+		<max>0.015995 0.409462 0.655468</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_60_ArmiesA_Bazooka/normal/lod2/Cus_60_ArmiesA_Bazooka_01</nodefullVisual>
+	<tank>true</tank>
+</root>

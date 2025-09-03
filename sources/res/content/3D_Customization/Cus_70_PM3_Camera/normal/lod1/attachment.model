@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_70_PM3_Camera/normal/lod1/attachment</nodefullVisual>
+	<parent>content/3D_Customization/Cus_70_PM3_Camera/normal/lod2/attachment</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.427477 -0.200000 -0.216314</min>
+		<max>0.427477 0.689513 0.375290</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

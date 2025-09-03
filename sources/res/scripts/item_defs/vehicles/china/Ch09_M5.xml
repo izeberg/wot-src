@@ -2158,14 +2158,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>3550</weight>
-			<maxLoad>15750</maxLoad>
 			<terrainResistance>
-				0.9 1 2
+				0.8 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>16000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>36</rotationSpeed>
+			<rotationSpeed>53</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -4659,14 +4658,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>3550</weight>
-			<maxLoad>18000</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>17500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>55</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -7196,7 +7194,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>340</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>60</maxHealth>
 				<maxRegenHealth>30</maxRegenHealth>
@@ -7206,7 +7204,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_37mm_M-6_L53>
+				<_37mm_M6>
 					shared
 					<maxAmmo>185</maxAmmo>
 					<pitchLimits>
@@ -7218,7 +7216,7 @@
 					</pitchLimits>
 					<unlocks>
 						<gun>
-							_47mm_Gun_Type_1
+							_47mm_Gun_Type_1_M5
 							<cost>1200</cost>
 						</gun>
 					</unlocks>
@@ -7245,16 +7243,16 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.11
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -7331,8 +7329,8 @@
 						</density>
 						<aoTextureSize>256 128</aoTextureSize>
 					</camouflage>
-				</_37mm_M-6_L53>
-				<_47mm_Gun_Type_1>
+				</_37mm_M6>
+				<_47mm_Gun_Type_1_M5>
 					shared
 					<maxAmmo>105</maxAmmo>
 					<pitchLimits>
@@ -7375,12 +7373,12 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.5
+						2.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.13
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7460,7 +7458,7 @@
 						</density>
 						<aoTextureSize>256 128</aoTextureSize>
 					</camouflage>
-				</_47mm_Gun_Type_1>
+				</_47mm_Gun_Type_1_M5>
 			</guns>
 			<models>
 				<undamaged>vehicles/chinese/Ch09_M5/normal/lod0/Turret_01.model</undamaged>
@@ -8088,7 +8086,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_37mm_M-6_L53>
+				<_37mm_M6>
 					shared
 					<maxAmmo>220</maxAmmo>
 					<pitchLimits>
@@ -8121,11 +8119,11 @@
 						<gun>10</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -8207,8 +8205,8 @@
 						</density>
 						<aoTextureSize>256 128</aoTextureSize>
 					</camouflage>
-				</_37mm_M-6_L53>
-				<_47mm_Gun_Type_1>
+				</_37mm_M6>
+				<_47mm_Gun_Type_1_M5>
 					shared
 					<maxAmmo>130</maxAmmo>
 					<pitchLimits>
@@ -8245,7 +8243,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.5
+						2.8
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8321,7 +8319,7 @@
 						</density>
 						<aoTextureSize>256 128</aoTextureSize>
 					</camouflage>
-				</_47mm_Gun_Type_1>
+				</_47mm_Gun_Type_1_M5>
 			</guns>
 			<models>
 				<undamaged>vehicles/chinese/Ch09_M5/normal/lod0/Turret_02.model</undamaged>
@@ -8751,70 +8749,55 @@
 			shared
 			<unlocks>
 				<engine>
-					Continental_R-975-C1
+					Continental_R_975_C1
 					<cost>550</cost>
 				</engine>
 			</unlocks>
 		</Twin_Cadillac_42series>
-		<Continental_R-975-C1>shared</Continental_R-975-C1>
+		<Continental_R_975_C1>shared</Continental_R_975_C1>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_506
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_506>shared</SCR_506>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
 				<Twin_Cadillac_42series>
-					<smplEnginePower>
-						312.9552
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>410</smplEnginePower>
 					<smplFwMaxSpeed>
 						64.4
 						<!--BW_String-->
 					</smplFwMaxSpeed>
 				</Twin_Cadillac_42series>
-				<Continental_R-975-C1>
-					<smplEnginePower>
-						422.9124
-						<!--BW_String-->
-					</smplEnginePower>
+				<Continental_R_975_C1>
+					<smplEnginePower>440</smplEnginePower>
 					<smplFwMaxSpeed>
 						64.4
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Continental_R-975-C1>
+				</Continental_R_975_C1>
 			</engines>
 			<chassis>
 				<Chassis_Ch09_M5>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.161
+								0.1449
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0805
+								0.07245
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

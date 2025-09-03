@@ -19,7 +19,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.065
+			0.066
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -105,7 +105,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>17450</weight>
-		<maxHealth>960</maxHealth>
+		<maxHealth>1000</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2016,14 +2016,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>13000</weight>
-			<maxLoad>41500</maxLoad>
 			<terrainResistance>
-				1.3 1.5 3.1
+				1.2 1.4 2.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>22</rotationSpeed>
+			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -3836,14 +3835,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>13000</weight>
-			<maxLoad>45000</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>40000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>33</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -5671,7 +5669,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7680</weight>
-			<maxHealth>140</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -5691,11 +5689,11 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_KwK41_L58_conic>
+				<_75_55_mm_Waffe_0725>
 					shared
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -5723,12 +5721,9 @@
 						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						4.4
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>4</reloadTime>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -5827,7 +5822,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_KwK41_L58_conic>
+				</_75_55_mm_Waffe_0725>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G15_VK3601H/normal/lod0/Turret_01.model</undamaged>
@@ -6652,7 +6647,7 @@
 			<price>14560</price>
 			<unlocks>
 				<gun>
-					_88mm_KwK_36_L56
+					_88mm_Kw_K_36_L_56_3601
 					<cost>9500</cost>
 				</gun>
 			</unlocks>
@@ -6674,7 +6669,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8250</weight>
-			<maxHealth>240</maxHealth>
+			<maxHealth>250</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -6698,7 +6693,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_75mm_KwK41_L58_conic>
+				<_75_55_mm_Waffe_0725>
 					shared
 					<armor>
 						<armor_1>
@@ -6719,12 +6714,9 @@
 						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						4.2
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>4</reloadTime>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6734,7 +6726,7 @@
 					<maxAmmo>85</maxAmmo>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -6831,8 +6823,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_75mm_KwK41_L58_conic>
-				<_88mm_KwK_36_L56>
+				</_75_55_mm_Waffe_0725>
+				<_88mm_Kw_K_36_L_56_3601>
 					shared
 					<unlocks>
 						<vehicle>
@@ -6974,7 +6966,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_88mm_KwK_36_L56>
+				</_88mm_Kw_K_36_L_56_3601>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G15_VK3601H/normal/lod0/Turret_02.model</undamaged>
@@ -7914,17 +7906,14 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_174_V1>
-					<smplEnginePower>450</smplEnginePower>
+					<smplEnginePower>510</smplEnginePower>
 					<smplFwMaxSpeed>
 						50.5
 						<!--BW_String-->
 					</smplFwMaxSpeed>
 				</Maybach_HL_174_V1>
 				<Maybach_HL_174>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>550</smplEnginePower>
 					<smplFwMaxSpeed>
 						50.5
 						<!--BW_String-->
@@ -7936,19 +7925,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.24955
+								0.23345
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

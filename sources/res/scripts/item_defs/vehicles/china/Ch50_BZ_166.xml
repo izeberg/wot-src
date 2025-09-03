@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>26536</weight>
-		<maxHealth>1200</maxHealth>
+		<maxHealth>1320</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1884,9 +1884,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>55000</maxLoad>
 			<terrainResistance>
-				1.1 1.7 2.5
+				1 1.4 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>34500</brakeForce>
@@ -3721,7 +3720,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>58000</maxLoad>
 			<terrainResistance>
 				1 1.4 2.1
 				<!--BW_String-->
@@ -5584,7 +5582,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11900</weight>
-			<maxHealth>250</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5594,7 +5592,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>350</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -5683,13 +5681,16 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.44
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>16</reloadTime>
+					<reloadTime>
+						14.4
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5702,7 +5703,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						3.2
+						2.9
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -7107,7 +7108,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11500</weight>
-			<maxHealth>300</maxHealth>
+			<maxHealth>330</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7117,7 +7118,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>350</circularVisionRadius>
+			<circularVisionRadius>360</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -7238,16 +7239,13 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.44
+						0.42
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						15.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>14</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7259,7 +7257,10 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>3</aimingTime>
+					<aimingTime>
+						2.8
+						<!--BW_String-->
+					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -8600,15 +8601,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<A-220_1>
-			shared
-			<unlocks>
-				<radio>
-					A-220B
-					<cost>9500</cost>
-				</radio>
-			</unlocks>
-		</A-220_1>
 		<A-220B>shared</A-220B>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -8616,11 +8608,11 @@
 		<detailed>
 			<engines>
 				<V_2_54SCR>
-					<smplEnginePower>550</smplEnginePower>
+					<smplEnginePower>720</smplEnginePower>
 					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</V_2_54SCR>
 				<V_2_54SCM>
-					<smplEnginePower>700</smplEnginePower>
+					<smplEnginePower>770</smplEnginePower>
 					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</V_2_54SCM>
 			</engines>
@@ -8630,19 +8622,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.13685
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>
@@ -8755,11 +8747,9 @@
 		<collision/>
 		<damagedStateGroup>large</damagedStateGroup>
 	</effects>
-	<effectsPrefab>
-		<rocketAcceleration>
-			<prefab>particles/Tank/rocket_accelerator/Ch50_BZ_166_Rocket.prefab</prefab>
-		</rocketAcceleration>
-	</effectsPrefab>
+	<prefabs>
+		<mechanicEffects>particles/Tank/rocket_accelerator/Ch50_BZ_166_Rocket.prefab</mechanicEffects>
+	</prefabs>
 	<emblems>
 		<default>15505</default>
 		<lodDist>MEDIUM</lodDist>

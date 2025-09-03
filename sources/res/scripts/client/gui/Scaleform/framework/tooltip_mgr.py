@@ -49,6 +49,13 @@ class ToolTip(ToolTipMgrMeta):
         self.onHide = SafeEvent(self.__em)
         return
 
+    @property
+    def tooltipWindow(self):
+        if self.__tooltipWindowId:
+            return self.gui.windowsManager.getWindow(self.__tooltipWindowId)
+        else:
+            return
+
     def show(self, data, linkage):
         self.as_showS(data, linkage, self.__fastRedraw)
 
@@ -92,6 +99,7 @@ class ToolTip(ToolTipMgrMeta):
         else:
             if not self._isAllowedTypedTooltip:
                 return
+            _logger.debug('onCreateTypedTooltip type: %r args: %r stateType: %r', tooltipType, args, stateType)
             id = _id_generator.next()
             region = ('Typed tooltip {} {}').format(tooltipType, id)
             name = ('tooltip {}').format(tooltipType)
@@ -127,7 +135,7 @@ class ToolTip(ToolTipMgrMeta):
                     self._dynamic[tooltipType] = data
             return
 
-    def onCreateWulfTooltip(self, tooltipType, args, x, y, parent=None):
+    def onCreateWulfTooltip(self, tooltipType, args, x, y, parent=None, ownerViewID=None):
         if not self._isAllowedTypedTooltip:
             return
         else:
@@ -137,7 +145,7 @@ class ToolTip(ToolTipMgrMeta):
             else:
                 _logger.warning('Tooltip can not be displayed: type "%s" is not found', tooltipType)
                 return
-            window = data.getDisplayableData(parent=parent, *args)
+            window = data.getDisplayableData(parent=parent, ownerViewID=ownerViewID, *args)
             window.load()
             window.move(x, y)
             window.onStatusChanged += self._onWulfWindowStatusChanged

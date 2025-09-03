@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from account_helpers.settings_core.ServerSettingsManager import UI_STORAGE_KEYS
 from gui.impl.gen import R
