@@ -2085,7 +2085,7 @@
 	</hull>
 	<chassis>
 		<T42_StoryMode>
-			<userString>#usa_vehicles:T42</userString>
+			<userString>#usa_vehicles:Chassis_A05_M4_Sherman_2</userString>
 			<tags/>
 			<level>5</level>
 			<price>8300</price>
@@ -2094,7 +2094,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>32300</maxLoad>
 			<terrainResistance>
 				1 1.1 1.7
 				<!--BW_String-->
@@ -4910,7 +4909,7 @@
 	</chassis>
 	<turrets0>
 		<D51072_StoryMode>
-			<userString>#usa_vehicles:D51072</userString>
+			<userString>#usa_vehicles:Turret_2_A05_M4_Sherman</userString>
 			<tags/>
 			<notInShop>true</notInShop>
 			<level>5</level>

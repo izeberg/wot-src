@@ -3,7 +3,7 @@ from frameworks.wulf import ViewModel
 class VehicleParamIndicatorViewModel(ViewModel):
     __slots__ = ()
 
-    def __init__(self, properties=6, commands=0):
+    def __init__(self, properties=8, commands=0):
         super(VehicleParamIndicatorViewModel, self).__init__(properties=properties, commands=commands)
 
     def getIsUseAnim(self):
@@ -42,6 +42,18 @@ class VehicleParamIndicatorViewModel(ViewModel):
     def setMinValue(self, value):
         self._setNumber(5, value)
 
+    def getCurrentPercent(self):
+        return self._getNumber(6)
+
+    def setCurrentPercent(self, value):
+        self._setNumber(6, value)
+
+    def getModifiedPercent(self):
+        return self._getNumber(7)
+
+    def setModifiedPercent(self, value):
+        self._setNumber(7, value)
+
     def _initialize(self):
         super(VehicleParamIndicatorViewModel, self)._initialize()
         self._addBoolProperty('isUseAnim', False)
@@ -50,3 +62,5 @@ class VehicleParamIndicatorViewModel(ViewModel):
         self._addNumberProperty('maxValue', 0)
         self._addNumberProperty('value', 0)
         self._addNumberProperty('minValue', 0)
+        self._addNumberProperty('currentPercent', 0)
+        self._addNumberProperty('modifiedPercent', 0)

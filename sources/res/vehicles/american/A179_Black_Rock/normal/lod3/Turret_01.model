@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A179_Black_Rock/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A179_Black_Rock/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.196705 -0.004506 -2.958683</min>
+		<max>1.201700 3.237010 1.362568</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

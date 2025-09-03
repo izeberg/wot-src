@@ -250,11 +250,6 @@ msgstr ""
 "Purchase and mount %(kind)s \"%(name)s\" on the current vehicle for "
 "%(price)s credits?"
 
-msgid "buyInstallConfirmation/notEnoughWeight"
-msgstr ""
-"{red_Open}Insufficient load capacity{red_Close},\n"
-"the equipment will be sent to the Depot."
-
 msgid "buyInstallConfirmation/submit"
 msgstr "Purchase"
 
@@ -772,6 +767,12 @@ msgstr "Total:"
 msgid "confirmUnlock/cancel"
 msgstr "No"
 
+msgid "confirmUnlock/content/currencyBlock/text"
+msgstr "{{xp}} (including {{freeXP}})?"
+
+msgid "confirmUnlock/content/researchItem/text"
+msgstr "Research {{items}} for"
+
 msgid "confirmUnlock/item/message"
 msgstr ""
 "Research %(typeString)s %(userString)s for "
@@ -981,6 +982,12 @@ msgstr "Sell %(name)s for %(price)s%(creditsIcon)s?"
 
 msgid "customizationConfirmSell/title"
 msgstr "Confirm Sale"
+
+msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgDays"
+msgstr "every %(days)s d"
+
+msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgDaysHours"
+msgstr "every %(days)s d %(hours)s h"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
 msgstr "every %(hours)s h"
@@ -3396,7 +3403,7 @@ msgstr ""
 "but all Dual Modifications will be canceled."
 
 msgid "vehicleSellDialog/price/sign/add"
-msgstr "+ "
+msgstr "+"
 
 msgid "vehicleSellDialog/proffit"
 msgstr "Received:"

@@ -88,7 +88,7 @@
 						<Texture>content/Environment/hd_env_UNI_166_ZeppelinDebris/hd_env_UNI_166_ZeppelinDebris_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.998650 2.908117 -1.014769</groupOrigin>
+				<groupOrigin>-1.998650 2.856431 -1.014769</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -165,5 +165,5 @@
 		<max>6.473228 6.736444 3.644909</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>75856</geometrySize>
+	<geometrySize>76400</geometrySize>
 </root>

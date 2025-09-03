@@ -88,6 +88,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const SHOP_ENTRY_X:int = 0;
       
       private static const SHORT_LIST_MAX_LEFT_OFFSET:int = 90;
+      
+      private static const INVALID_BOOKMARKS_LAYOUT:String = "InvalidBookmarksLayout";
        
       
       public var emptyStateComponent:EmptyStateComponent = null;
@@ -108,7 +110,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private var _layoutRenderer:CustomizationCarouselLayoutRenderer = null;
       
-      private var _bookmarkBackings:Vector.<MovieClip>;
+      private var _bookmarkBackings:Vector.<CustomizationCarouselBookmark>;
       
       private var _dataProvider:ListDAAPIDataProvider = null;
       
@@ -124,7 +126,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       public function CustomizationCarousel()
       {
-         this._bookmarkBackings = new Vector.<MovieClip>();
+         this._bookmarkBackings = new Vector.<CustomizationCarouselBookmark>();
          this._classFactory = App.utils.classFactory;
          super();
          roundCountRenderer = false;
@@ -185,14 +187,15 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function updateLayout(param1:int, param2:int = 0) : void
       {
-         var _loc7_:Number = NaN;
+         var _loc5_:int = 0;
          var _loc8_:Number = NaN;
-         var _loc9_:Point = null;
-         var _loc10_:Number = NaN;
-         var _loc11_:Rectangle = null;
+         var _loc9_:Number = NaN;
+         var _loc10_:Point = null;
+         var _loc11_:Number = NaN;
+         var _loc12_:Rectangle = null;
          var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
-         var _loc5_:int = _loc4_ + leftArrowOffset - rightArrowOffset;
+         _loc5_ = _loc4_ + leftArrowOffset - rightArrowOffset;
          if(this.shopEntryPointBtn)
          {
             this.shopEntryPointBtn.x = SHOP_ENTRY_X;
@@ -204,31 +207,36 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc6_:HorizontalScroller = HorizontalScroller(scrollList);
          if(_loc6_.minHorizontalScrollPosition == _loc6_.maxHorizontalScrollPosition && _loc6_.maxHorizontalScrollPosition == 0)
          {
-            _loc7_ = scrollList.viewPort.visibleWidth;
-            _loc8_ = 0;
+            _loc8_ = scrollList.viewPort.visibleWidth;
+            _loc9_ = 0;
             if(_loc6_.usesLayoutController())
             {
-               _loc9_ = this._layoutController.getMaxExtents();
-               _loc8_ = _loc9_.x - _loc7_;
+               _loc10_ = this._layoutController.getMaxExtents();
+               _loc9_ = _loc10_.x - _loc8_;
             }
             else
             {
-               _loc8_ = _loc6_.minHorizontalScrollPosition + scrollList.viewPort.validWidth - _loc7_;
+               _loc9_ = _loc6_.minHorizontalScrollPosition + scrollList.viewPort.validWidth - _loc8_;
             }
-            if(_loc8_ < 0)
+            if(_loc9_ < 0)
             {
-               _loc10_ = Math.min(-1 * _loc8_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
-               _loc3_ -= _loc10_;
+               _loc11_ = Math.min(-1 * _loc9_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
+               _loc3_ -= _loc11_;
             }
          }
+         var _loc7_:int = scrollList.width;
          super.updateLayout(_loc4_,_loc3_);
+         if(_loc7_ != scrollList.width)
+         {
+            invalidate(INVALID_BOOKMARKS_LAYOUT);
+         }
          this.scrollBar.setVisibleBookmarks(scrollList.viewPort.width / _loc4_ > BOOKMARKS_COEFFICIENT);
          this.dragBlocker.width = param1;
          if(hasScrollButtons)
          {
-            _loc11_ = CustomizationShared.computeItemSize(false,this._isMinResolution);
-            leftArrow.height = _loc11_.height;
-            rightArrow.height = _loc11_.height;
+            _loc12_ = CustomizationShared.computeItemSize(false,this._isMinResolution);
+            leftArrow.height = _loc12_.height;
+            rightArrow.height = _loc12_.height;
          }
          this.scrollBar.width = scrollList.width;
          this.scrollBar.x = scrollList.x;
@@ -267,12 +275,12 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc3_:Vector.<Rectangle> = null;
          var _loc4_:int = 0;
          var _loc5_:int = 0;
-         var _loc6_:MovieClip = null;
+         var _loc6_:CustomizationCarouselBookmark = null;
          var _loc7_:CustomizationCarouselBookmarkVO = null;
-         var _loc8_:CustomizationCarouselBookmarkVO = null;
-         var _loc9_:int = 0;
-         var _loc10_:int = 0;
-         var _loc11_:Rectangle = null;
+         var _loc8_:int = 0;
+         var _loc9_:Rectangle = null;
+         var _loc10_:CustomizationCarouselBookmarkVO = null;
+         var _loc11_:int = 0;
          var _loc12_:Boolean = false;
          var _loc13_:int = 0;
          super.draw();
@@ -301,35 +309,36 @@ package net.wg.gui.lobby.vehicleCustomization
                _loc6_.visible = false;
             }
             this._bookmarkBackings.splice(0,this._bookmarkBackings.length);
-            _loc11_ = null;
+            _loc9_ = null;
             _loc12_ = false;
             _loc13_ = 0;
             while(_loc13_ < _loc4_)
             {
                _loc7_ = this._data.bookmarks[_loc13_];
-               _loc9_ = _loc7_.bookmarkIndex;
-               if(_loc9_ < 0)
+               _loc8_ = _loc7_.bookmarkIndex;
+               if(_loc8_ < 0)
                {
-                  _loc9_ = _loc5_ - 1;
+                  _loc8_ = _loc5_ - 1;
                }
-               if(_loc9_ < _loc5_)
+               if(_loc8_ < _loc5_)
                {
-                  _loc11_ = _loc2_[_loc9_];
+                  _loc9_ = _loc2_[_loc8_];
                   if(_loc13_ + 1 < _loc4_)
                   {
-                     _loc8_ = this._data.bookmarks[_loc13_ + 1];
-                     if(_loc8_)
+                     _loc10_ = this._data.bookmarks[_loc13_ + 1];
+                     if(_loc10_)
                      {
-                        _loc10_ = _loc8_.bookmarkIndex;
+                        _loc11_ = _loc10_.bookmarkIndex;
                      }
                   }
-                  _loc12_ = Boolean(_loc10_ == _loc9_ + 1);
+                  _loc12_ = Boolean(_loc11_ == _loc8_ + 1);
                   this.addBookmarkItem(_loc3_[_loc13_],_loc7_,_loc12_);
-                  this.scrollBar.addBookmark(_loc11_.right,TOOLTIPS.CUSTOMIZATION_SCROLLBAR_BOOKMARK,new ToolTipParams({"bookmark":_loc7_.bookmarkName}));
+                  this.scrollBar.addBookmark(_loc9_.right,TOOLTIPS.CUSTOMIZATION_SCROLLBAR_BOOKMARK,new ToolTipParams({"bookmark":_loc7_.bookmarkName}));
                }
-               _loc10_ = _loc9_;
+               _loc11_ = _loc8_;
                _loc13_++;
             }
+            this.layoutBookmarks();
             this.scrollBar.validateNow();
             if(_loc5_ > 0)
             {
@@ -339,6 +348,10 @@ package net.wg.gui.lobby.vehicleCustomization
             scrollList.visible = true;
             this.carouselFilters.updateHotFilterSelectedFromData = false;
             this._layoutRenderer.render();
+         }
+         if(isInvalid(INVALID_BOOKMARKS_LAYOUT) && !isInvalid(InvalidationType.DATA))
+         {
+            this.layoutBookmarks();
          }
       }
       
@@ -481,18 +494,32 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function addBookmarkItem(param1:Rectangle, param2:CustomizationCarouselBookmarkVO, param3:Boolean) : void
       {
-         var _loc5_:CustomizationCarouselBookmark = null;
          var _loc4_:Class = App.instance.utils.classFactory.getClass(BOOK_MARK_BACK_MOVIE);
-         _loc5_ = new _loc4_() as CustomizationCarouselBookmark;
+         var _loc5_:CustomizationCarouselBookmark = new _loc4_() as CustomizationCarouselBookmark;
          if(_loc5_ != null)
          {
             _loc5_.visible = true;
             HorizontalScroller(scrollList).addUnmanagedChild(_loc5_,0);
             _loc5_.width = param1.width;
-            _loc5_.x = param1.x;
-            _loc5_.y = param1.y;
             _loc5_.setBookmarkNameText(param2.bookmarkName,param3);
             this._bookmarkBackings.push(_loc5_);
+         }
+      }
+      
+      private function layoutBookmarks() : void
+      {
+         var _loc3_:CustomizationCarouselBookmark = null;
+         var _loc4_:Rectangle = null;
+         var _loc1_:Vector.<Rectangle> = this._layoutController.getBookmarksLayout();
+         var _loc2_:int = this._bookmarkBackings.length;
+         var _loc5_:int = 0;
+         while(_loc5_ < _loc2_)
+         {
+            _loc3_ = this._bookmarkBackings[_loc5_];
+            _loc4_ = _loc1_[_loc5_];
+            _loc3_.x = _loc4_.x;
+            _loc3_.y = _loc4_.y;
+            _loc5_++;
          }
       }
       

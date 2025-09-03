@@ -5,6 +5,7 @@ package net.wg.gui.lobby.personalMissions
    import flash.display.InteractiveObject;
    import flash.events.Event;
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.PERSONAL_MISSIONS_ALIASES;
@@ -25,10 +26,11 @@ package net.wg.gui.lobby.personalMissions
    import net.wg.gui.lobby.personalMissions.events.StatusFooterEvent;
    import net.wg.infrastructure.base.meta.IPersonalMissionsPageMeta;
    import net.wg.infrastructure.base.meta.impl.PersonalMissionsPageMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.motion.Tween;
    
-   public class PersonalMissionsPage extends PersonalMissionsPageMeta implements IPersonalMissionsPageMeta
+   public class PersonalMissionsPage extends PersonalMissionsPageMeta implements IPersonalMissionsPageMeta, IInnerView
    {
       
       private static const CHAINS_PANEL_LEFT_MIN:int = 20;
@@ -48,6 +50,10 @@ package net.wg.gui.lobby.personalMissions
       private static const COMPACT_HEIGHT:uint = 712;
       
       private static const OPERATION_TITLE_COMPACT_OFFSET:uint = 10;
+      
+      private static const OPERATIONS_HEADER_Y_OFFSET:uint = 46;
+      
+      private static const OPERATIONS_HEADER_GAP:uint = 32;
        
       
       public var header:ViewHeader;
@@ -79,10 +85,20 @@ package net.wg.gui.lobby.personalMissions
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         super.updateStage(param1,param2);
-         this.operationTitle.updateStage(param1,param2);
-         this._isCompactLayout = param2 < COMPACT_HEIGHT;
-         invalidateSize();
+         assertUpdateStageMethod();
+      }
+      
+      override public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         var _loc4_:uint = _height - param3.y - param3.height | 0;
+         this.operationTitle.updateStage(param1,_loc4_);
+         this._isCompactLayout = _loc4_ < COMPACT_HEIGHT;
+         super.updateStageWithPadding(param1,param2,param3);
+      }
+      
+      override protected function isCloseButtonVisible() : Boolean
+      {
+         return false;
       }
       
       override protected function configUI() : void
@@ -116,26 +132,7 @@ package net.wg.gui.lobby.personalMissions
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
-            this.map.width = width;
-            this.map.height = height;
-            this.statusFooter.y = _height - this.statusFooter.height | 0;
-            this.statusFooter.x = _width - this.statusFooter.width >> 1;
-            this.operationsHeader.width = width;
-            this.header.width = width;
-            this.operationTitle.x = width - this.operationTitle.width >> 1;
-            this.operationTitle.y = this.operationsHeader.componentVisibleHeight;
-            if(this._isCompactLayout)
-            {
-               this.operationTitle.y -= OPERATION_TITLE_COMPACT_OFFSET;
-            }
-            this.layoutChainsPanel();
-            if(this._awardSheetPopup)
-            {
-               this._awardSheetPopup.x = width - this._awardSheetPopup.width >> 1;
-               this._awardSheetPopup.y = (height + this.operationsHeader.componentVisibleHeight - this._awardSheetPopup.height) / AWARD_SHEET_POS_DIV + AWARD_SHEET_OFFSET >> 0;
-               this.bgShadow.width = width;
-               this.bgShadow.height = height;
-            }
+            this.updateSize();
          }
       }
       
@@ -247,6 +244,32 @@ package net.wg.gui.lobby.personalMissions
          }
       }
       
+      private function updateSize() : void
+      {
+         this.map.width = width;
+         this.map.height = height;
+         this.statusFooter.y = _height - this.statusFooter.height - _bottomOffset | 0;
+         this.statusFooter.x = _width - this.statusFooter.width >> 1;
+         this.operationsHeader.width = width;
+         this.operationsHeader.y = _topOffset - OPERATIONS_HEADER_Y_OFFSET;
+         this.header.width = width;
+         this.header.y = this.operationsHeader.y + OPERATIONS_HEADER_GAP;
+         this.operationTitle.x = width - this.operationTitle.width >> 1;
+         this.operationTitle.y = this.operationsHeader.y + this.operationsHeader.componentVisibleHeight;
+         if(this._isCompactLayout || _topOffset > 0)
+         {
+            this.operationTitle.y -= OPERATION_TITLE_COMPACT_OFFSET;
+         }
+         this.layoutChainsPanel();
+         if(this._awardSheetPopup)
+         {
+            this._awardSheetPopup.x = width - this._awardSheetPopup.width >> 1;
+            this._awardSheetPopup.y = (height + this.operationsHeader.componentVisibleHeight - this._awardSheetPopup.height) / AWARD_SHEET_POS_DIV + AWARD_SHEET_OFFSET >> 0;
+            this.bgShadow.width = width;
+            this.bgShadow.height = height;
+         }
+      }
+      
       private function showAwardSheetPopup(param1:Boolean, param2:String, param3:Object = null) : void
       {
          this.hideAwardSheetPopup();
@@ -263,21 +286,22 @@ package net.wg.gui.lobby.personalMissions
       
       private function layoutChainsPanel() : void
       {
-         var _loc1_:int = 0;
+         var _loc2_:int = 0;
+         var _loc1_:uint = _height - _topOffset - _bottomOffset | 0;
          if(width <= SCREEN_WIDTH_MIN)
          {
-            _loc1_ = CHAINS_PANEL_LEFT_MIN;
+            _loc2_ = CHAINS_PANEL_LEFT_MIN;
          }
          else if(width >= SCREEN_WIDTH_MAX)
          {
-            _loc1_ = CHAINS_PANEL_LEFT_MAX;
+            _loc2_ = CHAINS_PANEL_LEFT_MAX;
          }
          else
          {
-            _loc1_ = CHAINS_PANEL_LEFT_MIN + (width - SCREEN_WIDTH_MIN) / (SCREEN_WIDTH_MAX - SCREEN_WIDTH_MIN) * (CHAINS_PANEL_LEFT_MAX - CHAINS_PANEL_LEFT_MIN);
+            _loc2_ = CHAINS_PANEL_LEFT_MIN + (width - SCREEN_WIDTH_MIN) / (SCREEN_WIDTH_MAX - SCREEN_WIDTH_MIN) * (CHAINS_PANEL_LEFT_MAX - CHAINS_PANEL_LEFT_MIN);
          }
-         this.chainsPanel.x = _loc1_;
-         this.chainsPanel.y = (height - this.operationsHeader.componentVisibleHeight - this.statusFooter.height - this.chainsPanel.getPanelHeight() >> 1) + this.operationsHeader.componentVisibleHeight | 0;
+         this.chainsPanel.x = _loc2_;
+         this.chainsPanel.y = _topOffset + (_loc1_ - this.operationsHeader.componentVisibleHeight - this.statusFooter.height - this.chainsPanel.getPanelHeight() >> 1) + this.operationsHeader.componentVisibleHeight | 0;
       }
       
       private function bgFadeComplete() : void
@@ -359,7 +383,7 @@ package net.wg.gui.lobby.personalMissions
       
       private function onStatusPanelSkipTaskHandler(param1:StatusFooterEvent) : void
       {
-         onSkipTaskClickS();
+         onSkipTaskClickS(param1.btnID);
       }
       
       private function onOperationInfoAwardsBtnClickHandler(param1:OperationEvent) : void

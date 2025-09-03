@@ -5,7 +5,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
    import net.wg.gui.components.crosshairPanel.components.gunMarker.constants.GunMarkerConsts;
    import net.wg.infrastructure.base.SimpleContainer;
    
-   public class GunMarkerDispersionCircle extends SimpleContainer
+   public class GunMarkerDispersionCircle extends SimpleContainer implements IGunMarkerDispersion
    {
       
       public static const BOLD:String = "bold";
@@ -101,16 +101,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
                this.updateAlpha();
             }
          }
-         if(isInvalid(GunMarkerConsts.GUN_RELOAD_VALIDATION))
+         if(this.currMixingMC && this._reloadingInPercent != -1 && isInvalid(GunMarkerConsts.GUN_RELOAD_VALIDATION))
          {
-            if(this._reloadingInPercent != -1)
-            {
-               if(this.currMixingMC)
-               {
-                  this.currMixingMC.setReloadingAsPercent(this._reloadingInPercent);
-                  this.currMixingMC.setReloadingState(this._reloadingState);
-               }
-            }
+            this.currMixingMC.setReloadingAsPercent(this._reloadingInPercent);
+            this.currMixingMC.setReloadingState(this._reloadingState);
          }
       }
       
@@ -148,19 +142,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       public function setReloadingParams(param1:Number, param2:String) : void
       {
-         var _loc3_:uint = 0;
-         if(this._reloadingState != param2)
+         if(this._reloadingState != param2 || this._reloadingInPercent != param1)
          {
             this._reloadingState = param2;
-            _loc3_ |= 1;
-         }
-         if(this._reloadingInPercent != param1)
-         {
             this._reloadingInPercent = param1;
-            _loc3_ |= 1;
-         }
-         if(_loc3_ > 0)
-         {
             invalidate(GunMarkerConsts.GUN_RELOAD_VALIDATION);
          }
       }

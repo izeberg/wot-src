@@ -187,12 +187,18 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          this.enabled = !this._data.isSelected;
       }
       
+      override public function set visible(param1:Boolean) : void
+      {
+         super.visible = param1 && this._data.isVisible;
+      }
+      
       private function updateTexts() : void
       {
          this.textField.width = !!this._data.isSmall ? Number(TF_WIDTH_SMALL) : Number(TF_WIDTH_BIG);
          this.textField.htmlText = this._data.label;
          this.textField.height = this.textField.textHeight + TF_SPACE_AROUND;
          this.textField.setTextFormat(this._textFormat);
+         invalidateSize();
          dispatchEvent(new Event(Event.RESIZE));
       }
       

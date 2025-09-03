@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.post_progression.multi_step_model import MultiStepModel
 from gui.impl.gen.view_models.views.lobby.post_progression.single_step_model import SingleStepModel
 

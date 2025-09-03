@@ -3,8 +3,8 @@
 	<parent>vehicles/chinese/Ch43_WZ_122_2/normal/lod4/Gun_01</parent>
 	<extent>192.000000</extent>
 	<visibilityBox>
-		<min>-1.438253 1.393896 0.550536</min>
-		<max>1.452728 2.530933 5.893040</max>
+		<min>-1.438253 -0.346019 -0.660764</min>
+		<max>1.452728 0.791018 4.681740</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/chinese/Ch43_WZ_122_2/normal/lod3/Gun_01</nodefullVisual>

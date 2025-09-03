@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch67_BZ_79/crash/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/chinese/Ch67_BZ_79/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.555839 0.000197 -3.462130</min>
+		<max>1.555850 1.060996 3.457405</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

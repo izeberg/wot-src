@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ids>
+		<Heavy_SM_SCC>10</Heavy_SM_SCC>
+		<Heavy_SM_SCC__0>11</Heavy_SM_SCC__0>
+	</ids>
+	<shared>
+		<Heavy_SM_SCC>
+			<tags/>
+			<price>100</price>
+			<weight>275</weight>
+			<maxHealth>175</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
+			<invulnerable>True</invulnerable>
+			<notInShop>True</notInShop>
+		</Heavy_SM_SCC>
+		<Heavy_SM_SCC__0>
+			<tags/>
+			<price>100</price>
+			<weight>275</weight>
+			<maxHealth>175</maxHealth>
+			<maxRegenHealth>70</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
+			<invulnerable>True</invulnerable>
+			<notInShop>True</notInShop>
+		</Heavy_SM_SCC__0>
+	</shared>
+</root>

@@ -60,10 +60,10 @@ package net.wg.infrastructure.base.meta.impl
          this.onBarClick(param1,param2);
       }
       
-      public function onSkipTaskClickS() : void
+      public function onSkipTaskClickS(param1:int) : void
       {
          App.utils.asserter.assertNotNull(this.onSkipTaskClick,"onSkipTaskClick" + Errors.CANT_NULL);
-         this.onSkipTaskClick();
+         this.onSkipTaskClick(param1);
       }
       
       public function onBackBtnClickS() : void

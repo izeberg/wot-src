@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>4045</weight>
-		<maxHealth>800</maxHealth>
+		<maxHealth>920</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1784,9 +1784,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>12500</maxLoad>
 			<terrainResistance>
-				0.8 0.9 1.6
+				0.7 0.8 1.4
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>12000</brakeForce>
@@ -3802,7 +3801,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				0.7 0.8 1.4
 				<!--BW_String-->
@@ -5813,8 +5811,8 @@
 	</chassis>
 	<turrets0>
 		<Turret_1_F87_Batignolles-Chatillon_12t>
-			<userString>#france_vehicles:Turret_1_AMX_13_75</userString>
-			<tags/>
+			<userString>#france_vehicles:Turret_1_F87_Batignolles-Chatillon_12t</userString>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>30000</price>
 			<notInShop>true</notInShop>
@@ -5829,7 +5827,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2500</weight>
-			<maxHealth>200</maxHealth>
+			<maxHealth>230</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -5880,7 +5878,10 @@
 						</minPitch>
 						<maxPitch>0 6 1 6</maxPitch>
 					</pitchLimits>
-					<reloadTime>21</reloadTime>
+					<reloadTime>
+						19.5
+						<!--BW_String-->
+					</reloadTime>
 					<invisibilityFactorAtShot>
 						0.234
 						<!--BW_String-->
@@ -7976,19 +7977,16 @@
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
-							<rollingFriction>
-								0.161
-								<!--BW_String-->
-							</rollingFriction>
+							<rollingFriction>0.140875</rollingFriction>
 						</soft>
 						<medium>
-							<rollingFriction>0.090562</rollingFriction>
-						</medium>
-						<firm>
 							<rollingFriction>
 								0.0805
 								<!--BW_String-->
 							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>0.070438</rollingFriction>
 						</firm>
 					</grounds>
 				</Chassis_F87_Batignolles-Chatillon_12t>

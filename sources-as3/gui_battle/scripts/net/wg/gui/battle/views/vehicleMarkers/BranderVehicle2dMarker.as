@@ -401,40 +401,40 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.updateMarkerSettings();
       }
       
-      public function updateHealth(param1:int, param2:uint, param3:String) : void
+      public function updateHealth(param1:int, param2:uint, param3:String, param4:int = -1) : void
       {
-         var _loc5_:String = null;
+         var _loc6_:String = null;
          if(param1 < 0)
          {
             param3 = VehicleMarkerFlags.DAMAGE_EXPLOSION;
             param1 = 0;
          }
-         var _loc4_:int = this._model.currHealth - param1;
+         var _loc5_:int = this._model.currHealth - param1;
          this._model.currHealth = param1;
          if(this._isPopulated)
          {
-            _loc5_ = this.getDamageColor(param2);
+            _loc6_ = this.getDamageColor(param2);
             if(this.getIsPartVisible(HEALTH_BAR))
             {
-               this.healthBar.updateHealth(param1,_loc5_);
+               this.healthBar.updateHealth(param1,_loc6_);
             }
             if(this.getIsPartVisible(DAMAGE_PANEL))
             {
-               if(_loc4_ > 0)
+               if(_loc5_ > 0)
                {
                   switch(param2)
                   {
                      case VehicleMarkerFlags.DAMAGE_FROM_PLAYER_FLAG:
-                        this.playerHitLabel.damage(_loc4_,_loc5_);
+                        this.playerHitLabel.damage(_loc5_,_loc6_);
                         this.playerHitLabel.playShowTween();
                         break;
                      case VehicleMarkerFlags.DAMAGE_FROM_SQUAD_FLAG:
-                        this.squadHitLabel.damage(_loc4_,_loc5_);
+                        this.squadHitLabel.damage(_loc5_,_loc6_);
                         this.squadHitLabel.playShowTween();
                         break;
                      case VehicleMarkerFlags.DAMAGE_FROM_OTHER_FLAG:
                      default:
-                        this.otherHitLabel.damage(_loc4_,_loc5_);
+                        this.otherHitLabel.damage(_loc5_,_loc6_);
                         this.otherHitLabel.playShowTween();
                   }
                   this.squadHitLabel.y = !!this.playerHitLabel.isActive() ? Number(this.playerHitLabel.y + VehicleMarker.EXTRA_HIT_LABEL_OFFSET_Y) : Number(this.playerHitLabel.y);
@@ -442,7 +442,7 @@ package net.wg.gui.battle.views.vehicleMarkers
                }
                if(VehicleMarkerFlags.checkAllowedDamages(param3))
                {
-                  this.hitExplosion.setColorAndDamageType(_loc5_,param3);
+                  this.hitExplosion.setColorAndDamageType(_loc6_,param3);
                   this.hitExplosion.playShowTween();
                }
                this.updateCriticalLayout();

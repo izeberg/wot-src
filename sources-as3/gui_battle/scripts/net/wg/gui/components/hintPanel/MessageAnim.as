@@ -32,7 +32,7 @@ package net.wg.gui.components.hintPanel
       
       public function setText(param1:String) : void
       {
-         this.textFieldContainer.label = param1;
+         this.textFieldContainer.htmlLabel = param1;
       }
       
       public function setTextFieldAlign(param1:String) : void

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>comp7_core</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality/>
+	<Components>
+		<StaticComponents/>
+		<DynamicComponents>
+			<TeamInfoComp7Component/>
+			<ArenaObserverInfoComp7Component/>
+			<VehiclePrestigePoint/>
+			<VehicleRoleSkill/>
+			<VehicleInspireController/>
+			<VehicleHealController/>
+		</DynamicComponents>
+	</Components>
+	<Entities>
+		<ClientServerEntities>
+			<ApplicationPoint/>
+		</ClientServerEntities>
+	</Entities>
+	<ExternalComponents/>
+</root>

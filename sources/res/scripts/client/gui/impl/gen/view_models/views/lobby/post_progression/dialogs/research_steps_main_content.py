@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.common.bonuses_model import BonusesModel
 from gui.impl.gen.view_models.views.lobby.post_progression.dialogs.short_modification_model import ShortModificationModel
 from gui.impl.gen.view_models.views.lobby.post_progression.dialogs.short_step_model import ShortStepModel

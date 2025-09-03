@@ -14,6 +14,7 @@ class PrebattleTypes(Enum):
     BATTLEROYAL = 'battle_royal'
     MAPBOX = 'mapbox'
     COMP7 = 'comp7'
+    COMP7LIGHT = 'comp7_light'
     FUNRANDOM = 'funRandom'
 
 

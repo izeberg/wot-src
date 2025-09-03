@@ -2311,7 +2311,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>10000</maxLoad>
 			<terrainResistance>
 				0.8 1 1.5
 				<!--BW_String-->
@@ -3797,7 +3796,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.413889 10 0.416667 9.4 0.419444 9 0.422222 8.6 0.425 8.2 0.427778 7.8 0.430556 7.4 0.433333 7 0.566667 7 0.569444 7.4 0.572222 7.8 0.575 8.2 0.577778 8.6 0.580556 9 0.583333 9.4 0.586111 10 1 10
+							0.00000 10.00 0.41389 10.00 0.43333 7.00 0.56667 7.00 0.58611 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -3949,7 +3948,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 10 0.413889 10 0.416667 9.4 0.419444 9 0.422222 8.6 0.425 8.2 0.427778 7.8 0.430556 7.4 0.433333 7 0.566667 7 0.569444 7.4 0.572222 7.8 0.575 8.2 0.577778 8.6 0.580556 9 0.583333 9.4 0.586111 10 1 10
+							0.00000 10.00 0.41389 10.00 0.43333 7.00 0.56667 7.00 0.58611 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -4662,10 +4661,7 @@
 		<detailed>
 			<engines>
 				<Hanomag_WD_50PS>
-					<smplEnginePower>
-						52.86406
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>60</smplEnginePower>
 					<smplFwMaxSpeed>25</smplFwMaxSpeed>
 				</Hanomag_WD_50PS>
 			</engines>

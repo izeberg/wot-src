@@ -1737,7 +1737,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>43000</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
@@ -1747,11 +1746,11 @@
 			<rotationSpeed>54</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.18
+					0.15
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.18
+					0.15
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3964,7 +3963,7 @@
 						<gun>40</gun>
 					</armor>
 					<aimingTime>
-						2.5
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3972,7 +3971,7 @@
 							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -3981,7 +3980,7 @@
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 9 0.375 9 0.402778 6 0.444444 3 0.555556 3 0.597222 6 0.625 9 1 9
+							0.00000 9.00 0.37500 9.00 0.44444 3.00 0.55556 3.00 0.62500 9.00 1.00000 9.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>

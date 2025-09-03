@@ -1,6 +1,5 @@
-from frameworks.wulf import Array
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen import R
-from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.lobby.dog_tags.dt_component import DtComponent
 
 class DtGridSection(ViewModel):

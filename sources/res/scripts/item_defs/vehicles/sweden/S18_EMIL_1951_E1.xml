@@ -15,7 +15,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.057
+			0.058
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>9948</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1240</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -1406,9 +1406,8 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>6360</weight>
-			<maxLoad>29000</maxLoad>
 			<terrainResistance>
-				1.3 1.4 2.3
+				1.2 1.3 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>29000</brakeForce>
@@ -3045,7 +3044,6 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>6360</weight>
-			<maxLoad>32000</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.1
 				<!--BW_String-->
@@ -4678,7 +4676,7 @@
 	<turrets0>
 		<Turret_1_S18_EMIL_1951_E1>
 			<userString>#sweden_vehicles:Turret_1_S18_EMIL_1951_E1</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>30000</price>
 			<notInShop>true</notInShop>
@@ -4700,7 +4698,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>9000</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>310</maxHealth>
 			<rotationSpeed>20</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -4730,8 +4728,14 @@
 						</gun>
 					</unlocks>
 					<armor>
-						<armor_1>250</armor_1>
-						<armor_2>50</armor_2>
+						<armor_1>
+							250
+							<tags>gun</tags>
+						</armor_1>
+						<armor_2>
+							50
+							<tags>gun</tags>
+						</armor_2>
 						<armor_3>30</armor_3>
 						<armor_4>30</armor_4>
 						<armor_5>18</armor_5>
@@ -4744,7 +4748,7 @@
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 12 0.402778 12 0.436111 9.5 0.563889 9.5 0.597222 12 1 12
+							0.00000 12.00 0.42222 12.00 0.44444 9.50 0.46667 9.50 0.47778 11.50 0.52222 11.50 0.53333 9.50 0.55556 9.50 0.57778 12.00 1.00000 12.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -4757,17 +4761,28 @@
 						<rate>20</rate>
 					</clip>
 					<shotDispersionRadius>
-						0.39
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
 						22.7
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						3.2
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>3</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.16
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.5
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/sweden/S18_EMIL_1951_E1/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/sweden/S18_EMIL_1951_E1/crash/lod0/Gun_01.model</destroyed>
@@ -5460,8 +5475,14 @@
 						</vehicle>
 					</unlocks>
 					<armor>
-						<armor_1>250</armor_1>
-						<armor_2>50</armor_2>
+						<armor_1>
+							250
+							<tags>gun</tags>
+						</armor_1>
+						<armor_2>
+							50
+							<tags>gun</tags>
+						</armor_2>
 						<armor_3>30</armor_3>
 						<armor_4>30</armor_4>
 						<armor_5>18</armor_5>
@@ -5474,7 +5495,7 @@
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 12 0.402778 12 0.436111 9.5 0.563889 9.5 0.597222 12 1 12
+							0.00000 12.00 0.42222 12.00 0.44444 9.50 0.46667 9.50 0.47778 11.50 0.52222 11.50 0.53333 9.50 0.55556 9.50 0.57778 12.00 1.00000 12.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5501,7 +5522,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -7317,15 +7338,6 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<Ra_400>
-			shared
-			<unlocks>
-				<radio>
-					Ra_421
-					<cost>9400</cost>
-				</radio>
-			</unlocks>
-		</Ra_400>
 		<Ra_421>shared</Ra_421>
 	</radios>
 	<clientAdjustmentFactors>
@@ -7368,13 +7380,16 @@
 				<Chassis_S18_EMIL_1951_E1>
 					<grounds>
 						<soft>
-							<rollingFriction>0.231438</rollingFriction>
+							<rollingFriction>0.211313</rollingFriction>
 						</soft>
 						<medium>
-							<rollingFriction>0.140875</rollingFriction>
+							<rollingFriction>0.130813</rollingFriction>
 						</medium>
 						<firm>
-							<rollingFriction>0.130813</rollingFriction>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
 						</firm>
 					</grounds>
 					<axleCount>5</axleCount>

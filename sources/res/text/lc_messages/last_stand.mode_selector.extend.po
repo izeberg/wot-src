@@ -1,0 +1,53 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "mode/last_stand/battlePassTooltip/body"
+msgstr ""
+"Certain missions in {whiteSpanish_open}Last Stand: Proving "
+"Ground{whiteSpanish_close} will allow you to earn Battle Pass Points."
+
+msgid "mode/last_stand/battlePassTooltip/header"
+msgstr "Battle Pass Points"
+
+msgid "mode/last_stand/calendar"
+msgstr "The event will last for %(date)s."
+
+msgid "mode/last_stand/calendarDay"
+msgstr "The event will end in %(date)s."
+
+msgid "mode/last_stand/description"
+msgstr ""
+"Fight against waves of enemies.\n"
+"Battles in Tier VIII vehicles."
+
+msgid "mode/last_stand/performance/highRisk/description"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You may "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also likely."
+
+msgid "mode/last_stand/performance/highRisk/header"
+msgstr "Low Performance"
+
+msgid "mode/last_stand/performance/highRisk/headerIcon"
+msgstr "%(icon) Low Performance"
+
+msgid "mode/last_stand/performance/mediumRisk/description"
+msgstr ""
+"This mode requires high computer performance.\n"
+"You will experience issues with map loading, graphics, and vehicle movement. In case of insufficient performance, try a lower graphics quality in your Settings."
+
+msgid "mode/last_stand/performance/mediumRisk/header"
+msgstr "Reduced Performance"
+
+msgid "mode/last_stand/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Reduced Performance"

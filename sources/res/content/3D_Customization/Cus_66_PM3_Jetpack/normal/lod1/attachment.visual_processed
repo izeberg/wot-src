@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>carriage</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.146105 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>helmet</identifier>
+						<transform>
+							<row0>0.683151 0.417611 -0.599088</row0>
+							<row1>0.502374 0.326658 0.800572</row1>
+							<row2>0.530024 -0.847877 0.013360</row2>
+							<row3>-0.087348 0.103443 0.352263</row3>
+						</transform>
+						<node>
+							<identifier>helmet_BlendBone</identifier>
+							<transform>
+								<row0>0.683151 0.502374 0.530024</row0>
+								<row1>0.417611 0.326658 -0.847877</row1>
+								<row2>0.599088 -0.800572 -0.013360</row2>
+								<row3>0.166494 -0.319647 0.253176</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>jetpack</identifier>
+						<transform>
+							<row0>0.970024 0.084805 0.227730</row0>
+							<row1>-0.042599 0.981961 -0.184220</row1>
+							<row2>-0.239244 0.168996 0.956139</row2>
+							<row3>-0.007497 0.319406 -0.100986</row3>
+						</transform>
+						<node>
+							<identifier>L_burner_1</identifier>
+							<transform>
+								<row0>0.996557 0.065921 -0.050290</row0>
+								<row1>-0.032905 -0.242291 -0.969646</row1>
+								<row2>-0.076105 0.967962 -0.239287</row2>
+								<row3>-0.108401 0.044902 -0.291202</row3>
+							</transform>
+							<node>
+								<identifier>L_burner_1_BlendBone</identifier>
+								<transform>
+									<row0>0.975908 0.210385 -0.057810</row0>
+									<row1>0.140745 -0.404577 0.903608</row1>
+									<row2>-0.166717 0.889975 0.424441</row2>
+									<row3>0.049058 -0.175013 -0.585330</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>L_burner_2</identifier>
+							<transform>
+								<row0>0.071308 -0.991516 0.108681</row0>
+								<row1>-0.174304 -0.119669 -0.977393</row1>
+								<row2>0.982107 0.050753 -0.181358</row2>
+								<row3>-0.032106 -0.021253 -0.287023</row3>
+							</transform>
+							<node>
+								<identifier>L_burner_2_BlendBone</identifier>
+								<transform>
+									<row0>0.085408 0.069855 0.993894</row0>
+									<row1>-0.949216 -0.297468 0.102476</row1>
+									<row2>-0.302810 0.952173 -0.040901</row2>
+									<row3>0.485502 -0.245832 -0.055565</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>L_burner_3</identifier>
+							<transform>
+								<row0>-0.996567 -0.065767 0.050281</row0>
+								<row1>-0.051721 0.020388 -0.998453</row1>
+								<row2>0.064640 -0.997627 -0.023720</row2>
+								<row3>-0.098251 -0.096820 -0.275659</row3>
+							</transform>
+							<node>
+								<identifier>L_burner_3_BlendBone</identifier>
+								<transform>
+									<row0>-0.975922 0.187835 0.110875</row0>
+									<row1>-0.140597 -0.153101 -0.978158</row1>
+									<row2>0.166757 0.970195 -0.175824</row2>
+									<row3>-0.049129 -0.303638 0.377153</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>L_burner_4</identifier>
+							<transform>
+								<row0>-0.071009 0.991531 -0.108740</row0>
+								<row1>0.089691 -0.102227 -0.990709</row1>
+								<row2>-0.993435 -0.080103 -0.081672</row2>
+								<row3>-0.174545 -0.030665 -0.279838</row3>
+							</transform>
+							<node>
+								<identifier>L_burner_4_BlendBone</identifier>
+								<transform>
+									<row0>-0.085104 0.328379 -0.940704</row0>
+									<row1>0.949246 -0.260203 -0.176708</row1>
+									<row2>0.302801 0.907999 0.289568</row2>
+									<row3>-0.485520 -0.232824 -0.152747</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>R_burner_1</identifier>
+							<transform>
+								<row0>0.996556 0.065927 -0.050291</row0>
+								<row1>-0.032904 -0.242291 -0.969646</row1>
+								<row2>-0.076111 0.967961 -0.239287</row2>
+								<row3>0.150619 0.021470 -0.299695</row3>
+							</transform>
+							<node>
+								<identifier>R_burner_1_BlendBone</identifier>
+								<transform>
+									<row0>0.975907 0.210386 -0.057816</row0>
+									<row1>0.140752 -0.404577 0.903607</row1>
+									<row2>-0.166715 0.889975 0.424442</row2>
+									<row3>-0.207957 -0.180403 -0.544967</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>R_burner_2</identifier>
+							<transform>
+								<row0>0.071315 -0.991515 0.108681</row0>
+								<row1>-0.174304 -0.119670 -0.977393</row1>
+								<row2>0.982106 0.050759 -0.181359</row2>
+								<row3>0.226915 -0.044684 -0.295516</row3>
+							</transform>
+							<node>
+								<identifier>R_burner_2_BlendBone</identifier>
+								<transform>
+									<row0>0.085414 0.069855 0.993894</row0>
+									<row1>-0.949215 -0.297469 0.102482</row1>
+									<row2>-0.302811 0.952173 -0.040899</row2>
+									<row3>0.444721 -0.211789 -0.310306</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>R_burner_3</identifier>
+							<transform>
+								<row0>-0.996567 -0.065773 0.050281</row0>
+								<row1>-0.051722 0.020388 -0.998453</row1>
+								<row2>0.064646 -0.997626 -0.023720</row2>
+								<row3>0.160767 -0.120248 -0.284153</row3>
+							</transform>
+							<node>
+								<identifier>R_burner_3_BlendBone</identifier>
+								<transform>
+									<row0>-0.975922 0.187834 0.110882</row0>
+									<row1>-0.140603 -0.153101 -0.978157</row1>
+									<row2>0.166755 0.970195 -0.175825</row2>
+									<row3>0.207889 -0.298245 0.336834</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>R_burner_4</identifier>
+							<transform>
+								<row0>-0.071016 0.991530 -0.108740</row0>
+								<row1>0.089691 -0.102226 -0.990710</row1>
+								<row2>-0.993435 -0.080109 -0.081671</row2>
+								<row3>0.084476 -0.054097 -0.288332</row3>
+							</transform>
+							<node>
+								<identifier>R_burner_4_BlendBone</identifier>
+								<transform>
+									<row0>-0.085110 0.328379 -0.940704</row0>
+									<row1>0.949246 -0.260202 -0.176714</row1>
+									<row2>0.302802 0.907999 0.289566</row2>
+									<row3>-0.444816 -0.266867 0.102006</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>eff_L</identifier>
+							<transform>
+								<row0>0.996560 0.065878 -0.050272</row0>
+								<row1>-0.071031 0.991530 -0.108730</row1>
+								<row2>0.042683 0.111927 0.992799</row2>
+								<row3>-0.103891 -0.027442 -0.296577</row3>
+							</transform>
+							<node>
+								<identifier>eff_L_BlendBone</identifier>
+								<transform>
+									<row0>0.975909 -0.085127 -0.200886</row0>
+									<row1>0.140707 0.949246 0.281307</row1>
+									<row2>-0.166743 0.302796 -0.938356</row2>
+									<row3>0.049087 -0.485518 0.264251</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>eff_R</identifier>
+							<transform>
+								<row0>0.996560 0.065885 -0.050273</row0>
+								<row1>-0.071037 0.991530 -0.108730</row1>
+								<row2>0.042683 0.111927 0.992799</row2>
+								<row3>0.155127 -0.050871 -0.305071</row3>
+							</transform>
+							<node>
+								<identifier>eff_R_BlendBone</identifier>
+								<transform>
+									<row0>0.975908 -0.085134 -0.200886</row0>
+									<row1>0.140713 0.949245 0.281307</row1>
+									<row2>-0.166741 0.302797 -0.938356</row2>
+									<row3>-0.207927 -0.444811 0.264250</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>jetpack_BlendBone</identifier>
+							<transform>
+								<row0>0.970024 -0.042599 -0.239244</row0>
+								<row1>0.084805 0.981962 0.168996</row1>
+								<row2>-0.227730 0.184220 -0.956139</row2>
+								<row3>-0.009207 -0.476037 0.016094</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>oxyhose</identifier>
+						<transform>
+							<row0>-0.791629 -0.103606 -0.602154</row0>
+							<row1>0.601376 -0.306367 -0.737893</row1>
+							<row2>-0.108030 -0.946258 0.304835</row2>
+							<row3>0.259536 0.138150 0.549709</row3>
+						</transform>
+						<node>
+							<identifier>oxyhose_BlendBone</identifier>
+							<transform>
+								<row0>-0.791629 0.601376 -0.108030</row0>
+								<row1>-0.103606 -0.306367 -0.946258</row1>
+								<row2>0.602154 0.737893 -0.304835</row2>
+								<row3>0.565916 0.336634 0.129446</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>oxytank</identifier>
+						<transform>
+							<row0>0.239741 0.080937 -0.967457</row0>
+							<row1>0.909854 0.328888 0.252981</row1>
+							<row2>0.338661 -0.940894 0.005207</row2>
+							<row3>0.174145 0.072547 0.229078</row3>
+						</transform>
+						<node>
+							<identifier>oxytank_BlendBone</identifier>
+							<transform>
+								<row0>0.239741 0.909854 0.338661</row0>
+								<row1>0.080937 0.328888 -0.940894</row1>
+								<row2>0.967457 -0.252981 -0.005207</row2>
+								<row3>0.162177 -0.288310 0.145560</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>carriage_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.000000 -0.146105 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>jetpack_BlendBone</node>
+		<node>R_burner_3_BlendBone</node>
+		<node>R_burner_4_BlendBone</node>
+		<node>R_burner_1_BlendBone</node>
+		<node>R_burner_2_BlendBone</node>
+		<node>L_burner_2_BlendBone</node>
+		<node>L_burner_3_BlendBone</node>
+		<node>L_burner_1_BlendBone</node>
+		<node>L_burner_4_BlendBone</node>
+		<node>helmet_BlendBone</node>
+		<node>carriage_BlendBone</node>
+		<node>static_BlendBone</node>
+		<node>oxyhose_BlendBone</node>
+		<node>oxytank_BlendBone</node>
+		<geometry>
+			<vertices>attachmentShape.vertices</vertices>
+			<primitive>attachmentShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>equipment_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_66_PM3_Jetpack/PM3_Jetpack_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_66_PM3_Jetpack/PM3_Jetpack_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_66_PM3_Jetpack/PM3_Jetpack_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_66_PM3_Jetpack/PM3_Jetpack_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.002694 0.214659 -0.041650</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.410133 -0.179056 -0.512449</min>
+		<max>0.415026 0.611315 0.590705</max>
+	</boundingBox>
+	<geometrySize>157044</geometrySize>
+</root>

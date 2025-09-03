@@ -116,12 +116,9 @@
 		<weight>7358</weight>
 		<maxHealth>280</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>110</maxHealth>
-			<maxRegenHealth>55</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>143</maxRegenHealth>
+			<repairCost>7</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/british/GB29_Crusader_5inch/normal/lod0/Hull.model</undamaged>
@@ -2727,9 +2724,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>9000</weight>
-			<maxLoad>19000</maxLoad>
 			<terrainResistance>
-				1.2 1.4 2.3
+				1.1 1.3 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>17000</brakeForce>
@@ -4790,7 +4786,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>9000</weight>
-			<maxLoad>21000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.1
 				<!--BW_String-->
@@ -4812,8 +4807,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>110</maxHealth>
-			<maxRegenHealth>85</maxRegenHealth>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>135</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -6826,7 +6821,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.94736862
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_GB29_Crusader_5inch_2>
@@ -6835,8 +6830,8 @@
 		<Turret_1_GB29_Crusader_5inch>
 			<ceilless>true</ceilless>
 			<userString>#gb_vehicles:Turret_1_GB29_Crusader_5inch</userString>
-			<tags>cannotDetach</tags>
-			<level>7</level>
+			<tags>cannotDetach turretless</tags>
+			<level>6</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<armor>
@@ -6867,12 +6862,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_4.5inch_SPG_Howitzer>
+				<Q_F_4_5_in_Howitzer>
 					shared
 					<maxAmmo>75</maxAmmo>
 					<unlocks>
 						<gun>
-							_5.5inch_SPG_Gun
+							B_L_5_5_in_Gun_CSP
 							<cost>14000</cost>
 						</gun>
 					</unlocks>
@@ -6986,7 +6981,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_4.5inch_SPG_Howitzer>
+				</Q_F_4_5_in_Howitzer>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB29_Crusader_5inch/normal/lod0/Turret_01.model</undamaged>
@@ -7093,7 +7088,7 @@
 		<Turret_2_GB29_Crusader_5inch>
 			<ceilless>true</ceilless>
 			<userString>#gb_vehicles:Turret_1_GB29_Crusader_5inch</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>7</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -7125,7 +7120,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_5.5inch_SPG_Gun>
+				<B_L_5_5_in_Gun_CSP>
 					shared
 					<maxAmmo>32</maxAmmo>
 					<unlocks>
@@ -7299,7 +7294,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_5.5inch_SPG_Gun>
+				</B_L_5_5_in_Gun_CSP>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB29_Crusader_5inch/normal/lod0/Turret_02.model</undamaged>
@@ -7356,86 +7351,59 @@
 		</Turret_2_GB29_Crusader_5inch>
 	</turrets0>
 	<engines>
-		<Nuffield_liberty_MKIV>
+		<Nuffield_Liberty_Mk_III_CSP>
 			shared
 			<unlocks>
 				<engine>
-					Nuffield_liberty_MKV
+					Nuffield_Liberty_Mk_V_CSP
 					<cost>1000</cost>
 				</engine>
 			</unlocks>
-		</Nuffield_liberty_MKIV>
-		<Nuffield_liberty_MKV>shared</Nuffield_liberty_MKV>
+		</Nuffield_Liberty_Mk_III_CSP>
+		<Nuffield_Liberty_Mk_V_CSP>shared</Nuffield_Liberty_Mk_V_CSP>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<N9>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk1
-					<cost>1480</cost>
-				</radio>
-			</unlocks>
-		</N9>
-		<N19Mk1>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk2
-					<cost>3600</cost>
-				</radio>
-			</unlocks>
-		</N19Mk1>
-		<N19Mk2>
-			shared
-			<unlocks>
-				<radio>
-					N19Mk3
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</N19Mk2>
 		<N19Mk3>shared</N19Mk3>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Nuffield_liberty_MKIV>
+				<Nuffield_Liberty_Mk_III_CSP>
 					<smplEnginePower>
 						417.626
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>14</smplFwMaxSpeed>
-				</Nuffield_liberty_MKIV>
-				<Nuffield_liberty_MKV>
+				</Nuffield_Liberty_Mk_III_CSP>
+				<Nuffield_Liberty_Mk_V_CSP>
 					<smplEnginePower>
 						433.4853
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>14</smplFwMaxSpeed>
-				</Nuffield_liberty_MKV>
+				</Nuffield_Liberty_Mk_V_CSP>
 			</engines>
 			<chassis>
 				<Chassis_GB29_Crusader_5inch>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1127
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

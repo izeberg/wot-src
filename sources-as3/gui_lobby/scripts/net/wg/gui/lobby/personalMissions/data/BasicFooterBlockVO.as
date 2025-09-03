@@ -32,8 +32,11 @@ package net.wg.gui.lobby.personalMissions.data
       
       override protected function onDispose() : void
       {
-         this._tooltipData.dispose();
-         this._tooltipData = null;
+         if(this._tooltipData)
+         {
+            this._tooltipData.dispose();
+            this._tooltipData = null;
+         }
          this.popoverData = null;
          super.onDispose();
       }

@@ -541,7 +541,6 @@
 			<price>0</price>
 			<notInShop>true</notInShop>
 			<weight>6000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.2
 				<!--BW_String-->
@@ -2248,7 +2247,6 @@
 				</turret>
 			</unlocks>
 			<weight>12000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1 1.4 2.1
 				<!--BW_String-->
@@ -4009,7 +4007,6 @@
 				</turret>
 			</unlocks>
 			<weight>9000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->

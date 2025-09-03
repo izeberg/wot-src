@@ -373,6 +373,7 @@ package net.wg.gui.lobby.techtree.sub
                this.drawLevels();
             }
             this.updatePremiumPanelVisibility(this.isPremiumPanelVisible());
+            this.updateVScrollBarHeight();
             _loc1_ = this.dataProvider.nation;
             if(!this._hPositionByNation.hasOwnProperty(_loc1_))
             {
@@ -391,8 +392,8 @@ package net.wg.gui.lobby.techtree.sub
          }
          if(isInvalid(InvalidationType.SIZE))
          {
-            this.updateLayouts();
             this.updatePremiumPanelVisibility(this.isPremiumPanelVisible());
+            this.updateLayouts();
          }
          if(isInvalid(INV_RENDERERS_LINES_STATE))
          {
@@ -665,7 +666,7 @@ package net.wg.gui.lobby.techtree.sub
          this.updatePremiumPanelLayouts();
          if(this.scrollBar != null)
          {
-            this.scrollBar.y = _height - SCROLLBAR_BOTTOM_OFFSET | 0;
+            this.scrollBar.y = y + _height - SCROLLBAR_BOTTOM_OFFSET | 0;
             this.scrollBar.width = _width - SCROLLBAR_RIGHT_OFFSET | 0;
             this.scrollBar.validateNow();
          }
@@ -718,7 +719,9 @@ package net.wg.gui.lobby.techtree.sub
       
       private function updateVScrollBarHeight() : void
       {
-         this.vScrollBar.height = _height + VSCROLL_OFFSET_Y - this.getVScrollBottomOffset() | 0;
+         var _loc1_:uint = this.getLevelsMaxY();
+         this.vScrollBar.y = y + _loc1_ | 0;
+         this.vScrollBar.height = _height - this.getVScrollBottomOffset() - _loc1_ | 0;
          this.vScrollBar.validateNow();
          this.updateScrollVPosition(this.scrollVPosition);
       }
@@ -1122,6 +1125,7 @@ package net.wg.gui.lobby.techtree.sub
          this.updatePremiumPanelVisibility(this.isPremiumPanelVisible());
          this.updateVScrollBarHeight();
          this.updateLevelsBgColor();
+         invalidate(INV_RENDERERS_LINES_STATE);
       }
       
       private function set itemRendererName(param1:String) : void

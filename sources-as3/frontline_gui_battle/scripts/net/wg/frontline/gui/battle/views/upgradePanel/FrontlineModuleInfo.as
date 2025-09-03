@@ -10,6 +10,7 @@ package net.wg.frontline.gui.battle.views.upgradePanel
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.frontline.gui.battle.views.upgradePanel.data.FrontlineModuleInfoVO;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.gui.components.hintPanel.KeyViewersList;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
@@ -149,9 +150,9 @@ package net.wg.frontline.gui.battle.views.upgradePanel
          this.updateKeyViewerPosition();
       }
       
-      public function setHotKeys(param1:Array, param2:Array) : void
+      public function setHotKeys(param1:Vector.<IngameDetailsKeyVO>) : void
       {
-         this._keyViewerList.setKeys(param1,param2);
+         this._keyViewerList.setKeys(param1);
       }
       
       private function updateKeyViewerPosition() : void

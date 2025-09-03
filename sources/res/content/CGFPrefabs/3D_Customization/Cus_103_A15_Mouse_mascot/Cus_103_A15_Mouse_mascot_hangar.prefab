@@ -27,6 +27,16 @@
 			<UUID>e14ae4cc-b894-4828-93d3-ca32b84caace</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>73fd4201-01fa-4ca1-ba89-087791b19928</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>model</name>
+			<UUID>c2745aab-2b5f-49da-925c-78f96f4f8ede</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -38,7 +48,7 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>3b128560-84c8-44c0-8324-58b2063803dc</link>
+						<link>c2745aab-2b5f-49da-925c-78f96f4f8ede</link>
 					</property>
 				</config>
 			</component>
@@ -72,6 +82,26 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>73fd4201-01fa-4ca1-ba89-087791b19928</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>3b128560-84c8-44c0-8324-58b2063803dc</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c2745aab-2b5f-49da-925c-78f96f4f8ede</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>73fd4201-01fa-4ca1-ba89-087791b19928</link>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>SequenceComponent</type>
@@ -80,6 +110,14 @@
 				<UUID>8869e923-0911-42b7-bbca-724511b9b39b</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -102,6 +140,10 @@
 					</property>
 					<property>
 						<name>tracks</name>
+						<collection/>
+					</property>
+					<property>
+						<name>layers</name>
 						<collection/>
 					</property>
 				</config>
@@ -200,25 +242,72 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>73fd4201-01fa-4ca1-ba89-087791b19928</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c2745aab-2b5f-49da-925c-78f96f4f8ede</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>DynamicModel</type>
+			<type>BW::StateSwitcherComponent</type>
 			<version>1</version>
 			<component>
 				<UUID>3b128560-84c8-44c0-8324-58b2063803dc</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>Model name</name>
-						<isAsset>true</isAsset>
-						<value>content/3D_Customization/Cus_103_A15_Mouse_mascot/normal/lod0/Mouse_Body_Shield_anim.model</value>
+						<name>normal</name>
+						<link>73fd4201-01fa-4ca1-ba89-087791b19928</link>
 					</property>
 					<property>
-						<name>Cast Shadows</name>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
 						<value>1</value>
 					</property>
 				</config>
 			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>DynamicModel</type>
+			<version>1</version>
 			<component>
 				<UUID>208132c6-3195-4d22-b86e-bb9ade4846b7</UUID>
 				<flags>3</flags>
@@ -249,12 +338,82 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>c2745aab-2b5f-49da-925c-78f96f4f8ede</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Model name</name>
+						<isAsset>true</isAsset>
+						<value>content/3D_Customization/Cus_103_A15_Mouse_mascot/normal/lod0/Mouse_Body_Shield_anim.model</value>
+					</property>
+					<property>
+						<name>Cast Shadows</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>Particle</type>
 			<version>1</version>
 			<component>
-				<UUID>3b128560-84c8-44c0-8324-58b2063803dc</UUID>
+				<UUID>ffbe80e8-a60c-429b-9156-dae455a20d63</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>effect</name>
+						<isAsset>true</isAsset>
+						<value>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.eff</value>
+					</property>
+					<property>
+						<name>Rate</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>autoStart</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>oneTimeEffect</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>tintColour</name>
+						<value>1 1 1 1</value>
+					</property>
+					<property>
+						<name>opacity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>epicenterOffset</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>emissionSize</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>startSpeed</name>
+						<value>1 1</value>
+					</property>
+					<property>
+						<name>gravity</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>windWeight</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>fps</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>c2745aab-2b5f-49da-925c-78f96f4f8ede</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -308,57 +467,16 @@
 					</property>
 				</config>
 			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
 			<component>
-				<UUID>ffbe80e8-a60c-429b-9156-dae455a20d63</UUID>
+				<UUID>3b128560-84c8-44c0-8324-58b2063803dc</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
-						<name>effect</name>
-						<isAsset>true</isAsset>
-						<value>particles/3D_Customization/Cus_103_A15_Mouse_Mascot/Cus_103_killed_5.eff</value>
-					</property>
-					<property>
-						<name>Rate</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>autoStart</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>oneTimeEffect</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>tintColour</name>
-						<value>1 1 1 1</value>
-					</property>
-					<property>
-						<name>opacity</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>epicenterOffset</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>emissionSize</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>startSpeed</name>
-						<value>1 1</value>
-					</property>
-					<property>
-						<name>gravity</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>windWeight</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>fps</name>
+						<name>state</name>
 						<value>1</value>
 					</property>
 				</config>

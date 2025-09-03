@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Buildings/bld_112_03_SimpleHouse_01/normal/lod3/bld_112_03_SimpleHouse_05_corner_destroyed</parent>
+	<extent>225.000000</extent>
+	<visibilityBox>
+		<min>-11.131699 -2.001931 -6.190419</min>
+		<max>6.759783 26.734028 11.527905</max>
+	</visibilityBox>
+	<nodefullVisual>content/Buildings/bld_112_03_SimpleHouse_01/normal/lod2/bld_112_03_SimpleHouse_05_corner_destroyed</nodefullVisual>
+</root>

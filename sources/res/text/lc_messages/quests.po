@@ -1196,6 +1196,9 @@ msgstr "Special event currency"
 msgid "bonusName/excluded_map"
 msgstr "Excluded Map"
 
+msgid "bonusName/excluded_maps"
+msgstr "Excluded Maps"
+
 msgid "bonusName/exclusive_vehicle"
 msgstr "Exclusive Vehicle"
 
@@ -1238,6 +1241,9 @@ msgstr "Paint"
 msgid "bonusName/personalNumber"
 msgstr "Three-digit number"
 
+msgid "bonusName/personal_missions_points/preview"
+msgstr "Campaign Points: "
+
 msgid "bonusName/premium"
 msgstr "Days of Wargaming Premium Account"
 
@@ -1255,6 +1261,9 @@ msgstr "Daily Bonus Battle."
 
 msgid "bonusName/slots"
 msgstr "Garage slots"
+
+msgid "bonusName/statTracker"
+msgstr "Stat Tracker"
 
 msgid "bonusName/style"
 msgstr "Style"
@@ -1464,25 +1473,25 @@ msgid "dailyQuests/condition/destroyModule_few"
 msgstr "cause %(value)d critical hits in a battle"
 
 msgid "dailyQuests/condition/destroyModule_few_accum"
-msgstr "cause %(value)d critical hits"
+msgstr "cause critical hits"
 
 msgid "dailyQuests/condition/destroyModule_plural"
 msgstr "cause %(value)d critical hits in a battle"
 
 msgid "dailyQuests/condition/destroyModule_plural_accum"
-msgstr "cause %(value)d critical hits"
+msgstr "cause critical hits"
 
 msgid "dailyQuests/condition/destroyVeh_few"
 msgstr "destroy %(value)d vehicles in a battle"
 
 msgid "dailyQuests/condition/destroyVeh_few_accum"
-msgstr "destroy %(value)d vehicles"
+msgstr "destroy vehicles"
 
 msgid "dailyQuests/condition/destroyVeh_plural"
 msgstr "destroy %(value)d vehicles in a battle"
 
 msgid "dailyQuests/condition/destroyVeh_plural_accum"
-msgstr "destroy %(value)d vehicles"
+msgstr "destroy vehicles"
 
 msgid "dailyQuests/condition/destroyVeh_singular"
 msgstr "destroy %(value)d vehicle in a battle"
@@ -1500,19 +1509,19 @@ msgid "dailyQuests/condition/doDamageVeh"
 msgstr "cause damage to %(value)d vehicles in a battle"
 
 msgid "dailyQuests/condition/doDamageVeh_accum"
-msgstr "cause damage to %(value)d vehicles"
+msgstr "cause damage to vehicles"
 
 msgid "dailyQuests/condition/doDamageVeh_singular_accum"
-msgstr "Cause damage to %(value)d vehicle"
+msgstr "cause damage to vehicle"
 
 msgid "dailyQuests/condition/doDamage_accum"
-msgstr "cause %(value)d HP of damage"
+msgstr "cause damage (HP)"
 
 msgid "dailyQuests/condition/earnExp"
 msgstr "earn %(value)d base experience in a battle"
 
 msgid "dailyQuests/condition/earnExp_accum"
-msgstr "earn %(value)d base experience"
+msgstr "earn base experience"
 
 msgid "dailyQuests/condition/expTop"
 msgstr "be among the top %(value)d players on your team by experience earned"
@@ -1527,7 +1536,7 @@ msgid "dailyQuests/condition/winBattle"
 msgstr "win a battle"
 
 msgid "dailyQuests/condition/winBattle_accum"
-msgstr "win %(value)d battles"
+msgstr "win battles"
 
 msgid "dailyQuests/countDown/remainingText"
 msgstr "until new Standard Missions are available"
@@ -1568,7 +1577,7 @@ msgstr "Every %M min"
 msgid "dailyQuests/missionSwitch/tooltip/header"
 msgstr "Mission Re-roll unavailable"
 
-msgid "dailyQuests/postBattle/and"
+msgid "dailyQuests/postBattle/conditionTypeAnd"
 msgstr "and"
 
 msgid "dailyQuests/postBattle/genericAmpersand"
@@ -1639,6 +1648,23 @@ msgid "details/conditions/battlesInRow"
 msgstr ""
 "Fulfill all the conditions in the following number of battles in a row: %s"
 
+msgid "details/conditions/beyondVisionRadius"
+msgstr ""
+"Cause damage to enemy %(classes)s tanks outside your vehicle's view range"
+
+msgid "details/conditions/beyondVisionRadius/all"
+msgstr "Cause damage to enemy vehicles outside your vehicle's view range"
+
+msgid "details/conditions/beyondVisionRadius/eventCount"
+msgstr ""
+"Cause damage to enemy vehicles %(classes)s tanks outside your vehicle's view"
+" range the indicated number of times"
+
+msgid "details/conditions/beyondVisionRadius/eventCount/all"
+msgstr ""
+"Cause damage to enemy vehicles outside your vehicle's view range the "
+"indicated number of times"
+
 msgid "details/conditions/clanKills"
 msgstr "Destroy vehicles with special Camouflage: Camouflage color: %(camos)s"
 
@@ -1678,6 +1704,21 @@ msgstr "All players of the Platoon must be members of the same clan."
 
 msgid "details/conditions/clanMembership/same/team7x7"
 msgstr "All players of the team must be members of the same clan."
+
+msgid "details/conditions/classes/AT-SPG"
+msgstr "Tank Destroyer"
+
+msgid "details/conditions/classes/SPG"
+msgstr "SPG"
+
+msgid "details/conditions/classes/heavyTank"
+msgstr "Heavy"
+
+msgid "details/conditions/classes/lightTank"
+msgstr "Light"
+
+msgid "details/conditions/classes/mediumTank"
+msgstr "Medium"
 
 msgid "details/conditions/crits/critical/ammoBay"
 msgstr "Damage an ammo rack"
@@ -2081,6 +2122,84 @@ msgstr "Experience earned"
 
 msgid "details/conditions/cumulative/xp/other"
 msgstr "Role Experience earned"
+
+msgid "details/conditions/damageDealt"
+msgstr ""
+"Destroy %(amount)s enemy %(classes)s tanks, causing at least %(damage)s HP "
+"of damage to each of them"
+
+msgid "details/conditions/damageDealt/all"
+msgstr ""
+"Destroy %(amount)s enemy vehicles, causing at least %(damage)s HP of damage "
+"to each of them"
+
+msgid "details/conditions/damageDealt/all/not"
+msgstr ""
+"Do not destroy %(amount)s enemy vehicles after causing at least %(damage)s "
+"HP of damage to each of them."
+
+msgid "details/conditions/damageDealt/not"
+msgstr ""
+"Do not destroy %(amount)s enemy %(classes)s tanks after causing at least "
+"%(damage)s HP of damage to each of them"
+
+msgid "details/conditions/directHitsReceived"
+msgstr ""
+"Cause damage to enemy %(classes)s tanks that hit your vehicle at least "
+"%(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/all"
+msgstr ""
+"Cause damage to enemy vehicles that hit your vehicle at least "
+"%(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/all/negative"
+msgstr ""
+"Cause damage to enemy vehicles that hit your vehicle no more than "
+"%(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/eventCount"
+msgstr ""
+"Cause damage the indicated number of times to enemy %(classes)s tanks that "
+"hit your vehicle at least %(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/eventCount/all"
+msgstr ""
+"Cause damage to enemy vehicles that hit your vehicle at least "
+"%(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/eventCount/all/negative"
+msgstr ""
+"Cause damage to enemy vehicles that hit your vehicle no more than "
+"%(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/eventCount/negative"
+msgstr ""
+"Cause damage the indicated number of times to enemy %(classes)s tanks that "
+"hit your vehicle no more than %(directHitsReceived)s times"
+
+msgid "details/conditions/directHitsReceived/negative"
+msgstr ""
+"Cause damage to enemy %(classes)s tanks that hit your vehicle no more than "
+"%(directHitsReceived)s times"
+
+msgid "details/conditions/enemyIsNotSpotted"
+msgstr "Cause damage to unspotted enemy %(classes)s tanks"
+
+msgid "details/conditions/enemyIsNotSpotted/all"
+msgstr "Cause damage to unspotted enemy vehicles"
+
+msgid "details/conditions/enemyIsNotSpotted/eventCount"
+msgstr ""
+"Cause damage to unspotted enemy %(classes)s tanks the indicated number of "
+"times"
+
+msgid "details/conditions/enemyIsNotSpotted/eventCount/all"
+msgstr ""
+"Cause damage to unspotted enemy vehicles the indicated number of times"
+
+msgid "details/conditions/enumerate/or"
+msgstr "or"
 
 msgid "details/conditions/fireDamage"
 msgstr "Cause damage to an enemy vehicle by setting it on fire"
@@ -2819,6 +2938,12 @@ msgstr "Average value of the parameter for team: %(param)s"
 msgid "details/conditions/results/team7x7/simple"
 msgstr "Parameter for team: %(param)s"
 
+msgid "details/conditions/spotEnemy"
+msgstr "Destroy %(amount)s enemy %(classes)s tanks spotted by you"
+
+msgid "details/conditions/spotEnemy/all"
+msgstr "Destroy %(amount)s enemy vehicles spotted by you"
+
 msgid "details/conditions/survive"
 msgstr "Survive the battle"
 
@@ -2833,6 +2958,17 @@ msgstr "Top %(value)s"
 
 msgid "details/conditions/vehicle"
 msgstr "Suitable vehicles:"
+
+msgid "details/conditions/vehicleBlockedByArmor/title"
+msgstr "Block damage"
+
+msgid "details/conditions/vehicleBlockedByArmor/whileStill"
+msgstr ""
+"Block %(damage)s HP of damage from enemy %(classes)s tanks while your "
+"vehicle is stationary"
+
+msgid "details/conditions/vehicleBlockedByArmor/whileStill/all"
+msgstr "Block %(damage)s HP of damage while your vehicle is stationary"
 
 msgid "details/conditions/vehicleDamage"
 msgstr "Cause damage to an enemy vehicle"
@@ -2989,6 +3125,33 @@ msgstr "Suitable vehicles:"
 
 msgid "details/conditions/vehicleKills"
 msgstr "Destroy:"
+
+msgid "details/conditions/vehicleKills/beyondVisionRadius"
+msgstr "Destroy enemy %(classes)s tanks outside your vehicle's view range"
+
+msgid "details/conditions/vehicleKills/beyondVisionRadius/all"
+msgstr "Destroy enemy vehicles outside your vehicle's view range"
+
+msgid "details/conditions/vehicleKills/enemyIsNotSpotted"
+msgstr "Destroy unspotted enemy %(classes)s tanks"
+
+msgid "details/conditions/vehicleKills/enemyIsNotSpotted/all"
+msgstr "Destroy unspotted enemy vehicles"
+
+msgid "details/conditions/vehicleKills/whileEnemyInvisible"
+msgstr "Destroy unspotted enemy %(classes)s tanks"
+
+msgid "details/conditions/vehicleKills/whileEnemyInvisible/all"
+msgstr "Destroy unspotted enemy vehicles"
+
+msgid "details/conditions/vehicleKills/whileMovingAtSpeed"
+msgstr ""
+"Destroy enemy %(classes)s tanks while moving at a speed of at least "
+"%(speed)s km/h"
+
+msgid "details/conditions/vehicleKills/whileMovingAtSpeed/all"
+msgstr ""
+"Destroy enemy vehicles while moving at a speed of at least %(speed)s km/h"
 
 msgid "details/conditions/vehicleStun"
 msgstr "Duration of stun to an enemy vehicle (s)"
@@ -3232,6 +3395,41 @@ msgstr "Vehicles in the Garage:"
 msgid "details/conditions/vehiclesUnlocked"
 msgstr "Vehicles researched:"
 
+msgid "details/conditions/whileEnemyInvisible"
+msgstr "Cause damage to unspotted enemy %(classes)s tanks"
+
+msgid "details/conditions/whileEnemyInvisible/all"
+msgstr "Cause damage to unspotted enemy vehicles"
+
+msgid "details/conditions/whileEnemyInvisible/eventCount"
+msgstr ""
+"Cause damage to unspotted enemy %(classes)s tanks the indicated number of "
+"times"
+
+msgid "details/conditions/whileEnemyInvisible/eventCount/all"
+msgstr ""
+"Cause damage to unspotted enemy vehicles the indicated number of times"
+
+msgid "details/conditions/whileMovingAtSpeed"
+msgstr ""
+"Cause %(amount)s HP of damage to enemy %(classes)s tanks while moving at a "
+"speed of at least %(speed)s km/h"
+
+msgid "details/conditions/whileMovingAtSpeed/all"
+msgstr ""
+"Cause %(amount)s HP of damage to enemy vehicles while moving at a speed of "
+"at least %(speed)s km/h"
+
+msgid "details/conditions/whileMovingAtSpeed/eventCount"
+msgstr ""
+"Cause damage to enemy %(classes)s tanks the indicated number of times while "
+"moving at a speed of at least %(speed)s km/h"
+
+msgid "details/conditions/whileMovingAtSpeed/eventCount/all"
+msgstr ""
+"Cause damage to enemy vehicles the indicated number of times while moving at"
+" a speed of at least %(speed)s km/h"
+
 msgid "details/conditions/win"
 msgstr "Win a battle"
 
@@ -3291,6 +3489,12 @@ msgstr "Battles fought in %(modeName)s mode"
 
 msgid "details/dossier/43/battlesCount"
 msgstr "Battles fought in Onslaught mode"
+
+msgid "details/dossier/44/battlesCount"
+msgstr "Battles fought in Random Battle: Warm-Up"
+
+msgid "details/dossier/49/battlesCount"
+msgstr "Battles fought in Onslaught Light mode"
 
 msgid "details/dossier/5/battlesCount"
 msgstr "Special Battles fought"
@@ -4549,24 +4753,21 @@ msgid "infoPage/conditions/default"
 msgstr ""
 "Some missions must be completed in one battle, while others are accumulative"
 " and can be completed over an unlimited time. Accumulative missions have a "
-"progress bar. You can complete missions in Random Battles and Grand Battles,"
-" as well as in Onslaught, and your mission progress will be saved between "
-"game modes."
+"progress bar. You can complete missions in Random Battles and Onslaught, and"
+" your mission progress will be saved between game modes."
 
 msgid "infoPage/conditions/winback"
 msgstr ""
 "Some missions must be completed in one battle, while others are accumulative"
 " and can be completed over an unlimited time. Accumulative missions have a "
-"progress bar. You can complete missions in Warm-Up and Random Battles "
-"(including Grand Battles)."
+"progress bar. You can complete missions in Warm-Up and Random Battles."
 
 msgid "infoPage/conditions/winback_comp7Active"
 msgstr ""
 "Some missions must be completed in one battle, while others are accumulative"
 " and can be completed over an unlimited time. Accumulative missions have a "
-"progress bar. You can complete missions in Warm-Up, Random Battles "
-"(including Grand Battles), and Onslaught, and your mission progress will be "
-"saved between game modes."
+"progress bar. You can complete missions in Warm-Up, Random Battles, and "
+"Onslaught, and your mission progress will be saved between game modes."
 
 msgid "infoPage/conditionsTitle"
 msgstr "Conditions"
@@ -5057,14 +5258,6 @@ msgstr ""
 msgid "missions/tab/battleMatters/header"
 msgstr "Tank Academy"
 
-msgid "missions/tab/battle_pass/body"
-msgstr ""
-"Fight in Random Battles and in Steel Hunter to receive additional rewards. "
-"Battle Pass Points can also be earned for completing daily missions."
-
-msgid "missions/tab/battle_pass/header"
-msgstr "Battle Pass"
-
 msgid "missions/tab/categories/body"
 msgstr "Missions that can be completed once or multiple times."
 
@@ -5349,6 +5542,11 @@ msgstr "Primary condition completed"
 
 msgid "personalMission/status/missionDisabled"
 msgstr "Mission disabled"
+
+msgid "personalMission/status/notStartedRequired"
+msgstr ""
+"Unavailable: Personal Missions can only be completed in vehicles of Tier "
+"%(minLevel)s or higher"
 
 msgid "personalMission/status/onlyAddDone"
 msgstr "Secondary condition completed"
@@ -5641,6 +5839,9 @@ msgstr "\"Crate\""
 
 msgid "token/default/china"
 msgstr "China"
+
+msgid "token/default/comp7_light"
+msgstr "Onslaught Light"
 
 msgid "token/default/czech"
 msgstr "Czechoslovakia"

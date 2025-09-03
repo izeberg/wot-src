@@ -3,8 +3,8 @@
 	<shadow_model_name>content/Environment/envH_shadowPlane/gw.model</shadow_model_name>
 	<shadow_default_texture_name>content/Environment/envH_shadowPlane/GW_shad.dds</shadow_default_texture_name>
 	<shadow_empty_texture_name>system/maps/aid_null.dds</shadow_empty_texture_name>
-	<igrPremHangarPath>spaces/hangar_v3</igrPremHangarPath>
-	<igrPremHangarPathCN>spaces/hangar_v3</igrPremHangarPathCN>
+	<igrPremHangarPath>spaces/hangar_v4</igrPremHangarPath>
+	<igrPremHangarPathCN>spaces/hangar_v4</igrPremHangarPathCN>
 	<hangar_scene_spaces>
 		<item>
 			<name>BATTLE_ROYALE</name>
@@ -19,10 +19,14 @@
 		</item>
 		<item>
 			<name>DEFAULT</name>
-			<space>hangar_v3</space>
+			<space>hangar_v4</space>
 		</item>
 		<item>
 			<name>COMP7</name>
+			<space>h33_comp7</space>
+		</item>
+		<item>
+			<name>COMP7_LIGHT</name>
 			<space>h33_comp7</space>
 		</item>
 	</hangar_scene_spaces>

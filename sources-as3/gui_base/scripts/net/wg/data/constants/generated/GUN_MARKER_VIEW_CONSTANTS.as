@@ -23,7 +23,17 @@ package net.wg.data.constants.generated
       
       public static const TWIN_GUN_MARKER_LINKAGE:String = "TwinGunMarkerUI";
       
+      public static const ACCURACY_GUN_MARKER_DEBUG_LINKAGE:String = "AccuracyGunMarkerDebugUI";
+      
+      public static const ACCURACY_GUN_MARKER_LINKAGE:String = "AccuracyGunMarkerUI";
+      
+      public static const CHARGE_GUN_MARKER_DEBUG_LINKAGE:String = "ChargeGunMarkerDebugUI";
+      
+      public static const CHARGE_GUN_MARKER_LINKAGE:String = "ChargeGunMarkerUI";
+      
       public static const TWIN_GUN_MARKER_DEBUG_LINKAGE:String = "TwinGunMarkerDebugUI";
+      
+      public static const PENETRATION_FX_LINKAGE:String = "PenetrationFxUI";
       
       public static const ARCADE_GUN_MARKER_NAME:String = "arcadeGunMarker";
       
@@ -42,6 +52,22 @@ package net.wg.data.constants.generated
       public static const ARCADE_DUAL_ACC_GUN_MARKER_NAME:String = "arcadeDualAccGunMarker";
       
       public static const SNIPER_DUAL_ACC_GUN_MARKER_NAME:String = "sniperDualAccGunMarker";
+      
+      public static const ACCURACY_GUN_ARCADE_MARKER_NAME:String = "arcadeAccuracyGunMarker";
+      
+      public static const ACCURACY_GUN_SNIPER_MARKER_NAME:String = "sniperAccuracyGunMarker";
+      
+      public static const DEBUG_ACCURACY_GUN_ARCADE_MARKER_NAME:String = "arcadeDebugAccuracyGunMarker";
+      
+      public static const DEBUG_ACCURACY_GUN_SNIPER_MARKER_NAME:String = "sniperDebugAccuracyGunMarker";
+      
+      public static const CHARGE_GUN_ARCADE_MARKER_NAME:String = "arcadeChargeGunMarker";
+      
+      public static const CHARGE_GUN_SNIPER_MARKER_NAME:String = "sniperChargeGunMarker";
+      
+      public static const DEBUG_CHARGE_GUN_ARCADE_MARKER_NAME:String = "arcadeDebugChargeGunMarker";
+      
+      public static const DEBUG_CHARGE_GUN_SNIPER_MARKER_NAME:String = "sniperDebugChargeGunMarker";
       
       public static const VIDEO_GUN_MARKER_NAME:String = "videoGunMarker";
       
@@ -63,7 +89,7 @@ package net.wg.data.constants.generated
       
       public static const GUN_TAG_RELOADING_TYPES:Array = [1,4,7,10,13];
       
-      public static const GUN_TAG_SHOT_RESULT_TYPES:Array = [0,2,3,6,9,12];
+      public static const GUN_TAG_SHOT_RESULT_TYPES:Array = [0,3,6,9,12];
       
       public static const DISPERSION_CIRCLE_RELOADING_TYPES:Array = [0,1,2];
       

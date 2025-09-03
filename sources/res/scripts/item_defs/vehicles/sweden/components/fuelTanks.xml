@@ -7,6 +7,7 @@
 		<Heavy>204</Heavy>
 		<Large>205</Large>
 		<Large_SH>206</Large_SH>
+		<fuelTank_tier_11>207</fuelTank_tier_11>
 	</ids>
 	<shared>
 		<Small>
@@ -64,6 +65,17 @@
 				<!--BW_String-->
 			</repairCost>
 		</Large>
+		<fuelTank_tier_11>
+			<tags/>
+			<price>100</price>
+			<weight>300</weight>
+			<maxHealth>225</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
+		</fuelTank_tier_11>
 		<Large_SH>
 			<tags/>
 			<price>0</price>

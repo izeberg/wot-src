@@ -170,6 +170,11 @@ msgstr ""
 "Once you accept the invitation, you will be automatically removed from the "
 "tactical unit and transferred to the %(host)s server."
 
+msgid "invites/note/change_and_leave/PREBATTLE_COMP7_LIGHT"
+msgstr ""
+"Once you accept the invitation, you will be automatically removed from the "
+"tactical unit and transferred to the %(host)s server."
+
 msgid "invites/note/change_and_leave/PREBATTLE_EPIC"
 msgstr ""
 "Once you accept the invitation, you will be automatically removed from the "
@@ -265,6 +270,11 @@ msgstr ""
 "Once you accept the invitation, you will exit Onslaught and be transferred "
 "to the %(host)s server."
 
+msgid "invites/note/change_and_leave/QUEUE_COMP7_LIGHT"
+msgstr ""
+"Once you accept the invitation, you will exit Onslaught Light and be "
+"transferred to the %(host)s server."
+
 msgid "invites/note/change_and_leave/QUEUE_EPIC"
 msgstr ""
 "Once you accept the invitation, you will exit Frontline and be transferred "
@@ -321,6 +331,11 @@ msgstr ""
 "battle on the Global Map."
 
 msgid "invites/note/leave/PREBATTLE_COMP7"
+msgstr ""
+"Once you accept the invitation, you will be automatically removed from the "
+"tactical unit."
+
+msgid "invites/note/leave/PREBATTLE_COMP7_LIGHT"
 msgstr ""
 "Once you accept the invitation, you will be automatically removed from the "
 "tactical unit."
@@ -402,6 +417,9 @@ msgstr "Once you accept the invitation, you will exit Big Hunt."
 
 msgid "invites/note/leave/QUEUE_COMP7"
 msgstr "Once you accept the invitation, you will exit Onslaught."
+
+msgid "invites/note/leave/QUEUE_COMP7_LIGHT"
+msgstr "Once you accept the invitation, you will exit Onslaught Light."
 
 msgid "invites/note/leave/QUEUE_EPIC"
 msgstr "Once you accept the invitation, you will exit Frontline."
@@ -495,6 +513,9 @@ msgstr "Invitation to Join Steel Hunter Platoon"
 
 msgid "invites/text/COMP7"
 msgstr "Invitation to Join the Onslaught Platoon"
+
+msgid "invites/text/COMP7_LIGHT"
+msgstr "Invitation to join the Onslaught Light Platoon"
 
 msgid "invites/text/EPIC"
 msgstr "Invitation to Join the Frontline Platoon"

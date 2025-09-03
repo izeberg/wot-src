@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod0</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.160577 -2.764897</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.879241 0.255519 0.443799</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.031182 0.999514</row1>
+					<row2>0.000000 -0.999514 -0.031182</row2>
+					<row3>-1.449010 -0.220322 3.811023</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.059714 -0.998216</row1>
+					<row2>-0.000000 -0.998216 -0.059714</row2>
+					<row3>-1.449010 -0.355168 -3.950162</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.031182 0.999514</row1>
+					<row2>0.000000 -0.999514 -0.031182</row2>
+					<row3>1.449005 -0.220322 3.811023</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.059714 -0.998216</row1>
+					<row2>-0.000000 -0.998216 -0.059714</row2>
+					<row3>1.449005 -0.355168 -3.950162</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.844608 0.535386</row1>
+					<row2>0.000000 -0.535386 -0.844608</row2>
+					<row3>0.785334 0.331920 -4.132247</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.849679 0.527300</row1>
+					<row2>0.000000 -0.527300 -0.849679</row2>
+					<row3>-0.786375 0.331920 -4.132247</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_3</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.844608 0.535386</row1>
+					<row2>0.000000 -0.535386 -0.844608</row2>
+					<row3>1.267783 0.331920 -4.132247</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_4</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.844608 0.535386</row1>
+					<row2>0.000000 -0.535386 -0.844608</row2>
+					<row3>-1.252850 0.331920 -4.132247</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.001389 0.348684 2.509405</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>back_L</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.620099 0.904270 -3.285255</row3>
+				</transform>
+				<node>
+					<identifier>back_L_upper</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>-0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-0.220406 -0.098864 -0.486916</row3>
+					</transform>
+					<node>
+						<identifier>back_L_upper_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.840505 -0.805407 3.772171</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>back_L_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.620099 -0.904270 3.285255</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>back_L_lower</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.840505 0.816189 -3.520117</row3>
+				</transform>
+				<node>
+					<identifier>back_L_lower_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.840505 -0.816189 3.520117</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>back_R</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.620094 0.904270 -3.285255</row3>
+				</transform>
+				<node>
+					<identifier>back_R_upper</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>-0.000000 -0.000000 1.000000</row2>
+						<row3>0.239636 -0.098864 -0.486916</row3>
+					</transform>
+					<node>
+						<identifier>back_R_upper_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.859729 -0.805407 3.772171</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>back_R_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.620094 -0.904270 3.285255</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>back_R_lower</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.859729 0.816189 -3.520117</row3>
+				</transform>
+				<node>
+					<identifier>back_R_lower_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.859729 -0.816189 3.520117</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>back_mid</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000003 0.904270 -3.285255</row3>
+				</transform>
+				<node>
+					<identifier>back_mid_upper</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>0.293751 -0.098864 -0.486916</row3>
+					</transform>
+					<node>
+						<identifier>back_mid_upper_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.293748 -0.805407 3.772171</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>back_mid_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000003 -0.904270 3.285255</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>back_mid_lower</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.293748 0.816189 -3.520117</row3>
+				</transform>
+				<node>
+					<identifier>back_mid_lower_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.293748 -0.816189 3.520117</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>front_L</identifier>
+				<transform>
+					<row0>0.995100 0.098873 0.000000</row0>
+					<row1>-0.098719 0.993548 -0.055831</row1>
+					<row2>-0.005520 0.055557 0.998440</row2>
+					<row3>-1.424000 0.949992 -1.441280</row3>
+				</transform>
+				<node>
+					<identifier>front_L_BlendBone</identifier>
+					<transform>
+						<row0>0.995100 -0.098719 -0.005520</row0>
+						<row1>0.098873 0.993548 0.055557</row1>
+						<row2>-0.000000 0.055831 -0.998440</row2>
+						<row3>1.323093 -1.164906 1.378392</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>front_R</identifier>
+				<transform>
+					<row0>0.993753 -0.110991 0.011639</row0>
+					<row1>0.111464 0.992266 -0.054621</row1>
+					<row2>-0.005487 0.055577 0.998439</row2>
+					<row3>1.424592 0.949919 -1.419178</row3>
+				</transform>
+				<node>
+					<identifier>front_R_BlendBone</identifier>
+					<transform>
+						<row0>0.993753 0.111464 -0.005487</row0>
+						<row1>-0.110991 0.992266 0.055577</row1>
+						<row2>-0.011639 0.054621 -0.998439</row2>
+						<row3>-1.293743 -1.178881 1.371986</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>front_L_BlendBone</node>
+		<node>back_L_BlendBone</node>
+		<node>back_L_lower_BlendBone</node>
+		<node>front_R_BlendBone</node>
+		<node>back_R_BlendBone</node>
+		<node>back_R_lower_BlendBone</node>
+		<node>back_mid_BlendBone</node>
+		<node>back_R_upper_BlendBone</node>
+		<node>back_L_upper_BlendBone</node>
+		<node>back_mid_upper_BlendBone</node>
+		<node>back_mid_lower_BlendBone</node>
+		<geometry>
+			<vertices>animatedShape.vertices</vertices>
+			<primitive>animatedShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.002980 0.804519 2.574968</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_01_skinned</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.009762 0.805680 3.633931</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>hull</node>
+		<geometry>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000006 0.976699 -0.160432</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB152_AT_FV230_Breaker/AT_FV230_Breaker_equipment_AO.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.046710 0.590014 -1.414356</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.990091 -0.631698 -4.219240</min>
+		<max>1.990078 2.585242 3.877424</max>
+	</boundingBox>
+	<geometrySize>344992</geometrySize>
+</root>

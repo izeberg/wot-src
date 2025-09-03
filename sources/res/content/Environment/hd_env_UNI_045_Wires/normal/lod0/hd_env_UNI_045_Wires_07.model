@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-14.5982 6.08767 -0.23707
+			<!--BW_String-->
+		</min>
+		<max>
+			14.9495 7.42142 0.238302
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<extent>48</extent>
+	<parent>content/Environment/hd_env_UNI_045_Wires/normal/lod1/hd_env_UNI_045_Wires_07</parent>
+	<nodelessVisual>content/Environment/hd_env_UNI_045_Wires/normal/lod0/hd_env_UNI_045_Wires_07</nodelessVisual>
+</root>

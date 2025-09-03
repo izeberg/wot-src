@@ -69,9 +69,8 @@ package net.wg.gui.components.advanced
          if(this._delta - this._endDelta >= 0)
          {
             this._deltaStepsNumber = 0;
-            this._delta = this._endDelta;
          }
-         else if(this._deltaStepsNumber == 0)
+         if(this._deltaStepsNumber == 0)
          {
             this._delta = this._endDelta;
             this.stopAnimation();
@@ -215,11 +214,9 @@ package net.wg.gui.components.advanced
       private function animMarker() : void
       {
          --this._markerStepsNumber;
-         if(this._markerValue - this._endMarkerValue == 0)
+         if(this._markerValue == this._endMarkerValue)
          {
             this._markerStepsNumber = 0;
-            this._markerValue = this._endMarkerValue;
-            return;
          }
          if(this._markerStepsNumber == 0)
          {
@@ -289,20 +286,19 @@ package net.wg.gui.components.advanced
       
       public function set markerValue(param1:Number) : void
       {
-         if(this._markerValue == param1)
+         if(this._endMarkerValue == param1)
          {
-            this._endMarkerValue = param1;
             return;
          }
+         this._endMarkerValue = param1;
          if(useAnim)
          {
-            this._endMarkerValue = param1;
             this.calculateStockSteps();
             invalidate(INVALID_ANIMATE);
          }
          else
          {
-            this._markerValue = param1;
+            this._markerValue = this._endMarkerValue;
             invalidate(INVALID_POSITION);
          }
       }

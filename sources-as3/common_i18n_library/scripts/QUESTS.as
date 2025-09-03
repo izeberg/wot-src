@@ -15,8 +15,6 @@ package
       
       public static const MISSIONS_TAB_CURRENTVEHICLE:String = "#quests:missions/tab/currentVehicle";
       
-      public static const MISSIONS_TAB_BATTLE_PASS:String = "#quests:missions/tab/battle_pass";
-      
       public static const MISSIONS_TAB_DAILY:String = "#quests:missions/tab/daily";
       
       public static const MISSIONS_TAB_MAPBOX:String = "#quests:missions/tab/mapbox";
@@ -611,6 +609,8 @@ package
       
       public static const DETAILS_CONDITIONS_VEHICLEDAMAGE_TITLE:String = "#quests:details/conditions/vehicleDamage/title";
       
+      public static const DETAILS_CONDITIONS_VEHICLEBLOCKEDBYARMOR_TITLE:String = "#quests:details/conditions/vehicleBlockedByArmor/title";
+      
       public static const DETAILS_CONDITIONS_ADDITIONAL_TITLE:String = "#quests:details/conditions/additional/title";
       
       public static const DETAILS_CONDITIONS_INSTALLEDCAMOUFLAGE_TITLE:String = "#quests:details/conditions/installedCamouflage/title";
@@ -1122,6 +1122,98 @@ package
       public static const DETAILS_CONDITIONS_RAMDAMAGE_EVENTCOUNT_NATION_TYPE_LEVEL:String = "#quests:details/conditions/ramDamage/eventCount/nation_type_level";
       
       public static const DETAILS_CONDITIONS_RAMDAMAGE_EVENTCOUNT_NATION_TYPE_LEVEL_NOT:String = "#quests:details/conditions/ramDamage/eventCount/nation_type_level/not";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED:String = "#quests:details/conditions/directHitsReceived";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_NEGATIVE:String = "#quests:details/conditions/directHitsReceived/negative";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_ALL:String = "#quests:details/conditions/directHitsReceived/all";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_ALL_NEGATIVE:String = "#quests:details/conditions/directHitsReceived/all/negative";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_EVENTCOUNT:String = "#quests:details/conditions/directHitsReceived/eventCount";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_EVENTCOUNT_NEGATIVE:String = "#quests:details/conditions/directHitsReceived/eventCount/negative";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_EVENTCOUNT_ALL:String = "#quests:details/conditions/directHitsReceived/eventCount/all";
+      
+      public static const DETAILS_CONDITIONS_DIRECTHITSRECEIVED_EVENTCOUNT_ALL_NEGATIVE:String = "#quests:details/conditions/directHitsReceived/eventCount/all/negative";
+      
+      public static const DETAILS_CONDITIONS_DAMAGEDEALT:String = "#quests:details/conditions/damageDealt";
+      
+      public static const DETAILS_CONDITIONS_DAMAGEDEALT_NOT:String = "#quests:details/conditions/damageDealt/not";
+      
+      public static const DETAILS_CONDITIONS_DAMAGEDEALT_ALL:String = "#quests:details/conditions/damageDealt/all";
+      
+      public static const DETAILS_CONDITIONS_DAMAGEDEALT_ALL_NOT:String = "#quests:details/conditions/damageDealt/all/not";
+      
+      public static const DETAILS_CONDITIONS_WHILEMOVINGATSPEED:String = "#quests:details/conditions/whileMovingAtSpeed";
+      
+      public static const DETAILS_CONDITIONS_WHILEMOVINGATSPEED_ALL:String = "#quests:details/conditions/whileMovingAtSpeed/all";
+      
+      public static const DETAILS_CONDITIONS_WHILEMOVINGATSPEED_EVENTCOUNT:String = "#quests:details/conditions/whileMovingAtSpeed/eventCount";
+      
+      public static const DETAILS_CONDITIONS_WHILEMOVINGATSPEED_EVENTCOUNT_ALL:String = "#quests:details/conditions/whileMovingAtSpeed/eventCount/all";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_WHILEMOVINGATSPEED:String = "#quests:details/conditions/vehicleKills/whileMovingAtSpeed";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_WHILEMOVINGATSPEED_ALL:String = "#quests:details/conditions/vehicleKills/whileMovingAtSpeed/all";
+      
+      public static const DETAILS_CONDITIONS_WHILEENEMYINVISIBLE:String = "#quests:details/conditions/whileEnemyInvisible";
+      
+      public static const DETAILS_CONDITIONS_WHILEENEMYINVISIBLE_ALL:String = "#quests:details/conditions/whileEnemyInvisible/all";
+      
+      public static const DETAILS_CONDITIONS_WHILEENEMYINVISIBLE_EVENTCOUNT:String = "#quests:details/conditions/whileEnemyInvisible/eventCount";
+      
+      public static const DETAILS_CONDITIONS_WHILEENEMYINVISIBLE_EVENTCOUNT_ALL:String = "#quests:details/conditions/whileEnemyInvisible/eventCount/all";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_WHILEENEMYINVISIBLE:String = "#quests:details/conditions/vehicleKills/whileEnemyInvisible";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_WHILEENEMYINVISIBLE_ALL:String = "#quests:details/conditions/vehicleKills/whileEnemyInvisible/all";
+      
+      public static const DETAILS_CONDITIONS_ENEMYISNOTSPOTTED:String = "#quests:details/conditions/enemyIsNotSpotted";
+      
+      public static const DETAILS_CONDITIONS_ENEMYISNOTSPOTTED_ALL:String = "#quests:details/conditions/enemyIsNotSpotted/all";
+      
+      public static const DETAILS_CONDITIONS_ENEMYISNOTSPOTTED_EVENTCOUNT:String = "#quests:details/conditions/enemyIsNotSpotted/eventCount";
+      
+      public static const DETAILS_CONDITIONS_ENEMYISNOTSPOTTED_EVENTCOUNT_ALL:String = "#quests:details/conditions/enemyIsNotSpotted/eventCount/all";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_ENEMYISNOTSPOTTED:String = "#quests:details/conditions/vehicleKills/enemyIsNotSpotted";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_ENEMYISNOTSPOTTED_ALL:String = "#quests:details/conditions/vehicleKills/enemyIsNotSpotted/all";
+      
+      public static const DETAILS_CONDITIONS_BEYONDVISIONRADIUS:String = "#quests:details/conditions/beyondVisionRadius";
+      
+      public static const DETAILS_CONDITIONS_BEYONDVISIONRADIUS_ALL:String = "#quests:details/conditions/beyondVisionRadius/all";
+      
+      public static const DETAILS_CONDITIONS_BEYONDVISIONRADIUS_EVENTCOUNT:String = "#quests:details/conditions/beyondVisionRadius/eventCount";
+      
+      public static const DETAILS_CONDITIONS_BEYONDVISIONRADIUS_EVENTCOUNT_ALL:String = "#quests:details/conditions/beyondVisionRadius/eventCount/all";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_BEYONDVISIONRADIUS:String = "#quests:details/conditions/vehicleKills/beyondVisionRadius";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEKILLS_BEYONDVISIONRADIUS_ALL:String = "#quests:details/conditions/vehicleKills/beyondVisionRadius/all";
+      
+      public static const DETAILS_CONDITIONS_SPOTENEMY:String = "#quests:details/conditions/spotEnemy";
+      
+      public static const DETAILS_CONDITIONS_SPOTENEMY_ALL:String = "#quests:details/conditions/spotEnemy/all";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEBLOCKEDBYARMOR_WHILESTILL:String = "#quests:details/conditions/vehicleBlockedByArmor/whileStill";
+      
+      public static const DETAILS_CONDITIONS_VEHICLEBLOCKEDBYARMOR_WHILESTILL_ALL:String = "#quests:details/conditions/vehicleBlockedByArmor/whileStill/all";
+      
+      public static const DETAILS_CONDITIONS_CLASSES_LIGHTTANK:String = "#quests:details/conditions/classes/lightTank";
+      
+      public static const DETAILS_CONDITIONS_CLASSES_MEDIUMTANK:String = "#quests:details/conditions/classes/mediumTank";
+      
+      public static const DETAILS_CONDITIONS_CLASSES_HEAVYTANK:String = "#quests:details/conditions/classes/heavyTank";
+      
+      public static const DETAILS_CONDITIONS_CLASSES_SPG:String = "#quests:details/conditions/classes/SPG";
+      
+      public static const DETAILS_CONDITIONS_CLASSES_AT_SPG:String = "#quests:details/conditions/classes/AT-SPG";
+      
+      public static const DETAILS_CONDITIONS_ENUMERATE_OR:String = "#quests:details/conditions/enumerate/or";
       
       public static const DETAILS_CONDITIONS_CRITS_DESTROYED_TRACK:String = "#quests:details/conditions/crits/destroyed/track";
       
@@ -1923,6 +2015,10 @@ package
       
       public static const DETAILS_DOSSIER_43_BATTLESCOUNT:String = "#quests:details/dossier/43/battlesCount";
       
+      public static const DETAILS_DOSSIER_44_BATTLESCOUNT:String = "#quests:details/dossier/44/battlesCount";
+      
+      public static const DETAILS_DOSSIER_49_BATTLESCOUNT:String = "#quests:details/dossier/49/battlesCount";
+      
       public static const DETAILS_MODIFIERS_TITLE_DISCOUNT:String = "#quests:details/modifiers/title/discount";
       
       public static const DETAILS_MODIFIERS_TITLE_SELLING:String = "#quests:details/modifiers/title/selling";
@@ -2122,10 +2218,6 @@ package
       public static const MISSIONS_TAB_WINBACK_HEADER:String = "#quests:missions/tab/winback/header";
       
       public static const MISSIONS_TAB_WINBACK_BODY:String = "#quests:missions/tab/winback/body";
-      
-      public static const MISSIONS_TAB_BATTLE_PASS_BODY:String = "#quests:missions/tab/battle_pass/body";
-      
-      public static const MISSIONS_TAB_BATTLE_PASS_HEADER:String = "#quests:missions/tab/battle_pass/header";
       
       public static const MISSIONS_TAB_LIVE_OPS_WEB_EVENTS_BODY:String = "#quests:missions/tab/live_ops_web_events/body";
       
@@ -2405,6 +2497,8 @@ package
       
       public static const TOKEN_DEFAULT_BATTLE_ROYALE:String = "#quests:token/default/battle_royale";
       
+      public static const TOKEN_DEFAULT_COMP7_LIGHT:String = "#quests:token/default/comp7_light";
+      
       public static const BONUSNAME_CREDITS:String = "#quests:bonusName/credits";
       
       public static const BONUSNAME_GOLD:String = "#quests:bonusName/gold";
@@ -2460,6 +2554,8 @@ package
       public static const BONUSNAME_MODIFICATION:String = "#quests:bonusName/modification";
       
       public static const BONUSNAME_ATTACHMENT:String = "#quests:bonusName/attachment";
+      
+      public static const BONUSNAME_STATTRACKER:String = "#quests:bonusName/statTracker";
       
       public static const BONUSNAME_FREETOKENS:String = "#quests:bonusName/freeTokens";
       
@@ -2551,6 +2647,8 @@ package
       
       public static const BONUSNAME_BATTLEPASSPOINTS_PREVIEW:String = "#quests:bonusName/battlePassPoints/preview";
       
+      public static const BONUSNAME_PERSONAL_MISSIONS_POINTS_PREVIEW:String = "#quests:bonusName/personal_missions_points/preview";
+      
       public static const BONUSNAME_BRCOIN:String = "#quests:bonusName/brcoin";
       
       public static const BONUSNAME_GOLD_BANK:String = "#quests:bonusName/gold_bank";
@@ -2558,6 +2656,8 @@ package
       public static const BONUSNAME_IDLE_CREW_XP:String = "#quests:bonusName/idle_crew_xp";
       
       public static const BONUSNAME_EXCLUDED_MAP:String = "#quests:bonusName/excluded_map";
+      
+      public static const BONUSNAME_EXCLUDED_MAPS:String = "#quests:bonusName/excluded_maps";
       
       public static const BONUSNAME_FREE_EQUIPMENT_DEMOUNTING:String = "#quests:bonusName/free_equipment_demounting";
       
@@ -3121,6 +3221,8 @@ package
       
       public static const PERSONALMISSION_STATUS_ADDBOTTOMLOCKED_PM2:String = "#quests:personalMission/status/addBottomLocked/pm2";
       
+      public static const PERSONALMISSION_STATUS_NOTSTARTEDREQUIRED:String = "#quests:personalMission/status/notStartedRequired";
+      
       public static const PERSONALMISSION_STATUS_ADDBOTTOMINFO_REGULAR:String = "#quests:personalMission/status/addBottomInfo/regular";
       
       public static const PERSONALMISSION_STATUS_ADDBOTTOMINFO_PM2:String = "#quests:personalMission/status/addBottomInfo/pm2";
@@ -3333,7 +3435,7 @@ package
       
       public static const DAILYQUESTS_POSTBATTLE_GENERICAMPERSAND:String = "#quests:dailyQuests/postBattle/genericAmpersand";
       
-      public static const DAILYQUESTS_POSTBATTLE_AND:String = "#quests:dailyQuests/postBattle/and";
+      public static const DAILYQUESTS_POSTBATTLE_CONDITIONTYPEAND:String = "#quests:dailyQuests/postBattle/conditionTypeAnd";
       
       public static const DAILYQUESTS_TAKEREWARDSBUTTON_TEXT:String = "#quests:dailyQuests/takeRewardsButton/text";
       

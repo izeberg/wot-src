@@ -1,13 +1,14 @@
 import cPickle, logging
 from functools import partial, wraps
-import AccountCommands, constants, items
+import AccountCommands, constants, items, personal_missions
 from account_helpers.premium_info import PremiumInfo
 from debug_utils import LOG_DEBUG_DEV, LOG_WARNING, LOG_ERROR
-from helpers import time_utils
+from helpers import time_utils, dependency
 from piggy_bank_common.settings_constants import PIGGY_BANK_PDATA_KEY
 from shared_utils.account_helpers.diff_utils import synchronizeDicts
 from items import vehicles
 from gui.shared.money import Currency
+from skeletons.gui.server_events import IEventsCache
 _logger = logging.getLogger(__name__)
 _VEHICLE = items.ITEM_TYPE_INDICES['vehicle']
 _CHASSIS = items.ITEM_TYPE_INDICES['vehicleChassis']
@@ -27,7 +28,7 @@ _SIMPLE_VALUE_STATS = ('fortResource', 'slots', 'berths', 'freeXP', 'dossier', '
                        'battlesTillCaptcha', 'dailyPlayHours', 'playLimits', 'applyAdditionalXPCount',
                        'applyAdditionalWoTPlusXPCount', 'XPpp') + Currency.ALL
 _DICT_STATS = ('vehTypeXP', 'vehTypeLocks', 'restrictions', 'globalVehicleLocks', 'dummySessionStats',
-               'maxResearchedLevelByNation', 'weeklyVehicleCrystals')
+               'maxResearchedLevelByNation', 'weeklyVehicleCrystals', 'prestigeMilestonesAchieved')
 _GROWING_SET_STATS = ('unlocks', 'eliteVehicles', 'multipliedXPVehs', 'multipliedRankedBattlesVehs')
 _ACCOUNT_STATS = ('clanDBID', 'attrs', 'premiumExpiryTime', 'autoBanTime', 'globalRating')
 _CACHE_STATS = ('isFinPswdVerified', 'mayConsumeWalletResources', 'oldVehInvIDs', 'isSsrPlayEnabled',
@@ -64,6 +65,7 @@ def _get_callback_proxy(callback=None):
 
 
 class Stats(object):
+    _eventsCache = dependency.descriptor(IEventsCache)
 
     def __init__(self, syncData, commandsProxy):
         self.__account = None
@@ -390,11 +392,39 @@ class Stats(object):
             if callback is not None:
                 callback(AccountCommands.RES_NON_PLAYER)
             return
-        if callback is not None:
-            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+        pmCache = personal_missions.g_cache
+        if not self._eventsCache.getPersonalMissions().isCampaignActive(pmCache.branchByMissionID(questID)):
+            _logger.error('No active campaign for personal mission with id: %s', questID)
+            return
         else:
-            proxy = None
-        self.__account._doCmdIntArr(AccountCommands.CMD_COMPLETE_PERSONAL_MISSION, [questID, int(withAdditional)], proxy)
+            if callback is not None:
+                proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+            else:
+                proxy = None
+            self.__account._doCmdIntArr(AccountCommands.CMD_COMPLETE_PERSONAL_MISSION, [questID, int(withAdditional)], proxy)
+            return
+
+    def completePersonalMissionRange(self, missionIdRange, withAdditional=False, callback=None):
+        missionsId = missionIdRange.split('-')
+        if len(missionsId) == 2:
+            if self.__ignore:
+                if callback is not None:
+                    callback(AccountCommands.RES_NON_PLAYER)
+                return
+            if callback is not None:
+                proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+            else:
+                proxy = None
+            pmCache = personal_missions.g_cache
+            startMissionRange = int(missionsId[0])
+            endMissionRange = int(missionsId[1]) + 1
+            for missionID in range(startMissionRange, endMissionRange):
+                if not self._eventsCache.getPersonalMissions().isCampaignActive(pmCache.branchByMissionID(missionID)):
+                    _logger.error('No active campaign for personal mission with id: %s', missionID)
+                    continue
+                self.__account._doCmdIntArr(AccountCommands.CMD_COMPLETE_PERSONAL_MISSION, [
+                 missionID, int(withAdditional)], proxy)
+
         return
 
     def completeQuests(self, questIDs, callback=None):
@@ -408,6 +438,20 @@ class Stats(object):
             proxy = None
         self.__account._doCmdStrArr(AccountCommands.CMD_COMPLETE_QUESTS_DEV, questIDs, proxy)
         return
+
+    def completePremiumDaily(self):
+        from gui import SystemMessages
+        from gui.server_events.events_helpers import premMissionsSortFunc
+        from gui.shared.notifications import NotificationPriorityLevel
+        quests = sorted(self._eventsCache.getPremiumQuests().values(), cmp=premMissionsSortFunc)
+        for q in quests:
+            if not q.isCompleted():
+                questID = q.getID()
+                self.completeQuests([questID])
+                SystemMessages.pushI18nMessage(('Premium daily quest completed: "{}".').format(questID), priority=NotificationPriorityLevel.HIGH)
+                return
+
+        SystemMessages.pushI18nMessage('All premium daily quests are already completed.', priority=NotificationPriorityLevel.HIGH)
 
     def rerollDailyQuest(self, token, callback=None):
         if self.__ignore:
@@ -479,6 +523,78 @@ class Stats(object):
         else:
             proxy = None
         self.__account._doCmdInt3(AccountCommands.CMD_RESET_BONUS_QUEST, 0, 0, 0, proxy)
+        return
+
+    def weeklyQuestsNewWeek(self, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, 0)
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+        else:
+            proxy = None
+        self.__account._doCmdNoArgs(AccountCommands.CMD_WEEKLY_QUEST_NEW_WEEK, proxy)
+        return
+
+    def weeklyQuestsRerollAll(self, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, 0)
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+        else:
+            proxy = None
+        self.__account._doCmdNoArgs(AccountCommands.CMD_WEEKLY_QUEST_REROLL_ALL, proxy)
+        return
+
+    def rerollWeeklyQuest(self, token, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, 0)
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID, errorStr)
+        else:
+            proxy = None
+        self.__account._doCmdStr(AccountCommands.CMD_REROLL_WEEKLY_QUEST, token, proxy)
+        return
+
+    def rerollWeeklyQuestDev(self, id, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, 0)
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+        else:
+            proxy = None
+        self.__account._doCmdInt(AccountCommands.CMD_REROLL_WEEKLY_QUEST_DEV, id, proxy)
+        return
+
+    def resetWeeklyQuestsRerollTimeout(self, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, 0)
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+        else:
+            proxy = None
+        self.__account._doCmdNoArgs(AccountCommands.CMD_RESET_WEEKLY_REROLL_TIMEOUT, proxy)
+        return
+
+    def completeWeeklyQuestDev(self, id, callback=None):
+        if self.__ignore:
+            if callback is not None:
+                callback(AccountCommands.RES_NON_PLAYER, 0)
+            return
+        if callback is not None:
+            proxy = lambda requestID, resultID, errorStr, ext={}: callback(resultID)
+        else:
+            proxy = None
+        self.__account._doCmdInt(AccountCommands.CMD_COMPLETE_WEEKLY_QUEST_DEV, id, proxy)
         return
 
     @_checkIfNonPlayer()

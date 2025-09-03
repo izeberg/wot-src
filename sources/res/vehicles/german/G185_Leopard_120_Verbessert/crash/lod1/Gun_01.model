@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G185_Leopard_120_Verbessert/crash/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G185_Leopard_120_Verbessert/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.850257 -0.361368 -1.358409</min>
+		<max>0.848004 0.759150 4.244227</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_097_TankConstruction/normal/lod2/hv4_097_TankConstruction_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-3.718654 -0.045288 -5.786826</min>
+		<max>3.719455 3.254146 5.781546</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_097_TankConstruction/normal/lod1/hv4_097_TankConstruction_01</nodefullVisual>
+</root>

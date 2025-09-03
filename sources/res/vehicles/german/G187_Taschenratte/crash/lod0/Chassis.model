@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.869792 0.002573 -4.137871</min>
+		<max>1.869777 1.232602 4.399746</max>
+	</visibilityBox>
+	<parent>vehicles/german/G187_Taschenratte/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G187_Taschenratte/crash/lod0/Chassis</nodefullVisual>
+</root>

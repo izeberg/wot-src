@@ -1,0 +1,604 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-12-27 10:00+0300\n"
+"Last-Translator: \n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "abilities/common/description/autoLoaderGun"
+msgstr ""
+"Allows a series of shells to be fired from the magazine one by one, with "
+"each round reloading automatically over time."
+
+msgid "abilities/common/description/autoLoaderGunBoost"
+msgstr ""
+"Allows a series of shells to be fired from the magazine one by one, with "
+"each round reloading automatically over time. Provides a bonus to the speed "
+"of loading of the next shell during reload."
+
+msgid "abilities/common/description/autoShootGun"
+msgstr ""
+"Fires rapid bursts of shells to deliver high damage in a short time, at the "
+"cost of penetration and accuracy. Most effective in close-quarters combat."
+
+msgid "abilities/common/description/damageMutable"
+msgstr ""
+"Fires star shells, causing maximum damage within 50 m. The shells' damage "
+"decreases over distance, making them most effective in close combat."
+
+msgid "abilities/common/description/dualAccuracy"
+msgstr ""
+"A unique cooling system that allows for double aiming: waiting after "
+"reloading allows the gun to fire more accurately. The improved accuracy is "
+"shown by a second, smaller aiming circle."
+
+msgid "abilities/common/description/dualGun"
+msgstr ""
+"A double gun system with the ability to fire both barrels separately or "
+"simultaneously. Double shots cause high burst damage, but come with a longer"
+" reload."
+
+msgid "abilities/common/description/hydraulicChassis"
+msgstr ""
+"Allows the vehicle's hull to change elevation angles, offering opportunities"
+" for fire from more positions in battle. Activation depends on various "
+"conditions."
+
+msgid "abilities/common/description/hydraulicWheeledChassis"
+msgstr ""
+"Changes the position of additional wheels to significantly increase speed, "
+"but at the cost of maneuverability. Best used to traverse long distances and"
+" for rush attacks."
+
+msgid "abilities/common/description/magazineGun"
+msgstr ""
+"Allows a series of shells to be fired from the magazine before requiring a "
+"full reload. Delivers high burst damage, but leaves the vehicle vulnerable "
+"while reloading. Can only reload the entire magazine at once."
+
+msgid "abilities/common/description/rocketAcceleration"
+msgstr ""
+"Increase engine power and top speed for rapid movement across the "
+"battlefield. When activated, jet boosters reduce maneuverability and cannot "
+"be disabled manually."
+
+msgid "abilities/common/description/siegeMode"
+msgstr ""
+"When activated, this special mode increases and/or changes certain battle "
+"parameters. Best activated when in position and ready to engage the enemy."
+
+msgid "abilities/common/description/stun"
+msgstr ""
+"Stuns enemy vehicles within a certain blast radius, even without a direct "
+"hit, briefly worsening their mobility, accuracy, and reload time. Stunned "
+"enemies are marked with a stun indicator."
+
+msgid "abilities/common/description/trackWithinTrack"
+msgstr ""
+"Allows the vehicle to move at reduced speed when the main track is "
+"destroyed. Losing an additional outer track reduces mobility further, but "
+"the vehicle can still turn and move."
+
+msgid "abilities/common/description/turboshaftEngine"
+msgstr ""
+"Allows the vehicle to travel significantly faster while considerably "
+"decreasing gun handling parameters."
+
+msgid "abilities/common/description/twinGun"
+msgstr ""
+"When activated, this special mode offers double damage and increases and/or "
+"changes certain battle parameters. Best used in close-range encounters."
+
+msgid "abilities/common/name/autoLoaderGun"
+msgstr "Autoreloader"
+
+msgid "abilities/common/name/autoLoaderGunBoost"
+msgstr "Improved Autoreloader"
+
+msgid "abilities/common/name/autoShootGun"
+msgstr "Autocannon"
+
+msgid "abilities/common/name/damageMutable"
+msgstr "Deep-Rifled Gun"
+
+msgid "abilities/common/name/dualAccuracy"
+msgstr "Gun Cooling"
+
+msgid "abilities/common/name/dualGun"
+msgstr "Double Gun"
+
+msgid "abilities/common/name/hydraulicChassis"
+msgstr "Hydropneumatic Suspension"
+
+msgid "abilities/common/name/hydraulicWheeledChassis"
+msgstr "Rapid Mode"
+
+msgid "abilities/common/name/magazineGun"
+msgstr "Autoloader"
+
+msgid "abilities/common/name/rocketAcceleration"
+msgstr "Jet Boosters"
+
+msgid "abilities/common/name/siegeMode"
+msgstr "Siege Mode"
+
+msgid "abilities/common/name/stun"
+msgstr "Stun"
+
+msgid "abilities/common/name/trackWithinTrack"
+msgstr "Reserve Track"
+
+msgid "abilities/common/name/turboshaftEngine"
+msgstr "Turbo Mode"
+
+msgid "abilities/common/name/twinGun"
+msgstr "Salvo Fire Mode"
+
+msgid "abilities/special/description/accuracyStacks"
+msgstr ""
+"By remaining stationary or moving slowly, you build accuracy levels to improve your next shot's precision.\n"
+"At the highest accuracy level, you gain decent gun handling, with reduced dispersion even during movement or turret/hull traverse."
+
+msgid "abilities/special/description/battleFury"
+msgstr ""
+"Every time you hit an enemy with a shell, you gain a reload efficiency level, temporarily boosting your gun's reload speed. Levels accumulate with each hit. \n"
+"Destroying an enemy vehicle with a shell grants additional reload efficiency levels."
+
+msgid "abilities/special/description/chargeShot"
+msgstr ""
+"If your gun is loaded, you can start heating your next shot for increased damage—the higher the heat level, the greater the effect.\n"
+"At maximum heat, you have several seconds to fire—if you do not, you will be temporarily unable to shoot."
+
+msgid "abilities/special/description/chargeableBurst"
+msgstr ""
+"Landing two armor-penetrating hits on enemy vehicles triggers Burst mode, "
+"loading a burst-fire cassette that lets you unleash two shells in quick "
+"succession with your next shot for massive damage."
+
+msgid "abilities/special/description/concentrationMode"
+msgstr ""
+"The Pneumatic Gyro-Stabilizer grants maximum stabilization during movement, "
+"hull traverse, and turret traverse, allowing for more accurate firing, as "
+"well as rapid response to sudden threats and effective engagement from "
+"cover."
+
+msgid "abilities/special/description/extraShotClip"
+msgstr ""
+"The system automatically begins loading a new cassette when one shell "
+"remains in the current one, keeping you ready to engage. You can still fire "
+"the final shell during this process, but doing so adds several seconds to "
+"the remaining reload time."
+
+msgid "abilities/special/description/improvedRamming"
+msgstr ""
+"Drawing on design experience from earlier models, this vehicle is specially "
+"configured for deadly ramming attacks. Structural reinforcements allow it to"
+" deal more damage when ramming enemy vehicles, giving an upper hand in "
+"close-quarters encounters."
+
+msgid "abilities/special/description/overheatStacks"
+msgstr ""
+"Remain stationary or move slowly to build preheat, increasing your next "
+"shot’s damage and accuracy. At maximum preheat, penetrating an enemy with "
+"fewer HP than your average damage causes an ammo rack explosion, destroying "
+"the vehicle."
+
+msgid "abilities/special/description/pillboxSiegeMode"
+msgstr ""
+"This mode turns your vehicle into a fortified gun platform, granting "
+"superior accuracy and faster reload time. In exchange for this enhanced "
+"firepower, vehicle mobility—forward/reverse speed and vertical/horizontal "
+"traverse—is severely limited."
+
+msgid "abilities/special/description/powerMode"
+msgstr ""
+"This mode provides a significant boost to engine power and top forward "
+"speed. The longer you drive forward, the more speed builds, allowing you to "
+"surge across the battlefield and cover large distances with ease."
+
+msgid "abilities/special/description/rechargeableNitro"
+msgstr ""
+"Activate the Liquid Fuel Boosters at any time for a burst of speed when you "
+"need it most. The boosters heat up and must cool down before they can be "
+"reused, while exceeding the critical heat level will temporarily disable "
+"them completely."
+
+msgid "abilities/special/description/stanceDance"
+msgstr ""
+"Depending on the active mode and charge level, the vehicle can activate one of two abilities: \n"
+"Ion-Discharge Afterburner: Increases engine power and speed. \n"
+"Coincidence Electromechanical Sight: Reduces dispersion and reload time and improves accuracy."
+
+msgid "abilities/special/description/stationaryReload"
+msgstr ""
+"This module keeps you in the fight by letting you interrupt reload at any "
+"time if at least one shell is loaded. Press the hotkey to stop reloading, "
+"fire after a short delay, then resume reload manually or let the clip auto-"
+"reload when empty."
+
+msgid "abilities/special/description/supportWeapon"
+msgstr ""
+"Pressing the activation button fires your vehicle's auxiliary weapons at the"
+" target. This additional firepower comes with its own reload cycle, "
+"independent of the main gun."
+
+msgid "abilities/special/description/targetDesignator"
+msgstr ""
+"Your next shot applies an effect based on the enemy's spotting status. "
+"Hitting a spotted enemy will mark them—they will remain spotted longer and "
+"receive more damage. Hitting an unspotted enemy will highlight their "
+"location with a special marker."
+
+msgid "abilities/special/description/twinGun"
+msgstr ""
+"Offers double damage and improved stabilization at the cost of mobility, "
+"accuracy, turret traverse speed, and aiming time. Best used in close combat."
+
+msgid "abilities/special/name/accuracyStacks"
+msgstr "Analog Ballistic Computing Device"
+
+msgid "abilities/special/name/battleFury"
+msgstr "Semi-Automatic Ammo Rack"
+
+msgid "abilities/special/name/chargeShot"
+msgstr "Thermo-Ballistic Overcharge"
+
+msgid "abilities/special/name/chargeableBurst"
+msgstr "Burst Mode"
+
+msgid "abilities/special/name/concentrationMode"
+msgstr "Pneumatic Gyro-Stabilizer"
+
+msgid "abilities/special/name/extraShotClip"
+msgstr "Cassette Loading System"
+
+msgid "abilities/special/name/improvedRamming"
+msgstr "Ramming Configuration"
+
+msgid "abilities/special/name/overheatStacks"
+msgstr "Propellant Thermal Control System"
+
+msgid "abilities/special/name/pillboxSiegeMode"
+msgstr "Pillbox Mode"
+
+msgid "abilities/special/name/powerMode"
+msgstr "Direct Drive"
+
+msgid "abilities/special/name/rechargeableNitro"
+msgstr "Liquid Fuel Boosters"
+
+msgid "abilities/special/name/stanceDance"
+msgstr "Tactical Power Pack"
+
+msgid "abilities/special/name/stationaryReload"
+msgstr "External Ammunition Supply Module"
+
+msgid "abilities/special/name/supportWeapon"
+msgstr "Auxiliary Weapons"
+
+msgid "abilities/special/name/targetDesignator"
+msgstr "Laser Target Designator"
+
+msgid "abilities/special/name/twinGun"
+msgstr "Salvo Fire Mode"
+
+msgid "abilities/special/shortDescription/accuracyStacks"
+msgstr ""
+"Increases the accuracy of your next shot, with decent stabilization at full "
+"calibration."
+
+msgid "abilities/special/shortDescription/battleFury"
+msgstr ""
+"Every hit to an enemy vehicle boosts gun reload speed for a limited time."
+
+msgid "abilities/special/shortDescription/chargeShot"
+msgstr ""
+"Build up heat levels to cause more damage to enemy vehicles with your next "
+"shot."
+
+msgid "abilities/special/shortDescription/chargeableBurst"
+msgstr ""
+"A burst-fire cassette that lets you fire two shells in quick succession."
+
+msgid "abilities/special/shortDescription/concentrationMode"
+msgstr ""
+"Maximizes stabilization during movement and traverse for more accurate "
+"firing."
+
+msgid "abilities/special/shortDescription/extraShotClip"
+msgstr ""
+"Automatically starts reloading on the last shell, which can still be fired "
+"during reload."
+
+msgid "abilities/special/shortDescription/improvedRamming"
+msgstr "Increases ramming damage caused to enemy vehicles."
+
+msgid "abilities/special/shortDescription/overheatStacks"
+msgstr ""
+"Standing still or moving slowly increases the damage and accuracy of the "
+"next shot."
+
+msgid "abilities/special/shortDescription/pillboxSiegeMode"
+msgstr ""
+"Drastically increases gun accuracy and reload speed, but severely limits "
+"mobility."
+
+msgid "abilities/special/shortDescription/powerMode"
+msgstr ""
+"Provides a boost to engine power, building top speed the longer the vehicle "
+"keeps moving."
+
+msgid "abilities/special/shortDescription/rechargeableNitro"
+msgstr ""
+"Boosters that can be activated at any time to provide a sharp burst of "
+"speed."
+
+msgid "abilities/special/shortDescription/stanceDance"
+msgstr ""
+"Charges one of two unique abilities, increasing speed or improving gun "
+"accuracy."
+
+msgid "abilities/special/shortDescription/stationaryReload"
+msgstr "Allows you to interrupt reload and fire back in crucial moments."
+
+msgid "abilities/special/shortDescription/supportWeapon"
+msgstr ""
+"Some additional weapons to provide increased firepower alongside the main "
+"gun."
+
+msgid "abilities/special/shortDescription/targetDesignator"
+msgstr ""
+"Increases enemies' time spotted and damage taken or highlights them with a "
+"special marker."
+
+msgid "abilities/special/shortDescription/twinGun"
+msgstr ""
+"Allows firing from both guns simultaneously at the cost of increased reload "
+"time."
+
+msgid "characteristics/abilities/special/description/accuracyStacks"
+msgstr ""
+"Remaining stationary or moving below a certain speed allows your vehicle to calibrate its Analog Ballistic Computing Device and build accuracy levels, increasing the accuracy of your next shot. If you exceed the speed limit, your progress in building accuracy levels will be paused until you slow down. At the highest accuracy level, your vehicle gains decent gun stabilization, with reduced dispersion from movement or turret/hull rotation. The effect is removed upon firing.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/battleFury"
+msgstr ""
+"Every time you hit an visible enemy with a shell, you gain a reload efficiency level, temporarily boosting your gun's reload speed. Levels accumulate with each hit, and destroying an enemy vehicle with a shell grants additional reload efficiency levels.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/chargeShot"
+msgstr ""
+"If your gun is loaded, you can start to heat your next shot. The higher the heat level you reach, the greater the bonus to average damage will be. During the heating process, you cannot change shells. When you reach maximum heat level, a countdown begins. If you do not fire before it ends, you will be unable to shoot for several seconds.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/chargeableBurst"
+msgstr ""
+"Scoring two armor-penetrating hits on enemy vehicles activates Burst mode, loading a burst-fire cassette that allows two shells to be fired in quick succession with the next shot.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/concentrationMode"
+msgstr ""
+"The Pneumatic Gyro-Stabilizer grants maximum stabilization during hull and turret traverse for a short time, allowing for more accurate firing on the move and quick reaction to sudden threats.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/extraShotClip"
+msgstr ""
+"The system automatically starts loading a new cassette when one shell remains in the current one. Firing the final shell while the new cassette is being loaded adds several seconds to the remaining reload time. Pressing the Reload Shell Container hotkey discards all remaining shells except the last one. Press the hotkey twice to reset a fully loaded cassette.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/improvedRamming"
+msgstr ""
+"This vehicle is specially configured for ramming attacks, with a series of design modifications that help it inflict more damage when ramming enemy vehicles.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/overheatStacks"
+msgstr ""
+"Remaining stationary or moving below a certain speed generates preheat, which increases the average damage and accuracy of your next shot. Exceeding the speed limit gradually reduces the bonus, while firing or changing shells instantly resets it. At maximum preheat level, penetrating the armor of an enemy vehicle with fewer hit points than your average damage—including your accumulated preheat bonus—will cause its ammo rack to explode, instantly destroying the vehicle.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/pillboxSiegeMode"
+msgstr ""
+"In this mode, gun accuracy, reload speed, and elevation/depression angles are drastically increased, but mobility (forward/reverse speed and vertical/horizontal traverse speed) is severely limited. Percentage values are given for comparison with Siege mode.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/powerMode"
+msgstr ""
+"Direct Drive mode provides a significant boost to engine power and top forward speed. The longer you drive forward, the more speed builds, allowing you to traverse the battlefield with ease.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/rechargeableNitro"
+msgstr ""
+"The Liquid Fuel Boosters grant a burst of engine power, allowing you to gain a positional advantage on the battlefield—but limiting your vehicle's reverse and traverse speed. They can be toggled on or off at any time, except after reaching the reactivation limit. The boosters heat up while active and become unavailable until cooled down, meaning they cannot be used nonstop—while exceeding the critical heat level will temporarily disable them completely. Plan your moves carefully to avoid being caught off guard.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/stanceDance"
+msgstr ""
+"Depending on the active mode and charge level, the vehicle can activate one of two abilities: Ion-Discharge Afterburner or Coincidence Electromechanical Sight.\n"
+"Ion-Discharge Afterburner temporarily increases engine power, top forward speed, and reverse speed. Coincidence Electromechanical Sight temporarily improves accuracy and reduces reload time.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/stationaryReload"
+msgstr ""
+"The External Ammunition Supply Module allows you to interrupt reload and start firing at any time, as long as you still have one shell loaded. During reload, the module locks the vehicle's turret and external ammo pods, temporarily preventing you from aiming or firing unless you interrupt it.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/supportWeapon"
+msgstr ""
+"This vehicle is equipped with a set of auxiliary weapons whose reload cycle is separate from the main gun, allowing you to cause additional damage in key moments.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/targetDesignator"
+msgstr ""
+"The Laser Target Designator adds a special effect to your next shot, applied to any enemy you hit. The effect varies depending on whether the enemy was spotted at the moment of impact. Hitting a spotted enemy vehicle will mark it, extending the time it remains spotted and increasing the damage it receives from shells, while hitting an unspotted enemy vehicle will highlight its location with a special marker.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/abilities/special/description/twinGun"
+msgstr ""
+"Offers double damage and improved stabilization at the cost of mobility, accuracy, turret traverse speed, and aiming time. Best used in close combat.\n"
+"{{@ class $classSecondary}}All values shown are default for the vehicle with a fully trained crew. Upgrades, equipment, and consumables can change these values, but these changes are not reflected here.{{/}}"
+
+msgid "characteristics/templates/upTo"
+msgstr "Up to %(value)%s"
+
+msgid "modules/controls/button/buyAndInstall"
+msgstr "Purchase and Mount"
+
+msgid "modules/controls/button/field_modification"
+msgstr "Field Modification"
+
+msgid "modules/controls/button/mount"
+msgstr "Mount"
+
+msgid "modules/controls/button/research"
+msgstr "Research"
+
+msgid "modules/controls/button/sell"
+msgstr "Sell From Depot"
+
+msgid "modules/controls/button/tooltip/disableReason/battle"
+msgstr ""
+"This vehicle is in battle. You can modify its modules once the battle is "
+"over."
+
+msgid "modules/controls/button/tooltip/disableReason/damaged"
+msgstr "This vehicle is damaged. Repair it to be able to modify its modules."
+
+msgid "modules/controls/button/tooltip/disableReason/incompatible"
+msgstr "Unable to mount module. Incompatible {{module}}."
+
+msgid "modules/controls/button/tooltip/disableReason/prebattle"
+msgstr "This vehicle is in a tactical unit."
+
+msgid "modules/controls/descriptor/buyVehicle"
+msgstr "Purchase this vehicle to be able to modify its modules."
+
+msgid "modules/controls/descriptor/disableModule"
+msgstr "Research previous modules to be able to research this module."
+
+msgid "modules/controls/descriptor/disableVehicle"
+msgstr "Research this vehicle to be able to research its modules."
+
+msgid "modules/controls/descriptor/eliteVehicle"
+msgstr "All modules have been researched."
+
+msgid "modules/controls/descriptor/moduleMounted"
+msgstr "This module is already mounted."
+
+msgid "modules/controls/descriptor/researched"
+msgstr "Select a module or vehicle to research."
+
+msgid "modules/controls/descriptor/vehicleInBattle"
+msgstr ""
+"This vehicle is in battle. You can modify its modules once the battle is "
+"over."
+
+msgid "modules/controls/name"
+msgstr "Selected: {{@ class $classModuleName}}{{name}}{{/}}"
+
+msgid "modules/name/separator"
+msgstr ", "
+
+msgid "modules/name/vehicleChassis"
+msgstr "Chassis"
+
+msgid "modules/name/vehicleEngine"
+msgstr "Engine"
+
+msgid "modules/name/vehicleGun"
+msgstr "Gun"
+
+msgid "modules/name/vehicleRadio"
+msgstr "Radio"
+
+msgid "modules/name/vehicleTurret"
+msgstr "Turret"
+
+msgid "modules/name/vehicleWheeledChassis"
+msgstr "Wheels"
+
+msgid "overview/benefits/collectorVehicle/name"
+msgstr "Collectors' Vehicles"
+
+msgid "overview/benefits/premium/description/bonds"
+msgstr "Ability to earn"
+
+msgid "overview/benefits/premium/description/credits"
+msgstr "credits for each battle"
+
+msgid "overview/benefits/premium/description/crewsTrain"
+msgstr "crew transfer without penalty"
+
+msgid "overview/benefits/premium/description/experience"
+msgstr "Combat Experience and Crew Experience"
+
+msgid "overview/benefits/premium/name/bonds"
+msgstr "Bonds"
+
+msgid "overview/benefits/premium/name/credits"
+msgstr "More"
+
+msgid "overview/benefits/premium/name/crewsTrain"
+msgstr "Free"
+
+msgid "overview/benefits/premium/name/experience"
+msgstr "More"
+
+msgid "overview/benefits/special/name/bonds"
+msgstr "Earn bonds"
+
+msgid "overview/benefits/special/name/credits"
+msgstr "More credits"
+
+msgid "overview/benefits/special/name/crewsTrain"
+msgstr "Free transfer"
+
+msgid "overview/benefits/special/name/experience"
+msgstr "More experience"
+
+msgid "overview/benefits/special/name/repairKit"
+msgstr "Free Repair Kit"
+
+msgid "overview/crew/name"
+msgstr ""
+"Crew {{@ class $classBracket}}({{/}}{{@ class "
+"$classAmount}}{{amount}}{{/}}{{@ class $classBracket}}){{/}}"
+
+msgid "overview/mechanicsVideo/label"
+msgstr "View mechanic"
+
+msgid "overview/title/generalDescription"
+msgstr "Vehicle Description"
+
+msgid "overview/title/historicalReference"
+msgstr "Historical Reference"
+
+msgid "researchPurchase/discountTimer"
+msgstr "Until {{date}}"
+
+msgid "researchPurchase/recover"
+msgstr "Recovery available until {{date}}"
+
+msgid "tabs/armor"
+msgstr "Armor"
+
+msgid "tabs/modules"
+msgstr "Modules"
+
+msgid "tabs/overview"
+msgstr "Overview"
+
+msgid "tabs/stats"
+msgstr "Characteristics"
+
+msgid "tabs/vehSkillTree"
+msgstr "Upgrades"
+
+msgid "vehicleState/rentalIsOver"
+msgstr "Rental is over"
+
+msgid "vehicleState/subscriptionSuspended"
+msgstr "Subscription Suspended"

@@ -20,6 +20,12 @@ package net.wg.data.constants.generated
       public static const CROSSHAIR_BLINK_INVISIBLE:int = 0;
       
       public static const CROSSHAIR_BLINK_GREEN_HORIZONTAL:int = 1;
+      
+      public static const NET_SEPARATOR_TYPE_DEFAULT:String = "default";
+      
+      public static const NET_SEPARATOR_TYPE_SHORT:String = "short";
+      
+      public static const NET_SEPARATOR_TYPE_EMPTY:String = "empty";
        
       
       public function CROSSHAIR_CONSTANTS()

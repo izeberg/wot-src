@@ -69,12 +69,12 @@
 						<Texture>content/3D_Customization/Cus_28_Mystic_Monkey/Monkey_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.001343 0.228961 0.040580</groupOrigin>
+				<groupOrigin>0.001343 0.220009 0.040580</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.154719 -0.182095 -0.163116</min>
+		<min>-0.154719 -0.200000 -0.163116</min>
 		<max>0.157405 0.640018 0.244276</max>
 	</boundingBox>
 	<customBsp>true</customBsp>

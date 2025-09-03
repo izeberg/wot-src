@@ -20,7 +20,9 @@ msgid "pm2_5_1_10_description_baseCapture"
 msgstr "Participate in the successful capture of a base."
 
 msgid "pm2_5_1_10_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned."
 
 msgid "pm2_5_1_10_short"
 msgstr "Union-10"
@@ -371,7 +373,8 @@ msgid "pm2_5_2_13_description_alive"
 msgstr "Survive the battle."
 
 msgid "pm2_5_2_13_description_topByDamage"
-msgstr "Be among the top 3 players on both teams by damage caused."
+msgstr ""
+"Be among the top %(desiredPosition)s players on both teams by damage caused."
 
 msgid "pm2_5_2_13_short"
 msgstr "Bloc-13"
@@ -746,7 +749,9 @@ msgid "pm2_5_3_2_description_stunNumber"
 msgstr "Stun %(goal)s different enemy vehicles."
 
 msgid "pm2_5_3_2_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned."
 
 msgid "pm2_5_3_2_short"
 msgstr "Alliance-2"
@@ -1322,7 +1327,9 @@ msgid "pm2_6_1_1_description_alive"
 msgstr "Survive the battle."
 
 msgid "pm2_6_1_1_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned."
 
 msgid "pm2_6_1_1_description_win"
 msgstr "Destroy all enemy vehicles / capture or defend the base."
@@ -1375,7 +1382,9 @@ msgid "pm2_6_1_3_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles."
 
 msgid "pm2_6_1_3_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned."
 
 msgid "pm2_6_1_3_short"
 msgstr "Union-3"
@@ -1681,7 +1690,9 @@ msgid "pm2_6_2_1_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles."
 
 msgid "pm2_6_2_1_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned."
 
 msgid "pm2_6_2_1_short"
 msgstr "Bloc-1"
@@ -1849,7 +1860,9 @@ msgid "pm2_6_2_8_description_hits"
 msgstr "Set an enemy vehicle of the same tier or higher on fire."
 
 msgid "pm2_6_2_8_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned."
 
 msgid "pm2_6_2_8_short"
 msgstr "Bloc-8"
@@ -2881,7 +2894,8 @@ msgid "pm2_7_1_5"
 msgstr "Union-5. Heroic Triple"
 
 msgid "pm2_7_1_5_description_topByDamage"
-msgstr "Be among the top 3 players on both teams by damage caused."
+msgstr ""
+"Be among the top %(desiredPosition)s players on both teams by damage caused."
 
 msgid "pm2_7_1_5_description_topByDamageAdv"
 msgstr "Be the top player in the battle by damage caused."
@@ -3370,7 +3384,9 @@ msgid "pm2_7_3_13"
 msgstr "Alliance-13. Big Shark"
 
 msgid "pm2_7_3_13_description_topByExp"
-msgstr "Be among the top 3 players on both teams by experience earned."
+msgstr ""
+"Be among the top %(desiredPosition)s players on both teams by experience "
+"earned."
 
 msgid "pm2_7_3_13_description_topByExpAdv"
 msgstr "Be the top player in the battle by experience earned."
@@ -3439,7 +3455,8 @@ msgid "pm2_7_3_2"
 msgstr "Alliance-2. Among the Best"
 
 msgid "pm2_7_3_2_description_topByDamage"
-msgstr "Be among the top 3 players on your team by damage caused."
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by damage caused."
 
 msgid "pm2_7_3_2_description_topByDamageAdv"
 msgstr "Be the top player on your team by damage caused."
@@ -3934,6 +3951,2320 @@ msgstr "Damage"
 
 msgid "pm2_7_4_9_title_hitsAdv"
 msgstr "Improve Result"
+
+msgid "pm3_10_1_1"
+msgstr "Vanguard-1"
+
+msgid "pm3_10_1_10"
+msgstr "Vanguard-10"
+
+msgid "pm3_10_1_10_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage"
+
+msgid "pm3_10_1_10_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_10_1_10_short"
+msgstr "Vanguard-10"
+
+msgid "pm3_10_1_10_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_10_1_10_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_11"
+msgstr "Vanguard-11"
+
+msgid "pm3_10_1_11_description_blockedDamage"
+msgstr ""
+"Have damage blocked by armor exceeding %(vehicleHealthFactor)s times the hit"
+" points of your vehicle"
+
+msgid "pm3_10_1_11_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_10_1_11_short"
+msgstr "Vanguard-11"
+
+msgid "pm3_10_1_11_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_10_1_11_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_10_1_12"
+msgstr "Vanguard-12"
+
+msgid "pm3_10_1_12_description_damageandBlock"
+msgstr ""
+"Have total damage caused and damage blocked by armor equal to or exceeding "
+"%(vehicleHealthFactor)s times the hit points of your vehicle"
+
+msgid "pm3_10_1_12_short"
+msgstr "Vanguard-12"
+
+msgid "pm3_10_1_12_title_damageandBlock"
+msgstr "Damage and Block"
+
+msgid "pm3_10_1_13"
+msgstr "Vanguard-13"
+
+msgid "pm3_10_1_13_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm3_10_1_13_description_damageAlt"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_10_1_13_short"
+msgstr "Vanguard-13"
+
+msgid "pm3_10_1_13_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_13_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm3_10_1_14"
+msgstr "Vanguard-14"
+
+msgid "pm3_10_1_14_description_counterAttack"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles that hit your vehicle"
+
+msgid "pm3_10_1_14_short"
+msgstr "Vanguard-14"
+
+msgid "pm3_10_1_14_title_counterAttack"
+msgstr "Damage"
+
+msgid "pm3_10_1_15"
+msgstr "Vanguard-15"
+
+msgid "pm3_10_1_15_description_damageDealtReceivedAndBlocked"
+msgstr "Cause, receive, and block a total of %(goal)s HP of damage"
+
+msgid "pm3_10_1_15_short"
+msgstr "Vanguard-15"
+
+msgid "pm3_10_1_15_title_damageDealtReceivedAndBlocked"
+msgstr "Complex Condition"
+
+msgid "pm3_10_1_1_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_10_1_1_description_topByDamage"
+msgstr "Be the top player on both teams by damage caused"
+
+msgid "pm3_10_1_1_short"
+msgstr "Vanguard-1"
+
+msgid "pm3_10_1_1_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_10_1_1_title_topByDamage"
+msgstr "Top Player"
+
+msgid "pm3_10_1_2"
+msgstr "Vanguard-2"
+
+msgid "pm3_10_1_2_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_10_1_2_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles during the first %(timeLimit)s minutes of "
+"the battle"
+
+msgid "pm3_10_1_2_short"
+msgstr "Vanguard-2"
+
+msgid "pm3_10_1_2_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_2_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_1_3"
+msgstr "Vanguard-3"
+
+msgid "pm3_10_1_3_description_killWithCausingDamage"
+msgstr ""
+"Destroy an enemy tank destroyer, causing at least %(damageDealt)s HP of "
+"damage to it"
+
+msgid "pm3_10_1_3_description_killWithCausingDamageAlt"
+msgstr ""
+"Destroy an enemy heavy tank, causing at least %(damageDealt)s HP of damage "
+"to it"
+
+msgid "pm3_10_1_3_short"
+msgstr "Vanguard-3"
+
+msgid "pm3_10_1_3_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm3_10_1_3_title_killWithCausingDamageAlt"
+msgstr "Destroy"
+
+msgid "pm3_10_1_4"
+msgstr "Vanguard-4"
+
+msgid "pm3_10_1_4_description_kills"
+msgstr "Destroy %(goal)s immobilized enemy vehicles"
+
+msgid "pm3_10_1_4_description_killsAlt"
+msgstr "Destroy %(goal)s enemy vehicles"
+
+msgid "pm3_10_1_4_short"
+msgstr "Vanguard-4"
+
+msgid "pm3_10_1_4_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_1_4_title_killsAlt"
+msgstr "Destroy"
+
+msgid "pm3_10_1_5"
+msgstr "Vanguard-5"
+
+msgid "pm3_10_1_5_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles within the view range of your "
+"vehicle"
+
+msgid "pm3_10_1_5_short"
+msgstr "Vanguard-5"
+
+msgid "pm3_10_1_5_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_6"
+msgstr "Vanguard-6"
+
+msgid "pm3_10_1_6_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage"
+
+msgid "pm3_10_1_6_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy tanks"
+
+msgid "pm3_10_1_6_short"
+msgstr "Vanguard-6"
+
+msgid "pm3_10_1_6_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_10_1_6_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_7"
+msgstr "Vanguard-7"
+
+msgid "pm3_10_1_7_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles of the same tier or higher by "
+"shooting them from a distance of %(distanceShortOrEqual)s m or less"
+
+msgid "pm3_10_1_7_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles of the same tier or higher from a distance "
+"of %(distanceShortOrEqual)s m or less"
+
+msgid "pm3_10_1_7_short"
+msgstr "Vanguard-7"
+
+msgid "pm3_10_1_7_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_7_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_1_8"
+msgstr "Vanguard-8"
+
+msgid "pm3_10_1_8_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage while your vehicle is stationary"
+
+msgid "pm3_10_1_8_description_kills"
+msgstr "Destroy %(goal)s enemy medium tanks or tank destroyers"
+
+msgid "pm3_10_1_8_short"
+msgstr "Vanguard-8"
+
+msgid "pm3_10_1_8_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_10_1_8_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_1_9"
+msgstr "Vanguard-9"
+
+msgid "pm3_10_1_9_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy or medium tanks"
+
+msgid "pm3_10_1_9_description_kills"
+msgstr "Destroy %(goal)s enemy heavy or medium tanks"
+
+msgid "pm3_10_1_9_short"
+msgstr "Vanguard-9"
+
+msgid "pm3_10_1_9_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_1_9_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_2_1"
+msgstr "Ambush-1"
+
+msgid "pm3_10_2_10"
+msgstr "Ambush-10"
+
+msgid "pm3_10_2_10_description_kills"
+msgstr "Destroy %(goal)s enemy medium or light tanks"
+
+msgid "pm3_10_2_10_description_spotAndKill"
+msgstr "Destroy %(goal)s enemy vehicles spotted by you"
+
+msgid "pm3_10_2_10_short"
+msgstr "Ambush-10"
+
+msgid "pm3_10_2_10_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_2_10_title_spotAndKill"
+msgstr "Destroy"
+
+msgid "pm3_10_2_11"
+msgstr "Ambush-11"
+
+msgid "pm3_10_2_11_description_damage"
+msgstr ""
+"Cause %(vehicleHealthFactor)s times more damage than the hit points of your "
+"vehicle"
+
+msgid "pm3_10_2_11_short"
+msgstr "Ambush-11"
+
+msgid "pm3_10_2_11_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_12"
+msgstr "Ambush-12"
+
+msgid "pm3_10_2_12_description_killWithCausingDamage"
+msgstr ""
+"Destroy %(goal)s enemy vehicles, causing at least %(damageDealt)s HP of "
+"damage to each of them"
+
+msgid "pm3_10_2_12_short"
+msgstr "Ambush-12"
+
+msgid "pm3_10_2_12_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm3_10_2_13"
+msgstr "Ambush-13"
+
+msgid "pm3_10_2_13_description_damageAndAssist"
+msgstr "Cause and assist a total of %(goal)s HP of damage"
+
+msgid "pm3_10_2_13_short"
+msgstr "Ambush-13"
+
+msgid "pm3_10_2_13_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm3_10_2_14"
+msgstr "Ambush-14"
+
+msgid "pm3_10_2_14_description_totalDamagePercent"
+msgstr "Cause 30%% of the total amount of damage caused by your team"
+
+msgid "pm3_10_2_14_description_win"
+msgstr "Destroy all enemy vehicles / capture or defend the base"
+
+msgid "pm3_10_2_14_short"
+msgstr "Ambush-14"
+
+msgid "pm3_10_2_14_title_totalDamagePercent"
+msgstr "Damage"
+
+msgid "pm3_10_2_14_title_win"
+msgstr "Win a battle"
+
+msgid "pm3_10_2_15"
+msgstr "Ambush-15"
+
+msgid "pm3_10_2_15_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_10_2_15_short"
+msgstr "Ambush-15"
+
+msgid "pm3_10_2_15_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_1_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_10_2_1_description_topByExp"
+msgstr "Be the top player on your team by experience earned"
+
+msgid "pm3_10_2_1_short"
+msgstr "Ambush-1"
+
+msgid "pm3_10_2_1_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_1_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm3_10_2_2"
+msgstr "Ambush-2"
+
+msgid "pm3_10_2_2_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage before receiving any damage to your vehicle"
+
+msgid "pm3_10_2_2_description_kills"
+msgstr "Destroy %(goal)s enemy medium tanks or tank destroyers"
+
+msgid "pm3_10_2_2_short"
+msgstr "Ambush-2"
+
+msgid "pm3_10_2_2_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_2_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_2_3"
+msgstr "Ambush-3"
+
+msgid "pm3_10_2_3_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage while remaining unspotted at the moment the "
+"damage is caused"
+
+msgid "pm3_10_2_3_description_killWithCausingDamage"
+msgstr ""
+"Destroy an enemy heavy tank, causing at least %(damageDealt)s HP of damage "
+"by shooting it"
+
+msgid "pm3_10_2_3_short"
+msgstr "Ambush-3"
+
+msgid "pm3_10_2_3_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_3_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm3_10_2_4"
+msgstr "Ambush-4"
+
+msgid "pm3_10_2_4_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_10_2_4_description_piercingSeries"
+msgstr "Score %(goal)s armor-penetrating hits in a row"
+
+msgid "pm3_10_2_4_short"
+msgstr "Ambush-4"
+
+msgid "pm3_10_2_4_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_4_title_piercingSeries"
+msgstr "Penetration"
+
+msgid "pm3_10_2_5"
+msgstr "Ambush-5"
+
+msgid "pm3_10_2_5_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm3_10_2_5_description_kills"
+msgstr "Destroy %(goal)s heavy tanks"
+
+msgid "pm3_10_2_5_short"
+msgstr "Ambush-5"
+
+msgid "pm3_10_2_5_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_5_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_2_6"
+msgstr "Ambush-6"
+
+msgid "pm3_10_2_6_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy tank destroyers"
+
+msgid "pm3_10_2_6_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceGreatOrEqual)s "
+"m or more"
+
+msgid "pm3_10_2_6_short"
+msgstr "Ambush-6"
+
+msgid "pm3_10_2_6_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_6_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_2_7"
+msgstr "Ambush-7"
+
+msgid "pm3_10_2_7_description_damage"
+msgstr "Cause %(goal)s HP of damage to moving enemy vehicles by shooting them"
+
+msgid "pm3_10_2_7_short"
+msgstr "Ambush-7"
+
+msgid "pm3_10_2_7_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_8"
+msgstr "Ambush-8"
+
+msgid "pm3_10_2_8_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy medium or light tanks"
+
+msgid "pm3_10_2_8_description_kills"
+msgstr ""
+"Destroy an enemy light tank during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_10_2_8_short"
+msgstr "Ambush-8"
+
+msgid "pm3_10_2_8_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_2_8_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_2_9"
+msgstr "Ambush-9"
+
+msgid "pm3_10_2_9_description_hitsBlindly"
+msgstr ""
+"Cause damage %(hits)s times to enemy vehicles that are unspotted when the "
+"damage is caused"
+
+msgid "pm3_10_2_9_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_10_2_9_short"
+msgstr "Ambush-9"
+
+msgid "pm3_10_2_9_title_hitsBlindly"
+msgstr "Damage"
+
+msgid "pm3_10_2_9_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_10_3_1"
+msgstr "Assistance-1"
+
+msgid "pm3_10_3_10"
+msgstr "Assistance-10"
+
+msgid "pm3_10_3_10_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceShortOrEqual)s "
+"m or less"
+
+msgid "pm3_10_3_10_description_killsAlt"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceGreatOrEqual)s "
+"m or more"
+
+msgid "pm3_10_3_10_short"
+msgstr "Assistance-10"
+
+msgid "pm3_10_3_10_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_3_10_title_killsAlt"
+msgstr "Destroy"
+
+msgid "pm3_10_3_11"
+msgstr "Assistance-11"
+
+msgid "pm3_10_3_11_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles spotted "
+"by you"
+
+msgid "pm3_10_3_11_description_stunTime"
+msgstr ""
+"Stun enemy medium tanks or tank destroyers for %(goal)s seconds in total. "
+"Potential stun duration is counted"
+
+msgid "pm3_10_3_11_short"
+msgstr "Assistance-11"
+
+msgid "pm3_10_3_11_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_10_3_11_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_10_3_12"
+msgstr "Assistance-12"
+
+msgid "pm3_10_3_12_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting or immobilizing them"
+
+msgid "pm3_10_3_12_description_stunTime"
+msgstr ""
+"Stun enemy vehicles for %(goal)s seconds in total. Potential stun duration "
+"is counted"
+
+msgid "pm3_10_3_12_short"
+msgstr "Assistance-12"
+
+msgid "pm3_10_3_12_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_10_3_12_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_10_3_13"
+msgstr "Assistance-13"
+
+msgid "pm3_10_3_13_description_medal"
+msgstr "Receive the Ace Tanker Mastery Badge"
+
+msgid "pm3_10_3_13_short"
+msgstr "Assistance-13"
+
+msgid "pm3_10_3_13_title_medal"
+msgstr "Mastery Badge"
+
+msgid "pm3_10_3_14"
+msgstr "Assistance-14"
+
+msgid "pm3_10_3_14_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles spotted "
+"by you. Remain unspotted at the moment when damage is caused"
+
+msgid "pm3_10_3_14_description_stunNumber"
+msgstr "Stun enemy heavy tanks %(goal)s times"
+
+msgid "pm3_10_3_14_short"
+msgstr "Assistance-14"
+
+msgid "pm3_10_3_14_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_10_3_14_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_10_3_15"
+msgstr "Assistance-15"
+
+msgid "pm3_10_3_15_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"stunning or immobilizing them"
+
+msgid "pm3_10_3_15_description_damageAndAssist"
+msgstr ""
+"Damage caused (including damage caused with your assistance) must total "
+"%(goal)s HP"
+
+msgid "pm3_10_3_15_short"
+msgstr "Assistance-15"
+
+msgid "pm3_10_3_15_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_10_3_15_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm3_10_3_1_description_assistedHits"
+msgstr ""
+"Enable your allies to cause damage to %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm3_10_3_1_short"
+msgstr "Assistance-1"
+
+msgid "pm3_10_3_1_title_assistedHits"
+msgstr "Assistance"
+
+msgid "pm3_10_3_2"
+msgstr "Assistance-2"
+
+msgid "pm3_10_3_2_description_kills"
+msgstr "Destroy an enemy light tank or SPG"
+
+msgid "pm3_10_3_2_description_topByExp"
+msgstr "Be the top player on both teams by experience earned"
+
+msgid "pm3_10_3_2_short"
+msgstr "Assistance-2"
+
+msgid "pm3_10_3_2_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_3_2_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm3_10_3_3"
+msgstr "Assistance-3"
+
+msgid "pm3_10_3_3_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles"
+
+msgid "pm3_10_3_3_description_stunNumber"
+msgstr "Stun enemy vehicles %(goal)s times"
+
+msgid "pm3_10_3_3_short"
+msgstr "Assistance-3"
+
+msgid "pm3_10_3_3_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_10_3_3_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_10_3_4"
+msgstr "Assistance-4"
+
+msgid "pm3_10_3_4_description_kills"
+msgstr "Destroy %(goal)s enemy light tanks or SPGs"
+
+msgid "pm3_10_3_4_short"
+msgstr "Assistance-4"
+
+msgid "pm3_10_3_4_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_3_5"
+msgstr "Assistance-5"
+
+msgid "pm3_10_3_5_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles while remaining unspotted"
+
+msgid "pm3_10_3_5_description_stunNumber"
+msgstr ""
+"Stun %(stunSeveralTargets)s enemy vehicles with a single shot %(goal)s times"
+
+msgid "pm3_10_3_5_short"
+msgstr "Assistance-5"
+
+msgid "pm3_10_3_5_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_10_3_5_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_10_3_6"
+msgstr "Assistance-6"
+
+msgid "pm3_10_3_6_description_assistedKills"
+msgstr ""
+"Enable your allies to destroy %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm3_10_3_6_short"
+msgstr "Assistance-6"
+
+msgid "pm3_10_3_6_title_assistedKills"
+msgstr "Assistance"
+
+msgid "pm3_10_3_7"
+msgstr "Assistance-7"
+
+msgid "pm3_10_3_7_description_kills"
+msgstr "Destroy %(goal)s enemy light tanks"
+
+msgid "pm3_10_3_7_description_stunTime"
+msgstr ""
+"Stun enemy light tanks for %(goal)s seconds in total. Potential stun "
+"duration is counted"
+
+msgid "pm3_10_3_7_short"
+msgstr "Assistance-7"
+
+msgid "pm3_10_3_7_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_10_3_7_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_10_3_8"
+msgstr "Assistance-8"
+
+msgid "pm3_10_3_8_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm3_10_3_8_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles and survive the battle"
+
+msgid "pm3_10_3_8_description_stunNumber"
+msgstr ""
+"Stun %(stunSeveralTargets)s enemy vehicles with a single shot %(goal)s times"
+" and survive the battle"
+
+msgid "pm3_10_3_8_short"
+msgstr "Assistance-8"
+
+msgid "pm3_10_3_8_title_alive"
+msgstr "Survive"
+
+msgid "pm3_10_3_8_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_10_3_8_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_10_3_9"
+msgstr "Assistance-9"
+
+msgid "pm3_10_3_9_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_10_3_9_description_kills"
+msgstr "Destroy %(goal)s moving enemy vehicles by shooting them"
+
+msgid "pm3_10_3_9_short"
+msgstr "Assistance-9"
+
+msgid "pm3_10_3_9_title_damage"
+msgstr "Damage"
+
+msgid "pm3_10_3_9_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_1_1"
+msgstr "Vanguard-1"
+
+msgid "pm3_8_1_10"
+msgstr "Vanguard-10"
+
+msgid "pm3_8_1_10_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_8_1_10_short"
+msgstr "Vanguard-10"
+
+msgid "pm3_8_1_10_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_11"
+msgstr "Vanguard-11"
+
+msgid "pm3_8_1_11_description_kills"
+msgstr "Destroy an enemy vehicle by ramming and survive the impact"
+
+msgid "pm3_8_1_11_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_8_1_11_description_medal"
+msgstr "Earn the High Caliber award"
+
+msgid "pm3_8_1_11_short"
+msgstr "Vanguard-11"
+
+msgid "pm3_8_1_11_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_1_11_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_8_1_11_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm3_8_1_12"
+msgstr "Vanguard-12"
+
+msgid "pm3_8_1_12_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage from enemy heavy and medium tanks"
+
+msgid "pm3_8_1_12_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy and medium tanks"
+
+msgid "pm3_8_1_12_short"
+msgstr "Vanguard-12"
+
+msgid "pm3_8_1_12_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_8_1_12_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_13"
+msgstr "Vanguard-13"
+
+msgid "pm3_8_1_13_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles from a distance of "
+"%(distanceShortOrEqual)s m or less"
+
+msgid "pm3_8_1_13_description_damageAlt"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles from a distance of "
+"%(distanceGreatOrEqual)s m or more"
+
+msgid "pm3_8_1_13_short"
+msgstr "Vanguard-13"
+
+msgid "pm3_8_1_13_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_13_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm3_8_1_14"
+msgstr "Vanguard-14"
+
+msgid "pm3_8_1_14_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_8_1_14_description_hits"
+msgstr ""
+"Cause damage to enemy vehicles by shooting them from a distance of "
+"%(distanceShortOrEqual)s m or less %(goal)s times"
+
+msgid "pm3_8_1_14_short"
+msgstr "Vanguard-14"
+
+msgid "pm3_8_1_14_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_14_title_hits"
+msgstr "Damage"
+
+msgid "pm3_8_1_15"
+msgstr "Vanguard-15"
+
+msgid "pm3_8_1_15_description_damageDealtReceivedAndBlocked"
+msgstr "Cause, receive, and block a total of %(goal)s HP of damage"
+
+msgid "pm3_8_1_15_short"
+msgstr "Vanguard-15"
+
+msgid "pm3_8_1_15_title_damageDealtReceivedAndBlocked"
+msgstr "Complex Condition"
+
+msgid "pm3_8_1_1_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_8_1_1_description_hits"
+msgstr "Cause damage to enemy heavy tanks by shooting them %(goal)s times"
+
+msgid "pm3_8_1_1_short"
+msgstr "Vanguard-1"
+
+msgid "pm3_8_1_1_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_1_title_hits"
+msgstr "Damage"
+
+msgid "pm3_8_1_2"
+msgstr "Vanguard-2"
+
+msgid "pm3_8_1_2_description_damageandBlock"
+msgstr ""
+"Have total damage caused and damage blocked by armor equal to or exceeding "
+"%(vehicleHealthFactor)s times the hit points of your vehicle"
+
+msgid "pm3_8_1_2_short"
+msgstr "Vanguard-2"
+
+msgid "pm3_8_1_2_title_damageandBlock"
+msgstr "Damage and Block"
+
+msgid "pm3_8_1_3"
+msgstr "Vanguard-3"
+
+msgid "pm3_8_1_3_description_topByDamage"
+msgstr "Be the top player on your team by damage caused"
+
+msgid "pm3_8_1_3_short"
+msgstr "Vanguard-3"
+
+msgid "pm3_8_1_3_title_topByDamage"
+msgstr "Top Player"
+
+msgid "pm3_8_1_4"
+msgstr "Vanguard-4"
+
+msgid "pm3_8_1_4_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage"
+
+msgid "pm3_8_1_4_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm3_8_1_4_short"
+msgstr "Vanguard-4"
+
+msgid "pm3_8_1_4_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_8_1_4_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_5"
+msgstr "Vanguard-5"
+
+msgid "pm3_8_1_5_description_kills"
+msgstr "Destroy %(goal)s enemy heavy or medium tanks"
+
+msgid "pm3_8_1_5_short"
+msgstr "Vanguard-5"
+
+msgid "pm3_8_1_5_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_1_6"
+msgstr "Vanguard-6"
+
+msgid "pm3_8_1_6_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage while your vehicle is stationary"
+
+msgid "pm3_8_1_6_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_8_1_6_short"
+msgstr "Vanguard-6"
+
+msgid "pm3_8_1_6_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_8_1_6_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_7"
+msgstr "Vanguard-7"
+
+msgid "pm3_8_1_7_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles within the view range of your "
+"vehicle"
+
+msgid "pm3_8_1_7_short"
+msgstr "Vanguard-7"
+
+msgid "pm3_8_1_7_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_1_8"
+msgstr "Vanguard-8"
+
+msgid "pm3_8_1_8_description_kills"
+msgstr "Destroy an enemy vehicle by ramming and survive the impact"
+
+msgid "pm3_8_1_8_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_8_1_8_short"
+msgstr "Vanguard-8"
+
+msgid "pm3_8_1_8_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_1_8_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_8_1_9"
+msgstr "Vanguard-9"
+
+msgid "pm3_8_1_9_description_counterAttack"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles that hit your vehicle"
+
+msgid "pm3_8_1_9_short"
+msgstr "Vanguard-9"
+
+msgid "pm3_8_1_9_title_counterAttack"
+msgstr "Damage"
+
+msgid "pm3_8_2_1"
+msgstr "Ambush-1"
+
+msgid "pm3_8_2_10"
+msgstr "Ambush-10"
+
+msgid "pm3_8_2_10_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_8_2_10_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_8_2_10_short"
+msgstr "Ambush-10"
+
+msgid "pm3_8_2_10_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_10_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_8_2_11"
+msgstr "Ambush-11"
+
+msgid "pm3_8_2_11_description_medal"
+msgstr "Earn the High Caliber award"
+
+msgid "pm3_8_2_11_short"
+msgstr "Ambush-11"
+
+msgid "pm3_8_2_11_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm3_8_2_12"
+msgstr "Ambush-12"
+
+msgid "pm3_8_2_12_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles that are moving by shooting "
+"them"
+
+msgid "pm3_8_2_12_short"
+msgstr "Ambush-12"
+
+msgid "pm3_8_2_12_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_13"
+msgstr "Ambush-13"
+
+msgid "pm3_8_2_13_description_medal"
+msgstr "Earn the Tank Sniper award"
+
+msgid "pm3_8_2_13_short"
+msgstr "Ambush-13"
+
+msgid "pm3_8_2_13_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm3_8_2_14"
+msgstr "Ambush-14"
+
+msgid "pm3_8_2_14_description_killWithCausingDamage"
+msgstr ""
+"Destroy %(goal)s enemy vehicle, causing at least %(damageDealt)s HP of "
+"damage to it"
+
+msgid "pm3_8_2_14_short"
+msgstr "Ambush-14"
+
+msgid "pm3_8_2_14_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm3_8_2_15"
+msgstr "Ambush-15"
+
+msgid "pm3_8_2_15_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_8_2_15_short"
+msgstr "Ambush-15"
+
+msgid "pm3_8_2_15_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_1_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_8_2_1_description_piercings"
+msgstr "Score %(goal)s armor-penetrating hits"
+
+msgid "pm3_8_2_1_short"
+msgstr "Ambush-1"
+
+msgid "pm3_8_2_1_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_1_title_piercings"
+msgstr "Penetration"
+
+msgid "pm3_8_2_2"
+msgstr "Ambush-2"
+
+msgid "pm3_8_2_2_description_topByExp"
+msgstr "Be the top player on your team by experience earned"
+
+msgid "pm3_8_2_2_short"
+msgstr "Ambush-2"
+
+msgid "pm3_8_2_2_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm3_8_2_3"
+msgstr "Ambush-3"
+
+msgid "pm3_8_2_3_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy medium tanks and tank destroyers"
+
+msgid "pm3_8_2_3_description_kills"
+msgstr "Destroy an enemy vehicle before receiving any damage to your vehicle"
+
+msgid "pm3_8_2_3_short"
+msgstr "Ambush-3"
+
+msgid "pm3_8_2_3_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_3_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_2_4"
+msgstr "Ambush-4"
+
+msgid "pm3_8_2_4_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy medium tanks"
+
+msgid "pm3_8_2_4_description_kills"
+msgstr "Destroy an enemy vehicle outside the view range of your vehicle"
+
+msgid "pm3_8_2_4_short"
+msgstr "Ambush-4"
+
+msgid "pm3_8_2_4_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_4_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_2_5"
+msgstr "Ambush-5"
+
+msgid "pm3_8_2_5_description_kills"
+msgstr "Destroy %(goal)s enemy medium or light tanks"
+
+msgid "pm3_8_2_5_description_spotAndKill"
+msgstr "Destroy an enemy vehicle spotted by you"
+
+msgid "pm3_8_2_5_short"
+msgstr "Ambush-5"
+
+msgid "pm3_8_2_5_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_2_5_title_spotAndKill"
+msgstr "Destroy"
+
+msgid "pm3_8_2_6"
+msgstr "Ambush-6"
+
+msgid "pm3_8_2_6_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_8_2_6_description_piercingSeries"
+msgstr "Score %(goal)s armor-penetrating hits in a row"
+
+msgid "pm3_8_2_6_short"
+msgstr "Ambush-6"
+
+msgid "pm3_8_2_6_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_6_title_piercingSeries"
+msgstr "Penetration"
+
+msgid "pm3_8_2_7"
+msgstr "Ambush-7"
+
+msgid "pm3_8_2_7_description_damageAndAssist"
+msgstr "Cause and assist a total of %(goal)s HP of damage"
+
+msgid "pm3_8_2_7_short"
+msgstr "Ambush-7"
+
+msgid "pm3_8_2_7_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm3_8_2_8"
+msgstr "Ambush-8"
+
+msgid "pm3_8_2_8_description_damage"
+msgstr ""
+"Cause %(vehicleHealthFactor)s times more damage than the hit points of your "
+"vehicle"
+
+msgid "pm3_8_2_8_short"
+msgstr "Ambush-8"
+
+msgid "pm3_8_2_8_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_2_9"
+msgstr "Ambush-9"
+
+msgid "pm3_8_2_9_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage while remaining unspotted at the moment the "
+"damage is caused"
+
+msgid "pm3_8_2_9_short"
+msgstr "Ambush-9"
+
+msgid "pm3_8_2_9_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_3_1"
+msgstr "Assistance-1"
+
+msgid "pm3_8_3_10"
+msgstr "Assistance-10"
+
+msgid "pm3_8_3_10_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting or immobilizing them while remaining unspotted"
+
+msgid "pm3_8_3_10_description_stunNumber"
+msgstr "Stun enemy medium tanks or tank destroyers %(goal)s times"
+
+msgid "pm3_8_3_10_short"
+msgstr "Assistance-10"
+
+msgid "pm3_8_3_10_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_8_3_10_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_8_3_11"
+msgstr "Assistance-11"
+
+msgid "pm3_8_3_11_description_medal"
+msgstr "Earn the Confederate award"
+
+msgid "pm3_8_3_11_short"
+msgstr "Assistance-11"
+
+msgid "pm3_8_3_11_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm3_8_3_12"
+msgstr "Assistance-12"
+
+msgid "pm3_8_3_12_description_assistedKills"
+msgstr ""
+"Enable your allies to destroy %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm3_8_3_12_short"
+msgstr "Assistance-12"
+
+msgid "pm3_8_3_12_title_assistedKills"
+msgstr "Assistance"
+
+msgid "pm3_8_3_13"
+msgstr "Assistance-13"
+
+msgid "pm3_8_3_13_description_kills"
+msgstr ""
+"Destroy an enemy vehicle from a distance of %(distanceShortOrEqual)s m or "
+"less"
+
+msgid "pm3_8_3_13_description_killsAlt"
+msgstr ""
+"Destroy an enemy vehicle from a distance of %(distanceGreatOrEqual)s m or "
+"more"
+
+msgid "pm3_8_3_13_short"
+msgstr "Assistance-13"
+
+msgid "pm3_8_3_13_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_3_13_title_killsAlt"
+msgstr "Destroy"
+
+msgid "pm3_8_3_14"
+msgstr "Assistance-14"
+
+msgid "pm3_8_3_14_description_kills"
+msgstr "Destroy %(goal)s enemy light tanks or SPGs"
+
+msgid "pm3_8_3_14_short"
+msgstr "Assistance-14"
+
+msgid "pm3_8_3_14_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_8_3_15"
+msgstr "Assistance-15"
+
+msgid "pm3_8_3_15_description_damageAndAssist"
+msgstr ""
+"Damage caused (including damage caused with your assistance) must total "
+"%(goal)s HP"
+
+msgid "pm3_8_3_15_short"
+msgstr "Assistance-15"
+
+msgid "pm3_8_3_15_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm3_8_3_1_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm3_8_3_1_description_hits"
+msgstr "Cause damage to an enemy SPG by shooting them and survive"
+
+msgid "pm3_8_3_1_description_stunNumber"
+msgstr "Stun enemy vehicles %(goal)s times and survive"
+
+msgid "pm3_8_3_1_short"
+msgstr "Assistance-1"
+
+msgid "pm3_8_3_1_title_alive"
+msgstr "Survive"
+
+msgid "pm3_8_3_1_title_hits"
+msgstr "Damage"
+
+msgid "pm3_8_3_1_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_8_3_2"
+msgstr "Assistance-2"
+
+msgid "pm3_8_3_2_description_topByExp"
+msgstr "Be the top player on both teams by experience earned"
+
+msgid "pm3_8_3_2_short"
+msgstr "Assistance-2"
+
+msgid "pm3_8_3_2_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm3_8_3_3"
+msgstr "Assistance-3"
+
+msgid "pm3_8_3_3_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_8_3_3_description_hits"
+msgstr "Cause damage to enemy vehicles by shooting them %(goal)s times"
+
+msgid "pm3_8_3_3_short"
+msgstr "Assistance-3"
+
+msgid "pm3_8_3_3_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_3_3_title_hits"
+msgstr "Damage"
+
+msgid "pm3_8_3_4"
+msgstr "Assistance-4"
+
+msgid "pm3_8_3_4_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles while remaining unspotted"
+
+msgid "pm3_8_3_4_description_stunTime"
+msgstr ""
+"Stun enemy medium tanks or tank destroyers for %(goal)s seconds in total. "
+"Potential stun duration is counted"
+
+msgid "pm3_8_3_4_short"
+msgstr "Assistance-4"
+
+msgid "pm3_8_3_4_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_8_3_4_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_8_3_5"
+msgstr "Assistance-5"
+
+msgid "pm3_8_3_5_description_medal"
+msgstr "Receive the Mastery Badge Class III or higher"
+
+msgid "pm3_8_3_5_short"
+msgstr "Assistance-5"
+
+msgid "pm3_8_3_5_title_medal"
+msgstr "Mastery Badge"
+
+msgid "pm3_8_3_6"
+msgstr "Assistance-6"
+
+msgid "pm3_8_3_6_description_crits"
+msgstr "Immobilize enemy vehicles %(goal)s times"
+
+msgid "pm3_8_3_6_description_stunTime"
+msgstr ""
+"Stun enemy vehicles for %(goal)s seconds in total. Potential stun duration "
+"is counted"
+
+msgid "pm3_8_3_6_short"
+msgstr "Assistance-6"
+
+msgid "pm3_8_3_6_title_crits"
+msgstr "Immobilize"
+
+msgid "pm3_8_3_6_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_8_3_7"
+msgstr "Assistance-7"
+
+msgid "pm3_8_3_7_description_assistedHits"
+msgstr ""
+"Enable your allies to cause damage to %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm3_8_3_7_short"
+msgstr "Assistance-7"
+
+msgid "pm3_8_3_7_title_assistedHits"
+msgstr "Assistance"
+
+msgid "pm3_8_3_8"
+msgstr "Assistance-8"
+
+msgid "pm3_8_3_8_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles that are moving by shooting "
+"them"
+
+msgid "pm3_8_3_8_description_damageCausedAtMovementSpeed"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles while moving at a speed of at "
+"least %(attackerMovingSpeedGreaterOrEqual)s km/h"
+
+msgid "pm3_8_3_8_short"
+msgstr "Assistance-8"
+
+msgid "pm3_8_3_8_title_damage"
+msgstr "Damage"
+
+msgid "pm3_8_3_8_title_damageCausedAtMovementSpeed"
+msgstr "Damage"
+
+msgid "pm3_8_3_9"
+msgstr "Assistance-9"
+
+msgid "pm3_8_3_9_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm3_8_3_9_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles and survive"
+
+msgid "pm3_8_3_9_description_stunNumber"
+msgstr ""
+"Stun %(stunSeveralTargets)s enemy vehicles with a single shot %(goal)s times"
+" and survive"
+
+msgid "pm3_8_3_9_short"
+msgstr "Assistance-9"
+
+msgid "pm3_8_3_9_title_alive"
+msgstr "Survive"
+
+msgid "pm3_8_3_9_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_8_3_9_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_9_1_1"
+msgstr "Vanguard-1"
+
+msgid "pm3_9_1_10"
+msgstr "Vanguard-10"
+
+msgid "pm3_9_1_10_description_damage"
+msgstr "Cause %(goal)s HP of damage to immobilized enemy vehicles"
+
+msgid "pm3_9_1_10_description_damageAlt"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_9_1_10_short"
+msgstr "Vanguard-10"
+
+msgid "pm3_9_1_10_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_10_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm3_9_1_11"
+msgstr "Vanguard-11"
+
+msgid "pm3_9_1_11_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceShortOrEqual)s "
+"m or less"
+
+msgid "pm3_9_1_11_short"
+msgstr "Vanguard-11"
+
+msgid "pm3_9_1_11_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_1_12"
+msgstr "Vanguard-12"
+
+msgid "pm3_9_1_12_description_blockedDamage"
+msgstr ""
+"Block %(goal)s HP of damage from enemy medium tanks and tank destroyers"
+
+msgid "pm3_9_1_12_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy medium tanks and tank destroyers"
+
+msgid "pm3_9_1_12_short"
+msgstr "Vanguard-12"
+
+msgid "pm3_9_1_12_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_9_1_12_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_13"
+msgstr "Vanguard-13"
+
+msgid "pm3_9_1_13_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy or medium tanks"
+
+msgid "pm3_9_1_13_description_kills"
+msgstr "Destroy %(goal)s enemy heavy or medium tanks"
+
+msgid "pm3_9_1_13_short"
+msgstr "Vanguard-13"
+
+msgid "pm3_9_1_13_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_13_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_1_14"
+msgstr "Vanguard-14"
+
+msgid "pm3_9_1_14_description_counterAttack"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles that hit your vehicle"
+
+msgid "pm3_9_1_14_short"
+msgstr "Vanguard-14"
+
+msgid "pm3_9_1_14_title_counterAttack"
+msgstr "Damage"
+
+msgid "pm3_9_1_15"
+msgstr "Vanguard-15"
+
+msgid "pm3_9_1_15_description_damageDealtReceivedAndBlocked"
+msgstr "Cause, receive, and block a total of %(goal)s HP of damage"
+
+msgid "pm3_9_1_15_short"
+msgstr "Vanguard-15"
+
+msgid "pm3_9_1_15_title_damageDealtReceivedAndBlocked"
+msgstr "Complex Condition"
+
+msgid "pm3_9_1_1_description_kills"
+msgstr "Destroy an enemy heavy tank"
+
+msgid "pm3_9_1_1_description_topByDamage"
+msgstr "Be the top player on your team by damage caused"
+
+msgid "pm3_9_1_1_short"
+msgstr "Vanguard-1"
+
+msgid "pm3_9_1_1_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_1_1_title_topByDamage"
+msgstr "Top Player"
+
+msgid "pm3_9_1_2"
+msgstr "Vanguard-2"
+
+msgid "pm3_9_1_2_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy heavy tanks"
+
+msgid "pm3_9_1_2_description_hits"
+msgstr "Cause damage to enemy heavy tanks by shooting them %(goal)s times"
+
+msgid "pm3_9_1_2_short"
+msgstr "Vanguard-2"
+
+msgid "pm3_9_1_2_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_2_title_hits"
+msgstr "Damage"
+
+msgid "pm3_9_1_3"
+msgstr "Vanguard-3"
+
+msgid "pm3_9_1_3_description_damage"
+msgstr "Cause %(goal)s HP of damage by ramming"
+
+msgid "pm3_9_1_3_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_9_1_3_short"
+msgstr "Vanguard-3"
+
+msgid "pm3_9_1_3_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_3_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_9_1_4"
+msgstr "Vanguard-4"
+
+msgid "pm3_9_1_4_description_blockedDamage"
+msgstr "Block %(goal)s HP of damage while your vehicle is stationary"
+
+msgid "pm3_9_1_4_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_9_1_4_short"
+msgstr "Vanguard-4"
+
+msgid "pm3_9_1_4_title_blockedDamage"
+msgstr "Block"
+
+msgid "pm3_9_1_4_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_5"
+msgstr "Vanguard-5"
+
+msgid "pm3_9_1_5_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_9_1_5_description_kills"
+msgstr ""
+"Destroy an enemy vehicle during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_9_1_5_short"
+msgstr "Vanguard-5"
+
+msgid "pm3_9_1_5_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_5_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_1_6"
+msgstr "Vanguard-6"
+
+msgid "pm3_9_1_6_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_9_1_6_description_kills"
+msgstr "Destroy an enemy vehicle within the view range of your vehicle"
+
+msgid "pm3_9_1_6_short"
+msgstr "Vanguard-6"
+
+msgid "pm3_9_1_6_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_6_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_1_7"
+msgstr "Vanguard-7"
+
+msgid "pm3_9_1_7_description_damageandBlock"
+msgstr ""
+"Have total damage caused and damage blocked by armor equal to or exceeding "
+"%(vehicleHealthFactor)s times the hit points of your vehicle"
+
+msgid "pm3_9_1_7_short"
+msgstr "Vanguard-7"
+
+msgid "pm3_9_1_7_title_damageandBlock"
+msgstr "Damage and Block"
+
+msgid "pm3_9_1_8"
+msgstr "Vanguard-8"
+
+msgid "pm3_9_1_8_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles of the same tier or higher by "
+"shooting them from a distance of %(distanceShortOrEqual)s m or less"
+
+msgid "pm3_9_1_8_description_damageAlt"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_9_1_8_short"
+msgstr "Vanguard-8"
+
+msgid "pm3_9_1_8_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_1_8_title_damageAlt"
+msgstr "Damage"
+
+msgid "pm3_9_1_9"
+msgstr "Vanguard-9"
+
+msgid "pm3_9_1_9_description_medal"
+msgstr "Earn the High Caliber award"
+
+msgid "pm3_9_1_9_short"
+msgstr "Vanguard-9"
+
+msgid "pm3_9_1_9_title_medal"
+msgstr "Battle Heroes"
+
+msgid "pm3_9_2_1"
+msgstr "Ambush-1"
+
+msgid "pm3_9_2_10"
+msgstr "Ambush-10"
+
+msgid "pm3_9_2_10_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage during the first %(timeLimit)s minutes of the "
+"battle"
+
+msgid "pm3_9_2_10_short"
+msgstr "Ambush-10"
+
+msgid "pm3_9_2_10_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_11"
+msgstr "Ambush-11"
+
+msgid "pm3_9_2_11_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_9_2_11_description_hits"
+msgstr "Cause damage to immobilized enemy vehicles %(goal)s times"
+
+msgid "pm3_9_2_11_short"
+msgstr "Ambush-11"
+
+msgid "pm3_9_2_11_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_11_title_hits"
+msgstr "Damage"
+
+msgid "pm3_9_2_12"
+msgstr "Ambush-12"
+
+msgid "pm3_9_2_12_description_damage"
+msgstr ""
+"Cause %(vehicleHealthFactor)s times more damage to enemy vehicles than the "
+"hit points of your vehicle"
+
+msgid "pm3_9_2_12_short"
+msgstr "Ambush-12"
+
+msgid "pm3_9_2_12_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_13"
+msgstr "Ambush-13"
+
+msgid "pm3_9_2_13_description_killWithCausingDamage"
+msgstr ""
+"Destroy %(goal)s heavy tanks, causing at least %(damageDealt)s HP of damage "
+"to each of them"
+
+msgid "pm3_9_2_13_short"
+msgstr "Ambush-13"
+
+msgid "pm3_9_2_13_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm3_9_2_14"
+msgstr "Ambush-14"
+
+msgid "pm3_9_2_14_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_9_2_14_description_kills"
+msgstr "Destroy %(goal)s enemy vehicles"
+
+msgid "pm3_9_2_14_short"
+msgstr "Ambush-14"
+
+msgid "pm3_9_2_14_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_14_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_2_15"
+msgstr "Ambush-15"
+
+msgid "pm3_9_2_15_description_damage"
+msgstr "Cause %(goal)s HP of damage to enemy vehicles"
+
+msgid "pm3_9_2_15_description_totalDamagePercent"
+msgstr "Cause 25%% of the total amount of damage caused by your team"
+
+msgid "pm3_9_2_15_short"
+msgstr "Ambush-15"
+
+msgid "pm3_9_2_15_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_15_title_totalDamagePercent"
+msgstr "Damage"
+
+msgid "pm3_9_2_1_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_9_2_1_description_piercings"
+msgstr "Score %(goal)s armor-penetrating hits"
+
+msgid "pm3_9_2_1_short"
+msgstr "Ambush-1"
+
+msgid "pm3_9_2_1_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_1_title_piercings"
+msgstr "Penetration"
+
+msgid "pm3_9_2_2"
+msgstr "Ambush-2"
+
+msgid "pm3_9_2_2_description_damage"
+msgstr "Cause %(goal)s HP of damage"
+
+msgid "pm3_9_2_2_description_topByExp"
+msgstr "Be the top player on your team by experience earned"
+
+msgid "pm3_9_2_2_short"
+msgstr "Ambush-2"
+
+msgid "pm3_9_2_2_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_2_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm3_9_2_3"
+msgstr "Ambush-3"
+
+msgid "pm3_9_2_3_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles that are moving by shooting "
+"them"
+
+msgid "pm3_9_2_3_short"
+msgstr "Ambush-3"
+
+msgid "pm3_9_2_3_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_4"
+msgstr "Ambush-4"
+
+msgid "pm3_9_2_4_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage while remaining unspotted at the moment the "
+"damage is caused"
+
+msgid "pm3_9_2_4_description_killWithCausingDamage"
+msgstr ""
+"Destroy an enemy vehicle, causing at least %(damageDealt)s HP of damage to "
+"it"
+
+msgid "pm3_9_2_4_short"
+msgstr "Ambush-4"
+
+msgid "pm3_9_2_4_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_4_title_killWithCausingDamage"
+msgstr "Destroy"
+
+msgid "pm3_9_2_5"
+msgstr "Ambush-5"
+
+msgid "pm3_9_2_5_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles before receiving any damage to your vehicle"
+
+msgid "pm3_9_2_5_description_spotAndKill"
+msgstr "Destroy %(goal)s enemy vehicles spotted by you"
+
+msgid "pm3_9_2_5_short"
+msgstr "Ambush-5"
+
+msgid "pm3_9_2_5_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_2_5_title_spotAndKill"
+msgstr "Destroy"
+
+msgid "pm3_9_2_6"
+msgstr "Ambush-6"
+
+msgid "pm3_9_2_6_description_damageCausedBlindly"
+msgstr ""
+"Cause %(damageDealt)s HP of damage to enemy vehicles that are unspotted when"
+" the damage is caused"
+
+msgid "pm3_9_2_6_description_killsDiversity"
+msgstr "Destroy %(goal)s enemy vehicles of %(uniqueGoal)s different types"
+
+msgid "pm3_9_2_6_short"
+msgstr "Ambush-6"
+
+msgid "pm3_9_2_6_title_damageCausedBlindly"
+msgstr "Damage"
+
+msgid "pm3_9_2_6_title_killsDiversity"
+msgstr "Destroy"
+
+msgid "pm3_9_2_7"
+msgstr "Ambush-7"
+
+msgid "pm3_9_2_7_description_damageAndAssist"
+msgstr "Cause and assist a total of %(goal)s HP of damage"
+
+msgid "pm3_9_2_7_short"
+msgstr "Ambush-7"
+
+msgid "pm3_9_2_7_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm3_9_2_8"
+msgstr "Ambush-8"
+
+msgid "pm3_9_2_8_description_damage"
+msgstr ""
+"Cause %(goal)s HP of damage to enemy vehicles outside the view range of your"
+" vehicle"
+
+msgid "pm3_9_2_8_short"
+msgstr "Ambush-8"
+
+msgid "pm3_9_2_8_title_damage"
+msgstr "Damage"
+
+msgid "pm3_9_2_9"
+msgstr "Ambush-9"
+
+msgid "pm3_9_2_9_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceGreatOrEqual)s "
+"m or more"
+
+msgid "pm3_9_2_9_short"
+msgstr "Ambush-9"
+
+msgid "pm3_9_2_9_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_3_1"
+msgstr "Assistance-1"
+
+msgid "pm3_9_3_10"
+msgstr "Assistance-10"
+
+msgid "pm3_9_3_10_description_medal"
+msgstr "Receive the Mastery Badge Class I or higher"
+
+msgid "pm3_9_3_10_short"
+msgstr "Assistance-10"
+
+msgid "pm3_9_3_10_title_medal"
+msgstr "Mastery Badge"
+
+msgid "pm3_9_3_11"
+msgstr "Assistance-11"
+
+msgid "pm3_9_3_11_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting, immobilizing, or stunning them"
+
+msgid "pm3_9_3_11_description_stunTime"
+msgstr ""
+"Stun enemy vehicles for %(goal)s seconds in total. Potential stun duration "
+"is counted"
+
+msgid "pm3_9_3_11_short"
+msgstr "Assistance-11"
+
+msgid "pm3_9_3_11_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_9_3_11_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_9_3_12"
+msgstr "Assistance-12"
+
+msgid "pm3_9_3_12_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm3_9_3_12_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles and survive the battle"
+
+msgid "pm3_9_3_12_description_stunNumber"
+msgstr ""
+"Stun %(stunSeveralTargets)s enemy vehicles with a single shot %(goal)s times"
+" and survive the battle"
+
+msgid "pm3_9_3_12_short"
+msgstr "Assistance-12"
+
+msgid "pm3_9_3_12_title_alive"
+msgstr "Survive"
+
+msgid "pm3_9_3_12_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_9_3_12_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_9_3_13"
+msgstr "Assistance-13"
+
+msgid "pm3_9_3_13_description_hits"
+msgstr ""
+"Cause damage to enemy vehicles that are moving by shooting them %(goal)s "
+"times"
+
+msgid "pm3_9_3_13_description_killsCausedAtMovementSpeed"
+msgstr ""
+"Destroy %(goal)s enemy vehicles with shots while moving at a speed of at "
+"least %(attackerMovingSpeedGreaterOrEqual)s km/h"
+
+msgid "pm3_9_3_13_short"
+msgstr "Assistance-13"
+
+msgid "pm3_9_3_13_title_hits"
+msgstr "Damage"
+
+msgid "pm3_9_3_13_title_killsCausedAtMovementSpeed"
+msgstr "Destroy"
+
+msgid "pm3_9_3_14"
+msgstr "Assistance-14"
+
+msgid "pm3_9_3_14_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles spotted "
+"by you. Remain unspotted at the moment when damage is caused"
+
+msgid "pm3_9_3_14_description_stunTime"
+msgstr ""
+"Stun enemy heavy tanks for %(goal)s seconds in total. Potential stun "
+"duration is counted"
+
+msgid "pm3_9_3_14_short"
+msgstr "Assistance-14"
+
+msgid "pm3_9_3_14_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_9_3_14_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_9_3_15"
+msgstr "Assistance-15"
+
+msgid "pm3_9_3_15_description_damageAndAssist"
+msgstr ""
+"Damage caused (including damage caused with your assistance) must total "
+"%(goal)s HP"
+
+msgid "pm3_9_3_15_short"
+msgstr "Assistance-15"
+
+msgid "pm3_9_3_15_title_damageAndAssist"
+msgstr "Complex Condition"
+
+msgid "pm3_9_3_1_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting, stunning, or immobilizing them"
+
+msgid "pm3_9_3_1_description_kills"
+msgstr "Destroy an enemy SPG"
+
+msgid "pm3_9_3_1_short"
+msgstr "Assistance-1"
+
+msgid "pm3_9_3_1_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_9_3_1_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_3_2"
+msgstr "Assistance-2"
+
+msgid "pm3_9_3_2_description_spotNumber"
+msgstr "Spot %(goal)s enemy vehicles while remaining unspotted"
+
+msgid "pm3_9_3_2_description_stunNumber"
+msgstr "Stun enemy vehicles %(goal)s times"
+
+msgid "pm3_9_3_2_short"
+msgstr "Assistance-2"
+
+msgid "pm3_9_3_2_title_spotNumber"
+msgstr "Spot"
+
+msgid "pm3_9_3_2_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_9_3_3"
+msgstr "Assistance-3"
+
+msgid "pm3_9_3_3_description_crits"
+msgstr "Immobilize %(goal)s enemy vehicles by destroying their tracks"
+
+msgid "pm3_9_3_3_description_stunTime"
+msgstr ""
+"Stun enemy vehicles for %(goal)s seconds in total. Potential stun duration "
+"is counted"
+
+msgid "pm3_9_3_3_short"
+msgstr "Assistance-3"
+
+msgid "pm3_9_3_3_title_crits"
+msgstr "Immobilize"
+
+msgid "pm3_9_3_3_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_9_3_4"
+msgstr "Assistance-4"
+
+msgid "pm3_9_3_4_description_kills"
+msgstr ""
+"Destroy %(goal)s enemy vehicles from a distance of %(distanceShortOrEqual)s "
+"m or less"
+
+msgid "pm3_9_3_4_description_stunNumber"
+msgstr "Stun enemy medium tanks or tank destroyers %(goal)s times"
+
+msgid "pm3_9_3_4_short"
+msgstr "Assistance-4"
+
+msgid "pm3_9_3_4_title_kills"
+msgstr "Destroy"
+
+msgid "pm3_9_3_4_title_stunNumber"
+msgstr "Stun"
+
+msgid "pm3_9_3_5"
+msgstr "Assistance-5"
+
+msgid "pm3_9_3_5_description_assistedKills"
+msgstr ""
+"Enable your allies to destroy %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm3_9_3_5_short"
+msgstr "Assistance-5"
+
+msgid "pm3_9_3_5_title_assistedKills"
+msgstr "Assistance"
+
+msgid "pm3_9_3_6"
+msgstr "Assistance-6"
+
+msgid "pm3_9_3_6_description_assist"
+msgstr ""
+"Enable your allies to cause %(goal)s HP of damage to enemy vehicles by "
+"spotting or immobilizing them while remaining unspotted"
+
+msgid "pm3_9_3_6_description_stunTime"
+msgstr ""
+"Stun enemy medium tanks and tank destroyers for %(goal)s seconds in total. "
+"Potential stun duration is counted"
+
+msgid "pm3_9_3_6_short"
+msgstr "Assistance-6"
+
+msgid "pm3_9_3_6_title_assist"
+msgstr "Assistance"
+
+msgid "pm3_9_3_6_title_stunTime"
+msgstr "Stun"
+
+msgid "pm3_9_3_7"
+msgstr "Assistance-7"
+
+msgid "pm3_9_3_7_description_alive"
+msgstr "Survive the battle"
+
+msgid "pm3_9_3_7_description_topByExp"
+msgstr "Be the top player on both teams by experience earned"
+
+msgid "pm3_9_3_7_short"
+msgstr "Assistance-7"
+
+msgid "pm3_9_3_7_title_alive"
+msgstr "Survive"
+
+msgid "pm3_9_3_7_title_topByExp"
+msgstr "Top Player"
+
+msgid "pm3_9_3_8"
+msgstr "Assistance-8"
+
+msgid "pm3_9_3_8_description_assistedHits"
+msgstr ""
+"Enable your allies to cause damage to %(goal)s enemy vehicles by spotting, "
+"immobilizing, or stunning them"
+
+msgid "pm3_9_3_8_short"
+msgstr "Assistance-8"
+
+msgid "pm3_9_3_8_title_assistedHits"
+msgstr "Assistance"
+
+msgid "pm3_9_3_9"
+msgstr "Assistance-9"
+
+msgid "pm3_9_3_9_description_damageCausedBlindly"
+msgstr ""
+"Cause %(damageDealt)s HP of damage to an enemy vehicle that is unspotted "
+"when the damage is caused"
+
+msgid "pm3_9_3_9_description_kills"
+msgstr "Destroy %(goal)s enemy light tanks or SPGs"
+
+msgid "pm3_9_3_9_short"
+msgstr "Assistance-9"
+
+msgid "pm3_9_3_9_title_damageCausedBlindly"
+msgstr "Damage"
+
+msgid "pm3_9_3_9_title_kills"
+msgstr "Destroy"
 
 msgid "quest/advice/biathlon/description"
 msgstr ""
@@ -5864,7 +8195,9 @@ msgid "quest_common_conditioncommon_condition_title_spotted"
 msgstr "Spot"
 
 msgid "regular_1_1_10_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_1_10_title_topByExp"
 msgstr "Top 3"
@@ -5946,7 +8279,9 @@ msgid "regular_1_1_15_title_damageAndAssist"
 msgstr "Complex Condition"
 
 msgid "regular_1_1_1_description_topByExp"
-msgstr "Be among the top 10 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_1_1_title_topByExp"
 msgstr "Top 10"
@@ -6041,7 +8376,8 @@ msgid "regular_1_1_9_title_spotNumber"
 msgstr "Spot"
 
 msgid "regular_1_2_10_description_topByExp"
-msgstr "Be among the top 3 players on your team by damage caused"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by damage caused"
 
 msgid "regular_1_2_10_title_topByExp"
 msgstr "Top 3"
@@ -6226,7 +8562,9 @@ msgid "regular_1_3_12_description_hits"
 msgstr "Set an enemy vehicle on fire"
 
 msgid "regular_1_3_12_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_3_12_title_hits"
 msgstr "Set on Fire"
@@ -6238,7 +8576,9 @@ msgid "regular_1_3_13_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles"
 
 msgid "regular_1_3_13_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_3_13_title_damage"
 msgstr "Damage"
@@ -6274,7 +8614,9 @@ msgid "regular_1_3_1_description_hits"
 msgstr "Cause damage to an enemy vehicle"
 
 msgid "regular_1_3_1_description_topByExp"
-msgstr "Be among the top 10 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_3_1_title_hits"
 msgstr "Damage"
@@ -6417,7 +8759,9 @@ msgid "regular_1_4_15_title_kills"
 msgstr "Destroy"
 
 msgid "regular_1_4_1_description_topByExp"
-msgstr "Be among the top 7 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_4_1_title_topByExp"
 msgstr "Top 7"
@@ -6584,7 +8928,9 @@ msgid "regular_1_5_15_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles"
 
 msgid "regular_1_5_15_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_5_15_title_assist"
 msgstr "Assistance"
@@ -6664,7 +9010,9 @@ msgid "regular_1_5_7_title_stunNumber"
 msgstr "Stun"
 
 msgid "regular_1_5_8_description_topByExp"
-msgstr "Be among the top 7 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_1_5_8_title_topByExp"
 msgstr "Top 7"
@@ -6748,7 +9096,9 @@ msgid "regular_2_1_15_title_damageAndAssist"
 msgstr "Complex Condition"
 
 msgid "regular_2_1_1_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_1_1_title_topByExp"
 msgstr "Top 5"
@@ -6857,7 +9207,8 @@ msgid "regular_2_1_9_title_spotNumber"
 msgstr "Spot"
 
 msgid "regular_2_2_10_description_topByExp"
-msgstr "Be among the top 3 players on both teams by damage caused"
+msgstr ""
+"Be among the top %(desiredPosition)s players on both teams by damage caused"
 
 msgid "regular_2_2_10_title_topByExp"
 msgstr "Top 3"
@@ -7056,7 +9407,9 @@ msgid "regular_2_3_12_description_hits"
 msgstr "Set an enemy vehicle on fire"
 
 msgid "regular_2_3_12_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_3_12_title_damage"
 msgstr "Damage"
@@ -7071,7 +9424,9 @@ msgid "regular_2_3_13_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles"
 
 msgid "regular_2_3_13_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_3_13_title_damage"
 msgstr "Damage"
@@ -7113,7 +9468,9 @@ msgid "regular_2_3_1_description_hits"
 msgstr "Cause damage to an enemy vehicle"
 
 msgid "regular_2_3_1_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_3_1_title_hits"
 msgstr "Damage"
@@ -7259,7 +9616,9 @@ msgid "regular_2_4_15_title_kills"
 msgstr "Destroy"
 
 msgid "regular_2_4_1_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_4_1_title_topByExp"
 msgstr "Top 5"
@@ -7426,7 +9785,9 @@ msgid "regular_2_5_15_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles"
 
 msgid "regular_2_5_15_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_5_15_title_assist"
 msgstr "Assistance"
@@ -7506,7 +9867,9 @@ msgid "regular_2_5_7_title_stunNumber"
 msgstr "Stun"
 
 msgid "regular_2_5_8_description_topByExp"
-msgstr "Be among the top 5 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_2_5_8_title_topByExp"
 msgstr "Top 5"
@@ -7590,7 +9953,9 @@ msgid "regular_3_1_15_title_damageAndAssist"
 msgstr "Complex Condition"
 
 msgid "regular_3_1_1_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_3_1_1_title_topByExp"
 msgstr "Top 3"
@@ -7913,7 +10278,9 @@ msgid "regular_3_3_12_description_hits"
 msgstr "Set an enemy vehicle of the same tier or higher on fire"
 
 msgid "regular_3_3_12_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_3_3_12_title_hits"
 msgstr "Set on Fire"
@@ -7925,7 +10292,9 @@ msgid "regular_3_3_13_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles"
 
 msgid "regular_3_3_13_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_3_3_13_title_damage"
 msgstr "Damage"
@@ -7961,7 +10330,9 @@ msgid "regular_3_3_1_description_hits"
 msgstr "Cause damage to an enemy vehicle"
 
 msgid "regular_3_3_1_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_3_3_1_title_hits"
 msgstr "Damage"
@@ -8118,7 +10489,9 @@ msgid "regular_3_4_15_title_kills"
 msgstr "Destroy"
 
 msgid "regular_3_4_1_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_3_4_1_title_topByExp"
 msgstr "Top 3"
@@ -8369,7 +10742,9 @@ msgid "regular_3_5_7_title_stunNumber"
 msgstr "Stun"
 
 msgid "regular_3_5_8_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_3_5_8_title_topByExp"
 msgstr "Top 3"
@@ -8773,7 +11148,9 @@ msgid "regular_4_3_12_description_hits"
 msgstr "Set an enemy vehicle of the same tier or higher on fire"
 
 msgid "regular_4_3_12_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_4_3_12_title_damage"
 msgstr "Damage"
@@ -8788,7 +11165,9 @@ msgid "regular_4_3_13_description_damage"
 msgstr "Cause %(goal)s HP of damage to enemy vehicles"
 
 msgid "regular_4_3_13_description_topByExp"
-msgstr "Be among the top 3 players on your team by experience earned"
+msgstr ""
+"Be among the top %(desiredPosition)s players on your team by experience "
+"earned"
 
 msgid "regular_4_3_13_title_damage"
 msgstr "Damage"
@@ -9240,7 +11619,7 @@ msgid "regular_4_5_9_title_crits"
 msgstr "Critical Hits"
 
 msgid "season_1"
-msgstr "The Long-Awaited Backup"
+msgstr "Long-Awaited Backup"
 
 msgid "season_1_descr"
 msgstr ""
@@ -9251,8 +11630,19 @@ msgstr ""
 msgid "season_2"
 msgstr "Second Front"
 
+msgid "season_3"
+msgstr "Sector 3"
+
 msgid "tile_1"
 msgstr "StuG IV"
+
+msgid "tile_10"
+msgstr "Black Rock"
+
+msgid "tile_10_descr"
+msgstr ""
+"A set of missions for all vehicle types to receive the American Black Rock "
+"heavy tank."
 
 msgid "tile_1_descr"
 msgstr ""
@@ -9306,3 +11696,19 @@ msgid "tile_7_descr"
 msgstr ""
 "A set of missions for all vehicle types to receive the Soviet Object 279 (e)"
 " heavy tank."
+
+msgid "tile_8"
+msgstr "Windhund"
+
+msgid "tile_8_descr"
+msgstr ""
+"A set of missions for all vehicle types to receive the German Windhund tank "
+"destroyer."
+
+msgid "tile_9"
+msgstr "Dravec"
+
+msgid "tile_9_descr"
+msgstr ""
+"A set of missions for all vehicle types to receive the Czechoslovakian Vz. "
+"60S Dravec heavy tank."

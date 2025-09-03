@@ -199,6 +199,15 @@ msgstr "Mounted on vehicle"
 msgid "dealPanel/tooltip/notEnough"
 msgstr "Insufficient funds to make the purchase"
 
+msgid "dealPanel/tooltip/purchasedWith/credits"
+msgstr "Will be purchased with credits"
+
+msgid "dealPanel/tooltip/purchasedWith/crystal"
+msgstr "Will be purchased with bonds"
+
+msgid "dealPanel/tooltip/purchasedWith/depot"
+msgstr "Will be mounted from the Depot"
+
 msgid "deconstructionDeviceView/available"
 msgstr "Available:"
 
@@ -657,9 +666,6 @@ msgstr "Sale price for 1 item:"
 msgid "easyTankEquipView/alert/demountNotPossible"
 msgstr "Not enough resources for demounting."
 
-msgid "easyTankEquipView/alert/loadCapacityNotEnough"
-msgstr "This equipment requires suspension with higher load capacity."
-
 msgid "easyTankEquipView/alert/notFormed"
 msgstr "Recommendations unavailable for this vehicle"
 
@@ -859,7 +865,7 @@ msgid "introduction/slide/3/description/left"
 msgstr ""
 "The cost of most equipment will not exceed 50,000 credits for Tier II–IV "
 "vehicles, 300,000 credits for Tier V–VII vehicles, and 600,000 for Tier "
-"VIII–X vehicles."
+"VIII–XI vehicles."
 
 msgid "introduction/slide/3/description/right"
 msgstr ""
@@ -881,7 +887,7 @@ msgid "introduction/slide/4/description"
 msgstr ""
 "Equipment is unavailable for Tier I vehicles. You can mount only one "
 "equipment item on Tier II vehicles, two items on Tier III vehicles, and "
-"three items on Tier IV–X vehicles. Equipment mounted in the removed slots "
+"three items on Tier IV–XI vehicles. Equipment mounted in the removed slots "
 "was demounted and sent to the Depot."
 
 msgid "introduction/slide/4/title"
@@ -958,9 +964,6 @@ msgstr ""
 msgid "kpi/bonus/longDescr/negative/vehicleChassisFallDamage"
 msgstr "to hull damage caused by suspension damage during impact"
 
-msgid "kpi/bonus/longDescr/negative/vehicleChassisLoad"
-msgstr "to suspension load capacity"
-
 msgid "kpi/bonus/longDescr/negative/vehicleCircularVisionRadius"
 msgstr ""
 "to view range (up to 445 m)—increasing the parameter over 445 m allows for "
@@ -1033,14 +1036,11 @@ msgstr "to concealment of a stationary or moving vehicle"
 
 msgid "kpi/bonus/longDescr/positive/vehicleCamouflageGroup"
 msgstr ""
-"to concealment increase, whether vehicle is stationary or moving "
+"to concealment increase, whether the vehicle is stationary or moving "
 "(effectiveness depends on vehicle type)"
 
 msgid "kpi/bonus/longDescr/positive/vehicleChassisFallDamage"
 msgstr "to hull damage caused by suspension damage during impact"
-
-msgid "kpi/bonus/longDescr/positive/vehicleChassisLoad"
-msgstr "to suspension load capacity"
 
 msgid "kpi/bonus/longDescr/positive/vehicleCircularVisionRadius"
 msgstr ""
@@ -1207,9 +1207,6 @@ msgstr "to concealment increase"
 msgid "kpi/bonus/negative/vehicleChassisFallDamage"
 msgstr "to damage by impact"
 
-msgid "kpi/bonus/negative/vehicleChassisLoad"
-msgstr "to load capacity"
-
 msgid "kpi/bonus/negative/vehicleChassisRepairSpeed"
 msgstr "to suspension repair speed"
 
@@ -1339,6 +1336,21 @@ msgstr ""
 "duration of spotting enemies\n"
 "after being destroyed"
 
+msgid "kpi/bonus/positive/HEShellDamage"
+msgstr "to HE shell damage"
+
+msgid "kpi/bonus/positive/HEShellPenetration"
+msgstr "to HE shell penetration"
+
+msgid "kpi/bonus/positive/additionalShellAmmoCapacity"
+msgstr "to ammo capacity"
+
+msgid "kpi/bonus/positive/allShellDamage"
+msgstr "to damage of all shells"
+
+msgid "kpi/bonus/positive/allShellsVelocity"
+msgstr "to shell velocity for all shell types"
+
 msgid "kpi/bonus/positive/artNotificationDelayFactor"
 msgstr ""
 "delay before Sound Detection\n"
@@ -1388,6 +1400,9 @@ msgstr ""
 "to chance of damaging enemy modules\n"
 "and crew members"
 
+msgid "kpi/bonus/positive/engineHP"
+msgstr "to engine HP"
+
 msgid "kpi/bonus/positive/equipmentPreparationTime"
 msgstr "to consumable cooldown time"
 
@@ -1397,10 +1412,31 @@ msgstr "to firefighting speed"
 msgid "kpi/bonus/positive/foliageMaskingFactor"
 msgstr "to concealment behind foliage"
 
+msgid "kpi/bonus/positive/fuelTankHP"
+msgstr "to fuel tank HP"
+
+msgid "kpi/bonus/positive/gunDepression"
+msgstr "to gun depression"
+
+msgid "kpi/bonus/positive/gunElevation"
+msgstr "to gun elevation"
+
+msgid "kpi/bonus/positive/gunStabilization"
+msgstr "to gun stabilization"
+
+msgid "kpi/bonus/positive/gunTraverse"
+msgstr "to gun traverse limits"
+
+msgid "kpi/bonus/positive/hullElevationSpeed"
+msgstr "to hull elevation speed"
+
 msgid "kpi/bonus/positive/mediumGroundFactor"
 msgstr ""
 "to maintaining speed\n"
 "on moderately soft terrain"
+
+msgid "kpi/bonus/positive/nonHEShellDamage"
+msgstr "to non-HE shell damage"
 
 msgid "kpi/bonus/positive/penaltyToDamagedSurveyingDevice"
 msgstr ""
@@ -1418,6 +1454,18 @@ msgstr ""
 "to protection of the radio operator\n"
 "from injuries"
 
+msgid "kpi/bonus/positive/reloadTimeInClip"
+msgstr "to reload time in clip"
+
+msgid "kpi/bonus/positive/reloadTimeSalvo"
+msgstr "to reload time (Salvo Fire mode)"
+
+msgid "kpi/bonus/positive/reloadTimeSingle"
+msgstr "to reload time (Single Fire mode)"
+
+msgid "kpi/bonus/positive/shellModuleDamage"
+msgstr "to shell damage to enemy modules"
+
 msgid "kpi/bonus/positive/shellVelocity"
 msgstr "to shell velocity"
 
@@ -1426,8 +1474,23 @@ msgstr ""
 "to maintaining speed\n"
 "on soft terrain"
 
+msgid "kpi/bonus/positive/specialShellPenetration"
+msgstr "to special shell penetration"
+
+msgid "kpi/bonus/positive/specialShellVelocity"
+msgstr "to special shell velocity"
+
+msgid "kpi/bonus/positive/standardShellPenetration"
+msgstr "to standard shell penetration"
+
+msgid "kpi/bonus/positive/standardShellVelocity"
+msgstr "to standard shell velocity"
+
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "to negative stun effect"
+
+msgid "kpi/bonus/positive/turretTraverse"
+msgstr "to turret traverse limits"
 
 msgid "kpi/bonus/positive/vehPenaltyForDamagedAmmorack"
 msgstr "to the loading speed penalty"
@@ -1455,9 +1518,6 @@ msgstr "to concealment increase"
 
 msgid "kpi/bonus/positive/vehicleChassisFallDamage"
 msgstr "to damage upon impact"
-
-msgid "kpi/bonus/positive/vehicleChassisLoad"
-msgstr "to load capacity"
 
 msgid "kpi/bonus/positive/vehicleChassisRepairSpeed"
 msgstr "to suspension repair speed"
@@ -1541,6 +1601,9 @@ msgstr ""
 
 msgid "kpi/bonus/positive/vehicleRepairSpeed"
 msgstr "to repair speed"
+
+msgid "kpi/bonus/positive/vehicleSpeed"
+msgstr "to top forward/reverse speed"
 
 msgid "kpi/bonus/positive/vehicleSpeedGain"
 msgstr "to maintaining speed when crossing all terrain types"
@@ -1645,9 +1708,6 @@ msgstr "to concealment"
 
 msgid "kpi/bonus/ttc/negative/vehicleChassisFallDamage"
 msgstr "to damage by impact"
-
-msgid "kpi/bonus/ttc/negative/vehicleChassisLoad"
-msgstr "to load capacity"
 
 msgid "kpi/bonus/ttc/negative/vehicleChassisRepairSpeed"
 msgstr "to suspension repair speed"
@@ -1848,9 +1908,6 @@ msgstr "to concealment"
 msgid "kpi/bonus/ttc/positive/vehicleChassisFallDamage"
 msgstr "to damage upon impact"
 
-msgid "kpi/bonus/ttc/positive/vehicleChassisLoad"
-msgstr "to load capacity"
-
 msgid "kpi/bonus/ttc/positive/vehicleChassisRepairSpeed"
 msgstr "to suspension repair speed"
 
@@ -1985,6 +2042,9 @@ msgstr "s"
 
 msgid "popularLoadouts/common"
 msgstr "Popular"
+
+msgid "popularLoadouts/commonlyUsed"
+msgstr "Commonly Used"
 
 msgid "popularLoadouts/legendary"
 msgstr "Legendary"

@@ -25,6 +25,8 @@ package net.wg.gui.notification
       
       public var redGlow:Sprite = null;
       
+      public var glow:Sprite = null;
+      
       private var _emblem:PrestigeEmblem = null;
       
       private var _heightOffset:uint = 0;
@@ -41,8 +43,14 @@ package net.wg.gui.notification
       override protected function configUI() : void
       {
          super.configUI();
-         this.redGlow.mouseChildren = this.redGlow.mouseEnabled = false;
+         this.redGlow.mouseChildren = false;
+         this.redGlow.mouseEnabled = false;
          App.utils.commons.addEmptyHitArea(this.redGlow);
+         this.sparkles.mouseChildren = false;
+         this.sparkles.mouseEnabled = false;
+         App.utils.commons.addEmptyHitArea(this.sparkles);
+         this.glow.mouseChildren = false;
+         this.glow.mouseEnabled = false;
          this._defaultHeight = background.y + background.height;
          this._messageWidth = background.width;
          this._emblem = new PrestigeEmblem();
@@ -58,6 +66,7 @@ package net.wg.gui.notification
          this.sparkles = null;
          this.emblemShadow = null;
          this.redGlow = null;
+         this.glow = null;
          if(this._emblem)
          {
             removeChild(this._emblem);

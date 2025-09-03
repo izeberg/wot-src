@@ -20,7 +20,11 @@ package net.wg.gui.components.crosshairPanel
          super();
       }
       
-      public function addOverheat(param1:Number) : void
+      public function set reloadBoost(param1:Boolean) : void
+      {
+      }
+      
+      public function set overheatIndicatorVisible(param1:Boolean) : void
       {
       }
       
@@ -32,11 +36,7 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function autoloaderShowShot() : void
-      {
-      }
-      
-      public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
+      public function autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean, param6:Boolean = false) : void
       {
       }
       
@@ -63,15 +63,11 @@ package net.wg.gui.components.crosshairPanel
          return this._disposed;
       }
       
-      public function removeOverheat() : void
+      public function setAmmoStock(param1:uint, param2:Number, param3:String, param4:Boolean = false) : void
       {
       }
       
-      public function setAmmoStock(param1:Number, param2:String, param3:Boolean = false) : void
-      {
-      }
-      
-      public function setAutoloaderReloadingAsPercent(param1:Number, param2:Boolean) : void
+      public function setAutoloaderReloadingAsPercent(param1:Number) : void
       {
       }
       
@@ -83,7 +79,7 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setClipsParam(param1:Number, param2:Number, param3:Boolean = false) : void
+      public function setClipsParam(param1:Number, param2:Number, param3:int) : void
       {
       }
       
@@ -99,6 +95,10 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      public function setExtraShotClipReloading(param1:String, param2:Number, param3:Boolean, param4:Boolean = false) : void
+      {
+      }
+      
       public function setGunMarkersData(param1:Vector.<GunMarkerIndicatorVO>, param2:Boolean) : void
       {
       }
@@ -107,10 +107,18 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
-      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:String, param11:Number, param12:String, param13:String, param14:Boolean = false, param15:Boolean = false, param16:Boolean = false) : void
+      public function setInfo(param1:Number, param2:String, param3:String, param4:Boolean, param5:Boolean, param6:String, param7:String, param8:Number, param9:Number, param10:int, param11:String, param12:uint, param13:Number, param14:String, param15:String, param16:Boolean = false, param17:Boolean = false, param18:Boolean = false, param19:Boolean = false, param20:Boolean = false, param21:Boolean = false) : void
       {
          this.updatePlayerInfo(param7);
-         this.updateAmmoState(param10);
+         this.updateAmmoState(param11);
+      }
+      
+      public function setIsInControllableReload(param1:Boolean) : void
+      {
+      }
+      
+      public function setNetSeparatorType(param1:String) : void
+      {
       }
       
       public function setNetSeparatorVisible(param1:Boolean) : void
@@ -118,10 +126,6 @@ package net.wg.gui.components.crosshairPanel
       }
       
       public function setNetType(param1:Number) : void
-      {
-      }
-      
-      public function setOverheatProgress(param1:Number, param2:Boolean) : void
       {
       }
       
@@ -153,6 +157,10 @@ package net.wg.gui.components.crosshairPanel
       {
       }
       
+      public function showShot() : void
+      {
+      }
+      
       public function updateAmmoState(param1:String) : void
       {
          if(this._strAmmoState != param1)
@@ -160,14 +168,6 @@ package net.wg.gui.components.crosshairPanel
             this._strAmmoState = param1;
             this.ammoInfo.text = this._strAmmoState;
          }
-      }
-      
-      public function updateCritical(param1:Boolean) : void
-      {
-      }
-      
-      public function updateOverheatColorBlind(param1:Boolean) : void
-      {
       }
       
       public function updatePlayerInfo(param1:String) : void
@@ -188,6 +188,18 @@ package net.wg.gui.components.crosshairPanel
       }
       
       public function set scaleWidgetEnabled(param1:Boolean) : void
+      {
+      }
+      
+      public function setSize(param1:Number, param2:Number) : void
+      {
+      }
+      
+      public function setReloadBoostBorderBlink() : void
+      {
+      }
+      
+      public function setReloadBoostBorderVisible(param1:Boolean, param2:Boolean, param3:Boolean) : void
       {
       }
    }

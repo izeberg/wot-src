@@ -2,6 +2,7 @@ package net.wg.gui.lobby.profile
 {
    import flash.display.DisplayObject;
    import flash.events.Event;
+   import flash.geom.Rectangle;
    import net.wg.data.VO.CountersVo;
    import net.wg.data.constants.Errors;
    import net.wg.data.constants.Linkages;
@@ -203,9 +204,10 @@ package net.wg.gui.lobby.profile
          invalidate(INVALIDATE_TAB_COUNTERS);
       }
       
-      public function setAvailableSize(param1:Number, param2:Number) : void
+      public function setAvailableSize(param1:Number, param2:Number, param3:Rectangle) : void
       {
-         this.viewStack.setAvailableSize(param1,param2 - this.viewStack.y);
+         param3 = new Rectangle(param3.x,param3.y - this.viewStack.y,param3.width,param3.height);
+         this.viewStack.setAvailableSize(param1,param2 - this.viewStack.y,param3);
          setSize(param1,param2);
       }
       

@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "mode/comp7Light/battlePassTooltip/body"
+msgstr ""
+"While fighting in Tier VIII vehicles in {whiteSpanish_open}Onslaught "
+"Light{whiteSpanish_close}, you will earn Points that allow you to advance "
+"through the Battle Pass Progression."
+
+msgid "mode/comp7Light/battlePassTooltip/header"
+msgstr "Battle Pass Points"
+
+msgid "mode/comp7Light/currentStage"
+msgstr "Current Stage:"
+
+msgid "mode/comp7Light/description"
+msgstr ""
+"Unranked mode: 7v7 {parSecondary_open}|{parSecondary_close} "
+"Tier&nbsp;%(tier)s"
+
+msgid "mode/comp7Light/steps"
+msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/gpu_particles/gpu_particle_pbs_ext.fx</fx>
+					<materialKind>107</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_UNI_196_PileBrick/hd_env_UNI_196_PileBrick_01_AM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useDitherOverLifetime
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useGradient
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useSizeTimeline
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Environment/hd_env_UNI_196_PileBrick/hd_env_UNI_196_PileBrick_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_196_PileBrick/hd_env_UNI_196_PileBrick_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_applyScreenSpaceMorphing
+						<Bool>false</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.009206 -0.005051 -0.003572</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.097287 -0.722280 -0.590814</min>
+		<max>1.113174 0.734523 0.575869</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>3092</geometrySize>
+</root>

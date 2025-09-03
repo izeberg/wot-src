@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S36_Strv_107_12/normal/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/sweden/S36_Strv_107_12/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.746035 0.004231 -2.409678</min>
+		<max>1.746673 1.100004 2.961313</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

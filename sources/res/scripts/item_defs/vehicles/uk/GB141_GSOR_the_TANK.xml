@@ -1812,7 +1812,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>9300</weight>
-			<maxLoad>47000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -3133,7 +3132,7 @@
 	<turrets0>
 		<Turret_1_GB141_GSOR_the_TANK>
 			<userString>#gb_vehicles:Turret_1_GB141_GSOR_the_TANK</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>59000</price>
 			<notInShop>true</notInShop>
@@ -3278,6 +3277,7 @@
 						<armor_7>
 							6
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_7>
 						<armor_8>0</armor_8>
 						<armor_9>

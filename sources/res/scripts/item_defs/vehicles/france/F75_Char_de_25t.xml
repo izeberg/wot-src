@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>9695</weight>
-		<maxHealth>1280</maxHealth>
+		<maxHealth>1360</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1752,8 +1752,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Char_de_25t>
-			<userString>#france_vehicles:Chassis_Char_de_25t</userString>
+		<Chassis_F75_Char_de_25t>
+			<userString>#france_vehicles:Chassis_F75_Char_de_25t</userString>
 			<tags/>
 			<level>8</level>
 			<price>30000</price>
@@ -1762,9 +1762,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5750</weight>
-			<maxLoad>28000</maxLoad>
 			<terrainResistance>
-				0.9 1.1 2
+				0.7 0.9 1.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
@@ -1792,7 +1791,7 @@
 			</repairCost>
 			<unlocks>
 				<chassis>
-					Chassis_Char_de_25t_2
+					Chassis_F75_Char_de_25t_2
 					<cost>24000</cost>
 				</chassis>
 			</unlocks>
@@ -3266,9 +3265,9 @@
 				4.57142878
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Char_de_25t>
-		<Chassis_Char_de_25t_2>
-			<userString>#france_vehicles:Chassis_Char_de_25t_2</userString>
+		</Chassis_F75_Char_de_25t>
+		<Chassis_F75_Char_de_25t_2>
+			<userString>#france_vehicles:Chassis_F75_Char_de_25t_2</userString>
 			<tags/>
 			<level>9</level>
 			<price>68000</price>
@@ -3277,7 +3276,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5750</weight>
-			<maxLoad>32000</maxLoad>
 			<terrainResistance>
 				0.7 0.9 1.8
 				<!--BW_String-->
@@ -4775,13 +4773,13 @@
 				4.57142878
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Char_de_25t_2>
+		</Chassis_F75_Char_de_25t_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Char_de_25t>
-			<userString>#france_vehicles:Turret_1_Char_de_25t</userString>
-			<shortUserString>#france_vehicles:Turret_1_Char_de_25t_short</shortUserString>
-			<tags/>
+		<Turret_1_F75_Char_de_25t>
+			<userString>#france_vehicles:Turret_1_F75_Char_de_25t</userString>
+			<shortUserString>#france_vehicles:Turret_1_F75_Char_de_25t_short</shortUserString>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>50000</price>
 			<notInShop>true</notInShop>
@@ -4795,7 +4793,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>320</maxHealth>
+			<maxHealth>340</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -4805,7 +4803,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -4820,7 +4818,7 @@
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<gun>
-							_100mm_SA_47
+							_100mm_SA47_BC
 							<cost>34500</cost>
 						</gun>
 					</unlocks>
@@ -4840,16 +4838,16 @@
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
 						<minPitch>
-							0 -13 0.355556 -13 0.372222 -8 0.627778 -8 0.644444 -13 1 -13
+							0.00000 -13.00 0.31944 -13.00 0.36111 -10.00 0.63889 -10.00 0.68056 -13.00 1.00000 -13.00
 							<!--BW_String-->
 						</minPitch>
 						<maxPitch>0 6 1 6</maxPitch>
 					</pitchLimits>
 					<clip>
-						<count>6</count>
+						<count>5</count>
 						<rate>22</rate>
 					</clip>
-					<reloadTime>31</reloadTime>
+					<reloadTime>30</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -4866,7 +4864,7 @@
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.36
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -5819,7 +5817,7 @@
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
 				</Canon_de_90mm_Vo_930_m_s>
-				<_100mm_SA_47>
+				<_100mm_SA47_BC>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
@@ -5844,20 +5842,20 @@
 					<turretYawLimits>-180 180</turretYawLimits>
 					<pitchLimits>
 						<minPitch>
-							0 -13 0.355556 -13 0.372222 -8 0.627778 -8 0.644444 -13 1 -13
+							0.00000 -13.00 0.31944 -13.00 0.36111 -10.00 0.63889 -10.00 0.68056 -13.00 1.00000 -13.00
 							<!--BW_String-->
 						</minPitch>
 						<maxPitch>0 6 1 6</maxPitch>
 					</pitchLimits>
 					<clip>
-						<count>6</count>
+						<count>5</count>
 						<rate>22</rate>
 					</clip>
 					<shotDispersionRadius>
-						0.36
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>45</reloadTime>
+					<reloadTime>40</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -6843,7 +6841,7 @@
 						</density>
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
-				</_100mm_SA_47>
+				</_100mm_SA47_BC>
 			</guns>
 			<models>
 				<undamaged>vehicles/french/F75_Char_de_25t/normal/lod0/Turret_01.model</undamaged>
@@ -7559,7 +7557,7 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_Char_de_25t>
+		</Turret_1_F75_Char_de_25t>
 	</turrets0>
 	<engines>
 		<Moteur_moderne_3M_27_1_01>
@@ -7592,29 +7590,7 @@
 				</Maybach_HL_230_F>
 			</engines>
 			<chassis>
-				<Chassis_Char_de_25t>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.161
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.07245
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Char_de_25t>
-				<Chassis_Char_de_25t_2>
+				<Chassis_F75_Char_de_25t>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7635,7 +7611,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Char_de_25t_2>
+				</Chassis_F75_Char_de_25t>
+				<Chassis_F75_Char_de_25t_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.1449
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.07245
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.05635
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_F75_Char_de_25t_2>
 			</chassis>
 		</detailed>
 	</physics>

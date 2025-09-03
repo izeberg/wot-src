@@ -22,7 +22,11 @@ package net.wg.gui.lobby.personalMissions.data
       
       public var tooltip:String = "";
       
+      public var btnID:int = 0;
+      
       public var isQuestInProgress:Boolean = false;
+      
+      public var tooltipOnStatus:Boolean = false;
       
       private var _sheetsBlockData:SheetsBlockVO = null;
       

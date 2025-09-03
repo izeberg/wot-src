@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>last_stand/vehicles/german/G54_E-50_LS_BOT/normal/lod2/Gun_09</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.388226 -0.500926 0.068318</min>
+		<max>0.388392 0.339023 10.472435</max>
+	</visibilityBox>
+	<nodefullVisual>last_stand/vehicles/german/G54_E-50_LS_BOT/normal/lod1/Gun_09</nodefullVisual>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/MilitaryEnvironment/hd_mle_UNI_824_BigGun/normal/lod2/hd_mle_UNI_824_BigGun_t_scenario</parent>
+	<extent>165.000000</extent>
+	<visibilityBox>
+		<min>-8.085281 1.496871 -8.255741</min>
+		<max>8.092789 8.835914 15.187441</max>
+	</visibilityBox>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_824_BigGun/normal/lod1/hd_mle_UNI_824_BigGun_t_scenario</nodefullVisual>
+</root>

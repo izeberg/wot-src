@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.hangar.hangar_cm_handlers import SimpleVehicleCMHandler, VEHICLE
 from gui.Scaleform.daapi.view.lobby.techtree.techtree_dp import g_techTreeDP

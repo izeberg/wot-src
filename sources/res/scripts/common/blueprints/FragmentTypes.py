@@ -3,7 +3,7 @@ from backports.functools_lru_cache import lru_cache
 from items import vehicles, ITEM_TYPES
 from random_utils import wchoices
 from debug_utils import LOG_DEBUG_DEV, LOG_ERROR
-from . import g_cache, BlueprintsException, getAllResearchedVehicles
+from . import g_cache, BlueprintsException, getAllResearchableVehicles
 from BlueprintTypes import BlueprintTypes
 
 class BlueprintFragment(object):
@@ -68,8 +68,8 @@ class VehicleBlueprintFragment(BlueprintFragment):
     @staticmethod
     def fromVehicleType(vehNameOrTypeDescr, enableException=True):
         vehTypeCD = vehicles.makeVehicleTypeCompDescrByName(vehNameOrTypeDescr) if type(vehNameOrTypeDescr) is str else vehNameOrTypeDescr
-        if enableException and vehTypeCD not in getAllResearchedVehicles():
-            raise BlueprintsException(('Cannot create blueprint for non-researched vehicle {}').format(vehTypeCD))
+        if enableException and vehTypeCD not in getAllResearchableVehicles():
+            raise BlueprintsException(('Cannot create blueprint for non-researchable vehicle {}').format(vehTypeCD))
         return VehicleBlueprintFragment(vehTypeCD, enableException)
 
     def __init__(self, vehTypeCD, enableException=True):
@@ -148,14 +148,23 @@ def toIntFragmentCD(fragment):
     return fragment.makeIntCompDescr(normalized=False)
 
 
-def isValidFragment(maybeFragment, defaultUnlocks=()):
+def isValidFragment(maybeFragment, defaultUnlocks):
+    if not isValidFragmentType(maybeFragment):
+        return False
+    if maybeFragment & 15 == BlueprintTypes.VEHICLE:
+        if maybeFragment in defaultUnlocks:
+            return False
+        vehType = vehicles.getVehicleType(maybeFragment)
+        if vehType.isCollectorVehicle:
+            return False
+        if vehType.level not in g_cache.levels:
+            return False
+    return True
+
+
+def isValidFragmentType(maybeFragment):
     if type(maybeFragment) in (int, long):
-        if maybeFragment & 15 == 1 and defaultUnlocks:
-            vehType = vehicles.getVehicleType(maybeFragment)
-            if not vehType.isCollectorVehicle:
-                return maybeFragment not in defaultUnlocks
-        else:
-            return maybeFragment & 15 in BlueprintTypes.ALL
+        return maybeFragment & 15 in BlueprintTypes.ALL
     return False
 
 

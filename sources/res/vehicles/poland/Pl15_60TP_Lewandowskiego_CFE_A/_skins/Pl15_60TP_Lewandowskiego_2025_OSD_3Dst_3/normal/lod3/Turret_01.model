@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_3/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_3/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.005731 -0.015603 -2.503589</min>
+		<max>1.857711 2.105167 2.148922</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

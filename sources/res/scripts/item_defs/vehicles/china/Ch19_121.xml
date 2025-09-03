@@ -1290,7 +1290,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7700</weight>
-			<maxLoad>42000</maxLoad>
 			<terrainResistance>
 				0.7 0.8 1.6
 				<!--BW_String-->
@@ -3100,7 +3099,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_122-mm_60-122TG>
+				<_122mm_60_122TG>
 					shared
 					<maxAmmo>40</maxAmmo>
 					<armor>
@@ -3127,7 +3126,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3142,7 +3141,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						9.6
+						9.4
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -3310,7 +3309,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_122-mm_60-122TG>
+				</_122mm_60_122TG>
 			</guns>
 			<models>
 				<undamaged>vehicles/chinese/Ch19_121/normal/lod0/Turret_01.model</undamaged>

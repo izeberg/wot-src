@@ -109,6 +109,9 @@ msgstr "Search by name"
 msgid "popover/label/specials"
 msgstr "Special"
 
+msgid "popover/label/vehicleRole"
+msgstr "Role"
+
 msgid "popover/label/vehicleTypes"
 msgstr "Type"
 
@@ -122,8 +125,7 @@ msgid "tooltip/battleRoyale/header"
 msgstr "Hide incompatible vehicles"
 
 msgid "tooltip/bonus/body"
-msgstr ""
-"Show/hide vehicles with the active x%(multiplier)s experience multiplier."
+msgstr "Show/hide vehicles with an active experience multiplier."
 
 msgid "tooltip/bonus/header"
 msgstr "Bonus Experience"
@@ -133,12 +135,6 @@ msgstr "Show/hide rental vehicles for Global Map and Stronghold battles."
 
 msgid "tooltip/clanRented/header"
 msgstr "Rental Vehicles for Clan Battles"
-
-msgid "tooltip/comp7/body"
-msgstr "Show/hide vehicles suitable for Onslaught."
-
-msgid "tooltip/comp7/header"
-msgstr "Vehicles for Onslaught mode"
 
 msgid "tooltip/crystals/body"
 msgstr "Show/hide vehicles available for earning bonds."
@@ -154,8 +150,8 @@ msgstr "Show/hide vehicles for which you have 3D styles."
 
 msgid "tooltip/elite/body"
 msgstr ""
-"Show/hide vehicles with all available modules and technical branches "
-"researched."
+"Show/hide vehicles with all available modules, Upgrades, and technical "
+"branches researched, including the vehicle(s) from the subsequent tier."
 
 msgid "tooltip/elite/header"
 msgstr "Elite Vehicles"

@@ -106,7 +106,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>8000</weight>
-		<maxHealth>432</maxHealth>
+		<maxHealth>456</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>125</maxHealth>
 			<maxRegenHealth>85</maxRegenHealth>
@@ -1562,14 +1562,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>19850</maxLoad>
 			<terrainResistance>
-				1.1 1.5 2.6
+				1 1.1 1.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>33000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>57</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -3673,14 +3672,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>22650</maxLoad>
 			<terrainResistance>
 				1 1.1 1.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>33000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>45</rotationSpeed>
+			<rotationSpeed>64</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -5796,7 +5794,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2200</weight>
-			<maxHealth>78</maxHealth>
+			<maxHealth>84</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -5845,7 +5843,7 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -5858,7 +5856,7 @@
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionRadius>
-						0.42
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -5871,7 +5869,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 						<turretRotation>
-							0.16
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 					</shotDispersionFactors>
@@ -5982,16 +5980,16 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionRadius>
-						0.4
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -6004,7 +6002,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 					</shotDispersionFactors>
@@ -6919,7 +6917,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 			<weight>3200</weight>
-			<maxHealth>108</maxHealth>
+			<maxHealth>114</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>80</maxHealth>
@@ -6929,7 +6927,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>340</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>60</maxHealth>
 				<maxRegenHealth>30</maxRegenHealth>
@@ -6974,7 +6972,7 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -6987,7 +6985,7 @@
 					</invisibilityFactorAtShot>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionRadius>
-						0.4
+						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -7000,7 +6998,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 					</shotDispersionFactors>
@@ -7107,7 +7105,7 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.4
+						2.2
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -7116,7 +7114,7 @@
 					</aimingTime>
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -8111,26 +8109,17 @@
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
 				<Maybach_HL_120_TRM_J>
-					<smplEnginePower>420</smplEnginePower>
+					<smplEnginePower>470</smplEnginePower>
 					<smplFwMaxSpeed>64</smplFwMaxSpeed>
 				</Maybach_HL_120_TRM_J>
 				<Maybach_HL_120_TRM_M>
-					<smplEnginePower>480</smplEnginePower>
+					<smplEnginePower>510</smplEnginePower>
 					<smplFwMaxSpeed>64</smplFwMaxSpeed>
 				</Maybach_HL_120_TRM_M>
 			</engines>
@@ -8139,19 +8128,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.2093
+								0.13685
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

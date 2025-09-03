@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_055_Loader/normal/lod3/hv4_055_Loader_01</parent>
+	<extent>100.000000</extent>
+	<visibilityBox>
+		<min>-0.564509 -0.004315 -1.357309</min>
+		<max>0.564507 1.922005 1.179797</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_055_Loader/normal/lod2/hv4_055_Loader_01</nodefullVisual>
+</root>

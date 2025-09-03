@@ -18,7 +18,6 @@ package net.wg.gui.lobby.hangar
    import net.wg.data.constants.generated.BATTLEROYALE_ALIASES;
    import net.wg.data.constants.generated.DAILY_QUESTS_WIDGET_CONSTANTS;
    import net.wg.data.constants.generated.HANGAR_ALIASES;
-   import net.wg.gui.components.containers.inject.GFInjectComponent;
    import net.wg.gui.components.miniclient.HangarMiniClientComponent;
    import net.wg.gui.events.LobbyEvent;
    import net.wg.gui.lobby.battleRoyale.HangarComponentsContainer;
@@ -53,15 +52,11 @@ package net.wg.gui.lobby.hangar
    public class Hangar extends HangarMeta implements IHangar, ITutorialCustomComponent
    {
       
-      private static const INVALIDATE_EVENT_ENTRANCE_POINT_VISIBLE:String = "invalidateEventEntrancePointVisible";
-      
       private static const INVALIDATE_CAROUSEL_SIZE:String = "InvalidateCarouselSize";
       
       private static const INVALIDATE_AMMUNITION_PANEL_SIZE:String = "InvalidateAmmunitionPanelSize";
       
       private static const INVALIDATE_EVENT_LOOT_BOXES_VISIBLE:String = "invalidateEventLootBoxesVisible";
-      
-      private static const INVALIDATE_COMP7_MODIFIERS_VISIBILITY:String = "invalidComp7Modifiers";
       
       private static const INVALIDATE_EVENT_TOURNAMENT_BANNER_VISIBILITY:String = "invalidEventTournamentBanner";
       
@@ -137,14 +132,6 @@ package net.wg.gui.lobby.hangar
       
       private static const DQ_WIDGET_HORIZONTAL_MARGIN:int = 0;
       
-      private static const COMP7_MODIFIERS_PANEL_INJECT_WIDTH:int = 354;
-      
-      private static const COMP7_MODIFIERS_PANEL_INJECT_HEIGHT:int = 58;
-      
-      private static const COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y:int = 2;
-      
-      private static const COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X:int = 1;
-      
       private static const EVENT_TOURNAMENT_BANNER_OFFSET_X:int = -15;
       
       private static const EVENT_TOURNAMENT_BANNER_OFFSET_Y:int = -12;
@@ -194,8 +181,6 @@ package net.wg.gui.lobby.hangar
       
       public var carouselEventEntry:CarouselEventEntry = null;
       
-      public var eventEntrancePoint:EventEntrancePointWidget;
-      
       public var crewPanelInject:CrewPanelInject;
       
       public var prestigeProgressInject:PrestigeProgressInject = null;
@@ -236,11 +221,7 @@ package net.wg.gui.lobby.hangar
       
       private var _isVisible:Boolean = true;
       
-      private var _comp7ModifiersPanelInject:GFInjectComponent = null;
-      
       private var _eventTournamentBanner:EventTournamentBannerInject = null;
-      
-      private var _strengthsWeaknessesPanelInject:StrengthsWeaknessesPanelInject;
       
       private var _appStage:Stage;
       
@@ -269,8 +250,6 @@ package net.wg.gui.lobby.hangar
       private var _isBRSpaceLoaded:Boolean = false;
       
       private var _isComp7SpaceLoaded:Boolean = false;
-      
-      private var _eventEntrancePointVisible:Boolean = true;
       
       public function Hangar()
       {
@@ -340,10 +319,6 @@ package net.wg.gui.lobby.hangar
             _loc3_ = this.vehResearchBG.getBounds(this.vehResearchBG);
             this.vehResearchBG.x = param1 - _loc3_.x - _loc3_.width - RIGHT_MARGIN >> 0;
          }
-         if(this._strengthsWeaknessesPanelInject != null)
-         {
-            this._strengthsWeaknessesPanelInject.x = param1 - this._strengthsWeaknessesPanelInject.width >> 0;
-         }
          this._helpLayout.hide();
          invalidate(ENTRY_POINT_POSITION_INVALID);
       }
@@ -359,7 +334,6 @@ package net.wg.gui.lobby.hangar
          registerFlashComponentS(this.dqWidget,Aliases.DAILY_QUEST_WIDGET);
          registerFlashComponentS(this._eventsEntryContainer,HANGAR_ALIASES.ENTRIES_CONTAINER);
          registerFlashComponentS(this._header,HANGAR_ALIASES.HEADER);
-         registerFlashComponentS(this.eventEntrancePoint,HANGAR_ALIASES.EVENT_ENTRANCE_POINT);
          this._appStage.addEventListener(HangarAmunitionSwitchAnimator.AMMUNITION_VIEW_HIDE_ANIM_COMPLETE,this.onAmmunitionViewHideAnimCompleteHandler);
          this.ammunitionPanelInject.addEventListener(Event.RESIZE,this.onAmmunitionPanelInjectResizeHandler);
          this.ammunitionPanelInject.addEventListener(AmmunitionPanelInjectEvents.HELP_LAYOUT_CHANGED,this.onAmmunitionPanelInjectHelpLayoutChangedHandler);
@@ -387,7 +361,6 @@ package net.wg.gui.lobby.hangar
          this.ammunitionPanel.removeEventListener(Event.RESIZE,this.onAmmunitionPanelResizeHandler);
          this.ammunitionPanel.removeEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onAmmunitionPanelRequestFocusHandler);
          this.vehResearchPanel.removeEventListener(Event.RESIZE,this.onVehResearchPanelResizeHandler);
-         this.params.removeEventListener(Event.RESIZE,this.onParamsResizeHandler);
          this.teaser.removeEventListener(TeaserEvent.TEASER_CLICK,this.onTeaserTeaserClickHandler);
          this.teaser.removeEventListener(TeaserEvent.HIDE,this.onTeaserHideHandler);
          this.switchModePanel.removeEventListener(ComponentEvent.SHOW,this.onSwitchModePanelShowHandler);
@@ -404,9 +377,7 @@ package net.wg.gui.lobby.hangar
       override protected function onDispose() : void
       {
          this.tryRemoveBattleRoyaleContainer();
-         this.removeComp7ModifiersPanel();
          this.removePrestigeWidgetPanel();
-         this.removeStrengthsWeaknessesPanel();
          this.bottomBg.dispose();
          this.bottomBg = null;
          this.teaser.dispose();
@@ -421,7 +392,6 @@ package net.wg.gui.lobby.hangar
          this.vehResearchPanel = null;
          this.vehResearchBG.dispose();
          this.vehResearchBG = null;
-         this.eventEntrancePoint = null;
          this.crewPanelInject = null;
          this.params = null;
          this.ammunitionPanel = null;
@@ -471,7 +441,6 @@ package net.wg.gui.lobby.hangar
          this.switchModePanel.addEventListener(ComponentEvent.SHOW,this.onSwitchModePanelShowHandler);
          this.switchModePanel.addEventListener(ComponentEvent.HIDE,this.onSwitchModePanelHideHandler);
          this.vehResearchPanel.addEventListener(Event.RESIZE,this.onVehResearchPanelResizeHandler);
-         this.params.addEventListener(Event.RESIZE,this.onParamsResizeHandler);
          this.teaser.addEventListener(TeaserEvent.TEASER_CLICK,this.onTeaserTeaserClickHandler);
          this.teaser.addEventListener(TeaserEvent.HIDE,this.onTeaserHideHandler);
          this.carouselContainer.mouseEnabled = false;
@@ -494,17 +463,9 @@ package net.wg.gui.lobby.hangar
          var _loc3_:Boolean = isInvalid(PARAMS_POSITION_INVALID);
          var _loc4_:Boolean = false;
          var _loc5_:Boolean = isInvalid(INVALIDATE_PRESTIGE_WIDGET_VISIBILITY);
-         if(isInvalid(INVALIDATE_EVENT_ENTRANCE_POINT_VISIBLE))
-         {
-            this.eventEntrancePoint.visible = this._eventEntrancePointVisible;
-            this.updateCarouselMargin();
-            this.updateCarouselPosition();
-         }
          if(isInvalid(INVALIDATE_CAROUSEL_SIZE))
          {
             this.carousel.visible = this._carouselVisible;
-            this.eventEntrancePoint.isCompact = this._carousel.isCompact;
-            this.updateCarouselMargin();
             this.updateCarouselPosition();
             if(hasEventListener(Event.RESIZE))
             {
@@ -528,9 +489,6 @@ package net.wg.gui.lobby.hangar
          if(_loc5_)
          {
             this.prestigeBg.visible = this.prestigeProgressInject != null;
-         }
-         if(_loc5_ || isInvalid(INVALIDATE_COMP7_MODIFIERS_VISIBILITY))
-         {
             _loc3_ = true;
          }
          if(isInvalid(INVALIDATE_EVENT_LOOT_BOXES_VISIBLE))
@@ -559,7 +517,7 @@ package net.wg.gui.lobby.hangar
                this._carouselEventEntryContainer.removeChild(this.carouselEventEntry);
                this.carouselEventEntry = null;
             }
-            if(this.carousel && !this._eventEntrancePointVisible)
+            if(this.carousel)
             {
                this.carousel.setRightMargin(!!this._carouselEventEntryVisible ? int(CarouselEventEntry.WIDTH + CAROUSEL_EVENT_ENTRY_X_OFFSET) : int(0));
             }
@@ -664,20 +622,6 @@ package net.wg.gui.lobby.hangar
          this.updateElementsPosition();
       }
       
-      public function addComp7Modifiers() : void
-      {
-         if(!this._comp7ModifiersPanelInject)
-         {
-            this._comp7ModifiersPanelInject = new GFInjectComponent();
-            this._comp7ModifiersPanelInject.setManageSize(true);
-            this._comp7ModifiersPanelInject.width = COMP7_MODIFIERS_PANEL_INJECT_WIDTH;
-            this._comp7ModifiersPanelInject.height = COMP7_MODIFIERS_PANEL_INJECT_HEIGHT;
-            addChild(this._comp7ModifiersPanelInject);
-            registerFlashComponentS(this._comp7ModifiersPanelInject,HANGAR_ALIASES.COMP7_MODIFIERS_PANEL);
-            invalidate(INVALIDATE_COMP7_MODIFIERS_VISIBILITY);
-         }
-      }
-      
       public function addEventTournamentBanner(param1:String) : void
       {
          if(this._eventTournamentBanner && this._eventTournamentBanner.alias != param1)
@@ -722,19 +666,6 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      public function addStrengthsWeaknessesPanel() : void
-      {
-         if(!this._strengthsWeaknessesPanelInject)
-         {
-            this._strengthsWeaknessesPanelInject = new StrengthsWeaknessesPanelInject();
-            this._strengthsWeaknessesPanelInject.setManageSize(true);
-            this._strengthsWeaknessesPanelInject.x = _originalWidth - this._strengthsWeaknessesPanelInject.width >> 0;
-            this._strengthsWeaknessesPanelInject.y = StrengthsWeaknessesPanelInject.STRENGTHS_WEAKNESSES_PANEL_INJECT_OFFSET_Y;
-            addChild(this._strengthsWeaknessesPanelInject);
-            registerFlashComponentS(this._strengthsWeaknessesPanelInject,HANGAR_ALIASES.STRENGTHS_WEAKNESSES_PANEL);
-         }
-      }
-      
       public function as_closeHelpLayout() : void
       {
          this._helpLayout.hide();
@@ -770,17 +701,13 @@ package net.wg.gui.lobby.hangar
          this._carouselAlias = param2;
          this._carousel = this._utils.classFactory.getComponent(param1,TankCarousel);
          this.carousel.visible = false;
-         if(this._carouselEventEntryVisible && !this._eventEntrancePointVisible)
+         if(this._carouselEventEntryVisible)
          {
             this.carousel.setRightMargin(CarouselEventEntry.WIDTH + CAROUSEL_EVENT_ENTRY_X_OFFSET);
          }
          else if(this._eventTournamentBanner)
          {
             this.carousel.setRightMargin(this._eventTournamentBanner.width);
-         }
-         if(this._eventEntrancePointVisible)
-         {
-            this.updateCarouselMargin();
          }
          this.carousel.addEventListener(Event.RESIZE,this.onCarouselResizeHandler);
          this.carousel.updateStage(_originalWidth,_originalHeight);
@@ -794,18 +721,6 @@ package net.wg.gui.lobby.hangar
       public function as_setCarouselEnabled(param1:Boolean) : void
       {
          this.carousel.enabled = param1;
-      }
-      
-      public function as_setComp7ModifiersVisible(param1:Boolean) : void
-      {
-         if(param1 && !this._comp7ModifiersPanelInject)
-         {
-            this.addComp7Modifiers();
-         }
-         if(!param1 && this._comp7ModifiersPanelInject)
-         {
-            this.removeComp7Modifiers();
-         }
       }
       
       public function as_setComp7SpaceLoaded(param1:Boolean) : void
@@ -847,15 +762,6 @@ package net.wg.gui.lobby.hangar
          if(!param1 && this.prestigeProgressInject != null)
          {
             this.removePrestigeWidget();
-         }
-      }
-      
-      public function as_setEventEntryPointVisible(param1:Boolean) : void
-      {
-         if(param1 != this._eventEntrancePointVisible)
-         {
-            this._eventEntrancePointVisible = param1;
-            invalidate(INVALIDATE_EVENT_ENTRANCE_POINT_VISIBLE);
          }
       }
       
@@ -974,12 +880,6 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      public function removeComp7Modifiers() : void
-      {
-         this.removeComp7ModifiersPanel();
-         invalidate(INVALIDATE_COMP7_MODIFIERS_VISIBILITY);
-      }
-      
       public function removeEventTournamentBanner(param1:String) : void
       {
          if(this._eventTournamentBanner != null && this._eventTournamentBanner.alias == param1)
@@ -998,19 +898,6 @@ package net.wg.gui.lobby.hangar
       {
          this.removePrestigeWidgetPanel();
          invalidate(INVALIDATE_PRESTIGE_WIDGET_VISIBILITY);
-      }
-      
-      public function removeStrengthsWeaknessesPanel() : void
-      {
-         if(this._strengthsWeaknessesPanelInject != null)
-         {
-            removeChild(this._strengthsWeaknessesPanelInject);
-            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.STRENGTHS_WEAKNESSES_PANEL))
-            {
-               unregisterFlashComponentS(HANGAR_ALIASES.STRENGTHS_WEAKNESSES_PANEL);
-            }
-            this._strengthsWeaknessesPanelInject = null;
-         }
       }
       
       public function setAnimatorVisibility(param1:Boolean) : void
@@ -1054,19 +941,6 @@ package net.wg.gui.lobby.hangar
          }
       }
       
-      private function removeComp7ModifiersPanel() : void
-      {
-         if(this._comp7ModifiersPanelInject != null)
-         {
-            removeChild(this._comp7ModifiersPanelInject);
-            if(!_baseDisposed && isFlashComponentRegisteredS(HANGAR_ALIASES.COMP7_MODIFIERS_PANEL))
-            {
-               unregisterFlashComponentS(HANGAR_ALIASES.COMP7_MODIFIERS_PANEL);
-            }
-            this._comp7ModifiersPanelInject = null;
-         }
-      }
-      
       private function removePrestigeWidgetPanel() : void
       {
          if(this.prestigeProgressInject != null)
@@ -1089,19 +963,11 @@ package net.wg.gui.lobby.hangar
          super.visible = this._isVisibleByAnimator && this._isVisible;
       }
       
-      private function updateCarouselMargin() : void
-      {
-         if(this.carousel)
-         {
-            this.carousel.setRightMargin(!!this._eventEntrancePointVisible ? int(this.eventEntrancePoint.width - this.eventEntrancePoint.paddingX) : int(0));
-         }
-      }
-      
       private function initHangarSwitchAnimator() : void
       {
          if(!this._hangarViewSwitchAnimator)
          {
-            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.params,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this._comp7ModifiersPanelInject,this.prestigeBg,this.prestigeProgressInject,this._eventsEntryContainer,this.ammunitionPanelInject]).concat(this.getHints()),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
+            this._hangarViewSwitchAnimator = new HangarAmunitionSwitchAnimator(this,Vector.<DisplayObject>([this.params,this.crewPanelInject,this.dqWidget,this.teaser,this._alertMessageBlock,this.vehResearchPanel,this.vehResearchBG,this.header,this.ammunitionPanel,this.bottomBg,this.prestigeBg,this.prestigeProgressInject,this._eventsEntryContainer,this.ammunitionPanelInject]).concat(this.getHints()),Vector.<DisplayObject>([this.carouselContainer,this._carouselEventEntryContainer]),this.ammunitionPanelInject,height);
          }
       }
       
@@ -1321,15 +1187,10 @@ package net.wg.gui.lobby.hangar
          {
             _loc3_ = this._eventsEntryContainer.y - this.params.y - this._eventsEntryContainer.margin.top;
          }
-         if(this._comp7ModifiersPanelInject)
-         {
-            _loc3_ -= this._comp7ModifiersPanelInject.height + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y * 2;
-         }
          if(_loc3_ > 0)
          {
             this.params.height = _loc3_;
          }
-         this.updateComp7ModifiersPosition();
       }
       
       private function hideTooltip() : void
@@ -1342,21 +1203,10 @@ package net.wg.gui.lobby.hangar
          this._carousel.updateCarouselPosition(_height - this._carousel.getBottom() ^ 0);
          this.updateEventTournamentBannerSizeAndPosition();
          this.updateCarouselEventEntryWidgetPosition();
-         this.eventEntrancePoint.x = this._carousel.x + this._carousel.rightArrow.x + this._carousel.rightArrow.width - this.eventEntrancePoint.paddingX - this.eventEntrancePoint.marginX | 0;
-         this.eventEntrancePoint.y = this._carousel.y - this.eventEntrancePoint.paddingY + this.eventEntrancePoint.marginY | 0;
          this.updateAmmunitionPanelPosition();
          if(this._hangarViewSwitchAnimator)
          {
             this._hangarViewSwitchAnimator.updateStage(width,height);
-         }
-      }
-      
-      private function updateComp7ModifiersPosition() : void
-      {
-         if(this._comp7ModifiersPanelInject)
-         {
-            this._comp7ModifiersPanelInject.y = this.params.y + (this.params.visible && this.params.actualHeight + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_Y) ^ 0;
-            this._comp7ModifiersPanelInject.x = this.params.x + this.params.width - this._comp7ModifiersPanelInject.width + COMP7_MODIFIERS_PANEL_INJECT_OFFSET_X ^ 0;
          }
       }
       
@@ -1388,7 +1238,7 @@ package net.wg.gui.lobby.hangar
             this._eventTournamentBanner.x = this._carousel.x + this._carousel.rightArrow.x + this._carousel.rightArrow.width + EVENT_TOURNAMENT_BANNER_OFFSET_X | 0;
             this._eventTournamentBanner.y = this._carousel.y + this._carousel.getBottom() - this._eventTournamentBanner.height + EVENT_TOURNAMENT_BANNER_OFFSET_Y | 0;
          }
-         else if(!this._carouselEventEntryVisible && !this._eventEntrancePointVisible)
+         else if(!this._carouselEventEntryVisible)
          {
             this._carousel.setRightMargin(0);
          }
@@ -1562,11 +1412,6 @@ package net.wg.gui.lobby.hangar
       private function onVehResearchPanelResizeHandler(param1:Event) : void
       {
          this.updateParamsPosition();
-      }
-      
-      private function onParamsResizeHandler(param1:Event) : void
-      {
-         this.updateComp7ModifiersPosition();
       }
       
       private function onEventsEntryContainerResizeHandler(param1:Event) : void

@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.vehicle_compare.skill_select_item_model import SkillSelectItemModel
 
 class SkillSelectRowModel(ViewModel):

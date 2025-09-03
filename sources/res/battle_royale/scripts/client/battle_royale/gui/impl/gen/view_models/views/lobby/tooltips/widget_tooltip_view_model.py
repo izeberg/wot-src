@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.leaderboard_reward_tooltip_model import LeaderboardRewardTooltipModel
 
 class PerformanceRisk(Enum):
@@ -55,7 +54,7 @@ class WidgetTooltipViewModel(ViewModel):
 
     @staticmethod
     def getBattleScheduleType():
-        return int
+        return Array[Array[int]]
 
     def _initialize(self):
         super(WidgetTooltipViewModel, self)._initialize()

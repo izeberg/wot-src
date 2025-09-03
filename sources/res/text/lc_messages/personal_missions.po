@@ -426,6 +426,9 @@ msgstr "Complete the primary condition over any number of battles"
 msgid "detailedView/completeBtnLabel"
 msgstr "Complete for %(count)d %(icon)s"
 
+msgid "detailedView/conditionLabel"
+msgstr "Condition"
+
 msgid "detailedView/conditionsFullylabel"
 msgstr "For completion with honors"
 
@@ -635,6 +638,18 @@ msgstr "TO OPERATION"
 msgid "header/backBtn/label"
 msgstr "BACK"
 
+msgid "navigation/backButton/assembling"
+msgstr "TO ASSEMBLY"
+
+msgid "navigation/backButton/campaignSelector"
+msgstr "TO OPERATIONS MAP"
+
+msgid "navigation/backButton/dashboard"
+msgstr "TO OPERATION"
+
+msgid "navigation/backButton/missions"
+msgstr "TO MISSIONS"
+
 msgid "operationInfo/awardsButton/label"
 msgstr "Operation Rewards"
 
@@ -673,6 +688,14 @@ msgstr "Unavailable: no suitable %(vehData)s vehicles"
 
 msgid "operationTitle/label/noVehicle/regular"
 msgstr "Unavailable: no suitable vehicles of the %(vehData)s set"
+
+msgid "operationTitle/label/notStarted"
+msgstr "The %(currentOperation)s operation is available! %(infoIcon)s"
+
+msgid "operationTitle/label/notStartedNoVehicle"
+msgstr ""
+"Unavailable: Personal Missions can only be completed in vehicles of Tier "
+"%(minLevel)s or higher"
 
 msgid "operationTitle/label/toMaster"
 msgstr "Missions, completed with honors: %(count)s/%(total)s  %(infoIcon)s"
@@ -719,6 +742,9 @@ msgstr "Unavailable"
 msgid "operations/title1"
 msgstr "StuG IV"
 
+msgid "operations/title10"
+msgstr "Black Rock"
+
 msgid "operations/title2"
 msgstr "T28 HTC"
 
@@ -737,8 +763,20 @@ msgstr "Chimera"
 msgid "operations/title7"
 msgstr "Object 279 (e)"
 
+msgid "operations/title8"
+msgstr "Windhund"
+
+msgid "operations/title9"
+msgstr "Dravec"
+
 msgid "operations/unlocked/desc"
 msgstr "Available"
+
+msgid "pages/button/infopage/description"
+msgstr "About Personal Missions"
+
+msgid "pages/button/video/description"
+msgstr "Watch a video introduction to Personal Missions"
 
 msgid "personalMissions/tankgirlsPopover/recruitBtn"
 msgstr "Recruit"
@@ -781,6 +819,9 @@ msgstr "Paused"
 msgid "questProgressTracking/trackingStatus"
 msgstr "Both missions are being completed at the moment"
 
+msgid "questStatus/tankCondition"
+msgstr "Not available for the selected vehicle"
+
 msgid "sidebar/completed"
 msgstr "Completed"
 
@@ -814,6 +855,12 @@ msgstr "Available: %(count)s"
 msgid "statusPanel/pawnedSheets"
 msgstr "Committed to missions: %(count)s"
 
+msgid "statusPanel/proceedExecution/label"
+msgstr "Activate"
+
+msgid "statusPanel/resumeCompaing/label"
+msgstr "Resume Campaign"
+
 msgid "statusPanel/status/allDone"
 msgstr "All missions for %(vehicleClass)s have been completed"
 
@@ -834,6 +881,9 @@ msgstr "(Retrieving %(count)d %(icon)s)"
 
 msgid "statusPanel/status/selectTask"
 msgstr "Select a mission to complete"
+
+msgid "statusPanel/status/suspended"
+msgstr "The %(campaignName)s campaign is paused. %(infoIcon)s"
 
 msgid "tankmoduleTooltipData/alliance/help/body"
 msgstr ""

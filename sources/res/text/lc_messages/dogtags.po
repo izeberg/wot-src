@@ -808,6 +808,76 @@ msgstr "?empty?"
 msgid "component/background/base/66/title"
 msgstr "Starter"
 
+msgid "component/background/base/661/description"
+msgstr ""
+"Awarded for achieving the Iron rank in Season of the Azure Dragon in "
+"Onslaught mode"
+
+msgid "component/background/base/661/description_locked"
+msgstr "Achieve the Iron rank in Season of the Azure Dragon in Onslaught mode"
+
+msgid "component/background/base/661/title"
+msgstr "Iron (Year of the Dragon, Season I)"
+
+msgid "component/background/base/662/description"
+msgstr ""
+"Awarded for achieving the Bronze rank in Season of the Azure Dragon in "
+"Onslaught mode"
+
+msgid "component/background/base/662/description_locked"
+msgstr ""
+"Achieve the Bronze rank in Season of the Azure Dragon in Onslaught mode"
+
+msgid "component/background/base/662/title"
+msgstr "Bronze (Year of the Dragon, Season I)"
+
+msgid "component/background/base/663/description"
+msgstr ""
+"Awarded for achieving the Silver rank in Season of the Azure Dragon in "
+"Onslaught mode"
+
+msgid "component/background/base/663/description_locked"
+msgstr ""
+"Achieve the Silver rank in Season of the Azure Dragon in Onslaught mode"
+
+msgid "component/background/base/663/title"
+msgstr "Silver (Year of the Dragon, Season I)"
+
+msgid "component/background/base/664/description"
+msgstr ""
+"Awarded for achieving the Gold rank in Season of the Azure Dragon in "
+"Onslaught mode"
+
+msgid "component/background/base/664/description_locked"
+msgstr "Achieve the Gold rank in Season of the Azure Dragon in Onslaught mode"
+
+msgid "component/background/base/664/title"
+msgstr "Gold (Year of the Dragon, Season I)"
+
+msgid "component/background/base/665/description"
+msgstr ""
+"Awarded for achieving the Champion rank in Season of the Azure Dragon in "
+"Onslaught mode"
+
+msgid "component/background/base/665/description_locked"
+msgstr ""
+"Achieve the Champion rank in Season of the Azure Dragon in Onslaught mode"
+
+msgid "component/background/base/665/title"
+msgstr "Champion (Year of the Dragon, Season I)"
+
+msgid "component/background/base/666/description"
+msgstr ""
+"Awarded for achieving the Legend rank in Season of the Azure Dragon in "
+"Onslaught mode"
+
+msgid "component/background/base/666/description_locked"
+msgstr ""
+"Achieve the Legend rank in Season of the Azure Dragon in Onslaught mode"
+
+msgid "component/background/base/666/title"
+msgstr "Legend (Year of the Dragon, Season I)"
+
 msgid "component/background/base/67/description"
 msgstr " "
 
@@ -1174,8 +1244,8 @@ msgstr "Total number of Prestige Points earned in Onslaught mode"
 
 msgid "component/engraving/dedication/600/description_locked"
 msgstr ""
-"Achieve the Iron rank in any Season of the Year of the Manticore in "
-"Onslaught mode"
+"Achieve the Iron rank in any Season of the Year of the Dragon in Onslaught "
+"mode"
 
 msgid "component/engraving/dedication/600/title"
 msgstr "Prestige Points"
@@ -1221,6 +1291,17 @@ msgstr ""
 
 msgid "component/engraving/dedication/641/title"
 msgstr "Manticore Year Victories"
+
+msgid "component/engraving/dedication/660/description"
+msgstr "Number of victories in the Year of the Dragon in Onslaught mode"
+
+msgid "component/engraving/dedication/660/description_locked"
+msgstr ""
+"Achieve the Silver rank in any Season of the Year of the Dragon in Onslaught"
+" mode"
+
+msgid "component/engraving/dedication/660/title"
+msgstr "Dragon Year Victories"
 
 msgid "component/engraving/ranked_skill/408/description"
 msgstr ""
@@ -1478,12 +1559,6 @@ msgstr ""
 "Achieve an outstanding score during a battle to unlock Triumph components. "
 "Show off by upgrading them to Level IV. Components can be obtained and "
 "upgraded only in Random Battles with vehicles Tier VIII or higher."
-
-msgid "customization/button/backDashboard_glow"
-msgstr "BACK"
-
-msgid "customization/button/backDashboard_gray"
-msgstr "TO ACCOUNT STATUS"
 
 msgid "customization/button/discard"
 msgstr "Discard Changes"

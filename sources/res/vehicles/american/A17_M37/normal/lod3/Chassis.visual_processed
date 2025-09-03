@@ -82,7 +82,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 0.000000 1.000000</row2>
+							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
 						</transform>
 						<node>
@@ -188,7 +188,7 @@
 					<node>
 						<identifier>W_L3</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
@@ -226,7 +226,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
+							<row2>-0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
 						</transform>
 						<node>
@@ -263,7 +263,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>-0.000000 -0.000000 1.000000</row2>
-							<row3>-0.000000 0.408356 0.000000</row3>
+							<row3>0.000000 0.408356 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R0_BlendBone</identifier>
@@ -296,7 +296,7 @@
 					<node>
 						<identifier>W_R1</identifier>
 						<transform>
-							<row0>1.000000 0.000000 -0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
@@ -862,7 +862,7 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.219107 0.604138 -0.027457</groupOrigin>
+				<groupOrigin>-1.219107 0.604138 -0.024768</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -918,7 +918,7 @@
 						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.219107 0.604138 -0.020507</groupOrigin>
+				<groupOrigin>1.219107 0.604138 -0.018154</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -930,20 +930,20 @@
 		<node>Track_L2_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
+		<node>W_L0_BlendBone</node>
+		<node>W_L1_BlendBone</node>
+		<node>W_L2_BlendBone</node>
+		<node>W_L3_BlendBone</node>
+		<node>W_L4_BlendBone</node>
+		<node>WD_L0_BlendBone</node>
 		<node>WD_L1_BlendBone</node>
 		<node>WD_L2_BlendBone</node>
 		<node>WD_L3_BlendBone</node>
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
-		<node>W_L4_BlendBone</node>
-		<node>W_L3_BlendBone</node>
-		<node>W_L2_BlendBone</node>
-		<node>W_L1_BlendBone</node>
-		<node>W_L0_BlendBone</node>
-		<node>WD_L0_BlendBone</node>
 		<geometry>
-			<vertices>exportChassL1Shape.vertices</vertices>
-			<primitive>exportChassL1Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -996,20 +996,20 @@
 		<node>Track_R2_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
+		<node>W_R0_BlendBone</node>
+		<node>W_R1_BlendBone</node>
+		<node>W_R2_BlendBone</node>
+		<node>W_R3_BlendBone</node>
+		<node>W_R4_BlendBone</node>
+		<node>WD_R0_BlendBone</node>
 		<node>WD_R1_BlendBone</node>
 		<node>WD_R2_BlendBone</node>
 		<node>WD_R3_BlendBone</node>
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
-		<node>W_R4_BlendBone</node>
-		<node>W_R3_BlendBone</node>
-		<node>W_R1_BlendBone</node>
-		<node>W_R0_BlendBone</node>
-		<node>WD_R0_BlendBone</node>
-		<node>W_R2_BlendBone</node>
 		<geometry>
-			<vertices>exportChassR1Shape.vertices</vertices>
-			<primitive>exportChassR1Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1056,7 +1056,7 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.397112 0.008520 -2.595067</min>
+		<min>-1.397112 0.008520 -2.600445</min>
 		<max>1.397112 1.199756 2.666246</max>
 	</boundingBox>
 	<geometrySize>106728</geometrySize>

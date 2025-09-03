@@ -1,4 +1,4 @@
-
+from __future__ import absolute_import
 
 class _CompareConfiguratorVehicle(object):
     __slots__ = ('__vehicle', )

@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>11105</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1280</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1898,6 +1898,7 @@
 	<chassis>
 		<Chassis_G103_RU_251>
 			<userString>#germany_vehicles:Chassis_G103_RU_251</userString>
+			<shortUserString>#germany_vehicles:Chassis_G103_RU_251_short</shortUserString>
 			<tags/>
 			<level>8</level>
 			<price>33000</price>
@@ -1912,14 +1913,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6500</weight>
-			<maxLoad>25700</maxLoad>
 			<terrainResistance>
-				0.9 1.1 1.8
+				0.8 0.9 1.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>25000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>53</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -4681,6 +4681,7 @@
 		</Chassis_G103_RU_251>
 		<Chassis_G103_RU_251_2>
 			<userString>#germany_vehicles:Chassis_G103_RU_251_2</userString>
+			<shortUserString>#germany_vehicles:Chassis_G103_RU_251_2_short</shortUserString>
 			<tags/>
 			<level>9</level>
 			<price>61500</price>
@@ -4689,14 +4690,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6500</weight>
-			<maxLoad>28000</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>28000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>58</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -7483,7 +7483,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>5186</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>320</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7503,7 +7503,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_90mm_Rheinmetall_90_L40>
+				<_90mm_Rheinmetall_DM1>
 					shared
 					<maxAmmo>41</maxAmmo>
 					<armor>
@@ -7645,7 +7645,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_90mm_Rheinmetall_90_L40>
+				</_90mm_Rheinmetall_DM1>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G103_RU_251/normal/lod0/Turret_01.model</undamaged>
@@ -8854,16 +8854,16 @@
 		</Turret_1_G103_RU_251>
 	</turrets0>
 	<engines>
-		<MB-837-Aa>
+		<MTU_MB_837_Aa>
 			shared
 			<unlocks>
 				<engine>
-					MB-837-Ea-600
+					MTU_MB_837_Ea_600
 					<cost>28100</cost>
 				</engine>
 			</unlocks>
-		</MB-837-Aa>
-		<MB-837-Ea-600>
+		</MTU_MB_837_Aa>
+		<MTU_MB_837_Ea_600>
 			shared
 			<unlocks>
 				<vehicle>
@@ -8871,53 +8871,44 @@
 					<cost>298000</cost>
 				</vehicle>
 			</unlocks>
-		</MB-837-Ea-600>
+		</MTU_MB_837_Ea_600>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-4>
-			shared
-			<unlocks>
-				<radio>
-					AN-GRC-7
-					<cost>9100</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-4>
 		<AN-GRC-7>shared</AN-GRC-7>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<MB-837-Aa>
+				<MTU_MB_837_Aa>
 					<smplEnginePower>700</smplEnginePower>
 					<smplFwMaxSpeed>70</smplFwMaxSpeed>
-				</MB-837-Aa>
-				<MB-837-Ea-600>
+				</MTU_MB_837_Aa>
+				<MTU_MB_837_Ea_600>
 					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>70</smplFwMaxSpeed>
-				</MB-837-Ea-600>
+				</MTU_MB_837_Ea_600>
 			</engines>
 			<chassis>
 				<Chassis_G103_RU_251>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1449
+								0.1288
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.07245
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

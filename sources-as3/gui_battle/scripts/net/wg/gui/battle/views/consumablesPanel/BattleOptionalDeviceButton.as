@@ -103,10 +103,6 @@ package net.wg.gui.battle.views.consumablesPanel
          this.glow.hideGlow(false);
       }
       
-      public function set noBack(param1:Boolean) : void
-      {
-      }
-      
       public function set activated(param1:Boolean) : void
       {
       }

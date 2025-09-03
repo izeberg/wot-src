@@ -1,0 +1,4 @@
+from gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics.decorative_crosshairs.vehicle_decorative_crosshair import VehicleDecorativeCrosshair
+
+class PillboxSiegeDecorativeCrosshairMeta(VehicleDecorativeCrosshair):
+    pass

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A183_XM69_Hacker/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/american/A183_XM69_Hacker/crash/lod0/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.219271 -0.412612 -1.000049</min>
+		<max>0.448768 0.308956 5.300336</max>
+	</visibilityBox>
+</root>

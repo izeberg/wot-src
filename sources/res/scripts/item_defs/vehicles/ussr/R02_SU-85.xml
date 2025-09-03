@@ -107,7 +107,7 @@
 		</armor>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>18850</weight>
-		<maxHealth>368</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>130</maxHealth>
 			<maxRegenHealth>85</maxRegenHealth>
@@ -2769,9 +2769,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7600</weight>
-			<maxLoad>31400</maxLoad>
 			<terrainResistance>
-				1.2 1.6 2.3
+				1.1 1.4 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
@@ -4355,7 +4354,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7600</weight>
-			<maxLoad>32400</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.1
 				<!--BW_String-->
@@ -5938,14 +5936,14 @@
 		<Turret_1_R02_SU-85>
 			<userString>#ussr_vehicles:Turret_1_R02_SU-85</userString>
 			<tags>cannotDetach</tags>
-			<level>4</level>
+			<level>5</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>0</armor_1>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>92</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -6351,15 +6349,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<_9R>
-			shared
-			<unlocks>
-				<radio>
-					_9RM
-					<cost>4040</cost>
-				</radio>
-			</unlocks>
-		</_9R>
 		<_9RM>shared</_9RM>
 	</radios>
 	<physics>
@@ -6379,19 +6368,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1288
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

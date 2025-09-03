@@ -30,12 +30,12 @@ def getResourceRoot(component):
     return res
 
 
-LANGUAGE_CODE = backport.text(R.strings.settings.LANGUAGE_CODE())
+LANGUAGE_CODE = R.strings.settings.LANGUAGE_CODE()
 SUPPORTED_LANGUAGES = ['de', 'es', 'fr', 'hu', 'it', 'pl', 'pt_br', 'ru', 'tr', 'uk', 'zh_cn', 'cs']
 
 def getLocalizePostfix():
-    if LANGUAGE_CODE in SUPPORTED_LANGUAGES:
-        return ('_{}').format(LANGUAGE_CODE)
+    if backport.text(LANGUAGE_CODE) in SUPPORTED_LANGUAGES:
+        return ('_{}').format(backport.text(LANGUAGE_CODE))
     return ''
 
 

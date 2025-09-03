@@ -471,7 +471,7 @@ msgid "additionalRewards/premium"
 msgstr "Days of Wargaming Premium Account: %(daysCount)s"
 
 msgid "additionalRewards/premium_plus"
-msgstr "Days of WoT Premium Account: %(daysCount)s"
+msgstr "Days of WoT Premium Account"
 
 msgid "additionalRewards/tankmenXP"
 msgstr "%(value)s Crew Experience"
@@ -634,9 +634,9 @@ msgstr ""
 
 msgid "advanced/extraHealthReserve"
 msgstr ""
-"Increases the vehicle's hit points. Improves durability and loading capacity"
-" of suspension, as well as its repair speed. Fully restores suspension hit "
-"points after repairs."
+"Increases the vehicle's hit points. Improves durability of suspension, as "
+"well as its repair speed. Fully restores suspension hit points after "
+"repairs."
 
 msgid "advanced/gamemodeRandom"
 msgstr "Battle with automatic matching of allies and enemies."
@@ -831,7 +831,7 @@ msgstr ""
 msgid "advanced/vehicleChassis"
 msgstr ""
 "The module that affects the vehicle traverse speed and crossing capacity on "
-"various types of terrain. Also affects the load capacity."
+"various types of terrain."
 
 msgid "advanced/vehicleDualGun"
 msgstr ""
@@ -857,9 +857,9 @@ msgstr ""
 
 msgid "advanced/vehicleTrackWithinTrackChassis"
 msgstr ""
-"The suspension affects the vehicle traverse speed, crossing capacity on "
-"various types of terrain, and load capacity. The suspension with a reserve "
-"track allows you to move, even if the main track is destroyed."
+"The suspension affects the vehicle traverse speed and crossing capacity on "
+"various types of terrain. The suspension with a reserve track allows you to "
+"move, even if the main track is destroyed."
 
 msgid "advanced/vehicleTurret"
 msgstr ""
@@ -869,8 +869,8 @@ msgstr ""
 
 msgid "advanced/vehicleWheeledChassis"
 msgstr ""
-"The module that affects the vehicle's maneuverability and load capacity. The"
-" suspension of a wheeled vehicle does not allow it to turn on the spot."
+"The module that affects the vehicle's maneuverability. The suspension of a "
+"wheeled vehicle does not allow it to turn on the spot."
 
 msgid "ammo/auto/body"
 msgstr ""
@@ -932,6 +932,28 @@ msgstr ""
 
 msgid "anonymizer/teamStats/header"
 msgstr "The player's nickname was anonymized: %(name)s"
+
+msgid "armorFlashlight/performanceImpactInfo/attention"
+msgstr "Enabling Armor Flashlight can reduce performance."
+
+msgid "armorFlashlight/performanceImpactInfo/body"
+msgstr ""
+"Armor Flashlight is currently in BETA testing.\n"
+" "
+
+msgid "armorFlashlight/performanceImpactInfo/header"
+msgstr "Possible Performance Impact"
+
+msgid "armorFlashlight/resolutionScalingInfo/attention"
+msgstr "Increasing Armor Flashlight resolution can reduce performance."
+
+msgid "armorFlashlight/resolutionScalingInfo/body"
+msgstr ""
+"The Flashlight resolution affects the quality of armor analysis. Lowering the resolution increases performance, but may result in small armor details being omitted.\n"
+" "
+
+msgid "armorFlashlight/resolutionScalingInfo/header"
+msgstr "Armor Flashlight Resolution"
 
 msgid "awardItem/abilityToken/body"
 msgstr ""
@@ -1295,6 +1317,12 @@ msgstr "An additional slot for excluded maps."
 msgid "awardItem/excluded_map/header"
 msgstr "Excluded Map"
 
+msgid "awardItem/excluded_maps/body"
+msgstr "%(mapCount)s additional slots for excluded maps."
+
+msgid "awardItem/excluded_maps/header"
+msgstr "Excluded Maps"
+
 msgid "awardItem/exclusive_vehicle/body"
 msgstr "The %(vehicleName)s %(vehicleType)s, exclusive to WoT Plus."
 
@@ -1435,8 +1463,8 @@ msgstr "Random Training Booklet"
 
 msgid "awardItem/randomNationalBlueprint/body"
 msgstr ""
-"Used to create blueprint fragments for any researchable vehicle of a random "
-"nation."
+"Used to create blueprint fragments of any Tier II–X researchable vehicle of "
+"a random nation"
 
 msgid "awardItem/randomNationalBlueprint/header"
 msgstr "Blueprint fragment (random nation)"
@@ -1580,10 +1608,10 @@ msgstr ""
 " team panel, upon pressing Tab, and also in the battle results screen."
 
 msgid "badgeinfo/title"
-msgstr "Display/Hide Badge"
+msgstr "Display/Hide Banner"
 
 msgid "badgepage/ranked/suffixItem/duration"
-msgstr "The right to apply this badge must be defended each year."
+msgstr "The right to apply this banner must be defended each year."
 
 msgid "badgepage/ranked/suffixItem/position"
 msgstr ""
@@ -2444,20 +2472,30 @@ msgid "blueprint/BlueprintFragmentTooltip/inStorage"
 msgstr "In Depot"
 
 msgid "blueprint/BlueprintFragmentTooltip/intelDescription"
-msgstr "Used to create blueprint fragments of any researchable vehicle."
+msgstr ""
+"Used to create blueprint fragments of any %(tier)s researchable vehicle"
+
+msgid "blueprint/BlueprintFragmentTooltip/intelDescriptionTier"
+msgstr "Tier II-X"
 
 msgid "blueprint/BlueprintFragmentTooltip/intelFragment"
 msgstr "Universal fragment"
 
 msgid "blueprint/BlueprintFragmentTooltip/nationalDescription"
-msgstr "Used to create blueprint fragments of %(nation)s vehicles."
+msgstr ""
+"Used to create blueprint fragments of %(nation)s %(tier)s researchable "
+"vehicles"
+
+msgid "blueprint/BlueprintFragmentTooltip/nationalDescriptionTier"
+msgstr "Tier II-X"
 
 msgid "blueprint/BlueprintFragmentTooltip/nationalFragment"
 msgstr "National fragment"
 
 msgid "blueprint/BlueprintFragmentTooltip/random/description"
 msgstr ""
-"You will receive a blueprint fragment for a random researchable vehicle."
+"You will receive a blueprint fragment for a random Tier II–X researchable "
+"vehicle"
 
 msgid "blueprint/BlueprintFragmentTooltip/random/discount"
 msgstr ""
@@ -3896,11 +3934,12 @@ msgstr "Click to view the secondary condition of this mission."
 
 msgid "devMaps/body"
 msgstr ""
-"An opportunity to play on new or reworked battlefields and maps with new "
-"mechanics. Note: Some models and effects may not be final."
+"Fight battles on maps featuring randomly occurring events—like train or "
+"airplane crashes—that change battlefield dynamics and create new tactical "
+"opportunities."
 
 msgid "devMaps/header"
-msgstr "Maps Under Development"
+msgstr "Play on Maps With Random Events"
 
 msgid "deviceFits/already_installed/header"
 msgstr "Mounted on:"
@@ -3927,28 +3966,6 @@ msgstr "Consider mounting compatible gun."
 
 msgid "deviceFits/not_with_installed_equipment/header"
 msgstr "To mount this consumable, remove %(eqs)s"
-
-msgid "deviceFits/remove_too_heavy/header"
-msgstr "Unable to demount."
-
-msgid "deviceFits/remove_too_heavy/text"
-msgstr ""
-"This equipment requires suspension\n"
-"with higher load capacity."
-
-msgid "deviceFits/too_heavy/header"
-msgstr "Unable to mount."
-
-msgid "deviceFits/too_heavy/text"
-msgstr ""
-"This equipment requires suspension\n"
-"with higher load capacity."
-
-msgid "deviceFits/too_heavy_chassi/header"
-msgstr "Unable to mount. Higher load capacity required."
-
-msgid "deviceFits/too_heavy_chassi/text"
-msgstr "Consider mounting lighter modules."
 
 msgid "deviceFits/unlock_error/header"
 msgstr "The module is not researched."
@@ -4895,8 +4912,7 @@ msgstr "Receive commendations in battle"
 msgid "enableTierGrouping/body"
 msgstr ""
 "Displaying vehicle icons by tier will only work if vehicle icons are "
-"enabled. It will not work in modes that do not support vehicle icons, such "
-"as Grand Battle."
+"enabled. It will not work in modes that do not support vehicle icons."
 
 msgid "enableTierGrouping/header"
 msgstr "Tier Grouping in Score Panel"
@@ -5803,11 +5819,6 @@ msgstr "To join the battle, select a vehicle and confirm that you are ready."
 msgid "hangar/startBtn/squadNotReady/header"
 msgstr "Unavailable"
 
-msgid "hangar/startBtn/vehicleToHeavy/body"
-msgstr ""
-"The current load exceeds the suspension load capacity. Increase the load "
-"capacity by mounting an improved suspension or Improved Hardening equipment."
-
 msgid "hangar/status/toRent"
 msgstr "Extend the rental period"
 
@@ -6182,8 +6193,7 @@ msgid "header/buttons/crystal/clickDesc"
 msgstr "Click to receive additional information."
 
 msgid "header/buttons/crystal/description0"
-msgstr ""
-"Permanent sources: Random Battles (including Grand Battles) in %(vehicle)s."
+msgstr "Permanent sources: Random Battles in %(vehicle)s."
 
 msgid "header/buttons/crystal/description1"
 msgstr ""
@@ -6576,6 +6586,9 @@ msgstr "I"
 
 msgid "level/10"
 msgstr "X"
+
+msgid "level/11"
+msgstr "XI"
 
 msgid "level/2"
 msgstr "II"
@@ -7043,55 +7056,8 @@ msgstr ""
 "Click to learn more\n"
 "about the mode."
 
-msgid "mode_selector/popover/assault/body"
-msgstr ""
-"One team attacks the enemy base, while the other defends it. The team role (attack or defense) is assigned randomly. This mode is available after researching any Tier VI vehicle.\n"
-"\n"
-"Composition: two teams of 15 players each."
-
-msgid "mode_selector/popover/assault/header"
-msgstr "Assault"
-
 msgid "mode_selector/popover/body"
 msgstr "Click to set up battle modes."
-
-msgid "mode_selector/popover/default/body"
-msgstr ""
-"Each team has their own base. The battle lasts until all enemy vehicles are destroyed or the enemy base is captured. The mode is available for all vehicle types and is always enabled.\n"
-"\n"
-"Composition: two teams of 15 players each."
-
-msgid "mode_selector/popover/default/header"
-msgstr "Standard Battle"
-
-msgid "mode_selector/popover/devMaps/body"
-msgstr ""
-"An opportunity to play on new or reworked battlefields and maps with new "
-"mechanics. Note: Some models and effects may not be final."
-
-msgid "mode_selector/popover/devMaps/header"
-msgstr "Maps Under Development"
-
-msgid "mode_selector/popover/domination/body"
-msgstr ""
-"There is only one neutral base on the map, and both teams are trying to capture it. The battle lasts until all enemy vehicles are destroyed or the base is captured. This mode is available after researching any Tier IV vehicle.\n"
-"\n"
-"Composition: two teams of 15 players each."
-
-msgid "mode_selector/popover/domination/header"
-msgstr "Encounter Battle"
-
-msgid "mode_selector/popover/epicStandard/attention"
-msgstr "You may experience minor performance issues in this battle mode."
-
-msgid "mode_selector/popover/epicStandard/body"
-msgstr ""
-"Each team has their own base. The battle on a large map lasts until all enemy vehicles are destroyed or the enemy base is captured. This mode is available after researching any Tier X vehicle.\n"
-"\n"
-"Composition: two teams of 30 players each."
-
-msgid "mode_selector/popover/epicStandard/header"
-msgstr "Grand Battle"
 
 msgid "mode_selector/progressionBtn/body"
 msgstr ""
@@ -7226,14 +7192,6 @@ msgstr "To mount this consumable, remove %(eqs)s"
 msgid "moduleFits/operation_error/header"
 msgstr "Financial transaction unavailable"
 
-msgid "moduleFits/remove_too_heavy/header"
-msgstr "Unable to demount."
-
-msgid "moduleFits/remove_too_heavy/text"
-msgstr ""
-"This equipment requires suspension\n"
-"with higher load capacity."
-
 msgid "moduleFits/replace"
 msgstr ""
 "Currently mounted: %(moduleName)s. Replacing the equipment will change the "
@@ -7246,24 +7204,6 @@ msgid "moduleFits/similar_device_already_installed/text"
 msgstr ""
 "Equipment that provides a similar effect has already been mounted on the "
 "vehicle."
-
-msgid "moduleFits/too_heavy/header"
-msgstr "Unable to mount."
-
-msgid "moduleFits/too_heavy/text"
-msgstr "This equipment requires suspension with higher load capacity."
-
-msgid "moduleFits/too_heavy_chassi/header"
-msgstr "Unable to mount. Higher load capacity required."
-
-msgid "moduleFits/too_heavy_chassi/text"
-msgstr "Consider mounting lighter modules."
-
-msgid "moduleFits/too_heavy_chassis/header"
-msgstr "Modules are too heavy"
-
-msgid "moduleFits/too_heavy_chassis/text"
-msgstr "Consider lightening the vehicle."
 
 msgid "moduleFits/unlock_error/header"
 msgstr "The module is not researched."
@@ -10165,6 +10105,75 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp17_9/label"
 msgstr "Battle Pass: Tomb Raider"
 
+msgid "notrecruitedtankman/tankmen_bp18_1/desc"
+msgstr ""
+"Few know where Anton Mekhanin was born—he probably crawled out of a steel "
+"hatch wearing a welding mask. A tireless perfectionist, he's turned the art "
+"of tank testing into a personal crusade. Known for pushing vehicles to the "
+"limit (and beyond), it'll take more than an explosion to make him sweat. "
+"Rumor has it that he once rebuilt a busted T-34 using just scrap metal and "
+"an Allen wrench. His obsession borders on the unhinged, but no one can argue"
+" with his results. Besides, with a name like Mekhanin, how could he have "
+"turned out any other way?"
+
+msgid "notrecruitedtankman/tankmen_bp18_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_1/label"
+msgstr "Battle Pass Season XVIII"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/desc"
+msgstr ""
+"Hugo \"Axle\" Kern is a seasoned tank tester, his iron resolve tempered in "
+"the fire of countless trials. His battered wrench never leaves his side—not "
+"just for repairs, but to feel the pulse of a machine. He taps the hull, "
+"listening intently for the subtle hum that says \"go.\" Any tank that "
+"doesn't pass his test is torn apart and rebuilt, no exceptions. With decades"
+" of experience and nerves of carbon steel, Hugo forces the future of tank "
+"design with each test. Under Kern's stern command, only the strongest, "
+"fastest, and most deadly tanks survive."
+
+msgid "notrecruitedtankman/tankmen_bp18_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/label"
+msgstr "Battle Pass Season XVIII"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/desc"
+msgstr ""
+"Lucien Acier is a battlefield tinkerer with a brilliant mind and zero chill."
+" Armed with his trusty wrench and a metric ton of wild ideas, he's all about"
+" reworking existing vehicles into logic-defying, mind-bending monsters. "
+"Engines run hotter, turrets spin faster, and enemy tanks burn brighter—even "
+"if nobody's quite sure how (not even Lucien himself). After all, this mad "
+"scientist isn't here to follow blueprints. He's here to break the rules and "
+"build something revolutionary. If it smokes, sparks, or shakes the ground, "
+"odds are Lucien had something to do with it."
+
+msgid "notrecruitedtankman/tankmen_bp18_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/label"
+msgstr "Battle Pass Season XVIII"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/desc"
+msgstr ""
+"Cassie Riggs grew up turning rust buckets into hot rods on her dad's "
+"junkyard, and now she does the exact same thing with tanks. Breezing through"
+" upgrade sessions and field tests with a signature smirk on her face, Cassie"
+" remolds machines like she's daring them to keep up. Crank up the power "
+"here, reroute some wiring there—BOOM, you've got a fire-breathing behemoth "
+"that's \"technically within regulations.\" She's used to being the only "
+"woman on the test field, but that's never fazed her. Cassie knows she's the "
+"one they'll call when their arsenal needs to stop surviving and start "
+"dominating."
+
+msgid "notrecruitedtankman/tankmen_bp18_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/label"
+msgstr "Battle Pass Season XVIII"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "People are always asking if I know Jack Reed. Before I answer, I usually "
@@ -10695,6 +10704,59 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_mtlb1_6/label"
 msgstr "Unique crew member"
 
+msgid "notrecruitedtankman/tankmen_pm3_1/desc"
+msgstr ""
+"The daughter of anti-fascist scientists from Dresden, Leni was left alone "
+"when her parents were arrested and disappeared in concentration camps during"
+" the war. Finding refuge in the underground resistance, she underwent combat"
+" training and quickly became a highly skilled sniper and spy. As hostilities"
+" raged, Leni orchestrated sabotage operations, eliminated high-ranking "
+"officers, and gathered intelligence for the Allies. Even when the war ended,"
+" she continued her pursuit of justice, hunting former Nazis with special "
+"units—and attracting the interest of Sector 3, who brought her into their "
+"ranks."
+
+msgid "notrecruitedtankman/tankmen_pm3_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_1/label"
+msgstr "Sector 3 campaign"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/desc"
+msgstr ""
+"Growing up in a blacksmith's family in a small Czech town, Miroslav was no "
+"stranger to physical labor from a young age—and learned early on that "
+"strength wasn't just about hard work, but about responsibility, too. When "
+"Czechoslovakia fell under occupation, he put his skills to use in the "
+"resistance movement, using his strength and engineering expertise to "
+"organize sabotage plots. After the war, he played a key role in rebuilding "
+"Czechoslovakia's tank industry—before finding a new outlet for his talents "
+"in Sector 3."
+
+msgid "notrecruitedtankman/tankmen_pm3_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/label"
+msgstr "Sector 3 campaign"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/desc"
+msgstr ""
+"Born into a military family in Virginia, Corvin was raised in an environment"
+" of discipline and exacting standards. His outstanding analytical mind led "
+"him first to West Point, where he graduated magna cum laude, then across the"
+" Atlantic to the North African and European theaters of World War II. "
+"Throughout the war, his unconventional strategic thinking and composure "
+"under pressure set him apart, whether as an intelligence officer or unit "
+"commander. After the war, he continued to serve in the U.S. Army's analytics"
+" department, where his remarkable track record caught the attention of "
+"Sector 3."
+
+msgid "notrecruitedtankman/tankmen_pm3_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/label"
+msgstr "Sector 3 campaign"
+
 msgid "notrecruitedtankman/tankwoman/desc"
 msgstr ""
 "Awarded during particular game events. Female crew members have the Brothers"
@@ -10936,6 +10998,56 @@ msgstr "懦夫的气息，注定了你是我的猎物！"
 
 msgid "notrecruitedtankman/wt_CN2024_zhongpengfei/label"
 msgstr "Waffenträger: Reckoning"
+
+msgid "notrecruitedtankman/wt_clone_boss/desc"
+msgstr ""
+"This fractured world still resists order. Very well. I shall bring it "
+"structure…again."
+
+msgid "notrecruitedtankman/wt_clone_boss/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_boss/label"
+msgstr "Waffenträger: Paradox"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/desc"
+msgstr "I don’t care what it is—loop, dream, or trap. We adapt, we fight."
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/label"
+msgstr "Waffenträger: Paradox"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/desc"
+msgstr "This isn’t time repeating—it’s something pretending to be."
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/label"
+msgstr "Waffenträger: Paradox"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/desc"
+msgstr ""
+"The more this loop repeats, the less I play by its rules. Even time can’t "
+"catch me."
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/label"
+msgstr "Waffenträger: Paradox"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/desc"
+msgstr ""
+"This loop won’t outsmart me. I'm not just surviving it—I'm learning from it."
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/label"
+msgstr "Waffenträger: Paradox"
 
 msgid "notrecruitedtankman/yandex_1/desc"
 msgstr ""
@@ -11229,7 +11341,7 @@ msgid "personalMissions/mapRegion/footer/title/inProgress"
 msgstr "Active"
 
 msgid "personalMissions/mapRegion/footer/title/noVehicle"
-msgstr "No Suitable Vehicles"
+msgstr "No suitable vehicles"
 
 msgid "personalMissions/mapRegion/footer/title/notAvailable"
 msgstr "Unavailable for Completion"
@@ -11266,16 +11378,34 @@ msgid "personalMissions/onPauseBtn/turnOnPause/header"
 msgstr "Pause"
 
 msgid "personalMissions/operation/awards/title/done"
-msgstr "Reward for completing the operation:"
+msgstr "Rewards for completing the operation:"
 
 msgid "personalMissions/operation/awards/title/excellentDone"
-msgstr "Reward for completing the operation with honors:"
+msgstr "Rewards for completion with honors:"
+
+msgid "personalMissions/operation/footer/activateCampaign/body"
+msgstr ""
+"When the Long-Awaited Backup and Second Front campaigns are resumed, the "
+"Sector 3 campaign will be paused. All progress in the paused campaign will "
+"be saved and you can resume it at any time."
+
+msgid "personalMissions/operation/footer/activateCampaign/header"
+msgstr "Campaign Resumption"
+
+msgid "personalMissions/operation/footer/activateMissions/body"
+msgstr "The first mission in each series will be activated."
+
+msgid "personalMissions/operation/footer/activateMissions/header"
+msgstr "Mission activation"
 
 msgid "personalMissions/operation/footer/descr/completionTokens"
-msgstr "Vehicle components: "
+msgstr "Vehicle parts: "
 
 msgid "personalMissions/operation/footer/descr/completionTokens/pm2"
 msgstr "Vehicle blueprints: "
+
+msgid "personalMissions/operation/footer/descr/completionTokens/pm3"
+msgstr "Vehicle assembly: "
 
 msgid "personalMissions/operation/footer/descr/disabled"
 msgstr "Operation disabled"
@@ -11283,11 +11413,17 @@ msgstr "Operation disabled"
 msgid "personalMissions/operation/footer/descr/doPrevOperation"
 msgstr "Complete the preceding operation"
 
+msgid "personalMissions/operation/footer/descr/excellentDone"
+msgstr "All rewards received"
+
 msgid "personalMissions/operation/footer/descr/freeSheets"
 msgstr "Orders: "
 
+msgid "personalMissions/operation/footer/descr/mainRewardReceived"
+msgstr "Main rewards received"
+
 msgid "personalMissions/operation/footer/descr/noVehicle"
-msgstr "No Suitable Vehicles"
+msgstr "No suitable vehicles"
 
 msgid "personalMissions/operation/footer/descr/postponed"
 msgstr "Operation starts in "
@@ -11296,7 +11432,7 @@ msgid "personalMissions/operation/footer/descr/questsFullyDone"
 msgstr "Completed with honors: "
 
 msgid "personalMissions/operation/footer/descr/selectQuest"
-msgstr "Select a mission to complete"
+msgstr "Activate the operation"
 
 msgid "personalMissions/operation/footer/title/available"
 msgstr "Available"
@@ -11313,6 +11449,9 @@ msgstr "Active"
 msgid "personalMissions/operation/footer/title/notAvailable"
 msgstr "Unavailable"
 
+msgid "personalMissions/operation/footer/title/onPause"
+msgstr "Operation paused"
+
 msgid "personalMissions/operation/header/descr/postponed"
 msgstr ""
 "You can earn a unique emblem if you complete all missions of the previous "
@@ -11322,7 +11461,7 @@ msgid "personalMissions/operation/missions/title"
 msgstr "Operation missions:"
 
 msgid "personalMissions/operation/title"
-msgstr "Operation %(name)s"
+msgstr "Operation"
 
 msgid "personalMissions/operationTitle/completeState/body"
 msgstr ""
@@ -11660,19 +11799,19 @@ msgid "privateQuests/progress/header"
 msgstr "Set Reward: %(type)s"
 
 msgid "privateQuests/progress/type/AT-SPG"
-msgstr "Tank Destroyers"
+msgstr "Tank destroyers"
 
 msgid "privateQuests/progress/type/SPG"
 msgstr "SPGs"
 
 msgid "privateQuests/progress/type/heavyTank"
-msgstr "Heavy Tanks"
+msgstr "Heavy tanks"
 
 msgid "privateQuests/progress/type/lightTank"
-msgstr "Light Tanks"
+msgstr "Light tanks"
 
 msgid "privateQuests/progress/type/mediumTank"
-msgstr "Medium Tanks"
+msgstr "Medium tanks"
 
 msgid "privateQuests/questControl/body"
 msgstr "Click to go to Personal Missions."
@@ -11758,10 +11897,10 @@ msgid "privateQuests/status/inProgress/header"
 msgstr "Active"
 
 msgid "privateQuests/status/lock/descr"
-msgstr "Operation will be available after completion of the preceding one."
+msgstr "Complete the preceding operation"
 
 msgid "privateQuests/status/lock/header"
-msgstr "Completion Unavailable"
+msgstr "Unavailable"
 
 msgid "privateQuests/status/notReceived/header"
 msgstr "Reward not claimed"
@@ -11856,6 +11995,12 @@ msgstr "Gold Conversion Bonus"
 
 msgid "quests/bonuses/token/header"
 msgstr "%(userName)s Token"
+
+msgid "quests/bonuses/token/personal_missions_points/body"
+msgstr "Used for assembling vehicles in the Sector 3 campaign."
+
+msgid "quests/bonuses/token/personal_missions_points/header"
+msgstr "Campaign Points"
 
 msgid "quests/bonuses/token/resource/clan_promoresource/body"
 msgstr ""
@@ -12488,11 +12633,6 @@ msgstr "?empty?"
 msgid "redButton/disabled/vehicle/roaming/header"
 msgstr "Server limit"
 
-msgid "redButton/disabled/vehicle/tooHeavy/body"
-msgstr ""
-"The current load exceeds the suspension load capacity. Increase the load "
-"capacity by mounting an improved suspension or Improved Hardening equipment."
-
 msgid "referralProgram/newLevelAwards/awardCount"
 msgstr "x%(count)s"
 
@@ -12826,6 +12966,13 @@ msgstr "Messages in Chat"
 msgid "settings/keyMovement/title"
 msgstr "Lock Hull / Switch Mode"
 
+msgid "settings/keySpecialAbility/body"
+msgstr ""
+"This key is used to activate a special ability on particular vehicles."
+
+msgid "settings/keySpecialAbility/title"
+msgstr "Special Ability"
+
 msgid "settings/keyboard/backDraftInvert/body"
 msgstr ""
 "Swaps the Left/Right keys when moving backward. Upon pressing the Left key, "
@@ -12926,8 +13073,9 @@ msgstr "Subtitles"
 msgid "settings/switchEquipment/body"
 msgstr ""
 "An ability to choose an Alternate Configuration during the pre-battle "
-"countdown. Available for vehicles Tier VI and higher as a part of Field "
-"Modification."
+"countdown. Available as a part of Field Modification (for Tier VI–X "
+"vehicles) or after unlocking the Alternate Configuration upgrade (for Tier "
+"XI vehicles)."
 
 msgid "settings/switchEquipment/bodyFooter"
 msgstr ""
@@ -12939,8 +13087,9 @@ msgstr "Equipment and Consumables Configuration Selection"
 
 msgid "settings/switchMode/body"
 msgstr ""
-"This key is used to lock the hull of SPGs/tank destroyers or to switch "
-"between the firing and movement modes on particular vehicles."
+"This key is used to lock the hull of SPGs/tank destroyers or to switch between firing and movement modes in certain vehicles.\n"
+"\n"
+"In some vehicles, a long press of this key is required to activate the special modes."
 
 msgid "settingsControl/recommended"
 msgstr "Recommended: %(value)s"
@@ -13225,13 +13374,13 @@ msgid "specializationWotPlus/vehicle"
 msgstr ""
 "%(level)s {par_Open}%(type)s{par_Close} {gold_Open}%(name)s{gold_Close}"
 
-msgid "squadBonus/complex/body"
+msgid "squadBonus/complex/default/body"
 msgstr ""
 "Receive an additional {brown_Open}%(value)s{brown_Close} to Combat XP after each battle when playing in a Platoon with other players.\n"
 "\n"
 "This bonus is only available for Permanent Tactical Units and is not available for Dynamic Platoons."
 
-msgid "squadBonus/complex/header"
+msgid "squadBonus/complex/default/header"
 msgstr "Bonus for Platoon Playing"
 
 msgid "squadBonus/credits/bonusWithPremium"
@@ -13430,7 +13579,7 @@ msgstr ""
 "comply with the requirements:"
 
 msgid "suitableVehicle/unsuitable"
-msgstr "No Suitable Vehicles"
+msgstr "No suitable vehicles"
 
 msgid "summary/status/tooltip"
 msgstr "The data updates every %(interval)s min."
@@ -13463,6 +13612,18 @@ msgstr ""
 msgid "tankCarusel/lock/rotation/header"
 msgstr "Vehicle of Group %(groupNum)s is Unavailable"
 
+msgid "tankCaruselTooltip/earnings/header"
+msgstr "Earnings"
+
+msgid "tankCaruselTooltip/serviceRecords/eliteSystem"
+msgstr "Elite system"
+
+msgid "tankCaruselTooltip/serviceRecords/header"
+msgstr "Service Record"
+
+msgid "tankCaruselTooltip/serviceRecords/prestigeEliteSystem"
+msgstr "Elite system: Maximum level"
+
 msgid "tankCaruselTooltip/vehicleType/elite/AT-SPG"
 msgstr "Elite Tank Destroyer"
 
@@ -13493,6 +13654,36 @@ msgstr "Light Tank"
 msgid "tankCaruselTooltip/vehicleType/normal/mediumTank"
 msgstr "Medium Tank"
 
+msgid "tankCaruselTooltip/vehicleType/tier/elite/AT_SPG"
+msgstr "{{@ split}}{{tier}} Elite Tank Destroyer"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/SPG"
+msgstr "{{@ split}}{{tier}} Elite SPG"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/heavyTank"
+msgstr "{{@ split}}{{tier}} Elite Heavy Tank"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/lightTank"
+msgstr "{{@ split}}{{tier}} Elite Light Tank"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/mediumTank"
+msgstr "{{@ split}}{{tier}} Elite Medium Tank"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/AT_SPG"
+msgstr "{{@ split}}{{tier}} Tank Destroyer"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/SPG"
+msgstr "{{@ split}}{{tier}} SPG"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/heavyTank"
+msgstr "{{@ split}}{{tier}} Heavy Tank"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/lightTank"
+msgstr "{{@ split}}{{tier}} Light Tank"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/mediumTank"
+msgstr "{{@ split}}{{tier}} Medium Tank"
+
 msgid "tank_params/avgParamComment/damage"
 msgstr "Minimum-maximum damage %(units)s"
 
@@ -13511,10 +13702,40 @@ msgstr "Minimum–maximum value at %(distance)s m %(units)s"
 msgid "tank_params/avgParamComment/piercingPower"
 msgstr "Minimum-maximum value %(units)s"
 
+msgid "tank_params/desc/accuracyDispersionCap"
+msgstr "The bonus to dispersion at 100 m granted at maximum accuracy level."
+
+msgid "tank_params/desc/accuracyDispersionPerLevel"
+msgstr "The bonus to dispersion at 100 m granted per accuracy level."
+
+msgid "tank_params/desc/accuracyLevelGainTime"
+msgstr "Time required to gain one accuracy level."
+
+msgid "tank_params/desc/accuracySpeedLimit"
+msgstr "Exceeding this speed prevents accuracy level generation."
+
+msgid "tank_params/desc/accuracyWhileMovingDispersionCap"
+msgstr ""
+"The bonus to dispersion during movement or hull/gun traverse granted at "
+"maximum accuracy level."
+
+msgid "tank_params/desc/activeCoincideceShootingCharge"
+msgstr ""
+"The amount of additional Coincidence Electromechanical Sight charge "
+"generated per hit on an enemy vehicle in Engagement mode."
+
 msgid "tank_params/desc/aimingTime"
 msgstr ""
 "Time for the aiming circle diameter to decrease by 60% (standard / special "
 "mode)."
+
+msgid "tank_params/desc/aimingTimeCoincidenceElectromechanicalSight"
+msgstr ""
+"The bonus to the time for the aiming circle diameter to decrease by 60% "
+"granted by the sight."
+
+msgid "tank_params/desc/aimingTimeTurbo"
+msgstr "Additional aiming time required while in Turbo mode."
 
 msgid "tank_params/desc/attainableSpeed"
 msgstr ""
@@ -13564,6 +13785,14 @@ msgstr ""
 "Average armor thickness penetrated by a standard shell, adjusted for shell "
 "normalization. The dispersion is +/- 25% of the average value."
 
+msgid "tank_params/desc/boosterCoolingTime"
+msgstr ""
+"Time taken for the boosters to fully cool down after their critical heat "
+"level has been reached."
+
+msgid "tank_params/desc/boosterDuration"
+msgstr "Maximum duration of the booster effect after activation."
+
 msgid "tank_params/desc/burstFireRate"
 msgstr ""
 "Loading time between shells in the container. / Number of containers in the "
@@ -13573,6 +13802,22 @@ msgid "tank_params/desc/chargeTime"
 msgstr ""
 "Time of preparation for firing from two guns at the same time. / Duration of"
 " the gun reloading block upon firing a salvo."
+
+msgid "tank_params/desc/chargeableBurstDispersion"
+msgstr ""
+"Dispersion of the second shot in Burst mode, characterized by the maximum "
+"shell deviation from the aiming point at a distance of 100 m."
+
+msgid "tank_params/desc/chargeableBurstPenetrationCount"
+msgstr ""
+"Number of armor-penetrating hits on enemy vehicles required to activate the "
+"mode."
+
+msgid "tank_params/desc/chargeableBurstReload"
+msgstr "Time to reload between the first and second shot in Burst mode."
+
+msgid "tank_params/desc/chargeableBurstSize"
+msgstr "Number of shells stored in the burst-fire cassette."
 
 msgid "tank_params/desc/chassisRepairTime"
 msgstr "Time to repair a damaged track."
@@ -13599,11 +13844,44 @@ msgstr ""
 " shell in the magazine, gun, or container. / Number of guns or shells in the"
 " magazine."
 
+msgid "tank_params/desc/coincidenceElectromechanicalSightDuration"
+msgstr ""
+"Duration of the effect of the Coincidence Electromechanical Sight after "
+"activation."
+
+msgid "tank_params/desc/concentrationModeCooldown"
+msgstr "Time required before the stabilizer can be activated again after use."
+
+msgid "tank_params/desc/concentrationModeDuration"
+msgstr "Time the stabilizer stays active after activation."
+
 msgid "tank_params/desc/continuousShotsPerMinute"
 msgstr "Number of rounds per minute not including reload time."
 
 msgid "tank_params/desc/damage"
 msgstr "Damage caused by a standard shell upon penetrating enemy armor."
+
+msgid "tank_params/desc/designatorCooldownS"
+msgstr ""
+"Time required before the designator can be used again. Cooldown begins after"
+" firing a shot."
+
+msgid "tank_params/desc/designatorInitialCooldownS"
+msgstr ""
+"Time required after the start of battle before the designator can be used "
+"for the first time."
+
+msgid "tank_params/desc/designatorMarkDurationS"
+msgstr ""
+"Time that marked enemy vehicles remain spotted and receive increased damage "
+"from shells."
+
+msgid "tank_params/desc/designatorMarkedEnemiesAdditionalDamage"
+msgstr ""
+"The amount of additional damage marked enemy vehicles receive from shells."
+
+msgid "tank_params/desc/dispersionAt100mCoincidenceElectromechanicalSight"
+msgstr "The bonus to dispersion at 100 m granted by the sight."
 
 msgid "tank_params/desc/dualAccuracyCoolingDelay"
 msgstr ""
@@ -13620,18 +13898,89 @@ msgstr ""
 "This parameter affects vehicle acceleration and performance on different "
 "terrain types (standard / special mode)."
 
+msgid "tank_params/desc/enginePowerWithBoosters"
+msgstr "The bonus to vehicle acceleration granted by the boosters."
+
+msgid "tank_params/desc/engineTurboPowerCap"
+msgstr ""
+"This parameter affects the vehicle's acceleration, top speed, and hull "
+"traverse speed in Turbo mode."
+
 msgid "tank_params/desc/explosionRadius"
 msgstr ""
 "The damage radius after the HE shell explosion, showing the ability to cause"
 " damage at a distance from the point of impact."
+
+msgid "tank_params/desc/extraShotClipReloadTime"
+msgstr "Time added to remaining cassette reload after firing the last shell."
+
+msgid "tank_params/desc/forwardMaxSpeed"
+msgstr "Vehicle speed as it is defined in its technical characteristics."
+
+msgid "tank_params/desc/furyMaxReloadEffAvgDpm"
+msgstr ""
+"The bonus to average damage per minute at maximum reload efficiency level."
+
+msgid "tank_params/desc/furyMaxReloadEfficiencyLevel"
+msgstr ""
+"The maximum number of reload efficiency levels that can be accumulated."
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelDuration"
+msgstr "The amount of time a reload efficiency level lasts before it expires."
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelPerDestruction"
+msgstr ""
+"The number of reload efficiency levels gained upon destroying an enemy "
+"vehicle with a shell."
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelPerHit"
+msgstr ""
+"The number of reload efficiency levels gained for each hit with a shell on a"
+" spotted enemy vehicle."
+
+msgid "tank_params/desc/furyReloadSpeedBonusPerEfficiencyLevel"
+msgstr ""
+"The amount by which gun loading time is reduced per reload efficiency level."
+
+msgid "tank_params/desc/gunTraverseDispersionTurbo"
+msgstr "The penalty to dispersion during gun traverse while in Turbo mode."
 
 msgid "tank_params/desc/gunYawLimits"
 msgstr ""
 "Maximum angles for horizontal gun traverse (to the left and right of the "
 "default position) when the hull is stationary."
 
+msgid "tank_params/desc/heatAvgDmgPerLvl"
+msgstr "The bonus to average damage for each heat level accumulated."
+
+msgid "tank_params/desc/heatChargeOverheatDuration"
+msgstr "Time the vehicle is unable to shoot or change shells."
+
+msgid "tank_params/desc/heatTimeBeforeOverheat"
+msgstr ""
+"Time the vehicle can stay at maximum heat level before charge overheating."
+
+msgid "tank_params/desc/heatTimeToReachLevel"
+msgstr "Time required to reach each heat level."
+
 msgid "tank_params/desc/hullArmor"
 msgstr "Thickness of hull armor: front / sides / rear respectively."
+
+msgid "tank_params/desc/hullTraverseDispersionTurbo"
+msgstr "The penalty to dispersion during hull traverse while in Turbo mode."
+
+msgid "tank_params/desc/improvedDamageEnemiesByRamming"
+msgstr ""
+"This parameter shows amount of damage caused by ramming. When vehicles "
+"collide, the system considers the thickness of armor at the point of impact,"
+" the difference in the vehicles' weights, and their speeds."
+
+msgid "tank_params/desc/improvedDamageEnemiesChassisByRamming"
+msgstr ""
+"This parameter shows the amount of damage to suspension caused by ramming. "
+"When vehicles collide, the system considers the thickness of the armor at "
+"the point of impact, the difference in the vehicle' weights, and their "
+"speeds."
 
 msgid "tank_params/desc/invisibilityMovingFactor"
 msgstr ""
@@ -13645,6 +13994,33 @@ msgstr ""
 " more concealed the vehicle. The following parameters are indicated: for a "
 "stationary vehicle / for a stationary vehicle after firing."
 
+msgid "tank_params/desc/ionAfterburnerActiveTurboCharge"
+msgstr ""
+"The amount of Ion-Discharge Afterburner charge generated per second at over "
+"40 km/h in Turbo mode."
+
+msgid "tank_params/desc/ionAfterburnerDuration"
+msgstr ""
+"This parameter affects how long the Ion-Discharge Afterburner lasts after "
+"activation."
+
+msgid "tank_params/desc/ionAfterburnerDurationEnginePower"
+msgstr ""
+"This parameter affects the vehicle's acceleration, top speed, and hull "
+"traverse speed after activating the Ion-Discharge Afterburner."
+
+msgid "tank_params/desc/ionAfterburnerDurationSpeedCap"
+msgstr ""
+"Additional speed gained after activating the Ion-Discharge Afterburner."
+
+msgid "tank_params/desc/ionAfterburnerPassiveTurboCharge"
+msgstr ""
+"The amount of Ion-Discharge Afterburner charge generated per second in Turbo"
+" mode."
+
+msgid "tank_params/desc/maxAccuracyLevel"
+msgstr "The maximum number of accuracy levels that can be accumulated."
+
 msgid "tank_params/desc/maxHealth"
 msgstr "Number of vehicle durability points."
 
@@ -13653,15 +14029,74 @@ msgstr ""
 "The maximum angle the wheels can turn. Affects the vehicle's maneuverability"
 " and handling."
 
+msgid "tank_params/desc/movementTraverseDispersionTurbo"
+msgstr "The penalty to dispersion during movement while in Turbo mode."
+
+msgid "tank_params/desc/passiveCoincideceShootingCharge"
+msgstr ""
+"The amount of Coincidence Electromechanical Sight charge generated per "
+"second in Engagement mode."
+
 msgid "tank_params/desc/piercingPower"
 msgstr ""
 "Thickness of armor that can be penetrated by a standard shell adjusted for "
 "shell normalization."
 
+msgid "tank_params/desc/pillboxHorizontalRotationSpeed"
+msgstr ""
+"Speed of hull traverse around its axis, and speed of direction change in "
+"motion (maneuverability)."
+
+msgid "tank_params/desc/pillboxSwitchOffTime"
+msgstr ""
+"The time needed to switch between modes depends on the engine's condition. A"
+" damaged engine increases the time needed for switching. Switching is "
+"unavailable when the engine is destroyed."
+
+msgid "tank_params/desc/pillboxSwitchOnTime"
+msgstr ""
+"The time needed to switch between modes depends on the engine's condition. A"
+" damaged engine increases the time needed for switching. Switching is "
+"unavailable when the engine is destroyed."
+
+msgid "tank_params/desc/pillboxVerticalRotationSpeed"
+msgstr ""
+"Speed to tilt the hull up and down while the vehicle is in Pillbox mode."
+
 msgid "tank_params/desc/pitchLimits"
 msgstr ""
 "Maximum vertical angles that the gun can traverse along relative to the "
 "vehicle hull and considering its suspension."
+
+msgid "tank_params/desc/powerModeDuration"
+msgstr ""
+"Time taken to reach maximum forward speed and engine power in Direct Drive "
+"mode."
+
+msgid "tank_params/desc/powerModeThreshold"
+msgstr "Time taken to activate Direct Drive mode."
+
+msgid "tank_params/desc/preheatDispersionCap"
+msgstr "The bonus to dispersion at 100 m at full preheat."
+
+msgid "tank_params/desc/preheatDmgCap"
+msgstr "The bonus to average damage caused at full preheat."
+
+msgid "tank_params/desc/preheatSpeedLimit"
+msgstr ""
+"Exceeding this speed prevents preheat generation and may cause it to "
+"decrease."
+
+msgid "tank_params/desc/preheatTimeToFull"
+msgstr "Time taken for your vehicle to reach full preheat from zero."
+
+msgid "tank_params/desc/preheatTimeToZero"
+msgstr "Time taken for your vehicle to return to zero from full preheat."
+
+msgid "tank_params/desc/preheatTransitionDelay"
+msgstr ""
+"During this delay, your vehicle's preheat will neither increase nor "
+"decrease."
 
 msgid "tank_params/desc/radioDistance"
 msgstr ""
@@ -13669,6 +14104,15 @@ msgstr ""
 "vehicles. The communication range is represented by a circle with a radius "
 "that is set for this parameter. When several circles overlap, information is"
 " shared at any distance."
+
+msgid "tank_params/desc/reactivationDelay"
+msgstr ""
+"Cooldown time required before the boosters can be activated again after use."
+
+msgid "tank_params/desc/reactivationLimit"
+msgstr ""
+"The maximum heat level that can be reached before the boosters become "
+"unavailable for reactivation."
 
 msgid "tank_params/desc/relativeArmor"
 msgstr "A set of parameters that show the vehicle's resilience to damage."
@@ -13696,6 +14140,9 @@ msgstr ""
 msgid "tank_params/desc/reloadTime"
 msgstr "Number of rounds per minute."
 
+msgid "tank_params/desc/reloadTimeCoincidence"
+msgstr "The bonus to gun reload time granted while the sight is active."
+
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr ""
 "Time to reload the gun (or both guns on vehicles with the double-barreled "
@@ -13704,6 +14151,9 @@ msgstr ""
 msgid "tank_params/desc/reloadTimeSecs/twinGun"
 msgstr ""
 "Time to reload the gun after firing (single fire mode/salvo fire mode)."
+
+msgid "tank_params/desc/reverseSpeedReductionWithBoosters"
+msgstr "The reduction in vehicle reverse speed while the boosters are active."
 
 msgid "tank_params/desc/rocketAccelerationEnginePower"
 msgstr ""
@@ -13717,6 +14167,24 @@ msgstr ""
 
 msgid "tank_params/desc/rocketAccelerationSpeedLimits"
 msgstr "Nominal vehicle speed with activated jet boosters."
+
+msgid "tank_params/desc/secondaryAvgDamage"
+msgstr ""
+"Average damage caused by an auxiliary weapon shell after an armor-"
+"penetrating hit. The potential damage dispersion is +/- 25% of the average "
+"value."
+
+msgid "tank_params/desc/secondaryAvgPiercingPower"
+msgstr ""
+"Average armor thickness penetrated by an auxiliary weapon shell, adjusted "
+"for shell normalization. The dispersion is +/- 25% of the average value."
+
+msgid "tank_params/desc/secondaryReloadTimeSecs"
+msgstr "Time to reload the auxiliary weapons after firing."
+
+msgid "tank_params/desc/secondaryTotalBurstSize"
+msgstr ""
+"Number of shells available for the auxiliary weapons during each activation."
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
@@ -13737,6 +14205,16 @@ msgstr ""
 msgid "tank_params/desc/speedLimits"
 msgstr "Vehicle speed as it is defined in its technical characteristics."
 
+msgid "tank_params/desc/stationaryReloadSwitchOffTime"
+msgstr ""
+"Time before the turret is unlocked and the vehicle can fire again after "
+"interrupting the reloading process."
+
+msgid "tank_params/desc/stationaryReloadSwitchOnTime"
+msgstr ""
+"Time to link the turret with the external ammo pods and start the reloading "
+"process."
+
 msgid "tank_params/desc/stunMaxDuration"
 msgstr ""
 "Displays the maximum stun duration applied to the enemy crew, if the HE-"
@@ -13748,6 +14226,9 @@ msgstr ""
 "Shows the minimum duration of stun inflicted upon the enemy crew if the "
 "enemy vehicle is in the damage radius and is not equipped with consumables "
 "or equipment that decrease stun duration."
+
+msgid "tank_params/desc/switchEngineModeBothModes"
+msgstr "Time taken to switch between Engagement and Turbo mode."
 
 msgid "tank_params/desc/switchOffTime"
 msgstr ""
@@ -13771,6 +14252,15 @@ msgid "tank_params/desc/timeOfReaching"
 msgstr ""
 "This parameter is a ground resistance coefficient expressed by the time a vehicle needs to travel 100 m at a dead level starting from a static position.\n"
 "Values are shown for hard/moderately soft/soft ground."
+
+msgid "tank_params/desc/topSpeedWithBoosters"
+msgstr "The bonus to vehicle top speed granted by the boosters."
+
+msgid "tank_params/desc/traverseSpeedReductionWithBoosters"
+msgstr "The reduction in hull traverse speed while the boosters are active."
+
+msgid "tank_params/desc/turboSpeedCap"
+msgstr "Additional speed gained by the vehicle in Turbo mode."
 
 msgid "tank_params/desc/turboshaftBurstFireRate"
 msgstr ""
@@ -13825,10 +14315,7 @@ msgid "tank_params/desc/twinGunTopSpeed"
 msgstr "Nominal vehicle speed in salvo fire mode."
 
 msgid "tank_params/desc/vehicleWeight"
-msgstr ""
-"This parameter determines the load limit of the vehicle, where the load "
-"consists of modules and equipment. Weight also determines the effectiveness "
-"of ramming."
+msgstr "Weight determines the effectiveness of ramming."
 
 msgid "tank_params/desc/wheeledSpeedModeSpeed"
 msgstr "The parameter for the Rapid mode."
@@ -14324,6 +14811,21 @@ msgstr "All Researched Modules"
 msgid "vehicle/ammo"
 msgstr "In the ammo"
 
+msgid "vehicle/battlePass/earningLimit"
+msgstr "Battle Pass Point Limit"
+
+msgid "vehicle/battlePass/limitReached"
+msgstr "Battle Pass Point Limit reached"
+
+msgid "vehicle/battlePass/reward"
+msgstr "Reward for Reaching the Point Limit"
+
+msgid "vehicle/bonds/earningLimit"
+msgstr "Weekly bonds earning limit"
+
+msgid "vehicle/bonds/limitReached"
+msgstr "until the Bond limit will refresh"
+
 msgid "vehicle/buy_price"
 msgstr "Purchase"
 
@@ -14332,6 +14834,9 @@ msgstr "Purchase price"
 
 msgid "vehicle/crew"
 msgstr "Crew"
+
+msgid "vehicle/crewRoles"
+msgstr "Crew ({{count}})"
 
 msgid "vehicle/crew_award"
 msgstr "Crew (%d%%)"
@@ -14470,6 +14975,9 @@ msgstr "Hours left to recover"
 msgid "vehicle/restore_price"
 msgstr "Recovery"
 
+msgid "vehicle/role"
+msgstr "Role"
+
 msgid "vehicle/sell_price"
 msgstr "Sale"
 
@@ -14503,8 +15011,11 @@ msgstr "Subscription suspended"
 msgid "vehicle/wotPlusRenting/remainingTime"
 msgstr "Active until %(time)s"
 
+msgid "vehicle/wotPlusRenting/title"
+msgstr "This vehicle is exclusive to the WoT Plus subscription."
+
 msgid "vehicle/xp"
-msgstr "Combat Experience"
+msgstr "Combat XP"
 
 msgid "vehicleCrystal/limitStatus/common/description"
 msgstr "%(max)s Weekly bonds earning limit"
@@ -14582,6 +15093,10 @@ msgstr "%(name)s Standard Modification"
 
 msgid "vehicleParams/bonus/vehPostProgressionPairModification/template"
 msgstr "%(name)s Modification"
+
+msgid ""
+"vehicleParams/bonus/vehSkillTreePostProgressionBaseModification/template"
+msgstr "Upgrade bonus"
 
 msgid "vehicleParams/bonuses/title"
 msgstr "Parameter Modifiers:"
@@ -14680,7 +15195,7 @@ msgid "vehiclePreview/boxTooltip/shell/header"
 msgstr "Shell %(value)s"
 
 msgid "vehiclePreview/boxTooltip/statTracker/header"
-msgstr "%(value)s"
+msgstr "Stat Tracker: %(value)s"
 
 msgid "vehiclePreview/boxTooltip/style/header"
 msgstr "%(value)s Style"
@@ -14721,7 +15236,8 @@ msgstr "Purchase Unavailable"
 
 msgid "vehiclePreview/buyButton/parentModuleIsLocked/body"
 msgstr ""
-"To research this vehicle, research the modules of the preceding vehicle."
+"The previous vehicle and/or its modules required to access this vehicle are "
+"not researched."
 
 msgid "vehiclePreview/buyButton/parentModuleIsLocked/header"
 msgstr "Unable to Research"
@@ -15136,9 +15652,6 @@ msgstr "?empty?"
 
 msgid "vehicleStatus/subscription_suspended/header"
 msgstr "Not available"
-
-msgid "vehicleStatus/tooHeavy/header"
-msgstr "Vehicle Overloaded"
 
 msgid "vehicleStatus/undamaged/header"
 msgstr "Ready for battle"

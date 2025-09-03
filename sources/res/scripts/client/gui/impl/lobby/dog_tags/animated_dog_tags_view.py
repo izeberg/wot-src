@@ -32,20 +32,19 @@ _logger = logging.getLogger(__name__)
 
 class AnimatedDogTagsView(ViewImpl):
     __slots__ = ('_dogTagsHelper', '_composer', '__initBackgroundId', '__initEngravingId',
-                 '__closeCallback', '__uiLogger')
+                 '__uiLogger')
     _webCtrl = dependency.descriptor(IWebController)
     lobbyContext = dependency.descriptor(ILobbyContext)
     _COMMON_SOUND_SPACE = ACC_DASHBOARD_SOUND_SPACE
 
-    def __init__(self, layoutID=R.views.lobby.dog_tags.AnimatedDogTagsView(), initBackgroundId=0, initEngravingId=0, closeCallback=None, makeTopView=True, *args, **kwargs):
+    def __init__(self, layoutID=R.views.lobby.dog_tags.AnimatedDogTagsView(), initBackgroundId=0, initEngravingId=0, *args, **kwargs):
         settings = ViewSettings(layoutID)
         settings.args = args
         settings.kwargs = kwargs
-        settings.flags = ViewFlags.LOBBY_TOP_SUB_VIEW if makeTopView else ViewFlags.LOBBY_SUB_VIEW
+        settings.flags = ViewFlags.LOBBY_TOP_SUB_VIEW
         settings.model = AnimatedDogTagsViewModel()
         self.__initBackgroundId = initBackgroundId
         self.__initEngravingId = initEngravingId
-        self.__closeCallback = closeCallback
         self._dogTagsHelper = BigWorld.player().dogTags
         self._composer = AnimatedDogTagComposer(self._dogTagsHelper)
         self.__uiLogger = AnimatedDogTagsViewLogger(DogTagsViewKeys.DOG_TAG)
@@ -81,7 +80,6 @@ class AnimatedDogTagsView(ViewImpl):
         self.__update()
 
     def _onLoaded(self, *args, **kwargs):
-        Waiting.hide('loadPage')
         self.__uiLogger.onViewOpen(DogTagsViewKeys.ANIMATED_DOG_TAG, DogTagsViewKeys.ACCOUNT_DASHBOARD)
         if not userSettings.getDogTagsSettings().animatedDogTagsVisited:
             with userSettings.dogTagsSettings() as (dt):
@@ -101,8 +99,6 @@ class AnimatedDogTagsView(ViewImpl):
 
     def __onClose(self):
         self.destroyWindow()
-        if callable(self.__closeCallback):
-            self.__closeCallback()
 
     def __update(self):
         with self.viewModel.transaction() as (tx):
@@ -126,7 +122,7 @@ class AnimatedDogTagsView(ViewImpl):
     def __onGoToAchievement(self, achievementId, category, background, engraving):
         Waiting.show('loadPage')
         initAchievementsIds = createAdvancedAchievementsCatalogInitAchievementIDs(achievementId, category)
-        showAdvancedAchievementsCatalogView(initAchievementsIds, category, closeCallback=_getCatalogCallback(background, engraving, self.__closeCallback), parentScreen=DogTagsViewKeys.ANIMATED_DOG_TAG)
+        showAdvancedAchievementsCatalogView(initAchievementsIds, category, closeCallback=_getCatalogCallback(background, engraving), parentScreen=DogTagsViewKeys.ANIMATED_DOG_TAG)
         self.__uiLogger.logClickAchievement(DogTagKeys.ACHIEVEMENT_CARD, achievementId, category)
         self.destroyWindow()
 
@@ -165,14 +161,13 @@ class AnimatedDogTagsView(ViewImpl):
                 self.destroyWindow()
 
 
-def _getCatalogCallback(backgroundId, engravingId, closeCallback):
+def _getCatalogCallback(backgroundId, engravingId):
 
-    def backToAnimatedDT(backgroundId, engravingId, closeCallback):
+    def backToAnimatedDT(backgroundId, engravingId):
         uiLoader = dependency.instance(IGuiLoader)
         achievementsMainView = uiLoader.windowsManager.getViewByLayoutID(R.views.lobby.achievements.AchievementsMainView())
         if achievementsMainView is None:
-            Waiting.show('loadPage')
-            showAnimatedDogTags(backgroundId, engravingId, closeCallback)
+            showAnimatedDogTags(backgroundId, engravingId)
         return
 
-    return partial(backToAnimatedDT, backgroundId, engravingId, closeCallback)
+    return partial(backToAnimatedDT, backgroundId, engravingId)

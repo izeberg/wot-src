@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.019
+			0.044
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.038
+			0.088
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.057
+			0.132
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -244,7 +244,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14200</weight>
-			<maxLoad>50500</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.7
 				<!--BW_String-->
@@ -2124,10 +2123,6 @@
 					<!--BW_String-->
 				</repairCost>
 			</surveyingDeviceHealth>
-			<invisibilityFactor>
-				2.421
-				<!--BW_String-->
-			</invisibilityFactor>
 			<guns>
 				<_90mm_canon_DCA_45_BPXIV>
 					shared

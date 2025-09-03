@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F135_AS_XX_40_t/crash/lod3/Hull</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.697036 -0.909406 -3.580062</min>
+		<max>1.619304 1.106101 3.508185</max>
+	</visibilityBox>
+	<parent>vehicles/french/F135_AS_XX_40_t/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+</root>

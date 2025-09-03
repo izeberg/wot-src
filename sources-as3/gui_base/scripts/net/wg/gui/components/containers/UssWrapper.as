@@ -8,5 +8,10 @@ package net.wg.gui.components.containers
       {
          super();
       }
+      
+      override public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
    }
 }

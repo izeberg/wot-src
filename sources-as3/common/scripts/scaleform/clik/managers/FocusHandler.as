@@ -10,6 +10,7 @@ package scaleform.clik.managers
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import flash.utils.Dictionary;
+   import net.wg.utils.StaticUtils;
    import scaleform.clik.constants.FocusMode;
    import scaleform.clik.constants.InputValue;
    import scaleform.clik.constants.NavigationCode;
@@ -421,6 +422,7 @@ package scaleform.clik.managers
       {
          var _loc2_:InteractiveObject = null;
          var _loc3_:InteractiveObject = null;
+         DebugUtils.LOG_TRACE("updateActualFocus: (" + param1.type + "): " + StaticUtils.getObjectHierarchy(param1.target as InteractiveObject));
          if(param1.type == FocusEvent.FOCUS_IN)
          {
             _loc2_ = param1.relatedObject as InteractiveObject;

@@ -15,7 +15,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.046
+			0.047
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -1392,7 +1392,6 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>9000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				1.3 1.4 2.3
 				<!--BW_String-->
@@ -3316,7 +3315,7 @@
 	<turrets0>
 		<Turret_1_S16_Kranvagn>
 			<userString>#sweden_vehicles:Turret_1_S16_Kranvagn</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>10</level>
 			<price>66000</price>
 			<notInShop>true</notInShop>
@@ -3368,6 +3367,7 @@
 						<armor_9>
 							50
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_9>
 						<armor_10>150</armor_10>
 						<armor_11>100</armor_11>
@@ -3379,7 +3379,7 @@
 					<pitchLimits>
 						<minPitch>0 -10 1 -10</minPitch>
 						<maxPitch>
-							0 12 0.416667 12 0.444444 7 0.463889 7 0.477778 11 0.522222 11 0.536111 7 0.555556 7 0.583333 12 1 12
+							0.00000 12.00 0.42222 12.00 0.44444 7.50 0.46667 7.50 0.47778 11.50 0.52222 11.50 0.53333 7.50 0.55556 7.50 0.57778 12.00 1.00000 12.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>

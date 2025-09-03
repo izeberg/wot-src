@@ -82,7 +82,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>-0.000000 0.000000 1.000000</row2>
+							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
 						</transform>
 						<node>
@@ -188,7 +188,7 @@
 					<node>
 						<identifier>W_L3</identifier>
 						<transform>
-							<row0>1.000000 0.000000 0.000000</row0>
+							<row0>1.000000 0.000000 -0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
@@ -226,7 +226,7 @@
 						<transform>
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
-							<row2>0.000000 0.000000 1.000000</row2>
+							<row2>-0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
 						</transform>
 						<node>
@@ -263,7 +263,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>-0.000000 -0.000000 1.000000</row2>
-							<row3>-0.000000 0.408356 0.000000</row3>
+							<row3>0.000000 0.408356 0.000000</row3>
 						</transform>
 						<node>
 							<identifier>W_R0_BlendBone</identifier>
@@ -296,7 +296,7 @@
 					<node>
 						<identifier>W_R1</identifier>
 						<transform>
-							<row0>1.000000 0.000000 -0.000000</row0>
+							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
 							<row3>0.000000 0.408356 0.000000</row3>
@@ -843,18 +843,6 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
 				</material>
 				<groupOrigin>-1.219107 0.592872 -0.033164</groupOrigin>
 			</primitiveGroup>
@@ -892,18 +880,6 @@
 					<property>
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.219107 0.592871 -0.033164</groupOrigin>

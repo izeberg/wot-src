@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G185_Leopard_120_Verbessert/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/german/G185_Leopard_120_Verbessert/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.701113 -0.931126 -3.633876</min>
+		<max>1.698414 0.738073 3.454760</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

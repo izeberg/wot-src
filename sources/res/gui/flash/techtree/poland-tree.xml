@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>10</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<Pl14_4TP>
@@ -153,6 +153,13 @@
 		<Pl21_CS_63>
 			<row>8</row>
 			<column>10</column>
+			<lines>
+				<Pl37_CS_67_Szakal/>
+			</lines>
 		</Pl21_CS_63>
+		<Pl37_CS_67_Szakal>
+			<row>8</row>
+			<column>11</column>
+		</Pl37_CS_67_Szakal>
 	</nodes>
 </root>

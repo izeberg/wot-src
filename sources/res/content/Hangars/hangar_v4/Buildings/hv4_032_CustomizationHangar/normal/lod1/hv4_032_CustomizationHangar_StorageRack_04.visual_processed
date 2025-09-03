@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/hv4_032_CustomizationHangar_StorageRack_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/hv4_032_CustomizationHangar_StorageRack_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/hv4_032_CustomizationHangar_StorageRack_ANM.dds</Texture>
+					</property>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.010301 3.295197 -0.138964</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_001_Car/hv4_Glass_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_001_Car/hv4_Glass_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_001_Car/hv4_Glass_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.049662 5.959912 -1.094513</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.114726 -0.004199 -1.162841</min>
+		<max>2.135328 6.594594 0.884914</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>153984</geometrySize>
+</root>

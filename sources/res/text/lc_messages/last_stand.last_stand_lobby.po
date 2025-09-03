@@ -1,0 +1,653 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"You can customize the default event hotkey presets for shells and Combat Abilities.\n"
+"This change applies only to event battles and will not affect any other modes.\n"
+"You can still modify individual hotkeys in Menu — Settings — Controls (under Consumables)."
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "Consumable Hotkey Presets Change"
+
+msgid "badgeWidget/round"
+msgstr "%(count)s K"
+
+msgid "badgeWidget/tooltipBody"
+msgstr ""
+"Complete this mission to receive a unique Last Stand: Operation Pandora "
+"badge:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "Epic Achievement Mission"
+
+msgid "bundleView/btn/keys"
+msgstr "Purchase"
+
+msgid "bundleView/btn/shop"
+msgstr "View in Store"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "MOBILIZE SENTINELS"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "CUSTOMIZE"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "3D STYLE"
+
+msgid "bundleView/bundle/header/ls2_0bundle_key"
+msgstr "PURCHASE KEYS"
+
+msgid "bundleView/bundle/serviceChannelMessages/ls2_0bundle_key"
+msgstr "Keys purchased"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr "An exclusive bundle to help you get the most out of the event."
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "A set of 3D attachments that capture the atmosphere of Last Stand."
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr "A unique 3D style that captures the atmosphere of the event."
+
+msgid "bundleView/bundle/subHeader/ls2_0bundle_key"
+msgstr ""
+"Purchase enough Keys to decrypt or skip Records. One event Key costs "
+"%(cost)s gold."
+
+msgid "bundleView/eventName"
+msgstr "Last Stand '25"
+
+msgid "bundleView/reward/artefact_key"
+msgstr "Decryption Keys (Bonus)"
+
+msgid "bundleView/subTitle"
+msgid_plural "plural/bundleView/subTitle"
+msgstr[0] "{key} MORE REQUIRED FOR RECORD {slide}"
+msgstr[1] "{key} MORE REQUIRED FOR RECORD {slide}"
+msgstr[2] "{key} MORE REQUIRED FOR RECORD {slide}"
+
+msgid "bundleView/title"
+msgstr "DECRYPTION KEYS"
+
+msgid "bundleView/title/default"
+msgstr "SELECT KEY PURCHASE METHOD"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "SELECT THE AMOUNT OF KEYS TO PURCHASE"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "SELECT AN EVENT BUNDLE"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr ""
+"The option to earn ×5 XP, starting from the second victory of the day in any"
+" vehicle."
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "Mission for ×5 to XP earned in battle"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "Set the number of Keys to decrypt or skip locked Records."
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "Keys to decrypt locked Records"
+
+msgid "carousel/card/crewIncomplete"
+msgstr "Crew incomplete"
+
+msgid "carousel/card/inBattle"
+msgstr "In battle"
+
+msgid "carousel/card/inCN"
+msgstr "Only available in %(icon)s"
+
+msgid "carousel/card/inPlatoon"
+msgstr "In tactical unit"
+
+msgid "carousel/card/locked"
+msgstr "Locked "
+
+msgid "carousel/card/lowEfficiency"
+msgstr "Low efficiency"
+
+msgid "carousel/card/rent"
+msgstr "Rent"
+
+msgid "carousel/card/rented"
+msgstr "Rental period ended"
+
+msgid "carousel/card/repair"
+msgstr "Repairs required"
+
+msgid "carousel/card/suspended"
+msgstr "Suspended"
+
+msgid "carousel/card/untrainedCrew"
+msgstr "Untrained crew"
+
+msgid "carousel/daily/header"
+msgstr "Daily vehicle mission"
+
+msgid "carousel/filter/count"
+msgstr "%(filteredCount)s / %(allCount)s"
+
+msgid "carousel/filterReset/tooltipBody"
+msgstr "Click to reset filter settings to default."
+
+msgid "carousel/filterReset/tooltipHeader"
+msgstr "Set by Default"
+
+msgid "carousel/filters/tooltipBody"
+msgstr ""
+"Configure the display of vehicles by their type, nation, and other "
+"parameters."
+
+msgid "carousel/filters/tooltipHeader"
+msgstr "Filter by Parameters"
+
+msgid "carousel/popover/header"
+msgstr ""
+"Displayed vehicles: {whiteSpanish_Start}%(filteredCount)s{whiteSpanish_End} "
+"/ %(allCount)s"
+
+msgid "carousel/popover/nation"
+msgstr "Nation"
+
+msgid "carousel/popover/nationBody"
+msgstr "Show/hide vehicles of this nation"
+
+msgid "carousel/popover/search"
+msgstr "Search by name"
+
+msgid "carousel/popover/special"
+msgstr "Special"
+
+msgid "carousel/popover/title"
+msgstr "Filter by Parameters"
+
+msgid "carousel/popover/type"
+msgstr "Type"
+
+msgid "carousel/popover/typeBody"
+msgstr "Show/hide vehicles of this type"
+
+msgid "carousel/premium/tooltipBody"
+msgstr "Show/hide only Premium vehicles."
+
+msgid "carousel/premium/tooltipHeader"
+msgstr "Premium Vehicles"
+
+msgid "carousel/primary/tooltipBody"
+msgstr "Show/hide only primary vehicles."
+
+msgid "carousel/primary/tooltipHeader"
+msgstr "Primary Vehicles"
+
+msgid "carousel/title/goToRandom"
+msgstr "To Random Battles"
+
+msgid "carousel/title/needRepair"
+msgstr ""
+"This vehicle cannot be selected due to an issue that can only be resolved in"
+" Random Battle mode."
+
+msgid "common/back"
+msgstr "BACK"
+
+msgid "common/close"
+msgstr "CLOSE"
+
+msgid "common/progress"
+msgstr "{value} / {maxValue}"
+
+msgid "common/toEvent"
+msgstr "TO EVENT"
+
+msgid "common/toRewardPath"
+msgstr "TO REWARD PATH"
+
+msgid "common/yes"
+msgstr "AFFIRMATIVE!"
+
+msgid "decrypt/affirmative"
+msgstr "AFFIRMATIVE!"
+
+msgid "decrypt/completed"
+msgstr "Objective completed. Rewards received:"
+
+msgid "decrypt/continue"
+msgstr "CONTINUE"
+
+msgid "decrypt/voiceover"
+msgstr "Voiceover"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr ""
+"Enables or disables voice narration on all screens with decrypted Records."
+
+msgid "difficult/daily"
+msgstr "DAILY KEYS MISSION UNLOCKED"
+
+msgid "difficult/disabled/body"
+msgstr ""
+"You are in a Platoon. Only the Commander can change the difficulty level."
+
+msgid "difficult/disabled/header"
+msgstr "Changing Difficulty Unavailable"
+
+msgid "difficult/level_1"
+msgstr "Basic"
+
+msgid "difficult/level_2"
+msgstr "Intense"
+
+msgid "difficult/level_3"
+msgstr "Brutal"
+
+msgid "difficult/new"
+msgstr "NEW"
+
+msgid "difficult/tooltip/description/level1"
+msgstr ""
+"Enemies have lower durability and weaker armor. Standard battle reward."
+
+msgid "difficult/tooltip/description/level2"
+msgstr ""
+"Enemies have stronger armor, while the reward and the number of Keys earned "
+"per battle are increased."
+
+msgid "difficult/tooltip/description/level3"
+msgstr ""
+"There are more enemies with stronger armor. The reward and the number of "
+"Keys earned per battle are increased."
+
+msgid "difficult/tooltip/description/reward"
+msgstr "Rewards for destroying waves for the first time:"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "Basic Difficulty"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "Intense Difficulty"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "Brutal Difficulty"
+
+msgid "difficult/tooltip/locked"
+msgstr "Difficulty Locked"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "To unlock this difficulty level, complete the Basic difficulty level."
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr ""
+"To unlock this difficulty level, complete the Intense difficulty level."
+
+msgid "difficult/tooltip/state/default"
+msgstr "Difficulty Available"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "Difficulty Selected"
+
+msgid "difficult/tooltip/subHeader"
+msgstr "Waves destroyed: {count}"
+
+msgid "difficult/uppercase/level_1"
+msgstr "BASIC"
+
+msgid "difficult/uppercase/level_2"
+msgstr "INTENSE"
+
+msgid "difficult/uppercase/level_3"
+msgstr "BRUTAL"
+
+msgid "difficultyWindow/description/level_2"
+msgstr ""
+"Enemies have stronger armor, while the reward and the number of Keys earned "
+"per battle are increased."
+
+msgid "difficultyWindow/description/level_3"
+msgstr ""
+"There are more enemies with stronger armor. The reward and the number of "
+"Keys earned per battle are increased."
+
+msgid "difficultyWindow/description/level_4"
+msgstr ""
+"Battle and defeat waves of enemies, and show your prowess by reaching the "
+"top of the Leaderboard. Unique rewards and much more await you."
+
+msgid "difficultyWindow/header/level_2"
+msgstr "INTENSE DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "BRUTAL DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/header/level_4"
+msgstr "LAST STAND MODE"
+
+msgid "difficultyWindow/headerShort/level_2"
+msgstr "INTENSE"
+
+msgid "difficultyWindow/headerShort/level_3"
+msgstr "BRUTAL"
+
+msgid "difficultyWindow/headerShort/level_4"
+msgstr "'LAST STAND'"
+
+msgid "difficultyWindow/title"
+msgstr "AVAILABLE"
+
+msgid "hangar/exit"
+msgstr "LEAVE EVENT"
+
+msgid "hangar/tooltip/about"
+msgstr "Learn more about the Last Stand: Proving Ground event."
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "COMBAT ABILITIES"
+
+msgid "hangarAmmunitionSetup/navigation"
+msgstr "LOADOUT"
+
+msgid "headerButtons/battle/types/last_stand"
+msgstr "Last Stand"
+
+msgid "iconButton/comparison/default"
+msgstr "Vehicle comparison"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "Vehicle comparison is unavailable"
+
+msgid "iconButton/preview/default"
+msgstr "Preview vehicle"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "Vehicle preview is unavailable"
+
+msgid "keyCard/name"
+msgstr "Decryption Keys"
+
+msgid "kingRewardCongratsView/btn/continue"
+msgstr "CONTINUE"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "AFFIRMATIVE!"
+
+msgid "kingRewardCongratsView/header"
+msgstr "MAIN REWARD RECEIVED"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "Rewards for decrypting the final Record:"
+
+msgid "kingRewardCongratsView/title"
+msgstr "FINAL OBJECTIVE COMPLETED"
+
+msgid "meta/btn/decrypt"
+msgstr "DECRYPT"
+
+msgid "meta/btn/skip"
+msgstr "SKIP"
+
+msgid "meta/btn/view"
+msgstr "VIEW"
+
+msgid "meta/receive/description"
+msgstr ""
+"Collect %(keys) / %(decrypt) %(icon) \n"
+"to decrypt this Record"
+
+msgid "meta/shortStory/ls_artefact_1"
+msgstr ""
+"Echo tanks under blue skies. I did everything to prevent this from "
+"happening. Yet here we are."
+
+msgid "meta/shortStory/ls_artefact_2"
+msgstr ""
+"Press a button, and they come running here like rats. And they have no "
+"choice."
+
+msgid "meta/shortStory/ls_artefact_3"
+msgstr ""
+"Once you learn their patterns, a battle becomes a hunt. You play by their "
+"rules, you lose. Set your own rules? Victory's in the bag."
+
+msgid "meta/shortStory/ls_artefact_4"
+msgstr ""
+"Mirror Phase trials completed with full success. The Phase remains stable "
+"and securely isolated from our dimension."
+
+msgid "meta/story/ls_artefact_1"
+msgstr ""
+"Echo tanks under blue skies. I did everything to prevent this from "
+"happening. Yet here we are.{paragraph_open}{paragraph_close}There's "
+"something surreal about engaging these monstrosities in broad daylight. No "
+"fog, no darkness, no eerie mist—just dazzling sunshine gleaming on their "
+"twisted metal.{paragraph_open}{paragraph_close}The strangest part? Without "
+"all that gloom, I feel stronger. More focused. That gnawing fear that used "
+"to crawl up my spine is gone, replaced by something more primal. More "
+"electric.{paragraph_open}{paragraph_close}It's pure adrenaline now. And "
+"damn, it feels good.{paragraph_open}{paragraph_close}Come on, "
+"{violet_open}Pied Piper{violet_close}—work those fingers, play your tune. "
+"Lead a new batch to us."
+
+msgid "meta/story/ls_artefact_2"
+msgstr ""
+"You know what's beautiful? We can finally control these bastards—to an "
+"extent, at least.{paragraph_open}{paragraph_close}This "
+"{violet_open}Wavebreaker{violet_close} device we've rigged up is something "
+"else. When we activate it, the echo tanks go completely berserk. Press a "
+"button, and they come running here like rats. And they have no choice. "
+"They'll do anything to destroy the source of the "
+"signal.{paragraph_open}{paragraph_close}The operator we named "
+"{violet_open}\"Pied Piper\"{violet_close} is a strange one. Where the "
+"command finds these types, I'll never know. This one's definitely been in "
+"the anomaly. Seems a bit cracked in the head. But he knows his business. "
+"It's like he can feel those things. The way he works that device, he's not "
+"operating it—he's playing it like some kind of musical instrument. Gives me "
+"the creeps watching his fingers dance across those "
+"controls.{paragraph_open}{paragraph_close}He sets the required settings, and"
+" we decide ourselves how the battle unfolds: the frequency of waves, as well"
+" as the number and even the types of enemy "
+"vehicles.{paragraph_open}{paragraph_close}The tables have turned. We're "
+"fighting on our terms now. No more reacting to threats. No more trying to "
+"survive. We're the hunters, and they're running straight into our "
+"crosshairs.{paragraph_open}{paragraph_close}I could get used to this."
+
+msgid "meta/story/ls_artefact_3"
+msgstr ""
+"What we're doing here isn't just warfare anymore—it's a safari. Dangerous, "
+"sure, but calculated. Controlled. We know exactly what we're dealing with "
+"now.{paragraph_open}{paragraph_close}Once you learn their patterns, a battle"
+" becomes a hunt. You play by their rules, you lose. Set your own rules? "
+"Victory's in the bag.{paragraph_open}{paragraph_close}We've got the best of "
+"the best here. This stuff is definitely not for newbies. But the enemy is "
+"still dangerous.{paragraph_open}{paragraph_close}The crews size each other "
+"up after each engagement—comparing kills, watching each other's tactics. And"
+" that way, we get healthy competition.{paragraph_open}{paragraph_close}Each "
+"of us wants to prove their worth, show what they're made "
+"of.{paragraph_open}{paragraph_close}Just a bit longer and our trials will be"
+" complete. The command will be impressed with the results, that's for sure. "
+"Echo tanks don't stand a chance against us anymore. Nobody does."
+
+msgid "meta/story/ls_artefact_4"
+msgstr ""
+"{header_open}CAPTAIN SMITH'S REPORT{header_close}\n"
+"{header_open}TOP SECRET{header_close}{paragraph_open}{paragraph_close}Mirror Phase trials completed with full success. The Phase remains stable and securely isolated from our dimension. The {violet_open}Wavebreaker{violet_close} functions exactly as calculated. Technical data obtained from the Architect's satellite has been fully validated in practice.{paragraph_open}{paragraph_close}Personnel demonstrate increased efficiency in Mirror Phase conditions. The absence of most stress factors allows crews to focus entirely on tactical aspects of battling echo tanks.{paragraph_open}{paragraph_close}However, I must express my concern regarding the plans to build similar {violet_open}Wavebreaker{violet_close} complexes in other regions. I question the necessity of such measures. The existing complex possesses all required infrastructure and can be scaled up to train additional crews.{paragraph_open}{paragraph_close}I would also like to address information about the planned construction of observation platforms with premium zones for high-ranking officers and special observers. Despite the relative safety of operations in the Mirror Phase, I consider such measures inappropriate. Combat training is not a spectacle for entertaining guests, regardless of their rank.{paragraph_open}{paragraph_close}Sincerely,\n"
+"Captain Smith"
+
+msgid "metaIntro/description/fight"
+msgstr ""
+"Fight in event battles and earn Decryption Keys to progress through "
+"Objectives toward the main event reward."
+
+msgid "metaIntro/description/progress"
+msgstr "Decrypt all Records using Decryption Keys earned in event battles."
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"Complete Objectives and decrypt Records to receive "
+"{whiteSpanish_Start}special event rewards{whiteSpanish_End}."
+
+msgid "metaIntro/header/fight"
+msgstr "Battle Raids"
+
+msgid "metaIntro/header/progress"
+msgstr "Decrypting Records"
+
+msgid "metaIntro/header/reward"
+msgstr "Unique Rewards"
+
+msgid "metaIntro/title"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "missionWidget/complete"
+msgstr ""
+"Mission complete.\n"
+"Come back tomorrow."
+
+msgid "missionWidget/tooltipBody"
+msgstr ""
+"Complete current Daily Mission which is available every 24 h to receive the "
+"reward. Today's mission:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "Daily Mission"
+
+msgid "preBattle/leave"
+msgstr "Exit Battle"
+
+msgid "preBattle/searching"
+msgstr "Searching for allies..."
+
+msgid "preBattle/tip"
+msgstr ""
+"Taking too long to find a Recon Squad? Try changing the difficulty level."
+
+msgid "preBattle/uppercase/leave"
+msgstr "EXIT BATTLE"
+
+msgid "promoWindow/btn"
+msgstr "AFFIRMATIVE!"
+
+msgid "promoWindow/header"
+msgstr "PLAY LAST STAND"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"Explore a new chapter of the Last Stand PvE game mode from {dateRange}.\n"
+"Earn a set of event {cream_open}3D attachments{cream_close}, Experimental Equipment, and exclusive rewards."
+
+msgid "reward/rest"
+msgstr "And %(count)s more"
+
+msgid "rewardPath/about"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "Learn more about the event."
+
+msgid "rewardPath/artefacts/title"
+msgstr "Rewards for decrypting Records:"
+
+msgid "rewardPath/completed"
+msgstr "MAIN REWARD RECEIVED"
+
+msgid "rewardPath/description"
+msgid_plural "plural/rewardPath/description"
+msgstr[0] "DECRYPT %(count)s MORE RECORD TO REACH THE MAIN REWARD"
+msgstr[1] "DECRYPT %(count)s MORE RECORDS TO REACH THE MAIN REWARD"
+msgstr[2] "DECRYPT %(count)s MORE RECORDS TO REACH THE MAIN REWARD"
+
+msgid "rewardPath/difficulties/title"
+msgstr "Rewards for destroying waves:"
+
+msgid "rewardPath/intro"
+msgstr "INTRODUCTION"
+
+msgid "rewardPath/introTooltip"
+msgstr "Watch the introductory video."
+
+msgid "rewardPath/title"
+msgstr "REWARD PATH"
+
+msgid "rewardPathCard/name"
+msgstr "Reward Path"
+
+msgid "serviceChannelMessages/bundlePurchase/additionalText"
+msgstr "Spent %(money)s"
+
+msgid "shopCard/name"
+msgstr "Event Bundles"
+
+msgid "squad/goToAnother/cancel"
+msgstr "Cancel"
+
+msgid "squad/goToAnother/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/goToAnother/submit"
+msgstr "Leave"
+
+msgid "squad/goToAnother/title"
+msgstr "Leave the Last Stand: Proving Ground event?"
+
+msgid "squad/leave/cancel"
+msgstr "Cancel"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "Affirmative!"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "The Last Stand: Proving Ground event has ended"
+
+msgid "squad/leave/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/submit"
+msgstr "Leave"
+
+msgid "squad/leave/title"
+msgstr "Leave the Last Stand: Proving Ground Platoon?"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "Continue"
+
+msgid "squad/leaveDisabled/message"
+msgstr "You are in the Platoon and ready for battle."
+
+msgid "squad/leaveDisabled/title"
+msgstr "You cannot leave the Platoon!"
+
+msgid "vehicle/rent/label"
+msgstr ""
+"Complete the Objective or purchase an event bundle to gain access to this "
+"vehicle."
+
+msgid "vehicle/rent/packs"
+msgstr "To Event Bundle"
+
+msgid "vehicle/rent/tasks"
+msgstr "To Objective"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"Complete the current Objective or purchase an event bundle to gain access to"
+" this vehicle."

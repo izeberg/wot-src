@@ -862,7 +862,6 @@
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<weight>18000</weight>
-			<maxLoad>52500</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -2076,7 +2075,7 @@
 	<turrets0>
 		<Turret_1_G168_KJpz_T_III>
 			<userString>#germany_vehicles:Turret_1_G168_KJpz_T_III</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>60000</price>
 			<notInShop>true</notInShop>

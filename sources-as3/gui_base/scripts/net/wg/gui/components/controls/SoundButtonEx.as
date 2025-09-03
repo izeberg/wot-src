@@ -61,6 +61,8 @@ package net.wg.gui.components.controls
       
       private var _useHtmlText:Boolean = false;
       
+      private var _textYPadding:int = 0;
+      
       private var _usePreventUpdateDisable:Boolean = false;
       
       private var _usePreventUpdateTextScale:Boolean = false;
@@ -240,6 +242,7 @@ package net.wg.gui.components.controls
          }
          if(isInvalid(InvalidationType.SIZE))
          {
+            this.updateSize();
             if(this._usePreventUpdateDisable)
             {
                this.updateDisable();
@@ -320,6 +323,10 @@ package net.wg.gui.components.controls
          }
       }
       
+      protected function updateSize() : void
+      {
+      }
+      
       protected function updateDisable() : void
       {
          if(this.disableMc != null)
@@ -345,7 +352,7 @@ package net.wg.gui.components.controls
          {
             textField.scaleX = 1 / this.scaleX;
             textField.scaleY = 1 / this.scaleY;
-            textField.y = this.height - textField.height >> 1;
+            textField.y = (this.height - textField.height >> 1) + this._textYPadding;
          }
       }
       
@@ -591,6 +598,16 @@ package net.wg.gui.components.controls
       protected function onMouseRollOutHandler(param1:MouseEvent) : void
       {
          this.hideTooltip();
+      }
+      
+      public function get textYPadding() : int
+      {
+         return this._textYPadding;
+      }
+      
+      public function set textYPadding(param1:int) : void
+      {
+         this._textYPadding = param1;
       }
    }
 }

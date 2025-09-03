@@ -1,5 +1,5 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.exchange.currency_tab_model import CurrencyTabModel
 from gui.impl.gen.view_models.views.lobby.exchange.exchange_rate_discount_model import ExchangeRateDiscountModel
 from gui.impl.gen.view_models.views.lobby.exchange.exchange_rate_model import ExchangeRateModel

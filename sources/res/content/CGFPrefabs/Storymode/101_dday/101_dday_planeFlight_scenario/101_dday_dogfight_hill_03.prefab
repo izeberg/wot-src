@@ -8,7 +8,7 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>dogfight_hill_03.</name>
+			<name>dogfight_hill_03</name>
 			<UUID>58c01c2d-d1e7-48b4-a395-ca310d49f3fb</UUID>
 			<flags>8</flags>
 		</GameObject>
@@ -26,6 +26,14 @@
 						<link>d95123ff-b85c-465f-9656-b83b81684fe4</link>
 					</property>
 				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>AnimationTimeSyncComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>58c01c2d-d1e7-48b4-a395-ca310d49f3fb</UUID>
+				<flags>35</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>
@@ -63,17 +71,9 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>0 0 0</value>
+						<value>-0 0 0</value>
 					</property>
 				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>AnimationTimeSyncComponent</type>
-			<version>1</version>
-			<component>
-				<UUID>58c01c2d-d1e7-48b4-a395-ca310d49f3fb</UUID>
-				<flags>35</flags>
 			</component>
 		</ComponentPool>
 		<ComponentPool>

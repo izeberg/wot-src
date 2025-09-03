@@ -23,27 +23,32 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
-						g_crashUVTiling
-						<Vector4>
-							2 1 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_ID.dds</Texture>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						diffuseMap
+						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_ID.dds</Texture>
+						g_crashUVTiling
+						<Vector4>2.000000 1.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicGlossMap
@@ -53,24 +58,8 @@
 						normalMap
 						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_ANM.dds</Texture>
 					</property>
-					<property>
-						diffuseMap
-						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_AM.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>64</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>-0.000000 0.018255 1.469558</groupOrigin>
+				<groupOrigin>-0.000646 0.018256 1.333125</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

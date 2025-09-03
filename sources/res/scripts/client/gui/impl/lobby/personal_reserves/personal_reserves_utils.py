@@ -131,6 +131,8 @@ def addDisabledCategories(modelArray, controller):
         model.setIsDisabled(not controller.isGameModeSupported(category))
         modelArray.addViewModel(model)
 
+    modelArray.invalidate()
+
 
 def getTotalBoostersByResourceAndPremium(booster, cache):
     if booster is None:

@@ -105,6 +105,10 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/russian/R110_Object_260/Object260_guns_AO.dds</Texture>
 					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/R110_Object_260/Object260_guns_ID.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.000000 -0.000000 -2.808012</groupOrigin>
 			</primitiveGroup>

@@ -16,7 +16,6 @@ from skeletons.gui.battle_session import IBattleSessionProvider
 from gui.battle_control import avatar_getter
 from gui.impl.common.player_satisfaction_rating.player_satisfaction_sound import playSoundForRating
 from player_satisfaction_schema import playerSatisfactionSchema
-from gui.impl.common.player_satisfaction_rating.randomize_feedback import SELECTION_ORDER, getFeedbackResID
 if typing.TYPE_CHECKING:
     from typing import Tuple, Optional, Callable
     from Event import Event
@@ -26,6 +25,11 @@ _MODEL_TO_COMMON_ENUM_MAP = {RateButtonEnum.WORSE: PlayerSatisfactionRating.WORS
    RateButtonEnum.USUAL: PlayerSatisfactionRating.USUAL, 
    RateButtonEnum.BETTER: PlayerSatisfactionRating.BETTER, 
    RateButtonEnum.UNSET: PlayerSatisfactionRating.NONE}
+SELECTION_ORDER = (
+ PlayerSatisfactionRating.NONE,
+ PlayerSatisfactionRating.WORSE,
+ PlayerSatisfactionRating.USUAL,
+ PlayerSatisfactionRating.BETTER)
 _COMMON_TO_MODEL_ENUM_MAP = {v:k for k, v in _MODEL_TO_COMMON_ENUM_MAP.iteritems()}
 
 class PostmortemPanelView(ViewImpl, CallbackDelayer):
@@ -43,25 +47,25 @@ class PostmortemPanelView(ViewImpl, CallbackDelayer):
     @property
     def isRatingWidgetEnabled--- This code section failed: ---
 
- L.  63         0  LOAD_FAST             0  'self'
+ L.  69         0  LOAD_FAST             0  'self'
                 3  LOAD_ATTR             0  'sessionProvider'
                 6  LOAD_ATTR             1  'arenaVisitor'
                 9  LOAD_ATTR             2  'bonus'
                12  STORE_FAST            1  'bonusTypeVistor'
 
- L.  64        15  LOAD_FAST             1  'bonusTypeVistor'
+ L.  70        15  LOAD_FAST             1  'bonusTypeVistor'
                18  LOAD_ATTR             3  'hasBonusCap'
                21  LOAD_GLOBAL           4  'BONUS_TYPE'
                24  LOAD_ATTR             5  'PLAYER_SATISFACTION_RATING'
                27  CALL_FUNCTION_1       1  None
                30  STORE_FAST            2  'hasBonusCap'
 
- L.  65        33  LOAD_GLOBAL           6  'playerSatisfactionSchema'
+ L.  71        33  LOAD_GLOBAL           6  'playerSatisfactionSchema'
                36  LOAD_ATTR             7  'getModel'
                39  CALL_FUNCTION_0       0  None
                42  STORE_FAST            3  'config'
 
- L.  66        45  LOAD_FAST             3  'config'
+ L.  72        45  LOAD_FAST             3  'config'
                48  POP_JUMP_IF_FALSE    76  'to 76'
                51  LOAD_FAST             2  'hasBonusCap'
                54  JUMP_IF_FALSE_OR_POP    79  'to 79'
@@ -138,14 +142,12 @@ Parse error at or near `RETURN_END_IF' instruction at offset 75
         self.viewModel.setIsRatingWidgetVisible(False)
 
     def _setButtonConfig(self, model):
-        arenaUniqueID = self.sessionProvider.arenaVisitor.getArenaUniqueID()
         buttonArray = model.getRatingButtons()
         buttonArray.clear()
         buttonArray.reserve(len(RateButtonEnum))
         for rating in SELECTION_ORDER:
             buttonModel = model.getRatingButtonsType()()
             buttonModel.setButtonVariant(_COMMON_TO_MODEL_ENUM_MAP[rating])
-            buttonModel.setFeedbackString(getFeedbackResID(rating, arenaUniqueID))
             buttonArray.addViewModel(buttonModel)
 
         buttonArray.invalidate()# Decompile failed :(

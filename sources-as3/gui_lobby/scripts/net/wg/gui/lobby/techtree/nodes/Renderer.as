@@ -325,6 +325,11 @@ package net.wg.gui.lobby.techtree.nodes
          return !!this._dataInited ? Boolean(this._valueObject.isTopActionNode) : Boolean(false);
       }
       
+      public function isVisible() : Boolean
+      {
+         throw new AbstractException(Errors.ABSTRACT_INVOKE);
+      }
+      
       public function isTradeIn() : Boolean
       {
          return this._dataInited && (this._valueObject.state & NODE_STATE_FLAGS.CAN_TRADE_IN) > 0 && !this.isRentAvailable();
@@ -579,6 +584,11 @@ package net.wg.gui.lobby.techtree.nodes
       private function onNodeRollOverHandler(param1:MouseEvent) : void
       {
          this.rollOver();
+      }
+      
+      public function isPromoted() : Boolean
+      {
+         return !!this._dataInited ? Boolean(this._valueObject.isPromoted) : Boolean(false);
       }
    }
 }

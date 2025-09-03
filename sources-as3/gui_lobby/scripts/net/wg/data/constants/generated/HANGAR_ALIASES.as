@@ -19,10 +19,6 @@ package net.wg.data.constants.generated
       
       public static const FUN_RANDOM_TANK_CAROUSEL:String = "funRandomTankCarousel";
       
-      public static const FUN_RANDOM_QFG_TANK_CAROUSEL:String = "funRandomQFGTankCarousel";
-      
-      public static const COMP7_TANK_CAROUSEL:String = "comp7TankCarousel";
-      
       public static const AMMUNITION_PANEL:String = "ammunitionPanel";
       
       public static const RESEARCH_PANEL:String = "researchPanel";
@@ -40,12 +36,6 @@ package net.wg.data.constants.generated
       public static const RANKED_PRIME_TIME:String = "rankedPrimeTime.swf";
       
       public static const EPIC_PRIME_TIME:String = "epicPrimeTime.swf";
-      
-      public static const COMP7_PRIME_TIME:String = "comp7PrimeTime.swf";
-      
-      public static const COMP7_PRIME_TIME_ALIAS:String = "comp7PrimeTime";
-      
-      public static const COMP7_ENTRY_POINT:String = "Comp7EntryPoint";
       
       public static const TANK_CAROUSEL_UI:String = "TankCarouselUI";
       
@@ -75,8 +65,6 @@ package net.wg.data.constants.generated
       
       public static const PRESTIGE_PROGRESS_WIDGET:String = "prestigeProgressWidget";
       
-      public static const EVENT_ENTRANCE_POINT:String = "eventEntrancePoint";
-      
       public static const DAILY_QUEST_WIDGET:String = "dqWidget";
       
       public static const BATTLE_PASSS_ENTRY_POINT:String = "battlePassEntryPoint";
@@ -94,10 +82,6 @@ package net.wg.data.constants.generated
       public static const RESOURCE_WELL_ENTRY_POINT:String = "resourceWellEntryPoint";
       
       public static const BATTLE_MATTERS_ENTRY_POINT:String = "battleMattersEntryPoint";
-      
-      public static const COMP7_WIDGET:String = "comp7Widget";
-      
-      public static const COMP7_MODIFIERS_PANEL:String = "comp7ModifiersPanel";
       
       public static const COMP7_TOURNAMENT_BANNER:String = "comp7TournamentBanner";
       
@@ -136,8 +120,6 @@ package net.wg.data.constants.generated
       public static const FUN_RANDOM_ENTRY_POINT:String = "FunRandomEntryPoint";
       
       public static const FUN_RANDOM_HANGAR_WIDGET:String = "FunRandomHangarWidget";
-      
-      public static const STRENGTHS_WEAKNESSES_PANEL:String = "StrengthsWeaknessesPanel";
       
       public static const EVENT_CREW_HEALING_COMPONENT:String = "eventCrewHealingComponent";
       

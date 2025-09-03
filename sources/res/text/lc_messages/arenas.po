@@ -216,6 +216,26 @@ msgstr ""
 msgid "11_murovanka/name"
 msgstr "Murovanka"
 
+msgid "120_graf_zeppelin/description"
+msgstr ""
+"A remote island in the Norwegian Sea with a strategic rocket base among its "
+"rugged mountains and lush valleys. Hidden by thick fog and swept by strong "
+"northern winds, Nordskar is far from prying eyes—but it still bears the "
+"scars of a devastating battle."
+
+msgid "120_graf_zeppelin/name"
+msgstr "Nordskar"
+
+msgid "120_graf_zeppelin_scc/description"
+msgstr ""
+"A remote island in the Norwegian Sea with a strategic rocket base among its "
+"rugged mountains and lush valleys. Hidden by thick fog and swept by strong "
+"northern winds, Nordskar is far from prying eyes—but it still bears the "
+"scars of a devastating battle."
+
+msgid "120_graf_zeppelin_scc/name"
+msgstr "Nordskar"
+
 msgid "121_lost_paradise_v/description"
 msgstr ""
 "The key fighting area on this volcanic island is a winding rock gorge that "
@@ -345,16 +365,6 @@ msgstr ""
 msgid "210_bf_epic_desert/name"
 msgstr "Fata Morgana"
 
-msgid "212_epic_random_valley/description"
-msgstr ""
-"Two massive mountains surround this peaceful valley. The space is watched "
-"over by the ruins of a castle, ruling over the nearby lake and woods. Vast "
-"fields are the perfect opportunity for fast and stealthy flanking, while a "
-"small village offers a more direct path into battle."
-
-msgid "212_epic_random_valley/name"
-msgstr "Nebelburg"
-
 msgid "212_epic_random_valley_sm25/description"
 msgstr ""
 "High in the mountains stands a solitary fortress manned by a German "
@@ -376,17 +386,6 @@ msgstr ""
 
 msgid "217_er_alaska/name"
 msgstr "Klondike"
-
-msgid "222_er_clime/description"
-msgstr ""
-"The brick factory located on flat terrain and surrounded by country houses "
-"presents a point of interest for both teams. Control over the factory will "
-"benefit a further advance on the enemy base. Crossing the relatively open "
-"areas nearby may be dangerous for heavily-armored vehicles that will be "
-"exposed to attacks from ambush spots and SPG fire."
-
-msgid "222_er_clime/name"
-msgstr "Hinterland"
 
 msgid "23_westfeld/description"
 msgstr ""
@@ -569,29 +568,6 @@ msgstr ""
 msgid "63_tundra/name"
 msgstr "Tundra"
 
-msgid "83_kharkiv/description"
-msgstr ""
-"A deep tank ditch divides the map into two parts—the city and the suburb. In"
-" conditions of urban warfare, make use of frequent cover, piles of rubble, "
-"and barricades. The open map areas pose a threat to stationary vehicles, "
-"exposing them to long-range fire and providing no safe cover from SPGs, "
-"which commands an active style of play with rapid changes of position."
-
-msgid "83_kharkiv/name"
-msgstr "Kharkov"
-
-msgid "90_minsk/description"
-msgstr ""
-"Battles at close and medium range will take place near Victory Square where "
-"heavily armored vehicles with low mobility can find safe cover from SPG "
-"fire. The position near the circus building can be supported by allied "
-"vehicles or attacked by hitting the opponent's flanks and rear. The wide "
-"avenue represents two directions of attack, allowing for long-range fire "
-"that can significantly influence the battle's outcome."
-
-msgid "90_minsk/name"
-msgstr "Minsk"
-
 msgid "95_lost_city_ctf/description"
 msgstr ""
 "This presidio located in the desert sands is an ideal setting for head-on "
@@ -612,6 +588,9 @@ msgstr ""
 msgid "99_poland/name"
 msgstr "Studzianki"
 
+msgid "invalid_map/name"
+msgstr "Invalid Map"
+
 msgid "type/assault/description1"
 msgstr "Mission: keep the friendly base secure or destroy all enemy vehicles."
 
@@ -631,6 +610,17 @@ msgstr ""
 
 msgid "type/assault2/name"
 msgstr "Attack/Defense"
+
+msgid "type/comp7/description"
+msgstr ""
+"Mission: Capture the base or destroy all enemy vehicles.\n"
+"Capture Points of Interest to get access to Tactical Skills."
+
+msgid "type/comp7/name"
+msgstr "Onslaught"
+
+msgid "type/comp7/short_description"
+msgstr "Mission: capture the base or destroy all enemy vehicles."
 
 msgid "type/ctf/description"
 msgstr "Mission: capture the enemy base or destroy all enemy vehicles."

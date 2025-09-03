@@ -101,7 +101,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 		<weight>11100</weight>
-		<maxHealth>1400</maxHealth>
+		<maxHealth>1440</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -1871,14 +1871,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Type_61>
-			<userString>#japan_vehicles:Chassis_Type_61</userString>
+		<Chassis_J14_Type_61>
+			<userString>#japan_vehicles:Chassis_J14_Type_61</userString>
 			<tags/>
 			<level>8</level>
 			<price>30000</price>
 			<unlocks>
 				<chassis>
-					Chassis_Type_61_2
+					Chassis_J14_Type_61_2
 					<cost>24000</cost>
 				</chassis>
 			</unlocks>
@@ -1887,21 +1887,20 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11600</weight>
-			<maxLoad>34700</maxLoad>
 			<terrainResistance>
-				1.1 1.2 2.4
+				1 1.1 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>46</rotationSpeed>
+			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.13
+					0.12
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.13
+					0.12
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3489,9 +3488,9 @@
 				4.57142878
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Type_61>
-		<Chassis_Type_61_2>
-			<userString>#japan_vehicles:Chassis_Type_61_2</userString>
+		</Chassis_J14_Type_61>
+		<Chassis_J14_Type_61_2>
+			<userString>#japan_vehicles:Chassis_J14_Type_61_2</userString>
 			<tags/>
 			<level>9</level>
 			<price>62000</price>
@@ -3500,14 +3499,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11600</weight>
-			<maxLoad>38000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>38500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>50</rotationSpeed>
+			<rotationSpeed>55</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.1
@@ -5102,17 +5100,17 @@
 				4.57142878
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Type_61_2>
+		</Chassis_J14_Type_61_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Type_61>
-			<userString>#japan_vehicles:Turret_1_Type_61</userString>
+		<Turret_1_J14_Type_61>
+			<userString>#japan_vehicles:Turret_1_J14_Type_61</userString>
 			<tags/>
 			<level>8</level>
 			<price>30000</price>
 			<unlocks>
 				<turret>
-					Turret_2_Type_61
+					Turret_2_J14_Type_61
 					<cost>25000</cost>
 				</turret>
 			</unlocks>
@@ -5134,7 +5132,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8000</weight>
-			<maxHealth>320</maxHealth>
+			<maxHealth>280</maxHealth>
 			<rotationSpeed>42</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5154,7 +5152,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_90mm_Gun_Type61>
+				<_90mm_Gun_Type_61_MHI>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<armor>
@@ -5187,10 +5185,13 @@
 						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>6</reloadTime>
+					<reloadTime>
+						5.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -5200,7 +5201,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5324,7 +5325,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_Gun_Type61>
+				</_90mm_Gun_Type_61_MHI>
 			</guns>
 			<models>
 				<undamaged>vehicles/japan/J14_Type_61/normal/lod0/Turret_01.model</undamaged>
@@ -6337,15 +6338,15 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_Type_61>
-		<Turret_2_Type_61>
-			<userString>#japan_vehicles:Turret_2_Type_61</userString>
+		</Turret_1_J14_Type_61>
+		<Turret_2_J14_Type_61>
+			<userString>#japan_vehicles:Turret_2_J14_Type_61</userString>
 			<tags/>
 			<level>9</level>
 			<price>64000</price>
 			<unlocks>
 				<gun>
-					_105mm_Rifled_Gun
+					_105mm_Rifled_Gun_61
 					<cost>55000</cost>
 				</gun>
 			</unlocks>
@@ -6370,7 +6371,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8300</weight>
-			<maxHealth>350</maxHealth>
+			<maxHealth>360</maxHealth>
 			<rotationSpeed>42</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -6394,7 +6395,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_90mm_Gun_Type61>
+				<_90mm_Gun_Type_61_MHI>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<armor>
@@ -6564,8 +6565,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_Gun_Type61>
-				<_105mm_Rifled_Gun>
+				</_90mm_Gun_Type_61_MHI>
+				<_105mm_Rifled_Gun_61>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<unlocks>
@@ -6610,7 +6611,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.11
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6747,7 +6748,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_105mm_Rifled_Gun>
+				</_105mm_Rifled_Gun_61>
 			</guns>
 			<models>
 				<undamaged>vehicles/japan/J14_Type_61/normal/lod0/Turret_02.model</undamaged>
@@ -7575,10 +7576,10 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_Type_61>
+		</Turret_2_J14_Type_61>
 	</turrets0>
 	<engines>
-		<_Mitsubishi_12HM20WT>
+		<Mitsubishi_12HM20WT_61>
 			shared
 			<unlocks>
 				<engine>
@@ -7586,60 +7587,29 @@
 					<cost>27500</cost>
 				</engine>
 			</unlocks>
-		</_Mitsubishi_12HM20WT>
+		</Mitsubishi_12HM20WT_61>
 		<_Mitsubishi_12HM21WT>shared</_Mitsubishi_12HM21WT>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<JAN-GRC-3Z>
-			shared
-			<unlocks>
-				<radio>
-					JAN-GRC-4Z
-					<cost>9500</cost>
-				</radio>
-			</unlocks>
-		</JAN-GRC-3Z>
 		<JAN-GRC-4Z>shared</JAN-GRC-4Z>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<_Mitsubishi_12HM20WT>
-					<smplEnginePower>650</smplEnginePower>
+				<Mitsubishi_12HM20WT_61>
+					<smplEnginePower>700</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
-				</_Mitsubishi_12HM20WT>
+				</Mitsubishi_12HM20WT_61>
 				<_Mitsubishi_12HM21WT>
-					<smplEnginePower>750</smplEnginePower>
+					<smplEnginePower>770</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
 				</_Mitsubishi_12HM21WT>
 			</engines>
 			<chassis>
-				<Chassis_Type_61>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.1932
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Type_61>
-				<Chassis_Type_61_2>
+				<Chassis_J14_Type_61>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7660,18 +7630,40 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Type_61_2>
+				</Chassis_J14_Type_61>
+				<Chassis_J14_Type_61_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.1771
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_J14_Type_61_2>
 			</chassis>
 		</detailed>
 	</physics>
 	<clientAdjustmentFactors>
 		<guns>
-			<_105mm_Rifled_Gun>
+			<_105mm_Rifled_Gun_61>
 				<delta>
 					1.07128309
 					<!--BW_String-->
 				</delta>
-			</_105mm_Rifled_Gun>
+			</_105mm_Rifled_Gun_61>
 		</guns>
 		<armour>
 			0.850861495

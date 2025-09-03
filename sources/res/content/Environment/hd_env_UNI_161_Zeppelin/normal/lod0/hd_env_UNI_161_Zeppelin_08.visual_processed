@@ -57,6 +57,10 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_ANM.dds</Texture>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.400459 8.410603 -0.926695</groupOrigin>
 			</primitiveGroup>
@@ -90,6 +94,10 @@
 					<property>
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_ANM.dds</Texture>
+					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.500381 8.185040 -1.079004</groupOrigin>
@@ -141,6 +149,10 @@
 						g_vertexColorMode
 						<Int>1</Int>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.460763 8.219139 -0.653115</groupOrigin>
 			</primitiveGroup>
@@ -151,5 +163,5 @@
 		<max>18.148348 18.269878 21.855494</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>780584</geometrySize>
+	<geometrySize>778244</geometrySize>
 </root>

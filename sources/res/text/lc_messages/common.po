@@ -43,6 +43,9 @@ msgstr "\""
 msgid "common/percent"
 msgstr "%"
 
+msgid "common/semi_dash"
+msgstr "–"
+
 msgid "common/slash"
 msgstr "/"
 
@@ -76,14 +79,26 @@ msgstr "Search"
 msgid "multiplier"
 msgstr "x"
 
+msgid "multiplierSmall"
+msgstr "×"
+
+msgid "numberAbbrev"
+msgstr "{{value}}K"
+
 msgid "percentValue"
 msgstr "{value}%"
+
+msgid "plus"
+msgstr "+"
 
 msgid "plusPercentValue"
 msgstr "+{value}%"
 
 msgid "plusValue"
 msgstr "+{value}"
+
+msgid "plusValueWithSpace"
+msgstr "+ {{value}}"
 
 msgid "progress"
 msgstr "{current}/{total}"
@@ -102,6 +117,18 @@ msgstr "today at"
 
 msgid "relativeDateTime/yesterday"
 msgstr "yesterday at"
+
+msgid "timer/days"
+msgstr "{days} d"
+
+msgid "timer/hours"
+msgstr "{hours} h"
+
+msgid "timer/minutes"
+msgstr "{minutes} m"
+
+msgid "valuePlus"
+msgstr "{{value}}+"
 
 msgid "xValue"
 msgstr "×{value}"

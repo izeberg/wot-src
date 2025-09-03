@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_019_FurnitureSet/normal/lod2/hv4_019_FurnitureSet_05</parent>
+	<extent>50.000000</extent>
+	<visibilityBox>
+		<min>-0.380000 -0.000000 -0.435102</min>
+		<max>0.380000 1.073141 0.435102</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_019_FurnitureSet/normal/lod1/hv4_019_FurnitureSet_05</nodefullVisual>
+</root>

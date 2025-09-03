@@ -40,6 +40,9 @@ msgstr "Rare crew skin"
 msgid "customization/attachment"
 msgstr "3D Attachment"
 
+msgid "customization/attachment/rarity"
+msgstr "%(rarity)s 3D Attachment"
+
 msgid "customization/camouflage"
 msgstr "Camouflage"
 
@@ -204,6 +207,21 @@ msgstr "High-Explosive"
 
 msgid "shell/kinds/HOLLOW_CHARGE"
 msgstr "High-Explosive Anti-Tank"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING"
+msgstr "ARMOR-PIERCING"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING_CR"
+msgstr "AP COMPOSITE-RIGID"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING_HE"
+msgstr "AP High-HIGH-EXPLOSIVE"
+
+msgid "shell/kinds/upperCase/HIGH_EXPLOSIVE"
+msgstr "HIGH-EXPLOSIVE"
+
+msgid "shell/kinds/upperCase/HOLLOW_CHARGE"
+msgstr "HIGH-EXPLOSIVE ANTI-TANK"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING"
 msgstr "AP"

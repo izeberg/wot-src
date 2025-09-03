@@ -2146,6 +2146,10 @@ RECORDS = (
  (
   'singleAchievements', '01YearsOfService', 'p', 'B', 1),
  (
+  'singleAchievements', 'wot15thAnniversary', 'p', 'B', 1),
+ (
+  'singleAchievements', 'wot15thAnniversaryElite', 'p', 'B', 1),
+ (
   'singleAchievements', 'betaTester_cn', 'p', 'B', 1),
  (
   'singleAchievements', 'NY19A1', 'p', 'B', 1),
@@ -2892,6 +2896,8 @@ RECORDS = (
  (
   'steamAchievements', 'steamGetTankLevel10Medal', 'p', 'B', 1),
  (
+  'steamAchievements', 'steamGetTankLevel11Medal', 'p', 'B', 1),
+ (
   'steamAchievements', 'steamDoPotapovQuestMedal', 'p', 'B', 1),
  (
   'steamAchievements', 'steamDoAllBranchPotapovQuestMedal', 'p', 'B', 1),
@@ -3466,7 +3472,7 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_17extra_3', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_5', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_18', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_6', 'p', 'B', 1),
  (
@@ -3482,9 +3488,141 @@ RECORDS = (
  (
   'singleAchievements', 'ls2025Medal', 'p', 'B', 1),
  (
-  'singleAchievements', 'wot15thAnniversary', 'p', 'B', 1),
+  'singleAchievements', 'meritPM3', 'p', 'B', 1),
  (
-  'singleAchievements', 'wot15thAnniversaryElite', 'p', 'B', 1))
+  'achievements', 'readyForBattleAssault', 'p', 'B', 4),
+ (
+  'achievements', 'readyForBattleSniper', 'p', 'B', 4),
+ (
+  'achievements', 'readyForBattleSupport', 'p', 'B', 4),
+ (
+  'comp7ArchiveManticore', 'xp', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'battlesCount', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'wins', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'winAndSurvived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'losses', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'survivedBattles', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'frags', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'shots', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'directHits', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'spotted', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'damageDealt', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'damageReceived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'capturePoints', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'droppedCapturePoints', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'originalXP', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'damageAssistedTrack', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'damageAssistedRadio', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'directHitsReceived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'noDamageDirectHitsReceived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'piercingsReceived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'explosionHitsReceived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'explosionHits', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'piercings', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'potentialDamageReceived', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'damageBlockedByArmor', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'battlesOnStunningVehicles', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'stunNum', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'damageAssistedStun', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'winSeries', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'squadWinSeries', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'comp7PrestigePoints', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'roleSkillUsed', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'healthRepair', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'poiCapturable', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'superSquadBattlesCount', 'p', 'I', 4000000001),
+ (
+  'comp7ArchiveManticore', 'superSquadWins', 'p', 'I', 4000000001),
+ (
+  'maxComp7ArchiveManticore', 'maxXP', 'p', 'H', 60001),
+ (
+  'maxComp7ArchiveManticore', 'maxXPVehicle', 'p', 'I', 4294967295),
+ (
+  'maxComp7ArchiveManticore', 'maxFrags', 'p', 'B', 201),
+ (
+  'maxComp7ArchiveManticore', 'maxFragsVehicle', 'p', 'I', 4294967295),
+ (
+  'maxComp7ArchiveManticore', 'maxDamage', 'p', 'H', 60001),
+ (
+  'maxComp7ArchiveManticore', 'maxDamageVehicle', 'p', 'I', 4294967295),
+ (
+  'maxComp7ArchiveManticore', 'maxComp7PrestigePoints', 'p', 'H', 60001),
+ (
+  'maxComp7ArchiveManticore', 'maxComp7PrestigePointsVehicle', 'p', 'I', 4294967295),
+ (
+  'maxComp7ArchiveManticore', 'maxEquipmentDamageDealt', 'p', 'H', 60001),
+ (
+  'maxComp7ArchiveManticore', 'maxEquipmentDamageDealtVehicle', 'p', 'I', 4294967295),
+ (
+  'maxComp7ArchiveManticore', 'maxHealthRepair', 'p', 'H', 60001),
+ (
+  'maxComp7ArchiveManticore', 'maxHealthRepairVehicle', 'p', 'I', 4294967295),
+ (
+  'maxComp7ArchiveManticore', 'maxWinSeries', 'p', 'H', 60001),
+ (
+  'maxComp7ArchiveManticore', 'maxSquadWinSeries', 'p', 'H', 60001),
+ (
+  'singleAchievements', 'comp7_5_1', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_2', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_3', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_yearly_iron', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_yearly_bronze', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_yearly_silver', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_yearly_gold', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_yearly_champion', 'p', 'B', 1),
+ (
+  'singleAchievements', 'comp7_5_yearly_legend', 'p', 'B', 1),
+ (
+  'singleAchievements', 'ls2_0Medal', 'p', 'B', 1),
+ (
+  'singleAchievements', 'sccHero', 'p', 'B', 1),
+ (
+  'singleAchievements', 'wt2025progression', 'p', 'B', 1),
+ (
+  'singleAchievements', 'twoPointZeroMedal', 'p', 'B', 1),
+ (
+  'singleAchievements', 'twoPointZeroCollectorMedal', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5219,7 +5357,7 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'BattlePassCommonPr_17extra_1'): 2012, 
    ('singleAchievements', 'BattlePassCommonPr_17extra_2'): 2013, 
    ('singleAchievements', 'BattlePassCommonPr_17extra_3'): 2014, 
-   ('singleAchievements', 'BPReserveAchievement_5'): 2015, 
+   ('singleAchievements', 'BattlePassCommonPr_18'): 2015, 
    ('singleAchievements', 'BPReserveAchievement_6'): 2016, 
    ('singleAchievements', 'BPReserveAchievement_7'): 2017, 
    ('singleAchievements', 'BPReserveAchievement_8'): 2018, 
@@ -5228,7 +5366,76 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'vDayHero'): 2021, 
    ('singleAchievements', 'ls2025Medal'): 2022, 
    ('singleAchievements', 'wot15thAnniversary'): 2024, 
-   ('singleAchievements', 'wot15thAnniversaryElite'): 2025}
+   ('singleAchievements', 'wot15thAnniversaryElite'): 2025, 
+   ('singleAchievements', 'meritPM3'): 2026, 
+   ('achievements', 'readyForBattleAssault'): 2027, 
+   ('achievements', 'readyForBattleSniper'): 2028, 
+   ('achievements', 'readyForBattleSupport'): 2029, 
+   ('comp7ArchiveManticore', 'xp'): 2030, 
+   ('comp7ArchiveManticore', 'battlesCount'): 2031, 
+   ('comp7ArchiveManticore', 'wins'): 2032, 
+   ('comp7ArchiveManticore', 'winAndSurvived'): 2033, 
+   ('comp7ArchiveManticore', 'losses'): 2034, 
+   ('comp7ArchiveManticore', 'survivedBattles'): 2035, 
+   ('comp7ArchiveManticore', 'frags'): 2036, 
+   ('comp7ArchiveManticore', 'shots'): 2037, 
+   ('comp7ArchiveManticore', 'directHits'): 2038, 
+   ('comp7ArchiveManticore', 'spotted'): 2039, 
+   ('comp7ArchiveManticore', 'damageDealt'): 2040, 
+   ('comp7ArchiveManticore', 'damageReceived'): 2041, 
+   ('comp7ArchiveManticore', 'capturePoints'): 2042, 
+   ('comp7ArchiveManticore', 'droppedCapturePoints'): 2043, 
+   ('comp7ArchiveManticore', 'originalXP'): 2044, 
+   ('comp7ArchiveManticore', 'damageAssistedTrack'): 2045, 
+   ('comp7ArchiveManticore', 'damageAssistedRadio'): 2046, 
+   ('comp7ArchiveManticore', 'directHitsReceived'): 2047, 
+   ('comp7ArchiveManticore', 'noDamageDirectHitsReceived'): 2048, 
+   ('comp7ArchiveManticore', 'piercingsReceived'): 2049, 
+   ('comp7ArchiveManticore', 'explosionHitsReceived'): 2050, 
+   ('comp7ArchiveManticore', 'explosionHits'): 2051, 
+   ('comp7ArchiveManticore', 'piercings'): 2052, 
+   ('comp7ArchiveManticore', 'potentialDamageReceived'): 2053, 
+   ('comp7ArchiveManticore', 'damageBlockedByArmor'): 2054, 
+   ('comp7ArchiveManticore', 'battlesOnStunningVehicles'): 2055, 
+   ('comp7ArchiveManticore', 'stunNum'): 2056, 
+   ('comp7ArchiveManticore', 'damageAssistedStun'): 2057, 
+   ('comp7ArchiveManticore', 'winSeries'): 2058, 
+   ('comp7ArchiveManticore', 'squadWinSeries'): 2059, 
+   ('comp7ArchiveManticore', 'comp7PrestigePoints'): 2060, 
+   ('comp7ArchiveManticore', 'roleSkillUsed'): 2061, 
+   ('comp7ArchiveManticore', 'healthRepair'): 2062, 
+   ('comp7ArchiveManticore', 'poiCapturable'): 2063, 
+   ('comp7ArchiveManticore', 'superSquadBattlesCount'): 2064, 
+   ('comp7ArchiveManticore', 'superSquadWins'): 2065, 
+   ('maxComp7ArchiveManticore', 'maxXP'): 2066, 
+   ('maxComp7ArchiveManticore', 'maxXPVehicle'): 2067, 
+   ('maxComp7ArchiveManticore', 'maxFrags'): 2068, 
+   ('maxComp7ArchiveManticore', 'maxFragsVehicle'): 2069, 
+   ('maxComp7ArchiveManticore', 'maxDamage'): 2070, 
+   ('maxComp7ArchiveManticore', 'maxDamageVehicle'): 2071, 
+   ('maxComp7ArchiveManticore', 'maxComp7PrestigePoints'): 2072, 
+   ('maxComp7ArchiveManticore', 'maxComp7PrestigePointsVehicle'): 2073, 
+   ('maxComp7ArchiveManticore', 'maxEquipmentDamageDealt'): 2074, 
+   ('maxComp7ArchiveManticore', 'maxEquipmentDamageDealtVehicle'): 2075, 
+   ('maxComp7ArchiveManticore', 'maxHealthRepair'): 2076, 
+   ('maxComp7ArchiveManticore', 'maxHealthRepairVehicle'): 2077, 
+   ('maxComp7ArchiveManticore', 'maxWinSeries'): 2078, 
+   ('maxComp7ArchiveManticore', 'maxSquadWinSeries'): 2079, 
+   ('singleAchievements', 'comp7_5_1'): 2081, 
+   ('singleAchievements', 'comp7_5_2'): 2082, 
+   ('singleAchievements', 'comp7_5_3'): 2083, 
+   ('singleAchievements', 'comp7_5_yearly_iron'): 2084, 
+   ('singleAchievements', 'comp7_5_yearly_bronze'): 2085, 
+   ('singleAchievements', 'comp7_5_yearly_silver'): 2086, 
+   ('singleAchievements', 'comp7_5_yearly_gold'): 2087, 
+   ('singleAchievements', 'comp7_5_yearly_champion'): 2088, 
+   ('singleAchievements', 'comp7_5_yearly_legend'): 2089, 
+   ('singleAchievements', 'ls2_0Medal'): 2090, 
+   ('singleAchievements', 'sccHero'): 2091, 
+   ('steamAchievements', 'steamGetTankLevel11Medal'): 2092, 
+   ('singleAchievements', 'wt2025progression'): 2093, 
+   ('singleAchievements', 'twoPointZeroMedal'): 2094, 
+   ('singleAchievements', 'twoPointZeroCollectorMedal'): 2095}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 
@@ -5255,6 +5462,7 @@ RECORD_DB_IDS.update({('vehTypeFrags', ''): 863,
    ('vehicleAchievements', ''): 1936, 
    ('customizationAchievements', ''): 1937, 
    ('comp7CutArchivePegasus', ''): 1999, 
+   ('comp7CutArchiveManticore', ''): 2078, 
    ('statTrackersVehStatsCut', ''): 2023})
 BATTLE_HERO_MEDAL_SET = {RECORD_DB_IDS[achievementDescriptor] for achievementDescriptor in [
  (
@@ -5451,6 +5659,9 @@ PLATFORM_ACHIEVEMENTS = {'steamLittleSavingsMedal': (
    'steamGetTankLevel10Medal': (
                               (
                                'steamAchievements', 'steamGetTankLevel10Medal'), None), 
+   'steamGetTankLevel11Medal': (
+                              (
+                               'steamAchievements', 'steamGetTankLevel11Medal'), None), 
    'steamDoPotapovQuestMedal': (
                               (
                                'steamAchievements', 'steamDoPotapovQuestMedal'), None), 

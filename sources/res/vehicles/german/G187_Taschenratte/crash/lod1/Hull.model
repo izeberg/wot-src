@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.347160 -0.946058 -5.233882</min>
+		<max>2.350482 1.240046 4.628239</max>
+	</visibilityBox>
+	<parent>vehicles/german/G187_Taschenratte/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G187_Taschenratte/crash/lod1/Hull</nodefullVisual>
+</root>

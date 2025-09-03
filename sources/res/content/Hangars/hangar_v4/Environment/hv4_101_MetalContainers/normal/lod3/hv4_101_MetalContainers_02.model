@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_101_MetalContainers/normal/lod4/hv4_101_MetalContainers_02</parent>
+	<extent>80.000000</extent>
+	<visibilityBox>
+		<min>-0.714966 -0.000000 -0.521652</min>
+		<max>0.732227 1.087874 0.521652</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_101_MetalContainers/normal/lod3/hv4_101_MetalContainers_02</nodefullVisual>
+</root>

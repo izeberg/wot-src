@@ -1,6 +1,7 @@
-import logging, BigWorld, BattleReplay
+import logging, typing, BigWorld, BattleReplay
 from OwnVehicleBase import OwnVehicleBase
-from Avatar import PlayerAvatar
+if typing.TYPE_CHECKING:
+    from Avatar import PlayerAvatar
 _logger = logging.getLogger(__name__)
 
 class OwnVehicle(OwnVehicleBase):
@@ -14,7 +15,7 @@ class OwnVehicle(OwnVehicleBase):
         return avatar
 
     def _doLog(self, msg):
-        _logger.info(msg)
+        _logger.debug(msg)
 
     def _serverTime(self):
         return BigWorld.serverTime()

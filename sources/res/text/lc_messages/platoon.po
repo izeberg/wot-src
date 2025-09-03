@@ -122,18 +122,51 @@ msgstr "Create a two-player tactical unit to participate in Steel Hunter."
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
 msgstr "Platoon"
 
+msgid "headerButton/tooltips/comp7BanIsSet/body"
+msgstr ""
+"You cannot create or join Platoons because you are temporarily blocked from "
+"this mode."
+
+msgid "headerButton/tooltips/comp7LightNoSuitableVehicles/body"
+msgstr ""
+"You will not be able to create or join Platoons because you need to have at "
+"least one Tier %(level)s vehicle in the Garage that is suitable for the "
+"mode."
+
+msgid "headerButton/tooltips/comp7LightRestriction/body"
+msgstr "Platoon creation is temporarily unavailable."
+
+msgid "headerButton/tooltips/comp7LightRestriction/header"
+msgstr "Unable to Play in a Platoon"
+
+msgid "headerButton/tooltips/comp7LightSquad/body"
+msgstr ""
+"You can create a Platoon or join an existing one. In Onslaught Light, "
+"Platoons can consist of 2 players or 7 players."
+
+msgid "headerButton/tooltips/comp7LightSquad/header"
+msgstr "Platoon"
+
+msgid "headerButton/tooltips/comp7NoSuitableVehicles/body"
+msgstr ""
+"You cannot create or join Platoons because you do not have a suitable Tier "
+"%(level)s vehicle in your Garage."
+
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
 msgstr ""
-"You will not be able to create or join Platoons until Qualification is complete.\n"
-"After its completion, Platoons of 2 and 7 players will be available to you."
+"After Qualification is complete, Platoons of 2 and 7 players will be "
+"available."
 
-msgid "headerButton/tooltips/comp7QualificationSquad/header"
-msgstr "Unable to Play in a Platoon"
+msgid "headerButton/tooltips/comp7Restriction/body"
+msgstr "Unable to create a Platoon."
+
+msgid "headerButton/tooltips/comp7Restriction/header"
+msgstr "Platoons unavailable"
 
 msgid "headerButton/tooltips/comp7Squad/body"
 msgstr ""
-"You can create a Platoon or join the existing one. In Onslaught, Platoons "
-"can consist of 2 players or 7 players."
+"Create a Platoon or join an existing one. Platoons in Onslaught can consist "
+"of 2 or 7 players."
 
 msgid "headerButton/tooltips/comp7Squad/header"
 msgstr "Platoon"
@@ -186,8 +219,8 @@ msgstr "Searching"
 
 msgid "headerButton/tooltips/squad/body"
 msgstr ""
-"Create a tactical unit of 2 or 3 players to cooperate in Random Battles.\n"
-"• Battle types: Standard Battle, Assault, Encounter Battle, and Grand Battle, as well as Frontline when available."
+"Create a tactical unit of 2 or 3 players to cooperate in Random Battles and "
+"Frontline (when available)"
 
 msgid "headerButton/tooltips/squad/header"
 msgstr "Platoon"

@@ -1,6 +1,9 @@
+import typing
 from .transitions import BaseTransition
 from .exceptions import NodeError
 from .node import Node
+if typing.TYPE_CHECKING:
+    from . import State
 
 def getAncestors(node, upper=None):
     if not isinstance(node, Node):

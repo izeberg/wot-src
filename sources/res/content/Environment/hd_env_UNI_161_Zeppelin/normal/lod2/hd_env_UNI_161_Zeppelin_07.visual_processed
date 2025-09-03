@@ -20,15 +20,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>144</collisionFlags>
-					<materialKind>112</materialKind>
-				</material>
-				<groupOrigin>5.608988 8.194458 3.251058</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<collisionFlags>255</collisionFlags>
@@ -61,11 +52,15 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_01_ANM.dds</Texture>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>5.783503 8.812566 1.487590</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
@@ -99,11 +94,15 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_ANM.dds</Texture>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>5.858147 8.333049 1.669608</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				2
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
@@ -141,8 +140,21 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_Fabric_01_ANM.dds</Texture>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>5.736172 8.255527 3.121445</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				3
+				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>144</collisionFlags>
+					<materialKind>112</materialKind>
+				</material>
+				<groupOrigin>5.608988 8.194458 3.251058</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -151,5 +163,5 @@
 		<max>21.530199 17.170465 30.791405</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>217974</geometrySize>
+	<geometrySize>219954</geometrySize>
 </root>

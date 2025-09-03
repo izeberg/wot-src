@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7860</weight>
-		<maxHealth>656</maxHealth>
+		<maxHealth>800</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>160</maxHealth>
 			<maxRegenHealth>110</maxRegenHealth>
@@ -1805,14 +1805,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5500</weight>
-			<maxLoad>21500</maxLoad>
 			<terrainResistance>
-				0.7 0.8 1.5
+				0.6 0.7 1.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>33000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>52</rotationSpeed>
+			<rotationSpeed>65</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -3469,14 +3468,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5500</weight>
-			<maxLoad>24000</maxLoad>
 			<terrainResistance>
 				0.6 0.7 1.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>54</rotationSpeed>
+			<rotationSpeed>68</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -5150,7 +5148,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>4750</weight>
-			<maxHealth>164</maxHealth>
+			<maxHealth>150</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -5170,7 +5168,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_85mm_Tip_62-85T>
+				<_85mm_62_85T>
 					shared
 					<maxAmmo>47</maxAmmo>
 					<unlocks>
@@ -5203,10 +5201,13 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.37
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>7</reloadTime>
+					<reloadTime>
+						6.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -5221,10 +5222,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.5
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.25
 						<!--BW_String-->
@@ -5366,7 +5364,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_85mm_Tip_62-85T>
+				</_85mm_62_85T>
 			</guns>
 			<models>
 				<undamaged>vehicles/chinese/Ch16_WZ_131/normal/lod0/Turret_01.model</undamaged>
@@ -6387,7 +6385,7 @@
 			<price>23000</price>
 			<unlocks>
 				<gun>
-					_85mm_Tip_64-85T
+					_85mm_64_85T
 					<cost>16000</cost>
 				</gun>
 			</unlocks>
@@ -6411,7 +6409,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>5000</weight>
-			<maxHealth>244</maxHealth>
+			<maxHealth>200</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -6435,7 +6433,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_85mm_Tip_62-85T>
+				<_85mm_62_85T>
 					shared
 					<maxAmmo>47</maxAmmo>
 					<pitchLimits>
@@ -6462,11 +6460,11 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.37
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						6.7
+						6.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -6484,7 +6482,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6625,8 +6623,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_85mm_Tip_62-85T>
-				<_85mm_Tip_64-85T>
+				</_85mm_62_85T>
+				<_85mm_64_85T>
 					shared
 					<maxAmmo>47</maxAmmo>
 					<pitchLimits>
@@ -6680,10 +6678,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.5
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.225
 						<!--BW_String-->
@@ -6825,7 +6820,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_85mm_Tip_64-85T>
+				</_85mm_64_85T>
 			</guns>
 			<models>
 				<undamaged>vehicles/chinese/Ch16_WZ_131/normal/lod0/Turret_02.model</undamaged>
@@ -7988,7 +7983,7 @@
 		</Turret_2_Ch16_WZ_131>
 	</turrets0>
 	<engines>
-		<_12150L3>
+		<_12150L3_131>
 			shared
 			<unlocks>
 				<engine>
@@ -7996,31 +7991,22 @@
 					<cost>16300</cost>
 				</engine>
 			</unlocks>
-		</_12150L3>
+		</_12150L3_131>
 		<_12150L2>shared</_12150L2>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<A-220_1>
-			shared
-			<unlocks>
-				<radio>
-					A-220B
-					<cost>9500</cost>
-				</radio>
-			</unlocks>
-		</A-220_1>
 		<A-220B>shared</A-220B>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<_12150L3>
-					<smplEnginePower>450</smplEnginePower>
+				<_12150L3_131>
+					<smplEnginePower>520</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
-				</_12150L3>
+				</_12150L3_131>
 				<_12150L2>
 					<smplEnginePower>550</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
@@ -8031,19 +8017,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.12075
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0644
+								0.05635
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.05635
+								0.0483
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

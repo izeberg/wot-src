@@ -401,13 +401,12 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function as_setEquipmentActivated(param1:int, param2:Boolean, param3:Boolean) : void
+      public function as_setEquipmentActivated(param1:int, param2:Boolean) : void
       {
-         var _loc4_:IConsumablesButton = this.getRendererBySlotIdx(param1);
-         if(_loc4_)
+         var _loc3_:IConsumablesButton = this.getRendererBySlotIdx(param1);
+         if(_loc3_)
          {
-            _loc4_.activated = param2;
-            _loc4_.noBack = param3;
+            _loc3_.activated = param2;
          }
       }
       

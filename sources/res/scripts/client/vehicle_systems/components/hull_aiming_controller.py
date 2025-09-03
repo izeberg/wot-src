@@ -26,7 +26,7 @@ class HullAimingController(cgf_obsolete_script.py_component.Component):
     def onSiegeStateChanged(self, newState):
         if self.__vehicleFilter is None or self.__vehicleDescriptor is None:
             return
-        needUpdateSpringsLength = newState == VEHICLE_SIEGE_STATE.ENABLED or newState == VEHICLE_SIEGE_STATE.DISABLED
+        needUpdateSpringsLength = newState == VEHICLE_SIEGE_STATE.ENABLED or newState == VEHICLE_SIEGE_STATE.DISABLED or newState == VEHICLE_SIEGE_STATE.PILLBOX_ENABLED
         physics = self.__vehicleFilter.getVehiclePhysics()
         if physics is None or not needUpdateSpringsLength:
             return

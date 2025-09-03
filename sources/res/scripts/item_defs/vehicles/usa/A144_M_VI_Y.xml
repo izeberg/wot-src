@@ -1452,9 +1452,8 @@
 				</chassis>
 			</unlocks>
 			<weight>11000</weight>
-			<maxLoad>46000</maxLoad>
 			<terrainResistance>
-				1.3 1.4 2.5
+				1.2 1.3 2.4
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>46000</brakeForce>
@@ -3717,7 +3716,6 @@
 			<level>9</level>
 			<price>63400</price>
 			<weight>11000</weight>
-			<maxLoad>50000</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.4
 				<!--BW_String-->
@@ -5980,7 +5978,7 @@
 	<turrets0>
 		<Turret_1_A144_M_VI_Y>
 			<userString>#usa_vehicles:Turret_1_A144_M_VI_Y</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>40000</price>
 			<armor>
@@ -6043,7 +6041,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>370</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -6107,10 +6105,6 @@
 						<armor_27>255</armor_27>
 						<armor_28>130</armor_28>
 						<armor_29>230</armor_29>
-						<armor_30>
-							25.4
-							<!--BW_String-->
-						</armor_30>
 						<armor_31>100</armor_31>
 						<armor_32>85</armor_32>
 						<gun>40</gun>
@@ -6119,10 +6113,13 @@
 						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>8</reloadTime>
+					<reloadTime>
+						7.7
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6141,10 +6138,7 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<aimingTime>
-						2.2
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.209
 						<!--BW_String-->
@@ -7555,7 +7549,7 @@
 		</Turret_1_A144_M_VI_Y>
 		<Turret_2_A144_M_VI_Y>
 			<userString>#usa_vehicles:Turret_2_A144_M_VI_Y</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>58800</price>
 			<unlocks>
@@ -7690,11 +7684,11 @@
 							50.8
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_26>
 						<armor_27>125</armor_27>
 						<armor_28>130</armor_28>
 						<armor_29>155</armor_29>
-						<armor_30>110</armor_30>
 						<armor_31>105</armor_31>
 						<gun>40</gun>
 					</armor>
@@ -8872,11 +8866,11 @@
 							50.8
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_26>
 						<armor_27>125</armor_27>
 						<armor_28>130</armor_28>
 						<armor_29>155</armor_29>
-						<armor_30>110</armor_30>
 						<armor_31>105</armor_31>
 						<gun>50</gun>
 					</armor>
@@ -10437,19 +10431,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.1932
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1127
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

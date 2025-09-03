@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.333333</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.333330</duration>
+				<resourceID>content/3D_Customization/Cus_94_WT_Electricgun/animation/cus_94_shake.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.666667</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_94_WT_Electricgun/Cus_94_WT_Electricgun_idle_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.333333</duration>
+				<value>Root|joint_body</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.286700 -0.004387</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert5</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.623529 0.662745 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.188280</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.188280</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.666667</startTime>
+				<value>0.623529 0.662745 1.000000 0.650000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.561223</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -7.053208</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.333333</startTime>
+				<value>0.623529 0.662745 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.042309</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.042309</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

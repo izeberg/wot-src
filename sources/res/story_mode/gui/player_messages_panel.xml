@@ -42,5 +42,13 @@
 				<item>self</item>
 			</value>
 		</message>
+		<message>
+			<name>COMBAT_EQUIPMENT_READY_SCC_AIRSTRIKE_ABILITY</name>
+			<type>list</type>
+			<value>
+				<item>_(#story_mode.ingame_gui.extend:player_messages/SCC_AIRSTRIKE_ABILITY)</item>
+				<item>self</item>
+			</value>
+		</message>
 	</messages>
 </root>

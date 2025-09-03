@@ -87,7 +87,7 @@
 		<showDamageFromShot>
 			<Arg>
 				ARRAY
-				<of>UINT64</of>
+				<of>VEHICLE_HIT_POINT</of>
 			</Arg>
 			<Arg>UINT8</Arg>
 		</showDamageFromShot>

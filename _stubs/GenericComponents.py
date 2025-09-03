@@ -267,6 +267,7 @@ class DynamicModelComponent(PyComponentWrapperBase):
 	def getModelName(self, *args, **kwargs): pass
 	def getRootSuperModel(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
+	def setMaterialDiffuseMap(self, *args, **kwargs): pass
 	def setMaterialParameterFloat(self, *args, **kwargs): pass
 	def setMaterialParameterVector2(self, *args, **kwargs): pass
 	def setMaterialParameterVector3(self, *args, **kwargs): pass
@@ -582,6 +583,7 @@ class RemoveGoDelayedComponent(PyComponentWrapperBase):
 
 
 class Sequence(PyComponentWrapperBase):
+	DEFAULT_LAYER_IDX = 1
 	Paused = State.Paused
 	Running = State.Running
 	
@@ -620,6 +622,8 @@ class Sequence(PyComponentWrapperBase):
 		name = property(lambda self: None)
 	
 	Stopped = State.Stopped
+	TRANSITION_LAYER_IDX = 0
+	TRANSITION_LAYER_NAME = u'__transition__'
 	def __cmp__(self, *args, **kwargs): pass
 	def __delattr__(*args, **kwargs): pass
 	__doc__ = None
@@ -637,6 +641,8 @@ class Sequence(PyComponentWrapperBase):
 	def __sizeof__(*args, **kwargs): pass
 	def __str__(*args, **kwargs): pass
 	def __subclasshook__(*args, **kwargs): pass
+	activeLayerIdx = property(lambda self: None)
+	activeLayerName = property(lambda self: None)
 	def addPauseReaction(self, *args, **kwargs): pass
 	def addStartReaction(self, *args, **kwargs): pass
 	def addStopReaction(self, *args, **kwargs): pass
@@ -648,12 +654,42 @@ class Sequence(PyComponentWrapperBase):
 	def removePauseReaction(self, *args, **kwargs): pass
 	def removeStartReaction(self, *args, **kwargs): pass
 	def removeStopReaction(self, *args, **kwargs): pass
-	def setManualTime(self, *args, **kwargs): pass
+	def requestLayerChange(self, *args, **kwargs): pass
+	def requestLayerChangeByName(self, *args, **kwargs): pass
+	def requestTime(self, *args, **kwargs): pass
+	speed = property(lambda self: None)
 	def start(self, *args, **kwargs): pass
 	state = property(lambda self: None)
 	def stop(self, *args, **kwargs): pass
 	def syncSubSequences(self, *args, **kwargs): pass
 	time = property(lambda self: None)
+	transition = property(lambda self: None)
+	def valid(self, *args, **kwargs): pass
+
+
+class SequenceEventsComponent(PyComponentWrapperBase):
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(*args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'SequenceEventsComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def addStateReaction(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
+	def removeReaction(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
 
@@ -679,6 +715,36 @@ class SlotMarkerComponent(PyComponentWrapperBase):
 	def destroy(self, *args, **kwargs): pass
 	def id(self, *args, **kwargs): pass
 	slotName = property(lambda self: None)
+	def valid(self, *args, **kwargs): pass
+
+
+class StateSwitcherComponent(PyComponentWrapperBase):
+	CRITICAL_STATE = 3
+	DAMAGED_STATE = 2
+	NONE_STATE = 0
+	NORMAL_STATE = 1
+	def __cmp__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(self, *args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = 'GenericComponents'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'StateSwitcherComponent'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def destroy(self, *args, **kwargs): pass
+	def getState(self, *args, **kwargs): pass
+	def id(self, *args, **kwargs): pass
+	def requestState(self, *args, **kwargs): pass
 	def valid(self, *args, **kwargs): pass
 
 

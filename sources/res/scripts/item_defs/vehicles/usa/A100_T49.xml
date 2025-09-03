@@ -124,7 +124,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>10952</weight>
-		<maxHealth>1040</maxHealth>
+		<maxHealth>1280</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -1986,14 +1986,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>24400</maxLoad>
 			<terrainResistance>
-				0.9 1.1 1.8
+				0.8 1 1.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>24000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>47</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -3637,14 +3636,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>25700</maxLoad>
 			<terrainResistance>
 				0.8 1 1.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>25000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.1
@@ -5327,7 +5325,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>5360</weight>
-			<maxHealth>260</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5349,7 +5347,7 @@
 			<guns>
 				<_90mm_Gun_T132E3>
 					shared
-					<maxAmmo>46</maxAmmo>
+					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
 							31.8
@@ -5372,13 +5370,10 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
-					<reloadTime>
-						6.4
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>7</reloadTime>
 					<invisibilityFactorAtShot>
 						0.238
 						<!--BW_String-->
@@ -6879,7 +6874,7 @@
 			<price>64000</price>
 			<unlocks>
 				<gun>
-					_152mm_Gun_Launcher_M81
+					_152mm_Gun_Launcher_XM81_conventional_T49
 					<cost>52000</cost>
 				</gun>
 			</unlocks>
@@ -6912,7 +6907,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>4000</weight>
-			<maxHealth>360</maxHealth>
+			<maxHealth>320</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -6938,7 +6933,7 @@
 			<guns>
 				<_90mm_Gun_T132E3>
 					shared
-					<maxAmmo>46</maxAmmo>
+					<maxAmmo>50</maxAmmo>
 					<armor>
 						<armor_1>
 							50.8
@@ -6965,11 +6960,11 @@
 						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<aimingTime>
-						2.3
+					<aimingTime>2</aimingTime>
+					<reloadTime>
+						6.7
 						<!--BW_String-->
-					</aimingTime>
-					<reloadTime>6</reloadTime>
+					</reloadTime>
 					<invisibilityFactorAtShot>
 						0.238
 						<!--BW_String-->
@@ -7113,7 +7108,7 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_90mm_Gun_T132E3>
-				<_152mm_Gun_Launcher_M81>
+				<_152mm_Gun_Launcher_XM81_conventional_T49>
 					shared
 					<maxAmmo>22</maxAmmo>
 					<unlocks>
@@ -7145,12 +7140,12 @@
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.57
+						0.52
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>23</reloadTime>
 					<aimingTime>
-						3.6
+						3.2
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7167,7 +7162,7 @@
 					<turretYawLimits>-180 180</turretYawLimits>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.35
+							0.2
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7290,7 +7285,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_152mm_Gun_Launcher_M81>
+				</_152mm_Gun_Launcher_XM81_conventional_T49>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A100_T49/normal/lod0/Turret_02.model</undamaged>
@@ -8391,62 +8386,53 @@
 		</Turret_2_A100_T49>
 	</turrets0>
 	<engines>
-		<Continental_AOSI-895-5A>
+		<Continental_AOSI_895_5A>
 			shared
 			<unlocks>
 				<engine>
-					Continental_AOSI-895-5B
+					Continental_AOSI_895_5B
 					<cost>28750</cost>
 				</engine>
 			</unlocks>
-		</Continental_AOSI-895-5A>
-		<Continental_AOSI-895-5B>shared</Continental_AOSI-895-5B>
+		</Continental_AOSI_895_5A>
+		<Continental_AOSI_895_5B>shared</Continental_AOSI_895_5B>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-3>
-			shared
-			<unlocks>
-				<radio>
-					AN-ARC-27
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-3>
 		<AN-ARC-27>shared</AN-ARC-27>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Continental_AOSI-895-5A>
-					<smplEnginePower>800</smplEnginePower>
+				<Continental_AOSI_895_5A>
+					<smplEnginePower>880</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
-				</Continental_AOSI-895-5A>
-				<Continental_AOSI-895-5B>
-					<smplEnginePower>900</smplEnginePower>
+				</Continental_AOSI_895_5A>
+				<Continental_AOSI_895_5B>
+					<smplEnginePower>930</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
-				</Continental_AOSI-895-5B>
+				</Continental_AOSI_895_5B>
 			</engines>
 			<chassis>
 				<Chassis_A100_T49>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1449
+								0.13685
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

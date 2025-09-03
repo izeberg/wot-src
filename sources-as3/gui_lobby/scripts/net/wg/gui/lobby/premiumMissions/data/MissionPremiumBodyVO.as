@@ -1,7 +1,7 @@
 package net.wg.gui.lobby.premiumMissions.data
 {
    import net.wg.gui.lobby.battleMatters.data.MissionPremiumCardVO;
-   import net.wg.gui.lobby.missions.data.MissionPackMarathonBodyVO;
+   import net.wg.gui.lobby.userMissions.data.MissionPackMarathonBodyVO;
    
    public class MissionPremiumBodyVO extends MissionPackMarathonBodyVO
    {

@@ -13,7 +13,7 @@ def getUnlockedItems(itemsCache=None):
     if itemsCache is not None:
         return itemsCache.items.stats.unlocks
     else:
-        return ()
+        return set()
 
 
 @dependency.replace_none_kwargs(itemsCache=IItemsCache)

@@ -107,9 +107,9 @@ package net.wg.gui.lobby.personalMissions.components
          waiting.width = _width;
          waiting.height = _height;
          bg.width = _width + BG_WIDTH_PADDING;
-         bg.height = _height - TOP_PANEL_HEIGHT;
+         bg.height = _height - (_paddings.y > 0 ? 0 : TOP_PANEL_HEIGHT);
          view.x = _width >> 1;
-         view.y = VIEW_TOP_OFFSET_MIN + Math.max(0,_height - LobbyMetrics.MIN_STAGE_HEIGHT >> 1);
+         view.y = Math.max(VIEW_TOP_OFFSET_MIN,_paddings.y) + Math.max(0,_height - LobbyMetrics.MIN_STAGE_HEIGHT >> 1);
          var _loc1_:Boolean = false;
          var _loc2_:String = App.appHeight >= VERTICAL_SIZE_BREAK_POINT ? VERTICAL_SIZE_ID_WIDE : VERTICAL_SIZE_ID_SHORT;
          if(_loc2_ != this._verticalSizeID)
@@ -137,7 +137,8 @@ package net.wg.gui.lobby.personalMissions.components
       
       override protected function getPaginatorPos() : Point
       {
-         return new Point(view.x,_height - pageButtons.height + PAGE_BUTTONS_BOTTOM_OFFSET | 0);
+         var _loc1_:uint = _paddings.height;
+         return new Point(view.x,_height - pageButtons.height + PAGE_BUTTONS_BOTTOM_OFFSET - _loc1_ | 0);
       }
       
       override protected function setMissionData(param1:BaseMissionDetailedViewVO) : void

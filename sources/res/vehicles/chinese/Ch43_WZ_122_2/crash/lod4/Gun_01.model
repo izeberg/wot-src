@@ -2,4 +2,8 @@
 <root>
 	<nodelessVisual>vehicles/chinese/Ch43_WZ_122_2/crash/lod4/Gun_01</nodelessVisual>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.021093 -0.338903 -0.154250</min>
+		<max>1.046722 0.424001 4.691158</max>
+	</visibilityBox>
 </root>

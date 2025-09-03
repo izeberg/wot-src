@@ -16,7 +16,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.074
+			0.075
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -103,12 +103,9 @@
 		<weight>11475</weight>
 		<maxHealth>272</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>100</maxHealth>
-			<maxRegenHealth>50</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>143</maxRegenHealth>
+			<repairCost>7</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/french/F24_Lorraine155_50/normal/lod0/Hull.model</undamaged>
@@ -3195,14 +3192,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Lorraine155_50>
-			<userString>#france_vehicles:Chassis_Lorraine155_50</userString>
+		<Chassis_F24_Lorraine155_50>
+			<userString>#france_vehicles:Chassis_F24_Lorraine155_50</userString>
 			<tags/>
 			<level>6</level>
 			<price>14600</price>
 			<unlocks>
 				<chassis>
-					Chassis_Lorraine155_50_2
+					Chassis_F24_Lorraine155_50_2
 					<cost>7000</cost>
 				</chassis>
 			</unlocks>
@@ -3211,9 +3208,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14000</weight>
-			<maxLoad>30000</maxLoad>
 			<terrainResistance>
-				1.3 1.5 2.5
+				1.2 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>27000</brakeForce>
@@ -4812,9 +4808,9 @@
 				8.5714283
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Lorraine155_50>
-		<Chassis_Lorraine155_50_2>
-			<userString>#france_vehicles:Chassis_Lorraine155_50_2</userString>
+		</Chassis_F24_Lorraine155_50>
+		<Chassis_F24_Lorraine155_50_2>
+			<userString>#france_vehicles:Chassis_F24_Lorraine155_50_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>21000</price>
@@ -4823,7 +4819,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14000</weight>
-			<maxLoad>32000</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.3
 				<!--BW_String-->
@@ -4845,8 +4840,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>110</maxHealth>
-			<maxRegenHealth>85</maxRegenHealth>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>135</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -6421,16 +6416,16 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.94736862
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Lorraine155_50_2>
+		</Chassis_F24_Lorraine155_50_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Lorraine155_50>
+		<Turret_1_F24_Lorraine155_50>
 			<ceilless>true</ceilless>
-			<userString>#france_vehicles:Turret_1_Lorraine155_50</userString>
-			<tags>cannotDetach</tags>
+			<userString>#france_vehicles:Turret_1_F24_Lorraine155_50</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>7</level>
 			<price>120</price>
 			<notInShop>true</notInShop>
@@ -6464,7 +6459,7 @@
 					<maxAmmo>28</maxAmmo>
 					<unlocks>
 						<gun>
-							Obusier_de_155mm_mle.1950
+							Obusier_de_155mm_mle_1950_L50
 							<cost>14350</cost>
 						</gun>
 					</unlocks>
@@ -6583,7 +6578,7 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</Canon_de_155mm_de_33_calibres>
-				<Obusier_de_155mm_mle.1950>
+				<Obusier_de_155mm_mle_1950_L50>
 					shared
 					<maxAmmo>28</maxAmmo>
 					<unlocks>
@@ -6704,7 +6699,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</Obusier_de_155mm_mle.1950>
+				</Obusier_de_155mm_mle_1950_L50>
 			</guns>
 			<models>
 				<undamaged>vehicles/french/F24_Lorraine155_50/normal/lod0/Turret_01.model</undamaged>
@@ -6754,33 +6749,24 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_Lorraine155_50>
+		</Turret_1_F24_Lorraine155_50>
 	</turrets0>
 	<engines>
 		<Maybach_HL_210_TRM_P30>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_230_TRM_P30
+					Maybach_HL_230_TRM_P30_L50
 					<cost>18800</cost>
 				</engine>
 			</unlocks>
 		</Maybach_HL_210_TRM_P30>
-		<Maybach_HL_230_TRM_P30>shared</Maybach_HL_230_TRM_P30>
+		<Maybach_HL_230_TRM_P30_L50>shared</Maybach_HL_230_TRM_P30_L50>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_528
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_528>shared</SCR_528>
 	</radios>
 	<physics>
@@ -6793,38 +6779,16 @@
 					</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</Maybach_HL_210_TRM_P30>
-				<Maybach_HL_230_TRM_P30>
+				<Maybach_HL_230_TRM_P30_L50>
 					<smplEnginePower>
 						740.0968
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
-				</Maybach_HL_230_TRM_P30>
+				</Maybach_HL_230_TRM_P30_L50>
 			</engines>
 			<chassis>
-				<Chassis_Lorraine155_50>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Lorraine155_50>
-				<Chassis_Lorraine155_50_2>
+				<Chassis_F24_Lorraine155_50>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6845,7 +6809,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Lorraine155_50_2>
+				</Chassis_F24_Lorraine155_50>
+				<Chassis_F24_Lorraine155_50_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_F24_Lorraine155_50_2>
 			</chassis>
 		</detailed>
 	</physics>

@@ -10,10 +10,16 @@ class MapStateEnum(Enum):
     MAPS_BLACKLIST_SLOT_STATE_ACTIVE_NO_HOVER = 'active_no_hover'
 
 
+class SlotTypeEnum(Enum):
+    NONE = 'none'
+    PREMIUM = 'premium'
+    WOTPLUS = 'wotplus'
+
+
 class MapsBlacklistSlotModel(ViewModel):
     __slots__ = ()
 
-    def __init__(self, properties=5, commands=0):
+    def __init__(self, properties=6, commands=0):
         super(MapsBlacklistSlotModel, self).__init__(properties=properties, commands=commands)
 
     def getState(self):
@@ -46,6 +52,12 @@ class MapsBlacklistSlotModel(ViewModel):
     def setFiltered(self, value):
         self._setBool(4, value)
 
+    def getSlotType(self):
+        return SlotTypeEnum(self._getString(5))
+
+    def setSlotType(self, value):
+        self._setString(5, value.value)
+
     def _initialize(self):
         super(MapsBlacklistSlotModel, self)._initialize()
         self._addStringProperty('state')
@@ -53,3 +65,4 @@ class MapsBlacklistSlotModel(ViewModel):
         self._addNumberProperty('seasonId', 0)
         self._addNumberProperty('cooldownTime', 0)
         self._addBoolProperty('filtered', True)
+        self._addStringProperty('slotType', SlotTypeEnum.NONE.value)

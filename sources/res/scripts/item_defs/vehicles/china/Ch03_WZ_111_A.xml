@@ -270,7 +270,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
@@ -2431,16 +2430,13 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.42
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						12.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>12</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -2453,7 +2449,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.8
+						2.6
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -2586,7 +2582,7 @@
 		<detailed>
 			<engines>
 				<_12150LZ>
-					<smplEnginePower>600</smplEnginePower>
+					<smplEnginePower>670</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_12150LZ>
 			</engines>

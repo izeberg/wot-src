@@ -73,9 +73,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/05_prohorovka_fire_big_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/05_prohorovka_fire_big_all_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/05_prohorovka_fire_small_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/34_redshire_leaves_air_around.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/34_redshire_leaves_air_around_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/34_redshire_water_foam.vfx</fn_effect_bin>
@@ -88,7 +85,6 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env004_Telega_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Barrel.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env005_Barrel_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env006_HayStack_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env006_HayStack_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env009_FirewoodStack_2.vfx</fn_effect_bin>
@@ -161,10 +157,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafBR_002_FieldFenceCorner.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafNW_001_VillageFance_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_gafNW_001_VillageFance_post.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_smallpole.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
@@ -212,9 +206,6 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_all_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_small_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_leaves_air_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
@@ -225,7 +216,6 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env006_HayStack_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env006_HayStack_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env009_FirewoodStack2.eff</fn_effect_bin>
@@ -297,10 +287,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gafBR_002_FieldFenceCorner.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_post.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_smallpole.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
@@ -438,9 +426,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_05.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/05_prohorovka_fire_big_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/05_prohorovka_fire_big_all_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/05_prohorovka_fire_small_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/34_redshire_leaves_air_around.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/34_redshire_leaves_air_around_s.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/34_redshire_water_foam.vfx</fn_effect_bin>
@@ -453,7 +438,6 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_03.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env004_Telega_04.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Barrel.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env005_Barrel_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env006_HayStack_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env006_HayStack_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env009_FirewoodStack_2.vfx</fn_effect_bin>
@@ -526,10 +510,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafBR_002_FieldFenceCorner.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafNW_001_VillageFance_gate.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_gafNW_001_VillageFance_post.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle016_BoxesHowitzer.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_smallpole.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
@@ -577,9 +559,6 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_big_all_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/environment/interior/05_prohorovka_fire_small_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_leaves_air_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
@@ -590,7 +569,6 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env004_Telega_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env005_Barrel_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env006_HayStack_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env006_HayStack_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env009_FirewoodStack2.eff</fn_effect_bin>
@@ -662,10 +640,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_gafBR_002_FieldFenceCorner.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_gate.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_gafNW_001_VillageFance_post.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mle016_BoxesHowitzer.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_smallpole.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>

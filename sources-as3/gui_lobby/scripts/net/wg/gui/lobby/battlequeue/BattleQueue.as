@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.battlequeue
 {
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.ui.Keyboard;
    import net.wg.data.constants.AlignType;
@@ -12,12 +13,13 @@ package net.wg.gui.lobby.battlequeue
    import net.wg.gui.utils.FrameHelper;
    import net.wg.infrastructure.base.meta.IBattleQueueMeta;
    import net.wg.infrastructure.base.meta.impl.BattleQueueMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.data.DataProvider;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.events.InputEvent;
    
-   public class BattleQueue extends BattleQueueMeta implements IBattleQueueMeta
+   public class BattleQueue extends BattleQueueMeta implements IBattleQueueMeta, IInnerView
    {
       
       private static const MAX_POS_Y:int = 80;
@@ -101,8 +103,7 @@ package net.wg.gui.lobby.battlequeue
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         x = param1 - actualWidth >> 1;
-         y = Math.max(Math.min(-parent.y + (param2 - actualHeight >> 1) ^ 0,MAX_POS_Y),-MAX_POS_Y);
+         assertUpdateStageMethod();
       }
       
       override protected function configUI() : void
@@ -204,7 +205,7 @@ package net.wg.gui.lobby.battlequeue
                {
                   return;
                }
-               this.updateStage(parent.width,parent.height);
+               this.updateStageWithPadding(parent.width,parent.height,null);
                this.listByType.height = getListHeight(_loc1_);
             }
             this.modeTitle.text = this._typeInfo.title;
@@ -282,6 +283,17 @@ package net.wg.gui.lobby.battlequeue
       public function as_showStart(param1:Boolean) : void
       {
          this.startButton.visible = param1;
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         x = param1 - actualWidth >> 1;
+         y = Math.max(Math.min(-parent.y + (param2 - actualHeight >> 1) ^ 0,MAX_POS_Y),-MAX_POS_Y);
       }
       
       private function onExitButtonClickHandler(param1:ButtonEvent) : void

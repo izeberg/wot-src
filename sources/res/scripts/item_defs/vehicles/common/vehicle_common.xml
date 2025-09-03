@@ -118,6 +118,7 @@
 			<water>turret_touchdown_medium_water</water>
 			<dirt>turret_touchdown_medium</dirt>
 			<oil>turret_touchdown_medium</oil>
+			<blacksand>turret_touchdown_medium</blacksand>
 		</collision>
 		<pull>
 			<ground>turret_pull_ground</ground>
@@ -129,6 +130,7 @@
 			<water>turret_pull_water</water>
 			<dirt>turret_pull_dirt</dirt>
 			<oil>turret_pull_oil</oil>
+			<blacksand>turret_pull_blacksand</blacksand>
 		</pull>
 	</defaultTurretDetachmentEffects>
 	<extras>
@@ -155,7 +157,9 @@
 		<shoot>ShowShooting : Shoot</shoot>
 		<noAmmo>NoneExtra : NoAmmo</noAmmo>
 		<gunReload>NoneExtra : GunReload</gunReload>
+		<gunReloadBetweenShots>NoneExtra : GunReloadBetweenShots</gunReloadBetweenShots>
 		<clipReload>NoneExtra : ClipReload</clipReload>
+		<controllableClipReload>NoneExtra : ControllableClipReload</controllableClipReload>
 		<trackInstantRepairDelay>
 			NoneExtra : TrackInstantRepairDelay
 			<delay>
@@ -431,7 +435,6 @@
 			</beamLength>
 			<bindNode>HP_gunFire</bindNode>
 		</laserSight>
-		<multiShoot>ShowShootingMultiGun : MultiShoot</multiShoot>
 	</extras>
 	<deviceExtras>
 		<devices>

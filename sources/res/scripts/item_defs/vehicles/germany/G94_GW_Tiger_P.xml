@@ -108,12 +108,9 @@
 		<weight>44910</weight>
 		<maxHealth>352</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>120</maxHealth>
-			<maxRegenHealth>60</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>158</maxRegenHealth>
+			<repairCost>8</repairCost>
 			<chanceToHit>
 				0.50
 				<!--BW_String-->
@@ -2906,14 +2903,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_GW_Elefant>
-			<userString>#germany_vehicles:Chassis_GW_Elefant</userString>
+		<Chassis_G94_GW_Tiger_P>
+			<userString>#germany_vehicles:Chassis_G94_GW_Tiger_P</userString>
 			<tags/>
 			<level>7</level>
 			<price>20000</price>
 			<unlocks>
 				<chassis>
-					Chassis_GW_Elefant_2
+					Chassis_G94_GW_Tiger_P_2
 					<cost>15000</cost>
 				</chassis>
 			</unlocks>
@@ -2922,9 +2919,8 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>21000</weight>
-			<maxLoad>75000</maxLoad>
 			<terrainResistance>
-				1.4 1.6 2.7
+				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>67000</brakeForce>
@@ -5187,9 +5183,9 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>10</repairTime>
-		</Chassis_GW_Elefant>
-		<Chassis_GW_Elefant_2>
-			<userString>#germany_vehicles:Chassis_GW_Elefant_2</userString>
+		</Chassis_G94_GW_Tiger_P>
+		<Chassis_G94_GW_Tiger_P_2>
+			<userString>#germany_vehicles:Chassis_G94_GW_Tiger_P_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>36000</price>
@@ -5198,7 +5194,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>21000</weight>
-			<maxLoad>78000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -7463,12 +7458,12 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>8</repairTime>
-		</Chassis_GW_Elefant_2>
+		</Chassis_G94_GW_Tiger_P_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_GW_Elefant>
+		<Turret_1_G94_GW_Tiger_P>
 			<ceilless>true</ceilless>
-			<userString>#germany_vehicles:Turret_1_GW_Elefant</userString>
+			<userString>#germany_vehicles:Turret_1_G94_GW_Tiger_P</userString>
 			<tags>cannotDetach</tags>
 			<level>8</level>
 			<price>120</price>
@@ -7480,12 +7475,9 @@
 			<maxHealth>88</maxHealth>
 			<rotationSpeed>10</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>155</maxHealth>
+				<maxRegenHealth>78</maxRegenHealth>
+				<repairCost>8</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>290</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -7497,18 +7489,14 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_170mm_K72_Sf_>
+				<_170mm_Kanone_72_GW_P>
 					shared
 					<maxAmmo>21</maxAmmo>
 					<unlocks>
 						<gun>
-							_210mm_Morser_21
+							_210mm_Morser_18_1_GW_P
 							<cost>67500</cost>
 						</gun>
-						<vehicle>
-							G45_G_Tiger
-							<cost>184500</cost>
-						</vehicle>
 					</unlocks>
 					<armor>
 						<armor_1>30</armor_1>
@@ -7638,10 +7626,16 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_170mm_K72_Sf_>
-				<_210mm_Morser_21>
+				</_170mm_Kanone_72_GW_P>
+				<_210mm_Morser_18_1_GW_P>
 					shared
 					<maxAmmo>15</maxAmmo>
+					<unlocks>
+						<vehicle>
+							G45_G_Tiger
+							<cost>184500</cost>
+						</vehicle>
+					</unlocks>
 					<shotDispersionRadius>
 						0.79
 						<!--BW_String-->
@@ -7770,7 +7764,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_210mm_Morser_21>
+				</_210mm_Morser_18_1_GW_P>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G94_GW_Tiger_P/normal/lod0/Turret_01.model</undamaged>
@@ -7793,7 +7787,7 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</Turret_1_GW_Elefant>
+		</Turret_1_G94_GW_Tiger_P>
 	</turrets0>
 	<engines>
 		<Maybach_HL_120_TRM_x2>
@@ -7811,24 +7805,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
@@ -7850,29 +7826,7 @@
 				</Porsche_Typ_101_1_x2>
 			</engines>
 			<chassis>
-				<Chassis_GW_Elefant>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.21735
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1288
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_GW_Elefant>
-				<Chassis_GW_Elefant_2>
+				<Chassis_G94_GW_Tiger_P>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -7893,18 +7847,40 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_GW_Elefant_2>
+				</Chassis_G94_GW_Tiger_P>
+				<Chassis_G94_GW_Tiger_P_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.20125
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G94_GW_Tiger_P_2>
 			</chassis>
 		</detailed>
 	</physics>
 	<clientAdjustmentFactors>
 		<guns>
-			<_210mm_Morser_21>
+			<_210mm_Morser_18_1_GW_P>
 				<delta>
 					1.03773584
 					<!--BW_String-->
 				</delta>
-			</_210mm_Morser_21>
+			</_210mm_Morser_18_1_GW_P>
 		</guns>
 		<armour>
 			0.499670091

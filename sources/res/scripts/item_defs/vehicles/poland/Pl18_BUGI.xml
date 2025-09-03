@@ -103,7 +103,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22020</weight>
-		<maxHealth>672</maxHealth>
+		<maxHealth>736</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>140</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -1739,7 +1739,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7200</weight>
-			<maxLoad>40000</maxLoad>
 			<terrainResistance>
 				1.5 1.7 2.7
 				<!--BW_String-->
@@ -3926,7 +3925,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7250</weight>
-			<maxLoad>41350</maxLoad>
 			<terrainResistance>
 				1.5 1.7 2.7
 				<!--BW_String-->
@@ -6134,7 +6132,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>6250</weight>
-			<maxHealth>128</maxHealth>
+			<maxHealth>134</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -6144,7 +6142,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>330</circularVisionRadius>
+			<circularVisionRadius>340</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>80</maxHealth>
 				<maxRegenHealth>40</maxRegenHealth>
@@ -6176,7 +6174,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -7249,10 +7247,6 @@
 					Pl20_CS_44
 					<cost>46700</cost>
 				</vehicle>
-				<gun>
-					_100mm_haubica_wz_14_19
-					<cost>4700</cost>
-				</gun>
 			</unlocks>
 			<armor>
 				<armor_1>100</armor_1>
@@ -7287,7 +7281,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7200</weight>
-			<maxHealth>168</maxHealth>
+			<maxHealth>184</maxHealth>
 			<rotationSpeed>35</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -7297,7 +7291,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>360</circularVisionRadius>
+			<circularVisionRadius>350</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>80</maxHealth>
 				<maxRegenHealth>40</maxRegenHealth>
@@ -7327,7 +7321,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>4</afterShot>
@@ -7535,118 +7529,6 @@
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
 				</_90mm_wz_39_40>
-				<_100mm_haubica_wz_14_19>
-					shared
-					<maxAmmo>74</maxAmmo>
-					<armor>
-						<gun>30</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.5
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						8.3
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.16
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							4.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>3</aimingTime>
-					<invisibilityFactorAtShot>
-						0.22
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 8 1 8</maxPitch>
-					</pitchLimits>
-					<models>
-						<undamaged>vehicles/poland/Pl18_BUGI/normal/lod0/Gun_06.model</undamaged>
-						<destroyed>vehicles/poland/Pl18_BUGI/crash/lod0/Gun_06.model</destroyed>
-						<exploded>vehicles/poland/Pl18_BUGI/crash/lod0/Gun_06.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/poland/Pl18_BUGI/collision/Gun_06.model</collisionModelServer>
-						<collisionModelClient>vehicles/poland/Pl18_BUGI/collision_client/Gun_06.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_mainext</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.003458 0.132841 1.18436
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>-0.003455 0.331451 0.172986</anchorPosition>
-							<anchorDirection>-0 0 1</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.003458 0.132838 1.18436
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.004785 0.135566 1.23999
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.004785 0.135566 1.93999
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.108569 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.7
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<density>
-							109.997 110.597
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 256</aoTextureSize>
-					</camouflage>
-				</_100mm_haubica_wz_14_19>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl18_BUGI/normal/lod0/Turret_02.model</undamaged>
@@ -8568,15 +8450,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<N2_C>
-			shared
-			<unlocks>
-				<radio>
-					RKB_C
-					<cost>620</cost>
-				</radio>
-			</unlocks>
-		</N2_C>
 		<RKB_C>shared</RKB_C>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -8584,7 +8457,7 @@
 		<detailed>
 			<engines>
 				<Maybach_VL_2_ZTB>
-					<smplEnginePower>550</smplEnginePower>
+					<smplEnginePower>630</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Maybach_VL_2_ZTB>
 				<Rytla_Wernera_M>

@@ -1,6 +1,6 @@
 package net.wg.gui.lobby.battleMatters.data
 {
-   import net.wg.gui.lobby.missions.data.MissionCardViewVO;
+   import net.wg.gui.lobby.userMissions.data.MissionCardViewVO;
    
    public class MissionPremiumCardVO extends MissionCardViewVO
    {

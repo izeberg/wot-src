@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.876481 0.000029 -3.732624</min>
+		<max>1.876481 1.176949 4.134120</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB147_FV4025_Contriver/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB147_FV4025_Contriver/normal/lod0/Chassis</nodefullVisual>
+</root>

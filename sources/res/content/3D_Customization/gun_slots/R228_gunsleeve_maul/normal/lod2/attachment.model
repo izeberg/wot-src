@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/gun_slots/R228_gunsleeve_maul/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.242993 -0.341581 -1.962594</min>
+		<max>0.224604 0.198455 2.444721</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/R228_gunsleeve_maul/normal/lod2/attachment</nodefullVisual>
+</root>

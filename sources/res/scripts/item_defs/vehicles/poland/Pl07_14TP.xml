@@ -2089,9 +2089,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>4200</weight>
-			<maxLoad>14600</maxLoad>
 			<terrainResistance>
-				1.1 1.3 2.3
+				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>32500</brakeForce>
@@ -3507,14 +3506,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>4200</weight>
-			<maxLoad>15300</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>50</rotationSpeed>
+			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -5110,6 +5108,10 @@
 							Pl12_25TP_KSUST_II
 							<cost>11930</cost>
 						</vehicle>
+						<vehicle>
+							Pl17_DS_PZlnz
+							<cost>13230</cost>
+						</vehicle>
 					</unlocks>
 					<armor>
 						<armor_1>
@@ -6114,29 +6116,12 @@
 				</engine>
 			</unlocks>
 		</J_V12_M>
-		<PLInz_RWA>
-			shared
-			<unlocks>
-				<vehicle>
-					Pl17_DS_PZlnz
-					<cost>13230</cost>
-				</vehicle>
-			</unlocks>
-		</PLInz_RWA>
+		<PLInz_RWA>shared</PLInz_RWA>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<N2_M>
-			shared
-			<unlocks>
-				<radio>
-					N2_S
-					<cost>100</cost>
-				</radio>
-			</unlocks>
-		</N2_M>
 		<N2_S>shared</N2_S>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -6158,19 +6143,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.15295
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

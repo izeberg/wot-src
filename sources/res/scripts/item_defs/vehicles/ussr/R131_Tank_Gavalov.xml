@@ -91,7 +91,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>12000</weight>
-		<maxHealth>704</maxHealth>
+		<maxHealth>784</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>160</maxHealth>
 			<maxRegenHealth>110</maxRegenHealth>
@@ -1591,14 +1591,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>25000</maxLoad>
 			<terrainResistance>
-				1 1.1 1.7
+				0.9 1 1.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>25000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>46</rotationSpeed>
+			<rotationSpeed>54</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -3488,14 +3487,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>30000</maxLoad>
 			<terrainResistance>
 				0.9 1 1.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>25000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>48</rotationSpeed>
+			<rotationSpeed>56</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.14
@@ -5461,7 +5459,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>6000</weight>
-			<maxHealth>176</maxHealth>
+			<maxHealth>196</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -5481,12 +5479,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_85mm_ZiS_S-53M>
+				<_85mm_ZiS_S_53M>
 					shared
 					<maxAmmo>38</maxAmmo>
 					<unlocks>
 						<gun>
-							_85mm_D5T-85BMU
+							_85mm_D_5T_85BMU_LTG
 							<cost>15200</cost>
 						</gun>
 					</unlocks>
@@ -5518,7 +5516,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.42
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -5527,7 +5525,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5540,7 +5538,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5627,8 +5625,8 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_85mm_ZiS_S-53M>
-				<_85mm_D5T-85BMU>
+				</_85mm_ZiS_S_53M>
+				<_85mm_D_5T_85BMU_LTG>
 					shared
 					<maxAmmo>38</maxAmmo>
 					<unlocks>
@@ -5768,7 +5766,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_85mm_D5T-85BMU>
+				</_85mm_D_5T_85BMU_LTG>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R131_Tank_Gavalov/normal/lod0/Turret_01.model</undamaged>
@@ -6730,15 +6728,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<_9RM>
-			shared
-			<unlocks>
-				<radio>
-					R113
-					<cost>8700</cost>
-				</radio>
-			</unlocks>
-		</_9RM>
 		<R113>shared</R113>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -6750,7 +6739,7 @@
 		<detailed>
 			<engines>
 				<GAZ_O>
-					<smplEnginePower>530</smplEnginePower>
+					<smplEnginePower>600</smplEnginePower>
 					<smplFwMaxSpeed>63</smplFwMaxSpeed>
 				</GAZ_O>
 				<GAZ_OU>
@@ -6763,13 +6752,16 @@
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
-							<rollingFriction>0.171063</rollingFriction>
+							<rollingFriction>
+								0.161
+								<!--BW_String-->
+							</rollingFriction>
 						</soft>
 						<medium>
-							<rollingFriction>0.110688</rollingFriction>
+							<rollingFriction>0.100625</rollingFriction>
 						</medium>
 						<firm>
-							<rollingFriction>0.100625</rollingFriction>
+							<rollingFriction>0.090562</rollingFriction>
 						</firm>
 					</grounds>
 				</Chassis_R131_Tank_Gavalov>

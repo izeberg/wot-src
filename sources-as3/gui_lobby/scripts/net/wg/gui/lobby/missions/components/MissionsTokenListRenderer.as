@@ -4,8 +4,8 @@ package net.wg.gui.lobby.missions.components
    import flash.events.MouseEvent;
    import flash.text.TextField;
    import net.wg.gui.components.controls.TableRenderer;
-   import net.wg.gui.lobby.missions.data.TokenRendererVO;
    import net.wg.gui.lobby.missions.event.MissionsTokenListRendererEvent;
+   import net.wg.gui.lobby.userMissions.data.TokenRendererVO;
    import net.wg.infrastructure.interfaces.IImage;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import org.idmedia.as3commons.util.StringUtils;

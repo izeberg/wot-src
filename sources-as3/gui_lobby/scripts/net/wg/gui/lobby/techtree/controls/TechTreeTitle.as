@@ -51,19 +51,18 @@ package net.wg.gui.lobby.techtree.controls
          return this._disposed;
       }
       
-      public function updateSize(param1:Number, param2:Number) : void
+      public function updateSize(param1:Number, param2:Number, param3:uint) : void
       {
-         var _loc3_:Boolean = false;
-         _loc3_ = param2 >= _HEIGHT_BREAKPOINT;
-         y = !!_loc3_ ? Number(_Y_BIG) : Number(_Y_SMALL);
-         gotoAndStop(!!_loc3_ ? _BIG_TITLE_STATE : _SMALL_TITLE_STATE);
+         var _loc4_:Boolean = param2 >= _HEIGHT_BREAKPOINT;
+         y = param3 > 0 ? Number(param3) : (!!_loc4_ ? Number(_Y_BIG) : Number(_Y_SMALL));
+         gotoAndStop(!!_loc4_ ? _BIG_TITLE_STATE : _SMALL_TITLE_STATE);
          if(this._baseDisposed)
          {
             return;
          }
          this.titleTF.text = this._titleStr;
          this.titleTF.width = param1;
-         this.titleTF.height = !!_loc3_ ? Number(_HEIGHT_BIG) : Number(_HEIGHT_SMALL);
+         this.titleTF.height = !!_loc4_ ? Number(_HEIGHT_BIG) : Number(_HEIGHT_SMALL);
          TextFieldEx.setVerticalAlign(this.titleTF,TextFieldEx.VALIGN_CENTER);
       }
       

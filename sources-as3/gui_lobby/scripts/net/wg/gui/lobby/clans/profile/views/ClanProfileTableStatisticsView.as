@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.clans.profile.views
 {
    import flash.display.InteractiveObject;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import net.wg.data.SortableVoDAAPIDataProvider;
@@ -108,7 +109,7 @@ package net.wg.gui.lobby.clans.profile.views
          return this.table.getComponentForFocus();
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          this.table.width = param1;
          this.table.height = param2;

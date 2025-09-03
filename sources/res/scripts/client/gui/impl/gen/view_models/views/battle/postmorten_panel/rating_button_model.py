@@ -1,12 +1,12 @@
 from enum import Enum
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 
 class RateButtonEnum(Enum):
-    WORSE = 'Worse'
-    USUAL = 'Usual'
-    BETTER = 'Better'
-    UNSET = 'Unset'
+    WORSE = 'worse'
+    USUAL = 'usual'
+    BETTER = 'better'
+    UNSET = 'unset'
 
 
 class RatingButtonModel(ViewModel):

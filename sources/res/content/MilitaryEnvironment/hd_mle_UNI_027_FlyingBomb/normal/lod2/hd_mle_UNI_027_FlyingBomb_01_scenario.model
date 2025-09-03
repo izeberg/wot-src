@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/MilitaryEnvironment/hd_mle_UNI_027_FlyingBomb/normal/lod3/hd_mle_UNI_027_FlyingBomb_01_scenario</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-2.657206 -0.355591 -4.210713</min>
+		<max>2.657206 1.277777 4.111712</max>
+	</visibilityBox>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_027_FlyingBomb/normal/lod2/hd_mle_UNI_027_FlyingBomb_01_scenario</nodefullVisual>
+</root>

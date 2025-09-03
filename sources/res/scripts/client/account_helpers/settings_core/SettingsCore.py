@@ -3,7 +3,7 @@ from InterfaceScaleManager import InterfaceScaleManager
 from PlayerEvents import g_playerEvents
 from account_helpers.AccountSettings import AccountSettings
 from account_helpers.settings_core.ServerSettingsManager import ServerSettingsManager, SETTINGS_SECTIONS
-from account_helpers.settings_core.settings_constants import SPGAim, CONTOUR
+from account_helpers.settings_core.settings_constants import SPGAim, CONTOUR, ArmorFlashlight
 from adisp import adisp_process
 from debug_utils import LOG_DEBUG, LOG_ERROR
 from gui.Scaleform.locale.SETTINGS import SETTINGS
@@ -14,11 +14,6 @@ from skeletons.gui.lobby_context import ILobbyContext
 @dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
 def _getStunSwitch(lobbyContext=None):
     return lobbyContext.getServerSettings().spgRedesignFeatures.isStunEnabled()
-
-
-@dependency.replace_none_kwargs(lobbyContext=ILobbyContext)
-def _getEpicRandomSwitch(lobbyContext=None):
-    return lobbyContext.getServerSettings().isEpicRandomEnabled()
 
 
 class SettingsCore(ISettingsCore):
@@ -253,23 +248,8 @@ class SettingsCore(ISettingsCore):
           GAME.GAMEPLAY_CTF,
           options.GameplaySetting(GAME.GAMEPLAY_MASK, 'ctf', storage=GAMEPLAY_SETTINGS_STORAGE)),
          (
-          GAME.GAMEPLAY_DOMINATION,
-          options.GameplaySetting(GAME.GAMEPLAY_MASK, 'domination', storage=GAMEPLAY_SETTINGS_STORAGE)),
-         (
-          GAME.GAMEPLAY_ASSAULT,
-          options.GameplaySetting(GAME.GAMEPLAY_MASK, 'assault', storage=GAMEPLAY_SETTINGS_STORAGE)),
-         (
-          GAME.GAMEPLAY_NATIONS,
-          options.GameplaySetting(GAME.GAMEPLAY_MASK, 'nations', storage=GAMEPLAY_SETTINGS_STORAGE)),
-         (
-          GAME.GAMEPLAY_EPIC_STANDARD,
-          options.GameplaySetting(GAME.GAMEPLAY_MASK, 'ctf30x30', storage=GAMEPLAY_SETTINGS_STORAGE, delegate=_getEpicRandomSwitch)),
-         (
           GAME.GAMEPLAY_DEV_MAPS,
           options.DevMapsSetting(GAME.GAMEPLAY_DEV_MAPS, storage=EXTENDED_GAME_2_SETTINGS_STORAGE)),
-         (
-          GAME.GAMEPLAY_EPIC_DOMINATION,
-          options.GameplaySetting(GAME.GAMEPLAY_MASK, 'domination30x30', storage=GAMEPLAY_SETTINGS_STORAGE, delegate=_getEpicRandomSwitch)),
          (
           GAME.LENS_EFFECT,
           options.LensEffectSetting(GAME.LENS_EFFECT, storage=GRAPHICS_SETTINGS_STORAGE)),
@@ -522,6 +502,21 @@ class SettingsCore(ISettingsCore):
          (
           CONTOUR.CONTOUR_IMPENETRABLE_ZONE,
           options.ContourImpenetratableZoneSetting(CONTOUR.CONTOUR_IMPENETRABLE_ZONE, storage=CONTOUR_SETTINGS_STORAGE)),
+         (
+          ArmorFlashlight.ENABLED,
+          options.ArmorFlashlightEnabledSettings(ArmorFlashlight.ENABLED, ArmorFlashlight.ENABLED)),
+         (
+          ArmorFlashlight.COLOR_SCHEMA,
+          options.ArmorFlashlightColorSchemasSettings(ArmorFlashlight.COLOR_SCHEMA, ArmorFlashlight.COLOR_SCHEMA)),
+         (
+          ArmorFlashlight.OPACITY,
+          options.ArmorFlashlightOpacity(ArmorFlashlight.OPACITY, ArmorFlashlight.OPACITY)),
+         (
+          ArmorFlashlight.FILL,
+          options.ArmorFlashlightFillSettings(ArmorFlashlight.FILL, ArmorFlashlight.FILL)),
+         (
+          ArmorFlashlight.RESOLUTION,
+          options.ArmorFlashlightResolutionSettings(ArmorFlashlight.RESOLUTION, ArmorFlashlight.RESOLUTION)),
          (
           MARKERS.ENEMY,
           options.VehicleMarkerSetting(MARKERS.ENEMY, storage=MARKERS_SETTINGS_STORAGE)),

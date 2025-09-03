@@ -13,6 +13,54 @@ msgstr ""
 msgid "allVehicles"
 msgstr "All"
 
+msgid "battleRating/tooltip/better/body"
+msgstr "This battle was more satisfying, balanced, or fun than usual."
+
+msgid "battleRating/tooltip/better/header"
+msgstr "Better than usual"
+
+msgid "battleRating/tooltip/usual/body"
+msgstr "A standard battle — nothing unexpected happened."
+
+msgid "battleRating/tooltip/usual/header"
+msgstr "Usual"
+
+msgid "battleRating/tooltip/worse/body"
+msgstr "This battle was more frustrating, imbalanced, or unfair than usual."
+
+msgid "battleRating/tooltip/worse/header"
+msgstr "Worse than usual"
+
+msgid "battleResult/battleRating/better/header"
+msgstr "BETTER THAN USUAL"
+
+msgid "battleResult/battleRating/none/header"
+msgstr "rate your battle:"
+
+msgid "battleResult/battleRating/usual/header"
+msgstr "USUAL"
+
+msgid "battleResult/battleRating/worse/header"
+msgstr "WORSE THAN USUAL"
+
+msgid "battleResult/comp7Light/team/prestigePoints/body"
+msgstr "Sort by Prestige Points."
+
+msgid "battleResult/comp7Light/team/prestigePoints/header"
+msgstr "Prestige Points"
+
+msgid "battleResult/navigation/battleResults"
+msgstr "Overview"
+
+msgid "battleResult/navigation/financialReport"
+msgstr "Financial Report"
+
+msgid "battleResult/navigation/missionsProgress"
+msgstr "Mission Progress"
+
+msgid "battleResult/navigation/teamEfficiency"
+msgstr "Team Score"
+
 msgid "battleResult/team/prestigePoints/body"
 msgstr ""
 "Sort by Prestige Points. Prestige Points affect the number of Rating Points "
@@ -24,11 +72,17 @@ msgstr "Prestige Points"
 msgid "common/arena/fullName"
 msgstr "{0} – {1}"
 
+msgid "common/arena/nameAndMode"
+msgstr "{{0}}, {{1}}"
+
 msgid "common/battleEfficiency/allies"
 msgstr "Allies:"
 
 msgid "common/battleEfficiency/allyBase"
 msgstr "Base defense"
+
+msgid "common/battleEfficiency/baseCapture"
+msgstr "Base capture:"
 
 msgid "common/battleEfficiency/bases"
 msgstr "Bases"
@@ -39,6 +93,9 @@ msgstr "Base capture"
 msgid "common/battleEfficiency/neutralBase"
 msgstr "Neutral base"
 
+msgid "common/battleEfficiency/noEfficiency"
+msgstr "You did not perform any actions in this battle."
+
 msgid "common/battleEfficiency/none"
 msgstr "No enemy vehicles destroyed or spotted."
 
@@ -47,6 +104,9 @@ msgstr "Vehicles"
 
 msgid "common/battleEfficiency/title"
 msgstr "Battle Performance"
+
+msgid "common/battleEfficiency/uppercased_title"
+msgstr "BATTLE PERFORMANCE"
 
 msgid "common/battleEfficiencyWithSkills/title"
 msgstr "Battle Performance (including used skills)"
@@ -83,6 +143,16 @@ msgstr "Standard Account"
 
 msgid "common/details/premTitle"
 msgstr "WoT Premium"
+
+msgid "common/details/premiumAdvertising/bonus"
+msgstr ""
+"{{@ split}}Apply a x{{multiplier}} experience bonus to the selected "
+"victorious battle with WoT Premium Account.{{/}}"
+
+msgid "common/details/premiumAdvertising/credits"
+msgstr ""
+"{{@ split}}Receive up to {{bonusCredits}} each {{@ style}}{{durationInDays}}"
+" d{{/}} with WoT Premium Account.{{/}}"
 
 msgid "common/details/premiumPlus/bonus"
 msgstr ""
@@ -138,8 +208,14 @@ msgstr "No progress in missions, vehicle research, and crew training."
 msgid "common/overtimeFinishReasonTitle"
 msgstr "Overtime:"
 
+msgid "common/player/nameWithClan"
+msgstr "{{name}} [{{clan}}]"
+
 msgid "common/plusBonus/bonusLeftAdditionalText"
 msgstr "Unlock more with "
+
+msgid "common/plusBonus/earnedMessage"
+msgstr "You've earned today:"
 
 msgid "common/plusBonus/earningsInformation"
 msgstr "You've earned %(count)s XP today"
@@ -168,8 +244,14 @@ msgstr "Apply"
 msgid "common/premiumBonus/bonusLeft"
 msgstr "Left today: %(count)s"
 
+msgid "common/premiumBonus/bonusMultiplier"
+msgstr "×{{value}}"
+
 msgid "common/premiumBonus/description"
 msgstr "Manageable XP Multiplier"
+
+msgid "common/premiumBonus/earnMore"
+msgstr "Want to earn more?"
 
 msgid "common/premiumBonus/expiredBattleResult"
 msgstr "Must be applied to the most recent battle in the same vehicle."
@@ -177,8 +259,18 @@ msgstr "Must be applied to the most recent battle in the same vehicle."
 msgid "common/premiumBonus/isXPToTmenDisabled"
 msgstr "Bonus cannot be applied: accelerated crew training disabled."
 
+msgid "common/premiumBonus/isXPToTmenDisabledWithInfo"
+msgstr ""
+"{{@ split}}Bonus cannot be applied: accelerated crew training {{@ "
+"style}}disabled.{{info}}{{/}}{{/}}"
+
 msgid "common/premiumBonus/isXPToTmenEnabled"
 msgstr "Bonus cannot be applied: accelerated crew training enabled."
+
+msgid "common/premiumBonus/isXPToTmenEnabledWithInfo"
+msgstr ""
+"{{@ split}}Bonus cannot be applied: accelerated crew training {{@ "
+"style}}enabled.{{info}}{{/}}{{/}}"
 
 msgid "common/premiumBonus/rule"
 msgstr ""
@@ -188,8 +280,18 @@ msgstr ""
 msgid "common/premiumBonus/tankStateChanged"
 msgstr "Manageable bonus cannot be applied: vehicle not found."
 
+msgid "common/premiumBonus/tankStateChangedWithInfo"
+msgstr ""
+"{{@ split}}Manageable bonus cannot be applied: vehicle not {{@ "
+"style}}found.{{info}}{{/}}{{/}}"
+
 msgid "common/premiumBonus/tankmenStateChanged"
 msgstr "Manageable bonus cannot be applied: crew not found."
+
+msgid "common/premiumBonus/tankmenStateChangedWithInfo"
+msgstr ""
+"{{@ split}}Manageable bonus cannot be applied: crew not {{@ "
+"style}}found.{{info}}{{/}}{{/}}"
 
 msgid "common/premiumBonus/unavailable"
 msgstr "Multipliers unavailable in this game mode."
@@ -205,6 +307,9 @@ msgstr "Battles left (approximately): %(battles)s"
 
 msgid "common/resultsShareBtn"
 msgstr "Get Link"
+
+msgid "common/startTime"
+msgstr "{{0}}, {{1}}"
 
 msgid "common/tooltip/armor/description"
 msgstr ""
@@ -460,6 +565,12 @@ msgstr "Survived"
 msgid "common/vehicleState/dead0"
 msgstr "Destroyed by a shot"
 
+msgid "common/vehicleState/dead0_with_killername"
+msgstr "Destroyed by a shot ({{killername}})"
+
+msgid "common/vehicleState/dead0_with_killername_and_clan"
+msgstr "Destroyed by a shot ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead1"
 msgstr "Destroyed by fire"
 
@@ -468,6 +579,12 @@ msgstr "Self-destructed"
 
 msgid "common/vehicleState/dead13"
 msgstr "Destroyed by the player's skill"
+
+msgid "common/vehicleState/dead1_with_killername"
+msgstr "Destroyed by fire ({{killername}})"
+
+msgid "common/vehicleState/dead1_with_killername_and_clan"
+msgstr "Destroyed by fire ({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/dead2"
 msgstr "Destroyed by ramming"
@@ -478,14 +595,32 @@ msgstr "Destroyed by Artillery Strike"
 msgid "common/vehicleState/dead29"
 msgstr "Crashed"
 
+msgid "common/vehicleState/dead2_with_killername"
+msgstr "Destroyed by ramming ({{killername}})"
+
+msgid "common/vehicleState/dead2_with_killername_and_clan"
+msgstr "Destroyed by ramming ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead3"
 msgstr "Crashed"
 
 msgid "common/vehicleState/dead30"
 msgstr "Destroyed by a shot"
 
+msgid "common/vehicleState/dead30_with_killername"
+msgstr "Destroyed by a shot ({{killername}})"
+
+msgid "common/vehicleState/dead30_with_killername_and_clan"
+msgstr "Destroyed by a shot ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead35"
 msgstr "Crashed"
+
+msgid "common/vehicleState/dead3_with_killername"
+msgstr "Crashed ({{killername}})"
+
+msgid "common/vehicleState/dead3_with_killername_and_clan"
+msgstr "Crashed ({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/dead4"
 msgstr "Destroyed by a death zone"
@@ -493,11 +628,23 @@ msgstr "Destroyed by a death zone"
 msgid "common/vehicleState/dead5"
 msgstr "Vehicle drowned"
 
+msgid "common/vehicleState/dead5_with_killername"
+msgstr "Vehicle drowned ({{killername}})"
+
+msgid "common/vehicleState/dead5_with_killername_and_clan"
+msgstr "Vehicle drowned ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead6"
 msgstr "Destroyed by Firestorm"
 
 msgid "common/vehicleState/dead7"
 msgstr "Destroyed by overturning"
+
+msgid "common/vehicleState/dead7_with_killername"
+msgstr "Destroyed by overturning ({{killername}})"
+
+msgid "common/vehicleState/dead7_with_killername_and_clan"
+msgstr "Destroyed by overturning ({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/prematureLeave"
 msgstr "Quit before the end of the battle"
@@ -513,6 +660,15 @@ msgstr "x"
 
 msgid "comms/likes/pbs/text/01"
 msgstr "Commendations received in this battle"
+
+msgid "comms/likes/pbs/tooltip/body"
+msgstr "{{var}} allies commended you this battle."
+
+msgid "comms/likes/pbs/tooltip/bodySingle"
+msgstr "{{var}} ally commended you this battle."
+
+msgid "comms/likes/pbs/tooltip/header"
+msgstr "Commendations received"
 
 msgid "customizationProgress/award/newLevel"
 msgstr "Level %(level)s \"%(name)s\" decal reached."
@@ -556,6 +712,9 @@ msgstr "Auto-resupply ammunition"
 msgid "details/calculations/autoRepair"
 msgstr "Auto-repair vehicle"
 
+msgid "details/calculations/autoResupply"
+msgstr "Auto-resupply"
+
 msgid "details/calculations/base"
 msgstr "Earned for battle"
 
@@ -578,6 +737,9 @@ msgid "details/calculations/fairPlayViolation/afk"
 msgstr "Fine for inaction in battle"
 
 msgid "details/calculations/fairPlayViolation/comp7_deserter"
+msgstr "Fine for desertion"
+
+msgid "details/calculations/fairPlayViolation/comp7_light_deserter"
 msgstr "Fine for desertion"
 
 msgid "details/calculations/fairPlayViolation/deserter"
@@ -622,6 +784,12 @@ msgstr "IGR bonus"
 msgid "details/calculations/intermediateTotal"
 msgstr "Total amount for battle:"
 
+msgid "details/calculations/manageableXpBonus"
+msgstr "Manageable XP bonus"
+
+msgid "details/calculations/maximum"
+msgstr "maximum"
+
 msgid "details/calculations/militaryManeuvers"
 msgstr "For military maneuvers"
 
@@ -650,6 +818,9 @@ msgstr "Bonus for Premium vehicle tier"
 
 msgid "details/calculations/referralBonus"
 msgstr "Referral Bonus (%(bonusFactor)d%%)"
+
+msgid "details/calculations/referralBonus/fullLabel"
+msgstr "Referral bonus (%(bonusFactor)d%)"
 
 msgid "details/calculations/referralBonus/simpleLabel"
 msgstr "Referral bonus"
@@ -681,14 +852,17 @@ msgstr "Total"
 msgid "details/calculations/total"
 msgstr "Total:"
 
-msgid "details/calculations/veteranBonus"
-msgstr "Veteran bonus"
-
 msgid "details/calculations/wotPlus"
 msgstr "WoT Plus Battle Bonus"
 
+msgid "details/calculations/wotPlusBonus"
+msgstr "WoT Plus battle bonus"
+
 msgid "details/calculations/xpRecord"
 msgstr "Received (%(color_tag_open)s maximum %(color_tag_close)s)"
+
+msgid "details/calculations/xpRecordSimple"
+msgstr "Received (%(maximum)s)"
 
 msgid "details/credits"
 msgstr "Credits"
@@ -746,6 +920,9 @@ msgstr "Battle"
 
 msgid "details/xp"
 msgstr "Experience"
+
+msgid "details/xp_abbr"
+msgstr "xp"
 
 msgid "exterminationVictory/allies"
 msgstr "Your team destroyed all enemy vehicles"
@@ -919,6 +1096,15 @@ msgstr ""
 msgid "selectVehicle"
 msgstr "Select a Vehicle"
 
+msgid "status/lose"
+msgstr "DEFEAT"
+
+msgid "status/tie"
+msgstr "DRAW"
+
+msgid "status/win"
+msgstr "VICTORY"
+
 msgid "tankSelector/next"
 msgstr "Next vehicle with"
 
@@ -1040,8 +1226,14 @@ msgstr "Platoon"
 msgid "team/squadHeaderNoSort/header"
 msgstr "Platoon"
 
+msgid "team/stats/allies"
+msgstr "Allies"
+
 msgid "team/stats/close"
 msgstr "Close"
+
+msgid "team/stats/enemies"
+msgstr "Enemies"
 
 msgid "team/stats/enemyTeam"
 msgstr "Enemy Team"

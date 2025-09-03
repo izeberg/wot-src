@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.334903 -0.445100 -2.952118</min>
+		<max>1.315457 0.730228 2.961243</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G188_LeKpz_Borkenkafer/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G188_LeKPZ_Borkenkafer/normal/lod0/Hull</nodefullVisual>
+</root>

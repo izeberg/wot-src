@@ -1,4 +1,7 @@
-import logging, BigWorld
+from __future__ import absolute_import
+import logging
+from future.utils import iteritems
+import BigWorld
 from adisp import adisp_process
 from gui.Scaleform.daapi.view.lobby.techtree import dumpers, nodes
 from gui.Scaleform.daapi.view.lobby.techtree.data import ResearchItemsData
@@ -227,7 +230,7 @@ class VehicleModulesView(VehicleModulesViewMeta, VehicleCompareConfiguratorBaseV
         self.__updateModulesData()
         newModulesData = __extractData(self.__nodes)
         changedSlots = []
-        for k, v in newModulesData.iteritems():
+        for k, v in iteritems(newModulesData):
             if v != oldModulesData[k]:
                 changedSlots.append((k, v))
 

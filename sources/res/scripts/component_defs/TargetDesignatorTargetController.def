@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<spottedMarker>
+			<Type>TARGET_DESIGNATOR_SPOTTED_MARKER</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</spottedMarker>
+		<hasUnspottedIndicator>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<DetailLevel>MY_VEHICLE</DetailLevel>
+		</hasUnspottedIndicator>
+	</Properties>
+	<DefaultKeyName>targetDesignatorTargetController</DefaultKeyName>
+</root>

@@ -42,6 +42,11 @@
 			<UUID>120f0706-238d-31a9-97b7-5b5c216e31de</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>63269a0e-0a28-4ab2-9285-a6e77424f100</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -53,242 +58,77 @@
 				<config>
 					<property>
 						<name>Parent</name>
+						<link>63269a0e-0a28-4ab2-9285-a6e77424f100</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>95fac478-a326-462b-a215-e05a769f6b1d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d40640b3-5790-3165-8004-0fe578a7853c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b871845a-299e-4aa1-bc01-8e5744ac7740</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>71268110-5ace-324f-baeb-7975a660834a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>95fac478-a326-462b-a215-e05a769f6b1d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b94d147-7aad-405a-ad2b-5b498641265b</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>120f0706-238d-31a9-97b7-5b5c216e31de</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>63269a0e-0a28-4ab2-9285-a6e77424f100</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
 						<link>925d6a00-9ce0-4780-9692-fc83656c0f27</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>95fac478-a326-462b-a215-e05a769f6b1d</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>d40640b3-5790-3165-8004-0fe578a7853c</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>b871845a-299e-4aa1-bc01-8e5744ac7740</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>71268110-5ace-324f-baeb-7975a660834a</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>95fac478-a326-462b-a215-e05a769f6b1d</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>5b94d147-7aad-405a-ad2b-5b498641265b</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>120f0706-238d-31a9-97b7-5b5c216e31de</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Parent</name>
-						<link>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</link>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
-			<type>Transform</type>
-			<version>1</version>
-			<component>
-				<UUID>925d6a00-9ce0-4780-9692-fc83656c0f27</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>95fac478-a326-462b-a215-e05a769f6b1d</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-6.53945e-08 0 0
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>d40640b3-5790-3165-8004-0fe578a7853c</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-0.0176715 -0.119263 -0.21965
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>
-							1.5 1.5 1.5
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-0 0 3.78956e-14
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>b871845a-299e-4aa1-bc01-8e5744ac7740</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-0.11406 0.225479 0.527634
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							0.174533 -9.0188e-16 -7.89043e-17
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>71268110-5ace-324f-baeb-7975a660834a</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>-0.140333 0.170532 0.557732</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							0.174533 -2.71955e-15 -2.3793e-16
-							<!--BW_String-->
-						</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>5b94d147-7aad-405a-ad2b-5b498641265b</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>120f0706-238d-31a9-97b7-5b5c216e31de</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							0 1.52588e-05 0
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>
-							-2.98023e-08 2.01492e-23 -9.9476e-14
-							<!--BW_String-->
-						</value>
 					</property>
 				</config>
 			</component>
@@ -300,6 +140,14 @@
 				<UUID>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</UUID>
 				<flags>3</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>0</value>
@@ -1405,6 +1253,229 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>925d6a00-9ce0-4780-9692-fc83656c0f27</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>95fac478-a326-462b-a215-e05a769f6b1d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9fdc8506-6e87-4da5-8776-5beed0ea2b3d</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-6.53945e-08 0 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>d40640b3-5790-3165-8004-0fe578a7853c</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.0176715 -0.119263 -0.21965
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>
+							1.5 1.5 1.5
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-0 0 3.78956e-14
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>b871845a-299e-4aa1-bc01-8e5744ac7740</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.11406 0.225479 0.527634
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.174533 -9.0188e-16 -7.89043e-17
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>71268110-5ace-324f-baeb-7975a660834a</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>-0.140333 0.170532 0.557732</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							0.174533 -2.71955e-15 -2.3793e-16
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>5b94d147-7aad-405a-ad2b-5b498641265b</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>120f0706-238d-31a9-97b7-5b5c216e31de</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							0 1.52588e-05 0
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>
+							-2.98023e-08 2.01492e-23 -9.9476e-14
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>63269a0e-0a28-4ab2-9285-a6e77424f100</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>925d6a00-9ce0-4780-9692-fc83656c0f27</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>63269a0e-0a28-4ab2-9285-a6e77424f100</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -2005,6 +2076,20 @@
 					</property>
 					<property>
 						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>925d6a00-9ce0-4780-9692-fc83656c0f27</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
 						<value>1</value>
 					</property>
 				</config>

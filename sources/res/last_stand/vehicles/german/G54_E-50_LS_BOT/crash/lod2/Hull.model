@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>last_stand/vehicles/german/G54_E-50_LS_BOT/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.787878 -1.493077 -5.189342</min>
+		<max>2.679755 1.131029 4.662164</max>
+	</visibilityBox>
+	<nodefullVisual>last_stand/vehicles/german/G54_E-50_LS_BOT/crash/lod2/Hull</nodefullVisual>
+</root>

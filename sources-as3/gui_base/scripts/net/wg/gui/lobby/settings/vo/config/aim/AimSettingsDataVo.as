@@ -14,13 +14,16 @@ package net.wg.gui.lobby.settings.vo.config.aim
       
       public var contour:AimSettingsContourDataVo = null;
       
+      public var armorFlashlight:AimSettingsArmorFlashlightDataVo = null;
+      
       public function AimSettingsDataVo()
       {
          super({
             "arcade":new AimSettingsArcadeDataVo(),
             "sniper":new AimSettingsSniperDataVo(),
             "spg":new AimSettingsArtyDataVo(),
-            "contour":new AimSettingsContourDataVo()
+            "contour":new AimSettingsContourDataVo(),
+            "armorFlashlight":new AimSettingsArmorFlashlightDataVo()
          });
       }
       
@@ -30,6 +33,7 @@ package net.wg.gui.lobby.settings.vo.config.aim
          this.sniper = null;
          this.spg = null;
          this.contour = null;
+         this.armorFlashlight = null;
          super.onDispose();
       }
    }

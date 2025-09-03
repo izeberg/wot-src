@@ -1,13 +1,12 @@
 import logging
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
-from gui.battle_results.presenters.packers.economics.base_currency_packer import BaseCurrencyPacker, CurrencyGroup
+from gui.battle_results.presenters.packers.economics.currency_packers import CurrencyPacker, CurrencyGroup
 from gui.battle_results.presenters.packers.economics import xp_records, free_xp_records, common_records
-from gui.battle_results.pbs_helpers.economics import getXpRecords, getFreeXpRecords
+from gui.battle_results.pbs_helpers.economics import getDirectFreeXpRecords, getDirectXpRecords
 from gui.battle_results.settings import CurrenciesConstants
 _logger = logging.getLogger(__name__)
 
-class XpPacker(BaseCurrencyPacker):
-    __slots__ = ()
+class XpPacker(CurrencyPacker):
     _EARNED = CurrencyGroup(label=None, records=[
      (
       xp_records.ORIGINAL_XP, free_xp_records.ORIGINAL_FREE_XP),
@@ -40,7 +39,7 @@ class XpPacker(BaseCurrencyPacker):
      (
       common_records.AOGAS_FACTOR, common_records.AOGAS_FACTOR),
      (
-      xp_records.WOT_PLUS_BONUS_XP, free_xp_records.WOT_PLUS_BONUS_FREE_XP),
+      xp_records.WOT_PLUS_CURRENT_ONLY_BONUS_XP, free_xp_records.WOT_PLUS_CURRENT_ONLY_BONUS_FREE_XP),
      (
       common_records.DESERTER_VIOLATION, common_records.DESERTER_VIOLATION),
      (
@@ -53,13 +52,13 @@ class XpPacker(BaseCurrencyPacker):
       xp_records.TOTAL_XP, free_xp_records.TOTAL_FREE_XP)])
     _EXTRACTORS = {(True, True): (
                     (
-                     getXpRecords, getFreeXpRecords), lambda configs: configs), 
+                     getDirectXpRecords, getDirectFreeXpRecords), lambda configs: configs), 
        (True, False): (
                      (
-                      getXpRecords,), lambda configs: zip([ pair[0] for pair in configs ])), 
+                      getDirectXpRecords,), lambda configs: zip([ pair[0] for pair in configs ])), 
        (False, True): (
                      (
-                      getFreeXpRecords,), lambda configs: zip([ pair[1] for pair in configs ]))}
+                      getDirectFreeXpRecords,), lambda configs: zip([ pair[1] for pair in configs ]))}
 
     @classmethod
     def _getExtractors(cls, currencyType, battleResults):

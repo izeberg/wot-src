@@ -1,6 +1,5 @@
-from frameworks.wulf import Array
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen import R
-from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.lobby.nation_change.nation_change_tank_setup_model import NationChangeTankSetupModel
 
 class NationChangeTankSlotModel(ViewModel):

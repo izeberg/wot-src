@@ -1,4 +1,5 @@
 from gui.impl.gen_utils import DynAccessor
+from .aliases import Aliases
 from .animations import Animations
 from .areas import Areas
 from .atlases import Atlases
@@ -14,6 +15,7 @@ from .views import Views
 class Resources(object):
     __slots__ = ()
     invalid = DynAccessor(0)
+    aliases = Aliases()
     animations = Animations()
     areas = Areas()
     atlases = Atlases()

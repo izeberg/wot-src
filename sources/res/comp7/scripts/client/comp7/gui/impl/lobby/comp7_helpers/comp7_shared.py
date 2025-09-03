@@ -1,16 +1,13 @@
 import typing
+from gui.shared.utils.requesters import REQ_CRITERIA
 from shared_utils import findFirst
 from comp7.gui.impl.gen.view_models.views.lobby.enums import Division, Rank
-from comp7.gui.impl.gen.view_models.views.lobby.season_model import SeasonState
-from comp7.gui.impl.gen.view_models.views.lobby.year_model import YearState
-from gui.periodic_battles.models import PeriodType
-from helpers import dependency, time_utils
+from helpers import dependency
 from skeletons.gui.game_control import IComp7Controller
 if typing.TYPE_CHECKING:
     from comp7_ranks_common import Comp7Division
     from comp7.helpers.comp7_server_settings import Comp7RanksConfig
-_SEASON_START_DURATION_DAYS = 7
-_SEASON_END_DURATION_DAYS = 7
+    from gui.shared.utils.requesters import RequestCriteria
 
 def getDivisionEnumValue(division):
     if division is not None:
@@ -63,7 +60,8 @@ def getPlayerDivision():
 
 @dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
 def hasRankInactivity(rank, comp7Controller=None):
-    if not (comp7Controller.isAvailable() and not comp7Controller.isOffline):
+    isRankInactivityAvailable = comp7Controller.isAvailable() and comp7Controller.hasActiveSeason() and not comp7Controller.isOffline
+    if not isRankInactivityAvailable:
         return False
     ranksConfig = comp7Controller.getRanksConfig()
     return any(division.hasRankInactivity for division in ranksConfig.divisionsByRank[rank])
@@ -77,66 +75,6 @@ def hasPlayerRankInactivityWarning(comp7Controller=None):
 
 
 @dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
-def getCurrentSeasonState(comp7Controller=None):
-    currentTime = time_utils.getCurrentLocalServerTimestamp()
-    periodInfo = comp7Controller.getPeriodInfo()
-    if periodInfo.periodType in (PeriodType.BEFORE_SEASON, PeriodType.BEFORE_CYCLE):
-        return SeasonState.NOTSTARTED
-    if periodInfo.periodType in (PeriodType.AFTER_SEASON, PeriodType.AFTER_CYCLE,
-     PeriodType.ALL_NOT_AVAILABLE_END, PeriodType.NOT_AVAILABLE_END,
-     PeriodType.STANDALONE_NOT_AVAILABLE_END):
-        return SeasonState.END
-    if periodInfo.periodType == PeriodType.UNDEFINED:
-        return SeasonState.DISABLED
-    if periodInfo.periodType == PeriodType.BETWEEN_SEASONS:
-        return SeasonState.END
-    if periodInfo.cycleBorderLeft.delta(currentTime) < time_utils.ONE_DAY * _SEASON_START_DURATION_DAYS:
-        return SeasonState.JUSTSTARTED
-    if periodInfo.cycleBorderRight.delta(currentTime) < time_utils.ONE_DAY * _SEASON_END_DURATION_DAYS:
-        return SeasonState.ENDSOON
-    return SeasonState.ACTIVE
-
-
-@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
-def getBannerSeasonState(comp7Controller=None):
-    startNotificationsPeriodLength = time_utils.ONE_DAY * 14
-    endNotificationsPeriodLength = time_utils.ONE_DAY * 14
-    currentTime = time_utils.getCurrentLocalServerTimestamp()
-    periodInfo = comp7Controller.getPeriodInfo()
-    if periodInfo.periodType in (PeriodType.BEFORE_SEASON, PeriodType.BEFORE_CYCLE, PeriodType.BETWEEN_SEASONS):
-        return SeasonState.NOTSTARTED
-    if periodInfo.periodType in (PeriodType.AFTER_SEASON, PeriodType.AFTER_CYCLE,
-     PeriodType.ALL_NOT_AVAILABLE_END, PeriodType.NOT_AVAILABLE_END,
-     PeriodType.STANDALONE_NOT_AVAILABLE_END):
-        return SeasonState.END
-    if periodInfo.periodType in (PeriodType.ALL_NOT_AVAILABLE, PeriodType.STANDALONE_NOT_AVAILABLE):
-        return SeasonState.DISABLED
-    if periodInfo.cycleBorderLeft.delta(currentTime) < startNotificationsPeriodLength:
-        status = SeasonState.JUSTSTARTED
-    elif periodInfo.cycleBorderRight.delta(currentTime) < endNotificationsPeriodLength:
-        status = SeasonState.ENDSOON
-    else:
-        status = SeasonState.ACTIVE
-    return status
-
-
-@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
-def getProgressionYearState(comp7Controller=None):
-    periodInfo = comp7Controller.getPeriodInfo()
-    hasNextSeason = comp7Controller.getNextSeason() is not None
-    hasPrevSeason = comp7Controller.getPreviousSeason() is not None
-    if periodInfo.periodType == PeriodType.BEFORE_SEASON:
-        return YearState.NOTSTARTED
-    else:
-        if periodInfo.periodType in (PeriodType.AFTER_SEASON, PeriodType.STANDALONE_NOT_AVAILABLE_END,
-         PeriodType.ALL_NOT_AVAILABLE_END, PeriodType.NOT_AVAILABLE_END):
-            return YearState.FINISHED
-        if periodInfo.periodType == PeriodType.BETWEEN_SEASONS or periodInfo.periodType == PeriodType.AFTER_CYCLE and hasNextSeason or periodInfo.periodType == PeriodType.BEFORE_CYCLE and hasPrevSeason:
-            return YearState.OFFSEASON
-        return YearState.ACTIVE
-
-
-@dependency.replace_none_kwargs(comp7Controller=IComp7Controller)
 def getRankByName(rankName, comp7Controller=None):
     config = comp7Controller.getRanksConfig()
     rank = findFirst(lambda rankData: rankData['name'].lower() == rankName.lower(), config.ranks.values())
@@ -147,3 +85,11 @@ def getRankByName(rankName, comp7Controller=None):
 def getRankOrder(rank, comp7Controller=None):
     config = comp7Controller.getRanksConfig()
     return config.ranksOrder.index(rank.value) + 1
+
+
+def getComp7Criteria():
+    comp7Criteria = REQ_CRITERIA.INVENTORY
+    comp7Criteria |= ~REQ_CRITERIA.VEHICLE.MODE_HIDDEN
+    comp7Criteria |= ~REQ_CRITERIA.VEHICLE.BATTLE_ROYALE
+    comp7Criteria |= ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE
+    return comp7Criteria

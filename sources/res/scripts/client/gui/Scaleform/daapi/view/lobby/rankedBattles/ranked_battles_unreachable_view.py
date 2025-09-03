@@ -1,10 +1,7 @@
-from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.ranked_battles.ranked_helpers.sound_manager import RANKED_SUBVIEW_SOUND_SPACE
 from gui.ranked_battles.ranked_builders.unreachable_vos import getUnreachableVO
 from gui.Scaleform.daapi import LobbySubView
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.meta.RankedBattlesUnreachableViewMeta import RankedBattlesUnreachableViewMeta
-from gui.shared import events, EVENT_BUS_SCOPE
 from gui.shared.utils.scheduled_notifications import PeriodicNotifier
 from helpers import dependency, time_utils
 from skeletons.gui.game_control import IRankedBattlesController
@@ -14,7 +11,7 @@ class RankedBattlesUnreachableView(LobbySubView, RankedBattlesUnreachableViewMet
     _COMMON_SOUND_SPACE = RANKED_SUBVIEW_SOUND_SPACE
     __background_alpha__ = 0.5
 
-    def __init__(self, _):
+    def __init__(self, **kwargs):
         super(RankedBattlesUnreachableView, self).__init__()
         self.__currentSeason = None
         self.__periodicNotifier = PeriodicNotifier(self.__timeTillCurrentSeasonEnd, self.__updateData)
@@ -38,7 +35,8 @@ class RankedBattlesUnreachableView(LobbySubView, RankedBattlesUnreachableViewMet
         super(RankedBattlesUnreachableView, self)._dispose()
 
     def __close(self):
-        self.fireEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_HANGAR)), scope=EVENT_BUS_SCOPE.LOBBY)
+        from gui.shared.event_dispatcher import showHangar
+        showHangar()
         self.destroy()
 
     def __checkDestroy(self):

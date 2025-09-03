@@ -9,6 +9,8 @@ package net.wg.gui.battle.views.piercingDebugPanel.data
       private static const PIERCING_ITEMS_FIELD_NAME:String = "piercingItems";
        
       
+      public var gunInfo:String = "";
+      
       public var shellType:String = "";
       
       public var piercingPower:String = "";

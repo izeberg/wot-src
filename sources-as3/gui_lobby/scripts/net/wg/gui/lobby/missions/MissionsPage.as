@@ -4,6 +4,7 @@ package net.wg.gui.lobby.missions
    import flash.display.Sprite;
    import flash.events.Event;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.constants.Errors;
    import net.wg.gui.components.advanced.ContentTabBar;
@@ -16,14 +17,15 @@ package net.wg.gui.lobby.missions
    import net.wg.gui.lobby.battleMatters.data.BattleMattersAnimVO;
    import net.wg.gui.lobby.missions.components.BattleMattersAnimWrapper;
    import net.wg.gui.lobby.missions.components.MissionsCounterDelegate;
-   import net.wg.gui.lobby.missions.components.MissionsFilter;
    import net.wg.gui.lobby.missions.data.MissionTabCounterVO;
    import net.wg.gui.lobby.missions.data.MissionTabVO;
-   import net.wg.gui.lobby.missions.event.MissionViewEvent;
+   import net.wg.gui.lobby.userMissions.components.MissionsFilter;
+   import net.wg.gui.lobby.userMissions.event.MissionViewEvent;
    import net.wg.infrastructure.base.interfaces.IWaiting;
    import net.wg.infrastructure.base.meta.IMissionsPageMeta;
    import net.wg.infrastructure.base.meta.impl.MissionsPageMeta;
    import net.wg.infrastructure.interfaces.IDAAPIModule;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.controls.Button;
    import scaleform.clik.data.DataProvider;
@@ -31,7 +33,7 @@ package net.wg.gui.lobby.missions
    import scaleform.clik.events.IndexEvent;
    import scaleform.clik.interfaces.IDataProvider;
    
-   public class MissionsPage extends MissionsPageMeta implements IMissionsPageMeta
+   public class MissionsPage extends MissionsPageMeta implements IMissionsPageMeta, IInnerView
    {
       
       private static const SCROLL_WIDTH:int = 13;
@@ -39,6 +41,20 @@ package net.wg.gui.lobby.missions
       private static const MIN_BTN_WIDTH:int = 140;
       
       private static const FILTER_OFFSET_LEFT:int = 479;
+      
+      private static const TOP_OFFSET:int = 14;
+      
+      private static const FILTER_OFFSET:int = 30;
+      
+      private static const SEPARATOR_OFFSET:int = 13;
+      
+      private static const OLD_TOP_OFFSET:int = 71;
+      
+      private static const OLD_FILTER_OFFSET:int = 87;
+      
+      private static const OLD_SEPARATOR_OFFSET:int = 70;
+      
+      private static const OLD_TAB_BAR_OFFSET:int = 57;
       
       private static const INV_TABS_COUNTER_DATA:String = "invTabsCounterData";
        
@@ -56,6 +72,10 @@ package net.wg.gui.lobby.missions
       public var separator:ISeparatorAsset;
       
       public var waiting:IWaiting = null;
+      
+      private var _topOffset:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
       
       private var _tabsDataProvider:IDataProvider;
       
@@ -76,12 +96,7 @@ package net.wg.gui.lobby.missions
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         setViewSize(param1,param2);
-         this.updateViewSize();
-         if(this._battleMattersAnimWrapper)
-         {
-            this._battleMattersAnimWrapper.updateStage(param1,param2);
-         }
+         assertUpdateStageMethod();
       }
       
       override protected function configUI() : void
@@ -109,15 +124,7 @@ package net.wg.gui.lobby.missions
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
-            this.waiting.width = _width;
-            this.waiting.height = _height;
-            this.bg.setSize(_width,_height);
-            this.tabBar.x = _width - this.tabBar.width >> 1;
-            this.separator.x = _width - this.separator.width >> 1;
-            this.topShadowBg.x = SCROLL_WIDTH;
-            this.topShadowBg.width = _width - (SCROLL_WIDTH << 1);
-            this.updateViewSize();
-            this.filter.x = (_width >> 1) - FILTER_OFFSET_LEFT;
+            this.updateLayouts();
          }
          if(this._tabsDataProvider && isInvalid(InvalidationType.DATA))
          {
@@ -199,11 +206,6 @@ package net.wg.gui.lobby.missions
          super.onSetModalFocus(param1);
       }
       
-      public function as_blinkFilterCounter() : void
-      {
-         this.filter.blink();
-      }
-      
       override protected function showBattleMattersAnimation(param1:String, param2:BattleMattersAnimVO) : void
       {
          if(!this._battleMattersAnimWrapper)
@@ -213,6 +215,11 @@ package net.wg.gui.lobby.missions
             this._battleMattersAnimWrapper.updateStage(_originalWidth,_originalHeight);
          }
          this._battleMattersAnimWrapper.showAnimation(param1,param2);
+      }
+      
+      public function as_blinkFilterCounter() : void
+      {
+         this.filter.blink();
       }
       
       public function as_showFilter(param1:Boolean, param2:Boolean) : void
@@ -228,11 +235,28 @@ package net.wg.gui.lobby.missions
          this.filter.showFilterCounter(param1,param2);
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this._bottomOffset = param3.height;
+         setViewSize(param1,param2);
+         this.updateViewSize();
+         if(this._battleMattersAnimWrapper)
+         {
+            this._battleMattersAnimWrapper.updateStage(width,height);
+         }
+      }
+      
       private function updateViewSize() : void
       {
          if(this.viewStack.currentView)
          {
-            this.viewStack.currentView.height = _height - this.viewStack.y;
+            this.viewStack.currentView.height = _height - this.viewStack.y - this._bottomOffset;
             this.viewStack.currentView.width = _width;
          }
       }
@@ -278,6 +302,35 @@ package net.wg.gui.lobby.missions
             }
          }
          return null;
+      }
+      
+      private function updateLayouts() : void
+      {
+         if(this._topOffset > 0)
+         {
+            this.viewStack.y = this._topOffset + TOP_OFFSET;
+            this.tabBar.y = this._topOffset;
+            this.separator.y = this._topOffset + SEPARATOR_OFFSET;
+            this.topShadowBg.y = this._topOffset + TOP_OFFSET;
+            this.filter.y = this._topOffset + FILTER_OFFSET;
+         }
+         else
+         {
+            this.viewStack.y = OLD_TOP_OFFSET;
+            this.tabBar.y = OLD_TAB_BAR_OFFSET;
+            this.separator.y = OLD_SEPARATOR_OFFSET;
+            this.topShadowBg.y = OLD_TOP_OFFSET;
+            this.filter.y = OLD_FILTER_OFFSET;
+         }
+         this.waiting.width = _width;
+         this.waiting.height = _height;
+         this.bg.setSize(_width,_height);
+         this.tabBar.x = _width - this.tabBar.width >> 1;
+         this.separator.x = _width - this.separator.width >> 1;
+         this.topShadowBg.x = SCROLL_WIDTH;
+         this.topShadowBg.width = _width - (SCROLL_WIDTH << 1);
+         this.updateViewSize();
+         this.filter.x = (_width >> 1) - FILTER_OFFSET_LEFT;
       }
       
       override protected function get autoShowViewProperty() : int

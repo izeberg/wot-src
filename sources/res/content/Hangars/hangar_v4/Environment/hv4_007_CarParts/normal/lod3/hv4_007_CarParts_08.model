@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_007_CarParts/normal/lod4/hv4_007_CarParts_08</parent>
+	<extent>130.000000</extent>
+	<visibilityBox>
+		<min>-0.121244 -0.000000 -0.140000</min>
+		<max>0.121244 0.105631 0.140000</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_007_CarParts/normal/lod3/hv4_007_CarParts_08</nodefullVisual>
+</root>

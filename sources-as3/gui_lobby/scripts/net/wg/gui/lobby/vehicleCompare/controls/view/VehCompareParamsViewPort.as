@@ -113,6 +113,7 @@ package net.wg.gui.lobby.vehicleCompare.controls.view
             {
                _loc1_.updateHeight(this._currentHeight);
             }
+            invalidate(INV_BOTTOM_LINE);
          }
          if(isInvalid(INV_BOTTOM_LINE))
          {

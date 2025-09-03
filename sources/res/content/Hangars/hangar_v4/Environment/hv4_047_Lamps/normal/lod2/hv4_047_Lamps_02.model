@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_047_Lamps/normal/lod3/hv4_047_Lamps_02</parent>
+	<extent>100.000000</extent>
+	<visibilityBox>
+		<min>-0.558824 -0.062548 -0.558825</min>
+		<max>0.558824 2.425605 0.558824</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_047_Lamps/normal/lod2/hv4_047_Lamps_02</nodefullVisual>
+</root>

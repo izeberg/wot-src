@@ -70,6 +70,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/ussr03_blacksand_AM.dds</AM>
+					<ANM>maps/fx/ussr03_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</ussr_01>
 			<ussr_02>
 				<default>
@@ -108,6 +114,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/ussr02_blacksand_AM.dds</AM>
+					<ANM>maps/fx/ussr02_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</ussr_02>
 			<ussr_R124>
 				<default>
@@ -146,6 +158,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/R124_blacksand_AM.dds</AM>
+					<ANM>maps/fx/R124_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</ussr_R124>
 			<ussr_R11>
 				<default>
@@ -184,6 +202,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/R11_blacksand_AM.dds</AM>
+					<ANM>maps/fx/R11_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</ussr_R11>
 			<germany_01>
 				<default>
@@ -222,6 +246,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/german01_blacksand_AM.dds</AM>
+					<ANM>maps/fx/german01_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</germany_01>
 			<germany_02>
 				<default>
@@ -260,6 +290,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/german02_blacksand_AM.dds</AM>
+					<ANM>maps/fx/german02_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</germany_02>
 			<germany_typ_205>
 				<default>
@@ -298,6 +334,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/Typ_205_blacksand_AM.dds</AM>
+					<ANM>maps/fx/Typ_205_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</germany_typ_205>
 			<usa_01>
 				<default>
@@ -336,6 +378,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/usa01_blacksand_AM.dds</AM>
+					<ANM>maps/fx/usa01_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</usa_01>
 			<usa_02>
 				<default>
@@ -374,6 +422,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/usa02_blacksand_AM.dds</AM>
+					<ANM>maps/fx/usa02_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</usa_02>
 			<usa_03>
 				<default>
@@ -412,6 +466,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/usa03_right_blacksand_AM.dds ; maps/fx/usa03_left_blacksand_AM.dds</AM>
+					<ANM>maps/fx/usa03_right_blacksand_NM.dds ; maps/fx/usa03_left_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</usa_03>
 			<usa_04>
 				<default>
@@ -450,6 +510,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/usa04_blacksand_AM.dds</AM>
+					<ANM>maps/fx/usa04_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</usa_04>
 			<usa_a23>
 				<default>
@@ -488,6 +554,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/A23_blacksand_AM.dds</AM>
+					<ANM>maps/fx/A23_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</usa_a23>
 			<usa_T95>
 				<default>
@@ -526,6 +598,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/usaT95_blacksand_AM.dds</AM>
+					<ANM>maps/fx/usaT95_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</usa_T95>
 			<gb_24>
 				<default>
@@ -564,6 +642,12 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/GB24_blacksand_AM.dds</AM>
+					<ANM>maps/fx/GB24_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</gb_24>
 			<t97>
 				<default>
@@ -602,7 +686,51 @@
 					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
 					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
 				</oil>
+				<blacksand>
+					<AM>maps/fx/T97_blacksand_AM.dds</AM>
+					<ANM>maps/fx/T97_blacksand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_blacksand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_blacksand_NM.dds</STRAFE_ANM>
+				</blacksand>
 			</t97>
+			<uk_gb147>
+				<default>
+					<AM>maps/fx/GB147_ground_AM.dds</AM>
+					<ANM>maps/fx/GB147_ground_snow_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_ground_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_ground_NM.dds</STRAFE_ANM>
+				</default>
+				<snow>
+					<AM>maps/fx/GB147_snow_AM.dds</AM>
+					<ANM>maps/fx/GB147_ground_snow_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_snow_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_snow_NM.dds</STRAFE_ANM>
+				</snow>
+				<sand>
+					<AM>maps/fx/GB147_sand_AM.dds</AM>
+					<ANM>maps/fx/GB147_sand_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_sand_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_sand_NM.dds</STRAFE_ANM>
+				</sand>
+				<stone>
+					<AM>maps/fx/GB147_stone_AM.dds</AM>
+					<ANM>maps/fx/GB147_stone_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_stone_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_stone_NM.dds</STRAFE_ANM>
+				</stone>
+				<dirt>
+					<AM>maps/fx/GB147_dirt_AM.dds</AM>
+					<ANM>maps/fx/GB147_dirt_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_dirt_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_dirt_NM.dds</STRAFE_ANM>
+				</dirt>
+				<oil>
+					<AM>maps/fx/GB147_oil_AM.dds</AM>
+					<ANM>maps/fx/GB147_oil_NM.dds</ANM>
+					<STRAFE_AM>maps/fx/track_strafe_oil_AM.dds</STRAFE_AM>
+					<STRAFE_ANM>maps/fx/track_strafe_oil_NM.dds</STRAFE_ANM>
+				</oil>
+			</uk_gb147>
 		</textureSets>
 	</decals>
 </root>

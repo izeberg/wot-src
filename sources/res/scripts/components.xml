@@ -12,8 +12,6 @@
 		<ArenaFairplayKafkaLoggingComponent/>
 		<AccountFairplayComponent/>
 		<ArenaCommendationsMasterComponent/>
-		<ArenaVeteranComponent/>
-		<AccountVeteranComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -31,12 +29,11 @@
 		<BattleHintsComponent/>
 		<Fire/>
 		<RocketAccelerationController/>
+		<RechargeableNitroController/>
 		<KillCamDataComponent/>
 		<AutoShootGunController/>
 		<TwinGunController/>
-		<SpinGunController/>
-		<TemperatureGunController/>
-		<MultiGunState/>
+		<SecondaryGunComponent/>
 		<RocketAcceleration/>
 		<VisualScriptEquipment/>
 		<VisualScriptCache/>
@@ -63,6 +60,21 @@
 		<PoiVehicleComponent/>
 		<DynComponentsGroup/>
 		<DynComponentsGroupHelper/>
+		<DGAddDynGroupComponent/>
+		<DGRemovableDynGroupComponent/>
+		<DGSequencesComponent/>
+		<DGSound2DComponent/>
+		<DGSound3DComponent/>
+		<DGSound3DObjectComponent/>
+		<DGVehicleChargedShotComponent/>
+		<DGVehicleShotChargerComponent/>
+		<DGVehicleFactorsComponent/>
+		<DGVehicleGenericRepairComponent/>
+		<DGVehicleRepairComponent/>
+		<DGVehiclePeriodicRepairComponent/>
+		<DGVehicleDamageResistsComponent/>
+		<DGVehicleNitroAccelerationComponent/>
+		<DGVehicleNitroEffectComponent/>
 		<LootableComponent/>
 		<SpamProtectionComponent/>
 		<TestReplicableComponent/>
@@ -90,6 +102,24 @@
 		<AvatarFairplayMessageComponent/>
 		<NetworkReplicationPointComponent/>
 		<NetworkVehicleHierarchy/>
-		<VeteranInfo/>
+		<ConcentrationModeComponent/>
+		<OverheatStacksController/>
+		<ImprovedRammingController/>
+		<PowerModeController/>
+		<ExtraShotClipComponent/>
+		<BattleFuryController/>
+		<AccuracyStacksController/>
+		<SupportWeaponComponent/>
+		<SecondaryGunComponent/>
+		<PillboxSiegeComponent/>
+		<StationaryReloadController/>
+		<NetworkReplicationPointComponent/>
+		<NetworkVehicleHierarchy/>
+		<ChargeShotComponent/>
+		<TargetDesignatorController/>
+		<TargetDesignatorTargetController/>
+		<TargetDesignatorTeamController/>
+		<StanceDanceController/>
+		<ChargeableBurstComponent/>
 	</DynamicComponents>
 </root>

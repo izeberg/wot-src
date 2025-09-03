@@ -1,4 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<effectMap/>
+	<effectMap>spaces/33_fjord/environments/18467B13-4EED3DD6-477596AC-8457577A/camera_effects_map.dds</effectMap>
+	<effect>
+		<id>1</id>
+		<name>particles/content_deferred/PFX/Environment/CameraEffects/city_ash_fire.vfx</name>
+		<alignToTerrain>true</alignToTerrain>
+		<useCameraTarget>false</useCameraTarget>
+	</effect>
 </root>

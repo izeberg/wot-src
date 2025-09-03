@@ -6,12 +6,8 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function onGoBackClickS() : void;
-      
       function goToVehicleViewS() : void;
       
       function compareVehicleS() : void;
-      
-      function onAboutClickS() : void;
    }
 }

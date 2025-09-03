@@ -321,6 +321,10 @@ package
       
       public static const LOADING_BATTLETYPES_DESC_34:String = "#menu:loading/battleTypes/desc/34";
       
+      public static const LOADING_BATTLETYPES_35:String = "#menu:loading/battleTypes/35";
+      
+      public static const LOADING_BATTLETYPES_DESC_35:String = "#menu:loading/battleTypes/desc/35";
+      
       public static const LOADING_TEAM1:String = "#menu:loading/team1";
       
       public static const LOADING_TEAM2:String = "#menu:loading/team2";
@@ -352,6 +356,8 @@ package
       public static const LOBBY_MENU_BUTTONS_REFUSE_TRAINING:String = "#menu:lobby_menu/buttons/refuse-training";
       
       public static const LOBBY_MENU_BUTTONS_RESTART_TRAINING:String = "#menu:lobby_menu/buttons/restart-training";
+      
+      public static const REPORT_CONTENT:String = "#menu:report_content";
       
       public static const INGAME_MENU_SERVERSTATS_SERVER:String = "#menu:ingame_menu/serverStats/server";
       
@@ -426,6 +432,18 @@ package
       public static const CAROUSEL_TANK_FILTER_AT_SPG:String = "#menu:carousel_tank_filter/AT-SPG";
       
       public static const CAROUSEL_TANK_FILTER_SPG:String = "#menu:carousel_tank_filter/SPG";
+      
+      public static const CAROUSEL_TANK_FILTER_ASSAULT:String = "#menu:carousel_tank_filter/assault";
+      
+      public static const CAROUSEL_TANK_FILTER_UNIVERSAL:String = "#menu:carousel_tank_filter/universal";
+      
+      public static const CAROUSEL_TANK_FILTER_BREAK:String = "#menu:carousel_tank_filter/break";
+      
+      public static const CAROUSEL_TANK_FILTER_SNIPER:String = "#menu:carousel_tank_filter/sniper";
+      
+      public static const CAROUSEL_TANK_FILTER_SUPPORT:String = "#menu:carousel_tank_filter/support";
+      
+      public static const CAROUSEL_TANK_FILTER_WHEELED:String = "#menu:carousel_tank_filter/wheeled";
       
       public static const CAROUSEL_TANK_FILTER_READY:String = "#menu:carousel_tank_filter/ready";
       
@@ -516,8 +534,6 @@ package
       public static const TANKCAROUSEL_VEHICLESTATES_UNSUITABLETOUNIT:String = "#menu:tankCarousel/vehicleStates/unsuitableToUnit";
       
       public static const TANKCAROUSEL_VEHICLESTATES_DISABLED:String = "#menu:tankCarousel/vehicleStates/disabled";
-      
-      public static const TANKCAROUSEL_VEHICLESTATES_TOOHEAVY:String = "#menu:tankCarousel/vehicleStates/tooHeavy";
       
       public static const TANKCAROUSEL_WOTPLUSSELECTIONAVAILABLE:String = "#menu:tankCarousel/wotPlusSelectionAvailable";
       
@@ -628,8 +644,6 @@ package
       public static const CURRENTVEHICLESTATUS_LOCKED:String = "#menu:currentVehicleStatus/locked";
       
       public static const CURRENTVEHICLESTATUS_CLANLOCKED:String = "#menu:currentVehicleStatus/clanLocked";
-      
-      public static const CURRENTVEHICLESTATUS_TOOHEAVY:String = "#menu:currentVehicleStatus/tooHeavy";
       
       public static const CURRENTVEHICLESTATUS_AMMONOTFULL:String = "#menu:currentVehicleStatus/ammoNotFull";
       
@@ -765,6 +779,10 @@ package
       
       public static const PREBATTLE_DESCRIPTION:String = "#menu:prebattle/description";
       
+      public static const PREBATTLE_SEARCHPLAYERS:String = "#menu:prebattle/searchPlayers";
+      
+      public static const PREBATTLE_BATTLEREADY:String = "#menu:prebattle/battleReady";
+      
       public static const PREBATTLE_WAITINGTIMEWARNING:String = "#menu:prebattle/waitingTimeWarning";
       
       public static const PREBATTLE_COMPANIESTITLE_JUNIOR:String = "#menu:prebattle/CompaniesTitle/JUNIOR";
@@ -857,6 +875,8 @@ package
       
       public static const LEVELS_10:String = "#menu:levels/10";
       
+      public static const LEVELS_11:String = "#menu:levels/11";
+      
       public static const LEVELS_ROMAN_1:String = "#menu:levels/roman/1";
       
       public static const LEVELS_ROMAN_2:String = "#menu:levels/roman/2";
@@ -876,6 +896,8 @@ package
       public static const LEVELS_ROMAN_9:String = "#menu:levels/roman/9";
       
       public static const LEVELS_ROMAN_10:String = "#menu:levels/roman/10";
+      
+      public static const LEVELS_ROMAN_11:String = "#menu:levels/roman/11";
       
       public static const LEVELS_ALL:String = "#menu:levels/all";
       
@@ -947,6 +969,110 @@ package
       
       public static const VEHPARAMS_RECONNAISSANCE:String = "#menu:vehParams/reconnaissance";
       
+      public static const TANK_PARAMS_FURYMAXRELOADEFFAVGDPM:String = "#menu:tank_params/furyMaxReloadEffAvgDpm";
+      
+      public static const TANK_PARAMS_FURYMAXRELOADEFFICIENCYLEVEL:String = "#menu:tank_params/furyMaxReloadEfficiencyLevel";
+      
+      public static const TANK_PARAMS_FURYRELOADSPEEDBONUSPEREFFICIENCYLEVEL:String = "#menu:tank_params/furyReloadSpeedBonusPerEfficiencyLevel";
+      
+      public static const TANK_PARAMS_FURYRELOADEFFICIENCYLEVELDURATION:String = "#menu:tank_params/furyReloadEfficiencyLevelDuration";
+      
+      public static const TANK_PARAMS_FURYRELOADEFFICIENCYLEVELPERHIT:String = "#menu:tank_params/furyReloadEfficiencyLevelPerHit";
+      
+      public static const TANK_PARAMS_FURYRELOADEFFICIENCYLEVELPERDESTRUCTION:String = "#menu:tank_params/furyReloadEfficiencyLevelPerDestruction";
+      
+      public static const TANK_PARAMS_ACCURACYDISPERSIONCAP:String = "#menu:tank_params/accuracyDispersionCap";
+      
+      public static const TANK_PARAMS_ACCURACYWHILEMOVINGDISPERSIONCAP:String = "#menu:tank_params/accuracyWhileMovingDispersionCap";
+      
+      public static const TANK_PARAMS_MAXACCURACYLEVEL:String = "#menu:tank_params/maxAccuracyLevel";
+      
+      public static const TANK_PARAMS_ACCURACYDISPERSIONPERLEVEL:String = "#menu:tank_params/accuracyDispersionPerLevel";
+      
+      public static const TANK_PARAMS_ACCURACYSPEEDLIMIT:String = "#menu:tank_params/accuracySpeedLimit";
+      
+      public static const TANK_PARAMS_ACCURACYLEVELGAINTIME:String = "#menu:tank_params/accuracyLevelGainTime";
+      
+      public static const TANK_PARAMS_PREHEATDMGCAP:String = "#menu:tank_params/preheatDmgCap";
+      
+      public static const TANK_PARAMS_PREHEATDISPERSIONCAP:String = "#menu:tank_params/preheatDispersionCap";
+      
+      public static const TANK_PARAMS_PREHEATTIMETOFULL:String = "#menu:tank_params/preheatTimeToFull";
+      
+      public static const TANK_PARAMS_PREHEATTIMETOZERO:String = "#menu:tank_params/preheatTimeToZero";
+      
+      public static const TANK_PARAMS_PREHEATSPEEDLIMIT:String = "#menu:tank_params/preheatSpeedLimit";
+      
+      public static const TANK_PARAMS_PREHEATTRANSITIONDELAY:String = "#menu:tank_params/preheatTransitionDelay";
+      
+      public static const TANK_PARAMS_ENGINEPOWERWITHBOOSTERS:String = "#menu:tank_params/enginePowerWithBoosters";
+      
+      public static const TANK_PARAMS_TOPSPEEDWITHBOOSTERS:String = "#menu:tank_params/topSpeedWithBoosters";
+      
+      public static const TANK_PARAMS_REVERSESPEEDREDUCTIONWITHBOOSTERS:String = "#menu:tank_params/reverseSpeedReductionWithBoosters";
+      
+      public static const TANK_PARAMS_TRAVERSESPEEDREDUCTIONWITHBOOSTERS:String = "#menu:tank_params/traverseSpeedReductionWithBoosters";
+      
+      public static const TANK_PARAMS_BOOSTERDURATION:String = "#menu:tank_params/boosterDuration";
+      
+      public static const TANK_PARAMS_BOOSTERCOOLINGTIME:String = "#menu:tank_params/boosterCoolingTime";
+      
+      public static const TANK_PARAMS_REACTIVATIONLIMIT:String = "#menu:tank_params/reactivationLimit";
+      
+      public static const TANK_PARAMS_REACTIVATIONDELAY:String = "#menu:tank_params/reactivationDelay";
+      
+      public static const TANK_PARAMS_HEATAVGDMGPERLVL:String = "#menu:tank_params/heatAvgDmgPerLvl";
+      
+      public static const TANK_PARAMS_HEATTIMETOREACHLEVEL:String = "#menu:tank_params/heatTimeToReachLevel";
+      
+      public static const TANK_PARAMS_HEATTIMEBEFOREOVERHEAT:String = "#menu:tank_params/heatTimeBeforeOverheat";
+      
+      public static const TANK_PARAMS_HEATCHARGEOVERHEATDURATION:String = "#menu:tank_params/heatChargeOverheatDuration";
+      
+      public static const TANK_PARAMS_PASSIVECOINCIDECESHOOTINGCHARGE:String = "#menu:tank_params/passiveCoincideceShootingCharge";
+      
+      public static const TANK_PARAMS_ACTIVECOINCIDECESHOOTINGCHARGE:String = "#menu:tank_params/activeCoincideceShootingCharge";
+      
+      public static const TANK_PARAMS_COINCIDENCEELECTROMECHANICALSIGHTDURATION:String = "#menu:tank_params/coincidenceElectromechanicalSightDuration";
+      
+      public static const TANK_PARAMS_AIMINGTIMECOINCIDENCEELECTROMECHANICALSIGHT:String = "#menu:tank_params/aimingTimeCoincidenceElectromechanicalSight";
+      
+      public static const TANK_PARAMS_DISPERSIONAT100MCOINCIDENCEELECTROMECHANICALSIGHT:String = "#menu:tank_params/dispersionAt100mCoincidenceElectromechanicalSight";
+      
+      public static const TANK_PARAMS_RELOADTIMECOINCIDENCE:String = "#menu:tank_params/reloadTimeCoincidence";
+      
+      public static const TANK_PARAMS_SWITCHENGINEMODEBOTHMODES:String = "#menu:tank_params/switchEngineModeBothModes";
+      
+      public static const TANK_PARAMS_TURBOSPEEDCAP:String = "#menu:tank_params/turboSpeedCap";
+      
+      public static const TANK_PARAMS_ENGINETURBOPOWERCAP:String = "#menu:tank_params/engineTurboPowerCap";
+      
+      public static const TANK_PARAMS_AIMINGTIMETURBO:String = "#menu:tank_params/aimingTimeTurbo";
+      
+      public static const TANK_PARAMS_MOVEMENTTRAVERSEDISPERSIONTURBO:String = "#menu:tank_params/movementTraverseDispersionTurbo";
+      
+      public static const TANK_PARAMS_HULLTRAVERSEDISPERSIONTURBO:String = "#menu:tank_params/hullTraverseDispersionTurbo";
+      
+      public static const TANK_PARAMS_GUNTRAVERSEDISPERSIONTURBO:String = "#menu:tank_params/gunTraverseDispersionTurbo";
+      
+      public static const TANK_PARAMS_IONAFTERBURNERPASSIVETURBOCHARGE:String = "#menu:tank_params/ionAfterburnerPassiveTurboCharge";
+      
+      public static const TANK_PARAMS_IONAFTERBURNERACTIVETURBOCHARGE:String = "#menu:tank_params/ionAfterburnerActiveTurboCharge";
+      
+      public static const TANK_PARAMS_IONAFTERBURNERDURATION:String = "#menu:tank_params/ionAfterburnerDuration";
+      
+      public static const TANK_PARAMS_IONAFTERBURNERDURATIONSPEEDCAP:String = "#menu:tank_params/ionAfterburnerDurationSpeedCap";
+      
+      public static const TANK_PARAMS_IONAFTERBURNERDURATIONENGINEPOWER:String = "#menu:tank_params/ionAfterburnerDurationEnginePower";
+      
+      public static const TANK_PARAMS_DESIGNATORINITIALCOOLDOWNS:String = "#menu:tank_params/designatorInitialCooldownS";
+      
+      public static const TANK_PARAMS_DESIGNATORCOOLDOWNS:String = "#menu:tank_params/designatorCooldownS";
+      
+      public static const TANK_PARAMS_DESIGNATORMARKDURATIONS:String = "#menu:tank_params/designatorMarkDurationS";
+      
+      public static const TANK_PARAMS_DESIGNATORMARKEDENEMIESADDITIONALDAMAGE:String = "#menu:tank_params/designatorMarkedEnemiesAdditionalDamage";
+      
       public static const TANK_PARAMS_MAXHEALTH:String = "#menu:tank_params/maxHealth";
       
       public static const TANK_PARAMS_VEHICLEWEIGHT:String = "#menu:tank_params/vehicleWeight";
@@ -996,8 +1122,6 @@ package
       public static const TANK_PARAMS_ROCKETACCELERATIONREUSEANDDURATION:String = "#menu:tank_params/rocketAccelerationReuseAndDuration";
       
       public static const TANK_PARAMS_DUALACCURACYCOOLINGDELAY:String = "#menu:tank_params/dualAccuracyCoolingDelay";
-      
-      public static const TANK_PARAMS_DUALACCURACYCOOLINGDELAY_EXTENDEDTITLE:String = "#menu:tank_params/dualAccuracyCoolingDelay/extendedTitle";
       
       public static const TANK_PARAMS_TIMEOFREACHING:String = "#menu:tank_params/timeOfReaching";
       
@@ -1095,6 +1219,50 @@ package
       
       public static const TANK_PARAMS_TWINGUNTOPSPEED:String = "#menu:tank_params/twinGunTopSpeed";
       
+      public static const TANK_PARAMS_IMPROVEDDAMAGEENEMIESBYRAMMING:String = "#menu:tank_params/improvedDamageEnemiesByRamming";
+      
+      public static const TANK_PARAMS_IMPROVEDDAMAGEENEMIESCHASSISBYRAMMING:String = "#menu:tank_params/improvedDamageEnemiesChassisByRamming";
+      
+      public static const TANK_PARAMS_CONCENTRATIONMODECOOLDOWN:String = "#menu:tank_params/concentrationModeCooldown";
+      
+      public static const TANK_PARAMS_CONCENTRATIONMODEDURATION:String = "#menu:tank_params/concentrationModeDuration";
+      
+      public static const TANK_PARAMS_EXTRASHOTCLIPRELOADTIME:String = "#menu:tank_params/extraShotClipReloadTime";
+      
+      public static const TANK_PARAMS_POWERMODETHRESHOLD:String = "#menu:tank_params/powerModeThreshold";
+      
+      public static const TANK_PARAMS_POWERMODEDURATION:String = "#menu:tank_params/powerModeDuration";
+      
+      public static const TANK_PARAMS_SECONDARYRELOADTIMESECS:String = "#menu:tank_params/secondaryReloadTimeSecs";
+      
+      public static const TANK_PARAMS_SECONDARYTOTALBURSTSIZE:String = "#menu:tank_params/secondaryTotalBurstSize";
+      
+      public static const TANK_PARAMS_SECONDARYAVGDAMAGE:String = "#menu:tank_params/secondaryAvgDamage";
+      
+      public static const TANK_PARAMS_SECONDARYAVGPIERCINGPOWER:String = "#menu:tank_params/secondaryAvgPiercingPower";
+      
+      public static const TANK_PARAMS_PILLBOXHORIZONTALROTATIONSPEED:String = "#menu:tank_params/pillboxHorizontalRotationSpeed";
+      
+      public static const TANK_PARAMS_PILLBOXVERTICALROTATIONSPEED:String = "#menu:tank_params/pillboxVerticalRotationSpeed";
+      
+      public static const TANK_PARAMS_PILLBOXSWITCHONTIME:String = "#menu:tank_params/pillboxSwitchOnTime";
+      
+      public static const TANK_PARAMS_PILLBOXSWITCHOFFTIME:String = "#menu:tank_params/pillboxSwitchOffTime";
+      
+      public static const TANK_PARAMS_CHARGEABLEBURSTPENETRATIONCOUNT:String = "#menu:tank_params/chargeableBurstPenetrationCount";
+      
+      public static const TANK_PARAMS_CHARGEABLEBURSTSIZE:String = "#menu:tank_params/chargeableBurstSize";
+      
+      public static const TANK_PARAMS_CHARGEABLEBURSTRELOAD:String = "#menu:tank_params/chargeableBurstReload";
+      
+      public static const TANK_PARAMS_CHARGEABLEBURSTDISPERSION:String = "#menu:tank_params/chargeableBurstDispersion";
+      
+      public static const TANK_PARAMS_STATIONARYRELOADSWITCHONTIME:String = "#menu:tank_params/stationaryReloadSwitchOnTime";
+      
+      public static const TANK_PARAMS_STATIONARYRELOADSWITCHOFFTIME:String = "#menu:tank_params/stationaryReloadSwitchOffTime";
+      
+      public static const TANK_PARAMS_EXTENDEDTITLE_DUALACCURACYCOOLINGDELAY:String = "#menu:tank_params/extendedTitle/dualAccuracyCoolingDelay";
+      
       public static const TANK_PARAMS_VALUES_PARAM12_VALUE0:String = "#menu:tank_params/values/param12/value0";
       
       public static const TANK_PARAMS_VALUES_PARAM12_VALUE1:String = "#menu:tank_params/values/param12/value1";
@@ -1161,15 +1329,21 @@ package
       
       public static const TANK_PARAMS_PERCENT:String = "#menu:tank_params/percent";
       
+      public static const TANK_PARAMS_FACTOR:String = "#menu:tank_params/factor";
+      
       public static const TANK_PARAMS_KG:String = "#menu:tank_params/kg";
       
       public static const TANK_PARAMS_MPS:String = "#menu:tank_params/mps";
+      
+      public static const TANK_PARAMS_QUANTITY:String = "#menu:tank_params/quantity";
       
       public static const TANK_PARAMS_CLIPSEC:String = "#menu:tank_params/clipSec";
       
       public static const TANK_PARAMS_AUTOSHOOTCLIPSEC:String = "#menu:tank_params/autoShootClipSec";
       
       public static const TANK_PARAMS_BURSTSEC:String = "#menu:tank_params/burstSec";
+      
+      public static const TANK_PARAMS_PERACTIVATION:String = "#menu:tank_params/perActivation";
       
       public static const TANK_PARAMS_STUNMAXDURATION:String = "#menu:tank_params/stunMaxDuration";
       
@@ -1387,6 +1561,8 @@ package
       
       public static const HEADERBUTTONS_BATTLE_TYPES_SIMPLESQUAD:String = "#menu:headerButtons/battle/types/simpleSquad";
       
+      public static const HEADERBUTTONS_BATTLE_TYPES_EVENT:String = "#menu:headerButtons/battle/types/event";
+      
       public static const HEADERBUTTONS_BATTLE_TYPES_EVENTSQUAD:String = "#menu:headerButtons/battle/types/eventSquad";
       
       public static const HEADERBUTTONS_BATTLE_TYPES_BATTLEROYALE:String = "#menu:headerButtons/battle/types/battleRoyale";
@@ -1451,6 +1627,8 @@ package
       
       public static const HEADERBUTTONS_BATTLE_TYPES_COMP7SQUAD:String = "#menu:headerButtons/battle/types/comp7Squad";
       
+      public static const HEADERBUTTONS_BATTLE_TYPES_COMP7LIGHTSQUAD:String = "#menu:headerButtons/battle/types/comp7LightSquad";
+      
       public static const HEADERBUTTONS_BATTLE_TYPES_MAPBOX:String = "#menu:headerButtons/battle/types/mapbox";
       
       public static const HEADERBUTTONS_BATTLE_TYPES_MAPBOX_EXTRA_FROZEN:String = "#menu:headerButtons/battle/types/mapbox/extra/frozen";
@@ -1507,11 +1685,13 @@ package
       
       public static const HEADERBUTTONS_STORAGE:String = "#menu:headerButtons/storage";
       
-      public static const HEADERBUTTONS_BATTLE:String = "#menu:headerButtons/battle";
+      public static const HEADERBUTTONS_BATTLE_BUTTON_BATTLE:String = "#menu:headerButtons/battle/button/battle";
       
       public static const HEADERBUTTONS_READY:String = "#menu:headerButtons/ready";
       
       public static const HEADERBUTTONS_NOTREADY:String = "#menu:headerButtons/notReady";
+      
+      public static const HEADERBUTTONS_NAVIGATION_BACK:String = "#menu:headerButtons/navigation/back";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_FALLOUTONLY_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/falloutOnly/header";
       
@@ -1621,9 +1801,17 @@ package
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7NOTSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7NotSet/body";
       
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTNOTSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightNotSet/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTNOTSET_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightNotSet/body";
+      
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7DISABLED_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Disabled/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7DISABLED_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7Disabled/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTDISABLED_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightDisabled/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTDISABLED_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightDisabled/body";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7BANISSET_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7BanIsSet/header";
       
@@ -1640,6 +1828,12 @@ package
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/header";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7VEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7VehLevel/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTVEHLEVEL_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightVehLevel/header";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTVEHLEVEL_BODY:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightVehLevel/body";
+      
+      public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7LIGHTVEHLEVEL_DELIMITER:String = "#menu:headerButtons/fightBtn/tooltip/comp7LightVehLevel/delimiter";
       
       public static const HEADERBUTTONS_FIGHTBTN_TOOLTIP_COMP7PREANNOUNCE_HEADER:String = "#menu:headerButtons/fightBtn/tooltip/comp7Preannounce/header";
       
@@ -1658,6 +1852,8 @@ package
       public static const STORETAB_SHOP:String = "#menu:storeTab/shop";
       
       public static const STORETAB_ACTIONS:String = "#menu:storeTab/actions";
+      
+      public static const HEADERBUTTONS_MODESELECTOR:String = "#menu:headerButtons/modeSelector";
       
       public static const HEADERBUTTONS_TECHTREE:String = "#menu:headerButtons/techtree";
       
@@ -1720,6 +1916,8 @@ package
       public static const HEADER_LEVEL_9:String = "#menu:header/level/9";
       
       public static const HEADER_LEVEL_10:String = "#menu:header/level/10";
+      
+      public static const HEADER_LEVEL_11:String = "#menu:header/level/11";
       
       public static const HEADER_VEHICLETYPE_LIGHTTANK:String = "#menu:header/vehicleType/lightTank";
       
@@ -1870,12 +2068,6 @@ package
       public static const MODULEFITS_NOT_FOR_THIS_VEHICLE_TYPE:String = "#menu:moduleFits/not_for_this_vehicle_type";
       
       public static const MODULEFITS_NOT_FOR_CURRENT_VEHICLE:String = "#menu:moduleFits/not_for_current_vehicle";
-      
-      public static const MODULEFITS_TOO_HEAVY:String = "#menu:moduleFits/too_heavy";
-      
-      public static const MODULEFITS_TOO_HEAVY_CHASSIS:String = "#menu:moduleFits/too_heavy_chassis";
-      
-      public static const MODULEFITS_REMOVE_TOO_HEAVY:String = "#menu:moduleFits/remove_too_heavy";
       
       public static const MODULEFITS_UNLOCK_ERROR:String = "#menu:moduleFits/unlock_error";
       
@@ -2211,8 +2403,6 @@ package
       
       public static const MODULEINFO_PARAMS_CHASSISREPAIRTIMEYOH:String = "#menu:moduleInfo/params/chassisRepairTimeYoh";
       
-      public static const MODULEINFO_PARAMS_MAXLOAD:String = "#menu:moduleInfo/params/maxLoad";
-      
       public static const MODULEINFO_PARAMS_MAXSTEERINGLOCKANGLE:String = "#menu:moduleInfo/params/maxSteeringLockAngle";
       
       public static const MODULEINFO_PARAMS_BOMBSNUMBERRANGE:String = "#menu:moduleInfo/params/bombsNumberRange";
@@ -2340,6 +2530,8 @@ package
       public static const MODULEINFO_PARAMS_PIERCINGDISTANCE_FOOTNOTE:String = "#menu:moduleInfo/params/piercingDistance/footnote";
       
       public static const MODULEINFO_PARAMS_NOPIERCINGDISTANCE_FOOTNOTE_MAXDISTANCE:String = "#menu:moduleInfo/params/noPiercingDistance/footnote/maxDistance";
+      
+      public static const MODULEINFO_PARAMS_GUARANTEEDDAMAGE_FOOTNOTE:String = "#menu:moduleInfo/params/guaranteedDamage/footnote";
       
       public static const MODULEINFO_PARAMS_STUNMAXDURATION:String = "#menu:moduleInfo/params/stunMaxDuration";
       
@@ -3221,6 +3413,8 @@ package
       
       public static const CONTEXTMENU_CREATECOMP7SQUAD:String = "#menu:contextMenu/createComp7Squad";
       
+      public static const CONTEXTMENU_CREATECOMP7LIGHTSQUAD:String = "#menu:contextMenu/createComp7LightSquad";
+      
       public static const CONTEXTMENU_INVITE:String = "#menu:contextMenu/invite";
       
       public static const CONTEXTMENU_APPEAL:String = "#menu:contextMenu/appeal";
@@ -3260,6 +3454,8 @@ package
       public static const CONTEXTMENU_BOTNOACTIONS:String = "#menu:contextMenu/botNoActions";
       
       public static const CONTEXTMENU_VEHICLEPOSTPROGRESSION:String = "#menu:contextMenu/vehiclePostProgression";
+      
+      public static const CONTEXTMENU_VEHSKILLTREE:String = "#menu:contextMenu/vehSkillTree";
       
       public static const CONTEXTMENU_COMPARE:String = "#menu:contextMenu/compare";
       
@@ -3456,6 +3652,8 @@ package
       public static const BONUSTYPE_43:String = "#menu:bonusType/43";
       
       public static const BONUSTYPE_44:String = "#menu:bonusType/44";
+      
+      public static const BONUSTYPE_49:String = "#menu:bonusType/49";
       
       public static const FORTIFICATIONCTX_ASSIGNEDPLAYERS:String = "#menu:fortificationCtx/assignedPlayers";
       
@@ -4345,13 +4543,11 @@ package
       
       public static const CRYSTALS_INFO_TAB_EARN_LEVEL_DESCRIPTION:String = "#menu:crystals/info/tab/earn/level/description";
       
-      public static const CRYSTALS_INFO_TAB_EARN_LEVEL_DESCRIPTIONCONTENT_LEVEL10:String = "#menu:crystals/info/tab/earn/level/descriptionContent/level10";
+      public static const CRYSTALS_INFO_TAB_EARN_LEVEL_DESCRIPTIONCONTENT_LEVEL10AND11:String = "#menu:crystals/info/tab/earn/level/descriptionContent/level10And11";
       
       public static const CRYSTALS_INFO_TAB_EARN_LEVEL_DESCRIPTIONCONTENT_LEVEL9:String = "#menu:crystals/info/tab/earn/level/descriptionContent/level9";
       
       public static const CRYSTALS_INFO_TAB_EARN_LEVEL_MOD_0:String = "#menu:crystals/info/tab/earn/level/mod/0";
-      
-      public static const CRYSTALS_INFO_TAB_EARN_LEVEL_MOD_1:String = "#menu:crystals/info/tab/earn/level/mod/1";
       
       public static const CRYSTALS_INFO_TAB_EARN_MARKER_TITLE:String = "#menu:crystals/info/tab/earn/marker/title";
       
@@ -4489,8 +4685,6 @@ package
       
       public static const CRYSTALS_INFO_TAB_GET_RANDOM:String = "#menu:crystals/info/tab/get/random";
       
-      public static const CRYSTALS_INFO_TAB_GET_GENERAL:String = "#menu:crystals/info/tab/get/general";
-      
       public static const CRYSTALS_INFO_TAB_GET_CARD_CONDITION:String = "#menu:crystals/info/tab/get/card/condition";
       
       public static const CRYSTALS_INFO_TAB_GET_CARD_WIN:String = "#menu:crystals/info/tab/get/card/win";
@@ -4537,13 +4731,13 @@ package
       
       public static const CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION:String = "#menu:contextMenu/crewWidgetChangeSpecialization";
       
-      public static const CONTEXTMENU_ENUM:Array = [CONTEXTMENU_EXCHANGE,CONTEXTMENU_VEHICLEINFO,CONTEXTMENU_VEHICLEINFOEX,CONTEXTMENU_GOTONATIONTREE,CONTEXTMENU_GOTONEXTVEHICLE,CONTEXTMENU_VEHICLESELL,CONTEXTMENU_NATIONCHANGE,CONTEXTMENU_GOTOCOLLECTION,CONTEXTMENU_VEHICLERESEARCH,CONTEXTMENU_VEHICLECHECK,CONTEXTMENU_VEHICLEUNCHECK,CONTEXTMENU_VEHICLEBUY,CONTEXTMENU_VEHICLERESTORE,CONTEXTMENU_VEHICLEREMOVE,CONTEXTMENU_USERINFO,CONTEXTMENU_CLANINFO,CONTEXTMENU_SENDCLANINVITE,CONTEXTMENU_MONEYTRANSFER,CONTEXTMENU_CREATEPRIVATECHANNEL,CONTEXTMENU_ADDTOFRIENDS,CONTEXTMENU_REQUESTFRIENDSHIP,CONTEXTMENU_REJECTFRIENDSHIP,CONTEXTMENU_REMOVEFROMFRIENDS,CONTEXTMENU_ADDTOIGNORED,CONTEXTMENU_REMOVEFROMIGNORED,CONTEXTMENU_ENABLECOMMUNICATIONS,CONTEXTMENU_DISABLECOMMUNICATIONS,CONTEXTMENU_COPYTOCLIPBOARD,CONTEXTMENU_SETMUTED,CONTEXTMENU_UNSETMUTED,CONTEXTMENU_MODULEINFO,CONTEXTMENU_SELL,CONTEXTMENU_SELLFROMINVENTORY,CONTEXTMENU_SELECTVEHICLEINHANGAR,CONTEXTMENU_SHOWVEHICLESTATISTICS,CONTEXTMENU_SHOWVEHICLEPREVIEW,CONTEXTMENU_VEHICLEPREVIEW,CONTEXTMENU_BUY,CONTEXTMENU_BUYORTRADEIN,CONTEXTMENU_RESTORE,CONTEXTMENU_UNLOAD,CONTEXTMENU_CANCELBUY,CONTEXTMENU_UNEQUIP,CONTEXTMENU_BUYANDEQUIP,CONTEXTMENU_EQUIP,CONTEXTMENU_UNLOCK,CONTEXTMENU_KICKPLAYERFROMPREBATTLE,CONTEXTMENU_KICKPLAYERFROMUNIT,CONTEXTMENU_GIVELEADERSHIP,CONTEXTMENU_TAKEARTILLERYEQUIPMENTCOMMANDER,CONTEXTMENU_GIVEARTILLERYEQUIPMENTCOMMANDER,CONTEXTMENU_TAKEINSPIREEQUIPMENTCOMMANDER,CONTEXTMENU_GIVEINSPIREEQUIPMENTCOMMANDER,CONTEXTMENU_TAKELEADERSHIP,CONTEXTMENU_CREATESQUAD,CONTEXTMENU_CREATEEVENTSQUAD,CONTEXTMENU_CREATEBATTLEROYALESQUAD,CONTEXTMENU_CREATEMAPBOXSQUAD,CONTEXTMENU_CREATECOMP7SQUAD,CONTEXTMENU_INVITE,CONTEXTMENU_APPEAL,CONTEXTMENU_INCORRECTBEHAVIOR,CONTEXTMENU_NOTFAIRPLAY,CONTEXTMENU_FORBIDDENNICK,CONTEXTMENU_BOT,CONTEXTMENU_ASSIGNPRIVATE,CONTEXTMENU_ASSIGNOFFICER,CONTEXTMENU_PERSONALCASE_STATSBLOCKTITLE,CONTEXTMENU_DISMISS,CONTEXTMENU_LOCKSLOT,CONTEXTMENU_UNLOCKSLOT,CONTEXTMENU_MESSENGER_MINIMIZEALL,CONTEXTMENU_MESSENGER_CLOSECURRENT,CONTEXTMENU_MESSENGER_CLOSEALLEXCEPTCURRENT,CONTEXTMENU_CREATECONTACTNOTE,CONTEXTMENU_EDITCONTACTNOTE,CONTEXTMENU_REMOVECONTACTNOTE,CONTEXTMENU_BOTNOACTIONS,CONTEXTMENU_VEHICLEPOSTPROGRESSION,CONTEXTMENU_COMPARE,CONTEXTMENU_USERVEHICLECOMPARE,CONTEXTMENU_PROFILEVEHICLECOMPARE,CONTEXTMENU_INSQUAD,CONTEXTMENU_LEAVESQUAD,CONTEXTMENU_EXCLUDEDFROMSQUAD,CONTEXTMENU_SENDINVITATIONTOSQUAD,CONTEXTMENU_WITHDRAWINVITATIONTOSQUAD,CONTEXTMENU_ACCEPTINVITATIONTOSQUAD,CONTEXTMENU_REJECTINVITATIONTOSQUAD,CONTEXTMENU_GOTOBLUEPRINT,CONTEXTMENU_COMMENDFIRST,CONTEXTMENU_COMMENDBACK,CONTEXTMENU_OUTGOINGCOMMENDATION,CONTEXTMENU_MUTUALCOMMENDATION,CONTEXTMENU_VIEWCLANPROFILE,CONTEXTMENU_COPYCLANNAME,CONTEXTMENU_TELECOMRENT,CONTEXTMENU_CREWWIDGETPERSONALFILE,CONTEXTMENU_CREWWIDGETRETRAIN,CONTEXTMENU_CREWWIDGETCHANGECREWMEMBER,CONTEXTMENU_CREWWIDGETSENDTOTOBARRACKS,CONTEXTMENU_CREWWIDGETDISMISS,CONTEXTMENU_CREWWIDGETQUICKTRAINING,CONTEXTMENU_MENTORASSIGNMENT,CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION];
+      public static const CONTEXTMENU_ENUM:Array = [CONTEXTMENU_EXCHANGE,CONTEXTMENU_VEHICLEINFO,CONTEXTMENU_VEHICLEINFOEX,CONTEXTMENU_GOTONATIONTREE,CONTEXTMENU_GOTONEXTVEHICLE,CONTEXTMENU_VEHICLESELL,CONTEXTMENU_NATIONCHANGE,CONTEXTMENU_GOTOCOLLECTION,CONTEXTMENU_VEHICLERESEARCH,CONTEXTMENU_VEHICLECHECK,CONTEXTMENU_VEHICLEUNCHECK,CONTEXTMENU_VEHICLEBUY,CONTEXTMENU_VEHICLERESTORE,CONTEXTMENU_VEHICLEREMOVE,CONTEXTMENU_USERINFO,CONTEXTMENU_CLANINFO,CONTEXTMENU_SENDCLANINVITE,CONTEXTMENU_MONEYTRANSFER,CONTEXTMENU_CREATEPRIVATECHANNEL,CONTEXTMENU_ADDTOFRIENDS,CONTEXTMENU_REQUESTFRIENDSHIP,CONTEXTMENU_REJECTFRIENDSHIP,CONTEXTMENU_REMOVEFROMFRIENDS,CONTEXTMENU_ADDTOIGNORED,CONTEXTMENU_REMOVEFROMIGNORED,CONTEXTMENU_ENABLECOMMUNICATIONS,CONTEXTMENU_DISABLECOMMUNICATIONS,CONTEXTMENU_COPYTOCLIPBOARD,CONTEXTMENU_SETMUTED,CONTEXTMENU_UNSETMUTED,CONTEXTMENU_MODULEINFO,CONTEXTMENU_SELL,CONTEXTMENU_SELLFROMINVENTORY,CONTEXTMENU_SELECTVEHICLEINHANGAR,CONTEXTMENU_SHOWVEHICLESTATISTICS,CONTEXTMENU_SHOWVEHICLEPREVIEW,CONTEXTMENU_VEHICLEPREVIEW,CONTEXTMENU_BUY,CONTEXTMENU_BUYORTRADEIN,CONTEXTMENU_RESTORE,CONTEXTMENU_UNLOAD,CONTEXTMENU_CANCELBUY,CONTEXTMENU_UNEQUIP,CONTEXTMENU_BUYANDEQUIP,CONTEXTMENU_EQUIP,CONTEXTMENU_UNLOCK,CONTEXTMENU_KICKPLAYERFROMPREBATTLE,CONTEXTMENU_KICKPLAYERFROMUNIT,CONTEXTMENU_GIVELEADERSHIP,CONTEXTMENU_TAKEARTILLERYEQUIPMENTCOMMANDER,CONTEXTMENU_GIVEARTILLERYEQUIPMENTCOMMANDER,CONTEXTMENU_TAKEINSPIREEQUIPMENTCOMMANDER,CONTEXTMENU_GIVEINSPIREEQUIPMENTCOMMANDER,CONTEXTMENU_TAKELEADERSHIP,CONTEXTMENU_CREATESQUAD,CONTEXTMENU_CREATEEVENTSQUAD,CONTEXTMENU_CREATEBATTLEROYALESQUAD,CONTEXTMENU_CREATEMAPBOXSQUAD,CONTEXTMENU_CREATECOMP7SQUAD,CONTEXTMENU_CREATECOMP7LIGHTSQUAD,CONTEXTMENU_INVITE,CONTEXTMENU_APPEAL,CONTEXTMENU_INCORRECTBEHAVIOR,CONTEXTMENU_NOTFAIRPLAY,CONTEXTMENU_FORBIDDENNICK,CONTEXTMENU_BOT,CONTEXTMENU_ASSIGNPRIVATE,CONTEXTMENU_ASSIGNOFFICER,CONTEXTMENU_PERSONALCASE_STATSBLOCKTITLE,CONTEXTMENU_DISMISS,CONTEXTMENU_LOCKSLOT,CONTEXTMENU_UNLOCKSLOT,CONTEXTMENU_MESSENGER_MINIMIZEALL,CONTEXTMENU_MESSENGER_CLOSECURRENT,CONTEXTMENU_MESSENGER_CLOSEALLEXCEPTCURRENT,CONTEXTMENU_CREATECONTACTNOTE,CONTEXTMENU_EDITCONTACTNOTE,CONTEXTMENU_REMOVECONTACTNOTE,CONTEXTMENU_BOTNOACTIONS,CONTEXTMENU_VEHICLEPOSTPROGRESSION,CONTEXTMENU_VEHSKILLTREE,CONTEXTMENU_COMPARE,CONTEXTMENU_USERVEHICLECOMPARE,CONTEXTMENU_PROFILEVEHICLECOMPARE,CONTEXTMENU_INSQUAD,CONTEXTMENU_LEAVESQUAD,CONTEXTMENU_EXCLUDEDFROMSQUAD,CONTEXTMENU_SENDINVITATIONTOSQUAD,CONTEXTMENU_WITHDRAWINVITATIONTOSQUAD,CONTEXTMENU_ACCEPTINVITATIONTOSQUAD,CONTEXTMENU_REJECTINVITATIONTOSQUAD,CONTEXTMENU_GOTOBLUEPRINT,CONTEXTMENU_COMMENDFIRST,CONTEXTMENU_COMMENDBACK,CONTEXTMENU_OUTGOINGCOMMENDATION,CONTEXTMENU_MUTUALCOMMENDATION,CONTEXTMENU_VIEWCLANPROFILE,CONTEXTMENU_COPYCLANNAME,CONTEXTMENU_TELECOMRENT,CONTEXTMENU_CREWWIDGETPERSONALFILE,CONTEXTMENU_CREWWIDGETRETRAIN,CONTEXTMENU_CREWWIDGETCHANGECREWMEMBER,CONTEXTMENU_CREWWIDGETSENDTOTOBARRACKS,CONTEXTMENU_CREWWIDGETDISMISS,CONTEXTMENU_CREWWIDGETQUICKTRAINING,CONTEXTMENU_MENTORASSIGNMENT,CONTEXTMENU_CREWWIDGETCHANGESPECIALIZATION];
       
       public static const NATIONS_ENUM:Array = [NATIONS_TITLE,NATIONS_USSR,NATIONS_GERMANY,NATIONS_USA,NATIONS_FRANCE,NATIONS_CHINA,NATIONS_JAPAN,NATIONS_UK,NATIONS_CZECH,NATIONS_SWEDEN,NATIONS_POLAND,NATIONS_ITALY,NATIONS_ALL];
       
       public static const TANKMEN_ENUM:Array = [TANKMEN_LIGHTTANK,TANKMEN_MEDIUMTANK,TANKMEN_HEAVYTANK,TANKMEN_AT_SPG,TANKMEN_SPG,TANKMEN_LOCKREASON_INBATTLE,TANKMEN_LOCKREASON_PREBATTLE,TANKMEN_LOCKREASON_BROKEN,TANKMEN_LOCKREASON_DISABLED];
       
-      public static const TANKCAROUSEL_VEHICLESTATES_ENUM:Array = [TANKCAROUSEL_VEHICLESTATES_BATTLE,TANKCAROUSEL_VEHICLESTATES_LOCKED,TANKCAROUSEL_VEHICLESTATES_CLANLOCKED,TANKCAROUSEL_VEHICLESTATES_INPREBATTLE,TANKCAROUSEL_VEHICLESTATES_AMMONOTFULL,TANKCAROUSEL_VEHICLESTATES_AMMONOTFULLEVENTS,TANKCAROUSEL_VEHICLESTATES_DAMAGED,TANKCAROUSEL_VEHICLESTATES_DESTROYED,TANKCAROUSEL_VEHICLESTATES_EXPLODED,TANKCAROUSEL_VEHICLESTATES_NOTPRESENT,TANKCAROUSEL_VEHICLESTATES_UNDAMAGED,TANKCAROUSEL_VEHICLESTATES_WILLBEUNLOCKEDINBATTLE,TANKCAROUSEL_VEHICLESTATES_SERVERRESTRICTION,TANKCAROUSEL_VEHICLESTATES_CREWNOTFULL,TANKCAROUSEL_VEHICLESTATES_GROUP_IS_NOT_READY,TANKCAROUSEL_VEHICLESTATES_FALLOUT_MIN,TANKCAROUSEL_VEHICLESTATES_FALLOUT_MAX,TANKCAROUSEL_VEHICLESTATES_FALLOUT_REQUIRED,TANKCAROUSEL_VEHICLESTATES_FALLOUT_BROKEN,TANKCAROUSEL_VEHICLESTATES_RENTALISOVER,TANKCAROUSEL_VEHICLESTATES_RENTABLE,TANKCAROUSEL_VEHICLESTATES_RENTABLE_EPIC,TANKCAROUSEL_VEHICLESTATES_RENTABLE_RANKED,TANKCAROUSEL_VEHICLESTATES_RENTABLEAGAIN_EPIC,TANKCAROUSEL_VEHICLESTATES_RENTABLEAGAIN_RANKED,TANKCAROUSEL_VEHICLESTATES_RENTABLE_HOVER,TANKCAROUSEL_VEHICLESTATES_IGRRENTALISOVER,TANKCAROUSEL_VEHICLESTATES_INPREMIUMIGRONLY,TANKCAROUSEL_VEHICLESTATES_BUYTANK,TANKCAROUSEL_VEHICLESTATES_BUYTANKEMPTYCOUNT,TANKCAROUSEL_VEHICLESTATES_BUYSLOT,TANKCAROUSEL_VEHICLESTATES_RESTORETANK,TANKCAROUSEL_VEHICLESTATES_RESTORETANKCOUNT,TANKCAROUSEL_VEHICLESTATES_UNAVAILABLE,TANKCAROUSEL_VEHICLESTATES_UNSUITABLETOQUEUE,TANKCAROUSEL_VEHICLESTATES_FALLOUT_ONLY,TANKCAROUSEL_VEHICLESTATES_DEALISOVER,TANKCAROUSEL_VEHICLESTATES_SUBSCRIPTION_SUSPENDED,TANKCAROUSEL_VEHICLESTATES_WOT_PLUS_EXCLUSIVE_VEHICLE_DISABLED,TANKCAROUSEL_VEHICLESTATES_UNSUITABLETOUNIT,TANKCAROUSEL_VEHICLESTATES_DISABLED,TANKCAROUSEL_VEHICLESTATES_TOOHEAVY,TANKCAROUSEL_VEHICLESTATES_XPMULTRECEIVED,TANKCAROUSEL_VEHICLESTATES_XPMULTRECEIVED_NOT,TANKCAROUSEL_VEHICLESTATES_ROTATIONGROUPUNLOCKED,TANKCAROUSEL_VEHICLESTATES_ROTATIONGROUPLOCKED];
+      public static const TANKCAROUSEL_VEHICLESTATES_ENUM:Array = [TANKCAROUSEL_VEHICLESTATES_BATTLE,TANKCAROUSEL_VEHICLESTATES_LOCKED,TANKCAROUSEL_VEHICLESTATES_CLANLOCKED,TANKCAROUSEL_VEHICLESTATES_INPREBATTLE,TANKCAROUSEL_VEHICLESTATES_AMMONOTFULL,TANKCAROUSEL_VEHICLESTATES_AMMONOTFULLEVENTS,TANKCAROUSEL_VEHICLESTATES_DAMAGED,TANKCAROUSEL_VEHICLESTATES_DESTROYED,TANKCAROUSEL_VEHICLESTATES_EXPLODED,TANKCAROUSEL_VEHICLESTATES_NOTPRESENT,TANKCAROUSEL_VEHICLESTATES_UNDAMAGED,TANKCAROUSEL_VEHICLESTATES_WILLBEUNLOCKEDINBATTLE,TANKCAROUSEL_VEHICLESTATES_SERVERRESTRICTION,TANKCAROUSEL_VEHICLESTATES_CREWNOTFULL,TANKCAROUSEL_VEHICLESTATES_GROUP_IS_NOT_READY,TANKCAROUSEL_VEHICLESTATES_FALLOUT_MIN,TANKCAROUSEL_VEHICLESTATES_FALLOUT_MAX,TANKCAROUSEL_VEHICLESTATES_FALLOUT_REQUIRED,TANKCAROUSEL_VEHICLESTATES_FALLOUT_BROKEN,TANKCAROUSEL_VEHICLESTATES_RENTALISOVER,TANKCAROUSEL_VEHICLESTATES_RENTABLE,TANKCAROUSEL_VEHICLESTATES_RENTABLE_EPIC,TANKCAROUSEL_VEHICLESTATES_RENTABLE_RANKED,TANKCAROUSEL_VEHICLESTATES_RENTABLEAGAIN_EPIC,TANKCAROUSEL_VEHICLESTATES_RENTABLEAGAIN_RANKED,TANKCAROUSEL_VEHICLESTATES_RENTABLE_HOVER,TANKCAROUSEL_VEHICLESTATES_IGRRENTALISOVER,TANKCAROUSEL_VEHICLESTATES_INPREMIUMIGRONLY,TANKCAROUSEL_VEHICLESTATES_BUYTANK,TANKCAROUSEL_VEHICLESTATES_BUYTANKEMPTYCOUNT,TANKCAROUSEL_VEHICLESTATES_BUYSLOT,TANKCAROUSEL_VEHICLESTATES_RESTORETANK,TANKCAROUSEL_VEHICLESTATES_RESTORETANKCOUNT,TANKCAROUSEL_VEHICLESTATES_UNAVAILABLE,TANKCAROUSEL_VEHICLESTATES_UNSUITABLETOQUEUE,TANKCAROUSEL_VEHICLESTATES_FALLOUT_ONLY,TANKCAROUSEL_VEHICLESTATES_DEALISOVER,TANKCAROUSEL_VEHICLESTATES_SUBSCRIPTION_SUSPENDED,TANKCAROUSEL_VEHICLESTATES_WOT_PLUS_EXCLUSIVE_VEHICLE_DISABLED,TANKCAROUSEL_VEHICLESTATES_UNSUITABLETOUNIT,TANKCAROUSEL_VEHICLESTATES_DISABLED,TANKCAROUSEL_VEHICLESTATES_XPMULTRECEIVED,TANKCAROUSEL_VEHICLESTATES_XPMULTRECEIVED_NOT,TANKCAROUSEL_VEHICLESTATES_ROTATIONGROUPUNLOCKED,TANKCAROUSEL_VEHICLESTATES_ROTATIONGROUPLOCKED];
       
       public static const DATETIME_WEEKDAYS_FULL_ENUM:Array = [DATETIME_WEEKDAYS_FULL_1,DATETIME_WEEKDAYS_FULL_2,DATETIME_WEEKDAYS_FULL_3,DATETIME_WEEKDAYS_FULL_4,DATETIME_WEEKDAYS_FULL_5,DATETIME_WEEKDAYS_FULL_6,DATETIME_WEEKDAYS_FULL_7];
       
@@ -4555,9 +4749,9 @@ package
       
       public static const DATETIME_MONTHS_ENUM:Array = [DATETIME_MONTHS_FULL_1,DATETIME_MONTHS_FULL_2,DATETIME_MONTHS_FULL_3,DATETIME_MONTHS_FULL_4,DATETIME_MONTHS_FULL_5,DATETIME_MONTHS_FULL_6,DATETIME_MONTHS_FULL_7,DATETIME_MONTHS_FULL_8,DATETIME_MONTHS_FULL_9,DATETIME_MONTHS_FULL_10,DATETIME_MONTHS_FULL_11,DATETIME_MONTHS_FULL_12,DATETIME_MONTHS_1,DATETIME_MONTHS_2,DATETIME_MONTHS_3,DATETIME_MONTHS_4,DATETIME_MONTHS_5,DATETIME_MONTHS_6,DATETIME_MONTHS_7,DATETIME_MONTHS_8,DATETIME_MONTHS_9,DATETIME_MONTHS_10,DATETIME_MONTHS_11,DATETIME_MONTHS_12,DATETIME_MONTHS_FULLSMALL_1,DATETIME_MONTHS_FULLSMALL_2,DATETIME_MONTHS_FULLSMALL_3,DATETIME_MONTHS_FULLSMALL_4,DATETIME_MONTHS_FULLSMALL_5,DATETIME_MONTHS_FULLSMALL_6,DATETIME_MONTHS_FULLSMALL_7,DATETIME_MONTHS_FULLSMALL_8,DATETIME_MONTHS_FULLSMALL_9,DATETIME_MONTHS_FULLSMALL_10,DATETIME_MONTHS_FULLSMALL_11,DATETIME_MONTHS_FULLSMALL_12,DATETIME_MONTHS_SHORT_1,DATETIME_MONTHS_SHORT_2,DATETIME_MONTHS_SHORT_3,DATETIME_MONTHS_SHORT_4,DATETIME_MONTHS_SHORT_5,DATETIME_MONTHS_SHORT_6,DATETIME_MONTHS_SHORT_7,DATETIME_MONTHS_SHORT_8,DATETIME_MONTHS_SHORT_9,DATETIME_MONTHS_SHORT_10,DATETIME_MONTHS_SHORT_11,DATETIME_MONTHS_SHORT_12,DATETIME_MONTHS_SHORTSMALL_1,DATETIME_MONTHS_SHORTSMALL_2,DATETIME_MONTHS_SHORTSMALL_3,DATETIME_MONTHS_SHORTSMALL_4,DATETIME_MONTHS_SHORTSMALL_5,DATETIME_MONTHS_SHORTSMALL_6,DATETIME_MONTHS_SHORTSMALL_7,DATETIME_MONTHS_SHORTSMALL_8,DATETIME_MONTHS_SHORTSMALL_9,DATETIME_MONTHS_SHORTSMALL_10,DATETIME_MONTHS_SHORTSMALL_11,DATETIME_MONTHS_SHORTSMALL_12];
       
-      public static const LEVELS_ENUM:Array = [LEVELS_1,LEVELS_2,LEVELS_3,LEVELS_4,LEVELS_5,LEVELS_6,LEVELS_7,LEVELS_8,LEVELS_9,LEVELS_10,LEVELS_ROMAN_1,LEVELS_ROMAN_2,LEVELS_ROMAN_3,LEVELS_ROMAN_4,LEVELS_ROMAN_5,LEVELS_ROMAN_6,LEVELS_ROMAN_7,LEVELS_ROMAN_8,LEVELS_ROMAN_9,LEVELS_ROMAN_10,LEVELS_ALL];
+      public static const LEVELS_ENUM:Array = [LEVELS_1,LEVELS_2,LEVELS_3,LEVELS_4,LEVELS_5,LEVELS_6,LEVELS_7,LEVELS_8,LEVELS_9,LEVELS_10,LEVELS_11,LEVELS_ROMAN_1,LEVELS_ROMAN_2,LEVELS_ROMAN_3,LEVELS_ROMAN_4,LEVELS_ROMAN_5,LEVELS_ROMAN_6,LEVELS_ROMAN_7,LEVELS_ROMAN_8,LEVELS_ROMAN_9,LEVELS_ROMAN_10,LEVELS_ROMAN_11,LEVELS_ALL];
       
-      public static const LEVELS_ROMAN_ENUM:Array = [LEVELS_ROMAN_1,LEVELS_ROMAN_2,LEVELS_ROMAN_3,LEVELS_ROMAN_4,LEVELS_ROMAN_5,LEVELS_ROMAN_6,LEVELS_ROMAN_7,LEVELS_ROMAN_8,LEVELS_ROMAN_9,LEVELS_ROMAN_10];
+      public static const LEVELS_ROMAN_ENUM:Array = [LEVELS_ROMAN_1,LEVELS_ROMAN_2,LEVELS_ROMAN_3,LEVELS_ROMAN_4,LEVELS_ROMAN_5,LEVELS_ROMAN_6,LEVELS_ROMAN_7,LEVELS_ROMAN_8,LEVELS_ROMAN_9,LEVELS_ROMAN_10,LEVELS_ROMAN_11];
       
       public static const INVENTORY_MENU_ENUM:Array = [INVENTORY_MENU_VEHICLE_NAME,INVENTORY_MENU_VEHICLE_TAGS_NAME,INVENTORY_MENU_VEHICLE_TAGS_ALL_NAME,INVENTORY_MENU_VEHICLE_TAGS_LIGHTTANK_NAME,INVENTORY_MENU_VEHICLE_TAGS_MEDIUMTANK_NAME,INVENTORY_MENU_VEHICLE_TAGS_HEAVYTANK_NAME,INVENTORY_MENU_VEHICLE_TAGS_AT_SPG_NAME,INVENTORY_MENU_VEHICLE_TAGS_SPG_NAME,INVENTORY_MENU_VEHICLE_EXTRA_NAME,INVENTORY_MENU_VEHICLE_EXTRA_BROCKEN_NAME,INVENTORY_MENU_VEHICLE_EXTRA_LOCKED_NAME,INVENTORY_MENU_VEHICLE_EXTRA_RENTALS_NAME,INVENTORY_MENU_VEHICLE_EXTRA_PREMIUMIGR_NAME,INVENTORY_MENU_MODULE_NAME,INVENTORY_MENU_MODULE_TYPES_NAME,INVENTORY_MENU_MODULE_TYPES_VEHICLECHASSIS_NAME,INVENTORY_MENU_MODULE_TYPES_VEHICLETURRET_NAME,INVENTORY_MENU_MODULE_TYPES_VEHICLEGUN_NAME,INVENTORY_MENU_MODULE_TYPES_VEHICLEENGINE_NAME,INVENTORY_MENU_MODULE_TYPES_VEHICLERADIO_NAME,INVENTORY_MENU_MODULE_FITS_NAME,INVENTORY_MENU_MODULE_FITS_MYVEHICLE_NAME,INVENTORY_MENU_MODULE_FITS_MYVEHICLES_NAME,INVENTORY_MENU_MODULE_FITS_OTHERVEHICLES_NAME,INVENTORY_MENU_MODULE_EXTRA_NAME,INVENTORY_MENU_MODULE_EXTRA_ONVEHICLE_NAME,INVENTORY_MENU_SHELL_NAME,INVENTORY_MENU_SHELL_KINDS_NAME,INVENTORY_MENU_SHELL_KINDS_ARMOR_PIERCING_NAME,INVENTORY_MENU_SHELL_KINDS_ARMOR_PIERCING_CR_NAME,INVENTORY_MENU_SHELL_KINDS_ARMOR_PIERCING_HE_NAME,INVENTORY_MENU_SHELL_KINDS_HOLLOW_CHARGE_NAME,INVENTORY_MENU_SHELL_KINDS_HIGH_EXPLOSIVE_NAME,INVENTORY_MENU_SHELL_FITS_NAME,INVENTORY_MENU_SHELL_FITS_MYVEHICLEGUN_NAME,INVENTORY_MENU_SHELL_FITS_MYINVENTORYGUNS_NAME,INVENTORY_MENU_SHELL_FITS_MYVEHICLESINVENTORYGUNS_NAME,INVENTORY_MENU_SHELL_FITS_OTHERGUNS_NAME,INVENTORY_MENU_OPTIONALDEVICE_NAME,INVENTORY_MENU_OPTIONALDEVICE_FITS_NAME,INVENTORY_MENU_OPTIONALDEVICE_FITS_MYVEHICLE_NAME,INVENTORY_MENU_OPTIONALDEVICE_FITS_MYVEHICLES_NAME,INVENTORY_MENU_OPTIONALDEVICE_FITS_OTHERVEHICLES_NAME,INVENTORY_MENU_OPTIONALDEVICE_EXTRA_NAME,INVENTORY_MENU_OPTIONALDEVICE_EXTRA_ONVEHICLE_NAME,INVENTORY_MENU_BATTLEBOOSTER_NAME,INVENTORY_MENU_BATTLEBOOSTER_TARGETTYPE_ALLKIND_NAME,INVENTORY_MENU_BATTLEBOOSTER_TARGETTYPE_FORCREW_NAME,INVENTORY_MENU_BATTLEBOOSTER_TARGETTYPE_FOREQUIPMENT_NAME,INVENTORY_MENU_EQUIPMENT_NAME,INVENTORY_MENU_EQUIPMENT_FITS_NAME,INVENTORY_MENU_EQUIPMENT_FITS_MYVEHICLE_NAME,INVENTORY_MENU_EQUIPMENT_FITS_MYVEHICLES_NAME,INVENTORY_MENU_EQUIPMENT_FITS_OTHERVEHICLES_NAME];
       

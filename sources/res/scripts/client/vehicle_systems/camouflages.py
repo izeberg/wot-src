@@ -75,7 +75,6 @@ AttachmentParams = namedtuple('AttachmentParams', ('scale', 'rotation', 'attachN
                                                    'slotId', 'isHanger'))
 AttachmentParams.__new__.__defaults__ = (
  Math.Vector3(), Math.Vector3(), '', '', None, '', None, None, '', None, '')
-_isDeferredRenderer = isRendererPipelineDeferred()
 
 def prepareFashions(isDamaged):
     if isDamaged:
@@ -580,7 +579,7 @@ def __prepareAnimator(loadedAnimators, animatorName, wrapperToBind, node, attach
         animator.bindTo(wrapperToBind)
         animator.setEnabled(False)
         if hasattr(animator, 'setBoolParam'):
-            animator.setBoolParam('isDeferred', _isDeferredRenderer)
+            animator.setBoolParam('isDeferred', isRendererPipelineDeferred())
         return LoadedModelAnimator(animator, node, attachmentPartNode)
 
 
@@ -595,7 +594,7 @@ def getParams(outfit, vehicleDescr, slotTypeName, slotType, paramsConverter):
                 if slotId in slotsByIdMap:
                     slotParams = slotsByIdMap[slotId]
                 else:
-                    _logger.warning('SlotId mismatch (slotId=%(slotId)d ', {'slotId': slotId})
+                    _logger.warning('SlotId mismatch (slotId=%(slotId)d) ', {'slotId': slotId})
                     continue
                 params = paramsConverter(slotParams, slotData, idx)
                 if params is not None:

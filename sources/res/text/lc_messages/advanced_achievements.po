@@ -130,6 +130,9 @@ msgstr ""
 msgid "description/It21_Lion"
 msgstr "Own the&nbsp;Lion (Tier&nbsp;%(level)s)"
 
+msgid "description/Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Own the&nbsp;Ashbringer (Tier&nbsp;%(level)s)"
+
 msgid "description/Pl21_CS_63_OSP3"
 msgstr "Own the&nbsp;Hurricane (Tier&nbsp;%(level)s)"
 
@@ -201,6 +204,11 @@ msgstr ""
 "Research all vehicles in the Chinese heavy branch that leads to "
 "the&nbsp;BZ-75 (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_china_Ch67_BZ_79"
+msgstr ""
+"Research all vehicles in the Chinese heavy branch that leads to "
+"the&nbsp;BZ-79 (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr ""
 "Research all vehicles in the Czechoslovakian medium branch that leads to "
@@ -225,6 +233,16 @@ msgid "description/branch_france_F10_AMX_50B"
 msgstr ""
 "Research all vehicles in the French heavy branch that leads to "
 "the&nbsp;AMX&nbsp;50&nbsp;B (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_france_F135_AS_XX_40_t"
+msgstr ""
+"Research all vehicles in the French medium branch that leads to the&nbsp;AS-"
+"XX&nbsp;40&nbsp;t (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_france_F136_AMX_67_Imbattable"
+msgstr ""
+"Research all vehicles in the French heavy branch that leads to "
+"the&nbsp;AMX&nbsp;67&nbsp;Imbattable (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_france_F18_Bat_Chatillon25t"
 msgstr ""
@@ -265,6 +283,26 @@ msgid "description/branch_germany_G134_PzKpfw_VII"
 msgstr ""
 "Research all vehicles in the German heavy branch that leads to "
 "the&nbsp;Pz.Kpfw.&nbsp;VII (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_germany_G185_Leopard_120_Verbessert"
+msgstr ""
+"Research all vehicles in the German medium branch that leads to "
+"the&nbsp;Leopard&nbsp;120&nbsp;Verbessert (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_germany_G187_Taschenratte"
+msgstr ""
+"Research all vehicles in the German heavy branch that leads to "
+"the&nbsp;Taschenratte (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_germany_G188_LeKpz_Borkenkafer"
+msgstr ""
+"Research all vehicles in the German light branch that leads to "
+"the&nbsp;leKpz&nbsp;Borkenkäfer (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_germany_G189_Hirschkafer"
+msgstr ""
+"Research all vehicles in the German TD branch that leads to "
+"the&nbsp;Hirschkäfer (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_germany_G42_Maus"
 msgstr ""
@@ -346,6 +384,11 @@ msgstr ""
 "Research all vehicles in the Polish TD branch that leads to "
 "the&nbsp;NC&nbsp;70 Błyskawica (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_poland_Pl37_CS_67_Szakal"
+msgstr ""
+"Research all vehicles in the Polish medium branch that leads to "
+"the&nbsp;CS-67&nbsp;Szakal (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_sweden_S11_Strv_103B"
 msgstr ""
 "Research all vehicles in the Swedish TD branch that leads to the "
@@ -361,6 +404,11 @@ msgstr ""
 "Research all vehicles in the Swedish medium branch that leads to the "
 "UDES&nbsp;15/16 (Tier&nbsp;%(level)s)"
 
+msgid "description/branch_sweden_S36_Strv_107_12"
+msgstr ""
+"Research all vehicles in the Swedish TD branch that leads to "
+"the&nbsp;Strv&nbsp;107-12 (Tier&nbsp;%(level)s)"
+
 msgid "description/branch_uk_GB100_Manticore"
 msgstr ""
 "Research all vehicles in the British light branch that leads to the "
@@ -375,6 +423,16 @@ msgid "description/branch_uk_GB142_FV230_Canopener"
 msgstr ""
 "Research all vehicles in the U.K. heavy branch that leads to "
 "the&nbsp;FV230&nbsp;Canopener (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_uk_GB147_FV4025_Contriver"
+msgstr ""
+"Research all vehicles in the British heavy branch that leads to "
+"the&nbsp;FV4025&nbsp;Contriver (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_uk_GB152_AT_FV230_Breaker"
+msgstr ""
+"Research all vehicles in the British TD branch that leads to the&nbsp;AT-"
+"FV230&nbsp;Breaker (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr ""
@@ -415,6 +473,16 @@ msgid "description/branch_usa_A143_M_V_Y"
 msgstr ""
 "Research all vehicles in the American heavy branch that leads to "
 "the&nbsp;M-V-Y (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_usa_A182_T803"
+msgstr ""
+"Research all vehicles in the American heavy branch that leads to "
+"the&nbsp;T803 (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_usa_A183_XM69_Hacker"
+msgstr ""
+"Research all vehicles in the American medium branch that leads to "
+"the&nbsp;XM69&nbsp;Hacker (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_usa_A38_T92"
 msgstr ""
@@ -475,6 +543,16 @@ msgid "description/branch_ussr_R169_ST_II"
 msgstr ""
 "Research all vehicles in the Soviet heavy branch that leads to the&nbsp;ST-"
 "II (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_ussr_R228_KR_1"
+msgstr ""
+"Research all vehicles in the Soviet heavy branch that leads to the&nbsp;KR-1"
+" (Tier&nbsp;%(level)s)"
+
+msgid "description/branch_ussr_R230_Object_432U"
+msgstr ""
+"Research all vehicles in the Soviet medium branch that leads to "
+"the&nbsp;Object&nbsp;432U (Tier&nbsp;%(level)s)"
 
 msgid "description/branch_ussr_R45_IS_7"
 msgstr ""
@@ -575,7 +653,8 @@ msgstr ""
 
 msgid "description/personal_missions"
 msgstr ""
-"Own all vehicles in the Long-Awaited Backup and Second Front campaigns"
+"Own all vehicles in the Long-Awaited Backup, Second Front, and Sector 3 "
+"campaigns"
 
 msgid "description/poland"
 msgstr "Research all vehicles in the Poland Tech Tree."
@@ -596,6 +675,22 @@ msgstr "Research all Tier&nbsp;I–V vehicles in the Sweden Tech Tree"
 msgid "description/sweden_first_steps"
 msgstr ""
 "Research at least one vehicle from tier&nbsp;V in the Sweden Tech Tree"
+
+msgid "description/third_campaign"
+msgstr "Own all vehicles in the Sector 3 campaign"
+
+msgid "description/third_campaign_first_operation"
+msgstr ""
+"Complete the first Operation and own the&nbsp;Windhund (Tier&nbsp;%(level)s)"
+
+msgid "description/third_campaign_second_operation"
+msgstr ""
+"Complete the second Operation and own the&nbsp;Dravec (Tier&nbsp;%(level)s)"
+
+msgid "description/third_campaign_third_operation"
+msgstr ""
+"Complete the final Operation and own the&nbsp;Black Rock "
+"(Tier&nbsp;%(level)s)"
 
 msgid "description/total_2D_style_count"
 msgid_plural "plural/description/total_2D_style_count"
@@ -718,7 +813,7 @@ msgid "name/A100_T49"
 msgstr "T49"
 
 msgid "name/A102_T28_concept"
-msgstr "Operation&nbsp;T28 Concept"
+msgstr "Operation T28&nbsp;HTC"
 
 msgid "name/A10_M6"
 msgstr "M6"
@@ -767,6 +862,12 @@ msgstr "Patton the&nbsp;Tank"
 
 msgid "name/A174_T57_58_Rush_Ep1"
 msgstr "Stinger"
+
+msgid "name/A182_T803"
+msgstr "T803"
+
+msgid "name/A183_XM69_Hacker"
+msgstr "XM69&nbsp;Hacker"
 
 msgid "name/A31_M36_Slagger"
 msgstr "M36 Jackson"
@@ -921,6 +1022,9 @@ msgstr "BZ-58"
 msgid "name/Ch52_WZ_122_6_F3"
 msgstr "116-F3"
 
+msgid "name/Ch67_BZ_79"
+msgstr "BZ-79"
+
 msgid "name/Cz02_TVP_T50"
 msgstr "Škoda T&nbsp;50"
 
@@ -998,6 +1102,12 @@ msgstr "Panhard AML Lynx&nbsp;6x6"
 
 msgid "name/F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
+
+msgid "name/F135_AS_XX_40_t"
+msgstr "AS-XX&nbsp;40&nbsp;t"
+
+msgid "name/F136_AMX_67_Imbattable"
+msgstr "AMX&nbsp;67&nbsp;Imbattable"
 
 msgid "name/F15_AMX_12t"
 msgstr "AMX&nbsp;12&nbsp;t"
@@ -1115,6 +1225,18 @@ msgstr "Pz.Kpfw.&nbsp;IV Ausf.&nbsp;F2"
 
 msgid "name/G17_JagdPzIV"
 msgstr "Jagdpanzer&nbsp;IV"
+
+msgid "name/G185_Leopard_120_Verbessert"
+msgstr "Leopard&nbsp;120&nbsp;Verbessert"
+
+msgid "name/G187_Taschenratte"
+msgstr "Taschenratte"
+
+msgid "name/G188_LeKpz_Borkenkafer"
+msgstr "leKpz&nbsp;Borkenkäfer"
+
+msgid "name/G189_Hirschkafer"
+msgstr "Hirschkäfer"
 
 msgid "name/G18_JagdPanther"
 msgstr "Jagdpanther"
@@ -1281,8 +1403,14 @@ msgstr "FV229&nbsp;Contender"
 msgid "name/GB146_Gabler_s_Destroyer"
 msgstr "Gabler’s&nbsp;Destroyer"
 
+msgid "name/GB147_FV4025_Contriver"
+msgstr "FV4025&nbsp;Contriver"
+
 msgid "name/GB148_FV227_Conceiver"
 msgstr "FV227&nbsp;Conceiver"
+
+msgid "name/GB152_AT_FV230_Breaker"
+msgstr "AT-FV230&nbsp;Breaker"
 
 msgid "name/GB20_Crusader"
 msgstr "Crusader"
@@ -1482,6 +1610,9 @@ msgstr "53TP Markowskiego"
 msgid "name/Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "name/Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Ashbringer"
+
 msgid "name/Pl18_BUGI"
 msgstr "B.U.G.I."
 
@@ -1514,6 +1645,9 @@ msgstr "SDP&nbsp;57 Gowika"
 
 msgid "name/Pl32_SDP_Wz_44"
 msgstr "SDP&nbsp;44 Burza"
+
+msgid "name/Pl37_CS_67_Szakal"
+msgstr "CS-67&nbsp;Szakal"
 
 msgid "name/R01_IS"
 msgstr "IS"
@@ -1613,6 +1747,12 @@ msgstr "IS-3"
 
 msgid "name/R20_T_44"
 msgstr "T-44"
+
+msgid "name/R228_KR_1"
+msgstr "KR-1"
+
+msgid "name/R230_Object_432U"
+msgstr "Object&nbsp;432U"
 
 msgid "name/R23_T_43"
 msgstr "T-43"
@@ -1743,6 +1883,9 @@ msgstr "UDES&nbsp;15/16"
 msgid "name/S29_UDES_14_5"
 msgstr "UDES&nbsp;14 Alt&nbsp;5"
 
+msgid "name/S36_Strv_107_12"
+msgstr "Strv&nbsp;107-12"
+
 msgid "name/branch_china_Ch19_121"
 msgstr "China:&nbsp;121"
 
@@ -1758,6 +1901,9 @@ msgstr "China: WZ-111 model&nbsp;5A"
 msgid "name/branch_china_Ch48_BZ_75"
 msgstr "China: BZ-75"
 
+msgid "name/branch_china_Ch67_BZ_79"
+msgstr "China: BZ-79"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "Czechoslovakia: TVP&nbsp;T&nbsp;50/51"
 
@@ -1772,6 +1918,12 @@ msgstr "France: Panhard EBR&nbsp;105"
 
 msgid "name/branch_france_F10_AMX_50B"
 msgstr "France: AMX&nbsp;50&nbsp;B"
+
+msgid "name/branch_france_F135_AS_XX_40_t"
+msgstr "France: AS-XX&nbsp;40&nbsp;t"
+
+msgid "name/branch_france_F136_AMX_67_Imbattable"
+msgstr "France: AMX&nbsp;67&nbsp;Imbattable"
 
 msgid "name/branch_france_F18_Bat_Chatillon25t"
 msgstr "France: Bat.-Châtillon&nbsp;25&nbsp;t"
@@ -1796,6 +1948,18 @@ msgstr "Germany: Rheinmetall Panzerwagen"
 
 msgid "name/branch_germany_G134_PzKpfw_VII"
 msgstr "Germany: Pz.Kpfw.&nbsp;VII"
+
+msgid "name/branch_germany_G185_Leopard_120_Verbessert"
+msgstr "Germany: Leopard&nbsp;120&nbsp;Verbessert"
+
+msgid "name/branch_germany_G187_Taschenratte"
+msgstr "Germany: Taschenratte"
+
+msgid "name/branch_germany_G188_LeKpz_Borkenkafer"
+msgstr "Germany: leKpz&nbsp;Borkenkäfer"
+
+msgid "name/branch_germany_G189_Hirschkafer"
+msgstr "Germany: Hirschkäfer"
 
 msgid "name/branch_germany_G42_Maus"
 msgstr "Germany: Maus"
@@ -1845,6 +2009,9 @@ msgstr "Poland: CS-63"
 msgid "name/branch_poland_Pl29_NC_Wz_70T"
 msgstr "Poland: NC&nbsp;70 Błyskawica"
 
+msgid "name/branch_poland_Pl37_CS_67_Szakal"
+msgstr "Poland: CS-67&nbsp;Szakal"
+
 msgid "name/branch_sweden_S11_Strv_103B"
 msgstr "Sweden: Strv&nbsp;103B"
 
@@ -1854,6 +2021,9 @@ msgstr "Sweden: Kranvagn"
 msgid "name/branch_sweden_S28_UDES_15_16"
 msgstr "Sweden: UDES&nbsp;15/16"
 
+msgid "name/branch_sweden_S36_Strv_107_12"
+msgstr "Sweden: Strv&nbsp;107-12"
+
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "U.K.: Manticore"
 
@@ -1862,6 +2032,12 @@ msgstr "U.K.: Concept&nbsp;No.&nbsp;5"
 
 msgid "name/branch_uk_GB142_FV230_Canopener"
 msgstr "U.K.: FV230&nbsp;Canopener"
+
+msgid "name/branch_uk_GB147_FV4025_Contriver"
+msgstr "U.K.: FV4025&nbsp;Contriver"
+
+msgid "name/branch_uk_GB152_AT_FV230_Breaker"
+msgstr "U.K.: AT-FV230&nbsp;Breaker"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "U.K.: Conqueror Gun Carriage"
@@ -1886,6 +2062,12 @@ msgstr "U.S.A.: M48A5 Patton"
 
 msgid "name/branch_usa_A143_M_V_Y"
 msgstr "U.S.A.: M-V-Y"
+
+msgid "name/branch_usa_A182_T803"
+msgstr "U.S.A.: T803"
+
+msgid "name/branch_usa_A183_XM69_Hacker"
+msgstr "U.S.A.: XM69&nbsp;Hacker"
 
 msgid "name/branch_usa_A38_T92"
 msgstr "U.S.A.: T92&nbsp;HMC"
@@ -1922,6 +2104,12 @@ msgstr "U.S.S.R.: Object&nbsp;277"
 
 msgid "name/branch_ussr_R169_ST_II"
 msgstr "U.S.S.R.: ST-II"
+
+msgid "name/branch_ussr_R228_KR_1"
+msgstr "U.S.S.R.: KR-1"
+
+msgid "name/branch_ussr_R230_Object_432U"
+msgstr "U.S.S.R.: Object&nbsp;432U"
 
 msgid "name/branch_ussr_R45_IS_7"
 msgstr "U.S.S.R.: IS-7"
@@ -2024,6 +2212,18 @@ msgstr "Early Era — Sweden"
 
 msgid "name/sweden_first_steps"
 msgstr "First Steps — Sweden"
+
+msgid "name/third_campaign"
+msgstr "Sector 3"
+
+msgid "name/third_campaign_first_operation"
+msgstr "Operation: Windhund"
+
+msgid "name/third_campaign_second_operation"
+msgstr "Operation: Dravec"
+
+msgid "name/third_campaign_third_operation"
+msgstr "Operation: Black Rock"
 
 msgid "name/total_2D_style_count"
 msgstr "2D Styles"

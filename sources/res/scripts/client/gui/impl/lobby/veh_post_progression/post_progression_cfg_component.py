@@ -1,4 +1,7 @@
-import typing, BigWorld
+from __future__ import absolute_import
+import typing
+from future.utils import iteritems
+import BigWorld
 from adisp import adisp_process
 from Event import Event
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -22,7 +25,8 @@ from gui.veh_post_progression.models.progression import PostProgressionAvailabil
 from gui.veh_post_progression.models.progression_step import PostProgressionStepState
 from gui.veh_post_progression.models.purchase import PurchaseCheckResult, PurchaseProvider
 from helpers import dependency
-from post_progression_common import GROUP_ID_BY_FEATURE
+from items import vehicles
+from post_progression_common import GROUP_ID_BY_FEATURE, ACTION_TYPES
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.game_control import IWalletController
 if typing.TYPE_CHECKING:
@@ -79,9 +83,12 @@ class PostProgressionCfgComponentView(PostProgressionBaseComponentView):
             return CfgPairModificationTooltipView(self._vehicle, stepId, modId)
         else:
             if contentID == R.views.lobby.veh_post_progression.tooltip.RoleSlotTooltipView() and stepId is not None:
-                return RoleSlotTooltipView(step=self._vehicle.postProgression.getStep(stepId))
+                step = self._vehicle.postProgression.getStep(stepId)
+                return RoleSlotTooltipView(step=step)
             if contentID == R.views.lobby.veh_post_progression.tooltip.SetupTooltipView() and stepId is not None:
-                return SetupTooltipView(step=self._vehicle.postProgression.getStep(stepId))
+                step = self._vehicle.postProgression.getStep(stepId)
+                feature = vehicles.g_cache.postProgression().getAction(ACTION_TYPES.FEATURE, GROUP_ID_BY_FEATURE[step.action.getTechName()])
+                return SetupTooltipView(step=step, feature=feature)
             if contentID == R.views.lobby.veh_post_progression.tooltip.PostProgressionLevelTooltipView() and stepId is not None:
                 return CfgProgressionLevelTooltipView(self._vehicle, stepId)
             return super(PostProgressionCfgComponentView, self).createToolTipContent(event, contentID)
@@ -91,11 +98,11 @@ class PostProgressionCfgComponentView(PostProgressionBaseComponentView):
         self.__togglingSteps.clear()
         super(PostProgressionCfgComponentView, self)._finalize()
 
-    def _onLoading(self, intCD=None, *args, **kwargs):
+    def _onLoading(self, intCD=None, **kwargs):
         self.__intCD = intCD
         self.__balance = self.__itemsCache.items.stats.getMoneyExt(self.__intCD)
         self.__creditsRate = self.__itemsCache.items.shop.exchangeRate
-        super(PostProgressionCfgComponentView, self)._onLoading(intCD, *args, **kwargs)
+        super(PostProgressionCfgComponentView, self)._onLoading(intCD, **kwargs)
 
     def _updateAll(self):
         super(PostProgressionCfgComponentView, self)._updateAll()
@@ -157,7 +164,7 @@ class PostProgressionCfgComponentView(PostProgressionBaseComponentView):
         action = vehicle.postProgression.getStep(stepID).action.getServerAction(factory, vehicle, modificationID)
         yield factory.asyncDoAction(action)
 
-    def _updateVehicle(self, *args, **kwargs):
+    def _updateVehicle(self, **kwargs):
         self._vehicle = self.__itemsCache.items.getItemByCD(self.__intCD)
         self._selectionProvider.mergePostProgression(self._vehicle.postProgression)
         self._notifyCustomState(needDiff=False)
@@ -270,7 +277,7 @@ class PostProgressionCfgComponentView(PostProgressionBaseComponentView):
     def __fillPriceModel(self, priceModel, price, checkResult):
         prices = priceModel.getPrice()
         prices.clear()
-        for currency, amount in price.iteritems():
+        for currency, amount in iteritems(price):
             itemPriceModel = PriceItemModel()
             itemPriceModel.setName(currency)
             itemPriceModel.setValue(amount)

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_inside_01</identifier>
+					<fx>shaders/std_effects/PBS_tank_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_inside_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_inside_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_fadeDir
+						<Vector4>0.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fadeFactor
+						<Float>-10.000000</Float>
+					</property>
+					<property>
+						g_wireframeBrightness
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						g_wireframeEdgeColor
+						<Vector4>0.709804 0.211765 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeFillBrightness
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_wireframeFillColor
+						<Vector4>1.000000 0.215686 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeWidth
+						<Float>0.300000</Float>
+					</property>
+					<property>
+						g_wireVertexOffset
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_inside_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_inside_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000004 2.810879 -1.970418</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_turret_01</identifier>
+					<fx>shaders/std_effects/PBS_tank_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>200</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_fadeDir
+						<Vector4>0.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fadeFactor
+						<Float>-10.000000</Float>
+					</property>
+					<property>
+						g_wireframeBrightness
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						g_wireframeEdgeColor
+						<Vector4>0.709804 0.211765 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeFillBrightness
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_wireframeFillColor
+						<Vector4>1.000000 0.215686 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeWidth
+						<Float>0.300000</Float>
+					</property>
+					<property>
+						g_wireVertexOffset
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Vehicles/A179_Black_Rock_h/A179_Black_Rock_h_primer_turret_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.000000 3.596897 -2.037400</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.987925 -0.087786 -2.767926</min>
+		<max>0.987926 4.753916 0.120396</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>128652</geometrySize>
+</root>

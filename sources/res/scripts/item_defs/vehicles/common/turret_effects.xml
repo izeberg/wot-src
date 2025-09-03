@@ -198,7 +198,7 @@
 			</sound>
 		</effects>
 	</turret_touchdown_large>
-	<turret_flaming_medium>
+	<turret_flaming_large>
 		<timeline>
 			<static>
 				0.015
@@ -220,7 +220,7 @@
 				<wwsound>turret_sparks</wwsound>
 			</sound>
 		</effects>
-	</turret_flaming_medium>
+	</turret_flaming_large>
 	<himmelball_empty>
 		<timeline>
 			<static>
@@ -255,6 +255,21 @@
 			</pixie>
 		</effects>
 	</turret_pull_ground>
+	<turret_pull_blacksand>
+		<timeline>
+			<fire>
+				0.0
+				<!--BW_String-->
+			</fire>
+			<end>36000</end>
+		</timeline>
+		<effects>
+			<pixie>
+				<startKey>fire</startKey>
+				<file>particles/Tank/movement/blacksand/trail_small_spd1.eff</file>
+			</pixie>
+		</effects>
+	</turret_pull_blacksand>
 	<turret_pull_oil>
 		<timeline>
 			<fire>

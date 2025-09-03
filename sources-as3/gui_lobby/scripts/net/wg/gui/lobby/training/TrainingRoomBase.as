@@ -3,6 +3,7 @@ package net.wg.gui.lobby.training
    import flash.display.InteractiveObject;
    import flash.events.Event;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import flash.ui.Keyboard;
@@ -26,6 +27,7 @@ package net.wg.gui.lobby.training
    import net.wg.infrastructure.base.meta.impl.TrainingRoomBaseMeta;
    import net.wg.infrastructure.events.DropEvent;
    import net.wg.infrastructure.events.VoiceChatEvent;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    import net.wg.infrastructure.managers.IVoiceChatManager;
    import net.wg.utils.IScheduler;
@@ -36,7 +38,7 @@ package net.wg.gui.lobby.training
    import scaleform.clik.events.InputEvent;
    import scaleform.clik.interfaces.IDataProvider;
    
-   public class TrainingRoomBase extends TrainingRoomBaseMeta implements ITrainingRoomBaseMeta
+   public class TrainingRoomBase extends TrainingRoomBaseMeta implements ITrainingRoomBaseMeta, IInnerView
    {
       
       private static const SUB_VIEW_MARGIN:int = 120;
@@ -120,6 +122,8 @@ package net.wg.gui.lobby.training
       
       private var _ownerBadgeY:int = -1;
       
+      private var _topOffset:uint = 0;
+      
       public function TrainingRoomBase()
       {
          this._voiceChatMgr = App.voiceChatMgr;
@@ -181,13 +185,12 @@ package net.wg.gui.lobby.training
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         this.setViewSize(param1,param2);
+         assertUpdateStageMethod();
       }
       
       override protected function configUI() : void
       {
          super.configUI();
-         this.updateStage(App.appWidth,App.appHeight);
          this.addListeners();
          this.description.autoScroll = false;
          this.comment.autoScroll = false;
@@ -236,7 +239,6 @@ package net.wg.gui.lobby.training
       override protected function onPopulate() : void
       {
          var _loc1_:Boolean = false;
-         var _loc2_:Boolean = false;
          super.onPopulate();
          if(canAssignToTeamS(1) || canAssignToTeamS(2) || canChangePlayerTeamS())
          {
@@ -249,7 +251,7 @@ package net.wg.gui.lobby.training
          registerFlashComponentS(this.minimap,Aliases.LOBBY_MINIMAP);
          this.setTeamsInfo();
          _loc1_ = this._voiceChatMgr.getYY();
-         _loc2_ = this._voiceChatMgr.isVOIPEnabledS();
+         var _loc2_:Boolean = this._voiceChatMgr.isVOIPEnabledS();
          this.arenaVoipSettings.visible = _loc2_ || _loc1_;
          this.arenaVOIPLabel.text = _loc2_ || _loc1_ ? MENU.TRAINING_INFO_VOICECHAT : Values.EMPTY_STR;
       }
@@ -296,7 +298,7 @@ package net.wg.gui.lobby.training
          if(isInvalid(InvalidationType.SIZE))
          {
             x = this._myWidth - _originalWidth >> 1;
-            y = -SUB_VIEW_MARGIN;
+            y = -SUB_VIEW_MARGIN + this._topOffset;
          }
          if(isInvalid(InvalidationType.STATE))
          {
@@ -449,6 +451,17 @@ package net.wg.gui.lobby.training
       public function as_updateTimeout(param1:String) : void
       {
          this.timeout.label = param1;
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this.setViewSize(param1,param2);
       }
       
       protected function getSwapBtns() : Vector.<UIComponent>

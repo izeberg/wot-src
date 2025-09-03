@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from comp7.gui.impl.gen.view_models.views.lobby.comp7_bonus_model import Comp7BonusModel
 
 class ProgressPointsModel(ViewModel):

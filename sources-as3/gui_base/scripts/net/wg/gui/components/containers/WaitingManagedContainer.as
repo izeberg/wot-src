@@ -40,6 +40,12 @@ package net.wg.gui.components.containers
          return param1;
       }
       
+      override public function allowFocusNextLayer(param1:String) : Boolean
+      {
+         var _loc2_:IWaitingView = getTopmostView(true) as IWaitingView;
+         return !_loc2_ || !_loc2_.isFocusable;
+      }
+      
       override protected function onDispose() : void
       {
          if(this._waiting)

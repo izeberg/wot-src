@@ -3,7 +3,7 @@ from collections import defaultdict
 from BWUtil import AsyncReturn
 from debug_utils import LOG_CURRENT_EXCEPTION
 from adisp import adisp_process, isAsync
-from wg_async import wg_async, wg_await, await_callback
+from wg_async import wg_async, wg_await, await_callback, isWgAsync
 _logger = logging.getLogger(__name__)
 
 class EVENT_BUS_SCOPE(object):
@@ -112,6 +112,8 @@ class EventBus(object):
             try:
                 if isAsync(restriction):
                     proceed = yield await_callback(self.__verifyAsyncProcess)(restriction, event)
+                elif isWgAsync(restriction):
+                    proceed = yield wg_await(restriction(event))
                 else:
                     proceed = restriction(event)
                 if not proceed:
@@ -138,7 +140,7 @@ class SharedEvent(object):
         self.eventType = eventType
 
     def __eq__(self, other):
-        return self.__dict__ == other.__dict__
+        return other is not None and self.__dict__ == other.__dict__
 
 
 SharedEventType = type(SharedEvent)

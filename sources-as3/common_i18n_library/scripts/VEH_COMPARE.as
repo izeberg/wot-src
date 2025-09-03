@@ -15,8 +15,6 @@ package
       
       public static const TECHTREE_TOOLTIPS_ADDTOCOMPARE:String = "#veh_compare:techTree/tooltips/addToCompare";
       
-      public static const VEHICLECOMPAREVIEW_TOOLTIPS_ATTENTIONEQUIPMENT:String = "#veh_compare:vehicleCompareView/tooltips/attentionEquipment";
-      
       public static const VEHCONF_TOOLTIPS_TOPMODULESON:String = "#veh_compare:vehConf/tooltips/topModulesOn";
       
       public static const VEHCONF_TOOLTIPS_TOPMODULESOFF:String = "#veh_compare:vehConf/tooltips/topModulesOff";
@@ -129,19 +127,7 @@ package
       
       public static const MENU_CLONEFORCOMPARE:String = "#veh_compare:menu/cloneForCompare";
       
-      public static const HEADER_BACKBTN_LABEL:String = "#veh_compare:header/backBtn/label";
-      
       public static const HEADER_CLOSEBTN_LABEL:String = "#veh_compare:header/closeBtn/label";
-      
-      public static const HEADER_BACKBTN_DESCRLABEL_RESEARCHTREE:String = "#veh_compare:header/backBtn/descrLabel/researchTree";
-      
-      public static const HEADER_BACKBTN_DESCRLABEL_SHOP:String = "#veh_compare:header/backBtn/descrLabel/shop";
-      
-      public static const HEADER_BACKBTN_DESCRLABEL_HANGAR:String = "#veh_compare:header/backBtn/descrLabel/hangar";
-      
-      public static const HEADER_BACKBTN_DESCRLABEL_PERSONALAWARDS:String = "#veh_compare:header/backBtn/descrLabel/personalAwards";
-      
-      public static const VEHICLECOMPAREVIEW_HEADER:String = "#veh_compare:vehicleCompareView/header";
       
       public static const VEHICLECOMPAREVIEW_BTNADDVEHICLES:String = "#veh_compare:vehicleCompareView/btnAddVehicles";
       
@@ -181,10 +167,6 @@ package
       
       public static const VEHICLECOMPAREVIEW_TOOLTIPS_REMOVEALLVEHICLES_BODY:String = "#veh_compare:vehicleCompareView/tooltips/removeAllVehicles/body";
       
-      public static const VEHICLECOMPAREVIEW_TOOLTIPS_ATTENTIONEQUIPMENT_HEADER:String = "#veh_compare:vehicleCompareView/tooltips/attentionEquipment/header";
-      
-      public static const VEHICLECOMPAREVIEW_TOOLTIPS_ATTENTIONEQUIPMENT_BODY:String = "#veh_compare:vehicleCompareView/tooltips/attentionEquipment/body";
-      
       public static const VEHICLECOMPAREVIEW_CONFIGURE:String = "#veh_compare:vehicleCompareView/configure";
       
       public static const VEHICLECOMPAREVIEW_TOOLTIPS_CONFIGURE_HEADER:String = "#veh_compare:vehicleCompareView/tooltips/configure/header";
@@ -206,6 +188,8 @@ package
       public static const VEHPREVIEW_COMPAREVEHICLEBTN_TOOLTIPS_CANNOTADDTOCOMPARE_BODY:String = "#veh_compare:vehPreview/compareVehicleBtn/tooltips/canNotAddToCompare/body";
       
       public static const COMPAREVEHICLEBTN_TOOLTIPS_MINICLIENT_ATTENTION:String = "#veh_compare:compareVehicleBtn/tooltips/miniclient/attention";
+      
+      public static const COMPAREVEHICLEBTN_TOOLTIPS_DISABLEDONSERVER_ATTENTION:String = "#veh_compare:compareVehicleBtn/tooltips/disabledOnServer/attention";
       
       public static const STORE_COMPAREVEHICLEBTN_TOOLTIPS_ADDTOCOMPARE_HEADER:String = "#veh_compare:store/compareVehicleBtn/tooltips/addToCompare/header";
       

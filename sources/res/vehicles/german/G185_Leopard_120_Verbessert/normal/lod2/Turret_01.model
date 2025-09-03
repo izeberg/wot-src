@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G185_Leopard_120_Verbessert/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G185_Leopard_120_Verbessert/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.358019 -0.029035 -2.361501</min>
+		<max>1.349980 2.644063 1.257492</max>
+	</visibilityBox>
+</root>

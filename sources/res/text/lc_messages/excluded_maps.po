@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=2; plural=(n != 1);"
 
 msgid "backButton/label"
 msgstr "BACK"
@@ -61,23 +65,50 @@ msgstr "Map types:"
 msgid "notSelected"
 msgstr "Not Selected"
 
+msgid "premium"
+msgstr "WoT Premium"
+
 msgid "slot/disabledTooltipBody"
 msgstr ""
 "An additional slot is available only with an active WoT Premium Account or "
 "WoT Plus subscription."
 
+msgid "slot/disabledTooltipBodyPremium"
+msgstr "Unlock it with a WoT Premium Account."
+
+msgid "slot/disabledTooltipBodyWotplus"
+msgstr "Unlock it with an active WoT Plus subscription."
+
 msgid "slot/replaceTooltipBody"
 msgstr ""
 "Select a map from the list below to replace it and exclude it from Random "
-"Battles of the Standard Battle type."
+"Battles."
 
 msgid "slot/selectTooltipBody"
-msgstr ""
-"Select a map from the list below to exclude it from Random Battles of the "
-"Standard Battle type."
+msgstr "Select a map from the list below to exclude it from Random Battles."
 
 msgid "slot/selectTooltipHeader"
 msgstr "Slot Available"
 
 msgid "totalMapsDisplayed"
 msgstr "Maps displayed: %(count)"
+
+msgid "unlock/both"
+msgid_plural "plural/unlock/both"
+msgstr[0] ""
+"Exclude 1 more map with %(linkPremium) and %(mapCount)s more with "
+"%(linkWotPlus)."
+msgstr[1] ""
+"Exclude 1 more map with %(linkPremium) and %(mapCount)s more with "
+"%(linkWotPlus)."
+
+msgid "unlock/premium"
+msgstr "Exclude 1 more map with %(linkPremium)."
+
+msgid "unlock/wotplus"
+msgid_plural "plural/unlock/wotplus"
+msgstr[0] "Exclude %(mapCount)s more map with %(linkWotPlus)."
+msgstr[1] "Exclude %(mapCount)s more maps with %(linkWotPlus)."
+
+msgid "wotplus"
+msgstr "WoT Plus"

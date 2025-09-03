@@ -1,5 +1,6 @@
 import logging
 from enum import Enum
+import typing
 from typing import TYPE_CHECKING
 import SoundGroups, WWISE
 from gui.impl import backport
@@ -67,15 +68,16 @@ def _playAmbientOff(eventName):
 
 def _playSounds(soundNames, eventName):
     for soundName in soundNames:
-        SoundGroups.g_instance.playSound2D(_getSound(soundName, eventName))
+        SoundGroups.g_instance.playSafeSound2D(_getSound(soundName, eventName))
 
 
 def _getSound(soundName, eventName):
     eventSoundName = ('_').join((soundName, eventName))
     soundRes = R.sounds.dyn(eventSoundName)
     if not soundRes.exists():
-        _logger.debug('Event sound: "%s" not found, try to use default: "%s"', eventSoundName, str(soundName))
+        _logger.debug('Event sound: "%s" not found, try to use default: "%s"', eventSoundName, soundName.value)
         soundRes = R.sounds.dyn(soundName)
         if not soundRes.exists():
-            _logger.error('Event sound: "%s" not found', str(soundName))
+            _logger.error('Event sound: "%s" not found', soundName.value)
+            return None
     return backport.sound(soundRes())

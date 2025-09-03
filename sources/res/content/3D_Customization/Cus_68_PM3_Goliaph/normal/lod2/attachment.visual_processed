@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_attachment</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>craft_A</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.140657 0.010324 -0.469177</row3>
+					</transform>
+					<node>
+						<identifier>HP_lightA</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>-0.034331 0.422016 0.086082</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>craft_A_antena</identifier>
+						<transform>
+							<row0>0.819153 0.573575 -0.000000</row0>
+							<row1>-0.000000 0.000000 1.000000</row1>
+							<row2>0.573575 -0.819153 0.000000</row2>
+							<row3>-0.062994 0.441743 0.086114</row3>
+						</transform>
+						<node>
+							<identifier>craft_A_antena_BlendBone</identifier>
+							<transform>
+								<row0>0.819153 -0.000000 0.573575</row0>
+								<row1>0.573575 0.000000 -0.819153</row1>
+								<row2>0.000000 -1.000000 -0.000000</row2>
+								<row3>-0.092472 0.383063 0.487121</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>craft_A_propel</identifier>
+						<transform>
+							<row0>0.573576 -0.819153 -0.000000</row0>
+							<row1>0.000000 0.000000 1.000000</row1>
+							<row2>-0.819153 -0.573576 0.000000</row2>
+							<row3>0.122066 0.171142 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>craft_A_propel_BlendBone</identifier>
+							<transform>
+								<row0>0.573576 0.000000 -0.819153</row0>
+								<row1>-0.819153 0.000000 -0.573576</row1>
+								<row2>0.000000 -1.000000 -0.000000</row2>
+								<row3>0.159312 0.469177 0.088855</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>craft_A_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.140657 -0.010324 0.469177</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>craft_B</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.140657 0.010324 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>HP_lightB</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.034331 0.422015 0.086082</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>craft_B_antena</identifier>
+						<transform>
+							<row0>0.819153 0.573575 -0.000000</row0>
+							<row1>-0.000000 0.000000 1.000000</row1>
+							<row2>0.573575 -0.819153 0.000000</row2>
+							<row3>-0.062994 0.441743 0.086114</row3>
+						</transform>
+						<node>
+							<identifier>craft_B_antena_BlendBone</identifier>
+							<transform>
+								<row0>0.819153 -0.000000 0.573575</row0>
+								<row1>0.573575 0.000000 -0.819153</row1>
+								<row2>0.000000 -1.000000 -0.000000</row2>
+								<row3>-0.092472 -0.086114 0.487121</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>craft_B_propel</identifier>
+						<transform>
+							<row0>0.573576 -0.819153 0.000000</row0>
+							<row1>0.000000 0.000000 1.000000</row1>
+							<row2>-0.819153 -0.573576 0.000000</row2>
+							<row3>0.121924 0.171572 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>craft_B_propel_BlendBone</identifier>
+							<transform>
+								<row0>0.573576 0.000000 -0.819153</row0>
+								<row1>-0.819153 0.000000 -0.573576</row1>
+								<row2>0.000000 -1.000000 -0.000000</row2>
+								<row3>0.159745 0.000000 0.088986</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>craft_B_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.140657 -0.010324 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>craft_C</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.131591 0.010466 0.470000</row3>
+					</transform>
+					<node>
+						<identifier>craft_C_panel</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>-0.181580 0.035038 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>craft_C_panel_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.313171 -0.045504 -0.470000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>craft_C_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.131591 -0.010466 -0.470000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>craft_B_BlendBone</node>
+		<node>craft_A_BlendBone</node>
+		<node>craft_B_antena_BlendBone</node>
+		<node>craft_B_propel_BlendBone</node>
+		<node>craft_A_antena_BlendBone</node>
+		<node>craft_A_propel_BlendBone</node>
+		<node>static_BlendBone</node>
+		<node>craft_C_panel_BlendBone</node>
+		<geometry>
+			<vertices>attachment_ShapeDeformed.vertices</vertices>
+			<primitive>attachment_ShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>equipment_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_PM3_Goliath_Hovercrafts_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_PM3_Goliath_Hovercrafts_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_PM3_Goliath_Hovercrafts_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_68_PM3_Goliaph/Cus_68_PM3_Goliath_Hovercrafts_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.173791 0.283273 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.463444 0.000000 -0.659305</min>
+		<max>0.115861 0.566546 0.659305</max>
+	</boundingBox>
+	<geometrySize>33890</geometrySize>
+</root>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_027_Tank_FR_AMX50B/normal/lod3/hv4_027_Tank_FR_AMX50B_01</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-1.722940 -0.000000 -7.755507</min>
+		<max>1.722929 3.311721 4.095268</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_027_Tank_FR_AMX50B/normal/lod2/hv4_027_Tank_FR_AMX50B_01</nodefullVisual>
+</root>

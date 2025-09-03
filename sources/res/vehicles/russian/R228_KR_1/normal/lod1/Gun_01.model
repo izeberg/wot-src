@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R228_KR_1/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.334306 -0.275399 -0.173817</min>
+		<max>0.443579 0.903022 6.262583</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R228_KR_1/normal/lod1/Gun_01</nodefullVisual>
+</root>

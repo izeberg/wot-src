@@ -175,5 +175,15 @@ package net.wg.gui.components.controls
       {
          this.textField.cacheAsBitmap = param1;
       }
+      
+      public function set textVisibility(param1:Boolean) : void
+      {
+         this.textField.visible = param1;
+      }
+      
+      public function set textFormat(param1:TextFormat) : void
+      {
+         this.textField.setTextFormat(param1);
+      }
    }
 }

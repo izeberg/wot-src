@@ -117,7 +117,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>21286</weight>
-		<maxHealth>384</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>150</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -1838,9 +1838,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>30000</maxLoad>
 			<terrainResistance>
-				1.2 1.6 2.3
+				1.1 1.4 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>45500</brakeForce>
@@ -1848,11 +1847,11 @@
 			<rotationSpeed>33</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.25
+					0.24
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.25
+					0.24
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3651,7 +3650,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>33000</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.1
 				<!--BW_String-->
@@ -5467,7 +5465,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>96</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5492,7 +5490,7 @@
 					<maxAmmo>70</maxAmmo>
 					<unlocks>
 						<gun>
-							_90mm_wz_39_90
+							_90mm_wz_39_90_40
 							<cost>5800</cost>
 						</gun>
 					</unlocks>
@@ -5636,7 +5634,7 @@
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
 				</_75mm_wz_36_38>
-				<_90mm_wz_39_90>
+				<_90mm_wz_39_90_40>
 					shared
 					<maxAmmo>55</maxAmmo>
 					<unlocks>
@@ -5784,7 +5782,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_90mm_wz_39_90>
+				</_90mm_wz_39_90_40>
 			</guns>
 			<models>
 				<undamaged>vehicles/poland/Pl33_SDP_Wz_40/normal/lod0/Turret_01.model</undamaged>
@@ -5849,15 +5847,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<N2_C>
-			shared
-			<unlocks>
-				<radio>
-					RKB_C
-					<cost>620</cost>
-				</radio>
-			</unlocks>
-		</N2_C>
 		<RKB_C>shared</RKB_C>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -5878,19 +5867,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1288
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

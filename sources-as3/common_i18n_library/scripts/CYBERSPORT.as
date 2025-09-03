@@ -171,8 +171,6 @@ package
       
       public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_CREWNOTFULL:String = "#cyberSport:window/unit/message/vehicleInNotReady/crewNotFull";
       
-      public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_TOOHEAVY:String = "#cyberSport:window/unit/message/vehicleInNotReady/tooHeavy";
-      
       public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_RENTISOVER:String = "#cyberSport:window/unit/message/vehicleInNotReady/rentIsOver";
       
       public static const WINDOW_UNIT_MESSAGE_VEHICLEINNOTREADY_ROTATIONGROUPLOCKED:String = "#cyberSport:window/unit/message/vehicleInNotReady/rotationGroupLocked";

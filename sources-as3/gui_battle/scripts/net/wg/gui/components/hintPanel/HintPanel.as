@@ -8,6 +8,7 @@ package net.wg.gui.components.hintPanel
    import flashx.textLayout.formats.TextAlign;
    import net.wg.data.constants.generated.BATTLE_SOUND;
    import net.wg.gui.battle.events.BattleSoundEvent;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.infrastructure.base.meta.IBattleHintPanelMeta;
    import net.wg.infrastructure.base.meta.impl.BattleHintPanelMeta;
    import scaleform.clik.motion.Tween;
@@ -48,8 +49,6 @@ package net.wg.gui.components.hintPanel
       private static const FADE_OUT_BG_Y:int = 148;
       
       private static const FADE_OUT_BG_ALPHA:int = 0;
-      
-      private static const KEY_EFFECT_OFFSET_X:int = 3;
        
       
       public var appearanceEffectAnim:MovieClip = null;
@@ -68,7 +67,7 @@ package net.wg.gui.components.hintPanel
       
       private var _fadeOutBgTween:Tween = null;
       
-      private var _keyValue:String = "";
+      private var _hotKey:IngameDetailsKeyVO = null;
       
       private var _messageLeft:String = "";
       
@@ -145,44 +144,45 @@ package net.wg.gui.components.hintPanel
          this.messageRightAnim.dispose();
          this.messageRightAnim = null;
          this.bg = null;
+         this._hotKey = null;
          super.onDispose();
       }
       
-      public function as_setData(param1:String, param2:String, param3:String, param4:String, param5:int, param6:int, param7:Boolean, param8:Boolean) : void
+      override protected function setData(param1:IngameDetailsKeyVO, param2:String, param3:String, param4:int, param5:int, param6:Boolean, param7:Boolean) : void
       {
-         if(param2 != this._keyValue)
+         if(this._hotKey == null || !this._hotKey.isEqual(param1))
          {
-            this._keyValue = param2;
-            this._keySelected = Boolean(param2);
+            this._hotKey = param1;
+            this._keySelected = Boolean(param1.keyName);
             if(this._keySelected)
             {
-               this.keyAnim.setKey(param1,param2);
-               this.keyEffectAnim.setKey(param1,param2);
+               this.keyAnim.setKey(param1);
+               this.keyEffectAnim.setKey(param1);
             }
          }
          if(this._keySelected)
          {
-            if(param3 != this._messageLeft)
+            if(param2 != this._messageLeft)
             {
-               this._messageLeft = param3;
-               this.messageLeftAnim.setText(param3);
+               this._messageLeft = param2;
+               this.messageLeftAnim.setText(param2);
                this.messageLeftAnim.setTextFieldWidth(this.messageLeftAnim.textFieldContainer.textField.textWidth + TEXTFIELD_PADDING);
             }
          }
-         if(param4 != this._messageRight)
+         if(param3 != this._messageRight)
          {
-            this._messageRight = param4;
-            this.messageRightAnim.setText(param4);
+            this._messageRight = param3;
+            this.messageRightAnim.setText(param3);
             this.messageRightAnim.setTextFieldWidth(this.messageRightAnim.textFieldContainer.textField.textWidth + TEXTFIELD_PADDING);
-            if(param8 != this._centeredMessage)
+            if(param7 != this._centeredMessage)
             {
-               this._centeredMessage = param8;
+               this._centeredMessage = param7;
                this.messageRightAnim.setTextFieldAlign(!!this._centeredMessage ? TextAlign.CENTER : TextAlign.LEFT);
             }
          }
-         this._offsetX = param5;
-         this._offsetY = param6;
-         this._reducedPanning = param7;
+         this._offsetX = param4;
+         this._offsetY = param5;
+         this._reducedPanning = param6;
          this.update();
       }
       
@@ -243,8 +243,8 @@ package net.wg.gui.components.hintPanel
                _loc3_ += BACKGROUND_INNER_PADDING;
             }
             this.keyAnim.x = _loc3_;
-            this.keyEffectAnim.x = _loc3_ - KEY_EFFECT_OFFSET_X;
-            this.messageRightAnim.x = _loc3_ + this.keyAnim.width;
+            this.keyEffectAnim.x = _loc3_;
+            this.messageRightAnim.x = _loc3_ + (this.keyAnim.width >> 1) + GAP;
          }
          else if(!this._reducedPanning)
          {

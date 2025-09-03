@@ -37,6 +37,7 @@ class _CarouselFilter(object):
         self._serverSections = ()
         self._clientSections = ()
         self._criteriesGroups = ()
+        self._disabledUpdateCriteries = False
 
     @property
     def criteria(self):
@@ -45,6 +46,9 @@ class _CarouselFilter(object):
             criteria |= group.criteria
 
         return criteria
+
+    def setDisabledUpdateCriteries(self, disabled):
+        self._disabledUpdateCriteries = disabled
 
     def apply(self, vehicle):
         for group in self._criteriesGroups:
@@ -92,6 +96,13 @@ class _CarouselFilter(object):
     def switch(self, key, save=True):
         self.update({key: not self._filters[key]}, save)
 
+    def clear(self, save=True):
+        for key in self.getFilters():
+            if self._filters.get(key) is True:
+                self.update({key: False}, save)
+
+        self.update({FILTER_KEYS.SEARCH_NAME_VEHICLE: ''}, save)
+
     def update(self, params, save=True):
         for key, value in params.iteritems():
             self._filters[key] = value
@@ -107,6 +118,8 @@ class _CarouselFilter(object):
         raise NotImplementedError
 
     def _updateCriteriesGroups(self):
+        if self._disabledUpdateCriteries:
+            return
         for group in self._criteriesGroups:
             group.update(self._filters)
 

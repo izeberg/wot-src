@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R228_KR_1/crash/lod2/Chassis</nodefullVisual>
+	<parent>vehicles/russian/R228_KR_1/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.656341 -0.000972 -4.141849</min>
+		<max>1.672375 1.140947 4.163631</max>
+	</visibilityBox>
+</root>

@@ -1,7 +1,6 @@
 from enum import Enum
-from frameworks.wulf import Array
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen import R
-from frameworks.wulf import ViewModel
 from server_side_replay.gui.impl.gen.view_models.views.lobby.filter_toggle_button_model import FilterToggleButtonModel
 
 class ToggleGroupType(Enum):

@@ -96,7 +96,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>24015</weight>
-		<maxHealth>1040</maxHealth>
+		<maxHealth>1240</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2281,9 +2281,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>46000</maxLoad>
 			<terrainResistance>
-				0.9 1.1 2.3
+				0.8 1 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>45000</brakeForce>
@@ -3826,7 +3825,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				0.8 1 2.1
 				<!--BW_String-->
@@ -5381,7 +5379,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>260</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -5434,12 +5432,12 @@
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.35
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5452,11 +5450,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>2</count>
+						<count>3</count>
 						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 10</reloadTime>
+						<reloadTime>8 10 12</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It14_P44_Pantera/normal/lod0/Gun_01.model</undamaged>
@@ -5594,16 +5592,16 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.2
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
-						0.35
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5616,11 +5614,11 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<clip>
-						<count>2</count>
+						<count>3</count>
 						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 10</reloadTime>
+						<reloadTime>8 10 11</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It14_P44_Pantera/normal/lod0/Gun_02.model</undamaged>
@@ -6685,7 +6683,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8000</weight>
-			<maxHealth>360</maxHealth>
+			<maxHealth>310</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -6755,7 +6753,7 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>3</count>
-						<rate>24</rate>
+						<rate>30</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>8 10 12</reloadTime>
@@ -6913,7 +6911,7 @@
 					</shotDispersionFactors>
 					<clip>
 						<count>3</count>
-						<rate>24</rate>
+						<rate>30</rate>
 					</clip>
 					<autoreload>
 						<reloadTime>8 10 11</reloadTime>
@@ -7986,15 +7984,6 @@
 		</Turret_2_It14_P44_Pantera>
 	</turrets0>
 	<engines>
-		<SPA_344>
-			shared
-			<unlocks>
-				<engine>
-					Alfa_RA1000I_C_A
-					<cost>17800</cost>
-				</engine>
-			</unlocks>
-		</SPA_344>
 		<Alfa_RA1000I_C_A>
 			shared
 			<unlocks>
@@ -8010,34 +7999,12 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<R_F_2_C_A>
-			shared
-			<unlocks>
-				<radio>
-					R_F_3_M_2
-					<cost>4080</cost>
-				</radio>
-			</unlocks>
-		</R_F_2_C_A>
-		<R_F_3_M_2>
-			shared
-			<unlocks>
-				<radio>
-					R_F_4_M
-					<cost>7300</cost>
-				</radio>
-			</unlocks>
-		</R_F_3_M_2>
 		<R_F_4_M>shared</R_F_4_M>
 	</radios>
 	<clientAdjustmentFactors/>
 	<physics>
 		<detailed>
 			<engines>
-				<SPA_344>
-					<smplEnginePower>700</smplEnginePower>
-					<smplFwMaxSpeed>60</smplFwMaxSpeed>
-				</SPA_344>
 				<Alfa_RA1000I_C_A>
 					<smplEnginePower>850</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
@@ -8053,19 +8020,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.16905
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

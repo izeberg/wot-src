@@ -31,7 +31,7 @@ package net.wg.gui.lobby.settings.feedback.damageIndicator
       
       private static const WITH_VALUE_CONTROL_ID:String = "damageIndicatorDamageValue";
       
-      private static const T57_58:String = "#usa_vehicles:T57_58_short";
+      private static const T57_58:String = "#usa_vehicles:A67_T57_58_short";
       
       private static const M103:String = "#usa_vehicles:M103";
       

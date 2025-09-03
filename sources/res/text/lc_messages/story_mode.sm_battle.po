@@ -143,6 +143,12 @@ msgstr "Alistair MacLeod"
 msgid "botNames/Murphy"
 msgstr "Capt. Jack Murphy"
 
+msgid "botNames/Teddy"
+msgstr "Capt. Miroslav Kotva"
+
+msgid "botNames/Ulysses"
+msgstr "Capt. James Korvin"
+
 msgid "bunker"
 msgstr "Coastal Bunker"
 
@@ -350,6 +356,9 @@ msgstr "Capturing: Minefield Map"
 msgid "lootCapturing/plan"
 msgstr "Capturing: Map Piece"
 
+msgid "lootCapturing/tank"
+msgstr "Capturing enemy vehicle"
+
 msgid "prebattle/mission/stage/1"
 msgstr "Operation 1"
 
@@ -361,6 +370,12 @@ msgstr "Rigorous Covert Op"
 
 msgid "prebattle/mission/stage/1004"
 msgstr "Rigorous Minefield"
+
+msgid "prebattle/mission/stage/1005"
+msgstr "Regular"
+
+msgid "prebattle/mission/stage/1006"
+msgstr "Rigorous"
 
 msgid "prebattle/mission/stage/2"
 msgstr "Operation 2"
@@ -396,6 +411,16 @@ msgid "prebattle/mission/task/1004"
 msgstr ""
 "{whiteSpanish_Start}Deliver the ceasefire order to your "
 "allies.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1005"
+msgstr ""
+"{whiteSpanish_Start}Reach the command center and stop the missile "
+"launch.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1006"
+msgstr ""
+"{whiteSpanish_Start}Reach the command center and stop the missile "
+"launch.{whiteSpanish_End}"
 
 msgid "prebattle/mission/task/2"
 msgstr ""
@@ -458,6 +483,22 @@ msgstr ""
 "\n"
 "Dubois: \"That too.\""
 
+msgid "prebattle/mission/text/1005"
+msgstr ""
+"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
+"\n"
+"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
+"\n"
+"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
+
+msgid "prebattle/mission/text/1006"
+msgstr ""
+"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
+"\n"
+"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
+"\n"
+"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
+
 msgid "prebattle/mission/text/2"
 msgstr ""
 "MacLeod: \"Ah, Tigers — those are the worst ye can face on the battlefield. And if the command says they have a problem, they probably mean Tigers. We cannot contact the first assault squad, the second's just departed, and here we are — sent to follow them.\n"
@@ -515,6 +556,12 @@ msgstr "Operation Postman"
 
 msgid "prebattle/mission/title/1004"
 msgstr "Operation Postman"
+
+msgid "prebattle/mission/title/1005"
+msgstr "Operation Boiling Point"
+
+msgid "prebattle/mission/title/1006"
+msgstr "Operation Boiling Point"
 
 msgid "prebattle/mission/title/2"
 msgstr "Trapper"
@@ -706,4 +753,70 @@ msgid "vday/respawn_over/header"
 msgstr "It's over"
 
 msgid "vday/respawn_over/subheader"
+msgstr "All available vehicles have been destroyed"
+
+msgid "zeppelin/hint01"
+msgstr "Charge your vehicle's gun and cause increased damage"
+
+msgid "zeppelin/hint02"
+msgstr "Damage a distant enemy by shooting with maximum gun accuracy"
+
+msgid "zeppelin/hint03"
+msgstr "Find out how to shoot with this vehicle's auxiliary armament"
+
+msgid "zeppelin/objective01/failure"
+msgstr "Mission failed!"
+
+msgid "zeppelin/objective01/header"
+msgstr "Advance!"
+
+msgid "zeppelin/objective01/subheader"
+msgstr "Reach the missile and prevent the launch"
+
+msgid "zeppelin/objective02/header"
+msgstr "Enemy maintenance facility found!"
+
+msgid "zeppelin/objective02/subheader"
+msgstr "Capture the abandoned vehicle"
+
+msgid "zeppelin/objective02/success"
+msgstr "Vehicle captured!"
+
+msgid "zeppelin/objective03/header"
+msgstr "New objective received!"
+
+msgid "zeppelin/objective03/subheader"
+msgstr "Capture the launch site and command center"
+
+msgid "zeppelin/objective03/success"
+msgstr "Launch site secured"
+
+msgid "zeppelin/objective04/header"
+msgstr "Hold your position"
+
+msgid "zeppelin/objective04/subheader"
+msgstr "Destroy %d enemy vehicles"
+
+msgid "zeppelin/objective04/success"
+msgstr "Enemy attack repelled"
+
+msgid "zeppelin/prebattle/header"
+msgstr "Get ready!"
+
+msgid "zeppelin/prebattle/start"
+msgstr "Proceed!"
+
+msgid "zeppelin/prebattle/subheader"
+msgstr "?empty?"
+
+msgid "zeppelin/respawn/header"
+msgstr "Stand by, Commander"
+
+msgid "zeppelin/respawn/subheader"
+msgstr "Reinforcement is arriving"
+
+msgid "zeppelin/respawn_over/header"
+msgstr "It's over"
+
+msgid "zeppelin/respawn_over/subheader"
 msgstr "All available vehicles have been destroyed"

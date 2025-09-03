@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>lod0</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>hull</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.525061 0.345763 -0.276737</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.554772 0.008391 1.196686</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.200500 0.979694</row1>
+					<row2>0.000000 -0.979694 -0.200500</row2>
+					<row3>-1.395965 -0.206487 2.961389</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.096970 -0.995287</row1>
+					<row2>-0.000000 -0.995287 -0.096970</row2>
+					<row3>-1.395965 -0.092245 -2.402133</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 -0.200500 0.979694</row1>
+					<row2>0.000000 -0.979694 -0.200500</row2>
+					<row3>1.395964 -0.206176 2.961389</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.096970 -0.995287</row1>
+					<row2>-0.000000 -0.995287 -0.096970</row2>
+					<row3>1.395964 -0.093072 -2.402132</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.575517 0.817639 0.015702</row0>
+					<row1>0.000000 0.019200 -0.999816</row1>
+					<row2>-0.817790 0.575411 0.011050</row2>
+					<row3>-1.560250 0.568862 1.271314</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000001 0.554997 2.470000</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>anim</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.935000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>hatch_rotate1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.978148 0.207912</row1>
+						<row2>0.000000 -0.207912 0.978148</row2>
+						<row3>0.922660 1.321842 -1.009317</row3>
+					</transform>
+					<node>
+						<identifier>hatch_rotate1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 0.978148 -0.207912</row1>
+							<row2>0.000000 -0.207912 -0.978148</row2>
+							<row3>-0.922660 -0.168540 1.067689</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>hatch_rotate2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.549368 1.644044 -1.017121</row3>
+					</transform>
+					<node>
+						<identifier>hatch_rotate</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 0.000000 1.000000</row1>
+							<row2>-0.000000 -1.000000 0.000000</row2>
+							<row3>0.186872 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>hatch_rotate3</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.000000 -1.000000</row1>
+								<row2>-0.000000 1.000000 0.000000</row2>
+								<row3>0.187745 0.085505 -0.006699</row3>
+							</transform>
+							<node>
+								<identifier>hatch_rotate3_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.923985 -0.715743 0.931616</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>hatch_rotate_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 0.000000 -1.000000</row1>
+								<row2>0.000000 -1.000000 0.000000</row2>
+								<row3>-0.736240 1.017121 0.709044</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>hatch_rotate2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.549368 -0.709044 1.017121</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>periscope_joint</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.735207 0.750000 -0.791563</row3>
+					</transform>
+					<node>
+						<identifier>periscope_joint_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.735207 0.185000 0.791563</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>hull</node>
+		<geometry>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/sweden/S36_Strv_107_12/Strv_107_12_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/sweden/S36_Strv_107_12/Strv_107_12_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/sweden/S36_Strv_107_12/Strv_107_12_proxy_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/sweden/S36_Strv_107_12/Strv_107_12_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.020460 1.021181 0.253296</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.858438 -0.504554 -3.255565</min>
+		<max>1.899359 2.546916 3.762156</max>
+	</boundingBox>
+	<geometrySize>19544</geometrySize>
+</root>

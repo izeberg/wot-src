@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<info>
+		<name>WithDelay</name>
+		<isMacro>true</isMacro>
+		<version>0</version>
+		<aspect>
+			<compatibles>CLIENT</compatibles>
+		</aspect>
+		<blocks>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_19</id>
+				<params>
+					<param>
+						in
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_6</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_4</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroOutput</class>
+				<id>MacroOutput_1</id>
+				<params>
+					<param>
+						out
+						<name>Output Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Output Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_21</id>
+				<params>
+					<param>
+						cancelDelay
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						EventT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>MacroInput</class>
+				<id>MacroInput_20</id>
+				<params>
+					<param>
+						delayTime
+						<name>Input Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						FloatT
+						<name>Input Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						Default
+						<name>Input Editor</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+		</blocks>
+		<connections>
+			<connection>
+				<from>MacroInput_19</from>
+				<input>input</input>
+				<to>Sequence_6</to>
+				<output>in</output>
+			</connection>
+			<connection>
+				<from>Sequence_6</from>
+				<input>windup</input>
+				<to>Timer_4</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>Sequence_6</from>
+				<input>cancel</input>
+				<to>Timer_4</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>MacroInput_21</from>
+				<input>cancel</input>
+				<to>Timer_4</to>
+				<output>cancelDelay</output>
+			</connection>
+			<connection>
+				<from>MacroInput_20</from>
+				<input>time0</input>
+				<to>Timer_4</to>
+				<output>delayTime</output>
+			</connection>
+			<connection>
+				<from>Timer_4</from>
+				<input>out</input>
+				<to>MacroOutput_1</to>
+				<output>event0</output>
+			</connection>
+		</connections>
+		<macros/>
+		<curves/>
+	</info>
+</root>

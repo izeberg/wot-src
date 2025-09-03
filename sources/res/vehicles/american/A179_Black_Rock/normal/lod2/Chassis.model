@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A179_Black_Rock/normal/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A179_Black_Rock/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.623453 -0.001028 -3.632640</min>
+		<max>1.630741 1.199269 3.545623</max>
+	</visibilityBox>
+</root>
