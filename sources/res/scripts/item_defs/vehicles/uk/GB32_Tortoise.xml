@@ -127,10 +127,22 @@
 				<!--BW_String-->
 				<vehicleDamageFactor>0</vehicleDamageFactor>
 			</armor_9>
+			<armor_10>
+				171.5
+				<!--BW_String-->
+			</armor_10>
+			<armor_11>
+				171.5
+				<!--BW_String-->
+			</armor_11>
 			<armor_12>
 				171.5
 				<!--BW_String-->
 			</armor_12>
+			<armor_13>
+				146.1
+				<!--BW_String-->
+			</armor_13>
 			<armor_14>
 				215.9
 				<!--BW_String-->
@@ -139,15 +151,28 @@
 				190.5
 				<!--BW_String-->
 			</armor_15>
-			<armor_16>254</armor_16>
 			<armor_17>
 				228.6
 				<!--BW_String-->
 			</armor_17>
+			<armor_18>
+				101.6
+				<!--BW_String-->
+			</armor_18>
+			<armor_19>
+				152.4
+				<!--BW_String-->
+			</armor_19>
+			<armor_20>127</armor_20>
+			<armor_21>127</armor_21>
+			<armor_22>
+				57.2
+				<!--BW_String-->
+			</armor_22>
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>52744</weight>
-		<maxHealth>1600</maxHealth>
+		<maxHealth>1480</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -3452,9 +3477,8 @@
 				<rightTrack>35</rightTrack>
 			</armor>
 			<weight>20000</weight>
-			<maxLoad>77000</maxLoad>
 			<terrainResistance>
-				1.4 1.7 2.9
+				1.3 1.5 2.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>70000</brakeForce>
@@ -5520,7 +5544,6 @@
 				<rightTrack>35</rightTrack>
 			</armor>
 			<weight>20000</weight>
-			<maxLoad>81000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.6
 				<!--BW_String-->
@@ -7590,15 +7613,12 @@
 				<armor_1>0</armor_1>
 			</armor>
 			<weight>200</weight>
-			<maxHealth>400</maxHealth>
+			<maxHealth>370</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>170</maxHealth>
+				<maxRegenHealth>85</maxRegenHealth>
+				<repairCost>9</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -7610,13 +7630,13 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_32-pounder_AT_Gun_OQF>
+				<OQF_32_pdr_AT_Gun_A39>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<gun>
-							_20pdr_AT_Gun_Type_B
-							<cost>45000</cost>
+							_120mm_AT_Gun_L1A1
+							<cost>60000</cost>
 						</gun>
 					</unlocks>
 					<armor>
@@ -7754,152 +7774,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_32-pounder_AT_Gun_OQF>
-				<_20pdr_AT_Gun_Type_B>
-					shared
-					<maxAmmo>70</maxAmmo>
-					<unlocks>
-						<gun>
-							_120mm_AT_Gun_L1A1
-							<cost>60000</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							152.4
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							101.6
-							<!--BW_String-->
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<gun>40</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.3
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						4.3
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.06
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.5
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.238
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<turretYawLimits>-20 20</turretYawLimits>
-					<models>
-						<undamaged>vehicles/british/GB32_Tortoise/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/british/GB32_Tortoise/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/british/GB32_Tortoise/crash/lod0/Gun_02.model</exploded>
-						<sets>
-							<GB32_Tortoise_NY25_3DSt>
-								<undamaged>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/normal/lod0/Gun_02.model</undamaged>
-								<destroyed>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/crash/lod0/Gun_02.model</destroyed>
-								<exploded>vehicles/british/GB32_Tortoise/_skins/GB32_Tortoise_NY25_3DSt/crash/lod0/Gun_02.model</exploded>
-							</GB32_Tortoise_NY25_3DSt>
-						</sets>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/british/GB32_Tortoise/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/british/GB32_Tortoise/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000003 0 2.09174
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.35 0.35
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000003 0 2.09174
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.000006 0 2.8492
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.000006 0 3.5162
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.083 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.667
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.295 0.295 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							131.01 132.982
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_20pdr_AT_Gun_Type_B>
+				</OQF_32_pdr_AT_Gun_A39>
 				<_120mm_AT_Gun_L1A1>
 					shared
 					<maxAmmo>50</maxAmmo>
@@ -8080,77 +7955,59 @@
 		</Turret_1_GB32_Tortoise>
 	</turrets0>
 	<engines>
-		<Rolls_Royse_Meteor_MkV>
+		<Rolls_Royce_Meteor_MkV>
 			shared
 			<unlocks>
 				<engine>
-					Rolls_Royse_Meteor_M120
+					Rolls_Royce_Meteor_M120_A39
 					<cost>27000</cost>
 				</engine>
 			</unlocks>
-		</Rolls_Royse_Meteor_MkV>
-		<Rolls_Royse_Meteor_M120>shared</Rolls_Royse_Meteor_M120>
+		</Rolls_Royce_Meteor_MkV>
+		<Rolls_Royce_Meteor_M120_A39>shared</Rolls_Royce_Meteor_M120_A39>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<N19Mk3>
-			shared
-			<unlocks>
-				<radio>
-					N22
-					<cost>4500</cost>
-				</radio>
-			</unlocks>
-		</N19Mk3>
-		<N22>
-			shared
-			<unlocks>
-				<radio>
-					C42
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</N22>
 		<C42>shared</C42>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Rolls_Royse_Meteor_MkV>
+				<Rolls_Royce_Meteor_MkV>
 					<smplEnginePower>
 						687.2327
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>20</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_MkV>
-				<Rolls_Royse_Meteor_M120>
+				</Rolls_Royce_Meteor_MkV>
+				<Rolls_Royce_Meteor_M120_A39>
 					<smplEnginePower>
 						856.3977
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>20</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_M120>
+				</Rolls_Royce_Meteor_M120_A39>
 			</engines>
 			<chassis>
 				<Chassis_GB32_Tortoise>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.23345
+								0.2093
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.13685
+								0.12075
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.1127
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

@@ -6,12 +6,14 @@ package net.wg.infrastructure.base
    import flash.events.Event;
    import flash.events.IOErrorEvent;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.net.URLRequest;
    import flash.system.ApplicationDomain;
    import flash.system.LoaderContext;
    import flash.ui.Keyboard;
    import net.wg.data.constants.LobbyMetrics;
    import net.wg.gui.interfaces.ISoundButtonEx;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.utils.BlurHelper;
    import scaleform.clik.constants.InputValue;
    import scaleform.clik.constants.InvalidationType;
@@ -40,6 +42,10 @@ package net.wg.infrastructure.base
       protected var bgHolder:Sprite = null;
       
       protected var bgIndex:int = 0;
+      
+      protected var _topOffset:uint = 0;
+      
+      protected var _bottomOffset:uint = 0;
       
       private var _bgLoader:Loader = null;
       
@@ -79,6 +85,7 @@ package net.wg.infrastructure.base
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
+         assertUpdateStageMethod(!(this is IInnerView));
          setViewSize(param1,param2);
       }
       
@@ -96,6 +103,7 @@ package net.wg.infrastructure.base
          super.configUI();
          if(this.closeBtn != null)
          {
+            this.closeBtn.visible = this.isCloseButtonVisible();
             this.closeBtn.addEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
          }
          if(App.gameInputMgr)
@@ -157,6 +165,11 @@ package net.wg.infrastructure.base
          }
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return this as IInnerView;
+      }
+      
       public function setBackground(param1:String) : void
       {
          var _loc2_:DisplayObject = null;
@@ -183,6 +196,13 @@ package net.wg.infrastructure.base
             this._bgLoader.contentLoaderInfo.addEventListener(IOErrorEvent.IO_ERROR,this.onBgLoaderIoErrorHandler);
             this._bgLoader.load(_loc3_,_loc4_);
          }
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this._bottomOffset = param3.height;
+         setViewSize(param1,param2);
       }
       
       protected function layoutElements() : void
@@ -250,6 +270,11 @@ package net.wg.infrastructure.base
          this.bgHolder.addChild(param1);
          this.layoutBackground();
          this.onBgReady();
+      }
+      
+      protected function isCloseButtonVisible() : Boolean
+      {
+         return true;
       }
       
       private function onBgReady() : void

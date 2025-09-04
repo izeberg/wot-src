@@ -8,7 +8,7 @@ _STRONGHOLD_EXTERNAL_COMPONENTS = (
 
 class StrongholdPage(ClassicPage):
 
-    def __init__(self, components=None, external=_STRONGHOLD_EXTERNAL_COMPONENTS, fullStatsAlias=BATTLE_VIEW_ALIASES.FULL_STATS):
+    def __init__(self, components=None, external=_STRONGHOLD_EXTERNAL_COMPONENTS, fullStatsAlias=BATTLE_VIEW_ALIASES.FULL_STATS, **kwargs):
         super(StrongholdPage, self).__init__(components=components, external=external, fullStatsAlias=fullStatsAlias)
         self.__soundControl = None
         return

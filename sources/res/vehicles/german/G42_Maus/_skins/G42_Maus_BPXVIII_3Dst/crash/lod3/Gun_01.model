@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G42_Maus/_skins/G42_Maus_BPXVIII_3Dst/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.615827 -0.631660 -0.025000</min>
+		<max>0.632755 1.096057 5.337874</max>
+	</visibilityBox>
+</root>

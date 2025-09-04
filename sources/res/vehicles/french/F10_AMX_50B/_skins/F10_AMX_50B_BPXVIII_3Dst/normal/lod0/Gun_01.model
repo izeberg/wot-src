@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.446473 -0.824738 -2.938434</min>
+		<max>1.449957 2.060245 7.399890</max>
+	</visibilityBox>
+	<parent>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod0/Gun_01</nodefullVisual>
+</root>

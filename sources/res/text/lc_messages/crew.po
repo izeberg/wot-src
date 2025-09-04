@@ -146,6 +146,81 @@ msgstr "重置全部乘员的特长"
 msgid "crewBanner/infoText"
 msgstr "免费为您账号中的全部乘员重置特长，或自动选择未训练的特长"
 
+msgid "crewInfoTooltip/accelerateTraining"
+msgstr "已开启加速乘员训练"
+
+msgid "crewInfoTooltip/efficiencyBonus/title"
+msgstr "效率加成: {{@ style (color $color)}}+{{value}}%{{/}}"
+
+msgid "crewInfoTooltip/lowEfficiency/title"
+msgstr "特长效率"
+
+msgid "crewInfoTooltip/penalty/description"
+msgstr "由于该乘员没有接受这辆坦克的相关训练，特长不可用。"
+
+msgid "crewInfoTooltip/penalty/specialization"
+msgstr "专精:"
+
+msgid "crewInfoTooltip/penalty/title"
+msgstr "特长不可用"
+
+msgid "crewInfoTooltip/perksBlock/bonus"
+msgstr "附加特长:"
+
+msgid "crewInfoTooltip/perksBlock/major"
+msgstr "主要专业特长:"
+
+msgid "crewInfoTooltip/specialization/nation/china"
+msgstr "(C系)"
+
+msgid "crewInfoTooltip/specialization/nation/czech"
+msgstr "(J系)"
+
+msgid "crewInfoTooltip/specialization/nation/france"
+msgstr "(F系)"
+
+msgid "crewInfoTooltip/specialization/nation/germany"
+msgstr "(D系)"
+
+msgid "crewInfoTooltip/specialization/nation/italy"
+msgstr "(I系)"
+
+msgid "crewInfoTooltip/specialization/nation/japan"
+msgstr "(R系)"
+
+msgid "crewInfoTooltip/specialization/nation/poland"
+msgstr "(B系)"
+
+msgid "crewInfoTooltip/specialization/nation/sweden"
+msgstr "(V系)"
+
+msgid "crewInfoTooltip/specialization/nation/uk"
+msgstr "(Y系)"
+
+msgid "crewInfoTooltip/specialization/nation/usa"
+msgstr "(M系)"
+
+msgid "crewInfoTooltip/specialization/nation/ussr"
+msgstr "(S系)"
+
+msgid "crewInfoTooltip/specialization/vehicleType/AT-SPG"
+msgstr "全部金币自行反坦克炮{{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/SPG"
+msgstr "全部金币自行火炮{{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/heavyTank"
+msgstr "全部金币重型坦克{{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/lightTank"
+msgstr "全部金币轻型坦克{{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/mediumTank"
+msgstr "全部金币中型坦克{{nation}}"
+
+msgid "dogPawTooltip/details/body"
+msgstr "详情"
+
 msgid "filter/group/details/title"
 msgstr "详情"
 

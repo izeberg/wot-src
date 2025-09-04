@@ -43,8 +43,17 @@ msgstr "37mm L/20炮"
 msgid "Cannone_da_37_40"
 msgstr "37mm L/40炮"
 
+msgid "Cannone_da_37_40_3000"
+msgstr "37mm L/40炮 (3000)"
+
+msgid "Cannone_da_37_40_M14"
+msgstr "37mm L/40炮 (M14)"
+
 msgid "Cannone_da_47_32"
 msgstr "47mm L/32炮"
+
+msgid "Cannone_da_47_32_M14"
+msgstr "47mm L/32炮 (M14)"
 
 msgid "Cannone_da_47_40"
 msgstr "47mm L/40炮"
@@ -64,8 +73,14 @@ msgstr "75mm L/56炮"
 msgid "Cannone_da_75_50_Skoda"
 msgstr "斯柯达75mm L/50炮"
 
+msgid "Cannone_da_75_50_Skoda_P43"
+msgstr "75mm 斯柯达 L/50炮 (P43)"
+
 msgid "Cannone_da_90_42"
 msgstr "90mm L/42炮"
+
+msgid "Cannone_da_90_42_ter"
+msgstr "90mm L/42炮 (ter)"
 
 msgid "Cannone_da_90_50_T119E1"
 msgstr "90mm L/50 T119E1炮"
@@ -75,6 +90,9 @@ msgstr "90/50 T119E1炮 (M)"
 
 msgid "Cannone_da_90_53"
 msgstr "90mm L/53炮"
+
+msgid "Cannone_da_90_53_ter"
+msgstr "90mm L/53炮 (ter)"
 
 msgid "Cannone_da_90_74"
 msgstr "90mm L/74炮"
@@ -151,10 +169,10 @@ msgstr "P.44 \"黑豹\" v.s."
 msgid "Chassis_It15_Rinoceronte"
 msgstr "\"犀牛\""
 
-msgid "Chassis_It16_Carrodassalto_P88"
+msgid "Chassis_It16_Carro_d_assalto_P88"
 msgstr "P.88(42型)"
 
-msgid "Chassis_It16_Carrodassalto_P88_2"
+msgid "Chassis_It16_Carro_d_assalto_P88_2"
 msgstr "P.88(43型)"
 
 msgid "Chassis_It17_Progetto_CC55_mod_54"
@@ -426,13 +444,13 @@ msgstr ""
 msgid "It15_Rinoceronte_short"
 msgstr "\"犀牛\""
 
-msgid "It16_It16_Carrodassalto_P88"
+msgid "It16_Carro_d_assalto_P88"
 msgstr "P.88 突击型"
 
-msgid "It16_It16_Carrodassalto_P88_descr"
+msgid "It16_Carro_d_assalto_P88_descr"
 msgstr "P.88 突击型是I系在1942年研发的一个重型突击坦克项目。由于更先进坦克的出现，这个项目在蓝图阶段就被终止了。"
 
-msgid "It16_It16_Carrodassalto_P88_short"
+msgid "It16_Carro_d_assalto_P88_short"
 msgstr "P.88 突击型"
 
 msgid "It17_Progetto_CC55_mod_54"
@@ -562,7 +580,7 @@ msgstr ""
 " M41 75/18都在沙漠地带战斗中损失，幸存的坦克则在1943年秋被D系军方俘获。"
 
 msgid "It28_Semovente_M41_Da_75_18_short"
-msgstr "塞莫文特"
+msgstr "SMV M41"
 
 msgid "It29_Carro_Celere_Sahariano"
 msgstr "M16/43 \"撒哈拉\""
@@ -717,11 +735,11 @@ msgstr "MB 838 CaM 500"
 msgid "Maybach_HL_120"
 msgstr "迈巴赫 HL 120"
 
-msgid "Maybach_HL_120_S"
-msgstr "迈巴赫 HL 120 S."
-
 msgid "Maybach_HL_120_evoluzione"
 msgstr "迈巴赫 HL 120改进型"
+
+msgid "Maybach_HL_120_evoluzione_P26"
+msgstr "迈巴赫 HL 120改进型 (P26)"
 
 msgid "Mitragliera_Breda_cal_20_mod_35"
 msgstr "20mm布雷达35型机炮"
@@ -794,6 +812,18 @@ msgstr "SPA 15T"
 
 msgid "SPA_15TB"
 msgstr "SPA 15TB"
+
+msgid "SPA_15TB_M15_S"
+msgstr "SPA 15TB M15 (S)"
+
+msgid "SPA_15TB_M41_S"
+msgstr "SPA 15TB M41 (S)"
+
+msgid "SPA_15TB_M42_S"
+msgstr "SPA 15TB M42 (S)"
+
+msgid "SPA_15T_M41_S"
+msgstr "SPA 15T M41 (S)"
 
 msgid "SPA_18VT_v2"
 msgstr "SPA 18VT v2"
@@ -873,7 +903,7 @@ msgstr "P.44“黑豹” I型"
 msgid "Turret_1_It15_Rinoceronte"
 msgstr "\"犀牛\""
 
-msgid "Turret_1_It16_Carrodassalto_P88"
+msgid "Turret_1_It16_Carro_d_assalto_P88"
 msgstr "P.88 I型"
 
 msgid "Turret_1_It17_Progetto_CC55_mod_54"
@@ -951,7 +981,7 @@ msgstr "B标准原型(R1)"
 msgid "Turret_2_It14_P44_Pantera"
 msgstr "P.44“黑豹” II型"
 
-msgid "Turret_2_It16_Carrodassalto_P88"
+msgid "Turret_2_It16_Carro_d_assalto_P88"
 msgstr "P.88 II型"
 
 msgid "Turret_2_It17_Progetto_CC55_mod_54"
@@ -971,6 +1001,9 @@ msgstr "CC-67B B型"
 
 msgid "V_2_34_modificato"
 msgstr "V-2-34改进型"
+
+msgid "V_2_34_modificato_ter"
+msgstr "V-2-34改进型 (ter)"
 
 msgid "_102mm_Cannone_da_102_40"
 msgstr "102mm L/40炮"
@@ -1056,6 +1089,9 @@ msgstr "c.g.105/51 HEAT M456"
 msgid "_105mm_c_g_105_51_HESH_M353"
 msgstr "c.g.105/51 HESH M353"
 
+msgid "_105mm_c_g_105_51_HE_M113_56"
+msgstr "c.g. 105/51 HE M113 (56)"
+
 msgid "_105mm_c_g_105_55_HEAT_M456"
 msgstr "c.g.105/55 HEAT M352"
 
@@ -1067,6 +1103,12 @@ msgstr "c.g.105/57 HEAT M456"
 
 msgid "_105mm_c_g_105_57_HESH_M353"
 msgstr "c.g.105/57 HESH M353"
+
+msgid "_105mm_c_g_105_71_M393_55"
+msgstr "c.g. 105/71 M393 (55)"
+
+msgid "_105mm_c_g_105_73_M393_67"
+msgstr "c.g. 105/73 M393 (67)"
 
 msgid "_105mm_c_g_105_HESH_Rh_V1"
 msgstr "c.g.105 HESH Rh V1"
@@ -1094,6 +1136,18 @@ msgstr "c.p. 105/58"
 
 msgid "_105mm_c_p_105_58_APCR"
 msgstr "c.p. 105/58 APCR"
+
+msgid "_105mm_c_p_105_71_M181_55"
+msgstr "c.p. 105/71 M181 (55)"
+
+msgid "_105mm_c_p_105_71_M279_55"
+msgstr "c.p. 105/71 M279 (55)"
+
+msgid "_105mm_c_p_105_73_M181_67"
+msgstr "c.p. 105/73 M181 (67)"
+
+msgid "_105mm_c_p_105_73_M279_67"
+msgstr "c.p. 105/73 M279 (67)"
 
 msgid "_105mm_c_p_105_APDS_Rh_V1"
 msgstr "c.p.105 APDS Rh V1"
@@ -1124,6 +1178,30 @@ msgstr "c.g. 120/62 HE M356"
 
 msgid "_120mm_a_e_T15HE"
 msgstr "a.e. 120/67 T15HE"
+
+msgid "_120mm_c_c_120_59_M469_67"
+msgstr "c.c. 120/59 M469 (67)"
+
+msgid "_120mm_c_c_120_60_M469_CC1"
+msgstr "c.c. 120/60 M469 (CC1)"
+
+msgid "_120mm_c_g_120_59_M356_67"
+msgstr "c.g. 120/59 M356 (67)"
+
+msgid "_120mm_c_g_120_60_M356_CC1"
+msgstr "c.g. 120/60 M356 (CC1)"
+
+msgid "_120mm_c_g_120_62_M356_50"
+msgstr "c.g. 120/62 M356 (50)"
+
+msgid "_120mm_c_p_120_59_M365_67"
+msgstr "c.p. 120/59 M365 (67)"
+
+msgid "_120mm_c_p_120_60_M365_CC1"
+msgstr "c.p. 120/60 M365 (CC1)"
+
+msgid "_120mm_c_p_120_62_M365_50"
+msgstr "c.p. 120/62 M365 (50)"
 
 msgid "_120mm_c_p_APCBC_T14E"
 msgstr "c.p. 120/67 APCBC T14E"
@@ -1158,8 +1236,14 @@ msgstr "奥托·梅莱拉 127mm炮"
 msgid "_127mm_a_e_127_51"
 msgstr "a.e. 127/51 Mk.115"
 
+msgid "_127mm_a_e_127_58_Mark_116_CC1"
+msgstr "a.e. 127/58 Mk.116 (CC1)"
+
 msgid "_127mm_c_c_127_51"
 msgstr "c.c. 127/51 Mk.410"
+
+msgid "_127mm_c_c_127_58_Mk_411_CC1"
+msgstr "c.c. 127/58 Mk.411 (CC1)"
 
 msgid "_127mm_c_p_127_51"
 msgstr "c.p. 127/51 Mk.315"
@@ -1188,14 +1272,32 @@ msgstr "c.p.20 35型"
 msgid "_37mm_c_g_p_37_40"
 msgstr "c.g.p.37/40"
 
+msgid "_37mm_c_g_p_37_40_3000"
+msgstr "c.g.p. 37/40 (3000)"
+
+msgid "_37mm_c_g_p_37_40_M14"
+msgstr "c.g.p. 37/40 (M14)"
+
 msgid "_37mm_c_g_scoppiante"
 msgstr "c.g.HE"
 
 msgid "_37mm_c_mitraglia_37_40"
 msgstr "c.mitraglia 37/40"
 
+msgid "_37mm_c_mitraglia_37_40_3000"
+msgstr "c.mitraglia 37/40 (3000)"
+
+msgid "_37mm_c_mitraglia_37_40_M14"
+msgstr "c.mitraglia 37/40 (M14)"
+
 msgid "_37mm_c_p_37_40"
 msgstr "c.p.37/40"
+
+msgid "_37mm_c_p_37_40_3000"
+msgstr "c.p. 37/40 (3000)"
+
+msgid "_37mm_c_p_37_40_M14"
+msgstr "c.p. 37/40 (M14)"
 
 msgid "_37mm_c_p_AZ_BT"
 msgstr "c.p.AZ-BT"
@@ -1215,14 +1317,29 @@ msgstr "c.g.47/32 EPS"
 msgid "_47mm_c_g_47_32_EPS_1"
 msgstr "c.g.47/32 EPS-1"
 
+msgid "_47mm_c_g_47_32_EPS_M14"
+msgstr "c.g. 47/32 EPS (M14)"
+
 msgid "_47mm_c_g_47_32_mod_35"
 msgstr "c.g.47/32 M35"
+
+msgid "_47mm_c_g_47_32_mod_35_M14"
+msgstr "c.g. 47/32 M35 (M14)"
+
+msgid "_47mm_c_g_47_40_EPS"
+msgstr "c.g. 47/40 EPS"
 
 msgid "_47mm_c_p_47_32_mod_39"
 msgstr "c.p.47/32 M39"
 
+msgid "_47mm_c_p_47_32_mod_39_M14"
+msgstr "c.p. 47/32 M39 (M14)"
+
 msgid "_47mm_c_p_47_32_mod_40"
 msgstr "c.p.47/32 M40"
+
+msgid "_47mm_c_p_47_40_mod_39"
+msgstr "c.p. 47/40 M39"
 
 msgid "_75mm_Cannone_da_75_18"
 msgstr "75mm L/18炮"
@@ -1233,17 +1350,50 @@ msgstr "75mm L/27炮"
 msgid "_75mm_c_g_75_27_EP_mod_32"
 msgstr "c.g.75/27 EP M32"
 
+msgid "_75mm_c_g_75_27_EP_mod_32_M41_18"
+msgstr "c.g. 75/27 EP M32 (M41/18)"
+
 msgid "_75mm_c_g_75_27_EP_mod_42"
 msgstr "c.g.75/27 EP M42"
+
+msgid "_75mm_c_g_75_27_EP_mod_42_M41_34"
+msgstr "c.g. 75/27 EP M42 (M41/34)"
+
+msgid "_75mm_c_g_75_32_EPS_mod_42"
+msgstr "c.g. 75/32 EPS M42"
+
+msgid "_75mm_c_g_75_34_EPS_mod_42"
+msgstr "c.g. 75/34 EPS M42"
+
+msgid "_75mm_c_g_75_34_EP_mod_42"
+msgstr "c.g. 75/34 EP M42"
 
 msgid "_75mm_c_g_75_50_mod_37_Skoda"
 msgstr "c.g.75/50 M37型 (斯柯达)"
 
+msgid "_75mm_c_g_75_50_mod_37_Skoda_P43"
+msgstr "c.g. 75/50 M37型 斯柯达 (P43)"
+
 msgid "_75mm_c_g_75_EPS_mod_42"
 msgstr "c.g. 75 EPS M42"
 
+msgid "_75mm_c_g_75_EPS_mod_42_M41_18"
+msgstr "c.g. 75 EPS M42 (M41/18)"
+
+msgid "_75mm_c_g_75_EPS_mod_42_M41_34"
+msgstr "c.g. 75 EPS M42 (M41/34)"
+
 msgid "_75mm_c_p_75_32"
 msgstr "c.p. 75/32"
+
+msgid "_75mm_c_p_75_32_M41_18"
+msgstr "c.p. 75/32 (M41/18)"
+
+msgid "_75mm_c_p_75_32_M41_34"
+msgstr "c.p. 75/32 (M41/34)"
+
+msgid "_75mm_c_p_75_34"
+msgstr "c.p. 75/34"
 
 msgid "_75mm_c_p_75_46"
 msgstr "c.p. 75/46"
@@ -1251,8 +1401,14 @@ msgstr "c.p. 75/46"
 msgid "_75mm_c_p_75_50"
 msgstr "c.p. 75/50"
 
+msgid "_75mm_c_p_75_50_P43"
+msgstr "c.p. 75/50 (P43)"
+
 msgid "_75mm_c_p_75_50_Skoda"
 msgstr "c.p. 75/50 (斯柯达)"
+
+msgid "_75mm_c_p_75_50_Skoda_P43"
+msgstr "c.p. 75/50 斯柯达 (P43)"
 
 msgid "_88mm_Cannone_da_88_47"
 msgstr "88mm L/47炮"
@@ -1284,8 +1440,20 @@ msgstr "c.g.90/50HE-T COMP B T91"
 msgid "_90mm_c_g_90_HE_Rh"
 msgstr "c.g. 90 HE Rh"
 
+msgid "_90mm_c_p_90_42_mod_09_bis"
+msgstr "c.p. 90/42 M09 (bis)"
+
+msgid "_90mm_c_p_90_42_mod_09_ter"
+msgstr "c.p. 90/42 M09 (ter)"
+
 msgid "_90mm_c_p_90_42_mod_43"
 msgstr "c.p. 90/42 M43"
+
+msgid "_90mm_c_p_90_42_mod_43_bis"
+msgstr "c.p. 90/42 M43 (bis)"
+
+msgid "_90mm_c_p_90_42_mod_43_ter"
+msgstr "c.p. 90/42 M43 (ter)"
 
 msgid "_90mm_c_p_90_50_AP_T_T33E4"
 msgstr "c.p.90/50AP-T T33E4"
@@ -1296,8 +1464,59 @@ msgstr "c.p.90/50HVAP-T M332 (T67)"
 msgid "_90mm_c_p_90_53_mod_09"
 msgstr "c.p. 90/53 09"
 
+msgid "_90mm_c_p_90_53_mod_09_M43"
+msgstr "c.p. 90/53 M09 (M43)"
+
+msgid "_90mm_c_p_90_53_mod_09_P44"
+msgstr "c.p. 90/53 M09 (P44)"
+
+msgid "_90mm_c_p_90_53_mod_09_ter"
+msgstr "c.p. 90/53 M09 (ter)"
+
+msgid "_90mm_c_p_90_53_mod_43_M43"
+msgstr "c.p. 90/53 M43 (M43)"
+
+msgid "_90mm_c_p_90_53_mod_43_P44"
+msgstr "c.p. 90/53 M43 (P44)"
+
+msgid "_90mm_c_p_90_53_mod_43_ter"
+msgstr "c.p. 90/53 M43 (ter)"
+
+msgid "_90mm_c_p_90_60_mod_09_56"
+msgstr "c.p. 90/60 M09 (56)"
+
+msgid "_90mm_c_p_90_60_mod_43_56"
+msgstr "c.p. 90/60 M43 (56)"
+
+msgid "_90mm_c_p_90_74_mod_09_P44"
+msgstr "c.p. 90/74 (P44)"
+
+msgid "_90mm_c_p_90_74_mod_43_P44"
+msgstr "c.p. 90/74 (P44)"
+
 msgid "_90mm_c_p_90_APDS_Rh"
 msgstr "c.p. 90 APDS Rh"
 
 msgid "_90mm_c_p_90_AP_Rh"
 msgstr "c.p. 90 AP Rh"
+
+msgid "_90mm_c_p_g_90_42_bis"
+msgstr "c.p.g. 90/42 (bis)"
+
+msgid "_90mm_c_p_g_90_42_ter"
+msgstr "c.p.g. 90/42 (ter)"
+
+msgid "_90mm_c_p_g_90_53_M43"
+msgstr "c.p.g. 90/53 (M43)"
+
+msgid "_90mm_c_p_g_90_53_P44"
+msgstr "c.p.g. 90/53 (P44)"
+
+msgid "_90mm_c_p_g_90_53_ter"
+msgstr "c.p.g. 90/53 (ter)"
+
+msgid "_90mm_c_p_g_90_60_56"
+msgstr "c.p.g. 90/60 (56)"
+
+msgid "_90mm_c_p_g_90_74_P44"
+msgstr "c.p.g. 90/74 (P44)"

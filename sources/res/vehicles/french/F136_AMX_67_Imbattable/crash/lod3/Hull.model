@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F136_AMX_67_Imbattable/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/french/F136_AMX_67_Imbattable/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.832930 -1.012682 -3.959272</min>
+		<max>1.920239 0.567250 3.776830</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

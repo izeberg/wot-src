@@ -65,6 +65,8 @@ package net.wg.data.constants.generated
       
       public static const STUN_ICON:String = "secondaryStunIconUI";
       
+      public static const TARGET_DESIGNATOR_ICON:String = "secondaryTargetDesignatorIconUI";
+      
       public static const BLOCKED_ICON:String = "secondaryBlockedIconUI";
       
       public static const SMOKE_ICON:String = "secondarySmokeIconUI";

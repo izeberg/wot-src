@@ -124,6 +124,11 @@
 					<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Hull.model</destroyed>
 					<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Hull.model</exploded>
 				</F10_AMX_50B_3Dst_BV>
+				<F10_AMX_50B_BPXVIII_3Dst>
+					<undamaged>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Hull.model</exploded>
+				</F10_AMX_50B_BPXVIII_3Dst>
 			</sets>
 		</models>
 		<swinging>
@@ -166,6 +171,19 @@
 					<!--BW_String-->
 				</rayEnd>
 				<rayUp>0 0 -1</rayUp>
+				<size>
+					0.24
+					<!--BW_String-->
+				</size>
+				<hideIfDamaged>true</hideIfDamaged>
+			</slot>
+			<slot>
+				<slotType>clan</slotType>
+				<slotId>10001</slotId>
+				<rayStart>-0.368975 0.255792 3.255302</rayStart>
+				<rayEnd>-0.544354 -0.268199 3.021473</rayEnd>
+				<rayUp>-0.003764 0.408559 -0.912724</rayUp>
+				<compatibleModels>F10_AMX_50B_BPXVIII_3Dst</compatibleModels>
 				<size>
 					0.24
 					<!--BW_String-->
@@ -1496,6 +1514,30 @@
 				<anchorShift>0.568166</anchorShift>
 			</slot>
 			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15060</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>F10_AMX_50B_BPXVIII_3Dst</compatibleModels>
+				<position>
+					1.30067 1.4515 2.20693
+					<!--BW_String-->
+				</position>
+				<rotation>
+					-0 0 3.13908
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.579802 0.125 0.579813
+					<!--BW_String-->
+				</scale>
+				<showOn>16</showOn>
+				<clipAngle>
+					1.55283
+					<!--BW_String-->
+				</clipAngle>
+				<anchorShift>0.026584</anchorShift>
+			</slot>
+			<slot>
 				<slotType>sequence</slotType>
 				<slotId>18000</slotId>
 				<position>0 0 0</position>
@@ -1547,6 +1589,14 @@
 				<applyType>universal</applyType>
 				<size>medium</size>
 			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18004</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+				<scale>1 1 1</scale>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1567,8 +1617,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_AMX_50_68t>
-			<userString>#france_vehicles:Chassis_AMX_50_68t</userString>
+		<Chassis_F10_AMX_50B>
+			<userString>#france_vehicles:Chassis_F10_AMX_50B</userString>
 			<tags/>
 			<level>10</level>
 			<notInShop>true</notInShop>
@@ -1578,21 +1628,20 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>68000</maxLoad>
 			<terrainResistance>
 				1.3 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>39500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>36</rotationSpeed>
+			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.18
+					0.17
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.18
+					0.17
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -1621,6 +1670,11 @@
 						<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Chassis.model</destroyed>
 						<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Chassis.model</exploded>
 					</F10_AMX_50B_3Dst_BV>
+					<F10_AMX_50B_BPXVIII_3Dst>
+						<undamaged>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Chassis.model</exploded>
+					</F10_AMX_50B_BPXVIII_3Dst>
 				</sets>
 			</models>
 			<traces>
@@ -1780,6 +1834,45 @@
 									<row1>-0.000000 0.766626 0.004060</row1>
 									<row2>0.000000 -0.037523 7.085430</row2>
 									<row3>-1.863457 1.127191 -0.201061</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>F10_AMX_50B_BPXVIII_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.890703 0.000000 0.000000</row0>
+									<row1>0.000000 1.236449 0.000000</row1>
+									<row2>0.000000 0.000000 7.539000</row2>
+									<row3>0.000000 1.010000 -0.301000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.670000 -0.000001 -0.000001</row0>
+									<row1>0.000000 0.662702 -0.019875</row1>
+									<row2>0.000003 0.214849 7.163778</row2>
+									<row3>-0.000000 1.575000 -0.424507</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.526000 -0.000001 0.000001</row0>
+									<row1>0.000000 0.351854 -0.189376</row1>
+									<row2>0.000000 0.435781 0.809666</row2>
+									<row3>-0.000001 1.240778 -3.792843</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.533000 -0.000000 0.000002</row0>
+									<row1>-0.000000 0.360177 0.173025</row1>
+									<row2>-0.000000 -0.283370 0.589877</row2>
+									<row3>-0.000001 1.481011 3.267429</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>-0.000000 0.947882 -0.014928</row1>
+									<row2>-0.000001 0.118843 7.546064</row2>
+									<row3>-1.863457 1.095000 -0.317000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.526000 -0.000001 0.000001</row0>
+									<row1>0.000000 0.351854 -0.189376</row1>
+									<row2>0.000000 0.435781 0.809666</row2>
+									<row3>-0.000001 1.271182 -3.410561</row3>
 								</boxCollider>
 							</hullCollider>
 							<hullCollider>
@@ -1952,6 +2045,45 @@
 									<row1>-0.000000 0.766626 0.004060</row1>
 									<row2>0.000000 -0.037523 7.085430</row2>
 									<row3>1.863000 1.127191 -0.201061</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>F10_AMX_50B_BPXVIII_3Dst</modelsSet>
+								<boxCollider>
+									<row0>1.890700 0.000000 0.000000</row0>
+									<row1>0.000000 1.236450 0.000000</row1>
+									<row2>0.000000 0.000000 7.539000</row2>
+									<row3>0.000000 1.010000 -0.301000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.670000 -0.000001 -0.000001</row0>
+									<row1>0.000000 0.662702 -0.019875</row1>
+									<row2>0.000003 0.214849 7.163780</row2>
+									<row3>-0.000000 1.575000 -0.424507</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.526000 -0.000001 0.000001</row0>
+									<row1>0.000000 0.351854 -0.189376</row1>
+									<row2>0.000000 0.435781 0.809666</row2>
+									<row3>-0.000001 1.240780 -3.792840</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.533000 -0.000000 0.000002</row0>
+									<row1>-0.000000 0.360177 0.173025</row1>
+									<row2>-0.000000 -0.283370 0.589877</row2>
+									<row3>-0.000001 1.481010 3.267430</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 0.000000</row0>
+									<row1>-0.000000 0.947882 -0.014928</row1>
+									<row2>-0.000001 0.118843 7.546060</row2>
+									<row3>1.863000 1.095000 -0.317000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.526000 -0.000001 0.000001</row0>
+									<row1>0.000000 0.351854 -0.189376</row1>
+									<row2>0.000000 0.435781 0.809666</row2>
+									<row3>-0.000001 1.271180 -3.410560</row3>
 								</boxCollider>
 							</hullCollider>
 							<hullCollider>
@@ -2458,7 +2590,6 @@
 						<length>0.158824</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -2932,7 +3063,6 @@
 						<length>0.158824</length>
 					</mainSegment>
 					<collisionHull>
-						<bottom/>
 						<top>
 							<part>
 								<xStart>
@@ -3407,12 +3537,12 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_AMX_50_68t>
+		</Chassis_F10_AMX_50B>
 	</chassis>
 	<turrets0>
-		<Turret_1_AMX_50_68t>
-			<userString>#france_vehicles:Turret_1_AMX_50_68t</userString>
-			<tags/>
+		<Turret_1_F10_AMX_50B>
+			<userString>#france_vehicles:Turret_1_F10_AMX_50B</userString>
+			<tags>oscillating</tags>
 			<level>10</level>
 			<notInShop>true</notInShop>
 			<price>66000</price>
@@ -3449,15 +3579,21 @@
 					shared
 					<pitchLimits>
 						<minPitch>
-							0 -11 0.222222 -11 0.285884 -12 0.714116 -12 0.777778 -11 1 -11
+							0.00000 -12.00 1.00000 -12.00
 							<!--BW_String-->
 						</minPitch>
 						<maxPitch>
-							0 10 0.424908 10 0.449255 7 0.495491 7 0.507835 6 0.55235 6 0.561146 6 0.583559 10 1 10
+							0.00000 10.00 0.42222 10.00 0.45000 7.00 0.55000 7.00 0.57778 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<maxAmmo>56</maxAmmo>
+					<unlocks>
+						<vehicle>
+							F136_AMX_67_Imbattable
+							<cost>325000</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>100</armor_1>
 						<armor_2>80</armor_2>
@@ -3524,6 +3660,11 @@
 								<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Gun_01.model</destroyed>
 								<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Gun_01.model</exploded>
 							</F10_AMX_50B_3Dst_BV>
+							<F10_AMX_50B_BPXVIII_3Dst>
+								<undamaged>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Gun_01.model</exploded>
+							</F10_AMX_50B_BPXVIII_3Dst>
 						</sets>
 					</models>
 					<hitTester>
@@ -4328,6 +4469,42 @@
 							<anchorShift>0.026421</anchorShift>
 						</slot>
 						<slot>
+							<slotType>projectionDecal</slotType>
+							<slotId>45037</slotId>
+							<tags>formfactor_square</tags>
+							<compatibleModels>F10_AMX_50B_BPXVIII_3Dst</compatibleModels>
+							<position>
+								0.023194 2.83542 -0.160371
+								<!--BW_String-->
+							</position>
+							<rotation>
+								0.005118 0.001196 3.13944
+								<!--BW_String-->
+							</rotation>
+							<scale>0.481315 0.281009 0.481319</scale>
+							<showOn>4096</showOn>
+							<clipAngle>0.580434</clipAngle>
+							<anchorShift>0.171705</anchorShift>
+						</slot>
+						<slot>
+							<slotType>projectionDecal</slotType>
+							<slotId>45038</slotId>
+							<tags>formfactor_square</tags>
+							<compatibleModels>F10_AMX_50B_BPXVIII_3Dst</compatibleModels>
+							<position>
+								-0.560132 2.92957 -1.50684
+								<!--BW_String-->
+							</position>
+							<rotation>
+								-3.1348 -0.000083 -0.000076
+								<!--BW_String-->
+							</rotation>
+							<scale>0.661487 0.141446 0.661251</scale>
+							<showOn>4096</showOn>
+							<clipAngle>0.921991</clipAngle>
+							<anchorShift>0.026421</anchorShift>
+						</slot>
+						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48000</slotId>
 							<position>
@@ -4407,6 +4584,11 @@
 						<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Turret_01.model</destroyed>
 						<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_3Dst_BV/crash/lod0/Turret_01.model</exploded>
 					</F10_AMX_50B_3Dst_BV>
+					<F10_AMX_50B_BPXVIII_3Dst>
+						<undamaged>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/crash/lod0/Turret_01.model</exploded>
+					</F10_AMX_50B_BPXVIII_3Dst>
 				</sets>
 			</models>
 			<hitTester>
@@ -4854,6 +5036,45 @@
 					<clipAngle>0.937244</clipAngle>
 					<anchorShift>0.102542</anchorShift>
 				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35018</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>F10_AMX_50B_BPXVIII_3Dst</compatibleModels>
+					<position>
+						-1.36174 1.99114 0.208433
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.4409 -1.50749 3.10742
+						<!--BW_String-->
+					</rotation>
+					<scale>0.515861 0.557379 0.515869</scale>
+					<showOn>256</showOn>
+					<clipAngle>0.937244</clipAngle>
+					<anchorShift>0.060875</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35019</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>F10_AMX_50B_BPXVIII_3Dst</compatibleModels>
+					<position>
+						1.22096 1.99806 0.80808
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.45754 1.20483 -2.86946
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.515861 0.557379 0.51587
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+					<clipAngle>0.937244</clipAngle>
+					<anchorShift>0.060875</anchorShift>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -4872,10 +5093,10 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</Turret_1_AMX_50_68t>
+		</Turret_1_F10_AMX_50B>
 	</turrets0>
 	<engines>
-		<Maybach_HL_295_F>shared</Maybach_HL_295_F>
+		<Maybach_HL_295_F_50_B>shared</Maybach_HL_295_F_50_B>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
@@ -4886,16 +5107,13 @@
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_295_F>
-					<smplEnginePower>
-						1268.737
-						<!--BW_String-->
-					</smplEnginePower>
+				<Maybach_HL_295_F_50_B>
+					<smplEnginePower>1300</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
-				</Maybach_HL_295_F>
+				</Maybach_HL_295_F_50_B>
 			</engines>
 			<chassis>
-				<Chassis_AMX_50_68t>
+				<Chassis_F10_AMX_50B>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -4916,7 +5134,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_AMX_50_68t>
+				</Chassis_F10_AMX_50B>
 			</chassis>
 		</detailed>
 	</physics>

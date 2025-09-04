@@ -23,7 +23,9 @@ VEH_INTERACTION_DETAILS = (
  ('damageReceived', 'H', 65535, 0),
  ('rickochetsReceived', 'H', 65535, 0),
  ('noDamageDirectHitsReceived', 'H', 65535, 0),
- ('targetKills', 'B', 255, 0))
+ ('targetKills', 'B', 255, 0),
+ ('directHitsReceived', 'H', 65535, 0),
+ ('damageRamming', 'I', 4294967295, 0))
 VEH_INTERACTION_DETAILS_NAMES = [ x[0] for x in VEH_INTERACTION_DETAILS ]
 VEH_INTERACTION_DETAILS_MAX_VALUES = dict((x[0], x[2]) for x in VEH_INTERACTION_DETAILS)
 VEH_INTERACTION_DETAILS_INIT_VALUES = [ x[3] for x in VEH_INTERACTION_DETAILS ]
@@ -115,7 +117,7 @@ class VehicleInteractionDetails(object):
         for i in xrange(0, len(flatIDs), 2):
             uniqueVehIDs.append((flatIDs[i], flatIDs[(i + 1)]))
 
-        values = struct.unpack('<' + VEH_INTERACTION_DETAILS_LAYOUT * count, packed[packedVehIDsLen:])
+        values = list(struct.unpack('<' + VEH_INTERACTION_DETAILS_LAYOUT * count, packed[packedVehIDsLen:]))
         return VehicleInteractionDetails(uniqueVehIDs, values)
 
     def __getitem__(self, uniqueVehID):

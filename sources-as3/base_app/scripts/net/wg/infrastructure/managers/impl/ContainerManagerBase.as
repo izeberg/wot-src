@@ -5,6 +5,7 @@ package net.wg.infrastructure.managers.impl
    import flash.events.Event;
    import flash.events.FocusEvent;
    import flash.events.MouseEvent;
+   import flash.geom.Point;
    import flash.utils.Dictionary;
    import net.wg.app.iml.base.AbstractApplication;
    import net.wg.data.constants.Errors;
@@ -300,6 +301,7 @@ package net.wg.infrastructure.managers.impl
       {
          var _loc6_:IView = null;
          var _loc7_:LoadViewVO = null;
+         var _loc8_:IManagedContainer = null;
          var _loc4_:Boolean = false;
          var _loc5_:ViewInfo = this._nameToView[param1];
          if(_loc5_ && _loc5_.view)
@@ -317,9 +319,13 @@ package net.wg.infrastructure.managers.impl
             _loc5_.addView();
             _loc7_ = _loc6_.as_config;
             this.callLogEvent(_loc6_,EVENT_LOG_CONSTANTS.EVENT_TYPE_VIEW_LOADED,_loc7_.configVO.layer);
-            this.updateFocus();
+            _loc8_ = _loc5_.container;
+            if(_loc8_ && _loc8_.visible && _loc8_.manageFocus)
+            {
+               _loc8_.setFocusedView(_loc5_.view);
+            }
             _loc4_ = true;
-            dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_ADDED,_loc5_.view,_loc5_.container.layer));
+            dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_ADDED,_loc5_.view,_loc8_.layer));
             if(LAYER_ORDER[_loc7_.configVO.layer] == LAYER_NAMES.WAITING)
             {
                dispatchEvent(new LoaderEvent(LoaderEvent.WAITING_LOADED,_loc7_.configVO,param1,_loc6_));
@@ -341,12 +347,40 @@ package net.wg.infrastructure.managers.impl
          _loc2_.removeEventListener(ManagedContainerEvent.CONTENT_REMOVED,this.onContainerContentRemovedHandler);
       }
       
+      public function canFocusLayer(param1:uint) : Boolean
+      {
+         var _loc4_:IManagedContainer = null;
+         var _loc5_:String = null;
+         var _loc2_:String = LAYER_ORDER[param1];
+         var _loc3_:Array = this.getContainersFocusOrder();
+         for each(_loc5_ in _loc3_)
+         {
+            _loc4_ = this.getInteractiveContainer(LAYER_ORDER.indexOf(_loc5_));
+            if(!(!_loc4_ || !_loc4_.visible || !_loc4_.manageFocus))
+            {
+               if(_loc5_ == _loc2_)
+               {
+                  return true;
+               }
+               if(!_loc4_.allowFocusNextLayer(_loc2_))
+               {
+                  return false;
+               }
+            }
+         }
+         return false;
+      }
+      
       public function focusWrapper(param1:IViewWrapper = null, param2:uint = 0) : void
       {
          App.utils.asserter.assertNotNull(param1,Errors.CANT_NULL);
          var _loc3_:IManagedContainer = this.getContainer(param2) as IManagedContainer;
          if(_loc3_ && _loc3_.manageFocus)
          {
+            if(param1.parent == null)
+            {
+               return;
+            }
             _loc3_.setFocusedView(param1.getContainerWrapper());
          }
       }
@@ -427,20 +461,12 @@ package net.wg.infrastructure.managers.impl
          this.removeItemFromContainer(param2,param1.getContainerWrapper());
       }
       
-      public function setWindowPosition(param1:IViewWrapper, param2:Number, param3:Number) : void
+      public function setIndexInContainer(param1:uint, param2:IViewWrapper, param3:uint) : void
       {
-         App.utils.asserter.assertNotNull(param1,Errors.CANT_NULL);
-         var _loc4_:IBaseContainerWrapper = param1.getContainerWrapper();
-         _loc4_.x = param2;
-         _loc4_.y = param3;
-      }
-      
-      public function setWindowScale(param1:IViewWrapper, param2:Number, param3:Number) : void
-      {
-         App.utils.asserter.assertNotNull(param1,Errors.CANT_NULL);
-         var _loc4_:IBaseContainerWrapper = param1.getContainerWrapper();
-         _loc4_.scaleX = param2;
-         _loc4_.scaleY = param3;
+         App.utils.asserter.assertNotNull(param2,Errors.CANT_NULL);
+         var _loc4_:IBaseContainerWrapper = param2.getContainerWrapper();
+         var _loc5_:DisplayObjectContainer = DisplayObjectContainer(this.getContainer(param1));
+         _loc5_.setChildIndex(DisplayObject(_loc4_),param3);
       }
       
       public function setWindowAlpha(param1:IViewWrapper, param2:Number) : void
@@ -450,12 +476,25 @@ package net.wg.infrastructure.managers.impl
          _loc3_.alpha = param2;
       }
       
-      public function setIndexInContainer(param1:uint, param2:IViewWrapper, param3:uint) : void
+      public function setWindowPosition(param1:uint, param2:IViewWrapper, param3:Number, param4:Number) : void
       {
          App.utils.asserter.assertNotNull(param2,Errors.CANT_NULL);
-         var _loc4_:IBaseContainerWrapper = param2.getContainerWrapper();
-         var _loc5_:DisplayObjectContainer = DisplayObjectContainer(this.getContainer(param1));
-         _loc5_.setChildIndex(DisplayObject(_loc4_),param3);
+         var _loc5_:IBaseContainerWrapper = param2.getContainerWrapper();
+         var _loc6_:ISimpleManagedContainer = this.getContainer(param1);
+         param3 *= App.appScale;
+         param4 *= App.appScale;
+         var _loc7_:Point = new Point(param3,param4);
+         _loc7_ = _loc6_.globalToLocal(_loc7_);
+         _loc5_.x = _loc7_.x;
+         _loc5_.y = _loc7_.y;
+      }
+      
+      public function setWindowScale(param1:IViewWrapper, param2:Number, param3:Number) : void
+      {
+         App.utils.asserter.assertNotNull(param1,Errors.CANT_NULL);
+         var _loc4_:IBaseContainerWrapper = param1.getContainerWrapper();
+         _loc4_.scaleX = param2;
+         _loc4_.scaleY = param3;
       }
       
       public function updateFocus(param1:Object = null) : void
@@ -496,11 +535,13 @@ package net.wg.infrastructure.managers.impl
       public function updateStage(param1:Number, param2:Number) : void
       {
          var _loc3_:ISimpleManagedContainer = null;
+         var _loc4_:IManagedContainer = null;
          for each(_loc3_ in this._containersMap)
          {
             if(_loc3_ && _loc3_.manageSize)
             {
-               IManagedContainer(_loc3_).updateStage(param1,param2);
+               _loc4_ = IManagedContainer(_loc3_);
+               _loc4_.updateStage(param1,param2,_loc4_.paddings);
             }
          }
       }
@@ -522,10 +563,6 @@ package net.wg.infrastructure.managers.impl
             return false;
          }
          var wrapper:DisplayObject = DisplayObject(item);
-         var container:DisplayObjectContainer = DisplayObjectContainer(this.getContainer(layer));
-         container.addChild(wrapper);
-         wrapper.visible = false;
-         dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_ADDED,item.sourceView,layer));
          if(this._scheduler)
          {
             this._addWrapperInNextFrameDict[wrapper] = function(param1:DisplayObject, param2:int):void
@@ -563,19 +600,15 @@ package net.wg.infrastructure.managers.impl
          }
       }
       
-      private function onContainerContentRemovedHandler(param1:ManagedContainerEvent) : void
-      {
-         var _loc2_:IBaseContainerWrapper = param1.content as IBaseContainerWrapper;
-         if(_loc2_)
-         {
-            dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_REMOVED,param1.content.sourceView,param1.layer));
-            _loc2_.dispose();
-         }
-      }
-      
       private function addWrapperInNextFrame(param1:DisplayObject, param2:int) : void
       {
-         this.getContainer(param2).addChild(param1);
+         var _loc3_:ISimpleManagedContainer = this.getContainer(param2);
+         _loc3_.addChild(param1);
+         dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_ADDED,IView(param1),param2));
+         if(_loc3_ && _loc3_.manageFocus && param1.visible)
+         {
+            IManagedContainer(_loc3_).setFocusedView(IView(param1));
+         }
       }
       
       private function callLogEvent(param1:IView, param2:String, param3:Number) : void
@@ -683,6 +716,16 @@ package net.wg.infrastructure.managers.impl
       public function get cursorContainer() : ISimpleManagedContainer
       {
          return this._cursorContainer;
+      }
+      
+      private function onContainerContentRemovedHandler(param1:ManagedContainerEvent) : void
+      {
+         var _loc2_:IBaseContainerWrapper = param1.content as IBaseContainerWrapper;
+         if(_loc2_)
+         {
+            dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_REMOVED,param1.content.sourceView,param1.layer));
+            _loc2_.dispose();
+         }
       }
       
       private function onStageInitedHandler(param1:Event) : void
@@ -819,7 +862,6 @@ package net.wg.infrastructure.managers.impl
          dispatchEvent(new ContainerManagerEvent(ContainerManagerEvent.VIEW_REMOVED,_loc4_.view,_loc4_.container.layer));
          _loc4_.dispose();
          _loc4_ = null;
-         this.updateFocus();
       }
    }
 }

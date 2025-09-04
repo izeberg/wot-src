@@ -1,6 +1,5 @@
 package net.wg.gui.lobby.vehicleCompare
 {
-   import flash.display.DisplayObject;
    import net.wg.data.constants.generated.VEHICLE_COMPARE_CONSTANTS;
    import net.wg.gui.components.advanced.ViewStack;
    import net.wg.gui.events.ViewStackEvent;
@@ -8,23 +7,18 @@ package net.wg.gui.lobby.vehicleCompare
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.base.meta.IVehicleCompareConfiguratorMainMeta;
    import net.wg.infrastructure.base.meta.impl.VehicleCompareConfiguratorMainMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    
-   public class VehicleCompareConfiguratorMain extends VehicleCompareConfiguratorMainMeta implements IVehicleCompareConfiguratorMainMeta
+   public class VehicleCompareConfiguratorMain extends VehicleCompareConfiguratorMainMeta implements IVehicleCompareConfiguratorMainMeta, IInnerView
    {
       
       private static const INV_BACKGROUND_SIZE:String = "InvBackgroundSize";
-      
-      private static const TOP_OFFSET:int = 53;
        
       
       public var viewStack:ViewStack = null;
       
       private var _currentAlias:String = null;
-      
-      private var _backgroundOriginWidth:int;
-      
-      private var _backgroundOriginHeight:int;
       
       public function VehicleCompareConfiguratorMain()
       {
@@ -37,25 +31,13 @@ package net.wg.gui.lobby.vehicleCompare
          setBackground(RES_ICONS.MAPS_ICONS_LOBBY_SETTINGS_BLURED_BG);
       }
       
-      override protected function updateBgHolder(param1:DisplayObject) : void
-      {
-         this._backgroundOriginWidth = param1.width;
-         this._backgroundOriginHeight = param1.height;
-         super.updateBgHolder(param1);
-      }
-      
-      override protected function layoutBackground() : void
-      {
-         bgHolder.scaleX = bgHolder.scaleY = Math.max(App.appWidth / this._backgroundOriginWidth,(App.appHeight - TOP_OFFSET) / this._backgroundOriginHeight);
-         bgHolder.x = App.appWidth - bgHolder.width >> 1;
-      }
-      
       override protected function draw() : void
       {
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
-            UIComponentEx(this.viewStack.currentView).setSize(width,height);
+            this.viewStack.y = _topOffset;
+            UIComponentEx(this.viewStack.currentView).setSize(width,height - _topOffset - _bottomOffset);
             invalidate(INV_BACKGROUND_SIZE);
          }
       }

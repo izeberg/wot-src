@@ -233,15 +233,11 @@ package
       
       public static const CLIENTINSTALLERROR_WRONG_ITEM_TYPE:String = "#system_messages:clientInstallError_wrong_item_type";
       
-      public static const CLIENTINSTALLERROR_TOO_HEAVY:String = "#system_messages:clientInstallError_too_heavy";
-      
       public static const CLIENTREMOVEERROR_WRONG_NATION:String = "#system_messages:clientRemoveError_wrong_nation";
       
       public static const CLIENTREMOVEERROR_NOT_IN_LIST:String = "#system_messages:clientRemoveError_not_in_list";
       
       public static const CLIENTREMOVEERROR_WRONG_ITEM_TYPE:String = "#system_messages:clientRemoveError_wrong_item_type";
-      
-      public static const CLIENTREMOVEERROR_TOO_HEAVY:String = "#system_messages:clientRemoveError_too_heavy";
       
       public static const SERVERINSTALLERROR:String = "#system_messages:serverInstallError";
       
@@ -1143,10 +1139,6 @@ package
       
       public static const MODULE_BUY_ERROR_WRONG_ITEM_TYPE:String = "#system_messages:module_buy/error_wrong_item_type";
       
-      public static const MODULE_BUY_ERROR_TOO_HEAVY:String = "#system_messages:module_buy/error_too_heavy";
-      
-      public static const MODULE_BUY_ERROR_TOO_HEAVY_CHASSIS:String = "#system_messages:module_buy/error_too_heavy_chassis";
-      
       public static const MODULE_BUY_ERROR_NEED_TURRET:String = "#system_messages:module_buy/error_need_turret";
       
       public static const MODULE_BUY_ERROR_NEED_GUN:String = "#system_messages:module_buy/error_need_gun";
@@ -1172,8 +1164,6 @@ package
       public static const ARTEFACT_BUY_SERVER_ERROR:String = "#system_messages:artefact_buy/server_error";
       
       public static const ARTEFACT_BUY_SERVER_ERROR_CENTERDOWN:String = "#system_messages:artefact_buy/server_error_centerDown";
-      
-      public static const ARTEFACT_BUY_ERROR_TOO_HEAVY:String = "#system_messages:artefact_buy/error_too_heavy";
       
       public static const ARTEFACT_BUY_VEHICLE_NEED_REPAIR:String = "#system_messages:artefact_buy/vehicle_need_repair";
       
@@ -1210,8 +1200,6 @@ package
       public static const BATTLEBOOSTER_BUY_SERVER_ERROR:String = "#system_messages:battleBooster_buy/server_error";
       
       public static const BATTLEBOOSTER_BUY_SERVER_ERROR_CENTERDOWN:String = "#system_messages:battleBooster_buy/server_error_centerDown";
-      
-      public static const BATTLEBOOSTER_BUY_ERROR_TOO_HEAVY:String = "#system_messages:battleBooster_buy/error_too_heavy";
       
       public static const BATTLEBOOSTER_BUY_VEHICLE_NEED_REPAIR:String = "#system_messages:battleBooster_buy/vehicle_need_repair";
       
@@ -1275,10 +1263,6 @@ package
       
       public static const MODULE_APPLY_ERROR_WRONG_ITEM_TYPE:String = "#system_messages:module_apply/error_wrong_item_type";
       
-      public static const MODULE_APPLY_ERROR_TOO_HEAVY:String = "#system_messages:module_apply/error_too_heavy";
-      
-      public static const MODULE_APPLY_ERROR_TOO_HEAVY_CHASSIS:String = "#system_messages:module_apply/error_too_heavy_chassis";
-      
       public static const MODULE_APPLY_ERROR_NEED_TURRET:String = "#system_messages:module_apply/error_need_turret";
       
       public static const MODULE_APPLY_ERROR_NEED_GUN:String = "#system_messages:module_apply/error_need_gun";
@@ -1330,10 +1314,6 @@ package
       public static const ARTEFACT_DESTROY_VEHICLE_NEED_REPAIR:String = "#system_messages:artefact_destroy/vehicle_need_repair";
       
       public static const ARTEFACT_APPLY_ERROR_NOT_FOR_THIS_VEHICLE_TYPE:String = "#system_messages:artefact_apply/error_not_for_this_vehicle_type";
-      
-      public static const ARTEFACT_APPLY_ERROR_TOO_HEAVY:String = "#system_messages:artefact_apply/error_too_heavy";
-      
-      public static const ARTEFACT_REMOVE_ERROR_TOO_HEAVY:String = "#system_messages:artefact_remove/error_too_heavy";
       
       public static const ARTEFACT_UPGRADE_SUCCESS:String = "#system_messages:artefact_upgrade/success";
       
@@ -1387,15 +1367,11 @@ package
       
       public static const OPTIONALDEVICES_APPLY_ERROR:String = "#system_messages:optionalDevices_apply/error";
       
-      public static const OPTIONALDEVICES_APPLY_ERROR_TOO_HEAVY:String = "#system_messages:optionalDevices_apply/error_too_heavy";
-      
       public static const OPTIONALDEVICES_APPLY_NOT_ENOUGH_MONEY:String = "#system_messages:optionalDevices_apply/not_enough_money";
       
       public static const OPTIONALDEVICES_APPLY_WALLET_NOT_AVAILABLE:String = "#system_messages:optionalDevices_apply/wallet_not_available";
       
       public static const OPTIONALDEVICES_REMOVE_ERROR:String = "#system_messages:optionalDevices_remove/error";
-      
-      public static const OPTIONALDEVICES_REMOVE_ERROR_TOO_HEAVY:String = "#system_messages:optionalDevices_remove/error_too_heavy";
       
       public static const SHELLS_APPLY_SUCCESS_MONEY_SPENT:String = "#system_messages:shells_apply/success_money_spent";
       
@@ -1669,6 +1645,8 @@ package
       
       public static const PERSONALMISSIONS_SELECT_SERVER_ERROR:String = "#system_messages:personalMissions/select/server_error";
       
+      public static const PERSONALMISSIONS_SELECT_SERVER_ERROR_INVALID_QUEST_ID:String = "#system_messages:personalMissions/select/server_error/INVALID_QUEST_ID";
+      
       public static const PERSONALMISSIONS_SELECT_SERVER_ERROR_WRONG_ARGS_TYPE:String = "#system_messages:personalMissions/select/server_error/WRONG_ARGS_TYPE";
       
       public static const PERSONALMISSIONS_SELECT_SERVER_ERROR_WRONG_ARGS:String = "#system_messages:personalMissions/select/server_error/WRONG_ARGS";
@@ -1692,6 +1670,8 @@ package
       public static const PERSONALMISSIONS_SELECT_SERVER_ERROR_DISABLED:String = "#system_messages:personalMissions/select/server_error/DISABLED";
       
       public static const PERSONALMISSIONS_SELECT_SERVER_ERROR_FALLOUT_LOCKED_BY_VEHICLE_QUEST:String = "#system_messages:personalMissions/select/server_error/fallout/LOCKED_BY_VEHICLE_QUEST";
+      
+      public static const PERSONALMISSIONS30_SELECT_SERVER_ERROR:String = "#system_messages:personalMissions30/select/server_error";
       
       public static const PERSONALMISSIONS_DISCARD_SUCCESS:String = "#system_messages:personalMissions/discard/success";
       
@@ -1717,6 +1697,8 @@ package
       
       public static const PERSONALMISSIONS_PAUSE_SERVER_ERROR_DISABLED:String = "#system_messages:personalMissions/pause/server_error/DISABLED";
       
+      public static const PERSONALMISSIONS_ACTIVATESEASON_SERVER_ERROR:String = "#system_messages:personalMissions/activateSeason/server_error";
+      
       public static const PERSONALMISSIONS_REWARD_REGULAR_SERVER_ERROR:String = "#system_messages:personalMissions/reward/regular/server_error";
       
       public static const PERSONALMISSIONS_REWARD_REGULAR_SERVER_ERROR_WRONG_ARGS_TYPE:String = "#system_messages:personalMissions/reward/regular/server_error/WRONG_ARGS_TYPE";
@@ -1726,6 +1708,10 @@ package
       public static const PERSONALMISSIONS_REWARD_REGULAR_SERVER_ERROR_INVALID_STATE:String = "#system_messages:personalMissions/reward/regular/server_error/INVALID_STATE";
       
       public static const PERSONALMISSIONS_REWARD_REGULAR_SERVER_ERROR_DISABLED:String = "#system_messages:personalMissions/reward/regular/server_error/DISABLED";
+      
+      public static const PERSONALMISSIONS_REWARD_PM3_SERVER_ERROR:String = "#system_messages:personalMissions/reward/pm3/server_error";
+      
+      public static const PERSONALMISSIONS_REWARD_PM3_SUCCESS:String = "#system_messages:personalMissions/reward/pm3/success";
       
       public static const PERSONALMISSIONS_REWARD_TANKWOMAN_SERVER_ERROR:String = "#system_messages:personalMissions/reward/tankwoman/server_error";
       
@@ -1752,6 +1738,42 @@ package
       public static const PERSONALMISSIONS_CAMOUFLAGEGIVEN:String = "#system_messages:personalMissions/camouflageGiven";
       
       public static const PERSONALMISSIONS_CAMOUFLAGEUNLOCKED:String = "#system_messages:personalMissions/camouflageUnlocked";
+      
+      public static const PERSONALMISSIONS_DETAILINSTALLED_TITLE:String = "#system_messages:personalMissions/detailInstalled/title";
+      
+      public static const PERSONALMISSIONS_DETAILINSTALLED_BODY:String = "#system_messages:personalMissions/detailInstalled/body";
+      
+      public static const PERSONALMISSIONS_OPERATIONACTIVATION_TITLE:String = "#system_messages:personalMissions/operationActivation/title";
+      
+      public static const PERSONALMISSIONS_OPERATIONACTIVATION_BODY:String = "#system_messages:personalMissions/operationActivation/body";
+      
+      public static const PERSONALMISSIONS_OPERATIONPAUSED_TITLE:String = "#system_messages:personalMissions/operationPaused/title";
+      
+      public static const PERSONALMISSIONS_OPERATIONPAUSED_BODY:String = "#system_messages:personalMissions/operationPaused/body";
+      
+      public static const PERSONALMISSIONS_OPERATIONRESUMED_TITLE:String = "#system_messages:personalMissions/operationResumed/title";
+      
+      public static const PERSONALMISSIONS_OPERATIONRESUMED_BODY:String = "#system_messages:personalMissions/operationResumed/body";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN3PAUSED_TITLE:String = "#system_messages:personalMissions/campaign3Paused/title";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN3PAUSED_BODY:String = "#system_messages:personalMissions/campaign3Paused/body";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN3RESUMED_TITLE:String = "#system_messages:personalMissions/campaign3Resumed/title";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN3RESUMED_BODY:String = "#system_messages:personalMissions/campaign3Resumed/body";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN12PAUSED_TITLE:String = "#system_messages:personalMissions/campaign12Paused/title";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN12PAUSED_BODY:String = "#system_messages:personalMissions/campaign12Paused/body";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN12RESUMED_TITLE:String = "#system_messages:personalMissions/campaign12Resumed/title";
+      
+      public static const PERSONALMISSIONS_CAMPAIGN12RESUMED_BODY:String = "#system_messages:personalMissions/campaign12Resumed/body";
+      
+      public static const PERSONALMISSIONS_OPERATIONCOMPLETE_TITLE:String = "#system_messages:personalMissions/operationComplete/title";
+      
+      public static const PERSONALMISSIONS_OPERATIONCOMPLETE_BODY:String = "#system_messages:personalMissions/operationComplete/body";
       
       public static const UNIT_ERRORS_ALREADY_JOINED_UNIT:String = "#system_messages:unit/errors/ALREADY_JOINED_UNIT";
       
@@ -2495,6 +2517,22 @@ package
       
       public static const DAILY_QUESTS_REROLL_UNKNOWN_ERROR:String = "#system_messages:daily_quests/reroll/unknown_error";
       
+      public static const WEEKLY_QUESTS_SWITCH_OFF_BODY:String = "#system_messages:weekly_quests/switch_off/body";
+      
+      public static const WEEKLY_QUESTS_SWITCH_ON_BODY:String = "#system_messages:weekly_quests/switch_on/body";
+      
+      public static const WEEKLY_QUESTS_REROLL_SUCCESS:String = "#system_messages:weekly_quests/reroll/success";
+      
+      public static const WEEKLY_QUESTS_REROLL_WQ_NOT_ENABLED:String = "#system_messages:weekly_quests/reroll/WQ_NOT_ENABLED";
+      
+      public static const WEEKLY_QUESTS_REROLL_WQ_REROLL_TIMEOUT:String = "#system_messages:weekly_quests/reroll/WQ_REROLL_TIMEOUT";
+      
+      public static const WEEKLY_QUESTS_REROLL_WQ_QUEST_COMPLETED:String = "#system_messages:weekly_quests/reroll/WQ_QUEST_COMPLETED";
+      
+      public static const WEEKLY_QUESTS_REROLL_WQ_NO_SUCH_TOKEN:String = "#system_messages:weekly_quests/reroll/WQ_NO_SUCH_TOKEN";
+      
+      public static const WEEKLY_QUESTS_REROLL_UNKNOWN_ERROR:String = "#system_messages:weekly_quests/reroll/unknown_error";
+      
       public static const BATTLEPASS_BUY_SERVER_ERROR:String = "#system_messages:battlePass_buy/server_error";
       
       public static const BATTLEPASSLEVELS_BUY_SERVER_ERROR:String = "#system_messages:battlePassLevels_buy/server_error";
@@ -2520,6 +2558,10 @@ package
       public static const BATTLEPASS_SWITCH_ENABLED_COMP7_BODY:String = "#system_messages:battlePass/switch_enabled/comp7/body";
       
       public static const BATTLEPASS_SWITCH_DISABLE_COMP7_BODY:String = "#system_messages:battlePass/switch_disable/comp7/body";
+      
+      public static const BATTLEPASS_SWITCH_ENABLED_COMP7LIGHT_BODY:String = "#system_messages:battlePass/switch_enabled/comp7Light/body";
+      
+      public static const BATTLEPASS_SWITCH_DISABLE_COMP7LIGHT_BODY:String = "#system_messages:battlePass/switch_disable/comp7Light/body";
       
       public static const UPGRADETROPHYDEVICE_SWITCH_ON_BODY:String = "#system_messages:upgradeTrophyDevice/switch_on/body";
       
@@ -2810,6 +2852,58 @@ package
       public static const EASYTANKEQUIP_SWITCH_PAUSE_ON_BODY:String = "#system_messages:easyTankEquip/switch_pause_on/body";
       
       public static const EASYTANKEQUIP_SWITCH_PAUSE_OFF_BODY:String = "#system_messages:easyTankEquip/switch_pause_off/body";
+      
+      public static const PERSONALMISSION_AWARDSNOTIFICATION_OPERATION:String = "#system_messages:personalMission/awardsNotification/operation";
+      
+      public static const PERSONALMISSION_AWARDSNOTIFICATION_STATUS:String = "#system_messages:personalMission/awardsNotification/status";
+      
+      public static const PERSONALMISSION_AWARDSNOTIFICATION_STATUS_ALL:String = "#system_messages:personalMission/awardsNotification/status/all";
+      
+      public static const PERSONALMISSION_AWARDSNOTIFICATION_NOTCOMPLETEDFOOTER:String = "#system_messages:personalMission/awardsNotification/notCompletedFooter";
+      
+      public static const PERSONALMISSION_AWARDSNOTIFICATION_MISSIONCOMPLETED:String = "#system_messages:personalMission/awardsNotification/missionCompleted";
+      
+      public static const PERSONALMISSION_AWARDSNOTIFICATION_BUTTONLABEL:String = "#system_messages:personalMission/awardsNotification/buttonLabel";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_MISSIONOFF:String = "#system_messages:personalMission/switcherNotification/missionOff";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_MISSIONON:String = "#system_messages:personalMission/switcherNotification/missionOn";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_OPERATIONOFF:String = "#system_messages:personalMission/switcherNotification/operationOff";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_OPERATIONON:String = "#system_messages:personalMission/switcherNotification/operationOn";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_CAMPAIGNOFF:String = "#system_messages:personalMission/switcherNotification/campaignOff";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_CAMPAIGNON:String = "#system_messages:personalMission/switcherNotification/campaignOn";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_ALLCAMPAIGNSOFF:String = "#system_messages:personalMission/switcherNotification/allCampaignsOff";
+      
+      public static const PERSONALMISSION_SWITCHERNOTIFICATION_ALLCAMPAIGNSON:String = "#system_messages:personalMission/switcherNotification/allCampaignsOn";
+      
+      public static const PERSONALMISSION_OPERATIONCOMPLETE_TITLE:String = "#system_messages:personalMission/operationComplete/title";
+      
+      public static const PERSONALMISSION_OPERATIONCOMPLETEHONOR_TITLE:String = "#system_messages:personalMission/operationCompleteHonor/title";
+      
+      public static const PERSONALMISSION_CAMPAIGNCOMPLETEHONOR_TITLE:String = "#system_messages:personalMission/campaignCompleteHonor/title";
+      
+      public static const PERSONALMISSION_COMPLETIONNOTIFICATION_BODY:String = "#system_messages:personalMission/CompletionNotification/body";
+      
+      public static const VEHICLESKILLTREEPROGRESSION_RESEARCHSTEP_TITLE:String = "#system_messages:vehicleSkillTreeProgression/researchStep/title";
+      
+      public static const VEHICLESKILLTREEPROGRESSION_RESEARCHSTEPS_TITLE:String = "#system_messages:vehicleSkillTreeProgression/researchSteps/title";
+      
+      public static const VEHICLESKILLTREEPROGRESSION_RESEARCHSTEP_BODY:String = "#system_messages:vehicleSkillTreeProgression/researchStep/body";
+      
+      public static const VEHICLESKILLTREEPROGRESSION_RESEARCHSTEPS_BODY:String = "#system_messages:vehicleSkillTreeProgression/researchSteps/body";
+      
+      public static const VEHICLEMILESTONES_VANITYAVAILABLE_TITLE:String = "#system_messages:vehicleMilestones/vanityAvailable/title";
+      
+      public static const VEHICLEMILESTONES_VANITYAVAILABLE_TEXT:String = "#system_messages:vehicleMilestones/vanityAvailable/text";
+      
+      public static const VEHICLESKILLTREEPROGRESSION_PROCESSORERROR_TITLE:String = "#system_messages:vehicleSkillTreeProgression/processorError/title";
+      
+      public static const VEHICLESKILLTREEPROGRESSION_PROCESSORERROR_BODY:String = "#system_messages:vehicleSkillTreeProgression/processorError/body";
        
       
       public function SYSTEM_MESSAGES()

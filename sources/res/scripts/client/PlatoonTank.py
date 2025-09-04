@@ -22,7 +22,7 @@ if TYPE_CHECKING:
 _logger = logging.getLogger(__name__)
 PlatoonTankInfo = namedtuple('PlatoonTankInfo', ('canDisplayModel', 'vehCompDescr',
                                                  'vehOutfitCD', 'seasonType', 'marksOnGun',
-                                                 'clanDBID', 'playerName'))
+                                                 'clanDBID', 'playerName', 'stFrags'))
 
 class _PlatoonTankAppearance(HangarVehicleAppearance):
     _c11nService = dependency.descriptor(ICustomizationService)
@@ -119,6 +119,11 @@ class PlatoonTank(ClientSelectableCameraVehicle):
             self.appearance.updateTankInfo(self.__tankInfo)
         super(PlatoonTank, self).recreateVehicle(typeDescriptor, state, callback, outfit)
         return
+
+    def getStFrags(self):
+        if self.__tankInfo:
+            return self.__tankInfo.stFrags
+        return 0
 
     if IS_DEVELOPMENT:
 

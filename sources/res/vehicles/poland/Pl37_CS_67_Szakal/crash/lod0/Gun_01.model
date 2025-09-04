@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl37_CS_67_Szakal/crash/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl37_CS_67_Szakal/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.721690 -0.298004 -1.435562</min>
+		<max>0.225161 0.307389 4.838058</max>
+	</visibilityBox>
+</root>

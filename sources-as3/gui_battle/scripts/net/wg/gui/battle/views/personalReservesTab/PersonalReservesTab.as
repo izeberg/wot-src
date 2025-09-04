@@ -15,6 +15,7 @@ package net.wg.gui.battle.views.personalReservesTab
       public function PersonalReservesTab()
       {
          super();
+         focusable = false;
          setManageSize(true);
          setSize(WIDTH,HEIGHT);
       }

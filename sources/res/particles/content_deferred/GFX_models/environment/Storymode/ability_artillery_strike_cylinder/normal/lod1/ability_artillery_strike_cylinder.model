@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>particles/content_deferred/GFX_models/environment/Storymode/ability_artillery_strike_cylinder/normal/lod2/ability_artillery_strike_cylinder</parent>
+	<extent>120.000000</extent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<nodelessVisual>particles/content_deferred/GFX_models/environment/Storymode/ability_artillery_strike_cylinder/normal/lod1/ability_artillery_strike_cylinder</nodelessVisual>
+</root>

@@ -161,10 +161,6 @@ package net.wg.gui.battle.battleRoyale.views.components.RespawnButton
          invalidateData();
       }
       
-      public function set noBack(param1:Boolean) : void
-      {
-      }
-      
       public function set activated(param1:Boolean) : void
       {
       }

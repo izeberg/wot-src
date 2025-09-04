@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A183_XM69_Hacker/crash/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A183_XM69_Hacker/crash/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.438446 0.012455 -2.969098</min>
+		<max>1.409412 1.392559 1.575878</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

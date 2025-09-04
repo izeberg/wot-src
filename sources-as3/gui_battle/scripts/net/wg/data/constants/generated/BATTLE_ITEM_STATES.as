@@ -15,8 +15,6 @@ package net.wg.data.constants.generated
       
       public static const RELOADED:String = "reloaded";
       
-      public static const RELOADED_NOBACK:String = "reloadedNoBack";
-      
       public static const PERMANENT:String = "permanent";
       
       public static const COOLDOWN:String = "cooldown";

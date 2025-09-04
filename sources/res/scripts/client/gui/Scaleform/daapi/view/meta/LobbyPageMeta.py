@@ -14,6 +14,9 @@ class LobbyPageMeta(View):
     def notifyCursorDragging(self, isDragging):
         self._printOverrideError('notifyCursorDragging')
 
+    def setRequiresOldStyle(self, value):
+        self._printOverrideError('setRequiresOldStyle')
+
     def as_showHelpLayoutS(self):
         if self._isDAAPIInited():
             return self.flashObject.as_showHelpLayout()
@@ -33,3 +36,7 @@ class LobbyPageMeta(View):
     def as_setSubContainerItemsVisibilityS(self, isVisible):
         if self._isDAAPIInited():
             return self.flashObject.as_setSubContainerItemsVisibility(isVisible)
+
+    def as_setWalletStatusS(self, walletStatus):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setWalletStatus(walletStatus)

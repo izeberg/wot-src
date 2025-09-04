@@ -566,6 +566,9 @@ msgstr "天梯战"
 msgid "bonusType/44"
 msgstr "热身模式"
 
+msgid "bonusType/49"
+msgstr "轻量级天梯战"
+
 msgid "bonusType/5"
 msgstr "特殊模式"
 
@@ -839,6 +842,12 @@ msgstr "自行火炮"
 msgid "carousel_tank_filter/all"
 msgstr "全部"
 
+msgid "carousel_tank_filter/assault"
+msgstr "突击型"
+
+msgid "carousel_tank_filter/break"
+msgstr "突破型"
+
 msgid "carousel_tank_filter/canInstallAttachments"
 msgstr "3D附件"
 
@@ -856,6 +865,18 @@ msgstr "3D风格"
 
 msgid "carousel_tank_filter/ready"
 msgstr "仅显示主力"
+
+msgid "carousel_tank_filter/sniper"
+msgstr "狙击型"
+
+msgid "carousel_tank_filter/support"
+msgstr "支援型"
+
+msgid "carousel_tank_filter/universal"
+msgstr "全能型"
+
+msgid "carousel_tank_filter/wheeled"
+msgstr "轮式"
 
 msgid "centerIsAvailable"
 msgstr "所有服务器重新可用。"
@@ -970,6 +991,9 @@ msgstr "复制玩家昵称"
 
 msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "创建一个钢铁猎手小队"
+
+msgid "contextMenu/createComp7LightSquad"
+msgstr "创建轻量级天梯战小队"
 
 msgid "contextMenu/createComp7Squad"
 msgstr "创建天梯战小队"
@@ -1190,6 +1214,9 @@ msgstr "玩家的服役记录"
 msgid "contextMenu/userVehicleCompare"
 msgstr "加入对比"
 
+msgid "contextMenu/vehSkillTree"
+msgstr "前往升级"
+
 msgid "contextMenu/vehicleBuy"
 msgstr "购买"
 
@@ -1197,10 +1224,10 @@ msgid "contextMenu/vehicleCheck"
 msgstr "设为主力"
 
 msgid "contextMenu/vehicleInfo"
-msgstr "坦克详情"
+msgstr "关于坦克"
 
 msgid "contextMenu/vehicleInfoEx"
-msgstr "坦克详细信息"
+msgstr "关于坦克"
 
 msgid "contextMenu/vehiclePostProgression"
 msgstr "前往战地升级"
@@ -1250,11 +1277,11 @@ msgstr "活动奖励战争债券"
 
 msgid "crystals/info/tab/earn/level/description"
 msgstr ""
-"战争债券可以通过%(level10)坦克\n"
-"和拥有标记的%(level9)金币坦克在下列模式中获取:"
+"战争债券可使用%(level10And11)可研发坦克，以及\n"
+"拥有战争债券标记的%(level9)金币坦克在下列模式中获取:"
 
-msgid "crystals/info/tab/earn/level/descriptionContent/level10"
-msgstr "X级"
+msgid "crystals/info/tab/earn/level/descriptionContent/level10And11"
+msgstr "X-XI级"
 
 msgid "crystals/info/tab/earn/level/descriptionContent/level9"
 msgstr "IX级"
@@ -1262,11 +1289,6 @@ msgstr "IX级"
 msgid "crystals/info/tab/earn/level/mod/0"
 msgstr ""
 "标准\n"
-"模式"
-
-msgid "crystals/info/tab/earn/level/mod/1"
-msgstr ""
-"战役\n"
 "模式"
 
 msgid "crystals/info/tab/earn/level/title"
@@ -1305,10 +1327,7 @@ msgid "crystals/info/tab/get/card/win"
 msgstr "胜利"
 
 msgid "crystals/info/tab/get/description"
-msgstr "驾驶有战争债券标记的坦克在标准模式或是战役模式中战斗。所获得的基础经验在战斗结果中排名越高，战斗奖励的战争债券也就越多。"
-
-msgid "crystals/info/tab/get/general"
-msgstr "战役模式"
+msgstr "驾驶带有战争债券标记的坦克投身标准模式战斗。所获基础经验在战斗结果中排名越高，战斗奖励的战争债券也就越多。"
 
 msgid "crystals/info/tab/get/random"
 msgstr "标准模式"
@@ -1574,9 +1593,6 @@ msgstr "服务器限制"
 
 msgid "currentVehicleStatus/subscription_suspended"
 msgstr "坦克世界Plus订阅已暂停"
-
-msgid "currentVehicleStatus/tooHeavy"
-msgstr "坦克超载"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "准备完毕！"
@@ -1897,9 +1913,7 @@ msgid "descriptions/vehicle"
 msgstr "%(weight)s吨，装甲最大厚度 %(hullArmor)s 毫米，%(caliber)s毫米火炮"
 
 msgid "descriptions/vehicleChassis"
-msgstr ""
-"最大转弯速度:%(rotationSpeed)s度/秒\n"
-"最大载重量:%(maxLoad)s吨"
+msgstr "旋转速度: 最大%(rotationSpeed)s度/秒"
 
 msgid "descriptions/vehicleEngine"
 msgstr ""
@@ -1940,9 +1954,7 @@ msgstr ""
 "观察范围:约%(circularVisionRadius)s米"
 
 msgid "descriptions/vehicleWheeledChassis"
-msgstr ""
-"最大车轮转向角: 最大%(maxSteeringLockAngle)s度\n"
-"最大载重量: %(maxLoad)s吨"
+msgstr "最大车轮转向角度: 最大%(maxSteeringLockAngle)s度"
 
 msgid "disconnect/codes/0"
 msgstr "<?empty?>"
@@ -2059,7 +2071,7 @@ msgid "extraParams/header"
 msgstr "%(paramName)s加成"
 
 msgid "extraParams/multiDesc"
-msgstr "总计加成以乘法叠加计算得出，可能与所显示的数值有所不同。"
+msgstr "总加成通过叠加和乘积修正计算，因此最终参数可能高于或低于此处所示数值。"
 
 msgid "extraParams/name/artNotificationDelayFactor"
 msgstr "该参数表示从自行火炮开火到收到警告的时间。"
@@ -2170,10 +2182,10 @@ msgid "extraParams/name/vehicleGunShotDispersionChassisMovement"
 msgstr "该参数表示移动中的炮弹散布范围。数值越低，火炮越准。"
 
 msgid "extraParams/name/vehicleGunShotDispersionChassisRotation"
-msgstr "此参数代表车体旋转时的炮弹散布范围。"
+msgstr "该参数表示车体旋转时的炮弹散布范围。数值越低，火炮越精准。"
 
 msgid "extraParams/name/vehicleGunShotDispersionTurretRotation"
-msgstr "此参数代表火炮旋转时的炮弹散布范围。"
+msgstr "该参数表示火炮旋转时的炮弹散布范围。数值越低，火炮越精准。"
 
 msgid "extraParams/name/vehicleGunShotDispersionWhileGunDamaged"
 msgstr "该参数表示受损火炮的炮弹散布范围。数值越高，炮弹散布范围越低。"
@@ -2562,6 +2574,9 @@ msgstr "I级"
 msgid "header/level/10"
 msgstr "X级"
 
+msgid "header/level/11"
+msgstr "XI"
+
 msgid "header/level/2"
 msgstr "II级"
 
@@ -2676,9 +2691,6 @@ msgstr "延期高级账号"
 msgid "headerButtons/barracks"
 msgstr "兵营"
 
-msgid "headerButtons/battle"
-msgstr "加入战斗"
-
 msgid "headerButtons/battle/availableSince"
 msgstr "开始时间: %(datetime)s"
 
@@ -2690,6 +2702,9 @@ msgstr "直到%(datetime)s"
 
 msgid "headerButtons/battle/availableUntilSoon"
 msgstr "完成时间%(time)s"
+
+msgid "headerButtons/battle/button/battle"
+msgstr "加入战斗"
 
 msgid "headerButtons/battle/menu/attention/lowPerformance"
 msgstr "低性能"
@@ -2751,6 +2766,9 @@ msgstr "钢铁猎手小队"
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "创建一个2人小队"
 
+msgid "headerButtons/battle/types/comp7LightSquad"
+msgstr "创建轻量级天梯战小队"
+
 msgid "headerButtons/battle/types/comp7Squad"
 msgstr "创建天梯战小队"
 
@@ -2777,6 +2795,9 @@ msgstr "训练模式"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "前线模式"
+
+msgid "headerButtons/battle/types/event"
+msgstr "活动战斗"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "活动小队"
@@ -3001,10 +3022,10 @@ msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/header"
 msgstr "加入战斗失败"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/body"
-msgstr "您可以继续参加其他模式的战斗。"
+msgstr "您已被暂时封禁，无法参加该模式。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/header"
-msgstr "您暂时被禁止加入此模式。"
+msgstr "加入战斗失败"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/body"
 msgstr "您选择的坦克仅可用于参加天梯战模式。"
@@ -3013,31 +3034,52 @@ msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/header"
 msgstr "无法加入战斗"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/body"
-msgstr "此服务器正处于休战期。请选择其他服务器。"
+msgstr "该模式目前在所有服务器上均未开放。模式开放详情如下。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/header"
 msgstr "无法加入战斗"
 
+msgid "headerButtons/fightBtn/tooltip/comp7LightDisabled/body"
+msgstr "该服务器正处于休战期。请选择其他服务器。"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightDisabled/header"
+msgstr "加入战斗失败"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightNotSet/body"
+msgstr "该模式在所选服务器上不开放"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightNotSet/header"
+msgstr "加入战斗失败"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/body"
+msgstr "车库中没有满足要求的%(levels)s级坦克"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/delimiter"
+msgstr "、"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/header"
+msgstr "加入战斗失败"
+
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
-msgstr "此模式在所选服务器上不开放"
+msgstr "该模式目前在所有服务器上均未开放。服务器详情如下。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/header"
 msgstr "无法加入战斗"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/body"
-msgstr "模式暂不开放: 数据库错误。"
+msgstr "由于数据库错误，该模式暂不开放。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/header"
 msgstr "无法加入战斗"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/body"
-msgstr "模式暂不开放: 赛季尚未开启"
+msgstr "赛季尚未开启。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "加入战斗失败"
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
-msgstr "根据资格赛结果计算评级可能需要几分钟时间。之后，系统会为您分配段位，然后您就能在天梯战中继续战斗了。"
+msgstr "根据资格赛结果计算您的评级可能最多需要5分钟。获得段位后，您可继续投身天梯战。"
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/header"
 msgstr "加入战斗失败"
@@ -3208,6 +3250,12 @@ msgstr "菜  单"
 msgid "headerButtons/missions"
 msgstr "任务"
 
+msgid "headerButtons/modeSelector"
+msgstr "战斗模式"
+
+msgid "headerButtons/navigation/back"
+msgstr "返回"
+
 msgid "headerButtons/notReady"
 msgstr "取消准备"
 
@@ -3221,7 +3269,7 @@ msgid "headerButtons/rating"
 msgstr "等级"
 
 msgid "headerButtons/ready"
-msgstr "准备战斗"
+msgstr "准备就绪"
 
 msgid "headerButtons/shop"
 msgstr "军械库"
@@ -3532,6 +3580,9 @@ msgstr "I级"
 msgid "levels/10"
 msgstr "X级"
 
+msgid "levels/11"
+msgstr "XI级"
+
 msgid "levels/2"
 msgstr "II级"
 
@@ -3564,6 +3615,9 @@ msgstr "I级"
 
 msgid "levels/roman/10"
 msgstr "X级"
+
+msgid "levels/roman/11"
+msgstr "XI级"
 
 msgid "levels/roman/2"
 msgstr "II级"
@@ -3664,6 +3718,9 @@ msgstr "天梯战"
 msgid "loading/battleTypes/34"
 msgstr "天梯战训练"
 
+msgid "loading/battleTypes/35"
+msgstr "轻量级天梯战"
+
 msgid "loading/battleTypes/4"
 msgstr "新手教学"
 
@@ -3758,6 +3815,9 @@ msgid "loading/battleTypes/desc/33"
 msgstr " "
 
 msgid "loading/battleTypes/desc/34"
+msgstr " "
+
+msgid "loading/battleTypes/desc/35"
 msgstr " "
 
 msgid "loading/battleTypes/desc/4"
@@ -4148,20 +4208,11 @@ msgstr "拆卸"
 msgid "moduleFits/removeToolTip"
 msgstr " "
 
-msgid "moduleFits/remove_too_heavy"
-msgstr "载重能力不足。"
-
 msgid "moduleFits/similar_device_already_installed"
 msgstr "?empty?"
 
 msgid "moduleFits/title"
 msgstr "%(moduleName)s适用于 %(vehicleName)s"
-
-msgid "moduleFits/too_heavy"
-msgstr "需要更多的载重能力"
-
-msgid "moduleFits/too_heavy_chassis"
-msgstr "载重能力不足。"
 
 msgid "moduleFits/unlock_error"
 msgstr "研发"
@@ -4363,6 +4414,9 @@ msgstr "飞行时间"
 msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "最大速度"
 
+msgid "moduleInfo/params/guaranteedDamage/footnote"
+msgstr "如果未击穿装甲，炮弹仅能造成较小比例的损伤。"
+
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "重量"
 
@@ -4389,9 +4443,6 @@ msgstr "生命值"
 
 msgid "moduleInfo/params/maxHullHealth"
 msgstr "生命值"
-
-msgid "moduleInfo/params/maxLoad"
-msgstr "最大载重量"
 
 msgid "moduleInfo/params/maxShotDistance"
 msgstr "射击范围"
@@ -4653,6 +4704,9 @@ msgstr "中级联队"
 msgid "prebattle/already_in_awaiting_battle"
 msgstr "您正在等待参加战斗。"
 
+msgid "prebattle/battleReady"
+msgstr "准备就绪！"
+
 msgid "prebattle/battleRoyale/solo"
 msgstr "单人战斗"
 
@@ -4718,6 +4772,9 @@ msgstr "在线等待玩家:"
 
 msgid "prebattle/rts/tankLabel"
 msgstr "您的角色："
+
+msgid "prebattle/searchPlayers"
+msgstr "搜索玩家"
 
 msgid "prebattle/sideA"
 msgstr "A方:"
@@ -5147,6 +5204,9 @@ msgstr "银币"
 
 msgid "repair/repairstatus"
 msgstr "修复所需银币:"
+
+msgid "report_content"
+msgstr "报告内容"
 
 msgid "research/labels/button/addToCompare"
 msgstr "加入对比"
@@ -5861,10 +5921,10 @@ msgid "tankCarousel/vehicleStates/buySlot"
 msgstr "购买车位"
 
 msgid "tankCarousel/vehicleStates/buyTank"
-msgstr "购买一辆坦克"
+msgstr "购买坦克"
 
 msgid "tankCarousel/vehicleStates/buyTankEmptyCount"
-msgstr "空余车位:%(count)d"
+msgstr "空余车位: %(count)d"
 
 msgid "tankCarousel/vehicleStates/clanLocked"
 msgstr "?empty?"
@@ -5959,9 +6019,6 @@ msgstr "服务器限制"
 msgid "tankCarousel/vehicleStates/subscription_suspended"
 msgstr "已暂停"
 
-msgid "tankCarousel/vehicleStates/tooHeavy"
-msgstr "坦克超载"
-
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "不可用"
 
@@ -5992,8 +6049,32 @@ msgstr "租用坦克"
 msgid "tankCarousel/wotPlusSelectionPending"
 msgstr "租用等待中"
 
+msgid "tank_params/accuracyDispersionCap"
+msgstr "最大精度等级的炮弹散布范围"
+
+msgid "tank_params/accuracyDispersionPerLevel"
+msgstr "每个精度等级的100米精度加成"
+
+msgid "tank_params/accuracyLevelGainTime"
+msgstr "获取精度等级所需时间"
+
+msgid "tank_params/accuracySpeedLimit"
+msgstr "速度限制"
+
+msgid "tank_params/accuracyWhileMovingDispersionCap"
+msgstr "最大精度等级下移动/旋转时的炮弹散布范围"
+
+msgid "tank_params/activeCoincideceShootingCharge"
+msgstr "重合式机电瞄准镜充能(%，每次命中)(交战模式，激活状态)"
+
 msgid "tank_params/aimingTime"
 msgstr "瞄准时间"
+
+msgid "tank_params/aimingTimeCoincidenceElectromechanicalSight"
+msgstr "瞄准时间(秒)(重合式机电瞄准镜)"
+
+msgid "tank_params/aimingTimeTurbo"
+msgstr "瞄准时间(秒)(涡轮模式)"
 
 msgid "tank_params/attainableSpeed"
 msgstr "加速5秒后的速度"
@@ -6019,6 +6100,12 @@ msgstr "平均每秒损伤"
 msgid "tank_params/avgPiercingPower"
 msgstr "平均穿透力"
 
+msgid "tank_params/boosterCoolingTime"
+msgstr "助推器冷却时间"
+
+msgid "tank_params/boosterDuration"
+msgstr "助推器持续时间"
+
 msgid "tank_params/burstFireRate"
 msgstr "短弹夹"
 
@@ -6027,6 +6114,18 @@ msgstr "(秒/个/发)"
 
 msgid "tank_params/chargeTime"
 msgstr "齐射准备"
+
+msgid "tank_params/chargeableBurstDispersion"
+msgstr "第二发炮弹的100米精度"
+
+msgid "tank_params/chargeableBurstPenetrationCount"
+msgstr "激活模式所需击穿"
+
+msgid "tank_params/chargeableBurstReload"
+msgstr "点射模式装填"
+
+msgid "tank_params/chargeableBurstSize"
+msgstr "短弹夹中的炮弹"
 
 msgid "tank_params/chassisModuleRotationSpeed"
 msgstr "旋转速度"
@@ -6052,17 +6151,38 @@ msgstr "(弹夹/炮弹或短弹夹/炮弹数量)"
 msgid "tank_params/cnt"
 msgstr "(个)"
 
+msgid "tank_params/coincidenceElectromechanicalSightDuration"
+msgstr "重合式机电瞄准镜持续时间"
+
+msgid "tank_params/concentrationModeCooldown"
+msgstr "冷却时间"
+
+msgid "tank_params/concentrationModeDuration"
+msgstr "持续时间"
+
 msgid "tank_params/continuousShotsPerMinute"
 msgstr "连射射速"
 
 msgid "tank_params/damage"
 msgstr "标准炮弹损伤"
 
+msgid "tank_params/designatorCooldownS"
+msgstr "冷却时间"
+
+msgid "tank_params/designatorInitialCooldownS"
+msgstr "初始冷却时间"
+
+msgid "tank_params/designatorMarkDurationS"
+msgstr "标记持续时间"
+
+msgid "tank_params/designatorMarkedEnemiesAdditionalDamage"
+msgstr "对被标记敌方坦克造成的额外损伤"
+
+msgid "tank_params/dispersionAt100mCoincidenceElectromechanicalSight"
+msgstr "100米精度(%)(重合式机电瞄准镜)"
+
 msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "火炮冷却时间"
-
-msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
-msgstr "射击后的火炮冷却时间"
 
 msgid "tank_params/enginePower"
 msgstr "发动机功率"
@@ -6070,17 +6190,50 @@ msgstr "发动机功率"
 msgid "tank_params/enginePowerPerTon"
 msgstr "单位功率"
 
+msgid "tank_params/enginePowerWithBoosters"
+msgstr "发动机功率(激活火箭助推器后)"
+
+msgid "tank_params/engineTurboPowerCap"
+msgstr "发动机功率(马力)(涡轮模式)"
+
 msgid "tank_params/explosionRadius"
 msgstr "损伤范围"
+
+msgid "tank_params/extendedTitle/dualAccuracyCoolingDelay"
+msgstr "射击后的火炮冷却时间"
 
 msgid "tank_params/extraRepairSpeed"
 msgstr "维修速度"
 
+msgid "tank_params/extraShotClipReloadTime"
+msgstr "装填时间惩罚"
+
 msgid "tank_params/faceFrontBoardInMM"
 msgstr "(前/侧/后 毫米)"
 
+msgid "tank_params/factor"
+msgstr "(%)"
+
 msgid "tank_params/forwardMaxSpeed"
 msgstr "最大速度"
+
+msgid "tank_params/furyMaxReloadEffAvgDpm"
+msgstr "最大装填效率等级时的平均每分钟损伤"
+
+msgid "tank_params/furyMaxReloadEfficiencyLevel"
+msgstr "最大装填效率等级"
+
+msgid "tank_params/furyReloadEfficiencyLevelDuration"
+msgstr "装填效率等级持续时间"
+
+msgid "tank_params/furyReloadEfficiencyLevelPerDestruction"
+msgstr "每击毁1辆敌方坦克可获得的装填效率等级"
+
+msgid "tank_params/furyReloadEfficiencyLevelPerHit"
+msgstr "每击中1辆敌方坦克可获得的装填效率等级"
+
+msgid "tank_params/furyReloadSpeedBonusPerEfficiencyLevel"
+msgstr "每个效率等级的装填速度加成"
 
 msgid "tank_params/gps"
 msgstr "(度/秒)"
@@ -6091,14 +6244,38 @@ msgstr "(度)"
 msgid "tank_params/gunModuleAvgDamageList"
 msgstr "平均损伤"
 
+msgid "tank_params/gunTraverseDispersionTurbo"
+msgstr "火炮旋转时的炮弹散布范围(%)(涡轮模式)"
+
 msgid "tank_params/gunYawLimits"
 msgstr "火炮射界"
 
 msgid "tank_params/h"
 msgstr "(发)"
 
+msgid "tank_params/heatAvgDmgPerLvl"
+msgstr "每个热量等级的平均损伤"
+
+msgid "tank_params/heatChargeOverheatDuration"
+msgstr "充能过热持续时间"
+
+msgid "tank_params/heatTimeBeforeOverheat"
+msgstr "充能过热前的时间"
+
+msgid "tank_params/heatTimeToReachLevel"
+msgstr "达到热量等级所需时间"
+
 msgid "tank_params/hullArmor"
 msgstr "车体装甲"
+
+msgid "tank_params/hullTraverseDispersionTurbo"
+msgstr "车体旋转时的炮弹散布范围(%)(涡轮模式)"
+
+msgid "tank_params/improvedDamageEnemiesByRamming"
+msgstr "造成的撞击损伤"
+
+msgid "tank_params/improvedDamageEnemiesChassisByRamming"
+msgstr "对悬挂装置造成的撞击损伤"
 
 msgid "tank_params/increaseHealth"
 msgstr "提升耐久度"
@@ -6109,11 +6286,29 @@ msgstr "坦克移动隐蔽系数(%)"
 msgid "tank_params/invisibilityStillFactor"
 msgstr "坦克静止隐蔽系数(%)"
 
+msgid "tank_params/ionAfterburnerActiveTurboCharge"
+msgstr "离子喷射加力装置充能(%/秒)(涡轮模式，激活状态)"
+
+msgid "tank_params/ionAfterburnerDuration"
+msgstr "离子喷射加力装置持续时间"
+
+msgid "tank_params/ionAfterburnerDurationEnginePower"
+msgstr "发动机功率(马力)(离子喷射加力装置)"
+
+msgid "tank_params/ionAfterburnerDurationSpeedCap"
+msgstr "最大速度/倒车速度(千米/小时)(离子喷射加力装置)"
+
+msgid "tank_params/ionAfterburnerPassiveTurboCharge"
+msgstr "离子喷射加力装置充能(%/秒)(涡轮模式，被动)"
+
 msgid "tank_params/kg"
 msgstr "(kg)"
 
 msgid "tank_params/m"
 msgstr "(米)"
+
+msgid "tank_params/maxAccuracyLevel"
+msgstr "最大精度等级"
 
 msgid "tank_params/maxAmmo"
 msgstr "弹药"
@@ -6126,6 +6321,9 @@ msgstr "最大车轮转向角度"
 
 msgid "tank_params/mm"
 msgstr "(毫米)"
+
+msgid "tank_params/movementTraverseDispersionTurbo"
+msgstr "移动时的炮弹散布范围(%)(涡轮模式)"
 
 msgid "tank_params/mph"
 msgstr "(千米/小时)"
@@ -6148,20 +6346,65 @@ msgstr "(马力)"
 msgid "tank_params/param12"
 msgstr "越野能力"
 
+msgid "tank_params/passiveCoincideceShootingCharge"
+msgstr "重合式机电瞄准镜充能(%/秒)(交战模式，被动)"
+
+msgid "tank_params/perActivation"
+msgstr "(每次激活)"
+
 msgid "tank_params/percent"
 msgstr " "
 
 msgid "tank_params/piercingPower"
 msgstr "标准炮弹穿透力"
 
+msgid "tank_params/pillboxHorizontalRotationSpeed"
+msgstr "水平旋转速度"
+
+msgid "tank_params/pillboxSwitchOffTime"
+msgstr "切换到行驶模式"
+
+msgid "tank_params/pillboxSwitchOnTime"
+msgstr "切换到堡垒模式"
+
+msgid "tank_params/pillboxVerticalRotationSpeed"
+msgstr "垂直俯仰速度"
+
 msgid "tank_params/pitchLimits"
 msgstr "火炮俯/仰角"
+
+msgid "tank_params/powerModeDuration"
+msgstr "最高性能"
+
+msgid "tank_params/powerModeThreshold"
+msgstr "模式激活"
+
+msgid "tank_params/preheatDispersionCap"
+msgstr "全预热时的炮弹散布范围"
+
+msgid "tank_params/preheatDmgCap"
+msgstr "全预热时的平均损伤"
+
+msgid "tank_params/preheatSpeedLimit"
+msgstr "速度限制"
+
+msgid "tank_params/preheatTimeToFull"
+msgstr "全预热所需时间"
+
+msgid "tank_params/preheatTimeToZero"
+msgstr "零预热所需时间"
+
+msgid "tank_params/preheatTransitionDelay"
+msgstr "预热转换延迟"
 
 msgid "tank_params/pt"
 msgstr "(马力/吨)"
 
 msgid "tank_params/qpt"
 msgstr "(次数/持续时间)"
+
+msgid "tank_params/quantity"
+msgstr "(发)"
 
 msgid "tank_params/radarCooldown"
 msgstr "无线电探测冷却时间"
@@ -6171,6 +6414,12 @@ msgstr "探测范围"
 
 msgid "tank_params/radioDistance"
 msgstr "通信距离"
+
+msgid "tank_params/reactivationDelay"
+msgstr "再激活延迟"
+
+msgid "tank_params/reactivationLimit"
+msgstr "再激活限制"
 
 msgid "tank_params/relativeArmor"
 msgstr "防护"
@@ -6190,8 +6439,14 @@ msgstr "点亮"
 msgid "tank_params/reloadTime"
 msgstr "射速"
 
+msgid "tank_params/reloadTimeCoincidence"
+msgstr "装填时间(%)(重合式机电瞄准镜)"
+
 msgid "tank_params/reloadTimeSecs"
 msgstr "装填时间"
+
+msgid "tank_params/reverseSpeedReductionWithBoosters"
+msgstr "倒车速度降低(激活火箭助推器后)"
 
 msgid "tank_params/rocketAccelerationEnginePower"
 msgstr "发动机功率(激活火箭助推器后)"
@@ -6204,6 +6459,18 @@ msgstr "最大速度/倒车速度(激活火箭助推器后)"
 
 msgid "tank_params/s"
 msgstr "(秒)"
+
+msgid "tank_params/secondaryAvgDamage"
+msgstr "单发炮弹平均损伤"
+
+msgid "tank_params/secondaryAvgPiercingPower"
+msgstr "平均炮弹穿透力"
+
+msgid "tank_params/secondaryReloadTimeSecs"
+msgstr "辅助武器装填时间"
+
+msgid "tank_params/secondaryTotalBurstSize"
+msgstr "辅助武器炮弹"
 
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "穿透力:"
@@ -6223,6 +6490,12 @@ msgstr "(发/分钟)"
 msgid "tank_params/sqm"
 msgstr "(m²)"
 
+msgid "tank_params/stationaryReloadSwitchOffTime"
+msgstr "中断装填"
+
+msgid "tank_params/stationaryReloadSwitchOnTime"
+msgstr "激活装填"
+
 msgid "tank_params/stunDurationList"
 msgstr "弹震持续时间"
 
@@ -6231,6 +6504,9 @@ msgstr "最大弹震持续时间"
 
 msgid "tank_params/stunMinDuration"
 msgstr "最小弹震持续时间"
+
+msgid "tank_params/switchEngineModeBothModes"
+msgstr "切换发动机模式时间"
 
 msgid "tank_params/switchOffTime"
 msgstr "切换到行驶模式"
@@ -6246,6 +6522,15 @@ msgstr "(吨)"
 
 msgid "tank_params/timeOfReaching"
 msgstr "行驶100米的时间"
+
+msgid "tank_params/topSpeedWithBoosters"
+msgstr "最大速度(激活火箭助推器后)"
+
+msgid "tank_params/traverseSpeedReductionWithBoosters"
+msgstr "旋转速度降低(激活火箭助推器后)"
+
+msgid "tank_params/turboSpeedCap"
+msgstr "最大速度/倒车速度(千米/小时)(涡轮模式)"
 
 msgid "tank_params/turboshaftBurstFireRate"
 msgstr "短弹夹(涡轮)"
@@ -6326,7 +6611,7 @@ msgid "tank_params/values/param12/value3"
 msgstr "差"
 
 msgid "tank_params/vehicleWeight"
-msgstr "重量/最大载重量"
+msgstr "重量"
 
 msgid "tank_params/vpm"
 msgstr "(HP/分钟)"
@@ -6902,7 +7187,7 @@ msgid "vehicleInfo/params/twinGunTopSpeed"
 msgstr "最大速度/倒车速度(单发射击模式/齐射射击模式)(千米/小时)"
 
 msgid "vehicleInfo/params/vehicleWeight"
-msgstr "重量/最大载重量(吨)"
+msgstr "重量(吨)"
 
 msgid "vehicleInfo/params/wheeledSpeedModeSpeed"
 msgstr "最大速度/倒车速度(快速，km/h)"

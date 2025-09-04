@@ -19,6 +19,18 @@
 	</boundingBox>
 	<roundLength>900</roundLength>
 	<minimap>spaces/112_eiffel_tower_ctf/mmap.dds</minimap>
+	<minimapLayers>
+		<layer>
+			<layerId>layer1</layerId>
+			<layerType>base</layerType>
+			<path>spaces/112_eiffel_tower_ctf/mmap_bridge_bombing_01_zone.dds</path>
+		</layer>
+		<layer>
+			<layerId>layer2</layerId>
+			<layerType>base</layerType>
+			<path>spaces/112_eiffel_tower_ctf/mmap_bridge_bombing_01_destroyed.dds</path>
+		</layer>
+	</minimapLayers>
 	<vehicleCamouflageKind>summer</vehicleCamouflageKind>
 	<maxPlayersInTeam>15</maxPlayersInTeam>
 	<wwmusicSetup>
@@ -32,6 +44,16 @@
 		<wwmusicResultDefeat>music_paris_result_defeat_cn</wwmusicResultDefeat>
 	</wwmusicSetup>
 	<wwambientSound>ambient_wind_summer_01</wwambientSound>
+	<soundRemapping>
+		<loadBanks>
+			<bank>
+				<name>destructible_objects.bnk</name>
+			</bank>
+			<bank>
+				<name>destructible_objects.pck</name>
+			</bank>
+		</loadBanks>
+	</soundRemapping>
 	<umbraEnabled>1</umbraEnabled>
 	<batchingEnabled>0</batchingEnabled>
 	<water>

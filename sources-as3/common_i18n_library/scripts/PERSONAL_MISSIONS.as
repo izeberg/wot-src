@@ -43,6 +43,12 @@ package
       
       public static const OPERATIONS_TITLE7:String = "#personal_missions:operations/title7";
       
+      public static const OPERATIONS_TITLE8:String = "#personal_missions:operations/title8";
+      
+      public static const OPERATIONS_TITLE9:String = "#personal_missions:operations/title9";
+      
+      public static const OPERATIONS_TITLE10:String = "#personal_missions:operations/title10";
+      
       public static const OPERATIONS_CURRENT_DESC:String = "#personal_missions:operations/current/desc";
       
       public static const OPERATIONS_COMPLETED_DESC:String = "#personal_missions:operations/completed/desc";
@@ -64,6 +70,10 @@ package
       public static const OPERATIONTITLE_LABEL_NOVEHICLE_REGULAR:String = "#personal_missions:operationTitle/label/noVehicle/regular";
       
       public static const OPERATIONTITLE_LABEL_NOVEHICLE_PM2:String = "#personal_missions:operationTitle/label/noVehicle/pm2";
+      
+      public static const OPERATIONTITLE_LABEL_NOTSTARTEDNOVEHICLE:String = "#personal_missions:operationTitle/label/notStartedNoVehicle";
+      
+      public static const OPERATIONTITLE_LABEL_NOTSTARTED:String = "#personal_missions:operationTitle/label/notStarted";
       
       public static const OPERATIONTITLE_LABEL_DONE:String = "#personal_missions:operationTitle/label/done";
       
@@ -108,6 +118,8 @@ package
       public static const PERSONALMISSIONAWARDVIEW_BOTTOMTABS_AWARDS_MAINAWARDS:String = "#personal_missions:PersonalMissionAwardView/bottomTabs/awards/mainAwards";
       
       public static const PERSONALMISSIONAWARDVIEW_BOTTOMTABS_AWARDS_ADDITIONALAWARDS:String = "#personal_missions:PersonalMissionAwardView/bottomTabs/awards/additionalAwards";
+      
+      public static const DETAILEDVIEW_CONDITIONLABEL:String = "#personal_missions:detailedView/conditionLabel";
       
       public static const DETAILEDVIEW_CONDITIONSLABEL:String = "#personal_missions:detailedView/conditionslabel";
       
@@ -191,11 +203,19 @@ package
       
       public static const STATUSPANEL_STATUS_IMPROVE:String = "#personal_missions:statusPanel/status/improve";
       
+      public static const STATUSPANEL_STATUS_SUSPENDED:String = "#personal_missions:statusPanel/status/suspended";
+      
       public static const STATUSPANEL_FREESHEETBTN_LABEL:String = "#personal_missions:statusPanel/freeSheetBtn/label";
       
       public static const STATUSPANEL_FREESHEETS:String = "#personal_missions:statusPanel/freeSheets";
       
       public static const STATUSPANEL_PAWNEDSHEETS:String = "#personal_missions:statusPanel/pawnedSheets";
+      
+      public static const STATUSPANEL_RESUMECOMPAING_LABEL:String = "#personal_missions:statusPanel/resumeCompaing/label";
+      
+      public static const STATUSPANEL_PROCEEDEXECUTION_LABEL:String = "#personal_missions:statusPanel/proceedExecution/label";
+      
+      public static const QUESTSTATUS_TANKCONDITION:String = "#personal_missions:questStatus/tankCondition";
       
       public static const FREESHEETPOPOVER_TITLE:String = "#personal_missions:freeSheetPopover/title";
       
@@ -552,6 +572,18 @@ package
       public static const BONUS_DESCR_ATTEMPTS_CARD:String = "#personal_missions:bonus/descr/attempts/card";
       
       public static const BONUS_DESCR_ATTEMPTS_POSTBATTLE:String = "#personal_missions:bonus/descr/attempts/postBattle";
+      
+      public static const PAGES_BUTTON_INFOPAGE_DESCRIPTION:String = "#personal_missions:pages/button/infopage/description";
+      
+      public static const PAGES_BUTTON_VIDEO_DESCRIPTION:String = "#personal_missions:pages/button/video/description";
+      
+      public static const NAVIGATION_BACKBUTTON_CAMPAIGNSELECTOR:String = "#personal_missions:navigation/backButton/campaignSelector";
+      
+      public static const NAVIGATION_BACKBUTTON_DASHBOARD:String = "#personal_missions:navigation/backButton/dashboard";
+      
+      public static const NAVIGATION_BACKBUTTON_ASSEMBLING:String = "#personal_missions:navigation/backButton/assembling";
+      
+      public static const NAVIGATION_BACKBUTTON_MISSIONS:String = "#personal_missions:navigation/backButton/missions";
       
       public static const SIDEBAR_VEHICLES_ENUM:Array = [SIDEBAR_VEHICLES_LIGHTTANK,SIDEBAR_VEHICLES_MEDIUMTANK,SIDEBAR_VEHICLES_HEAVYTANK,SIDEBAR_VEHICLES_AT_SPG,SIDEBAR_VEHICLES_SPG];
       

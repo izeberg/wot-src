@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_014_Wires/normal/lod2/hpm_014_Wires_32</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.110513 -0.072260 -33.398182</min>
+		<max>0.110513 0.070567 33.391239</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_014_Wires/normal/lod1/hpm_014_Wires_32</nodefullVisual>
+</root>

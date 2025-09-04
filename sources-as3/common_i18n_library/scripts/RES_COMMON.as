@@ -21,9 +21,13 @@ package
       
       public static const MAPS_ICONS_BATTLEPASS_HOLIDAY_FINAL_SCREEN_BG:String = "../maps/icons/battlePass/holiday_final_screen/bg.png";
       
+      public static const MAPS_ICONS_BATTLEPASS_POST_PROGRESSION_FOOTER_EXTRACHAPTER_BG:String = "../maps/icons/battlePass/post_progression/footer/extraChapter/bg.png";
+      
       public static const MAPS_ICONS_BATTLEPASS_POST_PROGRESSION_FOOTER_PURCHASEIP_BG:String = "../maps/icons/battlePass/post_progression/footer/purchaseIP/bg.png";
       
       public static const MAPS_ICONS_BATTLEPASS_PROGRESSION_BG:String = "../maps/icons/battlePass/progression/bg.png";
+      
+      public static const MAPS_ICONS_BATTLEPASS_WIDGET_BACKGROUND_DEFAULT_BG:String = "../maps/icons/battlePass/widget/background/default/bg.png";
       
       public static const MAPS_ICONS_BATTLEROYALE_BATTLERESULT_BG:String = "../maps/icons/battleRoyale/battleResult/bg.png";
       
@@ -63,9 +67,13 @@ package
       
       public static const MAPS_ICONS_RANKEDBATTLES_AWARDS_BG:String = "../maps/icons/rankedBattles/awards/bg.png";
       
+      public static const MAPS_ICONS_SKILLTREE_NOTIFICATIONS_PERK_AVAILABLE_BG:String = "../maps/icons/skillTree/notifications/perk_available/bg.png";
+      
       public static const MAPS_ICONS_TANKMEN_ROLES_BIG_DOG:String = "../maps/icons/tankmen/roles/big/dog.png";
       
       public static const MAPS_ICONS_TANKMEN_SKILLS_BIG_NEW_SKILL:String = "../maps/icons/tankmen/skills/big/new_skill.png";
+      
+      public static const MAPS_ICONS_UI_POPOVER_BG:String = "../maps/icons/ui/popover/bg.png";
       
       public static const MAPS_UIKIT_DIALOG_TEMPLATES_SELECT_OPTION_BG:String = "../maps/uiKit/dialog_templates/select_option/bg.png";
        

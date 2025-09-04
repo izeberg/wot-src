@@ -102,6 +102,14 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
+			<type>BW::variables::VariableGetterComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<flags>3</flags>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
 			<type>GunEffect</type>
 			<version>1</version>
 			<component>
@@ -190,14 +198,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>KineticEnergyGetter</type>
-			<version>1</version>
-			<component>
-				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
-				<flags>3</flags>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>DistanceToCannonGetterComponent</type>
 			<version>1</version>
 			<component>
@@ -240,7 +240,7 @@
 										<object>
 											<property>
 												<name>type</name>
-												<value>1</value>
+												<value>0</value>
 											</property>
 											<property>
 												<name>value</name>
@@ -272,6 +272,121 @@
 								</object>
 							</item>
 						</collection>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::EffectInitPropertyCalcComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>fc03df65-dd1c-46bb-8f3c-f824dd1c2002</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>calcs</name>
+						<object>
+							<property>
+								<name>calculations</name>
+								<collection>
+									<item>
+										<object>
+											<property>
+												<name>dest</name>
+												<object>
+													<property>
+														<name>compType</name>
+														<value>RTPC</value>
+													</property>
+													<property>
+														<name>propertyPath</name>
+														<value>rtpcs.RTPC_ext_weapon_energy.value</value>
+													</property>
+												</object>
+											</property>
+											<property>
+												<name>calcExpr</name>
+												<object>
+													<property>
+														<name>expressionType</name>
+														<value>BW::variables::MultiplyExpression</value>
+													</property>
+													<property>
+														<name>expr</name>
+														<object>
+															<property>
+																<name>leftOp</name>
+																<object>
+																	<property>
+																		<name>expressionType</name>
+																		<value>BW::variables::VariableExpression</value>
+																	</property>
+																	<property>
+																		<name>expr</name>
+																		<object>
+																			<property>
+																				<name>variable</name>
+																				<object>
+																					<property>
+																						<name>name</name>
+																						<value>vehicle/gun/caliber</value>
+																					</property>
+																				</object>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</property>
+															<property>
+																<name>rightOp</name>
+																<object>
+																	<property>
+																		<name>expressionType</name>
+																		<value>BW::variables::VariableExpression</value>
+																	</property>
+																	<property>
+																		<name>expr</name>
+																		<object>
+																			<property>
+																				<name>variable</name>
+																				<object>
+																					<property>
+																						<name>name</name>
+																						<value>vehicle/gun/gunLength</value>
+																					</property>
+																				</object>
+																			</property>
+																		</object>
+																	</property>
+																</object>
+															</property>
+														</object>
+													</property>
+												</object>
+											</property>
+										</object>
+									</item>
+								</collection>
+							</property>
+						</object>
+					</property>
+					<property>
+						<name>activeExpr</name>
+						<object>
+							<property>
+								<name>expressionType</name>
+								<value>BW::variables::ConstantBoolExpression</value>
+							</property>
+							<property>
+								<name>expr</name>
+								<object>
+									<property>
+										<name>value</name>
+										<value>1</value>
+									</property>
+								</object>
+							</property>
+						</object>
 					</property>
 				</config>
 			</component>

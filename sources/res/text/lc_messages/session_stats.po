@@ -64,6 +64,9 @@ msgstr "全部银币"
 msgid "label/totalCrystal"
 msgstr "全部债券"
 
+msgid "label/totalXp"
+msgstr "总经验"
+
 msgid "label/victory"
 msgstr "胜利"
 
@@ -290,20 +293,19 @@ msgid "tankInfo/status/warning"
 msgstr "进行一场战斗"
 
 msgid "tooltip/battleType/hasBattles/body"
-msgstr "战斗场次：%(value)s。期间统计在每场战斗后更新且不会自动重置。战役模式不计入期间统计。"
+msgstr "战斗场次: %(value)s。每场战斗后，期间统计将更新，且不会自动重置。"
 
 msgid "tooltip/battleType/hasBattles/daily/body"
-msgstr "战斗场次：%(value)s。期间统计每场战斗后更新，每24小时自动重置。战役模式不计入期间统计。"
+msgstr "战斗场次: %(value)s。每场战斗后，期间统计将更新。数值每24小时自动重置。"
 
 msgid "tooltip/battleType/header"
 msgstr "%(battleType)s模式期间统计信息"
 
 msgid "tooltip/battleType/noBattles/body"
-msgstr ""
-"期间统计在完成首场战斗后显示。每场战斗后，期间统计将更新且不会自动重置。可在设置中更改自动重置的频率。数值也可以手动重置。战役模式不计入期间统计。"
+msgstr "期间统计在完成首场战斗后显示。每场战斗后，期间统计将更新，且不会自动重置。自动重置的频率可在设置中更改。数值也可以手动重置。"
 
 msgid "tooltip/battleType/noBattles/daily/body"
-msgstr "期间统计在完成首场战斗后显示，并在每场战斗后更新，每24小时自动重置。战役模式不计入期间统计。"
+msgstr "期间统计在完成首场战斗后显示，并在每场战斗后更新。数值每24小时自动重置。"
 
 msgid "tooltip/clearButton/available/body"
 msgstr "点击重置当前期间统计。"
@@ -332,11 +334,11 @@ msgstr "WTR评级"
 msgid "tooltip/mainBtn/body/disabled"
 msgstr "期间统计信息在所选模式下不可用。"
 
-msgid "tooltip/mainBtn/body/disabled/winback"
-msgstr "期间统计在热身模式中不可用。"
-
 msgid "tooltip/mainBtn/body/enabled"
 msgstr "您在战斗中的数据表现，以及您的游戏货币收支。"
+
+msgid "tooltip/mainBtn/body/winback"
+msgstr "期间统计在热身模式中不可用。"
 
 msgid "tooltip/mainBtn/header"
 msgstr "期间统计"

@@ -103,6 +103,10 @@ package
       
       public static const SELECTSENIORITYAWARDS:String = "#waiting:selectSeniorityAwards";
       
+      public static const SWITCHCAMPAIGN:String = "#waiting:switchCampaign";
+      
+      public static const ACTIVATECAMPAIGN:String = "#waiting:activateCampaign";
+      
       public static const TECHMAINTENANCEEQUIPMENTS:String = "#waiting:techMaintenanceEquipments";
       
       public static const TECHMAINTENANCE:String = "#waiting:techMaintenance";

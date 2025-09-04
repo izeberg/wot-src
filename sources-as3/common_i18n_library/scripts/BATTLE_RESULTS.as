@@ -57,6 +57,8 @@ package
       
       public static const BATTLERESULT_TEAM_PRESTIGEPOINTS:String = "#battle_results:battleResult/team/prestigePoints";
       
+      public static const BATTLERESULT_COMP7LIGHT_TEAM_PRESTIGEPOINTS:String = "#battle_results:battleResult/comp7Light/team/prestigePoints";
+      
       public static const CYBERSPORT_BTNTOTEAMPROFILE:String = "#battle_results:cyberSport/btnToTeamProfile";
       
       public static const CYBERSPORT_POINTS:String = "#battle_results:cyberSport/points";
@@ -67,9 +69,21 @@ package
       
       public static const CYBERSPORT_STATUS_TIE:String = "#battle_results:cyberSport/status/tie";
       
+      public static const STATUS_WIN:String = "#battle_results:status/win";
+      
+      public static const STATUS_LOSE:String = "#battle_results:status/lose";
+      
+      public static const STATUS_TIE:String = "#battle_results:status/tie";
+      
       public static const NODATA:String = "#battle_results:noData";
       
       public static const COMMON_ARENA_FULLNAME:String = "#battle_results:common/arena/fullName";
+      
+      public static const COMMON_ARENA_NAMEANDMODE:String = "#battle_results:common/arena/nameAndMode";
+      
+      public static const COMMON_STARTTIME:String = "#battle_results:common/startTime";
+      
+      public static const COMMON_PLAYER_NAMEWITHCLAN:String = "#battle_results:common/player/nameWithClan";
       
       public static const FINISH_PLAYERTANK_SEPARATOR:String = "#battle_results:finish/playerTank/separator";
       
@@ -123,6 +137,8 @@ package
       
       public static const COMMON_BATTLEEFFICIENCY_TITLE:String = "#battle_results:common/battleEfficiency/title";
       
+      public static const COMMON_BATTLEEFFICIENCY_UPPERCASED_TITLE:String = "#battle_results:common/battleEfficiency/uppercased_title";
+      
       public static const COMMON_BATTLEEFFICIENCYWITHOUTOREDERS_TITLE:String = "#battle_results:common/battleEfficiencyWithoutOreders/title";
       
       public static const COMMON_BATTLEEFFICIENCYWITHSKILLS_TITLE:String = "#battle_results:common/battleEfficiencyWithSkills/title";
@@ -137,9 +153,13 @@ package
       
       public static const COMMON_BATTLEEFFICIENCY_ALLYBASE:String = "#battle_results:common/battleEfficiency/allyBase";
       
+      public static const COMMON_BATTLEEFFICIENCY_BASECAPTURE:String = "#battle_results:common/battleEfficiency/baseCapture";
+      
       public static const COMMON_BATTLEEFFICIENCY_ENEMYBASE:String = "#battle_results:common/battleEfficiency/enemyBase";
       
       public static const COMMON_BATTLEEFFICIENCY_NEUTRALBASE:String = "#battle_results:common/battleEfficiency/neutralBase";
+      
+      public static const COMMON_BATTLEEFFICIENCY_NOEFFICIENCY:String = "#battle_results:common/battleEfficiency/noEfficiency";
       
       public static const COMMON_QUESTS_NOPROGRESS:String = "#battle_results:common/quests/noprogress";
       
@@ -309,19 +329,43 @@ package
       
       public static const COMMON_VEHICLESTATE_DEAD0:String = "#battle_results:common/vehicleState/dead0";
       
+      public static const COMMON_VEHICLESTATE_DEAD0_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead0_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD0_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead0_with_killername_and_clan";
+      
       public static const COMMON_VEHICLESTATE_DEAD1:String = "#battle_results:common/vehicleState/dead1";
+      
+      public static const COMMON_VEHICLESTATE_DEAD1_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead1_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD1_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead1_with_killername_and_clan";
       
       public static const COMMON_VEHICLESTATE_DEAD2:String = "#battle_results:common/vehicleState/dead2";
       
+      public static const COMMON_VEHICLESTATE_DEAD2_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead2_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD2_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead2_with_killername_and_clan";
+      
       public static const COMMON_VEHICLESTATE_DEAD3:String = "#battle_results:common/vehicleState/dead3";
+      
+      public static const COMMON_VEHICLESTATE_DEAD3_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead3_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD3_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead3_with_killername_and_clan";
       
       public static const COMMON_VEHICLESTATE_DEAD4:String = "#battle_results:common/vehicleState/dead4";
       
       public static const COMMON_VEHICLESTATE_DEAD5:String = "#battle_results:common/vehicleState/dead5";
       
+      public static const COMMON_VEHICLESTATE_DEAD5_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead5_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD5_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead5_with_killername_and_clan";
+      
       public static const COMMON_VEHICLESTATE_DEAD6:String = "#battle_results:common/vehicleState/dead6";
       
       public static const COMMON_VEHICLESTATE_DEAD7:String = "#battle_results:common/vehicleState/dead7";
+      
+      public static const COMMON_VEHICLESTATE_DEAD7_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead7_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD7_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead7_with_killername_and_clan";
       
       public static const COMMON_VEHICLESTATE_DEAD12:String = "#battle_results:common/vehicleState/dead12";
       
@@ -332,6 +376,10 @@ package
       public static const COMMON_VEHICLESTATE_DEAD29:String = "#battle_results:common/vehicleState/dead29";
       
       public static const COMMON_VEHICLESTATE_DEAD30:String = "#battle_results:common/vehicleState/dead30";
+      
+      public static const COMMON_VEHICLESTATE_DEAD30_WITH_KILLERNAME:String = "#battle_results:common/vehicleState/dead30_with_killername";
+      
+      public static const COMMON_VEHICLESTATE_DEAD30_WITH_KILLERNAME_AND_CLAN:String = "#battle_results:common/vehicleState/dead30_with_killername_and_clan";
       
       public static const COMMON_VEHICLESTATE_DEAD35:String = "#battle_results:common/vehicleState/dead35";
       
@@ -353,13 +401,21 @@ package
       
       public static const COMMON_PREMIUMBONUS:String = "#battle_results:common/premiumBonus";
       
+      public static const COMMON_PREMIUMBONUS_EARNMORE:String = "#battle_results:common/premiumBonus/earnMore";
+      
+      public static const COMMON_PREMIUMBONUS_BONUSMULTIPLIER:String = "#battle_results:common/premiumBonus/bonusMultiplier";
+      
       public static const COMMON_DETAILS_PREMIUMPLUS_CREDITS:String = "#battle_results:common/details/premiumPlus/credits";
+      
+      public static const COMMON_DETAILS_PREMIUMADVERTISING_CREDITS:String = "#battle_results:common/details/premiumAdvertising/credits";
       
       public static const COMMON_DETAILS_PREMIUMPLUS_PREMIUM:String = "#battle_results:common/details/premiumPlus/premium";
       
       public static const COMMON_DETAILS_PREMIUMPLUS_SQUAD:String = "#battle_results:common/details/premiumPlus/squad";
       
       public static const COMMON_DETAILS_PREMIUMPLUS_BONUS:String = "#battle_results:common/details/premiumPlus/bonus";
+      
+      public static const COMMON_DETAILS_PREMIUMADVERTISING_BONUS:String = "#battle_results:common/details/premiumAdvertising/bonus";
       
       public static const COMMON_DETAILS_PREMIUMPLUS_QUESTS:String = "#battle_results:common/details/premiumPlus/quests";
       
@@ -383,17 +439,27 @@ package
       
       public static const COMMON_PREMIUMBONUS_TANKSTATECHANGED:String = "#battle_results:common/premiumBonus/tankStateChanged";
       
+      public static const COMMON_PREMIUMBONUS_TANKSTATECHANGEDWITHINFO:String = "#battle_results:common/premiumBonus/tankStateChangedWithInfo";
+      
       public static const COMMON_PREMIUMBONUS_TANKMENSTATECHANGED:String = "#battle_results:common/premiumBonus/tankmenStateChanged";
+      
+      public static const COMMON_PREMIUMBONUS_TANKMENSTATECHANGEDWITHINFO:String = "#battle_results:common/premiumBonus/tankmenStateChangedWithInfo";
       
       public static const COMMON_PREMIUMBONUS_ISXPTOTMENENABLED:String = "#battle_results:common/premiumBonus/isXPToTmenEnabled";
       
+      public static const COMMON_PREMIUMBONUS_ISXPTOTMENENABLEDWITHINFO:String = "#battle_results:common/premiumBonus/isXPToTmenEnabledWithInfo";
+      
       public static const COMMON_PREMIUMBONUS_ISXPTOTMENDISABLED:String = "#battle_results:common/premiumBonus/isXPToTmenDisabled";
+      
+      public static const COMMON_PREMIUMBONUS_ISXPTOTMENDISABLEDWITHINFO:String = "#battle_results:common/premiumBonus/isXPToTmenDisabledWithInfo";
       
       public static const COMMON_PREMIUMBONUS_BONUSLEFT:String = "#battle_results:common/premiumBonus/bonusLeft";
       
       public static const COMMON_PLUSBONUS_BONUSLEFTADDITIONALTEXT:String = "#battle_results:common/plusBonus/bonusLeftAdditionalText";
       
       public static const COMMON_PLUSBONUS_EARNINGSINFORMATION:String = "#battle_results:common/plusBonus/earningsInformation";
+      
+      public static const COMMON_PLUSBONUS_EARNEDMESSAGE:String = "#battle_results:common/plusBonus/earnedMessage";
       
       public static const COMMON_PLUSBONUS_PREMIUMPLUSADD:String = "#battle_results:common/plusBonus/premiumPlusAdd";
       
@@ -412,6 +478,10 @@ package
       public static const TEAM_STATS_OWNTEAM:String = "#battle_results:team/stats/ownTeam";
       
       public static const TEAM_STATS_ENEMYTEAM:String = "#battle_results:team/stats/enemyTeam";
+      
+      public static const TEAM_STATS_ALLIES:String = "#battle_results:team/stats/allies";
+      
+      public static const TEAM_STATS_ENEMIES:String = "#battle_results:team/stats/enemies";
       
       public static const TEAM_PLAYERNUMBER_HEADER:String = "#battle_results:team/playerNumber/header";
       
@@ -645,6 +715,8 @@ package
       
       public static const DETAILS_XP:String = "#battle_results:details/xp";
       
+      public static const DETAILS_XP_ABBR:String = "#battle_results:details/xp_abbr";
+      
       public static const DETAILS_RESOURCE:String = "#battle_results:details/resource";
       
       public static const DETAILS_CRYSTAL:String = "#battle_results:details/crystal";
@@ -679,7 +751,13 @@ package
       
       public static const DETAILS_CALCULATIONS_WOTPLUS:String = "#battle_results:details/calculations/wotPlus";
       
+      public static const DETAILS_CALCULATIONS_WOTPLUSBONUS:String = "#battle_results:details/calculations/wotPlusBonus";
+      
       public static const DETAILS_CALCULATIONS_XPRECORD:String = "#battle_results:details/calculations/xpRecord";
+      
+      public static const DETAILS_CALCULATIONS_XPRECORDSIMPLE:String = "#battle_results:details/calculations/xpRecordSimple";
+      
+      public static const DETAILS_CALCULATIONS_MAXIMUM:String = "#battle_results:details/calculations/maximum";
       
       public static const DETAILS_CALCULATIONS_SQUADBONUS:String = "#battle_results:details/calculations/squadBonus";
       
@@ -692,6 +770,8 @@ package
       public static const DETAILS_CALCULATIONS_FAIRPLAYVIOLATION_EPIC_DESERTER:String = "#battle_results:details/calculations/fairPlayViolation/epic_deserter";
       
       public static const DETAILS_CALCULATIONS_FAIRPLAYVIOLATION_COMP7_DESERTER:String = "#battle_results:details/calculations/fairPlayViolation/comp7_deserter";
+      
+      public static const DETAILS_CALCULATIONS_FAIRPLAYVIOLATION_COMP7_LIGHT_DESERTER:String = "#battle_results:details/calculations/fairPlayViolation/comp7_light_deserter";
       
       public static const DETAILS_CALCULATIONS_FAIRPLAYVIOLATION_AFK:String = "#battle_results:details/calculations/fairPlayViolation/afk";
       
@@ -708,6 +788,8 @@ package
       public static const DETAILS_CALCULATIONS_FRIENDLYFIRECOMPENSATION:String = "#battle_results:details/calculations/friendlyFireCompensation";
       
       public static const DETAILS_CALCULATIONS_PLAYERRANKXP:String = "#battle_results:details/calculations/playerRankXP";
+      
+      public static const DETAILS_CALCULATIONS_AUTORESUPPLY:String = "#battle_results:details/calculations/autoResupply";
       
       public static const DETAILS_CALCULATIONS_AUTOREPAIR:String = "#battle_results:details/calculations/autoRepair";
       
@@ -727,6 +809,8 @@ package
       
       public static const DETAILS_CALCULATIONS_ADDITIONALBONUS:String = "#battle_results:details/calculations/additionalBonus";
       
+      public static const DETAILS_CALCULATIONS_MANAGEABLEXPBONUS:String = "#battle_results:details/calculations/manageableXpBonus";
+      
       public static const DETAILS_CALCULATIONS_TOTAL:String = "#battle_results:details/calculations/total";
       
       public static const DETAILS_CALCULATIONS_PIGGYBANKINFO:String = "#battle_results:details/calculations/piggyBankInfo";
@@ -741,9 +825,9 @@ package
       
       public static const DETAILS_CALCULATIONS_REFERRALBONUS:String = "#battle_results:details/calculations/referralBonus";
       
-      public static const DETAILS_CALCULATIONS_REFERRALBONUS_SIMPLELABEL:String = "#battle_results:details/calculations/referralBonus/simpleLabel";
+      public static const DETAILS_CALCULATIONS_REFERRALBONUS_FULLLABEL:String = "#battle_results:details/calculations/referralBonus/fullLabel";
       
-      public static const DETAILS_CALCULATIONS_VETERANBONUS:String = "#battle_results:details/calculations/veteranBonus";
+      public static const DETAILS_CALCULATIONS_REFERRALBONUS_SIMPLELABEL:String = "#battle_results:details/calculations/referralBonus/simpleLabel";
       
       public static const DETAILS_CALCULATIONS_MULTIPLIERINFO_HEADER:String = "#battle_results:details/calculations/multiplierInfo/header";
       
@@ -835,6 +919,10 @@ package
       
       public static const BATTLERESULT_TEAM_PRESTIGEPOINTS_BODY:String = "#battle_results:battleResult/team/prestigePoints/body";
       
+      public static const BATTLERESULT_COMP7LIGHT_TEAM_PRESTIGEPOINTS_HEADER:String = "#battle_results:battleResult/comp7Light/team/prestigePoints/header";
+      
+      public static const BATTLERESULT_COMP7LIGHT_TEAM_PRESTIGEPOINTS_BODY:String = "#battle_results:battleResult/comp7Light/team/prestigePoints/body";
+      
       public static const TEAM_STATS_PARAMETER_SHOTS:String = "#battle_results:team/stats/parameter/shots";
       
       public static const TEAM_STATS_PARAMETER_HITS:String = "#battle_results:team/stats/parameter/hits";
@@ -880,6 +968,40 @@ package
       public static const TOOLTIPS_STATS_FOOTER_TEXT:String = "#battle_results:tooltips/stats/footer/text";
       
       public static const COMMS_LIKES_PBS_TEXT_01:String = "#battle_results:comms/likes/pbs/text/01";
+      
+      public static const COMMS_LIKES_PBS_TOOLTIP_HEADER:String = "#battle_results:comms/likes/pbs/tooltip/header";
+      
+      public static const COMMS_LIKES_PBS_TOOLTIP_BODY:String = "#battle_results:comms/likes/pbs/tooltip/body";
+      
+      public static const COMMS_LIKES_PBS_TOOLTIP_BODYSINGLE:String = "#battle_results:comms/likes/pbs/tooltip/bodySingle";
+      
+      public static const BATTLERESULT_NAVIGATION_BATTLERESULTS:String = "#battle_results:battleResult/navigation/battleResults";
+      
+      public static const BATTLERESULT_NAVIGATION_TEAMEFFICIENCY:String = "#battle_results:battleResult/navigation/teamEfficiency";
+      
+      public static const BATTLERESULT_NAVIGATION_MISSIONSPROGRESS:String = "#battle_results:battleResult/navigation/missionsProgress";
+      
+      public static const BATTLERESULT_NAVIGATION_FINANCIALREPORT:String = "#battle_results:battleResult/navigation/financialReport";
+      
+      public static const BATTLERESULT_BATTLERATING_NONE_HEADER:String = "#battle_results:battleResult/battleRating/none/header";
+      
+      public static const BATTLERESULT_BATTLERATING_WORSE_HEADER:String = "#battle_results:battleResult/battleRating/worse/header";
+      
+      public static const BATTLERESULT_BATTLERATING_USUAL_HEADER:String = "#battle_results:battleResult/battleRating/usual/header";
+      
+      public static const BATTLERESULT_BATTLERATING_BETTER_HEADER:String = "#battle_results:battleResult/battleRating/better/header";
+      
+      public static const BATTLERATING_TOOLTIP_WORSE_HEADER:String = "#battle_results:battleRating/tooltip/worse/header";
+      
+      public static const BATTLERATING_TOOLTIP_WORSE_BODY:String = "#battle_results:battleRating/tooltip/worse/body";
+      
+      public static const BATTLERATING_TOOLTIP_USUAL_HEADER:String = "#battle_results:battleRating/tooltip/usual/header";
+      
+      public static const BATTLERATING_TOOLTIP_USUAL_BODY:String = "#battle_results:battleRating/tooltip/usual/body";
+      
+      public static const BATTLERATING_TOOLTIP_BETTER_HEADER:String = "#battle_results:battleRating/tooltip/better/header";
+      
+      public static const BATTLERATING_TOOLTIP_BETTER_BODY:String = "#battle_results:battleRating/tooltip/better/body";
        
       
       public function BATTLE_RESULTS()

@@ -22,6 +22,10 @@ package net.wg.gui.lobby.vehPostProgression.components
       
       public var bg:Sprite = null;
       
+      private var _topMargin:int = 0;
+      
+      private var _bottomMargin:int = 0;
+      
       private var _showDemountAllPairsBtn:Boolean = false;
       
       private var _showBottomShadowLipAlways:Boolean = false;
@@ -53,7 +57,8 @@ package net.wg.gui.lobby.vehPostProgression.components
          if(isInvalid(InvalidationType.SIZE))
          {
             this.updateDemountAllBtnPosition();
-            this.bg.height = _height;
+            this.bg.y = -this._topMargin;
+            this.bg.height = _height + this._topMargin + this._bottomMargin;
          }
       }
       
@@ -89,6 +94,28 @@ package net.wg.gui.lobby.vehPostProgression.components
       {
          this._showDemountAllPairsBtn = param1;
          invalidateData();
+      }
+      
+      public function get topMargin() : int
+      {
+         return this._topMargin;
+      }
+      
+      public function set topMargin(param1:int) : void
+      {
+         this._topMargin = param1;
+         invalidateSize();
+      }
+      
+      public function get bottomMargin() : int
+      {
+         return this._bottomMargin;
+      }
+      
+      public function set bottomMargin(param1:int) : void
+      {
+         this._bottomMargin = param1;
+         invalidateSize();
       }
       
       private function onDemountAllButtonClickHandler(param1:MouseEvent) : void

@@ -32,7 +32,8 @@ package net.wg.gui.notification
       override protected function configUI() : void
       {
          super.configUI();
-         this.redGlow.mouseChildren = this.redGlow.mouseEnabled = false;
+         this.redGlow.mouseChildren = false;
+         this.redGlow.mouseEnabled = false;
          App.utils.commons.addEmptyHitArea(this.redGlow);
          this._defaultHeight = background.y + background.height;
          this._messageWidth = background.width;

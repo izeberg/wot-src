@@ -25,8 +25,14 @@ msgstr "AEC 197"
 msgid "AEC_A189"
 msgstr "AEC A189"
 
+msgid "AEC_A189_VAT"
+msgstr "AEC A189 (VAT)"
+
 msgid "AEC_A1909"
 msgstr "AEC A190"
+
+msgid "AEC_A190_Bishop"
+msgstr "AEC A190 (\"主教\")"
 
 msgid "AEC_A7E3"
 msgstr "AEC"
@@ -37,6 +43,30 @@ msgstr "AEC 179型"
 msgid "Armstrong-Siddeley"
 msgstr "2x 阿姆斯特朗 西德利 V4"
 
+msgid "B_L_5_5_in_Gun"
+msgstr "BL 5.5英寸炮"
+
+msgid "B_L_5_5_in_Gun_207"
+msgstr "BL 5.5英寸炮 (207)"
+
+msgid "B_L_5_5_in_Gun_CSP"
+msgstr "BL 5.5英寸炮 (CSP)"
+
+msgid "B_L_7_2_in_Howitzer_Mk_6"
+msgstr "BL 7.2英寸榴弹炮 Mk.6"
+
+msgid "B_L_9_2_in_Howitzer_Mk_II"
+msgstr "BL 9.2英寸榴弹炮 Mk.II"
+
+msgid "Bedford_Twin_Six_A22"
+msgstr "贝德福德双六缸 (A22)"
+
+msgid "Bedford_Twin_Six_A22F"
+msgstr "贝德福德双六缸 (A22F)"
+
+msgid "Bedford_Twin_Six_A43"
+msgstr "贝德福德双六缸 (A43)"
+
 msgid "Bedford_Type_120"
 msgstr "贝德福德 120型"
 
@@ -44,6 +74,9 @@ msgid "British_Wireless_set_N19"
 msgstr "WS No.19特型"
 
 msgid "C13B42"
+msgstr "C.13/B.42"
+
+msgid "C13B42_7x7"
 msgstr "C.13/B.42"
 
 msgid "C13B47"
@@ -97,12 +130,6 @@ msgstr ""
 
 msgid "Cavalier_SH_short"
 msgstr "先驱者"
-
-msgid "Chassis_1_GB104_GSR_3301_Setter"
-msgstr "GSR 3301\"塞特\""
-
-msgid "Chassis_2_GB104_GSR_3301_Setter"
-msgstr "GSR 3301\"塞特\"二期"
 
 msgid "Chassis_GB01_Medium_Mark_I"
 msgstr "维克斯 Mk.I 中型坦克"
@@ -158,17 +185,23 @@ msgstr "曼蒂科尔1955"
 msgid "Chassis_GB101_FV1066_Senlac"
 msgstr "森拉克 Mk1"
 
-msgid "Chassis_GB102_LHMTV_Mk1"
+msgid "Chassis_GB102_LHMTV"
 msgstr "LHMTV Mk.I"
 
-msgid "Chassis_GB102_LHMTV_Mk2"
+msgid "Chassis_GB102_LHMTV_2"
 msgstr "LHMTV Mk.II"
 
-msgid "Chassis_GB103_GSOR3301_AVR_MK1"
-msgstr "GSOR3301 Mk.I"
+msgid "Chassis_GB103_GSOR3301_AVR_FS"
+msgstr "GSOR 3301 Mk.I"
 
-msgid "Chassis_GB103_GSOR3301_AVR_MK2"
-msgstr "GSOR3301 Mk.II"
+msgid "Chassis_GB103_GSOR3301_AVR_FS_2"
+msgstr "GSOR 3301 Mk.II"
+
+msgid "Chassis_GB104_GSR_3301_Setter"
+msgstr "GSR 3301\"塞特\""
+
+msgid "Chassis_GB104_GSR_3301_Setter_2"
+msgstr "GSR 3301\"塞特\"二期"
 
 msgid "Chassis_GB105_Black_Prince_2019"
 msgstr "A43\"黑亲王\"原型车"
@@ -225,6 +258,9 @@ msgid "Chassis_GB11_Caernarvon_2"
 msgstr "FV221A"
 
 msgid "Chassis_GB120_Concept_No_5"
+msgstr "5号概念车"
+
+msgid "Chassis_GB120_Concept_No_5_7x7"
 msgstr "5号概念车"
 
 msgid "Chassis_GB121_GSOR_1010_FB"
@@ -319,6 +355,9 @@ msgstr "涅伽尔"
 msgid "Chassis_GB146_Gabler_s_Destroyer"
 msgstr "加布勒突击战车"
 
+msgid "Chassis_GB147_FV4025_Contriver"
+msgstr "FV4025 谋划者"
+
 msgid "Chassis_GB148_FV227_Conceiver"
 msgstr "FV227 构想者"
 
@@ -341,6 +380,9 @@ msgstr "M2A4"
 
 msgid "Chassis_GB150_Churchill_VII_G"
 msgstr "\"丘吉尔\" St.G"
+
+msgid "Chassis_GB152_AT_FV230_Breaker"
+msgstr "AT-FV230 \"破碎者\""
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "\"斯图亚特\"I型"
@@ -685,6 +727,9 @@ msgstr "底特律 12V-71T柴油机"
 msgid "Ford_GAA"
 msgstr "福特 GAA"
 
+msgid "Ford_GAA_IIC"
+msgstr "福特 GAA (IIC)"
+
 msgid "Ford_V8-220"
 msgstr "福特 V8-220"
 
@@ -801,13 +846,13 @@ msgid "GB102_LHMTV_short"
 msgstr "LHMTV"
 
 msgid "GB103_GSOR3301_AVR_FS"
-msgstr "GSOR3301 AVR FS"
+msgstr "GSOR 3301 AVR FS"
 
 msgid "GB103_GSOR3301_AVR_FS_descr"
 msgstr "?empty?"
 
 msgid "GB103_GSOR3301_AVR_FS_short"
-msgstr "GSOR3301 AVR FS"
+msgstr "AVR FS"
 
 msgid "GB104_GSR_3301_Setter"
 msgstr "GSR 3301\"塞特\""
@@ -1039,6 +1084,16 @@ msgstr "卡那封"
 
 msgid "GB120_Concept_No_5"
 msgstr "5号概念车"
+
+msgid "GB120_Concept_No_5_7x7"
+msgstr "5号概念车 7v7"
+
+msgid "GB120_Concept_No_5_7x7_descr"
+msgstr ""
+"Y系对轮式重型装甲车的研发一直持续到了战后，其中一个宏大的计划被称为\"未来坦克5号概念设计\"。从本质上说，这是一辆使用轮式行走机构的坦克，计划在轮式战车具有优势的特定战场使用，如戈壁沙漠地带。它的主武器为一门105毫米火炮，足以对抗当时的中型坦克。由于主战坦克和履带式战车成为研发主流，该项目仅停留于概念阶段。"
+
+msgid "GB120_Concept_No_5_7x7_short"
+msgstr "5号概念车 7v7"
 
 msgid "GB120_Concept_No_5_descr"
 msgstr ""
@@ -1355,6 +1410,23 @@ msgstr "加布勒突击战车"
 msgid "GB146_Gabler_s_Destroyer_short_special"
 msgstr "弹夹装填系统，出色的机动性"
 
+msgid "GB147_FV4025_Contriver"
+msgstr "FV4025 谋划者"
+
+msgid "GB147_FV4025_Contriver_descr"
+msgstr ""
+"20世纪50年代末至60年代初，Y系曾积极研发双管岸防坦克。研发期间出现了一个棘手问题: "
+"由于重量过大，这些坦克的接地压强系数过高。为解决此难题，4履带坦克的构想应运而生。该设计借鉴了从S系获取的279工程情报数据，并加以修改: "
+"外侧履带比内侧更轻，悬挂系统也换装为采用垂直螺旋弹簧的Y系悬挂。整个底盘安装在开放式铆接的C型槽钢框架上；然而，因其构造过于复杂，该计划尚未开始便被终止。"
+
+msgid "GB147_FV4025_Contriver_long_special"
+msgstr ""
+"FV4025 "
+"谋划者是一辆性能均衡、无明显短板的重型坦克，无论是与其他重坦并肩进行阵地对决，还是在面对敌方猛攻时固守防线，它足以在任何战况下独当一面。双管火炮系统增强了战术灵活性，使其能根据战况需要，在精准的单发射击与毁灭性的爆发齐射间自如切换。"
+
+msgid "GB147_FV4025_Contriver_short"
+msgstr "FV4025 谋划者"
+
 msgid "GB148_FV227_Conceiver"
 msgstr "FV227 构想者"
 
@@ -1410,6 +1482,22 @@ msgstr "\"丘吉尔\" St.G"
 
 msgid "GB150_Churchill_VII_A_short_special"
 msgstr "高额的平均每分钟损伤，良好的装甲"
+
+msgid "GB152_AT_FV230_Breaker"
+msgstr "AT-FV230 \"破碎者\""
+
+msgid "GB152_AT_FV230_Breaker_descr"
+msgstr ""
+"FV230坦克计划下马后，Y系工程师提出了一个新构想: "
+"利用其底盘来设计一辆全新的自行反坦克炮。为减轻重量，工程师们将其履带宽度减至800毫米，但保留了原有的悬挂装置和底盘布局。武器方面，计划搭载一门123毫米线膛炮。该设计旨在集卓越的防护、优良的火力与不俗的机动性于一身。然而，随着反坦克导弹的兴起，该计划被终止。"
+
+msgid "GB152_AT_FV230_Breaker_long_special"
+msgstr ""
+"AT-FV230 "
+"\"破碎者\"是一辆自行反坦克炮，拥有出色的正面装甲，以及一门射速快、性能均衡的火炮。这一组合使其能够持续压制敌方，迫使他们离开防御阵地。该坦克的唯一缺点是速度较慢，但其试验型机动增强引擎系统足以弥补这一不足。"
+
+msgid "GB152_AT_FV230_Breaker_short"
+msgstr "AT-FV230 \"破碎者\""
 
 msgid "GB15_Stuart_I"
 msgstr "\"斯图亚特\" I-IV"
@@ -1538,7 +1626,7 @@ msgid "GB31_Conqueror_Gun_descr"
 msgstr "?empty?"
 
 msgid "GB31_Conqueror_Gun_short"
-msgstr "征服者GC"
+msgstr "征服者 GC"
 
 msgid "GB32_Tortoise"
 msgstr "A39\"土龟\""
@@ -1761,7 +1849,7 @@ msgstr "火炮射速高，装甲防护良好"
 msgid "GB69_Cruiser_Mk_II"
 msgstr "巡洋坦克 Mk.II"
 
-msgid "GB69_Cruiser_Mk_III_descr"
+msgid "GB69_Cruiser_Mk_II_descr"
 msgstr "?empty?"
 
 msgid "GB69_Cruiser_Mk_II_short"
@@ -2143,6 +2231,15 @@ msgstr "通用汽车 6004 6-71S"
 msgid "GMC_6-71_Mk11"
 msgstr "通用汽车 6004 6-71A"
 
+msgid "GMC_6004_6_71A_Bishop"
+msgstr "通用汽车 6004 6-71A (\"主教\")"
+
+msgid "GMC_6004_6_71A_VAT"
+msgstr "通用汽车 6004 6-71A (VAT)"
+
+msgid "GMC_6004_6_71A_Val"
+msgstr "通用汽车 6004 6-71A (Val)"
+
 msgid "GMC_6046"
 msgstr "通用汽车 6046"
 
@@ -2156,6 +2253,9 @@ msgstr ""
 
 msgid "GM_6-71_M"
 msgstr "通用汽车 6062 6-71M"
+
+msgid "General_Motors_6046_IIC"
+msgstr "通用汽车 6046 (IIC)"
 
 msgid "Guiberson_T-1020-4"
 msgstr "吉伯森 T-1020-4"
@@ -2171,6 +2271,14 @@ msgstr "L50"
 
 msgid "LandRover_Meteorite_V8"
 msgstr "路虎 流星V8"
+
+msgid "LandRover_Meteorite_V8_7x7"
+msgstr "路虎 流星V8"
+
+msgid "LandRover_Meteorite_V8_7x7_short"
+msgstr ""
+"路虎\n"
+"流星V8"
 
 msgid "LandRover_Meteorite_V8_short"
 msgstr ""
@@ -2222,6 +2330,15 @@ msgstr "米朵斯 D.A.V."
 
 msgid "Meadows_DAV_MkI"
 msgstr "米朵斯 D.A.V.O.C."
+
+msgid "Meadows_D_A_V_A13_III"
+msgstr "米朵斯 D.A.V. (A13 III)"
+
+msgid "Meadows_D_A_V_A22"
+msgstr "米朵斯 D.A.V. (A22)"
+
+msgid "Meadows_D_A_V_A22F"
+msgstr "米朵斯 D.A.V. (A22F)"
 
 msgid "Meadows_ESTB"
 msgstr "米朵斯 E.S.T.L."
@@ -2295,6 +2412,36 @@ msgstr "WS No.9"
 msgid "N9B"
 msgstr "WS No.9"
 
+msgid "Nuffield_Liberty_Mk_III_AT_2"
+msgstr "纳菲尔德·利伯蒂Mk.III (AT 2)"
+
+msgid "Nuffield_Liberty_Mk_III_AT_8"
+msgstr "纳菲尔德·利伯蒂Mk.III (AT 8)"
+
+msgid "Nuffield_Liberty_Mk_III_CSP"
+msgstr "纳菲尔德·利伯蒂Mk.III (CSP)"
+
+msgid "Nuffield_Liberty_Mk_III_III"
+msgstr "纳菲尔德·利伯蒂Mk.III (III)"
+
+msgid "Nuffield_Liberty_Mk_III_IV"
+msgstr "纳菲尔德·利伯蒂Mk.III (IV)"
+
+msgid "Nuffield_Liberty_Mk_II_AT_2"
+msgstr "纳菲尔德·利伯蒂Mk.II (AT 2)"
+
+msgid "Nuffield_Liberty_Mk_II_III"
+msgstr "纳菲尔德·利伯蒂Mk.II (III)"
+
+msgid "Nuffield_Liberty_Mk_V_AT_7"
+msgstr "纳菲尔德·利伯蒂Mk.V (AT 7)"
+
+msgid "Nuffield_Liberty_Mk_V_AT_8"
+msgstr "纳菲尔德·利伯蒂Mk.V (AT 8)"
+
+msgid "Nuffield_Liberty_Mk_V_CSP"
+msgstr "纳菲尔德·利伯蒂Mk.V (CSP)"
+
 msgid "Nuffield_liberty_MKII"
 msgstr "纳菲尔德 利伯蒂Mk.II"
 
@@ -2310,6 +2457,27 @@ msgstr "纳菲尔德 利伯蒂 Mk.IV A"
 msgid "Nuffield_liberty_MKV"
 msgstr "纳菲尔德·利伯蒂Mk.V"
 
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_A30"
+msgstr "OQF 17磅AT炮 Mk.VII (A30)"
+
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_AT_7"
+msgstr "OQF 17磅AT炮 Mk.VII (AT 7)"
+
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_AT_8"
+msgstr "OQF 17磅AT炮 Mk.VII (AT 8)"
+
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_IIC"
+msgstr "OQF 17磅AT炮 Mk.VII (IIC)"
+
+msgid "OQF_17_pdr_Gun_Mk_VII_221"
+msgstr "OQF 17磅炮 Mk.VII (221)"
+
+msgid "OQF_17_pdr_Gun_Mk_VII_A41"
+msgstr "OQF 17磅炮 Mk.VII (A41)"
+
+msgid "OQF_17_pdr_Gun_Mk_VII_A43"
+msgstr "OQF 17磅炮 Mk.VII (A43)"
+
 msgid "OQF_17pdr_Gun_Mk_IV_SH_SH"
 msgstr "OQF 17磅炮 Mk.IV SH-SH"
 
@@ -2322,8 +2490,23 @@ msgstr "OQF 17磅炮 Mk.VII B型"
 msgid "OQF_17pdr_Gun_Mk_VII_SH"
 msgstr "OQF 17磅炮 Mk.VII型"
 
+msgid "OQF_20_pdr_AT_Gun_Type_A_Barrel_AT_7"
+msgstr "OQF 20磅炮 A型炮管 (AT 7)"
+
+msgid "OQF_20_pdr_AT_Gun_Type_B_Barrel_4101"
+msgstr "OQF 20磅炮 B型炮管 (4101)"
+
 msgid "OQF_25pdr_Gun_Mk_II"
 msgstr "OQF 25磅榴弹炮 Mk.II"
+
+msgid "OQF_32_pdr_AT_Gun_A39"
+msgstr "OQF 32磅AT炮 (A39)"
+
+msgid "OQF_32_pdr_AT_Gun_AT_15"
+msgstr "OQF 32磅AT炮 (AT 15)"
+
+msgid "OQF_32_pdr_Gun_Mk_II_221"
+msgstr "OQF 32磅炮 Mk.II (221)"
 
 msgid "OQF_3pdr_Gun"
 msgstr "OQF 3磅炮 Mk.II"
@@ -2340,23 +2523,23 @@ msgstr "OQF 77mm AT炮 Mk.II"
 msgid "OQF_77mm_Gun_MkII"
 msgstr "OQF 77mm炮 Mk.II"
 
+msgid "OQF_77mm_Gun_Mk_II_A22F"
+msgstr "OQF 77mm炮 Mk.II (A22F)"
+
+msgid "OQF_77mm_Gun_Mk_II_A43"
+msgstr "OQF 77mm炮 Mk.II (A43)"
+
 msgid "OQF_77mm_HV_MK_I"
 msgstr "OQF 77mm HV炮 Mk.I"
 
 msgid "PRC_352"
 msgstr "PRC 352"
 
+msgid "Parson_s_Turbine_No_2983"
+msgstr "2983号帕森斯涡轮发动机"
+
 msgid "Paxman_Ricardo"
 msgstr "帕克斯曼 12TP"
-
-msgid "QF_105mm_AP"
-msgstr "QF 105 mm AP"
-
-msgid "QF_105mm_APC"
-msgstr "QF 105 mm APC"
-
-msgid "QF_105mm_HE"
-msgstr "QF 105 mm HE"
 
 msgid "QF_105mm_LT_Gun"
 msgstr "QF 105mm炮"
@@ -2364,11 +2547,59 @@ msgstr "QF 105mm炮"
 msgid "QF_20_pounder_S"
 msgstr "QF 20磅炮"
 
-msgid "QF_2pdr_Littlejohn"
+msgid "QF_2_Pr_Mk_IX_IV"
+msgstr "QF 2磅炮 Mk.IX (IV)"
+
+msgid "QF_2_pdr_Mk_IX_III"
+msgstr "QF 2磅炮 Mk.IX (III)"
+
+msgid "QF_2_pdr_Mk_IX_prototype_I"
+msgstr "QF 2磅炮 Mk.IX 原型 (I)"
+
+msgid "QF_2_pdr_Mk_X_A12"
+msgstr "QF 2磅炮 Mk.X (A12)"
+
+msgid "QF_2_pdr_Mk_X_A13_III"
+msgstr "QF 2磅炮 Mk.X (A13 III)"
+
+msgid "QF_2_pdr_Mk_X_A22"
+msgstr "QF 2磅炮 Mk.X (A22)"
+
+msgid "QF_2_pdr_Mk_X_B"
 msgstr "QF 2磅炮 Mk.X-B"
+
+msgid "QF_2_pdr_Mk_X_Val"
+msgstr "QF 2磅炮 Mk.X (Val)"
 
 msgid "QF_2pdr_Littlejohn_HH"
 msgstr "2磅炮 Mk.X-B HH"
+
+msgid "QF_40mm_Mk_VI_Bofors_IV"
+msgstr "QF 40mm博福斯 Mk.VI (IV)"
+
+msgid "QF_6_pdr_AT_Gun_Mk_II_VAT"
+msgstr "QF 6磅AT炮 Mk.II (VAT)"
+
+msgid "QF_6_pdr_AT_Gun_Mk_IV_VAT"
+msgstr "QF 6磅AT炮 Mk.IV (VAT)"
+
+msgid "QF_6_pdr_Gun_Mk_V_A22"
+msgstr "QF 6磅炮 Mk.V (A22)"
+
+msgid "QF_6_pdr_Gun_Mk_V_A27M"
+msgstr "QF 6磅炮 Mk.V (A27M)"
+
+msgid "QF_6_pdr_Mk_III_A24"
+msgstr "QF 6磅炮 Mk.III (A24)"
+
+msgid "QF_6_pdr_Mk_VA_AEC"
+msgstr "QF 6磅炮 Mk.VA (AEC)"
+
+msgid "QF_6_pdr_Mk_V_A15"
+msgstr "QF 6磅炮 Mk.V (A15)"
+
+msgid "QF_6_pdr_Mk_V_A24"
+msgstr "QF 6磅炮 Mk.V (A24)"
 
 msgid "QF_6_pounder_8cwt_Mk_I"
 msgstr "QF 6磅炮 Mk.I(8英担型)"
@@ -2418,6 +2649,24 @@ msgstr "QF 6磅LT炮 Mk.V"
 msgid "QF_6_pounder_Mk_V_early"
 msgstr "QF 6磅LT炮 Mk.V(早期型)"
 
+msgid "Q_F_25_Pr_Gun_How_304"
+msgstr "QF 25磅榴弹炮 (304)"
+
+msgid "Q_F_25_Pr_Gun_How_Bishop"
+msgstr "QF 25磅榴弹炮 (\"主教\")"
+
+msgid "Q_F_4_5_in_Howitzer"
+msgstr "QF 4.5英寸榴弹炮"
+
+msgid "Q_F_4_5_in_Howitzer_304"
+msgstr "QF 4.5英寸榴弹炮 (304)"
+
+msgid "Q_F_4_5_in_Howitzer_Bishop"
+msgstr "QF 4.5英寸榴弹炮 (\"主教\")"
+
+msgid "Q_F_6_in_Gun_Mk_V"
+msgstr "QF 6英寸Mk.V炮"
+
 msgid "Rolls_Royce_B80"
 msgstr "罗·罗 B80"
 
@@ -2427,14 +2676,41 @@ msgstr "罗·罗 B80P"
 msgid "Rolls_Royce_B81"
 msgstr "罗·罗 B81"
 
+msgid "Rolls_Royce_B81_1955"
+msgstr "罗·罗 B81 (1955)"
+
+msgid "Rolls_Royce_CV_12TCA"
+msgstr "罗·罗 CV-12TCA"
+
+msgid "Rolls_Royce_FB60"
+msgstr "罗·罗 FB60"
+
+msgid "Rolls_Royce_FB60_LHMTV"
+msgstr "罗·罗 FB60 (LHMTV)"
+
 msgid "Rolls_Royce_Griffon"
 msgstr "罗·罗 格里芬"
 
 msgid "Rolls_Royce_Griffon_180"
 msgstr "罗·罗 格里芬 180"
 
+msgid "Rolls_Royce_Griffon_214"
+msgstr "罗·罗 格里芬 (214)"
+
+msgid "Rolls_Royce_Griffon_217"
+msgstr "罗·罗 格里芬 (217)"
+
+msgid "Rolls_Royce_Griffon_4004"
+msgstr "罗·罗 格里芬 (4004)"
+
+msgid "Rolls_Royce_Griffon_4005"
+msgstr "罗·罗 格里芬 (4005)"
+
 msgid "Rolls_Royce_Griffon_A"
 msgstr "罗·罗 格里芬 A型"
+
+msgid "Rolls_Royce_Griffon_SC"
+msgstr "罗·罗 格里芬 (SC)"
 
 msgid "Rolls_Royce_K60"
 msgstr "罗·罗 K60"
@@ -2442,8 +2718,29 @@ msgstr "罗·罗 K60"
 msgid "Rolls_Royce_K60_Mk2"
 msgstr "罗·罗 K60 Mk.2"
 
+msgid "Rolls_Royce_Meteor"
+msgstr "罗·罗 流星"
+
+msgid "Rolls_Royce_Meteor_4101"
+msgstr "罗.罗 流星 (4101)"
+
+msgid "Rolls_Royce_Meteor_A27M"
+msgstr "罗·罗 流星 (A27M)"
+
+msgid "Rolls_Royce_Meteor_A30"
+msgstr "罗·罗 流星 (A30)"
+
+msgid "Rolls_Royce_Meteor_A43"
+msgstr "罗·罗 流星 (A43)"
+
+msgid "Rolls_Royce_Meteor_AT_15"
+msgstr "罗·罗 流星 (AT 15)"
+
 msgid "Rolls_Royce_Meteor_GD"
 msgstr "罗·罗 流星 GD"
+
+msgid "Rolls_Royce_Meteor_M120"
+msgstr "罗·罗 流星 M120"
 
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "罗·罗 流星 M120A"
@@ -2463,22 +2760,76 @@ msgstr ""
 "罗·罗 流星\n"
 "M120F"
 
+msgid "Rolls_Royce_Meteor_M120_221"
+msgstr "罗·罗 流星 M120 (221)"
+
+msgid "Rolls_Royce_Meteor_M120_A39"
+msgstr "罗·罗 流星 M120 (A39)"
+
+msgid "Rolls_Royce_Meteor_M120_CGC"
+msgstr "罗·罗 流星 M120 (CGC)"
+
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "罗·罗 流星 M300"
 
 msgid "Rolls_Royce_Meteor_Mark_IVB_900"
 msgstr "罗·罗 流星 Mk.IVB型(900)"
 
+msgid "Rolls_Royce_Meteor_MkIV"
+msgstr "罗·罗 流星 Mk. IVB"
+
+msgid "Rolls_Royce_Meteor_MkIVC"
+msgstr "罗·罗 流星 Mk. IVC"
+
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "罗·罗 流星 Mk.IVB/12"
 
+msgid "Rolls_Royce_Meteor_MkV"
+msgstr "罗·罗 流星 Mk. V"
+
 msgid "Rolls_Royce_Meteor_Mk_IVA"
 msgstr "罗·罗 流星 Mk.IVA"
+
+msgid "Rolls_Royce_Meteor_Mk_IVA_101"
+msgstr "罗·罗 流星 Mk.IVA 101"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_207"
+msgstr "罗·罗 流星 Mk.IVB型 (207)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_3805"
+msgstr "罗·罗 流星 Mk.IVB型 (3805)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_4101"
+msgstr "罗·罗 流星 Mk.IVB型 (4101)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_A27M"
+msgstr "罗·罗 流星 Mk.IVB (A27M)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_A30"
+msgstr "罗·罗 流星 Mk.IVB (A30)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_A34"
+msgstr "罗·罗 流星 Mk.IVB (A34)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_207"
+msgstr "罗·罗 流星 Mk.IVC (207)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_221"
+msgstr "罗·罗 流星 Mk.IVC (221)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_3805"
+msgstr "罗·罗 流星 Mk.IVC (3805)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_4004"
+msgstr "罗·罗 流星 Mk.IVC (4004)"
 
 msgid "Rolls_Royce_Meteor_Mk_IXA"
 msgstr ""
 "罗·罗 流星\n"
 "Mk.IXA"
+
+msgid "Rolls_Royce_Meteor_Mk_V_AT_15"
+msgstr "罗·罗 流星 Mk.V (AT 15)"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "罗·罗 流星 P型"
@@ -2495,35 +2846,20 @@ msgstr "罗·罗 流星202B"
 msgid "Rolls_Royce_Meteorite_V8"
 msgstr "罗·罗 流星V8"
 
-msgid "Rolls_Royse_B81"
-msgstr "罗·罗 B81"
+msgid "Rolls_Royce_Phantom"
+msgstr "罗·罗 幻影"
 
-msgid "Rolls_Royse_FB_60"
-msgstr "罗·罗 FB60"
-
-msgid "Rolls_Royse_Meteor"
-msgstr "罗·罗 流星"
-
-msgid "Rolls_Royse_Meteor_M120"
-msgstr "罗·罗 流星 M120"
+msgid "Rolls_Royce_Phantom_I"
+msgstr "罗·罗 幻影 (I)"
 
 msgid "Rolls_Royse_Meteor_Mk12"
 msgstr "罗.罗 流星 Mk.12"
-
-msgid "Rolls_Royse_Meteor_MkIV"
-msgstr "罗·罗 流星 Mk. IVB"
-
-msgid "Rolls_Royse_Meteor_MkIVC"
-msgstr "罗·罗 流星 Mk. IVC"
 
 msgid "Rolls_Royse_Meteor_MkIV_N"
 msgstr "罗·罗 流星 Mk. IVB"
 
 msgid "Rolls_Royse_Meteor_MkIX"
 msgstr "罗·罗 流星 Mk.IX"
-
-msgid "Rolls_Royse_Meteor_MkV"
-msgstr "罗·罗 流星 Mk. V"
 
 msgid "Rolls_Royse_Meteor_MkXI"
 msgstr "罗·罗 流星 Mk. XI"
@@ -2537,9 +2873,6 @@ msgstr "罗·罗 卫星 Mk. XI SC"
 msgid "Rolls_Royse_Meteor_SH"
 msgstr "罗·罗 卫星"
 
-msgid "Rolls_Royse_Phantom"
-msgstr "罗·罗 幻影"
-
 msgid "Rolls_Royse_Phantom_II"
 msgstr "2x 罗·罗 幻影 II"
 
@@ -2548,6 +2881,12 @@ msgstr "流浪者陨石"
 
 msgid "SR_C42H"
 msgstr "SR C42H"
+
+msgid "SR_C42O"
+msgstr "SR C42O"
+
+msgid "SR_C42_B"
+msgstr "SR C42 B"
 
 msgid "SR_C42a"
 msgstr "SR C42a"
@@ -2592,7 +2931,7 @@ msgid "Turret_1_GB102_LHMTV"
 msgstr "LHMTV Mk.I"
 
 msgid "Turret_1_GB103_GSOR3301_AVR_FS"
-msgstr "A.V.R.F/S"
+msgstr "A.V.R. F/S"
 
 msgid "Turret_1_GB104_GSR_3301_Setter"
 msgstr "GSR 3301\"塞特\""
@@ -2611,6 +2950,9 @@ msgstr "A46"
 
 msgid "Turret_1_GB109_GSOR_1008"
 msgstr "GSOR1008 Mk.1"
+
+msgid "Turret_1_GB10_Black_Prince"
+msgstr "A43\"黑亲王\""
 
 msgid "Turret_1_GB110_FV4201_Chieftain_Prototype"
 msgstr "FV4201 原型1号车"
@@ -2637,6 +2979,9 @@ msgid "Turret_1_GB11_Caernarvon"
 msgstr "百夫长 Mk.II"
 
 msgid "Turret_1_GB120_Concept_No_5"
+msgstr "5号概念车"
+
+msgid "Turret_1_GB120_Concept_No_5_7x7"
 msgstr "5号概念车"
 
 msgid "Turret_1_GB121_GSOR_1010_FB"
@@ -2699,6 +3044,9 @@ msgstr "涅伽尔"
 msgid "Turret_1_GB146_Gabler_s_Destroyer"
 msgstr "加布勒突击战车"
 
+msgid "Turret_1_GB147_FV4025_Contriver"
+msgstr "FV4025 谋划者"
+
 msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 构想者"
 
@@ -2710,6 +3058,9 @@ msgstr "M2A1"
 
 msgid "Turret_1_GB150_Churchill_VII_G"
 msgstr "\"丘吉尔\" St.G"
+
+msgid "Turret_1_GB152_AT_FV230_Breaker"
+msgstr "\"海狸\""
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "\"斯图亚特\" I"
@@ -2828,7 +3179,7 @@ msgstr "AT 15"
 msgid "Turret_1_GB73_AT2"
 msgstr "AT 2"
 
-msgid "Turret_1_GB74_AT8_2"
+msgid "Turret_1_GB74_AT8"
 msgstr "AT 8"
 
 msgid "Turret_1_GB75_AT7"
@@ -2929,9 +3280,6 @@ msgstr "GSR 3301\"塞特\"二期"
 
 msgid "Turret_2_GB107_Cavalier"
 msgstr "A24 沃克斯豪尔"
-
-msgid "Turret_2_GB10_Black_Prince"
-msgstr "A43\"黑亲王\""
 
 msgid "Turret_2_GB10_Black_Prince_SH"
 msgstr "\"丘吉尔\" 黑亲王"
@@ -3057,6 +3405,9 @@ msgstr "32磅 MBC双管炮"
 msgid "Twin_32pdr_Gun_MBC_Mk2"
 msgstr "32磅 MBC Mk.2双管炮"
 
+msgid "Twin_4_5_in_Gun_MBC"
+msgstr "4.5英寸 MBC双管炮"
+
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "贝德福德双六缸"
 
@@ -3136,11 +3487,26 @@ msgstr "APDS L-28 N"
 msgid "_105mm_APCR_T29E3_MBC"
 msgstr "APCR T29E3 MBC"
 
+msgid "_105mm_APC_EX20"
+msgstr "105mm APC EX20"
+
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
 
 msgid "_105mm_APDS_L_28P"
 msgstr "APDS L-28P"
+
+msgid "_105mm_APDS_L_28_4015"
+msgstr "APDS L-28 (4015)"
+
+msgid "_105mm_APDS_L_28_4101"
+msgstr "APDS L-28 (4101)"
+
+msgid "_105mm_APDS_L_28_5321"
+msgstr "APDS L-28 (5321)"
+
+msgid "_105mm_AP_EX20"
+msgstr "105mm AP EX20"
 
 msgid "_105mm_AP_L7_MBC"
 msgstr "AP Mk. 5 MBC"
@@ -3196,8 +3562,26 @@ msgstr "HESH L7 GSOR"
 msgid "_105mm_HESH_L7_N"
 msgstr "HESH-T L-37 N"
 
+msgid "_105mm_HESH_L_35_4015"
+msgstr "HESH L-35 (4015)"
+
+msgid "_105mm_HESH_L_35_4101"
+msgstr "HESH L-35 (4101)"
+
+msgid "_105mm_HESH_L_35_5321"
+msgstr "HESH L-35 (5321)"
+
+msgid "_105mm_HESH_L_37_4015"
+msgstr "HESH L-37 (4015)"
+
+msgid "_105mm_HESH_L_37_4101"
+msgstr "HESH L-37 (4101)"
+
 msgid "_105mm_HESH_P35"
 msgstr "HESH-T P-35"
+
+msgid "_105mm_HE_EX20"
+msgstr "105mm HE EX20"
 
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
@@ -3262,10 +3646,22 @@ msgstr "110mm MV AP"
 msgid "_110mm_MV_APDS"
 msgstr "110mm MV APCR"
 
+msgid "_110mm_MV_APDS_7x7"
+msgstr "110mm MV APCR"
+
+msgid "_110mm_MV_AP_7x7"
+msgstr "110mm MV AP"
+
 msgid "_110mm_MV_Gun"
 msgstr "110mm 中初速炮"
 
+msgid "_110mm_MV_Gun_7x7"
+msgstr "110mm 中初速炮"
+
 msgid "_110mm_MV_HE"
+msgstr "110mm MV HE"
+
+msgid "_110mm_MV_HE_7x7"
 msgstr "110mm MV HE"
 
 msgid "_110mm_MV_Nemesis_Gun"
@@ -3307,8 +3703,20 @@ msgstr "APDS L15P1"
 msgid "_120mm_APDS_L1A1"
 msgstr "APDS L1"
 
+msgid "_120mm_APDS_L1_214"
+msgstr "APDS L1 (214)"
+
+msgid "_120mm_APDS_L1_4004"
+msgstr "APDS L1 (4004)"
+
+msgid "_120mm_APDS_L1_A39"
+msgstr "APDS L1 (A39)"
+
 msgid "_120mm_APDS_L1_MBC"
 msgstr "APDS L1 MBC"
+
+msgid "_120mm_APDS_L1_SC"
+msgstr "APDS L1 (SC)"
 
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
@@ -3316,14 +3724,29 @@ msgstr "AP L15A11"
 msgid "_120mm_AP_L15A1_DU"
 msgstr "AP L15A11 DU"
 
+msgid "_120mm_AP_L1_214"
+msgstr "AP L1 (214)"
+
+msgid "_120mm_AP_L1_4004"
+msgstr "AP L1 (4004)"
+
+msgid "_120mm_AP_L1_A39"
+msgstr "AP L1 (A39)"
+
 msgid "_120mm_AP_L1_MBC"
 msgstr "AP L1 MBC"
+
+msgid "_120mm_AP_L1_SC"
+msgstr "AP L1 (SC)"
 
 msgid "_120mm_AP_Mk_1"
 msgstr "120mm AP"
 
 msgid "_120mm_AT_Gun_L1A1"
 msgstr "120mm L1A1 AT炮"
+
+msgid "_120mm_AT_Gun_L1A1_4004"
+msgstr "120mm L1A1 AT炮 (4004)"
 
 msgid "_120mm_Gun_L11"
 msgstr "120mm L11炮"
@@ -3340,6 +3763,9 @@ msgstr "120mm L11PA炮"
 msgid "_120mm_Gun_L1A1"
 msgstr "120mm L1A1炮"
 
+msgid "_120mm_Gun_L1A1_214"
+msgstr "120mm L1A1炮 (214)"
+
 msgid "_120mm_Gun_L1A1_A"
 msgstr "120mm L1A1 A炮"
 
@@ -3348,6 +3774,18 @@ msgstr "120mm 低初速炮"
 
 msgid "_120mm_HESH_L15"
 msgstr "120mm L15 HESH"
+
+msgid "_120mm_HESH_L1_214"
+msgstr "HESH L1 (214)"
+
+msgid "_120mm_HESH_L1_4004"
+msgstr "HESH L1 (4004)"
+
+msgid "_120mm_HESH_L1_A39"
+msgstr "HESH L1 (A39)"
+
+msgid "_120mm_HESH_L1_SC"
+msgstr "HESH L1 (SC)"
 
 msgid "_120mm_HESH_L30"
 msgstr "HE L30"
@@ -3382,14 +3820,26 @@ msgstr "QF 120mm炮"
 msgid "_123mm_APDS_Mk_2"
 msgstr "APDS Mk.2"
 
+msgid "_123mm_APDS_Mk_2B"
+msgstr "APDS Mk.2B"
+
 msgid "_123mm_AP_Mk_1"
 msgstr "AP Mk.1"
+
+msgid "_123mm_AP_Mk_1B"
+msgstr "AP Mk.1B"
 
 msgid "_123mm_HESH_Mk_1"
 msgstr "HESH Mk.1"
 
+msgid "_123mm_HESH_Mk_1B"
+msgstr "HESH Mk.1B"
+
 msgid "_123mm_OQF_Mk_1"
 msgstr "OQF 123mm炮 Mk.1"
+
+msgid "_123mm_OQF_Mk_1B"
+msgstr "OQF 123mm炮 Mk.1B"
 
 msgid "_13pdr_Gun"
 msgstr "QF 13磅炮 Mk.III"
@@ -3412,14 +3862,86 @@ msgstr "AP W Mk.1"
 msgid "_15mm_Machine_gun_BESA"
 msgstr "15mm BESA重机枪"
 
+msgid "_17_Pr_APCBC_Mk_8T_IIC"
+msgstr "APCBC 17磅Mk.8T (IIC)"
+
+msgid "_17_Pr_APCBC_Mk_9T_221"
+msgstr "APCBC 17磅Mk.9T (221)"
+
+msgid "_17_Pr_APCBC_Mk_9T_A30"
+msgstr "APCBC 17磅Mk.9T (A30)"
+
+msgid "_17_Pr_APCBC_Mk_9T_A41"
+msgstr "APCBC 17磅Mk.9T (A41)"
+
+msgid "_17_Pr_APCBC_Mk_9T_A43"
+msgstr "APCBC 17磅Mk.9T (A43)"
+
+msgid "_17_Pr_APCBC_Mk_9T_AT_7"
+msgstr "APCBC 17磅Mk.9T (AT 7)"
+
+msgid "_17_Pr_APCBC_Mk_9T_AT_8"
+msgstr "APCBC 17磅Mk.9T (AT 8)"
+
 msgid "_17_Pr_APCBC_Mk_9T_IA"
 msgstr "APCBC 17磅Mk.9T(IA)"
+
+msgid "_17_Pr_APCBC_Mk_9T_IIC"
+msgstr "APCBC 17磅Mk.9T (IIC)"
+
+msgid "_17_Pr_APDS_Mk_1T_221"
+msgstr "APDS 17磅Mk.1T (221)"
+
+msgid "_17_Pr_APDS_Mk_1T_A30"
+msgstr "APDS 17磅Mk.1T (A30)"
+
+msgid "_17_Pr_APDS_Mk_1T_A41"
+msgstr "APDS 17磅Mk.1T (A41)"
+
+msgid "_17_Pr_APDS_Mk_1T_A43"
+msgstr "APDS 17磅Mk.1T (A43)"
+
+msgid "_17_Pr_APDS_Mk_1T_AT_7"
+msgstr "APDS 17磅Mk.1T (AT 7)"
+
+msgid "_17_Pr_APDS_Mk_1T_AT_8"
+msgstr "APDS 17磅Mk.1T (AT 8)"
 
 msgid "_17_Pr_APDS_Mk_1T_IA"
 msgstr "APDS 17磅Mk.1T(IA)"
 
+msgid "_17_Pr_APDS_Mk_1T_IIC"
+msgstr "APDS 17磅Mk.1T (IIC)"
+
+msgid "_17_Pr_AP_Mk_6T_IIC"
+msgstr "AP 17磅Mk.6T (IIC)"
+
+msgid "_17_Pr_HE_Mk_1T_IIC"
+msgstr "HE 17磅Mk.1T (IIC)"
+
+msgid "_17_Pr_HE_Mk_2T_221"
+msgstr "HE 17磅Mk.2T (221)"
+
+msgid "_17_Pr_HE_Mk_2T_A30"
+msgstr "HE 17磅Mk.2T (A30)"
+
+msgid "_17_Pr_HE_Mk_2T_A41"
+msgstr "HE 17磅Mk.2T (A41)"
+
+msgid "_17_Pr_HE_Mk_2T_A43"
+msgstr "HE 17磅Mk.2T (A43)"
+
+msgid "_17_Pr_HE_Mk_2T_AT_7"
+msgstr "HE 17磅Mk.2T (AT 7)"
+
+msgid "_17_Pr_HE_Mk_2T_AT_8"
+msgstr "HE 17磅Mk.2T (AT 8)"
+
 msgid "_17_Pr_HE_Mk_2T_IA"
 msgstr "HE 17磅Mk.2T(IA)"
+
+msgid "_17_Pr_HE_Mk_2T_IIC"
+msgstr "HE 17磅Mk.2T (IIC)"
 
 msgid "_17pdr_APCBC_Mk8T"
 msgstr "APCBC 17磅Mk.8T"
@@ -3460,14 +3982,23 @@ msgstr "OQF 17磅AT炮 Mk.V"
 msgid "_183mm_AP_Mk1"
 msgstr "AP Mk.1"
 
+msgid "_183mm_AP_Mk_1_4005"
+msgstr "AP Mk.1 (4005)"
+
 msgid "_183mm_AT_Gun"
 msgstr "183mm L4炮"
 
 msgid "_183mm_HESH"
 msgstr "HESH Mk.1"
 
+msgid "_183mm_HESH_Mk_1_4005"
+msgstr "HESH Mk.1 (4005)"
+
 msgid "_183mm_HE_Mk1"
 msgstr "HE Mk.1"
+
+msgid "_183mm_HE_Mk_1_4005"
+msgstr "HE Mk.1 (4005)"
 
 msgid "_183mm_L4"
 msgstr "183mm L4炮"
@@ -3480,6 +4011,51 @@ msgstr "AP-T Mk.1T"
 
 msgid "_18pdr_HE_Mk_1C"
 msgstr "HE Mk.1C"
+
+msgid "_20_Pr_APC_Mk_2_4007"
+msgstr "APC Mk.2 (4007)"
+
+msgid "_20_Pr_APC_Mk_2_4101"
+msgstr "APC Mk.2 (4101)"
+
+msgid "_20_Pr_APC_Mk_2_A41"
+msgstr "APC Mk.2 (A41)"
+
+msgid "_20_Pr_APC_Mk_2_AT_15"
+msgstr "APC Mk.2 (AT 15)"
+
+msgid "_20_Pr_APC_Mk_2_AT_7"
+msgstr "APC Mk.2 (AT 7)"
+
+msgid "_20_Pr_AP_Mk_1_4007"
+msgstr "AP Mk.1 (4007)"
+
+msgid "_20_Pr_AP_Mk_1_4101"
+msgstr "AP Mk.1 (4101)"
+
+msgid "_20_Pr_AP_Mk_1_A41"
+msgstr "AP Mk.1 (A41)"
+
+msgid "_20_Pr_AP_Mk_1_AT_15"
+msgstr "AP Mk.1 (AT 15)"
+
+msgid "_20_Pr_AP_Mk_1_AT_7"
+msgstr "AP Mk.1 (AT 7)"
+
+msgid "_20_Pr_HE_Mk_3_4007"
+msgstr "HE Mk.3 (4007)"
+
+msgid "_20_Pr_HE_Mk_3_4101"
+msgstr "HE Mk.3 (4101)"
+
+msgid "_20_Pr_HE_Mk_3_A41"
+msgstr "HE Mk.3 (A41)"
+
+msgid "_20_Pr_HE_Mk_3_AT_15"
+msgstr "HE Mk.3 (AT 15)"
+
+msgid "_20_Pr_HE_Mk_3_AT_7"
+msgstr "HE Mk.3 (AT 7)"
 
 msgid "_20pdr_APC_Mk2"
 msgstr "APC Mk.2"
@@ -3532,6 +4108,12 @@ msgstr "HE Mk.3 MBC"
 msgid "_20pdr_HE_Mk3b_MBC"
 msgstr "HE Mk.3b MBC"
 
+msgid "_25_Pr_HE_Mk_1D_304"
+msgstr "HE Mk.1D (304)"
+
+msgid "_25_Pr_HE_Mk_1D_Bishop"
+msgstr "HE Mk.1D (\"主教\")"
+
 msgid "_25pdr_AP_Mk_1T"
 msgstr "AP-T Mk.1T"
 
@@ -3556,6 +4138,105 @@ msgstr "HE Mk.1D"
 msgid "_25pdr_HE_Mk_1DA"
 msgstr "HE Mk.1DA"
 
+msgid "_2_Pr_APCBC_Mk_IXBT_A12"
+msgstr "APCBC Mk.IXBT (A12)"
+
+msgid "_2_Pr_APCBC_Mk_IXBT_A13_III"
+msgstr "APCBC Mk.IXBT (A13 III)"
+
+msgid "_2_Pr_APCBC_Mk_IXBT_A22"
+msgstr "APCBC Mk.IXBT (A22)"
+
+msgid "_2_Pr_APCBC_Mk_IXBT_Val"
+msgstr "APCBC Mk.IXBT (Val)"
+
+msgid "_2_Pr_APCNR_Mk_1B"
+msgstr "APCNR Mk.IA"
+
+msgid "_2_Pr_APCNR_Mk_1_I"
+msgstr "APCNR Mk.1 (I)"
+
+msgid "_2_Pr_APCNR_Mk_1_II"
+msgstr "APCNR Mk.1 (II)"
+
+msgid "_2_Pr_APCNR_Mk_1_III"
+msgstr "APCNR Mk.1 (III)"
+
+msgid "_2_Pr_APCNR_Mk_1_IV"
+msgstr "APCNR Mk.1 (IV)"
+
+msgid "_2_Pr_APCNR_Mk_2"
+msgstr "APCNR Mk.2"
+
+msgid "_2_Pr_APCNR_Mk_2_A12"
+msgstr "APCNR Mk.2 (A12)"
+
+msgid "_2_Pr_APCNR_Mk_2_A13_III"
+msgstr "APCNR Mk.2 (A13 III)"
+
+msgid "_2_Pr_APCNR_Mk_2_A22"
+msgstr "APCNR Mk.2 (A22)"
+
+msgid "_2_Pr_APCNR_Mk_2_Val"
+msgstr "APCNR Mk.2 (Val)"
+
+msgid "_2_Pr_APSV_Mk_1"
+msgstr "APSV Mk.1"
+
+msgid "_2_Pr_APSV_Mk_2"
+msgstr "APSV Mk.2"
+
+msgid "_2_Pr_AP_Mk_1TP"
+msgstr "AP Mk.1Tp"
+
+msgid "_2_Pr_AP_Mk_1TP_I"
+msgstr "AP Mk.1Tp (I)"
+
+msgid "_2_Pr_AP_Mk_1T_III"
+msgstr "AP Mk.1T (III)"
+
+msgid "_2_Pr_AP_Mk_1T_IV"
+msgstr "AP Mk.1T (IV)"
+
+msgid "_2_Pr_AP_Mk_IXBT"
+msgstr "APCBC Mk.IXBT"
+
+msgid "_2_Pr_AP_Mk_XB"
+msgstr "APCBC Mk.XA"
+
+msgid "_2_Pr_HESV"
+msgstr "HESV"
+
+msgid "_2_Pr_HE_Mk_2B"
+msgstr "HE Mk.IIA"
+
+msgid "_2_Pr_HE_Mk_2_A12"
+msgstr "HE Mk.2 (A12)"
+
+msgid "_2_Pr_HE_Mk_2_A13_III"
+msgstr "HE Mk.2 (A13 III)"
+
+msgid "_2_Pr_HE_Mk_2_A15"
+msgstr "HE Mk.2 (A15)"
+
+msgid "_2_Pr_HE_Mk_2_A22"
+msgstr "HE Mk.2 (A22)"
+
+msgid "_2_Pr_HE_Mk_2_I"
+msgstr "HE Mk.2 (I)"
+
+msgid "_2_Pr_HE_Mk_2_II"
+msgstr "HE Mk.2 (II)"
+
+msgid "_2_Pr_HE_Mk_2_III"
+msgstr "HE Mk.2 (III)"
+
+msgid "_2_Pr_HE_Mk_2_IV"
+msgstr "HE Mk.2 (IV)"
+
+msgid "_2_Pr_HE_Mk_2_Val"
+msgstr "HE Mk.2 (Val)"
+
 msgid "_2pdr_APCBC_Mk.I_XBT"
 msgstr "APCBC Mk. I XBT"
 
@@ -3565,20 +4246,8 @@ msgstr "APCNR Mk.1"
 msgid "_2pdr_APCNR_Mk.1A"
 msgstr "APCNR Mk.1"
 
-msgid "_2pdr_APCNR_Mk.1B"
-msgstr "APCNR Mk.IA"
-
-msgid "_2pdr_APCNR_Mk.2"
-msgstr "APCNR Mk.2"
-
 msgid "_2pdr_APCNR_Mk.II"
 msgstr "APCNR Mk. II"
-
-msgid "_2pdr_APSV_Mk.1"
-msgstr "APSV Mk.1"
-
-msgid "_2pdr_APSV_Mk.2"
-msgstr "APSV Mk.2"
 
 msgid "_2pdr_AP_Mk.1T"
 msgstr "AP Mk.1T"
@@ -3586,17 +4255,8 @@ msgstr "AP Mk.1T"
 msgid "_2pdr_AP_Mk.1TA"
 msgstr "AP Mk.1T"
 
-msgid "_2pdr_AP_Mk.1TP"
-msgstr "AP Mk. 1Tp"
-
-msgid "_2pdr_AP_Mk.IXBT"
-msgstr "APCBC Mk.IXBT"
-
 msgid "_2pdr_AP_Mk.X"
 msgstr "APCBC MK.X"
-
-msgid "_2pdr_AP_Mk.XB"
-msgstr "APCBC Mk.XA"
 
 msgid "_2pdr_AT_Gun_Mk_IX"
 msgstr "QF 2磅AT炮 Mk.IX"
@@ -3627,9 +4287,6 @@ msgstr "HE Mk.2"
 
 msgid "_2pdr_HE_Mk.2A"
 msgstr "HE Mk.2"
-
-msgid "_2pdr_HE_Mk.2B"
-msgstr "HE Mk.IIA"
 
 msgid "_3.7inch_AP"
 msgstr "AP Mk.1T"
@@ -3666,6 +4323,42 @@ msgstr "QF 3.7英寸AT炮"
 
 msgid "_32-pounder_AT_Gun_OQF"
 msgstr "OQF 32磅AT炮"
+
+msgid "_32_Pr_APCBC_Mk_3_221"
+msgstr "APCBC Mk.3 (221)"
+
+msgid "_32_Pr_APCBC_Mk_3_A30"
+msgstr "APCBC Mk.3 (A30)"
+
+msgid "_32_Pr_APDS_Mk_2T_A39"
+msgstr "APDS Mk.2T (A39)"
+
+msgid "_32_Pr_APDS_Mk_2T_AT_15"
+msgstr "APDS Mk.2T (AT 15)"
+
+msgid "_32_Pr_APDS_Mk_3_221"
+msgstr "APDS Mk.3 (221)"
+
+msgid "_32_Pr_APDS_Mk_3_A30"
+msgstr "APDS Mk.3 (A30)"
+
+msgid "_32_Pr_AP_Mk_I_A39"
+msgstr "AP Mk.1 (A39)"
+
+msgid "_32_Pr_AP_Mk_I_AT_15"
+msgstr "AP Mk.1 (AT 15)"
+
+msgid "_32_Pr_HE_Mk_1A_A39"
+msgstr "HE Mk.1A (A39)"
+
+msgid "_32_Pr_HE_Mk_1A_AT_15"
+msgstr "HE Mk.1A (AT 15)"
+
+msgid "_32_Pr_HE_Mk_3_221"
+msgstr "HE Mk.3 (221)"
+
+msgid "_32_Pr_HE_Mk_3_A30"
+msgstr "HE Mk.3 (A30)"
 
 msgid "_32_pounder_AT_Gun_OQF_Mk_II"
 msgstr "OQF 32磅AT炮 Mk.II"
@@ -3748,20 +4441,29 @@ msgstr "HE Mk.2B"
 msgid "_3pdr_gun_Hotchkiss"
 msgstr "OQF 3磅炮 Mk.I"
 
-msgid "_4.5inch_HE_Mk_13"
-msgstr "HE Mk.XIII"
-
-msgid "_4.5inch_SPG_Howitzer"
-msgstr "QF 4.5英寸榴弹炮"
-
 msgid "_40mm_AP"
 msgstr "AP Mk.I"
 
 msgid "_40mm_APCR"
 msgstr "APCR Mk.II"
 
+msgid "_40mm_APCR_Mk_II_I"
+msgstr "APCR Mk.II (I)"
+
+msgid "_40mm_APCR_Mk_II_II"
+msgstr "APCR Mk.II (II)"
+
 msgid "_40mm_APHV"
 msgstr "APHV Mk.1T"
+
+msgid "_40mm_APHV_Mk_1T_IV"
+msgstr "APHV Mk.1T (IV)"
+
+msgid "_40mm_AP_Mk_I_I"
+msgstr "AP Mk.I (I)"
+
+msgid "_40mm_AP_Mk_I_II"
+msgstr "AP Mk.I (II)"
 
 msgid "_40mm_Bofors_MkI"
 msgstr "QF 40mm博福斯 Mk.VI"
@@ -3769,17 +4471,32 @@ msgstr "QF 40mm博福斯 Mk.VI"
 msgid "_40mm_HE"
 msgstr "HE Mk.I"
 
+msgid "_40mm_HE_Mk_2T_IV"
+msgstr "HE Mk.2T (IV)"
+
+msgid "_40mm_HE_Mk_I_I"
+msgstr "HE Mk.I (I)"
+
+msgid "_40mm_HE_Mk_I_II"
+msgstr "HE Mk.I (II)"
+
 msgid "_40mm_Mk2T"
 msgstr "HE Mk.2T"
 
 msgid "_40mm_Pom_Pom"
 msgstr "40mm 呯呯炮"
 
+msgid "_40mm_Pom_Pom_II"
+msgstr "40mm 呯呯炮 (II)"
+
 msgid "_40mm_Pom_Pom_prot"
 msgstr "40mm 呯呯炮(原型)"
 
 msgid "_40mm_SAP"
 msgstr "SAP Mk.1T"
+
+msgid "_40mm_SAP_Mk_1T_IV"
+msgstr "SAP Mk.1T (IV)"
 
 msgid "_47inch_HE"
 msgstr "HE 50"
@@ -3799,17 +4516,23 @@ msgstr "QF APDS Mk.I"
 msgid "_47mm_3pdrHE"
 msgstr "QF HE Mk.IT"
 
-msgid "_5.5inch_AP_Mk_4"
-msgstr "AP 80磅 Mk.3"
+msgid "_4_5_in_APDS_MBC"
+msgstr "APDS MBC"
 
-msgid "_5.5inch_HE_Mk_4"
-msgstr "HE 80磅 Mk.3"
+msgid "_4_5_in_AP_MBC"
+msgstr "AP MBC"
 
-msgid "_5.5inch_HE_Mk_5"
-msgstr "HE 80磅 Mk.4"
+msgid "_4_5_in_HE_MBC"
+msgstr "HE MBC"
 
-msgid "_5.5inch_SPG_Gun"
-msgstr "BL 5.5英寸炮"
+msgid "_4_5_in_HE_Mk_XIII"
+msgstr "HE Mk.XIII"
+
+msgid "_4_5_in_HE_Mk_XIII_304"
+msgstr "HE Mk.XIII (304)"
+
+msgid "_4_5_in_HE_Mk_XIII_Bishop"
+msgstr "HE Mk.XIII (\"主教\")"
 
 msgid "_55pdr_APCBC"
 msgstr "APCBC"
@@ -3828,6 +4551,33 @@ msgstr "HE"
 
 msgid "_55pdr_HESA"
 msgstr "HESA"
+
+msgid "_5_5_in_AP_80_lb_Mk_3"
+msgstr "AP 80磅 Mk.3"
+
+msgid "_5_5_in_AP_80_lb_Mk_3_207"
+msgstr "AP 80磅 Mk.3 (207)"
+
+msgid "_5_5_in_AP_80_lb_Mk_3_CSP"
+msgstr "AP 80磅 Mk.3 (CSP)"
+
+msgid "_5_5_in_HE_80_lb_Mk_3"
+msgstr "HE 80磅 Mk.3"
+
+msgid "_5_5_in_HE_80_lb_Mk_3_207"
+msgstr "HE 80磅 Mk.3 (207)"
+
+msgid "_5_5_in_HE_80_lb_Mk_3_CSP"
+msgstr "HE 80磅 Mk.3 (CSP)"
+
+msgid "_5_5_in_HE_80_lb_Mk_4"
+msgstr "HE 80磅 Mk.4"
+
+msgid "_5_5_in_HE_80_lb_Mk_4_207"
+msgstr "HE 80磅 Mk.4 (207)"
+
+msgid "_5_5_in_HE_80_lb_Mk_4_CSP"
+msgstr "HE 80磅 Mk.4 (CSP)"
 
 msgid "_5_5inch_APC_Mk_5_SH"
 msgstr "APC Mk.5"
@@ -3862,17 +4612,113 @@ msgstr "HESH Mk.1"
 msgid "_5inch_QF_Gun"
 msgstr "QF 5英寸炮"
 
-msgid "_6inch_AP"
+msgid "_6_Pr_APCR_Mk_1A_AEC"
+msgstr "APCR Mk.IA (AEC)"
+
+msgid "_6_Pr_APCR_Mk_1T_A15"
+msgstr "APCR Mk.1T (A15)"
+
+msgid "_6_Pr_APCR_Mk_1T_A22"
+msgstr "APCR Mk.1T (A22)"
+
+msgid "_6_Pr_APCR_Mk_1T_A24_III"
+msgstr "APCR Mk.1T (A24 III)"
+
+msgid "_6_Pr_APCR_Mk_1T_A24_V"
+msgstr "APCR Mk.1T (A24 V)"
+
+msgid "_6_Pr_APCR_Mk_1T_A27M"
+msgstr "APCR Mk.1T (A27M)"
+
+msgid "_6_Pr_APCR_Mk_1T_AT_2_III"
+msgstr "APCR Mk.1T (AT 2 III)"
+
+msgid "_6_Pr_APCR_Mk_1T_AT_2_V"
+msgstr "APCR Mk.1T (AT 2 V)"
+
+msgid "_6_Pr_APCR_Mk_1T_VAT_II"
+msgstr "APCR Mk.1T (VAT II)"
+
+msgid "_6_Pr_APCR_Mk_1T_VAT_IV"
+msgstr "APCR Mk.1T (VAT IV)"
+
+msgid "_6_Pr_APCR_Mk_1T_Val"
+msgstr "APCR Mk.1T (Val)"
+
+msgid "_6_Pr_AP_Mk_1A_AEC"
+msgstr "AP Mk.IA (AEC)"
+
+msgid "_6_Pr_AP_Mk_1T_A15"
+msgstr "AP Mk.1T (A15)"
+
+msgid "_6_Pr_AP_Mk_1T_A22"
+msgstr "AP Mk.1T (A22)"
+
+msgid "_6_Pr_AP_Mk_1T_A24_III"
+msgstr "AP Mk.1T (A24 III)"
+
+msgid "_6_Pr_AP_Mk_1T_A24_V"
+msgstr "AP Mk.1T (A24 V)"
+
+msgid "_6_Pr_AP_Mk_1T_A27M"
+msgstr "AP Mk.1T (A27M)"
+
+msgid "_6_Pr_AP_Mk_1T_AT_2_III"
+msgstr "AP Mk.1T (AT 2 III)"
+
+msgid "_6_Pr_AP_Mk_1T_AT_2_V"
+msgstr "AP Mk.1T (AT 2 V)"
+
+msgid "_6_Pr_AP_Mk_1T_VAT_II"
+msgstr "AP Mk.1T (VAT II)"
+
+msgid "_6_Pr_AP_Mk_1T_VAT_IV"
+msgstr "AP Mk.1T (VAT IV)"
+
+msgid "_6_Pr_AP_Mk_1T_Val"
+msgstr "AP Mk.1T (Val)"
+
+msgid "_6_Pr_HE_Mk_10T_A15"
+msgstr "HE Mk.10T (A15)"
+
+msgid "_6_Pr_HE_Mk_10T_A22"
+msgstr "HE Mk.10T (A22)"
+
+msgid "_6_Pr_HE_Mk_10T_A24_III"
+msgstr "HE Mk.10T (A24 III)"
+
+msgid "_6_Pr_HE_Mk_10T_A24_V"
+msgstr "HE Mk.10T (A24 V)"
+
+msgid "_6_Pr_HE_Mk_10T_A27M"
+msgstr "HE Mk.10T (A27M)"
+
+msgid "_6_Pr_HE_Mk_10T_AT_2_III"
+msgstr "HE Mk.10T (AT 2 III)"
+
+msgid "_6_Pr_HE_Mk_10T_AT_2_V"
+msgstr "HE Mk.10T (AT 2 V)"
+
+msgid "_6_Pr_HE_Mk_10T_VAT_II"
+msgstr "HE Mk.10T (VAT II)"
+
+msgid "_6_Pr_HE_Mk_10T_VAT_IV"
+msgstr "HE Mk.10T (VAT IV)"
+
+msgid "_6_Pr_HE_Mk_10T_Val"
+msgstr "HE Mk.10T (Val)"
+
+msgid "_6_Pr_HE_Mk_XA_AEC"
+msgstr "HE Mk.XA (AEC)"
+
+msgid "_6_in_AP_Mk_V"
 msgstr "AP Mk. V"
 
-msgid "_6inch_HE"
+msgid "_6_in_HE_Mk_V"
 msgstr "HE Mk.V"
 
-msgid "_6inch_HE_Mk_6"
+msgid "_6_in_HE_Mk_VI"
 msgstr "HE Mk.VI"
-
-msgid "_6inch_SPG_Gun"
-msgstr "QF 6英寸Mk.V炮"
 
 msgid "_6pdr_APCR_MK_1GD"
 msgstr "APCR Mk.1GD"
@@ -3919,18 +4765,6 @@ msgstr "HE Mk.10T"
 msgid "_6pdr_HE_MK_10TM"
 msgstr "HE Mk.XA"
 
-msgid "_7.2inch_AP"
-msgstr "AP Mk. 1D"
-
-msgid "_7.2inch_HE"
-msgstr "HE Mk.1D"
-
-msgid "_7.2inch_HE_Mk_2"
-msgstr "HE Mk.2"
-
-msgid "_7.2inch_SPG_Howitzer"
-msgstr "BL 7.2英寸榴弹炮 Mk.6"
-
 msgid "_75mm_APCR_HV_Mk3"
 msgstr "APCR HV Mk.3"
 
@@ -3942,6 +4776,15 @@ msgstr "LAPCR Mk.3"
 
 msgid "_75mm_APCR_Mk3b"
 msgstr "Mk.3 APCR"
+
+msgid "_75mm_APCR_Mk_3_A22F"
+msgstr "APCR Mk.3 (A22F)"
+
+msgid "_75mm_APCR_Mk_3_A27M"
+msgstr "APCR Mk.3 (A27M)"
+
+msgid "_75mm_APCR_Mk_3_A34"
+msgstr "APCR Mk.3 (A34)"
 
 msgid "_75mm_APCR_Mk_3_C"
 msgstr "APCR Mk.3 C"
@@ -3960,6 +4803,15 @@ msgstr "LAP Mk.1"
 
 msgid "_75mm_AP_Mk1b"
 msgstr "Mk.1 AP"
+
+msgid "_75mm_AP_Mk_1_A22F"
+msgstr "AP Mk.1 (A22F)"
+
+msgid "_75mm_AP_Mk_1_A27M"
+msgstr "AP Mk.1 (A27M)"
+
+msgid "_75mm_AP_Mk_1_A34"
+msgstr "AP Mk.1 (A34)"
 
 msgid "_75mm_AP_Mk_1_C"
 msgstr "AP Mk.1 C"
@@ -3988,6 +4840,15 @@ msgstr "75mm炮 Mk.V"
 msgid "_75mm_Gun_Mk_VB"
 msgstr "75mm炮 Mk.5"
 
+msgid "_75mm_Gun_Mk_V_A22F"
+msgstr "75mm炮 Mk.V (A22F)"
+
+msgid "_75mm_Gun_Mk_V_A27M"
+msgstr "75mm炮 Mk.V (A27M)"
+
+msgid "_75mm_Gun_Mk_V_A34"
+msgstr "75mm炮 Mk.V (A34)"
+
 msgid "_75mm_Gun_Mk_V_BPXIV"
 msgstr "75mm Mk.V C炮"
 
@@ -4015,6 +4876,15 @@ msgstr "LHE Mk.2"
 msgid "_75mm_HE_Mk2b"
 msgstr "Mk.2 HE"
 
+msgid "_75mm_HE_Mk_2_A22F"
+msgstr "HE Mk.2 (A22F)"
+
+msgid "_75mm_HE_Mk_2_A27M"
+msgstr "HE Mk.2 (A27M)"
+
+msgid "_75mm_HE_Mk_2_A34"
+msgstr "HE Mk.2 (A34)"
+
 msgid "_75mm_HE_Mk_2_C"
 msgstr "HE Mk.2 C"
 
@@ -4024,14 +4894,26 @@ msgstr "HE Mk.2 G"
 msgid "_75mm_HV_L40"
 msgstr "75mm L/40 HV炮"
 
+msgid "_75mm_HV_L40_Set"
+msgstr "75mm L40HV (组合)"
+
 msgid "_75mm_L40_AP"
 msgstr "75 mm L40AP"
 
 msgid "_75mm_L40_APC"
 msgstr "75 mm L40APC"
 
+msgid "_75mm_L40_APC_Set"
+msgstr "75mm L40APC (组合)"
+
+msgid "_75mm_L40_AP_Set"
+msgstr "75mm L40AP (组合)"
+
 msgid "_75mm_L40_HE"
 msgstr "75 mm L40HE"
+
+msgid "_75mm_L40_HE_Set"
+msgstr "75mm L40HE (组合)"
 
 msgid "_75mm_M48"
 msgstr "M48"
@@ -4057,6 +4939,9 @@ msgstr "M72"
 msgid "_76mm_APCR_L5A3_Mk3"
 msgstr "APCR L5A3 Mk.3"
 
+msgid "_76mm_APCR_L5A3_Mk_3_FSV"
+msgstr "APCR L5A3 Mk.3 (FSV)"
+
 msgid "_76mm_APDS_EX1"
 msgstr "APDS EX1"
 
@@ -4065,6 +4950,9 @@ msgstr "AP EX1"
 
 msgid "_76mm_AP_L5A3_Mk1"
 msgstr "AP L5A3 Mk.1"
+
+msgid "_76mm_AP_L5A3_Mk_1_FSV"
+msgstr "AP L5A3 Mk.1 (FSV)"
 
 msgid "_76mm_AP_M62"
 msgstr "AP M62"
@@ -4090,6 +4978,9 @@ msgstr "HESH EX1"
 msgid "_76mm_HE_L5A3_Mk2"
 msgstr "HE L5A3 Mk.2"
 
+msgid "_76mm_HE_L5A3_Mk_2_FSV"
+msgstr "HE L5A3 Mk.2 (FSV)"
+
 msgid "_76mm_HE_M42A1"
 msgstr "HE M42A1"
 
@@ -4101,6 +4992,9 @@ msgstr "OQF 3英寸榴弹炮 Mk.I"
 
 msgid "_76mm_L5A3"
 msgstr "76mm L5A3炮"
+
+msgid "_76mm_L5A3_FSV"
+msgstr "76mm L5A3炮 (FSV)"
 
 msgid "_76mm_M42A1"
 msgstr "HE M42A1(M7)"
@@ -4117,8 +5011,26 @@ msgstr "APCBC Mk.8T"
 msgid "_77mm_APCBC_Mk8T_T"
 msgstr "APCBC 77mm Mk.8T2"
 
+msgid "_77mm_APCBC_Mk_8T_A22F"
+msgstr "APCBC 77mm Mk.8T (A22F)"
+
+msgid "_77mm_APCBC_Mk_8T_A43"
+msgstr "APCBC 77mm Mk.8T (A43)"
+
+msgid "_77mm_APCBC_Mk_8T_AT_8"
+msgstr "APCBC 77mm Mk.8T (AT 8)"
+
 msgid "_77mm_APDS_Mk1T"
 msgstr "APDS 17磅Mk.1T"
+
+msgid "_77mm_APDS_Mk_1T_A22F"
+msgstr "APDS 77mm Mk.1T (A22F)"
+
+msgid "_77mm_APDS_Mk_1T_A43"
+msgstr "APDS 77mm Mk.1T (A43)"
+
+msgid "_77mm_APDS_Mk_1T_AT_8"
+msgstr "APDS 77mm Mk.1T (AT 8)"
 
 msgid "_77mm_APDS_T_Mk1"
 msgstr "APDS-T 77mm Mk.1T"
@@ -4129,26 +5041,56 @@ msgstr "HE Mk.1T"
 msgid "_77mm_HE_Mk1T_T"
 msgstr "HE Mk.1T"
 
+msgid "_77mm_HE_Mk_1T_A22F"
+msgstr "HE 77mm Mk.1T (A22F)"
+
+msgid "_77mm_HE_Mk_1T_A43"
+msgstr "HE 77mm Mk.1T (A43)"
+
+msgid "_77mm_HE_Mk_1T_AT_8"
+msgstr "HE 77mm Mk.1T (AT 8)"
+
+msgid "_7_2_in_AP_Mk_1D"
+msgstr "AP Mk.1D"
+
+msgid "_7_2_in_HE_Mk_1D"
+msgstr "HE Mk.1D"
+
+msgid "_7_2_in_HE_Mk_2D"
+msgstr "HE Mk.2"
+
 msgid "_85mm_HV_L40"
 msgstr "85mm L/40 HV炮"
 
-msgid "_9.2inch_AP_Mk_18"
-msgstr "AP Mk.18"
+msgid "_85mm_HV_L40_LHMTV"
+msgstr "85mm L/40 HV炮 (LHMTV)"
 
-msgid "_9.2inch_HE_Mk_18"
-msgstr "HE Mk.18"
+msgid "_85mm_L40_APC_Mk_II"
+msgstr "L40 APC Mk.II"
 
-msgid "_9.2inch_HE_Mk_19"
-msgstr "HE Mk.19"
+msgid "_85mm_L40_APC_Mk_II_LHMTV"
+msgstr "L40 APC Mk.II (LHMTV)"
 
-msgid "_9.2inch_SPG_Howitzer"
-msgstr "BL 9.2英寸榴弹炮 Mk.II"
+msgid "_85mm_L40_AP_Mk_I"
+msgstr "L40 AP Mk.I"
+
+msgid "_85mm_L40_AP_Mk_I_LHMTV"
+msgstr "L40 AP Mk.I (LHMTV)"
+
+msgid "_85mm_L40_HE_Mk_III"
+msgstr "L40 HE Mk.III"
+
+msgid "_85mm_L40_HE_Mk_III_LHMTV"
+msgstr "L40 HE Mk.III (LHMTV)"
 
 msgid "_90mm_APFSDS_T312"
 msgstr "APFSDS T312"
 
 msgid "_90mm_APFSDS_T312K"
 msgstr "APFSDS T312K"
+
+msgid "_90mm_APFSDS_T312K_601"
+msgstr "APFSDS T312K (601)"
 
 msgid "_90mm_APFSDS_T320"
 msgstr "APFSDS T320"
@@ -4158,6 +5100,9 @@ msgstr "AP M310"
 
 msgid "_90mm_AP_M310K"
 msgstr "AP M310K"
+
+msgid "_90mm_AP_M310K_601"
+msgstr "AP M310K (601)"
 
 msgid "_90mm_AP_M318"
 msgstr "AP M318"
@@ -4177,17 +5122,23 @@ msgstr "HE T342"
 msgid "_90mm_HE_T342K"
 msgstr "HE T342K"
 
+msgid "_90mm_HE_T342K_601"
+msgstr "HE T342K (601)"
+
 msgid "_90mm_Kenerga_Mk8"
 msgstr "90mm 科纳戈 Mk.8炮"
 
-msgid "_L40_APC_Mk2"
-msgstr "L40 APC Mk.II"
+msgid "_90mm_Kenerga_Mk_8_601"
+msgstr "90mm 科纳戈 Mk.8炮 (601)"
 
-msgid "_L40_AP_Mk1"
-msgstr "L40 AP Mk.I"
+msgid "_9_2_in_AP_Mk_18"
+msgstr "AP Mk.18"
 
-msgid "_L40_HE_Mk3"
-msgstr "L40 HE Mk.III"
+msgid "_9_2_in_HE_Mk_18"
+msgstr "HE Mk.18"
+
+msgid "_9_2_in_HE_Mk_19"
+msgstr "HE Mk.19"
 
 msgid "_QF_20pdr_APC_Mk2"
 msgstr "QF 20 APC Mk. 2"

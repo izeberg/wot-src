@@ -122,14 +122,13 @@ msgstr "了解地图"
 
 msgid "mode/random/battlePassTooltip/body"
 msgstr ""
-"玩家可以在{whiteSpanish_open}除战役模式的标准模式{whiteSpanish_close}中使用IV–X级坦克进行战斗、获得点数，并通过点数在战斗通行证中取得进度。"
+"玩家可使用IV–XI级坦克投身{whiteSpanish_open}标准模式{whiteSpanish_close}战斗，获取点数，推动战斗通行证进度。"
 
 msgid "mode/random/battlePassTooltip/header"
 msgstr "战斗通行证点数"
 
 msgid "mode/random/condition"
-msgstr ""
-"15对15%(parSecondary_open)sI%(parSecondary_close)s30对30%(parSecondary_open)sI%(parSecondary_close)s&nbsp;I–X级"
+msgstr "15对15%(parSecondary_open)sI%(parSecondary_close)sI–XI级"
 
 msgid "mode/random/description"
 msgstr "自动匹配的战斗。"
@@ -186,29 +185,11 @@ msgstr "入门战斗。"
 msgid "novelty"
 msgstr "新模式"
 
-msgid "popover/assault"
-msgstr "攻防战"
-
-msgid "popover/default"
-msgstr "随机战"
-
-msgid "popover/devMaps"
-msgstr "正在开发中的地图"
-
-msgid "popover/domination"
-msgstr "夺旗战"
-
-msgid "popover/epicStandard"
-msgstr "战役模式"
-
-msgid "popover/header"
-msgstr "战斗模式"
-
 msgid "ranked/widget/qualBattles"
 msgstr "资格赛战斗：%(current)%(par_open)s/%(max)%(par_close)s"
 
 msgid "reward/attachment/description"
-msgstr "游玩此模式有机会获得独特的3D附件。"
+msgstr "游玩该模式有机会获得独特的3D附件。"
 
 msgid "reward/attachment/name"
 msgstr "3D附件"
@@ -242,6 +223,12 @@ msgstr "奖励取决于您的战斗表现。"
 
 msgid "reward/experience/name"
 msgstr "经验"
+
+msgid "reward/experimentalEquipment/description"
+msgstr "游玩该模式有机会获得不同的试验型配件。"
+
+msgid "reward/experimentalEquipment/name"
+msgstr "特殊配件"
 
 msgid "reward/improvedEquipment/description"
 msgstr "您可以通过游玩此模式获得%(name)s。"

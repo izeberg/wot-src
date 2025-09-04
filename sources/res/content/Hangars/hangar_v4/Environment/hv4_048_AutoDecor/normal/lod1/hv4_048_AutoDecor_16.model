@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_048_AutoDecor/normal/lod2/hv4_048_AutoDecor_16</parent>
+	<extent>60.000000</extent>
+	<visibilityBox>
+		<min>-0.275537 -0.000001 -0.192895</min>
+		<max>0.275537 0.028679 0.192895</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_048_AutoDecor/normal/lod1/hv4_048_AutoDecor_16</nodefullVisual>
+</root>

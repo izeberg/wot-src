@@ -13,6 +13,54 @@ msgstr ""
 msgid "allVehicles"
 msgstr "所有"
 
+msgid "battleRating/tooltip/better/body"
+msgstr "这场战斗比平常更令人满意、更势均力敌，或更有趣。"
+
+msgid "battleRating/tooltip/better/header"
+msgstr "优于平常"
+
+msgid "battleRating/tooltip/usual/body"
+msgstr "常规战斗——平平无奇。"
+
+msgid "battleRating/tooltip/usual/header"
+msgstr "与平常相同"
+
+msgid "battleRating/tooltip/worse/body"
+msgstr "这场战斗比平常更有挫败感、更实力悬殊，或更不公平。"
+
+msgid "battleRating/tooltip/worse/header"
+msgstr "低于平常"
+
+msgid "battleResult/battleRating/better/header"
+msgstr "优于平常"
+
+msgid "battleResult/battleRating/none/header"
+msgstr "评价您的战斗:"
+
+msgid "battleResult/battleRating/usual/header"
+msgstr "与平常相同"
+
+msgid "battleResult/battleRating/worse/header"
+msgstr "低于平常"
+
+msgid "battleResult/comp7Light/team/prestigePoints/body"
+msgstr "按声望点数排序。"
+
+msgid "battleResult/comp7Light/team/prestigePoints/header"
+msgstr "声望点数"
+
+msgid "battleResult/navigation/battleResults"
+msgstr "概览"
+
+msgid "battleResult/navigation/financialReport"
+msgstr "收益报告"
+
+msgid "battleResult/navigation/missionsProgress"
+msgstr "任务进度"
+
+msgid "battleResult/navigation/teamEfficiency"
+msgstr "团队战绩"
+
 msgid "battleResult/team/prestigePoints/body"
 msgstr "按声望点数排序。声望点数会影响玩家在战斗中获得和失去的评级点数。"
 
@@ -22,11 +70,17 @@ msgstr "声望点数"
 msgid "common/arena/fullName"
 msgstr "{0}–{1}"
 
+msgid "common/arena/nameAndMode"
+msgstr "{{0}}, {{1}}"
+
 msgid "common/battleEfficiency/allies"
 msgstr "队友:"
 
 msgid "common/battleEfficiency/allyBase"
 msgstr "防御基地"
+
+msgid "common/battleEfficiency/baseCapture"
+msgstr "占领基地:"
 
 msgid "common/battleEfficiency/bases"
 msgstr "基地"
@@ -37,6 +91,9 @@ msgstr "占领基地"
 msgid "common/battleEfficiency/neutralBase"
 msgstr "中立基地"
 
+msgid "common/battleEfficiency/noEfficiency"
+msgstr "您在本场战斗中未执行任何有效行为。"
+
 msgid "common/battleEfficiency/none"
 msgstr "没有敌方坦克被击毁或被点亮。"
 
@@ -44,6 +101,9 @@ msgid "common/battleEfficiency/technique"
 msgstr "坦克"
 
 msgid "common/battleEfficiency/title"
+msgstr "战斗表现"
+
+msgid "common/battleEfficiency/uppercased_title"
 msgstr "战斗表现"
 
 msgid "common/battleEfficiencyWithSkills/title"
@@ -81,6 +141,14 @@ msgstr "普通账号"
 
 msgid "common/details/premTitle"
 msgstr "高级账号"
+
+msgid "common/details/premiumAdvertising/bonus"
+msgstr "激活《坦克世界》高级账号后，为所选胜利战斗应用{{@ split}}{{multiplier}}倍经验加成。{{/}}"
+
+msgid "common/details/premiumAdvertising/credits"
+msgstr ""
+"{{/}}激活《坦克世界》高级账号后{{/}}，每{{@ style}}{{durationInDays}}天{{@ "
+"split}}获得最多{{bonusCredits}}。"
 
 msgid "common/details/premiumPlus/bonus"
 msgstr "将x%(multiplier)d经验奖励到坦克世界高级账号所选定的胜利战斗中。"
@@ -127,8 +195,14 @@ msgstr "任务中无坦克研发与乘员培训的相关内容。"
 msgid "common/overtimeFinishReasonTitle"
 msgstr "超时:"
 
+msgid "common/player/nameWithClan"
+msgstr "{{name}}[{{clan}}]"
+
 msgid "common/plusBonus/bonusLeftAdditionalText"
 msgstr "解锁更多: "
+
+msgid "common/plusBonus/earnedMessage"
+msgstr "您今天已获得:"
 
 msgid "common/plusBonus/earningsInformation"
 msgstr "您今日已获得%(count)s点经验"
@@ -157,8 +231,14 @@ msgstr "应用"
 msgid "common/premiumBonus/bonusLeft"
 msgstr "今日剩余: %(count)s"
 
+msgid "common/premiumBonus/bonusMultiplier"
+msgstr "×{{value}}"
+
 msgid "common/premiumBonus/description"
 msgstr "可控经验加成"
+
+msgid "common/premiumBonus/earnMore"
+msgstr "想要获得更多吗？"
 
 msgid "common/premiumBonus/expiredBattleResult"
 msgstr "必须应用于同一辆坦克所参加的最后一场战斗。"
@@ -166,8 +246,14 @@ msgstr "必须应用于同一辆坦克所参加的最后一场战斗。"
 msgid "common/premiumBonus/isXPToTmenDisabled"
 msgstr "无法使用加成: 已关闭加速乘员训练。"
 
+msgid "common/premiumBonus/isXPToTmenDisabledWithInfo"
+msgstr "{{@ split}}无法应用加成: {{@ style}}已关闭{{info}}{{/}}{{/}}加速乘员训练。"
+
 msgid "common/premiumBonus/isXPToTmenEnabled"
 msgstr "无法使用加成: 已启用加速乘员训练。"
+
+msgid "common/premiumBonus/isXPToTmenEnabledWithInfo"
+msgstr "{{@ split}}无法应用加成: {{@ style}}已启用{{info}}{{/}}{{/}}加速乘员训练。"
 
 msgid "common/premiumBonus/rule"
 msgstr "加成只能应用于获胜的战斗。祝您下次好运！"
@@ -175,8 +261,14 @@ msgstr "加成只能应用于获胜的战斗。祝您下次好运！"
 msgid "common/premiumBonus/tankStateChanged"
 msgstr "无法应用可控加成: 未找到坦克。"
 
+msgid "common/premiumBonus/tankStateChangedWithInfo"
+msgstr "{{@ split}}无法应用可控加成: {{@ style}}未找到{{info}}{{/}}{{/}}坦克。"
+
 msgid "common/premiumBonus/tankmenStateChanged"
 msgstr "无法应用可控加成: 未找到乘员。"
+
+msgid "common/premiumBonus/tankmenStateChangedWithInfo"
+msgstr "{{@ split}}无法应用可控加成: {{@ style}}未找到{{info}}{{/}}{{/}}乘员。"
 
 msgid "common/premiumBonus/unavailable"
 msgstr "加成不适用于该游戏模式。"
@@ -192,6 +284,9 @@ msgstr "剩余战斗场次(大约):%(battles)s"
 
 msgid "common/resultsShareBtn"
 msgstr "获取链接"
+
+msgid "common/startTime"
+msgstr "{{0}}, {{1}}"
 
 msgid "common/tooltip/armor/description"
 msgstr ""
@@ -444,6 +539,12 @@ msgstr "幸存"
 msgid "common/vehicleState/dead0"
 msgstr "因射击被击毁"
 
+msgid "common/vehicleState/dead0_with_killername"
+msgstr "因射击被击毁({{killername}})"
+
+msgid "common/vehicleState/dead0_with_killername_and_clan"
+msgstr "因射击被击毁({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead1"
 msgstr "因起火被烧毁"
 
@@ -452,6 +553,12 @@ msgstr "自毁"
 
 msgid "common/vehicleState/dead13"
 msgstr "被玩家的能力击毁"
+
+msgid "common/vehicleState/dead1_with_killername"
+msgstr "因起火被摧毁({{killername}})"
+
+msgid "common/vehicleState/dead1_with_killername_and_clan"
+msgstr "因起火被摧毁({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/dead2"
 msgstr "因撞击被撞毁"
@@ -462,14 +569,32 @@ msgstr "被火炮支援击毁"
 msgid "common/vehicleState/dead29"
 msgstr "坠毁"
 
+msgid "common/vehicleState/dead2_with_killername"
+msgstr "因撞击被摧毁({{killername}})"
+
+msgid "common/vehicleState/dead2_with_killername_and_clan"
+msgstr "因撞击被摧毁({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead3"
 msgstr "坠毁"
 
 msgid "common/vehicleState/dead30"
 msgstr "因射击被击毁"
 
+msgid "common/vehicleState/dead30_with_killername"
+msgstr "因射击被击毁({{killername}})"
+
+msgid "common/vehicleState/dead30_with_killername_and_clan"
+msgstr "因射击被击毁({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead35"
 msgstr "坠毁"
+
+msgid "common/vehicleState/dead3_with_killername"
+msgstr "坠毁({{killername}})"
+
+msgid "common/vehicleState/dead3_with_killername_and_clan"
+msgstr "坠毁({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/dead4"
 msgstr "因进入危险区域而毁坏"
@@ -477,11 +602,23 @@ msgstr "因进入危险区域而毁坏"
 msgid "common/vehicleState/dead5"
 msgstr "坦克溺水"
 
+msgid "common/vehicleState/dead5_with_killername"
+msgstr "坦克溺水({{killername}})"
+
+msgid "common/vehicleState/dead5_with_killername_and_clan"
+msgstr "坦克溺水({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead6"
 msgstr "被风暴击毁"
 
 msgid "common/vehicleState/dead7"
 msgstr "因被推翻而被击毁"
+
+msgid "common/vehicleState/dead7_with_killername"
+msgstr "因翻车被摧毁({{killername}})"
+
+msgid "common/vehicleState/dead7_with_killername_and_clan"
+msgstr "因翻车被摧毁({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/prematureLeave"
 msgstr "在战斗结束之前退出"
@@ -497,6 +634,15 @@ msgstr "x"
 
 msgid "comms/likes/pbs/text/01"
 msgstr "在该战斗中获得的点赞数量"
+
+msgid "comms/likes/pbs/tooltip/body"
+msgstr "{{var}}名盟友在本场战斗中为您点了赞。"
+
+msgid "comms/likes/pbs/tooltip/bodySingle"
+msgstr "{{var}}名盟友在本场战斗中为您点了赞。"
+
+msgid "comms/likes/pbs/tooltip/header"
+msgstr "获得的点赞数量"
 
 msgid "customizationProgress/award/newLevel"
 msgstr "“%(name)s”贴花已达到%(level)s级。"
@@ -540,6 +686,9 @@ msgstr "自动补给弹药"
 msgid "details/calculations/autoRepair"
 msgstr "自动修理坦克"
 
+msgid "details/calculations/autoResupply"
+msgstr "自动补给"
+
 msgid "details/calculations/base"
 msgstr "获得"
 
@@ -562,6 +711,9 @@ msgid "details/calculations/fairPlayViolation/afk"
 msgstr "对游戏挂机的惩罚"
 
 msgid "details/calculations/fairPlayViolation/comp7_deserter"
+msgstr "对中途离场的惩罚"
+
+msgid "details/calculations/fairPlayViolation/comp7_light_deserter"
 msgstr "对中途离场的惩罚"
 
 msgid "details/calculations/fairPlayViolation/deserter"
@@ -606,6 +758,12 @@ msgstr "IGR加成"
 msgid "details/calculations/intermediateTotal"
 msgstr "总战斗收益:"
 
+msgid "details/calculations/manageableXpBonus"
+msgstr "可控经验加成"
+
+msgid "details/calculations/maximum"
+msgstr "新纪录"
+
 msgid "details/calculations/militaryManeuvers"
 msgstr "全局经验加成"
 
@@ -632,6 +790,9 @@ msgstr "驾驶金币坦克奖励"
 
 msgid "details/calculations/referralBonus"
 msgstr "推荐奖励(%(bonusFactor)d%%)"
+
+msgid "details/calculations/referralBonus/fullLabel"
+msgstr "推荐计划加成(%(bonusFactor)d%)"
 
 msgid "details/calculations/referralBonus/simpleLabel"
 msgstr "推荐计划加成"
@@ -663,14 +824,17 @@ msgstr "总计"
 msgid "details/calculations/total"
 msgstr "总计:"
 
-msgid "details/calculations/veteranBonus"
-msgstr "老兵加成"
-
 msgid "details/calculations/wotPlus"
+msgstr "坦克世界Plus战斗加成"
+
+msgid "details/calculations/wotPlusBonus"
 msgstr "坦克世界Plus战斗加成"
 
 msgid "details/calculations/xpRecord"
 msgstr "获得 (%(color_tag_open)s 最大值 %(color_tag_close)s)"
+
+msgid "details/calculations/xpRecordSimple"
+msgstr "已获得(%(maximum)s)"
 
 msgid "details/credits"
 msgstr "银币"
@@ -727,6 +891,9 @@ msgid "details/time_epic"
 msgstr "战斗"
 
 msgid "details/xp"
+msgstr "经验"
+
+msgid "details/xp_abbr"
 msgstr "经验"
 
 msgid "exterminationVictory/allies"
@@ -893,6 +1060,15 @@ msgstr "通过战斗获得奖励。您战斗越多，获得的奖励就越多。
 msgid "selectVehicle"
 msgstr "选择一辆坦克"
 
+msgid "status/lose"
+msgstr "失败"
+
+msgid "status/tie"
+msgstr "平局"
+
+msgid "status/win"
+msgstr "胜利"
+
 msgid "tankSelector/next"
 msgstr "下一辆坦克"
 
@@ -1014,8 +1190,14 @@ msgstr "小队"
 msgid "team/squadHeaderNoSort/header"
 msgstr "队伍"
 
+msgid "team/stats/allies"
+msgstr "盟友"
+
 msgid "team/stats/close"
 msgstr "关闭"
+
+msgid "team/stats/enemies"
+msgstr "敌方"
 
 msgid "team/stats/enemyTeam"
 msgstr "敌方队伍"

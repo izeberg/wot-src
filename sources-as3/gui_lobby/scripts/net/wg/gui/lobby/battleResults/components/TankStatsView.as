@@ -148,13 +148,13 @@ package net.wg.gui.lobby.battleResults.components
          this.playerNameLbl = null;
          this.arenaCreateDateLbl = null;
          this.tankNameLbl = null;
-         this.commendationMC = null;
          this.tankNameDashLbl = null;
          this.vehicleStateLbl.removeEventListener(MouseEvent.ROLL_OVER,this.onVehicleStateLblRollOverHandler);
          this.vehicleStateLbl.removeEventListener(MouseEvent.ROLL_OUT,onVehicleStateLblRollOutHandler);
+         this.vehicleStateLbl = null;
          this.commendationMC.removeEventListener(MouseEvent.ROLL_OVER,this.onCommedationRollOverHandler);
          this.commendationMC.removeEventListener(MouseEvent.ROLL_OUT,onCommedationRollOutHandler);
-         this.vehicleStateLbl = null;
+         this.commendationMC = null;
          this.imageSwitcher.mask = null;
          this.imageSwitcher.dispose();
          this.imageSwitcher = null;
@@ -227,8 +227,8 @@ package net.wg.gui.lobby.battleResults.components
          this.tankNameLbl.visible = param1;
          this.dropDown.visible = !param1;
          this.commendationMC.visible = param2;
-         var _loc3_:* = !!param2 ? this.commendationMC.x : DEFAULT_COMPONENT_WIDTH;
-         var _loc4_:* = !!param2 ? COMMENDATION_PADDING : PLAYER_TANK_NAME_PADDING;
+         var _loc3_:uint = !!param2 ? uint(this.commendationMC.x) : uint(DEFAULT_COMPONENT_WIDTH);
+         var _loc4_:uint = !!param2 ? uint(COMMENDATION_PADDING) : uint(PLAYER_TANK_NAME_PADDING);
          this.vehicleStateLbl.x = _loc3_ - this.vehicleStateLbl.width - _loc4_;
          if(param1)
          {

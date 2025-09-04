@@ -1,5 +1,5 @@
-from comp7.gui.Scaleform.genConsts.TOOLTIPS_BATTLE_CONSTANTS import TOOLTIPS_BATTLE_CONSTANTS as COMP7_BATTLE_TOOLTIPS
-from comp7.gui.shared.tooltips.comp7_tooltips import RoleSkillBattleTooltipData
+from comp7_core.gui.Scaleform.genConsts.TOOLTIPS_BATTLE_CONSTANTS import TOOLTIPS_BATTLE_CONSTANTS as COMP7_BATTLE_TOOLTIPS
+from comp7.gui.shared.tooltips.comp7_tooltips import Comp7RoleSkillBattleTooltipData
 from comp7.gui.shared.tooltips.contexts import Comp7RoleSkillBattleContext
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.shared.tooltips import contexts, vehicle_roles
@@ -8,5 +8,5 @@ __all__ = ('getTooltipBuilders', )
 
 def getTooltipBuilders():
     return (
-     DataBuilder(COMP7_BATTLE_TOOLTIPS.COMP7_ROLE_SKILL_BATTLE_TOOLTIP, TOOLTIPS_CONSTANTS.BLOCKS_DEFAULT_UI, RoleSkillBattleTooltipData(Comp7RoleSkillBattleContext())),
+     DataBuilder(COMP7_BATTLE_TOOLTIPS.COMP7_ROLE_SKILL_BATTLE_TOOLTIP, TOOLTIPS_CONSTANTS.BLOCKS_DEFAULT_UI, Comp7RoleSkillBattleTooltipData(Comp7RoleSkillBattleContext())),
      TooltipWindowBuilder(TOOLTIPS_CONSTANTS.VEHICLE_ROLES, None, vehicle_roles.VehicleRolesTooltipContentWindowData(contexts.ToolTipContext(None))))

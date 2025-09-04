@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl37_CS_67_Szakal/crash/lod3/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl37_CS_67_Szakal/crash/lod4/Turret_01</parent>
+	<extent>192</extent>
+	<visibilityBox>
+		<min>-1.616437 -0.008908 -1.565848</min>
+		<max>1.632726 1.898839 1.574009</max>
+	</visibilityBox>
+</root>

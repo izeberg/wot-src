@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/MilitaryEnvironment/hd_mle_UNI_073_PillboxEntrance/normal/lod3/hd_mle_UNI_073_PillboxEntrance_Gate_01</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-8.875955 -0.190977 -0.591117</min>
+		<max>8.875964 9.718571 0.664824</max>
+	</visibilityBox>
+	<nodefullVisual>content/MilitaryEnvironment/hd_mle_UNI_073_PillboxEntrance/normal/lod2/hd_mle_UNI_073_PillboxEntrance_Gate_01</nodefullVisual>
+</root>

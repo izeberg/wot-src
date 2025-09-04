@@ -11,8 +11,8 @@
 	<supplySlots>4 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_ATSPG_support</postProgressionTree>
 	<speedLimits>
-		<forward>25</forward>
-		<backward>12</backward>
+		<forward>30</forward>
+		<backward>14</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -104,7 +104,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>13425</weight>
-		<maxHealth>680</maxHealth>
+		<maxHealth>760</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>190</maxHealth>
 			<maxRegenHealth>130</maxRegenHealth>
@@ -2257,14 +2257,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Sturer_Emil>
-			<userString>#germany_vehicles:Chassis_Sturer_Emil</userString>
+		<Chassis_G43_Sturer_Emil>
+			<userString>#germany_vehicles:Chassis_G43_Sturer_Emil</userString>
 			<tags/>
 			<level>6</level>
 			<price>15000</price>
 			<unlocks>
 				<chassis>
-					Chassis_Sturer_Emil_2
+					Chassis_G43_Sturer_Emil_2
 					<cost>8200</cost>
 				</chassis>
 			</unlocks>
@@ -2273,14 +2273,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>17000</weight>
-			<maxLoad>36500</maxLoad>
 			<terrainResistance>
-				1.1 1.2 2.3
+				1 1.1 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>32</rotationSpeed>
+			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.24
@@ -4079,9 +4078,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Sturer_Emil>
-		<Chassis_Sturer_Emil_2>
-			<userString>#germany_vehicles:Chassis_Sturer_Emil_2</userString>
+		</Chassis_G43_Sturer_Emil>
+		<Chassis_G43_Sturer_Emil_2>
+			<userString>#germany_vehicles:Chassis_G43_Sturer_Emil_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>18500</price>
@@ -4090,14 +4089,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>17000</weight>
-			<maxLoad>38500</maxLoad>
 			<terrainResistance>
 				1 1.1 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>40000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>36</rotationSpeed>
+			<rotationSpeed>39</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -5896,13 +5894,13 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Sturer_Emil_2>
+		</Chassis_G43_Sturer_Emil_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Sturer_Emil>
+		<Turret_1_G43_Sturer_Emil>
 			<ceilless>true</ceilless>
-			<userString>#germany_vehicles:Turret_1_Sturer_Emil</userString>
-			<tags>cannotDetach</tags>
+			<userString>#germany_vehicles:Turret_1_G43_Sturer_Emil</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>7</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -5910,7 +5908,7 @@
 				<armor_2>10</armor_2>
 			</armor>
 			<weight>100</weight>
-			<maxHealth>170</maxHealth>
+			<maxHealth>190</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5930,12 +5928,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_105mm_K18_L52_R>
+				<_105mm_Kanone_18>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<gun>
-							_128mm_SF_L61
+							_128mm_Kanone_40
 							<cost>58500</cost>
 						</gun>
 					</unlocks>
@@ -5955,7 +5953,7 @@
 						<gun>45</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.36
+						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -6160,10 +6158,10 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_105mm_K18_L52_R>
-				<_128mm_SF_L61>
+				</_105mm_Kanone_18>
+				<_128mm_Kanone_40>
 					shared
-					<maxAmmo>15</maxAmmo>
+					<maxAmmo>21</maxAmmo>
 					<unlocks>
 						<vehicle>
 							G99_RhB_Waffentrager
@@ -6385,7 +6383,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_128mm_SF_L61>
+				</_128mm_Kanone_40>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G43_Sturer_Emil/normal/lod0/Turret_01.model</undamaged>
@@ -6429,10 +6427,10 @@
 				</density>
 				<aoTextureSize>256 256</aoTextureSize>
 			</camouflage>
-		</Turret_1_Sturer_Emil>
+		</Turret_1_G43_Sturer_Emil>
 	</turrets0>
 	<engines>
-		<Maybach_HL_116>
+		<Maybach_HL_116_Emil>
 			shared
 			<unlocks>
 				<engine>
@@ -6440,75 +6438,29 @@
 					<cost>1200</cost>
 				</engine>
 			</unlocks>
-		</Maybach_HL_116>
+		</Maybach_HL_116_Emil>
 		<Maybach_HL_116_S>shared</Maybach_HL_116_S>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<FuG2>
-			shared
-			<unlocks>
-				<radio>
-					FuG5
-					<cost>105</cost>
-				</radio>
-			</unlocks>
-		</FuG2>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG_Spr.A
-					<cost>4500</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
 		<FuG_Spr.A>shared</FuG_Spr.A>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_116>
-					<smplEnginePower>
-						317.1843
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>25</smplFwMaxSpeed>
-				</Maybach_HL_116>
+				<Maybach_HL_116_Emil>
+					<smplEnginePower>400</smplEnginePower>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
+				</Maybach_HL_116_Emil>
 				<Maybach_HL_116_S>
-					<smplEnginePower>
-						327.7571
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>25</smplFwMaxSpeed>
+					<smplEnginePower>425</smplEnginePower>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</Maybach_HL_116_S>
 			</engines>
 			<chassis>
-				<Chassis_Sturer_Emil>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.18515
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Sturer_Emil>
-				<Chassis_Sturer_Emil_2>
+				<Chassis_G43_Sturer_Emil>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6529,7 +6481,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Sturer_Emil_2>
+				</Chassis_G43_Sturer_Emil>
+				<Chassis_G43_Sturer_Emil_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.16905
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G43_Sturer_Emil_2>
 			</chassis>
 		</detailed>
 	</physics>

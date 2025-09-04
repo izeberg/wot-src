@@ -125,6 +125,10 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private var _smPadding:int = 0;
       
+      private var _backgroundHeight:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
+      
       private var _isNonHistoric:Boolean = false;
       
       private var _isMinResolution:Boolean = false;
@@ -282,6 +286,7 @@ package net.wg.gui.lobby.vehicleCustomization
          if(isInvalid(InvalidationType.SIZE))
          {
             this.background.width = _width;
+            this.background.height = App.appHeight - (y + this.background.y);
             this.carousel.width = _width;
             this.carousel.invalidateSize();
             this.overlay.updateSize(_width,_height,_loc1_);
@@ -350,11 +355,6 @@ package net.wg.gui.lobby.vehicleCustomization
             }
             this.tabNavigator.updateBorders(Values.ZERO,_loc4_);
          }
-      }
-      
-      public function as_updateEscHelpMessage(param1:Boolean) : void
-      {
-         this.helpMessage.visible = param1;
       }
       
       override protected function setBottomPanelInitData(param1:CustomizationBottomPanelInitVO) : void
@@ -497,6 +497,11 @@ package net.wg.gui.lobby.vehicleCustomization
          this._popoverBtnDisabledTooltip = param3;
       }
       
+      public function as_updateEscHelpMessage(param1:Boolean) : void
+      {
+         this.helpMessage.visible = param1;
+      }
+      
       public function getFocusChain() : Vector.<InteractiveObject>
       {
          var _loc1_:Vector.<InteractiveObject> = new Vector.<InteractiveObject>();
@@ -545,6 +550,12 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.playFilterBlink();
       }
       
+      public function setBackgroundHeight(param1:uint) : void
+      {
+         this._backgroundHeight = param1;
+         invalidateSize();
+      }
+      
       public function setCarouselNotificationsVisibility(param1:Boolean) : void
       {
          var _loc2_:Boolean = !param1;
@@ -565,14 +576,10 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function updateSysMessagePosition() : void
       {
-         var _loc1_:int = 0;
+         var _loc1_:int = this.background.height - this._bottomOffset;
          if(this.bill.visible)
          {
-            _loc1_ = this.background.height + this.bill.height + SM_BILL_ADDITIONAL_HEIGHT;
-         }
-         else
-         {
-            _loc1_ = this.background.height;
+            _loc1_ += this.bill.height + SM_BILL_ADDITIONAL_HEIGHT;
          }
          if(this._smPadding != _loc1_)
          {
@@ -594,6 +601,16 @@ package net.wg.gui.lobby.vehicleCustomization
       private function updateProjectionDecalNotificationState(param1:Boolean = false) : void
       {
          this.carousel.projectionDecalHint.visible = !!param1 ? Boolean(false) : Boolean(this._projectionDecalNotificationShow);
+      }
+      
+      public function get bottomOffset() : uint
+      {
+         return this._bottomOffset;
+      }
+      
+      public function set bottomOffset(param1:uint) : void
+      {
+         this._bottomOffset = param1;
       }
       
       private function onBottomPanelCarouselNewAnimationShownHandler(param1:CustomizationEvent) : void

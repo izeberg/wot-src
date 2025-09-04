@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "card/about_vehicle"
+msgstr "关于坦克"
+
+msgid "card/unknown"
+msgstr "未知坦克"
+
+msgid "defaultName"
+msgstr "新游玩列表{{count}}"
+
+msgid "dialogs/delete/button/cancel"
+msgstr "取消"
+
+msgid "dialogs/delete/button/submit"
+msgstr "确认"
+
+msgid "dialogs/delete/title"
+msgstr "删除\"{{playlistTitle}}\"游玩列表？"
+
+msgid "dialogs/import/button/submit"
+msgstr "导入"
+
+msgid "dialogs/import/input/alert"
+msgstr "代码错误"
+
+msgid "dialogs/import/input/message"
+msgstr "游玩列表代码"
+
+msgid "dialogs/import/title"
+msgstr "导入游玩列表:"
+
+msgid "dialogs/save/button/cancel"
+msgstr "退出"
+
+msgid "dialogs/save/button/submit"
+msgstr "保存并退出"
+
+msgid "dialogs/save/title"
+msgstr "退出前保存游玩列表？"
+
+msgid "editScreen/button/exit"
+msgstr "退出"
+
+msgid "editScreen/button/save"
+msgstr "保存游玩列表"
+
+msgid "editScreen/create/body"
+msgstr "按下\\+\\或将坦克拖动到此区域即可创建新游玩列表"
+
+msgid "editScreen/create/title"
+msgstr "添加坦克"
+
+msgid "editScreen/input/placeholder"
+msgstr "输入游玩列表名称"
+
+msgid "edit_button/body"
+msgstr "使用编辑模式来编辑或删除游玩列表"
+
+msgid "edit_button/title"
+msgstr "编辑模式"
+
+msgid "empty_state/empty_list/body"
+msgstr "进入编辑模式即可将坦克添加到此游玩列表。"
+
+msgid "empty_state/empty_list/title"
+msgstr "游玩列表为空"
+
+msgid "empty_state/not_found/body"
+msgstr "尝试调整筛选设置以查看更多内容。"
+
+msgid "empty_state/not_found/title"
+msgstr "未找到坦克"
+
+msgid "imports/trigger"
+msgstr "导入游玩列表"
+
+msgid "list/create"
+msgstr "创建游玩列表"
+
+msgid "list/remove"
+msgstr "删除游玩列表"
+
+msgid "share/copy_button/body"
+msgstr "使用游玩列表代码来导入游玩列表"
+
+msgid "share/copy_button/title"
+msgstr "复制游玩列表代码"
+
+msgid "trigger/explain"
+msgstr "使用下拉菜单来查看并切换游玩列表"
+
+msgid "unnamedTemplate"
+msgstr "未命名游玩列表{{count}}"
+
+msgid "validation/unavailable/body"
+msgstr ""
+"此游玩列表包含不在您车库中的坦克。\n"
+"您可在编辑模式中查看此游玩列表中的所有坦克。"
+
+msgid "validation/unavailable/title"
+msgstr "不可用的坦克({{display}}/{{total}})"

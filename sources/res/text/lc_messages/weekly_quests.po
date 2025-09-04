@@ -1,0 +1,617 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "condition/common/101"
+msgstr "造成损伤"
+
+msgid "condition/common/104"
+msgstr "对敌方坦克造成的损伤排名本队前7"
+
+msgid "condition/common/105"
+msgstr "抵挡射击"
+
+msgid "condition/common/106"
+msgstr "抵挡损伤"
+
+msgid "condition/common/107"
+msgstr "对距离100米或更近的敌方坦克造成损伤"
+
+msgid "condition/common/108"
+msgstr "通过射击，对距离50米或更近的敌方坦克造成损伤"
+
+msgid "condition/common/109"
+msgstr "自身坦克静止不动时，抵挡500点损伤"
+
+msgid "condition/common/110"
+msgstr "对敌方坦克造成高于自身坦克生命值的损伤"
+
+msgid "condition/common/111"
+msgstr "击毁敌方坦克"
+
+msgid "condition/common/112"
+msgstr "击中距离至少300米的敌方坦克"
+
+msgid "condition/common/114"
+msgstr "击穿敌方装甲"
+
+msgid "condition/common/115"
+msgstr "击穿敌方装甲"
+
+msgid "condition/common/116"
+msgstr "对敌方坦克造成高于自身坦克生命值的损伤"
+
+msgid "condition/common/117"
+msgstr "击毁由自身坦克点亮的敌方坦克"
+
+msgid "condition/common/118"
+msgstr "对无法移动的敌方坦克造成损伤"
+
+msgid "condition/common/119"
+msgstr "对无法移动的敌方坦克造成损伤"
+
+msgid "condition/common/123"
+msgstr "对敌方坦克造成弹震"
+
+msgid "condition/common/124"
+msgstr "以单发炮弹，对至少3辆敌方坦克造成弹震"
+
+msgid "condition/common/125"
+msgstr "对敌方坦克造成弹震的总时长"
+
+msgid "condition/common/126"
+msgstr "击毁敌方坦克"
+
+msgid "condition/common/127"
+msgstr "对非S系敌方坦克造成损伤"
+
+msgid "condition/common/128"
+msgstr "获得经验"
+
+msgid "condition/common/129"
+msgstr "在一场战斗中，使至少1辆敌方坦克无法移动"
+
+msgid "condition/common/131"
+msgstr "在战斗的前5分钟内击中敌方坦克"
+
+msgid "condition/common/132"
+msgstr "对敌方重型或中型坦克造成损伤"
+
+msgid "condition/common/133"
+msgstr "对敌方重型或中型坦克造成损伤"
+
+msgid "condition/common/135"
+msgstr "造成和协助造成损伤"
+
+msgid "condition/common/136"
+msgstr "造成和协助造成损伤"
+
+msgid "condition/common/137"
+msgstr "通过造成至少300点损伤击毁敌方坦克"
+
+msgid "condition/common/138"
+msgstr "通过造成至少500点损伤击毁敌方坦克"
+
+msgid "condition/common/139"
+msgstr "对非M系敌方坦克造成损伤"
+
+msgid "condition/common/140"
+msgstr "获得经验"
+
+msgid "condition/common/142"
+msgstr "通过点亮造成协助损伤，且点亮敌方坦克时自身保持不被点亮"
+
+msgid "condition/common/143"
+msgstr "击中敌方重型坦克"
+
+msgid "condition/common/144"
+msgstr "击毁敌方重型或中型坦克"
+
+msgid "condition/common/145"
+msgstr "击毁敌方中型或轻型坦克"
+
+msgid "condition/common/146"
+msgstr "对非Y系敌方坦克造成损伤"
+
+msgid "condition/common/147"
+msgstr "获得经验"
+
+msgid "condition/common/148"
+msgstr "造成损伤时保持不被点亮"
+
+msgid "condition/common/149"
+msgstr "造成损伤时保持不被点亮"
+
+msgid "condition/common/153"
+msgstr "击中敌方重型或中型坦克"
+
+msgid "condition/common/155"
+msgstr "对非D系敌方坦克造成损伤"
+
+msgid "condition/common/156"
+msgstr "获得经验"
+
+msgid "condition/common/157"
+msgstr "击穿敌方装甲"
+
+msgid "condition/common/159"
+msgstr "对移动中的敌方坦克造成损伤"
+
+msgid "condition/common/160"
+msgstr "对移动中的敌方坦克造成损伤"
+
+msgid "condition/common/162"
+msgstr "对非C系敌方坦克造成损伤"
+
+msgid "condition/common/163"
+msgstr "获得经验"
+
+msgid "condition/common/165"
+msgstr "通过点亮，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/166"
+msgstr "对敌方中型或轻型坦克造成损伤"
+
+msgid "condition/common/167"
+msgstr "获得经验"
+
+msgid "condition/common/168"
+msgstr "对非F系敌方坦克造成损伤"
+
+msgid "condition/common/169"
+msgstr "在以至少50千米/小时的速度移动时造成损伤"
+
+msgid "condition/common/172"
+msgstr "对非R系敌方坦克造成损伤"
+
+msgid "condition/common/173"
+msgstr "获得经验"
+
+msgid "condition/common/176"
+msgstr "击毁敌方重型或中型坦克"
+
+msgid "condition/common/177"
+msgstr "获得经验"
+
+msgid "condition/common/178"
+msgstr "在一场战斗中，击中敌方坦克至少5次"
+
+msgid "condition/common/179"
+msgstr "对非J系敌方坦克造成损伤"
+
+msgid "condition/common/181"
+msgstr "对非I系敌方坦克造成损伤"
+
+msgid "condition/common/182"
+msgstr "获得经验"
+
+msgid "condition/common/183"
+msgstr "获得经验"
+
+msgid "condition/common/184"
+msgstr "对非B系敌方坦克造成损伤"
+
+msgid "condition/common/185"
+msgstr "获得经验"
+
+msgid "condition/common/186"
+msgstr "对非V系敌方坦克造成损伤"
+
+msgid "condition/common/187"
+msgstr "在战斗的前5分钟内造成损伤"
+
+msgid "condition/common/188"
+msgstr "对移动中的敌方重型坦克或自行反坦克炮造成损伤"
+
+msgid "condition/common/189"
+msgstr "在一场战斗中，自身坦克静止不动时抵挡500点损伤"
+
+msgid "condition/common/192"
+msgstr "通过点亮或使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/193"
+msgstr "在单场战斗中，连续击穿敌方装甲至少3次"
+
+msgid "condition/common/195"
+msgstr "通过点亮，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/196"
+msgstr "击毁距离100米或更近的敌方坦克"
+
+msgid "condition/common/199"
+msgstr "协助盟友击毁敌方坦克"
+
+msgid "condition/common/201"
+msgstr "造成损伤"
+
+msgid "condition/common/202"
+msgstr "完成战斗"
+
+msgid "condition/common/203"
+msgstr "获得经验"
+
+msgid "condition/common/204"
+msgstr "抵挡损伤"
+
+msgid "condition/common/205"
+msgstr "点亮敌方坦克"
+
+msgid "condition/common/206"
+msgstr "击中敌方坦克"
+
+msgid "condition/common/207"
+msgstr "击穿敌方装甲"
+
+msgid "condition/common/208"
+msgstr "通过点亮，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/209"
+msgstr "通过点亮、造成弹震或使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/210"
+msgstr "击中距离至少300米的敌方坦克"
+
+msgid "condition/common/211"
+msgstr "获得三级或更高等级的战斗嘉奖"
+
+msgid "condition/common/212"
+msgstr "所获经验排名本队前5"
+
+msgid "condition/common/213"
+msgstr "对敌方坦克造成的损伤排名本队前7"
+
+msgid "condition/common/215"
+msgstr "使至少1辆敌方坦克无法移动，或对其造成弹震"
+
+msgid "condition/common/216"
+msgstr "获得1场胜利"
+
+msgid "condition/common/217"
+msgstr "击毁敌方坦克"
+
+msgid "condition/common/402"
+msgstr "造成和抵挡损伤"
+
+msgid "condition/common/403"
+msgstr "击中敌方轻型坦克"
+
+msgid "condition/common/404"
+msgstr "击毁无法移动的敌方坦克"
+
+msgid "condition/common/405"
+msgstr "通过造成至少500点损伤，击毁敌方重型坦克或自行反坦克炮"
+
+msgid "condition/common/406"
+msgstr "造成、受到和抵挡损伤"
+
+msgid "condition/common/408"
+msgstr "造成损伤时保持不被点亮"
+
+msgid "condition/common/409"
+msgstr "击毁距离100米或更近的敌方坦克"
+
+msgid "condition/common/410"
+msgstr "通过点亮或使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/411"
+msgstr "造成和抵挡损伤"
+
+msgid "condition/common/412"
+msgstr "对距离200米或更近的敌方坦克造成损伤"
+
+msgid "condition/common/413"
+msgstr "击穿敌方装甲"
+
+msgid "condition/common/416"
+msgstr "造成、抵挡和协助造成损伤"
+
+msgid "condition/common/418"
+msgstr "点亮敌方坦克"
+
+msgid "condition/common/419"
+msgstr "点亮敌方坦克"
+
+msgid "condition/common/420"
+msgstr "造成损伤"
+
+msgid "condition/common/421"
+msgstr "击中移动中的敌方坦克"
+
+msgid "condition/common/422"
+msgstr "对非S系敌方坦克造成损伤"
+
+msgid "condition/common/423"
+msgstr "在移动中击毁敌方坦克"
+
+msgid "condition/common/424"
+msgstr "通过点亮或使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/425"
+msgstr "通过点亮或使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/426"
+msgstr "通过点亮或使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/427"
+msgstr "抵挡损伤"
+
+msgid "condition/common/428"
+msgstr "抵挡损伤"
+
+msgid "condition/common/429"
+msgstr "在移动中对敌方坦克造成损伤"
+
+msgid "condition/common/431"
+msgstr "通过射击，对距离50米或更近的敌方坦克造成损伤"
+
+msgid "condition/common/432"
+msgstr "抵挡射击"
+
+msgid "condition/common/433"
+msgstr "抵挡射击"
+
+msgid "condition/common/434"
+msgstr "抵挡射击"
+
+msgid "condition/common/435"
+msgstr "对非M系敌方坦克造成损伤"
+
+msgid "condition/common/436"
+msgstr "在一场战斗中，使至少1辆敌方坦克无法移动"
+
+msgid "condition/common/437"
+msgstr "击毁敌方坦克时保持不被点亮"
+
+msgid "condition/common/438"
+msgstr "通过使其无法移动，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/439"
+msgstr "对非D系敌方坦克造成损伤"
+
+msgid "condition/common/440"
+msgstr "通过点亮，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/441"
+msgstr "通过点亮，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/442"
+msgstr "对距离至少300米的敌方坦克造成损伤"
+
+msgid "condition/common/443"
+msgstr "击中距离至少300米的敌方坦克"
+
+msgid "condition/common/444"
+msgstr "对敌方重型坦克或自行反坦克炮造成损伤"
+
+msgid "condition/common/445"
+msgstr "对非Y系敌方坦克造成损伤"
+
+msgid "condition/common/446"
+msgstr "击中敌方坦克"
+
+msgid "condition/common/447"
+msgstr "击中敌方坦克"
+
+msgid "condition/common/448"
+msgstr "对非C系敌方坦克造成损伤"
+
+msgid "condition/common/449"
+msgstr "通过点亮，协助盟友击中敌方坦克"
+
+msgid "condition/common/450"
+msgstr "对非F系敌方坦克造成损伤"
+
+msgid "condition/common/451"
+msgstr "击毁无法移动的敌方坦克"
+
+msgid "condition/common/453"
+msgstr "对非J系敌方坦克造成损伤"
+
+msgid "condition/common/454"
+msgstr "对移动中的敌方中型坦克造成损伤"
+
+msgid "condition/common/455"
+msgstr "对敌方坦克造成关键一击"
+
+msgid "condition/common/456"
+msgstr "通过造成弹震，协助盟友对敌方坦克造成损伤"
+
+msgid "condition/common/457"
+msgstr "在战斗的前5分钟内造成损伤"
+
+msgid "condition/common/458"
+msgstr "造成、受到和抵挡损伤"
+
+msgid "condition/common/459"
+msgstr "造成和抵挡损伤"
+
+msgid "condition/common/460"
+msgstr "击毁距离200米或更近的敌方坦克"
+
+msgid "condition/special/1011"
+msgstr "轻型坦克"
+
+msgid "condition/special/1012"
+msgstr "中型坦克"
+
+msgid "condition/special/1013"
+msgstr "重型坦克"
+
+msgid "condition/special/1014"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1021"
+msgstr "轻型坦克"
+
+msgid "condition/special/1022"
+msgstr "中型坦克"
+
+msgid "condition/special/1023"
+msgstr "重型坦克"
+
+msgid "condition/special/1024"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1031"
+msgstr "轻型坦克"
+
+msgid "condition/special/1032"
+msgstr "中型坦克"
+
+msgid "condition/special/1033"
+msgstr "重型坦克"
+
+msgid "condition/special/1034"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1041"
+msgstr "轻型坦克"
+
+msgid "condition/special/1042"
+msgstr "中型坦克"
+
+msgid "condition/special/1043"
+msgstr "重型坦克"
+
+msgid "condition/special/1044"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1051"
+msgstr "轻型坦克"
+
+msgid "condition/special/1052"
+msgstr "中型坦克"
+
+msgid "condition/special/1053"
+msgstr "重型坦克"
+
+msgid "condition/special/1054"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1061"
+msgstr "轻型坦克"
+
+msgid "condition/special/1062"
+msgstr "中型坦克"
+
+msgid "condition/special/1063"
+msgstr "重型坦克"
+
+msgid "condition/special/1064"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1072"
+msgstr "中型坦克"
+
+msgid "condition/special/1073"
+msgstr "重型坦克"
+
+msgid "condition/special/1074"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1081"
+msgstr "轻型坦克"
+
+msgid "condition/special/1082"
+msgstr "中型坦克"
+
+msgid "condition/special/1083"
+msgstr "重型坦克"
+
+msgid "condition/special/1092"
+msgstr "中型坦克"
+
+msgid "condition/special/1093"
+msgstr "重型坦克"
+
+msgid "condition/special/1094"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1102"
+msgstr "中型坦克"
+
+msgid "condition/special/1103"
+msgstr "重型坦克"
+
+msgid "condition/special/1104"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/1112"
+msgstr "中型坦克"
+
+msgid "condition/special/1113"
+msgstr "重型坦克"
+
+msgid "condition/special/1114"
+msgstr "自行反坦克炮"
+
+msgid "condition/special/2011"
+msgstr "突击型"
+
+msgid "condition/special/2012"
+msgstr "突破型"
+
+msgid "condition/special/2013"
+msgstr "狙击型"
+
+msgid "condition/special/2014"
+msgstr "支援型"
+
+msgid "condition/special/2015"
+msgstr "全能型"
+
+msgid "condition/special/2016"
+msgstr "自行火炮"
+
+msgid "condition/special/21010"
+msgstr "S系"
+
+msgid "condition/special/21020"
+msgstr "M系"
+
+msgid "condition/special/21030"
+msgstr "Y系"
+
+msgid "condition/special/21040"
+msgstr "D系"
+
+msgid "condition/special/21050"
+msgstr "C系"
+
+msgid "condition/special/21060"
+msgstr "F系"
+
+msgid "condition/special/21070"
+msgstr "R系"
+
+msgid "condition/special/21080"
+msgstr "J系"
+
+msgid "condition/special/21090"
+msgstr "I系"
+
+msgid "condition/special/21100"
+msgstr "B系"
+
+msgid "condition/special/21110"
+msgstr "V系"
+
+msgid "postBattle/genericTitle"
+msgstr "每周任务"
+
+msgid "specialCondition/container"
+msgstr "。坦克限制: {{specialConditions}}"
+
+msgid "specialCondition/separator"
+msgstr "、"
+
+msgid "specialCondition/tooltip"
+msgstr "— {{condition}}"

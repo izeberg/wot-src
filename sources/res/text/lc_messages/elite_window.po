@@ -16,8 +16,12 @@ msgstr "收到！"
 msgid "elite_window/buttons/post_progression"
 msgstr "前往改装"
 
+msgid "elite_window/buttons/vanity_progression"
+msgstr "前往精英奖励"
+
 msgid "elite_window/elite/description"
-msgstr "已研发自身全部模块和相连研发分支的坦克将成为精英坦克。它们所获得的战斗经验可用金币兑换为全局经验，也可用于加速乘员训练。"
+msgstr ""
+"坦克必须研发其全部模块、升级节点，以及同研发分支上的相邻坦克，才能获得精英状态。您可以利用金币将精英坦克获得的战斗经验兑换为全局经验，或者将精英坦克的战斗经验投入加速乘员训练。"
 
 msgid "elite_window/elite/title"
 msgstr "精英坦克"
@@ -33,3 +37,9 @@ msgstr "精英系统"
 
 msgid "elite_window/title"
 msgstr "已成为精英坦克"
+
+msgid "elite_window/vanity_progression/description"
+msgstr "获取适用于XI级坦克的专属奖励，包括独特的立体化风格、战绩追踪器和炮管护套！"
+
+msgid "elite_window/vanity_progression/title"
+msgstr "精英奖励系统现已开放"

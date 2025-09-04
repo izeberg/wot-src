@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.222787 -0.903965 -2.059309</min>
+		<max>0.223983 0.270765 4.272434</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G188_LeKPZ_Borkenkafer/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G188_LeKpz_Borkenkafer/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+</root>

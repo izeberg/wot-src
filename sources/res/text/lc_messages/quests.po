@@ -1070,6 +1070,9 @@ msgstr "特殊活动货币"
 msgid "bonusName/excluded_map"
 msgstr "排除地图"
 
+msgid "bonusName/excluded_maps"
+msgstr "排除地图"
+
 msgid "bonusName/exclusive_vehicle"
 msgstr "专属坦克"
 
@@ -1112,6 +1115,9 @@ msgstr "喷漆"
 msgid "bonusName/personalNumber"
 msgstr "三位数"
 
+msgid "bonusName/personal_missions_points/preview"
+msgstr "个人任务点数:"
+
 msgid "bonusName/premium"
 msgstr "普通高级账号天数"
 
@@ -1129,6 +1135,9 @@ msgstr "每日奖励战斗。"
 
 msgid "bonusName/slots"
 msgstr "车位"
+
+msgid "bonusName/statTracker"
+msgstr "战绩追踪器"
 
 msgid "bonusName/style"
 msgstr "风格"
@@ -1338,25 +1347,25 @@ msgid "dailyQuests/condition/destroyModule_few"
 msgstr "在一场战斗中造成%(value)d次关键一击"
 
 msgid "dailyQuests/condition/destroyModule_few_accum"
-msgstr "造成%(value)d次关键一击"
+msgstr "造成关键一击"
 
 msgid "dailyQuests/condition/destroyModule_plural"
 msgstr "在一场战斗中造成%(value)d次关键一击"
 
 msgid "dailyQuests/condition/destroyModule_plural_accum"
-msgstr "造成%(value)d次关键一击"
+msgstr "造成关键一击"
 
 msgid "dailyQuests/condition/destroyVeh_few"
 msgstr "在一场战斗中击毁%(value)d辆敌方坦克"
 
 msgid "dailyQuests/condition/destroyVeh_few_accum"
-msgstr "击毁%(value)d辆敌方坦克"
+msgstr "击毁坦克"
 
 msgid "dailyQuests/condition/destroyVeh_plural"
 msgstr "在一场战斗中击毁%(value)d辆敌方坦克"
 
 msgid "dailyQuests/condition/destroyVeh_plural_accum"
-msgstr "击毁%(value)d辆敌方坦克"
+msgstr "击毁坦克"
 
 msgid "dailyQuests/condition/destroyVeh_singular"
 msgstr "在一场战斗中击毁%(value)d辆敌方坦克"
@@ -1374,19 +1383,19 @@ msgid "dailyQuests/condition/doDamageVeh"
 msgstr "在一场战斗中对%(value)d辆敌方坦克造成损伤"
 
 msgid "dailyQuests/condition/doDamageVeh_accum"
-msgstr "对%(value)d辆敌方坦克造成损伤"
+msgstr "对敌方坦克造成损伤"
 
 msgid "dailyQuests/condition/doDamageVeh_singular_accum"
-msgstr "对%(value)d辆敌方坦克造成损伤"
+msgstr "对敌方坦克造成损伤"
 
 msgid "dailyQuests/condition/doDamage_accum"
-msgstr "造成%(value)d点损伤"
+msgstr "造成损伤(点)"
 
 msgid "dailyQuests/condition/earnExp"
 msgstr "在一场战斗中获得%(value)d点基础经验"
 
 msgid "dailyQuests/condition/earnExp_accum"
-msgstr "获得%(value)d点基础经验"
+msgstr "获取基础经验"
 
 msgid "dailyQuests/condition/expTop"
 msgstr "获得的经验排名本队前%(value)d"
@@ -1401,7 +1410,7 @@ msgid "dailyQuests/condition/winBattle"
 msgstr "获得一场战斗胜利"
 
 msgid "dailyQuests/condition/winBattle_accum"
-msgstr "获得%(value)d场战斗胜利"
+msgstr "取得战斗胜利"
 
 msgid "dailyQuests/countDown/remainingText"
 msgstr "后新的普通任务可用"
@@ -1439,7 +1448,7 @@ msgstr "每%M分"
 msgid "dailyQuests/missionSwitch/tooltip/header"
 msgstr "任务重置不可用"
 
-msgid "dailyQuests/postBattle/and"
+msgid "dailyQuests/postBattle/conditionTypeAnd"
 msgstr "和"
 
 msgid "dailyQuests/postBattle/genericAmpersand"
@@ -1508,6 +1517,18 @@ msgstr "在以下战斗场数中完成所有条件:%s"
 msgid "details/conditions/battlesInRow"
 msgstr "在以下连续战斗场数中完成所有条件:%s"
 
+msgid "details/conditions/beyondVisionRadius"
+msgstr "对自身坦克观察范围外的敌方%(classes)s坦克造成损伤"
+
+msgid "details/conditions/beyondVisionRadius/all"
+msgstr "对自身坦克观察范围外的敌方坦克造成损伤"
+
+msgid "details/conditions/beyondVisionRadius/eventCount"
+msgstr "对自身坦克观察范围外的敌方%(classes)s坦克造成指定次数的损伤"
+
+msgid "details/conditions/beyondVisionRadius/eventCount/all"
+msgstr "对自身坦克观察范围外的敌方坦克造成指定次数的损伤"
+
 msgid "details/conditions/clanKills"
 msgstr "使用特殊涂装来击毁敌方坦克，要求使用:涂装颜色:%(camos)s"
 
@@ -1546,6 +1567,21 @@ msgstr "所有组队里的玩家必须是同一个军团的。"
 
 msgid "details/conditions/clanMembership/same/team7x7"
 msgstr "所有团队里的玩家必须是同一个军团的。"
+
+msgid "details/conditions/classes/AT-SPG"
+msgstr "自行反坦克炮"
+
+msgid "details/conditions/classes/SPG"
+msgstr "自行火炮"
+
+msgid "details/conditions/classes/heavyTank"
+msgstr "重型坦克"
+
+msgid "details/conditions/classes/lightTank"
+msgstr "轻型坦克"
+
+msgid "details/conditions/classes/mediumTank"
+msgstr "中型坦克"
 
 msgid "details/conditions/crits/critical/ammoBay"
 msgstr "对弹药架造成损伤"
@@ -1927,6 +1963,57 @@ msgstr "获得的经验"
 
 msgid "details/conditions/cumulative/xp/other"
 msgstr "获得角色经验"
+
+msgid "details/conditions/damageDealt"
+msgstr "击毁%(amount)s辆敌方%(classes)s坦克，且对其中每一辆造成至少%(damage)s点损伤"
+
+msgid "details/conditions/damageDealt/all"
+msgstr "击毁%(amount)s辆敌方坦克，且对其中每一辆造成至少%(damage)s点损伤"
+
+msgid "details/conditions/damageDealt/all/not"
+msgstr "对%(amount)s辆敌方坦克中的每一辆造成至少%(damage)s点损伤，且未将其击毁。"
+
+msgid "details/conditions/damageDealt/not"
+msgstr "对%(amount)s辆敌方%(classes)s坦克中的每一辆造成至少%(damage)s点损伤，且未将其击毁"
+
+msgid "details/conditions/directHitsReceived"
+msgstr "对击中自身坦克至少%(directHitsReceived)s次的敌方%(classes)s坦克造成损伤"
+
+msgid "details/conditions/directHitsReceived/all"
+msgstr "对击中自身坦克至少%(directHitsReceived)s次的敌方坦克造成损伤"
+
+msgid "details/conditions/directHitsReceived/all/negative"
+msgstr "对击中自身坦克%(directHitsReceived)s次或更少的敌方坦克造成损伤"
+
+msgid "details/conditions/directHitsReceived/eventCount"
+msgstr "对击中自身坦克至少%(directHitsReceived)s次的敌方%(classes)s坦克造成指定次数的损伤"
+
+msgid "details/conditions/directHitsReceived/eventCount/all"
+msgstr "对击中自身坦克至少%(directHitsReceived)s次的敌方坦克造成损伤"
+
+msgid "details/conditions/directHitsReceived/eventCount/all/negative"
+msgstr "对击中自身坦克%(directHitsReceived)s次或更少的敌方坦克造成损伤"
+
+msgid "details/conditions/directHitsReceived/eventCount/negative"
+msgstr "对击中自身坦克%(directHitsReceived)s次或更少的敌方%(classes)s坦克造成指定次数的损伤"
+
+msgid "details/conditions/directHitsReceived/negative"
+msgstr "对击中自身坦克%(directHitsReceived)s次或更少的敌方%(classes)s坦克造成损伤"
+
+msgid "details/conditions/enemyIsNotSpotted"
+msgstr "对未被点亮的敌方%(classes)s坦克造成损伤"
+
+msgid "details/conditions/enemyIsNotSpotted/all"
+msgstr "对未被点亮的敌方坦克造成损伤"
+
+msgid "details/conditions/enemyIsNotSpotted/eventCount"
+msgstr "对未被点亮的敌方%(classes)s坦克造成指定次数的损伤"
+
+msgid "details/conditions/enemyIsNotSpotted/eventCount/all"
+msgstr "对未被点亮的敌方坦克造成指定次数的损伤"
+
+msgid "details/conditions/enumerate/or"
+msgstr "或"
 
 msgid "details/conditions/fireDamage"
 msgstr "通过引发着火对敌方坦克造成损伤"
@@ -2501,6 +2588,12 @@ msgstr "团队经验的平均值:%(param)s"
 msgid "details/conditions/results/team7x7/simple"
 msgstr "团队信息:%(param)s"
 
+msgid "details/conditions/spotEnemy"
+msgstr "击毁%(amount)s辆由自身坦克点亮的敌方%(classes)s坦克"
+
+msgid "details/conditions/spotEnemy/all"
+msgstr "击毁%(amount)s辆由自身坦克点亮的敌方坦克"
+
 msgid "details/conditions/survive"
 msgstr "在战斗中存活"
 
@@ -2515,6 +2608,15 @@ msgstr "前%(value)s"
 
 msgid "details/conditions/vehicle"
 msgstr "坦克要求:"
+
+msgid "details/conditions/vehicleBlockedByArmor/title"
+msgstr "抵挡损伤"
+
+msgid "details/conditions/vehicleBlockedByArmor/whileStill"
+msgstr "自身坦克静止不动时，抵挡来自敌方%(classes)s坦克的%(damage)s点损伤"
+
+msgid "details/conditions/vehicleBlockedByArmor/whileStill/all"
+msgstr "自身坦克静止不动时，抵挡%(damage)s点损伤"
 
 msgid "details/conditions/vehicleDamage"
 msgstr "对敌方坦克造成损伤"
@@ -2635,6 +2737,30 @@ msgstr "坦克要求:"
 
 msgid "details/conditions/vehicleKills"
 msgstr "击毁:"
+
+msgid "details/conditions/vehicleKills/beyondVisionRadius"
+msgstr "击毁自身坦克观察范围外的敌方%(classes)s坦克"
+
+msgid "details/conditions/vehicleKills/beyondVisionRadius/all"
+msgstr "击毁自身坦克观察范围外的敌方坦克"
+
+msgid "details/conditions/vehicleKills/enemyIsNotSpotted"
+msgstr "击毁未被点亮的敌方%(classes)s坦克"
+
+msgid "details/conditions/vehicleKills/enemyIsNotSpotted/all"
+msgstr "击毁未被点亮的敌方坦克"
+
+msgid "details/conditions/vehicleKills/whileEnemyInvisible"
+msgstr "击毁未被点亮的敌方%(classes)s坦克"
+
+msgid "details/conditions/vehicleKills/whileEnemyInvisible/all"
+msgstr "击毁未被点亮的敌方坦克"
+
+msgid "details/conditions/vehicleKills/whileMovingAtSpeed"
+msgstr "在以至少%(speed)s千米/小时的速度移动时，击毁敌方%(classes)s坦克"
+
+msgid "details/conditions/vehicleKills/whileMovingAtSpeed/all"
+msgstr "在以至少%(speed)s千米/小时的速度移动时，击毁敌方坦克"
 
 msgid "details/conditions/vehicleStun"
 msgstr "对一辆敌方坦克造成弹震持续时间(秒)"
@@ -2834,6 +2960,30 @@ msgstr "车库中坦克:"
 msgid "details/conditions/vehiclesUnlocked"
 msgstr "研发坦克:"
 
+msgid "details/conditions/whileEnemyInvisible"
+msgstr "对未被点亮的敌方%(classes)s坦克造成损伤"
+
+msgid "details/conditions/whileEnemyInvisible/all"
+msgstr "对未被点亮的敌方坦克造成损伤"
+
+msgid "details/conditions/whileEnemyInvisible/eventCount"
+msgstr "对未被点亮的敌方%(classes)s坦克造成指定次数的损伤"
+
+msgid "details/conditions/whileEnemyInvisible/eventCount/all"
+msgstr "对未被点亮的敌方坦克造成指定次数的损伤"
+
+msgid "details/conditions/whileMovingAtSpeed"
+msgstr "在以至少%(speed)s千米/小时的速度移动时，对敌方%(classes)s坦克造成%(amount)s点损伤"
+
+msgid "details/conditions/whileMovingAtSpeed/all"
+msgstr "在以至少%(speed)s千米/小时的速度移动时，对敌方坦克造成%(amount)s点损伤"
+
+msgid "details/conditions/whileMovingAtSpeed/eventCount"
+msgstr "在以至少%(speed)s千米/小时的速度移动时，对敌方%(classes)s坦克造成指定次数的损伤"
+
+msgid "details/conditions/whileMovingAtSpeed/eventCount/all"
+msgstr "在以至少%(speed)s千米/小时的速度移动时，对敌方坦克造成指定次数的损伤"
+
 msgid "details/conditions/win"
 msgstr "参加战斗并胜利"
 
@@ -2893,6 +3043,12 @@ msgstr "在%(modeName)s模式中的参战场次"
 
 msgid "details/dossier/43/battlesCount"
 msgstr "在天梯战模式中的战斗场次"
+
+msgid "details/dossier/44/battlesCount"
+msgstr "标准模式:热身参战场次"
+
+msgid "details/dossier/49/battlesCount"
+msgstr "在轻量级天梯战模式中的战斗场次"
 
 msgid "details/dossier/5/battlesCount"
 msgstr "特殊参战数"
@@ -4083,15 +4239,14 @@ msgstr "奖励任务"
 
 msgid "infoPage/conditions/default"
 msgstr ""
-"某些任务必须在一场战斗中完成，而累计型任务的完成没有时间限制。累计型任务拥有一个进度条。您可以在标准模式、战役模式和天梯战中完成任务，您在上述多个游戏模式中的任务进度将共享。"
+"一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在标准模式和天梯战中完成它们，而且这些游戏模式中的任务进度将共享。"
 
 msgid "infoPage/conditions/winback"
-msgstr ""
-"一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在热身模式和标准模式(包括战役模式)中完成它们。"
+msgstr "一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在热身模式和标准模式中完成它们。"
 
 msgid "infoPage/conditions/winback_comp7Active"
 msgstr ""
-"一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在热身模式、标准模式(包括战役模式)和天梯战中完成它们，而且这些游戏模式中的任务进度将共享。"
+"一些任务必须在单场战斗中完成，而累积型任务则没有完成的时间限制。累积型任务拥有一个进度条，您可以在热身模式、标准模式和天梯战中完成它们，而且这些游戏模式中的任务进度将共享。"
 
 msgid "infoPage/conditionsTitle"
 msgstr "条件"
@@ -4537,12 +4692,6 @@ msgstr "完成一系列训练任务，可帮助您熟悉基本的游戏机制并
 msgid "missions/tab/battleMatters/header"
 msgstr "新兵成长计划"
 
-msgid "missions/tab/battle_pass/body"
-msgstr "参加标准模式和钢铁猎手的战斗来获得额外奖励。完成日常任务也可获得战斗通行证点数。"
-
-msgid "missions/tab/battle_pass/header"
-msgstr "战斗通行证"
-
 msgid "missions/tab/categories/body"
 msgstr "可以完成一次或多次的任务。"
 
@@ -4819,6 +4968,9 @@ msgstr "已完成"
 
 msgid "personalMission/status/missionDisabled"
 msgstr "任务禁用"
+
+msgid "personalMission/status/notStartedRequired"
+msgstr "未开放: 个人任务只能使用%(minLevel)s级或更高等级的坦克完成"
 
 msgid "personalMission/status/onlyAddDone"
 msgstr "次要条件已完成"
@@ -5101,6 +5253,9 @@ msgstr "\"箱子\""
 
 msgid "token/default/china"
 msgstr "C系"
+
+msgid "token/default/comp7_light"
+msgstr "轻量级天梯战"
 
 msgid "token/default/czech"
 msgstr "J系"

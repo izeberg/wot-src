@@ -23,6 +23,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker.constants
       
       public static const TWIN_GUN_ACTIVE_VALIDATION:String = "twinGunActiveValidation";
       
+      public static const CHARGE_GUN_ACTIVE_VALIDATION:String = "chargeGunActiveValidation";
+      
       public static const GUN_TAG_PREFIX:String = "type";
       
       public static const GUN_MIXING_PREFIX:String = "type";

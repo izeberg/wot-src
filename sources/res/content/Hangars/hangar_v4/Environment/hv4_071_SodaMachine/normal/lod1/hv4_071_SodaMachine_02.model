@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>96.000000</extent>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_071_SodaMachine/normal/lod2/hv4_071_SodaMachine_02</parent>
+	<visibilityBox>
+		<min>-0.494384 -0.000000 -0.453939</min>
+		<max>0.494384 1.995117 0.345610</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_071_SodaMachine/normal/lod1/hv4_071_SodaMachine_02</nodefullVisual>
+</root>

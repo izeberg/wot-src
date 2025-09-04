@@ -432,12 +432,10 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_Grass_53_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Fine_06_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Dry_50_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Burned_Grass_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Green_21_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Flowers_03_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Burned_Grass_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Tussock_11_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/LeavesDry_05_01280_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Lawn_Green_12_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Grass_Fine_07_AM</terrain>
 	</kind>
@@ -453,6 +451,7 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Brown_moss_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/White_moss_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Green_moss_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Green_moss_03_AM</terrain>
 	</kind>
 	<kind>
 		<id>103</id>
@@ -546,7 +545,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_01_2_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_cracks_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/DryRoots_01_00362_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Soil_Dirt_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Gravel_Sandy_Fine_14_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_Ground_01_5_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Farmland_01_AM</terrain>
@@ -638,7 +636,6 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Soil_snow_03_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_06_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/White_moss_06_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Mud_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Paving_Directed_Snow_33_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_30_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_Soil_Damaged_Big_10_AM</terrain>
@@ -708,14 +705,12 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Snow_06_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_Fine_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/hd_env_059_PavingDirected_Red_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingSquareSmallRed_00574_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ConcreteSlabsLarge_01_00510_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_CobbleStone_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ConcreteSlabsLarge_Sand_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ConcreteSlabsLarge_Snow_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PavingBlockDamageBig_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_Stony_Fine_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_Railroad_Rocks_1m_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_CobbleStone_03_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Com_ConcretePlates_02_AM</terrain>
@@ -725,6 +720,8 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_Stones_Big_13_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Concrete_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_Stony_Fine_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/hv4_013_Floor_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Concrete_DamagedPaint3_AM</terrain>
 	</kind>
 	<kind>
 		<id>112</id>
@@ -758,6 +755,17 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_wet_oil_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Ground_wet_oil_03_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Obsidian_01_AM</terrain>
+	</kind>
+	<kind>
+		<id>116</id>
+		<desc>blacksand</desc>
+		<help>Blacksand</help>
+		<ground_strength>soft</ground_strength>
+		<effect_material>blacksand</effect_material>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/SandIceland_01_Dark_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/SandIceland_01_Dark_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Sand_Iceland_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/StonesSandyDark_00347_AM</terrain>
 	</kind>
 	<kind>
 		<id>254</id>

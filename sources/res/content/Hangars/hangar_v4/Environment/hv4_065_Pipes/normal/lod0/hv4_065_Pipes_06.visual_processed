@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>uv2</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/UniversalTextures/Universal_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_AM.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.721569 0.772549 0.780392 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_065_Pipes/hv4_035_GalvanizedMetall_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.408299 7.685611 -1.785715</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-5.031975 -0.238350 -6.109951</min>
+		<max>2.040998 15.609572 4.207073</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>27848</geometrySize>
+</root>

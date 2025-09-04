@@ -47,8 +47,8 @@
 				</slots>
 			</block>
 			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_1</id>
+				<class>IsValid</class>
+				<id>IsValid_1</id>
 				<params/>
 				<slots/>
 			</block>
@@ -68,8 +68,26 @@
 				</slots>
 			</block>
 			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>DeactivateGameObject</class>
 				<id>DeactivateGameObject_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_17</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_18</id>
 				<params/>
 				<slots/>
 			</block>
@@ -133,14 +151,26 @@
 				</slots>
 			</block>
 			<block>
-				<class>ActivateGameObject</class>
-				<id>ActivateGameObject_2</id>
+				<class>If</class>
+				<id>If_19</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>DeactivateGameObject</class>
-				<id>DeactivateGameObject_2</id>
+				<class>IsValid</class>
+				<id>IsValid_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_20</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>ActivateGameObject</class>
+				<id>ActivateGameObject_2</id>
 				<params/>
 				<slots/>
 			</block>
@@ -159,18 +189,18 @@
 					</slot>
 				</slots>
 			</block>
+			<block>
+				<class>DeactivateGameObject</class>
+				<id>DeactivateGameObject_2</id>
+				<params/>
+				<slots/>
+			</block>
 		</blocks>
 		<connections>
 			<connection>
-				<from>Macro_1</from>
-				<input>in</input>
-				<to>ActivateGameObject_1</to>
-				<output>exitActivateCGF</output>
-			</connection>
-			<connection>
 				<from>FindFirstNode_2</from>
 				<input>gameObject</input>
-				<to>ActivateGameObject_1</to>
+				<to>IsValid_1</to>
 				<output>node</output>
 			</connection>
 			<connection>
@@ -180,16 +210,52 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
+				<from>If_17</from>
+				<input>in</input>
+				<to>ActivateGameObject_1</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_2</from>
+				<input>gameObject</input>
+				<to>ActivateGameObject_1</to>
+				<output>node</output>
+			</connection>
+			<connection>
+				<from>If_18</from>
 				<input>in</input>
 				<to>DeactivateGameObject_1</to>
-				<output>exitDeactivateCGF</output>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_2</from>
 				<input>gameObject</input>
 				<to>DeactivateGameObject_1</to>
 				<output>node</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>If_17</to>
+				<output>exitActivateCGF</output>
+			</connection>
+			<connection>
+				<from>IsValid_1</from>
+				<input>value</input>
+				<to>If_17</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>Macro_1</from>
+				<input>input</input>
+				<to>If_18</to>
+				<output>exitDeactivateCGF</output>
+			</connection>
+			<connection>
+				<from>IsValid_1</from>
+				<input>value</input>
+				<to>If_18</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>TriggerExternal_1</from>
@@ -205,26 +271,44 @@
 			</connection>
 			<connection>
 				<from>Macro_1</from>
-				<input>in</input>
-				<to>ActivateGameObject_2</to>
+				<input>input</input>
+				<to>If_19</to>
 				<output>exitActivateColorBlind</output>
+			</connection>
+			<connection>
+				<from>IsValid_2</from>
+				<input>value</input>
+				<to>If_19</to>
+				<output>res</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_3</from>
 				<input>gameObject</input>
-				<to>ActivateGameObject_2</to>
+				<to>IsValid_2</to>
 				<output>node</output>
 			</connection>
 			<connection>
 				<from>Macro_1</from>
-				<input>in</input>
-				<to>DeactivateGameObject_2</to>
+				<input>input</input>
+				<to>If_20</to>
 				<output>exitDeactivateColorBlind</output>
+			</connection>
+			<connection>
+				<from>IsValid_2</from>
+				<input>value</input>
+				<to>If_20</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>If_19</from>
+				<input>in</input>
+				<to>ActivateGameObject_2</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>FindFirstNode_3</from>
 				<input>gameObject</input>
-				<to>DeactivateGameObject_2</to>
+				<to>ActivateGameObject_2</to>
 				<output>node</output>
 			</connection>
 			<connection>
@@ -232,6 +316,18 @@
 				<input>gameObject</input>
 				<to>FindFirstNode_3</to>
 				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_20</from>
+				<input>in</input>
+				<to>DeactivateGameObject_2</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>FindFirstNode_3</from>
+				<input>gameObject</input>
+				<to>DeactivateGameObject_2</to>
+				<output>node</output>
 			</connection>
 		</connections>
 		<macros/>

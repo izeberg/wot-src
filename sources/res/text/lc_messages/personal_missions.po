@@ -391,7 +391,10 @@ msgid "conditions/unlimited/label/main"
 msgstr "在任意数量的战斗中完成主要条件"
 
 msgid "detailedView/completeBtnLabel"
-msgstr "完成%(count)d %(icon)s"
+msgstr "使用%(count)d个%(icon)s完成"
+
+msgid "detailedView/conditionLabel"
+msgstr "条件"
 
 msgid "detailedView/conditionsFullylabel"
 msgstr "完美完成"
@@ -574,6 +577,18 @@ msgstr "作战行动"
 msgid "header/backBtn/label"
 msgstr "返回"
 
+msgid "navigation/backButton/assembling"
+msgstr "装配"
+
+msgid "navigation/backButton/campaignSelector"
+msgstr "作战行动地图"
+
+msgid "navigation/backButton/dashboard"
+msgstr "作战行动"
+
+msgid "navigation/backButton/missions"
+msgstr "任务"
+
 msgid "operationInfo/awardsButton/label"
 msgstr "作战行动奖励"
 
@@ -612,6 +627,12 @@ msgstr "不可用: 没有适用的 %(vehData)s坦克"
 
 msgid "operationTitle/label/noVehicle/regular"
 msgstr "不可用: 没有 %(vehData)s 系列适用的坦克"
+
+msgid "operationTitle/label/notStarted"
+msgstr "%(currentOperation)s作战行动现已开放！%(infoIcon)s"
+
+msgid "operationTitle/label/notStartedNoVehicle"
+msgstr "未开放: 个人任务只能使用%(minLevel)s级或更高等级的坦克完成"
 
 msgid "operationTitle/label/toMaster"
 msgstr "任务已完美完成:%(count)s/%(total)s  %(infoIcon)s"
@@ -657,6 +678,9 @@ msgstr "不可用"
 msgid "operations/title1"
 msgstr "IV号突击炮"
 
+msgid "operations/title10"
+msgstr "黑岩"
+
 msgid "operations/title2"
 msgstr "T28(概念车)"
 
@@ -675,8 +699,20 @@ msgstr "奇美拉"
 msgid "operations/title7"
 msgstr "279工程早期型"
 
+msgid "operations/title8"
+msgstr "风猎者"
+
+msgid "operations/title9"
+msgstr "掠食者"
+
 msgid "operations/unlocked/desc"
 msgstr "可用"
+
+msgid "pages/button/infopage/description"
+msgstr "关于个人任务"
+
+msgid "pages/button/video/description"
+msgstr "观看个人任务的介绍视频"
 
 msgid "personalMissions/tankgirlsPopover/recruitBtn"
 msgstr "招募"
@@ -717,6 +753,9 @@ msgstr "已暂停"
 msgid "questProgressTracking/trackingStatus"
 msgstr "这两项任务目前都已完成"
 
+msgid "questStatus/tankCondition"
+msgstr "不适用于所选坦克"
+
 msgid "sidebar/completed"
 msgstr "已完成"
 
@@ -742,13 +781,19 @@ msgid "sidebar/vehicles/mediumTank"
 msgstr "中型坦克"
 
 msgid "statusPanel/freeSheetBtn/label"
-msgstr "完成%(count)d %(icon)s"
+msgstr "使用%(count)d个%(icon)s完成"
 
 msgid "statusPanel/freeSheets"
 msgstr "可用:%(count)s"
 
 msgid "statusPanel/pawnedSheets"
 msgstr "已提交至任务:%(count)s"
+
+msgid "statusPanel/proceedExecution/label"
+msgstr "激活"
+
+msgid "statusPanel/resumeCompaing/label"
+msgstr "继续个人任务"
 
 msgid "statusPanel/status/allDone"
 msgstr "%(vehicleClass)s的所有任务都已完成"
@@ -770,6 +815,9 @@ msgstr "(取回%(count)d%(icon)s)"
 
 msgid "statusPanel/status/selectTask"
 msgstr "选择要完成的任务"
+
+msgid "statusPanel/status/suspended"
+msgstr "\"%(campaignName)s\"个人任务已暂停。%(infoIcon)s"
 
 msgid "tankmoduleTooltipData/alliance/help/body"
 msgstr "满足%(vehType)s的最后一个任务的主要条件才能获得。"

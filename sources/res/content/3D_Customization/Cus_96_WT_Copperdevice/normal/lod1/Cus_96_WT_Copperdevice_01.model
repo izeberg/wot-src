@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_96_WT_Copperdevice/normal/lod1/Cus_96_WT_Copperdevice_01</nodefullVisual>
+	<parent>content/3D_Customization/Cus_96_WT_Copperdevice/normal/lod2/Cus_96_WT_Copperdevice_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.469180 -0.009877 -0.836170</min>
+		<max>0.169078 0.340275 0.836170</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

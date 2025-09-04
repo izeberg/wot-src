@@ -3,6 +3,7 @@ package net.wg.gui.lobby.sessionStats
    import flash.display.InteractiveObject;
    import flash.display.MovieClip;
    import flash.events.MouseEvent;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import net.wg.data.VO.ButtonPropertiesVO;
    import net.wg.data.constants.Values;
@@ -217,7 +218,7 @@ package net.wg.gui.lobby.sessionStats
          return undefined;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          if(_width == param1 && _height == param2)
          {

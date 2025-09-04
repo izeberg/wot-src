@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.ranked.ranked_qualification_rewards_battle_bonus_model import RankedQualificationRewardsBattleBonusModel
 
 class RankedQualificationRewardsViewModel(ViewModel):

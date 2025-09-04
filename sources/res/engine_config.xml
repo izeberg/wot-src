@@ -104,7 +104,7 @@
 		</DRRAutoscaler>
 		<DRRAutodetect>
 			<DRRScale>
-				0.80
+				0.60
 				<!--BW_String-->
 				<GPUScore>300</GPUScore>
 			</DRRScale>
@@ -653,6 +653,9 @@
 					<name>Personal_missions.bnk</name>
 				</bank>
 				<bank>
+					<name>personal_missions_voiceover.bnk</name>
+				</bank>
+				<bank>
 					<name>personal_reserves.bnk</name>
 				</bank>
 				<bank>
@@ -748,7 +751,13 @@
 					<name>wdr.pck</name>
 				</bank>
 				<bank>
-					<name>ev_wot_bday_2025.bnk</name>
+					<name>hangar_personal_missions.bnk</name>
+				</bank>
+				<bank>
+					<name>about_vehicle.bnk</name>
+				</bank>
+				<bank>
+					<name>hangar_personal_missions.bnk</name>
 				</bank>
 			</SFX_soundbanks_hangar>
 			<SFX_soundbanks_login>
@@ -762,12 +771,6 @@
 				</bank>
 				<bank>
 					<name>fast_guns.pck</name>
-				</bank>
-				<bank>
-					<name>ev_fep_fast_gun.bnk</name>
-				</bank>
-				<bank>
-					<name>ev_fep_fast_gun.pck</name>
 				</bank>
 				<bank>
 					<name>ambient.bnk</name>
@@ -852,6 +855,12 @@
 				</bank>
 				<bank>
 					<name>newbie_hints_voiceover.bnk</name>
+				</bank>
+				<bank>
+					<name>abilities.bnk</name>
+				</bank>
+				<bank>
+					<name>abilities.pck</name>
 				</bank>
 			</SFX_soundbanks_arena>
 			<SFX_soundbanks_editor>
@@ -1127,6 +1136,7 @@
 	<gameface>
 		<taskSystem>
 			<maxThreads>2</maxThreads>
+			<minThreads>2</minThreads>
 			<cpuCoresThreshold>5</cpuCoresThreshold>
 		</taskSystem>
 	</gameface>

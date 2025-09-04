@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/gun_slots/F136_gunsleeve_beast/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.316900 -0.485898 -2.978539</min>
+		<max>0.320961 0.333404 3.166030</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/gun_slots/F136_gunsleeve_beast/normal/lod0/attachment</nodefullVisual>
+</root>

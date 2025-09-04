@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.components
 {
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import net.wg.infrastructure.interfaces.IViewStackContent;
    
    public class ResizableViewStack extends DataViewStack
@@ -11,12 +12,15 @@ package net.wg.gui.lobby.components
       private static const AVAILABLE_SIZE_INV:String = "availSizeInv";
        
       
-      private var availableSize:Point = null;
+      protected var paddings:Rectangle;
+      
+      private var _availableSize:Point = null;
       
       private var _centerOffset:int = 0;
       
       public function ResizableViewStack()
       {
+         this.paddings = new Rectangle();
          super();
       }
       
@@ -30,22 +34,12 @@ package net.wg.gui.lobby.components
          }
          _loc3_ = IResizableContent(_loc4_);
          _loc3_.active = true;
-         if(this.availableSize)
+         if(this._availableSize)
          {
-            _loc3_.setViewSize(this.availableSize.x,this.availableSize.y);
+            _loc3_.setViewSize(this._availableSize.x,this._availableSize.y,this.paddings);
          }
          _loc3_.centerOffset = this._centerOffset;
          return _loc4_;
-      }
-      
-      override public function get width() : Number
-      {
-         return Boolean(this.availableSize) ? Number(this.availableSize.x) : Number(super.width);
-      }
-      
-      override public function get height() : Number
-      {
-         return Boolean(this.availableSize) ? Number(this.availableSize.y) : Number(super.height);
       }
       
       override protected function draw() : void
@@ -53,9 +47,9 @@ package net.wg.gui.lobby.components
          super.draw();
          if(isInvalid(AVAILABLE_SIZE_INV))
          {
-            if(this.availableSize && currentView)
+            if(this._availableSize && currentView)
             {
-               IResizableContent(currentView).setViewSize(this.availableSize.x,this.availableSize.y);
+               IResizableContent(currentView).setViewSize(this._availableSize.x,this._availableSize.y,this.paddings);
             }
          }
          if(isInvalid(OFFSET_INVALID))
@@ -69,19 +63,35 @@ package net.wg.gui.lobby.components
       
       override protected function onDispose() : void
       {
-         this.availableSize = null;
+         this._availableSize = null;
+         this.paddings = null;
          super.onDispose();
       }
       
-      public function setAvailableSize(param1:Number, param2:Number) : void
+      public function setAvailableSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
-         if(this.availableSize == null)
+         if(this._availableSize == null)
          {
-            this.availableSize = new Point();
+            this._availableSize = new Point();
          }
-         this.availableSize.x = param1;
-         this.availableSize.y = param2;
+         if(param3 == null)
+         {
+            param3 = new Rectangle();
+         }
+         this._availableSize.x = param1;
+         this._availableSize.y = param2;
+         this.paddings = param3;
          invalidate(AVAILABLE_SIZE_INV);
+      }
+      
+      override public function get width() : Number
+      {
+         return Boolean(this._availableSize) ? Number(this._availableSize.x) : Number(super.width);
+      }
+      
+      override public function get height() : Number
+      {
+         return Boolean(this._availableSize) ? Number(this._availableSize.y) : Number(super.height);
       }
       
       public function set centerOffset(param1:int) : void

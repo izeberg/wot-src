@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/A183_gunsleeve_arrowhead/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.144729 -0.280310 -2.294233</min>
+		<max>0.359612 0.223062 1.246257</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/A183_gunsleeve_arrowhead/normal/lod1/attachment</nodefullVisual>
+</root>

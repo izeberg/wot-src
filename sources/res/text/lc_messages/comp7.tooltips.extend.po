@@ -24,3 +24,9 @@ msgstr "组队战斗时，您可获得额外银币和经验。"
 
 msgid "squadBonus/comp7/noExpDescription"
 msgstr "组队战斗时，您可获得额外银币。"
+
+msgid "squadBonus/complex/comp7/body"
+msgstr "当和其他玩家组队时，每场战斗结束后，您将额外获得{brown_Open}%(value)s{brown_Close}战斗经验。"
+
+msgid "squadBonus/complex/comp7/header"
+msgstr "组队战斗加成"

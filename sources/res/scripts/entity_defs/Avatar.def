@@ -385,7 +385,7 @@
 			<ReplayExposureLevel>ALL_CLIENTS</ReplayExposureLevel>
 			<Arg>
 				ARRAY
-				<of>UINT64</of>
+				<of>CLIENT_SHOT_RESULT_DATA</of>
 			</Arg>
 		</showShotResults>
 		<showDevelopmentInfo>
@@ -419,6 +419,7 @@
 			<Arg>VECTOR3</Arg>
 			<Arg>FLOAT32</Arg>
 			<Arg>FLOAT32</Arg>
+			<Arg>UINT8</Arg>
 			<Arg>UINT8</Arg>
 		</showTracer>
 		<stopTracer>
@@ -631,7 +632,7 @@
 		<showShotResults>
 			<Arg>
 				ARRAY
-				<of>UINT64</of>
+				<of>CLIENT_SHOT_RESULT_DATA</of>
 			</Arg>
 		</showShotResults>
 		<explodeProjectile>

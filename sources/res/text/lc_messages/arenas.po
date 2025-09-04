@@ -144,6 +144,20 @@ msgstr "沼泽、沟壑和丘陵地形决定了您的战术。稀疏的建筑物
 msgid "11_murovanka/name"
 msgstr "穆勒万卡"
 
+msgid "120_graf_zeppelin/description"
+msgstr ""
+"在北海的一座偏远岛屿上，一个战略火箭基地坐落在崎岖的山脉和郁郁葱葱的山谷之间。努德斯卡尔终年浓雾遮蔽，朔风席卷，因此人迹罕至——但惨烈战斗的伤痕仍历历在目。"
+
+msgid "120_graf_zeppelin/name"
+msgstr "努德斯卡尔"
+
+msgid "120_graf_zeppelin_scc/description"
+msgstr ""
+"在北海的一座偏远岛屿上，一个战略火箭基地坐落在崎岖的山脉和郁郁葱葱的山谷之间。努德斯卡尔终年浓雾遮蔽，朔风席卷，因此人迹罕至——但惨烈战斗的伤痕仍历历在目。"
+
+msgid "120_graf_zeppelin_scc/name"
+msgstr "努德斯卡尔"
+
 msgid "121_lost_paradise_v/description"
 msgstr ""
 "这个火山岛上的关键作战区域是一个蜿蜒曲折的岩石峡谷，适合重甲坦克和突击坦克。位于另一侧的机场，为坦克提供了一个可以迅速接近敌方基地(或回防己方基地)的大好机会。然而，由于此处掩体稀少，您需要依靠坦克的机动性。海岸区域的地形较为开放，"
@@ -228,13 +242,6 @@ msgstr ""
 msgid "210_bf_epic_desert/name"
 msgstr "海市蜃楼"
 
-msgid "212_epic_random_valley/description"
-msgstr ""
-"两座巨大的山脉环绕着这片宁静的山谷，城堡的废墟俯瞰着这片区域，掌控着周边的湖泊与森林。广袤的原野可用于隐秘而快速地向敌军侧翼发起攻击，而小型的村落则提供了与敌人正面对决的机会。"
-
-msgid "212_epic_random_valley/name"
-msgstr "尼德堡"
-
 msgid "212_epic_random_valley_sm25/description"
 msgstr ""
 "高山之巅矗立着一座孤零零的要塞，由D系驻军把守。深更夜半，D系投降的消息尚未传至此地，疲惫不堪的士兵们正加固防御工事，迎接逼近的盟军。他们浑然不知这场抵抗已无意义，依旧做着迎接最后一战的准备——一场注定没有胜者的战斗。"
@@ -248,13 +255,6 @@ msgstr ""
 
 msgid "217_er_alaska/name"
 msgstr "克朗代克"
-
-msgid "222_er_clime/description"
-msgstr ""
-"位于平坦地形上，被周边乡间别墅环绕的制砖厂是双方队伍争夺的焦点。控制了工厂，就为后续进攻敌方基地建立了立足点。穿越附近相对开阔的地域时可能会潜伏的自行反坦克炮以及自行火炮的攻击，对重装甲坦克可谓危机四伏。"
-
-msgid "222_er_clime/name"
-msgstr "腹地"
 
 msgid "23_westfeld/description"
 msgstr ""
@@ -387,20 +387,6 @@ msgstr "地图东侧有一片山脉，夺取此处的高地便能取得优势。
 msgid "63_tundra/name"
 msgstr "喀秋莎"
 
-msgid "83_kharkiv/description"
-msgstr ""
-"一道大型反坦克壕将地图分为城市和郊区两部分。在城区的作战中，要经常利用掩体、瓦砾堆和路障做掩护。在开阔的地形上静止不动是非常危险的行为，容易遭到远程直瞄火力和自行火炮的打击。这需要您采取一种主动出击、迅速转移的玩法。"
-
-msgid "83_kharkiv/name"
-msgstr "哈尔科夫"
-
-msgid "90_minsk/description"
-msgstr ""
-"中近距离上的战斗将在胜利广场附近进行，机动性较低的重装甲坦克可以利用此处的地形，躲避自行火炮的攻击。马戏团大楼周边的位置既可用来支援盟友，也可用来向敌方的侧后发起进攻。宽阔的大道则意味着双方都可利用此处发起进攻，远程火力对战局将造成至关重要的影响。"
-
-msgid "90_minsk/name"
-msgstr "太阳城"
-
 msgid "95_lost_city_ctf/description"
 msgstr "这座位于沙漠中的要塞是重型坦克正面交锋的理想场所，而机动性更强的坦克可从侧翼向敌人发动奇袭。"
 
@@ -413,6 +399,9 @@ msgstr ""
 
 msgid "99_poland/name"
 msgstr "斯杜季昂奇"
+
+msgid "invalid_map/name"
+msgstr "地图无效"
 
 msgid "type/assault/description1"
 msgstr "任务目标:防守己方基地或击毁敌方所有坦克。"
@@ -431,6 +420,17 @@ msgstr "任务目标:攻占一个敌方基地或击毁所有敌方坦克。"
 
 msgid "type/assault2/name"
 msgstr "攻防战"
+
+msgid "type/comp7/description"
+msgstr ""
+"任务: 占领基地或击毁所有敌方坦克。\n"
+"占领焦点位置即可使用战术能力。"
+
+msgid "type/comp7/name"
+msgstr "天梯战"
+
+msgid "type/comp7/short_description"
+msgstr "任务: 占领基地或击毁所有敌方坦克。"
 
 msgid "type/ctf/description"
 msgstr "任务目标:攻占敌方基地或击毁敌方所有坦克。"

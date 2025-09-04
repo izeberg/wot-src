@@ -585,7 +585,7 @@ package scaleform.clik.controls
       public function removeAllRenderers() : void
       {
          var _loc1_:DisplayObject = null;
-         while(this.container.numChildren > 0)
+         while(this.container && this.container.numChildren > 0)
          {
             _loc1_ = this.container.removeChildAt(0);
             if(_loc1_ is IDisposable)

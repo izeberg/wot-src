@@ -172,7 +172,7 @@ package net.wg.gui.lobby.header.headerButtonBar
       override protected function onDispose() : void
       {
          var _loc1_:DisplayObject = null;
-         while(container.numChildren > 0)
+         while(container && container.numChildren > 0)
          {
             _loc1_ = container.removeChildAt(0);
             this.removeRenderer(_loc1_);

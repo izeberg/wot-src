@@ -94,24 +94,6 @@
 					</rule>
 				</directory>
 			</directory>
-			<directory>
-				<path>hd_bld_SU_027_OperaTheatre</path>
-				<rule>
-					<allowSplit>true</allowSplit>
-					<lodMode>3</lodMode>
-					<pattern>.*_BAM\.dds</pattern>
-				</rule>
-				<rule>
-					<allowSplit>true</allowSplit>
-					<lodMode>3</lodMode>
-					<pattern>.*_BANM\.dds</pattern>
-				</rule>
-				<rule>
-					<allowSplit>true</allowSplit>
-					<lodMode>3</lodMode>
-					<pattern>.*_BGMM\.dds</pattern>
-				</rule>
-			</directory>
 		</directory>
 		<directory>
 			<path>Environment</path>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch67_BZ_79/crash/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch67_BZ_79/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.556916 -0.092988 -1.955500</min>
+		<max>1.555171 2.804475 1.790666</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

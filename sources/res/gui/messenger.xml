@@ -589,6 +589,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<battlePass>&lt;br/&gt;%(battlePassProgression)s</battlePass>
 		<battlePassBR>%(battlePassProgression)s</battlePassBR>
 		<battleResultBrcoin>&lt;br/&gt;%(brcoin)s</battleResultBrcoin>
+		<commendations>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/commendations/battleResults/commendationsReceived): &lt;font color=&apos;#FFDD99&apos;&gt;%(commendationsReceived)s&lt;/font&gt;&lt;/font&gt;</commendations>
 		<piggyBank>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/piggyBank): &lt;font color=&apos;#D6D7D4&apos;&gt;%(credits)s&lt;/font&gt;&lt;/font&gt;</piggyBank>
 		<battleResultLocks>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/vehicleLock)&lt;/font&gt;</battleResultLocks>
 		<battleResultGold>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/gold): &lt;font color=&apos;#FFC363&apos;&gt;%(gold)s&lt;/font&gt;&lt;/font&gt;</battleResultGold>
@@ -603,6 +604,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<battleQuestsEquipCoin>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/equipCoin): &lt;font color=&apos;#C9C9B6&apos;&gt;%(equipCoin)s&lt;/font&gt;&lt;/font&gt;</battleQuestsEquipCoin>
 		<battleQuestsBerths>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/berths): &lt;font color=&apos;#D6D7D4&apos;&gt;%(berths)s&lt;/font&gt;&lt;/font&gt;</battleQuestsBerths>
 		<battleQuestsPopUps>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/achievements): &lt;font color=&apos;#D6D7D4&apos;&gt;%(achievements)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPopUps>
+		<battleQuestsPopUpsPM3>&lt;font color=&apos;#8C8C7E&apos;&gt;&lt;font color=&apos;#D6D7D4&apos;&gt;%(achievements)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPopUpsPM3>
 		<battleQuestsPremium>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/premium): &lt;font color=&apos;#D6D7D4&apos;&gt;%(days)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPremium>
 		<battleQuestsPremiumPlus>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/premium_plus): &lt;font color=&apos;#D6D7D4&apos;&gt;%(days)s&lt;/font&gt;&lt;/font&gt;</battleQuestsPremiumPlus>
 		<battleQuestsItems>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/quests/items): &lt;font color=&apos;#D6D7D4&apos;&gt;%(names)s&lt;/font&gt;&lt;/font&gt;</battleQuestsItems>
@@ -654,6 +656,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<tankmenInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/tankmen): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(tankman)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</tankmenInvoiceReceived>
 		<tankmenInvoiceDismiss>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/tankmenToRemove): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(tankmenToRemove)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</tankmenInvoiceDismiss>
 		<boostersInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/boosters): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boosters)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</boostersInvoiceReceived>
+		<expirableBoostersInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/expirableBoosters): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boosters)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</expirableBoostersInvoiceReceived>
 		<boostersDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/boosters/debited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(boosters)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</boostersDebitedInvoiceReceived>
 		<enhancementsAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/enhancementsAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(count)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</enhancementsAccruedInvoiceReceived>
 		<enhancementsDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/enhancementsDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;&lt;b&gt;%(count)s&lt;/b&gt;&lt;/font&gt;&lt;/font&gt;</enhancementsDebitedInvoiceReceived>
@@ -731,6 +734,8 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<boosterExpiredCount>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/boosterExpired/message)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</boosterExpiredCount>
 		<personalReservesSoonExpire>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/personalReservesSoonExpire/description)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</personalReservesSoonExpire>
 		<personalReservesRelease>&lt;font color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/personalReservesRelease/description)&lt;/font&gt;&lt;font color=&quot;#E9E2BF&quot;&gt;%(boosterCount)s&lt;/font&gt;</personalReservesRelease>
+		<pm3Gray>&lt;font color=&quot;#807e79&quot;&gt;%(message)s&lt;/font&gt;</pm3Gray>
+		<pm3Beige>&lt;font color=&quot;#c7c5bb&quot;&gt;%(message)s&lt;/font&gt;</pm3Beige>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<SimpleGiftSysMessage>
@@ -778,7 +783,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			</buttonsLayout>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/victory)!&lt;/font&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#8C8C7E&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#8C8C7E&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s%(commendations)s</message>
 		</battleVictoryResult>
 		<battleDrawGameResult>
 			<type>battleResult</type>
@@ -797,7 +802,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			</buttonsLayout>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/drawGame)&lt;/font&gt;
 &lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
-&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s%(commendations)s</message>
 		</battleDrawGameResult>
 		<battleDefeatResult>
 			<type>battleResult</type>
@@ -816,7 +821,7 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			</buttonsLayout>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/battleResults/defeat)&lt;/font&gt;
 &lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/battle): %(arenaName)s &lt;/font&gt;
-&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s</message>
+&lt;font color=&apos;#929290&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/tanks): %(vehicleNames)s&lt;/font&gt;&lt;font color=&apos;#929290&apos;&gt;%(xp)s%(xpEx)s%(battlePassProgress)s&lt;/font&gt;%(crystalStr)s%(gold)s%(eventCoinStr)s%(bpcoinStr)s%(equipCoinStr)s&lt;font color=&apos;#929290&apos;&gt;%(credits)s%(creditsEx)s&lt;/font&gt;%(rankedProgress)s%(rankedBonusBattles)s%(achieves)s%(lock)s%(quests)s%(piggyBank)s%(platformCurrencyStr)s%(commendations)s</message>
 		</battleDefeatResult>
 		<specialReward>
 			<type>grey</type>
@@ -1185,6 +1190,30 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			</filters>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</InformationHeaderSysMessage>
+		<PauseSysMessage>
+			<type>yellow</type>
+			<priority>medium</priority>
+			<icon>Pause</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</PauseSysMessage>
+		<PmActionCompletedSysMessage>
+			<type>green</type>
+			<priority>low</priority>
+			<icon>GreenCheck</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</PmActionCompletedSysMessage>
+		<PmActionCompletedHonorSysMessage>
+			<type>green</type>
+			<priority>low</priority>
+			<icon>DoubleGreenCheck</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/sysMsg/titles/error)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</PmActionCompletedHonorSysMessage>
+		<PmActiveOperationSysMessage>
+			<type>yellow</type>
+			<priority>medium</priority>
+			<icon>YellowFlag</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</PmActiveOperationSysMessage>
 		<GameGreetingSysMessage>
 			<type>lightGrey</type>
 			<icon>MessageIcon</icon>
@@ -1659,6 +1688,24 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>InformationIcon</icon>
 			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s:&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
 		</personalMissionsCustom>
+		<pm3OperationCompletion>
+			<type>grey</type>
+			<priority>low</priority>
+			<icon>GreenCheck</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s&lt;br/&gt;%(achieves)s</message>
+		</pm3OperationCompletion>
+		<pm3CompletionHonor>
+			<type>grey</type>
+			<priority>low</priority>
+			<icon>DoubleGreenCheck</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s&lt;br/&gt;%(achieves)s</message>
+		</pm3CompletionHonor>
+		<personalMissions3Custom>
+			<type>grey</type>
+			<priority>low</priority>
+			<icon>InformationIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</personalMissions3Custom>
 		<defaultMessage>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
@@ -3271,20 +3318,6 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<priority>low</priority>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/steamEmailCompletion/header)&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;_(#messenger:serviceChannelMessages/steamEmailCompletion/body)&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
 		</SteamEmailCompletionAward>
-		<WotPlusSubscribersOnboarding>
-			<type>grey</type>
-			<icon>wotplus_16x16</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#FFDD99&quot;&gt;_(#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/title)&lt;/font&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/body)&lt;/font&gt;</message>
-			<buttonsLayout>
-				<button>
-					<type>submit</type>
-					<label>_(#event_boards:notification/buttons/details)</label>
-					<action>openWotPlusIntroView</action>
-				</button>
-			</buttonsLayout>
-			<buttonsAlign>left</buttonsAlign>
-		</WotPlusSubscribersOnboarding>
 		<WotPlusAttendanceRewardsSmall>
 			<type>grey</type>
 			<icon>wotplus_16x16</icon>
@@ -3464,10 +3497,62 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<icon>MentorLicenceIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#mentoring_license:serviceChannelMessages/TransferXP/body)&lt;font color=&apos;#E9E2BF&apos;&gt;%(xp)s&lt;/font&gt;&lt;br&gt;%(xpLost)s%(amount)s&lt;/font&gt;</message>
 		</MentorAssignmentSysMessage>
-		<WotAnniversaryRewardSysMessage>
+		<PersonalMission3Quest>
+			<priority>high</priority>
+			<groupID>offer</groupID>
+			<type>lightGrey</type>
+			<linkage>PM3Quest</linkage>
+			<message>&lt;P ALIGN=&quot;center&quot;&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#B2AFAB&quot;&gt;%(header)s&lt;/font&gt;&lt;/P&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submitGhost</type>
+					<label>&lt;font face=&quot;$TitleFont&quot;&gt;_(#messenger:serviceChannelMessages/PersonalMission3Quest/goToOperation)&lt;/font&gt;</label>
+					<action>toOperationPM3</action>
+					<paddingHorizontal>23</paddingHorizontal>
+					<textYPadding>2</textYPadding>
+				</button>
+			</buttonsLayout>
+			<buttonsAlign>center</buttonsAlign>
+		</PersonalMission3Quest>
+		<PersonalMission3Quest15>
+			<priority>high</priority>
+			<groupID>offer</groupID>
+			<type>lightGrey</type>
+			<linkage>PM3Quest</linkage>
+			<message>&lt;P ALIGN=&quot;center&quot;&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&quot;#B2AFAB&quot;&gt;%(header)s&lt;/font&gt;&lt;/P&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submitGhost</type>
+					<label>&lt;font face=&quot;$TitleFont&quot;&gt;_(#messenger:serviceChannelMessages/PersonalMission3Quest/affirmative)&lt;/font&gt;</label>
+					<action>affirmativePM3Notification</action>
+					<dynamicSizeByText>true</dynamicSizeByText>
+					<paddingHorizontal>23</paddingHorizontal>
+					<textYPadding>2</textYPadding>
+				</button>
+			</buttonsLayout>
+			<buttonsAlign>center</buttonsAlign>
+		</PersonalMission3Quest15>
+		<PersonalMission3Completion>
+			<type>green</type>
 			<priority>low</priority>
+			<icon>GreenCheck</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</PersonalMission3Completion>
+		<SkillTreePerkAvailableNotification>
+			<groupID>info</groupID>
+			<gfViewName>SkillTreePerkAvailableNotification</gfViewName>
+			<linkage>GamefaceNotification</linkage>
+		</SkillTreePerkAvailableNotification>
+		<PrestigeMilestoneRewardMessage>
 			<icon>InformationIcon</icon>
-			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(header)s&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;8&quot;&gt; &lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
-		</WotAnniversaryRewardSysMessage>
+			<priority>medium</priority>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</PrestigeMilestoneRewardMessage>
+		<VehicleSkillTreePerksResearchedSysMessage>
+			<priority>low</priority>
+			<type>green</type>
+			<icon>PowerlevelIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
+		</VehicleSkillTreePerksResearchedSysMessage>
 	</htmlTemplates>
 </root>

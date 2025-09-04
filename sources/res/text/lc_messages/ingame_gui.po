@@ -517,10 +517,10 @@ msgid "devMaps/hint/press"
 msgstr "按下"
 
 msgid "devMaps/mapInfo/info"
-msgstr "该地图正在测试随机事件的Beta版。此类地图可以在游戏设置中(\"游戏\"标签页中的标准模式类型版块)关闭。"
+msgstr "这张地图上可能会发生随机事件。您可在游戏设置中关闭此类地图。"
 
 msgid "devMaps/mapInfo/text"
-msgstr "测试地图"
+msgstr "带有随机事件的地图"
 
 msgid "devices/ammo_bay"
 msgstr "弹药架"
@@ -867,6 +867,12 @@ msgstr "%(time)s秒..."
 msgid "fortConsumables/timer/postfix"
 msgstr "秒…"
 
+msgid "grille/status/reload"
+msgstr "正在装填..."
+
+msgid "grille/status/speedlimit"
+msgstr "速度限制"
+
 msgid "helpScreen/hint/description"
 msgstr "查看坦克参数"
 
@@ -878,6 +884,21 @@ msgstr "查看地图特点"
 
 msgid "helpScreen/mapbox/press"
 msgstr "按下"
+
+msgid "helpScreen/pillbox/description/enter"
+msgstr "激活攻城/<font color='#F4B12C'><b>堡垒</b></font>模式"
+
+msgid "helpScreen/pillbox/description/exitPillbox"
+msgstr "激活攻城/<font color='#F4B12C'><b>行驶</b></font>模式"
+
+msgid "helpScreen/pillbox/description/exitSiege"
+msgstr "激活行驶/<font color='#F4B12C'><b>堡垒</b></font>模式"
+
+msgid "helpScreen/pillbox/noBinding"
+msgstr "未分配模式切换按键"
+
+msgid "helpScreen/pillbox/press"
+msgstr "按下/<font color='#F4B12C'><b>按住</b></font>"
 
 msgid "hint/noBindingKey"
 msgstr "未分配核心按键"
@@ -963,9 +984,6 @@ msgstr "无法开炮:火炮损坏。"
 msgid "player_errors/cant_shoot/gun_locked"
 msgstr "无法开火。"
 
-msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "无法开炮: 火炮过热。"
-
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "正在装填。"
 
@@ -1013,6 +1031,9 @@ msgstr "不需要维修:所有装备完好无损。"
 
 msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s]完全正常，不需修理。"
+
+msgid "player_errors/mechanics/supportWeapon/cant_shoot"
+msgstr "无法激活同轴武器。"
 
 msgid "player_messages/ALLY_HIT"
 msgstr "你击中盟友[%(entity)s]！"
@@ -2744,8 +2765,14 @@ msgstr "未分配核心按键"
 msgid "siegeMode/hint/press"
 msgstr "请按"
 
+msgid "siegeMode/hint/rechargeableNitro"
+msgstr "激活液体燃料助推器"
+
 msgid "siegeMode/hint/rocketAcceleration"
 msgstr "可激活火箭助推器"
+
+msgid "siegeMode/hint/targetDesignator"
+msgstr "击中敌方坦克，即可获得激光目标指示器的额外效果"
 
 msgid "siegeMode/hint/turboshaftEngine"
 msgstr "切换发动机模式"
@@ -2755,6 +2782,12 @@ msgstr "切换射击模式"
 
 msgid "siegeMode/hint/wheeled"
 msgstr "切换机动模式"
+
+msgid "spotted/indicator"
+msgstr "可见时长延长，受到的损伤提高"
+
+msgid "spotted/seconds"
+msgstr "秒"
 
 msgid "statistics/exit"
 msgstr "按 Esc 返回车库..."

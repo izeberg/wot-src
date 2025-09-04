@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S36_Strv_107_12/crash/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S36_Strv_107_12/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.745982 0.006886 -2.421400</min>
+		<max>1.745908 1.100116 2.965827</max>
+	</visibilityBox>
+</root>

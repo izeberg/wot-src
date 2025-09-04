@@ -46,21 +46,26 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.BATTLE_TOP_HINT_CONSTS;
    import net.wg.data.constants.generated.BATTLE_TYPES;
    import net.wg.data.constants.generated.BATTLE_VIEW_ALIASES;
+   import net.wg.data.constants.generated.BATTLE_WIDGETS_CONSTS;
    import net.wg.data.constants.generated.COMP7_CONSTS;
    import net.wg.data.constants.generated.CONSUMABLES_PANEL_SETTINGS;
    import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
    import net.wg.data.constants.generated.DAMAGE_INFO_PANEL_CONSTS;
+   import net.wg.data.constants.generated.DECORATIVE_CROSSHAIR_CONSTS;
    import net.wg.data.constants.generated.EPIC_CONSTS;
    import net.wg.data.constants.generated.GAME_MESSAGES_CONSTS;
    import net.wg.data.constants.generated.INTERFACE_STATES;
    import net.wg.data.constants.generated.KEYBOARD_KEYS;
+   import net.wg.data.constants.generated.MECHANICS_WIDGET_CONST;
+   import net.wg.data.constants.generated.MECHANIC_WIDGET_HOTKEY_CONST;
+   import net.wg.data.constants.generated.PILLBOX_SIEGE_WIDGET_CONST;
    import net.wg.data.constants.generated.PLAYERS_PANEL_STATE;
    import net.wg.data.constants.generated.POI_CONSTS;
    import net.wg.data.constants.generated.PREBATTLE_TIMER;
    import net.wg.data.constants.generated.QUEST_PROGRESS_BATTLE;
    import net.wg.data.constants.generated.RADIAL_MENU_CONSTS;
-   import net.wg.data.constants.generated.ROCKET_ACCELERATOR_INDICATOR;
    import net.wg.data.constants.generated.SIEGE_MODE_CONSTS;
+   import net.wg.data.constants.generated.STATIONARY_RELOAD_WIDGET_CONSTS;
    import net.wg.gui.battle.ClassicFullStats;
    import net.wg.gui.battle.StatsBase;
    import net.wg.gui.battle.TabbedFullStats;
@@ -547,6 +552,23 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.damagePanel.interfaces.IDamagePanelItemsCtrl;
    import net.wg.gui.battle.views.deathCamHud.DeathCamHud;
    import net.wg.gui.battle.views.debugPanel.DebugPanel;
+   import net.wg.gui.battle.views.decorativeCrosshair.AccuracyStackDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.BaseDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.ConcentrationDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.DecorativeCrosshairPanel;
+   import net.wg.gui.battle.views.decorativeCrosshair.FuryDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.OverheatDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.PillboxSiegeDecorativeCrosshair;
+   import net.wg.gui.battle.views.decorativeCrosshair.accuracy.AccuracyProgressbar;
+   import net.wg.gui.battle.views.decorativeCrosshair.accuracy.AccuracyStack;
+   import net.wg.gui.battle.views.decorativeCrosshair.accuracy.SpeedLimitMark;
+   import net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatCounter;
+   import net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatDecoration;
+   import net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatIcon;
+   import net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatProgress;
+   import net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatSpeedLimitIcon;
+   import net.wg.gui.battle.views.decorativeCrosshair.overheat.OverheatStatus;
+   import net.wg.gui.battle.views.decorativeCrosshair.shared.TextWrapper;
    import net.wg.gui.battle.views.destroyTimers.DestroyTimer;
    import net.wg.gui.battle.views.destroyTimers.EventDestroyTimersPanel;
    import net.wg.gui.battle.views.destroyTimers.PoiMainTimer;
@@ -751,7 +773,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.ribbonsPanel.RibbonsPool;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonAnimationStates;
    import net.wg.gui.battle.views.ribbonsPanel.data.RibbonQueueItem;
-   import net.wg.gui.battle.views.rocketAcceleratorPanel.RocketAcceleratorPanel;
    import net.wg.gui.battle.views.roleDescription.RoleAction;
    import net.wg.gui.battle.views.roleDescription.RoleDescription;
    import net.wg.gui.battle.views.roleDescription.data.RoleActionVO;
@@ -828,6 +849,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.BranderVehicle2dMarker;
    import net.wg.gui.battle.views.vehicleMarkers.Comp7VehicleMarker;
    import net.wg.gui.battle.views.vehicleMarkers.DamageLabel;
+   import net.wg.gui.battle.views.vehicleMarkers.DamageLabelAnimatedScreen;
    import net.wg.gui.battle.views.vehicleMarkers.FlagContainer;
    import net.wg.gui.battle.views.vehicleMarkers.FortConsumablesMarker;
    import net.wg.gui.battle.views.vehicleMarkers.GoalFlagMarker;
@@ -851,6 +873,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.VehicleActionMarker;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleIconAnimation;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarker;
+   import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkerFxContainer;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersConstants;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersLinkages;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersManager;
@@ -874,12 +897,58 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessagesPool;
    import net.wg.gui.battle.views.vehicleMessages.VehicleMessagesVoQueue;
    import net.wg.gui.battle.views.vehicleMessages.vo.VehicleMessageVO;
+   import net.wg.gui.battle.views.widgetsPanel.BaseVehicleMechanicsWidget;
+   import net.wg.gui.battle.views.widgetsPanel.ChargeShotWidget;
+   import net.wg.gui.battle.views.widgetsPanel.ChargeableBurstWidget;
+   import net.wg.gui.battle.views.widgetsPanel.ConcentrationWidget;
+   import net.wg.gui.battle.views.widgetsPanel.PillboxSiegeWidget;
+   import net.wg.gui.battle.views.widgetsPanel.PowerWidget;
+   import net.wg.gui.battle.views.widgetsPanel.RechargeableNitroWidget;
+   import net.wg.gui.battle.views.widgetsPanel.RocketAcceleratorWidget;
+   import net.wg.gui.battle.views.widgetsPanel.StanceDanceButtonsContainer;
+   import net.wg.gui.battle.views.widgetsPanel.StanceDanceFightWidget;
+   import net.wg.gui.battle.views.widgetsPanel.StanceDanceSpeedWidget;
+   import net.wg.gui.battle.views.widgetsPanel.StanceDanceTurboWidget;
+   import net.wg.gui.battle.views.widgetsPanel.StationaryReloadWidget;
+   import net.wg.gui.battle.views.widgetsPanel.SupportWeaponWidget;
+   import net.wg.gui.battle.views.widgetsPanel.TargetDesignatorWidget;
+   import net.wg.gui.battle.views.widgetsPanel.WidgetsPanel;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletItem;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Bullets;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletsEvent;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.BulletsShadow;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Decorations;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.PenetrationItem;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Penetrations;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.PenetrationsShadow;
+   import net.wg.gui.battle.views.widgetsPanel.chargeableBurst.Shadows;
+   import net.wg.gui.battle.views.widgetsPanel.common.Hotkey;
+   import net.wg.gui.battle.views.widgetsPanel.common.HotkeyFilledBgContainer;
+   import net.wg.gui.battle.views.widgetsPanel.common.HotkeyFilledBgLong;
+   import net.wg.gui.battle.views.widgetsPanel.common.HotkeyFilledBgPlain;
+   import net.wg.gui.battle.views.widgetsPanel.common.HotkeyManager;
+   import net.wg.gui.battle.views.widgetsPanel.common.HotkeyMask;
+   import net.wg.gui.battle.views.widgetsPanel.common.HotkeySettings;
+   import net.wg.gui.battle.views.widgetsPanel.common.Timer;
+   import net.wg.gui.battle.views.widgetsPanel.pillbox.AnimSnapshot;
+   import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxAnim;
+   import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxAnimMgr;
+   import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxDevice;
+   import net.wg.gui.battle.views.widgetsPanel.pillbox.PillboxDevicesContainer;
+   import net.wg.gui.battle.views.widgetsPanel.power.TurbineAnimation;
+   import net.wg.gui.battle.views.widgetsPanel.stanceDance.FightWidgetAnimation;
+   import net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceProgress;
+   import net.wg.gui.battle.views.widgetsPanel.stanceDance.StanceDanceWidget;
+   import net.wg.gui.battle.views.widgetsPanel.vo.DeviceStateInfo;
+   import net.wg.gui.battle.views.widgetsPanel.vo.HotKeyVo;
+   import net.wg.gui.battle.views.widgetsPanel.vo.StateVO;
    import net.wg.gui.battle.windows.IngameDetailsHelpWindow;
    import net.wg.gui.battle.windows.IngameHelpWindow;
    import net.wg.gui.battle.windows.IngameMenu;
    import net.wg.gui.battle.windows.MapsTrainingIngameHelpWindow;
    import net.wg.gui.battle.windows.components.IngameDetailsRoleAction;
    import net.wg.gui.battle.windows.components.IngameDetailsRoleActionContainer;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.gui.battle.windows.vo.IngameDetailsPageVO;
    import net.wg.gui.battle.windows.vo.IngameDetailsRoleActionVO;
    import net.wg.gui.components.controls.ReadOnlyScrollingList;
@@ -887,6 +956,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.hintPanel.KeyViewer;
    import net.wg.gui.components.hintPanel.KeyViewerContainer;
    import net.wg.gui.components.hintPanel.KeyViewerContainerAnim;
+   import net.wg.gui.components.hintPanel.KeyViewerLongKeyBg;
    import net.wg.gui.components.hintPanel.KeyViewersList;
    import net.wg.gui.components.hintPanel.MessageAnim;
    import net.wg.gui.components.tooltips.inblocks.blocks.TextParameterWithIconBlock;
@@ -952,6 +1022,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLE_VIEW_ALIASES:Class = BATTLE_VIEW_ALIASES;
       
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLE_WIDGETS_CONSTS:Class = BATTLE_WIDGETS_CONSTS;
+      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_COMP7_CONSTS:Class = COMP7_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_CONSUMABLES_PANEL_SETTINGS:Class = CONSUMABLES_PANEL_SETTINGS;
@@ -960,6 +1032,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_DAMAGE_INFO_PANEL_CONSTS:Class = DAMAGE_INFO_PANEL_CONSTS;
       
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_DECORATIVE_CROSSHAIR_CONSTS:Class = DECORATIVE_CROSSHAIR_CONSTS;
+      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EPIC_CONSTS:Class = EPIC_CONSTS;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_GAME_MESSAGES_CONSTS:Class = GAME_MESSAGES_CONSTS;
@@ -967,6 +1041,12 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_INTERFACE_STATES:Class = INTERFACE_STATES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_KEYBOARD_KEYS:Class = KEYBOARD_KEYS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_MECHANICS_WIDGET_CONST:Class = MECHANICS_WIDGET_CONST;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_MECHANIC_WIDGET_HOTKEY_CONST:Class = MECHANIC_WIDGET_HOTKEY_CONST;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_PILLBOX_SIEGE_WIDGET_CONST:Class = PILLBOX_SIEGE_WIDGET_CONST;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_PLAYERS_PANEL_STATE:Class = PLAYERS_PANEL_STATE;
       
@@ -978,9 +1058,9 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_RADIAL_MENU_CONSTS:Class = RADIAL_MENU_CONSTS;
       
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_ROCKET_ACCELERATOR_INDICATOR:Class = ROCKET_ACCELERATOR_INDICATOR;
-      
       public static const NET_WG_DATA_CONSTANTS_GENERATED_SIEGE_MODE_CONSTS:Class = SIEGE_MODE_CONSTS;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_STATIONARY_RELOAD_WIDGET_CONSTS:Class = STATIONARY_RELOAD_WIDGET_CONSTS;
       
       public static const NET_WG_DATA_VO_VEHICLESTATUSLIGHTVO:Class = VehicleStatusLightVO;
       
@@ -1994,6 +2074,40 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DEBUGPANEL_DEBUGPANEL:Class = DebugPanel;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_ACCURACYSTACKDECORATIVECROSSHAIR:Class = AccuracyStackDecorativeCrosshair;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_BASEDECORATIVECROSSHAIR:Class = BaseDecorativeCrosshair;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_CONCENTRATIONDECORATIVECROSSHAIR:Class = ConcentrationDecorativeCrosshair;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_DECORATIVECROSSHAIRPANEL:Class = DecorativeCrosshairPanel;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_FURYDECORATIVECROSSHAIR:Class = FuryDecorativeCrosshair;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEATDECORATIVECROSSHAIR:Class = OverheatDecorativeCrosshair;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_PILLBOXSIEGEDECORATIVECROSSHAIR:Class = PillboxSiegeDecorativeCrosshair;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_ACCURACY_ACCURACYPROGRESSBAR:Class = AccuracyProgressbar;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_ACCURACY_ACCURACYSTACK:Class = AccuracyStack;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_ACCURACY_SPEEDLIMITMARK:Class = SpeedLimitMark;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEAT_OVERHEATCOUNTER:Class = OverheatCounter;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEAT_OVERHEATDECORATION:Class = OverheatDecoration;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEAT_OVERHEATICON:Class = OverheatIcon;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEAT_OVERHEATPROGRESS:Class = OverheatProgress;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEAT_OVERHEATSPEEDLIMITICON:Class = OverheatSpeedLimitIcon;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_OVERHEAT_OVERHEATSTATUS:Class = OverheatStatus;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_DECORATIVECROSSHAIR_SHARED_TEXTWRAPPER:Class = TextWrapper;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_DESTROYTIMERS_DESTROYTIMER:Class = DestroyTimer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_DESTROYTIMERS_EVENTDESTROYTIMERSPANEL:Class = EventDestroyTimersPanel;
@@ -2402,8 +2516,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_RIBBONSPANEL_DATA_RIBBONQUEUEITEM:Class = RibbonQueueItem;
       
-      public static const NET_WG_GUI_BATTLE_VIEWS_ROCKETACCELERATORPANEL_ROCKETACCELERATORPANEL:Class = RocketAcceleratorPanel;
-      
       public static const NET_WG_GUI_BATTLE_VIEWS_ROLEDESCRIPTION_ROLEACTION:Class = RoleAction;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_ROLEDESCRIPTION_ROLEDESCRIPTION:Class = RoleDescription;
@@ -2556,6 +2668,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_DAMAGELABEL:Class = DamageLabel;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_DAMAGELABELANIMATEDSCREEN:Class = DamageLabelAnimatedScreen;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_FLAGCONTAINER:Class = FlagContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_FORTCONSUMABLESMARKER:Class = FortConsumablesMarker;
@@ -2587,6 +2701,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEICONANIMATION:Class = VehicleIconAnimation;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEMARKER:Class = VehicleMarker;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEMARKERFXCONTAINER:Class = VehicleMarkerFxContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEMARKERSCONSTANTS:Class = VehicleMarkersConstants;
       
@@ -2648,6 +2764,96 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMESSAGES_VO_VEHICLEMESSAGEVO:Class = VehicleMessageVO;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_BASEVEHICLEMECHANICSWIDGET:Class = BaseVehicleMechanicsWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURSTWIDGET:Class = ChargeableBurstWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGESHOTWIDGET:Class = ChargeShotWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CONCENTRATIONWIDGET:Class = ConcentrationWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOXSIEGEWIDGET:Class = PillboxSiegeWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_POWERWIDGET:Class = PowerWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_RECHARGEABLENITROWIDGET:Class = RechargeableNitroWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_ROCKETACCELERATORWIDGET:Class = RocketAcceleratorWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCEBUTTONSCONTAINER:Class = StanceDanceButtonsContainer;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCEFIGHTWIDGET:Class = StanceDanceFightWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCESPEEDWIDGET:Class = StanceDanceSpeedWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCETURBOWIDGET:Class = StanceDanceTurboWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STATIONARYRELOADWIDGET:Class = StationaryReloadWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_SUPPORTWEAPONWIDGET:Class = SupportWeaponWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_TARGETDESIGNATORWIDGET:Class = TargetDesignatorWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_WIDGETSPANEL:Class = WidgetsPanel;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_BULLETITEM:Class = BulletItem;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_BULLETS:Class = Bullets;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_BULLETSEVENT:Class = BulletsEvent;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_BULLETSSHADOW:Class = BulletsShadow;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_DECORATIONS:Class = Decorations;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_PENETRATIONITEM:Class = PenetrationItem;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_PENETRATIONS:Class = Penetrations;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_PENETRATIONSSHADOW:Class = PenetrationsShadow;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_CHARGEABLEBURST_SHADOWS:Class = Shadows;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEY:Class = Hotkey;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEYFILLEDBGCONTAINER:Class = HotkeyFilledBgContainer;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEYFILLEDBGLONG:Class = HotkeyFilledBgLong;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEYFILLEDBGPLAIN:Class = HotkeyFilledBgPlain;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEYMANAGER:Class = HotkeyManager;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEYMASK:Class = HotkeyMask;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_HOTKEYSETTINGS:Class = HotkeySettings;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_COMMON_TIMER:Class = Timer;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_ANIMSNAPSHOT:Class = AnimSnapshot;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_PILLBOXANIM:Class = PillboxAnim;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_PILLBOXANIMMGR:Class = PillboxAnimMgr;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_PILLBOXDEVICE:Class = PillboxDevice;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_PILLBOX_PILLBOXDEVICESCONTAINER:Class = PillboxDevicesContainer;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_POWER_TURBINEANIMATION:Class = TurbineAnimation;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCE_FIGHTWIDGETANIMATION:Class = FightWidgetAnimation;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCE_STANCEDANCEPROGRESS:Class = StanceDanceProgress;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_STANCEDANCE_STANCEDANCEWIDGET:Class = StanceDanceWidget;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_DEVICESTATEINFO:Class = DeviceStateInfo;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_HOTKEYVO:Class = HotKeyVo;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_WIDGETSPANEL_VO_STATEVO:Class = StateVO;
+      
       public static const NET_WG_GUI_BATTLE_WINDOWS_INGAMEDETAILSHELPWINDOW:Class = IngameDetailsHelpWindow;
       
       public static const NET_WG_GUI_BATTLE_WINDOWS_INGAMEHELPWINDOW:Class = IngameHelpWindow;
@@ -2659,6 +2865,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_WINDOWS_COMPONENTS_INGAMEDETAILSROLEACTION:Class = IngameDetailsRoleAction;
       
       public static const NET_WG_GUI_BATTLE_WINDOWS_COMPONENTS_INGAMEDETAILSROLEACTIONCONTAINER:Class = IngameDetailsRoleActionContainer;
+      
+      public static const NET_WG_GUI_BATTLE_WINDOWS_VO_INGAMEDETAILSKEYVO:Class = IngameDetailsKeyVO;
       
       public static const NET_WG_GUI_BATTLE_WINDOWS_VO_INGAMEDETAILSPAGEVO:Class = IngameDetailsPageVO;
       
@@ -2673,6 +2881,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_HINTPANEL_KEYVIEWERCONTAINER:Class = KeyViewerContainer;
       
       public static const NET_WG_GUI_COMPONENTS_HINTPANEL_KEYVIEWERCONTAINERANIM:Class = KeyViewerContainerAnim;
+      
+      public static const NET_WG_GUI_COMPONENTS_HINTPANEL_KEYVIEWERLONGKEYBG:Class = KeyViewerLongKeyBg;
       
       public static const NET_WG_GUI_COMPONENTS_HINTPANEL_KEYVIEWERSLIST:Class = KeyViewersList;
       

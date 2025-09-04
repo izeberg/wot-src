@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/normal/lod2/hv4_032_CustomizationHangar_DrainGrate_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.963176 -0.857924 -4.792941</min>
+		<max>2.984965 1.084768 4.788575</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Buildings/hv4_032_CustomizationHangar/normal/lod1/hv4_032_CustomizationHangar_DrainGrate_01</nodefullVisual>
+</root>

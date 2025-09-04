@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_006_WorkTools/normal/lod2/hv4_006_WorkTools_01</parent>
+	<extent>65.000000</extent>
+	<visibilityBox>
+		<min>-0.162535 -0.000000 -0.348877</min>
+		<max>0.175602 0.955912 0.314753</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_006_WorkTools/normal/lod1/hv4_006_WorkTools_01</nodefullVisual>
+</root>

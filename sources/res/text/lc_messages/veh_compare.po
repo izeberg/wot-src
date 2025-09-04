@@ -157,23 +157,11 @@ msgstr "类型"
 msgid "cartPopover/title"
 msgstr "对比列表"
 
+msgid "compareVehicleBtn/tooltips/disabledOnServer/attention"
+msgstr "该操作暂时无法执行。"
+
 msgid "compareVehicleBtn/tooltips/miniclient/attention"
 msgstr "下载完成后可以使用坦克对比。首先请完成客户端下载。"
-
-msgid "header/backBtn/descrLabel/hangar"
-msgstr "车库"
-
-msgid "header/backBtn/descrLabel/personalAwards"
-msgstr "奖励"
-
-msgid "header/backBtn/descrLabel/researchTree"
-msgstr "升级路线"
-
-msgid "header/backBtn/descrLabel/shop"
-msgstr "军械库"
-
-msgid "header/backBtn/label"
-msgstr "返回"
 
 msgid "header/closeBtn/label"
 msgstr "关闭"
@@ -444,9 +432,6 @@ msgstr "自定义"
 msgid "vehicleCompareView/configure"
 msgstr "配置"
 
-msgid "vehicleCompareView/header"
-msgstr "对比坦克"
-
 msgid "vehicleCompareView/toHangar"
 msgstr "车库中查看"
 
@@ -457,12 +442,6 @@ msgid "vehicleCompareView/tooltips/addVehicles/body"
 msgstr "?empty?"
 
 msgid "vehicleCompareView/tooltips/addVehicles/header"
-msgstr "?empty?"
-
-msgid "vehicleCompareView/tooltips/attentionEquipment/body"
-msgstr "坦克对比时不会计算增加悬挂装置随承载能力的配件。会自动选择模块安装合适的悬挂装置。"
-
-msgid "vehicleCompareView/tooltips/attentionEquipment/header"
 msgstr "?empty?"
 
 msgid "vehicleCompareView/tooltips/configure/body"

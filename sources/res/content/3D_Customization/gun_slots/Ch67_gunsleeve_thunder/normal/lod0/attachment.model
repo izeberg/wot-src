@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/gun_slots/Ch67_gunsleeve_thunder/normal/lod0/attachment</nodefullVisual>
+	<visibilityBox>
+		<min>-0.341131 -0.426077 -2.063889</min>
+		<max>0.343193 0.480496 2.548288</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/gun_slots/Ch67_gunsleeve_thunder/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+</root>

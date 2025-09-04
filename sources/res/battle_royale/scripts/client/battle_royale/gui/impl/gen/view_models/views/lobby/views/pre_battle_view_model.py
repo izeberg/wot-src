@@ -1,6 +1,5 @@
-from frameworks.wulf import Array
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen import R
-from frameworks.wulf import ViewModel
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.team_model import TeamModel
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.user_extended_model import UserExtendedModel
 from gui.impl.gen.view_models.ui_kit.gf_drop_down_item import GfDropDownItem

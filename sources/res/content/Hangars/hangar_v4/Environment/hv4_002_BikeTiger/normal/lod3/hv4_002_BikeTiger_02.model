@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_002_BikeTiger/normal/lod4/hv4_002_BikeTiger_02</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-0.275938 -0.010855 -1.091862</min>
+		<max>0.329603 0.965764 0.978117</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_002_BikeTiger/normal/lod3/hv4_002_BikeTiger_02</nodefullVisual>
+</root>

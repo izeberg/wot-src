@@ -15,6 +15,8 @@ package net.wg.infrastructure.managers
       
       function updateFocus(param1:Object = null) : void;
       
+      function canFocusLayer(param1:uint) : Boolean;
+      
       function isModalViewsExisting() : Boolean;
       
       function getContainer(param1:uint) : ISimpleManagedContainer;

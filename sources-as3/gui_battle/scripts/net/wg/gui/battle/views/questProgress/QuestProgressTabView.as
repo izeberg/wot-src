@@ -45,6 +45,8 @@ package net.wg.gui.battle.views.questProgress
       private static const LOCK_X_SHIFT:int = -2;
       
       private static const CONTAINER_TOP_MARGIN:int = 10;
+      
+      private static const HEADER_CONTAINER_LEFT_OFFSET:int = 2;
        
       
       public var bg:FrameStateCmpnt = null;
@@ -73,6 +75,8 @@ package net.wg.gui.battle.views.questProgress
       
       private var _toolTipMgr:ITooltipMgr;
       
+      private var _isOnlyMainQuests:Boolean = false;
+      
       public function QuestProgressTabView()
       {
          this._toolTipMgr = App.toolTipMgr;
@@ -91,9 +95,8 @@ package net.wg.gui.battle.views.questProgress
       
       override protected function initData(param1:IQuestProgressData) : void
       {
-         var _loc2_:int = 0;
          super.initData(param1);
-         _loc2_ = !!param1.isHeaderHasProgress ? int(Values.ZERO) : int(ADDITIONAL_CONTENT_HEIGHT);
+         var _loc2_:int = !!param1.isHeaderHasProgress ? int(Values.ZERO) : int(ADDITIONAL_CONTENT_HEIGHT);
          this._startContainerY = CONDITIONS_CONTAINER_START_Y - _loc2_;
          this.conditionsContainer.y = this._startContainerY;
          var _loc3_:int = this._startContainerY + SCROLL_AND_MASK_Y_SHIFT;
@@ -105,6 +108,10 @@ package net.wg.gui.battle.views.questProgress
          this.scrollBar.height = _loc4_;
          this.conditionsContainerHitMc.height = _loc4_;
          this.headerContainer.setData(param1.headerConditions,ITEMS_START_POINT_MAIN_X,ITEMS_START_POINT_ADD_X);
+         if(items)
+         {
+            this.updateIsOnlyMainQuests(items);
+         }
       }
       
       override protected function onUpdateHeaderProgress(param1:Vector.<IHeaderProgressData>) : void
@@ -116,7 +123,7 @@ package net.wg.gui.battle.views.questProgress
       {
          super.configUI();
          this.bg.allowResize = true;
-         this.mainConditionTf.text = PERSONAL_MISSIONS.DETAILEDVIEW_CONDITIONSLABEL;
+         this.mainConditionTf.text = !!this._isOnlyMainQuests ? PERSONAL_MISSIONS.DETAILEDVIEW_CONDITIONLABEL : PERSONAL_MISSIONS.DETAILEDVIEW_CONDITIONSLABEL;
          this.addConditionTf.text = PERSONAL_MISSIONS.DETAILEDVIEW_CONDITIONSFULLYLABEL;
          this.conditionsContainer.hitArea = this.conditionsContainerHitMc;
          this.conditionsContainer.addEventListener(MouseEvent.MOUSE_WHEEL,this.onConditionsContainerMouseWheelHandler);
@@ -173,6 +180,7 @@ package net.wg.gui.battle.views.questProgress
                _loc4_.y = _loc4_.item.y + _loc4_.previousItem.y + _loc4_.previousItem.chartMetrics.height >> 1;
             }
             this.scrollBar.position = 0;
+            this.updateIsOnlyMainQuests(items);
          }
          this.updateScrollBar();
          this.lock.visible = hasLockedItems();
@@ -180,6 +188,7 @@ package net.wg.gui.battle.views.questProgress
          {
             this.lock.x = this.addConditionTf.x + this.addConditionTf.textWidth + LOCK_X_SHIFT;
          }
+         this.alignMainQuestsToCenter();
          super.doLayout();
       }
       
@@ -265,6 +274,32 @@ package net.wg.gui.battle.views.questProgress
       private function onLockRollOverHandler(param1:MouseEvent) : void
       {
          this._toolTipMgr.show(PERSONAL_MISSIONS.DETAILEDVIEW_TOOLTIPS_LOCKED);
+      }
+      
+      private function updateIsOnlyMainQuests(param1:Vector.<IQPItemRenderer>) : void
+      {
+         var _loc2_:IQPItemRenderer = null;
+         this._isOnlyMainQuests = true;
+         for each(_loc2_ in param1)
+         {
+            if(_loc2_.orderType != QUEST_PROGRESS_BASE.MAIN_ORDER_TYPE)
+            {
+               this._isOnlyMainQuests = false;
+               break;
+            }
+         }
+      }
+      
+      private function alignMainQuestsToCenter() : void
+      {
+         if(!this._isOnlyMainQuests)
+         {
+            return;
+         }
+         this.addConditionTf.visible = false;
+         var _loc1_:int = width - this.headerContainer.width >> 1;
+         this.mainConditionTf.x = this.conditionsContainer.x = _loc1_;
+         this.headerContainer.x = _loc1_ + HEADER_CONTAINER_LEFT_OFFSET;
       }
    }
 }

@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from battle_royale.gui.impl.gen.view_models.views.lobby.views.consumable_model import ConsumableModel
 
 class TankSetupPanelViewModel(ViewModel):
@@ -37,7 +36,7 @@ class TankSetupPanelViewModel(ViewModel):
 
     @staticmethod
     def getConsumableType():
-        return ConsumableModel
+        return Array[ConsumableModel]
 
     def _initialize(self):
         super(TankSetupPanelViewModel, self)._initialize()

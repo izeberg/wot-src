@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<path>
+		<id>1158861748</id>
+		<name>path</name>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part01</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>3084716414</id>
+			<transform>
+				<row0>78.572487 0.000000 0.000000</row0>
+				<row1>0.000000 78.572487 0.000000</row1>
+				<row2>0.000000 0.000000 78.572487</row2>
+				<row3>-393.791168 15.641614 -2.905802</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part02</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>303314733</id>
+			<transform>
+				<row0>70.000000 0.000000 0.000000</row0>
+				<row1>0.000000 77.793625 0.000000</row1>
+				<row2>0.000000 0.000000 77.793625</row2>
+				<row3>-330.618958 13.839490 -1.120281</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part03</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>2451781455</id>
+			<transform>
+				<row0>80.000000 0.000000 0.000000</row0>
+				<row1>0.000000 80.000000 0.000000</row1>
+				<row2>0.000000 0.000000 120.000000</row2>
+				<row3>-273.075745 18.050732 15.478222</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_part04</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>1209849109</id>
+			<transform>
+				<row0>80.000000 0.000000 0.000000</row0>
+				<row1>0.000000 80.000000 0.000000</row1>
+				<row2>0.000000 0.000000 110.958298</row2>
+				<row3>-199.164215 22.527493 34.267086</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_02_destroyed_part03</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>1463815960</id>
+			<transform>
+				<row0>121.675377 0.000000 0.000000</row0>
+				<row1>0.000000 121.675377 0.000000</row1>
+				<row2>0.000000 0.000000 121.675377</row2>
+				<row3>493.617432 13.462064 30.252190</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_02_destroyed_part01</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>2233197782</id>
+			<transform>
+				<row0>75.899490 0.000000 0.000000</row0>
+				<row1>0.000000 75.899490 0.000000</row1>
+				<row2>0.000000 0.000000 75.899490</row2>
+				<row3>336.122437 22.727444 -7.518832</row3>
+			</transform>
+		</node>
+		<node>
+			<name>Zone 7</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>1922416849</id>
+			<transform>
+				<row0>61.097538 0.000000 0.000000</row0>
+				<row1>0.000000 61.097538 0.000000</row1>
+				<row2>0.000000 0.000000 85.000000</row2>
+				<row3>403.830475 20.657391 6.431427</row3>
+			</transform>
+		</node>
+		<node>
+			<name>34_airshipCrash_01_destroyed_bridge</name>
+			<colour>0.200000 0.800000 0.400000 0.500000</colour>
+			<id>3646558161</id>
+			<transform>
+				<row0>37.295643 0.000000 0.000000</row0>
+				<row1>0.000000 60.504871 0.000000</row1>
+				<row2>0.000000 0.000000 49.613518</row2>
+				<row3>-351.326355 6.908244 -6.336331</row3>
+			</transform>
+		</node>
+	</path>
+</root>

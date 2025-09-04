@@ -27,26 +27,29 @@ msgstr "活动将于%(date)s结束"
 msgid "mode/comp7/description"
 msgstr "竞技性模式:&nbsp;7对7%(parSecondary_open)sI%(parSecondary_close)sX级"
 
+msgid "mode/comp7/progress"
+msgstr "%(score)s/%(scoreToNextDivision)s"
+
 msgid "mode/comp7/seasonEnd/first"
-msgstr "苍蓝蝎狮赛季已结束"
+msgstr "苍蓝巨龙赛季已结束"
 
 msgid "mode/comp7/seasonEnd/second"
-msgstr "绯红蝎狮赛季已结束"
+msgstr "绯红巨龙赛季已结束"
 
 msgid "mode/comp7/seasonEnd/third"
-msgstr "翡翠蝎狮赛季已结束"
+msgstr "翡翠巨龙赛季已结束"
 
 msgid "mode/comp7/seasonStart/first"
-msgstr "苍蓝蝎狮赛季将于%(date)s开启"
+msgstr "苍蓝巨龙赛季将于%(date)s开启"
 
 msgid "mode/comp7/seasonStart/second"
-msgstr "绯红蝎狮赛季将于%(date)s开启"
+msgstr "绯红巨龙赛季将于%(date)s开启"
 
 msgid "mode/comp7/seasonStart/third"
-msgstr "翡翠蝎狮赛季将于%(date)s开启"
+msgstr "翡翠巨龙赛季将于%(date)s开启"
 
 msgid "mode/comp7/warning"
-msgstr "评级不活跃"
+msgstr "评级不活跃: %(count)s"
 
 msgid "mode/comp7/widgetDescription/qualification"
 msgid_plural "plural/calendarDay/timeLeft"
@@ -66,4 +69,4 @@ msgstr ""
 "%(division)s"
 
 msgid "mode/comp7/yearEnd"
-msgstr "蝎狮赛年已结束"
+msgstr "巨龙赛年已结束"

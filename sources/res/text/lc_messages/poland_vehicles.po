@@ -88,6 +88,9 @@ msgstr "4TP"
 msgid "Chassis_Pl15_60TP_Lewandowskiego"
 msgstr "60TP L"
 
+msgid "Chassis_Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "灰烬使者"
+
 msgid "Chassis_Pl16_T34_85_Rudy"
 msgstr "T-34-85-60"
 
@@ -113,10 +116,10 @@ msgid "Chassis_Pl20_CS_44_2"
 msgstr "CS-49"
 
 msgid "Chassis_Pl21_CS_63"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Chassis_Pl21_CS_63_7x7"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Chassis_Pl21_CS_63_OSP3"
 msgstr "\"飓风\""
@@ -181,11 +184,17 @@ msgstr "SDP 40 Z加强型"
 msgid "Chassis_Pl34_Cs53_56_Woitek"
 msgstr "CS-53/56"
 
+msgid "Chassis_Pl37_CS_67_Szakal"
+msgstr "CS-67 S"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
 msgid "GG_100_162_mm"
 msgstr "GG-100/162mm炮"
+
+msgid "GG_100_162_mm_58"
+msgstr "GG-100/162mm炮 (58)"
 
 msgid "GG_100_162_mm_K"
 msgstr "GG-100/162mm K型炮 "
@@ -195,6 +204,9 @@ msgstr "GG-85/150mm炮"
 
 msgid "GG_85_175_mm"
 msgstr "GG-85/175mm炮"
+
+msgid "GG_85_175_mm_60"
+msgstr "GG-85/175mm炮 (60)"
 
 msgid "GTD"
 msgstr "GTD"
@@ -236,6 +248,9 @@ msgid "MT_50_T"
 msgstr "MT-50T"
 
 msgid "MT_50_TM"
+msgstr "MT-50TM"
+
+msgid "MT_50_TM_CFE_A"
 msgstr "MT-50TM"
 
 msgid "Maybach_HL_108"
@@ -304,6 +319,9 @@ msgstr "PZInz R.W.A."
 msgid "PP_GG_m100_162"
 msgstr "PP-GG m100/162"
 
+msgid "PP_GG_m100_162_58"
+msgstr "PP-GG m100/162 (58)"
+
 msgid "PP_GG_m100_162_K"
 msgstr "PP-GG m100/162 K"
 
@@ -313,8 +331,14 @@ msgstr "PP-GG m85/150"
 msgid "PP_GG_m85_175"
 msgstr "PP-GG m85/175"
 
+msgid "PP_GG_m85_175_60"
+msgstr "PP-GG m85/175 (60)"
+
 msgid "PPrz_GG_m100_162"
 msgstr "PPrz-GG m100/162"
+
+msgid "PPrz_GG_m100_162_58"
+msgstr "PPrz-GG m100/162 (58)"
 
 msgid "PPrz_GG_m100_162_K"
 msgstr "PPrz-GG m100/162 K"
@@ -325,8 +349,14 @@ msgstr "PPrz-GG m85/150"
 msgid "PPrz_GG_m85_175"
 msgstr "PPrz-GG m85/175"
 
+msgid "PPrz_GG_m85_175_60"
+msgstr "PPrz-GG m85/175 (60)"
+
 msgid "PW_GG_m100_162"
 msgstr "PW-GG m100/162"
+
+msgid "PW_GG_m100_162_58"
+msgstr "PW-GG m100/162 (58)"
 
 msgid "PW_GG_m100_162_K"
 msgstr "PW-GG m100/162 K"
@@ -336,6 +366,9 @@ msgstr "PW-GG m85/150"
 
 msgid "PW_GG_m85_175"
 msgstr "PW-GG m85/175"
+
+msgid "PW_GG_m85_175_60"
+msgstr "PW-GG m85/175 (60)"
 
 msgid "Pl01_TKS_20mm"
 msgstr "TKS z n.k.m.20mm"
@@ -484,6 +517,23 @@ msgstr "4TP"
 
 msgid "Pl15_60TP_Lewandowskiego"
 msgstr "60TP L"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "灰烬使者"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_descr"
+msgstr ""
+"自鸿蒙初开便是英雄天敌，亘古传说中最为骇人的存在。这头狂怒与神力化身的巨兽，历经万载沉眠终苏醒。复仇之火在其眼中闪烁——凡胆敢拦路者，纵有重甲护体亦难逃湮灭。"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_long_special"
+msgstr ""
+"灰烬使者的火力与装甲组合，令人联想到巨龙的烈焰与鳞片。其火炮能造成高额损伤，而装甲则支持激进打法。这头猛兽总是渴望冲向前线，那才是它真正的归属。只要您守住侧翼，敌人将永无宁日。尽情释放龙之怒火吧！"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_short"
+msgstr "灰烬使者"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_short_special"
+msgstr "高额的平均单发损伤，可靠的装甲"
 
 msgid "Pl15_60TP_Lewandowskiego_descr"
 msgstr "?empty?"
@@ -782,6 +832,22 @@ msgstr "CS-53/56 W"
 msgid "Pl34_Cs53_56_Woitek_short_special"
 msgstr "高额的平均单发损伤，可靠的炮塔装甲"
 
+msgid "Pl37_CS_67_Szakal"
+msgstr "CS-67 S"
+
+msgid "Pl37_CS_67_Szakal_descr"
+msgstr ""
+"CS-63计划结束后，B系军方从S系获得了T-62坦克的参数。S系同僚还向他们展示了115mm "
+"U-5TS炮的实体原型及其生产文件。受此启发，B系决定以CS-63为蓝本，打造一辆装备强劲滑膛炮的全新坦克。1967年，该计划的技术文档已准备就绪，即将进入原型车制造阶段；然而，由于军方转而决定建造一辆更强力的主战坦克，该计划的研发工作被叫停。"
+
+msgid "Pl37_CS_67_Szakal_long_special"
+msgstr ""
+"CS-67 "
+"S既擅长侧翼突袭，也能胜任令人血脉贲张的激烈交战。凭借其均衡的性能，这辆中型坦克足以胜任各种任务，是团队中不可或缺的一员。强劲的燃气轮机更赋予其卓越的机动性，使其不仅能与轻型坦克一较高下，还能迅速转移到最需要的位置。"
+
+msgid "Pl37_CS_67_Szakal_short"
+msgstr "CS-67 S"
+
 msgid "Polski_FIAT_122BC"
 msgstr "波尔斯基菲亚特 122BC"
 
@@ -818,6 +884,9 @@ msgstr "RTU \"杰西恩-M\""
 msgid "R_113"
 msgstr "R-113"
 
+msgid "R_113_CFE_A"
+msgstr "R-113"
+
 msgid "R_113_P"
 msgstr "R-113P"
 
@@ -835,6 +904,9 @@ msgstr "R-123P"
 
 msgid "R_123P_SH"
 msgstr "R-123P MH"
+
+msgid "R_123S"
+msgstr "R-123S"
 
 msgid "R_123_1"
 msgstr "R-123C"
@@ -868,6 +940,9 @@ msgstr "SGT-3CzM"
 
 msgid "SGT_3Cz_SH"
 msgstr "SGT-3Cz MH"
+
+msgid "SGT_4CzM"
+msgstr "SGT-4CzM"
 
 msgid "Turret_1_Pl01_TKS_20mm"
 msgstr "TKS z n.k.m. 20 mm wz. 38 FK-A"
@@ -911,6 +986,9 @@ msgstr "4TP"
 msgid "Turret_1_Pl15_60TP_Lewandowskiego"
 msgstr "60TP L"
 
+msgid "Turret_1_Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "灰烬使者"
+
 msgid "Turret_1_Pl16_T34_85_Rudy"
 msgstr "T-34-85"
 
@@ -918,7 +996,7 @@ msgid "Turret_1_Pl17_DS_PZlnz"
 msgstr "DS PZInz I"
 
 msgid "Turret_1_Pl18_BUGI"
-msgstr "B.U.G.I.-I型"
+msgstr "B.U.G.I. I型"
 
 msgid "Turret_1_Pl18_BUGI_SH"
 msgstr "BUGI MH"
@@ -930,10 +1008,10 @@ msgid "Turret_1_Pl20_CS_44"
 msgstr "CS-44"
 
 msgid "Turret_1_Pl21_CS_63"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Turret_1_Pl21_CS_63_7x7"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Turret_1_Pl21_CS_63_OSP3"
 msgstr "\"飓风\""
@@ -976,6 +1054,9 @@ msgstr "SDP 40 Z"
 
 msgid "Turret_1_Pl34_Cs53_56_Woitek"
 msgstr "CS-53/56"
+
+msgid "Turret_1_Pl37_CS_67_Szakal"
+msgstr "CS 67 S"
 
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP T II型"
@@ -1067,6 +1148,54 @@ msgstr "W-53M2"
 msgid "_100mm_DAP"
 msgstr "100mm DAP炮"
 
+msgid "_100mm_DAP_44"
+msgstr "100mm DAP炮 (44)"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_49"
+msgstr "HEAT wz.49"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_53"
+msgstr "HEAT wz.53"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_58"
+msgstr "HEAT wz.58"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_62"
+msgstr "HEAT wz.53"
+
+msgid "_100mm_Pocisk_podkalibrowy_DAP_44"
+msgstr "APCR DAP (44)"
+
+msgid "_100mm_Pocisk_przeciwpancerny_DAP_44"
+msgstr "AP DAP (44)"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_49"
+msgstr "AP wz.49"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_53"
+msgstr "AP wz.53"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_58"
+msgstr "AP wz.58"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_62"
+msgstr "AP wz.62"
+
+msgid "_100mm_Pocisk_wybuchowy_DAP_44"
+msgstr "HE DAP (44)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_44"
+msgstr "HE wz.14/19 (44)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_53"
+msgstr "HE wz.14/19 (53)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_58"
+msgstr "HE wz.14/19 (58)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_59"
+msgstr "HE wz.14/19 (59)"
+
 msgid "_100mm_armata_wz_49"
 msgstr "100mm wz.49炮"
 
@@ -1106,12 +1235,6 @@ msgstr "100mm wz.14/19榴弹炮"
 msgid "_100mm_pocisk_kumulacyjny_w43"
 msgstr "HEAT w.43"
 
-msgid "_100mm_pocisk_kumulacyjny_w49"
-msgstr "HEAT w.43"
-
-msgid "_100mm_pocisk_kumulacyjny_w53"
-msgstr "HEAT w.43"
-
 msgid "_100mm_pocisk_podkalibrowy_DAP"
 msgstr "APCR DAP"
 
@@ -1130,14 +1253,14 @@ msgstr "HE DAP"
 msgid "_100mm_slpgr_m_43"
 msgstr "slpgr m/43 (2)"
 
-msgid "_100mm_slpgr_m_49"
-msgstr "slm 49"
-
-msgid "_100mm_slpgr_m_53"
-msgstr "slm 53"
+msgid "_105mm_3PK_6M_59"
+msgstr "3PK-6M (59)"
 
 msgid "_105mm_3PPod_21"
 msgstr "3PPod-21"
+
+msgid "_105mm_3PPod_21_59"
+msgstr "3PPod-21 (59)"
 
 msgid "_105mm_Bofors_wz_34"
 msgstr "博福斯105mm wz.34炮"
@@ -1150,6 +1273,9 @@ msgstr "3PK-6M"
 
 msgid "_105mm_PP_15"
 msgstr "PP-15"
+
+msgid "_105mm_PP_15_59"
+msgstr "PP-15 (59)"
 
 msgid "_105mm_armata_wz_59"
 msgstr "105mm wz.59炮"
@@ -1205,6 +1331,18 @@ msgstr "105mm wz.52炮"
 msgid "_10RT_C46"
 msgstr "10RT-C46"
 
+msgid "_115mm_3PPod_42"
+msgstr "3PPod-42"
+
+msgid "_115mm_PKumul_63"
+msgstr "HEAT 63"
+
+msgid "_115mm_POB_9A"
+msgstr "POB 9A"
+
+msgid "_115mm_armata_U_5TS"
+msgstr "115mm U-5TS炮"
+
 msgid "_122_mm_wz_43_50"
 msgstr "122mm wz.43/50炮"
 
@@ -1229,29 +1367,38 @@ msgstr "OF-471"
 msgid "_122mm_OF-471M"
 msgstr "OF-471M"
 
-msgid "_122mm_UBR-471P_P"
-msgstr "WBR-471B"
-
-msgid "_122mm_UBR-471P_PB"
-msgstr "WBR-471BP"
-
 msgid "_122mm_UBR-471_PB"
 msgstr "BR-471PB"
 
 msgid "_122mm_UBR-471_PBP"
 msgstr "WBR-471PB"
 
-msgid "_122mm_UOF-471P_P"
-msgstr "WOF-471P"
-
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
+
+msgid "_122mm_WBR_471B"
+msgstr "WBR-471B"
+
+msgid "_122mm_WBR_471BP"
+msgstr "WBR-471BP"
+
+msgid "_122mm_WBR_471BP_53TP"
+msgstr "WBR-471BP (53TP)"
 
 msgid "_122mm_WBR_471BP_W"
 msgstr "WBR-471BP (W)"
 
+msgid "_122mm_WBR_471B_53TP"
+msgstr "WBR-471B (53TP)"
+
 msgid "_122mm_WBR_471B_W"
 msgstr "WBR-471B (W)"
+
+msgid "_122mm_WOF_471P"
+msgstr "WOF-471P"
+
+msgid "_122mm_WOF_471P_53TP"
+msgstr "WOF-471P (53TP)"
 
 msgid "_122mm_WOF_471P_W"
 msgstr "WOF-471P (W)"
@@ -1286,6 +1433,9 @@ msgstr "122mm wz.43/50炮"
 msgid "_122mm_wz_53"
 msgstr "122mm wz.53炮"
 
+msgid "_122mm_wz_53_53TP"
+msgstr "122mm wz.53炮 (53TP)"
+
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1301,13 +1451,25 @@ msgstr "130mm R 14 wz.56炮"
 msgid "_152mm_J_2"
 msgstr "152mm J 2炮"
 
+msgid "_152mm_J_2_CFE_A"
+msgstr "152mm J 2炮"
+
 msgid "_152mm_pocisk_kumulacyjny"
+msgstr "HEAT"
+
+msgid "_152mm_pocisk_kumulacyjny_CFE_A"
 msgstr "HEAT"
 
 msgid "_152mm_pocisk_przeciwpancerny"
 msgstr "AP"
 
+msgid "_152mm_pocisk_przeciwpancerny_CFE_A"
+msgstr "AP"
+
 msgid "_152mm_pocisk_wybuchowy"
+msgstr "HE"
+
+msgid "_152mm_pocisk_wybuchowy_CFE_A"
 msgstr "HE"
 
 msgid "_155_mm_PK_40"
@@ -1343,14 +1505,26 @@ msgstr "HE B改进型"
 msgid "_37mm_APCR_Bofors"
 msgstr "37mm博福斯APCR"
 
+msgid "_37mm_APCR_Bofors_7TP"
+msgstr "博福斯APCR (7TP)"
+
 msgid "_37mm_AP_Bofors"
 msgstr "37mm博福斯AP"
+
+msgid "_37mm_AP_Bofors_7TP"
+msgstr "博福斯AP (7TP)"
 
 msgid "_37mm_Bofors_wz_37"
 msgstr "37mm博福斯wz.37炮"
 
+msgid "_37mm_Bofors_wz_37_7TP"
+msgstr "博福斯37mm wz.37炮 (7TP)"
+
 msgid "_37mm_HE_Bofors"
 msgstr "37mm博福斯HE"
+
+msgid "_37mm_HE_Bofors_7TP"
+msgstr "博福斯HE (7TP)"
 
 msgid "_40mm_AP"
 msgstr "40 mm AP"
@@ -1409,47 +1583,68 @@ msgstr "47mm m/38坦克炮"
 msgid "_47mm_sgr_m_38"
 msgstr "sgr m/38"
 
+msgid "_47mm_sgr_m_38_10TP"
+msgstr "sgr m/38 (10TP)"
+
 msgid "_47mm_slpprj_m_38"
 msgstr "slpprj m/38"
+
+msgid "_47mm_slpprj_m_38_10TP"
+msgstr "slpprj m/38 (10TP)"
 
 msgid "_47mm_slpprj_m_39"
 msgstr "slpprj m/39"
 
-msgid "_75mm_APCBC_K"
-msgstr "AP wz.97"
+msgid "_47mm_slpprj_m_39_10TP"
+msgstr "slpprj m/39 (10TP)"
 
 msgid "_75mm_KwK_L70"
 msgstr "7.5cm KwK L/70炮"
 
-msgid "_75mm_Pzgr.40L"
-msgstr "Pzgr 40 L"
+msgid "_75mm_Pocisk_kumulacyjny_wz_97"
+msgstr "HEAT w.97"
 
-msgid "_75mm_Pzgr.40L_K"
+msgid "_75mm_Pocisk_podkalibrowy_wz_22_24"
+msgstr "APCR wz.22/24"
+
+msgid "_75mm_Pocisk_podkalibrowy_wz_36_37"
 msgstr "APCR wz.36/37"
 
-msgid "_75mm_Pzgr.40_K"
+msgid "_75mm_Pocisk_podkalibrowy_wz_36_37_DS"
+msgstr "APCR wz.36/37 (DS)"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_22_24"
+msgstr "AP wz.22/24"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_36_37"
+msgstr "AP wz.36/37"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_36_37_DS"
+msgstr "AP wz.36/37 (DS)"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_97"
+msgstr "AP wz.97"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_22_24"
+msgstr "HE wz.22/24"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_36_37"
+msgstr "HE wz.36/37"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_36_37_DS"
+msgstr "HE wz.36/37 (DS)"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_97"
+msgstr "HE wz.97"
+
+msgid "_75mm_Pzgr.40L"
 msgstr "Pzgr 40 L"
 
 msgid "_75mm_Pzgr39L"
 msgstr "Pzgr 39 L"
 
-msgid "_75mm_Pzgr39L_K"
-msgstr "AP wz.36/37"
-
-msgid "_75mm_Pzgr39_K"
-msgstr "Pzgr 39 L"
-
 msgid "_75mm_Sprg.18L"
 msgstr "Sprgr 19 L"
-
-msgid "_75mm_Sprg.18L_K"
-msgstr "HE wz.36/37"
-
-msgid "_75mm_Sprg.18_K"
-msgstr "HE wz.97"
-
-msgid "_75mm_Sprg.18_K2"
-msgstr "Sprgr 18 LM"
 
 msgid "_75mm_pocisk_podkalibrowy_wz_36_37M"
 msgstr "APCR wz.36/37M"
@@ -1473,13 +1668,16 @@ msgid "_75mm_wz_1897"
 msgstr "75mm wz.1897炮"
 
 msgid "_75mm_wz_22_24"
-msgstr "75mm wz 22/24炮"
+msgstr "75mm wz. 22/24炮"
 
 msgid "_75mm_wz_36_37"
 msgstr "75mm wz.36/37炮"
 
 msgid "_75mm_wz_36_37M"
 msgstr "75mm wz.36/37M炮"
+
+msgid "_75mm_wz_36_37_DS"
+msgstr "75mm wz.36/37炮 (DS)"
 
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"
@@ -1505,14 +1703,32 @@ msgstr "WOF-365BM"
 msgid "_85mm_ZiS_S-53_B"
 msgstr "85mm ZiS-S-53炮"
 
-msgid "_90mm_AP"
-msgstr "AP wz.39/40"
+msgid "_90mm_Pocisk_podkalibrowy_wz_39_40_40TP"
+msgstr "APCR wz.39/40 (40TP)"
 
-msgid "_90mm_APCR"
-msgstr "APCR wz.39/40"
+msgid "_90mm_Pocisk_podkalibrowy_wz_39_40_44"
+msgstr "APCR wz.39/40 (44)"
 
-msgid "_90mm_HE"
-msgstr "HE wz.39/40"
+msgid "_90mm_Pocisk_podkalibrowy_wz_39_40_BUGI"
+msgstr "APCR wz.39/40 (BUGI)"
+
+msgid "_90mm_Pocisk_przeciwpancerny_wz_39_40_40TP"
+msgstr "AP wz.39/40 (40TP)"
+
+msgid "_90mm_Pocisk_przeciwpancerny_wz_39_40_44"
+msgstr "AP wz.39/40 (44)"
+
+msgid "_90mm_Pocisk_przeciwpancerny_wz_39_40_BUGI"
+msgstr "AP wz.39/40 (BUGI)"
+
+msgid "_90mm_Pocisk_wybuchowy_wz_39_30_BUGI"
+msgstr "HE wz.39/40 (BUGI)"
+
+msgid "_90mm_Pocisk_wybuchowy_wz_39_40_40TP"
+msgstr "HE wz.39/40 (40TP)"
+
+msgid "_90mm_Pocisk_wybuchowy_wz_39_40_44"
+msgstr "HE wz.39/40 (44)"
 
 msgid "_90mm_armata_wz_39_44"
 msgstr "90mm wz.39/44炮"
@@ -1532,17 +1748,26 @@ msgstr "90mm wz.46炮"
 msgid "_90mm_pocisk_podkalibrowy_wz_39"
 msgstr "APCR wz.39"
 
+msgid "_90mm_pocisk_podkalibrowy_wz_39_40"
+msgstr "APCR wz.39/40"
+
 msgid "_90mm_pocisk_podkalibrowy_wz_39_40M"
 msgstr "APCR wz.39/40M"
 
 msgid "_90mm_pocisk_przeciwpancerny_wz_39"
 msgstr "AP wz. 39"
 
+msgid "_90mm_pocisk_przeciwpancerny_wz_39_40"
+msgstr "AP wz.39/40"
+
 msgid "_90mm_pocisk_przeciwpancerny_wz_39_40M"
 msgstr "AP wz.39/40M"
 
 msgid "_90mm_pocisk_wybuchowy_wz_39"
 msgstr "HE wz.39"
+
+msgid "_90mm_pocisk_wybuchowy_wz_39_40"
+msgstr "HE wz.39/40"
 
 msgid "_90mm_pocisk_wybuchowy_wz_39_40M"
 msgstr "HE wz.39/40M"
@@ -1553,11 +1778,14 @@ msgstr "90mm wz.39/40炮"
 msgid "_90mm_wz_39_40M"
 msgstr "90mm wz.39/40M炮"
 
+msgid "_90mm_wz_39_40_40TP"
+msgstr "90mm wz.39/40炮 (40TP)"
+
 msgid "_90mm_wz_39_90"
 msgstr "90mm wz.39-90炮"
 
+msgid "_90mm_wz_39_90_40"
+msgstr "90mm wz.39-90炮 (40)"
+
 msgid "_9RM"
 msgstr "9RM"
-
-msgid "_Gr_38_HL_A_K"
-msgstr "HEAT w.97"

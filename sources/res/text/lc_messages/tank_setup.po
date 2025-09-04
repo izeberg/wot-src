@@ -177,6 +177,15 @@ msgstr "已安装在坦克上"
 msgid "dealPanel/tooltip/notEnough"
 msgstr "资金不足，无法购买。"
 
+msgid "dealPanel/tooltip/purchasedWith/credits"
+msgstr "将使用银币购买"
+
+msgid "dealPanel/tooltip/purchasedWith/crystal"
+msgstr "将使用战争债券购买"
+
+msgid "dealPanel/tooltip/purchasedWith/depot"
+msgstr "将安装仓库中的物品"
+
 msgid "deconstructionDeviceView/available"
 msgstr "可用:"
 
@@ -613,9 +622,6 @@ msgstr "出售单价:"
 msgid "easyTankEquipView/alert/demountNotPossible"
 msgstr "资源不足，无法拆卸。"
 
-msgid "easyTankEquipView/alert/loadCapacityNotEnough"
-msgstr "此配件需要承载能力更高的悬挂装置。"
-
 msgid "easyTankEquipView/alert/notFormed"
 msgstr "没有适用于该坦克的建议"
 
@@ -796,8 +802,8 @@ msgstr "配件类别"
 
 msgid "introduction/slide/3/description/left"
 msgstr ""
-"大部分II-IV级坦克使用的配件价格不会超过50,000银币，V-VII级坦克的配件价格为300,000银币，VIII-"
-"X级坦克的配件价格为600,000银币"
+"II-IV级坦克使用的大部分配件价格不会超过50000银币，V-VII级坦克的配件价格为300000银币，VIII-"
+"XI级坦克的配件价格为600000银币。"
 
 msgid "introduction/slide/3/description/right"
 msgstr "一部分全新配件被分为三个等级。不同等级的配件依然提供同样的效果。配件等级越高，价格也就越高。不同配件等级对应不同的坦克等级。"
@@ -812,7 +818,7 @@ msgid "introduction/slide/3/title"
 msgstr "配件价格"
 
 msgid "introduction/slide/4/description"
-msgstr "I级坦克无法使用配件。II级坦克只能使用一个配件，III级坦克两个，IV-X级坦克三个。原先安装在被移除栏位上的配件已被拆卸并送至仓库。"
+msgstr "I级坦克无法安装配件。II级坦克只能安装1个配件，III级坦克2个，IV-XI级坦克3个。原先安装在被移除栏位上的配件已被拆卸并送至仓库。"
 
 msgid "introduction/slide/4/title"
 msgstr "配件栏位"
@@ -883,9 +889,6 @@ msgstr "提高隐蔽值，无论坦克静止或移动(效果取决于坦克类�
 msgid "kpi/bonus/longDescr/negative/vehicleChassisFallDamage"
 msgstr "悬挂装置受到冲击而引发的损伤"
 
-msgid "kpi/bonus/longDescr/negative/vehicleChassisLoad"
-msgstr "悬挂装置承载能力"
-
 msgid "kpi/bonus/longDescr/negative/vehicleCircularVisionRadius"
 msgstr "观察范围(不超过445米)。445米以上的观察范围有助于更有效地发现敌方坦克。"
 
@@ -943,13 +946,10 @@ msgid "kpi/bonus/longDescr/positive/vehicleCamouflage"
 msgstr "静止和移动坦克的隐蔽"
 
 msgid "kpi/bonus/longDescr/positive/vehicleCamouflageGroup"
-msgstr "提高隐蔽值，无论坦克静止或移动(效果取决于坦克类型)"
+msgstr "提高坦克静止和移动时的隐蔽系数(效果取决于坦克类型)"
 
 msgid "kpi/bonus/longDescr/positive/vehicleChassisFallDamage"
 msgstr "悬挂装置受到冲击而引发的损伤"
-
-msgid "kpi/bonus/longDescr/positive/vehicleChassisLoad"
-msgstr "悬挂装置承载能力"
 
 msgid "kpi/bonus/longDescr/positive/vehicleCircularVisionRadius"
 msgstr "观察范围(不超过445米)。445米以上的观察范围有助于更有效地发现敌方坦克。"
@@ -1105,9 +1105,6 @@ msgstr "隐蔽值提升"
 msgid "kpi/bonus/negative/vehicleChassisFallDamage"
 msgstr "撞击损伤"
 
-msgid "kpi/bonus/negative/vehicleChassisLoad"
-msgstr "承载能力"
-
 msgid "kpi/bonus/negative/vehicleChassisRepairSpeed"
 msgstr "悬挂装置维修速度"
 
@@ -1235,6 +1232,21 @@ msgstr ""
 "被击毁后点亮敌方的\n"
 "持续时间"
 
+msgid "kpi/bonus/positive/HEShellDamage"
+msgstr "HE炮弹损伤"
+
+msgid "kpi/bonus/positive/HEShellPenetration"
+msgstr "HE炮弹穿透力"
+
+msgid "kpi/bonus/positive/additionalShellAmmoCapacity"
+msgstr "载弹量"
+
+msgid "kpi/bonus/positive/allShellDamage"
+msgstr "全部类型炮弹损伤"
+
+msgid "kpi/bonus/positive/allShellsVelocity"
+msgstr "全部类型炮弹的飞行速度"
+
 msgid "kpi/bonus/positive/artNotificationDelayFactor"
 msgstr ""
 "声波探测激活的\n"
@@ -1284,6 +1296,9 @@ msgstr ""
 "损伤敌方坦克模块和\n"
 "击伤敌方乘员的几率"
 
+msgid "kpi/bonus/positive/engineHP"
+msgstr "发动机耐久度"
+
 msgid "kpi/bonus/positive/equipmentPreparationTime"
 msgstr "给养冷却时间"
 
@@ -1293,10 +1308,31 @@ msgstr "灭火速度"
 msgid "kpi/bonus/positive/foliageMaskingFactor"
 msgstr "在植被后方的隐蔽系数"
 
+msgid "kpi/bonus/positive/fuelTankHP"
+msgstr "油箱耐久度"
+
+msgid "kpi/bonus/positive/gunDepression"
+msgstr "火炮俯角"
+
+msgid "kpi/bonus/positive/gunElevation"
+msgstr "火炮仰角"
+
+msgid "kpi/bonus/positive/gunStabilization"
+msgstr "火炮稳定性"
+
+msgid "kpi/bonus/positive/gunTraverse"
+msgstr "火炮射界"
+
+msgid "kpi/bonus/positive/hullElevationSpeed"
+msgstr "车体抬高速度"
+
 msgid "kpi/bonus/positive/mediumGroundFactor"
 msgstr ""
 "在中度松软地形上\n"
 "维持速度的能力"
+
+msgid "kpi/bonus/positive/nonHEShellDamage"
+msgstr "非HE炮弹损伤"
 
 msgid "kpi/bonus/positive/penaltyToDamagedSurveyingDevice"
 msgstr ""
@@ -1314,6 +1350,18 @@ msgstr ""
 "保护通信兵\n"
 "免于受伤的几率"
 
+msgid "kpi/bonus/positive/reloadTimeInClip"
+msgstr "弹夹短装填时间"
+
+msgid "kpi/bonus/positive/reloadTimeSalvo"
+msgstr "装填时间(齐射射击模式)"
+
+msgid "kpi/bonus/positive/reloadTimeSingle"
+msgstr "装填时间(单发射击模式)"
+
+msgid "kpi/bonus/positive/shellModuleDamage"
+msgstr "对敌方模块造成的炮弹损伤"
+
 msgid "kpi/bonus/positive/shellVelocity"
 msgstr "炮弹速度"
 
@@ -1322,8 +1370,23 @@ msgstr ""
 "在松软地形上\n"
 "维持速度的能力"
 
+msgid "kpi/bonus/positive/specialShellPenetration"
+msgstr "特殊炮弹穿透力"
+
+msgid "kpi/bonus/positive/specialShellVelocity"
+msgstr "特殊炮弹飞行速度"
+
+msgid "kpi/bonus/positive/standardShellPenetration"
+msgstr "标准炮弹穿透力"
+
+msgid "kpi/bonus/positive/standardShellVelocity"
+msgstr "标准炮弹飞行速度"
+
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "弹震减益效果"
+
+msgid "kpi/bonus/positive/turretTraverse"
+msgstr "炮塔射界"
 
 msgid "kpi/bonus/positive/vehPenaltyForDamagedAmmorack"
 msgstr "装填速度惩罚"
@@ -1351,9 +1414,6 @@ msgstr "隐蔽值提升"
 
 msgid "kpi/bonus/positive/vehicleChassisFallDamage"
 msgstr "撞击接触时的损伤"
-
-msgid "kpi/bonus/positive/vehicleChassisLoad"
-msgstr "承载能力"
 
 msgid "kpi/bonus/positive/vehicleChassisRepairSpeed"
 msgstr "悬挂装置维修速度"
@@ -1437,6 +1497,9 @@ msgstr ""
 
 msgid "kpi/bonus/positive/vehicleRepairSpeed"
 msgstr "维修速度"
+
+msgid "kpi/bonus/positive/vehicleSpeed"
+msgstr "最大前进/倒车速度"
 
 msgid "kpi/bonus/positive/vehicleSpeedGain"
 msgstr "在驶过各类地形时维持速度的能力"
@@ -1539,9 +1602,6 @@ msgstr "隐蔽"
 
 msgid "kpi/bonus/ttc/negative/vehicleChassisFallDamage"
 msgstr "撞击损伤"
-
-msgid "kpi/bonus/ttc/negative/vehicleChassisLoad"
-msgstr "承载能力"
 
 msgid "kpi/bonus/ttc/negative/vehicleChassisRepairSpeed"
 msgstr "悬挂装置维修速度"
@@ -1740,9 +1800,6 @@ msgstr "隐蔽系数"
 msgid "kpi/bonus/ttc/positive/vehicleChassisFallDamage"
 msgstr "撞击接触时的损伤"
 
-msgid "kpi/bonus/ttc/positive/vehicleChassisLoad"
-msgstr "承载能力"
-
 msgid "kpi/bonus/ttc/positive/vehicleChassisRepairSpeed"
 msgstr "悬挂装置维修速度"
 
@@ -1876,6 +1933,9 @@ msgid "kpi/bonus/valueTypes/vehicleOwnSpottingTime"
 msgstr "秒"
 
 msgid "popularLoadouts/common"
+msgstr "热门"
+
+msgid "popularLoadouts/commonlyUsed"
 msgstr "热门"
 
 msgid "popularLoadouts/legendary"

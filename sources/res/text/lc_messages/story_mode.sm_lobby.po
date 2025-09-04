@@ -69,6 +69,12 @@ msgstr "邮差行动"
 msgid "battleResult/missionName/1004"
 msgstr "邮差行动"
 
+msgid "battleResult/missionName/1005"
+msgstr "沸点行动"
+
+msgid "battleResult/missionName/1006"
+msgstr "沸点行动"
+
 msgid "battleResult/missionName/2"
 msgstr "虎式猎手: 诱捕行动"
 
@@ -153,35 +159,17 @@ msgstr "确认"
 msgid "dialogs/missionCompleted/title"
 msgstr "该行动中没有开放的任务"
 
-msgid "entryPoint/new"
-msgstr "新"
-
-msgid "entryPoint/subtitle/newMission"
-msgstr "新任务已开放"
-
-msgid "entryPoint/subtitle/newMode"
-msgstr "新故事已开放"
-
-msgid "entryPoint/timer/dates"
-msgstr "%(startDate)s–%(endDate)"
-
-msgid "entryPoint/title/newMission"
-msgstr "邮差行动"
-
-msgid "entryPoint/title/newMode"
-msgstr "邮差行动"
-
 msgid "eventWelcomeScreen/column/subtitle/1"
-msgstr "本故事献给战事结束80周年。向盟军部队传达停火命令，阻止冲突。"
+msgstr "侦测不明威胁，阻止导弹发射，确保全新科技由我方掌控。"
 
 msgid "eventWelcomeScreen/column/subtitle/2"
-msgstr "在这个史诗般的潜行故事中，您可以进行单人作战，悄悄绕过AI敌人。避开敌人的巡逻队，给他们下达虚假命令，释放您的战术能力。"
+msgstr "单人作战，对抗AI敌人，体验以第三区指挥官为主角的史诗故事！"
 
 msgid "eventWelcomeScreen/column/subtitle/3"
-msgstr "完成所有任务即可获得纪念奖章、一辆附带3D风格的金币坦克，以及其他珍贵奖励。"
+msgstr "完成所有任务即可获得纪念奖章与勋章、主题2D风格，以及其他珍贵奖励。"
 
 msgid "eventWelcomeScreen/column/title/1"
-msgstr "历史事件"
+msgstr "新纪元曙光"
 
 msgid "eventWelcomeScreen/column/title/2"
 msgstr "单人故事"
@@ -190,7 +178,7 @@ msgid "eventWelcomeScreen/column/title/3"
 msgstr "奖励"
 
 msgid "eventWelcomeScreen/header"
-msgstr "邮差行动"
+msgstr "沸点行动"
 
 msgid "eventWelcomeScreen/subheader"
 msgstr "%(startDate)s–%(endDate)"
@@ -202,9 +190,7 @@ msgid "missionSelection/about"
 msgstr "关于故事"
 
 msgid "missionSelection/difficulty/hard"
-msgstr ""
-"严酷\n"
-"秘密行动"
+msgstr "严酷"
 
 msgid "missionSelection/difficulty/normal"
 msgstr "普通"
@@ -283,6 +269,22 @@ msgstr ""
 "\n"
 "出发。\""
 
+msgid "missionSelection/missionDescription/1005"
+msgstr ""
+"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
+"\n"
+"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
+"\n"
+"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
+
+msgid "missionSelection/missionDescription/1006"
+msgstr ""
+"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
+"\n"
+"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
+"\n"
+"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
+
 msgid "missionSelection/missionDescription/2"
 msgstr ""
 "麦克劳德: \"战场上你最不想碰到的就是\"虎\"式。若指挥部说他们遇到了麻烦，那八成就是指\"虎\"式。一队联系不上，二队刚刚出发，现在轮到我们了，要跟上他们的脚步。\n"
@@ -333,6 +335,12 @@ msgstr "邮差行动"
 msgid "missionSelection/missionName/1004"
 msgstr "邮差行动"
 
+msgid "missionSelection/missionName/1005"
+msgstr "沸点行动"
+
+msgid "missionSelection/missionName/1006"
+msgstr "沸点行动"
+
 msgid "missionSelection/missionName/2"
 msgstr "诱捕行动"
 
@@ -352,7 +360,7 @@ msgid "missionSelection/specialVehicle"
 msgstr "特殊坦克"
 
 msgid "missionSelection/tab/event"
-msgstr "邮差行动"
+msgstr "沸点行动"
 
 msgid "missionSelection/tab/newbies"
 msgstr "教学故事"
@@ -386,6 +394,24 @@ msgstr "在%(win_timer)s内完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/1004/3"
 msgstr "在不受到敌方地雷和炮击损伤的情况下完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/1005/1"
+msgstr "抵达指挥中心，阻止导弹发射。"
+
+msgid "missionSelection/taskDescription/1005/2"
+msgstr "在%(win_timer)s内完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/1005/3"
+msgstr "在不损失任何自身坦克的情况下，完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/1006/1"
+msgstr "抵达指挥中心，阻止导弹发射。"
+
+msgid "missionSelection/taskDescription/1006/2"
+msgstr "在%(win_timer)s内完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/1006/3"
+msgstr "在不损失任何自身坦克的情况下，完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/2/1"
 msgstr "攻击城镇并击毁敌方坦克。"
@@ -459,11 +485,10 @@ msgid "mode/story_mode/description"
 msgstr "与AI控制的坦克对抗，完成带有剧情的行动"
 
 msgid "mode/story_mode_event/callToAction"
-msgstr "邮差行动已开放"
+msgstr "沸点行动已开放"
 
 msgid "newbieAdvertisingScreen/column/subtitle/1"
-msgstr ""
-"您可在{whiteSpanish_Open}\"加入战斗\"{whiteSpanish_Close}按钮旁边查看当前所选的游戏模式。点击模式名称即可查看系统开放的其他模式。"
+msgstr "当前模式的名称位于车库主界面上方。点击模式名称即可查看其他开放的模式。"
 
 msgid "newbieAdvertisingScreen/column/subtitle/2"
 msgstr "点击{whiteSpanish_Open}故事{whiteSpanish_Close}即可选择该游戏模式。"
@@ -485,12 +510,6 @@ msgstr "故事模式"
 
 msgid "newbieAdvertisingScreen/subheader"
 msgstr "体验带有剧情的战斗场景"
-
-msgid "newbieEntryPoint/subtitle/newStorie"
-msgstr "全新行动现已开放"
-
-msgid "newbieEntryPoint/title/newStorie"
-msgstr "故事模式"
 
 msgid "onboardingBattleResult/startButton"
 msgstr "重新开始"
@@ -565,16 +584,15 @@ msgstr "已完成任务"
 
 msgid "tooltips/battleResultStat/missions/info"
 msgstr ""
-"已完成任务和\n"
-"所有当前开放任务的数量。"
+"已完成任务和所有当前开放任务的数\n"
+"量。完成严酷难度的任务后，您也将\n"
+"自动完成普通难度的任务。"
 
 msgid "tooltips/difficulty/available"
 msgstr "已开放"
 
 msgid "tooltips/difficulty/hard/description"
-msgstr ""
-"邮差行动秘密行动阶段的另一个版本，更具挑战性——采用非线性结构，更多敌人，并需收集额外的地图碎片。\n"
-"完成后可获得更丰厚的战斗奖励。"
+msgstr "敌人的反应速度和射击精度均有所加强，它们会对您展开更猛烈的攻击。作为回报，您将在完成任务后获得额外奖励。"
 
 msgid "tooltips/difficulty/hard/info/body"
 msgstr ""
@@ -584,7 +602,7 @@ msgid "tooltips/difficulty/hard/info/title"
 msgstr "附加条件"
 
 msgid "tooltips/difficulty/hard/title"
-msgstr "严酷，秘密行动"
+msgstr "严酷"
 
 msgid "tooltips/difficulty/locked/body"
 msgstr "在普通难度下完成该行动，展示您在该游戏模式中的作战技巧，即可解锁严酷难度。"
@@ -593,10 +611,7 @@ msgid "tooltips/difficulty/locked/title"
 msgstr "未解锁"
 
 msgid "tooltips/difficulty/normal/description"
-msgstr ""
-"更少的敌人、线性行动结构，让您了解模式规则和目标。\n"
-"包含介绍、秘密行动和雷区阶段。\n"
-"完成后可获得常规战斗奖励。"
+msgstr "对手速度较慢，且射击精度不高，完成任务后可获得标准奖励。"
 
 msgid "tooltips/difficulty/normal/title"
 msgstr "普通"
@@ -611,6 +626,39 @@ msgstr ""
 
 msgid "tooltips/difficulty/very_hard/title"
 msgstr "严酷，雷区"
+
+msgid "tooltips/eventBannerTooltip/eventText"
+msgstr "侦测不明威胁，阻止导弹发射，确保全新科技由我方掌控。"
+
+msgid "tooltips/eventBannerTooltip/eventTitle"
+msgstr "沸点行动"
+
+msgid "tooltips/eventBannerTooltip/mode"
+msgstr "模式"
+
+msgid "tooltips/eventBannerTooltip/modeText"
+msgstr "——游戏模式。点击了解详情"
+
+msgid "tooltips/eventBannerTooltip/text"
+msgstr "单人作战，对抗AI敌人，体验以第三区指挥官为主角的史诗故事！"
+
+msgid "tooltips/eventBannerTooltip/timerText"
+msgstr "活动将开放{timer}"
+
+msgid "tooltips/eventBannerTooltip/title"
+msgstr "故事"
+
+msgid "tooltips/newbieBannerTooltip/mode"
+msgstr "模式"
+
+msgid "tooltips/newbieBannerTooltip/modeText"
+msgstr "——游戏模式。点击了解详情"
+
+msgid "tooltips/newbieBannerTooltip/text"
+msgstr "带有剧情的特殊战斗场景。投身钢铁洪流的征途，与AI敌人对战，证明自己的实力。"
+
+msgid "tooltips/newbieBannerTooltip/title"
+msgstr "故事"
 
 msgid "tooltips/task/active"
 msgstr "已开放"

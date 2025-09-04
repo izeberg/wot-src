@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_3/crash/lod0/Gun_03</nodefullVisual>
+	<visibilityBox>
+		<min>-0.526891 -0.411770 -1.513034</min>
+		<max>0.567595 0.375973 7.154677</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_3/crash/lod1/Gun_03</parent>
+	<extent>32.000000</extent>
+</root>

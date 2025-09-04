@@ -1,6 +1,7 @@
 package net.wg.gui.lobby.profile.pages.total
 {
    import flash.display.InteractiveObject;
+   import flash.geom.Rectangle;
    import net.wg.gui.components.containers.inject.GFInjectComponent;
    import net.wg.gui.lobby.components.IResizableContent;
    
@@ -16,18 +17,29 @@ package net.wg.gui.lobby.profile.pages.total
          setManageSize(true);
       }
       
+      public function canShowAutomatically() : Boolean
+      {
+         return true;
+      }
+      
       public function getComponentForFocus() : InteractiveObject
       {
          return null;
+      }
+      
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
+      {
+         setSize(param1,param2);
+         setPaddings(param3);
       }
       
       public function update(param1:Object) : void
       {
       }
       
-      public function canShowAutomatically() : Boolean
+      public function get active() : Boolean
       {
-         return true;
+         return this._isActive;
       }
       
       public function set active(param1:Boolean) : void
@@ -37,23 +49,13 @@ package net.wg.gui.lobby.profile.pages.total
          visible = this._isActive;
       }
       
-      public function get active() : Boolean
+      public function get centerOffset() : int
       {
-         return this._isActive;
-      }
-      
-      public function setViewSize(param1:Number, param2:Number) : void
-      {
-         setSize(param1,param2);
+         return 0;
       }
       
       public function set centerOffset(param1:int) : void
       {
-      }
-      
-      public function get centerOffset() : int
-      {
-         return 0;
       }
    }
 }

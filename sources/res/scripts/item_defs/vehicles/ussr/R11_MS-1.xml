@@ -140,7 +140,7 @@
 		</armor>
 		<primaryArmor>armor_5 armor_3 armor_4</primaryArmor>
 		<weight>2750</weight>
-		<maxHealth>172</maxHealth>
+		<maxHealth>176</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>60</maxHealth>
 			<maxRegenHealth>40</maxRegenHealth>
@@ -2012,8 +2012,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<T-18Bis>
-			<userString>#ussr_vehicles:T-18Bis</userString>
+		<Chassis_R11_MS-1>
+			<userString>#ussr_vehicles:Chassis_R11_MS-1</userString>
 			<tags/>
 			<level>1</level>
 			<price>0</price>
@@ -2023,7 +2023,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>1200</weight>
-			<maxLoad>6500</maxLoad>
 			<terrainResistance>
 				1 1.2 2.1
 				<!--BW_String-->
@@ -3132,20 +3131,17 @@
 				3.41880345
 				<!--BW_String-->
 			</repairTime>
-		</T-18Bis>
+		</Chassis_R11_MS-1>
 	</chassis>
 	<turrets0>
-		<T-18_mod>
+		<Turret_1_R11_MS-1>
 			<guns>
-				<_37mm_Gochkins>
+				<_37mm_Hotchkiss>
 					shared
 					<maxAmmo>240</maxAmmo>
-					<reloadTime>
-						2.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>2</reloadTime>
 					<aimingTime>
-						2.5
+						2.3
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -3153,10 +3149,7 @@
 							0.14
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -3188,7 +3181,7 @@
 						</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.54
+						0.47
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<pitchLimits>
@@ -3202,6 +3195,7 @@
 						0.255
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R11_MS-1/normal/lod0/Gun_05.model</undamaged>
 						<destroyed>vehicles/russian/R11_MS-1/crash/lod0/Gun_05.model</destroyed>
@@ -3265,7 +3259,7 @@
 						</density>
 						<aoTextureSize>256 256</aoTextureSize>
 					</camouflage>
-				</_37mm_Gochkins>
+				</_37mm_Hotchkiss>
 				<_45mm_mod_1932>
 					shared
 					<maxAmmo>125</maxAmmo>
@@ -3321,6 +3315,18 @@
 						0.247
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
+					<shotDispersionFactors>
+						<afterShot>3</afterShot>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<turretRotation>
+							0.14
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R11_MS-1/normal/lod0/Gun_09.model</undamaged>
 						<destroyed>vehicles/russian/R11_MS-1/crash/lod0/Gun_09.model</destroyed>
@@ -3377,7 +3383,7 @@
 					</camouflage>
 				</_45mm_mod_1932>
 			</guns>
-			<userString>#ussr_vehicles:T-18_mod</userString>
+			<userString>#ussr_vehicles:Turret_1_R11_MS-1</userString>
 			<tags/>
 			<level>1</level>
 			<price>0</price>
@@ -3412,7 +3418,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>240</weight>
-			<maxHealth>43</maxHealth>
+			<maxHealth>44</maxHealth>
 			<rotationSpeed>35</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>50</maxHealth>
@@ -4168,10 +4174,10 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</T-18_mod>
+		</Turret_1_R11_MS-1>
 	</turrets0>
 	<engines>
-		<GAZ-M1>shared</GAZ-M1>
+		<GAZ_M1>shared</GAZ_M1>
 	</engines>
 	<fuelTanks>
 		<Small>shared</Small>
@@ -4182,16 +4188,13 @@
 	<physics>
 		<detailed>
 			<engines>
-				<GAZ-M1>
-					<smplEnginePower>
-						58.15046
-						<!--BW_String-->
-					</smplEnginePower>
+				<GAZ_M1>
+					<smplEnginePower>60</smplEnginePower>
 					<smplFwMaxSpeed>32</smplFwMaxSpeed>
-				</GAZ-M1>
+				</GAZ_M1>
 			</engines>
 			<chassis>
-				<T-18Bis>
+				<Chassis_R11_MS-1>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -4212,7 +4215,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</T-18Bis>
+				</Chassis_R11_MS-1>
 			</chassis>
 		</detailed>
 	</physics>

@@ -9,6 +9,8 @@ package
       
       public static const COMMON_DASH:String = "#common:common/dash";
       
+      public static const COMMON_SEMI_DASH:String = "#common:common/semi_dash";
+      
       public static const COMMON_DASHES:String = "#common:common/dashes";
       
       public static const COMMON_SLASH:String = "#common:common/slash";
@@ -27,13 +29,23 @@ package
       
       public static const MULTIPLIER:String = "#common:multiplier";
       
+      public static const MULTIPLIERSMALL:String = "#common:multiplierSmall";
+      
       public static const XVALUE:String = "#common:xValue";
       
       public static const PERCENTVALUE:String = "#common:percentValue";
       
       public static const PLUSVALUE:String = "#common:plusValue";
       
+      public static const PLUS:String = "#common:plus";
+      
+      public static const PLUSVALUEWITHSPACE:String = "#common:plusValueWithSpace";
+      
       public static const PLUSPERCENTVALUE:String = "#common:plusPercentValue";
+      
+      public static const NUMBERABBREV:String = "#common:numberAbbrev";
+      
+      public static const VALUEPLUS:String = "#common:valuePlus";
       
       public static const INPUT_PLACEHOLDER_EMAIL:String = "#common:input/placeholder/email";
       
@@ -52,6 +64,12 @@ package
       public static const DURATION_SECONDS:String = "#common:duration/seconds";
       
       public static const DURATION_UNLIMITED:String = "#common:duration/unlimited";
+      
+      public static const TIMER_DAYS:String = "#common:timer/days";
+      
+      public static const TIMER_HOURS:String = "#common:timer/hours";
+      
+      public static const TIMER_MINUTES:String = "#common:timer/minutes";
       
       public static const RELATIVEDATETIME_NOW:String = "#common:relativeDateTime/now";
       

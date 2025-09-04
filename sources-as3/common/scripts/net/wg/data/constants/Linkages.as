@@ -229,6 +229,8 @@ package net.wg.data.constants
       
       public static const STUN_ICON:String = "secondaryStunIconUI";
       
+      public static const TARGET_DESIGNATOR_ICON:String = "secondaryTargetDesignatorIconUI";
+      
       public static const BLOCKED_ICON:String = "secondaryBlockedIconUI";
       
       public static const SMOKE_ICON:String = "secondarySmokeIconUI";
@@ -519,6 +521,52 @@ package net.wg.data.constants
       
       public static const TWIN_GUN_MODE_ANIMATION_UI:String = "TwinGunModeAnimationUI";
       
+      public static const ROCKET_ACCELERATOR:String = "RocketAcceleratorPanelUI";
+      
+      public static const WIDGET_HOT_KEY:String = "HotkeyUI";
+      
+      public static const RECHARGEABLE_NITRO:String = "RechargeableNitroPanelUI";
+      
+      public static const CONCENTRATION:String = "ConcentrationWidgetUI";
+      
+      public static const CHARGE_SHOT:String = "ChargeShotWidgetUI";
+      
+      public static const STANCE_DANCE_FIGHT:String = "StanceDanceFightWidgetUI";
+      
+      public static const STANCE_DANCE_TURBO:String = "StanceDanceTurboWidgetUI";
+      
+      public static const POWER:String = "PowerWidgetUI";
+      
+      public static const SUPPORT_WEAPON:String = "SupportWeaponWidgetUI";
+      
+      public static const PILLBOX_SIEGE:String = "PillboxSiegeWidgetUI";
+      
+      public static const PILLBOX_DEVICE_CRITICAL:String = "PillboxDeviceCriticalUI";
+      
+      public static const PILLBOX_DEVICE_DESTROYED:String = "PillboxDeviceDestroyedUI";
+      
+      public static const TARGET_DESIGNATOR_WIDGET:String = "TargetDesignatorWidgetUI";
+      
+      public static const CHARGEABLE_BURST:String = "ChargeableBurstWidgetUI";
+      
+      public static const CHARGEABLE_BURST_PENETRATION:String = "ChargeableBurstPenetrationUI";
+      
+      public static const CHARGEABLE_BURST_BULLET:String = "ChargeableBurstBulletUI";
+      
+      public static const CHARGEABLE_BURST_PENETRATION_SHADOW:String = "PenetrationsShadowItemUI";
+      
+      public static const STATIONARY_RELOAD:String = "StationaryReloadWidgetUI";
+      
+      public static const CONCENTRATION_DECOR_CROSSHAIR:String = "ConcentrationCrosshairUI";
+      
+      public static const ACCURACY_DECOR_CROSSHAIR:String = "AccuracyCrosshairUI";
+      
+      public static const PILLBOX_SIEGE_DECOR_CROSSHAIR:String = "PillboxSiegeDecorativeCrosshairUI";
+      
+      public static const OVERHEAT_DECOR_CROSSHAIR:String = "OverheatCrosshairUI";
+      
+      public static const FURY_DECOR_CROSSHAIR:String = "FuryCrosshairUI";
+      
       public static const POSTMORTEM_PANEL:String = "PostmortemPanelUI";
       
       public static const PVE_POSTMORTEM_PANEL:String = "PvePostmortemPanelUI";
@@ -628,8 +676,6 @@ package net.wg.data.constants
       public static const BATTLE_ROYALE_WIDGET_UI:String = "BattleRoyaleHangarWidgetUI";
       
       public static const BATTLE_ROYALE_TOURNAMENT_WIDGET_UI:String = "BattleRoyaleTournamentWidgetUI";
-      
-      public static const COMP7_WIDGET_UI:String = "Comp7WidgetInjectUI";
       
       public static const DIP_LOADER_DAMAGED:String = "DipLoaderDamagedUI";
       
@@ -742,8 +788,6 @@ package net.wg.data.constants
       public static const SPEEDOMETER_BG_UI:String = "SpeedometerBgUI";
       
       public static const ARTY_SHOT_INDICATOR_RENDERER:String = "ArtyShotIndicatorUI";
-      
-      public static const OVERHEAT_WIDGET:String = "OverheatWidgetUI";
       
       public static const EQUIPMENT_OVERLAY:String = "ListOverlayUI";
       
@@ -978,6 +1022,20 @@ package net.wg.data.constants
       public static const COMP7_CONDITIONS_SETTINGS_LINKAGE:String = "Comp7ConditionsUI";
       
       public static const COMP7_CONDITIONS_ROOM_LINKAGE:String = "Comp7ConditionsRoomUI";
+      
+      public static const PM3_SYS_MES_DESCR_UPCOMPLETED_UI:String = "PM3DescrUncompletedUI";
+      
+      public static const PM3_SYS_MES_DESCR_COMPLETED_UI:String = "PM3DescrCompletedUI";
+      
+      public static const PM3_SYS_MES_FOOTER_UPCOMPLETED_UI:String = "PM3FooterUncompletedUI";
+      
+      public static const PM3_SYS_MES_FOOTER_COMPLETED_UI:String = "PM3FooterCompletedUI";
+      
+      public static const PM3_SYS_MES_DESCR_COMPLETED_VEH_UI:String = "PM3VehicleIconUI";
+      
+      public static const PM3_SYS_MES_DESCR_INFO_VEH_UI:String = "PM3VehicleRowInfoUI";
+      
+      public static const BUTTON_SMALL_GRAY:String = "ButtonSmallGrayUI";
        
       
       public function Linkages()

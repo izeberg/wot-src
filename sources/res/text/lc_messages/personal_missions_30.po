@@ -1,0 +1,955 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "campaignSelector/completedAll/subtitle"
+msgstr "已完美完成全部个人任务"
+
+msgid "campaignSelector/completedAll/title"
+msgstr "恭喜！"
+
+msgid "campaignSelector/locked"
+msgstr "个人任务可使用VI级或更高等级的坦克完成"
+
+msgid "campaignSelector/operation/tooltip/locked"
+msgstr "作战行动暂不开放"
+
+msgid "campaignSelector/status/button/activate"
+msgstr "激活个人任务"
+
+msgid "campaignSelector/status/button/switchCampaign"
+msgstr "继续个人任务"
+
+msgid "campaignSelector/status/button/switchCampaigns"
+msgstr "继续个人任务"
+
+msgid "campaignSelector/status/button/tooltip"
+msgstr "请等待坦克结束战斗。坦克在战斗中时，您无法切换个人任务或作战行动。"
+
+msgid "campaignSelector/status/completed/firstTwo"
+msgstr "已完美完成\"{{firstCampaign}}\"和\"{{secondCampaign}}\"个人任务！"
+
+msgid "campaignSelector/status/completed/third"
+msgstr "已完美完成\"{{thirdCampaign}}\"个人任务！"
+
+msgid "campaignSelector/status/text/activate"
+msgstr "全新\"{{thirdCampaign}}\"个人任务已开放！"
+
+msgid "campaignSelector/status/text/switchCampaign"
+msgstr "\"{{thirdCampaign}}\"个人任务已暂停{{icon}}"
+
+msgid "campaignSelector/status/text/switchCampaigns"
+msgstr "\"{{firstCampaign}}\"和\"{{secondCampaign}}\"个人任务已暂停{{icon}}"
+
+msgid "campaignSelector/status/tooltip/firstTwo"
+msgstr "继续进行\"迟来的支援\"和\"第二战线\"个人任务时，\"第三区\"个人任务将暂停。暂停的个人任务的全部进度将保存，可随时继续进行。"
+
+msgid "campaignSelector/status/tooltip/third"
+msgstr "继续进行\"第三区\"个人任务时，\"迟来的支援\"和\"第二战线\"个人任务将暂停。暂停的个人任务的全部进度将保存，可随时继续进行。"
+
+msgid "campaignSelector/status/tooltip/title"
+msgstr "继续个人任务"
+
+msgid "common/category/assault"
+msgstr "先锋"
+
+msgid "common/category/sniper"
+msgstr "伏击"
+
+msgid "common/category/support"
+msgstr "协助"
+
+msgid "common/role/assault"
+msgstr "突击型"
+
+msgid "common/role/breakthrough"
+msgstr "突破型"
+
+msgid "common/role/sniper"
+msgstr "狙击型"
+
+msgid "common/role/support"
+msgstr "支援型"
+
+msgid "common/role/universal"
+msgstr "全能型"
+
+msgid "conditions/requiredVehicle/bottomLabel"
+msgstr "驾驶%(count)s辆不同的坦克达成条件"
+
+msgid "detail/descr/historical/s3_t10_vehElement_1"
+msgstr ""
+"首次记录，我是詹姆斯·科尔温。今天开始装配我的坦克黑岩。炮塔已经安装完毕。采用铸造件焊接复合结构，我认可这种实用设计。\n"
+"\n"
+"关于调查——彻底搜查全岛后，原有假设不成立，地下根本不存在所谓的莫雷蒂秘密基地。\n"
+"\n"
+"这个莫雷蒂行事缜密，伪造了整个设施网络和虚假文件来迷惑我们。\n"
+"\n"
+"我们在虚假线索上浪费了太多时间。必须重新调整策略，今后每一步行动都要以确凿事实为基础。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_10"
+msgstr ""
+"今天安装了侧面间隙装甲，多一层防护总不是坏事。\n"
+"\n"
+"莫雷蒂的记录揭示了晨光诊所的真相。科学家们正是在那里偶然发现，克洛诺斯原型机竟会通过概率性误差产生意外结果。这种可控误差能被精确调控，最终演变为按需生成非常规解决方案的能力。\n"
+"\n"
+"要实现真正突破性的发明，他们只需提高算力。具体方式简单到荒谬: 成倍扩大机器体积即可。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_11"
+msgstr ""
+"今天把坦克喷涂成了黑色。暗色涂装不仅能带来夜间作战优势，更能对敌方施加心理威慑。\n"
+"\n"
+"调查终于水落石出: 克洛诺斯是一套巨型计算系统，能产生\"创造性突变\"。秘密基地里发现的那些超常科技，以及缔造者通过卫星散播的黑科技，源头皆在于此。难以置信。\n"
+"\n"
+"莫雷蒂的笔记显示，他最初曾为自己的创造感到自豪，认为打造出了能够\"设计人类未来\"的工具。但之后事情变得更加有趣了。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_12"
+msgstr ""
+"今天安装了烟雾弹发射器。看似平平无奇的部件，却曾多次拯救我的老座驾于危难。\n"
+"\n"
+"莫雷蒂笔记的语气发生了戏剧性变化。这位素来谨慎、从不过分信任他人的科学家，竟在某刻彻底陷入妄想——不仅怀疑所有科学家、工程师和员工，更将克洛诺斯本身视为威胁。他白纸黑字地写道，他确信这台机器已获得了\"自我意识\"，正操纵着人类。\n"
+"\n"
+"随着调查深入，莫雷蒂的记录也愈发偏执。我们此刻面临的谜团是: 究竟是莫雷蒂自己逐渐陷入癫狂，还是他当真创造了超越其预设功能的机器？"
+
+msgid "detail/descr/historical/s3_t10_vehElement_13"
+msgstr ""
+"炮口制退器已安装完毕，后坐力将显著降低。至此，火炮装配已结束。\n"
+"\n"
+"莫雷蒂的最终记录显示，他已经彻底崩溃。他写道，那台机器在\"伪装\"，而且它\"知晓一切\"。他明确要求，必须在为时已晚之前将其摧毁。\n"
+"\n"
+"但此后记录戛然而止。我们未找到任何关于克洛诺斯下落的证据: 它是否真被摧毁？抑或仍蛰伏在冰原某处？细思极恐——尤其联系到缔造者近期的行动。\n"
+"\n"
+"倘若他掌握着更先进的克洛诺斯迭代型号，技术代差恐怕不止十年，我们又该何去何从？"
+
+msgid "detail/descr/historical/s3_t10_vehElement_14"
+msgstr ""
+"这辆坦克现已配备齐全，很快就能投身战斗。\n"
+"\n"
+"而且时机刚好。现在我们知道莫雷蒂对我们隐瞒了什么，也知道缔造者的这些技术从何而来，剩下的主要任务就是找到克洛诺斯。\n"
+"\n"
+"我们已经在冰原筹备军事搜索行动。但为什么我总觉得这又是莫雷蒂的另一个骗局？莫雷蒂真的存在过吗？经历了他的种种诡计后，不得不开始怀疑一切，甚至考虑那些最离谱的设想。莱尼还提出，缔造者和莫雷蒂可能是同一个人。而泰迪则坚信缔造者其实就是克洛诺斯本身。\n"
+"\n"
+"无论缔造者究竟是谁，他都领先我们好几步。我们必须找到克洛诺斯，才能阻止缔造者。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_15"
+msgstr ""
+"履带已安装完毕，黑岩终于完工了。每个部件都经过校准，所有系统也均完成测试。这辆工程奇迹已准备好迎接任何挑战。\n"
+"\n"
+"我戎马半生，曾指挥过许多坦克，但这辆非同寻常。它凝聚了我们所有人的心血、发现的科技，以及对抗缔造者威胁的决心。\n"
+"\n"
+"无论他有何阴谋，无论冰原或其他地方隐藏着什么秘密，这辆战斗机器都能让我们离胜利更进一步。\n"
+"\n"
+"古语有云: 凡事预则立，不预则废。我坚信，在即将到来的战斗中，这一点仍将成立。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_2"
+msgstr ""
+"今天我们安装了悬挂装置部件。虽然该部件没有什么特殊之处，但设计可靠，且经过实地测试。\n"
+"\n"
+"我们仍在核查出现莫雷蒂化名的货运清单。借助运输船航线与缔造者的卫星数据，我们定位了数十处秘密设施。\n"
+"\n"
+"在这些设施中，我们发现了作为克洛诺斯计划一部分的新蓝图与记录。但这并未解决我们的疑问，比如D系科学家是如何研发这些设计方案的？克洛诺斯主地堡究竟在何处？那里正在建造的是什么危险的庞然大物？"
+
+msgid "detail/descr/historical/s3_t10_vehElement_3"
+msgstr ""
+"我们今天安装了负重轮，悬挂系统已接近完工。这部分比较简单。\n"
+"\n"
+"但调查却依然困难重重。我们到底遗漏了什么？究竟在西线的什么地方，能隐藏一个规模如此之大、至今未被我们发现的秘密地堡？\n"
+"\n"
+"泰迪认为该设施可能在水下。他指出，潜艇的出航日期经常与运输船的日程吻合。这个观察很有趣，不过，在20世纪40年代建造水下基地，即便是莫雷蒂也做不到。\n"
+"\n"
+"泰迪又提出了另一个设想——秘密基地可能在月球上。我们立刻否定了这个想法。缔造者最近才成功发射卫星。在20世纪40年代，太空旅行还只是幻想。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_4"
+msgstr ""
+"车长观察设备已安装。旋转式潜望镜可提供完整的360度视野。无需身处炮塔即可掌握战场态势——听起来不错。\n"
+"\n"
+"我们发现了一批小型货船的异常活动规律: 它们离港后数小时便空船返航。根据航行日志，目的地总是同一处公海坐标。\n"
+"\n"
+"这真可能是个水下基地吗？\n"
+"\n"
+"莱尼和我一样对该设想持怀疑态度。但她认为把集装箱转运至潜艇的可能性更大。我们需要查明该区潜艇的去向。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_5"
+msgstr ""
+"今天安装了乘员观察设备，其核心是一套基于电视摄像机的观察系统——这又是克洛诺斯计划超前时代的科技之一。\n"
+"\n"
+"情报档案显示，南大洋靠近西岸的潜艇活动增加，并疑似向冰原移动的迹象。最新破译的文件证实了这一推测。\n"
+"\n"
+"冰原似乎是这些运输队的最终目的地。作为地球上最偏远的地方，那里确实是隐藏庞然大物的理想地点。现在，我们只需查明莫雷蒂究竟想在冰层下隐藏什么。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_6"
+msgstr ""
+"今天安装了两挺勃朗宁M2HB重机枪。通过其遥控系统，我们能在确保乘员安全的情况下打击目标。这种战术优势我认为非常重要。\n"
+"\n"
+"本以为我们即将揭开莫雷蒂建造之物的真相了，结果在最新解密的克洛诺斯档案中发现，该庞大\"神秘武器\"的设计图全是陷阱。图纸中被故意植入了足以让整机报废的结构错误。\n"
+"\n"
+"可恶！又是莫雷蒂伪造的文件。\n"
+"\n"
+"他究竟想用如此复杂的假情报掩盖什么秘密？还有什么能比\"神秘武器\"更加机密？"
+
+msgid "detail/descr/historical/s3_t10_vehElement_7"
+msgstr ""
+"主炮终于安装完毕。这是一门口径特殊的稀有型号，配有抽壳机构，可大幅强化射速与精度。正合我意。\n"
+"\n"
+"在区分出真伪蓝图后，我们取得重大突破: 我们苦苦追寻的\"神秘武器\"根本不是武器，而是一座规模惊人的计算中心。\n"
+"\n"
+"不得不承认，莫雷蒂确实狡猾——创造出如此复杂的假计划和秘密基地，成功误导了所有人。若不是拿到了缔造者的卫星数据，我们至今仍会离真相遥遥无期。"
+
+msgid "detail/descr/historical/s3_t10_vehElement_8"
+msgstr ""
+"今天安装了挡泥板和侧裙板。虽然算不上特别进展，但距离坦克装配完成又近了一步。\n"
+"\n"
+"不过，调查取得了重大突破。我们找到了莫雷蒂的个人记录。他提到自己正在打造一套机电系统，不仅能计算，还能\"预测\"新想法。\n"
+"\n"
+"这看上去才是真正的克洛诺斯——所有这些惊人科技的真正源头。一台能设计其他机器的机器。\n"
+"\n"
+"但这怎么可能？或者说，这只是莫雷蒂精心设计的另一个骗局——也许是为了转移情报机构对真正\"神秘武器\"的注意力？"
+
+msgid "detail/descr/historical/s3_t10_vehElement_9"
+msgstr ""
+"红外探照灯已接通。安装这些装置后，坦克就能在夜间条件下执行作战任务。以今天的标准来看，这属于基础配置。\n"
+"\n"
+"我们仍在破译莫雷蒂的笔记。他写道，这台机器最初是作为一台大型工程工具构想的，但由于存在大量设计缺陷，它开始出现\"幻觉\"，生成了前所未见的答案、理论和概念。虽然大部分输出内容荒谬无稽，但在混乱之中也孕育出真正的创新。\n"
+"\n"
+"\"错误会带来新发现。完美则缺乏创新的火花。万物都遵循自然法则——包括机器。\"嗯..."
+
+msgid "detail/descr/historical/s3_t8_vehElement_1"
+msgstr ""
+"内贝尔报告，日志第一条。今天，我的风猎者坦克开始建造。\n"
+"\n"
+"安装了附加间隙装甲——珍贵组件。这种装甲对破甲弹效果显著。\n"
+"\n"
+"我们的调查也于今天展开。标有\"克洛诺斯\"字样的文件中，记录着超过现有水平数十年的科技。一些设计来自20世纪40年代，按理说根本不该存在。部分内容与缔造者的卫星传输的数据吻合。\n"
+"\n"
+"目前仅发现一条线索: 提及\"晨光城堡\"。我们必须找到这个地方，并查明其中进行了什么活动。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_10"
+msgstr ""
+"机动型战术地基脉冲多普勒雷达。令人印象深刻的科技。可识别目标大小和距离。像我这样的熟练操作员，当然能在相当远的距离分辨出是人员，动物，还是车辆。它比我们现在拥有的任何装备都紧凑得多。\n"
+"\n"
+"这一切都要归功于我们在克洛诺斯档案中找到的1944年的雷达示意图。这项科技不仅超前于它的时代——也超前于我们的时代。\n"
+"\n"
+"如果当年我手里有这种资料，历史的走向恐怕早已改写..."
+
+msgid "detail/descr/historical/s3_t8_vehElement_11"
+msgstr ""
+"标准的坦克灯光系统、后视镜和通信天线，这些不过是所有现代坦克的基础配置罢了。\n"
+"\n"
+"真正值得注意的是我们所掌握的关于1944年中的信息。当时，晨光诊所发生了大幅变化: 运输车队白天开始涌入，诊所的另一个病区被完全移交给莫兰蒂。\n"
+"\n"
+"这个时间点恰好与D系极力尝试研发\"神秘武器\"的阶段吻合。有意思..."
+
+msgid "detail/descr/historical/s3_t8_vehElement_12"
+msgstr ""
+"今天安装了烟雾弹发射器。它能高效快速布设近距离遮蔽烟幕。\n"
+"\n"
+"而我们的莫兰蒂，则制造出了属于他自己的\"遮蔽烟幕\"，至今我们还在努力将其驱散。\n"
+"\n"
+"在来自那个时期的文件中，我们发现其中提到了他的\"精神枷锁\"实验，该实验已取得成功并准备推广。\n"
+"\n"
+"想到他为了获取这些科技，而对科学家们的所作所为，我不寒而栗。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_13"
+msgstr ""
+"为坦克配备了必要的土工作业工具。您即使拥有最先进的雷达系统，有时也需要亲自动手才能摆脱困境。\n"
+"\n"
+"我们在发现的一个秘密地堡中，找到了晨光诊所医疗档案的残页。上面列着一系列令人不安的手术名称: \"思维采集\"、\"迷雾密室\"、\"捕梦者\"、\"精神桥梁\"、\"机械记忆\"、\"暗影档案\"。\n"
+"\n"
+"拼图正在慢慢成形。我能感觉到我们离真相越来越近——很快我们就会找到缺失的部分。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_14"
+msgstr ""
+"坦克即将完工。今天安装了我最喜爱的伪装网。隐蔽是我的专长——无论是藏匿自己，还是找到那些试图消失的人。\n"
+"\n"
+"但追查莫兰蒂的下落要困难得多。不知从何时开始，他就突然从所有文件中消失了，就像被当作多余证人处理掉了一样。但即便没有他，晨光诊所里的实验仍在继续。\n"
+"\n"
+"真相究竟是什么？又一次假失踪？还是莫兰蒂越过了某条红线？他究竟做了什么，连D系都无法容忍？"
+
+msgid "detail/descr/historical/s3_t8_vehElement_15"
+msgstr ""
+"风猎者已准备就绪。最终系统检查已完成。\n"
+"\n"
+"它绝非一辆普通作战坦克，而是专为狩猎打造的猎手，其隐蔽优秀、远距离攻击能力强，还能隐身于夜幕之中。\n"
+"\n"
+"狩猎终于开始了。\n"
+"\n"
+"现在我们的调查将大幅加速。有些秘密只能通过实地调查才能揭开。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_2"
+msgstr ""
+"今天安装了舱门。布局设计很便捷，实现了快速进出，实用且高效。正是我所需要的。\n"
+"\n"
+"发现了更多关于晨光城堡的信息。这是一座设有秘密病区的医疗设施，位于古堡之中。\n"
+"\n"
+"记录中提到该设施的负责人——\"莫兰蒂医生\"。\n"
+"\n"
+"一家设有秘密部门的医疗机构？此事疑点重重。我们需要查明它与克洛诺斯计划及加密蓝图的关联。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_3"
+msgstr ""
+"第一部分悬挂系统已完成安装，离风猎者完工又近了一步。\n"
+"\n"
+"查阅档案时，我们发现了一个令人不安的现象。1943年，大量杰出的D系科学家和工程师被宣布为\"精神失常\"，随后在晨光诊所消失。\n"
+"\n"
+"如此普遍的情况绝非巧合。这些并非随机的精神疾病发作，而是有意识地在搜集高智力的杰出人才。\n"
+"\n"
+"问题是: 他们究竟让这些人做了什么？"
+
+msgid "detail/descr/historical/s3_t8_vehElement_4"
+msgstr ""
+"负重轮安装完毕，每侧4个。前轮采用金属轮圈而非橡胶轮圈，因为在这种重量分布下，常规橡胶轮圈会迅速老化损坏。\n"
+"\n"
+"我们找到了一名曾在晨光诊所工作的护理人员，他的证词相当震撼。据这名人员回忆，大量军用卡车在武装护送下，频繁驶入诊所的限制区域，车上载着被诊断为\"躁郁症\"的病患。\n"
+"\n"
+"换句话说，他们实际上是把科学家和工程师关押在那里。而在重压之下，这些\"囚徒\"被迫研发出新科技？这就是克洛诺斯计划的真相吗？"
+
+msgid "detail/descr/historical/s3_t8_vehElement_5"
+msgstr ""
+"今天在车体侧面加装了防尘板。这可以有效地提高坦克执行长期任务的效率，是一个实用的部件。\n"
+"\n"
+"从缴获的晨光诊所文件中发现了耐人寻味的记录: 一位在1943年被官方宣告\"阵亡\"的工程师，三周后竟出现在该诊所的收治名单上。\n"
+"\n"
+"但这真是强制监禁吗？有证据表明，某些专家自愿接受这种安排，在莫兰蒂庇护下继续研究。这真是瞒过盟军情报网的妙计。\n"
+"\n"
+"莫兰蒂医生，你究竟是谁？为何我到现在还对你一无所知？"
+
+msgid "detail/descr/historical/s3_t8_vehElement_6"
+msgstr ""
+"主炮已安装炮口制退器，后坐力显著降低——正合我意。\n"
+"\n"
+"发现了一本晨光诊所护士的日记。据她描述，这位\"莫兰蒂医生\"对守卫与病患拥有绝对掌控权，但D系所有医疗档案与军事记录中均无此人，堪称幽灵般的存在。\n"
+"\n"
+"这证实了我的猜想: 根本不存在莫兰蒂医生，只是专为克罗诺斯计划创造的化名。幕后黑手更喜欢藏身暗处操纵全局。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_7"
+msgstr ""
+"基础黑色涂装喷涂完毕。不得不说，正是这抹黑色让我加入第三区——当然，也为了追捕更多战犯。打造理想坦克也算原因之一。好吧，原因其实挺多的。\n"
+"\n"
+"我们缴获的文件显示，晨光诊所的病人在接受\"特殊处置\"期间，竟能打造突破性设计。\n"
+"\n"
+"虽未载明具体处置内容，但每轮处置后均记录着\"效能提高\"。无论他们对这些科学家做了什么，该方法被普遍实施，并取得了预期效果。又一个等待我们去揭开谜团。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_8"
+msgstr ""
+"今天完成了微光电视摄像机的安装。这项科技令人惊叹，在几乎全黑的环境下也能精准识别目标，成像清晰度远超我此前接触过的任何装备。\n"
+"\n"
+"我们基于克洛诺斯计划中发现的光学监控系统示意图，成功制作出了装备原型机。这些设计图很可能来源于\"病人\"的构思...我甚至不敢想象，莫兰蒂究竟用了什么手段，从他们脑中\"提取\"出这些概念。\n"
+"\n"
+"我真心希望他还活着。这样我们才有机会亲手将他绳之以法。正义终将降临。"
+
+msgid "detail/descr/historical/s3_t8_vehElement_9"
+msgstr ""
+"红外探照灯。一项比较成熟的科技。我以前用过这些装备。它能显著提高在黑暗中捕获目标的能力。而在黑暗中工作正是我最享受的。\n"
+"\n"
+"我们发现了1944年初装备从晨光诊所运出的证据。文件提到，\"专用货箱\"在武装护送下转移。\n"
+"\n"
+"这意味着该诊所不仅是\"提取科学概念\"的场所。他们还在那里制造并装备原型机。看来莫兰蒂明目张胆地隐藏了一个先进设计局。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_1"
+msgstr ""
+"首次记录，我是米罗斯拉夫·科特瓦，不过大伙都叫我\"泰迪\"。终于开始组装我的坦克——\"掠食者\"了！今天完成了炮塔吊装。全焊接结构，轧制装甲，真漂亮！\n"
+"\n"
+"进度全速推进，很快就能有一位新钢铁战友了。\n"
+"\n"
+"但调查似乎陷入了僵局。\n"
+"\n"
+"我们摸清了晨光诊所的底细，眼看就要真相大白，却突然发现44年中期的一场火灾将线索付之一炬。所有知情人，包括病人、守卫、医护人员统统被官方列为失踪。\n"
+"\n"
+"这件事蹊跷得就像着火的鱼市一样腥！哈哈！这笑话不咋地。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_10"
+msgstr ""
+"今天终于开始给坦克喷上涂装了。纯黑色——时尚且威慑力十足，正合我意。有人说黑色更容易暴露，那是他们不懂心理震慑。当敌人看见一辆全黑坦克破雾而出时，瞬间就会僵住。\n"
+"\n"
+"莱妮和工程师团队越发确信克洛诺斯是某种电磁武器。我们发现了巨型电子管蓝图、大功率发电机和复杂冷却系统。\n"
+"\n"
+"只有一点我想不通——如果真是强力电磁炮，为何起\"克洛诺斯\"这么平庸的名字？这件事有点蹊跷。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_11"
+msgstr ""
+"今天为\"掠食者\"加装902型\"楚卡\"系统，黑色猎手简直如虎添翼！如今我能在数秒内隐入烟幕。正如祖父所言: \"聪明的勇士深知何时现身，何时遁形的道理。\"\n"
+"\n"
+"我们已追踪到克洛诺斯设备被运往北海沿岸，但踪迹随后就中断了。 \n"
+"\n"
+"大型运输工具、特种设备、成吨的物资运抵海岸设施后，便...凭空消失。没有任何记录显示它们被运往何处。\n"
+"\n"
+"这位莫雷蒂当真是不留半点蛛丝马迹。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_12"
+msgstr ""
+"今天我们安装了激光测距仪。这项科技太先进了，能以惊人的精度测出目标距离。我的\"掠食者\"现在几乎每天都有新装置上线！\n"
+"\n"
+"说到激光，我们这套测距仪其实用的是克洛诺斯的科技。但技术人员进行了完全重制。原始图纸的比例非常奇怪，仿佛是为某种大型战斗激光武器设计的。\n"
+"\n"
+"我们越挖越深，疑团也越来越多。莫雷蒂当初是在试图打造什么\"毁灭性射线\"吗？听起来像小时候读的科幻小说里的东西...但看到这些克洛诺斯图纸后，如今我相信一切皆有可能。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_13"
+msgstr ""
+"今天我们给火炮安装了全新的炮口制退器。这真是个杰作！它大幅降低了后坐力，让射击变得更加舒适。\n"
+"\n"
+"但这不算什么。我们最近在其中一份克洛诺斯文件里，发现了有关海岸悬崖上的巨型地堡的描述。当然具体位置没写——莫雷蒂可不会送我们这种礼物——但规模本身已经足够惊人。\n"
+"\n"
+"如果尺寸准确，那里足以藏下某种庞然大物...\n"
+"\n"
+"我敢打赌，莫雷蒂就是在那里装配他的\"神秘武器\"。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_14"
+msgstr ""
+"今天我们为坦克准备了可能需要的一切: 牵引缆绳、烟雾弹、深涉水装备，一应俱全。好坦克就像好士兵，必须随时准备好应对各种情况。\n"
+"\n"
+"而我们需要应对的有很多。我们一直在研究北海的地图...\n"
+"\n"
+"莫雷蒂建造的那座地堡就位于北海群岛上。我们强烈怀疑它就在那个M系导弹基地所在的同一座岛上，就是那些雇佣兵占领并发射卫星的地方。\n"
+"\n"
+"难道它就在我们眼皮底下？就在我们正下方某个位置？我们一直就坐在克洛诺斯主地堡的顶上？！"
+
+msgid "detail/descr/historical/s3_t9_vehElement_15"
+msgstr ""
+"\"掠食者\"已经做好战斗准备！我的新钢铁战友全副武装、令人生畏。它灵敏迅捷、装甲坚固，火力强劲，当我把炮管指向敌人时，他们几乎会魂飞魄散。\n"
+"\n"
+"看看那优美的线条和骇人的外形！它将成为敌人梦魇中的常客。\n"
+"\n"
+"我们将经历何种冒险？而我之后又将讲述怎样的故事？\n"
+"\n"
+"狩猎开始！"
+
+msgid "detail/descr/historical/s3_t9_vehElement_2"
+msgstr ""
+"已安装行走机构。这套悬挂系统堪称杰作！行驶将变得非常平稳，我甚至可以慢慢享受咖啡而一滴不洒。当然...这只是个夸张的说法。毕竟这是坦克，总会有些震动。\n"
+"\n"
+"我们的调查也取得新进展。原以为晨光诊所火灾案已了结，但莱妮发现了蹊跷之处——我们建造坦克所使用的克洛诺斯蓝图，竟是在火灾后绘制的。\n"
+"\n"
+"就像侦探小说里写的——剧情愈发扑朔迷离了！"
+
+msgid "detail/descr/historical/s3_t9_vehElement_3"
+msgstr ""
+"终于装配好车长塔了！它简直太优秀了——配备一整套坦克手梦寐以求的观察设备。我最喜欢的是TKN-1夜视系统——让我像猫一样，在黑暗中看得清清楚楚。\n"
+"\n"
+"我们对整个克洛诺斯事件有了新推测: 要么病患的研究成果在火灾前就被转移到了别处，要么...有趣的部分来了...这些\"疯狂科学家\"只是个幌子？如果这些科技的真正来源根本不是他们呢？"
+
+msgid "detail/descr/historical/s3_t9_vehElement_4"
+msgstr ""
+"我们今天在炮塔周围安装了附加装甲——5块采用聚氨酯夹层与钢板复合结构的强力装甲模块，对破甲弹防护效果极佳，实战表现令人期待！\n"
+"\n"
+"与此同时，事实证明莱妮的推测完全正确。所谓的\"莫兰蒂医生\"根本不存在，不过是幕后黑手亚历山德罗·莫雷蒂使用的数十个化名之一。\n"
+"\n"
+"一个人为何需要这么多名字？难道是选择困难症发作？"
+
+msgid "detail/descr/historical/s3_t9_vehElement_5"
+msgstr ""
+"今天主炮安装完毕，我已迫不及待想要试射！整辆坦克随着开火震颤的瞬间...那种感觉简直无与伦比。\n"
+"\n"
+"这位莫雷蒂果然不简单。他不仅是工程师，更是建造秘密设施的专家。然后在1943年，他突然从所有官方记录中消失了。\n"
+"\n"
+"你猜怎么着？就在同一年，所谓的\"莫兰蒂医生\"神秘登场！而在晨光诊所发生火灾后，我们名单上的那些化名，开始频繁出现在提货单及其他文件中。"
+
+msgid "detail/descr/historical/s3_t9_vehElement_6"
+msgstr ""
+"今天实装主动防御系统！该装备堪称革命——它能在毫秒间侦测到来袭炮弹。简直不可思议！\n"
+"\n"
+"另外，关于晨光诊所，我们有了一些意外发现。它并非传言中的监狱或刑讯机构，而是一个伪装周密的研究中心网络节点。\n"
+"\n"
+"看来莫雷蒂这家伙梦想成为惊悚小说家——如此煞费苦心营造假象，伪造报告里的细节更是天衣无缝。真是可惜了这份\"才华\"！"
+
+msgid "detail/descr/historical/s3_t9_vehElement_7"
+msgstr ""
+"今天我们在炮管上安装了热护套。这是个好装备，能防止天气条件影响炮管精度。\n"
+"\n"
+"同时莫雷蒂不断给我们出新难题。我们追踪了与所有化名相关的供应链。数十家工厂参与了克洛诺斯计划——电子制造商、化工厂、纺织厂...蹊跷的是，还运输了大量琥珀。\n"
+"\n"
+"他们到底需要琥珀做什么？他从哪搞来这么多？莫雷蒂难不成盗取了琥珀宫？"
+
+msgid "detail/descr/historical/s3_t9_vehElement_8"
+msgstr ""
+"今天我们安装的是\"Oplot-MO\"主动防护系统，这套系统确实厉害！其雷达可探测以600-800米/秒飞行的反坦克导弹，并自动激活6管防空炮，直接在空中将其拦截。克洛诺斯有竞争对手了，因为我们也拥有自己的尖端科技！\n"
+"\n"
+"这个莫雷蒂...完全把我搞糊涂了。我本来差点相信他那套疯狂科学家的讲法，说那些蓝图都是他们画的。现在我们却发现他在搞大动作。\n"
+"\n"
+"但他是从哪里弄来这些图纸和科技的？"
+
+msgid "detail/descr/historical/s3_t9_vehElement_9"
+msgstr ""
+"我的\"掠食者\"即将完工。伙计，我们很快就要展开堪比动作大片的冒险了！\n"
+"\n"
+"我也想拍一部关于克洛诺斯的电影。但票只卖给拥有5级安全许可的人——专属观众。\n"
+"\n"
+"可惜了，那绝对会是一场视觉盛宴。在克洛诺斯的蓝图中，我们发现了一些可疑的东西——指向某种\"神秘武器\"的组件方案。没人能搞清楚那是什么。\n"
+"\n"
+"但无论是何物，它需要的电力足以供应整座城市。"
+
+msgid "detail/name/s3_t10_vehElement_1"
+msgstr "炮塔"
+
+msgid "detail/name/s3_t10_vehElement_10"
+msgstr "侧裙板"
+
+msgid "detail/name/s3_t10_vehElement_11"
+msgstr "电视摄像机和涂装"
+
+msgid "detail/name/s3_t10_vehElement_12"
+msgstr "烟雾弹发射器"
+
+msgid "detail/name/s3_t10_vehElement_13"
+msgstr "炮口制退器"
+
+msgid "detail/name/s3_t10_vehElement_14"
+msgstr "土工作业工具"
+
+msgid "detail/name/s3_t10_vehElement_15"
+msgstr "履带"
+
+msgid "detail/name/s3_t10_vehElement_2"
+msgstr "悬挂装置"
+
+msgid "detail/name/s3_t10_vehElement_3"
+msgstr "负重轮"
+
+msgid "detail/name/s3_t10_vehElement_4"
+msgstr "主潜望镜"
+
+msgid "detail/name/s3_t10_vehElement_5"
+msgstr "乘员潜望镜"
+
+msgid "detail/name/s3_t10_vehElement_6"
+msgstr "机枪"
+
+msgid "detail/name/s3_t10_vehElement_7"
+msgstr "主炮"
+
+msgid "detail/name/s3_t10_vehElement_8"
+msgstr "挡泥板"
+
+msgid "detail/name/s3_t10_vehElement_9"
+msgstr "红外探照灯"
+
+msgid "detail/name/s3_t8_vehElement_1"
+msgstr "间隙装甲"
+
+msgid "detail/name/s3_t8_vehElement_10"
+msgstr "雷达"
+
+msgid "detail/name/s3_t8_vehElement_11"
+msgstr "灯光系统"
+
+msgid "detail/name/s3_t8_vehElement_12"
+msgstr "烟雾弹发射器"
+
+msgid "detail/name/s3_t8_vehElement_13"
+msgstr "土工作业工具"
+
+msgid "detail/name/s3_t8_vehElement_14"
+msgstr "伪装网"
+
+msgid "detail/name/s3_t8_vehElement_15"
+msgstr "履带"
+
+msgid "detail/name/s3_t8_vehElement_2"
+msgstr "舱口和观察镜"
+
+msgid "detail/name/s3_t8_vehElement_3"
+msgstr "悬挂装置"
+
+msgid "detail/name/s3_t8_vehElement_4"
+msgstr "负重轮"
+
+msgid "detail/name/s3_t8_vehElement_5"
+msgstr "防尘板"
+
+msgid "detail/name/s3_t8_vehElement_6"
+msgstr "炮口制退器"
+
+msgid "detail/name/s3_t8_vehElement_7"
+msgstr "基础涂装"
+
+msgid "detail/name/s3_t8_vehElement_8"
+msgstr "微光电视摄像机"
+
+msgid "detail/name/s3_t8_vehElement_9"
+msgstr "红外探照灯"
+
+msgid "detail/name/s3_t9_vehElement_1"
+msgstr "炮塔"
+
+msgid "detail/name/s3_t9_vehElement_10"
+msgstr "车头灯和涂装"
+
+msgid "detail/name/s3_t9_vehElement_11"
+msgstr "902型\"乌云\"系统"
+
+msgid "detail/name/s3_t9_vehElement_12"
+msgstr "激光测距仪"
+
+msgid "detail/name/s3_t9_vehElement_13"
+msgstr "炮口制退器"
+
+msgid "detail/name/s3_t9_vehElement_14"
+msgstr "工具与间隙装甲"
+
+msgid "detail/name/s3_t9_vehElement_15"
+msgstr "履带"
+
+msgid "detail/name/s3_t9_vehElement_2"
+msgstr "悬挂装置"
+
+msgid "detail/name/s3_t9_vehElement_3"
+msgstr "车长塔"
+
+msgid "detail/name/s3_t9_vehElement_4"
+msgstr "附加装甲"
+
+msgid "detail/name/s3_t9_vehElement_5"
+msgstr "主炮"
+
+msgid "detail/name/s3_t9_vehElement_6"
+msgstr "主动防护系统"
+
+msgid "detail/name/s3_t9_vehElement_7"
+msgstr "炮管热护套"
+
+msgid "detail/name/s3_t9_vehElement_8"
+msgstr "\"Oplot-MO\"主动防护"
+
+msgid "detail/name/s3_t9_vehElement_9"
+msgstr "挡泥板"
+
+msgid "main/additionalMission/text/completed"
+msgstr "已获得额外个人任务点数。"
+
+msgid "main/additionalMission/text/daily"
+msgstr "完成日常任务即可获得额外个人任务点数。"
+
+msgid "main/additionalMission/text/weekly"
+msgstr "完成每周任务即可获得额外个人任务点数。"
+
+msgid "main/additionalMission/title/daily"
+msgstr "日常任务"
+
+msgid "main/additionalMission/title/weekly"
+msgstr "每周任务"
+
+msgid "main/assembling/component"
+msgstr "部件"
+
+msgid "main/chain/Assault/name"
+msgstr "先锋"
+
+msgid "main/chain/Sniper/name"
+msgstr "伏击"
+
+msgid "main/chain/Support/name"
+msgstr "协助"
+
+msgid "main/complete/button"
+msgstr "前往作战行动"
+
+msgid "main/complete/description/campaignFinished"
+msgstr "已完成\"{{campaignName}}\"个人任务！已获得全部奖励。"
+
+msgid "main/complete/description/notAllCompleted"
+msgstr "已完美完成\"{{currentOperationName}}\"作战行动！\"{{nextOperationName}}\"作战行动现已开放。"
+
+msgid "main/complete/description/notAllCompletedWithHonor"
+msgstr ""
+"已完美完成\"{{currentOperationName}}\"作战行动{{@ "
+"split}}！{{/}}您仍可在\"{{nextOperationName}}\"作战行动中优化结果。"
+
+msgid "main/complete/title"
+msgstr "恭喜！"
+
+msgid "main/menuItem/state/active"
+msgstr "已激活"
+
+msgid "main/menuItem/state/available"
+msgstr "已开放"
+
+msgid "main/menuItem/state/completed"
+msgstr "已获得坦克"
+
+msgid "main/menuItem/state/completedWithHonors"
+msgstr "完美完成"
+
+msgid "main/menuItem/state/unavailable"
+msgstr "未开放"
+
+msgid "main/menuItem/tooltip/videoIntro"
+msgstr "观看该坦克的介绍视频"
+
+msgid "main/mission/counter"
+msgstr "{{currentValue}}{{@ colorLegacy 'ede6d97f'}}/{{maxValue}}{{/}}"
+
+msgid "main/mission/mission/quest/separator"
+msgstr "或"
+
+msgid "main/mission/subtitle"
+msgstr "已激活的任务"
+
+msgid "main/mission/text/alert"
+msgstr "任务暂不开放，无法完成。请稍后再试。"
+
+msgid "main/mission/text/completed"
+msgstr ""
+"已完成全部\n"
+"{{missionType}}任务。"
+
+msgid "main/missions/button/tooltip/toActiveMission"
+msgstr "点击前往当前已激活的任务。"
+
+msgid "main/missions/card/tooltip/done"
+msgstr "已完成任务，并获得奖励。"
+
+msgid "main/missions/card/tooltip/locked"
+msgstr "完成前置任务即可解锁该任务。系列任务中的每个任务都须依次完成。"
+
+msgid "main/missions/category/description"
+msgstr ""
+"\"{{operationName}}\"作战行动中的{{category}}任务，可使用下列类型的{{@ colorLegacy "
+"'ede6d9'}}{{minLevel}}-{{maxLevel}}{{/}}级坦克依次完成:"
+
+msgid "main/missions/category/vehicles/assault"
+msgstr "{{breakthrough}}、{{assault}}、{{universal}}角色的{{HT}}、{{MT}}、{{TD}}。"
+
+msgid "main/missions/category/vehicles/sniper"
+msgstr "{{sniper}}、{{support}}角色的{{HT}}、{{MT}}、{{TD}}。"
+
+msgid "main/missions/category/vehicles/support"
+msgstr "{{LT}}、{{SPG}}(不分角色)。"
+
+msgid "main/operation/button/available/"
+msgstr "激活"
+
+msgid "main/operation/button/completed"
+msgstr "优化结果"
+
+msgid "main/operation/button/nextOperationAvailable"
+msgstr "前往作战行动"
+
+msgid "main/operation/button/paused"
+msgstr "继续作战行动"
+
+msgid "main/operation/button/precedingOperationNotCompleted"
+msgstr "前往作战行动"
+
+msgid "main/operation/status/available"
+msgstr "\"{{currentOperationName}}\"作战行动已开放！"
+
+msgid "main/operation/status/completed"
+msgstr "已完成\"{{currentOperationName}}\"作战行动！您可完美完成该作战行动，获取更棒奖励。"
+
+msgid "main/operation/status/nextOperationAvailable"
+msgstr "已完成\"{{currentOperationName}}\"作战行动！\"{{nextOperationName}}\"作战行动现已开放。"
+
+msgid "main/operation/status/paused"
+msgstr "\"{{currentOperationName}}\"作战行动已暂停。"
+
+msgid "main/operation/status/precedingOperationNotCompleted"
+msgstr "作战行动未开放: 完成前置作战行动。"
+
+msgid "main/operation/status/requiresVehicle"
+msgstr "作战行动未开放: 需要{{requiredVehicleLevel}}级或更高等级的坦克。"
+
+msgid "main/operation/status/vehicleIsInBattle"
+msgstr "坦克在战斗中时，您无法切换个人任务或作战行动。"
+
+msgid "main/progression/button"
+msgstr "安装"
+
+msgid "main/progression/counter/zero"
+msgstr "0"
+
+msgid "main/progression/detail/status/active"
+msgstr ""
+"{{detailName}}: {{earnedPoint}}{{@ colorLegacy "
+"'ede6d97f'}}/{{maxPoint}}{{/}}{{icon}}"
+
+msgid "main/progression/detailNumber"
+msgstr "{{number}}"
+
+msgid "main/progression/mountButton/active"
+msgstr "点击将该部件安装到坦克上。"
+
+msgid "main/progression/mountButton/disable"
+msgstr "请先安装前置部件。"
+
+msgid "main/progression/reward/previewButton"
+msgstr "前往车库查看"
+
+msgid "main/progression/reward/status/inProgress/campaign"
+msgstr ""
+"已完美完成作战行动: {{completedTasks}}{{@ colorLegacy "
+"'ede6d97f'}}/{{tasksNumber}}{{/}}"
+
+msgid "main/progression/reward/status/inProgress/operation"
+msgstr ""
+"已完成任务: {{completedTasks}}{{@ colorLegacy 'ede6d97f'}}/{{tasksNumber}}{{/}}"
+
+msgid "main/progression/reward/status/received"
+msgstr "已获得"
+
+msgid "main/progression/reward/title/campaign"
+msgstr "完美完成个人任务"
+
+msgid "main/progression/reward/title/main"
+msgstr "主要奖励"
+
+msgid "main/progression/reward/title/operation"
+msgstr "完美完成作战行动"
+
+msgid "main/progression/tooltip/detail/notDone"
+msgstr "安装完成后即可查看该部件。"
+
+msgid "main/progression/tooltip/rewards/campaign"
+msgstr "完成所有3个个人任务作战行动中的全部任务，即可获得这些奖励。"
+
+msgid "main/progression/tooltip/rewards/main"
+msgstr "完成进度，安装最后的部件，即可获得主要奖励和坦克。"
+
+msgid "main/progression/tooltip/rewards/operation"
+msgstr "完成全部作战行动任务，即可获得这些奖励。"
+
+msgid "main/progression/tooltip/toActiveStage"
+msgstr "点击前往当前阶段。"
+
+msgid "questStatus/topLabelAlreadyUsedVehicle"
+msgstr "未开放: 您已使用所选坦克达成条件。请选择其他坦克。"
+
+msgid "questStatus/topLabelCompleted"
+msgstr "已完成"
+
+msgid "questStatus/topLabelCompletedForBattle"
+msgstr "当前战斗已完成"
+
+msgid "rewards/additional"
+msgstr "同时获得:"
+
+msgid "rewards/buttons/close"
+msgstr "关闭"
+
+msgid "rewards/buttons/confirm"
+msgstr "收到！"
+
+msgid "rewards/buttons/goToOperation"
+msgstr "前往作战行动"
+
+msgid "rewards/buttons/goToVehicle"
+msgstr "前往车库查看"
+
+msgid "rewards/operationUnlocked"
+msgstr "\"{{name}}\"作战行动已开放"
+
+msgid "rewards/subTitle/campaignWithHonors"
+msgstr "个人任务: {{name}}"
+
+msgid "rewards/subTitle/operationWithHonors"
+msgstr "作战行动: {{name}}"
+
+msgid "rewards/subTitle/vehiclePart"
+msgstr "作战行动: {{name}}"
+
+msgid "rewards/title/campaignWithHonors"
+msgstr "完美完成！"
+
+msgid "rewards/title/operation"
+msgstr "已完成作战行动: {{name}}！"
+
+msgid "rewards/title/operationWithHonors"
+msgstr "完美完成！"
+
+msgid "rewards/title/vehiclePart"
+msgstr "可安装部件"
+
+msgid "tooltip/assembling/viewAnimation"
+msgstr "点击观看安装动画。"
+
+msgid "tooltip/assembling/zoomOut"
+msgstr "点击隐藏描述。"
+
+msgid "tooltip/missionProgress/completed"
+msgstr "已完成: {{completed}}{{@class $totalClass}}/{{total}}{{/}}"
+
+msgid "tooltip/missionProgress/description"
+msgstr "若要完成任务，您必须使用符合要求的不同坦克多次达成其条件。"
+
+msgid "tooltip/missionProgress/footer"
+msgstr "一旦坦克达成条件，在任务完成之前，该坦克不能再次用于该任务。"
+
+msgid "tooltip/missionProgress/title"
+msgstr "使用不同坦克完成"
+
+msgid "tooltip/missionProgress/unknownVehicle"
+msgstr "？"
+
+msgid "tooltip/missionsCategory/description/assault"
+msgstr "适合能够在战场上占据主动地位的前线坦克。"
+
+msgid "tooltip/missionsCategory/description/sniper"
+msgstr "适合从二线支援前线阵地的坦克。"
+
+msgid "tooltip/missionsCategory/description/support"
+msgstr "适合提供空中火力支援和侦察敌方阵地情报的坦克。"
+
+msgid "tooltip/missionsCategory/footer"
+msgstr ""
+"{{@ split}}{{@ colorLegacy 'b2afab'}}\"{{operationName}}\"{{/}}作战行动任务只能使用{{@"
+" colorLegacy 'b2afab'}}{{minLevel}}-{{maxLevel}}{{/}}级坦克来完成。"
+
+msgid "tooltip/missionsCategory/innerBlock/description/assault"
+msgstr "\"先锋\"任务可使用以下坦克依次完成:"
+
+msgid "tooltip/missionsCategory/innerBlock/description/sniper"
+msgstr "\"伏击\"任务可使用以下坦克依次完成:"
+
+msgid "tooltip/missionsCategory/innerBlock/description/support"
+msgstr "\"协助\"任务可使用以下坦克依次完成:"
+
+msgid "tooltip/missionsCategory/innerBlock/noRoles"
+msgstr "不分角色的坦克类型:"
+
+msgid "tooltip/missionsCategory/innerBlock/vehiclesTypes"
+msgstr "坦克类型:"
+
+msgid "tooltip/missionsCategory/innerBlock/withRoles"
+msgstr "所属角色:"
+
+msgid "tooltip/personalMissionsPoints/footer"
+msgstr "请记得追踪已完成的阶段，并在推动阶段进度的同时安装坦克组件。"
+
+msgid "tooltip/personalMissionsPoints/innerBlock/bulletItem1"
+msgstr "完成\"第三区\"个人任务中的任务，即可获得个人任务点数。"
+
+msgid "tooltip/personalMissionsPoints/innerBlock/bulletItem2"
+msgstr "您还可以通过完成日常和每周任务来获取个人任务点数。"
+
+msgid "tooltip/personalMissionsPoints/innerBlock/description"
+msgstr "在\"第三区\"个人任务中，推动已激活作战行动的进度。"
+
+msgid "tooltip/personalMissionsPoints/innerBlock/subTitle"
+msgstr "如何获取"
+
+msgid "tooltip/personalMissionsPoints/innerBlock/title"
+msgstr "个人任务点数"
+
+msgid "tooltip/progression/description"
+msgstr "推动阶段进度，收集部件，并将其安装在您的坦克上。一旦集齐所有部件，您将获得作战行动坦克作为奖励。您需要个人任务点数才能推动进度并完成阶段。"
+
+msgid "tooltip/progression/footer"
+msgstr "请记得追踪已完成的阶段，并在推动阶段进度的同时安装坦克部件。"
+
+msgid "tooltip/progression/innerBlock/bulletItem1"
+msgstr "完成\"第三区\"个人任务中的任务，即可获得个人任务点数。"
+
+msgid "tooltip/progression/innerBlock/bulletItem2"
+msgstr "您还可以通过完成日常和每周任务来获取个人任务点数。"
+
+msgid "tooltip/progression/innerBlock/title"
+msgstr "如何获取个人任务点数"
+
+msgid "tooltip/progression/title"
+msgstr "坦克装配进度"

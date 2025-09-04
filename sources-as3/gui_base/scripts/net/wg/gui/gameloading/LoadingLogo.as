@@ -14,7 +14,7 @@ package net.wg.gui.gameloading
       
       private static const LOGO_WIDTH:uint = 490;
       
-      private static const LOGO_HEIGHT:uint = 230;
+      private static const LOGO_HEIGHT:uint = 320;
       
       private static const LOGO_X:int = -248;
       

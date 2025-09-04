@@ -4,6 +4,7 @@ package net.wg.gui.lobby.sessionStats
    import flash.display.MovieClip;
    import flash.events.Event;
    import flash.events.MouseEvent;
+   import flash.geom.Rectangle;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.TEXT_ALIGN;
    import net.wg.gui.components.common.containers.TiledLayout;
@@ -166,7 +167,7 @@ package net.wg.gui.lobby.sessionStats
          return this;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          if(_height == param2 && _width == param1)
          {

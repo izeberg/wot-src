@@ -46,9 +46,6 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T50/51"
 
-msgid "Chassis_Cz04_T50_51_FEP"
-msgstr "PTV-51"
-
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34-85"
 
@@ -133,6 +130,9 @@ msgstr "索提戈"
 msgid "Chassis_Cz21_Vz_60S"
 msgstr "Vz.60 S"
 
+msgid "Chassis_Cz21_Vz_60S_Dravec"
+msgstr "Vz.60 S \"掠食者\""
+
 msgid "Chassis_Cz23_Skoda_T_17"
 msgstr "斯柯达 T17 I型"
 
@@ -216,16 +216,6 @@ msgstr "LT vz.35"
 
 msgid "Cz04_T50_51"
 msgstr "TVP T50"
-
-msgid "Cz04_T50_51_FEP23"
-msgstr "PTV-51"
-
-msgid "Cz04_T50_51_FEP23_descr"
-msgstr ""
-"用于掩护装甲部队发起进攻的坦克项目，设计师认为它能够在打击敌方轻装甲目标和步兵单位的同时，防御敌方火箭助推榴弹和反坦克导弹的攻击。该项目仅存在于蓝图中。"
-
-msgid "Cz04_T50_51_FEP23_short"
-msgstr "PTV-51"
 
 msgid "Cz04_T50_51_descr"
 msgstr "?empty?"
@@ -445,7 +435,7 @@ msgstr "较高的平均每分钟损伤以及良好的穿透力"
 
 msgid "Cz20_ShPTK_TVP_100_mm_descr"
 msgstr ""
-"TVP(通用坦克)的研发始于1945年。最初，该坦克的研发由军事技术学院(VTÚ)的专家负责，后由斯柯达公司接替。此后受军方要求，斯柯达开始研制以TVP底盘为基础的自行火炮(包括了自行反坦克炮)。其中一个项目将100毫米BS-3火炮安装到了可全向旋转的炮塔中，并采用顶部敞开的设计。根据设计指标，该坦克具有良好的机动性，但未制造原型车。"
+"TVP(通用坦克)的研发始于1945年。最初，该坦克的研发由军事技术学院(VTU)的专家负责，后由斯柯达公司接替。此后受军方要求，斯柯达开始研制以TVP底盘为基础的自行火炮(包括了自行反坦克炮)。其中一个项目将100毫米BS-3火炮安装到了可全向旋转的炮塔中，并采用顶部敞开的设计。根据设计指标，该坦克具有良好的机动性，但未制造原型车。"
 
 msgid "Cz20_ShPTK_TVP_100_mm_long_special"
 msgstr ""
@@ -459,6 +449,26 @@ msgstr "较高的平均每分钟损伤以及良好的穿透力"
 
 msgid "Cz21_Vz_60S"
 msgstr "Vz.60 S"
+
+msgid "Cz21_Vz_60S_Dravec"
+msgstr "Vz.60 S \"掠食者\""
+
+msgid "Cz21_Vz_60S_Dravec_descr"
+msgstr ""
+"尽管T-55坦克已投入量产，但J系工程师仍持续研发有潜力的新型坦克。量产型T-55亟需强化装甲防护，但单纯增加钢板厚度并不能解决问题。因此，Vz.60 "
+"S \"掠食者\"计划的核心目标就是提高装甲防御与火力。该坦克采用了间隙装甲和\"屏障-"
+"MO\"主动防护系统。为增强火力，坦克配备了\"涅瓦\"KTD-1型激光测距仪，炮管也加装了热护套。为提高战场隐蔽性，炮塔上安装了902型\"乌云\"烟雾弹发射系统。后来，该计划的多项技术方案被应用于T-55AM1和T-55AM2改进型。"
+
+msgid "Cz21_Vz_60S_Dravec_long_special"
+msgstr ""
+"Vz.60 S "
+"\"掠食者\"是一辆X级重型坦克。其主要特点是可靠的防护——倾斜度良好且厚实的炮塔和车体装甲，再加上附加间隙装甲。尽管火力强劲，但它仍拥有相对于重型坦克来说良好的机动性。它装备一门性能均衡122毫米火炮，几乎没有明显短板。"
+
+msgid "Cz21_Vz_60S_Dravec_short"
+msgstr "\"掠食者\""
+
+msgid "Cz21_Vz_60S_Dravec_short_special"
+msgstr "出色的装甲，优秀的火炮手感"
 
 msgid "Cz21_Vz_60S_descr"
 msgstr ""
@@ -704,9 +714,6 @@ msgstr "HE vz.57"
 msgid "Praga_AXK"
 msgstr "普拉加 AXK"
 
-msgid "Praga_AXK_FEP"
-msgstr "普拉加 AXK M"
-
 msgid "Praga_NR"
 msgstr "普拉加 NR"
 
@@ -758,9 +765,6 @@ msgstr "RM-31T"
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "RM-31T(GW)"
 
-msgid "Radiostanice_RM_31T_A_FEP"
-msgstr "RM-31T M"
-
 msgid "Radiostanice_RM_31T_TBT"
 msgstr "RM-31T"
 
@@ -803,6 +807,9 @@ msgstr "斯柯达 16 ADH 134"
 msgid "Skoda_16_ADH_140"
 msgstr "斯柯达 16 ADH 140"
 
+msgid "Skoda_16_ADH_140A_TVP"
+msgstr "斯柯达 16 ADH 140A (TVP)"
+
 msgid "Skoda_16_ADH_140_A"
 msgstr "斯柯达 16 ADH 140A"
 
@@ -836,11 +843,14 @@ msgstr "斯柯达 T-11/2"
 msgid "Skoda_V12_16_2_liter"
 msgstr "斯柯达 V12 16.2升"
 
-msgid "Skoda_V12_19_8_liter_450"
-msgstr "斯柯达 V12 19.8升(450马力)"
+msgid "Skoda_V12_19_8_liter_24"
+msgstr "斯柯达V12 19.8升 (24)"
 
-msgid "Skoda_V12_19_8_liter_500"
-msgstr "斯柯达 V12 19.8升(500马力)"
+msgid "Skoda_V12_19_8_liter_druhy_model"
+msgstr "斯柯达V12 19.8升 (II型)"
+
+msgid "Skoda_V12_19_8_liter_treti_model"
+msgstr "斯柯达V12 19.8升 (III型)"
 
 msgid "Skoda_V16_AHK_2"
 msgstr "斯柯达 V16 AHK-2"
@@ -874,9 +884,6 @@ msgstr "LT vz.35"
 
 msgid "Turret_1_Cz04_T50_51"
 msgstr "TVP T50/51"
-
-msgid "Turret_1_Cz04_T50_51_FEP"
-msgstr "PTV-51"
 
 msgid "Turret_1_Cz05_T34_100"
 msgstr "T-34-100 II型"
@@ -934,6 +941,9 @@ msgstr "索提戈"
 
 msgid "Turret_1_Cz21_Vz_60S"
 msgstr "Vz.60 S"
+
+msgid "Turret_1_Cz21_Vz_60S_Dravec"
+msgstr "Vz.60 S \"掠食者\""
 
 msgid "Turret_1_Cz23_Skoda_T_17"
 msgstr "斯柯达 T17 I型"
@@ -1052,23 +1062,41 @@ msgstr "100mm A20炮"
 msgid "_100mm_AK1"
 msgstr "100mm AK1炮"
 
+msgid "_100mm_AK1_50_51"
+msgstr "100mm AK1炮 (50/51)"
+
 msgid "_100mm_BS_3"
 msgstr "100mm BS-3炮"
 
 msgid "_100mm_JOF"
 msgstr "JOF"
 
+msgid "_100mm_JOF_T_34"
+msgstr "JOF (T-34)"
+
 msgid "_100mm_JPSv"
 msgstr "JPSv"
 
+msgid "_100mm_JPSv_T_34"
+msgstr "JPSv (T-34)"
+
 msgid "_100mm_JPrSv"
 msgstr "JPrSv"
+
+msgid "_100mm_JPrSv_T_34"
+msgstr "JPrSv (T-34)"
 
 msgid "_100mm_Narazovy_vz_49"
 msgstr "HE vz.49"
 
 msgid "_100mm_Narazovy_vz_50"
 msgstr "HE vz.50"
+
+msgid "_100mm_Narazovy_vz_50_51"
+msgstr "HE vz.50/51"
+
+msgid "_100mm_Narazovy_vz_50_TVP"
+msgstr "HE vz.50 (TVP)"
 
 msgid "_100mm_Narazovy_vz_62"
 msgstr "HE vz.62"
@@ -1078,6 +1106,9 @@ msgstr "HEAT S 53"
 
 msgid "_100mm_Prupalny_vz_50"
 msgstr "HEAT vz.50"
+
+msgid "_100mm_Prupalny_vz_50_51"
+msgstr "HEAT vz.50/51"
 
 msgid "_100mm_Prupalny_vz_62"
 msgstr "HEAT vz.62"
@@ -1093,6 +1124,9 @@ msgstr "APCR vz.49"
 
 msgid "_100mm_Prurazny_vz_50"
 msgstr "APCR vz.50"
+
+msgid "_100mm_Prurazny_vz_50_51"
+msgstr "AP vz.50/51"
 
 msgid "_100mm_Prurazny_vz_62"
 msgstr "AP vz.62"
@@ -1113,6 +1147,42 @@ msgstr "HE"
 
 msgid "_105mm_Narazovy_14_48"
 msgstr "HE 14-48"
+
+msgid "_105mm_Narazovy_14_48_1000"
+msgstr "HE 14-48 (1000)"
+
+msgid "_105mm_Narazovy_14_48_44"
+msgstr "HE 14-48 (44)"
+
+msgid "_105mm_Narazovy_A"
+msgstr "HE (A)"
+
+msgid "_105mm_Narazovy_TVP"
+msgstr "HE (TVP)"
+
+msgid "_105mm_Vz_39N_OPG_A"
+msgstr "Vz.39N OPG (A)"
+
+msgid "_105mm_Vz_39N_OPG_TVP"
+msgstr "Vz.39N OPG (TVP)"
+
+msgid "_105mm_Vz_39N_VM_1000"
+msgstr "Vz.39N VM (1000)"
+
+msgid "_105mm_Vz_39N_VM_44"
+msgstr "Vz.39N VM (44)"
+
+msgid "_105mm_Vz_42N_OPG_A"
+msgstr "Vz.42N OPG (A)"
+
+msgid "_105mm_Vz_42N_OPG_TVP"
+msgstr "Vz.42N OPG (TVP)"
+
+msgid "_105mm_Vz_42N_VM_1000"
+msgstr "Vz.42N VM (1000)"
+
+msgid "_105mm_Vz_42N_VM_44"
+msgstr "Vz.42N VM (44)"
 
 msgid "_105mm_dvojkanon_vz_40N"
 msgstr "105mm vz.40N双管炮"
@@ -1138,6 +1208,9 @@ msgstr "Vz.39N VM"
 msgid "_105mm_vz_40N"
 msgstr "105mm vz.40N炮"
 
+msgid "_105mm_vz_40N_1000"
+msgstr "105mm vz.40N (1000)"
+
 msgid "_105mm_vz_42N_OPG"
 msgstr "Vz.42N OPG"
 
@@ -1162,6 +1235,9 @@ msgstr "HE vz.48"
 msgid "_122mm_Narazovy_vz_48_60"
 msgstr "HE 48-60"
 
+msgid "_122mm_Narazovy_vz_48_A"
+msgstr "HE vz.48 (A)"
+
 msgid "_122mm_Narazovy_vz_52"
 msgstr "HE vz.52"
 
@@ -1170,6 +1246,12 @@ msgstr "AP vz.48"
 
 msgid "_122mm_Prurazny_vz_48_60"
 msgstr "AP 48-60"
+
+msgid "_122mm_Prurazny_vz_48_A"
+msgstr "AP vz.48 (A)"
+
+msgid "_122mm_Prurazny_vz_50_A_s_oc_jadrem"
+msgstr "APCR vz.50"
 
 msgid "_122mm_Prurazny_vz_50_s_oc_jadrem"
 msgstr "APCR vz.50"
@@ -1213,6 +1295,12 @@ msgstr "HE vz.57"
 msgid "_130mm_Narazovy_vz_51"
 msgstr "HE vz.51"
 
+msgid "_130mm_Narazovy_vz_51_54"
+msgstr "HE vz.51/54"
+
+msgid "_130mm_Narazovy_vz_51_A"
+msgstr "HE vz.51 (A)"
+
 msgid "_130mm_Narazovy_vz_55"
 msgstr "HE vz.51"
 
@@ -1231,8 +1319,20 @@ msgstr "APCR vz.57"
 msgid "_130mm_Prurazny_vz_51"
 msgstr "AP vz.51"
 
+msgid "_130mm_Prurazny_vz_54_55"
+msgstr "AP vz.54/55"
+
+msgid "_130mm_Prurazny_vz_54_55_s_oc_jadrem"
+msgstr "APCR vz.54/55"
+
 msgid "_130mm_Prurazny_vz_55"
 msgstr "AP vz.55"
+
+msgid "_130mm_Prurazny_vz_55_A"
+msgstr "AP vz.55 (A)"
+
+msgid "_130mm_Prurazny_vz_55_A_s_oc_jadrem"
+msgstr "APCR vz.55"
 
 msgid "_130mm_Prurazny_vz_55_s_oc_jadrem"
 msgstr "APCR vz.55"
@@ -1309,6 +1409,12 @@ msgstr "HE vz.28"
 msgid "_37mm_Narazovy_vz_34"
 msgstr "HE vz.34"
 
+msgid "_37mm_Narazovy_vz_34_A3"
+msgstr "HE vz.34 (A3)"
+
+msgid "_37mm_Narazovy_vz_34_A8"
+msgstr "HE vz.34 (A8)"
+
 msgid "_37mm_Narazovy_vz_47"
 msgstr "HE vz.47"
 
@@ -1324,8 +1430,14 @@ msgstr "AP vz.28"
 msgid "_37mm_Prurazny_vz_34"
 msgstr "AP vz.34"
 
+msgid "_37mm_Prurazny_vz_34_A3"
+msgstr "AP vz.34 (A3)"
+
 msgid "_37mm_Prurazny_vz_37"
 msgstr "AP vz.37"
+
+msgid "_37mm_Prurazny_vz_40_A3_s_oc_jadrem"
+msgstr "APCR vz.40(A3钢芯)"
 
 msgid "_37mm_Prurazny_vz_40_s_oc_jadrem"
 msgstr "APCR vz.40(钢芯)"
@@ -1357,6 +1469,9 @@ msgstr "HE"
 msgid "_47mm_Narazovy_vz_36"
 msgstr "HE vz.36"
 
+msgid "_47mm_Narazovy_vz_36_A11"
+msgstr "HE vz.36 (A11)"
+
 msgid "_47mm_Prurazny"
 msgstr "AP"
 
@@ -1365,6 +1480,12 @@ msgstr "APCR(钢芯)"
 
 msgid "_47mm_Prurazny_vz_36"
 msgstr "AP vz.36"
+
+msgid "_47mm_Prurazny_vz_36_A11"
+msgstr "AP vz.36 (A11)"
+
+msgid "_47mm_Prurazny_vz_40_A11_s_wolf_jadrem"
+msgstr "APCR vz.40(A11钨芯)"
 
 msgid "_47mm_Prurazny_vz_40_s_wolf_jadrem"
 msgstr "APCR vz.40(钨芯)"
@@ -1429,15 +1550,6 @@ msgstr "57mm 535S双管自动炮"
 msgid "_57_mm_automaticky_dvojkanon_535T"
 msgstr "57mm 535T双管自动炮"
 
-msgid "_57mm_BR-281U_FEP"
-msgstr "57mm BR-281"
-
-msgid "_57mm_BR-281_FEP"
-msgstr "57mm BR-281 SP"
-
-msgid "_57mm_C68x2_FEP"
-msgstr "2x57mm C-68炮"
-
 msgid "_5_TD_DBV"
 msgstr "5TD"
 
@@ -1456,11 +1568,38 @@ msgstr "APCR vz.44(钨芯)"
 msgid "_75mm_Narazovy_vz_42"
 msgstr "HE vz.42"
 
+msgid "_75mm_Narazovy_vz_42_A"
+msgstr "HE vz.42 (A)"
+
+msgid "_75mm_Narazovy_vz_42_A13"
+msgstr "HE vz.42 (A13)"
+
+msgid "_75mm_Narazovy_vz_42_A18"
+msgstr "HE vz.42 (A18)"
+
 msgid "_75mm_Narazovy_vz_48"
 msgstr "HE vz.48"
 
 msgid "_75mm_Prurazny_vz_42"
 msgstr "AP vz.42"
+
+msgid "_75mm_Prurazny_vz_42_A"
+msgstr "AP vz.42(A)"
+
+msgid "_75mm_Prurazny_vz_42_A13"
+msgstr "AP vz.42(A13)"
+
+msgid "_75mm_Prurazny_vz_42_A13_s_wolf_jadrem"
+msgstr "APCR vz.42(A13钨芯)"
+
+msgid "_75mm_Prurazny_vz_42_A18"
+msgstr "AP vz.42(A18)"
+
+msgid "_75mm_Prurazny_vz_42_A18_s_wolf_jadrem"
+msgstr "APCR vz.42(A18钨芯)"
+
+msgid "_75mm_Prurazny_vz_42_A_s_wolf_jadrem"
+msgstr "APCR vz.42(A钨芯)"
 
 msgid "_75mm_Prurazny_vz_42_s_wolf_jadrem"
 msgstr "APCR vz.42(钨芯)"
@@ -1476,6 +1615,9 @@ msgstr "75mm 斯柯达 A13炮"
 
 msgid "_75mm_Skoda_A18"
 msgstr "75mm 斯柯达 A18炮"
+
+msgid "_75mm_Skoda_A18_24"
+msgstr "75mm 斯柯达 A18炮 (24)"
 
 msgid "_75mm_Skoda_A18_s_automatickym_nabijenim"
 msgstr ""
@@ -1523,6 +1665,12 @@ msgstr "HE vz.44"
 msgid "_88mm_Narazovy"
 msgstr "HE"
 
+msgid "_88mm_Narazovy_TVP"
+msgstr "HE (TVP)"
+
+msgid "_88mm_Narazovy_VTU"
+msgstr "HE (VTU)"
+
 msgid "_88mm_Skoda_vz_36N"
 msgstr "88mm vz.38N炮"
 
@@ -1534,6 +1682,18 @@ msgstr "8.8cm vz.37N炮"
 
 msgid "_88mm_Vz_37N_A"
 msgstr "8.8cm vz.37N炮"
+
+msgid "_88mm_Vz_39N_OPG_VTU"
+msgstr "Vz.39N OPG (VTU)"
+
+msgid "_88mm_Vz_41N_OPG_TVP"
+msgstr "Vz.41N OPG (TVP)"
+
+msgid "_88mm_Vz_42N_OPG_TVP"
+msgstr "Vz.42N OPG (TVP)"
+
+msgid "_88mm_Vz_46_prupalny_VTU"
+msgstr "HEAT vz.46 (VTU)"
 
 msgid "_88mm_vz_41N"
 msgstr "8.8cm vz.41N炮"

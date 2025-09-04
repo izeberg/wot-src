@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/PL37_gunsleeve_knight/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.227083 -0.307618 -2.033079</min>
+		<max>0.290176 0.187632 1.234029</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/PL37_gunsleeve_knight/normal/lod0/attachment</nodefullVisual>
+</root>

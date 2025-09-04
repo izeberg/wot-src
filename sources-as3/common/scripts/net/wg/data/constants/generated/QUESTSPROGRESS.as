@@ -5,6 +5,8 @@ package net.wg.data.constants.generated
       
       public static const C_183X63_OPERATION_1:String = "183x63_operation_1";
       
+      public static const C_183X63_OPERATION_10:String = "183x63_operation_10";
+      
       public static const C_183X63_OPERATION_2:String = "183x63_operation_2";
       
       public static const C_183X63_OPERATION_3:String = "183x63_operation_3";
@@ -16,6 +18,10 @@ package net.wg.data.constants.generated
       public static const C_183X63_OPERATION_6:String = "183x63_operation_6";
       
       public static const C_183X63_OPERATION_7:String = "183x63_operation_7";
+      
+      public static const C_183X63_OPERATION_8:String = "183x63_operation_8";
+      
+      public static const C_183X63_OPERATION_9:String = "183x63_operation_9";
       
       public static const DONE:String = "done";
       

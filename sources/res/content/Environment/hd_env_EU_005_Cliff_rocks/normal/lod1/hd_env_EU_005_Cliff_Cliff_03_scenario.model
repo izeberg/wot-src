@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_EU_005_Cliff_rocks/normal/lod2/hd_env_EU_005_Cliff_Cliff_03_scenario</parent>
+	<extent>165.000000</extent>
+	<visibilityBox>
+		<min>-43.356976 8.257689 -75.373291</min>
+		<max>23.345200 29.815948 -22.941345</max>
+	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_EU_005_Cliff_rocks/normal/lod1/hd_env_EU_005_Cliff_Cliff_03_scenario</nodefullVisual>
+</root>

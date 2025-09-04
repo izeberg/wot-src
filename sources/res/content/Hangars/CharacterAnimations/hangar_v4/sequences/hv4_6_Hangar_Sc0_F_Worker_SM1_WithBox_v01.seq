@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>80.599998</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>80.599998</duration>
+				<resourceID>content/Hangars/CharacterAnimations/hangar_v4/animation/hv4_6_Hangar_Sc0_F_Worker_SM1_WithBox_v01.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.066667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.897049 -0.000000 2.459770</value>
+				<inTangent>-0.036621 0.000000 -0.995282</inTangent>
+				<outTangent>-0.036621 0.000000 -0.995282</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.266338</startTime>
+				<value>0.484459 0.000000 -8.753410</value>
+				<inTangent>0.248277 0.000000 -0.918028</inTangent>
+				<outTangent>0.248277 0.000000 -0.918028</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.971581</startTime>
+				<value>12.057167 0.000000 -27.002625</value>
+				<inTangent>0.558270 0.000000 -0.826998</inTangent>
+				<outTangent>0.558270 0.000000 -0.826998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>53.059235</startTime>
+				<value>23.775566 0.000000 -43.338348</value>
+				<inTangent>0.463247 0.000000 -0.872563</inTangent>
+				<outTangent>0.463247 0.000000 -0.872563</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>65.446266</startTime>
+				<value>28.025940 0.000000 -54.881866</value>
+				<inTangent>0.039476 0.000000 -0.945944</inTangent>
+				<outTangent>0.039476 0.000000 -0.945944</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>80.599998</startTime>
+				<value>24.022629 0.000000 -69.429222</value>
+				<inTangent>-0.264180 -0.000000 -0.959985</inTangent>
+				<outTangent>-0.264180 -0.000000 -0.959985</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 2.107266 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.705104 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.633169</startTime>
+				<value>0.000000 6.067472 0.000000</value>
+				<inTangent>0.000000 1.515088 0.000000</inTangent>
+				<outTangent>0.000000 -1.525167 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>11.266338</startTime>
+				<value>0.000000 -15.133384 0.000000</value>
+				<inTangent>0.000000 2.828448 0.000000</inTangent>
+				<outTangent>0.000000 -2.823774 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.118959</startTime>
+				<value>0.000000 -35.945320 0.000000</value>
+				<inTangent>0.000000 0.865683 0.000000</inTangent>
+				<outTangent>0.000000 -0.862851 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>32.971581</startTime>
+				<value>0.000000 -34.021511 0.000000</value>
+				<inTangent>0.000000 0.104159 0.000000</inTangent>
+				<outTangent>0.000000 -0.108126 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>43.015408</startTime>
+				<value>0.000000 -37.936756 0.000000</value>
+				<inTangent>0.000000 -0.299217 0.000000</inTangent>
+				<outTangent>0.000000 0.302277 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>53.059235</startTime>
+				<value>0.000000 -27.964012 0.000000</value>
+				<inTangent>0.000000 -0.944744 0.000000</inTangent>
+				<outTangent>0.000000 0.942616 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>59.252750</startTime>
+				<value>0.000000 -22.412720 0.000000</value>
+				<inTangent>0.000000 -2.054235 0.000000</inTangent>
+				<outTangent>0.000000 2.058095 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>65.446266</startTime>
+				<value>0.000000 -2.389641 0.000000</value>
+				<inTangent>0.000000 -3.042616 0.000000</inTangent>
+				<outTangent>0.000000 3.041193 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>73.023132</startTime>
+				<value>0.000000 19.441975 0.000000</value>
+				<inTangent>0.000000 -1.167832 0.000000</inTangent>
+				<outTangent>0.000000 1.161072 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>80.599998</startTime>
+				<value>0.000000 15.386463 0.000000</value>
+				<inTangent>0.000000 0.536590 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_015_HangarFilling/normal/lod0/hv4_015_HangarFilling_02_anim.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>80.599998</duration>
+				<resourceID>content/Hangars/CharacterAnimations/hangar_v4/animation/hv4_6_Hangar_Sc0_F_Worker_SM1_WithBox_v01_Box.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>1.066667</clipEndTime>
+			</frame>
+		</track>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>80.599998</duration>
+				<value>Root|Scene Root</value>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

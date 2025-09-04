@@ -154,6 +154,9 @@ msgstr "一旦你接受邀请，你将自动拒绝全球地图上的战斗和转
 msgid "invites/note/change_and_leave/PREBATTLE_COMP7"
 msgstr "一旦您接受邀请，您将自动退出小队并转移到%(host)s的服务器上。"
 
+msgid "invites/note/change_and_leave/PREBATTLE_COMP7_LIGHT"
+msgstr "一旦接受邀请，您将自动退出小队，并转移至%(host)s服务器。"
+
 msgid "invites/note/change_and_leave/PREBATTLE_EPIC"
 msgstr "一旦您接受邀请，您将自动退出战队并转移到%(host)s的服务器上。"
 
@@ -211,6 +214,9 @@ msgstr "一旦您接受邀请，您将退出大狩猎模式并转移到%(host)s�
 msgid "invites/note/change_and_leave/QUEUE_COMP7"
 msgstr "一旦您接受邀请，您将退出天梯战并转移到%(host)s服务器上。"
 
+msgid "invites/note/change_and_leave/QUEUE_COMP7_LIGHT"
+msgstr "一旦接受邀请，您将退出轻量级天梯战，并转移至%(host)s服务器。"
+
 msgid "invites/note/change_and_leave/QUEUE_EPIC"
 msgstr "一旦您接受邀请，您将退出前线模式并转移到%(host)s的服务器上。"
 
@@ -246,6 +252,9 @@ msgstr "一旦你接受邀请，你将自动拒绝全球地图上的战斗。"
 
 msgid "invites/note/leave/PREBATTLE_COMP7"
 msgstr "一旦您接受邀请，您将自动退出小队。"
+
+msgid "invites/note/leave/PREBATTLE_COMP7_LIGHT"
+msgstr "一旦接受邀请，您将自动退出小队。"
 
 msgid "invites/note/leave/PREBATTLE_EPIC"
 msgstr "一旦您接受邀请，您将自动退出战队。"
@@ -303,6 +312,9 @@ msgstr "一旦您接受邀请，您将退出大狩猎模式。"
 
 msgid "invites/note/leave/QUEUE_COMP7"
 msgstr "一旦您接受邀请，您将退出天梯战。"
+
+msgid "invites/note/leave/QUEUE_COMP7_LIGHT"
+msgstr "一旦接受邀请，您将退出轻量级天梯战。"
 
 msgid "invites/note/leave/QUEUE_EPIC"
 msgstr "一旦您接受邀请，您将退出前线模式。"
@@ -390,6 +402,9 @@ msgstr "邀请加入钢铁猎手小队"
 
 msgid "invites/text/COMP7"
 msgstr "邀请加入天梯战小队"
+
+msgid "invites/text/COMP7_LIGHT"
+msgstr "邀请加入轻量级天梯战小队"
 
 msgid "invites/text/EPIC"
 msgstr "邀请加入前线模式小队"

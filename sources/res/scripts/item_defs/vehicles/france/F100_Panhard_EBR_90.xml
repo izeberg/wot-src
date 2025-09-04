@@ -93,7 +93,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7451</weight>
-		<maxHealth>920</maxHealth>
+		<maxHealth>960</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1835,7 +1835,6 @@
 				</armor_9>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>14900</maxLoad>
 			<terrainResistance>
 				1.0 1.35 1.95
 				<!--BW_String-->
@@ -2469,7 +2468,6 @@
 				</armor_9>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15500</maxLoad>
 			<terrainResistance>
 				1.0 1.35 1.95
 				<!--BW_String-->
@@ -3092,7 +3090,7 @@
 	<turrets0>
 		<Turret_1_F100_Panhard_EBR_90>
 			<userString>#france_vehicles:Turret_1_F100_Panhard_EBR_90</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>50000</price>
 			<notInShop>true</notInShop>
@@ -3106,7 +3104,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_7 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>230</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>66</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -3490,10 +3488,7 @@
 						<slot>
 							<slotType>attachment</slotType>
 							<slotId>48001</slotId>
-							<position>
-								-0.779 0.431 -0.196
-								<!--BW_String-->
-							</position>
+							<position>0.581108 0.459498 -0.331502</position>
 							<rotation>-0 0 0</rotation>
 							<scale>1 1 1</scale>
 							<applyType>turret</applyType>
@@ -3881,6 +3876,27 @@
 							<clipAngle>0.813483</clipAngle>
 							<verticalMirror>true</verticalMirror>
 							<anchorShift>0.204857</anchorShift>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48000</slotId>
+							<position>
+								-0 0.164509 0.853
+								<!--BW_String-->
+							</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>gunMantlet</applyType>
+							<size>small</size>
+						</slot>
+						<slot>
+							<slotType>attachment</slotType>
+							<slotId>48001</slotId>
+							<position>0.581108 0.459498 -0.331502</position>
+							<rotation>-0 0 0</rotation>
+							<scale>1 1 1</scale>
+							<applyType>turret</applyType>
+							<size>small</size>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -4363,24 +4379,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					EM3_R61
-					<cost>6600</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
-		<EM3_R61>
-			shared
-			<unlocks>
-				<radio>
-					SCR_528_F
-					<cost>9300</cost>
-				</radio>
-			</unlocks>
-		</EM3_R61>
 		<SCR_528_F>shared</SCR_528_F>
 	</radios>
 	<physics>

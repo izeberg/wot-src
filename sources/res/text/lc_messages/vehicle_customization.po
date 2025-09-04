@@ -30,6 +30,45 @@ msgstr "?empty?"
 msgid "Maps_training_emblem"
 msgstr "?empty?"
 
+msgid "attachment/ArmiesA"
+msgstr "2.0工具包"
+
+msgid "attachment/ArmiesA/Cus_133_ArmiesA_Militarystuff"
+msgstr "补给包: 2.0"
+
+msgid "attachment/ArmiesA/Cus_135_ArmiesA_Projector"
+msgstr "2.0探照灯"
+
+msgid "attachment/ArmiesA/Cus_57_ArmiesA_Machinegun"
+msgstr "巅峰猎手机炮"
+
+msgid "attachment/ArmiesA/Cus_58_ArmiesA_AmmoCrates"
+msgstr "顶级战备物资"
+
+msgid "attachment/ArmiesA/Cus_60_ArmiesA_Bazooka"
+msgstr "毁灭者火箭炮"
+
+msgid "attachment/alliance_arsenal"
+msgstr "同盟武器库"
+
+msgid "attachment/alliance_arsenal/Cus_100_WT_Electricparts"
+msgstr "等离子转换器电池"
+
+msgid "attachment/alliance_arsenal/Cus_101_WT_Container"
+msgstr "等离子储存器"
+
+msgid "attachment/alliance_arsenal/Cus_102_WT_Militarybatteries"
+msgstr "同盟多功能等离子电池组"
+
+msgid "attachment/alliance_arsenal/Cus_98_WT_Camera"
+msgstr "同盟战术侦测仪"
+
+msgid "attachment/alliance_arsenal/Cus_99_WT_Machinegun"
+msgstr "改进型等离子机枪"
+
+msgid "attachment/alliance_arsenal/Cus_99_WT_Machinegun/description"
+msgstr "当冯·克里格带着其骇人科技消失时，同盟开始为他的回归做准备——通过研发一种等离子加速器，使任意火炮射击的各种炮弹均具有惊人穿透力。"
+
 msgid "attachment/anomaly_armory"
 msgstr "异象武器库"
 
@@ -150,8 +189,102 @@ msgstr "满载收集装置"
 msgid "attachment/echoes_from_beyond/Cus_45_FGM_Brokencontainer/description"
 msgstr "这个装置会发出嗡嗡、噼啪的声响。虽然安全系数达标，但建议你不要与其近距离接触——为了避免这个装置在坦克内爆炸，因此将其安装在外面。"
 
+msgid "attachment/engineers_inventions"
+msgstr "工程师的发明"
+
+msgid "attachment/engineers_inventions/Cus_93_WT_Projector"
+msgstr "銤元素投射器"
+
+msgid "attachment/engineers_inventions/Cus_94_WT_Electricgun"
+msgstr "克里格磁轨炮"
+
+msgid "attachment/engineers_inventions/Cus_95_WT_Batteries"
+msgstr "海柏利昂能量转换器"
+
+msgid "attachment/engineers_inventions/Cus_96_WT_Copperdevice"
+msgstr "护盾能量稳定器"
+
+msgid "attachment/engineers_inventions/Cus_97_WT_Electriccontainer"
+msgstr "瞬移陀螺仪"
+
+msgid ""
+"attachment/engineers_inventions/Cus_97_WT_Electriccontainer/description"
+msgstr "在试图掌握能实现战场瞬移的秘密科技过程中，麦克斯·冯·克里格还同步研发出另一装置——一台銤元素驱动的维度跃迁陀螺仪。"
+
+msgid "attachment/field_operations"
+msgstr "野战行动"
+
+msgid "attachment/field_operations/Cus_72_OTG_Projector"
+msgstr "探照灯"
+
+msgid "attachment/field_operations/Cus_73_OTG_Machinegun"
+msgstr "装甲机枪"
+
+msgid "attachment/field_operations/Cus_74_OTG_Ammunitionboxes"
+msgstr "储物箱"
+
+msgid "attachment/field_operations/Cus_75_OTG_Barrels"
+msgstr "燃油桶"
+
+msgid "attachment/field_operations/Cus_76_OTG_Canisters"
+msgstr "外挂补给架"
+
 msgid "attachment/general"
 msgstr "常规"
+
+msgid "attachment/gunslot"
+msgstr "炮管护套"
+
+msgid "attachment/gunslot/A179_gunsleeve_rock"
+msgstr "震撼全场！"
+
+msgid "attachment/gunslot/A182_gunsleeve_bully"
+msgstr "霸主"
+
+msgid "attachment/gunslot/A183_gunsleeve_arrowhead"
+msgstr "凌厉无比"
+
+msgid "attachment/gunslot/Ch67_gunsleeve_thunder"
+msgstr "雷电"
+
+msgid "attachment/gunslot/F135_gunsleeve_woodpecker"
+msgstr "啄木鸟"
+
+msgid "attachment/gunslot/F136_gunsleeve_beast"
+msgstr "猛兽"
+
+msgid "attachment/gunslot/G185_gunsleeve_haunting"
+msgstr "战场幽灵"
+
+msgid "attachment/gunslot/G187_gunsleeve_fortress"
+msgstr "铜墙铁壁"
+
+msgid "attachment/gunslot/G188_gunsleeve_ghost"
+msgstr "魅影"
+
+msgid "attachment/gunslot/G189_gunsleeve_killshot"
+msgstr "雷霆一击"
+
+msgid "attachment/gunslot/GB147_gunsleeve_concussion"
+msgstr "震天动地"
+
+msgid "attachment/gunslot/GB152_gunsleeve_centipede"
+msgstr "蜈蚣"
+
+msgid "attachment/gunslot/PL37_gunsleeve_knight"
+msgstr "骑士"
+
+msgid "attachment/gunslot/R228_gunsleeve_maul"
+msgstr "致胜利器"
+
+msgid "attachment/gunslot/R230_gunsleeve_unstoppable"
+msgstr "所向披靡"
+
+msgid "attachment/gunslot/S36_gunsleeve_nightmare"
+msgstr "梦魇"
+
+msgid "attachment/gunslot/shortDescriptionSpecial"
+msgstr "可作为该坦克的精英奖励之一获得。"
 
 msgid "attachment/iron_fury"
 msgstr "钢铁之怒"
@@ -213,6 +346,39 @@ msgstr "海军望远镜"
 
 msgid "attachment/oceanic_sentinel/Cus_19_Marine_Anchor"
 msgstr "无杆锚"
+
+msgid "attachment/spy_series"
+msgstr "秘密研究"
+
+msgid "attachment/spy_series/Cus_66_PM3_Jetpack"
+msgstr "喷气背包"
+
+msgid "attachment/spy_series/Cus_66_PM3_Jetpack/description"
+msgstr "第三区的特工们或许还没真正搞清楚能让坦克飞行的秘诀，但他们找到了绝佳的替代方案: 喷气背包，让他们能飞向难以抵达的目标，成功执行任务。"
+
+msgid "attachment/spy_series/Cus_67_PM3_Ulysses_Motorcycle"
+msgstr "尤里西斯摩托车"
+
+msgid "attachment/spy_series/Cus_68_PM3_Goliath_Hovercrafts"
+msgstr "歌利亚气垫船"
+
+msgid "attachment/spy_series/Cus_68_PM3_Goliath_Hovercrafts/description"
+msgstr "驾驶40吨级的钢铁巨兽，悄无声息地接近空旷地带的目标绝非易事，此时，气垫船便成为关键战术选择。"
+
+msgid "attachment/spy_series/Cus_69_PM3_Diver_Propulsion_Vehicle"
+msgstr "蛙人潜航器"
+
+msgid "attachment/spy_series/Cus_70_PM3_Pursuer_Camera"
+msgstr "战术追踪仪"
+
+msgid "attachment/spy_series/Cus_70_PM3_Pursuer_Camera/description"
+msgstr "经过多年从事秘密行动，第三区的特工们总结出一条至关重要的经验——有时候，先监听(并录像)，再射击更为明智。"
+
+msgid "attachment/spy_series/Cus_71_PM3_Decrypted_Minigun"
+msgstr "解密版转管机枪"
+
+msgid "attachment/spy_series/Cus_71_PM3_Decrypted_Minigun/description"
+msgstr "该机枪原为守护第三区研究机密而设计，如今它又有了新用途——安装到炮塔上，可为秘密行动提供强力的额外火力支援。"
 
 msgid "attachment/st_patricks_day_2025"
 msgstr "绿色奇迹！"
@@ -775,6 +941,9 @@ msgstr "由蓝色、棕色和浅灰色斑点构成，涂在白底色上。该图
 msgid "camouflage/23feb_winter/label"
 msgstr "雪地组合"
 
+msgid "camouflage/2_0_progression/description"
+msgstr "?empty?"
+
 msgid "camouflage/360_anniversary/description"
 msgstr "?empty?"
 
@@ -852,24 +1021,6 @@ msgstr "?empty?"
 
 msgid "camouflage/Blitztech/label"
 msgstr "闪电技术"
-
-msgid "camouflage/Boosteroid_01/description"
-msgstr "?empty?"
-
-msgid "camouflage/Boosteroid_01/label"
-msgstr "全面提升"
-
-msgid "camouflage/Boosteroid_02/description"
-msgstr "?empty?"
-
-msgid "camouflage/Boosteroid_02/label"
-msgstr "小心恶龙"
-
-msgid "camouflage/Boosteroid_03/description"
-msgstr "?empty?"
-
-msgid "camouflage/Boosteroid_03/label"
-msgstr "融为一体"
 
 msgid "camouflage/Borduit/description"
 msgstr "应用这些个性化进入战斗，给阻挡您前进的所有敌人注入恐惧。博格人擅长出其不意，而且总能带来毁灭性的力量。抵抗是徒劳的！"
@@ -1704,6 +1855,18 @@ msgstr "?empty?"
 msgid "camouflage/Wt24HOUND/label"
 msgstr "搜寻并击毁"
 
+msgid "camouflage/Wt25Harrier/description"
+msgstr "?empty?"
+
+msgid "camouflage/Wt25Harrier/label"
+msgstr "一网打尽"
+
+msgid "camouflage/Wt25Mirium/description"
+msgstr "?empty?"
+
+msgid "camouflage/Wt25Mirium/label"
+msgstr "銤元素驱动"
+
 msgid "camouflage/ac/description"
 msgstr "?empty?"
 
@@ -2445,11 +2608,11 @@ msgstr "二次透明涂装"
 msgid "camouflage/blank_camouflage/label"
 msgstr "二次透明"
 
-msgid "camouflage/boosteroid_04/description"
+msgid "camouflage/blend_in/description"
 msgstr "?empty?"
 
-msgid "camouflage/boosteroid_04/label"
-msgstr "破浪前行"
+msgid "camouflage/blend_in/label"
+msgstr "融为一体"
 
 msgid "camouflage/bovington/description"
 msgstr "?empty?"
@@ -2775,6 +2938,30 @@ msgstr "?empty?"
 msgid "camouflage/bp_2024_4/label"
 msgstr "海陆空"
 
+msgid "camouflage/bp_2025_18_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_2025_18_1/label"
+msgstr "黑板风暴"
+
+msgid "camouflage/bp_2025_18_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_2025_18_2/label"
+msgstr "误差禁区"
+
+msgid "camouflage/bp_2025_18_3/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_2025_18_3/label"
+msgstr "X.5修订版"
+
+msgid "camouflage/bp_2025_18_4/description"
+msgstr "?empty?"
+
+msgid "camouflage/bp_2025_18_4/label"
+msgstr "巅峰之作"
+
 msgid "camouflage/bp_holiday_1/description"
 msgstr "?empty?"
 
@@ -2852,6 +3039,12 @@ msgstr "?empty?"
 
 msgid "camouflage/candy/label"
 msgstr "巧克力礼物"
+
+msgid "camouflage/catching_waves/description"
+msgstr "?empty?"
+
+msgid "camouflage/catching_waves/label"
+msgstr "破浪前行"
 
 msgid "camouflage/cats/description"
 msgstr "?empty?"
@@ -3162,6 +3355,18 @@ msgstr "?empty?"
 
 msgid "camouflage/clans_event_2024/label"
 msgstr "爆发"
+
+msgid "camouflage/cn360_mid_autumn_2025_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/cn360_mid_autumn_2025_1/label"
+msgstr "玉兔呈祥"
+
+msgid "camouflage/cn360_mid_autumn_2025_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/cn360_mid_autumn_2025_2/label"
+msgstr "十日并出"
 
 msgid "camouflage/cn360_relaunch_820/description"
 msgstr "?empty?"
@@ -3649,6 +3854,12 @@ msgstr "?empty?"
 msgid "camouflage/dragonboat_2024/label"
 msgstr "龙王"
 
+msgid "camouflage/dwelling_dragons/description"
+msgstr "?empty?"
+
+msgid "camouflage/dwelling_dragons/label"
+msgstr "小心恶龙"
+
 msgid "camouflage/easter_west/description"
 msgstr "?empty?"
 
@@ -3957,6 +4168,12 @@ msgstr "2019年假日行动期间完成圣诞节收藏而获得的风格涂装"
 
 msgid "camouflage/frost/label"
 msgstr "钢化玻璃"
+
+msgid "camouflage/fully_boosted/description"
+msgstr "?empty?"
+
+msgid "camouflage/fully_boosted/label"
+msgstr "全面提升"
 
 msgid "camouflage/fw_2022_camo_l1/description"
 msgstr "?empty?"
@@ -4628,6 +4845,12 @@ msgstr "?empty?"
 msgid "camouflage/liveops_backtoschool_2025/label"
 msgstr "不断进取"
 
+msgid "camouflage/liveops_hw_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/liveops_hw_2025/label"
+msgstr "锢灵低语"
+
 msgid "camouflage/liveops_manga/description"
 msgstr "?empty?"
 
@@ -4723,6 +4946,12 @@ msgstr "在浅灰色背景上添加了不对称的大片冷色调斑点。"
 
 msgid "camouflage/localpartner2_2018/label"
 msgstr "全地形网络"
+
+msgid "camouflage/ls20_pve/description"
+msgstr "?empty?"
+
+msgid "camouflage/ls20_pve/label"
+msgstr "战斗金属"
 
 msgid "camouflage/ls25_2d/description"
 msgstr "?empty?"
@@ -5264,11 +5493,23 @@ msgstr "?empty?"
 msgid "camouflage/onaim/label"
 msgstr "正中靶心"
 
+msgid "camouflage/one_time_gift_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/one_time_gift_2025/label"
+msgstr "新纪元"
+
 msgid "camouflage/onguard/description"
 msgstr "?empty?"
 
 msgid "camouflage/onguard/label"
 msgstr "忠诚守护"
+
+msgid "camouflage/onslaught_2025_azure_dragon_annual/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_2025_azure_dragon_annual/label"
+msgstr "威龙称霸"
 
 msgid "camouflage/onslaught_autumn_2025/description"
 msgstr "?empty?"
@@ -5326,6 +5567,12 @@ msgstr "?empty?"
 
 msgid "camouflage/onslaught_light/label"
 msgstr "顿悟"
+
+msgid "camouflage/onslaught_light_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/onslaught_light_2025/label"
+msgstr "轻装上阵"
 
 msgid "camouflage/onslaught_season_2023-2024/description"
 msgstr "?empty?"
@@ -5410,6 +5657,24 @@ msgstr "?empty?"
 
 msgid "camouflage/pixel_winter/label"
 msgstr "数码冬季迷彩"
+
+msgid "camouflage/pm3_a179/description"
+msgstr "?empty?"
+
+msgid "camouflage/pm3_a179/label"
+msgstr "荣耀黑岩"
+
+msgid "camouflage/pm3_cz21/description"
+msgstr "?empty?"
+
+msgid "camouflage/pm3_cz21/label"
+msgstr "荣耀\"掠食者\""
+
+msgid "camouflage/pm3_g184/description"
+msgstr "?empty?"
+
+msgid "camouflage/pm3_g184/label"
+msgstr "荣耀风猎者"
 
 msgid "camouflage/poland/PL_desert_01/description"
 msgstr "黄褐色与橄榄色的双色调涂装。"
@@ -5519,11 +5784,23 @@ msgstr "?empty?"
 msgid "camouflage/pub_west_charity_2/label"
 msgstr "仁者之心"
 
+msgid "camouflage/pub_west_germany_reunification_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_west_germany_reunification_2025/label"
+msgstr "D系庆典"
+
 msgid "camouflage/pub_west_socialmedia/description"
 msgstr "?empty?"
 
 msgid "camouflage/pub_west_socialmedia/label"
 msgstr "深度触网"
+
+msgid "camouflage/pub_west_streamer/description"
+msgstr "?empty?"
+
+msgid "camouflage/pub_west_streamer/label"
+msgstr "绚丽极光"
 
 msgid "camouflage/pub_west_token_1/description"
 msgstr "?empty?"
@@ -6650,6 +6927,18 @@ msgstr "S系战车学院风格迷彩。"
 msgid "camouflage/ussr/tricolor/four-color_stains_generic_custom_look_3/label"
 msgstr "沙漠图案"
 
+msgid "camouflage/v2_0_solo_1/description"
+msgstr "?empty?"
+
+msgid "camouflage/v2_0_solo_1/label"
+msgstr "天顶-11型"
+
+msgid "camouflage/v2_0_solo_2/description"
+msgstr "?empty?"
+
+msgid "camouflage/v2_0_solo_2/label"
+msgstr "北境苔锈"
+
 msgid "camouflage/valentine2024/description"
 msgstr "?empty?"
 
@@ -6967,6 +7256,12 @@ msgstr "?empty?"
 
 msgid "camouflage/waitangi_day/label"
 msgstr "怀唐伊日"
+
+msgid "camouflage/watcher_wakes/description"
+msgstr "?empty?"
+
+msgid "camouflage/watcher_wakes/label"
+msgstr "觉醒之眼"
 
 msgid "camouflage/wci_2024_1/description"
 msgstr "?empty?"
@@ -8404,6 +8699,24 @@ msgstr "在天梯战模式翡翠蝎狮赛季中达到青铜段位。"
 msgid "customization/tooltip/quests/comp7_4_3_ranks_65/condition"
 msgstr "在天梯战模式翡翠蝎狮赛季中达到黑铁段位。"
 
+msgid "customization/tooltip/quests/comp7_5_1_ranks_11/condition"
+msgstr "在天梯战模式苍蓝巨龙赛季中达到传说段位。"
+
+msgid "customization/tooltip/quests/comp7_5_1_ranks_21/condition"
+msgstr "在天梯战模式苍蓝巨龙赛季中达到勇士段位。"
+
+msgid "customization/tooltip/quests/comp7_5_1_ranks_35/condition"
+msgstr "在天梯战模式苍蓝巨龙赛季中达到黄金段位。"
+
+msgid "customization/tooltip/quests/comp7_5_1_ranks_45/condition"
+msgstr "在天梯战模式苍蓝巨龙赛季中达到白银段位。"
+
+msgid "customization/tooltip/quests/comp7_5_1_ranks_55/condition"
+msgstr "在天梯战模式苍蓝巨龙赛季中达到青铜段位。"
+
+msgid "customization/tooltip/quests/comp7_5_1_ranks_65/condition"
+msgstr "在天梯战模式苍蓝巨龙赛季中达到黑铁段位。"
+
 msgid "customization/tooltip/quests/comp7_ranks_diamond_1/condition"
 msgstr "在天梯战模式狮鹫赛季达到黄金段位。"
 
@@ -8438,6 +8751,15 @@ msgid "customization/tooltip/quests/crushing_damage_1044_2/condition"
 msgstr "在天梯战中，累计造成225000点损伤。"
 
 msgid "customization/tooltip/quests/crushing_damage_1044_3/condition"
+msgstr "在天梯战中，累计造成550000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1120_1/condition"
+msgstr "在天梯战中，累计造成25000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1120_2/condition"
+msgstr "在天梯战中，累计造成225000点损伤。"
+
+msgid "customization/tooltip/quests/crushing_damage_1120_3/condition"
 msgstr "在天梯战中，累计造成550000点损伤。"
 
 msgid "customization/tooltip/quests/crushing_damage_648_1/condition"
@@ -8518,6 +8840,18 @@ msgid ""
 "customization/tooltip/quests/demonstration_performance_1044_3/condition"
 msgstr "驾驶应用了\"融合兽(翡翠)\"风格的坦克完成50场天梯战战斗。"
 
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1120_1/condition"
+msgstr "驾驶应用了\"威龙称霸(苍蓝)\"风格的坦克完成10场天梯战战斗。"
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1120_2/condition"
+msgstr "驾驶应用了\"威龙称霸(苍蓝)\"风格的坦克完成25场天梯战战斗。"
+
+msgid ""
+"customization/tooltip/quests/demonstration_performance_1120_3/condition"
+msgstr "驾驶应用了\"威龙称霸(苍蓝)\"风格的坦克完成50场天梯战战斗。"
+
 msgid "customization/tooltip/quests/demonstration_performance_648_1/condition"
 msgstr "驾驶应用了羽翼和利爪风格的坦克参加10场天梯战战斗。"
 
@@ -8588,6 +8922,15 @@ msgid "customization/tooltip/quests/destroyed_vehicles_1044_2/condition"
 msgstr "在天梯战中，累计击毁150辆敌方坦克。"
 
 msgid "customization/tooltip/quests/destroyed_vehicles_1044_3/condition"
+msgstr "在天梯战中，累计击毁350辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1120_1/condition"
+msgstr "在天梯战中，累计击毁15辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1120_2/condition"
+msgstr "在天梯战中，累计击毁150辆敌方坦克。"
+
+msgid "customization/tooltip/quests/destroyed_vehicles_1120_3/condition"
 msgstr "在天梯战中，累计击毁350辆敌方坦克。"
 
 msgid "customization/tooltip/quests/destroyed_vehicles_648_1/condition"
@@ -8662,11 +9005,20 @@ msgstr "在天梯战的2人小队中获胜25次。"
 msgid "customization/tooltip/quests/double_threat_965/condition"
 msgstr "在天梯战的2人小队中获胜25次。"
 
+msgid "customization/tooltip/quests/early_bird_1120/condition"
+msgstr "在天梯战中，成为第一个击毁敌方坦克的玩家，完成10次。"
+
 msgid "customization/tooltip/quests/find_and_destroy_648/condition"
 msgstr "在天梯战中，点亮或击毁总计750辆敌方坦克。"
 
 msgid "customization/tooltip/quests/find_and_destroy_775/condition"
 msgstr "在天梯战中点亮或击毁总计500辆敌方坦克。"
+
+msgid "customization/tooltip/quests/flaming_twins_1120/condition"
+msgstr "在天梯战的2人小队中获胜25次。"
+
+msgid "customization/tooltip/quests/gimme_more_1120/condition"
+msgstr "在天梯战中，累计点亮或击毁500辆敌方坦克。"
 
 msgid "customization/tooltip/quests/going_to_circle_1026_1/condition"
 msgstr "在天梯战中，累计获得250点基地占领/防御点数。"
@@ -8684,6 +9036,15 @@ msgid "customization/tooltip/quests/going_to_circle_1044_2/condition"
 msgstr "在天梯战中，累计获得500点基地占领/防御点数。"
 
 msgid "customization/tooltip/quests/going_to_circle_1044_3/condition"
+msgstr "在天梯战中，累计获得750点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1120_1/condition"
+msgstr "在天梯战中，累计获得250点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1120_2/condition"
+msgstr "在天梯战中，累计获得500点基地占领/防御点数。"
+
+msgid "customization/tooltip/quests/going_to_circle_1120_3/condition"
 msgstr "在天梯战中，累计获得750点基地占领/防御点数。"
 
 msgid "customization/tooltip/quests/going_to_circle_648_1/condition"
@@ -8779,6 +9140,9 @@ msgstr "在由同一个军团的成员所组成的超级小队中进行天梯战
 msgid "customization/tooltip/quests/old_school_775/condition"
 msgstr "在由同一个军团的成员所组成的超级小队中赢得5场天梯战战斗。"
 
+msgid "customization/tooltip/quests/one_man_army_1120/condition"
+msgstr "在天梯战中，独自对抗至少3辆敌方坦克，并取得战斗胜利。"
+
 msgid "customization/tooltip/quests/or"
 msgstr "或"
 
@@ -8792,6 +9156,9 @@ msgid "customization/tooltip/quests/prestige_7v7_1026/condition"
 msgstr "在天梯战中，获得的声望点数排名本队第1，完成50次。"
 
 msgid "customization/tooltip/quests/prestige_7v7_1044/condition"
+msgstr "在天梯战中，获得的声望点数排名本队第1，完成50次。"
+
+msgid "customization/tooltip/quests/prestige_7v7_1120/condition"
 msgstr "在天梯战中，获得的声望点数排名本队第1，完成50次。"
 
 msgid "customization/tooltip/quests/prestige_7v7_836/condition"
@@ -8811,6 +9178,9 @@ msgstr "已完成"
 
 msgid "customization/tooltip/quests/progressBig"
 msgstr "已完成: "
+
+msgid "customization/tooltip/quests/quicksilver_1120/condition"
+msgstr "通过在150秒内击毁所有敌方坦克赢得1场天梯战战斗。"
 
 msgid "customization/tooltip/quests/rampage_1026/condition"
 msgstr "在1场天梯战中击毁5辆敌方坦克。"
@@ -8834,6 +9204,9 @@ msgid "customization/tooltip/quests/rush_648/condition"
 msgstr "在1场天梯战中击毁至少4辆敌方坦克。"
 
 msgid "customization/tooltip/quests/rush_775/condition"
+msgstr "在1场天梯战中击毁5辆敌方坦克。"
+
+msgid "customization/tooltip/quests/scorched_earth_1120/condition"
 msgstr "在1场天梯战中击毁5辆敌方坦克。"
 
 msgid "customization/tooltip/quests/shoulder_to_shoulder_648/condition"
@@ -8915,6 +9288,15 @@ msgid "customization/tooltip/quests/tactical_advantage_1044_2/condition"
 msgstr "在天梯战中，配合团队累计占领150个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
 
 msgid "customization/tooltip/quests/tactical_advantage_1044_3/condition"
+msgstr "在天梯战中，配合团队累计占领375个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1120_1/condition"
+msgstr "在天梯战中，配合团队累计占领15个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1120_2/condition"
+msgstr "在天梯战中，配合团队累计占领150个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
+
+msgid "customization/tooltip/quests/tactical_advantage_1120_3/condition"
 msgstr "在天梯战中，配合团队累计占领375个焦点位置。玩家自身和团队成员占领的焦点位置都将计算在内。"
 
 msgid "customization/tooltip/quests/tactical_advantage_648_1/condition"
@@ -10717,7 +11099,7 @@ msgid "emblem/special/sticker_402_desc"
 msgstr "PG附带的独特徽章。"
 
 msgid "emblem/special/sticker_403"
-msgstr "Köln 2018"
+msgstr "Koln 2018"
 
 msgid "emblem/special/sticker_404"
 msgstr "超测老兵"
@@ -11980,7 +12362,7 @@ msgid "emblem/special/sticker_843"
 msgstr "2025天梯赛事"
 
 msgid "emblem/special/sticker_859"
-msgstr "Boosteroid"
+msgstr "全面提升"
 
 msgid "emblem/special/sticker_860"
 msgstr "2025夏季天梯赛事"
@@ -11990,6 +12372,18 @@ msgstr "涡旋"
 
 msgid "emblem/special/sticker_863"
 msgstr "棕榈树"
+
+msgid "emblem/special/sticker_864"
+msgstr "K-9小队"
+
+msgid "emblem/special/sticker_865"
+msgstr "M-13"
+
+msgid "emblem/special/sticker_866"
+msgstr "第三区"
+
+msgid "emblem/special/sticker_866_desc"
+msgstr "热身已过，训练已成，\"第三区\"个人任务即将开启，整军备战！"
 
 msgid "emblem/special/sticker_867"
 msgstr "15周年纪念"
@@ -13139,7 +13533,7 @@ msgid "inscription/special/special_153"
 msgstr "新年快乐！"
 
 msgid "inscription/special/special_154"
-msgstr "Gott nytt år!"
+msgstr "Gott nytt ar！"
 
 msgid "inscription/special/special_155"
 msgstr "圣诞快乐！"
@@ -13157,13 +13551,13 @@ msgid "inscription/special/special_159"
 msgstr "Frohe Weihnachten"
 
 msgid "inscription/special/special_160"
-msgstr "Bonne Année!"
+msgstr "Bonne Annee！"
 
 msgid "inscription/special/special_161"
 msgstr "Stastny Novy Rok!"
 
 msgid "inscription/special/special_162"
-msgstr "Szczęśliwego Nowego Roku"
+msgstr "Szczesliwego Nowego Roku"
 
 msgid "inscription/special/special_163"
 msgstr "Frohes neues Jahr"
@@ -13172,10 +13566,10 @@ msgid "inscription/special/special_164"
 msgstr "Joyeux Noel!"
 
 msgid "inscription/special/special_165"
-msgstr "Veselé Vánoce"
+msgstr "Vesele Vanoce"
 
 msgid "inscription/special/special_166"
-msgstr "Wesołych Świąt"
+msgstr "Wesolych Swiat"
 
 msgid "inscription/special/special_167"
 msgstr "Frohes Fest"
@@ -13184,10 +13578,10 @@ msgid "inscription/special/special_168"
 msgstr "Joyeuses Fetes"
 
 msgid "inscription/special/special_169"
-msgstr "Šťasné svátkyt"
+msgstr "Stasne svatkyt"
 
 msgid "inscription/special/special_170"
-msgstr "Szczęśliwych Świąt"
+msgstr "Szczesliwych Swiat"
 
 msgid "inscription/special/special_171"
 msgstr "新年快乐！"
@@ -14737,6 +15131,15 @@ msgstr "使命必达"
 msgid "inscription/special/special_803"
 msgstr "我们做到了！"
 
+msgid "inscription/special/special_805"
+msgstr "无处可藏"
+
+msgid "inscription/special/special_806"
+msgstr "悄然而至"
+
+msgid "inscription/special/special_807"
+msgstr "咚咚咚！"
+
 msgid "inscription/special/special_808"
 msgstr "古墓丽影"
 
@@ -14752,6 +15155,30 @@ msgstr "有胆就来"
 msgid "inscription/special/special_811"
 msgstr "哇哦，我太帅了"
 
+msgid "inscription/special/special_812"
+msgstr "热血兄弟"
+
+msgid "inscription/special/special_813"
+msgstr "勇于争先"
+
+msgid "inscription/special/special_814"
+msgstr "一人成军"
+
+msgid "inscription/special/special_815"
+msgstr "意犹未尽"
+
+msgid "inscription/special/special_816"
+msgstr "焦土战术"
+
+msgid "inscription/special/special_817"
+msgstr "风驰电掣"
+
+msgid "inscription/special/special_819"
+msgstr "是时候恐慌了"
+
+msgid "inscription/special/special_820"
+msgstr "为了科学！"
+
 msgid "inscription/special/special_821"
 msgstr "2025秋季OLS"
 
@@ -14760,6 +15187,12 @@ msgstr "2026冬季OLS"
 
 msgid "inscription/special/special_823"
 msgstr "2026春季OLS"
+
+msgid "inscription/special/special_824"
+msgstr "机密"
+
+msgid "inscription/special/special_824/description"
+msgstr "懂的都懂，不懂的...开你的车。"
 
 msgid "inscription/special/special_825"
 msgstr "有木柴吗？"
@@ -16597,7 +17030,7 @@ msgid "progressionTutorial/interaction/title"
 msgstr "预设风格操作"
 
 msgid "progressionTutorial/modes/description"
-msgstr "除非贴花获取条件中另行声明，您只能在标准模式(战役模式除外)中完成升级贴花相关的任务。贴花可在所有游戏模式中显示。"
+msgstr "除非贴花获取条件中另行声明，您只能在标准模式中完成升级贴花相关的任务。贴花可在所有游戏模式中显示。"
 
 msgid "progressionTutorial/modes/title"
 msgstr "如何完成"
@@ -16831,6 +17264,12 @@ msgstr "猛虎踏浪"
 
 msgid "projection_decals/animals/projection_decal_57"
 msgstr "想都别想"
+
+msgid "projection_decals/animals/projection_decal_70"
+msgstr "尖喙行动"
+
+msgid "projection_decals/animals/projection_decal_70/description"
+msgstr "告别严冬，投身激战，是时候掀起风暴了。"
 
 msgid "projection_decals/armor"
 msgstr "武器和护甲"
@@ -20755,6 +21194,12 @@ msgstr "圣诞树"
 msgid "projection_decals/special/projection_decal_88/description"
 msgstr "这个贴花温柔地提醒您，假日行动结束很久了，您完全没有时间概念。"
 
+msgid "projection_decals/special/projection_decal_881"
+msgstr "紧追不舍"
+
+msgid "projection_decals/special/projection_decal_882"
+msgstr "暗影力量"
+
 msgid "projection_decals/special/projection_decal_883"
 msgstr "框中鱼饰"
 
@@ -20806,17 +21251,44 @@ msgstr "目不转睛"
 msgid "projection_decals/special/projection_decal_908"
 msgstr "猛虎出山"
 
+msgid "projection_decals/special/projection_decal_909"
+msgstr "强势出击"
+
 msgid "projection_decals/special/projection_decal_91"
 msgstr "别扯后腿"
 
 msgid "projection_decals/special/projection_decal_91/description"
 msgstr "很久以前，高等级坦克可以和低等级坦克组成小队，大多数情况下都没有好下场。在团队中看到这样的小队通常不是个好兆头。"
 
+msgid "projection_decals/special/projection_decal_910"
+msgstr "巍然不动"
+
+msgid "projection_decals/special/projection_decal_911"
+msgstr "气定神闲"
+
+msgid "projection_decals/special/projection_decal_912"
+msgstr "占领基地"
+
+msgid "projection_decals/special/projection_decal_913"
+msgstr "左右为难"
+
+msgid "projection_decals/special/projection_decal_914"
+msgstr "坦克世界2.0"
+
+msgid "projection_decals/special/projection_decal_915"
+msgstr "2.0: 新纪元"
+
 msgid "projection_decals/special/projection_decal_916"
 msgstr "菠萝手雷"
 
 msgid "projection_decals/special/projection_decal_917"
 msgstr "草裙舞"
+
+msgid "projection_decals/special/projection_decal_918"
+msgstr "弓矢之神"
+
+msgid "projection_decals/special/projection_decal_919"
+msgstr "月宫仙子"
 
 msgid "projection_decals/special/projection_decal_92"
 msgstr "香格里拉(复刻版)"
@@ -20833,17 +21305,44 @@ msgstr "达则火力覆盖"
 msgid "projection_decals/special/projection_decal_922"
 msgstr "于时光之隙，觅奋进之踪"
 
+msgid "projection_decals/special/projection_decal_923"
+msgstr "无限可能"
+
+msgid "projection_decals/special/projection_decal_924"
+msgstr "奇特科学"
+
+msgid "projection_decals/special/projection_decal_925"
+msgstr "训练有素"
+
+msgid "projection_decals/special/projection_decal_926"
+msgstr "军犬部队"
+
 msgid "projection_decals/special/projection_decal_93"
 msgstr "多面手"
 
 msgid "projection_decals/special/projection_decal_93/description"
 msgstr "这就是车长替代其他被击晕乘员时的样子。"
 
+msgid "projection_decals/special/projection_decal_939"
+msgstr "4-T0"
+
 msgid "projection_decals/special/projection_decal_94"
 msgstr "放弃治疗"
 
 msgid "projection_decals/special/projection_decal_94/description"
 msgstr "在您的坦克上使用此贴花后，您将不需要对战斗中的任何行动负责。(也许不能...)。"
+
+msgid "projection_decals/special/projection_decal_940"
+msgstr "Tb1"
+
+msgid "projection_decals/special/projection_decal_941"
+msgstr "E8"
+
+msgid "projection_decals/special/projection_decal_943"
+msgstr "点火升空"
+
+msgid "projection_decals/special/projection_decal_943/description"
+msgstr "3...2...1...发射！"
 
 msgid "projection_decals/special/projection_decal_945"
 msgstr "野战营地"
@@ -20883,6 +21382,9 @@ msgstr "分享蛋糕"
 
 msgid "projection_decals/special/projection_decal_956"
 msgstr "烟花绽放"
+
+msgid "projection_decals/special/projection_decal_959"
+msgstr "木乃伊归来"
 
 msgid "projection_decals/special/projection_decal_96"
 msgstr "F系装甲"
@@ -21226,6 +21728,45 @@ msgstr "敢为人先"
 
 msgid "questProgress/cust_progress_1044_9"
 msgstr "山高人为峰"
+
+msgid "questProgress/cust_progress_1120_1"
+msgstr "?empty?"
+
+msgid "questProgress/cust_progress_1120_10"
+msgstr "意犹未尽"
+
+msgid "questProgress/cust_progress_1120_11"
+msgstr "7对7"
+
+msgid "questProgress/cust_progress_1120_12"
+msgstr "焦土战术"
+
+msgid "questProgress/cust_progress_1120_13"
+msgstr "风驰电掣"
+
+msgid "questProgress/cust_progress_1120_2"
+msgstr "毁灭性损伤"
+
+msgid "questProgress/cust_progress_1120_3"
+msgstr "展示技艺"
+
+msgid "questProgress/cust_progress_1120_4"
+msgstr "冲进占领圈"
+
+msgid "questProgress/cust_progress_1120_5"
+msgstr "战术优势"
+
+msgid "questProgress/cust_progress_1120_6"
+msgstr "我们下次见"
+
+msgid "questProgress/cust_progress_1120_7"
+msgstr "热血兄弟"
+
+msgid "questProgress/cust_progress_1120_8"
+msgstr "勇于争先"
+
+msgid "questProgress/cust_progress_1120_9"
+msgstr "一人成军"
 
 msgid "questProgress/cust_progress_648_1"
 msgstr "?empty?"
@@ -21599,15 +22140,6 @@ msgstr "货运列车"
 msgid "repaint/Blitztech"
 msgstr "闪电技术"
 
-msgid "repaint/Boosteroid_01"
-msgstr "全面提升"
-
-msgid "repaint/Boosteroid_02"
-msgstr "小心恶龙"
-
-msgid "repaint/Boosteroid_03"
-msgstr "融为一体"
-
 msgid "repaint/Breadboard"
 msgstr "集成电路"
 
@@ -21686,6 +22218,12 @@ msgstr "凯拉斯大帝"
 msgid "repaint/Wt24HOUND"
 msgstr "搜寻并击毁"
 
+msgid "repaint/Wt25Harrier"
+msgstr "一网打尽"
+
+msgid "repaint/Wt25Mirium"
+msgstr "銤元素驱动"
+
 msgid "repaint/ac"
 msgstr "高贵"
 
@@ -21749,8 +22287,8 @@ msgstr "黑熊"
 msgid "repaint/beast_4"
 msgstr "黑风凶煞"
 
-msgid "repaint/boosteroid_04"
-msgstr "破浪前行"
+msgid "repaint/blend_in"
+msgstr "融为一体"
 
 msgid "repaint/bp2021_1"
 msgstr "冰川"
@@ -21859,6 +22397,9 @@ msgstr "护甲"
 
 msgid "repaint/canada_day_2021"
 msgstr "自强不息"
+
+msgid "repaint/catching_waves"
+msgstr "破浪前行"
 
 msgid "repaint/cerberus"
 msgstr "土元素"
@@ -22136,6 +22677,9 @@ msgstr "眩纹"
 msgid "repaint/dragon"
 msgstr "火元素"
 
+msgid "repaint/dwelling_dragons"
+msgstr "小心恶龙"
+
 msgid "repaint/eastern_warriors"
 msgstr "勇武护体"
 
@@ -22198,6 +22742,9 @@ msgstr "灰绿色"
 
 msgid "repaint/frost"
 msgstr "冬蓝色"
+
+msgid "repaint/fully_boosted"
+msgstr "全面提升"
 
 msgid "repaint/fw_2022_paint_l1"
 msgstr "新秀"
@@ -22805,6 +23352,9 @@ msgstr "胜利之星"
 msgid "repaint/waitangi_day"
 msgstr "怀唐伊日"
 
+msgid "repaint/watcher_wakes"
+msgstr "觉醒之眼"
+
 msgid "repaint/wdr_paint_1"
 msgstr "?empty?"
 
@@ -23225,6 +23775,86 @@ msgstr "一款为庆祝《坦克世界》15周年纪念活动而设计的全地�
 msgid "special_style/23feb"
 msgstr "23"
 
+msgid "special_style/2_0_progression_a"
+msgstr "装甲战歌"
+
+msgid "special_style/2_0_progression_a_desc"
+msgstr "一款全地形风格，采用纯正美式工艺标准，成就卓越工程性能。"
+
+msgid "special_style/2_0_progression_a_desc/long"
+msgstr ""
+"大胆、奔放，坚韧不拔。这便是最纯粹的美式风范——由独特的装甲板与护板拼接而成，象征着万众一心，无所不能。这头钢铁巨兽传承了M系的草根创新精神，它既是向乡野间的能工巧匠致敬，也是对精英工程师的献礼。在此，聪慧的头脑引领着布满老茧的双手，将创造精神包裹于装甲之内，勇气、胆识，加上一点老式胶带，将众人凝聚于同一面旗帜之下。"
+
+msgid "special_style/2_0_progression_ch"
+msgstr "长盛不衰"
+
+msgid "special_style/2_0_progression_ch_desc"
+msgstr "一款全地形风格，向数个世纪的创新致敬。"
+
+msgid "special_style/2_0_progression_ch_desc/long"
+msgstr ""
+"严丝合缝的层叠装甲，谱写着一曲忠勇不渝的战歌。其设计暗合中式匠道的至高境界，以千万次锤炼成就完美。恰似青铜铭文记载的传奇，凝聚先人智识与未来锋芒，这把跨越时空的武器，终将在新纪元的战场上寒光出鞘。"
+
+msgid "special_style/2_0_progression_f"
+msgstr "力量线条"
+
+msgid "special_style/2_0_progression_f_desc"
+msgstr "一款全地形风格，以低调的方式勾勒出战场的残酷景象。"
+
+msgid "special_style/2_0_progression_f_desc/long"
+msgstr ""
+"规整的淬火钢条以极简的风格精准地包裹车体，抛光螺栓紧固其间。简约而恢宏，它毫不掩饰内在的危险战斗机器，反而将其如艺术品般装裱——战场化作扭曲的展厅。每发炮弹都是战地画布上的灼热笔触，以无可错认的法式格调，绘出烟与火的印象派交响。"
+
+msgid "special_style/2_0_progression_g"
+msgstr "烈焰钢甲"
+
+msgid "special_style/2_0_progression_g_desc"
+msgstr "原始自然与创新工艺在这款全地形风格中完美结合。"
+
+msgid "special_style/2_0_progression_g_desc/long"
+msgstr ""
+"富有光泽的有机形态，几近...鲜活。回火钢板以爬行动物的鳞片纹理包裹着车体，宛如一头由凡人亲手锻造的钢铁巨龙。其鳞片寒光如蛇，对于窥探者而言，这辆坦克无疑是一场视觉盛宴。但——正如自然界亘古不变的法则——最引人注目的纹理，往往既是陷阱...也是警告。所以，保持距离吧，因为在这迷人的金属工艺之下，隐藏着一股足以焚尽万物的炽热龙息，而您很清楚，龙会用火来做什么。"
+
+msgid "special_style/2_0_progression_pl"
+msgstr "曲线战魂"
+
+msgid "special_style/2_0_progression_pl_desc"
+msgstr "一款全地形风格，既彰显优雅又展现力量。"
+
+msgid "special_style/2_0_progression_pl_desc/long"
+msgstr ""
+"线条如锻铁般蜿蜒，新月饰纹在华丽的对角线上交错，将回火钢材与B系\"分离派\"的建筑式优雅融为一体。诚然，这套装甲中蕴含着艺术，但绝非华而不实。作为对坚韧与美学的礼赞，这种新艺术风格的设计无疑从历史中汲取了灵感——但别被其外表所迷惑。如同翼骑兵的双翼，这套优雅的装甲所点缀的，是无可匹敌的强大。"
+
+msgid "special_style/2_0_progression_r"
+msgstr "不屈意志"
+
+msgid "special_style/2_0_progression_r_desc"
+msgstr "一款全地形风格，展示了S系在技术变革面前的创新能力。"
+
+msgid "special_style/2_0_progression_r_desc/long"
+msgstr ""
+"这套装甲诞生于工厂车间与前线的应急修理，承载着S系工业巨兽的基因，如今，它已为XI级的战斗而涅槃重生。诚然，那些歪斜的钢板、粗犷的节点和裸露的连接处或许看起来是即兴之作，但这头淬火的巨兽完全清楚自己在做什么。始于情势所迫，终成创新信条。量产的时代已经落幕。这是下一代的产物——以同样的钢铁意志打造，但远比过去更具威胁性。"
+
+msgid "special_style/2_0_progression_s"
+msgstr "钢筋铁骨"
+
+msgid "special_style/2_0_progression_s_desc"
+msgstr "一款全地形风格，为您带来北方设计的静谧力量。"
+
+msgid "special_style/2_0_progression_s_desc/long"
+msgstr ""
+"平整的几何锥体以静谧的对称包裹着车体——时髦、无缝，充满毋庸置疑的北方风情。它秉承了现代维京设计理念，化繁为简，于细节处见真章，没有任何冗余。这是一种昭示未来装甲战斗的哲学——如同扁平化封装的高效，经由干练的工程设计，只需几个简单步骤，便能组合成一股毁灭性的力量。"
+
+msgid "special_style/2_0_progression_uk"
+msgstr "帝国标准"
+
+msgid "special_style/2_0_progression_uk_desc"
+msgstr "一款全地形风格，将传统与现代巧妙结合。"
+
+msgid "special_style/2_0_progression_uk_desc/long"
+msgstr ""
+"现代化滚滚向前，但传统仍在引领冲锋。由回火钢材构成的规整网格，令人联想到铺砌的庭院、威严的阅兵场，以及旧世界工艺中那严谨克制的纪律感——它正向那些深知\"真人不露相\"的智者们低语。该风格以精准锻造，以雄心磨砺，尽显英式装甲的恒久之力。而在那冰冷的端庄之下，一股前所未见的熔火狂潮，正蓄势待发。"
+
 msgid "special_style/360_anniversary"
 msgstr "一周年锦鲤风格"
 
@@ -23583,38 +24213,6 @@ msgstr "闪电技术"
 msgid "special_style/Blitztech_desc"
 msgstr "可在最终兵器:海柏利昂计划活动期间获得的全地形风格。"
 
-msgid "special_style/Boosteroid_01"
-msgstr "全面提升"
-
-msgid "special_style/Boosteroid_01_desc"
-msgstr "?empty?"
-
-msgid "special_style/Boosteroid_01_desc/long"
-msgstr ""
-"您的坦克充满无穷能量，随时准备战斗。它在战场上灵活机动，游刃有余，突破敌方围追堵截后，以毁灭性的精度击毁追兵。对手们敬畏地看着这辆势不可挡的战斗机器，对其指挥官的战斗技巧赞叹不已。"
-
-msgid "special_style/Boosteroid_02"
-msgstr "小心恶龙"
-
-msgid "special_style/Boosteroid_02_desc"
-msgstr "?empty?"
-
-msgid "special_style/Boosteroid_02_desc/long"
-msgstr ""
-"古时候，地图绘制者会在已知世界的边缘标上\"小心恶龙\"的字样和可怕的神兽形象，以警示未知区域潜藏的危险。然而，他们并未意识到，龙不仅栖息在遥远的地球边缘，它们其实近在咫尺，深藏在古老的山脉和被遗忘的废墟中。它们熔岩般的双眼在黑暗中闪烁，伴有火焰的呼吸在寂静中回响——它们藏匿于凡人视线之外，静静等待，准备再次现身。"
-
-msgid "special_style/Boosteroid_03"
-msgstr "融为一体"
-
-msgid "special_style/Boosteroid_03_desc"
-msgstr "?empty?"
-
-msgid "special_style/Boosteroid_03_desc/long"
-msgstr ""
-"你看不见我！哦，等等，你能看见？嗯，肯定是还没变色。我是如何做到的？哦，经常有人问我这个问题。老实说，我自己也不太清楚，可能和我的色素之类的东西有关吧。"
-" "
-"等等，你是说你得特意把坦克隐蔽起来，才能不被别人看到？还要用什么特殊配件、涂装之类的？哇，太离谱了…总之，我得走了，还有人等着我，还有苍蝇要抓呢。刚才还能看见我，现在又看不到了！"
-
 msgid "special_style/Breadboard"
 msgstr "集成电路"
 
@@ -23836,7 +24434,7 @@ msgid "special_style/Cz20_ShPTK_TVP_100_mm_3DSt_22MM_desc/long"
 msgstr ""
 "今天是玛蒂娜的首演之夜。她很紧张。我记得她为了得到这个角色是多么努力！那些无休止的深夜彩排，学习那些部分—F6那部分她真是费了很多功夫！哦，我那时候真是烦透了。我都以为她的女高音会在我头上钻个洞…现在我是多么怀念她的女高音啊。亲爱的，我非常抱歉没有办法参加今天晚上的首演，你将不得不看到演出厅里空着一个座位，那是我的座位。但我希望你能理解，我有我的职责。我甚至用你期待已久的角色命名了我的坦克。我知道你现在很紧张，但我也知道你一定会成功的。我亲爱的玛蒂娜，你今晚肯定会收到满堂的掌声和鲜花。我…我今天早上发现自己竟然在哼唱你要唱的那段，我也是自己学会的。\n"
 "\n"
-"我本想把‘Der Hölle Rache kocht in meinem Herzen（复仇怒火在我心中焚烧）’这几个字刻在坦克炮管上，但我的指挥官拒绝了我的请求，还训斥了我一顿。我不怪他，对他来说，莫扎特并不是德语中最具代表性的东西。"
+"我本想把‘Der Holle Rache kocht in meinem Herzen（复仇怒火在我心中焚烧）’这几个字刻在坦克炮管上，但我的指挥官拒绝了我的请求，还训斥了我一顿。我不怪他，对他来说，莫扎特并不是德语中最具代表性的东西。"
 
 msgid "special_style/Cz20_ShPTK_TVP_100_mm_CO_3DSt"
 msgstr "索提戈"
@@ -23898,6 +24496,14 @@ msgstr ""
 "也许沙漠动物会好一点？但要什么动物呢？没有什么好的，只有鼠类跟虫子，这不够好。那只偷吃我面包的鸟叫什么名字？勒马丁队长与猫头鹰，嗯这个不错，听起来很有英雄气概，对于时间地点原因都不详的秘密行动来说非常合适。算了别再想了，我运气不好，所有参与者的称号、徽章与坦克名称都会在列表中，而我会被分配在“其他”的类别。\n"
 "\n"
 "现在我知道为什么她会一直盯着我看了，我忘了把武器清洁用具还给她。就像我刚刚说的，我的运气不好。”"
+
+msgid "special_style/F10_AMX_50B_BPXVIII_3Dst"
+msgstr "强化机制"
+
+msgid "special_style/F10_AMX_50B_BPXVIII_3Dst_desc/long"
+msgstr ""
+"\"看好了！这还是AMX 50 "
+"B，但已经面貌一新。现在她可是头猛兽！激光测距仪与自动炮？用来发起闪电攻击，让敌人连眨眼的机会都没有！烟幕弹发射器？安排！她能消失于混乱烟幕中，让对手望尘莫及。潜渡装备？妙极了！如今她可肆意突袭战场腹地——整片战场都是她的游乐场！更快速、更坚毅、更危险...既然能随心所欲地改变现实，还要蓝图和规则何用？朋友，我不仅是升级了这位美人，更是解放了她。\""
 
 msgid "special_style/F110_Lynx_6x6_3Dst_HW23"
 msgstr "捕猎者"
@@ -24132,6 +24738,13 @@ msgstr ""
 " "
 "Mika(车长)、Aki(炮手兼装填手)、Mikko(驾驶员)。BT-42最适合近距离缠斗，因为这种距离可以充分发挥其高倍径榴弹炮的威力，振奋人心的康特勒琴乐曲\"沙基雅尔文·波尔卡\"则可以进一步提高坦克乘员的战斗效能。在继续高中协助大洗女子学园对抗大学选拔队的战斗中，BT-42迎来了属于自己的高光时刻，它凭借克里斯蒂悬挂装置在没有履带的情况下疾驰，并且英勇地击毁了一整个小队的M26"
 " \"潘兴\"。"
+
+msgid "special_style/G42_Maus_BPXVIII_3Dst"
+msgstr "钢铁凝视"
+
+msgid "special_style/G42_Maus_BPXVIII_3Dst_desc/long"
+msgstr ""
+"\"这些年我见过无数坦克，但这辆截然不同。它诞生于爆破试验场，然后由像我这样的工程师精雕细琢，无疑将凌驾于所有前代坦克之上。它高大威猛、雷霆万钧、经受无数次严苛测试——每一道战地标记都讲述着它所承受的考验。照明弹发射器、地雷探测器，还有那盏刺眼的探照灯？不过是我加装的一部分利器。真正的奥秘藏在它的装甲里。经过齐默里特涂层强化的结构，每一层都为残酷战场而生。坦克战斗的未来已然降临，相信我，这就像抡着攻城锤参加匕首决斗。\""
 
 msgid "special_style/G42_Maus_BXI_3DSt"
 msgstr "沙漠之舟"
@@ -24616,6 +25229,22 @@ msgstr ""
 "嘶吼之声，可穿山林。众兽慑其威，而避而远之。惟同类相争，欲夺群首，至终方休。\n"
 "生于山野之外，心存天地之间。此兽乃自然之馈赠。人羡其洪荒之力，遂谓之野牛，歌以颂之。"
 
+msgid "special_style/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_1"
+msgstr "灰烬使者: 白银"
+
+msgid "special_style/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_2"
+msgstr "灰烬使者: 黄金"
+
+msgid "special_style/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_3"
+msgstr "灰烬使者: 勇士"
+
+msgid "special_style/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_4"
+msgstr "灰烬使者: 传说"
+
+msgid "special_style/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_desc/long"
+msgstr ""
+"自鸿蒙初开便是英雄天敌，亘古传说中最为骇人的存在。这头狂怒与神力化身的巨兽，历经万载沉眠终苏醒。复仇之火在其眼中闪烁——凡胆敢拦路者，纵有重甲护体亦难逃湮灭。"
+
 msgid "special_style/Pl19_CS_52_LIS_autumn"
 msgstr "欺诈之主"
 
@@ -24746,6 +25375,22 @@ msgid "special_style/R40_T-54_3Dst_HW20_desc/long"
 msgstr ""
 "“我参军的时候可没料到会有今天！有人告诉我这支部队是精英中的精英，但是… "
 "你能想象吗，整个维修区只有一把32号扳手！焊接合金储备只够用几天。我不知道用什么代替。也许能用銤元素？这些坦克看起来像恐怖的圣诞树，到处都在短路，冒着火花。当然，那些同盟天才们并没有料到这些钢铁巨兽会抛锚，所以也没有提供蓝图或指南。我不知道它是怎么运转的…一支精英部队，哈…我爸是个聪明人…我该听他的话的…我本来可以在安逸的音乐厅里演奏我的小提琴，美好而轻松。但我来了这，在齐膝深的石油中向所有的神祈祷，让这些坦克…和乘员都能安全回到维修区。不要像之前那样…”"
+
+msgid "special_style/R45_IS-7_BPXVIII_3Dst"
+msgstr "强硬路线"
+
+msgid "special_style/R45_IS-7_BPXVIII_3Dst_desc/long"
+msgstr ""
+"实地测试日志: 机械师A·\n"
+"\n"
+"第05号记录:\n"
+"副炮塔运转正常。车体稳定性达标。新的侧面间隙装甲安装完毕。扫雷器支架稳固。半桶燃料余量稳定。图形叠加层已应用——指挥部称之为\"涂鸦\"。真是一群目光短浅的蠢材。\n"
+"\n"
+"第027号记录:\n"
+"机动性已调校。防水密封有效。抗辐射涂层已完成。车身上已写满笔记。他们说这辆车\"被附身了\"。很好。那就让它开口说话吧。\n"
+"\n"
+"第052号记录:\n"
+"响应瞬时。操控精准。红外系统上线——探照灯、车头灯和潜望镜已同步。测距仪精准。炮管强化完毕。这不是进化，这是取而代之。若他们因此不安，那就随他们去吧。"
 
 msgid "special_style/R45_IS_7_3DSt_HW_21"
 msgstr "流纹岩"
@@ -24881,6 +25526,20 @@ msgstr "搜寻并击毁"
 
 msgid "special_style/Wt24HOUND_desc"
 msgstr "一款可在最终兵器:终焉活动期间获得的全地形风格。"
+
+msgid "special_style/Wt25Harrier"
+msgstr "一网打尽"
+
+msgid "special_style/Wt25Harrier_desc"
+msgstr ""
+"一款全地形风格，可在最终兵器:时空悖论活动期间获取。空气中始终弥漫着追猎的气息。一旦狩猎开始，结局便已注定——即便猎物躲进战斗机器...或时间之中。"
+
+msgid "special_style/Wt25Mirium"
+msgstr "銤元素驱动"
+
+msgid "special_style/Wt25Mirium_desc"
+msgstr ""
+"一款全地形风格，可在最终兵器:时空悖论活动期间获取。它承载着不属于这个次元的能量低鸣——紫色幽光如残存记忆般萦绕不散。某些事物曾被触及...亦或，它们早已反向渗透。"
 
 msgid "special_style/ac"
 msgstr "高贵"
@@ -25751,15 +26410,17 @@ msgstr "讨价还价"
 msgid "special_style/blackdigital_desc"
 msgstr "一种适用于哪些习惯在每年黑色星期五销售期间排队的全地形风格。"
 
-msgid "special_style/boosteroid_04"
-msgstr "破浪前行"
+msgid "special_style/blend_in"
+msgstr "融为一体"
 
-msgid "special_style/boosteroid_04_desc"
+msgid "special_style/blend_in_desc"
 msgstr "?empty?"
 
-msgid "special_style/boosteroid_04_desc/long"
+msgid "special_style/blend_in_desc/long"
 msgstr ""
-"浪来了！此刻，唯有您与海洋相对。眼前是一片无垠的蔚蓝，海浪翻涌而起，又轰然拍碎在绵软的沙滩上。一米、三米、五米、十米...大自然的原始力量在您面前奔腾咆哮。面对高耸的海浪，你虽显渺小，却意志坚定、全神贯注。一如往常，您稳了稳冲浪板，深吸一口气，奋力划向浪区。是时候征服那道巨浪了。"
+"你看不见我！哦，等等，你能看见？嗯，肯定是还没变色。我是如何做到的？哦，经常有人问我这个问题。老实说，我自己也不太清楚，可能和我的色素之类的东西有关吧。"
+" "
+"等等，你是说你得特意把坦克隐蔽起来，才能不被别人看到？还要用什么特殊配件、涂装之类的？哇，太离谱了…总之，我得走了，还有人等着我，还有苍蝇要抓呢。刚才还能看见我，现在又看不到了！"
 
 msgid "special_style/bovington"
 msgstr "庆典之王"
@@ -26163,6 +26824,45 @@ msgstr "一款全地形风格，致敬参加诺曼底行动的盟军伞兵。"
 msgid "special_style/bp_2024_4_desc/long"
 msgstr "一款全地形风格，致敬参加诺曼底行动的盟军伞兵。数以千计的盟军空降兵被派往占领下方海滩周围的关键位置，协助后续的大规模两栖登陆。"
 
+msgid "special_style/bp_2025_18_1"
+msgstr "黑板风暴"
+
+msgid "special_style/bp_2025_18_1_desc"
+msgstr "在这款全地形风格中的草图里，智慧与力量激情碰撞。"
+
+msgid "special_style/bp_2025_18_1_desc/long"
+msgstr ""
+"这款风格布满随手勾勒的草图与凌乱的公式，将数学与混战巧妙融合。每一道粉笔线条、每一幅粗糙草图，都构成了毁灭的蓝图，彰显出真正的力量来自头脑与肌肉的结合。应用这款风格，让涂鸦化作制胜的利器。"
+
+msgid "special_style/bp_2025_18_2"
+msgstr "误差禁区"
+
+msgid "special_style/bp_2025_18_2_desc"
+msgstr "这里没有误差的容身之处，亦无需运气眷顾。"
+
+msgid "special_style/bp_2025_18_2_desc/long"
+msgstr ""
+"您装甲上每一道数字与图形刻痕，都是无数不眠之夜、反复试错与过量咖啡因的成果。这款风格专为那些不断测试、微调，将坦克磨炼到足以应对任何战场挑战的指挥官。胜负不靠运气，而是靠精准计算出真正有效的方法...并在它失效时立刻修正。"
+
+msgid "special_style/bp_2025_18_3"
+msgstr "X.5修订版"
+
+msgid "special_style/bp_2025_18_3_desc"
+msgstr "计划常变，但前进的脚步不会停。"
+
+msgid "special_style/bp_2025_18_3_desc/long"
+msgstr ""
+"在这里，焦急的双手用粉笔头绘制出了蓝图。紧张进行的计算工作，用手边材料临时修补的装甲，写在车体上的每一条笔记，均是让这辆坦克免遭报废的关键。完美留到以后再说——这款风格的意义在于确保尘埃落定之后，引擎依然轰鸣。"
+
+msgid "special_style/bp_2025_18_4"
+msgstr "巅峰之作"
+
+msgid "special_style/bp_2025_18_4_desc"
+msgstr "打破您所认为的可能性边界。"
+
+msgid "special_style/bp_2025_18_4_desc/long"
+msgstr "这款试验型外观历经无数试炼，每一道醒目的波状线条都预示着毁灭艺术的全新浪潮正在降临。"
+
 msgid "special_style/bp_holiday_1"
 msgstr "拟态聚合金"
 
@@ -26248,6 +26948,16 @@ msgstr "生活就像一盒巧克力。您永远不知道下一颗是什么味道
 msgid "special_style/candy_desc/long"
 msgstr ""
 "回想起小时候，对于那时的我来说，圣诞节的意义就是得到一盒巧克力。铝箔纸发出的沙沙声，把第一颗放进嘴里，慢慢融化的巧克力轻触并包裹着味蕾…那时候的我是个多么快乐的孩子。童年记忆，回味无穷。"
+
+msgid "special_style/catching_waves"
+msgstr "破浪前行"
+
+msgid "special_style/catching_waves_desc"
+msgstr "?empty?"
+
+msgid "special_style/catching_waves_desc/long"
+msgstr ""
+"浪来了！此刻，唯有您与海洋相对。眼前是一片无垠的蔚蓝，海浪翻涌而起，又轰然拍碎在绵软的沙滩上。一米、三米、五米、十米...大自然的原始力量在您面前奔腾咆哮。面对高耸的海浪，你虽显渺小，却意志坚定、全神贯注。一如往常，您稳了稳冲浪板，深吸一口气，奋力划向浪区。是时候征服那道巨浪了。"
 
 msgid "special_style/cats"
 msgstr "猫咪爱盒子"
@@ -26405,6 +27115,27 @@ msgstr "爆发"
 msgid "special_style/clans_event_2024_desc/long"
 msgstr ""
 "他们根本不了解自己脚下沸腾的怒火。四个世纪以来，山谷里的土地从未颤抖过，但谁给了这里的人类亵渎山神、盗取资源、建造原始住所、蔑视大自然的权利？他们的存在如此脆弱，如此微不足道，却胆敢威胁我这个不朽的守护者。他们很快就会认识到自己的愚蠢。我体内熊熊燃烧的火焰将冲出世界，吞噬一切，因为我是火神，我就是毁灭，没有人能挑战我。让人类因恐惧而颤抖吧。毕竟，他们唤醒了野兽，必须为此付出代价。"
+
+msgid "special_style/cn360_mid_autumn_2025_1"
+msgstr "玉兔呈祥"
+
+msgid "special_style/cn360_mid_autumn_2025_1_desc"
+msgstr "一款全地形风格，灵感源于传说中的玉兔。"
+
+msgid "special_style/cn360_mid_autumn_2025_1_desc/long"
+msgstr ""
+"一日，玉帝需寻一灵兽炼制长生药，因凡人不可托付。他化作乞丐游走林间，佯装乞食。猿、狐、兔闻声而来: "
+"猿采鲜果，狐捕肥鱼，唯兔仅得野草。兔欲助而无物可献，遂纵身跃入火中以为供奉。玉帝感其至诚，救兔升月。至今望月，犹见玉兔捣药之影。"
+
+msgid "special_style/cn360_mid_autumn_2025_2"
+msgstr "十日并出"
+
+msgid "special_style/cn360_mid_autumn_2025_2_desc"
+msgstr "一款全地形风格，灵感源于传说中的十日炙天。"
+
+msgid "special_style/cn360_mid_autumn_2025_2_desc/long"
+msgstr ""
+"传说在远古之时，天有十日，轮值巡天。日久倦怠，遂并升于空。然十日并出，焦金流石，江河涸竭，嘉禾尽枯，生灵避炽，走兽藏踪。当是时也，有神羿援弓射日，九曜俱陨，独留其一。自此，一日凌空，天行有常。"
 
 msgid "special_style/cn360_relaunch_820"
 msgstr "守望相助"
@@ -26656,7 +27387,7 @@ msgstr "?empty?"
 msgid "special_style/crimson_wind_desc/long"
 msgstr ""
 "人们总说起那个地方——腥风阵阵，土地浸湿，落叶在暮光中化为余烬。无人目睹那名武士的身影掠过，然而当风再起时，他刀锋的低语仍能划破寂静。\n"
-"长者如此低吟，古卷亦如是记载——一位沉默的武士，用褪色墨迹描绘而成，铠甲因岁月而失去光泽，姓名早已湮没在历史之中。他的战绩早已尘封，他的故事几近遗忘…但他的誓言仍未消散。他挥剑，并非为荣耀，而是为那不言之责、未竟之志。当清风拂过，请切记——那绯红之风，仍承载着他的誓言。"
+"长者如此低吟，古卷亦如是记载——一位沉默的武士，用褪色墨迹描绘而成，铠甲因岁月而失去光泽，姓名早已湮没在历史之中。他的战绩早已尘封，他的故事几近遗忘...但他的誓言仍未消散。他挥剑，并非为荣耀，而是为那不言之责、未竟之志。当清风拂过，请切记——那绯红之风，仍承载着他的誓言。"
 
 msgid "special_style/czech_style"
 msgstr "J系创立"
@@ -26790,6 +27521,16 @@ msgstr "一款全地形风格，颂扬神话中神通广大的龙王。"
 msgid "special_style/dragonboat_2024_desc/long"
 msgstr ""
 "\"龙王慈悲济世，解救万民于水火，受人敬仰。既能呼风唤雨，又掌管江洋湖泊。无论是葱郁土地上奔流不息的河流、山间月光下波光粼粼的湖泊，还是广阔的海洋，均在其掌管之下。最强大的战舰、最令人自豪的帆船，在其眼中皆如纸船一般。因此，我们要感恩这位守护者，让我们每天都能顺利穿过凶险水域，安然无事。\""
+
+msgid "special_style/dwelling_dragons"
+msgstr "小心恶龙"
+
+msgid "special_style/dwelling_dragons_desc"
+msgstr "?empty?"
+
+msgid "special_style/dwelling_dragons_desc/long"
+msgstr ""
+"古时候，地图绘制者会在已知世界的边缘标上\"小心恶龙\"的字样和可怕的神兽形象，以警示未知区域潜藏的危险。然而，他们并未意识到，龙不仅栖息在遥远的地球边缘，它们其实近在咫尺，深藏在古老的山脉和被遗忘的废墟中。它们熔岩般的双眼在黑暗中闪烁，伴有火焰的呼吸在寂静中回响——它们藏匿于凡人视线之外，静静等待，准备再次现身。"
 
 msgid "special_style/easter_west"
 msgstr "复活节兔子"
@@ -27017,13 +27758,13 @@ msgid "special_style/football_tms1"
 msgstr "前锋: 类型1"
 
 msgid "special_style/football_tms1_desc/long"
-msgstr "特殊的全地形风格，基于Himmelsdorfer Mäuschen足球队的主场颜色，授予满足坦克世界2018活动条件的玩家。"
+msgstr "特殊的全地形风格，基于Himmelsdorfer Mauschen足球队的主场颜色，授予满足坦克世界2018活动条件的玩家。"
 
 msgid "special_style/football_tms2"
 msgstr "前锋: 类型2"
 
 msgid "special_style/football_tms2_desc/long"
-msgstr "特殊的全地形风格，基于Himmelsdorfer Mäuschen足球队的客场颜色，授予满足坦克世界2018活动条件的玩家。"
+msgstr "特殊的全地形风格，基于Himmelsdorfer Mauschen足球队的客场颜色，授予满足坦克世界2018活动条件的玩家。"
 
 msgid "special_style/football_tms3"
 msgstr "前锋: 类型3"
@@ -27089,6 +27830,16 @@ msgstr "这是一款独特的地形风格，在2019年假日行动期间完成�
 
 msgid "special_style/frost_desc/long"
 msgstr "独特的全地形风格，在2019年假日行动期间完成圣诞节收藏。它使你的车库恢复了节日的气氛。没有系别限制。"
+
+msgid "special_style/fully_boosted"
+msgstr "全面提升"
+
+msgid "special_style/fully_boosted_desc"
+msgstr "?empty?"
+
+msgid "special_style/fully_boosted_desc/long"
+msgstr ""
+"您的坦克充满无穷能量，随时准备战斗。它在战场上灵活机动，游刃有余，突破敌方围追堵截后，以毁灭性的精度击毁追兵。对手们敬畏地看着这辆势不可挡的战斗机器，对其指挥官的战斗技巧赞叹不已。"
 
 msgid "special_style/fw_2022_style"
 msgstr "羽翼和利爪"
@@ -27537,6 +28288,16 @@ msgstr ""
 msgid "special_style/liveops_desc"
 msgstr "一款为隐蔽任意等级的坦克而设计的全地形风格。"
 
+msgid "special_style/liveops_hw_2025"
+msgstr "锢灵低语"
+
+msgid "special_style/liveops_hw_2025_desc"
+msgstr "它们仍困于其中，妄图破笼而出。一款全地形风格，帮助您反思蛰伏的暗面。"
+
+msgid "special_style/liveops_hw_2025_desc/long"
+msgstr ""
+"这辆坦克显然已被某种存在彻底侵蚀。装甲会在无人注视时诡谲蠕动，本应平整的表面诡异地隆起。当引擎沉寂时，车体如胸腔般起伏，而金属表层之下，无数手掌正疯狂推撞——指节扭曲变形，指甲刮擦出刺耳声响。有时还能看到脸孔——嘴巴定格在尖叫的瞬间，五官扭曲在无声的恐惧中。装甲虽勉强维持着形态，却已被不可名状之物撑出非自然的凸起。这辆战斗机器早已无需燃油驱动...它的动力来自其他物质。"
+
 msgid "special_style/liveops_manga"
 msgstr "喵女"
 
@@ -27702,7 +28463,7 @@ msgstr "一款全地形风格，献给为光明与正义而战的勇士。"
 
 msgid "special_style/liveops_upsell_1_desc/long"
 msgstr ""
-"\"并非人人皆配得上此等荣耀。细看——她非锻造而成，乃受祝圣化。那抹流光？是使命的映照，如捍卫正义之刃般凛冽。那些铭文？讲诉着以勇气赢取而非掠夺之战绩的故事。那些蓝宝石缀饰？纯净而坚毅，如美德直面罪恶。她行如流云，超然诱惑，无可指摘。世人多不解其真意，更鲜有般配者…但心怀荣耀而战之人，必得她回应。\""
+"\"并非人人皆配得上此等荣耀。细看——她非锻造而成，乃受祝圣化。那抹流光？是使命的映照，如捍卫正义之刃般凛冽。那些铭文？讲诉着以勇气赢取而非掠夺之战绩的故事。那些蓝宝石缀饰？纯净而坚毅，如美德直面罪恶。她行如流云，超然诱惑，无可指摘。世人多不解其真意，更鲜有般配者...但心怀荣耀而战之人，必得她回应。\""
 
 msgid "special_style/liveops_upsell_2"
 msgstr "背誓之影"
@@ -27712,11 +28473,22 @@ msgstr "一款邪魅的全地形风格，引领您拥抱阴暗面。"
 
 msgid "special_style/liveops_upsell_2_desc/long"
 msgstr ""
-"\"你竟敢问我如何获得此物？这岂是偶然。当众生安于平庸时，我夺取了无人敢觊觎之物。鎏金纹？出自宗师之手——只为铭刻我的力量。啊，我见你盯着这些宝石。它们可不会凭空落入凡人之手。此非装甲，而是统御之具象…供奉我统治的祭坛。你尽可瞻仰，但永远无法拥有——除非你能如我这般凌驾众生。不过朋友，记住:"
+"\"你竟敢问我如何获得此物？这岂是偶然。当众生安于平庸时，我夺取了无人敢觊觎之物。鎏金纹？出自宗师之手——只为铭刻我的力量。啊，我见你盯着这些宝石。它们可不会凭空落入凡人之手。此非装甲，而是统御之具象...供奉我统治的祭坛。你尽可瞻仰，但永远无法拥有——除非你能如我这般凌驾众生。不过朋友，记住:"
 " 头戴王冠，寝食难安。\""
 
 msgid "special_style/localpartner2_2018_style_01"
 msgstr "网络"
+
+msgid "special_style/ls20_pve"
+msgstr "战斗金属"
+
+msgid "special_style/ls20_pve_desc"
+msgstr "一款历经战火的全地形风格，专为英勇无畏的坦克而设计——因为它们已经克服了不可能的挑战。"
+
+msgid "special_style/ls20_pve_desc/long"
+msgstr ""
+"铁锈好处多多。它不会反光，有助于坦克隐蔽，甚至可以作为一种保护涂层，以某种方式为坦克提供\"防护\"。\n"
+"黄金不会生锈，但柔软的材质意味着它在战斗中毫无用处。战斗金属当属钢铁。无论是覆盖着伪装网、涂上油漆，还是沾满泥土、烟灰、锈迹等等，它依然不失本色，坚固可靠。在敌人炮弹的毁灭性打击下，它不会让您失望，也不会支离破碎。事实上，受到炮弹冲击的钢铁甚至比最纯净的黄金都更加闪耀。"
 
 msgid "special_style/ls25_2d"
 msgstr "异象标记"
@@ -28422,6 +29194,16 @@ msgstr ""
 "枪应该是你手臂的延伸。手臂伸直，身体的其他部分转向一侧，然后向后倾斜一点来保持平衡。不要让另一只手导致你失去平衡，所以要确保它不在你身体旁摆来摆去。你可以放在胸前，也可以插在兜里，都没关系。现在是双腿。两腿分开，与肩同宽，放在左腿上的重心要比右腿多一点。抬头挺胸，直视目标。你已经知道前准星、后准星和目标应该在一条直线上，但让我再教你一招:"
 " 哪只手握枪就用哪边的眼睛瞄准。不客气。\""
 
+msgid "special_style/one_time_gift_2025"
+msgstr "新纪元"
+
+msgid "special_style/one_time_gift_2025_desc"
+msgstr "一款全地形风格，专为那些见证了新纪元曙光的人们而设计。"
+
+msgid "special_style/one_time_gift_2025_desc/long"
+msgstr ""
+"石器被金属取代，长矛让位于火药，堑壕战终结于钢铁洪流。每一个战事纪元都会催生新武器，也带来新挑战。如今，世界再度站在转折点上——先进装甲、尖端火力、现代战术与战略，均将定义明天的战场。过往已是历史，而未来正沿着创新的轨迹轰鸣向前。新纪元由您书写。您是否已做好准备？"
+
 msgid "special_style/onguard"
 msgstr "忠诚守护"
 
@@ -28432,6 +29214,17 @@ msgid "special_style/onguard_desc/long"
 msgstr ""
 "俗话说，狗是人类最好的朋友。原因很简单: "
 "早在40000年前，它就被人类驯化了。40000年来一直忠心耿耿、陪伴左右，同时还为人类捕获猎物。或者说，人类40000年来对它们宠护有加、爱抚遛弯——这点取决于狗的种类。无论如何，让我们祝愿这种关系再续40000年！"
+
+msgid "special_style/onslaught_2025_azure_dragon"
+msgstr "威龙称霸(苍蓝)"
+
+msgid "special_style/onslaught_2025_azure_dragon_annual"
+msgstr "威龙称霸"
+
+msgid "special_style/onslaught_2025_azure_dragon_desc/long"
+msgstr ""
+"龙乃神话谱系中最威严亦最凶暴的存在。各族文明对其形态诠释各异: "
+"或为盘绕山岳的巨蟒，或是双翼投下绝望的泰坦。但所有传说都认同一点——这位天地之主的力量绝非凡人可驾驭。有传言其蛰伏群山深处，吐息便能熔岩成河；亦有人认为它苏醒只为将城邦化为焦土。英雄为荣耀寻它，帝王为力量觅它，但唯有愚者才敢挑战这无情怒火的化身。"
 
 msgid "special_style/onslaught_autumn_2025_blue"
 msgstr "钢铁意志"
@@ -28541,6 +29334,22 @@ msgstr ""
 msgid "special_style/onslaught_light"
 msgstr "顿悟"
 
+msgid "special_style/onslaught_light_2025"
+msgstr "轻装上阵"
+
+msgid "special_style/onslaught_light_2025_desc"
+msgstr "一款全地形风格，专为轻量级天梯战而设计。"
+
+msgid "special_style/onslaught_light_2025_desc/long"
+msgstr ""
+"轻量级(名词): \n"
+"\n"
+"1 — 指物体重量轻或资源占用少；\n"
+"\n"
+"2 — 按体重划分的竞赛级别，或比喻实力层级；\n"
+"\n"
+"3 — 《坦克世界》天梯战游戏模式的试验性版本，让玩家有机会在轻松氛围中，享受天梯战的7对7核心对抗体验。轻量级天梯战特色鲜明，节奏更轻松，不设资格赛和段位，更完全移除了自行火炮。"
+
 msgid "special_style/onslaught_light_desc/long"
 msgstr ""
 "\"我感觉...好轻松。怎么回事？往常不会这样。即使是7对7的战斗也会非常激烈，有时我会觉得天梯战永无止境。但这次...不一样。我很放松。对吧？你也觉得坦克战斗不应该这么轻松，但战斗氛围就是这样。即使给这辆坦克涂上忧郁的蓝色，它看起来也让人心旷神怡——好像我在哪个海滩上度假，看着海浪拍打海岸，喝着热带饮品。而且它安静得出奇，好像少了点什么。我知道了——没有自行火炮的轰鸣！我不知道你是怎么想的，但我觉得这样不赖...\""
@@ -28636,6 +29445,36 @@ msgstr "数码迷彩"
 msgid "special_style/pixel_desc"
 msgstr "特殊的风格，奖励授予在领土战上取得个人和军团成就的玩家。"
 
+msgid "special_style/pm3_a179"
+msgstr "荣耀黑岩"
+
+msgid "special_style/pm3_a179_desc"
+msgstr "一款全地形风格，奖励给在黑岩作战行动中完成全部任务的玩家。"
+
+msgid "special_style/pm3_a179_desc/long"
+msgstr ""
+"一款全地形风格，奖励给在黑岩作战行动中完成全部任务的玩家。您在战斗中无畏勇猛，与对手近身交战毫无惧色。无论任务为何，您都以坚韧、精准和不可动摇的决心冲锋在前——直至正义最终实现。"
+
+msgid "special_style/pm3_cz21"
+msgstr "荣耀\"掠食者\""
+
+msgid "special_style/pm3_cz21_desc"
+msgstr "一款全地形风格，奖励给在\"掠食者\"作战行动中完成全部任务的玩家。"
+
+msgid "special_style/pm3_cz21_desc/long"
+msgstr ""
+"一款全地形风格，奖励给在\"掠食者\"作战行动中完成全部任务的玩家。您的敌人往往猝不及防——即便察觉，也为时已晚，因为您不出手则已，一击必如雷霆万钧。对待对手，您从不留情；但守护盟友时，您却会化作最坚韧的盾——凡需您庇护之人，您纵使赴汤蹈火亦在所不惜。"
+
+msgid "special_style/pm3_g184"
+msgstr "荣耀风猎者"
+
+msgid "special_style/pm3_g184_desc"
+msgstr "一款全地形风格，奖励给在风猎者作战行动中完成全部任务的玩家。"
+
+msgid "special_style/pm3_g184_desc/long"
+msgstr ""
+"一款全地形风格，奖励给在风猎者作战行动中完成全部任务的玩家。您如暗影般运筹帷幄，以战略眼光与战术智慧激发出盟友的极限潜能。作为每场胜利背后的无声力量，您不仅主宰战场风云——更可能扭转历史的进程。"
+
 msgid "special_style/polish_independence_day"
 msgstr "B系庆典"
 
@@ -28676,7 +29515,7 @@ msgstr "一款全地形风格，献给F系庆典。"
 
 msgid "special_style/pub_west_bastille_day_desc/long"
 msgstr ""
-"1789年7月14日，数百名市民冲进了巴士底狱——这座王室监狱是苛政与压迫的象征，如今落入了平民之手。尽管在大革命中还有更具深远影响的日子，但没有哪一天比这天更有象征意义。那天传遍全境的信息十分明确:"
+"1789年7月14日，数百名市民冲进了巴士底狱——这座王室监狱是苛政与压迫的象征，如今落入了平民之手。尽管在大革命中还有更具深远影响的日子，但没有哪一天比这天更具象征意义。那天传遍全境的信息十分明确:"
 " 旧制度的末日已经到来，希望的曙光也已降临。为了纪念这一事件，每年7月14日，F系人民都会隆重欢庆这一重大节日。"
 
 msgid "special_style/pub_west_charity_1"
@@ -28707,6 +29546,15 @@ msgid "special_style/pub_west_desc/long"
 msgstr ""
 "在激战中，您需要一套值得信赖的配置、一套关键时刻绝不掉链子的设定。操控设备如同您的肢体延伸——运用自如，毫无延迟，唯有疾如闪电的反应与纯粹的技巧。四键启程，却蕴藏无限制胜可能。全局在握，此刻，一展您的风采。"
 
+msgid "special_style/pub_west_germany_reunification_2025"
+msgstr "D系庆典"
+
+msgid "special_style/pub_west_germany_reunification_2025_desc"
+msgstr "一款全地形风格，纪念D系庆典。"
+
+msgid "special_style/pub_west_germany_reunification_2025_desc/long"
+msgstr "曾几何时，钢筋混凝土和铁丝网将一切一分为二，但这些陈旧的壁垒终将被历史的洪流冲垮。"
+
 msgid "special_style/pub_west_socialmedia"
 msgstr "深度触网"
 
@@ -28716,6 +29564,17 @@ msgstr "一款全地形风格，专为纵横网络世界的征服者而设计。
 msgid "special_style/pub_west_socialmedia_desc/long"
 msgstr ""
 "关注、点赞、订阅——规矩您都懂。您是否是那种扎根网络世界、全天候待命的指挥官？那么这款风格正是为您量身定制！踏入这个像素与力量交织、沟通无界限的领域。整装备战，保持在线，永不言败！"
+
+msgid "special_style/pub_west_streamer"
+msgstr "绚丽极光"
+
+msgid "special_style/pub_west_streamer_desc"
+msgstr "一款全地形风格，灵感源于北极光的神圣之美。"
+
+msgid "special_style/pub_west_streamer_desc/long"
+msgstr ""
+"\"在风神的指引下，我驶向已知世界的尽头，那里的海洋如千狮怒吼。我凝望着荒凉的雪原，前所未见的巨兽在岸边游荡。然而，当黑夜降临——啊，那个夜晚实在令人难忘！苍穹烬燃，紫色烈焰翻腾于天际，宛如众神亲手以光芒织就。此刻，我站在您面前，立誓此言非虚:"
+" 诸神自有其火，而那火正燃于世间至寒之地。\""
 
 msgid "special_style/pub_west_token_1"
 msgstr "随风起舞"
@@ -29678,6 +30537,26 @@ msgstr "50TP坚韧"
 msgid "special_style/ua_charity_1_desc"
 msgstr "?empty?"
 
+msgid "special_style/v2_0_solo_1"
+msgstr "天顶-11型"
+
+msgid "special_style/v2_0_solo_1_desc"
+msgstr "一款全地形风格，融合复古未来主义与绝密军工科技——不过您可不是从我们这儿听说的。"
+
+msgid "special_style/v2_0_solo_1_desc/long"
+msgstr ""
+"在遥远北方的一座崎岖孤岛上——这座岛屿从未出现在任何民用地图上——一辆坦克如同穿越空气般滑出车库。这座设施从未被官方承认，这辆坦克也从未存在于记录中。它身上布满无名战斗留下的伤痕，\"绝密\"印章警告着任何试图探究真相的人。但它那被灼烧过的钛合金外壳，却让车组乘员想起了另一种载具——不是为了突破敌军防线，而是为穿越星辰而造的原型车。当人类曾向天祈求永恒的和平时——他们大概没想到，回应会以这种形式到来。"
+
+msgid "special_style/v2_0_solo_2"
+msgstr "北境苔锈"
+
+msgid "special_style/v2_0_solo_2_desc"
+msgstr "应用这款低调的全地形风格，让苔藓与铁锈成为您的天然涂装，助您避开敌方火力。即使在战场之上，它也如同大自然母亲，为您提供掩护。"
+
+msgid "special_style/v2_0_solo_2_desc/long"
+msgstr ""
+"千百年来，这座北海岛屿始终笼罩在雾霭与寂静中。直到某日，钢铁洪流不请自来。暴风雨与炮火交织，使土地与装甲千疮百孔。当硝烟散作诡谲的平静，乘员们不安地发现，苔藓与锈迹正以某种似曾相识的图案侵蚀车体——仿佛岛屿本身正在标记入侵者。这绝非普通涂装，而是某种源自洪荒的诡异契约，其玄奥远超人类理解。"
+
 msgid "special_style/valentine2024"
 msgstr "爱意弥漫"
 
@@ -29776,6 +30655,17 @@ msgstr "?empty?"
 
 msgid "special_style/waitangi_day_desc/long"
 msgstr "这种全地形风格是为了纪念怀唐伊日。"
+
+msgid "special_style/watcher_wakes"
+msgstr "觉醒之眼"
+
+msgid "special_style/watcher_wakes_desc"
+msgstr "有什么东西在暗中凝视——应用这款全地形风格，做好应对准备。"
+
+msgid "special_style/watcher_wakes_desc/long"
+msgstr ""
+"这本该是一次例行巡逻。靴子里灌满沙子，烈日灼烤着后背，无线电台里只有静电杂音。接着地面突然颤动。有什么东西从沙下蠕动而出，仿佛沙漠正试图咳出它的秘密。陈旧泛黄的绷带，干枯脆弱。而在其后…眼睛。几十只巨大、浑圆的橙色眼睛，如同刚结束千年长眠般猛然睁开——而且显然对眼前的一切感到不悦。那东西没有开口。只是凝视。像是在盘算一场交易:"
+" 用你们的坦克换它的陵墓。自那以后，再没人自愿参加沙漠巡逻了。"
 
 msgid "special_style/wci_2024_1"
 msgstr "锲而不舍"
@@ -30017,7 +30907,10 @@ msgid "statTrackers"
 msgstr "战绩追踪器"
 
 msgid "statTrackers/statTracker_01"
-msgstr "战绩追踪器"
+msgstr "击毁坦克"
+
+msgid "statTrackers/statTracker_01/description"
+msgstr "战绩追踪器可作为该坦克的精英奖励之一获得。"
 
 msgid "statsTracker/entryPoint"
 msgstr "战绩追踪器"

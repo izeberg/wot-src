@@ -2,7 +2,6 @@ package net.wg.gui.lobby.settings
 {
    import flash.events.Event;
    import flash.text.TextField;
-   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.gui.components.advanced.FieldSet;
    import net.wg.gui.components.controls.CheckBox;
@@ -29,8 +28,6 @@ package net.wg.gui.lobby.settings
       
       public var fieldSetBattlePanel:FieldSet = null;
       
-      public var fieldSetBattleTypes:FieldSet = null;
-      
       public var fieldSetBattleCommunication:FieldSet = null;
       
       public var enableOlFilterCheckbox:CheckBox = null;
@@ -54,16 +51,6 @@ package net.wg.gui.lobby.settings
       public var disableBattleChatCheckbox:CheckBox = null;
       
       public var ppShowLevelsCheckbox:CheckBox = null;
-      
-      public var gameplay_ctfCheckbox:CheckBox = null;
-      
-      public var gameplay_dominationCheckbox:CheckBox = null;
-      
-      public var gameplay_assaultCheckbox:CheckBox = null;
-      
-      public var gameplay_epicDominationCheckbox:CheckBox = null;
-      
-      public var gameplay_epicStandardCheckbox:CheckBox = null;
       
       public var gameplay_devMapsCheckbox:CheckBox = null;
       
@@ -203,31 +190,7 @@ package net.wg.gui.lobby.settings
       
       public var showPersonalAnimatedDogTagCheckbox:CheckBox = null;
       
-      private var _initYCarouselTypeFieldSet:int;
-      
-      private var _initYCarouselTypeButtonBar:int;
-      
-      private var _initYDoubleCarouselLabel:int;
-      
-      private var _initYDoubleCarouselTypeDropDown:int;
-      
-      private var _initYVehicleCarouselStatsCheckbox:int;
-      
-      private var _initYCustomizationDisplayTypeFieldSet:int;
-      
-      private var _initYCustomizationDisplayTypeButtonBar:int;
-      
-      private var _initYReplayEnabledLabel:int;
-      
-      private var _initYReplayEnabledDropDown:int;
-      
-      private var _initYShowMarksOnGunCheckbox:int;
-      
-      private var _initYDisplayPlatoonMembersCheckbox:int;
-      
-      private var _initYLoginServerSelectionCheckbox:int;
-      
-      private var _initYAnonymizerCheckbox:int;
+      private var _initYGameplayDevMapsCheckbox:int;
       
       public function GameSettingsContent()
       {
@@ -239,7 +202,6 @@ package net.wg.gui.lobby.settings
       {
          this.fieldSetChat.label = SETTINGS.GAME_FIELDSET_HEADERCHAT;
          this.fieldSetBattlePanel.label = SETTINGS.GAME_BATTLEPANELSETTINGS;
-         this.fieldSetBattleTypes.label = SETTINGS.GAME_FIELDSET_HEADERGAMEPLAY;
          this.fieldSetMinimap.label = SETTINGS.GAME_MINIMAPGROUPTITLE;
          this.fieldSetBattleCommunication.label = SETTINGS.GAME_FIELDSET_HEADERBATTLECOMMUNICATION;
          this.customizationDisplayTypeFieldSet.label = SETTINGS.GAME_CUSTOMIZATIONDISPLAYTYPE;
@@ -280,17 +242,9 @@ package net.wg.gui.lobby.settings
          this.enableCommendationsCheckbox.toolTip = TOOLTIPS.ENABLECOMMENDATIONS;
          this.enableCommendationsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.ppShowLevelsCheckbox.label = SETTINGS.GAME_PPSHOWLEVELS;
-         this.gameplay_ctfCheckbox.label = SETTINGS.GAMEPLAY_CTF;
-         this.gameplay_dominationCheckbox.label = SETTINGS.GAMEPLAY_DOMINATION;
-         this.gameplay_assaultCheckbox.label = SETTINGS.GAMEPLAY_ASSAULT;
-         this.gameplay_epicDominationCheckbox.label = SETTINGS.GAMEPLAY_EPIC_ENCOUNTER;
          this.gameplay_devMapsCheckbox.label = SETTINGS.GAMEPLAY_DEVMAPS;
          this.gameplay_devMapsCheckbox.toolTip = TOOLTIPS.DEVMAPS;
          this.gameplay_devMapsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
-         this.gameplay_epicDominationCheckbox.visible = false;
-         this.gameplay_epicStandardCheckbox.label = SETTINGS.GAMEPLAY_EPIC_STANDARD;
-         this.gameplay_epicStandardCheckbox.toolTip = TOOLTIPS.EPICRANDOMSTANDARDNOTIFICATION;
-         this.gameplay_epicStandardCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
          this.newbiePrebattleHintsCheckbox.label = SETTINGS.GAME_NEWBIEPREBATTLEHINTS;
          this.newbiePrebattleHintsCheckbox.toolTip = TOOLTIPS.NEWBIEPREBATTLEHINTS;
          this.newbiePrebattleHintsCheckbox.infoIcoType = InfoIcon.TYPE_INFO;
@@ -405,8 +359,6 @@ package net.wg.gui.lobby.settings
          this.fieldSetChat = null;
          this.fieldSetBattlePanel.dispose();
          this.fieldSetBattlePanel = null;
-         this.fieldSetBattleTypes.dispose();
-         this.fieldSetBattleTypes = null;
          this.fieldSetMinimap.dispose();
          this.fieldSetMinimap = null;
          this.fieldSetBattleCommunication.dispose();
@@ -447,16 +399,6 @@ package net.wg.gui.lobby.settings
          this.showMarkersCheckbox = null;
          this.enableCommendationsCheckbox.dispose();
          this.enableCommendationsCheckbox = null;
-         this.gameplay_ctfCheckbox.dispose();
-         this.gameplay_ctfCheckbox = null;
-         this.gameplay_dominationCheckbox.dispose();
-         this.gameplay_dominationCheckbox = null;
-         this.gameplay_assaultCheckbox.dispose();
-         this.gameplay_assaultCheckbox = null;
-         this.gameplay_epicDominationCheckbox.dispose();
-         this.gameplay_epicDominationCheckbox = null;
-         this.gameplay_epicStandardCheckbox.dispose();
-         this.gameplay_epicStandardCheckbox = null;
          this.gameplay_devMapsCheckbox.dispose();
          this.gameplay_devMapsCheckbox = null;
          this.newbiePrebattleHintsCheckbox.dispose();
@@ -579,40 +521,14 @@ package net.wg.gui.lobby.settings
          super.onDispose();
       }
       
-      public function updateDependentVisibleControls(param1:Boolean, param2:Number) : void
+      public function updateDependentVisibleControls(param1:Boolean) : void
       {
-         var _loc3_:int = !!param1 ? int(Values.ZERO) : int(OFFSET_CB_DISABLED);
-         this.fieldSetBattleTypes.height = param2 + _loc3_;
-         this.carouselTypeFieldSet.y = this._initYCarouselTypeFieldSet + _loc3_;
-         this.carouselTypeButtonBar.y = this._initYCarouselTypeButtonBar + _loc3_;
-         this.doubleCarouselLabel.y = this._initYDoubleCarouselLabel + _loc3_;
-         this.doubleCarouselTypeDropDown.y = this._initYDoubleCarouselTypeDropDown + _loc3_;
-         this.vehicleCarouselStatsCheckbox.y = this._initYVehicleCarouselStatsCheckbox + _loc3_;
-         this.customizationDisplayTypeFieldSet.y = this._initYCustomizationDisplayTypeFieldSet + _loc3_;
-         this.customizationDisplayTypeButtonBar.y = this._initYCustomizationDisplayTypeButtonBar + _loc3_;
-         this.replayEnabledLabel.y = this._initYReplayEnabledLabel + _loc3_;
-         this.replayEnabledDropDown.y = this._initYReplayEnabledDropDown + _loc3_;
-         this.showMarksOnGunCheckbox.y = this._initYShowMarksOnGunCheckbox + _loc3_;
-         this.displayPlatoonMembersCheckbox.y = this._initYDisplayPlatoonMembersCheckbox + _loc3_;
-         this.loginServerSelectionCheckbox.y = this._initYLoginServerSelectionCheckbox + _loc3_;
-         this.anonymizerCheckbox.y = this._initYAnonymizerCheckbox + _loc3_;
+         this.gameplay_devMapsCheckbox.y = this._initYGameplayDevMapsCheckbox + (!!param1 ? 0 : OFFSET_CB_DISABLED);
       }
       
       private function setDependentVisibleControlsY() : void
       {
-         this._initYCarouselTypeFieldSet = this.carouselTypeFieldSet.y;
-         this._initYCarouselTypeButtonBar = this.carouselTypeButtonBar.y;
-         this._initYDoubleCarouselLabel = this.doubleCarouselLabel.y;
-         this._initYDoubleCarouselTypeDropDown = this.doubleCarouselTypeDropDown.y;
-         this._initYVehicleCarouselStatsCheckbox = this.vehicleCarouselStatsCheckbox.y;
-         this._initYCustomizationDisplayTypeFieldSet = this.customizationDisplayTypeFieldSet.y;
-         this._initYCustomizationDisplayTypeButtonBar = this.customizationDisplayTypeButtonBar.y;
-         this._initYReplayEnabledLabel = this.replayEnabledLabel.y;
-         this._initYReplayEnabledDropDown = this.replayEnabledDropDown.y;
-         this._initYShowMarksOnGunCheckbox = this.showMarksOnGunCheckbox.y;
-         this._initYDisplayPlatoonMembersCheckbox = this.displayPlatoonMembersCheckbox.y;
-         this._initYLoginServerSelectionCheckbox = this.loginServerSelectionCheckbox.y;
-         this._initYAnonymizerCheckbox = this.anonymizerCheckbox.y;
+         this._initYGameplayDevMapsCheckbox = this.gameplay_devMapsCheckbox.y;
       }
       
       private function onGuiGraphicsOptimizationCheckboxSelectHandler(param1:Event) : void

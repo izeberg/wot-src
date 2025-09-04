@@ -27,7 +27,7 @@ class LootBoxSystemEntryPoint(ViewImpl, ICarouselEventEntry):
         return super(LootBoxSystemEntryPoint, self).getViewModel()
 
     def createToolTipContent(self, event, contentID):
-        if contentID == R.views.lobby.lootbox_system.tooltips.EntryPointTooltip():
+        if contentID == R.views.mono.lootbox.tooltips.entry_point():
             return EntryPointTooltip(self.__lootBoxes.mainEntryPoint)
         return super(LootBoxSystemEntryPoint, self).createToolTipContent(event, contentID)
 

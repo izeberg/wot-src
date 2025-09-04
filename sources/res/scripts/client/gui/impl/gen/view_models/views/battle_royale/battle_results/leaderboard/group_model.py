@@ -1,6 +1,5 @@
-from frameworks.wulf import Array
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen import R
-from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.battle_royale.battle_results.leaderboard.row_model import RowModel
 
 class GroupModel(ViewModel):

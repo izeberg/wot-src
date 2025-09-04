@@ -1,5 +1,5 @@
 import BigWorld
-from gui.Scaleform.daapi.view.lobby.battle_queue import RandomQueueProvider
+from gui.Scaleform.daapi.view.lobby.battle_queue.battle_queue import RandomQueueProvider
 from gui.Scaleform.locale.MENU import MENU
 from helpers.i18n import makeString
 

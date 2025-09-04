@@ -58,6 +58,12 @@ CAMOUFLAGES_NATIONS_TEXTS = [
  VEHICLE_CUSTOMIZATION.CAMOUFLAGE_NATION_JAPAN,
  VEHICLE_CUSTOMIZATION.CAMOUFLAGE_NATION_CZECH]
 
+def getStateMachineRegistrators():
+    from gui.Scaleform.daapi.view.lobby.customization.states import registerStates, registerTransitions
+    return (
+     registerStates, registerTransitions)
+
+
 def getBusinessHandlers():
     return (
      CustomizationPackageBusinessHandler(), CustomizationDialogPackageBusinessHandler())

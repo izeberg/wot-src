@@ -79,6 +79,8 @@ package net.wg.gui.lobby.manualChapter
       private static const MAX_PAGES:int = 20;
       
       private static const PAGES_GAP:int = -8;
+      
+      private static const BG_ALPHA:Number = 0.3;
        
       
       public var view:ManualPageView;
@@ -203,7 +205,7 @@ package net.wg.gui.lobby.manualChapter
          this._pageController = new PaginatorArrowsController(this,this.pageButtons,this.arrowLeftBtn,this.arrowRightBtn,MANUAL_CHAPTER_GROUP,MAX_PAGES,true,PAGES_GAP,true);
          this.viewOpacity = 0;
          this.bg.alpha = 0;
-         this._bgFadeTween = new Tween(FADE_IN_DURATION,this.bg,{"alpha":1},{
+         this._bgFadeTween = new Tween(FADE_IN_DURATION,this.bg,{"alpha":BG_ALPHA},{
             "paused":false,
             "ease":Linear.easeOut
          });

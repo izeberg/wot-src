@@ -305,7 +305,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>58000</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.4
 				<!--BW_String-->
@@ -2638,7 +2637,7 @@
 	<turrets0>
 		<Turret_1_A174_T57_58_Rush_Ep1>
 			<userString>#usa_vehicles:Turret_1_A174_T57_58_Rush_Ep1</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>10</level>
 			<price>66000</price>
 			<notInShop>true</notInShop>
@@ -2770,6 +2769,7 @@
 							50.8
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_16>
 						<gun>50</gun>
 					</armor>

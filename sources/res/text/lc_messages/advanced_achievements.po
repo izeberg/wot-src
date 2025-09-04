@@ -119,6 +119,9 @@ msgstr "拥有45吨主战坦克(%(level)s级)"
 msgid "description/It21_Lion"
 msgstr "拥有CC&nbsp;\"狮\"(%(level)s级)"
 
+msgid "description/Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "拥有灰烬使者(%(level)s级)"
+
 msgid "description/Pl21_CS_63_OSP3"
 msgstr "拥有\"飓风\"(%(level)s级)"
 
@@ -176,6 +179,9 @@ msgstr "研发C系111&nbsp;5A(%(level)s级)重型坦克研发分支中的所有�
 msgid "description/branch_china_Ch48_BZ_75"
 msgstr "研发C系BZ-75(%(level)s级)重型坦克研发分支中的所有坦克"
 
+msgid "description/branch_china_Ch67_BZ_79"
+msgstr "研发C系BZ-79(%(level)s级)重型坦克研发分支中的所有坦克"
+
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr "研发J系TVP&nbsp;T50(%(level)s级)中型坦克研发分支中的所有坦克"
 
@@ -190,6 +196,12 @@ msgstr "研发F系潘哈德&nbsp;EBR&nbsp;105(%(level)s级)轻型坦克研发分
 
 msgid "description/branch_france_F10_AMX_50B"
 msgstr "研发F系AMX&nbsp;50&nbsp;B(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_france_F135_AS_XX_40_t"
+msgstr "研发F系AS-XX&nbsp;40t(%(level)s级)中型坦克研发分支中的所有坦克"
+
+msgid "description/branch_france_F136_AMX_67_Imbattable"
+msgstr "研发F系AMX&nbsp;67&nbsp;\"无双\"(%(level)s级)重型坦克研发分支中的所有坦克"
 
 msgid "description/branch_france_F18_Bat_Chatillon25t"
 msgstr "研发F系查狄伦&nbsp;25t(%(level)s级)中型坦克研发分支中的所有坦克"
@@ -214,6 +226,18 @@ msgstr "研发D系Rhm&nbsp;PW(%(level)s级)轻型坦克研发分支中的所有�
 
 msgid "description/branch_germany_G134_PzKpfw_VII"
 msgstr "研发D系VII号坦克(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_germany_G185_Leopard_120_Verbessert"
+msgstr "研发D系\"豹\"120改进型(%(level)s级)中型坦克研发分支中的所有坦克"
+
+msgid "description/branch_germany_G187_Taschenratte"
+msgstr "研发D系\"囊鼠\"(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_germany_G188_LeKpz_Borkenkafer"
+msgstr "研发D系\"甲虫\"(%(level)s级)轻型坦克研发分支中的所有坦克"
+
+msgid "description/branch_germany_G189_Hirschkafer"
+msgstr "研发D系\"鹿角虫\"(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
 msgid "description/branch_germany_G42_Maus"
 msgstr "研发D系\"鼠\"式(%(level)s级)重型坦克研发分支中的所有坦克"
@@ -263,6 +287,9 @@ msgstr "研发B系CS-63(%(level)s级)中型坦克研发分支中的所有坦克"
 msgid "description/branch_poland_Pl29_NC_Wz_70T"
 msgstr "研发B系NC&nbsp;70&nbsp;B(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
+msgid "description/branch_poland_Pl37_CS_67_Szakal"
+msgstr "研发B系CS-67&nbsp;S(%(level)s级)中型坦克研发分支中的所有坦克"
+
 msgid "description/branch_sweden_S11_Strv_103B"
 msgstr "研发V系Strv&nbsp;103B(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
@@ -272,6 +299,9 @@ msgstr "研发V系KRV(%(level)s级)重型坦克研发分支中的所有坦克"
 msgid "description/branch_sweden_S28_UDES_15_16"
 msgstr "研发V系UDES&nbsp;15/16(%(level)s级)中型坦克研发分支中的所有坦克"
 
+msgid "description/branch_sweden_S36_Strv_107_12"
+msgstr "研发V系Strv&nbsp;107-12(%(level)s级)自行反坦克炮研发分支中的所有坦克"
+
 msgid "description/branch_uk_GB100_Manticore"
 msgstr "研发Y系曼蒂科尔(%(level)s级)轻型坦克研发分支中的所有坦克"
 
@@ -280,6 +310,12 @@ msgstr "研发Y系5号概念车(%(level)s级)中型坦克研发分支中的所�
 
 msgid "description/branch_uk_GB142_FV230_Canopener"
 msgstr "研发Y系FV230 爆裂者(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_uk_GB147_FV4025_Contriver"
+msgstr "研发Y系FV4025&nbsp;谋划者(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_uk_GB152_AT_FV230_Breaker"
+msgstr "研发Y系AT-FV230&nbsp;\"破碎者\"(%(level)s级)自行反坦克炮研发分支中的所有坦克"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr "研发Y系征服者GC(%(level)s级)自行火炮研发分支中的所有坦克"
@@ -304,6 +340,12 @@ msgstr "研发M系M48A5(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_usa_A143_M_V_Y"
 msgstr "研发M系M-V-Y(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_usa_A182_T803"
+msgstr "研发M系T803(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_usa_A183_XM69_Hacker"
+msgstr "研发M系XM69&nbsp;\"开拓者\"(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_usa_A38_T92"
 msgstr "研发M系T92(%(level)s级)自行火炮研发分支中的所有坦克"
@@ -340,6 +382,12 @@ msgstr "研发S系277工程(%(level)s级)重型坦克研发分支中的所有坦
 
 msgid "description/branch_ussr_R169_ST_II"
 msgstr "研发S系ST-II(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_ussr_R228_KR_1"
+msgstr "研发S系KR-1(%(level)s级)重型坦克研发分支中的所有坦克"
+
+msgid "description/branch_ussr_R230_Object_432U"
+msgstr "研发S系432工程U(%(level)s级)中型坦克研发分支中的所有坦克"
 
 msgid "description/branch_ussr_R45_IS_7"
 msgstr "研发S系IS-7(%(level)s级)重型坦克研发分支中的所有坦克"
@@ -423,7 +471,7 @@ msgid "description/nations"
 msgstr "研发各系别升级路线中的坦克即可获得本类别的成就。"
 
 msgid "description/personal_missions"
-msgstr "拥有\"迟来的支援\"和\"第二战线\"个人任务中的全部坦克"
+msgstr "拥有\"迟来的支援\"、\"第二战线\"和\"第三区\"个人任务中的全部坦克"
 
 msgid "description/poland"
 msgstr "研发B系升级路线中的所有坦克。"
@@ -442,6 +490,18 @@ msgstr "研发V系升级路线中的所有I–V级坦克"
 
 msgid "description/sweden_first_steps"
 msgstr "研发至少1辆V系升级路线中的V级坦克"
+
+msgid "description/third_campaign"
+msgstr "拥有\"第三区\"个人任务中的全部坦克"
+
+msgid "description/third_campaign_first_operation"
+msgstr "完成第1个作战行动，并拥有风猎者(%(level)s级)"
+
+msgid "description/third_campaign_second_operation"
+msgstr "完成第2个作战行动，并拥有\"掠食者\"(%(level)s级)"
+
+msgid "description/third_campaign_third_operation"
+msgstr "完成最终作战行动，并拥有黑岩(%(level)s级)"
 
 msgid "description/total_2D_style_count"
 msgid_plural "plural/description/total_2D_style_count"
@@ -546,7 +606,7 @@ msgid "name/A100_T49"
 msgstr "T49"
 
 msgid "name/A102_T28_concept"
-msgstr "T28(概念车)作战行动"
+msgstr "T28&nbsp;HTC作战行动"
 
 msgid "name/A10_M6"
 msgstr "M6"
@@ -595,6 +655,12 @@ msgstr "\"巴顿\"坦克"
 
 msgid "name/A174_T57_58_Rush_Ep1"
 msgstr "毒刺"
+
+msgid "name/A182_T803"
+msgstr "T803"
+
+msgid "name/A183_XM69_Hacker"
+msgstr "XM69&nbsp;\"开拓者\""
 
 msgid "name/A31_M36_Slagger"
 msgstr "M36 \"杰克逊\""
@@ -749,6 +815,9 @@ msgstr "BZ-58"
 msgid "name/Ch52_WZ_122_6_F3"
 msgstr "116-F3"
 
+msgid "name/Ch67_BZ_79"
+msgstr "BZ-79"
+
 msgid "name/Cz02_TVP_T50"
 msgstr "斯柯达&nbsp;T50"
 
@@ -826,6 +895,12 @@ msgstr "潘哈德 AML 山猫&nbsp;6x6"
 
 msgid "name/F127_AMX_ELC_901"
 msgstr "AMX ELC 901"
+
+msgid "name/F135_AS_XX_40_t"
+msgstr "AS-XX&nbsp;40t"
+
+msgid "name/F136_AMX_67_Imbattable"
+msgstr "AMX&nbsp;67&nbsp;\"无双\""
 
 msgid "name/F15_AMX_12t"
 msgstr "AMX&nbsp;12t"
@@ -943,6 +1018,18 @@ msgstr "IV号F2型"
 
 msgid "name/G17_JagdPzIV"
 msgstr "IV号坦克歼击车"
+
+msgid "name/G185_Leopard_120_Verbessert"
+msgstr "\"豹\"120改进型"
+
+msgid "name/G187_Taschenratte"
+msgstr "\"囊鼠\""
+
+msgid "name/G188_LeKpz_Borkenkafer"
+msgstr "\"甲虫\""
+
+msgid "name/G189_Hirschkafer"
+msgstr "\"鹿角虫\""
 
 msgid "name/G18_JagdPanther"
 msgstr "\"猎豹\""
@@ -1109,8 +1196,14 @@ msgstr "FV229&nbsp;角逐者"
 msgid "name/GB146_Gabler_s_Destroyer"
 msgstr "加布勒突击战车"
 
+msgid "name/GB147_FV4025_Contriver"
+msgstr "FV4025&nbsp;谋划者"
+
 msgid "name/GB148_FV227_Conceiver"
 msgstr "FV227&nbsp;构想者"
+
+msgid "name/GB152_AT_FV230_Breaker"
+msgstr "AT-FV230&nbsp;\"破碎者\""
 
 msgid "name/GB20_Crusader"
 msgstr "十字军"
@@ -1310,6 +1403,9 @@ msgstr "53TP M"
 msgid "name/Pl15_60TP_Lewandowskiego"
 msgstr "60TP L"
 
+msgid "name/Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "灰烬使者"
+
 msgid "name/Pl18_BUGI"
 msgstr "B.U.G.I."
 
@@ -1342,6 +1438,9 @@ msgstr "SDP&nbsp;57 G"
 
 msgid "name/Pl32_SDP_Wz_44"
 msgstr "SDP&nbsp;44 B"
+
+msgid "name/Pl37_CS_67_Szakal"
+msgstr "CS-67&nbsp;S"
 
 msgid "name/R01_IS"
 msgstr "IS"
@@ -1441,6 +1540,12 @@ msgstr "IS-3"
 
 msgid "name/R20_T_44"
 msgstr "T-44"
+
+msgid "name/R228_KR_1"
+msgstr "KR-1"
+
+msgid "name/R230_Object_432U"
+msgstr "432工程U"
 
 msgid "name/R23_T_43"
 msgstr "T-43"
@@ -1571,6 +1676,9 @@ msgstr "UDES&nbsp;15/16"
 msgid "name/S29_UDES_14_5"
 msgstr "UDES&nbsp;14 Alt&nbsp;5"
 
+msgid "name/S36_Strv_107_12"
+msgstr "Strv&nbsp;107-12"
+
 msgid "name/branch_china_Ch19_121"
 msgstr "C系:&nbsp;121"
 
@@ -1586,6 +1694,9 @@ msgstr "C系: 111&nbsp;5A"
 msgid "name/branch_china_Ch48_BZ_75"
 msgstr "C系: BZ-75"
 
+msgid "name/branch_china_Ch67_BZ_79"
+msgstr "C系: BZ-79"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "J系:&nbsp;TVP&nbsp;T50"
 
@@ -1600,6 +1711,12 @@ msgstr "F系: 潘哈德 EBR&nbsp;105"
 
 msgid "name/branch_france_F10_AMX_50B"
 msgstr "F系: AMX&nbsp;50&nbsp;B"
+
+msgid "name/branch_france_F135_AS_XX_40_t"
+msgstr "F系: AS-XX&nbsp;40t"
+
+msgid "name/branch_france_F136_AMX_67_Imbattable"
+msgstr "F系: AMX&nbsp;67&nbsp;\"无双\""
 
 msgid "name/branch_france_F18_Bat_Chatillon25t"
 msgstr "F系:&nbsp;查狄伦&nbsp;25t"
@@ -1624,6 +1741,18 @@ msgstr "D系: Rhm PW"
 
 msgid "name/branch_germany_G134_PzKpfw_VII"
 msgstr "D系:&nbsp;VII号坦克"
+
+msgid "name/branch_germany_G185_Leopard_120_Verbessert"
+msgstr "D系: \"豹\"120改进型"
+
+msgid "name/branch_germany_G187_Taschenratte"
+msgstr "D系: \"囊鼠\""
+
+msgid "name/branch_germany_G188_LeKpz_Borkenkafer"
+msgstr "D系:&nbsp;\"甲虫\""
+
+msgid "name/branch_germany_G189_Hirschkafer"
+msgstr "D系: \"鹿角虫\""
 
 msgid "name/branch_germany_G42_Maus"
 msgstr "D系: \"鼠\"式"
@@ -1673,6 +1802,9 @@ msgstr "B系: CS-63"
 msgid "name/branch_poland_Pl29_NC_Wz_70T"
 msgstr "B系: NC&nbsp;70 B"
 
+msgid "name/branch_poland_Pl37_CS_67_Szakal"
+msgstr "B系: CS-67&nbsp;S"
+
 msgid "name/branch_sweden_S11_Strv_103B"
 msgstr "V系: Strv&nbsp;103B"
 
@@ -1682,6 +1814,9 @@ msgstr "V系: KRV"
 msgid "name/branch_sweden_S28_UDES_15_16"
 msgstr "V系: UDES&nbsp;15/16"
 
+msgid "name/branch_sweden_S36_Strv_107_12"
+msgstr "V系: Strv&nbsp;107-12"
+
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "Y系: 曼蒂科尔"
 
@@ -1690,6 +1825,12 @@ msgstr "Y系:&nbsp;5号概念车"
 
 msgid "name/branch_uk_GB142_FV230_Canopener"
 msgstr "Y系: FV230&nbsp;爆裂者"
+
+msgid "name/branch_uk_GB147_FV4025_Contriver"
+msgstr "Y系: FV4025&nbsp;谋划者"
+
+msgid "name/branch_uk_GB152_AT_FV230_Breaker"
+msgstr "Y系: AT-FV230&nbsp;\"破碎者\""
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "Y系: 征服者GC"
@@ -1714,6 +1855,12 @@ msgstr "M系: M48A5"
 
 msgid "name/branch_usa_A143_M_V_Y"
 msgstr "M系: M-V-Y"
+
+msgid "name/branch_usa_A182_T803"
+msgstr "M系: T803"
+
+msgid "name/branch_usa_A183_XM69_Hacker"
+msgstr "M系: XM69&nbsp;\"开拓者\""
 
 msgid "name/branch_usa_A38_T92"
 msgstr "M系:&nbsp;T92"
@@ -1750,6 +1897,12 @@ msgstr "S系:&nbsp;277工程"
 
 msgid "name/branch_ussr_R169_ST_II"
 msgstr "S系: ST-II"
+
+msgid "name/branch_ussr_R228_KR_1"
+msgstr "S系: KR-1"
+
+msgid "name/branch_ussr_R230_Object_432U"
+msgstr "S系:&nbsp;432工程U"
 
 msgid "name/branch_ussr_R45_IS_7"
 msgstr "S系: IS-7"
@@ -1852,6 +2005,18 @@ msgstr "早期阶段——V系"
 
 msgid "name/sweden_first_steps"
 msgstr "起步阶段——V系"
+
+msgid "name/third_campaign"
+msgstr "第三区"
+
+msgid "name/third_campaign_first_operation"
+msgstr "风猎者作战行动"
+
+msgid "name/third_campaign_second_operation"
+msgstr "\"掠食者\"作战行动"
+
+msgid "name/third_campaign_third_operation"
+msgstr "黑岩作战行动"
 
 msgid "name/total_2D_style_count"
 msgstr "2D风格"

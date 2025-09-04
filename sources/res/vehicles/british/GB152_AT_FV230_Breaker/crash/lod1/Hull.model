@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB152_AT_FV230_Breaker/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB152_AT_FV230_Breaker/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.010422 -1.038970 -4.237467</min>
+		<max>2.010412 2.031415 3.870495</max>
+	</visibilityBox>
+</root>

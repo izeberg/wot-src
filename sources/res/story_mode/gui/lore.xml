@@ -101,6 +101,22 @@
 			<state>STATE_sm_vday_music_00_lobby</state>
 		</music>
 	</mission>
+	<mission>
+		<id>1005</id>
+		<vo>vo_sm_char17_m07_stg84_01</vo>
+		<battleMusic>sm_gp_scc_enter</battleMusic>
+		<music>
+			<start>sm_gp_scc_music_start</start>
+		</music>
+	</mission>
+	<mission>
+		<id>1006</id>
+		<vo>vo_sm_char17_m07_stg84_01</vo>
+		<battleMusic>sm_gp_scc_enter</battleMusic>
+		<music>
+			<start>sm_gp_scc_music_start</start>
+		</music>
+	</mission>
 	<epilogue>
 		<music>
 			<start>ob_music_int_00</start>

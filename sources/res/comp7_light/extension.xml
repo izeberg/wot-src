@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>comp7_light</FeatureName>
+	<IsEnabled>true</IsEnabled>
+	<Personality>Comp7LightPersonality</Personality>
+	<Components>
+		<StaticComponents>
+			<AccountComp7LightComponent/>
+			<ArenaComp7LightComponent/>
+		</StaticComponents>
+		<DynamicComponents>
+			<VehicleComp7LightComponent/>
+		</DynamicComponents>
+	</Components>
+	<Entities>
+		<ServerOnlyEntities>
+			<Comp7LightMgr/>
+			<Comp7LightUnitMgr/>
+		</ServerOnlyEntities>
+	</Entities>
+</root>

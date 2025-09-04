@@ -1,5 +1,5 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 
 class MapsTrainingQueueModel(ViewModel):
     __slots__ = ('onQuit', 'onMenu', 'onShowPrevTip', 'onShowNextTip', 'onMoveSpace')

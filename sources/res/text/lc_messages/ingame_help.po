@@ -70,6 +70,12 @@ msgstr "锁定车体/切换模式"
 msgid "battleControls/title"
 msgstr "战斗模式"
 
+msgid "battleControls/toggleAFL"
+msgstr "开启/关闭装甲透视仪"
+
+msgid "battleControls/toggleAFL/ext"
+msgstr "仅适用于狙击模式"
+
 msgid "battleControls/toggleLockTarget"
 msgstr "开/关 自动瞄准"
 
@@ -163,12 +169,6 @@ msgstr "目标名称"
 msgid "crosshairControls/title"
 msgstr "炮和瞄准十字线"
 
-msgid "detailsHelp/autoShootGun/mechanics"
-msgstr "一种射速极高的自动武器。瞄准圈内的指示器将显示其射击效率。"
-
-msgid "detailsHelp/autoShootGun/mechanics/title"
-msgstr "自动炮"
-
 msgid "detailsHelp/battleRoyale/airDrop/description"
 msgstr ""
 "搜索用烟雾标记的物资。绿色烟雾内含炮弹和第2个能力的1次充能次数。黄色烟雾内含第1、3、4个能力的充能次数。蓝色烟雾内含生命值恢复、模块修复及全部能力的充能次数。在战斗中按下Tab键，即可查看各种物资的详情。"
@@ -216,23 +216,17 @@ msgstr "地图特点"
 
 msgid "detailsHelp/devMaps/markers/description"
 msgstr ""
-"随机事件的位置会在地图和小地图上分别用烟雾和标记标出。\n"
-"开发中的地图可以在游戏设置的\"游戏\"标签页中(标准模式类型版块)关闭。"
+"随机事件的位置会在地图和小地图上\n"
+"分别用烟雾和标记标出。\n"
+"您可在游戏设置的\"游戏\"标签页中关闭带有随机事件的地图。"
 
 msgid "detailsHelp/devMaps/title"
-msgstr "随机事件Beta版"
+msgstr "带有随机事件的地图"
 
 msgid "detailsHelp/devMaps/zone/description"
 msgstr ""
-"坦克可能在随机事件区域内被摧毁(如飞机坠毁时)。\n"
-"开发中的地图可以在游戏设置的\"游戏\"标签页中(标准模式类型版块)关闭。"
-
-msgid "detailsHelp/dualAccuracy/mechanics"
-msgstr ""
-"如果射击后的火炮已充分冷却，其炮弹散布范围会降低，屏幕上将出现另一个直径较小的瞄准圈，它将决定炮弹的落点区域大小。该效果在下次射击前将持续生效。"
-
-msgid "detailsHelp/dualAccuracy/mechanics/title"
-msgstr "双重瞄准"
+"您的坦克可能会在随机事件区域被摧毁(如飞机坠毁时)。\n"
+"您可在游戏设置的\"游戏\"标签页中关闭带有随机事件的地图。"
 
 msgid "detailsHelp/dualGun/quick_fire"
 msgstr "搭载有该射击系统的战车会在开火后切换火炮。一门火炮射击后会自动装填，同时另一门火炮需要等待一段时间后才能开火。"
@@ -267,24 +261,215 @@ msgstr "局部天气区域内的坦克无法点亮区域外的敌方坦克，反
 msgid "detailsHelp/mapbox/localWeather/title"
 msgstr "局部天气"
 
+msgid "detailsHelp/mechanics/accuracyStacks/page1/description"
+msgstr ""
+"当坦克静止不动或移动速度低于特定数值时，模拟弹道计算装置将启动，并累积精度等级。\n"
+"每个等级均可强化下一次射击的精度。该效果会在开火后被移除。"
+
+msgid "detailsHelp/mechanics/accuracyStacks/page1/title"
+msgstr "模拟弹道计算装置"
+
+msgid "detailsHelp/mechanics/accuracyStacks/page2/description"
+msgstr ""
+"完全校准时，坦克达到最大精度等级，并获得相当不俗的火炮稳定性，即使在移动时，或炮塔/车体旋转时，炮弹散布范围也会有所降低。\n"
+"该效果会在开火后被移除。"
+
+msgid "detailsHelp/mechanics/accuracyStacks/page2/title"
+msgstr "完全校准"
+
+msgid "detailsHelp/mechanics/autoShootGun/page1/description"
+msgstr "一种射速极高的自动武器。瞄准圈内的指示器将显示其射击效率。"
+
+msgid "detailsHelp/mechanics/autoShootGun/page1/title"
+msgstr "自动炮"
+
+msgid "detailsHelp/mechanics/battleFury/page1/description"
+msgstr ""
+"每次击中敌方坦克时，您将获得装填效率加成，短暂提高火炮装填速度。每命中一次累积一个等级。\n"
+"通过射击击毁一辆敌方坦克则能额外获得装填效率等级。"
+
+msgid "detailsHelp/mechanics/battleFury/page1/title"
+msgstr "半自动弹药架"
+
+msgid "detailsHelp/mechanics/chargeShot/page1/description"
+msgstr ""
+"火炮装填完毕后，您可开始加热下一发炮弹。热量等级越高，平均损伤加成越大。\n"
+"按下以下按键即可开始加热过程:"
+
+msgid "detailsHelp/mechanics/chargeShot/page1/title"
+msgstr "热能弹道超载"
+
+msgid "detailsHelp/mechanics/chargeShot/page2/description"
+msgstr "达到最大热量等级后会开始开火倒计时。如果倒计时结束前未开火，您将在数秒内无法开火或切换炮弹。"
+
+msgid "detailsHelp/mechanics/chargeShot/page2/title"
+msgstr "充能过热"
+
+msgid "detailsHelp/mechanics/chargeableBurst/page1/description"
+msgstr "击穿敌方坦克2次即可激活点射模式——装填一个点射短弹夹，下次开火时可快速连续射击2发炮弹。"
+
+msgid "detailsHelp/mechanics/chargeableBurst/page1/title"
+msgstr "点射模式"
+
+msgid "detailsHelp/mechanics/concentrationMode/page1/description"
+msgstr ""
+"车体和炮塔旋转时，气动陀螺稳定器可在短时间内提供最大稳定性，使移动射击更精准，并快速应对突发威胁。\n"
+"按下热键即可激活:"
+
+msgid "detailsHelp/mechanics/concentrationMode/page1/title"
+msgstr "气动陀螺稳定器"
+
+msgid "detailsHelp/mechanics/dualAccuracy/page1/description"
+msgstr ""
+"如果射击后的火炮已充分冷却，其炮弹散布范围会降低，屏幕上将出现另一个直径较小的瞄准圈，它将决定炮弹的落点区域大小。该效果在下次射击前将持续生效。"
+
+msgid "detailsHelp/mechanics/dualAccuracy/page1/title"
+msgstr "双重瞄准"
+
+msgid "detailsHelp/mechanics/extraShotClip/page1/description"
+msgstr ""
+"当前短弹夹中剩下1发炮弹时，系统会自动开始装填新短弹夹。\n"
+"在新短弹夹装填过程中射击最后一发炮弹，将使剩余装填时间额外增加数秒。"
+
+msgid "detailsHelp/mechanics/extraShotClip/page1/title"
+msgstr "短弹夹装填系统"
+
+msgid "detailsHelp/mechanics/improvedRamming/page1/description"
+msgstr "该坦克具有用于撞击的特殊配置，通过一系列设计改装，它能对敌方坦克造成更高的撞击损伤。"
+
+msgid "detailsHelp/mechanics/improvedRamming/page1/title"
+msgstr "撞击专用配置"
+
+msgid "detailsHelp/mechanics/overheatStacks/page1/description"
+msgstr ""
+"保持静止不动或移动速度低于特定数值时可进行预热，强化下一次射击的平均损伤与精度。\n"
+"超过速度限制会逐步降低加成，开火或切换炮弹则立即重置加成。"
+
+msgid "detailsHelp/mechanics/overheatStacks/page1/title"
+msgstr "推进剂温控系统"
+
+msgid "detailsHelp/mechanics/overheatStacks/page2/description"
+msgstr "达到最大预热等级时，击穿生命值低于自身坦克平均损伤(包括累积的预热加成)的敌方坦克，将引爆其弹药架，立即摧毁目标。"
+
+msgid "detailsHelp/mechanics/overheatStacks/page2/title"
+msgstr "决定性损伤"
+
+msgid "detailsHelp/mechanics/powerMode/page1/description"
+msgstr "直接驱动模式可大幅提高发动机功率和最大前进速度。前进时间越长，速度累积得越高，让您可以轻松转场。"
+
+msgid "detailsHelp/mechanics/powerMode/page1/title"
+msgstr "直接驱动"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page1/description"
+msgstr ""
+"液体燃料助推器可瞬间提高发动机功率，让您可以快速转场——但会降低坦克的倒车和旋转速度。助推器可随时开关，但超过临界热量等级时除外。\n"
+"按下或按住以下按键即可使用:"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page1/title"
+msgstr "液体燃料助推器"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page2/description"
+msgstr "助推器在激活时会升温，直至达到其临界热量等级，需冷却后才能再次激活。谨慎规划行动，避免陷入被动。"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page2/title"
+msgstr "临界热量等级"
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page1/description"
+msgstr ""
+"使用火箭助推器可提高坦克的机动性。让您可以更快地占据有利位置或穿越危险区域。每场战斗中，您可激活有限次数的火箭助推器，并持续一定时间。您无法停用或击毁它们。"
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page1/title"
+msgstr "火箭助推器"
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page2/description"
+msgstr "激活后，火箭助推器可提高发动机功率和最大速度。不过，坦克的操控性会同时降低，倒车速度也会变慢。"
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
+msgstr "优缺点"
+
+msgid "detailsHelp/mechanics/stanceDance/page1/description"
+msgstr ""
+"该坦克具有2种模式——涡轮和交战。您可随时切换模式。战术动力包为当前模式累积能量。\n"
+"按下以下按键即可切换模式:"
+
+msgid "detailsHelp/mechanics/stanceDance/page1/title"
+msgstr "2种模式"
+
+msgid "detailsHelp/mechanics/stanceDance/page2/description"
+msgstr ""
+"战术动力包完全充能后，将解锁模式专属能力。激活该能力会消耗累积的所有能量，并在较短的一段时间内提供高额加成。\n"
+"按下以下按键即可激活独特的模式能力:"
+
+msgid "detailsHelp/mechanics/stanceDance/page2/title"
+msgstr "模式能力"
+
+msgid "detailsHelp/mechanics/stationaryReload/page1/description"
+msgstr "只要还有一发装填完毕的炮弹，外部弹药补给模块就能让您随时中断装填，展开攻击。按下热键即可中断或继续装填过程:"
+
+msgid "detailsHelp/mechanics/stationaryReload/page1/title"
+msgstr "外部弹药补给模块"
+
+msgid "detailsHelp/mechanics/stationaryReload/page2/description"
+msgstr "装填期间，该模块会将炮塔与外部弹药舱连接起来，您将暂时无法瞄准或射击，除非主动将其断开。"
+
+msgid "detailsHelp/mechanics/stationaryReload/page2/title"
+msgstr "外部弹药补给模块"
+
+msgid "detailsHelp/mechanics/supportWeapon/page1/description"
+msgstr "该坦克配备一套独立于主炮装填周期的辅助武器，可在关键时刻造成更多损伤。按下热键即可激活辅助武器:"
+
+msgid "detailsHelp/mechanics/supportWeapon/page1/title"
+msgstr "辅助武器"
+
+msgid "detailsHelp/mechanics/targetDesignator/page1/description"
+msgstr ""
+"激光目标指示器为下一次射击添加特殊效果，施加于您击中的任意敌方坦克。根据击中时目标是否被点亮，效果会有所不同。\n"
+"按以下按键即可激活激光目标指示器:"
+
+msgid "detailsHelp/mechanics/targetDesignator/page1/title"
+msgstr "激光目标指示器"
+
+msgid "detailsHelp/mechanics/targetDesignator/page2/description"
+msgstr ""
+"击中被点亮的敌方坦克后，目标会被标记，其可见时长延长，并受到更高的射击损伤。\n"
+"击中未被点亮的敌方坦克后，其位置会用一个特殊标记突出显示。"
+
+msgid "detailsHelp/mechanics/targetDesignator/page2/title"
+msgstr "标记目标"
+
+msgid "detailsHelp/mechanics/twinGun/page1/description"
+msgstr "您可以根据战况，从单发射击模式切换到齐射射击模式。"
+
+msgid "detailsHelp/mechanics/twinGun/page1/title"
+msgstr "射击模式切换机制"
+
+msgid "detailsHelp/mechanics/twinGun/page2/description"
+msgstr "在齐射射击模式下，射击损伤和装填时间都增加至2倍，100米精度*削弱。"
+
+msgid "detailsHelp/mechanics/twinGun/page2/title"
+msgstr "优缺点"
+
 msgid "detailsHelp/noKey"
 msgstr "未分配"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "核心按键尚未分配。在游戏设置中分配它们。"
 
-msgid "detailsHelp/rocketAcceleration/page1"
+msgid "detailsHelp/pillboxSiege/mechanics/page1"
 msgstr ""
-"使用火箭助推器可提升坦克的机动性，让您可以更快地占领有利位置或穿越危险区域。您在每场战斗中可激活有限次数的火箭助推器并持续一定时间。您无法停用或击毁它们。"
+"在该模式下，火炮精度、装填速度和俯仰角均获得大幅强化，但机动性(前进/倒车速度、垂直俯仰/水平旋转速度)大幅降低。%(pressAndHold)s热键即可激活该模式:"
 
-msgid "detailsHelp/rocketAcceleration/page1/title"
-msgstr "火箭助推器"
+msgid "detailsHelp/pillboxSiege/mechanics/page1/pressAndHold"
+msgstr "按住"
 
-msgid "detailsHelp/rocketAcceleration/page2"
-msgstr "激活后，火箭助推器可提升发动机功率和最大速度。不过，坦克的操控性会同时降低，倒车速度也会变慢。"
+msgid "detailsHelp/pillboxSiege/mechanics/page1/title"
+msgstr "堡垒模式"
 
-msgid "detailsHelp/rocketAcceleration/page2/title"
-msgstr "优缺点"
+msgid "detailsHelp/pillboxSiege/mechanics/page2"
+msgstr "在该模式下，火炮精度、瞄准速度和俯仰角均获得强化，但机动性(前进/倒车速度)有所降低。按下热键即可激活该模式:"
+
+msgid "detailsHelp/pillboxSiege/mechanics/page2/title"
+msgstr "攻城模式"
 
 msgid "detailsHelp/role/description"
 msgstr "进行符合坦克角色的操作，就能获得经验加成："
@@ -297,18 +482,6 @@ msgstr "在主履带被击毁时，可以维持部分移动力。"
 
 msgid "detailsHelp/trackWithinTrack/title"
 msgstr "应急履带"
-
-msgid "detailsHelp/twinGun/mechanics/page1"
-msgstr "您可以根据战况，从单发射击模式切换到齐射射击模式。"
-
-msgid "detailsHelp/twinGun/mechanics/page1/title"
-msgstr "射击模式切换机制"
-
-msgid "detailsHelp/twinGun/mechanics/page2"
-msgstr "在齐射射击模式下，射击损伤和装填时间都增加至2倍，100米精度*削弱。"
-
-msgid "detailsHelp/twinGun/mechanics/page2/title"
-msgstr "优缺点"
 
 msgid "detailsHelp/wheeledVeh/aboutTechnique"
 msgstr "F系轮式战车具有最高的速度和机动性，但观察范围一般。静止的轮式战车无法原地转向。"

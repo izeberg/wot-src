@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F136_AMX_67_Imbattable/normal/lod3/Turret_01</nodefullVisual>
+	<parent>vehicles/french/F136_AMX_67_Imbattable/normal/lod4/Turret_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.592987 -0.003888 -1.504833</min>
+		<max>1.593170 2.946009 1.784138</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

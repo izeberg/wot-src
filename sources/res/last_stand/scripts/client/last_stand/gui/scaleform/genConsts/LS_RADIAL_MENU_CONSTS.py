@@ -1,0 +1,12 @@
+
+
+class LS_RADIAL_MENU_CONSTS(object):
+    LS_CAMP = 'LSCamp'
+    LS_CAMP_HELP = 'LSCampHelp'
+    LS_MAGNUS = 'LSMagnus'
+    LS_MAGNUS_HELP = 'LSMagnusHelp'
+    LS_CANCEL = 'LSNo'
+    NEW_STATE = 'newState'
+    TARGET_STATE_LS_CAMP = 'lsCamp'
+    TARGET_STATE_LS_MAGNUS = 'lsMagnus'
+    WHITE_TARGET_STATES = [TARGET_STATE_LS_CAMP, TARGET_STATE_LS_MAGNUS]

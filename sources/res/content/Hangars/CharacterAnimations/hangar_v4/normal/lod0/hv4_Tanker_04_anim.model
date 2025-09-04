@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/Hangars/CharacterAnimations/hangar_v4/normal/lod0/hv4_Tanker_04_anim</nodefullVisual>
+	<visibilityBox>
+		<min>-0.528669 0.000628 -0.169890</min>
+		<max>0.528669 1.809726 0.181676</max>
+	</visibilityBox>
+	<parent>content/Hangars/CharacterAnimations/hangar_v4/normal/lod1/hv4_Tanker_04_anim</parent>
+	<extent>35.000000</extent>
+</root>

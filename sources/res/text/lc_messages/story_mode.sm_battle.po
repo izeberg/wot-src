@@ -143,6 +143,12 @@ msgstr "阿利斯泰尔 麦克劳德"
 msgid "botNames/Murphy"
 msgstr "杰克·墨菲上尉"
 
+msgid "botNames/Teddy"
+msgstr "泰迪"
+
+msgid "botNames/Ulysses"
+msgstr "尤里西斯"
+
 msgid "bunker"
 msgstr "地堡"
 
@@ -349,6 +355,9 @@ msgstr "正在缴获: 雷区地图"
 msgid "lootCapturing/plan"
 msgstr "正在缴获: 地图碎片"
 
+msgid "lootCapturing/tank"
+msgstr "缴获敌方坦克"
+
 msgid "prebattle/mission/stage/1"
 msgstr "行动1"
 
@@ -360,6 +369,12 @@ msgstr "严酷秘密行动"
 
 msgid "prebattle/mission/stage/1004"
 msgstr "严酷雷区"
+
+msgid "prebattle/mission/stage/1005"
+msgstr "普通"
+
+msgid "prebattle/mission/stage/1006"
+msgstr "严酷"
 
 msgid "prebattle/mission/stage/2"
 msgstr "行动2"
@@ -387,6 +402,12 @@ msgstr "{whiteSpanish_Start}检查敌方营地，收集雷区地图碎片。{whi
 
 msgid "prebattle/mission/task/1004"
 msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1005"
+msgstr "{whiteSpanish_Start}抵达指挥中心，阻止导弹发射。{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1006"
+msgstr "{whiteSpanish_Start}抵达指挥中心，阻止导弹发射。{whiteSpanish_End}"
 
 msgid "prebattle/mission/task/2"
 msgstr "{whiteSpanish_Start}任务: {whiteSpanish_End}攻击城镇并击毁所有敌方坦克。"
@@ -438,6 +459,22 @@ msgstr ""
 "墨菲: \"杜布瓦，装炮弹装腻了吗？\"\n"
 "\n"
 "杜布瓦: \"也有这方面的原因。\""
+
+msgid "prebattle/mission/text/1005"
+msgstr ""
+"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
+"\n"
+"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
+"\n"
+"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
+
+msgid "prebattle/mission/text/1006"
+msgstr ""
+"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
+"\n"
+"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
+"\n"
+"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
 
 msgid "prebattle/mission/text/2"
 msgstr ""
@@ -492,6 +529,12 @@ msgstr "邮差行动"
 
 msgid "prebattle/mission/title/1004"
 msgstr "邮差行动"
+
+msgid "prebattle/mission/title/1005"
+msgstr "沸点行动"
+
+msgid "prebattle/mission/title/1006"
+msgstr "沸点行动"
 
 msgid "prebattle/mission/title/2"
 msgstr "诱捕"
@@ -683,4 +726,70 @@ msgid "vday/respawn_over/header"
 msgstr "结束了"
 
 msgid "vday/respawn_over/subheader"
+msgstr "全部坦克都已被击毁"
+
+msgid "zeppelin/hint01"
+msgstr "为坦克的火炮充能，造成更高损伤"
+
+msgid "zeppelin/hint02"
+msgstr "使用最高精度，在远距离对目标造成射击损伤"
+
+msgid "zeppelin/hint03"
+msgstr "了解如何使用该坦克的辅助武器射击"
+
+msgid "zeppelin/objective01/failure"
+msgstr "任务失败！"
+
+msgid "zeppelin/objective01/header"
+msgstr "推进！"
+
+msgid "zeppelin/objective01/subheader"
+msgstr "抵达导弹位置并阻止发射"
+
+msgid "zeppelin/objective02/header"
+msgstr "发现敌方维修设施！"
+
+msgid "zeppelin/objective02/subheader"
+msgstr "缴获遗弃的坦克"
+
+msgid "zeppelin/objective02/success"
+msgstr "已缴获坦克！"
+
+msgid "zeppelin/objective03/header"
+msgstr "已收到新目标！"
+
+msgid "zeppelin/objective03/subheader"
+msgstr "收复发射场和指挥中心"
+
+msgid "zeppelin/objective03/success"
+msgstr "已收复发射场"
+
+msgid "zeppelin/objective04/header"
+msgstr "坚守阵地"
+
+msgid "zeppelin/objective04/subheader"
+msgstr "击毁%d辆敌方坦克"
+
+msgid "zeppelin/objective04/success"
+msgstr "成功击退敌袭"
+
+msgid "zeppelin/prebattle/header"
+msgstr "做好准备！"
+
+msgid "zeppelin/prebattle/start"
+msgstr "继续！"
+
+msgid "zeppelin/prebattle/subheader"
+msgstr "?empty?"
+
+msgid "zeppelin/respawn/header"
+msgstr "指挥官，待命"
+
+msgid "zeppelin/respawn/subheader"
+msgstr "增援即将抵达"
+
+msgid "zeppelin/respawn_over/header"
+msgstr "结束了"
+
+msgid "zeppelin/respawn_over/subheader"
 msgstr "全部坦克都已被击毁"

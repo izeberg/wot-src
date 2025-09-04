@@ -79,8 +79,6 @@ package net.wg.data.constants.generated
       
       public static const SIEGE_MODE_INDICATOR:String = "siegeModeIndicator";
       
-      public static const ROCKET_ACCELERATOR_INDICATOR:String = "rocketAcceleratorIndicator";
-      
       public static const PENETRATION_PANEL:String = "penetrationPanel";
       
       public static const GAME_MESSAGES_PANEL:String = "gameMessagesPanel";
@@ -176,6 +174,48 @@ package net.wg.data.constants.generated
       public static const COMP7_TANK_CAROUSEL_FILTER_POPOVER:String = "comp7TankCarouselFilterPopover";
       
       public static const COMP7_RECON_FLIGHT:String = "comp7ReconFlight";
+      
+      public static const WIDGETS_PANEL:String = "widgetPanel";
+      
+      public static const ROCKET_ACCELERATOR_INDICATOR:String = "rocketAcceleratorIndicator";
+      
+      public static const RECHARGEABLE_NITRO_WIDGET:String = "rechargeableNitroWidget";
+      
+      public static const CONCENTRATION_WIDGET:String = "concentrationWidget";
+      
+      public static const CHARGE_SHOT_WIDGET:String = "chargeShotWidget";
+      
+      public static const STANCE_DANCE_WIDGET_FIGHT:String = "stanceDanceFightWidget";
+      
+      public static const STANCE_DANCE_WIDGET_TURBO:String = "stanceDanceTurboWidget";
+      
+      public static const POWER_WIDGET:String = "powerWidget";
+      
+      public static const SUPPORT_WEAPON:String = "supportWeapon";
+      
+      public static const PILLBOX_SIEGE_WIDGET:String = "pillboxSiegeWidget";
+      
+      public static const TARGET_DESIGNATOR_WIDGET:String = "targetDesignatorWidget";
+      
+      public static const CHARGEABLE_BURST_WIDGET:String = "chargeableBurstWidget";
+      
+      public static const STATIONARY_RELOAD_WIDGET:String = "stationaryReloadWidget";
+      
+      public static const DECORATIVE_CROSSHAIR_PANEL:String = "decorativeCrosshairPanel";
+      
+      public static const CONCENTRATION_DECORATIVE_CROSSHAIR:String = "concentrationDecorativeCrosshair";
+      
+      public static const ACCURACY_DECORATIVE_CROSSHAIR:String = "accuracyDecorativeCrosshair";
+      
+      public static const PILLBOX_SIEGE_DECORATIVE_CROSSHAIR:String = "pillboxSiegeDecorativeCrosshair";
+      
+      public static const OVERHEAT_DECORATIVE_CROSSHAIR:String = "overheatDecorativeCrosshair";
+      
+      public static const FURY_DECORATIVE_CROSSHAIR:String = "furyDecorativeCrosshair";
+      
+      public static const TARGET_DESIGNATOR_UNSPOTTED_MARKER:String = "targetDesignatorUnspottedMarker";
+      
+      public static const VEHICLE_MECHANICS_PANELS:Array = [WIDGETS_PANEL,DECORATIVE_CROSSHAIR_PANEL];
        
       
       public function BATTLE_VIEW_ALIASES()

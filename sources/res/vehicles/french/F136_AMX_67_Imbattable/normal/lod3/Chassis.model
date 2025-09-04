@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F136_AMX_67_Imbattable/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/french/F136_AMX_67_Imbattable/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.704533 -0.000333 -3.759006</min>
+		<max>1.704533 1.270756 3.735205</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

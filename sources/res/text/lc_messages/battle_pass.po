@@ -384,44 +384,32 @@ msgstr "战斗通行证"
 msgid "chapter/fullName/10021"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullName/171"
-msgstr "责无旁贷"
+msgid "chapter/fullName/1114"
+msgstr "猎牛之歌"
 
-msgid "chapter/fullName/172"
-msgstr "双管齐下"
+msgid "chapter/fullName/181"
+msgstr "钢铁防线"
 
-msgid "chapter/fullName/173"
-msgstr "一丝不苟"
+msgid "chapter/fullName/182"
+msgstr "无敌装甲"
 
-msgid "chapter/fullName/174"
-msgstr "毁灭公爵"
-
-msgid "chapter/fullName/175"
-msgstr "古墓丽影"
-
-msgid "chapter/fullName/176"
-msgstr "战地狂欢"
+msgid "chapter/fullName/183"
+msgstr "机械狂潮"
 
 msgid "chapter/fullNameUppercased/10021"
 msgstr "猎牛之歌"
 
-msgid "chapter/fullNameUppercased/171"
-msgstr "责无旁贷"
+msgid "chapter/fullNameUppercased/1114"
+msgstr "猎牛之歌"
 
-msgid "chapter/fullNameUppercased/172"
-msgstr "双管齐下"
+msgid "chapter/fullNameUppercased/181"
+msgstr "钢铁防线"
 
-msgid "chapter/fullNameUppercased/173"
-msgstr "一丝不苟"
+msgid "chapter/fullNameUppercased/182"
+msgstr "无敌装甲"
 
-msgid "chapter/fullNameUppercased/174"
-msgstr "毁灭公爵"
-
-msgid "chapter/fullNameUppercased/175"
-msgstr "古墓丽影"
-
-msgid "chapter/fullNameUppercased/176"
-msgstr "战地狂欢"
+msgid "chapter/fullNameUppercased/183"
+msgstr "机械狂潮"
 
 msgid "chapter/title"
 msgstr "章节%(chapter)s"
@@ -546,6 +534,9 @@ msgstr "x%(multiplier)s"
 msgid "commonProgression/body/ended"
 msgstr "战斗通行证赛季已结束"
 
+msgid "crewBonusX3"
+msgstr "3倍乘员经验任务"
+
 msgid "equipCoinBonus"
 msgstr "合金元件: %(count)s"
 
@@ -643,6 +634,9 @@ msgstr "钢铁猎手"
 msgid "howToEarnPoints/battleTypeTitle/43"
 msgstr "天梯战"
 
+msgid "howToEarnPoints/battleTypeTitle/49"
+msgstr "轻量级天梯战"
+
 msgid "howToEarnPoints/bonus"
 msgstr "+%(bonus)s"
 
@@ -659,6 +653,12 @@ msgid "howToEarnPoints/card/comp7/text"
 msgstr "在天梯战模式中完成任务并获得额外点数。"
 
 msgid "howToEarnPoints/card/comp7/title"
+msgstr "日常任务"
+
+msgid "howToEarnPoints/card/comp7Light/text"
+msgstr "在轻量级天梯战模式中完成任务，获取更多点数。"
+
+msgid "howToEarnPoints/card/comp7Light/title"
 msgstr "日常任务"
 
 msgid "howToEarnPoints/card/daily/linkText"
@@ -704,6 +704,9 @@ msgstr "失败"
 msgid "howToEarnPoints/lose/43"
 msgstr "失败/平局"
 
+msgid "howToEarnPoints/lose/49"
+msgstr "失败/平局"
+
 msgid "howToEarnPoints/rangeLevels/29"
 msgstr "排名%(startLevel)d–%(endLevel)d"
 
@@ -720,6 +723,9 @@ msgid "howToEarnPoints/rating/29"
 msgstr "所获经验排名前%(level)d"
 
 msgid "howToEarnPoints/rating/43"
+msgstr "所获声望点数排名前%(level)d"
+
+msgid "howToEarnPoints/rating/49"
 msgstr "所获声望点数排名前%(level)d"
 
 msgid "howToEarnPoints/singleLevel/29"
@@ -746,6 +752,9 @@ msgstr "使用该模式的特殊坦克战斗"
 msgid "howToEarnPoints/text/43"
 msgstr "驾驶%(level)s级坦克参加战斗"
 
+msgid "howToEarnPoints/text/49"
+msgstr "驾驶%(level)s级坦克参加战斗"
+
 msgid "howToEarnPoints/title"
 msgstr "如何获取点数"
 
@@ -761,6 +770,9 @@ msgstr "胜利"
 msgid "howToEarnPoints/win/43"
 msgstr "胜利"
 
+msgid "howToEarnPoints/win/49"
+msgstr "胜利"
+
 msgid "intro/aboutButton"
 msgstr "关于战斗通行证"
 
@@ -768,17 +780,46 @@ msgid "intro/button"
 msgstr "收到！"
 
 msgid "intro/seasonDescription/text"
-msgstr ""
-"在战斗通行证赛季XVII中，您将有机会获得专属3D风格，适用于本赛季的核心坦克: M48A5、111&nbsp;5A、FV230&nbsp;爆裂者。"
+msgstr "在战斗通行证赛季XVIII中，您将有机会获得专属3D风格，适用于本赛季的核心坦克: \"鼠\"式、IS-7、AMX&nbsp;50&nbsp;B。"
 
 msgid "intro/seasonDescription/title"
 msgstr "全新主题3D风格"
 
 msgid "intro/title"
-msgstr "赛季XVII: 蓄势待发"
+msgstr "赛季XVIII: 巅峰征途"
 
 msgid "lootBoxBonus"
 msgstr "%(boxName)s: %(count)s"
+
+msgid "navigation/buyLevels"
+msgstr "购买阶段"
+
+msgid "navigation/buyLevelsRewards"
+msgstr "阶段奖励"
+
+msgid "navigation/buyPass"
+msgstr "高级通行证"
+
+msgid "navigation/buyPassConfirm"
+msgstr "购买高级通行证"
+
+msgid "navigation/buyPassRewards"
+msgstr "高级通行证奖励"
+
+msgid "navigation/chapterChoice"
+msgstr "战斗通行证赛季%(seasonNum)s"
+
+msgid "navigation/holidayFinal"
+msgstr "?empty?"
+
+msgid "navigation/intro"
+msgstr "战斗通行证赛季%(seasonNum)s"
+
+msgid "navigation/postProgression"
+msgstr "战斗通行证精英征程"
+
+msgid "navigation/progression"
+msgstr "战斗通行证章节"
 
 msgid "points/top"
 msgstr "%(vehicle):所获经验排名%(top)时%(bonus)。"
@@ -792,23 +833,11 @@ msgstr "前往章节"
 msgid "postProgressionView/footer/description/text"
 msgstr "完成所有章节后开放。已完成章节: %(completedChapters)/%(chaptersAmount)"
 
-msgid "postProgressionView/footer/extraChapter/description/174"
-msgstr "乘员、附带3D风格的坦克，以及其他好物等待着您。好极了！"
+msgid "postProgressionView/footer/extraChapter/description/text"
+msgstr "投身其中，获取专属奖励和独特个性化元素。"
 
-msgid "postProgressionView/footer/extraChapter/description/175"
-msgstr "稀有宝藏等待着您——乘员、附带3D风格的坦克，以及其他好物。"
-
-msgid "postProgressionView/footer/extraChapter/description/176"
-msgstr "获取一辆VIII级坦克和专属个性化元素。"
-
-msgid "postProgressionView/footer/extraChapter/title/174"
-msgstr "毁灭公爵来了！"
-
-msgid "postProgressionView/footer/extraChapter/title/175"
-msgstr "古墓丽影来了！"
-
-msgid "postProgressionView/footer/extraChapter/title/176"
-msgstr "战地狂欢已降临！"
+msgid "postProgressionView/footer/extraChapter/title/text"
+msgstr "特殊章节来了！"
 
 msgid "postProgressionView/footer/purchaseIP/banner/text"
 msgstr "购买高级通行证，获取更多奖励！"
@@ -845,9 +874,6 @@ msgstr "循环进度"
 
 msgid "postProgressionView/toolbar/aboutBattlePass"
 msgstr "关于战斗通行证"
-
-msgid "postProgressionView/toolbar/allChapters"
-msgstr "全部章节"
 
 msgid "postProgressionView/toolbar/howToEarnPoints"
 msgstr "如何获取点数"
@@ -893,9 +919,6 @@ msgstr "完成前一章节以购买此章节的高级通行证。"
 
 msgid "progression/battlePassNextChapterEpisodesDescr"
 msgstr "完成前一章节以购买该章节中的阶段。"
-
-msgid "progression/btnAllChapters"
-msgstr "全部章节"
 
 msgid "progression/btnExtras"
 msgstr ""
@@ -990,9 +1013,6 @@ msgid "progression/extraChapterWidget/tank/description/14"
 msgstr ""
 "纪念诺曼底行动\n"
 "80周年"
-
-msgid "progression/extraChapterWidget/tank/description/17"
-msgstr "《坦克世界》15周年纪念"
 
 msgid "progression/extraChapterWidget/tankName"
 msgstr "%(vehicleName)s"
@@ -1165,14 +1185,14 @@ msgstr "战斗通行证: \"%(chapter)s\"章节，阶段%(level)s"
 msgid "season/fullName/1002"
 msgstr "猎牛之歌"
 
-msgid "season/fullName/17"
-msgstr "蓄势待发"
+msgid "season/fullName/18"
+msgstr "巅峰征途"
 
 msgid "season/fullNameUppercased/1002"
 msgstr "猎牛之歌"
 
-msgid "season/fullNameUppercased/17"
-msgstr "蓄势待发"
+msgid "season/fullNameUppercased/18"
+msgstr "巅峰征途"
 
 msgid "selectBonus/battle_booster_gift"
 msgstr "自选指令"
@@ -1230,6 +1250,9 @@ msgstr "收到！"
 
 msgid "tankmenVoiceover/close"
 msgstr "关闭"
+
+msgid "tankmenVoiceover/description"
+msgstr "全部乘员均附带足以将3项特长训练至100%熟练度的乘员经验。"
 
 msgid "tankmenVoiceover/free"
 msgstr ""
@@ -1463,11 +1486,14 @@ msgstr "当前阶段"
 msgid "tooltips/inProgress/playGame/comp7"
 msgstr "使用X级坦克在%(bond_Open)s天梯战%(bond_Close)s中获取点数的规则。"
 
+msgid "tooltips/inProgress/playGame/comp7_light"
+msgstr "使用VIII级坦克在%(bond_Open)s轻量级天梯战%(bond_Close)s中获取点数的规则。"
+
 msgid "tooltips/inProgress/playGame/mapbox"
 msgstr "VIII–X级坦克在侦察任务中获取战斗通行证点数的规则。"
 
 msgid "tooltips/inProgress/playGame/randoms"
-msgstr "使用IV-X级坦克在%(bond_Open)s标准模式%(bond_Close)s(战役模式除外)中获取点数的规则。"
+msgstr "使用IV-XI级坦克在%(bond_Open)s标准模式%(bond_Close)s中获取点数的规则。"
 
 msgid "tooltips/inProgress/playGame/ranked"
 msgstr "使用X级坦克在排位赛中获取点数的规则。"
@@ -1503,8 +1529,7 @@ msgid "tooltips/points/specialVehicles"
 msgstr "本赛季的核心坦克可以获取更多的点数:"
 
 msgid "tooltips/points/subtitle"
-msgstr ""
-"战斗通行证点数可以让您推进进度。您可以通过使用IV–X级坦克在标准模式(战役模式除外)和其他游戏模式中战斗、完成特殊任务以及达到坦克点数上限来获取点数。"
+msgstr "战斗通行证点数可用来推动进度。您可通过使用IV–XI级坦克在标准模式和其他游戏模式中战斗、完成特殊任务，以及达到坦克点数上限来获取点数。"
 
 msgid "tooltips/points/title"
 msgstr "战斗通行证点数"
@@ -1546,7 +1571,7 @@ msgid "tooltips/prestigePoints/loseWithoutDraw"
 msgstr "失败"
 
 msgid "tooltips/prestigePoints/topPlace"
-msgstr "所获声望点数排名前{place}"
+msgstr "声望点数排名前{place}"
 
 msgid "tooltips/prestigePoints/win"
 msgstr "胜利"
@@ -1620,11 +1645,14 @@ msgstr "达到点数上限的奖励"
 msgid "tooltips/vehiclePoints/comp7"
 msgstr "参加天梯战模式战斗，通过出色的表现获取点数，完成战斗通行证进度阶段并获得奖励。"
 
+msgid "tooltips/vehiclePoints/comp7_light"
+msgstr "在轻量级天梯战中通过有效行为获取点数，推动战斗通行证进度阶段并获得奖励。"
+
 msgid "tooltips/vehiclePoints/continuePlaying"
 msgstr "使用其他坦克提升阶段进度。"
 
 msgid "tooltips/vehiclePoints/descr"
-msgstr "参加标准模式战斗（战役模式除外），通过出色的表现赚取点数，完成战斗通行证进度阶段并获得奖励。"
+msgstr "参加标准模式战斗，通过出色的表现获取点数，完成战斗通行证进度阶段并获得奖励。"
 
 msgid "tooltips/vehiclePoints/mapbox"
 msgstr "参加侦察任务战斗，通过出色的表现赚取点数，完成战斗通行证进度阶段并获得奖励。"

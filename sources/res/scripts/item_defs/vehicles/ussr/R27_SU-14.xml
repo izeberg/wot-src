@@ -18,7 +18,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.03
+			0.031
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -117,12 +117,9 @@
 		<weight>42210</weight>
 		<maxHealth>328</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>100</maxHealth>
-			<maxRegenHealth>50</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>158</maxRegenHealth>
+			<repairCost>8</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/russian/R27_SU-14/normal/lod0/Hull.model</undamaged>
@@ -3147,14 +3144,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<SU-14>
-			<userString>#ussr_vehicles:SU-14</userString>
+		<Chassis_R27_SU-14>
+			<userString>#ussr_vehicles:Chassis_R27_SU-14</userString>
 			<tags/>
 			<level>7</level>
 			<price>20000</price>
 			<unlocks>
 				<chassis>
-					SU-14Bis
+					Chassis_R27_SU-14_2
 					<cost>15115</cost>
 				</chassis>
 			</unlocks>
@@ -3163,9 +3160,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>64000</maxLoad>
 			<terrainResistance>
-				1.5 1.7 2.9
+				1.4 1.6 2.7
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>58000</brakeForce>
@@ -5924,9 +5920,9 @@
 				8.66666698
 				<!--BW_String-->
 			</repairTime>
-		</SU-14>
-		<SU-14Bis>
-			<userString>#ussr_vehicles:SU-14Bis</userString>
+		</Chassis_R27_SU-14>
+		<Chassis_R27_SU-14_2>
+			<userString>#ussr_vehicles:Chassis_R27_SU-14_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>27310</price>
@@ -5935,7 +5931,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>66000</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.7
 				<!--BW_String-->
@@ -5957,8 +5952,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>140</maxHealth>
-			<maxRegenHealth>105</maxRegenHealth>
+			<maxHealth>220</maxHealth>
+			<maxRegenHealth>165</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -8693,14 +8688,14 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				7.30434799
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</SU-14Bis>
+		</Chassis_R27_SU-14_2>
 	</chassis>
 	<turrets0>
-		<SU-14_1>
-			<userString>#ussr_vehicles:SU-14_1</userString>
+		<Turret_1_R27_SU-14>
+			<userString>#ussr_vehicles:Turret_1_R27_SU-14</userString>
 			<tags>cannotDetach</tags>
 			<level>8</level>
 			<price>1200</price>
@@ -8712,12 +8707,9 @@
 			<maxHealth>82</maxHealth>
 			<rotationSpeed>12</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>155</maxHealth>
+				<maxRegenHealth>78</maxRegenHealth>
+				<repairCost>8</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>260</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -8729,7 +8721,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_152mm_BR-2>
+				<_152mm_BR_2_SU_14>
 					shared
 					<maxAmmo>32</maxAmmo>
 					<reloadTime>27</reloadTime>
@@ -8743,13 +8735,9 @@
 					</shotDispersionRadius>
 					<unlocks>
 						<gun>
-							_203mm_B-4
+							_203mm_B_4_SU_14
 							<cost>64000</cost>
 						</gun>
-						<vehicle>
-							R51_Object_212
-							<cost>217500</cost>
-						</vehicle>
 					</unlocks>
 					<shotDispersionFactors>
 						<turretRotation>
@@ -8905,10 +8893,16 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_152mm_BR-2>
-				<_203mm_B-4>
+				</_152mm_BR_2_SU_14>
+				<_203mm_B_4_SU_14>
 					shared
 					<maxAmmo>16</maxAmmo>
+					<unlocks>
+						<vehicle>
+							R51_Object_212
+							<cost>217500</cost>
+						</vehicle>
+					</unlocks>
 					<reloadTime>44</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -60 1 -60</minPitch>
@@ -9072,7 +9066,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_203mm_B-4>
+				</_203mm_B_4_SU_14>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R27_SU-14/normal/lod0/Turret_01.model</undamaged>
@@ -9098,77 +9092,46 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</SU-14_1>
+		</Turret_1_R27_SU-14>
 	</turrets0>
 	<engines>
-		<M-17F>
+		<M_17T_SU_14>
 			shared
 			<unlocks>
 				<engine>
-					M-17F_R
+					M_17F_SU_14
 					<cost>10000</cost>
 				</engine>
 			</unlocks>
-		</M-17F>
-		<M-17F_R>shared</M-17F_R>
+		</M_17T_SU_14>
+		<M_17F_SU_14>shared</M_17F_SU_14>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<_10R>
-			shared
-			<unlocks>
-				<radio>
-					_12RT
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_10R>
 		<_12RT>shared</_12RT>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<M-17F>
+				<M_17T_SU_14>
 					<smplEnginePower>
 						528.6406
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>30</smplFwMaxSpeed>
-				</M-17F>
-				<M-17F_R>
+				</M_17T_SU_14>
+				<M_17F_SU_14>
 					<smplEnginePower>
 						740.0968
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>30</smplFwMaxSpeed>
-				</M-17F_R>
+				</M_17F_SU_14>
 			</engines>
 			<chassis>
-				<SU-14>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.23345
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.13685
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</SU-14>
-				<SU-14Bis>
+				<Chassis_R27_SU-14>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9189,18 +9152,40 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</SU-14Bis>
+				</Chassis_R27_SU-14>
+				<Chassis_R27_SU-14_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.21735
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.1288
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_R27_SU-14_2>
 			</chassis>
 		</detailed>
 	</physics>
 	<clientAdjustmentFactors>
 		<guns>
-			<_203mm_B-4>
+			<_203mm_B_4_SU_14>
 				<delta>
 					1.025
 					<!--BW_String-->
 				</delta>
-			</_203mm_B-4>
+			</_203mm_B_4_SU_14>
 		</guns>
 		<armour>
 			1.001327139

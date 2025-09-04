@@ -7,14 +7,13 @@ from gui.battle_pass.state_machine import lockNotificationManager
 from gui.battle_pass.state_machine.state_machine_helpers import isProgressionComplete, packToken, processRewardsToChoose
 from gui.impl.gen import R
 from gui.impl.lobby.battle_pass.battle_pass_buy_view import WINDOW_IS_NOT_OPENED, g_BPBuyViewStates
-from gui.server_events.events_dispatcher import showMissionsBattlePass
 from gui.shared import EVENT_BUS_SCOPE, g_eventBus
-from gui.shared.event_dispatcher import showBattlePassAwardsWindow, showBattlePassBuyWindow, showBattlePassRewardsSelectionWindow
+from gui.shared.event_dispatcher import showBattlePass, showBattlePassAwardsWindow, showBattlePassRewardsSelectionWindow
 from gui.shared.events import LobbySimpleEvent
 from helpers import dependency
 from shared_utils import CONST_CONTAINER
 from skeletons.gui.game_control import IBattlePassController
-from skeletons.gui.impl import INotificationWindowController
+from skeletons.gui.impl import IGuiLoader, INotificationWindowController
 if typing.TYPE_CHECKING:
     from gui.battle_pass.state_machine.machine import BattlePassStateMachine
     from typing import Dict, List, Optional
@@ -69,11 +68,11 @@ class LobbyState(State):
         self.addChildState(lobbyWait)
         self.addChildState(lobbyFinal)
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         lockNotificationManager(False, notificationManager=self.__notificationManager)
         self.__battlePass.onRewardSelectChange()
         if g_BPBuyViewStates.chapterID != WINDOW_IS_NOT_OPENED:
-            showBattlePassBuyWindow()
+            showBattlePass(R.aliases.battle_pass.BuyPass())
 
     def _onExited(self):
         lockNotificationManager(True, notificationManager=self.__notificationManager)
@@ -100,7 +99,7 @@ class ChoiceItemState(State):
     def __init__(self):
         super(ChoiceItemState, self).__init__(stateID=BattlePassRewardStateID.CHOICE_ITEM, flags=StateFlags.INITIAL)
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         machine = self.getMachine()
         if machine is not None:
             _, data, _ = machine.getRewardsData()
@@ -124,7 +123,7 @@ class PreviewState(State):
     def __init__(self):
         super(PreviewState, self).__init__(stateID=BattlePassRewardStateID.CHOICE_PREVIEW)
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         g_eventBus.addListener(LobbySimpleEvent.VEHICLE_PREVIEW_HIDDEN, self.__onHidePreview, EVENT_BUS_SCOPE.LOBBY)
 
     def _onExited(self):
@@ -143,7 +142,7 @@ class VideoState(State):
     def __init__(self):
         super(VideoState, self).__init__(stateID=BattlePassRewardStateID.VIDEO)
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         machine = self.getMachine()
         if machine is not None:
             chapter = machine.getChosenStyleChapter()
@@ -189,7 +188,7 @@ class RewardStyleState(State):
     def __init__(self):
         super(RewardStyleState, self).__init__(stateID=BattlePassRewardStateID.REWARD_STYLE, flags=StateFlags.INITIAL)
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         machine = self.getMachine()
         if machine is None:
             return
@@ -203,7 +202,8 @@ class RewardStyleState(State):
                 machine.post(StateEvent())
                 return
             prevLevel, _ = self.__battlePass.getChapterLevelInterval(chapterID)
-            data = {'reason': BattlePassRewardReason.STYLE_UPGRADE, 'chapter': chapterID, 
+            data = {'reason': BattlePassRewardReason.STYLE_UPGRADE, 
+               'chapter': chapterID, 
                'prevLevel': prevLevel, 
                'exitCallback': partial(machine.post, StateEvent())}
             styleToken = get3DStyleProgressToken(self.__battlePass.getSeasonID(), chapterID, level)
@@ -215,13 +215,14 @@ class RewardStyleState(State):
 
 class RewardAnyState(State):
     __slots__ = ('__needShowBuy', )
+    __guiLoader = dependency.descriptor(IGuiLoader)
     __battlePass = dependency.descriptor(IBattlePassController)
 
     def __init__(self):
         self.__needShowBuy = False
         super(RewardAnyState, self).__init__(stateID=BattlePassRewardStateID.REWARD_ANY)
 
-    def _onEntered(self):
+    def _onEntered(self, event):
         machine = self.getMachine()
         if machine is None:
             return
@@ -262,19 +263,19 @@ class RewardAnyState(State):
         if self.__battlePass.isDisabled():
             return
         else:
-            view = None
+            viewID = None
             if reason == BattlePassRewardReason.PURCHASE_BATTLE_PASS:
                 if self.__battlePass.isHoliday() and self.__battlePass.isCompleted():
-                    view = R.views.lobby.battle_pass.HolidayFinalView()
+                    viewID = R.aliases.battle_pass.HolidayFinal()
                 else:
-                    view = R.views.lobby.battle_pass.BattlePassProgressionsView()
+                    viewID = R.aliases.battle_pass.Progression()
             elif self.__battlePass.isFinalLevel(chapterID, newLevel) and not self.__needShowBuy:
                 if self.__battlePass.isHoliday():
-                    view = R.views.lobby.battle_pass.HolidayFinalView()
+                    viewID = R.aliases.battle_pass.HolidayFinal()
                 else:
-                    view = R.views.lobby.battle_pass.ChapterChoiceView()
-            if view is not None:
-                showMissionsBattlePass(view, chapterID)
+                    viewID = R.aliases.battle_pass.ChapterChoice()
+            if viewID is not None:
+                showBattlePass(viewID, chapterID)
             return
 
     def __onAwardExit(self, chapterID, newLevel):
@@ -291,5 +292,5 @@ class RewardAnyState(State):
         if machine is not None:
             machine.clearSelf()
             machine.post(StateEvent())
-        showBattlePassBuyWindow()
+        showBattlePass(R.aliases.battle_pass.BuyPass())
         return

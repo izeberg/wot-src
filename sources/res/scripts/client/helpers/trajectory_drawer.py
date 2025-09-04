@@ -1,16 +1,12 @@
 import BigWorld, CGF
+from constants import IS_DEVELOPMENT
 from debug_utils import LOG_CURRENT_EXCEPTION
-try:
-    import BallisticsDebug
-    isDebugDrawInited = True
-except ImportError:
-    isDebugDrawInited = False
 
 class TrajectoryDrawer(object):
     __slots__ = ('__impl', )
 
     def __init__(self, spaceID):
-        self.__impl = _TrajectoryDrawerImpl(spaceID) if isDebugDrawInited else None
+        self.__impl = _TrajectoryDrawerImpl(spaceID) if IS_DEVELOPMENT else None
         return
 
     def destroy(self):
@@ -30,14 +26,14 @@ class TrajectoryDrawer(object):
 
 
 class _TrajectoryDrawerImpl(object):
-    __slots__ = ('__gameObject', '__isEnabled', '__drawer', '__spaceID')
+    __slots__ = ('__spaceID', '__isEnabled', '__gameObject', '__drawer')
 
     def __init__(self, spaceID):
         self.__spaceID = spaceID
         self.__isEnabled = False
         self.__gameObject = None
         self.__drawer = None
-        BigWorld.addWatcher('Debug/Ballistics/Debug draw', self.__getEnabled, self.__setEnabled, 'Enable debug trajectory drawer')
+        BigWorld.addWatcher('Debug/Ballistics/Debug draw', self.__getEnabled, self.__setEnabled)
         return
 
     def destroy(self):
@@ -51,15 +47,19 @@ class _TrajectoryDrawerImpl(object):
             self.__gameObject.destroy()
         return
 
-    def addProjectile(self, shotID, attackerID, refStartPoint, refVelocity, gravity, maxDistance, isOwnShot):
+    def addProjectile(self, shotID, attackerID, startPoint, velocity, gravity, maxDistance, isOwnShot):
         if self.__isEnabled and self.__drawer is not None:
-            self.__drawer.addProjectile(shotID, attackerID, refStartPoint, refVelocity, gravity, maxDistance, isOwnShot)
+            self.__drawer.addProjectile(shotID, attackerID, startPoint, velocity, gravity, maxDistance, isOwnShot)
         return
 
     def removeProjectile(self, shotID):
         if self.__drawer is not None:
             self.__drawer.removeProjectile(shotID if shotID > 0 else -shotID)
         return
+
+    @staticmethod
+    def __castBool(value):
+        return value.lower() not in ('false', '0')
 
     def __getEnabled(self):
         return self.__isEnabled
@@ -70,12 +70,8 @@ class _TrajectoryDrawerImpl(object):
             if self.__gameObject is None:
                 self.__gameObject = CGF.GameObject(self.__spaceID, 'TrajectoryDrawer')
             if self.__drawer is None:
-                self.__drawer = self.__gameObject.createComponent(BallisticsDebug.TrajectoryDrawer)
+                self.__drawer = self.__gameObject.createComponent(BigWorld.TrajectoryDrawer)
             self.__gameObject.activate()
         else:
             self.__gameObject.deactivate()
         return
-
-    @staticmethod
-    def __castBool(value):
-        return value.lower() not in ('false', '0')

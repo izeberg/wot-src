@@ -7,8 +7,42 @@
 			<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>4cb1d40e-d20b-4dce-b6bb-c83ee7d8bb89</UUID>
+			<flags>8</flags>
+		</GameObject>
+		<GameObject>
+			<name>Cus_103_A15_Mouse_mascot</name>
+			<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
+			<flags>0</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
+		<ComponentPool>
+			<type>Hierarchy</type>
+			<version>2</version>
+			<component>
+				<UUID>4cb1d40e-d20b-4dce-b6bb-c83ee7d8bb89</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>4cb1d40e-d20b-4dce-b6bb-c83ee7d8bb89</link>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
 		<ComponentPool>
 			<type>Transform</type>
 			<version>1</version>
@@ -30,12 +64,74 @@
 					</property>
 				</config>
 			</component>
+			<component>
+				<UUID>4cb1d40e-d20b-4dce-b6bb-c83ee7d8bb89</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>4cb1d40e-d20b-4dce-b6bb-c83ee7d8bb89</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
 		</ComponentPool>
 		<ComponentPool>
 			<type>ComponentsVisibilityController</type>
 			<version>1</version>
 			<component>
-				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -113,7 +209,7 @@
 			<type>DynamicModel</type>
 			<version>1</version>
 			<component>
-				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -132,7 +228,7 @@
 			<type>Particle</type>
 			<version>1</version>
 			<component>
-				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -191,7 +287,7 @@
 			<type>Animator</type>
 			<version>2</version>
 			<component>
-				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
 				<flags>3</flags>
 				<config>
 					<property>
@@ -393,7 +489,7 @@
 			<type>VSEComponent</type>
 			<version>1</version>
 			<component>
-				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<UUID>72f835b3-c2b7-42ee-ad6e-77196548e666</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -403,6 +499,20 @@
 					</property>
 					<property>
 						<name>AutoStart</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>a7120c62-5cd5-4cfc-8c0b-89b3b7873630</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
 						<value>1</value>
 					</property>
 				</config>

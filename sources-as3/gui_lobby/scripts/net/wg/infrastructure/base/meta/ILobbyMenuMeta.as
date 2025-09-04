@@ -26,6 +26,8 @@ package net.wg.infrastructure.base.meta
       
       function showLegalS() : void;
       
+      function toReportContentS() : void;
+      
       function as_setVersionMessage(param1:String) : void;
       
       function as_setCounter(param1:Array) : void;
@@ -42,7 +44,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setMenuState(param1:String) : void;
       
-      function as_setCopyright(param1:String, param2:String) : void;
+      function as_setCopyright(param1:String, param2:String, param3:String) : void;
       
       function as_showVersion(param1:Boolean) : void;
    }

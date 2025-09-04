@@ -467,7 +467,7 @@ msgid "additionalRewards/premium"
 msgstr "高级账号天数：%(daysCount)s"
 
 msgid "additionalRewards/premium_plus"
-msgstr "坦克世界高级账号天数：%(daysCount)s"
+msgstr "《坦克世界》高级账号天数"
 
 msgid "additionalRewards/tankmenXP"
 msgstr "%(value)s乘员经验"
@@ -565,7 +565,7 @@ msgid "advanced/excellentFuel"
 msgstr "增加战斗过程中的发动机功率和炮塔旋转速度。"
 
 msgid "advanced/extraHealthReserve"
-msgstr "提升坦克生命值。增加悬挂装置的耐久度和承载能力 ，并且提升其维修速度。维修后完全恢复悬挂装置的生命值。"
+msgstr "提高坦克生命值。增强悬挂装置的耐久度和维修速度。维修后完全恢复悬挂装置耐久度。"
 
 msgid "advanced/gamemodeRandom"
 msgstr "系统自动匹配进行战斗。"
@@ -698,7 +698,7 @@ msgid "advanced/turbocharger"
 msgstr "提升发动机功率，使坦克的加速能力、操控性、爬坡能力更加优秀。提升坦克的最大前进和倒车速度，使您能更快抵达战略要点或是躲避敌方回击。"
 
 msgid "advanced/vehicleChassis"
-msgstr "影响坦克在各种地形上的行驶速度和越野能力的模块。也影响负载能力。"
+msgstr "影响坦克在各种地形上的旋转速度和越野能力的模块。"
 
 msgid "advanced/vehicleDualGun"
 msgstr "单点开火键触发标准射击。按住开火键让双炮管开始齐射准备。射击控制按键可在设置中变更。进行齐射会导致装填暂时停滞。"
@@ -713,13 +713,13 @@ msgid "advanced/vehicleRadio"
 msgstr "与盟友共享敌方坦克位置的情报，以便精确打击。"
 
 msgid "advanced/vehicleTrackWithinTrackChassis"
-msgstr "悬挂装置会影响坦克的旋转速度、在不同地形上的越野能力以及承载能力。拥有应急履带的悬挂装置可以帮助您在主履带被毁的情况下保持移动能力。"
+msgstr "悬挂装置会影响坦克的旋转速度、在不同地形上的越野能力。拥有应急履带的悬挂装置可以帮助您在主履带被毁的情况下保持移动能力。"
 
 msgid "advanced/vehicleTurret"
 msgstr "展示特定的旋转速度、观察范围、装甲防护以及俯/仰角。大多数自行反坦克炮和自行火炮都有固定的上层结构，而不是炮塔。"
 
 msgid "advanced/vehicleWheeledChassis"
-msgstr "影响坦克操纵性和承载能力的模块。轮式战车的悬挂装置无法在原地转向。"
+msgstr "影响坦克操纵性的模块。轮式战车的悬挂装置无法在原地转向。"
 
 msgid "ammo/auto/body"
 msgstr ""
@@ -778,6 +778,28 @@ msgstr "您的真实昵称和军团标签在战斗中不会对其他玩家显示
 
 msgid "anonymizer/teamStats/header"
 msgstr "该玩家的昵称已经修改为：%(name)s"
+
+msgid "armorFlashlight/performanceImpactInfo/attention"
+msgstr "开启装甲透视仪可能会导致游戏性能下降。"
+
+msgid "armorFlashlight/performanceImpactInfo/body"
+msgstr ""
+"装甲透视仪当前处于BETA测试阶段。\n"
+" "
+
+msgid "armorFlashlight/performanceImpactInfo/header"
+msgstr "对游戏性能的潜在影响"
+
+msgid "armorFlashlight/resolutionScalingInfo/attention"
+msgstr "提高装甲透视仪解析度可能会导致游戏性能下降。"
+
+msgid "armorFlashlight/resolutionScalingInfo/body"
+msgstr ""
+"装甲透视仪解析度会影响装甲分析质量。调低解析度可提高游戏性能，但可能会导致微小的装甲细节无法显示。\n"
+" "
+
+msgid "armorFlashlight/resolutionScalingInfo/header"
+msgstr "装甲透视仪解析度"
 
 msgid "awardItem/abilityToken/body"
 msgstr "累积所需的积分并激活前线模式战斗储备。"
@@ -1090,6 +1112,12 @@ msgstr "排除地图的额外空位。"
 msgid "awardItem/excluded_map/header"
 msgstr "排除地图"
 
+msgid "awardItem/excluded_maps/body"
+msgstr "%(mapCount)s个额外的地图排除空位。"
+
+msgid "awardItem/excluded_maps/header"
+msgstr "排除地图"
+
 msgid "awardItem/exclusive_vehicle/body"
 msgstr "%(vehicleName)s%(vehicleType)s，坦克世界Plus专属。"
 
@@ -1217,7 +1245,7 @@ msgid "awardItem/randomBooklet/header"
 msgstr "随机培训手册"
 
 msgid "awardItem/randomNationalBlueprint/body"
-msgstr "可用于为随机系别的任意可研发坦克创建蓝图碎片。"
+msgstr "用于创建随机系别任意II–X级可研发坦克的蓝图碎片"
 
 msgid "awardItem/randomNationalBlueprint/header"
 msgstr "蓝图碎片(随机系别)"
@@ -1355,10 +1383,10 @@ msgid "badgeinfo/text"
 msgstr "奖章显示在战斗加载界面、团队面板，按Tab键以及战斗结果界面的队伍列表中。"
 
 msgid "badgeinfo/title"
-msgstr "显示/隐藏奖章"
+msgstr "显示/隐藏旗帜"
 
 msgid "badgepage/ranked/suffixItem/duration"
-msgstr "每年，玩家必须通过战斗来捍卫此奖章的使用权。"
+msgstr "每个赛年，玩家必须通过战斗来捍卫此旗帜的使用权。"
 
 msgid "badgepage/ranked/suffixItem/position"
 msgstr "在赛年结束时成为排位赛中的最佳玩家。"
@@ -2112,19 +2140,25 @@ msgid "blueprint/BlueprintFragmentTooltip/inStorage"
 msgstr "仓库中"
 
 msgid "blueprint/BlueprintFragmentTooltip/intelDescription"
-msgstr "用于创建任何可研发的坦克蓝图碎片。"
+msgstr "用于创建任意%(tier)s级可研发坦克的蓝图碎片"
+
+msgid "blueprint/BlueprintFragmentTooltip/intelDescriptionTier"
+msgstr "II-X级"
 
 msgid "blueprint/BlueprintFragmentTooltip/intelFragment"
 msgstr "通用碎片"
 
 msgid "blueprint/BlueprintFragmentTooltip/nationalDescription"
-msgstr "用于创建%(nation)s的坦克蓝图碎片。"
+msgstr "用于创建%(nation)s%(tier)s级可研发坦克的蓝图碎片"
+
+msgid "blueprint/BlueprintFragmentTooltip/nationalDescriptionTier"
+msgstr "II-X级"
 
 msgid "blueprint/BlueprintFragmentTooltip/nationalFragment"
 msgstr "系别碎片"
 
 msgid "blueprint/BlueprintFragmentTooltip/random/description"
-msgstr "您将获得一个随机可研发坦克的蓝图碎片。"
+msgstr "您将获得一个随机II-X级可研发坦克的蓝图碎片"
 
 msgid "blueprint/BlueprintFragmentTooltip/random/discount"
 msgstr "每个添加到蓝图槽位的碎片都会为坦克研发提供一定的折扣。"
@@ -3445,10 +3479,10 @@ msgid "details/conditions/additional"
 msgstr "点击查看此任务的次要条件。"
 
 msgid "devMaps/body"
-msgstr "在全新或经过重制的地图上体验全新机制的大好机会。注意: 部分模型和效果并非最终版本。"
+msgstr "在有可能发生火车事故或飞机坠毁等随机事件的地图上投身战斗。这些事件会改变战场环境，并创造全新战术机会。"
 
 msgid "devMaps/header"
-msgstr "正在开发中的地图"
+msgstr "在带有随机事件的地图上战斗"
 
 msgid "deviceFits/already_installed/header"
 msgstr "已安装:"
@@ -3473,24 +3507,6 @@ msgstr "请更换火炮。"
 
 msgid "deviceFits/not_with_installed_equipment/header"
 msgstr "装备该给养，移除%(eqs)s"
-
-msgid "deviceFits/remove_too_heavy/header"
-msgstr "拆卸失败。"
-
-msgid "deviceFits/remove_too_heavy/text"
-msgstr "此配件需要承载能力更高的悬挂装置。"
-
-msgid "deviceFits/too_heavy/header"
-msgstr "无法安装。"
-
-msgid "deviceFits/too_heavy/text"
-msgstr "此配件需要承载能力更高的悬挂装置。"
-
-msgid "deviceFits/too_heavy_chassi/header"
-msgstr "不能安装此装备。此装备需要更多的载重量。"
-
-msgid "deviceFits/too_heavy_chassi/text"
-msgstr "请考虑减轻坦克负重。"
 
 msgid "deviceFits/unlock_error/header"
 msgstr "该模块还未研发。"
@@ -4342,7 +4358,7 @@ msgid "enableCommendations/header"
 msgstr "在战斗中获得点赞"
 
 msgid "enableTierGrouping/body"
-msgstr "只有在坦克图标显示时，根据等级显示坦克图标的功能才会生效。在不显示坦克图标的模式中，此功能不生效，如战役模式。"
+msgstr "只有开启\"显示坦克图标\"时，根据等级显示坦克图标的功能才会生效。在不支持坦克图标的模式中，该功能不会生效。"
 
 msgid "enableTierGrouping/header"
 msgstr "计分界面中显示等级分组"
@@ -5152,9 +5168,6 @@ msgstr "选择一辆坦克并确认您已准备就绪并加入战斗。"
 msgid "hangar/startBtn/squadNotReady/header"
 msgstr "不可用"
 
-msgid "hangar/startBtn/vehicleToHeavy/body"
-msgstr "当前负载超过了悬挂装置的承载能力。请升级悬挂装置或安装改进耐久配件。"
-
 msgid "hangar/status/toRent"
 msgstr "延期租用时间"
 
@@ -5497,7 +5510,7 @@ msgid "header/buttons/crystal/clickDesc"
 msgstr "点击以获取更多信息。"
 
 msgid "header/buttons/crystal/description0"
-msgstr "永久来源: 驾驶%(vehicle)s参与标准模式(包括战役模式)。"
+msgstr "长期来源: 驾驶%(vehicle)s参加标准模式。"
 
 msgid "header/buttons/crystal/description1"
 msgstr "额外来源: 高级任务、战斗通行证及其他游戏活动。"
@@ -5859,6 +5872,9 @@ msgstr "I"
 
 msgid "level/10"
 msgstr "X"
+
+msgid "level/11"
+msgstr "XI"
 
 msgid "level/2"
 msgstr "II"
@@ -6277,53 +6293,8 @@ msgstr ""
 "点击了解更多关于\n"
 "模式的信息。"
 
-msgid "mode_selector/popover/assault/body"
-msgstr ""
-"一方团队进攻敌方基地，另一方负责防守。团队角色（攻守方）随机分配。此模式在研发出任意VI级坦克后开放。\n"
-"\n"
-"组成：两队各15名玩家。"
-
-msgid "mode_selector/popover/assault/header"
-msgstr "攻防战"
-
 msgid "mode_selector/popover/body"
 msgstr "点击设置战斗模式。"
-
-msgid "mode_selector/popover/default/body"
-msgstr ""
-"每队都有各自的基地。战斗将持续至所有敌方坦克被摧毁或敌方基地被占领。此模式对所有坦克类型永久开放。\n"
-"\n"
-"组成：两队各15名玩家。"
-
-msgid "mode_selector/popover/default/header"
-msgstr "随机战"
-
-msgid "mode_selector/popover/devMaps/body"
-msgstr "在全新或经过重制的地图上体验全新机制的大好机会。注意: 部分模型和效果并非最终版本。"
-
-msgid "mode_selector/popover/devMaps/header"
-msgstr "正在开发中的地图"
-
-msgid "mode_selector/popover/domination/body"
-msgstr ""
-"地图上只有一个中立基地，两队都要试着占领它。战斗持续至所有敌方坦克被摧毁或基地被占领。此模式在研发出任意IV级坦克后开放。\n"
-"\n"
-"组成：两队各15名玩家。"
-
-msgid "mode_selector/popover/domination/header"
-msgstr "夺旗战"
-
-msgid "mode_selector/popover/epicStandard/attention"
-msgstr "您在此战斗模式中可能会遇到一些性能上的小问题"
-
-msgid "mode_selector/popover/epicStandard/body"
-msgstr ""
-"每队都有各自的基地。大地图上的战斗将持续至所有敌方坦克被摧毁或敌方基地被占领。此模式在研发出任意X级坦克后开放。\n"
-"\n"
-"组成:两队各30名玩家。"
-
-msgid "mode_selector/popover/epicStandard/header"
-msgstr "战役模式"
 
 msgid "mode_selector/progressionBtn/body"
 msgstr "开启带有进度的备用模式类型。可使用Alt键切换。"
@@ -6442,12 +6413,6 @@ msgstr "装备该给养，移除%(eqs)s"
 msgid "moduleFits/operation_error/header"
 msgstr "交易暂时不可用"
 
-msgid "moduleFits/remove_too_heavy/header"
-msgstr "拆卸失败。"
-
-msgid "moduleFits/remove_too_heavy/text"
-msgstr "此配件需要承载能力更高的悬挂装置。"
-
 msgid "moduleFits/replace"
 msgstr "当前安装有：%(moduleName)s。替换配件将改变以下参数："
 
@@ -6456,24 +6421,6 @@ msgstr "无法安装"
 
 msgid "moduleFits/similar_device_already_installed/text"
 msgstr "提供类似效果的配件已安装到坦克上了。"
-
-msgid "moduleFits/too_heavy/header"
-msgstr "无法安装。"
-
-msgid "moduleFits/too_heavy/text"
-msgstr "此配件需要承载能力更高的悬挂装置。"
-
-msgid "moduleFits/too_heavy_chassi/header"
-msgstr "不能安装此装备。此装备需要更多的载重量。"
-
-msgid "moduleFits/too_heavy_chassi/text"
-msgstr "请考虑减轻坦克负重。"
-
-msgid "moduleFits/too_heavy_chassis/header"
-msgstr "载重能力不足"
-
-msgid "moduleFits/too_heavy_chassis/text"
-msgstr "请降低车重。"
 
 msgid "moduleFits/unlock_error/header"
 msgstr "该模块还未研发。"
@@ -8498,6 +8445,46 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp17_9/label"
 msgstr "战斗通行证:古墓丽影"
 
+msgid "notrecruitedtankman/tankmen_bp18_1/desc"
+msgstr ""
+"鲜有人知安东·梅卡宁的出生地——他大概是从某个钢制舱口爬出来的，脸上还戴着电焊面具。这位不知疲倦的完美主义者，将坦克测试技术视作毕生使命。他以极限测试坦克而闻名，区区爆炸可没法让他皱一下眉头。传闻他曾仅用废铁和一把内六角扳手就修好了报废的T-34。这份执念近乎疯狂，但其成就无可指摘。毕竟，顶着梅卡宁(意为机械师)这样的姓氏，他的人生轨迹早已注定。"
+
+msgid "notrecruitedtankman/tankmen_bp18_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_1/label"
+msgstr "战斗通行证赛季XVIII"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/desc"
+msgstr ""
+"\"车轴\"雨果·科恩是一名经验丰富的坦克测试员，钢铁般的意志在无数次严苛测试中淬炼而成。那把磨损严重的扳手从不离身——不仅用于维修，更用来感知坦克的\"脉搏\"。他轻敲车体，凝神倾听那声宣告\"合格\"的微妙嗡鸣。所有未通过测试的坦克都会被彻底拆解重组，绝无例外。凭借数十载的经验与碳钢般的坚韧神经，雨果用每一次测试推动坦克设计的未来。在科恩的严苛标准下，唯有最强、最快、最具威胁的坦克才能通过测试。"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/label"
+msgstr "战斗通行证赛季XVIII"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/desc"
+msgstr ""
+"吕西安·阿西耶是个战地改装狂人，脑子灵光却一点也不冷静。他带着那把老扳手和一脑袋疯狂点子，把现有坦克改得天马行空、匪夷所思。发动机更烫，炮塔旋转速度更快，攻击力更猛——就连吕西安自己也未必知道怎么做到的。毕竟，这位\"疯子科学家\"从来不看蓝图，他是来打破规则、创新突破的。如果哪辆坦克在冒烟、冒火或震天响，那多半就是他的手笔。"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/label"
+msgstr "战斗通行证赛季XVIII"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/desc"
+msgstr ""
+"凯茜·里格斯在父亲的废车场里长大，擅长把锈铁皮改装成疾驰猛兽，如今她对坦克如法炮制。带着标志性的痞笑，她游刃有余地完成升级调试与实地测试，仿佛在挑衅这些钢铁巨兽能否跟上她的节奏。给这里提高动力，给那里重布线缆——轰然诞生的便是一头\"理论上符合规定\"的喷火巨兽。作为测试场常驻的唯一女性，她早已习以为常。凯茜知道，当武器库需要的不再是苟活而是能碾压战场的装备时，军方会打电话给她。"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/label"
+msgstr "战斗通行证赛季XVIII"
+
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
 "很多人都问我认不认识杰克·里德。在回答之前，我常常会闭上眼睛，深呼吸，因为当他的指挥官可一点都不轻松。里德是个叛逆的家伙，他总能以自己的方式完成命令，还能不违反军队规定。虽然在现实中他困在一个闷热的坦克里。但在内心世界中，他正骑着摩托，沿着高速公路前行，享受着清风吹拂脸颊的感觉。"
@@ -8859,6 +8846,36 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_mtlb1_6/label"
 msgstr "独特乘员"
 
+msgid "notrecruitedtankman/tankmen_pm3_1/desc"
+msgstr ""
+"莱妮来自德累斯顿，是反邪恶势力科学家之女，双亲于战时被捕，并消失于战俘营。她藏身地下抵抗组织，经作战训练后迅速成长为顶尖狙击手兼特工。战争期间，她策划破坏行动、狙击邪恶势力高官、为盟军搜集情报。战事结束后，她仍随特别部队追缉前邪恶势力成员——正是这段经历引起了第三区的注意，遂将其纳入麾下。"
+
+msgid "notrecruitedtankman/tankmen_pm3_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_1/label"
+msgstr "\"第三区\"个人任务"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/desc"
+msgstr ""
+"米罗斯拉夫成长于J系小镇的铁匠之家，自幼深谙体力劳作之道，更早早就明白力量不仅源于辛勤，更意味着责任。J系陷落后，他将所学献予抵抗运动，利用自己的力量与工程技术专长策划多起破坏行动。战后，他在重建J系坦克工业中扮演关键角色——直至在第三区寻得新的用武之地。"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/label"
+msgstr "\"第三区\"个人任务"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/desc"
+msgstr ""
+"科尔温出身军人世家，自幼在严苛纪律中成长。他凭借卓越的分析头脑，先以优等生身份从军校毕业，后参与火炬行动与西线战斗。无论担任情报官或部队指挥官，其非传统战略思维与临危不乱的特质都令他脱颖而出。战后在M系陆军分析部门任职期间，因战绩斐然被第三区相中。"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/label"
+msgstr "\"第三区\"个人任务"
+
 msgid "notrecruitedtankman/tankwoman/desc"
 msgstr "特定游戏活动的奖励。该女性乘员拥有训练至100%的兄弟连特长和另一项自选特长。"
 
@@ -9045,6 +9062,51 @@ msgstr "懦夫的气息，注定了你是我的猎物！"
 
 msgid "notrecruitedtankman/wt_CN2024_zhongpengfei/label"
 msgstr "最终兵器:终焉"
+
+msgid "notrecruitedtankman/wt_clone_boss/desc"
+msgstr "这个支离破碎的世界仍然抗拒秩序。很好。那我便再度赋予其规则..."
+
+msgid "notrecruitedtankman/wt_clone_boss/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_boss/label"
+msgstr "最终兵器:时空悖论"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/desc"
+msgstr "无论是时空循环、梦境还是陷阱，我们都能适应，并奋战到底。"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/label"
+msgstr "最终兵器:时空悖论"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/desc"
+msgstr "这并不是时间循环——而是某种东西在伪装成时间的重复。"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/label"
+msgstr "最终兵器:时空悖论"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/desc"
+msgstr "这个循环重复得越多，我就越不按规则出牌。即使时间也跟不上我的节奏。"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/label"
+msgstr "最终兵器:时空悖论"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/desc"
+msgstr "这个循环休想算计我。我不仅在求生，还在从中学习。"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/label"
+msgstr "最终兵器:时空悖论"
 
 msgid "notrecruitedtankman/yandex_1/desc"
 msgstr "雅娜是一名全能的战斗专家，她能够胜任车组中的所有乘员专业。她的抗压能力强，学习能力也不错，是一名善于团队合作的乘员。"
@@ -9326,13 +9388,28 @@ msgid "personalMissions/operation/awards/title/done"
 msgstr "完成作战行动的奖励:"
 
 msgid "personalMissions/operation/awards/title/excellentDone"
-msgstr "完美完成作战行动的奖励:"
+msgstr "完美完成的奖励:"
+
+msgid "personalMissions/operation/footer/activateCampaign/body"
+msgstr "继续进行\"迟来的支援\"和\"第二战线\"个人任务时，\"第三区\"个人任务将暂停。暂停的个人任务的全部进度将被保存，可随时继续进行。"
+
+msgid "personalMissions/operation/footer/activateCampaign/header"
+msgstr "恢复个人任务"
+
+msgid "personalMissions/operation/footer/activateMissions/body"
+msgstr "每个系列中的第一个任务将被激活。"
+
+msgid "personalMissions/operation/footer/activateMissions/header"
+msgstr "激活任务"
 
 msgid "personalMissions/operation/footer/descr/completionTokens"
-msgstr "坦克模块: "
+msgstr "坦克部件:"
 
 msgid "personalMissions/operation/footer/descr/completionTokens/pm2"
 msgstr "坦克蓝图: "
+
+msgid "personalMissions/operation/footer/descr/completionTokens/pm3"
+msgstr "组装坦克:"
 
 msgid "personalMissions/operation/footer/descr/disabled"
 msgstr "禁用作战行动"
@@ -9340,8 +9417,14 @@ msgstr "禁用作战行动"
 msgid "personalMissions/operation/footer/descr/doPrevOperation"
 msgstr "请完成前置作战行动"
 
+msgid "personalMissions/operation/footer/descr/excellentDone"
+msgstr "已获得所有奖励"
+
 msgid "personalMissions/operation/footer/descr/freeSheets"
 msgstr "通行令: "
+
+msgid "personalMissions/operation/footer/descr/mainRewardReceived"
+msgstr "已获得主要奖励"
 
 msgid "personalMissions/operation/footer/descr/noVehicle"
 msgstr "没有满足要求的坦克"
@@ -9353,7 +9436,7 @@ msgid "personalMissions/operation/footer/descr/questsFullyDone"
 msgstr "完美完成: "
 
 msgid "personalMissions/operation/footer/descr/selectQuest"
-msgstr "选择要完成的任务"
+msgstr "激活作战行动"
 
 msgid "personalMissions/operation/footer/title/available"
 msgstr "可用"
@@ -9370,6 +9453,9 @@ msgstr "启用"
 msgid "personalMissions/operation/footer/title/notAvailable"
 msgstr "不可用"
 
+msgid "personalMissions/operation/footer/title/onPause"
+msgstr "作战行动已暂停"
+
 msgid "personalMissions/operation/header/descr/postponed"
 msgstr "如果您在下一作战行动开始前完成上一作战行动的所有任务，您可以获得一个独特的徽章。"
 
@@ -9377,7 +9463,7 @@ msgid "personalMissions/operation/missions/title"
 msgstr "作战行动:"
 
 msgid "personalMissions/operation/title"
-msgstr "%(name)s作战行动"
+msgstr "作战行动"
 
 msgid "personalMissions/operationTitle/completeState/body"
 msgstr "完美完成任务、获得奖章，然后就有机会可以为您心爱的坦克购买独特的涂装。"
@@ -9742,10 +9828,10 @@ msgid "privateQuests/status/inProgress/header"
 msgstr "启用"
 
 msgid "privateQuests/status/lock/descr"
-msgstr "行动将在前一个完成后才可用。"
+msgstr "请完成前置作战行动"
 
 msgid "privateQuests/status/lock/header"
-msgstr "无法完成"
+msgstr "未开放"
 
 msgid "privateQuests/status/notReceived/header"
 msgstr "无法领取奖励"
@@ -9838,6 +9924,12 @@ msgstr "金币兑换折扣"
 
 msgid "quests/bonuses/token/header"
 msgstr "%(userName)s令牌"
+
+msgid "quests/bonuses/token/personal_missions_points/body"
+msgstr "用于在第三区行动中组装坦克。"
+
+msgid "quests/bonuses/token/personal_missions_points/header"
+msgstr "个人任务点数"
 
 msgid "quests/bonuses/token/resource/clan_promoresource/body"
 msgstr "用于建设要塞和生产军团储备的资源。工业资源可以在冲突战、攻城战或标准模式(X级坦克)中获取。"
@@ -10408,9 +10500,6 @@ msgstr "?empty?"
 msgid "redButton/disabled/vehicle/roaming/header"
 msgstr "服务器限制"
 
-msgid "redButton/disabled/vehicle/tooHeavy/body"
-msgstr "当前负载超过了悬挂装置的承载能力。请升级悬挂装置或安装改进耐久配件。"
-
 msgid "referralProgram/newLevelAwards/awardCount"
 msgstr "x%(count)s"
 
@@ -10709,6 +10798,12 @@ msgstr "聊天中的消息"
 msgid "settings/keyMovement/title"
 msgstr "锁定车体/切换模式"
 
+msgid "settings/keySpecialAbility/body"
+msgstr "这个按键可以激活特定坦克的特殊能力。"
+
+msgid "settings/keySpecialAbility/title"
+msgstr "特殊能力"
+
 msgid "settings/keyboard/backDraftInvert/body"
 msgstr "对调倒车时的左/右键。按下左键，您的坦克将向右转，反之亦然。"
 
@@ -10788,7 +10883,7 @@ msgid "settings/sound/subtitles/header"
 msgstr "字幕"
 
 msgid "settings/switchEquipment/body"
-msgstr "在战斗开始前倒计时期间选择备用配置的功能。作为战地升级的一部分对VI级和更高等级的坦克开放。"
+msgstr "在战前倒计时期间选择备用配置的功能。作为战地升级(适用于VI–X级坦克)的一部分，或解锁备用配置升级(适用于XI级坦克)后开放。"
 
 msgid "settings/switchEquipment/bodyFooter"
 msgstr "如果您在倒计时结束前无法完成加载进入战斗，请开启此设置。"
@@ -10797,7 +10892,10 @@ msgid "settings/switchEquipment/header"
 msgstr "配件和给养的配置选择"
 
 msgid "settings/switchMode/body"
-msgstr "该键用于锁定自行火炮/自行反坦克炮的车身或在特定坦克的攻城模式和行驶模式间切换。"
+msgstr ""
+"该按键用于锁定自行火炮/自行反坦克炮的车体，或切换特定坦克的射击和移动模式。\n"
+"\n"
+"对于一些坦克，按住该键才能激活特殊模式。"
 
 msgid "settingsControl/recommended"
 msgstr "已推荐:%(value)s"
@@ -11047,13 +11145,13 @@ msgid "specializationWotPlus/vehicle"
 msgstr ""
 "%(level)s{par_Open}%(type)s{par_Close} {gold_Open}%(name)s{gold_Close}"
 
-msgid "squadBonus/complex/body"
+msgid "squadBonus/complex/default/body"
 msgstr ""
 "当和其他玩家组队时，每场战斗结束后您将额外获得{brown_Open}%(value)s{brown_Close}战斗经验。\n"
 "\n"
 "该加成仅对常驻小队生效，不适用于战斗中的动态组队。"
 
-msgid "squadBonus/complex/header"
+msgid "squadBonus/complex/default/header"
 msgstr "组队战斗奖励"
 
 msgid "squadBonus/credits/bonusWithPremium"
@@ -11232,7 +11330,7 @@ msgstr ""
 "要求的坦克："
 
 msgid "suitableVehicle/unsuitable"
-msgstr "无需坦克"
+msgstr "没有满足要求的坦克"
 
 msgid "summary/status/tooltip"
 msgstr "每隔%(interval)s分更新一次数据。"
@@ -11262,6 +11360,18 @@ msgstr "使用%(unlockedBy)s组坦克进行%(battlesToUnlock)s场战斗。"
 
 msgid "tankCarusel/lock/rotation/header"
 msgstr "队伍%(groupNum)s的坦克无法使用"
+
+msgid "tankCaruselTooltip/earnings/header"
+msgstr "收益"
+
+msgid "tankCaruselTooltip/serviceRecords/eliteSystem"
+msgstr "精英系统"
+
+msgid "tankCaruselTooltip/serviceRecords/header"
+msgstr "服役纪录"
+
+msgid "tankCaruselTooltip/serviceRecords/prestigeEliteSystem"
+msgstr "精英系统: 最高等级"
 
 msgid "tankCaruselTooltip/vehicleType/elite/AT-SPG"
 msgstr "精英自行反坦克炮"
@@ -11293,6 +11403,36 @@ msgstr "轻型坦克"
 msgid "tankCaruselTooltip/vehicleType/normal/mediumTank"
 msgstr "中型坦克"
 
+msgid "tankCaruselTooltip/vehicleType/tier/elite/AT_SPG"
+msgstr "{{@ split}}{{tier}}级精英自行反坦克炮"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/SPG"
+msgstr "{{@ split}}{{tier}}级精英自行火炮"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/heavyTank"
+msgstr "{{@ split}}{{tier}}级精英重型坦克"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/lightTank"
+msgstr "{{@ split}}{{tier}}级精英轻型坦克"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/mediumTank"
+msgstr "{{@ split}}{{tier}}级精英中型坦克"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/AT_SPG"
+msgstr "{{@ split}}{{tier}}级自行反坦克炮"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/SPG"
+msgstr "{{@ split}}{{tier}}级自行火炮"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/heavyTank"
+msgstr "{{@ split}}{{tier}}级重型坦克"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/lightTank"
+msgstr "{{@ split}}{{tier}}级轻型坦克"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/mediumTank"
+msgstr "{{@ split}}{{tier}}级中型坦克"
+
 msgid "tank_params/avgParamComment/damage"
 msgstr "最小-最大损伤%(units)s"
 
@@ -11311,8 +11451,32 @@ msgstr "%(distance)s米最小–最大值%(units)s"
 msgid "tank_params/avgParamComment/piercingPower"
 msgstr "最小-最大值%(units)s"
 
+msgid "tank_params/desc/accuracyDispersionCap"
+msgstr "最大精度等级提供的100米精度加成。"
+
+msgid "tank_params/desc/accuracyDispersionPerLevel"
+msgstr "每个精度等级提供的100米精度加成。"
+
+msgid "tank_params/desc/accuracyLevelGainTime"
+msgstr "获取1个精度等级所需的时间。"
+
+msgid "tank_params/desc/accuracySpeedLimit"
+msgstr "超过此速度时，精度等级将停止生成。"
+
+msgid "tank_params/desc/accuracyWhileMovingDispersionCap"
+msgstr "最大精度等级提供的移动时或车体/炮塔旋转时的炮弹散布范围加成。"
+
+msgid "tank_params/desc/activeCoincideceShootingCharge"
+msgstr "交战模式下，每次击中敌方坦克时，额外生成的重合式机电瞄准镜充能数量。"
+
 msgid "tank_params/desc/aimingTime"
 msgstr "缩小瞄准圈直径60%的时间 (标准/特殊模式)。"
+
+msgid "tank_params/desc/aimingTimeCoincidenceElectromechanicalSight"
+msgstr "瞄准镜提供的瞄准圈直径缩小60%的时间加成。"
+
+msgid "tank_params/desc/aimingTimeTurbo"
+msgstr "涡轮模式下，瞄准时间延长。"
 
 msgid "tank_params/desc/attainableSpeed"
 msgstr ""
@@ -11346,11 +11510,29 @@ msgstr "如果每次命中都击穿装甲，连射时于1秒内可能对敌方�
 msgid "tank_params/desc/avgPiercingPower"
 msgstr "标准炮弹的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的+/- 25%。"
 
+msgid "tank_params/desc/boosterCoolingTime"
+msgstr "助推器在达到临界热量等级后，完全冷却所需的时间。"
+
+msgid "tank_params/desc/boosterDuration"
+msgstr "激活后，助推器效果的最大持续时间。"
+
 msgid "tank_params/desc/burstFireRate"
 msgstr "短弹夹炮弹的装填间隔时间。/弹夹中的短弹夹数量。/短弹夹中的炮弹数量"
 
 msgid "tank_params/desc/chargeTime"
 msgstr "同时发射双管炮所需的准备时间。/齐射的装填停滞时间。"
+
+msgid "tank_params/desc/chargeableBurstDispersion"
+msgstr "点射模式下第二发炮弹的散布范围，表现为100米距离时炮弹与瞄准点的最大偏差。"
+
+msgid "tank_params/desc/chargeableBurstPenetrationCount"
+msgstr "激活模式所需的击穿敌方坦克的次数。"
+
+msgid "tank_params/desc/chargeableBurstReload"
+msgstr "点射模式下，第一发和第二发炮弹的装填间隔时间。"
+
+msgid "tank_params/desc/chargeableBurstSize"
+msgstr "点射短弹夹中储存的炮弹数量。"
 
 msgid "tank_params/desc/chassisRepairTime"
 msgstr "修复受损履带的时间。"
@@ -11369,11 +11551,35 @@ msgid "tank_params/desc/clipFireRate"
 msgstr ""
 "射出弹夹(或两门火炮)中最后一发炮弹和重新装填完整弹夹的间隔时间。/弹夹中两发炮弹、火炮、短弹夹之间的射击间隔时间。/火炮数量或弹夹中的炮弹数量。"
 
+msgid "tank_params/desc/coincidenceElectromechanicalSightDuration"
+msgstr "重合式机电瞄准镜激活后的效果持续时间。"
+
+msgid "tank_params/desc/concentrationModeCooldown"
+msgstr "使用后，再次激活稳定器所需的时间。"
+
+msgid "tank_params/desc/concentrationModeDuration"
+msgstr "激活后，稳定器保持激活状态的时间。"
+
 msgid "tank_params/desc/continuousShotsPerMinute"
 msgstr "每分钟可射出的炮弹数量，不包括装填时间。"
 
 msgid "tank_params/desc/damage"
 msgstr "标准炮弹击穿敌方装甲造成的损伤。"
+
+msgid "tank_params/desc/designatorCooldownS"
+msgstr "再次使用指示器所需的时间。冷却时间从射击后开始计算。"
+
+msgid "tank_params/desc/designatorInitialCooldownS"
+msgstr "战斗开始后，首次使用指示器所需的时间。"
+
+msgid "tank_params/desc/designatorMarkDurationS"
+msgstr "被标记敌方坦克保持可见，并受到更高炮弹损伤的时间。"
+
+msgid "tank_params/desc/designatorMarkedEnemiesAdditionalDamage"
+msgstr "被标记敌方坦克受到的额外炮弹损伤。"
+
+msgid "tank_params/desc/dispersionAt100mCoincidenceElectromechanicalSight"
+msgstr "瞄准镜提供的100米精度加成。"
 
 msgid "tank_params/desc/dualAccuracyCoolingDelay"
 msgstr "显示火炮射击后冷却到足以强化精度所需的时间。"
@@ -11384,14 +11590,68 @@ msgstr "该参数影响坦克的加速能力、最高速度以及转动速度。
 msgid "tank_params/desc/enginePowerPerTon"
 msgstr "该参数影响坦克的加速能力和不同地面上的通行能力(标准/特殊模式)。"
 
+msgid "tank_params/desc/enginePowerWithBoosters"
+msgstr "助推器提供的坦克加速能力加成。"
+
+msgid "tank_params/desc/engineTurboPowerCap"
+msgstr "涡轮模式下，该参数影响坦克的加速能力、最大速度和车体旋转速度。"
+
 msgid "tank_params/desc/explosionRadius"
 msgstr "HE炮弹爆炸后的损伤范围，表示炮弹在落点一定距离内造成损伤的能力。"
+
+msgid "tank_params/desc/extraShotClipReloadTime"
+msgstr "射击最后一发炮弹后增加的剩余弹夹装填时间"
+
+msgid "tank_params/desc/forwardMaxSpeed"
+msgstr "坦克速度由其技术参数决定。"
+
+msgid "tank_params/desc/furyMaxReloadEffAvgDpm"
+msgstr "最大装填效率等级时的平均每分钟损伤加成。"
+
+msgid "tank_params/desc/furyMaxReloadEfficiencyLevel"
+msgstr "可累积的最大装填效率等级数量。"
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelDuration"
+msgstr "装填效率等级的持续时间。"
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelPerDestruction"
+msgstr "通过射击击毁1辆敌方坦克后，获得的装填效率等级数量。"
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelPerHit"
+msgstr "每次击中被点亮的敌方坦克后，所获得的装填效率等级数量。"
+
+msgid "tank_params/desc/furyReloadSpeedBonusPerEfficiencyLevel"
+msgstr "每个装填效率等级的装填速度加成。"
+
+msgid "tank_params/desc/gunTraverseDispersionTurbo"
+msgstr "涡轮模式下，火炮旋转时的炮弹散布范围惩罚。"
 
 msgid "tank_params/desc/gunYawLimits"
 msgstr "当坦克静止时火炮的射界范围(左边和右边)。"
 
+msgid "tank_params/desc/heatAvgDmgPerLvl"
+msgstr "累积的每个热量等级的平均损伤加成。"
+
+msgid "tank_params/desc/heatChargeOverheatDuration"
+msgstr "坦克无法射击或切换炮弹的时间。"
+
+msgid "tank_params/desc/heatTimeBeforeOverheat"
+msgstr "充能过热前，坦克可保持最大热量等级的时间。"
+
+msgid "tank_params/desc/heatTimeToReachLevel"
+msgstr "达到每个热量等级所需的时间。"
+
 msgid "tank_params/desc/hullArmor"
 msgstr "车体装甲:分别为前/侧/后。"
+
+msgid "tank_params/desc/hullTraverseDispersionTurbo"
+msgstr "涡轮模式下，车体旋转时的炮弹散布范围惩罚。"
+
+msgid "tank_params/desc/improvedDamageEnemiesByRamming"
+msgstr "该参数表示撞击造成的损伤。坦克相撞时，系统会考虑撞击处双方的装甲厚度、坦克重量之差及速度。"
+
+msgid "tank_params/desc/improvedDamageEnemiesChassisByRamming"
+msgstr "该参数表示通过撞击对悬挂装置造成的损伤。坦克相撞时，系统会考虑撞击处双方的装甲厚度、坦克重量之差及速度。"
 
 msgid "tank_params/desc/invisibilityMovingFactor"
 msgstr "显示移动状态下的坦克隐蔽性。参数越高，隐蔽性越好。包含:移动的坦克/射击后的移动坦克。"
@@ -11399,21 +11659,87 @@ msgstr "显示移动状态下的坦克隐蔽性。参数越高，隐蔽性越好
 msgid "tank_params/desc/invisibilityStillFactor"
 msgstr "显示静止状态下的坦克隐蔽性。参数越高，隐蔽性越好。包含:静止的坦克/射击后的静止坦克。"
 
+msgid "tank_params/desc/ionAfterburnerActiveTurboCharge"
+msgstr "涡轮模式下，速度超过40千米/小时后，每秒生成的离子喷射加力装置充能数量。"
+
+msgid "tank_params/desc/ionAfterburnerDuration"
+msgstr "该参数影响离子喷射加力装置激活后的持续时间。"
+
+msgid "tank_params/desc/ionAfterburnerDurationEnginePower"
+msgstr "激活离子喷射加力装置后，该参数影响坦克的加速能力、最大速度、车体旋转速度。"
+
+msgid "tank_params/desc/ionAfterburnerDurationSpeedCap"
+msgstr "激活离子喷射加力装置后获得的额外速度。"
+
+msgid "tank_params/desc/ionAfterburnerPassiveTurboCharge"
+msgstr "涡轮模式下，每秒生成的离子喷射加力装置充能数量。"
+
+msgid "tank_params/desc/maxAccuracyLevel"
+msgstr "可累积的最大精度等级数量。"
+
 msgid "tank_params/desc/maxHealth"
 msgstr "坦克生命值。"
 
 msgid "tank_params/desc/maxSteeringLockAngle"
 msgstr "车轮可以转动的最大角度。影响坦克的机动性和操控性。"
 
+msgid "tank_params/desc/movementTraverseDispersionTurbo"
+msgstr "涡轮模式下，坦克移动时的炮弹散布范围惩罚。"
+
+msgid "tank_params/desc/passiveCoincideceShootingCharge"
+msgstr "交战模式下，每秒生成的重合式机电瞄准镜充能数量。"
+
 msgid "tank_params/desc/piercingPower"
 msgstr "标准炮弹能够穿透的装甲厚度，随着炮弹的变化而变化。"
+
+msgid "tank_params/desc/pillboxHorizontalRotationSpeed"
+msgstr "车体旋转速度，和改变运动方向的速度(操控性)。"
+
+msgid "tank_params/desc/pillboxSwitchOffTime"
+msgstr "切换模式所需的时间取决于发动机的状况。发动机受损会增加切换模式所需的时间。发动机被击毁时，无法切换模式。"
+
+msgid "tank_params/desc/pillboxSwitchOnTime"
+msgstr "切换模式所需的时间取决于发动机的状况。发动机受损会增加切换模式所需的时间。发动机被击毁时，无法切换模式。"
+
+msgid "tank_params/desc/pillboxVerticalRotationSpeed"
+msgstr "堡垒模式下，坦克上下倾斜车体的速度。"
 
 msgid "tank_params/desc/pitchLimits"
 msgstr "考虑到悬挂装置结构，火炮相对于车体位置所能达到的最大垂直俯仰角。"
 
+msgid "tank_params/desc/powerModeDuration"
+msgstr "直接驱动模式下，达到最大前进速度和发动机功率所需的时间。"
+
+msgid "tank_params/desc/powerModeThreshold"
+msgstr "激活直接驱动模式所需的时间。"
+
+msgid "tank_params/desc/preheatDispersionCap"
+msgstr "完全预热时的100米精度加成。"
+
+msgid "tank_params/desc/preheatDmgCap"
+msgstr "完全预热时的平均损伤加成。"
+
+msgid "tank_params/desc/preheatSpeedLimit"
+msgstr "超过该速度会阻止预热生成，甚至可能导致预热减少。"
+
+msgid "tank_params/desc/preheatTimeToFull"
+msgstr "坦克从零到完全预热所需的时间。"
+
+msgid "tank_params/desc/preheatTimeToZero"
+msgstr "坦克从完全预热恢复到零所需的时间。"
+
+msgid "tank_params/desc/preheatTransitionDelay"
+msgstr "在该延迟期间，坦克预热将不会增加或减少。"
+
 msgid "tank_params/desc/radioDistance"
 msgstr ""
 "与队友分享坦克的位置资讯。通信范围由一个半径为该参数所定的圆圈来展现。当数个圆圈重叠时，如果通信链中也有足够的坦克，那么就可以在任意距离下共享资讯。"
+
+msgid "tank_params/desc/reactivationDelay"
+msgstr "使用后，再次激活助推器所需的冷却时间。"
+
+msgid "tank_params/desc/reactivationLimit"
+msgstr "助推器无法再激活之前，可达到的最大热量等级。"
 
 msgid "tank_params/desc/relativeArmor"
 msgstr "一组表示坦克对于损伤抵挡效率的参数。"
@@ -11433,11 +11759,17 @@ msgstr "一组表示坦克发现敌方坦克的效率的参数。"
 msgid "tank_params/desc/reloadTime"
 msgstr "每分钟射速。"
 
+msgid "tank_params/desc/reloadTimeCoincidence"
+msgstr "瞄准镜激活时提供的火炮装填时间加成。"
+
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr "火炮射击后重新装填时间（双管火炮系统的总计装填时间）。"
 
 msgid "tank_params/desc/reloadTimeSecs/twinGun"
 msgstr "火炮射击后重新装填时间(单发射击模式/齐射射击模式)。"
+
+msgid "tank_params/desc/reverseSpeedReductionWithBoosters"
+msgstr "助推器激活时，坦克倒车速度的降低幅度。"
 
 msgid "tank_params/desc/rocketAccelerationEnginePower"
 msgstr "该参数影响坦克的加速能力、最高速度以及转动速度。"
@@ -11447,6 +11779,18 @@ msgstr "火箭助推器可提升发动机功率和最大速度。激活后，火
 
 msgid "tank_params/desc/rocketAccelerationSpeedLimits"
 msgstr "激活火箭助推器后的坦克速度。"
+
+msgid "tank_params/desc/secondaryAvgDamage"
+msgstr "辅助武器炮弹击穿后造成的平均损伤。损伤浮动范围为平均值的±25%。"
+
+msgid "tank_params/desc/secondaryAvgPiercingPower"
+msgstr "辅助武器炮弹的平均穿透力，已计入炮弹转正效应。穿透力浮动范围为平均值的±25%。"
+
+msgid "tank_params/desc/secondaryReloadTimeSecs"
+msgstr "射击后的辅助武器装填时间。"
+
+msgid "tank_params/desc/secondaryTotalBurstSize"
+msgstr "每次激活时，辅助武器可用的炮弹数量。"
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr "当瞄准圈缩小到最小时火炮在100米距离上的射击精度。"
@@ -11460,11 +11804,20 @@ msgstr "显示炮弹每100米可偏离瞄准点多少米。标准数值(第一�
 msgid "tank_params/desc/speedLimits"
 msgstr "坦克速度由它的参数决定。"
 
+msgid "tank_params/desc/stationaryReloadSwitchOffTime"
+msgstr "中断装填过程后，炮塔解锁，以及坦克可以再次开火前需要等待的时间。"
+
+msgid "tank_params/desc/stationaryReloadSwitchOnTime"
+msgstr "将炮塔与外部弹药舱连接起来，并开始装填过程的时间。"
+
 msgid "tank_params/desc/stunMaxDuration"
 msgstr "显示当HE弹击穿了敌方坦克装甲，且该坦克未安装能够减少弹震持续时间的配件或给养，并受到最高损伤时，敌方乘员将受到弹震效果的最长时间。"
 
 msgid "tank_params/desc/stunMinDuration"
 msgstr "显示当敌方坦克处于损伤范围内，且未安装能够减少弹震持续时间的配件或给养时，敌方乘员将受到弹震效果的最短时间。"
+
+msgid "tank_params/desc/switchEngineModeBothModes"
+msgstr "切换交战和涡轮模式所需的时间。"
 
 msgid "tank_params/desc/switchOffTime"
 msgstr "在模式之间切换所需的时间取决于发动机的状况。损坏的发动机增加了切换所需的时间。发动机损坏时切换不可用。"
@@ -11479,6 +11832,15 @@ msgid "tank_params/desc/timeOfReaching"
 msgstr ""
 "该参数为地面阻力系数，表示一辆坦克在完全平面上从静止状态开始行驶100米所需的时间。\n"
 "显示硬/普通/软地面的数值。"
+
+msgid "tank_params/desc/topSpeedWithBoosters"
+msgstr "助推器提供的坦克最大速度加成。"
+
+msgid "tank_params/desc/traverseSpeedReductionWithBoosters"
+msgstr "助推器激活时，车体旋转速度的降低幅度。"
+
+msgid "tank_params/desc/turboSpeedCap"
+msgstr "涡轮模式下，坦克获得的额外速度。"
 
 msgid "tank_params/desc/turboshaftBurstFireRate"
 msgstr "短弹夹炮弹的装填间隔时间。/弹夹中的短弹夹数量。/短弹夹中的炮弹数量"
@@ -11514,7 +11876,7 @@ msgid "tank_params/desc/twinGunTopSpeed"
 msgstr "齐射射击模式下的坦克速度。"
 
 msgid "tank_params/desc/vehicleWeight"
-msgstr "决定了坦克装备模块与配件后的最大载重量。载重量也决定了撞击造成的损伤。"
+msgstr "重量决定撞击的效果。"
 
 msgid "tank_params/desc/wheeledSpeedModeSpeed"
 msgstr "快速模式的参数。"
@@ -11983,6 +12345,21 @@ msgstr "已研发所有模块"
 msgid "vehicle/ammo"
 msgstr "在弹药架中"
 
+msgid "vehicle/battlePass/earningLimit"
+msgstr "战斗通行证点数上限"
+
+msgid "vehicle/battlePass/limitReached"
+msgstr "已达到战斗通行证点数上限"
+
+msgid "vehicle/battlePass/reward"
+msgstr "达到点数上限的奖励"
+
+msgid "vehicle/bonds/earningLimit"
+msgstr "战争债券每周获取上限"
+
+msgid "vehicle/bonds/limitReached"
+msgstr "后战争债券上限将重置"
+
 msgid "vehicle/buy_price"
 msgstr "购买"
 
@@ -11991,6 +12368,9 @@ msgstr "购买价格"
 
 msgid "vehicle/crew"
 msgstr "乘员"
+
+msgid "vehicle/crewRoles"
+msgstr "乘员({{count}})"
 
 msgid "vehicle/crew_award"
 msgstr "乘员(%d%%)"
@@ -12127,6 +12507,9 @@ msgstr "剩余恢复小时"
 msgid "vehicle/restore_price"
 msgstr "恢复"
 
+msgid "vehicle/role"
+msgstr "角色"
+
 msgid "vehicle/sell_price"
 msgstr "出售"
 
@@ -12159,6 +12542,9 @@ msgstr "订阅已暂停"
 
 msgid "vehicle/wotPlusRenting/remainingTime"
 msgstr "有效期至%(time)s"
+
+msgid "vehicle/wotPlusRenting/title"
+msgstr "该坦克为坦克世界Plus订阅专属。"
 
 msgid "vehicle/xp"
 msgstr "战斗经验"
@@ -12237,6 +12623,10 @@ msgstr "%(name)s普通改装"
 
 msgid "vehicleParams/bonus/vehPostProgressionPairModification/template"
 msgstr "%(name)s改装"
+
+msgid ""
+"vehicleParams/bonus/vehSkillTreePostProgressionBaseModification/template"
+msgstr "升级加成"
 
 msgid "vehicleParams/bonuses/title"
 msgstr "参数加成:"
@@ -12335,7 +12725,7 @@ msgid "vehiclePreview/boxTooltip/shell/header"
 msgstr "%(value)s炮弹"
 
 msgid "vehiclePreview/boxTooltip/statTracker/header"
-msgstr "%(value)s"
+msgstr "战绩追踪器: %(value)s"
 
 msgid "vehiclePreview/boxTooltip/style/header"
 msgstr "%(value)s风格"
@@ -12373,7 +12763,7 @@ msgid "vehiclePreview/buyButton/notUnlockedNation/header"
 msgstr "无法购买"
 
 msgid "vehiclePreview/buyButton/parentModuleIsLocked/body"
-msgstr "研发该坦克需研发上一辆坦克的模块。"
+msgstr "上一级坦克和/或其模块尚未研发完成，无法解锁这辆坦克。"
 
 msgid "vehiclePreview/buyButton/parentModuleIsLocked/header"
 msgstr "无法研发"
@@ -12755,9 +13145,6 @@ msgstr "?empty?"
 
 msgid "vehicleStatus/subscription_suspended/header"
 msgstr "不可用"
-
-msgid "vehicleStatus/tooHeavy/header"
-msgstr "坦克超载"
 
 msgid "vehicleStatus/undamaged/header"
 msgstr "准备完毕"

@@ -308,5 +308,15 @@ package net.wg.gui.lobby.vehicleCompare.nodes
       {
          return null;
       }
+      
+      public function isVisible() : Boolean
+      {
+         return false;
+      }
+      
+      public function isPromoted() : Boolean
+      {
+         return false;
+      }
    }
 }

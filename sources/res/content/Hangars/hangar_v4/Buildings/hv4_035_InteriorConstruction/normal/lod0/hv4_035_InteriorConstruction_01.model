@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Buildings/hv4_035_InteriorConstruction/normal/lod1/hv4_035_InteriorConstruction_01</parent>
+	<extent>90.000000</extent>
+	<visibilityBox>
+		<min>-12.773242 -0.621419 -4.635223</min>
+		<max>12.176622 14.114294 11.833420</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Buildings/hv4_035_InteriorConstruction/normal/lod0/hv4_035_InteriorConstruction_01</nodefullVisual>
+</root>

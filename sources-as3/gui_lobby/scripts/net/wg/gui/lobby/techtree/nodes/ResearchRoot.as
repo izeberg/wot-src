@@ -398,6 +398,11 @@ package net.wg.gui.lobby.techtree.nodes
          return false;
       }
       
+      public function isVisible() : Boolean
+      {
+         return true;
+      }
+      
       public function isTradeIn() : Boolean
       {
          return this._nodeData != null && (this._nodeData.state & NODE_STATE_FLAGS.CAN_TRADE_IN) > 0;
@@ -803,6 +808,11 @@ package net.wg.gui.lobby.techtree.nodes
          {
             dispatchEvent(new TechTreeEvent(TechTreeEvent.GO_TO_CHANGE_NATION_VIEW));
          }
+      }
+      
+      public function isPromoted() : Boolean
+      {
+         return false;
       }
    }
 }

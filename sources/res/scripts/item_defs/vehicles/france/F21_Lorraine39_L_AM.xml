@@ -2230,7 +2230,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>2700</weight>
-			<maxLoad>6600</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -4417,7 +4416,6 @@
 				<rightTrack>5</rightTrack>
 			</armor>
 			<weight>2700</weight>
-			<maxLoad>9000</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.3
 				<!--BW_String-->
@@ -6599,7 +6597,7 @@
 		<Turret_1_Lorraine39_L_AM>
 			<ceilless>true</ceilless>
 			<userString>#france_vehicles:Turret_1_Lorraine39_L_AM</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<notInShop>true</notInShop>
 			<price>120</price>

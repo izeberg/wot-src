@@ -51,10 +51,6 @@ package net.wg.data.constants.generated
       
       public static const CURRENT_VEHICLE_MISSIONS_VIEW_LINKAGE:String = "CurrentVehicleMissionsViewUI";
       
-      public static const BATTLE_PASS_MISSIONS_VIEW_PY_ALIAS:String = "BattlePassMissionsView";
-      
-      public static const BATTLE_PASS_MISSIONS_VIEW_LINKAGE:String = "BattlePassMissionsViewUI";
-      
       public static const MISSIONS_FILTER_POPOVER_ALIAS:String = "MissionsFilterPopover";
       
       public static const MISSIONS_TOKEN_POPOVER_ALIAS:String = "MissionsTokenPopover";

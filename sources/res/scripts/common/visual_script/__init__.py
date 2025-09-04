@@ -2,7 +2,7 @@ from visual_script.misc import ASPECT
 from visual_script.registrar import VSBlockRegistrar
 from visual_script.contexts.perks_context import PerkContext, CrewContext, PerkNotifyState
 from visual_script.contexts.cgf_context import CGFGameObjectContext
-import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, bitmask_blocks_common, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common
+import ability_common, example, general, vehicle_blocks, qa_blocks, qa_education_blocks, balance, entity_blocks, arena_blocks, bitmask_blocks_common, dictionary_blocks, debug_manager_blocks, cgf_blocks, commendations_common, vehicle_mechanics_blocks, command_flow
 g_blockRegistrar = VSBlockRegistrar(ASPECT.CLIENT, ASPECT.SERVER)
 g_blockRegistrar.regBlocksFromModule(example)
 g_blockRegistrar.regTypesFromModule(example)
@@ -31,3 +31,13 @@ g_blockRegistrar.regTypesFromModule(dictionary_blocks)
 g_blockRegistrar.regBlocksFromModule(debug_manager_blocks)
 g_blockRegistrar.regBlocksFromModule(cgf_blocks)
 g_blockRegistrar.regTypesFromModule(commendations_common)
+g_blockRegistrar.regBlocksFromModule(vehicle_mechanics_blocks)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.ConcentrationModeStateEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.VehicleSiegeStateEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.PowerModeStateEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.SecondaryGunStateEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.OverheatGainStateEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.StationaryReloadEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.StationaryReloadLockEnum)
+g_blockRegistrar.regType(vehicle_mechanics_blocks.TargetDesignatorStateEnum)
+g_blockRegistrar.regBlocksFromModule(command_flow)

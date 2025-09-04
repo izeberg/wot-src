@@ -117,16 +117,38 @@ msgstr "创建一个2人钢铁猎手小队。"
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
 msgstr "小队"
 
-msgid "headerButton/tooltips/comp7QualificationSquad/body"
-msgstr ""
-"完成资格赛前，您无法创建或加入小队。\n"
-"完成资格赛后，您即可参加2人小队和7人小队。"
+msgid "headerButton/tooltips/comp7BanIsSet/body"
+msgstr "由于您暂时被封禁，无法参加该模式，因此无法创建或加入小队。"
 
-msgid "headerButton/tooltips/comp7QualificationSquad/header"
-msgstr "无法组队战斗"
+msgid "headerButton/tooltips/comp7LightNoSuitableVehicles/body"
+msgstr "您车库中需要至少拥有1辆符合该模式要求的%(level)s级坦克，才能创建或加入小队。"
+
+msgid "headerButton/tooltips/comp7LightRestriction/body"
+msgstr "暂时无法创建小队。"
+
+msgid "headerButton/tooltips/comp7LightRestriction/header"
+msgstr "小队不开放"
+
+msgid "headerButton/tooltips/comp7LightSquad/body"
+msgstr "您可创建一个小队或加入一个现有小队。在轻量级天梯战中，小队可以由2名或7名玩家组成。"
+
+msgid "headerButton/tooltips/comp7LightSquad/header"
+msgstr "小队"
+
+msgid "headerButton/tooltips/comp7NoSuitableVehicles/body"
+msgstr "您车库中需要至少拥有1辆符合要求的%(level)s级坦克，才能创建或加入小队。"
+
+msgid "headerButton/tooltips/comp7QualificationSquad/body"
+msgstr "资格赛结束后，2人小队和7人小队将开放。"
+
+msgid "headerButton/tooltips/comp7Restriction/body"
+msgstr "无法创建小队。"
+
+msgid "headerButton/tooltips/comp7Restriction/header"
+msgstr "小队不开放"
 
 msgid "headerButton/tooltips/comp7Squad/body"
-msgstr "您可以创建一个小队或加入一个现有小队。在天梯战中，小队可以由2名或7名玩家组成。"
+msgstr "您可创建一个小队或加入一个现有小队。在天梯战中，小队可以由2名或7名玩家组成。"
 
 msgid "headerButton/tooltips/comp7Squad/header"
 msgstr "小队"
@@ -177,9 +199,7 @@ msgid "headerButton/tooltips/searching/header"
 msgstr "正在搜索"
 
 msgid "headerButton/tooltips/squad/body"
-msgstr ""
-"在标准模式中创建一个由2人或3人组成的小队。\n"
-"• 战斗类型: 随机战、攻防战、夺旗战、战役模式和可用的前线模式。"
+msgstr "创建一个2人或3人小队，在标准模式和前线模式(开放时)中协同作战"
 
 msgid "headerButton/tooltips/squad/header"
 msgstr "小队"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/Cus_63_ArmiesCh_Howitzerparts/normal/lod0/Cus_63_ArmiesCh_Howitzerparts_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.438107 -0.000259 -0.865547</min>
+		<max>0.100170 0.402174 0.845780</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_63_ArmiesCh_Howitzerparts/normal/lod1/Cus_63_ArmiesCh_Howitzerparts_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+</root>

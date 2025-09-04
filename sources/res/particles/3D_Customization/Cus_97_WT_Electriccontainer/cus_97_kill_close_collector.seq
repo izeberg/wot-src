@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>2.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>animation</name>
+			<type>animation</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>2.000000</duration>
+				<resourceID>content/3D_Customization/Cus_97_WT_Electriccontainer/animation/cus_97_kill_trigger.fbx</resourceID>
+				<clipName/>
+				<speed>1.000000</speed>
+				<layer>0</layer>
+				<blendIn>constant</blendIn>
+				<blendOut>constant</blendOut>
+				<blendInTime>0.000000</blendInTime>
+				<blendOutTime>0.000000</blendOutTime>
+				<clipStartTime>0.000000</clipStartTime>
+				<clipEndTime>2.000000</clipEndTime>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_idle_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 -0.008080</inTangent>
+				<outTangent>0.000000 0.000000 -0.008080</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 1.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 1.230897</inTangent>
+				<outTangent>0.000000 0.000000 -0.230189</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 0.007750</inTangent>
+				<outTangent>-0.000000 -0.000000 0.007750</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert2</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.623529 0.662745 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.623529 0.662745 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.013328</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.013328</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.623529 0.662745 1.000000 3.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 4.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 4.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.623529 0.662745 1.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.137070</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.137070</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert3</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.556863 0.776471 1.000000 0.300000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>0.556863 0.776471 1.000000 0.300000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.060714</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.060714</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.556863 0.776471 1.000000 3.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 5.400001</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 5.400001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.556863 0.776471 1.000000 0.300000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.219650</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -0.219650</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Particle 0</name>
+		<type>particle</type>
+		<resource>particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.179901 0.286003 0.001999</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999386</inTangent>
+				<outTangent>30.000002</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1.000000</value>
+				<inTangent>30.000002</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Cus_97_WT_Electriccontainer_close</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>1.966667</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Cus_97_WT_Electriccontainer_close</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>1.966667</duration>
+				<sequenceSound>Cus_97_WT_Electriccontainer_close</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

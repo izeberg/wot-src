@@ -149,9 +149,6 @@ msgstr "战斗等待时间过长。请选择其它坦克或稍后再试。如果
 msgid "artefact_apply/error_not_for_this_vehicle_type"
 msgstr "%(kind)s '%(name)s'不适合安装在该坦克上。"
 
-msgid "artefact_apply/error_too_heavy"
-msgstr "%(kind)s '%(name)s'太重了。请考虑更换悬挂装置或降低车重。"
-
 msgid "artefact_apply/invalid_vehicle"
 msgstr "坦克错误。%(kind)s '%(name)s'安装失败。"
 
@@ -172,9 +169,6 @@ msgstr "坦克受损。%(kind)s '%(name)s'安装失败。修理坦克并重试�
 
 msgid "artefact_buy/error_not_for_this_vehicle_type"
 msgstr "%(kind)s '%(name)s'不适合安装在该坦克上。"
-
-msgid "artefact_buy/error_too_heavy"
-msgstr "%(kind)s '%(name)s'太重了。请考虑更换悬挂装置或降低车重。"
 
 msgid "artefact_buy/invalid_module"
 msgstr "%(kind)s '%(name)s'购买失败。模块错误。"
@@ -245,9 +239,6 @@ msgstr "坦克受损。%(kind)s '%(name)s'未被销毁。维修坦克并重试�
 msgid "artefact_remove/demount_kit_success"
 msgstr "%(kind)s \"%(name)s\"已从坦克上拆卸。您消耗了一个拆卸工具。"
 
-msgid "artefact_remove/error_too_heavy"
-msgstr "%(kind)s '%(name)s'无法拆卸。请更换悬挂装置或减轻坦克重量。"
-
 msgid "artefact_remove/incompatibleEqs"
 msgstr "给养‘%s’因与当前模块不匹配已经被拆卸并放回仓库。"
 
@@ -316,9 +307,6 @@ msgstr "%(kind)s\"%(name)s\"购买失败。战争债券不足。"
 
 msgid "battleBooster_buy/error_not_for_this_vehicle_type"
 msgstr "%(kind)s\"%(name)s\"并不适用于此坦克。"
-
-msgid "battleBooster_buy/error_too_heavy"
-msgstr "%(kind)s\"%(name)s\"过于沉重。请更换悬挂装置或减轻坦克的重量。"
 
 msgid "battleBooster_buy/eventCoin_error"
 msgstr "%(kind)s \"%(name)s\"无法购买。周年纪念币不足。"
@@ -436,6 +424,9 @@ msgstr "由于系统维护，战斗通行证功能暂时无法在钢铁猎手中
 msgid "battlePass/switch_disable/comp7/body"
 msgstr "由于系统维护，您在天梯战模式中暂时无法获得战斗通行证点数。"
 
+msgid "battlePass/switch_disable/comp7Light/body"
+msgstr "由于系统维护，您暂时无法在轻量级天梯战模式中获得战斗通行证点数。"
+
 msgid "battlePass/switch_disable/epicBattle/body"
 msgstr "由于系统维护，战斗通行证功能暂时无法在前线模式中使用。"
 
@@ -449,6 +440,9 @@ msgstr ""
 
 msgid "battlePass/switch_enabled/comp7/body"
 msgstr "您在天梯战模式中可以重新获得战斗通行证点数了。我们对造成的不便深感歉意。"
+
+msgid "battlePass/switch_enabled/comp7Light/body"
+msgstr "您可以重新在轻量级天梯战模式中获取战斗通行证点数了。我们对造成的不便深感歉意。"
 
 msgid "battlePass/switch_enabled/epicBattle/body"
 msgstr "战斗通行证功能现已在前线模式中重新开放。我们对给您造成的不便深表歉意。"
@@ -922,9 +916,6 @@ msgstr "%(userName)s已经是军团的一员。"
 msgid "clientInstallError_not_for_this_vehicle_type"
 msgstr "%s ‘%s’不适用于当前坦克。"
 
-msgid "clientInstallError_too_heavy"
-msgstr "%s ‘%s’太重，请考虑更换悬挂装置或减轻坦克负重。"
-
 msgid "clientInstallError_vehicleGun_not_for_current_vehicle"
 msgstr "%s ‘%s’不适用于该炮塔，请更换炮塔。"
 
@@ -936,9 +927,6 @@ msgstr "%s ‘%s’装备系别不正确。"
 
 msgid "clientRemoveError_not_in_list"
 msgstr "%s ‘%s’不适用于当前坦克。"
-
-msgid "clientRemoveError_too_heavy"
-msgstr "装备%s ‘%s’太重，请考虑减轻坦克重量。"
 
 msgid "clientRemoveError_wrong_item_type"
 msgstr "%s ‘%s’的类型不正确。"
@@ -1110,10 +1098,10 @@ msgid "customization/added/projectionDecalValue"
 msgstr "已添加\"%s\"贴花: (x%s)"
 
 msgid "customization/added/statTracker"
-msgstr "已添加\"%s\""
+msgstr "已添加战绩追踪器: %s"
 
 msgid "customization/added/statTrackerValue"
-msgstr "已添加\"%s\": (x%s)"
+msgstr "已添加战绩追踪器: %s x(x%s)"
 
 msgid "customization/added/style"
 msgstr "已添加\"%s\"风格"
@@ -1220,10 +1208,10 @@ msgid "customization/removed/projectionDecalValue"
 msgstr "已移除\"%s\"贴花: (x%s)"
 
 msgid "customization/removed/statTracker"
-msgstr "已移除\"%s\""
+msgstr "已移除战绩追踪器: %s"
 
 msgid "customization/removed/statTrackerValue"
-msgstr "已移除\"%s\": (x%s)"
+msgstr "已移除战绩追踪器: %s x(x%s)"
 
 msgid "customization/removed/style"
 msgstr "已移除\"%s\"风格"
@@ -2092,18 +2080,17 @@ msgid "maps_black_list/select/server_error/COOLDOWN"
 msgstr "操作失败。请耐心等待当前操作完成。"
 
 msgid "maps_black_list/select/success"
-msgstr "%(mapName)s地图已排除在标准模式类型的随机战之外。您可以在%(time)s后更改您的选择。"
+msgstr "%(mapName)s地图已从标准模式中排除。您可在%(time)s后更换地图。"
 
 msgid "maps_black_list/select/success/noSubscriptions"
 msgstr ""
-"%(mapName)s地图已从标准模式的随机战中排除。您可以在%(time)s后更换选择，或通过激活《坦克世界》高级账号、订阅坦克世界Plus来额外解锁一个空位。"
+"%(mapName)s地图已从标准模式中排除。您可在%(time)s后更换地图，或通过激活《坦克世界》高级账号、订阅坦克世界Plus来额外解锁一个空位。"
 
 msgid "maps_black_list/select/success/premium"
-msgstr "%(mapName)s地图已从标准模式的随机战中排除。您可以在%(time)s后更换选择，或通过订阅坦克世界Plus来额外解锁一个空位。"
+msgstr "%(mapName)s地图已从标准模式中排除。您可在%(time)s后更换地图，或通过订阅坦克世界Plus来额外解锁一个空位。"
 
 msgid "maps_black_list/select/success/wotPlus"
-msgstr ""
-"%(mapName)s地图已从标准模式的随机战中排除。您可以在%(time)s后更换选择，或通过激活《坦克世界》高级账号来额外解锁一个空位。"
+msgstr "%(mapName)s地图已从标准模式中排除。您可在%(time)s后更换地图，或通过激活《坦克世界》高级账号来额外解锁一个空位。"
 
 msgid "maps_black_list/switch_off/body"
 msgstr ""
@@ -2176,12 +2163,6 @@ msgstr "%(kind)s '%(name)s'不适合安装在该坦克上。"
 msgid "module_apply/error_not_with_installed_equipment"
 msgstr "模块%(kind)s '%(name)s'和给养'%s'不能同时使用。"
 
-msgid "module_apply/error_too_heavy"
-msgstr "模块%(kind)s '%(name)s'太重。请考虑更换悬挂装置或减轻坦克重量。"
-
-msgid "module_apply/error_too_heavy_chassis"
-msgstr "模块%(kind)s '%(name)s'太重。请考虑减轻坦克重量。"
-
 msgid "module_apply/error_wrong_item_type"
 msgstr "%(kind)s '%(name)s'类型错误。"
 
@@ -2229,12 +2210,6 @@ msgstr "%(kind)s '%(name)s'不适合安装在该坦克上。"
 
 msgid "module_buy/error_not_with_installed_equipment"
 msgstr "模块%(kind)s '%(name)s'和给养'%s'不能同时使用。"
-
-msgid "module_buy/error_too_heavy"
-msgstr "%(kind)s '%(name)s'太重了。请考虑更换悬挂装置或降低车重。"
-
-msgid "module_buy/error_too_heavy_chassis"
-msgstr "%(kind)s '%(name)s'太重了。请降低车重。"
 
 msgid "module_buy/error_wrong_item_type"
 msgstr "%(kind)s '%(name)s'类型错误。"
@@ -2329,9 +2304,6 @@ msgstr "优惠不可用。"
 msgid "optionalDevices_apply/error"
 msgstr "配件配置错误。请稍后再试。"
 
-msgid "optionalDevices_apply/error_too_heavy"
-msgstr "需要更多的载重能力: 请降低坦克负载。"
-
 msgid "optionalDevices_apply/not_enough_money"
 msgstr "配件配置错误。资金不足，无法购买。"
 
@@ -2340,9 +2312,6 @@ msgstr "操作失败。您的金币将在战游钱包恢复后再次可用。"
 
 msgid "optionalDevices_remove/error"
 msgstr "配件配置错误。请稍后再试。"
-
-msgid "optionalDevices_remove/error_too_heavy"
-msgstr "需要更多的载重能力: 请降低坦克负载。"
 
 msgid "otherRestriction/nonFriendPrivateMessagesForbidden"
 msgstr "您的账号无法与不在联系人列表中的玩家进行私信。"
@@ -2368,6 +2337,63 @@ msgstr "年龄确认"
 msgid "periphery/errors/isNotAvailable"
 msgstr "转移功能不可用。未指定服务器。"
 
+msgid "personalMission/CompletionNotification/body"
+msgstr "已获得奖励:"
+
+msgid "personalMission/awardsNotification/buttonLabel"
+msgstr "前往作战行动"
+
+msgid "personalMission/awardsNotification/missionCompleted"
+msgstr "已完成任务"
+
+msgid "personalMission/awardsNotification/notCompletedFooter"
+msgstr "切换坦克以继续完成任务。"
+
+msgid "personalMission/awardsNotification/operation"
+msgstr "作战行动: %(operation)s"
+
+msgid "personalMission/awardsNotification/status"
+msgstr "已完成: %(completed)s%(all)s"
+
+msgid "personalMission/awardsNotification/status/all"
+msgstr " / %(all)d"
+
+msgid "personalMission/campaignCompleteHonor/title"
+msgstr "已完美完成\"%(campaignName)s\"个人行动！"
+
+msgid "personalMission/operationComplete/title"
+msgstr "已完成%(operationName)s作战行动！"
+
+msgid "personalMission/operationCompleteHonor/title"
+msgstr "已完美完成%(operationName)s作战行动！"
+
+msgid "personalMission/switcherNotification/allCampaignsOff"
+msgstr "由于系统维护，个人任务暂不开放。"
+
+msgid "personalMission/switcherNotification/allCampaignsOn"
+msgstr "个人任务已重新开放。我们对造成的不便深表歉意。"
+
+msgid "personalMission/switcherNotification/campaignOff"
+msgstr "由于系统维护，\"%(campaignName)s\"个人任务暂不开放。"
+
+msgid "personalMission/switcherNotification/campaignOn"
+msgstr "\"%(campaignName)s\"个人任务已重新开放。我们对造成的不便深表歉意。"
+
+msgid "personalMission/switcherNotification/missionOff"
+msgstr "由于系统维护，%(operationName)s作战行动中的\"%(missionName)s\"任务暂不开放。"
+
+msgid "personalMission/switcherNotification/missionOn"
+msgstr "%(operationName)s作战行动中的\"%(missionName)s\"任务已重新开放。我们对造成的不便深表歉意。"
+
+msgid "personalMission/switcherNotification/operationOff"
+msgstr "由于系统维护，\"%(campaignName)s\"个人任务中的%(operationName)s作战行动暂不开放。"
+
+msgid "personalMission/switcherNotification/operationOn"
+msgstr "\"%(campaignName)s\"个人任务中的%(operationName)s作战行动已重新开放。我们对造成的不便深表歉意。"
+
+msgid "personalMissions/activateSeason/server_error"
+msgstr "切换个人任务出错。请稍后再试。"
+
 msgid "personalMissions/badge"
 msgstr "奖章 %(name)s 已获得。"
 
@@ -2376,6 +2402,36 @@ msgstr "%(vehicleName)s的独特涂装已获得。"
 
 msgid "personalMissions/camouflageUnlocked"
 msgstr "%(vehicleName)s的独特涂装可用于该国的所有坦克:%(nation)s。"
+
+msgid "personalMissions/campaign12Paused/body"
+msgstr "全部作战行动进度已保存。您可随时继续进行个人任务。"
+
+msgid "personalMissions/campaign12Paused/title"
+msgstr "\"%(campaignName1)s\"和\"%(campaignName2)s\"个人任务已暂停"
+
+msgid "personalMissions/campaign12Resumed/body"
+msgstr "暂停的作战行动及其任务已恢复。"
+
+msgid "personalMissions/campaign12Resumed/title"
+msgstr "\"%(campaignName1)s\"和\"%(campaignName2)s\"个人任务已恢复"
+
+msgid "personalMissions/campaign3Paused/body"
+msgstr "全部作战行动进度已保存。您可随时继续进行个人任务。"
+
+msgid "personalMissions/campaign3Paused/title"
+msgstr "\"%(campaignName)s\"个人任务已暂停"
+
+msgid "personalMissions/campaign3Resumed/body"
+msgstr "暂停的作战行动已恢复。"
+
+msgid "personalMissions/campaign3Resumed/title"
+msgstr "\"%(campaignName)s\"个人任务已恢复"
+
+msgid "personalMissions/detailInstalled/body"
+msgstr "已成功安装%(detailName)s。"
+
+msgid "personalMissions/detailInstalled/title"
+msgstr "作战行动: %(operationName)s"
 
 msgid "personalMissions/discard/server_error"
 msgstr "无法重置任务。稍后再试。"
@@ -2403,6 +2459,32 @@ msgstr ""
 "取回通行令:%(count)s。\n"
 "它们可以再次使用。"
 
+msgid "personalMissions/operationActivation/body"
+msgstr "已激活各个系列中的第一个任务。"
+
+msgid "personalMissions/operationActivation/title"
+msgstr "已激活%(operationName)s作战行动！"
+
+msgid "personalMissions/operationComplete/body"
+msgstr ""
+"已获得奖励: \n"
+"%(reward list)s"
+
+msgid "personalMissions/operationComplete/title"
+msgstr "已完成%(name)s作战行动！"
+
+msgid "personalMissions/operationPaused/body"
+msgstr "全部任务进度已保存。您可随时继续进行作战行动。"
+
+msgid "personalMissions/operationPaused/title"
+msgstr "%(operationName)s作战行动已暂停"
+
+msgid "personalMissions/operationResumed/body"
+msgstr "暂停的任务已恢复。"
+
+msgid "personalMissions/operationResumed/title"
+msgstr "%(operationName)s作战行动已恢复"
+
 msgid "personalMissions/pause/server_error"
 msgstr "任务没有暂停。稍后再试。"
 
@@ -2426,6 +2508,12 @@ msgstr "错误。目前无法提交通行令。"
 
 msgid "personalMissions/pawn/success"
 msgstr "为%(questName)s任务提交通行令: %(count)s"
+
+msgid "personalMissions/reward/pm3/server_error"
+msgstr "获得奖励时出错。请稍后再试。"
+
+msgid "personalMissions/reward/pm3/success"
+msgstr "已成功安装%(detail_name)s。"
 
 msgid "personalMissions/reward/regular/server_error"
 msgstr "奖励无法领取。请稍后再试。"
@@ -2462,6 +2550,9 @@ msgstr "%(questNames)s任务未选中。请稍后再试！"
 
 msgid "personalMissions/select/server_error/DISABLED"
 msgstr "活动不可用。任务暂时被禁用。"
+
+msgid "personalMissions/select/server_error/INVALID_QUEST_ID"
+msgstr "无法选择任务: %(questNames)s。请稍后再试。"
 
 msgid "personalMissions/select/server_error/LOCKED_BY_VEHICLE_QUEST"
 msgstr "注意！若要改变任务，请等待所有适用于已激活任务的坦克返回车库。"
@@ -2501,6 +2592,9 @@ msgstr "任务选中成功。当前已选中任务:%(questNames)s。"
 
 msgid "personalMissions/tankmenGain"
 msgstr "已添加: 女性乘员"
+
+msgid "personalMissions30/select/server_error"
+msgstr "激活作战行动时出错。请稍后再试。"
 
 msgid "piggyBank/piggyBankFull"
 msgstr "银币储备库已满，它将于%(timeValue)s后开启"
@@ -4009,6 +4103,12 @@ msgstr "坦克%(userString)s在仓库中未找到。请稍后重试。"
 msgid "vehicleComponents/vehicle_unlock_success"
 msgstr "%(userString)s已研发。使用战斗经验:%(unspentXP)s。全局经验:%(freeXP)s。"
 
+msgid "vehicleMilestones/vanityAvailable/text"
+msgstr "%(vehicle)s的精英奖励系统现已开放"
+
+msgid "vehicleMilestones/vanityAvailable/title"
+msgstr "精英奖励"
+
 msgid "vehiclePostProgression/buyPairModification/body"
 msgstr "已成功购买%(vehicle)s的%(modification)s改装。"
 
@@ -4097,6 +4197,24 @@ msgstr "战地升级"
 msgid ""
 "vehiclePostProgression/vehiclesUnlockPostProgression/welcomeUnlock/body"
 msgstr "坦克改装路线现已解锁。您可以根据战斗角色配置您的坦克，并使用各种改装改变坦克参数。"
+
+msgid "vehicleSkillTreeProgression/processorError/body"
+msgstr "升级时发生错误，请稍后再试。"
+
+msgid "vehicleSkillTreeProgression/processorError/title"
+msgstr "错误"
+
+msgid "vehicleSkillTreeProgression/researchStep/body"
+msgstr "已成功研发%(vehicle)s的\"%(perk)s\"节点。"
+
+msgid "vehicleSkillTreeProgression/researchStep/title"
+msgstr "已研发节点"
+
+msgid "vehicleSkillTreeProgression/researchSteps/body"
+msgstr "已成功研发%(vehicle)s的%(perk)s个节点。"
+
+msgid "vehicleSkillTreeProgression/researchSteps/title"
+msgstr "已研发节点"
 
 msgid "vehicle_auto_return/server_error"
 msgstr "操作不可用。请稍后再试。"
@@ -4395,6 +4513,30 @@ msgstr "获取数据正在进行中。您的全局经验将会很快恢复。"
 
 msgid "wallet/not_available_gold"
 msgstr "获取数据正在进行中。您的金币将会很快恢复。"
+
+msgid "weekly_quests/reroll/WQ_NOT_ENABLED"
+msgstr "无法重置每周任务: 操作不可用。"
+
+msgid "weekly_quests/reroll/WQ_NO_SUCH_TOKEN"
+msgstr "无法重置每周任务: 任务无效。"
+
+msgid "weekly_quests/reroll/WQ_QUEST_COMPLETED"
+msgstr "无法重置每周任务: 任务已完成。"
+
+msgid "weekly_quests/reroll/WQ_REROLL_TIMEOUT"
+msgstr "无法重置每周任务: 操作暂不可用。"
+
+msgid "weekly_quests/reroll/success"
+msgstr "每周任务重置成功。"
+
+msgid "weekly_quests/reroll/unknown_error"
+msgstr "无法重置每周任务。请稍后再试。"
+
+msgid "weekly_quests/switch_off/body"
+msgstr "每周任务暂不开放。我们对造成的不便深表歉意。"
+
+msgid "weekly_quests/switch_on/body"
+msgstr "每周任务已重新开放。我们对造成的不便深表歉意。"
 
 msgid "winback/turnOffBattlesError"
 msgstr "无法退出热身模式。请稍后再试。"

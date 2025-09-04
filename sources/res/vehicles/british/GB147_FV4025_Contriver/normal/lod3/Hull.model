@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB147_FV4025_Contriver/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/british/GB147_FV4025_Contriver/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.928142 -0.594060 -3.811850</min>
+		<max>1.941566 0.845863 4.352068</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

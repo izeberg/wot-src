@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<ids>
+		<Large_LS_BOT>5999</Large_LS_BOT>
+	</ids>
+	<shared>
+		<Large_LS_BOT>
+			<tags/>
+			<price>100</price>
+			<notInShop>true</notInShop>
+			<weight>300</weight>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>80</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
+		</Large_LS_BOT>
+	</shared>
+</root>

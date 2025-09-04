@@ -1,6 +1,5 @@
-from frameworks.wulf import Array
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen import R
-from frameworks.wulf import ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_results.currency_record_model import CurrencyRecordModel
 
 class CurrencyGroupModel(ViewModel):

@@ -41,5 +41,15 @@ package net.wg.gui.battle.views.prebattleInfo.questInfo
       {
          return this._disposed;
       }
+      
+      public function setScaledFlagSaturation(param1:Number) : void
+      {
+         App.utils.commons.setSaturation(this.scaledFlag,param1);
+      }
+      
+      public function setScaledFlagBlendMode(param1:String) : void
+      {
+         this.scaledFlag.blendMode = param1;
+      }
    }
 }

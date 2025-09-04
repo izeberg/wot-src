@@ -33,61 +33,6 @@ package net.wg.gui.components.popovers
          super();
       }
       
-      private static function updateArrowDirection(param1:SmartPopOverLayoutInfo, param2:Point, param3:Point, param4:Point, param5:Padding = null) : SmartPopOverLayoutInfo
-      {
-         if(param5 == null)
-         {
-            param5 = new Padding(PopoverInternalLayout.INTERNAL_PADDING);
-         }
-         _checkedPopoverPos = new Point(Math.round(param4.x - param1.popupPaddingLeft - param5.left),Math.round(param4.y - param1.popupPaddingTop - param5.top));
-         _directionsAbility[PopOverConst.ARROW_TOP] = param3.y > _checkedPopoverPos.y + param5.top + param2.y;
-         _directionsAbility[PopOverConst.ARROW_RIGHT] = _checkedPopoverPos.x > 0;
-         _directionsAbility[PopOverConst.ARROW_BOTTOM] = _checkedPopoverPos.y > 0;
-         _directionsAbility[PopOverConst.ARROW_LEFT] = param3.x > _checkedPopoverPos.x + param5.left + param2.x;
-         var _loc6_:int = param1.arrowDirection;
-         if(!_directionsAbility[_loc6_])
-         {
-            switch(_loc6_)
-            {
-               case PopOverConst.ARROW_TOP:
-               case PopOverConst.ARROW_BOTTOM:
-                  if(_loc6_ == PopOverConst.ARROW_TOP && param4.y > param3.y - BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_BOTTOM])
-                  {
-                     _loc6_ = PopOverConst.ARROW_BOTTOM;
-                  }
-                  else if(_loc6_ == PopOverConst.ARROW_BOTTOM && param4.y < BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_TOP])
-                  {
-                     _loc6_ = PopOverConst.ARROW_TOP;
-                  }
-                  else
-                  {
-                     _loc6_ = _checkedPopoverPos.x > param3.x >> 1 ? int(PopOverConst.ARROW_RIGHT) : int(PopOverConst.ARROW_LEFT);
-                  }
-                  break;
-               case PopOverConst.ARROW_LEFT:
-               case PopOverConst.ARROW_RIGHT:
-                  if(_loc6_ == PopOverConst.ARROW_LEFT && param4.x > param3.x - BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_RIGHT])
-                  {
-                     _loc6_ = PopOverConst.ARROW_RIGHT;
-                  }
-                  else if(_loc6_ == PopOverConst.ARROW_RIGHT && param4.x < BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_LEFT])
-                  {
-                     _loc6_ = PopOverConst.ARROW_LEFT;
-                  }
-                  else
-                  {
-                     _loc6_ = _checkedPopoverPos.y > param3.y >> 1 ? int(PopOverConst.ARROW_BOTTOM) : int(PopOverConst.ARROW_TOP);
-                  }
-            }
-         }
-         if(_loc6_ != param1.arrowDirection)
-         {
-            param1.arrowDirection = _loc6_;
-            return param1;
-         }
-         return null;
-      }
-      
       public static function getLayoutOptions(param1:Point, param2:Vector.<Point>, param3:Point, param4:Point, param5:Rectangle, param6:TwoDimensionalPadding = null, param7:int = -1, param8:Boolean = false, param9:Padding = null) : SmartPopOverLayoutInfo
       {
          var _loc10_:SmartPopOverLayoutInfo = null;
@@ -195,6 +140,69 @@ package net.wg.gui.components.popovers
          return _loc10_;
       }
       
+      private static function updateArrowDirection(param1:SmartPopOverLayoutInfo, param2:Point, param3:Point, param4:Point, param5:Padding = null) : SmartPopOverLayoutInfo
+      {
+         if(param5 == null)
+         {
+            param5 = new Padding(PopoverInternalLayout.INTERNAL_PADDING);
+         }
+         _checkedPopoverPos = new Point(Math.round(param4.x - param1.popupPaddingLeft - param5.left),Math.round(param4.y - param1.popupPaddingTop - param5.top));
+         _directionsAbility[PopOverConst.ARROW_TOP] = param3.y > _checkedPopoverPos.y + param5.top + param2.y;
+         _directionsAbility[PopOverConst.ARROW_RIGHT] = _checkedPopoverPos.x > 0;
+         _directionsAbility[PopOverConst.ARROW_BOTTOM] = _checkedPopoverPos.y > 0;
+         _directionsAbility[PopOverConst.ARROW_LEFT] = param3.x > _checkedPopoverPos.x + param5.left + param2.x;
+         var _loc6_:int = param1.arrowDirection;
+         if(!_directionsAbility[_loc6_])
+         {
+            switch(_loc6_)
+            {
+               case PopOverConst.ARROW_TOP:
+               case PopOverConst.ARROW_BOTTOM:
+                  if(_loc6_ == PopOverConst.ARROW_TOP && param4.y > param3.y - BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_BOTTOM])
+                  {
+                     _loc6_ = PopOverConst.ARROW_BOTTOM;
+                  }
+                  else if(_loc6_ == PopOverConst.ARROW_BOTTOM && param4.y < BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_TOP])
+                  {
+                     _loc6_ = PopOverConst.ARROW_TOP;
+                  }
+                  else
+                  {
+                     _loc6_ = _checkedPopoverPos.x > param3.x >> 1 ? int(PopOverConst.ARROW_RIGHT) : int(PopOverConst.ARROW_LEFT);
+                  }
+                  break;
+               case PopOverConst.ARROW_LEFT:
+               case PopOverConst.ARROW_RIGHT:
+                  if(_loc6_ == PopOverConst.ARROW_LEFT && param4.x > param3.x - BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_RIGHT])
+                  {
+                     _loc6_ = PopOverConst.ARROW_RIGHT;
+                  }
+                  else if(_loc6_ == PopOverConst.ARROW_RIGHT && param4.x < BORDER_POPOVER_OFFSET && _directionsAbility[PopOverConst.ARROW_LEFT])
+                  {
+                     _loc6_ = PopOverConst.ARROW_LEFT;
+                  }
+                  else
+                  {
+                     _loc6_ = _checkedPopoverPos.y > param3.y >> 1 ? int(PopOverConst.ARROW_BOTTOM) : int(PopOverConst.ARROW_TOP);
+                  }
+            }
+         }
+         if(_loc6_ != param1.arrowDirection)
+         {
+            param1.arrowDirection = _loc6_;
+            return param1;
+         }
+         return null;
+      }
+      
+      override public function dispose() : void
+      {
+         this._stageDimensions = null;
+         this._positionKeyPoint = null;
+         this._positionKeyPointPadding = null;
+         super.dispose();
+      }
+      
       override public function invokeLayout() : Object
       {
          var _loc4_:DisplayObject = null;
@@ -228,24 +236,24 @@ package net.wg.gui.components.popovers
          return _loc10_;
       }
       
-      public function set stageDimensions(param1:Point) : void
-      {
-         this._stageDimensions = param1;
-      }
-      
-      public function set positionKeyPoint(param1:Point) : void
-      {
-         this._positionKeyPoint = param1;
-      }
-      
       public function get stageDimensions() : Point
       {
          return this._stageDimensions;
       }
       
+      public function set stageDimensions(param1:Point) : void
+      {
+         this._stageDimensions = param1;
+      }
+      
       public function get positionKeyPoint() : Point
       {
          return this._positionKeyPoint;
+      }
+      
+      public function set positionKeyPoint(param1:Point) : void
+      {
+         this._positionKeyPoint = param1;
       }
       
       public function get positionKeyPointPadding() : TwoDimensionalPadding
@@ -256,14 +264,6 @@ package net.wg.gui.components.popovers
       public function set positionKeyPointPadding(param1:TwoDimensionalPadding) : void
       {
          this._positionKeyPointPadding = param1;
-      }
-      
-      override public function dispose() : void
-      {
-         this._stageDimensions = null;
-         this._positionKeyPoint = null;
-         this._positionKeyPointPadding = null;
-         super.dispose();
       }
       
       public function get preferredLayout() : int

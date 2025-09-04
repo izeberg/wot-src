@@ -20,6 +20,11 @@ package net.wg.mock
       {
       }
       
+      public function canFocusLayer(param1:uint) : Boolean
+      {
+         return false;
+      }
+      
       public function dispose() : void
       {
       }
@@ -90,7 +95,7 @@ package net.wg.mock
       {
       }
       
-      public function setWindowPosition(param1:IViewWrapper, param2:Number, param3:Number) : void
+      public function setWindowPosition(param1:uint, param2:IViewWrapper, param3:Number, param4:Number) : void
       {
       }
       

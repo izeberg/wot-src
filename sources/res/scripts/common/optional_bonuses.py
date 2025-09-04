@@ -99,6 +99,9 @@ def __mergeTokens(total, key, value, isLeaf=False, count=1, *args):
     for tokenID, tokenData in value.iteritems():
         total = totalTokens.setdefault(tokenID, {'count': 0, 'expires': {}, 'limit': 0})
         total['count'] += count * tokenData.get('count', 1)
+        if total['count'] == 0:
+            totalTokens.pop(tokenID)
+            continue
         if not total['expires']:
             total['expires'] = tokenData['expires']
         if 'limit' in tokenData:

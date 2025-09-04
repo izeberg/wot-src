@@ -22,50 +22,71 @@ msgstr "宝马IV型改"
 msgid "BMW_IV_Kai_Ni"
 msgstr "宝马IV型改二"
 
-msgid "Chassis_Chi_Ha"
-msgstr "97M"
-
-msgid "Chassis_Chi_Ha_2"
-msgstr "97M改"
-
-msgid "Chassis_Chi_He"
-msgstr "一式中战"
-
-msgid "Chassis_Chi_He_2"
-msgstr "二式炮战车"
-
 msgid "Chassis_Chi_Ni"
 msgstr "中战二号案"
 
 msgid "Chassis_Chi_Ni_2"
 msgstr "试制97M"
 
-msgid "Chassis_Chi_Nu"
-msgstr "新式中战丙型(19)"
-
-msgid "Chassis_Chi_Nu_2"
-msgstr "三式中战"
-
 msgid "Chassis_Chi_Nu_Kai"
 msgstr "三式改"
 
-msgid "Chassis_Chi_Ri"
-msgstr "五式中战一号案"
+msgid "Chassis_J01_NC27"
+msgstr "雷诺乙型"
 
-msgid "Chassis_Chi_Ri_2"
-msgstr "五式中战二号案"
-
-msgid "Chassis_Chi_To"
-msgstr "四式中战原型车"
-
-msgid "Chassis_Chi_To_2"
-msgstr "四式中战量产型"
-
-msgid "Chassis_Ha_Go"
+msgid "Chassis_J03_Ha_Go"
 msgstr "九五轻战"
 
-msgid "Chassis_Ha_Go_2"
+msgid "Chassis_J03_Ha_Go_2"
 msgstr "四式轻战"
+
+msgid "Chassis_J07_Chi_Ha"
+msgstr "97M"
+
+msgid "Chassis_J07_Chi_Ha_2"
+msgstr "97M改"
+
+msgid "Chassis_J08_Chi_Nu"
+msgstr "新式中战丙型(19)"
+
+msgid "Chassis_J08_Chi_Nu_2"
+msgstr "三式中战"
+
+msgid "Chassis_J09_Chi_He"
+msgstr "一式中战"
+
+msgid "Chassis_J09_Chi_He_2"
+msgstr "二式"
+
+msgid "Chassis_J10_Chi_To"
+msgstr "四式中战原型车"
+
+msgid "Chassis_J10_Chi_To_2"
+msgstr "四式中战量产型"
+
+msgid "Chassis_J11_Chi_Ri"
+msgstr "五式中战一号案"
+
+msgid "Chassis_J11_Chi_Ri_2"
+msgstr "五式中战二号案"
+
+msgid "Chassis_J13_STA_1"
+msgstr "STA-1"
+
+msgid "Chassis_J13_STA_1_2"
+msgstr "STA-3"
+
+msgid "Chassis_J14_Type_61"
+msgstr "STA-4"
+
+msgid "Chassis_J14_Type_61_2"
+msgstr "六一式"
+
+msgid "Chassis_J16_ST_B1"
+msgstr "STB-1"
+
+msgid "Chassis_J16_ST_B1_7x7"
+msgstr "STB-1"
 
 msgid "Chassis_J19_Tiger_I_Jpn"
 msgstr "虎(扶桑)"
@@ -229,50 +250,11 @@ msgstr "九八轻战乙型"
 msgid "Chassis_NC27"
 msgstr "雷诺 NC-27"
 
-msgid "Chassis_NC27_2"
-msgstr "雷诺乙型"
-
-msgid "Chassis_STA_1"
-msgstr "STA-1"
-
-msgid "Chassis_STA_1_2"
-msgstr "STA-3"
-
 msgid "Chassis_STA_2_3"
 msgstr "STA-2"
 
-msgid "Chassis_ST_B1"
-msgstr "STB-1"
-
-msgid "Chassis_ST_B1_7x7"
-msgstr "STB-1"
-
 msgid "Chassis_Te_Ke"
 msgstr "97L"
-
-msgid "Chassis_Type_61"
-msgstr "STA-4"
-
-msgid "Chassis_Type_61_2"
-msgstr "六一式"
-
-msgid "Chi_Ha"
-msgstr "97M"
-
-msgid "Chi_Ha_descr"
-msgstr "?empty?"
-
-msgid "Chi_Ha_short"
-msgstr "97M"
-
-msgid "Chi_He"
-msgstr "一式中战"
-
-msgid "Chi_He_descr"
-msgstr "?empty?"
-
-msgid "Chi_He_short"
-msgstr "一式中战"
 
 msgid "Chi_Ni"
 msgstr "试制97M"
@@ -282,9 +264,6 @@ msgstr "?empty?"
 
 msgid "Chi_Ni_short"
 msgstr "试制97M"
-
-msgid "Chi_Nu"
-msgstr "三式中战"
 
 msgid "Chi_Nu_Kai"
 msgstr "三式改"
@@ -301,47 +280,29 @@ msgstr "三式改"
 msgid "Chi_Nu_Kai_short_special"
 msgstr "火炮精度高、穿透力强，炮盾装甲良好。"
 
-msgid "Chi_Nu_descr"
-msgstr "三式中战是一式中战的改型之一，安装了新式炮塔和大威力主炮。它是R系在战争期间量产的最强坦克，但由于原材料和零件短缺只生产了60辆。"
-
-msgid "Chi_Nu_short"
-msgstr "三式中战"
-
-msgid "Chi_Ri"
-msgstr "五式中战"
-
-msgid "Chi_Ri_descr"
-msgstr "?empty?"
-
-msgid "Chi_Ri_short"
-msgstr "五式中战"
-
-msgid "Chi_To"
-msgstr "四式中战"
-
-msgid "Chi_To_descr"
-msgstr "?empty?"
-
-msgid "Chi_To_short"
-msgstr "四式中战"
-
 msgid "Edelweiss_Engine"
 msgstr "雪绒花"
 
 msgid "Edelweiss_Radio"
 msgstr "雪绒花"
 
+msgid "Experimental_57_mm_Tank_Gun_Shin_10"
+msgstr "试制5.7cm新坦克炮 (10)"
+
+msgid "Experimental_57_mm_Tank_Gun_Shin_2"
+msgstr "试制5.7cm新坦克炮 (2)"
+
 msgid "FuG5A"
 msgstr "Fu 5 (20 WS.E.)"
 
-msgid "Ha_Go"
-msgstr "九五轻战"
+msgid "J01_NC27"
+msgstr "雷诺乙型"
 
-msgid "Ha_Go_descr"
+msgid "J01_NC27_descr"
 msgstr "?empty?"
 
-msgid "Ha_Go_short"
-msgstr "九五轻战"
+msgid "J01_NC27_short"
+msgstr "雷诺乙型"
 
 msgid "J02_Te_Ke_long_special"
 msgstr ""
@@ -350,11 +311,102 @@ msgstr ""
 msgid "J02_Te_Ke_short_special"
 msgstr "完美的火炮，良好的俯仰角"
 
+msgid "J03_Ha_Go"
+msgstr "九五轻战"
+
+msgid "J03_Ha_Go_descr"
+msgstr "?empty?"
+
+msgid "J03_Ha_Go_short"
+msgstr "九五轻战"
+
 msgid "J05_Ke_Ni_B_long_special"
 msgstr "一辆R系III级轻型坦克，有着高额的每分钟损伤、出色的精度和较高的生命值，机动性较为平庸。这辆坦克对新手来说是不错的选择。"
 
 msgid "J05_Ke_Ni_B_short_special"
 msgstr "火炮精度良好，坦克生命值充沛"
+
+msgid "J07_Chi_Ha"
+msgstr "97M"
+
+msgid "J07_Chi_Ha_descr"
+msgstr "?empty?"
+
+msgid "J07_Chi_Ha_short"
+msgstr "97M"
+
+msgid "J08_Chi_Nu"
+msgstr "三式中战"
+
+msgid "J08_Chi_Nu_descr"
+msgstr "三式中战是一式中战的改型之一，安装了新式炮塔和大威力主炮。它是R系在战争期间量产的最强坦克，但由于原材料和零件短缺只生产了60辆。"
+
+msgid "J08_Chi_Nu_short"
+msgstr "三式中战"
+
+msgid "J09_Chi_He"
+msgstr "一式中战"
+
+msgid "J09_Chi_He_descr"
+msgstr "?empty?"
+
+msgid "J09_Chi_He_short"
+msgstr "一式中战"
+
+msgid "J10_Chi_To"
+msgstr "四式中战"
+
+msgid "J10_Chi_To_descr"
+msgstr "?empty?"
+
+msgid "J10_Chi_To_short"
+msgstr "四式中战"
+
+msgid "J11_Chi_Ri"
+msgstr "五式中战"
+
+msgid "J11_Chi_Ri_descr"
+msgstr "?empty?"
+
+msgid "J11_Chi_Ri_short"
+msgstr "五式中战"
+
+msgid "J13_STA_1"
+msgstr "STA-1"
+
+msgid "J13_STA_1_descr"
+msgstr "?empty?"
+
+msgid "J13_STA_1_short"
+msgstr "STA-1"
+
+msgid "J14_Type_61"
+msgstr "六一式"
+
+msgid "J14_Type_61_descr"
+msgstr "?empty?"
+
+msgid "J14_Type_61_short"
+msgstr "六一式"
+
+msgid "J16_ST_B1"
+msgstr "STB-1"
+
+msgid "J16_ST_B1_7x7"
+msgstr "STB-1 7v7"
+
+msgid "J16_ST_B1_7x7_descr"
+msgstr ""
+"20世纪60年代初，三菱开始研发符合武器和防御要求的新型坦克。1969年9月，建造完成2辆STB-1的原型车用于测试，1970年向媒体公开并参加了阅兵式。"
+
+msgid "J16_ST_B1_7x7_short"
+msgstr "STB-1 7v7"
+
+msgid "J16_ST_B1_descr"
+msgstr "?empty?"
+
+msgid "J16_ST_B1_short"
+msgstr "STB-1"
 
 msgid "J19_Tiger_I_Jpn"
 msgstr "虎(扶桑)"
@@ -632,7 +684,7 @@ msgstr "十三式重战"
 
 msgid "J42_Chi_Se_descr"
 msgstr ""
-"1943年，R系陆军代表团在库默斯多夫观摩了D系\"虎\"式E型重型坦克的演示，并对该坦克印象深刻。他们随即决定为R系陆军打造一辆类似的坦克。设计采用大量D系坦克的技术方案，本有望大获成功。然而到1945年，R系内部局势已极度恶化，建造坦克面临重重挑战。正因如此，R系战时最后一辆重型坦克的命运就此终结。"
+"1943年，R系陆军代表团在库默斯多夫观摩了D系\"虎\"式E型重型坦克的演示，并对该坦克印象深刻。他们随即决定为R系陆军打造一辆类似的坦克。设计采用大量D系坦克的技术方案，本有望大获成功。然而到1945年，R系内部局势已极度恶化，建造坦克面临重重挑战。正因如此，R系战时最后一辆重型坦克的命运就此注定。"
 
 msgid "J42_Chi_Se_long_special"
 msgstr ""
@@ -760,6 +812,9 @@ msgstr ""
 msgid "Mitsubishi"
 msgstr "三菱A475VD"
 
+msgid "Mitsubishi_12HM20WT_61"
+msgstr "三菱 12HM20WT (61)"
+
 msgid "Mitsubishi_12ZF"
 msgstr "三菱 12ZF"
 
@@ -772,35 +827,23 @@ msgstr "三菱 12ZM"
 msgid "Mitsubishi_12_ZT"
 msgstr "三菱 12ZT"
 
+msgid "Mitsubishi_A6120VDe_95"
+msgstr "三菱 A6120VDe (95)"
+
+msgid "Mitsubishi_A6120VDe_S_95"
+msgstr "三菱 A6120VDe S (95)"
+
 msgid "Mitsubishi_MT_1100"
 msgstr "三菱 MT 1100"
 
 msgid "Mitsubishi_MT_1100_7x7"
 msgstr "三菱 MT 1100"
 
-msgid "NC27"
-msgstr "雷诺乙型"
-
-msgid "NC27_descr"
-msgstr "?empty?"
-
-msgid "NC27_short"
-msgstr "雷诺乙型"
-
 msgid "Nameless_Engine"
 msgstr "无名"
 
 msgid "Nameless_Radio"
 msgstr "无名"
-
-msgid "STA_1"
-msgstr "STA-1"
-
-msgid "STA_1_descr"
-msgstr "?empty?"
-
-msgid "STA_1_short"
-msgstr "STA-1"
 
 msgid "STA_2_3"
 msgstr "STA-2"
@@ -817,25 +860,6 @@ msgstr "STA-2"
 msgid "STA_2_3_short_special"
 msgstr "一门不错的火炮，适用于各种作战场景"
 
-msgid "ST_B1"
-msgstr "STB-1"
-
-msgid "ST_B1_7x7"
-msgstr "STB-1 7v7"
-
-msgid "ST_B1_7x7_descr"
-msgstr ""
-"20世纪60年代初，三菱开始研发符合武器和防御要求的新型坦克。1969年9月，建造完成2辆STB-1的原型车用于测试，1970年向媒体公开并参加了阅兵式。"
-
-msgid "ST_B1_7x7_short"
-msgstr "STB-1 7v7"
-
-msgid "ST_B1_descr"
-msgstr "?empty?"
-
-msgid "ST_B1_short"
-msgstr "STB-1"
-
 msgid "Te_Ke"
 msgstr "97L"
 
@@ -845,29 +869,44 @@ msgstr "?empty?"
 msgid "Te_Ke_short"
 msgstr "97L"
 
-msgid "Turret_1_Chi_Ha"
-msgstr "97M"
-
-msgid "Turret_1_Chi_He"
-msgstr "一式中战"
-
 msgid "Turret_1_Chi_Ni"
 msgstr "试制97M"
-
-msgid "Turret_1_Chi_Nu"
-msgstr "四式中战一号"
 
 msgid "Turret_1_Chi_Nu_Kai"
 msgstr "三式改"
 
-msgid "Turret_1_Chi_Ri"
-msgstr "五式中战一号案"
+msgid "Turret_1_J01_NC27"
+msgstr "雷诺乙型"
 
-msgid "Turret_1_Chi_To"
+msgid "Turret_1_J03_Ha_Go"
+msgstr "九五轻战"
+
+msgid "Turret_1_J07_Chi_Ha"
+msgstr "97M"
+
+msgid "Turret_1_J08_Chi_Nu"
+msgstr "四式中战一号"
+
+msgid "Turret_1_J09_Chi_He"
+msgstr "一式中战"
+
+msgid "Turret_1_J10_Chi_To"
 msgstr "四式中战原型车"
 
-msgid "Turret_1_Ha_Go"
-msgstr "九五轻战"
+msgid "Turret_1_J11_Chi_Ri"
+msgstr "五式中战一号案"
+
+msgid "Turret_1_J13_STA_1"
+msgstr "STA-1"
+
+msgid "Turret_1_J14_Type_61"
+msgstr "STA-4"
+
+msgid "Turret_1_J16_ST_B1"
+msgstr "STB-1"
+
+msgid "Turret_1_J16_ST_B1_7x7"
+msgstr "STB-1"
 
 msgid "Turret_1_J19_Tiger_I_Jpn"
 msgstr "虎 (扶桑)"
@@ -974,41 +1013,35 @@ msgstr "九八轻战乙型"
 msgid "Turret_1_NC27"
 msgstr "雷诺甲型"
 
-msgid "Turret_1_STA_1"
-msgstr "STA-1"
-
 msgid "Turret_1_STA_2_3"
 msgstr "STA-2"
-
-msgid "Turret_1_ST_B1"
-msgstr "STB-1"
-
-msgid "Turret_1_ST_B1_7x7"
-msgstr "STB-1"
 
 msgid "Turret_1_Te_Ke"
 msgstr "九七L"
 
-msgid "Turret_1_Type_61"
-msgstr "STA-4"
+msgid "Turret_2_J03_Ha_Go"
+msgstr "四式轻战"
 
-msgid "Turret_2_Chi_Ha"
-msgstr "九七M改"
+msgid "Turret_2_J07_Chi_Ha"
+msgstr "97M改"
 
-msgid "Turret_2_Chi_He"
-msgstr "二式"
-
-msgid "Turret_2_Chi_Nu"
+msgid "Turret_2_J08_Chi_Nu"
 msgstr "三式中战"
 
-msgid "Turret_2_Chi_Ri"
-msgstr "五式中战二号案"
+msgid "Turret_2_J09_Chi_He"
+msgstr "二式"
 
-msgid "Turret_2_Chi_To"
+msgid "Turret_2_J10_Chi_To"
 msgstr "四式中战量产型"
 
-msgid "Turret_2_Ha_Go"
-msgstr "四式轻战"
+msgid "Turret_2_J11_Chi_Ri"
+msgstr "五式中战二号案"
+
+msgid "Turret_2_J13_STA_1"
+msgstr "STA-3"
+
+msgid "Turret_2_J14_Type_61"
+msgstr "六一式"
 
 msgid "Turret_2_J26_Type_89"
 msgstr "八九中战乙型"
@@ -1031,26 +1064,23 @@ msgstr "三重105"
 msgid "Turret_2_Ke_Ni"
 msgstr "二式轻战"
 
-msgid "Turret_2_NC27"
-msgstr "雷诺乙型"
+msgid "Type_100_Kakyuu_V_12_CT"
+msgstr "百式 V-12(增压型) (CT)"
 
-msgid "Turret_2_STA_1"
-msgstr "STA-3"
+msgid "Type_100_Kuurei_V_12_2"
+msgstr "百式 V-12(风冷型) (2)"
 
-msgid "Turret_2_Type_61"
-msgstr "六一式"
+msgid "Type_100_Kuurei_V_12_Shin"
+msgstr "百式 V-12(风冷型) (新)"
 
-msgid "Type_61"
-msgstr "六一式"
-
-msgid "Type_61_descr"
-msgstr "?empty?"
-
-msgid "Type_61_short"
-msgstr "六一式"
+msgid "Type_100_Suirei_V_12_Shin"
+msgstr "百式 V-12(水冷型) (新)"
 
 msgid "V12_Kawasaki_Type_97"
 msgstr "川97 V-12改"
+
+msgid "_105mm_APCR_Common_Type_68_57"
+msgstr "APDS 六八式通常弹 (57)"
 
 msgid "_105mm_APCR_M68"
 msgstr "APDS 六八式通常弹"
@@ -1063,6 +1093,9 @@ msgstr "APHE 九五式特 甲型"
 
 msgid "_105mm_APHE_Type_1_Ni"
 msgstr "APHE 一式II"
+
+msgid "_105mm_AP_Common_Type_68_57"
+msgstr "AP 六八式通常弹 (57)"
 
 msgid "_105mm_AP_Experimental_Type2"
 msgstr "AP 试制二式"
@@ -1118,6 +1151,12 @@ msgstr "10cm 九二式A型炮"
 msgid "_105mm_Cannon_Type_14"
 msgstr "10cm 一四式炮"
 
+msgid "_105mm_Cannon_Type_92_O_I"
+msgstr "10cm 九二式炮 (120吨I型)"
+
+msgid "_105mm_Cannon_Type_92_O_Ni"
+msgstr "10cm 九二式炮 (120吨IV型)"
+
 msgid "_105mm_Cannon_Type_92_SP"
 msgstr "10cm 九二式 SP炮"
 
@@ -1136,9 +1175,6 @@ msgstr "10.5cm新炮"
 msgid "_105mm_Gun_Type_91"
 msgstr "10.5cm 九一式炮"
 
-msgid "_105mm_HEAT-T_T384E4"
-msgstr "M456"
-
 msgid "_105mm_HEAT_M457"
 msgstr "M457"
 
@@ -1150,6 +1186,9 @@ msgstr "七五式"
 
 msgid "_105mm_HEPT_Type76"
 msgstr "七六式"
+
+msgid "_105mm_HE_Common_Type_68_57"
+msgstr "HE 六八式通常弹 (57)"
 
 msgid "_105mm_HE_M68"
 msgstr "HE 六八式通常弹"
@@ -1181,11 +1220,26 @@ msgstr "HE 九二式 SP"
 msgid "_105mm_JSW_105_60"
 msgstr "105mm JSW 105/60炮"
 
+msgid "_105mm_M392XB_61"
+msgstr "M392XB (61)"
+
+msgid "_105mm_M456"
+msgstr "M456"
+
+msgid "_105mm_M456_61"
+msgstr "M456 (61)"
+
 msgid "_105mm_M68_L7"
 msgstr "105mm M68 L7炮"
 
+msgid "_105mm_M68_L7_57"
+msgstr "105mm M68 L7炮 (57)"
+
 msgid "_105mm_Rifled_Gun"
 msgstr "105mm 线膛炮"
+
+msgid "_105mm_Rifled_Gun_61"
+msgstr "105mm 线膛炮 (61)"
 
 msgid "_105mm_Rifled_Gun_7x7"
 msgstr "105mm 线膛炮"
@@ -1223,6 +1277,12 @@ msgstr "10.5cm 一四式 L/34炮"
 msgid "_105mm_Type_5_Se"
 msgstr "105mm 五式重战车炮"
 
+msgid "_105mm_Type_75_61"
+msgstr "七五式 (61)"
+
+msgid "_105mm_Type_91_O_Ni"
+msgstr "九一式 (120吨IV型)"
+
 msgid "_105mm_Type_92_Gun_Mod1952"
 msgstr "105mm 九二式 SHA-1炮"
 
@@ -1231,6 +1291,24 @@ msgstr "10.5cm 九二式炮(R)"
 
 msgid "_105mm_Type_92_L45"
 msgstr "105mm 九二式坦克炮T型"
+
+msgid "_105mm_Type_92_O_I"
+msgstr "九二式 (120吨I型)"
+
+msgid "_105mm_Type_92_O_Ni"
+msgstr "九二式 (120吨IV型)"
+
+msgid "_105mm_Type_95_O_I"
+msgstr "九五式 (120吨I型)"
+
+msgid "_105mm_Type_95_O_Ni"
+msgstr "九五式 (120吨IV型)"
+
+msgid "_105mm_Type_95_Toku_Kou_O_I"
+msgstr "九五式特 (120吨I型)"
+
+msgid "_105mm_Type_95_Toku_Kou_O_Ni"
+msgstr "九五式特 (120吨IV型)"
 
 msgid "_105mm_ap_92_L45"
 msgstr "AP 九二式T型"
@@ -1307,11 +1385,20 @@ msgstr "120mm 试验型重战车炮"
 msgid "_127mm_50_3rd_Year_Type"
 msgstr "12.7cm /50 三年式炮"
 
+msgid "_127mm_50_3rd_Year_Type_O_Ho"
+msgstr "12.7cm /50 三年式炮 (120吨V型)"
+
 msgid "_127mm_Capped_Common"
 msgstr "12.7cm 通常弹(被帽)"
 
+msgid "_127mm_Capped_Common_O_Ho"
+msgstr "12.7cm 被帽通常弹 (120吨V型)"
+
 msgid "_127mm_Capped_Common_Semi_AP"
 msgstr "12.7cm 通常弹(被帽半穿甲)"
+
+msgid "_127mm_Capped_Common_Semi_AP_O_Ho"
+msgstr "12.7cm 被帽半穿甲通常弹 (120吨V型)"
 
 msgid "_127mm_Capped_Common_Type_0"
 msgstr "12.7cm 通常弹(被帽穿甲)"
@@ -1331,6 +1418,9 @@ msgstr "HE 八九式通常弹"
 msgid "_127mm_Common_Type_0_HE"
 msgstr "12.7cm 零式通常弹"
 
+msgid "_127mm_Common_Type_0_HE_O_Ho"
+msgstr "12.7cm 零式通常弹 (120吨V型)"
+
 msgid "_127mm_Common_Type_1_HE"
 msgstr "12.7cm 一式通常弹"
 
@@ -1349,14 +1439,35 @@ msgstr "曳光穿甲弹T.P."
 msgid "_13.2mm_Type93"
 msgstr "13mm Ho式重机枪"
 
+msgid "_13mm_Autocannon_Type_Ho_NC"
+msgstr "13mm Ho式重机枪 (NC)"
+
+msgid "_13mm_Balle_T_P_NC"
+msgstr "曳光穿甲弹T.P. (NC)"
+
+msgid "_13mm_Type_92_NC"
+msgstr "九二式 (NC)"
+
 msgid "_140mm_50_3rd_Year_Type"
 msgstr "14cm/50 三年式炮"
+
+msgid "_140mm_50_3rd_Year_Type_4"
+msgstr "14cm/50 三年式炮 (4)"
+
+msgid "_140mm_Capped_Common_4"
+msgstr "14cm 被帽通常弹 (4)"
+
+msgid "_140mm_Capped_Common_Kai_4"
+msgstr "14cm 被帽通常弹改 (4)"
 
 msgid "_140mm_Capped_Common_Semi_AP"
 msgstr "14cm 通常弹(被帽半穿甲)"
 
 msgid "_140mm_Capped_Common_Semi_AP_Kai"
 msgstr "14cm 通常弹改(被帽半穿甲)"
+
+msgid "_140mm_Common_Type_0_4"
+msgstr "14cm 零式通常弹 (4)"
 
 msgid "_140mm_Common_Type_0_HE"
 msgstr "14cm 零式通常弹"
@@ -1391,14 +1502,17 @@ msgstr "15cm L/45四一年式炮"
 msgid "_150mm_APHE_Type1"
 msgstr "APHE 一式"
 
-msgid "_150mm_Common_Type_0_HE"
+msgid "_150mm_Common_Type_0"
 msgstr "零式通常弹改"
 
 msgid "_150mm_Common_Type_0_HE_Kai"
 msgstr "零式通常弹改"
 
-msgid "_150mm_Common_Type_91_AP"
+msgid "_150mm_Common_Type_91"
 msgstr "九一式通常弹"
+
+msgid "_150mm_Common_Type_91_Kai"
+msgstr "九一式通常弹改"
 
 msgid "_150mm_HEAT_Type3"
 msgstr "HEAT 三式"
@@ -1409,6 +1523,18 @@ msgstr "HE 九六式"
 msgid "_150mm_Howitzer_Type96"
 msgstr "15cm 九六式榴弹炮"
 
+msgid "_150mm_Howitzer_Type_96_O_I"
+msgstr "15cm 九六式榴弹炮 (120吨I型)"
+
+msgid "_150mm_Type_1_O_I"
+msgstr "一式 (120吨I型)"
+
+msgid "_150mm_Type_3_O_I"
+msgstr "三式 (120吨I型)"
+
+msgid "_150mm_Type_96_O_I"
+msgstr "九六式 (120吨I型)"
+
 msgid "_20mm_AP"
 msgstr "20mm AP"
 
@@ -1417,6 +1543,30 @@ msgstr "20mm APCR"
 
 msgid "_20mm_Type97"
 msgstr "20mm 九七式反坦克枪"
+
+msgid "_2x_Kawasaki_Type_98_Kou_4"
+msgstr "2x川崎 九八式甲型 (4)"
+
+msgid "_2x_Kawasaki_Type_98_Kou_O_Ho"
+msgstr "2x川崎 九八式甲型 (120吨V型)"
+
+msgid "_2x_Kawasaki_Type_98_Kou_O_I"
+msgstr "2x川崎 九八式甲型 (120吨I型)"
+
+msgid "_2x_Kawasaki_Type_98_Kou_O_Ni"
+msgstr "2x川崎 九八式甲型 (120吨IV型)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_4"
+msgstr "2x川崎 九八式乙型 (4)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_O_Ho"
+msgstr "2x川崎 九八式乙型 (120吨V型)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_O_I"
+msgstr "2x川崎 九八式乙型 (120吨I型)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_O_Ni"
+msgstr "2x川崎 九八式乙型 (120吨IV型)"
 
 msgid "_37mm_APHE_Ichi_Go"
 msgstr "一号"
@@ -1436,6 +1586,9 @@ msgstr "四式"
 msgid "_37mm_FrtPrf1935"
 msgstr "Frt.Prf. M35"
 
+msgid "_37mm_Gun_Type_98_95"
+msgstr "37mm 九八式炮 (95)"
+
 msgid "_37mm_HE_Type12"
 msgstr "一二式"
 
@@ -1444,6 +1597,9 @@ msgstr "四式"
 
 msgid "_37mm_HE_Type4_Kai"
 msgstr "四式改"
+
+msgid "_37mm_Ichi_Go_NC"
+msgstr "一号 (NC)"
 
 msgid "_37mm_OE_mle._1916"
 msgstr "OE mle.16"
@@ -1454,6 +1610,9 @@ msgstr "ODR mle.35"
 msgid "_37mm_Sogekiho"
 msgstr "37mm 平射狙击炮"
 
+msgid "_37mm_Sogekihou_NC"
+msgstr "37mm 平射狙击炮 (NC)"
+
 msgid "_37mm_Type1"
 msgstr "3.7cm 一式炮"
 
@@ -1463,8 +1622,23 @@ msgstr "3.7cm 百式炮"
 msgid "_37mm_Type_100_1"
 msgstr "3.7cm 百式炮"
 
+msgid "_37mm_Type_12_NC"
+msgstr "一二式 (NC)"
+
+msgid "_37mm_Type_1_95"
+msgstr "一式 (95)"
+
+msgid "_37mm_Type_4_95"
+msgstr "四式 (95)"
+
 msgid "_37mm_Type_94"
 msgstr "3.7cm 九四式炮"
+
+msgid "_37mm_Type_94_95"
+msgstr "九四式 (95)"
+
+msgid "_37mm_Type_94_NC"
+msgstr "九四式 (NC)"
 
 msgid "_37mm_Type_98"
 msgstr "37mm 九八式炮"
@@ -1481,8 +1655,32 @@ msgstr "一式特"
 msgid "_47mm_Gun_Type1"
 msgstr "47mm 一式炮"
 
+msgid "_47mm_Gun_Type_1_2"
+msgstr "47mm 一式炮 (2)"
+
+msgid "_47mm_Gun_Type_1_Shin"
+msgstr "47mm 一式炮 (新)"
+
 msgid "_47mm_HE_Type94"
 msgstr "九四式"
+
+msgid "_47mm_Type_1_2"
+msgstr "一式 (2)"
+
+msgid "_47mm_Type_1_Shin"
+msgstr "一式 (新)"
+
+msgid "_47mm_Type_1_Toku_Kou_2"
+msgstr "一式特 (2)"
+
+msgid "_47mm_Type_1_Toku_Kou_Shin"
+msgstr "一式特 (新)"
+
+msgid "_47mm_Type_94_2"
+msgstr "九四式 (2)"
+
+msgid "_47mm_Type_94_Shin"
+msgstr "九四式 (新)"
 
 msgid "_57mm_APHE_Type1"
 msgstr "一式"
@@ -1502,6 +1700,12 @@ msgstr "5.7cm 九零式炮"
 msgid "_57mm_Gun_Type97"
 msgstr "5.7cm 九七式炮"
 
+msgid "_57mm_Gun_Type_97_95"
+msgstr "5.7cm 九七式炮 (95)"
+
+msgid "_57mm_Gun_Type_97_Shin"
+msgstr "5.7cm 九七式炮 (新)"
+
 msgid "_57mm_HEAT_Type97"
 msgstr "三式"
 
@@ -1510,6 +1714,42 @@ msgstr "二式"
 
 msgid "_57mm_HE_Type97"
 msgstr "九零式"
+
+msgid "_57mm_Type_1_2"
+msgstr "一式 (2)"
+
+msgid "_57mm_Type_1_Model_II"
+msgstr "一式 (二型)"
+
+msgid "_57mm_Type_1_Toku_Kou_2"
+msgstr "一式特 (2)"
+
+msgid "_57mm_Type_1_Toku_Kou_Model_II"
+msgstr "一式特 (二型)"
+
+msgid "_57mm_Type_2_2"
+msgstr "二式 (2)"
+
+msgid "_57mm_Type_2_Model_II"
+msgstr "二式 (二型)"
+
+msgid "_57mm_Type_3_95"
+msgstr "三式 (95)"
+
+msgid "_57mm_Type_3_Shin"
+msgstr "三式 (新)"
+
+msgid "_57mm_Type_90_95"
+msgstr "九零式 (95)"
+
+msgid "_57mm_Type_90_Shin"
+msgstr "九零式 (新)"
+
+msgid "_57mm_Type_92_95"
+msgstr "九二式 (95)"
+
+msgid "_57mm_Type_92_Shin"
+msgstr "九二式 (新)"
 
 msgid "_70mm_APHE_Type95"
 msgstr "APHE 九五式"
@@ -1634,8 +1874,50 @@ msgstr "九四式 425R"
 msgid "_75mm_HE_Type_T6"
 msgstr "九四式 426R"
 
+msgid "_75mm_Tank_Gun_Type_3_Model_II"
+msgstr "7.5cm 三式坦克炮 二型"
+
+msgid "_75mm_Tank_Gun_Type_5_CT"
+msgstr "7.5cm 五式坦克炮 (CT)"
+
+msgid "_75mm_Tank_Gun_Type_5_Model_I_CR"
+msgstr "7.5cm 五式坦克炮一型 (CR)"
+
 msgid "_75mm_Type5_1"
 msgstr "7.5cm 五式坦克炮"
+
+msgid "_75mm_Type_1_CT"
+msgstr "一式 (CT)"
+
+msgid "_75mm_Type_1_II"
+msgstr "一式 (二)"
+
+msgid "_75mm_Type_1_Toku_Kou_CT"
+msgstr "一式特 (CT)"
+
+msgid "_75mm_Type_1_Toku_Kou_II"
+msgstr "一式特 (二)"
+
+msgid "_75mm_Type_1_Toku_Kou_Kai_A"
+msgstr "一式特 改 (A)"
+
+msgid "_75mm_Type_1_Toku_Kou_Kai_CR"
+msgstr "一式特 改 (CR)"
+
+msgid "_75mm_Type_1_Toku_Otsu_A"
+msgstr "一式特 乙型 (A)"
+
+msgid "_75mm_Type_1_Toku_Otsu_CR"
+msgstr "一式特 乙型 (CR)"
+
+msgid "_75mm_Type_4_CT"
+msgstr "四式 (CT)"
+
+msgid "_75mm_Type_4_Kai_A"
+msgstr "四式改 (A)"
+
+msgid "_75mm_Type_4_Kai_CR"
+msgstr "四式改 (CR)"
 
 msgid "_75mm_Type_5_Gun_Ro"
 msgstr "7.5cm 五式炮(R)"
@@ -1649,6 +1931,21 @@ msgstr "7.5cm 八八式坦克炮"
 msgid "_75mm_Type_90_Gun"
 msgstr "7.5cm 九零式坦克炮"
 
+msgid "_75mm_Type_94_II"
+msgstr "九四式 (二)"
+
+msgid "_88mm_APCR_Type_3"
+msgstr "APCR 三式"
+
+msgid "_88mm_APCR_Type_3T"
+msgstr "APCR 三式T型"
+
+msgid "_88mm_AP_Type_3"
+msgstr "AP 三式"
+
+msgid "_88mm_AP_Type_3T"
+msgstr "AP 三式T型"
+
 msgid "_88mm_Edelweiss_AP"
 msgstr "AP/雪绒花"
 
@@ -1660,6 +1957,12 @@ msgstr "ENH/雪绒花"
 
 msgid "_88mm_Edelweiss_Gun"
 msgstr "泰默 88mm L/40炮"
+
+msgid "_88mm_HE_Type_3"
+msgstr "HE 三式"
+
+msgid "_88mm_HE_Type_3T"
+msgstr "HE 三式T型"
 
 msgid "_88mm_KwK_36_L56A"
 msgstr "8.8cm KwK 36 L/56炮"
@@ -1679,29 +1982,11 @@ msgstr "布雷达 88mm L/48(试生产型)"
 msgid "_88mm_Pzgr.40"
 msgstr "Pzgr 40"
 
-msgid "_88mm_Pzgr.40_3"
-msgstr "APCR 三式"
-
-msgid "_88mm_Pzgr.40_3_L56"
-msgstr "APCR 三式T型"
-
 msgid "_88mm_Pzgr39"
 msgstr "Pzgr 39"
 
-msgid "_88mm_Pzgr39_3"
-msgstr "AP 三式"
-
-msgid "_88mm_Pzgr39_3_L56"
-msgstr "AP 三式T型"
-
 msgid "_88mm_Sprg.18"
 msgstr "Sprgr"
-
-msgid "_88mm_Sprg.18_3"
-msgstr "HE 三式"
-
-msgid "_88mm_Sprg.18_3_L56"
-msgstr "HE 三式T型"
 
 msgid "_88mm_Type3_Gun"
 msgstr "8.8cm 三式坦克炮"
@@ -1721,6 +2006,9 @@ msgstr "90mm M3A1炮"
 msgid "_90mm_Gun_Type61"
 msgstr "六一式90mm炮"
 
+msgid "_90mm_Gun_Type_61_MHI"
+msgstr "90mm 六一式 MHI炮"
+
 msgid "_90mm_HEAT_Type70"
 msgstr "七零式"
 
@@ -1730,11 +2018,38 @@ msgstr "M71"
 msgid "_90mm_HVAP_M304"
 msgstr "M304"
 
+msgid "_90mm_M318A1_61"
+msgstr "M318A1 (61)"
+
+msgid "_90mm_M318A1_RG"
+msgstr "M318A1 (RG)"
+
+msgid "_90mm_M318A1_STA_1"
+msgstr "M318A1 (STA-1)"
+
+msgid "_90mm_M71_61"
+msgstr "M71 (61)"
+
+msgid "_90mm_M71_RG"
+msgstr "M71 (RG)"
+
+msgid "_90mm_M71_STA_1"
+msgstr "M71 (STA-1)"
+
 msgid "_90mm_Rifled_Gun"
 msgstr "90mm线膛炮"
 
 msgid "_90mm_Rifled_Gun_1"
 msgstr "90mm线膛炮"
+
+msgid "_90mm_Type_70_61"
+msgstr "七零式 (61)"
+
+msgid "_90mm_Type_70_RG"
+msgstr "七零式 (RG)"
+
+msgid "_90mm_Type_70_STA_1"
+msgstr "七零式 (STA-1)"
 
 msgid "_A6120VD"
 msgstr "三菱 A6120VD"

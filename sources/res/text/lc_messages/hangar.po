@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
 
 msgid "buyVehicleWindow/buyBtn"
 msgstr "购买"
@@ -108,3 +112,81 @@ msgstr "折价置换"
 
 msgid "buyVehicleWindow/tradeInBtnLabel"
 msgstr "折价置换"
+
+msgid "carousel/filters/allVehicle"
+msgstr "我的全部坦克"
+
+msgid "rentalCounter/count/battles"
+msgid_plural "plural/rentalCounter/count/battles"
+msgstr[0] "{{count}}场战斗"
+msgstr[1] "{{count}}场战斗"
+msgstr[2] "{{count}}场战斗"
+
+msgid "rentalCounter/count/days"
+msgid_plural "plural/rentalCounter/count/days"
+msgstr[0] "{{count}}天"
+msgstr[1] "{{count}}天"
+msgstr[2] "{{count}}天"
+
+msgid "rentalCounter/count/hours"
+msgid_plural "plural/rentalCounter/count/hours"
+msgstr[0] "{{count}}时"
+msgstr[1] "{{count}}时"
+msgstr[2] "{{count}}时"
+
+msgid "rentalCounter/count/wins"
+msgid_plural "plural/rentalCounter/count/wins"
+msgstr[0] "{{count}}场胜利"
+msgstr[1] "{{count}}场胜利"
+msgstr[2] "{{count}}场胜利"
+
+msgid "tooltip/filters/myVehicle/body"
+msgstr "点击前往您的坦克游玩列表"
+
+msgid "tooltip/filters/myVehicle/header"
+msgstr "我的坦克"
+
+msgid "vehicleMenu/menuItem/aboutVehicle/title"
+msgstr "关于坦克"
+
+msgid "vehicleMenu/menuItem/armorInspector/title"
+msgstr "装甲"
+
+msgid "vehicleMenu/menuItem/compare/title"
+msgstr "对比"
+
+msgid "vehicleMenu/menuItem/counter"
+msgstr "[{{count}}]"
+
+msgid "vehicleMenu/menuItem/crewAutoReturn/title"
+msgstr "自动调回"
+
+msgid "vehicleMenu/menuItem/crewBack/title"
+msgstr "调回乘员"
+
+msgid "vehicleMenu/menuItem/crewOut/title"
+msgstr "调回兵营"
+
+msgid "vehicleMenu/menuItem/crewRetrain/title"
+msgstr "再训练乘员"
+
+msgid "vehicleMenu/menuItem/easyEquip/title"
+msgstr "快速备战"
+
+msgid "vehicleMenu/menuItem/fieldModification/title"
+msgstr "战地升级"
+
+msgid "vehicleMenu/menuItem/nationChange/title"
+msgstr "修改系别"
+
+msgid "vehicleMenu/menuItem/quickTraining/title"
+msgstr "快速训练"
+
+msgid "vehicleMenu/menuItem/repairs/title"
+msgstr "修理"
+
+msgid "vehicleMenu/menuItem/research/title"
+msgstr "研发"
+
+msgid "vehicleMenu/menuItem/vehSkillTree/title"
+msgstr "升级"

@@ -5,6 +5,7 @@ package net.wg.gui.lobby.components
    import flash.display.Sprite;
    import flash.events.Event;
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.constants.Values;
    import net.wg.gui.components.interfaces.IPaginatorArrowsController;
@@ -20,6 +21,7 @@ package net.wg.gui.lobby.components
    import net.wg.infrastructure.base.interfaces.IWaiting;
    import net.wg.infrastructure.base.meta.IBaseMissionDetailsContainerViewMeta;
    import net.wg.infrastructure.base.meta.impl.BaseMissionDetailsContainerViewMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InputValue;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.data.DataProvider;
@@ -28,7 +30,7 @@ package net.wg.gui.lobby.components
    import scaleform.clik.motion.Tween;
    import scaleform.clik.ui.InputDetails;
    
-   public class BaseMissionDetailsContainerView extends BaseMissionDetailsContainerViewMeta implements IBaseMissionDetailsContainerViewMeta
+   public class BaseMissionDetailsContainerView extends BaseMissionDetailsContainerViewMeta implements IBaseMissionDetailsContainerViewMeta, IInnerView
    {
       
       protected static const MISSION_DETAILS_PAGE_GROUP:String = "MissionDetailsPageGroup";
@@ -66,6 +68,8 @@ package net.wg.gui.lobby.components
       
       public var bg:Sprite;
       
+      protected var _paddings:Rectangle = null;
+      
       private var _missionData:BaseMissionDetailedViewVO;
       
       private var _data:BaseMissionDetailsContainerVO;
@@ -87,7 +91,7 @@ package net.wg.gui.lobby.components
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         setSize(param1,param2);
+         assertUpdateStageMethod();
       }
       
       override protected function onInitModalFocus(param1:InteractiveObject) : void
@@ -131,6 +135,7 @@ package net.wg.gui.lobby.components
          }
          this._pageController.dispose();
          this._pageController = null;
+         this._paddings = null;
          this._data = null;
          this._missionData = null;
          this.btnClose.dispose();
@@ -166,7 +171,7 @@ package net.wg.gui.lobby.components
             "ease":Linear.easeOut
          });
          this.addListeners();
-         this.bg.y = TOP_PANEL_HEIGHT;
+         this.bg.y = this._paddings.y > 0 ? Number(0) : Number(TOP_PANEL_HEIGHT);
          this.view.addEventListener(PersonalMissionDetailedViewEvent.CONTROLS_VISIBLE_SET,this.onViewControlsVisibleSetHandler);
       }
       
@@ -213,6 +218,7 @@ package net.wg.gui.lobby.components
          }
          if(isInvalid(InvalidationType.SIZE))
          {
+            this.btnClose.visible = this._paddings.y == 0;
             this.updateLayout();
             this._pageController.updateSize(_width,_height);
             this.updateArrowsLayout();
@@ -224,6 +230,18 @@ package net.wg.gui.lobby.components
       {
          this._missionData = param1;
          invalidate(INV_PAGE);
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._paddings = param3;
+         setViewSize(param1,param2);
+         invalidateSize();
       }
       
       protected function createPaginatorController() : IPaginatorArrowsController
@@ -242,7 +260,7 @@ package net.wg.gui.lobby.components
          this.waiting.height = _height;
          this.view.x = _width >> 1;
          this.bg.width = _width;
-         this.bg.height = _height - TOP_PANEL_HEIGHT;
+         this.bg.height = _height - (this._paddings.y > 0 ? 0 : TOP_PANEL_HEIGHT);
       }
       
       protected function updateArrowsLayout() : void

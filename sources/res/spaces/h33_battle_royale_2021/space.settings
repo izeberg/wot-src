@@ -25,7 +25,7 @@
 				<name>GBufferDecals</name>
 				<atlas>
 					<width>4096</width>
-					<height>4096</height>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -37,7 +37,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>4096</height>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -49,7 +49,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>4096</height>
+					<height>5120</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -143,7 +143,7 @@
 	<nearPlane>0.250000</nearPlane>
 	<hangarSettings>
 		<customizationHangarSettings>
-			<v_start_pos>1.110000 206.300003 -0.852000</v_start_pos>
+			<v_start_pos>1.900000 200.975006 -1.750000</v_start_pos>
 			<v_start_angles>0.000000 0.000000 0.000000</v_start_angles>
 			<shadow_forward_y_offset>-0.040000</shadow_forward_y_offset>
 			<shadow_deferred_y_offset>0.000000</shadow_deferred_y_offset>
@@ -165,4 +165,7 @@
 		<cam_capsule_scale>2.000000 2.000000 2.000000</cam_capsule_scale>
 		<cam_capsule_gun_scale>1.000000 1.000000 1.100000</cam_capsule_gun_scale>
 	</hangarSettings>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
+	<overrideSHGridQuality>0</overrideSHGridQuality>
 </root>

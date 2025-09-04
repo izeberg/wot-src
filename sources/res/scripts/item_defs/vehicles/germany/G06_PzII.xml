@@ -1649,14 +1649,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2800</weight>
-			<maxLoad>9500</maxLoad>
 			<terrainResistance>
-				1.1 1.7 2.9
+				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>35</rotationSpeed>
+			<rotationSpeed>46</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.3
@@ -3348,14 +3347,13 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>2900</weight>
-			<maxLoad>10800</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>52</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.28
@@ -5002,7 +5000,7 @@
 			<userString>#germany_vehicles:Turret_1_G06_PzII</userString>
 			<shortUserString>#germany_vehicles:Turret_1_G06_PzII_short</shortUserString>
 			<tags>cannotDetach</tags>
-			<level>2</level>
+			<level>1</level>
 			<price>640</price>
 			<armor>
 				<armor_1>30</armor_1>
@@ -5030,7 +5028,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>290</circularVisionRadius>
+			<circularVisionRadius>310</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>40</maxHealth>
 				<maxRegenHealth>20</maxRegenHealth>
@@ -5200,16 +5198,16 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.43
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.7
+						2.2
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -5219,7 +5217,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.1
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<customizationSlots>
@@ -6154,7 +6152,7 @@
 			<userString>#germany_vehicles:Turret_2_G06_PzII</userString>
 			<shortUserString>#germany_vehicles:Turret_2_G06_PzII_short</shortUserString>
 			<tags>cannotDetach</tags>
-			<level>3</level>
+			<level>2</level>
 			<price>1700</price>
 			<unlocks>
 				<vehicle>
@@ -6213,7 +6211,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						3.9
+						4.2
 						<!--BW_String-->
 					</reloadTime>
 					<armor>
@@ -6229,7 +6227,7 @@
 					</armor>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.08
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6351,15 +6349,15 @@
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.42
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						2.4
+						2.2
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7269,14 +7267,11 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_57_TRM>
-					<smplEnginePower>145</smplEnginePower>
+					<smplEnginePower>165</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</Maybach_HL_57_TRM>
 				<Maybach_HL_62_TRM>
-					<smplEnginePower>
-						169.165
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>180</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</Maybach_HL_62_TRM>
 			</engines>
@@ -7285,13 +7280,13 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.23345
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.13685
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>

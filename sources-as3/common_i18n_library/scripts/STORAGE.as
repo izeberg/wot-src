@@ -101,6 +101,8 @@ package
       
       public static const FILTER_WARNINGMESSAGE:String = "#storage:filter/warningMessage";
       
+      public static const FILTER_SOMETIERSONLYMESSAGE:String = "#storage:filter/someTiersOnlyMessage";
+      
       public static const FILTER_NORESULTSBTN_LABEL:String = "#storage:filter/noResultsBtn/label";
       
       public static const PERSONALRESERVES_FILTERTITLE:String = "#storage:personalreserves/filterTitle";

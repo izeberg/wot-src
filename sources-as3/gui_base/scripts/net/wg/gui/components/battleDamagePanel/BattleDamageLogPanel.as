@@ -61,7 +61,7 @@ package net.wg.gui.components.battleDamagePanel
       
       private var _damageLogDetailsBottomController:DamageLogDetailsController = null;
       
-      private var _additionalRowsCount:int = 3;
+      private var _additionalRowsCount:int = 4;
       
       private var _detailActionRowsCount:int = 0;
       

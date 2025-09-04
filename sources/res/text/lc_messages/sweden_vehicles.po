@@ -137,7 +137,7 @@ msgid "Chassis_S18_EMIL_1951_E1_2"
 msgstr "埃米尔 Alt 2"
 
 msgid "Chassis_S19_Sav_M43"
-msgstr "Sav m/43 m/ä"
+msgstr "Sav m/43 m/a"
 
 msgid "Chassis_S19_Sav_M43_2"
 msgstr "Sav m/43 m/n"
@@ -199,6 +199,9 @@ msgstr "LS-120"
 msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Chassis_S36_Strv_107_12"
+msgstr "Strv 107-12"
+
 msgid "DB_605"
 msgstr "DB 605"
 
@@ -231,6 +234,9 @@ msgstr "流星 Mk.IV 271型"
 
 msgid "Meteor_Mark_IV_Mod_271_SH"
 msgstr "流星 Mk.IV 271B型"
+
+msgid "Motoraggregat_10"
+msgstr "引擎组 10"
 
 msgid "Motoraggregat_1S"
 msgstr "引擎组 1S"
@@ -276,6 +282,9 @@ msgstr "Ra 422"
 
 msgid "Ra_421_1_SH"
 msgstr "Ra 421/1"
+
+msgid "Ra_422"
+msgstr "Ra 422"
 
 msgid "S01_Strv_74_A2"
 msgstr "SMA-2"
@@ -709,6 +718,23 @@ msgstr "Lago M38"
 msgid "S34_Lago_M38_short_special"
 msgstr "可靠的正面装甲和较高的射速"
 
+msgid "S36_Strv_107_12"
+msgstr "Strv 107-12"
+
+msgid "S36_Strv_107_12_descr"
+msgstr ""
+"该坦克于1967年至1975年间进行研发，旨在打造Strv "
+"103坦克的替代型号。其设计指标包括105毫米火炮、波音燃气轮机、激光测距仪，以及安装在伸缩杆上的红外监视设备。到1975年，建造原型车的技术文档已准备就绪，但在对该坦克性能进行评估后，军方最终还是取消了该计划，并决定继续生产已在服役的Strv"
+" 103。"
+
+msgid "S36_Strv_107_12_long_special"
+msgstr ""
+"Strv "
+"107-12是一辆为伏击而生的自行反坦克炮，卓越的隐蔽性和强劲的火炮便是其最大的依仗。如同其他V系同类坦克，它的火炮固定于车体之上，需要通过液压悬挂装置调整车身俯仰来进行垂直瞄准。该坦克拥有2种战斗模式，其中一种试验型模式能以牺牲机动性为代价，换取火力的大幅提高。"
+
+msgid "S36_Strv_107_12_short"
+msgstr "Strv 107-12"
+
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8缸(水平对置)"
 
@@ -745,11 +771,20 @@ msgstr "萨博-斯堪尼亚 DSI 14C"
 msgid "Scania_Vabis_1664"
 msgstr "斯堪尼亚-瓦比斯 1664"
 
+msgid "Scania_Vabis_1664_40"
+msgstr "斯堪尼亚-瓦比斯 1664 (40)"
+
+msgid "Scania_Vabis_1664_Sav"
+msgstr "斯堪尼亚-瓦比斯 1664 (突击炮型)"
+
 msgid "Scania_Vabis_335"
 msgstr "斯堪尼亚-瓦比斯 335"
 
 msgid "Scania_Vabis_L_603"
 msgstr "斯堪尼亚-瓦比斯 L 603"
+
+msgid "Scania_Vabis_L_603_Sav"
+msgstr "斯堪尼亚-瓦比斯 L 603 (突击炮型)"
 
 msgid "Turret_1_S01_Strv_74_A2"
 msgstr "SMA-2"
@@ -856,6 +891,9 @@ msgstr "LS-120"
 msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Turret_1_S36_Strv_107_12"
+msgstr "Strv 107-12"
+
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
 
@@ -885,6 +923,9 @@ msgstr "兰森 MB"
 
 msgid "Volvo_A8B"
 msgstr "沃尔沃 A8B"
+
+msgid "Volvo_A8B_Leo"
+msgstr "沃尔沃 A8B (Leo)"
 
 msgid "Volvo_DC"
 msgstr "沃尔沃 DC"
@@ -918,6 +959,9 @@ msgstr "博福斯 10.5cm D/5炮"
 
 msgid "_105mm_TK_105_9"
 msgstr "10.5cm TK 105-9炮"
+
+msgid "_105mm_TK_105_9_52E2"
+msgstr "10.5cm TK 105-9炮 (52E2)"
 
 msgid "_105mm_kan_UDES_03"
 msgstr "10.5cm UDES 03炮"
@@ -964,11 +1008,23 @@ msgstr "10.5cm Strv 103 L/62炮"
 msgid "_105mm_kan_strv_103_L_62_1"
 msgstr "10.5cm Strv 103 L/62炮"
 
+msgid "_105mm_kan_strv_103_L_62_103_0"
+msgstr "10.5cm Strv 103 L/62炮 (103-0)"
+
+msgid "_105mm_kan_strv_107_L_62"
+msgstr "10.5cm strv 107 L/62炮"
+
 msgid "_105mm_kan_strv_K_L_52"
 msgstr "10.5cm Strv K L/52炮"
 
 msgid "_105mm_lt_sgr_m_34"
 msgstr "lt sgr m/34"
+
+msgid "_105mm_lt_sgr_m_34_103"
+msgstr "lt sgr m/34 (103)"
+
+msgid "_105mm_lt_sgr_m_34_Sav"
+msgstr "lt sgr m/34 (突击炮型)"
 
 msgid "_105mm_lvkan_L_53"
 msgstr "10.5cm K L/53炮"
@@ -993,6 +1049,9 @@ msgstr "sgr m/40 B"
 
 msgid "_105mm_sgr_m_52"
 msgstr "sgr m/52"
+
+msgid "_105mm_sgr_m_52_52E2"
+msgstr "sgr m/52 (52E2)"
 
 msgid "_105mm_slpgr_m_42"
 msgstr "slpgr m/42"
@@ -1030,8 +1089,14 @@ msgstr "slpprj m/49"
 msgid "_105mm_slpprj_m_52"
 msgstr "slpprj m/52"
 
+msgid "_105mm_slpprj_m_52_52E2"
+msgstr "slpprj m/52 (52E2)"
+
 msgid "_105mm_slpprj_m_52_B"
 msgstr "slpprj m/52 B"
+
+msgid "_105mm_slpprj_m_52_B_52E2"
+msgstr "slpprj m/52 B (52E2)"
 
 msgid "_105mm_slpprj_m_61"
 msgstr "slpprj m/61"
@@ -1039,8 +1104,26 @@ msgstr "slpprj m/61"
 msgid "_105mm_slpprj_m_61B"
 msgstr "slpprj m/61B"
 
+msgid "_105mm_slpprj_m_61B_16"
+msgstr "slpprj m/61B (16)"
+
 msgid "_105mm_slpprj_m_61D"
 msgstr "slpprj m/61D"
+
+msgid "_105mm_slpprj_m_61_03"
+msgstr "slpprj m/61 (03)"
+
+msgid "_105mm_slpprj_m_61_16"
+msgstr "slpprj m/61 (16)"
+
+msgid "_105mm_slpprj_m_61_L62_103B"
+msgstr "slpprj m/61 L/62 (103B)"
+
+msgid "_105mm_slpprj_m_61_L_51_103_0"
+msgstr "slpprj m/61 L/51 (103-0)"
+
+msgid "_105mm_slpprj_m_61_L_62_103_0"
+msgstr "slpprj m/61 L/62 (103-0)"
 
 msgid "_105mm_slpprj_m_62"
 msgstr "slpprj m/62"
@@ -1051,8 +1134,29 @@ msgstr "slpprj m/66"
 msgid "_105mm_slpprj_m_66B"
 msgstr "slpprj m/66B"
 
+msgid "_105mm_slpprj_m_66B_16"
+msgstr "slpprj m/66B (16)"
+
 msgid "_105mm_slpprj_m_66D"
 msgstr "slpprj m/66D"
+
+msgid "_105mm_slpprj_m_66_16"
+msgstr "slpprj m/66 (16)"
+
+msgid "_105mm_slpprj_m_66_L62_103B"
+msgstr "slpprj m/66 L/62 (103B)"
+
+msgid "_105mm_slpprj_m_66_L_51_103_0"
+msgstr "slpprj m/66 L/51 (103-0)"
+
+msgid "_105mm_slpprj_m_66_L_62_103_0"
+msgstr "slpprj m/66 L/62 (103-0)"
+
+msgid "_105mm_slpprj_m_73"
+msgstr "slpprj m/73"
+
+msgid "_105mm_slpprj_m_78"
+msgstr "slpprj m/78"
 
 msgid "_105mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
@@ -1069,8 +1173,26 @@ msgstr "slpsgr m/65"
 msgid "_105mm_slsgr_m_61A"
 msgstr "slsgr m/61A"
 
+msgid "_105mm_slsgr_m_61A_03"
+msgstr "slsgr m/61A (03)"
+
+msgid "_105mm_slsgr_m_61A_16"
+msgstr "slsgr m/61A (16)"
+
+msgid "_105mm_slsgr_m_61A_L62_103B"
+msgstr "slsgr m/61A L/62 (103B)"
+
+msgid "_105mm_slsgr_m_61A_L_51_103_0"
+msgstr "slsgr m/61A L/51 (103-0)"
+
+msgid "_105mm_slsgr_m_61A_L_62_103_0"
+msgstr "slsgr m/61A L/62 (103-0)"
+
 msgid "_105mm_slsgr_m_61B"
 msgstr "slsgr m/61B"
+
+msgid "_105mm_slsgr_m_61B_16"
+msgstr "slsgr m/61B (16)"
 
 msgid "_105mm_slsgr_m_61D"
 msgstr "slsgr m/61D"
@@ -1078,8 +1200,14 @@ msgstr "slsgr m/61D"
 msgid "_105mm_slsgr_m_61S"
 msgstr "slsgr m/61S"
 
+msgid "_105mm_slsgr_m_73A"
+msgstr "slsgr m/73A"
+
 msgid "_105mm_strvkan_L_45"
 msgstr "10.5cm L/45坦克炮"
+
+msgid "_105mm_strvkan_L_45_16"
+msgstr "10.5cm L/45 (16)坦克炮"
 
 msgid "_105mm_strvkan_L_45_Alt_3"
 msgstr "10.5cm L/45 A3坦克炮"
@@ -1108,6 +1236,9 @@ msgstr "12 cm 博福斯 strvkan L/40"
 msgid "_120mm_akan_L_40"
 msgstr "12cm L/40自动炮"
 
+msgid "_120mm_akan_L_40_52E2"
+msgstr "12cm L/40 (52E2)自动炮"
+
 msgid "_120mm_akan_L_40_G6_APCR_SH"
 msgstr "slpprj L/40 B"
 
@@ -1129,6 +1260,9 @@ msgstr "12cm L/33炮"
 msgid "_120mm_psgr_m_51"
 msgstr "psgr m/51"
 
+msgid "_120mm_psgr_m_51_52E2"
+msgstr "psgr m/51 (52E2)"
+
 msgid "_120mm_psgr_m_60"
 msgstr "psgr m/60"
 
@@ -1140,6 +1274,9 @@ msgstr "slpprj b/51"
 
 msgid "_120mm_sgr_m_51"
 msgstr "sgr m/51"
+
+msgid "_120mm_sgr_m_51_52E2"
+msgstr "sgr m/51 (52E2)"
 
 msgid "_120mm_sgr_m_60"
 msgstr "sgr m/60"
@@ -1155,6 +1292,9 @@ msgstr "slpprj b/71"
 
 msgid "_120mm_slpprj_m_51"
 msgstr "slpprj m/51"
+
+msgid "_120mm_slpprj_m_51_52E2"
+msgstr "slpprj m/51 (52E2)"
 
 msgid "_120mm_slpprj_m_60"
 msgstr "slpprj m/60"
@@ -1183,20 +1323,38 @@ msgstr "20mm m/40防空炮"
 msgid "_20mm_slpprj_m_40"
 msgstr "slpprj m/40"
 
+msgid "_20mm_slpprj_m_40_38"
+msgstr "slpprj m/40 (38)"
+
 msgid "_20mm_slpprj_m_40_M"
 msgstr "slpprj m/40 M"
+
+msgid "_20mm_slpprj_m_40_M_21"
+msgstr "slpprj m/40 M (21)"
 
 msgid "_20mm_slpprj_m_49"
 msgstr "slpprj m/49"
 
+msgid "_20mm_slpprj_m_49_38"
+msgstr "slpprj m/49 (38)"
+
 msgid "_20mm_slpprj_m_Madsen"
 msgstr "slpprj 麦德森"
+
+msgid "_20mm_slpprj_m_Madsen_21"
+msgstr "slpprj 麦德森 (21)"
 
 msgid "_20mm_slsgr_m_42"
 msgstr "slsgr m/42"
 
+msgid "_20mm_slsgr_m_42_38"
+msgstr "slsgr m/42 (38)"
+
 msgid "_20mm_slsgr_m_Madsen"
 msgstr "slsgr 麦德森"
+
+msgid "_20mm_slsgr_m_Madsen_21"
+msgstr "slsgr 麦德森 (21)"
 
 msgid "_25_W_Sv_1_m_39"
 msgstr "25 W Sv/1 m/39"
@@ -1225,11 +1383,20 @@ msgstr "2x 斯堪尼亚-瓦比斯 607"
 msgid "_2_st_Scania_Vabis_L_603_1"
 msgstr "2x 斯堪尼亚-瓦比斯 L603/1"
 
+msgid "_2_st_Scania_Vabis_L_603_1_42"
+msgstr "2x 斯堪尼亚-瓦比斯 L603/1 (42)"
+
+msgid "_2_st_Scania_Vabis_L_603_1_74"
+msgstr "2x 斯堪尼亚-瓦比斯 L603/1 (74)"
+
 msgid "_37mm_kan_m_38_49_strv"
 msgstr "37mm m/38-49坦克炮"
 
 msgid "_37mm_kan_m_38_strv"
 msgstr "37mm m/38坦克炮"
+
+msgid "_37mm_kan_m_38_strv_40"
+msgstr "37mm m/38 (40)坦克炮"
 
 msgid "_37mm_kanon_m_Skoda"
 msgstr "斯柯达37mm炮"
@@ -1243,6 +1410,15 @@ msgstr "37mm m/38反坦克炮"
 msgid "_37mm_sgr_m_34"
 msgstr "sgr m/34"
 
+msgid "_37mm_sgr_m_34_38"
+msgstr "sgr m/34 (38)"
+
+msgid "_37mm_sgr_m_34_40"
+msgstr "sgr m/34 (40)"
+
+msgid "_37mm_sgr_m_34_49_40"
+msgstr "sgr m/34-49 (40)"
+
 msgid "_37mm_sgr_m_Skoda"
 msgstr "sgr 斯柯达"
 
@@ -1255,11 +1431,23 @@ msgstr "slpprj fm/47"
 msgid "_37mm_slpprj_m_38"
 msgstr "slpprj m/38"
 
+msgid "_37mm_slpprj_m_38_38"
+msgstr "slpprj m/38 (38)"
+
+msgid "_37mm_slpprj_m_38_40"
+msgstr "slpprj m/38 (40)"
+
 msgid "_37mm_slpprj_m_49"
 msgstr "slpprj m/49"
 
 msgid "_37mm_uprj_fm_47"
 msgstr "uprj fm/47"
+
+msgid "_37mm_uprj_fm_47_38"
+msgstr "uprj fm/47 (38)"
+
+msgid "_37mm_uprj_fm_47_40"
+msgstr "uprj fm/47 (40)"
 
 msgid "_47mm_Bohler_M35"
 msgstr "47mm伯勒M35炮"
@@ -1309,8 +1497,14 @@ msgstr "7.5cm L/50 m/41炮(自行步兵炮型)"
 msgid "_75mm_kan_m_41_strv"
 msgstr "7.5cm m/41坦克炮"
 
+msgid "_75mm_kan_m_41_strv_42"
+msgstr "7.5cm m/41 (42)坦克炮"
+
 msgid "_75mm_kan_m_43_strv"
 msgstr "7.5cm m/43坦克炮"
+
+msgid "_75mm_kan_m_43_strv_Leo"
+msgstr "7.5cm m/43 (Leo)坦克炮"
 
 msgid "_75mm_kan_strv_74"
 msgstr "7.5cm Strv 74炮"
@@ -1324,17 +1518,50 @@ msgstr "7.5cm m/36高射炮"
 msgid "_75mm_sgr_m_22_38"
 msgstr "sgr m/22-38"
 
+msgid "_75mm_sgr_m_36_38_74"
+msgstr "sgr m/36-38 (74)"
+
 msgid "_75mm_sgr_m_38"
 msgstr "sgr m/38"
+
+msgid "_75mm_sgr_m_38_42"
+msgstr "sgr m/38 (42)"
+
+msgid "_75mm_sgr_m_38_74"
+msgstr "sgr m/38 (74)"
+
+msgid "_75mm_sgr_m_38_Leo"
+msgstr "sgr m/38 (Leo)"
 
 msgid "_75mm_sgr_m_40"
 msgstr "sgr m/40"
 
+msgid "_75mm_sgr_m_40_42"
+msgstr "sgr m/40 (42)"
+
+msgid "_75mm_sgr_m_40_I"
+msgstr "sgr m/40 (I)"
+
+msgid "_75mm_sgr_m_40_Sav"
+msgstr "sgr m/40 (突击炮型)"
+
 msgid "_75mm_slpgr_fm_43"
 msgstr "slpgr m/43"
 
+msgid "_75mm_slpgr_m_36_43_74"
+msgstr "slpgr m/36-43 (74)"
+
 msgid "_75mm_slpgr_m_43"
 msgstr "slpgr m/43"
+
+msgid "_75mm_slpgr_m_43_74"
+msgstr "slpgr m/43 (74)"
+
+msgid "_75mm_slpgr_m_43_Leo"
+msgstr "slpgr m/43 (Leo)"
+
+msgid "_75mm_slpprj_m_36_41_74"
+msgstr "slpprj m/36-41 (74)"
 
 msgid "_75mm_slpprj_m_40"
 msgstr "slpprj m/40"
@@ -1342,20 +1569,47 @@ msgstr "slpprj m/40"
 msgid "_75mm_slpprj_m_40_B"
 msgstr "slpprj m/40 B"
 
+msgid "_75mm_slpprj_m_40_B_42"
+msgstr "slpprj m/40 B (42)"
+
+msgid "_75mm_slpprj_m_40_B_I"
+msgstr "slpprj m/40 B (I)"
+
 msgid "_75mm_slpprj_m_40_C"
 msgstr "slpprj m/40 C"
+
+msgid "_75mm_slpprj_m_40_C_Sav"
+msgstr "slpprj m/40 C (突击炮型)"
 
 msgid "_75mm_slpprj_m_40_N"
 msgstr "slpprj m/40 N"
 
+msgid "_75mm_slpprj_m_40_N_Sav"
+msgstr "slpprj m/40 N (突击炮型)"
+
 msgid "_75mm_slpprj_m_41"
 msgstr "slpprj m/41"
+
+msgid "_75mm_slpprj_m_41_Leo"
+msgstr "slpprj m/41 (Leo)"
 
 msgid "_75mm_slpprj_m_49"
 msgstr "slpprj m/49"
 
+msgid "_75mm_slpprj_m_49_74"
+msgstr "slpprj m/49 (74)"
+
 msgid "_75mm_slpsgr_fm_45"
 msgstr "slpsgr fm/45"
+
+msgid "_75mm_slpsgr_fm_45_42"
+msgstr "slpsgr fm/45 (42)"
+
+msgid "_75mm_slpsgr_fm_45_I"
+msgstr "slpsgr fm/45 (I)"
+
+msgid "_75mm_slpsgr_fm_45_Sav"
+msgstr "slpsgr fm/45 (突击炮型)"
 
 msgid "_84mm_kan_strv_81_1"
 msgstr "8.4cm Strv 81炮"
@@ -1375,6 +1629,9 @@ msgstr "博福斯9cm L/43炮"
 msgid "_90mm_Bofors_L_53"
 msgstr "博福斯9cm L/53炮"
 
+msgid "_90mm_Bofors_L_53_65"
+msgstr "博福斯9cm L/53炮 (65)"
+
 msgid "_90mm_Bofors_strvkan_L_43"
 msgstr "博福斯9cm L/43坦克炮"
 
@@ -1384,11 +1641,20 @@ msgstr "博福斯9cm L/53坦克炮"
 msgid "_90mm_kan_m_F"
 msgstr "9cm m/F炮"
 
+msgid "_90mm_kan_m_F_90"
+msgstr "9cm m/F炮 (90)"
+
 msgid "_90mm_sgr_m_F"
 msgstr "sgr m/F"
 
+msgid "_90mm_sgr_m_F_90"
+msgstr "sgr m/F (90)"
+
 msgid "_90mm_slpprj_m_F"
 msgstr "slpprj m/F"
+
+msgid "_90mm_slpprj_m_F_90"
+msgstr "slpprj m/F (90)"
 
 msgid "_90mm_slpprj_typ_I"
 msgstr "slpprj I型"
@@ -1396,11 +1662,38 @@ msgstr "slpprj I型"
 msgid "_90mm_slpprj_typ_II"
 msgstr "slpprj  II型"
 
+msgid "_90mm_slpprj_typ_II_14"
+msgstr "slpprj II型 (14)"
+
+msgid "_90mm_slpprj_typ_II_L_53_65"
+msgstr "slpprj II型 L/53 (65)"
+
 msgid "_90mm_slpsgr_m_F"
 msgstr "slpsgr m/F"
+
+msgid "_90mm_slpsgr_m_F_90"
+msgstr "slpsgr m/F (90)"
 
 msgid "_90mm_slpsgr_typ_I"
 msgstr "slpsgr I型"
 
+msgid "_90mm_slpsgr_typ_I_14"
+msgstr "slpsgr I型 (14)"
+
+msgid "_90mm_slpsgr_typ_I_L_43_65"
+msgstr "slpsgr I型 L/43 (65)"
+
+msgid "_90mm_slpsgr_typ_I_L_53_65"
+msgstr "slpsgr I型 L/53 (65)"
+
 msgid "_90mm_slsgr_m_72"
 msgstr "slsgr m/72"
+
+msgid "_90mm_slsgr_m_72_14"
+msgstr "slsgr m/72 (14)"
+
+msgid "_90mm_slsgr_m_72_L_43_65"
+msgstr "slsgr m/72 L/43 (65)"
+
+msgid "_90mm_slsgr_m_72_L_53_65"
+msgstr "slsgr m/72 L/53 (65)"

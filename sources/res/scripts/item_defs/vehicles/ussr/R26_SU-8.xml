@@ -105,12 +105,9 @@
 		<weight>13417</weight>
 		<maxHealth>240</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>80</maxHealth>
-			<maxRegenHealth>40</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>128</maxRegenHealth>
+			<repairCost>6</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/russian/R26_SU-8/normal/lod0/Hull.model</undamaged>
@@ -2686,14 +2683,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<SU-8>
-			<userString>#ussr_vehicles:SU-8</userString>
+		<Chassis_R26_SU-8>
+			<userString>#ussr_vehicles:Chassis_R26_SU-8</userString>
 			<tags/>
 			<level>5</level>
 			<price>8500</price>
 			<unlocks>
 				<chassis>
-					SU-8Bis
+					Chassis_R26_SU-8_2
 					<cost>4100</cost>
 				</chassis>
 			</unlocks>
@@ -2702,9 +2699,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5160</weight>
-			<maxLoad>21800</maxLoad>
 			<terrainResistance>
-				1.3 1.5 2.5
+				1.2 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>20000</brakeForce>
@@ -5216,9 +5212,9 @@
 				8.30769253
 				<!--BW_String-->
 			</repairTime>
-		</SU-8>
-		<SU-8Bis>
-			<userString>#ussr_vehicles:SU-8Bis</userString>
+		</Chassis_R26_SU-8>
+		<Chassis_R26_SU-8_2>
+			<userString>#ussr_vehicles:Chassis_R26_SU-8_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>13600</price>
@@ -5227,7 +5223,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>5160</weight>
-			<maxLoad>24500</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.3
 				<!--BW_String-->
@@ -7741,13 +7736,13 @@
 				7.05882359
 				<!--BW_String-->
 			</repairTime>
-		</SU-8Bis>
+		</Chassis_R26_SU-8_2>
 	</chassis>
 	<turrets0>
-		<Su-8>
+		<Turret_1_R26_SU-8>
 			<ceilless>true</ceilless>
-			<userString>#ussr_vehicles:SU-8</userString>
-			<tags>cannotDetach</tags>
+			<userString>#ussr_vehicles:Turret_1_R26_SU-8</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>6</level>
 			<price>500</price>
 			<notInShop>true</notInShop>
@@ -7777,7 +7772,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_122mm_howitzer_A-19>
+				<_122mm_Howitzer_A_19>
 					shared
 					<pitchLimits>
 						<minPitch>0 -44 1 -44</minPitch>
@@ -7785,7 +7780,7 @@
 					</pitchLimits>
 					<unlocks>
 						<gun>
-							_152mm_howitzer_ML-20_mod_1931
+							_152mm_Howitzer_ML_20_mod_1931_SU_8
 							<cost>6600</cost>
 						</gun>
 					</unlocks>
@@ -8031,8 +8026,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122mm_howitzer_A-19>
-				<_152mm_howitzer_ML-20_mod_1931>
+				</_122mm_Howitzer_A_19>
+				<_152mm_Howitzer_ML_20_mod_1931_SU_8>
 					shared
 					<pitchLimits>
 						<minPitch>0 -44 1 -44</minPitch>
@@ -8052,7 +8047,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						20.5
+						22.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -8289,7 +8284,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_152mm_howitzer_ML-20_mod_1931>
+				</_152mm_Howitzer_ML_20_mod_1931_SU_8>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R26_SU-8/normal/lod0/Turret_01.model</undamaged>
@@ -8346,93 +8341,46 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</Su-8>
+		</Turret_1_R26_SU-8>
 	</turrets0>
 	<engines>
-		<M-5-400F>
+		<M_5_400F>
 			shared
 			<unlocks>
 				<engine>
-					M-17T
-					<cost>200</cost>
-				</engine>
-			</unlocks>
-		</M-5-400F>
-		<M-17T>
-			shared
-			<unlocks>
-				<engine>
-					M-17F
+					M_17T_SU_8
 					<cost>850</cost>
 				</engine>
 			</unlocks>
-		</M-17T>
-		<M-17F>shared</M-17F>
+		</M_5_400F>
+		<M_17T_SU_8>shared</M_17T_SU_8>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<_10R>
-			shared
-			<unlocks>
-				<radio>
-					_12RT
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_10R>
 		<_12RT>shared</_12RT>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<M-5-400F>
+				<M_5_400F>
 					<smplEnginePower>
 						465.2037
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>48</smplFwMaxSpeed>
-				</M-5-400F>
-				<M-17T>
-					<smplEnginePower>
-						475.7765
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>48</smplFwMaxSpeed>
-				</M-17T>
-				<M-17F>
+				</M_5_400F>
+				<M_17T_SU_8>
 					<smplEnginePower>
 						528.6406
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>48</smplFwMaxSpeed>
-				</M-17F>
+				</M_17T_SU_8>
 			</engines>
 			<chassis>
-				<SU-8>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</SU-8>
-				<SU-8Bis>
+				<Chassis_R26_SU-8>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8453,7 +8401,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</SU-8Bis>
+				</Chassis_R26_SU-8>
+				<Chassis_R26_SU-8_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_R26_SU-8_2>
 			</chassis>
 		</detailed>
 	</physics>

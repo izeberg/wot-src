@@ -1,0 +1,49 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "primeTimeView/endOfCycle"
+msgstr "%(server)s服务器上的阶段已结束"
+
+msgid "primeTimeView/server"
+msgstr "开放服务器: %(server)s。"
+
+msgid "primeTimeView/serverTooltip"
+msgstr ""
+"%(server)s服务器\n"
+"战斗还将持续%(time)s"
+
+msgid "primeTimeView/serverUnavailableTooltip"
+msgstr ""
+"%(server)s服务器\n"
+"距战斗开放还有%(time)s"
+
+msgid "primeTimeView/servers"
+msgstr "开放服务器:"
+
+msgid "primeTimeView/status/allServersDisabled"
+msgstr "所有服务器上的战斗均未开放"
+
+msgid "primeTimeView/status/disableFirst"
+msgstr "该模式在%(server)s服务器上不开放"
+
+msgid "primeTimeView/status/primeIsAvailable"
+msgstr "%(server)s服务器上的战斗还将开放%(time)s"
+
+msgid "primeTimeView/status/primeWillBeAvailable"
+msgstr "距%(server)s服务器上的战斗开放还有%(time)s"
+
+msgid "primeTimeView/status/untill"
+msgstr "%(server)s服务器上的战斗将于%(startTime)s开放"

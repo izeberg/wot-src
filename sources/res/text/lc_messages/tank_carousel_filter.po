@@ -109,6 +109,9 @@ msgstr "按名称搜索"
 msgid "popover/label/specials"
 msgstr "特殊分类:"
 
+msgid "popover/label/vehicleRole"
+msgstr "角色"
+
 msgid "popover/label/vehicleTypes"
 msgstr "类型"
 
@@ -122,7 +125,7 @@ msgid "tooltip/battleRoyale/header"
 msgstr "隐藏不可用坦克"
 
 msgid "tooltip/bonus/body"
-msgstr "显示/隐藏具有x%(multiplier)s经验系数加成的坦克。"
+msgstr "显示/隐藏已激活经验加成的坦克。"
 
 msgid "tooltip/bonus/header"
 msgstr "首胜经验"
@@ -132,12 +135,6 @@ msgstr "显示/隐藏适用于领土战和要塞战斗的租用坦克。"
 
 msgid "tooltip/clanRented/header"
 msgstr "军团战斗的租用坦克"
-
-msgid "tooltip/comp7/body"
-msgstr "显示/隐藏符合天梯战要求的坦克。"
-
-msgid "tooltip/comp7/header"
-msgstr "符合天梯战模式要求的坦克"
 
 msgid "tooltip/crystals/body"
 msgstr "显示/隐藏在可获取战争债券的坦克。"
@@ -152,7 +149,7 @@ msgid "tooltip/customization/own3DStyle/body"
 msgstr "显示/隐藏您拥有对应3D风格的坦克。"
 
 msgid "tooltip/elite/body"
-msgstr "显示/隐藏所有研发了自身全部模块和相连研发分支的坦克。"
+msgstr "显示/隐藏已研发其全部模块、升级节点，以及同研发分支上相邻坦克的坦克。"
 
 msgid "tooltip/elite/header"
 msgstr "精英坦克"

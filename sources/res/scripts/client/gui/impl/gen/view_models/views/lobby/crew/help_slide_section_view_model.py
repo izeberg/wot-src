@@ -1,6 +1,6 @@
 from enum import Enum
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 
 class SlideSectionSize(Enum):
     SMALL = 'small'

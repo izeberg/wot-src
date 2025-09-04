@@ -35,6 +35,7 @@ package net.wg.gui.lobby.profile.pages.awards
       {
          super();
          addEventListener(Event.RESIZE,this.onBlockResizeHandler,false,0,true);
+         this._blocks = new <AwardsTileListBlock>[this.blockBattleHeroes,this.blockHonors,this.blockEpicAwards,this.blockGroupAwards,this.blockCommemoratives,this.blockStageAwards,this.blockSpecialAwards];
       }
       
       private static function applyBlockData(param1:AwardsTileListBlock, param2:Array) : Boolean
@@ -84,7 +85,6 @@ package net.wg.gui.lobby.profile.pages.awards
          this.blockCommemoratives.labelText = _loc1_.makeString(PROFILE.SECTION_AWARDS_LABELS_MEMORY);
          this.blockStageAwards.labelText = _loc1_.makeString(PROFILE.SECTION_AWARDS_LABELS_STAGE);
          this.blockSpecialAwards.labelText = _loc1_.makeString(PROFILE.SECTION_AWARDS_LABELS_SPECIAL);
-         this._blocks = new <AwardsTileListBlock>[this.blockBattleHeroes,this.blockHonors,this.blockEpicAwards,this.blockGroupAwards,this.blockCommemoratives,this.blockStageAwards,this.blockSpecialAwards];
          for each(_loc2_ in this._blocks)
          {
             _loc2_.visible = false;

@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns</identifier>
+					<fx>shaders/std_effects/PBS_tank_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_guns_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						g_fadeDir
+						<Vector4>0.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fadeFactor
+						<Float>-20.000000</Float>
+					</property>
+					<property>
+						g_wireframeBrightness
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						g_wireframeEdgeColor
+						<Vector4>0.705882 0.211765 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeFillBrightness
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_wireframeFillColor
+						<Vector4>1.000000 0.223529 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireVertexOffset
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_fadeAreaSize
+						<Float>3</Float>
+					</property>
+					<property>
+						g_fadeOffsetPivot
+						<Vector4>-0.000188 1.615739 1.600169 0.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeWidth
+						<Float>0.300000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.041827 1.887229 4.155899</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_inside_mat</identifier>
+					<fx>shaders/std_effects/PBS_tank_fade.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_inside_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_inside_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_inside_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/Vehicles/Cz21_Vz_60S_Dravec_h/Vz_60S_Dravec_h_inside_ANM.dds</Texture>
+					</property>
+					<property>
+						g_fadeDir
+						<Vector4>0.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_fadeFactor
+						<Float>-20.000000</Float>
+					</property>
+					<property>
+						g_wireframeBrightness
+						<Float>15.000000</Float>
+					</property>
+					<property>
+						g_wireframeEdgeColor
+						<Vector4>0.705882 0.211765 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeFillBrightness
+						<Float>5.000000</Float>
+					</property>
+					<property>
+						g_wireframeFillColor
+						<Vector4>1.000000 0.223529 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_wireVertexOffset
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_fadeAreaSize
+						<Float>3</Float>
+					</property>
+					<property>
+						g_fadeOffsetPivot
+						<Vector4>-0.000188 1.615739 1.600169 0.000000</Vector4>
+					</property>
+					<property>
+						g_wireframeWidth
+						<Float>0.300000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000011 1.862648 5.274424</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.336801 -0.087786 -0.093308</min>
+		<max>0.420455 2.233155 6.988729</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>52358</geometrySize>
+</root>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						emissionMap
+						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_008_Lights/hpm_008_Lights_AM.dds</Texture>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>7.000000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.027451 0.384314 0.031373 1.000000</Vector4>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_008_Lights/hpm_008_Lights_AM.dds</Texture>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_008_Lights/hpm_008_Lights_AM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000844 0.482638 -0.000010</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_008_Lights/hpm_008_Lights_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_008_Lights/hpm_008_Lights_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_008_Lights/hpm_008_Lights_ANM.dds</Texture>
+					</property>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.263294 0.000001</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.120422 -0.000000 -0.185094</min>
+		<max>0.120421 0.526587 0.185095</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>3856</geometrySize>
+</root>

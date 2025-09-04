@@ -1,0 +1,301 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
+
+msgid "battle_pass_widget/countdownSeparator"
+msgstr "|"
+
+msgid "battle_pass_widget/progress"
+msgstr ""
+"{{pointsEarned}}{{@ class $progressSeparatorClass}}/{{/}}{{levelPoints}}"
+
+msgid "battle_pass_widget/stage"
+msgstr "阶段{{level}}"
+
+msgid "battle_pass_widget/sub_title/activate_extra_chapter"
+msgstr "特殊章节"
+
+msgid "battle_pass_widget/sub_title/completed"
+msgstr "已完成"
+
+msgid "battle_pass_widget/sub_title/select_chapter"
+msgstr "选择章节"
+
+msgid "battle_pass_widget/sub_title/unavailable"
+msgstr "暂不开放"
+
+msgid "battle_pass_widget/title"
+msgstr "战斗通行证"
+
+msgid "common/daterange/divider"
+msgstr "{{startDate}} – {{endDate}}"
+
+msgid "common/duration/days"
+msgstr "{{days}}天"
+
+msgid "common/duration/days_hrs"
+msgstr "{{days}}天{{hours}}时"
+
+msgid "common/duration/hrs"
+msgstr "{{hours}}时"
+
+msgid "common/duration/hrs_mins"
+msgstr "{{hours}}时{{minutes}}分"
+
+msgid "common/duration/mins"
+msgstr "{{minutes}}分"
+
+msgid "hub/basic_missions/daily/bonus_daily_missions_lock_info"
+msgstr ""
+"奖励任务\n"
+"完成3个普通任务即可解锁"
+
+msgid "hub/basic_missions/daily/bonus_daily_missions_timer/tooltip"
+msgstr "完成奖励任务的剩余时间"
+
+msgid "hub/basic_missions/daily/new_daily_missions_timer/message"
+msgstr "距新的日常任务开放还有"
+
+msgid "hub/basic_missions/daily/new_daily_missions_timer/tooltip"
+msgstr "现有任务已全部完成。新的日常任务将很快开放。"
+
+msgid "hub/basic_missions/daily/premium/locked_mission/tooltip"
+msgstr "完成前置任务即可解锁该任务"
+
+msgid "hub/basic_missions/daily/premium/not_available/generic"
+msgstr "高级任务暂不开放"
+
+msgid "hub/basic_missions/daily/purchase_premium/button"
+msgstr "购买高级账号"
+
+msgid "hub/basic_missions/daily/purchase_premium/message"
+msgstr "需要《坦克世界》高级账号才能解锁"
+
+msgid "hub/basic_missions/daily/purchase_premium/title"
+msgstr "高级任务"
+
+msgid "hub/basic_missions/daily/regular/not_available/generic"
+msgstr "日常任务暂不开放"
+
+msgid "hub/basic_missions/daily/reroll_button"
+msgstr "重置"
+
+msgid "hub/basic_missions/daily/title"
+msgstr "日常"
+
+msgid "hub/basic_missions/personal/button/to_campaign"
+msgstr "前往个人任务"
+
+msgid "hub/basic_missions/personal/button/to_completed_operation"
+msgstr "优化结果"
+
+msgid "hub/basic_missions/personal/button/to_operation"
+msgstr "前往作战行动"
+
+msgid "hub/basic_missions/personal/description/campaignNotActivated"
+msgstr "属于沙场老兵的真正挑战，完成即可获得独特坦克奖励。"
+
+msgid "hub/basic_missions/personal/description/completed"
+msgstr ""
+"您已完成{{currentOperationName}}作战行动！您可优化结果，完美完成行动，或者在{{nextOperationName}}作战行动中接受新挑战。"
+
+msgid ""
+"hub/basic_missions/personal/description/completedWithHonors/allCompleted"
+msgstr "您仍可在{{nextOperationName}}中优化结果。"
+
+msgid "hub/basic_missions/personal/description/completedWithHonors/default"
+msgstr "您已完美完成{{currentOperationName}}作战行动！{{nextOperationName}}作战行动现已开放。"
+
+msgid "hub/basic_missions/personal/description/inProgress"
+msgstr "个人任务点数可通过完成个人任务、日常任务和每周任务获取。"
+
+msgid "hub/basic_missions/personal/description/inProgressForHonors"
+msgstr "完成全部\"{{totalProgress}}\"任务，即可完美完成该作战行动，并获得更多奖励。"
+
+msgid "hub/basic_missions/personal/detail/tooltip/body"
+msgstr "安装全部部件即可获得奖励——{{vehicleName}}。通过完成个人任务、日常任务、每周任务，获取个人任务点数，即可收集坦克部件。"
+
+msgid "hub/basic_missions/personal/detail_description"
+msgstr "安装全部部件即可获得奖励——{{vehicleName}}。通过完成个人任务、日常任务、每周任务，获取个人任务点数，即可收集坦克部件。"
+
+msgid "hub/basic_missions/personal/progress/inProgressForHonors"
+msgstr "已完成任务: {{progress}}"
+
+msgid "hub/basic_missions/personal/title/campaignNotActivated"
+msgstr "全新\"第三区\"个人任务已开放！"
+
+msgid "hub/basic_missions/personal/title/completed"
+msgstr "{{nextOperationName}}作战行动已开放！"
+
+msgid "hub/basic_missions/personal/title/completedWithHonors/allCompleted"
+msgstr "已完美完成{{currentOperationName}}作战行动！"
+
+msgid "hub/basic_missions/personal/title/completedWithHonors/default"
+msgstr "{{nextOperationName}}作战行动已开放！"
+
+msgid "hub/basic_missions/personal/title/inProgress"
+msgstr "{{currentOperationName}}作战行动 | 阶段{{stageNumber}}"
+
+msgid "hub/basic_missions/personal/title/inProgressForHonors"
+msgstr "正在完美完成{{currentOperationName}}作战行动"
+
+msgid "hub/basic_missions/title"
+msgstr "常规任务"
+
+msgid "hub/basic_missions/weekly/title"
+msgstr "每周"
+
+msgid "hub/basic_missions/weekly/update_info"
+msgstr "每{{weekDay}}更新"
+
+msgid "hub/common_missions/title"
+msgstr "额外任务"
+
+msgid "hub/reward_progress/epic_quest_progress/collect_win_back"
+msgstr "领取奖励"
+
+msgid "hub/reward_progress/epic_quest_progress/disabled"
+msgstr "史诗奖励暂不可用"
+
+msgid "hub/reward_progress/epic_quest_progress/sub_title"
+msgstr "每完成一个普通、高级或奖励任务，均可推动奖励进度。"
+
+msgid "hub/reward_progress/epic_quest_progress/time_left"
+msgstr "还将开放"
+
+msgid "hub/reward_progress/epic_quest_progress/title"
+msgstr "完成日常任务，获取史诗奖励"
+
+msgid "hub/reward_progress/win_back_quest_progress/claim"
+msgstr "领取奖励"
+
+msgid "hub/reward_progress/win_back_quest_progress/claim_main"
+msgstr "领取奖励"
+
+msgid "hub/reward_progress/win_back_quest_progress/sub_title"
+msgstr "每完成一个普通、高级或奖励任务，均可推动奖励进度。"
+
+msgid "hub/reward_progress/win_back_quest_progress/time_left"
+msgstr "还将开放"
+
+msgid "hub/reward_progress/win_back_quest_progress/title"
+msgstr "厉兵秣马！完成日常任务，获取史诗奖励: {progres}"
+
+msgid "info_page/additional/bonus/description"
+msgstr "完成3个普通任务，即可解锁回报更加丰厚的奖励任务。奖励任务必须当日完成，否则就会过期。"
+
+msgid "info_page/additional/bonus/title"
+msgstr "奖励任务"
+
+msgid "info_page/additional/conditions/description"
+msgstr "一些任务必须在单场战斗中完成，而累积型任务则可在任意场次的战斗中完成。累积型任务拥有一个进度条，您可在标准模式中完成这些任务。"
+
+msgid "info_page/additional/conditions/title"
+msgstr "条件"
+
+msgid "info_page/additional/reroll/description"
+msgstr ""
+"您可重置不感兴趣的普通任务，并获得一个新的随机任务。重置后，\"重置任务\"按钮会进入{{time}}的冷却时间。如果您有坦克在战斗中，重置任务可能会导致您丢失任务进度。"
+
+msgid "info_page/additional/reroll/title"
+msgstr "重置任务"
+
+msgid "info_page/additional/reward/description"
+msgstr ""
+"史诗奖励是一个马拉松式的周期。每完成一个普通、高级或奖励任务，均可推动奖励进度。周期会在完成后重置，并重新开启。史诗奖励周期没有时间限制，可随时完成。"
+
+msgid "info_page/additional/reward/title"
+msgstr "史诗奖励"
+
+msgid "info_page/header"
+msgstr "关于任务"
+
+msgid "info_page/main/premium/description"
+msgstr ""
+"《坦克世界》高级账号可为您解锁3个需要依次完成的高级任务。这些任务可在标准模式、天梯战中完成，进度会在每场战斗结束后更新。游戏活动期间，完成高级任务将有机会获得活动专属奖励。"
+
+msgid "info_page/main/premium/title"
+msgstr "高级任务"
+
+msgid "info_page/main/standard/description"
+msgstr ""
+"普通任务由每天都可以完成的随机任务条件构成。进度会在每场战斗结束后更新。我们建议您在获得普通任务的当天完成。否则，它将顺延至第二天，阻碍下一个任务的完成。战斗通行证期间，完成普通任务即可获得战斗通行证点数。其他游戏活动期间，完成这些任务也有机会获得活动专属奖励。"
+
+msgid "info_page/main/standard/title"
+msgstr "普通任务"
+
+msgid "info_page/main/weekly/description"
+msgstr ""
+"每周任务是一组每周开放的任务。进度会在每场战斗结束后更新。每周的周期开始时，已完成的任务会替换为新任务。您可在标准模式和天梯战模式中完成每周任务，获取额外奖励。"
+
+msgid "info_page/main/weekly/title"
+msgstr "每周任务"
+
+msgid "quests/daily_quests/all_completed"
+msgstr "已完成今天的全部常规任务"
+
+msgid "quests/daily_quests/completed"
+msgstr "已完成全部日常任务"
+
+msgid "tooltip/common/timer"
+msgstr "距开放还有{{timeLeft}}"
+
+msgid "tooltip/daily_quests/all_quest_completed"
+msgstr "已完成全部常规任务！您可在\"额外任务\"标签页中查看其他任务。"
+
+msgid "tooltip/daily_quests/bonus_mission"
+msgstr "奖励任务"
+
+msgid "tooltip/daily_quests/completed"
+msgstr "已完成"
+
+msgid "tooltip/daily_quests/daily_mission"
+msgstr "日常任务"
+
+msgid "tooltip/daily_quests/expires"
+msgstr "距过期还有{{timeLeft}}"
+
+msgid "tooltip/daily_quests/new_daily_missions"
+msgstr "距新的日常任务开放还有{{timeLeft}}"
+
+msgid "tooltip/daily_quests/premium_daily_mission"
+msgstr "高级任务"
+
+msgid "tooltip/daily_quests/rewards"
+msgstr "奖励:"
+
+msgid "tooltip/daily_reroll/description"
+msgstr "您每{time}可重置一次不感兴趣的任务，并获得一个新任务。"
+
+msgid "tooltip/daily_reroll/header"
+msgstr "重置任务"
+
+msgid "tooltip/hub/info_button/body"
+msgstr "点击查看更多信息"
+
+msgid "tooltip/hub/info_button/header"
+msgstr "关于任务"
+
+msgid "tooltip/vehicle_restrictions"
+msgstr "坦克限制:"
+
+msgid "tooltip/weekly_mission"
+msgstr "每周任务"
+
+msgid "tooltip/weekly_reroll/description"
+msgstr "您每{{time}}可重置一次不感兴趣的任务，并获得一个新任务。"
+
+msgid "welcome/button"
+msgstr "了解！"

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod3/hpm_015_Computer_02</parent>
+	<extent>90.000000</extent>
+	<visibilityBox>
+		<min>-0.958365 -0.004412 -0.500000</min>
+		<max>0.980300 2.199518 0.500000</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod2/hpm_015_Computer_02</nodefullVisual>
+</root>

@@ -40,6 +40,9 @@ msgstr "稀有乘员皮肤"
 msgid "customization/attachment"
 msgstr "3D附件"
 
+msgid "customization/attachment/rarity"
+msgstr "%(rarity)s3D附件"
+
 msgid "customization/camouflage"
 msgstr "涂装"
 
@@ -203,6 +206,21 @@ msgid "shell/kinds/HIGH_EXPLOSIVE"
 msgstr "HE"
 
 msgid "shell/kinds/HOLLOW_CHARGE"
+msgstr "HEAT"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING"
+msgstr "AP"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING_CR"
+msgstr "APCR"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING_HE"
+msgstr "APHHE"
+
+msgid "shell/kinds/upperCase/HIGH_EXPLOSIVE"
+msgstr "HE"
+
+msgid "shell/kinds/upperCase/HOLLOW_CHARGE"
 msgstr "HEAT"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING"

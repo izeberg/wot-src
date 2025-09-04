@@ -1,0 +1,2018 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>crane_main</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 1.443571 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>cable_1_0</identifier>
+					<transform>
+						<row0>-0.078697 -0.996899 0.000000</row0>
+						<row1>-0.996899 0.078697 0.000000</row1>
+						<row2>-0.000000 -0.000000 -1.000000</row2>
+						<row3>-12.750244 -0.611672 -0.981544</row3>
+					</transform>
+					<node>
+						<identifier>cable_1_1</identifier>
+						<transform>
+							<row0>0.947653 0.319300 -0.000000</row0>
+							<row1>-0.319300 0.947653 -0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>1.334586 0.028213 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_1_2</identifier>
+							<transform>
+								<row0>0.950702 0.310107 -0.000000</row0>
+								<row1>-0.310107 0.950702 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>1.158005 0.007261 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_1_3</identifier>
+								<transform>
+									<row0>0.928127 0.372264 -0.000000</row0>
+									<row1>-0.372264 0.928127 -0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>1.289420 0.008274 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_1_4</identifier>
+									<transform>
+										<row0>0.907712 0.419594 -0.000000</row0>
+										<row1>-0.419594 0.907712 -0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>1.142983 -0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_1_5</identifier>
+										<transform>
+											<row0>0.918040 0.396487 -0.000000</row0>
+											<row1>-0.396487 0.918040 0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.982964 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_1_6</identifier>
+											<transform>
+												<row0>0.949108 0.314950 -0.000000</row0>
+												<row1>-0.314950 0.949108 0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.951716 -0.000001 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_1_7</identifier>
+												<transform>
+													<row0>0.962419 0.271570 0.000000</row0>
+													<row1>-0.271570 0.962419 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>0.941031 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_1_8</identifier>
+													<transform>
+														<row0>0.972131 0.234436 0.000000</row0>
+														<row1>-0.234436 0.972131 -0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>1.012636 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_1_9</identifier>
+														<transform>
+															<row0>0.972360 0.233488 0.000000</row0>
+															<row1>-0.233488 0.972360 0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>0.863151 -0.000001 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>cable_1_10</identifier>
+															<transform>
+																<row0>-0.134073 0.990971 -0.000000</row0>
+																<row1>0.990971 0.134073 -0.000000</row1>
+																<row2>-0.000000 -0.000000 -1.000000</row2>
+																<row3>1.355710 0.029358 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>cable_1_10_BlendBone</identifier>
+																<transform>
+																	<row0>0.999998 0.001821 0.000000</row0>
+																	<row1>-0.001821 0.999998 -0.000000</row1>
+																	<row2>0.000000 -0.000000 -1.000000</row2>
+																	<row3>18.852654 -0.818001 0.981544</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>cable_1_9_BlendBone</identifier>
+															<transform>
+																<row0>-0.132268 0.991214 -0.000000</row0>
+																<row1>0.991214 0.132268 -0.000000</row1>
+																<row2>0.000000 0.000000 1.000000</row2>
+																<row3>-1.982531 18.602129 -0.981544</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>cable_1_8_BlendBone</identifier>
+														<transform>
+															<row0>-0.360048 0.932934 -0.000000</row0>
+															<row1>0.932934 0.360048 -0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>-5.407949 17.625067 -0.981544</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_1_7_BlendBone</identifier>
+													<transform>
+														<row0>-0.568727 0.822526 -0.000000</row0>
+														<row1>0.822526 0.568727 -0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>-8.376554 15.866063 -0.981544</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_1_6_BlendBone</identifier>
+												<transform>
+													<row0>-0.770727 0.637165 -0.000000</row0>
+													<row1>0.637165 0.770727 -0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>-11.429467 12.994975 -0.981544</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_1_5_BlendBone</identifier>
+											<transform>
+												<row0>-0.932179 0.361998 -0.000000</row0>
+												<row1>0.361998 0.932179 -0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>-13.988853 8.733930 -0.981544</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_1_4_BlendBone</identifier>
+										<transform>
+											<row0>-0.999305 -0.037268 -0.000000</row0>
+											<row1>-0.037268 0.999305 -0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>-15.322257 2.471703 -0.981544</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_1_3_BlendBone</identifier>
+									<transform>
+										<row0>-0.891444 -0.453131 -0.000000</row0>
+										<row1>-0.453131 0.891444 -0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>-13.802322 -4.185536 -0.981544</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_1_2_BlendBone</identifier>
+								<transform>
+									<row0>-0.658689 -0.752415 -0.000000</row0>
+									<row1>-0.752415 0.658689 -0.000000</row1>
+									<row2>-0.000000 0.000000 1.000000</row2>
+									<row3>-9.962767 -9.014541 -0.981544</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_1_1_BlendBone</identifier>
+							<transform>
+								<row0>-0.392888 -0.919586 -0.000000</row0>
+								<row1>-0.919586 0.392888 -0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>-5.518146 -11.652397 -0.981544</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_1_0_BlendBone</identifier>
+						<transform>
+							<row0>-0.078697 -0.996899 -0.000000</row0>
+							<row1>-0.996899 0.078697 -0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-0.174088 -12.776168 -0.981544</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_2_0</identifier>
+					<transform>
+						<row0>0.077912 -0.996957 -0.002491</row0>
+						<row1>0.996960 0.077913 -0.000100</row1>
+						<row2>0.000294 -0.002476 0.999997</row2>
+						<row3>-5.694197 -0.396372 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>cable_2_1</identifier>
+						<transform>
+							<row0>0.972200 0.234149 0.001346</row0>
+							<row1>-0.234149 0.972201 -0.000055</row1>
+							<row2>-0.001321 -0.000262 0.999999</row2>
+							<row3>0.738922 -0.000001 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_2_2</identifier>
+							<transform>
+								<row0>0.954133 0.299382 0.001231</row0>
+								<row1>-0.299383 0.954133 -0.000003</row1>
+								<row2>-0.001175 -0.000366 0.999999</row2>
+								<row3>0.805994 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_2_3</identifier>
+								<transform>
+									<row0>0.855774 0.517349 0.000865</row0>
+									<row1>-0.517349 0.855775 0.000000</row1>
+									<row2>-0.000740 -0.000448 1.000000</row2>
+									<row3>0.762847 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_2_4</identifier>
+									<transform>
+										<row0>0.668864 0.743385 -0.000214</row0>
+										<row1>-0.743385 0.668864 -0.000003</row1>
+										<row2>0.000141 0.000161 1.000000</row2>
+										<row3>0.895003 -0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_2_5</identifier>
+										<transform>
+											<row0>0.882796 0.469757 -0.000191</row0>
+											<row1>-0.469757 0.882796 -0.000003</row1>
+											<row2>0.000167 0.000093 1.000000</row2>
+											<row3>0.754369 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_2_6</identifier>
+											<transform>
+												<row0>0.958412 0.285387 0.000011</row0>
+												<row1>-0.285387 0.958412 -0.000000</row1>
+												<row2>-0.000010 -0.000003 1.000000</row2>
+												<row3>0.800739 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_2_7</identifier>
+												<transform>
+													<row0>0.968296 0.249806 0.000101</row0>
+													<row1>-0.249806 0.968296 -0.000005</row1>
+													<row2>-0.000099 -0.000021 1.000000</row2>
+													<row3>0.772553 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_2_8</identifier>
+													<transform>
+														<row0>0.151562 -0.988448 0.000000</row0>
+														<row1>0.988448 0.151562 0.000000</row1>
+														<row2>-0.000000 0.000000 1.000000</row2>
+														<row3>0.802431 0.000000 -0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_2_8_BlendBone</identifier>
+														<transform>
+															<row0>0.999130 -0.041696 -0.001289</row0>
+															<row1>0.041696 0.999130 0.000305</row1>
+															<row2>-0.001275 0.000359 -0.999999</row2>
+															<row3>2.543750 -1.144034 -0.003665</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_2_7_BlendBone</identifier>
+													<transform>
+														<row0>0.110216 -0.993907 -0.001289</row0>
+														<row1>0.993908 0.110216 0.000305</row1>
+														<row2>0.000161 0.001315 -0.999999</row2>
+														<row3>0.057148 -2.687755 -0.003665</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_2_6_BlendBone</identifier>
+												<transform>
+													<row0>0.355005 -0.934863 -0.001273</row0>
+													<row1>0.934864 0.355005 0.000405</row1>
+													<row2>-0.000073 0.001334 -0.999999</row2>
+													<row3>1.499305 -2.588267 -0.003646</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_2_5_BlendBone</identifier>
+											<transform>
+												<row0>0.607040 -0.794670 -0.001269</row0>
+												<row1>0.794671 0.607040 0.000415</row1>
+												<row2>-0.000440 0.001261 -0.999999</row2>
+												<row3>2.976350 -2.052743 -0.003630</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_2_4_BlendBone</identifier>
+										<transform>
+											<row0>0.909194 -0.416371 -0.001382</row0>
+											<row1>0.416371 0.909194 0.000261</row1>
+											<row2>-0.001148 0.000813 -0.999999</row2>
+											<row3>4.346169 -0.413993 -0.004192</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_2_3_BlendBone</identifier>
+									<transform>
+										<row0>0.917650 0.397386 -0.001576</row0>
+										<row1>-0.397386 0.917652 0.000169</row1>
+										<row2>-0.001513 -0.000471 -0.999999</row2>
+										<row3>4.109753 2.953972 -0.005120</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_2_2_BlendBone</identifier>
+								<transform>
+									<row0>0.579716 0.814818 -0.000782</row0>
+									<row1>-0.814819 0.579716 -0.000174</row1>
+									<row2>-0.000312 -0.000738 -1.000000</row2>
+									<row3>2.751638 4.654112 -0.001566</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_2_1_BlendBone</identifier>
+							<transform>
+								<row0>0.309184 0.951002 -0.000071</row0>
+								<row1>-0.951002 0.309184 -0.001179</row1>
+								<row2>0.001099 -0.000432 -0.999999</row2>
+								<row3>2.038064 5.264435 0.001808</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_2_0_BlendBone</identifier>
+						<transform>
+							<row0>0.077912 0.996960 0.000294</row0>
+							<row1>-0.996957 0.077913 -0.002476</row1>
+							<row2>0.002491 0.000100 -0.999997</row2>
+							<row3>1.487660 5.595298 0.004264</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_3_0</identifier>
+					<transform>
+						<row0>0.031652 -0.999499 0.000000</row0>
+						<row1>0.999499 0.031652 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-5.106187 -0.262971 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>cable_3_1</identifier>
+						<transform>
+							<row0>0.973889 0.227025 0.000000</row0>
+							<row1>-0.227025 0.973889 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>1.118466 -0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_3_2</identifier>
+							<transform>
+								<row0>0.971113 0.238620 0.000000</row0>
+								<row1>-0.238620 0.971113 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.762279 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_3_3</identifier>
+								<transform>
+									<row0>0.936090 0.351760 0.000000</row0>
+									<row1>-0.351760 0.936090 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.780322 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_3_4</identifier>
+									<transform>
+										<row0>0.723760 0.690051 0.000000</row0>
+										<row1>-0.690051 0.723760 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.756918 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_3_5</identifier>
+										<transform>
+											<row0>0.713748 0.700403 0.000000</row0>
+											<row1>-0.700403 0.713748 0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.909310 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_3_6</identifier>
+											<transform>
+												<row0>0.933268 0.359182 0.000000</row0>
+												<row1>-0.359182 0.933268 -0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.846402 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_3_7</identifier>
+												<transform>
+													<row0>0.976834 0.213999 0.000000</row0>
+													<row1>-0.213999 0.976834 0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>0.957716 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_3_8</identifier>
+													<transform>
+														<row0>0.989696 0.143183 0.000000</row0>
+														<row1>-0.143183 0.989696 0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>0.718419 -0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_3_8_BlendBone</identifier>
+														<transform>
+															<row0>0.016263 -0.999868 0.000000</row0>
+															<row1>0.999868 0.016263 0.000000</row1>
+															<row2>0.000000 0.000000 -1.000000</row2>
+															<row3>-0.387164 -1.985088 -0.000000</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_3_7_BlendBone</identifier>
+													<transform>
+														<row0>0.159259 -0.987237 0.000000</row0>
+														<row1>0.987237 0.159259 0.000000</row1>
+														<row2>0.000000 0.000000 -1.000000</row2>
+														<row3>0.619475 -2.020069 -0.000000</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_3_6_BlendBone</identifier>
+												<transform>
+													<row0>0.366837 -0.930285 0.000000</row0>
+													<row1>0.930285 0.366837 0.000000</row1>
+													<row2>0.000000 0.000000 -1.000000</row2>
+													<row3>1.995132 -1.840705 -0.000000</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_3_5_BlendBone</identifier>
+											<transform>
+												<row0>0.676499 -0.736444 0.000000</row0>
+												<row1>0.736444 0.676499 0.000000</row1>
+												<row2>0.000000 0.000000 -1.000000</row2>
+												<row3>3.369543 -1.001255 -0.000000</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_3_4_BlendBone</identifier>
+										<transform>
+											<row0>0.998657 -0.051814 0.000000</row0>
+											<row1>0.051814 0.998657 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>4.015596 1.645394 -0.000000</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_3_3_BlendBone</identifier>
+									<transform>
+										<row0>0.758542 0.651624 0.000000</row0>
+										<row1>-0.651624 0.758542 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>2.527841 3.961838 -0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_3_2_BlendBone</identifier>
+								<transform>
+									<row0>0.480849 0.876804 0.000000</row0>
+									<row1>-0.876804 0.480849 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>1.752993 4.597832 -0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_3_1_BlendBone</identifier>
+							<transform>
+								<row0>0.257736 0.966215 0.000000</row0>
+								<row1>-0.966215 0.257736 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>1.367500 4.883313 -0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_3_0_BlendBone</identifier>
+						<transform>
+							<row0>0.031652 0.999499 0.000000</row0>
+							<row1>-0.999499 0.031652 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>1.341628 5.066261 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_4_1</identifier>
+					<transform>
+						<row0>0.248801 -0.968555 0.000000</row0>
+						<row1>0.968555 0.248801 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-11.088263 -0.332202 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>cable_4_2</identifier>
+						<transform>
+							<row0>0.948480 0.316837 0.000000</row0>
+							<row1>-0.316837 0.948480 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.810577 0.000001 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_4_3</identifier>
+							<transform>
+								<row0>0.960656 0.277741 0.000000</row0>
+								<row1>-0.277741 0.960656 0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.879318 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_4_4</identifier>
+								<transform>
+									<row0>0.968200 0.250179 0.000000</row0>
+									<row1>-0.250179 0.968200 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.795250 -0.000001 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_4_5</identifier>
+									<transform>
+										<row0>0.961287 0.275549 0.000000</row0>
+										<row1>-0.275549 0.961287 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.788829 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_4_6</identifier>
+										<transform>
+											<row0>0.952916 0.303234 0.000000</row0>
+											<row1>-0.303234 0.952916 0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.850532 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_4_7</identifier>
+											<transform>
+												<row0>0.954648 0.297737 0.000000</row0>
+												<row1>-0.297737 0.954648 0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.764095 -0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_4_8</identifier>
+												<transform>
+													<row0>0.960274 0.279059 0.000000</row0>
+													<row1>-0.279059 0.960274 0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>0.990656 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_4_9</identifier>
+													<transform>
+														<row0>0.964688 0.263395 0.000000</row0>
+														<row1>-0.263395 0.964688 0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>0.936759 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_4_10</identifier>
+														<transform>
+															<row0>0.940406 0.340053 0.000000</row0>
+															<row1>-0.340053 0.940406 0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>0.810978 0.000001 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>cable_4_11</identifier>
+															<transform>
+																<row0>0.200963 -0.979599 0.000000</row0>
+																<row1>0.979599 0.200963 0.000000</row1>
+																<row2>0.000000 0.000000 1.000000</row2>
+																<row3>0.884810 -0.000001 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>cable_4_11_BlendBone</identifier>
+																<transform>
+																	<row0>0.998978 0.045202 0.000000</row0>
+																	<row1>-0.045202 0.998978 0.000000</row1>
+																	<row2>0.000000 0.000000 -1.000000</row2>
+																	<row3>5.274417 -0.966638 0.000000</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>cable_4_10_BlendBone</identifier>
+															<transform>
+																<row0>0.245038 -0.969514 0.000000</row0>
+																<row1>0.969514 0.245038 0.000000</row1>
+																<row2>0.000000 0.000000 -1.000000</row2>
+																<row3>0.997856 -5.361073 0.000000</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>cable_4_9_BlendBone</identifier>
+														<transform>
+															<row0>0.560121 -0.828411 0.000000</row0>
+															<row1>0.828411 0.560121 0.000000</row1>
+															<row2>0.000000 0.000000 -1.000000</row2>
+															<row3>3.572417 -4.702262 0.000000</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_4_8_BlendBone</identifier>
+													<transform>
+														<row0>0.758541 -0.651625 0.000000</row0>
+														<row1>0.651625 0.758541 0.000000</row1>
+														<row2>0.000000 0.000000 -1.000000</row2>
+														<row3>5.621578 -3.595261 0.000000</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_4_7_BlendBone</identifier>
+												<transform>
+													<row0>0.910249 -0.414061 0.000000</row0>
+													<row1>0.414061 0.910249 0.000000</row1>
+													<row2>0.000000 0.000000 -1.000000</row2>
+													<row3>7.392201 -1.883685 0.000000</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_4_6_BlendBone</identifier>
+											<transform>
+												<row0>0.992249 -0.124268 0.000000</row0>
+												<row1>0.124268 0.992249 0.000000</row1>
+												<row2>0.000000 0.000000 -1.000000</row2>
+												<row3>8.381888 0.402674 0.000000</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_4_5_BlendBone</identifier>
+										<transform>
+											<row0>0.983212 0.182467 0.000000</row0>
+											<row1>-0.182467 0.983212 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>8.715662 2.925388 0.000000</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_4_4_BlendBone</identifier>
+									<transform>
+										<row0>0.894871 0.446326 0.000000</row0>
+										<row1>-0.446326 0.894871 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>8.360996 5.213728 0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_4_3_BlendBone</identifier>
+								<transform>
+									<row0>0.754752 0.656010 0.000000</row0>
+									<row1>-0.656010 0.754752 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>7.585999 7.139673 0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_4_2_BlendBone</identifier>
+							<transform>
+								<row0>0.542856 0.839826 0.000000</row0>
+								<row1>-0.839826 0.542856 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>6.183875 8.965713 0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_4_1_BlendBone</identifier>
+						<transform>
+							<row0>0.248801 0.968555 0.000000</row0>
+							<row1>-0.968555 0.248801 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>3.835190 10.463078 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_5_0</identifier>
+					<transform>
+						<row0>-0.047413 -0.998875 0.000000</row0>
+						<row1>-0.998875 0.047413 0.000000</row1>
+						<row2>-0.000000 -0.000000 -1.000000</row2>
+						<row3>-12.325869 -0.432621 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>cable_5_1</identifier>
+						<transform>
+							<row0>0.927203 0.374559 0.000000</row0>
+							<row1>-0.374559 0.927203 -0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>1.015218 0.045134 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_5_2</identifier>
+							<transform>
+								<row0>0.973305 0.229517 0.000000</row0>
+								<row1>-0.229517 0.973305 -0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.878368 -0.020828 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_5_3</identifier>
+								<transform>
+									<row0>0.961784 0.273810 0.000000</row0>
+									<row1>-0.273810 0.961784 -0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.865131 0.000001 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_5_4</identifier>
+									<transform>
+										<row0>0.926453 0.376410 0.000000</row0>
+										<row1>-0.376410 0.926453 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>1.007461 -0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_5_5</identifier>
+										<transform>
+											<row0>0.894576 0.446915 0.000000</row0>
+											<row1>-0.446915 0.894576 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>1.107322 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_5_6</identifier>
+											<transform>
+												<row0>0.937353 0.348381 0.000000</row0>
+												<row1>-0.348381 0.937353 0.000000</row1>
+												<row2>-0.000000 0.000000 1.000000</row2>
+												<row3>0.959001 0.000000 -0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_5_7</identifier>
+												<transform>
+													<row0>0.960812 0.277201 0.000000</row0>
+													<row1>-0.277201 0.960812 0.000000</row1>
+													<row2>-0.000000 0.000000 1.000000</row2>
+													<row3>0.965243 0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_5_8</identifier>
+													<transform>
+														<row0>0.962981 0.269570 0.000000</row0>
+														<row1>-0.269570 0.962981 0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>0.922008 0.000000 -0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_5_9</identifier>
+														<transform>
+															<row0>0.949851 0.312703 -0.000000</row0>
+															<row1>-0.312703 0.949851 0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>0.970397 0.000000 -0.000000</row3>
+														</transform>
+														<node>
+															<identifier>cable_5_10</identifier>
+															<transform>
+																<row0>-0.124035 0.992278 0.000000</row0>
+																<row1>0.992278 0.124035 -0.000000</row1>
+																<row2>-0.000000 -0.000000 -1.000000</row2>
+																<row3>0.965577 0.000001 -0.000000</row3>
+															</transform>
+															<node>
+																<identifier>cable_5_10_BlendBone</identifier>
+																<transform>
+																	<row0>1.000000 -0.000012 0.000000</row0>
+																	<row1>0.000012 1.000000 -0.000000</row1>
+																	<row2>0.000000 -0.000000 -1.000000</row2>
+																	<row3>18.074301 -0.912369 0.000000</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>cable_5_9_BlendBone</identifier>
+															<transform>
+																<row0>-0.124047 0.992276 -0.000000</row0>
+																<row1>0.992276 0.124047 -0.000000</row1>
+																<row2>0.000000 0.000000 1.000000</row2>
+																<row3>-2.181587 17.821562 -0.000000</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>cable_5_8_BlendBone</identifier>
+														<transform>
+															<row0>-0.428114 0.903725 -0.000000</row0>
+															<row1>0.903725 0.428114 -0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>-6.674644 16.245638 -0.000000</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_5_7_BlendBone</identifier>
+													<transform>
+														<row0>-0.655883 0.754863 -0.000000</row0>
+														<row1>0.754863 0.655883 -0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>-9.884885 13.844951 -0.000000</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_5_6_BlendBone</identifier>
+												<transform>
+													<row0>-0.839429 0.543470 -0.000000</row0>
+													<row1>0.543470 0.839429 -0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>-12.370109 10.562292 -0.000000</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_5_5_BlendBone</identifier>
+											<transform>
+												<row0>-0.976176 0.216981 -0.000000</row0>
+												<row1>0.216981 0.976176 -0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>-14.315862 5.591080 -0.000000</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_5_4_BlendBone</identifier>
+										<transform>
+											<row0>-0.970236 -0.242161 -0.000000</row0>
+											<row1>-0.242161 0.970236 -0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>-14.198049 -1.396324 -0.000000</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_5_3_BlendBone</identifier>
+									<transform>
+										<row0>-0.807726 -0.589558 -0.000000</row0>
+										<row1>-0.589558 0.807726 -0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>-11.620775 -6.637922 -0.000000</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_5_2_BlendBone</identifier>
+								<transform>
+									<row0>-0.615431 -0.788191 -0.000000</row0>
+									<row1>-0.788191 0.615431 -0.000000</row1>
+									<row2>-0.000000 0.000000 1.000000</row2>
+									<row3>-8.494014 -9.566129 -0.000000</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_5_1_BlendBone</identifier>
+							<transform>
+								<row0>-0.418099 -0.908401 -0.000000</row0>
+								<row1>-0.908401 0.418099 -0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>-5.193307 -11.281104 -0.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_5_0_BlendBone</identifier>
+						<transform>
+							<row0>-0.047413 -0.998875 -0.000000</row0>
+							<row1>-0.998875 0.047413 -0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>0.425407 -12.359939 -0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_6_0</identifier>
+					<transform>
+						<row0>0.119920 -0.992784 0.000000</row0>
+						<row1>0.992784 0.119920 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-23.726954 -0.439609 -0.982553</row3>
+					</transform>
+					<node>
+						<identifier>cable_6_1</identifier>
+						<transform>
+							<row0>0.948451 0.316923 0.000000</row0>
+							<row1>-0.316923 0.948451 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.917058 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_6_2</identifier>
+							<transform>
+								<row0>0.953090 0.302688 -0.000000</row0>
+								<row1>-0.302688 0.953090 -0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>0.879058 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_6_3</identifier>
+								<transform>
+									<row0>0.898167 0.439654 0.000000</row0>
+									<row1>-0.439654 0.898167 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>0.884166 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_6_4</identifier>
+									<transform>
+										<row0>0.785830 0.618442 0.000000</row0>
+										<row1>-0.618442 0.785830 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>1.052935 0.000001 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_6_5</identifier>
+										<transform>
+											<row0>0.897646 0.440718 -0.000000</row0>
+											<row1>-0.440718 0.897646 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>1.003087 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_6_6</identifier>
+											<transform>
+												<row0>0.947519 0.319700 0.000000</row0>
+												<row1>-0.319700 0.947519 -0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.935906 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_6_7</identifier>
+												<transform>
+													<row0>0.937858 0.347019 0.000000</row0>
+													<row1>-0.347019 0.937858 0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>0.897237 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_6_8</identifier>
+													<transform>
+														<row0>0.138829 -0.990316 0.000000</row0>
+														<row1>0.990316 0.138829 -0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>0.899396 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_6_8_BlendBone</identifier>
+														<transform>
+															<row0>0.999982 -0.006065 0.000000</row0>
+															<row1>0.006065 0.999982 0.000000</row1>
+															<row2>0.000000 0.000000 -1.000000</row2>
+															<row3>19.470839 -1.019406 0.982553</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_6_7_BlendBone</identifier>
+													<transform>
+														<row0>0.132820 -0.991140 0.000000</row0>
+														<row1>0.991140 0.132820 0.000000</row1>
+														<row2>0.000000 0.000000 -1.000000</row2>
+														<row3>2.592986 -19.423813 0.982553</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_6_6_BlendBone</identifier>
+												<transform>
+													<row0>0.468511 -0.883458 0.000000</row0>
+													<row1>0.883458 0.468511 0.000000</row1>
+													<row2>0.000000 0.000000 -1.000000</row2>
+													<row3>10.069517 -17.316967 0.982553</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_6_5_BlendBone</identifier>
+											<transform>
+												<row0>0.726364 -0.687310 0.000000</row0>
+												<row1>0.687310 0.726364 0.000000</row1>
+												<row2>0.000000 0.000000 -1.000000</row2>
+												<row3>16.013191 -13.188932 0.982553</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_6_4_BlendBone</identifier>
+										<transform>
+											<row0>0.954927 -0.296839 0.000000</row0>
+											<row1>0.296839 0.954927 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>21.189861 -4.781682 0.982553</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_6_3_BlendBone</identifier>
+									<transform>
+										<row0>0.933989 0.357302 0.000000</row0>
+										<row1>-0.357302 0.933989 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>20.661762 9.347109 0.982553</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_6_2_BlendBone</identifier>
+								<transform>
+									<row0>0.681789 0.731549 0.000000</row0>
+									<row1>-0.731549 0.681789 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>15.332389 17.479296 0.982553</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_6_1_BlendBone</identifier>
+							<transform>
+								<row0>0.428375 0.903601 0.000000</row0>
+								<row1>-0.903601 0.428375 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>10.201425 21.300268 0.982553</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_6_0_BlendBone</identifier>
+						<transform>
+							<row0>0.119920 0.992784 0.000000</row0>
+							<row1>-0.992784 0.119920 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>3.842058 23.435331 0.982553</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_7_0</identifier>
+					<transform>
+						<row0>0.092269 -0.995734 0.000000</row0>
+						<row1>0.995734 0.092269 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-12.007326 -0.256873 -0.520071</row3>
+					</transform>
+					<node>
+						<identifier>cable_7_1</identifier>
+						<transform>
+							<row0>0.916942 0.399020 0.000000</row0>
+							<row1>-0.399020 0.916942 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>1.068264 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_7_2</identifier>
+							<transform>
+								<row0>0.934425 0.356161 -0.000000</row0>
+								<row1>-0.356161 0.934425 -0.000000</row1>
+								<row2>0.000000 0.000000 1.000000</row2>
+								<row3>1.032524 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_7_3</identifier>
+								<transform>
+									<row0>0.945055 0.326913 -0.000000</row0>
+									<row1>-0.326913 0.945055 0.000000</row1>
+									<row2>0.000000 0.000000 1.000000</row2>
+									<row3>1.055652 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_7_4</identifier>
+									<transform>
+										<row0>0.933177 0.359416 0.000000</row0>
+										<row1>-0.359416 0.933177 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>1.042601 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_7_5</identifier>
+										<transform>
+											<row0>0.924519 0.381136 0.000000</row0>
+											<row1>-0.381136 0.924519 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>1.125825 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_7_6</identifier>
+											<transform>
+												<row0>0.940472 0.339872 -0.000000</row0>
+												<row1>-0.339872 0.940472 0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>1.097422 -0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_7_7</identifier>
+												<transform>
+													<row0>0.943539 0.331261 0.000000</row0>
+													<row1>-0.331261 0.943539 0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>1.055315 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_7_8</identifier>
+													<transform>
+														<row0>0.933979 0.357327 0.000000</row0>
+														<row1>-0.357327 0.933979 0.000000</row1>
+														<row2>0.000000 0.000000 1.000000</row2>
+														<row3>1.002206 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>cable_7_9</identifier>
+														<transform>
+															<row0>0.083045 -0.996546 0.000000</row0>
+															<row1>0.996546 0.083045 0.000000</row1>
+															<row2>0.000000 0.000000 1.000000</row2>
+															<row3>1.031110 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>cable_7_9_BlendBone</identifier>
+															<transform>
+																<row0>0.998754 0.049900 0.000000</row0>
+																<row1>-0.049900 0.998754 0.000000</row1>
+																<row2>0.000000 0.000000 -1.000000</row2>
+																<row3>6.145083 -0.873135 0.520071</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>cable_7_8_BlendBone</identifier>
+														<transform>
+															<row0>0.132669 -0.991160 0.000000</row0>
+															<row1>0.991160 0.132669 0.000000</row1>
+															<row2>0.000000 0.000000 -1.000000</row2>
+															<row3>0.671313 -6.196366 0.520071</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>cable_7_7_BlendBone</identifier>
+													<transform>
+														<row0>0.478079 -0.878317 0.000000</row0>
+														<row1>0.878317 0.478079 0.000000</row1>
+														<row2>0.000000 0.000000 -1.000000</row2>
+														<row3>3.843327 -5.547400 0.520071</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_7_6_BlendBone</identifier>
+												<transform>
+													<row0>0.742038 -0.670358 0.000000</row0>
+													<row1>0.670358 0.742038 0.000000</row1>
+													<row2>0.000000 0.000000 -1.000000</row2>
+													<row3>6.519282 -3.961045 0.520071</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_7_5_BlendBone</identifier>
+											<transform>
+												<row0>0.925702 -0.378255 0.000000</row0>
+												<row1>0.378255 0.925702 0.000000</row1>
+												<row2>0.000000 0.000000 -1.000000</row2>
+												<row3>8.574870 -1.509532 0.520071</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_7_4_BlendBone</identifier>
+										<transform>
+											<row0>0.999995 0.003114 0.000000</row0>
+											<row1>-0.003114 0.999995 0.000000</row1>
+											<row2>0.000000 0.000000 -1.000000</row2>
+											<row3>9.628793 1.872598 0.520071</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_7_3_BlendBone</identifier>
+									<transform>
+										<row0>0.932054 0.362321 0.000000</row0>
+										<row1>-0.362321 0.932054 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>9.354932 5.208209 0.520071</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_7_2_BlendBone</identifier>
+								<transform>
+									<row0>0.762394 0.647113 0.000000</row0>
+									<row1>-0.647113 0.762394 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>8.193944 7.980285 0.520071</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_7_1_BlendBone</identifier>
+							<transform>
+								<row0>0.481924 0.876213 0.000000</row0>
+								<row1>-0.876213 0.481924 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>5.846878 10.375340 0.520071</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_7_0_BlendBone</identifier>
+						<transform>
+							<row0>0.092269 0.995734 0.000000</row0>
+							<row1>-0.995734 0.092269 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>2.289541 11.846610 0.520071</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>cable_8_0</identifier>
+					<transform>
+						<row0>-0.203824 -0.979008 0.000000</row0>
+						<row1>-0.979008 0.203824 0.000000</row1>
+						<row2>-0.000000 -0.000000 -1.000000</row2>
+						<row3>-18.220953 -0.019272 -0.887387</row3>
+					</transform>
+					<node>
+						<identifier>cable_8_1</identifier>
+						<transform>
+							<row0>0.936680 0.350187 -0.000000</row0>
+							<row1>-0.350187 0.936680 -0.000000</row1>
+							<row2>0.000000 -0.000000 1.000000</row2>
+							<row3>1.001766 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>cable_8_2</identifier>
+							<transform>
+								<row0>0.894953 0.446160 0.000000</row0>
+								<row1>-0.446160 0.894953 -0.000000</row1>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>1.127261 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>cable_8_3</identifier>
+								<transform>
+									<row0>0.784693 0.619884 0.000000</row0>
+									<row1>-0.619884 0.784693 -0.000000</row1>
+									<row2>0.000000 -0.000000 1.000000</row2>
+									<row3>1.078439 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>cable_8_4</identifier>
+									<transform>
+										<row0>0.864592 0.502474 -0.000000</row0>
+										<row1>-0.502474 0.864592 -0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>1.080503 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>cable_8_5</identifier>
+										<transform>
+											<row0>0.939583 0.342322 -0.000000</row0>
+											<row1>-0.342322 0.939583 0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>0.945046 -0.000001 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>cable_8_6</identifier>
+											<transform>
+												<row0>0.938091 0.346389 0.000000</row0>
+												<row1>-0.346389 0.938091 0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>0.863877 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>cable_8_7</identifier>
+												<transform>
+													<row0>-0.686764 -0.726880 -0.000000</row0>
+													<row1>0.726880 -0.686764 0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>1.050204 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>cable_8_7_BlendBone</identifier>
+													<transform>
+														<row0>-0.561202 -0.827679 -0.000000</row0>
+														<row1>-0.827679 0.561202 -0.000000</row1>
+														<row2>-0.000000 0.000000 1.000000</row2>
+														<row3>-11.460738 -19.375000 -0.887387</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>cable_8_6_BlendBone</identifier>
+												<transform>
+													<row0>-0.216210 0.976347 -0.000000</row0>
+													<row1>0.976347 0.216210 -0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>-5.162279 21.636642 -0.887387</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>cable_8_5_BlendBone</identifier>
+											<transform>
+												<row0>-0.541020 0.841010 -0.000000</row0>
+												<row1>0.841010 0.541020 -0.000000</row1>
+												<row2>0.000000 0.000000 1.000000</row2>
+												<row3>-11.473498 18.508984 -0.887387</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>cable_8_4_BlendBone</identifier>
+										<transform>
+											<row0>-0.796229 0.604995 -0.000000</row0>
+											<row1>0.604995 0.796229 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>-16.171282 13.463093 -0.887387</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>cable_8_3_BlendBone</identifier>
+									<transform>
+										<row0>-0.992408 0.122990 -0.000000</row0>
+										<row1>0.122990 0.992408 -0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>-19.665920 3.514434 -0.887387</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>cable_8_2_BlendBone</identifier>
+								<transform>
+									<row0>-0.854975 -0.518669 -0.000000</row0>
+									<row1>-0.518669 0.854975 -0.000000</row1>
+									<row2>-0.000000 0.000000 1.000000</row2>
+									<row3>-16.531820 -9.432841 -0.887387</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>cable_8_1_BlendBone</identifier>
+							<transform>
+								<row0>-0.533753 -0.845640 -0.000000</row0>
+								<row1>-0.845640 0.533753 -0.000000</row1>
+								<row2>-0.000000 0.000000 1.000000</row2>
+								<row3>-9.459382 -15.817790 -0.887387</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>cable_8_0_BlendBone</identifier>
+						<transform>
+							<row0>-0.203824 -0.979008 -0.000000</row0>
+							<row1>-0.979008 0.203824 -0.000000</row1>
+							<row2>-0.000000 -0.000000 1.000000</row2>
+							<row3>-2.319468 -18.128759 -0.887387</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>crane_cart</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 2.309563 0.000000</row3>
+					</transform>
+					<node>
+						<identifier>hook</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.179268 -7.441061 -0.476870</row3>
+						</transform>
+						<node>
+							<identifier>hook_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.179268 3.687927 0.476870</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>crane_cart_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -3.753134 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>up_wheel_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.859899 2.892462 -0.610612</row3>
+					</transform>
+					<node>
+						<identifier>up_wheel_1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.859899 -4.336032 0.610612</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>up_wheel_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.468336 2.741344 -0.693266</row3>
+					</transform>
+					<node>
+						<identifier>up_wheel_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.468336 -4.184915 0.693266</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>wheel_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-28.882792 0.113722 2.384687</row3>
+					</transform>
+					<node>
+						<identifier>wheel_1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>28.882792 -1.557292 -2.384687</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>wheel_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>28.834629 0.113722 2.384687</row3>
+					</transform>
+					<node>
+						<identifier>wheel_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-28.834629 -1.557292 -2.384687</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>crane_main_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -1.443571 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>ropes</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.179268 -4.893857 -0.476870</row3>
+				</transform>
+				<node>
+					<identifier>rope_1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-1.089064 -2.090350 0.024417</row3>
+					</transform>
+					<node>
+						<identifier>rope_1_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.909795 6.984207 0.452453</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>rope_2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.223957 -2.119507 0.967430</row3>
+					</transform>
+					<node>
+						<identifier>rope_2_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.403225 7.013363 -0.490560</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>rope_3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>1.038752 -2.106994 -0.006935</row3>
+					</transform>
+					<node>
+						<identifier>rope_3_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-1.218020 7.000851 0.483805</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>rope_4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>-0.305009 -2.088604 -1.058490</row3>
+					</transform>
+					<node>
+						<identifier>rope_4_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.125741 6.982461 1.535360</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>ropes_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.179268 4.893857 0.476870</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Root_BlendBone</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 -1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>crane_main_BlendBone</node>
+		<node>wheel_2_BlendBone</node>
+		<node>up_wheel_1_BlendBone</node>
+		<node>crane_cart_BlendBone</node>
+		<node>up_wheel_2_BlendBone</node>
+		<node>wheel_1_BlendBone</node>
+		<node>hook_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>106</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_AM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_057_OverheadCrane/hv4_057_OverheadCrane_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_057_OverheadCrane/hv4_057_OverheadCrane_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Rust_03_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.450000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.300000 0.500000 0.680000 0.540000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>1.000000 0.992157 0.921569 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.749020 0.694118 0.650980 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>0.941176 0.898039 0.741176 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_01_Painted_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.006098 -0.410222 0.580719</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>cable_2_2_BlendBone</node>
+		<node>cable_2_3_BlendBone</node>
+		<node>cable_2_1_BlendBone</node>
+		<node>cable_2_4_BlendBone</node>
+		<node>cable_2_5_BlendBone</node>
+		<node>cable_2_6_BlendBone</node>
+		<node>cable_2_7_BlendBone</node>
+		<node>cable_2_8_BlendBone</node>
+		<geometry>
+			<vertices>s1Shape_split_1.vertices</vertices>
+			<stream>s1Shape_split_1.uv2</stream>
+			<primitive>s1Shape_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Clean_02_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_057_OverheadCrane/hv4_057_OverheadCrane_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_057_OverheadCrane/hv4_057_OverheadCrane_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.450000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.300000 0.700000 0.100000 0.560000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.819608 0.819608 0.819608 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.235294 0.235294 0.235294 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>1.000000 0.996078 0.898039 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Clean_02_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Clean_02_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-3.900658 0.091663 -0.001609</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>rope_3_BlendBone</node>
+		<node>ropes_BlendBone</node>
+		<node>rope_4_BlendBone</node>
+		<node>crane_main_BlendBone</node>
+		<node>cable_7_9_BlendBone</node>
+		<node>cable_7_0_BlendBone</node>
+		<node>cable_8_7_BlendBone</node>
+		<node>cable_1_0_BlendBone</node>
+		<node>cable_3_8_BlendBone</node>
+		<node>cable_3_7_BlendBone</node>
+		<node>cable_3_0_BlendBone</node>
+		<node>cable_6_0_BlendBone</node>
+		<node>cable_2_8_BlendBone</node>
+		<node>wheel_2_BlendBone</node>
+		<node>up_wheel_1_BlendBone</node>
+		<node>crane_cart_BlendBone</node>
+		<node>hook_BlendBone</node>
+		<node>rope_2_BlendBone</node>
+		<node>rope_1_BlendBone</node>
+		<node>cable_7_8_BlendBone</node>
+		<node>cable_7_7_BlendBone</node>
+		<node>cable_7_6_BlendBone</node>
+		<node>cable_7_5_BlendBone</node>
+		<node>cable_7_4_BlendBone</node>
+		<node>cable_7_3_BlendBone</node>
+		<node>cable_7_2_BlendBone</node>
+		<node>cable_7_1_BlendBone</node>
+		<node>cable_8_0_BlendBone</node>
+		<node>wheel_1_BlendBone</node>
+		<node>up_wheel_2_BlendBone</node>
+		<node>cable_6_8_BlendBone</node>
+		<node>cable_5_10_BlendBone</node>
+		<node>cable_5_8_BlendBone</node>
+		<node>cable_5_7_BlendBone</node>
+		<node>cable_5_6_BlendBone</node>
+		<node>cable_5_5_BlendBone</node>
+		<node>cable_5_4_BlendBone</node>
+		<node>cable_5_3_BlendBone</node>
+		<node>cable_5_2_BlendBone</node>
+		<node>cable_5_1_BlendBone</node>
+		<node>cable_5_0_BlendBone</node>
+		<node>cable_1_10_BlendBone</node>
+		<node>cable_1_9_BlendBone</node>
+		<node>cable_1_8_BlendBone</node>
+		<node>cable_1_7_BlendBone</node>
+		<node>cable_1_6_BlendBone</node>
+		<node>cable_1_5_BlendBone</node>
+		<node>cable_1_4_BlendBone</node>
+		<node>cable_1_3_BlendBone</node>
+		<node>cable_1_2_BlendBone</node>
+		<node>cable_1_1_BlendBone</node>
+		<node>cable_8_1_BlendBone</node>
+		<node>cable_8_2_BlendBone</node>
+		<node>cable_8_3_BlendBone</node>
+		<node>cable_8_4_BlendBone</node>
+		<node>cable_8_5_BlendBone</node>
+		<node>cable_8_6_BlendBone</node>
+		<node>cable_3_5_BlendBone</node>
+		<node>cable_3_6_BlendBone</node>
+		<node>cable_3_4_BlendBone</node>
+		<node>cable_3_3_BlendBone</node>
+		<node>cable_3_2_BlendBone</node>
+		<node>cable_3_1_BlendBone</node>
+		<node>cable_4_11_BlendBone</node>
+		<node>cable_4_10_BlendBone</node>
+		<node>cable_4_9_BlendBone</node>
+		<node>cable_4_8_BlendBone</node>
+		<node>cable_4_7_BlendBone</node>
+		<node>cable_4_6_BlendBone</node>
+		<node>cable_4_5_BlendBone</node>
+		<node>cable_4_4_BlendBone</node>
+		<node>cable_4_3_BlendBone</node>
+		<node>cable_4_2_BlendBone</node>
+		<node>cable_4_1_BlendBone</node>
+		<node>cable_6_7_BlendBone</node>
+		<node>cable_6_6_BlendBone</node>
+		<node>cable_6_5_BlendBone</node>
+		<node>cable_6_4_BlendBone</node>
+		<node>cable_6_3_BlendBone</node>
+		<node>cable_6_2_BlendBone</node>
+		<node>cable_6_1_BlendBone</node>
+		<node>cable_2_0_BlendBone</node>
+		<node>cable_2_1_BlendBone</node>
+		<node>cable_2_2_BlendBone</node>
+		<node>cable_2_3_BlendBone</node>
+		<geometry>
+			<vertices>s1Shape_split_0.vertices</vertices>
+			<stream>s1Shape_split_0.uv2</stream>
+			<primitive>s1Shape_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tiled_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Clean_02_1024_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_057_OverheadCrane/hv4_057_OverheadCrane_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_057_OverheadCrane/hv4_057_OverheadCrane_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_CastleRuins_04_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.000000 0.430000 0.380000 0.450000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.300000 0.700000 0.100000 0.560000</Vector4>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.819608 0.819608 0.819608 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.235294 0.235294 0.235294 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile2Tint
+						<Vector4>1.000000 0.996078 0.898039 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Clean_02_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_Smooth_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Clean_02_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Metal_Painted_01_1024_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.002660 -0.947004 0.067036</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-40.000000 0.000000 -70.000000</min>
+		<max>40.000000 17.000000 10.000000</max>
+	</boundingBox>
+	<geometrySize>383814</geometrySize>
+</root>

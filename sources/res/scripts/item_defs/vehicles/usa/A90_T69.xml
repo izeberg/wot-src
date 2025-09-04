@@ -139,7 +139,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>17332</weight>
-		<maxHealth>1080</maxHealth>
+		<maxHealth>1200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1711,14 +1711,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_T69>
-			<userString>#usa_vehicles:Chassis_T69</userString>
+		<Chassis_A90_T69>
+			<userString>#usa_vehicles:Chassis_A90_T69</userString>
 			<tags/>
 			<level>7</level>
 			<price>16300</price>
 			<unlocks>
 				<chassis>
-					Chassis_T69_2
+					Chassis_A90_T69_2
 					<cost>14800</cost>
 				</chassis>
 			</unlocks>
@@ -1727,14 +1727,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>34540</maxLoad>
 			<terrainResistance>
-				1.2 1.4 2.3
+				1.1 1.2 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>31500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>48</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -3074,9 +3073,9 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T69>
-		<Chassis_T69_2>
-			<userString>#usa_vehicles:Chassis_T69_2</userString>
+		</Chassis_A90_T69>
+		<Chassis_A90_T69_2>
+			<userString>#usa_vehicles:Chassis_A90_T69_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>33000</price>
@@ -3085,14 +3084,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>36560</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>42</rotationSpeed>
+			<rotationSpeed>53</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.20
@@ -4432,12 +4430,12 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T69_2>
+		</Chassis_A90_T69_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_T69>
-			<userString>#usa_vehicles:Turret_1_T69</userString>
-			<tags/>
+		<Turret_1_A90_T69>
+			<userString>#usa_vehicles:Turret_1_A90_T69</userString>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>46000</price>
 			<armor>
@@ -4481,7 +4479,7 @@
 			</armor>
 			<primaryArmor>armor_14 armor_15 armor_16</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>270</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>38</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -4506,7 +4504,7 @@
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<gun>
-							_90mm_Gun_T178
+							_90mm_Gun_T178_T69
 							<cost>18000</cost>
 						</gun>
 					</unlocks>
@@ -4558,6 +4556,7 @@
 							38.1
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_15>
 						<armor_16>
 							101.6
@@ -4566,10 +4565,10 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>16</reloadTime>
+					<reloadTime>15</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -4584,13 +4583,10 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<clip>
-						<count>5</count>
-						<rate>33</rate>
+						<count>4</count>
+						<rate>30</rate>
 					</clip>
 					<pitchLimits>
 						<minPitch>0 -14 1 -14</minPitch>
@@ -5461,7 +5457,7 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_76mm_Gun_T185>
-				<_90mm_Gun_T178>
+				<_90mm_Gun_T178_T69>
 					shared
 					<maxAmmo>40</maxAmmo>
 					<unlocks>
@@ -5518,6 +5514,7 @@
 							38.1
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_15>
 						<armor_16>
 							101.6
@@ -6414,7 +6411,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_Gun_T178>
+				</_90mm_Gun_T178_T69>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A90_T69/normal/lod0/Turret_01.model</undamaged>
@@ -6788,102 +6785,46 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</Turret_1_T69>
+		</Turret_1_A90_T69>
 	</turrets0>
 	<engines>
-		<Wright_Continental_R-975C4>
+		<Continental_AOS_895_3>
 			shared
 			<unlocks>
 				<engine>
-					Continental_AOS-895-3
-					<cost>9500</cost>
-				</engine>
-			</unlocks>
-		</Wright_Continental_R-975C4>
-		<Continental_AOS-895-3>
-			shared
-			<unlocks>
-				<engine>
-					Continental_AOSI-895-5
+					Continental_AOSI_895_5
 					<cost>18000</cost>
 				</engine>
 			</unlocks>
-		</Continental_AOS-895-3>
-		<Continental_AOSI-895-5>shared</Continental_AOSI-895-5>
+		</Continental_AOS_895_3>
+		<Continental_AOSI_895_5>shared</Continental_AOSI_895_5>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<SCR_610>
-			shared
-			<unlocks>
-				<radio>
-					SCR_619
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_610>
 		<SCR_619>shared</SCR_619>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Wright_Continental_R-975C4>
-					<smplEnginePower>
-						486.3493
-						<!--BW_String-->
-					</smplEnginePower>
+				<Continental_AOS_895_3>
+					<smplEnginePower>550</smplEnginePower>
 					<smplFwMaxSpeed>
 						51.5
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Wright_Continental_R-975C4>
-				<Continental_AOS-895-3>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+				</Continental_AOS_895_3>
+				<Continental_AOSI_895_5>
+					<smplEnginePower>600</smplEnginePower>
 					<smplFwMaxSpeed>
 						51.5
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Continental_AOS-895-3>
-				<Continental_AOSI-895-5>
-					<smplEnginePower>
-						581.5046
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>
-						51.5
-						<!--BW_String-->
-					</smplFwMaxSpeed>
-				</Continental_AOSI-895-5>
+				</Continental_AOSI_895_5>
 			</engines>
 			<chassis>
-				<Chassis_T69>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.18515
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_T69>
-				<Chassis_T69_2>
+				<Chassis_A90_T69>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6904,18 +6845,40 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_T69_2>
+				</Chassis_A90_T69>
+				<Chassis_A90_T69_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.16905
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A90_T69_2>
 			</chassis>
 		</detailed>
 	</physics>
 	<clientAdjustmentFactors>
 		<guns>
-			<_90mm_Gun_T178>
+			<_90mm_Gun_T178_T69>
 				<delta>
 					1.1093117
 					<!--BW_String-->
 				</delta>
-			</_90mm_Gun_T178>
+			</_90mm_Gun_T178_T69>
 		</guns>
 		<armour>
 			1.030878528

@@ -1,0 +1,48 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "mode/last_stand/battlePassTooltip/body"
+msgstr "在{whiteSpanish_open}星火燎原:试验场{whiteSpanish_close}中完成特定任务，即可获得战斗通行证点数。"
+
+msgid "mode/last_stand/battlePassTooltip/header"
+msgstr "战斗通行证点数"
+
+msgid "mode/last_stand/calendar"
+msgstr "活动将持续%(date)s。"
+
+msgid "mode/last_stand/calendarDay"
+msgstr "距活动结束还有%(date)s。"
+
+msgid "mode/last_stand/description"
+msgstr ""
+"对战一波又一波的敌人。\n"
+"驾驶VIII级坦克作战。"
+
+msgid "mode/last_stand/performance/highRisk/description"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "mode/last_stand/performance/highRisk/header"
+msgstr "低性能"
+
+msgid "mode/last_stand/performance/highRisk/headerIcon"
+msgstr "%(icon)低性能"
+
+msgid "mode/last_stand/performance/mediumRisk/description"
+msgstr ""
+"该模式需要较高的计算机性能。\n"
+"您将会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "mode/last_stand/performance/mediumRisk/header"
+msgstr "性能降低"
+
+msgid "mode/last_stand/performance/mediumRisk/headerIcon"
+msgstr "%(icon)性能降低"

@@ -40,16 +40,6 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var ppShowLevels:SettingsControlProp = null;
       
-      public var gameplay_ctf:SettingsControlProp = null;
-      
-      public var gameplay_domination:SettingsControlProp = null;
-      
-      public var gameplay_assault:SettingsControlProp = null;
-      
-      public var gameplay_epicStandard:SettingsControlProp = null;
-      
-      public var gameplay_epicDomination:SettingsControlProp = null;
-      
       public var gameplay_devMaps:SettingsControlProp = null;
       
       public var minimapAlpha:SettingsControlProp = null;
@@ -172,11 +162,6 @@ package net.wg.gui.lobby.settings.vo.config
             "sniperModeByShift":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "increasedZoom":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "ppShowLevels":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "gameplay_ctf":createControl(ControlsFactory.TYPE_CHECKBOX).readOnly(true).build(),
-            "gameplay_domination":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "gameplay_assault":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "gameplay_epicStandard":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
-            "gameplay_epicDomination":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "gameplay_devMaps":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "minimapAlpha":createControl(ControlsFactory.TYPE_SLIDER).build(),
             "postmortemMode":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
@@ -261,16 +246,6 @@ package net.wg.gui.lobby.settings.vo.config
          this.disableBattleChat = null;
          this.ppShowLevels.dispose();
          this.ppShowLevels = null;
-         this.gameplay_ctf.dispose();
-         this.gameplay_ctf = null;
-         this.gameplay_domination.dispose();
-         this.gameplay_domination = null;
-         this.gameplay_assault.dispose();
-         this.gameplay_assault = null;
-         this.gameplay_epicStandard.dispose();
-         this.gameplay_epicStandard = null;
-         this.gameplay_epicDomination.dispose();
-         this.gameplay_epicDomination = null;
          this.gameplay_devMaps.dispose();
          this.gameplay_devMaps = null;
          this.minimapAlpha.dispose();

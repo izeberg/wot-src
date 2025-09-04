@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/normal/lod2/Gun_03</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.526891 -1.766790 -1.876370</min>
+		<max>0.586082 0.553725 7.057460</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/normal/lod1/Gun_03</nodefullVisual>
+</root>

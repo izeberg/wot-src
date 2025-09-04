@@ -2,6 +2,7 @@ package net.wg.gui.lobby.window
 {
    import flash.display.Graphics;
    import flash.display.MovieClip;
+   import flash.geom.Rectangle;
    import net.wg.data.Aliases;
    import net.wg.gui.components.controls.SoundButtonEx;
    import net.wg.gui.components.windows.Window;
@@ -108,7 +109,7 @@ package net.wg.gui.lobby.window
             {
                this.tabNavigator.mask = this._maskObj;
             }
-            this.tabNavigator.setAvailableSize(WINDOW_WIDTH,_loc2_);
+            this.tabNavigator.setAvailableSize(WINDOW_WIDTH,_loc2_,new Rectangle());
          }
          if(isInvalid(ADD_FRIEND_AVAILABLE))
          {

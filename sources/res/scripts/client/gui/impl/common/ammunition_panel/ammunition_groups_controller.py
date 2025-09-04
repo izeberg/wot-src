@@ -93,6 +93,9 @@ class AmmunitionGroupsController(object):
 
         return
 
+    def getCurrentSection(self):
+        return self._controller.getCurrentSection()
+
     def getGroupIdBySection(self, sectionName):
         for group in self._getGroups():
             if sectionName in group.sections:

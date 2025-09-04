@@ -7,10 +7,10 @@ package net.wg.gui.lobby.missions.components
    import flash.filters.DropShadowFilter;
    import net.wg.gui.components.controls.SoundListItemRenderer;
    import net.wg.gui.components.interfaces.IReusableListItemRenderer;
-   import net.wg.gui.lobby.missions.data.MissionsPackVO;
-   import net.wg.gui.lobby.missions.event.MissionHeaderEvent;
    import net.wg.gui.lobby.missions.interfaces.IMissionPackBody;
    import net.wg.gui.lobby.missions.interfaces.IMissionPackHeader;
+   import net.wg.gui.lobby.userMissions.data.MissionsPackVO;
+   import net.wg.gui.lobby.userMissions.event.MissionHeaderEvent;
    import net.wg.infrastructure.interfaces.IUIComponentEx;
    import net.wg.utils.IClassFactory;
    import scaleform.clik.constants.InvalidationType;

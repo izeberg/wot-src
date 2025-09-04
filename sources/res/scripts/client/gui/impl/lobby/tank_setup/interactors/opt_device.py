@@ -17,6 +17,10 @@ class BaseOptDeviceInteractor(BaseInteractor):
     def getName(self):
         return TankSetupConstants.OPT_DEVICES
 
+    @property
+    def affectsTTC(self):
+        return True
+
     def getInstalledLayout(self):
         return self.getItem().optDevices.installed
 
@@ -125,7 +129,7 @@ class OptDeviceInteractor(BaseOptDeviceInteractor):
             self.setItemInCurrentLayout(slotID, optDevice)
 
         self.onSlotAction(actionType=BaseSetupModel.REVERT_SLOT_ACTION)
-        self.itemUpdated()
+        self.onRevert()
         return
 
     @adisp.adisp_process
@@ -197,7 +201,7 @@ class OptDeviceInteractor(BaseOptDeviceInteractor):
 
     def __canInstall--- This code section failed: ---
 
- L. 250         0  LOAD_FAST             1  'item'
+ L. 254         0  LOAD_FAST             1  'item'
                 3  LOAD_ATTR             0  'isHidden'
                 6  POP_JUMP_IF_FALSE    81  'to 81'
                 9  LOAD_FAST             1  'item'
@@ -206,11 +210,11 @@ class OptDeviceInteractor(BaseOptDeviceInteractor):
              16_0  COME_FROM             6  '6'
                16  POP_JUMP_IF_FALSE    81  'to 81'
 
- L. 251        19  LOAD_FAST             1  'item'
+ L. 255        19  LOAD_FAST             1  'item'
                22  LOAD_ATTR             2  'isInInventory'
                25  STORE_FAST            3  'isInInventory'
 
- L. 253        28  LOAD_FAST             2  'vehicle'
+ L. 257        28  LOAD_FAST             2  'vehicle'
                31  LOAD_ATTR             3  'isPostProgressionExists'
                34  POP_JUMP_IF_FALSE    77  'to 77'
                37  LOAD_FAST             3  'isInInventory'
@@ -233,7 +237,7 @@ class OptDeviceInteractor(BaseOptDeviceInteractor):
                80  RETURN_VALUE     
              81_0  COME_FROM            16  '16'
 
- L. 254        81  LOAD_GLOBAL           8  'True'
+ L. 258        81  LOAD_GLOBAL           8  'True'
                84  RETURN_VALUE     
                -1  RETURN_LAST      
 

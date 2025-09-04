@@ -21,6 +21,8 @@ package
       
       public static const KEYBOARD_KEY_SPACE:String = "#controls:keyboard/key_space";
       
+      public static const KEYBOARD_UPPERCASE_KEY_SPACE:String = "#controls:keyboard/uppercase_key_space";
+      
       public static const KEYBOARD_KEY_UPARROW:String = "#controls:keyboard/key_uparrow";
       
       public static const KEYBOARD_KEY_DOWNARROW:String = "#controls:keyboard/key_downarrow";

@@ -1860,7 +1860,7 @@
 	</hull>
 	<chassis>
 		<Mausketten_StoryMode>
-			<userString>#germany_vehicles:Mausketten</userString>
+			<userString>#germany_vehicles:Chassis_G42_Maus</userString>
 			<tags/>
 			<level>10</level>
 			<price>82500</price>
@@ -1870,7 +1870,6 @@
 				<rightTrack>50</rightTrack>
 			</armor>
 			<weight>37250</weight>
-			<maxLoad>192900</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.1
 				<!--BW_String-->
@@ -4390,7 +4389,7 @@
 	</chassis>
 	<turrets0>
 		<Mausturm_StoryMode>
-			<userString>#germany_vehicles:Mausturm</userString>
+			<userString>#germany_vehicles:Turret_1_G42_Maus</userString>
 			<tags/>
 			<level>10</level>
 			<price>66000</price>

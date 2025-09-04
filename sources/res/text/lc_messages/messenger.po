@@ -1532,6 +1532,12 @@ msgstr "胜利"
 msgid "serviceChannelMessages/Financial/add"
 msgstr "已添加"
 
+msgid "serviceChannelMessages/PersonalMission3Quest/affirmative"
+msgstr "收到！"
+
+msgid "serviceChannelMessages/PersonalMission3Quest/goToOperation"
+msgstr "前往作战行动"
+
 msgid "serviceChannelMessages/achievementReceived/message"
 msgstr "服役记录"
 
@@ -1704,13 +1710,15 @@ msgid "serviceChannelMessages/battleMatters/awards/tokenAward/body/vehicle"
 msgstr "租用坦克：%(vehName)s"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/body"
-msgstr "返回训练任务，获取实用奖励。"
+msgstr "完成训练任务，获取坦克和实用资源。"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/button"
-msgstr "前往当前任务"
+msgstr "前往新兵成长计划"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/title"
-msgstr "新兵成长计划"
+msgstr ""
+"新兵\n"
+"指南"
 
 msgid "serviceChannelMessages/battleMatters/token"
 msgstr "新兵令牌"
@@ -1976,6 +1984,29 @@ msgstr "收到全局经验"
 msgid "serviceChannelMessages/battleResults/gold"
 msgstr "已获得金币"
 
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/description"
+msgstr "加入\"%(campaignName)s\"的行列后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/header"
+msgstr "恭喜！"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/1/description"
+msgstr ""
+"在\"%(campaignName)s\"个人任务中，成功完成\"%(categoryName)s\"系列的45个任务后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/2/description"
+msgstr ""
+"在\"%(campaignName)s\"个人任务中，成功完成\"%(categoryName)s\"系列的30个任务后，您获得了\"%(nameMedal)s\"勋章。"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/3/description"
+msgstr ""
+"在\"%(campaignName)s\"个人任务中，成功完成\"%(categoryName)s\"系列的15个任务后，您获得了\"%(nameMedal)s\"勋章。"
+
 msgid "serviceChannelMessages/battleResults/penaltyForDamageAllies"
 msgstr "因TK队友已被扣除:%s"
 
@@ -1993,6 +2024,11 @@ msgid "serviceChannelMessages/battleResults/personalMissions/2"
 msgstr ""
 "恭喜！\n"
 "已成功完成\"第二战线\"个人任务，奖励如下"
+
+msgid "serviceChannelMessages/battleResults/personalMissions/3"
+msgstr ""
+"+Congratulations!\n"
+"For successful completion of the Sector 3 campaign personal missions you have received the following rewards+"
 
 msgid "serviceChannelMessages/battleResults/personalMissions/both"
 msgstr ""
@@ -2046,6 +2082,9 @@ msgstr "已添加"
 
 msgid "serviceChannelMessages/battleResults/quests/items/name"
 msgstr "%(name)s (x%(count)s)"
+
+msgid "serviceChannelMessages/battleResults/quests/personal_missions_points"
+msgstr "个人任务点数: %(count)s"
 
 msgid "serviceChannelMessages/battleResults/quests/premium"
 msgstr "添加高级账号天数"
@@ -2260,6 +2299,10 @@ msgstr "关闭"
 
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "您退出或被踢出军团:"
+
+msgid ""
+"serviceChannelMessages/commendations/battleResults/commendationsReceived"
+msgstr "获得的点赞数量"
 
 msgid "serviceChannelMessages/commendations/liveTags/disable"
 msgstr "实时标签暂不可用"
@@ -2822,6 +2865,9 @@ msgstr "已增加周年纪念币"
 msgid "serviceChannelMessages/invoiceReceived/eventCoinDebited"
 msgstr "已移除周年纪念币"
 
+msgid "serviceChannelMessages/invoiceReceived/expirableBoosters"
+msgstr "限时个人储备"
+
 msgid "serviceChannelMessages/invoiceReceived/freeAwardListsAccrued"
 msgstr "通行令已增加"
 
@@ -3213,6 +3259,15 @@ msgstr "%(vehName)s"
 
 msgid "serviceChannelMessages/prestige/lvlUp/title"
 msgstr "获得精英等级"
+
+msgid "serviceChannelMessages/prestigeMilestone/error"
+msgstr "领取精英奖励时发生错误。"
+
+msgid "serviceChannelMessages/prestigeMilestone/text"
+msgstr "达到精英等级%(lvl)s，已获得\"%(rewardName)s\"%(typeReward)s。"
+
+msgid "serviceChannelMessages/prestigeMilestone/title"
+msgstr "已获得精英奖励"
 
 msgid "serviceChannelMessages/priorityMessageTitle"
 msgstr "注意！"
@@ -3852,25 +3907,6 @@ msgstr "请从列表中选择一辆坦克进行租用。"
 
 msgid "serviceChannelMessages/wotPlus/rental/noTank/title"
 msgstr "没有选择租用坦克"
-
-msgid ""
-"serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/additionalBonuses"
-msgstr "• 选择应用加成来获得3倍经验"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/badges"
-msgstr "• 为您的昵称增光添彩"
-
-msgid ""
-"serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/battleBonuses"
-msgstr "• 每场战斗的收益提高%(creditsFactor)d%%"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/body"
-msgstr ""
-"您从现在开始可以享受: \n"
-"%(bonuses)s"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/title"
-msgstr "新的坦克世界Plus福利现已推出！"
 
 msgid "serviceChannelMessages/wotPlus/tankRental/isPending/text"
 msgstr "%(vehicle)s不久后将发放至您的游戏账号。"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from debug_utils import LOG_ERROR
 from gui.Scaleform import getNationsFilterAssetPath
 from gui.Scaleform.daapi.view.lobby.vehicle_compare.formatters import packHeaderColumnData

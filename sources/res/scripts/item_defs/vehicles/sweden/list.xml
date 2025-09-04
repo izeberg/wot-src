@@ -228,6 +228,16 @@
 		<tags>mediumTank role_MT_universal HD siegeMode autoSiege mediumTank3 improvedVentilation_class2_user tankRammer_class1_user aimingStabilizer_class1_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
 		<level>10</level>
 	</S28_UDES_15_16>
+	<S36_Strv_107_12>
+		<id>23</id>
+		<userString>#sweden_vehicles:S36_Strv_107_12</userString>
+		<shortUserString>#sweden_vehicles:S36_Strv_107_12_short</shortUserString>
+		<description>#sweden_vehicles:S36_Strv_107_12_descr</description>
+		<longDescriptionSpecial>#sweden_vehicles:S36_Strv_107_12_long_special</longDescriptionSpecial>
+		<price>7400000</price>
+		<tags>AT-SPG role_ATSPG_sniper HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user earn_crystals</tags>
+		<level>11</level>
+	</S36_Strv_107_12>
 	<S34_Lago_M38>
 		<id>198</id>
 		<userString>#sweden_vehicles:S34_Lago_M38</userString>
@@ -251,7 +261,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S33_Latt_Stridsfordon_120_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S33_Latt_Stridsfordon_120_long_special</longDescriptionSpecial>
 		<price>
-			11950
+			10450
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -266,7 +276,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S22_Strv_S1_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S22_Strv_S1_long_special</longDescriptionSpecial>
 		<price>
-			9800
+			8400
 			<gold/>
 		</price>
 		<tags>AT-SPG role_ATSPG_sniper HD siegeMode hydraulicChassis mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
@@ -280,7 +290,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S23_Strv_81_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S23_Strv_81_long_special</longDescriptionSpecial>
 		<price>
-			8700
+			7800
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -295,7 +305,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S23_Strv_81_sabaton_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S23_Strv_81_sabaton_long_special</longDescriptionSpecial>
 		<price>
-			8700
+			7800
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -310,7 +320,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S25_EMIL_51_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S25_EMIL_51_long_special</longDescriptionSpecial>
 		<price>
-			9200
+			8400
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -325,7 +335,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S32_Bofors_Tornvagn_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S32_Bofors_Tornvagn_long_special</longDescriptionSpecial>
 		<price>
-			9650
+			8600
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -340,7 +350,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S26_Lansen_C_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S26_Lansen_C_long_special</longDescriptionSpecial>
 		<price>
-			6700
+			6600
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -366,7 +376,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S30_UDES_03_Alt_3_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S30_UDES_03_Alt_3_long_special</longDescriptionSpecial>
 		<price>
-			11600
+			10200
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
@@ -397,7 +407,7 @@
 		<shortDescriptionSpecial>#sweden_vehicles:S31_Strv_K_short_special</shortDescriptionSpecial>
 		<longDescriptionSpecial>#sweden_vehicles:S31_Strv_K_long_special</longDescriptionSpecial>
 		<price>
-			12700
+			10900
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>

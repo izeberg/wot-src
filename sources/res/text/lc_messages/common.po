@@ -43,6 +43,9 @@ msgstr "\""
 msgid "common/percent"
 msgstr "%"
 
+msgid "common/semi_dash"
+msgstr "–"
+
 msgid "common/slash"
 msgstr "/"
 
@@ -76,14 +79,26 @@ msgstr "查找"
 msgid "multiplier"
 msgstr "x"
 
+msgid "multiplierSmall"
+msgstr "x"
+
+msgid "numberAbbrev"
+msgstr "{{value}}千"
+
 msgid "percentValue"
 msgstr "{value}%"
+
+msgid "plus"
+msgstr "+"
 
 msgid "plusPercentValue"
 msgstr "+{value}%"
 
 msgid "plusValue"
 msgstr "+{value}"
+
+msgid "plusValueWithSpace"
+msgstr "+ {{value}}"
 
 msgid "progress"
 msgstr "{current}/{total}"
@@ -102,6 +117,18 @@ msgstr "今天于"
 
 msgid "relativeDateTime/yesterday"
 msgstr "昨天于"
+
+msgid "timer/days"
+msgstr "{days}天"
+
+msgid "timer/hours"
+msgstr "{hours}时"
+
+msgid "timer/minutes"
+msgstr "{minutes}分"
+
+msgid "valuePlus"
+msgstr "{{value}}+"
 
 msgid "xValue"
 msgstr "×{value}"

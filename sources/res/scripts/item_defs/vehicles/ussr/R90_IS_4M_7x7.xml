@@ -1270,7 +1270,7 @@
 	</hull>
 	<chassis>
 		<IS-4_7x7>
-			<userString>#ussr_vehicles:Chassis_IS4</userString>
+			<userString>#ussr_vehicles:Chassis_R90_IS_4M</userString>
 			<tags/>
 			<level>10</level>
 			<price>61350</price>
@@ -1280,7 +1280,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>66300</maxLoad>
 			<terrainResistance>
 				1.2 1.6 2.7
 				<!--BW_String-->
@@ -2827,7 +2826,7 @@
 	</chassis>
 	<turrets0>
 		<Turret_710_mod_5_7x7>
-			<userString>#ussr_vehicles:Turret_710_mod_5</userString>
+			<userString>#ussr_vehicles:Turret_1_R90_IS_4M</userString>
 			<tags/>
 			<level>10</level>
 			<price>61100</price>

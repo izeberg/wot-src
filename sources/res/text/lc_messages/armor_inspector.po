@@ -1,0 +1,142 @@
+msgid ""
+msgstr ""
+
+msgid "armorValues/title/main"
+msgstr "主装甲"
+
+msgid "armorValues/title/spaced"
+msgstr "间隙装甲"
+
+msgid "armorValues/title/values"
+msgstr "(毫米)"
+
+msgid "explanatory/angle/description"
+msgstr "{t_2_Open}炮弹轨迹{t_2_Close}与装甲板法线之间的角度。"
+
+msgid "explanatory/angle/header"
+msgstr "入射角度"
+
+msgid "explanatory/effective/description"
+msgstr "根据炮弹入射角度{t_3_Open}计算后的装甲厚度{t_3_Close}。"
+
+msgid "explanatory/effective/header"
+msgstr "等效装甲"
+
+msgid "explanatory/guide"
+msgstr "欲知更多详情？请查看我们的视频指南。"
+
+msgid "explanatory/header"
+msgstr "图例"
+
+msgid "explanatory/linkButton"
+msgstr "掌握装甲"
+
+msgid "explanatory/nominal/description"
+msgstr "{t_1_Open}主装甲板或间隙装甲板{t_1_Close}的实际厚度。"
+
+msgid "explanatory/nominal/header"
+msgstr "垂直装甲"
+
+msgid "explanatory/note/description"
+msgstr ""
+"等效装甲仅受{t_4_Open}炮弹类型和口径{t_4_Close}的小幅影响。\n"
+" \n"
+"战斗中影响装甲穿透力的因素还有: {t_5_Open}弹道{t_5_Close}、{t_6_Open}目标距离{t_6_Close}、{t_7_Open}随机性{t_7_Close}和{t_8_Open}跳弹{t_8_Close}。"
+
+msgid "explanatory/note/header"
+msgstr "请注意"
+
+msgid "explanatory/tooltips/t_1/body"
+msgstr ""
+"只有当主装甲被击中并击穿时，坦克才会受到损伤。\n"
+"\n"
+"击中间隙装甲不会对坦克造成损伤，除非炮弹在此之后击中并击穿了主装甲。\n"
+"\n"
+"击中并击穿外部模块会直接损坏这些模块: 击中履带会使坦克无法移动，击中炮管会使其无法正常射击，击中观察设备则会降低坦克的观察范围。"
+
+msgid "explanatory/tooltips/t_2/body"
+msgstr ""
+"炮弹轨迹按炮弹从屏幕中心沿直线移动计算。\n"
+"\n"
+"入射角度不适用于外部模块(如履带和炮管)，其等效装甲等于垂直装甲。\n"
+"\n"
+"当弹着点存在多层装甲时，提示仅显示最外层装甲的入射角度。"
+
+msgid "explanatory/tooltips/t_3/body"
+msgstr ""
+"对于单层装甲，等效装甲是垂直装甲经过入射角度和炮弹转正效应计算后的结果。\n"
+"\n"
+"如果弹着点存在多层装甲，结果则是每层装甲的等效数值之和。\n"
+"\n"
+"炮弹转正效应会使AP炮弹的入射角度减少5度，APCR炮弹减少2度。\n"
+"\n"
+"其他类型的炮弹则没有转正效应。\n"
+"\n"
+"如果炮弹口径大于弹着点垂直装甲厚度的2倍，炮弹转正效应角度可能会进一步增加。"
+
+msgid "explanatory/tooltips/t_4/body"
+msgstr ""
+"在该窗口中，使用最小口径的AP炮弹来计算等效装甲。\n"
+"\n"
+"对于其他炮弹类型和口径，等效装甲数值可能会略有不同。"
+
+msgid "explanatory/tooltips/t_5/body"
+msgstr ""
+"真实的炮弹轨迹并非一条直线——由于重力的影响，炮弹轨迹会弯曲，影响入射角度。\n"
+"\n"
+"对于大多数坦克来说，这种影响可忽略不计，但对于炮弹速度较慢，或从远处开炮的坦克来说，影响可能会较为明显。\n"
+"\n"
+"炮弹轨迹对于自行火炮射击的影响尤其显著。"
+
+msgid "explanatory/tooltips/t_6/body"
+msgstr "AP和APCR炮弹的穿透力会随着距离增加而衰减。您可在这些炮弹的提示中查看详情。"
+
+msgid "explanatory/tooltips/t_7/body"
+msgstr ""
+"每次开火时，炮弹穿透力会在±25%范围内随机浮动。\n"
+"\n"
+"炮弹飞行方向会轻微随机偏移，因此会命中瞄准圈内的随机位置。"
+
+msgid "explanatory/tooltips/t_8/body"
+msgstr ""
+"对于AP和APCR炮弹，跳弹角度为70度，HEAT炮弹则为85度。\n"
+"\n"
+"HE炮弹不会跳弹。\n"
+"\n"
+"如果炮弹口径大于弹着点垂直装甲厚度的3倍，则不会跳弹(仅适用于AP和APCR炮弹)。"
+
+msgid "tooltip/angle/value"
+msgstr "{{value}}度"
+
+msgid "tooltip/armor/layer/multiple"
+msgstr "{{armor}}({{part}}x{{count}})"
+
+msgid "tooltip/armor/layer/single"
+msgstr "{{armor}}({{part}})"
+
+msgid "tooltip/armor/part/chassis"
+msgstr "悬挂装置"
+
+msgid "tooltip/armor/part/gun"
+msgstr "火炮"
+
+msgid "tooltip/armor/part/gunMask"
+msgstr "炮盾"
+
+msgid "tooltip/armor/part/hull"
+msgstr "车体"
+
+msgid "tooltip/armor/part/screen"
+msgstr "间隙装甲"
+
+msgid "tooltip/armor/part/surveying"
+msgstr "观察设备"
+
+msgid "tooltip/armor/part/turret"
+msgstr "炮塔"
+
+msgid "tooltip/armor/part/wheels"
+msgstr "车轮"
+
+msgid "tooltip/armor/value"
+msgstr "{{value}}毫米"

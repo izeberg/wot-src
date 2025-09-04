@@ -1,0 +1,380 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "LS_aoeDamageInstantShotReady"
+msgstr "高能射击已准备就绪。"
+
+msgid "LS_aoeDrainEnemyHpInstantShotReady"
+msgstr "噬魂攻击已准备就绪。"
+
+msgid "LS_aoeStunInstantShotReady"
+msgstr "震荡攻击已准备就绪。"
+
+msgid "LS_damageShieldReady"
+msgstr "能量护盾已准备就绪。"
+
+msgid "LS_doubleDamageReady"
+msgstr "双倍损伤已准备就绪。"
+
+msgid "LS_extraDamageSituationalReady"
+msgstr "幸运暴击已准备就绪。"
+
+msgid "LS_fastReloadReady"
+msgstr "火力全开已准备就绪。"
+
+msgid "LS_healSituationalReady"
+msgstr "斗志昂扬已准备就绪。"
+
+msgid "LS_invisibilityReady"
+msgstr "隐匿修复已准备就绪。"
+
+msgid "LS_nitroReady"
+msgstr "涡轮增压器已准备就绪。"
+
+msgid "LS_pickupSouls"
+msgstr "您已收集%(souls)s个銤元素"
+
+msgid "LS_selfRepairReady"
+msgstr "紧急维修已准备就绪。"
+
+msgid "LS_situationalNitroReady"
+msgstr "规避机动已准备就绪。"
+
+msgid "LS_teamRepairKitReady"
+msgstr "团体维修已准备就绪。"
+
+msgid "LS_teamRepairKitUsed"
+msgstr "%(player)s激活了团体维修。"
+
+msgid "LS_teamRepairKitUsedSelf"
+msgstr "已激活团体维修。"
+
+msgid "arena/marker/attention_to_camp"
+msgstr "注意区域: %(gridId)s"
+
+msgid "arena/marker/attention_to_magnus"
+msgstr "注意马格努斯！"
+
+msgid "arena/marker/defend_magnus"
+msgstr "保护马格努斯"
+
+msgid "arena/marker/move_to_camp"
+msgstr "正在驶往区域！"
+
+msgid "arena/marker/move_to_magnus"
+msgstr "正在驶往马格努斯！"
+
+msgid "arena/phase"
+msgstr "阶段%(current)s/%(total)s"
+
+msgid "arena/wave"
+msgstr "波次%(current)s/%(total)s"
+
+msgid "battleHint/bomber"
+msgstr "刺猬正在逼近！"
+
+msgid "battleHint/bomber_alpha"
+msgstr "阿尔法刺猬正在逼近！"
+
+msgid "battleHint/clearTheArea"
+msgstr "肃清该区域！"
+
+msgid "battleHint/convoyCloseToMagnus"
+msgstr "快！大块头正在逼近马格努斯！"
+
+msgid "battleHint/convoyDestroyedEnemiesLeft"
+msgstr ""
+"已击毁大块头！\n"
+"剩余敌方坦克: {num}"
+
+msgid "battleHint/destroyEnemies"
+msgstr "需要击毁敌方坦克数量: {num}"
+
+msgid "battleHint/enemiesFromAbove"
+msgstr "发现出生点！敌方坦克来袭！"
+
+msgid "battleHint/hunter"
+msgstr "追猎者正在逼近！"
+
+msgid "battleHint/lastWaveFinished"
+msgstr "已挡住这波攻击！"
+
+msgid "battleHint/leftToDestroy"
+msgstr "还需击毁敌方坦克数量:"
+
+msgid "battleHint/missing_squad"
+msgstr "迷失者小队正在逼近！"
+
+msgid "battleHint/newWave"
+msgstr "波次{current}/{total}"
+
+msgid "battleHint/stopConvoy"
+msgstr "阻止大块头！"
+
+msgid "battleHint/stopConvoyBeforeMagnus"
+msgstr ""
+"阻止大块头\n"
+"接近马格努斯！"
+
+msgid "battleHint/trapper"
+msgstr "击毁捕猎者即可终止能量攻击。"
+
+msgid "battleHint/turret"
+msgstr "疟蚊苏醒了！"
+
+msgid "battleHint/waveFinished"
+msgstr ""
+"已挡住这波攻击！\n"
+"重新集结，做好准备！"
+
+msgid "battleHint/waveFinishedRegroup"
+msgstr "重新集结，做好准备！"
+
+msgid "battleHint/waveReinforcements"
+msgstr "敌方增援已抵达！"
+
+msgid "common/close"
+msgstr "关闭"
+
+msgid "consumablesPanel/tooltip/durationTime"
+msgstr "持续时间: %(time)s秒"
+
+msgid "damageLog/personal_death_zone"
+msgstr "区域损伤"
+
+msgid "damageLog/static_death_zone"
+msgstr "区域损伤"
+
+msgid "efficiencyRibbons/aoeBurn"
+msgstr "被火炎风暴引燃"
+
+msgid "efficiencyRibbons/aoeDamage"
+msgstr "能量攻击损伤"
+
+msgid "efficiencyRibbons/bomberExplosion"
+msgstr "爆炸损伤"
+
+msgid "efficiencyRibbons/damageVampire"
+msgstr "生命值吸取损伤"
+
+msgid "efficiencyRibbons/extraDamageSituational"
+msgstr "已激活幸运暴击"
+
+msgid "efficiencyRibbons/healSituational"
+msgstr "已激活斗志昂扬"
+
+msgid "efficiencyRibbons/instantShotAoeDamage"
+msgstr "高能射击损伤"
+
+msgid "efficiencyRibbons/instantShotAoeDrainEnemyHp"
+msgstr "噬魂攻击损伤"
+
+msgid "efficiencyRibbons/instantShotAoeStun"
+msgstr "震荡攻击损伤"
+
+msgid "efficiencyRibbons/modulesDamageBlocked"
+msgstr "无敌模块"
+
+msgid "efficiencyRibbons/nitroActivated"
+msgstr "已激活规避机动"
+
+msgid "efficiencyRibbons/passiveVampire"
+msgstr "恢复生命值"
+
+msgid "efficiencyRibbons/repair"
+msgstr "已修复坦克"
+
+msgid "efficiencyRibbons/repairByOther"
+msgstr "盟友已修复您的坦克"
+
+msgid "efficiencyRibbons/repairOther"
+msgstr "已修复盟友坦克"
+
+msgid "eventStats/activeWave"
+msgstr "波次%(num)s"
+
+msgid "eventStats/difficulty"
+msgstr "难度: %(difficulty)s"
+
+msgid "eventStats/eventName"
+msgstr "星火燎原:试验场"
+
+msgid "eventStats/globalTask"
+msgstr "目标: 在敌人的所有攻击波次中幸存"
+
+msgid "eventStats/mission"
+msgstr "在敌人的所有攻击波次中幸存"
+
+msgid "eventStats/tableCaption"
+msgstr "分队队员"
+
+msgid "help/description_0"
+msgstr "在敌人的所有攻击波次中存活下来即可获胜。敌人会随着波次变得更加强大。"
+
+msgid "help/description_1"
+msgstr ""
+"正确组合战斗能力可发挥极其强大的效果。\n"
+"请注意: 在星火燎原模式中，指令和所有类型的炮弹都可以免费使用。"
+
+msgid "help/title"
+msgstr "星火燎原:试验场"
+
+msgid "help/title_0"
+msgstr "敌方攻击波次"
+
+msgid "help/title_1"
+msgstr "生存技巧"
+
+msgid "helpScreen/hint/description"
+msgstr "即可查看模式规则"
+
+msgid "helpScreen/hint/press"
+msgstr "按下"
+
+msgid "hitMarker/useless"
+msgstr "无法造成损伤！"
+
+msgid "loading/description_0"
+msgstr ""
+"在敌人的所有攻击波次中存活下来即可获胜。\n"
+"敌人会随着波次变得更加强大。"
+
+msgid "loading/description_1"
+msgstr ""
+"正确组合战斗能力可发挥极其强大的效果。\n"
+"请注意: 在星火燎原模式中，指令和所有类型的炮弹都可以免费使用。"
+
+msgid "loading/title_0"
+msgstr "敌方攻击波次"
+
+msgid "loading/title_1"
+msgstr "生存技巧"
+
+msgid "player_errors/equipment/LS_engineIsDestroyed"
+msgstr "无法使用[%(name)s]: 发动机被击毁。"
+
+msgid "player_errors/equipment/LS_gunDestroyed"
+msgstr "无法使用[%(name)s]: 火炮受损。"
+
+msgid "player_errors/equipment/LS_instantReload/notRequired"
+msgstr "火炮已装填。"
+
+msgid "player_errors/equipment/LS_notEnoughSouls"
+msgstr "无法使用[%(name)s]: 銤元素不足，无法激活该能力。"
+
+msgid "player_errors/equipment/LS_selfRepair/notRequired"
+msgstr "坦克未受损。"
+
+msgid "player_errors/equipment/LS_vehicleIsDrowning"
+msgstr "无法使用[%(name)s]: 坦克正在进水。"
+
+msgid "player_errors/equipment/LS_vehicleIsOnFire"
+msgstr "无法使用[%(name)s]: 坦克起火。"
+
+msgid "player_errors/equipment/LS_vehicleIsOverturned"
+msgstr "无法使用[%(name)s]: 坦克翻车。"
+
+msgid "player_messages/killedAllyByBomberExplosion"
+msgstr "盟友%(target)s被敌方(%(attacker)s)炸毁。"
+
+msgid "player_messages/killedAllyByDeathPit"
+msgstr "盟友%(target)s被撞毁。"
+
+msgid "player_messages/killedAllyByDeathZoneArtillery"
+msgstr "盟友%(target)s被崩坏区域摧毁。"
+
+msgid "player_messages/killedByPhaseTimerAlly"
+msgstr "盟友%(target)s被摧毁。"
+
+msgid "postmortemPanel/doNotLeaveGame/desc"
+msgstr "如果您的分队成功击溃这一波次。"
+
+msgid "postmortemPanel/doNotLeaveGame/title"
+msgstr "您将会重生"
+
+msgid "postmortemPanel/lastPhase/title"
+msgstr ""
+"战斗结束了。\n"
+"您做得很好！"
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ARTILLERY"
+msgstr "坦克被崩坏区域摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_ABILITY_AOE_DAMAGE"
+msgstr "坦克被能量攻击摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_ABILITY_IGNITE"
+msgstr "坦克被火炎风暴摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_ABILITY_VAMPIRE"
+msgstr "坦克被吸取生命值摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_BOMBER_EXPLOSION"
+msgstr "坦克被爆炸摧毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_DEATH_PIT"
+msgstr "坦克被撞毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "模块[%(device)s]因玩家射击而爆炸"
+
+msgid "postmortem_messages/DEATH_FROM_LS_FIRE"
+msgstr "坦克因起火被烧毁"
+
+msgid "postmortem_messages/DEATH_FROM_LS_PHASE_TIMER_SELF_SUICIDE"
+msgstr "坦克被摧毁。时间到。"
+
+msgid "postmortem_messages/DEATH_FROM_LS_SHOT"
+msgstr "坦克被敌方射击击毁"
+
+msgid "prebattle/description/message"
+msgstr "目标: 在敌人的所有攻击波次中幸存"
+
+msgid "prebattle/description/title"
+msgstr "星火燎原: %(difficulty)s难度"
+
+msgid "prebattle/difficulty/107"
+msgstr "普通"
+
+msgid "prebattle/difficulty/108"
+msgstr "激战"
+
+msgid "prebattle/difficulty/109"
+msgstr "残酷"
+
+msgid "prebattle/waiting/title"
+msgstr "正在等待玩家..."
+
+msgid "radialMenu/attention_here"
+msgstr "注意此位置！"
+
+msgid "radialMenu/cancel"
+msgstr "取消"
+
+msgid "radialMenu/confirm"
+msgstr "收到！"
+
+msgid "radialMenu/move_to_camp"
+msgstr "正在驶往区域！"
+
+msgid "radialMenu/move_to_magnus"
+msgstr "正在驶往马格努斯！"
+
+msgid "statusNotificationTimers/overturned"
+msgstr "正在恢复..."
+
+msgid "statusNotificationTimers/personalDeathZone"
+msgstr ""
+"立刻离开\n"
+"危险区域！"
+
+msgid "teamList/teammates"
+msgstr "我方"

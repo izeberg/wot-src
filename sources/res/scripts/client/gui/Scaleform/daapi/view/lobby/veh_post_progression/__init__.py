@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework import ViewSettings, ComponentSettings
@@ -31,6 +32,12 @@ def getViewSettings():
 def getBusinessHandlers():
     return (
      _VehPostProgressionBusinessHandler(),)
+
+
+def getStateMachineRegistrators():
+    from gui.Scaleform.daapi.view.lobby.veh_post_progression.states import registerStates, registerTransitions
+    return (
+     registerStates, registerTransitions)
 
 
 class _VehPostProgressionBusinessHandler(PackageBusinessHandler):

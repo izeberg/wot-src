@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/G189_gunsleeve_killshot/normal/lod0/attachment</nodefullVisual>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/G189_gunsleeve_killshot/normal/lod1/attachment</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.452810 -0.428215 -1.362188</min>
+		<max>0.586996 0.504653 4.721841</max>
+	</visibilityBox>
+</root>

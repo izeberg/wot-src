@@ -42,7 +42,6 @@ package net.wg.gui.battle.battleRoyale
    import net.wg.gui.battle.views.prebattleTimer.PrebattleTimerBase;
    import net.wg.gui.battle.views.radialMenu.RadialMenu;
    import net.wg.gui.battle.views.siegeModePanel.SiegeModePanel;
-   import net.wg.gui.battle.views.sixthSense.SixthSense;
    import net.wg.gui.battle.views.upgradePanel.BattleUpgradePanel;
    import net.wg.gui.components.battleDamagePanel.BattleDamageLogPanel;
    import net.wg.gui.components.battleDamagePanel.constants.BattleDamageLogConstants;
@@ -139,8 +138,6 @@ package net.wg.gui.battle.battleRoyale
       
       public var battleDamageLogPanel:BattleDamageLogPanel = null;
       
-      public var sixthSense:SixthSense = null;
-      
       public var consumablesPanel:ConsumablesPanel = null;
       
       public var eventMessage:EventBattleHint = null;
@@ -198,8 +195,6 @@ package net.wg.gui.battle.battleRoyale
       {
          super.updateStage(param1,param2);
          var _loc3_:Number = param1 >> 1;
-         this.sixthSense.x = _loc3_;
-         this.sixthSense.y = param2 >> 2;
          this.upgradePanel.x = _loc3_;
          this.levelPanel.x = _loc3_;
          var _loc4_:Number = stage.scaleY;
@@ -299,7 +294,6 @@ package net.wg.gui.battle.battleRoyale
       {
          super.onPopulate();
          registerComponent(this._selectRespawn,BATTLE_VIEW_ALIASES.BR_SELECT_RESPAWN);
-         registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
          registerComponent(this.damageInfoPanel,BATTLE_VIEW_ALIASES.DAMAGE_INFO_PANEL);
          registerComponent(this.battleDamageLogPanel,BATTLE_VIEW_ALIASES.BATTLE_DAMAGE_LOG_PANEL);
          registerComponent(this.debugPanel,BATTLE_VIEW_ALIASES.DEBUG_PANEL);
@@ -357,7 +351,6 @@ package net.wg.gui.battle.battleRoyale
          this.battleMessenger = null;
          this.debugPanel = null;
          this.battleDamageLogPanel = null;
-         this.sixthSense = null;
          this.consumablesPanel = null;
          this.statusNotificationsPanel = null;
          this.damageInfoPanel = null;

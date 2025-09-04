@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A179_Black_Rock/crash/lod3/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.740007 -0.297500 -1.400874</min>
+		<max>0.653206 0.452085 5.042662</max>
+	</visibilityBox>
+	<parent>vehicles/american/A179_Black_Rock/crash/lod4/Gun_02</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+</root>

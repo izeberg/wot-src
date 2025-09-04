@@ -2294,7 +2294,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>43000</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
@@ -4153,7 +4152,7 @@
 	<turrets0>
 		<Turret_1_GB115_Gonsalo>
 			<userString>#gb_vehicles:Turret_1_GB115_Gonsalo</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>30000</price>
 			<notInShop>true</notInShop>

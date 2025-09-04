@@ -3,7 +3,7 @@ from frameworks.wulf import WindowLayer
 from gui.app_loader import settings as app_settings
 from gui.shared import EVENT_BUS_SCOPE
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-from gui.Scaleform.framework import GroupedViewSettings, ScopeTemplates
+from gui.Scaleform.framework import GroupedViewSettings, ScopeTemplates, ComponentSettings
 from gui.Scaleform.framework.package_layout import PackageBusinessHandler
 
 def getContextMenuHandlers():
@@ -14,10 +14,14 @@ def getViewSettings():
     from gui.Scaleform.daapi.view.lobby.header.BattleTypeSelectPopover import BattleTypeSelectPopover
     from gui.Scaleform.daapi.view.lobby.header.SquadTypeSelectPopover import SquadTypeSelectPopover
     from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import LobbyHeader
+    from gui.Scaleform.daapi.view.lobby.LobbyView import LobbyHeaderInject
+    from gui.Scaleform.daapi.view.lobby.LobbyView import LobbyFooterInject
     return (
      GroupedViewSettings(VIEW_ALIAS.BATTLE_TYPE_SELECT_POPOVER, BattleTypeSelectPopover, 'itemSelectorPopover.swf', WindowLayer.WINDOW, VIEW_ALIAS.BATTLE_TYPE_SELECT_POPOVER, VIEW_ALIAS.BATTLE_TYPE_SELECT_POPOVER, ScopeTemplates.DEFAULT_SCOPE),
      GroupedViewSettings(VIEW_ALIAS.SQUAD_TYPE_SELECT_POPOVER, SquadTypeSelectPopover, 'itemSelectorPopover.swf', WindowLayer.WINDOW, VIEW_ALIAS.SQUAD_TYPE_SELECT_POPOVER, VIEW_ALIAS.SQUAD_TYPE_SELECT_POPOVER, ScopeTemplates.DEFAULT_SCOPE),
-     GroupedViewSettings(VIEW_ALIAS.LOBBY_HEADER, LobbyHeader, None, WindowLayer.UNDEFINED, None, None, ScopeTemplates.DEFAULT_SCOPE))
+     GroupedViewSettings(VIEW_ALIAS.LOBBY_HEADER, LobbyHeader, None, WindowLayer.UNDEFINED, None, None, ScopeTemplates.DEFAULT_SCOPE),
+     ComponentSettings(VIEW_ALIAS.LOBBY_HEADER_OVERLAPPING, LobbyHeaderInject, ScopeTemplates.DEFAULT_SCOPE),
+     ComponentSettings(VIEW_ALIAS.LOBBY_FOOTER_OVERLAPPING, LobbyFooterInject, ScopeTemplates.DEFAULT_SCOPE))
 
 
 def getBusinessHandlers():

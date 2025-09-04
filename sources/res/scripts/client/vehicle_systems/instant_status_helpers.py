@@ -1,5 +1,4 @@
 import InstantStatuses
-from constants import IS_CLIENT
 
 def invokeInstantStatusForVehicle(vehicle, instantStatusType):
     instantStatus = vehicle.appearance.findComponentByType(instantStatusType)
@@ -12,5 +11,3 @@ def invokeInstantStatusForVehicle(vehicle, instantStatusType):
 
 def invokeShotsDoneStatus(vehicle):
     invokeInstantStatusForVehicle(vehicle, InstantStatuses.ShotsDoneComponent)
-    if IS_CLIENT:
-        vehicle.onDiscreteShotDone()

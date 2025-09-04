@@ -220,7 +220,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>33500</maxLoad>
 			<terrainResistance>
 				1 1.35 1.95
 				<!--BW_String-->
@@ -2188,6 +2187,7 @@
 						<armor_3>
 							65
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_3>
 						<gun>40</gun>
 					</armor>

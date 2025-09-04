@@ -10,22 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "dailyExperiencePage/backBtnAddLabel"
-msgstr "账号状态"
-
-msgid "dailyExperiencePage/bonus/countOfExp"
-msgstr "剩余应用次数: {expCount}"
-
-msgid "dailyExperiencePage/bonus/description"
-msgstr ""
-"为所选坦克最后一场获胜的标准模式战斗应用可控经验加成，并获得更多的经验！此操作仅适用于所选坦克的最后一场胜利，可以在战斗结果窗口中应用此加成。可控加成能够和每日首胜2倍经验(或其他系数)一起使用/不使用。您每日仅能应用{maxExpCount}次加成。"
-
-msgid "dailyExperiencePage/bonus/title"
-msgstr "可控经验加成"
-
-msgid "dailyExperiencePage/moreInfoBtn"
-msgstr "详情"
-
 msgid "dashboard/header/clanInfo/role"
 msgstr "{role}在军团中"
 
@@ -54,22 +38,23 @@ msgid "mapsBlacklist/header"
 msgstr "排除地图"
 
 msgid "mapsBlacklist/infoTooltip/desc"
-msgstr "拥有普通账号的玩家可从列表中排除一张地图。拥有《坦克世界》高级账号和坦克世界Plus订阅的玩家可分别额外排除一张地图。"
+msgstr ""
+"从您的地图池中排除一张不感兴趣的地图。购买《坦克世界》高级账号可以额外排除1张地图，订阅坦克世界Plus也可以额外排除%(mapCount)s张地图。如果任一订阅到期，最右边的一张被排除的地图将首先返回地图池。"
 
 msgid "mapsBlacklist/infoTooltip/header"
 msgstr "排除地图"
 
 msgid "mapsBlacklist/infoTooltip/highlightDesc"
-msgstr "• 请注意:地图只能在标准模式的随机战中排除。"
+msgstr "仅在标准模式中排除这些地图。"
 
 msgid "mapsBlacklist/infoTooltip/rule1"
-msgstr "• 排除一张地图后，{maxCooldownTimeStr}内您不能替换它。"
+msgstr "被排除的地图每%(maxCooldownTimeStr)s可以更换一次。"
 
 msgid "mapsBlacklist/infoTooltip/rule2"
-msgstr "• 您只能排除IV级坦克或更高等级坦克的地图。"
+msgstr "该功能适用于IV级及更高等级的坦克。"
 
 msgid "mapsBlacklist/infoTooltip/rule3"
-msgstr "• 组队战斗时只有小队创建者才可以选择地图排除。"
+msgstr "在小队中时，只有小队指挥官选择的地图才会被排除。"
 
 msgid "mapsBlacklist/mapName"
 msgstr "\"{mapName}\""
@@ -111,7 +96,7 @@ msgid "mapsBlacklist/selectDialog/description"
 msgstr "您可以在{cooldownStr}.中更换选择。"
 
 msgid "mapsBlacklist/selectDialog/header"
-msgstr "确认要从标准模式中的随机战排除{mapNameStr}地图么？"
+msgstr "将{mapNameStr}地图从标准模式中排除？"
 
 msgid "mapsBlacklist/selectDialog/okButton"
 msgstr "排除"
@@ -144,7 +129,7 @@ msgid "mapsBlacklist/smallSlot/active/label"
 msgstr "未选择"
 
 msgid "mapsBlacklist/smallSlotCardTooltip/active/body"
-msgstr "点击此处可以选择一张想要在标准模式的随机战中排除的地图。"
+msgstr "点击选择地图，即可将其从标准模式中排除。"
 
 msgid "mapsBlacklist/smallSlotCardTooltip/active/header"
 msgstr "未选择地图"
@@ -168,13 +153,13 @@ msgid "mapsBlacklist/smallSlotCardTooltip/disabled/header"
 msgstr "空位不可用"
 
 msgid "mapsBlacklist/smallSlotTooltip/active/body"
-msgstr "从下面地图列表中选择一张地图将它从标准模式类型中的随机战中排除。"
+msgstr "从下方列表中选择一张地图，即可将其从标准模式中排除。"
 
 msgid "mapsBlacklist/smallSlotTooltip/active/header"
 msgstr "未选择地图"
 
 msgid "mapsBlacklist/smallSlotTooltip/change/body"
-msgstr "从下面地图列表中选择一张地图将它从标准模式类型中的随机战中排除。"
+msgstr "从下方列表中选择一张地图，即可将其从标准模式中排除。"
 
 msgid "mapsBlacklist/smallSlotTooltip/change/header"
 msgstr "更换地图可用"
@@ -195,19 +180,30 @@ msgid "mapsBlacklistConfim/cancel"
 msgstr "取消"
 
 msgid "mapsBlacklistConfim/message"
-msgstr "您可以在{cooldownTimeStr}后更改您的选择。"
+msgstr "您可在{whiteSpanish_Open}%(cooldownTimeStr)s{whiteSpanish_Close}后更改选择。"
+
+msgid "mapsBlacklistConfim/replace"
+msgstr "替换"
 
 msgid "mapsBlacklistConfim/submit"
 msgstr "排除"
 
 msgid "mapsBlacklistConfim/title"
-msgstr "确认从标准模式类型的随机战中排除地图{mapName}吗？"
+msgstr "将%(mapName)s地图从标准模式中排除？"
 
 msgid "mapsBlacklistReplace/message"
-msgstr "所选地图将被替换为{mapName}地图。您可以在{cooldownTimeStr}后更改您的选择。"
+msgstr ""
+"所选地图将被替换为{whiteSpanish_Open}%(mapName)s{whiteSpanish_Close}地图。您可在%(cooldownTimeStr)s后更改选择。"
 
 msgid "mapsBlacklistReplace/title"
 msgstr "哪张地图是您想要替换的？"
+
+msgid "mapsBlacklistReplaceOne/message"
+msgstr ""
+"该地图将被替换为{whiteSpanish_Open}%(mapName)s{whiteSpanish_Close}地图。您可在%(cooldownTimeStr)s后更改选择。"
+
+msgid "mapsBlacklistReplaceOne/title"
+msgstr "您想替换该地图吗？"
 
 msgid "parentControlCard/infoPopover/body"
 msgstr ""

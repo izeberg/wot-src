@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>13055</weight>
-		<maxHealth>1040</maxHealth>
+		<maxHealth>1200</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1997,9 +1997,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6900</weight>
-			<maxLoad>33000</maxLoad>
 			<terrainResistance>
-				0.9 1 1.4
+				0.7 0.8 1.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>31000</brakeForce>
@@ -3804,7 +3803,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6900</weight>
-			<maxLoad>34000</maxLoad>
 			<terrainResistance>
 				0.7 0.8 1.2
 				<!--BW_String-->
@@ -5603,8 +5601,8 @@
 		</Chassis_R109_T54S_2>
 	</chassis>
 	<turrets0>
-		<Turret_2_R109_T54S>
-			<userString>#ussr_vehicles:Turret_2_R109_T54S</userString>
+		<Turret_1_R109_T54S>
+			<userString>#ussr_vehicles:Turret_1_R109_T54S</userString>
 			<tags/>
 			<level>9</level>
 			<price>55000</price>
@@ -5631,7 +5629,7 @@
 			</armor>
 			<primaryArmor>armor_10 armor_3 armor_9</primaryArmor>
 			<weight>7353</weight>
-			<maxHealth>260</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5651,12 +5649,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_100mm_D10TM>
+				<_100mm_D_10TM>
 					shared
-					<maxAmmo>34</maxAmmo>
+					<maxAmmo>40</maxAmmo>
 					<unlocks>
 						<gun>
-							_100mm_D10T_obr_45M
+							_100mm_D_10TM_mod_1945
 							<cost>18500</cost>
 						</gun>
 					</unlocks>
@@ -5711,7 +5709,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.5
+						7.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -5723,10 +5721,7 @@
 							0.06
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -5855,10 +5850,16 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_100mm_D10TM>
-				<_100mm_D10T_obr_45M>
+				</_100mm_D_10TM>
+				<_100mm_D_10TM_mod_1945>
 					shared
 					<maxAmmo>40</maxAmmo>
+					<unlocks>
+						<vehicle>
+							R132_VNII_100LT
+							<cost>279800</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							180
@@ -5922,10 +5923,7 @@
 							0.06
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -6054,7 +6052,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_100mm_D10T_obr_45M>
+				</_100mm_D_10TM_mod_1945>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R109_T54S/normal/lod0/Turret_01.model</undamaged>
@@ -7147,73 +7145,56 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_R109_T54S>
+		</Turret_1_R109_T54S>
 	</turrets0>
 	<engines>
-		<V-54>
+		<V_54>
 			shared
 			<unlocks>
 				<engine>
-					V-55UM
+					V_14UM
 					<cost>27600</cost>
 				</engine>
 			</unlocks>
-		</V-54>
-		<V-55UM>
-			shared
-			<unlocks>
-				<vehicle>
-					R132_VNII_100LT
-					<cost>279800</cost>
-				</vehicle>
-			</unlocks>
-		</V-55UM>
+		</V_54>
+		<V_14UM>shared</V_14UM>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<R113>
-			shared
-			<unlocks>
-				<radio>
-					_10RT-26E
-					<cost>9200</cost>
-				</radio>
-			</unlocks>
-		</R113>
 		<_10RT-26E>shared</_10RT-26E>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<V-54>
-					<smplEnginePower>800</smplEnginePower>
+				<V_54>
+					<smplEnginePower>850</smplEnginePower>
 					<smplFwMaxSpeed>69</smplFwMaxSpeed>
-				</V-54>
-				<V-55UM>
+				</V_54>
+				<V_14UM>
 					<smplEnginePower>1000</smplEnginePower>
 					<smplFwMaxSpeed>69</smplFwMaxSpeed>
-				</V-55UM>
+				</V_14UM>
 			</engines>
 			<chassis>
 				<Chassis_R109_T54S>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1127
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0805
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.05635
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

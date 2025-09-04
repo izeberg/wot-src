@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/lightonly.fx</fx>
+					<property>
+						selfIllumination
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/MilitaryEnvironment/hd_mle_AF_003_WestlandLysander/hd_mle_AF_003_WestlandLysander_scenario_01_AM.dds</Texture>
+					</property>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+				</material>
+				<groupOrigin>-0.031530 1.779567 -0.277142</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-7.529885 -0.000000 -4.805406</min>
+		<max>7.466825 3.868731 4.629318</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>5096</geometrySize>
+</root>

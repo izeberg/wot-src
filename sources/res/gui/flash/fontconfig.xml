@@ -2,7 +2,7 @@
 <root>
 	<gameface>
 		<fontfamily>
-			<name>Warhelios</name>
+			<name>DefaultWarhelios</name>
 			<font>
 				<style>normal</style>
 				<weight>normal</weight>
@@ -15,7 +15,7 @@
 			</font>
 		</fontfamily>
 		<fontfamily>
-			<name>WarheliosZHCN</name>
+			<name>Warhelios</name>
 			<font>
 				<style>normal</style>
 				<weight>normal</weight>
@@ -28,6 +28,34 @@
 			</font>
 		</fontfamily>
 		<fontfamily>
+			<name>PFDINMax</name>
+			<font>
+				<style>normal</style>
+				<weight>light</weight>
+				<path>gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBook.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>normal</weight>
+				<path>gui/gameface/fonts/pfdinmax/PFDINMax-CompressedRegular.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>medium</weight>
+				<path>gui/gameface/fonts/pfdinmax/PFDINMax-CompressedMedium.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>semi_bold</weight>
+				<path>gui/gameface/fonts/pfdinmax/PFDINMax-CompressedSemiBold.ttf</path>
+			</font>
+			<font>
+				<style>normal</style>
+				<weight>bold</weight>
+				<path>gui/gameface/fonts/pfdinmax/PFDINMax-CompressedBold.ttf</path>
+			</font>
+		</fontfamily>
+		<fontfamily>
 			<name>DINRoundPro</name>
 			<font>
 				<style>normal</style>
@@ -35,9 +63,9 @@
 				<path>gui/gameface/fonts/DINRoundPro-Bold.ttf</path>
 			</font>
 		</fontfamily>
-		<deffontfamily>WarheliosZHCN</deffontfamily>
+		<deffontfamily>Warhelios</deffontfamily>
 		<hieroglyphical>true</hieroglyphical>
-		<fontfamilyfallback>Warhelios</fontfamilyfallback>
+		<fontfamilyfallback>DefaultWarhelios</fontfamilyfallback>
 	</gameface>
 	<config>
 		<name>All</name>

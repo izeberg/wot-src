@@ -1,3 +1,4 @@
+import BigWorld
 from adisp import adisp_process
 from gui import SystemMessages
 from gui.impl import backport
@@ -31,13 +32,18 @@ class Comp7Scheduler(BaseScheduler):
     def fini(self):
         self.comp7Controller.onStatusUpdated -= self.__update
 
+    def __checkLeave(self):
+        if not self.comp7Controller.isEnabled() or self.comp7Controller.isFrozen():
+            BigWorld.callback(0.0, self.__doLeave)
+            return True
+        return False
+
     @adisp_process
-    def __doLeave(self, isExit=True):
-        yield self.prbDispatcher.doLeaveAction(LeavePrbAction(isExit))
+    def __doLeave(self):
+        yield self.prbDispatcher.doLeaveAction(LeavePrbAction(True))
 
     def __update(self, status):
-        if not self.comp7Controller.isEnabled() or self.comp7Controller.isFrozen():
-            self.__doLeave()
+        if self.__checkLeave():
             return
         else:
             isPrimeTime = status == PrimeTimeStatus.AVAILABLE

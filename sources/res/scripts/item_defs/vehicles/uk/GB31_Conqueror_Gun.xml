@@ -2424,7 +2424,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>22000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -4502,7 +4501,7 @@
 	<turrets0>
 		<Turret_1_GB31_Conqueror_Gun>
 			<userString>#gb_vehicles:Turret_1_GB31_Conqueror_Gun</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>10</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -4510,10 +4509,12 @@
 				<armor_1>
 					50.8
 					<!--BW_String-->
+					<tags>hull</tags>
 				</armor_1>
 				<armor_3>
 					50.8
 					<!--BW_String-->
+					<tags>hull</tags>
 				</armor_3>
 				<armor_8>
 					31.8
@@ -4524,12 +4525,9 @@
 			<maxHealth>106</maxHealth>
 			<rotationSpeed>8</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>185</maxHealth>
+				<maxRegenHealth>93</maxRegenHealth>
+				<repairCost>10</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>290</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -4541,7 +4539,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_9.2inch_SPG_Howitzer>
+				<B_L_9_2_in_Howitzer_Mk_II>
 					shared
 					<maxAmmo>24</maxAmmo>
 					<armor>
@@ -4712,7 +4710,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_9.2inch_SPG_Howitzer>
+				</B_L_9_2_in_Howitzer_Mk_II>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB31_Conqueror_Gun/normal/lod0/Turret_01.model</undamaged>
@@ -4839,7 +4837,7 @@
 		</Turret_1_GB31_Conqueror_Gun>
 	</turrets0>
 	<engines>
-		<Rolls_Royse_Meteor_M120>shared</Rolls_Royse_Meteor_M120>
+		<Rolls_Royce_Meteor_M120_CGC>shared</Rolls_Royce_Meteor_M120_CGC>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
@@ -4850,7 +4848,7 @@
 	<physics>
 		<detailed>
 			<engines>
-				<Rolls_Royse_Meteor_M120>
+				<Rolls_Royce_Meteor_M120_CGC>
 					<smplEnginePower>
 						856.3977
 						<!--BW_String-->
@@ -4859,7 +4857,7 @@
 						34.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_M120>
+				</Rolls_Royce_Meteor_M120_CGC>
 			</engines>
 			<chassis>
 				<Chassis_GB31_Conqueror_Gun>

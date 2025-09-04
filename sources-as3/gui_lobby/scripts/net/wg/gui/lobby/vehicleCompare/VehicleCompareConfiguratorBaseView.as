@@ -5,7 +5,6 @@ package net.wg.gui.lobby.vehicleCompare
    import flash.text.TextField;
    import flash.text.TextFieldAutoSize;
    import flash.utils.Dictionary;
-   import net.wg.gui.interfaces.ISoundButtonEx;
    import net.wg.gui.lobby.techtree.helpers.TweenWrapper;
    import net.wg.gui.lobby.vehicleCompare.configurator.VehConfBottomPanel;
    import net.wg.gui.lobby.vehicleCompare.data.VehicleCompareConfiguratorInitDataVO;
@@ -15,7 +14,6 @@ package net.wg.gui.lobby.vehicleCompare
    import net.wg.infrastructure.interfaces.IViewStackContent;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
-   import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.motion.Tween;
    
    public class VehicleCompareConfiguratorBaseView extends VehicleCompareConfiguratorBaseViewMeta implements IVehicleCompareConfiguratorBaseViewMeta, IViewStackContent
@@ -23,14 +21,10 @@ package net.wg.gui.lobby.vehicleCompare
       
       private static const INV_INIT_DATA:String = "InvInitData";
       
-      private static const CLOSE_BTN_BORDER_OFFSET:int = 27;
-      
       private static const TWEEN_DURATION:int = 150;
        
       
       public var titleTf:TextField;
-      
-      public var closeBtn:ISoundButtonEx;
       
       public var bottomPanel:VehConfBottomPanel;
       
@@ -62,8 +56,6 @@ package net.wg.gui.lobby.vehicleCompare
       {
          super.configUI();
          this.titleTf.autoSize = TextFieldAutoSize.CENTER;
-         this.closeBtn.addEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
-         this.closeBtn.label = VEH_COMPARE.HEADER_CLOSEBTN_LABEL;
          this.bottomPanel.addEventListener(VehConfEvent.CLOSE_CLICK,this.onBottomPanelCloseClickHandler);
          this.bottomPanel.addEventListener(VehConfEvent.RESET_CLICK,this.onBottomPanelResetClickHandler);
          this.bottomPanel.addEventListener(VehConfEvent.APPLY_CLICK,this.onBottomPanelApplyClickHandler);
@@ -79,9 +71,6 @@ package net.wg.gui.lobby.vehicleCompare
          this.bottomPanel.removeEventListener(VehConfEvent.CLOSE_CLICK,this.onBottomPanelCloseClickHandler);
          this.bottomPanel.removeEventListener(VehConfEvent.RESET_CLICK,this.onBottomPanelResetClickHandler);
          this.bottomPanel.removeEventListener(VehConfEvent.APPLY_CLICK,this.onBottomPanelApplyClickHandler);
-         this.closeBtn.removeEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
-         this.closeBtn.dispose();
-         this.closeBtn = null;
          this.bottomPanel.dispose();
          this.bottomPanel = null;
          this.titleTf = null;
@@ -153,7 +142,6 @@ package net.wg.gui.lobby.vehicleCompare
             _loc6_.y = int(_loc5_ + _loc4_.min + (_loc4_.max - _loc4_.min) * _loc1_);
             _loc3_ = _loc6_;
          }
-         this.closeBtn.x = width - this.closeBtn.width - CLOSE_BTN_BORDER_OFFSET;
          this.titleTf.x = width - this.titleTf.width >> 1;
       }
       
@@ -212,11 +200,6 @@ package net.wg.gui.lobby.vehicleCompare
       }
       
       private function onBottomPanelCloseClickHandler(param1:VehConfEvent) : void
-      {
-         onCloseViewS();
-      }
-      
-      private function onCloseBtnClickHandler(param1:ButtonEvent) : void
       {
          onCloseViewS();
       }

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<event>
+		<missionSelectors>
+			<active>battlesCount</active>
+			<default/>
+			<withUnlockMission/>
+			<battlesCount>
+				<normal>0</normal>
+				<hard>1000</hard>
+			</battlesCount>
+		</missionSelectors>
+	</event>
+</root>

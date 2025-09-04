@@ -186,11 +186,15 @@ package net.wg.gui.lobby.profile.pages.awards
             this.dropdownMenu.x = this._startMenuX + _loc1_ + DROP_DOWN_WINDOW_X;
             this.txtLabel.x = this.dropdownMenu.x - this.txtLabel.width - TXT_LABEL_OFFSET_X + DROP_DOWN_WINDOW_X;
          }
+         else
+         {
+            y = Math.max(paddings.y - TOP_PADDING,0);
+         }
          var _loc3_:Number = Math.min(ProfileConstants.MIN_APP_WIDTH,currentDimension.x);
          this.mainScrollPane.target.x = _loc1_ + (_loc3_ - this.mainScrollPane.target.width >> 1) + MAIN_SCROLLPANE_OFFSET_X;
          var _loc4_:int = currentDimension.y;
          _loc4_ += !!isWindowed ? SCROLL_OFFSET : SCROLL_OFFSET_SMALL;
-         this.mainScrollPane.setSize(currentDimension.x,_loc4_);
+         this.mainScrollPane.setSize(currentDimension.x,_loc4_ - y - paddings.height);
          windowOffset = -WINDOW_OFFSET;
          var _loc5_:AwardsMainContainer = this.getMainContainer();
          var _loc6_:Vector.<AwardsTileListBlock> = _loc5_.blocks;
@@ -258,15 +262,6 @@ package net.wg.gui.lobby.profile.pages.awards
          super.onDispose();
       }
       
-      override public function set isWindowed(param1:Boolean) : void
-      {
-         super.isWindowed = param1;
-         if(isWindowed)
-         {
-            this.mainScrollPane.height += WINDOW_OFFSET;
-         }
-      }
-      
       public function setBattlesHeroesData(param1:Array) : void
       {
          this.getMainContainer().blockBattleHeroes.dataProvider = param1;
@@ -280,6 +275,15 @@ package net.wg.gui.lobby.profile.pages.awards
       protected function getMainContainer() : AwardsMainContainer
       {
          return AwardsMainContainer(this.mainScrollPane.target);
+      }
+      
+      override public function set isWindowed(param1:Boolean) : void
+      {
+         super.isWindowed = param1;
+         if(isWindowed)
+         {
+            this.mainScrollPane.height += WINDOW_OFFSET;
+         }
       }
       
       private function onDropdownMenuMouseOverHandler(param1:MouseEvent) : void

@@ -189,8 +189,8 @@ package net.wg.frontline.gui.battle.views.upgradePanel
       
       public function setInitData(param1:FrontlineUpgradePanelVO) : void
       {
-         this.firstInfoForSelect.setHotKeys(param1.firstItem.hotKeysVKeys,param1.firstItem.hotKeys);
-         this.secondInfoForSelect.setHotKeys(param1.secondItem.hotKeysVKeys,param1.secondItem.hotKeys);
+         this.firstInfoForSelect.setHotKeys(param1.firstItem.hotKeys);
+         this.secondInfoForSelect.setHotKeys(param1.secondItem.hotKeys);
       }
       
       public function showSelectAnim(param1:int) : void

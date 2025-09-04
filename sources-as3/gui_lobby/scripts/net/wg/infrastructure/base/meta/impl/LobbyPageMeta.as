@@ -15,6 +15,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var notifyCursorDragging:Function;
       
+      public var setRequiresOldStyle:Function;
+      
       public function LobbyPageMeta()
       {
          super();
@@ -42,6 +44,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.notifyCursorDragging,"notifyCursorDragging" + Errors.CANT_NULL);
          this.notifyCursorDragging(param1);
+      }
+      
+      public function setRequiresOldStyleS(param1:Boolean) : void
+      {
+         App.utils.asserter.assertNotNull(this.setRequiresOldStyle,"setRequiresOldStyle" + Errors.CANT_NULL);
+         this.setRequiresOldStyle(param1);
       }
    }
 }

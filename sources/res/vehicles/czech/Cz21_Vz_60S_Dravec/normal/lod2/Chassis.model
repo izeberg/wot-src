@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz21_Vz_60S_Dravec/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.699909 0.021909 -3.608942</min>
+		<max>1.697841 1.149486 3.611455</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz21_Vz_60S_Dravec/normal/lod2/Chassis</nodefullVisual>
+</root>

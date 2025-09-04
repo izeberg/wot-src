@@ -48,7 +48,7 @@ package net.wg.gui.lobby.techtree.sub
       
       public var nextLevelOffset:int = 800;
       
-      public var maxNodesOnLevel:int = 10;
+      public var maxNodesOnLevel:int = 11;
       
       public var rGraphics:ModulesGraphics;
       

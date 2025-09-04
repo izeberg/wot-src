@@ -25,5 +25,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       function setAimDamageStage(param1:String) : void;
       
       function setZoomFactor(param1:Number) : void;
+      
+      function showPenetrationFx() : void;
    }
 }

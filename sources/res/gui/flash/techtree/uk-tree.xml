@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>11</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<GB03_Cruiser_Mk_I>
@@ -333,6 +333,9 @@
 		<GB92_FV217>
 			<row>4</row>
 			<column>10</column>
+			<lines>
+				<GB152_AT_FV230_Breaker/>
+			</lines>
 		</GB92_FV217>
 		<GB91_Super_Conqueror>
 			<row>6</row>
@@ -341,6 +344,9 @@
 		<GB142_FV230_Canopener>
 			<row>8</row>
 			<column>10</column>
+			<lines>
+				<GB147_FV4025_Contriver/>
+			</lines>
 		</GB142_FV230_Canopener>
 		<GB86_Centurion_Action_X>
 			<row>9</row>
@@ -354,5 +360,13 @@
 			<row>11</row>
 			<column>10</column>
 		</GB100_Manticore>
+		<GB147_FV4025_Contriver>
+			<row>8</row>
+			<column>11</column>
+		</GB147_FV4025_Contriver>
+		<GB152_AT_FV230_Breaker>
+			<row>4</row>
+			<column>11</column>
+		</GB152_AT_FV230_Breaker>
 	</nodes>
 </root>

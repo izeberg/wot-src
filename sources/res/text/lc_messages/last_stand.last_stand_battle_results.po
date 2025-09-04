@@ -1,0 +1,111 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "info/dateAndDuration"
+msgstr "%(date)s，持续时间: %(duration)s"
+
+msgid "info/difficult/1"
+msgstr "普通难度"
+
+msgid "info/difficult/2"
+msgstr "激战难度"
+
+msgid "info/difficult/3"
+msgstr "残酷难度"
+
+msgid "info/mapName"
+msgstr "星火燎原 • 镜像阶段 • {difficulty}"
+
+msgid "info/respawnCount"
+msgstr "重生次数: {count}"
+
+msgid "ls_finish/reason/1/lose"
+msgstr "所有己方坦克被击毁。"
+
+msgid "ls_finish/reason/10/lose"
+msgstr "您未能阻止大块头。"
+
+msgid "ls_finish/reason/3/lose"
+msgstr "时间到。"
+
+msgid "ls_finish/reason/5/lose"
+msgstr "所有盟友已离开战斗。"
+
+msgid "ls_finish/reason/last_stand/1/win"
+msgstr "已终结大块头——但这只是个开始。"
+
+msgid "ls_finish/reason/last_stand/11/win"
+msgstr "已消灭普通难度的所有敌人。"
+
+msgid "ls_finish/reason/last_stand_hard/1/win"
+msgstr "已终结大块头。您阻止了入侵，拯救了世界。"
+
+msgid "ls_finish/reason/last_stand_hard/11/win"
+msgstr "已消灭残酷难度的所有敌人。"
+
+msgid "ls_finish/reason/last_stand_medium/1/win"
+msgstr "已终结大块头——这一切终于结束了吗？"
+
+msgid "ls_finish/reason/last_stand_medium/11/win"
+msgstr "已消灭激战难度的所有敌人。"
+
+msgid "ribbon/ban"
+msgstr ""
+"违规行为: 挂机/中途离场。\n"
+"无法获得奖励。"
+
+msgid "ribbon/banRecord"
+msgstr ""
+"违规行为: 挂机/中途离场。\n"
+"无法获得奖励。您的波次消灭记录未更新。"
+
+msgid "ribbon/noReward"
+msgstr ""
+"您的团队未能挡住第一波攻击。\n"
+"无法获得奖励。"
+
+msgid "status/lose"
+msgstr "战斗结束"
+
+msgid "status/win"
+msgstr "胜利"
+
+msgid "subtitle/lose"
+msgstr "未能挡住攻击"
+
+msgid "subtitle/win"
+msgstr "黑暗已被驱散！漂亮的团队配合！"
+
+msgid "teamList/actions"
+msgstr "快捷操作"
+
+msgid "teamList/teammates"
+msgstr "我方"
+
+msgid "time/record"
+msgstr "新记录！"
+
+msgid "title/lose/noWaves"
+msgstr "战斗结束"
+
+msgid "title/lose/waves"
+msgid_plural "plural/title/lose/waves"
+msgstr[0] "已完成波次%(phaseNumber)s"
+msgstr[1] "已完成波次%(phaseNumber)s"
+msgstr[2] "已完成波次%(phaseNumber)s"
+
+msgid "title/win"
+msgstr "已完成全部波次"
+
+msgid "tooltip/ban"
+msgstr "违规行为: 挂机/中途离场。您的波次消灭记录未更新。"

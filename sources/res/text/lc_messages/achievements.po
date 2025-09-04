@@ -9,6 +9,10 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "#PluralForms"
+msgstr "nplurals=1; plural=0;"
 
 msgid "01YearsOfService"
 msgstr "服役1年"
@@ -143,15 +147,6 @@ msgid "BPReserveAchievement_10_condition"
 msgstr "• 授予完成进度的玩家。"
 
 msgid "BPReserveAchievement_10_descr"
-msgstr "授予在活动期间达成成就的玩家"
-
-msgid "BPReserveAchievement_5"
-msgstr "战斗通行证储备成就5"
-
-msgid "BPReserveAchievement_5_condition"
-msgstr "• 授予完成进度的玩家。"
-
-msgid "BPReserveAchievement_5_descr"
 msgstr "授予在活动期间达成成就的玩家"
 
 msgid "BPReserveAchievement_6"
@@ -354,6 +349,15 @@ msgstr "• 授予完成进度的玩家。"
 
 msgid "BattlePassCommonPr_17extra_3_descr"
 msgstr "授予在战斗通行证: 战地狂欢期间达成成就的玩家。"
+
+msgid "BattlePassCommonPr_18"
+msgstr "勇于突破"
+
+msgid "BattlePassCommonPr_18_condition"
+msgstr "• 授予完成全部3个章节的玩家。"
+
+msgid "BattlePassCommonPr_18_descr"
+msgstr "授予在战斗通行证赛季XVIII期间达成成就的玩家。"
 
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• 主线进度包含45个阶段。"
@@ -1369,11 +1373,11 @@ msgstr ""
 "\n"
 "• \"狮\"式\n"
 "\n"
-"• \"豹I&nbsp;原型车\"，\"豹\"&nbsp;I\n"
+"• \"豹\"I原型车，\"豹\"I，\"豹\"120改进型\n"
 "\n"
-"• 包含所有坦克取得的战果。\n"
-"• 新获得的奖励也被累加。\n"
-"• 统计在标准模式、排位赛、攻城战、领土战和前线模式中击毁的坦克。"
+"• 计入所有坦克的总结果。\n"
+"• 新获得的勋章将会累加。\n"
+"• 计入在标准模式、排位赛、攻城战、领土战、前线模式中击毁的坦克。"
 
 msgid "beasthunter_descr"
 msgstr "击毁100辆D系“猫科动物”系列坦克，包括:"
@@ -1798,6 +1802,60 @@ msgstr "白银蝎狮"
 
 msgid "comp7_4_yearly_silver_descr"
 msgstr "授予在天梯战模式蝎狮赛年中收集至少9面天梯彩旗的玩家。"
+
+msgid "comp7_5_1"
+msgstr "冰锋突袭"
+
+msgid "comp7_5_1_descr"
+msgstr "授予在天梯战模式苍蓝巨龙赛季中完成一系列任务的玩家。"
+
+msgid "comp7_5_2"
+msgstr "绯红巨龙"
+
+msgid "comp7_5_2_descr"
+msgstr "授予在天梯战模式绯红巨龙赛季中完成一系列任务的玩家。"
+
+msgid "comp7_5_3"
+msgstr "翡翠巨龙"
+
+msgid "comp7_5_3_descr"
+msgstr "授予在天梯战模式翡翠巨龙赛季中完成一系列任务的玩家。"
+
+msgid "comp7_5_yearly_bronze"
+msgstr "青铜巨龙"
+
+msgid "comp7_5_yearly_bronze_descr"
+msgstr "授予在天梯战模式巨龙赛年中收集至少6面天梯彩旗的玩家。"
+
+msgid "comp7_5_yearly_champion"
+msgstr "巨龙赛年勇士"
+
+msgid "comp7_5_yearly_champion_descr"
+msgstr "授予在天梯战模式巨龙赛年中收集至少15面天梯彩旗的玩家。"
+
+msgid "comp7_5_yearly_gold"
+msgstr "黄金巨龙"
+
+msgid "comp7_5_yearly_gold_descr"
+msgstr "授予在天梯战模式巨龙赛年中收集至少12面天梯彩旗的玩家。"
+
+msgid "comp7_5_yearly_iron"
+msgstr "黑铁巨龙"
+
+msgid "comp7_5_yearly_iron_descr"
+msgstr "授予在天梯战模式巨龙赛年中收集至少3面天梯彩旗的玩家。"
+
+msgid "comp7_5_yearly_legend"
+msgstr "巨龙赛年传说"
+
+msgid "comp7_5_yearly_legend_descr"
+msgstr "授予在天梯战模式巨龙赛年中收集至少18面天梯彩旗的玩家。"
+
+msgid "comp7_5_yearly_silver"
+msgstr "白银巨龙"
+
+msgid "comp7_5_yearly_silver_descr"
+msgstr "授予在天梯战模式巨龙赛年中收集至少9面天梯彩旗的玩家。"
 
 msgid "conqueror"
 msgstr "占领者 %(rank)s"
@@ -2702,6 +2760,15 @@ msgstr "授予在活动期间满足各个条件的所有玩家。"
 msgid "ls2025Medal_descr"
 msgstr "在背水一战:潘多拉行动中解密所有胶片。"
 
+msgid "ls2_0Medal"
+msgstr "横刀立马"
+
+msgid "ls2_0Medal_condition"
+msgstr "授予在星火燎原:试验场活动期间满足相应条件的玩家。"
+
+msgid "ls2_0Medal_descr"
+msgstr "在星火燎原:试验场中解密所有胶片。"
+
 msgid "luckyDevil"
 msgstr "幸运儿"
 
@@ -2924,6 +2991,12 @@ msgid "markOfMasterySubContent"
 msgstr ""
 "• 数据显示的最高等级<br/>战斗嘉奖。<br/>• 当前在战斗结果窗口显示<br/>最近的等级排名。<br/>• 只能在标准模式中获得。"
 
+msgid "marksOnGun/count"
+msgid_plural "plural/marksOnGun/count"
+msgstr[0] "特级标识"
+msgstr[1] "特级标识"
+msgstr[2] "特级标识"
+
 msgid "marksOnGun/descr/param/label/1"
 msgstr "1级标识"
 
@@ -2971,11 +3044,11 @@ msgstr "按平均损伤排序:"
 
 msgid "marksOnGun_condition"
 msgstr ""
-"• 平均损伤值将在每场战斗后进行更新。仅统计最近的100场战斗结果。\n"
-"• 已获得的战绩标识不会因为平均损伤水平的降低而消失。\n"
-"• 只能在5级至10级坦克上获得。\n"
-"• 战绩标识可以在游戏设置中禁用显示。\n"
-"• 只能在标准模式中获得。"
+"• 每场战斗后，玩家的场均损伤会根据最近100场战斗进行更新。\n"
+"• 所获标识是永久性的，即使玩家的场均损伤下降也不会消失。\n"
+"• 标识只能使用V至XI级坦克获取。\n"
+"• 您可在游戏设置中关闭坦克上的标识显示。\n"
+"• 标识只能在标准模式中获取。"
 
 msgid "may21"
 msgstr "摇滚巨星"
@@ -3302,7 +3375,7 @@ msgid "medalEkins"
 msgstr "阿肯斯勋章 %(rank)s"
 
 msgid "medalEkins_descr"
-msgstr "依据玩家击毁的八级、九级或十级敌方坦克。"
+msgstr "因击毁VIII–XI级敌方坦克。"
 
 msgid "medalEkins_heroInfo"
 msgstr "乔·阿肯斯(Joy Ekins)国土防卫队列兵，一些资料认为正是阿肯斯击败了著名坦克王牌米歇尔·魏特曼。"
@@ -3630,6 +3703,18 @@ msgstr "在单次战斗中使用坦克或自行反坦克炮击毁7辆或7辆以�
 
 msgid "medalWittmann_heroInfo"
 msgstr "约翰内斯·鲍尔特是战时D系最成功的坦克手。他曾经参与多次大规模战役，同时他也参与过防御战斗。"
+
+msgid "meritPM3"
+msgstr "深入敌后"
+
+msgid "meritPM3_condition"
+msgstr "?empty?"
+
+msgid "meritPM3_descr"
+msgstr "在\"第三区\"个人任务中，完成任意作战行动的任务。"
+
+msgid "meritPM3_notification"
+msgstr "加入\"第三区\"的行列后，您获得了\"深入敌后\"勋章。"
 
 msgid "moonSphere"
 msgstr "漫步者"
@@ -4074,6 +4159,15 @@ msgstr "完美完成30个联合个人任务。奖励:优异成绩:联合勋章�
 msgid "readyForBattleAllianceUSSR_notification3"
 msgstr "完美完成15个联合个人任务。奖励:优异成绩:联合勋章，三级。"
 
+msgid "readyForBattleAssault"
+msgstr "优异成绩: 先锋"
+
+msgid "readyForBattleAssault_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleAssault_descr"
+msgstr "在\"第三区\"个人任务中，完成全部\"先锋\"任务即可获得。"
+
 msgid "readyForBattleHT"
 msgstr "优异成绩:重型坦克"
 
@@ -4158,6 +4252,24 @@ msgstr "完美完成30个自行火炮个人任务。奖励:优异成绩:自行�
 msgid "readyForBattleSPG_notification4"
 msgstr "完美完成15个自行火炮个人任务。奖励:优异成绩:自行火炮勋章，四级。"
 
+msgid "readyForBattleSniper"
+msgstr "优异成绩: 伏击"
+
+msgid "readyForBattleSniper_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleSniper_descr"
+msgstr "在\"第三区\"个人任务中，完成全部\"伏击\"任务即可获得。"
+
+msgid "readyForBattleSupport"
+msgstr "优异成绩: 协助"
+
+msgid "readyForBattleSupport_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleSupport_descr"
+msgstr "在\"第三区\"个人任务中，完成全部\"协助\"任务即可获得。"
+
 msgid "reliableComrade"
 msgstr "并肩作战"
 
@@ -4171,6 +4283,15 @@ msgstr ""
 
 msgid "reliableComrade_descr"
 msgstr "进行连续50场未对盟友造成损伤的战斗。"
+
+msgid "sccHero"
+msgstr "新纪元曙光"
+
+msgid "sccHero_condition"
+msgstr "授予在\"沸点行动\"活动期间完成全部任务的玩家。"
+
+msgid "sccHero_descr"
+msgstr "完成\"沸点\"故事。"
 
 msgid "scout"
 msgstr "尖兵"
@@ -4273,16 +4394,16 @@ msgstr "西奈雄狮"
 
 msgid "sinai_condition"
 msgstr ""
-"• IS, IS-M, IS-2, IS-2M, IS-2加强型, IS-2-II, IS-3, IS-3-II, IS-3A, IS-4, IS-5, IS-6, IS-6&nbsp;FL, IS-6&nbsp;B, IS-7, KRT-1, K-2, T-10\n"
+"• IS, IS-M, IS-2, IS-2M, IS-2加强型, IS-2-II, IS-3, IS-3-II, IS-3A, IS-4, IS-5, IS-6, IS-6&nbsp;FL, IS-6&nbsp;B, IS-7, KR-1, KRT-1, K-2, T-10\n"
 "\n"
 "• ISU-122S, ISU-122-2, ISU-130, ISU-152, ISU-152K\n"
 "\n"
 "• 252工程U, 防卫者, 乌达尼, 260工程, 261工程, 257工程, 263工程, 268工程, 268工程IV型, 268工程V型, 701工程, 704工程\n"
 "\n"
-"• 仅统计S系坦克。\n"
-"• 统计所有坦克的总结果。\n"
-"• 新获得的勋章将会累计。\n"
-"• 仅统计在标准模式、排位赛、攻城战、前线模式以及领土战中击毁的坦克。"
+"• 仅计入S系坦克。\n"
+"• 计入所有坦克的总结果。\n"
+"• 新获得的勋章将会累加。\n"
+"• 仅计入在标准模式、排位赛、攻城战、前线模式、领土战中击毁的坦克。"
 
 msgid "sinai_descr"
 msgstr "摧毁100辆IS系列的坦克或者底盘为IS系列底盘的S系车辆，包括:"
@@ -4747,6 +4868,24 @@ msgstr "PG专属特殊勋章。"
 msgid "twitchPrime_descr"
 msgstr "在特殊包裹掉落期间发送给玩家。"
 
+msgid "twoPointZeroCollectorMedal"
+msgstr "大收藏家"
+
+msgid "twoPointZeroCollectorMedal_condition"
+msgstr "授予已研发并购买了升级路线中所有VI-X级坦克，并且在《坦克世界》2.0版本更新发布后领取了庆祝奖励的玩家。"
+
+msgid "twoPointZeroCollectorMedal_descr"
+msgstr "您在《坦克世界》2.0版本更新发布时，已经收集了一大批高等级坦克。"
+
+msgid "twoPointZeroMedal"
+msgstr "我是2.0版本更新的见证者"
+
+msgid "twoPointZeroMedal_condition"
+msgstr "授予在《坦克世界》2.0版本更新发布后领取了庆祝奖励的玩家。"
+
+msgid "twoPointZeroMedal_descr"
+msgstr "诚挚地感谢您与我们一起迎接2.0版本更新！"
+
 msgid "unreachable"
 msgstr "各位，请向王者致敬！"
 
@@ -4835,6 +4974,9 @@ msgstr ""
 
 msgid "willToWinSpirit_descr"
 msgstr "单独同至少3辆敌方坦克战斗并最终获得胜利。"
+
+msgid "winRate"
+msgstr "胜率"
 
 msgid "winnerLaurels"
 msgstr "V代表胜利 %(rank)s"
@@ -4954,6 +5096,15 @@ msgstr "在最终兵器: 2024期间授予。"
 
 msgid "wt2024HunterWins_descr"
 msgstr "在猎犬小队中击败E-110 BT/E-220 BT。"
+
+msgid "wt2025progression"
+msgstr "打破循环"
+
+msgid "wt2025progression_condition"
+msgstr "授予完成最终兵器:时空悖论进度的玩家。此殊荣仅授予那些完成不可能任务的勇士——他们直面冯·克里格的时空陷阱，不仅生存下来，更凯旋而归。"
+
+msgid "wt2025progression_descr"
+msgstr "完成最终兵器模式进度。"
 
 msgid "wtBossWins"
 msgstr "闪电大师"

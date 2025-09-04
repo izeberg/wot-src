@@ -1,5 +1,5 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.gen.view_models.ui_kit.list_model import ListModel
 
 class ContextMenuItemModel(ViewModel):

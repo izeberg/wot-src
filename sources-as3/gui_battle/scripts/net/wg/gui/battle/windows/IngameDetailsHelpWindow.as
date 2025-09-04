@@ -296,36 +296,34 @@ package net.wg.gui.battle.windows
       
       private function setData(param1:IngameDetailsPageVO) : void
       {
-         var _loc2_:Array = null;
          this.headerTitle.text = param1.headerTitle;
          this.title.htmlText = param1.title;
          this.description.htmlText = param1.descr;
          this.pageBg.source = param1.image;
-         _loc2_ = param1.buttons;
-         var _loc3_:Boolean = _loc2_.indexOf(Values.EMPTY_STR) > -1;
+         var _loc2_:Boolean = param1.hasEmptyKey;
          this._keyViewersList.clearKeys();
-         this._keyViewersList.visible = _loc2_.length > 0;
-         this.warning.visible = _loc3_;
-         if(!_loc3_)
+         this._keyViewersList.visible = param1.keys.length > 0;
+         this.warning.visible = _loc2_;
+         if(!_loc2_)
          {
-            this._keyViewersList.setKeys(param1.vKeys,_loc2_);
+            this._keyViewersList.setKeys(param1.keys);
             this._keyViewersList.x = width - this._keyViewersList.width >> 1;
          }
-         var _loc4_:Boolean = StringUtils.isNotEmpty(param1.roleImage);
-         this.roleImage.visible = _loc4_;
-         if(_loc4_)
+         var _loc3_:Boolean = StringUtils.isNotEmpty(param1.roleImage);
+         this.roleImage.visible = _loc3_;
+         if(_loc3_)
          {
             this.roleImage.source = param1.roleImage;
          }
-         var _loc5_:Vector.<IngameDetailsRoleActionVO> = param1.roleActions;
-         if(_loc5_)
+         var _loc4_:Vector.<IngameDetailsRoleActionVO> = param1.roleActions;
+         if(_loc4_)
          {
             if(!this._roleActionContainer)
             {
                this._roleActionContainer = new IngameDetailsRoleActionContainer();
                addChild(this._roleActionContainer);
             }
-            this._roleActionContainer.setRolesData(_loc5_);
+            this._roleActionContainer.setRolesData(_loc4_);
             this._roleActionContainer.visible = true;
          }
          else if(this._roleActionContainer)

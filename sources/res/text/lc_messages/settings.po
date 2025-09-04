@@ -259,6 +259,96 @@ msgstr "水的画质"
 msgid "WATER_QUALITY/description"
 msgstr "调整水面的画面质量"
 
+msgid "aim/armorFlashlight/colorSchema/greenShades/label"
+msgstr "仅限薄弱装甲"
+
+msgid "aim/armorFlashlight/colorSchema/greenShades/tooltip/body"
+msgstr ""
+"激活时，透视仪仅高亮显示目标部位的薄弱装甲。\n"
+"\n"
+"击穿几率较高的装甲显示为纯绿色，击穿几率中等的装甲则显示为半透明绿色。色盲模式下颜色可能有所不同。"
+
+msgid "aim/armorFlashlight/colorSchema/greenShades/tooltip/header"
+msgstr "仅高亮显示薄弱装甲"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/label"
+msgstr "仅限坚固装甲"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/tooltip/body"
+msgstr ""
+"激活时，透视仪仅高亮显示目标部位的坚固装甲。\n"
+"\n"
+"击穿几率较低或为零的装甲显示为纯红色，击穿几率中等的装甲则显示为半透明红色。色盲模式下颜色可能有所不同。"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/tooltip/header"
+msgstr "仅高亮显示坚固装甲"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/label"
+msgstr "全部装甲"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/tooltip/body"
+msgstr ""
+"激活时，透视仪高亮显示目标部位的全部装甲。\n"
+"\n"
+"击穿几率较低或为零的装甲显示为红色，击穿几率较高的装甲显示为绿色，击穿几率中等的装甲则显示为黄色。色盲模式下颜色可能有所不同。"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/tooltip/header"
+msgstr "高亮显示全部装甲"
+
+msgid "aim/armorFlashlight/colorSchemas"
+msgstr "装甲高亮显示"
+
+msgid "aim/armorFlashlight/enabled/label"
+msgstr "战斗开始时开启"
+
+msgid "aim/armorFlashlight/enabled/tooltip/body"
+msgstr ""
+"战斗开始时装甲透视仪默认状态。您可随时使用所设置的热键开启或关闭。\n"
+"\n"
+"开启时，透视仪功能仅在狙击模式下有效。\n"
+"\n"
+"支持游戏模式: \n"
+"• 标准模式与训练模式；\n"
+"• 前线模式；\n"
+"• 街机模式；\n"
+"• 天梯战；\n"
+"• 其他特定模式与活动。\n"
+"\n"
+"未来可能新增支持其他模式与活动。"
+
+msgid "aim/armorFlashlight/enabled/tooltip/header"
+msgstr "战斗开始时开启"
+
+msgid "aim/armorFlashlight/fill/label"
+msgstr "透视仪纹理"
+
+msgid "aim/armorFlashlight/fill/pattern1"
+msgstr "纯色"
+
+msgid "aim/armorFlashlight/fill/pattern2"
+msgstr "稀疏图案"
+
+msgid "aim/armorFlashlight/fill/pattern3"
+msgstr "浓密图案"
+
+msgid "aim/armorFlashlight/opacity"
+msgstr "不透明度"
+
+msgid "aim/armorFlashlight/performanceImpact"
+msgstr "性能警告"
+
+msgid "aim/armorFlashlight/resolution/high"
+msgstr "高"
+
+msgid "aim/armorFlashlight/resolution/low"
+msgstr "低"
+
+msgid "aim/armorFlashlight/resolution/medium"
+msgstr "中等"
+
+msgid "aim/armorFlashlight/resolutionScaling"
+msgstr "透视仪解析度"
+
 msgid "aim/cassette"
 msgstr "弹箱"
 
@@ -600,6 +690,9 @@ msgstr "图像调整选项"
 
 msgid "cursor/ArcadeTitle"
 msgstr "场  景"
+
+msgid "cursor/ArmorFlashlight"
+msgstr "装甲透视仪"
 
 msgid "cursor/ArtyTitle"
 msgstr "火  炮"
@@ -1170,9 +1263,6 @@ msgstr "战斗交流"
 msgid "game/fieldset/headerChat"
 msgstr "聊  天"
 
-msgid "game/fieldset/headerGameplay"
-msgstr "标准模式类型"
-
 msgid "game/fieldset/headerMinimap"
 msgstr "小地图"
 
@@ -1398,23 +1488,8 @@ msgstr "在加载界面切换配置"
 msgid "gameTitle"
 msgstr "游  戏"
 
-msgid "gameplay/assault"
-msgstr "攻防战(研发六级坦克后)"
-
-msgid "gameplay/ctf"
-msgstr "随机战"
-
 msgid "gameplay/devMaps"
-msgstr "正在开发中的地图"
-
-msgid "gameplay/domination"
-msgstr "夺旗战(研发四级坦克后)"
-
-msgid "gameplay/epic_encounter"
-msgstr "战役模式(X级坦克)"
-
-msgid "gameplay/epic_standard"
-msgstr "战役模式(X级坦克)"
+msgstr "在带有随机事件的地图上战斗"
 
 msgid "gameplay/nations"
 msgstr "国战"
@@ -1834,11 +1909,17 @@ msgstr "缩 小"
 msgid "keyboard/keysBlocks/command/sizeUp"
 msgstr "放 大"
 
+msgid "keyboard/keysBlocks/command/specialAbility"
+msgstr "特殊能力"
+
 msgid "keyboard/keysBlocks/command/stop_fire"
 msgstr "短停射击"
 
 msgid "keyboard/keysBlocks/command/thankYou"
 msgstr "谢谢！"
+
+msgid "keyboard/keysBlocks/command/toggleFlashlight"
+msgstr "开启/关闭装甲透视仪"
 
 msgid "keyboard/keysBlocks/command/trajectory_view"
 msgstr "弹道视角"

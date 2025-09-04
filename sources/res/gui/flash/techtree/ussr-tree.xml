@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>14</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<R11_MS-1>
@@ -397,6 +397,9 @@
 		<R45_IS-7>
 			<row>6</row>
 			<column>10</column>
+			<lines>
+				<R228_KR_1/>
+			</lines>
 		</R45_IS-7>
 		<R145_Object_705_A>
 			<row>8</row>
@@ -413,6 +416,9 @@
 		<R148_Object_430_U>
 			<row>11</row>
 			<column>10</column>
+			<lines>
+				<R230_Object_432U/>
+			</lines>
 		</R148_Object_430_U>
 		<R97_Object_140>
 			<row>12</row>
@@ -426,5 +432,13 @@
 			<row>14</row>
 			<column>10</column>
 		</R132_VNII_100LT>
+		<R228_KR_1>
+			<row>6</row>
+			<column>11</column>
+		</R228_KR_1>
+		<R230_Object_432U>
+			<row>11</row>
+			<column>11</column>
+		</R230_Object_432U>
 	</nodes>
 </root>

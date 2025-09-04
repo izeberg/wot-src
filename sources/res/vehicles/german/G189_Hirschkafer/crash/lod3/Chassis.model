@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.611054 0.022111 -3.502825</min>
+		<max>1.611054 1.289078 3.569376</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/german/G189_Hirschkafer/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<nodefullVisual>vehicles/german/G189_Hirschkafer/crash/lod3/Chassis</nodefullVisual>
+</root>

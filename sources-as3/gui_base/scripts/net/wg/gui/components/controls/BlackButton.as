@@ -5,6 +5,7 @@ package net.wg.gui.components.controls
    import flash.display.Sprite;
    import flash.events.Event;
    import flash.text.TextFieldAutoSize;
+   import net.wg.data.constants.Values;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
@@ -12,13 +13,17 @@ package net.wg.gui.components.controls
    public class BlackButton extends SoundButtonEx
    {
       
+      public static var ICON_ALIGN_LEFT:String = "iconAlignLeft";
+      
+      public static var ICON_ALIGN_RIGHT:String = "iconAlignRight";
+      
       private static const IMAGE_SOURCE_INVALID:String = "imageSrcInv";
       
       private static const INDICATOR_INVALID:String = "indicatorInv";
       
       private static const IMAGE_ALPHA_INVALID:String = "imageAlphaInv";
       
-      private static const FILTERS_GLOW_OFSET:int = -2;
+      private static const FILTERS_GLOW_OFFSET:int = -2;
        
       
       public var image:Image = null;
@@ -43,8 +48,17 @@ package net.wg.gui.components.controls
       
       private var _disabledImageAlpha:Number = 1;
       
+      private var _iconShiftY:Number = 0;
+      
+      private var _iconAlign:String;
+      
+      private var _isImageLoaded:Boolean = false;
+      
+      private var _toVisibilityAfterImgLoaded:Boolean = false;
+      
       public function BlackButton()
       {
+         this._iconAlign = ICON_ALIGN_LEFT;
          super();
       }
       
@@ -142,6 +156,47 @@ package net.wg.gui.components.controls
          super.onDispose();
       }
       
+      protected function layoutContent(param1:int, param2:Number, param3:Number) : void
+      {
+         var _loc4_:Boolean = false;
+         var _loc6_:uint = 0;
+         _loc4_ = textField.text != null && StringUtils.isNotEmpty(textField.text);
+         var _loc5_:Boolean = this.image.visible;
+         textField.x = param1 - (textField.width >> 1);
+         this.toggleGlow.scaleX = param2;
+         this.toggleGlow.scaleY = param3;
+         this.toggleGlow.width = hitMc.width + FILTERS_GLOW_OFFSET;
+         this.toggleGlow.height = hitMc.height + FILTERS_GLOW_OFFSET;
+         if(_loc4_ && !_loc5_)
+         {
+            textField.x = param1 - (textField.width >> 1);
+         }
+         else if(_loc5_ && !_loc4_)
+         {
+            this.image.x = param1 - (this.image.width >> 1);
+         }
+         else
+         {
+            _loc6_ = param1 - (textField.width + this._iconOffsetText + this.image.width >> 1);
+            if(this._iconAlign == ICON_ALIGN_RIGHT)
+            {
+               textField.x = _loc6_;
+               this.image.x = _loc6_ + textField.width + this._iconOffsetText;
+            }
+            else
+            {
+               this.image.x = _loc6_;
+               textField.x = _loc6_ + this.image.width + this._iconOffsetText;
+            }
+         }
+         if(_loc5_)
+         {
+            this.image.y = (hitMc.height - this.image.height >> 1) + this._iconShiftY;
+         }
+         this.toggleIndicator.x = (hitMc.width - this.toggleIndicator.width >> 1) * param2;
+         this.toggleIndicator.y = Math.round(hitMc.height - this.toggleIndicator.height);
+      }
+      
       private function rescaleItems() : void
       {
          var _loc3_:DisplayObject = null;
@@ -176,45 +231,6 @@ package net.wg.gui.components.controls
          textField.scaleY = _loc2_;
          var _loc3_:int = hitMc.width >> 1;
          this.layoutContent(_loc3_,_loc1_,_loc2_);
-      }
-      
-      protected function layoutContent(param1:int, param2:Number, param3:Number) : void
-      {
-         var _loc4_:int = 0;
-         var _loc5_:Boolean = textField.text != null && StringUtils.isNotEmpty(textField.text);
-         var _loc6_:Boolean = this.image.visible;
-         textField.x = param1 - (textField.width >> 1);
-         this.toggleGlow.scaleX = param2;
-         this.toggleGlow.scaleY = param3;
-         this.toggleGlow.width = hitMc.width + FILTERS_GLOW_OFSET;
-         this.toggleGlow.height = hitMc.height + FILTERS_GLOW_OFSET;
-         if(_loc5_)
-         {
-            _loc4_ = param1 - (textField.width >> 1);
-            if(_loc6_)
-            {
-               _loc4_ -= this.image.width + this._iconOffsetText >> 1;
-            }
-         }
-         else if(_loc6_)
-         {
-            _loc4_ = param1 - (this.image.width >> 1);
-         }
-         if(_loc6_)
-         {
-            this.image.x = _loc4_;
-            this.image.y = hitMc.height - this.image.height >> 1;
-            if(_loc5_)
-            {
-               textField.x = this.image.x + this.image.width + this._iconOffsetText;
-            }
-         }
-         else if(_loc5_)
-         {
-            textField.x = _loc4_;
-         }
-         this.toggleIndicator.x = (hitMc.width - this.toggleIndicator.width >> 1) * param2;
-         this.toggleIndicator.y = Math.round(hitMc.height - this.toggleIndicator.height);
       }
       
       private function updateIndicatorSelection() : void
@@ -272,11 +288,24 @@ package net.wg.gui.components.controls
          this.rescaleItems();
       }
       
+      override public function set visible(param1:Boolean) : void
+      {
+         var _loc2_:Boolean = StringUtils.isNotEmpty(label);
+         var _loc3_:Boolean = StringUtils.isNotEmpty(this._imageSource);
+         if(_loc2_ && _loc3_ && !this._isImageLoaded)
+         {
+            this.alpha = Values.ZERO;
+            this._toVisibilityAfterImgLoaded = true;
+         }
+         super.visible = param1;
+      }
+      
       public function set iconSource(param1:String) : void
       {
          if(this._imageSource != param1)
          {
             this._imageSource = param1;
+            this._isImageLoaded = false;
             invalidate(IMAGE_SOURCE_INVALID);
          }
       }
@@ -311,9 +340,26 @@ package net.wg.gui.components.controls
          this.states.alpha = param1;
       }
       
+      public function set iconShiftY(param1:Number) : void
+      {
+         this._iconShiftY = param1;
+         isInvalid(InvalidationType.LAYOUT);
+      }
+      
+      public function set iconAlign(param1:String) : void
+      {
+         this._iconAlign = param1;
+         isInvalid(InvalidationType.LAYOUT);
+      }
+      
       private function onIconChangeHandler(param1:Event) : void
       {
          invalidate(InvalidationType.LAYOUT);
+         if(!this._isImageLoaded && this._toVisibilityAfterImgLoaded)
+         {
+            this.alpha = Values.DEFAULT_ALPHA;
+         }
+         this._isImageLoaded = true;
       }
    }
 }

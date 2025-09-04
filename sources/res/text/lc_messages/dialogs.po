@@ -230,11 +230,6 @@ msgstr ""
 msgid "buyInstallConfirmation/messageCombine"
 msgstr "确认要花费%(price)s银币购买\"%(kind)s\" %(name)s\"安装在当前坦克么？"
 
-msgid "buyInstallConfirmation/notEnoughWeight"
-msgstr ""
-"{red_Open}承载能力不足{red_Close},\n"
-"配件将被送至仓库。"
-
 msgid "buyInstallConfirmation/submit"
 msgstr "确认"
 
@@ -724,6 +719,12 @@ msgstr "总计:"
 msgid "confirmUnlock/cancel"
 msgstr "取消"
 
+msgid "confirmUnlock/content/currencyBlock/text"
+msgstr "{{xp}}(包括{{freeXP}})?"
+
+msgid "confirmUnlock/content/researchItem/text"
+msgstr "研发{{items}}，花费"
+
 msgid "confirmUnlock/item/message"
 msgstr ""
 "花费 %(color_tag_open)s%(xpCost)s%(color_tag_close)s%(xpCostIcon)s (包括 "
@@ -918,6 +919,12 @@ msgstr "确定以%(price)s%(creditsIcon)s价格卖出%(name)s？"
 
 msgid "customizationConfirmSell/title"
 msgstr "确认出售"
+
+msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgDays"
+msgstr "每%(days)s天"
+
+msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgDaysHours"
+msgstr "每%(days)s天%(hours)s时"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
 msgstr "每%(hours)s时"
@@ -3163,7 +3170,7 @@ msgid "vehicleSellDialog/postProgressionInfo"
 msgstr "坦克出售后，当前战地升级的等级予以保留，但所有双重改装将被取消。"
 
 msgid "vehicleSellDialog/price/sign/add"
-msgstr "+ "
+msgstr "+"
 
 msgid "vehicleSellDialog/proffit"
 msgstr "已收到:"

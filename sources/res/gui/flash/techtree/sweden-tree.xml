@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>11</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<S05_Strv_M21_29>
@@ -131,6 +131,9 @@
 		<S11_Strv_103B>
 			<row>4</row>
 			<column>10</column>
+			<lines>
+				<S36_Strv_107_12/>
+			</lines>
 		</S11_Strv_103B>
 		<S16_Kranvagn>
 			<row>6</row>
@@ -140,5 +143,9 @@
 			<row>8</row>
 			<column>10</column>
 		</S28_UDES_15_16>
+		<S36_Strv_107_12>
+			<row>4</row>
+			<column>11</column>
+		</S36_Strv_107_12>
 	</nodes>
 </root>

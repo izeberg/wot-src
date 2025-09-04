@@ -14,47 +14,32 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
-msgid "alertMessage/afterSeason/first"
-msgstr "苍蓝蝎狮赛季已结束"
-
-msgid "alertMessage/afterSeason/second"
-msgstr "绯红蝎狮赛季已结束"
-
-msgid "alertMessage/afterSeason/third"
-msgstr "翡翠蝎狮赛季已结束"
-
 msgid "alertMessage/allNotAvailable"
 msgstr "距服务器上的战斗开放还有%(primeDelta)s"
-
-msgid "alertMessage/allNotAvailableEnd/first"
-msgstr "苍蓝蝎狮赛季已结束"
-
-msgid "alertMessage/allNotAvailableEnd/second"
-msgstr "绯红蝎狮赛季已结束"
-
-msgid "alertMessage/allNotAvailableEnd/third"
-msgstr "翡翠蝎狮赛季已结束"
 
 msgid "alertMessage/allNotSet"
 msgstr "此模式在所有服务器上不开放"
 
-msgid "alertMessage/betweenSeasons/first"
-msgstr "苍蓝蝎狮赛季已结束"
-
-msgid "alertMessage/betweenSeasons/second"
-msgstr "绯红蝎狮赛季已结束"
-
-msgid "alertMessage/betweenSeasons/third"
-msgstr "翡翠蝎狮赛季已结束"
+msgid "alertMessage/ban"
+msgstr "您已被暂时封禁，无法参加该模式。剩余时间: %(expiryTime)s"
 
 msgid "alertMessage/button/changeServer"
-msgstr "选择其他服务器"
+msgstr "切换服务器"
 
 msgid "alertMessage/button/moreInfo"
 msgstr "详情"
 
+msgid "alertMessage/ceasefireAvailable"
+msgstr "该模式在您当前所在服务器上不开放%(button)s"
+
+msgid "alertMessage/ceasefireUnavailable"
+msgstr "该模式在所有服务器上均未开放。"
+
 msgid "alertMessage/modeOffline"
 msgstr "数据库错误。模式暂不开放。"
+
+msgid "alertMessage/noVehicles"
+msgstr "车库中没有满足要求的%(levels)s级坦克%(button)s"
 
 msgid "alertMessage/notAvailable"
 msgstr "战斗在%(serverName)s服务器上不开放"
@@ -66,31 +51,31 @@ msgid "alertMessage/notSet"
 msgstr "此模式在%(serverName)s服务器上不开放"
 
 msgid "alertMessage/preannounce/first"
-msgstr "苍蓝蝎狮赛季开启时间: %(date)s"
+msgstr "苍蓝巨龙赛季开启时间: %(date)s"
 
 msgid "alertMessage/preannounce/second"
-msgstr "绯红蝎狮赛季开启时间: %(date)s"
+msgstr "绯红巨龙赛季开启时间: %(date)s"
 
 msgid "alertMessage/preannounce/third"
-msgstr "翡翠蝎狮赛季开启时间: %(date)s"
+msgstr "翡翠巨龙赛季开启时间: %(date)s"
+
+msgid "alertMessage/qualification"
+msgstr "正在等待资格赛结果以确定您的段位"
+
+msgid "alertMessage/seasonEnd/first"
+msgstr "苍蓝巨龙赛季已结束"
+
+msgid "alertMessage/seasonEnd/second"
+msgstr "绯红巨龙赛季已结束"
+
+msgid "alertMessage/seasonEnd/third"
+msgstr "翡翠巨龙赛季已结束"
 
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "距此服务器上的战斗开放还有%(primeDelta)s"
 
-msgid "alertMessage/standaloneNotAvailableEnd/first"
-msgstr "苍蓝蝎狮赛季已结束"
-
-msgid "alertMessage/standaloneNotAvailableEnd/second"
-msgstr "绯红蝎狮赛季已结束"
-
-msgid "alertMessage/standaloneNotAvailableEnd/third"
-msgstr "翡翠蝎狮赛季已结束"
-
 msgid "alertMessage/standaloneNotSet"
 msgstr "此模式在%(serverName)s服务器上不开放"
-
-msgid "alertMessage/temporaryBan"
-msgstr "您无法参加该模式。距解禁还有：%(expiryTime)s"
 
 msgid "alertMessage/timeLeft/days"
 msgstr "%(day)s天"
@@ -127,57 +112,6 @@ msgstr[1] ""
 msgstr[2] ""
 "领取\n"
 "奖励"
-
-msgid "banner/info/seasonEnd/first"
-msgstr "苍蓝蝎狮赛季已结束"
-
-msgid "banner/info/seasonEnd/second"
-msgstr "绯红蝎狮赛季已结束"
-
-msgid "banner/info/seasonEnd/third"
-msgstr "翡翠蝎狮赛季已结束"
-
-msgid "banner/infoSmall/disabled"
-msgstr "休战期"
-
-msgid "banner/season/first"
-msgstr "苍蓝蝎狮"
-
-msgid "banner/season/second"
-msgstr "绯红蝎狮"
-
-msgid "banner/season/third"
-msgstr "翡翠蝎狮"
-
-msgid "banner/seasonDate/seasonLasts"
-msgstr "%(month)s%(day)s日结束"
-
-msgid "banner/seasonDate/seasonNotStarted"
-msgstr "开启时间: %(month)s%(day)s日%(hour)s:%(min)s"
-
-msgid "banner/seasonDateSmall/seasonNotStarted"
-msgstr "%(month)s%(day)s日%(hour)s:%(min)s"
-
-msgid "banner/title"
-msgstr "天梯战"
-
-msgid "bannerTooltip/description"
-msgstr "一种竞技性模式，使用X级坦克以7对7的形式进行。晋升段位，获取独特个性化元素、坦克、战争债券，以及其他珍贵奖励。"
-
-msgid "bannerTooltip/end"
-msgstr "赛季已结束"
-
-msgid "bannerTooltip/notAvailable"
-msgstr "休战期"
-
-msgid "bannerTooltip/notStarted"
-msgstr "开启时间: %(month)s%(day)s日%(hour)s:%(min)s"
-
-msgid "bannerTooltip/range"
-msgstr "%(startDate)s–%(endDate)s"
-
-msgid "bannerTooltip/title"
-msgstr "天梯战"
 
 msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "设置按类型、角色和系别显示坦克。"
@@ -341,21 +275,21 @@ msgstr "%(start)s–%(end)s"
 
 msgid "calendarDay/timeLeft/first"
 msgid_plural "plural/calendarDay/timeLeft/first"
-msgstr[0] "苍蓝蝎狮赛季将持续%(days)d天"
-msgstr[1] "苍蓝蝎狮赛季将持续%(days)d天"
-msgstr[2] "苍蓝蝎狮赛季将持续%(days)d天"
+msgstr[0] "苍蓝巨龙赛季将持续%(days)d天"
+msgstr[1] "苍蓝巨龙赛季将持续%(days)d天"
+msgstr[2] "苍蓝巨龙赛季将持续%(days)d天"
 
 msgid "calendarDay/timeLeft/second"
 msgid_plural "plural/calendarDay/timeLeft/second"
-msgstr[0] "绯红蝎狮赛季将持续%(days)d天"
-msgstr[1] "绯红蝎狮赛季将持续%(days)d天"
-msgstr[2] "绯红蝎狮赛季将持续%(days)d天"
+msgstr[0] "绯红巨龙赛季将持续%(days)d天"
+msgstr[1] "绯红巨龙赛季将持续%(days)d天"
+msgstr[2] "绯红巨龙赛季将持续%(days)d天"
 
 msgid "calendarDay/timeLeft/third"
 msgid_plural "plural/calendarDay/timeLeft/third"
-msgstr[0] "翡翠蝎狮赛季将持续%(days)d天"
-msgstr[1] "翡翠蝎狮赛季将持续%(days)d天"
-msgstr[2] "翡翠蝎狮赛季将持续%(days)d天"
+msgstr[0] "翡翠巨龙赛季将持续%(days)d天"
+msgstr[1] "翡翠巨龙赛季将持续%(days)d天"
+msgstr[2] "翡翠巨龙赛季将持续%(days)d天"
 
 msgid "calendarDay/title"
 msgstr "时间表"
@@ -385,16 +319,13 @@ msgstr "少于1分钟"
 
 msgid "crewMembersTooltip/description"
 msgstr ""
-"这个特殊车组由来自世界各地的坦克手组成，在指挥官的领导下团结一心。他们拥有零历练兄弟连特长，并附带足以训练另外2项特长的乘员经验，以此他们可以提高坦克的效能，在战场上展现个人魅力。"
+"这个特殊车组由来自世界各地的坦克手组成，在车长的领导下团结一心。他们附带足以训练3项特长的乘员经验，从而可以提高坦克的战斗效能，在战场上展现个人魅力。"
 
 msgid "crewMembersTooltip/perks"
 msgstr "特长"
 
 msgid "crewMembersTooltip/subHeading"
-msgstr "天梯战蝎狮赛年"
-
-msgid "crewMembersTooltip/zeroPerks"
-msgstr "零历练特长"
+msgstr "天梯战: 巨龙赛年"
 
 msgid "dash"
 msgstr "—"
@@ -427,11 +358,48 @@ msgid "division/text"
 msgstr "梯队%(division)s"
 
 msgid "divisionTooltip/description"
-msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家属于此梯队。"
+msgstr "拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家属于此梯队。"
 
 msgid "divisionTooltip/heading"
 msgstr "梯队%(divisionName)s"
+
+msgid "entryPoint/points"
+msgstr "评级点数"
+
+msgid "entryPoint/pointsCounter"
+msgstr "%(score)s%(divider)s%(scoreToNextDivision)s"
+
+msgid "entryPoint/qualification/battles"
+msgstr "参战场次"
+
+msgid "entryPoint/qualification/battlesCounter"
+msgstr "%(battleIcon)s%(battlesCount)s%(divider)s%(maxBattlesCount)s"
+
+msgid "entryPoint/qualification/waiting"
+msgstr "%(timer)s正在计算结果..."
+
+msgid "entryPoint/qualification/waitingShort"
+msgstr "%(timer)s正在计算结果"
+
+msgid "entryPointTooltip/description"
+msgstr "一种竞技性模式，使用%(levels)s级坦克以7对7的形式进行。晋升段位，获取独特个性化元素、坦克、战争债券，以及其他珍贵奖励。"
+
+msgid "entryPointTooltip/modeBtnText"
+msgstr "模式"
+
+msgid "entryPointTooltip/modeDescription"
+msgstr "%(mode)s——游戏模式。点击了解详情"
+
+msgid "entryPointTooltip/status/active"
+msgstr "开放%(timer)s"
+
+msgid "entryPointTooltip/status/ceasefire"
+msgstr "休战%(timer)s"
+
+msgid "entryPointTooltip/status/notStarted"
+msgstr ""
+"将开放:\n"
+"%(timer)s"
 
 msgid "featureName"
 msgstr "天梯战"
@@ -441,26 +409,26 @@ msgstr "天梯战"
 
 msgid "fifthRankTooltip/description"
 msgstr ""
-"拥有至少{whiteSpanish_Open}%(fromScore){whiteSpanish_Close}评级点数的玩家将被授予{whiteSpanish_Open}勇士{whiteSpanish_Close}段位。"
+"拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予{eeede9e6_Open}勇士{eeede9e6_Close}段位。"
 
 msgid "forVehicle"
 msgstr "适用于: %(vehicleName)s"
 
 msgid "generalRankTooltip/body/first"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予{whiteSpanish_Open}黑铁{whiteSpanish_Close}段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予{eeede9e6_Open}黑铁{eeede9e6_Close}段位。"
 
 msgid "generalRankTooltip/body/fourth"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予{whiteSpanish_Open}黄金{whiteSpanish_Close}段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予{eeede9e6_Open}黄金{eeede9e6_Close}段位。"
 
 msgid "generalRankTooltip/body/second"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予{whiteSpanish_Open}青铜{whiteSpanish_Close}段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予{eeede9e6_Open}青铜{eeede9e6_Close}段位。"
 
 msgid "generalRankTooltip/body/third"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予{whiteSpanish_Open}白银{whiteSpanish_Close}段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予{eeede9e6_Open}白银{eeede9e6_Close}段位。"
 
 msgid "generalRankTooltip/subheading"
 msgstr "包括梯队：%(divisions)s"
@@ -523,19 +491,17 @@ msgstr[2] ""
 "在资格赛中，中途离场或平局将被视为失败。"
 
 msgid "intro/description/ranks"
-msgstr "反映玩家战斗技巧的系统。从黑铁段位晋升到传说段位并获得珍贵奖励。在整个蝎狮赛年中持续战斗，获取独特的年度奖励。"
+msgstr "反映玩家战斗技巧的系统。从黑铁段位晋升到传说段位并获得珍贵奖励。在整个巨龙赛年中持续战斗，获取独特的年度奖励。"
 
 msgid "intro/description/roleSkills"
 msgstr ""
-"根据角色的不同，每辆坦克都拥有具有3个充能等级的特殊能力。\n"
-"能力激活时的充能等级越高，能力的效果就越强大。充能等级取决于声望点数数量。\n"
-"战斗中的出色表现、占领焦点位置、使用战术能力等行为可获取声望点数。\n"
+"根据角色的不同，每辆坦克都拥有具有3个充能等级的特殊能力。能力激活时的充能等级越高，能力的效果就越强大。充能等级取决于声望点数数量。战斗中的出色表现、占领焦点位置、使用战术能力等行为可获取声望点数。\n"
 "\n"
-"查看活动规则，了解更多关于获取声望点数的不同方式。"
+"查看模式规则，了解更多关于获取声望点数的不同方式。"
 
 msgid "intro/description/vehiclesOnMap"
 msgstr ""
-"您可驾驶X级可研发坦克(自行火炮除外)、收藏坦克、部分特种坦克参加战斗。在车库中准备好坦克，进入战场后再根据指定地图的特点选择最佳坦克。选择坦克时，您还要考虑盟友选择了哪些坦克。"
+"您可驾驶%(levels)s级可研发坦克(自行火炮除外)、收藏坦克、部分特种坦克参加战斗。在车库中准备好坦克，进入战场后，再根据指定地图的特点选择最合适的坦克。选择坦克时，您还要考虑盟友选择了哪些坦克。"
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "天梯战修改器"
@@ -567,9 +533,7 @@ msgid "lastUpdateNote/lastBestUserPoints/update"
 msgstr "数据更新中..."
 
 msgid "lastUpdateNote/ratingPositions/description"
-msgstr ""
-"排行榜\n"
-"每%(count)s分钟更新一次。"
+msgstr "排行榜每%(count)s分钟更新一次。"
 
 msgid "lastUpdateNote/tooltip/info"
 msgstr "上次更新时间：%(date)s"
@@ -583,15 +547,9 @@ msgstr "达到勇士或传说段位才可登上排行榜。"
 msgid "leaderboard/error/buttonText"
 msgstr "更新"
 
-msgid "leaderboard/error/description"
-msgstr "我们对暂时的不便表示歉意。请稍后尝试更新该页面。"
-
-msgid "leaderboard/error/title"
-msgstr "加载数据时出错"
-
 msgid "leaderboard/noRecords/subtitle"
 msgstr ""
-"勇士和传说段位的玩家将登上排行榜。获得{whiteSpanish_Open}%(pointsCount)s{whiteSpanish_Close}评级点数，荣登榜首！"
+"勇士和传说段位的玩家将登上排行榜。获得{eeede9e6_Open}%(pointsCount)s{eeede9e6_Close}评级点数，荣登榜首！"
 
 msgid "leaderboard/noRecords/title"
 msgstr "本赛季尚未有玩家登上排行榜"
@@ -635,57 +593,6 @@ msgstr "评级点数"
 msgid "listSeparator"
 msgstr "、"
 
-msgid "mainWidget/ratingCalculation"
-msgstr ""
-"正在等待资格赛结果\n"
-"以确定您的段位%(timer)s"
-
-msgid "mainWidget/status"
-msgstr "%(score)s/%(scoreToNextDivision)s"
-
-msgid "mainWidget/tooltip/inactive/body"
-msgstr "如果不参加此模式的战斗，您会失去一定的评级点数。"
-
-msgid "mainWidget/tooltip/inactive/header"
-msgstr "评级不活跃"
-
-msgid "mainWidget/tooltip/inactive/note"
-msgstr "距评级下降的天数：%(days)s"
-
-msgid "mainWidget/warning"
-msgstr "如果不参加战斗，您的评级会下降。"
-
-msgid "mainWidgetTooltip/battlesCounter"
-msgstr ""
-"%(battleIcon)s{cream_Open}%(battlesCount)s{cream_Close}/%(maxBattlesCount)s"
-
-msgid "mainWidgetTooltip/division"
-msgstr "梯队：%(divisionName)s"
-
-msgid "mainWidgetTooltip/divisionDescription"
-msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家属于此梯队。"
-
-msgid "mainWidgetTooltip/info/fifth"
-msgstr ""
-"玩家需要在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能达到传说段位。"
-
-msgid "mainWidgetTooltip/info/sixth"
-msgstr ""
-"在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}的玩家将被授予传说段位。"
-
-msgid "mainWidgetTooltip/qualification/condition"
-msgid_plural "plural/mainWidgetTooltip/qualification/condition"
-msgstr[0] "在该模式中参加%(maxBattlesCount)s场战斗以确定您的战斗技巧水平和段位。"
-msgstr[1] "在该模式中参加%(maxBattlesCount)s场战斗以确定您的战斗技巧水平和段位。"
-msgstr[2] "在该模式中参加%(maxBattlesCount)s场战斗以确定您的战斗技巧水平和段位。"
-
-msgid "mainWidgetTooltip/qualificationName"
-msgstr "资格赛"
-
-msgid "mainWidgetTooltip/ratingScore"
-msgstr "评级点数"
-
 msgid "membersWindow/memberCountDropdown/description"
 msgstr "组队玩家"
 
@@ -713,6 +620,9 @@ msgstr ""
 
 msgid "noVehicles/text/vehicleUnavailable"
 msgstr "您的车库中需要有至少一辆符合该模式要求的%(levels)s级坦克才能参加天梯战。"
+
+msgid "noVehicles/title"
+msgstr "您的车库中没有满足要求的坦克"
 
 msgid "page/heading/leaderboard"
 msgstr "排行榜"
@@ -765,51 +675,14 @@ msgstr "等待玩家..."
 msgid "prebattleTimer/wait/selectVehicle"
 msgstr "选择坦克"
 
-msgid "primeTimeView/endOfCycle"
-msgstr "%(server)s服务器上的阶段已结束"
-
-msgid "primeTimeView/server"
-msgstr "开放服务器：%(server)s。"
-
-msgid "primeTimeView/serverTooltip"
-msgstr ""
-"%(server)s服务器\n"
-"战斗还将开放%(time)s"
-
-msgid "primeTimeView/serverUnavailableTooltip"
-msgstr ""
-"%(server)s服务器\n"
-"距战斗开放还有%(time)s"
-
-msgid "primeTimeView/servers"
-msgstr "开放服务器:"
-
-msgid "primeTimeView/status/allServersDisabled"
-msgstr "所有服务器上的战斗都未开放"
-
-msgid "primeTimeView/status/disableFirst"
-msgstr "该模式在%(server)s服务器上不开放"
-
-msgid "primeTimeView/status/primeIsAvailable"
-msgstr "%(server)s服务器上的战斗还将开放%(time)s"
-
-msgid "primeTimeView/status/primeWillBeAvailable"
-msgstr "距%(server)s服务器上的战斗开放还有%(time)s"
-
 msgid "primeTimeView/status/seasonDisabled/first"
-msgstr "%(server)s服务器上的苍蓝蝎狮赛季已结束。"
+msgstr "%(server)s服务器上的苍蓝巨龙赛季已结束。"
 
 msgid "primeTimeView/status/seasonDisabled/second"
-msgstr "%(server)s服务器上的绯红蝎狮赛季已结束。"
+msgstr "%(server)s服务器上的绯红巨龙赛季已结束。"
 
 msgid "primeTimeView/status/seasonDisabled/third"
-msgstr "%(server)s服务器上的翡翠蝎狮赛季已结束。"
-
-msgid "primeTimeView/status/untill"
-msgstr "%(server)s服务器上的战斗将于%(startTime)s开放"
-
-msgid "primeTimeView/title"
-msgstr "天梯战"
+msgstr "%(server)s服务器上的翡翠巨龙赛季已结束。"
 
 msgid "products/actions/buy"
 msgstr "购买"
@@ -834,7 +707,7 @@ msgstr "-%(discountPercentage)s%"
 
 msgid "products/discountDescription"
 msgstr ""
-"在下个赛季开始前，您可根据自己{fff_Open}所达到的{fff_Close}{fff_Open}最高{fff_Close}{fff_Open}段位{fff_Close}解锁物品和折扣。"
+"在下个赛季开始前，您可根据自己{eeede9e6_Open}所达到的{eeede9e6_Close}{eeede9e6_Open}最高{eeede9e6_Close}{eeede9e6_Open}段位{eeede9e6_Close}解锁物品和折扣。"
 
 msgid "products/discountSectionName"
 msgstr "物品和折扣的解锁条件"
@@ -879,6 +752,45 @@ msgstr "可在仓库中进行恢复"
 msgid "products/style3d"
 msgstr "%(name)s3D风格"
 
+msgid "progressionTooltip/division"
+msgstr "梯队%(divisionName)s"
+
+msgid "progressionTooltip/divisionDescription"
+msgstr "拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家属于此梯队。"
+
+msgid "progressionTooltip/info/fifth"
+msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
+
+msgid "progressionTooltip/info/sixth"
+msgstr "在排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}的玩家将被授予传说段位。"
+
+msgid "progressionTooltip/qualification/condition"
+msgid_plural "plural/progressionTooltip/qualification/condition"
+msgstr[0] "在该模式中参加%(maxBattlesCount)s场战斗以确定您的战斗技巧水平和段位。"
+msgstr[1] "在该模式中参加%(maxBattlesCount)s场战斗以确定您的战斗技巧水平和段位。"
+msgstr[2] "在该模式中参加%(maxBattlesCount)s场战斗以确定您的战斗技巧水平和段位。"
+
+msgid "progressionTooltip/qualificationName"
+msgstr "资格赛"
+
+msgid "progressionTooltip/rankInactivity/daysLeft"
+msgstr "距离评级下降的天数: {eeede9e6_Open}%(rankInactivityCount)s{eeede9e6_Close}"
+
+msgid "progressionTooltip/rankInactivity/description/active"
+msgid_plural "plural/progressionTooltip/rankInactivity/description/active"
+msgstr[0] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
+msgstr[1] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
+msgstr[2] "在天梯战模式中不参加战斗会失去{eeede9e6_Open}%(count)s{eeede9e6_Close}评级点数。"
+
+msgid "progressionTooltip/rankInactivity/header/active"
+msgstr "您的评级会受到评级不活跃的影响。"
+
+msgid "progressionTooltip/rankInactivity/warning"
+msgstr "在今天结束前参加战斗以保持您的段位。"
+
+msgid "progressionTooltip/ratingScore"
+msgstr "评级点数"
+
 msgid "purchase/affirmative"
 msgstr "收到！"
 
@@ -922,11 +834,11 @@ msgstr ""
 msgid "qualification/condition"
 msgid_plural "plural/qualification/condition"
 msgstr[0] ""
-"在该模式中参加{white_Open}%(maxBattlesCount)s{white_Close}场战斗以确定您的战斗技巧水平和段位。"
+"在该模式中参加{eeede9_Open}%(maxBattlesCount)s场战斗{eeede9_Close}以确定您的战斗技巧水平和段位。"
 msgstr[1] ""
-"在该模式中参加{white_Open}%(maxBattlesCount)s{white_Close}场战斗以确定您的战斗技巧水平和段位。"
+"在该模式中参加{eeede9_Open}%(maxBattlesCount)s场战斗{eeede9_Close}以确定您的战斗技巧水平和段位。"
 msgstr[2] ""
-"在该模式中参加{white_Open}%(maxBattlesCount)s{white_Close}场战斗以确定您的战斗技巧水平和段位。"
+"在该模式中参加{eeede9_Open}%(maxBattlesCount)s场战斗{eeede9_Close}以确定您的战斗技巧水平和段位。"
 
 msgid "qualification/conditionTooltip/body"
 msgid_plural "plural/qualification/conditionTooltip/body"
@@ -944,13 +856,13 @@ msgid "qualification/conditionTooltip/header"
 msgstr "资格赛规则"
 
 msgid "qualification/counter"
-msgstr "%(battlesCount)s/%(maxBattlesCount)s"
+msgstr "%(battlesCount)s%(divider)s%(maxBattlesCount)s"
 
 msgid "qualification/counterWithDescription"
 msgstr "参战场次"
 
 msgid "qualification/ratingCalculationDescription"
-msgstr "正在等待资格赛结果以确定您的段位%(timerIcon)s"
+msgstr "%(timerIcon)s正在等待资格赛结果以确定您的段位"
 
 msgid "qualification/ratingCalculationTooltip"
 msgstr "根据资格赛结果计算您的评级可能最多需要5分钟。之后，您将获得一个段位，并可以继续参加天梯战。"
@@ -1016,63 +928,59 @@ msgid "rankInactivityTooltip/timeLeft"
 msgstr "距您的评级下降的天数：%(count)s"
 
 msgid "rankInfo/current/fifth"
-msgstr ""
-"拥有至少{whiteSpanish_Open}%(fromScore){whiteSpanish_Close}评级点数的玩家将被授予勇士段位。"
+msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
 
 msgid "rankInfo/current/sixth"
-msgstr ""
-"在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}的玩家将被授予传说段位。"
+msgstr "在排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}的玩家将被授予传说段位。"
 
 msgid "rankItemStatus/current/description/fifth"
 msgstr ""
-"您的评级点数需要在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能达到传说段位。"
+"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能达到传说段位。"
 
 msgid "rankItemStatus/current/description/sixth"
 msgstr ""
-"您的评级点数需要在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能保持您的传说段位。"
+"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能保持传说段位。"
 
 msgid "rankItemStatus/current/extendedDescription/fifth"
 msgstr ""
-"您需要在评级点数排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能达到传说段位。传说段位末位玩家所获的评级点数:"
-" {whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能达到传说段位。传说段位末位玩家所获的评级点数:"
+" {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
 msgid "rankItemStatus/current/extendedDescription/sixth"
 msgstr ""
-"您的评级点数需要在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能保持您的传说段位。传说段位末位玩家的评级点数:"
-" {whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能保持传说段位。传说段位末位玩家的评级点数:"
+" {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
 msgid "rankItemStatus/future/description/fifth"
-msgstr ""
-"拥有至少{whiteSpanish_Open}%(fromScore){whiteSpanish_Close}评级点数的玩家将被授予勇士段位。"
+msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
 
 msgid "rankItemStatus/future/description/first"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予黑铁段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予黑铁段位。"
 
 msgid "rankItemStatus/future/description/fourth"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予黄金段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予黄金段位。"
 
 msgid "rankItemStatus/future/description/second"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予青铜段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予青铜段位。"
 
 msgid "rankItemStatus/future/description/sixth"
 msgstr ""
-"您的评级点数需要在排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能达到传说段位。"
+"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能达到传说段位。"
 
 msgid "rankItemStatus/future/description/third"
 msgstr ""
-"拥有{whiteSpanish_Open}%(fromScore)至%(toScore){whiteSpanish_Close}评级点数的玩家将被授予白银段位。"
+"拥有{eeede9e6_Open}%(fromScore)至%(toScore){eeede9e6_Close}评级点数的玩家将被授予白银段位。"
 
 msgid "rankItemStatus/future/extendedDescription/sixth"
 msgstr ""
-"您需要在评级点数排行榜上排名{whiteSpanish_Open}前%(topPercentage)%{whiteSpanish_Close}才能达到传说段位。传说段位末位玩家所获的评级点数:"
-" {whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+"您需要在评级点数排行榜上排名{eeede9e6_Open}前%(topPercentage)%{eeede9e6_Close}才能达到传说段位。传说段位末位玩家所获的评级点数:"
+" {eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
 msgid "rankItemStatus/previous/description/fifth"
-msgstr ""
-"拥有至少{whiteSpanish_Open}%(fromScore){whiteSpanish_Close}评级点数的玩家将被授予勇士段位。"
+msgstr "拥有至少{eeede9e6_Open}%(fromScore){eeede9e6_Close}评级点数的玩家将被授予勇士段位。"
 
 msgid "rankUpper/fifth"
 msgstr "勇士"
@@ -1133,10 +1041,10 @@ msgid "rewards/status/achieved"
 msgstr "已获得奖励"
 
 msgid "rewards/subtitle/customizations"
-msgstr "适用于{whiteSpanish_Open}%(vehicleLevel)s级坦克{whiteSpanish_Close}"
+msgstr "{b2afab_Open}适用于%(vehicleLevel)s级坦克{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr "{whiteSpanish_Open}适用于\"融合兽(翡翠)\"风格{whiteSpanish_Close}"
+msgstr "{b2afab_Open}适用于\"威龙称霸(苍蓝)\"风格{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s级"
@@ -1160,19 +1068,19 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "已完成天梯战资格赛"
 
 msgid "rewardsScreen/description/season/first"
-msgstr "天梯战苍蓝蝎狮赛季"
+msgstr "天梯战: 苍蓝巨龙赛季"
 
 msgid "rewardsScreen/description/season/second"
-msgstr "天梯战绯红蝎狮赛季"
+msgstr "天梯战: 绯红巨龙赛季"
 
 msgid "rewardsScreen/description/season/third"
-msgstr "天梯战翡翠蝎狮赛季"
+msgstr "天梯战: 翡翠巨龙赛季"
 
 msgid "rewardsScreen/description/year"
-msgstr "天梯战蝎狮赛年"
+msgstr "天梯战: 巨龙赛年"
 
 msgid "rewardsScreen/goToVehicle"
-msgstr "我的毒刺在哪里？！"
+msgstr "我的灰烬使者在哪里？！"
 
 msgid "rewardsScreen/noSeasonResult"
 msgstr "无段位"
@@ -1207,34 +1115,34 @@ msgid "rewardsScreen/shopInfo/text/open"
 msgstr "在下个赛季开始前，您可根据自己所达到的最高段位解锁物品和折扣。"
 
 msgid "rewardsScreen/subtitle/division"
-msgstr "{cream_Open}%(rank)s段位{cream_Close}"
+msgstr "{ffe4c0_Open}%(rank)s段位{ffe4c0_Close}"
 
 msgid "rewardsScreen/subtitle/qualificationRewards"
-msgstr "根据资格赛结果，您已获得以下段位的奖励: {cream_Open}%(ranks)s{cream_Close}"
+msgstr "根据资格赛结果，您已获得以下段位的奖励: {ffe4c0_Open}%(ranks)s{ffe4c0_Close}"
 
 msgid "rewardsScreen/subtitle/qualificationRewardsSeparator"
 msgstr "，"
 
 msgid "rewardsScreen/subtitle/rankRewards"
-msgstr "您已获得了晋升至{cream_Open}%(rank)s{cream_Close}段位的奖励"
+msgstr "您已获得了晋升至{ffe4c0_Open}%(rank)s{ffe4c0_Close}段位的奖励"
 
 msgid "rewardsScreen/subtitle/tokensRewards"
 msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
-msgstr[0] "完成{cream_Open}%(tokensCount)s{cream_Close}个每周任务的奖励"
-msgstr[1] "完成{cream_Open}%(tokensCount)s{cream_Close}个每周任务的奖励"
-msgstr[2] "完成{cream_Open}%(tokensCount)s{cream_Close}个每周任务的奖励"
+msgstr[0] "完成{ffe4c0_Open}%(tokensCount)s{ffe4c0_Close}个每周任务的奖励"
+msgstr[1] "完成{ffe4c0_Open}%(tokensCount)s{ffe4c0_Close}个每周任务的奖励"
+msgstr[2] "完成{ffe4c0_Open}%(tokensCount)s{ffe4c0_Close}个每周任务的奖励"
 
 msgid "rewardsScreen/title/division"
 msgstr "已达到梯队%(division)s"
 
 msgid "rewardsScreen/title/qualificationRank"
-msgstr "已达到{cream_Open}%(rankUpperName)s{cream_Close}段位"
+msgstr "已达到{ffe4c0_Open}%(rankUpperName)s{ffe4c0_Close}段位"
 
 msgid "rewardsScreen/title/qualificationRewards"
 msgstr "已达到段位的奖励"
 
 msgid "rewardsScreen/title/rank"
-msgstr "已达到{cream_Open}%(rankUpperName)s{cream_Close}段位"
+msgstr "已达到{ffe4c0_Open}%(rankUpperName)s{ffe4c0_Close}段位"
 
 msgid "rewardsScreen/title/rankRewards"
 msgstr "您的新段位奖励"
@@ -1287,17 +1195,14 @@ msgstr "%(startDate)s–%(endDate)s"
 msgid "season/secondsLeft"
 msgstr "距结束还有%(seconds)s秒"
 
-msgid "seasonModifier/title"
-msgstr "天梯战修改器"
-
 msgid "seasonName/first"
-msgstr "苍蓝蝎狮赛季"
+msgstr "苍蓝巨龙赛季"
 
 msgid "seasonName/second"
-msgstr "绯红蝎狮赛季"
+msgstr "绯红巨龙赛季"
 
 msgid "seasonName/third"
-msgstr "翡翠蝎狮赛季"
+msgstr "翡翠巨龙赛季"
 
 msgid "seasonPointTooltip/header"
 msgstr "天梯彩旗"
@@ -1356,13 +1261,13 @@ msgstr[1] "已获得%(points)s面天梯彩旗"
 msgstr[2] "已获得%(points)s面天梯彩旗"
 
 msgid "seasonStatistics/seasonNameUpper/first"
-msgstr "赛季I: 苍蓝蝎狮"
+msgstr "赛季I: 苍蓝巨龙"
 
 msgid "seasonStatistics/seasonNameUpper/second"
-msgstr "赛季II: 绯红蝎狮"
+msgstr "赛季II: 绯红巨龙"
 
 msgid "seasonStatistics/seasonNameUpper/third"
-msgstr "赛季III: 翡翠蝎狮"
+msgstr "赛季III: 翡翠巨龙"
 
 msgid "seasonStatistics/section/statistics/battles/additional"
 msgstr "胜率: %(additional)s"
@@ -1459,13 +1364,13 @@ msgid "selectorTooltip/unavailable/nextSeason"
 msgstr "此模式将于%(time)s开放"
 
 msgid "shortSeasonName/first"
-msgstr "苍蓝蝎狮"
+msgstr "苍蓝巨龙"
 
 msgid "shortSeasonName/second"
-msgstr "绯红蝎狮"
+msgstr "绯红巨龙"
 
 msgid "shortSeasonName/third"
-msgstr "翡翠蝎狮"
+msgstr "翡翠巨龙"
 
 msgid "sidebar/tabs/tooltip/body/leaderboard"
 msgstr "此版块包含天梯战模式当前赛季最强玩家的信息。"
@@ -1511,7 +1416,7 @@ msgstr "年度战绩统计"
 
 msgid "sixthRankTooltip/description"
 msgstr ""
-"评级点数在排行榜上{whiteSpanish_Open}排名前%(topPercentage)%{whiteSpanish_Close}的玩家将授予{whiteSpanish_Open}传说{whiteSpanish_Close}段位。"
+"评级点数在排行榜上{eeede9e6_Open}排名前%(topPercentage)%{eeede9e6_Close}的玩家将授予{eeede9e6_Open}传说{eeede9e6_Close}段位。"
 
 msgid "style3dTooltip/954"
 msgstr "白银尖刺"
@@ -1617,6 +1522,12 @@ msgstr ""
 msgid "system_messages/weeklyReward/title"
 msgstr "每周任务的奖励"
 
+msgid "tooltip/infoPageButton/header"
+msgstr "关于天梯战"
+
+msgid "tooltip/whatsNewButton/header"
+msgstr "赛季更新"
+
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "在赛事中不会获取或失去评级点数。"
 
@@ -1647,34 +1558,36 @@ msgstr "加入语音聊天"
 msgid "waitingSpinner/message"
 msgstr "加载内容中..."
 
-msgid "weeklyQuestTooltip/additionalRewards"
-msgstr "完成{cream_Open}%(questsList)s{cream_Close}个任务即可获得额外奖励"
+msgid "weeklyQuestWidgetTooltip/completed"
+msgstr "已完成天梯战任务"
 
-msgid "weeklyQuestTooltip/countdownStatus"
-msgid_plural "plural/weeklyQuestTooltip/countdownStatus"
-msgstr[0] ""
-"距%(value)s个新任务开放还有:\n"
-"%(countdown)s"
-msgstr[1] ""
-"距%(value)s个新任务开放还有:\n"
-"%(countdown)s"
-msgstr[2] ""
-"距%(value)s个新任务开放还有:\n"
-"%(countdown)s"
+msgid "weeklyQuestWidgetTooltip/completedDescription"
+msgstr "太棒了！您已完成所有的每周任务。别忘了领取奖励，下个赛季见！"
 
-msgid "weeklyQuestTooltip/counterQuests"
-msgstr "已完成任务: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+msgid "weeklyQuestWidgetTooltip/counter"
+msgstr "%(current)s/%(total)s"
 
-msgid "weeklyQuestTooltip/questsProgres"
-msgstr "{yellow_Open}%(current)s{yellow_Close}/%(total)s"
-
-msgid "weeklyQuestTooltip/takeRewards/header"
-msgstr "干得漂亮！"
-
-msgid "weeklyQuestTooltip/takeRewards/text"
+msgid "weeklyQuestWidgetTooltip/description"
 msgstr ""
-"您已完成所有的每周任务。\n"
-"别忘了领取您的奖励，下个赛季见！"
+"完成{eeede9e5_Open}%(questsList)s{eeede9e5_Close}和{eeede9e5_Open}%(lastQuest)s{eeede9e5_Close}任务即可获得更多奖励"
+
+msgid "weeklyQuestWidgetTooltip/header"
+msgstr "天梯战每周任务"
+
+msgid "weeklyQuestWidgetTooltip/missionsCounter"
+msgstr "已完成: %(counter)s"
+
+msgid "weeklyQuestWidgetTooltip/newMissions"
+msgid_plural "weeklyQuestWidgetTooltip/newMissions"
+msgstr[0] "距%(value)s个新任务开放还有:"
+msgstr[1] "距%(value)s个新任务开放还有:"
+msgstr[2] "距%(value)s个新任务开放还有:"
+
+msgid "weeklyQuestWidgetTooltip/rewards"
+msgid_plural "weeklyQuestWidgetTooltip/rewards"
+msgstr[0] "奖励:"
+msgstr[1] "奖励:"
+msgstr[2] "奖励:"
 
 msgid "weeklyQuests/CountdownStatus/active"
 msgid_plural "plural/weeklyQuests/CountdownStatus/active"
@@ -1686,7 +1599,7 @@ msgid "weeklyQuests/CountdownStatus/done"
 msgstr "新任务将于下赛季开放！"
 
 msgid "weeklyQuests/TokenProgress/header"
-msgstr "已完成任务: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+msgstr "已完成任务: %(passed)s{eeede980_Open}/%(total)s{eeede980_Close}"
 
 msgid "weeklyQuests/TokenProgress/subheader"
 msgid_plural "plural/weeklyQuests/TokenProgress/subheader"
@@ -1718,39 +1631,55 @@ msgstr "完成前置任务以解锁这一个。"
 msgid "weeklyQuests/card/statusLockedTooltip/header"
 msgstr "任务未开放"
 
+msgid "weeklyQuestsWidget/claim"
+msgstr "领取您的奖励！"
+
+msgid "weeklyQuestsWidget/completed"
+msgstr "已完成: %(current)s/%(total)s"
+
+msgid "weeklyQuestsWidget/counter"
+msgstr "%(current)s/%(total)s"
+
+msgid "weeklyQuestsWidget/missionsCounter"
+msgstr "任务: %(current)s/%(total)s"
+
+msgid "weeklyQuestsWidget/newMissions"
+msgid_plural "plural/weeklyQuestsWidget/newMissions"
+msgstr[0] "距%(value)s个新任务开放还有:"
+msgstr[1] "距%(value)s个新任务开放还有:"
+msgstr[2] "距%(value)s个新任务开放还有:"
+
 msgid "whatsNewButtonLabel"
 msgstr "赛季更新"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "翡翠蝎狮赛季"
+msgstr "苍蓝巨龙赛季"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "天梯战有什么新内容？"
 
 msgid "whatsNewView/button/ok"
-msgstr "开始行动！"
+msgstr "龙焰喷射！"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"这个赛季是您获取珍贵奖励的最后机会，奖励包括专属的X级重型坦克毒刺(附带您为其赢得的所有独特3D风格、英勇无畏的乘员)，以及自选改进型和试验型配件，还有引人注目的2D风格等好物。精彩不容错过——胜利在战场上等待着您！"
+"参与全部3个赛季的征战，即可获取珍贵年度奖励，包括: "
+"专属的X级重型坦克灰烬使者，它附带已解锁的全部独特3D风格和无畏乘员，同时还有自选改进型和试验型配件、引人注目的2D风格等好物。在整个赛年中表现越好，获得的专属3D风格就越独特。"
 
 msgid "whatsNewView/intro/heading"
-msgstr "抓住蝎狮赛年的最后时刻！"
+msgstr "欢迎来到巨龙赛年！"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "地图"
 
-msgid "whatsNewView/roleSkills/description"
-msgstr "大部分角色能力已获得平衡性改动。欲知更多详情，请查阅赛季专题文章。"
-
-msgid "whatsNewView/roleSkills/heading"
-msgstr "角色能力平衡性改动"
+msgid "whatsNewView/newVehicles"
+msgstr "天梯战中开放的新坦克"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "已排除"
 
 msgid "whatsNewView/stamp/underDevelopment"
-msgstr "正在重新开发中"
+msgstr "++正在重新开发中++"
 
 msgid "whatsNewView/tag/changed"
 msgstr "已更改"
@@ -1863,25 +1792,25 @@ msgid "yearlyStatistics/rating"
 msgstr "评级点数"
 
 msgid "yearlyStatistics/seasonDate/0"
-msgstr "2024年秋"
+msgstr "2025年秋"
 
 msgid "yearlyStatistics/seasonDate/1"
-msgstr "2025年冬"
+msgstr "2026年冬"
 
 msgid "yearlyStatistics/seasonDate/2"
-msgstr "2025年春"
+msgstr "2026年春"
 
 msgid "yearlyStatistics/seasonDateInterval"
 msgstr "%(start)s–%(end)s"
 
 msgid "yearlyStatistics/seasonName/0"
-msgstr "赛季I: 苍蓝蝎狮"
+msgstr "赛季I: 苍蓝巨龙"
 
 msgid "yearlyStatistics/seasonName/1"
-msgstr "赛季II: 绯红蝎狮"
+msgstr "赛季II: 绯红巨龙"
 
 msgid "yearlyStatistics/seasonName/2"
-msgstr "赛季III: 翡翠蝎狮"
+msgstr "赛季III: 翡翠巨龙"
 
 msgid "yearlyStatistics/seasonStatus/active"
 msgstr "当前"

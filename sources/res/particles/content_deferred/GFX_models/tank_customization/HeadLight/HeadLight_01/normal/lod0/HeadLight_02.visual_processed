@@ -22,7 +22,7 @@
 					<identifier>Light_center</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						alphaFreshnelEnable
 						<Bool>true</Bool>
@@ -37,7 +37,7 @@
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>0.200000 2.000000 0.000000 0.000000</Vector4>
+						<Vector4>14.000000 0.200000 0.200000 0.000000</Vector4>
 					</property>
 					<property>
 						destBlend
@@ -56,8 +56,8 @@
 						<Vector4>1.000000 1.000000 0.010000 0.000000</Vector4>
 					</property>
 					<property>
-						enableLighting
-						<Bool>true</Bool>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 0.000000 2.000000 0.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 0.007335</groupOrigin>
@@ -68,7 +68,7 @@
 					<identifier>Light_Wide</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/HeadLight_02.dds</Texture>
@@ -86,12 +86,16 @@
 						<Vector4>1.000000 1.000000 0.010000 0.000000</Vector4>
 					</property>
 					<property>
-						enableLighting
-						<Bool>true</Bool>
+						lightMultipliers
+						<Vector4>1.800000 0.200000 0.100000 0.000000</Vector4>
 					</property>
 					<property>
-						lightMultipliers
-						<Vector4>0.400000 1.000000 0.100000 0.000000</Vector4>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 0.000000 1.400000 0.000000</Vector4>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.000000 0.007394</groupOrigin>
@@ -101,7 +105,7 @@
 				<material>
 					<identifier>raysFlash</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap
@@ -144,7 +148,7 @@
 					<identifier>rays</identifier>
 					<fx>shaders/custom/vector_animation_2.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						destBlend
 						<Int>2</Int>

@@ -1550,7 +1550,7 @@
 	</hull>
 	<chassis>
 		<Chassis_M46_Patton_2_FL>
-			<userString>#usa_vehicles:Chassis_M46_Patton_2</userString>
+			<userString>#usa_vehicles:Chassis_A63_M46_Patton_2</userString>
 			<tags/>
 			<level>9</level>
 			<price>60500</price>
@@ -1560,21 +1560,20 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>45050</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>57</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.11
+					0.08
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.11
+					0.08
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4034,7 +4033,7 @@
 	</chassis>
 	<turrets0>
 		<Turret_2_M46_Patton_FL>
-			<userString>#usa_vehicles:Turret_2_M46_Patton</userString>
+			<userString>#usa_vehicles:Turret_2_A63_M46_Patton</userString>
 			<tags/>
 			<level>9</level>
 			<price>52000</price>
@@ -4143,7 +4142,7 @@
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							3.5
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -5414,10 +5413,7 @@
 		<detailed>
 			<engines>
 				<Continental_AV-1790-1M2_FL>
-					<smplEnginePower>
-						866.9705
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>48</smplFwMaxSpeed>
 				</Continental_AV-1790-1M2_FL>
 			</engines>

@@ -10,7 +10,7 @@
 	<supplySlots>3 1 1 6 6 6 7 8 8 8</supplySlots>
 	<postProgressionTree>role_LT_universal</postProgressionTree>
 	<speedLimits>
-		<forward>64</forward>
+		<forward>65</forward>
 		<backward>25</backward>
 	</speedLimits>
 	<invisibility>
@@ -115,7 +115,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7965</weight>
-		<maxHealth>672</maxHealth>
+		<maxHealth>760</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1867,9 +1867,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>4500</weight>
-			<maxLoad>19000</maxLoad>
 			<terrainResistance>
-				0.8 0.9 1.7
+				0.7 0.8 1.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>17000</brakeForce>
@@ -1877,11 +1876,11 @@
 			<rotationSpeed>60</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.16
+					0.14
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.16
+					0.14
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -3233,7 +3232,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>4500</weight>
-			<maxLoad>20000</maxLoad>
 			<terrainResistance>
 				0.7 0.8 1.5
 				<!--BW_String-->
@@ -3243,11 +3241,11 @@
 			<rotationSpeed>65</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.14
+					0.12
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.14
+					0.12
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4637,7 +4635,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_3</primaryArmor>
 			<weight>3000</weight>
-			<maxHealth>168</maxHealth>
+			<maxHealth>190</maxHealth>
 			<rotationSpeed>46</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -4657,12 +4655,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_76mm_Gun_M1A2L>
+				<_76mm_Gun_M1A2_CMCD>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
 						<gun>
-							_76mm_Gun_T185E
+							_76mm_Gun_T185_CMCD
 							<cost>11200</cost>
 						</gun>
 					</unlocks>
@@ -4701,14 +4699,31 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.3
+						4.2
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.9
+						<!--BW_String-->
+					</aimingTime>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.08
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.5
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A112_T71E2/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/american/A112_T71E2/crash/lod0/Gun_02.model</destroyed>
@@ -4786,8 +4801,8 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_76mm_Gun_M1A2L>
-				<_76mm_Gun_T185E>
+				</_76mm_Gun_M1A2_CMCD>
+				<_76mm_Gun_T185_CMCD>
 					shared
 					<maxAmmo>60</maxAmmo>
 					<unlocks>
@@ -4831,20 +4846,20 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.5
+						4.3
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.9
+						1.8
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -4936,7 +4951,7 @@
 						</density>
 						<aoTextureSize>512 256</aoTextureSize>
 					</camouflage>
-				</_76mm_Gun_T185E>
+				</_76mm_Gun_T185_CMCD>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A112_T71E2/normal/lod0/Turret_01.model</undamaged>
@@ -6041,43 +6056,34 @@
 		</Turret_1_A112_T71E2R>
 	</turrets0>
 	<engines>
-		<Continental_AOI-628-1>
+		<Continental_AOI_628_1_CMCD>
 			shared
 			<unlocks>
 				<engine>
-					Continental_AOI-628-2
+					Continental_AOI_628_2_CMCD
 					<cost>10000</cost>
 				</engine>
 			</unlocks>
-		</Continental_AOI-628-1>
-		<Continental_AOI-628-2>shared</Continental_AOI-628-2>
+		</Continental_AOI_628_1_CMCD>
+		<Continental_AOI_628_2_CMCD>shared</Continental_AOI_628_2_CMCD>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-3>
-			shared
-			<unlocks>
-				<radio>
-					AN-ARC-27
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-3>
 		<AN-ARC-27>shared</AN-ARC-27>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Continental_AOI-628-1>
-					<smplEnginePower>350</smplEnginePower>
-					<smplFwMaxSpeed>64</smplFwMaxSpeed>
-				</Continental_AOI-628-1>
-				<Continental_AOI-628-2>
-					<smplEnginePower>420</smplEnginePower>
-					<smplFwMaxSpeed>64</smplFwMaxSpeed>
-				</Continental_AOI-628-2>
+				<Continental_AOI_628_1_CMCD>
+					<smplEnginePower>410</smplEnginePower>
+					<smplFwMaxSpeed>65</smplFwMaxSpeed>
+				</Continental_AOI_628_1_CMCD>
+				<Continental_AOI_628_2_CMCD>
+					<smplEnginePower>450</smplEnginePower>
+					<smplFwMaxSpeed>65</smplFwMaxSpeed>
+				</Continental_AOI_628_2_CMCD>
 			</engines>
 			<chassis>
 				<Chassis_A112_T71E2R>

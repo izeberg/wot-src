@@ -29,7 +29,7 @@ msgstr ""
 "《坦克世界》！"
 
 msgid "chapter-1/lesson-10/description"
-msgstr "您可以收集各型号坦克的蓝图碎片，加快研发的速度。所有II级及以上的坦克都有蓝图。在集齐蓝图碎片后，就可以不花费经验研发相关的坦克。"
+msgstr "您可收集每辆特定坦克的蓝图碎片，加快其研发速度。所有II–X级坦克都有蓝图。集齐蓝图碎片后，即可研发相关坦克，无需花费经验。"
 
 msgid "chapter-1/lesson-10/title"
 msgstr "蓝图"
@@ -83,13 +83,13 @@ msgid "chapter-1/lesson-5/title"
 msgstr "胜利条件"
 
 msgid "chapter-1/lesson-6/description"
-msgstr "每辆坦克都具有提供特定参数的模块。您可以使用经验研发并花费银币购买模块。"
+msgstr "每辆坦克都有提供特定参数的基础模块。一些坦克还有可替换的模块，您可使用经验研发模块，并花费银币购买。"
 
 msgid "chapter-1/lesson-6/title"
 msgstr "研发坦克"
 
 msgid "chapter-1/lesson-7/hint-1/text"
-msgstr "目前，游戏中提供了10个等级的坦克。每个等级都有大量富有挑战性和独特性的坦克可供研发。"
+msgstr "目前，本游戏拥有共计11个等级的坦克。每个等级都有各种具有挑战性且独特的坦克供您研发。"
 
 msgid "chapter-1/lesson-7/hint-2/text"
 msgstr "您需要经验和银币来研发和购买新坦克。"
@@ -211,7 +211,7 @@ msgid "chapter-3/lesson-1/hint-3/text"
 msgstr "发动机负责坦克的机动性。被击中可能起火。"
 
 msgid "chapter-3/lesson-1/hint-4/text"
-msgstr "悬挂装置影响坦克的负载能力和旋转速度。"
+msgstr "悬挂装置影响坦克的旋转速度。"
 
 msgid "chapter-3/lesson-1/hint-5/text"
 msgstr "无线电台影响小地图上坦克的显示范围。"
@@ -223,7 +223,7 @@ msgid "chapter-3/lesson-10/hint-1/text"
 msgstr "战斗中获得的全局经验等同于所获战斗经验的5%。"
 
 msgid "chapter-3/lesson-10/hint-2/text"
-msgstr "您可以使用全局经验来研发任意模块、坦克或改装，也可以加速乘员训练。"
+msgstr "您可使用全局经验来研发任意模块、坦克、战地升级或XI级坦克的升级节点，还可以加速乘员训练。"
 
 msgid "chapter-3/lesson-10/hint-3/text"
 msgstr "您可以将精英坦克上累积的额外战斗经验兑换为全局经验。"
@@ -232,7 +232,7 @@ msgid "chapter-3/lesson-10/title"
 msgstr "全局经验"
 
 msgid "chapter-3/lesson-11/hint-1/text"
-msgstr "研发了自身全部模块和相连研发分支后，坦克会成为精英坦克，包括升级路线中的所有相邻坦克。"
+msgstr "坦克必须研发其全部模块、升级节点，以及同研发分支上的相邻坦克，才能获得精英状态。"
 
 msgid "chapter-3/lesson-11/hint-2/text"
 msgstr "精英坦克获得的战斗经验可以通过花费金币来兑换为全局经验。"
@@ -275,7 +275,7 @@ msgstr "战地升级"
 
 msgid "chapter-3/lesson-16/description"
 msgstr ""
-"战地升级达到特定等级后，您的坦克将解锁备用配置的功能，您可以在车库中设置一组额外的配件、弹药、给养和指令。它不会替换掉主要配置，但可以为您提供新的选择。战斗开始前倒计时期间，您可以根据地图特点和团队阵容选择两种坦克配置之一。这会让您在后续的战斗中准备更加充分。"
+"解锁战地升级(适用于VI–X级坦克)中的备用配置，或备用配置升级节点(适用于XI级坦克)后，您即可在车库中设置一组额外的配件、弹药、给养和指令。这不会替换主要配置，并可为您带来更多战术机会。战前倒计时期间，您可根据地图特点和团队阵容选择2种坦克配置之一。这将有助于您适应相应的战斗环境。"
 
 msgid "chapter-3/lesson-16/title"
 msgstr "坦克在战斗中的配置"
@@ -367,7 +367,7 @@ msgid "chapter-3/lesson-9/hint-1/text"
 msgstr "战斗经验是在战斗中因特定贡献赢得的资源。"
 
 msgid "chapter-3/lesson-9/hint-2/text"
-msgstr "各辆坦克获得的战斗经验可以用来研发其模块、后续坦克以及改装。"
+msgstr "使用特定坦克获得的战斗经验，可用来研发其模块、后置坦克、战地升级，以及XI级坦克的升级节点。"
 
 msgid "chapter-3/lesson-9/title"
 msgstr "战斗经验"
@@ -523,6 +523,13 @@ msgstr ""
 
 msgid "chapter-5/lesson-14/title"
 msgstr "撞击"
+
+msgid "chapter-5/lesson-15/description"
+msgstr ""
+"开启后，装甲透视仪将在狙击模式下显示，在瞄准圈内标示敌方装甲的击穿几率。红色表示击穿几率较低或为零，绿色表示击穿几率较高，黄色则表示击穿几率中等。"
+
+msgid "chapter-5/lesson-15/title"
+msgstr "装甲透视仪"
 
 msgid "chapter-5/lesson-2/description"
 msgstr "坦克静止状态下的射击精度比移动时更好。避免在移动中向远处的敌方射击:不仅炮弹击中目标的概率极低，自身还会更容易被点亮。"
@@ -764,7 +771,7 @@ msgid "chapter-7/lesson-10/hint-2/text"
 msgstr "获得组队战斗的额外经验。"
 
 msgid "chapter-7/lesson-10/hint-3/text"
-msgstr "只有同等级坦克才能组队战斗。小队仅允许1辆轮式/履带式轻型坦克(VII–X级) 和1辆自行火炮加入。"
+msgstr "只有同等级坦克才能组队战斗。小队最多只能包含轮式/履带式轻型坦克(VII–XI级)和自行火炮各1辆。"
 
 msgid "chapter-7/lesson-10/title"
 msgstr "组队中"

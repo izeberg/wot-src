@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from collections import namedtuple
 from functools import partial
@@ -449,7 +450,7 @@ class BuyVehicleView(ViewImpl, EventSystemEntity, IPrbListener):
             if self.__returnCallback:
                 returnCallback = self.__returnCallback
             elif self.__returnAlias == VIEW_ALIAS.LOBBY_RESEARCH and g_currentPreviewVehicle.isPresent():
-                returnCallback = partial(event_dispatcher.showResearchView, g_currentPreviewVehicle.item.intCD, exitEvent=events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_TECHTREE), ctx={'nation': g_currentPreviewVehicle.item.nationName}))
+                returnCallback = partial(event_dispatcher.showResearchView, g_currentPreviewVehicle.item.intCD)
             elif self.__returnAlias == VIEW_ALIAS.LOBBY_STORE:
                 returnCallback = partial(event_dispatcher.showShop)
             else:
