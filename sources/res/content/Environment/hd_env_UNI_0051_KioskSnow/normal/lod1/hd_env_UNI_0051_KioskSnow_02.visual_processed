@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_env607_Kiosk</identifier>
+			<identifier>hd_env_UNI_0051_KioskSnow_02</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -31,59 +31,257 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>d0Shape.vertices</vertices>
+			<stream>d0Shape.uv2</stream>
+			<primitive>d0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>d_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>255</collisionFlags>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_GMM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_AM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_AM.dds</Texture>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_02_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_02_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.271456 0.205740 -0.143158</groupOrigin>
+				<groupOrigin>-0.001058 0.228760 0.096673</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>n_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<identifier>n_wood1</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_01_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_02_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_02_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_01_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_01_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.001058 1.294971 -0.010886</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_02_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_02_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.776471 0.890196 0.968627 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.925490 0.913725 0.901961 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_painted_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.570000 0.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.001058 1.294971 -0.010886</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n3Shape.vertices</vertices>
+			<primitive>n3Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_wood3</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_SU_071_AdvertisingPillar/hd_env_SU_071_AdvertisingPillar_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_071_AdvertisingPillar/hd_env_SU_071_AdvertisingPillar_GMM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0051_KioskSnow/hd_env_UNI_0051_KioskSnow_AM.dds</Texture>
+						normalMap
+						<Texture>content/Environment/hd_env_SU_071_AdvertisingPillar/hd_env_SU_071_AdvertisingPillar_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001058 1.289318 0.013197</groupOrigin>
+				<groupOrigin>0.065453 1.624081 0.585052</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>n_glass2</identifier>
+					<fx>shaders/std_effects/PBS_glass.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						dirtAlbedoMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_AM.dds</Texture>
+					</property>
+					<property>
+						glassMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_02_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_03_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.058688 1.621837 1.022933</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.228980 -0.124649 -2.023456</min>
-		<max>1.686068 2.673400 1.737141</max>
+		<min>-1.187888 -0.088346 -1.340153</min>
+		<max>1.185772 2.678289 1.485965</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>46794</geometrySize>
-	<minUVDensity>0.005517</minUVDensity>
+	<geometrySize>58098</geometrySize>
+	<minUVDensity>0.070028</minUVDensity>
 </root>

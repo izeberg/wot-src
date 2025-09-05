@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<elements>
+		<TEXCOORD>
+			<semanticIndex>2</semanticIndex>
+			<stream>12</stream>
+			<offset>0</offset>
+			<type>FLOAT2</type>
+		</TEXCOORD>
+	</elements>
+	<targets>
+		<target>
+			<name>D3D9</name>
+			<format>uv3pc</format>
+		</target>
+	</targets>
+</root>

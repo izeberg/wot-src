@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Buildings/hd_bld_SU_0158_ShopWindow/normal/lod3/hd_bld_SU_0158_ShopWindow</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-2.890226 -0.202577 -0.973635</min>
+		<max>2.890726 4.325145 0.956884</max>
+	</visibilityBox>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0158_ShopWindow/normal/lod2/hd_bld_SU_0158_ShopWindow</nodelessVisual>
+</root>

@@ -13,8 +13,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -24,10 +24,6 @@
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
 						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -43,15 +39,14 @@
 						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuins_BGMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001104 6.711104 -7.909247</groupOrigin>
+				<groupOrigin>-0.001104 6.711105 -8.070680</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.579503 -0.003198 -16.579405</min>
-		<max>1.768796 13.489062 0.778107</max>
+		<min>-1.464704 -0.002792 -16.325060</min>
+		<max>1.462496 13.425002 0.183701</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>2416</geometrySize>
-	<minUVDensity>0.000485</minUVDensity>
+	<geometrySize>3228</geometrySize>
+	<minUVDensity>0.000147</minUVDensity>
 </root>

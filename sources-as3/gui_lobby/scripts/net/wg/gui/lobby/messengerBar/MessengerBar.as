@@ -58,6 +58,8 @@ package net.wg.gui.lobby.messengerBar
       
       private static const INV_SESSION_STATS_COUNTERS:String = "InvSessionStatsCounters";
       
+      private static const INV_CHANNEL_BUTTON:String = "InvChannelButton";
+      
       private static const UNDERSCORE:String = "_";
       
       private static const BUTTONS_OFFSET_X:uint = 3;
@@ -159,6 +161,8 @@ package net.wg.gui.lobby.messengerBar
       
       private var _rightSideBtnsOrder:Vector.<IDisplayObject> = null;
       
+      private var _channelBtnVisible:Boolean = false;
+      
       public function MessengerBar()
       {
          this._counterManager = App.utils.counterManager;
@@ -192,6 +196,7 @@ package net.wg.gui.lobby.messengerBar
          this.referralBtn.addEventListener(ButtonEvent.CLICK,this.onReferralButtonClickHandler);
          this.vehicleCompareCartBtn.addEventListener(ButtonEvent.CLICK,this.onVehicleCmpBtnClickHandler);
          this.sessionStatsBtn.visible = this._sessionStatsBtnVisible;
+         this.channelButton.visible = this._channelBtnVisible;
          this.sessionStatsBtn.addEventListener(ButtonEvent.CLICK,this.onSessionStatsBtnClickHandler);
          App.stage.addEventListener(MessengerBarEvent.PIN_CHANNELS_WINDOW,this.onStagePinChannelsWindowHandler);
       }
@@ -257,7 +262,7 @@ package net.wg.gui.lobby.messengerBar
          this.channelButton.disabledFillPadding = this.sessionStatsBtn.disabledFillPadding = this.vehicleCompareCartBtn.disabledFillPadding = this.contactsListBtn.disabledFillPadding = BUTTON_DISABLED_FILL_PADDING;
          this.channelButton.soundId = this.sessionStatsBtn.soundId = this.vehicleCompareCartBtn.soundId = this.contactsListBtn.soundId = BUTTON_SOUND_ID;
          this.channelButton.soundType = this.sessionStatsBtn.soundType = this.vehicleCompareCartBtn.soundType = this.contactsListBtn.soundType = BUTTON_SOUND_TYPE;
-         this.fakeChnlBtn.visible = _loc1_;
+         this.fakeChnlBtn.visible = _loc1_ && this._channelBtnVisible;
          this.fakeChnlBtn.addEventListener(MouseEvent.ROLL_OVER,this.onFakeChnlBtnRollOverHandler);
          this.fakeChnlBtn.addEventListener(MouseEvent.ROLL_OUT,this.onFakeChnlBtnRollOutHandler);
          this.fakeChnlBtn.addEventListener(MouseEvent.CLICK,this.onFakeChnlBtnClickHandler);
@@ -275,6 +280,7 @@ package net.wg.gui.lobby.messengerBar
       
       override protected function draw() : void
       {
+         var _loc1_:int = 0;
          super.draw();
          if(this._initData)
          {
@@ -329,11 +335,27 @@ package net.wg.gui.lobby.messengerBar
             this.bg.x = -this.paddingLeft;
             this.bg.width = this._stageDimensions.x;
          }
+         if(isInvalid(INV_CHANNEL_BUTTON) && this.channelButton.visible != this._channelBtnVisible)
+         {
+            this.channelButton.visible = this._channelBtnVisible;
+            this.fakeChnlBtn.visible = App.globalVarsMgr.isInRoamingS() && this._channelBtnVisible;
+            invalidate(InvalidationType.SIZE);
+         }
          if(isInvalid(InvalidationType.SIZE))
          {
             constraints.update(_width,_height);
-            this.channelButton.x = (!!this.referralBtn.visible ? this.referralBtn.x + this.referralBtn.width : this.contactsListBtn.x + this.contactsListBtn.width) + BUTTONS_OFFSET_X;
-            this.channelCarousel.x = Boolean(this.channelButton) ? Number(this.channelButton.x + this.channelButton.width) : (Boolean(this.channelButton) ? Number(this.channelButton.x + this.channelButton.width) : Number(0));
+            _loc1_ = 0;
+            _loc1_ = (!!this.referralBtn.visible ? this.referralBtn.x + this.referralBtn.width : this.contactsListBtn.x + this.contactsListBtn.width) + BUTTONS_OFFSET_X;
+            if(this.channelButton.visible)
+            {
+               this.channelButton.x = _loc1_;
+               this.fakeChnlBtn.x = this.channelButton.x;
+               this.channelCarousel.x = this.channelButton.x + this.channelButton.width;
+            }
+            else
+            {
+               this.channelCarousel.x = _loc1_;
+            }
          }
          if(isInvalid(INV_VEHICLE_CMP_VISIBLE))
          {
@@ -344,7 +366,7 @@ package net.wg.gui.lobby.messengerBar
             this.sessionStatsBtn.visible = this._sessionStatsBtnVisible;
             invalidate(INV_SESSION_STATS_COUNTERS);
          }
-         if(isInvalid(INV_VEHICLE_CMP_VISIBLE,INV_SESSION_STATS_VISIBLE,InvalidationType.SIZE))
+         if(isInvalid(INV_CHANNEL_BUTTON,INV_VEHICLE_CMP_VISIBLE,INV_SESSION_STATS_VISIBLE,InvalidationType.SIZE))
          {
             this.updateChannelCarouselWidth();
          }
@@ -448,6 +470,15 @@ package net.wg.gui.lobby.messengerBar
          {
             this._sessionStatsBtnVisible = param1;
             invalidate(INV_SESSION_STATS_VISIBLE);
+         }
+      }
+      
+      public function as_setChannelButtonVisible(param1:Boolean) : void
+      {
+         if(this._channelBtnVisible != param1)
+         {
+            this._channelBtnVisible = param1;
+            invalidate(INV_CHANNEL_BUTTON);
          }
       }
       

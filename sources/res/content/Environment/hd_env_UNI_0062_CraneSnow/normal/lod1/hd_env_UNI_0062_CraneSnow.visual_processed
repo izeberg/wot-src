@@ -19,15 +19,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_wall_0</identifier>
-					<materialKind>112</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>0.093023 6.287555 -0.063020</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>s_nd3</identifier>
 					<fx>shaders/std_effects/PBS_glass.fx</fx>
 					<collisionFlags>255</collisionFlags>
@@ -48,7 +39,7 @@
 				<groupOrigin>0.079775 10.426268 -0.820916</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				2
+				1
 				<material>
 					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -110,11 +101,15 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Rust_01_DM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-5.436780 21.257494 -9.488371</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				3
+				2
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -180,15 +175,11 @@
 						g_dirtColorParams
 						<Vector4>0.100000 0.000000 0.250000 0.000000</Vector4>
 					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>0.605690 11.832088 1.708483</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				4
+				3
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
@@ -265,6 +256,15 @@
 				</material>
 				<groupOrigin>-5.458371 18.992128 -9.215122</groupOrigin>
 			</primitiveGroup>
+			<primitiveGroup>
+				4
+				<material>
+					<identifier>s_wall_0</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>128</collisionFlags>
+				</material>
+				<groupOrigin>0.093023 6.287555 -0.063020</groupOrigin>
+			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
@@ -272,6 +272,6 @@
 		<max>5.976682 38.198551 8.465943</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>394952</geometrySize>
+	<geometrySize>403834</geometrySize>
 	<minUVDensity>0.000047</minUVDensity>
 </root>

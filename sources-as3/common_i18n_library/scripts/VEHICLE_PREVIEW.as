@@ -63,6 +63,8 @@ package
       
       public static const BUYINGPANEL_PMOPERATIONVEHICLELABEL:String = "#vehicle_preview:buyingPanel/pmOperationVehicleLabel";
       
+      public static const BUYINGPANEL_PMCAMPAIGNVEHICLELABEL:String = "#vehicle_preview:buyingPanel/pmCampaignVehicleLabel";
+      
       public static const BUYINGPANEL_AVAILABLEFORWOTPLUS:String = "#vehicle_preview:buyingPanel/availableForWotPlus";
       
       public static const BUYINGPANEL_TRADEINLABEL:String = "#vehicle_preview:buyingPanel/tradeInLabel";

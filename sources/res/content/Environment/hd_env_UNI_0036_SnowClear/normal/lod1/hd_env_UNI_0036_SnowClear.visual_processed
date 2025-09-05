@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -33,10 +33,6 @@
 					</property>
 					<property>
 						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>

@@ -31,52 +31,52 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>turret_02_Shape.vertices</vertices>
+			<primitive>turret_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_turret_02</identifier>
-					<property>
-						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB135_FV240/FV240_proxy_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/british/GB135_FV240/FV240_proxy_ANM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB135_FV240/FV240_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB135_FV240/FV240_proxy_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB135_FV240/FV240_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						normalMap
+						<Texture>vehicles/british/GB135_FV240/FV240_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB135_FV240/FV240_proxy_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.006217 0.854275 -0.127978</groupOrigin>
+				<groupOrigin>-0.006217 0.597646 -0.127978</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-1.384130 -0.086517 -1.699852</min>
-		<max>1.371695 1.795068 1.443895</max>
+		<max>1.371695 1.281808 1.443895</max>
 	</boundingBox>
-	<geometrySize>5940</geometrySize>
+	<geometrySize>2148</geometrySize>
 	<minUVDensity>0.001764</minUVDensity>
 </root>

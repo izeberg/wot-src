@@ -52,6 +52,10 @@
 						<Vector4>0.100000 0.450000 0.000000 0.130000</Vector4>
 					</property>
 					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.500000</Vector4>
+					</property>
+					<property>
 						g_tile0Tint
 						<Vector4>0.658824 0.658824 0.658824 1.000000</Vector4>
 					</property>
@@ -79,12 +83,8 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Wood_12_planks_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.500000 1.000000 0.500000</Vector4>
-					</property>
 				</material>
-				<groupOrigin>-0.860921 2.183645 1.007949</groupOrigin>
+				<groupOrigin>-0.727286 2.199353 0.928751</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -98,10 +98,10 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.597994 -2.130541 -18.717894</min>
-		<max>2.809216 6.517054 20.592192</max>
+		<min>-4.597994 -2.130541 -18.734692</min>
+		<max>2.809216 6.520288 20.592194</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>9300</geometrySize>
-	<minUVDensity>0.019742</minUVDensity>
+	<geometrySize>18068</geometrySize>
+	<minUVDensity>0.075741</minUVDensity>
 </root>

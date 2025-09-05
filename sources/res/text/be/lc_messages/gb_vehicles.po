@@ -77,9 +77,6 @@ msgstr "C45AG"
 msgid "C45A_SH"
 msgstr "SR C45"
 
-msgid "C45_T"
-msgstr "SR C45 T"
-
 msgid "Cadillac_75_x_3"
 msgstr "Cadillac \"75\" x3"
 
@@ -161,9 +158,6 @@ msgstr "LHMTV Mk.I"
 
 msgid "Chassis_GB102_LHMTV_Mk2"
 msgstr "LHMTV Mk.II"
-
-msgid "Chassis_GB1031_Conqueror_Gun_T"
-msgstr "Conqueror Gun Carriage T"
 
 msgid "Chassis_GB103_GSOR3301_AVR_MK1"
 msgstr "GSOR3301 Mk.I"
@@ -837,23 +831,6 @@ msgstr ""
 
 msgid "GB102_LHMTV_short"
 msgstr "LHMTV"
-
-msgid "GB1031_Conqueror_Gun_T"
-msgstr "Conqueror Gun Carriage T"
-
-msgid "GB1031_Conqueror_Gun_T_descr"
-msgstr ""
-"Аванпраект 234-мм гаўбіцы на шасі танка Conqueror. Сілавая ўстаноўка "
-"размяшчалася ў пярэдняй частцы корпуса. Існаваў толькі ў эскізах."
-
-msgid "GB1031_Conqueror_Gun_T_long_special"
-msgstr "?empty?"
-
-msgid "GB1031_Conqueror_Gun_T_short"
-msgstr "ConquerorGC T"
-
-msgid "GB1031_Conqueror_Gun_T_short_special"
-msgstr "?empty?"
 
 msgid "GB103_GSOR3301_AVR_FS"
 msgstr "GSOR3301 AVR FS"
@@ -1537,7 +1514,7 @@ msgstr ""
 "разам з гэтым і аптымальная рухомасць. «Шчупаковы нос» з дадатковымі "
 "адхонамі, імаверна, быў спраектаваны з аглядкай на савецкія ІС-3 і Т-10. "
 "Літая вежа з істотным нахілам у пярэдняй частцы павінна была спрыяць "
-"рыкашэтам пры трапленні снарадаў. У астатнім канструкцыя танка была "
+"рыкашэтам пры траплянні снарадаў. У астатнім канструкцыя танка была "
 "ўвасабленнем брытанскай класікі. Аднак нават на стадыі праектавання ён "
 "атрымліваўся цяжкім і павольным, а з'яўленне СТКР і выкарыстанне аўтаматаў "
 "набівання зрабілі канцэпцыю двухствольных машын неактуальнай, ды і сусветная"
@@ -1618,18 +1595,22 @@ msgstr "CVT Spider"
 
 msgid "GB137_CVT_Spider_descr"
 msgstr ""
-" \n"
+"У 1950-я гады, у новых умовах вядзення ваенных дзеянняў, брытанскай арміі патрэбны быў авіятранспартабельны лёгкі танк, здольны да хуткага перакідвання ў любое месца свету і выканання разведвальных функцый для танкавых войскаў. У межах праекта CVT (Combat Vehicle Tracked — баявая гусенічная машына) інжынеры імкнуліся сумясціць высокую рухомасць і нізкі сілуэт, размясціўшы механіка-кіроўцу ў паўляжачай позе. Акрамя таго, планавалася забяспечыць высокую агнявую моц за кошт новай 105-мм гарматы з паніжаным імпульсам аддачы, адмыслова распрацаванай для лёгкай бранятэхнікі. Аднак праекту былі б уласцівыя і сур'ёзныя недахопы, перш за ўсё — цесната баявога аддзялення. Нездавальняючая заселенасць, у сваю чаргу, ускладняла б патрабаванні да экіпажаў CVT Spider. У выніку ад праекта было вырашана адмовіцца.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "GB137_CVT_Spider_long_special"
-msgstr "?empty?"
+msgstr ""
+"Лёгкі танк з выдатнымі паказчыкамі маскіроўкі і нізкім сілуэтам. Магутная "
+"гармата з высокай забойнасцю стрэлу і сістэмай данабівання на 2 снарады мае "
+"шэраг слабых бакоў, аднак маскіроўка танка нівелюе ўсе недахопы стральбы і "
+"дае магчымасць эфектыўна адыгрываць ролю разведчыка."
 
 msgid "GB137_CVT_Spider_short"
 msgstr "Spider"
 
 msgid "GB137_CVT_Spider_short_special"
-msgstr "?empty?"
+msgstr "Добрая маскіроўка, сістэма данабівання магазіна"
 
 msgid "GB13_FV215b"
 msgstr "FV215b"
@@ -3079,9 +3060,6 @@ msgstr "Rolls-Royce Meteor M120T"
 msgid "Rolls_Royse_Meteor_M120T_T"
 msgstr "Rolls-Royce Meteor M120T"
 
-msgid "Rolls_Royse_Meteor_M120_T"
-msgstr "Rolls-Royce Meteor M120 T"
-
 msgid "Rolls_Royse_Meteor_Mk12"
 msgstr "Rolls-Royce Meteor Mk. 12"
 
@@ -3177,9 +3155,6 @@ msgstr "Senlac Mk1"
 
 msgid "Turret_1_GB102_LHMTV"
 msgstr "LHMTV Mk.I"
-
-msgid "Turret_1_GB1031_Conqueror_Gun_T"
-msgstr "Conqueror Gun Carriage T"
 
 msgid "Turret_1_GB103_GSOR3301_AVR_FS"
 msgstr "A.V.R.F/S turret"
@@ -4630,26 +4605,14 @@ msgstr "85 mm HV L40"
 msgid "_9.2inch_AP_Mk_18"
 msgstr "AP Mk. 18"
 
-msgid "_9.2inch_AP_Mk_18_T"
-msgstr "AP Mk. 18 T"
-
 msgid "_9.2inch_HE_Mk_18"
 msgstr "HE Mk. 18"
-
-msgid "_9.2inch_HE_Mk_18_T"
-msgstr "HE Mk. 18 T"
 
 msgid "_9.2inch_HE_Mk_19"
 msgstr "HE Mk. 19"
 
-msgid "_9.2inch_HE_Mk_19_T"
-msgstr "HE Mk. 19 T"
-
 msgid "_9.2inch_SPG_Howitzer"
 msgstr "B.L. 9.2-in. Howitzer Mk. II"
-
-msgid "_9.2inch_SPG_Howitzer_T"
-msgstr "B.L. 9.2-in. Howitzer Mk. II T"
 
 msgid "_90mm_APFSDS_T312"
 msgstr "APFSDS T312"

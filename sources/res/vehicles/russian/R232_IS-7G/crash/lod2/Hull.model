@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R232_IS-7G/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/russian/R232_IS-7G/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-2.352207 -1.091192 -4.699878</min>
+		<max>2.352207 1.096412 4.995581</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

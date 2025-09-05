@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod1/GB86_ceturion_3Dst_Phantom_Hull_luke_anim</nodefullVisual>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod2/GB86_ceturion_3Dst_Phantom_Hull_luke_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.159174 0.742443 -3.001032</min>
+		<max>0.136986 0.944724 -2.700332</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

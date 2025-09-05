@@ -43,10 +43,10 @@
 						<node>
 							<identifier>HP_gunFire_L</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000002</row0>
+								<row0>1.000000 0.000000 0.000001</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
-								<row2>0.000000 0.000000 1.000000</row2>
-								<row3>-0.010000 -0.003000 1.520000</row3>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>-0.020725 -0.003000 1.478753</row3>
 							</transform>
 						</node>
 						<node>
@@ -70,10 +70,10 @@
 						<node>
 							<identifier>HP_gunFire_R</identifier>
 							<transform>
-								<row0>1.000000 0.000000 -0.000002</row0>
+								<row0>1.000000 0.000000 -0.000001</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>-0.000000 -0.000000 1.000000</row2>
-								<row3>0.010000 -0.003000 1.520000</row3>
+								<row3>0.019522 -0.003000 1.478753</row3>
 							</transform>
 						</node>
 						<node>
@@ -101,9 +101,9 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_L_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<node>G_R_BlendBone</node>
+		<node>G_L_BlendBone</node>
 		<geometry>
 			<vertices>gun_03_Shape.vertices</vertices>
 			<primitive>gun_03_Shape.indices</primitive>
@@ -160,15 +160,15 @@
 						<Texture>vehicles/british/GB136_FV245/FV245_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.000757 0.005628 -2.361545</groupOrigin>
+				<groupOrigin>-0.000757 0.005627 -2.361546</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.501612 -0.252542 -0.046034</min>
-		<max>0.500098 0.263798 4.769125</max>
+		<min>-0.501612 -0.252543 -0.046034</min>
+		<max>0.500098 0.263797 4.769125</max>
 	</boundingBox>
-	<geometrySize>14998</geometrySize>
+	<geometrySize>14420</geometrySize>
 	<minUVDensity>0.008577</minUVDensity>
 </root>

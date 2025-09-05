@@ -79,6 +79,10 @@
 						g_tile0Tint
 						<Vector4>0.819608 0.819608 0.819608 1.000000</Vector4>
 					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>0.002314 -0.312199 -0.002276</groupOrigin>
 			</primitiveGroup>

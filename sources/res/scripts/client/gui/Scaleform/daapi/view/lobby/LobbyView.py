@@ -56,6 +56,7 @@ class _LobbySubViewsLifecycleHandler(IViewLifecycleHandler):
      VIEW_ALIAS.LOBBY_RESEARCH,
      VIEW_ALIAS.BATTLE_QUEUE,
      VIEW_ALIAS.BATTLE_STRONGHOLDS_QUEUE,
+     VIEW_ALIAS.EVENT_BATTLE_QUEUE,
      RANKEDBATTLES_ALIASES.RANKED_BATTLES_VIEW_ALIAS)
     __WULF_SUB_VIEWS = (
      R.views.lobby.techtree.VehicleTechTree(),)

@@ -7,7 +7,7 @@ from gui import GUI_CTRL_MODE_FLAG
 from helpers import EffectsList, isPlayerAvatar, isPlayerAccount, getFullClientVersion
 from PlayerEvents import g_playerEvents
 from ReplayEvents import g_replayEvents
-from constants import ARENA_PERIOD, ARENA_BONUS_TYPE, ARENA_GUI_TYPE, INBATTLE_CONFIGS, NULL_ENTITY_ID
+from constants import ARENA_PERIOD, ARENA_BONUS_TYPE, ARENA_GUI_TYPE, INBATTLE_CONFIGS, NULL_ENTITY_ID, IS_DEVELOPMENT
 from helpers import dependency
 from gui.app_loader import settings
 from skeletons.account_helpers.settings_core import ISettingsCore
@@ -46,6 +46,10 @@ _IGNORED_SWITCHING_CTRL_MODES = (
  CTRL_MODE_NAME.MAP_CASE_ARCADE,
  CTRL_MODE_NAME.MAP_CASE_EPIC,
  CTRL_MODE_NAME.MAP_CASE_ARCADE_EPIC_MINEFIELD)
+if not IS_DEVELOPMENT:
+    _BONUS_TYPES_WITHOUT_REPlAY = ()
+else:
+    _BONUS_TYPES_WITHOUT_REPlAY = ()
 
 class CallbackDataNames(object):
     APPLY_ZOOM = 'applyZoom'
@@ -94,7 +98,7 @@ class SimulatedAoI(object):
             if priorAvatarID and priorAvatarID in self.__aoiMapping:
                 for entityID, shown in self.__aoiMapping[priorAvatarID].items():
                     if not shown:
-                        BWReplay.wg_withholdEntity(entityID, False)
+                        BWReplay.withholdEntity(entityID, False)
                         self.__withheld[entityID] = False
 
             currentAoI = None
@@ -104,7 +108,7 @@ class SimulatedAoI(object):
                 shouldSee = currentAoI.get(entityID, False) if currentAoI else True
                 shouldWithhold = not shouldSee
                 if isWithheld != shouldWithhold:
-                    BWReplay.wg_withholdEntity(entityID, shouldWithhold)
+                    BWReplay.withholdEntity(entityID, shouldWithhold)
                     self.__withheld[entityID] = shouldWithhold
 
             return
@@ -125,17 +129,17 @@ class SimulatedAoI(object):
                 return
             self.__controlMode = CTRL_MODE_NAME.VIDEO
             for entityID in self.__withheld:
-                BWReplay.wg_withholdEntity(entityID, False)
+                BWReplay.withholdEntity(entityID, False)
 
         else:
             for entityID, shouldWithhold in self.__pending.items():
-                BWReplay.wg_withholdEntity(entityID, shouldWithhold)
+                BWReplay.withholdEntity(entityID, shouldWithhold)
                 self.__withheld[entityID] = shouldWithhold
 
         if self.__controlMode == CTRL_MODE_NAME.VIDEO:
             for entityID, shouldWithhold in self.__withheld.items():
                 if entityID not in self.__pending:
-                    BWReplay.wg_withholdEntity(entityID, shouldWithhold)
+                    BWReplay.withholdEntity(entityID, shouldWithhold)
 
         self.__pending.clear()
         if self.__controlMode != controlMode:
@@ -191,7 +195,7 @@ class BattleReplay(object):
             userPrefs.write(Settings.KEY_REPLAY_PREFERENCES, '')
         self.__settings = userPrefs[Settings.KEY_REPLAY_PREFERENCES]
         self.__fileName = None
-        self.__replayCtrl = BigWorld.WGReplayController()
+        self.__replayCtrl = BigWorld.ReplayManager()
         self.__replayCtrl.replayFinishedCallback = self.onReplayFinished
         self.__replayCtrl.replayTerminatedCallback = self.onReplayTerminated
         self.__replayCtrl.replayMetaDataCallback = self.onReplayMetaData
@@ -270,6 +274,7 @@ class BattleReplay(object):
     def subscribe(self):
         g_playerEvents.onBattleResultsReceived += self.__onBattleResultsReceived
         g_playerEvents.onAccountBecomePlayer += self.__onAccountBecomePlayer
+        g_playerEvents.onAvatarBecomePlayer += self.__onAvatarBecomePlayer
         g_playerEvents.onArenaPeriodChange += self.__onArenaPeriodChange
         g_playerEvents.onBootcampAccountMigrationComplete += self.__onBootcampAccountMigrationComplete
         g_playerEvents.onAvatarObserverVehicleChanged += self.__onAvatarObserverVehicleChanged
@@ -278,6 +283,7 @@ class BattleReplay(object):
     def unsubscribe(self):
         g_playerEvents.onBattleResultsReceived -= self.__onBattleResultsReceived
         g_playerEvents.onAccountBecomePlayer -= self.__onAccountBecomePlayer
+        g_playerEvents.onAvatarBecomePlayer -= self.__onAvatarBecomePlayer
         g_playerEvents.onArenaPeriodChange -= self.__onArenaPeriodChange
         g_playerEvents.onBootcampAccountMigrationComplete -= self.__onBootcampAccountMigrationComplete
         g_playerEvents.onAvatarObserverVehicleChanged -= self.__onAvatarObserverVehicleChanged
@@ -823,8 +829,8 @@ class BattleReplay(object):
         player.isObserverFPV, isObserverFPV = False, player.isObserverFPV
         if player.isObserverFPV != isObserverFPV:
             player.set_isObserverFPV(isObserverFPV)
-        BWReplay.wg_withholdEntity(vehicleID, False)
-        BWReplay.wg_injectNonVolatileUpdate(player.id, vehicleID, player.position, (
+        BWReplay.withholdEntity(vehicleID, False)
+        BWReplay.injectNonVolatileUpdate(player.id, vehicleID, player.position, (
          player.yaw, player.pitch, player.roll))
         player.onSwitchViewpoint(vehicleID, Math.Vector3(0, 0, 0))
 
@@ -1131,6 +1137,10 @@ class BattleReplay(object):
                 self.__playerDatabaseID = player.databaseID
             return
 
+    def __onAvatarBecomePlayer(self):
+        if self.sessionProvider.arenaVisitor.getArenaBonusType() in _BONUS_TYPES_WITHOUT_REPlAY:
+            self.enableAutoRecordingBattles(False, True)
+
     def __onSettingsChanging(self, *_):
         if not self.isPlaying:
             return
@@ -1156,7 +1166,7 @@ class BattleReplay(object):
             self.__wasVideoBeforeRewind = playerControlModeName == CTRL_MODE_NAME.VIDEO
             self.__videoCameraMatrix.set(BigWorld.camera().matrix)
             BigWorld.PyGroundEffectManager().stopAll()
-            BigWorld.wg_clearDecals()
+            BigWorld.clearDecals()
         g_replayEvents.onMuteSound(True)
         self.__enableInGameEffects(False)
         if self.__rewind:

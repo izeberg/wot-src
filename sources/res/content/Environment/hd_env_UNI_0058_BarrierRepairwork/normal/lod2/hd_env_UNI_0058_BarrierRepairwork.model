@@ -4,6 +4,9 @@
 		<min>-1.110354 -0.035788 -1.392659</min>
 		<max>0.954232 1.574808 1.298538</max>
 	</visibilityBox>
-	<nodefullVisual>content/Environment/hd_env_UNI_0058_BarrierRepairwork/normal/lod2/hd_env_UNI_0058_BarrierRepairwork</nodefullVisual>
 	<extent>500.000000</extent>
+	<havok>
+		<damagedState>false</damagedState>
+	</havok>
+	<nodefullVisual>content/Environment/hd_env_UNI_0058_BarrierRepairwork/normal/lod2/hd_env_UNI_0058_BarrierRepairwork</nodefullVisual>
 </root>

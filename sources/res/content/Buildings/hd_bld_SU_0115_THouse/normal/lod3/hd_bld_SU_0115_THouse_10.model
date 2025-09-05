@@ -1,4 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod3/hd_bld_SU_0115_THouse_10</nodefullVisual>
+	<visibilityBox>
+		<min>-4.950492 -0.932136 -4.663166</min>
+		<max>5.069412 18.692518 4.663181</max>
+	</visibilityBox>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod3/hd_bld_SU_0115_THouse_10</nodelessVisual>
 </root>

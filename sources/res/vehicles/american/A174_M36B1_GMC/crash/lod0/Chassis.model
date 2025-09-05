@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.369264 -0.000161 -3.365862</min>
+		<max>1.369180 1.128525 3.532426</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A174_M36B1_GMC/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/american/A174_M36B1_GMC/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

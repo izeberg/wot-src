@@ -38,8 +38,12 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_0049_BoatCraneSnow/hd_env_UNI_0049_BoatCraneSnow_ANM.dds</Texture>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>-0.000000 5.193015 0.161645</groupOrigin>
+				<groupOrigin>-0.000000 5.193016 0.161645</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -48,6 +52,6 @@
 		<max>3.617677 14.249687 15.380223</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>186654</geometrySize>
-	<minUVDensity>0.000080</minUVDensity>
+	<geometrySize>193794</geometrySize>
+	<minUVDensity>0.000153</minUVDensity>
 </root>

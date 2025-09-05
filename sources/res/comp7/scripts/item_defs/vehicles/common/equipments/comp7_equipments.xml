@@ -29,7 +29,7 @@
 				<exports>vse tooltip</exports>
 			</radius>
 			<heal>
-				20 45 70
+				20 50 120
 				<exports>vse</exports>
 			</heal>
 			<secondaryHealDebuff>
@@ -186,7 +186,7 @@
 				<exports>vse</exports>
 			</gunReloadTimeBuff>
 			<damageDistance>
-				175
+				200
 				<exports>vse tooltip</exports>
 			</damageDistance>
 			<shotDispersionFactors>
@@ -213,7 +213,7 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				20
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
@@ -252,7 +252,7 @@
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
-				7 8 10
+				10 12 15
 				<exports>vse tooltip</exports>
 			</radius>
 			<damage>
@@ -260,7 +260,7 @@
 				<exports>vse tooltip</exports>
 			</damage>
 			<stunDuration>
-				3 9 12
+				3 5 7
 				<exports>vse tooltip</exports>
 			</stunDuration>
 			<fraction>
@@ -279,7 +279,7 @@
 			<effects>
 				<action>
 					<shotEffects>epicArtilleryStrike</shotEffects>
-					<offsetDeviation>9</offsetDeviation>
+					<offsetDeviation>12</offsetDeviation>
 					<repeatCount>4</repeatCount>
 					<repeatDelay>0</repeatDelay>
 					<repeatDelayDeviationPercent>0</repeatDelayDeviationPercent>
@@ -342,7 +342,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<enginePowerFactor>
-				1.35
+				1.5
 				<!--BW_String-->
 				<exports>vse</exports>
 			</enginePowerFactor>
@@ -352,7 +352,7 @@
 				<exports>vse</exports>
 			</stunDurationFactor>
 			<repairBuff>
-				75
+				50
 				<exports>vse tooltip</exports>
 			</repairBuff>
 			<gunReloadBoost>
@@ -420,11 +420,11 @@
 				</server>
 			</visualScript>
 			<cooldownSeconds>
-				15
+				20
 				<exports>vse</exports>
 			</cooldownSeconds>
 			<duration>
-				12 17 22
+				10 15 20
 				<exports>vse tooltip</exports>
 			</duration>
 			<dispersionFactor>
@@ -519,7 +519,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<delay>
-				2
+				1
 				<exports>vse tooltip</exports>
 			</delay>
 			<radius>
@@ -554,7 +554,7 @@
 				<exports>vse tooltip</exports>
 			</duration>
 			<visionFactor>
-				1.05 1.1 1.2
+				1.05 1.15 1.3
 				<!--BW_String-->
 				<exports>vse</exports>
 			</visionFactor>

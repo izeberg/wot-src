@@ -67,9 +67,9 @@ class EdgeDetectColorController(object):
          colors['enemy'], colors['friend'], colors['flag'])
         i = 0
         for c in colorsSet:
-            BigWorld.wgSetEdgeDetectEdgeColor(i, c)
+            BigWorld.setEdgeDetectEdgeColor(i, c)
             i += 1
 
         for target, idx in _OVERLAY_TARGET_INDEXES.iteritems():
-            BigWorld.wgSetEdgeDetectSolidColors(idx, *colors['overlaySolidColors'][target]['packed'])
-            BigWorld.wgSetEdgeDetectPatternColors(idx, *colors['overlayPatternColors'][target]['packed'])
+            BigWorld.setEdgeDetectSolidColors(idx, *colors['overlaySolidColors'][target]['packed'])
+            BigWorld.setEdgeDetectPatternColors(idx, *colors['overlayPatternColors'][target]['packed'])

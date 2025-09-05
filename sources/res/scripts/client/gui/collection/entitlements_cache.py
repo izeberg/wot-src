@@ -3,7 +3,7 @@ from collections import namedtuple
 from functools import partial
 import typing, BigWorld
 from adisp import adisp_process
-from gui.wgcg.agate.contexts import AgateGetInventoryEntitlementsCtx
+from gui.clientgw.agate.contexts import AgateGetInventoryEntitlementsCtx
 from helpers import dependency
 from skeletons.gui.web import IWebController
 if typing.TYPE_CHECKING:

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_SU_0099_DramaTheatre/normal/lod2/hd_bld_SU_0099_DramaTheatre</parent>
-	<extent>150.000000</extent>
+	<extent>300.000000</extent>
 	<visibilityBox>
-		<min>-41.135769 -0.857394 -28.020041</min>
-		<max>47.669842 40.986248 28.004406</max>
+		<min>-41.135796 -0.308183 -28.020056</min>
+		<max>47.669872 41.623192 28.004425</max>
 	</visibilityBox>
 	<nodelessVisual>content/Buildings/hd_bld_SU_0099_DramaTheatre/normal/lod1/hd_bld_SU_0099_DramaTheatre</nodelessVisual>
 </root>

@@ -38,9 +38,10 @@
 		<ClientSelectableHangarsSwitcher/>
 		<StaticDeathZone/>
 		<BasicMine/>
-		<DelayedBomb/>
 		<ApplicationPoint/>
 		<ApplicationPointWithProximity/>
 		<NetworkEntity/>
+		<EventVehicle/>
+		<EventPortal/>
 	</ClientServerEntities>
 </root>

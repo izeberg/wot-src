@@ -150,6 +150,11 @@
 						metallicGlossMap
 						<Texture>content/GatesAndFences/hd_gaf_SU_0004_IronFence/hd_gaf_SU_0004_IronFence_GMM.dds</Texture>
 					</property>
+					<materialKind>0</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<fade_material>
 					<identifier>n_stone0_fade</identifier>

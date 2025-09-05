@@ -176,6 +176,7 @@ package net.wg.gui.components.advanced
       {
          this.clear();
          App.utils.focusHandler.setFocus(textField);
+         stage.focus = null;
       }
    }
 }

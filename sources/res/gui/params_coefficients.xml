@@ -2904,6 +2904,20 @@
 				<type>dict</type>
 				<value>
 					<item>
+						<name>optionalDevice</name>
+						<type>list</type>
+						<value>
+							<item>improvedRotationMechanism_tier1</item>
+							<item>improvedRotationMechanism_tier2</item>
+							<item>trophyBasicImprovedRotationMechanism</item>
+							<item>trophyUpgradedImprovedRotationMechanism</item>
+							<item>deluxeImprovedRotationMechanism</item>
+							<item>modernizedTurbochargerRotationMechanism1</item>
+							<item>modernizedTurbochargerRotationMechanism2</item>
+							<item>modernizedTurbochargerRotationMechanism3</item>
+						</value>
+					</item>
+					<item>
 						<name>postProgressionBaseModifications</name>
 						<type>list</type>
 						<value>
@@ -2950,6 +2964,20 @@
 				<name>vehicleGunShotDispersionAfterShot</name>
 				<type>dict</type>
 				<value>
+					<item>
+						<name>optionalDevice</name>
+						<type>list</type>
+						<value>
+							<item>improvedRotationMechanism_tier1</item>
+							<item>improvedRotationMechanism_tier2</item>
+							<item>trophyBasicImprovedRotationMechanism</item>
+							<item>trophyUpgradedImprovedRotationMechanism</item>
+							<item>deluxeImprovedRotationMechanism</item>
+							<item>modernizedTurbochargerRotationMechanism1</item>
+							<item>modernizedTurbochargerRotationMechanism2</item>
+							<item>modernizedTurbochargerRotationMechanism3</item>
+						</value>
+					</item>
 					<item>
 						<name>postProgressionPairModifications</name>
 						<type>list</type>

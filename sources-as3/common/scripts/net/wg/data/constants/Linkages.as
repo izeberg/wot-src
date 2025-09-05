@@ -297,9 +297,9 @@ package net.wg.data.constants
       
       public static const COMP7_CONSUMABLE_BUTTON:String = "Comp7ConsumableButtonUI";
       
-      public static const EVENT_SHELL_BUTTON_BATTLE:String = "EventShellButtonBattleUI";
+      public static const EVENT_SHELL_BUTTON_BATTLE:String = "WTShellButtonBattleUI";
       
-      public static const EVENT_EQUIPMENT_BUTTON:String = "EventEquipmentButtonUI";
+      public static const EVENT_EQUIPMENT_BUTTON:String = "WTEquipmentButtonUI";
       
       public static const OPTIONAL_DEVICE_BUTTON:String = "OptionalDeviceButtonUI";
       
@@ -1060,6 +1060,18 @@ package net.wg.data.constants
       public static const EARLY_ACCESS_ENTRY_POINT:String = "EarlyAccessEntryPointUI";
       
       public static const WINBACK_WIDGET:String = "WinbackWidget";
+      
+      public static const WT_HYPERION_WARNING_ICON:String = "destroyTimerWtHyperionUI";
+      
+      public static const WT_EVENT_ENTRY_POINT_ANIM_UI:String = "WTEventEntryPointAnimUI";
+      
+      public static const WT_EVENT_ENTRY_POINT_STATIC_BG_UI:String = "WTEventEntryPointStaticUI";
+      
+      public static const WT_EVENT_ENTRY_TEXT_INFO_UI:String = "WTEventEntryTextInfoUI";
+      
+      public static const WT_ENERGY_SPAWN_ENTRY_UI:String = "WTEnergySpawnFlashEntry";
+      
+      public static const WT_CAPTURE_BAR_LINKAGE:String = "WTTeamCaptureBarUI";
        
       
       public function Linkages()

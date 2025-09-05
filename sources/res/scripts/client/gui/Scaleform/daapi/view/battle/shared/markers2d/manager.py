@@ -171,7 +171,7 @@ class MarkersManager(ExternalFlashComponent, VehicleMarkersManagerMeta, plugins.
 
     def createExternalComponent(self):
         super(MarkersManager, self).createExternalComponent()
-        self.component.wg_inputKeyMode = InputKeyMode.NO_HANDLE
+        self.component.inputKeyMode = InputKeyMode.NO_HANDLE
         self.component.position.z = DEPTH_OF_VehicleMarker
         self.component.drawWithRestrictedViewPort = False
         self.movie.backgroundAlpha = 0
@@ -191,7 +191,7 @@ class MarkersManager(ExternalFlashComponent, VehicleMarkersManagerMeta, plugins.
         super(MarkersManager, self)._dispose()
 
     def _createCanvas(self, arenaVisitor):
-        return GUI.WGVehicleMarkersCanvasFlashAS3(self.movie)
+        return GUI.VehicleMarkersCanvasFlashAS3(self.movie)
 
     def _setupPlugins(self, arenaVisitor):
         setup = {'eventBus': plugins.EventBusPlugin, 
@@ -218,7 +218,7 @@ class MarkersManager(ExternalFlashComponent, VehicleMarkersManagerMeta, plugins.
     def __addCanvas(self, sessionProvider, arenaVisitor):
         self.__canvas = self._createCanvas(arenaVisitor)
         self.__canvas.script = self
-        self.__canvas.wg_inputKeyMode = InputKeyMode.NO_HANDLE
+        self.__canvas.inputKeyMode = InputKeyMode.NO_HANDLE
         self.__canvas.scaleProperties = GUI_SETTINGS.markerScaleSettings
         self.__canvas.stickyMarkerRadiusScale = _STICKY_MARKER_RADIUS_SCALE
         self.enableMarkerHovering()

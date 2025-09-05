@@ -1,0 +1,93 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "disabled/warning"
+msgstr "Адкрыццё парталаў і купля стартараў часова недаступныя"
+
+msgid "guaranteedProgressBar/left"
+msgstr ""
+"Запускаў партала і замен узнагарод да гарантаванай прэміум машын: %(count)s"
+
+msgid "guaranteedProgressBar/nextLaunch"
+msgstr "наступным запуску!"
+
+msgid "guaranteedProgressBar/oneLeft"
+msgstr "Прэміум машына ўжо пры %(text)s"
+
+msgid "insidePortal/backButton"
+msgstr "ДА ПАРТАЛАЎ"
+
+msgid "insidePortal/hunter/customization/description"
+msgstr "Элементы выгляду, у тым ліку з мінулых сутыкненняў."
+
+msgid "insidePortal/rewardTanks/separator"
+msgstr "%(tank), "
+
+msgid "insidePortal/rewardTanks/tanks"
+msgstr "%(tanks)."
+
+msgid "insidePortal/rewardTanks/tooltip/body"
+msgstr ""
+"Прэміум машыны дазваляюць здабываць больш крэдытаў, баявога досведу і "
+"досведу экіпажа ў баях. На прэміум тэхніку можна пераносіць экіпаж той жа "
+"дзяржавы і таго ж тыпу тэхнікі без штрафаў."
+
+msgid "insidePortal/rewardTanks/tooltip/header"
+msgstr "Прэміум тэхніка"
+
+msgid "insideVehiclePortal/buttonGetTank"
+msgstr "Забраць танк"
+
+msgid "insideVehiclePortal/description"
+msgstr ""
+"Танк ахаваны досыць трывалай для свайго ўзроўню бранёй і ўзброены "
+"хуткастрэльнай гарматай з выдатнай стабілізацыяй, размешчанай у вежы, якая "
+"можа хутка паварочвацца. Пры гэтым яго дынамічныя характарыстыкі даволі "
+"пасрэдныя, з-за чаго гэтая машына прыгодная хутчэй да абарончага бою."
+
+msgid "insideVehiclePortal/discount/title"
+msgstr "ЗНІЖКА НА ЗАПУСК ПАРТАЛА"
+
+msgid "insideVehiclePortal/discount/tooltip"
+msgstr "Зніжкі не сумуюцца. Прымяняецца максімальная з атрыманых зніжак."
+
+msgid "insideVehiclePortal/redDiscount"
+msgstr "-%(discount)%"
+
+msgid "notGuaranteed/warning"
+msgstr ""
+"Механіка гарантаванай узнагароды адключана: вы маеце ўсю прэміум тэхніку са "
+"спіса."
+
+msgid "portalView/hoverDesc/boss"
+msgstr ""
+"З партала выпадае прэміум тэхніка, у тым ліку {cream_Open}Projet 57 Ampere{cream_Close} і {cream_Open}Czolg (P) wz.46 Wiedźmak{cream_Close}, 3D-стылі і іншыя каштоўныя ўзнагароды. \n"
+"Калі пасля {yellow_Open}%(number)s{yellow_Close} запускаў партала не выпадае прэміум машына, вы гарантавана яе атрымаеце на {yellow_Open}35-м запуску{yellow_Close}. \n"
+"{orange_Open}Звярніце ўвагу:{orange_Close} {cream_Open}Projet 57 Ampere{cream_Close} і {cream_Open}Czolg (P) wz.46 Wiedźmak{cream_Close} нельга атрымаць у межах механікі гарантаванай узнагароды."
+
+msgid "portalView/hoverDesc/hunter"
+msgstr ""
+"З партала выпадаюць элементы выгляду, у тым ліку з мінулых сутыкненняў, а "
+"таксама іншыя каштоўныя ўзнагароды."
+
+msgid "portalView/hoverDesc/tank"
+msgstr ""
+"Пры запуску партала вы атрымаеце %(tankNation)s %(tankType)s {brown_Open}%(tankLevel)s{brown_Close} узроўню {brown_Open}%(tankName)s{brown_Close}.\n"
+"\n"
+"Каб паменшыць кошт запуску партала, праходзьце прагрэсію і здабывайце зніжкі. Максімальная зніжка на запуск партала {cream_Open}%(discount)d%{cream_Close}."
+
+msgid "title/boss"
+msgstr "ПАРТАЛ ІНЖЫНЕРА"
+
+msgid "title/hunter"
+msgstr "ПАРТАЛ ГАНЧАКОЎ"
+
+msgid "title/tank"
+msgstr "ПАРТАЛ З ТАНКАМ"

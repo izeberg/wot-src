@@ -539,7 +539,7 @@ msgid "barracks/dismissedTankmenCount"
 msgstr "Демобилизованные члены экипажа: %(curValue)s из %(total)s"
 
 msgid "barracks/menu/locationFilter/barracks"
-msgstr "В КАЗАРМЕ"
+msgstr "В Казарме"
 
 msgid "barracks/menu/locationFilter/barracksAndTanks"
 msgstr "В Казарме и на технике"
@@ -1122,6 +1122,9 @@ msgstr "Создать взвод для Рангового боя"
 msgid "contextMenu/createSquad"
 msgstr "Создать взвод"
 
+msgid "contextMenu/createWhiteTigerSquad"
+msgstr "Создать взвод Гончих"
+
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Сменить члена экипажа"
 
@@ -1423,9 +1426,7 @@ msgstr ""
 "сражение"
 
 msgid "crystals/info/tab/earn/level/mod/2"
-msgstr ""
-"Ранговый\n"
-"бой"
+msgstr "Натиск"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УРОВЕНЬ ТЕХНИКИ"
@@ -1450,6 +1451,9 @@ msgstr "ИНДИКАТОР ЗАРАБОТКА БОН"
 msgid "crystals/info/tab/earnTab"
 msgstr "Как заработать"
 
+msgid "crystals/info/tab/get/card/comp7Description"
+msgstr "Топ-%(position)s по очкам престижа"
+
 msgid "crystals/info/tab/get/card/condition"
 msgstr "Условие"
 
@@ -1461,6 +1465,9 @@ msgstr "Топ-%(position)s по опыту"
 
 msgid "crystals/info/tab/get/card/win"
 msgstr "Победа"
+
+msgid "crystals/info/tab/get/comp7"
+msgstr "НАТИСК"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
@@ -1480,6 +1487,14 @@ msgstr "РАНГОВЫЙ БОЙ"
 
 msgid "crystals/info/tab/getTab"
 msgstr "Условия начисления"
+
+msgid "crystals/info/tab/spend/card/comp7Shop/description"
+msgstr ""
+"В магазине Натиска вас ожидают эксклюзивная техника и стили, а также "
+"выгодная система скидок."
+
+msgid "crystals/info/tab/spend/card/comp7Shop/title"
+msgstr "Магазин Натиска"
 
 msgid "crystals/info/tab/spend/card/instructions/description"
 msgstr "Усиливают эффект, который даёт установленное оборудование."
@@ -1729,6 +1744,9 @@ msgstr "Доступна аренда машины"
 msgid "currentVehicleStatus/rentableAgain"
 msgstr "Продлить аренду"
 
+msgid "currentVehicleStatus/rentalBattleIsOver"
+msgstr "Бои исчерпаны"
+
 msgid "currentVehicleStatus/rentalIsOver"
 msgstr "Аренда завершена"
 
@@ -1746,6 +1764,9 @@ msgstr "Подписка отменена"
 
 msgid "currentVehicleStatus/tempUnavailable"
 msgstr "Временно недоступно"
+
+msgid "currentVehicleStatus/ticketsShortage"
+msgstr "Нет ключа"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "К бою готов!"
@@ -2626,6 +2647,9 @@ msgstr "Обслуживание"
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Внешний вид"
 
+msgid "hangar/closeBtn"
+msgstr "ПОКИНУТЬ РЕЖИМ"
+
 msgid "hangar/crew/rody/dog/moreInfoLabel"
 msgstr "Подробнее"
 
@@ -3055,6 +3079,9 @@ msgstr "Тренировочный бой"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Линия фронта"
+
+msgid "headerButtons/battle/types/event"
+msgstr "Ваффентрагер: наследие"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Ивентовый взвод"
@@ -4736,9 +4763,6 @@ msgstr "Мощность двигателя"
 
 msgid "moduleInfo/params/enginePowerPerTon"
 msgstr "К удельной мощности (л.с./т) "
-
-msgid "moduleInfo/params/explosionDelay"
-msgstr "Таймер детонации"
 
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радиус поражения"
@@ -6430,6 +6454,9 @@ msgstr "Продлить аренду"
 msgid "tankCarousel/vehicleStates/rentableAgain/ranked"
 msgstr "Продлить аренду"
 
+msgid "tankCarousel/vehicleStates/rentalBattleIsOver"
+msgstr "Бои исчерпаны"
+
 msgid "tankCarousel/vehicleStates/rentalIsOver"
 msgstr "Аренда завершена"
 
@@ -6455,6 +6482,9 @@ msgstr ""
 
 msgid "tankCarousel/vehicleStates/tempUnavailable"
 msgstr "Временно недоступно"
+
+msgid "tankCarousel/vehicleStates/ticketsShortage"
+msgstr "Нет ключа"
 
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недоступно"
@@ -6577,9 +6607,6 @@ msgstr "Мощность двигателя"
 
 msgid "tank_params/enginePowerPerTon"
 msgstr "Удельная мощность"
-
-msgid "tank_params/explosionDelay"
-msgstr "Таймер детонации"
 
 msgid "tank_params/explosionRadius"
 msgstr "Радиус поражения"
@@ -7202,7 +7229,7 @@ msgid "vehicle/igrRentLeft/hours"
 msgstr "часов: %(hours)s"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Боёв доступно: %(battles)s"
+msgstr "Ещё боёв: %(battles)s"
 
 msgid "vehicle/rentLeft/days"
 msgstr "Дней аренды: %(days)s"

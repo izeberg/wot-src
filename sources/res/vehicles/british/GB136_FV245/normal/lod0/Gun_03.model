@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<tank>true</tank>
-	<nodefullVisual>vehicles/british/GB136_FV245/normal/lod0/Gun_03</nodefullVisual>
 	<visibilityBox>
 		<min>-0.499684 -0.264167 -0.046035</min>
 		<max>0.499681 0.264543 4.764833</max>
 	</visibilityBox>
 	<parent>vehicles/british/GB136_FV245/normal/lod1/Gun_03</parent>
 	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB136_FV245/normal/lod0/Gun_03</nodefullVisual>
 </root>

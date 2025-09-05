@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/french/F133_Projet_57_Ampere/normal/lod3/Chassis</nodefullVisual>
+	<parent>vehicles/french/F133_Projet_57_Ampere/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.759681 0.029587 -3.716333</min>
+		<max>1.759681 1.125756 3.748283</max>
+	</visibilityBox>
+</root>

@@ -395,7 +395,7 @@ class SniperCamera(CameraWithSettings, CallbackDelayer):
          math_utils.createRotationMatrix(impulseDeviation))
 
     def __isPositionUnderwater(self, position):
-        return BigWorld.wg_collideWater(position, position + Vector3(0, 1, 0), False) > -1.0
+        return BigWorld.collideWater(position, position + Vector3(0, 1, 0), False) > -1.0
 
     def reload(self):
         if not constants.IS_DEVELOPMENT:

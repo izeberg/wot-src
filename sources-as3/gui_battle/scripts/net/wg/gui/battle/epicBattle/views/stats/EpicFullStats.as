@@ -216,8 +216,7 @@ package net.wg.gui.battle.epicBattle.views.stats
       
       public function updateStageSize(param1:Number, param2:Number) : void
       {
-         var _loc3_:Number = NaN;
-         _loc3_ = param1 >> 1;
+         var _loc3_:Number = param1 >> 1;
          var _loc4_:Number = param2 >> 1;
          this.header.modalBgSpr.width = param1;
          this.header.modalBgSpr.x = -_loc3_;

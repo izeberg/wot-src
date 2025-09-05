@@ -22,7 +22,7 @@
 				<material>
 					<identifier>s_nd1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<materialKind>105</materialKind>
+					<materialKind>111</materialKind>
 					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
@@ -88,10 +88,6 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/03_Concrete_floor_03_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.527702 7.947342 -3.167836</groupOrigin>
 			</primitiveGroup>
@@ -100,7 +96,7 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<materialKind>105</materialKind>
+					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						albedoHeightTile0
@@ -161,10 +157,6 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.409245 3.913075 -3.188957</groupOrigin>

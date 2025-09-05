@@ -1,6 +1,6 @@
 from abc import ABCMeta, abstractmethod
 from enum import Enum
-import logging, wg_async
+import logging, th_async
 from Event import Event
 from helpers import dependency
 from paragons_common import ParagonsEntitlements, getParagonsEntitlement
@@ -72,14 +72,14 @@ class ParagonsEntitlementsAgate(ParagonsEntitlementState):
             self.update(force=True)
         return self.__cache.get(entitlementID, 0)
 
-    @wg_async.wg_async
+    @th_async.th_async
     def update(self, force=False):
         if not self.__entitlementsController.isCacheInited():
             force = True
         else:
             force = all(self.__entitlementsController.getBalanceEntitlementFromCache(code) is not None for code in self.__entCodes)
         if force:
-            yield wg_async.wg_await(self.__entitlementsController.forceUpdateCache(self.__entCodes))
+            yield th_async.th_await(self.__entitlementsController.forceUpdateCache(self.__entCodes))
             for code in self.__entCodes:
                 balance = self.__entitlementsController.getBalanceEntitlementFromCache(code)
                 amount = balance.getAmount() if balance is not None else 0

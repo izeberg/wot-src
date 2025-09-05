@@ -1,5 +1,5 @@
 import logging, typing
-from wg_async import wg_async, wg_await
+from th_async import th_async, th_await
 from Event import Event
 from gui.game_control.reactive_comm import Subscription
 from helpers import dependency
@@ -17,7 +17,7 @@ class CollectiveGoalRequester(object):
         self.__message = None
         return
 
-    @wg_async
+    @th_async
     def start(self, channelName):
         _logger.debug('Trying to subscribe channel: <%s>', channelName)
         if self.__subscription is not None:
@@ -29,7 +29,7 @@ class CollectiveGoalRequester(object):
                 return
             self.__message = None
             self.__subscription = Subscription(channelName)
-            status = yield wg_await(self.__reactiveCommunication.subscribeToChannel(self.__subscription))
+            status = yield th_await(self.__reactiveCommunication.subscribeToChannel(self.__subscription))
             _logger.debug('Subscription status for channel <%s>: %s', channelName, status)
             if status:
                 self.__subscription.onClosed += self.__onClosed

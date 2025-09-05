@@ -462,6 +462,9 @@ msgstr ""
 msgid "VehicleTabs/tooltip/title"
 msgstr "Галіна %(minVehicleLevel)s-%(maxVehicleLevel)s узроўню"
 
+msgid "VehicleView/additionalRewards/body/campaign"
+msgstr "За выкананне кампаніі з адзнакай"
+
 msgid "VehicleView/additionalRewards/body/default"
 msgstr "За выкананне аперацыі"
 
@@ -501,14 +504,30 @@ msgstr ""
 "асаблівасці рэльефу найлепшымі саюзнікамі. Машына аснашчана шматгусенічным "
 "рухачом, што ўскосна ўплывае на выжывальнасць."
 
+msgid "VehicleView/description/G182_Mausekonig"
+msgstr ""
+"Цяжкі штурмавы самаходны бункер — па-сапраўднаму годная ўзнагарода для самых"
+" дасведчаных і мэтанакіраваных гульцоў. Выдатная машына для праціскання "
+"кірункаў і пазіцыйных баёў, аснашчаная магутнай двухгарматнай устаноўкай. "
+"Моцная браня, некаторыя лісты якой размешчаны пад рацыянальнымі вугламі, "
+"даруе памылкі і дае дадатковы шанц рэалізаваць агнявы патэнцыял."
+
 msgid "VehicleView/goTo"
 msgstr "ДА АПЕРАЦЫІ"
+
+msgid "VehicleView/goToMany"
+msgstr "ДА АПЕРАЦЫЙ"
 
 msgid "VehicleView/preview/label"
 msgstr "Перадпрагляд"
 
 msgid "VehicleView/researchCondition/body"
 msgstr "Для атрымання машыны неабходна выканаць усе задачы аперацыі %(name)s"
+
+msgid "VehicleView/researchCondition/finalBody"
+msgstr ""
+"Для атрымання машыны неабходна выканаць усе замыкальныя задачы кампаніі "
+"«&zwnbsp;Новыя&nbsp;гарызонты&zwnbsp;»"
 
 msgid "VehicleView/researchCondition/header"
 msgstr "УМОВЫ АТРЫМАННЯ ТЭХНІКІ"
@@ -538,7 +557,10 @@ msgid "VehicleView/restoreTooltip/seconds"
 msgstr "< 1м"
 
 msgid "VehicleView/title"
-msgstr "УЗНАГАРОДЫ АПЕРАЦЫІ %(name)s"
+msgstr "УЗНАГАРОДЫ АПЕРАЦЫІ «%(name)s»"
+
+msgid "VehicleView/titleMany"
+msgstr "УЗНАГАРОДА КАМПАНІІ «НОВЫЯ ГАРЫЗОНТЫ»"
 
 msgid "VehicleView/vehicleInfo/body/inHangar"
 msgstr "У Гаражы"
@@ -587,7 +609,7 @@ msgstr "Новыя танкі VII-X узроўню: ARMT, TF-2 CLARK і Projet M
 
 msgid "introView/infoCard/third"
 msgstr ""
-"Вішанька на торце: звышцяжкі двухгарматны танк ХІ узроўню (у распрацоўцы)"
+"Галоўная ўзнагарода: звышцяжкі двухгарматны танк ХІ узроўню Mausekönig"
 
 msgid "introView/videoButton/buttonText"
 msgstr "ПРА КАМПАНІЮ"

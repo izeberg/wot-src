@@ -9,7 +9,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 
 msgid "widget/content/quest"
-msgstr "Победить в бою или получить 350 ед. «чистого» опыта"
+msgstr "Победить в бою или получить 250 ед. «чистого» опыта"
 
 msgid "widget/content/tooltip/blocked/body"
 msgstr ""
@@ -30,6 +30,9 @@ msgstr "Цепь побед"
 msgid "window/playStreakPreview/backBtnLabel"
 msgstr "В ЦЕПЬ ПОБЕД"
 
+msgid "window/playStreakRewards/calendar/card/tooltip/info/body"
+msgstr "С выходом обновлённого контейнера данная награда будет заменена."
+
 msgid "window/playStreakRewards/calendar/card/tooltip/monthly/body"
 msgstr ""
 "Продлив свою цепь побед до ячейки в анимированной рамке с желтым свечением, "
@@ -48,6 +51,26 @@ msgstr ""
 
 msgid "window/playStreakRewards/calendar/card/tooltip/periodic/head"
 msgstr "Временное пользование"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/body"
+msgstr ""
+"Каждый раз при начислении еженедельной награды вы получите один случайный "
+"предмет из списка:"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/head"
+msgstr "Случайные личные резервы"
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/item1"
+msgstr "Личные резервы — бонус 100% к боевому опыту на 1 ч."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/item2"
+msgstr "Личные резервы — бонус 50% к серебру на 1 ч."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/random/item3"
+msgstr "Личные резервы — бонус 300% к комбинированному опыту на 1 ч."
+
+msgid "window/playStreakRewards/calendar/card/tooltip/rewards/head"
+msgstr "Награды:"
 
 msgid "window/playStreakRewards/calendar/card/tooltip/weekly/body"
 msgstr ""
@@ -160,7 +183,7 @@ msgid "window/playStreakRewards/tab/content/pause"
 msgstr "Осталось пауз: %(skipDayCount)s"
 
 msgid "window/playStreakRewards/tab/content/quest"
-msgstr "Победить в бою или получить 350 ед. «чистого» опыта."
+msgstr "Победить в бою или получить 250 ед. «чистого» опыта."
 
 msgid "window/playStreakRewards/tab/head"
 msgstr "Цепь побед"

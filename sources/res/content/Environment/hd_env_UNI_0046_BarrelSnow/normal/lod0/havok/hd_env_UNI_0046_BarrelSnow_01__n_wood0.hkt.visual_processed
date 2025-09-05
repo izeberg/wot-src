@@ -440,7 +440,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1055_Barrel_Group/hd_env_SU_1055_Barrel_Group_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -452,11 +452,7 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.220000 0.870000 0.240000 0.560000</Vector4>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+						<Vector4>0.220000 0.870000 0.240000 0.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -464,7 +460,7 @@
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>0.894118 0.894118 0.894118 0.494118</Vector4>
+						<Vector4>0.945098 0.945098 0.945098 0.494118</Vector4>
 					</property>
 					<property>
 						metallicAOTile0
@@ -510,19 +506,19 @@
 					</property>
 					<property>
 						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Vertical_0_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Environment/hd_env_SU_1055_Barrel_Group/hd_env_SU_1055_Barrel_Group_blend.png</Texture>
+						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_blend.png</Texture>
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1055_Barrel_Group/hd_env_SU_1055_Barrel_Group_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Soot_02_DM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
 						g_dirtColor
@@ -530,7 +526,7 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.220000 0.870000 0.240000 0.560000</Vector4>
+						<Vector4>0.220000 0.870000 0.240000 0.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
@@ -542,7 +538,7 @@
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>0.650980 0.615686 0.568627 0.494118</Vector4>
+						<Vector4>0.945098 0.945098 0.945098 0.494118</Vector4>
 					</property>
 					<property>
 						metallicAOTile0
@@ -554,7 +550,7 @@
 					</property>
 					<property>
 						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Vertical_0_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile0
@@ -566,7 +562,7 @@
 					</property>
 					<property>
 						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Vertical_0_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						g_tile0Tint
@@ -642,7 +638,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1055_Barrel_Group/hd_env_SU_1055_Barrel_Group_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -654,11 +650,7 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.220000 0.870000 0.240000 0.560000</Vector4>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+						<Vector4>0.220000 0.870000 0.240000 0.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -666,7 +658,7 @@
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>0.894118 0.894118 0.894118 0.494118</Vector4>
+						<Vector4>0.945098 0.945098 0.945098 0.494118</Vector4>
 					</property>
 					<property>
 						metallicAOTile0
@@ -712,19 +704,19 @@
 					</property>
 					<property>
 						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Vertical_0_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
 						blendMask
-						<Texture>content/Environment/hd_env_SU_1055_Barrel_Group/hd_env_SU_1055_Barrel_Group_blend.png</Texture>
+						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_blend.png</Texture>
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1055_Barrel_Group/hd_env_SU_1055_Barrel_Group_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_UNI_0046_BarrelSnow/hd_env_UNI_0046_BarrelSnow_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Soot_02_DM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
 						g_dirtColor
@@ -732,7 +724,7 @@
 					</property>
 					<property>
 						g_dirtColorParams
-						<Vector4>0.220000 0.870000 0.240000 0.560000</Vector4>
+						<Vector4>0.220000 0.870000 0.240000 0.000000</Vector4>
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
@@ -744,7 +736,7 @@
 					</property>
 					<property>
 						g_tile2Tint
-						<Vector4>0.650980 0.615686 0.568627 0.494118</Vector4>
+						<Vector4>0.945098 0.945098 0.945098 0.494118</Vector4>
 					</property>
 					<property>
 						metallicAOTile0
@@ -756,7 +748,7 @@
 					</property>
 					<property>
 						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Vertical_0_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile0
@@ -768,7 +760,7 @@
 					</property>
 					<property>
 						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Wood_Universal_Crash_Vertical_0_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						g_tile0Tint
@@ -799,6 +791,6 @@
 		<min>-0.452546 -0.006141 -1.262146</min>
 		<max>2.493880 1.779955 0.543507</max>
 	</boundingBox>
-	<geometrySize>1049396</geometrySize>
+	<geometrySize>1023832</geometrySize>
 	<minUVDensity>0.190796</minUVDensity>
 </root>

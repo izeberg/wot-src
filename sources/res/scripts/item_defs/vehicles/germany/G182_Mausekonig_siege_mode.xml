@@ -82,12 +82,12 @@
 	<hull>
 		<armor>
 			<armor_1>250</armor_1>
-			<armor_2>220</armor_2>
+			<armor_2>240</armor_2>
 			<armor_3>100</armor_3>
 			<armor_4>200</armor_4>
 			<armor_5>50</armor_5>
 			<armor_6>50</armor_6>
-			<armor_7>250</armor_7>
+			<armor_7>300</armor_7>
 			<armor_8>0</armor_8>
 			<armor_9>40</armor_9>
 			<armor_10>120</armor_10>
@@ -4399,14 +4399,14 @@
 			<price>100000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>260</armor_1>
+				<armor_1>300</armor_1>
 				<armor_2>200</armor_2>
 				<armor_3>260</armor_3>
 				<armor_4>200</armor_4>
 				<armor_5>100</armor_5>
 				<armor_6>50</armor_6>
 				<armor_7>50</armor_7>
-				<armor_8>0</armor_8>
+				<armor_8>50</armor_8>
 				<armor_9>220</armor_9>
 				<armor_10>200</armor_10>
 				<armor_11>180</armor_11>
@@ -4437,7 +4437,7 @@
 					<maxAmmo>70</maxAmmo>
 					<armor>
 						<armor_1>
-							350
+							320
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -4457,18 +4457,18 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_5>
 						<armor_6>
-							310
+							300
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<gun>60</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>10</reloadTime>
 					<aimingTime>
-						2.8
+						2.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>

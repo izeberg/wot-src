@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_envAM_064_BlocksBrick_04</identifier>
+			<identifier>hd_env_UNI_0055_BlocksBrickSnow_04</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -24,6 +24,24 @@
 					<row2>0.000000 0.000000 1.000000</row2>
 					<row3>0.000000 1.756000 0.000000</row3>
 				</transform>
+			</node>
+			<node>
+				<identifier>lod2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>n1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
 			</node>
 		</node>
 	</node>
@@ -53,7 +71,7 @@
 						<Texture>content/Environment/hd_env_UNI_0055_BlocksBrickSnow/hd_env_UNI_0055_BlocksBrickSnow_red_GMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.141999 0.149392 -0.373697</groupOrigin>
+				<groupOrigin>-0.006201 0.240040 -0.066818</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -77,22 +95,13 @@
 				</material>
 				<groupOrigin>-0.000114 1.605669 0.067870</groupOrigin>
 			</primitiveGroup>
-			<primitiveGroup>
-				2
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>111</materialKind>
-				</material>
-				<groupOrigin>0.075670 0.077765 0.011516</groupOrigin>
-			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.342960 -0.070380 -2.197250</min>
-		<max>2.058962 3.222364 1.449856</max>
+		<min>-1.092626 -0.067657 -1.141008</min>
+		<max>1.092398 3.215592 1.007373</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>28926</geometrySize>
+	<geometrySize>28482</geometrySize>
 	<minUVDensity>0.016889</minUVDensity>
 </root>

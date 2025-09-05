@@ -96,7 +96,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/03_Concrete_floor_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.088035 2.497535 -9.552311</groupOrigin>
+				<groupOrigin>-0.089707 2.537562 -9.498140</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -174,7 +174,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Redbrick_06_crashed_02_Bright_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.197799 3.963026 -10.001925</groupOrigin>
+				<groupOrigin>-0.199471 3.965153 -10.001925</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -248,15 +248,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/Metal_Rusted_01_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.078729 2.637387 -9.578464</groupOrigin>
+				<groupOrigin>-0.080401 2.639514 -9.578464</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.615586 -0.355898 -19.905233</min>
-		<max>0.458128 5.630672 0.654962</max>
+		<min>-0.617258 -0.353771 -19.811890</min>
+		<max>0.456455 5.632800 0.660400</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>8404</geometrySize>
-	<minUVDensity>0.142867</minUVDensity>
+	<geometrySize>10276</geometrySize>
+	<minUVDensity>0.145760</minUVDensity>
 </root>

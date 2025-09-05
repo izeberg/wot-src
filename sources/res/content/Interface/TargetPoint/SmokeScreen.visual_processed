@@ -19,7 +19,7 @@
 				0
 				<material>
 					<identifier>s0_1</identifier>
-					<fx>shaders/controlPoint/wg_controlPointRadius.fx</fx>
+					<fx>shaders/controlPoint/controlPointRadius.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Interface/TargetPoint/smoke_screen_ground_texture.dds</Texture>

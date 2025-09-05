@@ -1,4 +1,4 @@
-import typing, wg_async
+import typing, th_async
 from gui.platform.base.statuses.constants import DEFAULT_CONTEXT
 from skeletons.gui.platform.controller import IPlatformRequestController
 if typing.TYPE_CHECKING:
@@ -20,15 +20,15 @@ class IWGNPRequestController(IPlatformRequestController):
 
 class IWGNPSteamAccRequestController(IWGNPRequestController):
 
-    @wg_async.wg_async
+    @th_async.th_async
     def addEmail(self, email, waitingID=None):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def getEmailStatus(self, waitingID=None):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def confirmEmail(self, code, waitingID=None):
         raise NotImplementedError
 
@@ -43,15 +43,15 @@ class IWGNPSteamAccRequestController(IWGNPRequestController):
 
 class IWGNPDemoAccRequestController(IWGNPRequestController):
 
-    @wg_async.wg_async
+    @th_async.th_async
     def getCredentialsStatus(self, waitingID=None):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def addCredentials(self, login, password, waitingID=None):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def confirmCredentials(self, code, waitingID=None):
         raise NotImplementedError
 
@@ -66,21 +66,21 @@ class IWGNPDemoAccRequestController(IWGNPRequestController):
     def getCurrentStatus(self, context=DEFAULT_CONTEXT):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def getNicknameStatus(self, waitingID=None):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def validateNickname(self, nickname, waitingID=None):
         raise NotImplementedError
 
-    @wg_async.wg_async
+    @th_async.th_async
     def changeNickname(self, nickname, cost, waitingID=None):
         raise NotImplementedError
 
 
 class IWGNPGeneralRequestController(IWGNPRequestController):
 
-    @wg_async.wg_async
+    @th_async.th_async
     def getAccountCountry(self, waitingID=None):
         raise NotImplementedError

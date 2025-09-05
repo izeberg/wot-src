@@ -174,11 +174,11 @@ def WG_loadBanks(*args, **kwargs):
     pass
 
 
-def WG_loadLogin(*args, **kwargs):
+def loadLogin(*args, **kwargs):
     pass
 
 
-def WG_isMSR(*args, **kwargs):
+def isMSR(*args, **kwargs):
     return False
 
 

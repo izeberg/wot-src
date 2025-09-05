@@ -43,10 +43,10 @@
 						<node>
 							<identifier>HP_gunFire_L</identifier>
 							<transform>
-								<row0>1.000000 0.000000 0.000002</row0>
+								<row0>1.000000 0.000000 0.000001</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
-								<row2>0.000000 0.000000 1.000000</row2>
-								<row3>-0.010000 -0.003000 1.520000</row3>
+								<row2>0.000000 -0.000000 1.000000</row2>
+								<row3>-0.020725 -0.003000 1.478753</row3>
 							</transform>
 						</node>
 						<node>
@@ -70,10 +70,10 @@
 						<node>
 							<identifier>HP_gunFire_R</identifier>
 							<transform>
-								<row0>1.000000 0.000000 -0.000002</row0>
+								<row0>1.000000 0.000000 -0.000001</row0>
 								<row1>0.000000 1.000000 0.000000</row1>
 								<row2>-0.000000 -0.000000 1.000000</row2>
-								<row3>0.010000 -0.003000 1.520000</row3>
+								<row3>0.019522 -0.003000 1.478753</row3>
 							</transform>
 						</node>
 						<node>
@@ -172,14 +172,14 @@
 						<Vector4>3.506849 3.506849 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.000001 0.000188 -2.359399</groupOrigin>
+				<groupOrigin>-0.000001 0.000187 -2.359399</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.499684 -0.264167 -0.046035</min>
-		<max>0.499681 0.264543 4.764833</max>
+		<min>-0.499684 -0.264168 -0.046035</min>
+		<max>0.499681 0.264542 4.764832</max>
 	</boundingBox>
 	<geometrySize>228556</geometrySize>
 	<minUVDensity>0.026397</minUVDensity>

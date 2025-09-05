@@ -154,10 +154,6 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/03_Concrete_floor_03_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.576760 8.052091 -3.126328</groupOrigin>
 			</primitiveGroup>
@@ -168,7 +164,6 @@
 		<max>5.685249 8.332357 0.881720</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<primitivesName>content/Buildings/hd_bld_EU_072_OldCastleWall/normal/lod0/hd_bld_EU_072_OldCastleWall_Corner_01</primitivesName>
-	<geometrySize>94116</geometrySize>
+	<geometrySize>94028</geometrySize>
 	<minUVDensity>0.011687</minUVDensity>
 </root>

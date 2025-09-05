@@ -138,13 +138,12 @@ package net.wg.gui.battle.views
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         var _loc4_:int = 0;
          var _loc5_:int = 0;
          var _loc6_:Number = NaN;
          var _loc7_:int = 0;
          super.updateStage(param1,param2);
          var _loc3_:int = param1 >> 1;
-         _loc4_ = param2 >> 1;
+         var _loc4_:int = param2 >> 1;
          _originalWidth = param1;
          _originalHeight = param2;
          setSize(param1,param2);
@@ -156,10 +155,6 @@ package net.wg.gui.battle.views
          {
             this.battleTimer.x = param1 - this.battleTimer.initedWidth;
             this.battleTimer.y = 0;
-         }
-         if(this.dualGunPanel)
-         {
-            this.dualGunPanel.updateStage(param1,param2);
          }
          if(this.hitTestFix)
          {
@@ -602,7 +597,7 @@ package net.wg.gui.battle.views
          return param1 && param1.visible && param1.parent != this && this.isElementVisible(param1.parent);
       }
       
-      private function showComponent(param1:String, param2:Boolean) : void
+      protected function showComponent(param1:String, param2:Boolean) : void
       {
          var _loc3_:IDisplayableComponent = null;
          _loc3_ = this._componentsStorage[param1];

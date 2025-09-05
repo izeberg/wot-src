@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.311480 0.454462 -1.936036</min>
+		<max>-1.477329 1.162786 -1.072371</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R232_IS-7W/normal/lod1/Antena_anim_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R232_IS-7W/normal/lod0/Antena_anim_01</nodefullVisual>
+</root>

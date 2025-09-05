@@ -1295,14 +1295,7 @@ package net.wg.gui.battle.random.views.stats.components.fullStats
          this.icoTesterCollection = new <BattleAtlasSprite>[this.icoTester_c1r1,this.icoTester_c1r2,this.icoTester_c1r3,this.icoTester_c1r4,this.icoTester_c1r5,this.icoTester_c1r6,this.icoTester_c1r7,this.icoTester_c1r8,this.icoTester_c1r9,this.icoTester_c1r10,this.icoTester_c1r11,this.icoTester_c1r12,this.icoTester_c1r13,this.icoTester_c1r14,this.icoTester_c1r15,this.icoTester_c2r1,this.icoTester_c2r2,this.icoTester_c2r3,this.icoTester_c2r4,this.icoTester_c2r5,this.icoTester_c2r6,this.icoTester_c2r7,this.icoTester_c2r8,this.icoTester_c2r9,this.icoTester_c2r10,this.icoTester_c2r11,this.icoTester_c2r12,this.icoTester_c2r13,this.icoTester_c2r14,this.icoTester_c2r15];
          this.background.cacheType = ImageCacheTypes.NOT_USE_CACHE;
          this.background.source = RES_ICONS.MAPS_ICONS_BATTLE_STATS_TABLE_BG;
-         this.leftTank.imageName = BATTLEATLAS.STATS_TABLE_TANK;
-         this.leftFrag.imageName = BATTLEATLAS.STATS_TABLE_FRAGS;
-         this.leftPlatoon.imageName = BATTLEATLAS.STATS_TABLE_PLATOON;
-         App.utils.commons.flipHorizontal(this.leftFrag);
-         this.rightTank.imageName = BATTLEATLAS.STATS_TABLE_TANK;
-         this.rightFrag.imageName = BATTLEATLAS.STATS_TABLE_FRAGS;
-         this.rightPlatoon.imageName = BATTLEATLAS.STATS_TABLE_PLATOON;
-         App.utils.commons.flipHorizontal(this.rightTank);
+         this.setTableImages();
       }
       
       override protected function onDispose() : void
@@ -1972,6 +1965,18 @@ package net.wg.gui.battle.random.views.stats.components.fullStats
          this.rightTank = null;
          this.rightPlatoon = null;
          super.onDispose();
+      }
+      
+      protected function setTableImages() : void
+      {
+         this.leftTank.imageName = BATTLEATLAS.STATS_TABLE_TANK;
+         this.leftFrag.imageName = BATTLEATLAS.STATS_TABLE_FRAGS;
+         this.leftPlatoon.imageName = BATTLEATLAS.STATS_TABLE_PLATOON;
+         App.utils.commons.flipHorizontal(this.leftFrag);
+         this.rightTank.imageName = BATTLEATLAS.STATS_TABLE_TANK;
+         this.rightFrag.imageName = BATTLEATLAS.STATS_TABLE_FRAGS;
+         this.rightPlatoon.imageName = BATTLEATLAS.STATS_TABLE_PLATOON;
+         App.utils.commons.flipHorizontal(this.rightTank);
       }
    }
 }

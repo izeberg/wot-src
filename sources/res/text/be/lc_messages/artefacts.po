@@ -163,6 +163,9 @@ msgstr "Сярэдняя супрацьасколачная падбіўка"
 msgid "antifragmentationLining_tier4/name"
 msgstr "Лёгкая супрацьасколачная падбіўка"
 
+msgid "antifragmentationLining_wt/name"
+msgstr "?empty?"
+
 msgid "archetype/additionalInvisibilityDevice/name"
 msgstr "Сістэма выхлапу"
 
@@ -429,6 +432,269 @@ msgstr ""
 "Прычыняе пажкоджанні і дадае штраф да агляду ўсім машынам у воблаку. "
 "Маскіруе ўсю тэхніку, што знаходзіцца ў воблаку і за ім."
 
+msgid "builtinAfterburning_wt/always"
+msgstr "?empty?"
+
+msgid "builtinAfterburning_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinAfterburning_wt/features"
+msgstr ""
+"1. Выкарыстоўвайце фарсаж, каб хутка перамясціцца ў патрэбны пункт або пакінуць небяспечныя ўчасткі мапы.\n"
+"2. Здольнасць дапаможа абысці праціўніка або пазбегнуць пашкоджанняў.\n"
+"3. Электрамагнітная сетка перапыняе дзеянне фарсажу."
+
+msgid "builtinAfterburning_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinAfterburning_wt/name"
+msgstr "Фарсаж"
+
+msgid "builtinAfterburning_wt/onUse"
+msgstr "На пэўны час павышае дынамічныя характарыстыкі танка."
+
+msgid "builtinAfterburning_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinAfterburning_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/always"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinChargedShot_wt/features"
+msgstr ""
+"Дзякуючы высокай дакладнасці і хуткасці палёту вельмі эфектыўны для "
+"паражэння цэляў на вялікай адлегласці."
+
+msgid "builtinChargedShot_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/name"
+msgstr "Уранавы лом"
+
+msgid "builtinChargedShot_wt/onUse"
+msgstr ""
+"Наступны снарад паляціць дакладней і хутчэй, а таксама прычыніць большыя "
+"пашкоджанні праціўніку і яго модулям."
+
+msgid "builtinChargedShot_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinChargedShot_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/always"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinExplosiveShot_wt/features"
+msgstr ""
+"1. Выкарыстоўвайце здольнасць, каб прычыніць значныя пашкоджанні вялікім групам вартавых.\n"
+"2. Выбуховая хваля праходзіць скрозь сцены і ўкрыцці.\n"
+"3. Чым таўсцейшае ўкрыццё або чым далей ад яго знаходзіцца цэль, тым меншыя будуць пашкоджанні."
+
+msgid "builtinExplosiveShot_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/name"
+msgstr "Выбуховы стрэлы"
+
+msgid "builtinExplosiveShot_wt/onUse"
+msgstr ""
+"Наступны стрэл стане разрыўным, прычыняючы пашкоджанні ў пэўным радыусе ад "
+"пункта трапляння."
+
+msgid "builtinExplosiveShot_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinExplosiveShot_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt/always"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt/descr"
+msgstr "Суперзброя"
+
+msgid "builtinHyperion_wt/features"
+msgstr ""
+"1. Суперзброя зараджаецца пры пашкоджанні тэхнікі праціўніка.\n"
+"2. Ганчакі даведаюцца, калі вы актывуеце гэту разбуральную здольнасць.\n"
+"3. Абарончыя здольнасць праціўніка, такія як «Балістычны купал» і «Поўны рамонт», будуць перапынены пасля аднаго імпульсу.\n"
+"4. Вашы вартавыя і вы самі абаронены ад разбуральнага ўздзеяння."
+
+msgid "builtinHyperion_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt/name"
+msgstr "Молат Карны"
+
+msgid "builtinHyperion_wt/onUse"
+msgstr ""
+"Выпускае імпульсы чыстай энергіі ў выбраную зону, не пакідаючы пасля сябе "
+"нічога жывога."
+
+msgid "builtinHyperion_wt/restriction"
+msgstr ""
+"Здольнасць недаступная без актыўнага шчыта.\n"
+"Здольнасць зараджаецца шляхам прычынення пашкоджанняў па Ганчаках."
+
+msgid "builtinHyperion_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt_2025/always"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt_2025/descr"
+msgstr "Суперзброя"
+
+msgid "builtinHyperion_wt_2025/features"
+msgstr ""
+"1. Суперзброя зараджаецца пры пашкоджанні тэхнікі праціўніка.\n"
+"2. Ганчакі даведаюцца, калі вы актывуеце гэту разбуральную здольнасць.\n"
+"3. Абарончыя здольнасці праціўніка, такія як «Балістычны купал» і «Поўны рамонт», будуць перапынены.\n"
+"4. Вашы вартавыя і вы самі абаронены ад разбуральнага ўздзеяння."
+
+msgid "builtinHyperion_wt_2025/long_special"
+msgstr "?empty?"
+
+msgid "builtinHyperion_wt_2025/name"
+msgstr "Званы Карны"
+
+msgid "builtinHyperion_wt_2025/onUse"
+msgstr ""
+"Праз пэўны час пасля выкарыстання ў выбраную зону ў выпадковым парадку "
+"будуць зроблены залпы з абмежаванай зонай паражэння, якія знішчаць усё "
+"жывое."
+
+msgid "builtinHyperion_wt_2025/restriction"
+msgstr ""
+"Здольнасць недаступная без актыўнага шчыта.\n"
+"Здольнасць зараджаецца шляхам прычынення пашкоджанняў па Ганчаках."
+
+msgid "builtinHyperion_wt_2025/short_special"
+msgstr "?empty?"
+
+msgid "builtinImpulse_wt/always"
+msgstr "?empty?"
+
+msgid "builtinImpulse_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinImpulse_wt/features"
+msgstr ""
+"1. Чым больш цэляў зачэпіць імпульс, тым хутчэй ён перазарадзіцца.\n"
+"2. Выбуховая хваля праходзіць скрозь аб'екты навакольнага асяроддзя, дапамагаючы запаволіць нават самыя вёрткія цэлі.\n"
+"3. Выбух можа прычыніць пашкоджанні праз балістычны купал Foudre."
+
+msgid "builtinImpulse_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinImpulse_wt/name"
+msgstr "Электрамагнітны імпульс"
+
+msgid "builtinImpulse_wt/onUse"
+msgstr ""
+"Выпускае кругавы зарад энергіі вакол машыны, які аглушае ўсю тэхніку "
+"праціўніка ў радыўсе паражэння і прычыняе невялікія пашкоджанні. Праходзіць "
+"скрозь усе перашкоды і скідвае ачкі перагрузкі генератара."
+
+msgid "builtinImpulse_wt/restriction"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
+
+msgid "builtinImpulse_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinInstantStunShoot_wt/always"
+msgstr "?empty?"
+
+msgid "builtinInstantStunShoot_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinInstantStunShoot_wt/features"
+msgstr ""
+"1. Здольнасць аглушае цэль, зніжаючы яе мабільнасць практычна да мінімуму, а павольную цэль прасцей пашкодзіць асноўнай гарматай.\n"
+"2. Мае невялікую зону паражэння: можна аглушыць цэль, не патрапіўшы ў яе прамым стрэлам.\n"
+"3. Можна выкарыстаць, нават калі гармата не зараджана."
+
+msgid "builtinInstantStunShoot_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinInstantStunShoot_wt/name"
+msgstr "Электрамагнітная страла"
+
+msgid "builtinInstantStunShoot_wt/onUse"
+msgstr ""
+"Стрэл высакавольтным зарадам, які запавольвае і аглушае праціўніка. Прычыняе"
+" пашкоджанні і скідвае ачкі перагрузкі генератара."
+
+msgid "builtinInstantStunShoot_wt/restriction"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
+
+msgid "builtinInstantStunShoot_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinLargeMedkit_wt/always"
+msgstr "%(crewHitChance)s да абароны экіпажа ад раненняў"
+
+msgid "builtinLargeMedkit_wt/descr"
+msgstr "Лячэнне ўсіх параненых членаў экіпажа і зняцце эфекту аглушэння."
+
+msgid "builtinLargeMedkit_wt/long_special"
+msgstr ""
+"Дазваляе вярнуць у строй усіх параненых членаў экіпажа за раз. Таксама "
+"пасіўна паляпшае абарону экіпажа ад раненняў. Актывуецца ўручную."
+
+msgid "builtinLargeMedkit_wt/name"
+msgstr "Вялікая аптэчка"
+
+msgid "builtinLargeMedkit_wt/onUse"
+msgstr ""
+"Лячэнне ўсіх параненых членаў экіпажа. Выкарыстоўваецца шматразова за бой."
+
+msgid "builtinLargeMedkit_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinLargeMedkit_wt/short_special"
+msgstr "Лечыць усіх параненых членаў экіпажа."
+
+msgid "builtinLargeMedkit_wt/stunDisabled/descr"
+msgstr "Лячэнне ўсіх параненых танкістаў вашага экіпажу."
+
+msgid "builtinPlasmaExtractor_wt/always"
+msgstr "?empty?"
+
+msgid "builtinPlasmaExtractor_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinPlasmaExtractor_wt/features"
+msgstr ""
+"1. Зарады плазмы трымаюцца на машыне Інжынера да моманту захопу генератара і пакуль у машыны ёсць шчыт. Як толькі шчыт зняты, зарады таксама знікаюць.\n"
+"2. Пасля аднаўлення шчыта зарады не аднаўляюцца — трэба выкарыстоўваць здольнасць нанова."
+
+msgid "builtinPlasmaExtractor_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinPlasmaExtractor_wt/name"
+msgstr "Мёртвая хватка"
+
+msgid "builtinPlasmaExtractor_wt/onUse"
+msgstr ""
+"Наступны стрэл у выпадку прабіцця адыме адзін зарад плазмы ў Ганчака і "
+"перадасць яе Інжынеру. Калі ў Ганчака зараду няма, то эфект не спрацуе."
+
+msgid "builtinPlasmaExtractor_wt/restriction"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
+
+msgid "builtinPlasmaExtractor_wt/short_special"
+msgstr "?empty?"
+
 msgid "builtinRepairkit/always"
 msgstr "%(vehicleRepairSpeed)s да хуткасці рамонту модуляў"
 
@@ -449,6 +715,227 @@ msgstr ""
 " не могуць быць пашкоджаны, пакуль дзейнічае эфект гэтага рыштунку."
 
 msgid "builtinRepairkit/restriction"
+msgstr "?empty?"
+
+msgid "builtinRepairkit_wt/always"
+msgstr "%(vehicleRepairSpeed)s да хуткасці рамонту модуляў."
+
+msgid "builtinRepairkit_wt/descr"
+msgstr "Рамонт усіх пашкоджаных модуляў."
+
+msgid "builtinRepairkit_wt/long_special"
+msgstr ""
+"Дазваляе аднаўляць усе пашкоджаныя модулі за раз. Таксама пасіўна павялічвае"
+" хуткасць рамонту. Актывуецца ўручную."
+
+msgid "builtinRepairkit_wt/name"
+msgstr "Вялікі рамонтны набор"
+
+msgid "builtinRepairkit_wt/onUse"
+msgstr ""
+"Рамонт усіх пашкоджаных модуляў. Выкарыстоўваецца шматразова за бой. Не "
+"расходуецца."
+
+msgid "builtinRepairkit_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/always"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinSelfRepair_wt/features"
+msgstr ""
+"1. Выкарыстоўвайце здольнасць у перапынках паміж баявымі дзеяннямі, каб цалкам адрамантаваць сваю машыну.\n"
+"2. Выкарыстоўвайце здольнасць падчас бою або ўдару Молата Карны, каб вярнуць невялікую колькасць трываласці, якая можа даць вам шанц выжыць."
+
+msgid "builtinSelfRepair_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/name"
+msgstr "Поўны рамонт"
+
+msgid "builtinSelfRepair_wt/onUse"
+msgstr ""
+"Аднаўляе трываласць, пакуль машына цалкам не адновіцца і не атрымае "
+"пашкоджанні."
+
+msgid "builtinSelfRepair_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinSelfRepair_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/always"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinShield_wt/features"
+msgstr ""
+"1. Абарончая паўсфера трымаецца нядоўга, таму выкарыстоўвайце яе ў крытычных сітуацыях.\n"
+"2. Балістычны купал можна заблакаваць імпульс Званоў Карны і толькі адзін імпульс Молата Карны.\n"
+"3. Здольнасць не абароніць вас ад тарана, падзення або пашкоджання электрамагнітным выбухам.\n"
+"4. Пры актыўныя купале здольнасць «Электрамагнітная сетка» не ўздзейнічае на танк."
+
+msgid "builtinShield_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/name"
+msgstr "Балістычны купал"
+
+msgid "builtinShield_wt/onUse"
+msgstr ""
+"На пэўны час дае няўразлівасць да аглушэння і пашкоджанняў, атрыманых ад "
+"трапляння снарадаў."
+
+msgid "builtinShield_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinShield_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/always"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinStronghold_wt/features"
+msgstr ""
+"1. Выкарыстоўвайце аблогавы рэжым разумна. Ён істотна зніжае мабільнасць машыны, а значыць і вашы шанцы на ўцёкі.\n"
+"2. Машына мае выдатныя ВВН, што дазваляе вам выкарыстоўваць няроўнасць мясцовасці ў сваіх інтарэсаў.\n"
+"3. Машына мае прыстойную выжывальнасць. Выкарыстоўвайце гэта, каб прыкрываць сваіх хаўруснікаў."
+
+msgid "builtinStronghold_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/name"
+msgstr "Аблогавы рэжым"
+
+msgid "builtinStronghold_wt/onUse"
+msgstr ""
+"На пэўны час павышае хуткастрэльнасць машыны, але зніжае яе рухомасць."
+
+msgid "builtinStronghold_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinStronghold_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinStunArea_wt/always"
+msgstr "?empty?"
+
+msgid "builtinStunArea_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinStunArea_wt/features"
+msgstr ""
+"1. Пад дзеяннем эфекту немагчыма выкарыстоўваць рыштунак і здольнасці.\n"
+"2. Перапыняе дзеянне здольнасцяў «Фарсаж» і «Поўны рамонт».\n"
+"3. Актыўны Балістычны купал танка Foudre цалкам абараняе машыну ад дзеяння гэтай здольнасці."
+
+msgid "builtinStunArea_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinStunArea_wt/name"
+msgstr "Электрамагнітная сетка"
+
+msgid "builtinStunArea_wt/onUse"
+msgstr ""
+"Стрэл снарадам, які выбухае і раскідвае электрамагнітнае поле, унутры якога "
+"праціўнік атрымлівае невялікія пашкоджанні і страчвае кантроль над "
+"кіраваннем танка: поўнае спыненне рухавіка, блакіроўка руху шасі, вежы і "
+"гарматы. Час дзеяння эфекту %(time)s с. Радыус паражэння %(radius)s м."
+
+msgid "builtinStunArea_wt/restriction"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
+
+msgid "builtinStunArea_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt/always"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinTeleport_wt/features"
+msgstr ""
+"1. Ганчакі даведаюцца, калі вы выкарыстоўваеце тэлепартацыю, але не будуць ведаць, дзе вы з'яўляецеся.\n"
+"2. Старайцеся не ад'язджаць занадта далёка ад Ганчакоў, бо можаце не паспець дабрацца да ключавым месцаў своечасова."
+
+msgid "builtinTeleport_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt/name"
+msgstr "Тэлепорт"
+
+msgid "builtinTeleport_wt/onUse"
+msgstr ""
+"Дазваляе тэлепартавацца ў выбраны пункт на мапе. Актывацыя займае пэўны час."
+
+msgid "builtinTeleport_wt/restriction"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
+
+msgid "builtinTeleport_wt/short_special"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt_2025/always"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt_2025/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinTeleport_wt_2025/features"
+msgstr ""
+"1. Ганчакі даведаюцца, калі вы выкарыстоўваеце тэлепартацыю, але не будуць ведаць, дзе вы з'яўляецеся.\n"
+"2. Старайцеся не ад'язджаць занадта далёка ад Ганчакоў, бо можаце не паспець дабрацца да ключавым месцаў своечасова."
+
+msgid "builtinTeleport_wt_2025/long_special"
+msgstr "?empty?"
+
+msgid "builtinTeleport_wt_2025/name"
+msgstr "Тэлепорт"
+
+msgid "builtinTeleport_wt_2025/onUse"
+msgstr ""
+"Дазваляе тэлепартавацца ў выбраны пункт на мапе. Актывацыя займае пэўны час."
+
+msgid "builtinTeleport_wt_2025/restriction"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
+
+msgid "builtinTeleport_wt_2025/short_special"
+msgstr "?empty?"
+
+msgid "builtinUnionStrength_wt/always"
+msgstr "?empty?"
+
+msgid "builtinUnionStrength_wt/descr"
+msgstr "Баявая здольнасць"
+
+msgid "builtinUnionStrength_wt/features"
+msgstr ""
+"1. Падтрымлівайце метку на праціўніку, каб павялічыць пашкоджанні па цэлі.\n"
+"2. Засяроджвайце камандныя пашкоджанні на праціўніку, калі з яго зляцеў шчыт."
+
+msgid "builtinUnionStrength_wt/long_special"
+msgstr "?empty?"
+
+msgid "builtinUnionStrength_wt/name"
+msgstr "Моц зграі"
+
+msgid "builtinUnionStrength_wt/onUse"
+msgstr ""
+"Звычайны стрэл па цэлі накладае на яе метку, якая павялічвае пашкоджанні па гэтай цэлі на %(damageIncrease)s%(percent)s на працягу %(time)s с.\n"
+"Меткі ад стрэлаў розных гульцоў сумуюцца."
+
+msgid "builtinUnionStrength_wt/restriction"
+msgstr "?empty?"
+
+msgid "builtinUnionStrength_wt/short_special"
 msgstr "?empty?"
 
 msgid "camouflageBattleBooster/action/boost"
@@ -1199,6 +1686,9 @@ msgstr "Палепшаная загартоўка (Клас 2)"
 msgid "extraHealthReserve_tier3/name"
 msgstr "Палепшаная загартоўка (Клас 3)"
 
+msgid "extraHealthReserve_wt/name"
+msgstr "?empty?"
+
 msgid "fireCircle/descr"
 msgstr ""
 "Стварае вогненнае кола вакол машыны, якое прычыняе пашкоджанні і зніжае "
@@ -1512,6 +2002,9 @@ msgstr "Палепшанае радыёабсталяванне"
 
 msgid "improvedRadioCommunication/short_special"
 msgstr "Павялічвае час паказу праціўніка і памяншае час вашай бачнасці"
+
+msgid "improvedRadioCommunication_wt/name"
+msgstr "?empty?"
 
 msgid "improvedRotationMechanism/long_special"
 msgstr ""

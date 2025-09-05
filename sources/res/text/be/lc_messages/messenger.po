@@ -2018,6 +2018,10 @@ msgstr "Дасягненні"
 msgid "serviceChannelMessages/battleResults/quests/battlePassPoints"
 msgstr "Атрымана ачкоў Баявога пропуска: %(value)s"
 
+msgid ""
+"serviceChannelMessages/battleResults/quests/battleQuestsBattlePassPoints"
+msgstr "Атрымана ачкоў Баявога пропуска"
+
 msgid "serviceChannelMessages/battleResults/quests/berths"
 msgstr "У Жаўнерню дададзены ложкі"
 
@@ -2123,17 +2127,17 @@ msgstr ""
 msgid "serviceChannelMessages/battleResults/rankedState/nothingChanged"
 msgstr ""
 " \n"
-"Шаўрон захаваны"
+"Шаўрон абаронены"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankEarned"
 msgstr ""
 " \n"
-"Атрыманы %(rankName)s ранг (%(divisionName)s)"
+"Атрыманы новы ранг"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankLost"
 msgstr ""
 " \n"
-"Страчаны %(rankName)s ранг (%(divisionName)s)"
+"Ранг страчаны"
 
 msgid "serviceChannelMessages/battleResults/rankedState/rankShieldProtected"
 msgstr ""
@@ -2153,7 +2157,7 @@ msgstr ""
 msgid "serviceChannelMessages/battleResults/rankedState/stageNotEarned"
 msgstr ""
 " \n"
-"Шаўрон захаваны"
+"Шаўрон абаронены"
 
 msgid "serviceChannelMessages/battleResults/rankedState/stepEarned"
 msgstr ""
@@ -2429,6 +2433,12 @@ msgstr "• Эксперыментальнае абсталяванне на в�
 
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• Бланкі перападрыхтоўкі"
+
+msgid "serviceChannelMessages/event/lootboxes"
+msgstr "Атрымана стартараў:"
+
+msgid "serviceChannelMessages/event/tickets"
+msgstr "Атрымана ключоў:"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "Ад адміністрацыі атрымана юбілейных манет: %(eventCoin)s."
@@ -2940,7 +2950,7 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "Паглядзець"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
-msgstr "Адкрыта парталаў: %(boxes)s"
+msgstr "Спісана: %(boxes)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/counter"
 msgstr "%(boxName)s (x%(count)d)"

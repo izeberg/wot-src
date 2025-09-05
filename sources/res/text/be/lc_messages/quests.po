@@ -2200,6 +2200,9 @@ msgstr "Атрымаць адметную адзнаку на гармату"
 msgid "details/conditions/cumulative/maxDamage"
 msgstr "Найбольшыя пашкоджанні"
 
+msgid "details/conditions/cumulative/maxWtPlasmaBonus"
+msgstr "Атрымаць пэўны узовень узмацнення агнявой моцы ў межах аднаго бою"
+
 msgid "details/conditions/cumulative/mileage"
 msgstr "Прабег за бой, не менш за (м)"
 
@@ -2281,6 +2284,18 @@ msgstr "Параметр для каманды: %(param)s"
 
 msgid "details/conditions/cumulative/tkills"
 msgstr "Знішчаныя машыны хаўруснікаў"
+
+msgid "details/conditions/cumulative/wtBossVulnerableDamage"
+msgstr "Прычыніць пашкоджанні машыне Інжынера, пакуль яна без шчыта"
+
+msgid "details/conditions/cumulative/wtDeathCount"
+msgstr "Колькасць адраджэнняў"
+
+msgid "details/conditions/cumulative/wtGeneratorsCaptured"
+msgstr "Узяць удзел у перагрузцы ўказанай колькасці генератараў"
+
+msgid "details/conditions/cumulative/wtTotalGeneratorsCaptured"
+msgstr "Колькасць перагружаных генератараў"
 
 msgid "details/conditions/cumulative/xp"
 msgstr "Здабыты досвед"
@@ -4888,7 +4903,7 @@ msgstr "Штодзённыя задачы"
 msgid "introScreen/inputSeries/description"
 msgstr ""
 "Падаўжайце свой ланцуг перамог, штодзённа выконваючы баявую задачу; яна "
-"заўжды адна — перамагчы ў баі або атрымаць 350 адз. «чыстага» досведу. "
+"заўжды адна — перамагчы ў баі або атрымаць 250 адз. «чыстага» досведу. "
 "Назапашвайце рэгулярныя ўзнагароды, захоўваючы ваш ланцуг перамог "
 "бесперапынным."
 

@@ -84,10 +84,6 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.531190 3.927814 -3.205903</groupOrigin>
 			</primitiveGroup>
@@ -154,21 +150,16 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/03_Concrete_floor_03_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
 				</material>
 				<groupOrigin>1.566312 8.009949 -3.146794</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.610859 -0.109995 -7.311774</min>
+		<min>-2.610859 -0.109995 -7.311775</min>
 		<max>5.685249 8.332357 0.879030</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<primitivesName>content/Buildings/hd_bld_EU_072_OldCastleWall/normal/lod4/hd_bld_EU_072_OldCastleWall_Corner_01</primitivesName>
 	<geometrySize>4056</geometrySize>
 	<minUVDensity>0.038458</minUVDensity>
 </root>

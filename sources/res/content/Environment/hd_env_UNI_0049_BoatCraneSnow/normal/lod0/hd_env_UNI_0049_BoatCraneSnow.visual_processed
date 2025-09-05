@@ -38,8 +38,12 @@
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>-0.001901 5.193014 0.161615</groupOrigin>
+				<groupOrigin>-0.001901 5.193016 0.161615</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -48,6 +52,6 @@
 		<max>3.617726 14.249687 15.380223</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>365790</geometrySize>
-	<minUVDensity>0.000089</minUVDensity>
+	<geometrySize>380070</geometrySize>
+	<minUVDensity>0.000153</minUVDensity>
 </root>

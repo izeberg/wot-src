@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<parent>content/Environment/hd_env_UNI_0057_RoadLighting/normal/lod2/hd_env_UNI_0057_RoadLighting</parent>
 	<extent>96.000000</extent>
-	<nodelessVisual>content/Environment/hd_env_UNI_0057_RoadLighting/normal/lod1/hd_env_UNI_0057_RoadLighting</nodelessVisual>
+	<visibilityBox>
+		<min>-0.287519 -0.702047 -3.783347</min>
+		<max>0.287519 9.628743 0.287519</max>
+	</visibilityBox>
+	<nodefullVisual>content/Environment/hd_env_UNI_0057_RoadLighting/normal/lod1/hd_env_UNI_0057_RoadLighting</nodefullVisual>
+	<parent>content/Environment/hd_env_UNI_0057_RoadLighting/normal/lod2/hd_env_UNI_0057_RoadLighting</parent>
 </root>

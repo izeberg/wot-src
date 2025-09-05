@@ -92,15 +92,15 @@
 						<Texture>content/Environment/00_Tiles/dds/Rock_Kamchatka_02_1024_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-438.906250 1864.928467 -1564.176025</groupOrigin>
+				<groupOrigin>-219.453125 932.464233 -782.088013</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3167.397461 -956.580444 -10189.003906</min>
-		<max>2289.584961 4686.437500 7060.651855</max>
+		<min>-1583.698730 -478.290222 -5094.501953</min>
+		<max>1144.792480 2343.218750 3530.325928</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>107220</geometrySize>
-	<minUVDensity>0.002321</minUVDensity>
+	<geometrySize>107226</geometrySize>
+	<minUVDensity>0.009284</minUVDensity>
 </root>

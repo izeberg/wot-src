@@ -1125,6 +1125,9 @@ class ArenaVehiclesPlugin(common.EntriesPlugin, IVehiclesAndPositionsController)
     def __onTeamChanged(self, teamID):
         self.invalidateArenaInfo()
 
+    def hideMinimapHP(self):
+        self.__showMinimapHP(False)
+
     def __handleShowExtendedInfo(self, event):
         if self._parentObj.isModalViewShown():
             return
@@ -1306,7 +1309,7 @@ class SimpleMinimapPingPlugin(common.IntervalPlugin):
         self._mouseKeyEventHandler[_EMinimapMouseKey.KEY_MBL.value] = self._make3DAttentionToPing
 
     def _getTerrainHeightAt(self, spaceID, x, z):
-        collisionWithTerrain = BigWorld.wg_collideSegment(spaceID, Math.Vector3(x, 1000.0, z), Math.Vector3(x, -1000.0, z), 128)
+        collisionWithTerrain = BigWorld.collideSegment(spaceID, Math.Vector3(x, 1000.0, z), Math.Vector3(x, -1000.0, z), 128)
         if collisionWithTerrain is not None:
             return collisionWithTerrain.closestPoint
         else:
@@ -1356,6 +1359,10 @@ class MinimapPingPlugin(SimpleMinimapPingPlugin):
          Math.Vector2(0, 0), Math.Vector2(0, 0))
         AccountSettings.setSettings(MINIMAP_IBC_HINT_SECTION, self.__minimapSettings)
 
+    def hideHintPanel(self, instantHide=False):
+        self.__isHintPanelEnabled = False
+        self.parentObj.as_disableHintPanelS(instantHide)
+
     def __handleKeyDownEvent(self, event):
         if event.key not in (Keys.KEY_LCONTROL, Keys.KEY_RCONTROL):
             return
@@ -1370,10 +1377,9 @@ class MinimapPingPlugin(SimpleMinimapPingPlugin):
     def __handleKeyUpEvent(self, event):
         if event.key not in (Keys.KEY_LCONTROL, Keys.KEY_RCONTROL):
             return
-        if not self.__isHintPanelEnabled:
+        if not self.__isHintPanelEnabled or self._parentObj.isModalViewShown():
             return
-        self.__isHintPanelEnabled = False
-        self.parentObj.as_disableHintPanelS()
+        self.hideHintPanel()
 
     def updateControlMode(self, crtlMode, vehicleID):
         super(MinimapPingPlugin, self).updateControlMode(crtlMode, vehicleID)

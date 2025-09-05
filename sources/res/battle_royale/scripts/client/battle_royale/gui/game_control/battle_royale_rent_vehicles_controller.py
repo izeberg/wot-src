@@ -1,6 +1,6 @@
 import logging, math, typing, time
 from functools import wraps, partial
-from wg_async import wg_await, wg_async
+from th_async import th_await, th_async
 import BigWorld, AccountCommands
 from CurrentVehicle import g_currentVehicle
 from Event import Event, EventManager
@@ -203,9 +203,9 @@ class BattleRoyaleRentVehiclesController(IBattleRoyaleRentVehiclesController):
             self.showBuyConfirmDialog(intCD, rentMethod, state)
         return
 
-    @wg_async
+    @th_async
     def showBuyConfirmDialog(self, intCD, rentMethod, state):
-        result = yield wg_await(dialogs.showSingleDialogWithResultData(vehicleCD=intCD, layoutID=RentConfirm.LAYOUT_ID, wrappedViewClass=RentConfirm))
+        result = yield th_await(dialogs.showSingleDialogWithResultData(vehicleCD=intCD, layoutID=RentConfirm.LAYOUT_ID, wrappedViewClass=RentConfirm))
         isOK, _ = result.result
         if isOK:
             vehicle = self.__itemsCache.items.getItemByCD(intCD)

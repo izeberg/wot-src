@@ -196,6 +196,15 @@ msgstr ""
 msgid "11_murovanka/name"
 msgstr "Мурованка"
 
+msgid "11_murovanka_wt/description"
+msgstr ""
+"Тактика боя определяется наличием болот, оврагов и холмов. Небольшое "
+"количество зданий даёт ощутимое преимущество артиллерии. Сконцентрируйте "
+"ваши силы на одном направлении, ограничившись обороной на остальных."
+
+msgid "11_murovanka_wt/name"
+msgstr "Мурованка"
+
 msgid "121_lost_paradise_v/description"
 msgstr ""
 "Ключевая зона столкновения на этом вулканическом полуострове — извилистое "
@@ -260,6 +269,16 @@ msgstr ""
 
 msgid "14_siegfried_line_nom/name"
 msgstr "Западный вал"
+
+msgid "14_siegfried_line_wt/description"
+msgstr ""
+"Удачное сочетание открытых пространств и городских кварталов является "
+"особенностью данной карты. Извилистые улочки позволяют проникнуть в тыл "
+"противника, а многочисленные доты могут быть использованы в качестве "
+"укрытий."
+
+msgid "14_siegfried_line_wt/name"
+msgstr "Линия Зигфрида"
 
 msgid "17_munchen/description"
 msgstr ""
@@ -402,6 +421,12 @@ msgstr ""
 msgid "28_desert/name"
 msgstr "Песчаная река"
 
+msgid "28_desert_wt/description"
+msgstr "Специальная карта для режима."
+
+msgid "28_desert_wt/name"
+msgstr "Песчаная река"
+
 msgid "29_el_hallouf/description"
 msgstr ""
 "В центре карты расположена просторная долина, заполненная камнями и "
@@ -441,6 +466,15 @@ msgstr ""
 msgid "34_redshire/name"
 msgstr "Редшир"
 
+msgid "34_redshire_wt/description"
+msgstr ""
+"Эта карта особенная. Поля, плавно переходящие в холмы, являются отличным "
+"местом для решительных атак. Река в середине карты служит хорошим "
+"ориентиром, а не является препятствием."
+
+msgid "34_redshire_wt/name"
+msgstr "Редшир"
+
 msgid "35_steppes/description"
 msgstr ""
 "Данная карта отличается обилием открытого пространства, позволяющего "
@@ -449,6 +483,16 @@ msgstr ""
 "обходов и ударов."
 
 msgid "35_steppes/name"
+msgstr "Степи"
+
+msgid "35_steppes_wt/description"
+msgstr ""
+"Данная карта отличается обилием открытого пространства, позволяющего "
+"концентрировать силы на разных направлениях. Дорога по центру позволяет "
+"быстро добраться до базы противника. Также карта удобна для фланговых "
+"обходов и ударов."
+
+msgid "35_steppes_wt/name"
 msgstr "Степи"
 
 msgid "36_fishing_bay/description"
@@ -643,11 +687,20 @@ msgstr "?empty?"
 msgid "h08_mt_hangar/name"
 msgstr "?empty?"
 
-msgid "h15_mt_bday_2025/description"
+msgid "h08_mt_hangar_wt/description"
 msgstr "?empty?"
 
-msgid "h15_mt_bday_2025/name"
+msgid "h08_mt_hangar_wt/name"
 msgstr "?empty?"
+
+msgid "h14_mt_wt_2025/description"
+msgstr "?empty?"
+
+msgid "h14_mt_wt_2025/name"
+msgstr "?empty?"
+
+msgid "modified"
+msgstr "%(name)s (ИЗМЕНЕНА)"
 
 msgid "qa_content_01/description"
 msgstr "QA_Content. Карта для проверки LODs и др. проверок"

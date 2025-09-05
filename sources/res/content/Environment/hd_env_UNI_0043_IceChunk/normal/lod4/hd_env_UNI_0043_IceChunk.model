@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<nodefullVisual>content/Environment/hd_env_UNI_0043_IceChunk/normal/lod4/hd_env_UNI_0043_IceChunk</nodefullVisual>
-	<extent>800.000000</extent>
+	<visibilityBox>
+		<min>-7.395484 -1.604886 -7.702072</min>
+		<max>8.335836 1.985386 2.851453</max>
+	</visibilityBox>
 </root>

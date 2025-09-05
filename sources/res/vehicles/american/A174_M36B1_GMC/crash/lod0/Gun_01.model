@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.676428 -0.269806 -1.232093</min>
+		<max>0.680841 0.365824 3.914518</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/american/A174_M36B1_GMC/crash/lod0/Gun_01</nodelessVisual>
+	<parent>vehicles/american/A174_M36B1_GMC/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

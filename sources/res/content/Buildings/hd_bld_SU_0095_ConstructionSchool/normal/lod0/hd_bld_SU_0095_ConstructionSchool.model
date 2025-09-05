@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-25.023899 -3.959546 -13.298803</min>
-		<max>25.023903 30.232487 11.101408</max>
+		<min>-25.492716 -3.959549 -12.773731</min>
+		<max>26.330118 30.232492 12.192475</max>
 	</visibilityBox>
 	<parent>content/Buildings/hd_bld_SU_0095_ConstructionSchool/normal/lod1/hd_bld_SU_0095_ConstructionSchool</parent>
-	<extent>96.000000</extent>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0095_ConstructionSchool/normal/lod0/hd_bld_SU_0095_ConstructionSchool</nodefullVisual>
+	<extent>150.000000</extent>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0095_ConstructionSchool/normal/lod0/hd_bld_SU_0095_ConstructionSchool</nodelessVisual>
 </root>

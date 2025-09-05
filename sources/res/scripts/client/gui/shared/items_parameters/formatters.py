@@ -50,7 +50,6 @@ MEASURE_UNITS = {'aimingTime': MENU.TANK_PARAMS_S,
    AUOTSHOOT_FLAME_OVERHEAT_COOLING_TIME: MENU.TANK_PARAMS_S, 
    AUTOSHOOT_FIRE_UNTIL_OVERHEAT_TIME: MENU.TANK_PARAMS_S, 
    'flameMaxDistance': MENU.TANK_PARAMS_M, 
-   'explosionDelay': MENU.TANK_PARAMS_S, 
    'turboshaftBurstFireRate': MENU.TANK_PARAMS_BURSTSEC, 
    BURST_TIME_INTERVAL: MENU.TANK_PARAMS_S, 
    BURST_COUNT: MENU.TANK_PARAMS_CNT, 
@@ -193,7 +192,7 @@ ITEMS_PARAMS_LIST = {ITEM_TYPES.vehicleRadio: ('radioDistance', 'weight'),
                           artefacts.FortConsumableInspire: ('crewRolesFactor', 'commonAreaRadius', 'inactivationDelay', 'duration'), 
                           artefacts.ConsumableInspire: ('crewRolesFactor', 'commonAreaRadius', 'inactivationDelay', 'duration')}, 
    ITEM_TYPES.shell: ('caliber', 'damage', 'damagePerSecond', 'avgPiercingPower', 'shotSpeed', 'explosionRadius',
- 'flameMaxDistance', 'stunMaxDuration', 'explosion', 'explosionDelay'), 
+ 'flameMaxDistance', 'stunMaxDuration'), 
    ITEM_TYPES.optionalDevice: ('weight', ), 
    ITEM_TYPES.vehicleGun: (
                          'caliber', 'shellsCount', 'shellsBurstCount', 'shellsFlameBurstCount',
@@ -356,8 +355,8 @@ def _autoReloadPreprocessor(reloadTimes, rowStates):
                 return
 
     if len(times) > _COUNT_OF_AUTO_RELOAD_SLOTS_TIMES_TO_SHOW_IN_INFO:
+        minTime, maxTime = times[0], times[(-1)]
         if states:
-            minTime, maxTime = min(times), max(times)
             minState, maxState = (None, None)
             for idx, time in enumerate(times):
                 if time == minTime:
@@ -367,8 +366,8 @@ def _autoReloadPreprocessor(reloadTimes, rowStates):
 
             return (
              (
-              min(times), max(times)), _DASH, (minState, maxState))
-        return ((min(times), max(times)), _DASH, None)
+              minTime, maxTime), _DASH, (minState, maxState))
+        return ((minTime, maxTime), _DASH, None)
     else:
         return (
          times, _SLASH, states if states else None)
@@ -416,7 +415,6 @@ FORMAT_SETTINGS = {'relativePower': _integralFormat,
    'aimingTime': _niceListFormat, 
    'avgDamagePerMinute': _niceFormat, 
    'avgDamagePerSecond': _niceFormat, 
-   'explosionDelay': _niceFormat, 
    'relativeArmor': _integralFormat, 
    'avgDamage': _niceFormat, 
    'maxHealth': _integralFormat, 

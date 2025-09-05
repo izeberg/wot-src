@@ -19,15 +19,6 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_ramp_0</identifier>
-					<materialKind>0</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>-0.017385 -0.048995 0.458675</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>0</collisionFlags>
@@ -51,10 +42,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/dds/Dirt_moss_fountain_01_DM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						g_tile0Tint
@@ -88,16 +75,20 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_AM.dds</Texture>
+					</property>
 				</material>
 				<groupOrigin>-0.054594 0.036296 0.050744</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.663682 -0.866763 -7.593598</min>
-		<max>4.628913 0.939355 8.510947</max>
+		<min>-2.989769 -0.866763 -6.492923</min>
+		<max>2.880582 0.939355 6.625917</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>24192</geometrySize>
-	<minUVDensity>0.001623</minUVDensity>
+	<geometrySize>23052</geometrySize>
+	<minUVDensity>0.115853</minUVDensity>
 </root>

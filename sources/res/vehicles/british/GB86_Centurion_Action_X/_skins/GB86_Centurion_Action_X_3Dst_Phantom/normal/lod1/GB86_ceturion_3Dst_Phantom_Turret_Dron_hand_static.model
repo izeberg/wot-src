@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod1/GB86_ceturion_3Dst_Phantom_Turret_Dron_hand_static</nodelessVisual>
+	<parent>vehicles/british/GB86_Centurion_Action_X/_skins/GB86_Centurion_Action_X_3Dst_Phantom/normal/lod2/GB86_ceturion_3Dst_Phantom_Turret_Dron_hand_static</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>0.887856 0.452005 -1.846831</min>
+		<max>2.282793 1.405519 -0.677356</max>
+	</visibilityBox>
+</root>

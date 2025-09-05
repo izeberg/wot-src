@@ -103,10 +103,6 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.070000 0.100000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_tile0Tint
 						<Vector4>0.776471 0.772549 0.662745 1.000000</Vector4>
 					</property>
@@ -251,10 +247,6 @@
 						<Vector4>0.020000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.010000 0.070000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_tile0Tint
 						<Vector4>0.674510 0.901961 0.921569 1.000000</Vector4>
 					</property>
@@ -323,10 +315,6 @@
 					<property>
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.070000 0.100000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint

@@ -71,6 +71,11 @@
 			<allowSplit>false</allowSplit>
 			<pattern>.*_(POS|ROT)_VAT\.dds</pattern>
 		</rule>
+		<rule>
+			<allowSplit>true</allowSplit>
+			<lodMode>3</lodMode>
+			<pattern>.*_(IAM|IEM)\.dds</pattern>
+		</rule>
 		<directory>
 			<path>Buildings</path>
 			<directory>

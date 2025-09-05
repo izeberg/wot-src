@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
+					<row3>0.000000 0.739759 0.000000</row3>
 				</transform>
 			</node>
 			<node>
@@ -34,7 +34,7 @@
 					<row3>0.000000 0.000000 0.000000</row3>
 				</transform>
 				<node>
-					<identifier>n3_1</identifier>
+					<identifier>n3</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -49,13 +49,13 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>d1Shape.vertices</vertices>
+			<stream>d1Shape.uv2</stream>
+			<primitive>d1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>d_wood1_1</identifier>
+					<identifier>d_wood1</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>87</materialKind>
 					<collisionFlags>255</collisionFlags>
@@ -80,12 +80,12 @@
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_40_3_GCM.dds</Texture>
 					</property>
 					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 1.000000 0.000000 1.000000</Vector4>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
+						g_dirtColorParams
+						<Vector4>0.100000 1.000000 0.000000 1.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
@@ -119,17 +119,13 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Roof_04_Metal_Painted_512_GBMT.dds</Texture>
 					</property>
-					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.002404 -0.330777 -0.051060</groupOrigin>
+				<groupOrigin>0.002404 0.069223 -0.051060</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>d_wood0_1</identifier>
+					<identifier>d_wood0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<materialKind>87</materialKind>
 					<collisionFlags>255</collisionFlags>
@@ -154,12 +150,12 @@
 						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_THouse_40_3_GCM.dds</Texture>
 					</property>
 					<property>
-						g_dirtColorParams
-						<Vector4>0.100000 1.000000 1.000000 0.000000</Vector4>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
+						g_dirtColorParams
+						<Vector4>0.100000 1.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint
@@ -193,19 +189,35 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.019403 -0.348601 -0.040376</groupOrigin>
+				<groupOrigin>0.019403 0.050987 -0.040376</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n0Shape.vertices</vertices>
+			<primitive>n0Shape.indices</primitive>
 			<primitiveGroup>
-				2
+				0
 				<material>
-					<identifier>n_wood0_1</identifier>
+					<identifier>n_wood0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>73</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_40_03_BAM.dds</Texture>
+						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_40_3_BAM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_enableAO
@@ -213,26 +225,22 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_40_03_BGMM.dds</Texture>
+						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_40_3_BGMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_40_03_BANM.dds</Texture>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
+						<Texture>content/Buildings/hd_bld_SU_0115_THouse/hd_bld_SU_0115_Thouse_40_3_BANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 1.375317 -0.231013</groupOrigin>
+				<groupOrigin>0.000000 1.775317 -0.231013</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.659314 -1.000000 -2.190765</min>
-		<max>1.655594 3.750634 1.728739</max>
+		<min>-1.605876 -0.200000 -2.190765</min>
+		<max>1.597769 3.750634 1.728739</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>43424</geometrySize>
+	<geometrySize>23670</geometrySize>
 	<minUVDensity>0.003671</minUVDensity>
 </root>

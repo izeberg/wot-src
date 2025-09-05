@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>3.778250</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>2.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>right</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/suction/wt_ability_suction.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.987000 0.000000 1.177017</value>
+				<inTangent>8.752806 11.679450 1.854336</inTangent>
+				<outTangent>8.752806 11.679450 1.854336</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>2.445801 1.946575 1.486073</value>
+				<inTangent>7.873259 7.366882 6.954198</inTangent>
+				<outTangent>7.873259 7.366882 6.954198</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>3.378296 2.353817 3.093281</value>
+				<inTangent>5.338211 13.077968 7.806640</inTangent>
+				<outTangent>5.338211 13.077968 7.806640</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>3.869324 5.434034 3.567844</value>
+				<inTangent>2.448106 3.484179 -0.000000</inTangent>
+				<outTangent>2.448106 3.484179 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000</value>
+				<inTangent>-4.999999</inTangent>
+				<outTangent>-4.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000</value>
+				<inTangent>-9.999998</inTangent>
+				<outTangent>-9.999998</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.266667</startTime>
+				<value>1.000000</value>
+				<inTangent>-3.000000</inTangent>
+				<outTangent>-3.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000</value>
+				<inTangent>-6.000000</inTangent>
+				<outTangent>-6.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>left</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/suction/wt_ability_suction.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>-0.830933 0.000000 -1.665432</value>
+				<inTangent>-4.858884 8.808966 -7.186704</inTangent>
+				<outTangent>-4.858884 8.808966 -7.186704</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>-1.640747 1.468161 -2.863216</value>
+				<inTangent>-5.495314 9.090370 -7.015880</inTangent>
+				<outTangent>-5.495314 9.090370 -7.015880</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>-2.458313 2.717731 -3.775890</value>
+				<inTangent>-2.110289 12.377914 -6.007634</inTangent>
+				<outTangent>-2.110289 12.377914 -6.007634</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>-2.203491 4.768938 -4.465252</value>
+				<inTangent>2.448106 3.484179 -0.000000</inTangent>
+				<outTangent>2.448106 3.484179 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000</value>
+				<inTangent>-4.999999</inTangent>
+				<outTangent>-4.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.000000</value>
+				<inTangent>-9.999998</inTangent>
+				<outTangent>-9.999998</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.466667</startTime>
+				<value>1.000000</value>
+				<inTangent>-3.750000</inTangent>
+				<outTangent>-3.750000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.600000</startTime>
+				<value>0.000000</value>
+				<inTangent>-7.500000</inTangent>
+				<outTangent>-7.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>front</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/suction/wt_ability_suction.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>-0.825500 1.429737 1.364887</value>
+				<inTangent>-2.733079 6.160684 3.412058</inTangent>
+				<outTangent>-2.733079 6.160684 3.412058</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>-1.554321 3.072586 2.274769</value>
+				<inTangent>-4.254799 8.418402 2.508832</inTangent>
+				<outTangent>-4.254799 8.418402 2.508832</outTangent>
+				<tangentMode>768</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>-2.324524 4.496069 2.488850</value>
+				<inTangent>2.448106 3.484179 -0.000000</inTangent>
+				<outTangent>2.448106 3.484179 -0.000000</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>1.000000</value>
+				<inTangent>-4.999999</inTangent>
+				<outTangent>-4.999999</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000</value>
+				<inTangent>-9.999998</inTangent>
+				<outTangent>-9.999998</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>opacity</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1.000000</value>
+				<inTangent>-3.749999</inTangent>
+				<outTangent>-3.749999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000</value>
+				<inTangent>-7.499999</inTangent>
+				<outTangent>-7.499999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>impact</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/environment/event_white_tiger/wt_ability_impact.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -1.500000 0.000000</value>
+				<inTangent>6.672452 2.210526 -9.751054</inTangent>
+				<outTangent>6.672452 2.210526 -9.751054</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>5.000000 0.180802 0.180350</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>2.000000 2.000000 2.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.062745 0.047059 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>1.000000 0.062745 0.047059 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.210088</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>1.000000 0.062745 0.047059 0.749020</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.394956</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.394956</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 0.062745 0.047059 0.149020</value>
+				<inTangent>0.000000 0.000000 0.000000 -3.745099</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -3.745099</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>1.000000 0.062745 0.047059 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.490196</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.490196</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>opacity_UV_Speed_Scale</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-1.000000 0.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>energy_steal_out_sound</name>
+		<type>sound</type>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.000000</duration>
+				<value>Root|</value>
+			</frame>
+		</track>
+		<track>
+			<name>Sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>3.778250</duration>
+				<sequenceSound>ev_wt_gameplay_energy_steal_out</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

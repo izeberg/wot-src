@@ -128,6 +128,11 @@ msgstr "Пракат толькі для рэжыму «Лінія фронту�
 msgid "buyingPanel/personalTradeIn/title"
 msgstr "Абмен машыны: %(name)s"
 
+msgid "buyingPanel/pmCampaignVehicleLabel"
+msgstr ""
+"Купля недаступная: гэтая машына — узнагарода за выкананне ўсіх задач "
+"кампаніі «%(operationName)s» з адзнакай."
+
 msgid "buyingPanel/pmOperationVehicleLabel"
 msgstr ""
 "Купля недаступная: гэтая машына — узнагарода за выкананне ўсіх задач "
@@ -256,7 +261,7 @@ msgid "header/backBtn/descrLabel/ranked"
 msgstr "ДА РАНГАВЫХ БАЁЎ"
 
 msgid "header/backBtn/descrLabel/referralProgram"
-msgstr "ДА ВЫБАРУ ЎЗНАГАРОДЫ"
+msgstr "ДА КАНТЭЙНЕРА"
 
 msgid "header/backBtn/descrLabel/researchTree"
 msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<Properties>
-		<requiredVersion_013610>
+		<requiredVersion_013700>
 			<Type>STRING</Type>
 			<Flags>BASE_AND_CLIENT</Flags>
 			<Default>
-				1.36.1
+				1.37.0
 				<!--BW_String-->
 			</Default>
-		</requiredVersion_013610>
+		</requiredVersion_013700>
 	</Properties>
 </root>

@@ -173,6 +173,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
       
       public function autoloadProgress(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean = false) : void
       {
+         var _loc6_:int = 0;
          if((param5 || !this._isAnimationInProgress) && this._lastLoadedShell && param1 != this._currentAutoloadProgress)
          {
             this._currentAutoloadProgress = param1;
@@ -183,7 +184,11 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
             }
             if(this._isAutoloadInProgress)
             {
-               this._lastLoadedShell.gotoAndStop(AUTOLOADING_START_FRAME + param1 * AUTOLOADING_FRAMES);
+               _loc6_ = AUTOLOADING_START_FRAME + param1 * AUTOLOADING_FRAMES;
+               if(_loc6_ != this._lastLoadedShell.currentFrame)
+               {
+                  this._lastLoadedShell.gotoAndStop(_loc6_);
+               }
             }
          }
          if(this._currentReloadingPercent >= GUN_RELOADING_COMPLETE_STATE)

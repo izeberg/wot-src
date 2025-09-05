@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.055881 -0.000475 -3.513487</min>
+		<max>2.055881 1.330811 4.116184</max>
+	</visibilityBox>
+	<parent>vehicles/german/G189_E100_02/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/german/G189_E100_02/normal/lod0/Chassis</nodefullVisual>
+</root>

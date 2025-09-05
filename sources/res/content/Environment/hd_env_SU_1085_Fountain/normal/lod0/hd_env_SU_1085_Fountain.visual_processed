@@ -115,6 +115,10 @@
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.000003 0.898487 0.000000</groupOrigin>
 			</primitiveGroup>

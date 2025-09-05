@@ -199,9 +199,9 @@ package
       
       public static const CLANPERSONALINVITESWINDOW_TOOLTIPS_TABLE_INVITES_WINS_BODY:String = "#clans:clanPersonalInvitesWindow/tooltips/table/invites/wins/body";
       
-      public static const CLANPERSONALINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AWGEXP_HEADER:String = "#clans:clanPersonalInvitesWindow/tooltips/table/invites/awgExp/header";
+      public static const CLANPERSONALINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AVGXP_HEADER:String = "#clans:clanPersonalInvitesWindow/tooltips/table/invites/avgXP/header";
       
-      public static const CLANPERSONALINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AWGEXP_BODY:String = "#clans:clanPersonalInvitesWindow/tooltips/table/invites/awgExp/body";
+      public static const CLANPERSONALINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AVGXP_BODY:String = "#clans:clanPersonalInvitesWindow/tooltips/table/invites/avgXP/body";
       
       public static const CLANPERSONALINVITESWINDOW_TOOLTIPS_TABLE_INVITES_STATUS_HEADER:String = "#clans:clanPersonalInvitesWindow/tooltips/table/invites/status/header";
       
@@ -281,9 +281,9 @@ package
       
       public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_INVITES_WINS_BODY:String = "#clans:clanInvitesWindow/tooltips/table/invites/wins/body";
       
-      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AWGEXP_HEADER:String = "#clans:clanInvitesWindow/tooltips/table/invites/awgExp/header";
+      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AVGXP_HEADER:String = "#clans:clanInvitesWindow/tooltips/table/invites/avgXP/header";
       
-      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AWGEXP_BODY:String = "#clans:clanInvitesWindow/tooltips/table/invites/awgExp/body";
+      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_INVITES_AVGXP_BODY:String = "#clans:clanInvitesWindow/tooltips/table/invites/avgXP/body";
       
       public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_INVITES_STATUS_HEADER:String = "#clans:clanInvitesWindow/tooltips/table/invites/status/header";
       
@@ -313,9 +313,9 @@ package
       
       public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_REQUESTS_WINS_BODY:String = "#clans:clanInvitesWindow/tooltips/table/requests/wins/body";
       
-      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_REQUESTS_AWGEXP_HEADER:String = "#clans:clanInvitesWindow/tooltips/table/requests/awgExp/header";
+      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_REQUESTS_AVGXP_HEADER:String = "#clans:clanInvitesWindow/tooltips/table/requests/avgXP/header";
       
-      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_REQUESTS_AWGEXP_BODY:String = "#clans:clanInvitesWindow/tooltips/table/requests/awgExp/body";
+      public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_REQUESTS_AVGXP_BODY:String = "#clans:clanInvitesWindow/tooltips/table/requests/avgXP/body";
       
       public static const CLANINVITESWINDOW_TOOLTIPS_TABLE_REQUESTS_STATUS_HEADER:String = "#clans:clanInvitesWindow/tooltips/table/requests/status/header";
       

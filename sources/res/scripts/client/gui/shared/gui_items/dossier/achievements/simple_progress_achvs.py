@@ -17,7 +17,7 @@ class BeasthunterAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TOTAL, 'fragsBeast')
 
 
-class BruteForceAchievement(SimpleProgressAchievement):
+class BruteForceAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -27,7 +27,7 @@ class BruteForceAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'bruteForce')
 
 
-class CrucialShotAchievement(SimpleProgressAchievement):
+class CrucialShotAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -37,7 +37,7 @@ class CrucialShotAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'crucialShot')
 
 
-class InfiltratorAchievement(SimpleProgressAchievement):
+class InfiltratorAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -47,7 +47,7 @@ class InfiltratorAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'infiltrator')
 
 
-class GeniusForWarAchievement(SimpleProgressAchievement):
+class GeniusForWarAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -57,7 +57,7 @@ class GeniusForWarAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'geniusForWar')
 
 
-class GuerrillaAchievement(SimpleProgressAchievement):
+class GuerrillaAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -67,7 +67,7 @@ class GuerrillaAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'guerrilla')
 
 
-class HeavyFireAchievement(SimpleProgressAchievement):
+class HeavyFireAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -77,7 +77,7 @@ class HeavyFireAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'heavyFire')
 
 
-class FightingReconnaissanceAchievement(SimpleProgressAchievement):
+class FightingReconnaissanceAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -87,7 +87,7 @@ class FightingReconnaissanceAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'fightingReconnaissance')
 
 
-class FireAndSteelAchievement(SimpleProgressAchievement):
+class FireAndSteelAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -121,7 +121,7 @@ class ReliableComradeAchievement(Deprecated, SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TOTAL, 'reliableComradeSeries')
 
 
-class RangerAchievement(SimpleProgressAchievement):
+class RangerAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -131,7 +131,7 @@ class RangerAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'ranger')
 
 
-class PrematureDetonationAchievement(SimpleProgressAchievement):
+class PrematureDetonationAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -141,7 +141,7 @@ class PrematureDetonationAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'prematureDetonation')
 
 
-class PromisingFighterAchievement(SimpleProgressAchievement):
+class PromisingFighterAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -161,7 +161,7 @@ class PattonValleyAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TOTAL, 'fragsPatton')
 
 
-class PyromaniacAchievement(SimpleProgressAchievement):
+class PyromaniacAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -171,7 +171,7 @@ class PyromaniacAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TEAM_7X7, 'pyromaniac')
 
 
-class SentinelAchievement(SimpleProgressAchievement):
+class SentinelAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):
@@ -201,7 +201,7 @@ class TankwomenAchievement(SimpleProgressAchievement):
         return dossier.getRecordValue(_AB.TOTAL, 'tankwomenProgress')
 
 
-class WolfAmongSheepAchievement(SimpleProgressAchievement):
+class WolfAmongSheepAchievement(Deprecated, SimpleProgressAchievement):
     __slots__ = ()
 
     def __init__(self, dossier, value=None):

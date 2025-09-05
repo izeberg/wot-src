@@ -3,4 +3,8 @@
 	<extent>250.000000</extent>
 	<nodefullVisual>content/Environment/hd_env_UNI_0043_IceChunk/normal/lod3/hd_env_UNI_0043_IceChunk</nodefullVisual>
 	<parent>content/Environment/hd_env_UNI_0043_IceChunk/normal/lod4/hd_env_UNI_0043_IceChunk</parent>
+	<visibilityBox>
+		<min>-7.402566 -1.683251 -7.702072</min>
+		<max>8.399635 2.000698 2.851453</max>
+	</visibilityBox>
 </root>

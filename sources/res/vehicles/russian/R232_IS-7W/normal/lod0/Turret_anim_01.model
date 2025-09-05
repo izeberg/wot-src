@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.577619 0.251963 -2.794189</min>
+		<max>0.577620 0.708407 -2.337744</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/russian/R232_IS-7W/normal/lod0/Turret_anim_01</nodefullVisual>
+	<parent>vehicles/russian/R232_IS-7W/normal/lod1/Turret_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

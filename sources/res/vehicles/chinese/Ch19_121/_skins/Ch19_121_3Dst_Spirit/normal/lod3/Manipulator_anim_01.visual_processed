@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>group</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Manipulator</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.530381 0.135165 -3.381905</row3>
+					</transform>
+					<node>
+						<identifier>Manipulator1</identifier>
+						<transform>
+							<row0>1.000000 -0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>-0.000000 0.000000 1.000000</row2>
+							<row3>0.003172 0.001913 -0.109005</row3>
+						</transform>
+						<node>
+							<identifier>Manipulator2</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>-1.358082 -0.004712 0.006667</row3>
+							</transform>
+							<node>
+								<identifier>Manipulator3</identifier>
+								<transform>
+									<row0>1.000000 0.000000 -0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 -0.000000 1.000000</row2>
+									<row3>1.084540 -0.269622 0.239709</row3>
+								</transform>
+								<node>
+									<identifier>Manipulator3_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>-0.260011 0.137257 3.244534</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Manipulator4</identifier>
+								<transform>
+									<row0>1.000000 0.000000 -0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 -0.000000 1.000000</row2>
+									<row3>0.263027 0.009013 0.047683</row3>
+								</transform>
+								<node>
+									<identifier>Manipulator4_BlendBone</identifier>
+									<transform>
+										<row0>1.000000 0.000000 0.000000</row0>
+										<row1>0.000000 1.000000 0.000000</row1>
+										<row2>0.000000 0.000000 -1.000000</row2>
+										<row3>0.561502 -0.141379 3.436560</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Manipulator2_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.824529 -0.132366 3.484243</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Manipulator5</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>-0.346959 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Manipulator5_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.186595 -0.137077 3.490910</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Manipulator1_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.533553 -0.137077 3.490910</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Manipulator_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>-0.530381 -0.135165 3.381905</row3>
+						</transform>
+					</node>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Manipulator2_BlendBone</node>
+		<node>Manipulator_BlendBone</node>
+		<node>Manipulator1_BlendBone</node>
+		<node>Manipulator3_BlendBone</node>
+		<geometry>
+			<vertices>hull_equipment_Manipulator_anim_Shape.vertices</vertices>
+			<primitive>hull_equipment_Manipulator_anim_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>hull_equipment_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<sortOrder>0</sortOrder>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/121_3dst_Spirit_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/121_3dst_Spirit_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/121_3dst_Spirit_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/121_3dst_Spirit_equipment_01_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.077549 0.039416 3.442039</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.898392 -0.406946 -4.211548</min>
+		<max>0.746522 1.483188 -3.199489</max>
+	</boundingBox>
+	<geometrySize>14006</geometrySize>
+	<minUVDensity>0.003370</minUVDensity>
+</root>

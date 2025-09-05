@@ -3,8 +3,8 @@
 	<parent>vehicles/british/GB135_FV240/normal/lod2/HatchSleeve_01_Right_anim</parent>
 	<extent>64.000000</extent>
 	<visibilityBox>
-		<min>1.428564 0.470714 -0.954645</min>
-		<max>1.515881 0.739290 -0.725329</max>
+		<min>1.428564 0.470714 0.725329</min>
+		<max>1.515881 0.739290 0.954645</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodefullVisual>vehicles/british/GB135_FV240/normal/lod1/HatchSleeve_01_Right_anim</nodefullVisual>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.250872 -0.671359 -2.395488</min>
+		<max>1.250872 2.503593 6.513303</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/french/F133_Projet_57_Ampere/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/french/F133_Projet_57_Ampere/normal/lod0/Gun_01</nodefullVisual>
+</root>

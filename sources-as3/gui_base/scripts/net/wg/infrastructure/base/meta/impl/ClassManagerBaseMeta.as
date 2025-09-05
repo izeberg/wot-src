@@ -445,6 +445,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.VO.CrosshairSettingsVO;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
+   import net.wg.gui.components.crosshairPanel.WTCrosshairBase;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
@@ -483,6 +484,8 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatMarkersDrawer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim;
+   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaDamageIndicator;
+   import net.wg.gui.components.crosshairPanel.components.wt.PlasmaIndicator;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    import net.wg.gui.components.damageIndicator.AnimationContainer;
    import net.wg.gui.components.damageIndicator.DamageIndicator;
@@ -773,6 +776,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.SoundSettingsBase;
    import net.wg.gui.lobby.settings.SoundSpecialForm;
    import net.wg.gui.lobby.settings.SoundVivoxForm;
+   import net.wg.gui.lobby.settings.components.EventSettingLabel;
    import net.wg.gui.lobby.settings.components.KeyInput;
    import net.wg.gui.lobby.settings.components.KeysItemRenderer;
    import net.wg.gui.lobby.settings.components.KeysScrollingList;
@@ -1803,6 +1807,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_ICROSSHAIRPANELCONTAINER:Class = ICrosshairPanelContainer;
       
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_WTCROSSHAIRBASE:Class = WTCrosshairBase;
+      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CLIPQUANTITYINDICATOR:Class = ClipQuantityIndicator;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBAR:Class = CrosshairClipQuantityBar;
@@ -1878,6 +1884,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETER:Class = Speedometer;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETERWARNINGANIM:Class = SpeedometerWarningAnim;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMADAMAGEINDICATOR:Class = PlasmaDamageIndicator;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_WT_PLASMAINDICATOR:Class = PlasmaIndicator;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CONSTANTS_CROSSHAIRCONSTS:Class = CrosshairConsts;
       
@@ -2464,6 +2474,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_SETTINGS_SOUNDSPECIALFORM:Class = SoundSpecialForm;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_SOUNDVIVOXFORM:Class = SoundVivoxForm;
+      
+      public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_EVENTSETTINGLABEL:Class = EventSettingLabel;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_COMPONENTS_KEYINPUT:Class = KeyInput;
       

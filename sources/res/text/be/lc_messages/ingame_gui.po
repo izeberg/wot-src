@@ -376,9 +376,6 @@ msgstr "БАПС"
 msgid "damageLog/shellType/ARMOR_PIERCING_HE"
 msgstr "АФ"
 
-msgid "damageLog/shellType/DELAYED_HE"
-msgstr "АФ"
-
 msgid "damageLog/shellType/FLAME"
 msgstr "АС"
 
@@ -745,6 +742,9 @@ msgstr "Цэль абаронена"
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захоплена"
 
+msgid "efficiencyRibbons/healthAdded"
+msgstr "Машына адрамантавана"
+
 msgid "efficiencyRibbons/kill"
 msgstr "Знішчыў"
 
@@ -804,6 +804,9 @@ msgstr "Машына пакінута"
 
 msgid "efficiencyRibbons/worldCollision"
 msgstr "Пашкоджанні пры падзенні"
+
+msgid "efficiencyRibbons/wtReceivedCircuitOverload"
+msgstr "Пашкоджанні электрычнасцю"
 
 msgid "epic_players_panel/state/hidden/body"
 msgstr "Схаваць панэлі камандаў."
@@ -1573,6 +1576,15 @@ msgstr "База%s супраціўніка захоплена!"
 
 msgid "player_messages/enemy_team_name"
 msgstr "Праціўнік"
+
+msgid "player_messages/equipment/wtEvent/healthAtFullHP"
+msgstr "[%(name)s] Рамонт не патрэбны: пашкоджанняў няма."
+
+msgid "player_messages/equipment/wtEvent/hunterAbilitiesDisabled"
+msgstr "Недаступна: машына абясточана"
+
+msgid "player_messages/equipment/wtEvent/noActiveShieldOnBoss"
+msgstr "Здольнасць недаступная без актыўнага шчыта."
 
 msgid "player_messages/poi_equipment_used_by_ally"
 msgstr "Хаўруснік %(name)s прымяніў тактычную звычку «%(equipment)s»"
@@ -2762,9 +2774,6 @@ msgstr "%(caliber)s мм БАПС %(userString)s"
 msgid "shells_kinds/ARMOR_PIERCING_HE"
 msgstr "%(caliber)s-мм бранябойны каморны снарад %(userString)s"
 
-msgid "shells_kinds/DELAYED_HE"
-msgstr "%(caliber)s мм снарад з затрымкай дэтанатара %(userString)s"
-
 msgid "shells_kinds/FLAME"
 msgstr "Агнямётная сумесь %(userString)s"
 
@@ -2782,9 +2791,6 @@ msgstr "Пашкоджанні за секунду: %(value)s адз."
 
 msgid "shells_kinds/params/damageRange"
 msgstr "Пашкоджанні снарада: %(value)s адз."
-
-msgid "shells_kinds/params/explosionDelay"
-msgstr "Таймер дэтанацыі: %(value)s с"
 
 msgid "shells_kinds/params/explosionRadius"
 msgstr "Радыус паражэння: %(value)s м"
@@ -3243,3 +3249,15 @@ msgstr "Тактычная звычка «%(equipment)s» выкарыстана
 
 msgid "warning_zone/indicator"
 msgstr "Асцярожна! Вы побач з небяспечнай зонай."
+
+msgid "wt_vehicle_messages/DECREASE_PLASMA_COUNT"
+msgstr "Зарад плазмы страчаны."
+
+msgid "wt_vehicle_messages/INCREASE_PLASMA_COUNT"
+msgstr "Зарад плазмы атрыманы"
+
+msgid "wt_vehicle_messages/STUN_AREA_APPLIED"
+msgstr "Машына абясточана здольнасцю Вафэнтрагера «Электрамагнітная сетка»!"
+
+msgid "wt_vehicle_messages/STUN_AREA_STOPPED"
+msgstr "Напружанне ў машыне адноўлена."

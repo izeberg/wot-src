@@ -8,52 +8,24 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_env_SU_1019_Entry_Canopy_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.colour</stream>
+			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd1</identifier>
-					<fx>shaders/std_effects/PBS_ext_detail.fx</fx>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>108</materialKind>
 					<collisionFlags>144</collisionFlags>
 					<property>
 						alphaReference
-						<Int>198</Int>
+						<Int>110</Int>
 					</property>
 					<property>
 						alphaTestEnable
@@ -72,28 +44,12 @@
 						<Bool>false</Bool>
 					</property>
 					<property>
-						g_detailInfluences
-						<Vector4>1.000000 1.500000 8.000000 1.000000</Vector4>
-					</property>
-					<property>
-						g_detailMap
-						<Texture>content/Detail_tex/Detail_tile_Textile.dds</Texture>
-					</property>
-					<property>
-						g_detailRejectTiling
-						<Vector4>1.000000 1.000000 12.000000 12.000000</Vector4>
-					</property>
-					<property>
 						g_enableAO
 						<Bool>true</Bool>
 					</property>
 					<property>
 						g_vertexAnimationParams
-						<Vector4>0.010000 0.025000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_vertexColorMode
-						<Int>1</Int>
+						<Vector4>0.020000 0.010000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						metallicGlossMap
@@ -104,15 +60,15 @@
 						<Texture>content/Environment/hd_env_SU_1076_EntryCanopy/hd_env_SU_1076_EntryCanopy_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.012732 0.676243 -0.688800</groupOrigin>
+				<groupOrigin>0.012732 0.500422 -0.657897</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.601231 -0.006406 -1.457379</min>
-		<max>1.621477 1.362774 0.052627</max>
+		<min>-1.601231 -0.340106 -1.457379</min>
+		<max>1.621477 1.362774 0.104332</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>2796</geometrySize>
-	<minUVDensity>0.049010</minUVDensity>
+	<geometrySize>2808</geometrySize>
+	<minUVDensity>0.008166</minUVDensity>
 </root>

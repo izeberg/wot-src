@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.717380 -0.020374 -0.688130</min>
-		<max>1.115240 2.452510 1.153840</max>
+		<min>-0.717380 -0.028905 -0.684519</min>
+		<max>1.112044 0.911199 1.153836</max>
 	</visibilityBox>
-	<extent>35.000000</extent>
-	<nodefullVisual>content/Environment/hd_env_SU_1080_BoxSnow/normal/lod0/hd_env_SU_1080_BoxGroupSnow_02</nodefullVisual>
+	<extent>20.000000</extent>
 	<parent>content/Environment/hd_env_SU_1080_BoxSnow/normal/lod1/hd_env_SU_1080_BoxGroupSnow_02</parent>
+	<havok>
+		<damagedState>true</damagedState>
+	</havok>
+	<nodefullVisual>content/Environment/hd_env_SU_1080_BoxSnow/normal/lod0/hd_env_SU_1080_BoxGroupSnow_02</nodefullVisual>
 </root>

@@ -68,7 +68,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -107,7 +107,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.352240 0.610248 -2.186783</groupOrigin>
+				<groupOrigin>-0.352567 0.262072 -2.186194</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -134,7 +134,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -173,7 +173,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.280865 0.642111 1.931262</groupOrigin>
+				<groupOrigin>-0.280865 0.322728 2.240933</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				2
@@ -200,7 +200,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -239,7 +239,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.074663 1.434113 -2.280200</groupOrigin>
+				<groupOrigin>-0.075430 1.434113 -2.215431</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -266,7 +266,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -305,7 +305,7 @@
 						<Texture>content/Buildings/00_Tiles/dds/Wood_tree_end_01_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.498843 1.432676 1.918164</groupOrigin>
+				<groupOrigin>0.498843 1.432676 1.879210</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				4
@@ -332,7 +332,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						dirtMap
@@ -371,15 +371,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/Metal_Rusted_01_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.623658 0.478160 0.044178</groupOrigin>
+				<groupOrigin>-0.623658 0.078944 0.044393</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.016971 -0.523725 -4.934916</min>
+		<min>-3.016382 -0.682017 -4.928763</min>
 		<max>1.861298 3.383214 4.732276</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>114158</geometrySize>
-	<minUVDensity>0.022444</minUVDensity>
+	<geometrySize>147186</geometrySize>
+	<minUVDensity>0.078868</minUVDensity>
 </root>

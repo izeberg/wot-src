@@ -124,6 +124,10 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.000769 1.024434 0.000072</groupOrigin>
 			</primitiveGroup>
@@ -165,10 +169,6 @@
 					<property>
 						g_dirtColorParams
 						<Vector4>0.020000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.010000 0.070000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_tile0Tint

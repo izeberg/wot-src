@@ -2,8 +2,8 @@
 <root>
 	<nodefullVisual>vehicles/british/GB135_FV240/normal/lod0/HatchSleeve_01_Left_anim</nodefullVisual>
 	<visibilityBox>
-		<min>-1.515622 0.470296 -0.954433</min>
-		<max>-1.235700 1.089068 -0.725856</max>
+		<min>-1.515622 0.470296 0.725856</min>
+		<max>-1.235700 1.089068 0.954433</max>
 	</visibilityBox>
 	<parent>vehicles/british/GB135_FV240/normal/lod1/HatchSleeve_01_Left_anim</parent>
 	<extent>32.000000</extent>

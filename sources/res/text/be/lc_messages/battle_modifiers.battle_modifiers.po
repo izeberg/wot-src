@@ -161,11 +161,69 @@ msgstr "Пашкоджанні экіпажа пры падзенні"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Перазарадка рыштунку"
 
+msgid "modifier/name/fakeComp7GoldShell"
+msgstr "Прабіццё спецыяльных снарадаў на 100 метраў"
+
+msgid "modifier/name/fakeComp7RadioLightTank"
+msgstr "Далёкасць радыёсувязі (лёгкія танкі)"
+
+msgid "modifier/name/fakeComp7RadioOtherTanks"
+msgstr "Далёкасць радыёсувязі (сярэднія і цяжкія танкі, а таксама СТ-САУ)"
+
+msgid "modifier/name/fakeComp7VisionOtherTanks"
+msgstr ""
+"Радыус агляду (лёгкія гусенічныя, сярэднія і цяжкія танкі, а таксама СТ-САУ)"
+
+msgid "modifier/name/fakeComp7VisionWheelLightTank"
+msgstr "Радыус агляду (лёгкія колавыя танкі)"
+
+msgid "modifier/name/fakeDamageHeavy"
+msgstr "Пашкоджанні ад стрэлу ЦТ і СТ-САУ"
+
+msgid "modifier/name/fakeDamageLight"
+msgstr "Пашкоджанні ад стрэлу ЛТ"
+
+msgid "modifier/name/fakeDamageMedium"
+msgstr "Пашкоджанні ад стрэлу СТ"
+
+msgid "modifier/name/fakeDamageSPG"
+msgstr "Пашкоджанні ад стрэлу САУ"
+
+msgid "modifier/name/fakeEnginePerformanceHeavy"
+msgstr "Магутнасць рухавікоў і максімальная хуткасць ЦТ, СТ-САУ і САУ"
+
+msgid "modifier/name/fakeEnginePerformanceLight"
+msgstr "Магутнасць рухавікоў і максімальная хуткасць ЛТ"
+
+msgid "modifier/name/fakeEnginePerformanceMedium"
+msgstr "Магутнасць рухавікоў і максімальная хуткасць СТ"
+
+msgid "modifier/name/fakeHealthSPG"
+msgstr "Колькасць ачкоў трываласці САУ"
+
 msgid "modifier/name/fakeModifierRepairCooldown"
 msgstr "Мінімальны час перанабівання зоны рамонту пасля выкарыстання."
 
 msgid "modifier/name/fakeModifierRepairSpeed"
 msgstr "Хуткасць аднаўлення ачкоў трываласці машыны."
+
+msgid "modifier/name/fakeModuleDamageHeavy"
+msgstr "Пашкоджанні па модулях ЦТ і СТ-САУ"
+
+msgid "modifier/name/fakeModuleDamageLight"
+msgstr "Пашкоджанні па модулях ЛТ"
+
+msgid "modifier/name/fakeModuleDamageMedium"
+msgstr "Пашкоджанні па модулях СТ"
+
+msgid "modifier/name/fakeSPGDistance"
+msgstr "Далёкасць стральбы САУ падтрымкі істотна зменшана"
+
+msgid "modifier/name/fakeStabilizationParams"
+msgstr "Роскід падчас руху, а таксама пры паваротах корпуса і вежы"
+
+msgid "modifier/name/fakeTrajectory"
+msgstr "Уся тэхніка, акрамя САУ, мае больш пакатую траекторыю руху снарадаў"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максімальная хуткасць руху наперад"

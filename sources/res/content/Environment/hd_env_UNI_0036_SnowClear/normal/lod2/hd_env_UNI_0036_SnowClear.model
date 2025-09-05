@@ -2,5 +2,9 @@
 <root>
 	<parent>content/Environment/hd_env_UNI_0036_SnowClear/normal/lod3/hd_env_UNI_0036_SnowClear</parent>
 	<extent>100.000000</extent>
+	<visibilityBox>
+		<min>-3.466475 -0.125429 -0.769763</min>
+		<max>3.488402 0.393672 0.762235</max>
+	</visibilityBox>
 	<nodefullVisual>content/Environment/hd_env_UNI_0036_SnowClear/normal/lod2/hd_env_UNI_0036_SnowClear</nodefullVisual>
 </root>

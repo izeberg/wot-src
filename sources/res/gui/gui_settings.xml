@@ -137,23 +137,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>clubHelp</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/cybersport/
-				<name>default</name>
-				<type>url</type>
-			</item>
-			<item>
-				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/cybersport/
-				<name>CT</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>clubEmblems</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -756,6 +739,24 @@
 		</value>
 	</setting>
 	<setting>
+		<name>battlePassBaseUrls</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						https://webbrg.tanki.su
+						<name>webBridgeRootURL</name>
+						<type>url</type>
+					</item>
+				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
 		<name>booster_credits</name>
 		<type>dict</type>
 		<value>
@@ -1145,7 +1146,7 @@
 				<type>dict</type>
 				<value>
 					<item>
-						https://mtrp-rtst-static.tanki.su
+						http://mtrp-rpt-cdn.tanki.su
 						<name>baseUrl</name>
 						<type>url</type>
 					</item>
@@ -1319,7 +1320,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				$PARAMS(/featured/featured/items/platform_bp2025_17ep)
+				$PARAMS(/featured/featured/items/platform_bp_$BATTLE_PASS_SEASON_ID)
 				<name>buyBattlePass</name>
 				<type>url</type>
 			</item>
@@ -1383,6 +1384,11 @@
 				<name>comp7Products</name>
 				<type>url</type>
 			</item>
+			<item>
+				$PARAMS(/white-tiger-overlay/wt_category)
+				<name>buyLootboxes</name>
+				<type>url</type>
+			</item>
 		</value>
 	</setting>
 	<setting>
@@ -1427,12 +1433,12 @@
 		<type>dict</type>
 		<value>
 			<item>
-				/$LANGUAGE_CODE/promocontent/17BPContentPage/
+				/$LANGUAGE_CODE/promocontent/BPContentPage/
 				<name>infoPage</name>
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/17BPContentPage/
+				/$LANGUAGE_CODE/promocontent/BPContentPage/
 				<name>extraInfoPage</name>
 				<type>url</type>
 			</item>
@@ -1714,6 +1720,40 @@
 		</value>
 	</setting>
 	<setting>
+		<name>infoPageWhiteTiger</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/ru/promocontent/wt-revenge/
+				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-rpt.tanki.su/ru/promocontent/wt-revenge/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>whiteTigerIntroVideoUrl</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/wt_2024_intro/
+				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/wt_2024_intro/
+				<name>CT</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
 		<name>lootBoxes</name>
 		<type>dict</type>
 		<value>
@@ -1804,17 +1844,7 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>types</value>
-							</item>
-							<item>
-								<name>page</name>
-								<type>string</type>
-								<value>shop</value>
-							</item>
-							<item>
-								<name>page</name>
-								<type>string</type>
-								<value>poi</value>
+								<value>rework</value>
 							</item>
 							<item>
 								<name>page</name>
@@ -1824,7 +1854,7 @@
 							<item>
 								<name>page</name>
 								<type>string</type>
-								<value>rework</value>
+								<value>poi</value>
 							</item>
 						</value>
 					</item>
@@ -1845,18 +1875,6 @@
 		</value>
 	</setting>
 	<setting>
-		<name>whatsNewPageComp7</name>
-		<type>macros</type>
-		<macros>AUTH_REALM</macros>
-		<value>
-			<item>
-				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/onslaught_wolf_Intro/
-				<name>default</name>
-				<type>url</type>
-			</item>
-		</value>
-	</setting>
-	<setting>
 		<name>whatsNewPageComp7Slides</name>
 		<type>macros</type>
 		<macros>AUTH_REALM</macros>
@@ -1869,22 +1887,6 @@
 						<name>pages</name>
 						<type>list</type>
 						<value>
-							<item>
-								<name>newTypes</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>shop</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
 							<item>
 								<name>newTypes</name>
 								<type>list</type>
@@ -1953,22 +1955,6 @@
 								</value>
 							</item>
 							<item>
-								<name>shop</name>
-								<type>list</type>
-								<value>
-									<item>
-										<name>name</name>
-										<type>string</type>
-										<value>shop</value>
-									</item>
-									<item>
-										<name>type</name>
-										<type>string</type>
-										<value>page</value>
-									</item>
-								</value>
-							</item>
-							<item>
 								<name>ranks</name>
 								<type>list</type>
 								<value>
@@ -2001,13 +1987,13 @@
 								</value>
 							</item>
 							<item>
-								<name>roleSkills</name>
+								<name>shop</name>
 								<type>list</type>
 								<value>
 									<item>
 										<name>name</name>
 										<type>string</type>
-										<value>roleSkills</value>
+										<value>shop</value>
 									</item>
 									<item>
 										<name>type</name>
@@ -2016,6 +2002,28 @@
 									</item>
 								</value>
 							</item>
+						</value>
+					</item>
+				</value>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>modifiedMaps</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				<name>default</name>
+				<type>dict</type>
+				<value>
+					<item>
+						<name>comp7</name>
+						<type>list</type>
+						<value>
+							<item>17_munchen</item>
+							<item>28_desert</item>
+							<item>95_lost_city_ctf</item>
 						</value>
 					</item>
 				</value>

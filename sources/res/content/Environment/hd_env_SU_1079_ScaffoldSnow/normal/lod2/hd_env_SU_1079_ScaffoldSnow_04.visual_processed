@@ -43,7 +43,7 @@
 					<collisionFlags>255</collisionFlags>
 					<property>
 						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_AM.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile1
@@ -87,7 +87,7 @@
 					</property>
 					<property>
 						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_MAO.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile1
@@ -99,7 +99,7 @@
 					</property>
 					<property>
 						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Metal_Roof_10_rusted_512_GBMT.dds</Texture>
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 					<property>
 						normalGlossSpecTile1
@@ -108,6 +108,10 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.513053 0.135261 -0.001297</groupOrigin>
@@ -222,10 +226,6 @@
 						<Texture>content/Buildings/00_Tiles/dds/Dirt_ClayWall_Painted01_DM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtColor
 						<Vector4>0.000000 0.430000 0.380000 0.050000</Vector4>
 					</property>
@@ -269,8 +269,12 @@
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_02_512_GBMT.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>0.033460 2.886561 -0.026967</groupOrigin>
+				<groupOrigin>0.033460 2.887472 -0.026967</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				3
@@ -350,9 +354,9 @@
 	</renderSet>
 	<boundingBox>
 		<min>-2.333142 -0.707375 -0.979407</min>
-		<max>1.765031 4.483632 0.976813</max>
+		<max>1.765031 4.485455 0.976813</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>7308</geometrySize>
+	<geometrySize>8512</geometrySize>
 	<minUVDensity>0.080287</minUVDensity>
 </root>

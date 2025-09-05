@@ -103,7 +103,7 @@ class HoverManager(CGF.ComponentManager):
         cursorPosition = GUI.mcursor().position
         ray, wpoint = cameras.getWorldRayAndPoint(cursorPosition.x, cursorPosition.y)
         skipFlags = CollisionFlags.TRIANGLE_PROJECTILENOCOLLIDE | CollisionFlags.TRIANGLE_NOCOLLIDE
-        res = BigWorld.wg_collideDynamicStatic(self.spaceID, wpoint, wpoint + ray * 1500, skipFlags, -1, -1, ColliderTypes.HANGAR_FLAG)
+        res = BigWorld.collideDynamicStatic(self.spaceID, wpoint, wpoint + ray * 1500, skipFlags, -1, -1, ColliderTypes.HANGAR_FLAG)
         if res is not None:
             return res[5]
         else:

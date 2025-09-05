@@ -4823,6 +4823,11 @@
 			6.8
 			<!--BW_String-->
 		</explosionRadius>
+		<hasStun>true</hasStun>
+		<stunDuration>
+			15.4
+			<!--BW_String-->
+		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>largeSH</effects>
 		<damage>
@@ -4882,6 +4887,11 @@
 			7.6
 			<!--BW_String-->
 		</explosionRadius>
+		<hasStun>true</hasStun>
+		<stunDuration>
+			16.2
+			<!--BW_String-->
+		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>largeSH</effects>
 		<damage>
@@ -4941,6 +4951,11 @@
 			9.5
 			<!--BW_String-->
 		</explosionRadius>
+		<hasStun>true</hasStun>
+		<stunDuration>
+			18.2
+			<!--BW_String-->
+		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>
@@ -5084,6 +5099,11 @@
 			11.6
 			<!--BW_String-->
 		</explosionRadius>
+		<hasStun>true</hasStun>
+		<stunDuration>
+			19.2
+			<!--BW_String-->
+		</stunDuration>
 		<isTracer>true</isTracer>
 		<effects>hugeSH</effects>
 		<damage>
@@ -5129,92 +5149,6 @@
 			<devices>155</devices>
 		</damage>
 	</_9.2inch_AP_Mk_18>
-	<_9.2inch_HEDelayed_Mk_18_T>
-		<id>35006</id>
-		<userString>#gb_vehicles:_9.2inch_HE_Mk_18_T</userString>
-		<icon>he_spg</icon>
-		<price>2450</price>
-		<kind>HIGH_EXPLOSIVE</kind>
-		<caliber>
-			233.7
-			<!--BW_String-->
-		</caliber>
-		<explosionRadius>
-			17.3
-			<!--BW_String-->
-		</explosionRadius>
-		<isTracer>true</isTracer>
-		<effects>hugeSH_artillery</effects>
-		<damage>
-			<armor>2350</armor>
-			<devices>155</devices>
-		</damage>
-		<obstaclePenetration>True</obstaclePenetration>
-		<deviceDamagePossibility>
-			<protectFromIndirectHits>internal tankmen</protectFromIndirectHits>
-		</deviceDamagePossibility>
-	</_9.2inch_HEDelayed_Mk_18_T>
-	<_9.2inch_HE_Mk_18_T>
-		<id>35000</id>
-		<userString>#gb_vehicles:_9.2inch_HE_Mk_18_T</userString>
-		<icon>he_spg</icon>
-		<price>2450</price>
-		<kind>DELAYED_HE</kind>
-		<caliber>
-			233.7
-			<!--BW_String-->
-		</caliber>
-		<isTracer>true</isTracer>
-		<effects>hugeSH_artillery</effects>
-		<damage>
-			<armor>2350</armor>
-			<devices>155</devices>
-		</damage>
-		<isArtilleryShotZoneVisible>False</isArtilleryShotZoneVisible>
-		<isOwnArtilleryShotZoneVisible>False</isOwnArtilleryShotZoneVisible>
-		<explosionDelay>
-			3.0
-			<!--BW_String-->
-		</explosionDelay>
-		<size>2</size>
-		<underWaterDelta>3</underWaterDelta>
-		<delayedShell>35006</delayedShell>
-	</_9.2inch_HE_Mk_18_T>
-	<_9.2inch_HE_Mk_19_T>
-		<id>35001</id>
-		<userString>#gb_vehicles:_9.2inch_HE_Mk_19_T</userString>
-		<icon>he_spg</icon>
-		<price>2850</price>
-		<kind>HIGH_EXPLOSIVE</kind>
-		<caliber>
-			233.7
-			<!--BW_String-->
-		</caliber>
-		<explosionRadius>6</explosionRadius>
-		<isTracer>true</isTracer>
-		<effects>hugeSF</effects>
-		<damage>
-			<armor>1350</armor>
-			<devices>155</devices>
-		</damage>
-	</_9.2inch_HE_Mk_19_T>
-	<_9.2inch_AP_Mk_18_T>
-		<id>35002</id>
-		<userString>#gb_vehicles:_9.2inch_AP_Mk_18_T</userString>
-		<icon>ap</icon>
-		<price>2740</price>
-		<kind>ARMOR_PIERCING</kind>
-		<caliber>
-			233.7
-			<!--BW_String-->
-		</caliber>
-		<isTracer>true</isTracer>
-		<effects>hugeSA</effects>
-		<damage>
-			<armor>950</armor>
-			<devices>155</devices>
-		</damage>
-	</_9.2inch_AP_Mk_18_T>
 	<Development_Shell>
 		<id>65000</id>
 		<userString>Development_Shell</userString>

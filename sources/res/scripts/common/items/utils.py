@@ -103,15 +103,36 @@ def getCircularVisionRadius(vehicleDescr, factors):
 def getFirstReloadTime(vehicleDescr, factors, ignoreRespawn=False):
     respawnReloadFactor = max(factors['respawnReloadTimeFactor'], 0.0)
     factor = vehicleDescr.miscAttrs['gunReloadTimeFactor'] * max(factors['gun/reloadTime'], 0.0)
-    firstShellReload = vehicleDescr.gun.reloadTime
-    if 'dualGun' in vehicleDescr.gun.tags:
-        firstShellReload = vehicleDescr.gun.dualGun.reloadTimes[0]
-    else:
-        if 'clip' in vehicleDescr.gun.tags and 'autoreload' in vehicleDescr.gun.tags:
-            firstShellReload = vehicleDescr.gun.autoreload.reloadTime[(-1)]
-        if ignoreRespawn:
-            return firstShellReload * factor
-    return firstShellReload * factor * respawnReloadFactor
+    if frozenset(('dualGun', 'clip', 'autoreload')).issubset(vehicleDescr.gun.tags):
+        return __getFirstReloadTimeForClippedDualgun(vehicleDescr, factor, respawnReloadFactor, ignoreRespawn)
+    return __getFirstReloadTime(vehicleDescr, factor, respawnReloadFactor, ignoreRespawn)
+
+
+def __applyFactors(reloadTime, factor, respawnReloadFactor, ignoreRespawn=False):
+    if ignoreRespawn:
+        return reloadTime * factor
+    return reloadTime * factor * respawnReloadFactor
+
+
+def __getFirstReloadTime(vehicleDescr, factor, respawnReloadFactor, ignoreRespawn=False):
+
+    def getFirstShellReload(gun):
+        if 'dualGun' in gun.tags and 'clip' in gun.tags:
+            return gun.reloadTime
+        if 'dualGun' in gun.tags:
+            return gun.dualGun.reloadTimes[0]
+        if 'clip' in gun.tags and 'autoreload' in gun.tags:
+            return gun.autoreload.reloadTime[(-1)]
+        return gun.reloadTime
+
+    firstShellReload = getFirstShellReload(vehicleDescr.gun)
+    return __applyFactors(firstShellReload, factor, respawnReloadFactor, ignoreRespawn)
+
+
+def __getFirstReloadTimeForClippedDualgun(vehicleDescr, factor, respawnReloadFactor, ignoreRespawn=False):
+    reloadTime = vehicleDescr.gun.autoreload.reloadTime[(-1)]
+    sendOnTime = vehicleDescr.gun.dualGun.reloadTimes[0]
+    return __applyFactors(reloadTime, factor, respawnReloadFactor, ignoreRespawn) + sendOnTime
 
 
 def getReloadTime(vehicleDescr, factors):
@@ -155,6 +176,8 @@ def getClientAutoShootFlameOverheatCoolingTime(gunDescr):
 def getDualGunReloadTime(vehicleDescr, factors):
     if 'dualGun' in vehicleDescr.gun.tags:
         factor = vehicleDescr.miscAttrs['gunReloadTimeFactor'] * max(factors['gun/reloadTime'], 0.0)
+        if 'clip' in vehicleDescr.gun.tags and 'autoreload' in vehicleDescr.gun.tags:
+            return tuple(reloadTime * factor for reloadTime in vehicleDescr.gun.autoreload.reloadTime)
         return tuple(reloadTime * factor for reloadTime in vehicleDescr.gun.dualGun.reloadTimes)
     else:
         return (0.0, )

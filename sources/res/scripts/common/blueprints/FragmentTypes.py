@@ -106,9 +106,9 @@ class VehicleBlueprintFragment(BlueprintFragment):
     def decayExtraFragments(self, count=1):
         evts = (
          self.asNationalCD, self.asIntelligenceDataCD)
-        wghts = self.decays
-        if any(wghts):
-            return wchoices(evts, wghts).ncounts(count)
+        weights = self.decays
+        if any(weights):
+            return wchoices(evts, weights).ncounts(count)
         return {}
 
     @staticmethod

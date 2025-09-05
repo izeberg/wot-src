@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -60,10 +60,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.500000 0.800000 1.000000 0.000000</Vector4>
-					</property>
-					<property>
 						g_tile1Tint
 						<Vector4>0.690196 0.666667 0.627451 1.000000</Vector4>
 					</property>
@@ -104,7 +100,6 @@
 		<min>-0.825332 -1.599753 -0.000001</min>
 		<max>25.585352 0.032666 3.654673</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>3382</geometrySize>
+	<geometrySize>2502</geometrySize>
 	<minUVDensity>0.075476</minUVDensity>
 </root>

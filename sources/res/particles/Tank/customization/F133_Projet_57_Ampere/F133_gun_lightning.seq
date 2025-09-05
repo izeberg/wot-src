@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>30.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>gun_lightning</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/F133_Projet_57_Ampere/F133_gun_lightning.model</resource>
+		<castsShadow>false</castsShadow>
+	</sequenceObject>
+	<events/>
+</root>

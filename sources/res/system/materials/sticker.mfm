@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<fx>shaders/std_effects/wg_forward_decal.fx</fx>
+	<fx>shaders/std_effects/forward_decal.fx</fx>
 	<property>
 		diffuseMap
 		<Texture>helpers\maps\aid_builder.dds</Texture>

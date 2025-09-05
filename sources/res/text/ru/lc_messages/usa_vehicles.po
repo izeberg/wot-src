@@ -59,25 +59,6 @@ msgstr "T28 HTC"
 msgid "A102_T28_concept_short_special"
 msgstr "Достойное бронирование, прекрасные УГН"
 
-msgid "A1038_T92_T"
-msgstr "T92 HMC T"
-
-msgid "A1038_T92_T_descr"
-msgstr ""
-"Американская САУ, разработанная в 1945 году на базе танка Т26Е3 для "
-"разрушения бункеров и глубоких укрытий в боях с японскими войсками на "
-"островах Тихого океана. Было построено пять машин, включая опытный образец. "
-"Впоследствии работы над САУ были прекращены в связи с окончанием войны."
-
-msgid "A1038_T92_T_long_special"
-msgstr "?empty?"
-
-msgid "A1038_T92_T_short"
-msgstr "T92 HMC T"
-
-msgid "A1038_T92_T_short_special"
-msgstr "?empty?"
-
 msgid "A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
@@ -378,6 +359,20 @@ msgstr ""
 "установкой нового двигателя, вооружения, СУО. Модернизированные таким "
 "образом 2570 машин практически ничем, кроме показателей броневой защиты, не "
 "отличались от M60, имевших то же вооружение и двигатель."
+
+msgid "A120_M48A5_hound_TLXXL"
+msgstr "Thunderbolt"
+
+msgid "A120_M48A5_hound_TLXXL_descr"
+msgstr ""
+"«Я читала досье фон Кригера до того, как оказаться здесь. По крайней мере, то, с чем мне по допуску разрешили ознакомиться. Как странно. Мне казалось, должен нарисоваться образ врага, которого нужно устранить любым методом. Но нет, даже в сухих строках его личного дела читается уважение к его персоне, может даже восхищение в какой-то мере. Альянс выставляет его оппонентом (но не врагом!) и называет техническим гением, каких мы ещё не видели. Да что говорить — даже оружие, которым мы теперь обладаем, вот хотя бы этот «Тандерболт» — это же его наработки, фон Кригера. Он настолько силён, что единственное, чем можно его остановить — его же оружие. Мне было бы весьма любопытно с ним пообщаться, узнать его мотивацию. Я не вижу в нём врага. Да и Альянс таковым не считает, как мне показалось. Но мы тут, а он — там. И бою быть. Настоящему бою.\n"
+"И опять «Тандерболт». Скоро уже каски и ботинки с этим именем начнут делать. А пройдут годы, закончатся предметы, они начнут называть новые изделия «Тандерболт ll» — и всё по новой. У Альянса скорее с фантазией проблемы, а не с фон Кригером»."
+
+msgid "A120_M48A5_hound_TLXXL_short"
+msgstr "Thunderbolt"
+
+msgid "A120_M48A5_hound_TLXXL_short_special"
+msgstr "ОБТ с глубокой модернизацией"
 
 msgid "A120_M48A5_short"
 msgstr "M48 Patton"
@@ -1011,6 +1006,24 @@ msgstr "Механизм дозарядки, универсальность"
 msgid "A150_MBT_B"
 msgstr "MBT-B"
 
+msgid "A150_MBT_B_T"
+msgstr "MBT-B Test"
+
+msgid "A150_MBT_B_T_descr"
+msgstr ""
+"В июле 1964 года корпорация General Motors представила проект перспективного основного боевого танка (MBT). Проект вобрал в себя наиболее перспективные тенденции развития танкостроения начала 1960-х: пониженный силуэт, хорошая подвижность и гидропневматическая подвеска, обеспечивавшая плавность хода. Много внимания уделялось снижению воздействия радиации. Проводились работы по комбинированной броне, которая должна была повысить защиту от кумулятивных снарядов. Предполагалось вооружить танк 120-мм орудием или 120-мм орудием-пусковой установкой. Опережающим своё время было решение установить на корме башни ТВ-камеры для обзора пространства сзади и вождения задним ходом. Работы были прекращены на стадии работы с полноразмерным макетом, а все наработки легли в основу американского проекта перспективного танка 70-х годов — МВТ70.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A150_MBT_B_T_long_special"
+msgstr "?empty?"
+
+msgid "A150_MBT_B_T_short"
+msgstr "MBT-B (T)"
+
+msgid "A150_MBT_B_T_short_special"
+msgstr "?empty?"
+
 msgid "A150_MBT_B_descr"
 msgstr ""
 "В июле 1964 года корпорация General Motors представила проект перспективного основного боевого танка (MBT). Проект вобрал в себя наиболее перспективные тенденции развития танкостроения начала 1960-х: пониженный силуэт, хорошая подвижность и гидропневматическая подвеска, обеспечивавшая плавность хода. Много внимания уделялось снижению воздействия радиации. Проводились работы по комбинированной броне, которая должна была повысить защиту от кумулятивных снарядов. Предполагалось вооружить танк 120-мм орудием или 120-мм орудием-пусковой установкой. Опережающим своё время было решение установить на корме башни ТВ-камеры для обзора пространства сзади и вождения задним ходом. Работы были прекращены на стадии работы с полноразмерным макетом, а все наработки легли в основу американского проекта перспективного танка 70-х годов — МВТ70.\n"
@@ -1497,6 +1510,24 @@ msgstr "TF-2 CLARK"
 msgid "A173_TF_2_CLARK_short_special"
 msgstr "Отличное бронирование, мощное орудие ближнего боя"
 
+msgid "A174_M36B1_GMC"
+msgstr "GMC M36B1"
+
+msgid "A174_M36B1_GMC_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A174_M36B1_GMC_long_special"
+msgstr "?empty?"
+
+msgid "A174_M36B1_GMC_short"
+msgstr "M36B1"
+
+msgid "A174_M36B1_GMC_short_special"
+msgstr "?empty?"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "Американский тяжёлый танк V уровня. Обладает наклонной лобовой бронёй, "
@@ -1682,6 +1713,9 @@ msgstr "AN-VRC-7A"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
+msgid "AN-VRC-7_WT"
+msgstr "AN/VRC-7 «Thunderbolt»"
+
 msgid "AN_GRC_7"
 msgstr "AN/GRC-7"
 
@@ -1722,6 +1756,9 @@ msgid "AN_VRC-24"
 msgstr "AN/VRC-24"
 
 msgid "AN_VRC-3"
+msgstr "AN/VRC-3"
+
+msgid "AN_VRC-3_MBT_T"
 msgstr "AN/VRC-3"
 
 msgid "AN_VRC-3_T"
@@ -1784,9 +1821,6 @@ msgstr "M56 Scorpion"
 msgid "Chassis_A102_T28_concept"
 msgstr "T28 Concept"
 
-msgid "Chassis_A1038_T92_T"
-msgstr "T92 HMC T"
-
 msgid "Chassis_A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
@@ -1843,6 +1877,9 @@ msgstr "M4A3E8 Thunderbolt VII"
 
 msgid "Chassis_A120_M48A5"
 msgstr "M48A5 Patton"
+
+msgid "Chassis_A120_M48A5_hound_TLXXL"
+msgstr "M48A5 Patton «Thunderbolt»"
 
 msgid "Chassis_A121_M26_Cologne"
 msgstr "T26E3"
@@ -1937,6 +1974,9 @@ msgstr "AMBT"
 msgid "Chassis_A150_MBT_B"
 msgstr "MBT-B"
 
+msgid "Chassis_A150_MBT_B_T"
+msgstr "MBT-B"
+
 msgid "Chassis_A151_TS_60"
 msgstr "TS-60"
 
@@ -2011,6 +2051,9 @@ msgstr "Astron-FL"
 
 msgid "Chassis_A173_TF_2_CLARK"
 msgstr "TF-2"
+
+msgid "Chassis_A174_M36B1_GMC"
+msgstr "VVSS Т48"
 
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
@@ -2545,6 +2588,9 @@ msgstr ""
 msgid "Continental_AV-1790-7B"
 msgstr "Continental AV-1790-7B"
 
+msgid "Continental_AV-1790-7B_WT"
+msgstr "Continental «Thunderbolt»"
+
 msgid "Continental_AV-1790-7B_short"
 msgstr ""
 "Continental\n"
@@ -2567,6 +2613,9 @@ msgstr ""
 "AV-1790-7D"
 
 msgid "Continental_AVCR"
+msgstr "Continental AVCR"
+
+msgid "Continental_AVCR_MBT_T"
 msgstr "Continental AVCR"
 
 msgid "Continental_AVDS-1790-2"
@@ -2780,6 +2829,9 @@ msgstr "Ford GAA"
 msgid "Ford_GAA_A"
 msgstr "Ford GAA A"
 
+msgid "Ford_GAA_B1"
+msgstr "Ford GAA"
+
 msgid "Ford_GAA_FL"
 msgstr "Ford GAA"
 
@@ -2812,9 +2864,6 @@ msgstr "Ford GAF"
 
 msgid "Ford_GAF_R1"
 msgstr "Ford GAF (T92 HMC)"
-
-msgid "Ford_GAF_R1_T"
-msgstr "Ford GAF (T92 HMC) T"
 
 msgid "Ford_GAF_V8"
 msgstr "Ford GAF V8"
@@ -3379,6 +3428,18 @@ msgstr "PLT-27"
 msgid "Pershing"
 msgstr "M26 Pershing"
 
+msgid "Pershing_FL"
+msgstr "M26 Pershing FL"
+
+msgid "Pershing_FL_long_special"
+msgstr "?empty?"
+
+msgid "Pershing_FL_short"
+msgstr "Pershing FL"
+
+msgid "Pershing_FL_short_special"
+msgstr "?empty?"
+
 msgid "Pershing_descr"
 msgstr ""
 "Американский средний танк 1944–1969 годов. Назван в честь генерала Джона "
@@ -3459,9 +3520,6 @@ msgstr "SCR 528AM"
 msgid "SCR_528R1"
 msgstr "SCR 528A"
 
-msgid "SCR_528R1_T"
-msgstr "SCR 528A T"
-
 msgid "SCR_528_594"
 msgstr "SCR 528"
 
@@ -3478,6 +3536,9 @@ msgid "SCR_538"
 msgstr "SCR 538"
 
 msgid "SCR_610"
+msgstr "SCR 610"
+
+msgid "SCR_610_B1"
 msgstr "SCR 610"
 
 msgid "SCR_610_ID"
@@ -4249,9 +4310,6 @@ msgstr "M56 Scorpion"
 msgid "Turret_1_A102_T28_concept"
 msgstr "T28 Concept"
 
-msgid "Turret_1_A1038_T92_T"
-msgstr "T92 HMC T"
-
 msgid "Turret_1_A104_M4A3E8A"
 msgstr "M4A3E8 Fury"
 
@@ -4293,6 +4351,9 @@ msgstr "M4A3E8 Thunderbolt VII"
 
 msgid "Turret_1_A120_M48A5"
 msgstr "M48A5 Patton"
+
+msgid "Turret_1_A120_M48A5_hound_TLXXL"
+msgstr "M48A5 Patton «Thunderbolt»"
 
 msgid "Turret_1_A121_M26_Cologne"
 msgstr "T26E3"
@@ -4369,6 +4430,9 @@ msgstr "AMBT"
 msgid "Turret_1_A150_MBT_B"
 msgstr "MBT-B"
 
+msgid "Turret_1_A150_MBT_B_T"
+msgstr "MBT-B"
+
 msgid "Turret_1_A151_TS_60"
 msgstr "TS-60"
 
@@ -4431,6 +4495,9 @@ msgstr "Astron-FL"
 
 msgid "Turret_1_A173_TF_2_CLARK"
 msgstr "TF-2"
+
+msgid "Turret_1_A174_M36B1_GMC"
+msgstr "M36"
 
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
@@ -4857,6 +4924,20 @@ msgstr "APCR M4"
 msgid "_105mm_APCR_M68M2"
 msgstr "APDS-T M392"
 
+msgid "_105mm_APCR_M68M2_WT"
+msgstr "Серебряная пуля"
+
+msgid "_105mm_APCR_M68M2_WT_descr"
+msgstr "Гордость оружейников Альянса."
+
+msgid "_105mm_APCR_M68M2_WT_long_special"
+msgstr ""
+"При перегрузке генератора гончие получают заряд плазмы, который увеличивает "
+"наносимый урон на 25%, вплоть до 100%."
+
+msgid "_105mm_APCR_M68M2_WT_short_special"
+msgstr "Дополнительный урон плазмой"
+
 msgid "_105mm_APCR_M735"
 msgstr "APDS M735P"
 
@@ -4919,6 +5000,9 @@ msgstr "105 mm Gun M68P"
 
 msgid "_105mm_Gun_M68_SH"
 msgstr "105 mm Gun M68"
+
+msgid "_105mm_Gun_M68_WT"
+msgstr "105 mm Gun M68 «Thunderbolt»"
 
 msgid "_105mm_Gun_T140E2"
 msgstr "105 mm Gun T140E2"
@@ -5184,11 +5268,23 @@ msgstr "M820 AP-T"
 msgid "_120mm_M820_HEAT"
 msgstr "APFSDS T371E1"
 
+msgid "_120mm_M820_HEAT_T"
+msgstr "APFSDS T371E1 T"
+
+msgid "_120mm_M820_T"
+msgstr "M820 AP-T T"
+
 msgid "_120mm_RHD_MBT"
+msgstr "120 mm RHD"
+
+msgid "_120mm_RHD_MBT_T"
 msgstr "120 mm RHD"
 
 msgid "_120mm_SDRN1"
 msgstr "SDRN1 HE"
+
+msgid "_120mm_SDRN1_T"
+msgstr "SDRN1 HE T"
 
 msgid "_120mm_T123E2_SPG"
 msgstr "120 mm T123E2 SPG"
@@ -5340,26 +5436,14 @@ msgstr "20 mm Hispano-Suiza"
 msgid "_240mm_HE_M146"
 msgstr "HE M146"
 
-msgid "_240mm_HE_M146_T"
-msgstr "HE M146 T"
-
 msgid "_240mm_HE_M160"
 msgstr "HE M160"
-
-msgid "_240mm_HE_M160_T"
-msgstr "HE M160 T"
 
 msgid "_240mm_Howitzer_M1"
 msgstr "240 mm Howitzer M1"
 
-msgid "_240mm_Howitzer_M1_T"
-msgstr "240 mm Howitzer M1 T"
-
 msgid "_240mm_M114_M78"
 msgstr "M114/M78"
-
-msgid "_240mm_M114_M78_T"
-msgstr "M114/M78 T"
 
 msgid "_2pdr_APCNR_Mk.1"
 msgstr "APCNR Mk. 1"
@@ -5783,6 +5867,9 @@ msgstr "AP M318"
 msgid "_90mm_AP_M77"
 msgstr "AP M77"
 
+msgid "_90mm_AP_M77_B1"
+msgstr "APBC T33"
+
 msgid "_90mm_AP_M77_ID"
 msgstr "AP M77"
 
@@ -5800,6 +5887,9 @@ msgstr "AP T33E"
 
 msgid "_90mm_AT_Gun_M3"
 msgstr "90 mm AT Gun M3"
+
+msgid "_90mm_AT_Gun_M3B1"
+msgstr "90mm AT Gun M3"
 
 msgid "_90mm_AT_Gun_M3T"
 msgstr "90 mm AT Gun M3T"
@@ -5903,6 +5993,9 @@ msgstr "HEP T142E2"
 msgid "_90mm_HE_M71"
 msgstr "HE M71"
 
+msgid "_90mm_HE_M71_B1"
+msgstr "HE M71"
+
 msgid "_90mm_HE_M71_ID"
 msgstr "HE M71"
 
@@ -5920,6 +6013,9 @@ msgstr "HVAP M304"
 
 msgid "_90mm_HVAP_M304A1"
 msgstr "HVAP M304A1"
+
+msgid "_90mm_HVAP_M304_B1"
+msgstr "HVAP T30"
 
 msgid "_90mm_HVAP_M304_ID"
 msgstr "HVAP M304"

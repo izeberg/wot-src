@@ -136,7 +136,7 @@ class BattleVehicleConfigurator(BattleVehicleConfiguratorMeta, IProgressionListe
          BATTLE_VIEW_ALIASES.BATTLE_VEH_MODULES_CONFIGURATOR_CMP,
          BATTLE_VIEW_ALIASES.BATTLE_LEVEL_PANEL}
         self.__configuratorCmp = None
-        self.__blur = GUI.WGUIBackgroundBlur()
+        self.__blur = GUI.UIBackgroundBlur()
         self.__isActive = False
         return
 

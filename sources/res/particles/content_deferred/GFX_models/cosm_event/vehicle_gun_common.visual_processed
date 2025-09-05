@@ -37,7 +37,7 @@
 					</property>
 					<property>
 						diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_ANM.dds</Texture>
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/null.dds</Texture>
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
@@ -68,10 +68,6 @@
 						<Float>1.000000</Float>
 					</property>
 					<property>
-						gradientMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/Fire_F18_Bat_Chatillon25t_BP8.dds</Texture>
-					</property>
-					<property>
 						lightMultipliers
 						<Vector4>3.000000 3.000000 0.000000 0.000000</Vector4>
 					</property>
@@ -84,20 +80,12 @@
 						<Vector4>0.200000 0.000000 1.000000 1.000000</Vector4>
 					</property>
 					<property>
-						opacityMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Masks/udes_rays_mask_01.dds</Texture>
-					</property>
-					<property>
-						phaseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/SandStorm_up_02.dds</Texture>
-					</property>
-					<property>
 						rampFreshnelMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/cosm_shotPassion.dds</Texture>
 					</property>
 					<property>
 						TintlColor
-						<Vector4>0.501961 0.501961 0.501961 1.000000</Vector4>
+						<Vector4>0.250980 0.250980 0.250980 1.000000</Vector4>
 					</property>
 				</material>
 				<groupOrigin>0.015640 0.182642 -0.103213</groupOrigin>

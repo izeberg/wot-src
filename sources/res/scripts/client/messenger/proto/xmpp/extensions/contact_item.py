@@ -1,6 +1,6 @@
 from messenger.proto.xmpp.extensions import PyExtension
 from messenger.proto.xmpp.extensions.ext_constants import XML_TAG_NAME as _TAG
-from messenger.proto.xmpp.extensions.wg_items import WgSharedExtension
+from messenger.proto.xmpp.extensions.custom_items import SharedExtension
 from messenger.proto.xmpp.jid import ContactJID
 
 class ContactItemExtension(PyExtension):
@@ -9,11 +9,11 @@ class ContactItemExtension(PyExtension):
         super(ContactItemExtension, self).__init__(_TAG.ITEM)
         if jid:
             self.setAttribute('jid', str(jid))
-        self.setChild(WgSharedExtension())
+        self.setChild(SharedExtension())
 
     @classmethod
     def getDefaultData(cls):
-        return (None, WgSharedExtension.getDefaultData())
+        return (None, SharedExtension.getDefaultData())
 
     def parseTag(self, pyGlooxTag):
         jid = pyGlooxTag.findAttribute('jid')
@@ -21,6 +21,6 @@ class ContactItemExtension(PyExtension):
             jid = ContactJID(jid)
         else:
             jid = None
-        info = self._getChildData(pyGlooxTag, 0, WgSharedExtension.getDefaultData())
+        info = self._getChildData(pyGlooxTag, 0, SharedExtension.getDefaultData())
         return (
          jid, info)

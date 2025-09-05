@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Environment/hd_env_SU_1099_Signboard/normal/lod2/hd_env_SU_1099_Signboard_01</parent>
+	<extent>70.000000</extent>
+	<visibilityBox>
+		<min>-0.003427 0.017218 -0.045726</min>
+		<max>1.584555 1.697904 0.047179</max>
+	</visibilityBox>
+	<nodelessVisual>content/Environment/hd_env_SU_1099_Signboard/normal/lod1/hd_env_SU_1099_Signboard_01</nodelessVisual>
+</root>

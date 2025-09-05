@@ -19,28 +19,68 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd2</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<identifier>s_nd0</identifier>
+					<collisionFlags>0</collisionFlags>
 					<materialKind>111</materialKind>
-					<collisionFlags>255</collisionFlags>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<property>
-						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_AM.dds</Texture>
+						blendMask
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_blend.png</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_GMM.dds</Texture>
+						g_atlasSizes
+						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_MAO.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.004416 6.907489 -2.013435</groupOrigin>
+				<groupOrigin>0.008163 6.647881 -2.024948</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -60,10 +100,6 @@
 					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
-					</property>
-					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_tile1Tint
@@ -123,72 +159,28 @@
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>s_nd0</identifier>
-					<collisionFlags>0</collisionFlags>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<materialKind>111</materialKind>
-					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>255</collisionFlags>
 					<property>
-						blendMask
-						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_blend.png</Texture>
-					</property>
-					<property>
-						dirtMap
-						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
+						diffuseMap
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_AM.dds</Texture>
 					</property>
 					<property>
 						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_fakeShadowsAndDetailParams
-						<Vector4>0.000000 0.500000 1.000000 0.000000</Vector4>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_atlasSizes
-						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
-					</property>
-					<property>
-						albedoHeightTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile0
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_01_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile1
-						<Texture>content/Buildings/00_Tiles/dds/Wall_ruins_03_MAO.dds</Texture>
-					</property>
-					<property>
-						albedoHeightTile2
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
-					</property>
-					<property>
-						normalGlossSpecTile2
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
-					</property>
-					<property>
-						metallicAOTile2
-						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
-					</property>
-					<property>
-						colorTex
-						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0125_CastleRuins/hd_bld_SU_0125_CastleRuinsWall_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.008163 6.647881 -2.024948</groupOrigin>
+				<groupOrigin>-0.004416 6.907489 -2.013435</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

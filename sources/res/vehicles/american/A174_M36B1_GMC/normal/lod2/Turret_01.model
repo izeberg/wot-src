@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A174_M36B1_GMC/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/american/A174_M36B1_GMC/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.053537 -0.000000 -2.225284</min>
+		<max>1.053530 1.543561 1.113012</max>
+	</visibilityBox>
+</root>

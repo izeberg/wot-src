@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<visibilityBox>
-		<min>-1.912490 -0.086170 -1.972660</min>
-		<max>1.877950 1.500000 1.917680</max>
-	</visibilityBox>
 	<parent>content/Environment/hd_env_UNI_0050_Stage_Snow/normal/lod1/hd_env_UNI_0050_Stage_Snow</parent>
-	<extent>48.000000</extent>
+	<extent>35.000000</extent>
+	<visibilityBox>
+		<min>-2.262377 -0.028189 -2.387880</min>
+		<max>2.338863 1.500000 2.267055</max>
+	</visibilityBox>
 	<nodefullVisual>content/Environment/hd_env_UNI_0050_Stage_Snow/normal/lod0/hd_env_UNI_0050_Stage_Snow</nodefullVisual>
 </root>

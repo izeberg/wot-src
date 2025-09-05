@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_SU_0114_Pharmacy_4Floor/normal/lod3/hd_bld_SU_0114_Pharmacy_4Floor</parent>
-	<extent>210.000000</extent>
+	<extent>225.000000</extent>
 	<visibilityBox>
-		<min>-5.939559 -1.487345 -6.464198</min>
-		<max>5.906386 19.369131 5.883175</max>
+		<min>-5.939559 -1.465685 -6.464196</min>
+		<max>5.906386 19.369131 5.883179</max>
 	</visibilityBox>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0114_Pharmacy_4Floor/normal/lod2/hd_bld_SU_0114_Pharmacy_4Floor</nodefullVisual>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0114_Pharmacy_4Floor/normal/lod2/hd_bld_SU_0114_Pharmacy_4Floor</nodelessVisual>
 </root>

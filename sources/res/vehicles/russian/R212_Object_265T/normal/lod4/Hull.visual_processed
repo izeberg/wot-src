@@ -103,38 +103,22 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_Shape.vertices</vertices>
+			<primitive>hull_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_proxy</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>tank_proxy</identifier>
 					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/russian/R212_Object_265T/Object_265T_proxy_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/russian/R212_Object_265T/Object_265T_proxy_AO.dds</Texture>
-					</property>
-					<property>
-						g_detailUVTiling
-						<Vector4>7.013700 7.013700 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
@@ -143,6 +127,14 @@
 					<property>
 						normalMap
 						<Texture>vehicles/russian/R212_Object_265T/Object_265T_proxy_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/R212_Object_265T/Object_265T_proxy_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.008405 0.083025 -0.044869</groupOrigin>

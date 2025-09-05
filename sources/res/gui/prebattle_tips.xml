@@ -220,10 +220,6 @@
 				<showTimes>10</showTimes>
 			</preceding>
 		</filter>
-		<filter>
-			<id>birthday_event_on</id>
-			<isBirthdayActive>True</isBirthdayActive>
-		</filter>
 	</filters>
 	<tips>
 		<tip>
@@ -956,16 +952,6 @@
 			<id>tip204</id>
 			<status>tip204Status</status>
 			<filter>only_dualAccuracy_first_5_times</filter>
-		</tip>
-		<tip>
-			<id>tip205</id>
-			<status>tip205Status</status>
-			<filter>birthday_event_on</filter>
-		</tip>
-		<tip>
-			<id>tip206</id>
-			<status>tip206Status</status>
-			<filter>birthday_event_on</filter>
 		</tip>
 		<tip>
 			<id>tip207</id>

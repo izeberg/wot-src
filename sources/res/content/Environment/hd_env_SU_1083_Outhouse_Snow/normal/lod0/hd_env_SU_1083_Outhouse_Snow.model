@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Environment/hd_env_SU_1083_Outhouse_Snow/normal/lod0/hd_env_SU_1083_Outhouse_Snow</nodefullVisual>
 	<visibilityBox>
-		<min>-2.734540 -0.058145 -2.322140</min>
-		<max>2.765310 3.313370 2.222760</max>
+		<min>-2.797141 -0.074569 -2.192040</min>
+		<max>2.756138 3.313368 1.578647</max>
 	</visibilityBox>
-	<parent>content/Environment/hd_env_SU_1083_Outhouse_Snow/normal/lod1/hd_env_SU_1083_Outhouse_Snow</parent>
 	<extent>48.000000</extent>
 	<havok>
 		<damagedState>true</damagedState>
 	</havok>
+	<nodefullVisual>content/Environment/hd_env_SU_1083_Outhouse_Snow/normal/lod0/hd_env_SU_1083_Outhouse_Snow</nodefullVisual>
+	<parent>content/Environment/hd_env_SU_1083_Outhouse_Snow/normal/lod1/hd_env_SU_1083_Outhouse_Snow</parent>
 </root>

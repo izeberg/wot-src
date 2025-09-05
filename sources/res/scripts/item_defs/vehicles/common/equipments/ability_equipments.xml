@@ -325,15 +325,15 @@
 		<kpi>
 			<mul>
 				<name>vehicleGunShotDispersionChassisMovement</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionChassisRotation</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersionTurretRotation</name>
-				<value>20</value>
+				<value>30</value>
 			</mul>
 			<add>
 				<name>chargeTimeBonus</name>
@@ -348,7 +348,7 @@
 			</add>
 			<add>
 				<name>loadShellIntoDualGunBonus</name>
-				<value>-7</value>
+				<value>-6</value>
 			</add>
 			<mul>
 				<name>vehicleGunShotDispersionAfterShot</name>

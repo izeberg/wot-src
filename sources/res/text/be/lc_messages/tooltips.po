@@ -17,6 +17,9 @@ msgstr "Націсніце, каб перайсці да папярэдняга 
 msgid "Contact/status/inBattle/bootcamp"
 msgstr "У Баявым навучанні"
 
+msgid "Contact/status/inBattle/comp7"
+msgstr "У Націску"
+
 msgid "Contact/status/inBattle/epic_random_training"
 msgstr "У Супольных вучэннях"
 
@@ -712,9 +715,6 @@ msgstr "Падкаліберны снарад"
 msgid "advanced/header/shellType/ARMOR_PIERCING_FSDS"
 msgstr "Бранябойны апераны падкаліберны снарад"
 
-msgid "advanced/header/shellType/DELAYED_HE"
-msgstr "Снарад з затрымкай дэтанатара"
-
 msgid "advanced/header/shellType/FLAME"
 msgstr "Агнямётная сумесь"
 
@@ -946,6 +946,14 @@ msgstr ""
 "Модуль, які ўплывае на манеўранасць машыны. Шасі колавай тэхнікі не дазваляе"
 " развярнуцца на месцы. Модуль таксама ўплывае на стабілізацыю гарматы (чым "
 "лепшая стабілізацыя, тым меншы роскід падчас руху)."
+
+msgid "advanced/wt_largeMedkit"
+msgstr ""
+"Пры выкарыстанні імгненна лечыць усіх параненых членаў экіппажа і здымае "
+"аглушэнне."
+
+msgid "advanced/wt_largeRepairkit"
+msgstr "Пры выкарыстанні імгненна рамантуе ўсе пашкоджаныя модулі."
 
 msgid "ammo/auto/body"
 msgstr ""
@@ -1395,7 +1403,7 @@ msgstr "Бясплатны дэмантаж штатнага абсталява�
 msgid "awardItem/gold/body"
 msgstr ""
 "Каштоўная ўнутрыгульнявая валюта, якую можна выдаткаваць на самыя розныя "
-"мэты: танкавы прэміум акаўнт, тэхніка, абмен досведу і г.д."
+"мэты: Танкавы прэміум акаўнт, тэхніку, абмен досведу і г.д."
 
 msgid "awardItem/gold/header"
 msgstr "Золата"
@@ -5392,6 +5400,21 @@ msgstr "Будуць улічвацца баі, пазнейшыя за:"
 msgid "hangar/elen/primetime/valid"
 msgstr "Улічаныя баі:"
 
+msgid "hangar/header/moneyTooltip/creditsName"
+msgstr "Ваша срэбра"
+
+msgid "hangar/header/moneyTooltip/earnedValue"
+msgstr "Здабыта і атрымана"
+
+msgid "hangar/header/moneyTooltip/goldName"
+msgstr "Ваша золата"
+
+msgid "hangar/header/moneyTooltip/purchasedValue"
+msgstr "Куплена"
+
+msgid "hangar/header/moneyTooltip/totalValue"
+msgstr "АГУЛАМ"
+
 msgid "hangar/header/personalMissions/available/body"
 msgstr ""
 "Баявая задача не выбрана. Націсніце, каб перайсці да спіса даступных задач."
@@ -5561,21 +5584,6 @@ msgstr "Узнагарода: %(rewards)s"
 msgid "hangar/header/quests/reward/rest"
 msgstr "і яшчэ %(count)d"
 
-msgid "hangar/header/wgmoneyTooltip/creditsName"
-msgstr "Ваша срэбра"
-
-msgid "hangar/header/wgmoneyTooltip/earnedValue"
-msgstr "Здабыта і атрымана"
-
-msgid "hangar/header/wgmoneyTooltip/goldName"
-msgstr "Ваша золата"
-
-msgid "hangar/header/wgmoneyTooltip/purchasedValue"
-msgstr "Куплена"
-
-msgid "hangar/header/wgmoneyTooltip/totalValue"
-msgstr "АГУЛАМ"
-
 msgid "hangar/maintenance/body"
 msgstr "Націсніце, каб паказаць акенца рамонту машыны."
 
@@ -5657,6 +5665,9 @@ msgstr "Выберыце мапу, каб уступіць у бой."
 msgid "hangar/startBtn/mapsTraining/notReady/header"
 msgstr "Недаступна"
 
+msgid "hangar/startBtn/noTicket/body"
+msgstr "Для ўваходу ў бой патрэбны ключ"
+
 msgid "hangar/startBtn/notSupportFor11lvl/body"
 msgstr "Выбраная машына часова недаступная для ўступлення ў бой"
 
@@ -5665,6 +5676,13 @@ msgstr "Немагчыма ўступіць у бой"
 
 msgid "hangar/startBtn/preview/body"
 msgstr "Каб уступіць у бой, вярніцеся ў Гараж і выберыце машыну."
+
+msgid "hangar/startBtn/primeNotAvailable/body"
+msgstr ""
+"На гэтым серверы дзейнічае рэжым спынення агню. Перайдзіце на іншы сервер."
+
+msgid "hangar/startBtn/primeNotAvailable/header"
+msgstr "Немагчыма ўступіць у бой"
 
 msgid "hangar/startBtn/squadNotReady/body"
 msgstr "Каб выйсці ў бой, выберыце машыну і пацвердзіце гатоўнасць."
@@ -6060,8 +6078,8 @@ msgstr ""
 
 msgid "header/buttons/crystal/description1"
 msgstr ""
-"Дадатковыя крыніцы: Рангавыя баі, прэміум задачы, Баявы пропуск і розныя "
-"гульнявыя падзеі."
+"Дадатковыя крыніцы: Націск, прэміум задачы, Баявы пропуск і розныя гульнявыя"
+" падзеі."
 
 msgid "header/buttons/crystal/descriptionTitle"
 msgstr "Як атрымаць:"
@@ -6149,7 +6167,7 @@ msgstr "Націсніце, каб перайсці на старонку куп
 msgid "header/buttons/gold/firstDesc"
 msgstr ""
 "Каштоўная ўнутрыгульнявая валюта, якую можна выдаткаваць на самыя розныя "
-"мэты: танкавы прэміум акаўнт, тэхніка, абмен досведу і г.д."
+"мэты: Танкавы прэміум акаўнт, тэхніку, абмен досведу і г.д."
 
 msgid "header/buttons/gold/header"
 msgstr "Золата"
@@ -6160,7 +6178,7 @@ msgstr "Золата"
 msgid "header/buttons/goldAlternative/clickDesc"
 msgstr ""
 "Каштоўная ўнутрыгульнявая валюта, якую можна выдаткаваць на самыя розныя "
-"мэты: танкавы прэміум акаўнт, тэхніка, абмен досведу і г.д."
+"мэты: Танкавы прэміум акаўнт, тэхніку, абмен досведу і г.д."
 
 msgid "header/buttons/hangar/body"
 msgstr "Выбраць тэхніку і ўступіць у бой."
@@ -8708,6 +8726,60 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_BP17_5/label"
 msgstr "Баявы пропуск, «Вакол свету»"
 
+msgid "notrecruitedtankman/tankmen_BP18_1/desc"
+msgstr ""
+"«Лятучы галандзец» амаль у літаральным сэнсе слова: былы палубны лётчык і "
+"спецыяліст у аэрафотаздымцы, чые навыкі абыходжання з адчувальнай оптыкай і "
+"рознымі вымяральнымі прыладамі аказаліся незаменным у авантурных вылазках "
+"Альянсу на той бок рэальнасці. Пакінуў авіяцыю праз незразумела адкуль "
+"узніклую боязь вышыні."
+
+msgid "notrecruitedtankman/tankmen_BP18_1/label"
+msgstr "Баявы пропуск, «Адваротны бок»"
+
+msgid "notrecruitedtankman/tankmen_BP18_2/desc"
+msgstr ""
+"Сын палкоўніка Эдвіна Барнса — адна з ключавых фігур у Альянсе. Усяляк "
+"спрабуе давесці, што месца камандзіра падраздзялення атрымаў не дзякуючы "
+"пратэкцыі бацькі, а хутчэй насуперак: праца «ў полі», асабліва калі гаворка "
+"ідзе пра экспедыцыі на той бок рэальнасці, звычайна не самая бяспечная і "
+"спакойная служба. Мякка кажучы."
+
+msgid "notrecruitedtankman/tankmen_BP18_2/label"
+msgstr "Баявы пропуск, «Адваротны бок»"
+
+msgid "notrecruitedtankman/tankmen_BP18_3/desc"
+msgstr ""
+"У свае 33 ужо можа лічыцца ветэранам Эн-Кейв, лідзіруючы паводле колькасці "
+"вылазак, атрыманых раненняў і скандалаў з начальствам. Абсалютна не лічыцца "
+"з аўтарытэтам і субардынацыяй, але яе пакорліва зносіць праз невытлумачальны"
+" прыродны магнетызм, што прыцягвае ўдачу. А ўдача для наймітаў — хлеб і "
+"паветра. Сапраўдная белая вядзьмарка. У самым паважлівым сэнсе слова."
+
+msgid "notrecruitedtankman/tankmen_BP18_3/label"
+msgstr "Баявы пропуск, «Адваротны бок»"
+
+msgid "notrecruitedtankman/tankmen_BP18_4/desc"
+msgstr ""
+"Ніколі не перапытаецца, не аспрэчыць загад, не будзе патрабаваць прыбаўкі, "
+"не здрадзіць і не перакінецца да новага працадаўцы. Найлепшы найміт, якога "
+"толькі можна ўявіць. На жаль (або на шчасце), кіналагічнае аддзяленне ў "
+"Альянсе не прыжылося праз дэфіцыт кваліфікаваных інструктараў."
+
+msgid "notrecruitedtankman/tankmen_BP18_4/label"
+msgstr "Баявы пропуск, «Адваротны бок»"
+
+msgid "notrecruitedtankman/tankmen_BP18_5/desc"
+msgstr ""
+"Альфрэд — антрапаморфны робат з аўтаномным кіраваннем, адзін з першых "
+"экзэмпляраў цалкам баявых адзінак (імя нададзена на аснове заводскага "
+"індэкса: Alfa — першая серыя, Red — баявая прашыўка). Выконвае ролю "
+"«тэставага стэнда» з дапамогай шматлікіх датчыкаў, якія мадэлююць чалавечую "
+"рэакцыю на агрэсіўнае асяроддзе і іншыя вонкавыя раздражняльнікі."
+
+msgid "notrecruitedtankman/tankmen_BP18_5/label"
+msgstr "Баявы пропуск, «Адваротны бок»"
+
 msgid "notrecruitedtankman/tankmen_DR2025_1/desc"
 msgstr ""
 "Душа кампаніі — і прытым надзвычай сур'ёзны спецыяліст канструктарскага "
@@ -8984,7 +9056,7 @@ msgid "notrecruitedtankman/tankmen_WT2024_L_Marat/desc"
 msgstr ""
 "Важак зграі. У мінулым — просты найміт, які даслужыўся на «палявых працах» "
 "Альянсу да камандзіра злучэння. Ураўнаважаны і рацыянальны салдат, які "
-"захоўвае паняцце гонару і годнасці. Балансуючы паміж падпарадкаваннем "
+"захаваў паняцці гонару і годнасці. Балансуючы паміж падпарадкаваннем "
 "начальству і ўласнымі паняццямі, нярэдка задае сабе пытанне, а ці туды "
 "наогул ён калісьці павярнуў."
 
@@ -9017,12 +9089,45 @@ msgid "notrecruitedtankman/tankmen_WT2024_Marat/desc"
 msgstr ""
 "Важак зграі. У мінулым — просты найміт, які даслужыўся на «палявых працах» "
 "Альянсу да камандзіра злучэння. Ураўнаважаны і рацыянальны салдат, які "
-"захоўвае паняцце гонару і годнасці. Балансуючы паміж падпарадкаваннем "
+"захаваў паняцці гонару і годнасці. Балансуючы паміж падпарадкаваннем "
 "начальству і ўласнымі паняццямі, нярэдка задае сабе пытанне, а ці туды "
 "наогул ён калісьці павярнуў."
 
 msgid "notrecruitedtankman/tankmen_WT2024_Marat/label"
 msgstr "Падзея «Вафэнтрагер: выклік»"
+
+msgid "notrecruitedtankman/tankmen_WT2025_1/desc"
+msgstr ""
+"Правая рука фон Крыгера, тэхнік і авантурыст да мозга касцей, былы механік "
+"праекта «Сталёвы паляўнічы», цяперашні біёграф і другі пілот Інжынера. Адзін"
+" з нямногіх, хто здольны цярпець паганы характар фон Крыгера, умеючы ўдала і"
+" дасціпна парыраваць любыя шпількі ў свой адрас. Цалкам пазбаўлены інстынкту"
+" самазахавання."
+
+msgid "notrecruitedtankman/tankmen_WT2025_1/label"
+msgstr "Падзея «Вафэнтрагер: рэванш»"
+
+msgid "notrecruitedtankman/tankmen_WT2025_2/desc"
+msgstr ""
+"Маладая штабістка, накіраваная Альянсам у якасці стрымліваючага фактару для "
+"астатніх членаў атрада, каб тыя ў чарговы раз не разнеслі ўсю матэрыяльную "
+"частку да стану металалому. Адзіная, хто ставіцца да атакі Крыгера сур'ёзна,"
+" мяркуючы, што правал гэтай абарончай аперацыі заканамерна стане пачаткам "
+"канца для Альянсу."
+
+msgid "notrecruitedtankman/tankmen_WT2025_2/label"
+msgstr "Падзея «Вафэнтрагер: рэванш»"
+
+msgid "notrecruitedtankman/tankmen_WT2025_3/desc"
+msgstr ""
+"Ідэальны патрон у абойме Альянсу. Адзін з нямногіх, хто ніколі не задае "
+"пытанняў. Спачатку выкананне загада, а потым ужо рэдкія развагі пра яго "
+"слушнасць, пра мараль, пра сэнсы і падтэксты, ды і тое хіба што ў вольныя "
+"хвілі, ніколі не выносячы на агульнае абмеркаванне. Пераканаў сябе, што ўся "
+"адказнасць за рашэнне заўжды на камандзіры."
+
+msgid "notrecruitedtankman/tankmen_WT2025_3/label"
+msgstr "Падзея «Вафэнтрагер: рэванш»"
 
 msgid "notrecruitedtankman/tankmen_bp10_1/desc"
 msgstr ""
@@ -11258,7 +11363,7 @@ msgid "redButton/disabled/vehicle/rentalsIsOver/body"
 msgstr "?empty?"
 
 msgid "redButton/disabled/vehicle/rentalsIsOver/header"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "redButton/disabled/vehicle/roaming/body"
 msgstr "?empty?"
@@ -11555,11 +11660,11 @@ msgstr "Памер індыкатара «Шостае пачуццё»"
 
 msgid "settings/key/highlightLocation/body"
 msgstr ""
-"Дадзеная клавіша выкарыстоўваецца для абазначэння пазіцый, тэхнікі або аб'ектаў.\n"
+"Гэтая клавіша выкарыстоўваецца для абазначэння пазіцый, тэхнікі або аб'ектаў.\n"
 "\n"
 "• НАЦІСНІЦЕ на любую пазіцыю або аб'ект, каб адзначыць яго.\n"
 "• НАЦІСНІЦЕ на маркер, каб адказаць.\n"
-"• НАЦІСНІЦЕ на любую актыўную цэль, каб адмяніць яе.\n"
+"• НАЦІСНІЦЕ на любую актыўную цэль, каб адзначыць яе.\n"
 "• УТРЫМЛІВАЙЦЕ, каб адкрыць меню загадаў."
 
 msgid "settings/key/highlightLocation/title"
@@ -11739,6 +11844,12 @@ msgid "settings_dialog/sound/soundModeInvalid"
 msgstr ""
 "Файлы выбранай агучкі\n"
 "пашкоджаны або адсутнічаюць."
+
+msgid "setttingsDisabledNotification/body"
+msgstr "У гэтым рэжыме частка наладаў недаступная, выберыце іншы рэжым."
+
+msgid "setttingsDisabledNotification/header"
+msgstr "Недаступна"
 
 msgid "shell/basic"
 msgstr "Базавы"
@@ -11983,7 +12094,7 @@ msgid "storage/filter/noResultsBtn/header"
 msgstr "Скінуць фільтр"
 
 msgid "storage/filter/personalReserves/btns/type/comboExp"
-msgstr "Дадатковы вольны досвед і досвед экіпажа за бой"
+msgstr "Дадатковы вольны досвед і досвед экіпажа за бой."
 
 msgid "storage/filter/personalReserves/btns/type/credits"
 msgstr "Дадатковае срэбра за бой."
@@ -11999,9 +12110,6 @@ msgstr "Падкаліберныя снарады"
 
 msgid "storage/filter/shells/btns/type/armor_piercing_fsds"
 msgstr "Бранябойныя апераныя падкаліберныя снарады"
-
-msgid "storage/filter/shells/btns/type/delayed_he"
-msgstr "Асколачна-фугасныя снарады з затрымкай дэтанатара"
 
 msgid "storage/filter/shells/btns/type/flame"
 msgstr "Агнямётная сумесь"
@@ -12571,6 +12679,9 @@ msgstr "%(vehicleType)s (%(nation)s)"
 msgid "tankman/section/specialization"
 msgstr "Спецыялізацыя:"
 
+msgid "tankman/skillsTitle"
+msgstr "Перавагі"
+
 msgid "tankman/status/inactiveSkills/header"
 msgstr "Непрыдатныя навыкі"
 
@@ -13067,6 +13178,9 @@ msgstr "Зніжка %(actionPrc)s, колішні кошт: %(oldPrice)s"
 msgid "vehicle/additional/header"
 msgstr "З машынай ідзе:"
 
+msgid "vehicle/afterEventEnd/title"
+msgstr "Усе баі праведзены, машына недаступная."
+
 msgid "vehicle/allModules/header"
 msgstr "Усе даследаваныя модулі"
 
@@ -13164,6 +13278,9 @@ msgstr "Кошт пракату ад"
 msgid "vehicle/multiplied_xp"
 msgstr "Баявы досвед"
 
+msgid "vehicle/overview/title"
+msgstr "Агульнае:"
+
 msgid "vehicle/radioDistance"
 msgstr "<h1>Далёкасць сувязі</h1> <h2>(км)</h2>"
 
@@ -13174,10 +13291,10 @@ msgid "vehicle/rentAvailable"
 msgstr "Пракат машыны даступны"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Засталося баёў да завяршэння арэнды"
+msgstr "Засталося баёў да завяршэння пракату"
 
 msgid "vehicle/rentLeft/days"
-msgstr "Дзён арэнды засталося"
+msgstr "Дзён пракату засталося"
 
 msgid "vehicle/rentLeft/epic/base"
 msgstr "Пракат для Лініі фронту"
@@ -13192,7 +13309,10 @@ msgid "vehicle/rentLeft/epic/minsLeft"
 msgstr "%(timeNum)s хв"
 
 msgid "vehicle/rentLeft/hours"
-msgstr "Гадзін арэнды засталося"
+msgstr "Гадзін пракату засталося"
+
+msgid "vehicle/rentLeft/noTimeLeft"
+msgstr "Усе баі праведзены, машына недаступная."
 
 msgid "vehicle/rentLeft/wins"
 msgstr "Засталося перамог да сканчэння пракату"
@@ -13969,8 +14089,11 @@ msgstr "Няма ў Гаражы"
 msgid "vehicleStatus/operationError/header"
 msgstr "Фінансавая аперацыя недаступная"
 
+msgid "vehicleStatus/rentalBattleIsOver/header"
+msgstr "Пракат завершаны"
+
 msgid "vehicleStatus/rentalIsOver/header"
-msgstr "Арэнда завершана"
+msgstr "Пракат завершаны"
 
 msgid "vehicleStatus/restoreCooldown/days"
 msgstr "Засталося сутак да магчымасці аднавіць: %(time)s"

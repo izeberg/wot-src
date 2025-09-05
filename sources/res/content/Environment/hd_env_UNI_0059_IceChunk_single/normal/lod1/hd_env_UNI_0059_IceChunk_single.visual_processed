@@ -37,10 +37,6 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						blendMask
 						<Texture>content/Environment/hd_env_UNI_0059_IceChunk_single/hd_env_UNI_0059_IceChunk_single_global_blend.png</Texture>
 					</property>
@@ -97,15 +93,15 @@
 						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.319405 0.025941 -0.008077</groupOrigin>
+				<groupOrigin>-0.312723 0.027801 -0.003663</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-4.168124 -0.275761 -5.493208</min>
-		<max>3.538138 0.327643 5.470352</max>
+		<min>-4.166927 -0.269446 -5.493208</min>
+		<max>3.541481 0.325047 5.474514</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>41748</geometrySize>
-	<minUVDensity>0.002328</minUVDensity>
+	<geometrySize>16968</geometrySize>
+	<minUVDensity>0.002495</minUVDensity>
 </root>

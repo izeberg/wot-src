@@ -239,7 +239,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0
@@ -277,10 +277,7 @@
 						dirtMap
 						<Texture>content/Buildings/00_Tiles/dds/Dirt_moss_fountain_01_DM.dds</Texture>
 					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
-					</property>
+					<materialKind>0</materialKind>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_2_fade</identifier>
@@ -304,7 +301,7 @@
 					</property>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_UNI_0031_Pier/hd_env_UNI_0031_Pier_GCM.dds</Texture>
+						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 					<property>
 						metallicAOTile0

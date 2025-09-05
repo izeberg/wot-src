@@ -13,9 +13,26 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s_ramp0Shape.vertices</vertices>
+			<primitive>s_ramp0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_ramp_0</identifier>
+					<materialKind>0</materialKind>
+					<collisionFlags>131</collisionFlags>
+				</material>
+				<groupOrigin>0.012829 -0.075425 -0.149919</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -76,24 +93,15 @@
 						<Texture>content/Buildings/00_Tiles/Dirt_Plaster_06_DM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.112985 -0.000000</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<materialKind>0</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>0.012829 -0.075425 -0.149919</groupOrigin>
+				<groupOrigin>0.000000 -0.026909 -0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
 		<min>-9.269812 -0.434804 -12.929402</min>
-		<max>9.295470 0.308288 12.629564</max>
+		<max>9.295470 0.341006 12.629564</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>13348</geometrySize>
-	<minUVDensity>0.001728</minUVDensity>
+	<geometrySize>20726</geometrySize>
+	<minUVDensity>0.001786</minUVDensity>
 </root>

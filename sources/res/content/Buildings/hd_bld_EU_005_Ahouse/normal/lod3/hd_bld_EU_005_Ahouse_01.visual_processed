@@ -18,6 +18,15 @@
 			<primitiveGroup>
 				0
 				<material>
+					<identifier>s_wall_0</identifier>
+					<collisionFlags>144</collisionFlags>
+					<materialKind>0</materialKind>
+				</material>
+				<groupOrigin>-0.305792 1.784469 -9.440695</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<collisionFlags>0</collisionFlags>
@@ -54,15 +63,6 @@
 				<groupOrigin>-0.326496 8.468406 -1.662111</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_wall_0</identifier>
-					<collisionFlags>144</collisionFlags>
-					<materialKind>0</materialKind>
-				</material>
-				<groupOrigin>-0.305792 1.784469 -9.440695</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
 				2
 				<material>
 					<identifier>s_ramp_0</identifier>
@@ -78,6 +78,6 @@
 		<max>11.033532 17.935524 10.173223</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>4836</geometrySize>
+	<geometrySize>4772</geometrySize>
 	<minUVDensity>0.000107</minUVDensity>
 </root>

@@ -48,10 +48,6 @@
 						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_GMM.dds</Texture>
-					</property>
-					<property>
 						enableLighting
 						<Bool>true</Bool>
 					</property>
@@ -82,10 +78,6 @@
 					<property>
 						phase_UV_Speed_Scale
 						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						phaseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_GMM.dds</Texture>
 					</property>
 					<property>
 						rampFreshnelMap
@@ -130,10 +122,6 @@
 						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_GMM.dds</Texture>
-					</property>
-					<property>
 						enableLighting
 						<Bool>true</Bool>
 					</property>
@@ -164,10 +152,6 @@
 					<property>
 						phase_UV_Speed_Scale
 						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
-					</property>
-					<property>
-						phaseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_GMM.dds</Texture>
 					</property>
 					<property>
 						rampFreshnelMap

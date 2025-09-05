@@ -298,9 +298,10 @@
 						normalMap
 						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_ANM.dds</Texture>
 					</property>
+					<materialKind>0</materialKind>
 					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<fade_material>
@@ -367,9 +368,10 @@
 						normalMap
 						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_ANM.dds</Texture>
 					</property>
+					<materialKind>0</materialKind>
 					<property>
-						g_enableTerrainBlending
-						<Bool>false</Bool>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<fade_material>

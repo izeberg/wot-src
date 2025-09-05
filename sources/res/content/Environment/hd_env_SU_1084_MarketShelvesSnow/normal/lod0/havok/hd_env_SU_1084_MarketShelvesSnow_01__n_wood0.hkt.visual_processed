@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>n43</identifier>
+			<identifier>n13</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -18,7 +18,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n42</identifier>
+			<identifier>n14</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -27,52 +27,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n3_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n34</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n35</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n40</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n41</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n4_</identifier>
+			<identifier>n15</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -90,7 +45,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n22</identifier>
+			<identifier>n17</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -99,7 +54,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n23</identifier>
+			<identifier>n12</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -108,7 +63,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n24</identifier>
+			<identifier>n1|Main</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -117,7 +72,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n25</identifier>
+			<identifier>polySurface12</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -126,7 +81,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n26</identifier>
+			<identifier>polySurface13</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -135,7 +90,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n27</identifier>
+			<identifier>n3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -144,223 +99,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n28</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n29</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n30</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n12_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n52</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_8</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n54_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_5</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_6</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_7</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n14_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_2_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_2_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_5</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_6</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n15_</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n10</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n9</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n6</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>n8</identifier>
+			<identifier>TableDesk</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -378,7 +117,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n14_12</identifier>
+			<identifier>n8</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -387,7 +126,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n14_13</identifier>
+			<identifier>n9</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -396,7 +135,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere1</identifier>
+			<identifier>n10</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -405,7 +144,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere2</identifier>
+			<identifier>n5</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -414,7 +153,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere3</identifier>
+			<identifier>n6</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -423,7 +162,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere4</identifier>
+			<identifier>n1|Main2</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -432,7 +171,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere5</identifier>
+			<identifier>polySurface28</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -441,7 +180,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere6</identifier>
+			<identifier>polySurface20</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -450,7 +189,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere7</identifier>
+			<identifier>polySurface29</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -459,7 +198,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere8</identifier>
+			<identifier>polySurface26</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -468,7 +207,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere9</identifier>
+			<identifier>polySurface27</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -477,7 +216,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere10</identifier>
+			<identifier>polySurface25</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -486,7 +225,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere11</identifier>
+			<identifier>box3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -495,7 +234,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere12</identifier>
+			<identifier>polySurface7</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -504,7 +243,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere13</identifier>
+			<identifier>polySurface6</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -513,7 +252,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere14</identifier>
+			<identifier>polySurface4</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -522,7 +261,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere15</identifier>
+			<identifier>polySurface5</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -531,7 +270,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere16</identifier>
+			<identifier>box01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -540,7 +279,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere17</identifier>
+			<identifier>Box3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -549,7 +288,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere18</identifier>
+			<identifier>Knife</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -558,7 +297,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere19</identifier>
+			<identifier>Desk</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -567,7 +306,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>pSphere20</identifier>
+			<identifier>Fish3</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -576,7 +315,16 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>n5_</identifier>
+			<identifier>Fish2</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+		</node>
+		<node>
+			<identifier>Fish1</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -587,74 +335,139 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>n14_13</node>
-		<node>n54_</node>
-		<node>n14_8</node>
-		<node>n14_2</node>
-		<node>n14_1</node>
-		<node>n30</node>
-		<node>n29</node>
-		<node>n52</node>
-		<node>n12_</node>
-		<node>n15_1</node>
-		<node>n14_</node>
-		<node>n15_2_2</node>
-		<node>n15_2_1</node>
-		<node>n14_5</node>
-		<node>n14_3</node>
-		<node>n14_7</node>
-		<node>n14_6</node>
-		<node>n40</node>
-		<node>n35</node>
-		<node>n4_</node>
-		<node>n41</node>
-		<node>n42</node>
-		<node>n43</node>
+		<node>polySurface27</node>
+		<node>n7</node>
+		<node>n8</node>
+		<node>n3</node>
+		<node>TableDesk</node>
+		<node>n9</node>
+		<node>n1|Main2</node>
+		<node>polySurface28</node>
+		<node>n10</node>
+		<node>n5</node>
+		<node>n6</node>
+		<node>n16</node>
+		<node>n17</node>
+		<node>n12</node>
+		<node>n13</node>
+		<node>n14</node>
+		<node>n15</node>
+		<node>polySurface12</node>
+		<node>polySurface13</node>
+		<node>n1|Main</node>
+		<node>polySurface6</node>
+		<node>polySurface7</node>
+		<node>box3</node>
 		<geometry>
 			<vertices>part0a.vertices</vertices>
+			<stream>part0a.uv2</stream>
 			<primitive>part0a.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>n_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_blend.png</Texture>
 					</property>
 					<property>
-						g_enableAO
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.370000 0.200000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.443137 0.392157 0.301961 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.615686 0.615686 0.615686 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
 						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
 					</property>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_blend.png</Texture>
 					</property>
 					<property>
-						g_enableAO
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.370000 0.200000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.443137 0.392157 0.301961 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.615686 0.615686 0.615686 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
 						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
 					</property>
 					<property>
 						texRandom
@@ -669,80 +482,129 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.019055 0.649308 0.473529</groupOrigin>
+				<groupOrigin>-0.019055 0.485691 0.473529</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>pSphere1</node>
-		<node>n34</node>
-		<node>n3_</node>
-		<node>n26</node>
-		<node>n25</node>
-		<node>n28</node>
-		<node>n27</node>
-		<node>n22</node>
-		<node>n16</node>
-		<node>n24</node>
-		<node>n23</node>
-		<node>pSphere11</node>
-		<node>pSphere10</node>
-		<node>pSphere13</node>
-		<node>pSphere12</node>
-		<node>pSphere7</node>
-		<node>pSphere6</node>
-		<node>pSphere9</node>
-		<node>pSphere8</node>
-		<node>pSphere19</node>
-		<node>pSphere18</node>
-		<node>n5_</node>
-		<node>pSphere20</node>
+		<node>polySurface25</node>
+		<node>polySurface5</node>
+		<node>box01</node>
+		<node>polySurface4</node>
+		<node>polySurface26</node>
+		<node>polySurface29</node>
+		<node>polySurface20</node>
 		<geometry>
 			<vertices>part0b.vertices</vertices>
+			<stream>part0b.uv2</stream>
 			<primitive>part0b.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>n_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_blend.png</Texture>
 					</property>
 					<property>
-						g_enableAO
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.370000 0.200000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.443137 0.392157 0.301961 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.615686 0.615686 0.615686 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
 						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
 					</property>
 				</material>
 				<fade_material>
 					<identifier>n_wood0_fade</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_blend.png</Texture>
 					</property>
 					<property>
-						g_enableAO
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GCM.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.370000 0.200000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_tile0Tint
+						<Vector4>0.443137 0.392157 0.301961 1.000000</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>0.615686 0.615686 0.615686 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTerrainBlending
 						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
 					</property>
 					<property>
 						texRandom
@@ -757,75 +619,64 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.030489 0.651882 0.623068</groupOrigin>
+				<groupOrigin>0.365095 0.259310 0.729833</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>n7</node>
-		<node>pSphere15</node>
-		<node>pSphere14</node>
-		<node>pSphere17</node>
-		<node>pSphere16</node>
-		<node>n9</node>
-		<node>n10</node>
-		<node>n8</node>
-		<node>n6</node>
-		<node>n15_5</node>
-		<node>n15_3</node>
-		<node>n15_</node>
-		<node>n15_6</node>
-		<node>pSphere3</node>
-		<node>pSphere2</node>
-		<node>pSphere5</node>
-		<node>pSphere4</node>
-		<node>n14_12</node>
+		<node>Desk</node>
+		<node>Fish3</node>
+		<node>Fish2</node>
+		<node>Fish1</node>
+		<node>Box3</node>
+		<node>Knife</node>
 		<geometry>
-			<vertices>part0c.vertices</vertices>
-			<primitive>part0c.indices</primitive>
+			<vertices>part1a.vertices</vertices>
+			<stream>part1a.uv2</stream>
+			<primitive>part1a.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>n_wood0</identifier>
+					<identifier>n_wood1</identifier>
 					<fx>shaders/std_effects/PBS_ext_rigid_skinned.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_AM.dds</Texture>
+					</property>
+					<property>
 						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_ANM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_enableAO
+						g_enableTerrainBlending
 						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
 					</property>
 				</material>
 				<fade_material>
-					<identifier>n_wood0_fade</identifier>
+					<identifier>n_wood1_fade</identifier>
 					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_AM.dds</Texture>
+					</property>
+					<property>
 						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_ANM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GMM.dds</Texture>
 					</property>
 					<property>
-						g_enableAO
+						g_enableTerrainBlending
 						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
 					</property>
 					<property>
 						texRandom
@@ -840,14 +691,14 @@
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>-0.058662 0.599901 -0.014261</groupOrigin>
+				<groupOrigin>0.211200 1.124702 -0.015125</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.487916 0.021524 -0.504239</min>
+		<min>-1.487916 -0.036240 -0.504239</min>
 		<max>1.449805 1.277091 1.451297</max>
 	</boundingBox>
-	<geometrySize>147558</geometrySize>
-	<minUVDensity>0.011270</minUVDensity>
+	<geometrySize>160960</geometrySize>
+	<minUVDensity>0.069974</minUVDensity>
 </root>

@@ -123,6 +123,12 @@ package
       
       public static const PLAYER_ERRORS_EQUIPMENT_POI_UNAVAILABLE:String = "#ingame_gui:player_errors/equipment/poi/unavailable";
       
+      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_HEALTHATFULLHP:String = "#ingame_gui:player_messages/equipment/wtEvent/healthAtFullHP";
+      
+      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_HUNTERABILITIESDISABLED:String = "#ingame_gui:player_messages/equipment/wtEvent/hunterAbilitiesDisabled";
+      
+      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_NOACTIVESHIELDONBOSS:String = "#ingame_gui:player_messages/equipment/wtEvent/noActiveShieldOnBoss";
+      
       public static const PLAYER_MESSAGES_DEVICE_CRITICAL_AT_SHOT:String = "#ingame_gui:player_messages/DEVICE_CRITICAL_AT_SHOT";
       
       public static const PLAYER_MESSAGES_DEVICE_DESTROYED_AT_SHOT:String = "#ingame_gui:player_messages/DEVICE_DESTROYED_AT_SHOT";
@@ -493,8 +499,6 @@ package
       
       public static const SHELLS_KINDS_ARMOR_PIERCING:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING";
       
-      public static const SHELLS_KINDS_DELAYED_HE:String = "#ingame_gui:shells_kinds/DELAYED_HE";
-      
       public static const SHELLS_KINDS_ARMOR_PIERCING_HE:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_HE";
       
       public static const SHELLS_KINDS_ARMOR_PIERCING_CR:String = "#ingame_gui:shells_kinds/ARMOR_PIERCING_CR";
@@ -514,8 +518,6 @@ package
       public static const SHELLS_KINDS_PARAMS_SHOTSPEED:String = "#ingame_gui:shells_kinds/params/shotSpeed";
       
       public static const SHELLS_KINDS_PARAMS_EXPLOSIONRADIUS:String = "#ingame_gui:shells_kinds/params/explosionRadius";
-      
-      public static const SHELLS_KINDS_PARAMS_EXPLOSIONDELAY:String = "#ingame_gui:shells_kinds/params/explosionDelay";
       
       public static const SHELLS_KINDS_PARAMS_STUNDURATION:String = "#ingame_gui:shells_kinds/params/stunDuration";
       
@@ -1297,13 +1299,15 @@ package
       
       public static const EFFICIENCYRIBBONS_ARTILLERYDMG:String = "#ingame_gui:efficiencyRibbons/ArtilleryDmg";
       
+      public static const EFFICIENCYRIBBONS_HEALTHADDED:String = "#ingame_gui:efficiencyRibbons/healthAdded";
+      
+      public static const EFFICIENCYRIBBONS_WTRECEIVEDCIRCUITOVERLOAD:String = "#ingame_gui:efficiencyRibbons/wtReceivedCircuitOverload";
+      
       public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING";
       
       public static const DAMAGELOG_SHELLTYPE_HIGH_EXPLOSIVE:String = "#ingame_gui:damageLog/shellType/HIGH_EXPLOSIVE";
       
       public static const DAMAGELOG_SHELLTYPE_FLAME:String = "#ingame_gui:damageLog/shellType/FLAME";
-      
-      public static const DAMAGELOG_SHELLTYPE_DELAYED_HE:String = "#ingame_gui:damageLog/shellType/DELAYED_HE";
       
       public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING_HE:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING_HE";
       
@@ -2090,6 +2094,14 @@ package
       public static const PLAYER_ERRORS_THERMALVISION_ALREADYACTIVATED:String = "#ingame_gui:player_errors/thermalVision/alreadyActivated";
       
       public static const PLAYER_ERRORS_THERMALVISION_OVERTURNED:String = "#ingame_gui:player_errors/thermalVision/overturned";
+      
+      public static const WT_VEHICLE_MESSAGES_INCREASE_PLASMA_COUNT:String = "#ingame_gui:wt_vehicle_messages/INCREASE_PLASMA_COUNT";
+      
+      public static const WT_VEHICLE_MESSAGES_DECREASE_PLASMA_COUNT:String = "#ingame_gui:wt_vehicle_messages/DECREASE_PLASMA_COUNT";
+      
+      public static const WT_VEHICLE_MESSAGES_STUN_AREA_APPLIED:String = "#ingame_gui:wt_vehicle_messages/STUN_AREA_APPLIED";
+      
+      public static const WT_VEHICLE_MESSAGES_STUN_AREA_STOPPED:String = "#ingame_gui:wt_vehicle_messages/STUN_AREA_STOPPED";
        
       
       public function INGAME_GUI()

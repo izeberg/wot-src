@@ -119,5 +119,9 @@ package net.wg.infrastructure.base.meta
       function as_setOverheatStatus(param1:Boolean) : void;
       
       function as_setOverheatState(param1:Number) : void;
+      
+      function as_showPlasmaIndicator(param1:Number, param2:Number, param3:String) : void;
+      
+      function as_showExplosiveShotIndicator(param1:Boolean) : void;
    }
 }

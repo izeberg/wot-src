@@ -10,33 +10,27 @@
 		</transform>
 	</node>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd4.vertices</vertices>
+			<primitive>s_nd4.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd5</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>112</materialKind>
+					<identifier>s_nd4</identifier>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BAM.dds</Texture>
 					</property>
 					<property>
-						doubleSided
-						<Bool>true</Bool>
+						g_emissionStrength
+						<Vector4>3.000000 3.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -47,26 +41,33 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BANM.dds</Texture>
 					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.980392 0.760784 0.486275 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>13.567156 30.991701 -0.093656</groupOrigin>
+				<groupOrigin>13.195933 29.676611 -0.063377</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
-				1
+				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<materialKind>111</materialKind>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<property>
 						diffuseMap
 						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BAM.dds</Texture>
 					</property>
 					<property>
 						g_enableAO
-						<Bool>true</Bool>
-					</property>
-					<property>
-						g_enableTerrainBlending
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -77,16 +78,23 @@
 						normalMap
 						<Texture>content/Buildings/hd_bld_SU_0084_Cathedral/hd_bld_SU_0084_Cathedral_BANM.dds</Texture>
 					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>3.000000 3.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.980392 0.760784 0.486275 0.000000</Vector4>
+					</property>
 				</material>
-				<groupOrigin>13.148637 15.430788 0.111931</groupOrigin>
+				<groupOrigin>13.148639 15.430792 0.111931</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-31.043034 -1.499958 -15.898758</min>
-		<max>57.340305 59.122360 16.122620</max>
+		<min>-31.043036 -1.499955 -15.898760</min>
+		<max>57.340313 59.122375 16.122622</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>199658</geometrySize>
-	<minUVDensity>0.000004</minUVDensity>
+	<geometrySize>441098</geometrySize>
+	<minUVDensity>0.000005</minUVDensity>
 </root>

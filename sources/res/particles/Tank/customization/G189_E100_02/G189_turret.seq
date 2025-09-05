@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>20.000002</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>turret</name>
+		<type>model</type>
+		<resource>particles/content_deferred/GFX_models/tank_customization/G189_E100_02/G189_bear_turret.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.996078 0.776471 0.011765 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.170000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.190000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.996078 0.776471 0.011765 0.050000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.190000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.190000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.996078 0.776471 0.011765 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.190000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.160000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.000001</startTime>
+				<value>0.996078 0.776471 0.011765 0.200000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.160000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.160000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.996078 0.776471 0.011765 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.160000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.140000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.996078 0.776471 0.011765 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.170000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.190000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>5.000000</startTime>
+				<value>0.996078 0.776471 0.011765 0.050000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.190000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.190000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>10.000001</startTime>
+				<value>0.996078 0.776471 0.011765 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.190000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.160000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>15.000001</startTime>
+				<value>0.996078 0.776471 0.011765 0.200000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.160000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.160000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.000002</startTime>
+				<value>0.996078 0.776471 0.011765 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.160000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.130000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

@@ -27,12 +27,16 @@
 						<Texture>content/Railway/hd_rw_SU_1002_TramRails/hd_rw_SU_1002_TramRails_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Railway/hd_rw_SU_1002_TramRails/hd_rw_SU_1002_TramRails_ANM.dds</Texture>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>content/Railway/hd_rw_SU_1002_TramRails/hd_rw_SU_1002_TramRails_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Railway/hd_rw_SU_1002_TramRails/hd_rw_SU_1002_TramRails_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.063837 0.089216 1.497041</groupOrigin>
@@ -44,6 +48,6 @@
 		<max>0.999282 0.181220 3.000892</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>912</geometrySize>
-	<minUVDensity>0.156179</minUVDensity>
+	<geometrySize>1800</geometrySize>
+	<minUVDensity>0.124072</minUVDensity>
 </root>

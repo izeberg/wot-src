@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_env_EUNW_002_MarketShelves_01</identifier>
+			<identifier>hd_env_SU_1084_MarketShelvesSnow_01</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -19,10 +19,10 @@
 			<node>
 				<identifier>HP_module0</identifier>
 				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
+					<row0>0.000000 0.000000 -1.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
+					<row2>1.000000 0.000000 0.000000</row2>
+					<row3>0.003508 0.020473 0.001207</row3>
 				</transform>
 			</node>
 		</node>
@@ -32,51 +32,129 @@
 		<node>Scene Root</node>
 		<geometry>
 			<vertices>vertices</vertices>
-			<stream>colour</stream>
+			<stream>uv2</stream>
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>d_wood0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
 					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.000000 0.500000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.031654 0.039998 0.225947</groupOrigin>
+				<groupOrigin>0.031654 0.049413 0.225947</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>n_wood0</identifier>
+					<identifier>n_wood1</identifier>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
-					<collisionFlags>128</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>73</materialKind>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_ANM.dds</Texture>
+						diffuseMap
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GMM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_AM.dds</Texture>
+						normalMap
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.019055 0.620425 0.473529</groupOrigin>
+				<groupOrigin>-0.106538 1.124702 -0.015125</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>n_wood0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<collisionFlags>128</collisionFlags>
+					<materialKind>73</materialKind>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_SU_1084_MarketShelvesSnow/hd_env_SU_1084_MarketShelvesSnow_01_GCM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.100000 0.000000 0.500000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Wood_09_planks_03_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Snow_02_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.019055 0.481982 0.473529</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -84,6 +162,7 @@
 		<min>-1.487916 -0.036240 -0.512551</min>
 		<max>1.449805 1.277091 1.451297</max>
 	</boundingBox>
-	<geometrySize>41436</geometrySize>
-	<minUVDensity>0.004759</minUVDensity>
+	<customBsp>true</customBsp>
+	<geometrySize>45308</geometrySize>
+	<minUVDensity>0.172464</minUVDensity>
 </root>

@@ -32,6 +32,13 @@ msgstr "Ранговые бои начнутся %(date)s"
 msgid "event/paused"
 msgstr "Ранговые бои временно недоступны"
 
+msgid "event/wt/collection"
+msgstr ""
+"Прогрессия: %(whiteSpanish_Open)s%(current)d%(whiteSpanish_Close)s/%(total)d"
+
+msgid "event/wt/tickets"
+msgstr "Ключи:"
+
 msgid "hint/showProgression"
 msgstr "ПРОСМОТР В РЕЖИМЕ ПРОГРЕССИИ"
 
@@ -89,10 +96,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Событие «Каменный медведь» завершено."
+msgstr "Событие «Огненный тигр» завершено."
 
 msgid "mode/comp7/seasonStart"
-msgstr "Событие «Каменный медведь» начнётся %(date)s."
+msgstr "Событие «Огненный тигр» начнётся %(date)s."
 
 msgid "mode/comp7/warning"
 msgstr "Ранговая неактивность"
@@ -308,6 +315,15 @@ msgstr "Играя в режиме, вы можете получить уник�
 
 msgid "reward/crew/name"
 msgstr "Члены экипажа"
+
+msgid "reward/deluxeEquipment/description"
+msgstr ""
+"По сравнению со штатным оборудованием, установленным в слот с подходящей "
+"категорией, усовершенствованное оборудование эффективнее и даёт больше "
+"бонусов."
+
+msgid "reward/deluxeEquipment/name"
+msgstr "Усовершенствованное оборудование"
 
 msgid "reward/experience/description"
 msgstr "Награда определяется по показателю вашей эффективности в бою"

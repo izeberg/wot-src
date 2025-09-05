@@ -3,8 +3,8 @@
 	<parent>content/Buildings/hd_bld_SU_0115_THouse/normal/lod2/hd_bld_SU_0115_THouse_09</parent>
 	<extent>150.000000</extent>
 	<visibilityBox>
-		<min>-3.628757 -1.135506 -4.655220</min>
-		<max>4.078544 15.361577 7.632934</max>
+		<min>-3.628757 -0.981950 -4.655219</min>
+		<max>4.078544 15.361577 7.632936</max>
 	</visibilityBox>
-	<nodefullVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod1/hd_bld_SU_0115_THouse_09</nodefullVisual>
+	<nodelessVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod1/hd_bld_SU_0115_THouse_09</nodelessVisual>
 </root>

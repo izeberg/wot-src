@@ -42,8 +42,12 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
 				</material>
-				<groupOrigin>-0.000000 5.193786 0.221095</groupOrigin>
+				<groupOrigin>-0.000000 5.193788 0.221095</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -52,6 +56,6 @@
 		<max>3.589344 14.249687 15.380223</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>49004</geometrySize>
-	<minUVDensity>0.000112</minUVDensity>
+	<geometrySize>51976</geometrySize>
+	<minUVDensity>0.000153</minUVDensity>
 </root>

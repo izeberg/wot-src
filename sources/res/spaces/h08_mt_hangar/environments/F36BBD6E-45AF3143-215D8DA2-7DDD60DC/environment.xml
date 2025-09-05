@@ -215,8 +215,8 @@
 			<angleShadow>77.250000</angleShadow>
 		</forward>
 		<deferred>
-			<angle>13.000000</angle>
-			<angleZ>294.000000</angleZ>
+			<angle>33.000000</angle>
+			<angleZ>110.349998</angleZ>
 		</deferred>
 		<sunScale>0.000000</sunScale>
 		<sunlightAngularSize>0.000000</sunlightAngularSize>
@@ -272,5 +272,29 @@
 		<PsIndirLightMultForward>1.000000</PsIndirLightMultForward>
 		<PsIllumMultDeferred>1.000000</PsIllumMultDeferred>
 		<PsIllumMultForward>1.000000</PsIllumMultForward>
+		<PsRibbonMultDeferred>1.000000</PsRibbonMultDeferred>
+		<PsRibbonMultForward>1.000000</PsRibbonMultForward>
 	</VFXLighting>
+	<WeatherDependentSettings>
+		<environment_dependent_emission>
+			<enabled>false</enabled>
+		</environment_dependent_emission>
+		<environment_dependent_lights>
+			<enabled>false</enabled>
+		</environment_dependent_lights>
+	</WeatherDependentSettings>
+	<AlbedoScaleSettings>
+		<deferred>
+			<enable>false</enable>
+			<baseColor>0.000000 0.000000 0.000000</baseColor>
+			<lerpCoeff>1.000000</lerpCoeff>
+			<contrast>1.000000</contrast>
+		</deferred>
+		<forward>
+			<enable>false</enable>
+			<baseColor>0.000000 0.000000 0.000000</baseColor>
+			<lerpCoeff>1.000000</lerpCoeff>
+			<contrast>1.000000</contrast>
+		</forward>
+	</AlbedoScaleSettings>
 </root>

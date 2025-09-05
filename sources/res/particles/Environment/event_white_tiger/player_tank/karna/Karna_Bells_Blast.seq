@@ -1,0 +1,962 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.400000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Beam</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Beam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000 191.364990 20.000000</value>
+				<inTangent>0.000000 -1913.649780 0.000000</inTangent>
+				<outTangent>0.000000 -1913.649780 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>20.000000 0.000000 20.000000</value>
+				<inTangent>-0.000000 -1913.649780 -0.000000</inTangent>
+				<outTangent>-0.000000 -1913.649780 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>9.999999 0.000000 9.999999</inTangent>
+				<outTangent>20.000002 10.000001 20.000002</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.100000</startTime>
+				<value>2.000000 1.000000 2.000000</value>
+				<inTangent>20.000000 10.000000 20.000000</inTangent>
+				<outTangent>14.999999 0.000000 14.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>7.000000 1.000000 7.000000</value>
+				<inTangent>14.999999 -0.000000 14.999999</inTangent>
+				<outTangent>0.374425 -0.000000 0.110969</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Beam</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.019608 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -2.307694</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.307694</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1.000000 0.019608 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.307694</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -2.307694</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>BeamGlow</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.000000 0.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.153846</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.153846</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.153846</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.153846</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Dome</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Dome.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000 0.000000 20.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>1.714286 1.714286 1.714286</inTangent>
+				<outTangent>1.714286 1.714286 1.714286</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>1.714286 1.714286 1.714286</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.800000 0.800000 0.800000</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.160784 0.160784 5.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -8.571428</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.571428</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>1.000000 0.160784 0.160784 3.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -8.785713</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.785713</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1.000000 0.160784 0.160784 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -8.999999</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -8.999999</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.007843 0.007843 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.000003</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.007843 0.007843 2.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 3.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.571403</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.566667</startTime>
+				<value>1.000000 0.007843 0.007843 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -8.571403</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -8.571403</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Impact</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Impact.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>202.000000 0.000000 20.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Impact</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.000000 0.007843 0.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.500002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.500002</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.333333</startTime>
+				<value>1.000000 0.007843 0.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 1.500002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.499999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.007843 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.499999</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.499999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>Impact</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>1.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>0.500000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.500000 0.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.666667 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>1.000000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.666667 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.666667 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Blast_dust</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/karna_bells_blast.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>20.000000 3.000000 20.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999998</inTangent>
+				<outTangent>29.999998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.033333</startTime>
+				<value>1.000000</value>
+				<inTangent>0.000000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.066667</startTime>
+				<value>0.000000</value>
+				<inTangent>-29.999998</inTangent>
+				<outTangent>-29.999998</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Beam_1</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Beam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>8.000000 191.364990 -30.000000</value>
+				<inTangent>0.000000 -1913.650024 0.000000</inTangent>
+				<outTangent>0.000000 -1913.650024 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>8.000000 0.000000 -30.000000</value>
+				<inTangent>-0.000000 -1913.650024 -0.000000</inTangent>
+				<outTangent>-0.000000 -1913.650024 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>9.999999 0.000000 9.999999</inTangent>
+				<outTangent>19.999998 9.999999 19.999998</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.300000</startTime>
+				<value>2.000000 1.000000 2.000000</value>
+				<inTangent>20.000002 10.000001 20.000002</inTangent>
+				<outTangent>11.999999 0.000000 11.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>6.000000 1.000000 6.000000</value>
+				<inTangent>11.999999 -0.000000 11.999999</inTangent>
+				<outTangent>0.374425 -0.000000 0.110969</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Beam</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.019608 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -2.307694</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.307694</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>1.000000 0.019608 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.307694</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -2.307694</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>BeamGlow</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.000000 0.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.153847</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.153847</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>1.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.153847</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.153847</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Dome_1</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Dome.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>8.000000 0.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>1.714286 1.714286 1.714286</inTangent>
+				<outTangent>1.714286 1.714286 1.714286</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>1.714286 1.714286 1.714286</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.933333</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.800000 0.800000 0.800000</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.160784 0.160784 5.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -8.571441</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.571441</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>1.000000 0.160784 0.160784 3.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -8.571441</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.999982</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.766667</startTime>
+				<value>1.000000 0.160784 0.160784 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -8.999982</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -8.999982</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.007843 0.007843 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.000003</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000 0.007843 0.007843 2.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 3.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.571404</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.766667</startTime>
+				<value>1.000000 0.007843 0.007843 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -8.571404</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -8.571404</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Impact_1</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Impact.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>8.000000 0.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Impact</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000 0.007843 0.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.500000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.533333</startTime>
+				<value>1.000000 0.007843 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>1.000000 0.007843 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.500000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.500000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>Impact</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>0.000000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>1.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>0.500000 0.000000 1.000000 0.000000</value>
+				<inTangent>0.500000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.500000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>0.500000 0.000000 1.000000 0.000000</value>
+				<inTangent>0.833333 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.833333 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.200000</startTime>
+				<value>1.000000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.666667 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.666667 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Blast_dust_1</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/karna_bells_blast.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>8.000000 3.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.166667</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999989</inTangent>
+				<outTangent>29.999989</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.200000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000007</inTangent>
+				<outTangent>-0.000007</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.233333</startTime>
+				<value>0.000000</value>
+				<inTangent>-30.000002</inTangent>
+				<outTangent>-30.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Beam_2</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Beam.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>-30.000000 191.364990 8.000000</value>
+				<inTangent>0.000000 -1913.650635 0.000000</inTangent>
+				<outTangent>0.000000 -1913.650635 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>-30.000000 0.000000 8.000000</value>
+				<inTangent>-0.000000 -1913.650635 -0.000000</inTangent>
+				<outTangent>-0.000000 -1913.650635 -0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>9.999999 0.000000 9.999999</inTangent>
+				<outTangent>20.000002 10.000001 20.000002</outTangent>
+				<tangentMode>514</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.500000</startTime>
+				<value>2.000000 1.000000 2.000000</value>
+				<inTangent>20.000008 10.000004 20.000008</inTangent>
+				<outTangent>14.999999 0.000000 14.999999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>7.000000 1.000000 7.000000</value>
+				<inTangent>14.999999 -0.000000 14.999999</inTangent>
+				<outTangent>0.374425 -0.000000 0.110969</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Beam</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 0.019608 0.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -0.666667</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -0.666667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.700000</startTime>
+				<value>1.000000 0.019608 0.000000 0.800000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.666667</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -6.000014</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>1.000000 0.019608 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -6.000014</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -6.000014</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>BeamGlow</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 0.000000 0.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 -1.153847</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.153847</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.833333</startTime>
+				<value>1.000000 0.000000 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.153847</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.153847</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Dome_2</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Dome.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>-30.000000 0.000000 8.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>1.714286 1.714286 1.714286</inTangent>
+				<outTangent>1.714286 1.714286 1.714286</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.400000 0.400000 0.400000</value>
+				<inTangent>1.714286 1.714286 1.714286</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.133333</startTime>
+				<value>0.800000 0.800000 0.800000</value>
+				<inTangent>0.800000 0.800000 0.800000</inTangent>
+				<outTangent>0.800000 0.800000 0.800000</outTangent>
+				<tangentMode>1</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd0</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 0.160784 0.160784 5.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -8.571428</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.571428</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>1.000000 0.160784 0.160784 3.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 -8.785715</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.785715</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>1.000000 0.160784 0.160784 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -9.000001</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -9.000001</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>s_nd1</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 0.007843 0.007843 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 3.000003</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>1.000000 0.007843 0.007843 2.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 3.000003</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -8.571404</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.966667</startTime>
+				<value>1.000000 0.007843 0.007843 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -8.571404</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -8.571404</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Impact_2</name>
+		<type>model</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/Karna_Bells_Blast_Impact.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>-30.000000 0.000000 8.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>scale</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 1.000000 1.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>Impact</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000 0.007843 0.000000 0.500000</value>
+				<inTangent>0.000000 0.000000 0.000000 1.500002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 1.500002</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.733333</startTime>
+				<value>1.000000 0.007843 0.000000 1.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 1.500002</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -1.499999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>1.000000 0.007843 0.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -1.499999</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 -1.499999</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property vector4</name>
+			<type>vector4</type>
+			<identifier>Impact</identifier>
+			<property>diffuseUVSpeedAlphaOffset</property>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>0.000000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.000000 0.000000 0.000000 0.000000</inTangent>
+				<outTangent>1.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.900000</startTime>
+				<value>0.500000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.100000</startTime>
+				<value>0.500000 0.000000 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.666667 0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.400000</startTime>
+				<value>1.000000 0.000000 1.000000 0.000000</value>
+				<inTangent>1.666667 -0.000000 -0.000000 -0.000000</inTangent>
+				<outTangent>1.666667 -0.000000 -0.000000 -0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Blast_dust_2</name>
+		<type>particle</type>
+		<resource>particles/Environment/event_white_tiger/player_tank/karna/karna_bells_blast.eff</resource>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>-30.000000 3.000000 8.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>emission</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.366667</startTime>
+				<value>0.000000</value>
+				<inTangent>29.999975</inTangent>
+				<outTangent>29.999975</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.400000</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000013</inTangent>
+				<outTangent>-0.000013</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.433333</startTime>
+				<value>0.000000</value>
+				<inTangent>-30.000002</inTangent>
+				<outTangent>-30.000002</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

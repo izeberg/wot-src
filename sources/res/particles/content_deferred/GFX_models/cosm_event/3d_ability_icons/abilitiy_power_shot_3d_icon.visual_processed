@@ -53,10 +53,6 @@
 						<Vector4>0.100000 0.100000 1.000000 1.000000</Vector4>
 					</property>
 					<property>
-						opacityMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_ANM.dds</Texture>
-					</property>
-					<property>
 						rampFreshnelMap
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/Gradients/PzKpfw_purple_gradien_lumps.dds</Texture>
 					</property>

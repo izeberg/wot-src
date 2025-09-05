@@ -82,7 +82,7 @@
 				0
 				<material>
 					<identifier>d_metal0</identifier>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>87</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -106,7 +106,7 @@
 					<identifier>n_glass1</identifier>
 					<fx>shaders/std_effects/PBS_glass.fx</fx>
 					<materialKind>73</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						dirtAlbedoMap
 						<Texture>content/Environment/hd_env_EU_460_GerTramway/hd_env_EU_460_GerTramway_glass_AM.dds</Texture>

@@ -49,80 +49,76 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>hull_inside_Shape.vertices</vertices>
+			<primitive>hull_inside_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_mat_inside</identifier>
-					<property>
-						selfIllumination
-						<Float>0.000000</Float>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/american/crash_inside/crash_inside_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/american/crash_inside/crash_inside_NM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_mat_inside</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AM.dds</Texture>
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/american/crash_inside/crash_inside_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_GMM.dds</Texture>
 					</property>
 					<property>
 						g_useNormalPackDXT1
 						<Bool>true</Bool>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						normalMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_NM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/russian/Crash_inside/crash_inside_AO.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.094478 0.027497 -0.008759</groupOrigin>
+				<groupOrigin>-0.077747 0.027497 -0.008759</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_hull_01</identifier>
-					<property>
-						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_ANM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						normalMap
+						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB135_FV240/FV240_hull_01_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.093839 -0.048482</groupOrigin>
@@ -130,45 +126,37 @@
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>tank_chassis_01</identifier>
-					<property>
-						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
-					</property>
-					<collisionFlags>0</collisionFlags>
-					<materialKind>0</materialKind>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_ANM.dds</Texture>
-					</property>
+					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_AM.dds</Texture>
 					</property>
 					<property>
-						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_AO.dds</Texture>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_GMM.dds</Texture>
+					</property>
+					<property>
+						g_crashUVTiling
+						<Vector4>2.000000 2.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>64</Int>
+						normalMap
+						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB135_FV240/FV240_chassis_01_AO.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.000903 -0.434862 -0.022114</groupOrigin>
@@ -179,6 +167,6 @@
 		<min>-1.950413 -0.993772 -4.387975</min>
 		<max>1.950414 0.855593 4.291011</max>
 	</boundingBox>
-	<geometrySize>126988</geometrySize>
+	<geometrySize>126302</geometrySize>
 	<minUVDensity>0.001222</minUVDensity>
 </root>

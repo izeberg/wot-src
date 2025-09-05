@@ -101,8 +101,8 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>G_R_BlendBone</node>
 		<node>Gun_BlendBone</node>
+		<node>G_R_BlendBone</node>
 		<node>G_L_BlendBone</node>
 		<geometry>
 			<vertices>gun_04_Shape.vertices</vertices>
@@ -160,15 +160,15 @@
 						<Texture>vehicles/british/GB136_FV245/FV245_guns_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000027 0.000949 -2.091565</groupOrigin>
+				<groupOrigin>0.000027 0.000949 -2.091566</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.501166 -0.261905 -0.046034</min>
-		<max>0.501219 0.263804 4.229165</max>
+		<max>0.501219 0.263804 4.229166</max>
 	</boundingBox>
-	<geometrySize>14040</geometrySize>
+	<geometrySize>14132</geometrySize>
 	<minUVDensity>0.017877</minUVDensity>
 </root>

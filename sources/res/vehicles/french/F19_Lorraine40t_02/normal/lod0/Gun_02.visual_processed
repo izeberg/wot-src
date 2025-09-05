@@ -79,7 +79,7 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>7.013699 7.013699 0.000000 0.000000</Vector4>
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -155,6 +155,18 @@
 					<property>
 						normalMap
 						<Texture>vehicles/french/F19_Lorraine40t_02/Lorraine40t_02_equipment_ANM.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.068883 0.113884 0.706896</groupOrigin>

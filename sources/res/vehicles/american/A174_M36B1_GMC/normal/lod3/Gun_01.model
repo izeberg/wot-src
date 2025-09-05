@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A174_M36B1_GMC/normal/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A174_M36B1_GMC/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.672550 -0.273182 0.040167</min>
+		<max>0.678784 0.371608 3.916998</max>
+	</visibilityBox>
+</root>

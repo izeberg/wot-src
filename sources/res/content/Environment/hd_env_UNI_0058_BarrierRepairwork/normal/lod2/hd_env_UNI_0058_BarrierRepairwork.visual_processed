@@ -9,15 +9,6 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>HP_module0</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
 			<identifier>hd_envAM_066_BarrierRepairwork2</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
@@ -25,6 +16,15 @@
 				<row2>0.000000 0.000000 1.000000</row2>
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
+			<node>
+				<identifier>HP_module0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
 			<node>
 				<identifier>lod2</identifier>
 				<transform>
@@ -43,7 +43,7 @@
 					</transform>
 				</node>
 				<node>
-					<identifier>s_wall0</identifier>
+					<identifier>s_wall</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
@@ -88,6 +88,10 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_0058_BarrierRepairwork/hd_env_UNI_0058_BarrierRepairwork_ANM.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.078061 0.168354 -0.047060</groupOrigin>
 			</primitiveGroup>
@@ -109,6 +113,10 @@
 					<property>
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_0058_BarrierRepairwork/hd_env_UNI_0058_BarrierRepairwork_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.072282 0.787738 0.004886</groupOrigin>

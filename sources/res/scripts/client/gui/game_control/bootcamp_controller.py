@@ -2,7 +2,7 @@ from collections import namedtuple
 from functools import partial
 import AccountCommands, BigWorld
 from constants import QUEUE_TYPE, BOOTCAMP
-from wg_async import wg_async, wg_await
+from th_async import th_async, th_await
 from account_helpers import isLongDisconnectedFromCenter
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.framework.managers.containers import POP_UP_CRITERIA
@@ -237,7 +237,7 @@ class BootcampController(IBootcampController):
     def prbDispatcher(self):
         return
 
-    @wg_async
+    @th_async
     def __doBootcamp(self, isSkip):
         isFromLobbyMenu = self.__isLobbyMenuOpened()
         if isFromLobbyMenu:
@@ -255,7 +255,7 @@ class BootcampController(IBootcampController):
             else:
                 rewardStr = _REWARD.format(self.__format(startAcc.reward(), _GREEN))
             message = self.__format(startAcc.message(), _GRAY, reward=rewardStr)
-            result = yield wg_await(showResSimpleDialog(startAcc, iconAcc, message))
+            result = yield th_await(showResSimpleDialog(startAcc, iconAcc, message))
             if result:
                 self.__goBootcamp()
             elif isFromLobbyMenu:

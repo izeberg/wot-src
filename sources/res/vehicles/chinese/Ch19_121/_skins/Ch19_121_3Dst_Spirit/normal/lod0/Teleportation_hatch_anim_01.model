@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>0.302953 0.594787 -2.494934</min>
+		<max>0.633551 0.797659 -2.164335</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod0/Teleportation_hatch_anim_01</nodefullVisual>
+	<parent>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod1/Teleportation_hatch_anim_01</parent>
+	<extent>32.000000</extent>
+</root>

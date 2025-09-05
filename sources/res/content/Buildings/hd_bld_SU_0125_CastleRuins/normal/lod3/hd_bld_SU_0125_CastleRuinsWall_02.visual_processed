@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.uv2</stream>
+			<primitive>s1Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -38,10 +38,6 @@
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						blendMask
@@ -92,7 +88,7 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.001529 6.711102 -7.883144</groupOrigin>
+				<groupOrigin>-0.002204 6.710977 -7.901193</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -108,10 +104,6 @@
 					<property>
 						g_atlasSizes
 						<Vector4>3.000000 2.000000 2.000000 2.000000</Vector4>
-					</property>
-					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
 					</property>
 					<property>
 						blendMask
@@ -162,15 +154,14 @@
 						<Texture>content/UniversalTextures/Universal_GCM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.038021 6.711102 -7.883144</groupOrigin>
+				<groupOrigin>0.037121 6.711102 -7.843795</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-1.579503 -0.003198 -16.579405</min>
-		<max>1.768796 13.489062 0.778107</max>
+		<min>-1.466903 -0.003048 -16.339056</min>
+		<max>1.541146 13.425002 0.536670</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>4224</geometrySize>
-	<minUVDensity>0.032511</minUVDensity>
+	<geometrySize>6818</geometrySize>
+	<minUVDensity>0.018833</minUVDensity>
 </root>

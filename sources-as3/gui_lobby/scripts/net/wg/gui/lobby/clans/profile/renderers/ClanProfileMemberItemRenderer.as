@@ -25,7 +25,7 @@ package net.wg.gui.lobby.clans.profile.renderers
       
       public var winsTF:TextField = null;
       
-      public var awgExpTF:TextField = null;
+      public var avgXPTF:TextField = null;
       
       public var daysInClanTF:TextField = null;
       
@@ -61,7 +61,7 @@ package net.wg.gui.lobby.clans.profile.renderers
          this.personalRatingTF = null;
          this.battlesCountTF = null;
          this.winsTF = null;
-         this.awgExpTF = null;
+         this.avgXPTF = null;
          this.daysInClanTF = null;
          this._rendererVO = null;
          super.onDispose();
@@ -81,7 +81,7 @@ package net.wg.gui.lobby.clans.profile.renderers
                this.personalRatingTF.htmlText = this._rendererVO.personalRating;
                this.battlesCountTF.htmlText = this._rendererVO.battlesCount;
                this.winsTF.htmlText = this._rendererVO.wins;
-               this.awgExpTF.htmlText = this._rendererVO.awgExp;
+               this.avgXPTF.htmlText = this._rendererVO.avgXP;
                this.daysInClanTF.htmlText = this._rendererVO.daysInClan;
                this.postIcon.source = this._rendererVO.postIcon;
             }

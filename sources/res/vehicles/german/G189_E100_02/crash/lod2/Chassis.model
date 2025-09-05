@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G189_E100_02/crash/lod3/Chassis</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G189_E100_02/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-2.055881 -0.000475 -3.537625</min>
+		<max>
+			2.055881 1.33081 4.178957
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

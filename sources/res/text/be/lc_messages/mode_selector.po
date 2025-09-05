@@ -32,6 +32,13 @@ msgstr "Рангавыя баі пачнуцца %(date)s"
 msgid "event/paused"
 msgstr "Рангавыя баі часова недаступныя"
 
+msgid "event/wt/collection"
+msgstr ""
+"Прагрэсія: %(whiteSpanish_Open)s%(current)d%(whiteSpanish_Close)s/%(total)d"
+
+msgid "event/wt/tickets"
+msgstr "Ключы:"
+
 msgid "hint/showProgression"
 msgstr "ПРАГЛЯД У РЭЖЫМЕ ПРАГРЭСІІ"
 
@@ -90,10 +97,10 @@ msgstr ""
 "X&nbsp;уровень"
 
 msgid "mode/comp7/seasonEnd"
-msgstr "Падзея «Каменны мядзведзь» завершана."
+msgstr "Падзея «Агністы тыгр» завершана."
 
 msgid "mode/comp7/seasonStart"
-msgstr "Падзея «Каменны мядзведзь» пачнецца %(date)s"
+msgstr "Падзея «Агністы тыгр» пачнецца %(date)s"
 
 msgid "mode/comp7/warning"
 msgstr "Рангавая неактыўнасць"
@@ -310,6 +317,14 @@ msgstr "Гуляючы ў рэжыме, вы можаце атрымаць ун�
 
 msgid "reward/crew/name"
 msgstr "Танкісты"
+
+msgid "reward/deluxeEquipment/description"
+msgstr ""
+"У параўнанні са штатным абсталяваннем у слоце з прыдатнай катэгорыяй "
+"удасканаленае абсталяванне больш эфектыўнае і дае больш бонусаў."
+
+msgid "reward/deluxeEquipment/name"
+msgstr "Удасканаленае абсталяванне"
 
 msgid "reward/experience/description"
 msgstr "Узнагарода вызначаецца паводле паказчыкаў вашай эфектыўнасці ў баі"

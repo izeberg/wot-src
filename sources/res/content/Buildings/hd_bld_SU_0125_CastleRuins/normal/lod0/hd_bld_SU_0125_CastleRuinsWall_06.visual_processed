@@ -15,14 +15,13 @@
 		<geometry>
 			<vertices>vertices</vertices>
 			<stream>uv2</stream>
-			<stream>colour</stream>
 			<primitive>indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<materialKind>105</materialKind>
+					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						albedoHeightTile0
@@ -93,15 +92,15 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-0.062158 1.917086 -3.632629</groupOrigin>
+				<groupOrigin>-0.062157 1.917091 -3.632645</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-2.106001 -0.135788 -8.138399</min>
-		<max>1.981685 3.969960 0.873141</max>
+		<min>-2.106003 -0.135788 -8.138428</min>
+		<max>1.981690 3.969971 0.873138</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>162462</geometrySize>
+	<geometrySize>158446</geometrySize>
 	<minUVDensity>0.011035</minUVDensity>
 </root>

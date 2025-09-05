@@ -1,4 +1,4 @@
-import adisp, wg_async
+import adisp, th_async
 from frameworks.wulf import WindowStatus
 from gui.Scaleform.Waiting import Waiting
 from gui.impl.gen import R
@@ -43,7 +43,7 @@ def _getProductsProcess(selectableRewardsCtrl=None, callback=None):
     callback(res)
 
 
-@wg_async.wg_async
+@th_async.th_async
 @dependency.replace_none_kwargs(selectableRewardsCtrl=IParagonsRewardsShopController, guiLoader=IGuiLoader)
 def showParagonsSelectRewardsWindow(chapterID, levelID, entitlementID, parent=None, selectableRewardsCtrl=None, guiLoader=None):
     from gui.impl.lobby.paragons.select_rewards_view import SelectRewardsViewWindow
@@ -52,7 +52,7 @@ def showParagonsSelectRewardsWindow(chapterID, levelID, entitlementID, parent=No
         if view is not None:
             raise AsyncReturn(None)
         Waiting.show('paragons/loadSelector')
-        yield wg_async.await_callback(_getProductsProcess)(selectableRewardsCtrl=selectableRewardsCtrl)
+        yield th_async.await_callback(_getProductsProcess)(selectableRewardsCtrl=selectableRewardsCtrl)
         selectableRewardsCtrl.entitlements.update()
         if parent is not None and parent.windowStatus in (WindowStatus.DESTROYING, WindowStatus.DESTROYED):
             raise AsyncReturn(None)

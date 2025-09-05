@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.704349 -0.000007 -1.952851</min>
+		<max>1.303449 3.133881 1.444296</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/chinese/Ch19_121/_skins/Ch19_121_3Dst_Spirit/normal/lod0/Turret_01</nodefullVisual>
+</root>

@@ -130,6 +130,8 @@ package net.wg.gui.lobby.settings.vo.config
       
       public var customizationDisplayType:SettingsControlProp = null;
       
+      public var hangarCrewWidget:SettingsControlProp = null;
+      
       public var carouselType:SettingsControlProp = null;
       
       public var doubleCarouselType:SettingsControlProp = null;
@@ -214,6 +216,7 @@ package net.wg.gui.lobby.settings.vo.config
             "enableBattleNotifier":createControl(ControlsFactory.TYPE_CHECKBOX).build(),
             "battleLoadingInfo":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
             "battleLoadingRankedInfo":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
+            "hangarCrewWidget":createControl(ControlsFactory.TYPE_BUTTON_BAR).build(),
             "carouselType":createControl(ControlsFactory.TYPE_BUTTON_BAR).build(),
             "doubleCarouselType":createControl(ControlsFactory.TYPE_DROPDOWN).build(),
             "customizationDisplayType":createControl(ControlsFactory.TYPE_BUTTON_BAR).build(),
@@ -347,6 +350,8 @@ package net.wg.gui.lobby.settings.vo.config
          this.battleLoadingRankedInfo = null;
          this.receiveClanInvitesNotifications.dispose();
          this.receiveClanInvitesNotifications = null;
+         this.hangarCrewWidget.dispose();
+         this.hangarCrewWidget = null;
          this.carouselType.dispose();
          this.carouselType = null;
          this.customizationDisplayType.dispose();

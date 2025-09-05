@@ -537,7 +537,7 @@ msgid "barracks/dismissedTankmenCount"
 msgstr "Дэмабілізаваныя танкісты: %(curValue)s из %(total)s"
 
 msgid "barracks/menu/locationFilter/barracks"
-msgstr "У ЖАЎНЕРНI"
+msgstr "У Жаўнерні"
 
 msgid "barracks/menu/locationFilter/barracksAndTanks"
 msgstr "У Жаўнерні і на тэхніцы"
@@ -1117,6 +1117,9 @@ msgstr "Стварыць звяз для Рангавага бою"
 msgid "contextMenu/createSquad"
 msgstr "Стварыць звяз"
 
+msgid "contextMenu/createWhiteTigerSquad"
+msgstr "Стварыць звяз Ганчакоў"
+
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Змяніць члена экіпажа"
 
@@ -1417,9 +1420,7 @@ msgstr ""
 "бітва"
 
 msgid "crystals/info/tab/earn/level/mod/2"
-msgstr ""
-"Рангавы\n"
-"бой"
+msgstr "Націск"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УЗРОВЕНЬ ТЭХНІКІ"
@@ -1444,6 +1445,9 @@ msgstr "ІНДЫКАТАР ЗАРОБКУ БОНАЎ"
 msgid "crystals/info/tab/earnTab"
 msgstr "Як здабыць"
 
+msgid "crystals/info/tab/get/card/comp7Description"
+msgstr "Топ-%(position)s паводле ачкоў прэстыжу"
+
 msgid "crystals/info/tab/get/card/condition"
 msgstr "Умовы"
 
@@ -1455,6 +1459,9 @@ msgstr "Топ-%(position)s паводле досведу"
 
 msgid "crystals/info/tab/get/card/win"
 msgstr "Перамога"
+
+msgid "crystals/info/tab/get/comp7"
+msgstr "НАЦІСК"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
@@ -1474,6 +1481,14 @@ msgstr "РАНГАВЫ БОЙ"
 
 msgid "crystals/info/tab/getTab"
 msgstr "Умовы налічэння"
+
+msgid "crystals/info/tab/spend/card/comp7Shop/description"
+msgstr ""
+"У краме Націску вас чакаюць эксклюзіўная тэхніка і стылі, а таксама выгадная"
+" сістэма зніжак."
+
+msgid "crystals/info/tab/spend/card/comp7Shop/title"
+msgstr "Крама Націску"
 
 msgid "crystals/info/tab/spend/card/instructions/description"
 msgstr "Узмацняюць эфект, які дае ўсталяванае абсталяванне."
@@ -1723,8 +1738,11 @@ msgstr "Пракат машыны даступны"
 msgid "currentVehicleStatus/rentableAgain"
 msgstr "Прадоўжыць пракат"
 
+msgid "currentVehicleStatus/rentalBattleIsOver"
+msgstr "Баі вычарпаны"
+
 msgid "currentVehicleStatus/rentalIsOver"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "currentVehicleStatus/rotationGroupLocked"
 msgstr "Недаступна"
@@ -1740,6 +1758,9 @@ msgstr "Падпіска скасавана"
 
 msgid "currentVehicleStatus/tempUnavailable"
 msgstr "Часова недаступна"
+
+msgid "currentVehicleStatus/ticketsShortage"
+msgstr "Няма ключа"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "Да бою гатовы!"
@@ -2611,6 +2632,9 @@ msgstr "Абслугоўванне"
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Выгляд"
 
+msgid "hangar/closeBtn"
+msgstr "ПАКІНУЦЬ РЭЖЫМ"
+
 msgid "hangar/crew/rody/dog/moreInfoLabel"
 msgstr "Падрабязней"
 
@@ -3041,6 +3065,9 @@ msgstr "Супольныя вучэнні"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
+
+msgid "headerButtons/battle/types/event"
+msgstr "Вафэнтрагер: спадчына"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
@@ -4720,9 +4747,6 @@ msgstr "Магутнасць рухавіка"
 msgid "moduleInfo/params/enginePowerPerTon"
 msgstr "Да ўдзельнай магутнасці (к.с./т) "
 
-msgid "moduleInfo/params/explosionDelay"
-msgstr "Таймер дэтанацыі"
-
 msgid "moduleInfo/params/explosionRadius"
 msgstr "Радыус паражэння"
 
@@ -6287,7 +6311,7 @@ msgid "store/vehicleStates/rentableAgain/ranked"
 msgstr "Прадоўжыць пракат"
 
 msgid "store/vehicleStates/rentalIsOver"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "store/vehicleStates/rented/epic"
 msgstr "Пракат на этап %(cycles)s"
@@ -6409,8 +6433,11 @@ msgstr "Прадоўжыць пракат"
 msgid "tankCarousel/vehicleStates/rentableAgain/ranked"
 msgstr "Прадоўжыць пракат"
 
+msgid "tankCarousel/vehicleStates/rentalBattleIsOver"
+msgstr "Баі вычарпаны"
+
 msgid "tankCarousel/vehicleStates/rentalIsOver"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "tankCarousel/vehicleStates/restoreTank"
 msgstr "Аднавіць машыну"
@@ -6434,6 +6461,9 @@ msgstr ""
 
 msgid "tankCarousel/vehicleStates/tempUnavailable"
 msgstr "Часова недаступна"
+
+msgid "tankCarousel/vehicleStates/ticketsShortage"
+msgstr "Няма ключа"
 
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недаступна"
@@ -6556,9 +6586,6 @@ msgstr "Магутнасць рухавіка"
 
 msgid "tank_params/enginePowerPerTon"
 msgstr "Удзельная магутнасць"
-
-msgid "tank_params/explosionDelay"
-msgstr "Таймер дэтанацыі"
 
 msgid "tank_params/explosionRadius"
 msgstr "Радыус паражэння"
@@ -7181,7 +7208,7 @@ msgid "vehicle/igrRentLeft/hours"
 msgstr "гадзін: %(hours)s"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Баёў даступна: %(battles)s"
+msgstr "Яшчэ баёў: %(battles)s"
 
 msgid "vehicle/rentLeft/days"
 msgstr "Сутак пракату: %(days)s"

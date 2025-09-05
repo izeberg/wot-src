@@ -1469,7 +1469,7 @@ package
       
       public static const CLANS_REQUEST_ERRORS_GLOBAL_MAP_ERROR_WAS_OCCURRED:String = "#system_messages:clans/request/errors/Global map error was occurred";
       
-      public static const CLANS_REQUEST_ERRORS_WGRS_ERROR_WAS_OCCURRED:String = "#system_messages:clans/request/errors/Wgrs error was occurred";
+      public static const CLANS_REQUEST_ERRORS_GRS_ERROR_WAS_OCCURRED:String = "#system_messages:clans/request/errors/Grs error was occurred";
       
       public static const CLANS_REQUEST_ERRORS_WGCCFE_ERROR_WAS_OCCURRED:String = "#system_messages:clans/request/errors/WGCCFE error was occurred";
       

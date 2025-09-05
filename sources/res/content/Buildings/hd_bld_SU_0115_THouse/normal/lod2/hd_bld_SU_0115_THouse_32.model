@@ -2,5 +2,9 @@
 <root>
 	<parent>content/Buildings/hd_bld_SU_0115_THouse/normal/lod3/hd_bld_SU_0115_THouse_32</parent>
 	<extent>225.000000</extent>
+	<visibilityBox>
+		<min>-7.032983 -0.885002 -6.597701</min>
+		<max>6.611928 17.006887 7.046835</max>
+	</visibilityBox>
 	<nodelessVisual>content/Buildings/hd_bld_SU_0115_THouse/normal/lod2/hd_bld_SU_0115_THouse_32</nodelessVisual>
 </root>

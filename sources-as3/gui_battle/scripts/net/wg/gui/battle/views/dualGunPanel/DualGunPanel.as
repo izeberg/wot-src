@@ -1,11 +1,10 @@
 package net.wg.gui.battle.views.dualGunPanel
 {
    import flash.utils.Dictionary;
+   import flash.utils.getTimer;
    import net.wg.data.VO.RunningTimerData;
-   import net.wg.data.constants.InvalidationType;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.CROSSHAIR_CASSETTE_TYPES;
-   import net.wg.data.constants.generated.CROSSHAIR_VIEW_ID;
    import net.wg.infrastructure.base.meta.IDualGunPanelMeta;
    import net.wg.infrastructure.base.meta.impl.DualGunPanelMeta;
    import net.wg.utils.IScheduler;
@@ -28,9 +27,7 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private static const TIMER_ID_COOLDOWN:String = "cooldown";
       
-      private static const PADDING_TOP_ARCADE_VIEW:Number = 10;
-      
-      private static const PADDING_TOP_SNIPER_VIEW:Number = 100;
+      private static const PADDING_TOP:int = 85;
       
       private static const TIMERS:Array = [TIMER_ID_ACTIVE_GUN_CHANGE,TIMER_ID_LOADING_LEFT,TIMER_ID_LOADING_RIGHT,TIMER_ID_CHARGE_PROGRESS,TIMER_ID_COOLDOWN];
       
@@ -45,6 +42,8 @@ package net.wg.gui.battle.views.dualGunPanel
       
       public var panelTimer:DualGunPanelTimer;
       
+      private var _lastUpdate:int = 0;
+      
       private var _scheduler:IScheduler;
       
       private var _timers:Dictionary;
@@ -58,10 +57,6 @@ package net.wg.gui.battle.views.dualGunPanel
       private var _speedFactor:Number = 1;
       
       private var _viewId:Number = 0;
-      
-      private var _stageWidth:Number;
-      
-      private var _stageHeight:Number;
       
       private var _hasNegativeReloadingEffect:Boolean = false;
       
@@ -117,18 +112,6 @@ package net.wg.gui.battle.views.dualGunPanel
          this.leftGunContainer.setGunActive(true);
          this.leftGunContainer.oppositeGunPositionX(this.rightGunContainer.x - this.leftGunContainer.x);
          this.rightGunContainer.oppositeGunPositionX(this.leftGunContainer.x - this.rightGunContainer.x);
-      }
-      
-      override protected function draw() : void
-      {
-         var _loc1_:Number = NaN;
-         super.draw();
-         if(isInvalid(InvalidationType.POSITION))
-         {
-            _loc1_ = this._viewId == CROSSHAIR_VIEW_ID.SNIPER ? Number(PADDING_TOP_SNIPER_VIEW) : Number(PADDING_TOP_ARCADE_VIEW);
-            x = this._stageWidth >> 1;
-            y = (this._stageHeight >> 1) + _loc1_;
-         }
       }
       
       public function as_cancelCharge() : void
@@ -247,6 +230,12 @@ package net.wg.gui.battle.views.dualGunPanel
          invalidatePosition();
       }
       
+      public function as_updateLayout(param1:Number, param2:Number) : void
+      {
+         this.x = param1 | 0;
+         this.y = param2 + PADDING_TOP | 0;
+      }
+      
       public function as_setVisible(param1:Boolean) : void
       {
          _isCompVisible = param1;
@@ -295,13 +284,6 @@ package net.wg.gui.battle.views.dualGunPanel
       public function as_updateTotalTime(param1:Number) : void
       {
          this.panelTimer.updateTotalTime(param1);
-      }
-      
-      public function updateStage(param1:Number, param2:Number) : void
-      {
-         this._stageWidth = param1;
-         this._stageHeight = param2;
-         invalidatePosition();
       }
       
       private function reset() : void
@@ -369,38 +351,44 @@ package net.wg.gui.battle.views.dualGunPanel
       
       private function onUpdate() : void
       {
-         var _loc2_:String = null;
-         var _loc3_:RunningTimerData = null;
-         var _loc4_:int = 0;
+         var _loc3_:String = null;
+         var _loc4_:RunningTimerData = null;
+         var _loc5_:int = 0;
+         var _loc1_:int = getTimer();
+         if(this._lastUpdate == _loc1_)
+         {
+            return;
+         }
+         this._lastUpdate = _loc1_;
          if(this._speedFactor == 0)
          {
             return;
          }
-         var _loc1_:Array = [];
-         for each(_loc2_ in this._activeTimers)
+         var _loc2_:Array = [];
+         for each(_loc3_ in this._activeTimers)
          {
-            _loc3_ = this._timers[_loc2_];
-            switch(_loc2_)
+            _loc4_ = this._timers[_loc3_];
+            switch(_loc3_)
             {
                case TIMER_ID_ACTIVE_GUN_CHANGE:
-                  this.getGunById(this._activeGunId).updateSwitchingProgress(_loc3_.timeLeft,_loc3_.totalTime);
+                  this.getGunById(this._activeGunId).updateSwitchingProgress(_loc4_.timeLeft,_loc4_.totalTime);
                   break;
                case TIMER_ID_LOADING_LEFT:
                case TIMER_ID_LOADING_RIGHT:
-                  _loc4_ = RELOADING_TIMERS.indexOf(_loc2_);
-                  this.getGunById(_loc4_).updateReloadingProgress(_loc3_.timeLeft,_loc3_.totalTime);
+                  _loc5_ = RELOADING_TIMERS.indexOf(_loc3_);
+                  this.getGunById(_loc5_).updateReloadingProgress(_loc4_.timeLeft,_loc4_.totalTime);
                   break;
                case TIMER_ID_CHARGE_PROGRESS:
-                  this.chargeAnimation.value = _loc3_.elapsedPercent;
+                  this.chargeAnimation.value = _loc4_.elapsedPercent;
             }
-            if(_loc3_.elapsedPercent == 1)
+            if(_loc4_.elapsedPercent == 1)
             {
-               _loc1_.push(_loc2_);
+               _loc2_.push(_loc3_);
             }
          }
-         for each(_loc2_ in _loc1_)
+         for each(_loc3_ in _loc2_)
          {
-            this.deactivateTimer(_loc2_);
+            this.deactivateTimer(_loc3_);
          }
          if(this._activeTimers.length > 0)
          {

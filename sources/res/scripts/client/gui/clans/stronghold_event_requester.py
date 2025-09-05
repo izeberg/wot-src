@@ -1,4 +1,4 @@
-import json, logging, typing, Event, wg_async
+import json, logging, typing, Event, th_async
 from gui.Scaleform.daapi.view.lobby.clans.clan_helpers import getStrongholdEventEnabled
 from gui.clans.clan_cache import g_clanCache
 from gui.game_control.reactive_comm import Subscription
@@ -105,10 +105,10 @@ class FrozenVehiclesRequester(object):
     def __onClosed(self, reason):
         self.__clearSubscription()
 
-    @wg_async.wg_async
+    @th_async.th_async
     def __subscribe(self):
         self.__subscription = Subscription(self.__getChannelName())
-        result = yield wg_async.wg_await(self.__RCService.subscribeToChannel(self.__subscription))
+        result = yield th_async.th_await(self.__RCService.subscribeToChannel(self.__subscription))
         if result:
             self.__subscription.onMessage += self._onMessage
             self.__subscription.onClosed += self.__onClosed

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>1.235701 0.470398 -0.954278</min>
-		<max>1.515836 1.089069 -0.725700</max>
+		<min>1.235701 0.470398 0.725700</min>
+		<max>1.515836 1.089069 0.954278</max>
 	</visibilityBox>
 	<parent>vehicles/british/GB135_FV240/normal/lod1/HatchSleeve_01_Right_anim</parent>
 	<extent>32.000000</extent>

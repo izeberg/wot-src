@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Environment/hd_env_SU_1084_MarketShelvesSnow/normal/lod0/hd_env_SU_1084_MarketShelvesSnow_01</nodefullVisual>
 	<visibilityBox>
 		<min>-1.487920 -0.036240 -0.512551</min>
 		<max>1.449810 1.277090 1.451300</max>
 	</visibilityBox>
 	<parent>content/Environment/hd_env_SU_1084_MarketShelvesSnow/normal/lod1/hd_env_SU_1084_MarketShelvesSnow_01</parent>
-	<extent>35.000000</extent>
+	<extent>48.000000</extent>
+	<nodefullVisual>content/Environment/hd_env_SU_1084_MarketShelvesSnow/normal/lod0/hd_env_SU_1084_MarketShelvesSnow_01</nodefullVisual>
 </root>

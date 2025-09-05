@@ -13,9 +13,9 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>uv2</stream>
-			<primitive>indices</primitive>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -36,10 +36,6 @@
 						<Bool>true</Bool>
 					</property>
 					<property>
-						g_enableTerrainBlending
-						<Bool>true</Bool>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_UNI_0036_SnowClear/hd_env_UNI_0036_SnowClear_GMM.dds</Texture>
 					</property>
@@ -48,15 +44,15 @@
 						<Texture>content/Environment/hd_env_UNI_0036_SnowClear/hd_env_UNI_0036_SnowClear_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.010964 0.069034 -0.002909</groupOrigin>
+				<groupOrigin>0.021096 0.138890 0.001649</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.466475 -0.117175 -0.767260</min>
-		<max>3.488402 0.255242 0.761441</max>
+		<min>-3.446064 -0.115892 -0.758539</min>
+		<max>3.482018 0.393672 0.761838</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>2898</geometrySize>
-	<minUVDensity>0.033358</minUVDensity>
+	<geometrySize>1860</geometrySize>
+	<minUVDensity>0.024782</minUVDensity>
 </root>

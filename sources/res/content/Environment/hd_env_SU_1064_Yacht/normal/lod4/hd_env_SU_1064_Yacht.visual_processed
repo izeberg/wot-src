@@ -87,7 +87,7 @@
 					<materialKind>88</materialKind>
 					<property>
 						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_AM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_AM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
@@ -95,11 +95,15 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_ANM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.106389 0.248409 0.568402</groupOrigin>
@@ -113,18 +117,22 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_AM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_ANM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_ANM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
 						<Bool>true</Bool>
 					</property>
 				</material>
@@ -139,7 +147,7 @@
 					<materialKind>87</materialKind>
 					<property>
 						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_AM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_AM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
@@ -147,11 +155,15 @@
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_ANM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_ANM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.090391 0.193252 -4.575108</groupOrigin>
@@ -165,18 +177,22 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_AM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_AM.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_GMM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>content/Environment/hd_env_SU_1065_YachtSail/hd_env_SU_1065_YachtSail_ANM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1064_Yacht/hd_env_SU_1064_YachtSail_ANM.dds</Texture>
 					</property>
 					<property>
 						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableAO
 						<Bool>true</Bool>
 					</property>
 				</material>

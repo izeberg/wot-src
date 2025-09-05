@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>content/Railway/hd_rw_SU_1002_TramRails/normal/lod1/hd_rw_SU_1002_TramRails_04</nodefullVisual>
-	<parent>content/Railway/hd_rw_SU_1002_TramRails/normal/lod2/hd_rw_SU_1002_TramRails_04</parent>
-	<extent>40.000000</extent>
+	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-0.871615 -0.490220 -6.210820</min>
+		<min>-0.871615 0.000000 -6.210820</min>
 		<max>0.871627 0.181219 6.210820</max>
 	</visibilityBox>
+	<parent>content/Railway/hd_rw_SU_1002_TramRails/normal/lod2/hd_rw_SU_1002_TramRails_04</parent>
+	<nodefullVisual>content/Railway/hd_rw_SU_1002_TramRails/normal/lod1/hd_rw_SU_1002_TramRails_04</nodefullVisual>
 </root>

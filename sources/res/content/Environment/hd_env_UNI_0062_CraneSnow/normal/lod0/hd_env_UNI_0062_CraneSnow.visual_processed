@@ -20,8 +20,8 @@
 				0
 				<material>
 					<identifier>s_wall_0</identifier>
-					<materialKind>112</materialKind>
-					<collisionFlags>131</collisionFlags>
+					<materialKind>0</materialKind>
+					<collisionFlags>128</collisionFlags>
 				</material>
 				<groupOrigin>0.093023 6.287555 -0.063020</groupOrigin>
 			</primitiveGroup>
@@ -105,6 +105,10 @@
 					<property>
 						normalGlossSpecTile2
 						<Texture>content/Buildings/00_Tiles/dds/Painted_Steel_04_GBMT.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Rust_01_DM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-5.436780 21.257494 -9.488371</groupOrigin>
@@ -260,6 +264,6 @@
 		<max>5.976682 38.198551 8.465943</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>745910</geometrySize>
+	<geometrySize>748698</geometrySize>
 	<minUVDensity>0.000047</minUVDensity>
 </root>

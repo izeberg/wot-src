@@ -3,7 +3,7 @@ from account_helpers import isLongDisconnectedFromCenter
 from adisp import adisp_async, adisp_process
 from gui.gift_system.constants import GifterResponseState
 from gui.gift_system.hubs.subsystems import BaseHubSubsystem
-from gui.wgcg.gift_system.contexts import GiftSystemSendGiftCtx, GiftSystemSendGiftMultipleCtx
+from gui.clientgw.gift_system.contexts import GiftSystemSendGiftCtx, GiftSystemSendGiftMultipleCtx
 from helpers import dependency
 from skeletons.gui.web import IWebController
 if typing.TYPE_CHECKING:
@@ -53,7 +53,7 @@ class GiftEventBaseGifter(IGiftEventGifter):
             if isLongDisconnectedFromCenter():
                 return GifterResponseState.CENTER_DISCONNECTED
             if not self.__webController.isAvailable():
-                return GifterResponseState.WGCG_NOT_AVAILABLE
+                return GifterResponseState.CLIENTGW_NOT_AVAILABLE
             if self.__requestCtx is not None:
                 return GifterResponseState.REQUEST_IN_PROGRESS
             return

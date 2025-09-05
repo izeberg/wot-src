@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>s1</identifier>
+			<identifier>n0</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -18,7 +18,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_1_1_1</identifier>
+			<identifier>n1</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -27,241 +27,7 @@
 			</transform>
 		</node>
 		<node>
-			<identifier>s1_1_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_2_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_2_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_2_1_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_2_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_3_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_3_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_3_1_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_3_1_4</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_3_1_5</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_3_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_4_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_4_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_4_1_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_4_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_5_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_5_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_5_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_6_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_6_1_1</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_6_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_6_1_3</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_6_1_4</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_6_1_5</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s1_1_7_1_2</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-		</node>
-		<node>
-			<identifier>s2</identifier>
+			<identifier>Lamp</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -272,32 +38,13 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>s1_1_5_1_2</node>
-		<node>s1_1_3_1_2</node>
-		<node>s1_1_3_1_1</node>
-		<node>s1_1_2_1</node>
-		<node>s1_1_3_1_3</node>
-		<node>s1_1_3_1</node>
-		<node>s1_1_3_1_5</node>
-		<node>s1_1_3_1_4</node>
-		<node>s1_1_1_2</node>
-		<node>s1_1_1_1</node>
-		<node>s1</node>
-		<node>s1_1_1</node>
-		<node>s1_1_2_1_3</node>
-		<node>s1_1_2_1_2</node>
-		<node>s1_1_2_1_1</node>
-		<node>s1_1_4_1_1</node>
-		<node>s1_1_6_1_3</node>
-		<node>s1_1_6_1_2</node>
-		<node>s1_1_6_1_1</node>
-		<node>s1_1_6_1_4</node>
-		<node>s2</node>
-		<node>s1_1_7_1_2</node>
-		<node>s1_1_6_1_5</node>
+		<node>n0</node>
+		<node>n1</node>
+		<node>Lamp</node>
 		<geometry>
-			<vertices>part0a.vertices</vertices>
-			<primitive>part0a.indices</primitive>
+			<vertices>part.vertices</vertices>
+			<stream>part.uv2</stream>
+			<primitive>part.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -309,10 +56,6 @@
 						<Int>128</Int>
 					</property>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
@@ -321,12 +64,24 @@
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<fade_material>
@@ -334,121 +89,50 @@
 					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						doubleSided
-						<Bool>false</Bool>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>false</Bool>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
 					</property>
 					<property>
 						texRandom
 						<Texture>maps/fx/random.dds</Texture>
 					</property>
 					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 				</fade_material>
-				<groupOrigin>0.000000 3.161765 -0.000000</groupOrigin>
-			</primitiveGroup>
-		</geometry>
-	</renderSet>
-	<renderSet>
-		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>s1_1_5_1</node>
-		<node>s1_1_4_1</node>
-		<node>s1_1_4_1_3</node>
-		<node>s1_1_4_1_2</node>
-		<node>s1_1_5_1_1</node>
-		<node>s1_1_6_1</node>
-		<geometry>
-			<vertices>part0b.vertices</vertices>
-			<primitive>part0b.indices</primitive>
-			<primitiveGroup>
-				0
-				<material>
-					<identifier>n_metal0</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
-					</property>
-				</material>
-				<fade_material>
-					<identifier>n_metal0_fade</identifier>
-					<fx>shaders/std_effects/PBS_ext_rigid_skinned_havok_fade.fx</fx>
-					<collisionFlags>0</collisionFlags>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
-						diffuseMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_AM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
-					</property>
-					<property>
-						texRandom
-						<Texture>maps/fx/random.dds</Texture>
-					</property>
-					<property>
-						alphaReference
-						<Int>128</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-				</fade_material>
-				<groupOrigin>-0.003670 5.522727 -0.001411</groupOrigin>
+				<groupOrigin>0.000000 3.161768 0.000000</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.387885 -0.003668 -0.387885</min>
-		<max>0.387885 6.327198 0.387885</max>
+		<min>-0.387886 -0.003668 -0.387886</min>
+		<max>0.387886 6.327205 0.387886</max>
 	</boundingBox>
-	<geometrySize>284136</geometrySize>
-	<minUVDensity>0.019877</minUVDensity>
+	<geometrySize>105060</geometrySize>
+	<minUVDensity>0.002143</minUVDensity>
 </root>

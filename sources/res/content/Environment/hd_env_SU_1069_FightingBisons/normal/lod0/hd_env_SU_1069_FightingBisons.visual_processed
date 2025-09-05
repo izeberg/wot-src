@@ -26,7 +26,7 @@
 					<collisionFlags>0</collisionFlags>
 					<property>
 						colorTex
-						<Texture>content/Environment/hd_env_SU_1069_FightingBisons/hd_env_SU_1069_FightingBisons2_GCM.dds</Texture>
+						<Texture>content/Environment/hd_env_SU_1069_FightingBisons/hd_env_SU_1069_FightingBisons_GCM.dds</Texture>
 					</property>
 					<property>
 						albedoHeightTile0
@@ -124,8 +124,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-3.418986 -2.931167 -0.946800</min>
-		<max>3.549318 1.113489 0.889958</max>
+		<min>-3.418986 -2.908987 -0.946800</min>
+		<max>3.549318 1.105418 0.883777</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>356360</geometrySize>

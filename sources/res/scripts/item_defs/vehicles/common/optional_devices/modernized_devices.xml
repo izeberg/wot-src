@@ -327,6 +327,20 @@
 					<!--BW_String-->
 				</value>
 			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					0.95
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionAfterShot</name>
+				<value>
+					0.95
+					<!--BW_String-->
+				</value>
+			</mul>
 			<add>
 				<name>vehicleForwardMaxSpeed</name>
 				<value>4</value>
@@ -462,6 +476,20 @@
 					<!--BW_String-->
 				</value>
 			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					0.94
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionAfterShot</name>
+				<value>
+					0.94
+					<!--BW_String-->
+				</value>
+			</mul>
 			<add>
 				<name>vehicleForwardMaxSpeed</name>
 				<value>4</value>
@@ -585,6 +613,20 @@
 			</mul>
 			<mul>
 				<name>vehicleGunShotDispersion</name>
+				<value>
+					0.93
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionTurretRotation</name>
+				<value>
+					0.93
+					<!--BW_String-->
+				</value>
+			</mul>
+			<mul>
+				<name>vehicleGunShotDispersionAfterShot</name>
 				<value>
 					0.93
 					<!--BW_String-->

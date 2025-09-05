@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A174_M36B1_GMC/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/american/A174_M36B1_GMC/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.502837 -0.875418 -3.250461</min>
+		<max>1.322532 1.023910 2.808004</max>
+	</visibilityBox>
+</root>

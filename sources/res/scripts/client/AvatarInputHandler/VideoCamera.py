@@ -129,7 +129,7 @@ class _AlignerToLand(object):
             upPoint.y += 1000
             downPoint = Math.Vector3(position)
             downPoint.y = -1000
-            collideRes = BigWorld.wg_collideSegment(spaceID, upPoint, downPoint, 16, 8)
+            collideRes = BigWorld.collideSegment(spaceID, upPoint, downPoint, 16, 8)
             if collideRes is None:
                 return
             return collideRes.closestPoint

@@ -40,20 +40,12 @@
 						<Float>1.000000</Float>
 					</property>
 					<property>
-						gradientMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/null.dds</Texture>
-					</property>
-					<property>
 						lightMultipliers
 						<Vector4>0.500000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						opacity_UV_Speed_Scale
 						<Vector4>0.100000 0.100000 1.000000 1.000000</Vector4>
-					</property>
-					<property>
-						opacityMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/air_sph_01_ANM.dds</Texture>
 					</property>
 					<property>
 						rampFreshnelMap

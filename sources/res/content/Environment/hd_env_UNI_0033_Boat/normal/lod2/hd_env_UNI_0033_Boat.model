@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Environment/hd_env_UNI_0033_Boat/normal/lod3/hd_env_UNI_0033_Boat</parent>
-	<extent>100.000000</extent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-3.282604 -0.056228 -0.740935</min>
+		<max>3.403676 1.500000 0.740935</max>
+	</visibilityBox>
 	<havok>
-		<damagedState>false</damagedState>
+		<damagedState>true</damagedState>
 	</havok>
 	<nodefullVisual>content/Environment/hd_env_UNI_0033_Boat/normal/lod2/hd_env_UNI_0033_Boat</nodefullVisual>
-	<visibilityBox>
-		<min>-3.331874 -0.067244 -1.368173</min>
-		<max>3.332042 1.989776 1.370091</max>
-	</visibilityBox>
 </root>

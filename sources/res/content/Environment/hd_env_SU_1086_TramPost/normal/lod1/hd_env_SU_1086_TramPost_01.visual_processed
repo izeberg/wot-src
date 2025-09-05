@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
+					<row3>0.000000 4.196094 0.000000</row3>
 				</transform>
 			</node>
 		</node>
@@ -38,7 +38,7 @@
 				0
 				<material>
 					<identifier>n_metal0</identifier>
-					<collisionFlags>131</collisionFlags>
+					<collisionFlags>128</collisionFlags>
 					<materialKind>73</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
 					<property>
@@ -53,6 +53,10 @@
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_SU_1086_TramPost/hd_env_SU_1086_TramPost_GMM.dds</Texture>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.000000 3.574545 -0.014232</groupOrigin>
 			</primitiveGroup>
@@ -60,20 +64,20 @@
 				1
 				<material>
 					<identifier>d_metal0</identifier>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>87</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>87</materialKind>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Environment/hd_env_SU_1086_TramPost/hd_env_SU_1086_TramPost_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_SU_1086_TramPost/hd_env_SU_1086_TramPost_ANM.dds</Texture>
-					</property>
-					<property>
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_SU_1086_TramPost/hd_env_SU_1086_TramPost_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_SU_1086_TramPost/hd_env_SU_1086_TramPost_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>-0.000483 0.127341 0.177937</groupOrigin>
@@ -85,6 +89,6 @@
 		<max>3.694277 7.250967 0.728508</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>100554</geometrySize>
-	<minUVDensity>0.086955</minUVDensity>
+	<geometrySize>100794</geometrySize>
+	<minUVDensity>0.067907</minUVDensity>
 </root>

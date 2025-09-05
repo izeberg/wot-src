@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>hd_env_EU_040_StreetLamp_01</identifier>
+			<identifier>hd_env_UNI_0041_Lamp</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -31,15 +31,135 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>n1Shape.vertices</vertices>
+			<stream>n1Shape.uv2</stream>
+			<stream>n1Shape.uv3</stream>
+			<primitive>n1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_metal1</identifier>
+					<fx>shaders/custom/interior_mapping_glass.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						g_dirtMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_05_AM.dds</Texture>
+					</property>
+					<property>
+						g_dirtMaterialParams
+						<Vector4>0.500000 0.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_dirtPlanksTint
+						<Vector4>0.498039 0.372549 0.372549 1.000000</Vector4>
+					</property>
+					<property>
+						g_disableSpecularOnBakeLod
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_emissionMultipliers
+						<Vector4>0.000000 0.750000 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissionTint
+						<Vector4>0.764706 0.643137 0.505882 1.000000</Vector4>
+					</property>
+					<property>
+						g_enableTile
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_glassAlbedoMap
+						<Texture>content/UniversalTextures/GlassTint/Glass_tint_sea.dds</Texture>
+					</property>
+					<property>
+						g_glassMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_05_GMM.dds</Texture>
+					</property>
+					<property>
+						g_innerSide
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_interiorAlbedoMap
+						<Texture>content/Buildings/00_Interiors/Interiors_Lamp_IAM.dds</Texture>
+					</property>
+					<property>
+						g_interiorEmissionMap
+						<Texture>content/Buildings/00_Interiors/Interiors_Lamp_IEM.dds</Texture>
+					</property>
+					<property>
+						g_lodBlurDistance
+						<Vector4>300.000000 500.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_LumMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_LM.dds</Texture>
+					</property>
+					<property>
+						g_normalMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_04_ANM.dds</Texture>
+					</property>
+					<property>
+						g_parallaxParams
+						<Vector4>0.150000 1.250000 45.000000 0.750000</Vector4>
+					</property>
+					<property>
+						g_platesMap
+						<Texture>content/Buildings/00_Interiors/Interiors_NewCity_01_Curtains_AM.dds</Texture>
+					</property>
+					<property>
+						g_platesMaterialParams
+						<Vector4>0.000000 0.750000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_platesUVScale
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_refractionIOR
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_tileMap
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_Frost_AM.dds</Texture>
+					</property>
+					<property>
+						g_tileNormal
+						<Texture>content/Buildings/00_Detail_Sets/Detail_Set_Glass_Frost_ANM.dds</Texture>
+					</property>
+					<property>
+						g_tileParams
+						<Vector4>5.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_enableGlassAndPlates
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_emissionTintFwd
+						<Vector4>0.352941 0.243137 0.121569 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 5.547770 0.000001</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>n0Shape.vertices</vertices>
+			<primitive>n0Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>n_metal0</identifier>
-					<collisionFlags>131</collisionFlags>
-					<materialKind>73</materialKind>
 					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>131</collisionFlags>
 					<property>
 						alphaReference
 						<Int>128</Int>
@@ -53,23 +173,31 @@
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_AM.dds</Texture>
 					</property>
 					<property>
-						normalMap
-						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
 					</property>
 					<property>
 						metallicGlossMap
 						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_GMM.dds</Texture>
 					</property>
+					<property>
+						normalMap
+						<Texture>content/Environment/hd_env_UNI_0041_Lamp/hd_env_UNI_0041_Lamp_ANM.dds</Texture>
+					</property>
 				</material>
-				<groupOrigin>-0.002184 3.161765 -0.000000</groupOrigin>
+				<groupOrigin>-0.002553 3.161768 0.000001</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.369000 -0.003668 -0.369000</min>
-		<max>0.368999 6.327198 0.368999</max>
+		<min>-0.364748 -0.003668 -0.368563</min>
+		<max>0.375809 6.327205 0.369437</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>7644</geometrySize>
+	<geometrySize>14288</geometrySize>
 	<minUVDensity>0.005707</minUVDensity>
 </root>

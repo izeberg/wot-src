@@ -841,10 +841,10 @@ package net.wg.gui.lobby.settings
          var _loc5_:int = monitorDropDown.selectedIndex;
          var _loc6_:int = sizesDropDown.selectedIndex;
          var _loc7_:Array = _loc2_.options[_loc4_][_loc5_][_loc6_];
-         var _loc8_:Number = 0;
+         var _loc8_:int = 0;
          if(_loc3_.selectedIndex >= 0)
          {
-            _loc8_ = _loc3_.selectedIndex < _loc7_.length ? Number(_loc3_.selectedIndex) : Number(_loc7_.length - 1);
+            _loc8_ = _loc3_.selectedIndex < _loc7_.length ? int(_loc3_.selectedIndex) : int(_loc7_.length - 1);
          }
          _loc3_.dataProvider = new DataProvider(_loc7_);
          _loc3_.selectedIndex = !!this._isInited ? int(_loc8_) : int(int(_loc2_.current));

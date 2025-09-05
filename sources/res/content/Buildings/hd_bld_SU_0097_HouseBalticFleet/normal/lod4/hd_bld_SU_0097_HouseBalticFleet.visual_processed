@@ -8,92 +8,54 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_SU_0097_HouseBalticFleet</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod0</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s6</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s_ramp0</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
+	<customBsp>true</customBsp>
 	<renderSet>
-		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<stream>colour</stream>
-			<primitive>indices</primitive>
+			<vertices>s_nd0.vertices</vertices>
+			<primitive>s_nd0.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
 					<identifier>s_nd0</identifier>
-					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<fx>shaders/std_effects/PBS_ext_emissive.fx</fx>
 					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/hd_bld_SU_0097_HouseBalticFleet_1_BAM.dds</Texture>
+						<Texture>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/hd_bld_SU_0097_HouseBalticFleet_BAM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/hd_bld_SU_0097_HouseBalticFleet_BGMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/hd_bld_SU_0097_HouseBalticFleet_BANM.dds</Texture>
+					</property>
+					<property>
+						g_simpleEmissionColor
+						<Vector4>0.921569 0.717647 0.470588 0.000000</Vector4>
+						<Vector4>0.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_emissionStrength
+						<Vector4>10.000000 1.500000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableAO
 						<Bool>true</Bool>
 					</property>
-					<property>
-						metallicGlossMap
-						<Texture>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/hd_bld_SU_0097_HouseBalticFleet_1_BGMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>content/Buildings/hd_bld_SU_0097_HouseBalticFleet/hd_bld_SU_0097_HouseBalticFleet_1_BANM.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>24.183350 8.982846 0.000017</groupOrigin>
-			</primitiveGroup>
-			<primitiveGroup>
-				1
-				<material>
-					<identifier>s_ramp_0</identifier>
-					<materialKind>111</materialKind>
-					<collisionFlags>131</collisionFlags>
-				</material>
-				<groupOrigin>24.171066 -0.218240 -0.000000</groupOrigin>
+				<groupOrigin>24.183350 8.982850 0.000021</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>12.522160 -1.000098 -36.937122</min>
-		<max>35.844540 18.965790 36.937111</max>
+		<min>12.522160 -1.000089 -36.919724</min>
+		<max>35.844540 18.965790 36.919765</max>
 	</boundingBox>
-	<customBsp>true</customBsp>
-	<geometrySize>21594</geometrySize>
-	<minUVDensity>0.000081</minUVDensity>
+	<geometrySize>17844</geometrySize>
+	<minUVDensity>0.000168</minUVDensity>
 </root>

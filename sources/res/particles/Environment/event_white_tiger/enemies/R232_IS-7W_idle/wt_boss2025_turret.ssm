@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>isDeferred</name>
+			<type>bool</type>
+		</param>
+		<param>
+			<name>isAlwaysVisible</name>
+			<type>bool</type>
+		</param>
+	</params>
+	<node>
+		<name>idle</name>
+		<type>sequence</type>
+		<resource>particles/Environment/event_white_tiger/enemies/R232_IS-7W_idle/R232_turret_idle.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Sleep Node</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>bool</type>
+					<name>isAlwaysVisible</name>
+					<checked>true</checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-351.000000 133.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Sleep Node</name>
+		<type>sleep</type>
+		<time>1.000000 1.000000</time>
+		<transition>
+			<to>idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>bool</type>
+					<name>isAlwaysVisible</name>
+					<checked>false</checked>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-353.000000 0.500000 0.000000</uiPosition>
+	</node>
+</root>

@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_SU_0127_WorkshopWall/normal/lod3/hd_bld_SU_0127_WorkshopWall</parent>
-	<extent>150.000000</extent>
+	<extent>250.000000</extent>
 	<visibilityBox>
-		<min>-0.544181 -0.452839 -19.927412</min>
-		<max>0.824575 15.066060 0.674904</max>
+		<min>-0.615586 -0.355898 -19.811890</min>
+		<max>0.458128 5.630672 0.654962</max>
 	</visibilityBox>
 	<nodefullVisual>content/Buildings/hd_bld_SU_0127_WorkshopWall/normal/lod2/hd_bld_SU_0127_WorkshopWall</nodefullVisual>
 </root>

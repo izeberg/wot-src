@@ -83,7 +83,7 @@ class LobbyVehicleMarkerView(LobbyVehicleMarkerViewMeta):
     def __addCgfMarker(self, markerId, markerComponent, matrix):
         flashMarker = self.as_createCustomMarkerS(markerId, markerComponent.icon.replace('gui', '..'), makeString(markerComponent.textKey), markerComponent.iconPosition)
         _logger.info('cgf marker created %s', flashMarker)
-        self.__markersCache[markerId] = GUI.WGHangarVehicleMarker()
+        self.__markersCache[markerId] = GUI.HangarVehicleMarker()
         self.__markersCache[markerId].setMarker(flashMarker, matrix)
         self.__updateMarkerVisibility(markerId)
 
@@ -156,14 +156,14 @@ class LobbyVehicleMarkerView(LobbyVehicleMarkerViewMeta):
     def __createVehicleMarker(self, vehicle):
         vClass, vName, vMatrix = self.__getVehicleInfo(vehicle)
         flashMarker = self.as_createMarkerS(vehicle.id, vClass, vName)
-        self.__markersCache[vehicle.id] = GUI.WGHangarVehicleMarker()
+        self.__markersCache[vehicle.id] = GUI.HangarVehicleMarker()
         self.__markersCache[vehicle.id].setMarker(flashMarker, vMatrix)
         self.__updateMarkerVisibility(vehicle.id)
 
     def __createPlatoonMarker(self, vehicle, playerName):
         vClass, _, vMatrix = self.__getVehicleInfo(vehicle)
         flashMarker = self.as_createPlatoonMarkerS(vehicle.id, vClass, playerName)
-        self.__markersCache[vehicle.id] = GUI.WGHangarVehicleMarker()
+        self.__markersCache[vehicle.id] = GUI.HangarVehicleMarker()
         self.__markersCache[vehicle.id].setMarker(flashMarker, vMatrix)
         self.__updateMarkerVisibility(vehicle.id)
 

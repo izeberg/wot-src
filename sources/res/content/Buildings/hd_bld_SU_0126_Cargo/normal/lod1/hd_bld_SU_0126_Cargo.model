@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<parent>content/Buildings/hd_bld_SU_0126_Cargo/normal/lod2/hd_bld_SU_0126_Cargo</parent>
-	<extent>165.000000</extent>
+	<extent>70.000000</extent>
 	<visibilityBox>
 		<min>-0.493248 -10.160629 -0.835156</min>
 		<max>0.493248 0.000002 0.778813</max>
 	</visibilityBox>
-	<nodelessVisual>content/Buildings/hd_bld_SU_0126_Cargo/normal/lod1/hd_bld_SU_0126_Cargo</nodelessVisual>
+	<nodefullVisual>content/Buildings/hd_bld_SU_0126_Cargo/normal/lod1/hd_bld_SU_0126_Cargo</nodefullVisual>
 </root>

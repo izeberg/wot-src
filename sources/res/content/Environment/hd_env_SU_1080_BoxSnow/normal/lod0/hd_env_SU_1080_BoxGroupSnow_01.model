@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
 	<visibilityBox>
-		<min>-0.847193 -0.007900 -1.487760</min>
-		<max>1.216380 2.452510 2.143880</max>
+		<min>-1.466826 -0.028905 -0.605461</min>
+		<max>1.850764 2.452508 1.153836</max>
 	</visibilityBox>
 	<parent>content/Environment/hd_env_SU_1080_BoxSnow/normal/lod1/hd_env_SU_1080_BoxGroupSnow_01</parent>
-	<extent>45.000000</extent>
+	<extent>35.000000</extent>
 	<nodefullVisual>content/Environment/hd_env_SU_1080_BoxSnow/normal/lod0/hd_env_SU_1080_BoxGroupSnow_01</nodefullVisual>
 </root>

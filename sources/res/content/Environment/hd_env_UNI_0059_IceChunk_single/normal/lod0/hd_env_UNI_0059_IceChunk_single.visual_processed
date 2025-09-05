@@ -25,10 +25,6 @@
 					<materialKind>110</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
-					</property>
-					<property>
 						albedoHeightTile0
 						<Texture>content/Buildings/00_Tiles/dds/Blue_Ice_01_AM.dds</Texture>
 					</property>
