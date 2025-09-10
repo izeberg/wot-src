@@ -21,7 +21,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.052
+			0.053
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -69,7 +69,10 @@
 			</invisibilityBonus>
 		</deluxeAdditionalInvisibilityDevice>
 	</optDevsOverrides>
-	<repairCost>12</repairCost>
+	<repairCost>
+		11.0
+		<!--BW_String-->
+	</repairCost>
 	<premiumVehicleXPFactor>
 		0.05
 		<!--BW_String-->
@@ -114,9 +117,12 @@
 		<weight>27250</weight>
 		<maxHealth>2000</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>250</maxHealth>
-			<maxRegenHealth>188</maxRegenHealth>
-			<repairCost>10</repairCost>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>140</maxRegenHealth>
+			<repairCost>
+				1.0
+				<!--BW_String-->
+			</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/normal/lod0/Hull.model</undamaged>
@@ -310,7 +316,7 @@
 			<userString>#poland_vehicles:Chassis_Pl15_60TP_Lewandowskiego_CFE_A</userString>
 			<tags/>
 			<level>10</level>
-			<price>80000</price>
+			<price>82500</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<leftTrack>20</leftTrack>
@@ -339,9 +345,9 @@
 				<!--BW_String-->
 			</bulkHealthFactor>
 			<maxHealth>250</maxHealth>
-			<maxRegenHealth>188</maxRegenHealth>
+			<maxRegenHealth>190</maxRegenHealth>
 			<repairCost>
-				7.5
+				5.0
 				<!--BW_String-->
 			</repairCost>
 			<models>
@@ -2355,7 +2361,7 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.71999979
+				6.85714293
 				<!--BW_String-->
 			</repairTime>
 		</Chassis_Pl15_60TP_Lewandowskiego_CFE_A>
@@ -2365,7 +2371,7 @@
 			<userString>#poland_vehicles:Turret_1_Pl15_60TP_Lewandowskiego_CFE_A</userString>
 			<tags/>
 			<level>10</level>
-			<price>80000</price>
+			<price>66000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>260</armor_1>
@@ -2390,15 +2396,21 @@
 			<maxHealth>500</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>185</maxHealth>
-				<maxRegenHealth>93</maxRegenHealth>
-				<repairCost>10</repairCost>
+				<maxHealth>170</maxHealth>
+				<maxRegenHealth>85</maxRegenHealth>
+				<repairCost>
+					1.0
+					<!--BW_String-->
+				</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
-				<repairCost>2</repairCost>
+				<repairCost>
+					1.0
+					<!--BW_String-->
+				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
 				<_152mm_J_2_CFE_A>

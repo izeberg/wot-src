@@ -2707,12 +2707,9 @@
 			<guns>
 				<_120mm_Gun_T179_Rush_Ep1>
 					shared
-					<maxAmmo>36</maxAmmo>
+					<maxAmmo>44</maxAmmo>
 					<pitchLimits>
-						<minPitch>
-							0 -12 0.353005 -12 0.416667 -10 0.583333 -10 0.646995 -12 1 -12
-							<!--BW_String-->
-						</minPitch>
+						<minPitch>0 -12 1 -12</minPitch>
 						<maxPitch>
 							0 8 0.353005 8 0.416667 7 0.583333 7 0.646995 8 1 8
 							<!--BW_String-->
@@ -3033,10 +3030,7 @@
 		<detailed>
 			<engines>
 				<Continental_AV_1790_5C_Rush_Ep1>
-					<smplEnginePower>
-						856.3977
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>870</smplEnginePower>
 					<smplFwMaxSpeed>
 						35.4
 						<!--BW_String-->

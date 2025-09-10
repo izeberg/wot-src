@@ -258,12 +258,12 @@
 			<userString>#poland_vehicles:R_113_CFE_A</userString>
 			<tags/>
 			<level>10</level>
-			<price>55000</price>
+			<price>52000</price>
 			<notInShop>true</notInShop>
 			<weight>110</weight>
 			<distance>730</distance>
-			<maxHealth>230</maxHealth>
-			<maxRegenHealth>115</maxRegenHealth>
+			<maxHealth>250</maxHealth>
+			<maxRegenHealth>75</maxRegenHealth>
 			<repairCost>
 				3.5
 				<!--BW_String-->

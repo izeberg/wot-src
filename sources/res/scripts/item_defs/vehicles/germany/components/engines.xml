@@ -667,22 +667,22 @@
 		<Maybach_HL_120_TRM_A>
 			<userString>#germany_vehicles:Maybach_HL_120_TRM</userString>
 			<tags>gasoline</tags>
-			<level>4</level>
+			<level>5</level>
 			<notInShop>true</notInShop>
 			<price>19900</price>
 			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
 			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
-			<power>440</power>
+			<power>480</power>
 			<weight>510</weight>
-			<maxHealth>86</maxHealth>
-			<maxRegenHealth>42</maxRegenHealth>
-			<repairCost>4</repairCost>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>5</repairCost>
 			<fireStartingChance>
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>349</rpm_min>
-			<rpm_max>2681</rpm_max>
+			<rpm_min>324</rpm_min>
+			<rpm_max>2761</rpm_max>
 		</Maybach_HL_120_TRM_A>
 		<Maybach_HL_120_TRM_C>
 			<userString>#germany_vehicles:Maybach_HL_120_TRM_C</userString>
@@ -2821,7 +2821,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_v55_pc</wwsoundPC>
 			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
-			<power>1000</power>
+			<power>1080</power>
 			<weight>2000</weight>
 			<maxHealth>345</maxHealth>
 			<maxRegenHealth>173</maxRegenHealth>
