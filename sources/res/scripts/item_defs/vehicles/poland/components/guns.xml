@@ -5514,7 +5514,7 @@
 			<userString>#poland_vehicles:_152mm_J_2_CFE_A</userString>
 			<tags/>
 			<level>10</level>
-			<price>300000</price>
+			<price>340000</price>
 			<notInShop>true</notInShop>
 			<impulse>
 				0.62
@@ -5552,8 +5552,8 @@
 				<!--BW_String-->
 			</aimingTime>
 			<weight>4370</weight>
-			<maxHealth>220</maxHealth>
-			<maxRegenHealth>110</maxRegenHealth>
+			<maxHealth>252</maxHealth>
+			<maxRegenHealth>126</maxRegenHealth>
 			<repairCost>10</repairCost>
 			<invisibilityFactorAtShot>
 				0.1

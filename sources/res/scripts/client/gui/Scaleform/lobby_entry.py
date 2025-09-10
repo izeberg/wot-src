@@ -48,7 +48,7 @@ def getLobbyStateMachine():
     appLoader = dependency.instance(IAppLoader)
     app = appLoader.getApp()
     if app:
-        return app.stateMachine
+        return getattr(app, 'stateMachine', None)
     else:
         return
 

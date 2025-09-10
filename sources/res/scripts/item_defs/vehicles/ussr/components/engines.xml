@@ -1319,9 +1319,9 @@
 			<wwsoundNPC>eng_v2k_npc</wwsoundNPC>
 			<power>640</power>
 			<weight>750</weight>
-			<maxHealth>120</maxHealth>
-			<maxRegenHealth>60</maxRegenHealth>
-			<repairCost>7</repairCost>
+			<maxHealth>205</maxHealth>
+			<maxRegenHealth>103</maxRegenHealth>
+			<repairCost>6</repairCost>
 			<fireStartingChance>
 				0.15
 				<!--BW_String-->
