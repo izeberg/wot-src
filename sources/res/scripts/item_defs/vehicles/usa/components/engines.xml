@@ -1105,12 +1105,12 @@
 		<Ford_GAA_BPXIV>
 			<userString>#usa_vehicles:Ford_GAA_BPXIV</userString>
 			<tags>gasoline</tags>
-			<level>7</level>
+			<level>6</level>
 			<price>36000</price>
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
 			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
-			<power>520</power>
+			<power>560</power>
 			<weight>569</weight>
 			<maxHealth>234</maxHealth>
 			<maxRegenHealth>123</maxRegenHealth>
@@ -1119,8 +1119,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>299</rpm_min>
-			<rpm_max>2841</rpm_max>
+			<rpm_min>274</rpm_min>
+			<rpm_max>2921</rpm_max>
 		</Ford_GAA_BPXIV>
 		<Ford_GAA_A>
 			<userString>#usa_vehicles:Ford_GAA_A</userString>
@@ -2162,9 +2162,9 @@
 			<level>10</level>
 			<price>99000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
-			<power>810</power>
+			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
+			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
+			<power>870</power>
 			<weight>1159</weight>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>130</maxRegenHealth>
@@ -2173,8 +2173,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>416</rpm_min>
-			<rpm_max>2848</rpm_max>
+			<rpm_min>497</rpm_min>
+			<rpm_max>2008</rpm_max>
 		</Continental_AV_1790_5C_Rush_Ep1>
 		<Continental_AX_1770>
 			<userString>#usa_vehicles:Continental_AX_1770</userString>

@@ -2922,7 +2922,7 @@ class IComp7Controller(IGameController, ISeasonProvider):
     def hasActiveSeason(self, includePreannounced=False):
         raise NotImplementedError
 
-    def getActualSeasonNumber(self):
+    def getActualSeasonNumber(self, includePreannounced=False):
         raise NotImplementedError
 
     def getCurrentSeason(self, now=None, includePreannounced=False):
