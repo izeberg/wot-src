@@ -296,8 +296,8 @@ class Comp7Controller(Notifiable, SeasonProvider, IComp7Controller, IGlobalListe
     def hasActiveSeason(self, includePreannounced=False):
         return self.isAvailable() and bool(self.getCurrentSeason(includePreannounced=includePreannounced))
 
-    def getActualSeasonNumber(self):
-        season = self.getCurrentSeason() or self.getPreviousSeason()
+    def getActualSeasonNumber(self, includePreannounced=False):
+        season = self.getCurrentSeason(includePreannounced=includePreannounced) or self.getPreviousSeason()
         if season:
             return season.getNumber()
         else:

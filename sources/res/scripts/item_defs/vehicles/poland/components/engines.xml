@@ -1110,15 +1110,15 @@
 			<userString>#poland_vehicles:MT_50_TM_CFE_A</userString>
 			<tags>diesel</tags>
 			<level>10</level>
-			<price>120000</price>
+			<price>130000</price>
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_v55_pc</wwsoundPC>
 			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
 			<power>780</power>
 			<weight>2100</weight>
-			<maxHealth>345</maxHealth>
-			<maxRegenHealth>173</maxRegenHealth>
-			<repairCost>10</repairCost>
+			<maxHealth>370</maxHealth>
+			<maxRegenHealth>185</maxRegenHealth>
+			<repairCost>9</repairCost>
 			<fireStartingChance>
 				0.15
 				<!--BW_String-->
