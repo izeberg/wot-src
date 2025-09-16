@@ -12,7 +12,7 @@
 	<postProgressionTree>role_HT_break</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>27</forward>
+		<forward>30</forward>
 		<backward>12</backward>
 	</speedLimits>
 	<invisibility>
@@ -80,19 +80,19 @@
 	</camouflage>
 	<hull>
 		<armor>
-			<armor_1>170</armor_1>
+			<armor_1>190</armor_1>
 			<armor_2>140</armor_2>
-			<armor_3>90</armor_3>
+			<armor_3>110</armor_3>
 			<armor_4>70</armor_4>
 			<armor_5>40</armor_5>
 			<armor_6>30</armor_6>
 			<armor_7>30</armor_7>
 			<armor_8>0</armor_8>
-			<armor_9>90</armor_9>
-			<armor_10>90</armor_10>
+			<armor_9>140</armor_9>
+			<armor_10>120</armor_10>
 			<armor_11>90</armor_11>
 			<armor_12>70</armor_12>
-			<armor_13>90</armor_13>
+			<armor_13>110</armor_13>
 			<armor_14>90</armor_14>
 			<armor_15>70</armor_15>
 			<armor_16>70</armor_16>
@@ -2399,7 +2399,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.4
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>20</reloadTime>
@@ -3210,7 +3210,7 @@
 			<engines>
 				<G_15A>
 					<smplEnginePower>800</smplEnginePower>
-					<smplFwMaxSpeed>27</smplFwMaxSpeed>
+					<smplFwMaxSpeed>30</smplFwMaxSpeed>
 				</G_15A>
 			</engines>
 			<chassis>
@@ -3218,19 +3218,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.1529
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.13685
+								0.0885
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.08372
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

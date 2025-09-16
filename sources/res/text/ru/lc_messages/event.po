@@ -134,9 +134,7 @@ msgid "WtEventLootBoxesInfoView/tooltip/hunterSubtitle"
 msgstr "Стартеры Гончих выдаются:"
 
 msgid "WtEventLootBoxesInfoView/tooltip/hunterText"
-msgstr ""
-"• За выполнение боевых задач события «Ваффентрагер: реванш».\n"
-"• За прохождение некоторых этапов прогрессии."
+msgstr "• За прохождение некоторых этапов прогрессии."
 
 msgid "WtEventLootBoxesInfoView/tooltip/title"
 msgstr "Стартеры для запуска порталов"
@@ -243,6 +241,9 @@ msgstr "%(number). %(title)"
 
 msgid "WtEventPortals/inside/pluralTimes"
 msgstr "%(times) раз"
+
+msgid "WtEventPortals/inside/rare"
+msgstr "Крайне редкая награда!"
 
 msgid "WtEventPortals/inside/showAnimation"
 msgstr "Показывать анимацию"
@@ -578,9 +579,7 @@ msgstr ""
 "• За покупку определённых наборов в Магазине."
 
 msgid "lootBoxTooltip/howToGet/description/hunter"
-msgstr ""
-"• За выполнение боевых задач события «Ваффентрагер: реванш».\n"
-"• За прохождение этапов прогрессии."
+msgstr "• За прохождение этапов прогрессии."
 
 msgid "lootBoxTooltip/howToGet/title/boss"
 msgstr "Как получить"

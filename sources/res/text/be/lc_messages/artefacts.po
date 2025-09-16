@@ -1244,7 +1244,7 @@ msgstr "Паляўнічы на галовы"
 
 msgid "comp7_juggernaut/descr/active"
 msgstr ""
-"На наступныя {{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d с{colorTagClose} магутнасць рухавіка павышаецца на {colorTagOpen}%(enginePowerBuff).0f%%{colorTagClose}, хуткасць рамонту модуляў павялічваецца на {colorTagOpen}%(repairBuff)d%%{colorTagClose}, а час аглушэння зніжаецца на {colorTagOpen}%(stunDurationResist)d%%{colorTagClose}.\n"
+"На наступныя {colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d с{colorTagClose} магутнасць рухавіка павышаецца на {colorTagOpen}%(enginePowerBuff).0f%%{colorTagClose}, хуткасць рамонту модуляў павялічваецца на {colorTagOpen}%(repairBuff)d%%{colorTagClose}, а час аглушэння зніжаецца на {colorTagOpen}%(stunDurationResist)d%%{colorTagClose}.\n"
 "\n"
 "Траплянне снарада праціўніка ў вашу машыну падчас дзеяння навыку скарачае рэшту часу перанабівання гарматы на {colorTagOpen}%(gunReloadBoost)d с{colorTagClose}."
 
@@ -1299,7 +1299,7 @@ msgstr "Другое дыханне"
 
 msgid "comp7_sniper/descr/active"
 msgstr ""
-"На наступныя {{colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d с{colorTagClose} параметр гарматы «Роскід на 100 м» будзе роўны {colorTagOpen}%(dispersionFactor).3f м{colorTagClose}.\n"
+"На наступныя {colorTagOpen}%(duration_1)d/%(duration_2)d/%(duration_3)d с{colorTagClose} параметр гарматы «Роскід на 100 м» будзе роўны {colorTagOpen}%(dispersionFactor).3f м{colorTagClose}.\n"
 "\n"
 "Калі ваша машына не была выяўлена ў момант стрэлу, прычыненыя снарадам пашкоджанні зменяцца на {colorTagOpen}%(damageFactors_1).0f/%(damageFactors_2).0f/%(damageFactors_3).0f%%{colorTagClose}.\n"
 "\n"

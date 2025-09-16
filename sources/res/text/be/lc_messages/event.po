@@ -134,9 +134,7 @@ msgid "WtEventLootBoxesInfoView/tooltip/hunterSubtitle"
 msgstr "Стартары Ганчакоў выдаюцца:"
 
 msgid "WtEventLootBoxesInfoView/tooltip/hunterText"
-msgstr ""
-"• За выкананне баявых задач падзеі «Вафэнтрагер: рэванш».\n"
-"• За праходжанне пэўных этапаў прагрэсіі."
+msgstr "• За праходжанне некаторых этапаў прагрэсіі."
 
 msgid "WtEventLootBoxesInfoView/tooltip/title"
 msgstr "Стартары для запуску парталаў"
@@ -242,6 +240,9 @@ msgstr "%(number). %(title)"
 
 msgid "WtEventPortals/inside/pluralTimes"
 msgstr "%(times) разоў"
+
+msgid "WtEventPortals/inside/rare"
+msgstr "Вельмі рэдкая ўзнагарода!"
 
 msgid "WtEventPortals/inside/showAnimation"
 msgstr "Паказваць анімацыю"
@@ -579,9 +580,7 @@ msgstr ""
 "• За набыццё пэўных набораў у Краме."
 
 msgid "lootBoxTooltip/howToGet/description/hunter"
-msgstr ""
-"• За выкананне баявых задач падзеі «Вафэнтрагер: рэванш».\n"
-"• За праходжанне этапаў прагрэсіі."
+msgstr "• За праходжанне этапаў прагрэсіі."
 
 msgid "lootBoxTooltip/howToGet/title/boss"
 msgstr "Як атрымаць"

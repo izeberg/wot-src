@@ -249,6 +249,8 @@ package
       
       public static const WTEVENTPORTALS_INSIDE_CURRENTKEYSAMOUNTIS0_TANK:String = "#event:WtEventPortals/inside/currentKeysAmountIs0/tank";
       
+      public static const WTEVENTPORTALS_INSIDE_RARE:String = "#event:WtEventPortals/inside/rare";
+      
       public static const WTGUARANTEEDREWARDTOOLTIPVIEW_TITLE:String = "#event:WtGuaranteedRewardTooltipView/title";
       
       public static const WTGUARANTEEDREWARDTOOLTIPVIEW_PORTALRUNS:String = "#event:WtGuaranteedRewardTooltipView/portalRuns";
