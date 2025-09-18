@@ -30507,6 +30507,18 @@ package
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AUTOOPENVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/autoOpenView/background.png";
       
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AWARDVIEWS_OPENINGBOX_WT_COMMON_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/awardViews/openingBox/wt_common_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AWARDVIEWS_OPENINGBOX_WT_COMMON_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/awardViews/openingBox/wt_common_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AWARDVIEWS_OPENINGBOX_WT_EPIC_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/awardViews/openingBox/wt_epic_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AWARDVIEWS_OPENINGBOX_WT_EPIC_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/awardViews/openingBox/wt_epic_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AWARDVIEWS_OPENINGBOX_WT_RARE_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/awardViews/openingBox/wt_rare_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_AWARDVIEWS_OPENINGBOX_WT_RARE_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/awardViews/openingBox/wt_rare_rare.png";
+      
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_ENTRY_POINT_LOOTBOXEMPTY:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/entry_point/lootboxEmpty.png";
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_ENTRY_POINT_LOOTBOXGOLD:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/entry_point/lootboxGold.png";
@@ -30515,6 +30527,26 @@ package
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_GUARANTEED_GUARANTEEDICO:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/guaranteed/guaranteedIco.png";
       
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_BACKGROUND_DEFAULT:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/background/default.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_BOX_WT_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/box/wt_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_BOX_WT_EPIC:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/box/wt_epic.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_BOX_WT_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/box/wt_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_HOVER_WT_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/hover/wt_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_HOVER_WT_EPIC:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/hover/wt_epic.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_HOVER_WT_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/hover/wt_rare.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_IDLE_WT_COMMON:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/idle/wt_common.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_IDLE_WT_EPIC:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/idle/wt_epic.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_HASBOXESVIEW_LAYERS_IDLE_WT_RARE:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/hasBoxesView/layers/idle/wt_rare.png";
+      
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_INFOPAGE_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/infopage/background.png";
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_NOBOXESVIEW_BACKGROUND:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/noBoxesView/background.png";
@@ -30522,6 +30554,22 @@ package
       public static const MAPS_ICONS_LOOTBOXSYSTEM_CUSTOMIZABLE_WT_CN_NOBOXESVIEW_NOBOXESART:String = "../maps/icons/lootBoxSystem/customizable/wt_cn/noBoxesView/noBoxesArt.png";
       
       public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_ANNIVERSARYCN_RARITYOVERLAY_LOOTBOX_24040101:String = "../maps/icons/lootBoxSystem/events/anniversaryCN/rarityOverlay/lootBox_24040101.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_RARITYOVERLAY_VEHICLES_5233:String = "../maps/icons/lootBoxSystem/events/wt/rarityOverlay/vehicles_5233.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_RARITYOVERLAY_VEHICLES_66113:String = "../maps/icons/lootBoxSystem/events/wt/rarityOverlay/vehicles_66113.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_RARITYOVERLAY_VEHICLES_7537:String = "../maps/icons/lootBoxSystem/events/wt/rarityOverlay/vehicles_7537.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_CN_RARITYOVERLAY_LOOTBOX_25091902:String = "../maps/icons/lootBoxSystem/events/wt_cn/rarityOverlay/lootBox_25091902.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_CN_RARITYOVERLAY_VEHICLES_31249:String = "../maps/icons/lootBoxSystem/events/wt_cn/rarityOverlay/vehicles_31249.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_CN_RARITYOVERLAY_VEHICLES_5233:String = "../maps/icons/lootBoxSystem/events/wt_cn/rarityOverlay/vehicles_5233.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_CN_RARITYOVERLAY_VEHICLES_66113:String = "../maps/icons/lootBoxSystem/events/wt_cn/rarityOverlay/vehicles_66113.png";
+      
+      public static const MAPS_ICONS_LOOTBOXSYSTEM_EVENTS_WT_CN_RARITYOVERLAY_VEHICLES_7537:String = "../maps/icons/lootBoxSystem/events/wt_cn/rarityOverlay/vehicles_7537.png";
       
       public static const MAPS_ICONS_MANUAL_BACKGROUNDS_ACHIEVES:String = "../maps/icons/manual/backgrounds/achieves.png";
       

@@ -5078,7 +5078,7 @@ msgid "pm3_8_3_6"
 msgstr "协助-6"
 
 msgid "pm3_8_3_6_description_crits"
-msgstr "使敌方坦克无法移动%(goal)s次"
+msgstr "击毁%(goal)s辆敌方坦克的履带使其无法移动"
 
 msgid "pm3_8_3_6_description_stunTime"
 msgstr "对敌方坦克造成总计%(goal)s秒的弹震。潜在的弹震持续时间也计入"
@@ -5436,7 +5436,7 @@ msgid "pm3_9_2_13"
 msgstr "伏击-13"
 
 msgid "pm3_9_2_13_description_killWithCausingDamage"
-msgstr "击毁%(goal)s辆敌方重型坦克，且对其中每一辆造成至少%(damageDealt)s点损伤"
+msgstr "击毁%(goal)s辆敌方坦克，且对其中每一辆造成至少%(damageDealt)s点损伤"
 
 msgid "pm3_9_2_13_short"
 msgstr "伏击-13"
