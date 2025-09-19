@@ -5406,7 +5406,7 @@ msgid "pm3_8_3_6"
 msgstr "Assistance-6"
 
 msgid "pm3_8_3_6_description_crits"
-msgstr "Immobilize enemy vehicles %(goal)s times"
+msgstr "Immobilize %(goal)s enemy vehicles by destroying their tracks"
 
 msgid "pm3_8_3_6_description_stunTime"
 msgstr ""
@@ -5789,8 +5789,8 @@ msgstr "Ambush-13"
 
 msgid "pm3_9_2_13_description_killWithCausingDamage"
 msgstr ""
-"Destroy %(goal)s heavy tanks, causing at least %(damageDealt)s HP of damage "
-"to each of them"
+"Destroy %(goal)s enemy vehicles, causing at least %(damageDealt)s HP of "
+"damage to each of them"
 
 msgid "pm3_9_2_13_short"
 msgstr "Ambush-13"
