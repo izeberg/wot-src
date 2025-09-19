@@ -147,7 +147,6 @@ class WTEventPortalView(WtEventBasePortalsView, CallbackDelayer):
     def _onCacheResync(self, *_):
         if not self._eventCtrl.isEnabled():
             return
-        self._updateLootBoxesPurchaseCount()
         with self.viewModel.transaction() as (model):
             model.setIsBoxesEnabled(self.__lootBoxesCtrl.isEnabled())
             if self.__portalType == PortalType.HUNTER:

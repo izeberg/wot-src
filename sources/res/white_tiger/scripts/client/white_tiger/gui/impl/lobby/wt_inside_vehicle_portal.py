@@ -95,7 +95,6 @@ class WTInsideVehiclePortalView(WtEventBasePortalsView, CallbackDelayer):
     def _onCacheResync(self, *_):
         if not self._eventCtrl.isEnabled():
             return
-        self._updateLootBoxesPurchaseCount()
         with self.viewModel.transaction() as (model):
             model.setIsBoxesEnabled(self.__lootBoxesCtrl.isEnabled())
             self.__updatePortalInfo(model)

@@ -23,5 +23,5 @@ class WtEventBuyLootBoxesTooltipView(ViewImpl):
     def _onLoading(self, *args, **kwargs):
         super(WtEventBuyLootBoxesTooltipView, self)._onLoading(*args, **kwargs)
         with self.viewModel.transaction() as (model):
-            model.setAmountLeft(self.__lootBoxesCtrl.getAvailableForPurchaseLootBoxesCount())
-            model.setAmountMax(self.__lootBoxesCtrl.getLootBoxDailyPurchaseLimit())
+            model.setAmountLeft(100)
+            model.setAmountMax(100)

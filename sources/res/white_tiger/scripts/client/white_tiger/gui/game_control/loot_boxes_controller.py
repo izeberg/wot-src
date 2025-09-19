@@ -13,7 +13,6 @@ from messenger.formatters import TimeFormatter
 from white_tiger.gui.impl.lobby.wt_event_constants import getBonusGroup, WhiteTigerLootBoxes
 from white_tiger.gui.impl.lobby.wt_event_vehicle_portal import ReRollButton
 from helpers import dependency, time_utils
-from constants import LOOTBOX_TOKEN_PREFIX
 import Event
 from gui.shared.money import Money
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -152,13 +151,6 @@ class LootBoxesController(ILootBoxesController):
     def onLobbyInited(self, event):
         self.__addListeners()
         self.__packLootBoxes()
-        if not self.__entitlementsController.isCacheInited():
-            self.__updateEntitlementsCache()
-
-    def __updateEntitlementsCache(self):
-        if self.__gameCtrl.isAvailable():
-            lootBoxCounterEntitlementID = self.getModeSettings().lootBoxCounterEntitlementID
-            self.__entitlementsController.updateCache((lootBoxCounterEntitlementID,))
 
     def onAvatarBecomePlayer(self):
         self.__clear()
@@ -494,8 +486,6 @@ class LootBoxesController(ILootBoxesController):
             self.__hunterLastViewedCount = hunterCount
         if self.__bossLastViewedCount is None or bossCount < self.__bossLastViewedCount:
             self.__bossLastViewedCount = bossCount
-        if any([ token.startswith(LOOTBOX_TOKEN_PREFIX) for token in diff ]):
-            self.__updateEntitlementsCache()
         self.onUpdated()
         return
 

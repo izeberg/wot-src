@@ -1,4 +1,4 @@
-from constants import IS_CHINA, IS_LOOT_BOXES_ENABLED
+from constants import IS_LOOT_BOXES_ENABLED
 from gui.impl.gen import R
 from gui.impl.pub import ViewImpl
 from white_tiger.gui.impl.gen.view_models.views.lobby.wt_event_portals_base import WtEventPortalsBase
@@ -93,11 +93,6 @@ class WtEventBasePortalsView(ViewImpl):
         self.viewModel.setDiscountTokenCount(discountTokenCount)
         self.viewModel.setDiscount(discount)
         self.viewModel.setMaxDiscountTokenCount(self._eventCtrl.getConfig().mainPrizeMaxDiscountTokenCount)
-        self._updateLootBoxesPurchaseCount()
-
-    def _updateLootBoxesPurchaseCount(self):
-        if IS_CHINA:
-            self.viewModel.setAvailableLootBoxesPurchase(self._lootBoxesCtrl.getAvailableForPurchaseLootBoxesCount())
 
     def _onPortalAwardsViewClose(self, _):
         pass
