@@ -116,28 +116,28 @@ class SpecialEvents(object):
     HALLOWEEN = 'Halloween'
     ALL = (
      NY, NY18, NY19, NY20, NY21, NY22, NY23, FOOTBALL18, WINTER_HUNT, KURSK_BATTLE, HALLOWEEN)
-    ICONS = {NY: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       NY18: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       NY19: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       NY20: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       NY21: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       NY22: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       NY23: backport.image(R.images.gui.maps.icons.customization.style_info.newYear()), 
-       FOOTBALL18: backport.image(R.images.gui.maps.icons.customization.style_info.football()), 
-       WINTER_HUNT: backport.image(R.images.gui.maps.icons.customization.style_info.marathon()), 
-       KURSK_BATTLE: backport.image(R.images.gui.maps.icons.customization.style_info.marathon()), 
-       HALLOWEEN: backport.image(R.images.gui.maps.icons.customization.style_info.halloween())}
-    NAMES = {NY: backport.text(R.strings.vehicle_customization.styleInfo.event.ny()), 
-       NY18: backport.text(R.strings.vehicle_customization.styleInfo.event.ny18()), 
-       NY19: backport.text(R.strings.vehicle_customization.styleInfo.event.ny19()), 
-       NY20: backport.text(R.strings.vehicle_customization.styleInfo.event.ny20()), 
-       NY21: backport.text(R.strings.vehicle_customization.styleInfo.event.ny21()), 
-       NY22: backport.text(R.strings.vehicle_customization.styleInfo.event.ny22()), 
-       NY23: backport.text(R.strings.vehicle_customization.styleInfo.event.ny23()), 
-       FOOTBALL18: backport.text(R.strings.vehicle_customization.styleInfo.event.football18()), 
-       WINTER_HUNT: backport.text(R.strings.vehicle_customization.styleInfo.event.winter_hunt()), 
-       KURSK_BATTLE: backport.text(R.strings.vehicle_customization.styleInfo.event.kursk_battle()), 
-       HALLOWEEN: backport.text(R.strings.vehicle_customization.styleInfo.event.halloween())}
+    ICONS = {NY: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       NY18: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       NY19: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       NY20: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       NY21: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       NY22: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       NY23: R.images.gui.maps.icons.customization.style_info.newYear(), 
+       FOOTBALL18: R.images.gui.maps.icons.customization.style_info.football(), 
+       WINTER_HUNT: R.images.gui.maps.icons.customization.style_info.marathon(), 
+       KURSK_BATTLE: R.images.gui.maps.icons.customization.style_info.marathon(), 
+       HALLOWEEN: R.images.gui.maps.icons.customization.style_info.halloween()}
+    NAMES = {NY: R.strings.vehicle_customization.styleInfo.event.ny(), 
+       NY18: R.strings.vehicle_customization.styleInfo.event.ny18(), 
+       NY19: R.strings.vehicle_customization.styleInfo.event.ny19(), 
+       NY20: R.strings.vehicle_customization.styleInfo.event.ny20(), 
+       NY21: R.strings.vehicle_customization.styleInfo.event.ny21(), 
+       NY22: R.strings.vehicle_customization.styleInfo.event.ny22(), 
+       NY23: R.strings.vehicle_customization.styleInfo.event.ny23(), 
+       FOOTBALL18: R.strings.vehicle_customization.styleInfo.event.football18(), 
+       WINTER_HUNT: R.strings.vehicle_customization.styleInfo.event.winter_hunt(), 
+       KURSK_BATTLE: R.strings.vehicle_customization.styleInfo.event.kursk_battle(), 
+       HALLOWEEN: R.strings.vehicle_customization.styleInfo.event.halloween()}
 
 
 def camoIconTemplate(texture, width, height, colors, background=_CAMO_SWATCH_BACKGROUND, options=ImageOptions.NONE):
@@ -418,11 +418,17 @@ class Customization(FittingItem):
 
     @property
     def specialEventIcon(self):
-        return SpecialEvents.ICONS.get(self.specialEventTag, '')
+        imageKey = SpecialEvents.ICONS.get(self.specialEventTag, '')
+        if imageKey != '':
+            return backport.image(imageKey)
+        return imageKey
 
     @property
     def specialEventName(self):
-        return SpecialEvents.NAMES.get(self.specialEventTag, '')
+        nameKey = SpecialEvents.NAMES.get(self.specialEventTag, '')
+        if nameKey != '':
+            return backport.text(nameKey)
+        return nameKey
 
     @property
     def isProgressive(self):
@@ -717,7 +723,7 @@ class Paint(Customization):
 
 
 class Camouflage(Customization):
-    __slots__ = ('_bonus', )
+    __slots__ = ()
 
     def __init__(self, *args, **kwargs):
         super(Camouflage, self).__init__(*args, **kwargs)

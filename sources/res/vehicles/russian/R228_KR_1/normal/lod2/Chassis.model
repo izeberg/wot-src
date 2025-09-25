@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R228_KR_1/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.664353 -0.000517 -3.817134</min>
+		<max>1.664350 1.139950 3.725698</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R228_KR_1/normal/lod2/Chassis</nodefullVisual>
+</root>

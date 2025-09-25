@@ -47,6 +47,7 @@ _comp7Season2BlockBuilder = StaticSizeBlockBuilder('comp7Season2', COMP7_BLOCK_L
 _comp7Season3BlockBuilder = StaticSizeBlockBuilder('comp7Season3', COMP7_BLOCK_LAYOUT, {}, [])
 _comp7ArchiveGriffinBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveGriffin', COMP7_BLOCK_LAYOUT, {}, [])
 _comp7ArchivePegasusBlockBuilder = StaticSizeBlockBuilder('comp7ArchivePegasus', COMP7_BLOCK_LAYOUT, {}, [])
+_comp7ArchiveManticoreBlockBuilder = StaticSizeBlockBuilder('comp7ArchiveManticore', COMP7_BLOCK_LAYOUT, {}, [])
 _max15x15BlockBuilder = StaticSizeBlockBuilder('max15x15', MAX_15x15_AND_BEST_VEHICLE_BLOCK_LAYOUT, {}, [])
 _max7x7BlockBuilder = StaticSizeBlockBuilder('max7x7', MAX_AND_BEST_VEHICLE_BLOCK_LAYOUT, {}, [])
 _maxRated7x7BlockBuilder = StaticSizeBlockBuilder('maxRated7x7', MAX_AND_BEST_VEHICLE_BLOCK_LAYOUT, {}, [])
@@ -72,6 +73,7 @@ _maxComp7Season2BlockBuilder = StaticSizeBlockBuilder('maxComp7Season2', MAX_COM
 _maxComp7Season3BlockBuilder = StaticSizeBlockBuilder('maxComp7Season3', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _maxComp7ArchiveGriffinBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveGriffin', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 _maxComp7ArchivePegasusBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchivePegasus', MAX_COMP7_BLOCK_LAYOUT, {}, [])
+_maxComp7ArchiveManticoreBlockBuilder = StaticSizeBlockBuilder('maxComp7ArchiveManticore', MAX_COMP7_BLOCK_LAYOUT, {}, [])
 
 class VEHICLE_STATS:
     FRAGS = 'vehTypeFrags'
@@ -97,6 +99,7 @@ class VEHICLE_STATS:
     COMP7_CUT_SEASON_3 = 'comp7CutSeason3'
     COMP7_CUT_ARCHIVE_GRIFFIN = 'comp7CutArchiveGriffin'
     COMP7_CUT_ARCHIVE_PEGASUS = 'comp7CutArchivePegasus'
+    COMP7_CUT_ARCHIVE_MANTICORE = 'comp7CutArchiveManticore'
     PRESTIGE_SYSTEM = 'prestigeSystem'
     VEHICLE_ACHIEVEMENTS = 'vehicleAchievements'
     CUSTOMIZATION_ACHIEVEMENTS = 'customizationAchievements'
@@ -107,7 +110,7 @@ class VEHICLE_STATS:
      RATED_7x7_CUT, GLOBAL_MAP_COMMON_CUT, FALLOUT_CUT, MARK_OF_MASTERY_CUT, EPIC_BATTLE_CUT,
      COMP7_CUT_SEASON_1, COMP7_CUT_SEASON_2, COMP7_CUT_SEASON_3, COMP7_CUT_ARCHIVE_GRIFFIN, PRESTIGE_SYSTEM,
      VEHICLE_ACHIEVEMENTS, CUSTOMIZATION_ACHIEVEMENTS, COMP7_CUT_ARCHIVE_PEGASUS,
-     STAT_TRACKERS_VEH_STATS_CUT)
+     STAT_TRACKERS_VEH_STATS_CUT, COMP7_CUT_ARCHIVE_MANTICORE)
 
 
 _vehTypeFragsBlockBuilder = DictBlockBuilder(VEHICLE_STATS.FRAGS, 'I', 'H', VEH_TYPE_FRAGS_DEPENDENCIES)
@@ -133,6 +136,7 @@ _comp7CutSeason2BlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_SEASON_2
 _comp7CutSeason3BlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_SEASON_3, 'I', 'IIII', {})
 _comp7CutArchiveGriffinBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_GRIFFIN, 'I', 'IIII', {})
 _comp7CutArchivePegasusBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_PEGASUS, 'I', 'IIII', {})
+_comp7CutArchiveManticoreBlockBuilder = DictBlockBuilder(VEHICLE_STATS.COMP7_CUT_ARCHIVE_MANTICORE, 'I', 'IIII', {})
 _statTrackersVehStatsCutBlockBuilder = DictBlockBuilder(VEHICLE_STATS.STAT_TRACKERS_VEH_STATS_CUT, 'I', 'I', {})
 _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'fragsBeast', 'sniperSeries', 'maxSniperSeries', 'invincibleSeries',
@@ -181,7 +185,8 @@ _ACHIEVEMENTS15X15_BLOCK_LAYOUT = [
  'mapboxUniversal', 'wclTournamentParticipant', 'wclParticipant',
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
  'wt2023HunterWins', 'wt2023BossWins', 'wt2023MaxPlasma',
- 'wt2024HunterWins', 'wt2024BossWins', 'wt2024HunterWinsEpic', 'mapboxClimateExpert']
+ 'wt2024HunterWins', 'wt2024BossWins', 'wt2024HunterWinsEpic', 'mapboxClimateExpert',
+ 'readyForBattleAssault', 'readyForBattleSniper', 'readyForBattleSupport']
 _achievements15x15PopUps = [
  'warrior', 'invader', 'sniper', 'defender', 'steelwall', 'supporter',
  'scout', 'medalKay', 'medalCarius', 'medalKnispel', 'medalPoppel', 'medalAbrams',
@@ -228,7 +233,8 @@ _achievements15x15PopUps = [
  'wclTournamentParticipant', 'wclParticipant',
  'wt2022HunterWins', 'wt2022BossWins', 'wt2022SpecBossDefeat',
  'wt2023HunterWins', 'wt2023BossWins', 'wt2023MaxPlasma',
- 'wt2024HunterWins', 'wt2024BossWins', 'wt2024HunterWinsEpic', 'mapboxClimateExpert']
+ 'wt2024HunterWins', 'wt2024BossWins', 'wt2024HunterWinsEpic', 'mapboxClimateExpert',
+ 'readyForBattleAssault', 'readyForBattleSniper', 'readyForBattleSupport']
 _achievements15x15BlockBuilder = StaticSizeBlockBuilder('achievements', _ACHIEVEMENTS15X15_BLOCK_LAYOUT, ACHIEVEMENT15X15_DEPENDENCIES, _achievements15x15PopUps)
 _STEAM_BLOCK_LAYOUT = [
  'steamBattleCredits', 'steamLittleSavingsMedal', 'steamMintedCoinMedal', 'steamKingMidasMedal',
@@ -253,7 +259,7 @@ _STEAM_BLOCK_LAYOUT = [
  'steamShellTypeMedal', 'steamEquipTypeMedal', 'steamLastHeroMedal', 'steamShootToKillMedal',
  'steamBruteForceMedal', 'steamGuerrillaMedal', 'steamImpenetrableMedal', 'steamTurnOffMedal',
  'steamRadioMedal', 'steamTopLeague', 'steamTopLeagueMedal', 'steamSpotted', 'steamFrags',
- 'steamBattleHeroes']
+ 'steamBattleHeroes', 'steamGetTankLevel11Medal']
 _steamAchievementsPopUps = []
 _steamAchievementsLogRecords = ['steamLittleSavingsMedal', 'steamMintedCoinMedal', 'steamKingMidasMedal',
  'steamGoodStudentMedal', 'steamBattleHardenedMedal', 'steamExperienceMedal',
@@ -272,7 +278,7 @@ _steamAchievementsLogRecords = ['steamLittleSavingsMedal', 'steamMintedCoinMedal
  'steamGetTankLevel10Medal', 'steamShellTypeMedal', 'steamEquipTypeMedal',
  'steamLastHeroMedal', 'steamShootToKillMedal', 'steamBruteForceMedal',
  'steamGuerrillaMedal', 'steamImpenetrableMedal', 'steamTurnOffMedal',
- 'steamRadioMedal', 'steamTopLeagueMedal']
+ 'steamRadioMedal', 'steamTopLeagueMedal', 'steamGetTankLevel11Medal']
 _steamAchievementsBlockBuilder = StaticSizeBlockBuilder('steamAchievements', _STEAM_BLOCK_LAYOUT, STEAM_ACHIEVEMENT_DEPENDENCIES, _steamAchievementsPopUps, _steamAchievementsLogRecords)
 ACHIEVEMENTS7X7_BLOCK_LAYOUT = [
  'wolfAmongSheep', 'wolfAmongSheepMedal', 'geniusForWar',
@@ -369,10 +375,16 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'comp7_4_yearly_gold', 'comp7_4_yearly_champion', 'comp7_4_yearly_legend',
  'hw2024Medal', 'BattlePassCommonPr_15extra', 'NY25_AtmsphrLevel',
  'NY25_CelebChallenge', '14YearsOfService', 'BattlePassCommonPr_NY25',
- 'BattlePassCommonPr_16', 'BattlePassCommonPr_17', 'BPReserveAchievement_2',
- 'BPReserveAchievement_3', 'BPReserveAchievement_4', 'BPReserveAchievement_5',
+ 'BattlePassCommonPr_16', 'BattlePassCommonPr_17', 'BattlePassCommonPr_17extra_1',
+ 'BattlePassCommonPr_17extra_2', 'BattlePassCommonPr_17extra_3', 'BattlePassCommonPr_18',
  'BPReserveAchievement_6', 'BPReserveAchievement_7', 'BPReserveAchievement_8',
- 'BPReserveAchievement_9', 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal']
+ 'BPReserveAchievement_9', 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal',
+ 'wot15thAnniversary', 'wot15thAnniversaryElite',
+ 'meritPM3', 'comp7_5_1', 'comp7_5_2', 'comp7_5_3',
+ 'comp7_5_yearly_iron', 'comp7_5_yearly_bronze', 'comp7_5_yearly_silver',
+ 'comp7_5_yearly_gold', 'comp7_5_yearly_champion', 'comp7_5_yearly_legend',
+ 'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
+ 'twoPointZeroCollectorMedal']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -439,10 +451,16 @@ _singleAchievementsPopUps = [
  'comp7_4_yearly_gold', 'comp7_4_yearly_champion', 'comp7_4_yearly_legend', 'hw2024Medal',
  'BattlePassCommonPr_15extra', 'NY25_AtmsphrLevel', 'NY25_CelebChallenge',
  '14YearsOfService', 'BattlePassCommonPr_NY25', 'BattlePassCommonPr_16',
- 'BattlePassCommonPr_17', 'BPReserveAchievement_2', 'BPReserveAchievement_3',
- 'BPReserveAchievement_4', 'BPReserveAchievement_5', 'BPReserveAchievement_6',
+ 'BattlePassCommonPr_17', 'BattlePassCommonPr_17extra_1', 'BattlePassCommonPr_17extra_2',
+ 'BattlePassCommonPr_17extra_3', 'BattlePassCommonPr_18', 'BPReserveAchievement_6',
  'BPReserveAchievement_7', 'BPReserveAchievement_8', 'BPReserveAchievement_9',
- 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal']
+ 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal',
+ 'wot15thAnniversary', 'wot15thAnniversaryElite',
+ 'meritPM3', 'comp7_5_1', 'comp7_5_2', 'comp7_5_3',
+ 'comp7_5_yearly_iron', 'comp7_5_yearly_bronze', 'comp7_5_yearly_silver',
+ 'comp7_5_yearly_gold', 'comp7_5_yearly_champion', 'comp7_5_yearly_legend',
+ 'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
+ 'twoPointZeroCollectorMedal']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']
@@ -536,7 +554,9 @@ accountDossierLayout = (
  _comp7ArchivePegasusBlockBuilder, _maxComp7ArchivePegasusBlockBuilder,
  _comp7CutArchivePegasusBlockBuilder,
  _commendationsBlockBuilder,
- _statTrackersVehStatsCutBlockBuilder)
+ _statTrackersVehStatsCutBlockBuilder,
+ _comp7ArchiveManticoreBlockBuilder, _maxComp7ArchiveManticoreBlockBuilder,
+ _comp7CutArchiveManticoreBlockBuilder)
 ACCOUNT_DOSSIER_BLOCKS = {b.name:b for b in accountDossierLayout}
 ACCOUNT_DOSSIER_STATIC_BLOCKS = frozenset(b.name for b in accountDossierLayout if type(b) == StaticSizeBlockBuilder)
 ACCOUNT_DOSSIER_BINARY_SET_BLOCKS = [ b.name for b in accountDossierLayout if type(b) == BinarySetDossierBlockBuilder ]

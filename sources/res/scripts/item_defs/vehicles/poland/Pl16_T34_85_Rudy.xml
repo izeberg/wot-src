@@ -2030,7 +2030,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7800</weight>
-			<maxLoad>35300</maxLoad>
 			<terrainResistance>
 				0.9 1 1.8
 				<!--BW_String-->
@@ -4706,10 +4705,7 @@
 		<detailed>
 			<engines>
 				<V-2-34_B>
-					<smplEnginePower>
-						528.6406
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>560</smplEnginePower>
 					<smplFwMaxSpeed>54</smplFwMaxSpeed>
 				</V-2-34_B>
 			</engines>

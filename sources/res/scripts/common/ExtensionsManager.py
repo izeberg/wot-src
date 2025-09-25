@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import BigWorld, ResMgr
 from collections import namedtuple
 _EXTENSIONS_RELATIVE_DIR = '../wot_ext'
@@ -30,7 +31,7 @@ class ExtensionsManager(object):
 
     @property
     def extensions(self):
-        return self._extensions.values()
+        return [ value for _, value in sorted(self._extensions.items()) ]
 
     @property
     def activeExtensions(self):

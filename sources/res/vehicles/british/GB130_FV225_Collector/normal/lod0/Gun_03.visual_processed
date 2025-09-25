@@ -1,0 +1,684 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Gun</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>G</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 3.000000</row3>
+					</transform>
+					<node>
+						<identifier>G_L</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>-0.220002 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>G_Left_Dn_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Left_Dn_L2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 -0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Left_Dn_L3</identifier>
+									<transform>
+										<row0>0.985243 0.171163 -0.000000</row0>
+										<row1>-0.171163 0.985243 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.021117 -0.118072 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Left_Dn_L3_BlendBone</identifier>
+										<transform>
+											<row0>-0.496725 0.867908 -0.000000</row0>
+											<row1>0.867908 0.496725 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>-0.068265 0.303657 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+							</node>
+						</node>
+						<node>
+							<identifier>G_Left_Dn_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Left_Dn_R2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 -0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Left_Dn_R3</identifier>
+									<transform>
+										<row0>0.985243 0.171163 -0.000000</row0>
+										<row1>-0.171163 0.985243 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.119832 0.001092 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Left_Dn_R3_BlendBone</identifier>
+										<transform>
+											<row0>-0.496725 0.867908 -0.000000</row0>
+											<row1>0.867908 0.496725 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.008597 0.169354 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+							</node>
+						</node>
+						<node>
+							<identifier>G_Left_Up_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Left_Up_L2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 -0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Left_Up_L3</identifier>
+									<transform>
+										<row0>0.985243 0.171163 -0.000000</row0>
+										<row1>-0.171163 0.985243 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.119993 -0.001159 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Left_Up_L3_BlendBone</identifier>
+										<transform>
+											<row0>-0.496725 0.867908 -0.000000</row0>
+											<row1>0.867908 0.496725 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>-0.227304 0.212621 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+							</node>
+						</node>
+						<node>
+							<identifier>G_Left_Up_R</identifier>
+							<transform>
+								<row0>0.165225 -0.986256 0.000000</row0>
+								<row1>0.986256 0.165225 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Left_Up_R2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Left_Up_R3</identifier>
+									<transform>
+										<row0>0.980587 -0.196083 -0.000000</row0>
+										<row1>0.196083 0.980587 0.000000</row1>
+										<row2>-0.000000 -0.000000 1.000000</row2>
+										<row3>0.119993 -0.001159 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Left_Up_R3_BlendBone</identifier>
+										<transform>
+											<row0>0.493072 0.869988 -0.000000</row0>
+											<row1>0.869988 -0.493072 0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>-0.009414 0.169007 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>G_Left_Up_R2_BlendBone</identifier>
+									<transform>
+										<row0>0.654090 0.756416 -0.000000</row0>
+										<row1>0.756416 -0.654090 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>0.143901 0.166413 6.564562</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>G_Left_Up_R_BlendBone</identifier>
+								<transform>
+									<row0>0.165225 0.986256 0.000000</row0>
+									<row1>-0.986256 0.165225 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.036350 0.216978 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>HP_gunFire_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000002 3.574493</row3>
+							</transform>
+						</node>
+						<node>
+							<identifier>hood_Dn_Left</identifier>
+							<transform>
+								<row0>0.999991 -0.004251 0.000000</row0>
+								<row1>0.004251 0.999991 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>-0.001705 -0.198450 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>hood_Dn_Left_BlendBone</identifier>
+								<transform>
+									<row0>0.999991 0.004251 0.000000</row0>
+									<row1>-0.004251 0.999991 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.220861 0.199391 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>hood_Up_Left</identifier>
+							<transform>
+								<row0>0.999991 -0.004251 0.000000</row0>
+								<row1>0.004251 0.999991 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000005 0.203827 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>hood_Up_Left_BlendBone</identifier>
+								<transform>
+									<row0>0.999991 0.004251 0.000000</row0>
+									<row1>-0.004251 0.999991 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>0.220861 -0.202890 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>G_L_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>0.220002 -0.000000 -3.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>G_R</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.220000 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>G_Right_Dn_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Right_Dn_L2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Right_Dn_L3</identifier>
+									<transform>
+										<row0>0.985243 0.171163 -0.000000</row0>
+										<row1>-0.171163 0.985243 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.021117 -0.118072 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Right_Dn_L3_BlendBone</identifier>
+										<transform>
+											<row0>-0.496725 0.867908 -0.000000</row0>
+											<row1>0.867908 0.496725 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.150295 -0.078224 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>G_Right_Dn_L2_BlendBone</identifier>
+									<transform>
+										<row0>-0.637948 0.770080 -0.000000</row0>
+										<row1>0.770080 0.637948 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.140349 -0.169417 6.564561</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>G_Right_Dn_L_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.220000 -0.000000 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>G_Right_Dn_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Right_Dn_R2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Right_Dn_R3</identifier>
+									<transform>
+										<row0>0.985243 0.171163 -0.000000</row0>
+										<row1>-0.171163 0.985243 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>-0.119832 0.001092 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Right_Dn_R3_BlendBone</identifier>
+										<transform>
+											<row0>-0.496725 0.867908 -0.000000</row0>
+											<row1>0.867908 0.496725 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>0.227156 -0.212527 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>G_Right_Dn_R2_BlendBone</identifier>
+									<transform>
+										<row0>-0.637948 0.770080 -0.000000</row0>
+										<row1>0.770080 0.637948 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.140349 -0.169417 6.564561</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>G_Right_Dn_R_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.220000 -0.000000 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>G_Right_Up_L</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Right_Up_L2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 -0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Right_Up_L3</identifier>
+									<transform>
+										<row0>0.985243 0.171163 -0.000000</row0>
+										<row1>-0.171163 0.985243 0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.119993 -0.001159 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Right_Up_L3_BlendBone</identifier>
+										<transform>
+											<row0>-0.496725 0.867908 -0.000000</row0>
+											<row1>0.867908 0.496725 -0.000000</row1>
+											<row2>0.000000 0.000000 1.000000</row2>
+											<row3>-0.008744 -0.169260 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>G_Right_Up_L2_BlendBone</identifier>
+									<transform>
+										<row0>-0.637948 0.770080 -0.000000</row0>
+										<row1>0.770080 0.637948 -0.000000</row1>
+										<row2>0.000000 0.000000 1.000000</row2>
+										<row3>0.140349 -0.169417 6.564561</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>G_Right_Up_L_BlendBone</identifier>
+								<transform>
+									<row0>1.000000 0.000000 0.000000</row0>
+									<row1>0.000000 1.000000 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.220000 -0.000000 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>G_Right_Up_R</identifier>
+							<transform>
+								<row0>0.165225 -0.986256 0.000000</row0>
+								<row1>0.986256 0.165225 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000000 0.000000 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>G_Right_Up_R2</identifier>
+								<transform>
+									<row0>-0.637948 0.770079 0.000000</row0>
+									<row1>0.770079 0.637948 -0.000000</row1>
+									<row2>-0.000000 -0.000000 -1.000000</row2>
+									<row3>0.000000 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>G_Right_Up_R3</identifier>
+									<transform>
+										<row0>0.980587 -0.196083 0.000000</row0>
+										<row1>0.196083 0.980587 -0.000000</row1>
+										<row2>-0.000000 -0.000000 1.000000</row2>
+										<row3>0.119993 -0.001159 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>G_Right_Up_R3_BlendBone</identifier>
+										<transform>
+											<row0>0.493072 0.869988 -0.000000</row0>
+											<row1>0.869988 -0.493072 0.000000</row1>
+											<row2>-0.000000 0.000000 1.000000</row2>
+											<row3>-0.226366 -0.213789 6.564561</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>G_Right_Up_R2_BlendBone</identifier>
+									<transform>
+										<row0>0.654090 0.756416 -0.000000</row0>
+										<row1>0.756416 -0.654090 0.000000</row1>
+										<row2>-0.000000 0.000000 1.000000</row2>
+										<row3>-0.143900 -0.166411 6.564562</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>G_Right_Up_R_BlendBone</identifier>
+								<transform>
+									<row0>0.165225 0.986256 0.000000</row0>
+									<row1>-0.986256 0.165225 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.036350 -0.216976 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>HP_gunFire_R</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000002 0.000002 3.574493</row3>
+							</transform>
+						</node>
+						<node>
+							<identifier>hood_Dn_Right</identifier>
+							<transform>
+								<row0>0.999991 -0.004251 0.000000</row0>
+								<row1>0.004251 0.999991 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>-0.001705 -0.198450 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>hood_Dn_Right_BlendBone</identifier>
+								<transform>
+									<row0>0.999991 0.004251 0.000000</row0>
+									<row1>-0.004251 0.999991 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.219137 0.197521 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>hood_Up_Right</identifier>
+							<transform>
+								<row0>0.999991 -0.004251 0.000000</row0>
+								<row1>0.004251 0.999991 0.000000</row1>
+								<row2>-0.000000 -0.000000 1.000000</row2>
+								<row3>0.000005 0.203827 3.564561</row3>
+							</transform>
+							<node>
+								<identifier>hood_Up_Right_BlendBone</identifier>
+								<transform>
+									<row0>0.999991 0.004251 0.000000</row0>
+									<row1>-0.004251 0.999991 0.000000</row1>
+									<row2>0.000000 0.000000 -1.000000</row2>
+									<row3>-0.219137 -0.204761 -6.564561</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>G_R_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.220000 -0.000000 -3.000000</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>HP_gunFire</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.000002 3.574493</row3>
+						</transform>
+					</node>
+					<node>
+						<identifier>G_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 0.000000 -3.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Gun_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>static_joint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000000 0.329781 -0.732865</row3>
+				</transform>
+				<node>
+					<identifier>static_joint_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 -0.329781 0.732865</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Gun_BlendBone</node>
+		<node>static_joint_BlendBone</node>
+		<node>G_L_BlendBone</node>
+		<node>G_Left_Up_R3_BlendBone</node>
+		<node>G_Left_Up_L3_BlendBone</node>
+		<node>G_Left_Dn_R3_BlendBone</node>
+		<node>G_Left_Dn_L3_BlendBone</node>
+		<node>G_R_BlendBone</node>
+		<node>G_Right_Up_R3_BlendBone</node>
+		<node>G_Right_Up_L3_BlendBone</node>
+		<node>G_Right_Dn_R3_BlendBone</node>
+		<node>G_Right_Dn_L3_BlendBone</node>
+		<node>hood_Dn_Left_BlendBone</node>
+		<node>hood_Up_Left_BlendBone</node>
+		<node>hood_Up_Right_BlendBone</node>
+		<node>hood_Dn_Right_BlendBone</node>
+		<geometry>
+			<vertices>gun_03_Shape.vertices</vertices>
+			<primitive>gun_03_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013700 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB130_FV225_Collector/FV225_Collector_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB130_FV225_Collector/FV225_Collector_guns_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB130_FV225_Collector/FV225_Collector_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB130_FV225_Collector/FV225_Collector_guns_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/british/GB130_FV225_Collector/FV225_Collector_guns_ID.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.000285 0.426256 -2.757096</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.006791 -0.365649 -1.098350</min>
+		<max>1.006221 1.218160 6.612542</max>
+	</boundingBox>
+	<geometrySize>808770</geometrySize>
+</root>

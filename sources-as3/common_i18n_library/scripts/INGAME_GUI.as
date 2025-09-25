@@ -85,13 +85,13 @@ package
       
       public static const PLAYER_ERRORS_CANT_SHOOT_GUN_LOCKED:String = "#ingame_gui:player_errors/cant_shoot/gun_locked";
       
-      public static const PLAYER_ERRORS_CANT_SHOOT_GUN_OVERHEATED:String = "#ingame_gui:player_errors/cant_shoot/gun_overheated";
-      
       public static const PLAYER_ERRORS_CANT_SWITCH_ENGINE_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/engine_destroyed";
       
       public static const PLAYER_ERRORS_CANT_SWITCH_GUN_DESTROYED:String = "#ingame_gui:player_errors/cant_switch/gun_destroyed";
       
       public static const PLAYER_ERRORS_CANT_SWITCH_ONE_SHELL_LEFT:String = "#ingame_gui:player_errors/cant_switch/one_shell_left";
+      
+      public static const PLAYER_ERRORS_MECHANICS_SUPPORTWEAPON_CANT_SHOOT:String = "#ingame_gui:player_errors/mechanics/supportWeapon/cant_shoot";
       
       public static const PLAYER_ERRORS_EQUIPMENT_ALREADYACTIVATED:String = "#ingame_gui:player_errors/equipment/alreadyActivated";
       
@@ -1465,6 +1465,10 @@ package
       
       public static const SIEGEMODE_HINT_ROCKETACCELERATION:String = "#ingame_gui:siegeMode/hint/rocketAcceleration";
       
+      public static const SIEGEMODE_HINT_RECHARGEABLENITRO:String = "#ingame_gui:siegeMode/hint/rechargeableNitro";
+      
+      public static const SIEGEMODE_HINT_TARGETDESIGNATOR:String = "#ingame_gui:siegeMode/hint/targetDesignator";
+      
       public static const SIEGEMODE_HINT_TWINGUN:String = "#ingame_gui:siegeMode/hint/twinGun";
       
       public static const EFFICIENCYRIBBONS_ENEMYSECTORCAPTURED:String = "#ingame_gui:efficiencyRibbons/enemySectorCaptured";
@@ -1500,6 +1504,10 @@ package
       public static const STUN_INDICATOR:String = "#ingame_gui:stun/indicator";
       
       public static const STUN_SECONDS:String = "#ingame_gui:stun/seconds";
+      
+      public static const SPOTTED_INDICATOR:String = "#ingame_gui:spotted/indicator";
+      
+      public static const SPOTTED_SECONDS:String = "#ingame_gui:spotted/seconds";
       
       public static const BATTLEPROGRESS_HINT_PRESS:String = "#ingame_gui:battleProgress/hint/press";
       
@@ -1889,6 +1897,16 @@ package
       
       public static const HELPSCREEN_MAPBOX_DESCRIPTION:String = "#ingame_gui:helpScreen/mapbox/description";
       
+      public static const HELPSCREEN_PILLBOX_PRESS:String = "#ingame_gui:helpScreen/pillbox/press";
+      
+      public static const HELPSCREEN_PILLBOX_DESCRIPTION_ENTER:String = "#ingame_gui:helpScreen/pillbox/description/enter";
+      
+      public static const HELPSCREEN_PILLBOX_DESCRIPTION_EXITSIEGE:String = "#ingame_gui:helpScreen/pillbox/description/exitSiege";
+      
+      public static const HELPSCREEN_PILLBOX_DESCRIPTION_EXITPILLBOX:String = "#ingame_gui:helpScreen/pillbox/description/exitPillbox";
+      
+      public static const HELPSCREEN_PILLBOX_NOBINDING:String = "#ingame_gui:helpScreen/pillbox/noBinding";
+      
       public static const COMMANDERCAM_HINT_DESCRIPTION:String = "#ingame_gui:commanderCam/hint/description";
       
       public static const BATTLECOMMUNICATION_HINT_PRESS:String = "#ingame_gui:battleCommunication/hint/press";
@@ -2098,6 +2116,10 @@ package
       public static const BOT_ELITE:String = "#ingame_gui:bot/elite";
       
       public static const BOT_BOSS:String = "#ingame_gui:bot/boss";
+      
+      public static const GRILLE_STATUS_SPEEDLIMIT:String = "#ingame_gui:grille/status/speedlimit";
+      
+      public static const GRILLE_STATUS_RELOAD:String = "#ingame_gui:grille/status/reload";
        
       
       public function INGAME_GUI()

@@ -72,6 +72,10 @@ def isPlayerTeamKillSuspected():
     return bool(getattr(BigWorld.player(), 'tkillIsSuspected', 0))
 
 
+def getIsObserverFPV():
+    return bool(getattr(BigWorld.player(), 'isObserverFPV', 0))
+
+
 def isVehicleAlive(avatar=None):
     if avatar is None:
         avatar = BigWorld.player()
@@ -412,7 +416,7 @@ def isObserver(avatar=None):
     try:
         result = avatar.isObserver()
     except AttributeError:
-        _logger.exception('Attribute "isObserved" is not found')
+        _logger.exception('Attribute "isObserver" is not found')
         result = False
 
     return result
@@ -469,12 +473,11 @@ def isObserverBothTeams(avatar=None):
 def getObserverTeam(avatar=None):
     if avatar is None:
         avatar = BigWorld.player()
-    result = getPlayerTeam(avatar)
     if isObserver(avatar) and isObserverBothTeams(avatar):
         vehicle = getPlayerVehicle(avatar)
         if vehicle:
-            result = vehicle.publicInfo['team']
-    return result
+            return vehicle.publicInfo['team']
+    return getPlayerTeam(avatar)
 
 
 def getInBattleVehicleSwitchComponent():
@@ -520,16 +523,24 @@ def isPostmortemFeatureEnabled(ctrlModeName, avatar=None):
     return result
 
 
-def getIsObserverFPV():
-    player = BigWorld.player()
-    if player:
-        return player.isObserverFPV
-    return False
-
-
 def getTargetID(undefinedTargetID=None):
     player = BigWorld.player()
     if player is not None and player.target is not None:
         return player.target.id
     else:
         return undefinedTargetID
+
+
+def isFPV(vehicleID):
+    avatar = BigWorld.player()
+    if avatar is None:
+        return False
+    else:
+        vehAttachedID = getVehicleIDAttached(avatar)
+        if vehAttachedID is None:
+            return False
+        if vehAttachedID == vehicleID:
+            if isObserver(avatar):
+                return getIsObserverFPV()
+            return isVehicleAlive(avatar)
+        return False

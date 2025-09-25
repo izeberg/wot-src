@@ -1,0 +1,3622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>0.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.680330 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541690 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 240.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402810 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263593 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124673 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.016019 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156533 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295400 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434419 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -60.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.711666 2.048000 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 150.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.681036 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 120.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541365 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -60.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402500 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -150.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263500 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 60.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124800 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 150.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.015700 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156169 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 120.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295000 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434000 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712014 1.909500 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.680330 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541690 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402810 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263593 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 225.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124673 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 45.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.016019 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 165.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156533 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295400 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -45.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434419 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -105.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.711666 1.770208 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 105.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.680330 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 255.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541690 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402810 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263593 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 285.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124673 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.016019 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 225.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156533 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295400 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434419 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712633 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>brown_yellow_4_13</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.851214 1.551550 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.681036 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541365 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -45.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402500 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -170.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263500 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124800 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -45.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.015700 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 15.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156169 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -135.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295000 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 165.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434000 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 15.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712014 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -165.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -449.999908</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>brown_yellow_5_13</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.850597 1.412600 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -180.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -449.999908</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.680330 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 255.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541690 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402810 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263593 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 285.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124673 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.016019 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 225.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156533 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295400 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434419 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712633 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 135.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>brown_yellow_6_13</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_03.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.851214 1.275930 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.680330 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 240.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541690 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402810 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 150.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263593 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 150.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124673 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.016019 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 60.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156533 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295400 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434419 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 150.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_7_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712633 1.055115 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 30.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.681036 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541365 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -45.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402500 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -170.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263500 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124800 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -45.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.015700 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 15.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156169 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -135.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295000 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 165.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434000 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 15.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -337.500763</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_8_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712014 0.918094 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -165.000000</value>
+				<inTangent>0.000000 0.000000 -225.000015</inTangent>
+				<outTangent>0.000000 0.000000 -449.999908</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_1</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.819500 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -60.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_2</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.680330 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_3</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.541690 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_4</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.402810 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_5</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.263593 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_6</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>-0.124673 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 210.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_7</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.016019 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 150.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_8</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.156533 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_9</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.295400 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_10</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.434419 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 60.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_11</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.573000 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_9_12</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.712633 0.777672 -0.379250</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 210.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_1_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 2.050000 -0.228000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 45.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_2_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 2.050000 -0.089011</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 -45.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>green_1_3_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_04.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 2.050000 0.049897</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_1_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.911256 -0.228000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_2_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.911260 -0.089010</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 120.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>pink_2_3_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_07.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.911260 0.049900</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_1_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.772720 -0.228000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 -105.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_2_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.772720 -0.089010</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 90.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_3_3_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.772720 0.049900</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 -165.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_1_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.552500 -0.228000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 -120.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_2_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.552500 -0.089010</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>red_4_3_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_06.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.552500 0.049900</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_1_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.414000 -0.228000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_2_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.414000 -0.089010</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>yellow_5_3_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_05.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.414000 0.049900</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 195.000000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>256</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_1_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.275500 -0.228000</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 -105.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_2_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.275500 -0.089010</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 180.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>orange_6_3_side</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_personal_missions/Environment/hpm_015_Computer/normal/lod0/hpm_015_Computer_01_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>1.420000 1.275500 0.049900</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -90.000000 75.000000</value>
+				<inTangent>0.000000 0.000000 -360.000000</inTangent>
+				<outTangent>0.000000 0.000000 -360.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

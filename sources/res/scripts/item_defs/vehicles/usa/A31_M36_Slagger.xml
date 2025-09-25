@@ -12,7 +12,7 @@
 	<postProgressionTree>role_ATSPG_universal</postProgressionTree>
 	<speedLimits>
 		<forward>42</forward>
-		<backward>11</backward>
+		<backward>12</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
@@ -2114,14 +2114,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_M36_Slagger_4>
-			<userString>#usa_vehicles:Chassis_M36_Slagger_4</userString>
+		<Chassis_A31_M36_Slagger>
+			<userString>#usa_vehicles:Chassis_A31_M36_Slagger</userString>
 			<tags/>
 			<level>5</level>
 			<price>6400</price>
 			<unlocks>
 				<chassis>
-					Chassis_M36_Slagger_5
+					Chassis_A31_M36_Slagger_2
 					<cost>6950</cost>
 				</chassis>
 			</unlocks>
@@ -2130,14 +2130,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>28890</maxLoad>
 			<terrainResistance>
-				1.3 1.7 2.5
+				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>38</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.25
@@ -4860,9 +4859,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M36_Slagger_4>
-		<Chassis_M36_Slagger_5>
-			<userString>#usa_vehicles:Chassis_M36_Slagger_5</userString>
+		</Chassis_A31_M36_Slagger>
+		<Chassis_A31_M36_Slagger_2>
+			<userString>#usa_vehicles:Chassis_A31_M36_Slagger_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>22100</price>
@@ -4871,14 +4870,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>30500</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>42</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.23
@@ -7601,21 +7599,15 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M36_Slagger_5>
+		</Chassis_A31_M36_Slagger_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_M36_Slagger_4>
+		<Turret_1_A31_M36_Slagger>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:Turret_1_M36_Slagger_4</userString>
+			<userString>#usa_vehicles:Turret_1_A31_M36_Slagger</userString>
 			<tags>cannotDetach</tags>
 			<level>5</level>
 			<price>9000</price>
-			<unlocks>
-				<turret>
-					Turret_2_M36_Slagger_4
-					<cost>4600</cost>
-				</turret>
-			</unlocks>
 			<armor>
 				<armor_1>76</armor_1>
 				<armor_3>25</armor_3>
@@ -7646,11 +7638,11 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_76mm_AT_Gun_M1A2>
+				<_76mm_AT_Gun_M1A2_M36>
 					shared
 					<maxAmmo>65</maxAmmo>
 					<reloadTime>
-						3.1
+						4.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionRadius>
@@ -7659,13 +7651,13 @@
 					</shotDispersionRadius>
 					<unlocks>
 						<gun>
-							_90mm_AT_Gun_M3
+							_90mm_AT_Gun_M3_M36
 							<cost>14000</cost>
 						</gun>
 					</unlocks>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.18
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7697,7 +7689,7 @@
 						<gun>20</gun>
 					</armor>
 					<aimingTime>
-						1.7
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -7834,14 +7826,20 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_76mm_AT_Gun_M1A2>
-				<_90mm_AT_Gun_M3>
+				</_76mm_AT_Gun_M1A2_M36>
+				<_90mm_AT_Gun_M3_M36>
 					shared
 					<maxAmmo>47</maxAmmo>
+					<unlocks>
+						<turret>
+							Turret_2_A31_M36_Slagger
+							<cost>4600</cost>
+						</turret>
+					</unlocks>
 					<reloadTime>8</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.18
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7853,12 +7851,6 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<unlocks>
-						<vehicle>
-							A64_T25_AT
-							<cost>45000</cost>
-						</vehicle>
-					</unlocks>
 					<armor>
 						<armor_1>
 							75
@@ -8023,7 +8015,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_AT_Gun_M3>
+				</_90mm_AT_Gun_M3_M36>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A31_M36_Slagger/normal/lod0/Turret_01.model</undamaged>
@@ -8782,13 +8774,19 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_M36_Slagger_4>
-		<Turret_2_M36_Slagger_4>
+		</Turret_1_A31_M36_Slagger>
+		<Turret_2_A31_M36_Slagger>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:Turret_2_M36_Slagger_4</userString>
+			<userString>#usa_vehicles:Turret_2_A31_M36_Slagger</userString>
 			<tags>cannotDetach</tags>
 			<level>6</level>
 			<price>16100</price>
+			<unlocks>
+				<vehicle>
+					A64_T25_AT
+					<cost>45000</cost>
+				</vehicle>
+			</unlocks>
 			<armor>
 				<armor_1>76</armor_1>
 				<armor_3>25</armor_3>
@@ -8823,11 +8821,11 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_76mm_AT_Gun_M1A2>
+				<_76mm_AT_Gun_M1A2_M36>
 					shared
 					<maxAmmo>65</maxAmmo>
 					<reloadTime>
-						3.1
+						4.3
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionRadius>
@@ -8836,7 +8834,7 @@
 					</shotDispersionRadius>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -8868,7 +8866,7 @@
 						<gun>20</gun>
 					</armor>
 					<aimingTime>
-						1.7
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -9008,8 +9006,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_76mm_AT_Gun_M1A2>
-				<_90mm_AT_Gun_M3>
+				</_76mm_AT_Gun_M1A2_M36>
+				<_90mm_AT_Gun_M3_M36>
 					shared
 					<maxAmmo>47</maxAmmo>
 					<reloadTime>8</reloadTime>
@@ -9019,7 +9017,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -9191,7 +9189,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_AT_Gun_M3>
+				</_90mm_AT_Gun_M3_M36>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A31_M36_Slagger/normal/lod0/Turret_02.model</undamaged>
@@ -9952,93 +9950,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_M36_Slagger_4>
+		</Turret_2_A31_M36_Slagger>
 	</turrets0>
 	<engines>
-		<Wright_Continental_R-975EC2>
+		<GMC_6046>
 			shared
 			<unlocks>
 				<engine>
-					Wright_Continental_R-975C1
-					<cost>900</cost>
+					Ford_GAA_M36
+					<cost>5100</cost>
 				</engine>
 			</unlocks>
-		</Wright_Continental_R-975EC2>
-		<Wright_Continental_R-975C1>
-			shared
-			<unlocks>
-				<engine>
-					GMC_6046
-					<cost>1410</cost>
-				</engine>
-			</unlocks>
-		</Wright_Continental_R-975C1>
-		<GMC_6046>shared</GMC_6046>
+		</GMC_6046>
+		<Ford_GAA_M36>shared</Ford_GAA_M36>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_506
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_506>shared</SCR_506>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Wright_Continental_R-975EC2>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>42</smplFwMaxSpeed>
-				</Wright_Continental_R-975EC2>
-				<Wright_Continental_R-975C1>
-					<smplEnginePower>
-						422.9124
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>42</smplFwMaxSpeed>
-				</Wright_Continental_R-975C1>
 				<GMC_6046>
-					<smplEnginePower>
-						444.0581
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>430</smplEnginePower>
 					<smplFwMaxSpeed>42</smplFwMaxSpeed>
 				</GMC_6046>
+				<Ford_GAA_M36>
+					<smplEnginePower>470</smplEnginePower>
+					<smplFwMaxSpeed>42</smplFwMaxSpeed>
+				</Ford_GAA_M36>
 			</engines>
 			<chassis>
-				<Chassis_M36_Slagger_4>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.13685
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_M36_Slagger_4>
-				<Chassis_M36_Slagger_5>
+				<Chassis_A31_M36_Slagger>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -10059,7 +10004,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_M36_Slagger_5>
+				</Chassis_A31_M36_Slagger>
+				<Chassis_A31_M36_Slagger_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A31_M36_Slagger_2>
 			</chassis>
 		</detailed>
 	</physics>

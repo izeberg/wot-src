@@ -1,4 +1,4 @@
-import Math
+import typing, Math
 
 class Sound:
 
@@ -158,7 +158,7 @@ def WG_loadCommon(*args, **kwargs):
     pass
 
 
-def WW_setRTCPGlobal(*args, **kwargs):
+def WW_setRTCPGlobal(name, value, **kwargs):
     pass
 
 

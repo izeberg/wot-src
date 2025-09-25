@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-4.67179 -0.276532 1.17832
+			<!--BW_String-->
+		</min>
+		<max>
+			4.64315 1.3001 7.8086
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<nodelessVisual>content/Buildings/hd_bld_EU_225_Cathedral/normal/lod0/hd_bld_EU_225_Cathedral_Steps</nodelessVisual>
+	<parent>content/Buildings/hd_bld_EU_225_Cathedral/normal/lod1/hd_bld_EU_225_Cathedral_Steps</parent>
+	<extent>
+		96.0
+		<!--BW_String-->
+	</extent>
+</root>

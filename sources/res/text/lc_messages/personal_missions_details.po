@@ -20,7 +20,7 @@ msgid "pm2_5_1_10_description_baseCapture"
 msgstr "Принять участие в успешном захвате базы."
 
 msgid "pm2_5_1_10_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "pm2_5_1_10_short"
 msgstr "Союз-10"
@@ -366,7 +366,7 @@ msgid "pm2_5_2_13_description_alive"
 msgstr "Не быть уничтоженным по итогу боя."
 
 msgid "pm2_5_2_13_description_topByDamage"
-msgstr "Попасть в топ-3 по урону в обеих командах."
+msgstr "Попасть в топ-%(desiredPosition)s обеих команд по урону."
 
 msgid "pm2_5_2_13_short"
 msgstr "Блок-13"
@@ -739,7 +739,7 @@ msgid "pm2_5_3_2_description_stunNumber"
 msgstr "Оглушить %(goal)s разных ед. техники противника."
 
 msgid "pm2_5_3_2_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "pm2_5_3_2_short"
 msgstr "Альянс-2"
@@ -1312,7 +1312,7 @@ msgid "pm2_6_1_1_description_alive"
 msgstr "Не быть уничтоженным по итогу боя."
 
 msgid "pm2_6_1_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "pm2_6_1_1_description_win"
 msgstr "Уничтожить противника / захватить или защитить базу."
@@ -1363,7 +1363,7 @@ msgid "pm2_6_1_3_description_damage"
 msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "pm2_6_1_3_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "pm2_6_1_3_short"
 msgstr "Союз-3"
@@ -1669,7 +1669,7 @@ msgid "pm2_6_2_1_description_damage"
 msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "pm2_6_2_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "pm2_6_2_1_short"
 msgstr "Блок-1"
@@ -1838,7 +1838,7 @@ msgid "pm2_6_2_8_description_hits"
 msgstr "Поджечь машину противника своего уровня или выше."
 
 msgid "pm2_6_2_8_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "pm2_6_2_8_short"
 msgstr "Блок-8"
@@ -2860,7 +2860,7 @@ msgid "pm2_7_1_5"
 msgstr "Союз-5. В тройке лучших"
 
 msgid "pm2_7_1_5_description_topByDamage"
-msgstr "Попасть в топ-3 по урону в обеих командах."
+msgstr "Попасть в топ-%(desiredPosition)s обеих команд по урону."
 
 msgid "pm2_7_1_5_description_topByDamageAdv"
 msgstr "Занять первое место по урону в обеих командах."
@@ -3351,7 +3351,7 @@ msgid "pm2_7_3_13"
 msgstr "Альянс-13. Выйти в лидеры"
 
 msgid "pm2_7_3_13_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в обеих командах."
+msgstr "Попасть в топ-%(desiredPosition)s обеих команд по опыту."
 
 msgid "pm2_7_3_13_description_topByExpAdv"
 msgstr "Занять первое место по опыту в обеих командах."
@@ -3420,7 +3420,7 @@ msgid "pm2_7_3_2"
 msgstr "Альянс-2. Место на пьедестале"
 
 msgid "pm2_7_3_2_description_topByDamage"
-msgstr "Попасть в топ-3 по урону в своей команде."
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
 
 msgid "pm2_7_3_2_description_topByDamageAdv"
 msgstr "Занять первое место по урону в своей команде."
@@ -3915,6 +3915,2319 @@ msgstr "Урон"
 
 msgid "pm2_7_4_9_title_hitsAdv"
 msgstr "Для улучшения результата"
+
+msgid "pm3_10_1_1"
+msgstr "Авангард-1"
+
+msgid "pm3_10_1_10"
+msgstr "Авангард-10"
+
+msgid "pm3_10_1_10_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона."
+
+msgid "pm3_10_1_10_description_damage"
+msgstr "Нанести %(goal)s урона технике противника."
+
+msgid "pm3_10_1_10_short"
+msgstr "Авангард-10"
+
+msgid "pm3_10_1_10_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_10_1_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_11"
+msgstr "Авангард-11"
+
+msgid "pm3_10_1_11_description_blockedDamage"
+msgstr ""
+"Заблокировать урона в %(vehicleHealthFactor)s раза больше прочности "
+"собственной машины."
+
+msgid "pm3_10_1_11_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_10_1_11_short"
+msgstr "Авангард-11"
+
+msgid "pm3_10_1_11_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_10_1_11_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_12"
+msgstr "Авангард-12"
+
+msgid "pm3_10_1_12_description_damageandBlock"
+msgstr ""
+"Суммарно нанести и заблокировать урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_10_1_12_short"
+msgstr "Авангард-12"
+
+msgid "pm3_10_1_12_title_damageandBlock"
+msgstr "Нанесение и блокирование урона"
+
+msgid "pm3_10_1_13"
+msgstr "Авангард-13"
+
+msgid "pm3_10_1_13_description_damage"
+msgstr "Нанести %(goal)s ед. урона обездвиженной технике противника."
+
+msgid "pm3_10_1_13_description_damageAlt"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_10_1_13_short"
+msgstr "Авангард-13"
+
+msgid "pm3_10_1_13_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_13_title_damageAlt"
+msgstr "Урон"
+
+msgid "pm3_10_1_14"
+msgstr "Авангард-14"
+
+msgid "pm3_10_1_14_description_counterAttack"
+msgstr ""
+"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
+
+msgid "pm3_10_1_14_short"
+msgstr "Авангард-14"
+
+msgid "pm3_10_1_14_title_counterAttack"
+msgstr "Урон"
+
+msgid "pm3_10_1_15"
+msgstr "Авангард-15"
+
+msgid "pm3_10_1_15_description_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона."
+
+msgid "pm3_10_1_15_short"
+msgstr "Авангард-15"
+
+msgid "pm3_10_1_15_title_damageDealtReceivedAndBlocked"
+msgstr "Комплексное условие"
+
+msgid "pm3_10_1_1_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_10_1_1_description_topByDamage"
+msgstr "Занять первое место по урону в обеих командах."
+
+msgid "pm3_10_1_1_short"
+msgstr "Авангард-1"
+
+msgid "pm3_10_1_1_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_1_title_topByDamage"
+msgstr "Топ-1"
+
+msgid "pm3_10_1_2"
+msgstr "Авангард-2"
+
+msgid "pm3_10_1_2_description_damage"
+msgstr "Нанести %(goal)s ед. урона в первые %(timeLimit)s мин боя."
+
+msgid "pm3_10_1_2_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника в первые %(timeLimit)s мин боя."
+
+msgid "pm3_10_1_2_short"
+msgstr "Авангард-2"
+
+msgid "pm3_10_1_2_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_2_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_3"
+msgstr "Авангард-3"
+
+msgid "pm3_10_1_3_description_killWithCausingDamage"
+msgstr ""
+"Уничтожить ПТ-САУ противника, нанеся ей не менее %(damageDealt)s ед. урона."
+
+msgid "pm3_10_1_3_description_killWithCausingDamageAlt"
+msgstr ""
+"Уничтожить тяжёлый танк противника, нанеся ему не менее %(damageDealt)s ед. "
+"урона."
+
+msgid "pm3_10_1_3_short"
+msgstr "Авангард-3"
+
+msgid "pm3_10_1_3_title_killWithCausingDamage"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_3_title_killWithCausingDamageAlt"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_4"
+msgstr "Авангард-4"
+
+msgid "pm3_10_1_4_description_kills"
+msgstr "Уничтожить не менее %(goal)s ед. обездвиженной техники противника."
+
+msgid "pm3_10_1_4_description_killsAlt"
+msgstr "Уничтожить %(goal)s ед. техники противника."
+
+msgid "pm3_10_1_4_short"
+msgstr "Авангард-4"
+
+msgid "pm3_10_1_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_4_title_killsAlt"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_5"
+msgstr "Авангард-5"
+
+msgid "pm3_10_1_5_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, попадающей в ваш радиус "
+"обзора."
+
+msgid "pm3_10_1_5_short"
+msgstr "Авангард-5"
+
+msgid "pm3_10_1_5_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_6"
+msgstr "Авангард-6"
+
+msgid "pm3_10_1_6_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона."
+
+msgid "pm3_10_1_6_description_damage"
+msgstr "Нанести %(goal)s ед. урона тяжёлым танкам противника."
+
+msgid "pm3_10_1_6_short"
+msgstr "Авангард-6"
+
+msgid "pm3_10_1_6_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_10_1_6_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_7"
+msgstr "Авангард-7"
+
+msgid "pm3_10_1_7_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника того же уровня, что и ваша "
+"машина (или выше), с расстояния не более %(distanceShortOrEqual)s м."
+
+msgid "pm3_10_1_7_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника того же уровня, что и ваша машина"
+" (или выше), с расстояния не более %(distanceShortOrEqual)s м."
+
+msgid "pm3_10_1_7_short"
+msgstr "Авангард-7"
+
+msgid "pm3_10_1_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_7_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_8"
+msgstr "Авангард-8"
+
+msgid "pm3_10_1_8_description_blockedDamage"
+msgstr ""
+"Заблокировать %(goal)s ед. урона, оставаясь неподвижным в момент "
+"блокирования урона."
+
+msgid "pm3_10_1_8_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s средних танков или ПТ-САУ противника."
+
+msgid "pm3_10_1_8_short"
+msgstr "Авангард-8"
+
+msgid "pm3_10_1_8_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_10_1_8_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_1_9"
+msgstr "Авангард-9"
+
+msgid "pm3_10_1_9_description_damage"
+msgstr ""
+"Нанести суммарно %(goal)s ед. урона тяжёлым или средним танкам противника."
+
+msgid "pm3_10_1_9_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s тяжёлых или средних танков противника."
+
+msgid "pm3_10_1_9_short"
+msgstr "Авангард-9"
+
+msgid "pm3_10_1_9_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_1_9_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_1"
+msgstr "Засада-1"
+
+msgid "pm3_10_2_10"
+msgstr "Засада-10"
+
+msgid "pm3_10_2_10_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s лёгких или средних танков противника."
+
+msgid "pm3_10_2_10_description_spotAndKill"
+msgstr "Уничтожить %(goal)s ед. лично обнаруженной техники противника."
+
+msgid "pm3_10_2_10_short"
+msgstr "Засада-10"
+
+msgid "pm3_10_2_10_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_10_title_spotAndKill"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_11"
+msgstr "Засада-11"
+
+msgid "pm3_10_2_11_description_damage"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_10_2_11_short"
+msgstr "Засада-11"
+
+msgid "pm3_10_2_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_12"
+msgstr "Засада-12"
+
+msgid "pm3_10_2_12_description_killWithCausingDamage"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника, нанеся каждой не менее "
+"%(damageDealt)s ед. урона."
+
+msgid "pm3_10_2_12_short"
+msgstr "Засада-12"
+
+msgid "pm3_10_2_12_title_killWithCausingDamage"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_13"
+msgstr "Засада-13"
+
+msgid "pm3_10_2_13_description_damageAndAssist"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "pm3_10_2_13_short"
+msgstr "Засада-13"
+
+msgid "pm3_10_2_13_title_damageAndAssist"
+msgstr "Комплексное условие"
+
+msgid "pm3_10_2_14"
+msgstr "Засада-14"
+
+msgid "pm3_10_2_14_description_totalDamagePercent"
+msgstr "Нанести 30%% от суммарного урона своей команды."
+
+msgid "pm3_10_2_14_description_win"
+msgstr "Уничтожить противника / захватить или защитить базу."
+
+msgid "pm3_10_2_14_short"
+msgstr "Засада-14"
+
+msgid "pm3_10_2_14_title_totalDamagePercent"
+msgstr "Урон"
+
+msgid "pm3_10_2_14_title_win"
+msgstr "Победить в бою."
+
+msgid "pm3_10_2_15"
+msgstr "Засада-15"
+
+msgid "pm3_10_2_15_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_10_2_15_short"
+msgstr "Засада-15"
+
+msgid "pm3_10_2_15_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_1_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_10_2_1_description_topByExp"
+msgstr "Занять первое место по опыту в своей команде."
+
+msgid "pm3_10_2_1_short"
+msgstr "Засада-1"
+
+msgid "pm3_10_2_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_1_title_topByExp"
+msgstr "Топ-1"
+
+msgid "pm3_10_2_2"
+msgstr "Засада-2"
+
+msgid "pm3_10_2_2_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, не потеряв очков прочности до этого момента."
+
+msgid "pm3_10_2_2_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s средних танков или ПТ-САУ противника."
+
+msgid "pm3_10_2_2_short"
+msgstr "Засада-2"
+
+msgid "pm3_10_2_2_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_2_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_3"
+msgstr "Засада-3"
+
+msgid "pm3_10_2_3_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, оставаясь необнаруженным в момент его нанесения."
+
+msgid "pm3_10_2_3_description_killWithCausingDamage"
+msgstr ""
+"Уничтожить тяжёлый танк противника, нанеся ему выстрелами не менее "
+"%(damageDealt)s ед. урона."
+
+msgid "pm3_10_2_3_short"
+msgstr "Засада-3"
+
+msgid "pm3_10_2_3_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_3_title_killWithCausingDamage"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_4"
+msgstr "Засада-4"
+
+msgid "pm3_10_2_4_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_10_2_4_description_piercingSeries"
+msgstr "Пробить броню не менее %(goal)s раз подряд."
+
+msgid "pm3_10_2_4_short"
+msgstr "Засада-4"
+
+msgid "pm3_10_2_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_4_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_10_2_5"
+msgstr "Засада-5"
+
+msgid "pm3_10_2_5_description_damage"
+msgstr "Нанести %(goal)s ед. урона обездвиженной технике противника."
+
+msgid "pm3_10_2_5_description_kills"
+msgstr "Уничтожить не менее %(goal)s тяжёлых танков противника."
+
+msgid "pm3_10_2_5_short"
+msgstr "Засада-5"
+
+msgid "pm3_10_2_5_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_5_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_6"
+msgstr "Засада-6"
+
+msgid "pm3_10_2_6_description_damage"
+msgstr "Нанести %(goal)s ед. урона ПТ-САУ противника."
+
+msgid "pm3_10_2_6_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника с расстояния не менее "
+"%(distanceGreatOrEqual)s м."
+
+msgid "pm3_10_2_6_short"
+msgstr "Засада-6"
+
+msgid "pm3_10_2_6_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_6_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_7"
+msgstr "Засада-7"
+
+msgid "pm3_10_2_7_description_damage"
+msgstr "Выстрелами нанести %(goal)s ед. урона движущейся технике противника."
+
+msgid "pm3_10_2_7_short"
+msgstr "Засада-7"
+
+msgid "pm3_10_2_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_8"
+msgstr "Засада-8"
+
+msgid "pm3_10_2_8_description_damage"
+msgstr "Нанести %(goal)s ед. урона средним или лёгким танкам противника."
+
+msgid "pm3_10_2_8_description_kills"
+msgstr "Уничтожить лёгкий танк противника в первые %(timeLimit)s мин боя."
+
+msgid "pm3_10_2_8_short"
+msgstr "Засада-8"
+
+msgid "pm3_10_2_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_2_8_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_2_9"
+msgstr "Засада-9"
+
+msgid "pm3_10_2_9_description_hitsBlindly"
+msgstr ""
+"Не менее %(hits)s раз нанести урон технике противника, необнаруженной в "
+"момент его нанесения."
+
+msgid "pm3_10_2_9_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_10_2_9_short"
+msgstr "Засада-9"
+
+msgid "pm3_10_2_9_title_hitsBlindly"
+msgstr "Урон"
+
+msgid "pm3_10_2_9_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_1"
+msgstr "Поддержка-1"
+
+msgid "pm3_10_3_10"
+msgstr "Поддержка-10"
+
+msgid "pm3_10_3_10_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника с расстояния не более "
+"%(distanceShortOrEqual)s м."
+
+msgid "pm3_10_3_10_description_killsAlt"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника с расстояния не менее "
+"%(distanceGreatOrEqual)s м."
+
+msgid "pm3_10_3_10_short"
+msgstr "Поддержка-10"
+
+msgid "pm3_10_3_10_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_10_title_killsAlt"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_11"
+msgstr "Поддержка-11"
+
+msgid "pm3_10_3_11_description_assist"
+msgstr "Передать разведданные для нанесения %(goal)s ед. урона."
+
+msgid "pm3_10_3_11_description_stunTime"
+msgstr ""
+"Оглушить средние танки или ПТ-САУ противника суммарно на %(goal)s с. В зачёт"
+" идёт потенциальная длительность оглушения."
+
+msgid "pm3_10_3_11_short"
+msgstr "Поддержка-11"
+
+msgid "pm3_10_3_11_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_10_3_11_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_12"
+msgstr "Поддержка-12"
+
+msgid "pm3_10_3_12_description_assist"
+msgstr ""
+"Обеспечить нанесение %(goal)s ед. урона, передавая разведданные или "
+"обездвиживая технику противника."
+
+msgid "pm3_10_3_12_description_stunTime"
+msgstr ""
+"Оглушить технику противника суммарно на %(goal)s с. В зачёт идёт "
+"потенциальная длительность оглушения."
+
+msgid "pm3_10_3_12_short"
+msgstr "Поддержка-12"
+
+msgid "pm3_10_3_12_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_10_3_12_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_13"
+msgstr "Поддержка-13"
+
+msgid "pm3_10_3_13_description_medal"
+msgstr "Получить знак классности «Мастер»."
+
+msgid "pm3_10_3_13_short"
+msgstr "Поддержка-13"
+
+msgid "pm3_10_3_13_title_medal"
+msgstr "Знак классности"
+
+msgid "pm3_10_3_14"
+msgstr "Поддержка-14"
+
+msgid "pm3_10_3_14_description_assist"
+msgstr ""
+"Передать разведданные для нанесения %(goal)s ед. урона, оставаясь "
+"необнаруженным в момент его нанесения."
+
+msgid "pm3_10_3_14_description_stunNumber"
+msgstr "Оглушить тяжёлые танки противника не менее %(goal)s раз."
+
+msgid "pm3_10_3_14_short"
+msgstr "Поддержка-14"
+
+msgid "pm3_10_3_14_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_10_3_14_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_15"
+msgstr "Поддержка-15"
+
+msgid "pm3_10_3_15_description_assist"
+msgstr ""
+"Обеспечить нанесение %(goal)s ед. урона, оглушая или обездвиживая технику "
+"противника."
+
+msgid "pm3_10_3_15_description_damageAndAssist"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "pm3_10_3_15_short"
+msgstr "Поддержка-15"
+
+msgid "pm3_10_3_15_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_10_3_15_title_damageAndAssist"
+msgstr "Комплексное условие"
+
+msgid "pm3_10_3_1_description_assistedHits"
+msgstr ""
+"Обеспечить нанесение урона по %(goal)s ед. техники противника, передавая "
+"разведданные, обездвиживая или оглушая технику противника."
+
+msgid "pm3_10_3_1_short"
+msgstr "Поддержка-1"
+
+msgid "pm3_10_3_1_title_assistedHits"
+msgstr "Поддержка"
+
+msgid "pm3_10_3_2"
+msgstr "Поддержка-2"
+
+msgid "pm3_10_3_2_description_kills"
+msgstr "Уничтожить лёгкий танк или САУ противника."
+
+msgid "pm3_10_3_2_description_topByExp"
+msgstr "Занять первое место по опыту в обеих командах."
+
+msgid "pm3_10_3_2_short"
+msgstr "Поддержка-2"
+
+msgid "pm3_10_3_2_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_2_title_topByExp"
+msgstr "Топ-1"
+
+msgid "pm3_10_3_3"
+msgstr "Поддержка-3"
+
+msgid "pm3_10_3_3_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника."
+
+msgid "pm3_10_3_3_description_stunNumber"
+msgstr "Оглушить технику противника не менее %(goal)s раз."
+
+msgid "pm3_10_3_3_short"
+msgstr "Поддержка-3"
+
+msgid "pm3_10_3_3_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_3_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_4"
+msgstr "Поддержка-4"
+
+msgid "pm3_10_3_4_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s лёгких танков или САУ противника."
+
+msgid "pm3_10_3_4_short"
+msgstr "Поддержка-4"
+
+msgid "pm3_10_3_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_5"
+msgstr "Поддержка-5"
+
+msgid "pm3_10_3_5_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника, оставаясь необнаруженным."
+
+msgid "pm3_10_3_5_description_stunNumber"
+msgstr ""
+"Оглушить %(stunSeveralTargets)s ед. техники противника одним выстрелом не "
+"менее %(goal)s раз."
+
+msgid "pm3_10_3_5_short"
+msgstr "Поддержка-5"
+
+msgid "pm3_10_3_5_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_5_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_6"
+msgstr "Поддержка-6"
+
+msgid "pm3_10_3_6_description_assistedKills"
+msgstr ""
+"Обеспечить уничтожение %(goal)s ед. техники противника, передавая "
+"разведданные, обездвиживая или оглушая её."
+
+msgid "pm3_10_3_6_short"
+msgstr "Поддержка-6"
+
+msgid "pm3_10_3_6_title_assistedKills"
+msgstr "Поддержка"
+
+msgid "pm3_10_3_7"
+msgstr "Поддержка-7"
+
+msgid "pm3_10_3_7_description_kills"
+msgstr "Уничтожить не менее %(goal)s лёгких танков противника."
+
+msgid "pm3_10_3_7_description_stunTime"
+msgstr ""
+"Оглушить лёгкие танки противника суммарно на %(goal)s с. В зачёт идёт "
+"потенциальная длительность оглушения."
+
+msgid "pm3_10_3_7_short"
+msgstr "Поддержка-7"
+
+msgid "pm3_10_3_7_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_10_3_7_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_8"
+msgstr "Поддержка-8"
+
+msgid "pm3_10_3_8_description_alive"
+msgstr "Выжить в бою."
+
+msgid "pm3_10_3_8_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника и выжить в бою."
+
+msgid "pm3_10_3_8_description_stunNumber"
+msgstr ""
+"Оглушить %(stunSeveralTargets)s ед. техники противника одним выстрелом не "
+"менее %(goal)s раз и выжить в бою."
+
+msgid "pm3_10_3_8_short"
+msgstr "Поддержка-8"
+
+msgid "pm3_10_3_8_title_alive"
+msgstr "Выживание"
+
+msgid "pm3_10_3_8_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_10_3_8_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_10_3_9"
+msgstr "Поддержка-9"
+
+msgid "pm3_10_3_9_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_10_3_9_description_kills"
+msgstr "Выстрелами уничтожить %(goal)s ед. движущейся техники противника."
+
+msgid "pm3_10_3_9_short"
+msgstr "Поддержка-9"
+
+msgid "pm3_10_3_9_title_damage"
+msgstr "Урон"
+
+msgid "pm3_10_3_9_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_1"
+msgstr "Авангард-1"
+
+msgid "pm3_8_1_10"
+msgstr "Авангард-10"
+
+msgid "pm3_8_1_10_description_damage"
+msgstr "Нанести %(goal)s ед. урона в первые %(timeLimit)s мин боя."
+
+msgid "pm3_8_1_10_short"
+msgstr "Авангард-10"
+
+msgid "pm3_8_1_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_11"
+msgstr "Авангард-11"
+
+msgid "pm3_8_1_11_description_kills"
+msgstr "Уничтожить машину противника тараном и выжить."
+
+msgid "pm3_8_1_11_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_8_1_11_description_medal"
+msgstr "Заслужить награду «Основной калибр»."
+
+msgid "pm3_8_1_11_short"
+msgstr "Авангард-11"
+
+msgid "pm3_8_1_11_title_kills"
+msgstr "Уничтожить"
+
+msgid "pm3_8_1_11_title_killsDiversity"
+msgstr "Уничтожить"
+
+msgid "pm3_8_1_11_title_medal"
+msgstr "Герои битвы"
+
+msgid "pm3_8_1_12"
+msgstr "Авангард-12"
+
+msgid "pm3_8_1_12_description_blockedDamage"
+msgstr ""
+"Заблокировать суммарно %(goal)s ед. урона от тяжёлых и средних танков "
+"противника."
+
+msgid "pm3_8_1_12_description_damage"
+msgstr ""
+"Нанести суммарно %(goal)s ед. урона тяжёлым и средним танкам противника."
+
+msgid "pm3_8_1_12_short"
+msgstr "Авангард-12"
+
+msgid "pm3_8_1_12_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_8_1_12_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_13"
+msgstr "Авангард-13"
+
+msgid "pm3_8_1_13_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона с расстояния не более %(distanceShortOrEqual)s м."
+
+msgid "pm3_8_1_13_description_damageAlt"
+msgstr ""
+"Нанести %(goal)s ед. урона с расстояния не менее %(distanceGreatOrEqual)s м."
+
+msgid "pm3_8_1_13_short"
+msgstr "Авангард-13"
+
+msgid "pm3_8_1_13_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_13_title_damageAlt"
+msgstr "Урон"
+
+msgid "pm3_8_1_14"
+msgstr "Авангард-14"
+
+msgid "pm3_8_1_14_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_8_1_14_description_hits"
+msgstr ""
+"Выстрелами нанести урон технике противника не менее %(goal)s раз с "
+"расстояния не более %(distanceShortOrEqual)s м."
+
+msgid "pm3_8_1_14_short"
+msgstr "Авангард-14"
+
+msgid "pm3_8_1_14_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_14_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_1_15"
+msgstr "Авангард-15"
+
+msgid "pm3_8_1_15_description_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона."
+
+msgid "pm3_8_1_15_short"
+msgstr "Авангард-15"
+
+msgid "pm3_8_1_15_title_damageDealtReceivedAndBlocked"
+msgstr "Комплексное условие"
+
+msgid "pm3_8_1_1_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_8_1_1_description_hits"
+msgstr ""
+"Выстрелами нанести урон тяжёлым танкам противника не менее %(goal)s раз."
+
+msgid "pm3_8_1_1_short"
+msgstr "Авангард-1"
+
+msgid "pm3_8_1_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_1_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_1_2"
+msgstr "Авангард-2"
+
+msgid "pm3_8_1_2_description_damageandBlock"
+msgstr ""
+"Суммарно нанести и заблокировать урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_8_1_2_short"
+msgstr "Авангард-2"
+
+msgid "pm3_8_1_2_title_damageandBlock"
+msgstr "Нанесение и блокирование урона"
+
+msgid "pm3_8_1_3"
+msgstr "Авангард-3"
+
+msgid "pm3_8_1_3_description_topByDamage"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_8_1_3_short"
+msgstr "Авангард-3"
+
+msgid "pm3_8_1_3_title_topByDamage"
+msgstr "Топ-1"
+
+msgid "pm3_8_1_4"
+msgstr "Авангард-4"
+
+msgid "pm3_8_1_4_description_blockedDamage"
+msgstr "Заблокировать %(goal)s ед. урона."
+
+msgid "pm3_8_1_4_description_damage"
+msgstr "Нанести %(goal)s ед. урона обездвиженной технике противника."
+
+msgid "pm3_8_1_4_short"
+msgstr "Авангард-4"
+
+msgid "pm3_8_1_4_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_8_1_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_5"
+msgstr "Авангард-5"
+
+msgid "pm3_8_1_5_description_kills"
+msgstr "Уничтожить суммарно не менее %(goal)s тяжёлых или средних танков."
+
+msgid "pm3_8_1_5_short"
+msgstr "Авангард-5"
+
+msgid "pm3_8_1_5_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_6"
+msgstr "Авангард-6"
+
+msgid "pm3_8_1_6_description_blockedDamage"
+msgstr ""
+"Заблокировать %(goal)s ед. урона, оставаясь неподвижным в момент "
+"блокирования урона."
+
+msgid "pm3_8_1_6_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_8_1_6_short"
+msgstr "Авангард-6"
+
+msgid "pm3_8_1_6_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_8_1_6_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_7"
+msgstr "Авангард-7"
+
+msgid "pm3_8_1_7_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, попадающей в ваш радиус "
+"обзора."
+
+msgid "pm3_8_1_7_short"
+msgstr "Авангард-7"
+
+msgid "pm3_8_1_7_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_1_8"
+msgstr "Авангард-8"
+
+msgid "pm3_8_1_8_description_kills"
+msgstr "Уничтожить машину противника тараном и выжить."
+
+msgid "pm3_8_1_8_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_8_1_8_short"
+msgstr "Авангард-8"
+
+msgid "pm3_8_1_8_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_8_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_8_1_9"
+msgstr "Авангард-9"
+
+msgid "pm3_8_1_9_description_counterAttack"
+msgstr ""
+"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
+
+msgid "pm3_8_1_9_short"
+msgstr "Авангард-9"
+
+msgid "pm3_8_1_9_title_counterAttack"
+msgstr "Урон"
+
+msgid "pm3_8_2_1"
+msgstr "Засада-1"
+
+msgid "pm3_8_2_10"
+msgstr "Засада-10"
+
+msgid "pm3_8_2_10_description_damage"
+msgstr "Нанести %(goal)s ед. урона в первые %(timeLimit)s мин боя."
+
+msgid "pm3_8_2_10_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_8_2_10_short"
+msgstr "Засада-10"
+
+msgid "pm3_8_2_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_10_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_11"
+msgstr "Засада-11"
+
+msgid "pm3_8_2_11_description_medal"
+msgstr "Заслужить награду «Основной калибр»."
+
+msgid "pm3_8_2_11_short"
+msgstr "Засада-11"
+
+msgid "pm3_8_2_11_title_medal"
+msgstr "Герои битвы"
+
+msgid "pm3_8_2_12"
+msgstr "Засада-12"
+
+msgid "pm3_8_2_12_description_damage"
+msgstr "Выстрелами нанести %(goal)s ед. урона движущейся технике противника."
+
+msgid "pm3_8_2_12_short"
+msgstr "Засада-12"
+
+msgid "pm3_8_2_12_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_13"
+msgstr "Засада-13"
+
+msgid "pm3_8_2_13_description_medal"
+msgstr "Заслужить награду «Танкист-снайпер»."
+
+msgid "pm3_8_2_13_short"
+msgstr "Засада-13"
+
+msgid "pm3_8_2_13_title_medal"
+msgstr "Герои битвы"
+
+msgid "pm3_8_2_14"
+msgstr "Засада-14"
+
+msgid "pm3_8_2_14_description_killWithCausingDamage"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника, нанеся ей не менее "
+"%(damageDealt)s ед. урона."
+
+msgid "pm3_8_2_14_short"
+msgstr "Засада-14"
+
+msgid "pm3_8_2_14_title_killWithCausingDamage"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_15"
+msgstr "Засада-15"
+
+msgid "pm3_8_2_15_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_8_2_15_short"
+msgstr "Засада-15"
+
+msgid "pm3_8_2_15_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_1_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_8_2_1_description_piercings"
+msgstr "Пробить броню противника не менее %(goal)s раз."
+
+msgid "pm3_8_2_1_short"
+msgstr "Засада-1"
+
+msgid "pm3_8_2_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_1_title_piercings"
+msgstr "Пробитие"
+
+msgid "pm3_8_2_2"
+msgstr "Засада-2"
+
+msgid "pm3_8_2_2_description_topByExp"
+msgstr "Занять первое место по опыту в своей команде."
+
+msgid "pm3_8_2_2_short"
+msgstr "Засада-2"
+
+msgid "pm3_8_2_2_title_topByExp"
+msgstr "Топ-1"
+
+msgid "pm3_8_2_3"
+msgstr "Засада-3"
+
+msgid "pm3_8_2_3_description_damage"
+msgstr "Нанести %(goal)s ед. урона средним танкам и ПТ-САУ противника."
+
+msgid "pm3_8_2_3_description_kills"
+msgstr "Уничтожить машину противника, не потеряв очков прочности."
+
+msgid "pm3_8_2_3_short"
+msgstr "Засада-3"
+
+msgid "pm3_8_2_3_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_3_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_4"
+msgstr "Засада-4"
+
+msgid "pm3_8_2_4_description_damage"
+msgstr "Нанести %(goal)s ед. урона средним танкам противника."
+
+msgid "pm3_8_2_4_description_kills"
+msgstr "Уничтожить машину противника за пределами вашего радиуса обзора."
+
+msgid "pm3_8_2_4_short"
+msgstr "Засада-4"
+
+msgid "pm3_8_2_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_5"
+msgstr "Засада-5"
+
+msgid "pm3_8_2_5_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s лёгких или средних танков противника."
+
+msgid "pm3_8_2_5_description_spotAndKill"
+msgstr "Уничтожить лично обнаруженную машину противника."
+
+msgid "pm3_8_2_5_short"
+msgstr "Засада-5"
+
+msgid "pm3_8_2_5_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_5_title_spotAndKill"
+msgstr "Уничтожение"
+
+msgid "pm3_8_2_6"
+msgstr "Засада-6"
+
+msgid "pm3_8_2_6_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_8_2_6_description_piercingSeries"
+msgstr "Пробить броню не менее %(goal)s раз подряд."
+
+msgid "pm3_8_2_6_short"
+msgstr "Засада-6"
+
+msgid "pm3_8_2_6_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_6_title_piercingSeries"
+msgstr "Пробитие"
+
+msgid "pm3_8_2_7"
+msgstr "Засада-7"
+
+msgid "pm3_8_2_7_description_damageAndAssist"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "pm3_8_2_7_short"
+msgstr "Засада-7"
+
+msgid "pm3_8_2_7_title_damageAndAssist"
+msgstr "Комплексное условие"
+
+msgid "pm3_8_2_8"
+msgstr "Засада-8"
+
+msgid "pm3_8_2_8_description_damage"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_8_2_8_short"
+msgstr "Засада-8"
+
+msgid "pm3_8_2_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_2_9"
+msgstr "Засада-9"
+
+msgid "pm3_8_2_9_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, оставаясь необнаруженным в момент его нанесения."
+
+msgid "pm3_8_2_9_short"
+msgstr "Засада-9"
+
+msgid "pm3_8_2_9_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_1"
+msgstr "Поддержка-1"
+
+msgid "pm3_8_3_10"
+msgstr "Поддержка-10"
+
+msgid "pm3_8_3_10_description_assist"
+msgstr ""
+"Обеспечить нанесение %(goal)s ед. урона технике противника, передавая "
+"разведданные, обездвиживая или оглушая её, а также оставаясь необнаруженным "
+"в момент нанесения урона."
+
+msgid "pm3_8_3_10_description_stunNumber"
+msgstr "Оглушить средние танки и ПТ-САУ противника не менее %(goal)s раз."
+
+msgid "pm3_8_3_10_short"
+msgstr "Поддержка-10"
+
+msgid "pm3_8_3_10_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_8_3_10_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_8_3_11"
+msgstr "Поддержка-11"
+
+msgid "pm3_8_3_11_description_medal"
+msgstr "Заслужить награду «Поддержка»."
+
+msgid "pm3_8_3_11_short"
+msgstr "Поддержка-11"
+
+msgid "pm3_8_3_11_title_medal"
+msgstr "Герои битвы"
+
+msgid "pm3_8_3_12"
+msgstr "Поддержка-12"
+
+msgid "pm3_8_3_12_description_assistedKills"
+msgstr ""
+"Обеспечить уничтожение %(goal)s ед. техники противника, передавая "
+"разведданные, обездвиживая или оглушая её."
+
+msgid "pm3_8_3_12_short"
+msgstr "Поддержка-12"
+
+msgid "pm3_8_3_12_title_assistedKills"
+msgstr "Поддержка"
+
+msgid "pm3_8_3_13"
+msgstr "Поддержка-13"
+
+msgid "pm3_8_3_13_description_kills"
+msgstr ""
+"Уничтожить машину противника с расстояния не более %(distanceShortOrEqual)s "
+"м."
+
+msgid "pm3_8_3_13_description_killsAlt"
+msgstr ""
+"Уничтожить машину противника с расстояния не менее %(distanceGreatOrEqual)s "
+"м."
+
+msgid "pm3_8_3_13_short"
+msgstr "Поддержка-13"
+
+msgid "pm3_8_3_13_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_13_title_killsAlt"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_14"
+msgstr "Поддержка-14"
+
+msgid "pm3_8_3_14_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s лёгких танков или САУ противника."
+
+msgid "pm3_8_3_14_short"
+msgstr "Поддержка-14"
+
+msgid "pm3_8_3_14_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_8_3_15"
+msgstr "Поддержка-15"
+
+msgid "pm3_8_3_15_description_damageAndAssist"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "pm3_8_3_15_short"
+msgstr "Поддержка-15"
+
+msgid "pm3_8_3_15_title_damageAndAssist"
+msgstr "Комплексное условие"
+
+msgid "pm3_8_3_1_description_alive"
+msgstr "Выжить в бою"
+
+msgid "pm3_8_3_1_description_hits"
+msgstr "Выстрелами нанести урон САУ противника и выжить."
+
+msgid "pm3_8_3_1_description_stunNumber"
+msgstr "Оглушить технику противника не менее %(goal)s раз и выжить."
+
+msgid "pm3_8_3_1_short"
+msgstr "Поддержка-1"
+
+msgid "pm3_8_3_1_title_alive"
+msgstr "Выживание"
+
+msgid "pm3_8_3_1_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_3_1_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_8_3_2"
+msgstr "Поддержка-2"
+
+msgid "pm3_8_3_2_description_topByExp"
+msgstr "Занять первое место по опыту в обеих командах."
+
+msgid "pm3_8_3_2_short"
+msgstr "Поддержка-2"
+
+msgid "pm3_8_3_2_title_topByExp"
+msgstr "Топ-1"
+
+msgid "pm3_8_3_3"
+msgstr "Поддержка-3"
+
+msgid "pm3_8_3_3_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_8_3_3_description_hits"
+msgstr "Выстрелами нанести урон технике противника не менее %(goal)s раз."
+
+msgid "pm3_8_3_3_short"
+msgstr "Поддержка-3"
+
+msgid "pm3_8_3_3_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_3_title_hits"
+msgstr "Урон"
+
+msgid "pm3_8_3_4"
+msgstr "Поддержка-4"
+
+msgid "pm3_8_3_4_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника, оставаясь необнаруженным."
+
+msgid "pm3_8_3_4_description_stunTime"
+msgstr ""
+"Оглушить средние танки или ПТ-САУ противника суммарно на %(goal)s с. В зачёт"
+" идёт потенциальная длительность оглушения."
+
+msgid "pm3_8_3_4_short"
+msgstr "Поддержка-4"
+
+msgid "pm3_8_3_4_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_3_4_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_8_3_5"
+msgstr "Поддержка-5"
+
+msgid "pm3_8_3_5_description_medal"
+msgstr "Получить знак классности «3 степень» или выше рангом."
+
+msgid "pm3_8_3_5_short"
+msgstr "Поддержка-5"
+
+msgid "pm3_8_3_5_title_medal"
+msgstr "Знак классности"
+
+msgid "pm3_8_3_6"
+msgstr "Поддержка-6"
+
+msgid "pm3_8_3_6_description_crits"
+msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам"
+
+msgid "pm3_8_3_6_description_stunTime"
+msgstr ""
+"Оглушить технику противника суммарно на %(goal)s с. В зачёт идёт "
+"потенциальная длительность оглушения."
+
+msgid "pm3_8_3_6_short"
+msgstr "Поддержка-6"
+
+msgid "pm3_8_3_6_title_crits"
+msgstr "Обездвиживание"
+
+msgid "pm3_8_3_6_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_8_3_7"
+msgstr "Поддержка-7"
+
+msgid "pm3_8_3_7_description_assistedHits"
+msgstr ""
+"Обеспечить нанесение урона по %(goal)s ед. техники противника, передавая "
+"разведданные, обездвиживая или оглушая технику противника."
+
+msgid "pm3_8_3_7_short"
+msgstr "Поддержка-7"
+
+msgid "pm3_8_3_7_title_assistedHits"
+msgstr "Поддержка"
+
+msgid "pm3_8_3_8"
+msgstr "Поддержка-8"
+
+msgid "pm3_8_3_8_description_damage"
+msgstr "Выстрелами нанести %(goal)s ед. урона движущейся технике противника."
+
+msgid "pm3_8_3_8_description_damageCausedAtMovementSpeed"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, двигаясь со скоростью не "
+"менее %(attackerMovingSpeedGreaterOrEqual)s км/ч."
+
+msgid "pm3_8_3_8_short"
+msgstr "Поддержка-8"
+
+msgid "pm3_8_3_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_8_3_8_title_damageCausedAtMovementSpeed"
+msgstr "Урон"
+
+msgid "pm3_8_3_9"
+msgstr "Поддержка-9"
+
+msgid "pm3_8_3_9_description_alive"
+msgstr "Выжить в бою"
+
+msgid "pm3_8_3_9_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника и выжить."
+
+msgid "pm3_8_3_9_description_stunNumber"
+msgstr ""
+"Оглушить %(stunSeveralTargets)s ед. техники противника одним выстрелом не "
+"менее %(goal)s раз и выжить."
+
+msgid "pm3_8_3_9_short"
+msgstr "Поддержка-9"
+
+msgid "pm3_8_3_9_title_alive"
+msgstr "Выживание"
+
+msgid "pm3_8_3_9_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_8_3_9_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_9_1_1"
+msgstr "Авангард-1"
+
+msgid "pm3_9_1_10"
+msgstr "Авангард-10"
+
+msgid "pm3_9_1_10_description_damage"
+msgstr "Нанести %(goal)s ед. урона обездвиженной технике противника."
+
+msgid "pm3_9_1_10_description_damageAlt"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_9_1_10_short"
+msgstr "Авангард-10"
+
+msgid "pm3_9_1_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_10_title_damageAlt"
+msgstr "Урон"
+
+msgid "pm3_9_1_11"
+msgstr "Авангард-11"
+
+msgid "pm3_9_1_11_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника с расстояния не более "
+"%(distanceShortOrEqual)s м."
+
+msgid "pm3_9_1_11_short"
+msgstr "Авангард-11"
+
+msgid "pm3_9_1_11_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_12"
+msgstr "Авангард-12"
+
+msgid "pm3_9_1_12_description_blockedDamage"
+msgstr ""
+"Заблокировать %(goal)s ед. урона от средних танков и ПТ-САУ противника."
+
+msgid "pm3_9_1_12_description_damage"
+msgstr "Нанести %(goal)s ед. урона средним танкам и ПТ-САУ противника."
+
+msgid "pm3_9_1_12_short"
+msgstr "Авангард-12"
+
+msgid "pm3_9_1_12_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_9_1_12_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_13"
+msgstr "Авангард-13"
+
+msgid "pm3_9_1_13_description_damage"
+msgstr ""
+"Нанести суммарно %(goal)s ед. урона тяжёлым или средним танкам противника."
+
+msgid "pm3_9_1_13_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s тяжёлых или средних танков противника."
+
+msgid "pm3_9_1_13_short"
+msgstr "Авангард-13"
+
+msgid "pm3_9_1_13_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_13_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_14"
+msgstr "Авангард-14"
+
+msgid "pm3_9_1_14_description_counterAttack"
+msgstr ""
+"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
+
+msgid "pm3_9_1_14_short"
+msgstr "Авангард-14"
+
+msgid "pm3_9_1_14_title_counterAttack"
+msgstr "Урон"
+
+msgid "pm3_9_1_15"
+msgstr "Авангард-15"
+
+msgid "pm3_9_1_15_description_damageDealtReceivedAndBlocked"
+msgstr "Суммарно нанести, получить и заблокировать %(goal)s ед. урона."
+
+msgid "pm3_9_1_15_short"
+msgstr "Авангард-15"
+
+msgid "pm3_9_1_15_title_damageDealtReceivedAndBlocked"
+msgstr "Комплексное условие"
+
+msgid "pm3_9_1_1_description_kills"
+msgstr "Уничтожить тяжёлый танк противника."
+
+msgid "pm3_9_1_1_description_topByDamage"
+msgstr "Занять первое место по урону в своей команде."
+
+msgid "pm3_9_1_1_short"
+msgstr "Авангард-1"
+
+msgid "pm3_9_1_1_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_1_title_topByDamage"
+msgstr "Топ-1"
+
+msgid "pm3_9_1_2"
+msgstr "Авангард-2"
+
+msgid "pm3_9_1_2_description_damage"
+msgstr "Нанести %(goal)s ед. урона тяжёлым танкам противника."
+
+msgid "pm3_9_1_2_description_hits"
+msgstr ""
+"Выстрелами нанести урон тяжёлым танкам противника не менее %(goal)s раз."
+
+msgid "pm3_9_1_2_short"
+msgstr "Авангард-2"
+
+msgid "pm3_9_1_2_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_2_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_1_3"
+msgstr "Авангард-3"
+
+msgid "pm3_9_1_3_description_damage"
+msgstr "Нанести %(goal)s ед. урона тараном."
+
+msgid "pm3_9_1_3_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_9_1_3_short"
+msgstr "Авангард-3"
+
+msgid "pm3_9_1_3_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_3_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_4"
+msgstr "Авангард-4"
+
+msgid "pm3_9_1_4_description_blockedDamage"
+msgstr ""
+"Заблокировать %(goal)s ед. урона, оставаясь неподвижным в момент "
+"блокирования урона."
+
+msgid "pm3_9_1_4_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_9_1_4_short"
+msgstr "Авангард-4"
+
+msgid "pm3_9_1_4_title_blockedDamage"
+msgstr "Блокирование"
+
+msgid "pm3_9_1_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_5"
+msgstr "Авангард-5"
+
+msgid "pm3_9_1_5_description_damage"
+msgstr "Нанести %(goal)s ед. урона в первые %(timeLimit)s мин боя."
+
+msgid "pm3_9_1_5_description_kills"
+msgstr "Уничтожить машину противника в первые %(timeLimit)s мин боя."
+
+msgid "pm3_9_1_5_short"
+msgstr "Авангард-5"
+
+msgid "pm3_9_1_5_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_5_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_6"
+msgstr "Авангард-6"
+
+msgid "pm3_9_1_6_description_damage"
+msgstr "Нанести %(goal)s урона технике противника."
+
+msgid "pm3_9_1_6_description_kills"
+msgstr "Уничтожить машину противника, попадающую в ваш радиус обзора."
+
+msgid "pm3_9_1_6_short"
+msgstr "Авангард-6"
+
+msgid "pm3_9_1_6_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_6_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_1_7"
+msgstr "Авангард-7"
+
+msgid "pm3_9_1_7_description_damageandBlock"
+msgstr ""
+"Суммарно нанести и заблокировать урона в %(vehicleHealthFactor)s раза больше"
+" прочности собственной машины."
+
+msgid "pm3_9_1_7_short"
+msgstr "Авангард-7"
+
+msgid "pm3_9_1_7_title_damageandBlock"
+msgstr "Нанесение и блокирование урона"
+
+msgid "pm3_9_1_8"
+msgstr "Авангард-8"
+
+msgid "pm3_9_1_8_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника того же уровня, что и ваша "
+"машина (или выше), с расстояния не более %(distanceShortOrEqual)s м."
+
+msgid "pm3_9_1_8_description_damageAlt"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_9_1_8_short"
+msgstr "Авангард-8"
+
+msgid "pm3_9_1_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_1_8_title_damageAlt"
+msgstr "Урон"
+
+msgid "pm3_9_1_9"
+msgstr "Авангард-9"
+
+msgid "pm3_9_1_9_description_medal"
+msgstr "Заслужить награду «Основной калибр»."
+
+msgid "pm3_9_1_9_short"
+msgstr "Авангард-9"
+
+msgid "pm3_9_1_9_title_medal"
+msgstr "Герои битвы"
+
+msgid "pm3_9_2_1"
+msgstr "Засада-1"
+
+msgid "pm3_9_2_10"
+msgstr "Засада-10"
+
+msgid "pm3_9_2_10_description_damage"
+msgstr "Нанести %(goal)s ед. урона в первые %(timeLimit)s мин боя."
+
+msgid "pm3_9_2_10_short"
+msgstr "Засада-10"
+
+msgid "pm3_9_2_10_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_11"
+msgstr "Засада-11"
+
+msgid "pm3_9_2_11_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_9_2_11_description_hits"
+msgstr "Нанести урон обездвиженной технике противника не менее %(goal)s раз."
+
+msgid "pm3_9_2_11_short"
+msgstr "Засада-11"
+
+msgid "pm3_9_2_11_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_11_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_2_12"
+msgstr "Засада-12"
+
+msgid "pm3_9_2_12_description_damage"
+msgstr ""
+"Нанести в %(vehicleHealthFactor)s раза больше урона, чем прочность "
+"собственной машины."
+
+msgid "pm3_9_2_12_short"
+msgstr "Засада-12"
+
+msgid "pm3_9_2_12_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_13"
+msgstr "Засада-13"
+
+msgid "pm3_9_2_13_description_killWithCausingDamage"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника, нанеся каждой не менее "
+"%(damageDealt)s ед. урона."
+
+msgid "pm3_9_2_13_short"
+msgstr "Засада-13"
+
+msgid "pm3_9_2_13_title_killWithCausingDamage"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_14"
+msgstr "Засада-14"
+
+msgid "pm3_9_2_14_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_9_2_14_description_kills"
+msgstr "Уничтожить %(goal)s ед. техники противника."
+
+msgid "pm3_9_2_14_short"
+msgstr "Засада-14"
+
+msgid "pm3_9_2_14_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_14_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_15"
+msgstr "Засада-15"
+
+msgid "pm3_9_2_15_description_damage"
+msgstr "Нанести %(goal)s ед. урона технике противника."
+
+msgid "pm3_9_2_15_description_totalDamagePercent"
+msgstr "Нанести 25%% от суммарного урона своей команды."
+
+msgid "pm3_9_2_15_short"
+msgstr "Засада-15"
+
+msgid "pm3_9_2_15_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_15_title_totalDamagePercent"
+msgstr "Урон"
+
+msgid "pm3_9_2_1_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_9_2_1_description_piercings"
+msgstr "Пробить броню противника не менее %(goal)s раз."
+
+msgid "pm3_9_2_1_short"
+msgstr "Засада-1"
+
+msgid "pm3_9_2_1_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_1_title_piercings"
+msgstr "Пробитие"
+
+msgid "pm3_9_2_2"
+msgstr "Засада-2"
+
+msgid "pm3_9_2_2_description_damage"
+msgstr "Нанести %(goal)s ед. урона."
+
+msgid "pm3_9_2_2_description_topByExp"
+msgstr "Занять первое место по опыту в своей команде."
+
+msgid "pm3_9_2_2_short"
+msgstr "Засада-2"
+
+msgid "pm3_9_2_2_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_2_title_topByExp"
+msgstr "Топ-1"
+
+msgid "pm3_9_2_3"
+msgstr "Засада-3"
+
+msgid "pm3_9_2_3_description_damage"
+msgstr "Выстрелами нанести %(goal)s ед. урона движущейся технике противника."
+
+msgid "pm3_9_2_3_short"
+msgstr "Засада-3"
+
+msgid "pm3_9_2_3_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_4"
+msgstr "Засада-4"
+
+msgid "pm3_9_2_4_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона, оставаясь необнаруженным в момент его нанесения."
+
+msgid "pm3_9_2_4_description_killWithCausingDamage"
+msgstr ""
+"Уничтожить машину противника, нанеся ей не менее %(damageDealt)s ед. урона."
+
+msgid "pm3_9_2_4_short"
+msgstr "Засада-4"
+
+msgid "pm3_9_2_4_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_4_title_killWithCausingDamage"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_5"
+msgstr "Засада-5"
+
+msgid "pm3_9_2_5_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника, не потеряв очков прочности."
+
+msgid "pm3_9_2_5_description_spotAndKill"
+msgstr "Уничтожить %(goal)s ед. лично обнаруженной техники противника."
+
+msgid "pm3_9_2_5_short"
+msgstr "Засада-5"
+
+msgid "pm3_9_2_5_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_5_title_spotAndKill"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_6"
+msgstr "Засада-6"
+
+msgid "pm3_9_2_6_description_damageCausedBlindly"
+msgstr ""
+"Нанести %(damageDealt)s ед. урона технике противника, необнаруженной в "
+"момент его нанесения."
+
+msgid "pm3_9_2_6_description_killsDiversity"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника %(uniqueGoal)s разных типов."
+
+msgid "pm3_9_2_6_short"
+msgstr "Засада-6"
+
+msgid "pm3_9_2_6_title_damageCausedBlindly"
+msgstr "Урон"
+
+msgid "pm3_9_2_6_title_killsDiversity"
+msgstr "Уничтожение"
+
+msgid "pm3_9_2_7"
+msgstr "Засада-7"
+
+msgid "pm3_9_2_7_description_damageAndAssist"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "pm3_9_2_7_short"
+msgstr "Засада-7"
+
+msgid "pm3_9_2_7_title_damageAndAssist"
+msgstr "Комплексное условие"
+
+msgid "pm3_9_2_8"
+msgstr "Засада-8"
+
+msgid "pm3_9_2_8_description_damage"
+msgstr ""
+"Нанести %(goal)s ед. урона технике противника, находящейся за пределами "
+"вашего радиуса обзора."
+
+msgid "pm3_9_2_8_short"
+msgstr "Засада-8"
+
+msgid "pm3_9_2_8_title_damage"
+msgstr "Урон"
+
+msgid "pm3_9_2_9"
+msgstr "Засада-9"
+
+msgid "pm3_9_2_9_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника с расстояния не менее "
+"%(distanceGreatOrEqual)s м."
+
+msgid "pm3_9_2_9_short"
+msgstr "Засада-9"
+
+msgid "pm3_9_2_9_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_1"
+msgstr "Поддержка-1"
+
+msgid "pm3_9_3_10"
+msgstr "Поддержка-10"
+
+msgid "pm3_9_3_10_description_medal"
+msgstr "Получить знак классности «1 степень» или выше рангом."
+
+msgid "pm3_9_3_10_short"
+msgstr "Поддержка-10"
+
+msgid "pm3_9_3_10_title_medal"
+msgstr "Знак классности"
+
+msgid "pm3_9_3_11"
+msgstr "Поддержка-11"
+
+msgid "pm3_9_3_11_description_assist"
+msgstr ""
+"Обеспечить нанесение %(goal)s ед. урона, передавая разведданные, "
+"обездвиживая или оглушая технику противника."
+
+msgid "pm3_9_3_11_description_stunTime"
+msgstr ""
+"Оглушить технику противника суммарно на %(goal)s с. В зачёт идёт "
+"потенциальная длительность оглушения."
+
+msgid "pm3_9_3_11_short"
+msgstr "Поддержка-11"
+
+msgid "pm3_9_3_11_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_9_3_11_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_12"
+msgstr "Поддержка-12"
+
+msgid "pm3_9_3_12_description_alive"
+msgstr "Выжить в бою"
+
+msgid "pm3_9_3_12_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника и выжить в бою."
+
+msgid "pm3_9_3_12_description_stunNumber"
+msgstr ""
+"Оглушить %(stunSeveralTargets)s ед. техники противника одним выстрелом не "
+"менее %(goal)s раз и выжить в бою."
+
+msgid "pm3_9_3_12_short"
+msgstr "Поддержка-12"
+
+msgid "pm3_9_3_12_title_alive"
+msgstr "Выживание"
+
+msgid "pm3_9_3_12_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_3_12_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_13"
+msgstr "Поддержка-13"
+
+msgid "pm3_9_3_13_description_hits"
+msgstr ""
+"Выстрелами нанести урон движущейся технике противника не менее %(goal)s раз."
+
+msgid "pm3_9_3_13_description_killsCausedAtMovementSpeed"
+msgstr ""
+"Выстрелами уничтожить %(goal)s ед. техники противника, двигаясь со скоростью"
+" не менее %(attackerMovingSpeedGreaterOrEqual)s км/ч."
+
+msgid "pm3_9_3_13_short"
+msgstr "Поддержка-13"
+
+msgid "pm3_9_3_13_title_hits"
+msgstr "Урон"
+
+msgid "pm3_9_3_13_title_killsCausedAtMovementSpeed"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_14"
+msgstr "Поддержка-14"
+
+msgid "pm3_9_3_14_description_assist"
+msgstr ""
+"Передать разведданные для нанесения %(goal)s ед. урона, оставаясь "
+"необнаруженным в момент его нанесения."
+
+msgid "pm3_9_3_14_description_stunTime"
+msgstr ""
+"Оглушить тяжёлые танки противника суммарно на %(goal)s с. В зачёт идёт "
+"потенциальная длительность оглушения."
+
+msgid "pm3_9_3_14_short"
+msgstr "Поддержка-14"
+
+msgid "pm3_9_3_14_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_9_3_14_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_15"
+msgstr "Поддержка-15"
+
+msgid "pm3_9_3_15_description_damageAndAssist"
+msgstr "Суммарно нанести и обеспечить нанесение %(goal)s ед. урона."
+
+msgid "pm3_9_3_15_short"
+msgstr "Поддержка-15"
+
+msgid "pm3_9_3_15_title_damageAndAssist"
+msgstr "Комплексное условие"
+
+msgid "pm3_9_3_1_description_assist"
+msgstr ""
+"Обеспечить нанесение %(goal)s ед. урона, передавая разведданные, оглушая или"
+" обездвиживая технику противника."
+
+msgid "pm3_9_3_1_description_kills"
+msgstr "Уничтожить САУ противника."
+
+msgid "pm3_9_3_1_short"
+msgstr "Поддержка-1"
+
+msgid "pm3_9_3_1_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_9_3_1_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_2"
+msgstr "Поддержка-2"
+
+msgid "pm3_9_3_2_description_spotNumber"
+msgstr "Обнаружить %(goal)s ед. техники противника, оставаясь необнаруженным."
+
+msgid "pm3_9_3_2_description_stunNumber"
+msgstr "Оглушить технику противника не менее %(goal)s раз."
+
+msgid "pm3_9_3_2_short"
+msgstr "Поддержка-2"
+
+msgid "pm3_9_3_2_title_spotNumber"
+msgstr "Обнаружение"
+
+msgid "pm3_9_3_2_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_3"
+msgstr "Поддержка-3"
+
+msgid "pm3_9_3_3_description_crits"
+msgstr "Обездвижить не менее %(goal)s машин противника, сбивая гусеницы."
+
+msgid "pm3_9_3_3_description_stunTime"
+msgstr ""
+"Оглушить технику противника суммарно на %(goal)s с. В зачёт идёт "
+"потенциальная длительность оглушения."
+
+msgid "pm3_9_3_3_short"
+msgstr "Поддержка-3"
+
+msgid "pm3_9_3_3_title_crits"
+msgstr "Обездвиживание"
+
+msgid "pm3_9_3_3_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_4"
+msgstr "Поддержка-4"
+
+msgid "pm3_9_3_4_description_kills"
+msgstr ""
+"Уничтожить %(goal)s ед. техники противника с расстояния не более "
+"%(distanceShortOrEqual)s м."
+
+msgid "pm3_9_3_4_description_stunNumber"
+msgstr "Оглушить средние танки и ПТ-САУ противника не менее %(goal)s раз."
+
+msgid "pm3_9_3_4_short"
+msgstr "Поддержка-4"
+
+msgid "pm3_9_3_4_title_kills"
+msgstr "Уничтожение"
+
+msgid "pm3_9_3_4_title_stunNumber"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_5"
+msgstr "Поддержка-5"
+
+msgid "pm3_9_3_5_description_assistedKills"
+msgstr ""
+"Обеспечить уничтожение %(goal)s ед. техники противника, передавая "
+"разведданные, обездвиживая или оглушая её."
+
+msgid "pm3_9_3_5_short"
+msgstr "Поддержка-5"
+
+msgid "pm3_9_3_5_title_assistedKills"
+msgstr "Поддержка"
+
+msgid "pm3_9_3_6"
+msgstr "Поддержка-6"
+
+msgid "pm3_9_3_6_description_assist"
+msgstr ""
+"Обеспечить нанесение %(goal)s ед. урона технике противника, передавая "
+"разведданные, обездвиживая или оглушая её, а также оставаясь необнаруженным "
+"в момент нанесения урона."
+
+msgid "pm3_9_3_6_description_stunTime"
+msgstr ""
+"Оглушить средние танки или ПТ-САУ противника суммарно на %(goal)s с. В зачёт"
+" идёт потенциальная длительность оглушения."
+
+msgid "pm3_9_3_6_short"
+msgstr "Поддержка-6"
+
+msgid "pm3_9_3_6_title_assist"
+msgstr "Поддержка"
+
+msgid "pm3_9_3_6_title_stunTime"
+msgstr "Оглушение"
+
+msgid "pm3_9_3_7"
+msgstr "Поддержка-7"
+
+msgid "pm3_9_3_7_description_alive"
+msgstr "Выжить в бою"
+
+msgid "pm3_9_3_7_description_topByExp"
+msgstr "Занять первое место по опыту в обеих командах."
+
+msgid "pm3_9_3_7_short"
+msgstr "Поддержка-7"
+
+msgid "pm3_9_3_7_title_alive"
+msgstr "Выживание"
+
+msgid "pm3_9_3_7_title_topByExp"
+msgstr "Топ-1"
+
+msgid "pm3_9_3_8"
+msgstr "Поддержка-8"
+
+msgid "pm3_9_3_8_description_assistedHits"
+msgstr ""
+"Обеспечить нанесение урона по %(goal)s ед. техники противника, передавая "
+"разведданные, обездвиживая или оглушая технику противника."
+
+msgid "pm3_9_3_8_short"
+msgstr "Поддержка-8"
+
+msgid "pm3_9_3_8_title_assistedHits"
+msgstr "Поддержка"
+
+msgid "pm3_9_3_9"
+msgstr "Поддержка-9"
+
+msgid "pm3_9_3_9_description_damageCausedBlindly"
+msgstr ""
+"Нанести %(damageDealt)s ед. урона техника противника, необнаруженной в "
+"момент его нанесения."
+
+msgid "pm3_9_3_9_description_kills"
+msgstr ""
+"Уничтожить суммарно не менее %(goal)s лёгких танков или САУ противника."
+
+msgid "pm3_9_3_9_short"
+msgstr "Поддержка-9"
+
+msgid "pm3_9_3_9_title_damageCausedBlindly"
+msgstr "Урон"
+
+msgid "pm3_9_3_9_title_kills"
+msgstr "Уничтожение"
 
 msgid "quest/advice/biathlon/description"
 msgstr ""
@@ -5849,7 +8162,7 @@ msgid "quest_common_conditioncommon_condition_title_spotted"
 msgstr "Обнаружить"
 
 msgid "regular_1_1_10_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_1_10_title_topByExp"
 msgstr "Топ-3"
@@ -5927,7 +8240,7 @@ msgid "regular_1_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_1_1_1_description_topByExp"
-msgstr "Попасть в топ-10 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_1_1_title_topByExp"
 msgstr "Топ-10"
@@ -6022,7 +8335,7 @@ msgid "regular_1_1_9_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_1_2_10_description_topByExp"
-msgstr "Попасть в топ-3 по урону в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по урону."
 
 msgid "regular_1_2_10_title_topByExp"
 msgstr "Топ-3"
@@ -6202,7 +8515,7 @@ msgid "regular_1_3_12_description_hits"
 msgstr "Поджечь машину противника"
 
 msgid "regular_1_3_12_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_3_12_title_hits"
 msgstr "Поджог"
@@ -6214,7 +8527,7 @@ msgid "regular_1_3_13_description_damage"
 msgstr "Нанести %(goal)s урона технике противника"
 
 msgid "regular_1_3_13_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_3_13_title_damage"
 msgstr "Урон"
@@ -6250,7 +8563,7 @@ msgid "regular_1_3_1_description_hits"
 msgstr "Нанести урон технике противника"
 
 msgid "regular_1_3_1_description_topByExp"
-msgstr "Попасть в топ-10 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_3_1_title_hits"
 msgstr "Урон"
@@ -6391,7 +8704,7 @@ msgid "regular_1_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_1_description_topByExp"
-msgstr "Попасть в топ-7 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_4_1_title_topByExp"
 msgstr "Топ-7"
@@ -6554,7 +8867,7 @@ msgid "regular_1_5_15_description_damage"
 msgstr "Нанести %(goal)s урона технике противника"
 
 msgid "regular_1_5_15_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_5_15_title_assist"
 msgstr "Поддержка"
@@ -6633,7 +8946,7 @@ msgid "regular_1_5_7_title_stunNumber"
 msgstr "Оглушить"
 
 msgid "regular_1_5_8_description_topByExp"
-msgstr "Попасть в топ-7 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_1_5_8_title_topByExp"
 msgstr "Топ-7"
@@ -6713,7 +9026,7 @@ msgid "regular_2_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_2_1_1_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_1_1_title_topByExp"
 msgstr "Топ-5"
@@ -6822,7 +9135,7 @@ msgid "regular_2_1_9_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_2_2_10_description_topByExp"
-msgstr "Попасть в топ-3 по урону в обеих командах"
+msgstr "Попасть в топ-%(desiredPosition)s обеих команд по урону."
 
 msgid "regular_2_2_10_title_topByExp"
 msgstr "Топ-3"
@@ -7016,7 +9329,7 @@ msgid "regular_2_3_12_description_hits"
 msgstr "Поджечь машину противника"
 
 msgid "regular_2_3_12_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_3_12_title_damage"
 msgstr "Урон"
@@ -7031,7 +9344,7 @@ msgid "regular_2_3_13_description_damage"
 msgstr "Нанести %(goal)s урона технике противника"
 
 msgid "regular_2_3_13_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_3_13_title_damage"
 msgstr "Урон"
@@ -7073,7 +9386,7 @@ msgid "regular_2_3_1_description_hits"
 msgstr "Нанести урон технике противника"
 
 msgid "regular_2_3_1_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_3_1_title_hits"
 msgstr "Урон"
@@ -7214,7 +9527,7 @@ msgid "regular_2_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_1_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_4_1_title_topByExp"
 msgstr "Топ-5"
@@ -7378,7 +9691,7 @@ msgid "regular_2_5_15_description_damage"
 msgstr "Нанести %(goal)s урона технике противника"
 
 msgid "regular_2_5_15_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_5_15_title_assist"
 msgstr "Поддержка"
@@ -7457,7 +9770,7 @@ msgid "regular_2_5_7_title_stunNumber"
 msgstr "Оглушить"
 
 msgid "regular_2_5_8_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_2_5_8_title_topByExp"
 msgstr "Топ-5"
@@ -7537,7 +9850,7 @@ msgid "regular_3_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_3_1_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_3_1_1_title_topByExp"
 msgstr "Топ-3"
@@ -7855,7 +10168,7 @@ msgid "regular_3_3_12_description_hits"
 msgstr "Поджечь машину противника своего уровня или выше"
 
 msgid "regular_3_3_12_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_3_3_12_title_hits"
 msgstr "Поджог"
@@ -7867,7 +10180,7 @@ msgid "regular_3_3_13_description_damage"
 msgstr "Нанести %(goal)s урона технике противника"
 
 msgid "regular_3_3_13_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_3_3_13_title_damage"
 msgstr "Урон"
@@ -7903,7 +10216,7 @@ msgid "regular_3_3_1_description_hits"
 msgstr "Нанести урон технике противника"
 
 msgid "regular_3_3_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_3_3_1_title_hits"
 msgstr "Урон"
@@ -8056,7 +10369,7 @@ msgid "regular_3_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_3_4_1_title_topByExp"
 msgstr "Топ-3"
@@ -8301,7 +10614,7 @@ msgid "regular_3_5_7_title_stunNumber"
 msgstr "Оглушить"
 
 msgid "regular_3_5_8_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_3_5_8_title_topByExp"
 msgstr "Топ-3"
@@ -8694,7 +11007,7 @@ msgid "regular_4_3_12_description_hits"
 msgstr "Поджечь машину противника своего уровня или выше"
 
 msgid "regular_4_3_12_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_4_3_12_title_damage"
 msgstr "Урон"
@@ -8709,7 +11022,7 @@ msgid "regular_4_3_13_description_damage"
 msgstr "Нанести %(goal)s урона технике противника"
 
 msgid "regular_4_3_13_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-%(desiredPosition)s своей команды по опыту."
 
 msgid "regular_4_3_13_title_damage"
 msgstr "Урон"
@@ -9152,7 +11465,7 @@ msgid "regular_4_5_9_title_crits"
 msgstr "Крит. попадания"
 
 msgid "season_1"
-msgstr "«Долгожданное подкрепление»"
+msgstr "Долгожданное подкрепление"
 
 msgid "season_1_descr"
 msgstr ""
@@ -9161,10 +11474,21 @@ msgstr ""
 "выполненную операцию — уникальная машина."
 
 msgid "season_2"
-msgstr "«Второй фронт»"
+msgstr "Второй фронт"
+
+msgid "season_3"
+msgstr "Сектор 3"
 
 msgid "tile_1"
 msgstr "«StuG IV»"
+
+msgid "tile_10"
+msgstr "Black Rock"
+
+msgid "tile_10_descr"
+msgstr ""
+"Комплекс боевых задач для всех типов техники на получение американского "
+"тяжёлого танка Black Rock."
 
 msgid "tile_1_descr"
 msgstr ""
@@ -9218,3 +11542,19 @@ msgid "tile_7_descr"
 msgstr ""
 "Комплекс боевых задач для всех типов техники на получение советского "
 "тяжёлого танка Объект 279 (р)."
+
+msgid "tile_8"
+msgstr "Windhund"
+
+msgid "tile_8_descr"
+msgstr ""
+"Комплекс боевых задач для всех типов техники на получение немецкой ПТ-САУ "
+"Windhund."
+
+msgid "tile_9"
+msgstr "Dravec"
+
+msgid "tile_9_descr"
+msgstr ""
+"Комплекс боевых задач для всех типов техники на получение чехословацкого "
+"тяжёлого танка Vz. 60S Dravec."

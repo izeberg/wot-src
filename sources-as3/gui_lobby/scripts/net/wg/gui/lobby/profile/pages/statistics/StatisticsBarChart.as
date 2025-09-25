@@ -13,8 +13,8 @@ package net.wg.gui.lobby.profile.pages.statistics
       public function StatisticsBarChart()
       {
          super();
-         var _loc1_:int = 26;
-         var _loc2_:int = 27;
+         var _loc1_:int = 0;
+         var _loc2_:int = 1;
          var _loc3_:int = 18;
          var _loc4_:StatisticBarChartLayout = new StatisticBarChartLayout();
          _loc4_.paddingRight = _loc1_;

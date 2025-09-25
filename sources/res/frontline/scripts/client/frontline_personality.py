@@ -9,15 +9,18 @@ from frontline.gui.battle_control.controllers.equipment_items import registerFLE
 from frontline.gui.battle_control.controllers.repositories import registerFLBattleRepositories
 from frontline.gui.frontline_gui_constants import initFLLimitedUIIDs
 from frontline.gui.gui_constants import ViewAlias
+from frontline.gui.impl.lobby.views.frontline_event_banner import FrontlineEventBanner, isEpicBattlesEntryPointAvailable
 from frontline.gui.prb_control import registerFLPrebattles, extendIntroByType
 from frontline_common.constants import ACCOUNT_DEFAULT_SETTINGS
 from gui.Scaleform.genConsts.EPICBATTLES_ALIASES import EPICBATTLES_ALIASES
 from gui.override_scaleform_views_manager import g_overrideScaleFormViewsConfig
 from gui.prb_control.prb_utils import initHangarGuiConsts
 from gui.prb_control.settings import PREBATTLE_ACTION_NAME
-LOBBY_EXT_PACKAGES = ['frontline.gui.Scaleform.daapi.view.lobby',
+LOBBY_EXT_PACKAGES = [
+ 'frontline.gui.Scaleform.daapi.view.lobby',
  'frontline.gui.Scaleform.daapi.view.lobby.hangar',
- 'frontline.gui.Scaleform.daapi.view.lobby.epicBattleTraining']
+ 'frontline.gui.Scaleform.daapi.view.lobby.epicBattleTraining',
+ 'frontline.gui.impl.lobby']
 BATTLE_EXT_PACKAGES = [
  'frontline.gui.Scaleform.daapi.view.battle']
 
@@ -32,7 +35,6 @@ class ClientFrontlineBattleMode(AbstractBattleMode):
 
     @property
     def _client_bannerEntryPointValidatorMethod(self):
-        from frontline.gui.Scaleform.daapi.view.lobby.hangar.entry_point import isEpicBattlesEntryPointAvailable
         return isEpicBattlesEntryPointAvailable
 
     @property
@@ -65,9 +67,13 @@ class ClientFrontlineBattleMode(AbstractBattleMode):
         return FrontlinePresetsReader
 
     @property
-    def _client_hangarPresetsGetter(self):
-        from frontline.gui.hangar_presets.frontline_presets_getter import FrontlinePresetsGetter
-        return FrontlinePresetsGetter
+    def _client_hangarDynamicGuiProvider(self):
+        from frontline.gui.hangar_presets.frontline_dynamic_gui_provider import FrontlineHangarDynamicGuiProvider
+        return FrontlineHangarDynamicGuiProvider
+
+    @property
+    def _client_hangarEventBannerType(self):
+        return FrontlineEventBanner
 
 
 class ClientFrontlineTrainingBattleMode(ClientFrontlineBattleMode):
@@ -89,6 +95,7 @@ def preInit():
     battleMode.registerAmmunitionSetupViews()
     battleMode.registerProviderBattleQueue()
     battleMode.registerScaleformRequiredLibraries()
+    battleMode.registerHangarEventBanner()
     trainingBattleMode = ClientFrontlineTrainingBattleMode(__name__)
     trainingBattleMode.registerScaleformRequiredLibraries()
     registerFLBattleRepositories()

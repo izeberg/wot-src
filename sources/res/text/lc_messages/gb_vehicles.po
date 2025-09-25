@@ -25,8 +25,14 @@ msgstr "AEC 197"
 msgid "AEC_A189"
 msgstr "AEC A189"
 
+msgid "AEC_A189_VAT"
+msgstr "AEC A189 (VAT)"
+
 msgid "AEC_A1909"
 msgstr "AEC A190"
+
+msgid "AEC_A190_Bishop"
+msgstr "AEC A190 (Bishop)"
 
 msgid "AEC_A7E3"
 msgstr "AEC"
@@ -37,6 +43,30 @@ msgstr "AEC Type 179"
 msgid "Armstrong-Siddeley"
 msgstr "2x Armstrong Siddeley"
 
+msgid "B_L_5_5_in_Gun"
+msgstr "B.L. 5.5-in. Gun"
+
+msgid "B_L_5_5_in_Gun_207"
+msgstr "B.L. 5.5-in. Gun (207)"
+
+msgid "B_L_5_5_in_Gun_CSP"
+msgstr "B.L. 5.5-in. Gun (CSP)"
+
+msgid "B_L_7_2_in_Howitzer_Mk_6"
+msgstr "B.L. 7.2-in. Howitzer Mk. 6"
+
+msgid "B_L_9_2_in_Howitzer_Mk_II"
+msgstr "B.L. 9.2-in. Howitzer Mk. II"
+
+msgid "Bedford_Twin_Six_A22"
+msgstr "Bedford Twin-Six (A22)"
+
+msgid "Bedford_Twin_Six_A22F"
+msgstr "Bedford Twin-Six (A22F)"
+
+msgid "Bedford_Twin_Six_A43"
+msgstr "Bedford Twin-Six (A43)"
+
 msgid "Bedford_Type_120"
 msgstr "Bedford Type 120"
 
@@ -44,6 +74,9 @@ msgid "British_Wireless_set_N19"
 msgstr "WS No. 19 Special"
 
 msgid "C13B42"
+msgstr "C.13/B.42"
+
+msgid "C13B42_7x7"
 msgstr "C.13/B.42"
 
 msgid "C13B47"
@@ -57,6 +90,9 @@ msgstr "C.13/B.47"
 
 msgid "C42"
 msgstr "SR C42"
+
+msgid "C42_214t"
+msgstr "C42T"
 
 msgid "C42_B47"
 msgstr "C42/B47 AFV stations complete"
@@ -100,12 +136,6 @@ msgstr ""
 
 msgid "Cavalier_SH_short"
 msgstr "Harbinger"
-
-msgid "Chassis_1_GB104_GSR_3301_Setter"
-msgstr "GSR 3301 Setter"
-
-msgid "Chassis_2_GB104_GSR_3301_Setter"
-msgstr "GSR 3301 Setter Phase II"
 
 msgid "Chassis_GB01_Medium_Mark_I"
 msgstr "Vickers Medium Mk. I"
@@ -161,17 +191,23 @@ msgstr "Manticore 1955"
 msgid "Chassis_GB101_FV1066_Senlac"
 msgstr "Senlac Mk1"
 
-msgid "Chassis_GB102_LHMTV_Mk1"
+msgid "Chassis_GB102_LHMTV"
 msgstr "LHMTV Mk.I"
 
-msgid "Chassis_GB102_LHMTV_Mk2"
+msgid "Chassis_GB102_LHMTV_2"
 msgstr "LHMTV Mk.II"
 
-msgid "Chassis_GB103_GSOR3301_AVR_MK1"
-msgstr "GSOR3301 Mk.I"
+msgid "Chassis_GB103_GSOR3301_AVR_FS"
+msgstr "GSOR 3301 Mk. I"
 
-msgid "Chassis_GB103_GSOR3301_AVR_MK2"
-msgstr "GSOR3301 Mk.II"
+msgid "Chassis_GB103_GSOR3301_AVR_FS_2"
+msgstr "GSOR 3301 Mk. II"
+
+msgid "Chassis_GB104_GSR_3301_Setter"
+msgstr "GSR 3301 Setter"
+
+msgid "Chassis_GB104_GSR_3301_Setter_2"
+msgstr "GSR 3301 Setter Phase II"
 
 msgid "Chassis_GB105_Black_Prince_2019"
 msgstr "A43 Black Prince prototype"
@@ -230,6 +266,9 @@ msgstr "FV221A"
 msgid "Chassis_GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
+msgid "Chassis_GB120_Concept_No_5_7x7"
+msgstr "Concept No. 5"
+
 msgid "Chassis_GB121_GSOR_1010_FB"
 msgstr "GSOR 1010 FB"
 
@@ -274,6 +313,9 @@ msgstr "Conqueror Mk. I"
 
 msgid "Chassis_GB12_Conqueror_2"
 msgstr "Conqueror Mk. II"
+
+msgid "Chassis_GB130_FV225_Collector"
+msgstr "FV225 Collector"
 
 msgid "Chassis_GB131_Crusher"
 msgstr "Crusher"
@@ -322,6 +364,9 @@ msgstr "Нергал"
 msgid "Chassis_GB146_Gabler_s_Destroyer"
 msgstr "Gabler’s Destroyer"
 
+msgid "Chassis_GB147_FV4025_Contriver"
+msgstr "FV4025 Contriver"
+
 msgid "Chassis_GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
@@ -344,6 +389,15 @@ msgstr "M2A4"
 
 msgid "Chassis_GB150_Churchill_VII_G"
 msgstr "Churchill St. Gloriana"
+
+msgid "Chassis_GB152_AT_FV230_Breaker"
+msgstr "AT-FV230 Breaker"
+
+msgid "Chassis_GB156_Black_Prince_II"
+msgstr "Black Prince II"
+
+msgid "Chassis_GB157_FV214t"
+msgstr "FV214t"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -688,6 +742,9 @@ msgstr "Detroit Diesel 12V-71T"
 msgid "Ford_GAA"
 msgstr "Ford GAA"
 
+msgid "Ford_GAA_IIC"
+msgstr "Ford GAA (IIC)"
+
 msgid "Ford_V8-220"
 msgstr "Ford V8-220"
 
@@ -849,17 +906,17 @@ msgid "GB102_LHMTV_short"
 msgstr "LHMTV"
 
 msgid "GB103_GSOR3301_AVR_FS"
-msgstr "GSOR3301 AVR FS"
+msgstr "GSOR 3301 AVR FS"
 
 msgid "GB103_GSOR3301_AVR_FS_descr"
 msgstr ""
-"GSOR3301 AVR FS представляет собой один из вариантов лёгкого танка, который "
-"был подготовлен в 1960-е годы. В проекте рассматривались различные варианты "
-"машины — с разным вооружением, двигателями, башнями. Работы были свёрнуты на"
-" стадии подготовки проектной документации."
+"GSOR 3301 AVR FS представляет собой один из вариантов лёгкого танка, который"
+" был подготовлен в 1960-е годы. В проекте рассматривались различные варианты"
+" машины — с разным вооружением, двигателями, башнями. Работы были свёрнуты "
+"на стадии подготовки проектной документации."
 
 msgid "GB103_GSOR3301_AVR_FS_short"
-msgstr "GSOR"
+msgstr "AVR FS"
 
 msgid "GB104_GSR_3301_Setter"
 msgstr "GSR 3301 Setter"
@@ -1205,6 +1262,23 @@ msgstr "Caernarvon"
 msgid "GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
+msgid "GB120_Concept_No_5_7x7"
+msgstr "Concept No. 5 7x7"
+
+msgid "GB120_Concept_No_5_7x7_descr"
+msgstr ""
+"В послевоенные годы в Британии продолжалась работа над тяжёлыми "
+"бронеавтомобилями. Один из амбициозных проектов назывался Concept 5 Future "
+"Tank Design. По сути, это был танк на колёсах. Такие машины предназначались "
+"для специфичных театров военных действий, где у колёсной техники было "
+"преимущество. Например, для каменистых пустынь. Вооружение в виде 105-мм "
+"пушки позволяло бороться со средними танками того периода. Проект так и "
+"остался на стадии концепции, из-за решения развивать основные танки и "
+"гусеничные боевые машины."
+
+msgid "GB120_Concept_No_5_7x7_short"
+msgstr "Concept 5 7x7"
+
 msgid "GB120_Concept_No_5_descr"
 msgstr ""
 "В послевоенные годы в Британии продолжалась работа над тяжёлыми "
@@ -1391,6 +1465,31 @@ msgstr ""
 
 msgid "GB12_Conqueror_short"
 msgstr "Conqueror"
+
+msgid "GB130_FV225_Collector"
+msgstr "FV225 Collector"
+
+msgid "GB130_FV225_Collector_descr"
+msgstr ""
+"Британский проект тяжёлого танка со спаренной орудийной установкой и "
+"системой выбора режима огня. Идея создания машины возникла в ответ на "
+"информацию о появлении в СССР тяжёлых танков Т-10. Проект предполагал "
+"увеличение количества членов экипажа до 5 человек и значительное усиление "
+"броневой защиты. Но это, в свою очередь, означало существенное увеличение "
+"боевой массы машины, и вскоре работы были прекращены."
+
+msgid "GB130_FV225_Collector_long_special"
+msgstr ""
+"FV225 Collector — британский тяжёлый танк X уровня, вооружённый 110-мм "
+"орудием с высокими показателями урона в минуту и системой выбора режима "
+"огня. Танк проектировался как машина прорыва, поэтому у него хорошая "
+"мобильность и крепкая лобовая броня, но слабые борта."
+
+msgid "GB130_FV225_Collector_short"
+msgstr "Collector"
+
+msgid "GB130_FV225_Collector_short_special"
+msgstr "Два режима огня, хорошая лобовая броня"
 
 msgid "GB131_Crusher"
 msgstr "Crusher"
@@ -1665,6 +1764,34 @@ msgstr "G. Destroyer"
 msgid "GB146_Gabler_s_Destroyer_short_special"
 msgstr "Магазинная система заряжания, отличная мобильность"
 
+msgid "GB147_FV4025_Contriver"
+msgstr "FV4025 Contriver"
+
+msgid "GB147_FV4025_Contriver_descr"
+msgstr ""
+"В конце 1950-х – начале 1960-х годов в Великобритании активно велись работы "
+"по созданию двухорудийных танков береговой обороны. В процессе выяснилось, "
+"что из-за большой массы эти машины обладали очень высоким удельным "
+"давлением, которое крайне важно было уменьшить. Так появилась идея танка с "
+"четырьмя гусеницами. В проектировании использовались данные разведки по "
+"Объекту 279, полученные в СССР, но концепция немного изменилась: внешние "
+"гусеницы стали легче внутренних, а подвеска была заменена на британскую, с "
+"вертикальными пружинами. Вся ходовая часть монтировалась на пространственной"
+" клёпанной раме из швеллеров, однако конструкция была настолько сложной, что"
+" проект закрыли ещё до начала строительства."
+
+msgid "GB147_FV4025_Contriver_long_special"
+msgstr ""
+"FV4025 Contriver — это хорошо сбалансированный тяжёлый танк без явных "
+"недостатков. Он способен подстроиться под большинство ситуаций в бою: от "
+"позиционных перестрелок с другими «тяжами» до сдерживания наступающих сил "
+"противника. Спаренная орудийная установка обеспечивает универсальность, "
+"позволяя с одинаковым успехом вести одиночный огонь и совершать "
+"разрушительные залпы."
+
+msgid "GB147_FV4025_Contriver_short"
+msgstr "Contriver"
+
 msgid "GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
@@ -1738,6 +1865,75 @@ msgstr "Chur Gloriana"
 
 msgid "GB150_Churchill_VII_A_short_special"
 msgstr "Высокий урон в минуту, хорошее бронирование"
+
+msgid "GB152_AT_FV230_Breaker"
+msgstr "AT-FV230 Breaker"
+
+msgid "GB152_AT_FV230_Breaker_descr"
+msgstr ""
+"После закрытия проекта танка FV230 появилась идея использовать наработки по "
+"его ходовой части для создания истребителя танков. Из-за снижения массы "
+"машины ширину траков уменьшили до 800 мм, сохранив остальные узлы подвески и"
+" ходовой части. В качестве вооружения планировалось установить 123-мм "
+"нарезное орудие. Машина должна была сочетать отличную защиту, огневую мощь и"
+" неплохую подвижность. Однако в борьбе с танками основной акцент был сделан "
+"на противотанковые ракетные комплексы, и проект закрыли."
+
+msgid "GB152_AT_FV230_Breaker_long_special"
+msgstr ""
+"Определяющая особенность ПТ-САУ АT-FV230 Breaker — это великолепная лобовая "
+"броня в сочетании со сбалансированным орудием с высочайшей "
+"скорострельностью. Выдающиеся характеристики позволяют оказывать непрерывное"
+" давление на противника, заставляя его покидать укреплённые позиции. "
+"Единственный сдерживающий фактор — низкая скорость машины. Однако и этот "
+"недостаток частично компенсируется особой технологией двигателя, улучшающей "
+"подвижность."
+
+msgid "GB152_AT_FV230_Breaker_short"
+msgstr "Breaker"
+
+msgid "GB156_Black_Prince_II"
+msgstr "Black Prince II"
+
+msgid "GB156_Black_Prince_II_descr"
+msgstr ""
+"Проект тяжёлого танка A43 Infantry Tank Black Prince II со сварной башней и "
+"двумя спаренными 77-мм пушками высокой мощности. В металле реализован не "
+"был."
+
+msgid "GB156_Black_Prince_II_long_special"
+msgstr ""
+"Black Prince II — британский тяжёлый танк VII уровня со спаренной орудийной "
+"установкой. Быстрая подготовка залпа и небольшое время блокировки после него"
+" позволяют использовать механику несколько раз за бой. Кроме того, у танка "
+"хорошее бронирование башни и корпуса."
+
+msgid "GB156_Black_Prince_II_short"
+msgstr "BP II"
+
+msgid "GB156_Black_Prince_II_short_special"
+msgstr "Спаренная орудийная установка, надёжное бронирование башни и корпуса"
+
+msgid "GB157_FV214t"
+msgstr "FV214t"
+
+msgid "GB157_FV214t_descr"
+msgstr ""
+"FV 214 Conqueror — британский тяжёлый танк послевоенной эпохи, который "
+"должен был конкурировать с советским тяжёлым танком ИС-3. Эта модель, в "
+"отличие от классического Conqueror, вооружена более мощным 114-мм орудием."
+
+msgid "GB157_FV214t_long_special"
+msgstr ""
+"FV214t — британский тяжёлый танк IX уровня из семейства Conqueror, который "
+"нельзя назвать классическим. Хорошая мобильность и точное орудие позволяют "
+"ему быстро менять позиции на поле боя и вести эффективную стрельбу."
+
+msgid "GB157_FV214t_short"
+msgstr "FV214t"
+
+msgid "GB157_FV214t_short_special"
+msgstr "Комфортное орудие, надёжное лобовое бронирование башни"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -1927,7 +2123,7 @@ msgstr ""
 "размещалась в передней части корпуса. Существовал только в эскизах."
 
 msgid "GB31_Conqueror_Gun_short"
-msgstr "ConquerorGC"
+msgstr "Conqueror GC"
 
 msgid "GB32_Tortoise"
 msgstr "Tortoise"
@@ -2282,7 +2478,7 @@ msgstr "Высокая скорострельность, хорошая защи
 msgid "GB69_Cruiser_Mk_II"
 msgstr "Cruiser Mk. II"
 
-msgid "GB69_Cruiser_Mk_III_descr"
+msgid "GB69_Cruiser_Mk_II_descr"
 msgstr ""
 "Танк А10 Cruiser Mk.II был разработан Джоном Карденом и являлся дальнейшим "
 "развитием модели А9. Основными отличиями были усиленная броня и отсутствие "
@@ -2840,6 +3036,15 @@ msgstr "GMC 6004 6-71S"
 msgid "GMC_6-71_Mk11"
 msgstr "GMC 6004 6-71A"
 
+msgid "GMC_6004_6_71A_Bishop"
+msgstr "GMC 6004 6-71A (Bishop)"
+
+msgid "GMC_6004_6_71A_VAT"
+msgstr "GMC 6004 6-71A (VAT)"
+
+msgid "GMC_6004_6_71A_Val"
+msgstr "GMC 6004 6-71A (Val)"
+
 msgid "GMC_6046"
 msgstr "General Motors 6046"
 
@@ -2853,6 +3058,9 @@ msgstr ""
 
 msgid "GM_6-71_M"
 msgstr "GM 6062 6-71M"
+
+msgid "General_Motors_6046_IIC"
+msgstr "General Motors 6046 (IIC)"
 
 msgid "Guiberson_T-1020-4"
 msgstr "Guiberson T-1020-4"
@@ -2868,6 +3076,14 @@ msgstr "L50"
 
 msgid "LandRover_Meteorite_V8"
 msgstr "Land-Rover Meteorite V8"
+
+msgid "LandRover_Meteorite_V8_7x7"
+msgstr "Land-Rover Meteorite V8"
+
+msgid "LandRover_Meteorite_V8_7x7_short"
+msgstr ""
+"Land-Rover\n"
+"Meteorite V8"
 
 msgid "LandRover_Meteorite_V8_short"
 msgstr ""
@@ -2919,6 +3135,15 @@ msgstr "Meadows D.A.V."
 
 msgid "Meadows_DAV_MkI"
 msgstr "Meadows D.A.V. O.C."
+
+msgid "Meadows_D_A_V_A13_III"
+msgstr "Meadows D.A.V. (A13 III)"
+
+msgid "Meadows_D_A_V_A22"
+msgstr "Meadows D.A.V. (A22)"
+
+msgid "Meadows_D_A_V_A22F"
+msgstr "Meadows D.A.V. (A22F)"
 
 msgid "Meadows_ESTB"
 msgstr "Meadows E.S.T.L."
@@ -2992,6 +3217,36 @@ msgstr "WS No. 9"
 msgid "N9B"
 msgstr "WS No. 9"
 
+msgid "Nuffield_Liberty_Mk_III_AT_2"
+msgstr "Nuffield Liberty Mk. III (AT 2)"
+
+msgid "Nuffield_Liberty_Mk_III_AT_8"
+msgstr "Nuffield Liberty Mk. III (AT 8)"
+
+msgid "Nuffield_Liberty_Mk_III_CSP"
+msgstr "Nuffield Liberty Mk. III (CSP)"
+
+msgid "Nuffield_Liberty_Mk_III_III"
+msgstr "Nuffield Liberty Mk. III (III)"
+
+msgid "Nuffield_Liberty_Mk_III_IV"
+msgstr "Nuffield Liberty Mk. III (IV)"
+
+msgid "Nuffield_Liberty_Mk_II_AT_2"
+msgstr "Nuffield Liberty Mk. II (AT 2)"
+
+msgid "Nuffield_Liberty_Mk_II_III"
+msgstr "Nuffield Liberty Mk. II (III)"
+
+msgid "Nuffield_Liberty_Mk_V_AT_7"
+msgstr "Nuffield Liberty Mk. V (AT 7)"
+
+msgid "Nuffield_Liberty_Mk_V_AT_8"
+msgstr "Nuffield Liberty Mk. V (AT 8)"
+
+msgid "Nuffield_Liberty_Mk_V_CSP"
+msgstr "Nuffield Liberty Mk. V (CSP)"
+
 msgid "Nuffield_liberty_MKII"
 msgstr "Nuffield Liberty Mk. II"
 
@@ -3007,6 +3262,27 @@ msgstr "Nuffield Liberty Mk. IVA"
 msgid "Nuffield_liberty_MKV"
 msgstr "Nuffield Liberty Mk. V"
 
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_A30"
+msgstr "OQF 17-pdr AT Gun Mk. VII (A30)"
+
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_AT_7"
+msgstr "OQF 17-pdr AT Gun Mk. VII (AT 7)"
+
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_AT_8"
+msgstr "OQF 17-pdr AT Gun Mk. VII (AT 8)"
+
+msgid "OQF_17_pdr_AT_Gun_Mk_VII_IIC"
+msgstr "OQF 17-pdr AT Gun Mk. VII (IIC)"
+
+msgid "OQF_17_pdr_Gun_Mk_VII_221"
+msgstr "OQF 17-pdr Gun Mk. VII (221)"
+
+msgid "OQF_17_pdr_Gun_Mk_VII_A41"
+msgstr "OQF 17-pdr Gun Mk. VII (A41)"
+
+msgid "OQF_17_pdr_Gun_Mk_VII_A43"
+msgstr "OQF 17-pdr Gun Mk. VII (A43)"
+
 msgid "OQF_17pdr_Gun_Mk_IV_SH_SH"
 msgstr "OQF 17-pdr Gun Mk. IV SH-SH"
 
@@ -3019,8 +3295,23 @@ msgstr "OQF 17-pdr Gun Mk. VII B"
 msgid "OQF_17pdr_Gun_Mk_VII_SH"
 msgstr "OQF 17-pdr Gun Mk. VII"
 
+msgid "OQF_20_pdr_AT_Gun_Type_A_Barrel_AT_7"
+msgstr "OQF 20-pdr AT Gun Type A Barrel (AT 7)"
+
+msgid "OQF_20_pdr_AT_Gun_Type_B_Barrel_4101"
+msgstr "OQF 20-pdr AT Gun Type B Barrel (4101)"
+
 msgid "OQF_25pdr_Gun_Mk_II"
 msgstr "Q.F. 25-Pr. Gun/How."
+
+msgid "OQF_32_pdr_AT_Gun_A39"
+msgstr "OQF 32-pdr AT Gun (A39)"
+
+msgid "OQF_32_pdr_AT_Gun_AT_15"
+msgstr "OQF 32-pdr AT Gun (AT 15)"
+
+msgid "OQF_32_pdr_Gun_Mk_II_221"
+msgstr "OQF 32-pdr Gun Mk. II (221)"
 
 msgid "OQF_3pdr_Gun"
 msgstr "OQF 3-pdr Gun Mk. II"
@@ -3031,11 +3322,20 @@ msgstr "OQF 55-pdr AT Gun"
 msgid "OQF_55_pdr_CG"
 msgstr "OQF 55-pdr CG"
 
+msgid "OQF_55_pdr_Gun_214t"
+msgstr "OQF 55-pdr Gun (214t)"
+
 msgid "OQF_77mm_AT_Gun_MkII"
 msgstr "OQF 77 mm AT Gun Mk. II"
 
 msgid "OQF_77mm_Gun_MkII"
 msgstr "OQF 77 mm Gun Mk. II"
+
+msgid "OQF_77mm_Gun_Mk_II_A22F"
+msgstr "OQF 77 mm Gun Mk. II (A22F)"
+
+msgid "OQF_77mm_Gun_Mk_II_A43"
+msgstr "OQF 77 mm Gun Mk. II (A43)"
 
 msgid "OQF_77mm_HV_MK_I"
 msgstr "OQF 77 mm HV Mk. I"
@@ -3043,17 +3343,11 @@ msgstr "OQF 77 mm HV Mk. I"
 msgid "PRC_352"
 msgstr "PRC 352"
 
+msgid "Parson_s_Turbine_No_2983"
+msgstr "Parson's Turbine No. 2983"
+
 msgid "Paxman_Ricardo"
 msgstr "Paxman 12TP"
-
-msgid "QF_105mm_AP"
-msgstr "QF 105 mm AP"
-
-msgid "QF_105mm_APC"
-msgstr "QF 105 mm APC"
-
-msgid "QF_105mm_HE"
-msgstr "QF 105 mm HE"
 
 msgid "QF_105mm_LT_Gun"
 msgstr "QF 105 mm Gun"
@@ -3061,11 +3355,59 @@ msgstr "QF 105 mm Gun"
 msgid "QF_20_pounder_S"
 msgstr "QF 20 pounder"
 
-msgid "QF_2pdr_Littlejohn"
+msgid "QF_2_Pr_Mk_IX_IV"
+msgstr "QF 2-pdr Mk. IX (IV)"
+
+msgid "QF_2_pdr_Mk_IX_III"
+msgstr "QF 2-pdr Mk. IX (III)"
+
+msgid "QF_2_pdr_Mk_IX_prototype_I"
+msgstr "QF 2-pdr Mk. IX prototype (I)"
+
+msgid "QF_2_pdr_Mk_X_A12"
+msgstr "QF 2-pdr Mk. X (A12)"
+
+msgid "QF_2_pdr_Mk_X_A13_III"
+msgstr "QF 2-pdr Mk. X (A13 III)"
+
+msgid "QF_2_pdr_Mk_X_A22"
+msgstr "QF 2-pdr Mk. X (A22)"
+
+msgid "QF_2_pdr_Mk_X_B"
 msgstr "QF 2-pdr Mk. X-B"
+
+msgid "QF_2_pdr_Mk_X_Val"
+msgstr "QF 2-pdr Mk. X (Val)"
 
 msgid "QF_2pdr_Littlejohn_HH"
 msgstr "2-pdr Gun Mk X-B HH"
+
+msgid "QF_40mm_Mk_VI_Bofors_IV"
+msgstr "QF 40 mm Mk. VI Bofors (IV)"
+
+msgid "QF_6_pdr_AT_Gun_Mk_II_VAT"
+msgstr "QF 6-pdr AT Gun Mk. II (VAT)"
+
+msgid "QF_6_pdr_AT_Gun_Mk_IV_VAT"
+msgstr "QF 6-pdr AT Gun Mk. IV (VAT)"
+
+msgid "QF_6_pdr_Gun_Mk_V_A22"
+msgstr "QF 6-pdr Gun Mk. V (A22)"
+
+msgid "QF_6_pdr_Gun_Mk_V_A27M"
+msgstr "QF 6-pdr Gun Mk. V (A27M)"
+
+msgid "QF_6_pdr_Mk_III_A24"
+msgstr "QF 6-pdr Mk. III (A24)"
+
+msgid "QF_6_pdr_Mk_VA_AEC"
+msgstr "QF 6-pdr Mk. VA (AEC)"
+
+msgid "QF_6_pdr_Mk_V_A15"
+msgstr "QF 6-pdr Mk. V (A15)"
+
+msgid "QF_6_pdr_Mk_V_A24"
+msgstr "QF 6-pdr Mk. V (A24)"
 
 msgid "QF_6_pounder_8cwt_Mk_I"
 msgstr "QF 6-pdr 8 cwt Mk. I"
@@ -3115,6 +3457,24 @@ msgstr "QF 6-pdr LT Gun Mk. V"
 msgid "QF_6_pounder_Mk_V_early"
 msgstr "QF 6-pdr Gun Mk. V early"
 
+msgid "Q_F_25_Pr_Gun_How_304"
+msgstr "Q.F. 25-Pr. Gun/How. (304)"
+
+msgid "Q_F_25_Pr_Gun_How_Bishop"
+msgstr "Q.F. 25-Pr. Gun/How. (Bishop)"
+
+msgid "Q_F_4_5_in_Howitzer"
+msgstr "Q.F. 4.5-in. Howitzer"
+
+msgid "Q_F_4_5_in_Howitzer_304"
+msgstr "Q.F. 4.5-in. Howitzer (304)"
+
+msgid "Q_F_4_5_in_Howitzer_Bishop"
+msgstr "Q.F. 4.5-in. Howitzer (Bishop)"
+
+msgid "Q_F_6_in_Gun_Mk_V"
+msgstr "Q.F. 6-in. Gun Mk. V"
+
 msgid "Rolls_Royce_B80"
 msgstr "Rolls-Royce B80"
 
@@ -3124,23 +3484,77 @@ msgstr "Rolls-Royce B80P"
 msgid "Rolls_Royce_B81"
 msgstr "Rolls-Royce B81"
 
+msgid "Rolls_Royce_B81_1955"
+msgstr "Rolls-Royce B81 (1955)"
+
+msgid "Rolls_Royce_CV_12TCA"
+msgstr "Rolls-Royce CV-12TCA"
+
+msgid "Rolls_Royce_FB60"
+msgstr "Rolls-Royce FB60"
+
+msgid "Rolls_Royce_FB60_LHMTV"
+msgstr "Rolls-Royce FB60 (LHMTV)"
+
 msgid "Rolls_Royce_Griffon"
 msgstr "Rolls-Royce Griffon"
 
 msgid "Rolls_Royce_Griffon_180"
 msgstr "Rolls-Royce Griffon 180"
 
+msgid "Rolls_Royce_Griffon_180_B"
+msgstr "Rolls-Royce Griffon 180B"
+
+msgid "Rolls_Royce_Griffon_214"
+msgstr "Rolls-Royce Griffon (214)"
+
+msgid "Rolls_Royce_Griffon_214t"
+msgstr "Rolls-Royce Griffon (214t)"
+
+msgid "Rolls_Royce_Griffon_217"
+msgstr "Rolls-Royce Griffon (217)"
+
+msgid "Rolls_Royce_Griffon_4004"
+msgstr "Rolls-Royce Griffon (4004)"
+
+msgid "Rolls_Royce_Griffon_4005"
+msgstr "Rolls-Royce Griffon (4005)"
+
 msgid "Rolls_Royce_Griffon_A"
 msgstr "Rolls-Royce Griffon A"
 
+msgid "Rolls_Royce_Griffon_SC"
+msgstr "Rolls-Royce Griffon (SC)"
+
 msgid "Rolls_Royce_K60"
-msgstr "Rolls Royce K60"
+msgstr "Rolls-Royce K60"
 
 msgid "Rolls_Royce_K60_Mk2"
-msgstr "Rolls Royce K60 Mk. 2"
+msgstr "Rolls-Royce K60 Mk. 2"
+
+msgid "Rolls_Royce_Meteor"
+msgstr "Rolls-Royce Meteor"
+
+msgid "Rolls_Royce_Meteor_4101"
+msgstr "Rolls-Royce Meteor (4101)"
+
+msgid "Rolls_Royce_Meteor_A27M"
+msgstr "Rolls-Royce Meteor (A27M)"
+
+msgid "Rolls_Royce_Meteor_A30"
+msgstr "Rolls-Royce Meteor (A30)"
+
+msgid "Rolls_Royce_Meteor_A43"
+msgstr "Rolls-Royce Meteor (A43)"
+
+msgid "Rolls_Royce_Meteor_AT_15"
+msgstr "Rolls-Royce Meteor (AT 15)"
 
 msgid "Rolls_Royce_Meteor_GD"
 msgstr "Rolls-Royce Meteor GD"
+
+msgid "Rolls_Royce_Meteor_M120"
+msgstr "Rolls-Royce Meteor M120"
 
 msgid "Rolls_Royce_Meteor_M120A"
 msgstr "Rolls-Royce Meteor M120A"
@@ -3154,20 +3568,74 @@ msgstr "Rolls-Royce Meteor M120C"
 msgid "Rolls_Royce_Meteor_M120F"
 msgstr "Rolls-Royce Meteor M120F"
 
+msgid "Rolls_Royce_Meteor_M120_221"
+msgstr "Rolls-Royce Meteor M120 (221)"
+
+msgid "Rolls_Royce_Meteor_M120_A39"
+msgstr "Rolls-Royce Meteor M120 (A39)"
+
+msgid "Rolls_Royce_Meteor_M120_CGC"
+msgstr "Rolls-Royce Meteor M120 (CGC)"
+
 msgid "Rolls_Royce_Meteor_M300"
 msgstr "Rolls-Royce Meteor M300"
 
 msgid "Rolls_Royce_Meteor_Mark_IVB_900"
 msgstr "Rolls-Royce Meteor Mk. IVB (900)"
 
+msgid "Rolls_Royce_Meteor_MkIV"
+msgstr "Rolls-Royce Meteor Mk. IVB"
+
+msgid "Rolls_Royce_Meteor_MkIVC"
+msgstr "Rolls-Royce Meteor Mk. IVC"
+
 msgid "Rolls_Royce_Meteor_MkIV_B12"
 msgstr "Rolls-Royce Meteor Mk. IVB/12"
+
+msgid "Rolls_Royce_Meteor_MkV"
+msgstr "Rolls-Royce Meteor Mk. V"
 
 msgid "Rolls_Royce_Meteor_Mk_IVA"
 msgstr "Rolls-Royce Meteor Mk. IVA"
 
+msgid "Rolls_Royce_Meteor_Mk_IVA_101"
+msgstr "Rolls-Royce Meteor Mk. IVA 101"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_207"
+msgstr "Rolls-Royce Meteor Mk. IVB (207)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_3805"
+msgstr "Rolls-Royce Meteor Mk. IVB (3805)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_4101"
+msgstr "Rolls-Royce Meteor Mk. IVB (4101)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_A27M"
+msgstr "Rolls-Royce Meteor Mk. IVB (A27M)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_A30"
+msgstr "Rolls-Royce Meteor Mk. IVB (A30)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVB_A34"
+msgstr "Rolls-Royce Meteor Mk. IVB (A34)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_207"
+msgstr "Rolls-Royce Meteor Mk. IVC (207)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_221"
+msgstr "Rolls-Royce Meteor Mk. IVC (221)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_3805"
+msgstr "Rolls-Royce Meteor Mk. IVC (3805)"
+
+msgid "Rolls_Royce_Meteor_Mk_IVC_4004"
+msgstr "Rolls-Royce Meteor Mk. IVC (4004)"
+
 msgid "Rolls_Royce_Meteor_Mk_IXA"
 msgstr "Rolls-Royce Meteor Mk. IXA"
+
+msgid "Rolls_Royce_Meteor_Mk_V_AT_15"
+msgstr "Rolls-Royce Meteor Mk. V (AT 15)"
 
 msgid "Rolls_Royce_Meteor_P"
 msgstr "Rolls-Royce Meteor P"
@@ -3184,35 +3652,23 @@ msgstr "Rolls-Royce Meteorite 202B"
 msgid "Rolls_Royce_Meteorite_V8"
 msgstr "Rolls-Royce Meteorite V8"
 
-msgid "Rolls_Royse_B81"
-msgstr "Rolls-Royce B81"
+msgid "Rolls_Royce_Phantom"
+msgstr "Rolls-Royce Phantom"
 
-msgid "Rolls_Royse_FB_60"
-msgstr "Rolls-Royce FB60"
+msgid "Rolls_Royce_Phantom_I"
+msgstr "Rolls-Royce Phantom (I)"
 
-msgid "Rolls_Royse_Meteor"
-msgstr "Rolls-Royce Meteor"
-
-msgid "Rolls_Royse_Meteor_M120"
-msgstr "Rolls-Royce Meteor M120"
+msgid "Rolls_Royce_V12"
+msgstr "Rolls-Royce V12"
 
 msgid "Rolls_Royse_Meteor_Mk12"
 msgstr "Rolls-Royce Meteor Mk. 12"
-
-msgid "Rolls_Royse_Meteor_MkIV"
-msgstr "Rolls-Royce Meteor Mk. IVB"
-
-msgid "Rolls_Royse_Meteor_MkIVC"
-msgstr "Rolls-Royce Meteor Mk. IVC"
 
 msgid "Rolls_Royse_Meteor_MkIV_N"
 msgstr "Rolls-Royce Meteor Mk. IVB"
 
 msgid "Rolls_Royse_Meteor_MkIX"
 msgstr "Rolls-Royce Meteor Mk. IX"
-
-msgid "Rolls_Royse_Meteor_MkV"
-msgstr "Rolls-Royce Meteor Mk. V"
 
 msgid "Rolls_Royse_Meteor_MkXI"
 msgstr "Rolls-Royce Meteor Mk. XI"
@@ -3226,9 +3682,6 @@ msgstr "Rolls-Royce Satellite Mk. XI SC"
 msgid "Rolls_Royse_Meteor_SH"
 msgstr "Rolls-Royce Satellite"
 
-msgid "Rolls_Royse_Phantom"
-msgstr "Rolls-Royce Phantom"
-
 msgid "Rolls_Royse_Phantom_II"
 msgstr "2x Rolls-Royce Phantom II"
 
@@ -3237,6 +3690,15 @@ msgstr "Rover Meteorite"
 
 msgid "SR_C42H"
 msgstr "SR C42H"
+
+msgid "SR_C42I"
+msgstr "SR C42I"
+
+msgid "SR_C42O"
+msgstr "SR C42O"
+
+msgid "SR_C42_B"
+msgstr "SR C42 B"
 
 msgid "SR_C42a"
 msgstr "SR C42a"
@@ -3281,7 +3743,7 @@ msgid "Turret_1_GB102_LHMTV"
 msgstr "LHMTV Mk.I"
 
 msgid "Turret_1_GB103_GSOR3301_AVR_FS"
-msgstr "A.V.R.F/S turret"
+msgstr "A.V.R. F/S"
 
 msgid "Turret_1_GB104_GSR_3301_Setter"
 msgstr "GSR 3301 Setter"
@@ -3300,6 +3762,9 @@ msgstr "A46"
 
 msgid "Turret_1_GB109_GSOR_1008"
 msgstr "GSOR1008 Mk.1"
+
+msgid "Turret_1_GB10_Black_Prince"
+msgstr "Black Prince"
 
 msgid "Turret_1_GB110_FV4201_Chieftain_Prototype"
 msgstr "FV4201 P.1"
@@ -3328,6 +3793,9 @@ msgstr "Centurion Mk. II"
 msgid "Turret_1_GB120_Concept_No_5"
 msgstr "Concept No. 5"
 
+msgid "Turret_1_GB120_Concept_No_5_7x7"
+msgstr "Concept No. 5"
+
 msgid "Turret_1_GB121_GSOR_1010_FB"
 msgstr "GSOR 1010 FB"
 
@@ -3354,6 +3822,9 @@ msgstr "Nemesis"
 
 msgid "Turret_1_GB12_Conqueror"
 msgstr "Conqueror Mk. II"
+
+msgid "Turret_1_GB130_FV225_Collector"
+msgstr "FV225 Collector"
 
 msgid "Turret_1_GB131_Crusher"
 msgstr "Crusher"
@@ -3388,6 +3859,9 @@ msgstr "Нергал"
 msgid "Turret_1_GB146_Gabler_s_Destroyer"
 msgstr "Gabler’s Destroyer"
 
+msgid "Turret_1_GB147_FV4025_Contriver"
+msgstr "FV4025 Contriver"
+
 msgid "Turret_1_GB148_FV227_Conceiver"
 msgstr "FV227 Conceiver"
 
@@ -3399,6 +3873,15 @@ msgstr "M2A1"
 
 msgid "Turret_1_GB150_Churchill_VII_G"
 msgstr "Churchill St. Gloriana"
+
+msgid "Turret_1_GB152_AT_FV230_Breaker"
+msgstr "Beaver"
+
+msgid "Turret_1_GB156_Black_Prince_II"
+msgstr "Black Prince II"
+
+msgid "Turret_1_GB157_FV214t"
+msgstr "FV214t"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -3517,7 +4000,7 @@ msgstr "AT 15"
 msgid "Turret_1_GB73_AT2"
 msgstr "AT 2"
 
-msgid "Turret_1_GB74_AT8_2"
+msgid "Turret_1_GB74_AT8"
 msgstr "AT 8"
 
 msgid "Turret_1_GB75_AT7"
@@ -3618,9 +4101,6 @@ msgstr "GSR 3301 Setter Phase II"
 
 msgid "Turret_2_GB107_Cavalier"
 msgstr "A24 Vauxhall"
-
-msgid "Turret_2_GB10_Black_Prince"
-msgstr "Black Prince"
 
 msgid "Turret_2_GB10_Black_Prince_SH"
 msgstr "Churchill BP"
@@ -3731,6 +4211,9 @@ msgstr "Twin 105 mm Gun L7 MBC"
 msgid "Twin_105_mm_Gun_T8_MBC"
 msgstr "Twin 105 mm T8 Gun MBC"
 
+msgid "Twin_110_mm_Gun_MBC"
+msgstr "Twin 110 mm Gun MBC"
+
 msgid "Twin_120_mm_Gun_L1_MBC"
 msgstr "Twin 120 mm Gun L1 MBC"
 
@@ -3745,6 +4228,12 @@ msgstr "Twin 32-pdr Gun MBC"
 
 msgid "Twin_32pdr_Gun_MBC_Mk2"
 msgstr "Twin 32-pdr Gun MBC Mk. 2"
+
+msgid "Twin_4_5_in_Gun_MBC"
+msgstr "Twin 4.5-in. Gun MBC"
+
+msgid "Twin_OQF_77mm_Gun_Mk_II"
+msgstr "Twin OQF 77 mm Gun Mk. II"
 
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "Bedford Twin-Six"
@@ -3772,6 +4261,9 @@ msgstr "WS No. 19 GD"
 
 msgid "WS_No_19_Mk_IIB"
 msgstr "WS No. 19 Mk. IIB"
+
+msgid "WS_No_19_Mk_III"
+msgstr "WS No. 19 Mk. III"
 
 msgid "WS_No_22_Mk_3"
 msgstr "WS No. 22 Mk. 3"
@@ -3825,11 +4317,26 @@ msgstr "APDS L-28 N"
 msgid "_105mm_APCR_T29E3_MBC"
 msgstr "APCR T29E3 MBC"
 
+msgid "_105mm_APC_EX20"
+msgstr "105 mm APC EX20"
+
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
 
 msgid "_105mm_APDS_L_28P"
 msgstr "APDS L-28P"
+
+msgid "_105mm_APDS_L_28_4015"
+msgstr "APDS L-28 (4015)"
+
+msgid "_105mm_APDS_L_28_4101"
+msgstr "APDS L-28 (4101)"
+
+msgid "_105mm_APDS_L_28_5321"
+msgstr "APDS L-28 (5321)"
+
+msgid "_105mm_AP_EX20"
+msgstr "105 mm AP EX20"
 
 msgid "_105mm_AP_L7_MBC"
 msgstr "AP Mk. 5 MBC"
@@ -3885,8 +4392,26 @@ msgstr "HESH L7 GSOR"
 msgid "_105mm_HESH_L7_N"
 msgstr "HESH-T L-37 N"
 
+msgid "_105mm_HESH_L_35_4015"
+msgstr "HESH L-35 (4015)"
+
+msgid "_105mm_HESH_L_35_4101"
+msgstr "HESH L-35 (4101)"
+
+msgid "_105mm_HESH_L_35_5321"
+msgstr "HESH L-35 (5321)"
+
+msgid "_105mm_HESH_L_37_4015"
+msgstr "HESH L-37 (4015)"
+
+msgid "_105mm_HESH_L_37_4101"
+msgstr "HESH L-37 (4101)"
+
 msgid "_105mm_HESH_P35"
 msgstr "HESH-T P-35"
+
+msgid "_105mm_HE_EX20"
+msgstr "105 mm HE EX20"
 
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
@@ -3936,6 +4461,15 @@ msgstr "105 mm MV HE"
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"
 
+msgid "_110mm_MK_1_HC_MBC"
+msgstr "HC Mk. 1 MBC"
+
+msgid "_110mm_MK_3_APDS_MBC"
+msgstr "APDS Mk. 3 MBC"
+
+msgid "_110mm_MK_7_HE_MBC"
+msgstr "HE Mk. 7 MBC"
+
 msgid "_110mm_MVN_AP"
 msgstr "110 mm MVN AP"
 
@@ -3951,10 +4485,22 @@ msgstr "110 mm MV AP"
 msgid "_110mm_MV_APDS"
 msgstr "110 mm MV APCR"
 
+msgid "_110mm_MV_APDS_7x7"
+msgstr "110 mm MV APCR"
+
+msgid "_110mm_MV_AP_7x7"
+msgstr "110 mm MV AP"
+
 msgid "_110mm_MV_Gun"
 msgstr "110 mm Medium Velocity Gun"
 
+msgid "_110mm_MV_Gun_7x7"
+msgstr "110 mm Medium Velocity Gun"
+
 msgid "_110mm_MV_HE"
+msgstr "110 mm MV HE"
+
+msgid "_110mm_MV_HE_7x7"
 msgstr "110 mm MV HE"
 
 msgid "_110mm_MV_Nemesis_Gun"
@@ -3996,8 +4542,20 @@ msgstr "APDS L15P1"
 msgid "_120mm_APDS_L1A1"
 msgstr "APDS L1"
 
+msgid "_120mm_APDS_L1_214"
+msgstr "APDS L1 (214)"
+
+msgid "_120mm_APDS_L1_4004"
+msgstr "APDS L1 (4004)"
+
+msgid "_120mm_APDS_L1_A39"
+msgstr "APDS L1 (A39)"
+
 msgid "_120mm_APDS_L1_MBC"
 msgstr "APDS L1 MBC"
+
+msgid "_120mm_APDS_L1_SC"
+msgstr "APDS L1 (SC)"
 
 msgid "_120mm_AP_L15A11"
 msgstr "AP L15A11"
@@ -4005,14 +4563,29 @@ msgstr "AP L15A11"
 msgid "_120mm_AP_L15A1_DU"
 msgstr "AP L15A11 DU"
 
+msgid "_120mm_AP_L1_214"
+msgstr "AP L1 (214)"
+
+msgid "_120mm_AP_L1_4004"
+msgstr "AP L1 (4004)"
+
+msgid "_120mm_AP_L1_A39"
+msgstr "AP L1 (A39)"
+
 msgid "_120mm_AP_L1_MBC"
 msgstr "AP L1 MBC"
+
+msgid "_120mm_AP_L1_SC"
+msgstr "AP L1 (SC)"
 
 msgid "_120mm_AP_Mk_1"
 msgstr "120 mm A.P."
 
 msgid "_120mm_AT_Gun_L1A1"
 msgstr "120 mm AT Gun L1A1"
+
+msgid "_120mm_AT_Gun_L1A1_4004"
+msgstr "120 mm AT Gun L1A1 (4004)"
 
 msgid "_120mm_Gun_L11"
 msgstr "120 mm Tank Gun L11"
@@ -4029,6 +4602,9 @@ msgstr "120 mm Tank Gun L11PA"
 msgid "_120mm_Gun_L1A1"
 msgstr "120 mm Gun L1A1"
 
+msgid "_120mm_Gun_L1A1_214"
+msgstr "120 mm Gun L1A1 (214)"
+
 msgid "_120mm_Gun_L1A1_A"
 msgstr "120 mm Gun L1A1 A"
 
@@ -4037,6 +4613,18 @@ msgstr "120 mm Low Velocity Gun"
 
 msgid "_120mm_HESH_L15"
 msgstr "120 mm L15 HESH"
+
+msgid "_120mm_HESH_L1_214"
+msgstr "HESH L1 (214)"
+
+msgid "_120mm_HESH_L1_4004"
+msgstr "HESH L1 (4004)"
+
+msgid "_120mm_HESH_L1_A39"
+msgstr "HESH L1 (A39)"
+
+msgid "_120mm_HESH_L1_SC"
+msgstr "HESH L1 (SC)"
 
 msgid "_120mm_HESH_L30"
 msgstr "HE L30"
@@ -4071,14 +4659,26 @@ msgstr "120 mm QF gun"
 msgid "_123mm_APDS_Mk_2"
 msgstr "APDS Mk. 2"
 
+msgid "_123mm_APDS_Mk_2B"
+msgstr "APDS Mk. 2B"
+
 msgid "_123mm_AP_Mk_1"
 msgstr "AP Mk. 1"
+
+msgid "_123mm_AP_Mk_1B"
+msgstr "AP Mk. 1B"
 
 msgid "_123mm_HESH_Mk_1"
 msgstr "HESH Mk. 1"
 
+msgid "_123mm_HESH_Mk_1B"
+msgstr "HESH Mk. 1B"
+
 msgid "_123mm_OQF_Mk_1"
 msgstr "OQF 123 mm Mk. 1"
+
+msgid "_123mm_OQF_Mk_1B"
+msgstr "OQF 123 mm Mk. 1B"
 
 msgid "_13pdr_Gun"
 msgstr "Q.F. 13-Pr. Mk. III"
@@ -4101,14 +4701,86 @@ msgstr "AP W Mk. 1"
 msgid "_15mm_Machine_gun_BESA"
 msgstr "15 mm Machine Gun BESA"
 
+msgid "_17_Pr_APCBC_Mk_8T_IIC"
+msgstr "APCBC 17-Pr. Mk. 8T (IIC)"
+
+msgid "_17_Pr_APCBC_Mk_9T_221"
+msgstr "APCBC 17-Pr. Mk. 9T (221)"
+
+msgid "_17_Pr_APCBC_Mk_9T_A30"
+msgstr "APCBC 17-Pr. Mk. 9T (A30)"
+
+msgid "_17_Pr_APCBC_Mk_9T_A41"
+msgstr "APCBC 17-Pr. Mk. 9T (A41)"
+
+msgid "_17_Pr_APCBC_Mk_9T_A43"
+msgstr "APCBC 17-Pr. Mk. 9T (A43)"
+
+msgid "_17_Pr_APCBC_Mk_9T_AT_7"
+msgstr "APCBC 17-Pr. Mk. 9T (AT 7)"
+
+msgid "_17_Pr_APCBC_Mk_9T_AT_8"
+msgstr "APCBC 17-Pr. Mk. 9T (AT 8)"
+
 msgid "_17_Pr_APCBC_Mk_9T_IA"
 msgstr "APCBC 17-Pr. Mk. 9T (IA)"
+
+msgid "_17_Pr_APCBC_Mk_9T_IIC"
+msgstr "APCBC 17-Pr. Mk. 9T (IIC)"
+
+msgid "_17_Pr_APDS_Mk_1T_221"
+msgstr "APDS 17-Pr. Mk. 1T (221)"
+
+msgid "_17_Pr_APDS_Mk_1T_A30"
+msgstr "APDS 17-Pr. Mk. 1T (A30)"
+
+msgid "_17_Pr_APDS_Mk_1T_A41"
+msgstr "APDS 17-Pr. Mk. 1T (A41)"
+
+msgid "_17_Pr_APDS_Mk_1T_A43"
+msgstr "APDS 17-Pr. Mk. 1T (A43)"
+
+msgid "_17_Pr_APDS_Mk_1T_AT_7"
+msgstr "APDS 17-Pr. Mk. 1T (AT 7)"
+
+msgid "_17_Pr_APDS_Mk_1T_AT_8"
+msgstr "APDS 17-Pr. Mk. 1T (AT 8)"
 
 msgid "_17_Pr_APDS_Mk_1T_IA"
 msgstr "APDS 17-Pr. Mk. 1T (IA)"
 
+msgid "_17_Pr_APDS_Mk_1T_IIC"
+msgstr "APDS 17-Pr. Mk. 1T (IIC)"
+
+msgid "_17_Pr_AP_Mk_6T_IIC"
+msgstr "AP 17-Pr. Mk. 6T (IIC)"
+
+msgid "_17_Pr_HE_Mk_1T_IIC"
+msgstr "HE 17-Pr. Mk. 1T (IIC)"
+
+msgid "_17_Pr_HE_Mk_2T_221"
+msgstr "HE 17-Pr. Mk. 2T (221)"
+
+msgid "_17_Pr_HE_Mk_2T_A30"
+msgstr "HE 17-Pr. Mk. 2T (A30)"
+
+msgid "_17_Pr_HE_Mk_2T_A41"
+msgstr "HE 17-Pr. Mk. 2T (A41)"
+
+msgid "_17_Pr_HE_Mk_2T_A43"
+msgstr "HE 17-Pr. Mk. 2T (A43)"
+
+msgid "_17_Pr_HE_Mk_2T_AT_7"
+msgstr "HE 17-Pr. Mk. 2T (AT 7)"
+
+msgid "_17_Pr_HE_Mk_2T_AT_8"
+msgstr "HE 17-Pr. Mk. 2T (AT 8)"
+
 msgid "_17_Pr_HE_Mk_2T_IA"
 msgstr "HE 17-Pr. Mk. 2T (IA)"
+
+msgid "_17_Pr_HE_Mk_2T_IIC"
+msgstr "HE 17-Pr. Mk. 2T (IIC)"
 
 msgid "_17pdr_APCBC_Mk8T"
 msgstr "APCBC 17-Pr. Mk. 8T"
@@ -4149,14 +4821,23 @@ msgstr "OQF 17-pdr AT Gun Mk. V"
 msgid "_183mm_AP_Mk1"
 msgstr "AP Mk. 1"
 
+msgid "_183mm_AP_Mk_1_4005"
+msgstr "AP Mk. 1 (4005)"
+
 msgid "_183mm_AT_Gun"
 msgstr "183 mm L4"
 
 msgid "_183mm_HESH"
 msgstr "HESH Mk. 1"
 
+msgid "_183mm_HESH_Mk_1_4005"
+msgstr "HESH Mk. 1 (4005)"
+
 msgid "_183mm_HE_Mk1"
 msgstr "HE Mk. 1"
+
+msgid "_183mm_HE_Mk_1_4005"
+msgstr "HE Mk. 1 (4005)"
 
 msgid "_183mm_L4"
 msgstr "183 mm L4"
@@ -4169,6 +4850,51 @@ msgstr "AP-T Mk. 1T"
 
 msgid "_18pdr_HE_Mk_1C"
 msgstr "HE Mk. 1C"
+
+msgid "_20_Pr_APC_Mk_2_4007"
+msgstr "APC Mk. 2 (4007)"
+
+msgid "_20_Pr_APC_Mk_2_4101"
+msgstr "APC Mk. 2 (4101)"
+
+msgid "_20_Pr_APC_Mk_2_A41"
+msgstr "APC Mk. 2 (A41)"
+
+msgid "_20_Pr_APC_Mk_2_AT_15"
+msgstr "APC Mk. 2 (AT 15)"
+
+msgid "_20_Pr_APC_Mk_2_AT_7"
+msgstr "APC Mk. 2 (AT 7)"
+
+msgid "_20_Pr_AP_Mk_1_4007"
+msgstr "AP Mk. 1 (4007)"
+
+msgid "_20_Pr_AP_Mk_1_4101"
+msgstr "AP Mk. 1 (4101)"
+
+msgid "_20_Pr_AP_Mk_1_A41"
+msgstr "AP Mk. 1 (A41)"
+
+msgid "_20_Pr_AP_Mk_1_AT_15"
+msgstr "AP Mk. 1 (AT 15)"
+
+msgid "_20_Pr_AP_Mk_1_AT_7"
+msgstr "AP Mk. 1 (AT 7)"
+
+msgid "_20_Pr_HE_Mk_3_4007"
+msgstr "HE Mk. 3 (4007)"
+
+msgid "_20_Pr_HE_Mk_3_4101"
+msgstr "HE Mk. 3 (4101)"
+
+msgid "_20_Pr_HE_Mk_3_A41"
+msgstr "HE Mk. 3 (A41)"
+
+msgid "_20_Pr_HE_Mk_3_AT_15"
+msgstr "HE Mk. 3 (AT 15)"
+
+msgid "_20_Pr_HE_Mk_3_AT_7"
+msgstr "HE Mk. 3 (AT 7)"
 
 msgid "_20pdr_APC_Mk2"
 msgstr "APC Mk. 2"
@@ -4221,6 +4947,12 @@ msgstr "HE Mk. 3 MBC"
 msgid "_20pdr_HE_Mk3b_MBC"
 msgstr "HE Mk. 3b MBC"
 
+msgid "_25_Pr_HE_Mk_1D_304"
+msgstr "HE Mk. 1D (304)"
+
+msgid "_25_Pr_HE_Mk_1D_Bishop"
+msgstr "HE Mk. 1D (Bishop)"
+
 msgid "_25pdr_AP_Mk_1T"
 msgstr "AP-T Mk. 1T"
 
@@ -4245,6 +4977,105 @@ msgstr "HE Mk. 1D"
 msgid "_25pdr_HE_Mk_1DA"
 msgstr "HE Mk. 1DA"
 
+msgid "_2_Pr_APCBC_Mk_IXBT_A12"
+msgstr "APCBC Mk. IXBT (A12)"
+
+msgid "_2_Pr_APCBC_Mk_IXBT_A13_III"
+msgstr "APCBC Mk. IXBT (A13 III)"
+
+msgid "_2_Pr_APCBC_Mk_IXBT_A22"
+msgstr "APCBC Mk. IXBT (A22)"
+
+msgid "_2_Pr_APCBC_Mk_IXBT_Val"
+msgstr "APCBC Mk. IXBT (Val)"
+
+msgid "_2_Pr_APCNR_Mk_1B"
+msgstr "APCNR Mk. IA"
+
+msgid "_2_Pr_APCNR_Mk_1_I"
+msgstr "APCNR Mk. 1 (I)"
+
+msgid "_2_Pr_APCNR_Mk_1_II"
+msgstr "APCNR Mk. 1 (II)"
+
+msgid "_2_Pr_APCNR_Mk_1_III"
+msgstr "APCNR Mk. 1 (III)"
+
+msgid "_2_Pr_APCNR_Mk_1_IV"
+msgstr "APCNR Mk. 1 (IV)"
+
+msgid "_2_Pr_APCNR_Mk_2"
+msgstr "APCNR Mk. 2"
+
+msgid "_2_Pr_APCNR_Mk_2_A12"
+msgstr "APCNR Mk. 2 (A12)"
+
+msgid "_2_Pr_APCNR_Mk_2_A13_III"
+msgstr "APCNR Mk. 2 (A13 III)"
+
+msgid "_2_Pr_APCNR_Mk_2_A22"
+msgstr "APCNR Mk. 2 (A22)"
+
+msgid "_2_Pr_APCNR_Mk_2_Val"
+msgstr "APCNR Mk. 2 (Val)"
+
+msgid "_2_Pr_APSV_Mk_1"
+msgstr "APSV Mk. 1"
+
+msgid "_2_Pr_APSV_Mk_2"
+msgstr "APSV Mk. 2"
+
+msgid "_2_Pr_AP_Mk_1TP"
+msgstr "AP Mk. 1Tp"
+
+msgid "_2_Pr_AP_Mk_1TP_I"
+msgstr "AP Mk. 1Tp (I)"
+
+msgid "_2_Pr_AP_Mk_1T_III"
+msgstr "AP Mk. 1T (III)"
+
+msgid "_2_Pr_AP_Mk_1T_IV"
+msgstr "AP Mk. 1T (IV)"
+
+msgid "_2_Pr_AP_Mk_IXBT"
+msgstr "APCBC Mk. IXBT"
+
+msgid "_2_Pr_AP_Mk_XB"
+msgstr "APCBC Mk. XA"
+
+msgid "_2_Pr_HESV"
+msgstr "HESV"
+
+msgid "_2_Pr_HE_Mk_2B"
+msgstr "HE Mk. IIA"
+
+msgid "_2_Pr_HE_Mk_2_A12"
+msgstr "HE Mk. 2 (A12)"
+
+msgid "_2_Pr_HE_Mk_2_A13_III"
+msgstr "HE Mk. 2 (A13 III)"
+
+msgid "_2_Pr_HE_Mk_2_A15"
+msgstr "HE Mk. 2 (A15)"
+
+msgid "_2_Pr_HE_Mk_2_A22"
+msgstr "HE Mk. 2 (A22)"
+
+msgid "_2_Pr_HE_Mk_2_I"
+msgstr "HE Mk. 2 (I)"
+
+msgid "_2_Pr_HE_Mk_2_II"
+msgstr "HE Mk. 2 (II)"
+
+msgid "_2_Pr_HE_Mk_2_III"
+msgstr "HE Mk. 2 (III)"
+
+msgid "_2_Pr_HE_Mk_2_IV"
+msgstr "HE Mk. 2 (IV)"
+
+msgid "_2_Pr_HE_Mk_2_Val"
+msgstr "HE Mk. 2 (Val)"
+
 msgid "_2pdr_APCBC_Mk.I_XBT"
 msgstr "APCBC Mk. I XBT"
 
@@ -4254,20 +5085,8 @@ msgstr "APCNR Mk. 1"
 msgid "_2pdr_APCNR_Mk.1A"
 msgstr "APCNR Mk. 1"
 
-msgid "_2pdr_APCNR_Mk.1B"
-msgstr "APCNR Mk. IA"
-
-msgid "_2pdr_APCNR_Mk.2"
-msgstr "APCNR Mk. 2"
-
 msgid "_2pdr_APCNR_Mk.II"
 msgstr "APCNR Mk. II"
-
-msgid "_2pdr_APSV_Mk.1"
-msgstr "APSV Mk. 1"
-
-msgid "_2pdr_APSV_Mk.2"
-msgstr "APSV Mk. 2"
 
 msgid "_2pdr_AP_Mk.1T"
 msgstr "AP Mk. 1T"
@@ -4275,17 +5094,8 @@ msgstr "AP Mk. 1T"
 msgid "_2pdr_AP_Mk.1TA"
 msgstr "AP Mk. 1T"
 
-msgid "_2pdr_AP_Mk.1TP"
-msgstr "AP Mk. 1Tp"
-
-msgid "_2pdr_AP_Mk.IXBT"
-msgstr "APCBC Mk. IXBT"
-
 msgid "_2pdr_AP_Mk.X"
 msgstr "APCBC Mk. X"
-
-msgid "_2pdr_AP_Mk.XB"
-msgstr "APCBC Mk. XA"
 
 msgid "_2pdr_AT_Gun_Mk_IX"
 msgstr "QF 2-pdr AT Gun Mk. IX"
@@ -4316,9 +5126,6 @@ msgstr "HE Mk. 2"
 
 msgid "_2pdr_HE_Mk.2A"
 msgstr "HE Mk. 2"
-
-msgid "_2pdr_HE_Mk.2B"
-msgstr "HE Mk. IIA"
 
 msgid "_3.7inch_AP"
 msgstr "AP Mk. 1T"
@@ -4355,6 +5162,42 @@ msgstr "QF 3.7-inch AT Gun"
 
 msgid "_32-pounder_AT_Gun_OQF"
 msgstr "OQF 32-pdr AT Gun"
+
+msgid "_32_Pr_APCBC_Mk_3_221"
+msgstr "APCBC Mk. 3 (221)"
+
+msgid "_32_Pr_APCBC_Mk_3_A30"
+msgstr "APCBC Mk. 3 (A30)"
+
+msgid "_32_Pr_APDS_Mk_2T_A39"
+msgstr "APDS Mk. 2T (A39)"
+
+msgid "_32_Pr_APDS_Mk_2T_AT_15"
+msgstr "APDS Mk. 2T (AT 15)"
+
+msgid "_32_Pr_APDS_Mk_3_221"
+msgstr "APDS Mk. 3 (221)"
+
+msgid "_32_Pr_APDS_Mk_3_A30"
+msgstr "APDS Mk. 3 (A30)"
+
+msgid "_32_Pr_AP_Mk_I_A39"
+msgstr "AP Mk. 1 (A39)"
+
+msgid "_32_Pr_AP_Mk_I_AT_15"
+msgstr "AP Mk. 1 (AT 15)"
+
+msgid "_32_Pr_HE_Mk_1A_A39"
+msgstr "HE Mk. 1A (A39)"
+
+msgid "_32_Pr_HE_Mk_1A_AT_15"
+msgstr "HE Mk. 1A (AT 15)"
+
+msgid "_32_Pr_HE_Mk_3_221"
+msgstr "HE Mk. 3 (221)"
+
+msgid "_32_Pr_HE_Mk_3_A30"
+msgstr "HE Mk. 3 (A30)"
 
 msgid "_32_pounder_AT_Gun_OQF_Mk_II"
 msgstr "OQF 32-pdr AT Gun Mk. II"
@@ -4437,20 +5280,29 @@ msgstr "HE Mk. 2B"
 msgid "_3pdr_gun_Hotchkiss"
 msgstr "OQF 3-pdr Gun Mk. I"
 
-msgid "_4.5inch_HE_Mk_13"
-msgstr "HE Mk. XIII"
-
-msgid "_4.5inch_SPG_Howitzer"
-msgstr "Q.F. 4.5-in. Howitzer"
-
 msgid "_40mm_AP"
 msgstr "AP Mk. I"
 
 msgid "_40mm_APCR"
 msgstr "APCR Mk. II"
 
+msgid "_40mm_APCR_Mk_II_I"
+msgstr "APCR Mk. II (I)"
+
+msgid "_40mm_APCR_Mk_II_II"
+msgstr "APCR Mk. II (II)"
+
 msgid "_40mm_APHV"
 msgstr "APHV Mk. 1T"
+
+msgid "_40mm_APHV_Mk_1T_IV"
+msgstr "APHV Mk. 1T (IV)"
+
+msgid "_40mm_AP_Mk_I_I"
+msgstr "AP Mk. I (I)"
+
+msgid "_40mm_AP_Mk_I_II"
+msgstr "AP Mk. I (II)"
 
 msgid "_40mm_Bofors_MkI"
 msgstr "QF 40 mm Mk. VI Bofors"
@@ -4458,17 +5310,32 @@ msgstr "QF 40 mm Mk. VI Bofors"
 msgid "_40mm_HE"
 msgstr "HE Mk. I"
 
+msgid "_40mm_HE_Mk_2T_IV"
+msgstr "HE Mk. 2T (IV)"
+
+msgid "_40mm_HE_Mk_I_I"
+msgstr "HE Mk. I (I)"
+
+msgid "_40mm_HE_Mk_I_II"
+msgstr "HE Mk. I (II)"
+
 msgid "_40mm_Mk2T"
 msgstr "HE Mk. 2T"
 
 msgid "_40mm_Pom_Pom"
 msgstr "40 mm Pom-Pom"
 
+msgid "_40mm_Pom_Pom_II"
+msgstr "40 mm Pom-Pom (II)"
+
 msgid "_40mm_Pom_Pom_prot"
 msgstr "40 mm Pom-Pom prototype"
 
 msgid "_40mm_SAP"
 msgstr "SAP Mk. 1T"
+
+msgid "_40mm_SAP_Mk_1T_IV"
+msgstr "SAP Mk. 1T (IV)"
 
 msgid "_47inch_HE"
 msgstr "HE 50"
@@ -4488,23 +5355,35 @@ msgstr "QF APDS Mk. I"
 msgid "_47mm_3pdrHE"
 msgstr "QF HE Mk. IT"
 
-msgid "_5.5inch_AP_Mk_4"
-msgstr "AP 80-lb Mk. 3"
+msgid "_4_5_in_APDS_MBC"
+msgstr "APDS MBC"
 
-msgid "_5.5inch_HE_Mk_4"
-msgstr "HE 80-lb Mk. 3"
+msgid "_4_5_in_AP_MBC"
+msgstr "AP MBC"
 
-msgid "_5.5inch_HE_Mk_5"
-msgstr "HE 80-lb Mk. 4"
+msgid "_4_5_in_HE_MBC"
+msgstr "HE MBC"
 
-msgid "_5.5inch_SPG_Gun"
-msgstr "B.L. 5.5-in. Gun"
+msgid "_4_5_in_HE_Mk_XIII"
+msgstr "HE Mk. XIII"
+
+msgid "_4_5_in_HE_Mk_XIII_304"
+msgstr "HE Mk. XIII (304)"
+
+msgid "_4_5_in_HE_Mk_XIII_Bishop"
+msgstr "HE Mk. XIII (Bishop)"
 
 msgid "_55pdr_APCBC"
 msgstr "APCBC"
 
+msgid "_55pdr_APCBC_214t"
+msgstr "55-pdr APCBC"
+
 msgid "_55pdr_APDS"
 msgstr "APDS"
+
+msgid "_55pdr_APDS_214t"
+msgstr "55-pdr APDS"
 
 msgid "_55pdr_APSA"
 msgstr "APSA"
@@ -4517,6 +5396,36 @@ msgstr "HE"
 
 msgid "_55pdr_HESA"
 msgstr "HESA"
+
+msgid "_55pdr_HE_214t"
+msgstr "55-pdr HE"
+
+msgid "_5_5_in_AP_80_lb_Mk_3"
+msgstr "AP 80-lb Mk. 3"
+
+msgid "_5_5_in_AP_80_lb_Mk_3_207"
+msgstr "AP 80-lb Mk. 3 (207)"
+
+msgid "_5_5_in_AP_80_lb_Mk_3_CSP"
+msgstr "AP 80-lb Mk. 3 (CSP)"
+
+msgid "_5_5_in_HE_80_lb_Mk_3"
+msgstr "HE 80-lb Mk. 3"
+
+msgid "_5_5_in_HE_80_lb_Mk_3_207"
+msgstr "HE 80-lb Mk. 3 (207)"
+
+msgid "_5_5_in_HE_80_lb_Mk_3_CSP"
+msgstr "HE 80-lb Mk. 3 (CSP)"
+
+msgid "_5_5_in_HE_80_lb_Mk_4"
+msgstr "HE 80-lb Mk. 4"
+
+msgid "_5_5_in_HE_80_lb_Mk_4_207"
+msgstr "HE 80-lb Mk. 4 (207)"
+
+msgid "_5_5_in_HE_80_lb_Mk_4_CSP"
+msgstr "HE 80-lb Mk. 4 (CSP)"
 
 msgid "_5_5inch_APC_Mk_5_SH"
 msgstr "APC Mk. 5"
@@ -4551,17 +5460,113 @@ msgstr "HESH Mk. 1"
 msgid "_5inch_QF_Gun"
 msgstr "QF 5-in. Gun"
 
-msgid "_6inch_AP"
+msgid "_6_Pr_APCR_Mk_1A_AEC"
+msgstr "APCR Mk. IA (AEC)"
+
+msgid "_6_Pr_APCR_Mk_1T_A15"
+msgstr "APCR Mk. 1T (A15)"
+
+msgid "_6_Pr_APCR_Mk_1T_A22"
+msgstr "APCR Mk. 1T (A22)"
+
+msgid "_6_Pr_APCR_Mk_1T_A24_III"
+msgstr "APCR Mk. 1T (A24 III)"
+
+msgid "_6_Pr_APCR_Mk_1T_A24_V"
+msgstr "APCR Mk. 1T (A24 V)"
+
+msgid "_6_Pr_APCR_Mk_1T_A27M"
+msgstr "APCR Mk. 1T (A27M)"
+
+msgid "_6_Pr_APCR_Mk_1T_AT_2_III"
+msgstr "APCR Mk. 1T (AT 2 III)"
+
+msgid "_6_Pr_APCR_Mk_1T_AT_2_V"
+msgstr "APCR Mk. 1T (AT 2 V)"
+
+msgid "_6_Pr_APCR_Mk_1T_VAT_II"
+msgstr "APCR Mk. 1T (VAT II)"
+
+msgid "_6_Pr_APCR_Mk_1T_VAT_IV"
+msgstr "APCR Mk. 1T (VAT IV)"
+
+msgid "_6_Pr_APCR_Mk_1T_Val"
+msgstr "APCR Mk. 1T (Val)"
+
+msgid "_6_Pr_AP_Mk_1A_AEC"
+msgstr "AP Mk. IA (AEC)"
+
+msgid "_6_Pr_AP_Mk_1T_A15"
+msgstr "AP Mk. 1T (A15)"
+
+msgid "_6_Pr_AP_Mk_1T_A22"
+msgstr "AP Mk. 1T (A22)"
+
+msgid "_6_Pr_AP_Mk_1T_A24_III"
+msgstr "AP Mk. 1T (A24 III)"
+
+msgid "_6_Pr_AP_Mk_1T_A24_V"
+msgstr "AP Mk. 1T (A24 V)"
+
+msgid "_6_Pr_AP_Mk_1T_A27M"
+msgstr "AP Mk. 1T (A27M)"
+
+msgid "_6_Pr_AP_Mk_1T_AT_2_III"
+msgstr "AP Mk. 1T (AT 2 III)"
+
+msgid "_6_Pr_AP_Mk_1T_AT_2_V"
+msgstr "AP Mk. 1T (AT 2 V)"
+
+msgid "_6_Pr_AP_Mk_1T_VAT_II"
+msgstr "AP Mk. 1T (VAT II)"
+
+msgid "_6_Pr_AP_Mk_1T_VAT_IV"
+msgstr "AP Mk. 1T (VAT IV)"
+
+msgid "_6_Pr_AP_Mk_1T_Val"
+msgstr "AP Mk. 1T (Val)"
+
+msgid "_6_Pr_HE_Mk_10T_A15"
+msgstr "HE Mk. 10T (A15)"
+
+msgid "_6_Pr_HE_Mk_10T_A22"
+msgstr "HE Mk. 10T (A22)"
+
+msgid "_6_Pr_HE_Mk_10T_A24_III"
+msgstr "HE Mk. 10T (A24 III)"
+
+msgid "_6_Pr_HE_Mk_10T_A24_V"
+msgstr "HE Mk. 10T (A24 V)"
+
+msgid "_6_Pr_HE_Mk_10T_A27M"
+msgstr "HE Mk. 10T (A27M)"
+
+msgid "_6_Pr_HE_Mk_10T_AT_2_III"
+msgstr "HE Mk. 10T (AT 2 III)"
+
+msgid "_6_Pr_HE_Mk_10T_AT_2_V"
+msgstr "HE Mk. 10T (AT 2 V)"
+
+msgid "_6_Pr_HE_Mk_10T_VAT_II"
+msgstr "HE Mk. 10T (VAT II)"
+
+msgid "_6_Pr_HE_Mk_10T_VAT_IV"
+msgstr "HE Mk. 10T (VAT IV)"
+
+msgid "_6_Pr_HE_Mk_10T_Val"
+msgstr "HE Mk. 10T (Val)"
+
+msgid "_6_Pr_HE_Mk_XA_AEC"
+msgstr "HE Mk. XA (AEC)"
+
+msgid "_6_in_AP_Mk_V"
 msgstr "AP Mk. V"
 
-msgid "_6inch_HE"
+msgid "_6_in_HE_Mk_V"
 msgstr "HE Mk. V"
 
-msgid "_6inch_HE_Mk_6"
+msgid "_6_in_HE_Mk_VI"
 msgstr "HE Mk. VI"
-
-msgid "_6inch_SPG_Gun"
-msgstr "Q.F. 6-in. Gun Mk. V"
 
 msgid "_6pdr_APCR_MK_1GD"
 msgstr "APCR Mk. 1GD"
@@ -4608,18 +5613,6 @@ msgstr "HE Mk. 10T"
 msgid "_6pdr_HE_MK_10TM"
 msgstr "HE Mk. XA"
 
-msgid "_7.2inch_AP"
-msgstr "AP Mk. 1D"
-
-msgid "_7.2inch_HE"
-msgstr "HE Mk. 1D"
-
-msgid "_7.2inch_HE_Mk_2"
-msgstr "HE Mk. 2D"
-
-msgid "_7.2inch_SPG_Howitzer"
-msgstr "B.L. 7.2-in. Howitzer Mk. 6"
-
 msgid "_75mm_APCR_HV_Mk3"
 msgstr "APCR HV Mk. 3"
 
@@ -4631,6 +5624,15 @@ msgstr "LAPCR Mk.3"
 
 msgid "_75mm_APCR_Mk3b"
 msgstr "Mk. 3 APCR"
+
+msgid "_75mm_APCR_Mk_3_A22F"
+msgstr "APCR Mk. 3 (A22F)"
+
+msgid "_75mm_APCR_Mk_3_A27M"
+msgstr "APCR Mk. 3 (A27M)"
+
+msgid "_75mm_APCR_Mk_3_A34"
+msgstr "APCR Mk. 3 (A34)"
 
 msgid "_75mm_APCR_Mk_3_C"
 msgstr "APCR Mk. 3 C"
@@ -4649,6 +5651,15 @@ msgstr "LAP Mk.1"
 
 msgid "_75mm_AP_Mk1b"
 msgstr "Mk. 1 AP"
+
+msgid "_75mm_AP_Mk_1_A22F"
+msgstr "AP Mk. 1 (A22F)"
+
+msgid "_75mm_AP_Mk_1_A27M"
+msgstr "AP Mk. 1 (A27M)"
+
+msgid "_75mm_AP_Mk_1_A34"
+msgstr "AP Mk. 1 (A34)"
 
 msgid "_75mm_AP_Mk_1_C"
 msgstr "AP Mk. 1 C"
@@ -4677,6 +5688,15 @@ msgstr "75 mm Gun Mk. V"
 msgid "_75mm_Gun_Mk_VB"
 msgstr "75 mm Gun Mk. 5"
 
+msgid "_75mm_Gun_Mk_V_A22F"
+msgstr "75 mm Gun Mk. V (A22F)"
+
+msgid "_75mm_Gun_Mk_V_A27M"
+msgstr "75 mm Gun Mk. V (A27M)"
+
+msgid "_75mm_Gun_Mk_V_A34"
+msgstr "75 mm Gun Mk. V (A34)"
+
 msgid "_75mm_Gun_Mk_V_BPXIV"
 msgstr "75 mm Gun Mk. V C"
 
@@ -4704,6 +5724,15 @@ msgstr "LHE Mk.2"
 msgid "_75mm_HE_Mk2b"
 msgstr "Mk. 2 HE"
 
+msgid "_75mm_HE_Mk_2_A22F"
+msgstr "HE Mk. 2 (A22F)"
+
+msgid "_75mm_HE_Mk_2_A27M"
+msgstr "HE Mk. 2 (A27M)"
+
+msgid "_75mm_HE_Mk_2_A34"
+msgstr "HE Mk. 2 (A34)"
+
 msgid "_75mm_HE_Mk_2_C"
 msgstr "HE Mk. 2 C"
 
@@ -4713,14 +5742,26 @@ msgstr "HE Mk. 2 G"
 msgid "_75mm_HV_L40"
 msgstr "75 mm HV L40"
 
+msgid "_75mm_HV_L40_Set"
+msgstr "75 mm HV L40 (Set)"
+
 msgid "_75mm_L40_AP"
 msgstr "75 mm L40AP"
 
 msgid "_75mm_L40_APC"
 msgstr "75 mm L40APC"
 
+msgid "_75mm_L40_APC_Set"
+msgstr "75 mm L40 APC (Set)"
+
+msgid "_75mm_L40_AP_Set"
+msgstr "75 mm L40 AP (Set)"
+
 msgid "_75mm_L40_HE"
 msgstr "75 mm L40HE"
+
+msgid "_75mm_L40_HE_Set"
+msgstr "75 mm L40 HE (Set)"
 
 msgid "_75mm_M48"
 msgstr "M48"
@@ -4746,6 +5787,9 @@ msgstr "M72"
 msgid "_76mm_APCR_L5A3_Mk3"
 msgstr "APCR L5A3 Mk. 3"
 
+msgid "_76mm_APCR_L5A3_Mk_3_FSV"
+msgstr "APCR L5A3 Mk. 3 (FSV)"
+
 msgid "_76mm_APDS_EX1"
 msgstr "APDS EX1"
 
@@ -4754,6 +5798,9 @@ msgstr "AP EX1"
 
 msgid "_76mm_AP_L5A3_Mk1"
 msgstr "AP L5A3 Mk. 1"
+
+msgid "_76mm_AP_L5A3_Mk_1_FSV"
+msgstr "AP L5A3 Mk. 1 (FSV)"
 
 msgid "_76mm_AP_M62"
 msgstr "AP M62"
@@ -4779,6 +5826,9 @@ msgstr "HESH EX1"
 msgid "_76mm_HE_L5A3_Mk2"
 msgstr "HE L5A3 Mk. 2"
 
+msgid "_76mm_HE_L5A3_Mk_2_FSV"
+msgstr "HE L5A3 Mk. 2 (FSV)"
+
 msgid "_76mm_HE_M42A1"
 msgstr "HE M42A1"
 
@@ -4790,6 +5840,9 @@ msgstr "OQF 3-inch Howitzer Mk. I"
 
 msgid "_76mm_L5A3"
 msgstr "76 mm L5A3"
+
+msgid "_76mm_L5A3_FSV"
+msgstr "76 mm L5A3 (FSV)"
 
 msgid "_76mm_M42A1"
 msgstr "HE M42A1(M7)"
@@ -4803,11 +5856,35 @@ msgstr "AP M79(M7)"
 msgid "_77mm_APCBC_Mk8T"
 msgstr "APCBC 77 mm Mk. 8T"
 
+msgid "_77mm_APCBC_Mk8T_3"
+msgstr "APCBC 77 mm Mk. 8T3"
+
 msgid "_77mm_APCBC_Mk8T_T"
 msgstr "APCBC 77 mm Mk. 8T2"
 
+msgid "_77mm_APCBC_Mk_8T_A22F"
+msgstr "APCBC 77 mm Mk. 8T (A22F)"
+
+msgid "_77mm_APCBC_Mk_8T_A43"
+msgstr "APCBC 77 mm Mk. 8T (A43)"
+
+msgid "_77mm_APCBC_Mk_8T_AT_8"
+msgstr "APCBC 77 mm Mk. 8T (AT 8)"
+
 msgid "_77mm_APDS_Mk1T"
 msgstr "APDS 77 mm Mk. 1T"
+
+msgid "_77mm_APDS_Mk1T_2"
+msgstr "APDS 77 mm Mk. 1T2"
+
+msgid "_77mm_APDS_Mk_1T_A22F"
+msgstr "APDS 77 mm Mk. 1T (A22F)"
+
+msgid "_77mm_APDS_Mk_1T_A43"
+msgstr "APDS 77 mm Mk. 1T (A43)"
+
+msgid "_77mm_APDS_Mk_1T_AT_8"
+msgstr "APDS 77 mm Mk. 1T (AT 8)"
 
 msgid "_77mm_APDS_T_Mk1"
 msgstr "APDS-T 77 mm Mk. 1T"
@@ -4815,29 +5892,62 @@ msgstr "APDS-T 77 mm Mk. 1T"
 msgid "_77mm_HE_Mk1T"
 msgstr "HE 77 mm Mk. 1T"
 
+msgid "_77mm_HE_Mk1T_2"
+msgstr "HE 77 mm Mk. 1T2"
+
 msgid "_77mm_HE_Mk1T_T"
 msgstr "HE 77 mm Mk. 1T"
+
+msgid "_77mm_HE_Mk_1T_A22F"
+msgstr "HE 77 mm Mk. 1T (A22F)"
+
+msgid "_77mm_HE_Mk_1T_A43"
+msgstr "HE 77 mm Mk. 1T (A43)"
+
+msgid "_77mm_HE_Mk_1T_AT_8"
+msgstr "HE 77 mm Mk. 1T (AT 8)"
+
+msgid "_7_2_in_AP_Mk_1D"
+msgstr "AP Mk. 1D"
+
+msgid "_7_2_in_HE_Mk_1D"
+msgstr "HE Mk. 1D"
+
+msgid "_7_2_in_HE_Mk_2D"
+msgstr "HE Mk. 2D"
 
 msgid "_85mm_HV_L40"
 msgstr "85 mm HV L40"
 
-msgid "_9.2inch_AP_Mk_18"
-msgstr "AP Mk. 18"
+msgid "_85mm_HV_L40_LHMTV"
+msgstr "85 mm HV L40 (LHMTV)"
 
-msgid "_9.2inch_HE_Mk_18"
-msgstr "HE Mk. 18"
+msgid "_85mm_L40_APC_Mk_II"
+msgstr "L40 APC Mk. II"
 
-msgid "_9.2inch_HE_Mk_19"
-msgstr "HE Mk. 19"
+msgid "_85mm_L40_APC_Mk_II_LHMTV"
+msgstr "L40 APC Mk. II (LHMTV)"
 
-msgid "_9.2inch_SPG_Howitzer"
-msgstr "B.L. 9.2-in. Howitzer Mk. II"
+msgid "_85mm_L40_AP_Mk_I"
+msgstr "L40 AP Mk. I"
+
+msgid "_85mm_L40_AP_Mk_I_LHMTV"
+msgstr "L40 AP Mk. I (LHMTV)"
+
+msgid "_85mm_L40_HE_Mk_III"
+msgstr "L40 HE Mk. III"
+
+msgid "_85mm_L40_HE_Mk_III_LHMTV"
+msgstr "L40 HE Mk. III (LHMTV)"
 
 msgid "_90mm_APFSDS_T312"
 msgstr "APFSDS T312"
 
 msgid "_90mm_APFSDS_T312K"
 msgstr "APFSDS T312K"
+
+msgid "_90mm_APFSDS_T312K_601"
+msgstr "APFSDS T312K (601)"
 
 msgid "_90mm_APFSDS_T320"
 msgstr "APFSDS T320"
@@ -4847,6 +5957,9 @@ msgstr "AP M310"
 
 msgid "_90mm_AP_M310K"
 msgstr "AP M310K"
+
+msgid "_90mm_AP_M310K_601"
+msgstr "AP M310K (601)"
 
 msgid "_90mm_AP_M318"
 msgstr "AP M318"
@@ -4866,17 +5979,23 @@ msgstr "HE T342"
 msgid "_90mm_HE_T342K"
 msgstr "HE T342K"
 
+msgid "_90mm_HE_T342K_601"
+msgstr "HE T342K (601)"
+
 msgid "_90mm_Kenerga_Mk8"
 msgstr "90 mm Kenerga Mk. 8"
 
-msgid "_L40_APC_Mk2"
-msgstr "L40 APC Mk.II"
+msgid "_90mm_Kenerga_Mk_8_601"
+msgstr "90 mm Kenerga Mk. 8 (601)"
 
-msgid "_L40_AP_Mk1"
-msgstr "L40 AP Mk.I"
+msgid "_9_2_in_AP_Mk_18"
+msgstr "AP Mk. 18"
 
-msgid "_L40_HE_Mk3"
-msgstr "L40 HE Mk.III"
+msgid "_9_2_in_HE_Mk_18"
+msgstr "HE Mk. 18"
+
+msgid "_9_2_in_HE_Mk_19"
+msgstr "HE Mk. 19"
 
 msgid "_QF_20pdr_APC_Mk2"
 msgstr "QF 20 APC Mk. 2"

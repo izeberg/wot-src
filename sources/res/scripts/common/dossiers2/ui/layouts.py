@@ -57,7 +57,8 @@ PERSONAL_MISSIONS_GROUP = [
  _total('tankwomenProgress'), _total('readyForBattleAllianceUSSR'), _total('readyForBattleAllianceGermany'),
  _total('readyForBattleAllianceUSA'), _total('readyForBattleAllianceFrance'), _single('newMeritPM2'),
  _single('mapboxSeason1'), _single('mapboxSeason2'), _single('mapboxSeason3'), _total('mapboxUniversal'),
- _total('mapboxClimateExpert')]
+ _total('mapboxClimateExpert'), _single('meritPM3'), _total('readyForBattleAssault'),
+ _total('readyForBattleSniper'), _total('readyForBattleSupport')]
 CHRISTMAS_QUESTS_GROUP = [
  _single('xmasTreeBronze'), _single('xmasTreeSilver'), _single('xmasTreeGold')]
 HE17_QUESTS_GROUP = [
@@ -158,7 +159,10 @@ NEAREST_ACHIEVEMENTS = TANK_EXPERT_GROUP + MECH_ENGINEER_GROUP + VEHICLE_COLLECT
  _total('readyForBattleAllianceUSA'),
  _total('readyForBattleAllianceFrance'),
  _total('rankedDivisionFighter'),
- _total('rankedStayingPower')]
+ _total('rankedStayingPower'),
+ _total('readyForBattleAssault'),
+ _total('readyForBattleSniper'),
+ _total('readyForBattleSupport')]
 
 def init():
     global HISTORY_BATTLEFIELD_GROUP

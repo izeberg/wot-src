@@ -6,9 +6,7 @@ package net.wg.gui.lobby.hangar
    import net.wg.data.constants.Directions;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
-   import net.wg.data.constants.generated.FUNRANDOM_ALIASES;
    import net.wg.data.constants.generated.HANGAR_ALIASES;
-   import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleHangarWidget;
    import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleTournamentWidget;
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidget;
    import net.wg.gui.lobby.hangar.data.HangarHeaderVO;
@@ -16,8 +14,6 @@ package net.wg.gui.lobby.hangar
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.Comp7Widget;
-   import net.wg.gui.lobby.hangar.quests.FunRandomHangarWidget;
    import net.wg.gui.lobby.hangar.quests.HeaderQuestsEvent;
    import net.wg.gui.lobby.hangar.quests.HeaderQuestsFlags;
    import net.wg.gui.lobby.hangar.quests.IHeaderEntryPoint;
@@ -48,8 +44,6 @@ package net.wg.gui.lobby.hangar
       private static const SECONDARY_ENTRY_POINT_X:int = 29;
       
       private static const SECONDARY_ENTRY_POINT_X_COMPACT:int = 24;
-      
-      private static const FUN_RANDOM_FLAGS_OFFSET_Y:uint = 39;
       
       private static const REGISTER_WIDGET_DELAY:uint = 300;
        
@@ -155,19 +149,7 @@ package net.wg.gui.lobby.hangar
                   this.questsFlags.offsetRightSideX = 0;
                }
             }
-            if(this.hasWidget(FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET))
-            {
-               this._widget.x = -(this._widget.width >> 1);
-               this.questsFlags.flagsOffsetY = FUN_RANDOM_FLAGS_OFFSET_Y;
-            }
-            else if(this.hasWidget(HANGAR_ALIASES.BATTLE_ROYALE_ENTRY_POINT))
-            {
-               this.questsFlags.flagsOffsetY = HeaderQuestsFlags.BATTLE_ROYALE_FLAGS_OFFSET_Y;
-            }
-            else
-            {
-               this.questsFlags.flagsOffsetY = HeaderQuestsFlags.DEFAULT_FLAGS_OFFSET_Y;
-            }
+            this.questsFlags.flagsOffsetY = HeaderQuestsFlags.DEFAULT_FLAGS_OFFSET_Y;
          }
       }
       
@@ -344,16 +326,10 @@ package net.wg.gui.lobby.hangar
          {
             case HANGAR_ALIASES.BATTLE_PASSS_ENTRY_POINT:
                return new BattlePassEntryPoint();
-            case HANGAR_ALIASES.BATTLE_ROYALE_ENTRY_POINT:
-               return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_WIDGET_UI,BattleRoyaleHangarWidget);
             case HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT:
                return App.instance.utils.classFactory.getComponent(Linkages.BATTLE_ROYALE_TOURNAMENT_WIDGET_UI,BattleRoyaleTournamentWidget);
-            case HANGAR_ALIASES.COMP7_WIDGET:
-               return App.instance.utils.classFactory.getComponent(Linkages.COMP7_WIDGET_UI,Comp7Widget);
             case HANGAR_ALIASES.EPIC_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.EPIC_WIDGET,EpicBattlesWidget);
-            case FUNRANDOM_ALIASES.FUN_RANDOM_HANGAR_WIDGET:
-               return new FunRandomHangarWidget();
             case HANGAR_ALIASES.RANKED_WIDGET:
                return App.instance.utils.classFactory.getComponent(Linkages.RANKED_BATTLES_WIDGET_UI,RankedBattlesHangarWidget);
             default:

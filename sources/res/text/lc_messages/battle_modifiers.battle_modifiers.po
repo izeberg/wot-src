@@ -31,6 +31,12 @@ msgstr "Комплекс параметров, влияющих на корне�
 msgid "domain/battleParams/name"
 msgstr "Параметры боя"
 
+msgid "domain/comp7LightSeasonModifiers/description"
+msgstr "Модификаторы режима, меняющие параметры техники."
+
+msgid "domain/comp7LightSeasonModifiers/name"
+msgstr "Модификаторы «Натиска Лайт»"
+
 msgid "domain/comp7SeasonModifiers/description"
 msgstr "Модификаторы режима, меняющие параметры техники."
 
@@ -49,6 +55,14 @@ msgstr "Комплекс параметров, влияющих на спосо�
 
 msgid "domain/damageDealing/name"
 msgstr "Нанесение урона"
+
+msgid "domain/equalization/description"
+msgstr ""
+"У машин всех уровней есть различные модификаторы, меняющие показатели прочности (в т. ч. внутренних и внешних модулей), урона и бронепробития. Чем ниже уровень, тем значительнее прирост характеристик. Это делает низкоуровневую технику намного опаснее!\n"
+"В боях нельзя тратить или зарабатывать ресурсы"
+
+msgid "domain/equalization/name"
+msgstr "Бои на технике I–X уровня"
 
 msgid "domain/mobility/description"
 msgstr ""
@@ -88,6 +102,9 @@ msgstr "Защищённость"
 msgid "modifier/name/aimingTime"
 msgstr "Время сведения"
 
+msgid "modifier/name/ammoBayHealth"
+msgstr "++Прочность боеукладки++"
+
 msgid "modifier/name/autoreloadTime"
 msgstr "Время перезарядки техники с механизмом дозаряжания"
 
@@ -99,6 +116,9 @@ msgstr "Максимальная скорость движения назад"
 
 msgid "modifier/name/burstInterval"
 msgstr "Время перезарядки снарядов в магазине"
+
+msgid "modifier/name/chassisHealth"
+msgstr "++Прочность ходовой++"
 
 msgid "modifier/name/clipInterval"
 msgstr "Время перезарядки между выстрелами в магазине"
@@ -127,6 +147,9 @@ msgstr "Разброс при повреждённом орудии"
 msgid "modifier/name/engineFireFactor"
 msgstr "Вероятность возгорания двигателя"
 
+msgid "modifier/name/engineHealth"
+msgstr "++Прочность двигателя++"
+
 msgid "modifier/name/enginePower"
 msgstr "Мощность двигателя"
 
@@ -145,11 +168,17 @@ msgstr "Урон экипажу от падения"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Время подготовки снаряжения"
 
+msgid "modifier/name/fuelTankHealth"
+msgstr "++Прочность топливных баков++"
+
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максимальная скорость движения вперёд"
 
 msgid "modifier/name/gravityFactor"
 msgstr "Гравитация техники"
+
+msgid "modifier/name/gunHealth"
+msgstr "++Прочность орудия++"
 
 msgid "modifier/name/gunRotationSpeed"
 msgstr "Скорость перевода орудия в неподвижной рубке"
@@ -190,6 +219,9 @@ msgstr "Скорость снарядов"
 msgid "modifier/name/shotDispersionRadius"
 msgstr "Разброс на 100 метров"
 
+msgid "modifier/name/surveyingDeviceHealth"
+msgstr "++Прочность приборов наблюдения++"
+
 msgid "modifier/name/turretPressureDamage"
 msgstr "Урон от давления сорванной башни"
 
@@ -198,6 +230,9 @@ msgstr "Урон от сорванной башни"
 
 msgid "modifier/name/turretRotationSpeed"
 msgstr "Скорость поворота башни"
+
+msgid "modifier/name/turretRotatorHealth"
+msgstr "++Прочность механизма вращения башни++"
 
 msgid "modifier/name/twinGunReloadTime"
 msgstr "Перезарядка орудия в режиме залпа"

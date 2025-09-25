@@ -1511,7 +1511,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>53000</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
@@ -3762,10 +3761,7 @@
 						0.33
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						7.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>7</reloadTime>
 					<aimingTime>
 						2.3
 						<!--BW_String-->

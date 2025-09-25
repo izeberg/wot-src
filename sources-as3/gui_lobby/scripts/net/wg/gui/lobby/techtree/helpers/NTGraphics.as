@@ -304,6 +304,10 @@ package net.wg.gui.lobby.techtree.helpers
          {
             return;
          }
+         if(!_loc5_.isVisible())
+         {
+            return;
+         }
          var _loc6_:Array = param3.inPin;
          var _loc7_:Array = param3.viaPins;
          var _loc8_:uint = getLineThickness(_loc5_,param1);
@@ -371,11 +375,14 @@ package net.wg.gui.lobby.techtree.helpers
             _loc12_ = container.getNodeByID(_loc9_.childID);
             if(_loc12_)
             {
-               _loc8_ = new Point(_loc9_.inPin[0],_loc9_.inPin[1]);
-               _loc13_ = Math.min(_loc13_,_loc8_.x);
-               _loc15_ = Math.max(getLineThickness(_loc12_,param1),_loc15_);
-               _loc16_ = Math.max(_loc16_,_loc12_.getColorIndex(param1));
-               _loc14_.push(new RSetLineInfo(_loc11_,_loc8_,_loc7_.y == _loc8_.y));
+               if(_loc12_.isVisible())
+               {
+                  _loc8_ = new Point(_loc9_.inPin[0],_loc9_.inPin[1]);
+                  _loc13_ = Math.min(_loc13_,_loc8_.x);
+                  _loc15_ = Math.max(getLineThickness(_loc12_,param1),_loc15_);
+                  _loc16_ = Math.max(_loc16_,_loc12_.getColorIndex(param1));
+                  _loc14_.push(new RSetLineInfo(_loc11_,_loc8_,_loc7_.y == _loc8_.y));
+               }
             }
             _loc11_++;
          }

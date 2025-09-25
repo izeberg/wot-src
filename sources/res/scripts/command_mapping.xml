@@ -129,7 +129,7 @@
 		<satelliteKeys/>
 	</CMD_CM_LOCK_TARGET>
 	<CMD_CM_LOCK_TARGET_OFF>
-		<fireKey>KEY_E</fireKey>
+		<fireKey/>
 		<satelliteKeys/>
 	</CMD_CM_LOCK_TARGET_OFF>
 	<CMD_CM_CAMERA_ROTATE_LEFT>
@@ -152,6 +152,10 @@
 		<fireKey>KEY_X</fireKey>
 		<satelliteKeys/>
 	</CMD_CM_VEHICLE_SWITCH_AUTOROTATION>
+	<CMD_CM_SPECIAL_ABILITY>
+		<fireKey>KEY_E</fireKey>
+		<satelliteKeys/>
+	</CMD_CM_SPECIAL_ABILITY>
 	<CMD_CM_INCREASE_ZOOM>
 		<fireKey>KEY_PGDN</fireKey>
 		<satelliteKeys/>
@@ -308,4 +312,8 @@
 		<fireKey>KEY_MIDDLEMOUSE</fireKey>
 		<satelliteKeys/>
 	</CMD_COMMANDER_CAM>
+	<CMD_TOGGLE_ARMOR_FLASHLIGHT>
+		<fireKey>KEY_Y</fireKey>
+		<satelliteKeys/>
+	</CMD_TOGGLE_ARMOR_FLASHLIGHT>
 </root>

@@ -2,6 +2,7 @@ package net.wg.gui.battle.battleRoyale.views.configurator.data
 {
    import net.wg.data.constants.Errors;
    import net.wg.data.daapi.base.DAAPIDataClass;
+   import net.wg.gui.battle.windows.vo.IngameDetailsKeyVO;
    import net.wg.gui.components.battleRoyale.data.ConfiguratorModuleVO;
    
    public class ModuleInfoVO extends DAAPIDataClass
@@ -10,15 +11,15 @@ package net.wg.gui.battle.battleRoyale.views.configurator.data
       private static const PARAMETERS_LABEL:String = "parameters";
       
       private static const MODULE_LABEL:String = "module";
+      
+      private static const HOTKEY_LABEL:String = "hotKeys";
        
       
       public var header:String = "";
       
       public var icon:String = "";
       
-      public var hotKeys:Array = null;
-      
-      public var hotKeysVKeys:Array = null;
+      public var hotKeys:Vector.<IngameDetailsKeyVO>;
       
       public var parameters:Vector.<ModuleParameterVO>;
       
@@ -26,6 +27,7 @@ package net.wg.gui.battle.battleRoyale.views.configurator.data
       
       public function ModuleInfoVO(param1:Object = null)
       {
+         this.hotKeys = new Vector.<IngameDetailsKeyVO>();
          this.parameters = new Vector.<ModuleParameterVO>();
          super(param1);
       }
@@ -34,6 +36,8 @@ package net.wg.gui.battle.battleRoyale.views.configurator.data
       {
          var _loc3_:Array = null;
          var _loc4_:Object = null;
+         var _loc5_:Array = null;
+         var _loc6_:Object = null;
          if(param1 == PARAMETERS_LABEL)
          {
             this.clearParameters();
@@ -60,23 +64,32 @@ package net.wg.gui.battle.battleRoyale.views.configurator.data
             this.module = new ConfiguratorModuleVO(param2);
             return false;
          }
+         if(param1 == HOTKEY_LABEL)
+         {
+            this.clearHotKeys();
+            _loc5_ = param2 as Array;
+            if(_loc5_)
+            {
+               for each(_loc6_ in _loc5_)
+               {
+                  this.hotKeys.push(new IngameDetailsKeyVO(_loc6_));
+               }
+            }
+            else
+            {
+               App.utils.asserter.assert(false,Errors.INVALID_TYPE + Array);
+            }
+            return false;
+         }
          return super.onDataWrite(param1,param2);
       }
       
       override protected function onDispose() : void
       {
          this.clearParameters();
+         this.clearHotKeys();
          this.parameters = null;
-         if(this.hotKeys)
-         {
-            this.hotKeys.splice(0,this.hotKeys.length);
-            this.hotKeys = null;
-         }
-         if(this.hotKeysVKeys)
-         {
-            this.hotKeysVKeys.splice(0,this.hotKeysVKeys.length);
-            this.hotKeysVKeys = null;
-         }
+         this.hotKeys = null;
          this.module.dispose();
          this.module = null;
          super.onDispose();
@@ -90,6 +103,16 @@ package net.wg.gui.battle.battleRoyale.views.configurator.data
             _loc1_.dispose();
          }
          this.parameters.splice(0,this.parameters.length);
+      }
+      
+      private function clearHotKeys() : void
+      {
+         var _loc1_:IngameDetailsKeyVO = null;
+         for each(_loc1_ in this.hotKeys)
+         {
+            _loc1_.dispose();
+         }
+         this.hotKeys.splice(0,this.hotKeys.length);
       }
    }
 }

@@ -1049,7 +1049,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>14500</weight>
-			<maxLoad>65000</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->
@@ -2607,7 +2606,7 @@
 	<turrets0>
 		<Turret_1_A166_H_3>
 			<userString>#usa_vehicles:Turret_1_A166_H_3</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>9</level>
 			<price>60000</price>
 			<notInShop>true</notInShop>
@@ -2889,7 +2888,7 @@
 					</armor>
 					<clip>
 						<count>5</count>
-						<rate>10</rate>
+						<rate>12</rate>
 					</clip>
 					<shotDispersionRadius>
 						0.33

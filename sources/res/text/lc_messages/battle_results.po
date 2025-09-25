@@ -13,6 +13,57 @@ msgstr ""
 msgid "allVehicles"
 msgstr "Все"
 
+msgid "battleRating/tooltip/better/body"
+msgstr ""
+"Этот бой был более интересным, сбалансированным или весёлым, чем обычно."
+
+msgid "battleRating/tooltip/better/header"
+msgstr "Лучше, чем обычно"
+
+msgid "battleRating/tooltip/usual/body"
+msgstr "Обычный бой, ничего необычного."
+
+msgid "battleRating/tooltip/usual/header"
+msgstr "Как обычно"
+
+msgid "battleRating/tooltip/worse/body"
+msgstr ""
+"Этот бой был более раздражающим, нечестным или менее сбалансированным, чем "
+"обычно."
+
+msgid "battleRating/tooltip/worse/header"
+msgstr "Хуже, чем обычно"
+
+msgid "battleResult/battleRating/better/header"
+msgstr "ЛУЧШЕ, ЧЕМ ОБЫЧНО"
+
+msgid "battleResult/battleRating/none/header"
+msgstr "оцените бой:"
+
+msgid "battleResult/battleRating/usual/header"
+msgstr "КАК ОБЫЧНО"
+
+msgid "battleResult/battleRating/worse/header"
+msgstr "ХУЖЕ, ЧЕМ ОБЫЧНО"
+
+msgid "battleResult/comp7Light/team/prestigePoints/body"
+msgstr "Сортировать по очкам престижа."
+
+msgid "battleResult/comp7Light/team/prestigePoints/header"
+msgstr "Очки престижа"
+
+msgid "battleResult/navigation/battleResults"
+msgstr "Общее"
+
+msgid "battleResult/navigation/financialReport"
+msgstr "Финансовый отчёт"
+
+msgid "battleResult/navigation/missionsProgress"
+msgstr "Прогресс задачи"
+
+msgid "battleResult/navigation/teamEfficiency"
+msgstr "Командный результат"
+
 msgid "battleResult/team/prestigePoints/body"
 msgstr ""
 "Сортировать по очкам престижа. Очки престижа влияют на количество получаемых"
@@ -24,11 +75,17 @@ msgstr "Очки престижа"
 msgid "common/arena/fullName"
 msgstr "{0} — {1}"
 
+msgid "common/arena/nameAndMode"
+msgstr "{{0}}, {{1}}"
+
 msgid "common/battleEfficiency/allies"
 msgstr "Союзники:"
 
 msgid "common/battleEfficiency/allyBase"
 msgstr "Защита базы"
+
+msgid "common/battleEfficiency/baseCapture"
+msgstr "Захват базы:"
 
 msgid "common/battleEfficiency/bases"
 msgstr "Базы"
@@ -39,6 +96,9 @@ msgstr "Захват базы"
 msgid "common/battleEfficiency/neutralBase"
 msgstr "Нейтральная база"
 
+msgid "common/battleEfficiency/noEfficiency"
+msgstr "Вы не совершили значимых действий в этом бою."
+
 msgid "common/battleEfficiency/none"
 msgstr "Вы не обнаружили и не повредили ни одной машины противника."
 
@@ -47,6 +107,9 @@ msgstr "Техника"
 
 msgid "common/battleEfficiency/title"
 msgstr "Боевая эффективность"
+
+msgid "common/battleEfficiency/uppercased_title"
+msgstr "БОЕВАЯ ЭФФЕКТИВНОСТЬ"
 
 msgid "common/battleEfficiencyWithSkills/title"
 msgstr "Боевая эффективность с учётом применённых навыков"
@@ -83,6 +146,17 @@ msgstr "Базовый аккаунт"
 
 msgid "common/details/premTitle"
 msgstr "Танковый премиум"
+
+msgid "common/details/premiumAdvertising/bonus"
+msgstr ""
+"{{@ split}} Применяйте бонус ×{{multiplier}} опыта к выбранному вами "
+"победному бою при наличии Танкового премиум аккаунта.{{/}}"
+
+msgid "common/details/premiumAdvertising/credits"
+msgstr ""
+"{{@ split}} Получайте до {{bonusCredits}} каждые {{@ "
+"style}}{{durationInDays}} д{{/}} при наличии Танкового премиум "
+"аккаунта.{{/}}"
 
 msgid "common/details/premiumPlus/bonus"
 msgstr ""
@@ -143,8 +217,14 @@ msgstr ""
 msgid "common/overtimeFinishReasonTitle"
 msgstr "Овертайм:"
 
+msgid "common/player/nameWithClan"
+msgstr "{{name}} [{{clan}}]"
+
 msgid "common/plusBonus/bonusLeftAdditionalText"
 msgstr "Получите больше с "
+
+msgid "common/plusBonus/earnedMessage"
+msgstr "Заработано сегодня:"
 
 msgid "common/plusBonus/earningsInformation"
 msgstr "Сегодня вы заработали %(count)s опыта"
@@ -173,8 +253,14 @@ msgstr "Применить"
 msgid "common/premiumBonus/bonusLeft"
 msgstr "Осталось сегодня: %(count)s"
 
+msgid "common/premiumBonus/bonusMultiplier"
+msgstr "×{{value}}"
+
 msgid "common/premiumBonus/description"
 msgstr "Управляемый бонус к опыту"
+
+msgid "common/premiumBonus/earnMore"
+msgstr "Хотите зарабатывать больше?"
 
 msgid "common/premiumBonus/expiredBattleResult"
 msgstr "Применяется к последнему бою на выбранной машине."
@@ -182,8 +268,18 @@ msgstr "Применяется к последнему бою на выбран�
 msgid "common/premiumBonus/isXPToTmenDisabled"
 msgstr "Нельзя применить бонус: ускоренное обучение экипажа отключено."
 
+msgid "common/premiumBonus/isXPToTmenDisabledWithInfo"
+msgstr ""
+"{{@ split}}Нельзя применить бонус: ускоренное обучение экипажа {{@ "
+"style}}отключено.{{info}}{{/}}{{/}}"
+
 msgid "common/premiumBonus/isXPToTmenEnabled"
 msgstr "Нельзя применить бонус: активно ускоренное обучение экипажа."
+
+msgid "common/premiumBonus/isXPToTmenEnabledWithInfo"
+msgstr ""
+"{{@ split}}Нельзя применить бонус: активно ускоренное обучение {{@ "
+"style}}экипажа.{{info}}{{/}}{{/}}"
 
 msgid "common/premiumBonus/rule"
 msgstr ""
@@ -192,8 +288,18 @@ msgstr ""
 msgid "common/premiumBonus/tankStateChanged"
 msgstr "Нельзя применить управляемый бонус: машина не найдена."
 
+msgid "common/premiumBonus/tankStateChangedWithInfo"
+msgstr ""
+"{{@ split}}Нельзя применить управляемый бонус: машина не {{@ "
+"style}}найдена.{{info}}{{/}}{{/}}"
+
 msgid "common/premiumBonus/tankmenStateChanged"
 msgstr "Нельзя применить управляемый бонус: экипаж не найден."
+
+msgid "common/premiumBonus/tankmenStateChangedWithInfo"
+msgstr ""
+"{{@ split}}Нельзя применить управляемый бонус: экипаж не {{@ "
+"style}}найден.{{info}}{{/}}{{/}}"
 
 msgid "common/premiumBonus/unavailable"
 msgstr "В этом режиме бонусы недоступны."
@@ -209,6 +315,9 @@ msgstr "Примерно осталось боёв: %(battles)s"
 
 msgid "common/resultsShareBtn"
 msgstr "Получить ссылку"
+
+msgid "common/startTime"
+msgstr "{{0}}, {{1}}"
 
 msgid "common/tooltip/armor/description"
 msgstr ""
@@ -462,6 +571,12 @@ msgstr "Выжил"
 msgid "common/vehicleState/dead0"
 msgstr "Уничтожен выстрелом"
 
+msgid "common/vehicleState/dead0_with_killername"
+msgstr "Уничтожен выстрелом ({{killername}})"
+
+msgid "common/vehicleState/dead0_with_killername_and_clan"
+msgstr "Уничтожен выстрелом ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead1"
 msgstr "Уничтожен пожаром"
 
@@ -470,6 +585,12 @@ msgstr "Самоуничтожен"
 
 msgid "common/vehicleState/dead13"
 msgstr "Уничтожен навыком игрока"
+
+msgid "common/vehicleState/dead1_with_killername"
+msgstr "Уничтожен поджогом ({{killername}})"
+
+msgid "common/vehicleState/dead1_with_killername_and_clan"
+msgstr "Уничтожен поджогом ({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/dead2"
 msgstr "Уничтожен тараном"
@@ -480,14 +601,32 @@ msgstr "Уничтожен артобстрелом"
 msgid "common/vehicleState/dead29"
 msgstr "Разбит"
 
+msgid "common/vehicleState/dead2_with_killername"
+msgstr "Уничтожен тараном ({{killername}})"
+
+msgid "common/vehicleState/dead2_with_killername_and_clan"
+msgstr "Уничтожен тараном ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead3"
 msgstr "Разбит"
 
 msgid "common/vehicleState/dead30"
 msgstr "Уничтожен выстрелом"
 
+msgid "common/vehicleState/dead30_with_killername"
+msgstr "Уничтожен выстрелом ({{killername}})"
+
+msgid "common/vehicleState/dead30_with_killername_and_clan"
+msgstr "Уничтожен выстрелом ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead35"
 msgstr "Разбит"
+
+msgid "common/vehicleState/dead3_with_killername"
+msgstr "Разбит ({{killername}})"
+
+msgid "common/vehicleState/dead3_with_killername_and_clan"
+msgstr "Разбит ({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/dead4"
 msgstr "Уничтожен запретной зоной"
@@ -495,11 +634,23 @@ msgstr "Уничтожен запретной зоной"
 msgid "common/vehicleState/dead5"
 msgstr "Затоплен"
 
+msgid "common/vehicleState/dead5_with_killername"
+msgstr "Машина затоплена ({{killername}})"
+
+msgid "common/vehicleState/dead5_with_killername_and_clan"
+msgstr "Машина затоплена ({{killername}}[{{clanTag}}])"
+
 msgid "common/vehicleState/dead6"
 msgstr "Уничтожен огненным валом"
 
 msgid "common/vehicleState/dead7"
 msgstr "Уничтожен при перевороте"
+
+msgid "common/vehicleState/dead7_with_killername"
+msgstr "Уничтожен переворотом ({{killername}})"
+
+msgid "common/vehicleState/dead7_with_killername_and_clan"
+msgstr "Уничтожен переворотом ({{killername}}[{{clanTag}}])"
 
 msgid "common/vehicleState/prematureLeave"
 msgstr "Покинул бой до его завершения"
@@ -515,6 +666,15 @@ msgstr "x"
 
 msgid "comms/likes/pbs/text/01"
 msgstr "В этом бою получены благодарности"
+
+msgid "comms/likes/pbs/tooltip/body"
+msgstr "{{var}} союзника поблагодарили вас в этом бою."
+
+msgid "comms/likes/pbs/tooltip/bodySingle"
+msgstr "{{var}} союзник поблагодарил вас в этом бою."
+
+msgid "comms/likes/pbs/tooltip/header"
+msgstr "Благодарностей получено"
 
 msgid "customizationProgress/award/newLevel"
 msgstr "Достигнут %(level)s уровень декали «%(name)s»."
@@ -558,6 +718,9 @@ msgstr "Автопополнение боекомплекта"
 msgid "details/calculations/autoRepair"
 msgstr "Автоматический ремонт техники"
 
+msgid "details/calculations/autoResupply"
+msgstr "Автопополнение"
+
 msgid "details/calculations/base"
 msgstr "Начислено за бой"
 
@@ -580,6 +743,9 @@ msgid "details/calculations/fairPlayViolation/afk"
 msgstr "Штраф за бездействие в бою"
 
 msgid "details/calculations/fairPlayViolation/comp7_deserter"
+msgstr "Штраф за дезертирство"
+
+msgid "details/calculations/fairPlayViolation/comp7_light_deserter"
 msgstr "Штраф за дезертирство"
 
 msgid "details/calculations/fairPlayViolation/deserter"
@@ -624,6 +790,12 @@ msgstr "Надбавка за IRG"
 msgid "details/calculations/intermediateTotal"
 msgstr "Итого за бой:"
 
+msgid "details/calculations/manageableXpBonus"
+msgstr "Управляемый бонус к опыту"
+
+msgid "details/calculations/maximum"
+msgstr "максимум"
+
 msgid "details/calculations/militaryManeuvers"
 msgstr "За военные учения"
 
@@ -651,6 +823,9 @@ msgstr "Надбавка за уровень премиум машины"
 
 msgid "details/calculations/referralBonus"
 msgstr "Реферальный бонус (%(bonusFactor)d%%)"
+
+msgid "details/calculations/referralBonus/fullLabel"
+msgstr "Реферальный бонус (%(bonusFactor)d%)"
 
 msgid "details/calculations/referralBonus/simpleLabel"
 msgstr "Реферальный бонус"
@@ -685,8 +860,14 @@ msgstr "Итого:"
 msgid "details/calculations/wotPlus"
 msgstr "Боевой бонус WoT Plus"
 
+msgid "details/calculations/wotPlusBonus"
+msgstr "Боевой бонус WoT Plus"
+
 msgid "details/calculations/xpRecord"
 msgstr "Начислено за бой (%(color_tag_open)sрекорд%(color_tag_close)s)"
+
+msgid "details/calculations/xpRecordSimple"
+msgstr "Получено (%(maximum)s)"
 
 msgid "details/credits"
 msgstr "Кредиты"
@@ -744,6 +925,9 @@ msgstr "Бой"
 
 msgid "details/xp"
 msgstr "Опыт"
+
+msgid "details/xp_abbr"
+msgstr "опыт"
 
 msgid "exterminationVictory/allies"
 msgstr "Ваша команда уничтожила всю технику противника"
@@ -871,7 +1055,7 @@ msgid "getPremiumPopover/headerText"
 msgstr "За этот бой вы можете получить:"
 
 msgid "getPremiumPopover/prem"
-msgstr "премиум аккаунт"
+msgstr "Премиум аккаунт"
 
 msgid "noData"
 msgstr "Извините, подробные результаты боя недоступны."
@@ -914,6 +1098,15 @@ msgstr ""
 
 msgid "selectVehicle"
 msgstr "Выберите машину"
+
+msgid "status/lose"
+msgstr "ПОРАЖЕНИЕ"
+
+msgid "status/tie"
+msgstr "НИЧЬЯ"
+
+msgid "status/win"
+msgstr "ПОБЕДА"
 
 msgid "tankSelector/next"
 msgstr "Следующая машина с"
@@ -1036,8 +1229,14 @@ msgstr "Взвод"
 msgid "team/squadHeaderNoSort/header"
 msgstr "Взвод"
 
+msgid "team/stats/allies"
+msgstr "Союзники"
+
 msgid "team/stats/close"
 msgstr "Закрыть"
+
+msgid "team/stats/enemies"
+msgstr "Противники"
 
 msgid "team/stats/enemyTeam"
 msgstr "Противник"

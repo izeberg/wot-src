@@ -16,6 +16,7 @@ package net.wg.infrastructure.base
    import net.wg.infrastructure.interfaces.IManagedContent;
    import net.wg.infrastructure.interfaces.IView;
    import net.wg.utils.IUtils;
+   import net.wg.utils.StaticUtils;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
@@ -30,11 +31,13 @@ package net.wg.infrastructure.base
    public class AbstractView extends AbstractViewMeta implements IView, IAbstractViewMeta
    {
       
-      private static const SET_MODAL_FOCUS_MESSAGE:String = "Last focused element is not on display list! Use setfocus before removing element ";
+      private static const SET_MODAL_FOCUS_MESSAGE:String = "Last focused element is not on display list! Use setFocus before removing element ";
       
-      private static const SET_FOCUS_ASSERT_MESSAGE:String = "focus must be set to object in display list only.";
+      private static const SET_FOCUS_ASSERT_MESSAGE:String = "focus must be set to object in display list only: ";
       
       private static const INVALID_MODAL_FOCUS:String = "invalidModalFocus";
+      
+      private static const UPDATE_STAGE_NOT_SUPPORTED:String = "updateStage() is not supported for: ";
       
       protected static const SHOW_VIEW_PROP_FORBIDDEN:int = 0;
       
@@ -194,8 +197,11 @@ package net.wg.infrastructure.base
          var _loc2_:String = null;
          if(this._lastFocusedElement != null && (param1 == this._lastFocusedElement || param1 == null))
          {
-            _loc2_ = SET_MODAL_FOCUS_MESSAGE + this._lastFocusedElement;
-            App.utils.asserter.assertNotNull(this._lastFocusedElement.parent,_loc2_,InfrastructureException);
+            if(!this._lastFocusedElement.parent)
+            {
+               _loc2_ = SET_MODAL_FOCUS_MESSAGE + StaticUtils.getObjectHierarchy(this._lastFocusedElement);
+               this.assert(false,_loc2_,InfrastructureException);
+            }
             this.setFocus(this._lastFocusedElement);
          }
          else
@@ -215,9 +221,12 @@ package net.wg.infrastructure.base
       
       protected final function setFocus(param1:InteractiveObject) : void
       {
-         this.assertNotNull(param1,"element");
-         this.assert(param1.stage != null,SET_FOCUS_ASSERT_MESSAGE);
          App.utils.scheduler.cancelTask(this.setFocus);
+         this.assertNotNull(param1,"element");
+         if(param1.stage == null)
+         {
+            this.assert(false,SET_FOCUS_ASSERT_MESSAGE + StaticUtils.getObjectHierarchy(param1));
+         }
          this._waitingFocusToInitialization = false;
          if(this.hasFocus)
          {
@@ -250,6 +259,14 @@ package net.wg.infrastructure.base
       protected function allowHandleInput() : Boolean
       {
          return true;
+      }
+      
+      protected final function assertUpdateStageMethod(param1:Boolean = false) : void
+      {
+         if(!param1)
+         {
+            this.assert(false,UPDATE_STAGE_NOT_SUPPORTED + StaticUtils.getObjectHierarchy(this));
+         }
       }
       
       protected final function assert(param1:Boolean, param2:String = "failed assert", param3:Class = null) : void
@@ -409,6 +426,10 @@ package net.wg.infrastructure.base
       private function onLastFocusedElementFocusOutHandler(param1:FocusHandlerEvent) : void
       {
          var _loc5_:String = null;
+         if(this._lastFocusedElement != param1.target)
+         {
+            return;
+         }
          var _loc2_:InteractiveObject = this.getManualFocus();
          var _loc3_:Boolean = false;
          var _loc4_:InteractiveObject = App.utils.focusHandler.getFocus(0);
@@ -418,8 +439,11 @@ package net.wg.infrastructure.base
          }
          if(this.hasFocus && !_loc3_)
          {
-            _loc5_ = "modal-focused view \'" + this + "\' has lost a component focus!";
-            this.assert(_loc2_ != null,_loc5_,InfrastructureException);
+            if(!_loc2_)
+            {
+               _loc5_ = "modal-focused view \'" + this + "\' has lost a component focus!";
+               this.assert(false,_loc5_,InfrastructureException);
+            }
          }
          this.setLastFocusedElement(_loc2_);
       }

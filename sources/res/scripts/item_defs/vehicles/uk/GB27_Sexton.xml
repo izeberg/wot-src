@@ -2838,7 +2838,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>25900</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.7
 				<!--BW_String-->
@@ -4973,7 +4972,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>28000</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -7106,7 +7104,7 @@
 		<Turret_1_GB27_Sexton>
 			<ceilless>true</ceilless>
 			<userString>#gb_vehicles:Turret_1_GB27_Sexton</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>200</price>
 			<notInShop>true</notInShop>
@@ -7319,7 +7317,7 @@
 		<Turret_2_GB27_Sexton>
 			<ceilless>true</ceilless>
 			<userString>#gb_vehicles:Turret_1_GB27_Sexton</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>200</price>
 			<notInShop>true</notInShop>

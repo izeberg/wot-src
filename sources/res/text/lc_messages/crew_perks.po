@@ -254,7 +254,7 @@ msgstr "Позволяет командиру определить, обнару
 
 msgid "commander_tutor/alt/description"
 msgstr ""
-"Ранение командира не влияет на эффективность навыка. Надбавка применяется только к базовому количеству опыта экипажа, полученному им по итогам боя.\n"
+"Раненный командир не может заменить другого члена экипажа. Надбавка применяется только к базовому количеству опыта экипажа, полученному им по итогам боя.\n"
 "\n"
 "Дополнительно опыт экипажа можно быстро получить, используя учебные материалы или при переводе свободного опыта в опыт экипажа."
 
@@ -374,7 +374,7 @@ msgstr ""
 "двигатель{greenBright_End} на %(vehPenaltyForDamagedEngine)s&zwnbsp;."
 
 msgid "driver_motorExpert/name"
-msgstr "Знаток моторов"
+msgstr "Инженер"
 
 msgid "driver_motorExpert/shortDescription"
 msgstr "Штраф за повреждённый двигатель снижен."
@@ -436,7 +436,7 @@ msgstr ""
 msgid "driver_reliablePlacement/maxLvlDescription"
 msgstr ""
 "Полное изучение увеличит {greenBright_Start}поглощаемый бронёй урон от "
-"сколочно-фугасных снарядов{greenBright_End} на "
+"осколочно-фугасных снарядов{greenBright_End} на "
 "%(vehicleHEShellDamageResistance)s и уменьшит {greenBright_Start}урон "
 "от{greenBright_End} {greenBright_Start}падения{greenBright_End} на "
 "%(vehicleFallingDamageResistance)s&zwnbsp;."

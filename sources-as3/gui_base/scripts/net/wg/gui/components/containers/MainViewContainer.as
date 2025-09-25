@@ -14,11 +14,6 @@ package net.wg.gui.components.containers
          name = param1;
       }
       
-      override protected function getModalBgLinkage() : String
-      {
-         return Linkages.VIEW_LOAD_CURTAIN;
-      }
-      
       override public function tryToUpdateContent() : void
       {
          var _loc1_:IManagedContent = getTopmostView();
@@ -30,6 +25,11 @@ package net.wg.gui.components.containers
             }
             setChildIndex(DisplayObject(_loc1_.containerContent),numChildren - 1);
          }
+      }
+      
+      override protected function getModalBgLinkage() : String
+      {
+         return Linkages.VIEW_LOAD_CURTAIN;
       }
    }
 }

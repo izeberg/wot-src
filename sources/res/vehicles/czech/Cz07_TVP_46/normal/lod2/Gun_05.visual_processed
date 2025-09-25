@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.000000 0.821111</row3>
+							<row3>0.000000 0.000000 0.682495</row3>
 						</transform>
 					</node>
 					<node>
@@ -78,10 +78,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz07_TVP_46/TVP_46_guns_AO.dds</Texture>
 					</property>
@@ -105,12 +101,8 @@
 						alphaReference
 						<Int>64</Int>
 					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
 				</material>
-				<groupOrigin>0.000000 0.015488 -1.864777</groupOrigin>
+				<groupOrigin>0.000000 0.015488 -1.726161</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>

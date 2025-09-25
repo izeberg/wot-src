@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A178_SPHT/crash/lod0/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A178_SPHT/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.672674 -0.833194 -3.755888</min>
+		<max>1.686289 0.897208 3.555455</max>
+	</visibilityBox>
+</root>

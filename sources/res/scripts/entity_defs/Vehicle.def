@@ -31,7 +31,6 @@
 		<Interface>DestructibleEntity_Vehicle</Interface>
 		<Interface>DefenderBonusController_Vehicle</Interface>
 		<Interface>RecoveryMechanic_Vehicle</Interface>
-		<Interface>RespawnController_Vehicle</Interface>
 		<Interface>SmokeController_Vehicle</Interface>
 		<Interface>Wheels</Interface>
 		<Interface>Perks_Vehicle</Interface>
@@ -188,7 +187,6 @@
 		<customRoleSlotTypeId>
 			<Type>UINT8</Type>
 			<Flags>ALL_CLIENTS</Flags>
-			<DetailLevel>MY_VEHICLE</DetailLevel>
 		</customRoleSlotTypeId>
 		<vehPerks>
 			<Type>PYTHON</Type>
@@ -202,7 +200,6 @@
 				<of>INT32</of>
 			</Type>
 			<Flags>ALL_CLIENTS</Flags>
-			<DetailLevel>MY_VEHICLE</DetailLevel>
 		</vehPostProgression>
 		<disabledSwitches>
 			<Type>
@@ -368,10 +365,6 @@
 			<Type>UINT8</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</botDisplayStatus>
-		<stFrags>
-			<Type>UINT32</Type>
-			<Flags>ALL_CLIENTS</Flags>
-		</stFrags>
 	</Properties>
 	<TempProperties>
 		<events/>
@@ -433,12 +426,14 @@
 			<Arg>UINT8</Arg>
 			<Arg>FLOAT32</Arg>
 			<Arg>FLOAT32</Arg>
+			<Arg>UINT8</Arg>
 		</showDamageFromShot>
 		<showDamageFromExplosion>
 			<Arg>OBJECT_ID</Arg>
 			<Arg>VECTOR3</Arg>
 			<Arg>UINT8</Arg>
 			<Arg>INT32</Arg>
+			<Arg>UINT8</Arg>
 			<Arg>UINT8</Arg>
 		</showDamageFromExplosion>
 		<showAmmoBayEffect>
@@ -461,6 +456,7 @@
 			<DetailDistance>100</DetailDistance>
 		</onStaticCollision>
 		<showRammingEffect>
+			<Arg>FLOAT32</Arg>
 			<Arg>FLOAT32</Arg>
 			<Arg>VECTOR3</Arg>
 			<DetailDistance>100</DetailDistance>
@@ -547,6 +543,7 @@
 			<Arg>UINT8</Arg>
 			<Arg>FLOAT32</Arg>
 			<Arg>FLOAT32</Arg>
+			<Arg>UINT8</Arg>
 		</onEnemyVehicleShot>
 		<scheduleExtraCheck>
 			<Arg>OBJECT_ID</Arg>

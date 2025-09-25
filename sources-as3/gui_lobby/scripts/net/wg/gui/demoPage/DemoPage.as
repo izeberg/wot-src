@@ -1,7 +1,7 @@
 package net.wg.gui.demoPage
 {
+   import flash.geom.Rectangle;
    import net.wg.data.constants.generated.LAYER_NAMES;
-   import net.wg.gui.components.containers.MainViewContainer;
    import net.wg.gui.components.containers.ManagedContainer;
    import net.wg.gui.components.controls.SimpleTileList;
    import net.wg.gui.components.controls.events.RendererEvent;
@@ -45,7 +45,7 @@ package net.wg.gui.demoPage
          {
             if(_loc4_)
             {
-               _loc4_.updateStage(param1,param2);
+               _loc4_.updateStage(param1,param2,new Rectangle());
             }
          }
       }
@@ -86,7 +86,7 @@ package net.wg.gui.demoPage
       
       private function addSubContainer(param1:String, param2:int) : IManagedContainer
       {
-         var _loc3_:ManagedContainer = new MainViewContainer(param1);
+         var _loc3_:ManagedContainer = new ManagedContainer(param1);
          addChildAt(_loc3_,param2);
          return _loc3_;
       }

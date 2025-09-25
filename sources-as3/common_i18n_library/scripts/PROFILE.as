@@ -1103,6 +1103,8 @@ package
       
       public static const PROFILE_DROPDOWN_LABELS_COMP7_ARCHIVE_PEGASUS:String = "#profile:profile/dropdown/labels/comp7_archive_Pegasus";
       
+      public static const PROFILE_DROPDOWN_LABELS_COMP7_ARCHIVE_MANTICORE:String = "#profile:profile/dropdown/labels/comp7_archive_Manticore";
+      
       public static const PROFILE_DROPDOWN_LABELS_COMP7_SEASON_1:String = "#profile:profile/dropdown/labels/comp7_season_1";
       
       public static const PROFILE_DROPDOWN_LABELS_COMP7_SEASON_2:String = "#profile:profile/dropdown/labels/comp7_season_2";

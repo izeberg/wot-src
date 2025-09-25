@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import operator
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.items_parameters import params
@@ -115,7 +116,7 @@ class ChassisComparator(_BaseModuleComparator):
         super(ChassisComparator, self).__init__(items, vehicle)
 
     def mostValuableParam(self, excludes=None):
-        return self._getValuableParam('maxLoad', excludes)
+        return self._getValuableParam('rotationSpeed', excludes)
 
 
 class TurretComparator(_BaseModuleComparator):

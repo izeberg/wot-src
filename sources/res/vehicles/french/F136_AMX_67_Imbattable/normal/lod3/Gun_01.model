@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/french/F136_AMX_67_Imbattable/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.052474 -0.878146 -2.803621</min>
+		<max>0.956732 0.623157 8.796224</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/french/F136_AMX_67_Imbattable/normal/lod3/Gun_01</nodefullVisual>
+</root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_80_NationsA_Saddle/normal/lod3/Cus_80_NationsA_Saddle_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.598772 0.000000 -0.552177</min>
+		<max>0.073811 0.440627 0.544108</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_80_NationsA_Saddle/normal/lod2/Cus_80_NationsA_Saddle_01</nodefullVisual>
+	<tank>true</tank>
+</root>

@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>14315</weight>
-		<maxHealth>1240</maxHealth>
+		<maxHealth>1400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1639,9 +1639,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>36000</maxLoad>
 			<terrainResistance>
-				1.1 1.2 2.4
+				1 1.1 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35000</brakeForce>
@@ -4515,7 +4514,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>39000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
@@ -7400,7 +7398,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>310</maxHealth>
+			<maxHealth>260</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7473,7 +7471,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
@@ -7499,7 +7497,10 @@
 						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 9 11</reloadTime>
+						<reloadTime>
+							6.7 7.8 9.8
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It12_Prototipo_Standard_B/normal/lod0/Gun_01.model</undamaged>
@@ -8911,7 +8912,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>460</maxHealth>
+			<maxHealth>350</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -8978,7 +8979,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.1
+						1.9
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionRadius>
@@ -9004,7 +9005,10 @@
 						<rate>30</rate>
 					</clip>
 					<autoreload>
-						<reloadTime>8 9 11</reloadTime>
+						<reloadTime>
+							6.5 7.7 9.7
+							<!--BW_String-->
+						</reloadTime>
 					</autoreload>
 					<models>
 						<undamaged>vehicles/italy/It12_Prototipo_Standard_B/normal/lod0/Gun_03.model</undamaged>
@@ -10202,15 +10206,6 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<R300>
-			shared
-			<unlocks>
-				<radio>
-					RV_4
-					<cost>9400</cost>
-				</radio>
-			</unlocks>
-		</R300>
 		<RV_4>shared</RV_4>
 	</radios>
 	<clientAdjustmentFactors>
@@ -10237,10 +10232,7 @@
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</MB_837_Aa>
 				<MB_837_Ea>
-					<smplEnginePower>
-						689.6
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>690</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</MB_837_Ea>
 			</engines>
@@ -10250,19 +10242,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1932
+								0.1771
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

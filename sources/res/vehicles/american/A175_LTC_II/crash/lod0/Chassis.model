@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A175_LTC_II/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/american/A175_LTC_II/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.501289 0.000000 -3.177807</min>
+		<max>1.501289 0.899422 0.030236</max>
+	</visibilityBox>
+</root>

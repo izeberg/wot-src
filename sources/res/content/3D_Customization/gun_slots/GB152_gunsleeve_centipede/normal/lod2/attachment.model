@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/GB152_gunsleeve_centipede/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.304391 -0.223131 -1.863895</min>
+		<max>0.290229 0.229071 2.579223</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/GB152_gunsleeve_centipede/normal/lod2/attachment</nodefullVisual>
+</root>

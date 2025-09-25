@@ -177,6 +177,26 @@ package net.wg.gui.lobby.vehPostProgression.components
          return this._isPanelShown;
       }
       
+      public function get topMargin() : int
+      {
+         return this.panel.topMargin;
+      }
+      
+      public function set topMargin(param1:int) : void
+      {
+         this.panel.topMargin = param1;
+      }
+      
+      public function get bottomMargin() : int
+      {
+         return this.panel.bottomMargin;
+      }
+      
+      public function set bottomMargin(param1:int) : void
+      {
+         this.panel.bottomMargin = param1;
+      }
+      
       private function onButtonTTCClickHandler(param1:MouseEvent) : void
       {
          if(this._isPanelShown)

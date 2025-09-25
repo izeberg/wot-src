@@ -167,6 +167,11 @@ msgstr ""
 "Приняв приглашение, вы будете автоматически исключены из состава "
 "формирования и перемещены на сервер %(host)s."
 
+msgid "invites/note/change_and_leave/PREBATTLE_COMP7_LIGHT"
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава "
+"формирования и перемещены на сервер %(host)s."
+
 msgid "invites/note/change_and_leave/PREBATTLE_EPIC"
 msgstr ""
 "Приняв приглашение, вы будете автоматически исключены из состава "
@@ -262,6 +267,11 @@ msgstr ""
 "Приняв приглашение, вы покинете режим «Натиск» и будете перемещены на сервер"
 " %(host)s."
 
+msgid "invites/note/change_and_leave/QUEUE_COMP7_LIGHT"
+msgstr ""
+"Приняв приглашение, вы покинете режим «Натиск Лайт» и будете перемещены на "
+"сервер %(host)s."
+
 msgid "invites/note/change_and_leave/QUEUE_EPIC"
 msgstr ""
 "Приняв приглашение, вы покинете режим «Линия фронта» и будете перемещены на "
@@ -318,6 +328,11 @@ msgstr ""
 "боя на Глобальной карте."
 
 msgid "invites/note/leave/PREBATTLE_COMP7"
+msgstr ""
+"Приняв приглашение, вы будете автоматически исключены из состава "
+"формирования."
+
+msgid "invites/note/leave/PREBATTLE_COMP7_LIGHT"
 msgstr ""
 "Приняв приглашение, вы будете автоматически исключены из состава "
 "формирования."
@@ -397,6 +412,9 @@ msgstr "Приняв приглашение, вы покинете режим «
 msgid "invites/note/leave/QUEUE_COMP7"
 msgstr "Приняв приглашение, вы покинете режим «Натиск»."
 
+msgid "invites/note/leave/QUEUE_COMP7_LIGHT"
+msgstr "Приняв приглашение, вы покинете режим «Натиск Лайт»."
+
 msgid "invites/note/leave/QUEUE_EPIC"
 msgstr "Приняв приглашение, вы покинете режим «Линия фронта»."
 
@@ -438,6 +456,9 @@ msgid "invites/prebattle/acceptNotAllowed/undefinedPeriphery"
 msgstr ""
 "Вы не можете принять приглашение. Чтобы принять приглашение, перейдите на "
 "другой сервер."
+
+msgid "invites/prebattle/alreadyJoined/BATTLE_ROYALE"
+msgstr "Вы уже присоединились к этому взводу."
 
 msgid "invites/prebattle/alreadyJoined/CLAN"
 msgstr "Вы уже присоединились к этому бою на Глобальной карте."
@@ -489,6 +510,9 @@ msgstr "Приглашение войти в состав взвода Стал�
 
 msgid "invites/text/COMP7"
 msgstr "Приглашение войти в состав взвода режима «Натиск»"
+
+msgid "invites/text/COMP7_LIGHT"
+msgstr "Приглашение войти в состав взвода режима «Натиск Лайт»"
 
 msgid "invites/text/EPIC"
 msgstr "Приглашение войти в состав взвода «Линия фронта»"

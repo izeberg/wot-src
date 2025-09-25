@@ -318,6 +318,12 @@ package net.wg.gui.lobby.settings.config
       private static const CONTOUR_FORM_STR:String = CONTOUR_STR + "Form";
       
       private static const CONTOUR_CROSSHAIR_STR:String = CONTOUR_FORM_STR + "Crosshair";
+      
+      public static const ARMOR_FLASHLIGHT_STR:String = "armorFlashlight";
+      
+      private static const ARMOR_FLASHLIGHT_FORM_STR:String = ARMOR_FLASHLIGHT_STR + "Form";
+      
+      private static const ARMOR_FLASHLIGHT_CROSSHAIR_STR:String = ARMOR_FLASHLIGHT_FORM_STR + "Crosshair";
        
       
       private var _settingsData:SettingsDataVo;
@@ -393,6 +399,12 @@ package net.wg.gui.lobby.settings.config
             "id":CONTOUR_STR,
             "formID":CONTOUR_FORM_STR,
             "crosshairID":CONTOUR_CROSSHAIR_STR
+         }),new CursorTabsDataVo({
+            "label":SETTINGS.CURSOR_ARMORFLASHLIGHT,
+            "linkage":ARMOR_FLASHLIGHT_STR,
+            "id":ARMOR_FLASHLIGHT_STR,
+            "formID":ARMOR_FLASHLIGHT_FORM_STR,
+            "crosshairID":ARMOR_FLASHLIGHT_CROSSHAIR_STR
          })]);
          this._graphicSettingsTabsDataProvider = new DataProvider([new TabsDataVo({
             "label":SETTINGS.GRAPHICS_TABSCREEN,

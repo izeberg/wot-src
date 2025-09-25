@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.winback.tooltips.selected_reward_model import SelectedRewardModel
 
 class SelectedRewardsTooltipModel(ViewModel):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import FUN_RANDOM_HINT_SECTION, HINTS_LEFT
 from fun_random.gui.Scaleform.daapi.view.battle.hint_panel.hint_panel_plugin import HelpHintContext
@@ -24,9 +25,6 @@ class FunRandomPreBattleHintPlugin(PreBattleHintPlugin, FunSubModesWatcher):
         settingsKey = cls.getBattleSubMode().getSettings().client.settingsKey
         funRandomSettings = AccountSettings.getSettings(FUN_RANDOM_HINT_SECTION)
         return settingsKey in funRandomSettings and funRandomSettings[settingsKey][HINTS_LEFT] <= 0
-
-    def _hasVehicleHelpHint(self, vTypeDesc):
-        return vTypeDesc.isWheeledVehicle or vTypeDesc.type.isDualgunVehicleType or vTypeDesc.hasTurboshaftEngine or vTypeDesc.isTrackWithinTrack or vTypeDesc.hasRocketAcceleration or vTypeDesc.hasDualAccuracy or vTypeDesc.isTwinGunVehicle
 
 
 class FunRandomHelpPlugin(HelpPlugin, FunSubModesWatcher):

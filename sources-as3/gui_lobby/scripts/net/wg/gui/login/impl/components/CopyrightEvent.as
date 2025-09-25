@@ -6,6 +6,8 @@ package net.wg.gui.login.impl.components
    {
       
       public static const TO_LEGAL:String = "toLegal";
+      
+      public static const TO_REPORT_CONTENT:String = "toReportContent";
        
       
       public function CopyrightEvent(param1:String, param2:Boolean = false, param3:Boolean = false)

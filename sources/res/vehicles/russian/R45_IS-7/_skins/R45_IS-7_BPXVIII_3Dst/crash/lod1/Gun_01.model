@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/russian/R45_IS-7/_skins/R45_IS-7_BPXVIII_3Dst/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.804955 -0.477908 -1.600774</min>
+		<max>0.370269 0.541074 6.194099</max>
+	</visibilityBox>
+</root>

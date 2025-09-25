@@ -120,7 +120,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>35270</weight>
-		<maxHealth>1200</maxHealth>
+		<maxHealth>1400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -2155,21 +2155,20 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
-				1.2 1.5 2.5
+				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>48000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>22</rotationSpeed>
+			<rotationSpeed>26</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.18
+					0.16
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.18
+					0.16
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -4770,14 +4769,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>64000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>48000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -7441,8 +7439,8 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>10000</weight>
-			<maxHealth>300</maxHealth>
-			<rotationSpeed>26</rotationSpeed>
+			<maxHealth>260</maxHealth>
+			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
 				<maxRegenHealth>75</maxRegenHealth>
@@ -7451,7 +7449,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>370</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>100</maxHealth>
 				<maxRegenHealth>50</maxRegenHealth>
@@ -7461,13 +7459,13 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<OQF_17pdr_Gun_Mk_VII>
+				<OQF_17_pdr_Gun_Mk_VII_221>
 					shared
 					<maxAmmo>70</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -18 1 -18</minPitch>
 						<maxPitch>
-							0 10 0.422222 10 0.444444 6 0.5 6 0.555556 6 0.577778 10 1 10
+							0.00000 10.00 0.42222 10.00 0.44444 6.00 0.55556 6.00 0.57778 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7522,22 +7520,22 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.5
+						3.4
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7647,7 +7645,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</OQF_17pdr_Gun_Mk_VII>
+				</OQF_17_pdr_Gun_Mk_VII_221>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB11_Caernarvon/normal/lod0/Turret_01.model</undamaged>
@@ -8254,7 +8252,7 @@
 			<price>31000</price>
 			<unlocks>
 				<gun>
-					_32_pounder_Gun_OQF
+					OQF_32_pdr_Gun_Mk_II_221
 					<cost>16400</cost>
 				</gun>
 			</unlocks>
@@ -8308,7 +8306,7 @@
 			</armor>
 			<primaryArmor>armor_2 armor_3 armor_10</primaryArmor>
 			<weight>10400</weight>
-			<maxHealth>400</maxHealth>
+			<maxHealth>350</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -8328,13 +8326,13 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<OQF_17pdr_Gun_Mk_VII>
+				<OQF_17_pdr_Gun_Mk_VII_221>
 					shared
 					<maxAmmo>70</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -18 1 -18</minPitch>
 						<maxPitch>
-							0 10 0.408333 10 0.444444 6 0.5 6 0.555556 6 0.577778 10 1 10
+							0.00000 10.00 0.41667 10.00 0.43889 6.00 0.55556 6.00 0.57778 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8366,11 +8364,11 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.34
+						0.32
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						4.2
+						3.4
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -8378,10 +8376,7 @@
 							0.1
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -8498,14 +8493,14 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</OQF_17pdr_Gun_Mk_VII>
-				<_32_pounder_Gun_OQF>
+				</OQF_17_pdr_Gun_Mk_VII_221>
+				<OQF_32_pdr_Gun_Mk_II_221>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -18 1 -18</minPitch>
 						<maxPitch>
-							0 10 0.408333 10 0.444444 6 0.5 6 0.555556 6 0.577778 10 1 10
+							0.00000 10.00 0.41667 10.00 0.43889 6.00 0.55556 6.00 0.57778 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8551,7 +8546,7 @@
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -8560,7 +8555,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -8672,7 +8667,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_32_pounder_Gun_OQF>
+				</OQF_32_pdr_Gun_Mk_II_221>
 			</guns>
 			<models>
 				<undamaged>vehicles/british/GB11_Caernarvon/normal/lod0/Turret_02.model</undamaged>
@@ -9271,102 +9266,59 @@
 		</Turret_2_GB11_Caernarvon>
 	</turrets0>
 	<engines>
-		<Rolls_Royse_Meteor_MkIV>
+		<Rolls_Royce_Meteor_Mk_IVC_221>
 			shared
 			<unlocks>
 				<engine>
-					Rolls_Royse_Meteor_MkIVC
-					<cost>31000</cost>
-				</engine>
-			</unlocks>
-		</Rolls_Royse_Meteor_MkIV>
-		<Rolls_Royse_Meteor_MkIVC>
-			shared
-			<unlocks>
-				<engine>
-					Rolls_Royse_Meteor_M120
+					Rolls_Royce_Meteor_M120_221
 					<cost>27000</cost>
 				</engine>
 			</unlocks>
-		</Rolls_Royse_Meteor_MkIVC>
-		<Rolls_Royse_Meteor_M120>shared</Rolls_Royse_Meteor_M120>
+		</Rolls_Royce_Meteor_Mk_IVC_221>
+		<Rolls_Royce_Meteor_M120_221>shared</Rolls_Royce_Meteor_M120_221>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<N19Mk3>
-			shared
-			<unlocks>
-				<radio>
-					N22
-					<cost>4500</cost>
-				</radio>
-			</unlocks>
-		</N19Mk3>
-		<N22>
-			shared
-			<unlocks>
-				<radio>
-					C42
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</N22>
 		<C42>shared</C42>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Rolls_Royse_Meteor_MkIV>
-					<smplEnginePower>
-						687.2327
-						<!--BW_String-->
-					</smplEnginePower>
+				<Rolls_Royce_Meteor_Mk_IVC_221>
+					<smplEnginePower>830</smplEnginePower>
 					<smplFwMaxSpeed>
 						34.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_MkIV>
-				<Rolls_Royse_Meteor_MkIVC>
-					<smplEnginePower>
-						792.9609
-						<!--BW_String-->
-					</smplEnginePower>
+				</Rolls_Royce_Meteor_Mk_IVC_221>
+				<Rolls_Royce_Meteor_M120_221>
+					<smplEnginePower>900</smplEnginePower>
 					<smplFwMaxSpeed>
 						34.3
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_MkIVC>
-				<Rolls_Royse_Meteor_M120>
-					<smplEnginePower>
-						856.3977
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>
-						34.3
-						<!--BW_String-->
-					</smplFwMaxSpeed>
-				</Rolls_Royse_Meteor_M120>
+				</Rolls_Royce_Meteor_M120_221>
 			</engines>
 			<chassis>
 				<Chassis_GB11_Caernarvon>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

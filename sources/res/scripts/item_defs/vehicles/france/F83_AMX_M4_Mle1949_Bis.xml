@@ -12,7 +12,7 @@
 	<postProgressionTree>role_HT_universal</postProgressionTree>
 	<customRoleSlotOptions>2 4</customRoleSlotOptions>
 	<speedLimits>
-		<forward>35</forward>
+		<forward>33</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -96,7 +96,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>35920</weight>
-		<maxHealth>1440</maxHealth>
+		<maxHealth>1520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -2030,9 +2030,8 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>13000</weight>
-			<maxLoad>74000</maxLoad>
 			<terrainResistance>
-				1.4 1.5 2.5
+				1.3 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>73000</brakeForce>
@@ -3917,7 +3916,6 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>13000</weight>
-			<maxLoad>78000</maxLoad>
 			<terrainResistance>
 				1.3 1.4 2.3
 				<!--BW_String-->
@@ -5825,10 +5823,9 @@
 			<tags/>
 			<level>8</level>
 			<price>31000</price>
-			<yawLimits>-180 180</yawLimits>
 			<armor>
-				<armor_1>220</armor_1>
-				<armor_2>180</armor_2>
+				<armor_1>240</armor_1>
+				<armor_2>210</armor_2>
 				<armor_3>80</armor_3>
 				<armor_4>60</armor_4>
 				<armor_5>30</armor_5>
@@ -5841,10 +5838,23 @@
 				<armor_12>100</armor_12>
 				<armor_13>45</armor_13>
 				<armor_14>35</armor_14>
+				<armor_15>190</armor_15>
+				<armor_16>180</armor_16>
+				<armor_17>140</armor_17>
+				<armor_18>180</armor_18>
+				<armor_19>75</armor_19>
+				<armor_20>100</armor_20>
+				<armor_21>100</armor_21>
+				<armor_22>220</armor_22>
+				<armor_23>220</armor_23>
+				<armor_24>180</armor_24>
+				<armor_25>225</armor_25>
+				<armor_26>125</armor_26>
+				<armor_27>160</armor_27>
 			</armor>
 			<primaryArmor>armor_9 armor_3 armor_4</primaryArmor>
 			<weight>18000</weight>
-			<maxHealth>360</maxHealth>
+			<maxHealth>280</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -5921,20 +5931,17 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.35
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.7
+						11.2
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -7267,12 +7274,7 @@
 					_127mm_54_Model_1948
 					<cost>63000</cost>
 				</gun>
-				<vehicle>
-					F82_AMX_M4_Mle1949_Ter
-					<cost>182000</cost>
-				</vehicle>
 			</unlocks>
-			<yawLimits>-180 180</yawLimits>
 			<armor>
 				<armor_1>300</armor_1>
 				<armor_2>220</armor_2>
@@ -7294,7 +7296,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>18500</weight>
-			<maxHealth>460</maxHealth>
+			<maxHealth>380</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7454,6 +7456,12 @@
 				<_127mm_54_Model_1948>
 					shared
 					<maxAmmo>30</maxAmmo>
+					<unlocks>
+						<vehicle>
+							F82_AMX_M4_Mle1949_Ter
+							<cost>182000</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							300
@@ -7510,7 +7518,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<reloadTime>
-						13.3
+						13.9
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -8794,15 +8802,6 @@
 		</Turret_2_F83_AMX_M4_Mle1949_Bis>
 	</turrets0>
 	<engines>
-		<Maybach_HL_230P45>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_295
-					<cost>24700</cost>
-				</engine>
-			</unlocks>
-		</Maybach_HL_230P45>
 		<Maybach_HL_295>
 			shared
 			<unlocks>
@@ -8818,32 +8817,19 @@
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<SCR_508>
-			shared
-			<unlocks>
-				<radio>
-					SCR_528
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_508>
 		<SCR_528>shared</SCR_528>
 	</radios>
 	<clientAdjustmentFactors/>
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_230P45>
-					<smplEnginePower>800</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
-				</Maybach_HL_230P45>
 				<Maybach_HL_295>
-					<smplEnginePower>900</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplEnginePower>1000</smplEnginePower>
+					<smplFwMaxSpeed>33</smplFwMaxSpeed>
 				</Maybach_HL_295>
 				<Maybach_HL_295_a_injection_d_essence>
-					<smplEnginePower>1170</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplEnginePower>1200</smplEnginePower>
+					<smplFwMaxSpeed>33</smplFwMaxSpeed>
 				</Maybach_HL_295_a_injection_d_essence>
 			</engines>
 			<chassis>
@@ -8851,19 +8837,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.12075
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.1127
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

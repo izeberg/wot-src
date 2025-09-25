@@ -2,14 +2,8 @@
 <root>
 	<materialNames/>
 	<visibilityBox>
-		<min>
-			-0.238661 -0.415124 -1.09637
-			<!--BW_String-->
-		</min>
-		<max>
-			0.238661 0.30414 4.51964
-			<!--BW_String-->
-		</max>
+		<min>-0.238661 -0.415124 -1.096369</min>
+		<max>0.238661 0.304140 3.854445</max>
 	</visibilityBox>
 	<tank>true</tank>
 	<nodelessVisual>vehicles/japan/J27_O_I_120/crash/lod0/Gun_02</nodelessVisual>

@@ -1,4 +1,5 @@
 import typing
+from helpers import time_utils
 from skeletons.gui.game_control import IGameStateTracker
 from skeletons.gui.impl import IGuiLoader, IFullscreenManager, INotificationWindowController
 if typing.TYPE_CHECKING:
@@ -13,7 +14,7 @@ def getGuiImplConfig(manager):
     from gui.impl.gen.view_models.common.tutorial.tutorial_model import TutorialModel
     from gui.impl.gen.view_models.common.ui_logger_model import UiLoggerModel
     loader = GuiLoader()
-    loader.init(TutorialModel(), UiLoggerModel())
+    loader.init(TutorialModel(), UiLoggerModel(), time_utils.getServerUTCTime)
     manager.addInstance(IGuiLoader, loader, finalizer='fini')
     notifications = NotificationWindowController()
     tracker = manager.getService(IGameStateTracker)

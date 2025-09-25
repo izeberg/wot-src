@@ -41,7 +41,6 @@ package net.wg.frontline.gui.battle.views
    import net.wg.gui.battle.views.prebattleTimer.PrebattleTimerEvent;
    import net.wg.gui.battle.views.radialMenu.RadialMenu;
    import net.wg.gui.battle.views.siegeModePanel.SiegeModePanel;
-   import net.wg.gui.battle.views.sixthSense.SixthSense;
    import net.wg.gui.components.battleDamagePanel.BattleDamageLogPanel;
    import net.wg.gui.components.battleDamagePanel.constants.BattleDamageLogConstants;
    import net.wg.gui.components.hintPanel.HintPanel;
@@ -114,8 +113,6 @@ package net.wg.frontline.gui.battle.views
       public var fullStats:FrontlineFullStats = null;
       
       public var debugPanel:DebugPanel = null;
-      
-      public var sixthSense:SixthSense = null;
       
       public var radialMenu:RadialMenu = null;
       
@@ -205,8 +202,6 @@ package net.wg.frontline.gui.battle.views
             this.teamBasesPanelUI.y = TEAM_BASES_PANEL_OFFSETS[this._scorePanelState];
          }
          this.teamBasesPanelUI.x = _loc3_;
-         this.sixthSense.x = _loc3_;
-         this.sixthSense.y = param2 >> 2;
          this.damageInfoPanel.y = (param2 >> 1) / stage.scaleY + DAMAGE_INFO_PANEL_CONSTS.HEIGHT * stage.scaleY | 0;
          this.damageInfoPanel.x = param1 - DAMAGE_INFO_PANEL_CONSTS.WIDTH >> 1;
          this.battleMessenger.x = damagePanel.x;
@@ -291,7 +286,6 @@ package net.wg.frontline.gui.battle.views
       override protected function onPopulate() : void
       {
          registerComponent(this.teamBasesPanelUI,BATTLE_VIEW_ALIASES.TEAM_BASES_PANEL);
-         registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
          registerComponent(this.damageInfoPanel,BATTLE_VIEW_ALIASES.DAMAGE_INFO_PANEL);
          registerComponent(this.fullStats,BATTLE_VIEW_ALIASES.FULL_STATS);
          registerComponent(this.debugPanel,BATTLE_VIEW_ALIASES.DEBUG_PANEL);
@@ -354,7 +348,6 @@ package net.wg.frontline.gui.battle.views
          this.hintPanel = null;
          this.upgradePanel.removeEventListener(ComponentEvent.STATE_CHANGE,this.onUpgradePanelStateChange);
          this.upgradePanel = null;
-         this.sixthSense = null;
          this.debugPanel = null;
          this.fullStats = null;
          this.radialMenu = null;

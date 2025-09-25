@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.battle_matters.quest_progress_model import QuestProgressModel
 from gui.impl.gen.view_models.views.lobby.battle_matters.quest_view_model import QuestViewModel
 

@@ -76,8 +76,12 @@
 		11.71
 		<!--BW_String-->
 	</repairCost>
+	<premiumVehicleXPFactor>
+		0.05
+		<!--BW_String-->
+	</premiumVehicleXPFactor>
 	<crewXpFactor>
-		1.0
+		1.5
 		<!--BW_String-->
 	</crewXpFactor>
 	<camouflage>
@@ -305,7 +309,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>58000</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.4
 				<!--BW_String-->
@@ -2638,7 +2641,7 @@
 	<turrets0>
 		<Turret_1_A174_T57_58_Rush_Ep1>
 			<userString>#usa_vehicles:Turret_1_A174_T57_58_Rush_Ep1</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>10</level>
 			<price>66000</price>
 			<notInShop>true</notInShop>
@@ -2708,12 +2711,9 @@
 			<guns>
 				<_120mm_Gun_T179_Rush_Ep1>
 					shared
-					<maxAmmo>36</maxAmmo>
+					<maxAmmo>44</maxAmmo>
 					<pitchLimits>
-						<minPitch>
-							0 -12 0.353005 -12 0.416667 -10 0.583333 -10 0.646995 -12 1 -12
-							<!--BW_String-->
-						</minPitch>
+						<minPitch>0 -12 1 -12</minPitch>
 						<maxPitch>
 							0 8 0.353005 8 0.416667 7 0.583333 7 0.646995 8 1 8
 							<!--BW_String-->
@@ -2770,6 +2770,7 @@
 							50.8
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_16>
 						<gun>50</gun>
 					</armor>
@@ -3033,10 +3034,7 @@
 		<detailed>
 			<engines>
 				<Continental_AV_1790_5C_Rush_Ep1>
-					<smplEnginePower>
-						856.3977
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>870</smplEnginePower>
 					<smplFwMaxSpeed>
 						35.4
 						<!--BW_String-->

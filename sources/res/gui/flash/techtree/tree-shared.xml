@@ -15,6 +15,10 @@
 				<name>nodeRendererName</name>
 				<value>NationTreeNodeSkinned</value>
 			</item>
+			<item>
+				<name>firstLevelToHighlight</name>
+				<value>11</value>
+			</item>
 		</settings>
 		<settings>
 			surrogate
@@ -29,6 +33,10 @@
 			<item>
 				<name>nodeRendererName</name>
 				<value>ResearchRootNode</value>
+			</item>
+			<item>
+				<name>firstLevelToHighlight</name>
+				<value>99</value>
 			</item>
 		</settings>
 	</settings-set>
@@ -45,7 +53,7 @@
 			</vertical>
 			<horizontal>
 				<start>30</start>
-				<step>184</step>
+				<step>164</step>
 			</horizontal>
 		</grid>
 		<grid>
@@ -245,10 +253,10 @@
 			<viaPin>
 				<RM>
 					<TM>
-						<pin>246 15</pin>
+						<pin>226 15</pin>
 					</TM>
 					<BM>
-						<pin>246 15</pin>
+						<pin>226 15</pin>
 					</BM>
 				</RM>
 			</viaPin>

@@ -38,6 +38,10 @@
 						normalMap
 						<Texture>content/Environment/hd_env_UNI_161_Zeppelin/hd_env_UNI_161_Zeppelin_02_ANM.dds</Texture>
 					</property>
+					<property>
+						ditherTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.023295 4.851033 0.194894</groupOrigin>
 			</primitiveGroup>
@@ -48,5 +52,5 @@
 		<max>1.216424 9.978816 12.927904</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>53402</geometrySize>
+	<geometrySize>53594</geometrySize>
 </root>

@@ -2822,7 +2822,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>9500</maxLoad>
 			<terrainResistance>
 				1.5 1.6 2.2
 				<!--BW_String-->
@@ -4426,7 +4425,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>11000</maxLoad>
 			<terrainResistance>
 				1.3 1.4 2
 				<!--BW_String-->
@@ -6024,7 +6022,7 @@
 	<turrets0>
 		<Turret_1_A46_T3>
 			<userString>#usa_vehicles:Turret_1_A46_T3</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>2</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -6220,7 +6218,7 @@
 		</Turret_1_A46_T3>
 		<Turret_2_A46_T3>
 			<userString>#usa_vehicles:Turret_2_A46_T3</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>2</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -6268,16 +6266,19 @@
 							15.9
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_1>
 						<armor_2>
 							12.7
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_2>
 						<armor_3>
 							6.4
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_3>
 						<gun>15</gun>
 					</armor>
@@ -6420,7 +6421,7 @@
 		</Turret_2_A46_T3>
 		<Turret_3_A46_T3>
 			<userString>#usa_vehicles:Turret_3_A46_T3</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>2</level>
 			<price>100</price>
 			<notInShop>true</notInShop>

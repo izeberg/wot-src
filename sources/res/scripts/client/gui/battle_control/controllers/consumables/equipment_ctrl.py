@@ -340,6 +340,12 @@ class _EquipmentItem(object):
     def isLocked(self):
         return self._isLocked
 
+    def showMinimapMarker(self):
+        return True
+
+    def showMarker(self):
+        return True
+
 
 class _RefillEquipmentItem(object):
     _sessionProvider = dependency.descriptor(IBattleSessionProvider)
@@ -543,13 +549,16 @@ class _OrderItem(_TriggerItem):
             result, error = super(_OrderItem, self).canActivate(entityName, avatar)
             if result:
                 currentTime = BigWorld.time()
-                if currentTime - _OrderItem._lastActivationTime > _OrderItem._ACTIVATION_COOLDOWN:
-                    _OrderItem._lastActivationTime = currentTime
-                else:
+                if currentTime - _OrderItem._lastActivationTime <= _OrderItem._ACTIVATION_COOLDOWN:
                     _logger.debug('Attempt to use Arcade equipments simultaneously!')
-                    return (False, None)
+                    return (
+                     False, None)
             return (
              result, error)
+
+    def activate(self, entityName=None, avatar=None):
+        _OrderItem._lastActivationTime = BigWorld.time()
+        super(_OrderItem, self).activate(entityName, avatar)
 
     def update(self, quantity, stage, timeRemaining, totalTime):
         self.updateMapCase(stage)

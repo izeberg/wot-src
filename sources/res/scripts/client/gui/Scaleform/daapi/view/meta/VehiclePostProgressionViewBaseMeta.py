@@ -5,6 +5,9 @@ class VehiclePostProgressionViewBaseMeta(View):
     def demountAllPairs(self):
         self._printOverrideError('demountAllPairs')
 
+    def onClose(self):
+        self._printOverrideError('onClose')
+
     def as_setVehicleTitleS(self, vo):
         if self._isDAAPIInited():
             return self.flashObject.as_setVehicleTitle(vo)
@@ -16,7 +19,3 @@ class VehiclePostProgressionViewBaseMeta(View):
     def as_showS(self):
         if self._isDAAPIInited():
             return self.flashObject.as_show()
-
-    def as_onEscPressedS(self):
-        if self._isDAAPIInited():
-            return self.flashObject.as_onEscPressed()

@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from battle_royale.gui.impl.gen.view_models.views.lobby.tooltips.reward_points_place_model import RewardPointsPlaceModel
 
 class LeaderboardRewardTooltipModel(ViewModel):
@@ -26,7 +25,7 @@ class LeaderboardRewardTooltipModel(ViewModel):
 
     @staticmethod
     def getBattleModesType():
-        return RewardPointsPlaceModel
+        return Array[RewardPointsPlaceModel]
 
     def _initialize(self):
         super(LeaderboardRewardTooltipModel, self)._initialize()

@@ -7,6 +7,10 @@ package net.wg.gui.notification.constants
       
       private static const SUBMIT:String = "submit";
       
+      private static const SUBMIT_GRAY:String = "submitGray";
+      
+      private static const SUBMIT_GHOST:String = "submitGhost";
+      
       private static const CANCEL:String = "cancel";
       
       private static const INFO:String = "info";
@@ -30,6 +34,12 @@ package net.wg.gui.notification.constants
                break;
             case INFO:
                _loc2_ = Linkages.GHOST_BUTTON_SLIM;
+               break;
+            case SUBMIT_GRAY:
+               _loc2_ = Linkages.BUTTON_SMALL_GRAY;
+               break;
+            case SUBMIT_GHOST:
+               _loc2_ = Linkages.GHOST_BUTTON;
                break;
             default:
                DebugUtils.LOG_ERROR("Type of button is not valid.",param1);

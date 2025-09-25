@@ -117,24 +117,54 @@ msgstr "Создать взвод"
 
 msgid "headerButton/tooltips/battleRoyaleSquad/body"
 msgstr ""
-"Создание формирования из 2 игроков для совместной игры в режиме «Стальной "
-"охотник»."
+"Играйте во взводе с другом. Сражайтесь командой против девяти взводов-"
+"соперников."
 
 msgid "headerButton/tooltips/battleRoyaleSquad/header"
 msgstr "Взвод"
 
+msgid "headerButton/tooltips/comp7BanIsSet/body"
+msgstr "Вы временно заблокированы в режиме. Игра во взводе недоступна."
+
+msgid "headerButton/tooltips/comp7LightNoSuitableVehicles/body"
+msgstr ""
+"Вы не сможете создать взвод или присоединиться к существующему. У вас в "
+"Ангаре должна быть хотя бы одна машина %(level)s уровня, подходящая для "
+"режима."
+
+msgid "headerButton/tooltips/comp7LightRestriction/body"
+msgstr "Создание взводов временно недоступно."
+
+msgid "headerButton/tooltips/comp7LightRestriction/header"
+msgstr "Игра во взводе недоступна"
+
+msgid "headerButton/tooltips/comp7LightSquad/body"
+msgstr ""
+"Вы можете создать взвод или присоединиться к существующему. В «Натиске Лайт»"
+" доступны взводы из 2 и 7 игроков."
+
+msgid "headerButton/tooltips/comp7LightSquad/header"
+msgstr "Взвод"
+
+msgid "headerButton/tooltips/comp7NoSuitableVehicles/body"
+msgstr ""
+"Вы не можете создать взвод или присоединиться к существующему. У вас в "
+"Ангаре нет подходящей техники %(level)s уровня."
+
 msgid "headerButton/tooltips/comp7QualificationSquad/body"
 msgstr ""
-"До завершения квалификации вы не сможете создавать или присоединяться к взводам.\n"
-"После её завершения вам станут доступны взводы из 2 и 7 игроков."
+"После завершения квалификации вы сможете играть во взводе из 2 и 7 игроков."
 
-msgid "headerButton/tooltips/comp7QualificationSquad/header"
+msgid "headerButton/tooltips/comp7Restriction/body"
+msgstr "Невозможно создать взвод."
+
+msgid "headerButton/tooltips/comp7Restriction/header"
 msgstr "Игра во взводе недоступна"
 
 msgid "headerButton/tooltips/comp7Squad/body"
 msgstr ""
-"Вы можете создать взвод или присоединиться к существующему. В Натиске "
-"доступны взводы из 2 и 7 игроков."
+"Создайте взвод или присоединитесь к существующему. В «Натиске Лайт» доступны"
+" взводы из 2 и 7 игроков."
 
 msgid "headerButton/tooltips/comp7Squad/header"
 msgstr "Взвод"
@@ -189,8 +219,8 @@ msgstr "Поиск"
 
 msgid "headerButton/tooltips/squad/body"
 msgstr ""
-"Создание формирования из 2–3 игроков для совместной игры в Случайных боях.\n"
-"• Типы боёв: Стандартный бой, Штурм, Встречный бой, Генеральное сражение, а также Линия фронта, когда она доступна."
+"Создайте формирование из 2–3 игроков для совместной игры в Случайных боях и "
+"на «Линии фронта» (когда она доступна)."
 
 msgid "headerButton/tooltips/squad/header"
 msgstr "Взвод"

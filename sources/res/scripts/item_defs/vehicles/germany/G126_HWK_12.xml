@@ -102,7 +102,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>6022</weight>
-		<maxHealth>800</maxHealth>
+		<maxHealth>1000</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1986,14 +1986,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>12500</maxLoad>
 			<terrainResistance>
-				1 1.1 2
+				0.9 1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>12500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>38</rotationSpeed>
+			<rotationSpeed>58</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.1
@@ -4093,14 +4092,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				0.9 1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>12500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>44</rotationSpeed>
+			<rotationSpeed>64</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.1
@@ -6211,7 +6209,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1800</weight>
-			<maxHealth>200</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -6273,11 +6271,11 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						8.2
+						7.8
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.2
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -7391,7 +7389,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>300</maxHealth>
+			<maxHealth>250</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -8576,15 +8574,6 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<AN-GRC-4>
-			shared
-			<unlocks>
-				<radio>
-					AN-GRC-7
-					<cost>9100</cost>
-				</radio>
-			</unlocks>
-		</AN-GRC-4>
 		<AN-GRC-7>shared</AN-GRC-7>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -8609,16 +8598,13 @@
 					<axleCount>5</axleCount>
 					<grounds>
 						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
+							<rollingFriction>0.191188</rollingFriction>
 						</soft>
 						<medium>
-							<rollingFriction>0.110688</rollingFriction>
+							<rollingFriction>0.100625</rollingFriction>
 						</medium>
 						<firm>
-							<rollingFriction>0.100625</rollingFriction>
+							<rollingFriction>0.090562</rollingFriction>
 						</firm>
 					</grounds>
 				</Chassis_G126_HWK_12>

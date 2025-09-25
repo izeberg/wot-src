@@ -1,5 +1,5 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.wrappers.user_list_model import UserListModel
 from gui.impl.gen.view_models.views.lobby.customization.progressive_items_view.item_model import ItemModel
 from gui.impl.gen.view_models.views.lobby.customization.progressive_items_view.progression_cases_tutorial_model import ProgressionCasesTutorialModel

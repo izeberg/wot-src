@@ -10,27 +10,6 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "dailyExperiencePage/backBtnAddLabel"
-msgstr "К СТАТУСУ АККАУНТА"
-
-msgid "dailyExperiencePage/bonus/countOfExp"
-msgstr "Количество оставшихся применений: {expCount}"
-
-msgid "dailyExperiencePage/bonus/description"
-msgstr ""
-"Применяйте управляемый бонус к опыту в последнем победном Случайном бою на "
-"выбранной машине и получайте ещё больше опыта! Данный бонус можно применить "
-"только к последнему победному бою на выбранной машине, а сделать это можно в"
-" окне послебоевой статистики. Управляемый бонус можно применять как вместе с"
-" ежедневным бонусом х2 (или с другим множителем), так и без него. В сутки "
-"можно применить только {maxExpCount} бонуса(-ов)."
-
-msgid "dailyExperiencePage/bonus/title"
-msgstr "Управляемый бонус к опыту"
-
-msgid "dailyExperiencePage/moreInfoBtn"
-msgstr "Подробнее"
-
 msgid "dashboard/header/clanInfo/role"
 msgstr "{role} в клане"
 
@@ -60,29 +39,26 @@ msgstr "Исключённые карты"
 
 msgid "mapsBlacklist/infoTooltip/desc"
 msgstr ""
-"Для базового аккаунта доступно исключение из ротации одной карты. Владельцы "
-"Танкового премиум аккаунта или подписки WoT Plus могут исключить одну "
-"дополнительную карту."
+"Вы можете исключить из ротации нежелательную карту. Танковый премиум аккаунт"
+" позволяет исключить из ротации дополнительную карту, а подписка WoT Plus "
+"ещё %(mapCount)s. Если ваша подписка или Танковый премиум истекут, карты "
+"вернутся в ротацию."
 
 msgid "mapsBlacklist/infoTooltip/header"
 msgstr "Исключённые карты"
 
 msgid "mapsBlacklist/infoTooltip/highlightDesc"
-msgstr ""
-"• Обратите внимание: карты исключаются только для Случайных боёв и только "
-"для типа «Стандартный бой»."
+msgstr "Эти карты исключаются только из Случайных боёв."
 
 msgid "mapsBlacklist/infoTooltip/rule1"
-msgstr ""
-"• Карту нельзя заменить в течение {maxCooldownTimeStr} после исключения."
+msgstr "Исключённую карту можно заменить каждые %(maxCooldownTimeStr)s."
 
 msgid "mapsBlacklist/infoTooltip/rule2"
-msgstr "• Исключение карт действует только для техники IV уровня и выше."
+msgstr "Механика доступна для техники IV уровня и выше."
 
 msgid "mapsBlacklist/infoTooltip/rule3"
 msgstr ""
-"• При игре во взводе исключёнными будут считаться карты, которые выбрал "
-"командир взвода."
+"При игре взводом из ротации исключаются только карты, выбранные командиром."
 
 msgid "mapsBlacklist/mapName"
 msgstr "«{mapName}»"
@@ -126,9 +102,7 @@ msgid "mapsBlacklist/selectDialog/description"
 msgstr "Изменить свой выбор можно будет через {cooldownStr}."
 
 msgid "mapsBlacklist/selectDialog/header"
-msgstr ""
-"Исключить карту «{mapNameStr}» из Случайных боёв (для типа «Стандартный "
-"бой»)?"
+msgstr "Исключить карту «{mapNameStr}» из Случайных боёв?"
 
 msgid "mapsBlacklist/selectDialog/okButton"
 msgstr "Исключить"
@@ -161,9 +135,7 @@ msgid "mapsBlacklist/smallSlot/active/label"
 msgstr "Не выбрана"
 
 msgid "mapsBlacklist/smallSlotCardTooltip/active/body"
-msgstr ""
-"Нажмите, чтобы выбрать карту для исключения из Случайных боёв (для типа "
-"Стандартный бой)."
+msgstr "Нажмите, чтобы выбрать карту для исключения из Случайных боёв."
 
 msgid "mapsBlacklist/smallSlotCardTooltip/active/header"
 msgstr "Карта не выбрана"
@@ -188,17 +160,13 @@ msgid "mapsBlacklist/smallSlotCardTooltip/disabled/header"
 msgstr "Слот недоступен"
 
 msgid "mapsBlacklist/smallSlotTooltip/active/body"
-msgstr ""
-"Выберите карту из представленного ниже списка, чтобы исключить её из "
-"Случайных боёв (для типа «Стандартный бой»)."
+msgstr "Выберите карту из списка ниже, чтобы исключить её из Случайных боёв."
 
 msgid "mapsBlacklist/smallSlotTooltip/active/header"
 msgstr "Карта не выбрана"
 
 msgid "mapsBlacklist/smallSlotTooltip/change/body"
-msgstr ""
-"Выберите карту из представленного ниже списка, чтобы исключить её из "
-"Случайных боёв (для типа «Стандартный бой»)."
+msgstr "Выберите карту из списка ниже, чтобы исключить её из Случайных боёв."
 
 msgid "mapsBlacklist/smallSlotTooltip/change/header"
 msgstr "Доступна замена карты"
@@ -221,22 +189,36 @@ msgid "mapsBlacklistConfim/cancel"
 msgstr "Отмена"
 
 msgid "mapsBlacklistConfim/message"
-msgstr "Изменить свой выбор можно будет через {cooldownTimeStr}."
+msgstr ""
+"Изменить свой выбор можно будет через "
+"{whiteSpanish_Open}%(cooldownTimeStr)s{whiteSpanish_Close}."
+
+msgid "mapsBlacklistConfim/replace"
+msgstr "Сменить"
 
 msgid "mapsBlacklistConfim/submit"
 msgstr "Исключить"
 
 msgid "mapsBlacklistConfim/title"
-msgstr ""
-"Исключить карту «{mapName}» из Случайных боёв (для типа «Стандартный бой»)?"
+msgstr "Исключить карту «%(mapName)s» из Случайных боёв?"
 
 msgid "mapsBlacklistReplace/message"
 msgstr ""
-"Выбранная карта будет заменена на карту {mapName}. Изменить свой выбор можно"
-" будет через {cooldownTimeStr}."
+"Выбранная карта будет заменена на карту "
+"«{whiteSpanish_Open}%(mapName)s{whiteSpanish_Close}». Изменить свой выбор "
+"можно будет через %(cooldownTimeStr)s."
 
 msgid "mapsBlacklistReplace/title"
 msgstr "Какую из карт вы хотите заменить?"
+
+msgid "mapsBlacklistReplaceOne/message"
+msgstr ""
+"Эта карта будет заменена на карту "
+"«{whiteSpanish_Open}%(mapName)s{whiteSpanish_Close}». Изменить свой выбор "
+"можно будет через %(cooldownTimeStr)s."
+
+msgid "mapsBlacklistReplaceOne/title"
+msgstr "Вы хотите заменить эту карту?"
 
 msgid "parentControlCard/infoPopover/body"
 msgstr ""

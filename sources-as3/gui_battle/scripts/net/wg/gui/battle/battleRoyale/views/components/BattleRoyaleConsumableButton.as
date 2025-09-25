@@ -449,10 +449,6 @@ package net.wg.gui.battle.battleRoyale.views.components
          enabled = !this._isReplay;
       }
       
-      public function set noBack(param1:Boolean) : void
-      {
-      }
-      
       public function set activated(param1:Boolean) : void
       {
          if(param1 == this._isActivated)

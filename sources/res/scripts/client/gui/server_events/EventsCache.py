@@ -4,12 +4,12 @@ import typing, BigWorld, motivation_quests, customization_quests, nations, stati
 from BWUtil import AsyncReturn
 from Event import Event, EventManager
 from PlayerEvents import g_playerEvents
-from constants import EVENT_CLIENT_DATA, EVENT_TYPE, LOOTBOX_TOKEN_PREFIX, OFFER_TOKEN_PREFIX, TWITCH_TOKEN_PREFIX
+from constants import EVENT_CLIENT_DATA, EVENT_TYPE
 from debug_utils import LOG_DEBUG
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
 from gui.server_events import caches as quests_caches
 from gui.server_events.event_items import MotiveQuest, Quest, ServerEventAbstract, createAction, createQuest
-from gui.server_events.events_helpers import getEventsData, getRerollTimeout, isBattleRoyale, isDailyEpic, isBattleMattersQuestID, isMapsTraining, isMarathon, isPremium, isRankedDaily, isRankedPlatform, isFunRandomQuest
+from gui.server_events.events_helpers import getEventsData, getRerollTimeout, isBattleRoyale, isDailyEpic, isBattleMattersQuestID, isMapsTraining, isMarathon, isPremium, isRankedDaily, isRankedPlatform, isSuitableForPM, getWeeklyRerollTimeout
 from gui.server_events.formatters import getLinkedActionID
 from gui.server_events.modifiers import ACTION_MODIFIER_TYPE, ACTION_SECTION_TYPE, clearModifiersCache
 from gui.server_events.personal_missions_cache import PersonalMissionsCache
@@ -19,11 +19,10 @@ from gui.shared.system_factory import collectQuestBuilders
 from gui.shared.utils.requesters.QuestsProgressRequester import QuestsProgressRequester
 from helpers import dependency, time_utils
 from items import getTypeOfCompactDescr
-from items.tankmen import RECRUIT_TMAN_TOKEN_PREFIX
-from personal_missions import PERSONAL_MISSIONS_XML_PATH
+from personal_missions import PERSONAL_MISSIONS_XML_PATH, PM_BRANCH
 from quest_cache_helpers import readQuestsFromFile
 from shared_utils import first, findFirst
-from skeletons.gui.game_control import IBattleRoyaleController, IEpicBattleMetaGameController, IRankedBattlesController, IFunRandomController
+from skeletons.gui.game_control import IBattleRoyaleController, IEpicBattleMetaGameController, IRankedBattlesController
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
@@ -32,10 +31,6 @@ from wg_async import wg_async, wg_await, await_callback
 if typing.TYPE_CHECKING:
     from typing import Optional, Dict, Callable, Union
     from gui.server_events.event_items import DailyEpicTokenQuest, DailyQuest
-NOT_FOR_PERSONAL_MISSIONS_TOKENS = (LOOTBOX_TOKEN_PREFIX,
- RECRUIT_TMAN_TOKEN_PREFIX,
- TWITCH_TOKEN_PREFIX,
- OFFER_TOKEN_PREFIX)
 _ProgressiveReward = namedtuple('_ProgressiveReward', ('currentStep', 'probability',
                                                        'maxSteps'))
 
@@ -53,6 +48,21 @@ class _DailyQuestsData(object):
 
     def isRerollInCooldown(self):
         return self.getNextAvailableRerollTimestamp() > time_utils.getCurrentLocalServerTimestamp()
+
+
+class _WeeklyQuestsData(object):
+
+    def __init__(self, rerolls=None, **kwargs):
+        self._rerolls = rerolls
+
+    @property
+    def rerolls(self):
+        return self._rerolls
+
+    def getNextAvailableRerollTimestamp(self, id):
+        if id not in self._rerolls or not self._rerolls[id]:
+            return 0
+        return self._rerolls[id] + getWeeklyRerollTimeout()
 
 
 def _motiveQuestMaker(qID, qData, progress):
@@ -82,9 +92,10 @@ class EventsCache(IEventsCache):
     rankedController = dependency.descriptor(IRankedBattlesController)
     __epicController = dependency.descriptor(IEpicBattleMetaGameController)
     __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
-    __funRandomController = dependency.descriptor(IFunRandomController)
 
     def __init__(self):
+        self.__isForPMSync = True
+        self.__needCommonSync = True
         self.__isStarted = False
         self.__waitForSync = False
         self.__invalidateCbID = None
@@ -101,6 +112,7 @@ class EventsCache(IEventsCache):
         self.__prefetcher = Prefetcher(self)
         self.onSyncStarted = Event(self.__em)
         self.onSyncCompleted = Event(self.__em)
+        self.onPMSyncCompleted = Event(self.__em)
         self.onProgressUpdated = Event(self.__em)
         self.onMissionVisited = Event(self.__em)
         self.onEventsVisited = Event(self.__em)
@@ -108,6 +120,7 @@ class EventsCache(IEventsCache):
         self.onPersonalQuestsVisited = Event(self.__em)
         self.__lockedQuestIds = {}
         self.__dailyQuests = None
+        self.__weeklyQuests = None
         return
 
     def init(self):
@@ -127,8 +140,10 @@ class EventsCache(IEventsCache):
         self.__isStarted = True
         self.__onLockedQuestsChanged()
         self.__onDailyQuestsInfoChange()
+        self.__onWeeklyQuestsInfoChange()
         g_playerEvents.onPMLocksChanged += self.__onLockedQuestsChanged
         g_playerEvents.onDailyQuestsInfoChange += self.__onDailyQuestsInfoChange
+        g_playerEvents.onWeeklyQuestsInfoChange += self.__onWeeklyQuestsInfoChange
         self.lobbyContext.getServerSettings().onServerSettingsChange += self.__onServerSettingsChange
 
     def stop(self, isDisconnected=False):
@@ -136,8 +151,10 @@ class EventsCache(IEventsCache):
             self.__questsProgressRequester.clear()
         self.__isStarted = False
         self.__dailyQuests = None
+        self.__weeklyQuests = None
         self.lobbyContext.getServerSettings().onServerSettingsChange -= self.__onServerSettingsChange
         g_playerEvents.onDailyQuestsInfoChange -= self.__onDailyQuestsInfoChange
+        g_playerEvents.onWeeklyQuestsInfoChange -= self.__onWeeklyQuestsInfoChange
         g_playerEvents.onPMLocksChanged -= self.__onLockedQuestsChanged
         self.__clearQuestsItemsCache()
         self.__actions2quests.clear()
@@ -174,6 +191,10 @@ class EventsCache(IEventsCache):
     def dailyQuests(self):
         return self.__dailyQuests
 
+    @property
+    def weeklyQuests(self):
+        return self.__weeklyQuests
+
     def getLockedQuestTypes(self, branch):
         questIDs = set()
         result = set()
@@ -188,6 +209,10 @@ class EventsCache(IEventsCache):
 
         return result
 
+    def getLockedPersonalMissions(self):
+        allQuests = self.getPersonalMissions().getAllQuests(PM_BRANCH.ALL)
+        return {allQuests[lockedQuestID] for lockedList in self.__lockedQuestIds.values() for lockedQuestID in lockedList if lockedQuestID in allQuests}
+
     @wg_async
     def update(self, diff=None, callback=None):
         clearModifiersCache()
@@ -199,17 +224,13 @@ class EventsCache(IEventsCache):
             raise AsyncReturn(False)
         isNeedToInvalidate = True
         isNeedToClearItemsCaches = False
-        isQPUpdated = False
+        self.__isForPMSync = False
+        self.__needCommonSync = True
         if diff is not None:
-            isQPUpdated = 'quests' in diff or 'potapovQuests' in diff or 'pm2_progress' in diff
-            if not isQPUpdated and 'tokens' in diff:
-                for tokenID in diff['tokens'].iterkeys():
-                    if all(not tokenID.startswith(t) for t in NOT_FOR_PERSONAL_MISSIONS_TOKENS):
-                        isQPUpdated = True
-                        break
-
+            self.__isForPMSync, self.__needCommonSync = isSuitableForPM(diff)
             isEventsDataUpdated = ('eventsData', '_r') in diff or diff.get('eventsData', {})
-            isNeedToInvalidate = isQPUpdated or isEventsDataUpdated
+            isQuestDataUpdated = bool(diff.get('quests', {}))
+            isNeedToInvalidate = self.__needCommonSync and isQuestDataUpdated or isEventsDataUpdated
             hasVehicleUnlocks = False
             diffStats = diff.get('stats', {})
             for intCD in diffStats.get('unlocks', set()) | diffStats.get(('unlocks',
@@ -225,7 +246,7 @@ class EventsCache(IEventsCache):
         else:
             if isNeedToClearItemsCaches:
                 self.__clearQuestsItemsCache()
-            if isQPUpdated:
+            if self.__isForPMSync:
                 self.__personalMissions.update(self, diff)
         return
 
@@ -254,7 +275,6 @@ class EventsCache(IEventsCache):
     def getAdvisableQuests(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
         isRankedSeasonOff = self.rankedController.getCurrentSeason() is None
-        isFunRandomOff = not self.__funRandomController.subModesInfo.isAvailable()
         isEpicBattleEnabled = self.__epicController.isEnabled()
 
         def userFilterFunc(q):
@@ -276,8 +296,6 @@ class EventsCache(IEventsCache):
             if isMapsTraining(qGroup):
                 return q.shouldBeShown()
             if isRankedSeasonOff and (isRankedDaily(qGroup) or isRankedPlatform(qGroup)):
-                return False
-            if isFunRandomOff and isFunRandomQuest(qID):
                 return False
             return filterFunc(q)
 
@@ -315,6 +333,14 @@ class EventsCache(IEventsCache):
             if q.getType() == EVENT_TYPE.TOKEN_QUEST and not q.isCompleted():
                 return q
 
+    def getWeeklyQuests(self, filterFunc=None):
+        result = {}
+        for qID, q in self.__getWeeklyQuestsIterator():
+            if filterFunc is None or filterFunc(q):
+                result[qID] = q
+
+        return result
+
     def getBattleQuests(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
 
@@ -328,13 +354,13 @@ class EventsCache(IEventsCache):
         svrGroups.update(self._getActionsGroups(filterFunc))
         return svrGroups
 
-    def getHiddenQuests(self, filterFunc=None):
+    def getHiddenQuests(self, filterFunc=None, makeRelations=True):
         filterFunc = filterFunc or (lambda a: True)
 
         def hiddenFilterFunc(q):
             return q.isHidden() and filterFunc(q)
 
-        return self._getQuests(hiddenFilterFunc)
+        return self._getQuests(hiddenFilterFunc, makeRelations=makeRelations)
 
     def getRankedQuests(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
@@ -363,6 +389,11 @@ class EventsCache(IEventsCache):
 
     def getEvents(self, filterFunc=None):
         svrEvents = self.getQuests(filterFunc)
+        svrEvents.update(self.getActions(filterFunc))
+        return svrEvents
+
+    def getAllEvents(self, filterFunc=None):
+        svrEvents = self.getAllQuests(filterFunc)
         svrEvents.update(self.getActions(filterFunc))
         return svrEvents
 
@@ -676,7 +707,8 @@ class EventsCache(IEventsCache):
         self.__clearCache()
         self.__clearInvalidateCallback()
         self.__waitForSync = True
-        self.onSyncStarted()
+        if self.__needCommonSync:
+            self.onSyncStarted()
         for action in self.getActions().itervalues():
             for modifier in action.getModifiers():
                 section = modifier.getSection()
@@ -730,7 +762,8 @@ class EventsCache(IEventsCache):
         self.__prefetcher.ask()
         self.__syncActionsWithQuests()
         self.__invalidateCompensations()
-        self.onSyncCompleted()
+        if self.__needCommonSync:
+            self.onSyncCompleted()
         if callback is not None:
             callback(True)
         return
@@ -782,6 +815,9 @@ class EventsCache(IEventsCache):
     def __getDailyQuestsData(self):
         return self.__getEventsData(EVENT_CLIENT_DATA.DAILY_QUESTS)
 
+    def __getWeeklyQuestsData(self):
+        return self.__getEventsData(EVENT_CLIENT_DATA.WEEKLY_QUESTS)
+
     def __getActionsData(self):
         return self.__getEventsData(EVENT_CLIENT_DATA.ACTION)
 
@@ -804,11 +840,17 @@ class EventsCache(IEventsCache):
         for qID, qData in self.__getDailyQuestsData().iteritems():
             yield (qID, self._makeQuest(qID, qData))
 
+    def __getWeeklyQuestsIterator(self):
+        for qID, qData in self.__getWeeklyQuestsData().iteritems():
+            yield (
+             qID, self._makeQuest(qID, qData))
+
     def __getCommonQuestsIterator(self):
         questsData = self.__getQuestsData()
         questsData.update(self.__getPersonalQuestsData())
         questsData.update(self.__getPersonalMissionsHiddenQuests())
         questsData.update(self.__getDailyQuestsData())
+        questsData.update(self.__getWeeklyQuestsData())
         for qID, qData in questsData.iteritems():
             yield (qID, self._makeQuest(qID, qData))
 
@@ -867,6 +909,9 @@ class EventsCache(IEventsCache):
 
     def __onDailyQuestsInfoChange(self):
         self.__dailyQuests = _DailyQuestsData(**BigWorld.player().dailyQuests)
+
+    def __onWeeklyQuestsInfoChange(self):
+        self.__weeklyQuests = _WeeklyQuestsData(BigWorld.player().weeklyQuests.get('rerolls', {}))
 
     def __onServerSettingsChange(self, *args, **kwargs):
         self.__personalMissions.updateDisabledStateForQuests()

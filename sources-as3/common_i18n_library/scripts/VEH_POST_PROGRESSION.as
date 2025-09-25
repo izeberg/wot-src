@@ -83,8 +83,6 @@ package
       
       public static const VEHPOSTPROGRESSIONVIEW_BUTTON_PREVIEW:String = "#veh_post_progression:vehPostProgressionView/button/preview";
       
-      public static const VEHPOSTPROGRESSIONVIEW_ABOUT:String = "#veh_post_progression:vehPostProgressionView/about";
-      
       public static const VEHPOSTPROGRESSIONVIEW_SHOWVEHPARAMS:String = "#veh_post_progression:vehPostProgressionView/showVehParams";
       
       public static const VEHPOSTPROGRESSIONVIEW_HIDEVEHPARAMS:String = "#veh_post_progression:vehPostProgressionView/hideVehParams";

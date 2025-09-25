@@ -40,6 +40,9 @@ msgstr "Редкий облик"
 msgid "customization/attachment"
 msgstr "3D-объект"
 
+msgid "customization/attachment/rarity"
+msgstr "%(rarity)s 3D-объект"
+
 msgid "customization/camouflage"
 msgstr "Камуфляж"
 
@@ -204,6 +207,21 @@ msgstr "Осколочно-фугасный"
 
 msgid "shell/kinds/HOLLOW_CHARGE"
 msgstr "Кумулятивный"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING"
+msgstr "БРОНЕБОЙНЫЙ"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING_CR"
+msgstr "ПОДКАЛИБЕРНЫЙ"
+
+msgid "shell/kinds/upperCase/ARMOR_PIERCING_HE"
+msgstr "БРОНЕБОЙНЫЙ КАМОРНЫЙ"
+
+msgid "shell/kinds/upperCase/HIGH_EXPLOSIVE"
+msgstr "ОСКОЛОЧНО-ФУГАСНЫЙ"
+
+msgid "shell/kinds/upperCase/HOLLOW_CHARGE"
+msgstr "КУМУЛЯТИВНЫЙ"
 
 msgid "shell/kindsAbbreviation/ARMOR_PIERCING"
 msgstr "ББ"

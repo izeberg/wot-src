@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_107_A15_Tank_builder_set/normal/lod2/Cus_107_A15_Tank_builder_set</nodefullVisual>
+	<parent>content/3D_Customization/Cus_107_A15_Tank_builder_set/normal/lod3/Cus_107_A15_Tank_builder_set</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.408677 -0.002353 -0.531243</min>
+		<max>0.055798 0.488648 0.531243</max>
+	</visibilityBox>
+</root>

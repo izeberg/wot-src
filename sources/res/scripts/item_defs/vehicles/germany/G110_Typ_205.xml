@@ -114,7 +114,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>83500</weight>
-		<maxHealth>1840</maxHealth>
+		<maxHealth>1920</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -2176,9 +2176,8 @@
 				<rightTrack>50</rightTrack>
 			</armor>
 			<weight>30000</weight>
-			<maxLoad>171000</maxLoad>
 			<terrainResistance>
-				2 2.1 3.4
+				1.8 1.9 3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>170000</brakeForce>
@@ -4171,7 +4170,6 @@
 				<rightTrack>50</rightTrack>
 			</armor>
 			<weight>30000</weight>
-			<maxLoad>180000</maxLoad>
 			<terrainResistance>
 				1.8 1.9 3
 				<!--BW_String-->
@@ -6183,7 +6181,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>50000</weight>
-			<maxHealth>460</maxHealth>
+			<maxHealth>480</maxHealth>
 			<rotationSpeed>15</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -6203,12 +6201,12 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_128mm_L50A>
+				<_128mm_Kw_K_L_50>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<unlocks>
 						<gun>
-							_128mm_KwK44_L55
+							_128mm_Kw_K_44_L_55_170
 							<cost>63000</cost>
 						</gun>
 					</unlocks>
@@ -6236,12 +6234,12 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.4
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>14</reloadTime>
+					<reloadTime>13</reloadTime>
 					<aimingTime>
-						2.7
+						2.2
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -6341,8 +6339,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_128mm_L50A>
-				<_128mm_KwK44_L55>
+				</_128mm_Kw_K_L_50>
+				<_128mm_Kw_K_44_L_55_170>
 					shared
 					<maxAmmo>50</maxAmmo>
 					<unlocks>
@@ -6481,7 +6479,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_128mm_KwK44_L55>
+				</_128mm_Kw_K_44_L_55_170>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G110_Typ_205/normal/lod0/Turret_01.model</undamaged>
@@ -7533,62 +7531,53 @@
 		</Turret_1_G110_Typ_205>
 	</turrets0>
 	<engines>
-		<Daimler-Benz_DB-603>
+		<DB_603_mit_mechanischer_Aufladung>
 			shared
 			<unlocks>
 				<engine>
-					Porsche_Typ_220
+					DB_603_A1
 					<cost>51500</cost>
 				</engine>
 			</unlocks>
-		</Daimler-Benz_DB-603>
-		<Porsche_Typ_220>shared</Porsche_Typ_220>
+		</DB_603_mit_mechanischer_Aufladung>
+		<DB_603_A1>shared</DB_603_A1>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Daimler-Benz_DB-603>
-					<smplEnginePower>1400</smplEnginePower>
+				<DB_603_mit_mechanischer_Aufladung>
+					<smplEnginePower>1700</smplEnginePower>
 					<smplFwMaxSpeed>20</smplFwMaxSpeed>
-				</Daimler-Benz_DB-603>
-				<Porsche_Typ_220>
-					<smplEnginePower>1750</smplEnginePower>
+				</DB_603_mit_mechanischer_Aufladung>
+				<DB_603_A1>
+					<smplEnginePower>1850</smplEnginePower>
 					<smplFwMaxSpeed>20</smplFwMaxSpeed>
-				</Porsche_Typ_220>
+				</DB_603_A1>
 			</engines>
 			<chassis>
 				<Chassis_G110_Typ_205>
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.2
+								0.1691
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.14
+								0.1047
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.13
+								0.0886
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>
@@ -7623,12 +7612,12 @@
 	</physics>
 	<clientAdjustmentFactors>
 		<guns>
-			<_128mm_L50A>
+			<_128mm_Kw_K_L_50>
 				<delta>
 					1.06901408
 					<!--BW_String-->
 				</delta>
-			</_128mm_L50A>
+			</_128mm_Kw_K_L_50>
 		</guns>
 		<chassis>
 			<Chassis_G110_Typ_205>
@@ -7645,18 +7634,18 @@
 			</Chassis_G110_Typ_205_2>
 		</chassis>
 		<engines>
-			<Daimler-Benz_DB-603>
+			<DB_603_mit_mechanischer_Aufladung>
 				<bravo>
 					317.1843
 					<!--BW_String-->
 				</bravo>
-			</Daimler-Benz_DB-603>
-			<Porsche_Typ_220>
+			</DB_603_mit_mechanischer_Aufladung>
+			<DB_603_A1>
 				<bravo>
 					396.4804
 					<!--BW_String-->
 				</bravo>
-			</Porsche_Typ_220>
+			</DB_603_A1>
 		</engines>
 	</clientAdjustmentFactors>
 	<effects>

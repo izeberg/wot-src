@@ -1,5 +1,4 @@
 import logging, random
-from functools import partial
 from itertools import chain
 import typing, nations
 from account_helpers import AccountSettings
@@ -16,7 +15,7 @@ from gui.Scaleform.locale.RES_SHOP import RES_SHOP
 from gui.Scaleform.locale.STORAGE import STORAGE
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.shared.event_dispatcher import showStorage, showStylePreview, showStyleProgressionPreview
+from gui.shared.event_dispatcher import showStylePreview, showStyleProgressionPreview
 from gui.shared.formatters import getItemPricesVO, getMoneyVO, icons, text_styles
 from gui.shared.gui_items import GUI_ITEM_TYPE, KPI, getKpiValueString
 from gui.shared.gui_items.Vehicle import Vehicle, getTypeUserName, getVehicleStateIcon, getShopVehicleIconPath
@@ -252,11 +251,12 @@ def getStorageItemIcon(item, size=STORE_CONSTANTS.ICON_SIZE_MEDIUM):
     return icon
 
 
-def dummyFormatter(label, btnLabel='', btnTooltip=''):
-    return {'iconSource': RES_ICONS.MAPS_ICONS_LIBRARY_ALERTBIGICON, 
+def dummyFormatter(label, iconSource=RES_ICONS.MAPS_ICONS_LIBRARY_ALERTBIGICON, btnLabel='', btnTooltip='', smallIcon=False):
+    return {'iconSource': iconSource, 
        'htmlText': text_styles.main(_ms(label)), 
        'alignCenter': True, 
        'inlineIcon': True, 
+       'smallIcon': smallIcon, 
        'btnVisible': bool(btnLabel), 
        'btnLabel': btnLabel, 
        'btnTooltip': btnTooltip, 
@@ -407,7 +407,7 @@ def customizationPreview(itemCD, itemsCache=None, vehicleCD=None):
     styleInfo = itemsCache.items.getItemByCD(itemCD)
     if vehicleCD is None:
         vehicleCD = getVehicleCDForStyle(styleInfo, itemsCache=itemsCache)
-    (showStyleProgressionPreview if styleInfo.isProgression else showStylePreview)(vehicleCD, styleInfo, styleInfo.getDescription(), partial(showStorage, defaultSection=STORAGE_CONSTANTS.CUSTOMIZATION), backport.text(R.strings.vehicle_preview.header.backBtn.descrLabel.storage()))
+    (showStyleProgressionPreview if styleInfo.isProgression else showStylePreview)(vehicleCD, styleInfo, styleInfo.getDescription())
     return
 
 

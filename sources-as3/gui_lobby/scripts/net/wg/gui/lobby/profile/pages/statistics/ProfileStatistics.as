@@ -109,11 +109,15 @@ package net.wg.gui.lobby.profile.pages.statistics
       override protected function applyResizing() : void
       {
          super.applyResizing();
+         if(!isWindowed)
+         {
+            y = Math.max(paddings.y - TOP_PADDING,0);
+         }
          var _loc1_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1280;
          var _loc2_:MovieClip = this.headerContainer.image.separator;
          this.bodyContainer.y = this.headerContainer.y + _loc2_.y + _loc2_.height - HEADER_SEPARATOR_BOTTOM_GAP + BODY_AND_HEADER_SEPARATOR_GAP;
          var _loc3_:int = Math.min(ProfileConstants.MIN_APP_WIDTH,currentDimension.x) >> 0;
-         this.bodyContainer.setAvailableSize(_loc3_,currentDimension.y);
+         this.bodyContainer.setAvailableSize(_loc3_,currentDimension.y - y - paddings.height);
          this.headerLabel.x = _loc3_ - this.headerLabel.width >> 1;
          this.headerLabel.y = !!isWindowed ? Number(HEADER_Y) : Number(HEADER_Y_WINDOW);
          var _loc4_:Number = isWindowed || !_loc1_ ? Number(1) : Number(SCALE_SMALL);

@@ -59,9 +59,13 @@ msgid "progressionView/card/points"
 msgstr ""
 "%(whiteSpanish_Open)s%(current)s/%(whiteSpanish_Close)s%(par_Open)s%(total)s%(par_Close)s"
 
+msgid "progressionView/seasonRange"
+msgstr "%(startDate)s – %(endDate)s"
+
 msgid "progressionView/subTitle/completed"
 msgstr ""
-"Зарабатывайте стальные печати и приобретайте стили Стального охотника."
+"Прогрессия завершена. Продолжайте играть в режиме «Стальной охотник», чтобы "
+"заработать ещё больше наград."
 
 msgid "progressionView/subTitle/endEvent"
 msgstr "Событие завершено. Задачи и прогрессия недоступны."
@@ -70,12 +74,6 @@ msgid "progressionView/subTitle/inProgress"
 msgstr ""
 "За выполнение боевых задач вы получаете очки прогрессии.\n"
 "На количество получаемых очков также влияет ваша позиция по итогам боя. %(infotip)s"
-
-msgid "progressionView/title/completed"
-msgstr "ПУТЬ ОХОТНИКА ЗАВЕРШЁН!"
-
-msgid "progressionView/title/inProgress"
-msgstr "ПУТЬ ОХОТНИКА"
 
 msgid "quests/bonuses/progressionToken/body"
 msgstr ""

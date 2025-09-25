@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
 from fun_random.gui.impl.lobby.common.fun_view_helpers import getConditionText

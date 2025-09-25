@@ -1,0 +1,116 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "card/about_vehicle"
+msgstr "О машине"
+
+msgid "card/unknown"
+msgstr "Неизвестная машина"
+
+msgid "defaultName"
+msgstr "Новый плейлист {{count}}"
+
+msgid "dialogs/delete/button/cancel"
+msgstr "Отменить"
+
+msgid "dialogs/delete/button/submit"
+msgstr "Удалить"
+
+msgid "dialogs/delete/title"
+msgstr "Удалить плейлист «{{playlistTitle}}»?"
+
+msgid "dialogs/import/button/submit"
+msgstr "Импортировать"
+
+msgid "dialogs/import/input/alert"
+msgstr "Неверный код"
+
+msgid "dialogs/import/input/message"
+msgstr "Код плейлиста"
+
+msgid "dialogs/import/title"
+msgstr "Импортировать плейлист:"
+
+msgid "dialogs/save/button/cancel"
+msgstr "Выйти"
+
+msgid "dialogs/save/button/submit"
+msgstr "Сохранить и выйти"
+
+msgid "dialogs/save/title"
+msgstr "Сохранить плейлист перед выходом?"
+
+msgid "editScreen/button/exit"
+msgstr "Завершить"
+
+msgid "editScreen/button/save"
+msgstr "Сохранить плейлист"
+
+msgid "editScreen/create/body"
+msgstr ""
+"Нажмите + или перетащите технику в эту область, чтобы создать новый "
+"плейлист."
+
+msgid "editScreen/create/title"
+msgstr "Добавьте технику"
+
+msgid "editScreen/input/placeholder"
+msgstr "Введите название плейлиста"
+
+msgid "edit_button/body"
+msgstr ""
+"Используйте режим редактирования, чтобы редактировать или удалять плейлисты."
+
+msgid "edit_button/title"
+msgstr "Режим редактирования"
+
+msgid "empty_state/empty_list/body"
+msgstr ""
+"Используйте режим редактирования, чтобы добавить технику в этот плейлист."
+
+msgid "empty_state/empty_list/title"
+msgstr "Плейлист пуст"
+
+msgid "empty_state/not_found/body"
+msgstr "Измените настройки фильтра, чтобы увидеть больше машин."
+
+msgid "empty_state/not_found/title"
+msgstr "Техника не найдена"
+
+msgid "imports/trigger"
+msgstr "Импортировать плейлист"
+
+msgid "list/create"
+msgstr "Создать плейлист"
+
+msgid "list/remove"
+msgstr "Удалить плейлист"
+
+msgid "share/copy_button/body"
+msgstr "Код плейлиста можно использовать для его импорта."
+
+msgid "share/copy_button/title"
+msgstr "Скопировать код плейлиста"
+
+msgid "trigger/explain"
+msgstr "Используйте выпадающее меню, чтобы переключаться между плейлистами."
+
+msgid "unnamedTemplate"
+msgstr "Безымянный плейлист {{count}}"
+
+msgid "validation/unavailable/body"
+msgstr ""
+"Этот плейлист содержит технику, которой нет у вас в Ангаре.\n"
+"Вы можете просмотреть всю технику в этом плейлисте в режиме редактирования."
+
+msgid "validation/unavailable/title"
+msgstr "Недоступные машины ({{display}}/{{total}})"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, math_utils
 from fun_random.gui.feature.fun_constants import FunSubModesState
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunProgressionWatcher, FunSubModesWatcher
@@ -86,7 +87,7 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
 
     def __getTimeLeftText(self, status):
         if status.state in FunSubModesState.INNER_STATES:
-            return getFormattedTimeLeft(time_utils.getTimeDeltaFromNowInLocal(status.rightBorder))
+            return getFormattedTimeLeft(time_utils.getTimeDeltaFromNowInLocal(status.endTime))
         return ''
 
     def __addListeners(self):
@@ -103,7 +104,7 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
         self.stopSubSettingsListening(self.__invalidateAll)
 
     @avoidSubModesStates(states=FunSubModesState.HIDDEN_SELECTOR_STATES, abortAction='onCardChange')
-    def __invalidateAll(self, status=None, *_):
+    def __invalidateAll(self, status, *_):
         self.__reloadModeHelper()
         with self.viewModel.transaction() as (model):
             self.__fillCardModel(model, status)
@@ -166,7 +167,7 @@ class FunRandomSelectorItem(ModeSelectorLegacyItem, FunAssetPacksMixin, FunSubMo
     def __fillProgressionReward(self):
         progression = self.getActiveProgression()
         rewardID = ModeSelectorRewardID.OTHER
-        if progression.isInUnlimitedProgression and all([ isinstance(b, LootBoxTokensBonus) for b in progression.unlimitedProgression.bonuses ]):
+        if progression.isInUnlimitedProgression and all(isinstance(b, LootBoxTokensBonus) for b in progression.unlimitedProgression.bonuses):
             rewardID = ModeSelectorRewardID.RANDOM
         self._addReward(rewardID, tooltipID=ModeSelectorTooltipsConstants.FUN_RANDOM_REWARDS)
 

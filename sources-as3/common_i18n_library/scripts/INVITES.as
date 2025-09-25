@@ -45,6 +45,8 @@ package
       
       public static const INVITES_PREBATTLE_ALREADYJOINED_TRAINING_COMP7:String = "#invites:invites/prebattle/alreadyJoined/TRAINING_COMP7";
       
+      public static const INVITES_PREBATTLE_ALREADYJOINED_BATTLE_ROYALE:String = "#invites:invites/prebattle/alreadyJoined/BATTLE_ROYALE";
+      
       public static const INVITES_TEXT_CREATORNAME:String = "#invites:invites/text/creatorName";
       
       public static const INVITES_TEXT_SQUAD:String = "#invites:invites/text/SQUAD";
@@ -76,6 +78,8 @@ package
       public static const INVITES_TEXT_MAPBOX:String = "#invites:invites/text/MAPBOX";
       
       public static const INVITES_TEXT_COMP7:String = "#invites:invites/text/COMP7";
+      
+      public static const INVITES_TEXT_COMP7_LIGHT:String = "#invites:invites/text/COMP7_LIGHT";
       
       public static const INVITES_TEXT_FORT_OFFENCE:String = "#invites:invites/text/fort/offence";
       
@@ -230,6 +234,14 @@ package
       public static const INVITES_NOTE_LEAVE_PREBATTLE_COMP7:String = "#invites:invites/note/leave/PREBATTLE_COMP7";
       
       public static const INVITES_NOTE_CHANGE_AND_LEAVE_PREBATTLE_COMP7:String = "#invites:invites/note/change_and_leave/PREBATTLE_COMP7";
+      
+      public static const INVITES_NOTE_LEAVE_QUEUE_COMP7_LIGHT:String = "#invites:invites/note/leave/QUEUE_COMP7_LIGHT";
+      
+      public static const INVITES_NOTE_CHANGE_AND_LEAVE_QUEUE_COMP7_LIGHT:String = "#invites:invites/note/change_and_leave/QUEUE_COMP7_LIGHT";
+      
+      public static const INVITES_NOTE_LEAVE_PREBATTLE_COMP7_LIGHT:String = "#invites:invites/note/leave/PREBATTLE_COMP7_LIGHT";
+      
+      public static const INVITES_NOTE_CHANGE_AND_LEAVE_PREBATTLE_COMP7_LIGHT:String = "#invites:invites/note/change_and_leave/PREBATTLE_COMP7_LIGHT";
       
       public static const INVITES_NOTE_LEAVE_QUEUE_WINBACK:String = "#invites:invites/note/leave/QUEUE_WINBACK";
       

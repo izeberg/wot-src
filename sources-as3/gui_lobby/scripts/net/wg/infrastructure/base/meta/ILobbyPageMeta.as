@@ -14,6 +14,8 @@ package net.wg.infrastructure.base.meta
       
       function notifyCursorDraggingS(param1:Boolean) : void;
       
+      function setRequiresOldStyleS(param1:Boolean) : void;
+      
       function as_showHelpLayout() : void;
       
       function as_closeHelpLayout() : void;
@@ -23,5 +25,7 @@ package net.wg.infrastructure.base.meta
       function as_hideWaiting() : void;
       
       function as_setSubContainerItemsVisibility(param1:Boolean) : void;
+      
+      function as_setWalletStatus(param1:Object) : void;
    }
 }

@@ -35,6 +35,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.BranderVehicle2dMarker;
    import net.wg.gui.battle.views.vehicleMarkers.Comp7VehicleMarker;
    import net.wg.gui.battle.views.vehicleMarkers.DamageLabel;
+   import net.wg.gui.battle.views.vehicleMarkers.DamageLabelAnimatedScreen;
    import net.wg.gui.battle.views.vehicleMarkers.FlagContainer;
    import net.wg.gui.battle.views.vehicleMarkers.FortConsumablesMarker;
    import net.wg.gui.battle.views.vehicleMarkers.GoalFlagMarker;
@@ -58,6 +59,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.VehicleActionMarker;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleIconAnimation;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarker;
+   import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkerFxContainer;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersConstants;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersLinkages;
    import net.wg.gui.battle.views.vehicleMarkers.VehicleMarkersManager;
@@ -150,6 +152,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_DAMAGELABEL:Class = DamageLabel;
       
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_DAMAGELABELANIMATEDSCREEN:Class = DamageLabelAnimatedScreen;
+      
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_FLAGCONTAINER:Class = FlagContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_FORTCONSUMABLESMARKER:Class = FortConsumablesMarker;
@@ -181,6 +185,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEICONANIMATION:Class = VehicleIconAnimation;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEMARKER:Class = VehicleMarker;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEMARKERFXCONTAINER:Class = VehicleMarkerFxContainer;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_VEHICLEMARKERSCONSTANTS:Class = VehicleMarkersConstants;
       

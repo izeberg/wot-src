@@ -1,6 +1,6 @@
 package net.wg.gui.lobby.eventBoards.data
 {
-   import net.wg.gui.lobby.missions.data.MissionsPackVO;
+   import net.wg.gui.lobby.userMissions.data.MissionsPackVO;
    
    public class MissionsEventBoardsPackVO extends MissionsPackVO
    {

@@ -1,11 +1,12 @@
+from __future__ import absolute_import
 from functools import partial
 from itertools import chain
 import typing
 from fun_random.gui.battle_results.pbs_helpers import isPremiumAdvertisingShown, getTotalTMenXPToShow
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.battle_results.presenters.packers.economics.base_currency_packer import CurrencyRecord
-from gui.battle_results.presenters.packers.economics.base_currency_packer import BaseCurrencyPacker, CurrencyGroup
+from gui.battle_results.presenters.packers.economics.currency_packers import CurrencyRecord
+from gui.battle_results.presenters.packers.economics.currency_packers import CurrencyPacker, CurrencyGroup
 from gui.battle_results.presenters.packers.economics.common_records import DESERTER_VIOLATION, SUICIDE_VIOLATION, AFK_VIOLATION
 from gui.battle_results.settings import CurrenciesConstants
 from shared_utils import first
@@ -21,10 +22,9 @@ def _getTmenXpValue(records, _, __, tID, xpList):
     return 0
 
 
-TOTAL_TMEN_XP = CurrencyRecord(recordNames=(), subtractRecords=(), valueExtractor=getTotalTMenXPToShow, capsToBeChecked=None, label=_STR_PATH.title.total, modifiers=(), showZeroValue=True, currencyType=CurrenciesConstants.TMEN_XP)
+TOTAL_TMEN_XP = CurrencyRecord(recordNames=(), subtractRecords=(), baseAccountValueExtractor=getTotalTMenXPToShow, premiumAccountValueExtractor=getTotalTMenXPToShow, detailsValuesExtractors=(), capsToBeChecked=None, label=_STR_PATH.title.total, paramName='totalTmenXP', modifiers=(), showZeroValue=True, currencyType=CurrenciesConstants.TMEN_XP)
 
-class FunTmenXpPacker(BaseCurrencyPacker):
-    __slots__ = ()
+class FunTmenXpPacker(CurrencyPacker):
     _EARNED = CurrencyGroup(label=None, records=(DESERTER_VIOLATION, SUICIDE_VIOLATION, AFK_VIOLATION))
     _TOTAL = CurrencyGroup(label=None, records=(TOTAL_TMEN_XP,))
 
@@ -58,7 +58,7 @@ class FunTmenXpPacker(BaseCurrencyPacker):
             for _, tman in vehicle.crew:
                 if tman is None:
                     continue
-                records.append(CurrencyRecord(recordNames=(), subtractRecords=(), valueExtractor=partial(_getTmenXpValue, tID=tman.invID, xpList=tmenXps), capsToBeChecked=None, label=R.strings.ingame_gui.tankmen.dyn(tman.role), modifiers=(), showZeroValue=False, currencyType=CurrenciesConstants.TMEN_XP))
+                records.append(CurrencyRecord(recordNames=(), subtractRecords=(), baseAccountValueExtractor=partial(_getTmenXpValue, tID=tman.invID, xpList=tmenXps), premiumAccountValueExtractor=partial(_getTmenXpValue, tID=tman.invID, xpList=tmenXps), detailsValuesExtractors=(), capsToBeChecked=None, paramName='tmenXP', label=R.strings.ingame_gui.tankmen.dyn(tman.role), modifiers=(), showZeroValue=False, currencyType=CurrenciesConstants.TMEN_XP))
 
             if records:
                 return CurrencyGroup(label=None, records=list(chain(cls._EARNED.records, records)))

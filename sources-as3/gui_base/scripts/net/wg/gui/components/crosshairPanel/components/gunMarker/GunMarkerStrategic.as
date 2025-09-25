@@ -102,34 +102,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
       }
       
-      public function setReloadingParams(param1:Number, param2:String) : void
-      {
-         this.setCurrentReloading(param1);
-      }
-      
-      protected function setCurrentReloading(param1:Number) : void
-      {
-         var _loc2_:String = param1 < 1 ? NODE_TYPE_RED : NODE_TYPE_GREEN;
-         var _loc3_:int = 0;
-         while(_loc3_ < this._nodesTotal)
-         {
-            this._nodes[_loc3_].gotoAndStop(_loc2_);
-            _loc3_++;
-         }
-      }
-      
-      public function setSettings(param1:Number, param2:Number, param3:Number, param4:Number) : void
-      {
-      }
-      
-      public function setColor(param1:String) : void
-      {
-      }
-      
-      public function setScale(param1:Number) : void
-      {
-      }
-      
       override protected function onDispose() : void
       {
          this._nodes.splice(0,this._nodes.length);
@@ -137,7 +109,23 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          super.onDispose();
       }
       
-      public function setMixingScale(param1:Number) : void
+      public function setAccuracyStacks(param1:int) : void
+      {
+      }
+      
+      public function setAccuracyStacksVisible(param1:Boolean) : void
+      {
+      }
+      
+      public function setAimDamageStage(param1:String) : void
+      {
+      }
+      
+      public function setChargeableBurstMode(param1:Boolean) : void
+      {
+      }
+      
+      public function setColor(param1:String) : void
       {
       }
       
@@ -149,12 +137,40 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       {
       }
       
-      public function setAimDamageStage(param1:String) : void
+      public function setMixingScale(param1:Number) : void
+      {
+      }
+      
+      public function setReloadingParams(param1:Number, param2:String) : void
+      {
+         this.setCurrentReloading(param1);
+      }
+      
+      public function setScale(param1:Number) : void
+      {
+      }
+      
+      public function setSettings(param1:Number, param2:Number, param3:Number, param4:Number) : void
       {
       }
       
       public function setZoomFactor(param1:Number) : void
       {
+      }
+      
+      public function showPenetrationFx() : void
+      {
+      }
+      
+      protected function setCurrentReloading(param1:Number) : void
+      {
+         var _loc2_:String = param1 < 1 ? NODE_TYPE_RED : NODE_TYPE_GREEN;
+         var _loc3_:int = 0;
+         while(_loc3_ < this._nodesTotal)
+         {
+            this._nodes[_loc3_].gotoAndStop(_loc2_);
+            _loc3_++;
+         }
       }
    }
 }

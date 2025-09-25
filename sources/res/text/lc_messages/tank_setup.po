@@ -16,66 +16,6 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
-msgid "abilities/actions/toInfoPage"
-msgstr "ПОДРОБНЕЕ О РЕЖИМЕ"
-
-msgid "abilities/actions/toReserves"
-msgstr "Управление резервами"
-
-msgid "abilities/applyToType"
-msgstr "Применять ко всем %(icon)s %(vehicle)s"
-
-msgid "abilities/details/description/locked"
-msgstr ""
-"Покупка боевого резерва в сценарии {whiteSpanish_Start}«Воля "
-"случая»{whiteSpanish_End} повысит его уровень на 1 и откроет возможность его"
-" усиления до уровня {whiteSpanish_Start}IV{whiteSpanish_End}."
-
-msgid "abilities/details/description/unlocked"
-msgstr ""
-"В сценарии {whiteSpanish_Start}«Воля случая»{whiteSpanish_End} вероятность "
-"выдачи каждого установленного перед боем резерва повышается на "
-"{whiteSpanish_Start}10%{whiteSpanish_End}."
-
-msgid "abilities/details/level"
-msgstr "Уровень:"
-
-msgid "abilities/details/param/valueTemplate/default"
-msgstr "%(sign)s%(value)s"
-
-msgid "abilities/details/param/valueTemplate/meters"
-msgstr "%(sign)s%(value)s м"
-
-msgid "abilities/details/param/valueTemplate/percents"
-msgstr "%(sign)s%(value)s %"
-
-msgid "abilities/details/param/valueTemplate/percentsBySecond"
-msgstr "%(sign)s%(value)s %/с"
-
-msgid "abilities/details/param/valueTemplate/seconds"
-msgstr "%(sign)s%(value)s с"
-
-msgid "abilities/details/paramDiff"
-msgstr "(%(diff)s)"
-
-msgid "abilities/details/status/locked"
-msgstr "Боевой резерв не куплен"
-
-msgid "abilities/details/status/unlocked"
-msgstr "Боевой резерв куплен"
-
-msgid "abilities/noSelected/subTitle"
-msgstr "Выберите их на экране распределения боевых резервов."
-
-msgid "abilities/noSelected/title"
-msgstr "Боевые резервы не выбраны"
-
-msgid "abilities/noSelected/toReserves"
-msgstr "Управление резервами"
-
-msgid "abilities/pointsAmount"
-msgstr "Очки боевых резервов: %(points)s"
-
 msgid "categories/body/firepower"
 msgstr ""
 "Комплекс параметров, отвечающих за эффективность уничтожения противника. "
@@ -109,9 +49,6 @@ msgstr "Огневая мощь"
 
 msgid "categories/mobility"
 msgstr "Мобильность"
-
-msgid "categories/reserves/config"
-msgstr "КОНФИГУРАЦИЯ %(icon)s %(vehicle)s"
 
 msgid "categories/slotEffect/empty"
 msgstr ""
@@ -203,6 +140,15 @@ msgstr "Установлено на машину"
 
 msgid "dealPanel/tooltip/notEnough"
 msgstr "Недостаточно средств для покупки"
+
+msgid "dealPanel/tooltip/purchasedWith/credits"
+msgstr "Будет приобретено за кредиты"
+
+msgid "dealPanel/tooltip/purchasedWith/crystal"
+msgstr "Будет приобретено за боны"
+
+msgid "dealPanel/tooltip/purchasedWith/depot"
+msgstr "Будет установлено со Склада"
 
 msgid "deconstructionDeviceView/available"
 msgstr "В наличии:"
@@ -315,9 +261,6 @@ msgstr "Оборудование можно будет демонтироват�
 msgid "dialogs/confirm/doesNotWork"
 msgstr "РАБОТАТЬ НЕ БУДЕТ"
 
-msgid "dialogs/confirm/item/battleAbility"
-msgstr "боевой резерв"
-
 msgid "dialogs/confirm/item/battleBooster"
 msgstr "инструкцию"
 
@@ -336,9 +279,6 @@ msgstr "оборудование"
 msgid "dialogs/confirm/item/postProgressionPairModification"
 msgstr "парную модификацию"
 
-msgid "dialogs/confirm/items/battleAbility"
-msgstr "боевые резервы"
-
 msgid "dialogs/confirm/items/battleBooster"
 msgstr "инструкции"
 
@@ -353,9 +293,6 @@ msgstr "оборудование"
 
 msgid "dialogs/confirm/message/lastSeparation"
 msgstr " и "
-
-msgid "dialogs/confirm/title/changeSlots/battleAbility"
-msgstr "Сохранить изменения в слотах резервов?"
 
 msgid "dialogs/confirm/title/changeSlots/battleBooster"
 msgstr "Сохранить изменения в слотах инструкций?"
@@ -660,9 +597,6 @@ msgstr "Стоимость продажи 1 ед.:"
 msgid "easyTankEquipView/alert/demountNotPossible"
 msgstr "Недостаточно ресурсов для демонтажа."
 
-msgid "easyTankEquipView/alert/loadCapacityNotEnough"
-msgstr "Установите ходовую с большей грузоподъёмностью."
-
 msgid "easyTankEquipView/alert/notFormed"
 msgstr "Для этой машины рекомендации недоступны"
 
@@ -764,21 +698,6 @@ msgstr "Получить компоненты"
 msgid "filters/shown"
 msgstr "Показано: "
 
-msgid "hints/ammunition/reserves/applyToTypeCheckbox"
-msgstr ""
-"НОВАЯ\n"
-"ВОЗМОЖНОСТЬ"
-
-msgid "hints/ammunition/reserves/control"
-msgstr ""
-"НОВОЕ УПРАВЛЕНИЕ\n"
-"БОЕВЫМИ РЕЗЕРВАМИ"
-
-msgid "hints/ammunitionPanel/reserves/changed"
-msgstr ""
-"ИЗМЕНЕНИЯ В\n"
-"БОЕВЫХ РЕЗЕРВАХ"
-
 msgid "hints/dragAndDrop/section"
 msgstr ""
 "ОБОРУДОВАНИЕ\n"
@@ -810,9 +729,10 @@ msgid "introduction/message/modernized"
 msgstr ""
 "Специализированный тип оборудования с тремя уровнями наладки, который "
 "выдаётся за выполнение боевых задач или в награду за определённые события. "
-"Такое оборудование нельзя купить или продать, но можно разобрать и получить "
-"специальные детали — %(currencyName)s (%(currencyIcon)s). Компоненты "
-"необходимы для наладки и демонтажа любого экспериментального оборудования."
+"Такое оборудование нельзя уничтожить или продать, но можно разобрать и "
+"получить специальные детали — %(currencyName)s (%(currencyIcon)s). "
+"Компоненты необходимы для наладки и демонтажа любого экспериментального "
+"оборудования."
 
 msgid "introduction/message/trophy"
 msgstr ""
@@ -859,9 +779,9 @@ msgstr "КАТЕГОРИИ ОБОРУДОВАНИЯ"
 
 msgid "introduction/slide/3/description/left"
 msgstr ""
-"Стоимость большинства существующего оборудования для II–IV уровней теперь не"
-" будет превышать 50 000 кредитов, для V–VII уровней — не больше 300 000, а "
-"для VIII–X — до 600 000."
+"Стоимость большинства единиц существующего оборудования теперь ограничена: "
+"не более 50 000 кредитов для техники II–IV уровней, до 300 000 — для V–VII "
+"уровней и до 600 000 — для VIII–XI."
 
 msgid "introduction/slide/3/description/right"
 msgstr ""
@@ -880,10 +800,10 @@ msgstr "СТОИМОСТЬ ОБОРУДОВАНИЯ"
 
 msgid "introduction/slide/4/description"
 msgstr ""
-"Теперь для техники I уровня оборудование недоступно, на технике II уровня "
-"можно установить только одну единицу оборудования, на технике III уровня — "
-"2, а IV и выше — 3. Оборудование, которое было установлено в убранные слоты,"
-" демонтировано на Склад."
+"Теперь для техники I уровня оборудование недоступно, на машину II уровня "
+"можно установить только одну единицу оборудования, на танк III уровня — две,"
+" а для IV-XI уровней доступны все три слота. Оборудование, которое было "
+"установлено в убранные слоты, демонтировано и перемещено на Склад."
 
 msgid "introduction/slide/4/title"
 msgstr "СЛОТЫ ДЛЯ ОБОРУДОВАНИЯ"
@@ -958,9 +878,6 @@ msgstr ""
 
 msgid "kpi/bonus/longDescr/negative/vehicleChassisFallDamage"
 msgstr "от урона, передаваемого корпусу через ходовую при падении"
-
-msgid "kpi/bonus/longDescr/negative/vehicleChassisLoad"
-msgstr "от грузоподъёмности ходовой"
 
 msgid "kpi/bonus/longDescr/negative/vehicleCircularVisionRadius"
 msgstr ""
@@ -1038,9 +955,6 @@ msgstr ""
 
 msgid "kpi/bonus/longDescr/positive/vehicleChassisFallDamage"
 msgstr "к урону, передаваемому корпусу через ходовую при падении"
-
-msgid "kpi/bonus/longDescr/positive/vehicleChassisLoad"
-msgstr "к грузоподъёмности ходовой"
 
 msgid "kpi/bonus/longDescr/positive/vehicleCircularVisionRadius"
 msgstr ""
@@ -1203,9 +1117,6 @@ msgstr "от улучшения незаметности"
 msgid "kpi/bonus/negative/vehicleChassisFallDamage"
 msgstr "от урона при падении"
 
-msgid "kpi/bonus/negative/vehicleChassisLoad"
-msgstr "от грузоподъёмности"
-
 msgid "kpi/bonus/negative/vehicleChassisRepairSpeed"
 msgstr "от скорости ремонта ходовой"
 
@@ -1328,6 +1239,21 @@ msgstr "задержки определения критических повр�
 msgid "kpi/bonus/neutral/radiomanDurationPerLevel"
 msgstr "продолжительность передачи разведданных после вашего уничтожения"
 
+msgid "kpi/bonus/positive/HEShellDamage"
+msgstr "к урону от ОФ снарядов"
+
+msgid "kpi/bonus/positive/HEShellPenetration"
+msgstr "к бронепробиваемости ОФ снарядов"
+
+msgid "kpi/bonus/positive/additionalShellAmmoCapacity"
+msgstr "к вместимости боекомплекта"
+
+msgid "kpi/bonus/positive/allShellDamage"
+msgstr "к урону от снарядов всех типов"
+
+msgid "kpi/bonus/positive/allShellsVelocity"
+msgstr "к скорости полёта снарядов всех типов"
+
 msgid "kpi/bonus/positive/artNotificationDelayFactor"
 msgstr ""
 "задержки срабатывания звуковой\n"
@@ -1377,6 +1303,9 @@ msgstr ""
 "к шансу поражения модулей и экипажа\n"
 "противника"
 
+msgid "kpi/bonus/positive/engineHP"
+msgstr "к прочности двигателя"
+
 msgid "kpi/bonus/positive/equipmentPreparationTime"
 msgstr "ко времени подготовки снаряжения"
 
@@ -1386,10 +1315,31 @@ msgstr "к скорости тушения пожара"
 msgid "kpi/bonus/positive/foliageMaskingFactor"
 msgstr "к эффекту маскировки от растительности"
 
+msgid "kpi/bonus/positive/fuelTankHP"
+msgstr "к прочности баков"
+
+msgid "kpi/bonus/positive/gunDepression"
+msgstr "к углу склонения орудия"
+
+msgid "kpi/bonus/positive/gunElevation"
+msgstr "к углу возвышения орудия"
+
+msgid "kpi/bonus/positive/gunStabilization"
+msgstr "к стабилизации орудия"
+
+msgid "kpi/bonus/positive/gunTraverse"
+msgstr "к углам горизонтального наведения орудия"
+
+msgid "kpi/bonus/positive/hullElevationSpeed"
+msgstr "к скорости подъёма корпуса"
+
 msgid "kpi/bonus/positive/mediumGroundFactor"
 msgstr ""
 "к сохранению набранной скорости\n"
 "при пересечении средних грунтов"
+
+msgid "kpi/bonus/positive/nonHEShellDamage"
+msgstr "к урону от снарядов (кроме ОФ)"
 
 msgid "kpi/bonus/positive/penaltyToDamagedSurveyingDevice"
 msgstr ""
@@ -1404,6 +1354,18 @@ msgstr ""
 msgid "kpi/bonus/positive/radiomanHitChance"
 msgstr "к защите радиста от ранений"
 
+msgid "kpi/bonus/positive/reloadTimeInClip"
+msgstr "к скорости перезарядки внутри магазина"
+
+msgid "kpi/bonus/positive/reloadTimeSalvo"
+msgstr "к скорости перезарядки (залповый режим)"
+
+msgid "kpi/bonus/positive/reloadTimeSingle"
+msgstr "к скорости перезарядки (одиночный режим)"
+
+msgid "kpi/bonus/positive/shellModuleDamage"
+msgstr "к урону от снарядов по модулям противника"
+
 msgid "kpi/bonus/positive/shellVelocity"
 msgstr "к скорости полёта снаряда"
 
@@ -1412,8 +1374,23 @@ msgstr ""
 "к сохранению набранной скорости\n"
 "при пересечении вязких грунтов"
 
+msgid "kpi/bonus/positive/specialShellPenetration"
+msgstr "к бронепробиваемости специальных снарядов"
+
+msgid "kpi/bonus/positive/specialShellVelocity"
+msgstr "к скорости полёта специальных снарядов"
+
+msgid "kpi/bonus/positive/standardShellPenetration"
+msgstr "к бронепробиваемости базовых снарядов"
+
+msgid "kpi/bonus/positive/standardShellVelocity"
+msgstr "к скорости полёта базовых снарядов"
+
 msgid "kpi/bonus/positive/stunResistanceEffectFactor"
 msgstr "к негативному эффекту оглушения"
+
+msgid "kpi/bonus/positive/turretTraverse"
+msgstr "к углам горизонтального наведения"
 
 msgid "kpi/bonus/positive/vehPenaltyForDamagedAmmorack"
 msgstr "от штрафа к скорости заряжания"
@@ -1441,9 +1418,6 @@ msgstr "к улучшению незаметности"
 
 msgid "kpi/bonus/positive/vehicleChassisFallDamage"
 msgstr "к урону при падении"
-
-msgid "kpi/bonus/positive/vehicleChassisLoad"
-msgstr "к грузоподъёмности"
 
 msgid "kpi/bonus/positive/vehicleChassisRepairSpeed"
 msgstr "к скорости ремонта ходовой"
@@ -1525,6 +1499,9 @@ msgstr ""
 
 msgid "kpi/bonus/positive/vehicleRepairSpeed"
 msgstr "к скорости ремонта"
+
+msgid "kpi/bonus/positive/vehicleSpeed"
+msgstr "к максимальной скорости движения вперёд/назад"
 
 msgid "kpi/bonus/positive/vehicleSpeedGain"
 msgstr ""
@@ -1626,9 +1603,6 @@ msgstr "от незаметности"
 
 msgid "kpi/bonus/ttc/negative/vehicleChassisFallDamage"
 msgstr "от урона при падении"
-
-msgid "kpi/bonus/ttc/negative/vehicleChassisLoad"
-msgstr "от грузоподъёмности"
 
 msgid "kpi/bonus/ttc/negative/vehicleChassisRepairSpeed"
 msgstr "от скорости ремонта ходовой"
@@ -1825,9 +1799,6 @@ msgstr "к незаметности"
 msgid "kpi/bonus/ttc/positive/vehicleChassisFallDamage"
 msgstr "к урону при падении"
 
-msgid "kpi/bonus/ttc/positive/vehicleChassisLoad"
-msgstr "к грузоподъёмности"
-
 msgid "kpi/bonus/ttc/positive/vehicleChassisRepairSpeed"
 msgstr "к скорости ремонта ходовой"
 
@@ -1962,6 +1933,9 @@ msgstr "c"
 
 msgid "popularLoadouts/common"
 msgstr "Популярное"
+
+msgid "popularLoadouts/commonlyUsed"
+msgstr "Популярные"
 
 msgid "popularLoadouts/legendary"
 msgstr "Легендарное"
@@ -2146,30 +2120,6 @@ msgstr "Будет разобрано с техники: %(vehicleNames)s"
 
 msgid "tooltip/deconstructConfirm/listSeparator"
 msgstr ", "
-
-msgid "tooltips/abilities/actions/checkbox/AT-SPG"
-msgstr "Изменения будут применены ко всем ПТ-САУ."
-
-msgid "tooltips/abilities/actions/checkbox/SPG"
-msgstr "Изменения будут применены ко всем САУ."
-
-msgid "tooltips/abilities/actions/checkbox/heavyTank"
-msgstr "Изменения будут применены ко всем тяжёлым танкам."
-
-msgid "tooltips/abilities/actions/checkbox/lightTank"
-msgstr "Изменения будут применены ко всем лёгким танкам."
-
-msgid "tooltips/abilities/actions/checkbox/mediumTank"
-msgstr "Изменения будут применены ко всем средним танкам."
-
-msgid "tooltips/abilities/points/body"
-msgstr ""
-"За повышение уровня в Линии фронта вы получаете очки боевых резервов. "
-"Накопив необходимое количество очков, вы сможете активировать боевые резервы"
-" для этого режима."
-
-msgid "tooltips/abilities/points/header"
-msgstr "Очки боевых резервов"
 
 msgid "tooltips/action/description/add_one"
 msgstr "Нажмите, чтобы докупить предметы в этом слоте."

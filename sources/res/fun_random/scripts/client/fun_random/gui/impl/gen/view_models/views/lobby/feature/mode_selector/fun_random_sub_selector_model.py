@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_condition import FunRandomProgressionCondition
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_stage import FunRandomProgressionStage
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_state import FunRandomProgressionState
@@ -8,7 +7,7 @@ from fun_random.gui.impl.gen.view_models.views.lobby.feature.mode_selector.fun_r
 class FunRandomSubSelectorModel(ViewModel):
     __slots__ = ('onItemClicked', 'onInfoClicked', 'onBackBtnClicked', 'onClosed')
 
-    def __init__(self, properties=5, commands=4):
+    def __init__(self, properties=6, commands=4):
         super(FunRandomSubSelectorModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -51,6 +50,12 @@ class FunRandomSubSelectorModel(ViewModel):
     def setAssetsPointer(self, value):
         self._setString(4, value)
 
+    def getModeName(self):
+        return self._getString(5)
+
+    def setModeName(self, value):
+        self._setString(5, value)
+
     def _initialize(self):
         super(FunRandomSubSelectorModel, self)._initialize()
         self._addViewModelProperty('state', FunRandomProgressionState())
@@ -58,6 +63,7 @@ class FunRandomSubSelectorModel(ViewModel):
         self._addViewModelProperty('currentStage', FunRandomProgressionStage())
         self._addArrayProperty('cardList', Array())
         self._addStringProperty('assetsPointer', 'undefined')
+        self._addStringProperty('modeName', '')
         self.onItemClicked = self._addCommand('onItemClicked')
         self.onInfoClicked = self._addCommand('onInfoClicked')
         self.onBackBtnClicked = self._addCommand('onBackBtnClicked')

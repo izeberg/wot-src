@@ -133,6 +133,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       private static const LEVEL_ICON_ALPHA_ALIVE:int = 1;
        
       
+      public var fxContainer:VehicleMarkerFxContainer = null;
+      
       public var vehicleIcon:MovieClip = null;
       
       public var actionMarker:VehicleActionMarker = null;
@@ -315,6 +317,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       {
          var _loc1_:VehicleMarkerPart = null;
          var _loc2_:VehicleMarkerPart = null;
+         this.fxContainer.dispose();
+         this.fxContainer = null;
          this.statusContainer.removeEventListener(Event.COMPLETE,this.onStatusAnimationHiddenCompleteHandler);
          this.healthBar.hitSplash.removeEventListener(HealthBarAnimatedPart.HIDE,this.onSplashHideHandler);
          this.vmManager.removeEventListener(VehicleMarkersManagerEvent.SHOW_EX_INFO,this.onShowExInfoHandler);
@@ -685,33 +689,33 @@ package net.wg.gui.battle.views.vehicleMarkers
          this.updateFlag();
       }
       
-      public function updateHealth(param1:int, param2:uint, param3:String) : void
+      public function updateHealth(param1:int, param2:uint, param3:String, param4:int = -1) : void
       {
-         var _loc5_:String = null;
+         var _loc6_:String = null;
          this._damageType = param3;
          if(param1 < 0)
          {
             this._damageType = VehicleMarkerFlags.DAMAGE_EXPLOSION;
             param1 = 0;
          }
-         var _loc4_:int = this.model.currHealth - param1;
+         var _loc5_:int = this.model.currHealth - param1;
          this.model.currHealth = param1;
          if(this._isPopulated)
          {
-            _loc5_ = this.getDamageColor(param2);
+            _loc6_ = this.getDamageColor(param2);
             if(this.getIsPartVisible(HEALTH_BAR))
             {
-               this.healthBar.updateHealth(param1,_loc5_);
+               this.healthBar.updateHealth(param1,_loc6_);
             }
             if(this.getIsPartVisible(DAMAGE_PANEL))
             {
-               if(_loc4_ != Values.ZERO)
+               if(_loc5_ != Values.ZERO)
                {
-                  this.showHitLabelAnim(_loc4_,_loc5_,param2);
+                  this.showHitLabelAnim(_loc5_,_loc6_,param2);
                }
                if(VehicleMarkerFlags.checkAllowedDamages(this._damageType))
                {
-                  this.hitExplosion.setColorAndDamageType(_loc5_,this._damageType);
+                  this.hitExplosion.setColorAndDamageType(_loc6_,this._damageType);
                   this.hitExplosion.playShowTween();
                }
                this.updateCriticalLayout();
@@ -723,6 +727,19 @@ package net.wg.gui.battle.views.vehicleMarkers
                   this.setDestroyedColorForHP();
                }
                this.setHealthText();
+            }
+            if(param4 >= 0 && param2 == VehicleMarkerFlags.DAMAGE_FROM_PLAYER_FLAG && param3 == VehicleMarkerFlags.DAMAGE_RAMMING && _loc5_ >= param4)
+            {
+               this.fxContainer.showRammingEffect(this);
+               if(this.getIsPartVisible(HEALTH_BAR))
+               {
+                  this.healthBar.showDeltaShineEffect();
+                  this.healthBar.showGlitchEffect();
+               }
+               if(this.getIsPartVisible(DAMAGE_PANEL))
+               {
+                  this.playerHitLabel.showScreenEffect();
+               }
             }
          }
       }
@@ -1303,7 +1320,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          return _loc2_[this._markerColor];
       }
       
-      private function cleanupDynamicObject(param1:Object) : Object
+      protected function cleanupDynamicObject(param1:Object) : Object
       {
          var _loc3_:* = undefined;
          var _loc2_:Array = [];

@@ -194,26 +194,18 @@
 			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>StopPlan</class>
 				<id>StopPlan_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_6</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_8</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -225,7 +217,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -238,13 +229,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_9</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -256,19 +244,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Get Player Vehicle</class>
 				<id>Get Player Vehicle_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>Not</class>
 				<id>Not_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>Or</class>
@@ -280,13 +263,10 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_10</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -298,13 +278,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_11</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -316,7 +293,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -328,13 +304,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_5</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -347,7 +320,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Or</class>
@@ -359,7 +331,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -372,13 +343,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_6</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -390,19 +358,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>OnGunMarkerPenetrationStateChanged</class>
 				<id>OnGunMarkerPenetrationStateChanged_4</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_7</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -414,13 +377,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_7</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -433,7 +393,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -459,13 +418,10 @@
 			<block>
 				<class>Not</class>
 				<id>Not_3</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_2</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -476,19 +432,14 @@
 			<block>
 				<class>GetPlayerGunDispersionAngles</class>
 				<id>GetPlayerGunDispersionAngles_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>DivideFloat</class>
 				<id>DivideFloat_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_9</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -506,7 +457,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -519,13 +469,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>OnPlayerShotMissed</class>
 				<id>OnPlayerShotMissed_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -537,19 +484,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_40</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -572,8 +514,6 @@
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_3</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -585,7 +525,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Or</class>
@@ -597,25 +536,30 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_29</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>OnPlayerShotHit</class>
 				<id>OnPlayerShotHit_2</id>
-				<params/>
-				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_86</id>
+				<buddy>Variable_48</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -639,19 +583,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_86</id>
-				<buddy>Variable_48</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>And</class>
 				<id>And_32</id>
 				<params>
@@ -661,13 +592,10 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_4</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -679,18 +607,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_31</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
@@ -708,7 +632,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -720,18 +643,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>OnPlayerAutoAim</class>
 				<id>OnPlayerAutoAim_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>LogicGate</class>
 				<id>LogicGate_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>valueAtStart</name>
@@ -742,8 +661,6 @@
 			<block>
 				<class>If</class>
 				<id>If_37</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>BitMask</class>
@@ -778,8 +695,6 @@
 			<block>
 				<class>If</class>
 				<id>If_41</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -810,24 +725,20 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareIntegers</class>
 				<id>CompareIntegers_13</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>b</name>
-						<const>\3\</const>
+						<const>\4\</const>
 					</slot>
 				</slots>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_31</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -840,7 +751,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>Macro</class>
@@ -873,7 +783,6 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -886,13 +795,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_29</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -904,19 +810,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_30</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_42</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -929,7 +826,10 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_42</id>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -981,7 +881,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>And</class>
@@ -993,13 +892,10 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_28</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -1011,13 +907,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_43</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -1029,19 +922,14 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>OnPlayerAutoAim</class>
 				<id>OnPlayerAutoAim_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
@@ -1093,7 +981,6 @@
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>And</class>
@@ -1105,13 +992,10 @@
 						<type>IntT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_27</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -1123,7 +1007,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 		</blocks>
 		<connections>

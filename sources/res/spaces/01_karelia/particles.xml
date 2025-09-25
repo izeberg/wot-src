@@ -54,12 +54,35 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_01.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_02.visual</preloadVisual>
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<preloadVisual>particles/content_deferred/GFX_models/environment/14_siegfried_line_nom/fire_big01/normal/lod0/fire_big_01.visual</preloadVisual>
 		<preloadVisual>particles/content_deferred/GFX_models/environment/108_normandy_nom/bc_108_normandy_Fire_window.visual</preloadVisual>
-		<preloadVisual>particles/content_deferred/GFX_models/Random_events/01_karelia/Burnt_rock_01.visual</preloadVisual>
 		<fn_effect_bin>particles/Environment/random_events/01_karelia__plane_trail_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/random_events/01_karelia_plane_fire_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/random_events/01_karelia_missoile_trails.eff</fn_effect_bin>
@@ -295,6 +318,26 @@
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex.dds</texture>
 		</preload>
@@ -315,7 +358,6 @@
 		<preloadVisual>particles/mesh_particles/environment/Lightning_mesh_03.visual</preloadVisual>
 		<preloadVisual>particles/content_deferred/GFX_models/environment/14_siegfried_line_nom/fire_big01/normal/lod0/fire_big_01.visual</preloadVisual>
 		<preloadVisual>particles/content_deferred/GFX_models/environment/108_normandy_nom/bc_108_normandy_Fire_window.visual</preloadVisual>
-		<preloadVisual>particles/content_deferred/GFX_models/Random_events/01_karelia/Burnt_rock_01.visual</preloadVisual>
 		<fn_effect_bin>particles/Environment/random_events/01_karelia__plane_trail_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/random_events/01_karelia_plane_fire_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/random_events/01_karelia_missoile_trails.eff</fn_effect_bin>

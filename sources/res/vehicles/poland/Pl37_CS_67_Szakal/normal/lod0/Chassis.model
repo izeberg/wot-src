@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl37_CS_67_Szakal/normal/lod1/Chassis</parent>
+	<extent>32</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.609818 -0.001942 -3.199636</min>
+		<max>1.609803 1.152909 3.309518</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl37_CS_67_Szakal/normal/lod0/Chassis</nodefullVisual>
+</root>

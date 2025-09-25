@@ -3,7 +3,7 @@ package net.wg.gui.lobby.missions.data
    import net.wg.data.daapi.base.DAAPIDataClass;
    import net.wg.gui.components.advanced.vo.ProgressBarAnimVO;
    import net.wg.gui.components.paginator.vo.ToolTipVO;
-   import net.wg.gui.lobby.missions.interfaces.IConditionVO;
+   import net.wg.gui.lobby.userMissions.interfaces.IConditionVO;
    
    public class ConditionRendererVO extends DAAPIDataClass implements IConditionVO
    {

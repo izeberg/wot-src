@@ -63,10 +63,7 @@
 			</invisibilityBonus>
 		</deluxeAdditionalInvisibilityDevice>
 	</optDevsOverrides>
-	<repairCost>
-		6.3
-		<!--BW_String-->
-	</repairCost>
+	<repairCost>4</repairCost>
 	<premiumVehicleXPFactor>
 		0.3
 		<!--BW_String-->
@@ -836,7 +833,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2000</weight>
-			<maxLoad>9500</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->

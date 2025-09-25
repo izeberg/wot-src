@@ -251,14 +251,13 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				1 1.2 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>45500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>38</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -1842,13 +1841,10 @@
 						<gun>20</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.35
+						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.234
 						<!--BW_String-->
@@ -2103,10 +2099,7 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_230_TRM_P30_B>
-					<smplEnginePower>
-						740.0968
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>820</smplEnginePower>
 					<smplFwMaxSpeed>55</smplFwMaxSpeed>
 				</Maybach_HL_230_TRM_P30_B>
 			</engines>

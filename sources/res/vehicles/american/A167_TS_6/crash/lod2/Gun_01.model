@@ -4,4 +4,8 @@
 	<parent>vehicles/american/A167_TS_6/crash/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.534677 -0.427316 -1.374656</min>
+		<max>0.534123 0.459529 6.638799</max>
+	</visibilityBox>
 </root>

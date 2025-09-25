@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.367379 -0.475721 -0.848815</min>
+		<max>0.110524 0.202150 0.757228</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_102_WT_Militarybatteries/normal/lod1/Cus_102_WT_Militarybatteries_01</parent>
+	<extent>32.000000</extent>
+	<nodelessVisual>content/3D_Customization/Cus_102_WT_Militarybatteries/normal/lod0/Cus_102_WT_Militarybatteries_01</nodelessVisual>
+	<tank>true</tank>
+</root>

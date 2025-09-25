@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_1/crash/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_1/crash/lod1/Turret_01</parent>
+	<extent>32</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.714742 -0.048433 -2.117755</min>
+		<max>1.714742 1.536227 2.146521</max>
+	</visibilityBox>
+</root>

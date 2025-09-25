@@ -154,6 +154,83 @@ msgstr ""
 "Бесплатный сброс навыков или автоматическое распределение неизученных "
 "навыков у всех членов экипажа на аккаунте."
 
+msgid "crewInfoTooltip/accelerateTraining"
+msgstr "Обучение экипажа ускорено"
+
+msgid "crewInfoTooltip/efficiencyBonus/title"
+msgstr "Бонус к эффективности: {{@ style (color $color)}}+{{value}}%{{/}}"
+
+msgid "crewInfoTooltip/lowEfficiency/title"
+msgstr "Эффективность навыков"
+
+msgid "crewInfoTooltip/penalty/description"
+msgstr "Член экипажа не обучен на эту машину. Навыки недоступны."
+
+msgid "crewInfoTooltip/penalty/specialization"
+msgstr "Специализация:"
+
+msgid "crewInfoTooltip/penalty/title"
+msgstr "Навыки недоступны"
+
+msgid "crewInfoTooltip/perksBlock/bonus"
+msgstr "Дополнительные навыки:"
+
+msgid "crewInfoTooltip/perksBlock/major"
+msgstr "Навыки основной специальности:"
+
+msgid "crewInfoTooltip/specialization/nation/china"
+msgstr "(Китай)"
+
+msgid "crewInfoTooltip/specialization/nation/czech"
+msgstr "(Чехословакия)"
+
+msgid "crewInfoTooltip/specialization/nation/france"
+msgstr "(Франция)"
+
+msgid "crewInfoTooltip/specialization/nation/germany"
+msgstr "(Германия)"
+
+msgid "crewInfoTooltip/specialization/nation/italy"
+msgstr "(Италия)"
+
+msgid "crewInfoTooltip/specialization/nation/japan"
+msgstr "(Япония)"
+
+msgid "crewInfoTooltip/specialization/nation/poland"
+msgstr "(Польша)"
+
+msgid "crewInfoTooltip/specialization/nation/sweden"
+msgstr "(Швеция)"
+
+msgid "crewInfoTooltip/specialization/nation/uk"
+msgstr "(Великобритания)"
+
+msgid "crewInfoTooltip/specialization/nation/usa"
+msgstr "(США)"
+
+msgid "crewInfoTooltip/specialization/nation/ussr"
+msgstr "(СССР)"
+
+msgid "crewInfoTooltip/specialization/vehicleType/AT-SPG"
+msgstr "Все премиум ПТ-САУ {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/SPG"
+msgstr "Все премиум САУ {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/heavyTank"
+msgstr "Все тяжёлые премиум танки {{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/lightTank"
+msgstr ""
+"Все лёгкие премиум танки\n"
+"{{nation}}"
+
+msgid "crewInfoTooltip/specialization/vehicleType/mediumTank"
+msgstr "Все средние премиум танки {{nation}}"
+
+msgid "dogPawTooltip/details/body"
+msgstr "Подробнее"
+
 msgid "filter/group/details/title"
 msgstr "Подробнее"
 

@@ -10,16 +10,155 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "notEnoughPoints/body"
+msgid "bannerTooltip/curfewTime"
+msgstr "Комендантский час {{timer}}"
+
+msgid "bannerTooltip/dateRange"
+msgstr "{{icon}}{{startDate}} – {{endDate}}"
+
+msgid "bannerTooltip/dateRangeLabel"
+msgstr "Событие будет доступно с"
+
+msgid "bannerTooltip/description"
 msgstr ""
-"Повышайте уровни фронта в режиме «Линия фронта», чтобы зарабатывать очки "
-"резервов."
+"Масштабные сражения 30х30 на технике {{vehicleTier}} уровня на картах "
+"«Нормандия», «Крафтверк» и «Фата-Моргана». Цель атакующих — уничтожить 3 из "
+"5 крупнокалиберных орудий, цель обороняющихся — защитить эти объекты."
 
-msgid "notEnoughPoints/header"
-msgstr "Недостаточно очков"
+msgid "bannerTooltip/descriptionActive"
+msgstr ""
+"Проявите себя в жарких сражениях, завоёвывайте славу, получайте ценные "
+"награды и продвигайтесь по званиям."
 
-msgid "notEnoughPoints/value"
-msgstr "Не хватает: %(points)s %(icon)s"
+msgid "bannerTooltip/descriptionEnded"
+msgstr ""
+"Событие завершено. У вас остались неполученные награды за пройденные уровни."
+
+msgid "bannerTooltip/header"
+msgstr "Линия фронта"
+
+msgid "bannerTooltip/headerWithTier"
+msgstr ""
+"Линия фронта | Уровень {{curLevel}} {{@ class $maxTierClass}} / "
+"{{maxLevel}}{{/}}"
+
+msgid "bannerTooltip/mode"
+msgstr "{{mode}} — игровой режим. Нажмите для ознакомления"
+
+msgid "bannerTooltip/performanceRisk/text"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "bannerTooltip/performanceRisk/title"
+msgstr "Возможно снижение производительности"
+
+msgid "bannerTooltip/progress"
+msgstr "{{value}} / {{maxValue}}"
+
+msgid "bannerTooltip/rewardInfo"
+msgstr "Выберите награды за пройденные уровни ({{value}})"
+
+msgid "battleAbilities/button/notEnough"
+msgstr "Недостаточно средств для покупки."
+
+msgid "battleAbilities/checkbox/AT-SPG"
+msgstr "Изменения будут применены ко всем ПТ-САУ."
+
+msgid "battleAbilities/checkbox/SPG"
+msgstr "Изменения будут применены ко всем САУ."
+
+msgid "battleAbilities/checkbox/heavyTank"
+msgstr "Изменения будут применены ко всем тяжёлым танкам."
+
+msgid "battleAbilities/checkbox/lightTank"
+msgstr "Изменения будут применены ко всем лёгким танкам."
+
+msgid "battleAbilities/checkbox/mediumTank"
+msgstr "Изменения будут применены ко всем средним танкам."
+
+msgid "battleAbilities/incompatibleVehicle"
+msgstr "Неподходящая машина"
+
+msgid "battleAbilities/points/body"
+msgstr ""
+"Накопив необходимое количество очков, вы сможете активировать боевые резервы"
+" для «Линии фронта»."
+
+msgid "battleAbilities/points/header"
+msgstr "Очки боевых резервов"
+
+msgid "battleAbilityTooltip/activation_depends"
+msgstr ""
+"Уровень резерва повышается при получении в бою званий «капитан» и «майор». "
+"Максимальный уровень определяется сценарием боя."
+
+msgid "battleAbilityTooltip/addInfo"
+msgstr "Дополнительная информация"
+
+msgid "battleAbilityTooltip/category/firesupport"
+msgstr "Ударные"
+
+msgid "battleAbilityTooltip/category/reconnaissance"
+msgstr "Разведывательные"
+
+msgid "battleAbilityTooltip/category/tactics"
+msgstr "Тактические"
+
+msgid "battleAbilityTooltip/characteristicsList"
+msgstr "{{label}}: {{@ class $valueClass}}{{value}}{{/}}"
+
+msgid "battleAbilityTooltip/characteristicsTitle"
+msgstr "Постоянные характеристики:"
+
+msgid "battleAbilityTooltip/description"
+msgstr ""
+"Резерв, установленный в слот, повышает на {{@ colorLegacy 'FFE4C0'}}10%{{/}}"
+" шанс выпадения этого резерва при игре по сценарию {{@ colorLegacy "
+"'FFE4C0'}}«Воля случая»{{/}}."
+
+msgid "battleAbilityTooltip/levelsTitle"
+msgstr "Уровень резерва:"
+
+msgid "battleAbilityTooltip/notPurchased"
+msgstr "Не куплен"
+
+msgid "commonTooltip/descriptionEnded"
+msgstr "Событие завершено."
+
+msgid "infoButton/body"
+msgstr "Нажмите, чтобы узнать подробности."
+
+msgid "infoButton/header"
+msgstr "О событии"
+
+msgid "levelReserves/desc"
+msgstr ""
+"Повышение уровней боевых резервов происходит с получением нового звания:"
+
+msgid "levelReserves/info"
+msgstr ""
+"Покупка боевого резерва в сценарии {{@ colorLegacy 'FFE4C0'}}«Воля "
+"случая»{{/}} повысит его уровень на 1 и откроет возможность его усиления до "
+"уровня {{@ colorLegacy 'FFE4C0'}}{{lvl}}{{/}}."
+
+msgid "levelReserves/level"
+msgstr "Повышается на звании: {{@ colorLegacy 'FFE4C0'}}{{lvl}}{{/}}"
+
+msgid "levelReserves/levelAvailable"
+msgstr "Доступен на звании: {{@ colorLegacy 'FFE4C0'}}{{lvl}}{{/}}"
+
+msgid "levelReserves/levelTitle"
+msgstr "Уровень {{lvl}}"
+
+msgid "levelReserves/optionalReserve"
+msgstr ""
+"Для {{@ colorLegacy 'FFE4C0'}}купленных резервов{{/}} в сценарии боя {{@ "
+"colorLegacy 'FFE4C0'}}«Воля случая»{{/}}."
+
+msgid "levelReserves/title"
+msgstr "Уровни резервов"
 
 msgid "randomReserve/characteristic/improved"
 msgstr "Характеристики резерва усилены"
@@ -34,14 +173,12 @@ msgid "randomReserve/purchased"
 msgstr "Боевой резерв куплен"
 
 msgid "skillOrderTooltip/body"
-msgstr ""
-"Порядок открытия боевых резервов зависит от сценария боя, категории резервов"
-" и типа техники."
+msgstr "У каждого типа техники свой порядок открытия резервов:"
 
 msgid "skillOrderTooltip/header"
 msgstr "Порядок открытия боевых резервов"
 
 msgid "skillOrderTooltip/info"
 msgstr ""
-"Порядок открытия боевых резервов в сценарии {whiteSpanish_Start}«Воля "
-"случая»{whiteSpanish_End} не зависит от их категории и типа техники."
+"В сценарии {{@ colorLegacy 'whiteSpanish'}}«Воля случая»{{/}} порядок "
+"открытия резервов не зависит от типа техники."

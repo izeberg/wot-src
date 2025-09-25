@@ -16,6 +16,9 @@ msgstr "Чертёж собран"
 msgid "blueprintProgressBar/inProgress"
 msgstr "Чертёж  {values}"
 
+msgid "blueprintProgressBar/inProgress/progress"
+msgstr "Фрагмент чертежа {values}"
+
 msgid "blueprintProgressBar/inProgress/values"
 msgstr "{current} / {total}"
 

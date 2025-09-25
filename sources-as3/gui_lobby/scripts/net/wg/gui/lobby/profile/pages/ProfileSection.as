@@ -3,6 +3,7 @@ package net.wg.gui.lobby.profile.pages
    import flash.display.InteractiveObject;
    import flash.events.Event;
    import flash.geom.Point;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import net.wg.gui.lobby.components.IResizableContent;
    import net.wg.gui.lobby.profile.components.BattlesTypeDropdown;
@@ -19,6 +20,8 @@ package net.wg.gui.lobby.profile.pages
       private static const ANIMATION_INVALID:String = "animInv";
       
       private static const TOP_OFFSET:Number = -100;
+      
+      protected static const TOP_PADDING:uint = 55;
        
       
       public var title:TextField = null;
@@ -28,6 +31,8 @@ package net.wg.gui.lobby.profile.pages
       public var battlesDropdown:BattlesTypeDropdown = null;
       
       protected var currentDimension:Point = null;
+      
+      protected var paddings:Rectangle = null;
       
       protected var currentData:Object = null;
       
@@ -92,6 +97,7 @@ package net.wg.gui.lobby.profile.pages
       {
          this.currentData = null;
          this.currentDimension = null;
+         this.paddings = null;
          this._animationManager.dispose();
          this._animationManager = null;
          if(this.battlesDropdown)
@@ -135,7 +141,7 @@ package net.wg.gui.lobby.profile.pages
          return null;
       }
       
-      public function setViewSize(param1:Number, param2:Number) : void
+      public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
          if(!this.currentDimension)
          {
@@ -143,6 +149,7 @@ package net.wg.gui.lobby.profile.pages
          }
          this.currentDimension.x = param1;
          this.currentDimension.y = param2 + TOP_OFFSET;
+         this.paddings = param3;
          invalidate(ResizableInvalidationTypes.CURRENT_DIMENSION_INVALID);
       }
       
@@ -210,11 +217,6 @@ package net.wg.gui.lobby.profile.pages
          invalidate(ResizableInvalidationTypes.CURRENT_DIMENSION_INVALID);
       }
       
-      private function onDropDownChangeHandler(param1:Event) : void
-      {
-         requestDossierS(this.battlesDropdown.selectedItem);
-      }
-      
       public function get isWindowed() : Boolean
       {
          return this._isWindowed;
@@ -237,6 +239,11 @@ package net.wg.gui.lobby.profile.pages
          {
             this.y = this.windowOffset;
          }
+      }
+      
+      private function onDropDownChangeHandler(param1:Event) : void
+      {
+         requestDossierS(this.battlesDropdown.selectedItem);
       }
    }
 }

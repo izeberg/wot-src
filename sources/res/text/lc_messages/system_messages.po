@@ -153,11 +153,6 @@ msgstr ""
 msgid "artefact_apply/error_not_for_this_vehicle_type"
 msgstr "%(kind)s «%(name)s» не подходит для этой машины."
 
-msgid "artefact_apply/error_too_heavy"
-msgstr ""
-"%(kind)s «%(name)s» не подходит по массе. Попробуйте заменить ходовую часть "
-"или облегчить машину."
-
 msgid "artefact_apply/invalid_vehicle"
 msgstr "Неправильная машина. %(kind)s «%(name)s» не установлено."
 
@@ -182,11 +177,6 @@ msgstr ""
 
 msgid "artefact_buy/error_not_for_this_vehicle_type"
 msgstr "%(kind)s «%(name)s» не подходит для этой машины."
-
-msgid "artefact_buy/error_too_heavy"
-msgstr ""
-"%(kind)s «%(name)s» не подходит по массе. Попробуйте заменить ходовую часть "
-"или облегчить машину."
 
 msgid "artefact_buy/invalid_module"
 msgstr "Покупка %(kind)s «%(name)s» не удалась. Неправильный модуль."
@@ -271,11 +261,6 @@ msgstr ""
 msgid "artefact_remove/demount_kit_success"
 msgstr "%(kind)s «%(name)s» снято с машины. Использован демонтажный набор."
 
-msgid "artefact_remove/error_too_heavy"
-msgstr ""
-"%(kind)s «%(name)s» нельзя демонтировать. Попробуйте заменить ходовую часть "
-"или облегчить машину."
-
 msgid "artefact_remove/incompatibleEqs"
 msgstr ""
 "Снаряжение «%s» отправлено на Склад в связи с несовместимостью с "
@@ -356,11 +341,6 @@ msgstr "Покупка %(kind)s «%(name)s» не удалась. Недоста
 
 msgid "battleBooster_buy/error_not_for_this_vehicle_type"
 msgstr "%(kind)s «%(name)s» не подходит для этой машины."
-
-msgid "battleBooster_buy/error_too_heavy"
-msgstr ""
-"%(kind)s «%(name)s» не подходит по массе. Попробуйте заменить ходовую часть "
-"или облегчить машину."
 
 msgid "battleBooster_buy/eventCoin_error"
 msgstr "Покупка %(kind)s «%(name)s» не удалась. Недостаточно юбилейных монет."
@@ -508,6 +488,11 @@ msgstr ""
 "Заработок очков Боевого пропуска в режиме «Натиск» временно недоступен. "
 "Ведутся технические работы."
 
+msgid "battlePass/switch_disable/comp7Light/body"
+msgstr ""
+"Заработок очков Боевого пропуска в режиме «Натиск Лайт» временно недоступен."
+" Ведутся технические работы."
+
 msgid "battlePass/switch_disable/epicBattle/body"
 msgstr ""
 "Боевой пропуск на Линии фронта временно недоступен. Ведутся технические "
@@ -527,6 +512,11 @@ msgid "battlePass/switch_enabled/comp7/body"
 msgstr ""
 "Заработок очков Боевого пропуска в режиме «Натиск» снова доступен. Приносим "
 "извинения за неудобства."
+
+msgid "battlePass/switch_enabled/comp7Light/body"
+msgstr ""
+"Заработок очков Боевого пропуска в режиме «Натиск Лайт» снова доступен. "
+"Приносим извинения за неудобства."
 
 msgid "battlePass/switch_enabled/epicBattle/body"
 msgstr ""
@@ -1068,11 +1058,6 @@ msgstr "%(userName)s уже состоит в клане."
 msgid "clientInstallError_not_for_this_vehicle_type"
 msgstr "Модуль %s «%s» не подходит для этой машины."
 
-msgid "clientInstallError_too_heavy"
-msgstr ""
-"Модуль %s «%s» не подходит по массе. Попробуйте заменить ходовую часть или "
-"облегчить машину."
-
 msgid "clientInstallError_vehicleGun_not_for_current_vehicle"
 msgstr "%s «%s» не подходит для данной башни. Замените башню."
 
@@ -1084,9 +1069,6 @@ msgstr "Модуль %s «%s» не подходит по нации."
 
 msgid "clientRemoveError_not_in_list"
 msgstr "Модуль %s «%s» не подходит для данной машины."
-
-msgid "clientRemoveError_too_heavy"
-msgstr "Модуль %s «%s» не подходит по массе. Попробуйте облегчить машину."
 
 msgid "clientRemoveError_wrong_item_type"
 msgstr "Модуль %s «%s» не подходит по типу."
@@ -2369,27 +2351,26 @@ msgstr "Действие недоступно. Дождитесь заверше
 
 msgid "maps_black_list/select/success"
 msgstr ""
-"Карта «%(mapName)s» исключена из Случайных боёв (для типа «Стандартный "
-"бой»). Изменить свой выбор можно будет через %(time)s."
+"Карта «%(mapName)s» исключена из Случайных боёв. Изменить свой выбор можно "
+"через %(time)s."
 
 msgid "maps_black_list/select/success/noSubscriptions"
 msgstr ""
-"Карта «%(mapName)s» была исключена из Случайных боёв (Стандартный тип боя). "
-"Вы можете изменить свой выбор через %(time)s или получить дополнительный "
-"слот для исключения карты, активировав Танковый премиум аккаунт или оформив "
-"подписку WoT Plus."
+"Карта «%(mapName)s» исключена из Случайных боёв. Вы можете изменить свой "
+"выбор через %(time)s или получить дополнительный слот для исключения карты, "
+"активировав Танковый премиум аккаунт или оформив подписку WoT Plus."
 
 msgid "maps_black_list/select/success/premium"
 msgstr ""
-"Карта «%(mapName)s» была исключена из Случайных боёв (Стандартный тип боя). "
-"Вы можете изменить свой выбор через %(time)s или получить дополнительный "
-"слот для исключения карты, оформив подписку WoT Plus."
+"Карта «%(mapName)s» исключена из Случайных боёв. Вы можете изменить свой "
+"выбор через %(time)s или получить дополнительный слот для исключения карты, "
+"оформив подписку WoT Plus."
 
 msgid "maps_black_list/select/success/wotPlus"
 msgstr ""
-"Карта «%(mapName)s» была исключена из Случайных боёв (Стандартный тип боя). "
-"Вы можете изменить свой выбор через %(time)s или получить дополнительный "
-"слот для исключения, активировав Танковый премиум аккаунт."
+"Карта «%(mapName)s» исключена из Случайных боёв. Вы можете изменить свой "
+"выбор через %(time)s или получить дополнительный слот для исключения карты, "
+"активировав Танковый премиум аккаунт."
 
 msgid "maps_black_list/switch_off/body"
 msgstr ""
@@ -2468,16 +2449,6 @@ msgstr "Модуль %(kind)s «%(name)s» не подходит для данн
 msgid "module_apply/error_not_with_installed_equipment"
 msgstr "Модуль %(kind)s «%(name)s» несовместим со снаряжением «%s»."
 
-msgid "module_apply/error_too_heavy"
-msgstr ""
-"Модуль %(kind)s «%(name)s» не подходит по массе. Попробуйте заменить ходовую"
-" часть или облегчить машину."
-
-msgid "module_apply/error_too_heavy_chassis"
-msgstr ""
-"Модуль %(kind)s «%(name)s» не подходит по массе. Попробуйте облегчить "
-"машину."
-
 msgid "module_apply/error_wrong_item_type"
 msgstr "Модуль %(kind)s «%(name)s» не подходит по типу."
 
@@ -2536,16 +2507,6 @@ msgstr "Модуль %(kind)s «%(name)s» не подходит для данн
 
 msgid "module_buy/error_not_with_installed_equipment"
 msgstr "Модуль %(kind)s «%(name)s» несовместим со снаряжением «%s»."
-
-msgid "module_buy/error_too_heavy"
-msgstr ""
-"Модуль %(kind)s «%(name)s» не подходит по массе. Попробуйте заменить ходовую"
-" часть или облегчить машину."
-
-msgid "module_buy/error_too_heavy_chassis"
-msgstr ""
-"Модуль %(kind)s «%(name)s» не подходит по массе. Попробуйте облегчить "
-"машину."
 
 msgid "module_buy/error_wrong_item_type"
 msgstr "Модуль %(kind)s «%(name)s» не подходит по типу."
@@ -2654,9 +2615,6 @@ msgstr "Потерян доступ к предложению."
 msgid "optionalDevices_apply/error"
 msgstr "Ошибка при настройке оборудования. Повторите попытку позже."
 
-msgid "optionalDevices_apply/error_too_heavy"
-msgstr "Недостаточно грузоподъёмности: попробуйте облегчить машину."
-
 msgid "optionalDevices_apply/not_enough_money"
 msgstr "Ошибка при настройке оборудования. Недостаточно средств для покупки."
 
@@ -2667,9 +2625,6 @@ msgstr ""
 
 msgid "optionalDevices_remove/error"
 msgstr "Ошибка при настройке оборудования. Повторите попытку позже."
-
-msgid "optionalDevices_remove/error_too_heavy"
-msgstr "Недостаточно грузоподъёмности: попробуйте облегчить машину."
 
 msgid "otherRestriction/nonFriendPrivateMessagesForbidden"
 msgstr ""
@@ -2699,6 +2654,74 @@ msgstr "Подтверждение возраста"
 msgid "periphery/errors/isNotAvailable"
 msgstr "Переход недоступен: невозможно определить сервер."
 
+msgid "personalMission/CompletionNotification/body"
+msgstr "Получена награда:"
+
+msgid "personalMission/awardsNotification/buttonLabel"
+msgstr "К операции"
+
+msgid "personalMission/awardsNotification/missionCompleted"
+msgstr "Задача выполнена"
+
+msgid "personalMission/awardsNotification/notCompletedFooter"
+msgstr "Переключайтесь между машинами, чтобы продолжить выполнение задачи."
+
+msgid "personalMission/awardsNotification/operation"
+msgstr "Операция «%(operation)s»"
+
+msgid "personalMission/awardsNotification/status"
+msgstr "Выполнено: %(completed)s%(all)s"
+
+msgid "personalMission/awardsNotification/status/all"
+msgstr " / %(all)d"
+
+msgid "personalMission/campaignCompleteHonor/title"
+msgstr "Кампания «%(campaignName)s» завершена с отличием!"
+
+msgid "personalMission/operationComplete/title"
+msgstr "Операция «%(operationName)s» выполнена!"
+
+msgid "personalMission/operationCompleteHonor/title"
+msgstr "Операция «%(operationName)s» выполнена с отличием!"
+
+msgid "personalMission/switcherNotification/allCampaignsOff"
+msgstr "Кампании временно недоступны. Ведутся технические работы."
+
+msgid "personalMission/switcherNotification/allCampaignsOn"
+msgstr "Кампании снова доступны. Приносим извинения за неудобства."
+
+msgid "personalMission/switcherNotification/campaignOff"
+msgstr ""
+"Кампания «%(campaignName)s» временно недоступна. Ведутся технические работы."
+
+msgid "personalMission/switcherNotification/campaignOn"
+msgstr ""
+"Кампания «%(campaignName)s» снова доступна. Приносим извинения за "
+"неудобства."
+
+msgid "personalMission/switcherNotification/missionOff"
+msgstr ""
+"Задача «%(missionName)s» операции «%(operationName)s» временно недоступна. "
+"Ведутся технические работы."
+
+msgid "personalMission/switcherNotification/missionOn"
+msgstr ""
+"Задача «%(missionName)s» операции «%(operationName)s» снова доступна. "
+"Приносим извинения за неудобства."
+
+msgid "personalMission/switcherNotification/operationOff"
+msgstr ""
+"Операция «%(operationName)s» кампании «%(campaignName)s» временно "
+"недоступна. Ведутся технические работы."
+
+msgid "personalMission/switcherNotification/operationOn"
+msgstr ""
+"Операция «%(operationName)s» кампании «%(campaignName)s» снова доступна. "
+"Приносим извинения за неудобства."
+
+msgid "personalMissions/activateSeason/server_error"
+msgstr "Ошибка смены кампании. Попробуйте позже."
+
 msgid "personalMissions/badge"
 msgstr "Начислена нашивка: %(name)s."
 
@@ -2709,6 +2732,38 @@ msgid "personalMissions/camouflageUnlocked"
 msgstr ""
 "Уникальный камуфляж для %(vehicleName)s доступен для всей техники нации "
 "%(nation)s."
+
+msgid "personalMissions/campaign12Paused/body"
+msgstr ""
+"Прогресс операции сохранён. Вы можете возобновить кампании в любое время."
+
+msgid "personalMissions/campaign12Paused/title"
+msgstr "Кампании «%(campaignName1)s» и «%(campaignName2)s» приостановлены"
+
+msgid "personalMissions/campaign12Resumed/body"
+msgstr "Приостановленные операции и задачи возобновлены."
+
+msgid "personalMissions/campaign12Resumed/title"
+msgstr "Кампании «%(campaignName1)s» и «%(campaignName2)s» снова доступны."
+
+msgid "personalMissions/campaign3Paused/body"
+msgstr ""
+"Прогресс операции сохранён. Вы можете возобновить кампанию в любое время."
+
+msgid "personalMissions/campaign3Paused/title"
+msgstr "Кампания «%(campaignName)s» приостановлена"
+
+msgid "personalMissions/campaign3Resumed/body"
+msgstr "Приостановленные операции возобновлены."
+
+msgid "personalMissions/campaign3Resumed/title"
+msgstr "Кампания «%(campaignName)s» возобновлена"
+
+msgid "personalMissions/detailInstalled/body"
+msgstr "Модуль «%(detailName)s» успешно установлен."
+
+msgid "personalMissions/detailInstalled/title"
+msgstr "Операция «%(operationName)s»"
 
 msgid "personalMissions/discard/server_error"
 msgstr "Сброс задачи не выполнен. Попробуйте позже."
@@ -2739,6 +2794,33 @@ msgstr ""
 "Возвращено бланков приказа: %(count)s\n"
 "Бланки приказа могут использоваться повторно."
 
+msgid "personalMissions/operationActivation/body"
+msgstr "Активирована первая задача в каждой цепочке."
+
+msgid "personalMissions/operationActivation/title"
+msgstr "Операция «%(operationName)s» активирована!"
+
+msgid "personalMissions/operationComplete/body"
+msgstr ""
+"Получена награда: \n"
+"%(reward list)s"
+
+msgid "personalMissions/operationComplete/title"
+msgstr "Операция «%(name)s» выполнена!"
+
+msgid "personalMissions/operationPaused/body"
+msgstr ""
+"Прогресс задачи сохранён. Вы можете возобновить операцию в любое время."
+
+msgid "personalMissions/operationPaused/title"
+msgstr "Операция «%(operationName)s» приостановлена"
+
+msgid "personalMissions/operationResumed/body"
+msgstr "Приостановленные задачи возобновлены."
+
+msgid "personalMissions/operationResumed/title"
+msgstr "Операция «%(operationName)s» возобновлена"
+
 msgid "personalMissions/pause/server_error"
 msgstr "Задача не поставлена на паузу. Попробуйте позже."
 
@@ -2764,6 +2846,12 @@ msgstr "Ошибка. В данный момент бланк приказа н�
 
 msgid "personalMissions/pawn/success"
 msgstr "В задачу «%(questName)s» заложено бланков приказа: %(count)s"
+
+msgid "personalMissions/reward/pm3/server_error"
+msgstr "Ошибка получения наград. Попробуйте позже."
+
+msgid "personalMissions/reward/pm3/success"
+msgstr "Модуль «%(detail_name)s» успешно установлен."
 
 msgid "personalMissions/reward/regular/server_error"
 msgstr "Не удалось получить награду. Попробуйте позже."
@@ -2800,6 +2888,9 @@ msgstr "Выбор боевых задач не выполнен: %(questNames)s
 
 msgid "personalMissions/select/server_error/DISABLED"
 msgstr "Действие недоступно. Боевые задачи временно отключены."
+
+msgid "personalMissions/select/server_error/INVALID_QUEST_ID"
+msgstr "Боевые задачи не выбраны: %(questNames)s. Попробуйте позже."
 
 msgid "personalMissions/select/server_error/LOCKED_BY_VEHICLE_QUEST"
 msgstr ""
@@ -2847,6 +2938,9 @@ msgstr ""
 
 msgid "personalMissions/tankmenGain"
 msgstr "Начислено: девушка-танкист"
+
+msgid "personalMissions30/select/server_error"
+msgstr "Ошибка активации. Попробуйте позже."
 
 msgid "piggyBank/piggyBankFull"
 msgstr "Хранилище кредитов заполнено, но откроется через %(timeValue)s"
@@ -4542,6 +4636,12 @@ msgstr ""
 "%(userString)s исследован. Потрачено нераспределённого опыта %(unspentXP)s, "
 "свободного опыта %(freeXP)s."
 
+msgid "vehicleMilestones/vanityAvailable/text"
+msgstr "Получен доступ к системе элитных наград для %(vehicle)s"
+
+msgid "vehicleMilestones/vanityAvailable/title"
+msgstr "Элитные награды"
+
 msgid "vehiclePostProgression/buyPairModification/body"
 msgstr "Модификация %(modification)s для %(vehicle)s успешно проведена."
 
@@ -4637,6 +4737,24 @@ msgstr ""
 "Получен доступ к схеме модификаций техники. Вы можете совершить более тонкую"
 " ролевую настройку ваших машин и изменить их ТТХ с помощью различных "
 "модификаций."
+
+msgid "vehicleSkillTreeProgression/processorError/body"
+msgstr "Ошибка улучшения. Повторите попытку позже."
+
+msgid "vehicleSkillTreeProgression/processorError/title"
+msgstr "Ошибка"
+
+msgid "vehicleSkillTreeProgression/researchStep/body"
+msgstr "Узел «%(perk)s» успешно изучен для %(vehicle)s."
+
+msgid "vehicleSkillTreeProgression/researchStep/title"
+msgstr "Узел изучен"
+
+msgid "vehicleSkillTreeProgression/researchSteps/body"
+msgstr "Узлы «%(perk)s» успешно изучены для %(vehicle)s."
+
+msgid "vehicleSkillTreeProgression/researchSteps/title"
+msgstr "Узлы изучены"
 
 msgid "vehicle_auto_return/server_error"
 msgstr "Операция недоступна. Попробуйте позже."
@@ -5002,6 +5120,31 @@ msgid "wallet/not_available_gold"
 msgstr ""
 "Идёт получение данных о балансе. Всё ваше золото станет доступно в ближайшее"
 " время."
+
+msgid "weekly_quests/reroll/WQ_NOT_ENABLED"
+msgstr "Замена еженедельной задачи недоступна: операция заблокирована."
+
+msgid "weekly_quests/reroll/WQ_NO_SUCH_TOKEN"
+msgstr "Замена еженедельной задачи недоступна: неверная задача."
+
+msgid "weekly_quests/reroll/WQ_QUEST_COMPLETED"
+msgstr "Замена еженедельной задачи недоступна: задача уже выполнена."
+
+msgid "weekly_quests/reroll/WQ_REROLL_TIMEOUT"
+msgstr "Замена еженедельной задачи недоступна: операция приостановлена."
+
+msgid "weekly_quests/reroll/success"
+msgstr "Еженедельная задача заменена."
+
+msgid "weekly_quests/reroll/unknown_error"
+msgstr "Замена еженедельной задачи недоступна. Попробуйте позже."
+
+msgid "weekly_quests/switch_off/body"
+msgstr ""
+"Еженедельные задачи временно недоступны. Приносим извинения за неудобства."
+
+msgid "weekly_quests/switch_on/body"
+msgstr "Еженедельные задачи снова доступны. Приносим извинения за неудобства."
 
 msgid "winback/turnOffBattlesError"
 msgstr "Не удалось завершить Разминку. Пожалуйста, попробуйте позже."

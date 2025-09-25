@@ -27,6 +27,11 @@ package net.wg.gui.components.containers.inject
          this._proxy.setSize(param1,param2);
       }
       
+      public function setPaddings(param1:Rectangle) : void
+      {
+         this._proxy.setPaddings(param1);
+      }
+      
       override protected function configUI() : void
       {
          super.configUI();

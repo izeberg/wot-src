@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>static</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>base</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.093287 -0.000000</row3>
+					</transform>
+					<node>
+						<identifier>l_mic_1</identifier>
+						<transform>
+							<row0>-0.999929 0.002135 0.011703</row0>
+							<row1>0.002135 0.999998 -0.000025</row1>
+							<row2>-0.011703 0.000000 -0.999932</row2>
+							<row3>-0.118836 0.073358 -0.013164</row3>
+						</transform>
+						<node>
+							<identifier>l_mic_2</identifier>
+							<transform>
+								<row0>0.041604 0.652671 -0.756498</row0>
+								<row1>-0.033029 0.757638 0.651838</row1>
+								<row2>0.998588 -0.002132 0.053078</row2>
+								<row3>0.042160 -0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>l_mic_3</identifier>
+								<transform>
+									<row0>0.999469 -0.019396 -0.026189</row0>
+									<row1>0.019966 0.999566 0.021682</row1>
+									<row2>0.025757 -0.022194 0.999422</row2>
+									<row3>0.030919 -0.000001 -0.000000</row3>
+								</transform>
+								<node>
+									<identifier>l_mic_4</identifier>
+									<transform>
+										<row0>0.369505 -0.418859 0.829472</row0>
+										<row1>-0.003317 0.892045 0.451934</row1>
+										<row2>-0.929223 -0.169744 0.328226</row2>
+										<row3>0.075146 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>l_mic_4_BlendBone</identifier>
+										<transform>
+											<row0>-0.833528 -0.447697 -0.323725</row0>
+											<row1>-0.086994 0.685000 -0.723331</row1>
+											<row2>-0.545585 0.574754 0.609913</row2>
+											<row3>-0.152362 -0.194130 0.159145</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>l_mic_3_BlendBone</identifier>
+									<transform>
+										<row0>-0.005695 0.004715 -0.999973</row0>
+										<row1>0.637718 0.770270 0.000000</row1>
+										<row2>-0.770249 0.637701 0.007393</row2>
+										<row3>-0.128390 -0.136369 -0.161878</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>l_mic_2_BlendBone</identifier>
+								<transform>
+									<row0>-0.031354 0.027016 -0.999143</row0>
+									<row1>0.652759 0.757566 0.000000</row1>
+									<row2>-0.756917 0.652199 0.041388</row2>
+									<row3>-0.104295 -0.130227 -0.161379</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>l_mic_1_BlendBone</identifier>
+							<transform>
+								<row0>-0.999929 0.002135 -0.011703</row0>
+								<row1>0.002135 0.999998 0.000000</row1>
+								<row2>-0.011703 0.000025 0.999932</row2>
+								<row3>-0.119029 -0.166391 -0.014554</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>lense</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.053465 0.213834 0.369545</row3>
+						</transform>
+						<node>
+							<identifier>lense_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.053465 -0.307121 -0.369545</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>r_mic_1</identifier>
+						<transform>
+							<row0>-0.999929 -0.002135 -0.011703</row0>
+							<row1>0.002135 -0.999998 0.000025</row1>
+							<row2>-0.011703 0.000000 0.999932</row2>
+							<row3>0.118836 0.073357 -0.013164</row3>
+						</transform>
+						<node>
+							<identifier>r_mic_2</identifier>
+							<transform>
+								<row0>0.041604 0.652671 -0.756498</row0>
+								<row1>-0.033029 0.757638 0.651838</row1>
+								<row2>0.998588 -0.002132 0.053078</row2>
+								<row3>-0.042160 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>r_mic_3</identifier>
+								<transform>
+									<row0>0.999469 -0.019396 -0.026189</row0>
+									<row1>0.019966 0.999566 0.021682</row1>
+									<row2>0.025757 -0.022194 0.999422</row2>
+									<row3>-0.030919 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>r_mic_4</identifier>
+									<transform>
+										<row0>0.369505 -0.418859 0.829472</row0>
+										<row1>-0.003317 0.892045 0.451934</row1>
+										<row2>-0.929223 -0.169744 0.328226</row2>
+										<row3>-0.075146 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>r_mic_4_BlendBone</identifier>
+										<transform>
+											<row0>-0.833528 -0.447697 -0.323725</row0>
+											<row1>0.086994 -0.685000 0.723331</row1>
+											<row2>0.545585 -0.574754 -0.609913</row2>
+											<row3>0.152362 0.194130 -0.159145</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>r_mic_3_BlendBone</identifier>
+									<transform>
+										<row0>-0.005695 0.004715 -0.999973</row0>
+										<row1>-0.637718 -0.770270 0.000000</row1>
+										<row2>0.770249 -0.637701 -0.007393</row2>
+										<row3>0.128390 0.136369 0.161879</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>r_mic_2_BlendBone</identifier>
+								<transform>
+									<row0>-0.031354 0.027016 -0.999143</row0>
+									<row1>-0.652759 -0.757566 0.000000</row1>
+									<row2>0.756917 -0.652199 -0.041388</row2>
+									<row3>0.104295 0.130227 0.161380</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>r_mic_1_BlendBone</identifier>
+							<transform>
+								<row0>-0.999929 0.002135 -0.011703</row0>
+								<row1>-0.002135 -0.999998 0.000000</row1>
+								<row2>0.011703 -0.000025 -0.999932</row2>
+								<row3>0.119030 0.166391 0.014554</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>top_mic</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 1.000000</row2>
+							<row3>0.000000 0.292020 0.082038</row3>
+						</transform>
+						<node>
+							<identifier>top_mic_BlendBone</identifier>
+							<transform>
+								<row0>1.000000 0.000000 0.000000</row0>
+								<row1>0.000000 1.000000 0.000000</row1>
+								<row2>0.000000 0.000000 -1.000000</row2>
+								<row3>-0.000000 -0.385308 -0.082038</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>base_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.000000 -0.093287 0.000000</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>static_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>top_mic_BlendBone</node>
+		<node>r_mic_4_BlendBone</node>
+		<node>r_mic_1_BlendBone</node>
+		<node>base_BlendBone</node>
+		<node>r_mic_2_BlendBone</node>
+		<node>r_mic_3_BlendBone</node>
+		<node>l_mic_4_BlendBone</node>
+		<node>l_mic_1_BlendBone</node>
+		<node>l_mic_2_BlendBone</node>
+		<node>l_mic_3_BlendBone</node>
+		<node>static_BlendBone</node>
+		<node>lense_BlendBone</node>
+		<geometry>
+			<vertices>attachmentShapeDeformed.vertices</vertices>
+			<primitive>attachmentShapeDeformed.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>equipment_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/Pursuer_Camera_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/Pursuer_Camera_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>5.000000 5.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/Pursuer_Camera_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/Pursuer_Camera_ANM.dds</Texture>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.240000</Float>
+					</property>
+					<property>
+						g_dissolveEdgeWidth
+						<Float>0.160000</Float>
+					</property>
+					<property>
+						g_dissolveFactor
+						<Float>0.100000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.470000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.310000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.241298 -0.091471</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>decal_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						alphaReference
+						<Int>64</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/pbm_decal_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/pbm_decal_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>1.753000 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/pbm_decal_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_70_PM3_Camera/pbm_decal_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>0.097546 0.156690 0.101535</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.427477 -0.200000 -0.216314</min>
+		<max>0.427477 0.689513 0.375290</max>
+	</boundingBox>
+	<geometrySize>37412</geometrySize>
+</root>

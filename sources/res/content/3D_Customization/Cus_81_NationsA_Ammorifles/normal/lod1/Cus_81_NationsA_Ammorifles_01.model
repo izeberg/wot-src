@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_81_NationsA_Ammorifles/normal/lod2/Cus_81_NationsA_Ammorifles_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.466663 -0.000000 -0.728891</min>
+		<max>0.039931 0.410741 0.688515</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_81_NationsA_Ammorifles/normal/lod1/Cus_81_NationsA_Ammorifles_01</nodefullVisual>
+	<tank>true</tank>
+</root>

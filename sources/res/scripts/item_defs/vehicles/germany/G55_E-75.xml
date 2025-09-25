@@ -95,7 +95,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>47500</weight>
-		<maxHealth>1456</maxHealth>
+		<maxHealth>1600</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>240</maxHealth>
 			<maxRegenHealth>160</maxRegenHealth>
@@ -2323,14 +2323,13 @@
 				<rightTrack>40</rightTrack>
 			</armor>
 			<weight>22350</weight>
-			<maxLoad>88000</maxLoad>
 			<terrainResistance>
-				1.2 1.3 2.4
+				1.1 1.2 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>72000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>22</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.22
@@ -4017,14 +4016,13 @@
 				<rightTrack>40</rightTrack>
 			</armor>
 			<weight>22350</weight>
-			<maxLoad>96000</maxLoad>
 			<terrainResistance>
 				1.1 1.2 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>80000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>24</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.21
@@ -5734,7 +5732,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_2 armor_4</primaryArmor>
 			<weight>10938</weight>
-			<maxHealth>394</maxHealth>
+			<maxHealth>300</maxHealth>
 			<rotationSpeed>24</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>160</maxHealth>
@@ -5758,12 +5756,12 @@
 					shared
 					<maxAmmo>42</maxAmmo>
 					<reloadTime>
-						9.4
+						8.6
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5807,13 +5805,13 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.2
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 8 0.002778 8 0.016667 8 0.417779 8 0.437241 6 0.458333 6 0.472222 5.5 0.527778 5.5 0.541667 6 0.602594 8 0.983333 8 0.997222 8 1 8
+							0.00000 8.00 0.41667 8.00 0.44444 6.00 0.55556 6.00 0.58333 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7031,7 +7029,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>16520</weight>
-			<maxHealth>494</maxHealth>
+			<maxHealth>400</maxHealth>
 			<rotationSpeed>18</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>160</maxHealth>
@@ -7058,7 +7056,10 @@
 				<_105mm_Kw_K_L_68_Ausf_E>
 					shared
 					<maxAmmo>42</maxAmmo>
-					<reloadTime>9</reloadTime>
+					<reloadTime>
+						8.5
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.1
@@ -7104,11 +7105,14 @@
 						0.3
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						1.9
+						<!--BW_String-->
+					</aimingTime>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 8 0.002778 8 0.016667 8 0.417779 8 0.437241 6 0.458333 6 0.472222 5.5 0.527778 5.5 0.541667 6 0.602594 8 0.983333 8 0.997222 8 1 8
+							0.00000 8.00 0.41667 8.00 0.44444 6.00 0.55556 6.00 0.58333 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -7222,7 +7226,7 @@
 						</vehicle>
 					</unlocks>
 					<shotDispersionRadius>
-						0.37
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -7269,7 +7273,7 @@
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 8 0.002778 8 0.016667 8 0.417779 8 0.437241 6 0.458333 6 0.472222 5.5 0.527778 5.5 0.541667 6 0.602594 8 0.983333 8 0.997222 8 1 8
+							0.00000 8.00 0.41667 8.00 0.44444 6.00 0.55556 6.00 0.58333 8.00 1.00000 8.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -8461,14 +8465,11 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_234_TRM_P40>
-					<smplEnginePower>800</smplEnginePower>
+					<smplEnginePower>920</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</Maybach_HL_234_TRM_P40>
 				<Maybach_HL_234_TRM_P45>
-					<smplEnginePower>
-						951.553
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>1000</smplEnginePower>
 					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</Maybach_HL_234_TRM_P45>
 			</engines>
@@ -8477,19 +8478,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.1932
+								0.1771
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.10465
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

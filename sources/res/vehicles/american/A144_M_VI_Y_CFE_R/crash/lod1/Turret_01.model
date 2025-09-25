@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A144_M_VI_Y_CFE_R/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.122150 -0.138682 -0.908265</min>
+		<max>1.122348 0.871670 0.908436</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A144_M_VI_Y_CFE_R/crash/lod1/Turret_01</nodefullVisual>
+</root>

@@ -54,7 +54,7 @@ package net.wg.gui.login.impl
       
       private static const DELAY_ENABLE_INPUTS:int = 200;
       
-      private static const WOT_LOGO_OFFSET_Y:int = 190;
+      private static const WOT_LOGO_OFFSET_Y:int = 280;
       
       private static const COPYRIGHT_MIN_BOTTOM_MARGIN:int = 3;
       

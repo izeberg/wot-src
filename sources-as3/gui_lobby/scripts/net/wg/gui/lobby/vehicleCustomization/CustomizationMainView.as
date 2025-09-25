@@ -6,6 +6,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import flash.events.Event;
    import flash.events.KeyboardEvent;
    import flash.events.MouseEvent;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.Aliases;
    import net.wg.data.constants.Cursors;
@@ -41,7 +42,9 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.infrastructure.base.meta.ICustomizationMainViewMeta;
    import net.wg.infrastructure.base.meta.impl.CustomizationMainViewMeta;
    import net.wg.infrastructure.interfaces.ICursorManager;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.utils.IGameInputManager;
+   import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.data.DataProvider;
    import scaleform.clik.events.IndexEvent;
@@ -49,14 +52,14 @@ package net.wg.gui.lobby.vehicleCustomization
    import scaleform.clik.motion.Tween;
    import scaleform.gfx.MouseEventEx;
    
-   public class CustomizationMainView extends CustomizationMainViewMeta implements ICustomizationMainViewMeta
+   public class CustomizationMainView extends CustomizationMainViewMeta implements ICustomizationMainViewMeta, IInnerView
    {
       
       private static const BOTTOM_OFFSET:int = 248;
       
-      private static const MIN_RES_BOTTOM_OFFSET:int = 270;
+      private static const MIN_RES_BOTTOM_OFFSET:int = 295;
       
-      private static const MIN_RESOLUTION:int = 900;
+      private static const BOTTOM_PANEL_HEIGHT:int = 214;
       
       private static const INV_FOCUS_CHAIN:String = "InvFocusChain";
       
@@ -73,6 +76,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const SEASON_BAR_SMALL_OFFSET_X:int = -150;
       
       private static const SEASON_BAR_OFFSET_Y:int = -129;
+      
+      private static const SEASON_BAR_TOP_OFFSET:int = -30;
       
       private static const SEASON_BAR_STYLE_INFO_OFFSET_Y:Number = -60;
       
@@ -109,6 +114,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const ENTRY_POINT_SHORT_START_X:int = 0;
       
       private static const SINGLE_ENTRY_POINT_Y_SHIFT:int = 21;
+      
+      private static const BG_ALPHA:Number = 0.5;
        
       
       public var notification:CustomizationNotification = null;
@@ -159,11 +166,16 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private var _hideContainer:Sprite;
       
+      private var _topOffset:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
+      
       public function CustomizationMainView()
       {
          this._focusChain = new Vector.<InteractiveObject>();
          this._tweens = new Vector.<Tween>();
          super();
+         this._gameInputMgr = App.gameInputMgr;
          this._cursor = App.cursor;
       }
       
@@ -176,16 +188,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         this._actualWidth = param1;
-         this._actualHeight = param2;
-         invalidateSize();
-         this.styleInfo.invalidateSize();
-      }
-      
-      override protected function initialize() : void
-      {
-         super.initialize();
-         this._gameInputMgr = App.gameInputMgr;
+         assertUpdateStageMethod();
       }
       
       override protected function draw() : void
@@ -195,12 +198,17 @@ package net.wg.gui.lobby.vehicleCustomization
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
+            this.customizationHeader.y = this._topOffset;
             this.customizationHeader.updateSize(this._actualWidth);
+            this.styleInfo.y = this._topOffset;
             this.vehicleView.updateSize(this._actualWidth,this._actualHeight);
-            _loc1_ = App.appHeight < MIN_RESOLUTION;
+            _loc1_ = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
             _loc2_ = !!_loc1_ ? int(MIN_RES_BOTTOM_OFFSET) : int(BOTTOM_OFFSET);
-            this.bottomPanel.y = this._actualHeight - this.bottomPanel.height + _loc2_ ^ 0;
+            this.bottomPanel.y = this._actualHeight - this.bottomPanel.height + _loc2_ - this._bottomOffset ^ 0;
             this.bottomPanel.width = this._actualWidth;
+            this.bottomPanel.bottomOffset = this._bottomOffset;
+            this.bottomPanel.setBackgroundHeight(BOTTOM_PANEL_HEIGHT);
+            this.background.y = 0;
             this.background.width = App.appWidth;
             this.background.height = App.appHeight;
             this.bottomPanel.invalidateSize();
@@ -260,6 +268,7 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc1_:Sprite = new Sprite();
          addChild(_loc1_);
          this.background.hitArea = _loc1_;
+         this.background.alpha = BG_ALPHA;
          this._magneticTool = new MagneticToolController(this,this.getMagneticClickHandlers());
          this.addToHideContainer();
          propertiesSheetSetS(this.propertiesSheet,this.propertiesSheet.width,this.propertiesSheet.height,CustomizationPropertiesSheet.OFFSET_X,CustomizationPropertiesSheet.OFFSET_Y);
@@ -504,8 +513,24 @@ package net.wg.gui.lobby.vehicleCustomization
          return _loc1_.concat(this.bottomPanel.getFocusChain());
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
       public function onLobbyZoomChange(param1:Number) : void
       {
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this._bottomOffset = param3.height;
+         this.customizationHeader.allowCloseBtnShowing = this._topOffset == 0;
+         this._actualWidth = param1;
+         this._actualHeight = param2;
+         invalidateSize();
+         this.styleInfo.invalidateSize();
       }
       
       private function updateInnerEntryPoints() : void
@@ -520,7 +545,7 @@ package net.wg.gui.lobby.vehicleCustomization
             return;
          }
          var _loc2_:Boolean = App.appWidth < SIDEBAR_MIN_SCREEN_SIZE;
-         var _loc3_:Boolean = App.appHeight < MIN_RESOLUTION;
+         var _loc3_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          var _loc4_:Number = !!_loc3_ ? Number(ENTRY_POINT_MIN_SCALE) : Number(ENTRY_POINT_SCALE);
          var _loc5_:int = this.getInnerEntriesCount();
          var _loc6_:Boolean = _loc5_ > 1;
@@ -751,6 +776,7 @@ package net.wg.gui.lobby.vehicleCustomization
          {
             this.seasonsBar.y = (this._actualHeight - this.seasonsBar.height >> 1) + (!!this.styleInfo.visible ? SEASON_BAR_STYLE_INFO_OFFSET_Y : SEASON_BAR_OFFSET_Y);
          }
+         this.seasonsBar.y += this._topOffset > 0 ? SEASON_BAR_TOP_OFFSET : 0;
          this.updateSeasonRenders(_loc1_);
       }
       

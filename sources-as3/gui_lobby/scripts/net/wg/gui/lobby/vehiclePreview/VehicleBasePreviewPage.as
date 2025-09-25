@@ -6,11 +6,10 @@ package net.wg.gui.lobby.vehiclePreview
    import flash.display.Sprite;
    import flash.display.Stage;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.constants.generated.VEHPREVIEW_CONSTANTS;
-   import net.wg.gui.components.advanced.interfaces.IBackButton;
    import net.wg.gui.events.LobbyEvent;
-   import net.wg.gui.interfaces.ISoundButtonEx;
    import net.wg.gui.lobby.vehiclePreview.additionalInfo.VPAdditionalInfoPanel;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.IVPBottomPanel;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelShowcaseStyleBuying;
@@ -23,16 +22,16 @@ package net.wg.gui.lobby.vehiclePreview
    import net.wg.infrastructure.base.meta.IVehicleBasePreviewMeta;
    import net.wg.infrastructure.base.meta.impl.VehicleBasePreviewMeta;
    import net.wg.infrastructure.interfaces.IDAAPIModule;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.IClassFactory;
    import net.wg.utils.IStageSizeDependComponent;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
-   import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.events.InputEvent;
    import scaleform.clik.motion.Tween;
    
-   public class VehicleBasePreviewPage extends VehicleBasePreviewMeta implements IVehicleBasePreviewMeta, IStageSizeDependComponent
+   public class VehicleBasePreviewPage extends VehicleBasePreviewMeta implements IVehicleBasePreviewMeta, IStageSizeDependComponent, IInnerView
    {
       
       private static const INTRO_FLAG:String = "showIntro";
@@ -58,13 +57,7 @@ package net.wg.gui.lobby.vehiclePreview
       private static const SHOW_SLOTS_ALPHA:Number = 1;
       
       private static const HIDE_SLOTS_ALPHA:Number = 0;
-      
-      private static const NAVIGATION_BUTTONS_OFFSET:int = 10;
        
-      
-      public var closeButton:ISoundButtonEx = null;
-      
-      public var backButton:IBackButton = null;
       
       public var leftBackground:MovieClip = null;
       
@@ -96,6 +89,10 @@ package net.wg.gui.lobby.vehiclePreview
       
       private var _isSmallHeight:Boolean = false;
       
+      protected var _paddingTop:uint = 0;
+      
+      protected var _paddingBottom:uint = 0;
+      
       public function VehicleBasePreviewPage()
       {
          this._toolTipMgr = App.toolTipMgr;
@@ -108,31 +105,28 @@ package net.wg.gui.lobby.vehiclePreview
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         setSize(param1,param2);
+         assertUpdateStageMethod();
       }
       
       override protected function onInitModalFocus(param1:InteractiveObject) : void
       {
          super.onInitModalFocus(param1);
-         var _loc2_:Vector.<InteractiveObject> = new <InteractiveObject>[InteractiveObject(this.backButton),InteractiveObject(this.closeButton)];
+         var _loc2_:Vector.<InteractiveObject> = new Vector.<InteractiveObject>(0);
          var _loc3_:int = 0;
          if(this.bottomPanel != null && this.bottomPanel.getBtn() != null)
          {
             _loc2_.push(InteractiveObject(this.bottomPanel.getBtn()));
-            _loc3_ = 2;
          }
          App.utils.commons.initTabIndex(_loc2_);
-         setFocus(_loc2_[_loc3_]);
-         _loc2_.splice(0,_loc2_.length);
+         if(_loc2_.length > 0)
+         {
+            setFocus(_loc2_[_loc3_]);
+            _loc2_.splice(0,_loc2_.length);
+         }
       }
       
       override protected function setData(param1:VPPageBaseVO) : void
       {
-         this.closeButton.label = param1.closeBtnLabel;
-         this.closeButton.visible = param1.showCloseBtn;
-         this.backButton.label = param1.backBtnLabel;
-         this.backButton.descrLabel = param1.backBtnDescrLabel;
-         this.backButton.visible = param1.showBackButton;
          invalidateSize();
       }
       
@@ -153,8 +147,6 @@ package net.wg.gui.lobby.vehiclePreview
          this.fadingPanels.mouseEnabled = false;
          this.leftBackground.mouseEnabled = this.leftBackground.mouseChildren = false;
          this.background.mouseEnabled = this.background.mouseChildren = false;
-         this.backButton.addEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
-         this.closeButton.addEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
          App.stageSizeMgr.register(this);
       }
       
@@ -177,8 +169,6 @@ package net.wg.gui.lobby.vehiclePreview
       
       override protected function onBeforeDispose() : void
       {
-         this.backButton.removeEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
-         this.closeButton.removeEventListener(ButtonEvent.CLICK,this.onCloseBtnClickHandler);
          App.gameInputMgr.clearKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.onEscapeKeyUpHandler);
          this._stage.dispatchEvent(new LobbyEvent(LobbyEvent.UNREGISTER_DRAGGING));
          this._stage.removeEventListener(LobbyEvent.DRAGGING_START,this.onDraggingStartHandler);
@@ -191,10 +181,6 @@ package net.wg.gui.lobby.vehiclePreview
          App.stageSizeMgr.unregister(this);
          this.disposeTweens();
          this._tweens = null;
-         this.backButton.dispose();
-         this.backButton = null;
-         this.closeButton.dispose();
-         this.closeButton = null;
          this.leftBackground = null;
          this.messengerBg = null;
          this._classFactory = null;
@@ -219,20 +205,19 @@ package net.wg.gui.lobby.vehiclePreview
             this.background.height = height;
             this.messengerBg.width = width;
             this.messengerBg.y = height | 0;
-            this.backButton.x = this._offset - NAVIGATION_BUTTONS_OFFSET;
-            this.closeButton.x = width - this._offset - this.closeButton.width + NAVIGATION_BUTTONS_OFFSET | 0;
             _loc1_ = height - this._offset * 2 - this._panelVerticalOffset - BUYING_PANEL_OFFSET;
             this._additionalInfoPanel.x = this._offset;
-            this._additionalInfoPanel.y = this._offset + this._panelVerticalOffset;
+            this._additionalInfoPanel.y = this._offset + this._panelVerticalOffset + this._paddingTop;
             this._additionalInfoPanel.height = _loc1_;
             if(this.topPanel != null)
             {
                this.topPanel.x = width - this.topPanel.width >> 1;
+               this.topPanel.y = this._paddingTop;
             }
             if(this.bottomPanel != null)
             {
                this.bottomPanel.x = width - this.bottomPanel.width >> 1;
-               this.bottomPanel.y = height - this._offset - this.bottomPanel.height | 0;
+               this.bottomPanel.y = height - this._offset - this._paddingBottom - this.bottomPanel.height | 0;
                if(this._isSmallHeight)
                {
                   this.bottomPanel.y += this.bottomPanel.getSmallScreenOffsetY();
@@ -378,14 +363,16 @@ package net.wg.gui.lobby.vehiclePreview
          onBackClickS();
       }
       
-      private function onCloseBtnClickHandler(param1:ButtonEvent) : void
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
       {
-         closeViewS();
+         this._paddingTop = param3.y;
+         this._paddingBottom = param3.height;
+         setSize(param1,param2);
       }
       
-      private function onBackBtnClickHandler(param1:ButtonEvent) : void
+      public function isFullScreenModeSupported() : Boolean
       {
-         onBackClickS();
+         return true;
       }
    }
 }

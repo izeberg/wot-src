@@ -1,20 +1,19 @@
-import operator
-from functools import wraps
+from __future__ import absolute_import
+from account_helpers.AccountSettings import AccountSettings, FUN_RANDOM_PROGRESSION, FUN_RANDOM_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COMPLETE_COUNT
 from typing import Any, Dict, List, Optional, Tuple, Union, TYPE_CHECKING
 import math_utils
-from account_helpers.AccountSettings import AccountSettings, FUN_RANDOM_PROGRESSION, FUN_RANDOM_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COUNTER, FUN_RANDOM_INF_PROGR_PREV_COMPLETE_COUNT
-from fun_random.gui.doc_loaders.vehicle_gui_parameters_reader import getVehicleParametersConfig
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_stage import FunRandomProgressionStage, Rarity
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_state import FunRandomProgressionStatus
 from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_quest_card_model import FunRandomQuestCardModel, CardState
-from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_vehicle_parameter import FunRandomVehicleParameter
 from fun_random.gui.impl.lobby.common.lootboxes import FunRandomLootBoxTokenBonusPacker, FunRandomRewardLootBoxTokenBonusPacker, FunRandomLootBoxVehiclesBonusUIPacker, FEP_CATEGORY
+from fun_random.gui.feature.fun_constants import FunSubModesState
 from fun_random.gui.feature.sub_systems.fun_performance_analyzers import PerformanceGroup
 from gui.impl import backport
 from gui.impl.auxiliary.collections_helper import TmanTemplateBonusPacker
 from gui.impl.auxiliary.rewards_helper import BlueprintBonusTypes
 from gui.impl.gen import R
-from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_performance_model import PerformanceRiskEnum
+from gui.impl.gen.view_models.views.lobby.common.mode_performance_model import PerformanceRiskEnum
+from gui.impl.gen.view_models.views.lobby.user_missions.constants.event_banner_state import EventBannerState
 from gui.impl.lobby.common.view_helpers import packBonusModelAndTooltipData
 from gui.server_events.bonuses import LootBoxTokensBonus, mergeBonuses
 from gui.shared.formatters import time_formatters
@@ -25,17 +24,16 @@ from shared_utils import first, findFirst
 from skeletons.gui.shared import IItemsCache
 if TYPE_CHECKING:
     from frameworks.wulf import Array
-    from fun_random.gui.doc_loaders import VehicleParameters
+    from fun_random.gui.feature.models.common import FunSubModesStatus
     from fun_random.gui.feature.models.progressions import FunProgression
     from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_state import FunRandomProgressionState
     from gui.server_events.bonuses import SimpleBonus
-    from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_condition import FunRandomProgressionCondition
-    from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_infinite_progression_condition import FunRandomInfiniteProgressionCondition
-    from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_strengths_weaknesses import FunRandomStrengthsWeaknesses
-    from fun_random.gui.server_events.event_items import FunProgressionTriggerQuest
-    from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_performance_model import ModeSelectorPerformanceModel
     from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
     from gui.impl.gen.view_models.common.missions.bonuses.item_bonus_model import ItemBonusModel
+    from gui.impl.gen.view_models.views.lobby.common.mode_performance_model import ModePerformanceModel
+    from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_progression_condition import FunRandomProgressionCondition
+    from fun_random.gui.impl.gen.view_models.views.lobby.common.fun_random_infinite_progression_condition import FunRandomInfiniteProgressionCondition
+    from fun_random.gui.server_events.event_items import FunProgressionTriggerQuest
 _PROGRESSION_STATUS_MAP = {(False, False, False): FunRandomProgressionStatus.ACTIVE_RESETTABLE, 
    (False, False, True): FunRandomProgressionStatus.ACTIVE_RESETTABLE, 
    (True, False, False): FunRandomProgressionStatus.COMPLETED_RESETTABLE, 
@@ -44,6 +42,11 @@ _PROGRESSION_STATUS_MAP = {(False, False, False): FunRandomProgressionStatus.ACT
    (True, True, False): FunRandomProgressionStatus.COMPLETED_FINAL, 
    (True, False, True): FunRandomProgressionStatus.ACTIVE_INFINITE_RESETTABLE, 
    (True, True, True): FunRandomProgressionStatus.ACTIVE_INFINITE_FINAL}
+_EVENT_STATE_MAP = {FunSubModesState.BEFORE_SEASON: EventBannerState.ANNOUNCE, 
+   FunSubModesState.BETWEEN_SEASONS: EventBannerState.ANNOUNCE, 
+   FunSubModesState.AVAILABLE: EventBannerState.IN_PROGRESS, 
+   FunSubModesState.NOT_AVAILABLE: EventBannerState.INACTIVE, 
+   FunSubModesState.NOT_AVAILABLE_END: EventBannerState.FINISHED}
 _PERFORMANCE_GROUP_TO_RISK_ENUM = {PerformanceGroup.LOW_RISK: PerformanceRiskEnum.LOWRISK, 
    PerformanceGroup.MEDIUM_RISK: PerformanceRiskEnum.MEDIUMRISK, 
    PerformanceGroup.HIGH_RISK: PerformanceRiskEnum.HIGHRISK}
@@ -64,25 +67,6 @@ RARITY_ORDER = (
 LOOTBOX_TYPE = 'fep_{0}'
 RARITY_VALUES = tuple(LOOTBOX_TYPE.format(v.value) for v in RARITY_ORDER)
 
-def hasVehicleConfig(defReturn=None, abortAction=None):
-
-    def decorator(method):
-
-        @wraps(method)
-        def wrapper(view, vehicleName, *args, **kwargs):
-            config = getVehicleParametersConfig()
-            if vehicleName in config.vehicles:
-                return method(view, vehicleName, config, *args, **kwargs)
-            else:
-                if abortAction is not None:
-                    return operator.methodcaller(abortAction)(view)
-                return defReturn
-
-        return wrapper
-
-    return decorator
-
-
 def getFormattedTimeLeft(seconds):
     return time_formatters.getTillTimeByResource(seconds, R.strings.fun_random.modeSelector.status.timeLeft, removeLeadingZeros=True)
 
@@ -97,6 +81,10 @@ def getConditionText(rootStrPath, levels):
     if len(components) > 1:
         return (' ').join(components)
     return first(components, '')
+
+
+def getFunRandomEventState(status):
+    return _EVENT_STATE_MAP.get(status.state, EventBannerState.INACTIVE)
 
 
 def getFunRandomBonusPacker():
@@ -223,11 +211,6 @@ def packInfiniteProgressionState(progression, stateModel):
     stateModel.setStatusTimer(progression.statusTimer)
 
 
-def packVehicleParameters(model, allParameters, vehicleParameters):
-    _packParametersGroup(model.getStrengths(), allParameters, vehicleParameters.strengths)
-    _packParametersGroup(model.getWeaknesses(), allParameters, vehicleParameters.weaknesses)
-
-
 def packStageRewards(bonuses, rewardsModel, isSpecial=False, tooltips=None):
     packer = getFunRandomSpecialBonusPacker() if isSpecial else getFunRandomBonusPacker()
     rewardsModel.clear()
@@ -300,14 +283,3 @@ def _getStageRarity(bonuses, itemsCache=None):
                     rarityIdx = lbRarityIdx
 
     return RARITY_ORDER[rarityIdx]
-
-
-def _packParametersGroup(model, allParameters, vehicleParameters):
-    model.clear()
-    for parameterName in vehicleParameters:
-        parameterModel = FunRandomVehicleParameter()
-        parameterModel.setParameterName(parameterName)
-        parameterModel.setIcon(allParameters[parameterName])
-        model.addViewModel(parameterModel)
-
-    model.invalidate()

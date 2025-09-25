@@ -1,4 +1,4 @@
-from collections import defaultdict, namedtuple
+from collections import defaultdict, namedtuple, OrderedDict
 BATTLE_REPO = 1
 EQUIPMENT_ITEMS = 2
 SCALEFORM_COMMON_PACKAGES = 3
@@ -41,7 +41,7 @@ QUEUE_MODE_NAME_KWARGS = 39
 BONUS_TYPE_MODE_NAME_KWARGS = 40
 PRB_CONDITION_ICON = 41
 HANGAR_PRESETS_READERS = 42
-HANGAR_PRESETS_PROCESSORS = 43
+HANGAR_DYNAMIC_GUI_PROVIDERS = 43
 AMMUNITION_PANEL_VIEW = 44
 VEHICLE_VIEW_STATE = 45
 DYN_OBJ_CACHE = 46
@@ -66,6 +66,11 @@ GAME_MODE_ARENA_INFO_KEYS = 64
 AMMUNITION_SETUP_VIEW = 65
 GUI_ITEMS_CACHE_INVALIDATOR = 66
 IGNORED_MODE_FOR_AUTO_SELECTED_VEHICLE = 67
+HANGAR_MENU_ITEMS = 68
+BONUS_TOKENS = 69
+VIEWS_FOR_MONITORING = 70
+LIFECYCLE_HANDLED_SUB_VIEWS = 71
+BATTLE_BUTTON_MANUAL_CONTROL = 72
 
 class _CollectEventsManager(object):
 
@@ -739,16 +744,16 @@ def collectLimitedUITokens():
     return __collectEM.handleEvent(LIMITED_UI_TOKENS, ctx={'tokens': []})['tokens']
 
 
-def registerHangarPresetGetter(queueType, processor):
+def registerHangarDynamicGuiProvider(queueType, processor):
 
     def onCollect(ctx):
-        ctx['presetsGetters'][queueType] = processor(ctx['config'])
+        ctx['dynamicGuiProviders'][queueType] = processor(ctx['config'])
 
-    __collectEM.addListener(HANGAR_PRESETS_PROCESSORS, onCollect)
+    __collectEM.addListener(HANGAR_DYNAMIC_GUI_PROVIDERS, onCollect)
 
 
-def collectHangarPresetsGetters(config):
-    return __collectEM.handleEvent(HANGAR_PRESETS_PROCESSORS, {'presetsGetters': {}, 'config': config})['presetsGetters']
+def collectHangarDynamicGuiProviders(config):
+    return __collectEM.handleEvent(HANGAR_DYNAMIC_GUI_PROVIDERS, {'dynamicGuiProviders': {}, 'config': config})['dynamicGuiProviders']
 
 
 def registerHangarPresetsReader(reader):
@@ -970,6 +975,18 @@ def collectLobbyHeaderTabs():
     return __collectEM.handleEvent(LOBBY_HEADER_TAB, {'tabs': {}})['tabs']
 
 
+def registerMenuItems(hangarMode, menuItems):
+
+    def onCollect(ctx):
+        ctx['menuItems'][hangarMode].update(menuItems)
+
+    __collectEM.addListener(HANGAR_MENU_ITEMS, onCollect)
+
+
+def collectMenuItems(hangarMode):
+    return __collectEM.handleEvent(HANGAR_MENU_ITEMS, {'menuItems': defaultdict(OrderedDict)})['menuItems'][hangarMode]
+
+
 def registerGamefaceNotifications(gamefaceNotifications):
 
     def onCollect(ctx):
@@ -1020,3 +1037,51 @@ def registerIgnoredModeForAutoSelectVehicle(modeFlags):
 
 def collectIgnoredModeForAutoSelectVehicle():
     return __collectEM.handleEvent(IGNORED_MODE_FOR_AUTO_SELECTED_VEHICLE, ctx=[])
+
+
+def registerBonusTokens(bonusTokens):
+
+    def onCollect(ctx):
+        ctx['bonusTokens'].extend(bonusTokens)
+
+    __collectEM.addListener(BONUS_TOKENS, onCollect)
+
+
+def collectBonusTokens():
+    return __collectEM.handleEvent(BONUS_TOKENS, ctx={'bonusTokens': []})['bonusTokens']
+
+
+def registerViewsForMonitoring(viewsForMonitoring):
+
+    def onCollect(ctx):
+        ctx['viewsForMonitoring'].extend(viewsForMonitoring)
+
+    __collectEM.addListener(VIEWS_FOR_MONITORING, onCollect)
+
+
+def registerLifecycleHandledSubViews(subViews):
+
+    def onCollect(ctx):
+        ctx['subViews'].extend(subViews)
+
+    __collectEM.addListener(LIFECYCLE_HANDLED_SUB_VIEWS, onCollect)
+
+
+def collectLifecycleHandledSubViews():
+    return __collectEM.handleEvent(LIFECYCLE_HANDLED_SUB_VIEWS, {'subViews': []})['subViews']
+
+
+def collectViewsForMonitoring():
+    return __collectEM.handleEvent(VIEWS_FOR_MONITORING, ctx={'viewsForMonitoring': []})['viewsForMonitoring']
+
+
+def registerBattleButtonManualControl(queueType, handler):
+
+    def onCollect(ctx):
+        ctx['battleButtonManualControl'][queueType] = handler
+
+    __collectEM.addListener(BATTLE_BUTTON_MANUAL_CONTROL, onCollect)
+
+
+def collectBattleButtonManualControl():
+    return __collectEM.handleEvent(BATTLE_BUTTON_MANUAL_CONTROL, ctx={'battleButtonManualControl': {}})['battleButtonManualControl']

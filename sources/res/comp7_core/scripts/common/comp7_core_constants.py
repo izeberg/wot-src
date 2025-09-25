@@ -1,0 +1,1 @@
+ROLE_EQUIPMENT_TAG = 'roleEquipment'

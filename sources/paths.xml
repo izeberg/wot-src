@@ -1,7 +1,7 @@
 <root>
   <Paths>
-    <Path cacheSubdirs="true">./res_mods/1.29.1.0 Common Test</Path>
-    <Path mask="*.wotmod" mode="recursive" root="res">./mods/1.29.1.0 Common Test</Path>
+    <Path cacheSubdirs="true">./res_mods/2.0.1.0 Common Test</Path>
+    <Path mask="*.wotmod" mode="recursive" root="res">./mods/2.0.1.0 Common Test</Path>
     <Packages>
       <Package type="sd,hd">./res/packages/shared_content-part3.pkg</Package>
       <Package type="sd,hd">./res/packages/shared_content-part2.pkg</Package>
@@ -25,6 +25,7 @@
       <Package type="sandbox,sd,hd">./res/packages/05_prohorovka.pkg</Package>
       <Package type="hd">./res/packages/05_prohorovka_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/06_ensk.pkg</Package>
+      <Package type="hd">./res/packages/06_ensk_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/06_ensk_big.pkg</Package>
       <Package type="sd,hd">./res/packages/07_lakeville.pkg</Package>
       <Package type="hd">./res/packages/07_lakeville_hd.pkg</Package>
@@ -52,6 +53,10 @@
       <Package type="hd">./res/packages/115_sweden_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/11_murovanka.pkg</Package>
       <Package type="hd">./res/packages/11_murovanka_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/120_graf_zeppelin.pkg</Package>
+      <Package type="hd">./res/packages/120_graf_zeppelin_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/120_graf_zeppelin_scc.pkg</Package>
+      <Package type="hd">./res/packages/120_graf_zeppelin_scc_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/121_lost_paradise_v.pkg</Package>
       <Package type="hd">./res/packages/121_lost_paradise_v_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/127_japort.pkg</Package>
@@ -76,20 +81,18 @@
       <Package type="hd">./res/packages/209_wg_epic_suburbia_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/210_bf_epic_desert.pkg</Package>
       <Package type="hd">./res/packages/210_bf_epic_desert_hd.pkg</Package>
-      <Package type="sd,hd">./res/packages/212_epic_random_valley.pkg</Package>
-      <Package type="hd">./res/packages/212_epic_random_valley_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/212_epic_random_valley_sm25.pkg</Package>
       <Package type="hd">./res/packages/212_epic_random_valley_sm25_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/217_er_alaska.pkg</Package>
       <Package type="hd">./res/packages/217_er_alaska_hd.pkg</Package>
-      <Package type="sd,hd">./res/packages/222_er_clime.pkg</Package>
-      <Package type="hd">./res/packages/222_er_clime_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/23_westfeld.pkg</Package>
       <Package type="hd">./res/packages/23_westfeld_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/250_br_battle_city2-1.pkg</Package>
       <Package type="hd">./res/packages/250_br_battle_city2-1_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/251_br_battle_city3.pkg</Package>
       <Package type="hd">./res/packages/251_br_battle_city3_hd.pkg</Package>
+      <Package type="sd,hd">./res/packages/251_br_battle_city3_hw25.pkg</Package>
+      <Package type="hd">./res/packages/251_br_battle_city3_hw25_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/252_br_battle_city4.pkg</Package>
       <Package type="hd">./res/packages/252_br_battle_city4_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/28_desert.pkg</Package>
@@ -122,10 +125,6 @@
       <Package type="hd">./res/packages/60_asia_miao_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/63_tundra.pkg</Package>
       <Package type="hd">./res/packages/63_tundra_hd.pkg</Package>
-      <Package type="sd,hd">./res/packages/83_kharkiv.pkg</Package>
-      <Package type="hd">./res/packages/83_kharkiv_hd.pkg</Package>
-      <Package type="sd,hd">./res/packages/90_minsk.pkg</Package>
-      <Package type="hd">./res/packages/90_minsk_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/95_lost_city_ctf.pkg</Package>
       <Package type="hd">./res/packages/95_lost_city_ctf_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/99_poland.pkg</Package>
@@ -134,17 +133,17 @@
       <Package type="hd">./res/packages/h33_battle_royale_2021_hd.pkg</Package>
       <Package type="sd,hd">./res/packages/h33_comp7.pkg</Package>
       <Package type="hd">./res/packages/h33_comp7_hd.pkg</Package>
-      <Package type="sandbox,sd,hd">./res/packages/hangar_v3.pkg</Package>
-      <Package type="hd">./res/packages/hangar_v3_hd.pkg</Package>
-      <Package type="sd,hd">./res/packages/hangar_v3_wot_bday_2025.pkg</Package>
-      <Package type="hd">./res/packages/hangar_v3_wot_bday_2025_hd.pkg</Package>
-      <Package type="sandbox,sd,hd">./res/packages/audioww-part3.pkg</Package>
+      <Package type="sd,hd">./res/packages/hangar_v4.pkg</Package>
+      <Package type="hd">./res/packages/hangar_v4_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/audioww-part2.pkg</Package>
+      <Package type="sandbox,sd,hd">./res/packages/audioww-part3.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/audioww-part1.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/battle_modifiers.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/battle_royale.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/battle_royale_progression.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/comp7.pkg</Package>
+      <Package type="sandbox,sd,hd">./res/packages/comp7_core.pkg</Package>
+      <Package type="sandbox,sd,hd">./res/packages/comp7_light.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/content_exclude.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/event_platform.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/frontline.pkg</Package>
@@ -153,7 +152,10 @@
       <Package type="sandbox,sd,hd">./res/packages/gui-part2.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/gui-part3.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/gui-part1.pkg</Package>
+      <Package type="sandbox,sd,hd">./res/packages/halloween.pkg</Package>
+      <Package type="hd">./res/packages/halloween_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/in_battle_achievements.pkg</Package>
+      <Package type="sandbox,sd,hd">./res/packages/la_pinger.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/misc.pkg</Package>
       <Package type="hd">./res/packages/misc_hd.pkg</Package>
       <Package type="sandbox,sd,hd">./res/packages/particles.pkg</Package>
@@ -196,9 +198,11 @@
       <Package type="sd,hd">./res/packages/vehicles_level_10-part1.pkg</Package>
       <Package type="sd,hd">./res/packages/vehicles_level_10-part2.pkg</Package>
       <Package type="sd,hd">./res/packages/vehicles_level_10-part3.pkg</Package>
-      <Package type="hd">./res/packages/vehicles_level_10_hd-part1.pkg</Package>
       <Package type="hd">./res/packages/vehicles_level_10_hd-part3.pkg</Package>
+      <Package type="hd">./res/packages/vehicles_level_10_hd-part1.pkg</Package>
       <Package type="hd">./res/packages/vehicles_level_10_hd-part2.pkg</Package>
+      <Package type="sd,hd">./res/packages/vehicles_level_11.pkg</Package>
+      <Package type="hd">./res/packages/vehicles_level_11_hd.pkg</Package>
     </Packages>
     <Path>./res</Path>
   </Paths>

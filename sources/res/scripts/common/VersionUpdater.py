@@ -1,5 +1,5 @@
 import sys
-from debug_utils import LOG_DEBUG
+from debug_utils import LOG_DEBUG_DEV
 
 class VersionUpdaterBase(object):
 
@@ -26,7 +26,7 @@ class VersionUpdaterBase(object):
                 if self._startVersion is None:
                     self._startVersion = fromVer
 
-        LOG_DEBUG('__buildUpdaters', self.__class__, self._startVersion, self._latestVersion)
+        LOG_DEBUG_DEV('__buildUpdaters', self.__class__, self._startVersion, self._latestVersion)
         return
 
     def __getUpdaters(self, startVersion):
@@ -41,7 +41,7 @@ class VersionUpdaterBase(object):
         isCallable = callable(versionOrGetter)
         currentVersion = versionOrGetter(*args) if isCallable else versionOrGetter
         for fromVer, updater in self.__getUpdaters(currentVersion):
-            LOG_DEBUG('_updateToLatestVersion', logID, fromVer)
+            LOG_DEBUG_DEV('_updateToLatestVersion', logID, fromVer)
             result = updater(*args)
             checkerForCallback(result, updater, *args)
             if isCallable:

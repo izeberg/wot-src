@@ -6,8 +6,6 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function closeViewS() : void;
-      
       function onBackClickS() : void;
       
       function onOpenInfoTabS(param1:int) : void;

@@ -11,8 +11,6 @@ package net.wg.infrastructure.base.meta.impl
    {
        
       
-      public var closeView:Function;
-      
       public var onBackClick:Function;
       
       public var onOpenInfoTab:Function;
@@ -55,12 +53,6 @@ package net.wg.infrastructure.base.meta.impl
             this._array = null;
          }
          super.onDispose();
-      }
-      
-      public function closeViewS() : void
-      {
-         App.utils.asserter.assertNotNull(this.closeView,"closeView" + Errors.CANT_NULL);
-         this.closeView();
       }
       
       public function onBackClickS() : void

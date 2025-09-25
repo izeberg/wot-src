@@ -119,7 +119,6 @@ package net.wg.infrastructure.tutorial.builders
       
       protected function layoutHint() : void
       {
-         var _loc1_:Point = null;
          var _loc4_:Number = NaN;
          var _loc5_:Number = NaN;
          var _loc6_:PaddingVO = null;
@@ -129,7 +128,7 @@ package net.wg.infrastructure.tutorial.builders
          {
             return;
          }
-         _loc1_ = component.localToGlobal(EMPTY_POINT);
+         var _loc1_:Point = component.localToGlobal(EMPTY_POINT);
          _loc1_ = view.globalToLocal(_loc1_);
          var _loc2_:Number = component.width * view.scaleX;
          var _loc3_:Number = component.height * view.scaleY;

@@ -11,12 +11,12 @@
 	<postProgressionTree>role_MT_sniper</postProgressionTree>
 	<customRoleSlotOptions>3 5</customRoleSlotOptions>
 	<speedLimits>
-		<forward>50</forward>
+		<forward>55</forward>
 		<backward>20</backward>
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.252
+			0.314
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -24,7 +24,7 @@
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
-			0.04
+			0.03
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>6595</weight>
-		<maxHealth>880</maxHealth>
+		<maxHealth>1160</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -1355,14 +1355,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_Object416>
-			<userString>#ussr_vehicles:Chassis_Object416</userString>
+		<Chassis_R60_Object416>
+			<userString>#ussr_vehicles:Chassis_R60_Object416</userString>
 			<tags/>
 			<level>7</level>
 			<price>16000</price>
 			<unlocks>
 				<chassis>
-					Chassis_Object416_2
+					Chassis_R60_Object416_2
 					<cost>13800</cost>
 				</chassis>
 			</unlocks>
@@ -1371,9 +1371,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>24350</maxLoad>
 			<terrainResistance>
-				0.8 0.9 1.8
+				0.7 0.8 1.6
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>21000</brakeForce>
@@ -3278,9 +3277,9 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Object416>
-		<Chassis_Object416_2>
-			<userString>#ussr_vehicles:Chassis_Object416_2</userString>
+		</Chassis_R60_Object416>
+		<Chassis_R60_Object416_2>
+			<userString>#ussr_vehicles:Chassis_R60_Object416_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>31700</price>
@@ -3289,7 +3288,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>27000</maxLoad>
 			<terrainResistance>
 				0.7 0.8 1.6
 				<!--BW_String-->
@@ -5188,11 +5186,11 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_Object416_2>
+		</Chassis_R60_Object416_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_Object416>
-			<userString>#ussr_vehicles:Turret_1_Object416</userString>
+		<Turret_1_R60_Object416>
+			<userString>#ussr_vehicles:Turret_1_R60_Object416</userString>
 			<tags/>
 			<level>7</level>
 			<price>21000</price>
@@ -5228,7 +5226,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_100mm_D10T>
+				<_100mm_D_10T>
 					shared
 					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
@@ -5237,7 +5235,7 @@
 					</pitchLimits>
 					<unlocks>
 						<gun>
-							_100mm_M-63
+							_100mm_M_63_416
 							<cost>54000</cost>
 						</gun>
 					</unlocks>
@@ -5264,19 +5262,13 @@
 						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						6.8
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>6</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -5290,7 +5282,7 @@
 						0.22
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<turretYawLimits>-75 75</turretYawLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R60_Object416/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R60_Object416/crash/lod0/Gun_01.model</destroyed>
@@ -5435,8 +5427,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_100mm_D10T>
-				<_100mm_M-63>
+				</_100mm_D_10T>
+				<_100mm_M_63_416>
 					shared
 					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
@@ -5445,7 +5437,7 @@
 					</pitchLimits>
 					<unlocks>
 						<turret>
-							Turret_2_Object416
+							Turret_2_R60_Object416
 							<cost>15500</cost>
 						</turret>
 					</unlocks>
@@ -5469,16 +5461,13 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.37
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						8.7
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>8</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -5498,7 +5487,7 @@
 						0.198
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<turretYawLimits>-75 75</turretYawLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R60_Object416/normal/lod0/Gun_06.model</undamaged>
 						<destroyed>vehicles/russian/R60_Object416/crash/lod0/Gun_06.model</destroyed>
@@ -5643,7 +5632,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_100mm_M-63>
+				</_100mm_M_63_416>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R60_Object416/normal/lod0/Turret_01.model</undamaged>
@@ -6751,9 +6740,9 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_Object416>
-		<Turret_2_Object416>
-			<userString>#ussr_vehicles:Turret_2_Object416</userString>
+		</Turret_1_R60_Object416>
+		<Turret_2_R60_Object416>
+			<userString>#ussr_vehicles:Turret_2_R60_Object416</userString>
 			<tags/>
 			<level>8</level>
 			<price>35000</price>
@@ -6776,7 +6765,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_2 armor_4</primaryArmor>
 			<weight>7000</weight>
-			<maxHealth>320</maxHealth>
+			<maxHealth>290</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>
@@ -6800,7 +6789,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_100mm_D10T>
+				<_100mm_D_10T>
 					shared
 					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
@@ -6834,19 +6823,13 @@
 						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						6.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>6</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -6857,7 +6840,7 @@
 						0.22
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<turretYawLimits>-75 75</turretYawLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R60_Object416/normal/lod0/Gun_03.model</undamaged>
 						<destroyed>vehicles/russian/R60_Object416/crash/lod0/Gun_03.model</destroyed>
@@ -6999,8 +6982,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_100mm_D10T>
-				<_100mm_M-63>
+				</_100mm_D_10T>
+				<_100mm_M_63_416>
 					shared
 					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
@@ -7031,7 +7014,7 @@
 						<gun>40</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.37
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>8</reloadTime>
@@ -7049,15 +7032,12 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.198
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<turretYawLimits>-75 75</turretYawLimits>
+					<turretYawLimits>-180 180</turretYawLimits>
 					<models>
 						<undamaged>vehicles/russian/R60_Object416/normal/lod0/Gun_05.model</undamaged>
 						<destroyed>vehicles/russian/R60_Object416/crash/lod0/Gun_05.model</destroyed>
@@ -7196,7 +7176,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_100mm_M-63>
+				</_100mm_M_63_416>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R60_Object416/normal/lod0/Turret_02.model</undamaged>
@@ -8418,10 +8398,10 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_Object416>
+		</Turret_2_R60_Object416>
 	</turrets0>
 	<engines>
-		<TDDG>shared</TDDG>
+		<DG>shared</DG>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
@@ -8432,38 +8412,13 @@
 	<physics>
 		<detailed>
 			<engines>
-				<TDDG>
-					<smplEnginePower>
-						422.9124
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>50</smplFwMaxSpeed>
-				</TDDG>
+				<DG>
+					<smplEnginePower>440</smplEnginePower>
+					<smplFwMaxSpeed>55</smplFwMaxSpeed>
+				</DG>
 			</engines>
 			<chassis>
-				<Chassis_Object416>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.1449
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.07245
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.0644
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_Object416>
-				<Chassis_Object416_2>
+				<Chassis_R60_Object416>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8484,7 +8439,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_Object416_2>
+				</Chassis_R60_Object416>
+				<Chassis_R60_Object416_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.1288
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.0644
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.05635
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_R60_Object416_2>
 			</chassis>
 		</detailed>
 	</physics>

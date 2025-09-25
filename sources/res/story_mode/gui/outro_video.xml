@@ -13,6 +13,16 @@
 		<vo>vo_sm_vday_outro</vo>
 	</missions>
 	<missions>
+		<id>7</id>
+		<videoPath>videos/scc_outro.usm</videoPath>
+		<music>
+			<start>sm_scc_video_outro_start</start>
+			<pause>sm_scc_video_outro_pause</pause>
+			<resume>sm_scc_video_outro_resume</resume>
+		</music>
+		<vo>vo_sm_scc_outro</vo>
+	</missions>
+	<missions>
 		<id>1002</id>
 		<videoPath>videos/v_day_outro.usm</videoPath>
 		<music>
@@ -23,5 +33,25 @@
 			<state>STATE_sm_vday_music_00_lobby_video_outro</state>
 		</music>
 		<vo>vo_sm_vday_outro</vo>
+	</missions>
+	<missions>
+		<id>1005</id>
+		<videoPath>videos/scc_outro.usm</videoPath>
+		<music>
+			<start>sm_scc_video_outro_start</start>
+			<pause>sm_scc_video_outro_pause</pause>
+			<resume>sm_scc_video_outro_resume</resume>
+		</music>
+		<vo>vo_sm_scc_outro</vo>
+	</missions>
+	<missions>
+		<id>1006</id>
+		<videoPath>videos/scc_outro.usm</videoPath>
+		<music>
+			<start>sm_scc_video_outro_start</start>
+			<pause>sm_scc_video_outro_pause</pause>
+			<resume>sm_scc_video_outro_resume</resume>
+		</music>
+		<vo>vo_sm_scc_outro</vo>
 	</missions>
 </root>

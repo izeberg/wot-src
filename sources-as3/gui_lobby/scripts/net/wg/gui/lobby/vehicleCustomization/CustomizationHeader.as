@@ -22,6 +22,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const RIGHT_TF_OFFSET:int = -12;
       
       private static const TF_ELITE_EXTRA_OFFSET:int = 10;
+      
+      private static const PROGRESSION_INFO_BTN_TOP_OFFSET:int = 10;
        
       
       public var tankTier:TextField = null;
@@ -39,6 +41,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private var _data:CustomizationHeaderVO = null;
       
       private var _actualWidth:int = -1;
+      
+      private var _allowCloseBtnShowing:Boolean = true;
       
       public function CustomizationHeader()
       {
@@ -106,6 +110,8 @@ package net.wg.gui.lobby.vehicleCustomization
                this.tankName.x = _loc4_;
                this.closeBtn.validateNow();
                this.closeBtn.x = this._actualWidth - this.closeBtn.width - OFFSET;
+               this.progressionInfoBtn.validateNow();
+               this.progressionInfoBtn.x = this._actualWidth - this.progressionInfoBtn.width - OFFSET;
                this.tankInfo.x = this._actualWidth - this.tankInfo.width >> 1;
             }
          }
@@ -143,6 +149,20 @@ package net.wg.gui.lobby.vehicleCustomization
          invalidateSize();
       }
       
+      public function get allowCloseBtnShowing() : Boolean
+      {
+         return this._allowCloseBtnShowing;
+      }
+      
+      public function set allowCloseBtnShowing(param1:Boolean) : void
+      {
+         this._allowCloseBtnShowing = param1;
+         if(this.closeBtn.visible)
+         {
+            this.closeBtn.visible = this._allowCloseBtnShowing;
+         }
+      }
+      
       private function onProgressionInfoBtnClickHandler(param1:ButtonEvent) : void
       {
          dispatchEvent(new CustomizationEvent(CustomizationEvent.SHOW_PROGRESSION_INFO,true));
@@ -161,7 +181,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function onCloseStyleInfoHandler(param1:CustomizationStyleInfoEvent) : void
       {
-         this.closeBtn.visible = true;
+         this.closeBtn.visible = this._allowCloseBtnShowing;
          this.tankInfo.visible = true;
       }
    }

@@ -322,7 +322,10 @@ package net.wg.gui.notification
          _loc3_.width = param1.width;
          _loc3_.label = param1.label;
          _loc3_.tooltip = param1.tooltip;
+         _loc3_.textYPadding = param1.textYPadding;
+         _loc3_.usePreventUpdateTextScale = param1.textYPadding > 0;
          _loc3_.dynamicSizeByText = param1.dynamicSizeByText;
+         _loc3_.paddingHorizontal = param1.paddingHorizontal;
          _loc3_.visible = messageInfo.isButtonVisible(param1.type);
          _loc3_.enabled = messageInfo.isButtonEnabled(param1.type);
          _loc3_.addEventListener(ButtonEvent.CLICK,this.onButtonClickHandler,false,0,true);

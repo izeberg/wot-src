@@ -23,6 +23,7 @@ from items import vehicles
 from personal_missions import PM_BRANCH
 from post_progression_common import FEATURE_BY_GROUP_ID, ROLESLOT_FEATURE
 from prestige_system.prestige_common import PrestigeConfig
+from prestige_system.prestige_milestones_common import PrestigeMilestonesConfig
 from ranked_common import SwitchState
 from renewable_subscription_common.settings_constants import GOLD_RESERVE_GAINS_SECTION, ADDITIONAL_BONUS_SECTION, ADDITIONAL_BONUS_APPLY_COUNT, ADDITIONAL_BONUS_ENABLED, ENABLE_BADGES
 from schema_manager import getSchemaManager
@@ -1310,6 +1311,7 @@ class ServerSettings(object):
         self.__winbackConfig = WinbackConfig()
         self.__limitedUIConfig = _LimitedUIConfig()
         self.__prestigeConfig = PrestigeConfig({})
+        self.__prestigeMilestonesConfig = PrestigeMilestonesConfig({})
         self.__steamShadeConfig = _SteamShadeConfig()
         self.__abFeatureTestConfig = _ABFeatureTestConfig()
         self.__referralProgramConfig = ReferralProgramConfig()
@@ -1456,6 +1458,10 @@ class ServerSettings(object):
             self.__prestigeConfig = PrestigeConfig(self.__serverSettings.get(Configs.PRESTIGE_CONFIG.value, {}))
         else:
             self.__prestigeConfig = PrestigeConfig({})
+        if Configs.PRESTIGE_MILESTONES_CONFIG.value in self.__serverSettings:
+            self.__prestigeMilestonesConfig = PrestigeMilestonesConfig(self.__serverSettings.get(Configs.PRESTIGE_MILESTONES_CONFIG.value, {}))
+        else:
+            self.__prestigeMilestonesConfig = PrestigeMilestonesConfig({})
         self.__schemaManager.set(self.__serverSettings)
         if Configs.STEAM_SHADE_CONFIG.value in self.__serverSettings:
             self.__steamShadeConfig = makeTupleByDict(_SteamShadeConfig, self.__serverSettings[Configs.STEAM_SHADE_CONFIG.value])
@@ -1476,7 +1482,8 @@ class ServerSettings(object):
         self.onServerSettingsChange(serverSettings)
 
     def update(self, serverSettingsDiff):
-        self.__serverSettings = updateDict(self.__serverSettings, serverSettingsDiff)
+        processedDiff = self.__schemaManager.updateSettings(self.__serverSettings, serverSettingsDiff)
+        self.__serverSettings = updateDict(self.__serverSettings, processedDiff)
         if 'clanProfile' in serverSettingsDiff:
             self.__updateClanProfile(serverSettingsDiff)
         if 'spgRedesignFeatures' in self.__serverSettings:
@@ -1582,6 +1589,7 @@ class ServerSettings(object):
         if Configs.PRESTIGE_CONFIG.value in serverSettingsDiff:
             self.__serverSettings[Configs.PRESTIGE_CONFIG.value] = serverSettingsDiff[Configs.PRESTIGE_CONFIG.value]
             self.__prestigeConfig = PrestigeConfig(self.__serverSettings.get(Configs.PRESTIGE_CONFIG.value, {}))
+        self.__updatePrestigeMilestonesConfig(serverSettingsDiff)
         self.__schemaManager.update(serverSettingsDiff)
         self.__updateSteamShadeConfig(serverSettingsDiff)
         self.__updateABFeatureTestConfig(serverSettingsDiff)
@@ -1753,6 +1761,10 @@ class ServerSettings(object):
         return self.__prestigeConfig
 
     @property
+    def prestigeMilestonesConfig(self):
+        return self.__prestigeMilestonesConfig
+
+    @property
     def steamShadeConfig(self):
         return self.__steamShadeConfig
 
@@ -1780,7 +1792,9 @@ class ServerSettings(object):
             return self.__getGlobalSetting('isRegularQuestEnabled', True)
         if branch == PM_BRANCH.PERSONAL_MISSION_2:
             return self.__getGlobalSetting('isPM2QuestEnabled', True)
-        return self.__getGlobalSetting('isRegularQuestEnabled', True) or self.__getGlobalSetting('isPM2QuestEnabled', True)
+        if branch == PM_BRANCH.PERSONAL_MISSION_3:
+            return self.__getGlobalSetting('isPM3QuestEnabled', True)
+        return self.__getGlobalSetting('isRegularQuestEnabled', True) or self.__getGlobalSetting('isPM2QuestEnabled', True) or self.__getGlobalSetting('isPM3QuestEnabled', True)
 
     def isPMBattleProgressEnabled(self):
         return self.__getGlobalSetting('isPMBattleProgressEnabled', True)
@@ -1886,6 +1900,12 @@ class ServerSettings(object):
 
     def isDogTagEnabled(self):
         return self.__getGlobalSetting(DOG_TAGS_CONFIG, {}).get('enabled', True)
+
+    def isHangarGeneralChatEnabled(self):
+        return not self.__getGlobalSetting(constants.Configs.SYSTEM_CHANNELS.value, {}).get('disableHangarGeneralChat', False)
+
+    def isChatEnabled(self):
+        return not self.__getGlobalSetting(constants.Configs.SYSTEM_CHANNELS.value, {}).get('disableAllChats', False)
 
     def isDogTagCustomizationScreenEnabled(self):
         return self.isDogTagEnabled() and self.__getGlobalSetting(DOG_TAGS_CONFIG, {}).get('enableDogTagsCustomizationScreen', True)
@@ -2281,6 +2301,12 @@ class ServerSettings(object):
     def __updateSteamShadeConfig(self, serverSettingsDiff):
         if Configs.STEAM_SHADE_CONFIG.value in serverSettingsDiff:
             self.__steamShadeConfig = self.__steamShadeConfig.replace(serverSettingsDiff[Configs.STEAM_SHADE_CONFIG.value])
+
+    def __updatePrestigeMilestonesConfig(self, serverSettingsDiff):
+        if Configs.PRESTIGE_MILESTONES_CONFIG.value in serverSettingsDiff:
+            self.__serverSettings[Configs.PRESTIGE_MILESTONES_CONFIG.value] = serverSettingsDiff[Configs.PRESTIGE_MILESTONES_CONFIG.value]
+            if Configs.PRESTIGE_MILESTONES_CONFIG.value in serverSettingsDiff:
+                self.__prestigeMilestonesConfig = PrestigeMilestonesConfig(self.__serverSettings.get(Configs.PRESTIGE_MILESTONES_CONFIG.value, {}))
 
     def __updateABFeatureTestConfig(self, serverSettingsDiff):
         if Configs.AB_FEATURE_TEST.value in serverSettingsDiff:

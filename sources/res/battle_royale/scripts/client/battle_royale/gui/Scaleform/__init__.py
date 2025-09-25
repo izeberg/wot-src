@@ -1,17 +1,20 @@
-from gui.shared.system_factory import registerScaleformBattlePackages, registerScaleformLobbyPackages, registerBattleTooltipsBuilders, registerLobbyTooltipsBuilders
+from gui.shared.system_factory import registerScaleformBattlePackages, registerScaleformLobbyPackages, registerBattleTooltipsBuilders, registerLobbyTooltipsBuilders, registerHangarDynamicGuiProvider
 from constants import ARENA_GUI_TYPE, QUEUE_TYPE
-from gui.Scaleform.daapi.settings import config as sf_config
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS as _TOOLTIPS
 from gui.Scaleform.required_libraries_config import addBattleRequiredLibraries
+from battle_royale.gui.hangar_preset.battle_royale_dynamic_gui_provider import BattleRoyaleHangarDynamicGuiProvider
 
 def registerBRBattlePackages():
     registerScaleformBattlePackages(ARENA_GUI_TYPE.BATTLE_ROYALE, ('battle_royale.gui.Scaleform.daapi.view.battle',
                                                                    'battle_royale.gui.Scaleform.daapi.view.battle.shared',
-                                                                   'messenger.gui.Scaleform.view.battle'))
+                                                                   'messenger.gui.Scaleform.view.battle',
+                                                                   'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics'))
 
 
 def registerBRLobbyPackages():
-    registerScaleformLobbyPackages(['battle_royale.gui.Scaleform.daapi.view.lobby'])
+    registerScaleformLobbyPackages([
+     'battle_royale.gui.Scaleform.daapi.view.lobby',
+     'battle_royale.gui.impl.lobby.views'])
 
 
 def registerBRTooltipsBuilders():
@@ -33,3 +36,7 @@ def registerBRBattleQueueProvider():
     from gui.prb_control import prb_utils
     from battle_royale.gui.Scaleform.daapi.view.lobby.battle_queue_provider import BattleRoyaleQueueProvider
     prb_utils.addProviderBattleQueueCls(QUEUE_TYPE.BATTLE_ROYALE, BattleRoyaleQueueProvider, 'BattleRoyalePersonality')
+
+
+def registerBRHangarPresetGetter():
+    registerHangarDynamicGuiProvider(QUEUE_TYPE.BATTLE_ROYALE, BattleRoyaleHangarDynamicGuiProvider)

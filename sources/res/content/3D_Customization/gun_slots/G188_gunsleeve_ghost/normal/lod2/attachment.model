@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/gun_slots/G188_gunsleeve_ghost/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.199558 -0.156283 -1.320718</min>
+		<max>0.182590 0.181598 0.557708</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/G188_gunsleeve_ghost/normal/lod2/attachment</nodefullVisual>
+</root>

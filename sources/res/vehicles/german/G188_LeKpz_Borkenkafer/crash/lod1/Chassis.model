@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.250024 0.000313 -2.831028</min>
+		<max>1.250344 1.035418 2.744709</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G188_LeKPZ_Borkenkafer/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/german/G188_LeKpz_Borkenkafer/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+</root>

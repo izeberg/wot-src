@@ -14,7 +14,7 @@ from gui.impl.lobby.crew.personal_case.personal_data_view import PersonalDataVie
 from gui.impl.lobby.crew.container_vews.personal_file.personal_file_view import PersonalFileView
 from gui.impl.lobby.crew.container_vews.service_record.service_record_view import ServiceRecordView
 from gui.impl.lobby.crew.widget.crew_widget import NO_TANKMAN
-from gui.impl.lobby.hangar.sub_views.vehicle_params_view import VehicleSkillPreviewParamsView
+from gui.impl.lobby.hangar.sub_views.vehicle_params_view import VehicleSkillPreviewParamsPresenter
 from gui.shared.event_dispatcher import showChangeCrewMember
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.utils.requesters import REQ_CRITERIA
@@ -93,7 +93,7 @@ class TankmanContainerView(BaseCrewView):
 
     def _setWidgets(self, **kwargs):
         super(TankmanContainerView, self)._setWidgets(**kwargs)
-        self.paramsView = VehicleSkillPreviewParamsView()
+        self.paramsView = VehicleSkillPreviewParamsPresenter()
         self.setChildView(R.views.lobby.hangar.subViews.VehicleParams(), self.paramsView)
 
     def _onLoading(self, *args, **kwargs):
@@ -147,10 +147,7 @@ class TankmanContainerView(BaseCrewView):
         if self._isAnimationEnabled and isinstance(params, dict) and params.get(IS_FROM_ESCAPE_PARAM, False):
             self.__stopAnimations()
             return
-        self._destroySubViews()
-
-    def _onBack(self):
-        self._destroySubViews()
+        self._onBack()
 
     def _onFocus(self, focused):
         tab = self.getChildView(self._activeTab)
@@ -194,10 +191,10 @@ class TankmanContainerView(BaseCrewView):
 
     def __selectTankman(self, tankmanInvID):
         self._tankmanInvID = tankmanInvID
-        vehicle = self.itemsCache.items.getTankman(tankmanInvID)
-        if not vehicle:
+        tankman = self.itemsCache.items.getTankman(tankmanInvID)
+        if not tankman:
             return
-        self.vehicleID = vehicle.vehicleInvID
+        self.vehicleID = tankman.vehicleInvID
         self.__updateTabs(tankmanInvID)
         self._crewWidget.updateTankmanId(tankmanInvID)
 

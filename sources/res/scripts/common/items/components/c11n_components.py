@@ -1230,6 +1230,8 @@ def _validateProjectionDecal(component, item, vehDescr, usedStyle=None):
 def _validateAttachment(component, item, vehDescr):
     slotId = component.slotId
     slotParams = getVehicleAttachmentSlotParams(vehDescr, slotId)
+    if slotParams is None:
+        raise SoftException(('No such slot slotId = {} for attachment {}').format(slotId, component.id))
     if slotParams.hiddenForUser:
         raise SoftException(('Hidden for user slot (slotId = {}) can not be in outfit').format(slotId))
     if slotParams.applyType != item.applyType:
@@ -1243,6 +1245,7 @@ def _validateAttachment(component, item, vehDescr):
         expectedScaleFactorId = min(item.scaleFactorId, slotParams.scaleFactorId)
         if component.scaleFactorId != expectedScaleFactorId:
             raise SoftException(('Wrong unscalable attachment scaleFactorId: expected = {}, got = {}').format(expectedScaleFactorId, component.scaleFactorId))
+    return
 
 
 def _validatePersonalNumber(component, item):
@@ -1426,10 +1429,10 @@ def getAvailableSlotsCount(item, vehicleDescriptor):
 
 
 @lru_cache(maxsize=10)
-def isVehicleHasSlots(vehicleDescriptor, slotType):
+def isVehicleHasSlots(vehicleComponents, slotType):
     isDecal = slotType in SLOT_TYPE_NAMES.DECALS
     for partName in CUSTOMIZATION_SLOTS_VEHICLE_PARTS:
-        part = getattr(vehicleDescriptor, partName)
+        part = getattr(vehicleComponents, partName)
         slots = part.emblemSlots if isDecal else part.slotsAnchors
         if any(slot.type == slotType for slot in slots):
             return True

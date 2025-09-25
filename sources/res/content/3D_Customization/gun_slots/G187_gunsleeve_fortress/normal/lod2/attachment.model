@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/G187_gunsleeve_fortress/normal/lod2/attachment</nodefullVisual>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/G187_gunsleeve_fortress/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.249234 -0.351196 -1.605043</min>
+		<max>0.267722 0.227476 3.210773</max>
+	</visibilityBox>
+</root>

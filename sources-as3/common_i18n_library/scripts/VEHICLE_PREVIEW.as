@@ -33,7 +33,7 @@ package
       
       public static const HEADER_BACKBTN_DESCRLABEL_RANKED:String = "#vehicle_preview:header/backBtn/descrLabel/ranked";
       
-      public static const HEADER_BACKBTN_DESCRLABEL_VEHPOSTPROGRESSION:String = "#vehicle_preview:header/backBtn/descrLabel/vehPostProgression";
+      public static const HEADER_BACKBTN_DESCRLABEL_SKILLTREEPRESTIGE:String = "#vehicle_preview:header/backBtn/descrLabel/skillTreePrestige";
       
       public static const HEADER_BACKBTN_DESCRLABEL_BLUEPRINTSEXCHANGE:String = "#vehicle_preview:header/backBtn/descrLabel/blueprintsExchange";
       

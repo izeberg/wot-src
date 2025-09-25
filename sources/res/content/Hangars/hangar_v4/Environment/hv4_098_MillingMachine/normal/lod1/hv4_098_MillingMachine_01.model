@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_098_MillingMachine/normal/lod2/hv4_098_MillingMachine_01</parent>
+	<extent>75.000000</extent>
+	<visibilityBox>
+		<min>-0.899327 -0.013680 -1.066564</min>
+		<max>1.023169 2.459486 1.029826</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_098_MillingMachine/normal/lod1/hv4_098_MillingMachine_01</nodefullVisual>
+</root>

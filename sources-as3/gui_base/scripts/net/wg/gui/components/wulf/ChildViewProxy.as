@@ -34,6 +34,8 @@ package net.wg.gui.components.wulf
       
       private var _disposed:Boolean = false;
       
+      private var _paddings:Rectangle = null;
+      
       public function ChildViewProxy()
       {
          super();
@@ -72,12 +74,13 @@ package net.wg.gui.components.wulf
       public function dispose() : void
       {
          App.utils.asserter.assert(!this._disposed,ChildViewProxy + Errors.ALREADY_DISPOSED);
+         this._paddings = null;
          this._disposed = true;
          this.sendRemoveEvent();
          removeEventListener(Event.ADDED_TO_STAGE,this.onAddToStage);
          removeEventListener(Event.REMOVED_FROM_STAGE,this.onRemoveFromStage);
          App.utils.asserter.assertNull(this._wrapper,"_wrapper" + Errors.MUST_NULL);
-         App.utils.asserter.assert(!this._added,"Plase id was not unregistered on dispose");
+         App.utils.asserter.assert(!this._added,"Place id was not unregistered on dispose");
       }
       
       public function focusWrapper(param1:IViewWrapper = null, param2:uint = 0) : void
@@ -108,6 +111,7 @@ package net.wg.gui.components.wulf
          this._wrapper.tutorialId = String(param2);
          this._wrapper.name = param1;
          this._wrapper.addEventListener(Event.RESIZE,this.onWrapperResizeHandler);
+         this._wrapper.paddings = this._paddings;
          addChild(this._wrapper as DisplayObject);
          if(this.visible)
          {
@@ -160,7 +164,17 @@ package net.wg.gui.components.wulf
          this.updateWrapperSize();
       }
       
-      public function setWindowPosition(param1:IViewWrapper, param2:Number, param3:Number) : void
+      public function setPaddings(param1:Rectangle) : void
+      {
+         if(this._paddings == param1)
+         {
+            return;
+         }
+         this._paddings = param1;
+         this.updateWrapperSize();
+      }
+      
+      public function setWindowPosition(param1:uint, param2:IViewWrapper, param3:Number, param4:Number) : void
       {
          App.utils.asserter.assert(false,Errors.ABSTRACT_INVOKE);
       }
@@ -174,7 +188,7 @@ package net.wg.gui.components.wulf
       {
          if(this._wrapper != null)
          {
-            this._wrapper.updateParentSize(this._containerWidth,this._containerHeight);
+            this._wrapper.updateParentSize(this._containerWidth,this._containerHeight,this._paddings);
          }
          if(this._manageSize)
          {

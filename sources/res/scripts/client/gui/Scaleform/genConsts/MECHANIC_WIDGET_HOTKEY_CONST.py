@@ -1,0 +1,12 @@
+
+
+class MECHANIC_WIDGET_HOTKEY_CONST(object):
+    NORMAL = 'normal'
+    WARNING = 'warning'
+    ALERT = 'alert'
+    HOT_KEY_STATES = [NORMAL, WARNING, ALERT]
+    COMMAND_ACTIVATE = 'activate'
+    ALTERNATIVE_ACTIVATE = 'altActivate'
+    PREPARING = 'preparing'
+    CANCELLED = 'cancelled'
+    COMMANDS = [COMMAND_ACTIVATE, ALTERNATIVE_ACTIVATE, PREPARING, CANCELLED]

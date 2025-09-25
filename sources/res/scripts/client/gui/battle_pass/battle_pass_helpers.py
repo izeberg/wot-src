@@ -1,34 +1,37 @@
 import itertools, logging
 from collections import namedtuple
-import typing
-from enum import Enum
-import nations
-from account_helpers.AccountSettings import AccountSettings, IS_BATTLE_PASS_COLLECTION_SEEN, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LAST_BATTLE_PASS_POINTS_SEEN, LAST_BATTLE_PASS_CYCLES_SEEN, EXTRA_CHAPTERS_VIDEO_SHOWN, BUY_ANIMATIONS_WAS_SHOWN
-from account_helpers.settings_core.settings_constants import BattlePassStorageKeys
-from battle_pass_common import BattlePassConsts, BattlePassTankmenSource, HOLIDAY_SEASON_OFFSET, TANKMAN_QUEST_CHAIN_ENTITLEMENT_POSTFIX, isPostProgressionChapter
+import nations, typing
+from battle_pass_common import BattlePassConsts, BattlePassTankmenSource, HOLIDAY_SEASON_OFFSET, TANKMAN_QUEST_CHAIN_ENTITLEMENT_POSTFIX, isPostProgressionChapter, FinalReward
 from constants import ARENA_BONUS_TYPE, QUEUE_TYPE
+from enum import Enum
+from items.tankmen import getNationGroups
+from nations import INDICES
+from shared_utils import findFirst, first
+from account_helpers.AccountSettings import AccountSettings, IS_BATTLE_PASS_COLLECTION_SEEN, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, EXTRA_CHAPTERS_VIDEO_SHOWN, BUY_ANIMATIONS_WAS_SHOWN, IS_BATTLE_PASS_START_ANIMATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LAST_BATTLE_PASS_CYCLES_SEEN, LAST_BATTLE_PASS_POINTS_SEEN
+from account_helpers.settings_core.settings_constants import BattlePassStorageKeys
 from gui import GUI_SETTINGS
+from gui.Scaleform.genConsts.VEHPREVIEW_CONSTANTS import VEHPREVIEW_CONSTANTS
 from gui.impl.gen import R
 from gui.impl.gen.view_models.common.price_model import PriceModel
 from gui.impl.wrappers.user_compound_price_model import PriceModelBuilder
+from gui.impl.gen.view_models.views.lobby.vehicle_preview.top_panel.top_panel_tabs_model import TabID
 from gui.prb_control.dispatcher import g_prbLoader
 from gui.server_events.bonuses import VehiclesBonus
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.formatters import time_formatters
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.money import Currency
+from gui.shared.event_dispatcher import showBattlePassStyleProgressionPreview, showStylePreview, showVehiclePreviewWithoutBottomPanel
 from helpers import dependency, time_utils
 from helpers.dependency import replace_none_kwargs
-from items.tankmen import getNationGroups
-from nations import INDICES
-from shared_utils import findFirst, first
+from skeletons.gui.shared import IItemsCache
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import IBattlePassController
+from web.web_client_api.common import ItemPackEntry, ItemPackType
 if typing.TYPE_CHECKING:
     from typing import Any, Dict, List, Set
     from gui.impl.wrappers.user_compound_price_model import UserCompoundPriceModel
     from gui.server_events.bonuses import TmanTemplateTokensBonus
-    from gui.shared.gui_items.customization.c11n_items import Customization
 _logger = logging.getLogger(__name__)
 _CUSTOMIZATION_BONUS_NAME = 'customizations'
 TANKMAN_BONUS_NAME = 'tmanToken'
@@ -70,7 +73,7 @@ def isBattlePassActiveSeason():
 
 def getPointsInfoStringID(gameMode=ARENA_BONUS_TYPE.REGULAR):
     points = R.strings.battle_pass.points.top()
-    if gameMode == ARENA_BONUS_TYPE.COMP7:
+    if gameMode in (ARENA_BONUS_TYPE.COMP7, ARENA_BONUS_TYPE.COMP7_LIGHT):
         points = R.strings.battle_pass.prestige.top()
     return points
 
@@ -94,23 +97,16 @@ def getInfoPageURL():
     return getBattlePassUrl('infoPage')
 
 
-def getExtraInfoPageURL(chapterID):
-    baseUrl = GUI_SETTINGS.baseUrls['webBridgeRootURL']
-    chapterUrl = (GUI_SETTINGS.battlePassUrls.get('extraInfoPage') or {}).get(str(chapterID), '')
-    return ('').join((baseUrl, chapterUrl))
+def getExtraInfoPageURL():
+    return getBattlePassUrl('extraInfoPage')
 
 
 def getIntroVideoURL():
     return getBattlePassUrl('introVideo')
 
 
-def getExtraIntroVideoURL():
-    videoUrl = GUI_SETTINGS.battlePassUrls.get('extraIntroVideo')
-    if videoUrl is None:
-        return ''
-    else:
-        baseUrl = GUI_SETTINGS.baseUrls['webBridgeRootURL']
-        return ('').join((baseUrl, videoUrl))
+def getExtraVideoURL():
+    return getBattlePassUrl('extraVideo')
 
 
 def getIntroSlidesNames():
@@ -159,6 +155,7 @@ def getSupportedArenaBonusTypeFor(queueType, isInUnit):
            QUEUE_TYPE.MAPBOX: ARENA_BONUS_TYPE.MAPBOX, 
            QUEUE_TYPE.EPIC: ARENA_BONUS_TYPE.EPIC_BATTLE, 
            QUEUE_TYPE.COMP7: ARENA_BONUS_TYPE.COMP7, 
+           QUEUE_TYPE.COMP7_LIGHT: ARENA_BONUS_TYPE.COMP7_LIGHT, 
            QUEUE_TYPE.WINBACK: ARENA_BONUS_TYPE.WINBACK}
         arenaBonusType = arenaBonusTypeByQueueType.get(queueType, ARENA_BONUS_TYPE.UNKNOWN)
     return arenaBonusType
@@ -261,21 +258,6 @@ def getVehicleInfoForChapter(chapter, battlePass=None, c11nService=None, awardSo
     return (None, None)
 
 
-def getSingleVehicleForCustomization(customization):
-    itemFilter = customization.descriptor.filter
-    if itemFilter is not None and itemFilter.include:
-        vehicles = []
-        for node in itemFilter.include:
-            if node.nations or node.levels:
-                return
-            if node.vehicles:
-                vehicles.extend(node.vehicles)
-
-        if len(vehicles) == 1:
-            return vehicles[0]
-    return
-
-
 def getRecruitNation(recruitInfo):
     nation = first(recruitInfo.getNations())
     return INDICES.get(nation, 0)
@@ -362,13 +344,6 @@ def getFinalTankmen(chapterID, awardType, battlePass=None):
     return [ getTankmanInfo(bonus) for bonus in characterBonuses ]
 
 
-@replace_none_kwargs(battlePass=IBattlePassController)
-def getDefaultChaptersView(battlePass=None):
-    if battlePass.isPostProgressionActive():
-        return R.views.lobby.battle_pass.PostProgressionView()
-    return R.views.lobby.battle_pass.ChapterChoiceView()
-
-
 def updateBuyAnimationFlag(chapterID):
     settings = AccountSettings.getSettings(BUY_ANIMATIONS_WAS_SHOWN)
     if chapterID not in settings:
@@ -401,9 +376,37 @@ def _updateClientSettings():
     AccountSettings.setSettings(LAST_BATTLE_PASS_CYCLES_SEEN, 0)
     AccountSettings.setSettings(EXTRA_CHAPTERS_VIDEO_SHOWN, set())
     AccountSettings.setSettings(BUY_ANIMATIONS_WAS_SHOWN, set())
+    AccountSettings.setSettings(IS_BATTLE_PASS_START_ANIMATION_SEEN, False)
 
 
 def _updateServerSettings(data):
     data[BattlePassStorageKeys.INTRO_SHOWN] = False
     data[BattlePassStorageKeys.INTRO_VIDEO_SHOWN] = False
     data[BattlePassStorageKeys.EXTRA_CHAPTER_INTRO_SHOWN] = False
+
+
+@dependency.replace_none_kwargs(itemsCache=IItemsCache)
+def showFinalRewardPreviewBattlePassState(chapterID, bonusID=None, level=None, itemsCache=None):
+    from gui.Scaleform.daapi.view.lobby.storage.storage_helpers import getVehicleCDForStyle
+    styleInfo = getStyleForChapter(chapterID) if bonusID is None else itemsCache.items.getItemByCD(bonusID)
+    vehicleCD = getVehicleCDForStyle(styleInfo)
+    if styleInfo is not None and styleInfo.isProgression:
+        showBattlePassStyleProgressionPreview(vehicleCD, styleInfo, styleInfo.getDescription(), chapterId=chapterID, styleLevel=int(level or styleInfo.getProgressionLevel() or 1))
+        return
+    else:
+        previewItemPack = (
+         ItemPackEntry(type=ItemPackType.CREW_100, groupID=1),)
+        allRewardTypes = getAllFinalRewards(chapterID)
+        if FinalReward.VEHICLE in allRewardTypes:
+            vehicle, style = getVehicleInfoForChapter(chapterID, awardSource=BattlePassConsts.REWARD_BOTH)
+            if styleInfo is not None:
+                showStylePreview(vehicle.intCD, style=styleInfo, topPanelData={'linkage': VEHPREVIEW_CONSTANTS.TOP_PANEL_TABS_LINKAGE, 
+                   'tabIDs': (
+                            TabID.VEHICLE, TabID.STYLE), 
+                   'currentTabID': TabID.STYLE, 
+                   'style': styleInfo}, itemsPack=previewItemPack)
+            else:
+                showVehiclePreviewWithoutBottomPanel(vehicle.intCD, itemsPack=previewItemPack, style=style)
+        elif FinalReward.STYLE in allRewardTypes or bonusID:
+            showStylePreview(vehicleCD, style=styleInfo, itemsPack=previewItemPack)
+        return

@@ -1039,6 +1039,7 @@ class CollisionComponent(PyComponentWrapperBase):
 	def collideWorldRecursively(self, *args, **kwargs): pass
 	def connect(self, *args, **kwargs): pass
 	def destroy(self, *args, **kwargs): pass
+	def getBodyName(self, *args, **kwargs): pass
 	def getBoundingBox(self, *args, **kwargs): pass
 	def getChildrenPartIndices(self, *args, **kwargs): pass
 	def getColliderID(self, *args, **kwargs): pass
@@ -4430,6 +4431,7 @@ class SphericalTransitionCamera(CursorCamera):
 	def __subclasshook__(*args, **kwargs): pass
 	def addVolumeGroup(self, *args, **kwargs): pass
 	direction = property(lambda self: None)
+	def easingProgress(self, *args, **kwargs): pass
 	def enableAdvancedCollider(self, *args, **kwargs): pass
 	def enableCollisions(self, *args, **kwargs): pass
 	def forceUpdate(self, *args, **kwargs): pass
@@ -5079,8 +5081,6 @@ class WGGunRotatorImpl(pybind11_object):
 	autorotationFlags = property(lambda self: None)
 	compensationSpeedup = property(lambda self: None)
 	enablePitchSpeedAdjustment = property(lambda self: None)
-	exportPitchOrigin = property(lambda self: None)
-	exportYawOrigin = property(lambda self: None)
 	fixGunPitch = property(lambda self: None)
 	fixTurretYaw = property(lambda self: None)
 	gotTargetPoint = property(lambda self: None)
@@ -5091,6 +5091,8 @@ class WGGunRotatorImpl(pybind11_object):
 	gunPitch = property(lambda self: None)
 	gunPositionLocal = property(lambda self: None)
 	gunRotationSpeed = property(lambda self: None)
+	hasStaticGunPitch = property(lambda self: None)
+	hasStaticTurretYaw = property(lambda self: None)
 	hullPitchCorrection = property(lambda self: None)
 	hullPitchCorrectionToApply = property(lambda self: None)
 	hullPitchFlexible = property(lambda self: None)
@@ -5105,9 +5107,10 @@ class WGGunRotatorImpl(pybind11_object):
 	lockedGunRotationSpeed = property(lambda self: None)
 	pitchOrigin = property(lambda self: None)
 	projectileSpeed = property(lambda self: None)
+	def setShotDispersionFactorByIndex(self, *args, **kwargs): pass
 	shotDirection = property(lambda self: None)
-	shotDispersion = property(lambda self: None)
-	shotDispersionFactor = property(lambda self: None)
+	shotDispersionFactors = property(lambda self: None)
+	shotDispersions = property(lambda self: None)
 	shotPoint = property(lambda self: None)
 	targetPoint = property(lambda self: None)
 	turretLastRotationSpeed = property(lambda self: None)
@@ -5588,6 +5591,7 @@ class WGVehiclePhysics(pybind11_object):
 	centerOfMass = property(lambda self: None)
 	choker = property(lambda self: None)
 	def configure(self, *args, **kwargs): pass
+	correctionSpeedFactor = property(lambda self: None)
 	cruiseSignals = property(lambda self: None)
 	currentCenterOfMass = property(lambda self: None)
 	def destructibleImpactCb(self, *args, **kwargs): pass
@@ -5630,6 +5634,7 @@ class WGVehiclePhysics(pybind11_object):
 	hullPitchCorrectionSector = property(lambda self: None)
 	hydroResistanceFactor = property(lambda self: None)
 	hydroResistanceRotFactor = property(lambda self: None)
+	isAutorotation = property(lambda self: None)
 	isFrozen = property(lambda self: None)
 	isFrozenDuringFrame = property(lambda self: None)
 	isOutOfControl = property(lambda self: None)
@@ -5735,6 +5740,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	centerOfMass = property(lambda self: None)
 	choker = property(lambda self: None)
 	def configure(self, *args, **kwargs): pass
+	correctionSpeedFactor = property(lambda self: None)
 	cruiseSignals = property(lambda self: None)
 	currentCenterOfMass = property(lambda self: None)
 	def destructibleImpactCb(self, *args, **kwargs): pass
@@ -5777,6 +5783,7 @@ class WGTankPhysics(WGVehiclePhysics):
 	hullPitchCorrectionSector = property(lambda self: None)
 	hydroResistanceFactor = property(lambda self: None)
 	hydroResistanceRotFactor = property(lambda self: None)
+	isAutorotation = property(lambda self: None)
 	isFrozen = property(lambda self: None)
 	isFrozenDuringFrame = property(lambda self: None)
 	isLeftTrackBroken = property(lambda self: None)
@@ -6104,6 +6111,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	centerOfMass = property(lambda self: None)
 	choker = property(lambda self: None)
 	def configure(self, *args, **kwargs): pass
+	correctionSpeedFactor = property(lambda self: None)
 	cruiseSignals = property(lambda self: None)
 	currentCenterOfMass = property(lambda self: None)
 	def destructibleImpactCb(self, *args, **kwargs): pass
@@ -6147,6 +6155,7 @@ class WGWheeledPhysics(WGVehiclePhysics):
 	hullPitchCorrectionSector = property(lambda self: None)
 	hydroResistanceFactor = property(lambda self: None)
 	hydroResistanceRotFactor = property(lambda self: None)
+	isAutorotation = property(lambda self: None)
 	isFrozen = property(lambda self: None)
 	isFrozenDuringFrame = property(lambda self: None)
 	isOutOfControl = property(lambda self: None)
@@ -6765,6 +6774,7 @@ def objectLod(*args, **kwargs): pass
 def onInterfaceScaleChanged(*args, **kwargs): pass
 def overrideGraphicsSetting(*args, **kwargs): pass
 def pauseDRRAutoscaling(*args, **kwargs): pass
+def pingMeAndThenJustTouchMe(*args, **kwargs): pass
 platform = u'windows'
 def playMovie(*args, **kwargs): pass
 def player(*args, **kwargs): pass
@@ -6835,6 +6845,7 @@ def setWatcher(*args, **kwargs): pass
 def sinkKeyEvents(*args, **kwargs): pass
 def solvePow(*args, **kwargs): pass
 def spaceLoadStatus(*args, **kwargs): pass
+def spaceReload(*args, **kwargs): pass
 def spaceTimeOfDay(*args, **kwargs): pass
 
 class spaces(pybind11_object):

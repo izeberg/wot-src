@@ -45,6 +45,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.BATTLEDAMAGELOG_IMAGES;
    import net.wg.data.constants.generated.BATTLE_EFFICIENCY_TYPES;
    import net.wg.data.constants.generated.BLOCKS_TOOLTIP_TYPES;
+   import net.wg.data.constants.generated.CLIP_RELOADING_TYPES;
    import net.wg.data.constants.generated.COLOR_SETTINGS;
    import net.wg.data.constants.generated.CROSSHAIR_CONSTANTS;
    import net.wg.data.constants.generated.CURRENCIES_CONSTANTS;
@@ -215,6 +216,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.containers.HintContainer;
    import net.wg.gui.components.containers.HorizontalGroupLayout;
    import net.wg.gui.components.containers.IGroupEx;
+   import net.wg.gui.components.containers.LobbyPageSubContainer;
    import net.wg.gui.components.containers.MainViewContainer;
    import net.wg.gui.components.containers.ManagedContainer;
    import net.wg.gui.components.containers.SimpleManagedContainer;
@@ -241,6 +243,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.controls.ButtonIconNormal;
    import net.wg.gui.components.controls.ButtonIconTextTransparent;
    import net.wg.gui.components.controls.ButtonIconTransparent;
+   import net.wg.gui.components.controls.ButtonSmallGray;
    import net.wg.gui.components.controls.CheckBox;
    import net.wg.gui.components.controls.CloseButton;
    import net.wg.gui.components.controls.CloseButtonText;
@@ -397,6 +400,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.CrosshairBase;
    import net.wg.gui.components.crosshairPanel.CrosshairDistanceContainer;
    import net.wg.gui.components.crosshairPanel.CrosshairDistanceField;
+   import net.wg.gui.components.crosshairPanel.CrosshairNetSeparator;
    import net.wg.gui.components.crosshairPanel.CrosshairPanelContainer;
    import net.wg.gui.components.crosshairPanel.CrosshairPanelEvent;
    import net.wg.gui.components.crosshairPanel.CrosshairPanelSniperCameraTransitionFx;
@@ -412,7 +416,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBar;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
-   import net.wg.gui.components.crosshairPanel.components.OverheatBar;
    import net.wg.gui.components.crosshairPanel.components.artyScale.ArtyIndicationScale;
    import net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicator;
    import net.wg.gui.components.crosshairPanel.components.artyShot.ArtyShotIndicatorText;
@@ -424,6 +427,16 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicator;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorElement;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
+   import net.wg.gui.components.crosshairPanel.components.controllableLoader.ControllableReloadCassette;
+   import net.wg.gui.components.crosshairPanel.components.controllableLoader.ControllableReloadShellProgressBar;
+   import net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipBar;
+   import net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipCursor;
+   import net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotClipPanel;
+   import net.wg.gui.components.crosshairPanel.components.extraShotClip.ExtraShotShellProgressBar;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarker;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.AccuracyGunMarkerDispersionCircle;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarker;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.ChargeGunMarkerDispersionCircle;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.DualGunMarkerDebug;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarker;
@@ -433,6 +446,9 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerDebugStrategic;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerDispersionCircle;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixing;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingAccuracyGun;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingChargeGun;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingChargeableBurst;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingDualGun;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingDualGunSniper;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingSolid;
@@ -442,12 +458,16 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerStrategic;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerTag;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarker;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarkerDispersion;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.IGunMarkerMixing;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.PenetrationFX;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarker;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarkerDebug;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.TwinGunMarkerDispersionCircle;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.ZoomingAimDamage;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.constants.GunMarkerConsts;
+   import net.wg.gui.components.crosshairPanel.components.gunStack.ReloadBoostBorder;
+   import net.wg.gui.components.crosshairPanel.components.shared.ShellProgressBar;
    import net.wg.gui.components.crosshairPanel.components.speedometer.Speedometer;
    import net.wg.gui.components.crosshairPanel.components.speedometer.SpeedometerWarningAnim;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
@@ -716,6 +736,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.AdvancedGraphicSettingsForm;
    import net.wg.gui.lobby.settings.AimSettings;
    import net.wg.gui.lobby.settings.AimSettingsBase;
+   import net.wg.gui.lobby.settings.ArmorFlashlightContent;
    import net.wg.gui.lobby.settings.ControlsSettings;
    import net.wg.gui.lobby.settings.ControlsSettingsBase;
    import net.wg.gui.lobby.settings.DisabledTabsOverlay;
@@ -728,6 +749,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.MarkerSettingsBase;
    import net.wg.gui.lobby.settings.ScreenSettingsForm;
    import net.wg.gui.lobby.settings.SettingsArcadeForm;
+   import net.wg.gui.lobby.settings.SettingsArmorFlashlightForm;
    import net.wg.gui.lobby.settings.SettingsArtyForm;
    import net.wg.gui.lobby.settings.SettingsBaseView;
    import net.wg.gui.lobby.settings.SettingsChangesMap;
@@ -803,6 +825,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.settings.vo.config.SettingConfigDataVo;
    import net.wg.gui.lobby.settings.vo.config.SoundSettingsDataVo;
    import net.wg.gui.lobby.settings.vo.config.aim.AimSettingsArcadeDataVo;
+   import net.wg.gui.lobby.settings.vo.config.aim.AimSettingsArmorFlashlightDataVo;
    import net.wg.gui.lobby.settings.vo.config.aim.AimSettingsArtyDataVo;
    import net.wg.gui.lobby.settings.vo.config.aim.AimSettingsContourDataVo;
    import net.wg.gui.lobby.settings.vo.config.aim.AimSettingsDataVo;
@@ -857,6 +880,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.infrastructure.events.VoiceChatEvent;
    import net.wg.infrastructure.helpers.interfaces.IDragDelegate;
    import net.wg.infrastructure.interfaces.IBaseLayout;
+   import net.wg.infrastructure.interfaces.IDisposableSprite;
    import net.wg.infrastructure.interfaces.IFocusChainContainer;
    import net.wg.infrastructure.interfaces.IListDAAPIDataProvider;
    import net.wg.infrastructure.interfaces.ISpriteEx;
@@ -929,6 +953,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BATTLE_EFFICIENCY_TYPES:Class = BATTLE_EFFICIENCY_TYPES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_BLOCKS_TOOLTIP_TYPES:Class = BLOCKS_TOOLTIP_TYPES;
+      
+      public static const NET_WG_DATA_CONSTANTS_GENERATED_CLIP_RELOADING_TYPES:Class = CLIP_RELOADING_TYPES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_COLOR_SETTINGS:Class = COLOR_SETTINGS;
       
@@ -1304,6 +1330,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CONTAINERS_IGROUPEX:Class = IGroupEx;
       
+      public static const NET_WG_GUI_COMPONENTS_CONTAINERS_LOBBYPAGESUBCONTAINER:Class = LobbyPageSubContainer;
+      
       public static const NET_WG_GUI_COMPONENTS_CONTAINERS_MAINVIEWCONTAINER:Class = MainViewContainer;
       
       public static const NET_WG_GUI_COMPONENTS_CONTAINERS_MANAGEDCONTAINER:Class = ManagedContainer;
@@ -1355,6 +1383,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_BUTTONICONTEXTTRANSPARENT:Class = ButtonIconTextTransparent;
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_BUTTONICONTRANSPARENT:Class = ButtonIconTransparent;
+      
+      public static const NET_WG_GUI_COMPONENTS_CONTROLS_BUTTONSMALLGRAY:Class = ButtonSmallGray;
       
       public static const NET_WG_GUI_COMPONENTS_CONTROLS_CHECKBOX:Class = CheckBox;
       
@@ -1668,6 +1698,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CROSSHAIRDISTANCEFIELD:Class = CrosshairDistanceField;
       
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CROSSHAIRNETSEPARATOR:Class = CrosshairNetSeparator;
+      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CROSSHAIRPANELCONTAINER:Class = CrosshairPanelContainer;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_CROSSHAIRPANELEVENT:Class = CrosshairPanelEvent;
@@ -1692,8 +1724,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CROSSHAIRCLIPQUANTITYBARCONTAINER:Class = CrosshairClipQuantityBarContainer;
       
-      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_OVERHEATBAR:Class = OverheatBar;
-      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_ARTYSCALE_ARTYINDICATIONSCALE:Class = ArtyIndicationScale;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_ARTYSHOT_ARTYSHOTINDICATOR:Class = ArtyShotIndicator;
@@ -1716,6 +1746,26 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_AUTOLOADER_BOOSTINDICATORSTATEPARAMSVO:Class = BoostIndicatorStateParamsVO;
       
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CONTROLLABLELOADER_CONTROLLABLERELOADCASSETTE:Class = ControllableReloadCassette;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_CONTROLLABLELOADER_CONTROLLABLERELOADSHELLPROGRESSBAR:Class = ControllableReloadShellProgressBar;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_EXTRASHOTCLIP_EXTRASHOTCLIPBAR:Class = ExtraShotClipBar;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_EXTRASHOTCLIP_EXTRASHOTCLIPCURSOR:Class = ExtraShotClipCursor;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_EXTRASHOTCLIP_EXTRASHOTCLIPPANEL:Class = ExtraShotClipPanel;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_EXTRASHOTCLIP_EXTRASHOTSHELLPROGRESSBAR:Class = ExtraShotShellProgressBar;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_ACCURACYGUNMARKER:Class = AccuracyGunMarker;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_ACCURACYGUNMARKERDISPERSIONCIRCLE:Class = AccuracyGunMarkerDispersionCircle;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_CHARGEGUNMARKER:Class = ChargeGunMarker;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_CHARGEGUNMARKERDISPERSIONCIRCLE:Class = ChargeGunMarkerDispersionCircle;
+      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_DUALGUNMARKER:Class = DualGunMarker;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_DUALGUNMARKERDEBUG:Class = DualGunMarkerDebug;
@@ -1733,6 +1783,12 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERDISPERSIONCIRCLE:Class = GunMarkerDispersionCircle;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXING:Class = GunMarkerMixing;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGACCURACYGUN:Class = GunMarkerMixingAccuracyGun;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGCHARGEABLEBURST:Class = GunMarkerMixingChargeableBurst;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGCHARGEGUN:Class = GunMarkerMixingChargeGun;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGDUALGUN:Class = GunMarkerMixingDualGun;
       
@@ -1752,7 +1808,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_IGUNMARKER:Class = IGunMarker;
       
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_IGUNMARKERDISPERSION:Class = IGunMarkerDispersion;
+      
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_IGUNMARKERMIXING:Class = IGunMarkerMixing;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_PENETRATIONFX:Class = PenetrationFX;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_TWINGUNMARKER:Class = TwinGunMarker;
       
@@ -1763,6 +1823,10 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_ZOOMINGAIMDAMAGE:Class = ZoomingAimDamage;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_CONSTANTS_GUNMARKERCONSTS:Class = GunMarkerConsts;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNSTACK_RELOADBOOSTBORDER:Class = ReloadBoostBorder;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SHARED_SHELLPROGRESSBAR:Class = ShellProgressBar;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_SPEEDOMETER_SPEEDOMETER:Class = Speedometer;
       
@@ -2306,6 +2370,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_AIMSETTINGSBASE:Class = AimSettingsBase;
       
+      public static const NET_WG_GUI_LOBBY_SETTINGS_ARMORFLASHLIGHTCONTENT:Class = ArmorFlashlightContent;
+      
       public static const NET_WG_GUI_LOBBY_SETTINGS_CONTROLSSETTINGS:Class = ControlsSettings;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_CONTROLSSETTINGSBASE:Class = ControlsSettingsBase;
@@ -2329,6 +2395,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_SETTINGS_SCREENSETTINGSFORM:Class = ScreenSettingsForm;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_SETTINGSARCADEFORM:Class = SettingsArcadeForm;
+      
+      public static const NET_WG_GUI_LOBBY_SETTINGS_SETTINGSARMORFLASHLIGHTFORM:Class = SettingsArmorFlashlightForm;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_SETTINGSARTYFORM:Class = SettingsArtyForm;
       
@@ -2480,6 +2548,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_CONFIG_AIM_AIMSETTINGSARCADEDATAVO:Class = AimSettingsArcadeDataVo;
       
+      public static const NET_WG_GUI_LOBBY_SETTINGS_VO_CONFIG_AIM_AIMSETTINGSARMORFLASHLIGHTDATAVO:Class = AimSettingsArmorFlashlightDataVo;
+      
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_CONFIG_AIM_AIMSETTINGSARTYDATAVO:Class = AimSettingsArtyDataVo;
       
       public static const NET_WG_GUI_LOBBY_SETTINGS_VO_CONFIG_AIM_AIMSETTINGSCONTOURDATAVO:Class = AimSettingsContourDataVo;
@@ -2589,6 +2659,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_INFRASTRUCTURE_HELPERS_INTERFACES_IDRAGDELEGATE:Class = IDragDelegate;
       
       public static const NET_WG_INFRASTRUCTURE_INTERFACES_IBASELAYOUT:Class = IBaseLayout;
+      
+      public static const NET_WG_INFRASTRUCTURE_INTERFACES_IDISPOSABLESPRITE:Class = IDisposableSprite;
       
       public static const NET_WG_INFRASTRUCTURE_INTERFACES_IFOCUSCHAINCONTAINER:Class = IFocusChainContainer;
       

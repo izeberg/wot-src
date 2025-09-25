@@ -71,6 +71,12 @@ msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 msgid "battleResult/missionName/1004"
 msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
+msgid "battleResult/missionName/1005"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
+
+msgid "battleResult/missionName/1006"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
+
 msgid "battleResult/missionName/2"
 msgstr "ОХОТНИК НА ТИГРОВ: Операция «Зверолов»"
 
@@ -85,6 +91,9 @@ msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
 
 msgid "battleResult/missionName/6"
 msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+
+msgid "battleResult/missionName/7"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
 
 msgid "battleResult/noTasksToComplete"
 msgstr ""
@@ -155,42 +164,23 @@ msgstr "Подтвердить"
 msgid "dialogs/missionCompleted/title"
 msgstr "Нет активных задач для этой операции"
 
-msgid "entryPoint/new"
-msgstr "НОВОЕ"
-
-msgid "entryPoint/subtitle/newMission"
-msgstr "ДОСТУПНЫ НОВЫЕ ЗАДАЧИ"
-
-msgid "entryPoint/subtitle/newMode"
-msgstr "ДОСТУПНА НОВАЯ ИСТОРИЯ"
-
-msgid "entryPoint/timer/dates"
-msgstr "%(startDate)s – %(endDate)"
-
-msgid "entryPoint/title/newMission"
-msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
-
-msgid "entryPoint/title/newMode"
-msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
-
 msgid "eventWelcomeScreen/column/subtitle/1"
 msgstr ""
-"Эта история приурочена к 80-й годовщине окончания войны в Европе. Доставьте "
-"союзникам приказ о прекращении огня, чтобы остановить кровопролитие."
+"Установить источник угрозы, остановить запуск ракет и убедиться, что новые "
+"технологии попадут в правильные руки."
 
 msgid "eventWelcomeScreen/column/subtitle/2"
 msgstr ""
-"Проходите эту увлекательную одиночную историю, в которой вам нужно незаметно"
-" пробраться мимо противника под управлением ИИ. Избегайте вражеских "
-"патрулей, дезинформируйте их и используйте тактические способности."
+"Играйте в одиночку и сражайтесь с противником под управлением ИИ в этой "
+"захватывающей истории с участием командиров из «Сектора 3»!"
 
 msgid "eventWelcomeScreen/column/subtitle/3"
 msgstr ""
-"Выполните все задачи, чтобы получить памятную нашивку, премиум машину с "
-"3D-стилем в комплекте и другие награды."
+"Выполните все задачи, чтобы получить памятную нашивку, медаль, тематические "
+"2D-стили и другие полезные награды."
 
 msgid "eventWelcomeScreen/column/title/1"
-msgstr "Исторические события"
+msgstr "Начало новой эпохи"
 
 msgid "eventWelcomeScreen/column/title/2"
 msgstr "Одиночная история"
@@ -199,7 +189,7 @@ msgid "eventWelcomeScreen/column/title/3"
 msgstr "Награды"
 
 msgid "eventWelcomeScreen/header"
-msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
 
 msgid "eventWelcomeScreen/subheader"
 msgstr "%(startDate)s – %(endDate)"
@@ -211,9 +201,7 @@ msgid "missionSelection/about"
 msgstr "ОБ ИСТОРИЯХ"
 
 msgid "missionSelection/difficulty/hard"
-msgstr ""
-"Продвинутое\n"
-"секретное задание"
+msgstr "Продвинутая"
 
 msgid "missionSelection/difficulty/normal"
 msgstr "Простые"
@@ -256,6 +244,11 @@ msgstr ""
 "ОПЕРАЦИЯ\n"
 "«ПОЧТАЛЬОН»"
 
+msgid "missionSelection/lockedMissionName/7"
+msgstr ""
+"ОПЕРАЦИЯ\n"
+"ТОЧКА КИПЕНИЯ"
+
 msgid "missionSelection/missionDescription/1"
 msgstr ""
 "Брукс: «Ну, как? Пришёл в себя? Медикам потом покажешься. Сейчас каждое орудие на счету. Штурм уже начался. Из-за того, что мы опоздали, всё внимание противника сосредоточено на другом фланге. Это наш шанс. Атакуем сходу. Врываемся в город и зажимаем противника с двух сторон.\n"
@@ -291,6 +284,22 @@ msgstr ""
 "Мы единственные, кто может это остановить. Наша задача: пройти через вражеские позиции и доставить приказ об отмене штурма. Это самоубийственная миссия, но каждая спасённая жизнь того стоит. С нами будет пленённый немецкий радист, он знает местность и хочет остановить эту мясорубку так же, как и мы.\n"
 "\n"
 "Выдвигаемся»."
+
+msgid "missionSelection/missionDescription/1005"
+msgstr ""
+"Лени Шарф: «Ситуация критическая. Мы потеряли связь с нашей ракетной базой в Норвежском море. Разведывательный самолёт так и не вернулся, а первая десантная группа полностью уничтожена неизвестным противником.\n"
+"\n"
+"По данным разведки, они готовятся к запуску баллистической ракеты. Цель нам не ясна, но в текущей обстановке даже один выстрел может привести к глобальному конфликту.\n"
+"\n"
+"Как в старые добрые... Очередное невыполнимое задание в тылу врага. Выдвигаемся!»"
+
+msgid "missionSelection/missionDescription/1006"
+msgstr ""
+"Лени Шарф: «Ситуация критическая. Мы потеряли связь с нашей ракетной базой в Норвежском море. Разведывательный самолёт так и не вернулся, а первая десантная группа полностью уничтожена неизвестным противником.\n"
+"\n"
+"По данным разведки, они готовятся к запуску баллистической ракеты. Цель нам не ясна, но в текущей обстановке даже один выстрел может привести к глобальному конфликту.\n"
+"\n"
+"Как в старые добрые... Очередное невыполнимое задание в тылу врага. Выдвигаемся!»"
 
 msgid "missionSelection/missionDescription/2"
 msgstr ""
@@ -334,6 +343,14 @@ msgstr ""
 "\n"
 "Выдвигаемся»."
 
+msgid "missionSelection/missionDescription/7"
+msgstr ""
+"Лени Шарф: «Ситуация критическая. Мы потеряли связь с нашей ракетной базой в Норвежском море. Разведывательный самолёт так и не вернулся, а первая десантная группа полностью уничтожена неизвестным противником.\n"
+"\n"
+"По данным разведки, они готовятся к запуску баллистической ракеты. Цель нам не ясна, но в текущей обстановке даже один выстрел может привести к глобальному конфликту.\n"
+"\n"
+"Как в старые добрые... Очередное невыполнимое задание в тылу врага. Выдвигаемся!»"
+
 msgid "missionSelection/missionName/1"
 msgstr "ОПЕРАЦИЯ «СТАЛЬНАЯ ЛАВИНА»"
 
@@ -345,6 +362,12 @@ msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
 msgid "missionSelection/missionName/1004"
 msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+
+msgid "missionSelection/missionName/1005"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
+
+msgid "missionSelection/missionName/1006"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
 
 msgid "missionSelection/missionName/2"
 msgstr "ОПЕРАЦИЯ «ЗВЕРОЛОВ»"
@@ -361,11 +384,14 @@ msgstr "ОПЕРАЦИЯ «ОВЕРЛОРД»"
 msgid "missionSelection/missionName/6"
 msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
 
+msgid "missionSelection/missionName/7"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
+
 msgid "missionSelection/specialVehicle"
 msgstr "Специальная техника"
 
 msgid "missionSelection/tab/event"
-msgstr "ОПЕРАЦИЯ «ПОЧТАЛЬОН»"
+msgstr "ОПЕРАЦИЯ «ТОЧКА КИПЕНИЯ»"
 
 msgid "missionSelection/tab/newbies"
 msgstr "ОБУЧАЮЩИЕ ИСТОРИИ"
@@ -402,6 +428,24 @@ msgid "missionSelection/taskDescription/1004/3"
 msgstr ""
 "Достигните основных целей задачи, не получив урона от мин и артиллерии "
 "противника."
+
+msgid "missionSelection/taskDescription/1005/1"
+msgstr "Доберитесь до командного пункта и остановите запуск ракеты."
+
+msgid "missionSelection/taskDescription/1005/2"
+msgstr "Достигните основных целей задачи менее чем за %(win_timer)s."
+
+msgid "missionSelection/taskDescription/1005/3"
+msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
+
+msgid "missionSelection/taskDescription/1006/1"
+msgstr "Доберитесь до командного пункта и остановите запуск ракеты."
+
+msgid "missionSelection/taskDescription/1006/2"
+msgstr "Достигните основных целей задачи менее чем за %(win_timer)s."
+
+msgid "missionSelection/taskDescription/1006/3"
+msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
 
 msgid "missionSelection/taskDescription/2/1"
 msgstr "Атакуйте город и уничтожьте машины противника."
@@ -444,6 +488,15 @@ msgstr "Достигните основных целей задачи, унич�
 msgid "missionSelection/taskDescription/6/3"
 msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
 
+msgid "missionSelection/taskDescription/7/1"
+msgstr "Доберитесь до командного пункта и остановите запуск ракеты."
+
+msgid "missionSelection/taskDescription/7/2"
+msgstr "Достигните основных целей задачи менее чем за %(win_timer)s."
+
+msgid "missionSelection/taskDescription/7/3"
+msgstr "Достигните основных целей задачи, не потеряв ни одной машины."
+
 msgid "missionSelection/taskDescription/kill_enemies"
 msgid_plural "plural/missionSelection/taskDescription/kill_enemies"
 msgstr[0] "%(value)s машины противника"
@@ -477,13 +530,12 @@ msgid "mode/story_mode/description"
 msgstr "Выполните сюжетные операции против машин под управлением ИИ."
 
 msgid "mode/story_mode_event/callToAction"
-msgstr "Доступна операция «Почтальон»"
+msgstr "Доступна операция «Точка кипения»"
 
 msgid "newbieAdvertisingScreen/column/subtitle/1"
 msgstr ""
-"Ваш текущий режим указан рядом с кнопкой &zwnbsp;{whiteSpanish_Open}«В "
-"бой!»{whiteSpanish_Close}&zwnbsp;. Нажмите на него, чтобы увидеть доступные "
-"режимы игры."
+"Ваш текущий режим указан наверху главного меню Ангара. Нажмите на него, "
+"чтобы увидеть доступные режимы игры."
 
 msgid "newbieAdvertisingScreen/column/subtitle/2"
 msgstr ""
@@ -510,12 +562,6 @@ msgstr "ИСТОРИИ"
 
 msgid "newbieAdvertisingScreen/subheader"
 msgstr "Вас ждут сюжетные сценарии"
-
-msgid "newbieEntryPoint/subtitle/newStorie"
-msgstr "Доступна новая операция"
-
-msgid "newbieEntryPoint/title/newStorie"
-msgstr "ИСТОРИИ"
 
 msgid "onboardingBattleResult/startButton"
 msgstr "Перезапустить"
@@ -594,16 +640,19 @@ msgstr "Выполненные задачи"
 
 msgid "tooltips/battleResultStat/missions/info"
 msgstr ""
-"Количество выполненных задач и\n"
-"все текущие доступные задачи."
+"Количество выполненных и\n"
+"доступных на данный момент задач.\n"
+"Задачи, выполненные на продвинутом\n"
+"уровне сложности, автоматически\n"
+"выполняются и на стандартном."
 
 msgid "tooltips/difficulty/available"
 msgstr "Доступно"
 
 msgid "tooltips/difficulty/hard/description"
 msgstr ""
-"Более сложный вариант этапа «Секретное задание» с нелинейной структурой, большим количеством техники противника и дополнительными фрагменты карты.\n"
-"Награда за выполнение увеличена."
+"Противник быстрее реагирует, точнее стреляет и агрессивнее нападает на вас. "
+"Выполнение задач приносит больше наград."
 
 msgid "tooltips/difficulty/hard/info/body"
 msgstr ""
@@ -616,7 +665,7 @@ msgid "tooltips/difficulty/hard/info/title"
 msgstr "Дополнительное условие"
 
 msgid "tooltips/difficulty/hard/title"
-msgstr "Секретное задание, продвинутый"
+msgstr "Продвинутая"
 
 msgid "tooltips/difficulty/locked/body"
 msgstr "Чтобы открыть продвинутый уровень, завершите эту операцию на простом."
@@ -626,9 +675,8 @@ msgstr "Недоступно"
 
 msgid "tooltips/difficulty/normal/description"
 msgstr ""
-"Меньше противников и линейная структура операции, чтобы познакомиться с правилами и целями режима.\n"
-"Включает вступительный этап, а также этапы «Секретное задание» и «Минное поле».\n"
-"За выполнение полагаются стандартные награды."
+"Соперники медленнее и не такие меткие, а за выполненные задачи вы получите "
+"стандартные награды."
 
 msgid "tooltips/difficulty/normal/title"
 msgstr "Простые"
@@ -643,6 +691,46 @@ msgstr ""
 
 msgid "tooltips/difficulty/very_hard/title"
 msgstr "Минное поле, продвинутый"
+
+msgid "tooltips/eventBannerTooltip/eventText"
+msgstr ""
+"Установить источник угрозы, остановить запуск ракет и убедиться, что новые "
+"технологии попадут в правильные руки."
+
+msgid "tooltips/eventBannerTooltip/eventTitle"
+msgstr "Операция «Точка кипения»"
+
+msgid "tooltips/eventBannerTooltip/mode"
+msgstr "РЕЖИМ"
+
+msgid "tooltips/eventBannerTooltip/modeText"
+msgstr "— это игровой режим. Нажмите для ознакомления."
+
+msgid "tooltips/eventBannerTooltip/text"
+msgstr ""
+"Играйте в одиночку и сражайтесь с противником под управлением ИИ в этой "
+"захватывающей истории с участием командиров из «Сектора 3»!"
+
+msgid "tooltips/eventBannerTooltip/timerText"
+msgstr "Событие доступно {timer}"
+
+msgid "tooltips/eventBannerTooltip/title"
+msgstr "ИСТОРИИ"
+
+msgid "tooltips/newbieBannerTooltip/mode"
+msgstr "РЕЖИМ"
+
+msgid "tooltips/newbieBannerTooltip/modeText"
+msgstr "— это игровой режим. Нажмите для ознакомления."
+
+msgid "tooltips/newbieBannerTooltip/text"
+msgstr ""
+"Специально подготовленные сценарии. Окунитесь в мир боевой техники и "
+"проверьте, готовы ли вы сражаться с противником под управлением "
+"искусственного интеллекта."
+
+msgid "tooltips/newbieBannerTooltip/title"
+msgstr "Истории"
 
 msgid "tooltips/task/active"
 msgstr "Выполняется"

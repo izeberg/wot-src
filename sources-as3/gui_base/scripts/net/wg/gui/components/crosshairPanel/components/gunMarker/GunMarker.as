@@ -1,5 +1,7 @@
 package net.wg.gui.components.crosshairPanel.components.gunMarker
 {
+   import flash.utils.getDefinitionByName;
+   import net.wg.data.constants.generated.GUN_MARKER_VIEW_CONSTANTS;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.constants.GunMarkerConsts;
    import net.wg.infrastructure.base.SimpleContainer;
    
@@ -9,7 +11,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       public var gunTag:GunMarkerTag = null;
       
-      public var radiusMC:GunMarkerDispersionCircle = null;
+      public var radiusMC:IGunMarkerDispersion = null;
       
       public var aimDamage:GunMarkerAimDamage = null;
       
@@ -20,6 +22,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       private var _scale:Number = 1;
       
       private var _isSecondary:Boolean = false;
+      
+      private var _penetrationFx:PenetrationFX = null;
       
       public function GunMarker()
       {
@@ -55,6 +59,12 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             this.aimDamage.dispose();
             this.aimDamage = null;
          }
+         if(this._penetrationFx)
+         {
+            removeChild(this._penetrationFx);
+            this._penetrationFx.dispose();
+            this._penetrationFx = null;
+         }
          super.onDispose();
       }
       
@@ -63,9 +73,9 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.aimDamage.setStage(param1);
       }
       
-      public function setZoomFactor(param1:Number) : void
+      public function setChargeableBurstMode(param1:Boolean) : void
       {
-         this.aimDamage.zoomFactor = param1;
+         this.radiusMC.setChargeableBurstMode(param1);
       }
       
       public function setColor(param1:String) : void
@@ -110,8 +120,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       public function setScale(param1:Number) : void
       {
-         this._scale = param1;
-         invalidate(GunMarkerConsts.GUN_SCALE_VALIDATION);
+         if(this._scale != param1)
+         {
+            this._scale = param1;
+            invalidate(GunMarkerConsts.GUN_SCALE_VALIDATION);
+         }
       }
       
       public function setSettings(param1:Number, param2:Number, param3:Number, param4:Number) : void
@@ -128,6 +141,23 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             this._mixingAlpha = param4;
             invalidate(GunMarkerConsts.GUN_MIXING_ALPHA_VALIDATION);
          }
+      }
+      
+      public function setZoomFactor(param1:Number) : void
+      {
+         this.aimDamage.zoomFactor = param1;
+      }
+      
+      public function showPenetrationFx() : void
+      {
+         var _loc1_:Class = null;
+         if(this._penetrationFx == null)
+         {
+            _loc1_ = getDefinitionByName(GUN_MARKER_VIEW_CONSTANTS.PENETRATION_FX_LINKAGE) as Class;
+            this._penetrationFx = new _loc1_();
+            addChild(this._penetrationFx);
+         }
+         this._penetrationFx.showPenetrationFX();
       }
    }
 }

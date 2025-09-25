@@ -499,7 +499,7 @@ msgid "badge/new"
 msgstr "НАГРАДА ПОЛУЧЕНА"
 
 msgid "badgePage/tutorial/newSuffixBadge"
-msgstr "ДОСТУПНА НАШИВКА"
+msgstr "ДОСТУПНА ОТМЕТКА"
 
 msgid "barracks/btnDissmiss"
 msgstr "Демобилизовать"
@@ -593,6 +593,9 @@ msgstr "Натиск"
 
 msgid "bonusType/44"
 msgstr "Разминка"
+
+msgid "bonusType/49"
+msgstr "Натиск Лайт"
 
 msgid "bonusType/5"
 msgstr "Специальный бой"
@@ -870,6 +873,12 @@ msgstr "САУ"
 msgid "carousel_tank_filter/all"
 msgstr "Все"
 
+msgid "carousel_tank_filter/assault"
+msgstr "Штурм"
+
+msgid "carousel_tank_filter/break"
+msgstr "Прорыв"
+
 msgid "carousel_tank_filter/canInstallAttachments"
 msgstr "3D-объекты"
 
@@ -887,6 +896,18 @@ msgstr "3D-стили"
 
 msgid "carousel_tank_filter/ready"
 msgstr "Только основные"
+
+msgid "carousel_tank_filter/sniper"
+msgstr "Снайпер"
+
+msgid "carousel_tank_filter/support"
+msgstr "Поддержка"
+
+msgid "carousel_tank_filter/universal"
+msgstr "Универсальность"
+
+msgid "carousel_tank_filter/wheeled"
+msgstr "Колёсный"
 
 msgid "centerIsAvailable"
 msgstr "Все сервисы опять работают в штатном режиме."
@@ -1001,6 +1022,9 @@ msgstr "Копировать имя"
 
 msgid "contextMenu/createBattleRoyaleSquad"
 msgstr "Создать взвод охотников"
+
+msgid "contextMenu/createComp7LightSquad"
+msgstr "Создать взвод режима «Натиск Лайт»"
 
 msgid "contextMenu/createComp7Squad"
 msgstr "Создать взвод для Натиска"
@@ -1221,6 +1245,9 @@ msgstr "Достижения игрока"
 msgid "contextMenu/userVehicleCompare"
 msgstr "Добавить к сравнению"
 
+msgid "contextMenu/vehSkillTree"
+msgstr "К улучшениям"
+
 msgid "contextMenu/vehicleBuy"
 msgstr "К покупке"
 
@@ -1228,10 +1255,10 @@ msgid "contextMenu/vehicleCheck"
 msgstr "Отметить как «основной»"
 
 msgid "contextMenu/vehicleInfo"
-msgstr "Информация"
+msgstr "О машине"
 
 msgid "contextMenu/vehicleInfoEx"
-msgstr "Информация o технике"
+msgstr "О машине"
 
 msgid "contextMenu/vehiclePostProgression"
 msgstr "К Полевой модернизации"
@@ -1281,11 +1308,11 @@ msgstr "БОНЫ ЗА СОБЫТИЯ"
 
 msgid "crystals/info/tab/earn/level/description"
 msgstr ""
-"Боны зарабатываются на технике %(level10) и премиум технике %(level9)\n"
-"с активным индикатором заработка бон в следующих режимах:"
+"Боны зарабатываются на исследуемой технике %(level10And11) и премиум машинах %(level9)\n"
+"с активным индикатором заработка бон в следующем режиме:"
 
-msgid "crystals/info/tab/earn/level/descriptionContent/level10"
-msgstr "Х уровня"
+msgid "crystals/info/tab/earn/level/descriptionContent/level10And11"
+msgstr "X–XI уровней"
 
 msgid "crystals/info/tab/earn/level/descriptionContent/level9"
 msgstr "IX уровня"
@@ -1294,11 +1321,6 @@ msgid "crystals/info/tab/earn/level/mod/0"
 msgstr ""
 "Случайный\n"
 "бой"
-
-msgid "crystals/info/tab/earn/level/mod/1"
-msgstr ""
-"Генеральное\n"
-"сражение"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УРОВЕНЬ ТЕХНИКИ"
@@ -1337,13 +1359,9 @@ msgstr "Победа"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
-"Играйте в Случайных боях и Генеральных сражениях на машинах с активным "
-"индикатором заработка бон. Чем выше ваша позиция в послебоевой статистике по"
-" количеству заработанного «чистого» опыта, тем больше бон вы получите за "
-"бой."
-
-msgid "crystals/info/tab/get/general"
-msgstr "ГЕНЕРАЛЬНОЕ СРАЖЕНИЕ"
+"Играйте в Случайных боях на машинах с активным индикатором заработка бон. "
+"Чем выше ваша позиция в послебоевой статистике по количеству заработанного "
+"«чистого» опыта, тем больше бон вы получите за бой."
 
 msgid "crystals/info/tab/get/random"
 msgstr "СЛУЧАЙНЫЙ БОЙ"
@@ -1613,9 +1631,6 @@ msgstr "Серверное ограничение"
 
 msgid "currentVehicleStatus/subscription_suspended"
 msgstr "Подписка WoT Plus приостановлена"
-
-msgid "currentVehicleStatus/tooHeavy"
-msgstr "Машина перегружена"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "К бою готов!"
@@ -1936,9 +1951,7 @@ msgid "descriptions/vehicle"
 msgstr "%(weight)s т; броня: до %(hullArmor)s мм; орудие: %(caliber)s мм"
 
 msgid "descriptions/vehicleChassis"
-msgstr ""
-"Скорость поворота: до %(rotationSpeed)s град/с\n"
-"Макс. нагрузка: %(maxLoad)s т"
+msgstr "Скорость поворота: до %(rotationSpeed)s град/с"
 
 msgid "descriptions/vehicleEngine"
 msgstr ""
@@ -1979,9 +1992,7 @@ msgstr ""
 "Обзор: ок. %(circularVisionRadius)s м"
 
 msgid "descriptions/vehicleWheeledChassis"
-msgstr ""
-"Максимальный угол поворота колёс: до %(maxSteeringLockAngle)s град\n"
-"Макс. нагрузка: %(maxLoad)s т"
+msgstr "Максимальный угол поворота колёс: до %(maxSteeringLockAngle)s град"
 
 msgid "disconnect/codes/0"
 msgstr "<?empty?>"
@@ -2116,8 +2127,8 @@ msgstr "Бонус %(paramName)s"
 
 msgid "extraParams/multiDesc"
 msgstr ""
-"Суммарный бонус рассчитывается мультипликативно и может отличаться от "
-"паспортных значений."
+"Общий бонус рассчитывается с учётом модификаторов, которые складываются и "
+"перемножаются, поэтому он может отличаться от указанных значений."
 
 msgid "extraParams/name/artNotificationDelayFactor"
 msgstr ""
@@ -2293,10 +2304,14 @@ msgstr ""
 "Чем ниже значение, тем комфортнее стрельба."
 
 msgid "extraParams/name/vehicleGunShotDispersionChassisRotation"
-msgstr "Параметр, отвечающий за разброс при поворотах ходовой."
+msgstr ""
+"Параметр, отвечающий за увеличение круга сведения во время поворота корпуса."
+" Чем ниже значение, тем комфортнее стрельба."
 
 msgid "extraParams/name/vehicleGunShotDispersionTurretRotation"
-msgstr "Параметр, отвечающий за разброс при горизонтальном наведении."
+msgstr ""
+"Параметр, отвечающий за увеличение круга сведения во время наведения орудия."
+" Чем ниже значение, тем комфортнее стрельба."
 
 msgid "extraParams/name/vehicleGunShotDispersionWhileGunDamaged"
 msgstr ""
@@ -2680,7 +2695,7 @@ msgid "header/account/popover/tutorial/newBadge"
 msgstr "ДОСТУПНА НАШИВКА"
 
 msgid "header/account/popover/tutorial/newSuffixBadge"
-msgstr "ДОСТУПНА НАШИВКА"
+msgstr "ДОСТУПНА ОТМЕТКА"
 
 msgid "header/account/premium/days"
 msgstr "д"
@@ -2711,6 +2726,9 @@ msgstr "I"
 
 msgid "header/level/10"
 msgstr "X"
+
+msgid "header/level/11"
+msgstr "XI"
 
 msgid "header/level/2"
 msgstr "II"
@@ -2826,9 +2844,6 @@ msgstr "Продлить"
 msgid "headerButtons/barracks"
 msgstr "Казарма"
 
-msgid "headerButtons/battle"
-msgstr "В бой!"
-
 msgid "headerButtons/battle/availableSince"
 msgstr "Доступно с: %(datetime)s"
 
@@ -2840,6 +2855,9 @@ msgstr "Доступно до: %(datetime)s"
 
 msgid "headerButtons/battle/availableUntilSoon"
 msgstr "До окончания: %(time)s"
+
+msgid "headerButtons/battle/button/battle"
+msgstr "В бой!"
 
 msgid "headerButtons/battle/menu/attention/lowPerformance"
 msgstr "Низкая производительность"
@@ -2901,6 +2919,9 @@ msgstr "Взвод охотников"
 msgid "headerButtons/battle/types/battleRoyaleSquad/description"
 msgstr "Создать взвод из 2 игроков"
 
+msgid "headerButtons/battle/types/comp7LightSquad"
+msgstr "Создать взвод режима «Натиск Лайт»"
+
 msgid "headerButtons/battle/types/comp7Squad"
 msgstr "Создать взвод Натиск"
 
@@ -2929,6 +2950,9 @@ msgstr "Тренировочный бой"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Линия фронта"
+
+msgid "headerButtons/battle/types/event"
+msgstr "Бой события"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Ивентовый взвод"
@@ -3129,9 +3153,7 @@ msgid "headerButtons/btnLabel/gold"
 msgstr "Купить"
 
 msgid "headerButtons/btnLabel/premShop"
-msgstr ""
-"Премиум\n"
-"магазин"
+msgstr "Премиум магазин"
 
 msgid "headerButtons/btnLabel/premium"
 msgstr "Премиум"
@@ -3155,10 +3177,10 @@ msgid "headerButtons/fightBtn/tooltip/battleRoyaleDisabled/header"
 msgstr "Выход в бой недоступен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/body"
-msgstr "Вы можете продолжать играть в других режимах."
+msgstr "Вы временно заблокированы в режиме."
 
 msgid "headerButtons/fightBtn/tooltip/comp7BanIsSet/header"
-msgstr "Вы временно заблокированы в режиме."
+msgstr "Невозможно выйти в бой"
 
 msgid "headerButtons/fightBtn/tooltip/comp7BattleOnly/body"
 msgstr "Выбранная машина подходит только для режима «Натиск»."
@@ -3168,34 +3190,56 @@ msgstr "Выход в бой недоступен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/body"
 msgstr ""
-"На этом сервере режим прекращения огня. Попробуйте перейти на другой сервер."
+"Режим временно недоступен на всех серверах. Смотрите подробности ниже."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Disabled/header"
 msgstr "Выход в бой недоступен"
 
-msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
+msgid "headerButtons/fightBtn/tooltip/comp7LightDisabled/body"
+msgstr ""
+"На этом сервере режим прекращения огня. Попробуйте перейти на другой сервер."
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightDisabled/header"
+msgstr "Невозможно выйти в бой"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightNotSet/body"
 msgstr "Режим недоступен на выбранном сервере"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightNotSet/header"
+msgstr "Невозможно выйти в бой"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/body"
+msgstr "В Ангаре нет подходящей техники %(levels)s уровня"
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/delimiter"
+msgstr ", "
+
+msgid "headerButtons/fightBtn/tooltip/comp7LightVehLevel/header"
+msgstr "Невозможно выйти в бой"
+
+msgid "headerButtons/fightBtn/tooltip/comp7NotSet/body"
+msgstr ""
+"Режим временно недоступен на текущем сервере. Смотрите подробности ниже."
 
 msgid "headerButtons/fightBtn/tooltip/comp7NotSet/header"
 msgstr "Выход в бой недоступен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/body"
-msgstr "Режим недоступен: ошибка базы данных."
+msgstr "Режим недоступен. Ошибка базы данных."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Offline/header"
 msgstr "Невозможно выйти в бой"
 
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/body"
-msgstr "Режим недоступен: сезон ещё не начался"
+msgstr "Сезон ещё не начался."
 
 msgid "headerButtons/fightBtn/tooltip/comp7Preannounce/header"
 msgstr "Выход в бой невозможен"
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/body"
 msgstr ""
-"Расчёт вашей позиции по результатам прохождения квалификации может занять "
-"несколько минут. После этого вам будет присвоен определённый ранг, и вы "
-"сможете продолжить играть в режиме «Натиск»."
+"Расчёт рейтинга по итогам квалификации может занять до пяти минут. После "
+"этого вам будет присвоен ранг, и вы сможете продолжить игру в «Натиске»."
 
 msgid "headerButtons/fightBtn/tooltip/comp7RatingCalculation/header"
 msgstr "Выход в бой недоступен"
@@ -3370,6 +3414,12 @@ msgstr "Меню"
 msgid "headerButtons/missions"
 msgstr "Задачи"
 
+msgid "headerButtons/modeSelector"
+msgstr "Режимы боя"
+
+msgid "headerButtons/navigation/back"
+msgstr "Назад"
+
 msgid "headerButtons/notReady"
 msgstr "Не готов"
 
@@ -3383,7 +3433,7 @@ msgid "headerButtons/rating"
 msgstr "Рейтинг"
 
 msgid "headerButtons/ready"
-msgstr "Готов!"
+msgstr "Готов"
 
 msgid "headerButtons/shop"
 msgstr "Магазин"
@@ -3694,6 +3744,9 @@ msgstr "I уровень"
 msgid "levels/10"
 msgstr "X уровень"
 
+msgid "levels/11"
+msgstr "XI уровень"
+
 msgid "levels/2"
 msgstr "II уровень"
 
@@ -3726,6 +3779,9 @@ msgstr "I уровень"
 
 msgid "levels/roman/10"
 msgstr "X уровень"
+
+msgid "levels/roman/11"
+msgstr "XI уровень"
 
 msgid "levels/roman/2"
 msgstr "II уровень"
@@ -3826,6 +3882,9 @@ msgstr "Натиск"
 msgid "loading/battleTypes/34"
 msgstr "Тренировка в «Натиске»"
 
+msgid "loading/battleTypes/35"
+msgstr "Натиск Лайт"
+
 msgid "loading/battleTypes/4"
 msgstr "Боевое обучение"
 
@@ -3921,6 +3980,9 @@ msgid "loading/battleTypes/desc/33"
 msgstr " "
 
 msgid "loading/battleTypes/desc/34"
+msgstr " "
+
+msgid "loading/battleTypes/desc/35"
 msgstr " "
 
 msgid "loading/battleTypes/desc/4"
@@ -4344,20 +4406,11 @@ msgstr "Демонтировать"
 msgid "moduleFits/removeToolTip"
 msgstr " "
 
-msgid "moduleFits/remove_too_heavy"
-msgstr "Слишком тяжёлые модули"
-
 msgid "moduleFits/similar_device_already_installed"
 msgstr "?empty?"
 
 msgid "moduleFits/title"
 msgstr "%(moduleName)s для %(vehicleName)s"
-
-msgid "moduleFits/too_heavy"
-msgstr "Недостаточно грузоподъёмности"
-
-msgid "moduleFits/too_heavy_chassis"
-msgstr "Слишком тяжёлые модули"
 
 msgid "moduleFits/unlock_error"
 msgstr "Не исследован"
@@ -4566,6 +4619,9 @@ msgstr "Время полёта"
 msgid "moduleInfo/params/forwardMaxSpeed"
 msgstr "Максимальная скорость"
 
+msgid "moduleInfo/params/guaranteedDamage/footnote"
+msgstr "Снаряд наносит небольшую часть урона при непробитии."
+
 msgid "moduleInfo/params/hullAndChassisWeight"
 msgstr "Масса"
 
@@ -4592,9 +4648,6 @@ msgstr "Прочность"
 
 msgid "moduleInfo/params/maxHullHealth"
 msgstr "Прочность"
-
-msgid "moduleInfo/params/maxLoad"
-msgstr "Максимальная нагрузка"
 
 msgid "moduleInfo/params/maxShotDistance"
 msgstr "Дальность стрельбы"
@@ -4858,6 +4911,9 @@ msgstr "Средний"
 msgid "prebattle/already_in_awaiting_battle"
 msgstr "Вы уже находитесь в режиме ожидания боя."
 
+msgid "prebattle/battleReady"
+msgstr "К бою готов!"
+
 msgid "prebattle/battleRoyale/solo"
 msgstr "В одиночной очереди"
 
@@ -4925,6 +4981,9 @@ msgstr "Игроков в очереди:"
 
 msgid "prebattle/rts/tankLabel"
 msgstr "Ваша роль:"
+
+msgid "prebattle/searchPlayers"
+msgstr "Поиск игроков"
 
 msgid "prebattle/sideA"
 msgstr "Сторона А:"
@@ -5361,6 +5420,9 @@ msgstr "кр."
 
 msgid "repair/repairstatus"
 msgstr "Ремонт:"
+
+msgid "report_content"
+msgstr "Пожаловаться"
 
 msgid "research/labels/button/addToCompare"
 msgstr "Добавить к сравнению"
@@ -6206,9 +6268,6 @@ msgstr "Серверное ограничение"
 msgid "tankCarousel/vehicleStates/subscription_suspended"
 msgstr "Приостановлена"
 
-msgid "tankCarousel/vehicleStates/tooHeavy"
-msgstr "Машина перегружена"
-
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недоступно"
 
@@ -6239,8 +6298,34 @@ msgstr "Арендовать машину"
 msgid "tankCarousel/wotPlusSelectionPending"
 msgstr "Ожидается аренда"
 
+msgid "tank_params/accuracyDispersionCap"
+msgstr "Разброс на максимальном уровне точности"
+
+msgid "tank_params/accuracyDispersionPerLevel"
+msgstr "Разброс на 100 м за уровень точности"
+
+msgid "tank_params/accuracyLevelGainTime"
+msgstr "Время получения уровня точности"
+
+msgid "tank_params/accuracySpeedLimit"
+msgstr "Максимальная скорость"
+
+msgid "tank_params/accuracyWhileMovingDispersionCap"
+msgstr "Разброс при движении/повороте на максимальном уровне точности"
+
+msgid "tank_params/activeCoincideceShootingCharge"
+msgstr ""
+"Заряд параллаксного электромеханического прицела (% за попадание) (боевой "
+"режим, активно)"
+
 msgid "tank_params/aimingTime"
 msgstr "Время сведения"
+
+msgid "tank_params/aimingTimeCoincidenceElectromechanicalSight"
+msgstr "Время сведения (с) (параллаксный электромеханический прицел)"
+
+msgid "tank_params/aimingTimeTurbo"
+msgstr "Время сведения (с) (турбо-режим)"
 
 msgid "tank_params/attainableSpeed"
 msgstr "Скорость, набираемая за 5 секунд"
@@ -6266,6 +6351,12 @@ msgstr "Урон в секунду"
 msgid "tank_params/avgPiercingPower"
 msgstr "Средняя бронепробиваемость"
 
+msgid "tank_params/boosterCoolingTime"
+msgstr "Время охлаждения ускорителя"
+
+msgid "tank_params/boosterDuration"
+msgstr "Время действия ускорителя"
+
 msgid "tank_params/burstFireRate"
 msgstr "Кассета"
 
@@ -6274,6 +6365,18 @@ msgstr "(c/шт./шт.)"
 
 msgid "tank_params/chargeTime"
 msgstr "Время залпа"
+
+msgid "tank_params/chargeableBurstDispersion"
+msgstr "Разброс второго выстрела на 100 м"
+
+msgid "tank_params/chargeableBurstPenetrationCount"
+msgstr "Пробитий для активации режима"
+
+msgid "tank_params/chargeableBurstReload"
+msgstr "Время перезарядки режима очереди"
+
+msgid "tank_params/chargeableBurstSize"
+msgstr "Снарядов в кассете"
 
 msgid "tank_params/chassisModuleRotationSpeed"
 msgstr "Скорость поворота шасси"
@@ -6299,17 +6402,38 @@ msgstr "(полная/между/кол-во)"
 msgid "tank_params/cnt"
 msgstr "(шт)"
 
+msgid "tank_params/coincidenceElectromechanicalSightDuration"
+msgstr "Время действия параллаксного электромеханического прицела"
+
+msgid "tank_params/concentrationModeCooldown"
+msgstr "Время перезарядки"
+
+msgid "tank_params/concentrationModeDuration"
+msgstr "Время действия"
+
 msgid "tank_params/continuousShotsPerMinute"
 msgstr "Темп непрерывного огня"
 
 msgid "tank_params/damage"
 msgstr "Урон базовым снарядом"
 
+msgid "tank_params/designatorCooldownS"
+msgstr "Время перезарядки"
+
+msgid "tank_params/designatorInitialCooldownS"
+msgstr "Начальное время зарядки"
+
+msgid "tank_params/designatorMarkDurationS"
+msgstr "Продолжительность метки"
+
+msgid "tank_params/designatorMarkedEnemiesAdditionalDamage"
+msgstr "Дополнительный урон отмеченной технике противника"
+
+msgid "tank_params/dispersionAt100mCoincidenceElectromechanicalSight"
+msgstr "Разброс на 100 м (%) (параллаксный электромеханический прицел)"
+
 msgid "tank_params/dualAccuracyCoolingDelay"
 msgstr "Время остывания орудия"
-
-msgid "tank_params/dualAccuracyCoolingDelay/extendedTitle"
-msgstr "Время остывания орудия после выстрела"
 
 msgid "tank_params/enginePower"
 msgstr "Мощность двигателя"
@@ -6317,17 +6441,51 @@ msgstr "Мощность двигателя"
 msgid "tank_params/enginePowerPerTon"
 msgstr "Удельная мощность"
 
+msgid "tank_params/enginePowerWithBoosters"
+msgstr "Мощность двигателя (с ускорителями)"
+
+msgid "tank_params/engineTurboPowerCap"
+msgstr "Мощность двигателя (л.с.) (турбо-режим)"
+
 msgid "tank_params/explosionRadius"
 msgstr "Радиус поражения"
+
+msgid "tank_params/extendedTitle/dualAccuracyCoolingDelay"
+msgstr "Время остывания орудия после выстрела"
 
 msgid "tank_params/extraRepairSpeed"
 msgstr "к скорости ремонта"
 
+msgid "tank_params/extraShotClipReloadTime"
+msgstr "Штраф к перезарядке"
+
 msgid "tank_params/faceFrontBoardInMM"
 msgstr "(лоб/борт/корма в мм)"
 
+msgid "tank_params/factor"
+msgstr "(%)"
+
 msgid "tank_params/forwardMaxSpeed"
 msgstr "Максимальная скорость"
+
+msgid "tank_params/furyMaxReloadEffAvgDpm"
+msgstr ""
+"Средний урон в минуту на максимальном уровне эффективности перезарядки"
+
+msgid "tank_params/furyMaxReloadEfficiencyLevel"
+msgstr "Максимальный уровень эффективности перезарядки"
+
+msgid "tank_params/furyReloadEfficiencyLevelDuration"
+msgstr "Продолжительность уровня эффективности перезарядки"
+
+msgid "tank_params/furyReloadEfficiencyLevelPerDestruction"
+msgstr "Уровень эффективности перезарядки за уничтожение"
+
+msgid "tank_params/furyReloadEfficiencyLevelPerHit"
+msgstr "Уровень эффективности перезарядки за выстрел"
+
+msgid "tank_params/furyReloadSpeedBonusPerEfficiencyLevel"
+msgstr "Бонус к скорости перезарядки за уровень эффективности"
 
 msgid "tank_params/gps"
 msgstr "(град/с)"
@@ -6338,14 +6496,38 @@ msgstr "(град)"
 msgid "tank_params/gunModuleAvgDamageList"
 msgstr "Средний урон"
 
+msgid "tank_params/gunTraverseDispersionTurbo"
+msgstr "Разброс при вращении башни (%) (турбо-режим)"
+
 msgid "tank_params/gunYawLimits"
 msgstr "Углы горизонтальной наводки"
 
 msgid "tank_params/h"
 msgstr "(выстр)"
 
+msgid "tank_params/heatAvgDmgPerLvl"
+msgstr "Средний урон за уровень нагрева"
+
+msgid "tank_params/heatChargeOverheatDuration"
+msgstr "Продолжительность перегрева заряда"
+
+msgid "tank_params/heatTimeBeforeOverheat"
+msgstr "Время до перегрева заряда"
+
+msgid "tank_params/heatTimeToReachLevel"
+msgstr "Время получения уровня нагрева"
+
 msgid "tank_params/hullArmor"
 msgstr "Бронирование корпуса"
+
+msgid "tank_params/hullTraverseDispersionTurbo"
+msgstr "Разброс во время поворота корпуса (%) (турбо-режим)"
+
+msgid "tank_params/improvedDamageEnemiesByRamming"
+msgstr "Урон, наносимый при таране"
+
+msgid "tank_params/improvedDamageEnemiesChassisByRamming"
+msgstr "Урон ходовой, наносимый при таране"
 
 msgid "tank_params/increaseHealth"
 msgstr "Увеличение прочности"
@@ -6356,11 +6538,29 @@ msgstr "В движении (%)"
 msgid "tank_params/invisibilityStillFactor"
 msgstr "Неподвижной машины (%)"
 
+msgid "tank_params/ionAfterburnerActiveTurboCharge"
+msgstr "Заряд ионно-разрядного дожигателя (%/с) (турбо-режим, активно)"
+
+msgid "tank_params/ionAfterburnerDuration"
+msgstr "Продолжительность действия ионно-разрядного дожигателя"
+
+msgid "tank_params/ionAfterburnerDurationEnginePower"
+msgstr "Мощность двигателя (л.с.) (ионно-разрядный дожигатель)"
+
+msgid "tank_params/ionAfterburnerDurationSpeedCap"
+msgstr "Макс. скорость/задний ход (км/ч) (ионно-разрядный дожигатель)"
+
+msgid "tank_params/ionAfterburnerPassiveTurboCharge"
+msgstr "Заряд ионно-разрядного дожигателя (%/с) (турбо-режим, пассивно)"
+
 msgid "tank_params/kg"
 msgstr "(кг)"
 
 msgid "tank_params/m"
 msgstr "(м)"
+
+msgid "tank_params/maxAccuracyLevel"
+msgstr "Максимальный уровень точности"
 
 msgid "tank_params/maxAmmo"
 msgstr "Боекомплект"
@@ -6373,6 +6573,9 @@ msgstr "Максимальный угол поворота колёс"
 
 msgid "tank_params/mm"
 msgstr "(мм)"
+
+msgid "tank_params/movementTraverseDispersionTurbo"
+msgstr "Разброс во время движения (%) (турбо-режим)"
 
 msgid "tank_params/mph"
 msgstr "(км/ч)"
@@ -6395,20 +6598,67 @@ msgstr "(л.с.)"
 msgid "tank_params/param12"
 msgstr "Проходимость"
 
+msgid "tank_params/passiveCoincideceShootingCharge"
+msgstr ""
+"Заряд параллаксного электромеханического прицела (%/с) (боевой режим, "
+"пассивно)"
+
+msgid "tank_params/perActivation"
+msgstr "(за активацию)"
+
 msgid "tank_params/percent"
 msgstr " "
 
 msgid "tank_params/piercingPower"
 msgstr "Бронепробиваемость базовым снарядом"
 
+msgid "tank_params/pillboxHorizontalRotationSpeed"
+msgstr "Скорость горизонтального наведения"
+
+msgid "tank_params/pillboxSwitchOffTime"
+msgstr "Переход в походный режим"
+
+msgid "tank_params/pillboxSwitchOnTime"
+msgstr "Переход в укреплённый режим"
+
+msgid "tank_params/pillboxVerticalRotationSpeed"
+msgstr "Скорость вертикального наведения"
+
 msgid "tank_params/pitchLimits"
 msgstr "Углы вертикальной наводки"
+
+msgid "tank_params/powerModeDuration"
+msgstr "Максимальная производительность"
+
+msgid "tank_params/powerModeThreshold"
+msgstr "Время активации режима"
+
+msgid "tank_params/preheatDispersionCap"
+msgstr "Разброс при полном преднагреве"
+
+msgid "tank_params/preheatDmgCap"
+msgstr "Средний урон при полном преднагреве"
+
+msgid "tank_params/preheatSpeedLimit"
+msgstr "Максимальная скорость"
+
+msgid "tank_params/preheatTimeToFull"
+msgstr "Время до полного преднагрева"
+
+msgid "tank_params/preheatTimeToZero"
+msgstr "Время до нулевого преднагрева"
+
+msgid "tank_params/preheatTransitionDelay"
+msgstr "Задержка перехода преднагрева"
 
 msgid "tank_params/pt"
 msgstr "(л.с./т)"
 
 msgid "tank_params/qpt"
 msgstr "(кол-во/время)"
+
+msgid "tank_params/quantity"
+msgstr "(кол-во)"
 
 msgid "tank_params/radarCooldown"
 msgstr "Время подготовки радара"
@@ -6418,6 +6668,12 @@ msgstr "Радиус обнаружения"
 
 msgid "tank_params/radioDistance"
 msgstr "Дальность связи"
+
+msgid "tank_params/reactivationDelay"
+msgstr "Задержка повторной активации"
+
+msgid "tank_params/reactivationLimit"
+msgstr "Лимит повторной активации"
 
 msgid "tank_params/relativeArmor"
 msgstr "Живучесть"
@@ -6437,8 +6693,14 @@ msgstr "Наблюдение"
 msgid "tank_params/reloadTime"
 msgstr "Скорострельность орудия"
 
+msgid "tank_params/reloadTimeCoincidence"
+msgstr "Время перезарядки (%) (параллаксный электромеханический прицел)"
+
 msgid "tank_params/reloadTimeSecs"
 msgstr "Заряжание орудия"
+
+msgid "tank_params/reverseSpeedReductionWithBoosters"
+msgstr "Снижение скорости заднего хода (с ускорителями)"
 
 msgid "tank_params/rocketAccelerationEnginePower"
 msgstr "Мощность двигателя (с ускорителями)"
@@ -6451,6 +6713,18 @@ msgstr "Макс. скорость / задний ход (с ускорит.)"
 
 msgid "tank_params/s"
 msgstr "(с)"
+
+msgid "tank_params/secondaryAvgDamage"
+msgstr "Средний урон за выстрел"
+
+msgid "tank_params/secondaryAvgPiercingPower"
+msgstr "Средняя бронепробиваемость"
+
+msgid "tank_params/secondaryReloadTimeSecs"
+msgstr "Перезарядка вспомогательного орудия"
+
+msgid "tank_params/secondaryTotalBurstSize"
+msgstr "Снарядов во вспомогательном орудии"
 
 msgid "tank_params/shortened/avgPiercingPower"
 msgstr "Пробивает:"
@@ -6470,6 +6744,12 @@ msgstr "(выстр/мин)"
 msgid "tank_params/sqm"
 msgstr "(м²)"
 
+msgid "tank_params/stationaryReloadSwitchOffTime"
+msgstr "Время прерывания перезарядки"
+
+msgid "tank_params/stationaryReloadSwitchOnTime"
+msgstr "Время активации перезарядки"
+
 msgid "tank_params/stunDurationList"
 msgstr "Время оглушения"
 
@@ -6478,6 +6758,9 @@ msgstr "Максимальное время оглушения"
 
 msgid "tank_params/stunMinDuration"
 msgstr "Минимальное время оглушения"
+
+msgid "tank_params/switchEngineModeBothModes"
+msgstr "Время смены режима двигателя"
 
 msgid "tank_params/switchOffTime"
 msgstr "Время перехода в походный режим "
@@ -6493,6 +6776,15 @@ msgstr "(т)"
 
 msgid "tank_params/timeOfReaching"
 msgstr "Время преодоления 100 м"
+
+msgid "tank_params/topSpeedWithBoosters"
+msgstr "Макс. скорость (с ускорителями)"
+
+msgid "tank_params/traverseSpeedReductionWithBoosters"
+msgstr "Снижение скорости поворота корпуса (с ускорителями)"
+
+msgid "tank_params/turboSpeedCap"
+msgstr "Макс. скорость/задний ход (км/ч) (турбо-режим)"
 
 msgid "tank_params/turboshaftBurstFireRate"
 msgstr "Кассета (турбо)"
@@ -6573,7 +6865,7 @@ msgid "tank_params/values/param12/value3"
 msgstr "плохая"
 
 msgid "tank_params/vehicleWeight"
-msgstr "Масса / предельная масса машины"
+msgstr "Масса"
 
 msgid "tank_params/vpm"
 msgstr "(ед./мин)"
@@ -7155,7 +7447,7 @@ msgid "vehicleInfo/params/twinGunTopSpeed"
 msgstr "Макс. скорость/задний ход (одиночный/залповый режим) (км/ч)"
 
 msgid "vehicleInfo/params/vehicleWeight"
-msgstr "Масса/предельная масса машины (т)"
+msgstr "Масса (т)"
 
 msgid "vehicleInfo/params/wheeledSpeedModeSpeed"
 msgstr "Макс. скорость / задний ход (скоростной, км/ч)"

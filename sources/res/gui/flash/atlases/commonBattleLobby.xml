@@ -1,981 +1,981 @@
 <root>
 	<SubTexture>
-		<name> body_armor </name>
-		<x> 58 </x>
-		<y> 290 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> body_health </name>
-		<x> 0 </x>
-		<y> 348 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> body_mobility </name>
-		<x> 898 </x>
-		<y> 117 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
 		<name> damageLog_airstrike_enemy_16x16 </name>
-		<x> 126 </x>
-		<y> 249 </y>
+		<x> 924 </x>
+		<y> 273 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_airstrike_enemy_16x16Blind </name>
-		<x> 918 </x>
-		<y> 206 </y>
+		<x> 924 </x>
+		<y> 156 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_airstrike_eq_16x16 </name>
-		<x> 935 </x>
-		<y> 206 </y>
+		<x> 924 </x>
+		<y> 173 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_airstrike_eq_enemy_16x16 </name>
-		<x> 952 </x>
-		<y> 206 </y>
+		<x> 941 </x>
+		<y> 174 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_airstrike_eq_enemy_16x16Blind </name>
-		<x> 969 </x>
-		<y> 206 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> damageLog_art_16x16 </name>
-		<x> 935 </x>
-		<y> 189 </y>
+		<x> 958 </x>
+		<y> 174 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_16x16 </name>
-		<x> 986 </x>
-		<y> 206 </y>
+		<x> 975 </x>
+		<y> 174 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_enemy_16x16 </name>
-		<x> 1003 </x>
-		<y> 206 </y>
+		<x> 992 </x>
+		<y> 174 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_enemy_16x16Blind </name>
-		<x> 1003 </x>
-		<y> 189 </y>
+		<x> 918 </x>
+		<y> 0 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_eq_16x16 </name>
-		<x> 986 </x>
-		<y> 189 </y>
+		<x> 918 </x>
+		<y> 17 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_eq_enemy_16x16 </name>
-		<x> 969 </x>
-		<y> 189 </y>
+		<x> 918 </x>
+		<y> 34 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_artillery_eq_enemy_16x16Blind </name>
-		<x> 952 </x>
-		<y> 189 </y>
+		<x> 918 </x>
+		<y> 51 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> damageLog_art_16x16 </name>
+		<x> 918 </x>
+		<y> 68 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_assist_16x16 </name>
 		<x> 918 </x>
-		<y> 189 </y>
+		<y> 85 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_berserker_16x16 </name>
-		<x> 901 </x>
-		<y> 189 </y>
+		<x> 1001 </x>
+		<y> 0 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_by_mine_field_16x16 </name>
-		<x> 901 </x>
-		<y> 206 </y>
+		<x> 1001 </x>
+		<y> 17 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_by_mine_field_16x16Blind </name>
-		<x> 901 </x>
-		<y> 223 </y>
+		<x> 1001 </x>
+		<y> 34 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_by_smoke_16x16 </name>
-		<x> 901 </x>
-		<y> 240 </y>
+		<x> 1001 </x>
+		<y> 51 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_by_spawned_bot_16x16 </name>
-		<x> 901 </x>
-		<y> 257 </y>
+		<x> 1001 </x>
+		<y> 68 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_cling_brander_16x16 </name>
-		<x> 901 </x>
-		<y> 274 </y>
+		<x> 1001 </x>
+		<y> 85 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_cling_brander_enemy_16x16 </name>
-		<x> 901 </x>
-		<y> 291 </y>
+		<x> 1001 </x>
+		<y> 102 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_coordinate_16x16 </name>
-		<x> 126 </x>
-		<y> 283 </y>
+		<x> 1001 </x>
+		<y> 119 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_corroding_shot_16x16 </name>
-		<x> 143 </x>
-		<y> 283 </y>
+		<x> 1001 </x>
+		<y> 136 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_corroding_shot_enemy_16x16 </name>
-		<x> 58 </x>
-		<y> 266 </y>
+		<x> 1001 </x>
+		<y> 153 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_critical_16x16 </name>
-		<x> 75 </x>
-		<y> 266 </y>
+		<x> 1006 </x>
+		<y> 234 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_critical_enemy_16x16 </name>
-		<x> 92 </x>
-		<y> 266 </y>
+		<x> 1006 </x>
+		<y> 251 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_critical_enemy_16x16Blind </name>
-		<x> 109 </x>
-		<y> 266 </y>
+		<x> 1006 </x>
+		<y> 268 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_16x16 </name>
-		<x> 126 </x>
-		<y> 266 </y>
+		<x> 1006 </x>
+		<y> 285 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_detail </name>
-		<x> 406 </x>
+		<x> 0 </x>
 		<y> 234 </y>
 		<width> 242 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_detailTop </name>
-		<x> 163 </x>
+		<x> 243 </x>
 		<y> 234 </y>
 		<width> 242 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_enemy_16x16 </name>
-		<x> 143 </x>
-		<y> 266 </y>
+		<x> 982 </x>
+		<y> 292 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_enemy_16x16Blind </name>
-		<x> 918 </x>
-		<y> 223 </y>
+		<x> 999 </x>
+		<y> 302 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_damage_total </name>
-		<x> 115 </x>
-		<y> 0 </y>
+		<x> 813 </x>
+		<y> 156 </y>
 		<width> 110 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_death_zone_16x16 </name>
-		<x> 935 </x>
-		<y> 223 </y>
+		<x> 982 </x>
+		<y> 309 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_destroyer_16x16 </name>
-		<x> 143 </x>
-		<y> 249 </y>
+		<x> 999 </x>
+		<y> 319 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_detailNoBorder </name>
-		<x> 649 </x>
-		<y> 234 </y>
+		<x> 542 </x>
+		<y> 195 </y>
 		<width> 248 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_discover_16x16 </name>
-		<x> 969 </x>
-		<y> 223 </y>
+		<x> 982 </x>
+		<y> 326 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_fire_16x16 </name>
-		<x> 394 </x>
-		<y> 351 </y>
+		<x> 999 </x>
+		<y> 336 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_fire_circle_16x16 </name>
-		<x> 126 </x>
-		<y> 351 </y>
+		<x> 982 </x>
+		<y> 343 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_fire_circle_enemy_16x16 </name>
-		<x> 143 </x>
-		<y> 351 </y>
+		<x> 999 </x>
+		<y> 353 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_fire_enemy_16x16 </name>
-		<x> 143 </x>
-		<y> 334 </y>
+		<x> 174 </x>
+		<y> 506 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_fire_enemy_16x16Blind </name>
-		<x> 126 </x>
-		<y> 334 </y>
+		<x> 191 </x>
+		<y> 506 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_fort_artillery_16x16 </name>
-		<x> 126 </x>
-		<y> 317 </y>
+		<x> 208 </x>
+		<y> 506 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_heavy_16x16 </name>
-		<x> 143 </x>
-		<y> 317 </y>
+		<x> 225 </x>
+		<y> 506 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_immobilized_16x16 </name>
-		<x> 143 </x>
-		<y> 300 </y>
+		<x> 242 </x>
+		<y> 506 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_kill_16x16 </name>
-		<x> 126 </x>
-		<y> 300 </y>
+		<x> 259 </x>
+		<y> 506 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_light_16x16 </name>
-		<x> 411 </x>
-		<y> 351 </y>
+		<x> 276 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_middle_16x16 </name>
-		<x> 873 </x>
-		<y> 290 </y>
+		<x> 276 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_mine_field_16x16 </name>
-		<x> 873 </x>
-		<y> 273 </y>
+		<x> 293 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_ram_16x16 </name>
-		<x> 856 </x>
-		<y> 273 </y>
+		<x> 293 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_ram_enemy_16x16 </name>
-		<x> 934 </x>
-		<y> 240 </y>
+		<x> 310 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_ram_enemy_16x16Blind </name>
-		<x> 856 </x>
-		<y> 290 </y>
+		<x> 310 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_reflect_16x16 </name>
-		<x> 968 </x>
-		<y> 240 </y>
+		<x> 327 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_spawned_bot_16x16 </name>
-		<x> 985 </x>
-		<y> 240 </y>
+		<x> 327 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_stun_16x16 </name>
-		<x> 1002 </x>
-		<y> 240 </y>
+		<x> 344 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_thunder_strike_16x16 </name>
-		<x> 1003 </x>
-		<y> 223 </y>
+		<x> 344 </x>
+		<y> 514 </y>
 		<width> 15 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> damageLog_thunder_strike_enemy_16x16 </name>
-		<x> 986 </x>
-		<y> 223 </y>
+		<x> 360 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> emptyShellBg </name>
-		<x> 428 </x>
-		<y> 351 </y>
+		<x> 924 </x>
+		<y> 290 </y>
 		<width> 14 </width>
 		<height> 1 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> engine_acceleration </name>
-		<x> 58 </x>
-		<y> 348 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> engine_speed </name>
-		<x> 58 </x>
-		<y> 406 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
 		<name> goldBlackCenter </name>
-		<x> 111 </x>
-		<y> 15 </y>
+		<x> 941 </x>
+		<y> 156 </y>
 		<width> 1 </width>
 		<height> 14 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> goldBlackEdge </name>
-		<x> 1014 </x>
-		<y> 117 </y>
+		<x> 941 </x>
+		<y> 273 </y>
 		<width> 4 </width>
 		<height> 14 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> goldCenter </name>
-		<x> 109 </x>
-		<y> 15 </y>
+		<x> 946 </x>
+		<y> 273 </y>
 		<width> 1 </width>
 		<height> 14 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> goldEdge </name>
-		<x> 1019 </x>
-		<y> 117 </y>
+		<x> 1009 </x>
+		<y> 170 </y>
 		<width> 4 </width>
 		<height> 14 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> gun_alpha </name>
-		<x> 0 </x>
-		<y> 174 </y>
+		<name> whiteBlackCenter </name>
+		<x> 1014 </x>
+		<y> 170 </y>
+		<width> 1 </width>
+		<height> 14 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> whiteBlackEdge </name>
+		<x> 1016 </x>
+		<y> 170 </y>
+		<width> 4 </width>
+		<height> 14 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> whiteCenter </name>
+		<x> 918 </x>
+		<y> 102 </y>
+		<width> 1 </width>
+		<height> 14 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> whiteEdge </name>
+		<x> 920 </x>
+		<y> 102 </y>
+		<width> 4 </width>
+		<height> 14 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> body_armor </name>
+		<x> 943 </x>
+		<y> 0 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> gun_auto_loader </name>
-		<x> 0 </x>
+		<name> body_health </name>
+		<x> 943 </x>
+		<y> 58 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> body_mobility </name>
+		<x> 943 </x>
 		<y> 116 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> gun_clip </name>
-		<x> 0 </x>
+		<name> engine_acceleration </name>
+		<x> 802 </x>
 		<y> 0 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> engine_speed </name>
+		<x> 802 </x>
+		<y> 58 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> gun_alpha </name>
+		<x> 860 </x>
+		<y> 0 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> gun_auto_loader </name>
+		<x> 860 </x>
+		<y> 58 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> gun_clip </name>
+		<x> 948 </x>
+		<y> 234 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gun_dpm </name>
-		<x> 110 </x>
-		<y> 39 </y>
+		<x> 924 </x>
+		<y> 292 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gun_dualgun </name>
-		<x> 168 </x>
-		<y> 39 </y>
+		<x> 0 </x>
+		<y> 350 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gun_he </name>
-		<x> 174 </x>
-		<y> 406 </y>
+		<x> 0 </x>
+		<y> 408 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gun_machinegun </name>
-		<x> 116 </x>
-		<y> 406 </y>
+		<x> 0 </x>
+		<y> 466 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> gun_piercing </name>
-		<x> 0 </x>
-		<y> 290 </y>
+		<x> 58 </x>
+		<y> 350 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> loader_intuition </name>
-		<x> 58 </x>
-		<y> 0 </y>
-		<width> 48 </width>
-		<height> 48 </height>
-	</SubTexture>
-	<SubTexture>
 		<name> radar_cooldown </name>
-		<x> 956 </x>
-		<y> 117 </y>
+		<x> 58 </x>
+		<y> 408 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> radar_distance </name>
-		<x> 110 </x>
-		<y> 97 </y>
+		<x> 58 </x>
+		<y> 466 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> turret_armor </name>
+		<x> 116 </x>
+		<y> 350 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> turret_health </name>
+		<x> 116 </x>
+		<y> 408 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> turret_rotation_speed </name>
+		<x> 116 </x>
+		<y> 466 </y>
+		<width> 57 </width>
+		<height> 57 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> vehicle </name>
+		<x> 174 </x>
+		<y> 350 </y>
 		<width> 57 </width>
 		<height> 57 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsArmor </name>
-		<x> 330 </x>
-		<y> 406 </y>
+		<x> 174 </x>
+		<y> 408 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsAssistSpot </name>
-		<x> 379 </x>
-		<y> 406 </y>
+		<x> 174 </x>
+		<y> 457 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsAssistStun </name>
-		<x> 428 </x>
-		<y> 406 </y>
+		<x> 223 </x>
+		<y> 408 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsAssistTrack </name>
-		<x> 428 </x>
-		<y> 357 </y>
+		<x> 232 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgGreenLarge </name>
-		<x> 226 </x>
-		<y> 117 </y>
+		<x> 0 </x>
+		<y> 0 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgGreenMedium </name>
-		<x> 356 </x>
-		<y> 195 </y>
+		<x> 401 </x>
+		<y> 117 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgGreenSmall </name>
-		<x> 163 </x>
-		<y> 351 </y>
+		<x> 791 </x>
+		<y> 195 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgGreyLarge </name>
-		<x> 627 </x>
+		<x> 401 </x>
 		<y> 0 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgGreyMedium </name>
-		<x> 85 </x>
-		<y> 195 </y>
+		<x> 672 </x>
+		<y> 117 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgGreySmall </name>
-		<x> 394 </x>
-		<y> 312 </y>
+		<x> 486 </x>
+		<y> 234 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgOrangeLarge </name>
-		<x> 627 </x>
-		<y> 78 </y>
+		<x> 0 </x>
+		<y> 39 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgOrangeMedium </name>
-		<x> 85 </x>
+		<x> 0 </x>
 		<y> 156 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgOrangeSmall </name>
-		<x> 625 </x>
-		<y> 312 </y>
+		<x> 717 </x>
+		<y> 234 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgPerkLarge </name>
-		<x> 627 </x>
+		<x> 401 </x>
 		<y> 39 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgPerkMedium </name>
-		<x> 356 </x>
+		<x> 271 </x>
 		<y> 156 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgPerkSmall </name>
-		<x> 625 </x>
+		<x> 0 </x>
 		<y> 273 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgPurpleLarge </name>
-		<x> 226 </x>
-		<y> 39 </y>
+		<x> 0 </x>
+		<y> 78 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgPurpleMedium </name>
-		<x> 627 </x>
-		<y> 117 </y>
+		<x> 542 </x>
+		<y> 156 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgPurpleSmall </name>
-		<x> 163 </x>
-		<y> 312 </y>
+		<x> 231 </x>
+		<y> 273 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgRedLarge </name>
-		<x> 226 </x>
+		<x> 401 </x>
 		<y> 78 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgRedMedium </name>
-		<x> 627 </x>
+		<x> 0 </x>
 		<y> 195 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgRedSmall </name>
-		<x> 163 </x>
+		<x> 462 </x>
 		<y> 273 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgYellowLarge </name>
-		<x> 226 </x>
-		<y> 0 </y>
+		<x> 0 </x>
+		<y> 117 </y>
 		<width> 400 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgYellowMedium </name>
-		<x> 627 </x>
-		<y> 156 </y>
+		<x> 271 </x>
+		<y> 195 </y>
 		<width> 270 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBgYellowSmall </name>
-		<x> 394 </x>
+		<x> 693 </x>
 		<y> 273 </y>
 		<width> 230 </width>
 		<height> 38 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBurn </name>
-		<x> 869 </x>
-		<y> 357 </y>
+		<x> 223 </x>
+		<y> 457 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBurnEnemy </name>
-		<x> 673 </x>
-		<y> 357 </y>
+		<x> 272 </x>
+		<y> 399 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsBurnEnemyBlind </name>
-		<x> 722 </x>
-		<y> 357 </y>
+		<x> 281 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsCapture </name>
-		<x> 771 </x>
-		<y> 357 </y>
+		<x> 272 </x>
+		<y> 448 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsCrits </name>
-		<x> 820 </x>
-		<y> 357 </y>
+		<x> 321 </x>
+		<y> 399 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsCritsEnemy </name>
-		<x> 918 </x>
-		<y> 259 </y>
+		<x> 330 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsCritsEnemyBlind </name>
-		<x> 869 </x>
-		<y> 308 </y>
+		<x> 321 </x>
+		<y> 448 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsDamage </name>
-		<x> 918 </x>
-		<y> 308 </y>
+		<x> 370 </x>
+		<y> 399 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsDamageEnemy </name>
-		<x> 967 </x>
-		<y> 308 </y>
+		<x> 379 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsDamageEnemyBlind </name>
-		<x> 967 </x>
-		<y> 259 </y>
+		<x> 370 </x>
+		<y> 448 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsDefence </name>
-		<x> 575 </x>
-		<y> 357 </y>
+		<x> 419 </x>
+		<y> 399 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsExclamation </name>
-		<x> 624 </x>
-		<y> 357 </y>
+		<x> 428 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsKill </name>
-		<x> 477 </x>
-		<y> 357 </y>
+		<x> 419 </x>
+		<y> 448 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsRam </name>
-		<x> 526 </x>
-		<y> 357 </y>
+		<x> 468 </x>
+		<y> 399 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsRamEnemy </name>
-		<x> 281 </x>
-		<y> 406 </y>
+		<x> 477 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsRamEnemyBlind </name>
-		<x> 232 </x>
-		<y> 406 </y>
+		<x> 468 </x>
+		<y> 448 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsSpotted </name>
-		<x> 58 </x>
-		<y> 98 </y>
+		<x> 517 </x>
+		<y> 399 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> ribbonsStun </name>
-		<x> 58 </x>
-		<y> 49 </y>
+		<x> 526 </x>
+		<y> 350 </y>
 		<width> 48 </width>
 		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> turret_armor </name>
-		<x> 0 </x>
-		<y> 232 </y>
-		<width> 57 </width>
-		<height> 57 </height>
+		<name> loader_intuition </name>
+		<x> 517 </x>
+		<y> 448 </y>
+		<width> 48 </width>
+		<height> 48 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> turret_health </name>
-		<x> 0 </x>
-		<y> 406 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> turret_rotation_speed </name>
-		<x> 168 </x>
-		<y> 97 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> vehicle </name>
-		<x> 0 </x>
-		<y> 58 </y>
-		<width> 57 </width>
-		<height> 57 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> whiteBlackCenter </name>
-		<x> 107 </x>
-		<y> 15 </y>
-		<width> 1 </width>
-		<height> 14 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> whiteBlackEdge </name>
-		<x> 109 </x>
-		<y> 0 </y>
-		<width> 4 </width>
-		<height> 14 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> whiteCenter </name>
-		<x> 107 </x>
-		<y> 0 </y>
-		<width> 1 </width>
-		<height> 14 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> whiteEdge </name>
-		<x> 1014 </x>
-		<y> 132 </y>
-		<width> 4 </width>
-		<height> 14 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> whiteIconAT-SPG_elite16x16 </name>
-		<x> 58 </x>
-		<y> 147 </y>
+		<name> whiteIconAt-SPG16x16 </name>
+		<x> 361 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> whiteIconAt-SPG16x16 </name>
-		<x> 109 </x>
-		<y> 249 </y>
+		<name> whiteIconAT-SPG_elite16x16 </name>
+		<x> 377 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconBoss16x16 </name>
-		<x> 58 </x>
-		<y> 164 </y>
+		<x> 378 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconBunker16x16 </name>
-		<x> 58 </x>
-		<y> 181 </y>
-		<width> 16 </width>
-		<height> 16 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> whiteIconHeavyTank_elite16x16 </name>
-		<x> 58 </x>
-		<y> 215 </y>
+		<x> 394 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconHeavyTank16x16 </name>
-		<x> 58 </x>
-		<y> 198 </y>
+		<x> 395 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> whiteIconLightTank_elite16x16 </name>
-		<x> 58 </x>
-		<y> 249 </y>
+		<name> whiteIconHeavyTank_elite16x16 </name>
+		<x> 411 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconLightTank16x16 </name>
-		<x> 58 </x>
-		<y> 232 </y>
+		<x> 412 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> whiteIconMediumTank_elite16x16 </name>
-		<x> 92 </x>
-		<y> 249 </y>
+		<name> whiteIconLightTank_elite16x16 </name>
+		<x> 428 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconMediumTank16x16 </name>
-		<x> 75 </x>
-		<y> 249 </y>
+		<x> 429 </x>
+		<y> 497 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
-		<name> whiteIconSPG_elite16x16 </name>
-		<x> 952 </x>
-		<y> 223 </y>
+		<name> whiteIconMediumTank_elite16x16 </name>
+		<x> 445 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> whiteIconSPG16x16 </name>
-		<x> 951 </x>
-		<y> 240 </y>
+		<x> 446 </x>
+		<y> 497 </y>
+		<width> 16 </width>
+		<height> 16 </height>
+	</SubTexture>
+	<SubTexture>
+		<name> whiteIconSPG_elite16x16 </name>
+		<x> 462 </x>
+		<y> 514 </y>
 		<width> 16 </width>
 		<height> 16 </height>
 	</SubTexture>

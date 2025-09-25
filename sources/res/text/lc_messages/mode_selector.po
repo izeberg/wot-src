@@ -135,17 +135,15 @@ msgstr "Изучайте карты"
 
 msgid "mode/random/battlePassTooltip/body"
 msgstr ""
-"Играя на технике IV–X уровней в режиме {whiteSpanish_open}«Случайный бой» "
-"(исключая Генеральное сражение){whiteSpanish_close}, вы будете зарабатывать "
-"очки. Они нужны для продвижения по прогрессии Боевого пропуска."
+"Играя в {whiteSpanish_open}Случайных боях{whiteSpanish_close} на технике "
+"IV–XI уровней, вы будете зарабатывать очки. Они нужны для продвижения по "
+"прогрессии Боевого пропуска."
 
 msgid "mode/random/battlePassTooltip/header"
 msgstr "Очки Боевого пропуска"
 
 msgid "mode/random/condition"
-msgstr ""
-"15x15 %(parSecondary_open)sI%(parSecondary_close)s 30x30 "
-"%(parSecondary_open)sI%(parSecondary_close)s I–X&nbsp;уровни"
+msgstr "15x15 %(parSecondary_open)sI%(parSecondary_close)s I–XI&nbsp;уровни"
 
 msgid "mode/random/description"
 msgstr "Бои с автоподбором команд."
@@ -207,24 +205,6 @@ msgstr "Ознакомительные бои."
 msgid "novelty"
 msgstr "НОВОЕ"
 
-msgid "popover/assault"
-msgstr "Штурм"
-
-msgid "popover/default"
-msgstr "Стандартный бой"
-
-msgid "popover/devMaps"
-msgstr "Карты в разработке"
-
-msgid "popover/domination"
-msgstr "Встречный бой"
-
-msgid "popover/epicStandard"
-msgstr "Генеральное сражение"
-
-msgid "popover/header"
-msgstr "Подрежимы боя"
-
 msgid "ranked/widget/qualBattles"
 msgstr "Боёв в квалификации: %(current) %(par_open)s/ %(max)%(par_close)s"
 
@@ -263,6 +243,12 @@ msgstr "Награда определяется по показателю ваш
 
 msgid "reward/experience/name"
 msgstr "Опыт"
+
+msgid "reward/experimentalEquipment/description"
+msgstr "Играя в режиме, вы можете получить экспериментальное оборудование."
+
+msgid "reward/experimentalEquipment/name"
+msgstr "Специальное оборудование"
 
 msgid "reward/improvedEquipment/description"
 msgstr "Играя в режиме, вы можете получить %(name)s."

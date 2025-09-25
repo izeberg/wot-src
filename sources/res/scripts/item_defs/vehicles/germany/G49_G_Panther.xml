@@ -101,12 +101,9 @@
 		<weight>11830</weight>
 		<maxHealth>288</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>100</maxHealth>
-			<maxRegenHealth>50</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>143</maxRegenHealth>
+			<repairCost>7</repairCost>
 			<chanceToHit>
 				0.50
 				<!--BW_String-->
@@ -2167,14 +2164,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_G_Panther_1>
-			<userString>#germany_vehicles:Chassis_G_Panther_1</userString>
+		<Chassis_G49_G_Panther>
+			<userString>#germany_vehicles:Chassis_G49_G_Panther</userString>
 			<tags/>
 			<level>6</level>
 			<price>16700</price>
 			<unlocks>
 				<chassis>
-					Chassis_G_Panther_2
+					Chassis_G49_G_Panther_2
 					<cost>7300</cost>
 				</chassis>
 			</unlocks>
@@ -2183,9 +2180,8 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>32000</maxLoad>
 			<terrainResistance>
-				1.2 1.4 2.3
+				1.1 1.3 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>27000</brakeForce>
@@ -3760,9 +3756,9 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>9</repairTime>
-		</Chassis_G_Panther_1>
-		<Chassis_G_Panther_2>
-			<userString>#germany_vehicles:Chassis_G_Panther_2</userString>
+		</Chassis_G49_G_Panther>
+		<Chassis_G49_G_Panther_2>
+			<userString>#germany_vehicles:Chassis_G49_G_Panther_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>22070</price>
@@ -3771,7 +3767,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>32000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.1
 				<!--BW_String-->
@@ -5351,12 +5346,12 @@
 				7.80000019
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_G_Panther_2>
+		</Chassis_G49_G_Panther_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_G_Panther>
+		<Turret_1_G49_G_Panther>
 			<ceilless>true</ceilless>
-			<userString>#germany_vehicles:Turret_1_G_Panther</userString>
+			<userString>#germany_vehicles:Turret_1_G49_G_Panther</userString>
 			<tags>cannotDetach</tags>
 			<level>7</level>
 			<price>120</price>
@@ -5392,7 +5387,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_150mm_sFH18_L30>
+				<_150mm_s_F_H_18_L_29_5>
 					shared
 					<maxAmmo>30</maxAmmo>
 					<reloadTime>
@@ -5401,7 +5396,7 @@
 					</reloadTime>
 					<unlocks>
 						<gun>
-							_150mm_sFH36_L43
+							_150mm_s_F_H_43
 							<cost>16010</cost>
 						</gun>
 					</unlocks>
@@ -5516,8 +5511,8 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_150mm_sFH18_L30>
-				<_150mm_sFH36_L43>
+				</_150mm_s_F_H_18_L_29_5>
+				<_150mm_s_F_H_43>
 					shared
 					<maxAmmo>30</maxAmmo>
 					<reloadTime>27</reloadTime>
@@ -5638,7 +5633,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_150mm_sFH36_L43>
+				</_150mm_s_F_H_43>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G49_G_Panther/normal/lod0/Turret_01.model</undamaged>
@@ -6744,7 +6739,7 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_G_Panther>
+		</Turret_1_G49_G_Panther>
 	</turrets0>
 	<engines>
 		<Maybach_HL_210P30_05>
@@ -6762,24 +6757,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
@@ -6801,29 +6778,7 @@
 				</Maybach_HL_230P45_05>
 			</engines>
 			<chassis>
-				<Chassis_G_Panther_1>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.18515
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_G_Panther_1>
-				<Chassis_G_Panther_2>
+				<Chassis_G49_G_Panther>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6844,7 +6799,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_G_Panther_2>
+				</Chassis_G49_G_Panther>
+				<Chassis_G49_G_Panther_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.16905
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G49_G_Panther_2>
 			</chassis>
 		</detailed>
 	</physics>

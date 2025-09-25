@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.443053 -1.195652 -1.091125</min>
+		<max>1.457300 0.477439 0.106271</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/french/F135_AS_XX_40_t/normal/lod2/Hull_animated</nodefullVisual>
+	<parent>vehicles/french/F135_AS_XX_40_t/normal/lod3/Hull_animated</parent>
+	<extent>96.000000</extent>
+</root>

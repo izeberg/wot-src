@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.lobby.achievements.achievement_model import AchievementModel
 from gui.impl.gen.view_models.views.lobby.achievements.views.summary.other_player_info_model import OtherPlayerInfoModel
 from gui.impl.gen.view_models.views.lobby.achievements.views.summary.statistic_item_model import StatisticItemModel

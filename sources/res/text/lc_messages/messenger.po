@@ -1594,6 +1594,12 @@ msgstr "Победа"
 msgid "serviceChannelMessages/Financial/add"
 msgstr "Добавлено"
 
+msgid "serviceChannelMessages/PersonalMission3Quest/affirmative"
+msgstr "Так точно!"
+
+msgid "serviceChannelMessages/PersonalMission3Quest/goToOperation"
+msgstr "К операции"
+
 msgid "serviceChannelMessages/achievementReceived/message"
 msgstr "Достижения"
 
@@ -1792,13 +1798,15 @@ msgid "serviceChannelMessages/battleMatters/awards/tokenAward/body/vehicle"
 msgstr "Техника в аренду: %(vehName)s"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/body"
-msgstr "Возвращайтесь к обучающим задачам и получайте полезные награды."
+msgstr "Получайте машины и полезные ресурсы за выполнение обучающих задач."
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/button"
-msgstr "К текущей задаче"
+msgstr "К Танковой академии"
 
 msgid "serviceChannelMessages/battleMatters/taskReminder/title"
-msgstr "ТАНКОВАЯ АКАДЕМИЯ"
+msgstr ""
+"ВСЁ, ЧТО НУЖНО\n"
+"ДЛЯ НАЧАЛА"
 
 msgid "serviceChannelMessages/battleMatters/token"
 msgstr "Жетон академии"
@@ -2075,6 +2083,33 @@ msgstr "Получено свободного опыта"
 msgid "serviceChannelMessages/battleResults/gold"
 msgstr "Получено золота"
 
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/description"
+msgstr ""
+"Вы получили медаль «%(nameMedal)s» за участие в кампании «%(campaignName)s»."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/header"
+msgstr "Поздравляем!"
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/1/description"
+msgstr ""
+"Вы получили медаль «%(nameMedal)s» за выполнение 45 задач из серии "
+"«%(categoryName)s» кампании «%(campaignName)s»."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/2/description"
+msgstr ""
+"Вы получили медаль «%(nameMedal)s» за выполнение 30 задач из серии "
+"«%(categoryName)s» кампании «%(campaignName)s»."
+
+msgid ""
+"serviceChannelMessages/battleResults/notification/personalMissions/3/stage/3/description"
+msgstr ""
+"Вы получили медаль «%(nameMedal)s» за выполнение 15 задач из серии "
+"«%(categoryName)s» кампании «%(campaignName)s»."
+
 msgid "serviceChannelMessages/battleResults/penaltyForDamageAllies"
 msgstr "штраф за нанесение урона союзникам: %s"
 
@@ -2092,6 +2127,11 @@ msgid "serviceChannelMessages/battleResults/personalMissions/2"
 msgstr ""
 "Поздравляем!\n"
 "За успешное выполнение личных боевых задач кампании «Второй фронт» вам присвоены следующие награды"
+
+msgid "serviceChannelMessages/battleResults/personalMissions/3"
+msgstr ""
+"+Congratulations!\n"
+"For successful completion of the Sector 3 campaign personal missions you have received the following rewards+"
 
 msgid "serviceChannelMessages/battleResults/personalMissions/both"
 msgstr ""
@@ -2145,6 +2185,9 @@ msgstr "Добавлено"
 
 msgid "serviceChannelMessages/battleResults/quests/items/name"
 msgstr "%(name)s (x%(count)s)"
+
+msgid "serviceChannelMessages/battleResults/quests/personal_missions_points"
+msgstr "Очки кампании: %(count)s"
 
 msgid "serviceChannelMessages/battleResults/quests/premium"
 msgstr "Добавлено дней Общего премиум аккаунта"
@@ -2365,6 +2408,10 @@ msgstr "Закрыть"
 
 msgid "serviceChannelMessages/clan/LEFT_CLAN"
 msgstr "Вы вышли или были исключены из клана:"
+
+msgid ""
+"serviceChannelMessages/commendations/battleResults/commendationsReceived"
+msgstr "Благодарностей получено"
 
 msgid "serviceChannelMessages/commendations/liveTags/disable"
 msgstr "Специальные метки недоступны"
@@ -2954,6 +3001,9 @@ msgstr "Начислено юбилейных монет"
 msgid "serviceChannelMessages/invoiceReceived/eventCoinDebited"
 msgstr "Списано юбилейных монет"
 
+msgid "serviceChannelMessages/invoiceReceived/expirableBoosters"
+msgstr "Личные резервы с ограниченным сроком действия"
+
 msgid "serviceChannelMessages/invoiceReceived/freeAwardListsAccrued"
 msgstr "Начислено бланков приказа"
 
@@ -3359,6 +3409,17 @@ msgstr "%(vehName)s"
 
 msgid "serviceChannelMessages/prestige/lvlUp/title"
 msgstr "Достигнут уровень элитности"
+
+msgid "serviceChannelMessages/prestigeMilestone/error"
+msgstr "Ошибка при получении элитной награды."
+
+msgid "serviceChannelMessages/prestigeMilestone/text"
+msgstr ""
+"%(typeReward)s «%(rewardName)s» получен за получение %(lvl)s уровня "
+"элитности."
+
+msgid "serviceChannelMessages/prestigeMilestone/title"
+msgstr "Получена элитная награда"
 
 msgid "serviceChannelMessages/priorityMessageTitle"
 msgstr "Внимание!"
@@ -4030,25 +4091,6 @@ msgstr "Выберите машину из списка для аренды."
 
 msgid "serviceChannelMessages/wotPlus/rental/noTank/title"
 msgstr "Арендная машина не выбрана"
-
-msgid ""
-"serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/additionalBonuses"
-msgstr "• получать утроенный боевой опыт;"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/badges"
-msgstr "• выделить своё имя;"
-
-msgid ""
-"serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/battleBonuses"
-msgstr "• зарабатывать на %(creditsFactor)d%% больше в каждом бою."
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/body"
-msgstr ""
-"Теперь вы можете:\n"
-"%(bonuses)s"
-
-msgid "serviceChannelMessages/wotPlus/subscribersBenefitsOnboarding/title"
-msgstr "Доступны новые бонусы подписки WoT Plus!"
 
 msgid "serviceChannelMessages/wotPlus/tankRental/isPending/text"
 msgstr "Машина %(vehicle)s будет начислена на ваш аккаунт в ближайшее время."

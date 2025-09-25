@@ -4,7 +4,7 @@
 	<grid>
 		grid_1
 		<rows>11</rows>
-		<columns>10</columns>
+		<columns>11</columns>
 	</grid>
 	<nodes>
 		<Ch06_Renault_NC31>
@@ -193,6 +193,9 @@
 		<Ch48_BZ_75>
 			<row>4</row>
 			<column>10</column>
+			<lines>
+				<Ch67_BZ_79/>
+			</lines>
 		</Ch48_BZ_75>
 		<Ch41_WZ_111_5A>
 			<row>6</row>
@@ -206,5 +209,9 @@
 			<row>9</row>
 			<column>10</column>
 		</Ch29_Type_62C_prot>
+		<Ch67_BZ_79>
+			<row>4</row>
+			<column>11</column>
+		</Ch67_BZ_79>
 	</nodes>
 </root>

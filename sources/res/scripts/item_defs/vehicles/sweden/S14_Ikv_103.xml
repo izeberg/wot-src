@@ -106,7 +106,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>4792</weight>
-		<maxHealth>368</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>170</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -2036,9 +2036,8 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>9000</maxLoad>
 			<terrainResistance>
-				1.1 1.4 2.3
+				1 1.1 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>9000</brakeForce>
@@ -3967,7 +3966,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>2500</weight>
-			<maxLoad>10000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.1
 				<!--BW_String-->
@@ -5904,7 +5902,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>92</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>18</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5950,7 +5948,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.54
+						0.45
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>12</reloadTime>
@@ -5960,7 +5958,7 @@
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.18
+							0.14
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6093,6 +6091,20 @@
 						2.1
 						<!--BW_String-->
 					</aimingTime>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<turretRotation>
+							0.14
+							<!--BW_String-->
+						</turretRotation>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/sweden/S14_Ikv_103/normal/lod0/Gun_02.model</undamaged>
 						<destroyed>vehicles/sweden/S14_Ikv_103/crash/lod0/Gun_02.model</destroyed>
@@ -6217,15 +6229,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<Ra_100>
-			shared
-			<unlocks>
-				<radio>
-					Ra_105
-					<cost>4100</cost>
-				</radio>
-			</unlocks>
-		</Ra_100>
 		<Ra_105>shared</Ra_105>
 	</radios>
 	<clientAdjustmentFactors>
@@ -6253,11 +6256,11 @@
 		<detailed>
 			<engines>
 				<SFA_B42>
-					<smplEnginePower>110</smplEnginePower>
+					<smplEnginePower>160</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</SFA_B42>
 				<Ford_391>
-					<smplEnginePower>140</smplEnginePower>
+					<smplEnginePower>180</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</Ford_391>
 			</engines>
@@ -6265,13 +6268,13 @@
 				<Chassis_S14_Ikv_103>
 					<grounds>
 						<soft>
-							<rollingFriction>0.231438</rollingFriction>
+							<rollingFriction>0.211313</rollingFriction>
 						</soft>
 						<medium>
-							<rollingFriction>0.140875</rollingFriction>
+							<rollingFriction>0.110688</rollingFriction>
 						</medium>
 						<firm>
-							<rollingFriction>0.110688</rollingFriction>
+							<rollingFriction>0.100625</rollingFriction>
 						</firm>
 					</grounds>
 				</Chassis_S14_Ikv_103>

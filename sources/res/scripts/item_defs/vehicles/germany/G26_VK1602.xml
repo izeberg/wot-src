@@ -98,7 +98,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>12320</weight>
-		<maxHealth>464</maxHealth>
+		<maxHealth>520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>150</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -2128,14 +2128,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Leopardketten_Ausf_A>
-			<userString>#germany_vehicles:Leopardketten_Ausf_A</userString>
+		<Chassis_G26_VK1602>
+			<userString>#germany_vehicles:Chassis_G26_VK1602</userString>
 			<tags/>
 			<level>4</level>
 			<price>4230</price>
 			<unlocks>
 				<chassis>
-					Leopardketten_Ausf_B
+					Chassis_G26_VK1602_2
 					<cost>2350</cost>
 				</chassis>
 			</unlocks>
@@ -2144,9 +2144,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>21900</maxLoad>
 			<terrainResistance>
-				1.1 1.2 2.3
+				1 1.1 2.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>22000</brakeForce>
@@ -3570,9 +3569,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Leopardketten_Ausf_A>
-		<Leopardketten_Ausf_B>
-			<userString>#germany_vehicles:Leopardketten_Ausf_B</userString>
+		</Chassis_G26_VK1602>
+		<Chassis_G26_VK1602_2>
+			<userString>#germany_vehicles:Chassis_G26_VK1602_2</userString>
 			<tags/>
 			<level>5</level>
 			<price>12740</price>
@@ -3581,7 +3580,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>24000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.1
 				<!--BW_String-->
@@ -5007,11 +5005,11 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Leopardketten_Ausf_B>
+		</Chassis_G26_VK1602_2>
 	</chassis>
 	<turrets0>
-		<Leopardturm>
-			<userString>#germany_vehicles:Leopardturm</userString>
+		<Turret_1_G26_VK1602>
+			<userString>#germany_vehicles:Turret_1_G26_VK1602</userString>
 			<tags/>
 			<level>5</level>
 			<price>9380</price>
@@ -5028,7 +5026,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>2000</weight>
-			<maxHealth>116</maxHealth>
+			<maxHealth>130</maxHealth>
 			<rotationSpeed>40</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -5048,19 +5046,19 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_30mm_MK103A>
+				<_30mm_M_K_103_1602>
 					shared
 					<maxAmmo>432</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 3.2 0.055556 3.2 0.0626234 6 0.119218 10 0.366894 10 0.430556 2 0.569444 2 0.633106 9.985 0.880782 10 0.931078 6 0.944444 3.2 1 3.2
+							0.00000 6.00 0.06389 6.00 0.09722 10.00 0.34722 10.00 0.50000 1.00 0.65278 10.00 0.90278 10.00 0.93611 6.00 1.00000 6.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
 					<unlocks>
 						<gun>
-							_50mm_KwK_39_L60L
+							_50mm_Kw_K_39_L_60_1602
 							<cost>3500</cost>
 						</gun>
 					</unlocks>
@@ -5228,14 +5226,20 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_30mm_MK103A>
-				<_50mm_KwK_39_L60L>
+				</_30mm_M_K_103_1602>
+				<_50mm_Kw_K_39_L_60_1602>
 					shared
 					<maxAmmo>75</maxAmmo>
+					<unlocks>
+						<vehicle>
+							G66_VK2801
+							<cost>28840</cost>
+						</vehicle>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 3.2 0.055556 3.2 0.0626234 6 0.119218 10 0.366894 10 0.430556 2 0.569444 2 0.633106 9.985 0.880782 10 0.931078 6 0.944444 3.2 1 3.2
+							0.00000 6.00 0.06389 6.00 0.09722 10.00 0.34722 10.00 0.50000 1.00 0.65278 10.00 0.90278 10.00 0.93611 6.00 1.00000 6.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5259,11 +5263,11 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						1.7
+						1.5
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -5278,7 +5282,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<shotDispersionRadius>
-						0.39
+						0.35
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<invisibilityFactorAtShot>
@@ -5405,7 +5409,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_50mm_KwK_39_L60L>
+				</_50mm_Kw_K_39_L_60_1602>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G26_VK1602/normal/lod0/Turret_01.model</undamaged>
@@ -6183,85 +6187,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Leopardturm>
+		</Turret_1_G26_VK1602>
 	</turrets0>
 	<engines>
 		<Maybach_HL_120_TRM_L>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_157P_A
+					Maybach_HL_157_P_A
 					<cost>2200</cost>
 				</engine>
 			</unlocks>
 		</Maybach_HL_120_TRM_L>
-		<Maybach_HL_157P_A>shared</Maybach_HL_157P_A>
+		<Maybach_HL_157_P_A>shared</Maybach_HL_157_P_A>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG_Spr.A
-					<cost>4500</cost>
-				</radio>
-				<vehicle>
-					G66_VK2801
-					<cost>28840</cost>
-				</vehicle>
-			</unlocks>
-		</FuG7>
 		<FuG_Spr.A>shared</FuG_Spr.A>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
 				<Maybach_HL_120_TRM_L>
-					<smplEnginePower>460</smplEnginePower>
+					<smplEnginePower>500</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
 				</Maybach_HL_120_TRM_L>
-				<Maybach_HL_157P_A>
+				<Maybach_HL_157_P_A>
 					<smplEnginePower>550</smplEnginePower>
 					<smplFwMaxSpeed>60</smplFwMaxSpeed>
-				</Maybach_HL_157P_A>
+				</Maybach_HL_157_P_A>
 			</engines>
 			<chassis>
-				<Leopardketten_Ausf_A>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.18515
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.0966
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-					<axleCount>5</axleCount>
-				</Leopardketten_Ausf_A>
-				<Leopardketten_Ausf_B>
+				<Chassis_G26_VK1602>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6283,7 +6242,30 @@
 						</firm>
 					</grounds>
 					<axleCount>5</axleCount>
-				</Leopardketten_Ausf_B>
+				</Chassis_G26_VK1602>
+				<Chassis_G26_VK1602_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.16905
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+					<axleCount>5</axleCount>
+				</Chassis_G26_VK1602_2>
 			</chassis>
 		</detailed>
 	</physics>

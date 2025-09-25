@@ -29,6 +29,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var showLegal:Function;
       
+      public var toReportContent:Function;
+      
       private var _vectorCountersVo:Vector.<CountersVo>;
       
       private var _vectorString:Vector.<String>;
@@ -116,6 +118,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.showLegal,"showLegal" + Errors.CANT_NULL);
          this.showLegal();
+      }
+      
+      public function toReportContentS() : void
+      {
+         App.utils.asserter.assertNotNull(this.toReportContent,"toReportContent" + Errors.CANT_NULL);
+         this.toReportContent();
       }
       
       public final function as_setCounter(param1:Array) : void

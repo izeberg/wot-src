@@ -16,29 +16,20 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
-msgid "alertMessage/allPeripheriesHalt"
-msgstr "Режим прекращения огня на всех серверах. Бои начнутся через %(time)s"
+msgid "alertMessage/ceasefireAllServers"
+msgstr "Режим прекращения огня на всех доступных серверах."
 
-msgid "alertMessage/button"
+msgid "alertMessage/ceasefireCurrentServer"
+msgstr "На этом сервере режим прекращения огня."
+
+msgid "alertMessage/changeServerButton"
 msgstr "Сменить сервер"
 
-msgid "alertMessage/seasonAlmostFinished"
-msgstr "Событие «Стальной охотник» завершится через %(time)s"
-
-msgid "alertMessage/seasonFinished"
+msgid "alertMessage/modeIsFinished"
 msgstr "Событие «Стальной охотник» завершено"
 
-msgid "alertMessage/seasonIsComing"
-msgstr "Событие «Стальной охотник» начнётся через %(time)s"
-
-msgid "alertMessage/singleModeHalt"
-msgstr "Режим прекращения огня на сервере. Бои начнутся через %(time)s"
-
-msgid "alertMessage/somePeripheriesHalt"
-msgstr "Режим прекращения огня на %(serverName)s"
-
-msgid "alertMessage/unsuitablePeriphery"
-msgstr "На текущем сервере бои недоступны"
+msgid "alertMessage/modeIsUnavailable"
+msgstr "На этом сервере режим недоступен"
 
 msgid "banner/info/disabled"
 msgstr "Режим прекращения огня"
@@ -276,23 +267,39 @@ msgstr "Выберите одну из специальных машин реж�
 msgid "battleRoyaleCarousel/lockedToolTip/header"
 msgstr "Неподходящая машина"
 
-msgid "battleTypeSelector/tab/hint"
-msgstr "Особые боевые задачи"
-
-msgid "battleTypeSelector/tab/platoon"
-msgstr "ВЗВОД С ДРУГОМ"
-
-msgid "battleTypeSelector/tab/randomPlatoon"
-msgstr "СЛУЧАЙНЫЙ ВЗВОД"
-
-msgid "battleTypeSelector/tab/solo"
-msgstr "ОДИНОЧНЫЙ БОЙ"
-
 msgid "button/modules"
 msgstr "ДЕРЕВО РАЗВИТИЯ"
 
 msgid "button/repair"
 msgstr "Ремонт"
+
+msgid "ceasefire/header/ceasefireAllServers"
+msgstr "Бои временно недоступны"
+
+msgid "ceasefire/header/ceasefireCurrentServer"
+msgstr "Бои временно недоступны"
+
+msgid "ceasefire/header/modeIsUnavailable"
+msgstr "Режим отключён"
+
+msgid "ceasefire/header/schedule"
+msgstr "Расписание боёв"
+
+msgid "ceasefire/template/schedule"
+msgstr "{{start}}–{{end}}"
+
+msgid "ceasefire/text/ceasefireAllServers"
+msgstr ""
+"Режим прекращения огня на всех доступных серверах. Вы можете узнать "
+"расписание ниже."
+
+msgid "ceasefire/text/ceasefireCurrentServer"
+msgstr "На этом сервере режим прекращения огня. Перейдите на другой сервер."
+
+msgid "ceasefire/text/modeIsUnavailable"
+msgstr ""
+"Режим «Стальной охотник» недоступен на этом сервере. Перейдите на другой "
+"сервер."
 
 msgid "commanderInfo/commonRank"
 msgstr "Командир"
@@ -444,40 +451,6 @@ msgstr ""
 "Ваш Стальной охотник получает опыт в бою, нанося урон и собирая добычу. "
 "Набрав достаточное количество опыта, вы перейдёте на новый уровень и сможете"
 " выбрать улучшение одного из модулей."
-
-msgid "intro/aboutButton"
-msgstr "О РЕЖИМЕ"
-
-msgid "intro/button"
-msgstr "Так точно!"
-
-msgid "intro/slide1/text"
-msgstr ""
-"Три новых танка: средний польский, лёгкий китайский и тяжёлый шведский."
-
-msgid "intro/slide1/title"
-msgstr "НОВАЯ ТЕХНИКА"
-
-msgid "intro/slide3/text"
-msgstr ""
-"Добыча в зелёных дымах восстанавливает очки прочности, содержит заряд "
-"Восстановления, снаряды и опыт для повышения уровня и увеличения мощности "
-"машины. В жёлтых дымах вы найдёте добычу с зарядами Ремонтного набора или "
-"уникальных боевых умений."
-
-msgid "intro/slide3/title"
-msgstr "ИЗМЕНЕНИЯ СОСТАВОВ ДОБЫЧИ"
-
-msgid "intro/slide4/text"
-msgstr ""
-"Заснеженная тундра в Скандинавии с характерной холмистой местностью, "
-"небольшими посёлками и замёрзшими водоёмами."
-
-msgid "intro/slide4/title"
-msgstr "НОВАЯ КАРТА"
-
-msgid "intro/title"
-msgstr "СТАЛЬНОЙ ОХОТНИК"
 
 msgid "levelUp/severalTitles"
 msgstr "ПОЛУЧЕНЫ УРОВНИ: %(firstLevel)s – %(lastLevel)s!"
@@ -641,29 +614,8 @@ msgstr ""
 msgid "proxyPanel/store"
 msgstr "МАГАЗИН"
 
-msgid "questsTooltip/lessThanDay"
-msgstr "менее 1 д"
-
-msgid "questsTooltip/mission_info/timeLeft"
-msgstr "До конца этапа %(cycle)s: %(time)s"
-
-msgid "questsTooltip/startIn"
-msgstr "Новые задачи появятся через %(time)s"
-
 msgid "questsTooltip/timeLeft"
 msgstr "До конца сезона: %(time)s"
-
-msgid "questsTooltip/timeLeftShort/days"
-msgstr "%(day)s д"
-
-msgid "questsTooltip/timeLeftShort/hours"
-msgstr "%(hour)s ч"
-
-msgid "questsTooltip/timeLeftShort/lessMin"
-msgstr "менее минуты"
-
-msgid "questsTooltip/timeLeftShort/min"
-msgstr "%(min)s мин"
 
 msgid "radar/hint/noBinding"
 msgstr "На радар не назначена клавиша"
@@ -832,20 +784,29 @@ msgstr "Броню съедает коррозия!"
 msgid "statusNotificationTimers/thunderStrike"
 msgstr "Подвижность снижена!"
 
+msgid "tab/lable/platoon"
+msgstr "ВЗВОД"
+
+msgid "tab/lable/solo"
+msgstr "В ОДИНОЧКУ"
+
+msgid "tab/lable/team"
+msgstr "С ДРУГОМ"
+
 msgid "techParams/type/damage"
-msgstr "ОГНЕВАЯ МОЩЬ"
+msgstr "Урон"
 
 msgid "techParams/type/difficulty"
-msgstr "СЛОЖНОСТЬ"
+msgstr "Сложность"
 
 msgid "techParams/type/mobility"
-msgstr "МОБИЛЬНОСТЬ"
+msgstr "Мобильность"
 
 msgid "techParams/type/spotting"
-msgstr "РАЗВЕДКА"
+msgstr "Разведка"
 
 msgid "techParams/type/survivability"
-msgstr "ЖИВУЧЕСТЬ"
+msgstr "Живучесть"
 
 msgid "techtree/body_armor"
 msgstr "Бронирование"
@@ -904,48 +865,46 @@ msgstr "Скорость вращения"
 msgid "tooltip/battleTypeSelector/bonus"
 msgstr "+15%"
 
-msgid "tooltip/battleTypeSelector/tab/bonusDescription"
-msgstr ""
-"До %(experience)s опыта\n"
-"До %(credits)s кредитов"
+msgid "tooltip/battleTypeSelector/bonusDescription/credits"
+msgstr "До {{credits}} кредитов"
 
-msgid "tooltip/battleTypeSelector/tab/bonusTitle/platoon"
-msgstr "Бонус за игру во взводе"
+msgid "tooltip/battleTypeSelector/bonusDescription/experience"
+msgstr "До {{experience}} опыта"
 
-msgid "tooltip/battleTypeSelector/tab/bonusTitle/randomPlatoon"
-msgstr "Бонус за игру во взводе"
+msgid "tooltip/battleTypeSelector/bonusTitle"
+msgstr "Взводный бонус"
 
-msgid "tooltip/battleTypeSelector/tab/description/platoon"
-msgstr ""
-"Сражение во взводе с другом. Командная работа против девяти взводов-"
-"соперников. В этом режиме выполняются взводные боевые задачи."
-
-msgid "tooltip/battleTypeSelector/tab/description/randomPlatoon"
+msgid "tooltip/battleTypeSelector/description/platoon"
 msgstr ""
 "Сражение во взводе со случайно подобранным союзником. Командная работа "
 "против девяти взводов-соперников. В этом режиме выполняются взводные боевые "
 "задачи. По завершении боя взвод будет автоматически расформирован."
 
-msgid "tooltip/battleTypeSelector/tab/description/solo"
+msgid "tooltip/battleTypeSelector/description/solo"
 msgstr ""
 "Классический «Стальной охотник». Каждый игрок сражается сам за себя. "
-"Собирайте ресурсы, улучшайте свою технику и используйте её уникальные "
+"Подбирайте добычу, улучшайте свою технику и используйте её уникальные "
 "способности, чтобы остаться последним выжившим!"
 
-msgid "tooltip/battleTypeSelector/tab/title/platoon"
-msgstr "Взвод с другом"
+msgid "tooltip/battleTypeSelector/description/team"
+msgstr ""
+"Сражение во взводе с другом. Командная работа против девяти взводов-"
+"соперников. В этом режиме выполняются взводные боевые задачи."
 
-msgid "tooltip/battleTypeSelector/tab/title/randomPlatoon"
+msgid "tooltip/battleTypeSelector/header/platoon"
 msgstr "Случайный взвод"
 
-msgid "tooltip/battleTypeSelector/tab/title/solo"
-msgstr "Одиночный бой"
+msgid "tooltip/battleTypeSelector/header/solo"
+msgstr "Одиночный режим"
+
+msgid "tooltip/battleTypeSelector/header/team"
+msgstr "Взвод с другом"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/29"
 msgstr "В одиночку"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/30"
-msgstr "Во взводе"
+msgstr "Взвод"
 
 msgid "tooltip/progression/leaderboardReward/header"
 msgstr "Правила начисления очков"
@@ -956,62 +915,6 @@ msgstr "%(place)s место"
 msgid "tooltip/progression/leaderboardReward/text/places"
 msgstr "%(place)s места"
 
-msgid "tooltip/widget/hangar/battleSchedule/schedule"
-msgstr "%(start)s – %(end)s"
-
-msgid "tooltip/widget/hangar/description/header"
-msgstr "Основная прогрессия пройдена!"
-
-msgid "tooltip/widget/hangar/description/text/completed"
-msgstr "Теперь вам доступны новые ежедневные боевые задачи."
-
-msgid "tooltip/widget/hangar/description/text/inProgress"
-msgstr ""
-"Выполняйте боевые задачи режима «Стальной охотник» и получайте очки "
-"прогрессии. На количество получаемых очков также влияет ваша позиция по "
-"итогам боя."
-
-msgid "tooltip/widget/hangar/header/battleLeaveTime/today"
-msgstr "сегодня"
-
-msgid "tooltip/widget/hangar/header/battleLeaveTime/tomorrow"
-msgstr "завтра"
-
-msgid "tooltip/widget/hangar/header/subTitle/text"
-msgstr "До конца события осталось %(value)s"
-
-msgid "tooltip/widget/hangar/header/title"
-msgstr "Стальной охотник"
-
-msgid "tooltip/widget/hangar/performance/description/high"
-msgstr ""
-"Производительности вашего компьютера недостаточно для данного режима. Весьма"
-" вероятны проблемы с графикой и перемещением техники, возможно также "
-"аварийное закрытие клиента игры."
-
-msgid "tooltip/widget/hangar/performance/description/low"
-msgstr ""
-"В случае недостаточной производительности попробуйте понизить настройки "
-"графики."
-
-msgid "tooltip/widget/hangar/performance/description/medium"
-msgstr ""
-"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
-"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
-"производительности, попробуйте понизить настройки графики."
-
-msgid "tooltip/widget/hangar/performance/header/high"
-msgstr "Низкая производительность"
-
-msgid "tooltip/widget/hangar/performance/header/low"
-msgstr "Режим требователен к компьютеру."
-
-msgid "tooltip/widget/hangar/performance/header/medium"
-msgstr "Низкая производительность"
-
-msgid "tooltip/widget/hangar/timeTable/title"
-msgstr "Расписание боёв"
-
 msgid "tooltips/awards/achievement"
 msgstr "Медаль"
 
@@ -1020,24 +923,6 @@ msgstr "Нашивка"
 
 msgid "tooltips/awards/pattern"
 msgstr "%(typeName)s: «%(userName)s»"
-
-msgid "tooltips/brCoin/earn/description"
-msgstr ""
-"Получайте печати за эффективные действия в бою, высокие позиции в "
-"послебоевой статистике, а также за выполнение боевых задач режима."
-
-msgid "tooltips/brCoin/earn/title"
-msgstr "Как заработать"
-
-msgid "tooltips/brCoin/spend/description"
-msgstr ""
-"Используйте заработанные печати для покупки стилей Стального охотника."
-
-msgid "tooltips/brCoin/spend/title"
-msgstr "На что потратить"
-
-msgid "tooltips/brCoin/title"
-msgstr "Стальные печати"
 
 msgid "tooltips/respawn/common/description"
 msgstr ""

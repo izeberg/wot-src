@@ -26,11 +26,10 @@ class ResearchView(LobbySubView, ResearchViewMeta):
     def __init__(self, data):
         super(ResearchView, self).__init__()
         self._data = data
-        self._canBeClosed = True
         self._listener = TTListenerDecorator()
 
     def goToBlueprintView(self, vehicleCD):
-        shared_events.showBlueprintView(vehicleCD, self._createExitEvent())
+        shared_events.showBlueprintView(vehicleCD)
 
     def goToNationChangeView(self, vehicleCD):
         shared_events.showChangeVehicleNationDialog(vehicleCD)
@@ -149,9 +148,6 @@ class ResearchView(LobbySubView, ResearchViewMeta):
 
     def _updatePrevUnlockedItems(self, prevUnlocked):
         pass
-
-    def _createExitEvent(self):
-        return
 
     def _populate(self):
         super(ResearchView, self)._populate()

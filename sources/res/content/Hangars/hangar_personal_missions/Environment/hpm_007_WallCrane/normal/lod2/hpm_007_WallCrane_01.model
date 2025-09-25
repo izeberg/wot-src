@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_007_WallCrane/normal/lod3/hpm_007_WallCrane_01</parent>
+	<extent>85.000000</extent>
+	<visibilityBox>
+		<min>-0.161384 -3.363025 -5.140885</min>
+		<max>0.161384 1.122960 0.161384</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_007_WallCrane/normal/lod2/hpm_007_WallCrane_01</nodefullVisual>
+</root>

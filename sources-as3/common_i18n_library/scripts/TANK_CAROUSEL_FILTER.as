@@ -15,6 +15,8 @@ package
       
       public static const POPOVER_LABEL_VEHICLETYPES:String = "#tank_carousel_filter:popover/label/vehicleTypes";
       
+      public static const POPOVER_LABEL_VEHICLEROLE:String = "#tank_carousel_filter:popover/label/vehicleRole";
+      
       public static const POPOVER_LABEL_LEVELS:String = "#tank_carousel_filter:popover/label/levels";
       
       public static const POPOVER_LABEL_SPECIALS:String = "#tank_carousel_filter:popover/label/specials";
@@ -132,10 +134,6 @@ package
       public static const TOOLTIP_INVENTORY_HEADER:String = "#tank_carousel_filter:tooltip/inventory/header";
       
       public static const TOOLTIP_INVENTORY_BODY:String = "#tank_carousel_filter:tooltip/inventory/body";
-      
-      public static const TOOLTIP_COMP7_HEADER:String = "#tank_carousel_filter:tooltip/comp7/header";
-      
-      public static const TOOLTIP_COMP7_BODY:String = "#tank_carousel_filter:tooltip/comp7/body";
       
       public static const TOOLTIP_CUSTOMIZATION_CANINSTALLATTACHMENTS_BODY:String = "#tank_carousel_filter:tooltip/customization/canInstallAttachments/body";
       

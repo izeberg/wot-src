@@ -280,9 +280,10 @@ class CommandBuilder(object):
             root.append(self._createEarningAnimationCommand(receiver, achievementsData))
         root.append(self._createTimeStampUpdateCommand(receiver, achievementsData))
         root.append(self._createNotificationCommand(receiver, achievementsData))
-        rewardScreenCommand = self._createRewardScreenCommand(receiver, achievementsData)
-        if rewardScreenCommand:
-            root.append(rewardScreenCommand)
+        if self.__limitedUICtrl.isRuleCompleted(LUI_RULES.AdvancedAchievements):
+            rewardScreenCommand = self._createRewardScreenCommand(receiver, achievementsData)
+            if rewardScreenCommand:
+                root.append(rewardScreenCommand)
         return root
 
 

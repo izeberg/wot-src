@@ -1,0 +1,354 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-04 11:55+0200\n"
+"Last-Translator: WoT Translator <<noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
+
+msgid "alertMessage/button/changeServer"
+msgstr "Изменение сервера"
+
+msgid "alertMessage/button/moreInfo"
+msgstr "Подробнее"
+
+msgid "alertMessage/ceasefireAvailable"
+msgstr "Режим недоступен на этом сервере %(button)s"
+
+msgid "alertMessage/ceasefireUnavailable"
+msgstr "Режим недоступен на всех серверах"
+
+msgid "alertMessage/modeOffline"
+msgstr "Ошибка базы данных. Режим недоступен."
+
+msgid "alertMessage/noVehicles"
+msgstr "В Ангаре нет подходящей техники %(button)s"
+
+msgid "battleQuestAwards/button"
+msgstr "Так точно!"
+
+msgid "battleQuestAwards/subTitle"
+msgstr "НАТИСК ЛАЙТ"
+
+msgid "battleQuestAwards/title/completed"
+msgstr "ФИНАЛЬНЫЙ ЭТАП ПРОЙДЕН!"
+
+msgid "battleQuestAwards/title/inProgress"
+msgstr "ЭТАП %(level)s ПРОЙДЕН!"
+
+msgid "battleQuestTooltips/allMissionsCompleted"
+msgstr "Все задачи выполнены!"
+
+msgid "battleQuestTooltips/completed"
+msgstr "Выполнено"
+
+msgid "battleQuestTooltips/expiresIn"
+msgstr "Завершится через %(timeLeft)s"
+
+msgid "battleQuestTooltips/mission"
+msgstr "Задача «Натиска Лайт»"
+
+msgid "battleQuestTooltips/newMissionsIn"
+msgstr "Новая задача «Натиска Лайт» будет доступна через %(timeLeft)s"
+
+msgid "battleQuestTooltips/rewards"
+msgid_plural "plural/battleQuestTooltips/rewards"
+msgstr[0] "Награда:"
+msgstr[1] "Награды:"
+msgstr[2] "Наград:"
+
+msgid "battleResult/header/deserter"
+msgstr "К вам применено дисциплинарное взыскание"
+
+msgid "calendarDay/serverName"
+msgstr "%(server)s"
+
+msgid "calendarDay/time"
+msgstr "%(start)s – %(end)s"
+
+msgid "calendarDay/timeLeft"
+msgid_plural "plural/calendarDay/timeLeft"
+msgstr[0] "«Натиск Лайт» продлится %(days)d день"
+msgstr[1] "«Натиск Лайт» продлится %(days)d дня"
+msgstr[2] "«Натиск Лайт» продлится %(days)d дней"
+
+msgid "calendarDay/title"
+msgstr "Расписание"
+
+msgid "closeButtonLabel"
+msgstr "ЗАКРЫТЬ"
+
+msgid "countDown/text"
+msgstr ""
+"До начала события:\n"
+"%(timeLeft)s"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"Динамичный режим, в котором игроки сражаются в формате 7 на 7 на технике "
+"%(levels)s уровня. Наслаждайтесь игровым процессом классического «Натиска» "
+"без квалификации, рангов и достижений, а также получайте награды за "
+"выполнение ежедневных задач."
+
+msgid "entryPointTooltip/modeBtnText"
+msgstr "РЕЖИМ"
+
+msgid "entryPointTooltip/modeDescription"
+msgstr "%(mode)s — это игровой режим. Нажмите для ознакомления."
+
+msgid "entryPointTooltip/modeName"
+msgstr "Натиск Лайт"
+
+msgid "entryPointTooltip/status/active"
+msgstr "Режим доступен %(timer)s"
+
+msgid "entryPointTooltip/status/ceasefire"
+msgstr "Прекращение огня %(timer)s"
+
+msgid "featureName"
+msgstr "Натиск Лайт"
+
+msgid "featureNameCapitalized"
+msgstr "НАТИСК ЛАЙТ"
+
+msgid "intro/confirmButton"
+msgstr "Так точно!"
+
+msgid "intro/description/lightGameplay"
+msgstr ""
+"Наслаждайтесь игровым процессом классического «Натиска» без квалификации, "
+"рангов и достижений."
+
+msgid "intro/description/onslaughtModifiers"
+msgstr ""
+"В режиме действуют модификаторы, меняющие параметры техники, такие как "
+"прочность, время подготовки снаряжения, длительность обнаружения и многое "
+"другое."
+
+msgid "intro/description/pointsOfInterest"
+msgstr ""
+"На карте есть области, захват которых позволяет использовать тактические "
+"навыки. Существует 2 типа ключевых позиций: Артиллерийский штаб даст "
+"возможность нанести артудар по определённому участку территории, а Узел "
+"связи поможет обнаружить всю технику противника. В зависимости от карты, "
+"наличие и расположение ключевых позиций может меняться."
+
+msgid "intro/description/roleSkills"
+msgstr ""
+"В зависимости от роли, у каждой машины есть особый навык с тремя уровнями заряда. Чем выше уровень заряда в момент активации навыка, тем сильнее будет его действие. На уровень заряда влияет количество очков престижа, которые можно получить за результативные действия в бою, захват ключевых позиций, использование тактических навыков и т.д.\n"
+"\n"
+"Все способы заработка очков престижа можно узнать в регламенте события."
+
+msgid "intro/description/vehiclesOnMap"
+msgstr ""
+"Выйти в бой можно только на технике %(levels)s уровня (САУ и некоторые "
+"другие машины недоступны). Готовьте технику в Ангаре и выбирайте подходящую "
+"прямо в бою, учитывая особенности игровой карты. Старайтесь подстраиваться "
+"под выбор техники союзников."
+
+msgid "intro/title/lightGameplay"
+msgstr "РАССЛАБЬТЕСЬ, КОМАНДИР"
+
+msgid "intro/title/onslaughtModifiers"
+msgstr "МОДИФИКАТОРЫ «НАТИСКА»"
+
+msgid "intro/title/pointsOfInterest"
+msgstr "КЛЮЧЕВЫЕ ПОЗИЦИИ"
+
+msgid "intro/title/roleSkills"
+msgstr "РОЛЕВЫЕ НАВЫКИ"
+
+msgid "intro/title/vehiclesOnMap"
+msgstr "ВЫБИРАЙТЕ МАШИНУ ДЛЯ КОНКРЕТНОЙ КАРТЫ"
+
+msgid "leaderboardRewardTooltip/column/0"
+msgstr "?empty?"
+
+msgid "leaderboardRewardTooltip/column/1"
+msgstr "Победа"
+
+msgid "leaderboardRewardTooltip/column/2"
+msgstr "Поражение/Ничья"
+
+msgid "leaderboardRewardTooltip/description/completed"
+msgstr "Отличная работа, командир, так держать!"
+
+msgid "leaderboardRewardTooltip/description/inProgress"
+msgstr ""
+"Сражайтесь в режиме «Натиск Лайт», выполняйте задачи и занимайте первые "
+"места, чтобы продвигаться по прогрессии."
+
+msgid "leaderboardRewardTooltip/description/simplified"
+msgstr ""
+"Количество заработанных очков прогрессии зависит от вашего места в бою по "
+"очкам престижа."
+
+msgid "leaderboardRewardTooltip/eventEnds"
+msgstr "Завершение режима в %(countdown)s"
+
+msgid "leaderboardRewardTooltip/heading/completed"
+msgstr "Основная прогрессия пройдена"
+
+msgid "leaderboardRewardTooltip/modeName"
+msgstr "Натиск Лайт"
+
+msgid "leaderboardRewardTooltip/top/0"
+msgstr "Топ-2 по очкам престижа"
+
+msgid "leaderboardRewardTooltip/top/1"
+msgstr "Топ-5 по очкам престижа"
+
+msgid "leaderboardRewardTooltip/top/2"
+msgstr "Топ-7 по очкам престижа"
+
+msgid "listSeparator"
+msgstr ", "
+
+msgid "noVehicles/howTo/premium"
+msgstr "Используйте Танковый премиум аккаунт"
+
+msgid "noVehicles/howTo/reserves"
+msgstr "Активируйте личные резервы"
+
+msgid "noVehicles/howTo/tasks"
+msgstr "Выполняйте боевые задачи"
+
+msgid "noVehicles/howTo/title"
+msgstr "Как быстрее получить технику %(levels)s уровня?"
+
+msgid "noVehicles/text/vehicleAvailableForBuy"
+msgstr ""
+"Для участия в «Натиске Лайт» в Ангаре должна быть хотя бы одна машина %(levels)s уровня, подходящая для игры в режиме.\n"
+"Вы можете купить премиум технику %(levels)s уровня в Дереве исследований или внутриигровом Магазине."
+
+msgid "noVehicles/text/vehicleAvailableForRestore"
+msgstr ""
+"Для участия в «Натиске Лайт» в Ангаре должна быть хотя бы одна машина %(levels)s уровня, подходящая для игры в режиме.\n"
+"У вас есть техника %(levels)s уровня, доступная для восстановления."
+
+msgid "noVehicles/text/vehicleUnavailable"
+msgstr ""
+"Для участия в «Натиске Лайт» в Ангаре должна быть хотя бы одна машина "
+"%(levels)s уровня, подходящая для игры в режиме."
+
+msgid "noVehicles/title"
+msgstr "В Ангаре нет подходящей техники"
+
+msgid "primeTimeView/status/seasonDisabled/first"
+msgstr "Сезон на сервере %(server)s завершился."
+
+msgid "primeTimeView/status/seasonDisabled/second"
+msgstr "Сезон на сервере %(server)s завершился."
+
+msgid "primeTimeView/status/seasonDisabled/third"
+msgstr "Сезон на сервере %(server)s завершился."
+
+msgid "progressionEntryPoint/complete"
+msgstr "Основная прогрессия пройдена!"
+
+msgid "progressionEntryPoint/counter"
+msgstr "%(current)s%(divider)s%(total)s"
+
+msgid "progressionEntryPoint/stage"
+msgstr "Этап %(current)s"
+
+msgid "progressionView/battleQuests/multiConditions"
+msgstr "%(firstCondition)s или %(secondCondition)s"
+
+msgid "progressionView/battleQuests/oneCondition"
+msgstr "%(firstCondition)s"
+
+msgid "progressionView/battleQuests/timer/completed/text"
+msgstr "Новые задачи через:"
+
+msgid "progressionView/battleQuests/timer/eventEnds"
+msgstr "До завершения события:"
+
+msgid "progressionView/battleQuests/timer/inProgress/text"
+msgstr "Задачи обновятся через"
+
+msgid "progressionView/battleQuests/timer/title"
+msgstr "Все ежедневные задачи выполнены."
+
+msgid "progressionView/card/points"
+msgstr "%(current)s/%(total)s"
+
+msgid "progressionView/subTitle/completed"
+msgstr ""
+"Прогрессия пройдена. Продолжайте сражаться в «Натиске Лайт», чтобы "
+"заработать ещё больше наград."
+
+msgid "progressionView/subTitle/inProgress"
+msgstr ""
+"Сражайтесь в режиме «Натиск Лайт», выполняйте задачи и занимайте первые "
+"места, чтобы продвигаться по прогрессии. %(infotip)s"
+
+msgid "quests/bonuses/progressionToken/body"
+msgstr ""
+"Выдаются за сражения и выполнение задач в режиме «Натиск Лайт». Необходимы "
+"для продвижения по прогрессии."
+
+msgid "quests/bonuses/progressionToken/header"
+msgstr "Очки прогрессии режима «Натиск Лайт»"
+
+msgid "selectorTooltip/desc"
+msgstr "Режим без рангов: 7×7 | %(tier)s уровень"
+
+msgid "selectorTooltip/title"
+msgstr "Натиск Лайт"
+
+msgid "selectorTooltip/unavailable/finished"
+msgstr ""
+"Следите за новостями на портале игры, чтобы не пропустить информацию о "
+"начале нового сезона."
+
+msgid "selectorTooltip/unavailable/frozen"
+msgstr "Режим временно недоступен по техническим причинам."
+
+msgid "selectorTooltip/unavailable/nextSeason"
+msgstr "Режим станет доступен %(time)s"
+
+msgid "serviceChannelMessages/battleResults/progressionPoints"
+msgstr "Получены очки прогрессии"
+
+msgid "serviceChannelMessages/progressionButton"
+msgstr "Подробнее"
+
+msgid "serviceChannelMessages/progressionName"
+msgstr "Натиск Лайт"
+
+msgid "serviceChannelMessages/progressionSystem/awards"
+msgstr "Получены награды:"
+
+msgid "serviceChannelMessages/progressionSystem/body"
+msgstr "Вы прошли %(stage)s-й этап прогрессии режима «%(progressionName)s»."
+
+msgid "serviceChannelMessages/progressionSystem/header"
+msgstr "Поздравляем!"
+
+msgid "system_messages/primeTime/end/body"
+msgstr ""
+"Бои в режиме «Натиск Лайт» недоступны до окончания режима прекращения огня."
+
+msgid "system_messages/primeTime/end/title"
+msgstr "Режим прекращения огня"
+
+msgid "system_messages/primeTime/start/body"
+msgstr ""
+"Бои в режиме «Натиск Лайт» снова доступны. Режим прекращения огня окончен."
+
+msgid "system_messages/primeTime/start/title"
+msgstr "Режим прекращения огня"
+
+msgid "tooltip/infoPageButton/header"
+msgstr "О «Натиске Лайт»"

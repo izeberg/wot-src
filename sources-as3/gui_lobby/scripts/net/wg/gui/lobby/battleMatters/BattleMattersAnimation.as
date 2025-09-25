@@ -14,7 +14,7 @@ package net.wg.gui.lobby.battleMatters
       private static const _locale:ILocale = App.utils.locale;
       
       private static const ITEMS:Object = {
-         "btnFight":MENU.HEADERBUTTONS_BATTLE,
+         "btnFight":MENU.HEADERBUTTONS_BATTLE_BUTTON_BATTLE,
          "btnApply":VEH_COMPARE.VEHCONF_APPLYBTNLABEL,
          "btnCancel":VEH_COMPARE.VEHCONF_CANCELBTNLABEL,
          "textHangar":_locale.makeString(MENU.HEADERBUTTONS_HANGAR).toUpperCase(),

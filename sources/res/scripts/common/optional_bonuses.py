@@ -99,6 +99,9 @@ def __mergeTokens(total, key, value, isLeaf=False, count=1, *args):
     for tokenID, tokenData in value.iteritems():
         total = totalTokens.setdefault(tokenID, {'count': 0, 'expires': {}, 'limit': 0})
         total['count'] += count * tokenData.get('count', 1)
+        if total['count'] == 0:
+            totalTokens.pop(tokenID)
+            continue
         if not total['expires']:
             total['expires'] = tokenData['expires']
         if 'limit' in tokenData:
@@ -336,7 +339,7 @@ DEEP_CHECKERS = {'groups': lambda nodeAcceptor, bonusNode, checkInventory, depth
 
 class BonusNodeAcceptor(object):
 
-    def __init__(self, account, bonusConfig=None, counters=None, bonusCache=None, probabilityStage=0, logTracker=None, shouldResetUsedLimits=True, dropInGroupHistory=None):
+    def __init__(self, account, bonusConfig=None, counters=None, bonusCache=None, probabilityStage=0, logTracker=None, shouldResetUsedLimits=True, dropInGroupHistory=None, trackedByNameSections=None):
         self.__account = account
         self.__limitsConfig = bonusConfig.get('limits', None) if bonusConfig else None
         self.__maxStage = bonusConfig.get('probabilityStageCount', 1) - 1 if bonusConfig else 0
@@ -358,6 +361,7 @@ class BonusNodeAcceptor(object):
         self.__initCounters(counters or {})
         self.__dropInGroupsBonuses = dropInGroupHistory or {}
         self.__dropInGroupsBonusesLimit = bonusConfig.get('dropInGroupItemsCount', 0) if bonusConfig else 0
+        self.__trackedByNameSections = trackedByNameSections if trackedByNameSections is not None else {}
         return
 
     def __initCounters(self, counters):
@@ -390,13 +394,20 @@ class BonusNodeAcceptor(object):
     def getBonusCache(self):
         return self.__bonusCache
 
+    def getTrackedByNameSections(self):
+        return self.__trackedByNameSections
+
     def isAcceptable(self, bonusNode, checkInventory=True, depthLevel=None):
         if self.isLimitReached(bonusNode):
             return False
-        dropInGroup = bonusNode.get('properties', {}).get('dropInGroup', False)
+        bonusNodeProperties = bonusNode.get('properties', {})
+        dropInGroup = bonusNodeProperties.get('dropInGroup', False)
         if self.isBonusesInSameGroupAlreadyPicked(bonusNode):
             return False
-        if checkInventory and not dropInGroup and self.isBonusExists(bonusNode):
+        if self.isSectionTrackedByNameLimitReached(bonusNodeProperties):
+            return False
+        trackedByNameLimit = bonusNodeProperties.get('trackedByNameLimit')
+        if checkInventory and not (dropInGroup or trackedByNameLimit) and self.isBonusExists(bonusNode):
             return False
         return self.depthCheck(bonusNode, checkInventory, depthLevel)
 
@@ -499,6 +510,26 @@ class BonusNodeAcceptor(object):
                 c11nItem = getCustomizationItem(customization['custType'], customization['id'])[0]
                 cache.add(c11nItem.compactDescr)
 
+    def isSectionTrackedByNameLimitReached(self, bonusNodeProperties):
+        if not self.__trackedByNameSections:
+            return False
+        else:
+            trackedByNameLimit = bonusNodeProperties.get('trackedByNameLimit')
+            if trackedByNameLimit is None:
+                return False
+            previousLimitValue = self.__trackedByNameSections.get(bonusNodeProperties.get('name'), 0)
+            if previousLimitValue < trackedByNameLimit:
+                return False
+            return True
+
+    def updateTrackedByNameSections(self, bonusNodeProperties):
+        if bonusNodeProperties.get('trackedByNameLimit') is None:
+            return
+        else:
+            bonusNodeName = bonusNodeProperties.get('name', '')
+            self.__trackedByNameSections[bonusNodeName] = self.__trackedByNameSections.get(bonusNodeName, 0) + 1
+            return
+
     def depthCheck(self, bonusNode, checkInventory, depthLevel=None):
         currentDepthLevel = bonusNode.get('properties', {}).get('depthLevel', 0) if depthLevel is None else depthLevel
         if currentDepthLevel <= 0:
@@ -554,9 +585,10 @@ class BonusNodeAcceptor(object):
             return self.__logTracker.generateInfo(beginStage, endStage, stagesCount, usedLimits)
 
     def accept(self, bonusNode):
-        if bonusNode.get('properties', {}).get('probabilityStageDependence', False):
+        bonusNodeProperties = bonusNode.get('properties') or {}
+        if bonusNodeProperties.get('probabilityStageDependence', False):
             self.__increaseProbabilityStage()
-        limitID = bonusNode.get('properties', {}).get('limitID', None)
+        limitID = bonusNodeProperties.get('limitID', None)
         if limitID:
             limitConfig = self.__limitsConfig[limitID]
             if not limitConfig.get('countDuplicates', True) and self.isBonusExists(bonusNode):
@@ -571,6 +603,7 @@ class BonusNodeAcceptor(object):
                 self.__bonusProbabilityUses[limitID] = 0
         self.updateBonusCache(bonusNode)
         self.updateBonusesInSameGroup(bonusNode)
+        self.updateTrackedByNameSections(bonusNodeProperties)
         return
 
     def reuse(self):

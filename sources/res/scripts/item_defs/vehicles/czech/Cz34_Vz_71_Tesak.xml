@@ -97,7 +97,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>8112</weight>
-		<maxHealth>1120</maxHealth>
+		<maxHealth>1320</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -1906,13 +1906,6 @@
 				<showOn>16</showOn>
 				<clipAngle>0.843381</clipAngle>
 			</slot>
-			<slot>
-				<slotType>statTracker</slotType>
-				<slotId>18000</slotId>
-				<position>-1.345167 0.259594 2.870373</position>
-				<rotation>-0 -0 0</rotation>
-				<scale>1 1 1</scale>
-			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1938,7 +1931,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>4000</weight>
-			<maxLoad>19000</maxLoad>
 			<terrainResistance>
 				0.8 0.9 1.8
 				<!--BW_String-->
@@ -2294,7 +2286,10 @@
 				<slot>
 					<slotType>paint</slotType>
 					<slotId>21000</slotId>
-					<anchorPosition>-1.586573 0.325764 0.053801</anchorPosition>
+					<anchorPosition>
+						-1.586573 0.42800 0.053801
+						<!--BW_String-->
+					</anchorPosition>
 					<anchorDirection>
 						-0.945614 0.3239 0.030048
 						<!--BW_String-->
@@ -4028,7 +4023,7 @@
 	<turrets0>
 		<Turret_1_Cz34_Vz_71_Tesak>
 			<userString>#czech_vehicles:Turret_1_Cz34_Vz_71_Tesak</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>10</level>
 			<price>66000</price>
 			<notInShop>true</notInShop>
@@ -4052,7 +4047,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_17 armor_4</primaryArmor>
 			<weight>2500</weight>
-			<maxHealth>280</maxHealth>
+			<maxHealth>330</maxHealth>
 			<rotationSpeed>60</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -4074,7 +4069,7 @@
 			<guns>
 				<_57_mm_automaticky_dvojkanon_535T>
 					shared
-					<maxAmmo>1200</maxAmmo>
+					<maxAmmo>1024</maxAmmo>
 					<armor>
 						<armor_1>30</armor_1>
 						<armor_2>20</armor_2>
@@ -4105,7 +4100,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>2</aimingTime>
-					<reloadTime>15</reloadTime>
+					<reloadTime>17</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -30 1 -30</minPitch>
 						<maxPitch>
@@ -4118,7 +4113,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<clip>
-						<count>75</count>
+						<count>64</count>
 						<rate>1200</rate>
 					</clip>
 					<autoShoot>

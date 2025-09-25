@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from fun_random.gui.feature.fun_constants import FEP_PROGRESSION_TRIGGER_QUEST_ID, PROGRESSION_COUNTER_TEMPLATE, FEP_PROGRESSION_ALT_TRIGGER_QUEST_ID, FEP_PROGRESSION_UNLIMITED_TRIGGER_QUEST_ID, FEP_PROGRESSION_UNLIMITED_ALT_TRIGGER_QUEST_ID, PROGRESSION_UNLIMITED_COUNTER_TEMPLATE
 from fun_random.gui.feature.util.fun_helpers import getProgressionNameByTrigger, getIdByTrigger, isFunProgressionTrigger, isFunProgressionUnlimitedTrigger
 from fun_random.gui.feature.util.fun_mixins import FunProgressionWatcher
@@ -64,7 +66,7 @@ class FunProgressionTriggerQuest(Quest, FunProgressionWatcher):
     def getBonusCounterNumber(self):
         bonuses = self.getBonuses('tokens')
         for bonus in bonuses:
-            for tID, data in bonus.getTokens().iteritems():
+            for tID, data in viewitems(bonus.getTokens()):
                 if tID == self.__counterName:
                     return data.count
 

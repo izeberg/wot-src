@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random_common.fun_constants import ARENA_GUI_TYPE
 from fun_random.gui.ingame_help import HelpPagePriority
 from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher
@@ -23,7 +24,7 @@ class FunRandomHelpPagesBuilder(DetailedHelpPagesBuilder, FunSubModesWatcher):
         localsRoot = battleSubMode.getLocalsResRoot()
         commonTitle = backport.text(localsRoot.detailsHelpTitle())
         for pageID, pageRes in sorted(localsRoot.detailsHelp.items()):
-            addPage(pages, commonTitle, backport.text(pageRes.title()), text_styles.mainBig(backport.text(pageRes.description())), [], [], backport.image(iconsRoot.battle_help.dyn(pageID)()), hintCtx=HelpHintContext.FUN_RANDOM)
+            addPage(pages, commonTitle, backport.text(pageRes.title()), text_styles.mainBig(backport.text(pageRes.description())), [], backport.image(iconsRoot.battle_help.dyn(pageID)()), hintCtx=HelpHintContext.FUN_RANDOM)
 
         return pages
 

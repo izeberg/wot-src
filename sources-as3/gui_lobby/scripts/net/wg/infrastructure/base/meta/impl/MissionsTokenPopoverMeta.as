@@ -2,7 +2,7 @@ package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
    import net.wg.gui.lobby.missions.data.MissionsTokenPopoverVO;
-   import net.wg.gui.lobby.missions.data.TokenRendererVO;
+   import net.wg.gui.lobby.userMissions.data.TokenRendererVO;
    import net.wg.infrastructure.base.SmartPopOverView;
    import net.wg.infrastructure.exceptions.AbstractException;
    import scaleform.clik.data.DataProvider;

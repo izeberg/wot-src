@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>86400.007812</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_014_HouseholdAppliance/normal/lod0/hv4_014_HouseholdAppliance_03.model</resource>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ClockHour</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_014_HouseholdAppliance/normal/lod0/hv4_014_HouseholdAppliance_03_01.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 155.000000</value>
+				<inTangent>0.000000 0.000000 -0.008333</inTangent>
+				<outTangent>0.000000 0.000000 -0.008333</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>86400.007812</startTime>
+				<value>0.000000 0.000000 -565.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.008333</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.008333</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>ClockMinute</name>
+		<type>model</type>
+		<resource>content/Hangars/hangar_v4/Environment/hv4_014_HouseholdAppliance/normal/lod0/hv4_014_HouseholdAppliance_03_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>rotationEuler</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 0.000000 -90.000000</value>
+				<inTangent>0.000000 0.000000 -0.100000</inTangent>
+				<outTangent>0.000000 0.000000 -0.100000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>86400.007812</startTime>
+				<value>0.000000 0.000000 -8730.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.100000</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.100000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

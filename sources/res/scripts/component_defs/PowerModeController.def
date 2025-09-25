@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<stateStatus>
+			<Type>POWER_MODE_STATE_STATUS</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</stateStatus>
+		<timeInfo>
+			<Type>POWER_MODE_TIME_INFO</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</timeInfo>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+	<DefaultKeyName>powerModeController</DefaultKeyName>
+</root>

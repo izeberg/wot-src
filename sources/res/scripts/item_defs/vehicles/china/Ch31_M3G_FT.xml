@@ -2054,7 +2054,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>13500</maxLoad>
 			<terrainResistance>
 				1.8 2.1 2.9
 				<!--BW_String-->
@@ -4363,7 +4362,6 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>15000</maxLoad>
 			<terrainResistance>
 				1.7 1.9 2.7
 				<!--BW_String-->
@@ -6658,7 +6656,7 @@
 		<Turret_1_Ch31_M3G_FT>
 			<ceilless>true</ceilless>
 			<userString>#china_vehicles:Turret_1_Ch31_M3G_FT</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -6696,10 +6694,12 @@
 						<armor_1>
 							9
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_1>
 						<armor_2>
 							5
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_2>
 						<armor_3>5</armor_3>
 						<armor_4>5</armor_4>
@@ -7146,7 +7146,7 @@
 		<Turret_2_Ch31_M3G_FT>
 			<ceilless>true</ceilless>
 			<userString>#china_vehicles:Turret_2_Ch31_M3G_FT</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>3</level>
 			<price>100</price>
 			<notInShop>true</notInShop>
@@ -7188,10 +7188,12 @@
 						<armor_1>
 							10
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_1>
 						<armor_2>
 							5
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_2>
 						<armor_3>5</armor_3>
 						<armor_4>5</armor_4>

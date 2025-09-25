@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G187_Taschenratte/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G187_Taschenratte/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.656733 -0.449864 -2.189456</min>
+		<max>0.653659 0.580924 6.873005</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -1,6 +1,5 @@
 from enum import IntEnum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.common.personal_reserves.reserves_group_model import ReservesGroupModel
 
 class TabAlias(IntEnum):

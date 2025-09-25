@@ -70,6 +70,12 @@ msgstr "Фиксация корпуса / смена режима стрельб
 msgid "battleControls/title"
 msgstr "В режиме боя"
 
+msgid "battleControls/toggleAFL"
+msgstr "Включить/отключить подсветку брони"
+
+msgid "battleControls/toggleAFL/ext"
+msgstr "доступно только в снайперском режиме"
+
 msgid "battleControls/toggleLockTarget"
 msgstr "Включить/выключить автоприцел"
 
@@ -163,14 +169,6 @@ msgstr "Модель техники / Имя игрока"
 msgid "crosshairControls/title"
 msgstr "Прицел и маркер орудия"
 
-msgid "detailsHelp/autoShootGun/mechanics"
-msgstr ""
-"Разновидность автоматического орудия с высоким темпом стрельбы. Специальный "
-"индикатор в круге сведения обозначает эффективность ведения огня."
-
-msgid "detailsHelp/autoShootGun/mechanics/title"
-msgstr "Автоматическое орудие"
-
 msgid "detailsHelp/battleRoyale/airDrop/description"
 msgstr ""
 "Ищите добычу, обозначенную дымами. В зелёных содержатся снаряды и заряд "
@@ -234,26 +232,17 @@ msgstr "Особенности карты"
 
 msgid "detailsHelp/devMaps/markers/description"
 msgstr ""
-"Место случайного события будет отмечено дымами на карте и маркером на мини-карте.\n"
-"Карты в разработке можно отключить в настройках во вкладке «Игра» (блок «Типы Случайных боёв»)."
+"Место случайного события будет отмечено\n"
+"дымами на карте и маркером на мини-карте.\n"
+"Карты со случайными событиями можно отключить в настройках во вкладке «Игра»."
 
 msgid "detailsHelp/devMaps/title"
-msgstr "Бета-версии случайных событий"
+msgstr "Карты со случайными событиями"
 
 msgid "detailsHelp/devMaps/zone/description"
 msgstr ""
-"В зоне случайного события (например, в месте крушения самолёта) ваша техника может быть уничтожена.\n"
-"Карты в разработке можно отключить в настройках во вкладке «Игра» (блок «Типы Случайных боёв»)."
-
-msgid "detailsHelp/dualAccuracy/mechanics"
-msgstr ""
-"Если после выстрела орудие достаточно остыло, его разброс уменьшится. При "
-"этом появится второй круг сведения меньшего диаметра, которым и будет "
-"определена зона попадания снарядов. Эффект сохраняется до следующего "
-"выстрела."
-
-msgid "detailsHelp/dualAccuracy/mechanics/title"
-msgstr "Двойное сведение"
+"Ваша машина может быть уничтожена в области случайного события (например, во время крушения самолёта).\n"
+"Карты со случайными событиями можно отключить в настройках во вкладке «Игра»."
 
 msgid "detailsHelp/dualGun/quick_fire"
 msgstr ""
@@ -305,31 +294,264 @@ msgstr ""
 msgid "detailsHelp/mapbox/localWeather/title"
 msgstr "Местная погода"
 
+msgid "detailsHelp/mechanics/accuracyStacks/page1/description"
+msgstr ""
+"Оставаясь неподвижным или двигаясь медленнее определённой скорости, вы можете откалибровать аналоговый баллистический вычислитель вашей машины и набрать уровни точности.\n"
+"Каждый уровень повышает точность и сбрасывается после выстрела."
+
+msgid "detailsHelp/mechanics/accuracyStacks/page1/title"
+msgstr "Аналоговый баллистический вычислитель"
+
+msgid "detailsHelp/mechanics/accuracyStacks/page2/description"
+msgstr ""
+"При полной калибровке ваша машина достигает максимального уровня точности и получает хорошую стабилизацию орудия с уменьшенным разбросом при движении или повороте корпуса/башни.\n"
+"Эффект сбрасывается после выстрела."
+
+msgid "detailsHelp/mechanics/accuracyStacks/page2/title"
+msgstr "Полная калибровка"
+
+msgid "detailsHelp/mechanics/autoShootGun/page1/description"
+msgstr ""
+"Разновидность автоматического орудия с высоким темпом стрельбы. Специальный "
+"индикатор в круге сведения обозначает эффективность ведения огня."
+
+msgid "detailsHelp/mechanics/autoShootGun/page1/title"
+msgstr "Автоматическое орудие"
+
+msgid "detailsHelp/mechanics/battleFury/page1/description"
+msgstr ""
+"При каждом попадании по противнику вы получаете уровень эффективности перезарядки, временно ускоряющий перезарядку вашего орудия.\n"
+"При уничтожении машины противника вы получаете дополнительные уровни эффективности перезарядки."
+
+msgid "detailsHelp/mechanics/battleFury/page1/title"
+msgstr "Полуавтоматическая боеукладка"
+
+msgid "detailsHelp/mechanics/chargeShot/page1/description"
+msgstr ""
+"При заряженном орудии вы можете начать нагревать ваш следующий снаряд. Чем выше уровень нагрева, тем больше бонус к среднему урону.\n"
+"Чтобы запустить процесс нагрева, нажмите клавишу"
+
+msgid "detailsHelp/mechanics/chargeShot/page1/title"
+msgstr "Термобаллистическая перегрузка"
+
+msgid "detailsHelp/mechanics/chargeShot/page2/description"
+msgstr ""
+"По достижении максимального уровня нагрева начинается отсчёт. Если не "
+"удастся выстрелить до его окончания, вы не сможете стрелять ещё несколько "
+"секунд."
+
+msgid "detailsHelp/mechanics/chargeShot/page2/title"
+msgstr "Перегрев заряда"
+
+msgid "detailsHelp/mechanics/chargeableBurst/page1/description"
+msgstr ""
+"После двух попаданий с пробитием техники противника активируется режим "
+"очереди, который заряжает кассету, позволяющую вам совершить два быстрых "
+"выстрела подряд."
+
+msgid "detailsHelp/mechanics/chargeableBurst/page1/title"
+msgstr "Режим очереди"
+
+msgid "detailsHelp/mechanics/concentrationMode/page1/description"
+msgstr ""
+"Пневматический гиростабилизатор на короткое время обеспечивает максимальную стабилизацию во время поворота корпуса и башни, что позволяет более точно стрелять на ходу и быстрее реагировать на угрозы.\n"
+"Для активации нажмите клавишу: "
+
+msgid "detailsHelp/mechanics/concentrationMode/page1/title"
+msgstr "Пневматический гиростабилизатор"
+
+msgid "detailsHelp/mechanics/dualAccuracy/page1/description"
+msgstr ""
+"Если после выстрела орудие достаточно остыло, его разброс уменьшится. При "
+"этом появится второй круг сведения меньшего диаметра, которым и будет "
+"определена зона попадания снарядов. Эффект сохраняется до следующего "
+"выстрела."
+
+msgid "detailsHelp/mechanics/dualAccuracy/page1/title"
+msgstr "Двойное сведение"
+
+msgid "detailsHelp/mechanics/extraShotClip/page1/description"
+msgstr ""
+"Система автоматически начинает заряжать новую кассету, когда в текущей остаётся один снаряд.\n"
+"Если в процессе выстрелить последним снарядом, ко времени перезарядки добавится несколько секунд."
+
+msgid "detailsHelp/mechanics/extraShotClip/page1/title"
+msgstr "Кассетная система заряжания"
+
+msgid "detailsHelp/mechanics/improvedRamming/page1/description"
+msgstr ""
+"Эта машина скомпонована специально для атак тараном. Набор конструктивных "
+"модификаций позволяет ей наносить больше урона при таране."
+
+msgid "detailsHelp/mechanics/improvedRamming/page1/title"
+msgstr "Таранная компоновка"
+
+msgid "detailsHelp/mechanics/overheatStacks/page1/description"
+msgstr ""
+"Оставаясь неподвижным или двигаясь медленнее определённой скорости, вы набираете преднагрев, который увеличивает средний урон и точность вашего следующего выстрела.\n"
+"Превышение указанной скорости постепенно снижает значение бонуса, а выстрел или смена типа снаряда мгновенно сбрасывает его."
+
+msgid "detailsHelp/mechanics/overheatStacks/page1/title"
+msgstr "Система термоконтроля боезаряда"
+
+msgid "detailsHelp/mechanics/overheatStacks/page2/description"
+msgstr ""
+"На максимальном уровне преднагрева попадание с пробитием техники противника,"
+" у которой меньше очков прочности, чем ваш средний урон (включая бонус от "
+"преднагрева) вызывает подрыв боекомплекта, что мгновенно уничтожает машину."
+
+msgid "detailsHelp/mechanics/overheatStacks/page2/title"
+msgstr "Решающий урон"
+
+msgid "detailsHelp/mechanics/powerMode/page1/description"
+msgstr ""
+"Прямая передача даёт значительный бонус к мощности двигателя и максимальной "
+"скорости движения вперёд. Чем дольше вы едете вперёд, тем больший прирост "
+"скорости получаете, что позволяет с лёгкостью перемещаться по полю боя."
+
+msgid "detailsHelp/mechanics/powerMode/page1/title"
+msgstr "Прямая передача"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page1/description"
+msgstr ""
+"Жидкотопливный ускоритель даёт быстрый бонус к мощности двигателя, что позволяет вам быстро перемещаться по полю боя, но ограничивает скорость движения задним ходом и скорость поворота корпуса.\n"
+"Для активации нажмите или удерживайте клавишу"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page1/title"
+msgstr "Жидкотопливный ускоритель"
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page2/description"
+msgstr ""
+"По критическом уровне нагрева ускорители будут полностью отключены до "
+"остывания. Планируйте свои действия, чтобы не оказаться застигнутым "
+"врасплох."
+
+msgid "detailsHelp/mechanics/rechargeableNitro/page2/title"
+msgstr "Критический уровень нагрева"
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page1/description"
+msgstr ""
+"Использование реактивных ускорителей повышает показатели мобильности машины."
+" Это позволяет быстрее занимать выгодные позиции или оперативно преодолевать"
+" опасные участки местности. Активировать ускорители можно на определённое "
+"время и ограниченное количество раз за бой. Отключить их нельзя, так же, как"
+" и вывести из строя."
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page1/title"
+msgstr "Реактивные ускорители"
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page2/description"
+msgstr ""
+"При активации реактивных ускорителей увеличиваются мощность двигателя и "
+"максимальная скорость вперёд, однако машина становится менее манёвренной и "
+"теряет скорость заднего хода."
+
+msgid "detailsHelp/mechanics/rocketAcceleration/page2/title"
+msgstr "Преимущества и недостатки"
+
+msgid "detailsHelp/mechanics/stanceDance/page1/description"
+msgstr ""
+"У машины есть два режима: турбо и боевой. Между ними можно переключаться в любое время. Тактическая силовая установка накапливает энергию для активного режима.\n"
+"Для переключения между режимами нажмите клавишу"
+
+msgid "detailsHelp/mechanics/stanceDance/page1/title"
+msgstr "Два режима"
+
+msgid "detailsHelp/mechanics/stanceDance/page2/description"
+msgstr ""
+"При полной зарядке тактической силовой установки становится доступна способность режима. Её применение поглощает всю накопленную энергию и даёт существенные бонусы на короткое время.\n"
+"Для активации уникальной способности режима нажмите клавишу"
+
+msgid "detailsHelp/mechanics/stanceDance/page2/title"
+msgstr "Способности режимов"
+
+msgid "detailsHelp/mechanics/stationaryReload/page1/description"
+msgstr ""
+"Модуль внешней подачи боеприпасов позволяет вам прервать перезарядку и "
+"начать стрелять в любое время, если у вас остался заряженным хотя бы один "
+"снаряд. Чтобы прервать или продолжить процесс перезарядки, нажмите клавишу"
+
+msgid "detailsHelp/mechanics/stationaryReload/page1/title"
+msgstr "Модуль внешней подачи боеприпасов"
+
+msgid "detailsHelp/mechanics/stationaryReload/page2/description"
+msgstr ""
+"Во время перезарядки модуль блокирует башню машины и внешние контейнеры со "
+"снарядами, что не позволяет вам целиться и стрелять без прерывания процесса "
+"в течение определённого периода."
+
+msgid "detailsHelp/mechanics/stationaryReload/page2/title"
+msgstr "Модуль внешней подачи боеприпасов"
+
+msgid "detailsHelp/mechanics/supportWeapon/page1/description"
+msgstr ""
+"Машина оснащена набором вспомогательных орудий, которые обладают собственным"
+" циклом перезарядки, что позволяет наносить дополнительный урон, когда это "
+"необходимо. Для активации вспомогательных орудий нажмите клавишу"
+
+msgid "detailsHelp/mechanics/supportWeapon/page1/title"
+msgstr "Вспомогательные орудия"
+
+msgid "detailsHelp/mechanics/targetDesignator/page1/description"
+msgstr ""
+"Лазерный целеуказатель добавляет специальный эффект к вашему следующему выстрелу, который применяется к машине противника, в которую вы попадёте. Эффект отличается в зависимости от того, была ли техника противника обнаружена в момент попадания.\n"
+"Для активации лазерного целеуказателя нажмите клавишу"
+
+msgid "detailsHelp/mechanics/targetDesignator/page1/title"
+msgstr "Лазерный целеуказатель"
+
+msgid "detailsHelp/mechanics/targetDesignator/page2/description"
+msgstr ""
+"Попадание по обнаруженной машине противника отметит её, из-за чего она будет получать больше урона от снарядов и дольше оставаться видимой.\n"
+"Попадание по необнаруженной технике подсветит её местоположение специальным маркером."
+
+msgid "detailsHelp/mechanics/targetDesignator/page2/title"
+msgstr "Целеуказание"
+
+msgid "detailsHelp/mechanics/twinGun/page1/description"
+msgstr ""
+"Вы можете переключаться между одиночным и залповым режимом огня в "
+"зависимости от тактической ситуации на поле боя."
+
+msgid "detailsHelp/mechanics/twinGun/page1/title"
+msgstr "Механика переключения режима огня"
+
+msgid "detailsHelp/mechanics/twinGun/page2/description"
+msgstr ""
+"Залповый режим удваивает как урон, так и время перезарядки, а также "
+"увеличивает разброс на 100 м*."
+
+msgid "detailsHelp/mechanics/twinGun/page2/title"
+msgstr "Преимущества и недостатки"
+
 msgid "detailsHelp/noKey"
 msgstr "НЕ НАЗНАЧЕНО"
 
 msgid "detailsHelp/noKeysWarning"
 msgstr "Ключевые клавиши не назначены. Назначьте их в настройках игры."
 
-msgid "detailsHelp/rocketAcceleration/page1"
+msgid "detailsHelp/pillboxSiege/mechanics/page1"
 msgstr ""
-"Использование реактивных ускорителей повышает показатели мобильности машины."
-" Это позволяет быстрее занимать выгодные позиции или оперативно преодолевать"
-" опасные участки местности. Активировать ускорители можно на определённое "
-"время и ограниченное количество раз за бой. Отключить их нельзя, так же как "
-"и вывести из строя."
+"В этом режиме существенно улучшаются разброс орудия, скорость перезарядки и "
+"углы вертикального наведения, однако мобильность (максимальная скорость "
+"переднего/заднего хода и скорость горизонтального/вертикального наведения) "
+"значительно ограничена. Для активации режима %(pressAndHold)s клавишу"
 
-msgid "detailsHelp/rocketAcceleration/page1/title"
-msgstr "Реактивные ускорители"
+msgid "detailsHelp/pillboxSiege/mechanics/page1/pressAndHold"
+msgstr "нажмите и удерживайте"
 
-msgid "detailsHelp/rocketAcceleration/page2"
+msgid "detailsHelp/pillboxSiege/mechanics/page1/title"
+msgstr "Укреплённый режим"
+
+msgid "detailsHelp/pillboxSiege/mechanics/page2"
 msgstr ""
-"При активации реактивных ускорителей увеличивается мощность двигателя и "
-"максимальная скорость вперёд, однако машина становится менее манёвренной и "
-"теряет скорость заднего хода."
+"В этом режиме улучшаются разброс орудия, скорость сведения и углы "
+"вертикального наведения, однако мобильность (максимальная скорость "
+"переднего/заднего хода) становится ограниченной. Для активации режима "
+"нажмите клавишу"
 
-msgid "detailsHelp/rocketAcceleration/page2/title"
-msgstr "Преимущества и недостатки"
+msgid "detailsHelp/pillboxSiege/mechanics/page2/title"
+msgstr "Осадный режим"
 
 msgid "detailsHelp/role/description"
 msgstr "Получайте бонус к опыту, выполняя ролевые действия:"
@@ -344,22 +566,6 @@ msgstr ""
 
 msgid "detailsHelp/trackWithinTrack/title"
 msgstr "Резервная гусеница"
-
-msgid "detailsHelp/twinGun/mechanics/page1"
-msgstr ""
-"Вы можете переключаться между одиночным и залповым режимом огня в "
-"зависимости от тактической ситуации на поле боя."
-
-msgid "detailsHelp/twinGun/mechanics/page1/title"
-msgstr "Механика переключения режима огня"
-
-msgid "detailsHelp/twinGun/mechanics/page2"
-msgstr ""
-"Залповый режим удваивает как урон, так и время перезарядки, а также "
-"увеличивает разброс на 100 м*."
-
-msgid "detailsHelp/twinGun/mechanics/page2/title"
-msgstr "Преимущества и недостатки"
 
 msgid "detailsHelp/wheeledVeh/aboutTechnique"
 msgstr ""

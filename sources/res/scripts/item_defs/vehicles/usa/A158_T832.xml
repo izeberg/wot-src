@@ -257,7 +257,6 @@
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>60500</maxLoad>
 			<terrainResistance>
 				1.1 1.5 2.7
 				<!--BW_String-->
@@ -1930,7 +1929,10 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>11</reloadTime>
+					<reloadTime>
+						10.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionRadius>
 						0.33
 						<!--BW_String-->

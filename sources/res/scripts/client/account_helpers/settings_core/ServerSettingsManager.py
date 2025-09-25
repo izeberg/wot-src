@@ -3,7 +3,7 @@ from collections import namedtuple
 from itertools import chain
 from account_helpers.settings_core import settings_constants, longToInt32
 from account_helpers.settings_core.migrations import migrateToVersion
-from account_helpers.settings_core.settings_constants import VERSION, GuiSettingsBehavior, OnceOnlyHints, SPGAim, CONTOUR, ReferralProgram
+from account_helpers.settings_core.settings_constants import VERSION, GuiSettingsBehavior, OnceOnlyHints, SPGAim, CONTOUR, ReferralProgram, PersonalMission3
 from adisp import adisp_process, adisp_async
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from gui.battle_pass.battle_pass_helpers import updateBattlePassSettings
@@ -48,6 +48,9 @@ class SETTINGS_SECTIONS(CONST_CONTAINER):
     COMP7_CAROUSEL_FILTER_1 = 'COMP7_CAROUSEL_FILTER_1'
     COMP7_CAROUSEL_FILTER_2 = 'COMP7_CAROUSEL_FILTER_2'
     COMP7_CAROUSEL_FILTER_3 = 'COMP7_CAROUSEL_FILTER_3'
+    COMP7_LIGHT_CAROUSEL_FILTER_1 = 'COMP7_LIGHT_CAROUSEL_FILTER_1'
+    COMP7_LIGHT_CAROUSEL_FILTER_2 = 'COMP7_LIGHT_CAROUSEL_FILTER_2'
+    COMP7_LIGHT_CAROUSEL_FILTER_3 = 'COMP7_LIGHT_CAROUSEL_FILTER_3'
     GUI_START_BEHAVIOR = 'GUI_START_BEHAVIOR'
     EULA_VERSION = 'EULA_VERSION'
     MARKS_ON_GUN = 'MARKS_ON_GUN'
@@ -80,6 +83,7 @@ class SETTINGS_SECTIONS(CONST_CONTAINER):
     LIMITED_UI_PERMANENT_2 = 'LIMITED_UI_PERMANENT_2'
     REFERRAL_PROGRAM = 'REFERRAL_PROGRAM'
     ADVANCED_ACHIEVEMENTS_STORAGE = 'ADVANCED_ACHIEVEMENTS_STORAGE'
+    PERSONAL_MISSION_3 = 'PERSONAL_MISSION_3'
     ONCE_ONLY_HINTS_GROUP = (
      ONCE_ONLY_HINTS, ONCE_ONLY_HINTS_2, ONCE_ONLY_HINTS_3)
     CAROUSEL_FILTER_3_GROUP = (
@@ -88,6 +92,7 @@ class SETTINGS_SECTIONS(CONST_CONTAINER):
      EPICBATTLE_CAROUSEL_FILTER_3,
      MAPBOX_CAROUSEL_FILTER_3,
      COMP7_CAROUSEL_FILTER_3,
+     COMP7_LIGHT_CAROUSEL_FILTER_3,
      FUN_RANDOM_CAROUSEL_FILTER_3)
     UI_STORAGE_GROUP = (
      UI_STORAGE, UI_STORAGE_2)
@@ -156,7 +161,6 @@ class LIMITED_UI_SPAM_OFF(CONST_CONTAINER):
     LOBBY_HEADER_COUNTERS_PM_OPERATIONS = 'PersonalMissionOperations'
     REFERRAL_BTN_COUNTER = 'referralButtonCounter'
     AP_ZONE_HINT = 'AmmunitionPanelHintZoneHint'
-    AP_BATTLE_ABILITIES_HINT = 'AmmunitionPanelBattleAbilitiesHint'
     C11N_PROGRESSION_HINT = 'CustomizationProgressionViewHint'
     TECH_TREE_EVENTS = 'TechTreeEvent'
     DOG_TAG_HINT = 'DogTagHangarHint'
@@ -167,9 +171,9 @@ class LIMITED_UI_SPAM_OFF(CONST_CONTAINER):
     ORDER = (
      LOBBY_HEADER_COUNTERS_STORE, LOBBY_HEADER_COUNTERS_PROFILE, PROFILE_HOF, PROFILE_TECHNIQUE_PAGE,
      SESSION_STATS, BLUEPRINTS_BUTTON, LOBBY_HEADER_COUNTERS_MISSIONS, MISSIONS_MARATHON_VIEW,
-     LOBBY_HEADER_COUNTERS_PM_OPERATIONS, REFERRAL_BTN_COUNTER, AP_ZONE_HINT, AP_BATTLE_ABILITIES_HINT,
-     C11N_PROGRESSION_HINT, TECH_TREE_EVENTS, DOG_TAG_HINT, MODE_SELECTOR_WIDGET_BTN_HINT, PR_HANGAR_HINT,
-     MODERNIZE_SETUP_HINT, OFFER_BANNER_WINDOW)
+     LOBBY_HEADER_COUNTERS_PM_OPERATIONS, REFERRAL_BTN_COUNTER, AP_ZONE_HINT, C11N_PROGRESSION_HINT,
+     TECH_TREE_EVENTS, DOG_TAG_HINT, MODE_SELECTOR_WIDGET_BTN_HINT, PR_HANGAR_HINT, MODERNIZE_SETUP_HINT,
+     OFFER_BANNER_WINDOW)
 
 
 class ServerSettingsManager(object):
@@ -304,7 +308,8 @@ class ServerSettingsManager(object):
                                              'level_7': 26, 
                                              'level_8': 27, 
                                              'level_9': 28, 
-                                             'level_10': 29}, offsets={}), 
+                                             'level_10': 29, 
+                                             'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                              'elite': 1, 
                                              'rented': 2, 
@@ -355,7 +360,8 @@ class ServerSettingsManager(object):
                                                     'level_7': 26, 
                                                     'level_8': 27, 
                                                     'level_9': 28, 
-                                                    'level_10': 29}, offsets={}), 
+                                                    'level_10': 29, 
+                                                    'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                                     'elite': 1, 
                                                     'rented': 2, 
@@ -408,7 +414,8 @@ class ServerSettingsManager(object):
                                                         'level_7': 26, 
                                                         'level_8': 27, 
                                                         'level_9': 28, 
-                                                        'level_10': 29}, offsets={}), 
+                                                        'level_10': 29, 
+                                                        'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                                         'elite': 1, 
                                                         'rented': 2, 
@@ -461,7 +468,8 @@ class ServerSettingsManager(object):
                                                    'level_7': 26, 
                                                    'level_8': 27, 
                                                    'level_9': 28, 
-                                                   'level_10': 29}, offsets={}), 
+                                                   'level_10': 29, 
+                                                   'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                                    'elite': 1, 
                                                    'rented': 2, 
@@ -471,7 +479,6 @@ class ServerSettingsManager(object):
                                                    'bonus': 6, 
                                                    'event': 7, 
                                                    'crystals': 8, 
-                                                   'comp7': 9, 
                                                    'role_HT_assault': 11, 
                                                    'role_HT_break': 12, 
                                                    'role_HT_support': 13, 
@@ -489,16 +496,67 @@ class ServerSettingsManager(object):
                                                    'role_SPG': 25}, offsets={}), 
        SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: Section(masks={'own3DStyle': 0, 
                                                    'canInstallAttachments': 1}, offsets={}), 
+       SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_1: Section(masks={'ussr': 0, 
+                                                         'germany': 1, 
+                                                         'usa': 2, 
+                                                         'china': 3, 
+                                                         'france': 4, 
+                                                         'uk': 5, 
+                                                         'japan': 6, 
+                                                         'czech': 7, 
+                                                         'sweden': 8, 
+                                                         'poland': 9, 
+                                                         'italy': 10, 
+                                                         'lightTank': 15, 
+                                                         'mediumTank': 16, 
+                                                         'heavyTank': 17, 
+                                                         'SPG': 18, 
+                                                         'AT-SPG': 19, 
+                                                         'level_1': 20, 
+                                                         'level_2': 21, 
+                                                         'level_3': 22, 
+                                                         'level_4': 23, 
+                                                         'level_5': 24, 
+                                                         'level_6': 25, 
+                                                         'level_7': 26, 
+                                                         'level_8': 27, 
+                                                         'level_9': 28, 
+                                                         'level_10': 29, 
+                                                         'level_11': 30}, offsets={}), 
+       SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
+                                                         'elite': 1, 
+                                                         'rented': 2, 
+                                                         'igr': 3, 
+                                                         'gameMode': 4, 
+                                                         'favorite': 5, 
+                                                         'bonus': 6, 
+                                                         'event': 7, 
+                                                         'crystals': 8, 
+                                                         'role_HT_assault': 11, 
+                                                         'role_HT_break': 12, 
+                                                         'role_HT_support': 13, 
+                                                         'role_HT_universal': 14, 
+                                                         'role_MT_universal': 15, 
+                                                         'role_MT_sniper': 16, 
+                                                         'role_MT_assault': 17, 
+                                                         'role_MT_support': 18, 
+                                                         'role_ATSPG_assault': 19, 
+                                                         'role_ATSPG_universal': 20, 
+                                                         'role_ATSPG_sniper': 21, 
+                                                         'role_ATSPG_support': 22, 
+                                                         'role_LT_universal': 23, 
+                                                         'role_LT_wheeled': 24, 
+                                                         'role_SPG': 25}, offsets={}), 
+       SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: Section(masks={'own3DStyle': 0, 
+                                                         'canInstallAttachments': 1}, offsets={}), 
        SETTINGS_SECTIONS.GUI_START_BEHAVIOR: Section(masks={GuiSettingsBehavior.FREE_XP_INFO_DIALOG_SHOWED: 0, 
                                               GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED: 1, 
                                               GuiSettingsBehavior.RANKED_WELCOME_VIEW_STARTED: 2, 
-                                              GuiSettingsBehavior.EPIC_RANDOM_CHECKBOX_CLICKED: 3, 
                                               GuiSettingsBehavior.CLAN_SUPPLY_INTRO_SHOWN: 4, 
                                               GuiSettingsBehavior.CREW_MENTORING_LICENSE_AWARDS_SHOWN: 18, 
                                               GuiSettingsBehavior.CREW_NPS_INTRO_SHOWN: 19, 
                                               GuiSettingsBehavior.CREW_NPS_WELCOME_SHOWN: 20, 
                                               GuiSettingsBehavior.CREW_5075_WELCOME_SHOWN: 21, 
-                                              GuiSettingsBehavior.COMP7_SEASON_STATISTICS_SHOWN: 22, 
                                               GuiSettingsBehavior.PRESTIGE_FIRST_ENTRY_NOTIFICATION_SHOWN: 23, 
                                               GuiSettingsBehavior.CREW_22_WELCOME_SHOWN: 24, 
                                               GuiSettingsBehavior.DISPLAY_PLATOON_MEMBER_CLICKED: 25, 
@@ -520,7 +578,6 @@ class ServerSettingsManager(object):
                                            OnceOnlyHints.HOLD_SHEET_HINT: 4, 
                                            OnceOnlyHints.HAVE_NEW_BADGE_HINT: 5, 
                                            OnceOnlyHints.EPIC_RESERVES_SLOT_HINT: 6, 
-                                           OnceOnlyHints.SHOW_ABILITIES_BUTTON_HINT: 7, 
                                            OnceOnlyHints.PAUSE_HINT: 8, 
                                            OnceOnlyHints.HAVE_NEW_SUFFIX_BADGE_HINT: 9, 
                                            OnceOnlyHints.BADGE_PAGE_NEW_SUFFIX_BADGE_HINT: 10, 
@@ -554,7 +611,6 @@ class ServerSettingsManager(object):
                                              OnceOnlyHints.MODE_SELECTOR_WIDGETS_BTN_HINT: 6, 
                                              OnceOnlyHints.HANGAR_MANUAL_HINT: 7, 
                                              OnceOnlyHints.MAPS_TRAINING_NEWBIE_HINT: 8, 
-                                             OnceOnlyHints.AMUNNITION_PANEL_EPIC_BATTLE_ABILITIES_HINT: 9, 
                                              OnceOnlyHints.VEHICLE_PREVIEW_POST_PROGRESSION_BUTTON_HINT: 10, 
                                              OnceOnlyHints.VEHICLE_POST_PROGRESSION_ENTRY_POINT_HINT: 11, 
                                              OnceOnlyHints.HERO_VEHICLE_POST_PROGRESSION_ENTRY_POINT_HINT: 12, 
@@ -569,11 +625,8 @@ class ServerSettingsManager(object):
                                              OnceOnlyHints.WOTPLUS_PROFILE_HINT: 21, 
                                              OnceOnlyHints.HANGAR_HAVE_NEW_BADGE_HINT: 22, 
                                              OnceOnlyHints.HANGAR_HAVE_NEW_SUFFIX_BADGE_HINT: 23, 
-                                             OnceOnlyHints.APPLY_ABILITIES_TO_TYPE_CHECKBOX_HINT: 24, 
                                              OnceOnlyHints.BATTLE_MATTERS_FIGHT_BUTTON_HINT: 25, 
                                              OnceOnlyHints.BATTLE_MATTERS_ENTRY_POINT_BUTTON_HINT: 26, 
-                                             OnceOnlyHints.WOTPLUS_OPT_DEV_HINT: 27, 
-                                             OnceOnlyHints.WOTPLUS_CREW_WIDGET_TANKMAN_ASSIST_HINT: 28, 
                                              OnceOnlyHints.AMMUNITION_FILTER_HINT: 29, 
                                              OnceOnlyHints.SUMMARY_CUSTOMIZATION_BUTTON_HINT: 30, 
                                              OnceOnlyHints.BATTLE_ROYALE_DYNAMIC_PLATOON_SUB_MODE_HINT: 31}, offsets={}), 
@@ -584,9 +637,7 @@ class ServerSettingsManager(object):
                                              OnceOnlyHints.C11N_VEHICLE_LIST_HINT: 4, 
                                              OnceOnlyHints.VEHICLE_C11N_FILTER_HINT: 5, 
                                              OnceOnlyHints.CREW_BOOKS_MENTORING_LICENSE_HINT: 6, 
-                                             OnceOnlyHints.VDAY_DIFFICULTY_HINT: 7, 
-                                             OnceOnlyHints.WOTPLUS_CREW_SKILL_TRAINING_DROPDOWN_ASSIST_HINT: 8, 
-                                             OnceOnlyHints.WOTPLUS_CREW_CONTAINER_TANKMAN_SKILL_ASSIST_HINT: 9}, offsets={}), 
+                                             OnceOnlyHints.VDAY_DIFFICULTY_HINT: 7}, offsets={}), 
        SETTINGS_SECTIONS.DAMAGE_INDICATOR: Section(masks={DAMAGE_INDICATOR.TYPE: 0, 
                                             DAMAGE_INDICATOR.PRESET_CRITS: 1, 
                                             DAMAGE_INDICATOR.DAMAGE_VALUE: 2, 
@@ -717,7 +768,8 @@ class ServerSettingsManager(object):
                                                     'level_7': 26, 
                                                     'level_8': 27, 
                                                     'level_9': 28, 
-                                                    'level_10': 29}, offsets={}), 
+                                                    'level_10': 29, 
+                                                    'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                                     'elite': 1, 
                                                     'rented': 2, 
@@ -753,7 +805,8 @@ class ServerSettingsManager(object):
                                                     'level_7': 26, 
                                                     'level_8': 27, 
                                                     'level_9': 28, 
-                                                    'level_10': 29}, offsets={}), 
+                                                    'level_10': 29, 
+                                                    'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                                     'elite': 1, 
                                                     'rented': 2, 
@@ -780,7 +833,7 @@ class ServerSettingsManager(object):
                                                     'role_SPG': 25}, offsets={}), 
        SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: Section(masks={'own3DStyle': 0, 
                                                     'canInstallAttachments': 1}, offsets={}), 
-       SETTINGS_SECTIONS.UNIT_FILTER: Section(masks={}, offsets={GAME.UNIT_FILTER: Offset(0, 2047)}), 
+       SETTINGS_SECTIONS.UNIT_FILTER: Section(masks={}, offsets={GAME.UNIT_FILTER: Offset(0, 4095)}), 
        SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_1: Section(masks={'ussr': 0, 
                                                         'germany': 1, 
                                                         'usa': 2, 
@@ -806,7 +859,8 @@ class ServerSettingsManager(object):
                                                         'level_7': 26, 
                                                         'level_8': 27, 
                                                         'level_9': 28, 
-                                                        'level_10': 29}, offsets={}), 
+                                                        'level_10': 29, 
+                                                        'level_11': 30}, offsets={}), 
        SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_2: Section(masks={'premium': 0, 
                                                         'elite': 1, 
                                                         'rented': 2, 
@@ -839,7 +893,13 @@ class ServerSettingsManager(object):
        SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: Section(masks={}, offsets={LIMITED_UI_KEY: Offset(0, 4294967295)}), 
        SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: Section(masks={}, offsets={LIMITED_UI_KEY: Offset(0, 4294967295)}), 
        SETTINGS_SECTIONS.REFERRAL_PROGRAM: Section(masks={}, offsets={ReferralProgram.VIEWED_REFERRAL_PROGRAM_SEASON: Offset(0, 4095)}), 
-       SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: Section(masks={}, offsets={ADVANCED_ACHIEVEMENTS_STORAGE_KEYS.EARNING_TIMESTAMP: Offset(0, 4294967295)})}
+       SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: Section(masks={}, offsets={ADVANCED_ACHIEVEMENTS_STORAGE_KEYS.EARNING_TIMESTAMP: Offset(0, 4294967295)}), 
+       SETTINGS_SECTIONS.PERSONAL_MISSION_3: Section(masks={PersonalMission3.INTRO: 0, 
+                                              PersonalMission3.INTRO_OP_8: 1, 
+                                              PersonalMission3.INTRO_OP_9: 2, 
+                                              PersonalMission3.INTRO_OP_10: 3, 
+                                              PersonalMission3.PM_BANNER_ANIMATION_KEY: 25}, offsets={PersonalMission3.PART_NO: Offset(4, 15 << 4), 
+                                              PersonalMission3.CHECKED_PM3_POINTS: Offset(8, 65535 << 8)})}
     AIM_MAPPING = {'net': 1, 
        'netType': 1, 
        'centralTag': 1, 
@@ -1049,6 +1109,14 @@ class ServerSettingsManager(object):
         fields = {UI_STORAGE_KEYS.LIMITED_UI_ALL_NOVICE_RULES_COMPLETED: True}
         return self.setSections([SETTINGS_SECTIONS.UI_STORAGE], fields)
 
+    def getPM3InstalledVehDetails(self):
+        return self.getSectionSettings(SETTINGS_SECTIONS.PERSONAL_MISSION_3, PersonalMission3.PART_NO, 0)
+
+    def setPM3VehDetailInstalled(self, vehDetailNumber=0):
+        if not self.settingsCache.isSynced():
+            return False
+        self.setSectionSettings(SETTINGS_SECTIONS.PERSONAL_MISSION_3, {PersonalMission3.PART_NO: vehDetailNumber})
+
     def setViewedReferralProgramSeason(self, season):
         self.setSectionSettings(SETTINGS_SECTIONS.REFERRAL_PROGRAM, {ReferralProgram.VIEWED_REFERRAL_PROGRAM_SEASON: season})
 
@@ -1168,6 +1236,12 @@ class ServerSettingsManager(object):
     def getSessionStatsSettings(self):
         return self.getSection(SETTINGS_SECTIONS.SESSION_STATS)
 
+    def getPersonalMission3Data(self, defaults=None):
+        return self.getSection(SETTINGS_SECTIONS.PERSONAL_MISSION_3, defaults=defaults)
+
+    def setPersonalMission3Data(self, data):
+        self.setSectionSettings(SETTINGS_SECTIONS.PERSONAL_MISSION_3, data)
+
     def getVersion(self):
         return self.settingsCache.getVersion()
 
@@ -1283,7 +1357,7 @@ class ServerSettingsManager(object):
     @adisp_process
     def _updateToVersion(self, callback=None):
         currentVersion = self.settingsCache.getVersion()
-        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}}
+        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, SETTINGS_SECTIONS.SENIORITY_AWARDS_STORAGE: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_1: {}, SETTINGS_SECTIONS.LIMITED_UI_PERMANENT_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, SETTINGS_SECTIONS.BATTLE_BORDER_MAP: {}, SETTINGS_SECTIONS.ADVANCED_ACHIEVEMENTS_STORAGE: {}, SETTINGS_SECTIONS.CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.RANKED_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.FUN_RANDOM_CAROUSEL_FILTER_3: {}, SETTINGS_SECTIONS.PERSONAL_MISSION_3: {}}
         yield migrateToVersion(currentVersion, self._core, data)
         self._setSettingsSections(data)
         callback(self)
@@ -1331,14 +1405,22 @@ class ServerSettingsManager(object):
         fallout = data.get('fallout', {})
         if fallout:
             settings[SETTINGS_SECTIONS.FALLOUT] = self._buildSectionSettings(SETTINGS_SECTIONS.FALLOUT, fallout)
-        carousel_filter = data.get('carousel_filter', {})
-        clearCarouselFilter = clear.get('carousel_filter', 0)
-        if carousel_filter or clearCarouselFilter:
-            settings[SETTINGS_SECTIONS.CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.CAROUSEL_FILTER_2, carousel_filter) ^ clearCarouselFilter
-        epicFilterCarousel = data.get('epicCarouselFilter2', {})
-        clearEpicFilterCarousel = clear.get('epicCarouselFilter2', 0)
-        if epicFilterCarousel or clearEpicFilterCarousel:
-            settings[SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_2, epicFilterCarousel) ^ clearEpicFilterCarousel
+        carouselFilter1 = data.get(SETTINGS_SECTIONS.CAROUSEL_FILTER_1, {})
+        clearCarouselFilter1 = clear.get(SETTINGS_SECTIONS.CAROUSEL_FILTER_1, 0)
+        if carouselFilter1 or clearCarouselFilter1:
+            settings[SETTINGS_SECTIONS.CAROUSEL_FILTER_1] = self._buildSectionSettings(SETTINGS_SECTIONS.CAROUSEL_FILTER_1, carouselFilter1) ^ clearCarouselFilter1
+        carouselFilter2 = data.get('carousel_filter', {})
+        clearCarouselFilter2 = clear.get('carousel_filter', 0)
+        if carouselFilter2 or clearCarouselFilter2:
+            settings[SETTINGS_SECTIONS.CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.CAROUSEL_FILTER_2, carouselFilter2) ^ clearCarouselFilter2
+        epicFilterCarousel1 = data.get(SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_1, {})
+        clearEpicFilterCarousel1 = clear.get(SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_1, 0)
+        if epicFilterCarousel1 or clearEpicFilterCarousel1:
+            settings[SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_1] = self._buildSectionSettings(SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_1, epicFilterCarousel1) ^ clearEpicFilterCarousel1
+        epicFilterCarousel2 = data.get('epicCarouselFilter2', {})
+        clearEpicFilterCarousel2 = clear.get('epicCarouselFilter2', 0)
+        if epicFilterCarousel2 or clearEpicFilterCarousel2:
+            settings[SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.EPICBATTLE_CAROUSEL_FILTER_2, epicFilterCarousel2) ^ clearEpicFilterCarousel2
         rankedFilterCarousel1 = data.get('rankedCarouselFilter1', {})
         clearRankedFilterCarousel1 = clear.get('rankedCarouselFilter1', 0)
         if rankedFilterCarousel1 or clearRankedFilterCarousel1:
@@ -1363,6 +1445,14 @@ class ServerSettingsManager(object):
         clearComp7FilterCarousel2 = clear.get('comp7CarouselFilter2', 0)
         if comp7FilterCarousel2 or clearComp7FilterCarousel2:
             settings[SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.COMP7_CAROUSEL_FILTER_2, comp7FilterCarousel2) ^ clearComp7FilterCarousel2
+        comp7LightFilterCarousel1 = data.get('comp7LightCarouselFilter1', {})
+        clearComp7LightFilterCarousel1 = clear.get('comp7LightCarouselFilter1', 0)
+        if comp7LightFilterCarousel1 or clearComp7LightFilterCarousel1:
+            settings[SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_1] = self._buildSectionSettings(SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_1, comp7LightFilterCarousel1) ^ clearComp7LightFilterCarousel1
+        comp7LightFilterCarousel2 = data.get('comp7LightCarouselFilter2', {})
+        clearComp7LightFilterCarousel2 = clear.get('comp7LightCarouselFilter2', 0)
+        if comp7LightFilterCarousel2 or clearComp7LightFilterCarousel2:
+            settings[SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_2] = self._buildSectionSettings(SETTINGS_SECTIONS.COMP7_LIGHT_CAROUSEL_FILTER_2, comp7LightFilterCarousel2) ^ clearComp7LightFilterCarousel2
         feedbackDamageIndicator = data.get('feedbackDamageIndicator', {})
         if feedbackDamageIndicator:
             settings[SETTINGS_SECTIONS.DAMAGE_INDICATOR] = self._buildSectionSettings(SETTINGS_SECTIONS.DAMAGE_INDICATOR, feedbackDamageIndicator)
@@ -1456,6 +1546,14 @@ class ServerSettingsManager(object):
             if carouselFilter3 or clearCarouselFilter3:
                 settings[carouselFilter3Key] = self._buildSectionSettings(carouselFilter3Key, carouselFilter3) ^ clearCarouselFilter3
 
+        personalMission3 = data.get(SETTINGS_SECTIONS.PERSONAL_MISSION_3, {})
+        clearPersonalMission3 = clear.get(SETTINGS_SECTIONS.PERSONAL_MISSION_3, 0)
+        if personalMission3 or clearPersonalMission3:
+            settings[SETTINGS_SECTIONS.PERSONAL_MISSION_3] = self._buildSectionSettings(SETTINGS_SECTIONS.PERSONAL_MISSION_3, personalMission3) ^ clearPersonalMission3
+        mapboxFilterCarousel1 = data.get(SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_1, {})
+        clearMapboxFilterCarousel1 = clear.get(SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_1, 0)
+        if mapboxFilterCarousel1 or clearMapboxFilterCarousel1:
+            settings[SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_1] = self._buildSectionSettings(SETTINGS_SECTIONS.MAPBOX_CAROUSEL_FILTER_1, mapboxFilterCarousel1) ^ clearMapboxFilterCarousel1
         version = data.get(VERSION)
         if version is not None:
             settings[VERSION] = version

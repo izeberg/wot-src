@@ -46,7 +46,7 @@ class ProgressiveItemsView(ViewImpl):
     __settingsCore = dependency.descriptor(ISettingsCore)
     __guiLoader = dependency.descriptor(IGuiLoader)
 
-    def __init__(self, layoutID, c11nView, *args, **kwargs):
+    def __init__(self, layoutID, c11nView=None, *args, **kwargs):
         settings = ViewSettings(layoutID)
         settings.args = args
         settings.kwargs = kwargs
@@ -56,7 +56,7 @@ class ProgressiveItemsView(ViewImpl):
         self._itemsProgressData = None
         self._possibleItems = None
         self._vehicle = None
-        self.__blur = CachedBlur()
+        self.__blur = None
         self.__layoutID = layoutID
         self.__c11nView = c11nView
         self.__urlMacros = URLMacros()
@@ -107,7 +107,8 @@ class ProgressiveItemsView(ViewImpl):
         if self.__c11nView is not None:
             self.__c11nView.changeVisible(True)
             self.__c11nView = None
-        self.__blur.fini()
+        if self.__blur:
+            self.__blur.fini()
         self.viewModel.onSelectItem -= self._onSelectItem
         self.viewModel.tutorial.showVideo -= self._showVideoPage
         return
@@ -116,6 +117,7 @@ class ProgressiveItemsView(ViewImpl):
         self.update(*args, **kwargs)
 
     def _onLoaded(self, *args, **kwargs):
+        self.__blur = CachedBlur()
         self.__blur.enable()
 
     def _onSelectItem(self, args=None):

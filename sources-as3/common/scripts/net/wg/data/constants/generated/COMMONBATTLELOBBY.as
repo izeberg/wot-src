@@ -3,12 +3,6 @@ package net.wg.data.constants.generated
    public class COMMONBATTLELOBBY
    {
       
-      public static const BODY_ARMOR:String = "body_armor";
-      
-      public static const BODY_HEALTH:String = "body_health";
-      
-      public static const BODY_MOBILITY:String = "body_mobility";
-      
       public static const DAMAGE_LOG_AIRSTRIKE_ENEMY_16X16:String = "damageLog_airstrike_enemy_16x16";
       
       public static const DAMAGE_LOG_AIRSTRIKE_ENEMY_16X16_BLIND:String = "damageLog_airstrike_enemy_16x16Blind";
@@ -18,8 +12,6 @@ package net.wg.data.constants.generated
       public static const DAMAGE_LOG_AIRSTRIKE_EQ_ENEMY_16X16:String = "damageLog_airstrike_eq_enemy_16x16";
       
       public static const DAMAGE_LOG_AIRSTRIKE_EQ_ENEMY_16X16_BLIND:String = "damageLog_airstrike_eq_enemy_16x16Blind";
-      
-      public static const DAMAGE_LOG_ART_16X16:String = "damageLog_art_16x16";
       
       public static const DAMAGE_LOG_ARTILLERY_16X16:String = "damageLog_artillery_16x16";
       
@@ -32,6 +24,8 @@ package net.wg.data.constants.generated
       public static const DAMAGE_LOG_ARTILLERY_EQ_ENEMY_16X16:String = "damageLog_artillery_eq_enemy_16x16";
       
       public static const DAMAGE_LOG_ARTILLERY_EQ_ENEMY_16X16_BLIND:String = "damageLog_artillery_eq_enemy_16x16Blind";
+      
+      public static const DAMAGE_LOG_ART_16X16:String = "damageLog_art_16x16";
       
       public static const DAMAGE_LOG_ASSIST_16X16:String = "damageLog_assist_16x16";
       
@@ -123,10 +117,6 @@ package net.wg.data.constants.generated
       
       public static const EMPTY_SHELL_BG:String = "emptyShellBg";
       
-      public static const ENGINE_ACCELERATION:String = "engine_acceleration";
-      
-      public static const ENGINE_SPEED:String = "engine_speed";
-      
       public static const GOLD_BLACK_CENTER:String = "goldBlackCenter";
       
       public static const GOLD_BLACK_EDGE:String = "goldBlackEdge";
@@ -134,6 +124,24 @@ package net.wg.data.constants.generated
       public static const GOLD_CENTER:String = "goldCenter";
       
       public static const GOLD_EDGE:String = "goldEdge";
+      
+      public static const WHITE_BLACK_CENTER:String = "whiteBlackCenter";
+      
+      public static const WHITE_BLACK_EDGE:String = "whiteBlackEdge";
+      
+      public static const WHITE_CENTER:String = "whiteCenter";
+      
+      public static const WHITE_EDGE:String = "whiteEdge";
+      
+      public static const BODY_ARMOR:String = "body_armor";
+      
+      public static const BODY_HEALTH:String = "body_health";
+      
+      public static const BODY_MOBILITY:String = "body_mobility";
+      
+      public static const ENGINE_ACCELERATION:String = "engine_acceleration";
+      
+      public static const ENGINE_SPEED:String = "engine_speed";
       
       public static const GUN_ALPHA:String = "gun_alpha";
       
@@ -151,11 +159,17 @@ package net.wg.data.constants.generated
       
       public static const GUN_PIERCING:String = "gun_piercing";
       
-      public static const LOADER_INTUITION:String = "loader_intuition";
-      
       public static const RADAR_COOLDOWN:String = "radar_cooldown";
       
       public static const RADAR_DISTANCE:String = "radar_distance";
+      
+      public static const TURRET_ARMOR:String = "turret_armor";
+      
+      public static const TURRET_HEALTH:String = "turret_health";
+      
+      public static const TURRET_ROTATION_SPEED:String = "turret_rotation_speed";
+      
+      public static const VEHICLE:String = "vehicle";
       
       public static const RIBBONS_ARMOR:String = "ribbonsArmor";
       
@@ -243,45 +257,31 @@ package net.wg.data.constants.generated
       
       public static const RIBBONS_STUN:String = "ribbonsStun";
       
-      public static const TURRET_ARMOR:String = "turret_armor";
-      
-      public static const TURRET_HEALTH:String = "turret_health";
-      
-      public static const TURRET_ROTATION_SPEED:String = "turret_rotation_speed";
-      
-      public static const VEHICLE:String = "vehicle";
-      
-      public static const WHITE_BLACK_CENTER:String = "whiteBlackCenter";
-      
-      public static const WHITE_BLACK_EDGE:String = "whiteBlackEdge";
-      
-      public static const WHITE_CENTER:String = "whiteCenter";
-      
-      public static const WHITE_EDGE:String = "whiteEdge";
-      
-      public static const WHITE_ICON_AT_SPG_ELITE16X16:String = "whiteIconAT-SPG_elite16x16";
+      public static const LOADER_INTUITION:String = "loader_intuition";
       
       public static const WHITE_ICON_AT_SPG16X16:String = "whiteIconAt-SPG16x16";
+      
+      public static const WHITE_ICON_AT_SPG_ELITE16X16:String = "whiteIconAT-SPG_elite16x16";
       
       public static const WHITE_ICON_BOSS16X16:String = "whiteIconBoss16x16";
       
       public static const WHITE_ICON_BUNKER16X16:String = "whiteIconBunker16x16";
       
-      public static const WHITE_ICON_HEAVY_TANK_ELITE16X16:String = "whiteIconHeavyTank_elite16x16";
-      
       public static const WHITE_ICON_HEAVY_TANK16X16:String = "whiteIconHeavyTank16x16";
       
-      public static const WHITE_ICON_LIGHT_TANK_ELITE16X16:String = "whiteIconLightTank_elite16x16";
+      public static const WHITE_ICON_HEAVY_TANK_ELITE16X16:String = "whiteIconHeavyTank_elite16x16";
       
       public static const WHITE_ICON_LIGHT_TANK16X16:String = "whiteIconLightTank16x16";
       
-      public static const WHITE_ICON_MEDIUM_TANK_ELITE16X16:String = "whiteIconMediumTank_elite16x16";
+      public static const WHITE_ICON_LIGHT_TANK_ELITE16X16:String = "whiteIconLightTank_elite16x16";
       
       public static const WHITE_ICON_MEDIUM_TANK16X16:String = "whiteIconMediumTank16x16";
       
-      public static const WHITE_ICON_SPG_ELITE16X16:String = "whiteIconSPG_elite16x16";
+      public static const WHITE_ICON_MEDIUM_TANK_ELITE16X16:String = "whiteIconMediumTank_elite16x16";
       
       public static const WHITE_ICON_SPG16X16:String = "whiteIconSPG16x16";
+      
+      public static const WHITE_ICON_SPG_ELITE16X16:String = "whiteIconSPG_elite16x16";
        
       
       public function COMMONBATTLELOBBY()

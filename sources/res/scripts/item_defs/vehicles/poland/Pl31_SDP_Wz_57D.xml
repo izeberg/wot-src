@@ -119,7 +119,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>27365</weight>
-		<maxHealth>680</maxHealth>
+		<maxHealth>720</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>190</maxHealth>
 			<maxRegenHealth>130</maxRegenHealth>
@@ -1882,9 +1882,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>44000</maxLoad>
 			<terrainResistance>
-				1.3 1.8 2.9
+				1.1 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
@@ -3252,7 +3251,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>47000</maxLoad>
 			<terrainResistance>
 				1.1 1.4 2.3
 				<!--BW_String-->
@@ -4866,7 +4864,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_1 armor_1</primaryArmor>
 			<weight>100</weight>
-			<maxHealth>170</maxHealth>
+			<maxHealth>180</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -4905,7 +4903,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.6
+						10.1
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -5123,12 +5121,18 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>2</aimingTime>
+					<aimingTime>
+						2.2
+						<!--BW_String-->
+					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.18
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>12</reloadTime>
+					<reloadTime>
+						12.9
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionRadius>
 						0.38
 						<!--BW_String-->
@@ -5259,15 +5263,6 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<N2_L>
-			shared
-			<unlocks>
-				<radio>
-					RKD
-					<cost>3700</cost>
-				</radio>
-			</unlocks>
-		</N2_L>
 		<RKD>shared</RKD>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -5288,19 +5283,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.23345
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1449
+								0.1127
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

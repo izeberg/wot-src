@@ -1191,6 +1191,9 @@ msgstr "Особая валюта события"
 msgid "bonusName/excluded_map"
 msgstr "Исключённая карта"
 
+msgid "bonusName/excluded_maps"
+msgstr "Исключённые карты"
+
 msgid "bonusName/exclusive_vehicle"
 msgstr "Эксклюзивная техника"
 
@@ -1233,6 +1236,9 @@ msgstr "Краска"
 msgid "bonusName/personalNumber"
 msgstr "Трёхзначный номер"
 
+msgid "bonusName/personal_missions_points/preview"
+msgstr "Очки кампании:"
+
 msgid "bonusName/premium"
 msgstr "Дни Общего премиум аккаунта"
 
@@ -1250,6 +1256,9 @@ msgstr "Ежедневный призовой бой."
 
 msgid "bonusName/slots"
 msgstr "Слотов в Ангаре"
+
+msgid "bonusName/statTracker"
+msgstr "Счётчик статистики"
 
 msgid "bonusName/style"
 msgstr "Стиль"
@@ -1460,25 +1469,25 @@ msgid "dailyQuests/condition/destroyModule_few"
 msgstr "совершить %(value)d критических попадания в бою"
 
 msgid "dailyQuests/condition/destroyModule_few_accum"
-msgstr "совершить %(value)d критических попадания"
+msgstr "нанести критических повреждений"
 
 msgid "dailyQuests/condition/destroyModule_plural"
 msgstr "совершить %(value)d критических попаданий в бою"
 
 msgid "dailyQuests/condition/destroyModule_plural_accum"
-msgstr "совершить %(value)d критических попаданий"
+msgstr "нанести критических повреждений"
 
 msgid "dailyQuests/condition/destroyVeh_few"
 msgstr "уничтожить %(value)d ед. техники за бой"
 
 msgid "dailyQuests/condition/destroyVeh_few_accum"
-msgstr "уничтожить %(value)d ед. техники"
+msgstr "уничтожить машин противника"
 
 msgid "dailyQuests/condition/destroyVeh_plural"
 msgstr "уничтожить %(value)d ед. техники за бой"
 
 msgid "dailyQuests/condition/destroyVeh_plural_accum"
-msgstr "уничтожить %(value)d ед. техники"
+msgstr "уничтожить машин противника"
 
 msgid "dailyQuests/condition/destroyVeh_singular"
 msgstr "уничтожить %(value)d ед. техники за бой"
@@ -1496,19 +1505,19 @@ msgid "dailyQuests/condition/doDamageVeh"
 msgstr "нанести урон %(value)d ед. техники за бой"
 
 msgid "dailyQuests/condition/doDamageVeh_accum"
-msgstr "нанести урон %(value)d ед. техники"
+msgstr "нанести урон противнику (раз)"
 
 msgid "dailyQuests/condition/doDamageVeh_singular_accum"
-msgstr "Нанести урон %(value)d машине"
+msgstr "нанести урон противнику (раз)"
 
 msgid "dailyQuests/condition/doDamage_accum"
-msgstr "нанести %(value)d ед. урона"
+msgstr "нанести урона (ед.)"
 
 msgid "dailyQuests/condition/earnExp"
 msgstr "заработать %(value)d «чистого» опыта за бой"
 
 msgid "dailyQuests/condition/earnExp_accum"
-msgstr "заработать %(value)d «чистого» опыта"
+msgstr "получить «чистого» опыта"
 
 msgid "dailyQuests/condition/expTop"
 msgstr "попасть в топ-%(value)d по опыту в своей команде"
@@ -1523,7 +1532,7 @@ msgid "dailyQuests/condition/winBattle"
 msgstr "победить в бою"
 
 msgid "dailyQuests/condition/winBattle_accum"
-msgstr "победить в %(value)d боях"
+msgstr "победить в боях"
 
 msgid "dailyQuests/countDown/remainingText"
 msgstr "до следующих доступных стандартных задач"
@@ -1565,8 +1574,11 @@ msgstr "Каждые %M мин"
 msgid "dailyQuests/missionSwitch/tooltip/header"
 msgstr "Замена задачи недоступна"
 
-msgid "dailyQuests/postBattle/and"
+msgid "dailyQuests/postBattle/conditionTypeAnd"
 msgstr "и"
+
+msgid "dailyQuests/postBattle/conditionTypeOr"
+msgstr "или"
 
 msgid "dailyQuests/postBattle/genericAmpersand"
 msgstr "и"
@@ -1634,6 +1646,24 @@ msgstr "Выполнить все нижеследующие условия за
 msgid "details/conditions/battlesInRow"
 msgstr "Выполнить все нижеследующие условия за количество боёв подряд: %s"
 
+msgid "details/conditions/beyondVisionRadius"
+msgstr ""
+"Нанести урон %(classes)s танкам противника за пределами вашей дальности "
+"обзора."
+
+msgid "details/conditions/beyondVisionRadius/all"
+msgstr "Наносить урон технике противника за пределами вашей дальности обзора."
+
+msgid "details/conditions/beyondVisionRadius/eventCount"
+msgstr ""
+"Указанное количество раз нанести урон %(classes)s танкам противника за "
+"пределами вашей дальности обзора."
+
+msgid "details/conditions/beyondVisionRadius/eventCount/all"
+msgstr ""
+"Указанное количество раз нанести урон технике противника за пределами вашей "
+"дальности обзора."
+
 msgid "details/conditions/clanKills"
 msgstr "Уничтожить технику в специальном камуфляже: цвет камуфляжа: %(camos)s"
 
@@ -1673,6 +1703,21 @@ msgstr "Все игроки взвода должны состоять в одн
 
 msgid "details/conditions/clanMembership/same/team7x7"
 msgstr "Все игроки команды должны состоять в одном клане."
+
+msgid "details/conditions/classes/AT-SPG"
+msgstr "ПТ-САУ"
+
+msgid "details/conditions/classes/SPG"
+msgstr "САУ"
+
+msgid "details/conditions/classes/heavyTank"
+msgstr "Тяжёлый"
+
+msgid "details/conditions/classes/lightTank"
+msgstr "Лёгкий"
+
+msgid "details/conditions/classes/mediumTank"
+msgstr "Средний"
 
 msgid "details/conditions/crits/critical/ammoBay"
 msgstr "Повредить боеукладку"
@@ -2078,6 +2123,84 @@ msgstr "Заработанный опыт"
 
 msgid "details/conditions/cumulative/xp/other"
 msgstr "Заработанный ролевой опыт"
+
+msgid "details/conditions/damageDealt"
+msgstr ""
+"Уничтожить %(amount)s %(classes)s танкам противника, нанеся каждой машине не"
+" менее %(damage)s ед. урона"
+
+msgid "details/conditions/damageDealt/all"
+msgstr ""
+"Уничтожить %(amount)s ед. техники противника, нанеся каждой не менее "
+"%(damage)s ед. урона."
+
+msgid "details/conditions/damageDealt/all/not"
+msgstr ""
+"Повредить %(amount)s ед. техники противника, нанеся каждой не менее "
+"%(damage)s ед. урона."
+
+msgid "details/conditions/damageDealt/not"
+msgstr ""
+"Повредить %(amount)s %(classes)s танков противника, нанеся каждой машине не "
+"менее %(damage)s ед. урона."
+
+msgid "details/conditions/directHitsReceived"
+msgstr ""
+"Нанести урон %(classes)s танкам противника, которые нанесли вам урон не "
+"менее %(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/all"
+msgstr ""
+"Нанести урон машинам противника, которые нанесли вам урон не менее "
+"%(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/all/negative"
+msgstr ""
+"Нанести урон машинам противника, которые нанесли вам урон не более "
+"%(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/eventCount"
+msgstr ""
+"Указанное количество раз нанести урон %(classes)s танкам противника, которые"
+" нанесли вам урон не менее %(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/eventCount/all"
+msgstr ""
+"Нанести урон машинам противника, которые нанесли вам урон не менее "
+"%(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/eventCount/all/negative"
+msgstr ""
+"Нанести урон машинам противника, которые нанесли вам урон не более "
+"%(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/eventCount/negative"
+msgstr ""
+"Указанное количество раз нанести урон %(classes)s танкам противника, которые"
+" нанесли вам урон не более %(directHitsReceived)s раз."
+
+msgid "details/conditions/directHitsReceived/negative"
+msgstr ""
+"Нанести урон %(classes)s танкам противника, которые нанесли вам урон не "
+"более %(directHitsReceived)s раз."
+
+msgid "details/conditions/enemyIsNotSpotted"
+msgstr "Нанести урон необнаруженным %(classes)s танкам противника."
+
+msgid "details/conditions/enemyIsNotSpotted/all"
+msgstr "Нанести урон необнаруженной технике противника."
+
+msgid "details/conditions/enemyIsNotSpotted/eventCount"
+msgstr ""
+"Указанное количество раз нанести урон необнаруженным %(classes)s танкам "
+"противника."
+
+msgid "details/conditions/enemyIsNotSpotted/eventCount/all"
+msgstr ""
+"Указанное количество раз нанести урон необнаруженной технике противника."
+
+msgid "details/conditions/enumerate/or"
+msgstr "или"
 
 msgid "details/conditions/fireDamage"
 msgstr "Поджогом нанести урон противнику"
@@ -2711,6 +2834,13 @@ msgstr "Среднее значение для команды по параме�
 msgid "details/conditions/results/team7x7/simple"
 msgstr "Параметр для команды: %(param)s"
 
+msgid "details/conditions/spotEnemy"
+msgstr ""
+"Уничтожить %(amount)s лично обнаруженных %(classes)s танков противника."
+
+msgid "details/conditions/spotEnemy/all"
+msgstr "Уничтожить %(amount)s ед. лично обнаруженной техники противника."
+
 msgid "details/conditions/survive"
 msgstr "Выжить в бою"
 
@@ -2725,6 +2855,17 @@ msgstr "Топ-%(value)s"
 
 msgid "details/conditions/vehicle"
 msgstr "Подходящая техника:"
+
+msgid "details/conditions/vehicleBlockedByArmor/title"
+msgstr "Заблокировать урон."
+
+msgid "details/conditions/vehicleBlockedByArmor/whileStill"
+msgstr ""
+"Заблокировать %(damage)s ед. урона от %(classes)s танков противника, "
+"управляя неподвижной машиной."
+
+msgid "details/conditions/vehicleBlockedByArmor/whileStill/all"
+msgstr "Заблокировать %(damage)s ед. урона, управляя неподвижной машиной."
 
 msgid "details/conditions/vehicleDamage"
 msgstr "Нанести урон машине противника"
@@ -2864,6 +3005,36 @@ msgstr "Подходящая техника:"
 
 msgid "details/conditions/vehicleKills"
 msgstr "Уничтожить:"
+
+msgid "details/conditions/vehicleKills/beyondVisionRadius"
+msgstr ""
+"Уничтожить %(classes)s танков противника за пределами вашей дальности "
+"обзора."
+
+msgid "details/conditions/vehicleKills/beyondVisionRadius/all"
+msgstr "Уничтожить технику противника за пределами вашей дальности обзора."
+
+msgid "details/conditions/vehicleKills/enemyIsNotSpotted"
+msgstr "Уничтожить необнаруженные %(classes)s танки противника."
+
+msgid "details/conditions/vehicleKills/enemyIsNotSpotted/all"
+msgstr "Уничтожить необнаруженную технику противника."
+
+msgid "details/conditions/vehicleKills/whileEnemyInvisible"
+msgstr "Уничтожить необнаруженные %(classes)s танки противника."
+
+msgid "details/conditions/vehicleKills/whileEnemyInvisible/all"
+msgstr "Уничтожить необнаруженную технику противника."
+
+msgid "details/conditions/vehicleKills/whileMovingAtSpeed"
+msgstr ""
+"Уничтожить %(classes)s танков противника, двигаясь со скоростью не менее "
+"%(speed)s км/ч."
+
+msgid "details/conditions/vehicleKills/whileMovingAtSpeed/all"
+msgstr ""
+"Уничтожить технику противника, двигаясь со скоростью не менее %(speed)s "
+"км/ч."
 
 msgid "details/conditions/vehicleStun"
 msgstr "Нанести секунд оглушения машине противника"
@@ -3092,6 +3263,41 @@ msgstr "Техника в Ангаре:"
 msgid "details/conditions/vehiclesUnlocked"
 msgstr "Исследованная техника:"
 
+msgid "details/conditions/whileEnemyInvisible"
+msgstr "Нанести урон необнаруженным %(classes)s танкам противника."
+
+msgid "details/conditions/whileEnemyInvisible/all"
+msgstr "Нанести урон необнаруженной технике противника."
+
+msgid "details/conditions/whileEnemyInvisible/eventCount"
+msgstr ""
+"Указанное количество раз нанести урон необнаруженным %(classes)s танкам "
+"противника."
+
+msgid "details/conditions/whileEnemyInvisible/eventCount/all"
+msgstr ""
+"Указанное количество раз нанести урон необнаруженной технике противника."
+
+msgid "details/conditions/whileMovingAtSpeed"
+msgstr ""
+"Нанести %(amount)s ед. урона %(classes)s технике противника, двигаясь со "
+"скоростью не менее %(speed)s км/ч."
+
+msgid "details/conditions/whileMovingAtSpeed/all"
+msgstr ""
+"Нанести %(amount)s ед. урона технике противника, двигаясь со скоростью не "
+"менее %(speed)s км/ч."
+
+msgid "details/conditions/whileMovingAtSpeed/eventCount"
+msgstr ""
+"Указанное количество раз нанести урон %(classes)s танков противника, "
+"двигаясь со скоростью не менее %(speed)s км/ч."
+
+msgid "details/conditions/whileMovingAtSpeed/eventCount/all"
+msgstr ""
+"Указанное количество раз нанести урон технике противника, двигаясь со "
+"скоростью не менее %(speed)s км/ч."
+
 msgid "details/conditions/win"
 msgstr "Победить в бою"
 
@@ -3151,6 +3357,12 @@ msgstr "Проведённых боёв в режиме «%(modeName)s»"
 
 msgid "details/dossier/43/battlesCount"
 msgstr "Проведённых боёв в режиме «Натиск»"
+
+msgid "details/dossier/44/battlesCount"
+msgstr "Проведено боёв в режиме «Случайный бой: Разминка»."
+
+msgid "details/dossier/49/battlesCount"
+msgstr "Проведённых боёв в режиме «Натиск Лайт»."
 
 msgid "details/dossier/5/battlesCount"
 msgstr "Проведённых Специальных боёв"
@@ -4413,24 +4625,21 @@ msgid "infoPage/conditions/default"
 msgstr ""
 "Некоторые задачи необходимо выполнить за один бой, для других подобных "
 "ограничений нет. Для накопительных задач предусмотрена шкала прогресса. "
-"Задачи доступны для выполнения в Случайных боях (в т.ч. в Генеральном "
-"сражении), а также в режиме «Натиск». Прогресс по задачам сохраняется при "
-"смене режима игры."
+"Задачи доступны для выполнения в Случайных боях и «Натиске». Прогресс "
+"выполнения сохраняется при смене режима."
 
 msgid "infoPage/conditions/winback"
 msgstr ""
 "Некоторые задачи необходимо выполнить за один бой, для других подобных "
 "ограничений нет. Для накопительных задач предусмотрена шкала прогресса. "
-"Задачи доступны для выполнения в Разминке и Случайных боях (в т.ч. в "
-"Генеральном сражении)."
+"Задачи доступны для выполнения в «Разминке» и Случайных боях."
 
 msgid "infoPage/conditions/winback_comp7Active"
 msgstr ""
 "Некоторые задачи необходимо выполнить за один бой, для других подобных "
 "ограничений нет. Для накопительных задач предусмотрена шкала прогресса. "
-"Задачи доступны для выполнения в Разминке, Случайных боях (в т.ч. в "
-"Генеральном сражении) и Натиске. Прогресс выполнения сохраняется при смене "
-"режима."
+"Задачи доступны для выполнения в «Разминке», Случайных боях и «Натиске». "
+"Прогресс выполнения сохраняется при смене режима."
 
 msgid "infoPage/conditionsTitle"
 msgstr "Условия"
@@ -4920,15 +5129,6 @@ msgstr ""
 msgid "missions/tab/battleMatters/header"
 msgstr "Танковая академия"
 
-msgid "missions/tab/battle_pass/body"
-msgstr ""
-"Играйте в Случайных боях или в режиме «Стальной охотник» и получайте "
-"дополнительные награды. Очки Боевого пропуска также начисляются за "
-"ежедневные задачи."
-
-msgid "missions/tab/battle_pass/header"
-msgstr "Боевой пропуск"
-
 msgid "missions/tab/categories/body"
 msgstr "Различные боевые задачи разового или многоразового выполнения."
 
@@ -5215,6 +5415,11 @@ msgstr "Основное условие выполнено"
 
 msgid "personalMission/status/missionDisabled"
 msgstr "Задача отключена"
+
+msgid "personalMission/status/notStartedRequired"
+msgstr ""
+"Недоступно: личные боевые задачи можно выполнять на технике %(minLevel)s "
+"уровня и выше"
 
 msgid "personalMission/status/onlyAddDone"
 msgstr "Дополнительное условие выполнено"
@@ -5510,6 +5715,9 @@ msgstr "«Ящик»"
 
 msgid "token/default/china"
 msgstr "«Китай»"
+
+msgid "token/default/comp7_light"
+msgstr "Натиск Лайт"
 
 msgid "token/default/czech"
 msgstr "«Чехословакия»"

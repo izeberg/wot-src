@@ -10,7 +10,7 @@
 	</crew>
 	<supplySlots>5 1 1 6 6 6 7 8 8 8</supplySlots>
 	<speedLimits>
-		<forward>35</forward>
+		<forward>33</forward>
 		<backward>15</backward>
 	</speedLimits>
 	<invisibility>
@@ -94,7 +94,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>35920</weight>
-		<maxHealth>1440</maxHealth>
+		<maxHealth>1520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -1990,7 +1990,6 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>13000</weight>
-			<maxLoad>78000</maxLoad>
 			<terrainResistance>
 				1.3 1.4 2.3
 				<!--BW_String-->
@@ -3901,7 +3900,6 @@
 			<level>9</level>
 			<price>63000</price>
 			<notInShop>true</notInShop>
-			<yawLimits>-180 180</yawLimits>
 			<armor>
 				<armor_1>300</armor_1>
 				<armor_2>220</armor_2>
@@ -3923,7 +3921,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>18500</weight>
-			<maxHealth>460</maxHealth>
+			<maxHealth>380</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -5251,8 +5249,8 @@
 		<detailed>
 			<engines>
 				<Maybach_HL_295_a_injection_d_essence_FL>
-					<smplEnginePower>1170</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplEnginePower>1200</smplEnginePower>
+					<smplFwMaxSpeed>33</smplFwMaxSpeed>
 				</Maybach_HL_295_a_injection_d_essence_FL>
 			</engines>
 			<chassis>

@@ -1,16 +1,12 @@
 import logging, CommandMapping
 from CurrentVehicle import g_currentVehicle
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.common.battle_royale import br_helpers
 from gui.shared.gui_items.Vehicle import getTypeBigIconPath
 from battle_royale.gui.Scaleform.daapi.view.common.veh_modules_config_cmp import VehicleModulesConfiguratorCmp
 from battle_royale_sounds import BATTLE_ROYALE_VEHICLE_INFO_SOUND_SPACE
 from gui.Scaleform.daapi.view.meta.BattleRoyaleVehicleInfoMeta import BattleRoyaleVehicleInfoMeta
-from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.shared import events
-from gui.shared.event_bus import EVENT_BUS_SCOPE
 from gui.shared.formatters import text_styles
 from gui.shared.view_helpers.blur_manager import CachedBlur
 from helpers import dependency
@@ -90,7 +86,8 @@ class HangarVehicleInfo(BattleRoyaleVehicleInfoMeta, IGlobalListener):
         return self.__vehicle
 
     def onClose(self):
-        self.fireEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_HANGAR)), scope=EVENT_BUS_SCOPE.LOBBY)
+        from gui.shared.event_dispatcher import showHangar
+        showHangar()
 
     def onPrbEntitySwitching(self):
         if self.prbEntity is None:
@@ -110,8 +107,7 @@ class HangarVehicleInfo(BattleRoyaleVehicleInfoMeta, IGlobalListener):
         super(HangarVehicleInfo, self)._populate()
         self.__battleRoyaleController.onUpdated += self.__onBattleRoyaleEnabledChanged
         self.startGlobalListening()
-        self.as_setDataS({'btnCloseLabel': backport.text(R.strings.battle_royale.hangarVehicleInfo.closeBtn()), 
-           'infoIconSource': backport.image(R.images.gui.maps.icons.library.info()), 
+        self.as_setDataS({'infoIconSource': backport.image(R.images.gui.maps.icons.library.info()), 
            'infoText': text_styles.highlightText(backport.text(R.strings.battle_royale.hangarVehicleInfo.moduleTreeTip(), key=text_styles.neutral(br_helpers.getHotKeyString(CommandMapping.CMD_UPGRADE_PANEL_SHOW)))), 
            'vehTitle': text_styles.grandTitle(self.__vehicle.shortUserName), 
            'vehTypeIcon': getTypeBigIconPath(self.__vehicle.type), 

@@ -19,11 +19,17 @@ package net.wg.gui.battle.views.vehicleMarkers
       private static const INVALIDATE_BAR:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 3;
       
       private static const HEALTH_PROGRESS_BAR_PREFIX:String = "HealthProgressBar_";
+      
+      private static const HEALTH_BAR_CHILD_INDEX:uint = 2;
        
+      
+      public var hitSplash:HealthBarAnimatedPart = null;
       
       public var healthBar:MovieClip = null;
       
-      public var hitSplash:HealthBarAnimatedPart = null;
+      public var glitchEffect:MovieClip = null;
+      
+      public var deltaShineEffect:MovieClip = null;
       
       private var _color:String = "green";
       
@@ -49,6 +55,8 @@ package net.wg.gui.battle.views.vehicleMarkers
       {
          this.hitSplash.removeEventListener(HealthBarAnimatedPart.SHOW,this.onHitSplashShowHandler);
          this.hitSplash.removeEventListener(HealthBarAnimatedPart.HIDE,this.onHitSplashHideHandler);
+         this.deltaShineEffect = null;
+         this.glitchEffect = null;
          this.healthBar = null;
          this.hitSplash.dispose();
          this.hitSplash = null;
@@ -83,7 +91,7 @@ package net.wg.gui.battle.views.vehicleMarkers
             {
                healthProgressBarClass = getDefinitionByName(linkage) as Class;
                progressBar = new healthProgressBarClass();
-               addChildAt(progressBar,0);
+               addChildAt(progressBar,HEALTH_BAR_CHILD_INDEX);
             }
             catch(error:ReferenceError)
             {
@@ -155,6 +163,10 @@ package net.wg.gui.battle.views.vehicleMarkers
       
       public function set maxHealth(param1:int) : void
       {
+         if(param1 == 0)
+         {
+            return;
+         }
          this._maxHealth = param1;
          this._maxHealthMult = 1 / this._maxHealth;
          invalidate(INVALIDATE_BAR);
@@ -169,6 +181,21 @@ package net.wg.gui.battle.views.vehicleMarkers
       {
          this._currHealth = param1 >= 0 ? Number(param1) : Number(0);
          invalidate(INVALIDATE_BAR);
+      }
+      
+      public function showGlitchEffect() : void
+      {
+         this.glitchEffect.play();
+      }
+      
+      public function showDeltaShineEffect() : void
+      {
+         if(!this._isSplashRunning)
+         {
+            return;
+         }
+         this.deltaShineEffect.x = this.hitSplash.x + (this.hitSplash.width >> 1);
+         this.deltaShineEffect.play();
       }
       
       private function onHitSplashShowHandler(param1:Event) : void

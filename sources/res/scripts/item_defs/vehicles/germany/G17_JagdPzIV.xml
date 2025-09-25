@@ -2883,9 +2883,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7800</weight>
-			<maxLoad>24500</maxLoad>
 			<terrainResistance>
-				1.2 1.4 2.5
+				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>36000</brakeForce>
@@ -4980,7 +4979,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7800</weight>
-			<maxLoad>26800</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -7424,19 +7422,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.20125
+								0.18515
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1127
+								0.10465
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.0966
+								0.08855
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

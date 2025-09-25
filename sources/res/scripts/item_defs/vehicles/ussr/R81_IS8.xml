@@ -85,7 +85,7 @@
 	<hull>
 		<variants>
 			<hull2>
-				<turret0>Turret_2_IS8</turret0>
+				<turret0>Turret_2_R81_IS8</turret0>
 				<turretPositions>
 					<turret>0.000000 0.677525 0.481770</turret>
 				</turretPositions>
@@ -117,7 +117,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>25050</weight>
-		<maxHealth>1360</maxHealth>
+		<maxHealth>1520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>210</maxHealth>
 			<maxRegenHealth>140</maxRegenHealth>
@@ -1887,14 +1887,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_IS8>
-			<userString>#ussr_vehicles:Chassis_IS8</userString>
+		<Chassis_R81_IS8>
+			<userString>#ussr_vehicles:Chassis_R81_IS8</userString>
 			<tags/>
 			<level>8</level>
 			<price>27920</price>
 			<unlocks>
 				<chassis>
-					Chassis_IS8_2
+					Chassis_R81_IS8_2
 					<cost>23800</cost>
 				</chassis>
 			</unlocks>
@@ -1903,14 +1903,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>50907</maxLoad>
 			<terrainResistance>
-				1.1 1.4 2.3
+				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>39500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>30</rotationSpeed>
+			<rotationSpeed>33</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.2
@@ -3492,9 +3491,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_IS8>
-		<Chassis_IS8_2>
-			<userString>#ussr_vehicles:Chassis_IS8_2</userString>
+		</Chassis_R81_IS8>
+		<Chassis_R81_IS8_2>
+			<userString>#ussr_vehicles:Chassis_R81_IS8_2</userString>
 			<tags/>
 			<level>9</level>
 			<price>66500</price>
@@ -3503,14 +3502,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>58900</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>39500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>32</rotationSpeed>
+			<rotationSpeed>36</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -5092,17 +5090,17 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_IS8_2>
+		</Chassis_R81_IS8_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_IS8>
-			<userString>#ussr_vehicles:Turret_1_IS8</userString>
+		<Turret_1_R81_IS8>
+			<userString>#ussr_vehicles:Turret_1_R81_IS8</userString>
 			<tags/>
 			<level>8</level>
 			<price>33680</price>
 			<unlocks>
 				<turret>
-					Turret_2_IS8
+					Turret_2_R81_IS8
 					<cost>28300</cost>
 				</turret>
 			</unlocks>
@@ -5124,7 +5122,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>11000</weight>
-			<maxHealth>340</maxHealth>
+			<maxHealth>280</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>160</maxHealth>
@@ -5134,7 +5132,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>110</maxHealth>
 				<maxRegenHealth>55</maxRegenHealth>
@@ -5144,19 +5142,13 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_122-mm_D-25T_with_wedges_shutter>
+				<_122mm_D_25T_T_10>
 					shared
-					<maxAmmo>30</maxAmmo>
+					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
-					<unlocks>
-						<gun>
-							_122mm_BL-9
-							<cost>44000</cost>
-						</gun>
-					</unlocks>
 					<armor>
 						<armor_1>
 							201
@@ -5185,29 +5177,26 @@
 						<gun>50</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.4
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.8
+						11.1
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.1
+							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>4</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						3.4
+						2.8
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5351,419 +5340,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122-mm_D-25T_with_wedges_shutter>
-				<_122mm_BL-9>
-					shared
-					<maxAmmo>30</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -15 1 -15</minPitch>
-						<maxPitch>0 5 1 5</maxPitch>
-					</pitchLimits>
-					<unlocks>
-						<gun>
-							_122mm_M62-T2
-							<cost>59300</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							201
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							102
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							40
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>50</gun>
-					</armor>
-					<reloadTime>
-						12.7
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						3.4
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.18
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/russian/R81_IS8/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/russian/R81_IS8/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/russian/R81_IS8/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/russian/R81_IS8/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/russian/R81_IS8/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large_mb</effects>
-					<reloadEffect>reload115_152</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0 -0.014897 2.71314
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.189539 0.189539
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0 -0.014897 2.71314
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.008322 1.53516 1.54163
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.884632 -0.004439 3.14048
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								3.0167 1.70193 3.0168
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.703587</clipAngle>
-							<anchorShift>0.814388</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								-0.011736 1.38313 1.52564
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.663163 -0.005416 3.14061
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								3.0081 2.11858 3.00816
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.453188</clipAngle>
-							<anchorShift>0.913847</anchorShift>
-						</slot>
-						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48000</slotId>
-							<position>
-								0 0.121584 0.540516
-								<!--BW_String-->
-							</position>
-							<rotation>-0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<applyType>gunMantlet</applyType>
-							<size>medium</size>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.00087 -0.028701 1.47495
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.00087 -0.028701 2.17495
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.118 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.7
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<camouflage>
-						<tiling>
-							0.88 0.88 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							89.3707 90.9993
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_122mm_BL-9>
-				<_122mm_M62-T2>
-					shared
-					<maxAmmo>30</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -15 1 -15</minPitch>
-						<maxPitch>0 5 1 5</maxPitch>
-					</pitchLimits>
-					<unlocks>
-						<vehicle>
-							R155_Object_277
-							<cost>220800</cost>
-						</vehicle>
-					</unlocks>
-					<armor>
-						<armor_1>
-							201
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							102
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							40
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>50</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.38
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						12.7
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.1
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						3.2
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.18
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/russian/R81_IS8/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/russian/R81_IS8/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/russian/R81_IS8/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/russian/R81_IS8/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/russian/R81_IS8/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large_mb</effects>
-					<reloadEffect>reload115_152</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0 -0.014897 2.51314
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.189539 0.189539
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0 -0.014897 2.51314
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.008322 1.53516 1.54163
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.884632 -0.004439 3.14048
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								3.0167 1.70193 3.0168
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.703587</clipAngle>
-							<anchorShift>0.814388</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								-0.011736 1.38313 1.52564
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.663163 -0.005416 3.14061
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								3.0081 2.11858 3.00816
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.453188</clipAngle>
-							<anchorShift>0.913847</anchorShift>
-						</slot>
-						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48000</slotId>
-							<position>
-								0 0.121584 0.540516
-								<!--BW_String-->
-							</position>
-							<rotation>-0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<applyType>gunMantlet</applyType>
-							<size>medium</size>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.000742 -0.0287 1.42
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.000742 -0.0287 2.12
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.114 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.7
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<camouflage>
-						<tiling>
-							0.97 0.97 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							88.7336 89.2056
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_122mm_M62-T2>
+				</_122mm_D_25T_T_10>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R81_IS8/normal/lod0/Turret_01.model</undamaged>
@@ -7012,12 +6589,18 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_IS8>
-		<Turret_2_IS8>
-			<userString>#ussr_vehicles:Turret_2_IS8</userString>
+		</Turret_1_R81_IS8>
+		<Turret_2_R81_IS8>
+			<userString>#ussr_vehicles:Turret_2_R81_IS8</userString>
 			<tags/>
 			<level>9</level>
 			<price>66500</price>
+			<unlocks>
+				<gun>
+					_122mm_M62_T2_T_10
+					<cost>59300</cost>
+				</gun>
+			</unlocks>
 			<armor>
 				<armor_1>201</armor_1>
 				<armor_2>201</armor_2>
@@ -7034,7 +6617,7 @@
 			</armor>
 			<primaryArmor>armor_13 armor_2 armor_4</primaryArmor>
 			<weight>11000</weight>
-			<maxHealth>440</maxHealth>
+			<maxHealth>380</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>160</maxHealth>
@@ -7058,9 +6641,9 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_122-mm_D-25T_with_wedges_shutter>
+				<_122mm_D_25T_T_10>
 					shared
-					<maxAmmo>30</maxAmmo>
+					<maxAmmo>35</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 5 1 5</maxPitch>
@@ -7093,11 +6676,11 @@
 						<gun>50</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.46
+						0.39
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						11.3
+						10.7
 						<!--BW_String-->
 					</reloadTime>
 					<shotDispersionFactors>
@@ -7105,17 +6688,14 @@
 							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>4</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.9
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7255,208 +6835,16 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122-mm_D-25T_with_wedges_shutter>
-				<_122mm_BL-9>
+				</_122mm_D_25T_T_10>
+				<_122mm_M62_T2_T_10>
 					shared
-					<maxAmmo>30</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -15 1 -15</minPitch>
-						<maxPitch>0 5 1 5</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_1>
-							250
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_4>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_4>
-						<armor_5>
-							210
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_5>
-						<armor_6>
-							150
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_6>
-						<armor_7>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_7>
-						<gun>50</gun>
-					</armor>
-					<reloadTime>
-						12.3
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.9
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.18
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<turretYawLimits>-180 180</turretYawLimits>
-					<models>
-						<undamaged>vehicles/russian/R81_IS8/normal/lod0/Gun_05.model</undamaged>
-						<destroyed>vehicles/russian/R81_IS8/crash/lod0/Gun_05.model</destroyed>
-						<exploded>vehicles/russian/R81_IS8/crash/lod0/Gun_05.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/russian/R81_IS8/collision/Gun_05.model</collisionModelServer>
-						<collisionModelClient>vehicles/russian/R81_IS8/collision_client/Gun_05.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large_mb</effects>
-					<reloadEffect>reload115_152</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0 -0.014897 2.71314
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.189539 0.189539
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0 -0.014897 2.71314
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45000</slotId>
-							<tags>formfactor_rect1x2</tags>
-							<position>
-								-0.008322 1.53516 1.54163
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.884632 -0.004439 3.14048
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								3.0167 1.70193 3.0168
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.703587</clipAngle>
-							<anchorShift>0.913155</anchorShift>
-						</slot>
-						<slot>
-							<slotType>projectionDecal</slotType>
-							<slotId>45001</slotId>
-							<tags>formfactor_square</tags>
-							<position>
-								-0.011736 1.38313 1.52564
-								<!--BW_String-->
-							</position>
-							<rotation>
-								0.663163 -0.005416 3.14061
-								<!--BW_String-->
-							</rotation>
-							<scale>
-								3.0081 2.11858 3.00816
-								<!--BW_String-->
-							</scale>
-							<showOn>4368</showOn>
-							<clipAngle>0.453188</clipAngle>
-							<anchorShift>0.989932</anchorShift>
-						</slot>
-						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48000</slotId>
-							<position>
-								0 0.121584 0.540516
-								<!--BW_String-->
-							</position>
-							<rotation>-0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<applyType>gunMantlet</applyType>
-							<size>medium</size>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0 -0.029794 1.52496
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0 -0.029794 2.22496
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.118 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.7
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<edgeByVisualModel>false</edgeByVisualModel>
-					<camouflage>
-						<tiling>
-							0.91 0.91 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							89.3707 90.9993
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_122mm_BL-9>
-				<_122mm_M62-T2>
-					shared
-					<maxAmmo>30</maxAmmo>
+					<maxAmmo>35</maxAmmo>
+					<unlocks>
+						<vehicle>
+							R155_Object_277
+							<cost>220800</cost>
+						</vehicle>
+					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>0 5 1 5</maxPitch>
@@ -7492,26 +6880,20 @@
 						0.38
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						12.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>12</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.08
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>4</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						2.8
+						2.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -7651,7 +7033,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122mm_M62-T2>
+				</_122mm_M62_T2_T_10>
 			</guns>
 			<models>
 				<undamaged>vehicles/russian/R81_IS8/normal/lod0/Turret_02.model</undamaged>
@@ -8927,86 +8309,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_IS8>
+		</Turret_2_R81_IS8>
 	</turrets0>
 	<engines>
-		<V-12-5>
+		<V_12_5>
 			shared
 			<unlocks>
 				<engine>
-					V-12-6
+					V_12_6
 					<cost>26350</cost>
 				</engine>
 			</unlocks>
-		</V-12-5>
-		<V-12-6>shared</V-12-6>
+		</V_12_5>
+		<V_12_6>shared</V_12_6>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
 	</fuelTanks>
 	<radios>
-		<_10RK>
-			shared
-			<unlocks>
-				<radio>
-					_12RT
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_10RK>
-		<_12RT>
-			shared
-			<unlocks>
-				<radio>
-					R113
-					<cost>8700</cost>
-				</radio>
-			</unlocks>
-		</_12RT>
 		<R113>shared</R113>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<V-12-5>
-					<smplEnginePower>
-						740.0968
-						<!--BW_String-->
-					</smplEnginePower>
+				<V_12_5>
+					<smplEnginePower>800</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
-				</V-12-5>
-				<V-12-6>
-					<smplEnginePower>
-						792.9609
-						<!--BW_String-->
-					</smplEnginePower>
+				</V_12_5>
+				<V_12_6>
+					<smplEnginePower>860</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
-				</V-12-6>
+				</V_12_6>
 			</engines>
 			<chassis>
-				<Chassis_IS8>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.18515
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_IS8>
-				<Chassis_IS8_2>
+				<Chassis_R81_IS8>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9027,7 +8363,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_IS8_2>
+				</Chassis_R81_IS8>
+				<Chassis_R81_IS8_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.15295
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_R81_IS8_2>
 			</chassis>
 		</detailed>
 	</physics>

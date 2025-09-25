@@ -130,12 +130,9 @@
 		<weight>10843</weight>
 		<maxHealth>280</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>110</maxHealth>
-			<maxRegenHealth>55</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>190</maxHealth>
+			<maxRegenHealth>143</maxRegenHealth>
+			<repairCost>7</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/american/A32_M12/normal/lod0/Hull.model</undamaged>
@@ -3134,14 +3131,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_M12>
-			<userString>#usa_vehicles:Chassis_M12</userString>
+		<Chassis_A32_M12>
+			<userString>#usa_vehicles:Chassis_A32_M12</userString>
 			<tags/>
 			<level>6</level>
 			<price>14600</price>
 			<unlocks>
 				<chassis>
-					Chassis_M12_2
+					Chassis_A32_M12_2
 					<cost>7965</cost>
 				</chassis>
 			</unlocks>
@@ -3150,9 +3147,8 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>27000</maxLoad>
 			<terrainResistance>
-				1.4 1.6 2.7
+				1.3 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>24000</brakeForce>
@@ -5609,9 +5605,9 @@
 				8.5714283
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M12>
-		<Chassis_M12_2>
-			<userString>#usa_vehicles:Chassis_M12_2</userString>
+		</Chassis_A32_M12>
+		<Chassis_A32_M12_2>
+			<userString>#usa_vehicles:Chassis_A32_M12_2</userString>
 			<tags/>
 			<level>7</level>
 			<price>19700</price>
@@ -5620,7 +5616,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>29500</maxLoad>
 			<terrainResistance>
 				1.3 1.5 2.5
 				<!--BW_String-->
@@ -5642,8 +5637,8 @@
 				3.0
 				<!--BW_String-->
 			</bulkHealthFactor>
-			<maxHealth>110</maxHealth>
-			<maxRegenHealth>85</maxRegenHealth>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>135</maxRegenHealth>
 			<repairCost>
 				5.0
 				<!--BW_String-->
@@ -8076,17 +8071,17 @@
 				</customizableVehicleAreas>
 			</customization>
 			<repairTime>
-				6.94736862
+				6.66666651
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_M12_2>
+		</Chassis_A32_M12_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_M12>
+		<Turret_1_A32_M12>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:Turret_1_M12</userString>
-			<tags>cannotDetach</tags>
-			<level>7</level>
+			<userString>#usa_vehicles:Turret_1_A32_M12</userString>
+			<tags>cannotDetach turretless</tags>
+			<level>6</level>
 			<price>120</price>
 			<notInShop>true</notInShop>
 			<armor>
@@ -8126,7 +8121,7 @@
 					</reloadTime>
 					<unlocks>
 						<gun>
-							_155mm_Gun_M1A1
+							_155mm_Gun_M1A1_M12
 							<cost>15500</cost>
 						</gun>
 					</unlocks>
@@ -8372,11 +8367,11 @@
 				</density>
 				<aoTextureSize>512 256</aoTextureSize>
 			</camouflage>
-		</Turret_1_M12>
-		<Turret_2_M12>
+		</Turret_1_A32_M12>
+		<Turret_2_A32_M12>
 			<ceilless>true</ceilless>
-			<userString>#usa_vehicles:Turret_1_M12</userString>
-			<tags>cannotDetach</tags>
+			<userString>#usa_vehicles:Turret_2_A32_M12</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>7</level>
 			<price>120</price>
 			<notInShop>true</notInShop>
@@ -8408,7 +8403,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_155mm_Gun_M1A1>
+				<_155mm_Gun_M1A1_M12>
 					shared
 					<maxAmmo>20</maxAmmo>
 					<reloadTime>
@@ -8582,7 +8577,7 @@
 						</density>
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
-				</_155mm_Gun_M1A1>
+				</_155mm_Gun_M1A1_M12>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A32_M12/normal/lod0/Turret_02.model</undamaged>
@@ -8673,57 +8668,30 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_2_M12>
+		</Turret_2_A32_M12>
 	</turrets0>
 	<engines>
-		<Wright_Continental_R-975C1>
+		<Wright_Continental_R_975C1_M12>
 			shared
 			<unlocks>
 				<engine>
-					Wright_Continental_R-975C4
-					<cost>1500</cost>
-				</engine>
-			</unlocks>
-		</Wright_Continental_R-975C1>
-		<Wright_Continental_R-975C4>
-			shared
-			<unlocks>
-				<engine>
-					Ford_GAA_R
+					Ford_GAA_early_M12
 					<cost>5100</cost>
 				</engine>
 			</unlocks>
-		</Wright_Continental_R-975C4>
-		<Ford_GAA_R>shared</Ford_GAA_R>
+		</Wright_Continental_R_975C1_M12>
+		<Ford_GAA_early_M12>shared</Ford_GAA_early_M12>
 	</engines>
 	<fuelTanks>
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<SCR_510>
-			shared
-			<unlocks>
-				<radio>
-					SCR_610
-					<cost>1480</cost>
-				</radio>
-			</unlocks>
-		</SCR_510>
-		<SCR_610>
-			shared
-			<unlocks>
-				<radio>
-					SCR_619
-					<cost>9000</cost>
-				</radio>
-			</unlocks>
-		</SCR_610>
 		<SCR_619>shared</SCR_619>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Wright_Continental_R-975C1>
+				<Wright_Continental_R_975C1_M12>
 					<smplEnginePower>
 						422.9124
 						<!--BW_String-->
@@ -8732,18 +8700,8 @@
 						38.6
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Wright_Continental_R-975C1>
-				<Wright_Continental_R-975C4>
-					<smplEnginePower>
-						486.3493
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>
-						38.6
-						<!--BW_String-->
-					</smplFwMaxSpeed>
-				</Wright_Continental_R-975C4>
-				<Ford_GAA_R>
+				</Wright_Continental_R_975C1_M12>
+				<Ford_GAA_early_M12>
 					<smplEnginePower>
 						528.6406
 						<!--BW_String-->
@@ -8752,32 +8710,10 @@
 						38.6
 						<!--BW_String-->
 					</smplFwMaxSpeed>
-				</Ford_GAA_R>
+				</Ford_GAA_early_M12>
 			</engines>
 			<chassis>
-				<Chassis_M12>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.21735
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.1288
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.1127
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_M12>
-				<Chassis_M12_2>
+				<Chassis_A32_M12>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8798,7 +8734,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_M12_2>
+				</Chassis_A32_M12>
+				<Chassis_A32_M12_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.20125
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.10465
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A32_M12_2>
 			</chassis>
 		</detailed>
 	</physics>

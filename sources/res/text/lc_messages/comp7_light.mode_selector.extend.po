@@ -1,0 +1,32 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "mode/comp7Light/battlePassTooltip/body"
+msgstr ""
+"Играя на технике VIII уровня в режиме {whiteSpanish_open}«Натиск "
+"Лайт»{whiteSpanish_close}, вы будете зарабатывать очки. Они нужны для "
+"продвижения по прогрессии Боевого пропуска."
+
+msgid "mode/comp7Light/battlePassTooltip/header"
+msgstr "Очки Боевого пропуска"
+
+msgid "mode/comp7Light/currentStage"
+msgstr "Текущий этап:"
+
+msgid "mode/comp7Light/description"
+msgstr ""
+"Режим без рангов: 7x7 {parSecondary_open}|{parSecondary_close} "
+"%(tier)s&nbsp;уровень"
+
+msgid "mode/comp7Light/steps"
+msgstr "{whiteSpanish_Open}%(done)s{whiteSpanish_Close} / %(total)s"

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from fun_random.gui.battle_results.economics.fun_tmen_xp_packer import FunTmenXpPacker
 from fun_random.gui.battle_results.economics.fun_currency_packers import FunCreditsPacker, FunCrystalsPacker, FunXpPacker, FunGoldPacker

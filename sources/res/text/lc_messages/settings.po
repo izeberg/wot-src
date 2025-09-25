@@ -267,6 +267,96 @@ msgstr "Качество воды"
 msgid "WATER_QUALITY/description"
 msgstr "Определяет качество прорисовки водных поверхностей."
 
+msgid "aim/armorFlashlight/colorSchema/greenShades/label"
+msgstr "Только слабая броня"
+
+msgid "aim/armorFlashlight/colorSchema/greenShades/tooltip/body"
+msgstr ""
+"При активации будут подсвечиваться только слабые участки брони цели.\n"
+"\n"
+"Броня с высокой вероятностью пробития подсвечивается сплошным зелёным цветом, а со средней вероятностью — полупрозрачным зелёным. Цвета могут отличаться в режиме цветовой слепоты."
+
+msgid "aim/armorFlashlight/colorSchema/greenShades/tooltip/header"
+msgstr "Подсветка только слабой брони"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/label"
+msgstr "Только крепкая броня"
+
+msgid "aim/armorFlashlight/colorSchema/redShades/tooltip/body"
+msgstr ""
+"При активации будут подсвечиваться только крепкие участки брони цели.\n"
+"\n"
+"Броня с околонулевой вероятностью пробития подсвечивается сплошным красным цветом, а со средней вероятностью — полупрозрачным красным. Цвета могут отличаться в режиме цветовой слепоты."
+
+msgid "aim/armorFlashlight/colorSchema/redShades/tooltip/header"
+msgstr "Подсветка только крепкой брони"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/label"
+msgstr "Вся броня"
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/tooltip/body"
+msgstr ""
+"При активации будут подсвечиваться все участки брони цели.\n"
+"\n"
+"Броня с околонулевой вероятностью пробития подсвечивается красным цветом, со средней — жёлтым, а с высокой вероятностью — зелёным. Цвета могут отличаться в режиме цветовой слепоты."
+
+msgid "aim/armorFlashlight/colorSchema/redYellowGreen/tooltip/header"
+msgstr "Подсветка всей брони"
+
+msgid "aim/armorFlashlight/colorSchemas"
+msgstr "Подсветка брони"
+
+msgid "aim/armorFlashlight/enabled/label"
+msgstr "Включить в начале боя"
+
+msgid "aim/armorFlashlight/enabled/tooltip/body"
+msgstr ""
+"Стандартное поведение подсветки в начале боя. Вы можете включить или отключить подсветку с помощью назначенной клавиши в любое время.\n"
+"\n"
+"При включении подсветка действует только в снайперском режиме.\n"
+"\n"
+"Поддерживаемые режимы:\n"
+"• «Случайный бой» и «Командная тренировка»;\n"
+"• «Линия фронта»;\n"
+"• «Аркада»;\n"
+"• «Натиск»;\n"
+"• Прочие режимы и события.\n"
+"\n"
+"В будущем подсветка может быть добавлена в другие режимы и события."
+
+msgid "aim/armorFlashlight/enabled/tooltip/header"
+msgstr "Включить в начале боя"
+
+msgid "aim/armorFlashlight/fill/label"
+msgstr "Текстура подсветки"
+
+msgid "aim/armorFlashlight/fill/pattern1"
+msgstr "Сплошная"
+
+msgid "aim/armorFlashlight/fill/pattern2"
+msgstr "Редкая"
+
+msgid "aim/armorFlashlight/fill/pattern3"
+msgstr "Густая"
+
+msgid "aim/armorFlashlight/opacity"
+msgstr "Прозрачность"
+
+msgid "aim/armorFlashlight/performanceImpact"
+msgstr "Предупреждение о произв-ти"
+
+msgid "aim/armorFlashlight/resolution/high"
+msgstr "Высокое"
+
+msgid "aim/armorFlashlight/resolution/low"
+msgstr "Низкое"
+
+msgid "aim/armorFlashlight/resolution/medium"
+msgstr "Среднее"
+
+msgid "aim/armorFlashlight/resolutionScaling"
+msgstr "Разрешение подсветки"
+
 msgid "aim/cassette"
 msgstr "Кассеты"
 
@@ -618,6 +708,9 @@ msgstr "Методы настройки"
 
 msgid "cursor/ArcadeTitle"
 msgstr "Аркадный"
+
+msgid "cursor/ArmorFlashlight"
+msgstr "Подсветка брони"
 
 msgid "cursor/ArtyTitle"
 msgstr "Артиллерийский"
@@ -1202,9 +1295,6 @@ msgstr "Коммуникация в бою"
 msgid "game/fieldset/headerChat"
 msgstr "Чат"
 
-msgid "game/fieldset/headerGameplay"
-msgstr "Типы Случайных боёв"
-
 msgid "game/fieldset/headerMinimap"
 msgstr "Мини-карта"
 
@@ -1430,23 +1520,8 @@ msgstr "Переключение комплектов на экране загр
 msgid "gameTitle"
 msgstr "Игра"
 
-msgid "gameplay/assault"
-msgstr "Штурм (после исследования техники VI уровня)"
-
-msgid "gameplay/ctf"
-msgstr "Стандартный бой"
-
 msgid "gameplay/devMaps"
-msgstr "Карты в разработке"
-
-msgid "gameplay/domination"
-msgstr "Встречный бой (после исследования техники IV уровня)"
-
-msgid "gameplay/epic_encounter"
-msgstr "Генеральное сражение (только для техники X уровня)"
-
-msgid "gameplay/epic_standard"
-msgstr "Генеральное сражение (только для техники X уровня)"
+msgstr "Играть на картах со случайными событиями"
 
 msgid "gameplay/nations"
 msgstr "Противостояние"
@@ -1877,11 +1952,17 @@ msgstr "Уменьшить размер"
 msgid "keyboard/keysBlocks/command/sizeUp"
 msgstr "Увеличить размер"
 
+msgid "keyboard/keysBlocks/command/specialAbility"
+msgstr "Особая механика"
+
 msgid "keyboard/keysBlocks/command/stop_fire"
 msgstr "Остановка для выстрела"
 
 msgid "keyboard/keysBlocks/command/thankYou"
 msgstr "Спасибо!"
+
+msgid "keyboard/keysBlocks/command/toggleFlashlight"
+msgstr "Вкл./откл. подсветку брони"
 
 msgid "keyboard/keysBlocks/command/trajectory_view"
 msgstr "Вид от траектории"

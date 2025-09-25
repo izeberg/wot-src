@@ -55,7 +55,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -200,7 +200,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -237,7 +237,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -262,7 +262,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -287,7 +287,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -320,7 +320,7 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -565,6 +565,9 @@
 			<include>
 				<nations>poland</nations>
 			</include>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
+			</exclude>
 		</vehicleFilter>
 		<decal>
 			<id>146</id>
@@ -659,7 +662,7 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -729,7 +732,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -743,7 +746,7 @@
 				<levels>10</levels>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -806,7 +809,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -842,6 +845,9 @@
 				<include>
 					<nations>china czech germany italy japan poland ussr</nations>
 				</include>
+				<exclude>
+					<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
+				</exclude>
 			</vehicleFilter>
 			<mirror>false</mirror>
 		</decal>
@@ -853,6 +859,9 @@
 				<include>
 					<nations>france sweden uk usa</nations>
 				</include>
+				<exclude>
+					<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				</exclude>
 			</vehicleFilter>
 			<mirror>false</mirror>
 		</decal>
@@ -886,7 +895,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -905,7 +914,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -924,7 +933,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -943,7 +952,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -980,7 +989,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1018,7 +1027,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1037,7 +1046,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1056,7 +1065,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1081,7 +1090,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1100,7 +1109,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1119,7 +1128,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1138,7 +1147,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1157,7 +1166,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1194,7 +1203,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1233,7 +1242,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1250,6 +1259,9 @@
 				<include>
 					<nations>poland</nations>
 				</include>
+				<exclude>
+					<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
+				</exclude>
 			</vehicleFilter>
 			<mirror>false</mirror>
 		</decal>
@@ -1302,6 +1314,9 @@
 				<include>
 					<nations>poland</nations>
 				</include>
+				<exclude>
+					<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
+				</exclude>
 			</vehicleFilter>
 			<mirror>false</mirror>
 		</decal>
@@ -1313,6 +1328,9 @@
 				<include>
 					<nations>usa</nations>
 				</include>
+				<exclude>
+					<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				</exclude>
 			</vehicleFilter>
 			<mirror>false</mirror>
 		</decal>
@@ -1403,7 +1421,7 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -1449,7 +1467,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1468,7 +1486,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1487,7 +1505,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1506,7 +1524,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1521,7 +1539,7 @@
 				<levels>10</levels>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -1561,7 +1579,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1580,7 +1598,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1611,7 +1629,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1630,7 +1648,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1663,7 +1681,7 @@
 				<levels>8 9 10</levels>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -1702,7 +1720,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1721,7 +1739,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1800,7 +1818,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1873,7 +1891,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1888,7 +1906,7 @@
 				<nations>usa</nations>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -1939,7 +1957,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -1958,7 +1976,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2016,7 +2034,7 @@
 		</decal>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2035,7 +2053,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2078,7 +2096,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2097,7 +2115,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2116,7 +2134,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2135,7 +2153,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2154,7 +2172,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2179,7 +2197,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2198,7 +2216,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2482,7 +2500,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2501,7 +2519,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2550,7 +2568,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2581,7 +2599,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2600,7 +2618,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2619,7 +2637,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2656,7 +2674,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2675,7 +2693,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2694,7 +2712,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2714,7 +2732,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2763,7 +2781,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2794,7 +2812,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2886,7 +2904,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2911,7 +2929,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2942,7 +2960,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -2967,7 +2985,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3029,7 +3047,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3084,7 +3102,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3110,7 +3128,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3201,7 +3219,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3328,7 +3346,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3353,7 +3371,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3378,7 +3396,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3403,7 +3421,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3429,7 +3447,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3448,7 +3466,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3487,7 +3505,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3530,7 +3548,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3545,7 +3563,7 @@
 				<levels>10</levels>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -3572,7 +3590,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3592,7 +3610,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3617,7 +3635,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3654,7 +3672,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3697,7 +3715,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3740,7 +3758,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3828,7 +3846,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3866,7 +3884,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3885,7 +3903,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -3899,7 +3917,7 @@
 				<levels>10</levels>
 			</include>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -3983,7 +4001,7 @@
 		<userString>#vehicle_customization:inscription/special</userString>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4008,7 +4026,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4039,7 +4057,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4079,7 +4097,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4110,7 +4128,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4148,7 +4166,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4180,7 +4198,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4256,7 +4274,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4305,7 +4323,7 @@
 		</decal>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4330,7 +4348,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4350,7 +4368,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4382,7 +4400,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4401,7 +4419,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4444,7 +4462,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4513,7 +4531,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4532,7 +4550,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4551,7 +4569,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4582,7 +4600,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4613,7 +4631,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4644,7 +4662,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4678,7 +4696,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4747,7 +4765,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4778,7 +4796,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4809,7 +4827,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4878,7 +4896,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4898,7 +4916,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4918,7 +4936,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4950,7 +4968,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -4982,7 +5000,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5025,7 +5043,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5045,7 +5063,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5064,7 +5082,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5084,7 +5102,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5251,7 +5269,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5270,7 +5288,7 @@
 		</decal>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5301,7 +5319,7 @@
 		<type>INSCRIPTION</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -5312,7 +5330,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5339,7 +5357,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5358,7 +5376,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5413,7 +5431,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5445,7 +5463,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5472,7 +5490,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5503,7 +5521,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5541,7 +5559,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5562,12 +5580,74 @@
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/special</userString>
 		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1161</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_812.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_812</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1162</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_813.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_813</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1163</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_814.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_814</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1164</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_815.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_815</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1165</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_755.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_755</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1166</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_816.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_816</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<decal>
+			<id>1167</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_817.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_817</userString>
+			<mirror>false</mirror>
+			<tags>styleOnly questsProgression</tags>
+		</decal>
+		<name>Onslaught 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
 		<historical>0</historical>
 		<tags>hiddenInUI</tags>
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5586,7 +5666,7 @@
 		<priceGroup>inscriptions 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5611,6 +5691,183 @@
 			<mirror>false</mirror>
 		</decal>
 		<name>Onslaught 2025 2026</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1151</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_805.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_805</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1152</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_806.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_806</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1153</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_807.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_807</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Personal Missions 3.0 MVP</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1154</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_808.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_808</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1155</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_809.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_809</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1156</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_810.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_810</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1157</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_811.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_811</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>BattlePass 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1170</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_825.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_825</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1174</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_826.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_826</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1175</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_827.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_827</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1176</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_828.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_828</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>15th Anniversary</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1160</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_824.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_824</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1168</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_824.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_824</userString>
+			<description>#vehicle_customization:inscription/special/special_824/description</description>
+			<mirror>false</mirror>
+		</decal>
+		<name>V2.0 Solo</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<name>White tiger 2025 Inscriptions</name>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<type>INSCRIPTION</type>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 285g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>16024</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_819.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_819</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>16025</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_820.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_820</userString>
+			<mirror>false</mirror>
+		</decal>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1217</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_260.dds</texture>
+			<userString>#vehicle_customization:inscription/special/inscription_260</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>SH 2025</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
 </root>

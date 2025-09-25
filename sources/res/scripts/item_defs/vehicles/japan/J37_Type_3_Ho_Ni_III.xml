@@ -84,7 +84,7 @@
 	<hull>
 		<primaryArmor>armor_1 armor_15 armor_4</primaryArmor>
 		<weight>6000</weight>
-		<maxHealth>340</maxHealth>
+		<maxHealth>400</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>150</maxHealth>
 			<maxRegenHealth>90</maxRegenHealth>
@@ -2213,9 +2213,8 @@
 				</chassis>
 			</unlocks>
 			<weight>3500</weight>
-			<maxLoad>18000</maxLoad>
 			<terrainResistance>
-				0.9 1.1 2.1
+				0.8 1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>18800</brakeForce>
@@ -4121,7 +4120,6 @@
 			<level>5</level>
 			<price>9400</price>
 			<weight>3750</weight>
-			<maxLoad>19000</maxLoad>
 			<terrainResistance>
 				0.8 1 1.9
 				<!--BW_String-->
@@ -6032,7 +6030,7 @@
 			<price>100</price>
 			<notInShop>true</notInShop>
 			<weight>4000</weight>
-			<maxHealth>80</maxHealth>
+			<maxHealth>100</maxHealth>
 			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -6402,15 +6400,6 @@
 		<Average>shared</Average>
 	</fuelTanks>
 	<radios>
-		<_Type96_Bo>
-			shared
-			<unlocks>
-				<radio>
-					_Type3_Otsu
-					<cost>4000</cost>
-				</radio>
-			</unlocks>
-		</_Type96_Bo>
 		<_Type3_Otsu>shared</_Type3_Otsu>
 	</radios>
 	<clientAdjustmentFactors/>
@@ -6431,19 +6420,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.16905
+								0.15295
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.08855
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.07245
+								0.0644
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

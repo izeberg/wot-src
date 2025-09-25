@@ -1,12 +1,13 @@
 from enum import Enum
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 from gui.impl.gen.view_models.views.dialogs.dialog_template_generic_tooltip_view_model import DialogTemplateGenericTooltipViewModel
 
 class ComponentType(Enum):
     BASE = 'base'
     MONEY = 'money'
     DEMOUNT_KIT = 'demountKit'
+    MAP = 'map'
 
 
 class SelectOptionBaseItemViewModel(ViewModel):

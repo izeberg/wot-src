@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/sweden/S36_Strv_107_12/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/sweden/S36_Strv_107_12/normal/lod0/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.220000 -0.130905 -0.062639</min>
+		<max>0.220000 0.190000 2.958002</max>
+	</visibilityBox>
+</root>

@@ -92,6 +92,8 @@ package net.wg.gui.lobby.techtree.nodes
       
       public var techTreeEventFrameMc:MovieClip = null;
       
+      public var backgroundGlow:MovieClip = null;
+      
       private var _isFirstTimeActionShow:Boolean = false;
       
       private var _trade:TradeIco = null;
@@ -209,6 +211,7 @@ package net.wg.gui.lobby.techtree.nodes
          this.vehicleImage.source = this.getIconPath();
          this.typeAndLevel.setOwner(this);
          this.nameTF.text = getItemName();
+         this.backgroundGlow.visible = isPromoted();
          _loc1_ = isLocked();
          var _loc2_:Boolean = isNext2Unlock();
          var _loc3_:String = hasAction && (_loc1_ || _loc2_) ? DISCOUNT_LABEL_BLUE : DISCOUNT_LABEL_RED;
@@ -296,6 +299,10 @@ package net.wg.gui.lobby.techtree.nodes
          if(this.techTreeEventFrameMc)
          {
             this.techTreeEventFrameMc = null;
+         }
+         if(this.backgroundGlow)
+         {
+            this.backgroundGlow = null;
          }
          this.button.dispose();
          this.button = null;
@@ -447,6 +454,11 @@ package net.wg.gui.lobby.techtree.nodes
             return BOTTOM_ARROW_OFFSET_ACTION;
          }
          return BOTTOM_ARROW_OFFSET;
+      }
+      
+      override public function isVisible() : Boolean
+      {
+         return !(this.isBlueprintMode && !canHaveBlueprint());
       }
       
       public function get isBlueprintMode() : Boolean

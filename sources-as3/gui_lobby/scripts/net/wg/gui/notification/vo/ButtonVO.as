@@ -16,7 +16,11 @@ package net.wg.gui.notification.vo
       
       public var dynamicSizeByText:Boolean = false;
       
+      public var paddingHorizontal:int = 5;
+      
       public var tooltip:String = "";
+      
+      public var textYPadding:int = 0;
       
       public function ButtonVO(param1:Object)
       {

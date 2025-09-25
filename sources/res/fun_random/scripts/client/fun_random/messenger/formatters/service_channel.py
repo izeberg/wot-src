@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from fun_random.gui.feature.fun_constants import FunNotificationType
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunProgressionWatcher, FunSubModesWatcher

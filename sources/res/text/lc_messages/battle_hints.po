@@ -154,7 +154,7 @@ msgstr ""
 msgid "hint/PPH_OTHER_02"
 msgstr ""
 "Ваша машина уничтожена. Нажмите <font color='#EE7000'>Esc</font>, чтобы "
-"покинуть бой."
+"покинуть бой без штрафа."
 
 msgid "hint/PPH_OTHER_03"
 msgstr ""
@@ -186,8 +186,8 @@ msgstr ""
 
 msgid "hint/PPH_WEAK_SPOTS_01"
 msgstr ""
-"<font color='#EE7000'>Зелёный прицел</font> означает высокий шанс пробить "
-"броню противника."
+"<font color='#EE7000'>Внутренний зелёный прицел</font> означает высокий шанс"
+" пробить броню противника."
 
 msgid "hint/PPH_WEAK_SPOTS_02"
 msgstr ""
@@ -201,7 +201,7 @@ msgstr ""
 
 msgid "hint/PPH_WEAK_SPOTS_04"
 msgstr ""
-"Цвет прицела показывает шанс пробить броню противника. <font "
+"Цвет внутреннего прицела показывает шанс пробить броню противника. <font "
 "color='#EE7000'>Вы можете включить эту функцию в настройках игры</font>."
 
 msgid "penetration/chance/high"

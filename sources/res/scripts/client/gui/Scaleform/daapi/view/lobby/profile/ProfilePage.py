@@ -37,6 +37,13 @@ class ProfilePage(LobbySubView, ProfileMeta):
         self.__tabNavigator = None
         return
 
+    @property
+    def tabId(self):
+        if self.__tabNavigator:
+            return self.__tabNavigator.tabId
+        else:
+            return
+
     def registerFlashComponent(self, component, alias, *args):
         if alias == VIEW_ALIAS.PROFILE_TAB_NAVIGATOR:
             player = BigWorld.player()
@@ -53,7 +60,8 @@ class ProfilePage(LobbySubView, ProfileMeta):
             self.__updateTabCounters()
 
     def onCloseProfile(self):
-        self.fireEvent(events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_HANGAR)), scope=EVENT_BUS_SCOPE.LOBBY)
+        from gui.shared.event_dispatcher import showHangar
+        showHangar()
 
     def updateSubView(self, ctx):
         selectedAlias = ctx.get('selectedAlias')

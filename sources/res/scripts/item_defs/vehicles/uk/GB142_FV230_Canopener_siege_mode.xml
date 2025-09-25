@@ -1578,6 +1578,7 @@
 				<slotId>18003</slotId>
 				<position>0 0 0</position>
 				<rotation>0 0 0</rotation>
+				<scale>1 1 1</scale>
 				<hiddenForUser>true</hiddenForUser>
 			</slot>
 		</customizationSlots>
@@ -1605,7 +1606,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>95000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -2682,6 +2682,12 @@
 			<guns>
 				<Twin_120_mm_Gun_L1_MBC>
 					<maxAmmo>80</maxAmmo>
+					<unlocks>
+						<vehicle>
+							GB147_FV4025_Contriver
+							<cost>325000</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							350
@@ -2859,7 +2865,7 @@
 						<shootImpulse>300</shootImpulse>
 					</twinGun>
 					<prefabs>
-						<main>content/CGFPrefabs/Vehicle/guns/uk/Twin_120_mm_Gun_L1_MBC.prefab</main>
+						<main>content/CGFPrefabs/Vehicle/guns/uk/gun_Twin_120_mm_Gun_L1_MBC.prefab</main>
 					</prefabs>
 					<customizationSlots>
 						<slot>
@@ -2949,32 +2955,6 @@
 							<scale>1 1 1</scale>
 							<applyType>gunMantlet</applyType>
 							<size>medium</size>
-						</slot>
-						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48001</slotId>
-							<position>0 0 0</position>
-							<rotation>0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<applyType>gun</applyType>
-						</slot>
-						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48002</slotId>
-							<position>0.001000 0.000000 0.000000</position>
-							<rotation>-0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<hiddenForUser>true</hiddenForUser>
-							<applyType>gunRight</applyType>
-						</slot>
-						<slot>
-							<slotType>attachment</slotType>
-							<slotId>48003</slotId>
-							<position>-0.001000 0.000000 0.000000</position>
-							<rotation>-0 0 0</rotation>
-							<scale>1 1 1</scale>
-							<hiddenForUser>true</hiddenForUser>
-							<applyType>gunLeft</applyType>
 						</slot>
 						<slot>
 							<slotType>insigniaOnGun</slotType>
@@ -3869,7 +3849,7 @@
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
 					<position>
-						0.000011 1.07202 -1.14911
+						-0.574426 1.072026 -1.14911
 						<!--BW_String-->
 					</position>
 					<rotation>-0 -0 0</rotation>

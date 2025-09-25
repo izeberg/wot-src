@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A183_XM69_Hacker/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/american/A183_XM69_Hacker/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.863430 -0.909222 -3.881303</min>
+		<max>1.859941 0.806228 3.277336</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

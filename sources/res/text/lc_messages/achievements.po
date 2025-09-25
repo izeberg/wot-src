@@ -9,6 +9,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "01YearsOfService"
 msgstr "За выслугу лет: 1"
@@ -143,42 +149,6 @@ msgid "BPReserveAchievement_10_condition"
 msgstr "• Выдавалась за прохождение прогрессии."
 
 msgid "BPReserveAchievement_10_descr"
-msgstr "За определённые успехи в игре."
-
-msgid "BPReserveAchievement_2"
-msgstr "Резервное достижение БП 2"
-
-msgid "BPReserveAchievement_2_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_2_descr"
-msgstr "За определённые успехи в игре."
-
-msgid "BPReserveAchievement_3"
-msgstr "Резервное достижение БП 3"
-
-msgid "BPReserveAchievement_3_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_3_descr"
-msgstr "За определённые успехи в игре."
-
-msgid "BPReserveAchievement_4"
-msgstr "Резервное достижение БП 4"
-
-msgid "BPReserveAchievement_4_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_4_descr"
-msgstr "За определённые успехи в игре."
-
-msgid "BPReserveAchievement_5"
-msgstr "Резервное достижение БП 5"
-
-msgid "BPReserveAchievement_5_condition"
-msgstr "• Выдавалась за прохождение прогрессии."
-
-msgid "BPReserveAchievement_5_descr"
 msgstr "За определённые успехи в игре."
 
 msgid "BPReserveAchievement_6"
@@ -366,6 +336,44 @@ msgstr "• Выдаётся после прохождения всех трёх
 
 msgid "BattlePassCommonPr_17_descr"
 msgstr "За определённые успехи в рамках семнадцатого сезона Боевого пропуска."
+
+msgid "BattlePassCommonPr_17extra_1"
+msgstr "Жвачка закончилась"
+
+msgid "BattlePassCommonPr_17extra_1_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BattlePassCommonPr_17extra_1_descr"
+msgstr "За определённые успехи в рамках главы Боевого пропуска «Duke Nukem»."
+
+msgid "BattlePassCommonPr_17extra_2"
+msgstr "Насмотрелись?"
+
+msgid "BattlePassCommonPr_17extra_2_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BattlePassCommonPr_17extra_2_descr"
+msgstr "За определённые успехи в рамках главы Боевого пропуска «Tomb Raider»."
+
+msgid "BattlePassCommonPr_17extra_3"
+msgstr "Пятнадцать — не предел!"
+
+msgid "BattlePassCommonPr_17extra_3_condition"
+msgstr "• Выдавалась за прохождение прогрессии."
+
+msgid "BattlePassCommonPr_17extra_3_descr"
+msgstr ""
+"За определённые успехи в рамках главы Боевого пропуска «Полевой фестиваль»."
+
+msgid "BattlePassCommonPr_18"
+msgstr "На новом уровне"
+
+msgid "BattlePassCommonPr_18_condition"
+msgstr "• Выдаётся после прохождения всех трёх глав."
+
+msgid "BattlePassCommonPr_18_descr"
+msgstr ""
+"За определённые успехи в рамках восемнадцатого сезона Боевого пропуска."
 
 msgid "BattlePassCommonPr_1_condition"
 msgstr "• Основная часть прогрессии состоит из 45 этапов."
@@ -1509,11 +1517,11 @@ msgstr ""
 "\n"
 "• Löwe\n"
 "\n"
-"• Leopard&nbsp;prototyp&nbsp;A, Leopard&nbsp;1\n"
+"• Leopard&nbsp;prototyp&nbsp;A, Leopard&nbsp;1, Leopard&nbsp;120&nbsp;Verbessert\n"
 "\n"
 "• Засчитывается сумма результатов по всем машинам.\n"
 "• В общем зачёте повторно полученные награды суммируются.\n"
-"• Засчитывается техника, уничтоженная в Случайных и Ранговых боях, а также в Наступлениях, на Глобальной карте и на Линии фронта."
+"• Засчитывается техника, уничтоженная в Случайных и Ранговых боях, а также в «Наступлениях», на Глобальной карте и на «Линии фронта»."
 
 msgid "beasthunter_descr"
 msgstr ""
@@ -2009,6 +2017,78 @@ msgstr "Серебряная мантикора"
 msgid "comp7_4_yearly_silver_descr"
 msgstr ""
 "Выдавалась за сбор не менее 9 знамён «Натиска» в году Мантикоры режима "
+"«Натиск»."
+
+msgid "comp7_5_1"
+msgstr "Лёд тронулся"
+
+msgid "comp7_5_1_descr"
+msgstr ""
+"Выдавалась за выполнение цепочки задач в сезоне Лазурного дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_2"
+msgstr "Алый дракон"
+
+msgid "comp7_5_2_descr"
+msgstr ""
+"Выдавалась за выполнение цепочки задач в сезоне Алого дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_3"
+msgstr "Нефритовый дракон"
+
+msgid "comp7_5_3_descr"
+msgstr ""
+"Выдавалась за выполнение цепочки задач в сезоне Нефритового дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_yearly_bronze"
+msgstr "Бронзовый дракон"
+
+msgid "comp7_5_yearly_bronze_descr"
+msgstr ""
+"Выдавалась за сбор не менее 6 знамён «Натиска» в году Дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_yearly_champion"
+msgstr "Чемпион года Дракона"
+
+msgid "comp7_5_yearly_champion_descr"
+msgstr ""
+"Выдавалась за сбор не менее 15 знамён «Натиска» в году Дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_yearly_gold"
+msgstr "Золотой дракон"
+
+msgid "comp7_5_yearly_gold_descr"
+msgstr ""
+"Выдавалась за сбор не менее 12 знамён «Натиска» в году Дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_yearly_iron"
+msgstr "Железный дракон"
+
+msgid "comp7_5_yearly_iron_descr"
+msgstr ""
+"Выдавалась за сбор не менее 3 знамён «Натиска» в году Дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_yearly_legend"
+msgstr "Легенда года Дракона"
+
+msgid "comp7_5_yearly_legend_descr"
+msgstr ""
+"Выдавалась за сбор не менее 18 знамён «Натиска» в году Дракона режима "
+"«Натиск»."
+
+msgid "comp7_5_yearly_silver"
+msgstr "Серебряный дракон"
+
+msgid "comp7_5_yearly_silver_descr"
+msgstr ""
+"Выдавалась за сбор не менее 9 знамён «Натиска» в году Дракона режима "
 "«Натиск»."
 
 msgid "conqueror"
@@ -3001,6 +3081,17 @@ msgstr ""
 msgid "ls2025Medal_descr"
 msgstr "Расшифруйте все записи в событии «Последний рубеж: Операция \"Пандора\"»."
 
+msgid "ls2_0Medal"
+msgstr "Волнолом"
+
+msgid "ls2_0Medal_condition"
+msgstr ""
+"Выдавалась игрокам, выполнившим необходимые условия в событии «Последний "
+"рубеж: Испытание»."
+
+msgid "ls2_0Medal_descr"
+msgstr "Дешифруйте все записи в событии «Последний рубеж: Испытание»."
+
 msgid "luckyDevil"
 msgstr "«Счастливчик»"
 
@@ -3245,6 +3336,12 @@ msgstr ""
 "Повторно заслуженная текущая степень<br/>показывается в окне результатов "
 "боя.<br/>• Выдаётся только в Случайных боях."
 
+msgid "marksOnGun/count"
+msgid_plural "plural/marksOnGun/count"
+msgstr[0] "Отличительная отметка"
+msgstr[1] "Отличительные отметки"
+msgstr[2] "Отличительных отметок"
+
 msgid "marksOnGun/descr/param/label/1"
 msgstr "1 отметка"
 
@@ -3304,11 +3401,11 @@ msgstr "Степени результативности:"
 
 msgid "marksOnGun_condition"
 msgstr ""
-"• Результативность игрока определяется по последним 100 боям, с каждым новым боем показатель уточняется.\n"
-"• Заработанные отметки не исчезают даже при снижении результативности.\n"
-"• Отметки можно получить только на технике V–X уровней.\n"
-"• Отображение отметок на своей технике можно отключить в настройках игры.\n"
-"• Выдаётся только в Случайных боях."
+"• Средний урон игрока обновляется после каждого боя и рассчитывается на основе последних 100 боёв.\n"
+"• Полученные отметки постоянны и не исчезают, даже если средний урон игрока уменьшается.\n"
+"• Отметки можно получить только на технике V–XI уровней.\n"
+"• Отображение отметок на ваших машинах может быть отключено в настройках игры.\n"
+"• Отметки могут быть получены только в Случайных боях."
 
 msgid "may21"
 msgstr "Рок-звезда"
@@ -3681,7 +3778,7 @@ msgid "medalEkins"
 msgstr "Медаль Экинса %(rank)s"
 
 msgid "medalEkins_descr"
-msgstr "За количество уничтоженной техники противника VIII–X уровней."
+msgstr "За количество уничтоженной техники противника VIII–XI уровней."
 
 msgid "medalEkins_heroInfo"
 msgstr ""
@@ -4089,6 +4186,18 @@ msgstr ""
 "Ганс Бёльтер — один из наиболее успешных немецких танковых асов Второй "
 "мировой войны. Участвовал в боевых действиях в Польше, Франции, Греции, на "
 "территории СССР и в Нормандии."
+
+msgid "meritPM3"
+msgstr "Вторжение"
+
+msgid "meritPM3_condition"
+msgstr "?empty?"
+
+msgid "meritPM3_descr"
+msgstr "Выполнить задачу любой операции в кампании «Сектор 3»."
+
+msgid "meritPM3_notification"
+msgstr "Вы получили медаль «Вторжение» за участие в кампании «Сектор 3»."
 
 msgid "moonSphere"
 msgstr "«Сферический воин в вакууме»"
@@ -4602,6 +4711,15 @@ msgstr ""
 "Выполнить с отличием 15 личных боевых задач Союза. Награда: медаль "
 "«Образцовое выполнение: Союз» III степени."
 
+msgid "readyForBattleAssault"
+msgstr "Образцовое выполнение: Авангард"
+
+msgid "readyForBattleAssault_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleAssault_descr"
+msgstr "За выполнение всех задач Авангарда кампании «Сектор 3»."
+
 msgid "readyForBattleHT"
 msgstr "«Образцовое выполнение: тяжёлые танки»"
 
@@ -4726,6 +4844,24 @@ msgstr ""
 "Выполнить с отличием 15 личных боевых задач для САУ. Награда: медаль "
 "«Образцовое выполнение: САУ» IV степени."
 
+msgid "readyForBattleSniper"
+msgstr "Образцовое выполнение: Засада"
+
+msgid "readyForBattleSniper_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleSniper_descr"
+msgstr "За выполнение всех задач Засады кампании «Сектор 3»."
+
+msgid "readyForBattleSupport"
+msgstr "Образцовое выполнение: Поддержка"
+
+msgid "readyForBattleSupport_condition"
+msgstr "?empty?"
+
+msgid "readyForBattleSupport_descr"
+msgstr "За выполнение всех задач Поддержки кампании «Сектор 3»."
+
 msgid "reliableComrade"
 msgstr "«Надёжный боевой товарищ»"
 
@@ -4740,6 +4876,17 @@ msgstr ""
 
 msgid "reliableComrade_descr"
 msgstr "Не наносить союзникам никакого урона в течение 50 боёв."
+
+msgid "sccHero"
+msgstr "Начало новой эпохи"
+
+msgid "sccHero_condition"
+msgstr ""
+"Выдаётся игрокам, выполнившим все задачи события «Операция \"Точка "
+"кипения\"»"
+
+msgid "sccHero_descr"
+msgstr "Завершить историю «Операция \"Точка кипения\"»"
 
 msgid "scout"
 msgstr "«Разведчик»"
@@ -4848,16 +4995,16 @@ msgstr "«Лев Синая»"
 
 msgid "sinai_condition"
 msgstr ""
-"• ИС, ИС-М, ИС-2, ИС-2М, ИС-2&nbsp;экранированный, ИС-2-II, ИС-3, ИС-3-II, ИС-3&nbsp;с&nbsp;МЗ, ИС-4, ИС-5, ИС-6, ИС-6 ЛФ, ИС-6 Ч, ИС-7, Кировец-1, К-2, Т-10\n"
+"• ИС, ИС-М, ИС-2, ИС-2М, ИС-2&nbsp;экранированный, ИС-2-II, ИС-3, ИС-3-II, ИС-3&nbsp;с&nbsp;МЗ, ИС-4, ИС-5, ИС-6, ИС-6 ЛФ, ИС-6&nbsp;Ч, ИС-7, КР-1, Кировец-1, К-2, Т-10\n"
 "\n"
 "• ИСУ-122С, ИСУ-122-2, ИСУ-130, ИСУ-152, ИСУ-152К\n"
 "\n"
-"• Объект&nbsp;252У, Защитник, Ударный, Объект&nbsp;260, Объект&nbsp;261, Объект&nbsp;257, Объект&nbsp;263, Объект&nbsp;268, Объект&nbsp;268&nbsp;Вариант&nbsp;4, Объект&nbsp;268&nbsp;Вариант&nbsp;5, Объект&nbsp;704\n"
+"• Объект&nbsp;252У, Защитник, Ударный, Объект&nbsp;260, Объект&nbsp;261, Объект&nbsp;257, Объект&nbsp;263, Объект&nbsp;268, Объект&nbsp;268&nbsp;Вариант&nbsp;4, Объект&nbsp;268&nbsp;Вариант&nbsp;5, Объект&nbsp;701, Объект&nbsp;704\n"
 "\n"
 "• Учитывается только техника СССР.\n"
 "• Засчитывается сумма результатов по всем машинам.\n"
-"• В общем зачёте повторно полученные награды суммируются.\n"
-"• Засчитывается техника, уничтоженная в Случайных и Ранговых боях, а также в Наступлениях, на Глобальной карте и на Линии фронта."
+"• Повторно полученные награды суммируются в общем зачёте.\n"
+"• Засчитывается техника, уничтоженная в Случайных и Ранговых боях, а также в «Наступлениях», на «Глобальной карте» и на «Линии фронта»."
 
 msgid "sinai_descr"
 msgstr ""
@@ -5357,6 +5504,27 @@ msgid "twitchPrime_descr"
 msgstr ""
 "Выдавалась игрокам, принимавшим участие в специальной акции «Прямой эфир»."
 
+msgid "twoPointZeroCollectorMedal"
+msgstr "Выдающийся коллекционер"
+
+msgid "twoPointZeroCollectorMedal_condition"
+msgstr ""
+"Выдавалась игрокам, которые исследовали и купили все машины VI–X уровней в "
+"Дереве исследований и получили награду в честь выхода WoT 2.0."
+
+msgid "twoPointZeroCollectorMedal_descr"
+msgstr ""
+"Вы собрали впечатляющую коллекцию высокоуровневых машин к выходу WoT 2.0."
+
+msgid "twoPointZeroMedal"
+msgstr "Я встретил 2.0"
+
+msgid "twoPointZeroMedal_condition"
+msgstr "Выдавалась игрокам, которые получили награду в честь выхода WoT 2.0."
+
+msgid "twoPointZeroMedal_descr"
+msgstr "Спасибо за то, что были с нами при запуске обновления 2.0!"
+
 msgid "unreachable"
 msgstr "«Недосягаемый»"
 
@@ -5450,6 +5618,9 @@ msgid "willToWinSpirit_descr"
 msgstr ""
 "Победить в бою, оставшись в одиночку против 3 и более машин противника."
 
+msgid "winRate"
+msgstr "Процент побед"
+
 msgid "winnerLaurels"
 msgstr "«Лавры победителя %(rank)s»"
 
@@ -5470,6 +5641,27 @@ msgstr ""
 msgid "wolfAmongSheepMedal_descr"
 msgstr ""
 "Занять 100 раз первое место по количеству нанесённого урона в победном бою."
+
+msgid "wot15thAnniversary"
+msgstr "Пятнадцатилетие World of Tanks"
+
+msgid "wot15thAnniversaryElite"
+msgstr "Пятнадцатилетие World of Tanks (Элита)"
+
+msgid "wot15thAnniversaryElite_condition"
+msgstr ""
+"Выдаётся игрокам за исключительную преданность, самоотверженность и "
+"увлечённость во время события «Пятнадцатилетие World of Tanks»."
+
+msgid "wot15thAnniversaryElite_descr"
+msgstr "Завершить прогрессию события."
+
+msgid "wot15thAnniversary_condition"
+msgstr ""
+"Выдаётся игрокам за участие в событии «Пятнадцатилетие World of Tanks»."
+
+msgid "wot15thAnniversary_descr"
+msgstr "Пройти первый этап прогрессии события."
 
 msgid "wt2022BossWins"
 msgstr "Закон Юнг для участка цепи"
@@ -5557,6 +5749,19 @@ msgstr "Выдавалась в режиме «Ваффентрагер» в 202
 msgid "wt2024HunterWins_descr"
 msgstr ""
 "Одержать победу над Blitzträger auf E 110/220, играя на стороне Гончих."
+
+msgid "wt2025progression"
+msgstr "Разрушитель цикла"
+
+msgid "wt2025progression_condition"
+msgstr ""
+"Выдавалась за прохождение прогрессии в режиме «Ваффентрагер: Парадокс». Этой"
+" награды удостоены лишь те, кто прошёл через невозможное — столкнулся с "
+"пространственно-временной ловушкой фон Кригера и не просто выжил, но и "
+"победил."
+
+msgid "wt2025progression_descr"
+msgstr "За определённые успехи в режиме «Ваффентрагер: Парадокс»."
 
 msgid "wtBossWins"
 msgstr "Повелитель молний"

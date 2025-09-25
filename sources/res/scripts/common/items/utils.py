@@ -7,6 +7,7 @@ from debug_utils import *
 from items import tankmen, ITEM_TYPES
 from items import vehicles
 from items.components.c11n_constants import CUSTOMIZATION_SLOTS_VEHICLE_PARTS
+from items.components.shared_components import ExtraShotClipParams
 from items.tankmen import MAX_SKILL_LEVEL, MIN_ROLE_LEVEL, getSkillsConfig
 from items.vehicles import vehicleAttributeFactors, VehicleDescriptor
 from items.artefacts import StaticOptionalDevice, AdditiveBattleBooster
@@ -14,6 +15,16 @@ from items.components import component_constants
 from account_shared import AmmoIterator
 import ResMgr
 __defaultGlossTexture = None
+_FORMAT_VEH_INFO_STRING_REXP = re.compile('{([a-zA-Z]+)}')
+_VEH_INFO_STRING_CONVERTERS = {'level': lambda descr: str(descr.type.level), 
+   'class': lambda descr: descr.type.getVehicleClass(), 
+   'vehName': lambda descr: descr.type.name.split(':')[1], 
+   'clip': lambda descr: 'hasClip' if 'clip' in descr.gun.tags else 'noClip', 
+   'autoreload': lambda descr: 'hasAutoReload' if 'autoreload' in descr.gun.tags else 'noAutoreload', 
+   'wheels': lambda descr: 'hasWheels' if descr.isWheeledVehicle else 'noWheels', 
+   'burst': lambda descr: 'hasBurst' if descr.hasBurst else 'noBurst', 
+   'dualGun': lambda descr: 'hasDualGun' if descr.isDualgunVehicle else 'noDualGun', 
+   'hydraulicChassis': lambda descr: 'hasHydraulicChassis' if descr.type.hasSiegeMode and descr.type.hasHydraulicChassis else 'noHydraulicChassis'}
 
 def getDefaultGlossTexture():
     global __defaultGlossTexture
@@ -55,10 +66,6 @@ def _makeDefaultVehicleFactors(sample):
             LOG_ERROR('Default value of vehicle attribute can not be resolved', key, value)
 
     return default
-
-
-def makeDefaultVehicleAttributeFactors():
-    return vehicleAttributeFactors()
 
 
 def isclose(a, b, rel_tol=1e-09, abs_tol=0.0):
@@ -120,18 +127,19 @@ def getFirstReloadTime(vehicleDescr, factors, ignoreRespawn=False, shellsAmount=
     firstShellReload = vehicleDescr.gun.reloadTime
     if 'dualGun' in vehicleDescr.gun.tags:
         firstShellReload = vehicleDescr.gun.dualGun.reloadTimes[0]
-    else:
-        if 'clip' in vehicleDescr.gun.tags and 'autoreload' in vehicleDescr.gun.tags:
-            firstShellReload = vehicleDescr.gun.autoreload.reloadTime[(-1)]
-        elif 'twinGun' in vehicleDescr.gun.tags and shellsAmount > 1:
-            firstShellReload = vehicleDescr.gun.twinGun.twinGunReloadTime
-        if ignoreRespawn:
-            return firstShellReload * factor
-    return firstShellReload * factor * respawnReloadFactor
+    elif 'clip' in vehicleDescr.gun.tags and 'autoreload' in vehicleDescr.gun.tags:
+        firstShellReload = vehicleDescr.gun.autoreload.reloadTime[(-1)]
+    elif 'twinGun' in vehicleDescr.gun.tags and shellsAmount > 1:
+        firstShellReload = vehicleDescr.gun.twinGun.twinGunReloadTime
+    reloadTime = firstShellReload * factor if ignoreRespawn else firstShellReload * factor * respawnReloadFactor
+    return reloadTime + factors['gun/extraReloadTime']
 
 
-def getReloadTime(vehicleDescr, factors):
-    return vehicleDescr.gun.reloadTime * vehicleDescr.miscAttrs['gunReloadTimeFactor'] * max(factors['gun/reloadTime'], 0.0)
+def getReloadTime(vehicleDescr, factors, gunDescr=None, miscFactorName=None):
+    gunDescr = gunDescr or vehicleDescr.gun
+    if miscFactorName is None:
+        miscFactorName = 'gunReloadTimeFactor'
+    return gunDescr.reloadTime * vehicleDescr.miscAttrs[miscFactorName] * max(factors['gun/reloadTime'], 0.0) + factors['gun/extraReloadTime']
 
 
 def getClipReloadTime(vehicleDescr, factors):
@@ -141,7 +149,7 @@ def getClipReloadTime(vehicleDescr, factors):
             return tuple(reloadTime * factor for reloadTime in vehicleDescr.gun.autoreload.reloadTime)
         if 'autoShoot' in vehicleDescr.gun.tags:
             return (0.0, )
-        return (vehicleDescr.gun.reloadTime * factor,)
+        return (vehicleDescr.gun.reloadTime * factor + factors['gun/extraReloadTime'],)
     else:
         return (0.0, )
 
@@ -164,6 +172,17 @@ def geTwinGunReloadTime(vehicleDescr, factors):
     return (0.0, )
 
 
+def getExtraReloadTime(vehicleDescr):
+    mechanicsParams = vehicleDescr.mechanicsParams
+    if not mechanicsParams:
+        return 0.0
+    else:
+        params = mechanicsParams.get(ExtraShotClipParams.MECHANICS_NAME)
+        if params is None:
+            return 0.0
+        return params.extraReloadTime
+
+
 def getTurretRotationSpeed(vehicleDescr, factors):
     return vehicleDescr.turret.rotationSpeed * getTurretRotationSpeedFactor(vehicleDescr, factors)
 
@@ -176,8 +195,11 @@ def getGunRotationSpeed(vehicleDescr, factors):
     return vehicleDescr.gun.rotationSpeed * max(factors['gun/rotationSpeed'], 0.0)
 
 
-def getGunAimingTime(vehicleDescr, factors):
-    return vehicleDescr.gun.aimingTime * vehicleDescr.miscAttrs['gunAimingTimeFactor'] * max(factors['gun/aimingTime'], 0.0)
+def getGunAimingTime(vehicleDescr, factors, gunDescr=None, miscFactorName=None):
+    gunDescr = gunDescr or vehicleDescr.gun
+    if miscFactorName is None:
+        miscFactorName = 'gunAimingTimeFactor'
+    return gunDescr.aimingTime * vehicleDescr.miscAttrs[miscFactorName] * max(factors['gun/aimingTime'], 0.0)
 
 
 def getClipTimeBetweenShots(vehicleDescr, factors):
@@ -240,12 +262,15 @@ if IS_CLIENT:
     def getClientShotDispersion(vehicleDescr, shotDispersionFactor):
         gun = vehicleDescr.gun
         values = []
+        multShotDispersionFactor = vehicleDescr.miscAttrs['multShotDispersionFactor'] * shotDispersionFactor
         if 'dualAccuracy' in gun.tags:
-            values.append(gun.dualAccuracy.afterShotDispersionAngle)
-        values.append(gun.shotDispersionAngle)
+            values.append(gun.dualAccuracy.afterShotDispersionAngle * multShotDispersionFactor)
+        values.append(gun.shotDispersionAngle * multShotDispersionFactor)
         if 'twinGun' in gun.tags:
-            values.append(vehicleDescr.siegeVehicleDescr.gun.shotDispersionAngle)
-        return (value * vehicleDescr.miscAttrs['multShotDispersionFactor'] * shotDispersionFactor for value in values)
+            siegeVehDescr = vehicleDescr.siegeVehicleDescr
+            multShotDispersionSiegeFactor = siegeVehDescr.miscAttrs['multShotDispersionFactor'] * shotDispersionFactor
+            values.append(siegeVehDescr.gun.shotDispersionAngle * multShotDispersionSiegeFactor)
+        return tuple(values)
 
 
     def getClientCoolingDelay(vehicleDescr, factors):
@@ -329,6 +354,9 @@ if IS_CLIENT:
         shotDispersionFactors = [multShotDispersionFactor, 0.0]
         vehicleDescrCrew.onCollectShotDispersionFactors(shotDispersionFactors)
         factors['shotDispersion'] = shotDispersionFactors
+        for mechanic in vehicleDescr.mechanicsParams.itervalues():
+            mechanic.updateVehicleAttrFactorsForAspect(vehicleDescr, factors, aspect)
+
         return
 
 
@@ -405,3 +433,14 @@ def commanderTutorXpBonusFactorForCrew(crew, ammo, vehCompDescr):
     tutorLevel += optionalDevCrewLevelIncrease
     tutorLevel += equipCrewLevelIncrease
     return tutorLevel * skillsConfig.getSkill('commander_tutor').xpBonusFactorPerLevel
+
+
+def formatVehicleInfoString(fmtStr, descr):
+
+    def _replaceMatch(match):
+        converter = _VEH_INFO_STRING_CONVERTERS.get(match.group(1))
+        if converter:
+            return converter(descr)
+        return match.group(0)
+
+    return _FORMAT_VEH_INFO_STRING_REXP.sub(_replaceMatch, fmtStr)

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A175_LTC_II/normal/lod2/Gun_02</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.323959 -0.386164 -0.100115</min>
+		<max>0.317889 0.333098 5.203014</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A175_LTC_II/normal/lod1/Gun_02</nodefullVisual>
+</root>

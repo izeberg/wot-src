@@ -14,6 +14,8 @@ package net.wg.gui.battle.views.piercingDebugPanel
       private static const PADDING_BOTTOM:int = 265;
        
       
+      public var gunInfoTF:TextField = null;
+      
       public var shellTypeTF:TextField = null;
       
       public var piercingPowerTF:TextField = null;
@@ -72,6 +74,7 @@ package net.wg.gui.battle.views.piercingDebugPanel
       
       override protected function onDispose() : void
       {
+         this.gunInfoTF = null;
          this.shellTypeTF = null;
          this.piercingPowerTF = null;
          this.dispersionTF = null;
@@ -95,6 +98,7 @@ package net.wg.gui.battle.views.piercingDebugPanel
       
       override protected function setData(param1:DebugPanelVO) : void
       {
+         this.gunInfoTF.text = param1.gunInfo;
          this.shellTypeValueTF.text = param1.shellType;
          this.piercingPowerValueTF.text = param1.piercingPower;
          this.dispersionValueTF.text = param1.dispersion;

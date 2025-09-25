@@ -18,6 +18,6 @@ package net.wg.infrastructure.wulf
       
       function getContainerHeight(param1:uint = 0) : uint;
       
-      function setWindowPosition(param1:IViewWrapper, param2:Number, param3:Number) : void;
+      function setWindowPosition(param1:uint, param2:IViewWrapper, param3:Number, param4:Number) : void;
    }
 }

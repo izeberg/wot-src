@@ -1283,8 +1283,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_T57_58>
-			<userString>#usa_vehicles:Chassis_T57_58</userString>
+		<Chassis_A67_T57_58>
+			<userString>#usa_vehicles:Chassis_A67_T57_58</userString>
 			<tags/>
 			<level>10</level>
 			<price>82500</price>
@@ -1294,7 +1294,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>58000</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.4
 				<!--BW_String-->
@@ -3612,12 +3611,12 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T57_58>
+		</Chassis_A67_T57_58>
 	</chassis>
 	<turrets0>
-		<Turret_1_T57_58>
-			<userString>#usa_vehicles:Turret_1_T57_58</userString>
-			<tags/>
+		<Turret_1_A67_T57_58>
+			<userString>#usa_vehicles:Turret_1_A67_T57_58</userString>
+			<tags>oscillating</tags>
 			<level>10</level>
 			<price>66000</price>
 			<notInShop>true</notInShop>
@@ -3687,10 +3686,10 @@
 			<guns>
 				<_120mm_Gun_T179>
 					shared
-					<maxAmmo>36</maxAmmo>
+					<maxAmmo>44</maxAmmo>
 					<pitchLimits>
 						<minPitch>
-							0 -12 0.353005 -12 0.416667 -10 0.583333 -10 0.646995 -12 1 -12
+							0.00000 -12.00 1.00000 -12.00
 							<!--BW_String-->
 						</minPitch>
 						<maxPitch>
@@ -3749,6 +3748,7 @@
 							50.8
 							<!--BW_String-->
 							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
 						</armor_16>
 						<gun>50</gun>
 					</armor>
@@ -4852,7 +4852,7 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_T57_58>
+		</Turret_1_A67_T57_58>
 	</turrets0>
 	<engines>
 		<Continental_AV_1790_5C>shared</Continental_AV_1790_5C>
@@ -4867,10 +4867,7 @@
 		<detailed>
 			<engines>
 				<Continental_AV_1790_5C>
-					<smplEnginePower>
-						856.3977
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>870</smplEnginePower>
 					<smplFwMaxSpeed>
 						35.4
 						<!--BW_String-->
@@ -4878,7 +4875,7 @@
 				</Continental_AV_1790_5C>
 			</engines>
 			<chassis>
-				<Chassis_T57_58>
+				<Chassis_A67_T57_58>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -4899,7 +4896,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_T57_58>
+				</Chassis_A67_T57_58>
 			</chassis>
 		</detailed>
 	</physics>

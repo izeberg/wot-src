@@ -453,8 +453,9 @@ def configurePhysics(physics, baseCfg, typeDescr, gravityFactor, updateSiegeMode
             updatePhysicsCfg(siegeBaseCfg, siegeVehicleDescr, cfg['modes']['siegeMode'])
     cfg = __buildConfigurations(cfg)
     for name, mode in cfg['modes'].iteritems():
-        applyVehDescrMiscFactors(typeDescr, mode)
-        configurePhysicsMode(mode, typeDescr, gravityFactor)
+        tDescr = typeDescr.siegeVehicleDescr if typeDescr.hasSiegeMode and name == 'siegeMode' else typeDescr
+        applyVehDescrMiscFactors(tDescr, mode)
+        configurePhysicsMode(mode, tDescr, gravityFactor)
 
     if not physics.configure(cfg):
         LOG_ERROR('configureXPhysics: configure failed')
@@ -531,8 +532,6 @@ def configureModelShapePhysics(cfg, typeDesc):
 
 
 def updatePhysics(physics, typeDesc, isSoftUpdate=False, gravityMultiplier=1.0):
-    baseCfg = typeDesc.type.xphysics['detailed']
-    gravityFactor = baseCfg['gravityFactor'] * gravityMultiplier
     updateSiegeModeFromCfg = False
     vehiclePhysicsType = typeDesc.type.xphysics['detailed'].get('vehiclePhysicsType', VEHICLE_PHYSICS_TYPE.TANK)
     isTank = vehiclePhysicsType == VEHICLE_PHYSICS_TYPE.TANK
@@ -542,6 +541,8 @@ def updatePhysics(physics, typeDesc, isSoftUpdate=False, gravityMultiplier=1.0):
         siegeVehicleDescr = typeDesc.siegeVehicleDescr
     else:
         defaultVehicleDescr = typeDesc
+    baseCfg = defaultVehicleDescr.type.xphysics['detailed']
+    gravityFactor = baseCfg['gravityFactor'] * gravityMultiplier
     try:
         cfg['fakegearbox'] = typeDesc.type.xphysics['detailed']['fakegearbox']
     except:
@@ -556,9 +557,10 @@ def updatePhysics(physics, typeDesc, isSoftUpdate=False, gravityMultiplier=1.0):
         updatePhysicsCfg(siegeBaseCfg, siegeVehicleDescr, cfg['modes']['siegeMode'])
     cfg = __buildConfigurations(cfg)
     for name, mode in cfg['modes'].iteritems():
+        tDescr = typeDesc.siegeVehicleDescr if typeDesc.hasSiegeMode and name == 'siegeMode' else typeDesc
         if isSoftUpdate:
-            applyVehDescrMiscFactors(typeDesc, mode)
-        configurePhysicsMode(mode, typeDesc, gravityFactor)
+            applyVehDescrMiscFactors(tDescr, mode)
+        configurePhysicsMode(mode, tDescr, gravityFactor)
 
     if not isSoftUpdate:
         oldMatrix = Math.Matrix(physics.matrix)

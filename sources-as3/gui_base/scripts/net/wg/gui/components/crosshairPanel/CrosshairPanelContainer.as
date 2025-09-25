@@ -14,6 +14,7 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.AUTOLOADERBOOSTVIEWSTATES;
+   import net.wg.data.constants.generated.CLIP_RELOADING_TYPES;
    import net.wg.gui.components.crosshairPanel.VO.CrosshairSettingsVO;
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.VO.ShotFlyTimeVO;
@@ -47,9 +48,11 @@ package net.wg.gui.components.crosshairPanel
       private static const FADE_IN_ALPHA:Number = 1;
       
       private static const FADE_OUT_ALPHA:Number = 0.4;
+      
+      private static const EXTRA_SHOT_CLIP_RELOADING_CRITICAL_THRESHOLD:Number = 2;
        
       
-      protected var _gunMarkersContainer:GunMarkersManager;
+      private var _gunMarkersContainer:GunMarkersManager;
       
       private var _currentCrosshair:ICrosshair = null;
       
@@ -79,11 +82,25 @@ package net.wg.gui.components.crosshairPanel
       
       private var _scale:Number = 1;
       
+      private var _width:Number = 0;
+      
+      private var _height:Number = 0;
+      
       private var _reloadingInterval:Number = -1;
       
       private var _currReloadingPercent:Number = 0;
       
       private var _previousReloadingPercent:Number = 0;
+      
+      private var _isShotAvailable:Boolean = false;
+      
+      private var _isInControllableReload:Boolean = false;
+      
+      private var _isReloadBoost:Boolean = false;
+      
+      private var _isReloadBoostBorder:Boolean = false;
+      
+      private var _isReloadBoostBorderActive:Boolean = false;
       
       private var _isQuickReloadingActive:Boolean = false;
       
@@ -111,6 +128,14 @@ package net.wg.gui.components.crosshairPanel
       
       private var _autoloaderAnimationState:String = "reloadingEnd";
       
+      private var _extraShotClipReloadingState:String = "reloadingEnd";
+      
+      private var _extraShotClipReloadingTimer:Number = 0;
+      
+      private var _extraShotClipReloadingBaseTime:Number = 0;
+      
+      private var _extraShotClipReloadingFinishTime:Number = 0;
+      
       private var _remainingTimeInSec:Number = 0;
       
       private var _baseReloadingTimeInSec:Number = 0;
@@ -125,9 +150,11 @@ package net.wg.gui.components.crosshairPanel
       
       private var _ammoQuantityInClip:Number = 0;
       
-      private var _isAutoloader:Boolean = false;
+      private var _clipReloadingType:int = 0;
       
       private var _isAutoloaderCritical:Boolean = false;
+      
+      private var _isOverheat:Boolean = false;
       
       private var _ammoClipState:String = "";
       
@@ -144,6 +171,8 @@ package net.wg.gui.components.crosshairPanel
       private var _crosshairs:Vector.<ICrosshair> = null;
       
       private var _netType:int = -1;
+      
+      private var _netSeparatorType:String = "default";
       
       private var _speedometer:Speedometer = null;
       
@@ -181,24 +210,40 @@ package net.wg.gui.components.crosshairPanel
          return new _loc2_();
       }
       
-      protected function get currentCrosshair() : ICrosshair
+      public function as_setReloadBoost(param1:Boolean) : void
       {
-         return this._currentCrosshair;
+         this._isReloadBoost = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.reloadBoost = this._isReloadBoost;
+         }
       }
       
-      protected function set currentCrosshair(param1:ICrosshair) : void
+      public function as_setReloadBoostBorder(param1:Boolean, param2:Boolean) : void
       {
-         this._currentCrosshair = param1;
+         this._isReloadBoostBorder = param1;
+         this._isReloadBoostBorderActive = param2;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setReloadBoostBorderVisible(this._isReloadBoostBorder,this._isReloadBoostBorderActive,false);
+         }
       }
       
-      protected function set crosshairs(param1:Vector.<ICrosshair>) : void
+      public function as_setReloadBoostBorderBlink() : void
       {
-         this._crosshairs = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setReloadBoostBorderBlink();
+         }
       }
       
-      protected function get crosshairs() : Vector.<ICrosshair>
+      public function as_setOverheatVisible(param1:Boolean) : void
       {
-         return this._crosshairs;
+         this._isOverheat = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.overheatIndicatorVisible = this._isOverheat;
+         }
       }
       
       override protected function configUI() : void
@@ -214,6 +259,7 @@ package net.wg.gui.components.crosshairPanel
          this.clearReloadingTimer();
          this.clearAutoloaderReloadTimer();
          this.clearAutoloaderAtimationTimer();
+         this.clearExtraShotClipTimer();
          this.clearTweens();
          this._gunMarkersContainer.dispose();
          this._gunMarkersContainer = null;
@@ -258,20 +304,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_addOverheat(param1:Number) : void
-      {
-         var _loc3_:ICrosshair = null;
-         var _loc2_:CrosshairSettingsVO = this._settings[this._settingId];
-         for each(_loc3_ in this._crosshairs)
-         {
-            _loc3_.addOverheat(param1);
-            if(_loc2_)
-            {
-               _loc3_.updateOverheatColorBlind(_loc2_.isColorBlind);
-            }
-         }
-      }
-      
       public function as_addSpeedometer(param1:int, param2:int) : void
       {
          if(this._speedometer == null)
@@ -294,11 +326,11 @@ package net.wg.gui.components.crosshairPanel
          this.attachSpeedometer();
       }
       
-      public function as_autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean, param6:Boolean) : void
+      public function as_autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean) : void
       {
          this.clearAutoloaderReloadTimer();
-         this._isAutoloaderTimerRed = param6;
-         this._isAutoloaderTimerOn = param5;
+         this._isAutoloaderTimerRed = param5;
+         this._isAutoloaderTimerOn = param4;
          this._autoloaderBaseTime = param2;
          this._reloadingAutoloaderFinishTime = getTimer() + param1 * CrosshairConsts.MS_IN_SECOND;
          if(param1 > 0)
@@ -310,11 +342,7 @@ package net.wg.gui.components.crosshairPanel
          {
             this._autoloaderState = CrosshairConsts.RELOADING_END;
          }
-         this._isAutoloaderCritical = param4;
-         if(this._currentCrosshair != null)
-         {
-            this._currentCrosshair.updateCritical(this._isAutoloaderCritical);
-         }
+         this._isAutoloaderCritical = param3;
          this.applyAutoloaderState();
       }
       
@@ -331,6 +359,22 @@ package net.wg.gui.components.crosshairPanel
          if(this._gunMarkersContainer != null)
          {
             this._gunMarkersContainer.cancelDualGunCharge();
+         }
+      }
+      
+      public function as_setChargeGunActive(param1:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setChargeGunActive(param1);
+         }
+      }
+      
+      public function as_setChargeGunState(param1:Number, param2:uint, param3:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setChargeGunState(param1,param2,param3);
          }
       }
       
@@ -420,15 +464,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_removeOverheat() : void
-      {
-         var _loc1_:ICrosshair = null;
-         for each(_loc1_ in this._crosshairs)
-         {
-            _loc1_.removeOverheat();
-         }
-      }
-      
       public function as_removeSpeedometer() : void
       {
          if(this._speedometer)
@@ -446,6 +481,14 @@ package net.wg.gui.components.crosshairPanel
          if(this._currentCrosshair != null)
          {
             this._sniperCameraTransitionFx.start(param1,param2);
+         }
+      }
+      
+      public function as_setAccuracyStacksProgress(param1:int) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.accuracyStacksProgress(param1);
          }
       }
       
@@ -470,16 +513,17 @@ package net.wg.gui.components.crosshairPanel
          }
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setAmmoStock(this._ammoQuantityInClip,this._ammoClipState,this._ammoClipReloaded);
+            this._currentCrosshair.setAmmoStock(this._ammoQuantity,this._ammoQuantityInClip,this._ammoClipState,this._ammoClipReloaded);
          }
          this._ammoClipReloaded = false;
       }
       
-      public function as_setAutoloaderPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
+      public function as_setAutoloaderPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean) : void
       {
+         this._isAutoloaderCritical = param3;
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.autoloaderUpdate(param1,param2,param3,param4);
+            this._currentCrosshair.autoloaderUpdate(param1,param2,param3,param4,param5);
          }
       }
       
@@ -487,7 +531,7 @@ package net.wg.gui.components.crosshairPanel
       {
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setAutoloaderReloadingAsPercent(param1,false);
+            this._currentCrosshair.setAutoloaderReloadingAsPercent(param1);
          }
       }
       
@@ -536,14 +580,22 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setClipParams(param1:Number, param2:Number, param3:Boolean) : void
+      public function as_setChargeableBurstMode(param1:Boolean) : void
       {
-         this._isAutoloader = param3;
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setChargeableBurstMode(param1);
+         }
+      }
+      
+      public function as_setClipParams(param1:Number, param2:Number, param3:int) : void
+      {
+         this._clipReloadingType = param3;
          this._clipCapacity = param1;
          this._burst = param2;
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setClipsParam(this._clipCapacity,this._burst,param3);
+            this._currentCrosshair.setClipsParam(this._clipCapacity,this._burst,this._clipReloadingType);
          }
       }
       
@@ -589,6 +641,24 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setIsInControllableReload(param1:Boolean) : void
+      {
+         this._isInControllableReload = param1;
+         if(this._currentCrosshair != null)
+         {
+            this._currentCrosshair.setIsInControllableReload(param1);
+         }
+      }
+      
+      public function as_setNetSeparatorType(param1:String) : void
+      {
+         if(this._netSeparatorType != param1)
+         {
+            this._netSeparatorType = param1;
+            this.applySettings();
+         }
+      }
+      
       public function as_setNetSeparatorVisible(param1:Boolean) : void
       {
          if(this._visibleNetSeparator == param1)
@@ -624,17 +694,9 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setOverheatProgress(param1:Number, param2:Boolean) : void
+      public function as_setReloading(param1:Number, param2:Number, param3:Number, param4:Boolean, param5:Boolean) : void
       {
-         var _loc3_:ICrosshair = null;
-         for each(_loc3_ in this._crosshairs)
-         {
-            _loc3_.setOverheatProgress(param1,param2);
-         }
-      }
-      
-      public function as_setReloading(param1:Number, param2:Number, param3:Number, param4:Boolean) : void
-      {
+         this._isShotAvailable = param5;
          this.clearReloadingTimer();
          this._baseReloadingTimeInSec = param2;
          if(param1 == 0)
@@ -670,31 +732,30 @@ package net.wg.gui.components.crosshairPanel
          }
          else
          {
-            if(this._currReloadingState == CrosshairConsts.RELOADING_PROGRESS)
-            {
-               this._remainingTimeInSec = param1;
-               this._previousReloadingPercent = this._currReloadingPercent;
-            }
-            else
-            {
-               this._remainingTimeInSec = param1;
-               this._previousReloadingPercent = this._currReloadingPercent = param3 / param2;
-            }
+            this._remainingTimeInSec = param1;
+            this._previousReloadingPercent = this._currReloadingPercent = param3 / param2;
             this._currReloadingState = CrosshairConsts.RELOADING_PROGRESS;
             this._initReloadingTime = getTimer();
             this._baseReloadingTimeInMsec = this._baseReloadingTimeInSec * MSEC_TO_SEC_FACTOR;
-            this._reloadingInterval = setInterval(this.updateReloadingTimer,CrosshairConsts.COUNTER_UPDATE_TICK,false);
+            if(param4)
+            {
+               this._reloadingInterval = setInterval(this.updateReloadingTimer,CrosshairConsts.COUNTER_UPDATE_TICK,false);
+            }
          }
          this.updateCurrentCrosshairReloadingParams();
+         if(this.isExtraShot)
+         {
+            this.setExtraShotClipReloading(param1,param2,param5);
+         }
       }
       
-      public function as_setReloadingAsPercent(param1:Number, param2:Boolean) : void
+      public function as_setReloadingAsPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void
       {
-         if(param1 >= VALUE_100)
+         this._isShotAvailable = param4;
+         if(param2 >= VALUE_100)
          {
             this._currReloadingPercent = 1;
-            this._remainingTimeInSec = this._baseReloadingTimeInSec;
-            if(param2)
+            if(param3)
             {
                this._currReloadingState = CrosshairConsts.RELOADING_END;
             }
@@ -706,9 +767,14 @@ package net.wg.gui.components.crosshairPanel
          else
          {
             this._currReloadingState = CrosshairConsts.RELOADING_PROGRESS;
-            this._currReloadingPercent = param1 * DIVIDE_100;
+            this._currReloadingPercent = param2 * DIVIDE_100;
          }
+         this._remainingTimeInSec = param1;
          this.applyData(true);
+         if(this.isExtraShot)
+         {
+            this.setExtraShotClipReloadingAsPercent(this._remainingTimeInSec,this._currReloadingPercent,param4);
+         }
       }
       
       public function as_setReloadingCounterShown(param1:Boolean) : void
@@ -763,6 +829,17 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setSize(param1:Number, param2:Number) : void
+      {
+         if(this._width == param1 && this._height == param2)
+         {
+            return;
+         }
+         this._width = param1;
+         this._height = param2;
+         this._currentCrosshair.setSize(param1,param2);
+      }
+      
       public function as_setSpeedMode(param1:Boolean) : void
       {
          if(this._speedometer)
@@ -810,8 +887,12 @@ package net.wg.gui.components.crosshairPanel
             _loc3_ = this._currentCrosshair.autoloaderBoostParams;
             this._currentCrosshair = this._crosshairs[this._viewId - 1];
             this._currentCrosshair.visible = true;
+            this._currentCrosshair.setSize(this._width,this._height);
             this._currentCrosshair.setVisibleNet(this._visibleNet);
             this._currentCrosshair.setNetSeparatorVisible(this._visibleNetSeparator);
+            this._currentCrosshair.reloadBoost = this._isReloadBoost;
+            this._currentCrosshair.setReloadBoostBorderVisible(this._isReloadBoostBorder,this._isReloadBoostBorderActive,true);
+            this._currentCrosshair.overheatIndicatorVisible = this._isOverheat;
             if(_loc3_)
             {
                this._currentCrosshair.autoloaderBoostUpdate(_loc3_,0,true);
@@ -860,11 +941,19 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_showPenetrationFx() : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.showPenetrationFx();
+         }
+      }
+      
       public function as_showShot() : void
       {
-         if(this._isAutoloader && this._currentCrosshair != null)
+         if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.autoloaderShowShot();
+            this._currentCrosshair.showShot();
          }
       }
       
@@ -969,6 +1058,15 @@ package net.wg.gui.components.crosshairPanel
          this._currentCrosshair = this._crosshairs[0];
       }
       
+      protected function hideAll() : void
+      {
+         var _loc1_:ICrosshair = null;
+         for each(_loc1_ in this._crosshairs)
+         {
+            _loc1_.visible = false;
+         }
+      }
+      
       private function clearTweens() : void
       {
          if(this._fadeTween)
@@ -1010,17 +1108,17 @@ package net.wg.gui.components.crosshairPanel
          this.applyAutoloaderAnimationState();
       }
       
-      private function applyAutoloaderAnimationState(param1:Boolean = false) : void
+      private function applyAutoloaderAnimationState() : void
       {
-         var _loc2_:Number = NaN;
+         var _loc1_:Number = NaN;
          if(this._autoloaderAnimationState != CrosshairConsts.RELOADING_END)
          {
-            _loc2_ = (this._autoloaderAnimationFinishTime - getTimer()) / CrosshairConsts.MS_IN_SECOND;
-            this._autoloaderAnimationProgress = _loc2_ / this._autoloaderAnimationBaseTime;
+            _loc1_ = (this._autoloaderAnimationFinishTime - getTimer()) / CrosshairConsts.MS_IN_SECOND;
+            this._autoloaderAnimationProgress = _loc1_ / this._autoloaderAnimationBaseTime;
          }
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setAutoloaderReloadingAsPercent(1 - this._autoloaderAnimationProgress,param1);
+            this._currentCrosshair.setAutoloaderReloadingAsPercent(1 - this._autoloaderAnimationProgress);
          }
       }
       
@@ -1052,27 +1150,27 @@ package net.wg.gui.components.crosshairPanel
          this.applyAutoloaderState();
       }
       
-      private function applyAutoloaderState() : void
+      private function applyAutoloaderState(param1:Boolean = false) : void
       {
          if(this._currentCrosshair == null)
          {
             return;
          }
-         var _loc1_:Number = 0;
-         var _loc2_:Number = this._autoloaderBaseTime;
+         var _loc2_:Number = 0;
+         var _loc3_:Number = this._autoloaderBaseTime;
          if(this._autoloaderState != CrosshairConsts.RELOADING_END)
          {
-            _loc2_ = (this._reloadingAutoloaderFinishTime - getTimer()) / CrosshairConsts.MS_IN_SECOND;
-            _loc1_ = _loc2_ / this._autoloaderBaseTime;
+            _loc3_ = (this._reloadingAutoloaderFinishTime - getTimer()) / CrosshairConsts.MS_IN_SECOND;
+            _loc2_ = _loc3_ / this._autoloaderBaseTime;
          }
-         this._currentCrosshair.autoloaderUpdate(_loc1_,_loc2_,this._isAutoloaderTimerOn,this._isAutoloaderTimerRed);
+         this._currentCrosshair.autoloaderUpdate(_loc2_,_loc3_,this._isAutoloaderCritical,this._isAutoloaderTimerOn,this._isAutoloaderTimerRed,param1);
       }
       
       private function applyData(param1:Boolean = false) : void
       {
          if(this._currentCrosshair != null)
          {
-            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._ammoState,this._ammoQuantityInClip,this._ammoClipState,this._averageDamageStr,this._ammoClipReloaded,this._isAutoloader,this._isAutoloaderCritical);
+            this._currentCrosshair.setInfo(this._healthInPercents,this._zoomStr,this._currReloadingState,this._isReloadingTimeFieldShown,this._isDistanceShown,this._distanceStr,this._playerInfoStr,this._clipCapacity,this._burst,this._clipReloadingType,this._ammoState,this._ammoQuantity,this._ammoQuantityInClip,this._ammoClipState,this._averageDamageStr,this._ammoClipReloaded,this._isInControllableReload,this._isReloadBoost,this._isReloadBoostBorder,this._isReloadBoostBorderActive,this._isOverheat);
             this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._quickReloadingTime);
             if(this._speedometer != null)
             {
@@ -1103,10 +1201,21 @@ package net.wg.gui.components.crosshairPanel
                }
             }
          }
-         if(this._isAutoloader && !param1)
+         if(!param1)
          {
-            this.applyAutoloaderState();
-            this.applyAutoloaderAnimationState(true);
+            if(this.isAutoloader)
+            {
+               this.applyAutoloaderState(true);
+               this.applyAutoloaderAnimationState();
+            }
+            else if(this.isExtraShot)
+            {
+               this.applyExtraShotClipReloadingState(true);
+            }
+            else if(this.isControllableReload)
+            {
+               this.applyAutoloaderState(true);
+            }
          }
          this.updateCurrentCrosshairReloadingParams();
       }
@@ -1117,11 +1226,11 @@ package net.wg.gui.components.crosshairPanel
          if(_loc1_ && this._currentCrosshair != null)
          {
             this._currentCrosshair.setNetType(this._netType != Values.DEFAULT_INT ? Number(this._netType) : Number(_loc1_.netType));
+            this._currentCrosshair.setNetSeparatorType(this._netSeparatorType);
             this._currentCrosshair.setComponentsAlpha(_loc1_.netAlphaValue,_loc1_.centerAlphaValue,_loc1_.reloaderAlphaValue,_loc1_.conditionAlphaValue,_loc1_.cassetteAlphaValue,_loc1_.reloaderTimerAlphaValue,_loc1_.zoomIndicatorAlphaValue);
             this._currentCrosshair.setCenterType(_loc1_.centerType);
             this._currentCrosshair.scaleWidgetEnabled = _loc1_.spgScaleWidgetEnabled;
             this._currentCrosshair.setGunMarkersData(this._indicatorsData,_loc1_.isColorBlind);
-            this._currentCrosshair.updateOverheatColorBlind(_loc1_.isColorBlind);
             this._gunMarkersContainer.updateSettings(_loc1_);
          }
       }
@@ -1154,7 +1263,14 @@ package net.wg.gui.components.crosshairPanel
             this._currentCrosshair.setReloadingAsPercent(this._currReloadingPercent);
             this._currentCrosshair.setReloadingState(this._currReloadingState);
          }
-         this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
+         if(!this._isShotAvailable)
+         {
+            this._gunMarkersContainer.updateReloadingParams(this._currReloadingPercent,this._currReloadingState);
+         }
+         else
+         {
+            this._gunMarkersContainer.updateReloadingParams(1,CrosshairConsts.RELOADING_ENDED);
+         }
       }
       
       private function clearReloadingTimer() : void
@@ -1162,13 +1278,110 @@ package net.wg.gui.components.crosshairPanel
          this._reloadingInterval = this.clearTimer(this._reloadingInterval);
       }
       
-      protected function hideAll() : void
+      private function setExtraShotClipReloading(param1:Number, param2:Number, param3:Boolean) : void
       {
-         var _loc1_:ICrosshair = null;
-         for each(_loc1_ in this._crosshairs)
+         this.clearExtraShotClipTimer();
+         this._extraShotClipReloadingBaseTime = param2;
+         this._extraShotClipReloadingFinishTime = getTimer() + param1 * CrosshairConsts.MS_IN_SECOND;
+         if(param1 > 0)
          {
-            _loc1_.visible = false;
+            this._extraShotClipReloadingState = param3 || this._ammoQuantityInClip == 0 ? CrosshairConsts.CLIP_RELOADING : CrosshairConsts.GUN_RELOADING;
+            this._extraShotClipReloadingTimer = setInterval(this.updateExtraShotClipTimer,CrosshairConsts.ANIMATION_UPDATE_TICK);
          }
+         else
+         {
+            this._extraShotClipReloadingState = CrosshairConsts.RELOADING_END;
+         }
+         this.applyExtraShotClipReloadingState();
+      }
+      
+      private function setExtraShotClipReloadingAsPercent(param1:Number, param2:Number, param3:Boolean) : void
+      {
+         var _loc4_:Boolean = false;
+         if(param2 < 1)
+         {
+            this._extraShotClipReloadingState = param3 || this._ammoQuantityInClip == 0 ? CrosshairConsts.CLIP_RELOADING : CrosshairConsts.GUN_RELOADING;
+            _loc4_ = param3 && param1 <= EXTRA_SHOT_CLIP_RELOADING_CRITICAL_THRESHOLD;
+         }
+         else
+         {
+            this._extraShotClipReloadingState = CrosshairConsts.RELOADING_END;
+         }
+         if(this._currentCrosshair != null)
+         {
+            this._currentCrosshair.setExtraShotClipReloading(this._extraShotClipReloadingState,param2,_loc4_);
+         }
+      }
+      
+      private function clearExtraShotClipTimer() : void
+      {
+         this._extraShotClipReloadingTimer = this.clearTimer(this._extraShotClipReloadingTimer);
+      }
+      
+      private function updateExtraShotClipTimer() : void
+      {
+         if(getTimer() >= this._extraShotClipReloadingFinishTime)
+         {
+            this.clearExtraShotClipTimer();
+         }
+         this.applyExtraShotClipReloadingState();
+      }
+      
+      private function applyExtraShotClipReloadingState(param1:Boolean = false) : void
+      {
+         var _loc4_:Number = NaN;
+         var _loc2_:Number = 1;
+         var _loc3_:Boolean = false;
+         if(this._extraShotClipReloadingState != CrosshairConsts.RELOADING_END)
+         {
+            _loc4_ = (this._extraShotClipReloadingFinishTime - getTimer()) / CrosshairConsts.MS_IN_SECOND;
+            _loc2_ -= _loc4_ / this._extraShotClipReloadingBaseTime;
+            _loc3_ = this._isShotAvailable && _loc4_ <= EXTRA_SHOT_CLIP_RELOADING_CRITICAL_THRESHOLD;
+         }
+         if(this._currentCrosshair != null)
+         {
+            this._currentCrosshair.setExtraShotClipReloading(this._extraShotClipReloadingState,_loc2_,_loc3_,param1);
+         }
+      }
+      
+      protected function get currentCrosshair() : ICrosshair
+      {
+         return this._currentCrosshair;
+      }
+      
+      protected function set currentCrosshair(param1:ICrosshair) : void
+      {
+         this._currentCrosshair = param1;
+      }
+      
+      protected function get crosshairs() : Vector.<ICrosshair>
+      {
+         return this._crosshairs;
+      }
+      
+      protected function set crosshairs(param1:Vector.<ICrosshair>) : void
+      {
+         this._crosshairs = param1;
+      }
+      
+      protected function get gunMarkersContainer() : GunMarkersManager
+      {
+         return this._gunMarkersContainer;
+      }
+      
+      private function get isAutoloader() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.AUTO_LOADER_CLIP;
+      }
+      
+      private function get isExtraShot() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.EXTRA_SHOT_CLIP;
+      }
+      
+      private function get isControllableReload() : Boolean
+      {
+         return this._clipReloadingType == CLIP_RELOADING_TYPES.CONTROLLABLE_RELOAD;
       }
       
       private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void

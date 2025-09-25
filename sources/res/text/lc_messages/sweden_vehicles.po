@@ -13,6 +13,9 @@ msgstr ""
 msgid "AOS_895"
 msgstr "AOS-895"
 
+msgid "AOS_895_S"
+msgstr "AOS 895 S"
+
 msgid "AVS_1195"
 msgstr "AVS-1195"
 
@@ -199,6 +202,12 @@ msgstr "Lätt Stridsfordon 120"
 msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Chassis_S35_Stridsyxa"
+msgstr "Stridsyxa"
+
+msgid "Chassis_S36_Strv_107_12"
+msgstr "Strv 107-12"
+
 msgid "DB_605"
 msgstr "DB 605"
 
@@ -232,6 +241,9 @@ msgstr "Meteor Mark IV Mod 271"
 msgid "Meteor_Mark_IV_Mod_271_SH"
 msgstr "Meteor Mark IV Mod. 271B"
 
+msgid "Motoraggregat_10"
+msgstr "Motoraggregat 10"
+
 msgid "Motoraggregat_1S"
 msgstr "Motoraggregat 1S"
 
@@ -252,6 +264,9 @@ msgstr "Ra 100"
 
 msgid "Ra_105"
 msgstr "Ra 105"
+
+msgid "Ra_121"
+msgstr "Ra 121"
 
 msgid "Ra_146"
 msgstr "Ra 146"
@@ -276,6 +291,9 @@ msgstr "Ra 421"
 
 msgid "Ra_421_1_SH"
 msgstr "Ra 421/1"
+
+msgid "Ra_422"
+msgstr "Ra 422"
 
 msgid "S01_Strv_74_A2"
 msgstr "Strv m/42-57 Alt A.2"
@@ -332,8 +350,12 @@ msgstr "Lago"
 
 msgid "S04_Lago_I_descr"
 msgstr ""
-"Компания Landsverk начала разработку танка в 1936 году. Были использованы наработки по лёгкому танку\n"
-"L-60. В 1939 году к проекту проявила заинтересованность Венгрия. В 1940 году был собран прототип машины, но к этому времени Венгерское правительство приняло решение о разработке собственного среднего танка на базе Škoda Т-21. В дальнейшем некоторые технические решения использовались при разработке танка Strv m/42."
+"Компания Landsverk начала разработку танка в 1936 году. Были использованы "
+"наработки по лёгкому танку L-60. В 1939 году к проекту проявила "
+"заинтересованность Венгрия. В 1940 году был собран прототип машины, но к "
+"этому времени Венгерское правительство приняло решение о разработке "
+"собственного среднего танка на базе Škoda Т-21. В дальнейшем некоторые "
+"технические решения использовались при разработке танка Strv m/42."
 
 msgid "S04_Lago_I_short"
 msgstr "Lago"
@@ -939,6 +961,56 @@ msgstr "Lago M38"
 msgid "S34_Lago_M38_short_special"
 msgstr "Неплохая лобовая броня, высокая скорострельность"
 
+msgid "S35_Stridsyxa"
+msgstr "Stridsyxa"
+
+msgid "S35_Stridsyxa_descr"
+msgstr ""
+"Вариант среднего танка, разработанный для армии Швеции в 1950-х годах. "
+"Проект отличался необычными компоновочными решениями, включая смещение "
+"орудия относительно центральной оси башни. Геометрия носовой части корпуса "
+"позволяла оптимизировать компоновку и обеспечить удобное размещение "
+"водителя. Подвеска предполагалась с шахматным расположением катков. Эскиз "
+"был представлен в 1954 году, но дальнейшего развития не получил."
+
+msgid "S35_Stridsyxa_long_special"
+msgstr ""
+"Stridsyxa — шведский средний танк VIII уровня, вооружённый комфортным 105-мм"
+" орудием с хорошими углами вертикального наведения и высоким уроном в "
+"минуту. Хорошая мобильность и надёжная лобовая броня позволяют быстро менять"
+" позиции на поле боя и применять другие тактические приёмы."
+
+msgid "S35_Stridsyxa_short"
+msgstr "Stridsyxa"
+
+msgid "S35_Stridsyxa_short_special"
+msgstr "Надёжная лобовая броня, комфортное орудие"
+
+msgid "S36_Strv_107_12"
+msgstr "Strv 107-12"
+
+msgid "S36_Strv_107_12_descr"
+msgstr ""
+"Машина разрабатывалась с 1967 по 1975 год как альтернатива Strv 103. "
+"Предполагалась установка 105-мм пушки, одного газотурбинного двигателя "
+"производства Boeng, лазерного дальномера и инфракрасных приборов наблюдения "
+"на выдвижной штанге. К 1975 году была готова документация для постройки "
+"прототипа, но после оценки возможностей машины от проекта отказались, решив "
+"сохранить в производстве уже стоящий на вооружении Strv103."
+
+msgid "S36_Strv_107_12_long_special"
+msgstr ""
+"Strv 107-12 — мастер засадного стиля. Эта машина идеально подходит для "
+"скрытных операций благодаря великолепной незаметности и отличному орудию. "
+"Как и у других высокоуровневых шведских ПТ-САУ, её орудие жёстко закреплено "
+"в корпусе, а угол вертикального наведения регулируется с помощью "
+"гидравлической подвески. Strv 107-12 может переключаться между двумя "
+"экспериментальными режимами боя, включая осадный, который значительно "
+"усиливает огневую мощь за счёт снижения подвижности."
+
+msgid "S36_Strv_107_12_short"
+msgstr "Strv 107-12"
+
 msgid "SFA_8_cyl_boxer"
 msgstr "SFA 8 cyl boxer"
 
@@ -975,11 +1047,20 @@ msgstr "Saab-Scania DSI 14C"
 msgid "Scania_Vabis_1664"
 msgstr "Scania-Vabis 1664"
 
+msgid "Scania_Vabis_1664_40"
+msgstr "Scania-Vabis 1664 (40)"
+
+msgid "Scania_Vabis_1664_Sav"
+msgstr "Scania-Vabis 1664 (Sav)"
+
 msgid "Scania_Vabis_335"
 msgstr "Scania-Vabis 335"
 
 msgid "Scania_Vabis_L_603"
 msgstr "Scania-Vabis L 603"
+
+msgid "Scania_Vabis_L_603_Sav"
+msgstr "Scania-Vabis L 603 (Sav)"
 
 msgid "Turret_1_S01_Strv_74_A2"
 msgstr "Strv m/42-57 Alternativ A.2"
@@ -1086,6 +1167,12 @@ msgstr "Lätt Stridsfordon 120"
 msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Turret_1_S35_Stridsyxa"
+msgstr "Stridsyxa"
+
+msgid "Turret_1_S36_Strv_107_12"
+msgstr "Strv 107-12"
+
 msgid "Turret_2_S02_Strv_M42"
 msgstr "Strv m/42"
 
@@ -1115,6 +1202,9 @@ msgstr "Lansen MB"
 
 msgid "Volvo_A8B"
 msgstr "Volvo A8B"
+
+msgid "Volvo_A8B_Leo"
+msgstr "Volvo A8B (Leo)"
 
 msgid "Volvo_DC"
 msgstr "Volvo DC"
@@ -1148,6 +1238,9 @@ msgstr "10.5 cm Bofors D/5"
 
 msgid "_105mm_TK_105_9"
 msgstr "10,5 cm TK 105-9"
+
+msgid "_105mm_TK_105_9_52E2"
+msgstr "10,5 cm TK 105-9 (52E2)"
 
 msgid "_105mm_kan_UDES_03"
 msgstr "10,5 cm kan UDES 03"
@@ -1194,11 +1287,23 @@ msgstr "10,5 cm kan strv 103 L/62"
 msgid "_105mm_kan_strv_103_L_62_1"
 msgstr "10,5 cm kan strv 103 L/62"
 
+msgid "_105mm_kan_strv_103_L_62_103_0"
+msgstr "10,5 cm kan strv 103 L/62 (103-0)"
+
+msgid "_105mm_kan_strv_107_L_62"
+msgstr "10,5 cm kan strv 107 L/62"
+
 msgid "_105mm_kan_strv_K_L_52"
 msgstr "10,5 cm kan strv K L/52"
 
 msgid "_105mm_lt_sgr_m_34"
 msgstr "lt sgr m/34"
+
+msgid "_105mm_lt_sgr_m_34_103"
+msgstr "lt sgr m/34 (103)"
+
+msgid "_105mm_lt_sgr_m_34_Sav"
+msgstr "lt sgr m/34 (Sav)"
 
 msgid "_105mm_lvkan_L_53"
 msgstr "10.5 cm K L/53"
@@ -1212,6 +1317,9 @@ msgstr "10,5 cm lvkan m/42"
 msgid "_105mm_psgr_m_49"
 msgstr "psgr m/49"
 
+msgid "_105mm_sgr_LS_50_S"
+msgstr "slsgr L/50 S"
+
 msgid "_105mm_sgr_L_53"
 msgstr "sgr L/53"
 
@@ -1224,6 +1332,12 @@ msgstr "sgr m/40 B"
 msgid "_105mm_sgr_m_52"
 msgstr "sgr m/52"
 
+msgid "_105mm_sgr_m_52_52E2"
+msgstr "sgr m/52 (52E2)"
+
+msgid "_105mm_slpgr_LS_50_S"
+msgstr "slpgr L/50 S"
+
 msgid "_105mm_slpgr_m_42"
 msgstr "slpgr m/42"
 
@@ -1235,6 +1349,9 @@ msgstr "slpgr m/43(1)"
 
 msgid "_105mm_slpgr_m_612"
 msgstr "slpgr m/612"
+
+msgid "_105mm_slpprj_LS_50_S"
+msgstr "slpprj L/50 S"
 
 msgid "_105mm_slpprj_L_53"
 msgstr "slpprj L/53"
@@ -1260,8 +1377,14 @@ msgstr "slpprj m/49"
 msgid "_105mm_slpprj_m_52"
 msgstr "slpprj m/52"
 
+msgid "_105mm_slpprj_m_52_52E2"
+msgstr "slpprj m/52 (52E2)"
+
 msgid "_105mm_slpprj_m_52_B"
 msgstr "slpprj m/52 B"
+
+msgid "_105mm_slpprj_m_52_B_52E2"
+msgstr "slpprj m/52 B (52E2)"
 
 msgid "_105mm_slpprj_m_61"
 msgstr "slpprj m/61"
@@ -1269,8 +1392,26 @@ msgstr "slpprj m/61"
 msgid "_105mm_slpprj_m_61B"
 msgstr "slpprj m/61B"
 
+msgid "_105mm_slpprj_m_61B_16"
+msgstr "slpprj m/61B (16)"
+
 msgid "_105mm_slpprj_m_61D"
 msgstr "slpprj m/61D"
+
+msgid "_105mm_slpprj_m_61_03"
+msgstr "slpprj m/61 (03)"
+
+msgid "_105mm_slpprj_m_61_16"
+msgstr "slpprj m/61 (16)"
+
+msgid "_105mm_slpprj_m_61_L62_103B"
+msgstr "slpprj m/61 L/62 (103B)"
+
+msgid "_105mm_slpprj_m_61_L_51_103_0"
+msgstr "slpprj m/61 L/51 (103-0)"
+
+msgid "_105mm_slpprj_m_61_L_62_103_0"
+msgstr "slpprj m/61 L/62 (103-0)"
 
 msgid "_105mm_slpprj_m_62"
 msgstr "slpprj m/62"
@@ -1281,8 +1422,29 @@ msgstr "slpprj m/66"
 msgid "_105mm_slpprj_m_66B"
 msgstr "slpprj m/66B"
 
+msgid "_105mm_slpprj_m_66B_16"
+msgstr "slpprj m/66B (16)"
+
 msgid "_105mm_slpprj_m_66D"
 msgstr "slpprj m/66D"
+
+msgid "_105mm_slpprj_m_66_16"
+msgstr "slpprj m/66 (16)"
+
+msgid "_105mm_slpprj_m_66_L62_103B"
+msgstr "slpprj m/66 L/62 (103B)"
+
+msgid "_105mm_slpprj_m_66_L_51_103_0"
+msgstr "slpprj m/66 L/51 (103-0)"
+
+msgid "_105mm_slpprj_m_66_L_62_103_0"
+msgstr "slpprj m/66 L/62 (103-0)"
+
+msgid "_105mm_slpprj_m_73"
+msgstr "slpprj m/73"
+
+msgid "_105mm_slpprj_m_78"
+msgstr "slpprj m/78"
 
 msgid "_105mm_slpprj_m_ny"
 msgstr "slpprj m/ny"
@@ -1299,8 +1461,26 @@ msgstr "slpsgr m/65"
 msgid "_105mm_slsgr_m_61A"
 msgstr "slsgr m/61A"
 
+msgid "_105mm_slsgr_m_61A_03"
+msgstr "slsgr m/61A (03)"
+
+msgid "_105mm_slsgr_m_61A_16"
+msgstr "slsgr m/61A (16)"
+
+msgid "_105mm_slsgr_m_61A_L62_103B"
+msgstr "slsgr m/61A L/62 (103B)"
+
+msgid "_105mm_slsgr_m_61A_L_51_103_0"
+msgstr "slsgr m/61A L/51 (103-0)"
+
+msgid "_105mm_slsgr_m_61A_L_62_103_0"
+msgstr "slsgr m/61A L/62 (103-0)"
+
 msgid "_105mm_slsgr_m_61B"
 msgstr "slsgr m/61B"
+
+msgid "_105mm_slsgr_m_61B_16"
+msgstr "slsgr m/61B (16)"
 
 msgid "_105mm_slsgr_m_61D"
 msgstr "slsgr m/61D"
@@ -1308,8 +1488,14 @@ msgstr "slsgr m/61D"
 msgid "_105mm_slsgr_m_61S"
 msgstr "slsgr m/61S"
 
+msgid "_105mm_slsgr_m_73A"
+msgstr "slsgr m/73A"
+
 msgid "_105mm_strvkan_L_45"
 msgstr "10,5 cm strvkan L/45"
+
+msgid "_105mm_strvkan_L_45_16"
+msgstr "10,5 cm strvkan L/45 (16)"
 
 msgid "_105mm_strvkan_L_45_Alt_3"
 msgstr "10,5 cm strvkan L/45 Alt 3"
@@ -1322,6 +1508,9 @@ msgstr "slpprj L/45"
 
 msgid "_105mm_strvkan_L_45_G4_SH"
 msgstr "10.5 cm strvkan L/45"
+
+msgid "_105mm_strvkan_L_50_S"
+msgstr "10,5 cm strvkan L/50 S"
 
 msgid "_105mm_strvkan_L_51"
 msgstr "10,5 cm strvkan L/51"
@@ -1337,6 +1526,9 @@ msgstr "12 cm Bofors strvkan L/40"
 
 msgid "_120mm_akan_L_40"
 msgstr "12 cm akan L/40"
+
+msgid "_120mm_akan_L_40_52E2"
+msgstr "12 cm akan L/40 (52E2)"
 
 msgid "_120mm_akan_L_40_G6_APCR_SH"
 msgstr "slpprj L/40 B"
@@ -1359,6 +1551,9 @@ msgstr "12 cm kan L/33"
 msgid "_120mm_psgr_m_51"
 msgstr "psgr m/51"
 
+msgid "_120mm_psgr_m_51_52E2"
+msgstr "psgr m/51 (52E2)"
+
 msgid "_120mm_psgr_m_60"
 msgstr "psgr m/60"
 
@@ -1370,6 +1565,9 @@ msgstr "slpprj b/51"
 
 msgid "_120mm_sgr_m_51"
 msgstr "sgr m/51"
+
+msgid "_120mm_sgr_m_51_52E2"
+msgstr "sgr m/51 (52E2)"
 
 msgid "_120mm_sgr_m_60"
 msgstr "sgr m/60"
@@ -1385,6 +1583,9 @@ msgstr "slpprj b/71"
 
 msgid "_120mm_slpprj_m_51"
 msgstr "slpprj m/51"
+
+msgid "_120mm_slpprj_m_51_52E2"
+msgstr "slpprj m/51 (52E2)"
 
 msgid "_120mm_slpprj_m_60"
 msgstr "slpprj m/60"
@@ -1413,20 +1614,38 @@ msgstr "20 mm pvlvkan m/40"
 msgid "_20mm_slpprj_m_40"
 msgstr "slpprj m/40"
 
+msgid "_20mm_slpprj_m_40_38"
+msgstr "slpprj m/40 (38)"
+
 msgid "_20mm_slpprj_m_40_M"
 msgstr "slpprj m/40 M"
+
+msgid "_20mm_slpprj_m_40_M_21"
+msgstr "slpprj m/40 M (21)"
 
 msgid "_20mm_slpprj_m_49"
 msgstr "slpprj m/49"
 
+msgid "_20mm_slpprj_m_49_38"
+msgstr "slpprj m/49 (38)"
+
 msgid "_20mm_slpprj_m_Madsen"
 msgstr "slpprj m/Madsen"
+
+msgid "_20mm_slpprj_m_Madsen_21"
+msgstr "slpprj m/Madsen (21)"
 
 msgid "_20mm_slsgr_m_42"
 msgstr "slsgr m/42"
 
+msgid "_20mm_slsgr_m_42_38"
+msgstr "slsgr m/42 (38)"
+
 msgid "_20mm_slsgr_m_Madsen"
 msgstr "slsgr m/Madsen"
+
+msgid "_20mm_slsgr_m_Madsen_21"
+msgstr "slsgr m/Madsen (21)"
 
 msgid "_25_W_Sv_1_m_39"
 msgstr "25 W Sv/1 m/39"
@@ -1455,11 +1674,20 @@ msgstr "2 st Scania-Vabis 607"
 msgid "_2_st_Scania_Vabis_L_603_1"
 msgstr "2 st Scania-Vabis L 603/1"
 
+msgid "_2_st_Scania_Vabis_L_603_1_42"
+msgstr "2 st Scania-Vabis L 603/1 (42)"
+
+msgid "_2_st_Scania_Vabis_L_603_1_74"
+msgstr "2 st Scania-Vabis L 603/1 (74)"
+
 msgid "_37mm_kan_m_38_49_strv"
 msgstr "37 mm kan m/38-49 strv"
 
 msgid "_37mm_kan_m_38_strv"
 msgstr "37 mm kan m/38 strv"
+
+msgid "_37mm_kan_m_38_strv_40"
+msgstr "37 mm kan m/38 strv (40)"
 
 msgid "_37mm_kanon_m_Skoda"
 msgstr "37 mm kan m/Škoda"
@@ -1473,6 +1701,15 @@ msgstr "37 mm pvkan m/38"
 msgid "_37mm_sgr_m_34"
 msgstr "sgr m/34"
 
+msgid "_37mm_sgr_m_34_38"
+msgstr "sgr m/34 (38)"
+
+msgid "_37mm_sgr_m_34_40"
+msgstr "sgr m/34 (40)"
+
+msgid "_37mm_sgr_m_34_49_40"
+msgstr "sgr m/34-49 (40)"
+
 msgid "_37mm_sgr_m_Skoda"
 msgstr "sgr m/Škoda"
 
@@ -1485,11 +1722,23 @@ msgstr "slpprj fm/47"
 msgid "_37mm_slpprj_m_38"
 msgstr "slpprj m/38"
 
+msgid "_37mm_slpprj_m_38_38"
+msgstr "slpprj m/38 (38)"
+
+msgid "_37mm_slpprj_m_38_40"
+msgstr "slpprj m/38 (40)"
+
 msgid "_37mm_slpprj_m_49"
 msgstr "slpprj m/49"
 
 msgid "_37mm_uprj_fm_47"
 msgstr "uprj fm/47"
+
+msgid "_37mm_uprj_fm_47_38"
+msgstr "uprj fm/47 (38)"
+
+msgid "_37mm_uprj_fm_47_40"
+msgstr "uprj fm/47 (40)"
 
 msgid "_47mm_Bohler_M35"
 msgstr "47 mm Bohler M35"
@@ -1539,8 +1788,14 @@ msgstr "7,5 cm kan m/41 ikv L/50 (neglkrut)"
 msgid "_75mm_kan_m_41_strv"
 msgstr "7,5 cm kan m/41 strv"
 
+msgid "_75mm_kan_m_41_strv_42"
+msgstr "7,5 cm kan m/41 strv (42)"
+
 msgid "_75mm_kan_m_43_strv"
 msgstr "7,5 cm kan m/43 strv"
+
+msgid "_75mm_kan_m_43_strv_Leo"
+msgstr "7,5 cm kan m/43 strv (Leo)"
 
 msgid "_75mm_kan_strv_74"
 msgstr "7,5 cm kan strv 74"
@@ -1554,17 +1809,50 @@ msgstr "7,5 cm lvkan m/36"
 msgid "_75mm_sgr_m_22_38"
 msgstr "sgr m/22-38"
 
+msgid "_75mm_sgr_m_36_38_74"
+msgstr "sgr m/36-38 (74)"
+
 msgid "_75mm_sgr_m_38"
 msgstr "sgr m/38"
+
+msgid "_75mm_sgr_m_38_42"
+msgstr "sgr m/38 (42)"
+
+msgid "_75mm_sgr_m_38_74"
+msgstr "sgr m/38 (74)"
+
+msgid "_75mm_sgr_m_38_Leo"
+msgstr "sgr m/38 (Leo)"
 
 msgid "_75mm_sgr_m_40"
 msgstr "sgr m/40"
 
+msgid "_75mm_sgr_m_40_42"
+msgstr "sgr m/40 (42)"
+
+msgid "_75mm_sgr_m_40_I"
+msgstr "sgr m/40 (I)"
+
+msgid "_75mm_sgr_m_40_Sav"
+msgstr "sgr m/40 (Sav)"
+
 msgid "_75mm_slpgr_fm_43"
 msgstr "slpgr m/43"
 
+msgid "_75mm_slpgr_m_36_43_74"
+msgstr "slpgr m/36-43 (74)"
+
 msgid "_75mm_slpgr_m_43"
 msgstr "slpgr m/43"
+
+msgid "_75mm_slpgr_m_43_74"
+msgstr "slpgr m/43 (74)"
+
+msgid "_75mm_slpgr_m_43_Leo"
+msgstr "slpgr m/43 (Leo)"
+
+msgid "_75mm_slpprj_m_36_41_74"
+msgstr "slpprj m/36-41 (74)"
 
 msgid "_75mm_slpprj_m_40"
 msgstr "slpprj m/40"
@@ -1572,20 +1860,47 @@ msgstr "slpprj m/40"
 msgid "_75mm_slpprj_m_40_B"
 msgstr "slpprj m/40 B"
 
+msgid "_75mm_slpprj_m_40_B_42"
+msgstr "slpprj m/40 B (42)"
+
+msgid "_75mm_slpprj_m_40_B_I"
+msgstr "slpprj m/40 B (I)"
+
 msgid "_75mm_slpprj_m_40_C"
 msgstr "slpprj m/40 C"
+
+msgid "_75mm_slpprj_m_40_C_Sav"
+msgstr "slpprj m/40 C (Sav)"
 
 msgid "_75mm_slpprj_m_40_N"
 msgstr "slpprj m/40 N"
 
+msgid "_75mm_slpprj_m_40_N_Sav"
+msgstr "slpprj m/40 N (Sav)"
+
 msgid "_75mm_slpprj_m_41"
 msgstr "slpprj m/41"
+
+msgid "_75mm_slpprj_m_41_Leo"
+msgstr "slpprj m/41 (Leo)"
 
 msgid "_75mm_slpprj_m_49"
 msgstr "slpprj m/49"
 
+msgid "_75mm_slpprj_m_49_74"
+msgstr "slpprj m/49 (74)"
+
 msgid "_75mm_slpsgr_fm_45"
 msgstr "slpsgr fm/45"
+
+msgid "_75mm_slpsgr_fm_45_42"
+msgstr "slpsgr fm/45 (42)"
+
+msgid "_75mm_slpsgr_fm_45_I"
+msgstr "slpsgr fm/45 (I)"
+
+msgid "_75mm_slpsgr_fm_45_Sav"
+msgstr "slpsgr fm/45 (Sav)"
 
 msgid "_84mm_kan_strv_81_1"
 msgstr "8,4 cm kan strv 81"
@@ -1605,6 +1920,9 @@ msgstr "9 cm Bofors L/43"
 msgid "_90mm_Bofors_L_53"
 msgstr "9 cm Bofors L/53"
 
+msgid "_90mm_Bofors_L_53_65"
+msgstr "9 cm Bofors L/53 (65)"
+
 msgid "_90mm_Bofors_strvkan_L_43"
 msgstr "9 cm Bofors strvkan L/43"
 
@@ -1614,11 +1932,20 @@ msgstr "9 cm Bofors strvkan L/53"
 msgid "_90mm_kan_m_F"
 msgstr "9 cm kan m/F"
 
+msgid "_90mm_kan_m_F_90"
+msgstr "9 cm kan m/F (90)"
+
 msgid "_90mm_sgr_m_F"
 msgstr "sgr m/F"
 
+msgid "_90mm_sgr_m_F_90"
+msgstr "sgr m/F (90)"
+
 msgid "_90mm_slpprj_m_F"
 msgstr "slpprj m/F"
+
+msgid "_90mm_slpprj_m_F_90"
+msgstr "slpprj m/F (90)"
 
 msgid "_90mm_slpprj_typ_I"
 msgstr "slpprj typ I"
@@ -1626,11 +1953,38 @@ msgstr "slpprj typ I"
 msgid "_90mm_slpprj_typ_II"
 msgstr "slpprj typ II"
 
+msgid "_90mm_slpprj_typ_II_14"
+msgstr "slpprj typ II (14)"
+
+msgid "_90mm_slpprj_typ_II_L_53_65"
+msgstr "slpprj typ II L/53 (65)"
+
 msgid "_90mm_slpsgr_m_F"
 msgstr "slpsgr m/F"
+
+msgid "_90mm_slpsgr_m_F_90"
+msgstr "slpsgr m/F (90)"
 
 msgid "_90mm_slpsgr_typ_I"
 msgstr "slpsgr typ I"
 
+msgid "_90mm_slpsgr_typ_I_14"
+msgstr "slpsgr typ I (14)"
+
+msgid "_90mm_slpsgr_typ_I_L_43_65"
+msgstr "slpsgr typ I L/43 (65)"
+
+msgid "_90mm_slpsgr_typ_I_L_53_65"
+msgstr "slpsgr typ I L/53 (65)"
+
 msgid "_90mm_slsgr_m_72"
 msgstr "slsgr m/72"
+
+msgid "_90mm_slsgr_m_72_14"
+msgstr "slsgr m/72 (14)"
+
+msgid "_90mm_slsgr_m_72_L_43_65"
+msgstr "slsgr m/72 L/43 (65)"
+
+msgid "_90mm_slsgr_m_72_L_53_65"
+msgstr "slsgr m/72 L/53 (65)"

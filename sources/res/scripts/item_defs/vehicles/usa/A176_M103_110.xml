@@ -893,7 +893,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>62500</maxLoad>
 			<terrainResistance>
 				1.2 1.3 2.4
 				<!--BW_String-->
@@ -4323,7 +4322,7 @@
 		<detailed>
 			<engines>
 				<Continental_AV-1790-7M>
-					<smplEnginePower>900</smplEnginePower>
+					<smplEnginePower>950</smplEnginePower>
 					<smplFwMaxSpeed>34</smplFwMaxSpeed>
 				</Continental_AV-1790-7M>
 			</engines>

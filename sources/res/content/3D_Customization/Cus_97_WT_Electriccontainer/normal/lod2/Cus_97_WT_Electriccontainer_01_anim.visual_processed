@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>joint_main</identifier>
+			<transform>
+				<row0>0.016947 0.000000 0.999856</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>-0.999856 0.000000 0.016947</row2>
+				<row3>-0.150378 0.279701 0.002547</row3>
+			</transform>
+			<node>
+				<identifier>joint_box_l</identifier>
+				<transform>
+					<row0>0.016947 0.000000 -0.999856</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.999856 0.000000 0.016947</row2>
+					<row3>-0.400000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_box_l_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.157157 -0.279701 0.397395</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_box_r</identifier>
+				<transform>
+					<row0>0.016947 0.000000 -0.999856</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.999856 0.000000 0.016947</row2>
+					<row3>0.400000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>joint_box_r_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.143599 -0.279701 -0.402490</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_wire_l</identifier>
+				<transform>
+					<row0>0.016947 0.000000 -0.999856</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.999856 0.000000 0.016947</row2>
+					<row3>-0.231054 0.072315 0.397236</row3>
+				</transform>
+				<node>
+					<identifier>joint_wire_l_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.551473 -0.352016 0.221742</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_wire_r</identifier>
+				<transform>
+					<row0>0.016947 0.000000 -0.999856</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.999856 0.000000 0.016947</row2>
+					<row3>0.195000 0.100000 0.330000</row3>
+				</transform>
+				<node>
+					<identifier>joint_wire_r_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.477026 -0.379701 -0.203112</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>joint_main_BlendBone</identifier>
+				<transform>
+					<row0>0.016947 0.000000 -0.999856</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>-0.999856 0.000000 -0.016947</row2>
+					<row3>0.000001 -0.279701 -0.150399</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>joint_main_BlendBone</node>
+		<node>joint_box_r_BlendBone</node>
+		<node>joint_box_l_BlendBone</node>
+		<node>joint_wire_r_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>content/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.181374 0.249879 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.589397 -0.002656 -0.542188</min>
+		<max>0.070443 0.499360 0.542188</max>
+	</boundingBox>
+	<geometrySize>31162</geometrySize>
+</root>

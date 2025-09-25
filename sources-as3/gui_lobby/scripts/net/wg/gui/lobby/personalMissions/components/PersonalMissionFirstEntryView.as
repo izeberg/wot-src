@@ -17,11 +17,12 @@ package net.wg.gui.lobby.personalMissions.components
    import net.wg.gui.lobby.personalMissions.events.FirstEntryCardEvent;
    import net.wg.infrastructure.base.meta.IPersonalMissionFirstEntryViewMeta;
    import net.wg.infrastructure.base.meta.impl.PersonalMissionFirstEntryViewMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.motion.Tween;
    
-   public class PersonalMissionFirstEntryView extends PersonalMissionFirstEntryViewMeta implements IPersonalMissionFirstEntryViewMeta
+   public class PersonalMissionFirstEntryView extends PersonalMissionFirstEntryViewMeta implements IPersonalMissionFirstEntryViewMeta, IInnerView
    {
       
       private static const BACK_BTN_RIGHT_MARGIN:int = 7;
@@ -92,6 +93,11 @@ package net.wg.gui.lobby.personalMissions.components
          });
       }
       
+      override protected function isCloseButtonVisible() : Boolean
+      {
+         return false;
+      }
+      
       override protected function setInitData(param1:PersonalMissionFirstEntryViewVO) : void
       {
          if(param1 == null)
@@ -152,20 +158,13 @@ package net.wg.gui.lobby.personalMissions.components
          this.backBtn.addEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
          this.playVideoBtn.addEventListener(ButtonEvent.CLICK,this.onPlayVideoBtnClickHandler);
          this.backBtn.x = BACK_BTN_RIGHT_MARGIN;
-         this.backBtn.y = BACK_BTN_TOP_MARGIN;
          this.acceptBtn.addEventListener(ButtonEvent.CLICK,this.onAcceptBtnClickHandler);
          App.popoverMgr.hide();
+         this.shadow.visible = this.isCloseButtonVisible();
       }
       
       override protected function draw() : void
       {
-         var _loc1_:String = null;
-         var _loc2_:Boolean = false;
-         var _loc3_:int = 0;
-         var _loc4_:int = 0;
-         var _loc5_:int = 0;
-         var _loc6_:int = 0;
-         var _loc7_:int = 0;
          super.draw();
          if(this._initData != null && isInvalid(INVALID_DATA_INIT))
          {
@@ -182,55 +181,7 @@ package net.wg.gui.lobby.personalMissions.components
          }
          if(isInvalid(InvalidationType.SIZE))
          {
-            _loc1_ = PMInfoVewSettingsCore.getSizeId(width,height);
-            _loc2_ = false;
-            if(this._sizeId != _loc1_)
-            {
-               this._sizeId = _loc1_;
-               this._settings = this._settingsCore.getSettingsBySizeId(this._sizeId);
-               this._additionalSettings = this._settingsCore.getAdditionalSettingsBySizeId(this._sizeId);
-               _loc2_ = true;
-            }
-            if(_loc2_)
-            {
-               this.titleTFContainer.fontSize = this._settings.titleFontSize;
-            }
-            _loc3_ = this._settings.titleTopGap;
-            _loc4_ = _loc3_ + this.titleTFContainer.height + this._settings.playVideoBtnTopGap;
-            _loc5_ = height - this.acceptBtn.height - this._settings.acceptBtnBottomGap;
-            _loc6_ = width >> 1;
-            this.titleTFContainer.x = width - this.titleTFContainer.width >> 1;
-            this.playVideoBtn.x = _loc6_ - (this.playVideoBtn.width >> 1);
-            this.shadow.x = width - this.shadow.width >> 1;
-            _loc7_ = !!this._initData.playVideoBtnVisible ? int(_loc4_ + this.playVideoBtn.height) : int(_loc3_ + this.titleTFContainer.height);
-            this.content.x = _loc6_;
-            this.content.y = _loc7_ + (_loc5_ - _loc7_ - this._settings.cardHeight >> 1);
-            this.content.layoutRenderers(this._settings,_loc2_);
-            this.acceptBtn.x = width - this.acceptBtn.width >> 1;
-            if(this._firstShow)
-            {
-               this._firstShow = false;
-               this._tweens = new Vector.<Tween>();
-               this._tweens.push(createShowTween(this.titleTFContainer,_loc3_,TWEEN_DELAY_TITLE));
-               this._tweens.push(createShowTween(this.playVideoBtn,_loc4_,TWEEN_DELAY_PLAY_VIDEO_BTN));
-               this._tweens.push(createShowTween(this.acceptBtn,_loc5_,TWEEN_DELAY_ACCEPT_BTN));
-            }
-            else
-            {
-               this.clearTweens();
-               this.titleTFContainer.alpha = Values.DEFAULT_ALPHA;
-               this.playVideoBtn.alpha = Values.DEFAULT_ALPHA;
-               this.acceptBtn.alpha = Values.DEFAULT_ALPHA;
-               this.titleTFContainer.y = _loc3_;
-               this.playVideoBtn.y = _loc4_;
-               this.acceptBtn.y = _loc5_;
-            }
-            this.additionalContent.x = _loc6_;
-            if(_loc2_)
-            {
-               this.additionalContent.updateSettings(this._additionalSettings);
-            }
-            this.additionalContent.setSize(width,height);
+            this.updateSize();
          }
       }
       
@@ -254,6 +205,65 @@ package net.wg.gui.lobby.personalMissions.components
       {
          this.hideMainContent();
          this.showAdditionalContent(param1);
+      }
+      
+      private function updateSize() : void
+      {
+         var _loc4_:int = 0;
+         var _loc5_:int = 0;
+         var _loc6_:int = 0;
+         var _loc7_:int = 0;
+         var _loc1_:uint = _height - _topOffset - _bottomOffset | 0;
+         this.backBtn.y = BACK_BTN_TOP_MARGIN + _topOffset;
+         var _loc2_:String = PMInfoVewSettingsCore.getSizeId(width,_loc1_);
+         var _loc3_:Boolean = false;
+         if(this._sizeId != _loc2_)
+         {
+            this._sizeId = _loc2_;
+            this._settings = this._settingsCore.getSettingsBySizeId(this._sizeId);
+            this._additionalSettings = this._settingsCore.getAdditionalSettingsBySizeId(this._sizeId);
+            _loc3_ = true;
+         }
+         if(_loc3_)
+         {
+            this.titleTFContainer.fontSize = this._settings.titleFontSize;
+         }
+         _loc4_ = this._settings.titleTopGap + _topOffset;
+         _loc5_ = _loc4_ + this.titleTFContainer.height + this._settings.playVideoBtnTopGap;
+         _loc6_ = _height - _bottomOffset - this.acceptBtn.height - this._settings.acceptBtnBottomGap;
+         _loc7_ = width >> 1;
+         this.titleTFContainer.x = width - this.titleTFContainer.width >> 1;
+         this.playVideoBtn.x = _loc7_ - (this.playVideoBtn.width >> 1);
+         this.shadow.x = width - this.shadow.width >> 1;
+         var _loc8_:int = !!this._initData.playVideoBtnVisible ? int(_loc5_ + this.playVideoBtn.height) : int(_loc4_ + this.titleTFContainer.height);
+         this.content.x = _loc7_;
+         this.content.y = _loc8_ + (_loc6_ - _loc8_ - this._settings.cardHeight >> 1);
+         this.content.layoutRenderers(this._settings,_loc3_);
+         this.acceptBtn.x = width - this.acceptBtn.width >> 1;
+         if(this._firstShow)
+         {
+            this._firstShow = false;
+            this._tweens = new Vector.<Tween>();
+            this._tweens.push(createShowTween(this.titleTFContainer,_loc4_,TWEEN_DELAY_TITLE));
+            this._tweens.push(createShowTween(this.playVideoBtn,_loc5_,TWEEN_DELAY_PLAY_VIDEO_BTN));
+            this._tweens.push(createShowTween(this.acceptBtn,_loc6_,TWEEN_DELAY_ACCEPT_BTN));
+         }
+         else
+         {
+            this.clearTweens();
+            this.titleTFContainer.alpha = Values.DEFAULT_ALPHA;
+            this.playVideoBtn.alpha = Values.DEFAULT_ALPHA;
+            this.acceptBtn.alpha = Values.DEFAULT_ALPHA;
+            this.titleTFContainer.y = _loc4_;
+            this.playVideoBtn.y = _loc5_;
+            this.acceptBtn.y = _loc6_;
+         }
+         this.additionalContent.x = _loc7_;
+         if(_loc3_)
+         {
+            this.additionalContent.updateSettings(this._additionalSettings);
+         }
+         this.additionalContent.setSizeWithOffsets(width,height,_topOffset,_bottomOffset);
       }
       
       private function clearTweens() : void
@@ -292,7 +302,7 @@ package net.wg.gui.lobby.personalMissions.components
          this.backBtn.visible = !this._initData.isFirstEntry;
          this.acceptBtn.visible = this._initData.isFirstEntry;
          this.playVideoBtn.visible = true;
-         this.shadow.visible = true;
+         this.shadow.visible = this.isCloseButtonVisible();
          this.titleTFContainer.visible = true;
          this.content.visible = true;
          this.content.resetShowContent();

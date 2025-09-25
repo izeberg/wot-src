@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import random
 from cgf_components.marker_component import IBattleSessionProvider
 from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<FeatureName>la_pinger_ext</FeatureName>
+	<IsEnabled>True</IsEnabled>
+	<Personality>la_pinger_ext_personality</Personality>
+	<Components>
+		<StaticComponents>
+			<LaPingerComponent/>
+		</StaticComponents>
+	</Components>
+</root>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<DetailLevel>MY_VEHICLE</DetailLevel>
+	<Properties>
+		<vehTypeCD>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</vehTypeCD>
+		<charges>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</charges>
+		<shots>
+			<Type>UINT32</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</shots>
+		<isBurstActive>
+			<Type>BOOL</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</isBurstActive>
+	</Properties>
+	<DefaultKeyName>chargeableBurstComponent</DefaultKeyName>
+</root>

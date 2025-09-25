@@ -417,6 +417,9 @@ msgstr "Выполнить основное условие за любое ко�
 msgid "detailedView/completeBtnLabel"
 msgstr "Выполнить за %(count)d %(icon)s"
 
+msgid "detailedView/conditionLabel"
+msgstr "Условие"
+
 msgid "detailedView/conditionsFullylabel"
 msgstr "Для выполнения с отличием"
 
@@ -627,6 +630,18 @@ msgstr "К ОПЕРАЦИИ"
 msgid "header/backBtn/label"
 msgstr "НАЗАД"
 
+msgid "navigation/backButton/assembling"
+msgstr "К СБОРКЕ"
+
+msgid "navigation/backButton/campaignSelector"
+msgstr "К КАРТЕ ОПЕРАЦИЙ"
+
+msgid "navigation/backButton/dashboard"
+msgstr "К ОПЕРАЦИИ"
+
+msgid "navigation/backButton/missions"
+msgstr "К ЗАДАЧАМ"
+
 msgid "operationInfo/awardsButton/label"
 msgstr "Награда за операцию"
 
@@ -665,6 +680,14 @@ msgstr "Недоступно: нет подходящей техники  %(vehD
 
 msgid "operationTitle/label/noVehicle/regular"
 msgstr "Недоступно: нет подходящей техники ветки %(vehData)s"
+
+msgid "operationTitle/label/notStarted"
+msgstr "Операция «%(currentOperation)s» доступна! %(infoIcon)s"
+
+msgid "operationTitle/label/notStartedNoVehicle"
+msgstr ""
+"Недоступно: личные боевые задачи можно выполнять на технике %(minLevel)s "
+"уровня и выше"
 
 msgid "operationTitle/label/toMaster"
 msgstr "Задач с отличием: %(count)s/%(total)s  %(infoIcon)s"
@@ -713,6 +736,9 @@ msgstr "Недоступно"
 msgid "operations/title1"
 msgstr "StuG IV"
 
+msgid "operations/title10"
+msgstr "Black Rock"
+
 msgid "operations/title2"
 msgstr "T28 HTC"
 
@@ -731,8 +757,20 @@ msgstr "Chimera"
 msgid "operations/title7"
 msgstr "Объект 279 (р)"
 
+msgid "operations/title8"
+msgstr "Windhund"
+
+msgid "operations/title9"
+msgstr "Dravec"
+
 msgid "operations/unlocked/desc"
 msgstr "Доступно"
+
+msgid "pages/button/infopage/description"
+msgstr "О личных боевых задачах"
+
+msgid "pages/button/video/description"
+msgstr "Смотреть видео о личных боевых задачах"
 
 msgid "personalMissions/tankgirlsPopover/recruitBtn"
 msgstr "Рекрутировать"
@@ -773,6 +811,9 @@ msgstr "На паузе"
 msgid "questProgressTracking/trackingStatus"
 msgstr "Сейчас выполняются обе задачи"
 
+msgid "questStatus/tankCondition"
+msgstr "Недоступно для выбранной техники"
+
 msgid "sidebar/completed"
 msgstr "Выполнено"
 
@@ -806,6 +847,12 @@ msgstr "В наличии: %(count)s"
 msgid "statusPanel/pawnedSheets"
 msgstr "Заложено в задачи: %(count)s"
 
+msgid "statusPanel/proceedExecution/label"
+msgstr "Активировать"
+
+msgid "statusPanel/resumeCompaing/label"
+msgstr "Вернуться к кампании"
+
 msgid "statusPanel/status/allDone"
 msgstr "Все задачи для %(vehicleClass)s выполнены"
 
@@ -826,6 +873,9 @@ msgstr "(Возврат %(count)d %(icon)s)"
 
 msgid "statusPanel/status/selectTask"
 msgstr "Выберите задачу, чтобы приступить к выполнению"
+
+msgid "statusPanel/status/suspended"
+msgstr "Кампания «%(campaignName)s» на паузе%(infoIcon)s"
 
 msgid "tankmoduleTooltipData/alliance/help/body"
 msgstr ""

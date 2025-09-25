@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing, AccountCommands
 from BaseAccountExtensionComponent import BaseAccountExtensionComponent
 from constants import QUEUE_TYPE

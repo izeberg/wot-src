@@ -1425,8 +1425,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_ST_B1_7x7>
-			<userString>#japan_vehicles:Chassis_ST_B1_7x7</userString>
+		<Chassis_J16_ST_B1_7x7>
+			<userString>#japan_vehicles:Chassis_J16_ST_B1_7x7</userString>
 			<tags/>
 			<level>10</level>
 			<price>82500</price>
@@ -1436,14 +1436,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12500</weight>
-			<maxLoad>40000</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>45000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>52</rotationSpeed>
+			<rotationSpeed>57</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.09
@@ -3362,11 +3361,11 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_ST_B1_7x7>
+		</Chassis_J16_ST_B1_7x7>
 	</chassis>
 	<turrets0>
-		<Turret_1_ST_B1_7x7>
-			<userString>#japan_vehicles:Turret_1_ST_B1_7x7</userString>
+		<Turret_1_J16_ST_B1_7x7>
+			<userString>#japan_vehicles:Turret_1_J16_ST_B1_7x7</userString>
 			<tags/>
 			<level>10</level>
 			<price>82500</price>
@@ -3498,7 +3497,7 @@
 					</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.11
+							0.08
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>3</afterShot>
@@ -4480,7 +4479,7 @@
 				</density>
 				<aoTextureSize>1024 512</aoTextureSize>
 			</camouflage>
-		</Turret_1_ST_B1_7x7>
+		</Turret_1_J16_ST_B1_7x7>
 	</turrets0>
 	<engines>
 		<_Mitsubishi_10ZF21WT_7x7>shared</_Mitsubishi_10ZF21WT_7x7>
@@ -4500,7 +4499,7 @@
 				</_Mitsubishi_10ZF21WT_7x7>
 			</engines>
 			<chassis>
-				<Chassis_ST_B1_7x7>
+				<Chassis_J16_ST_B1_7x7>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -4521,7 +4520,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_ST_B1_7x7>
+				</Chassis_J16_ST_B1_7x7>
 			</chassis>
 		</detailed>
 	</physics>

@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.views.battle_royale.battle_results.leaderboard.group_model import GroupModel
 
 class LeaderboardModel(ViewModel):

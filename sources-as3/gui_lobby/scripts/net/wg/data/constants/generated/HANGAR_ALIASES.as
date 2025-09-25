@@ -13,15 +13,7 @@ package net.wg.data.constants.generated
       
       public static const BATTLEPASS_TANK_CAROUSEL:String = "battlePassTankCarousel";
       
-      public static const ROYALE_TANK_CAROUSEL:String = "royaleTankCarousel";
-      
       public static const MAPBOX_TANK_CAROUSEL:String = "mapboxTankCarousel";
-      
-      public static const FUN_RANDOM_TANK_CAROUSEL:String = "funRandomTankCarousel";
-      
-      public static const FUN_RANDOM_QFG_TANK_CAROUSEL:String = "funRandomQFGTankCarousel";
-      
-      public static const COMP7_TANK_CAROUSEL:String = "comp7TankCarousel";
       
       public static const AMMUNITION_PANEL:String = "ammunitionPanel";
       
@@ -41,15 +33,7 @@ package net.wg.data.constants.generated
       
       public static const EPIC_PRIME_TIME:String = "epicPrimeTime.swf";
       
-      public static const COMP7_PRIME_TIME:String = "comp7PrimeTime.swf";
-      
-      public static const COMP7_PRIME_TIME_ALIAS:String = "comp7PrimeTime";
-      
-      public static const COMP7_ENTRY_POINT:String = "Comp7EntryPoint";
-      
       public static const TANK_CAROUSEL_UI:String = "TankCarouselUI";
-      
-      public static const BR_TANK_CAROUSEL_UI:String = "BRTanksCarouselUI";
       
       public static const VEH_PARAM_RENDERER_STATE_SIMPLE_TOP:String = "simpleTop";
       
@@ -79,23 +63,13 @@ package net.wg.data.constants.generated
       
       public static const BATTLE_PASSS_ENTRY_POINT:String = "battlePassEntryPoint";
       
-      public static const BATTLE_ROYALE_ENTRY_POINT:String = "battleRoyaleEntryPoint";
-      
-      public static const BATTLE_ROYALE_HANGAR_WIDGET:String = "battleRoyaleHangarWidget";
-      
       public static const BATTLE_ROYALE_TOURNAMENT:String = "battleRoyaleTournament";
-      
-      public static const BATTLE_ROYALE_TOURNAMENT_BANNER:String = "battleRoyaleTournamentBanner";
       
       public static const SECONDARY_ENTRY_POINT:String = "secondaryEntryPoint";
       
       public static const RESOURCE_WELL_ENTRY_POINT:String = "resourceWellEntryPoint";
       
       public static const BATTLE_MATTERS_ENTRY_POINT:String = "battleMattersEntryPoint";
-      
-      public static const COMP7_WIDGET:String = "comp7Widget";
-      
-      public static const COMP7_MODIFIERS_PANEL:String = "comp7ModifiersPanel";
       
       public static const COMP7_TOURNAMENT_BANNER:String = "comp7TournamentBanner";
       
@@ -113,13 +87,11 @@ package net.wg.data.constants.generated
       
       public static const CRAFT_MACHINE_ENTRY_POINT:String = "CraftMachineEntryPoint";
       
-      public static const STRONGHOLD_ENTRY_POINT:String = "StrongholdEntryPoint";
+      public static const STRONGHOLD_EVENT_BANNER:String = "StrongholdEventBanner";
       
       public static const MAPBOX_ENTRY_POINT:String = "MapBoxEntryPoint";
       
       public static const MARATHON_ENTRY_POINT:String = "MarathonEntryPoint";
-      
-      public static const BR_ENTRY_POINT:String = "BREntryPoint";
       
       public static const POST_PROGRESSION_INJECT:String = "PostProgressionInject";
       
@@ -130,12 +102,6 @@ package net.wg.data.constants.generated
       public static const POST_PROGRESSION_VEHICLE_PARAMS:String = "PostProgressionVehicleParams";
       
       public static const PERSONAL_RESERVES_WIDGET_INJECT:String = "PersonalReservesWidgetInject";
-      
-      public static const FUN_RANDOM_ENTRY_POINT:String = "FunRandomEntryPoint";
-      
-      public static const FUN_RANDOM_HANGAR_WIDGET:String = "FunRandomHangarWidget";
-      
-      public static const STRENGTHS_WEAKNESSES_PANEL:String = "StrengthsWeaknessesPanel";
       
       public static const EVENT_CREW_HEALING_COMPONENT:String = "eventCrewHealingComponent";
       

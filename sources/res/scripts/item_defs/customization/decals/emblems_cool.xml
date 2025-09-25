@@ -254,7 +254,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -273,7 +273,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -292,7 +292,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -303,7 +303,7 @@
 		<priceGroup>emblems 50g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -360,7 +360,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -379,7 +379,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -477,7 +477,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -496,7 +496,7 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
 	</itemGroup>
@@ -521,8 +521,27 @@
 		<type>EMBLEM</type>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
 			</exclude>
 		</vehicleFilter>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/cool</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>czech:Cz21_Vz_60S_Dravec poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>848</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_74.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_74</userString>
+			<mirror>true</mirror>
+		</decal>
+		<name>Yandex</name>
+		<type>EMBLEM</type>
 	</itemGroup>
 </root>

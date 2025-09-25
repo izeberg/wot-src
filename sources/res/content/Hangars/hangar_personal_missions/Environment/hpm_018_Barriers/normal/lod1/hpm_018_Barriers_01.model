@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_personal_missions/Environment/hpm_018_Barriers/normal/lod2/hpm_018_Barriers_01</parent>
+	<extent>75.000000</extent>
+	<visibilityBox>
+		<min>-0.110832 -0.000000 -2.406398</min>
+		<max>0.110832 1.063496 2.406398</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_personal_missions/Environment/hpm_018_Barriers/normal/lod1/hpm_018_Barriers_01</nodefullVisual>
+</root>

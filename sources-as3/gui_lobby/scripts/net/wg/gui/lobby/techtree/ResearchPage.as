@@ -3,6 +3,7 @@ package net.wg.gui.lobby.techtree
    import flash.display.InteractiveObject;
    import flash.display.Sprite;
    import flash.events.KeyboardEvent;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.constants.generated.NODE_STATE_FLAGS;
    import net.wg.data.constants.generated.VEHPREVIEW_CONSTANTS;
@@ -19,12 +20,13 @@ package net.wg.gui.lobby.techtree
    import net.wg.gui.lobby.tradeIn.TradeOffWidget;
    import net.wg.infrastructure.base.meta.impl.ResearchMeta;
    import net.wg.infrastructure.events.FocusRequestEvent;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.infrastructure.interfaces.entity.IFocusContainer;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.clik.events.InputEvent;
    
-   public class ResearchPage extends ResearchMeta implements IResearchPage
+   public class ResearchPage extends ResearchMeta implements IResearchPage, IInnerView
    {
       
       private static const RATIO_Y:int = 89;
@@ -55,6 +57,8 @@ package net.wg.gui.lobby.techtree
       
       private static const TITLE_MIN_Y_VALUE:int = 80;
       
+      private static const TITLE_NEW_MIN_Y_VALUE:int = 30;
+      
       private static const TITLE_SIZE_Y_FACTOR:int = 111;
       
       private static const BACK_BTN_X:int = 28;
@@ -74,6 +78,10 @@ package net.wg.gui.lobby.techtree
       
       private var _benefitsComponent:BenefitsComponent = null;
       
+      private var _topOffset:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
+      
       public function ResearchPage()
       {
          super();
@@ -81,9 +89,7 @@ package net.wg.gui.lobby.techtree
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         super.updateStage(param1,param2);
-         setViewSize(param1,param2);
-         invalidateSize();
+         assertUpdateStageMethod();
       }
       
       override protected function setData(param1:ResearchPageVO) : void
@@ -151,6 +157,7 @@ package net.wg.gui.lobby.techtree
       override protected function configUI() : void
       {
          super.configUI();
+         this.backButton.visible = false;
          this.backButton.addEventListener(ButtonEvent.CLICK,this.onBackBtnClickHandler);
          this.researchItems.addEventListener(FocusRequestEvent.REQUEST_FOCUS,this.onResearchItemsRequestFocusHandler,false,0,true);
          this.researchItems.yRatio = RATIO_Y;
@@ -237,27 +244,45 @@ package net.wg.gui.lobby.techtree
          this.researchItems.showPostProgressionUnlockAnimation();
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this._bottomOffset = param3.height;
+         setViewSize(param1,param2);
+      }
+      
       protected function updateLayouts() : void
       {
-         var _loc4_:int = 0;
-         var _loc1_:int = width >> 1;
-         var _loc2_:int = height >> 1;
-         this.researchItems.y = _loc2_;
-         this.researchItems.x = _loc1_ + RESEARCH_ITEMS_CENTER_OFFSET_X;
+         var _loc5_:int = 0;
+         var _loc1_:uint = _height - this._topOffset - this._bottomOffset | 0;
+         var _loc2_:int = width >> 1;
+         var _loc3_:int = (_loc1_ >> 1) + this._topOffset;
+         this.researchItems.y = _loc3_;
+         this.researchItems.x = _loc2_ + RESEARCH_ITEMS_CENTER_OFFSET_X;
          this.researchItems.invalidateLayout();
-         this.title.x = _loc1_;
-         var _loc3_:uint = _loc2_ + TITLE_CENTER_Y_OFFSET >> 1;
-         this.title.y = _loc3_ > TITLE_MIN_Y_VALUE ? Number(_loc3_) : Number(TITLE_MIN_Y_VALUE);
-         this.title.isSmallSized = _loc3_ < TITLE_SIZE_Y_FACTOR;
+         this.title.x = _loc2_;
+         var _loc4_:uint = _loc3_ + TITLE_CENTER_Y_OFFSET >> 1;
+         this.title.y = Math.max(_loc4_,TITLE_MIN_Y_VALUE,this._topOffset + TITLE_NEW_MIN_Y_VALUE) | 0;
+         this.title.isSmallSized = _loc4_ < TITLE_SIZE_Y_FACTOR;
          if(this._benefitsComponent != null)
          {
             this._benefitsComponent.compact = width < PREMIUM_VIEW_COMPACT_WIDTH;
-            _loc4_ = !!this._benefitsComponent.compact ? int(PREMIUM_LAYOUT_OFFSET_SMALL_Y) : int(PREMIUM_LAYOUT_OFFSET_Y);
-            this._benefitsComponent.y = _loc2_ - _loc4_;
-            this._benefitsComponent.x = _loc1_ + PREMIUM_LAYOUT_OFFSET_X * width / PREMIUM_VIEW_NOMINAL_WIDTH | 0;
+            _loc5_ = !!this._benefitsComponent.compact ? int(PREMIUM_LAYOUT_OFFSET_SMALL_Y) : int(PREMIUM_LAYOUT_OFFSET_Y);
+            this._benefitsComponent.y = _loc3_ - _loc5_;
+            this._benefitsComponent.x = _loc2_ + PREMIUM_LAYOUT_OFFSET_X * width / PREMIUM_VIEW_NOMINAL_WIDTH | 0;
+         }
+         if(this._bottomOffset > 0)
+         {
+            this.footerBg.height = this._bottomOffset;
          }
          this.footerBg.width = _width;
          this.footerBg.y = _height;
+         this.backButton.visible = this._topOffset == 0;
          this.backButton.x = App.appWidth >= BREAK_POINT ? Number(BACK_BTN_X) : Number(SMALL_SIZE_BACK_BTN_X);
       }
       

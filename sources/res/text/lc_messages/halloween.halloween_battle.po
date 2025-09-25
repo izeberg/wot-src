@@ -1,0 +1,348 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: i_maliavko <i_maliavko@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "arena/marker/attention_to_camp"
+msgstr "Внимание на зону %(gridId)s"
+
+msgid "arena/marker/attention_to_volot"
+msgstr "Внимание на Волот!"
+
+msgid "arena/marker/get_to_volot"
+msgstr ""
+"Доберитесь\n"
+"до Волота"
+
+msgid "arena/marker/move_to_camp"
+msgstr "Еду к зоне!"
+
+msgid "arena/marker/move_to_volot"
+msgstr "Еду к Волоту!"
+
+msgid "arena/marker/need_matter_in_volot"
+msgstr "Соберите мириум"
+
+msgid "arena/phase"
+msgstr "Фаза %(current)s из %(total)s"
+
+msgid "battleHint/bomber"
+msgstr "Ерши на&nbsp;подходе!"
+
+msgid "battleHint/bomber_alpha"
+msgstr "Альфа-ёрш&nbsp;на подходе!"
+
+msgid "battleHint/bossIsShield"
+msgstr "Приближаются защитники, они обороняют босса!"
+
+msgid "battleHint/bossesAreShield"
+msgstr "Приближаются защитники, они обороняют боссов!"
+
+msgid "battleHint/bossfight_phase_1"
+msgstr "Противник уязвим! Уничтожьте его!"
+
+msgid "battleHint/bossfight_phase_2"
+msgstr "Противник возвращается, приготовьтесь."
+
+msgid "battleHint/bossfight_phase_3"
+msgstr "Противник возвращается, приготовьтесь."
+
+msgid "battleHint/clearTheArea"
+msgstr "Зачистить область!"
+
+msgid "battleHint/collectSouls"
+msgstr ""
+"Уничтожайте технику противника, собирайте мириум "
+"и&nbsp;заполняйте&nbsp;Волот!"
+
+msgid "battleHint/destroyTheMinions"
+msgstr ""
+"Противник под&nbsp;защитой! Сначала&nbsp;уничтожьте его&nbsp;помощников."
+
+msgid "battleHint/enemyIsProtected"
+msgstr ""
+"Противник под защитой!\n"
+"Уничтожьте его помощников."
+
+msgid "battleHint/enemyIsVulnerable"
+msgstr "Противник уязвим! Уничтожьте его!"
+
+msgid "battleHint/getToCollector"
+msgstr "Волот заполнен. Доберитесь&nbsp;до&nbsp;точки&nbsp;перехода."
+
+msgid "battleHint/hunter"
+msgstr "Охотники на&nbsp;подходе!"
+
+msgid "battleHint/leftToCollect"
+msgstr "Осталось собрать мириума:"
+
+msgid "battleHint/missing_squad"
+msgstr "Взвод Потерянных приближается!"
+
+msgid "battleHint/trapper"
+msgstr "Уничтожьте Ловца! Это&nbsp;остановит энергоудары."
+
+msgid "battleHint/turret"
+msgstr "Пробудились москиты!"
+
+msgid "battleHint/world1"
+msgstr "Первая фаза"
+
+msgid "battleHint/world2"
+msgstr "Вторая фаза"
+
+msgid "battleHint/world3"
+msgstr "Третья фаза"
+
+msgid "bossAura/leaveDamageAreaWarningHealth"
+msgstr ""
+"Аура босса плавит вашу броню!\n"
+"Покиньте опасную зону!"
+
+msgid "bossAura/leaveDamageAreaWarningSouls"
+msgstr ""
+"Аура боса сжигает ваш мириум!\n"
+"Покиньте опасную зону!"
+
+msgid "bossFight/boss1"
+msgstr "Шип"
+
+msgid "bossFight/boss2"
+msgstr "Близнецы"
+
+msgid "bossFight/boss3"
+msgstr "Летальный Дуплет"
+
+msgid "common/close"
+msgstr "ЗАКРЫТЬ"
+
+msgid "consumablesPanel/tooltip/durationTime"
+msgstr "Продолжительность: %(time)s с"
+
+msgid "efficiencyRibbons/additionFormat"
+msgstr "+%(value)s"
+
+msgid "efficiencyRibbons/aoeBurn"
+msgstr "Поджог умением «Пирокинетика»"
+
+msgid "efficiencyRibbons/aoeDamage"
+msgstr "Урон умением «Энергоудар»"
+
+msgid "efficiencyRibbons/bomberExplosion"
+msgstr "Урон от взрыва"
+
+msgid "efficiencyRibbons/bossAuraDamage"
+msgstr "Полученный урон"
+
+msgid "efficiencyRibbons/damageVampire"
+msgstr "Урон умением «Вампиризм»"
+
+msgid "efficiencyRibbons/instantShotAoeDamage"
+msgstr "Урон умением «Энерговыстрел»"
+
+msgid "efficiencyRibbons/instantShotAoeDrainEnemyHp"
+msgstr "Урон умением «Выстрел вампира»"
+
+msgid "efficiencyRibbons/instantShotAoeStun"
+msgstr "Урон умением «Оглушающий выстрел»"
+
+msgid "efficiencyRibbons/modulesDamageBlocked"
+msgstr "Неуязвимость модулей"
+
+msgid "efficiencyRibbons/passiveVampire"
+msgstr "Заживление"
+
+msgid "efficiencyRibbons/repair"
+msgstr "Машина отремонтирована"
+
+msgid "efficiencyRibbons/repairByOther"
+msgstr "Машина отремонтирована союзником"
+
+msgid "efficiencyRibbons/repairOther"
+msgstr "Техника союзников отремонтирована"
+
+msgid "efficiencyRibbons/shellsPickup"
+msgstr "Получены снаряды"
+
+msgid "eventStats/activePhase"
+msgstr "Фаза %(num)s"
+
+msgid "eventStats/buffsCaption"
+msgstr "Аномалии вашей техники"
+
+msgid "eventStats/difficulty"
+msgstr "Сложность: %(difficulty)"
+
+msgid "eventStats/eventName"
+msgstr "Вавилон: Запретная зона"
+
+msgid "eventStats/globalTask"
+msgstr ""
+"Задача: уничтожить технику противнику и пройти через фазы,\n"
+"чтобы вернуться домой."
+
+msgid "eventStats/tableCaption"
+msgstr "Состав отряда"
+
+msgid "help/description_0"
+msgstr ""
+"Собирайте мириум, уничтожая машины противника. Он автоматически поступает в коллектор Волота, даёт энергию\n"
+"для использования боевых умений, а также временно защищает от ауры Неуязвимого."
+
+msgid "help/description_1"
+msgstr ""
+"Как только коллектор заполнится, он телепортирует вас в следующую фазу.\n"
+"Доберитесь к Волоту до конца боя."
+
+msgid "help/description_2"
+msgstr ""
+"Неуязвимый — это крайне опасный противник, способный похищать мириум с помощью своей ауры.\n"
+"Не пытайтесь сражаться с ним в 1–3 фазах."
+
+msgid "help/description_3"
+msgstr ""
+"В каждой фазе ваш экипаж получает случайные боевые умения и пассивные аномалии, которые дают\n"
+"значительное преимущество. Вы также можете использовать умение «Рывок» для ускорения и тарана."
+
+msgid "help/title"
+msgstr "ВАВИЛОН: ЗАПРЕТНАЯ ЗОНА"
+
+msgid "help/title_0"
+msgstr "Сбор мириума"
+
+msgid "help/title_1"
+msgstr "Волот"
+
+msgid "help/title_2"
+msgstr "Неуязвимый"
+
+msgid "help/title_3"
+msgstr "Выживание"
+
+msgid "loading/description_0"
+msgstr ""
+"Собирайте мириум, уничтожая машины противника. Он\n"
+"автоматически поступает в коллектор Волота, даёт энергию\n"
+"для использования боевых умений, а также временно защищает от ауры Неуязвимого."
+
+msgid "loading/description_1"
+msgstr ""
+"Как только коллектор заполнится,\n"
+"он телепортирует вас в следующую фазу.\n"
+"Доберитесь к Волоту до конца боя."
+
+msgid "loading/description_2"
+msgstr ""
+"Неуязвимый — это крайне опасный противник,\n"
+"способный похищать мириум с помощью своей ауры.\n"
+"Не пытайтесь сражаться с ним в 1–3 фазах."
+
+msgid "loading/description_3"
+msgstr ""
+"В каждой фазе ваш экипаж получает случайные боевые умения и\n"
+"пассивные аномалии, которые дают\n"
+"значительное преимущество.\n"
+"Вы также можете использовать умение «Рывок» для ускорения и тарана."
+
+msgid "loading/title_0"
+msgstr "СБОР МИРИУМА"
+
+msgid "loading/title_1"
+msgstr "ВОЛОТ"
+
+msgid "loading/title_2"
+msgstr "НЕУЯЗВИМЫЙ"
+
+msgid "loading/title_3"
+msgstr "ВЫЖИВАНИЕ"
+
+msgid "nitroPanel/label"
+msgstr "РЫВОК"
+
+msgid "postmortemPanel/doNotLeaveGame/desc"
+msgstr "Если ваш отряд перейдёт в следующую фазу."
+
+msgid "postmortemPanel/doNotLeaveGame/title"
+msgstr "ВЫ ВОЗРОДИТЕСЬ"
+
+msgid "postmortemPanel/lastPhase/title"
+msgstr ""
+"Для вас бой окончен.\n"
+"Вы внесли свой вклад!"
+
+msgid "prebattle/description/message"
+msgstr ""
+"Задача: уничтожить технику противника, чтобы заполнить Волот и вернуться "
+"домой"
+
+msgid "prebattle/description/title"
+msgstr "Запретная зона — %(difficulty)s"
+
+msgid "prebattle/difficulty/101"
+msgstr "Сложность: Нормально"
+
+msgid "prebattle/difficulty/102"
+msgstr "Сложность: Тяжело"
+
+msgid "prebattle/difficulty/103"
+msgstr "Сложность: Кошмар"
+
+msgid "prebattle/waiting/title"
+msgstr "Ожидание игроков..."
+
+msgid "radialMenu/attention_here"
+msgstr "Внимание сюда!"
+
+msgid "radialMenu/cancel"
+msgstr "Отменить"
+
+msgid "radialMenu/confirm"
+msgstr "Так точно!"
+
+msgid "radialMenu/move_to_camp"
+msgstr "Еду к зоне!"
+
+msgid "radialMenu/move_to_soul_collector"
+msgstr "Еду к Волоту!"
+
+msgid "statusNotificationTimers/collectorFull"
+msgstr ""
+"Дождитесь союзников\n"
+"для перехода"
+
+msgid "statusNotificationTimers/leaveDamagingZone"
+msgstr ""
+"Покиньте\n"
+"зону нанесения урона!"
+
+msgid "statusNotificationTimers/leaveIgnitingZone"
+msgstr ""
+"Покиньте\n"
+"огненную зону!"
+
+msgid "statusNotificationTimers/leaveStunningZone"
+msgstr ""
+"Покиньте\n"
+"зону оглушения!"
+
+msgid "statusNotificationTimers/overturned"
+msgstr "Машина возвращается в строй..."
+
+msgid "statusNotificationTimers/personalDeathZone"
+msgstr ""
+"Покиньте\n"
+"опасную зону!"
+
+msgid "statusNotificationTimers/phaseEnd"
+msgstr ""
+"Доберитесь до Волота,\n"
+"чтобы избежать урона"
+
+msgid "teamList/teammates"
+msgstr "Союзники"

@@ -1,17 +1,26 @@
-import weakref
-from .events import StateEvent, StringEvent
+import weakref, typing
+from enum import IntEnum
+from .events import StringEvent
 from .node import Node
+if typing.TYPE_CHECKING:
+    from .events import StateEvent
+
+class TransitionType(IntEnum):
+    EXTERNAL = 0
+    INTERNAL = 1
+
 
 class BaseTransition(Node):
-    __slots__ = ('__targets', '__priority')
+    __slots__ = ('__targets', '__priority', '__type')
 
-    def __init__(self, priority=0):
+    def __init__(self, priority=0, transitionType=TransitionType.EXTERNAL):
         super(BaseTransition, self).__init__()
         self.__targets = []
         self.__priority = priority
+        self.__type = transitionType
 
     def __repr__(self):
-        return ('{}({}->{}, priority={})').format(self.__class__.__name__, self.getSource(), self.getTargets(), self.__priority)
+        return ('{}({}->{}, priority={})').format(self.__class__.__name__, self.getSource(), self.getTargets(), self.getPriority())
 
     def clear(self):
         del self.__targets[:]
@@ -28,6 +37,9 @@ class BaseTransition(Node):
 
     def setTarget(self, state):
         self.__targets.append(weakref.ref(state))
+
+    def getType(self):
+        return self.__type
 
     def execute(self, event):
         raise NotImplementedError

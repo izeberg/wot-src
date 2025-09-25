@@ -5,6 +5,7 @@ package net.wg.gui.lobby.techtree
    import flash.events.Event;
    import flash.events.KeyboardEvent;
    import flash.events.MouseEvent;
+   import flash.geom.Rectangle;
    import flash.ui.Keyboard;
    import net.wg.data.Aliases;
    import net.wg.data.constants.Linkages;
@@ -24,6 +25,7 @@ package net.wg.gui.lobby.techtree
    import net.wg.gui.lobby.techtree.interfaces.ITechTreePage;
    import net.wg.gui.lobby.techtree.sub.NationTree;
    import net.wg.infrastructure.base.meta.impl.TechTreeMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.data.DataProvider;
@@ -31,7 +33,7 @@ package net.wg.gui.lobby.techtree
    import scaleform.clik.events.InputEvent;
    import scaleform.clik.interfaces.IDataProvider;
    
-   public class TechTreePage extends TechTreeMeta implements ITechTreePage
+   public class TechTreePage extends TechTreeMeta implements ITechTreePage, IInnerView
    {
       
       private static const WARNING_VERTICAL_GAP:int = 5;
@@ -54,17 +56,23 @@ package net.wg.gui.lobby.techtree
       
       private static const BLUEPRINTS_SWITCH_OFFSET_Y_NORMAL:int = 82;
       
+      private static const BLUEPRINTS_SWITCH_OFFSET_Y_NORMAL_NEW:int = 34;
+      
       private static const NATION_BUTTON_BAR_OFFSET_Y_NORMAL:int = 160;
       
       private static const BLUEPRINTS_SWITCH_SCALE_DECREASED:Number = 0.7;
       
       private static const BLUEPRINTS_SWITCH_OFFSET_Y_DECREASED:int = 58;
       
+      private static const BLUEPRINTS_SWITCH_OFFSET_Y_DECREASED_NEW:int = 24;
+      
       private static const NATION_BUTTON_BAR_OFFSET_Y_DECREASED:int = 120;
       
       private static const VEHICLE_COLLECTOR_BTN_X_OFFSET:int = 20;
       
       private static const VEHICLE_BTN_Y_OFFSET:int = 1;
+      
+      private static const BLUEPRINTS_BALANCE_Y_OFFSET:Number = 32;
        
       
       public var title:TechTreeTitle = null;
@@ -93,6 +101,10 @@ package net.wg.gui.lobby.techtree
       
       private var _vehicleCollectorEnabled:Boolean = true;
       
+      private var _topOffset:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
+      
       public function TechTreePage()
       {
          super();
@@ -100,8 +112,7 @@ package net.wg.gui.lobby.techtree
       
       override public function updateStage(param1:Number, param2:Number) : void
       {
-         super.updateStage(param1,param2);
-         setViewSize(param1,param2);
+         assertUpdateStageMethod();
       }
       
       override protected function onPopulate() : void
@@ -306,40 +317,57 @@ package net.wg.gui.lobby.techtree
          return this.vScrollBar;
       }
       
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         this._topOffset = param3.y;
+         this._bottomOffset = param3.height;
+         setViewSize(param1,param2);
+      }
+      
       protected function updateLayouts() : void
       {
-         this.title.updateSize(_width,_height);
+         var _loc4_:int = 0;
+         var _loc1_:uint = _height - this._topOffset - this._bottomOffset | 0;
+         this.title.updateSize(_width,_loc1_,this._topOffset);
          this.nationTree.levels.y = this.title.y + this.title.height >> 0;
-         this.nationTree.setSize(Math.round(_width - this.nationTree.x),Math.round(_height));
+         this.nationTree.setSize(Math.round(_width - this.nationTree.x),_loc1_ + this._topOffset);
          this.footerBg.width = _width;
-         this.shadowBg.height = this.footerBg.y = _height;
+         this.footerBg.height = this._bottomOffset;
+         this.footerBg.y = _loc1_ + this._topOffset;
+         this.shadowBg.height = _height - this._bottomOffset;
          this.background.setSize(_width,_height);
          this.blueprintBalance.x = _width;
+         this.blueprintBalance.y = this._topOffset > 0 ? Number(this._topOffset) : Number(BLUEPRINTS_BALANCE_Y_OFFSET);
          if(this._miniClient)
          {
             this.updateMiniClientLayouts();
          }
-         var _loc1_:int = NATION_BUTTON_BAR_Y_DEFAULT;
+         var _loc2_:int = NATION_BUTTON_BAR_Y_DEFAULT;
          if(this.blueprintsSwitchButton && this.blueprintsSwitchButton.visible)
          {
             if(stage.stageHeight < StageSizeBoundaries.HEIGHT_900)
             {
                this.blueprintsSwitchButton.scaleX = this.blueprintsSwitchButton.scaleY = BLUEPRINTS_SWITCH_SCALE_DECREASED;
-               this.blueprintsSwitchButton.y = BLUEPRINTS_SWITCH_OFFSET_Y_DECREASED;
-               _loc1_ = NATION_BUTTON_BAR_OFFSET_Y_DECREASED;
+               this.blueprintsSwitchButton.y = this._topOffset > 0 ? Number(this._topOffset + BLUEPRINTS_SWITCH_OFFSET_Y_DECREASED_NEW) : Number(BLUEPRINTS_SWITCH_OFFSET_Y_DECREASED);
+               _loc2_ = NATION_BUTTON_BAR_OFFSET_Y_DECREASED;
             }
             else
             {
                this.blueprintsSwitchButton.scaleX = this.blueprintsSwitchButton.scaleY = BLUEPRINTS_SWITCH_SCALE_NORMAL;
-               this.blueprintsSwitchButton.y = BLUEPRINTS_SWITCH_OFFSET_Y_NORMAL;
-               _loc1_ = NATION_BUTTON_BAR_OFFSET_Y_NORMAL;
+               this.blueprintsSwitchButton.y = this._topOffset > 0 ? Number(this._topOffset + BLUEPRINTS_SWITCH_OFFSET_Y_NORMAL_NEW) : Number(BLUEPRINTS_SWITCH_OFFSET_Y_NORMAL);
+               _loc2_ = NATION_BUTTON_BAR_OFFSET_Y_NORMAL;
             }
          }
-         var _loc2_:int = Math.max(_height - NationTree.CONTAINER_HEIGHT >> 1,NT_TREE_MIN_POSITION_Y) + (NationTree.CONTAINER_HEIGHT + NT_TREE_GRAPHICS_OFFSET_Y >> 1);
-         var _loc3_:int = this.nationsBar.measureOriginalContentHeight() >> 1;
-         _loc3_ = Math.min(_loc2_ - _loc1_,_height - TT_PADDING_BOTTOM - _loc2_,_loc3_);
-         this.nationsBar.height = _loc3_ << 1;
-         this.nationsBar.y = _loc2_ - _loc3_;
+         var _loc3_:int = Math.max(_loc1_ - NationTree.CONTAINER_HEIGHT >> 1,NT_TREE_MIN_POSITION_Y) + (NationTree.CONTAINER_HEIGHT + NT_TREE_GRAPHICS_OFFSET_Y >> 1);
+         _loc4_ = this.nationsBar.measureOriginalContentHeight() >> 1;
+         _loc4_ = Math.min(_loc3_ - _loc2_,_loc1_ - TT_PADDING_BOTTOM - _loc3_,_loc4_);
+         this.nationsBar.height = _loc4_ << 1;
+         this.nationsBar.y = _loc3_ - _loc4_ + this._topOffset - this._bottomOffset;
          this.blueprintsSwitchButton.x = this.nationsBar.x + 0.5 * this.nationsBar.width;
          this.updateVehicleCollectorBtnLayout();
       }
@@ -414,8 +442,7 @@ package net.wg.gui.lobby.techtree
       
       private function onBlueprintsSwitchCheckboxSelectHandler(param1:Event) : void
       {
-         this.switchBlueprintMode(this.blueprintsSwitchButton.selected);
-         onBlueprintModeSwitchS(this.blueprintsSwitchButton.selected);
+         onBlueprintModeSwitchToggleS(this.blueprintsSwitchButton.selected);
       }
       
       private function onNationsBarCompleteHandler(param1:Event) : void

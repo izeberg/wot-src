@@ -3,7 +3,6 @@ from gui.battle_results.pbs_helpers.economics import hasAogasFine
 from gui.impl.gen.view_models.views.lobby.battle_results.reward_item_model import RewardItemModel
 
 class PersonalRewards(IBattleResultsPacker):
-    __slots__ = ()
     _AVAILABLE_REWARDS = []
     _ITEM_MODEL_CLS = RewardItemModel
     _REWARD_GETTERS = {}
@@ -12,8 +11,7 @@ class PersonalRewards(IBattleResultsPacker):
     @classmethod
     def packModel(cls, model, battleResults):
         model.clear()
-        reusable = battleResults.reusable
-        shownRewards = cls._getShownRewards(reusable)
+        shownRewards = cls._getShownRewards(battleResults)
         for rewardType, rewardValue in shownRewards:
             item = cls._ITEM_MODEL_CLS()
             item.setType(rewardType.value)
@@ -35,21 +33,21 @@ class PersonalRewards(IBattleResultsPacker):
         return rewardValues
 
     @classmethod
-    def _getShownRewards(cls, reusable):
+    def _getShownRewards(cls, battleResults):
         shownRewards = []
-        rewardValues = cls._getAllRewardValues(reusable)
-        hasFines = cls._hasFines(reusable)
+        rewardValues = cls._getAllRewardValues(battleResults.reusable)
+        hasFines = cls._hasFines(battleResults)
         for rewardType in cls._AVAILABLE_REWARDS:
             value = rewardValues.get(rewardType)
             if value is None:
                 continue
             condition = cls._REWARDS_TO_CONDITION_MAP.get(rewardType)
-            if condition is not None and not condition(value, hasFines, rewardValues, reusable):
+            if condition is not None and not condition(value, hasFines, rewardValues, battleResults.reusable):
                 continue
             shownRewards.append((rewardType, value))
 
         return shownRewards
 
     @classmethod
-    def _hasFines(cls, reusable):
-        return reusable.personal.avatar.hasPenalties() or hasAogasFine(reusable)
+    def _hasFines(cls, battleResults):
+        return battleResults.reusable.personal.avatar.hasPenalties() or hasAogasFine(battleResults)[1]

@@ -1,12 +1,12 @@
 from wg_async import wg_async, wg_await
 from gui.Scaleform.daapi import LobbySubView
 from gui.Scaleform.daapi.view.lobby.missions import missions_helper
-from gui.Scaleform.daapi.view.lobby.missions.regular.group_packers import getGroupPackerByContextID
+from gui.Scaleform.daapi.view.lobby.user_missions.missions_group_packers import getGroupPackerByContextID
 from gui.Scaleform.daapi.view.meta.MissionDetailsContainerViewMeta import MissionDetailsContainerViewMeta
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
 from gui.server_events.events_helpers import isDailyQuest, isPremium
 from gui.server_events.formatters import parseComplexToken
-from gui.server_events.events_constants import BATTLE_ROYALE_GROUPS_ID, FUN_RANDOM_GROUP_ID
+from gui.server_events.events_constants import BATTLE_ROYALE_GROUPS_ID
 from gui.shared import events, event_bus_handlers, EVENT_BUS_SCOPE
 from helpers import dependency
 from skeletons.gui.server_events import IEventsCache
@@ -58,6 +58,7 @@ class MissionDetailsContainerView(LobbySubView, MissionDetailsContainerViewMeta)
     def _populate(self):
         super(MissionDetailsContainerView, self)._populate()
         self.eventsCache.onSyncCompleted += self.__setData
+        self.eventsCache.onPMSyncCompleted += self.__setData
         self.__setData(needDemand=True)
 
     def _invalidate(self, ctx=None):
@@ -65,6 +66,7 @@ class MissionDetailsContainerView(LobbySubView, MissionDetailsContainerViewMeta)
         self.__setData(needDemand=False)
 
     def _dispose(self):
+        self.eventsCache.onPMSyncCompleted -= self.__setData
         self.eventsCache.onSyncCompleted -= self.__setData
         self.__quests = None
         if self.__groupPacker is not None:
@@ -74,7 +76,7 @@ class MissionDetailsContainerView(LobbySubView, MissionDetailsContainerViewMeta)
         return
 
     @wg_async
-    def __setData(self, needDemand=True):
+    def __setData(self, needDemand=True, *_):
         if needDemand:
             yield wg_await(self.eventsCache.prefetcher.demand())
         eventID = self.__ctx.get('eventID')
@@ -113,8 +115,6 @@ class MissionDetailsContainerView(LobbySubView, MissionDetailsContainerViewMeta)
 
         if groupID == BATTLE_ROYALE_GROUPS_ID:
             return self.__battleRoyaleController.getQuests()
-        if groupID == FUN_RANDOM_GROUP_ID:
-            return self.eventsCache.getQuests(lambda q: q.getGroupID() == groupID)
         return self.eventsCache.getQuests(missionsFilter)
 
     def __isQuestInvalid(self, eventID):

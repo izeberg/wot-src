@@ -8,20 +8,16 @@ package net.wg.infrastructure.base
    {
        
       
+      private var _preferredLayout:int = -1;
+      
       public function BackportPopOverCaller()
       {
          super();
       }
       
-      public function init(param1:Number, param2:Number, param3:Number, param4:Number) : void
+      public function getHitArea() : DisplayObject
       {
-         this.x = param1;
-         this.y = param2;
-         this.graphics.clear();
-         this.graphics.beginFill(255);
-         this.graphics.drawRect(0,0,param3,param4);
-         this.graphics.endFill();
-         App.popoverMgr.popoverCaller = this;
+         return this;
       }
       
       public function getTargetButton() : DisplayObject
@@ -29,9 +25,31 @@ package net.wg.infrastructure.base
          return this;
       }
       
-      public function getHitArea() : DisplayObject
+      public function init(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number) : void
       {
-         return this;
+         this.x = param1;
+         this.y = param2;
+         this.graphics.clear();
+         this.graphics.beginFill(255);
+         this.graphics.drawRect(0,0,param3,param4);
+         this.graphics.endFill();
+         this._preferredLayout = param5;
+         App.popoverMgr.popoverCaller = this;
+      }
+      
+      override public function set alpha(param1:Number) : void
+      {
+         super.alpha = 1;
+      }
+      
+      override public function set visible(param1:Boolean) : void
+      {
+         super.visible = true;
+      }
+      
+      public function get preferredLayout() : int
+      {
+         return this._preferredLayout;
       }
    }
 }

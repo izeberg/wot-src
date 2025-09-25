@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from frameworks.wulf import ViewSettings
 from gui.impl.gen import R
@@ -15,8 +16,6 @@ ACTION_TYPE_TO_FITTING_TYPE = {ACTION_TYPES.MODIFICATION: FittingTypes.POST_PROG
    ACTION_TYPES.PAIR_MODIFICATION: FittingTypes.POST_PROGRESSION_PAIR_MODIFICATION}
 
 class BuyPairModificationDialog(BuyAndExchange[AmmunitionBuyModel]):
-    __slots__ = ('_buyContent', '_mainContent', '__vehicle', '__toStepID', '__price',
-                 '__modID', '__item')
 
     def __init__(self, *args, **kwargs):
         settings = ViewSettings(layoutID=R.views.lobby.tanksetup.dialogs.Confirm(), model=AmmunitionBuyModel())

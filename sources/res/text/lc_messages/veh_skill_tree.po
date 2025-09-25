@@ -1,0 +1,1102 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "comparison/fullUpgrades/title"
+msgstr "Полностью исследован"
+
+msgid "comparison/partialUpgrades/title"
+msgstr "Текущий"
+
+msgid "comparison/title"
+msgstr "Улучшения"
+
+msgid "comparison/tooltip/body"
+msgstr ""
+"На экране комплектации показано, как улучшения влияют на соответствующие "
+"характеристики. Выберите «полностью исследован», чтобы увидеть эффекты всех "
+"доступных улучшений."
+
+msgid "comparison/tooltip/header"
+msgstr "Улучшения"
+
+msgid "comparison/zeroUpgrades/title"
+msgstr "Неисследован"
+
+msgid "dialog/altConfiguration/description"
+msgstr ""
+"Эти опции должны быть включены, чтобы вы могли переключать конфигурации "
+"перед боем."
+
+msgid "dialog/altConfiguration/info"
+msgstr "Вы можете изменить эти настройки в любое время."
+
+msgid "dialog/altConfiguration/optDevBoostersSwitch"
+msgstr "Дополнительное оснащение"
+
+msgid "dialog/altConfiguration/shellsConsumablesSwitch"
+msgstr "Необходимое оснащение"
+
+msgid "dialog/altConfiguration/title"
+msgstr "Альтернативная комплектация"
+
+msgid "dialog/common/accept"
+msgstr "Подтвердить"
+
+msgid "dialog/confirmation/researchPerks"
+msgid_plural "plural/dialog/confirmation/researchPerks"
+msgstr[0] "%(perks)s"
+msgstr[1] "%(perks)s узла"
+msgstr[2] "%(perks)s узлов"
+
+msgid "intro/button"
+msgstr "Так точно!"
+
+msgid "intro/button/tooltip"
+msgstr "Об улучшениях"
+
+msgid "intro/improvements/description"
+msgstr ""
+"Зарабатывайте боевой опыт, чтобы исследовать узлы, которые улучшают "
+"характеристики вашей машины. Окончательные характеристики могут быть выше "
+"или ниже указанных значений из-за дополнительных модификаторов, которые "
+"складываются/перемножаются и применяются после узловых бонусов."
+
+msgid "intro/improvements/title"
+msgstr "Как это работает"
+
+msgid "intro/progression/description"
+msgstr ""
+"Улучшения доступны только для техники XI уровня и позволяют ещё больше "
+"усилить характеристики ваших машин."
+
+msgid "intro/progression/title"
+msgstr "Улучшения"
+
+msgid "intro/vanity/description"
+msgstr ""
+"После изучения всех узлов вы получите доступ к элитным наградам, которые "
+"можно получить по достижении определённых уровней элитности. Награды "
+"включают уникальный объёмный стиль, счётчик статистики и кожух ствола!"
+
+msgid "intro/vanity/title"
+msgstr "Элитные награды"
+
+msgid "kpi/bonus/valueTypes/cnt"
+msgstr " шт."
+
+msgid "kpi/bonus/valueTypes/default"
+msgstr "%"
+
+msgid "kpi/bonus/valueTypes/gps"
+msgstr " град/с"
+
+msgid "kpi/bonus/valueTypes/grads"
+msgstr " град"
+
+msgid "kpi/bonus/valueTypes/m"
+msgstr " м"
+
+msgid "kpi/bonus/valueTypes/mm"
+msgstr " мм"
+
+msgid "kpi/bonus/valueTypes/mph"
+msgstr " км/ч"
+
+msgid "kpi/bonus/valueTypes/mps"
+msgstr " м/c"
+
+msgid "kpi/bonus/valueTypes/p"
+msgstr " л.с."
+
+msgid "kpi/bonus/valueTypes/s"
+msgstr " с"
+
+msgid "kpi/bonus/valueTypes/val"
+msgstr " ед."
+
+msgid "notifications/perkAvailable/disabledButtonTooltip"
+msgstr "Эта функциональность временно недоступна"
+
+msgid "notifications/perkAvailable/goToProgression"
+msgstr "К улучшениям"
+
+msgid "notifications/perkAvailable/title"
+msgstr "У вас достаточно опыта для улучшения машины!"
+
+msgid "research/allResearched"
+msgstr "Все узлы исследованы. Вы получили доступ к элитным наградам."
+
+msgid "research/button/label"
+msgstr "Исследовать"
+
+msgid "research/inBattle"
+msgstr "Узел недоступен: машина ещё в бою."
+
+msgid "research/inFormation"
+msgstr "Узел недоступен: машина в составе формирования."
+
+msgid "research/infoTooltipTitle"
+msgstr "Выбранные узлы"
+
+msgid "research/needsRepair"
+msgstr "Узел недоступен: машине требуется ремонт."
+
+msgid "research/noSelected"
+msgstr "Выберите узел или ветку узлов для исследования"
+
+msgid "research/notEnoughExp"
+msgstr "Недостаточно опыта для изучения выбранных узлов"
+
+msgid "research/notInInventory"
+msgstr "Чтобы исследовать узлы, эта машина должна быть в Ангаре"
+
+msgid "research/perks"
+msgstr "Узлов: {{amount}}"
+
+msgid "research/selected"
+msgstr "Выбрано: {{selectedItem}}"
+
+msgid "research/tooltip/description"
+msgid_plural "plural/research/tooltip/description"
+msgstr[0] "• {{selectedPerks}},"
+msgstr[1] "• {{selectedPerks}}."
+msgstr[2] "• {{selectedPerks}}."
+
+msgid "rewardScreen/button/accept"
+msgstr "Так точно!"
+
+msgid "rewardScreen/button/check"
+msgstr "Посмотреть во «Внешнем виде»"
+
+msgid "rewardScreen/rewardName"
+msgstr "{{rarity}} {{rewardName}}"
+
+msgid "rewardScreen/subtitle"
+msgstr ""
+"За достижение {{prestigeLevel}} уровня элитности на {{level}} {{type}} "
+"{{name}}"
+
+msgid "rewardScreen/title"
+msgstr "ЭЛИТНАЯ НАГРАДА"
+
+msgid "tooltips/backToMainProgressionEntryPoint/text"
+msgstr ""
+"Улучшения доступны только для техники XI уровня и позволяют ещё больше "
+"усилить характеристики ваших машин."
+
+msgid "tooltips/backToMainProgressionEntryPoint/title"
+msgstr "Улучшения"
+
+msgid "tooltips/common/cost"
+msgstr "Стоимость: {{amount}}"
+
+msgid "tooltips/description/HEDamageAbsorption"
+msgstr ""
+"Улучшает способность вашей машины поглощать урон от ОФ снарядов и тарана."
+
+msgid "tooltips/description/HEShellDamage"
+msgstr "Увеличивает урон, наносимый осколочно-фугасными снарядами."
+
+msgid "tooltips/description/a179_mechanic_0"
+msgstr ""
+"Уменьшает разброс второго выстрела в режиме очереди на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a179_mechanic_1"
+msgstr ""
+"Уменьшает время перезарядки режима очереди на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_0"
+msgstr ""
+"Увеличивает бонус к скорости перезарядки за уровень эффективности на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_1"
+msgstr ""
+"Увеличивает время действия уровней эффективности перезарядки на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_2"
+msgstr ""
+"Увеличивает время действия уровней эффективности перезарядки на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/a182_mechanic_3"
+msgstr ""
+"Увеличивает бонус к скорости перезарядки за уровень эффективности на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_0"
+msgstr ""
+"Уменьшает время перезарядки механики на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_1"
+msgstr ""
+"Уменьшает время перезарядки механики на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_2"
+msgstr ""
+"Увеличивает время действия механики на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/a183_mechanic_3"
+msgstr ""
+"Увеличивает время действия механики на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/advancedChassisProtection"
+msgstr "Повышает прочность и скорость ремонта ходовой."
+
+msgid "tooltips/description/advancedModuleAndCrewProtection"
+msgstr ""
+"Уменьшает штрафы при повреждении боеукладки или двигателя, а также снижает "
+"вероятность ранения членов экипажа при попадании по машине."
+
+msgid "tooltips/description/aimingCircleSize"
+msgstr "Уменьшает размер круга сведения после выстрела."
+
+msgid "tooltips/description/aimingTime"
+msgstr "Уменьшает время сведения."
+
+msgid "tooltips/description/aimingTimeSalvo"
+msgstr "Уменьшает время сведения в одиночном режиме стрельбы."
+
+msgid "tooltips/description/allShellDamage"
+msgstr "Увеличивает урон, наносимый всеми типами снарядов."
+
+msgid "tooltips/description/allShellsVelocity"
+msgstr "Увеличивает скорость полёта снарядов всех типов."
+
+msgid "tooltips/description/ammoRackHP"
+msgstr "Увеличивает количество урона, требуемого для уничтожения боеукладки."
+
+msgid "tooltips/description/ammoRackPenalty"
+msgstr "Уменьшает штраф при повреждении боеукладки."
+
+msgid "tooltips/description/ch67_mechanic_0"
+msgstr ""
+"Увеличивает скорость поворота корпуса при активных ускорителях на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch67_mechanic_1"
+msgstr ""
+"Увеличивает максимальную скорость при активных ускорителях на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/ch67_mechanic_2"
+msgstr ""
+"Уменьшает время полной перезарядки ускорителей на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/ch67_mechanic_3"
+msgstr ""
+"Увеличивает время действия ускорителей на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/crewProtection"
+msgstr "Уменьшает вероятность ранения членов экипажа при попадании по машине."
+
+msgid "tooltips/description/damagedGunDispersion"
+msgstr "Уменьшает разброс орудия при повреждённом орудии."
+
+msgid "tooltips/description/driveModeForwardSpeed"
+msgstr "Увеличивает скорость движения вперёд в походном режиме."
+
+msgid "tooltips/description/driveModeReverseSpeed"
+msgstr "Увеличивает скорость движения назад в походном режиме."
+
+msgid "tooltips/description/enginePenalty"
+msgstr "Уменьшает штраф при повреждении двигателя."
+
+msgid "tooltips/description/enginePower"
+msgstr ""
+"Увеличивает мощность двигателя, позволяя машине быстрее ускоряться и ехать в"
+" гору."
+
+msgid "tooltips/description/f135_mechanic_0"
+msgstr ""
+"Уменьшает время начала перезарядки на {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/f135_mechanic_1"
+msgstr ""
+"Уменьшает задержку перед выстрелом после прерывания перезарядки на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/f136_mechanic_0"
+msgstr ""
+"Уменьшает штраф ко времени перезарядки после выстрела последнего снаряда в "
+"кассете на {colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/forwardSpeed"
+msgstr "Увеличивает максимальную скорость движения вперёд."
+
+msgid "tooltips/description/g185_mechanic_0"
+msgstr ""
+"Увеличивает бонус к разбросу за уровень точности на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g185_mechanic_1"
+msgstr ""
+"Увеличивает максимальную скорость, при которой могут набираться уровни "
+"точности на {colorTagOpen}{value} км/ч{colorTagClose}."
+
+msgid "tooltips/description/g185_mechanic_2"
+msgstr ""
+"Уменьшает время получения нового уровня точности на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/g185_mechanic_3"
+msgstr ""
+"Увеличивает бонус к стабилизации на максимальном уровне точности на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g187_mechanic_0"
+msgstr ""
+"Уменьшает время перезарядки вспомогательного орудия на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g187_mechanic_1"
+msgstr ""
+"Уменьшает время перезарядки вспомогательного орудия на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_0"
+msgstr ""
+"Увеличивает время видимости отмеченной машины противника на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_1"
+msgstr ""
+"Уменьшает время перезарядки механики на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_2"
+msgstr ""
+"Уменьшает начальное время подготовки механики на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/g188_mechanic_3"
+msgstr ""
+"Увеличивает дополнительный урон от выстрелов союзников по отмеченным машинам"
+" противника на {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_0"
+msgstr ""
+"Увеличивает максимальную скорость, при которой может набираться преднагрев "
+"на {colorTagOpen}{value} км/ч{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_1"
+msgstr ""
+"Увеличивает максимальный бонус к разбросу от преднагрева на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_2"
+msgstr ""
+"Увеличивает максимальный бонус к урону от преднагрева на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/g189_mechanic_3"
+msgstr ""
+"Уменьшает время получения максимального уровня преднагрева на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/gb147_mechanic_0"
+msgstr ""
+"Уменьшает разброс орудия в залповом режиме стрельбы на {colorTagOpen}{value}"
+" м{colorTagClose}."
+
+msgid "tooltips/description/gb147_mechanic_1"
+msgstr ""
+"Увеличивает скорость вращения башни в залповом режиме стрельбы на "
+"{colorTagOpen}{value} град/с{colorTagClose}."
+
+msgid "tooltips/description/gb147_mechanic_2"
+msgstr ""
+"Уменьшает время сведения в залповом режиме стрельбы на {colorTagOpen}{value}"
+" с{colorTagClose}."
+
+msgid "tooltips/description/gb147_mechanic_3"
+msgstr ""
+"Увеличивает максимальную скорость в залповом режиме стрельбы на "
+"{colorTagOpen}{value} км/ч{colorTagClose}."
+
+msgid "tooltips/description/gb152_mechanic_0"
+msgstr ""
+"Уменьшает время перехода в режим прямой передачи на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/gb152_mechanic_1"
+msgstr ""
+"Уменьшает время достижения максимальной производительности в режиме прямой "
+"передачи на {colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/gb152_mechanic_2"
+msgstr ""
+"Увеличивает мощность двигателя в режиме прямой передачи на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/gb152_mechanic_3"
+msgstr ""
+"Увеличивает максимальную скорость в режиме прямой передачи на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/gunDepression"
+msgstr "Увеличивает угол склонения орудия."
+
+msgid "tooltips/description/gunDispersion"
+msgstr "Улучшает кучность выстрелов в круге сведения."
+
+msgid "tooltips/description/gunDispersionSalvo"
+msgstr ""
+"Улучшает кучность выстрелов в круге сведения в одиночном режиме стрельбы."
+
+msgid "tooltips/description/gunStabilization"
+msgstr "Улучшает стабилизацию орудия во всех ситуациях."
+
+msgid "tooltips/description/gunStabilizationFromHull"
+msgstr "Улучшает стабилизацию орудия в движении и при повороте корпуса."
+
+msgid "tooltips/description/gunStabilizationFromHullMovement"
+msgstr "Улучшает стабилизацию орудия в движении."
+
+msgid "tooltips/description/gunStabilizationFromHullRotation"
+msgstr "Улучшает стабилизацию орудия при повороте корпуса."
+
+msgid "tooltips/description/gunStabilizationFromHullSalvo"
+msgstr ""
+"Улучшает стабилизацию орудия в движении и при повороте корпуса в одиночном "
+"режиме стрельбы."
+
+msgid "tooltips/description/gunStabilizationFromTurret"
+msgstr "Улучшает стабилизацию орудия при вращении башни."
+
+msgid "tooltips/description/gunStabilizationFromTurretSalvo"
+msgstr ""
+"Улучшает стабилизацию орудия при вращении башни в одиночном режиме стрельбы."
+
+msgid "tooltips/description/gunTraverse"
+msgstr "Увеличивает углы горизонтального наведения орудия."
+
+msgid "tooltips/description/hitPoints"
+msgstr ""
+"Повышает выживаемость машины, позволяя ей получать больше урона до "
+"уничтожения."
+
+msgid "tooltips/description/innerClipReloadTime"
+msgstr "Уменьшает время между выстрелами в магазине."
+
+msgid "tooltips/description/invisibilityWhenShooting"
+msgstr ""
+"Уменьшает шанс быть обнаруженным машинами противника во время выстрела."
+
+msgid "tooltips/description/nonHEShellDamage"
+msgstr ""
+"Увеличивает урон, наносимый всеми снарядами, кроме осколочно-фугасных."
+
+msgid "tooltips/description/opt_dev_boosters_switch"
+msgstr ""
+"Позволяет настроить альтернативную конфигурацию оборудования и предбоевых "
+"инструкций."
+
+msgid "tooltips/description/pl37_mechanic_0"
+msgstr ""
+"Уменьшает время переключения между режимами на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/pl37_mechanic_1"
+msgstr ""
+"Увеличивает количество энергии, получаемой пассивно за секунду в турбо-"
+"режиме на {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/pl37_mechanic_2"
+msgstr ""
+"Увеличивает количество энергии, получаемой пассивно за секунду в боевом "
+"режиме на {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/pl37_mechanic_3"
+msgstr ""
+"Увеличивает продолжительность эффекта в турбо- и боевом режиме на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_0"
+msgstr ""
+"Увеличивает урон от тарана, наносимый машинам противника на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_1"
+msgstr ""
+"Увеличивает урон от тарана, наносимый ходовым частям машин противника на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_2"
+msgstr ""
+"Увеличивает урон от тарана, наносимый машинам противника на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r228_mechanic_3"
+msgstr ""
+"Увеличивает урон от тарана, наносимый машинам противника на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_0"
+msgstr ""
+"Уменьшает время блокировки орудия после перегрева заряда на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_1"
+msgstr ""
+"Увеличивает доступное время для выстрела при максимальном уровне нагрева на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_2"
+msgstr ""
+"Уменьшает время блокировки орудия после перегрева заряда на "
+"{colorTagOpen}{value} с{colorTagClose}."
+
+msgid "tooltips/description/r230_mechanic_3"
+msgstr ""
+"Увеличивает бонус к урону за уровень нагрева на "
+"{colorTagOpen}{value0}%{colorTagClose}&nbsp;/&nbsp;{colorTagOpen}{value1}%{colorTagClose}&nbsp;/&nbsp;{colorTagOpen}{value2}%{colorTagClose}."
+
+msgid "tooltips/description/reducedRammingDamage"
+msgstr "Уменьшает урон от тарана, наносимый машинами противника."
+
+msgid "tooltips/description/reloadTimeTwinGun"
+msgstr "Уменьшает время перезарядки в залповом и одиночном режимах."
+
+msgid "tooltips/description/reverseSpeed"
+msgstr "Увеличивает максимальную скорость движения назад."
+
+msgid "tooltips/description/roleSlot"
+msgstr "Назначьте категорию второго слота для оборудования."
+
+msgid "tooltips/description/s36_mechanic_0"
+msgstr ""
+"Увеличивает скорость поворота корпуса и вертикального наведения орудия в "
+"укреплённом режиме на {colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/s36_mechanic_1"
+msgstr ""
+"Уменьшает время выхода из укреплённого режима на {colorTagOpen}{value} "
+"с{colorTagClose}."
+
+msgid "tooltips/description/s36_mechanic_2"
+msgstr ""
+"Уменьшает разброс орудия в укреплённом режиме на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/s36_mechanic_3"
+msgstr ""
+"Уменьшает время перезарядки в укреплённом режиме на "
+"{colorTagOpen}{value}%{colorTagClose}."
+
+msgid "tooltips/description/selectiveModuleHPBoost"
+msgstr ""
+"Увеличивает количество очков прочности баков и двигателя вашей машины."
+
+msgid "tooltips/description/selectiveModuleProtection"
+msgstr "Уменьшает штраф от повреждения боеукладки и двигателя."
+
+msgid "tooltips/description/shellModuleDamage"
+msgstr "Увеличивает урон модулям машин противника от выстрелов."
+
+msgid "tooltips/description/shells_consumables_switch"
+msgstr ""
+"Позволяет настроить альтернативную конфигурацию боекомплекта и снаряжения."
+
+msgid "tooltips/description/specialShellPenetration"
+msgstr "Увеличивает бронепробиваемость специальных снарядов."
+
+msgid "tooltips/description/specialShellVelocity"
+msgstr "Увеличивает скорость полёта специальных снарядов."
+
+msgid "tooltips/description/spottingBonusFoliage"
+msgstr "Снижает незаметность техники противника за растительностью."
+
+msgid "tooltips/description/spottingBonusMovement"
+msgstr "Снижает незаметность техники противника в движении."
+
+msgid "tooltips/description/standardShellPenetration"
+msgstr "Увеличивает бронепробиваемость базовых снарядов."
+
+msgid "tooltips/description/standardShellVelocity"
+msgstr "Увеличивает скорость полёта базовых снарядов."
+
+msgid "tooltips/description/stunDuration"
+msgstr "Уменьшает время оглушения от выстрелов противника."
+
+msgid "tooltips/description/turretTraverse"
+msgstr "Увеличивает углы горизонтального наведения башни."
+
+msgid "tooltips/description/turretTraverseStability"
+msgstr "Уменьшает разброс орудия при вращении башни в боевом режиме."
+
+msgid "tooltips/description/vehicleSpeed"
+msgstr "Увеличивает максимальную скорость машины вперёд и назад."
+
+msgid "tooltips/description/viewRange"
+msgstr "Позволяет обнаруживать машины противника с большего расстояния."
+
+msgid "tooltips/large/eliteStatus"
+msgstr "Даёт машине «Элитный» статус."
+
+msgid "tooltips/large/perksResearchRequired"
+msgstr "Исследуйте все остальные узлы, чтобы изучить этот."
+
+msgid "tooltips/paramNameWithUnit"
+msgstr "{paramName} ({unit})"
+
+msgid "tooltips/perk/category/concealment"
+msgstr "Категория: незаметность"
+
+msgid "tooltips/perk/category/firepower"
+msgstr "Категория: огневая мощь"
+
+msgid "tooltips/perk/category/mechanics"
+msgstr "Улучшение механики"
+
+msgid "tooltips/perk/category/mobility"
+msgstr "Категория: мобильность"
+
+msgid "tooltips/perk/category/special"
+msgstr "Специальное улучшение"
+
+msgid "tooltips/perk/category/spotting"
+msgstr "Категория: наблюдение"
+
+msgid "tooltips/perk/category/survivability"
+msgstr "Категория: живучесть"
+
+msgid "tooltips/special/tapToModify"
+msgstr "Нажмите, чтобы провести модификацию после исследования узла."
+
+msgid "tooltips/title/HEDamageAbsorption"
+msgstr "Поглощение осколочно-фугасного урона"
+
+msgid "tooltips/title/HEShellDamage"
+msgstr "Осколочно-фугасный урон"
+
+msgid "tooltips/title/HEShellPenetration"
+msgstr "Осколочно-фугасное пробитие"
+
+msgid "tooltips/title/a179_mechanic_0"
+msgstr "Полуактивный демпфер массы"
+
+msgid "tooltips/title/a179_mechanic_1"
+msgstr "Улучшение цепного ударного механизма"
+
+msgid "tooltips/title/a182_mechanic_0"
+msgstr "Полуавтоматический торсионный экстрактор"
+
+msgid "tooltips/title/a182_mechanic_1"
+msgstr "Улучшенная вентиляция боевого отделения"
+
+msgid "tooltips/title/a182_mechanic_2"
+msgstr "Центробежный вентилятор повышенного давления"
+
+msgid "tooltips/title/a182_mechanic_3"
+msgstr "Модернизированные крепления для боеприпасов"
+
+msgid "tooltips/title/a183_mechanic_0"
+msgstr "Компрессор повышенной мощности"
+
+msgid "tooltips/title/a183_mechanic_1"
+msgstr "Поршень компрессора на давление 6000 PSI"
+
+msgid "tooltips/title/a183_mechanic_2"
+msgstr "Пневматическая система на давление 6000 PSI"
+
+msgid "tooltips/title/a183_mechanic_3"
+msgstr "Дополнительный цилиндр высокого давления"
+
+msgid "tooltips/title/additionalShellAmmoCapacity"
+msgstr "Дополнительный боезапас"
+
+msgid "tooltips/title/advancedChassisProtection"
+msgstr "Улучшенная защита ходовой"
+
+msgid "tooltips/title/advancedModuleAndCrewProtection"
+msgstr "Улучшенная защита модулей и экипажа"
+
+msgid "tooltips/title/aimingCircleSize"
+msgstr "Размер круга сведения"
+
+msgid "tooltips/title/aimingTime"
+msgstr "Время сведения"
+
+msgid "tooltips/title/aimingTimeSalvo"
+msgstr "Время сведения"
+
+msgid "tooltips/title/allShellDamage"
+msgstr "Весь урон от снарядов"
+
+msgid "tooltips/title/allShellsVelocity"
+msgstr "Скорость полёта"
+
+msgid "tooltips/title/ammoRackHP"
+msgstr "Прочность боеукладки"
+
+msgid "tooltips/title/ammoRackPenalty"
+msgstr "Штраф от повреждённой боеукладки"
+
+msgid "tooltips/title/ch67_mechanic_0"
+msgstr "Управление вектором тяги"
+
+msgid "tooltips/title/ch67_mechanic_1"
+msgstr "Высокопроизводительный топливный насос"
+
+msgid "tooltips/title/ch67_mechanic_2"
+msgstr "Испарительное охлаждение"
+
+msgid "tooltips/title/ch67_mechanic_3"
+msgstr "Жиклёры с транспирационным охлаждением"
+
+msgid "tooltips/title/chassisHP"
+msgstr "Прочность ходовой"
+
+msgid "tooltips/title/chassisRepairSpeed"
+msgstr "Скорость ремонта ходовой"
+
+msgid "tooltips/title/crewProtection"
+msgstr "Защита экипажа"
+
+msgid "tooltips/title/damagedGunDispersion"
+msgstr "Ситуационный разброс орудия"
+
+msgid "tooltips/title/driveModeForwardSpeed"
+msgstr "Скорость движения вперёд в походном режиме"
+
+msgid "tooltips/title/driveModeReverseSpeed"
+msgstr "Скорость движения назад в походном режиме"
+
+msgid "tooltips/title/engineFireChance"
+msgstr "Вероятность возгорания двигателя"
+
+msgid "tooltips/title/engineHP"
+msgstr "Прочность двигателя"
+
+msgid "tooltips/title/enginePenalty"
+msgstr "Штраф от повреждённого двигателя"
+
+msgid "tooltips/title/enginePower"
+msgstr "Мощность двигателя"
+
+msgid "tooltips/title/f135_mechanic_0"
+msgstr "Укреплённый гидравлический шланг"
+
+msgid "tooltips/title/f135_mechanic_1"
+msgstr "Оптимизированное заряжание"
+
+msgid "tooltips/title/f136_mechanic_0"
+msgstr "Усовершенствованный механизм заряжания"
+
+msgid "tooltips/title/forwardSpeed"
+msgstr "Скорость движения вперёд"
+
+msgid "tooltips/title/fuelTankHP"
+msgstr "Прочность топливных баков"
+
+msgid "tooltips/title/g185_mechanic_0"
+msgstr "Датчик Кориолиса"
+
+msgid "tooltips/title/g185_mechanic_1"
+msgstr "Гироскопический датчик наклона"
+
+msgid "tooltips/title/g185_mechanic_2"
+msgstr "Усовершенствованный терминал входа"
+
+msgid "tooltips/title/g185_mechanic_3"
+msgstr "Высокоточный датчик поворота"
+
+msgid "tooltips/title/g187_mechanic_0"
+msgstr "Вспомогательный боекомплект"
+
+msgid "tooltips/title/g187_mechanic_1"
+msgstr "Вспомогательный орудийный досылатель"
+
+msgid "tooltips/title/g188_mechanic_0"
+msgstr "Усовершенствованная система сопровождения цели"
+
+msgid "tooltips/title/g188_mechanic_1"
+msgstr "Турбированный радиатор"
+
+msgid "tooltips/title/g188_mechanic_2"
+msgstr "Генератор повышенной силы тока"
+
+msgid "tooltips/title/g188_mechanic_3"
+msgstr "Низкодисперсный рубиновый лазер"
+
+msgid "tooltips/title/g189_mechanic_0"
+msgstr "Модифицированный вал отбора мощности"
+
+msgid "tooltips/title/g189_mechanic_1"
+msgstr "Сдвоенный датчик температуры"
+
+msgid "tooltips/title/g189_mechanic_2"
+msgstr "Система точного термоконтроля"
+
+msgid "tooltips/title/g189_mechanic_3"
+msgstr "Генератор повышенной мощности"
+
+msgid "tooltips/title/gb147_mechanic_0"
+msgstr "Люльки с предварительной загрузкой"
+
+msgid "tooltips/title/gb147_mechanic_1"
+msgstr "Усовершенствованный механизм вращения"
+
+msgid "tooltips/title/gb147_mechanic_2"
+msgstr "Система управления наклоном"
+
+msgid "tooltips/title/gb147_mechanic_3"
+msgstr "Разблокированный регулятор крутящего момента"
+
+msgid "tooltips/title/gb152_mechanic_0"
+msgstr "Регулировка передаточного числа"
+
+msgid "tooltips/title/gb152_mechanic_1"
+msgstr "Турбина с улучшенной геометрией"
+
+msgid "tooltips/title/gb152_mechanic_2"
+msgstr "Сбалансированный трубчатый коллектор"
+
+msgid "tooltips/title/gb152_mechanic_3"
+msgstr "Модифицированный ограничитель оборотов"
+
+msgid "tooltips/title/gunDepression"
+msgstr "Угол склонения орудия"
+
+msgid "tooltips/title/gunDispersion"
+msgstr "Разброс орудия"
+
+msgid "tooltips/title/gunDispersionSalvo"
+msgstr "Разброс орудия"
+
+msgid "tooltips/title/gunElevation"
+msgstr "Угол возвышения орудия"
+
+msgid "tooltips/title/gunStabilization"
+msgstr "Полная стабилизация орудия"
+
+msgid "tooltips/title/gunStabilizationFromHull"
+msgstr "Частичная стабилизация орудия"
+
+msgid "tooltips/title/gunStabilizationFromHullMovement"
+msgstr "Стабилизация движения"
+
+msgid "tooltips/title/gunStabilizationFromHullRotation"
+msgstr "Стабилизация горизонтального наведения"
+
+msgid "tooltips/title/gunStabilizationFromHullSalvo"
+msgstr "Частичная стабилизация орудия"
+
+msgid "tooltips/title/gunStabilizationFromTurret"
+msgstr "Частичная стабилизация орудия"
+
+msgid "tooltips/title/gunStabilizationFromTurretSalvo"
+msgstr "Частичная стабилизация орудия"
+
+msgid "tooltips/title/gunTraverse"
+msgstr "Улучшенное горизонтальное наведение"
+
+msgid "tooltips/title/hitPoints"
+msgstr "Прочность (ед.)"
+
+msgid "tooltips/title/hullElevationSpeed"
+msgstr "Скорость подъёма корпуса"
+
+msgid "tooltips/title/hullTraverseSpeed"
+msgstr "Скорость поворота корпуса"
+
+msgid "tooltips/title/innerClipReloadTime"
+msgstr "Скорость смены снаряда внутри магазина"
+
+msgid "tooltips/title/invisibilityWhenShooting"
+msgstr "Незаметность после выстрела"
+
+msgid "tooltips/title/nonHEShellDamage"
+msgstr "Урон от снарядов (кроме ОФ)"
+
+msgid "tooltips/title/opt_dev_boosters_switch"
+msgstr "Загрузка оборудования и предбоевых инструкций"
+
+msgid "tooltips/title/pl37_mechanic_0"
+msgstr "Облегчённый турбинный ротор"
+
+msgid "tooltips/title/pl37_mechanic_1"
+msgstr "Вспомогательный генератор повышенной мощности"
+
+msgid "tooltips/title/pl37_mechanic_2"
+msgstr "Продвинутый блок управления выпрямлением"
+
+msgid "tooltips/title/pl37_mechanic_3"
+msgstr "Гибридная группа конденсаторов"
+
+msgid "tooltips/title/r228_mechanic_0"
+msgstr "Усиление корпуса"
+
+msgid "tooltips/title/r228_mechanic_1"
+msgstr "Гусеницы из высоколегированной стали"
+
+msgid "tooltips/title/r228_mechanic_2"
+msgstr "Глубокое локальное науглероживание"
+
+msgid "tooltips/title/r228_mechanic_3"
+msgstr "Локальное поверхностное науглероживание"
+
+msgid "tooltips/title/r230_mechanic_0"
+msgstr "Высокоточный датчик температуры"
+
+msgid "tooltips/title/r230_mechanic_1"
+msgstr "Низкоинерционные нагреватели затвора"
+
+msgid "tooltips/title/r230_mechanic_2"
+msgstr "Механизированный лоток заряжания"
+
+msgid "tooltips/title/r230_mechanic_3"
+msgstr "Режим теплового перегруза"
+
+msgid "tooltips/title/reducedRammingDamage"
+msgstr "Сниженный урон от тарана"
+
+msgid "tooltips/title/reloadTime"
+msgstr "Перезарядка орудия"
+
+msgid "tooltips/title/reloadTimeTwinGun"
+msgstr "Перезарядка орудия"
+
+msgid "tooltips/title/reverseSpeed"
+msgstr "Скорость движения назад"
+
+msgid "tooltips/title/roleSlot"
+msgstr "Категория второго слота"
+
+msgid "tooltips/title/s36_mechanic_0"
+msgstr "Аксиально-поршневой гидравлический насос"
+
+msgid "tooltips/title/s36_mechanic_1"
+msgstr "Синхронизатор боевого режима"
+
+msgid "tooltips/title/s36_mechanic_2"
+msgstr "Ротор точной балансировки"
+
+msgid "tooltips/title/s36_mechanic_3"
+msgstr "Гидравлический досылатель"
+
+msgid "tooltips/title/selectiveModuleHPBoost"
+msgstr "Увеличенная прочность модулей"
+
+msgid "tooltips/title/selectiveModuleProtection"
+msgstr "Улучшенная защита модулей"
+
+msgid "tooltips/title/shellModuleDamage"
+msgstr "Увеличенный урон по модулям"
+
+msgid "tooltips/title/shells_consumables_switch"
+msgstr "Предварительная загрузка боекомплекта и снаряжения"
+
+msgid "tooltips/title/specialShellPenetration"
+msgstr "Бронепробиваемость специальным снарядом"
+
+msgid "tooltips/title/specialShellVelocity"
+msgstr "Скорость полёта специального снаряда"
+
+msgid "tooltips/title/spottingBonusFoliage"
+msgstr "Бонус к обнаружению замаскированных целей"
+
+msgid "tooltips/title/spottingBonusMovement"
+msgstr "Бонус к обнаружению движущихся целей"
+
+msgid "tooltips/title/standardShellPenetration"
+msgstr "Бронепробиваемость базовым снарядом"
+
+msgid "tooltips/title/standardShellVelocity"
+msgstr "Скорость полёта базового снаряда"
+
+msgid "tooltips/title/stunDuration"
+msgstr "Время оглушения"
+
+msgid "tooltips/title/turretTraverse"
+msgstr "Улучшенное вращение башни"
+
+msgid "tooltips/title/turretTraverseSpeed"
+msgstr "Скорость вращения башни"
+
+msgid "tooltips/title/turretTraverseStability"
+msgstr "Стабилизация при вращении башни"
+
+msgid "tooltips/title/vehicleSpeed"
+msgstr "Скорость движения техники"
+
+msgid "tooltips/title/viewRange"
+msgstr "Улучшенный обзор"
+
+msgid "tooltips/vanityEntryPoint/statusInfo"
+msgstr "Для разблокировки исследуйте финальный узел"
+
+msgid "tooltips/vanityEntryPoint/text"
+msgstr ""
+"Получайте эксклюзивные награды для техники XI уровня, включая объёмный "
+"стиль, счётчик статистики и кожух ствола."
+
+msgid "tooltips/vanityEntryPoint/title"
+msgstr "Элитные награды"
+
+msgid "vanity/available/subtitle"
+msgstr "Получите награды за уровень элитности вашей машины"
+
+msgid "vanity/available/tooltip"
+msgstr "Текущий уровень элитности"
+
+msgid "vanity/completed/subtitle"
+msgstr "Поздравляем! Все награды получены."
+
+msgid "vanity/completed/tooltip"
+msgstr "Текущий уровень элитности"
+
+msgid "vanity/disabled/subtitle"
+msgstr "Можно заработать после исследования финального узла"
+
+msgid "vanity/disabled/tooltip"
+msgstr "Машина не получила «Элитный» статус"
+
+msgid "vanity/reward/level/tooltip"
+msgstr "Для награды требуется уровень элитности"
+
+msgid "vanity/rewardType/description/attachment"
+msgstr ""
+"Эксклюзивный кожух ствола, благодаря которому ваша машина будет выделяться "
+"на поле боя."
+
+msgid "vanity/rewardType/description/stattracker"
+msgstr ""
+"Новый элемент внешнего вида, отображающий количество уничтоженной техники."
+
+msgid "vanity/rewardType/description/style"
+msgstr ""
+"Особый 2D-стиль с уникальным визуальным эффектом, обеспечивающим трёхмерный "
+"вид. Доступен только для техники XI уровня."
+
+msgid "vanity/rewardType/title/attachment"
+msgstr "3D-объект «кожух ствола»"
+
+msgid "vanity/rewardType/title/stattracker"
+msgstr "Счётчик статистики"
+
+msgid "vanity/rewardType/title/style"
+msgstr "Объёмный стиль"
+
+msgid "vanity/title"
+msgstr "ЭЛИТНЫЕ НАГРАДЫ"

@@ -45,9 +45,25 @@ package
       
       public static const HEADERBUTTON_TOOLTIPS_COMP7SQUAD_BODY:String = "#platoon:headerButton/tooltips/comp7Squad/body";
       
-      public static const HEADERBUTTON_TOOLTIPS_COMP7QUALIFICATIONSQUAD_HEADER:String = "#platoon:headerButton/tooltips/comp7QualificationSquad/header";
+      public static const HEADERBUTTON_TOOLTIPS_COMP7RESTRICTION_HEADER:String = "#platoon:headerButton/tooltips/comp7Restriction/header";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7RESTRICTION_BODY:String = "#platoon:headerButton/tooltips/comp7Restriction/body";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7NOSUITABLEVEHICLES_BODY:String = "#platoon:headerButton/tooltips/comp7NoSuitableVehicles/body";
       
       public static const HEADERBUTTON_TOOLTIPS_COMP7QUALIFICATIONSQUAD_BODY:String = "#platoon:headerButton/tooltips/comp7QualificationSquad/body";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7BANISSET_BODY:String = "#platoon:headerButton/tooltips/comp7BanIsSet/body";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7LIGHTSQUAD_HEADER:String = "#platoon:headerButton/tooltips/comp7LightSquad/header";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7LIGHTSQUAD_BODY:String = "#platoon:headerButton/tooltips/comp7LightSquad/body";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7LIGHTRESTRICTION_HEADER:String = "#platoon:headerButton/tooltips/comp7LightRestriction/header";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7LIGHTRESTRICTION_BODY:String = "#platoon:headerButton/tooltips/comp7LightRestriction/body";
+      
+      public static const HEADERBUTTON_TOOLTIPS_COMP7LIGHTNOSUITABLEVEHICLES_BODY:String = "#platoon:headerButton/tooltips/comp7LightNoSuitableVehicles/body";
       
       public static const HEADERBUTTON_TOOLTIPS_INMAPBOXSQUAD_HEADER:String = "#platoon:headerButton/tooltips/inMapboxSquad/header";
       

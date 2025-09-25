@@ -218,7 +218,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>7000</weight>
-			<maxLoad>31000</maxLoad>
 			<terrainResistance>
 				0.5 0.7 2.2
 				<!--BW_String-->
@@ -2816,7 +2815,7 @@
 	<turrets0>
 		<Turret_1_G154_Kpz_07_RH_LN>
 			<userString>#germany_vehicles:Turret_1_G154_Kpz_07_RH_LN</userString>
-			<tags/>
+			<tags>oscillating</tags>
 			<level>8</level>
 			<price>30000</price>
 			<notInShop>true</notInShop>

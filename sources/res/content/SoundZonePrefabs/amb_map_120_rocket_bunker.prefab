@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<version>4</version>
+	<GameObjects>
+		<GameObject>
+			<name>amb_map_120_rocket_bunker</name>
+			<UUID>f32c33f9-2131-47b0-8c5f-02a5e67924f8</UUID>
+			<flags>0</flags>
+		</GameObject>
+	</GameObjects>
+	<components>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>f32c33f9-2131-47b0-8c5f-02a5e67924f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SquareArea</type>
+			<version>1</version>
+			<component>
+				<UUID>f32c33f9-2131-47b0-8c5f-02a5e67924f8</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Min Bound</name>
+						<value>-1 -1 -1</value>
+					</property>
+					<property>
+						<name>Max Bound</name>
+						<value>135 35 65</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>SoundZone</type>
+			<version>1</version>
+			<component>
+				<UUID>f32c33f9-2131-47b0-8c5f-02a5e67924f8</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Zone Enter Event</name>
+						<value>amb_map_105_germany_bunker_ZoneEnter</value>
+					</property>
+					<property>
+						<name>Zone Exit Event</name>
+						<value>amb_map_105_germany_bunker_ZoneExit</value>
+					</property>
+					<property>
+						<name>Emitter Event</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb</name>
+						<value/>
+					</property>
+					<property>
+						<name>Reverb Level</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Volume Deviation</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Color</name>
+						<value>
+							1 0 0 0.498039
+							<!--BW_String-->
+						</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+	</components>
+</root>

@@ -5,6 +5,24 @@ from gui.goodies.goodie_items import _CLAN_RESERVE_TO_GUI_TYPE
 from gui.shared.event_dispatcher import showStrongholds, closeViewsWithFlags
 from skeletons.gui.goodies import IGoodiesCache
 
+def getStateMachineRegistrators():
+    from gui.impl.lobby.personal_reserves.states import registerStates, registerTransitions
+    return (
+     registerStates, registerTransitions)
+
+
+def getContextMenuHandlers():
+    return ()
+
+
+def getViewSettings():
+    return ()
+
+
+def getBusinessHandlers():
+    return ()
+
+
 @replace_none_kwargs(goodiesCache=IGoodiesCache)
 def boosterActivationFlow(boosterId, goodiesCache=None):
     if boosterId in _CLAN_RESERVE_TO_GUI_TYPE:

@@ -106,7 +106,7 @@
 		</armor>
 		<primaryArmor>armor_6 armor_7 armor_4</primaryArmor>
 		<weight>23550</weight>
-		<maxHealth>1024</maxHealth>
+		<maxHealth>1056</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>180</maxHealth>
 			<maxRegenHealth>120</maxRegenHealth>
@@ -1937,7 +1937,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11500</weight>
-			<maxLoad>48400</maxLoad>
 			<terrainResistance>
 				1 1.1 2.2
 				<!--BW_String-->
@@ -3634,7 +3633,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
-			<maxHealth>256</maxHealth>
+			<maxHealth>264</maxHealth>
 			<rotationSpeed>28</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>140</maxHealth>

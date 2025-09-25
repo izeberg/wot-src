@@ -2,6 +2,7 @@ package net.wg.gui.lobby.missions.data
 {
    import net.wg.data.constants.Errors;
    import net.wg.data.daapi.base.DAAPIDataClass;
+   import net.wg.gui.lobby.userMissions.data.TokenRendererVO;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    import scaleform.clik.data.DataProvider;
    

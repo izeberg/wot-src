@@ -9,6 +9,7 @@ from gui.impl.gen.view_models.views.lobby.crew.sort_dropdown_item_model import S
 from gui.impl.lobby.common.tooltips.extended_text_tooltip import ExtendedTextTooltip
 from gui.impl.lobby.container_views.base.components import ComponentBase
 from gui.impl.lobby.crew.container_vews.skills_training import loadSortingOrderType
+from gui.impl.lobby.crew.crew_helpers import getTankmanCrewAssistOrderSets
 from gui.impl.lobby.crew.crew_helpers.skill_helpers import formatDescription, getSkillParams
 from gui.impl.lobby.crew.crew_helpers.skill_model_setup import skillModelSetup
 from helpers import dependency
@@ -153,7 +154,8 @@ class SkillsListComponent(ComponentBase):
         popularitySet = None
         if wotPlustCtrl.isCrewAssistEnabled():
             sortingType = loadSortingOrderType()
-            hasCommonSet, hasLegendarySet = wotPlustCtrl.hasCrewAssistOrderSets(self.context.tankmanCurrentVehicle, self.context.role)
+            popularitySet = getTankmanCrewAssistOrderSets(self.context.tankman, self.context.role)
+            hasCommonSet, hasLegendarySet = wotPlustCtrl.validateCrewAssistOrderSets(popularitySet)
             if sortingType == SortingTypeEnum.COMMON.value and not hasCommonSet:
                 sortingType = SortingTypeEnum.DEFAULT.value
             if sortingType == SortingTypeEnum.LEGENDARY.value and not hasLegendarySet:
@@ -164,7 +166,6 @@ class SkillsListComponent(ComponentBase):
             else:
                 if sortingType == SortingTypeEnum.LEGENDARY.value:
                     orderSetDataIndex = 1
-                popularitySet = wotPlustCtrl.getCrewAssistOrderSets(self.context.tankmanCurrentVehicle, self.context.role)
                 if orderSetDataIndex != -1:
 
                     def __getSortOrder(orderSet, dataIndex, tankmanSkill):

@@ -6,13 +6,15 @@ from constants import ARENA_BONUS_TYPE, ARENA_GUI_TYPE
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
 from dossiers2.custom.records import DB_ID_TO_RECORD
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
-from gui.Scaleform.daapi.view.lobby.tank_setup.ammunition_setup_vehicle import g_tankSetupVehicle
 from gui.Scaleform.daapi.view.lobby.techtree.techtree_dp import g_techTreeDP
 from gui.Scaleform.daapi.view.lobby.vehicle_compare import cmp_helpers
 from gui.Scaleform.daapi.view.lobby.veh_post_progression.veh_post_progression_vehicle import g_postProgressionVehicle
 from gui.Scaleform.daapi.view.lobby.vehicle_compare.cmp_configurator_vehicle import g_cmpConfiguratorVehicle
 from gui.battle_pass.battle_pass_helpers import getOfferTokenByGift
 from gui.battle_pass.rewards_sort import getRewardsComparator
+from gui.impl import backport
+from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.personal_missions_30.common.enums import ParamTooltipType
 from gui.impl.lobby.easy_tank_equip.easy_tank_equip_vehicle import g_easyTankEquipCopyVehicle
 from gui.server_events import recruit_helper
 from gui.shared.gui_items import GUI_ITEM_TYPE
@@ -22,9 +24,10 @@ from gui.shared.items_parameters.formatters import NO_BONUS_SIMPLIFIED_SCHEME
 from gui.shared.tooltips import TOOLTIP_COMPONENT
 from gui.shared.utils.requesters.blueprints_requester import getFragmentNationID
 from helpers import dependency
+from personal_missions import PM_BRANCH
 from rent_common import RENT_TYPE_TO_DURATION
 from shared_utils import first
-from skeletons.gui.game_control import IRankedBattlesController, IBattlePassController, IHangarGuiController
+from skeletons.gui.game_control import IRankedBattlesController, IBattlePassController, IHangarGuiController, ILoadoutController
 from skeletons.gui.goodies import IGoodiesCache
 from skeletons.gui.offers import IOffersDataProvider
 from skeletons.gui.server_events import IEventsCache
@@ -470,8 +473,9 @@ class HangarCarouselContext(CarouselContext):
 
     def getStatsConfiguration(self, item):
         value = super(HangarCarouselContext, self).getStatsConfiguration(item)
-        value.showEarnCrystals = self.__hangarGuiCtrl.checkCurrentCrystalRewards(default=value.showEarnCrystals)
-        value.dailyXP = self.__hangarGuiCtrl.checkCurrentBonusCaps(_CAPS.DAILY_MULTIPLIED_XP, default=value.dailyXP)
+        dynamicEconomics = self.__hangarGuiCtrl.dynamicEconomics
+        value.showEarnCrystals = dynamicEconomics.checkCurrentCrystalRewards(default=value.showEarnCrystals)
+        value.dailyXP = dynamicEconomics.checkCurrentBonusCaps(_CAPS.DAILY_MULTIPLIED_XP, default=value.dailyXP)
         return self.__applyRankedStatsConfiguration(item, value)
 
     def __applyRankedStatsConfiguration(self, item, value):
@@ -499,7 +503,7 @@ class PersonalMissionOperationContext(ToolTipContext):
         super(PersonalMissionOperationContext, self).__init__(TOOLTIP_COMPONENT.HANGAR, fieldsToExclude)
 
     def buildItem(self, tileID):
-        return self._eventsCache.getPersonalMissions().getAllOperations().get(tileID)
+        return self._eventsCache.getPersonalMissions().getAllOperations(branches=PM_BRANCH.ALL).get(tileID)
 
 
 class PersonalMissionCampaignContext(ToolTipContext):
@@ -555,8 +559,12 @@ class HangarParamContext(BaseHangarParamContext):
         super(HangarParamContext, self).__init__(True)
         self.formatters = NO_BONUS_SIMPLIFIED_SCHEME
 
+    def getComparator(self):
+        item = g_currentVehicle.item or g_currentPreviewVehicle.item
+        return params_helper.similarCrewComparator(item)
+
     def buildItem(self, *args, **kwargs):
-        return g_currentVehicle.item
+        return g_currentVehicle.item or g_currentPreviewVehicle.item
 
 
 class PreviewParamContext(HangarParamContext):
@@ -586,19 +594,26 @@ class CmpParamContext(HangarParamContext):
 
 
 class TankSetupParamContext(HangarParamContext):
+    __loadoutController = dependency.descriptor(ILoadoutController)
 
     def __init__(self):
         super(TankSetupParamContext, self).__init__()
         self.formatters = NO_BONUS_SIMPLIFIED_SCHEME
 
     def getComparator(self):
-        return params_helper.similarCrewComparator(g_tankSetupVehicle.item)
+        return params_helper.similarCrewComparator(self.__getItem())
 
     def buildItem(self, *args, **kwargs):
-        return g_tankSetupVehicle.item
+        return self.__getItem()
 
     def getBonusExtractor(self, vehicle, bonuses, paramName):
         return bonus_helper.TankSetupBonusExtractor(vehicle, bonuses, paramName)
+
+    def __getItem(self):
+        if self.__loadoutController.interactor is not None:
+            return self.__loadoutController.interactor.getVehicleAfterInstall()
+        else:
+            return g_currentVehicle.item
 
 
 class PostProgressionParamContext(TankSetupParamContext):
@@ -1385,3 +1400,22 @@ class BattlePassGiftTokenContext(ToolTipContext):
 
     def getParams(self):
         return {'isOfferEnabled': self.__battlePassController.isOfferEnabled() and self.__hasOffer}
+
+
+class PersonalMissionsPointsTooltipContext(ToolTipContext):
+
+    def getParams(self):
+        params = super(PersonalMissionsPointsTooltipContext, self).getParams()
+        params.update({'tooltipType': ParamTooltipType.PM3_POINTS.value, 
+           'params': [], 'resId': R.views.mono.personal_missions_30.tooltips.param_tooltip()})
+        return params
+
+
+class PersonalMissionOperationDisabledTooltipContext(ToolTipContext):
+
+    def getParams(self):
+        params = super(PersonalMissionOperationDisabledTooltipContext, self).getParams()
+        params.update({'tooltipType': ParamTooltipType.CUSTOM_SIMPLE.value, 
+           'params': {'body': backport.text(R.strings.personal_missions_30.campaignSelector.operation.tooltip.locked())}, 
+           'resId': R.views.mono.personal_missions_30.tooltips.param_tooltip()})
+        return params

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_003_BikeNorton/normal/lod2/hv4_003_BikeNorton_08</parent>
+	<extent>30.000000</extent>
+	<visibilityBox>
+		<min>-0.048150 0.002460 -0.268691</min>
+		<max>0.048150 0.120826 0.247783</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_003_BikeNorton/normal/lod1/hv4_003_BikeNorton_08</nodefullVisual>
+</root>

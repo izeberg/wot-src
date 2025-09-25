@@ -28,7 +28,7 @@ package net.wg.gui.lobby.missions.components.detailedView
       
       override protected function getDescTextFieldSize() : int
       {
-         return rendererData.useWideTextField && !rendererData.isCondition ? int(BIG_DESC_WIDTH) : int(SMALL_DESC_WIDTH);
+         return !!rendererData.useWideTextField ? int(BIG_DESC_WIDTH) : int(SMALL_DESC_WIDTH);
       }
    }
 }

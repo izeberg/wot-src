@@ -248,11 +248,6 @@ msgstr ""
 "Купить и установить %(kind)s «%(name)s» на текущую машину за %(price)s "
 "кредитов?"
 
-msgid "buyInstallConfirmation/notEnoughWeight"
-msgstr ""
-"{red_Open}Недостаточно грузоподъёмности{red_Close},\n"
-"оборудование будет помещено на Склад."
-
 msgid "buyInstallConfirmation/submit"
 msgstr "Купить"
 
@@ -770,6 +765,12 @@ msgstr "Итого:"
 msgid "confirmUnlock/cancel"
 msgstr "Нет"
 
+msgid "confirmUnlock/content/currencyBlock/text"
+msgstr "{{xp}} (включая {{freeXP}})?"
+
+msgid "confirmUnlock/content/researchItem/text"
+msgstr "Исследовать {{items}} за"
+
 msgid "confirmUnlock/item/message"
 msgstr ""
 "Вы действительно хотите исследовать %(typeString)s %(userString)s за "
@@ -979,6 +980,12 @@ msgstr "Продать «%(name)s» за %(price)s%(creditsIcon)s?"
 
 msgid "customizationConfirmSell/title"
 msgstr "Подтверждение продажи"
+
+msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgDays"
+msgstr "каждые %(days)s д"
+
+msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgDaysHours"
+msgstr "каждые %(days)s д %(hours)s ч"
 
 msgid "dailyQuests/dialogConfirmReroll/timeLimitMsgHours"
 msgstr "каждые %(hours)s ч"
@@ -3398,7 +3405,7 @@ msgstr ""
 "все проведённые парные модификации будут отменены."
 
 msgid "vehicleSellDialog/price/sign/add"
-msgstr "+ "
+msgstr "+"
 
 msgid "vehicleSellDialog/proffit"
 msgstr "Получено:"

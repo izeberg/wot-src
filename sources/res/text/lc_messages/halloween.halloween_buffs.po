@@ -1,0 +1,240 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-16 10:00+0300\n"
+"PO-Revision-Date: 2023-03-16 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "buffs/buffAccuracy/body"
+msgstr ""
+"Уменьшает разброс при движении, а также поворотах корпуса и вращении башни "
+"на %(generalValue)s%%."
+
+msgid "buffs/buffAccuracy/description/1"
+msgstr ""
+"%(value)s от разброса при движении\n"
+"и поворотах машины."
+
+msgid "buffs/buffAccuracy/description/tab"
+msgstr ""
+"Уменьшает разброс\n"
+"орудия"
+
+msgid "buffs/buffAccuracy/description/tabTooltip"
+msgstr "Уменьшает разброс при движении, поворотах корпуса и вращении башни."
+
+msgid "buffs/buffAccuracy/header"
+msgstr "Снайпер"
+
+msgid "buffs/buffAccuracy/value/1"
+msgstr "–%(generalValue)s%%"
+
+msgid "buffs/buffDrainOnShot/body"
+msgstr ""
+"Даёт %(chance)s%%-й шанс восстановить %(heal)s ед. прочности при нанесении "
+"урона противнику выстрелом."
+
+msgid "buffs/buffDrainOnShot/description/1"
+msgstr ""
+"%(value)s к вероятности восстановить прочность\n"
+"при нанесении урона выстрелом."
+
+msgid "buffs/buffDrainOnShot/description/tab"
+msgstr ""
+"Может восстановить прочность\n"
+"при уроне выстрелом"
+
+msgid "buffs/buffDrainOnShot/description/tabTooltip"
+msgstr ""
+"Даёт шанс восстановить прочность машины при нанесении урона противнику "
+"выстрелом."
+
+msgid "buffs/buffDrainOnShot/header"
+msgstr "Укус вампира"
+
+msgid "buffs/buffDrainOnShot/value/1"
+msgstr "+%(chance)s%%"
+
+msgid "buffs/buffEnlargeHealth/body"
+msgstr "Увеличивает прочность машины на %(health)s%%."
+
+msgid "buffs/buffEnlargeHealth/description/1"
+msgstr "%(value)s к прочности машины."
+
+msgid "buffs/buffEnlargeHealth/description/tab"
+msgstr ""
+"Увеличивает прочность\n"
+"машины"
+
+msgid "buffs/buffEnlargeHealth/description/tabTooltip"
+msgstr "Увеличивает прочность машины."
+
+msgid "buffs/buffEnlargeHealth/header"
+msgstr "Прочность"
+
+msgid "buffs/buffEnlargeHealth/value/1"
+msgstr "+%(health)s%%"
+
+msgid "buffs/buffIgniteOnShot/body"
+msgstr ""
+"Повышает вероятность поджечь противника при нанесении урона выстрелом на "
+"%(chance)s%%."
+
+msgid "buffs/buffIgniteOnShot/description/1"
+msgstr ""
+"%(value)s к вероятности поджечь\n"
+"противника."
+
+msgid "buffs/buffIgniteOnShot/description/tab"
+msgstr ""
+"Повышает вероятность\n"
+"поджога"
+
+msgid "buffs/buffIgniteOnShot/description/tabTooltip"
+msgstr ""
+"Повышает вероятность поджечь противника при нанесении урона выстрелом."
+
+msgid "buffs/buffIgniteOnShot/header"
+msgstr "Раскалённая игла"
+
+msgid "buffs/buffIgniteOnShot/value/1"
+msgstr "+%(chance)s%%"
+
+msgid "buffs/buffIncreaseDamage/body"
+msgstr "Увеличивает наносимый урон на %(damageFactor)s%%."
+
+msgid "buffs/buffIncreaseDamage/description/1"
+msgstr "%(value)s к наносимому урону."
+
+msgid "buffs/buffIncreaseDamage/description/tab"
+msgstr ""
+"Увеличивает наносимый\n"
+"урон"
+
+msgid "buffs/buffIncreaseDamage/description/tabTooltip"
+msgstr "Увеличивает наносимый урон."
+
+msgid "buffs/buffIncreaseDamage/header"
+msgstr "Керамический сердечник"
+
+msgid "buffs/buffIncreaseDamage/value/1"
+msgstr "+%(damageFactor)s%%"
+
+msgid "buffs/buffIncreaseRateOfFire/body"
+msgstr "Увеличивает скорость перезарядки на %(reloadTime)s%%."
+
+msgid "buffs/buffIncreaseRateOfFire/description/1"
+msgstr "%(value)s к скорости перезарядки."
+
+msgid "buffs/buffIncreaseRateOfFire/description/tab"
+msgstr ""
+"Увеличивает скорость\n"
+"перезарядки"
+
+msgid "buffs/buffIncreaseRateOfFire/description/tabTooltip"
+msgstr "Увеличивает скорость перезарядки."
+
+msgid "buffs/buffIncreaseRateOfFire/header"
+msgstr "Пулемёт"
+
+msgid "buffs/buffIncreaseRateOfFire/value/1"
+msgstr "+%(reloadTime)s%%"
+
+msgid "buffs/buffInfiniteHeal/body"
+msgstr ""
+"Постепенно восстанавливает прочность машины до максимума.\n"
+"Эффект прерывается при получении урона."
+
+msgid "buffs/buffInfiniteHeal/description/1"
+msgstr ""
+"Постепенно восстанавливает\n"
+"прочность машины."
+
+msgid "buffs/buffInfiniteHeal/description/tab"
+msgstr ""
+"Восстанавливает прочность\n"
+"машины"
+
+msgid "buffs/buffInfiniteHeal/description/tabTooltip"
+msgstr ""
+"Постепенно восстанавливает прочность машины до максимума. Эффект прерывается"
+" при получении урона."
+
+msgid "buffs/buffInfiniteHeal/header"
+msgstr "Регенерация"
+
+msgid "buffs/buffInspiration/body"
+msgstr ""
+"Увеличивает бонус к эффективности всего экипажа на %(crewLevelIncrease)s%%."
+
+msgid "buffs/buffInspiration/description/1"
+msgstr "%(value)s бонус к эффективности экипажа."
+
+msgid "buffs/buffInspiration/description/tab"
+msgstr ""
+"Повышает эффективность\n"
+"экипажа"
+
+msgid "buffs/buffInspiration/description/tabTooltip"
+msgstr "Повышает эффективность экипажа."
+
+msgid "buffs/buffInspiration/header"
+msgstr "Воодушевление"
+
+msgid "buffs/buffInspiration/value/1"
+msgstr "+%(crewLevelIncrease)s%%"
+
+msgid "buffs/buffMobility/body"
+msgstr ""
+"Увеличивает мощность двигателя на %(power)s%% и скорость вращения башни на "
+"%(rotationSpeed)s%%."
+
+msgid "buffs/buffMobility/description/1"
+msgstr "%(value)s к мощности двигателя."
+
+msgid "buffs/buffMobility/description/2"
+msgstr "%(value)s к скорости вращения башни."
+
+msgid "buffs/buffMobility/description/tab"
+msgstr ""
+"Улучшает динамику,\n"
+"ускоряет вращение башни"
+
+msgid "buffs/buffMobility/description/tabTooltip"
+msgstr "Увеличивает мощность двигателя и скорость вращения башни."
+
+msgid "buffs/buffMobility/header"
+msgstr "Мобильность"
+
+msgid "buffs/buffMobility/value/1"
+msgstr "+%(power)s%%"
+
+msgid "buffs/buffMobility/value/2"
+msgstr "+%(rotationSpeed)s%%"
+
+msgid "buffs/buffModulesInvulnerability/body"
+msgstr "Даёт всем модулям машины неуязвимость от любого урона."
+
+msgid "buffs/buffModulesInvulnerability/description/1"
+msgstr ""
+"Даёт всем модулям машины неуязвимость\n"
+"от любого урона."
+
+msgid "buffs/buffModulesInvulnerability/description/tab"
+msgstr ""
+"Защищает модули\n"
+"от повреждений"
+
+msgid "buffs/buffModulesInvulnerability/description/tabTooltip"
+msgstr "Даёт всем модулям машины неуязвимость от любого урона."
+
+msgid "buffs/buffModulesInvulnerability/header"
+msgstr "Неуязвимость модулей"
+
+msgid "notification/moreInformation"
+msgstr "Подробнее"

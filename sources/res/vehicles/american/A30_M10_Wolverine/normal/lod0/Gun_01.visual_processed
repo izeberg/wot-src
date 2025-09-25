@@ -90,10 +90,6 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
@@ -106,10 +102,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 3.50685 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -142,8 +135,25 @@
 						<Texture>vehicles/american/A30_M10_Wolverine/M10_Wolverine_guns_AM.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
+						g_detailParams
+						<matrix>
+							<element>55709082</element>
+							<element>1040200752</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
 					</property>
 				</material>
 				<groupOrigin>0.000086 0.042717 -0.638759</groupOrigin>

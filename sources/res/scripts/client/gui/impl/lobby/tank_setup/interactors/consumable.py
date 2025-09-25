@@ -54,7 +54,7 @@ class ConsumableInteractor(BaseConsumableInteractor):
         self.getItem().consumables.setLayout(*self.getInstalledLayout())
         self._resetInstalledIndices()
         self.onSlotAction(actionType=BaseSetupModel.REVERT_SLOT_ACTION)
-        self.itemUpdated()
+        self.onRevert()
 
     @wg_async
     def applyQuit(self, callback, skipApplyAutoRenewal):

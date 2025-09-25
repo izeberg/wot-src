@@ -9,6 +9,12 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2);\n"
+
+msgid "#PluralForms"
+msgstr ""
+"nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
+"(n%100<10 || n%100>=20) ? 1 : 2);"
 
 msgid "backButton/label"
 msgstr "НАЗАД"
@@ -32,13 +38,13 @@ msgid "filtersTooltip/header/winter"
 msgstr "Зимние карты"
 
 msgid "header/cooldown"
-msgstr "Заменить эту карту можно через %(cooldownEndTime)."
+msgstr "Заменить карту можно через %(cooldownEndTime)."
 
 msgid "header/title"
 msgstr "Исключённые карты"
 
 msgid "mapTile/cooldownTooltipBody"
-msgstr "Снова заменить эту карту можно через определённый промежуток времени."
+msgstr "Снова заменить карту можно через определённый промежуток времени."
 
 msgid "mapTile/cooldownTooltipHeader"
 msgstr "Замена карты недоступна"
@@ -61,23 +67,54 @@ msgstr "Типы карт:"
 msgid "notSelected"
 msgstr "Не выбрана"
 
+msgid "premium"
+msgstr "Танковый премиум"
+
 msgid "slot/disabledTooltipBody"
 msgstr ""
 "Дополнительный слот доступен только при активном Танковом премиум аккаунте "
 "или оформленной подписке WoT Plus."
 
+msgid "slot/disabledTooltipBodyPremium"
+msgstr "Активируйте Танковый премиум аккаунт, чтобы получить доступ."
+
+msgid "slot/disabledTooltipBodyWotplus"
+msgstr "Активируйте подписку WoT Plus, чтобы получить доступ."
+
 msgid "slot/replaceTooltipBody"
 msgstr ""
 "Выберите карту из списка ниже, чтобы заменить её и исключить из Случайных "
-"боёв (для типа «Стандартный бой»)."
+"боёв."
 
 msgid "slot/selectTooltipBody"
-msgstr ""
-"Выберите карту из списка ниже, чтобы исключить её из Случайных боёв (для "
-"типа «Стандартный бой»)."
+msgstr "Выберите карту из списка ниже, чтобы исключить её из Случайных боёв."
 
 msgid "slot/selectTooltipHeader"
 msgstr "Слот открыт"
 
 msgid "totalMapsDisplayed"
 msgstr "Показано карт: %(count)"
+
+msgid "unlock/both"
+msgid_plural "plural/unlock/both"
+msgstr[0] ""
+"Активируйте %(linkPremium), чтобы исключить доп. карту, а также оформите "
+"%(linkWotPlus), чтобы исключить ещё %(mapCount)s."
+msgstr[1] ""
+"Активируйте %(linkPremium), чтобы исключить доп. карту, а также оформите "
+"%(linkWotPlus), чтобы исключить ещё %(mapCount)s."
+
+msgid "unlock/premium"
+msgstr "Активируйте %(linkPremium), чтобы исключить дополнительную карту."
+
+msgid "unlock/wotplus"
+msgid_plural "plural/unlock/wotplus"
+msgstr[0] ""
+"Оформите подписку %(linkWotPlus), чтобы исключить %(mapCount)s "
+"дополнительную карту."
+msgstr[1] ""
+"Оформите подписку %(linkWotPlus), чтобы исключить %(mapCount)s "
+"дополнительные карты."
+
+msgid "wotplus"
+msgstr "WoT Plus"

@@ -3,18 +3,21 @@ from Account import PlayerAccount
 from adisp import adisp_async, adisp_process
 from constants import ARENA_BONUS_TYPE, PREMIUM_TYPE, PlayerSatisfactionRating
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_WARNING
+from frameworks.wulf import WindowLayer
 from gui import SystemMessages
 from gui.battle_results import context, emblems, reusable, stored_sorting
 from gui.battle_results.pbs_helpers.common import pushNoBattleResultsDataMessage
 from gui.battle_results.composer import RegularStatsComposer
-from gui.battle_results.presenters.base_presenter import BaseStatsPresenter
+from gui.battle_results.random_stats_ctrl import RandomBattleResultStatsCtrl
 from gui.battle_results.settings import PREMIUM_STATE
 from gui.shared import event_dispatcher, events, g_eventBus
 from gui.shared.gui_items.processors.common import BattleResultsGetter, PremiumBonusApplier
 from gui.shared.gui_items.processors.player_satisfaction_rating import PlayerSatisfactionRatingProcessor
+from gui.shared.lock_overlays import lockNotificationManager
 from gui.shared.system_factory import collectBattleResultStatsCtrl
 from gui.shared.utils import decorators
 from helpers import dependency
+from skeletons.gui.app_loader import IAppLoader
 from helpers.func_utils import isDeveloperFunc
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.battle_results import IBattleResultsService
@@ -23,9 +26,41 @@ from skeletons.gui.game_control import IWotPlusController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
-if typing.TYPE_CHECKING:
-    from gui.battle_results.stats_ctrl import IBattleResultStatsCtrl
+from gui.battle_results.stats_ctrl import IBattleResultStatsCtrl
+from items import vehicles
 _logger = logging.getLogger(__name__)
+
+class _PostBattleFakeData(object):
+    __itemsCache = dependency.descriptor(IItemsCache)
+
+    def __init__(self):
+        self.defaultPBS = True
+        self.vehicleAndOffsets = False
+        self.vehCameraSmallOffset = 2
+        self.vehCameraMediumOffset = 4
+        self.vehicleName = None
+        return
+
+    def getVehicle(self):
+        result = None
+        if not vehicles.g_list.isVehicleExisting(self.vehicleName):
+            return result
+        else:
+            vehicleType = vehicles.g_cache.vehicle(*vehicles.g_list.getIDsByName(self.vehicleName))
+            if vehicleType:
+                result = self.__itemsCache.items.getVehicleCopyByCD(vehicleType.compactDescr)
+            return result
+
+    def getStatsCtrl(self, battleResults):
+        statsCtrl = RegularStatsComposer(battleResults.reusable)
+        statsCtrl.setResults(battleResults.results, battleResults.reusable)
+        return statsCtrl
+
+    def switchPBS(self):
+        self.defaultPBS ^= True
+
+
+g_pbsFakeData = _PostBattleFakeData()
 
 def createStatsCtrl(reusableInfo):
     bonusType = reusableInfo.common.arenaBonusType
@@ -41,6 +76,7 @@ class BattleResultsService(IBattleResultsService):
     lobbyContext = dependency.descriptor(ILobbyContext)
     sessionProvider = dependency.descriptor(IBattleSessionProvider)
     wotPlusController = dependency.descriptor(IWotPlusController)
+    appLoader = dependency.descriptor(IAppLoader)
     __slots__ = ('__battleResults', '__statsCtrls', '__buy', '__eventsManager', 'onResultPosted',
                  '__appliedAddXPBonus', '__playerSatisfactionRatings')
 
@@ -58,6 +94,8 @@ class BattleResultsService(IBattleResultsService):
         g_eventBus.addListener(events.LobbySimpleEvent.PREMIUM_BOUGHT, self.__onPremiumBought)
 
     def fini(self):
+        if self.appLoader.getApp():
+            self.appLoader.getApp().containerManager.onViewLoaded -= self.__onViewLoaded
         g_eventBus.removeListener(events.GUICommonEvent.LOBBY_VIEW_LOADED, self.__handleLobbyViewLoaded)
         g_eventBus.removeListener(events.LobbySimpleEvent.PREMIUM_BOUGHT, self.__onPremiumBought)
         self.clear()
@@ -136,13 +174,15 @@ class BattleResultsService(IBattleResultsService):
 
     def getResultsVO(self, arenaUniqueID):
         if arenaUniqueID in self.__statsCtrls:
-            found = self.__statsCtrls[arenaUniqueID]
-            vo = found.getVO()
+            statsCtrl = self.__statsCtrls[arenaUniqueID]
+            if self.__isSwitchEnabled(statsCtrl):
+                statsCtrl = g_pbsFakeData.getStatsCtrl(statsCtrl.getResults())
+            vo = statsCtrl.getVO()
         else:
             vo = None
         return vo
 
-    def getPresenter(self, arenaUniqueID):
+    def getStatsCtrl(self, arenaUniqueID):
         if arenaUniqueID not in self.__statsCtrls:
             _logger.error('Missing suitable battle results presenter.')
             return None
@@ -184,6 +224,8 @@ class BattleResultsService(IBattleResultsService):
 
     @adisp_process
     def submitPlayerSatisfactionRating(self, arenaUniqueID, rating):
+        if arenaUniqueID in self.__playerSatisfactionRatings:
+            return
         result = yield PlayerSatisfactionRatingProcessor(arenaUniqueID, rating).request()
         if result and result.userMsg:
             _logger.warning(result.userMsg)
@@ -226,6 +268,9 @@ class BattleResultsService(IBattleResultsService):
         else:
             return
 
+    def notifyBattleResultsPosted(self, arenaUniqueID, needToShowUI=False):
+        self.__notifyBattleResultsPosted(arenaUniqueID, needToShowUI)
+
     def __postStatistics(self, reusableInfo, result):
         playerAccount = BigWorld.player()
         if playerAccount is None or not isinstance(playerAccount, PlayerAccount):
@@ -243,11 +288,13 @@ class BattleResultsService(IBattleResultsService):
     def __showResults(self, ctx):
         yield self.requestResults(ctx)
 
-    def notifyBattleResultsPosted(self, arenaUniqueID, needToShowUI=False):
-        self.__notifyBattleResultsPosted(arenaUniqueID, needToShowUI)
+    def __isSwitchEnabled(self, statsCtrl):
+        return not g_pbsFakeData.defaultPBS and isinstance(statsCtrl, RandomBattleResultStatsCtrl)
 
     def __notifyBattleResultsPosted(self, arenaUniqueID, needToShowUI=False):
         statsCtrl = self.__statsCtrls[arenaUniqueID]
+        if self.__isSwitchEnabled(statsCtrl):
+            statsCtrl = g_pbsFakeData.getStatsCtrl(statsCtrl.getResults())
         window = None
         if needToShowUI:
             window = statsCtrl.onShowResults(arenaUniqueID)
@@ -255,18 +302,27 @@ class BattleResultsService(IBattleResultsService):
         return window
 
     def __handleLobbyViewLoaded(self, _):
-        battleCtx = self.sessionProvider.getCtx()
-        arenaUniqueID = battleCtx.lastArenaUniqueID
-        arenaBonusType = battleCtx.lastArenaBonusType or ARENA_BONUS_TYPE.UNKNOWN
-        if arenaUniqueID:
-            try:
-                self.__showResults(context.RequestResultsContext(arenaUniqueID, arenaBonusType))
-            except Exception:
-                LOG_CURRENT_EXCEPTION()
+        self.appLoader.getApp().containerManager.onViewLoaded += self.__onViewLoaded
 
-            battleCtx.lastArenaUniqueID = None
-            battleCtx.lastArenaBonusType = None
-        return
+    def __onViewLoaded(self, view):
+        if view.layer != WindowLayer.SUB_VIEW:
+            return
+        else:
+            self.appLoader.getApp().containerManager.onViewLoaded -= self.__onViewLoaded
+            battleCtx = self.sessionProvider.getCtx()
+            arenaUniqueID = battleCtx.lastArenaUniqueID
+            arenaBonusType = battleCtx.lastArenaBonusType or ARENA_BONUS_TYPE.UNKNOWN
+            if arenaUniqueID:
+                try:
+                    lockNotificationManager(True, source=type(self).__name__)
+                    self.__showResults(context.RequestResultsContext(arenaUniqueID, arenaBonusType))
+                    lockNotificationManager(False, source=type(self).__name__, releasePostponed=True)
+                except Exception:
+                    LOG_CURRENT_EXCEPTION()
+
+                battleCtx.lastArenaUniqueID = None
+                battleCtx.lastArenaBonusType = None
+            return
 
     @adisp_async
     @adisp_process
@@ -281,7 +337,7 @@ class BattleResultsService(IBattleResultsService):
             self.__updateReusableInfo(reusableInfo, xpBonusData)
             arenaUniqueID = reusableInfo.arenaUniqueID
             statsCtrl = self.__statsCtrls.get(arenaUniqueID)
-            if statsCtrl is None or not isinstance(statsCtrl, BaseStatsPresenter):
+            if statsCtrl is None or statsCtrl.ctrlImplType == IBattleResultStatsCtrl.CTRL_IMPL_TYPE_FLASH:
                 statsCtrl = createStatsCtrl(reusableInfo)
             statsCtrl.setResults(result, reusableInfo)
             self.__statsCtrls[arenaUniqueID] = statsCtrl

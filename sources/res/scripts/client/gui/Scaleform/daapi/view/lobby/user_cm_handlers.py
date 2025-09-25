@@ -358,8 +358,7 @@ class BaseUserCMHandler(AbstractContextMenuCollectEventsHandler, EventSystemEnti
 
     def _makeAIBotOptions(self):
         return [
-         self._makeItem(USER.VEHICLE_INFO, MENU.contextmenu(USER.VEHICLE_INFO)),
-         self._makeItem(USER.VEHICLE_PREVIEW, MENU.contextmenu(USER.VEHICLE_PREVIEW), optInitData={'enabled': not self.prbDispatcher.getFunctionalState().isNavigationDisabled()})]
+         self._makeItem(USER.VEHICLE_INFO, MENU.contextmenu(USER.VEHICLE_INFO))]
 
 
 def appealIncorrectBehavior(cm):
@@ -383,18 +382,11 @@ def showVehicleInfo(cm):
     shared_events.showVehicleInfo(vehicleCD)
 
 
-def showVehiclePreview(cm):
-    vehicleCD = getValidVehicleCDForNationChange(cm.vehicleCD)
-    shared_events.showVehiclePreview(vehicleCD)
-    shared_events.hideBattleResults()
-
-
 registerLobbyContexMenuHandler(DENUNCIATIONS.INCORRECT_BEHAVIOR, appealIncorrectBehavior)
 registerLobbyContexMenuHandler(DENUNCIATIONS.NOT_FAIR_PLAY, appealNotFairPlay)
 registerLobbyContexMenuHandler(DENUNCIATIONS.FORBIDDEN_NICK, appealForbiddenNick)
 registerLobbyContexMenuHandler(DENUNCIATIONS.BOT, appealBot)
 registerLobbyContexMenuHandler(USER.VEHICLE_INFO, showVehicleInfo)
-registerLobbyContexMenuHandler(USER.VEHICLE_PREVIEW, showVehiclePreview)
 
 class AppealCMHandler(BaseUserCMHandler):
 
@@ -443,15 +435,7 @@ class AppealCMHandler(BaseUserCMHandler):
         if self._vehicleCD > 0:
             vehicle = self.itemsCache.items.getItemByCD(self._vehicleCD)
             if not vehicle.isSecret:
-                isEnabled = True
-                if vehicle.isPreviewAllowed():
-                    isEnabled = not self.prbDispatcher.getFunctionalState().isNavigationDisabled()
-                    action = USER.VEHICLE_PREVIEW
-                    label = MENU.contextmenu(USER.VEHICLE_PREVIEW)
-                else:
-                    action = USER.VEHICLE_INFO
-                    label = MENU.contextmenu(USER.VEHICLE_INFO)
-                options.append(self._makeItem(action, label, optInitData={'enabled': isEnabled}))
+                options.append(self._makeItem(USER.VEHICLE_INFO, MENU.contextmenu(USER.VEHICLE_INFO)))
         return options
 
     def _isAppealsForTopicEnabled(self, topic):
@@ -501,10 +485,8 @@ class UserVehicleCMHandler(AppealCMHandler):
         return options
 
     def _manageVehCompareOptions(self, options):
-        vehicle = self.itemsCache.items.getItemByCD(self._vehicleCD)
-        if self.comparisonBasket.isEnabled() and vehicle is not None and not vehicle.isOnlyForFunRandomBattles:
+        if self.comparisonBasket.isEnabled():
             options.insert(2, self._makeItem(_EXTENDED_OPT_IDS.VEHICLE_COMPARE, MENU.contextmenu(_EXTENDED_OPT_IDS.VEHICLE_COMPARE), {'enabled': self.comparisonBasket.isReadyToAdd(self.itemsCache.items.getItemByCD(self._vehicleCD))}))
-        return
 
 
 class CustomUserCMHandler(BaseUserCMHandler):

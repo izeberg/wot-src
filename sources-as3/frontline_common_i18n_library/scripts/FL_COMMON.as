@@ -5,22 +5,6 @@ package
       
       public static const DAY:String = "#frontline.fl_common:day";
       
-      public static const TAB_INFO_NAME:String = "#frontline.fl_common:tab/info/name";
-      
-      public static const TAB_INFO_DESCRIPTION:String = "#frontline.fl_common:tab/info/description";
-      
-      public static const TAB_PROGRESS_NAME:String = "#frontline.fl_common:tab/progress/name";
-      
-      public static const TAB_PROGRESS_DESCRIPTION:String = "#frontline.fl_common:tab/progress/description";
-      
-      public static const TAB_SKILLS_NAME:String = "#frontline.fl_common:tab/skills/name";
-      
-      public static const TAB_SKILLS_DESCRIPTION:String = "#frontline.fl_common:tab/skills/description";
-      
-      public static const TAB_REWARDS_NAME:String = "#frontline.fl_common:tab/rewards/name";
-      
-      public static const TAB_REWARDS_DESCRIPTION:String = "#frontline.fl_common:tab/rewards/description";
-      
       public static const BUTTON_CLOSE:String = "#frontline.fl_common:button/close";
       
       public static const BUTTON_BACK:String = "#frontline.fl_common:button/back";
@@ -63,7 +47,9 @@ package
       
       public static const BATTLETYPE_SHORTDESCRIPTION_RANDOM:String = "#frontline.fl_common:battleType/shortDescription/random";
       
-      public static const AMMUNITIONSETUP_BTN_INFO_LABEL:String = "#frontline.fl_common:ammunitionSetup/btn/info/label";
+      public static const WIDGET_EVENTSTARTSOON:String = "#frontline.fl_common:widget/eventStartSoon";
+      
+      public static const WIDGET_MAXTIER:String = "#frontline.fl_common:widget/maxTier";
        
       
       public function FL_COMMON()

@@ -2130,7 +2130,6 @@
 				<rightTrack>30</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>59560</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.4
 				<!--BW_String-->
@@ -3953,12 +3952,9 @@
 			<maxHealth>370</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>185</maxHealth>
+				<maxRegenHealth>93</maxRegenHealth>
+				<repairCost>10</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>

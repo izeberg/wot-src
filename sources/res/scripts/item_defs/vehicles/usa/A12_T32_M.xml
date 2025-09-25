@@ -67,11 +67,15 @@
 		</deluxeAdditionalInvisibilityDevice>
 	</optDevsOverrides>
 	<repairCost>
-		7.92
+		5.0
 		<!--BW_String-->
 	</repairCost>
+	<premiumVehicleXPFactor>
+		0.1
+		<!--BW_String-->
+	</premiumVehicleXPFactor>
 	<crewXpFactor>
-		1.0
+		1.5
 		<!--BW_String-->
 	</crewXpFactor>
 	<camouflage>
@@ -1451,14 +1455,13 @@
 			<userString>#usa_vehicles:T84E3A_M</userString>
 			<tags/>
 			<level>8</level>
-			<price>38100</price>
+			<price>30000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<leftTrack>25</leftTrack>
 				<rightTrack>25</rightTrack>
 			</armor>
 			<weight>12000</weight>
-			<maxLoad>60500</maxLoad>
 			<terrainResistance>
 				1.1 1.5 2.7
 				<!--BW_String-->
@@ -3880,8 +3883,8 @@
 		<T119_M>
 			<userString>#usa_vehicles:T119_M</userString>
 			<tags/>
-			<level>9</level>
-			<price>50500</price>
+			<level>8</level>
+			<price>30000</price>
 			<notInShop>true</notInShop>
 			<armor>
 				<armor_1>298</armor_1>
@@ -3941,7 +3944,10 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>11</reloadTime>
+					<reloadTime>
+						10.6
+						<!--BW_String-->
+					</reloadTime>
 					<shotDispersionRadius>
 						0.33
 						<!--BW_String-->

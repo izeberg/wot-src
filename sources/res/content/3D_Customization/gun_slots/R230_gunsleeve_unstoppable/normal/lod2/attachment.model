@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>content/3D_Customization/gun_slots/R230_gunsleeve_unstoppable/normal/lod2/attachment</nodefullVisual>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/R230_gunsleeve_unstoppable/normal/lod3/attachment</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.247640 -0.401611 -2.117776</min>
+		<max>0.184709 0.177504 1.928914</max>
+	</visibilityBox>
+</root>

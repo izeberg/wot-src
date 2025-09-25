@@ -1,8 +1,8 @@
 import typing
 from epic_constants import EPIC_SKILL_TOKEN_NAME, EPIC_SELECT_BONUS_NAME
-from gui.server_events.bonuses import SimpleBonus
+from gui.server_events.bonuses import IntegralBonus, SimpleBonus
 
-class FrontlineSkillBonus(SimpleBonus):
+class FrontlineSkillBonus(IntegralBonus):
 
     def __init__(self, value, ctx=None):
         super(FrontlineSkillBonus, self).__init__(EPIC_SKILL_TOKEN_NAME, value, ctx=ctx)

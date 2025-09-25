@@ -4,13 +4,13 @@ from battle_pass_common import CurrencyBP
 from constants import PREMIUM_ENTITLEMENTS
 from gui import GUI_NATIONS
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
+from gui.customization.shared import getSingleVehicleForCustomization
 from gui.impl import backport
 from gui.impl.backport import TooltipData, createTooltipData
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.lootbox_system.bonus_model import BonusModel, BonusRarity, VehicleType
 from gui.lootbox_system.base.awards_manager import AwardsManager
 from gui.lootbox_system.base.common import LOOTBOX_RANDOM_NATIONAL_BLUEPRINT, LOOTBOX_RANDOM_NATIONAL_BROCHURE, LOOTBOX_RANDOM_NATIONAL_CREW_BOOK, LOOTBOX_RANDOM_NATIONAL_GUIDE, LOOTBOX_COMPENSATION_BONUS
-from gui.lootbox_system.base.utils import getSingleVehicleCDForCustomization
 from gui.server_events.awards_formatters import BATTLE_BONUS_X5_TOKEN, CREW_BONUS_X3_TOKEN
 from gui.server_events.bonuses import BlueprintsBonusSubtypes, LootBoxRandomNationalBonus, PlusPremiumDaysBonus, VehiclesBonus, _BONUSES, LootBoxTokensBonus
 from gui.server_events.recruit_helper import getRecruitInfo
@@ -559,7 +559,7 @@ class LootBoxSpecialRandomBonusUIPacker(SimpleBonusUIPacker):
     @classmethod
     def _getContentId(cls, bonus):
         return [
-         R.views.lobby.lootbox_system.tooltips.RandomNationalBonusTooltipView()]
+         R.views.mono.lootbox.tooltips.random_national_bonus()]
 
     @classmethod
     def _getToolTip(cls, bonus):
@@ -677,7 +677,7 @@ class LootBoxCustomizationsBonusUIPacker(BaseBonusUIPacker):
         else:
             if itemName == GUI_ITEM_TYPE_NAMES[GUI_ITEM_TYPE.STYLE]:
                 description = backport.text(R.strings.lootbox_system.bonuses.description.style())
-                vehicleCD = getSingleVehicleCDForCustomization(custItem)
+                vehicleCD = getSingleVehicleForCustomization(custItem)
                 model.setIsInHangar(vehicleCD is not None and custItem.fullInventoryCount() > 0)
                 if custItem.is3D:
                     itemName = 'style_3d'
@@ -706,7 +706,7 @@ class LootBoxCustomizationsBonusUIPacker(BaseBonusUIPacker):
             specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM_AWARD
             specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD)
             if itemCustomization.itemTypeName in ('camouflage', 'style'):
-                vehicle = getSingleVehicleCDForCustomization(itemCustomization)
+                vehicle = getSingleVehicleForCustomization(itemCustomization)
                 if vehicle is not None:
                     specialAlias = TOOLTIPS_CONSTANTS.TECH_CUSTOMIZATION_ITEM
                     specialArgs = CustomizationTooltipContext(itemCD=itemCustomization.intCD, vehicleIntCD=vehicle)
@@ -864,7 +864,7 @@ class LootBoxesLootBoxBonusUIPacker(SimpleBonusUIPacker):
 
     @classmethod
     def _getContentId(cls, _):
-        return [R.views.lobby.lootbox_system.tooltips.BoxTooltip()]
+        return [R.views.mono.lootbox.tooltips.box_tooltip()]
 
 
 class LootBoxTokenBonusUIPacker(TokenBonusUIPacker):
@@ -1120,7 +1120,7 @@ class LootBoxCompensationPacker(SimpleBonusUIPacker):
 
     @classmethod
     def _getContentId(cls, bonus):
-        return [R.views.lobby.lootbox_system.tooltips.BoxCompensationTooltip()]
+        return [R.views.mono.lootbox.tooltips.box_compensation()]
 
     @classmethod
     def _getToolTip(cls, bonus):

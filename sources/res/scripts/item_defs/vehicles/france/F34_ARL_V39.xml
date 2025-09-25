@@ -107,7 +107,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>13900</weight>
-		<maxHealth>544</maxHealth>
+		<maxHealth>560</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -2863,14 +2863,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_ARL_V39>
-			<userString>#france_vehicles:Chassis_ARL_V39</userString>
+		<Chassis_F34_ARL_V39>
+			<userString>#france_vehicles:Chassis_F34_ARL_V39</userString>
 			<tags/>
 			<level>5</level>
 			<price>9100</price>
 			<unlocks>
 				<chassis>
-					Chassis_ARL_V39_2
+					Chassis_F34_ARL_V39_2
 					<cost>5375</cost>
 				</chassis>
 			</unlocks>
@@ -2879,21 +2879,20 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8500</weight>
-			<maxLoad>25000</maxLoad>
 			<terrainResistance>
-				1.5 1.7 2.8
+				1.4 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>22</rotationSpeed>
+			<rotationSpeed>30</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.24
+					0.2
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.24
+					0.2
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -5927,9 +5926,9 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_ARL_V39>
-		<Chassis_ARL_V39_2>
-			<userString>#france_vehicles:Chassis_ARL_V39_2</userString>
+		</Chassis_F34_ARL_V39>
+		<Chassis_F34_ARL_V39_2>
+			<userString>#france_vehicles:Chassis_F34_ARL_V39_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>16890</price>
@@ -5938,21 +5937,20 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8500</weight>
-			<maxLoad>28400</maxLoad>
 			<terrainResistance>
 				1.4 1.5 2.5
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>24</rotationSpeed>
+			<rotationSpeed>34</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					0.22
+					0.18
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					0.22
+					0.18
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -8986,11 +8984,11 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_ARL_V39_2>
+		</Chassis_F34_ARL_V39_2>
 	</chassis>
 	<turrets0>
-		<Turret_1_ARL_V39>
-			<userString>#france_vehicles:Turret_1_ARL_V39</userString>
+		<Turret_1_F34_ARL_V39>
+			<userString>#france_vehicles:Turret_1_F34_ARL_V39</userString>
 			<tags>cannotDetach</tags>
 			<level>6</level>
 			<price>120</price>
@@ -8999,7 +8997,7 @@
 				<armor_1>20</armor_1>
 			</armor>
 			<weight>500</weight>
-			<maxHealth>136</maxHealth>
+			<maxHealth>140</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>100</maxHealth>
@@ -9019,431 +9017,14 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_75mm_APX>
-					shared
-					<maxAmmo>300</maxAmmo>
-					<unlocks>
-						<gun>
-							_75mm_Long_44_AC
-							<cost>2700</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							20
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_11>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_11>
-						<gun>20</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.45
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.5
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -30 1 -30</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<turretYawLimits>-7 7</turretYawLimits>
-					<models>
-						<undamaged>vehicles/french/F34_ARL_V39/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/french/F34_ARL_V39/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/french/F34_ARL_V39/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/french/F34_ARL_V39/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/french/F34_ARL_V39/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000011 -0.000004 0.75469
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.199578 0.199578
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000011 -0.000004 0.75469
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.000022 -0.000008 1.29221
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.000022 -0.000008 1.59221
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.097 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.3
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<density>
-							137.085 137.146
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_APX>
-				<_75mm_Long_44_AC>
-					shared
-					<maxAmmo>240</maxAmmo>
-					<unlocks>
-						<gun>
-							Canon_de_105_mle_1930_Schneider_AC
-							<cost>7800</cost>
-						</gun>
-						<gun>
-							_90mm_canon_DCA_30_CA
-							<cost>9300</cost>
-						</gun>
-					</unlocks>
-					<armor>
-						<armor_1>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							20
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_11>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_11>
-						<gun>20</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.41
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						3.5
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>3</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.26
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -30 1 -30</minPitch>
-						<maxPitch>0 10 1 10</maxPitch>
-					</pitchLimits>
-					<turretYawLimits>-7 7</turretYawLimits>
-					<models>
-						<undamaged>vehicles/french/F34_ARL_V39/normal/lod0/Gun_02.model</undamaged>
-						<destroyed>vehicles/french/F34_ARL_V39/crash/lod0/Gun_02.model</destroyed>
-						<exploded>vehicles/french/F34_ARL_V39/crash/lod0/Gun_02.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/french/F34_ARL_V39/collision/Gun_02.model</collisionModelServer>
-						<collisionModelClient>vehicles/french/F34_ARL_V39/collision_client/Gun_02.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_medium</effects>
-					<reloadEffect>reload50_75</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								-0.000011 0.000009 1.22219
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.199589 0.19959
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								-0.000011 0.000009 1.22219
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								-0.000022 0.000001 1.85351
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								-0.000022 0.000001 2.20951
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.09 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.356
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<density>
-							121.985 123.306
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_75mm_Long_44_AC>
-				<Canon_de_105_mle_1930_Schneider_AC>
-					shared
-					<maxAmmo>95</maxAmmo>
-					<armor>
-						<armor_1>
-							60
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_1>
-						<armor_2>
-							20
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_11>
-							0
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_11>
-						<gun>40</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.39
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<reloadTime>
-						9.6
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.14
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							3.5
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.209
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<pitchLimits>
-						<minPitch>0 -18 1 -18</minPitch>
-						<maxPitch>0 6 1 6</maxPitch>
-					</pitchLimits>
-					<turretYawLimits>-7 7</turretYawLimits>
-					<models>
-						<undamaged>vehicles/french/F34_ARL_V39/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/french/F34_ARL_V39/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/french/F34_ARL_V39/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/french/F34_ARL_V39/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/french/F34_ARL_V39/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_large</effects>
-					<reloadEffect>reload85_107</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>
-								0.000011 0.000024 1.83199
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.19978 0.199781
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>
-								0.000011 0.000024 1.83199
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>insigniaOnGun</slotType>
-							<slotId>49000</slotId>
-							<rayStart>
-								0.00002 0.000055 2.88474
-								<!--BW_String-->
-							</rayStart>
-							<rayEnd>
-								0.00002 0.000055 3.53574
-								<!--BW_String-->
-							</rayEnd>
-							<rayUp>
-								0.114 0 0
-								<!--BW_String-->
-							</rayUp>
-							<size>
-								0.651
-								<!--BW_String-->
-							</size>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.895 0.895 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							125.456 129.859
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</Canon_de_105_mle_1930_Schneider_AC>
 				<_90mm_canon_DCA_30_CA>
 					shared
 					<maxAmmo>120</maxAmmo>
 					<unlocks>
 						<gun>
-							_90mm_canon_DCA_45_AC
+							_90mm_AC_DCA_45_V39
 							<cost>18500</cost>
 						</gun>
-						<vehicle>
-							F35_AMX_AC_Mle1946
-							<cost>58500</cost>
-						</vehicle>
 					</unlocks>
 					<armor>
 						<armor_1>
@@ -9461,13 +9042,10 @@
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.38
+						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						7.1
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>7</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.12
@@ -9576,9 +9154,15 @@
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
 				</_90mm_canon_DCA_30_CA>
-				<_90mm_canon_DCA_45_AC>
+				<_90mm_AC_DCA_45_V39>
 					shared
 					<maxAmmo>80</maxAmmo>
+					<unlocks>
+						<vehicle>
+							F35_AMX_AC_Mle1946
+							<cost>58500</cost>
+						</vehicle>
+					</unlocks>
 					<armor>
 						<armor_1>
 							60
@@ -9598,25 +9182,19 @@
 						0.36
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						7.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>7</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>4</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>
-						2.1
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.225
 						<!--BW_String-->
@@ -9709,7 +9287,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_90mm_canon_DCA_45_AC>
+				</_90mm_AC_DCA_45_V39>
 			</guns>
 			<models>
 				<undamaged>vehicles/french/F34_ARL_V39/normal/lod0/Turret_01.model</undamaged>
@@ -9732,86 +9310,40 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</Turret_1_ARL_V39>
+		</Turret_1_F34_ARL_V39>
 	</turrets0>
 	<engines>
-		<Renault_T12>
+		<Renault_T12_V39>
 			shared
 			<unlocks>
 				<engine>
-					Renault_T14
+					Renault_T14_V39
 					<cost>1950</cost>
 				</engine>
 			</unlocks>
-		</Renault_T12>
-		<Renault_T14>shared</Renault_T14>
+		</Renault_T12_V39>
+		<Renault_T14_V39>shared</Renault_T14_V39>
 	</engines>
 	<fuelTanks>
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<ER_51>
-			shared
-			<unlocks>
-				<radio>
-					ER_53
-					<cost>610</cost>
-				</radio>
-			</unlocks>
-		</ER_51>
-		<ER_53>
-			shared
-			<unlocks>
-				<radio>
-					ER_55
-					<cost>7300</cost>
-				</radio>
-			</unlocks>
-		</ER_53>
 		<ER_55>shared</ER_55>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Renault_T12>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
+				<Renault_T12_V39>
+					<smplEnginePower>440</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
-				</Renault_T12>
-				<Renault_T14>
-					<smplEnginePower>
-						475.7765
-						<!--BW_String-->
-					</smplEnginePower>
+				</Renault_T12_V39>
+				<Renault_T14_V39>
+					<smplEnginePower>500</smplEnginePower>
 					<smplFwMaxSpeed>45</smplFwMaxSpeed>
-				</Renault_T14>
+				</Renault_T14_V39>
 			</engines>
 			<chassis>
-				<Chassis_ARL_V39>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.2254
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.13685
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Chassis_ARL_V39>
-				<Chassis_ARL_V39_2>
+				<Chassis_F34_ARL_V39>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -9832,7 +9364,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_ARL_V39_2>
+				</Chassis_F34_ARL_V39>
+				<Chassis_F34_ARL_V39_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.20125
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.12075
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_F34_ARL_V39_2>
 			</chassis>
 		</detailed>
 	</physics>

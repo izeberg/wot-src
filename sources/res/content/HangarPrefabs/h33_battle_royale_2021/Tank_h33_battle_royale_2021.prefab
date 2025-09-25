@@ -101,7 +101,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 1.5 0
+							0 0.525 1
 							<!--BW_String-->
 						</value>
 					</property>
@@ -122,7 +122,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							-4.07037 0.784402 -7.98854
+							-4.50982 1.14937 -8.85102
 							<!--BW_String-->
 						</value>
 					</property>
@@ -133,7 +133,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.0872665 0.471239 0
+							0.115192 0.471239 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -146,7 +146,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							4.35848 4.5 6.46171
+							4.17233 5.03274 6.18573
 							<!--BW_String-->
 						</value>
 					</property>
@@ -157,7 +157,7 @@
 					<property>
 						<name>Rotation</name>
 						<value>
-							0.523599 -2.54818 -1.72064e-08
+							0.593412 -2.54818 3.59481e-08
 							<!--BW_String-->
 						</value>
 					</property>
@@ -170,7 +170,7 @@
 					<property>
 						<name>Position</name>
 						<value>
-							0 1.5 0
+							0 1.6 0
 							<!--BW_String-->
 						</value>
 					</property>
@@ -272,7 +272,7 @@
 					</property>
 					<property>
 						<name>DistLimits</name>
-						<value>6 9</value>
+						<value>6 10</value>
 					</property>
 					<property>
 						<name>StartYaw</name>
@@ -280,11 +280,14 @@
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-5</value>
+						<value>
+							-6.6
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>StartDist</name>
-						<value>9</value>
+						<value>10</value>
 					</property>
 				</config>
 			</component>
@@ -302,7 +305,7 @@
 					</property>
 					<property>
 						<name>PitchLimits</name>
-						<value>-70 -30</value>
+						<value>-70 -34</value>
 					</property>
 					<property>
 						<name>DistLimits</name>
@@ -317,7 +320,7 @@
 					</property>
 					<property>
 						<name>StartPitch</name>
-						<value>-30</value>
+						<value>-34</value>
 					</property>
 					<property>
 						<name>StartDist</name>
@@ -414,7 +417,7 @@
 			<version>1</version>
 			<component>
 				<UUID>052e0c98-473d-4168-a55a-3344bd1e682f</UUID>
-				<flags>3</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>ChangeStartParams</name>
@@ -428,7 +431,7 @@
 			</component>
 			<component>
 				<UUID>9a9e079a-0912-3615-bf1f-34d37855dc15</UUID>
-				<flags>3</flags>
+				<flags>2</flags>
 				<config>
 					<property>
 						<name>ChangeStartParams</name>

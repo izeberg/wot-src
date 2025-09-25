@@ -146,7 +146,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_10</primaryArmor>
 		<weight>10533</weight>
-		<maxHealth>760</maxHealth>
+		<maxHealth>960</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>220</maxHealth>
 			<maxRegenHealth>150</maxRegenHealth>
@@ -1578,7 +1578,7 @@
 	</hull>
 	<chassis>
 		<Chassis_M41_Bulldog_2_FL>
-			<userString>#usa_vehicles:Chassis_M41_Bulldog_2</userString>
+			<userString>#usa_vehicles:Chassis_A97_M41_Bulldog_2</userString>
 			<tags/>
 			<level>8</level>
 			<price>33500</price>
@@ -1588,14 +1588,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>6000</weight>
-			<maxLoad>26000</maxLoad>
 			<terrainResistance>
 				0.5 0.6 1.1
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>28000</brakeForce>
 			<rotationIsAroundCenter>true</rotationIsAroundCenter>
-			<rotationSpeed>56</rotationSpeed>
+			<rotationSpeed>65</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.12
@@ -3151,7 +3150,7 @@
 	</chassis>
 	<turrets0>
 		<Turret_2_M41_Bulldog_FL>
-			<userString>#usa_vehicles:Turret_2_M41_Bulldog</userString>
+			<userString>#usa_vehicles:Turret_2_A97_M41_Bulldog</userString>
 			<tags/>
 			<level>8</level>
 			<price>34050</price>
@@ -3283,6 +3282,20 @@
 						1.7
 						<!--BW_String-->
 					</aimingTime>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							3.0
+							<!--BW_String-->
+						</afterShot>
+						<turretRotation>
+							0.06
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/american/A97_M41_Bulldog/normal/lod0/Gun_05.model</undamaged>
 						<destroyed>vehicles/american/A97_M41_Bulldog/crash/lod0/Gun_05.model</destroyed>

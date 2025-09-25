@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_2/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.999888 -0.583905 -4.201032</min>
+		<max>2.004416 0.703879 3.754205</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/poland/Pl15_60TP_Lewandowskiego_CFE_A/_skins/Pl15_60TP_Lewandowskiego_2025_OSD_3Dst_2/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+</root>

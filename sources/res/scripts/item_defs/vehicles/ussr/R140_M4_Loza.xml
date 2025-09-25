@@ -2217,7 +2217,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8300</weight>
-			<maxLoad>38000</maxLoad>
 			<terrainResistance>
 				0.9 1 1.5
 				<!--BW_String-->
@@ -4400,10 +4399,7 @@
 						3.3
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						2.3
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>2</aimingTime>
 					<invisibilityFactorAtShot>
 						0.247
 						<!--BW_String-->
@@ -4413,6 +4409,21 @@
 						<maxPitch>0 10 1 10</maxPitch>
 					</pitchLimits>
 					<turretYawLimits>-180 180</turretYawLimits>
+					<shotDispersionFactors>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>3</afterShot>
+						<turretRotation>
+							0.12
+							<!--BW_String-->
+						</turretRotation>
+					</shotDispersionFactors>
+					<shotDispersionRadius>
+						0.4
+						<!--BW_String-->
+					</shotDispersionRadius>
 					<models>
 						<undamaged>vehicles/russian/R140_M4_Loza/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R140_M4_Loza/crash/lod0/Gun_01.model</destroyed>
@@ -5313,10 +5324,7 @@
 		<detailed>
 			<engines>
 				<GMC_6046>
-					<smplEnginePower>
-						433.4853
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>500</smplEnginePower>
 					<smplFwMaxSpeed>
 						51.4
 						<!--BW_String-->

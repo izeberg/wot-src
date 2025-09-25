@@ -60,3 +60,4 @@ class CurrenciesConstants(object):
     MULTY_XP = 'multyXp'
     MULTY_FREE_XP = 'multyFreeXp'
     TMEN_XP = 'tankmenXP'
+    COMMON_CURRENCY = 'commonCurrency'

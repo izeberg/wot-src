@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from battle_modifiers.gui.impl.gen.view_models.views.lobby.feature.limit_model import LimitModel
 
 class ModType(Enum):
@@ -54,6 +53,13 @@ class ModType(Enum):
     INVISIBILITY_FACTOR_AT_SHOT = 'invisibilityFactorAtShot'
     VEHICLE_AOI_RADIUS = 'vehicleAoIRadius'
     DEVICE_DAMAGE_FIRST = 'deviceDamageFirst'
+    AMMO_BAY_HEALTH = 'ammoBayHealth'
+    ENGINE_HEALTH = 'engineHealth'
+    FUEL_TANK_HEALTH = 'fuelTankHealth'
+    TURRET_ROTATOR_HEALTH = 'turretRotatorHealth'
+    SURVEYING_DEVICE_HEALTH = 'surveyingDeviceHealth'
+    CHASSIS_HEALTH = 'chassisHealth'
+    GUN_HEALTH = 'gunHealth'
 
 
 class ModPhysType(Enum):

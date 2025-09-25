@@ -1,17 +1,16 @@
 package net.wg.gui.lobby.vehicleCompare
 {
    import flash.display.BitmapData;
-   import flash.display.InteractiveObject;
    import flash.display.Sprite;
    import net.wg.data.constants.Linkages;
    import net.wg.data.constants.generated.CONTEXT_MENU_HANDLER_TYPE;
    import net.wg.gui.events.LobbyEvent;
+   import net.wg.gui.lobby.vehicleCompare.controls.view.VehCompareHeaderBackground;
    import net.wg.gui.lobby.vehicleCompare.controls.view.VehCompareMainPanel;
    import net.wg.gui.lobby.vehicleCompare.controls.view.VehCompareTopPanel;
    import net.wg.gui.lobby.vehicleCompare.controls.view.VehParamsListDataProvider;
    import net.wg.gui.lobby.vehicleCompare.data.VehCompareDataProvider;
    import net.wg.gui.lobby.vehicleCompare.data.VehCompareParamsDeltaVO;
-   import net.wg.gui.lobby.vehicleCompare.data.VehCompareStaticDataVO;
    import net.wg.gui.lobby.vehicleCompare.data.VehCompareVehicleVO;
    import net.wg.gui.lobby.vehicleCompare.events.VehCompareEvent;
    import net.wg.gui.lobby.vehicleCompare.events.VehCompareScrollEvent;
@@ -19,21 +18,23 @@ package net.wg.gui.lobby.vehicleCompare
    import net.wg.gui.lobby.vehicleCompare.events.VehCompareVehicleRendererEvent;
    import net.wg.gui.lobby.vehicleCompare.interfaces.IMainPanel;
    import net.wg.gui.lobby.vehicleCompare.interfaces.ITopPanel;
-   import net.wg.gui.lobby.vehicleCompare.interfaces.IVehCompareViewHeader;
    import net.wg.infrastructure.base.meta.IVehicleCompareViewMeta;
    import net.wg.infrastructure.base.meta.impl.VehicleCompareViewMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.interfaces.IDataProvider;
    
-   public class VehicleCompareView extends VehicleCompareViewMeta implements IVehicleCompareViewMeta
+   public class VehicleCompareView extends VehicleCompareViewMeta implements IVehicleCompareViewMeta, IInnerView
    {
       
       private static const DELTA_DATA_INV:String = "DeltaDataInv";
       
       private static const BOTTOM_PANEL_HEIGHT:int = 36;
+      
+      private static const HEADER_LIP_Y:int = 99;
        
       
-      public var header:IVehCompareViewHeader = null;
+      public var header:VehCompareHeaderBackground = null;
       
       public var topPanel:ITopPanel = null;
       
@@ -54,16 +55,10 @@ package net.wg.gui.lobby.vehicleCompare
          super();
       }
       
-      override protected function setStaticData(param1:VehCompareStaticDataVO) : void
-      {
-         this.header.update(param1.header);
-      }
-      
       override protected function configUI() : void
       {
          super.configUI();
          App.stage.dispatchEvent(new LobbyEvent(LobbyEvent.REGISTER_DRAGGING));
-         addEventListener(VehCompareEvent.BACK_CLICK,this.onBackClickHandler);
          addEventListener(VehCompareVehParamRendererEvent.PARAM_MOUSE_OVER,this.onParamMouseOverHandler);
          this.mainPanel.addEventListener(VehCompareScrollEvent.SCROLL_CHANGED,this.onMainPanelScrollChangedHandler);
          this.mainPanel.addEventListener(VehCompareVehicleRendererEvent.GO_TO_PREVIEW_CLICK,this.onPanelGoToPreviewClickHandler);
@@ -84,7 +79,6 @@ package net.wg.gui.lobby.vehicleCompare
       override protected function onDispose() : void
       {
          App.stage.dispatchEvent(new LobbyEvent(LobbyEvent.UNREGISTER_DRAGGING));
-         removeEventListener(VehCompareEvent.BACK_CLICK,this.onBackClickHandler);
          removeEventListener(VehCompareVehParamRendererEvent.PARAM_MOUSE_OVER,this.onParamMouseOverHandler);
          this._bgBitmapData.dispose();
          this._bgBitmapData = null;
@@ -121,12 +115,14 @@ package net.wg.gui.lobby.vehicleCompare
          super.draw();
          if(isInvalid(InvalidationType.SIZE))
          {
+            this.header.y = _topOffset - HEADER_LIP_Y;
             this.header.width = width;
+            this.topPanel.y = _topOffset;
             this.topPanel.width = width;
             this.topPanel.height = height;
             this.mainPanel.width = width;
             this.mainPanel.y = this.topPanel.y + TOP_PANEL_HEIGHT;
-            this.mainPanel.height = height - this.mainPanel.y;
+            this.mainPanel.height = height - this.mainPanel.y - _bottomOffset;
             this.updateBgSize();
          }
          if(isInvalid(InvalidationType.DATA))
@@ -168,11 +164,6 @@ package net.wg.gui.lobby.vehicleCompare
          }
          this._vehicleParamsData = new VehParamsListDataProvider(param1);
          invalidateData();
-      }
-      
-      override protected function getFocusChain() : Vector.<InteractiveObject>
-      {
-         return new <InteractiveObject>[InteractiveObject(this.header.backBtn),InteractiveObject(this.header.closeBtn)];
       }
       
       public function as_getVehiclesDP() : Object
@@ -252,11 +243,6 @@ package net.wg.gui.lobby.vehicleCompare
       private function onMainPanelScrollChangedHandler(param1:VehCompareScrollEvent) : void
       {
          VehCompareTopPanel(this.topPanel).updateTableScrollPosition(param1.horizintalScrollPosition);
-      }
-      
-      private function onBackClickHandler(param1:VehCompareEvent) : void
-      {
-         onBackClickS();
       }
    }
 }

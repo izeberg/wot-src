@@ -1,18 +1,15 @@
-from frameworks.wulf.view.array import fillIntsArray
+from __future__ import absolute_import
 from fun_random_common.fun_constants import FunEfficiencyParameterCount
-from fun_random.gui.battle_results.packers.fun_progression_helpers import FunPbsProgressionHelper, FunPbsUnlimitedProgressionHelper
 from fun_random.gui.battle_results.pbs_helpers import getTotalTMenXPToShow, getTotalGoldToShow, getEventID, isCreditsShown, isGoldShown, isXpShown, isFreeXpShown, isTmenXpShown, isCrystalShown, isFunAddXpBonusStatusAcceptable
-from fun_random.gui.feature.util.fun_helpers import isFunProgressionUnlimitedTrigger
-from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher, FunProgressionWatcher
+from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
 from fun_random.gui.impl.gen.view_models.views.lobby.feature.battle_results.fun_player_model import FunPlayerModel
 from fun_random.gui.impl.gen.view_models.views.lobby.feature.battle_results.fun_random_reward_item_model import FunRandomRewardItemModel, FunRewardTypes
-from fun_random.gui.impl.lobby.common.fun_view_helpers import packStageRewards, sortFunProgressionBonuses
 from gui.battle_results.pbs_helpers.additional_bonuses import isAdditionalXpBonusAvailable, getLeftAdditionalBonus
 from gui.battle_results.pbs_helpers.economics import getTotalCreditsToShow, getTotalCrystalsToShow, getTotalXPToShow, getTotalFreeXPToShow
 from gui.battle_results.presenters.packers.battle_info import BattleInfo
 from gui.battle_results.presenters.packers.personal_efficiency import PersonalEfficiency
 from gui.battle_results.presenters.packers.personal_rewards import PersonalRewards
-from gui.battle_results.presenters.packers.premium_plus import PremiumPlus
+from gui.battle_results.presenters.packers.manageable_xp_multiplier import ManageableXpMultiplier
 from gui.battle_results.presenters.packers.team.team_stats_packer import TeamStats
 from gui.impl.gen.view_models.views.lobby.battle_results.efficiency_param_constants import EfficiencyParamConstants
 from gui.impl.gen.view_models.views.lobby.battle_results.team_stats_model import SortingOrder
@@ -21,7 +18,6 @@ from gui.shared.gui_items.Vehicle import VEHICLE_CLASS_NAME
 from helpers import time_utils
 
 class FunRandomBattleInfo(BattleInfo, FunAssetPacksMixin, FunSubModesWatcher):
-    __slots__ = ()
 
     @classmethod
     def packModel(cls, model, battleResults):
@@ -33,7 +29,6 @@ class FunRandomBattleInfo(BattleInfo, FunAssetPacksMixin, FunSubModesWatcher):
 
 
 class FunRandomPersonalEfficiency(PersonalEfficiency, FunSubModesWatcher):
-    __slots__ = ()
     _PARAMETERS = {VEHICLE_CLASS_NAME.SPG: (
                               EfficiencyParamConstants.KILLS, EfficiencyParamConstants.DAMAGE_DEALT,
                               EfficiencyParamConstants.DAMAGE_ASSISTED, EfficiencyParamConstants.STUN)}
@@ -45,13 +40,12 @@ class FunRandomPersonalEfficiency(PersonalEfficiency, FunSubModesWatcher):
     def _getParameterList(cls, vehicle, battleResults):
         subMode = cls.getSubMode(getEventID(battleResults.reusable))
         allParameters = subMode.getEfficiencyParameters() if subMode is not None else {}
-        params = [ param for param in allParameters.get(vehicle.type, ()) ]
+        params = list(allParameters.get(vehicle.type, ()))
         params = params or super(FunRandomPersonalEfficiency, cls)._getParameterList(vehicle, battleResults)
         return params[:FunEfficiencyParameterCount.MAX]
 
 
 class FunRandomTeamStats(TeamStats):
-    __slots__ = ()
     _PLAYER_MODEL_CLS = FunPlayerModel
     _SORTING_PRIORITIES = (
      (
@@ -63,7 +57,6 @@ class FunRandomTeamStats(TeamStats):
 
 
 class FunRandomPersonalRewards(PersonalRewards):
-    __slots__ = ()
     _AVAILABLE_REWARDS = [
      FunRewardTypes.XP, FunRewardTypes.CREDITS, FunRewardTypes.GOLD,
      FunRewardTypes.CRYSTALS, FunRewardTypes.FREE_XP, FunRewardTypes.TANKMEN_XP]
@@ -82,8 +75,7 @@ class FunRandomPersonalRewards(PersonalRewards):
        FunRewardTypes.TANKMEN_XP: isTmenXpShown}
 
 
-class FunRandomPremiumPlus(PremiumPlus):
-    __slots__ = ()
+class FunRandomPremiumPlus(ManageableXpMultiplier):
 
     @classmethod
     def _updateLeftCount(cls, model, wasPremiumPlusInBattle, hasPremiumPlus, hasWotPlus):
@@ -97,49 +89,3 @@ class FunRandomPremiumPlus(PremiumPlus):
     @classmethod
     def _getXpAdditionalBonusStatus(cls, arenaUniqueID, reusable, hasPremiumPlus):
         return isAdditionalXpBonusAvailable(arenaUniqueID, reusable, hasPremiumPlus, isFunAddXpBonusStatusAcceptable)
-
-
-class FunRandomProgress(FunProgressionWatcher, FunAssetPacksMixin):
-    __slots__ = ()
-
-    @classmethod
-    def packModel(cls, model, battleResults, *args, **kwargs):
-        progression = FunProgressionWatcher.getActiveProgression()
-        if progression is None:
-            model.setHasProgress(False)
-            return
-        else:
-            personalInfo = battleResults.reusable.personal
-            questsProgress = personalInfo.getQuestsProgress()
-            questsTokens = personalInfo.getQuestTokensCount()
-            helper = cls.__createProgressionHelper(questsProgress)
-            progressionData = helper.getProgressionData(progression, questsProgress, questsTokens)
-            if progressionData is None:
-                model.setHasProgress(False)
-                return
-            model.setHasProgress(True)
-            model.setAssetsPointer(cls.getModeAssetsPointer())
-            model.setIsInUnlimitedProgression(progressionData.isUnlimitedProgression)
-            model.setDescription(progressionData.description)
-            model.setPreviousPoints(progressionData.previousPoints)
-            model.setCurrentPoints(progressionData.currentPoints)
-            model.setMaximumPoints(progressionData.maximumPoints)
-            model.setEarnedPoints(progressionData.earnedPoints)
-            model.setPreviousStage(progressionData.previousStage)
-            model.setCurrentStage(progressionData.currentStage)
-            model.setMaximumStage(progressionData.maximumStage)
-            stageRequiredCounters = model.getStageRequiredCounters()
-            fillIntsArray(progressionData.stageRequiredCounters, stageRequiredCounters)
-            bonuses = progressionData.bonuses
-            rewardsData = kwargs.get('rewardsData')
-            if bonuses and rewardsData is not None:
-                bonuses = sortFunProgressionBonuses(bonuses)
-                packStageRewards(bonuses, model.getRewards(), isSpecial=True, tooltips=rewardsData.tooltips)
-                rewardsData.bonuses.extend(bonuses)
-            return
-
-    @staticmethod
-    def __createProgressionHelper(questsProgress):
-        unlimitedTriggers = {qID:p for qID, p in questsProgress.items() if isFunProgressionUnlimitedTrigger(qID) if isFunProgressionUnlimitedTrigger(qID)}
-        helperCls = FunPbsUnlimitedProgressionHelper if unlimitedTriggers else FunPbsProgressionHelper
-        return helperCls()

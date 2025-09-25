@@ -39,6 +39,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.infrastructure.managers.IPopoverManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.IUtils;
+   import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.gfx.MouseEventEx;
@@ -66,15 +67,17 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const PRICE_OFFSET_HORIZONTAL:int = 13;
       
-      private static const STAGE_SWITCHER_Y:int = -140;
+      private static const STAGE_SWITCHER_Y:int = -85;
+      
+      private static const CAROUSEL_Y:int = -75;
+      
+      private static const CAROUSEL_Y_SMALL:int = -94;
       
       private static const ITEMS_BUTTON_OFFSET:int = 5;
       
       private static const NON_HISTORIC_ICON_OFFSET_X:int = 25;
       
       private static const NON_HISTORIC_FIX_ICON_WIDTH:int = 60;
-      
-      private static const MIN_RESOLUTION:int = 900;
       
       private static const TOP_SMALL_OFFSET:int = 6;
       
@@ -124,6 +127,10 @@ package net.wg.gui.lobby.vehicleCustomization
       private var _popoverBtnDisabledTooltip:String = "";
       
       private var _smPadding:int = 0;
+      
+      private var _backgroundHeight:uint = 0;
+      
+      private var _bottomOffset:uint = 0;
       
       private var _isNonHistoric:Boolean = false;
       
@@ -278,11 +285,13 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc4_:int = 0;
          var _loc5_:UniversalBtn = null;
          super.draw();
-         var _loc1_:Boolean = App.appHeight < MIN_RESOLUTION;
+         var _loc1_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          if(isInvalid(InvalidationType.SIZE))
          {
             this.background.width = _width;
+            this.background.height = App.appHeight - (y + this.background.y);
             this.carousel.width = _width;
+            this.carousel.y = !!_loc1_ ? Number(CAROUSEL_Y_SMALL) : Number(CAROUSEL_Y);
             this.carousel.invalidateSize();
             this.overlay.updateSize(_width,_height,_loc1_);
             this.tabNavigator.updateStage(_width,App.appHeight);
@@ -350,11 +359,6 @@ package net.wg.gui.lobby.vehicleCustomization
             }
             this.tabNavigator.updateBorders(Values.ZERO,_loc4_);
          }
-      }
-      
-      public function as_updateEscHelpMessage(param1:Boolean) : void
-      {
-         this.helpMessage.visible = param1;
       }
       
       override protected function setBottomPanelInitData(param1:CustomizationBottomPanelInitVO) : void
@@ -497,6 +501,11 @@ package net.wg.gui.lobby.vehicleCustomization
          this._popoverBtnDisabledTooltip = param3;
       }
       
+      public function as_updateEscHelpMessage(param1:Boolean) : void
+      {
+         this.helpMessage.visible = param1;
+      }
+      
       public function getFocusChain() : Vector.<InteractiveObject>
       {
          var _loc1_:Vector.<InteractiveObject> = new Vector.<InteractiveObject>();
@@ -545,6 +554,12 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carousel.playFilterBlink();
       }
       
+      public function setBackgroundHeight(param1:uint) : void
+      {
+         this._backgroundHeight = param1;
+         invalidateSize();
+      }
+      
       public function setCarouselNotificationsVisibility(param1:Boolean) : void
       {
          var _loc2_:Boolean = !param1;
@@ -565,14 +580,10 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function updateSysMessagePosition() : void
       {
-         var _loc1_:int = 0;
+         var _loc1_:int = this.background.height - this._bottomOffset;
          if(this.bill.visible)
          {
-            _loc1_ = this.background.height + this.bill.height + SM_BILL_ADDITIONAL_HEIGHT;
-         }
-         else
-         {
-            _loc1_ = this.background.height;
+            _loc1_ += this.bill.height + SM_BILL_ADDITIONAL_HEIGHT;
          }
          if(this._smPadding != _loc1_)
          {
@@ -594,6 +605,16 @@ package net.wg.gui.lobby.vehicleCustomization
       private function updateProjectionDecalNotificationState(param1:Boolean = false) : void
       {
          this.carousel.projectionDecalHint.visible = !!param1 ? Boolean(false) : Boolean(this._projectionDecalNotificationShow);
+      }
+      
+      public function get bottomOffset() : uint
+      {
+         return this._bottomOffset;
+      }
+      
+      public function set bottomOffset(param1:uint) : void
+      {
+         this._bottomOffset = param1;
       }
       
       private function onBottomPanelCarouselNewAnimationShownHandler(param1:CustomizationEvent) : void

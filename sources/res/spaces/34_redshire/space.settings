@@ -23,8 +23,8 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>8192</width>
+					<height>8192</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>128</minWidth>
@@ -35,8 +35,8 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>8192</width>
+					<height>8192</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>128</minWidth>
@@ -47,8 +47,8 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>4096</width>
-					<height>4096</height>
+					<width>8192</width>
+					<height>8192</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>128</minWidth>
@@ -79,8 +79,8 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>256</width>
-					<height>256</height>
+					<width>2048</width>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -91,8 +91,8 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>256</width>
-					<height>256</height>
+					<width>2048</width>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -103,8 +103,8 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>256</width>
-					<height>256</height>
+					<width>2048</width>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -158,4 +158,5 @@
 			<bitIndex>4</bitIndex>
 		</type>
 	</spaceVisibilityFlags>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
 </root>

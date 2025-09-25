@@ -10,6 +10,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setSettings(param1:Object) : void;
       
+      function as_setSize(param1:Number, param2:Number) : void;
+      
       function as_setScale(param1:Number) : void;
       
       function as_setView(param1:int, param2:int) : void;
@@ -18,9 +20,11 @@ package net.wg.infrastructure.base.meta
       
       function as_setReloadingCounterShown(param1:Boolean) : void;
       
-      function as_setReloading(param1:Number, param2:Number, param3:Number, param4:Boolean) : void;
+      function as_setReloading(param1:Number, param2:Number, param3:Number, param4:Boolean, param5:Boolean) : void;
       
-      function as_setReloadingAsPercent(param1:Number, param2:Boolean) : void;
+      function as_setReloadingAsPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void;
+      
+      function as_setIsInControllableReload(param1:Boolean) : void;
       
       function as_setBoostAsPercent(param1:Number, param2:Number) : void;
       
@@ -28,7 +32,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setAmmoStock(param1:Number, param2:Number, param3:String, param4:Boolean) : void;
       
-      function as_setClipParams(param1:Number, param2:Number, param3:Boolean) : void;
+      function as_setClipParams(param1:Number, param2:Number, param3:int) : void;
       
       function as_setDistance(param1:String) : void;
       
@@ -56,7 +60,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setNetType(param1:int) : void;
       
-      function as_autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean, param6:Boolean) : void;
+      function as_autoloaderUpdate(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean) : void;
       
       function as_setAutoloaderReloading(param1:Number, param2:Number) : void;
       
@@ -68,7 +72,7 @@ package net.wg.infrastructure.base.meta
       
       function as_setAutoloaderReloadasPercent(param1:Number) : void;
       
-      function as_setAutoloaderPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean) : void;
+      function as_setAutoloaderPercent(param1:Number, param2:Number, param3:Boolean, param4:Boolean, param5:Boolean) : void;
       
       function as_setSpeedMode(param1:Boolean) : void;
       
@@ -98,6 +102,8 @@ package net.wg.infrastructure.base.meta
       
       function as_setTwinGunMarkerState(param1:uint) : void;
       
+      function as_showPenetrationFx() : void;
+      
       function as_runCameraTransitionFx(param1:int, param2:Number) : void;
       
       function as_updateScaleWidget(param1:Number) : void;
@@ -116,10 +122,22 @@ package net.wg.infrastructure.base.meta
       
       function as_setAimDamageStage(param1:String) : void;
       
-      function as_setOverheatProgress(param1:Number, param2:Boolean) : void;
+      function as_setOverheatVisible(param1:Boolean) : void;
       
-      function as_addOverheat(param1:Number) : void;
+      function as_setAccuracyStacksProgress(param1:int) : void;
       
-      function as_removeOverheat() : void;
+      function as_setChargeGunActive(param1:Boolean) : void;
+      
+      function as_setChargeGunState(param1:Number, param2:uint, param3:Boolean) : void;
+      
+      function as_setReloadBoost(param1:Boolean) : void;
+      
+      function as_setReloadBoostBorder(param1:Boolean, param2:Boolean) : void;
+      
+      function as_setReloadBoostBorderBlink() : void;
+      
+      function as_setNetSeparatorType(param1:String) : void;
+      
+      function as_setChargeableBurstMode(param1:Boolean) : void;
    }
 }

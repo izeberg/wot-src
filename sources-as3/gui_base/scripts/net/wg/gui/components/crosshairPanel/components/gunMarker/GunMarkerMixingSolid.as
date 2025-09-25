@@ -39,11 +39,17 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       private var _curPercents:Number;
       
-      private var _thickness:int = 1;
-      
       private var _defaultStepsPoints:Vector.<GunMarkerMixingStepPoints> = null;
       
       private var _circleShape:Shape = null;
+      
+      private var _reloadColor:int = 0;
+      
+      private var _backReloadColor:int = 0;
+      
+      private var _reloadThickness:int = 1;
+      
+      private var _backReloadThickness:int = 1;
       
       public function GunMarkerMixingSolid()
       {
@@ -58,6 +64,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             this._defaultStepsPoints.push(new GunMarkerMixingStepPoints(STANDARD_DISTANCE * Math.cos(_loc1_ - PI8),STANDARD_DISTANCE * Math.sin(_loc1_ - PI8),RADIUS * Math.cos(_loc1_),RADIUS * Math.sin(_loc1_)));
             _loc1_ += DEFAULT_ANGLE_STEP;
          }
+         this._reloadColor = this.reloadColor;
+         this._backReloadColor = this.backReloadColor;
+         this._reloadThickness = this.getInitReloadThickness();
+         this._backReloadThickness = this.getInitBackReloadThickness();
          rotation = DEFAULT_ROTATION_ANGLE;
          this.setReloadingAsPercent(100);
       }
@@ -79,8 +89,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          {
             this._curPercents = param1;
             this._circleShape.graphics.clear();
-            this.drawCircle(RED_COLOR,CIRCLE_ALPHA,this._curPercents,100);
-            this.drawCircle(GREEN_COLOR,CIRCLE_ALPHA,0,this._curPercents);
+            this.drawCircle(this._backReloadColor,this._backReloadThickness,CIRCLE_ALPHA,this._curPercents,100);
+            this.drawCircle(this._reloadColor,this._reloadThickness,CIRCLE_ALPHA,0,this._curPercents);
          }
       }
       
@@ -90,59 +100,79 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       public function setThickness(param1:String) : void
       {
-         this._thickness = param1 == GunMarkerDispersionCircle.BOLD ? int(THICKNESS_BOLD) : int(THICKNESS_THIN);
+         this._backReloadThickness = this._reloadThickness = param1 == GunMarkerDispersionCircle.BOLD ? int(THICKNESS_BOLD) : int(THICKNESS_THIN);
          this.setReloadingAsPercent(this._curPercents,true);
       }
       
-      private function drawCircle(param1:Number, param2:Number, param3:Number, param4:Number) : void
+      protected function getInitReloadThickness() : uint
       {
-         var _loc5_:Number = NaN;
+         return THICKNESS_THIN;
+      }
+      
+      protected function getInitBackReloadThickness() : uint
+      {
+         return THICKNESS_THIN;
+      }
+      
+      private function drawCircle(param1:Number, param2:Number, param3:Number, param4:Number, param5:Number) : void
+      {
          var _loc6_:Number = NaN;
          var _loc7_:Number = NaN;
          var _loc8_:Number = NaN;
          var _loc9_:Number = NaN;
-         var _loc10_:Boolean = false;
+         var _loc10_:Number = NaN;
          var _loc11_:Boolean = false;
-         var _loc12_:GunMarkerMixingStepPoints = null;
+         var _loc12_:Boolean = false;
+         var _loc13_:GunMarkerMixingStepPoints = null;
          if(this._defaultStepsPoints != null)
          {
-            if(param3 >= 1)
+            if(param4 >= 1)
             {
                return;
             }
-            this._circleShape.graphics.lineStyle(this._thickness,param1,param2,false,LINE_NO_SCALE);
+            this._circleShape.graphics.lineStyle(param2,param1,param3,false,LINE_NO_SCALE);
             this._circleShape.graphics.moveTo(RADIUS,0);
-            _loc5_ = 0;
             _loc6_ = 0;
-            _loc7_ = param3 < 1 ? Number(PERCENTS_TO_ANGLE_COEF * param3 * 100) : Number(0);
-            _loc8_ = param4 < 1 ? Number(PERCENTS_TO_ANGLE_COEF * param4 * 100) : Number(PERCENTS_TO_ANGLE_COEF * 100);
-            _loc9_ = _loc7_ > 0 ? Number(_loc7_) : Number(0);
-            _loc10_ = _loc7_ > 0;
-            _loc11_ = param4 % DEFAULT_PERCENT_STEP == 0;
-            if(_loc10_)
+            _loc7_ = 0;
+            _loc8_ = param4 < 1 ? Number(PERCENTS_TO_ANGLE_COEF * param4 * 100) : Number(0);
+            _loc9_ = param5 < 1 ? Number(PERCENTS_TO_ANGLE_COEF * param5 * 100) : Number(PERCENTS_TO_ANGLE_COEF * 100);
+            _loc10_ = _loc8_ > 0 ? Number(_loc8_) : Number(0);
+            _loc11_ = _loc8_ > 0;
+            _loc12_ = param5 % DEFAULT_PERCENT_STEP == 0;
+            if(_loc11_)
             {
-               this._circleShape.graphics.moveTo(RADIUS * Math.cos(_loc7_),RADIUS * Math.sin(_loc7_));
-               _loc9_ = DEFAULT_ANGLE_STEP * (1 + _loc9_ / DEFAULT_ANGLE_STEP ^ 0);
-               _loc5_ = (_loc9_ - _loc7_) * ANGLE_DELTA_MULTIPLIER;
-               _loc6_ = RADIUS / Math.sin(PI2 - _loc5_);
-               this._circleShape.graphics.curveTo(_loc6_ * Math.cos(_loc9_ - _loc5_),_loc6_ * Math.sin(_loc9_ - _loc5_),RADIUS * Math.cos(_loc9_),RADIUS * Math.sin(_loc9_));
+               this._circleShape.graphics.moveTo(RADIUS * Math.cos(_loc8_),RADIUS * Math.sin(_loc8_));
+               _loc10_ = DEFAULT_ANGLE_STEP * (1 + _loc10_ / DEFAULT_ANGLE_STEP ^ 0);
+               _loc6_ = (_loc10_ - _loc8_) * ANGLE_DELTA_MULTIPLIER;
+               _loc7_ = RADIUS / Math.sin(PI2 - _loc6_);
+               this._circleShape.graphics.curveTo(_loc7_ * Math.cos(_loc10_ - _loc6_),_loc7_ * Math.sin(_loc10_ - _loc6_),RADIUS * Math.cos(_loc10_),RADIUS * Math.sin(_loc10_));
             }
-            _loc9_ += DEFAULT_ANGLE_STEP;
-            _loc5_ = PI8;
-            _loc6_ = STANDARD_DISTANCE;
-            while(_loc9_ <= _loc8_)
+            _loc10_ += DEFAULT_ANGLE_STEP;
+            _loc6_ = PI8;
+            _loc7_ = STANDARD_DISTANCE;
+            while(_loc10_ <= _loc9_)
             {
-               _loc12_ = this._defaultStepsPoints[_loc9_ / DEFAULT_ANGLE_STEP - 1];
-               this._circleShape.graphics.curveTo(_loc12_.step0,_loc12_.step1,_loc12_.step2,_loc12_.step3);
-               _loc9_ += DEFAULT_ANGLE_STEP;
+               _loc13_ = this._defaultStepsPoints[_loc10_ / DEFAULT_ANGLE_STEP - 1];
+               this._circleShape.graphics.curveTo(_loc13_.step0,_loc13_.step1,_loc13_.step2,_loc13_.step3);
+               _loc10_ += DEFAULT_ANGLE_STEP;
             }
-            if(!_loc11_)
+            if(!_loc12_)
             {
-               _loc5_ = _loc8_ % DEFAULT_ANGLE_STEP * ANGLE_DELTA_MULTIPLIER;
-               _loc6_ = RADIUS / Math.sin(PI2 - _loc5_);
-               this._circleShape.graphics.curveTo(_loc6_ * Math.cos(_loc8_ - _loc5_),_loc6_ * Math.sin(_loc8_ - _loc5_),RADIUS * Math.cos(_loc8_),RADIUS * Math.sin(_loc8_));
+               _loc6_ = _loc9_ % DEFAULT_ANGLE_STEP * ANGLE_DELTA_MULTIPLIER;
+               _loc7_ = RADIUS / Math.sin(PI2 - _loc6_);
+               this._circleShape.graphics.curveTo(_loc7_ * Math.cos(_loc9_ - _loc6_),_loc7_ * Math.sin(_loc9_ - _loc6_),RADIUS * Math.cos(_loc9_),RADIUS * Math.sin(_loc9_));
             }
          }
+      }
+      
+      protected function get reloadColor() : uint
+      {
+         return GREEN_COLOR;
+      }
+      
+      protected function get backReloadColor() : uint
+      {
+         return RED_COLOR;
       }
    }
 }

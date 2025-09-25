@@ -4,4 +4,8 @@
 	<parent>vehicles/chinese/Ch43_WZ_122_2/crash/lod2/Gun_01</parent>
 	<extent>64.000000</extent>
 	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.051396 -0.458856 -1.671702</min>
+		<max>1.051396 0.695232 4.681741</max>
+	</visibilityBox>
 </root>

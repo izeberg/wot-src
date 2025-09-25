@@ -155,11 +155,13 @@ BATTLE_RESULTS = [
  (
   'marksOnGun', int, 0, None, 'skip', ENTRY_TYPE.VEHICLE_ALL),
  (
+  'outfit', str, '', None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+ (
   'repair', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
   'freeXP', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
-  'details', None, None, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
+  'details', None, None, None, 'any', ENTRY_TYPE.VEHICLE_SELF),
  (
   'creditsPenalty', int, 0, None, 'sum', ENTRY_TYPE.VEHICLE_SELF),
  (
@@ -460,6 +462,8 @@ BATTLE_RESULTS = [
   'questsProgress', dict, {}, None, 'joinDicts', ENTRY_TYPE.VEHICLE_SELF),
  (
   'questTokensCount', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
+ (
+  'questTokensConvertion', dict, {}, None, 'skip', ENTRY_TYPE.ACCOUNT_SELF),
  (
   'c11nProgress', dict, {}, None, 'skip', ENTRY_TYPE.VEHICLE_SELF),
  (

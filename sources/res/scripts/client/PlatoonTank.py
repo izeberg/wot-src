@@ -22,7 +22,7 @@ if TYPE_CHECKING:
 _logger = logging.getLogger(__name__)
 PlatoonTankInfo = namedtuple('PlatoonTankInfo', ('canDisplayModel', 'vehCompDescr',
                                                  'vehOutfitCD', 'seasonType', 'marksOnGun',
-                                                 'clanDBID', 'playerName'))
+                                                 'clanDBID', 'playerName', 'stFrags'))
 
 class _PlatoonTankAppearance(HangarVehicleAppearance):
     _c11nService = dependency.descriptor(ICustomizationService)
@@ -45,6 +45,7 @@ class _PlatoonTankAppearance(HangarVehicleAppearance):
             return self.itemsFactory.createOutfit()
         else:
             vehCompDescr = tankInfo.vehCompDescr
+            forceHistorical = False
             if tankInfo.vehOutfitCD:
                 if vDesc is None:
                     vDesc = vehicles.VehicleDescr(vehCompDescr)
@@ -56,7 +57,10 @@ class _PlatoonTankAppearance(HangarVehicleAppearance):
             else:
                 outfit = None
             if outfit is None:
-                outfit = self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehCompDescr)
+                if forceHistorical:
+                    outfit = self.customizationService.getEmptyOutfitWithNationalEmblems(vehicleCD=vehCompDescr)
+                else:
+                    outfit = self.customizationService.getEmptyOutfit(vehicleCD=vehCompDescr)
             return outfit
 
     def _requestClanDBIDForStickers(self, callback):
@@ -119,6 +123,11 @@ class PlatoonTank(ClientSelectableCameraVehicle):
             self.appearance.updateTankInfo(self.__tankInfo)
         super(PlatoonTank, self).recreateVehicle(typeDescriptor, state, callback, outfit)
         return
+
+    def getStFrags(self):
+        if self.__tankInfo:
+            return self.__tankInfo.stFrags
+        return 0
 
     if IS_DEVELOPMENT:
 

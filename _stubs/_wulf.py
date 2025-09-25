@@ -2,6 +2,11 @@
 # import _wulf
 # <module '_wulf' (built-in)>
 
+ARRAY = ValueType.ARRAY
+BOOL = ValueType.BOOL
+MAP = ValueType.MAP
+NONE = ValueType.NONE
+NUMBER = ValueType.NUMBER
 
 class pybind11_object(object):
 	def __delattr__(*args, **kwargs): pass
@@ -44,6 +49,7 @@ class PyGuiApplication(pybind11_object):
 	def isInitialized(self, *args, **kwargs): pass
 	resourceManager = property(lambda self: None)
 	scale = property(lambda self: None)
+	def setServerTimeCallback(self, *args, **kwargs): pass
 	systemLocale = property(lambda self: None)
 	tutorial = property(lambda self: None)
 	uiLogger = property(lambda self: None)
@@ -91,6 +97,7 @@ class PyObjectArray(PyObjectEntity):
 	def __subclasshook__(*args, **kwargs): pass
 	def addArray(self, *args, **kwargs): pass
 	def addBool(self, *args, **kwargs): pass
+	def addMap(self, *args, **kwargs): pass
 	def addNumber(self, *args, **kwargs): pass
 	def addReal(self, *args, **kwargs): pass
 	def addResource(self, *args, **kwargs): pass
@@ -107,6 +114,7 @@ class PyObjectArray(PyObjectEntity):
 	def reserve(self, *args, **kwargs): pass
 	def setArray(self, *args, **kwargs): pass
 	def setBool(self, *args, **kwargs): pass
+	def setMap(self, *args, **kwargs): pass
 	def setNumber(self, *args, **kwargs): pass
 	def setReal(self, *args, **kwargs): pass
 	def setResource(self, *args, **kwargs): pass
@@ -137,6 +145,851 @@ class PyObjectCommand(PyObjectEntity):
 	def execute(self, *args, **kwargs): pass
 	name = property(lambda self: None)
 	object = property(lambda self: None)
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap(PyObjectEntity):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def rollback(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_ARRAY(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_ARRAY'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_BOOL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_BOOL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_MAP(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_MAP'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_NUMBER(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_NUMBER'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_REAL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_REAL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_RESOURCE(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_RESOURCE'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_STRING(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_STRING'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_NUMBER_VIEW_MODEL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_NUMBER_VIEW_MODEL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_ARRAY(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_ARRAY'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_BOOL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_BOOL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_MAP(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_MAP'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_NUMBER(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_NUMBER'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_REAL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_REAL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_RESOURCE(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_RESOURCE'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_STRING(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_STRING'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_RESOURCE_VIEW_MODEL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_RESOURCE_VIEW_MODEL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_ARRAY(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_ARRAY'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_BOOL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_BOOL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_MAP(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_MAP'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_NUMBER(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_NUMBER'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_REAL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_REAL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_RESOURCE(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_RESOURCE'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_STRING(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_STRING'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
+	def unbindPyObject(self, *args, **kwargs): pass
+
+
+class PyObjectMap_STRING_VIEW_MODEL(PyObjectMap):
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __iter__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'PyObjectMap_STRING_VIEW_MODEL'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(*args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	def bindPyObject(self, *args, **kwargs): pass
+	def clear(self, *args, **kwargs): pass
+	def commit(self, *args, **kwargs): pass
+	def contains(self, *args, **kwargs): pass
+	def create(*args, **kwargs): pass
+	def getSize(self, *args, **kwargs): pass
+	def getValue(self, *args, **kwargs): pass
+	def hold(self, *args, **kwargs): pass
+	object = property(lambda self: None)
+	def removeItem(self, *args, **kwargs): pass
+	def rollback(self, *args, **kwargs): pass
+	def setValue(self, *args, **kwargs): pass
+	def toString(self, *args, **kwargs): pass
 	def unbindPyObject(self, *args, **kwargs): pass
 
 
@@ -331,6 +1184,7 @@ class PyObjectViewModel(PyObjectEntity):
 	def addBoolField(self, *args, **kwargs): pass
 	def addCommand(self, *args, **kwargs): pass
 	def addField(self, *args, **kwargs): pass
+	def addMapField(self, *args, **kwargs): pass
 	def addNumberField(self, *args, **kwargs): pass
 	def addRealField(self, *args, **kwargs): pass
 	def addResourceField(self, *args, **kwargs): pass
@@ -340,6 +1194,7 @@ class PyObjectViewModel(PyObjectEntity):
 	def commit(self, *args, **kwargs): pass
 	def getArray(self, *args, **kwargs): pass
 	def getBool(self, *args, **kwargs): pass
+	def getMap(self, *args, **kwargs): pass
 	def getNumber(self, *args, **kwargs): pass
 	def getReal(self, *args, **kwargs): pass
 	def getResource(self, *args, **kwargs): pass
@@ -351,6 +1206,7 @@ class PyObjectViewModel(PyObjectEntity):
 	def rollback(self, *args, **kwargs): pass
 	def setArray(self, *args, **kwargs): pass
 	def setBool(self, *args, **kwargs): pass
+	def setMap(self, *args, **kwargs): pass
 	def setNumber(self, *args, **kwargs): pass
 	def setReal(self, *args, **kwargs): pass
 	def setResource(self, *args, **kwargs): pass
@@ -519,6 +1375,68 @@ class PyObjectWindowsManager(PyObjectEntity):
 	def pyClear(self, *args, **kwargs): pass
 	def removePyWindowsArea(self, *args, **kwargs): pass
 	def unbindPyObject(self, *args, **kwargs): pass
+
+REAL = ValueType.REAL
+RESOURCE = ValueType.RESOURCE
+
+class Resource(pybind11_object):
+	def __call__(self, *args, **kwargs): pass
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = None
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __hash__(*args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	__module__ = '_wulf'
+	def __new__(*args, **kwargs): pass
+	def __nonzero__(self, *args, **kwargs): pass
+	__qualname__ = 'Resource'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(self, *args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(self, *args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+
+STRING = ValueType.STRING
+VIEW_MODEL = ValueType.VIEW_MODEL
+
+class ValueType(pybind11_object):
+	ARRAY = ValueType.ARRAY
+	BOOL = ValueType.BOOL
+	MAP = ValueType.MAP
+	NONE = ValueType.NONE
+	NUMBER = ValueType.NUMBER
+	REAL = ValueType.REAL
+	RESOURCE = ValueType.RESOURCE
+	STRING = ValueType.STRING
+	VIEW_MODEL = ValueType.VIEW_MODEL
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = u'Members:\n\n  REAL\n\n  MAP\n\n  NONE\n\n  RESOURCE\n\n  STRING\n\n  VIEW_MODEL\n\n  BOOL\n\n  ARRAY\n\n  NUMBER'
+	__entries = {u'REAL': (ValueType.REAL, None), u'MAP': (ValueType.MAP, None), u'NONE': (ValueType.NONE, None), u'RESOURCE': (ValueType.RESOURCE, None), u'STRING': (ValueType.STRING, None), u'VIEW_MODEL': (ValueType.VIEW_MODEL, None), u'BOOL': (ValueType.BOOL, None), u'ARRAY': (ValueType.ARRAY, None), u'NUMBER': (ValueType.NUMBER, None)}
+	def __eq__(self, *args, **kwargs): pass
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
+	def __hash__(self, *args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __int__(self, *args, **kwargs): pass
+	def __long__(self, *args, **kwargs): pass
+	__members__ = {u'REAL': ValueType.REAL, u'MAP': ValueType.MAP, u'NONE': ValueType.NONE, u'BOOL': ValueType.BOOL, u'STRING': ValueType.STRING, u'VIEW_MODEL': ValueType.VIEW_MODEL, u'RESOURCE': ValueType.RESOURCE, u'ARRAY': ValueType.ARRAY, u'NUMBER': ValueType.NUMBER}
+	__module__ = '_wulf'
+	def __ne__(self, *args, **kwargs): pass
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'ValueType'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(self, *args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	name = property(lambda self: None)
 
 __doc__ = None
 __name__ = '_wulf'

@@ -35,6 +35,8 @@ package net.wg.gui.lobby.techtree.data.vo
       private static const IS_TOP_ACTION_NODE:String = "isTopActionNode";
       
       private static const ACTION_MESSAGE:String = "actionMessage";
+      
+      private static const IS_PROMOTED:String = "isPromoted";
        
       
       public var id:uint = 0;
@@ -66,6 +68,8 @@ package net.wg.gui.lobby.techtree.data.vo
       public var isTopActionNode:Boolean = false;
       
       public var actionMessage:String = "";
+      
+      public var isPromoted:Boolean = false;
       
       private var _blueprintLabel:String = "";
       
@@ -200,6 +204,10 @@ package net.wg.gui.lobby.techtree.data.vo
          if(param1.hasOwnProperty(ACTION_MESSAGE))
          {
             this.actionMessage = param1[ACTION_MESSAGE];
+         }
+         if(param1.hasOwnProperty(IS_PROMOTED))
+         {
+            this.isPromoted = param1[IS_PROMOTED];
          }
          this.dataIsReady = true;
       }

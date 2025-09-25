@@ -1,10 +1,10 @@
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 
 class BattleInfoModel(ViewModel):
     __slots__ = ()
 
-    def __init__(self, properties=6, commands=0):
+    def __init__(self, properties=7, commands=0):
         super(BattleInfoModel, self).__init__(properties=properties, commands=commands)
 
     def getModeName(self):
@@ -43,6 +43,12 @@ class BattleInfoModel(ViewModel):
     def setFinishReason(self, value):
         self._setResource(5, value)
 
+    def getFinishReasonKey(self):
+        return self._getNumber(6)
+
+    def setFinishReasonKey(self, value):
+        self._setNumber(6, value)
+
     def _initialize(self):
         super(BattleInfoModel, self)._initialize()
         self._addStringProperty('modeName', '')
@@ -51,3 +57,4 @@ class BattleInfoModel(ViewModel):
         self._addNumberProperty('battleDuration', 0)
         self._addStringProperty('winStatus', '')
         self._addResourceProperty('finishReason', R.invalid())
+        self._addNumberProperty('finishReasonKey', 0)

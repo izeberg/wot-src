@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G187_Taschenratte/crash/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.530488 -0.143275 -2.628951</min>
+		<max>1.420254 1.528758 2.293896</max>
+	</visibilityBox>
+	<parent>vehicles/german/G187_Taschenratte/crash/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

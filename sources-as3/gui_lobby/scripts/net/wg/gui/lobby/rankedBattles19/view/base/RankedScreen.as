@@ -53,6 +53,7 @@ package net.wg.gui.lobby.rankedBattles19.view.base
             alpha = 0;
             this._showTween = new Tween(FADE_IN_TIME,param1,{"alpha":1},{
                "paused":false,
+               "fastTransform":false,
                "onComplete":param2
             });
             return true;

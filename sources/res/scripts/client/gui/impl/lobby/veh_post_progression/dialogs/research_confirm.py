@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging
 from frameworks.wulf import ViewSettings
 from gui.impl.common.base_sub_model_view import BaseSubModelView
@@ -20,8 +21,6 @@ _ACTION_TYPE_TO_MODIFICATION_TYPE = {ACTION_TYPES.MODIFICATION: ModificationType
    ACTION_TYPES.FEATURE: ModificationType.MODIFICATIONWITHFEATURE}
 
 class PostProgressionResearchConfirm(FullScreenDialogView[ResearchStepsDialog]):
-    __slots__ = ('_buyContent', '_mainContent', '__stepIDs', '__vehicle', '__price',
-                 '__steps', '__xpBalance', '__postProgression')
 
     def __init__(self, *args, **kwargs):
         settings = ViewSettings(layoutID=R.views.lobby.veh_post_progression.PostProgressionResearchSteps(), model=ResearchStepsDialog())

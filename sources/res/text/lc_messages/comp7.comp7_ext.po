@@ -16,47 +16,32 @@ msgstr ""
 "nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%10<=4 && "
 "(n%100<10 || n%100>=20) ? 1 : 2);"
 
-msgid "alertMessage/afterSeason/first"
-msgstr "Сезон Лазурной мантикоры завершён"
-
-msgid "alertMessage/afterSeason/second"
-msgstr "Сезон Алой мантикоры завершён"
-
-msgid "alertMessage/afterSeason/third"
-msgstr "Сезон Нефритовой мантикоры завершён"
-
 msgid "alertMessage/allNotAvailable"
 msgstr "Бои на серверах начнутся через %(primeDelta)s"
-
-msgid "alertMessage/allNotAvailableEnd/first"
-msgstr "Сезон Лазурной мантикоры завершён"
-
-msgid "alertMessage/allNotAvailableEnd/second"
-msgstr "Сезон Алой мантикоры завершён"
-
-msgid "alertMessage/allNotAvailableEnd/third"
-msgstr "Сезон Нефритовой мантикоры завершён"
 
 msgid "alertMessage/allNotSet"
 msgstr "Режим недоступен на всех серверах"
 
-msgid "alertMessage/betweenSeasons/first"
-msgstr "Сезон Лазурной мантикоры завершён"
-
-msgid "alertMessage/betweenSeasons/second"
-msgstr "Сезон Алой мантикоры завершён"
-
-msgid "alertMessage/betweenSeasons/third"
-msgstr "Сезон Нефритовой мантикоры завершён"
+msgid "alertMessage/ban"
+msgstr "Вы временно заблокированы в режиме. Осталось времени: %(expiryTime)s"
 
 msgid "alertMessage/button/changeServer"
-msgstr "Сменить сервер"
+msgstr "Изменение сервера"
 
 msgid "alertMessage/button/moreInfo"
 msgstr "Подробнее"
 
+msgid "alertMessage/ceasefireAvailable"
+msgstr "Режим недоступен на вашем сервере %(button)s"
+
+msgid "alertMessage/ceasefireUnavailable"
+msgstr "Режим недоступен на всех серверах."
+
 msgid "alertMessage/modeOffline"
 msgstr "Ошибка базы данных. Режим недоступен."
+
+msgid "alertMessage/noVehicles"
+msgstr "В Ангаре нет подходящей техники %(levels)s уровня %(button)s"
 
 msgid "alertMessage/notAvailable"
 msgstr "Бои недоступны на сервере %(serverName)s"
@@ -68,31 +53,31 @@ msgid "alertMessage/notSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
 
 msgid "alertMessage/preannounce/first"
-msgstr "Сезон Лазурной мантикоры начинается %(date)s"
+msgstr "Сезон Лазурного дракона начинается %(date)s"
 
 msgid "alertMessage/preannounce/second"
-msgstr "Сезон Алой мантикоры начинается %(date)s"
+msgstr "Сезон Алого дракона начинается %(date)s"
 
 msgid "alertMessage/preannounce/third"
-msgstr "Сезон Нефритовой мантикоры начинается %(date)s"
+msgstr "Сезон Нефритового дракона начинается %(date)s"
+
+msgid "alertMessage/qualification"
+msgstr "Ожидание результатов квалификации для присвоения ранга"
+
+msgid "alertMessage/seasonEnd/first"
+msgstr "Сезона Лазурного дракона завершён"
+
+msgid "alertMessage/seasonEnd/second"
+msgstr "Сезон Алого дракона завершён"
+
+msgid "alertMessage/seasonEnd/third"
+msgstr "Сезон Нефритового дракона завершён"
 
 msgid "alertMessage/standaloneNotAvailable"
 msgstr "Бои на сервере начнутся через %(primeDelta)s"
 
-msgid "alertMessage/standaloneNotAvailableEnd/first"
-msgstr "Сезон Лазурной мантикоры завершён"
-
-msgid "alertMessage/standaloneNotAvailableEnd/second"
-msgstr "Сезон Алой мантикоры завершён"
-
-msgid "alertMessage/standaloneNotAvailableEnd/third"
-msgstr "Сезон Нефритовой мантикоры завершён"
-
 msgid "alertMessage/standaloneNotSet"
 msgstr "Режим недоступен на сервере %(serverName)s"
-
-msgid "alertMessage/temporaryBan"
-msgstr "Участие в режиме невозможно. Разблокировка через: %(expiryTime)s"
 
 msgid "alertMessage/timeLeft/days"
 msgstr "%(day)s д"
@@ -130,60 +115,6 @@ msgstr[1] ""
 msgstr[2] ""
 "ЗАБРАТЬ\n"
 "НАГРАДЫ"
-
-msgid "banner/info/seasonEnd/first"
-msgstr "Сезон Лазурной мантикоры завершён"
-
-msgid "banner/info/seasonEnd/second"
-msgstr "Сезон Алой мантикоры завершён"
-
-msgid "banner/info/seasonEnd/third"
-msgstr "Сезон Нефритовой мантикоры завершён"
-
-msgid "banner/infoSmall/disabled"
-msgstr "Режим прекращения огня"
-
-msgid "banner/season/first"
-msgstr "Лазурная мантикора"
-
-msgid "banner/season/second"
-msgstr "Алая мантикора"
-
-msgid "banner/season/third"
-msgstr "Нефритовая мантикора"
-
-msgid "banner/seasonDate/seasonLasts"
-msgstr "До %(day)s %(month)s"
-
-msgid "banner/seasonDate/seasonNotStarted"
-msgstr "Начало: %(day)s %(month)s, %(hour)s:%(min)s"
-
-msgid "banner/seasonDateSmall/seasonNotStarted"
-msgstr "%(day)s %(month)s, %(hour)s:%(min)s"
-
-msgid "banner/title"
-msgstr "НАТИСК"
-
-msgid "bannerTooltip/description"
-msgstr ""
-"Соревновательный режим, в котором игроки сражаются в формате 7 на 7 на "
-"технике X уровня. Продвигайтесь по рангам, чтобы получить особые элементы "
-"внешнего вида, технику, боны и другие ценные награды."
-
-msgid "bannerTooltip/end"
-msgstr "Сезон завершён"
-
-msgid "bannerTooltip/notAvailable"
-msgstr "Режим прекращения огня"
-
-msgid "bannerTooltip/notStarted"
-msgstr "Начало: %(day)s %(month)s, %(hour)s:%(min)s"
-
-msgid "bannerTooltip/range"
-msgstr "%(startDate)s – %(endDate)s"
-
-msgid "bannerTooltip/title"
-msgstr "НАТИСК"
 
 msgid "battleCarousel/filterButtonTooltip/body"
 msgstr "Настройка отображения техники с учётом типа, роли и нации."
@@ -359,21 +290,21 @@ msgstr "%(start)s – %(end)s"
 
 msgid "calendarDay/timeLeft/first"
 msgid_plural "plural/calendarDay/timeLeft/first"
-msgstr[0] "Сезон Лазурной мантикоры продлится %(days)d день"
-msgstr[1] "Сезон Лазурной мантикоры продлится %(days)d дня"
-msgstr[2] "Сезон Лазурной мантикоры продлится %(days)d дней"
+msgstr[0] "Сезон Лазурного дракона продлится %(days)d день"
+msgstr[1] "Сезон Лазурного дракона продлится %(days)d дня"
+msgstr[2] "Сезон Лазурного дракона продлится %(days)d дней"
 
 msgid "calendarDay/timeLeft/second"
 msgid_plural "plural/calendarDay/timeLeft/second"
-msgstr[0] "Сезон Алой мантикоры продлится %(days)d день"
-msgstr[1] "Сезон Алой мантикоры продлится %(days)d дня"
-msgstr[2] "Сезон Алой мантикоры продлится %(days)d дней"
+msgstr[0] "Сезон Алого дракона продлится %(days)d день"
+msgstr[1] "Сезон Алого дракона продлится %(days)d дня"
+msgstr[2] "Сезон Алого дракона продлится %(days)d дней"
 
 msgid "calendarDay/timeLeft/third"
 msgid_plural "plural/calendarDay/timeLeft/third"
-msgstr[0] "Сезон Нефритовой мантикоры продлится %(days)d день"
-msgstr[1] "Сезон Нефритовой мантикоры продлится %(days)d дня"
-msgstr[2] "Сезон Нефритовой мантикоры продлится %(days)d дней"
+msgstr[0] "Сезон Нефритового дракона продлится %(days)d день"
+msgstr[1] "Сезон Нефритового дракона продлится %(days)d дня"
+msgstr[2] "Сезон Нефритового дракона продлится %(days)d дней"
 
 msgid "calendarDay/title"
 msgstr "Расписание"
@@ -406,19 +337,15 @@ msgstr "<1 мин"
 msgid "crewMembersTooltip/description"
 msgstr ""
 "Этот специальный экипаж включает танкистов со всего мира под руководством их"
-" командира. У каждого из них изучен навык «Боевое братство» в качестве "
-"«нулевого» и достаточно опыта для изучения двух дополнительных навыков, что "
-"позволит улучшить показатели машины, а также привнести свою индивидуальность"
-" на поле боя."
+" командира. У каждого из них достаточно опыта для изучения трёх "
+"дополнительных навыков — это улучшит показатели машины и добавит "
+"индивидуальности на поле боя."
 
 msgid "crewMembersTooltip/perks"
 msgstr "Навыки"
 
 msgid "crewMembersTooltip/subHeading"
-msgstr "Натиск. Год Мантикоры"
-
-msgid "crewMembersTooltip/zeroPerks"
-msgstr "«Нулевые» навыки"
+msgstr "Натиск. Год Дракона"
 
 msgid "dash"
 msgstr "—"
@@ -455,50 +382,91 @@ msgstr "Дивизион %(division)s"
 msgid "divisionTooltip/description"
 msgstr ""
 "В этом дивизионе находятся игроки, набравшие "
-"{whiteSpanish_Open}от&nbsp;%(fromScore)&nbsp;до&nbsp;%(toScore){whiteSpanish_Close}"
-" очков рейтинга."
+"{eeede9e6_Open}от&nbsp;%(fromScore)&nbsp;до&nbsp;%(toScore){eeede9e6_Close} "
+"очков рейтинга."
 
 msgid "divisionTooltip/heading"
 msgstr "Дивизион %(divisionName)s"
 
+msgid "entryPoint/points"
+msgstr "Очки рейтинга"
+
+msgid "entryPoint/pointsCounter"
+msgstr "%(score)s%(divider)s%(scoreToNextDivision)s"
+
+msgid "entryPoint/qualification/battles"
+msgstr "Боёв проведено"
+
+msgid "entryPoint/qualification/battlesCounter"
+msgstr "%(battleIcon)s%(battlesCount)s%(divider)s%(maxBattlesCount)s"
+
+msgid "entryPoint/qualification/waiting"
+msgstr "%(timer)sОжидание результатов"
+
+msgid "entryPoint/qualification/waitingShort"
+msgstr "%(timer)sОжидание результатов"
+
+msgid "entryPointTooltip/description"
+msgstr ""
+"Соревновательный режим, в котором игроки сражаются в формате 7 на 7 на "
+"технике %(levels)s уровня. Продвигайтесь по рангам, чтобы получить особые "
+"элементы внешнего вида, технику, боны и другие ценные награды."
+
+msgid "entryPointTooltip/modeBtnText"
+msgstr "РЕЖИМ"
+
+msgid "entryPointTooltip/modeDescription"
+msgstr "%(mode)s — это игровой режим. Нажмите для ознакомления."
+
+msgid "entryPointTooltip/status/active"
+msgstr "Доступно%(timer)s"
+
+msgid "entryPointTooltip/status/ceasefire"
+msgstr "Прекращение огня %(timer)s"
+
+msgid "entryPointTooltip/status/notStarted"
+msgstr ""
+"Будет доступно:\n"
+"%(timer)s"
+
 msgid "featureName"
-msgstr "НАТИСК"
+msgstr "Натиск"
 
 msgid "featureNameCapitalized"
 msgstr "НАТИСК"
 
 msgid "fifthRankTooltip/description"
 msgstr ""
-"Ранг {whiteSpanish_Open}«Чемпион»{whiteSpanish_Close} присваивается игрокам,"
-" набравшим минимум {whiteSpanish_Open}%(fromScore){whiteSpanish_Close} очков"
-" рейтинга."
+"Ранг {eeede9e6_Open}«Чемпион»{eeede9e6_Close} присваивается игрокам, "
+"набравшим минимум {eeede9e6_Open}%(fromScore){eeede9e6_Close} очков "
+"рейтинга."
 
 msgid "forVehicle"
 msgstr "Для: %(vehicleName)s"
 
 msgid "generalRankTooltip/body/first"
 msgstr ""
-"Ранг {whiteSpanish_Open}«Железо»{whiteSpanish_Close} присваивается игрокам, "
-"набравшим {whiteSpanish_Open}от %(fromScore) до "
-"%(toScore){whiteSpanish_Close} очков рейтинга."
+"Ранг {eeede9e6_Open}«Железо»{eeede9e6_Close} присваивается игрокам, "
+"набравшим {eeede9e6_Open}от %(fromScore) до %(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "generalRankTooltip/body/fourth"
 msgstr ""
-"Ранг {whiteSpanish_Open}«Золото»{whiteSpanish_Close} присваивается игрокам, "
-"набравшим {whiteSpanish_Open}от %(fromScore) до "
-"%(toScore){whiteSpanish_Close} очков рейтинга."
+"Ранг {eeede9e6_Open}«Золото»{eeede9e6_Close} присваивается игрокам, "
+"набравшим {eeede9e6_Open}от %(fromScore) до %(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "generalRankTooltip/body/second"
 msgstr ""
-"Ранг {whiteSpanish_Open}«Бронза»{whiteSpanish_Close} присваивается игрокам, "
-"набравшим {whiteSpanish_Open}от %(fromScore) до "
-"%(toScore){whiteSpanish_Close} очков рейтинга."
+"Ранг {eeede9e6_Open}«Бронза»{eeede9e6_Close} присваивается игрокам, "
+"набравшим {eeede9e6_Open}от %(fromScore) до %(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "generalRankTooltip/body/third"
 msgstr ""
-"Ранг {whiteSpanish_Open}«Серебро»{whiteSpanish_Close} присваивается игрокам,"
-" набравшим {whiteSpanish_Open}от %(fromScore) до "
-"%(toScore){whiteSpanish_Close} очков рейтинга."
+"Ранг {eeede9e6_Open}«Серебро»{eeede9e6_Close} присваивается игрокам, "
+"набравшим {eeede9e6_Open}от %(fromScore) до %(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "generalRankTooltip/subheading"
 msgstr "Включает дивизионы: %(divisions)s"
@@ -569,7 +537,7 @@ msgid "intro/description/ranks"
 msgstr ""
 "Система, отражающая мастерство игрока. Продвигайтесь по рангам от «Железа» "
 "до «Легенды» и получайте ценные призы. Сражайтесь в течение всего года "
-"Мантикоры, чтобы получить уникальные годовые награды."
+"Дракона, чтобы получить уникальные годовые награды."
 
 msgid "intro/description/roleSkills"
 msgstr ""
@@ -579,10 +547,10 @@ msgstr ""
 
 msgid "intro/description/vehiclesOnMap"
 msgstr ""
-"Выйти в бой можно на исследуемых машинах X уровня, а также коллекционной и "
-"некоторой специальной технике (кроме САУ). Готовьте технику в Ангаре и "
-"выбирайте подходящую прямо в бою, учитывая особенности игровой карты. "
-"Старайтесь подстраиваться под выбор техники союзников."
+"Выйти в бой можно на исследуемых машинах %(levels)s уровня, а также "
+"коллекционной и некоторой специальной технике (кроме САУ). Готовьте технику "
+"в Ангаре и выбирайте подходящую прямо в бою, учитывая особенности игровой "
+"карты. Старайтесь подстраиваться под выбор техники союзников."
 
 msgid "intro/title/onslaughtModifiers"
 msgstr "МОДИФИКАТОРЫ «НАТИСКА»"
@@ -614,9 +582,7 @@ msgid "lastUpdateNote/lastBestUserPoints/update"
 msgstr "Обновление данных..."
 
 msgid "lastUpdateNote/ratingPositions/description"
-msgstr ""
-"Таблица лидеров\n"
-"обновляется каждые %(count)s минут."
+msgstr "Таблица лидеров обновляется каждые %(count)s минут."
 
 msgid "lastUpdateNote/tooltip/info"
 msgstr "Последнее обновление: %(date)s"
@@ -631,19 +597,11 @@ msgstr ""
 msgid "leaderboard/error/buttonText"
 msgstr "Обновить"
 
-msgid "leaderboard/error/description"
-msgstr ""
-"Приносим извинения за временные неудобства, попробуйте обновить страницу "
-"позже."
-
-msgid "leaderboard/error/title"
-msgstr "Ошибка загрузки данных"
-
 msgid "leaderboard/noRecords/subtitle"
 msgstr ""
 "В таблицу лидеров попадают игроки с рангами «Чемпион» и «Легенда». Наберите "
-"{whiteSpanish_Open}%(pointsCount)s{whiteSpanish_Close} очков рейтинга и "
-"станьте первыми!"
+"{eeede9e6_Open}%(pointsCount)s{eeede9e6_Close} очков рейтинга и станьте "
+"первыми!"
 
 msgid "leaderboard/noRecords/title"
 msgstr "Ни один игрок ещё не попал в таблицу лидеров текущего сезона"
@@ -688,70 +646,6 @@ msgstr "Очки рейтинга"
 msgid "listSeparator"
 msgstr ", "
 
-msgid "mainWidget/ratingCalculation"
-msgstr ""
-"Ожидание результатов квалификации\n"
-"для присвоения ранга %(timer)s"
-
-msgid "mainWidget/status"
-msgstr "%(score)s / %(scoreToNextDivision)s"
-
-msgid "mainWidget/tooltip/inactive/body"
-msgstr ""
-"Вы будете терять очки рейтинга, если не будете проводить бои в режиме."
-
-msgid "mainWidget/tooltip/inactive/header"
-msgstr "Ранговая неактивность"
-
-msgid "mainWidget/tooltip/inactive/note"
-msgstr "Дней до снижения рейтинга: %(days)s"
-
-msgid "mainWidget/warning"
-msgstr "Без участия в боях ваш рейтинг снизится."
-
-msgid "mainWidgetTooltip/battlesCounter"
-msgstr ""
-"%(battleIcon)s{cream_Open}%(battlesCount)s{cream_Close} / "
-"%(maxBattlesCount)s"
-
-msgid "mainWidgetTooltip/division"
-msgstr "Дивизион: %(divisionName)s"
-
-msgid "mainWidgetTooltip/divisionDescription"
-msgstr ""
-"В этом дивизионе находятся игроки, набравшие {whiteSpanish_Open}от "
-"%(fromScore) до %(toScore){whiteSpanish_Close} очков рейтинга."
-
-msgid "mainWidgetTooltip/info/fifth"
-msgstr ""
-"Для получения ранга «Легенда» войдите в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров."
-
-msgid "mainWidgetTooltip/info/sixth"
-msgstr ""
-"Ранг «Легенда» присваивается "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров."
-
-msgid "mainWidgetTooltip/qualification/condition"
-msgid_plural "plural/mainWidgetTooltip/qualification/condition"
-msgstr[0] ""
-"Завершите %(maxBattlesCount)s бой в режиме для определения уровня вашего "
-"мастерства и присвоения ранга."
-msgstr[1] ""
-"Завершите %(maxBattlesCount)s боя в режиме для определения уровня вашего "
-"мастерства и присвоения ранга."
-msgstr[2] ""
-"Завершите %(maxBattlesCount)s боёв в режиме для определения уровня вашего "
-"мастерства и присвоения ранга."
-
-msgid "mainWidgetTooltip/qualificationName"
-msgstr "Квалификация"
-
-msgid "mainWidgetTooltip/ratingScore"
-msgstr "Очки рейтинга"
-
 msgid "membersWindow/memberCountDropdown/description"
 msgstr "Игроков во взводе"
 
@@ -781,6 +675,9 @@ msgid "noVehicles/text/vehicleUnavailable"
 msgstr ""
 "Для участия в режиме «Натиск» в Ангаре должна быть хотя бы одна машина "
 "%(levels)s уровня, подходящая для игры в режиме."
+
+msgid "noVehicles/title"
+msgstr "В Ангаре нет подходящей техники"
 
 msgid "page/heading/leaderboard"
 msgstr "ТАБЛИЦА ЛИДЕРОВ"
@@ -835,51 +732,14 @@ msgstr "Ожидание игроков..."
 msgid "prebattleTimer/wait/selectVehicle"
 msgstr "Выберите машину"
 
-msgid "primeTimeView/endOfCycle"
-msgstr "Этап на сервере %(server)s завершился"
-
-msgid "primeTimeView/server"
-msgstr "Доступный для входа сервер: %(server)s."
-
-msgid "primeTimeView/serverTooltip"
-msgstr ""
-"Сервер %(server)s\n"
-"Бои будут доступны ещё %(time)s"
-
-msgid "primeTimeView/serverUnavailableTooltip"
-msgstr ""
-"Сервер %(server)s\n"
-"Бои станут доступны через %(time)s"
-
-msgid "primeTimeView/servers"
-msgstr "Доступные для входа серверы:"
-
-msgid "primeTimeView/status/allServersDisabled"
-msgstr "Бои недоступны на всех серверах"
-
-msgid "primeTimeView/status/disableFirst"
-msgstr "Режим на сервере %(server)s недоступен"
-
-msgid "primeTimeView/status/primeIsAvailable"
-msgstr "Бои на сервере %(server)s будут доступны ещё %(time)s"
-
-msgid "primeTimeView/status/primeWillBeAvailable"
-msgstr "Начало боёв на сервере %(server)s через %(time)s"
-
 msgid "primeTimeView/status/seasonDisabled/first"
-msgstr "Сезон Лазурной мантикоры на сервере %(server)s завершился."
+msgstr "Сезон Лазурного дракона на сервере %(server)s завершился."
 
 msgid "primeTimeView/status/seasonDisabled/second"
-msgstr "Сезон Алой мантикоры на сервере %(server)s завершился."
+msgstr "Сезон Алого дракона на сервере %(server)s завершился."
 
 msgid "primeTimeView/status/seasonDisabled/third"
-msgstr "Сезон Нефритовой мантикоры на сервере %(server)s завершился."
-
-msgid "primeTimeView/status/untill"
-msgstr "Бои недоступны до %(startTime)s на сервере %(server)s"
-
-msgid "primeTimeView/title"
-msgstr "НАТИСК"
+msgstr "Сезон Нефритового дракона на сервере %(server)s завершился."
 
 msgid "products/actions/buy"
 msgstr "Приобрести"
@@ -907,8 +767,9 @@ msgstr "–%(discountPercentage)s%"
 msgid "products/discountDescription"
 msgstr ""
 "До начала следующего сезона вам будут доступны товары и скидка за "
-"{fff_Open}максимально{fff_Close} {fff_Open}достигнутый{fff_Close} "
-"{fff_Open}ранг{fff_Close}."
+"{eeede9e6_Open}максимально{eeede9e6_Close} "
+"{eeede9e6_Open}достигнутый{eeede9e6_Close} "
+"{eeede9e6_Open}ранг{eeede9e6_Close}."
 
 msgid "products/discountSectionName"
 msgstr "УСЛОВИЯ ДОСТУПА И СКИДКИ"
@@ -952,6 +813,66 @@ msgstr "Доступно для восстановления на Складе"
 
 msgid "products/style3d"
 msgstr "3D-cтиль %(name)s"
+
+msgid "progressionTooltip/division"
+msgstr "Дивизион %(divisionName)s"
+
+msgid "progressionTooltip/divisionDescription"
+msgstr ""
+"В этом дивизионе находятся игроки, набравшие {eeede9e6_Open}от %(fromScore) "
+"до %(toScore){eeede9e6_Close} очков рейтинга."
+
+msgid "progressionTooltip/info/fifth"
+msgstr ""
+"Ранг «Чемпион» присваивается игрокам, набравшим {eeede9e6_Open}не менее "
+"%(fromScore){eeede9e6_Close} очков рейтинга."
+
+msgid "progressionTooltip/info/sixth"
+msgstr ""
+"Ранг «Легенда» присваивается "
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы "
+"лидеров."
+
+msgid "progressionTooltip/qualification/condition"
+msgid_plural "plural/progressionTooltip/qualification/condition"
+msgstr[0] ""
+"Проведите %(maxBattlesCount)s бой в режиме для определения уровня вашего "
+"мастерства и присвоения ранга."
+msgstr[1] ""
+"Проведите %(maxBattlesCount)s боя в режиме для определения уровня вашего "
+"мастерства и присвоения ранга."
+msgstr[2] ""
+"Проведите %(maxBattlesCount)s боёв в режиме для определения уровня вашего "
+"мастерства и присвоения ранга."
+
+msgid "progressionTooltip/qualificationName"
+msgstr "Квалификация"
+
+msgid "progressionTooltip/rankInactivity/daysLeft"
+msgstr ""
+"Дней до снижения рейтинга: "
+"{eeede9e6_Open}%(rankInactivityCount)s{eeede9e6_Close}"
+
+msgid "progressionTooltip/rankInactivity/description/active"
+msgid_plural "plural/progressionTooltip/rankInactivity/description/active"
+msgstr[0] ""
+"Без участия в сражениях «Натиска» вы потеряете "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} очко рейтинга."
+msgstr[1] ""
+"Без участия в сражениях «Натиска» вы потеряете "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} очка рейтинга."
+msgstr[2] ""
+"Без участия в сражениях «Натиска» вы потеряете "
+"{eeede9e6_Open}%(count)s{eeede9e6_Close} очков рейтинга."
+
+msgid "progressionTooltip/rankInactivity/header/active"
+msgstr "Ранговая неактивность влияет на ваш рейтинг."
+
+msgid "progressionTooltip/rankInactivity/warning"
+msgstr "Проведите бой до конца дня, чтобы сохранить текущий ранг."
+
+msgid "progressionTooltip/ratingScore"
+msgstr "Очки рейтинга"
 
 msgid "purchase/affirmative"
 msgstr "Так точно!"
@@ -998,13 +919,13 @@ msgstr ""
 msgid "qualification/condition"
 msgid_plural "plural/qualification/condition"
 msgstr[0] ""
-"Завершите {white_Open}%(maxBattlesCount)s бой{white_Close} в режиме для "
+"Проведите {eeede9_Open}%(maxBattlesCount)s бой{eeede9_Close} в режиме для "
 "определения уровня вашего мастерства и присвоения ранга."
 msgstr[1] ""
-"Завершите {white_Open}%(maxBattlesCount)s боя{white_Close} в режиме для "
+"Проведите {eeede9_Open}%(maxBattlesCount)s боя{eeede9_Close} в режиме для "
 "определения уровня вашего мастерства и присвоения ранга."
 msgstr[2] ""
-"Завершите {white_Open}%(maxBattlesCount)s боёв{white_Close} в режиме для "
+"Проведите {eeede9_Open}%(maxBattlesCount)s боёв{eeede9_Close} в режиме для "
 "определения уровня вашего мастерства и присвоения ранга."
 
 msgid "qualification/conditionTooltip/body"
@@ -1023,13 +944,13 @@ msgid "qualification/conditionTooltip/header"
 msgstr "Правила квалификации"
 
 msgid "qualification/counter"
-msgstr "%(battlesCount)s / %(maxBattlesCount)s"
+msgstr "%(battlesCount)s%(divider)s%(maxBattlesCount)s"
 
 msgid "qualification/counterWithDescription"
 msgstr "Боёв проведено"
 
 msgid "qualification/ratingCalculationDescription"
-msgstr "Ожидание результатов квалификации для присвоения ранга %(timerIcon)s"
+msgstr "%(timerIcon)s Ожидание результатов квалификации для присвоения ранга"
 
 msgid "qualification/ratingCalculationTooltip"
 msgstr ""
@@ -1101,92 +1022,87 @@ msgstr "Дней до снижения рейтинга: %(count)s"
 
 msgid "rankInfo/current/fifth"
 msgstr ""
-"Ранг «Чемпион» присваивается игрокам, набравшим {whiteSpanish_Open}от "
-"%(fromScore){whiteSpanish_Close} очков рейтинга"
+"Ранг «Чемпион» присваивается игрокам, набравшим {eeede9e6_Open}не менее "
+"%(fromScore){eeede9e6_Close} очков рейтинга."
 
 msgid "rankInfo/current/sixth"
 msgstr ""
 "Ранг «Легенда» присваивается "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров"
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы "
+"лидеров."
 
 msgid "rankItemStatus/current/description/fifth"
 msgstr ""
 "Для получения ранга «Легенда» попадите в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга."
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга."
 
 msgid "rankItemStatus/current/description/sixth"
 msgstr ""
 "Для защиты ранга «Легенда» оставайтесь в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга."
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга."
 
 msgid "rankItemStatus/current/extendedDescription/fifth"
 msgstr ""
 "Для получения ранга «Легенда» попадите в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга. Количество очков рейтинга у "
-"последнего игрока в ранге "
-"«Легенда»&nbsp;—&nbsp;{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга. Количество очков рейтинга у последнего игрока"
+" в ранге «Легенда»&nbsp;—&nbsp;{eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
 msgid "rankItemStatus/current/extendedDescription/sixth"
 msgstr ""
 "Для защиты ранга «Легенда» оставайтесь в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга. Количество очков рейтинга у "
-"последнего игрока в ранге "
-"«Легенда»&nbsp;—&nbsp;{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга. Количество очков рейтинга у последнего игрока"
+" в ранге «Легенда»&nbsp;—&nbsp;{eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
 msgid "rankItemStatus/future/description/fifth"
 msgstr ""
-"Ранг «Чемпион» присваивается игрокам, набравшим "
-"минимум&nbsp;{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} очков "
-"рейтинга."
+"Ранг «Чемпион» присваивается игрокам, набравшим не "
+"менее&nbsp;{eeede9e6_Open}%(fromScore){eeede9e6_Close} очков рейтинга."
 
 msgid "rankItemStatus/future/description/first"
 msgstr ""
 "Ранг «Железо» присваивается игрокам, набравшим "
-"{whiteSpanish_Open}от&nbsp;%(fromScore)&nbsp;до&nbsp;%(toScore){whiteSpanish_Close}"
-" очков рейтинга."
+"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "rankItemStatus/future/description/fourth"
 msgstr ""
 "Ранг «Золото» присваивается игрокам, набравшим "
-"{whiteSpanish_Open}от&nbsp;%(fromScore) "
-"до&nbsp;%(toScore){whiteSpanish_Close} очков рейтинга."
+"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "rankItemStatus/future/description/second"
 msgstr ""
 "Ранг «Бронза» присваивается игрокам, набравшим "
-"{whiteSpanish_Open}от&nbsp;%(fromScore)&nbsp;до&nbsp;%(toScore){whiteSpanish_Close}"
-" очков рейтинга."
+"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "rankItemStatus/future/description/sixth"
 msgstr ""
 "Для получения ранга «Легенда» попадите в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга."
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга."
 
 msgid "rankItemStatus/future/description/third"
 msgstr ""
 "Ранг «Серебро» присваивается игрокам, набравшим "
-"{whiteSpanish_Open}от&nbsp;%(fromScore)&nbsp;до&nbsp;%(toScore){whiteSpanish_Close}"
-" очков рейтинга."
+"{eeede9e6_Open}от&nbsp;%(fromScore) до&nbsp;%(toScore){eeede9e6_Close} очков"
+" рейтинга."
 
 msgid "rankItemStatus/future/extendedDescription/sixth"
 msgstr ""
 "Для получения ранга «Легенда» попадите в "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга. Количество очков рейтинга у "
-"последнего игрока в ранге "
-"«Легенда»&nbsp;—&nbsp;{whiteSpanish_Open}%(pointsCount){whiteSpanish_Close}"
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга. Количество очков рейтинга у последнего игрока"
+" в ранге «Легенда»&nbsp;—&nbsp;{eeede9e6_Open}%(pointsCount){eeede9e6_Close}"
 
 msgid "rankItemStatus/previous/description/fifth"
 msgstr ""
-"Ранг «Чемпион» присваивается игрокам, набравшим "
-"минимум&nbsp;{whiteSpanish_Open}%(fromScore){whiteSpanish_Close} очков "
-"рейтинга."
+"Ранг «Чемпион» присваивается игрокам, набравшим не "
+"менее&nbsp;{eeede9e6_Open}%(fromScore){eeede9e6_Close} очков рейтинга."
 
 msgid "rankUpper/fifth"
 msgstr "ЧЕМПИОН"
@@ -1247,13 +1163,10 @@ msgid "rewards/status/achieved"
 msgstr "Награда получена"
 
 msgid "rewards/subtitle/customizations"
-msgstr ""
-"{whiteSpanish_Open}Для %(vehicleLevel)s уровня техники{whiteSpanish_Close}"
+msgstr "{b2afab_Open}Для техники %(vehicleLevel)s уровня{b2afab_Close}"
 
 msgid "rewards/subtitle/styleProgress"
-msgstr ""
-"{whiteSpanish_Open}Для стиля «Мифический зверь "
-"(нефритовый)»{whiteSpanish_Close}"
+msgstr "{b2afab_Open}Для стиля «Король драконов (лазурный)»{b2afab_Close}"
 
 msgid "rewards/subtitle/vehicles_rent"
 msgstr "%(vehicleLevel)s уровень"
@@ -1277,19 +1190,19 @@ msgid "rewardsScreen/description/qualificationEnded"
 msgstr "НАТИСК. КВАЛИФИКАЦИЯ ЗАВЕРШЕНА"
 
 msgid "rewardsScreen/description/season/first"
-msgstr "НАТИСК. СЕЗОН ЛАЗУРНОЙ МАНТИКОРЫ"
+msgstr "НАТИСК. СЕЗОН ЛАЗУРНОГО ДРАКОНА"
 
 msgid "rewardsScreen/description/season/second"
-msgstr "НАТИСК. СЕЗОН АЛОЙ МАНТИКОРЫ"
+msgstr "НАТИСК. СЕЗОН АЛОГО ДРАКОНА"
 
 msgid "rewardsScreen/description/season/third"
-msgstr "НАТИСК. СЕЗОН НЕФРИТОВОЙ МАНТИКОРЫ"
+msgstr "НАТИСК. СЕЗОН НЕФРИТОВОГО ДРАКОНА"
 
 msgid "rewardsScreen/description/year"
-msgstr "НАТИСК. ГОД МАНТИКОРЫ"
+msgstr "НАТИСК. ГОД ДРАКОНА"
 
 msgid "rewardsScreen/goToVehicle"
-msgstr "Где мой «Стингер»?!"
+msgstr "Где мой Ashbringer?!"
 
 msgid "rewardsScreen/noSeasonResult"
 msgstr "Нет ранга"
@@ -1330,12 +1243,12 @@ msgstr ""
 "максимально достигнутый ранг."
 
 msgid "rewardsScreen/subtitle/division"
-msgstr "{cream_Open}Ранг «%(rank)s»{cream_Close}"
+msgstr "{ffe4c0_Open}Ранг «%(rank)s»{ffe4c0_Close}"
 
 msgid "rewardsScreen/subtitle/qualificationRewards"
 msgstr ""
 "По итогам квалификации вы получили награды за следующие ранги: "
-"{cream_Open}%(ranks)s{cream_Close}"
+"{ffe4c0_Open}%(ranks)s{ffe4c0_Close}"
 
 msgid "rewardsScreen/subtitle/qualificationRewardsSeparator"
 msgstr ", "
@@ -1343,31 +1256,31 @@ msgstr ", "
 msgid "rewardsScreen/subtitle/rankRewards"
 msgstr ""
 "Вы получили награду за повышение до ранга "
-"{cream_Open}«%(rank)s»{cream_Close}"
+"{ffe4c0_Open}«%(rank)s»{ffe4c0_Close}"
 
 msgid "rewardsScreen/subtitle/tokensRewards"
 msgid_plural "plural/rewardsScreen/subtitle/tokensRewards"
 msgstr[0] ""
-"Награда за выполнение {cream_Open}%(tokensCount)s{cream_Close} еженедельной "
-"задачи"
+"Награда за выполнение {ffe4c0_Open}%(tokensCount)s{ffe4c0_Close} "
+"еженедельной задачи"
 msgstr[1] ""
-"Награда за выполнение {cream_Open}%(tokensCount)s{cream_Close} еженедельных "
-"задач"
+"Награда за выполнение {ffe4c0_Open}%(tokensCount)s{ffe4c0_Close} "
+"еженедельных задач"
 msgstr[2] ""
-"Награда за выполнение {cream_Open}%(tokensCount)s{cream_Close} еженедельных "
-"задач"
+"Награда за выполнение {ffe4c0_Open}%(tokensCount)s{ffe4c0_Close} "
+"еженедельных задач"
 
 msgid "rewardsScreen/title/division"
 msgstr "ДОСТИГНУТ ДИВИЗИОН %(division)s"
 
 msgid "rewardsScreen/title/qualificationRank"
-msgstr "ДОСТИГНУТ РАНГ {cream_Open}«%(rankUpperName)s»{cream_Close}"
+msgstr "ДОСТИГНУТ РАНГ {ffe4c0_Open}«%(rankUpperName)s»{ffe4c0_Close}"
 
 msgid "rewardsScreen/title/qualificationRewards"
 msgstr "НАГРАДА ЗА ДОСТИГНУТЫЕ РАНГИ"
 
 msgid "rewardsScreen/title/rank"
-msgstr "ДОСТИГНУТ РАНГ {cream_Open}«%(rankUpperName)s»{cream_Close}"
+msgstr "ДОСТИГНУТ РАНГ {ffe4c0_Open}«%(rankUpperName)s»{ffe4c0_Close}"
 
 msgid "rewardsScreen/title/rankRewards"
 msgstr "НАГРАДА ЗА НОВЫЙ РАНГ"
@@ -1422,17 +1335,14 @@ msgstr "%(startDate)s – %(endDate)s"
 msgid "season/secondsLeft"
 msgstr "До завершения: %(seconds)s с"
 
-msgid "seasonModifier/title"
-msgstr "Модификаторы «Натиска»"
-
 msgid "seasonName/first"
-msgstr "Сезон Лазурной мантикоры"
+msgstr "Сезон Лазурного дракона"
 
 msgid "seasonName/second"
-msgstr "Сезон Алой мантикоры"
+msgstr "Сезон Алого дракона"
 
 msgid "seasonName/third"
-msgstr "Сезон Нефритовой мантикоры"
+msgstr "Сезон Нефритового дракона"
 
 msgid "seasonPointTooltip/header"
 msgstr "Знамёна «Натиска»"
@@ -1496,13 +1406,13 @@ msgstr[1] "Получено %(points)s знамени «Натиска»"
 msgstr[2] "Получено %(points)s знамён «Натиска»"
 
 msgid "seasonStatistics/seasonNameUpper/first"
-msgstr "СЕЗОН I. ЛАЗУРНАЯ МАНТИКОРА"
+msgstr "СЕЗОН I. ЛАЗУРНЫЙ ДРАКОН"
 
 msgid "seasonStatistics/seasonNameUpper/second"
-msgstr "СЕЗОН II. АЛАЯ МАНТИКОРА"
+msgstr "СЕЗОН II. АЛЫЙ ДРАКОН"
 
 msgid "seasonStatistics/seasonNameUpper/third"
-msgstr "СЕЗОН III. НЕФРИТОВАЯ МАНТИКОРА"
+msgstr "СЕЗОН III. НЕФРИТОВЫЙ ДРАКОН"
 
 msgid "seasonStatistics/section/statistics/battles/additional"
 msgstr "Побед: %(additional)s"
@@ -1601,13 +1511,13 @@ msgid "selectorTooltip/unavailable/nextSeason"
 msgstr "Режим станет доступен %(time)s"
 
 msgid "shortSeasonName/first"
-msgstr "Лазурная мантикора"
+msgstr "Лазурный дракон"
 
 msgid "shortSeasonName/second"
-msgstr "Алая мантикора"
+msgstr "Алый дракон"
 
 msgid "shortSeasonName/third"
-msgstr "Нефритовая мантикора"
+msgstr "Нефритовый дракон"
 
 msgid "sidebar/tabs/tooltip/body/leaderboard"
 msgstr ""
@@ -1661,9 +1571,9 @@ msgstr "Годовая статистика"
 
 msgid "sixthRankTooltip/description"
 msgstr ""
-"Ранг {whiteSpanish_Open}«Легенда»{whiteSpanish_Close} присваивается "
-"{whiteSpanish_Open}топ-%(topPercentage)%{whiteSpanish_Close} игроков таблицы"
-" лидеров по количеству очков рейтинга."
+"Ранг {eeede9e6_Open}«Легенда»{eeede9e6_Close} присваивается "
+"{eeede9e6_Open}топ-%(topPercentage)%{eeede9e6_Close} игроков таблицы лидеров"
+" по количеству очков рейтинга."
 
 msgid "style3dTooltip/954"
 msgstr "Серебряные шипы"
@@ -1780,6 +1690,12 @@ msgstr ""
 msgid "system_messages/weeklyReward/title"
 msgstr "Награда за выполнение еженедельной задачи"
 
+msgid "tooltip/infoPageButton/header"
+msgstr "О «Натиске»"
+
+msgid "tooltip/whatsNewButton/header"
+msgstr "Сезонные обновления"
+
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "В турнире нельзя получить или потерять очки рейтинга."
 
@@ -1810,36 +1726,40 @@ msgstr "Войти в голосовой чат"
 msgid "waitingSpinner/message"
 msgstr "Загрузка содержимого..."
 
-msgid "weeklyQuestTooltip/additionalRewards"
+msgid "weeklyQuestWidgetTooltip/completed"
+msgstr "Задачи «Натиска» выполнены"
+
+msgid "weeklyQuestWidgetTooltip/completedDescription"
 msgstr ""
-"Вы получите дополнительную награду за выполнение "
-"{cream_Open}%(questsList)s{cream_Close} задач."
+"Отличная работа. Вы выполнили все еженедельные задачи. Не забудьте забрать "
+"награду, и до встречи в следующем сезоне!"
 
-msgid "weeklyQuestTooltip/countdownStatus"
-msgid_plural "plural/weeklyQuestTooltip/countdownStatus"
-msgstr[0] ""
-"%(value)s новая задача через:\n"
-"%(countdown)s"
-msgstr[1] ""
-"%(value)s новые задачи через:\n"
-"%(countdown)s"
-msgstr[2] ""
-"%(value)s новых задач через:\n"
-"%(countdown)s"
+msgid "weeklyQuestWidgetTooltip/counter"
+msgstr "%(current)s / %(total)s"
 
-msgid "weeklyQuestTooltip/counterQuests"
-msgstr "Выполнено задач: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
-
-msgid "weeklyQuestTooltip/questsProgres"
-msgstr "{yellow_Open}%(current)s{yellow_Close} / %(total)s"
-
-msgid "weeklyQuestTooltip/takeRewards/header"
-msgstr "Так держать!"
-
-msgid "weeklyQuestTooltip/takeRewards/text"
+msgid "weeklyQuestWidgetTooltip/description"
 msgstr ""
-"Вы выполнили все еженедельные задачи.\n"
-"Не забудьте забрать награду, и до встречи в следующем сезоне!"
+"Вы получите дополнительные награды за выполнение "
+"{eeede9e5_Open}%(questsList)s{eeede9e5_Close} и "
+"{eeede9e5_Open}%(lastQuest)s{eeede9e5_Close} задач."
+
+msgid "weeklyQuestWidgetTooltip/header"
+msgstr "Еженедельные задачи «Натиска»"
+
+msgid "weeklyQuestWidgetTooltip/missionsCounter"
+msgstr "Выполнено: %(counter)s"
+
+msgid "weeklyQuestWidgetTooltip/newMissions"
+msgid_plural "weeklyQuestWidgetTooltip/newMissions"
+msgstr[0] "%(value)s новая задача через:"
+msgstr[1] "%(value)s новые задачи через:"
+msgstr[2] "%(value)s новых задач через:"
+
+msgid "weeklyQuestWidgetTooltip/rewards"
+msgid_plural "weeklyQuestWidgetTooltip/rewards"
+msgstr[0] "Награда:"
+msgstr[1] "Награды:"
+msgstr[2] "Наград:"
 
 msgid "weeklyQuests/CountdownStatus/active"
 msgid_plural "plural/weeklyQuests/CountdownStatus/active"
@@ -1851,7 +1771,8 @@ msgid "weeklyQuests/CountdownStatus/done"
 msgstr "НОВЫЙ СЕЗОН — НОВЫЕ ЗАДАЧИ!"
 
 msgid "weeklyQuests/TokenProgress/header"
-msgstr "Выполнено задач: {yellow_Open}%(passed)s{yellow_Close}/%(total)s"
+msgstr ""
+"Выполнено задач: %(passed)s {eeede980_Open}/ %(total)s{eeede980_Close}"
 
 msgid "weeklyQuests/TokenProgress/subheader"
 msgid_plural "plural/weeklyQuests/TokenProgress/subheader"
@@ -1889,45 +1810,59 @@ msgstr "Для разблокировки выполните предыдущу�
 msgid "weeklyQuests/card/statusLockedTooltip/header"
 msgstr "Задача недоступна"
 
+msgid "weeklyQuestsWidget/claim"
+msgstr "Заберите награду!"
+
+msgid "weeklyQuestsWidget/completed"
+msgstr "Выполнено: %(current)s/%(total)s"
+
+msgid "weeklyQuestsWidget/counter"
+msgstr "%(current)s/%(total)s"
+
+msgid "weeklyQuestsWidget/missionsCounter"
+msgstr "Задача %(current)s/%(total)s"
+
+msgid "weeklyQuestsWidget/newMissions"
+msgid_plural "plural/weeklyQuestsWidget/newMissions"
+msgstr[0] "%(value)s новая задача через:"
+msgstr[1] "%(value)s новые задачи через:"
+msgstr[2] "%(value)s новых задач через:"
+
 msgid "whatsNewButtonLabel"
 msgstr "СЕЗОННЫЕ ОБНОВЛЕНИЯ"
 
 msgid "whatsNewView/banner/title/large"
-msgstr "СЕЗОН НЕФРИТОВОЙ МАНТИКОРЫ"
+msgstr "СЕЗОН ЛАЗУРНОГО ДРАКОНА"
 
 msgid "whatsNewView/banner/title/small"
 msgstr "НАТИСК. ЧТО НОВОГО?"
 
 msgid "whatsNewView/button/ok"
-msgstr "Шоу начинается!"
+msgstr "Зажжём!"
 
 msgid "whatsNewView/intro/description"
 msgstr ""
-"Не упустите последний шанс получить ценные награды в этом сезоне, включая "
-"специальный тяжёлый танк X уровня Stinger. Вместе с машиной вы получите все "
-"заработанные для неё 3D-стили, бесстрашный экипаж, а также экспериментальное"
-" оборудование на выбор, эффектный 2D-стиль и многое другое. Удачи на поле "
-"боя!"
+"Участвуйте в каждом из трёх сезонов и получайте ценные годовые награды, "
+"включая эксклюзивный тяжёлый танк X уровня Ashbringer со всеми заработанными"
+" для него 3D-стилями, бесстрашным экипажем, усовершенствованным и "
+"экспериментальным оборудованием на выбор, особым 2D-стилем и многим другим. "
+"Чем лучше вы будете играть в течение года, тем более выдающийся 3D-стиль "
+"получите."
 
 msgid "whatsNewView/intro/heading"
-msgstr "Насладитесь последними моментами года Мантикоры!"
+msgstr "Добро пожаловать в год Дракона!"
 
 msgid "whatsNewView/mapChanges/heading"
 msgstr "Карты"
 
-msgid "whatsNewView/roleSkills/description"
-msgstr ""
-"Большинство ролевых навыков получили балансные правки. Подробнее читайте в "
-"статье о новом сезоне."
-
-msgid "whatsNewView/roleSkills/heading"
-msgstr "Ребаланс ролевых навыков"
+msgid "whatsNewView/newVehicles"
+msgstr "Новые машины, доступные в «Натиске»"
 
 msgid "whatsNewView/stamp/removed"
 msgstr "УДАЛЕНО"
 
 msgid "whatsNewView/stamp/underDevelopment"
-msgstr "В ПЕРЕРАБОТКЕ"
+msgstr "++В ПЕРЕРАБОТКЕ++"
 
 msgid "whatsNewView/tag/changed"
 msgstr "Изменено"
@@ -2048,25 +1983,25 @@ msgid "yearlyStatistics/rating"
 msgstr "Очки рейтинга"
 
 msgid "yearlyStatistics/seasonDate/0"
-msgstr "Осень 2024"
+msgstr "Осень 2025"
 
 msgid "yearlyStatistics/seasonDate/1"
-msgstr "Зима 2025"
+msgstr "Зима 2026"
 
 msgid "yearlyStatistics/seasonDate/2"
-msgstr "Весна 2025"
+msgstr "Весна 2026"
 
 msgid "yearlyStatistics/seasonDateInterval"
 msgstr "%(start)s–%(end)s"
 
 msgid "yearlyStatistics/seasonName/0"
-msgstr "Сезон I. Лазурная мантикора"
+msgstr "Сезон I. Лазурный дракон"
 
 msgid "yearlyStatistics/seasonName/1"
-msgstr "Сезон II. Алая мантикора"
+msgstr "Сезон II. Алый дракон"
 
 msgid "yearlyStatistics/seasonName/2"
-msgstr "Сезон III. Нефритовая мантикора"
+msgstr "Сезон III. Нефритовый дракон"
 
 msgid "yearlyStatistics/seasonStatus/active"
 msgstr "Текущий"

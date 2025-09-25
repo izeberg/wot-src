@@ -29,7 +29,6 @@ from shared_utils import findFirst
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.shared import IItemsCache
 from skeletons.gui.game_control import IQuestsController, IRankedBattlesController, IBattleRoyaleController, IComp7Controller
-from battle_royale.gui.Scaleform.daapi.view.lobby.tooltips.battle_royale_tooltip_quest_helper import getQuestsDescriptionForHangarFlag, getQuestTooltipBlock
 _MAX_AWARDS_PER_TOOLTIP = 5
 _MAX_QUESTS_PER_TOOLTIP = 4
 _MAX_BONUSES_PER_QUEST = 2
@@ -71,7 +70,7 @@ class QuestsPreviewTooltipData(BlocksTooltipData):
         items = super(QuestsPreviewTooltipData, self)._packBlocks()
         vehicle = g_currentVehicle.item
         quests = self._getQuests(vehicle)
-        if self.__comp7Controller.isComp7PrbActive():
+        if self.__comp7Controller.isModePrbActive():
             quests = [ quest for quest in quests if quest.hasBonusType(constants.ARENA_BONUS_TYPE.COMP7) ]
         if quests:
             items.append(self._getHeader(len(quests), vehicle.shortUserName, R.strings.tooltips.hangar.header.quests.description.vehicle()))
@@ -105,8 +104,6 @@ class QuestsPreviewTooltipData(BlocksTooltipData):
         return any([ bool(getCurrentModeQuestsForVehicle(veh, True)) for veh in vehicles ])
 
     def __getQuestItem(self, quest):
-        if self.__battleRoyaleController.isBattleRoyaleMode():
-            return getQuestTooltipBlock(quest)
         bonusNames = []
         for bonus in quest.getBonuses():
             if bonus.getName() == 'battleToken':
@@ -133,14 +130,9 @@ class QuestsPreviewTooltipData(BlocksTooltipData):
         return self._packQuest(quest.getUserName(), bonusNames, isAvailable)
 
     def _getHeader(self, count, vehicleName, description):
-        if self.__battleRoyaleController.isBattleRoyaleMode():
-            questHeader = backport.text(R.strings.epic_battle.questsTooltip.epicBattle.steelhunter.header())
-            img = backport.image(R.images.gui.maps.icons.quests.epic_steelhunter_quests_infotip())
-            desc = getQuestsDescriptionForHangarFlag()
-        else:
-            questHeader = backport.text(R.strings.tooltips.hangar.header.quests.header(), count=count)
-            img = backport.image(R.images.gui.maps.icons.quests.questTooltipHeader())
-            desc = text_styles.main(backport.text(description, vehicle=vehicleName))
+        questHeader = backport.text(R.strings.tooltips.hangar.header.quests.header(), count=count)
+        img = backport.image(R.images.gui.maps.icons.quests.questTooltipHeader())
+        desc = text_styles.main(backport.text(description, vehicle=vehicleName))
         return formatters.packImageTextBlockData(title=text_styles.highTitle(questHeader), img=img, txtPadding=formatters.packPadding(top=20), txtOffset=20, desc=desc)
 
     def _getBottom(self, value):

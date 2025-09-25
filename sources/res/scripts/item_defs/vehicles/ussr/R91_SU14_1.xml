@@ -2866,7 +2866,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>48700</maxLoad>
 			<terrainResistance>
 				1.5 1.7 2.9
 				<!--BW_String-->
@@ -5235,7 +5234,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>15000</weight>
-			<maxLoad>52700</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.7
 				<!--BW_String-->
@@ -7599,7 +7597,7 @@
 		<Turret_1_SU14_1>
 			<ceilless>true</ceilless>
 			<userString>#ussr_vehicles:Turret_1_SU14_1</userString>
-			<tags>cannotDetach</tags>
+			<tags>cannotDetach turretless</tags>
 			<level>7</level>
 			<price>1200</price>
 			<notInShop>true</notInShop>
@@ -7894,8 +7892,8 @@
 		</Turret_1_SU14_1>
 		<Turret_2_SU14_1>
 			<ceilless>true</ceilless>
-			<userString>#ussr_vehicles:SU-14_1</userString>
-			<tags>cannotDetach</tags>
+			<userString>#ussr_vehicles:Turret_2_SU14_1</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>7</level>
 			<price>1200</price>
 			<notInShop>true</notInShop>

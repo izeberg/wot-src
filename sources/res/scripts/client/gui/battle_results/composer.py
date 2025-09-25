@@ -3,6 +3,7 @@ from constants import ARENA_BONUS_TYPE
 from gui.battle_results import templates
 from gui.battle_results.components import base
 from gui.battle_results.stats_ctrl import IBattleResultStatsCtrl
+from gui.battle_results.random_stats_ctrl import RandomBattleResultStatsCtrl
 from gui.shared import event_dispatcher
 from gui.shared.system_factory import registerBattleResultStatsCtrl
 from helpers import dependency
@@ -39,13 +40,12 @@ class StatsComposer(IBattleResultStatsCtrl):
     def getVO(self):
         return self._block.getVO()
 
+    def onResultsPosted(self, arenaUniqueID):
+        event_dispatcher.notifyBattleResultsPosted(arenaUniqueID)
+
     @staticmethod
     def onShowResults(arenaUniqueID):
         return event_dispatcher.showBattleResultsWindow(arenaUniqueID)
-
-    @staticmethod
-    def onResultsPosted(arenaUniqueID):
-        event_dispatcher.notifyBattleResultsPosted(arenaUniqueID)
 
     def _registerTabs(self, reusable):
         self._block.addNextComponent(templates.REGULAR_TABS_BLOCK.clone())
@@ -129,16 +129,15 @@ class MapsTrainingStatsComposer(IBattleResultStatsCtrl):
     def getVO(self):
         return self._block.getVO()
 
-    @staticmethod
-    def onShowResults(arenaUniqueID):
-        MapsTrainingStatsComposer._fromNotifications.add(arenaUniqueID)
-
-    @staticmethod
-    def onResultsPosted(arenaUniqueID):
+    def onResultsPosted(self, arenaUniqueID):
         isFromNotifications = arenaUniqueID in MapsTrainingStatsComposer._fromNotifications
         event_dispatcher.showMapsTrainingResultsWindow(arenaUniqueID, isFromNotifications)
         if isFromNotifications:
             MapsTrainingStatsComposer._fromNotifications.remove(arenaUniqueID)
+
+    @staticmethod
+    def onShowResults(arenaUniqueID):
+        MapsTrainingStatsComposer._fromNotifications.add(arenaUniqueID)
 
 
 registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.EPIC_BATTLE, EpicStatsComposer)
@@ -147,3 +146,9 @@ registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.FORT_BATTLE_2, StrongholdBattleSt
 registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.SORTIE_2, StrongholdSortieBattleStatsComposer)
 registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.RANKED, RankedBattlesStatsComposer)
 registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.MAPS_TRAINING, MapsTrainingStatsComposer)
+registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.REGULAR, RandomBattleResultStatsCtrl)
+registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.TRAINING, RandomBattleResultStatsCtrl)
+registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.TOURNAMENT_REGULAR, RandomBattleResultStatsCtrl)
+registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.RANDOM_NP2, RandomBattleResultStatsCtrl)
+registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.EPIC_RANDOM, RandomBattleResultStatsCtrl)
+registerBattleResultStatsCtrl(ARENA_BONUS_TYPE.WINBACK, RandomBattleResultStatsCtrl)

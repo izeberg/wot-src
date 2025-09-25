@@ -22,50 +22,71 @@ msgstr "BMW IV Kai"
 msgid "BMW_IV_Kai_Ni"
 msgstr "BMW IV Kai Ni"
 
-msgid "Chassis_Chi_Ha"
-msgstr "Type 97 Chi-Ha"
-
-msgid "Chassis_Chi_Ha_2"
-msgstr "Type 97 Chi-Ha Kai"
-
-msgid "Chassis_Chi_He"
-msgstr "Type 1 Chi-He"
-
-msgid "Chassis_Chi_He_2"
-msgstr "Type 2 Ho-I"
-
 msgid "Chassis_Chi_Ni"
 msgstr "Medium Tank Plan 2"
 
 msgid "Chassis_Chi_Ni_2"
 msgstr "Chi-Ni"
 
-msgid "Chassis_Chi_Nu"
-msgstr "New Medium Tank Hei (19)"
-
-msgid "Chassis_Chi_Nu_2"
-msgstr "Type 3 Chi-Nu"
-
 msgid "Chassis_Chi_Nu_Kai"
 msgstr "Type 3 Chi-Nu Kai"
 
-msgid "Chassis_Chi_Ri"
-msgstr "Type 5 Chi-Ri Plan 1"
+msgid "Chassis_J01_NC27"
+msgstr "Renault Otsu"
 
-msgid "Chassis_Chi_Ri_2"
-msgstr "Type 5 Chi-Ri Plan 2"
-
-msgid "Chassis_Chi_To"
-msgstr "Type 4 Chi-To Prototype"
-
-msgid "Chassis_Chi_To_2"
-msgstr "Type 4 Chi-To Production"
-
-msgid "Chassis_Ha_Go"
+msgid "Chassis_J03_Ha_Go"
 msgstr "Type 95 Ha-Go"
 
-msgid "Chassis_Ha_Go_2"
+msgid "Chassis_J03_Ha_Go_2"
 msgstr "Type 4 Ke-Nu"
+
+msgid "Chassis_J07_Chi_Ha"
+msgstr "Type 97 Chi-Ha"
+
+msgid "Chassis_J07_Chi_Ha_2"
+msgstr "Type 97 Chi-Ha Kai"
+
+msgid "Chassis_J08_Chi_Nu"
+msgstr "New Medium Tank Hei (19)"
+
+msgid "Chassis_J08_Chi_Nu_2"
+msgstr "Type 3 Chi-Nu"
+
+msgid "Chassis_J09_Chi_He"
+msgstr "Type 1 Chi-He"
+
+msgid "Chassis_J09_Chi_He_2"
+msgstr "Type 2 Ho-I"
+
+msgid "Chassis_J10_Chi_To"
+msgstr "Type 4 Chi-To Prototype"
+
+msgid "Chassis_J10_Chi_To_2"
+msgstr "Type 4 Chi-To Production"
+
+msgid "Chassis_J11_Chi_Ri"
+msgstr "Type 5 Chi-Ri Plan 1"
+
+msgid "Chassis_J11_Chi_Ri_2"
+msgstr "Type 5 Chi-Ri Plan 2"
+
+msgid "Chassis_J13_STA_1"
+msgstr "STA-1"
+
+msgid "Chassis_J13_STA_1_2"
+msgstr "STA-3"
+
+msgid "Chassis_J14_Type_61"
+msgstr "STA-4"
+
+msgid "Chassis_J14_Type_61_2"
+msgstr "Type 61"
+
+msgid "Chassis_J16_ST_B1"
+msgstr "STB-1"
+
+msgid "Chassis_J16_ST_B1_7x7"
+msgstr "STB-1"
 
 msgid "Chassis_J19_Tiger_I_Jpn"
 msgstr "Heavy Tank No. VI"
@@ -211,6 +232,9 @@ msgstr "Type Mitsu 108"
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
+msgid "Chassis_J51_Ashigaru"
+msgstr "Ashigaru"
+
 msgid "Chassis_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
 
@@ -229,62 +253,11 @@ msgstr "Type 98 Ke-Ni Otsu"
 msgid "Chassis_NC27"
 msgstr "Renault NC-27"
 
-msgid "Chassis_NC27_2"
-msgstr "Renault Otsu"
-
-msgid "Chassis_STA_1"
-msgstr "STA-1"
-
-msgid "Chassis_STA_1_2"
-msgstr "STA-3"
-
 msgid "Chassis_STA_2_3"
 msgstr "STA-2"
 
-msgid "Chassis_ST_B1"
-msgstr "STB-1"
-
-msgid "Chassis_ST_B1_7x7"
-msgstr "STB-1"
-
 msgid "Chassis_Te_Ke"
 msgstr "Type 97 Te-Ke"
-
-msgid "Chassis_Type_61"
-msgstr "STA-4"
-
-msgid "Chassis_Type_61_2"
-msgstr "Type 61"
-
-msgid "Chi_Ha"
-msgstr "Type 97 Chi-Ha"
-
-msgid "Chi_Ha_descr"
-msgstr ""
-"Разработан японской компанией Mitsubishi в 1935–1937 гг. Выпускался серийно "
-"с 1938 по 1942 год, а в 1941–1942 гг. одновременно с модернизированным "
-"вариантом Shinhoto Chi-Ha. Всего было выпущено 1220 машин обоих типов. Танки"
-" Chi-Ha и Shinhoto Chi-Ha активно использовались японскими войсками в боевых"
-" действиях в Китае, Тихоокеанском регионе и на Курильских островах. После "
-"капитуляции Японии применялись в Гражданской войне 1946–1949 гг. войсками "
-"НОАК и армией Гоминьдана."
-
-msgid "Chi_Ha_short"
-msgstr "Chi-Ha"
-
-msgid "Chi_He"
-msgstr "Type 1 Chi-He"
-
-msgid "Chi_He_descr"
-msgstr ""
-"Средний танк Type 1 Chi-He являлся дальнейшим развитием танка Type 97 Chi-"
-"Ha. Разработан в 1941 году, однако из-за нехватки стали массовое "
-"производство началось только в 1943 году. Всего было выпущено 170 машин, "
-"большинство из которых использовались в Японии, но не принимали участие в "
-"боевых действиях."
-
-msgid "Chi_He_short"
-msgstr "Chi-He"
 
 msgid "Chi_Ni"
 msgstr "Chi-Ni"
@@ -298,9 +271,6 @@ msgstr ""
 
 msgid "Chi_Ni_short"
 msgstr "Chi-Ni"
-
-msgid "Chi_Nu"
-msgstr "Type 3 Chi-Nu"
 
 msgid "Chi_Nu_Kai"
 msgstr "Type 3 Chi-Nu Kai"
@@ -323,36 +293,8 @@ msgstr "Chi-Nu Kai"
 msgid "Chi_Nu_Kai_short_special"
 msgstr "Высокая точность, бронепробиваемость, бронирование маски орудия"
 
-msgid "Chi_Nu_descr"
-msgstr ""
-"Средний танк Type 3 Chi-Nu представляет собой модификацию танка Type 1 Chi-He с новой башней\n"
-"и пушкой. Данная машина отвечала всем современным требованиям и являлась наиболее мощной из серийных танков Японии. Из-за нехватки комплектующих и материалов было выпущено всего 60 машин."
-
-msgid "Chi_Nu_short"
-msgstr "Chi-Nu"
-
-msgid "Chi_Ri"
-msgstr "Type 5 Chi-Ri"
-
-msgid "Chi_Ri_descr"
-msgstr ""
-"Единственный экземпляр разработан в начале 1945 года. Танк прошёл испытания и был рекомендован\n"
-"к принятию на вооружение. Однако до августа 1945 года серийное производство развернуть не удалось. После капитуляции единственный опытный образец был реквизирован американскими оккупационными властями и вывезен в США."
-
-msgid "Chi_Ri_short"
-msgstr "Chi-Ri"
-
-msgid "Chi_To"
-msgstr "Type 4 Chi-To"
-
-msgid "Chi_To_descr"
-msgstr ""
-"Средний танк Type 4 Chi-To разрабатывался с 1941 года.\n"
-"Предполагалось, что это будет первая японская машина, ориентированная именно на борьбу с танками противника, но проблемы с сырьём и комплектующими не позволили развернуть серийное производство. Всего к концу войны было выпущено шесть шасси\n"
-"и собрано два танка на их базе."
-
-msgid "Chi_To_short"
-msgstr "Chi-To"
+msgid "Continental_AOSI_1195_6"
+msgstr "Continental AOSI-1195-6"
 
 msgid "Edelweiss_Engine"
 msgstr "Edelweiss"
@@ -360,23 +302,25 @@ msgstr "Edelweiss"
 msgid "Edelweiss_Radio"
 msgstr "Edelweiss"
 
+msgid "Experimental_57_mm_Tank_Gun_Shin_10"
+msgstr "Experimental 57 mm Tank Gun Shin (10)"
+
+msgid "Experimental_57_mm_Tank_Gun_Shin_2"
+msgstr "Experimental 57 mm Tank Gun Shin (2)"
+
 msgid "FuG5A"
 msgstr "Fu 5 mit 20 WS.E."
 
-msgid "Ha_Go"
-msgstr "Type 95 Ha-Go"
+msgid "J01_NC27"
+msgstr "Renault Otsu"
 
-msgid "Ha_Go_descr"
+msgid "J01_NC27_descr"
 msgstr ""
-"Японский лёгкий танк, также известный как Type 95. Разрабатывался в "
-"1933–1935 годах как машина поддержки кавалерийских частей. Тем не менее, "
-"часто применялся в качестве танка сопровождения пехоты. Первый опытный "
-"образец был построен компанией Mitsubishi. Серийное производство танка было "
-"развёрнуто в 1936 году и продолжалось до 1943 года. Всего было выпущено 2378"
-" машин."
+"Разработан во Франции как проект модернизации танка Renault FT. Работы велись с 1925 по 1928 г. После закрытия программы модернизации модель была представлена на рынке. В 1929 году десять танков были приобретены Японией и получили обозначение\n"
+"Otsu-Gata Sensha (танк модель В). Японские машины были частично модернизированы и активно использовались как боевые и учебные танки."
 
-msgid "Ha_Go_short"
-msgstr "Ha-Go"
+msgid "J01_NC27_short"
+msgstr "R. Otsu"
 
 msgid "J02_Te_Ke_long_special"
 msgstr ""
@@ -388,6 +332,21 @@ msgstr ""
 msgid "J02_Te_Ke_short_special"
 msgstr "Отличное орудие, комфортные УВН"
 
+msgid "J03_Ha_Go"
+msgstr "Type 95 Ha-Go"
+
+msgid "J03_Ha_Go_descr"
+msgstr ""
+"Японский лёгкий танк, также известный как Type 95. Разрабатывался в "
+"1933–1935 годах как машина поддержки кавалерийских частей. Тем не менее, "
+"часто применялся в качестве танка сопровождения пехоты. Первый опытный "
+"образец был построен компанией Mitsubishi. Серийное производство танка было "
+"развёрнуто в 1936 году и продолжалось до 1943 года. Всего было выпущено 2378"
+" машин."
+
+msgid "J03_Ha_Go_short"
+msgstr "Ha-Go"
+
 msgid "J05_Ke_Ni_B_long_special"
 msgstr ""
 "Японский лёгкий танк III уровня. Обладает высоким уроном в минуту, неплохой "
@@ -396,6 +355,125 @@ msgstr ""
 
 msgid "J05_Ke_Ni_B_short_special"
 msgstr "Хорошая точность, неплохой запас прочности"
+
+msgid "J07_Chi_Ha"
+msgstr "Type 97 Chi-Ha"
+
+msgid "J07_Chi_Ha_descr"
+msgstr ""
+"Разработан японской компанией Mitsubishi в 1935–1937 гг. Выпускался серийно "
+"с 1938 по 1942 год, а в 1941–1942 гг. одновременно с модернизированным "
+"вариантом Shinhoto Chi-Ha. Всего было выпущено 1220 машин обоих типов. Танки"
+" Chi-Ha и Shinhoto Chi-Ha активно использовались японскими войсками в боевых"
+" действиях в Китае, Тихоокеанском регионе и на Курильских островах. После "
+"капитуляции Японии применялись в Гражданской войне 1946–1949 гг. войсками "
+"НОАК и армией Гоминьдана."
+
+msgid "J07_Chi_Ha_short"
+msgstr "Chi-Ha"
+
+msgid "J08_Chi_Nu"
+msgstr "Type 3 Chi-Nu"
+
+msgid "J08_Chi_Nu_descr"
+msgstr ""
+"Средний танк Type 3 Chi-Nu представляет собой модификацию танка Type 1 Chi-He с новой башней\n"
+"и пушкой. Данная машина отвечала всем современным требованиям и являлась наиболее мощной из серийных танков Японии. Из-за нехватки комплектующих и материалов было выпущено всего 60 машин."
+
+msgid "J08_Chi_Nu_short"
+msgstr "Chi-Nu"
+
+msgid "J09_Chi_He"
+msgstr "Type 1 Chi-He"
+
+msgid "J09_Chi_He_descr"
+msgstr ""
+"Средний танк Type 1 Chi-He являлся дальнейшим развитием танка Type 97 Chi-"
+"Ha. Разработан в 1941 году, однако из-за нехватки стали массовое "
+"производство началось только в 1943 году. Всего было выпущено 170 машин, "
+"большинство из которых использовались в Японии, но не принимали участие в "
+"боевых действиях."
+
+msgid "J09_Chi_He_short"
+msgstr "Chi-He"
+
+msgid "J10_Chi_To"
+msgstr "Type 4 Chi-To"
+
+msgid "J10_Chi_To_descr"
+msgstr ""
+"Средний танк Type 4 Chi-To разрабатывался с 1941 года. Предполагалось, что "
+"это будет первая японская машина, ориентированная именно на борьбу с танками"
+" противника, но проблемы с сырьём и комплектующими не позволили развернуть "
+"серийное производство. Всего к концу войны было выпущено шесть шасси и "
+"собрано два танка на их базе."
+
+msgid "J10_Chi_To_short"
+msgstr "Chi-To"
+
+msgid "J11_Chi_Ri"
+msgstr "Type 5 Chi-Ri"
+
+msgid "J11_Chi_Ri_descr"
+msgstr ""
+"Единственный экземпляр разработан в начале 1945 года. Танк прошёл испытания "
+"и был рекомендован к принятию на вооружение. Однако до августа 1945 года "
+"серийное производство развернуть не удалось. После капитуляции единственный "
+"опытный образец был реквизирован американскими оккупационными властями и "
+"вывезен в США."
+
+msgid "J11_Chi_Ri_short"
+msgstr "Chi-Ri"
+
+msgid "J13_STA_1"
+msgstr "STA-1"
+
+msgid "J13_STA_1_descr"
+msgstr ""
+"Первый японский послевоенный танк разрабатывался на базе американских машин "
+"с учётом специфики японского рельефа, железнодорожной сети и "
+"антропометрических данных японских танкистов. Был выпущен один опытный "
+"образец в декабре 1956 года."
+
+msgid "J13_STA_1_short"
+msgstr "STA-1"
+
+msgid "J14_Type_61"
+msgstr "Type 61"
+
+msgid "J14_Type_61_descr"
+msgstr ""
+"Первый танк, спроектированный в Японии после окончания Второй мировой войны. Разрабатывался в 1954–1961 годах на основе американского танка M47. Конструкторы уменьшили размеры и облегчили бронирование исходной машины. Это значительно снизило вес танка, сделав его более приспособленным\n"
+"к особым требованиям вооружённых сил Японии."
+
+msgid "J14_Type_61_short"
+msgstr "Type 61"
+
+msgid "J16_ST_B1"
+msgstr "STB-1"
+
+msgid "J16_ST_B1_7x7"
+msgstr "STB-1 7x7"
+
+msgid "J16_ST_B1_7x7_descr"
+msgstr ""
+"В начале 60-х годов компания Mitsubishi начала разработку нового танка, "
+"отвечавшего всем требованиям к вооружению и защите. Первые два прототипа "
+"STB-1 были выпущены в сентябре 1969 года для ходовых испытаний. В 1970 году "
+"прототипы были продемонстрированы прессе и приняли участие в военном параде."
+
+msgid "J16_ST_B1_7x7_short"
+msgstr "STB-1 7x7"
+
+msgid "J16_ST_B1_descr"
+msgstr ""
+"В начале 60-х годов компания Mitsubishi начала разработку нового танка, "
+"отвечавшего всем требованиям к вооружению и защите. Первые два прототипа "
+"STB-1 были выпущены в сентябре 1969 года для ходовых испытаний. В 1970 году "
+"прототипы были продемонстрированы прессе и приняли участие в военном параде."
+
+msgid "J16_ST_B1_short"
+msgstr "STB-1"
 
 msgid "J19_Tiger_I_Jpn"
 msgstr "Heavy Tank No. VI"
@@ -904,6 +982,31 @@ msgstr "Ho-Ni II"
 msgid "J50_Type_1_Ho_Ni_II_short_special"
 msgstr "Прекрасный разовый урон, неплохая мобильность"
 
+msgid "J51_Ashigaru"
+msgstr "Ashigaru"
+
+msgid "J51_Ashigaru_descr"
+msgstr ""
+"Японский проект колёсной самоходной артиллерийской установки, разработанный "
+"с учётом требований к высокой манёвренности и быстрой смене огневых позиций."
+" Среди конструктивных особенностей — интегрированная система воздушного "
+"охлаждения ствола орудия, предназначенная для стабилизации температурного "
+"режима при интенсивной стрельбе."
+
+msgid "J51_Ashigaru_long_special"
+msgstr ""
+"Ashigaru — японская колёсная ПТ-САУ X уровня с универсальным орудием, а "
+"также хорошими показателями мобильности и манёвренности. Машина обладает "
+"механикой двойного сведения, что позволяет улучшить и без того превосходную "
+"точность."
+
+msgid "J51_Ashigaru_short"
+msgstr "Ashigaru"
+
+msgid "J51_Ashigaru_short_special"
+msgstr ""
+"Хорошая мобильность, универсальное орудие с механикой двойного сведения"
+
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
 
@@ -915,6 +1018,9 @@ msgstr "JAN/GRC-3Z"
 
 msgid "JAN-GRC-4Z"
 msgstr "JAN/GRC-4Z"
+
+msgid "JAN_GRC_3Z_A"
+msgstr "JAN/GRC-3Z A"
 
 msgid "Kawasaki_Ha_60_LB"
 msgstr "Kawasaki Ha-60-lb"
@@ -987,6 +1093,9 @@ msgstr ""
 msgid "Mitsubishi"
 msgstr "Mitsubishi A475VD"
 
+msgid "Mitsubishi_12HM20WT_61"
+msgstr "Mitsubishi 12HM20WT (61)"
+
 msgid "Mitsubishi_12ZF"
 msgstr "Mitsubishi 12ZF"
 
@@ -999,39 +1108,23 @@ msgstr "Mitsubishi 12ZM"
 msgid "Mitsubishi_12_ZT"
 msgstr "Mitsubishi 12ZT"
 
+msgid "Mitsubishi_A6120VDe_95"
+msgstr "Mitsubishi A6120VDe (95)"
+
+msgid "Mitsubishi_A6120VDe_S_95"
+msgstr "Mitsubishi A6120VDe S (95)"
+
 msgid "Mitsubishi_MT_1100"
 msgstr "Mitsubishi MT 1100"
 
 msgid "Mitsubishi_MT_1100_7x7"
 msgstr "Mitsubishi MT 1100"
 
-msgid "NC27"
-msgstr "Renault Otsu"
-
-msgid "NC27_descr"
-msgstr ""
-"Разработан во Франции как проект модернизации танка Renault FT. Работы велись с 1925 по 1928 г. После закрытия программы модернизации модель была представлена на рынке. В 1929 году десять танков были приобретены Японией и получили обозначение\n"
-"Otsu-Gata Sensha (танк модель В). Японские машины были частично модернизированы и активно использовались как боевые и учебные танки."
-
-msgid "NC27_short"
-msgstr "R. Otsu"
-
 msgid "Nameless_Engine"
 msgstr "Nameless"
 
 msgid "Nameless_Radio"
 msgstr "Nameless"
-
-msgid "STA_1"
-msgstr "STA-1"
-
-msgid "STA_1_descr"
-msgstr ""
-"Первый японский послевоенный танк разрабатывался\n"
-"на базе американских машин с учётом специфики японского рельефа, железнодорожной сети и антропометрических данных японских танкистов. Был выпущен один опытный образец в декабре 1956 года."
-
-msgid "STA_1_short"
-msgstr "STA-1"
 
 msgid "STA_2_3"
 msgstr "STA-2"
@@ -1058,28 +1151,6 @@ msgstr "STA-2"
 msgid "STA_2_3_short_special"
 msgstr "Комфортное орудие, универсальность"
 
-msgid "ST_B1"
-msgstr "STB-1"
-
-msgid "ST_B1_7x7"
-msgstr "STB-1 7x7"
-
-msgid "ST_B1_7x7_descr"
-msgstr ""
-"В начале 60-х годов компания Mitsubishi начала разработку нового танка, отвечавшего всем требованиям к вооружению и защите. Первые два прототипа STB-1 были выпущены в сентябре 1969 года для ходовых испытаний. В 1970 году прототипы были продемонстрированы прессе и приняли участие\n"
-"в военном параде."
-
-msgid "ST_B1_7x7_short"
-msgstr "STB-1 7x7"
-
-msgid "ST_B1_descr"
-msgstr ""
-"В начале 60-х годов компания Mitsubishi начала разработку нового танка, отвечавшего всем требованиям к вооружению и защите. Первые два прототипа STB-1 были выпущены в сентябре 1969 года для ходовых испытаний. В 1970 году прототипы были продемонстрированы прессе и приняли участие\n"
-"в военном параде."
-
-msgid "ST_B1_short"
-msgstr "STB-1"
-
 msgid "Te_Ke"
 msgstr "Type 97 Te-Ke"
 
@@ -1093,29 +1164,44 @@ msgstr ""
 msgid "Te_Ke_short"
 msgstr "Te-Ke"
 
-msgid "Turret_1_Chi_Ha"
-msgstr "Type 97 Chi-Ha"
-
-msgid "Turret_1_Chi_He"
-msgstr "Type 1 Chi-He"
-
 msgid "Turret_1_Chi_Ni"
 msgstr "Chi-Ni"
-
-msgid "Turret_1_Chi_Nu"
-msgstr "Type 4 Chi-To I-Go"
 
 msgid "Turret_1_Chi_Nu_Kai"
 msgstr "Type 3 Chi-Nu Kai"
 
-msgid "Turret_1_Chi_Ri"
-msgstr "Type 5 Chi-Ri Plan 1"
+msgid "Turret_1_J01_NC27"
+msgstr "Renault Otsu"
 
-msgid "Turret_1_Chi_To"
+msgid "Turret_1_J03_Ha_Go"
+msgstr "Type 95 Ha-Go"
+
+msgid "Turret_1_J07_Chi_Ha"
+msgstr "Type 97 Chi-Ha"
+
+msgid "Turret_1_J08_Chi_Nu"
+msgstr "Type 4 Chi-To I-Go"
+
+msgid "Turret_1_J09_Chi_He"
+msgstr "Type 1 Chi-He"
+
+msgid "Turret_1_J10_Chi_To"
 msgstr "Type 4 Chi-To Prototype"
 
-msgid "Turret_1_Ha_Go"
-msgstr "Type 95 Ha-Go"
+msgid "Turret_1_J11_Chi_Ri"
+msgstr "Type 5 Chi-Ri Plan 1"
+
+msgid "Turret_1_J13_STA_1"
+msgstr "STA-1"
+
+msgid "Turret_1_J14_Type_61"
+msgstr "STA-4"
+
+msgid "Turret_1_J16_ST_B1"
+msgstr "STB-1"
+
+msgid "Turret_1_J16_ST_B1_7x7"
+msgstr "STB-1"
 
 msgid "Turret_1_J19_Tiger_I_Jpn"
 msgstr "Heavy Tank No. VI"
@@ -1210,6 +1296,9 @@ msgstr "Mitsu 75"
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
 
+msgid "Turret_1_J51_Ashigaru"
+msgstr "Ashigaru"
+
 msgid "Turret_1_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
 
@@ -1222,41 +1311,35 @@ msgstr "Type 98 Ke-Ni Otsu"
 msgid "Turret_1_NC27"
 msgstr "Renault Kou"
 
-msgid "Turret_1_STA_1"
-msgstr "STA-1"
-
 msgid "Turret_1_STA_2_3"
 msgstr "STA-2"
-
-msgid "Turret_1_ST_B1"
-msgstr "STB-1"
-
-msgid "Turret_1_ST_B1_7x7"
-msgstr "STB-1"
 
 msgid "Turret_1_Te_Ke"
 msgstr "Type 97 Te-Ke"
 
-msgid "Turret_1_Type_61"
-msgstr "STA-4"
+msgid "Turret_2_J03_Ha_Go"
+msgstr "Type 4 Ke-Nu"
 
-msgid "Turret_2_Chi_Ha"
+msgid "Turret_2_J07_Chi_Ha"
 msgstr "Type 97 Chi-Ha Shinhoto"
 
-msgid "Turret_2_Chi_He"
-msgstr "Type 2 Ho-I"
-
-msgid "Turret_2_Chi_Nu"
+msgid "Turret_2_J08_Chi_Nu"
 msgstr "Type 3 Chi-Nu"
 
-msgid "Turret_2_Chi_Ri"
-msgstr "Type 5 Chi-Ri Plan 2"
+msgid "Turret_2_J09_Chi_He"
+msgstr "Type 2 Ho-I"
 
-msgid "Turret_2_Chi_To"
+msgid "Turret_2_J10_Chi_To"
 msgstr "Type 4 Chi-To Production"
 
-msgid "Turret_2_Ha_Go"
-msgstr "Type 4 Ke-Nu"
+msgid "Turret_2_J11_Chi_Ri"
+msgstr "Type 5 Chi-Ri Plan 2"
+
+msgid "Turret_2_J13_STA_1"
+msgstr "STA-3"
+
+msgid "Turret_2_J14_Type_61"
+msgstr "Type 61"
 
 msgid "Turret_2_J26_Type_89"
 msgstr "Type 89 Otsu"
@@ -1279,31 +1362,29 @@ msgstr "Mitsu 105"
 msgid "Turret_2_Ke_Ni"
 msgstr "Type 2 Ke-To"
 
-msgid "Turret_2_NC27"
-msgstr "Renault Otsu"
+msgid "Type_100_Kakyuu_V_12_CT"
+msgstr "Type 100 Kakyuu V-12 (CT)"
 
-msgid "Turret_2_STA_1"
-msgstr "STA-3"
+msgid "Type_100_Kuurei_V_12_2"
+msgstr "Type 100 Kuurei V-12 (2)"
 
-msgid "Turret_2_Type_61"
-msgstr "Type 61"
+msgid "Type_100_Kuurei_V_12_Shin"
+msgstr "Type 100 Kuurei V-12 (Shin)"
 
-msgid "Type_61"
-msgstr "Type 61"
-
-msgid "Type_61_descr"
-msgstr ""
-"Первый танк, спроектированный в Японии после окончания Второй мировой войны. Разрабатывался в 1954–1961 годах на основе американского танка M47. Конструкторы уменьшили размеры и облегчили бронирование исходной машины. Это значительно снизило вес танка, сделав его более приспособленным\n"
-"к особым требованиям вооружённых сил Японии."
-
-msgid "Type_61_short"
-msgstr "Type 61"
+msgid "Type_100_Suirei_V_12_Shin"
+msgstr "Type 100 Suirei V-12 (Shin)"
 
 msgid "V12_Kawasaki_Type_97"
 msgstr "Kawasaki Type 97 V12 Kai"
 
+msgid "_105mm_APCR_Common_Type_68_57"
+msgstr "APDS Common Type 68 (57)"
+
 msgid "_105mm_APCR_M68"
 msgstr "APDS Common Type 68"
+
+msgid "_105mm_APCR_Type_52_A"
+msgstr "APCR Type 52A"
 
 msgid "_105mm_APHE_Type95"
 msgstr "APHE Type 95"
@@ -1313,6 +1394,9 @@ msgstr "APHE Type 95 Toku Kou"
 
 msgid "_105mm_APHE_Type_1_Ni"
 msgstr "APHE Type 1 Ni"
+
+msgid "_105mm_AP_Common_Type_68_57"
+msgstr "AP Common Type 68 (57)"
 
 msgid "_105mm_AP_Experimental_Type2"
 msgstr "AP Experimental Type 2"
@@ -1344,6 +1428,9 @@ msgstr "M392XC"
 msgid "_105mm_AP_Type_1_Ni"
 msgstr "AP Type 1 Ni"
 
+msgid "_105mm_AP_Type_52_A"
+msgstr "AP Type 52A"
+
 msgid "_105mm_AP_Type_92"
 msgstr "Type 92 AP"
 
@@ -1368,6 +1455,12 @@ msgstr "10 cm Cannon Type 92A"
 msgid "_105mm_Cannon_Type_14"
 msgstr "10 cm Cannon Type 14"
 
+msgid "_105mm_Cannon_Type_92_O_I"
+msgstr "10 cm Cannon Type 92 (O-I)"
+
+msgid "_105mm_Cannon_Type_92_O_Ni"
+msgstr "10 cm Cannon Type 92 (O-Ni)"
+
 msgid "_105mm_Cannon_Type_92_SP"
 msgstr "10 cm Cannon Type 92 SP"
 
@@ -1383,11 +1476,11 @@ msgstr "10 cm Experimental Tank Gun Kai"
 msgid "_105mm_Gun_Shin"
 msgstr "10.5 cm Gun Shin"
 
+msgid "_105mm_Gun_Type_52"
+msgstr "105 mm Gun Type 52"
+
 msgid "_105mm_Gun_Type_91"
 msgstr "10.5 cm Gun Type 91"
-
-msgid "_105mm_HEAT-T_T384E4"
-msgstr "M456"
 
 msgid "_105mm_HEAT_M457"
 msgstr "M457"
@@ -1400,6 +1493,9 @@ msgstr "Type 75"
 
 msgid "_105mm_HEPT_Type76"
 msgstr "Type 76"
+
+msgid "_105mm_HE_Common_Type_68_57"
+msgstr "HE Common Type 68 (57)"
 
 msgid "_105mm_HE_M68"
 msgstr "HE Common Type 68"
@@ -1419,6 +1515,9 @@ msgstr "HE Type 93"
 msgid "_105mm_HE_Type_1_Ni"
 msgstr "HE Type 1 Ni"
 
+msgid "_105mm_HE_Type_52_A"
+msgstr "HE Type 52A"
+
 msgid "_105mm_HE_Type_92"
 msgstr "HE Type 92A"
 
@@ -1431,11 +1530,26 @@ msgstr "HE Type 92 SP"
 msgid "_105mm_JSW_105_60"
 msgstr "105 mm JSW 105/60"
 
+msgid "_105mm_M392XB_61"
+msgstr "M392XB (61)"
+
+msgid "_105mm_M456"
+msgstr "M456"
+
+msgid "_105mm_M456_61"
+msgstr "M456 (61)"
+
 msgid "_105mm_M68_L7"
 msgstr "105 mm M68 L7"
 
+msgid "_105mm_M68_L7_57"
+msgstr "105 mm M68 L7 (57)"
+
 msgid "_105mm_Rifled_Gun"
 msgstr "105 mm Rifled Gun"
+
+msgid "_105mm_Rifled_Gun_61"
+msgstr "105 mm Rifled Gun (61)"
 
 msgid "_105mm_Rifled_Gun_7x7"
 msgstr "105 mm Rifled Gun"
@@ -1473,6 +1587,12 @@ msgstr "10.5 cm Type 14 L/34"
 msgid "_105mm_Type_5_Se"
 msgstr "105 mm Type 5 Se"
 
+msgid "_105mm_Type_75_61"
+msgstr "Type 75 (61)"
+
+msgid "_105mm_Type_91_O_Ni"
+msgstr "Type 91 (O-Ni)"
+
 msgid "_105mm_Type_92_Gun_Mod1952"
 msgstr "105 mm Gun Type 92 SHA-1"
 
@@ -1481,6 +1601,24 @@ msgstr "10.5 cm Type 92 Gun Ro"
 
 msgid "_105mm_Type_92_L45"
 msgstr "105 mm Tank Gun Type 92T"
+
+msgid "_105mm_Type_92_O_I"
+msgstr "Type 92 (O-I)"
+
+msgid "_105mm_Type_92_O_Ni"
+msgstr "Type 92 (O-Ni)"
+
+msgid "_105mm_Type_95_O_I"
+msgstr "Type 95 (O-I)"
+
+msgid "_105mm_Type_95_O_Ni"
+msgstr "Type 95 (O-Ni)"
+
+msgid "_105mm_Type_95_Toku_Kou_O_I"
+msgstr "Type 95 Toku Kou (O-I)"
+
+msgid "_105mm_Type_95_Toku_Kou_O_Ni"
+msgstr "Type 95 Toku Kou (O-Ni)"
 
 msgid "_105mm_ap_92_L45"
 msgstr "AP Type 92T"
@@ -1557,11 +1695,20 @@ msgstr "120 mm Gun Type 71"
 msgid "_127mm_50_3rd_Year_Type"
 msgstr "12.7 cm/50 3rd Year Type"
 
+msgid "_127mm_50_3rd_Year_Type_O_Ho"
+msgstr "12.7 cm/50 3rd Year Type (O-Ho)"
+
 msgid "_127mm_Capped_Common"
 msgstr "12.7 cm Capped Common"
 
+msgid "_127mm_Capped_Common_O_Ho"
+msgstr "12.7 cm Capped Common (O-Ho)"
+
 msgid "_127mm_Capped_Common_Semi_AP"
 msgstr "12.7 cm Capped Common Semi-AP"
+
+msgid "_127mm_Capped_Common_Semi_AP_O_Ho"
+msgstr "12.7 cm Capped Common Semi-AP (O-Ho)"
 
 msgid "_127mm_Capped_Common_Type_0"
 msgstr "12.7 cm Capped Common AP"
@@ -1581,6 +1728,9 @@ msgstr "HE Common Type 89"
 msgid "_127mm_Common_Type_0_HE"
 msgstr "12.7 cm Common Type 0 HE"
 
+msgid "_127mm_Common_Type_0_HE_O_Ho"
+msgstr "12.7 cm Common Type 0 HE (O-Ho)"
+
 msgid "_127mm_Common_Type_1_HE"
 msgstr "12.7 cm Common Type 1 HE"
 
@@ -1599,14 +1749,35 @@ msgstr "Balle T.P."
 msgid "_13.2mm_Type93"
 msgstr "13 mm Autocannon Type Ho"
 
+msgid "_13mm_Autocannon_Type_Ho_NC"
+msgstr "13 mm Autocannon Type Ho (NC)"
+
+msgid "_13mm_Balle_T_P_NC"
+msgstr "Balle T.P. (NC)"
+
+msgid "_13mm_Type_92_NC"
+msgstr "Type 92 (NC)"
+
 msgid "_140mm_50_3rd_Year_Type"
 msgstr "14 cm/50 3rd Year Type"
+
+msgid "_140mm_50_3rd_Year_Type_4"
+msgstr "14 cm/50 3rd Year Type (4)"
+
+msgid "_140mm_Capped_Common_4"
+msgstr "14 cm Capped Common (4)"
+
+msgid "_140mm_Capped_Common_Kai_4"
+msgstr "14 cm Capped Common Kai (4)"
 
 msgid "_140mm_Capped_Common_Semi_AP"
 msgstr "14 cm Capped Common Semi-AP"
 
 msgid "_140mm_Capped_Common_Semi_AP_Kai"
 msgstr "14 cm Capped Common Semi-AP Kai"
+
+msgid "_140mm_Common_Type_0_4"
+msgstr "14 cm Common Type 0 (4)"
 
 msgid "_140mm_Common_Type_0_HE"
 msgstr "14 cm Common Type 0 HE"
@@ -1641,14 +1812,17 @@ msgstr "15 cm/45 41st Year Type"
 msgid "_150mm_APHE_Type1"
 msgstr "APHE Type 1"
 
-msgid "_150mm_Common_Type_0_HE"
+msgid "_150mm_Common_Type_0"
 msgstr "Common Type 0"
 
 msgid "_150mm_Common_Type_0_HE_Kai"
 msgstr "Common Type 0 Kai"
 
-msgid "_150mm_Common_Type_91_AP"
+msgid "_150mm_Common_Type_91"
 msgstr "Common Type 91"
+
+msgid "_150mm_Common_Type_91_Kai"
+msgstr "Common Type 91 Kai"
 
 msgid "_150mm_HEAT_Type3"
 msgstr "HEAT Type 3"
@@ -1659,6 +1833,18 @@ msgstr "HE Type 96"
 msgid "_150mm_Howitzer_Type96"
 msgstr "15 cm Howitzer Type 96"
 
+msgid "_150mm_Howitzer_Type_96_O_I"
+msgstr "15 cm Howitzer Type 96 (O-I)"
+
+msgid "_150mm_Type_1_O_I"
+msgstr "Type 1 (O-I)"
+
+msgid "_150mm_Type_3_O_I"
+msgstr "Type 3 (O-I)"
+
+msgid "_150mm_Type_96_O_I"
+msgstr "Type 96 (O-I)"
+
 msgid "_20mm_AP"
 msgstr "20 mm AP"
 
@@ -1667,6 +1853,30 @@ msgstr "20 mm APCR"
 
 msgid "_20mm_Type97"
 msgstr "20 mm AT Rifle Type 97"
+
+msgid "_2x_Kawasaki_Type_98_Kou_4"
+msgstr "2x Kawasaki Type 98 Kou (4)"
+
+msgid "_2x_Kawasaki_Type_98_Kou_O_Ho"
+msgstr "2x Kawasaki Type 98 Kou (O-Ho)"
+
+msgid "_2x_Kawasaki_Type_98_Kou_O_I"
+msgstr "2x Kawasaki Type 98 Kou (O-I)"
+
+msgid "_2x_Kawasaki_Type_98_Kou_O_Ni"
+msgstr "2x Kawasaki Type 98 Kou (O-Ni)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_4"
+msgstr "2x Kawasaki Type 98 Otsu (4)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_O_Ho"
+msgstr "2x Kawasaki Type 98 Otsu (O-Ho)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_O_I"
+msgstr "2x Kawasaki Type 98 Otsu (O-I)"
+
+msgid "_2x_Kawasaki_Type_98_Otsu_O_Ni"
+msgstr "2x Kawasaki Type 98 Otsu (O-Ni)"
 
 msgid "_37mm_APHE_Ichi_Go"
 msgstr "Ichi-Go"
@@ -1686,6 +1896,9 @@ msgstr "Type 4"
 msgid "_37mm_FrtPrf1935"
 msgstr "Frt.Prf. mle. 1935"
 
+msgid "_37mm_Gun_Type_98_95"
+msgstr "37 mm Gun Type 98 (95)"
+
 msgid "_37mm_HE_Type12"
 msgstr "Type 12"
 
@@ -1694,6 +1907,9 @@ msgstr "Type 4"
 
 msgid "_37mm_HE_Type4_Kai"
 msgstr "Type 4 Kai"
+
+msgid "_37mm_Ichi_Go_NC"
+msgstr "Ichi-Go (NC)"
 
 msgid "_37mm_OE_mle._1916"
 msgstr "OE mle. 1916"
@@ -1704,6 +1920,9 @@ msgstr "ODR mle. 1935"
 msgid "_37mm_Sogekiho"
 msgstr "37 mm Sogekihou"
 
+msgid "_37mm_Sogekihou_NC"
+msgstr "37 mm Sogekihou (NC)"
+
 msgid "_37mm_Type1"
 msgstr "37 mm Gun Type 1"
 
@@ -1713,8 +1932,23 @@ msgstr "37 mm Gun Type 100"
 msgid "_37mm_Type_100_1"
 msgstr "37 mm Gun Type 100"
 
+msgid "_37mm_Type_12_NC"
+msgstr "Type 12 (NC)"
+
+msgid "_37mm_Type_1_95"
+msgstr "Type 1 (95)"
+
+msgid "_37mm_Type_4_95"
+msgstr "Type 4 (95)"
+
 msgid "_37mm_Type_94"
 msgstr "37 mm Gun Type 94"
+
+msgid "_37mm_Type_94_95"
+msgstr "Type 94 (95)"
+
+msgid "_37mm_Type_94_NC"
+msgstr "Type 94 (NC)"
 
 msgid "_37mm_Type_98"
 msgstr "37 mm Gun Type 98"
@@ -1731,8 +1965,32 @@ msgstr "Type 1 Toku Kou"
 msgid "_47mm_Gun_Type1"
 msgstr "47 mm Gun Type 1"
 
+msgid "_47mm_Gun_Type_1_2"
+msgstr "47 mm Gun Type 1 (2)"
+
+msgid "_47mm_Gun_Type_1_Shin"
+msgstr "47 mm Gun Type 1 (Shin)"
+
 msgid "_47mm_HE_Type94"
 msgstr "Type 94"
+
+msgid "_47mm_Type_1_2"
+msgstr "Type 1 (2)"
+
+msgid "_47mm_Type_1_Shin"
+msgstr "Type 1 (Shin)"
+
+msgid "_47mm_Type_1_Toku_Kou_2"
+msgstr "Type 1 Toku Kou (2)"
+
+msgid "_47mm_Type_1_Toku_Kou_Shin"
+msgstr "Type 1 Toku Kou (Shin)"
+
+msgid "_47mm_Type_94_2"
+msgstr "Type 94 (2)"
+
+msgid "_47mm_Type_94_Shin"
+msgstr "Type 94 (Shin)"
 
 msgid "_57mm_APHE_Type1"
 msgstr "Type 1"
@@ -1752,6 +2010,12 @@ msgstr "5.7 cm Gun Type 90"
 msgid "_57mm_Gun_Type97"
 msgstr "5.7 cm Gun Type 97"
 
+msgid "_57mm_Gun_Type_97_95"
+msgstr "5.7 cm Gun Type 97 (95)"
+
+msgid "_57mm_Gun_Type_97_Shin"
+msgstr "5.7 cm Gun Type 97 (Shin)"
+
 msgid "_57mm_HEAT_Type97"
 msgstr "Type 3"
 
@@ -1760,6 +2024,42 @@ msgstr "Type 2"
 
 msgid "_57mm_HE_Type97"
 msgstr "Type 90"
+
+msgid "_57mm_Type_1_2"
+msgstr "Type 1 (2)"
+
+msgid "_57mm_Type_1_Model_II"
+msgstr "Type 1 (Model II)"
+
+msgid "_57mm_Type_1_Toku_Kou_2"
+msgstr "Type 1 Toku Kou (2)"
+
+msgid "_57mm_Type_1_Toku_Kou_Model_II"
+msgstr "Type 1 Toku Kou (Model II)"
+
+msgid "_57mm_Type_2_2"
+msgstr "Type 2 (2)"
+
+msgid "_57mm_Type_2_Model_II"
+msgstr "Type 2 (Model II)"
+
+msgid "_57mm_Type_3_95"
+msgstr "Type 3 (95)"
+
+msgid "_57mm_Type_3_Shin"
+msgstr "Type 3 (Shin)"
+
+msgid "_57mm_Type_90_95"
+msgstr "Type 90 (95)"
+
+msgid "_57mm_Type_90_Shin"
+msgstr "Type 90 (Shin)"
+
+msgid "_57mm_Type_92_95"
+msgstr "Type 92 (95)"
+
+msgid "_57mm_Type_92_Shin"
+msgstr "Type 92 (Shin)"
 
 msgid "_70mm_APHE_Type95"
 msgstr "APHE Type 95"
@@ -1884,8 +2184,50 @@ msgstr "Type 94 425R"
 msgid "_75mm_HE_Type_T6"
 msgstr "Type 94 426R"
 
+msgid "_75mm_Tank_Gun_Type_3_Model_II"
+msgstr "7.5 cm Tank Gun Type 3 Model II"
+
+msgid "_75mm_Tank_Gun_Type_5_CT"
+msgstr "7.5 cm Tank Gun Type 5 (CT)"
+
+msgid "_75mm_Tank_Gun_Type_5_Model_I_CR"
+msgstr "7.5 cm Tank Gun Type 5 Model I (CR)"
+
 msgid "_75mm_Type5_1"
 msgstr "7.5 cm Tank Gun Type 5"
+
+msgid "_75mm_Type_1_CT"
+msgstr "Type 1 (CT)"
+
+msgid "_75mm_Type_1_II"
+msgstr "Type 1 (II)"
+
+msgid "_75mm_Type_1_Toku_Kou_CT"
+msgstr "Type 1 Toku Kou (CT)"
+
+msgid "_75mm_Type_1_Toku_Kou_II"
+msgstr "Type 1 Toku Kou (II)"
+
+msgid "_75mm_Type_1_Toku_Kou_Kai_A"
+msgstr "Type 1 Toku Kou Kai (A)"
+
+msgid "_75mm_Type_1_Toku_Kou_Kai_CR"
+msgstr "Type 1 Toku Kou Kai (CR)"
+
+msgid "_75mm_Type_1_Toku_Otsu_A"
+msgstr "Type 1 Toku Otsu (A)"
+
+msgid "_75mm_Type_1_Toku_Otsu_CR"
+msgstr "Type 1 Toku Otsu (CR)"
+
+msgid "_75mm_Type_4_CT"
+msgstr "Type 4 (CT)"
+
+msgid "_75mm_Type_4_Kai_A"
+msgstr "Type 4 Kai (A)"
+
+msgid "_75mm_Type_4_Kai_CR"
+msgstr "Type 4 Kai (CR)"
 
 msgid "_75mm_Type_5_Gun_Ro"
 msgstr "7.5 cm Type 5 Gun Ro"
@@ -1899,6 +2241,21 @@ msgstr "7.5 cm Tank Gun Type 88"
 msgid "_75mm_Type_90_Gun"
 msgstr "7.5 cm Tank Gun Type 90"
 
+msgid "_75mm_Type_94_II"
+msgstr "Type 94 (II)"
+
+msgid "_88mm_APCR_Type_3"
+msgstr "APCR Type 3"
+
+msgid "_88mm_APCR_Type_3T"
+msgstr "APCR Type 3T"
+
+msgid "_88mm_AP_Type_3"
+msgstr "AP Type 3"
+
+msgid "_88mm_AP_Type_3T"
+msgstr "AP Type 3T"
+
 msgid "_88mm_Edelweiss_AP"
 msgstr "AP/E"
 
@@ -1910,6 +2267,12 @@ msgstr "ENH/E"
 
 msgid "_88mm_Edelweiss_Gun"
 msgstr "88 mm Theimer L/40"
+
+msgid "_88mm_HE_Type_3"
+msgstr "HE Type 3"
+
+msgid "_88mm_HE_Type_3T"
+msgstr "HE Type 3T"
 
 msgid "_88mm_KwK_36_L56A"
 msgstr "8,8 cm Kw.K. 36 L/56"
@@ -1929,29 +2292,11 @@ msgstr "88 mm Breda L/48 (Trial Production)"
 msgid "_88mm_Pzgr.40"
 msgstr "Pzgr. 40"
 
-msgid "_88mm_Pzgr.40_3"
-msgstr "APCR Type 3"
-
-msgid "_88mm_Pzgr.40_3_L56"
-msgstr "APCR Type 3T"
-
 msgid "_88mm_Pzgr39"
 msgstr "Pzgr. 39"
 
-msgid "_88mm_Pzgr39_3"
-msgstr "AP Type 3"
-
-msgid "_88mm_Pzgr39_3_L56"
-msgstr "AP Type 3T"
-
 msgid "_88mm_Sprg.18"
 msgstr "Sprgr."
-
-msgid "_88mm_Sprg.18_3"
-msgstr "HE Type 3"
-
-msgid "_88mm_Sprg.18_3_L56"
-msgstr "HE Type 3T"
 
 msgid "_88mm_Type3_Gun"
 msgstr "8.8 cm Tank Gun Type 3"
@@ -1971,6 +2316,9 @@ msgstr "90 mm Gun M3A1"
 msgid "_90mm_Gun_Type61"
 msgstr "90 mm Gun Type 61"
 
+msgid "_90mm_Gun_Type_61_MHI"
+msgstr "90 mm Gun Type 61 MHI"
+
 msgid "_90mm_HEAT_Type70"
 msgstr "Type 70"
 
@@ -1980,11 +2328,38 @@ msgstr "M71"
 msgid "_90mm_HVAP_M304"
 msgstr "M304"
 
+msgid "_90mm_M318A1_61"
+msgstr "M318A1 (61)"
+
+msgid "_90mm_M318A1_RG"
+msgstr "M318A1 (RG)"
+
+msgid "_90mm_M318A1_STA_1"
+msgstr "M318A1 (STA-1)"
+
+msgid "_90mm_M71_61"
+msgstr "M71 (61)"
+
+msgid "_90mm_M71_RG"
+msgstr "M71 (RG)"
+
+msgid "_90mm_M71_STA_1"
+msgstr "M71 (STA-1)"
+
 msgid "_90mm_Rifled_Gun"
 msgstr "90 mm Rifled Gun"
 
 msgid "_90mm_Rifled_Gun_1"
 msgstr "90 mm Rifled Gun"
+
+msgid "_90mm_Type_70_61"
+msgstr "Type 70 (61)"
+
+msgid "_90mm_Type_70_RG"
+msgstr "Type 70 (RG)"
+
+msgid "_90mm_Type_70_STA_1"
+msgstr "Type 70 (STA-1)"
 
 msgid "_A6120VD"
 msgstr "Mitsubishi A6120VD"

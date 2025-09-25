@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/normal/lod1/Hull</nodefullVisual>
+	<parent>vehicles/american/A171_IMT/_skins/A171_IMT_G90_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.606998 -0.640296 -3.506920</min>
+		<max>1.557185 0.715324 3.309014</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

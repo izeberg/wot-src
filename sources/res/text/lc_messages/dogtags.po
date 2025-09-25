@@ -746,6 +746,66 @@ msgstr "?empty?"
 msgid "component/background/base/66/title"
 msgstr "Новичок"
 
+msgid "component/background/base/661/description"
+msgstr ""
+"За достижение ранга «Железо» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/661/description_locked"
+msgstr "Достигните ранга «Железо» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/661/title"
+msgstr "Железо (год Дракона, сезон I)"
+
+msgid "component/background/base/662/description"
+msgstr ""
+"За достижение ранга «Бронза» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/662/description_locked"
+msgstr "Достигните ранга «Бронза» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/662/title"
+msgstr "Бронза (год Дракона, сезон I)"
+
+msgid "component/background/base/663/description"
+msgstr ""
+"За достижение ранга «Серебро» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/663/description_locked"
+msgstr "Достигните ранга «Серебро» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/663/title"
+msgstr "Серебро (год Дракона, сезон I)"
+
+msgid "component/background/base/664/description"
+msgstr ""
+"За достижение ранга «Золото» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/664/description_locked"
+msgstr "Достигните ранга «Золото» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/664/title"
+msgstr "Золото (год Дракона, сезон I)"
+
+msgid "component/background/base/665/description"
+msgstr ""
+"За достижение ранга «Чемпион» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/665/description_locked"
+msgstr "Достигните ранга «Чемпион» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/665/title"
+msgstr "Чемпион (год Дракона, сезон I)"
+
+msgid "component/background/base/666/description"
+msgstr ""
+"За достижение ранга «Легенда» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/666/description_locked"
+msgstr "Достигните ранга «Легенда» в сезоне Лазурного дракона режима «Натиск»"
+
+msgid "component/background/base/666/title"
+msgstr "Легенда (год Дракона, сезон I)"
+
 msgid "component/background/base/67/description"
 msgstr " "
 
@@ -1110,7 +1170,7 @@ msgstr "Общее количество очков престижа, зараб�
 
 msgid "component/engraving/dedication/600/description_locked"
 msgstr ""
-"Достигните ранга «Железо» в любом сезоне года Мантикоры режима «Натиск»"
+"Достигните ранга «Легенда» в любом сезоне года Мантикоры режима «Натиск»"
 
 msgid "component/engraving/dedication/600/title"
 msgstr "Очки престижа"
@@ -1151,6 +1211,16 @@ msgstr ""
 
 msgid "component/engraving/dedication/641/title"
 msgstr "Победы в году Мантикоры"
+
+msgid "component/engraving/dedication/660/description"
+msgstr "Количество побед в году Дракона режима «Натиск»"
+
+msgid "component/engraving/dedication/660/description_locked"
+msgstr ""
+"Достигните ранга «Серебро» в любом сезоне года Дракона режима «Натиск»"
+
+msgid "component/engraving/dedication/660/title"
+msgstr "Победы в году Дракона"
 
 msgid "component/engraving/ranked_skill/408/description"
 msgstr ""
@@ -1417,12 +1487,6 @@ msgstr ""
 "Улучшите компоненты до IV уровня и заслужите всеобщее уважение. Компоненты "
 "можно получать и улучшать только в Случайных боях на технике VIII уровня и "
 "выше."
-
-msgid "customization/button/backDashboard_glow"
-msgstr "НАЗАД"
-
-msgid "customization/button/backDashboard_gray"
-msgstr "К СТАТУСУ АККАУНТА"
 
 msgid "customization/button/discard"
 msgstr "Отменить изменения"

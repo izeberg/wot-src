@@ -61,6 +61,14 @@ def getResearchInfo(vehIntCD=None, vehicle=None):
         return researchInfo
 
 
+def getVehicleResearchInfo(vehIntCD=None, vehicle=None):
+    vehicle = _validateAndGetVehicle(vehIntCD, vehicle)
+    if vehicle is not None:
+        return _getVehicleResearchInfo(vehicle)
+    else:
+        return
+
+
 def updateViewedItems(vehIntCD=None, vehicle=None):
     vehicle = _validateAndGetVehicle(vehIntCD, vehicle)
     if vehicle is None:

@@ -17,6 +17,11 @@
 			<UUID>9626c9b7-6175-4e49-8441-5489e8df7a26</UUID>
 			<flags>0</flags>
 		</GameObject>
+		<GameObject>
+			<name>normal</name>
+			<UUID>8691e615-f273-4169-b204-82079134d6b0</UUID>
+			<flags>8</flags>
+		</GameObject>
 	</GameObjects>
 	<components>
 		<ComponentPool>
@@ -28,12 +33,22 @@
 				<config>
 					<property>
 						<name>Parent</name>
-						<link>01c3d3f7-37fc-4d65-897d-b4057ded5a3f</link>
+						<link>8691e615-f273-4169-b204-82079134d6b0</link>
 					</property>
 				</config>
 			</component>
 			<component>
 				<UUID>9626c9b7-6175-4e49-8441-5489e8df7a26</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Parent</name>
+						<link>8691e615-f273-4169-b204-82079134d6b0</link>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>8691e615-f273-4169-b204-82079134d6b0</UUID>
 				<flags>35</flags>
 				<config>
 					<property>
@@ -44,73 +59,20 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>Transform</type>
-			<version>1</version>
-			<component>
-				<UUID>01c3d3f7-37fc-4d65-897d-b4057ded5a3f</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>894f7dfc-6a7c-40cb-ad7f-926e3a6b5019</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>0 0 0</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<UUID>9626c9b7-6175-4e49-8441-5489e8df7a26</UUID>
-				<flags>35</flags>
-				<config>
-					<property>
-						<name>Position</name>
-						<value>
-							-0.250397 0.538986 0.59848
-							<!--BW_String-->
-						</value>
-					</property>
-					<property>
-						<name>Scale</name>
-						<value>1 1 1</value>
-					</property>
-					<property>
-						<name>Rotation</name>
-						<value>-0 0 0</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>SequenceComponent</type>
 			<version>3</version>
 			<component>
-				<UUID>01c3d3f7-37fc-4d65-897d-b4057ded5a3f</UUID>
+				<UUID>8691e615-f273-4169-b204-82079134d6b0</UUID>
 				<flags>35</flags>
 				<config>
+					<property>
+						<name>activeLayer</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>speed</name>
+						<value>1</value>
+					</property>
 					<property>
 						<name>loop</name>
 						<value>1</value>
@@ -639,6 +601,115 @@
 							</item>
 						</collection>
 					</property>
+					<property>
+						<name>layers</name>
+						<collection/>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>Transform</type>
+			<version>1</version>
+			<component>
+				<UUID>01c3d3f7-37fc-4d65-897d-b4057ded5a3f</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>894f7dfc-6a7c-40cb-ad7f-926e3a6b5019</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>9626c9b7-6175-4e49-8441-5489e8df7a26</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>
+							-0.250397 0.538986 0.59848
+							<!--BW_String-->
+						</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>-0 0 0</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<UUID>8691e615-f273-4169-b204-82079134d6b0</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Position</name>
+						<value>0 0 0</value>
+					</property>
+					<property>
+						<name>Scale</name>
+						<value>1 1 1</value>
+					</property>
+					<property>
+						<name>Rotation</name>
+						<value>0 0 0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>BW::StateSwitcherComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>01c3d3f7-37fc-4d65-897d-b4057ded5a3f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>normal</name>
+						<link>8691e615-f273-4169-b204-82079134d6b0</link>
+					</property>
+					<property>
+						<name>damaged</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>critical</name>
+						<link>00000000-0000-0000-0000-000000000000</link>
+					</property>
+					<property>
+						<name>previewState</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 		</ComponentPool>
@@ -709,6 +780,14 @@
 						<name>Visible in TWIN_GUN MODE</name>
 						<value>0</value>
 					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
+					</property>
 				</config>
 			</component>
 			<component>
@@ -774,6 +853,14 @@
 					<property>
 						<name>Visible in TWIN_GUN MODE</name>
 						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in SM_STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SM_ENTITY_VIEW MODE</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>
@@ -876,6 +963,32 @@
 								</value>
 							</property>
 							<property>
+								<name>photometricProfile</name>
+								<isAsset>true</isAsset>
+								<value/>
+							</property>
+							<property>
+								<name>cookieTexture</name>
+								<isAsset>true</isAsset>
+								<value/>
+							</property>
+							<property>
+								<name>isScrollingTexture</name>
+								<value>0</value>
+							</property>
+							<property>
+								<name>scrollingSpeed</name>
+								<value>1</value>
+							</property>
+							<property>
+								<name>scrollingDirection</name>
+								<value>1 0</value>
+							</property>
+							<property>
+								<name>tilingFactor</name>
+								<value>1 1</value>
+							</property>
+							<property>
 								<name>decorType</name>
 								<value>0</value>
 							</property>
@@ -884,6 +997,20 @@
 					<property>
 						<name>castHemisphereShadows</name>
 						<value>0</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>VehicleHealthObserverComponent</type>
+			<version>1</version>
+			<component>
+				<UUID>01c3d3f7-37fc-4d65-897d-b4057ded5a3f</UUID>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>state</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

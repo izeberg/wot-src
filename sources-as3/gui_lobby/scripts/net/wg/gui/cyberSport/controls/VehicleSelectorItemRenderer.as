@@ -253,7 +253,6 @@ package net.wg.gui.cyberSport.controls
       
       private function updateModeLayout() : void
       {
-         var _loc3_:Object = null;
          var _loc1_:VehicleSelector = owner.parent as VehicleSelector;
          if(_loc1_)
          {
@@ -265,7 +264,7 @@ package net.wg.gui.cyberSport.controls
             this._multiSelectionMode = false;
          }
          var _loc2_:String = !!this._multiSelectionMode ? MODE_MULTI : MODE_SINGLE;
-         _loc3_ = this.getLayoutConfig(_loc2_);
+         var _loc3_:Object = this.getLayoutConfig(_loc2_);
          this.flagLoader.x = _loc3_.flagX;
          this.vehicleTypeIcon.x = _loc3_.vTypeX;
          this.levelIcon.x = _loc3_.vLevelX;

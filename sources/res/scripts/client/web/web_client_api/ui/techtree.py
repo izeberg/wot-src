@@ -1,7 +1,5 @@
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
 from helpers import dependency
-from gui.shared import event_dispatcher, events
+from gui.shared import event_dispatcher
 from skeletons.gui.shared import IItemsCache
 from web.web_client_api import W2CSchema, w2c, Field
 
@@ -18,6 +16,8 @@ class TechTreeTabWebApiMixin(object):
 
     @w2c(_OpenTechTreeSchema, 'research')
     def openResearch(self, cmd):
-        vehicle = self.itemsCache.items.getStockVehicle(cmd.vehicle_id)
-        exitEvent = events.LoadViewEvent(SFViewLoadParams(VIEW_ALIAS.LOBBY_TECHTREE), ctx={'nation': vehicle.nationName})
-        event_dispatcher.showResearchView(cmd.vehicle_id, exitEvent=exitEvent)
+        event_dispatcher.showResearchView(cmd.vehicle_id)
+
+    @w2c(_OpenTechTreeSchema, 'vehicleHubOverview')
+    def openVehicleHubOverview(self, cmd):
+        event_dispatcher.showVehicleHubOverview(cmd.vehicle_id)

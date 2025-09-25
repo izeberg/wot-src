@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "eventShop"
+msgstr "Магазин события"
+
+msgid "progress/counter"
+msgstr "{{current}}{{divider}}{{total}}"
+
+msgid "progressionComplete"
+msgstr "Основная прогрессия пройдена!"
+
+msgid "tooltip/banner/description"
+msgstr ""
+"Динамические сражения в жанре «королевской битвы» на постапокалиптических "
+"аренах. Восемь особых машин, которые можно улучшать прямо в бою, становясь "
+"сильнее с каждым уровнем. Вас ждут невероятные награды и многое другое!"
+
+msgid "tooltip/banner/mode/description"
+msgstr "— нажмите для знакомства с режимом"
+
+msgid "tooltip/banner/mode/label"
+msgstr "РЕЖИМ"
+
+msgid "tooltip/banner/performanceRisk/description/high"
+msgstr ""
+"Производительности вашего компьютера недостаточно для данного режима. Весьма"
+" вероятны проблемы с графикой и перемещением техники. Возможно также "
+"аварийное закрытие клиента игры."
+
+msgid "tooltip/banner/performanceRisk/description/medium"
+msgstr ""
+"Режим требователен к компьютеру. Карта может долго загружаться, возможны "
+"проблемы с графикой и перемещением техники в бою. В случае недостаточной "
+"производительности, попробуйте понизить настройки графики."
+
+msgid "tooltip/banner/performanceRisk/title/high"
+msgstr "Низкая производительность"
+
+msgid "tooltip/banner/performanceRisk/title/medium"
+msgstr "Возможно снижение производительности"
+
+msgid "tooltip/banner/timer/text/accent"
+msgstr "Событие доступно {{timer}}"
+
+msgid "tooltip/banner/timer/text/cooldown"
+msgstr "Прекращение огня {{timer}}"
+
+msgid "tooltip/banner/title"
+msgstr "Стальной охотник"
+
+msgid "tooltip/daily_quests/header"
+msgstr "Выполнено"
+
+msgid "tooltip/daily_quests/new_daily_missions"
+msgstr "Новые задачи «Стального охотника» будут доступны через {{timeLeft}}"
+
+msgid "tooltip/daily_quests/reward"
+msgid_plural "plural/tooltip/daily_quests/reward"
+msgstr[0] "Награда:"
+msgstr[1] "Награды:"
+msgstr[2] "Наград:"
+
+msgid "tooltip/daily_quests/text"
+msgstr "Все задачи выполнены!"
+
+msgid "tooltip/progressionWidget/description/completed"
+msgstr "Отличная работа, командир, так держать!"
+
+msgid "tooltip/progressionWidget/description/header"
+msgstr "Основная прогрессия пройдена!"
+
+msgid "tooltip/progressionWidget/description/inProgress"
+msgstr ""
+"Чтобы продвигаться по прогрессии, выполняйте задачи и занимайте первые места"
+" в боях режима «Стальной охотник»."
+
+msgid "tooltip/progressionWidget/subTitle"
+msgstr "До конца события осталось %(value)s"
+
+msgid "tooltip/progressionWidget/title"
+msgstr "Стальной охотник"
+
+msgid "tooltip/quest/header"
+msgstr "Задача режима «Стальной охотник»"
+
+msgid "tooltip/shop/subtitle"
+msgstr ""
+"Обменивайте {{@ colorLegacy 'ede6d9'}}стальные печати{{/}} на особые "
+"награды."
+
+msgid "tooltip/shop/text"
+msgstr ""
+"Показывайте высокую эффективность в бою, занимайте первые места и выполняйте"
+" задачи, чтобы заработать стальные печати."
+
+msgid "tooltip/shop/title"
+msgstr "Магазин «Стального охотника»"
+
+msgid "upgrades/description"
+msgstr ""
+"Атакуйте технику противника и собирайте добычу на карте, чтобы заработать "
+"опыт и повысить уровень своей машины. Каждый новый уровень позволяет "
+"модернизировать модуль из дерева исследований и существенно улучшить ТТХ "
+"вашей машины."
+
+msgid "upgrades/footer"
+msgstr "Модули доступны для исследования только в бою."
+
+msgid "upgrades/subtitle"
+msgstr "Вы выходите в бой на машине I уровня."
+
+msgid "upgrades/title"
+msgstr "Улучшения машины в бою"

@@ -1,6 +1,6 @@
 import types, arena_bonus_type_caps, constants
 from UnitBase import CMD_NAMES, ROSTER_TYPE, PREBATTLE_TYPE_BY_UNIT_MGR_ROSTER, PREBATTLE_TYPE_BY_UNIT_MGR_ROSTER_EXT, ROSTER_TYPE_TO_CLASS, UNIT_MGR_FLAGS_TO_PREBATTLE_TYPE, UNIT_MGR_FLAGS_TO_UNIT_MGR_ENTITY_NAME, UNIT_MGR_FLAGS_TO_INVITATION_TYPE, QUEUE_TYPE_BY_UNIT_MGR_ROSTER, UNIT_ERROR, VEHICLE_TAGS_GROUP_BY_UNIT_MGR_FLAGS
-from constants import ARENA_GUI_TYPE, ARENA_GUI_TYPE_LABEL, ARENA_BONUS_TYPE, ARENA_BONUS_TYPE_NAMES, ARENA_BONUS_TYPE_IDS, ARENA_BONUS_MASK, QUEUE_TYPE, QUEUE_TYPE_NAMES, PREBATTLE_TYPE, PREBATTLE_TYPE_NAMES, INVITATION_TYPE, BATTLE_MODE_VEHICLE_TAGS, SEASON_TYPE_BY_NAME, SEASON_NAME_BY_TYPE, QUEUE_TYPE_IDS, ARENA_BONUS_TYPE_TO_QUEUE_TYPE, ATTACK_REASONS, ATTACK_REASON_INDICES, DAMAGE_INFO_CODES, DAMAGE_INFO_INDICES, DAMAGE_INFO_CODES_PER_ATTACK_REASON
+from constants import ARENA_GUI_TYPE, ARENA_GUI_TYPE_LABEL, ARENA_BONUS_TYPE, ARENA_BONUS_TYPE_NAMES, ARENA_BONUS_TYPE_IDS, ARENA_BONUS_MASK, QUEUE_TYPE, QUEUE_TYPE_NAMES, PREBATTLE_TYPE, PREBATTLE_TYPE_NAMES, INVITATION_TYPE, BATTLE_MODE_VEHICLE_TAGS, SEASON_TYPE_BY_NAME, SEASON_NAME_BY_TYPE, QUEUE_TYPE_IDS, ARENA_BONUS_TYPE_TO_QUEUE_TYPE, ATTACK_REASONS, ATTACK_REASON_INDICES, DAMAGE_INFO_CODES, DAMAGE_INFO_INDICES, DAMAGE_INFO_CODES_PER_ATTACK_REASON, IS_CLIENT
 from BattleFeedbackCommon import BATTLE_EVENT_TYPE
 from debug_utils import LOG_DEBUG
 from soft_exception import SoftException
@@ -408,6 +408,22 @@ class AbstractBattleMode(object):
         return []
 
     @property
+    def _client_bonusTokens(self):
+        return []
+
+    @property
+    def _client_viewsForMonitoring(self):
+        return []
+
+    @property
+    def _client_gfNotifications(self):
+        return {}
+
+    @property
+    def _client_awardControllerHandlers(self):
+        return []
+
+    @property
     def _client_lootBoxAutoOpenSubFormatters(self):
         return []
 
@@ -434,6 +450,14 @@ class AbstractBattleMode(object):
     @property
     def _client_equipmentTriggers(self):
         return []
+
+    @property
+    def _client_equipmentItems(self):
+        return []
+
+    @property
+    def _client_equipmentItemsTooltipMovies(self):
+        return ({}, {})
 
     @property
     def _client_lowPriorityWulfWindows(self):
@@ -493,7 +517,7 @@ class AbstractBattleMode(object):
         return
 
     @property
-    def _client_hangarPresetsGetter(self):
+    def _client_hangarDynamicGuiProvider(self):
         return
 
     @property
@@ -502,6 +526,17 @@ class AbstractBattleMode(object):
 
     @property
     def _client_arenaInfoKeys(self):
+        return
+
+    @property
+    def _client_hangarEventBannerType(self):
+        return
+
+    def registerHangarEventBanner(self):
+        if IS_CLIENT:
+            if self._client_hangarEventBannerType is not None:
+                from gui.impl.lobby.user_missions.hangar_widget.event_banners.event_banners_container import EventBannersContainer
+                EventBannersContainer().registerEventBanner(self._client_hangarEventBannerType)
         return
 
     def registerSquadTypes(self):
@@ -690,6 +725,17 @@ class AbstractBattleMode(object):
         for prefix, _class, replayClass in self._client_equipmentTriggers:
             registerEquipmentTrigger(prefix, _class, replayClass)
 
+    def registerClientEquipmentItems(self):
+        from gui.shared.system_factory import registerEquipmentItem
+        from gui.shared.tooltips.advanced import MODULE_MOVIES
+        from gui.Scaleform.daapi.settings.config import ADVANCED_COMPLEX_TOOLTIPS
+        for prefix, _class, replayClass in self._client_equipmentItems:
+            registerEquipmentItem(prefix, _class, replayClass)
+
+        moduleMovies, advancedTooltips = self._client_equipmentItemsTooltipMovies
+        MODULE_MOVIES.update(moduleMovies)
+        ADVANCED_COMPLEX_TOOLTIPS.update(advancedTooltips)
+
     def registerBattleResultSysMsgType(self):
         from battle_results import ARENA_BONUS_TYPE_TO_SM_TYPE_BATTLE_RESULT
         from chat_shared import SYS_MESSAGE_TYPE
@@ -733,9 +779,25 @@ class AbstractBattleMode(object):
         for sysMsgType, formatter in self._client_messengerServerFormatters.iteritems():
             registerMessengerServerFormatter(sysMsgType, formatter, True)
 
+    def registerClientGamefaceNotifications(self):
+        from gui.shared.system_factory import registerGamefaceNotifications
+        registerGamefaceNotifications(self._client_gfNotifications)
+
     def registerClientTokenQuestsSubFormatters(self):
         from gui.shared.system_factory import registerTokenQuestsSubFormatters
         registerTokenQuestsSubFormatters(self._client_tokenQuestsSubFormatters)
+
+    def registerClientBonusTokens(self):
+        from gui.shared.system_factory import registerBonusTokens
+        registerBonusTokens(self._client_bonusTokens)
+
+    def registerClientViewsForMonitoring(self):
+        from gui.shared.system_factory import registerViewsForMonitoring
+        registerViewsForMonitoring(self._client_viewsForMonitoring)
+
+    def registerClientAwardControllerHandlers(self):
+        from gui.shared.system_factory import registerAwardControllerHandlers
+        registerAwardControllerHandlers(self._client_awardControllerHandlers)
 
     def registerClientLootBoxAutoOpenSubFormatters(self):
         from gui.shared.system_factory import registerLootBoxAutoOpenSubFormatters
@@ -786,9 +848,9 @@ class AbstractBattleMode(object):
         if self._client_hangarPresetsReader:
             from gui.shared.system_factory import registerHangarPresetsReader
             registerHangarPresetsReader(self._client_hangarPresetsReader)
-        if self._client_hangarPresetsGetter:
-            from gui.shared.system_factory import registerHangarPresetGetter
-            registerHangarPresetGetter(self._QUEUE_TYPE, self._client_hangarPresetsGetter)
+        if self._client_hangarDynamicGuiProvider:
+            from gui.shared.system_factory import registerHangarDynamicGuiProvider
+            registerHangarDynamicGuiProvider(self._QUEUE_TYPE, self._client_hangarDynamicGuiProvider)
 
     def registerNonReplayMode(self):
         ARENA_BONUS_TYPE.REPLAY_DISABLE_RANGE.append(self._ARENA_BONUS_TYPE)

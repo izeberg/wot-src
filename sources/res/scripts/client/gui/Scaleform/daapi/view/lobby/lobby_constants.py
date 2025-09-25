@@ -18,6 +18,5 @@ class USER(object):
     CREATE_BATTLE_ROYALE_SQUAD = 'createBattleRoyaleSquad'
     INVITE = 'invite'
     VEHICLE_INFO = 'vehicleInfoEx'
-    VEHICLE_PREVIEW = 'vehiclePreview'
     END_REFERRAL_COMPANY = 'endReferralCompany'
     CREATE_MAPBOX_SQUAD = 'createMapboxSquad'

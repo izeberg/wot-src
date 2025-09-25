@@ -526,12 +526,11 @@ msgstr "Нажмите"
 
 msgid "devMaps/mapInfo/info"
 msgstr ""
-"На этой карте тестируются бета-версии случайных событий. Попадание на такие "
-"боевые локации можно отключить в настройках (вкладка «Игра», блок «Типы "
-"Случайных боёв»)."
+"На этой карте могут произойти случайные события. Такие локации можно "
+"отключить в настройках игры."
 
 msgid "devMaps/mapInfo/text"
-msgstr "Тестируемая карта"
+msgstr "Карта со случайными событиями"
 
 msgid "devices/ammo_bay"
 msgstr "боеукладка"
@@ -878,6 +877,12 @@ msgstr "%(time)s с..."
 msgid "fortConsumables/timer/postfix"
 msgstr "с..."
 
+msgid "grille/status/reload"
+msgstr "ПЕРЕЗАРЯДКА..."
+
+msgid "grille/status/speedlimit"
+msgstr "МАКСИМАЛЬНАЯ СКОРОСТЬ"
+
 msgid "helpScreen/hint/description"
 msgstr "для знакомства с особенностями машины"
 
@@ -889,6 +894,27 @@ msgstr "для знакомства с особенностями карты"
 
 msgid "helpScreen/mapbox/press"
 msgstr "Нажмите"
+
+msgid "helpScreen/pillbox/description/enter"
+msgstr ""
+", чтобы активировать осадный/<font color='#F4B12C'><b>укреплённый</b></font>"
+" режим"
+
+msgid "helpScreen/pillbox/description/exitPillbox"
+msgstr ""
+", чтобы активировать осадный/<font color='#F4B12C'><b>походный</b></font> "
+"режим"
+
+msgid "helpScreen/pillbox/description/exitSiege"
+msgstr ""
+", чтобы активировать походный/<font "
+"color='#F4B12C'><b>укреплённый</b></font> режим"
+
+msgid "helpScreen/pillbox/noBinding"
+msgstr "Не назначена клавиша для переключения режимов"
+
+msgid "helpScreen/pillbox/press"
+msgstr "Нажмите/<font color='#F4B12C'><b>удерживайте</b></font>"
 
 msgid "hint/noBindingKey"
 msgstr "Ключевые клавиши не назначены"
@@ -974,9 +1000,6 @@ msgstr "Стрельба невозможна: повреждено орудие
 msgid "player_errors/cant_shoot/gun_locked"
 msgstr "Стрельба невозможна."
 
-msgid "player_errors/cant_shoot/gun_overheated"
-msgstr "Стрельба невозможна: орудие перегрето."
-
 msgid "player_errors/cant_shoot/gun_reload"
 msgstr "Орудие перезаряжается."
 
@@ -1025,6 +1048,9 @@ msgstr "Все устройства в отличном состоянии, ре
 
 msgid "player_errors/equipment/repairkit/deviceIsNotDamaged"
 msgstr "[%(entity)s] в отличном состоянии, ремонт не требуется."
+
+msgid "player_errors/mechanics/supportWeapon/cant_shoot"
+msgstr "Не удалось активировать коаксиальное оружие."
 
 msgid "player_messages/ALLY_HIT"
 msgstr "Попадание в союзника %(entity)s!"
@@ -2843,8 +2869,16 @@ msgstr "Ключевые клавиши не назначены"
 msgid "siegeMode/hint/press"
 msgstr "Нажмите"
 
+msgid "siegeMode/hint/rechargeableNitro"
+msgstr ", чтобы активировать жидкотопливные ускорители"
+
 msgid "siegeMode/hint/rocketAcceleration"
 msgstr "для активации реактивных ускорителей"
+
+msgid "siegeMode/hint/targetDesignator"
+msgstr ""
+"Стреляйте по машинам противника, чтобы получить дополнительный эффект от "
+"лазерного целеуказателя"
 
 msgid "siegeMode/hint/turboshaftEngine"
 msgstr "для смены режима работы двигателя"
@@ -2854,6 +2888,12 @@ msgstr "чтобы переключить режим огня"
 
 msgid "siegeMode/hint/wheeled"
 msgstr "для смены режима движения"
+
+msgid "spotted/indicator"
+msgstr "Время видимости и получаемый урон увеличены"
+
+msgid "spotted/seconds"
+msgstr "c"
 
 msgid "statistics/exit"
 msgstr "Нажмите Esc для выхода в Ангар..."

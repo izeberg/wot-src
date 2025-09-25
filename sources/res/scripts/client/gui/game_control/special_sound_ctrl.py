@@ -80,6 +80,9 @@ class SpecialSoundCtrl(ISpecialSoundCtrl):
     def getVoiceoverByTankmanTagOrVehicle(self, tag):
         return self.__voiceoverByTankman.get(tag) or self.__voiceoverByVehicle.get(tag)
 
+    def getVoiceoverSpecialModesByTag(self, tag):
+        return self.__voiceoverSpecialModes.get(tag, {}).get(_FULL_CREW_CONDITION)
+
     def checkTagForSpecialVoice(self, tag):
         return tag in self.__specialVoiceTags
 
@@ -114,7 +117,7 @@ class SpecialSoundCtrl(ISpecialSoundCtrl):
             return
         else:
             arenaVisitor = self.__sessionProvider.arenaVisitor
-            if arenaVisitor.bonus.hasRespawns():
+            if arenaVisitor.hasRespawns():
                 _logger.debug('Skip special arena sound according to game mode')
                 return
             if isPlayerVehicle and vehiclePublicInfo.outfit:

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from typing import Tuple, Any, TYPE_CHECKING
 from battle_modifiers_ext.battle_modifiers import BattleModifiers
 from battle_modifiers_ext.constants_ext import GameplayImpact

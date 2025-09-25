@@ -1,12 +1,15 @@
 from gui.Scaleform.framework.managers.loaders import SFViewLoadParams
+from gui.Scaleform.managers.windows_stored_data import g_windowsStoredData, TARGET_ID
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.shared.events import FocusEvent
+from gui.shared.events import FocusEvent, ChannelWindowEvent
+from messenger import MessengerEntry
+from messenger.gui.Scaleform.lobby_entry import LobbyEntry
 from messenger.gui.Scaleform.meta.ChannelWindowMeta import ChannelWindowMeta
 from gui.shared import events, EVENT_BUS_SCOPE
 from messenger.gui.Scaleform.view.lobby import MESSENGER_VIEW_ALIAS
 from messenger.inject import channelsCtrlProperty
-from messenger.m_constants import PROTO_TYPE
+from messenger.m_constants import PROTO_TYPE, MESSENGER_SCOPE
 from messenger.proto import proto_getter
 
 class SimpleChannelWindow(ChannelWindowMeta):
@@ -40,6 +43,7 @@ class SimpleChannelWindow(ChannelWindowMeta):
         chat = self.chat
         if chat:
             chat.minimize()
+            self.fireEvent(ChannelWindowEvent(events.ChannelWindowEvent.ON_WINDOW_MINIMIZE, {'clientID': self._clientID}), scope=EVENT_BUS_SCOPE.LOBBY)
         self.destroy()
 
     def showFAQWindow(self):
@@ -63,12 +67,14 @@ class SimpleChannelWindow(ChannelWindowMeta):
 
     def _populate(self):
         super(SimpleChannelWindow, self)._populate()
+        self.__setInitialGeometry()
         channel = self._controller.getChannel()
         channel.onChannelInfoUpdated += self.__ce_onChannelInfoUpdated
         channel.onConnectStateChanged += self.__ce_onConnectStateChanged
         self.as_setTitleS(channel.getFullName())
         self.as_setCloseEnabledS(not channel.isSystem())
         self.__checkConnectStatus()
+        self.fireEvent(ChannelWindowEvent(events.ChannelWindowEvent.ON_WINDOW_POPULATE, {'clientID': self._clientID}), scope=EVENT_BUS_SCOPE.LOBBY)
 
     def _dispose(self):
         if self._controller is not None:
@@ -95,3 +101,13 @@ class SimpleChannelWindow(ChannelWindowMeta):
             self.as_hideWaitingS()
         else:
             self.as_showWaitingS(backport.text(R.strings.waiting.messenger.subscribe()), {})
+
+    def __setInitialGeometry(self):
+        storedData = g_windowsStoredData.getData(TARGET_ID.CHANNEL_CAROUSEL, self)
+        entry = MessengerEntry.g_instance.gui.getEntry(MESSENGER_SCOPE.LOBBY)
+        if isinstance(entry, LobbyEntry) and not storedData:
+            pos = entry.carouselHandler.getWindowGeometry(self._clientID)
+            if pos is not None:
+                x, y, width, height = pos
+                self.as_setGeometryS(x, y, width, height)
+        return

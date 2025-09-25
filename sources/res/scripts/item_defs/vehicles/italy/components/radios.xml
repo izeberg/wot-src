@@ -23,6 +23,7 @@
 		<RV_4F>20</RV_4F>
 		<AN_GRS_3>21</AN_GRS_3>
 		<RV_4P>22</RV_4P>
+		<SEM_25_S>23</SEM_25_S>
 		<RV_4_213_V_7x7>501</RV_4_213_V_7x7>
 		<Development_Radio>65000</Development_Radio>
 	</ids>
@@ -182,6 +183,7 @@
 			<tags/>
 			<level>9</level>
 			<price>45000</price>
+			<notInShop>true</notInShop>
 			<weight>23</weight>
 			<distance>710</distance>
 			<maxHealth>150</maxHealth>
@@ -292,11 +294,24 @@
 				<!--BW_String-->
 			</repairCost>
 		</SEM_25>
+		<SEM_25_S>
+			<userString>#italy_vehicles:SEM_25_S</userString>
+			<tags/>
+			<level>9</level>
+			<price>40000</price>
+			<notInShop>true</notInShop>
+			<weight>17</weight>
+			<distance>670</distance>
+			<maxHealth>210</maxHealth>
+			<maxRegenHealth>105</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</SEM_25_S>
 		<SEM_24>
 			<userString>#italy_vehicles:SEM_24</userString>
 			<tags/>
 			<level>9</level>
 			<price>50000</price>
+			<notInShop>true</notInShop>
 			<weight>23</weight>
 			<distance>710</distance>
 			<maxHealth>150</maxHealth>

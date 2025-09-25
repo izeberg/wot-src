@@ -68,6 +68,10 @@ package net.wg.gui.lobby.techtree.interfaces
       
       function isTopActionNode() : Boolean;
       
+      function isPromoted() : Boolean;
+      
+      function isVisible() : Boolean;
+      
       function invalidateNodeState() : void;
       
       function cleanUp() : void;

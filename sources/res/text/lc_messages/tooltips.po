@@ -472,7 +472,7 @@ msgid "additionalRewards/premium"
 msgstr "Дней Общего премиум аккаунта: %(daysCount)s"
 
 msgid "additionalRewards/premium_plus"
-msgstr "Дней Танкового премиум аккаунта: %(daysCount)s"
+msgstr "Дни Танкового премиум аккаунта"
 
 msgid "additionalRewards/tankmenXP"
 msgstr "%(value)s опыта экипажа"
@@ -632,9 +632,8 @@ msgstr ""
 
 msgid "advanced/extraHealthReserve"
 msgstr ""
-"Увеличивает запас прочности машины. Повышает прочность и грузоподъёмность "
-"ходовой, а также скорость её ремонта. Полностью восстанавливает прочность "
-"ходовой после ремонта."
+"Увеличивает запас прочности машины. Повышает прочность ходовой и скорость её"
+" ремонта. Полностью восстанавливает прочность ходовой после ремонта."
 
 msgid "advanced/gamemodeRandom"
 msgstr "Бой с автоматическим подбором союзников и противника."
@@ -824,7 +823,7 @@ msgstr ""
 msgid "advanced/vehicleChassis"
 msgstr ""
 "Модуль, влияющий на скорость поворота машины, а также на её проходимость по "
-"различным грунтам. Также влияет на грузоподъёмность."
+"различным грунтам."
 
 msgid "advanced/vehicleDualGun"
 msgstr ""
@@ -851,9 +850,9 @@ msgstr ""
 
 msgid "advanced/vehicleTrackWithinTrackChassis"
 msgstr ""
-"Ходовая влияет на скорость поворота машины, её проходимость по различным "
-"грунтам и грузоподъёмность. Ходовая с резервной гусеницей позволяет "
-"двигаться даже при выходе из строя основной гусеничной ленты."
+"Ходовая влияет на скорость поворота машины и её проходимость по различным "
+"грунтам. Ходовая с резервной гусеницей позволяет двигаться даже при выходе "
+"из строя основной гусеничной ленты."
 
 msgid "advanced/vehicleTurret"
 msgstr ""
@@ -863,8 +862,8 @@ msgstr ""
 
 msgid "advanced/vehicleWheeledChassis"
 msgstr ""
-"Модуль, влияющий на манёвренность машины и её грузоподъёмность. Ходовая "
-"колёсной техники не позволяет развернуться на месте."
+"Модуль, влияющий на манёвренность машины. Ходовая колёсной техники "
+"не позволяет развернуться на месте."
 
 msgid "ammo/auto/body"
 msgstr ""
@@ -924,6 +923,29 @@ msgstr "Настоящее игровое имя и тег клана не ви�
 
 msgid "anonymizer/teamStats/header"
 msgstr "Имя игрока было скрыто: %(name)s"
+
+msgid "armorFlashlight/performanceImpactInfo/attention"
+msgstr "Включение подсветки брони может снизить быстродействие игры."
+
+msgid "armorFlashlight/performanceImpactInfo/body"
+msgstr ""
+"Подсветка брони находится в стадии БЕТА-тестирования.\n"
+" "
+
+msgid "armorFlashlight/performanceImpactInfo/header"
+msgstr "Возможное снижение производительности"
+
+msgid "armorFlashlight/resolutionScalingInfo/attention"
+msgstr ""
+"Увеличение разрешения подсветки брони может снизить быстродействие игры."
+
+msgid "armorFlashlight/resolutionScalingInfo/body"
+msgstr ""
+"Разрешение подсветки влияет на качество анализа брони. Снижение разрешения улучшает быстродействие, но может привести к потере точности при оценке мелких деталей брони.\n"
+" "
+
+msgid "armorFlashlight/resolutionScalingInfo/header"
+msgstr "Разрешение подсветки брони"
 
 msgid "awardItem/abilityToken/body"
 msgstr ""
@@ -1283,6 +1305,12 @@ msgstr "Дополнительный слот для исключения кар
 msgid "awardItem/excluded_map/header"
 msgstr "Исключённая карта"
 
+msgid "awardItem/excluded_maps/body"
+msgstr "%(mapCount)s дополнительных слота для исключения карт."
+
+msgid "awardItem/excluded_maps/header"
+msgstr "Исключённые карты"
+
 msgid "awardItem/exclusive_vehicle/body"
 msgstr "%(vehicleType)s %(vehicleName)s, эксклюзивно для WoT Plus."
 
@@ -1421,7 +1449,7 @@ msgstr "Случайная учебная брошюра"
 
 msgid "awardItem/randomNationalBlueprint/body"
 msgstr ""
-"Используются для создания фрагментов чертежей для любой исследуемой машины "
+"Используются для создания чертежей любой исследуемой машины II–X уровня "
 "случайной нации."
 
 msgid "awardItem/randomNationalBlueprint/header"
@@ -2269,7 +2297,7 @@ msgstr "Возможно снижение производительности"
 
 msgid "battle_royale/hangar/tankSetupPanel/ability/cooldownTime"
 msgstr ""
-"{whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close} с Время подготовки (с)"
+"{whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close} Время подготовки (с)"
 
 msgid "battle_royale/hangar/vehicle/description/china"
 msgstr ""
@@ -2427,20 +2455,27 @@ msgid "blueprint/BlueprintFragmentTooltip/inStorage"
 msgstr "На Складе"
 
 msgid "blueprint/BlueprintFragmentTooltip/intelDescription"
-msgstr ""
-"Используется для создания фрагментов чертежей любой исследуемой техники."
+msgstr "Используются для создания чертежей исследуемой техники %(tier)s."
+
+msgid "blueprint/BlueprintFragmentTooltip/intelDescriptionTier"
+msgstr "II–X уровней"
 
 msgid "blueprint/BlueprintFragmentTooltip/intelFragment"
 msgstr "Универсальный фрагмент"
 
 msgid "blueprint/BlueprintFragmentTooltip/nationalDescription"
-msgstr "Используется для создания фрагментов чертежей техники %(nation)s."
+msgstr ""
+"Используются для создания чертежей исследуемой техники %(nation)s %(tier)s."
+
+msgid "blueprint/BlueprintFragmentTooltip/nationalDescriptionTier"
+msgstr "II–X уровней"
 
 msgid "blueprint/BlueprintFragmentTooltip/nationalFragment"
 msgstr "Национальный фрагмент"
 
 msgid "blueprint/BlueprintFragmentTooltip/random/description"
-msgstr "Вы получите фрагмент чертежа для случайной исследуемой машины."
+msgstr ""
+"Вы получите фрагмент чертежа для случайной исследуемой машины II–XI уровня."
 
 msgid "blueprint/BlueprintFragmentTooltip/random/discount"
 msgstr ""
@@ -3874,12 +3909,12 @@ msgstr "Нажмите, чтобы посмотреть дополнительн
 
 msgid "devMaps/body"
 msgstr ""
-"Возможность попасть на новые или сильно переработанные боевые локации, а "
-"также карты с новыми механиками. Обратите внимание: некоторые модели и "
-"эффекты могут быть нефинальными."
+"Сражайтесь на картах с такими случайными событиями, как крушение поезда или "
+"самолёта, которые динамически меняют поле боя и создают новые тактические "
+"возможности."
 
 msgid "devMaps/header"
-msgstr "Карты в разработке"
+msgstr "Играть на картах со случайными событиями"
 
 msgid "deviceFits/already_installed/header"
 msgstr "Установлено на:"
@@ -3905,24 +3940,6 @@ msgstr "Замените орудие на совместимое."
 
 msgid "deviceFits/not_with_installed_equipment/header"
 msgstr "Чтобы установить данное снаряжение, выгрузите: %(eqs)s"
-
-msgid "deviceFits/remove_too_heavy/header"
-msgstr "Недостаточно грузоподъёмности для демонтажа оборудования."
-
-msgid "deviceFits/remove_too_heavy/text"
-msgstr "Установите ходовую с большей грузоподъёмностью."
-
-msgid "deviceFits/too_heavy/header"
-msgstr "Недостаточно грузоподъёмности для установки оборудования."
-
-msgid "deviceFits/too_heavy/text"
-msgstr "Установите ходовую с большей грузоподъёмностью."
-
-msgid "deviceFits/too_heavy_chassi/header"
-msgstr "Недостаточно грузоподъёмности шасси."
-
-msgid "deviceFits/too_heavy_chassi/text"
-msgstr "Замените модули на более лёгкие."
 
 msgid "deviceFits/unlock_error/header"
 msgstr "Модуль не исследован."
@@ -4839,9 +4856,8 @@ msgstr "Получать благодарности в бою"
 
 msgid "enableTierGrouping/body"
 msgstr ""
-"Настройка работает при условии, что иконки техники отображаются. В режимах, "
-"где иконки техники не отображаются, группирование иконок не работает "
-"(например, в Генеральном сражении)."
+"Настройка работает только в тех режимах, где отображаются иконки техники. "
+"Если иконки не отображаются, группирование не применяется."
 
 msgid "enableTierGrouping/header"
 msgstr "Группирование иконок на панели счёта"
@@ -5749,12 +5765,6 @@ msgstr "Для выхода в бой выберите машину и подт�
 msgid "hangar/startBtn/squadNotReady/header"
 msgstr "Недоступно"
 
-msgid "hangar/startBtn/vehicleToHeavy/body"
-msgstr ""
-"Текущая нагрузка превышает грузоподъёмность ходовой. Повысьте "
-"грузоподъёмность, установив более совершенную ходовую или оборудование типа "
-"«Улучшенная закалка»."
-
 msgid "hangar/status/toRent"
 msgstr "Перейти к продлению аренды."
 
@@ -6018,9 +6028,7 @@ msgid "hangarTutorial/techRepair/header"
 msgstr "Ремонт машины"
 
 msgid "header/account/body"
-msgstr ""
-"Нажмите, чтобы посмотреть подробную информацию об\n"
-"аккаунте игрока."
+msgstr "Нажмите, чтобы посмотреть подробную информацию об аккаунте игрока."
 
 msgid "header/account/header"
 msgstr "Аккаунт игрока"
@@ -6138,9 +6146,7 @@ msgid "header/buttons/crystal/clickDesc"
 msgstr "Нажмите, чтобы получить дополнительную информацию."
 
 msgid "header/buttons/crystal/description0"
-msgstr ""
-"Постоянные источники: Случайные бои (в т.ч. Генеральное сражение) на "
-"%(vehicle)s."
+msgstr "Постоянные источники: Случайные бои на %(vehicle)s."
 
 msgid "header/buttons/crystal/description1"
 msgstr ""
@@ -6535,6 +6541,9 @@ msgstr "I"
 
 msgid "level/10"
 msgstr "X"
+
+msgid "level/11"
+msgstr "XI"
 
 msgid "level/2"
 msgstr "II"
@@ -7011,57 +7020,8 @@ msgstr ""
 "Нажмите, чтобы подробнее\n"
 "узнать о режиме."
 
-msgid "mode_selector/popover/assault/body"
-msgstr ""
-"Одна команда атакует базу, вторая команда защищается. Роль команды (атака или защита) назначается случайным образом. Подрежим доступен после исследования любой машины VI уровня.\n"
-"\n"
-"Состав: две команды по 15 игроков в каждой."
-
-msgid "mode_selector/popover/assault/header"
-msgstr "Штурм"
-
 msgid "mode_selector/popover/body"
 msgstr "Нажмите, чтобы настроить подрежимы боя."
-
-msgid "mode_selector/popover/default/body"
-msgstr ""
-"У каждой из двух команд своя база. Бой идёт до уничтожения всей техники противника или до захвата базы. Подрежим доступен для всех типов техники и всегда включён.\n"
-"\n"
-"Состав: две команды по 15 игроков в каждой."
-
-msgid "mode_selector/popover/default/header"
-msgstr "Стандартный бой"
-
-msgid "mode_selector/popover/devMaps/body"
-msgstr ""
-"Возможность попасть на новые или сильно переработанные боевые локации, а "
-"также карты с новыми механиками. Обратите внимание: некоторые модели и "
-"эффекты могут быть нефинальными."
-
-msgid "mode_selector/popover/devMaps/header"
-msgstr "Карты в разработке"
-
-msgid "mode_selector/popover/domination/body"
-msgstr ""
-"В бою только одна нейтральная база, и обе команды пытаются её захватить. Бой идёт до уничтожения всей техники противника или до захвата базы. Подрежим доступен после исследования любой машины IV уровня.\n"
-"\n"
-"Состав: две команды по 15 игроков в каждой."
-
-msgid "mode_selector/popover/domination/header"
-msgstr "Встречный бой"
-
-msgid "mode_selector/popover/epicStandard/attention"
-msgstr ""
-"В этом подрежиме может наблюдаться небольшое снижение производительности."
-
-msgid "mode_selector/popover/epicStandard/body"
-msgstr ""
-"У каждой из двух команд своя база. Бой на большой карте идёт до уничтожения всей техники противника или до захвата базы. Подрежим доступен после исследования любой машины Х уровня.\n"
-"\n"
-"Состав: две команды по 30 игроков в каждой."
-
-msgid "mode_selector/popover/epicStandard/header"
-msgstr "Генеральное сражение"
 
 msgid "mode_selector/progressionBtn/body"
 msgstr ""
@@ -7194,14 +7154,6 @@ msgstr "Чтобы установить данное снаряжение, вы�
 msgid "moduleFits/operation_error/header"
 msgstr "Финансовая операция недоступна."
 
-msgid "moduleFits/remove_too_heavy/header"
-msgstr "Недостаточно грузоподъёмности для демонтажа модуля."
-
-msgid "moduleFits/remove_too_heavy/text"
-msgstr ""
-"Установите\n"
-"ходовую с большей грузоподъёмностью."
-
 msgid "moduleFits/replace"
 msgstr ""
 "Сейчас установлено: %(moduleName)s. Замена оборудования вызовет следующие "
@@ -7212,24 +7164,6 @@ msgstr "Установка невозможна"
 
 msgid "moduleFits/similar_device_already_installed/text"
 msgstr "На машину уже установлено оборудование с аналогичным эффектом."
-
-msgid "moduleFits/too_heavy/header"
-msgstr "Недостаточно грузоподъёмности для установки модуля."
-
-msgid "moduleFits/too_heavy/text"
-msgstr "Установите ходовую с большей грузоподъёмностью."
-
-msgid "moduleFits/too_heavy_chassi/header"
-msgstr "Недостаточно грузоподъёмности шасси."
-
-msgid "moduleFits/too_heavy_chassi/text"
-msgstr "Замените модули на более лёгкие."
-
-msgid "moduleFits/too_heavy_chassis/header"
-msgstr "Слишком тяжёлые модули"
-
-msgid "moduleFits/too_heavy_chassis/text"
-msgstr "Попробуйте облегчить машину."
 
 msgid "moduleFits/unlock_error/header"
 msgstr "Модуль не исследован."
@@ -8138,6 +8072,23 @@ msgstr "Уникальный член экипажа"
 
 msgid "notrecruitedtankman/expireTitle"
 msgstr "Рекрутирование"
+
+msgid "notrecruitedtankman/fisherman/desc"
+msgstr ""
+"«Там, где я вырос, воздух такой плотный, что его можно жевать, а аллигаторы "
+"никогда не спускают с тебя глаз. Я наловчился закидывать удочку по отцовской"
+" методе раньше, чем научился читать. Чаще всего я коротал время на его утлой"
+" лодчонке, вытаскивая из воды зубастых окуней и сомов. Там, доложу я вам, "
+"робеть некогда. А теперь мне дали стального зверя, и, по правде говоря, "
+"разница небольшая. Здесь тоже нужна твёрдая рука, зоркий глаз и стальные "
+"нервы. При этом я ни разу не герой. Просто человек с болот, который делает "
+"свою работу»."
+
+msgid "notrecruitedtankman/fisherman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/fisherman/label"
+msgstr "?empty?"
 
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "«Нулевые» навыки"
@@ -9897,6 +9848,106 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_bp17_1/label"
 msgstr "Боевой пропуск, XVII сезон"
 
+msgid "notrecruitedtankman/tankmen_bp17_10/desc"
+msgstr ""
+"Аманда Эверт — блестящий антрополог и один из немногих равных Ларе по "
+"интеллекту людей. Она была одной из ее ближайших подруг в университетские "
+"годы — до тех пор, пока всё не изменило таинственное трагическое событие в "
+"Перу. Теперь, ведомая обидой и ощущением предательства, Аманда стала "
+"соперницей и непростым противником Лары. Её увлечение мистическим, "
+"необъяснимым, древними тайнами превратилось в одержимость, которая часто "
+"приводит её к конфликтам с Ларой. Хотя они часто встают друг у друга на "
+"пути, девушки остаются связаны общим прошлым и неустанным поиском истины."
+
+msgid "notrecruitedtankman/tankmen_bp17_10/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_10/label"
+msgstr "Боевой пропуск: Tomb Raider"
+
+msgid "notrecruitedtankman/tankmen_bp17_11/desc"
+msgstr ""
+"Семь лет подряд рубить дрова — такое кого угодно сломало бы. Но не Гарри "
+"Баньяна. Ему нравилась рутина, тишина одиночества и запах сосен. В жару и в "
+"снег его всегда можно было найти в укромном уголке на лесной поляне. Выбрать"
+" цель, отряхнуть руки, покрепче перехватить надёжный топор — один мощный "
+"удар, и очередное бревно распадается на два аккуратных полена. Повторить. И "
+"так — весь день, каждый день, на протяжении семи лет. Гарри понятия не имел,"
+" куда уходила заготовленная древесина — вряд ли лагерю нужно было столько "
+"дров. Но его это не особо волновало. Он просто продолжал колоть."
+
+msgid "notrecruitedtankman/tankmen_bp17_11/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_11/label"
+msgstr "Боевой пропуск: полевой фестиваль"
+
+msgid "notrecruitedtankman/tankmen_bp17_12/desc"
+msgstr ""
+"«Шефу не место на полевой кухне», — говорили они. — Особенно гордому "
+"парижанину, воспитанному в традициях высокой французской кухни». Жоэля эти "
+"заявления мало волновали. Напротив, только подогревали его аппетит к "
+"приключениям. Упрямый, находчивый и изобретательный, он обходится тем малым,"
+" что есть на кухне, с присущими ему страстью и энтузиазмом. Сидя у огня, он "
+"внимательно следит за тем, как в котелке побулькивает его фирменный потофё —"
+" с ароматом лесной поляны и едва уловимым привкусом стали."
+
+msgid "notrecruitedtankman/tankmen_bp17_12/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_12/label"
+msgstr "Боевой пропуск: полевой фестиваль"
+
+msgid "notrecruitedtankman/tankmen_bp17_13/desc"
+msgstr ""
+"Утверждать, что Эдмунд подмечает детали, — всё равно что говорить, будто "
+"вода мокрая, а «Маус» тяжёлый. Кажется, он постоянно сидит над картами и "
+"чертежами и рассказывает всем о клещевых манёврах и узких местах. Но его "
+"одержимость точностью не ограничивается схемами и набросками. Он всегда "
+"остаётся бескомпромиссным командиром, который старается предвидеть сценарий "
+"сражения. И если план «А» даёт сбой, у него всего наготове планы «Б», «В» и,"
+" вероятнее всего, «Д»."
+
+msgid "notrecruitedtankman/tankmen_bp17_13/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_13/label"
+msgstr "Боевой пропуск: полевой фестиваль"
+
+msgid "notrecruitedtankman/tankmen_bp17_14/desc"
+msgstr ""
+"Оскар — фотограф в лагере, и его главная задача — документировать операции и"
+" оборудование, стараясь при этом не мешаться под ногами. Однако сам Оскар, "
+"видит в своей работе нечто большее. Он старается запечатлеть мельчайшие "
+"детали, воспоминания и моменты, которые в противном случае стёрлись бы из "
+"памяти. Незаметно для других членов отряда, он встаёт рано на рассвете, "
+"чтобы застать «Goldene Stunde» — так называемый «золотой» час, когда "
+"утреннее солнце заливает весь лес нежным янтарным светом. Кто-то подумает, "
+"ничего особенного: те же деревья, повседневные занятия. Но в этом весь Оскар"
+" — всегда находит прекрасное в обыденном."
+
+msgid "notrecruitedtankman/tankmen_bp17_14/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_14/label"
+msgstr "Боевой пропуск: полевой фестиваль"
+
+msgid "notrecruitedtankman/tankmen_bp17_15/desc"
+msgstr ""
+"Повреждена гусеница? Не работает оптика? Башня не вращается? Дайте Токареву "
+"десять минут и его старый ящик с инструментами — вмиг всё починит. Для него "
+"нет мелких задач, и он никогда не боялся испачкать руки. На самом деле, "
+"никто и не помнит, чтобы они были чистыми. Сергей повидал многое и починил "
+"вдвое больше, попутно собрав бесценные знания о работе военного "
+"оборудования. Что бы ни сломалось, взорвалось или отвалилось — Сергей "
+"обязательно заставит это работать снова."
+
+msgid "notrecruitedtankman/tankmen_bp17_15/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_15/label"
+msgstr "Боевой пропуск: полевой фестиваль"
+
 msgid "notrecruitedtankman/tankmen_bp17_2/desc"
 msgstr ""
 "Ангус Уильям Бьюкенен — более известный как «Пушка» — возможно, лучший "
@@ -9947,6 +9998,155 @@ msgstr "?empty?"
 
 msgid "notrecruitedtankman/tankmen_bp17_4/label"
 msgstr "Боевой пропуск, XVII сезон"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/desc"
+msgstr ""
+"Вот ты его видишь, а вот ты уже труп. Дюк прибыл, и, чёрт возьми, он отлично"
+" выглядит! Он не нуждается в представлении, но на случай, если вы из глухой "
+"тайги, — встречайте величайшего героя экшена собственной персоной и без "
+"цензуры. Он дрался с самыми жестокими врагами, преодолевал смертельные "
+"опасности и всегда выходил победителем. И вот он венулся — чтобы задать "
+"жару, побеждать на поле боя и в очередной раз спасти мир. Когда поблизости "
+"Дюк, три вещи гарантированы: большие пушки, большие взрывы и полное "
+"уничтожение. Да здравствует король!"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_5/label"
+msgstr "Боевой пропуск: Duke Nukem"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/desc"
+msgstr ""
+"Злой киборг с собственной армией верных техботов, Доктор Протон — заклятый "
+"враг Дюка и величайшая угроза человечеству. Когда-то он был блестящим "
+"учёным-робототехником, однако радиация поразила его мозг и свела с ума. "
+"Теперь им движет стремление к мировому господству, и Доктор твёрдо намерен "
+"изменить мир. Глубоко в своём подземном логове он строит планы окончательной"
+" победы — и только Дюк стоит между ним и уничтожением человечества."
+
+msgid "notrecruitedtankman/tankmen_bp17_6/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_6/label"
+msgstr "Боевой пропуск: Duke Nukem"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/desc"
+msgstr ""
+"Дюк, конечно, супергерой, но есть кое-кто, на кого он может рассчитывать в "
+"настоящей передряге, и это Генерал Грейвс. Многое повидавший ветеран с "
+"суровым выражением лица, у которого есть план на случай любого вторжения "
+"пришельцев. После многих лет борьбы с экзистенциальными угрозами в Силах "
+"обороны Земли генерал обладает великолепными тактическими познаниями — и "
+"великолепными разведданными, которые помогают Дюку выполнять задачи. Вместе "
+"они не дадут плохим парням ни единого шанса."
+
+msgid "notrecruitedtankman/tankmen_bp17_7/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_7/label"
+msgstr "Боевой пропуск: Duke Nukem"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/desc"
+msgstr ""
+"Лара Крофт — расхитительница гробниц, охотница за сокровищами и легенда "
+"приключений. Эта бесстрашная исследовательница верит, что экстраординарными "
+"становятся, а не рождаются. Она была наследницей семьи Крофт, однако её "
+"всегда тянуло к неизведанному, поэтому Лара променяла золотую клетку высшего"
+" общества на приключения. Не вздумайте принять её грацию, очарование и "
+"хорошие манеры за слабость. Она не знает страха и усталости, не боится "
+"тяжёлых битв и способна разоружить врага своей хитростью так же легко, как и"
+" своими боевыми умениями."
+
+msgid "notrecruitedtankman/tankmen_bp17_8/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_8/label"
+msgstr "Боевой пропуск: Tomb Raider"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/desc"
+msgstr ""
+"Иона Маиава — моряк, повар с отменным аппетитом и большим сердцем, а также "
+"лучший друг Лары, которому она безоговорочно доверяет. Его вдумчивость и "
+"проницательность помогают Ларе сохранять спокойствие, когда её увлечённость "
+"толкает её к краю, а инстинкт защитника и спокойствие делают его надёжным "
+"спутником даже в самых опасных экспедициях. Настоящий великан с доброй "
+"душой, Иона знает Лару лучше, чем кто-либо другой, и остаётся преданным "
+"своей лучшей подруге — независимо от того, что на кону."
+
+msgid "notrecruitedtankman/tankmen_bp17_9/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp17_9/label"
+msgstr "Боевой пропуск: Tomb Raider"
+
+msgid "notrecruitedtankman/tankmen_bp18_1/desc"
+msgstr ""
+"Мало кто знает, откуда родом Антон Механин. Скорее всего, однажды он просто "
+"выбрался из стального люка со сварочной маской на лице. Это перфекционист до"
+" мозга костей, превративший испытания танков в личный крестовый поход. Он "
+"буквально выжимает из техники все соки. Ходят слухи, будто однажды он "
+"восстановил подбитый Т-34 с помощью груды металлолома и любимого "
+"шестигранника. Его увлечённость граничит с безумием, но какая разница, если "
+"это даёт результат? Да и фамилия Механин говорит сама за себя."
+
+msgid "notrecruitedtankman/tankmen_bp18_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_1/label"
+msgstr "Боевой пропуск, XVIII сезон"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/desc"
+msgstr ""
+"Хьюго «Аксель» Керн — опытный танкист-испытатель, закалённый бесчисленными "
+"проверками. Он никогда не расстаётся со своим стареньким ключом — тот нужен "
+"не только для ремонта, но и чтобы чувствовать пульс техники. Он постукивает "
+"по броне, прислушиваясь к тихому гулу, означающему одно: «поехали». Любой "
+"танк, не прошедший проверку, будет разобран и собран заново — без "
+"исключений. Годы опыта и стальные нервы позволяют Хьюго буквально определять"
+" будущее танкостроения, а его испытания проходят только самые мощные, "
+"быстрые и смертоносные машины."
+
+msgid "notrecruitedtankman/tankmen_bp18_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_2/label"
+msgstr "Боевой пропуск, XVIII сезон"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/desc"
+msgstr ""
+"Люсьен Асир — блестящий полевой механик, который всегда всё делает по-"
+"своему. У него постоянно рождаются безумные идеи превращения обычных машин в"
+" невообразимых монстров, отрицающих законы логики и физики. Двигатели "
+"работают на пределе, башни вращаются быстрее, а техника противника горит "
+"ярче. И никто не понимает, как это вообще может работать, — включая самого "
+"Люсьена. Он напоминает безумного учёного, который действует по наитию, плюёт"
+" на правила и совершает революционные открытия. Если что-то дымит, искрит "
+"или сотрясает землю, вероятнее всего, Люсьен приложил к этому руку."
+
+msgid "notrecruitedtankman/tankmen_bp18_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_3/label"
+msgstr "Боевой пропуск, XVIII сезон"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/desc"
+msgstr ""
+"Кэсси Риггс с самого детства превращала старые драндулеты в быстрые тачки на"
+" автосвалке отца. Сейчас она делает то же самое, но уже с танками. С "
+"узнаваемой ухмылкой на лице она раз за разом модифицирует машины так, будто "
+"бросает им вызов: «не отставайте!». Увеличить мощность здесь, поправить "
+"проводку там, и БУМ — перед вами огнедышащее чудище, которое «технически "
+"соответствует регламенту». Она привыкла быть единственной женщиной на "
+"полигоне, но это её никогда не беспокоило. Кэсси знает, что именно её "
+"вызовут, когда арсеналу потребуется начать не просто выживать, а "
+"доминировать."
+
+msgid "notrecruitedtankman/tankmen_bp18_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_bp18_4/label"
+msgstr "Боевой пропуск, XVIII сезон"
 
 msgid "notrecruitedtankman/tankmen_bp2_1/desc"
 msgstr ""
@@ -10465,6 +10665,58 @@ msgstr "?empty?"
 msgid "notrecruitedtankman/tankmen_mtlb1_6/label"
 msgstr "Уникальный член экипажа"
 
+msgid "notrecruitedtankman/tankmen_pm3_1/desc"
+msgstr ""
+"Дочь учёных-антифашистов из Дрездена, Лени осталась одна, когда её родителей"
+" арестовали и отправили в концлагерь, откуда они уже не вернулись. Скрываясь"
+" в рядах подпольного сопротивления, она прошла боевую подготовку и быстро "
+"стала элитным снайпером и шпионом. Во время войны Лени координировала "
+"диверсии, устраняла высокопоставленных офицеров и добывала ценные сведения "
+"для союзников. Она не остановилась даже после окончания боевых действий, "
+"продолжив свою охоту на бывших нацистов в составе специальных подразделений,"
+" и в итоге привлекла внимание «Сектора 3», который принял её в свои ряды."
+
+msgid "notrecruitedtankman/tankmen_pm3_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_1/label"
+msgstr "Кампания «Сектор 3»"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/desc"
+msgstr ""
+"Выросший в семье кузнеца в маленьком чехословацком городке, Мирослав с "
+"ранних лет был знаком с физическим трудом. Уже тогда он понял, что сила — "
+"это не только про физическую выносливость, но и про ответственность. Когда "
+"страну оккупировали, он встал на сторону сопротивления. Используя свои "
+"знания в инженерии и мускулы, Мирослав организовывал диверсии, нанося врагу "
+"удары изнутри. После войны он сыграл важную роль в восстановлении танковой "
+"промышленности Чехословакии, а затем нашёл новое применение своим талантам в"
+" «Секторе 3»."
+
+msgid "notrecruitedtankman/tankmen_pm3_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_2/label"
+msgstr "Кампания «Сектор 3»"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/desc"
+msgstr ""
+"Корвин родился в семье военного в Вирджинии и рос в атмосфере строгой "
+"дисциплины и жёстких стандартов. Его незаурядный аналитический ум привёл его"
+" сначала в Вест-Пойнт, который он окончил с отличием, а затем — на поля "
+"сражений Второй мировой в Северной Африке и Европе. На протяжении всей войны"
+" нестандартное мышление и умение оставаться хладнокровным даже под давлением"
+" выделяли его среди других — как в роли офицера разведки, так и в качестве "
+"командира подразделения. После войны он продолжил службу в аналитическом "
+"отделе армии США, где его исключительный послужной список привлёк внимание "
+"«Сектора 3»."
+
+msgid "notrecruitedtankman/tankmen_pm3_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/tankmen_pm3_3/label"
+msgstr "Кампания «Сектор 3»"
+
 msgid "notrecruitedtankman/tankwoman/desc"
 msgstr ""
 "Выдавалась в награду за определённые игровые события. Девушка-танкист "
@@ -10708,6 +10960,59 @@ msgstr "懦夫的气息，注定了你是我的猎物！"
 
 msgid "notrecruitedtankman/wt_CN2024_zhongpengfei/label"
 msgstr "Ваффентрагер: Расплата"
+
+msgid "notrecruitedtankman/wt_clone_boss/desc"
+msgstr ""
+"Этот сумасшедший мир все ещё сопротивляется. Что ж, я наведу здесь "
+"порядок... снова."
+
+msgid "notrecruitedtankman/wt_clone_boss/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_boss/label"
+msgstr "Ваффентрагер: Парадокс"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/desc"
+msgstr ""
+"«Мне плевать, что это временная петля, сон или иллюзия. Мы адаптируемся. И "
+"мы боремся!»"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_1/label"
+msgstr "Ваффентрагер: Парадокс"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/desc"
+msgstr "«Это не петля времени. Но сходство поражает»."
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_2/label"
+msgstr "Ваффентрагер: Парадокс"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/desc"
+msgstr ""
+"«Чем чаще повторяется этот цикл, тем меньше я соблюдаю его правила. Даже "
+"время не может меня поймать»."
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_3/label"
+msgstr "Ваффентрагер: Парадокс"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/desc"
+msgstr ""
+"«Этой петле меня не перехитрить. Я не просто выживаю в ней — я извлекаю "
+"уроки»."
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/wt_clone_hunter_4/label"
+msgstr "Ваффентрагер: Парадокс"
 
 msgid "notrecruitedtankman/yandex_1/desc"
 msgstr ""
@@ -10997,7 +11302,7 @@ msgid "personalMissions/mapRegion/footer/title/inProgress"
 msgstr "Выполняется"
 
 msgid "personalMissions/mapRegion/footer/title/noVehicle"
-msgstr "Нет техники"
+msgstr "Нет подходящей техники"
 
 msgid "personalMissions/mapRegion/footer/title/notAvailable"
 msgstr "Недоступно для выполнения"
@@ -11034,16 +11339,35 @@ msgid "personalMissions/onPauseBtn/turnOnPause/header"
 msgstr "Поставить на паузу"
 
 msgid "personalMissions/operation/awards/title/done"
-msgstr "Награда за выполнение операции:"
+msgstr "Награды за выполнение операции:"
 
 msgid "personalMissions/operation/awards/title/excellentDone"
-msgstr "Награда за всю операцию с отличием:"
+msgstr "Награды за выполнение с отличием:"
+
+msgid "personalMissions/operation/footer/activateCampaign/body"
+msgstr ""
+"При возобновлении кампаний «Долгожданное подкрепление» и «Второй фронт» "
+"кампания «Сектор 3» будет приостановлена. Весь ваш прогресс в "
+"приостановленной кампании сохранится, и вы сможете продолжить в любой "
+"момент."
+
+msgid "personalMissions/operation/footer/activateCampaign/header"
+msgstr "Возобновление кампании"
+
+msgid "personalMissions/operation/footer/activateMissions/body"
+msgstr "Будет выбрана первая задача в каждой серии."
+
+msgid "personalMissions/operation/footer/activateMissions/header"
+msgstr "Выбор задач"
 
 msgid "personalMissions/operation/footer/descr/completionTokens"
-msgstr "Компонентов машины: "
+msgstr "Модули машины: "
 
 msgid "personalMissions/operation/footer/descr/completionTokens/pm2"
 msgstr "Чертежей машины: "
+
+msgid "personalMissions/operation/footer/descr/completionTokens/pm3"
+msgstr "Сборка машины:"
 
 msgid "personalMissions/operation/footer/descr/disabled"
 msgstr "Операция отключена"
@@ -11051,8 +11375,14 @@ msgstr "Операция отключена"
 msgid "personalMissions/operation/footer/descr/doPrevOperation"
 msgstr "Завершите предыдущую операцию"
 
+msgid "personalMissions/operation/footer/descr/excellentDone"
+msgstr "Все награды получены"
+
 msgid "personalMissions/operation/footer/descr/freeSheets"
 msgstr "Бланков приказа: "
+
+msgid "personalMissions/operation/footer/descr/mainRewardReceived"
+msgstr "Основные награды получены"
 
 msgid "personalMissions/operation/footer/descr/noVehicle"
 msgstr "Нет подходящей техники"
@@ -11064,7 +11394,7 @@ msgid "personalMissions/operation/footer/descr/questsFullyDone"
 msgstr "Задач с отличием: "
 
 msgid "personalMissions/operation/footer/descr/selectQuest"
-msgstr "Выберите задачу для выполнения"
+msgstr "Активировать операцию"
 
 msgid "personalMissions/operation/footer/title/available"
 msgstr "Доступно"
@@ -11081,6 +11411,9 @@ msgstr "Выполняется"
 msgid "personalMissions/operation/footer/title/notAvailable"
 msgstr "Недоступно"
 
+msgid "personalMissions/operation/footer/title/onPause"
+msgstr "Операция приостановлена"
+
 msgid "personalMissions/operation/header/descr/postponed"
 msgstr ""
 "У вас есть возможность получить уникальную эмблему, выполнив все задачи из "
@@ -11090,7 +11423,7 @@ msgid "personalMissions/operation/missions/title"
 msgstr "Задачи операции:"
 
 msgid "personalMissions/operation/title"
-msgstr "Операция «%(name)s»"
+msgstr "Операция"
 
 msgid "personalMissions/operationTitle/completeState/body"
 msgstr ""
@@ -11430,13 +11763,13 @@ msgid "privateQuests/progress/type/SPG"
 msgstr "САУ"
 
 msgid "privateQuests/progress/type/heavyTank"
-msgstr "тяжёлых танков"
+msgstr "Тяжёлые танки"
 
 msgid "privateQuests/progress/type/lightTank"
-msgstr "лёгких танков"
+msgstr "Лёгкие танки"
 
 msgid "privateQuests/progress/type/mediumTank"
-msgstr "средних танков"
+msgstr "Средние танки"
 
 msgid "privateQuests/questControl/body"
 msgstr "Нажмите, чтобы перейти к личным боевым задачам."
@@ -11520,10 +11853,10 @@ msgid "privateQuests/status/inProgress/header"
 msgstr "Выполняется"
 
 msgid "privateQuests/status/lock/descr"
-msgstr "Операция станет доступна после прохождения предыдущей."
+msgstr "Завершите предыдущую операцию"
 
 msgid "privateQuests/status/lock/header"
-msgstr "Выполнение недоступно"
+msgstr "Недоступно"
 
 msgid "privateQuests/status/notReceived/header"
 msgstr "Награда не получена"
@@ -11623,6 +11956,12 @@ msgstr "Бонус на обмен золота"
 
 msgid "quests/bonuses/token/header"
 msgstr "Марка %(userName)s"
+
+msgid "quests/bonuses/token/personal_missions_points/body"
+msgstr "Используется для сборки техники в рамках кампании «Сектор 3»."
+
+msgid "quests/bonuses/token/personal_missions_points/header"
+msgstr "Очки кампании"
 
 msgid "quests/bonuses/token/resource/clan_promoresource/body"
 msgstr ""
@@ -12261,12 +12600,6 @@ msgstr "?empty?"
 msgid "redButton/disabled/vehicle/roaming/header"
 msgstr "Серверное ограничение"
 
-msgid "redButton/disabled/vehicle/tooHeavy/body"
-msgstr ""
-"Текущая нагрузка превышает грузоподъёмность ходовой. Повысьте "
-"грузоподъёмность, установив более совершенную ходовую или оборудование типа "
-"«Улучшенная закалка»."
-
 msgid "referralProgram/newLevelAwards/awardCount"
 msgstr "x%(count)s"
 
@@ -12603,6 +12936,12 @@ msgstr "Сообщения в игровом чате"
 msgid "settings/keyMovement/title"
 msgstr "Фиксация корпуса / смена режима"
 
+msgid "settings/keySpecialAbility/body"
+msgstr "Эта клавиша активирует особую механику на определённых машинах."
+
+msgid "settings/keySpecialAbility/title"
+msgstr "Особая механика"
+
 msgid "settings/keyboard/backDraftInvert/body"
 msgstr ""
 "Меняет действие клавиш «Влево»/«Вправо» на противоположное при движении "
@@ -12706,8 +13045,8 @@ msgstr "Субтитры"
 msgid "settings/switchEquipment/body"
 msgstr ""
 "Возможность выбора альтернативного комплекта оснащения во время предбоевого "
-"отсчёта. Доступно для техники с VI уровня в рамках улучшений Полевой "
-"модернизации."
+"отсчёта. Доступно в рамках полевой модернизации (для техники VI–X уровней) "
+"или открытия улучшения «Альтернативная комплектация» (для машин XI уровня)."
 
 msgid "settings/switchEquipment/bodyFooter"
 msgstr ""
@@ -12719,8 +13058,9 @@ msgstr "Переключение комплектов оборудования �
 
 msgid "settings/switchMode/body"
 msgstr ""
-"Клавиша либо фиксирует корпус при игре на САУ или ПТ-САУ, либо переключает "
-"режим на технике с возможностью смены режима стрельбы/передвижения."
+"Клавиша либо фиксирует корпус при игре на САУ или ПТ-САУ, либо переключает режим на технике с возможностью смены режима стрельбы/передвижения.\n"
+"\n"
+"На некоторых машинах удержание клавиши активирует специальный режим."
 
 msgid "settingsControl/recommended"
 msgstr "Рекомендуемое: %(value)s"
@@ -13009,13 +13349,13 @@ msgid "specializationWotPlus/vehicle"
 msgstr ""
 "%(level)s {par_Open}%(type)s{par_Close} {gold_Open}%(name)s{gold_Close}"
 
-msgid "squadBonus/complex/body"
+msgid "squadBonus/complex/default/body"
 msgstr ""
 "Получайте дополнительные {brown_Open}%(value)s{brown_Close} к боевому опыту по итогам каждого боя, играя во взводе с другими игроками.\n"
 "\n"
 "Бонус доступен только для постоянных формирований и недоступен при создании динамического взвода."
 
-msgid "squadBonus/complex/header"
+msgid "squadBonus/complex/default/header"
 msgstr "Бонус за игру взводом"
 
 msgid "squadBonus/credits/bonusWithPremium"
@@ -13247,6 +13587,18 @@ msgstr ""
 msgid "tankCarusel/lock/rotation/header"
 msgstr "Машина группы %(groupNum)s недоступна"
 
+msgid "tankCaruselTooltip/earnings/header"
+msgstr "Заработок"
+
+msgid "tankCaruselTooltip/serviceRecords/eliteSystem"
+msgstr "Система элитности"
+
+msgid "tankCaruselTooltip/serviceRecords/header"
+msgstr "Достижения"
+
+msgid "tankCaruselTooltip/serviceRecords/prestigeEliteSystem"
+msgstr "Система элитности: максимальный уровень"
+
 msgid "tankCaruselTooltip/vehicleType/elite/AT-SPG"
 msgstr "Элитная ПТ-САУ"
 
@@ -13277,6 +13629,36 @@ msgstr "Лёгкий танк"
 msgid "tankCaruselTooltip/vehicleType/normal/mediumTank"
 msgstr "Средний танк"
 
+msgid "tankCaruselTooltip/vehicleType/tier/elite/AT_SPG"
+msgstr "{{@ split}}{{tier}} элитная ПТ-САУ{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/SPG"
+msgstr "{{@ split}}{{tier}} элитная САУ{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/heavyTank"
+msgstr "{{@ split}}{{tier}} элитный тяжёлый танк{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/lightTank"
+msgstr "{{@ split}}{{tier}} элитный лёгкий танк{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/elite/mediumTank"
+msgstr "{{@ split}}{{tier}} элитный средний танк{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/AT_SPG"
+msgstr "{{@ split}}{{tier}} ПТ-САУ{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/SPG"
+msgstr "{{@ split}}{{tier}} САУ{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/heavyTank"
+msgstr "{{@ split}}{{tier}} тяжёлый танк{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/lightTank"
+msgstr "{{@ split}}{{tier}} лёгкий танк{{/}}"
+
+msgid "tankCaruselTooltip/vehicleType/tier/normal/mediumTank"
+msgstr "{{@ split}}{{tier}} средний танк{{/}}"
+
 msgid "tank_params/avgParamComment/damage"
 msgstr "Минимальный-максимальный урон %(units)s"
 
@@ -13295,10 +13677,41 @@ msgstr "Минимальное–максимальное значение с %(
 msgid "tank_params/avgParamComment/piercingPower"
 msgstr "Минимальное-максимальное значение %(units)s"
 
+msgid "tank_params/desc/accuracyDispersionCap"
+msgstr ""
+"Бонус к разбросу на 100 м, получаемый на максимальном уровне точности."
+
+msgid "tank_params/desc/accuracyDispersionPerLevel"
+msgstr "Бонус к разбросу на 100 м, получаемый за каждый уровень точности."
+
+msgid "tank_params/desc/accuracyLevelGainTime"
+msgstr "Время получения одного уровня точности."
+
+msgid "tank_params/desc/accuracySpeedLimit"
+msgstr "Превышение этой скорости приостанавливает получение уровней точности."
+
+msgid "tank_params/desc/accuracyWhileMovingDispersionCap"
+msgstr ""
+"Бонус к разбросу в движении или при повороте корпуса/башни, получаемый на "
+"максимальном уровне точности."
+
+msgid "tank_params/desc/activeCoincideceShootingCharge"
+msgstr ""
+"Процент заряда параллаксного электромеханического прицела, получаемый "
+"дополнительно за попадание по машине противника в боевом режиме."
+
 msgid "tank_params/desc/aimingTime"
 msgstr ""
 "Время, за которое прицел уменьшается в 2,5 раза (обычный режим работы / "
 "специальный)."
+
+msgid "tank_params/desc/aimingTimeCoincidenceElectromechanicalSight"
+msgstr ""
+"Бонус ко времени, за которое круг сведения уменьшается в 2,5 раза, "
+"обеспечиваемый прицелом."
+
+msgid "tank_params/desc/aimingTimeTurbo"
+msgstr "Дополнительное время сведения в турбо-режиме."
 
 msgid "tank_params/desc/attainableSpeed"
 msgstr ""
@@ -13347,6 +13760,14 @@ msgstr ""
 "Средняя толщина брони, пробиваемая базовым снарядом с учётом его "
 "нормализации. Разброс составляет от –25% до +25% от среднего значения."
 
+msgid "tank_params/desc/boosterCoolingTime"
+msgstr ""
+"Время полного остывания ускорителей после достижения критического уровня "
+"нагрева."
+
+msgid "tank_params/desc/boosterDuration"
+msgstr "Максимальная продолжительность эффекта ускорителей после активации."
+
 msgid "tank_params/desc/burstFireRate"
 msgstr ""
 "Время смены снаряда в кассете. / Количество кассет в магазине. / Количество "
@@ -13356,6 +13777,21 @@ msgid "tank_params/desc/chargeTime"
 msgstr ""
 "Время подготовки к выстрелу из обоих орудий одновременно. / Время блокировки"
 " перезарядки орудий после залпа."
+
+msgid "tank_params/desc/chargeableBurstDispersion"
+msgstr ""
+"Отклонение второго снаряда в режиме очереди от точки прицеливания за каждые "
+"100 метров расстояния до цели."
+
+msgid "tank_params/desc/chargeableBurstPenetrationCount"
+msgstr ""
+"Количество пробитий техники противника, необходимое для активации режима."
+
+msgid "tank_params/desc/chargeableBurstReload"
+msgstr "Время перезарядки между снарядами в режиме очереди."
+
+msgid "tank_params/desc/chargeableBurstSize"
+msgstr "Количество снарядов в кассете режима очереди."
 
 msgid "tank_params/desc/chassisRepairTime"
 msgstr "Время починки выведенной из строя гусеницы."
@@ -13380,11 +13816,44 @@ msgstr ""
 "Время между выстрелом и переходом к следующему заряженному снаряду, орудию "
 "или кассете. / Количество орудий или снарядов в магазине."
 
+msgid "tank_params/desc/coincidenceElectromechanicalSightDuration"
+msgstr ""
+"Продолжительность эффекта параллаксного электромеханического прицела после "
+"активации."
+
+msgid "tank_params/desc/concentrationModeCooldown"
+msgstr "Время до повторного использования стабилизатора."
+
+msgid "tank_params/desc/concentrationModeDuration"
+msgstr "Время действия стабилизатора после активации."
+
 msgid "tank_params/desc/continuousShotsPerMinute"
 msgstr "Количество выстрелов в минуту без учёта времени перезарядки."
 
 msgid "tank_params/desc/damage"
 msgstr "Урон, наносимый базовым снарядом за один выстрел при пробитии брони."
+
+msgid "tank_params/desc/designatorCooldownS"
+msgstr ""
+"Время до повторного использования целеуказателя. Перезарядка начинается "
+"после совершения выстрела."
+
+msgid "tank_params/desc/designatorInitialCooldownS"
+msgstr ""
+"Время, необходимое для первого использования целеуказателя после начала боя."
+
+msgid "tank_params/desc/designatorMarkDurationS"
+msgstr ""
+"Время, в течение которого противник остаётся обнаруженным и получает "
+"увеличенный урон от снарядов."
+
+msgid "tank_params/desc/designatorMarkedEnemiesAdditionalDamage"
+msgstr ""
+"Дополнительный урон от снарядов, который получают отмеченные машины "
+"противника."
+
+msgid "tank_params/desc/dispersionAt100mCoincidenceElectromechanicalSight"
+msgstr "Бонус к разбросу на 100 м, обеспечиваемый прицелом."
 
 msgid "tank_params/desc/dualAccuracyCoolingDelay"
 msgstr ""
@@ -13401,18 +13870,90 @@ msgstr ""
 "Параметр отвечает за динамику разгона и проходимость машины на разных типах "
 "грунта (обычный режим работы / специальный)."
 
+msgid "tank_params/desc/enginePowerWithBoosters"
+msgstr "Бонус к ускорению машины, обеспечиваемый ускорителями."
+
+msgid "tank_params/desc/engineTurboPowerCap"
+msgstr ""
+"Параметр, влияющий на максимальную скорость, динамику разгона и скорость "
+"поворота корпуса в турбо-режиме."
+
 msgid "tank_params/desc/explosionRadius"
 msgstr ""
 "Радиус поражения осколочно-фугасного снаряда, описывающий способность "
 "наносить урон на расстоянии от точки попадания."
+
+msgid "tank_params/desc/extraShotClipReloadTime"
+msgstr ""
+"Время, добавляемое ко времени перезарядки кассеты после выстрела последнего "
+"снаряда."
+
+msgid "tank_params/desc/forwardMaxSpeed"
+msgstr "Паспортная скорость машины."
+
+msgid "tank_params/desc/furyMaxReloadEffAvgDpm"
+msgstr ""
+"Бонус к среднему урону в минуту на максимальном уровне эффективности "
+"перезарядки."
+
+msgid "tank_params/desc/furyMaxReloadEfficiencyLevel"
+msgstr "Максимальное количество уровней эффективности перезарядки."
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelDuration"
+msgstr "Время действия уровня эффективности перезарядки."
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelPerDestruction"
+msgstr ""
+"Количество уровней эффективности перезарядки, получаемых за уничтожение "
+"машины противника выстрелом."
+
+msgid "tank_params/desc/furyReloadEfficiencyLevelPerHit"
+msgstr ""
+"Количество уровней эффективности перезарядки, получаемых за каждое попадание"
+" снарядом по обнаруженной машине противника."
+
+msgid "tank_params/desc/furyReloadSpeedBonusPerEfficiencyLevel"
+msgstr "Уменьшение времени перезарядки за уровень эффективности перезарядки."
+
+msgid "tank_params/desc/gunTraverseDispersionTurbo"
+msgstr "Штраф к разбросу при вращении башни в турбо-режиме."
 
 msgid "tank_params/desc/gunYawLimits"
 msgstr ""
 "Максимальные углы, на которые орудие отклоняется по горизонтали влево и "
 "вправо относительно его расположения по умолчанию при неподвижном корпусе."
 
+msgid "tank_params/desc/heatAvgDmgPerLvl"
+msgstr "Бонус к среднему урону за каждый уровень нагрева."
+
+msgid "tank_params/desc/heatChargeOverheatDuration"
+msgstr "Время, в течение которого невозможно стрелять или менять тип снаряда."
+
+msgid "tank_params/desc/heatTimeBeforeOverheat"
+msgstr ""
+"Время, в течение которого машина может оставаться на максимальном уровне "
+"нагрева, не перегреваясь."
+
+msgid "tank_params/desc/heatTimeToReachLevel"
+msgstr "Время набора уровня нагрева."
+
 msgid "tank_params/desc/hullArmor"
 msgstr "Толщина брони корпуса машины: лоб/борт/корма соответственно."
+
+msgid "tank_params/desc/hullTraverseDispersionTurbo"
+msgstr "Штраф к разбросу при повороте корпуса в турбо-режиме."
+
+msgid "tank_params/desc/improvedDamageEnemiesByRamming"
+msgstr ""
+"Параметр, отвечающий за наносимый тараном урон. При столкновении техники "
+"учитываются толщина брони в точке удара, разница в массе, а также скорость "
+"машин."
+
+msgid "tank_params/desc/improvedDamageEnemiesChassisByRamming"
+msgstr ""
+"Параметр, отвечающий за урон, наносимый ходовой от тарана. При столкновении "
+"техники учитываются толщина брони в точке удара, разница в массе, а также "
+"скорость машин."
 
 msgid "tank_params/desc/invisibilityMovingFactor"
 msgstr ""
@@ -13426,6 +13967,31 @@ msgstr ""
 "выше показатель, тем незаметнее машина. Указаны следующие значения: для "
 "неподвижной машины / для неподвижной машины после выстрела."
 
+msgid "tank_params/desc/ionAfterburnerActiveTurboCharge"
+msgstr ""
+"Процент заряда, получаемый ионно-разрядным дожигателем за секунду вождения "
+"на скорости 40 км/ч или выше в турбо-режиме."
+
+msgid "tank_params/desc/ionAfterburnerDuration"
+msgstr ""
+"Продолжительность эффекта ионно-разрядного дожигателя после активации."
+
+msgid "tank_params/desc/ionAfterburnerDurationEnginePower"
+msgstr ""
+"Параметр отвечает за максимальную скорость, динамику разгона и скорость "
+"поворота корпуса машины при активации ионно-разрядного дожигателя."
+
+msgid "tank_params/desc/ionAfterburnerDurationSpeedCap"
+msgstr "Бонус к скорости после активации ионно-разрядного дожигателя."
+
+msgid "tank_params/desc/ionAfterburnerPassiveTurboCharge"
+msgstr ""
+"Процент заряда ионно-разрядного дожигателя, получаемый за секунду нахождения"
+" в турбо-режиме."
+
+msgid "tank_params/desc/maxAccuracyLevel"
+msgstr "Максимальное количество уровней точности."
+
 msgid "tank_params/desc/maxHealth"
 msgstr "Количество очков прочности машины."
 
@@ -13434,14 +14000,70 @@ msgstr ""
 "Предельный угол, на который могут быть повёрнуты колёса. Влияет на "
 "манёвренность машины и её управляемость."
 
+msgid "tank_params/desc/movementTraverseDispersionTurbo"
+msgstr "Штраф к разбросу в движении в турбо-режиме."
+
+msgid "tank_params/desc/passiveCoincideceShootingCharge"
+msgstr ""
+"Процент заряда параллаксного электромеханического прицела, получаемый за "
+"секунду нахождения в боевом режиме."
+
 msgid "tank_params/desc/piercingPower"
 msgstr ""
 "Толщина брони, пробиваемая базовым снарядом с учётом его нормализации."
+
+msgid "tank_params/desc/pillboxHorizontalRotationSpeed"
+msgstr ""
+"Скорость вращения корпуса машины вокруг своей оси, а также скорость смены "
+"курса при движении (манёвренность)."
+
+msgid "tank_params/desc/pillboxSwitchOffTime"
+msgstr ""
+"Время смены режима зависит от состояния двигателя. При повреждённом моторе "
+"скорость переключения снижается. При выведенном из строя — переключение "
+"невозможно."
+
+msgid "tank_params/desc/pillboxSwitchOnTime"
+msgstr ""
+"Время смены режима зависит от состояния двигателя. При повреждённом моторе "
+"скорость переключения снижается. При выведенном из строя — переключение "
+"невозможно."
+
+msgid "tank_params/desc/pillboxVerticalRotationSpeed"
+msgstr "Скорость вертикального наклона корпуса в укреплённом режиме."
 
 msgid "tank_params/desc/pitchLimits"
 msgstr ""
 "Максимальные углы, на которые орудие способно отклониться по вертикали вниз "
 "и вверх относительно корпуса машины и с учётом работы подвески."
+
+msgid "tank_params/desc/powerModeDuration"
+msgstr ""
+"Время набора максимальной скорости и мощности двигателя в режиме прямой "
+"передачи."
+
+msgid "tank_params/desc/powerModeThreshold"
+msgstr "Время активации режима прямой передачи."
+
+msgid "tank_params/desc/preheatDispersionCap"
+msgstr "Бонус к разбросу на 100 м при полном преднагреве."
+
+msgid "tank_params/desc/preheatDmgCap"
+msgstr "Бонус к среднему урону при полном преднагреве."
+
+msgid "tank_params/desc/preheatSpeedLimit"
+msgstr ""
+"Превышение этой скорости останавливает преднагрев и может уменьшить его."
+
+msgid "tank_params/desc/preheatTimeToFull"
+msgstr "Время достижения полного преднагрева с нуля."
+
+msgid "tank_params/desc/preheatTimeToZero"
+msgstr "Время возврата с полного преднагрева до нуля."
+
+msgid "tank_params/desc/preheatTransitionDelay"
+msgstr ""
+"Время задержки, при которой преднагрев не увеличивается и не уменьшается."
 
 msgid "tank_params/desc/radioDistance"
 msgstr ""
@@ -13449,6 +14071,14 @@ msgstr ""
 " Дальность связи представлена кругом с указанным в параметре радиусом. "
 "Наложение кругов союзных машин обеспечивает передачу информации на "
 "расстоянии."
+
+msgid "tank_params/desc/reactivationDelay"
+msgstr "Время до повторного использования ускорителей."
+
+msgid "tank_params/desc/reactivationLimit"
+msgstr ""
+"Максимальный уровень нагрева, при котором ускорители становятся недоступны "
+"для повторной активации."
 
 msgid "tank_params/desc/relativeArmor"
 msgstr ""
@@ -13477,6 +14107,9 @@ msgstr ""
 msgid "tank_params/desc/reloadTime"
 msgstr "Количество выстрелов в минуту."
 
+msgid "tank_params/desc/reloadTimeCoincidence"
+msgstr "Бонус ко времени перезарядки орудия, получаемый при активном прицеле."
+
 msgid "tank_params/desc/reloadTimeSecs"
 msgstr ""
 "Время, за которое орудие (или оба орудия, если у машины спаренная орудийная "
@@ -13484,6 +14117,9 @@ msgstr ""
 
 msgid "tank_params/desc/reloadTimeSecs/twinGun"
 msgstr "Время перезарядки орудия после выстрела (одиночный / залповый режим)."
+
+msgid "tank_params/desc/reverseSpeedReductionWithBoosters"
+msgstr "Уменьшение скорости заднего хода при активных ускорителях."
 
 msgid "tank_params/desc/rocketAccelerationEnginePower"
 msgstr ""
@@ -13498,6 +14134,25 @@ msgstr ""
 
 msgid "tank_params/desc/rocketAccelerationSpeedLimits"
 msgstr "Паспортная скорость машины при активированных реактивных ускорителях."
+
+msgid "tank_params/desc/secondaryAvgDamage"
+msgstr ""
+"Среднее значение урона, наносимого снарядом вспомогательного орудия за один "
+"выстрел при пробитии брони. Разброс урона составляет от –25% до +25% от "
+"среднего значения."
+
+msgid "tank_params/desc/secondaryAvgPiercingPower"
+msgstr ""
+"Средняя толщина брони, пробиваемая снарядом вспомогательного орудия с учётом"
+" его нормализации. Разброс составляет от –25% до +25% от среднего значения."
+
+msgid "tank_params/desc/secondaryReloadTimeSecs"
+msgstr "Время перезарядки вспомогательного орудия после выстрела."
+
+msgid "tank_params/desc/secondaryTotalBurstSize"
+msgstr ""
+"Количество снарядов, доступных для вспомогательного орудия во время "
+"активации."
 
 msgid "tank_params/desc/shotDispersionAngle"
 msgstr ""
@@ -13518,6 +14173,14 @@ msgstr ""
 msgid "tank_params/desc/speedLimits"
 msgstr "Паспортная скорость машины."
 
+msgid "tank_params/desc/stationaryReloadSwitchOffTime"
+msgstr ""
+"Время после прерывания перезарядки, в течение которого башня остаётся "
+"заблокированной, а машина не может стрелять."
+
+msgid "tank_params/desc/stationaryReloadSwitchOnTime"
+msgstr "Время подключения башни к внешним боеприпасам и начала перезарядки."
+
 msgid "tank_params/desc/stunMaxDuration"
 msgstr ""
 "Показывает максимальное время оглушения, причиняемого экипажу противника, "
@@ -13529,6 +14192,9 @@ msgstr ""
 "Показывает минимальное время оглушения, причиняемого экипажу противника, "
 "если его машина попала в зону поражения вашего снаряда и противник при этом "
 "не имел оборудования и снаряжения, снижающего время оглушения."
+
+msgid "tank_params/desc/switchEngineModeBothModes"
+msgstr "Время переключения между боевым и турбо-режимом."
 
 msgid "tank_params/desc/switchOffTime"
 msgstr ""
@@ -13552,6 +14218,15 @@ msgid "tank_params/desc/timeOfReaching"
 msgstr ""
 "Параметр представляет коэффициент сопротивления грунтов в виде времени, за которое машина из статического состояния преодолевает расстояние в 100 метров по строго горизонтальной поверхности.\n"
 "Показаны значения для твёрдого/среднего/мягкого грунтов."
+
+msgid "tank_params/desc/topSpeedWithBoosters"
+msgstr "Бонус к максимальной скорости машины, обеспечиваемый ускорителями."
+
+msgid "tank_params/desc/traverseSpeedReductionWithBoosters"
+msgstr "Уменьшение скорости поворота корпуса при активных ускорителях."
+
+msgid "tank_params/desc/turboSpeedCap"
+msgstr "Дополнительная скорость, получаемая в турбо-режиме."
 
 msgid "tank_params/desc/turboshaftBurstFireRate"
 msgstr ""
@@ -13606,9 +14281,7 @@ msgid "tank_params/desc/twinGunTopSpeed"
 msgstr "Паспортная скорость машины в залповом режиме."
 
 msgid "tank_params/desc/vehicleWeight"
-msgstr ""
-"Параметр отвечает за предельную массу машины, где груз — модули и "
-"оборудование. Масса также влияет на эффективность тарана."
+msgstr "Масса влияет на эффективность тарана."
 
 msgid "tank_params/desc/wheeledSpeedModeSpeed"
 msgstr "Параметр указан для скоростного режима техники."
@@ -14103,6 +14776,21 @@ msgstr "Все исследованные модули"
 msgid "vehicle/ammo"
 msgstr "В боекомплекте"
 
+msgid "vehicle/battlePass/earningLimit"
+msgstr "Лимит очков Боевого пропуска"
+
+msgid "vehicle/battlePass/limitReached"
+msgstr "Достигнут лимит очков Боевого пропуска"
+
+msgid "vehicle/battlePass/reward"
+msgstr "Награда за достижение лимита очков"
+
+msgid "vehicle/bonds/earningLimit"
+msgstr "Недельный лимит заработка бон"
+
+msgid "vehicle/bonds/limitReached"
+msgstr "до обновления лимита заработка бон"
+
 msgid "vehicle/buy_price"
 msgstr "Покупка"
 
@@ -14111,6 +14799,9 @@ msgstr "Стоимость покупки"
 
 msgid "vehicle/crew"
 msgstr "Экипаж"
+
+msgid "vehicle/crewRoles"
+msgstr "Экипаж ({{count}})"
 
 msgid "vehicle/crew_award"
 msgstr "Экипаж (%d%%)"
@@ -14248,6 +14939,9 @@ msgstr "Часов осталось для восстановления"
 msgid "vehicle/restore_price"
 msgstr "Восстановление"
 
+msgid "vehicle/role"
+msgstr "Роль"
+
 msgid "vehicle/sell_price"
 msgstr "Продажа"
 
@@ -14280,6 +14974,9 @@ msgstr "Подписка приостановлена"
 
 msgid "vehicle/wotPlusRenting/remainingTime"
 msgstr "Активна до %(time)s"
+
+msgid "vehicle/wotPlusRenting/title"
+msgstr "Эта машина идёт только с подпиской WoT Plus."
 
 msgid "vehicle/xp"
 msgstr "Боевой опыт"
@@ -14360,6 +15057,10 @@ msgstr "Базовая модификация «%(name)s»"
 
 msgid "vehicleParams/bonus/vehPostProgressionPairModification/template"
 msgstr "Модификация «%(name)s»"
+
+msgid ""
+"vehicleParams/bonus/vehSkillTreePostProgressionBaseModification/template"
+msgstr "Бонус улучшения"
 
 msgid "vehicleParams/bonuses/title"
 msgstr "На параметр влияют:"
@@ -14460,7 +15161,7 @@ msgid "vehiclePreview/boxTooltip/shell/header"
 msgstr "Снаряд «%(value)s»"
 
 msgid "vehiclePreview/boxTooltip/statTracker/header"
-msgstr "%(value)s"
+msgstr "Счётчик статистики: %(value)s"
 
 msgid "vehiclePreview/boxTooltip/style/header"
 msgstr "Стиль «%(value)s»"
@@ -14501,8 +15202,8 @@ msgstr "Покупка недоступна"
 
 msgid "vehiclePreview/buyButton/parentModuleIsLocked/body"
 msgstr ""
-"Исследуйте модули предыдущей машины, необходимые для доступа к данной "
-"машине."
+"Не исследована предыдущая машина и/или её модули, необходимые для доступа к "
+"этой машине."
 
 msgid "vehiclePreview/buyButton/parentModuleIsLocked/header"
 msgstr "Исследование недоступно"
@@ -14922,9 +15623,6 @@ msgstr "?empty?"
 
 msgid "vehicleStatus/subscription_suspended/header"
 msgstr "Недоступно"
-
-msgid "vehicleStatus/tooHeavy/header"
-msgstr "Машина перегружена"
 
 msgid "vehicleStatus/undamaged/header"
 msgstr "К бою готов"

@@ -16,7 +16,6 @@ package net.wg.gui.battle.mapsTraining.views
    import net.wg.gui.battle.views.debugPanel.DebugPanel;
    import net.wg.gui.battle.views.minimap.constants.MinimapSizeConst;
    import net.wg.gui.battle.views.radialMenu.RadialMenu;
-   import net.wg.gui.battle.views.sixthSense.SixthSense;
    import net.wg.gui.components.battleDamagePanel.BattleDamageLogPanel;
    import net.wg.gui.components.battleDamagePanel.constants.BattleDamageLogConstants;
    import net.wg.gui.components.hintPanel.HintPanel;
@@ -44,8 +43,6 @@ package net.wg.gui.battle.mapsTraining.views
       public var debugPanel:DebugPanel = null;
       
       public var battleDamageLogPanel:BattleDamageLogPanel = null;
-      
-      public var sixthSense:SixthSense = null;
       
       public var consumablesPanel:ConsumablesPanel = null;
       
@@ -91,8 +88,6 @@ package net.wg.gui.battle.mapsTraining.views
          this.battleDamageLogPanel.y = damagePanel.y + BATTLE_DAMAGE_LOG_Y_PADDING >> 0;
          this.battleDamageLogPanel.updateSize(param1,param2);
          var _loc3_:uint = param1 >> 1;
-         this.sixthSense.x = _loc3_;
-         this.sixthSense.y = param2 >> 2;
          this.consumablesPanel.updateStage(param1,param2);
          this.damageInfoPanel.y = (param2 >> 1) / scaleY + DAMAGE_INFO_PANEL_CONSTS.HEIGHT * scaleY | 0;
          this.damageInfoPanel.x = param1 - DAMAGE_INFO_PANEL_CONSTS.WIDTH >> 1;
@@ -120,7 +115,6 @@ package net.wg.gui.battle.mapsTraining.views
       {
          registerComponent(this.debugPanel,BATTLE_VIEW_ALIASES.DEBUG_PANEL);
          registerComponent(this.battleDamageLogPanel,BATTLE_VIEW_ALIASES.BATTLE_DAMAGE_LOG_PANEL);
-         registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
          registerComponent(this.battleMessenger,BATTLE_VIEW_ALIASES.BATTLE_MESSENGER);
          registerComponent(this.consumablesPanel,BATTLE_VIEW_ALIASES.CONSUMABLES_PANEL);
          registerComponent(this.hintPanel,BATTLE_VIEW_ALIASES.HINT_PANEL);
@@ -148,7 +142,6 @@ package net.wg.gui.battle.mapsTraining.views
          this.hintPanel = null;
          this.debugPanel = null;
          this.battleDamageLogPanel = null;
-         this.sixthSense = null;
          this.damageInfoPanel = null;
          this.destroyTimersPanel = null;
          this.radialMenu = null;

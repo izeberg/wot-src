@@ -16,7 +16,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.065
+			0.066
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -154,7 +154,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>22050</weight>
-		<maxHealth>904</maxHealth>
+		<maxHealth>960</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -282,14 +282,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8150</weight>
-			<maxLoad>43000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>39000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>24</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -2139,7 +2138,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>8000</weight>
-			<maxHealth>226</maxHealth>
+			<maxHealth>240</maxHealth>
 			<rotationSpeed>30</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>130</maxHealth>
@@ -2163,9 +2162,9 @@
 					shared
 					<maxAmmo>84</maxAmmo>
 					<pitchLimits>
-						<minPitch>0 -12 1 -12</minPitch>
+						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
-							0 4 0.325226 4 0.388888 2 0.611112 2 0.674774 4 1 4
+							0 8 0.02500 8 0.04167 4 0.09167 4 0.13333 8 0.32523 8 0.38889 3 0.61111 3 0.67477 8 0.86667 8 0.90833 4 0.95833 4 0.97500 8 1 8
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -2388,10 +2387,7 @@
 		<detailed>
 			<engines>
 				<Vauxhall_Bedford_Twin_Six_BPXIV>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>380</smplEnginePower>
 					<smplFwMaxSpeed>25</smplFwMaxSpeed>
 				</Vauxhall_Bedford_Twin_Six_BPXIV>
 			</engines>

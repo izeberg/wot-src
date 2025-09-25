@@ -39,8 +39,6 @@ package net.wg.gui.lobby.messengerBar
    public class MessengerBar extends MessengerBarMeta implements IMessengerBarMeta, IDAAPIModule, IHelpLayoutComponent
    {
       
-      public static const BAR_VISIBLE_HEIGHT:int = 35;
-      
       private static const BAR_HEIGHT:int = 45;
       
       private static const LAYOUT_INVALID:String = "layoutInv";
@@ -197,8 +195,11 @@ package net.wg.gui.lobby.messengerBar
          this.vehicleCompareCartBtn.removeEventListener(ButtonEvent.CLICK,this.onVehicleCmpBtnClickHandler);
          this.sessionStatsBtn.removeEventListener(ButtonEvent.CLICK,this.onSessionStatsBtnClickHandler);
          App.stage.removeEventListener(MessengerBarEvent.PIN_CHANNELS_WINDOW,this.onStagePinChannelsWindowHandler);
-         this._rightSideBtnsOrder.length = 0;
-         this._rightSideBtnsOrder = null;
+         if(this._rightSideBtnsOrder)
+         {
+            this._rightSideBtnsOrder.length = 0;
+            this._rightSideBtnsOrder = null;
+         }
          this._counterManager = null;
          this.channelCarousel = null;
          this.notificationListBtn = null;
@@ -411,15 +412,6 @@ package net.wg.gui.lobby.messengerBar
          this.referralBtn.enabled = param1;
       }
       
-      public function as_setReferralProgramButtonVisible(param1:Boolean) : void
-      {
-         if(this._initData.isReferralEnabled != param1)
-         {
-            this._initData.isReferralEnabled = param1;
-            invalidate(INV_REFERRAL_BUTTON);
-         }
-      }
-      
       public function as_setReferralProgramButtonTooltip(param1:String, param2:Boolean) : void
       {
          if(this.referralBtn.tooltip != param1)
@@ -433,6 +425,15 @@ package net.wg.gui.lobby.messengerBar
             {
                this.referralBtn.tooltipProps = null;
             }
+         }
+      }
+      
+      public function as_setReferralProgramButtonVisible(param1:Boolean) : void
+      {
+         if(this._initData.isReferralEnabled != param1)
+         {
+            this._initData.isReferralEnabled = param1;
+            invalidate(INV_REFERRAL_BUTTON);
          }
       }
       
@@ -511,24 +512,29 @@ package net.wg.gui.lobby.messengerBar
       
       private function updateChannelCarouselWidth() : void
       {
-         var _loc2_:IDisplayObject = null;
-         var _loc1_:int = this._rightSideBtnsOrder.length;
-         var _loc3_:int = this._stageDimensions.x - RIGHT_SIDE_BTNS_START;
+         var _loc2_:int = 0;
+         var _loc3_:IDisplayObject = null;
          var _loc4_:int = 0;
-         while(_loc4_ < _loc1_)
+         var _loc1_:int = this._stageDimensions.x - RIGHT_SIDE_BTNS_START;
+         if(this._rightSideBtnsOrder)
          {
-            _loc2_ = this._rightSideBtnsOrder[_loc4_];
-            if(_loc2_)
+            _loc2_ = this._rightSideBtnsOrder.length;
+            _loc4_ = 0;
+            while(_loc4_ < _loc2_)
             {
-               if(_loc2_.visible)
+               _loc3_ = this._rightSideBtnsOrder[_loc4_];
+               if(_loc3_)
                {
-                  _loc3_ -= _loc2_.width + RIGHT_SIDE_BTNS_GAP;
-                  _loc2_.x = _loc3_;
+                  if(_loc3_.visible)
+                  {
+                     _loc1_ -= _loc3_.width + RIGHT_SIDE_BTNS_GAP;
+                     _loc3_.x = _loc1_;
+                  }
                }
+               _loc4_++;
             }
-            _loc4_++;
          }
-         this.channelCarousel.width = _loc3_ - this.channelCarousel.x - 1;
+         this.channelCarousel.width = _loc1_ - this.channelCarousel.x - 1;
       }
       
       private function handlePinWindow(param1:MessengerBarEvent, param2:DisplayObject) : void

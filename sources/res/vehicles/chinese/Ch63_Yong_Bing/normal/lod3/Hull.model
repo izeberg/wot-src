@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch63_Yong_Bing/normal/lod3/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.705638 -0.437318 -3.580426</min>
+		<max>1.701633 0.725215 3.682344</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_Yong_Bing/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+</root>

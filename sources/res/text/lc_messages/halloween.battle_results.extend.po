@@ -1,0 +1,88 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-01 10:00+0300\n"
+"PO-Revision-Date: 2022-05-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "hw_battle_result/info/dateAndDuration"
+msgstr "%(date)s, продолжительность: %(duration)s"
+
+msgid "hw_battle_result/info/difficult/1"
+msgstr "Сложность: Нормально"
+
+msgid "hw_battle_result/info/difficult/2"
+msgstr "Сложность: Тяжело"
+
+msgid "hw_battle_result/info/difficult/3"
+msgstr "Сложность: Кошмар"
+
+msgid "hw_battle_result/info/mapName"
+msgstr "Аномалия «Вавилон»: {difficult}"
+
+msgid "hw_battle_result/info/respawnCount"
+msgstr "Количество возрождений: {count}"
+
+msgid "hw_battle_result/ribbon/ban"
+msgstr ""
+"Недопустимое поведение: бездействие / дезертирство.\n"
+"Награда не получена."
+
+msgid "hw_battle_result/ribbon/noReward"
+msgstr ""
+"Команда не справилась: первая фаза не пройдена.\n"
+"Награда не получена."
+
+msgid "hw_battle_result/status/lose"
+msgstr "БОЙ ОКОНЧЕН"
+
+msgid "hw_battle_result/status/win"
+msgstr "ПОБЕДА"
+
+msgid "hw_battle_result/subtitle/lose"
+msgstr "Бой окончен"
+
+msgid "hw_battle_result/subtitle/win"
+msgstr "Тьма отступила! Отличная работа!"
+
+msgid "hw_battle_result/title/lose/noPhases"
+msgstr "БОЙ ОКОНЧЕН"
+
+msgid "hw_battle_result/title/lose/phases"
+msgid_plural "plural/hw_battle_result/title/lose/phases"
+msgstr[0] "%(phaseNumber)s ФАЗА ПРОЙДЕНА"
+msgstr[1] "%(phaseNumber)s ФАЗЫ ПРОЙДЕНЫ"
+msgstr[2] "%(phaseNumber)s ФАЗ ПРОЙДЕНО"
+
+msgid "hw_battle_result/title/win"
+msgstr "БОСС ПОБЕЖДЁН"
+
+msgid "hw_finish/reason/1/lose"
+msgstr "Все машины уничтожены."
+
+msgid "hw_finish/reason/3/lose"
+msgstr "Время вышло."
+
+msgid "hw_finish/reason/5/lose"
+msgstr "Все союзники покинули бой."
+
+msgid "hw_finish/reason/halloween/1/win"
+msgstr "Шип побеждён. Но конец ли это?"
+
+msgid "hw_finish/reason/halloween_hard/1/win"
+msgstr "Летальный Дуплет побеждён. Возвращаемся домой."
+
+msgid "hw_finish/reason/halloween_medium/1/win"
+msgstr "Близнецы побеждены. Двигаемся дальше."
+
+msgid "teamList/actions"
+msgstr "Быстрые действия"
+
+msgid "teamList/teammates"
+msgstr "Союзники"

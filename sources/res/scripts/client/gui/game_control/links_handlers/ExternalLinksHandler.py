@@ -34,7 +34,9 @@ _LISTENERS = {OpenLinkEvent.SPECIFIED: '_handleSpecifiedURL',
    OpenLinkEvent.WOT_PLUS_STEAM_SHOP: '_handleWotPlusSteamShopURL', 
    OpenLinkEvent.WOT_PLUS_SHOP: '_handleWotPlusShopURL', 
    OpenLinkEvent.STEAM_SUBSCRIPTION_MANAGEMENT: '_handleSteamSubscriptionManagementURL', 
-   OpenLinkEvent.LOOT_BOXES_LIST: '_handleLootBoxesListURL'}
+   OpenLinkEvent.LOOT_BOXES_LIST: '_handleLootBoxesListURL', 
+   OpenLinkEvent.REPORT_CONTENT: '_handleReportContentURL', 
+   OpenLinkEvent.OPEN_BUNDLE_STEPS: '_handleOpenBundleStepsURL'}
 
 class ExternalLinksHandler(IExternalLinksController):
     __loginManager = dependency.descriptor(ILoginManager)
@@ -180,6 +182,12 @@ class ExternalLinksHandler(IExternalLinksController):
 
     def _handleLootBoxesListURL(self, _):
         self.__openParsedUrl('lootBoxesListURL')
+
+    def _handleReportContentURL(self, _):
+        self.__openParsedUrl('reportContentURL')
+
+    def _handleOpenBundleStepsURL(self, _):
+        self.__openParsedUrl('openBundleStepsURL')
 
     def _getHandlers(self):
         if not self.__linksHandlers:

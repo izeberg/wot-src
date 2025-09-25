@@ -1,0 +1,157 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-03-24 10:00+0300\n"
+"PO-Revision-Date: 2023-03-24 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "damageLog/personal_death_zone"
+msgstr "Урон зоной"
+
+msgid "damageLog/static_death_zone"
+msgstr "Урон зоной"
+
+msgid "damageShieldReady"
+msgstr "Умение «Энергощит» готово к применению."
+
+msgid "fastReloadReady"
+msgstr "Умение «Ускоренная перезарядка» готово к применению."
+
+msgid "hitMarker/useless"
+msgstr "Бессмысленно!"
+
+msgid "hpRepairAndCrewHealReady"
+msgstr "Умение «Экстренный ремонт» готово к применению."
+
+msgid "hwAoeDamageInstantShotReady"
+msgstr "Умение «Энерговыстрел» готово к применению."
+
+msgid "hwAoeDrainEnemyHpInstantShotReady"
+msgstr "Умение «Выстрел вампира» готово к применению."
+
+msgid "hwAoeStunInstantShotReady"
+msgstr "Умение «Оглушающий выстрел» готово к применению."
+
+msgid "hwHelpScreen/hint/description"
+msgstr "для просмотра правил режима"
+
+msgid "hwHelpScreen/hint/press"
+msgstr "Нажмите"
+
+msgid "hwInvisibilityReady"
+msgstr "Умение «Теневое восстановление» готово к применению."
+
+msgid "nitroRamDamageReady"
+msgstr "Умение «Рывок» готово к применению."
+
+msgid "pickupSouls"
+msgstr "Вы собрали %(souls)s ед. мириума"
+
+msgid "player_errors/equipment/abilityGunDestroyed"
+msgstr "Невозможно применить [%(name)s]: повреждено орудие."
+
+msgid "player_errors/equipment/hpRepairAndCrewHeal/notRequired"
+msgstr "Машина не повреждена."
+
+msgid "player_errors/equipment/hwEngineIsDestroyed"
+msgstr "Невозможно применить [%(name)s]: двигатель уничтожен."
+
+msgid "player_errors/equipment/hwNotEnoughSouls"
+msgstr ""
+"Невозможно применить [%(name)s]: недостаточно мириума для использования "
+"умения."
+
+msgid "player_errors/equipment/hwVehicleInFire"
+msgstr "Невозможно применить [%(name)s]: машина горит."
+
+msgid "player_errors/equipment/hwVehicleIsDrowning"
+msgstr "Невозможно применить [%(name)s]: машина тонет."
+
+msgid "player_errors/equipment/hwVehicleIsOnFire"
+msgstr "Невозможно применить [%(name)s]: машина горит."
+
+msgid "player_errors/equipment/hwVehicleIsOverturned"
+msgstr "Невозможно применить [%(name)s]: машина перевёрнута."
+
+msgid "player_errors/equipment/instantReload/notRequired"
+msgstr "Орудие уже заряжено."
+
+msgid "player_messages/DEATH_FROM_ABILITY_AOE_DAMAGE"
+msgstr "%(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/DEATH_FROM_ABILITY_IGNITE"
+msgstr "%(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/DEATH_FROM_ABILITY_VAMPIRE"
+msgstr "%(attacker)s уничтожил %(target)s."
+
+msgid "player_messages/killedAllyByBomberExplosion"
+msgstr "Союзник %(target)s уничтожен взрывом противника %(attacker)s."
+
+msgid "player_messages/killedAllyByDeathPit"
+msgstr "Союзник %(target)s разбился."
+
+msgid "player_messages/killedAllyByDeathZoneArtillery"
+msgstr "Союзник %(target)s уничтожен смертельной зоной."
+
+msgid "player_messages/killedByBossAuraAlly"
+msgstr "Союзник %(target)s уничтожен аурой противника."
+
+msgid "player_messages/killedByDeathZone"
+msgstr "Союзник %(target)s уничтожен смертельной зоной."
+
+msgid "player_messages/killedByPhaseTimerAlly"
+msgstr "Союзник %(target)s уничтожен."
+
+msgid "postmortem_messages/DEATH_FROM_ABILITY_AOE_DAMAGE"
+msgstr "Машина уничтожена умением «Энергоудар»"
+
+msgid "postmortem_messages/DEATH_FROM_ABILITY_IGNITE"
+msgstr "Машина уничтожена умением «Пирокинетика»"
+
+msgid "postmortem_messages/DEATH_FROM_ABILITY_VAMPIRE"
+msgstr "Машина уничтожена умением «Вампиризм»"
+
+msgid "postmortem_messages/DEATH_FROM_BOMBER_EXPLOSION"
+msgstr "Машина уничтожена взрывом"
+
+msgid "postmortem_messages/DEATH_FROM_DEATH_ZONE_ARTILLERY"
+msgstr "Машина уничтожена смертельной зоной"
+
+msgid "postmortem_messages/DEATH_FROM_HALLOWEEN_BOSS_AURA_ENEMY_SELF"
+msgstr "Машина уничтожена аурой противника"
+
+msgid "postmortem_messages/DEATH_FROM_HALLOWEEN_DEATH_PIT"
+msgstr "Машина разбита"
+
+msgid "postmortem_messages/DEATH_FROM_PHASE_TIMER_SELF_SUICIDE"
+msgstr "Машина уничтожена. Вы не успели к Волоту."
+
+msgid "postmortem_messages/DEATH_FROM_PHASE_TIMER_SELF_SUICIDE_FINAL"
+msgstr "Машина уничтожена. Вы не победили Босса."
+
+msgid "postmortem_messages/DEATH_FROM_PHASE_TIMER_SELF_SUICIDE_LATE"
+msgstr "Машина уничтожена. Коллектор не заполнен."
+
+msgid "postmortem_messages/HW_DEATH_FROM_DEVICE_EXPLOSION_AT_SHOT"
+msgstr "Устройство [%(device)s] взорвано выстрелом игрока"
+
+msgid "postmortem_messages/HW_DEATH_FROM_FIRE"
+msgstr "Машина уничтожена пожаром"
+
+msgid "postmortem_messages/HW_DEATH_FROM_SHOT"
+msgstr "Машина уничтожена выстрелом противника"
+
+msgid "teamRepairKitReady"
+msgstr "Умение «Групповой ремонт» готово к применению."
+
+msgid "teamRepairKitUsed"
+msgstr "%(player)s активирует умение «Групповой ремонт»."
+
+msgid "teamRepairKitUsedSelf"
+msgstr "Умение «Групповой ремонт» активировано."

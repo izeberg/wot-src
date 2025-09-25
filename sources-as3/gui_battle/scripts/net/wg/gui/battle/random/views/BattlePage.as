@@ -35,7 +35,6 @@ package net.wg.gui.battle.random.views
    import net.wg.gui.battle.views.questProgress.interfaces.IQuestProgressView;
    import net.wg.gui.battle.views.radialMenu.RadialMenu;
    import net.wg.gui.battle.views.siegeModePanel.SiegeModePanel;
-   import net.wg.gui.battle.views.sixthSense.SixthSense;
    import net.wg.gui.components.battleDamagePanel.BattleDamageLogPanel;
    import net.wg.gui.components.battleDamagePanel.constants.BattleDamageLogConstants;
    import net.wg.gui.components.hintPanel.HintPanel;
@@ -77,8 +76,6 @@ package net.wg.gui.battle.random.views
       public var battleDamageLogPanel:BattleDamageLogPanel = null;
       
       public var teamBasesPanelUI:TeamBasesPanel = null;
-      
-      public var sixthSense:SixthSense = null;
       
       public var battleNotifier:BattleNotifier = null;
       
@@ -137,8 +134,6 @@ package net.wg.gui.battle.random.views
          super.updateStage(param1,param2);
          var _loc3_:Number = param1 >> 1;
          this.teamBasesPanelUI.x = _loc3_;
-         this.sixthSense.x = _loc3_;
-         this.sixthSense.y = param2 >> 2;
          var _loc4_:Number = stage.scaleY;
          this.damageInfoPanel.y = (param2 >> 1) / _loc4_ + DAMAGE_INFO_PANEL_CONSTS.HEIGHT * _loc4_ | 0;
          this.damageInfoPanel.x = param1 - DAMAGE_INFO_PANEL_CONSTS.WIDTH >> 1;
@@ -264,7 +259,6 @@ package net.wg.gui.battle.random.views
          var _loc2_:IDAAPIModule = null;
          var _loc3_:IDAAPIModule = null;
          registerComponent(this.teamBasesPanelUI,BATTLE_VIEW_ALIASES.TEAM_BASES_PANEL);
-         registerComponent(this.sixthSense,BATTLE_VIEW_ALIASES.SIXTH_SENSE);
          registerComponent(this.damageInfoPanel,BATTLE_VIEW_ALIASES.DAMAGE_INFO_PANEL);
          registerComponent(this.battleDamageLogPanel,BATTLE_VIEW_ALIASES.BATTLE_DAMAGE_LOG_PANEL);
          if(this.fullStats)
@@ -367,7 +361,6 @@ package net.wg.gui.battle.random.views
          this.hintPanel = null;
          this.debugPanel = null;
          this.teamBasesPanelUI = null;
-         this.sixthSense = null;
          this.damageInfoPanel = null;
          this.fragCorrelationBar = null;
          this.fullStats = null;

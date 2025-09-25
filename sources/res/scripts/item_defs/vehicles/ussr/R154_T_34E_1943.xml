@@ -2235,7 +2235,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>34000</maxLoad>
 			<terrainResistance>
 				1.1 1.3 2.3
 				<!--BW_String-->
@@ -3873,11 +3872,11 @@
 					</pitchLimits>
 					<reloadTime>4</reloadTime>
 					<shotDispersionRadius>
-						0.43
+						0.41
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3886,7 +3885,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.14
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -4875,7 +4874,7 @@
 		<detailed>
 			<engines>
 				<V_2_34E>
-					<smplEnginePower>500</smplEnginePower>
+					<smplEnginePower>550</smplEnginePower>
 					<smplFwMaxSpeed>56</smplFwMaxSpeed>
 				</V_2_34E>
 			</engines>

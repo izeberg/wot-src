@@ -145,6 +145,12 @@ msgstr "Алистер МакЛауд"
 msgid "botNames/Murphy"
 msgstr "К-н Джек Мёрфи"
 
+msgid "botNames/Teddy"
+msgstr "К-н Мирослав Котва"
+
+msgid "botNames/Ulysses"
+msgstr "К-н Джеймс Корвин"
+
 msgid "bunker"
 msgstr "Береговой бункер"
 
@@ -351,6 +357,9 @@ msgstr "Захват: карта минного поля"
 msgid "lootCapturing/plan"
 msgstr "Захват: фрагмент карты"
 
+msgid "lootCapturing/tank"
+msgstr "Захват техники противника"
+
 msgid "prebattle/mission/stage/1"
 msgstr "Операция 1"
 
@@ -362,6 +371,12 @@ msgstr "Продвинутое секретное задание"
 
 msgid "prebattle/mission/stage/1004"
 msgstr "Продвинутое задание: минное поле"
+
+msgid "prebattle/mission/stage/1005"
+msgstr "Стандартная"
+
+msgid "prebattle/mission/stage/1006"
+msgstr "Продвинутая"
 
 msgid "prebattle/mission/stage/2"
 msgstr "Операция 2"
@@ -377,6 +392,9 @@ msgstr "Операция 5"
 
 msgid "prebattle/mission/stage/6"
 msgstr "Операция 6"
+
+msgid "prebattle/mission/stage/7"
+msgstr "Операция 7"
 
 msgid "prebattle/mission/task/1"
 msgstr ""
@@ -397,6 +415,16 @@ msgid "prebattle/mission/task/1004"
 msgstr ""
 "{whiteSpanish_Start}Доставьте союзникам приказ о прекращении "
 "огня.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1005"
+msgstr ""
+"{whiteSpanish_Start}Добраться до командного пункта и остановить запуск "
+"ракеты.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/1006"
+msgstr ""
+"{whiteSpanish_Start}Добраться до командного пункта и остановить запуск "
+"ракеты.{whiteSpanish_End}"
 
 msgid "prebattle/mission/task/2"
 msgstr ""
@@ -422,6 +450,11 @@ msgid "prebattle/mission/task/6"
 msgstr ""
 "{whiteSpanish_Start}Доставьте союзникам приказ о прекращении "
 "огня.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/7"
+msgstr ""
+"{whiteSpanish_Start}Добраться до командного пункта и остановить запуск "
+"ракеты.{whiteSpanish_End}"
 
 msgid "prebattle/mission/text/1"
 msgstr ""
@@ -458,6 +491,22 @@ msgstr ""
 "Мёрфи: «Устал заряжать снаряды, Дюбуа?»\n"
 "\n"
 "Дюбуа: «И это тоже»."
+
+msgid "prebattle/mission/text/1005"
+msgstr ""
+"Лени Шарф: «Ситуация критическая. Мы потеряли связь с нашей ракетной базой в Норвежском море. Разведывательный самолёт так и не вернулся, а первая десантная группа полностью уничтожена неизвестным противником.\n"
+"\n"
+"По данным разведки, они готовятся к запуску баллистической ракеты. Цель нам не ясна, но в текущей обстановке даже один выстрел может привести к глобальному конфликту.\n"
+"\n"
+"Как в старые добрые... Очередное невыполнимое задание в тылу врага. Выдвигаемся!»"
+
+msgid "prebattle/mission/text/1006"
+msgstr ""
+"Лени Шарф: «Ситуация критическая. Мы потеряли связь с нашей ракетной базой в Норвежском море. Разведывательный самолёт так и не вернулся, а первая десантная группа полностью уничтожена неизвестным противником.\n"
+"\n"
+"По данным разведки, они готовятся к запуску баллистической ракеты. Цель нам не ясна, но в текущей обстановке даже один выстрел может привести к глобальному конфликту.\n"
+"\n"
+"Как в старые добрые... Очередное невыполнимое задание в тылу врага. Выдвигаемся!»"
 
 msgid "prebattle/mission/text/2"
 msgstr ""
@@ -505,6 +554,14 @@ msgstr ""
 "\n"
 "Выдвигаемся»."
 
+msgid "prebattle/mission/text/7"
+msgstr ""
+"Лени Шарф: «Ситуация критическая. Мы потеряли связь с нашей ракетной базой в Норвежском море. Разведывательный самолёт так и не вернулся, а первая десантная группа полностью уничтожена неизвестным противником.\n"
+"\n"
+"По данным разведки, они готовятся к запуску баллистической ракеты. Цель нам не ясна, но в текущей обстановке даже один выстрел может привести к глобальному конфликту.\n"
+"\n"
+"Как в старые добрые... Очередное невыполнимое задание в тылу врага. Выдвигаемся!»"
+
 msgid "prebattle/mission/title/1"
 msgstr "Стальная лавина"
 
@@ -516,6 +573,12 @@ msgstr "Операция «Почтальон»"
 
 msgid "prebattle/mission/title/1004"
 msgstr "Операция «Почтальон»"
+
+msgid "prebattle/mission/title/1005"
+msgstr "Операция «Точка кипения»"
+
+msgid "prebattle/mission/title/1006"
+msgstr "Операция «Точка кипения»"
 
 msgid "prebattle/mission/title/2"
 msgstr "Зверолов"
@@ -531,6 +594,9 @@ msgstr "Операция «Оверлорд»"
 
 msgid "prebattle/mission/title/6"
 msgstr "Операция «Почтальон»"
+
+msgid "prebattle/mission/title/7"
+msgstr "Операция «Точка кипения»"
 
 msgid "ruinberg/hint01"
 msgstr "Найдите обходной путь и обойдите противника"
@@ -711,4 +777,70 @@ msgid "vday/respawn_over/header"
 msgstr "Всё кончено"
 
 msgid "vday/respawn_over/subheader"
+msgstr "Все доступные машины уничтожены"
+
+msgid "zeppelin/hint01"
+msgstr "Зарядите орудие вашей машины, чтобы нанести увеличенный урон"
+
+msgid "zeppelin/hint02"
+msgstr "Нанесите урон с дальней дистанции, стреляя с максимальной точностью"
+
+msgid "zeppelin/hint03"
+msgstr "Узнайте, как стрелять из вспомогательного орудия этой машины"
+
+msgid "zeppelin/objective01/failure"
+msgstr "Задача провалена!"
+
+msgid "zeppelin/objective01/header"
+msgstr "Вперёд!"
+
+msgid "zeppelin/objective01/subheader"
+msgstr "Доберитесь до ракеты и остановите запуск"
+
+msgid "zeppelin/objective02/header"
+msgstr "Обнаружена станция техобслуживания противника!"
+
+msgid "zeppelin/objective02/subheader"
+msgstr "Захватите оставленную технику"
+
+msgid "zeppelin/objective02/success"
+msgstr "Техника захвачена!"
+
+msgid "zeppelin/objective03/header"
+msgstr "Получено новое задание!"
+
+msgid "zeppelin/objective03/subheader"
+msgstr "Захватите пусковую площадку и командный пункт"
+
+msgid "zeppelin/objective03/success"
+msgstr "Пусковая площадка захвачена"
+
+msgid "zeppelin/objective04/header"
+msgstr "Защищайте позицию"
+
+msgid "zeppelin/objective04/subheader"
+msgstr "Уничтожьте машин противника: %d"
+
+msgid "zeppelin/objective04/success"
+msgstr "Атака противника остановлена"
+
+msgid "zeppelin/prebattle/header"
+msgstr "Приготовьтесь!"
+
+msgid "zeppelin/prebattle/start"
+msgstr "Приступить!"
+
+msgid "zeppelin/prebattle/subheader"
+msgstr "?empty?"
+
+msgid "zeppelin/respawn/header"
+msgstr "Будьте наготове, командир"
+
+msgid "zeppelin/respawn/subheader"
+msgstr "Подкрепление в пути"
+
+msgid "zeppelin/respawn_over/header"
+msgstr "Всё кончено"
+
+msgid "zeppelin/respawn_over/subheader"
 msgstr "Все доступные машины уничтожены"

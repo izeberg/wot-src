@@ -917,7 +917,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>7380</weight>
-			<maxLoad>27000</maxLoad>
 			<terrainResistance>
 				0.9 1 2.1
 				<!--BW_String-->
@@ -2576,18 +2575,15 @@
 					shared
 					<maxAmmo>50</maxAmmo>
 					<aimingTime>
-						2.3
+						2.1
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.14
 							<!--BW_String-->
 						</turretRotation>
-						<afterShot>
-							4.0
-							<!--BW_String-->
-						</afterShot>
+						<afterShot>3</afterShot>
 						<whileGunDamaged>
 							2.0
 							<!--BW_String-->
@@ -2628,7 +2624,10 @@
 						0.247
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
-					<reloadTime>4</reloadTime>
+					<reloadTime>
+						3.6
+						<!--BW_String-->
+					</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -2637,7 +2636,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.39
+						0.37
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<turretYawLimits>-180 180</turretYawLimits>

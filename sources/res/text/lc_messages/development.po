@@ -179,7 +179,7 @@ msgid "editor/contextMenu/undo"
 msgstr "Undo"
 
 msgid "editor/focus"
-msgstr "To focus (Ctrl+F): %(name)s"
+msgstr "To focus (Ctrl+F): "
 
 msgid "editor/goto"
 msgstr "goto"
@@ -380,10 +380,7 @@ msgid "wulf/content/pager"
 msgstr "{current}/{total}"
 
 msgid "wulf/debugOff"
-msgstr "Hide GF zones (Ctrl+G)"
-
-msgid "wulf/debugOn"
-msgstr "Display GF zones (Ctrl+G)"
+msgstr "Hide GF tools (Ctrl+G)"
 
 msgid "wulf/demoWindow/title"
 msgstr "Demo Window"
@@ -414,6 +411,9 @@ msgid "wulf/dialogExamples/testFmtArgs/title"
 msgstr ""
 "Заголовок с форматируемыми аргументами. Раз: {one} Два: {two} Три: {three}"
 
+msgid "wulf/hitArea"
+msgstr "Display GF anatomy (Ctrl+G)"
+
 msgid "wulf/listExamplesEmptyRenderWindow/title"
 msgstr "List Examples Empty Render"
 
@@ -431,6 +431,9 @@ msgstr "Service Window Demo"
 
 msgid "wulf/standartWindowDemo/title"
 msgstr "Standard Window Demo"
+
+msgid "wulf/texture"
+msgstr "Display GF textures (Ctrl+G)"
 
 msgid "wulf/uiKitWindow/CheckBox"
 msgstr "CheckBox"

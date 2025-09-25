@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_135_ArmiesA_Projector/normal/lod2/Cus_135_ArmiesA_Projector_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.275307 -0.200000 -0.156474</min>
+		<max>0.275307 0.923185 0.145378</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodelessVisual>content/3D_Customization/Cus_135_ArmiesA_Projector/normal/lod1/Cus_135_ArmiesA_Projector_01</nodelessVisual>
+</root>

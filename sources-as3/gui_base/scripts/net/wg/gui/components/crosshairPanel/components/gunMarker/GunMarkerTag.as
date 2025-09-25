@@ -5,6 +5,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
    import net.wg.gui.components.crosshairPanel.components.gunMarker.constants.GunMarkerConsts;
    import net.wg.gui.components.crosshairPanel.constants.CrosshairConsts;
    import net.wg.infrastructure.base.SimpleContainer;
+   import org.idmedia.as3commons.util.StringUtils;
    
    public class GunMarkerTag extends SimpleContainer
    {
@@ -32,20 +33,14 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             gotoAndStop(GunMarkerConsts.GUN_TAG_PREFIX + this._gunTagType);
             invalidate(GunMarkerConsts.GUN_TAG_COLOR_VALIDATION,GunMarkerConsts.GUN_RELOADING_STATE_VALIDATION);
          }
-         if(isInvalid(GunMarkerConsts.GUN_TAG_COLOR_VALIDATION))
+         if(StringUtils.isNotEmpty(this._colorName) && isInvalid(GunMarkerConsts.GUN_TAG_COLOR_VALIDATION) && GUN_MARKER_VIEW_CONSTANTS.GUN_TAG_SHOT_RESULT_TYPES.indexOf(this._gunTagType) != -1)
          {
-            if(this._colorName != "" && GUN_MARKER_VIEW_CONSTANTS.GUN_TAG_SHOT_RESULT_TYPES.indexOf(this._gunTagType) != -1)
-            {
-               this.tag.gotoAndStop(this._colorName);
-            }
+            this.tag.gotoAndStop(this._colorName);
          }
-         if(isInvalid(GunMarkerConsts.GUN_RELOADING_STATE_VALIDATION))
+         if(StringUtils.isNotEmpty(this._reloadingState) && isInvalid(GunMarkerConsts.GUN_RELOADING_STATE_VALIDATION) && GUN_MARKER_VIEW_CONSTANTS.GUN_TAG_RELOADING_TYPES.indexOf(this._gunTagType) != -1)
          {
-            if(this._reloadingState != "" && GUN_MARKER_VIEW_CONSTANTS.GUN_TAG_RELOADING_TYPES.indexOf(this._gunTagType) != -1)
-            {
-               _loc1_ = !(this._reloadingState == CrosshairConsts.RELOADING_ENDED || this._reloadingState == CrosshairConsts.RELOADING_END);
-               this.tag.gotoAndStop(!!_loc1_ ? GunMarkerConsts.GUN_MARKER_TAG_RELOAD_PROGRESS : GunMarkerConsts.GUN_MARKER_TAG_RELOAD_FINISH);
-            }
+            _loc1_ = !(this._reloadingState == CrosshairConsts.RELOADING_ENDED || this._reloadingState == CrosshairConsts.RELOADING_END);
+            this.tag.gotoAndStop(!!_loc1_ ? GunMarkerConsts.GUN_MARKER_TAG_RELOAD_PROGRESS : GunMarkerConsts.GUN_MARKER_TAG_RELOAD_FINISH);
          }
       }
       

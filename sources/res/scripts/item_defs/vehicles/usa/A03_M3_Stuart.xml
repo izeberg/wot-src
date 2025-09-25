@@ -135,7 +135,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>7100</weight>
-		<maxHealth>350</maxHealth>
+		<maxHealth>352</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>110</maxHealth>
 			<maxRegenHealth>70</maxRegenHealth>
@@ -2345,14 +2345,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<chassisE1>
-			<userString>#usa_vehicles:chassisE1</userString>
+		<Chassis_A03_M3_Stuart>
+			<userString>#usa_vehicles:Chassis_A03_M3_Stuart</userString>
 			<tags/>
 			<level>2</level>
 			<price>660</price>
 			<unlocks>
 				<chassis>
-					chassisE2
+					Chassis_A03_M3_Stuart_2
 					<cost>355</cost>
 				</chassis>
 			</unlocks>
@@ -2361,14 +2361,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>12800</maxLoad>
 			<terrainResistance>
-				1.1 1.3 2.3
+				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>40</rotationSpeed>
+			<rotationSpeed>63</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -4578,9 +4577,9 @@
 				5.71428585
 				<!--BW_String-->
 			</repairTime>
-		</chassisE1>
-		<chassisE2>
-			<userString>#usa_vehicles:chassisE2</userString>
+		</Chassis_A03_M3_Stuart>
+		<Chassis_A03_M3_Stuart_2>
+			<userString>#usa_vehicles:Chassis_A03_M3_Stuart_2</userString>
 			<tags/>
 			<level>3</level>
 			<price>1850</price>
@@ -4589,14 +4588,13 @@
 				<rightTrack>10</rightTrack>
 			</armor>
 			<weight>3000</weight>
-			<maxLoad>14500</maxLoad>
 			<terrainResistance>
 				1 1.1 1.9
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>35500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>45</rotationSpeed>
+			<rotationSpeed>67</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.16
@@ -6809,14 +6807,20 @@
 				3.42857146
 				<!--BW_String-->
 			</repairTime>
-		</chassisE2>
+		</Chassis_A03_M3_Stuart_2>
 	</chassis>
 	<turrets0>
-		<D37812>
-			<userString>#usa_vehicles:D37812</userString>
+		<Turret_1_A03_M3_Stuart>
+			<userString>#usa_vehicles:Turret_1_A03_M3_Stuart</userString>
 			<tags/>
 			<level>2</level>
 			<price>800</price>
+			<unlocks>
+				<turret>
+					Turret_2_A03_M3_Stuart
+					<cost>375</cost>
+				</turret>
+			</unlocks>
 			<armor>
 				<armor_1>
 					38.1
@@ -6854,8 +6858,8 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1250</weight>
-			<maxHealth>70</maxHealth>
-			<rotationSpeed>40</rotationSpeed>
+			<maxHealth>68</maxHealth>
+			<rotationSpeed>44</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
 				<maxRegenHealth>35</maxRegenHealth>
@@ -6864,7 +6868,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>280</circularVisionRadius>
+			<circularVisionRadius>320</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>50</maxHealth>
 				<maxRegenHealth>25</maxRegenHealth>
@@ -6874,19 +6878,9 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_37mm_M-5>
+				<_37mm_Gun_M5_M3>
 					shared
 					<maxAmmo>205</maxAmmo>
-					<unlocks>
-						<turret>
-							D39273
-							<cost>375</cost>
-						</turret>
-						<gun>
-							_20mm_Hispano_Suiza_Birgikt_gun
-							<cost>140</cost>
-						</gun>
-					</unlocks>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -6909,12 +6903,9 @@
 						0.43
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						2.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>2</reloadTime>
 					<aimingTime>
-						1.9
+						1.7
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6923,7 +6914,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.12
+							0.1
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -6992,116 +6983,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_37mm_M-5>
-				<_20mm_Hispano_Suiza_Birgikt_gun>
-					shared
-					<maxAmmo>1500</maxAmmo>
-					<reloadTime>
-						7.7
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							1.3
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.325227 10 0.388889 5 0.611111 5 0.674773 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<armor>
-						<armor_2>
-							38
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							25
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<gun>10</gun>
-					</armor>
-					<shotDispersionRadius>
-						0.46
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<aimingTime>
-						1.7
-						<!--BW_String-->
-					</aimingTime>
-					<invisibilityFactorAtShot>
-						0.266
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/american/A03_M3_Stuart/normal/lod0/Gun_01.model</undamaged>
-						<destroyed>vehicles/american/A03_M3_Stuart/crash/lod0/Gun_01.model</destroyed>
-						<exploded>vehicles/american/A03_M3_Stuart/crash/lod0/Gun_01.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A03_M3_Stuart/collision/Gun_01.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A03_M3_Stuart/collision_client/Gun_01.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_auto</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>0.000984 0.008408 0.976603</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.155311 0.155312
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>0.000984 0.008408 0.976603</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.355 0.355 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							209.563 209.255
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_20mm_Hispano_Suiza_Birgikt_gun>
+				</_37mm_Gun_M5_M3>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A03_M3_Stuart/normal/lod0/Turret_01.model</undamaged>
@@ -7813,15 +7695,15 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</D37812>
-		<D39273>
-			<userString>#usa_vehicles:D39273</userString>
+		</Turret_1_A03_M3_Stuart>
+		<Turret_2_A03_M3_Stuart>
+			<userString>#usa_vehicles:Turret_2_A03_M3_Stuart</userString>
 			<tags/>
 			<level>3</level>
 			<price>2000</price>
 			<unlocks>
 				<gun>
-					_37mm_M-6_L53
+					_37mm_Gun_M6_M3
 					<cost>350</cost>
 				</gun>
 			</unlocks>
@@ -7854,7 +7736,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>1700</weight>
-			<maxHealth>90</maxHealth>
+			<maxHealth>88</maxHealth>
 			<rotationSpeed>48</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>70</maxHealth>
@@ -7878,7 +7760,7 @@
 				<!--BW_String-->
 			</invisibilityFactor>
 			<guns>
-				<_37mm_M-5>
+				<_37mm_Gun_M5_M3>
 					shared
 					<maxAmmo>205</maxAmmo>
 					<pitchLimits>
@@ -7888,10 +7770,7 @@
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
-					<reloadTime>
-						2.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>2</reloadTime>
 					<aimingTime>
 						1.7
 						<!--BW_String-->
@@ -7986,123 +7865,22 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_37mm_M-5>
-				<_20mm_Hispano_Suiza_Birgikt_gun>
-					shared
-					<maxAmmo>1500</maxAmmo>
-					<pitchLimits>
-						<minPitch>0 -20 1 -20</minPitch>
-						<maxPitch>
-							0 10 0.325227 10 0.388889 5 0.611111 5 0.674773 10 1 10
-							<!--BW_String-->
-						</maxPitch>
-					</pitchLimits>
-					<reloadTime>
-						6.9
-						<!--BW_String-->
-					</reloadTime>
-					<shotDispersionFactors>
-						<turretRotation>
-							0.08
-							<!--BW_String-->
-						</turretRotation>
-						<afterShot>
-							1.2
-							<!--BW_String-->
-						</afterShot>
-						<whileGunDamaged>
-							2.0
-							<!--BW_String-->
-						</whileGunDamaged>
-					</shotDispersionFactors>
-					<armor>
-						<armor_2>
-							38
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_2>
-						<armor_3>
-							25
-							<vehicleDamageFactor>0</vehicleDamageFactor>
-						</armor_3>
-						<gun>10</gun>
-					</armor>
-					<aimingTime>
-						1.6
-						<!--BW_String-->
-					</aimingTime>
-					<shotDispersionRadius>
-						0.45
-						<!--BW_String-->
-					</shotDispersionRadius>
-					<invisibilityFactorAtShot>
-						0.266
-						<!--BW_String-->
-					</invisibilityFactorAtShot>
-					<models>
-						<undamaged>vehicles/american/A03_M3_Stuart/normal/lod0/Gun_03.model</undamaged>
-						<destroyed>vehicles/american/A03_M3_Stuart/crash/lod0/Gun_03.model</destroyed>
-						<exploded>vehicles/american/A03_M3_Stuart/crash/lod0/Gun_03.model</exploded>
-					</models>
-					<hitTester>
-						<collisionModelServer>vehicles/american/A03_M3_Stuart/collision/Gun_03.model</collisionModelServer>
-						<collisionModelClient>vehicles/american/A03_M3_Stuart/collision_client/Gun_03.model</collisionModelClient>
-					</hitTester>
-					<effects>shot_auto</effects>
-					<reloadEffect>reload20_45</reloadEffect>
-					<customizationSlots>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41000</slotId>
-							<anchorPosition>-0.001023 0.008441 0.965403</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-						<slot>
-							<slotType>paint</slotType>
-							<slotId>41001</slotId>
-							<anchorPosition>
-								0 0.153803 0.153804
-								<!--BW_String-->
-							</anchorPosition>
-							<anchorDirection>
-								0 0.707107 0.707107
-								<!--BW_String-->
-							</anchorDirection>
-							<applyTo>16384</applyTo>
-						</slot>
-						<slot>
-							<slotType>camouflage</slotType>
-							<slotId>42000</slotId>
-							<anchorPosition>-0.001023 0.008441 0.965403</anchorPosition>
-							<anchorDirection>0 0 1</anchorDirection>
-							<applyTo>4096</applyTo>
-						</slot>
-					</customizationSlots>
-					<customization>
-						<customizableVehicleAreas>
-							<paint>GUN GUN_2</paint>
-							<camouflage>GUN</camouflage>
-						</customizableVehicleAreas>
-					</customization>
-					<camouflage>
-						<tiling>
-							0.565 0.565 0.000000 0.000000
-							<!--BW_String-->
-						</tiling>
-						<density>
-							209.563 209.255
-							<!--BW_String-->
-						</density>
-						<aoTextureSize>512 512</aoTextureSize>
-					</camouflage>
-				</_20mm_Hispano_Suiza_Birgikt_gun>
-				<_37mm_M-6_L53>
+				</_37mm_Gun_M5_M3>
+				<_37mm_Gun_M6_M3>
 					shared
 					<maxAmmo>180</maxAmmo>
 					<unlocks>
 						<vehicle>
+							A57_M8A1
+							<cost>3350</cost>
+						</vehicle>
+						<vehicle>
 							A129_T6_medium
 							<cost>6950</cost>
+						</vehicle>
+						<vehicle>
+							A22_M5_Stuart
+							<cost>4500</cost>
 						</vehicle>
 					</unlocks>
 					<pitchLimits>
@@ -8142,7 +7920,7 @@
 						<gun>10</gun>
 					</armor>
 					<reloadTime>
-						2.3
+						1.9
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -8210,7 +7988,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_37mm_M-6_L53>
+				</_37mm_Gun_M6_M3>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A03_M3_Stuart/normal/lod0/Turret_02.model</undamaged>
@@ -8855,101 +8633,40 @@
 				</density>
 				<aoTextureSize>512 512</aoTextureSize>
 			</camouflage>
-		</D39273>
+		</Turret_2_A03_M3_Stuart>
 	</turrets0>
 	<engines>
-		<Guiberson_T-1020-4>
+		<Guiberson_T_1020_4_M3>
 			shared
 			<unlocks>
 				<engine>
-					Continental_W-670
-					<cost>310</cost>
-				</engine>
-			</unlocks>
-		</Guiberson_T-1020-4>
-		<Continental_W-670>
-			shared
-			<unlocks>
-				<engine>
-					Continental_R-975-C1
+					Continental_W_670_M3
 					<cost>550</cost>
 				</engine>
 			</unlocks>
-		</Continental_W-670>
-		<Continental_R-975-C1>
-			shared
-			<unlocks>
-				<vehicle>
-					A22_M5_Stuart
-					<cost>4500</cost>
-				</vehicle>
-			</unlocks>
-		</Continental_R-975-C1>
+		</Guiberson_T_1020_4_M3>
+		<Continental_W_670_M3>shared</Continental_W_670_M3>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<SCR_200>
-			shared
-			<unlocks>
-				<radio>
-					SCR_210
-					<cost>330</cost>
-				</radio>
-			</unlocks>
-		</SCR_200>
 		<SCR_210>shared</SCR_210>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Guiberson_T-1020-4>
-					<smplEnginePower>
-						259.0339
-						<!--BW_String-->
-					</smplEnginePower>
+				<Guiberson_T_1020_4_M3>
+					<smplEnginePower>335</smplEnginePower>
 					<smplFwMaxSpeed>61</smplFwMaxSpeed>
-				</Guiberson_T-1020-4>
-				<Continental_W-670>
-					<smplEnginePower>
-						277.0077
-						<!--BW_String-->
-					</smplEnginePower>
+				</Guiberson_T_1020_4_M3>
+				<Continental_W_670_M3>
+					<smplEnginePower>380</smplEnginePower>
 					<smplFwMaxSpeed>61</smplFwMaxSpeed>
-				</Continental_W-670>
-				<Continental_R-975-C1>
-					<smplEnginePower>
-						370.0484
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>61</smplFwMaxSpeed>
-				</Continental_R-975-C1>
+				</Continental_W_670_M3>
 			</engines>
 			<chassis>
-				<chassisE1>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.18515
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.08855
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</chassisE1>
-				<chassisE2>
+				<Chassis_A03_M3_Stuart>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -8970,7 +8687,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</chassisE2>
+				</Chassis_A03_M3_Stuart>
+				<Chassis_A03_M3_Stuart_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.15295
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.08855
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0805
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_A03_M3_Stuart_2>
 			</chassis>
 		</detailed>
 	</physics>

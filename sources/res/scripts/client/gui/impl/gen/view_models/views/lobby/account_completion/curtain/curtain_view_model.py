@@ -1,6 +1,6 @@
 from enum import IntEnum
-from gui.impl.gen import R
 from frameworks.wulf import ViewModel
+from gui.impl.gen import R
 
 class CurtainStateEnum(IntEnum):
     CLOSED = 0

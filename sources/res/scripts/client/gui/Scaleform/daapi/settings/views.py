@@ -13,19 +13,28 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     EULA_FULL = 'EULAFull'
     LOGIN_QUEUE = 'loginQueue'
     LOBBY_HEADER = 'lobbyHeader'
+    LOBBY_HEADER_OVERLAPPING = 'lobbyHeaderOverlapping'
+    LOBBY_FOOTER_OVERLAPPING = 'lobbyFooterOverlapping'
     CUSTOMIZATION_PROPERTIES_SHEET = 'customizationPropertiesSheet'
     CUSTOMIZATION_BOTTOM_PANEL = 'customizationBottomPanel'
     CUSTOMIZATION_INSCRIPTION_CONTROLLER = 'customizationInscriptionController'
     LOBBY_HANGAR = 'hangar'
+    LOBBY_CLAN_SUPPLY = 'clanSupply'
+    VEHICLE_HUB = 'vehicleHub'
+    LEGACY_LOBBY_HANGAR = 'legacyHangar'
     LOBBY_STORE = 'store'
     LOBBY_STORAGE = 'storage'
+    BATTLE_PASS = 'battlePass'
+    BATTLE_PASS_BROWSER = 'battlePassBrowser'
+    BATTLE_PASS_VIDEO_BROWSER = 'battlePassVideoBrowser'
     OVERLAY_WEB_STORE = 'overlayWebStore'
     BROWSER_LOBBY_TOP_SUB = 'overlayBrowserView'
     BROWSER_OVERLAY = 'overlayBrowserFull'
     MAPBOX_INFO_OVERLAY = 'mapboxInfoOverlay'
-    BATTLE_PASS_BROWSER_VIEW = 'battlePassBrowserView'
-    BATTLE_PASS_VIDEO_BROWSER_VIEW = 'battlePassVideoBrowserView'
     LOOT_BOXES_INTRO_BROWSER_VIEW = 'lootBoxSystemIntroBrowserView'
+    LOOT_BOXES_INFO_VIEW = 'lootBoxSystemInfoView'
+    LOOT_BOXES_MAIN_VIEW = 'lootBoxSystemMainView'
+    LOOT_BOXES_AUTO_OPEN_VIEW = 'lootBoxSystemAutoOpenView'
     MANUAL_BROWSER_VIEW = 'ManualBrowserView'
     WEB_VIEW_TRANSPARENT = 'webViewTransparent'
     BLUEPRINTS_EXCHANGE_VIEW = 'blueprintsExchangeView'
@@ -95,6 +104,7 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     VEHICLE_SELL_DIALOG = 'vehicleSellDialog'
     SETTINGS_WINDOW = 'settingsWindow'
     BATTLE_RESULTS = 'battleResults'
+    POST_BATTLE_RESULTS = 'postBattleResults'
     BROWSER_WINDOW = 'browserWindow'
     BROWSER_WINDOW_MODAL = 'browserWindowModal'
     DEMONSTRATOR_WINDOW = 'demonstratorWindow'
@@ -144,6 +154,8 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     VEH_POST_PROGRESSION = 'vehPostProgression'
     VEH_POST_PROGRESSION_CMP = 'vehPostProgressionCmp'
     CLAN_SUPPLY_INFO_VIEW = 'clanSupplyInfoView'
+    CAMPAIGN_SELECTOR = 'campaignSelector'
+    PERSONAL_MISSIONS_3 = 'personalMissions3'
     MINIMAP_LOBBY = 'minimapLobby'
     MINIMAP_GRID = 'minimapGridLobby'
     MINIMAP_ON_BATTLE_LOADING = 'minimapOnBattleLoading'
@@ -189,6 +201,7 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     EPIC_RANDOM_PAGE = 'epicRandomPage'
     EPIC_BATTLE_PAGE = 'epicBattlePage'
     STRONGHOLD_BATTLE_PAGE = 'strongholdBattlePage'
+    COLLECTIONS_PAGE = 'collectionsPage'
     EVENT_BATTLE_PAGE = 'eventBattlePage'
     RANKED_BATTLE_PAGE = 'rankedBattlePage'
     BATTLE_ROYALE_PAGE = 'battleRoyalePage'
@@ -197,6 +210,7 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     BATTLE_PASS_BADGES_DEMO = 'battlePassBadgesDemoView'
     MAPS_TRAINING_PAGE = 'mapsTrainingBattlePage'
     COMP7_BATTLE_PAGE = 'comp7BattlePage'
+    COMP7_LIGHT_BATTLE_PAGE = 'comp7LightBattlePage'
     WINBACK_BATTLE_PAGE = 'winbackBattlePage'
     INGAME_MENU = 'ingameMenu'
     INGAME_HELP = 'ingameHelp'
@@ -208,6 +222,7 @@ class VIEW_ALIAS(COMMON_VIEW_ALIAS):
     FEEDBACK_DAMAGE_INDICATOR = 'feedbackDamageIndicator'
     FEEDBACK_BATTLE_BORDER_MAP = 'feedbackBattleBorderMap'
     FEEDBACK_QUESTS_PROGRESS = 'feedbackQuestsProgress'
+    USER_MISSIONS_HUB_CONTAINER = 'userMissionsHubContainer'
     BATTLE_PAGES = (
      CLASSIC_BATTLE_PAGE, DEV_BATTLE_PAGE, EVENT_BATTLE_PAGE, RANKED_BATTLE_PAGE,
      EPIC_BATTLE_PAGE, BATTLE_ROYALE_PAGE, WINBACK_BATTLE_PAGE)
@@ -217,8 +232,7 @@ VIEW_BATTLE_PAGE_ALIAS_BY_ARENA_GUI_TYPE = {ARENA_GUI_TYPE.EPIC_RANDOM: VIEW_ALI
    ARENA_GUI_TYPE.EPIC_RANDOM_TRAINING: VIEW_ALIAS.EPIC_RANDOM_PAGE, 
    ARENA_GUI_TYPE.RANKED: VIEW_ALIAS.RANKED_BATTLE_PAGE, 
    ARENA_GUI_TYPE.BATTLE_ROYALE: VIEW_ALIAS.BATTLE_ROYALE_PAGE, 
-   ARENA_GUI_TYPE.EPIC_BATTLE: VIEW_ALIAS.EPIC_BATTLE_PAGE, 
-   ARENA_GUI_TYPE.EPIC_TRAINING: VIEW_ALIAS.EPIC_BATTLE_PAGE, 
+   ARENA_GUI_TYPE.EPIC_BATTLE: VIEW_ALIAS.EPIC_BATTLE_PAGE, ARENA_GUI_TYPE.EPIC_TRAINING: VIEW_ALIAS.EPIC_BATTLE_PAGE, 
    ARENA_GUI_TYPE.EVENT_BATTLES: VIEW_ALIAS.EVENT_BATTLE_PAGE, 
    ARENA_GUI_TYPE.MAPS_TRAINING: VIEW_ALIAS.MAPS_TRAINING_PAGE, 
    ARENA_GUI_TYPE.SORTIE_2: VIEW_ALIAS.STRONGHOLD_BATTLE_PAGE, 

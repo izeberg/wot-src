@@ -22,8 +22,6 @@ package net.wg.infrastructure.base.meta
       
       function as_setControlsVisible(param1:Boolean) : void;
       
-      function as_setComp7ModifiersVisible(param1:Boolean) : void;
-      
       function as_setEventTournamentBannerVisible(param1:String, param2:Boolean) : void;
       
       function as_setPrestigeWidgetVisible(param1:Boolean) : void;
@@ -55,8 +53,6 @@ package net.wg.infrastructure.base.meta
       function as_updateCarouselEventEntryState(param1:Boolean) : void;
       
       function as_updateHangarComponents(param1:Array, param2:Array) : void;
-      
-      function as_setBattleRoyaleSpaceLoaded(param1:Boolean) : void;
       
       function as_setComp7SpaceLoaded(param1:Boolean) : void;
    }

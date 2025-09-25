@@ -41,6 +41,7 @@ class PreQueueFactory(ControlFactory):
         self.eventBattlesStorage = prequeue_storage_getter(QUEUE_TYPE.EVENT_BATTLES)()
         self.funRandomStorage = prequeue_storage_getter(QUEUE_TYPE.FUN_RANDOM)()
         self.comp7Storage = prequeue_storage_getter(QUEUE_TYPE.COMP7)()
+        self.comp7LightStorage = prequeue_storage_getter(QUEUE_TYPE.COMP7_LIGHT)()
         self.recentPrbStorage = storage_getter(RECENT_PRB_STORAGE)()
         self.winbackStorage = prequeue_storage_getter(QUEUE_TYPE.WINBACK)()
 
@@ -94,6 +95,8 @@ class PreQueueFactory(ControlFactory):
                 return self.__createByQueueType(QUEUE_TYPE.FUN_RANDOM)
             if self.comp7Storage is not None and self.comp7Storage.isModeSelected():
                 return self.__createByQueueType(QUEUE_TYPE.COMP7)
+            if self.comp7LightStorage is not None and self.comp7LightStorage.isModeSelected():
+                return self.__createByQueueType(QUEUE_TYPE.COMP7_LIGHT)
             lastBattleQueueType = self.recentPrbStorage.queueType
             if lastBattleQueueType == QUEUE_TYPE.WINBACK and not self.winbackStorage.isModeAvailable():
                 lastBattleQueueType = QUEUE_TYPE.RANDOMS

@@ -88,6 +88,9 @@ msgstr "4TP"
 msgid "Chassis_Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "Chassis_Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Ashbringer"
+
 msgid "Chassis_Pl16_T34_85_Rudy"
 msgstr "T-34-85-60"
 
@@ -113,10 +116,10 @@ msgid "Chassis_Pl20_CS_44_2"
 msgstr "CS-49"
 
 msgid "Chassis_Pl21_CS_63"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Chassis_Pl21_CS_63_7x7"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Chassis_Pl21_CS_63_OSP3"
 msgstr "Харрикейн"
@@ -181,11 +184,20 @@ msgstr "SDP 40 Zadymka-Wzmocnione"
 msgid "Chassis_Pl34_Cs53_56_Woitek"
 msgstr "CS-53/56"
 
+msgid "Chassis_Pl36_Wz_64GC_Bzyg"
+msgstr "Wz. 64GC Bzyg"
+
+msgid "Chassis_Pl37_CS_67_Szakal"
+msgstr "CS-67 Szakal"
+
 msgid "Fug7A"
 msgstr "FuG 7"
 
 msgid "GG_100_162_mm"
 msgstr "GG-100/162 mm"
+
+msgid "GG_100_162_mm_58"
+msgstr "GG-100/162 mm (58)"
 
 msgid "GG_100_162_mm_K"
 msgstr "GG-100/162 mm K"
@@ -195,6 +207,12 @@ msgstr "GG-85/150 mm"
 
 msgid "GG_85_175_mm"
 msgstr "GG-85/175 mm"
+
+msgid "GG_85_175_mm_60"
+msgstr "GG-85/175 mm (60)"
+
+msgid "GG_85_175_mm_GC"
+msgstr "GG-85/175 mm GC"
 
 msgid "GTD"
 msgstr "GTD"
@@ -236,6 +254,9 @@ msgid "MT_50_T"
 msgstr "MT-50T"
 
 msgid "MT_50_TM"
+msgstr "MT-50TM"
+
+msgid "MT_50_TM_CFE_A"
 msgstr "MT-50TM"
 
 msgid "Maybach_HL_108"
@@ -304,6 +325,9 @@ msgstr "PZInż R.W.A."
 msgid "PP_GG_m100_162"
 msgstr "PP-GG m100/162"
 
+msgid "PP_GG_m100_162_58"
+msgstr "PP-GG m100/162 (58)"
+
 msgid "PP_GG_m100_162_K"
 msgstr "PP-GG m100/162 K"
 
@@ -313,8 +337,17 @@ msgstr "PP-GG m85/150"
 msgid "PP_GG_m85_175"
 msgstr "PP-GG m85/175"
 
+msgid "PP_GG_m85_175_60"
+msgstr "PP-GG m85/175 (60)"
+
+msgid "PP_GG_m85_175_GC"
+msgstr "PP-GG m85/175 GC"
+
 msgid "PPrz_GG_m100_162"
 msgstr "PPrz-GG m100/162"
+
+msgid "PPrz_GG_m100_162_58"
+msgstr "PPrz-GG m100/162 (58)"
 
 msgid "PPrz_GG_m100_162_K"
 msgstr "PPrz-GG m100/162 K"
@@ -325,8 +358,17 @@ msgstr "PPrz-GG m85/150"
 msgid "PPrz_GG_m85_175"
 msgstr "PPrz-GG m85/175"
 
+msgid "PPrz_GG_m85_175_60"
+msgstr "PPrz-GG m85/175 (60)"
+
+msgid "PPrz_GG_m85_175_GC"
+msgstr "PPrz-GG m85/175 GC"
+
 msgid "PW_GG_m100_162"
 msgstr "PW-GG m100/162"
+
+msgid "PW_GG_m100_162_58"
+msgstr "PW-GG m100/162 (58)"
 
 msgid "PW_GG_m100_162_K"
 msgstr "PW-GG m100/162 K"
@@ -336,6 +378,12 @@ msgstr "PW-GG m85/150"
 
 msgid "PW_GG_m85_175"
 msgstr "PW-GG m85/175"
+
+msgid "PW_GG_m85_175_60"
+msgstr "PW-GG m85/175 (60)"
+
+msgid "PW_GG_m85_175_GC"
+msgstr "PW-GG m85/175 GC"
 
 msgid "Pl01_TKS_20mm"
 msgstr "TKS z n.k.m. 20 mm"
@@ -565,6 +613,31 @@ msgstr "4TP"
 
 msgid "Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Ashbringer"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_descr"
+msgstr ""
+"На протяжении многих веков он нёс погибель самым смелым героям. В мифах и "
+"легендах с незапамятных времён упоминается ужасный зверь невиданной силы — "
+"дракон, что пробудился от древнего сна. В его глазах горит пламя мести, и "
+"никакая броня не спасёт того, кто посмеет встать у него на пути."
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_long_special"
+msgstr ""
+"Ashbringer сочетает в себе огневую мощь и надёжную защиту, словно дракон, "
+"покрытый чешуёй и дышащий пламенем. Его орудие способно нанести огромный "
+"урон, а броня позволяет действовать агрессивно. Этот «зверь» всегда "
+"стремится быть на острие атаки. Любой противник будет чувствовать себя не в "
+"своей тарелке, зная, что ему предстоит встреча с этим «чудовищем». Пусть же "
+"вспыхнет драконье пламя!"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_short"
+msgstr "Ashbringer"
+
+msgid "Pl15_60TP_Lewandowskiego_CFE_A_short_special"
+msgstr "Высокий разовый урон, надёжная броня"
 
 msgid "Pl15_60TP_Lewandowskiego_descr"
 msgstr ""
@@ -996,6 +1069,60 @@ msgstr "Wojtek"
 msgid "Pl34_Cs53_56_Woitek_short_special"
 msgstr "Высокий разовый урон, надёжное бронирование башни"
 
+msgid "Pl36_Wz_64GC_Bzyg"
+msgstr "Wz. 64GC Bzyg"
+
+msgid "Pl36_Wz_64GC_Bzyg_descr"
+msgstr ""
+"В 1960-х годах польские военные заинтересовались советскими разработками по "
+"установке на танки глубоконарезных орудий с высокой начальной скоростью "
+"полёта снаряда. Польский проект предполагал классическую конструкцию "
+"тяжёлого танка со сварными корпусом и башней, радиолокационным дальномером и"
+" зенитной установкой с управлением из башни. В качестве запасного варианта "
+"вооружения предусматривалась обычная 122-мм пушка. Вскоре глубоконарезные "
+"орудия были признаны неперспективными, и Польша, вслед за СССР, свернула все"
+" работы как по пушкам, так и по проекту тяжёлого танка, который остался "
+"только на бумаге."
+
+msgid "Pl36_Wz_64GC_Bzyg_long_special"
+msgstr ""
+"Wz. 64GC Bzyg — польский тяжёлый танк XI уровня, который выделяется своим "
+"глубоконарезным орудием с высоким уроном как за выстрел, так и в минуту. "
+"Основную защиту машине обеспечивает лобовая броня корпуса и башни."
+
+msgid "Pl36_Wz_64GC_Bzyg_short"
+msgstr "Bzyg"
+
+msgid "Pl36_Wz_64GC_Bzyg_short_special"
+msgstr "Глубоконарезное орудие, хорошая лобовая броня"
+
+msgid "Pl37_CS_67_Szakal"
+msgstr "CS-67 Szakal"
+
+msgid "Pl37_CS_67_Szakal_descr"
+msgstr ""
+"После завершения работ над проектом CS-63 польские военные получили от СССР "
+"сведения о характеристиках танка Т-62. Также советские коллеги предоставили "
+"реальный образец 115-мм орудия У-5ТС и документацию для его производства. В "
+"результате было принято решение о создании нового танка на базе CS-63, "
+"оснащённого мощной гладкоствольной пушкой. В 1967 году проект находился на "
+"финальном этапе подготовки документации для строительства опытного образца, "
+"однако разработку прекратили в связи с решением о создании более мощного "
+"основного боевого танка."
+
+msgid "Pl37_CS_67_Szakal_long_special"
+msgstr ""
+"Нет таких боевых задач, с которыми не справился бы CS-67 Szakal. Его стихия "
+"— это фланговые манёвры и адреналиновые сражения. Благодаря сбалансированным"
+" характеристикам этот средний танк будет полезен в любой боевой ситуации. "
+"Завершает образ мощный газотурбинный двигатель, обеспечивающий подавляющее "
+"преимущество в мобильности. Всё это делает Szakal конкурентоспособным даже "
+"среди лёгких танков и позволяет ему с лёгкостью совершать тактические марш-"
+"броски."
+
+msgid "Pl37_CS_67_Szakal_short"
+msgstr "Szakal"
+
 msgid "Polski_FIAT_122BC"
 msgstr "Polski FIAT 122BC"
 
@@ -1032,6 +1159,12 @@ msgstr "RTU «Jesion-M»"
 msgid "R_113"
 msgstr "R-113"
 
+msgid "R_113_CFE_A"
+msgstr "R-113"
+
+msgid "R_113_GC"
+msgstr "R-113 GC"
+
 msgid "R_113_P"
 msgstr "R-113P"
 
@@ -1049,6 +1182,9 @@ msgstr "R-123P"
 
 msgid "R_123P_SH"
 msgstr "R-123P MH"
+
+msgid "R_123S"
+msgstr "R-123S"
 
 msgid "R_123_1"
 msgstr "R-123C"
@@ -1082,6 +1218,9 @@ msgstr "SGT-3CzM"
 
 msgid "SGT_3Cz_SH"
 msgstr "SGT-3Cz MH"
+
+msgid "SGT_4CzM"
+msgstr "SGT-4CzM"
 
 msgid "Turret_1_Pl01_TKS_20mm"
 msgstr "TKS z n.k.m. 20 mm wz. 38 FK-A"
@@ -1125,6 +1264,9 @@ msgstr "4TP"
 msgid "Turret_1_Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "Turret_1_Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Ashbringer"
+
 msgid "Turret_1_Pl16_T34_85_Rudy"
 msgstr "T-34-85"
 
@@ -1132,7 +1274,7 @@ msgid "Turret_1_Pl17_DS_PZlnz"
 msgstr "DS PZInż I"
 
 msgid "Turret_1_Pl18_BUGI"
-msgstr "B.U.G.I.-I"
+msgstr "B.U.G.I. I"
 
 msgid "Turret_1_Pl18_BUGI_SH"
 msgstr "BUGI MH"
@@ -1144,10 +1286,10 @@ msgid "Turret_1_Pl20_CS_44"
 msgstr "CS-44"
 
 msgid "Turret_1_Pl21_CS_63"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Turret_1_Pl21_CS_63_7x7"
-msgstr "CS 63"
+msgstr "CS-63"
 
 msgid "Turret_1_Pl21_CS_63_OSP3"
 msgstr "Харрикейн"
@@ -1191,6 +1333,12 @@ msgstr "SDP 40 Zadymka"
 msgid "Turret_1_Pl34_Cs53_56_Woitek"
 msgstr "CS-53/56"
 
+msgid "Turret_1_Pl36_Wz_64GC_Bzyg"
+msgstr "Wz. 64GC Bzyg"
+
+msgid "Turret_1_Pl37_CS_67_Szakal"
+msgstr "CS-67 Szakal"
+
 msgid "Turret_2_Pl05_50TP_Tyszkiewicza"
 msgstr "50TP Tyszkiewicza II"
 
@@ -1216,7 +1364,7 @@ msgid "Turret_2_Pl17_DS_PZlnz"
 msgstr "DS PZInż II"
 
 msgid "Turret_2_Pl18_BUGI"
-msgstr "B.U.G.I.-II"
+msgstr "B.U.G.I. II"
 
 msgid "Turret_2_Pl20_CS_44"
 msgstr "CS-49"
@@ -1263,6 +1411,9 @@ msgstr "W-2-57D"
 msgid "W_2_58D"
 msgstr "W-2-58D"
 
+msgid "W_2_64_GC"
+msgstr "W-2-64 GC"
+
 msgid "W_44"
 msgstr "W-44"
 
@@ -1280,6 +1431,54 @@ msgstr "W-53M2"
 
 msgid "_100mm_DAP"
 msgstr "100 mm DAP"
+
+msgid "_100mm_DAP_44"
+msgstr "100 mm DAP (44)"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_49"
+msgstr "Pocisk kumulacyjny wz. 49"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_53"
+msgstr "Pocisk kumulacyjny wz. 53"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_58"
+msgstr "Pocisk kumulacyjny wz. 58"
+
+msgid "_100mm_Pocisk_kumulacyjny_wz_62"
+msgstr "Pocisk kumulacyjny wz. 53"
+
+msgid "_100mm_Pocisk_podkalibrowy_DAP_44"
+msgstr "Pocisk podkalibrowy DAP (44)"
+
+msgid "_100mm_Pocisk_przeciwpancerny_DAP_44"
+msgstr "Pocisk przeciwpancerny DAP (44)"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_49"
+msgstr "Pocisk przeciwpancerny wz. 49"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_53"
+msgstr "Pocisk przeciwpancerny wz. 53"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_58"
+msgstr "Pocisk przeciwpancerny wz. 58"
+
+msgid "_100mm_Pocisk_przeciwpancerny_wz_62"
+msgstr "Pocisk przeciwpancerny wz. 62"
+
+msgid "_100mm_Pocisk_wybuchowy_DAP_44"
+msgstr "Pocisk wybuchowy DAP (44)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_44"
+msgstr "Pocisk wybuchowy wz. 14/19 (44)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_53"
+msgstr "Pocisk wybuchowy wz. 14/19 (53)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_58"
+msgstr "Pocisk wybuchowy wz. 14/19 (58)"
+
+msgid "_100mm_Pocisk_wybuchowy_wz_14_19_59"
+msgstr "Pocisk wybuchowy wz. 14/19 (59)"
 
 msgid "_100mm_armata_wz_49"
 msgstr "100 mm armata wz. 49"
@@ -1320,12 +1519,6 @@ msgstr "100 mm haubica wz. 14/19"
 msgid "_100mm_pocisk_kumulacyjny_w43"
 msgstr "Pocisk kumulacyjny w.43"
 
-msgid "_100mm_pocisk_kumulacyjny_w49"
-msgstr "Pocisk kumulacyjny w.49"
-
-msgid "_100mm_pocisk_kumulacyjny_w53"
-msgstr "Pocisk kumulacyjny w.53"
-
 msgid "_100mm_pocisk_podkalibrowy_DAP"
 msgstr "Pocisk podkalibrowy DAP"
 
@@ -1344,14 +1537,14 @@ msgstr "Pocisk wybuchowy DAP"
 msgid "_100mm_slpgr_m_43"
 msgstr "slpgr m/43 (2)"
 
-msgid "_100mm_slpgr_m_49"
-msgstr "slpgr m/49"
-
-msgid "_100mm_slpgr_m_53"
-msgstr "slpgr m/53"
+msgid "_105mm_3PK_6M_59"
+msgstr "3PK-6M (59)"
 
 msgid "_105mm_3PPod_21"
 msgstr "3PPod-21"
+
+msgid "_105mm_3PPod_21_59"
+msgstr "3PPod-21 (59)"
 
 msgid "_105mm_Bofors_wz_34"
 msgstr "105mm Bofors wz. 34"
@@ -1364,6 +1557,9 @@ msgstr "3PK-6M"
 
 msgid "_105mm_PP_15"
 msgstr "PP-15"
+
+msgid "_105mm_PP_15_59"
+msgstr "PP-15 (59)"
 
 msgid "_105mm_armata_wz_59"
 msgstr "105 mm armata wz. 59"
@@ -1419,6 +1615,18 @@ msgstr "105 mm armata wz. 52"
 msgid "_10RT_C46"
 msgstr "10RT-C46"
 
+msgid "_115mm_3PPod_42"
+msgstr "3PPod-42"
+
+msgid "_115mm_PKumul_63"
+msgstr "PKumul 63"
+
+msgid "_115mm_POB_9A"
+msgstr "POB 9A"
+
+msgid "_115mm_armata_U_5TS"
+msgstr "115 mm armata U-5TS"
+
 msgid "_122_mm_wz_43_50"
 msgstr "122 mm wz.43/50"
 
@@ -1443,29 +1651,38 @@ msgstr "OF-471"
 msgid "_122mm_OF-471M"
 msgstr "OF-471M"
 
-msgid "_122mm_UBR-471P_P"
-msgstr "WBR-471B"
-
-msgid "_122mm_UBR-471P_PB"
-msgstr "WBR-471BP"
-
 msgid "_122mm_UBR-471_PB"
 msgstr "BR-471PB"
 
 msgid "_122mm_UBR-471_PBP"
 msgstr "WBR-471PB"
 
-msgid "_122mm_UOF-471P_P"
-msgstr "WOF-471P"
-
 msgid "_122mm_UOF-471_P"
 msgstr "OF-471P"
+
+msgid "_122mm_WBR_471B"
+msgstr "WBR-471B"
+
+msgid "_122mm_WBR_471BP"
+msgstr "WBR-471BP"
+
+msgid "_122mm_WBR_471BP_53TP"
+msgstr "WBR-471BP (53TP)"
 
 msgid "_122mm_WBR_471BP_W"
 msgstr "WBR-471BP (W)"
 
+msgid "_122mm_WBR_471B_53TP"
+msgstr "WBR-471B (53TP)"
+
 msgid "_122mm_WBR_471B_W"
 msgstr "WBR-471B (W)"
+
+msgid "_122mm_WOF_471P"
+msgstr "WOF-471P"
+
+msgid "_122mm_WOF_471P_53TP"
+msgstr "WOF-471P (53TP)"
 
 msgid "_122mm_WOF_471P_W"
 msgstr "WOF-471P (W)"
@@ -1500,6 +1717,9 @@ msgstr "122 mm armata wz.43/50"
 msgid "_122mm_wz_53"
 msgstr "122 mm wz. 53"
 
+msgid "_122mm_wz_53_53TP"
+msgstr "122 mm wz. 53 (53TP)"
+
 msgid "_130mm_AZ_OF_46"
 msgstr "AZ-OF-46"
 
@@ -1515,13 +1735,25 @@ msgstr "130 mm R 14 wz. 56"
 msgid "_152mm_J_2"
 msgstr "152 mm J 2"
 
+msgid "_152mm_J_2_CFE_A"
+msgstr "152 mm J 2"
+
 msgid "_152mm_pocisk_kumulacyjny"
+msgstr "Pocisk kumulacyjny"
+
+msgid "_152mm_pocisk_kumulacyjny_CFE_A"
 msgstr "Pocisk kumulacyjny"
 
 msgid "_152mm_pocisk_przeciwpancerny"
 msgstr "Pocisk przeciwpancerny"
 
+msgid "_152mm_pocisk_przeciwpancerny_CFE_A"
+msgstr "Pocisk przeciwpancerny"
+
 msgid "_152mm_pocisk_wybuchowy"
+msgstr "Pocisk wybuchowy"
+
+msgid "_152mm_pocisk_wybuchowy_CFE_A"
 msgstr "Pocisk wybuchowy"
 
 msgid "_155_mm_PK_40"
@@ -1557,14 +1789,26 @@ msgstr "Ulepszony z pociskiem wybuchowym B"
 msgid "_37mm_APCR_Bofors"
 msgstr "37 mm APCR Bofors"
 
+msgid "_37mm_APCR_Bofors_7TP"
+msgstr "APCR Bofors (7TP)"
+
 msgid "_37mm_AP_Bofors"
 msgstr "37 mm AP Bofors"
+
+msgid "_37mm_AP_Bofors_7TP"
+msgstr "AP Bofors (7TP)"
 
 msgid "_37mm_Bofors_wz_37"
 msgstr "37 mm Bofors wz. 37"
 
+msgid "_37mm_Bofors_wz_37_7TP"
+msgstr "37 mm Bofors wz. 37 (7TP)"
+
 msgid "_37mm_HE_Bofors"
 msgstr "37 mm HE Bofors"
+
+msgid "_37mm_HE_Bofors_7TP"
+msgstr "HE Bofors (7TP)"
 
 msgid "_40mm_AP"
 msgstr "40 mm AP"
@@ -1623,47 +1867,68 @@ msgstr "47 mm kan m/38 strv"
 msgid "_47mm_sgr_m_38"
 msgstr "sgr m/38"
 
+msgid "_47mm_sgr_m_38_10TP"
+msgstr "sgr m/38 (10TP)"
+
 msgid "_47mm_slpprj_m_38"
 msgstr "slpprj m/38"
+
+msgid "_47mm_slpprj_m_38_10TP"
+msgstr "slpprj m/38 (10TP)"
 
 msgid "_47mm_slpprj_m_39"
 msgstr "slpprj m/39"
 
-msgid "_75mm_APCBC_K"
-msgstr "Pocisk przeciwpancerny wz. 97"
+msgid "_47mm_slpprj_m_39_10TP"
+msgstr "slpprj m/39 (10TP)"
 
 msgid "_75mm_KwK_L70"
 msgstr "7,5 cm Kw.K. 42 L/70"
 
-msgid "_75mm_Pzgr.40L"
-msgstr "Pzgr 40 L"
+msgid "_75mm_Pocisk_kumulacyjny_wz_97"
+msgstr "Pocisk kumulacyjny wz. 97"
 
-msgid "_75mm_Pzgr.40L_K"
+msgid "_75mm_Pocisk_podkalibrowy_wz_22_24"
+msgstr "Pocisk podkalibrowy wz. 22/24"
+
+msgid "_75mm_Pocisk_podkalibrowy_wz_36_37"
 msgstr "Pocisk podkalibrowy wz. 36/37"
 
-msgid "_75mm_Pzgr.40_K"
+msgid "_75mm_Pocisk_podkalibrowy_wz_36_37_DS"
+msgstr "Pocisk podkalibrowy wz. 36/37 (DS)"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_22_24"
+msgstr "Pocisk przeciwpancerny wz. 22/24"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_36_37"
+msgstr "Pocisk przeciwpancerny wz. 36/37"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_36_37_DS"
+msgstr "Pocisk przeciwpancerny wz. 36/37 (DS)"
+
+msgid "_75mm_Pocisk_przeciwpancerny_wz_97"
+msgstr "Pocisk przeciwpancerny wz. 97"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_22_24"
+msgstr "Pocisk wybuchowy wz. 22/24"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_36_37"
+msgstr "Pocisk wybuchowy wz. 36/37"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_36_37_DS"
+msgstr "Pocisk wybuchowy wz. 36/37 (DS)"
+
+msgid "_75mm_Pocisk_wybuchowy_wz_97"
+msgstr "Pocisk wybuchowy wz. 97"
+
+msgid "_75mm_Pzgr.40L"
 msgstr "Pzgr 40 L"
 
 msgid "_75mm_Pzgr39L"
 msgstr "Pzgr 39 L"
 
-msgid "_75mm_Pzgr39L_K"
-msgstr "Pocisk przeciwpancerny wz. 36/37"
-
-msgid "_75mm_Pzgr39_K"
-msgstr "Pzgr 39 L"
-
 msgid "_75mm_Sprg.18L"
 msgstr "Sprgr 19 L"
-
-msgid "_75mm_Sprg.18L_K"
-msgstr "Pocisk wybuchowy wz. 36/37"
-
-msgid "_75mm_Sprg.18_K"
-msgstr "Pocisk wybuchowy wz. 97"
-
-msgid "_75mm_Sprg.18_K2"
-msgstr "Sprgr 18 LM"
 
 msgid "_75mm_pocisk_podkalibrowy_wz_36_37M"
 msgstr "Pocisk podkalibrowy wz. 36/37M"
@@ -1687,13 +1952,16 @@ msgid "_75mm_wz_1897"
 msgstr "75mm wz. 1897"
 
 msgid "_75mm_wz_22_24"
-msgstr "75mm wz 22/24"
+msgstr "75 mm wz. 22/24"
 
 msgid "_75mm_wz_36_37"
 msgstr "75 mm wz. 36/37"
 
 msgid "_75mm_wz_36_37M"
 msgstr "75 mm wz. 36/37M"
+
+msgid "_75mm_wz_36_37_DS"
+msgstr "75 mm wz. 36/37 (DS)"
 
 msgid "_75mm_wz_36_37_G2_APCR_SH"
 msgstr "APCR wz.36/37"
@@ -1719,14 +1987,32 @@ msgstr "WOF-365BM"
 msgid "_85mm_ZiS_S-53_B"
 msgstr "85 mm ZiS-S-53"
 
-msgid "_90mm_AP"
-msgstr "Pocisk przeciwpancerny wz. 39/40"
+msgid "_90mm_Pocisk_podkalibrowy_wz_39_40_40TP"
+msgstr "Pocisk podkalibrowy wz. 39/40 (40TP)"
 
-msgid "_90mm_APCR"
-msgstr "Pocisk podkalibrowy wz. 39/40"
+msgid "_90mm_Pocisk_podkalibrowy_wz_39_40_44"
+msgstr "Pocisk podkalibrowy wz. 39/40 (44)"
 
-msgid "_90mm_HE"
-msgstr "Pocisk wybuchowy wz. 39/40"
+msgid "_90mm_Pocisk_podkalibrowy_wz_39_40_BUGI"
+msgstr "Pocisk podkalibrowy wz. 39/40 (BUGI)"
+
+msgid "_90mm_Pocisk_przeciwpancerny_wz_39_40_40TP"
+msgstr "Pocisk przeciwpancerny wz. 39/40 (40TP)"
+
+msgid "_90mm_Pocisk_przeciwpancerny_wz_39_40_44"
+msgstr "Pocisk przeciwpancerny wz. 39/40 (44)"
+
+msgid "_90mm_Pocisk_przeciwpancerny_wz_39_40_BUGI"
+msgstr "Pocisk przeciwpancerny wz. 39/40 (BUGI)"
+
+msgid "_90mm_Pocisk_wybuchowy_wz_39_30_BUGI"
+msgstr "Pocisk wybuchowy wz. 39/40 (BUGI)"
+
+msgid "_90mm_Pocisk_wybuchowy_wz_39_40_40TP"
+msgstr "Pocisk wybuchowy wz. 39/40 (40TP)"
+
+msgid "_90mm_Pocisk_wybuchowy_wz_39_40_44"
+msgstr "Pocisk wybuchowy wz. 39/40 (44)"
 
 msgid "_90mm_armata_wz_39_44"
 msgstr "90 mm armata wz. 39/44"
@@ -1746,17 +2032,26 @@ msgstr "90 mm armata wz.46"
 msgid "_90mm_pocisk_podkalibrowy_wz_39"
 msgstr "Pocisk podkalibrowy wz. 39"
 
+msgid "_90mm_pocisk_podkalibrowy_wz_39_40"
+msgstr "Pocisk podkalibrowy wz. 39/40"
+
 msgid "_90mm_pocisk_podkalibrowy_wz_39_40M"
 msgstr "Pocisk podkalibrowy wz. 39/40M"
 
 msgid "_90mm_pocisk_przeciwpancerny_wz_39"
 msgstr "Pocisk przeciwpancerny wz. 39"
 
+msgid "_90mm_pocisk_przeciwpancerny_wz_39_40"
+msgstr "Pocisk przeciwpancerny wz. 39/40"
+
 msgid "_90mm_pocisk_przeciwpancerny_wz_39_40M"
 msgstr "Pocisk przeciwpancerny wz. 39/40M"
 
 msgid "_90mm_pocisk_wybuchowy_wz_39"
 msgstr "Pocisk wybuchowy wz. 39"
+
+msgid "_90mm_pocisk_wybuchowy_wz_39_40"
+msgstr "Pocisk wybuchowy wz. 39/40"
 
 msgid "_90mm_pocisk_wybuchowy_wz_39_40M"
 msgstr "Pocisk wybuchowy wz. 39/40M"
@@ -1767,11 +2062,14 @@ msgstr "90 mm wz. 39/40"
 msgid "_90mm_wz_39_40M"
 msgstr "90 mm wz. 39/40M"
 
+msgid "_90mm_wz_39_40_40TP"
+msgstr "90 mm wz. 39/40 (40TP)"
+
 msgid "_90mm_wz_39_90"
 msgstr "90 mm wz. 39-90"
 
+msgid "_90mm_wz_39_90_40"
+msgstr "90 mm wz. 39-90 (40)"
+
 msgid "_9RM"
 msgstr "9RM"
-
-msgid "_Gr_38_HL_A_K"
-msgstr "Pocisk kumulacyjny wz. 97"

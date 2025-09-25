@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/hangar_v4/Environment/hv4_026_Tank_GER_Tiger2/normal/lod4/hv4_026_Tank_GER_Tiger2_Hull_01</parent>
+	<extent>250.000000</extent>
+	<visibilityBox>
+		<min>-1.899672 -0.000000 -3.420843</min>
+		<max>1.895150 1.894766 3.948318</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/hangar_v4/Environment/hv4_026_Tank_GER_Tiger2/normal/lod3/hv4_026_Tank_GER_Tiger2_Hull_01</nodefullVisual>
+</root>

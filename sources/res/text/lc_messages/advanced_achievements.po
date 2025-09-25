@@ -58,6 +58,10 @@ msgstr ""
 msgid "description/Cz40_DBV_152"
 msgstr "Иметь в ангаре машину&nbsp;DBV-152 %(level)s&nbsp;уровня"
 
+msgid "description/F127_AMX_ELC_901"
+msgstr ""
+"Иметь в Ангаре машину&nbsp;AMX&nbsp;ELC&nbsp;901 %(level)s&nbsp;уровня"
+
 msgid "description/G104_Stug_IV"
 msgstr ""
 "Завершить первую операцию и получить машину StuG&nbsp;IV "
@@ -147,6 +151,9 @@ msgstr ""
 msgid "description/It21_Lion"
 msgstr "Иметь в Ангаре машину&nbsp;Lion %(level)s&nbsp;уровня"
 
+msgid "description/Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Иметь в Ангаре машину&nbsp;Ashbringer %(level)s&nbsp;уровня"
+
 msgid "description/Pl21_CS_63_OSP3"
 msgstr "Иметь в Ангаре машину&nbsp;Hurricane %(level)s&nbsp;уровня"
 
@@ -219,6 +226,11 @@ msgstr ""
 "Исследовать всю технику в ветке китайских тяжёлых танков во главе "
 "с&nbsp;BZ-75 %(level)s&nbsp;уровня"
 
+msgid "description/branch_china_Ch67_BZ_79"
+msgstr ""
+"Исследовать всю технику в ветке китайских тяжёлых танков во главе "
+"с&nbsp;BZ-79 %(level)s&nbsp;уровня"
+
 msgid "description/branch_czech_Cz04_T50_51"
 msgstr ""
 "Исследовать всю технику в ветке чехословацких средних танков во главе "
@@ -243,6 +255,16 @@ msgid "description/branch_france_F10_AMX_50B"
 msgstr ""
 "Исследовать всю технику в ветке французских тяжёлых танков во главе "
 "с&nbsp;AMX&nbsp;50&nbsp;B %(level)s&nbsp;уровня"
+
+msgid "description/branch_france_F135_AS_XX_40_t"
+msgstr ""
+"Исследовать всю технику в ветке французских средних танков во главе "
+"с&nbsp;AS-XX&nbsp;40&nbsp;t %(level)s&nbsp;уровня"
+
+msgid "description/branch_france_F136_AMX_67_Imbattable"
+msgstr ""
+"Исследовать всю технику в ветке французских тяжёлых танков во главе "
+"с&nbsp;AMX&nbsp;67&nbsp;Imbattable %(level)s&nbsp;уровня"
 
 msgid "description/branch_france_F18_Bat_Chatillon25t"
 msgstr ""
@@ -283,6 +305,26 @@ msgid "description/branch_germany_G134_PzKpfw_VII"
 msgstr ""
 "Исследовать всю технику в ветке немецких тяжёлых танков во главе "
 "с&nbsp;Pz.Kpfw.&nbsp;VII %(level)s&nbsp;уровня"
+
+msgid "description/branch_germany_G185_Leopard_120_Verbessert"
+msgstr ""
+"Исследовать всю технику в ветке немецких средних танков во главе "
+"с&nbsp;Leopard&nbsp;120&nbsp;Verbessert %(level)s&nbsp;уровня."
+
+msgid "description/branch_germany_G187_Taschenratte"
+msgstr ""
+"Исследовать всю технику в ветке немецких тяжёлых танков во главе "
+"с&nbsp;Taschenratte %(level)s&nbsp;уровня"
+
+msgid "description/branch_germany_G188_LeKpz_Borkenkafer"
+msgstr ""
+"Исследовать всю технику в ветке немецких лёгких танков во главе "
+"с&nbsp;leKpz&nbsp;Borkenkäfer %(level)s&nbsp;уровня"
+
+msgid "description/branch_germany_G189_Hirschkafer"
+msgstr ""
+"Исследовать всю технику в ветке немецких ПТ-САУ во главе с&nbsp;Hirschkäfer "
+"%(level)s&nbsp;уровня"
 
 msgid "description/branch_germany_G42_Maus"
 msgstr ""
@@ -364,6 +406,11 @@ msgstr ""
 "Исследовать всю технику в ветке польских ПТ-САУ во главе с&nbsp;NC&nbsp;70 "
 "Błyskawica %(level)s&nbsp;уровня"
 
+msgid "description/branch_poland_Pl37_CS_67_Szakal"
+msgstr ""
+"Исследовать всю технику в ветке польских средних танков во главе "
+"с&nbsp;CS-67&nbsp;Szakal %(level)s&nbsp;уровня"
+
 msgid "description/branch_sweden_S11_Strv_103B"
 msgstr ""
 "Исследовать всю технику в ветке шведских ПТ-САУ во главе с Strv&nbsp;103B "
@@ -379,6 +426,11 @@ msgstr ""
 "Исследовать всю технику в ветке шведских средних танков во главе с "
 "UDES&nbsp;15/16 %(level)s&nbsp;уровня"
 
+msgid "description/branch_sweden_S36_Strv_107_12"
+msgstr ""
+"Исследовать всю технику в ветке шведских ПТ-САУ во главе "
+"с&nbsp;Strv&nbsp;107-12 %(level)s&nbsp;уровня"
+
 msgid "description/branch_uk_GB100_Manticore"
 msgstr ""
 "Исследовать всю технику в ветке британских лёгких танков во главе с "
@@ -393,6 +445,16 @@ msgid "description/branch_uk_GB142_FV230_Canopener"
 msgstr ""
 "Исследовать всю технику в ветке британских тяжёлых танков во главе "
 "с&nbsp;FV230&nbsp;Canopener %(level)s&nbsp;уровня"
+
+msgid "description/branch_uk_GB147_FV4025_Contriver"
+msgstr ""
+"Исследовать всю технику в ветке британских тяжёлых танков во главе "
+"с&nbsp;FV4025&nbsp;Contriver %(level)s&nbsp;уровня"
+
+msgid "description/branch_uk_GB152_AT_FV230_Breaker"
+msgstr ""
+"Исследовать всю технику в ветке британских ПТ-САУ во главе с&nbsp;AT-"
+"FV230&nbsp;Breaker %(level)s&nbsp;уровня"
 
 msgid "description/branch_uk_GB31_Conqueror_Gun"
 msgstr ""
@@ -433,6 +495,16 @@ msgid "description/branch_usa_A143_M_V_Y"
 msgstr ""
 "Исследовать всю технику в ветке американских тяжёлых танков во главе "
 "с&nbsp;M-V-Y %(level)s&nbsp;уровня"
+
+msgid "description/branch_usa_A182_T803"
+msgstr ""
+"Исследовать всю технику в ветке американских тяжёлых танков во главе "
+"с&nbsp;T803 %(level)s&nbsp;уровня"
+
+msgid "description/branch_usa_A183_XM69_Hacker"
+msgstr ""
+"Исследовать всю технику в ветке американских средних танков во главе "
+"с&nbsp;XM69&nbsp;Hacker %(level)s&nbsp;уровня"
 
 msgid "description/branch_usa_A38_T92"
 msgstr ""
@@ -493,6 +565,16 @@ msgid "description/branch_ussr_R169_ST_II"
 msgstr ""
 "Исследовать всю технику в ветке советских тяжёлых танков во главе с&nbsp;СТ-"
 "II %(level)s&nbsp;уровня"
+
+msgid "description/branch_ussr_R228_KR_1"
+msgstr ""
+"Исследовать всю технику в ветке советских тяжёлых танков во главе "
+"с&nbsp;КР-1 %(level)s&nbsp;уровня"
+
+msgid "description/branch_ussr_R230_Object_432U"
+msgstr ""
+"Исследовать всю технику в ветке советских средних танков во главе "
+"с&nbsp;Объектом&nbsp;432У %(level)s&nbsp;уровня"
 
 msgid "description/branch_ussr_R45_IS_7"
 msgstr ""
@@ -606,8 +688,8 @@ msgstr ""
 
 msgid "description/personal_missions"
 msgstr ""
-"Получить всю технику в кампаниях «Долгожданное подкрепление» и «Второй "
-"фронт»"
+"Получить всю технику в кампаниях «Долгожданное подкрепление», «Второй фронт»"
+" и «Сектор 3»"
 
 msgid "description/poland"
 msgstr "Исследовать всю технику в Дереве исследований Польши."
@@ -630,6 +712,24 @@ msgid "description/sweden_first_steps"
 msgstr ""
 "Исследовать как минимум одну машину V&nbsp;уровня в Дереве исследований "
 "Швеции"
+
+msgid "description/third_campaign"
+msgstr "Получить всю технику в кампании «Сектор 3»"
+
+msgid "description/third_campaign_first_operation"
+msgstr ""
+"Завершить первую операцию и получить машину&nbsp;Windhund "
+"%(level)s&nbsp;уровня"
+
+msgid "description/third_campaign_second_operation"
+msgstr ""
+"Завершить вторую операцию и получить машину&nbsp;Dravec "
+"%(level)s&nbsp;уровня"
+
+msgid "description/third_campaign_third_operation"
+msgstr ""
+"Завершить финальную операцию и получить машину&nbsp;Black Rock "
+"%(level)s&nbsp;уровня."
 
 msgid "description/total_2D_style_count"
 msgid_plural "plural/description/total_2D_style_count"
@@ -754,7 +854,7 @@ msgid "name/A100_T49"
 msgstr "Т49"
 
 msgid "name/A102_T28_concept"
-msgstr "Операция&nbsp;«T28 Concept»"
+msgstr "Операция «T28&nbsp;HTC»"
 
 msgid "name/A10_M6"
 msgstr "M6"
@@ -803,6 +903,12 @@ msgstr "Patton the&nbsp;Tank"
 
 msgid "name/A174_T57_58_Rush_Ep1"
 msgstr "Stinger"
+
+msgid "name/A182_T803"
+msgstr "T803"
+
+msgid "name/A183_XM69_Hacker"
+msgstr "XM69&nbsp;Hacker"
 
 msgid "name/A31_M36_Slagger"
 msgstr "M36 Jackson"
@@ -957,6 +1063,9 @@ msgstr "BZ-58"
 msgid "name/Ch52_WZ_122_6_F3"
 msgstr "116-F3"
 
+msgid "name/Ch67_BZ_79"
+msgstr "BZ-79"
+
 msgid "name/Cz02_TVP_T50"
 msgstr "Škoda T&nbsp;50"
 
@@ -1031,6 +1140,15 @@ msgstr "AMX&nbsp;50&nbsp;B"
 
 msgid "name/F110_Lynx_6x6"
 msgstr "Panhard AML Lynx&nbsp;6x6"
+
+msgid "name/F127_AMX_ELC_901"
+msgstr "AMX ELC 901"
+
+msgid "name/F135_AS_XX_40_t"
+msgstr "AS-XX&nbsp;40&nbsp;t"
+
+msgid "name/F136_AMX_67_Imbattable"
+msgstr "AMX&nbsp;67&nbsp;Imbattable"
 
 msgid "name/F15_AMX_12t"
 msgstr "AMX&nbsp;12&nbsp;t"
@@ -1148,6 +1266,18 @@ msgstr "Pz.Kpfw.&nbsp;IV Ausf.&nbsp;F2"
 
 msgid "name/G17_JagdPzIV"
 msgstr "Jagdpanzer&nbsp;IV"
+
+msgid "name/G185_Leopard_120_Verbessert"
+msgstr "Leopard&nbsp;120&nbsp;Verbessert"
+
+msgid "name/G187_Taschenratte"
+msgstr "Taschenratte"
+
+msgid "name/G188_LeKpz_Borkenkafer"
+msgstr "leKpz&nbsp;Borkenkäfer"
+
+msgid "name/G189_Hirschkafer"
+msgstr "Hirschkäfer"
 
 msgid "name/G18_JagdPanther"
 msgstr "Jagdpanther"
@@ -1314,8 +1444,14 @@ msgstr "FV229&nbsp;Contender"
 msgid "name/GB146_Gabler_s_Destroyer"
 msgstr "Gabler’s&nbsp;Destroyer"
 
+msgid "name/GB147_FV4025_Contriver"
+msgstr "FV4025&nbsp;Contriver"
+
 msgid "name/GB148_FV227_Conceiver"
 msgstr "FV227&nbsp;Conceiver"
+
+msgid "name/GB152_AT_FV230_Breaker"
+msgstr "AT-FV230&nbsp;Breaker"
 
 msgid "name/GB20_Crusader"
 msgstr "Crusader"
@@ -1515,6 +1651,9 @@ msgstr "53TP Markowskiego"
 msgid "name/Pl15_60TP_Lewandowskiego"
 msgstr "60TP Lewandowskiego"
 
+msgid "name/Pl15_60TP_Lewandowskiego_CFE_A"
+msgstr "Ashbringer"
+
 msgid "name/Pl18_BUGI"
 msgstr "B.U.G.I."
 
@@ -1547,6 +1686,9 @@ msgstr "SDP&nbsp;57 Gowika"
 
 msgid "name/Pl32_SDP_Wz_44"
 msgstr "SDP&nbsp;44 Burza"
+
+msgid "name/Pl37_CS_67_Szakal"
+msgstr "CS-67&nbsp;Szakal"
 
 msgid "name/R01_IS"
 msgstr "ИС"
@@ -1646,6 +1788,12 @@ msgstr "ИС-3"
 
 msgid "name/R20_T_44"
 msgstr "Т-44"
+
+msgid "name/R228_KR_1"
+msgstr "КР-1"
+
+msgid "name/R230_Object_432U"
+msgstr "Объект&nbsp;432У"
 
 msgid "name/R23_T_43"
 msgstr "Т-43"
@@ -1776,6 +1924,9 @@ msgstr "UDES&nbsp;15/16"
 msgid "name/S29_UDES_14_5"
 msgstr "UDES&nbsp;14 Alt&nbsp;5"
 
+msgid "name/S36_Strv_107_12"
+msgstr "Strv&nbsp;107-12"
+
 msgid "name/branch_china_Ch19_121"
 msgstr "Китай:&nbsp;121"
 
@@ -1791,6 +1942,9 @@ msgstr "Китай: WZ-111 model&nbsp;5A"
 msgid "name/branch_china_Ch48_BZ_75"
 msgstr "Китай: BZ-75"
 
+msgid "name/branch_china_Ch67_BZ_79"
+msgstr "Китай: BZ-79"
+
 msgid "name/branch_czech_Cz04_T50_51"
 msgstr "Чехословакия: TVP&nbsp;T&nbsp;50/51"
 
@@ -1805,6 +1959,12 @@ msgstr "Франция: Panhard EBR&nbsp;105"
 
 msgid "name/branch_france_F10_AMX_50B"
 msgstr "Франция: AMX&nbsp;50&nbsp;B"
+
+msgid "name/branch_france_F135_AS_XX_40_t"
+msgstr "Франция: AS-XX&nbsp;40&nbsp;t"
+
+msgid "name/branch_france_F136_AMX_67_Imbattable"
+msgstr "Франция: AMX&nbsp;67&nbsp;Imbattable"
 
 msgid "name/branch_france_F18_Bat_Chatillon25t"
 msgstr "Франция: Bat.-Châtillon&nbsp;25&nbsp;t"
@@ -1829,6 +1989,18 @@ msgstr "Германия: Rheinmetall Panzerwagen"
 
 msgid "name/branch_germany_G134_PzKpfw_VII"
 msgstr "Германия: Pz.Kpfw.&nbsp;VII"
+
+msgid "name/branch_germany_G185_Leopard_120_Verbessert"
+msgstr "Германия: Leopard&nbsp;120&nbsp;Verbessert"
+
+msgid "name/branch_germany_G187_Taschenratte"
+msgstr "Германия: Taschenratte"
+
+msgid "name/branch_germany_G188_LeKpz_Borkenkafer"
+msgstr "Германия: leKpz&nbsp;Borkenkäfer"
+
+msgid "name/branch_germany_G189_Hirschkafer"
+msgstr "Германия: Hirschkäfer"
 
 msgid "name/branch_germany_G42_Maus"
 msgstr "Германия: Maus"
@@ -1878,6 +2050,9 @@ msgstr "Польша: CS-63"
 msgid "name/branch_poland_Pl29_NC_Wz_70T"
 msgstr "Польша: NC&nbsp;70 Błyskawica"
 
+msgid "name/branch_poland_Pl37_CS_67_Szakal"
+msgstr "Польша: CS-67&nbsp;Szakal"
+
 msgid "name/branch_sweden_S11_Strv_103B"
 msgstr "Швеция: Strv&nbsp;103B"
 
@@ -1887,6 +2062,9 @@ msgstr "Швеция: Kranvagn"
 msgid "name/branch_sweden_S28_UDES_15_16"
 msgstr "Швеция: UDES&nbsp;15/16"
 
+msgid "name/branch_sweden_S36_Strv_107_12"
+msgstr "Швеция: Strv&nbsp;107-12"
+
 msgid "name/branch_uk_GB100_Manticore"
 msgstr "Великобритания: Manticore"
 
@@ -1895,6 +2073,12 @@ msgstr "Великобритания: Concept&nbsp;No.&nbsp;5"
 
 msgid "name/branch_uk_GB142_FV230_Canopener"
 msgstr "Великобритания: FV230&nbsp;Canopener"
+
+msgid "name/branch_uk_GB147_FV4025_Contriver"
+msgstr "Великобритания: FV4025&nbsp;Contriver"
+
+msgid "name/branch_uk_GB152_AT_FV230_Breaker"
+msgstr "Великобритания: AT-FV230&nbsp;Breaker"
 
 msgid "name/branch_uk_GB31_Conqueror_Gun"
 msgstr "Великобритания: Conqueror Gun Carriage"
@@ -1919,6 +2103,12 @@ msgstr "США: M48A5 Patton"
 
 msgid "name/branch_usa_A143_M_V_Y"
 msgstr "США: M-V-Y"
+
+msgid "name/branch_usa_A182_T803"
+msgstr "США: T803"
+
+msgid "name/branch_usa_A183_XM69_Hacker"
+msgstr "США: XM69&nbsp;Hacker"
 
 msgid "name/branch_usa_A38_T92"
 msgstr "США: T92&nbsp;HMC"
@@ -1955,6 +2145,12 @@ msgstr "СССР: Объект&nbsp;277"
 
 msgid "name/branch_ussr_R169_ST_II"
 msgstr "СССР: СТ-II"
+
+msgid "name/branch_ussr_R228_KR_1"
+msgstr "СССР: КР-1"
+
+msgid "name/branch_ussr_R230_Object_432U"
+msgstr "СССР: Объект&nbsp;432У"
 
 msgid "name/branch_ussr_R45_IS_7"
 msgstr "СССР: ИС-7"
@@ -2057,6 +2253,18 @@ msgstr "Швеция: ранняя эра"
 
 msgid "name/sweden_first_steps"
 msgstr "Швеция: первые шаги"
+
+msgid "name/third_campaign"
+msgstr "Сектор 3"
+
+msgid "name/third_campaign_first_operation"
+msgstr "Операция «Windhund»"
+
+msgid "name/third_campaign_second_operation"
+msgstr "Операция «Dravec»"
+
+msgid "name/third_campaign_third_operation"
+msgstr "Операция «Black Rock»"
 
 msgid "name/total_2D_style_count"
 msgstr "2D-стили"

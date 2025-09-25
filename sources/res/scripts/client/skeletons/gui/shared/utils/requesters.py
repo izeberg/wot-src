@@ -219,6 +219,10 @@ class IStatsRequester(IRequester):
         raise NotImplementedError
 
     @property
+    def prestigeMilestonesAchieved(self):
+        raise NotImplementedError
+
+    @property
     def applyAdditionalXPCount(self):
         raise NotImplementedError
 

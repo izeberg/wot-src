@@ -140,6 +140,7 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env414_Pole_Fall_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env414_Pole_Touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env418_OldGMercedes4.vfx</fn_effect_bin>
@@ -241,9 +242,10 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/08_ruinberg_firesmoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke_transparent.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_006_KitCrashFactory_02.eff</fn_effect_bin>
@@ -269,6 +271,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env409_AdvertisingPillar.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Fall_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes4.eff</fn_effect_bin>
@@ -531,6 +534,7 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env414_Pole_Fall_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env414_Pole_Touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env418_OldGMercedes4.vfx</fn_effect_bin>
@@ -632,9 +636,10 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/env_housesmoke_02.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/interior/08_ruinberg_firesmoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/env_housesmoke_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/08_ruinberg_fires_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/08_ruinberg_firesmoke_transparent.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/99_poland_smoke_firegrass_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_UNI_006_KitCrashFactory_02.eff</fn_effect_bin>
@@ -660,6 +665,7 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env409_AdvertisingPillar.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Fall_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Touchdown.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env418_OldGMercedes4.eff</fn_effect_bin>

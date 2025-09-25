@@ -1,10 +1,22 @@
+import typing
 from skeletons.gui.game_control import IGameController
+if typing.TYPE_CHECKING:
+    from typing import Dict
+    from Event import Event
 
 class IBRProgressionOnTokensController(IGameController):
     progressionToken = ''
     PROGRESSION_COMPLETE_TOKEN = ''
     onProgressPointsUpdated = None
     onSettingsChanged = None
+
+    @property
+    def isEnabled(self):
+        raise NotImplementedError
+
+    @property
+    def isFinished(self):
+        raise NotImplementedError
 
     def init(self):
         raise NotImplementedError
@@ -24,22 +36,8 @@ class IBRProgressionOnTokensController(IGameController):
     def getCurPoints(self):
         raise NotImplementedError
 
-    def getCurrentStageData(self):
-        raise NotImplementedError
-
-    def getProgressionLevelsData(self):
-        raise NotImplementedError
-
     def getProgessionPointsData(self):
         raise NotImplementedError
 
     def getProgressionData(self):
-        raise NotImplementedError
-
-    @property
-    def isEnabled(self):
-        raise NotImplementedError
-
-    @property
-    def isFinished(self):
         raise NotImplementedError

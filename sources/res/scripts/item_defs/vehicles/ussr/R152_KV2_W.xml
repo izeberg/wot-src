@@ -1832,14 +1832,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10600</weight>
-			<maxLoad>60800</maxLoad>
 			<terrainResistance>
 				1.4 1.6 2.8
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>37500</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>20</rotationSpeed>
+			<rotationSpeed>24</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.26

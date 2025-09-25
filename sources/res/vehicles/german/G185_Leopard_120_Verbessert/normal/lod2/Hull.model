@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G185_Leopard_120_Verbessert/normal/lod2/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G185_Leopard_120_Verbessert/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.701276 -0.645492 -3.606891</min>
+		<max>1.701112 0.747942 3.459546</max>
+	</visibilityBox>
+</root>

@@ -28,10 +28,17 @@ package net.wg.infrastructure.base
          this.stageResizeHandler(null);
       }
       
-      override public function set wrapper(param1:IWrapper) : void
+      override protected function onDispose() : void
       {
-         super.wrapper = param1;
-         this.initLayout();
+         App.stage.removeEventListener(Event.RESIZE,this.stageResizeHandler);
+         this._popoverLayout = null;
+         super.onDispose();
+      }
+      
+      public function as_setPositionKeyPoint(param1:Number, param2:Number) : void
+      {
+         this._popoverLayout.positionKeyPoint = new Point(param1,param2);
+         BaseViewWrapper(wrapper).invalidateLayout();
       }
       
       protected function initLayout() : void
@@ -59,6 +66,8 @@ package net.wg.infrastructure.base
          if(_loc1_ is BackportPopOverCaller)
          {
             _loc5_ = new Point(_loc4_.x * App.appScale,_loc4_.y * App.appScale);
+            this.popoverLayout.preferredLayout = BackportPopOverCaller(_loc1_).preferredLayout;
+            this.popoverLayout.changeableArrowDirection = true;
          }
          else
          {
@@ -67,29 +76,22 @@ package net.wg.infrastructure.base
          this.as_setPositionKeyPoint((_loc5_.x / App.appScale >> 0) + _loc2_,(_loc5_.y / App.appScale >> 0) + _loc3_);
       }
       
-      private function stageResizeHandler(param1:Event) : void
+      override public function set wrapper(param1:IWrapper) : void
       {
-         this._popoverLayout.stageDimensions = new Point(App.stage.stageWidth / App.appScale >> 0,App.stage.stageHeight / App.appScale >> 0);
-         this.updateCallerGlobalPosition();
-         BaseViewWrapper(wrapper).invalidateLayout();
-      }
-      
-      public function as_setPositionKeyPoint(param1:Number, param2:Number) : void
-      {
-         this._popoverLayout.positionKeyPoint = new Point(param1,param2);
-         BaseViewWrapper(wrapper).invalidateLayout();
-      }
-      
-      override protected function onDispose() : void
-      {
-         App.stage.removeEventListener(Event.RESIZE,this.stageResizeHandler);
-         this._popoverLayout = null;
-         super.onDispose();
+         super.wrapper = param1;
+         this.initLayout();
       }
       
       public function get popoverLayout() : SmartPopOverExternalLayout
       {
          return this._popoverLayout;
+      }
+      
+      private function stageResizeHandler(param1:Event) : void
+      {
+         this._popoverLayout.stageDimensions = new Point(App.stage.stageWidth / App.appScale >> 0,App.stage.stageHeight / App.appScale >> 0);
+         this.updateCallerGlobalPosition();
+         BaseViewWrapper(wrapper).invalidateLayout();
       }
    }
 }

@@ -3,6 +3,7 @@ package net.wg.gui.lobby.missions.data
    import net.wg.data.constants.Errors;
    import net.wg.gui.components.paginator.vo.ToolTipVO;
    import net.wg.gui.lobby.components.data.BaseMissionDetailedViewVO;
+   import net.wg.gui.lobby.userMissions.data.MissionConditionsContainerVO;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    import scaleform.clik.data.DataProvider;
    import scaleform.clik.interfaces.IDataProvider;

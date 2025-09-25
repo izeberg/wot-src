@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 import typing
+from future.utils import itervalues
 from constants import NEW_PERK_SYSTEM as NPS
 from frameworks.wulf import WindowLayer
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
@@ -67,8 +69,8 @@ def isEquipmentSame(equipment1, equipment2):
     if len(equipment1) != len(equipment2):
         return False
     else:
-        for i in xrange(len(equipment1)):
-            if equipment1[i] != equipment2[i]:
+        for i, value in enumerate(equipment1):
+            if value != equipment2[i]:
                 return False
 
         return True
@@ -82,7 +84,7 @@ def getCmpConfiguratorMainView(appLoader=None):
 
 @dependency.replace_none_kwargs(c11nService=ICustomizationService)
 def getSuitableCamouflage(vehicle, c11nService=None):
-    return first(c11nService.getCamouflages(vehicle=vehicle).itervalues())
+    return first(itervalues(c11nService.getCamouflages(vehicle=vehicle)))
 
 
 def isCamouflageSet(vehicle):

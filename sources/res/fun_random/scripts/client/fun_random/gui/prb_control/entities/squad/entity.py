@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, account_helpers
 from UnitBase import UNIT_ERROR
 from constants import PREBATTLE_TYPE, QUEUE_TYPE

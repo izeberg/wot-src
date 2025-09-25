@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "dealPanel/applyToType"
+msgstr "Применить для всех {{icon}} {{type}}"
+
+msgid "header/points"
+msgstr "Очки боевых резервов: {{value}}"
+
+msgid "header/title"
+msgstr "БОЕВЫЕ РЕЗЕРВЫ"
+
+msgid "infoPanel/category/firesupport"
+msgstr "Ударные"
+
+msgid "infoPanel/category/reconnaissance"
+msgstr "Разведывательные"
+
+msgid "infoPanel/category/tactics"
+msgstr "Тактические"
+
+msgid "infoPanel/category/title"
+msgstr "Категория: {{icon}} {{category}}"
+
+msgid "infoPanel/description/locked"
+msgstr ""
+"Покупка боевого резерва в сценарии {{@ colorLegacy 'FFE4C0'}}«Воля "
+"случая»{{/}} повысит его уровень на 1 и откроет возможность его усиления до "
+"уровня {{@ colorLegacy 'FFE4C0'}}IV{{/}}."
+
+msgid "infoPanel/description/unlocked"
+msgstr ""
+"В сценарии {{@ colorLegacy 'FFE4C0'}}«Воля случая»{{/}} вероятность выдачи "
+"каждого установленного перед боем резерва повышается на {{@ colorLegacy "
+"'FFE4C0'}}10%{{/}}."
+
+msgid "infoPanel/level"
+msgstr "Уровень:"
+
+msgid "infoPanel/param/valueTemplate/default"
+msgstr "{{sign}}{{value}}"
+
+msgid "infoPanel/param/valueTemplate/meters"
+msgstr "{{sign}}{{value}}м"
+
+msgid "infoPanel/param/valueTemplate/percents"
+msgstr "{{sign}}{{value}}%"
+
+msgid "infoPanel/param/valueTemplate/percentsBySecond"
+msgstr "{{sign}}{{value}}%/с"
+
+msgid "infoPanel/param/valueTemplate/seconds"
+msgstr "{{sign}}{{value}}с"
+
+msgid "infoPanel/paramDiff"
+msgstr "({{diff}})"
+
+msgid "infoPanel/status/locked"
+msgstr "Боевой резерв не куплен"
+
+msgid "infoPanel/status/unlocked"
+msgstr "Боевой резерв куплен"

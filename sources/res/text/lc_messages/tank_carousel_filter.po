@@ -109,6 +109,9 @@ msgstr "Поиск по названию"
 msgid "popover/label/specials"
 msgstr "Особые"
 
+msgid "popover/label/vehicleRole"
+msgstr "Роль"
+
 msgid "popover/label/vehicleTypes"
 msgstr "Тип"
 
@@ -125,8 +128,7 @@ msgstr "Скрыть неподходящие машины"
 
 msgid "tooltip/bonus/body"
 msgstr ""
-"Включить/отключить отображение техники с активным коэффициентом опыта "
-"x%(multiplier)s."
+"Включить/отключить отображение техники с активным коэффициентом опыта."
 
 msgid "tooltip/bonus/header"
 msgstr "Aкционный опыт"
@@ -138,13 +140,6 @@ msgstr ""
 
 msgid "tooltip/clanRented/header"
 msgstr "Арендная техника для клановых боёв"
-
-msgid "tooltip/comp7/body"
-msgstr ""
-"Включить/отключить отображение техники, подходящей для режима «Натиск»."
-
-msgid "tooltip/comp7/header"
-msgstr "Техника режима «Натиск»"
 
 msgid "tooltip/crystals/body"
 msgstr ""
@@ -164,8 +159,9 @@ msgstr ""
 
 msgid "tooltip/elite/body"
 msgstr ""
-"Включить/отключить отображение техники, на которой исследованы все модули и "
-"следующие в ветке развития машины."
+"Включить/отключить отображение техники, для которой исследованы все "
+"доступные модули, улучшения и ветки развития, включая все машины на "
+"следующем уровне."
 
 msgid "tooltip/elite/header"
 msgstr "Элитная техника"

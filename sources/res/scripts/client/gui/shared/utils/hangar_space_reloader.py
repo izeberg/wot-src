@@ -37,7 +37,7 @@ class HangarSpaceReloader(IHangarSpaceReloader):
         self.__loadingSpacePath = None
         return
 
-    def changeHangarSpace(self, spaceName, visibilityMask, waitingMessage=None, backgroundImage=None, actionChange=False):
+    def changeHangarSpace(self, spaceName, visibilityMask, waitingMessage=None, backgroundImage=None, actionChange=False, force=False):
         errCode = ErrorFlags.NONE
         if not spaceName:
             _logger.error('Invalid space name: the name cannot be empty.')
@@ -45,30 +45,34 @@ class HangarSpaceReloader(IHangarSpaceReloader):
              False, ErrorFlags.INVALID_NAME)
         else:
             reloadValid = True
-            if self.__loadingSpacePath is not None:
-                _logger.error('Failed to load space "%s", because another space is loading: %s', spaceName, self.__loadingSpacePath)
-                reloadValid = False
-                errCode |= ErrorFlags.ALREADY_PROCESSING_RELOAD
-            if not self.hangarSpace.spaceInited:
-                _logger.error('Failed to load space "%s", because hangar is not inited.', spaceName)
-                reloadValid = False
-                errCode |= ErrorFlags.HANGAR_NOT_READY
-            if self.hangarSpace.spaceLoading():
-                _logger.error('Failed to load space "%s", because another space is loading.', spaceName)
-                reloadValid = False
-                errCode |= ErrorFlags.WAITING_FOR_SPACE
-            hangarSpacePath = self.hangarSpace.spacePath
-            if self.hangarSpace.spaceInited and hangarSpacePath is None:
-                _logger.error('Abnormal behaviour: hangarSpace.spacePath is not initialized')
-                reloadValid = False
-                errCode |= ErrorFlags.SPACE_PATH_NOT_INITED
-            spacePath = self.buildHangarSpacePath(spaceName)
-            if spacePath == hangarSpacePath:
-                _logger.warning('No need to load space "%s", because it is already loaded', spaceName)
-                reloadValid = False
-                errCode |= ErrorFlags.DUPLICATE_REQUEST
-            if not reloadValid:
-                return (reloadValid, errCode)
+            if force and self.hangarSpace.spaceLoading():
+                _logger.info('Stop loading space "%s" to load another space "%s"', self.__loadingSpacePath, spaceName)
+                self.hangarSpace.destroy()
+            else:
+                if self.__loadingSpacePath is not None:
+                    _logger.error('Failed to load space "%s", because another space is loading: %s', spaceName, self.__loadingSpacePath)
+                    reloadValid = False
+                    errCode |= ErrorFlags.ALREADY_PROCESSING_RELOAD
+                if not self.hangarSpace.spaceInited:
+                    _logger.error('Failed to load space "%s", because hangar is not inited.', spaceName)
+                    reloadValid = False
+                    errCode |= ErrorFlags.HANGAR_NOT_READY
+                if self.hangarSpace.spaceLoading():
+                    _logger.error('Failed to load space "%s", because another space is loading.', spaceName)
+                    reloadValid = False
+                    errCode |= ErrorFlags.WAITING_FOR_SPACE
+                hangarSpacePath = self.hangarSpace.spacePath
+                if self.hangarSpace.spaceInited and hangarSpacePath is None:
+                    _logger.error('Abnormal behaviour: hangarSpace.spacePath is not initialized')
+                    reloadValid = False
+                    errCode |= ErrorFlags.SPACE_PATH_NOT_INITED
+                spacePath = self.buildHangarSpacePath(spaceName)
+                if spacePath == hangarSpacePath:
+                    _logger.warning('No need to load space "%s", because it is already loaded', spaceName)
+                    reloadValid = False
+                    errCode |= ErrorFlags.DUPLICATE_REQUEST
+                if not reloadValid:
+                    return (reloadValid, errCode)
             self.__loadingSpacePath = spacePath
             self.__waitingMessage = waitingMessage
             if waitingMessage:

@@ -27,7 +27,7 @@ package net.wg.gui.lobby.techtree.helpers
       
       private static const FADE_IN_ARROW:String = "ResearchArrowFadeInUI";
       
-      private static const MAX_LEVEL:uint = 10;
+      private static const MAX_LEVEL:uint = 11;
       
       private static const MIN_LEVEL:uint = 1;
        

@@ -1,10 +1,10 @@
 import logging
 from functools import wraps
 from copy import copy
-from account_helpers.AccountSettings import MAPBOX_CAROUSEL_FILTER_1, MAPBOX_CAROUSEL_FILTER_2, FUN_RANDOM_CAROUSEL_FILTER_1, FUN_RANDOM_CAROUSEL_FILTER_2, COMP7_CAROUSEL_FILTER_1, COMP7_CAROUSEL_FILTER_2, CAROUSEL_FILTER_3, RANKED_CAROUSEL_FILTER_3, EPICBATTLE_CAROUSEL_FILTER_3, MAPBOX_CAROUSEL_FILTER_3, COMP7_CAROUSEL_FILTER_3, FUN_RANDOM_CAROUSEL_FILTER_3
+from account_helpers.AccountSettings import MAPBOX_CAROUSEL_FILTER_1, MAPBOX_CAROUSEL_FILTER_2, FUN_RANDOM_CAROUSEL_FILTER_1, FUN_RANDOM_CAROUSEL_FILTER_2, COMP7_CAROUSEL_FILTER_1, COMP7_CAROUSEL_FILTER_2, CAROUSEL_FILTER_3, RANKED_CAROUSEL_FILTER_3, EPICBATTLE_CAROUSEL_FILTER_3, MAPBOX_CAROUSEL_FILTER_3, COMP7_CAROUSEL_FILTER_3, FUN_RANDOM_CAROUSEL_FILTER_3, COMP7_LIGHT_CAROUSEL_FILTER_1, COMP7_LIGHT_CAROUSEL_FILTER_2, COMP7_LIGHT_CAROUSEL_FILTER_3
 import BigWorld, constants
 from adisp import adisp_async, adisp_process
-from debug_utils import LOG_ERROR
+from debug_utils import LOG_WARNING
 from gui.shared.utils import code2str
 _logger = logging.getLogger(__name__)
 
@@ -14,7 +14,7 @@ def requireSync(func):
     def wrapper(*args, **kwargs):
         instance = args[0]
         if not instance.isSynced():
-            LOG_ERROR('Calling %s require for IntSettingsRequester to be synced.' % func.__name__, stack=True)
+            LOG_WARNING('Calling %s require for IntSettingsRequester to be synced.' % func.__name__, stack=True if constants.IS_DEVELOPMENT else False)
         return func(*args, **kwargs)
 
     return wrapper
@@ -94,7 +94,11 @@ class IntSettingsRequester(object):
        MAPBOX_CAROUSEL_FILTER_3: 120, 
        COMP7_CAROUSEL_FILTER_3: 121, 
        FUN_RANDOM_CAROUSEL_FILTER_3: 122, 
-       CAROUSEL_FILTER_3: 123}
+       CAROUSEL_FILTER_3: 123, 
+       'PERSONAL_MISSION_3': constants.USER_SERVER_SETTINGS.PERSONAL_MISSION_3, 
+       COMP7_LIGHT_CAROUSEL_FILTER_1: 125, 
+       COMP7_LIGHT_CAROUSEL_FILTER_2: 126, 
+       COMP7_LIGHT_CAROUSEL_FILTER_3: 127}
 
     def __init__(self):
         self.__isSynced = False

@@ -16,7 +16,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.055
+			0.056
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -95,7 +95,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>27065</weight>
-		<maxHealth>1160</maxHealth>
+		<maxHealth>1320</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>200</maxHealth>
 			<maxRegenHealth>135</maxRegenHealth>
@@ -1972,7 +1972,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>56000</maxLoad>
 			<terrainResistance>
 				1.1 1.7 2.5
 				<!--BW_String-->
@@ -3841,7 +3840,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>11000</weight>
-			<maxLoad>60000</maxLoad>
 			<terrainResistance>
 				1.1 1.7 2.5
 				<!--BW_String-->
@@ -5708,15 +5706,15 @@
 			<level>7</level>
 			<price>22000</price>
 			<armor>
-				<armor_1>100</armor_1>
-				<armor_2>90</armor_2>
+				<armor_1>160</armor_1>
+				<armor_2>130</armor_2>
 				<armor_3>100</armor_3>
 				<armor_4>100</armor_4>
 				<armor_5>30</armor_5>
 				<armor_6>45</armor_6>
 				<armor_7>60</armor_7>
 				<armor_8>0</armor_8>
-				<armor_9>90</armor_9>
+				<armor_9>120</armor_9>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>7500</weight>
@@ -5740,7 +5738,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_122-mm_D-25T_with_wedges_shutter>
+				<_122mm_D_25T_IS_M>
 					shared
 					<maxAmmo>30</maxAmmo>
 					<unlocks>
@@ -5751,11 +5749,11 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							130
+							200
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							100
+							140
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -5774,21 +5772,32 @@
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						13.3
+						12.3
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						3.4
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>3</aimingTime>
 					<invisibilityFactorAtShot>
 						0.18
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.45
+						0.43
 						<!--BW_String-->
 					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.1
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/russian/R139_IS_M/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R139_IS_M/crash/lod0/Gun_01.model</destroyed>
@@ -5869,7 +5878,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122-mm_D-25T_with_wedges_shutter>
+				</_122mm_D_25T_IS_M>
 				<_122mm_D_25BM>
 					shared
 					<maxAmmo>30</maxAmmo>
@@ -5881,11 +5890,11 @@
 					</unlocks>
 					<armor>
 						<armor_1>
-							130
+							200
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
-							100
+							140
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_2>
 						<armor_3>
@@ -5903,12 +5912,9 @@
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
-					<reloadTime>
-						13.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>12</reloadTime>
 					<aimingTime>
-						3.4
+						2.9
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -6987,7 +6993,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>12500</weight>
-			<maxHealth>340</maxHealth>
+			<maxHealth>330</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>150</maxHealth>
@@ -7007,7 +7013,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_122-mm_D-25T_with_wedges_shutter>
+				<_122mm_D_25T_IS_M>
 					shared
 					<maxAmmo>30</maxAmmo>
 					<armor>
@@ -7043,21 +7049,32 @@
 						<maxPitch>0 5 1 5</maxPitch>
 					</pitchLimits>
 					<reloadTime>
-						13.3
+						12.3
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>
-						3.4
-						<!--BW_String-->
-					</aimingTime>
+					<aimingTime>3</aimingTime>
 					<invisibilityFactorAtShot>
 						0.18
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.44
+						0.43
 						<!--BW_String-->
 					</shotDispersionRadius>
+					<shotDispersionFactors>
+						<turretRotation>
+							0.1
+							<!--BW_String-->
+						</turretRotation>
+						<whileGunDamaged>
+							2.0
+							<!--BW_String-->
+						</whileGunDamaged>
+						<afterShot>
+							4.0
+							<!--BW_String-->
+						</afterShot>
+					</shotDispersionFactors>
 					<models>
 						<undamaged>vehicles/russian/R139_IS_M/normal/lod0/Gun_04.model</undamaged>
 						<destroyed>vehicles/russian/R139_IS_M/crash/lod0/Gun_04.model</destroyed>
@@ -7141,7 +7158,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_122-mm_D-25T_with_wedges_shutter>
+				</_122mm_D_25T_IS_M>
 				<_122mm_D_25BM>
 					shared
 					<maxAmmo>30</maxAmmo>
@@ -7181,7 +7198,10 @@
 						11.7
 						<!--BW_String-->
 					</reloadTime>
-					<aimingTime>3</aimingTime>
+					<aimingTime>
+						2.8
+						<!--BW_String-->
+					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.18
 						<!--BW_String-->
@@ -8301,22 +8321,13 @@
 		<Heavy>shared</Heavy>
 	</fuelTanks>
 	<radios>
-		<_10RK>
-			shared
-			<unlocks>
-				<radio>
-					_12RT
-					<cost>5600</cost>
-				</radio>
-			</unlocks>
-		</_10RK>
 		<_12RT>shared</_12RT>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
 				<M_40_650>
-					<smplEnginePower>650</smplEnginePower>
+					<smplEnginePower>680</smplEnginePower>
 					<smplFwMaxSpeed>35</smplFwMaxSpeed>
 				</M_40_650>
 				<M_40_750>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>
+			-0.407867 -0.000001 -1.31492
+			<!--BW_String-->
+		</min>
+		<max>
+			0.367306 9.1433 1.11633
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<parent>content/Environment/hd_env_AM_009_Poles/normal/lod1/hd_env_AM_009_Poles_02</parent>
+	<extent>
+		35.0
+		<!--BW_String-->
+	</extent>
+	<nodefullVisual>content/Environment/hd_env_AM_009_Poles/normal/lod0/hd_env_AM_009_Poles_02</nodefullVisual>
+</root>

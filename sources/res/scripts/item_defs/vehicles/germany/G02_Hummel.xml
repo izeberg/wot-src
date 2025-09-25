@@ -104,12 +104,9 @@
 		<weight>9700</weight>
 		<maxHealth>268</maxHealth>
 		<ammoBayHealth>
-			<maxHealth>90</maxHealth>
-			<maxRegenHealth>45</maxRegenHealth>
-			<repairCost>
-				1.0
-				<!--BW_String-->
-			</repairCost>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>128</maxRegenHealth>
+			<repairCost>6</repairCost>
 		</ammoBayHealth>
 		<models>
 			<undamaged>vehicles/german/G02_Hummel/normal/lod0/Hull.model</undamaged>
@@ -2490,14 +2487,14 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Hummel_Ausf_1943>
-			<userString>#germany_vehicles:Hummel_Ausf_1943</userString>
+		<Chassis_G02_Hummel>
+			<userString>#germany_vehicles:Chassis_G02_Hummel</userString>
 			<tags/>
 			<level>5</level>
 			<price>9000</price>
 			<unlocks>
 				<chassis>
-					Hummel_Ausf_1944
+					Chassis_G02_Hummel_2
 					<cost>4065</cost>
 				</chassis>
 			</unlocks>
@@ -2506,9 +2503,8 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>23000</maxLoad>
 			<terrainResistance>
-				1.3 1.5 2.5
+				1.2 1.4 2.3
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>21000</brakeForce>
@@ -4249,9 +4245,9 @@
 				8.30769253
 				<!--BW_String-->
 			</repairTime>
-		</Hummel_Ausf_1943>
-		<Hummel_Ausf_1944>
-			<userString>#germany_vehicles:Hummel_Ausf_1944</userString>
+		</Chassis_G02_Hummel>
+		<Chassis_G02_Hummel_2>
+			<userString>#germany_vehicles:Chassis_G02_Hummel_2</userString>
 			<tags/>
 			<level>6</level>
 			<price>13480</price>
@@ -4260,7 +4256,6 @@
 				<rightTrack>15</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>25000</maxLoad>
 			<terrainResistance>
 				1.2 1.4 2.3
 				<!--BW_String-->
@@ -6003,14 +5998,14 @@
 				7.05882359
 				<!--BW_String-->
 			</repairTime>
-		</Hummel_Ausf_1944>
+		</Chassis_G02_Hummel_2>
 	</chassis>
 	<turrets0>
-		<Hummel_0>
+		<Turret_1_G02_Hummel>
 			<ceilless>true</ceilless>
-			<userString>#germany_vehicles:Hummel_0</userString>
-			<tags>cannotDetach</tags>
-			<level>6</level>
+			<userString>#germany_vehicles:Turret_1_G02_Hummel</userString>
+			<tags>cannotDetach turretless</tags>
+			<level>5</level>
 			<price>200</price>
 			<notInShop>true</notInShop>
 			<armor>
@@ -6038,11 +6033,11 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_150mm_sFH13_L17>
+				<_150mm_s_F_H_13_L_17>
 					shared
 					<unlocks>
 						<gun>
-							_150mm_sFH18_L30
+							_150mm_s_F_H_18_L_29_5_Hummel
 							<cost>6300</cost>
 						</gun>
 					</unlocks>
@@ -6214,7 +6209,7 @@
 						</density>
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
-				</_150mm_sFH13_L17>
+				</_150mm_s_F_H_13_L_17>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G02_Hummel/normal/lod0/Turret_01.model</undamaged>
@@ -6268,11 +6263,11 @@
 				</density>
 				<aoTextureSize>1024 512</aoTextureSize>
 			</camouflage>
-		</Hummel_0>
-		<Hummel_1>
+		</Turret_1_G02_Hummel>
+		<Turret_2_G02_Hummel>
 			<ceilless>true</ceilless>
-			<userString>#germany_vehicles:Hummel_0</userString>
-			<tags>cannotDetach</tags>
+			<userString>#germany_vehicles:Turret_2_G02_Hummel</userString>
+			<tags>cannotDetach turretless</tags>
 			<level>6</level>
 			<price>200</price>
 			<notInShop>true</notInShop>
@@ -6301,7 +6296,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_150mm_sFH18_L30>
+				<_150mm_s_F_H_18_L_29_5_Hummel>
 					shared
 					<unlocks>
 						<vehicle>
@@ -6476,7 +6471,7 @@
 						</density>
 						<aoTextureSize>1024 512</aoTextureSize>
 					</camouflage>
-				</_150mm_sFH18_L30>
+				</_150mm_s_F_H_18_L_29_5_Hummel>
 			</guns>
 			<models>
 				<undamaged>vehicles/german/G02_Hummel/normal/lod0/Turret_02.model</undamaged>
@@ -6533,102 +6528,46 @@
 				</density>
 				<aoTextureSize>1024 512</aoTextureSize>
 			</camouflage>
-		</Hummel_1>
+		</Turret_2_G02_Hummel>
 	</turrets0>
 	<engines>
-		<Maybach_HL_108_TR_R>
+		<Maybach_HL_120_TRM_112_Hummel>
 			shared
 			<unlocks>
 				<engine>
-					Maybach_HL_120_TRM_112_R
-					<cost>910</cost>
-				</engine>
-			</unlocks>
-		</Maybach_HL_108_TR_R>
-		<Maybach_HL_120_TRM_112_R>
-			shared
-			<unlocks>
-				<engine>
-					Maybach_HL_120_TRM_R
+					Maybach_HL_120_TRM_Hummel
 					<cost>1100</cost>
 				</engine>
 			</unlocks>
-		</Maybach_HL_120_TRM_112_R>
-		<Maybach_HL_120_TRM_R>shared</Maybach_HL_120_TRM_R>
+		</Maybach_HL_120_TRM_112_Hummel>
+		<Maybach_HL_120_TRM_Hummel>shared</Maybach_HL_120_TRM_Hummel>
 	</engines>
 	<fuelTanks>
 		<Medium>shared</Medium>
 	</fuelTanks>
 	<radios>
-		<FuG5>
-			shared
-			<unlocks>
-				<radio>
-					FuG7
-					<cost>1360</cost>
-				</radio>
-			</unlocks>
-		</FuG5>
-		<FuG7>
-			shared
-			<unlocks>
-				<radio>
-					FuG12
-					<cost>7200</cost>
-				</radio>
-			</unlocks>
-		</FuG7>
 		<FuG12>shared</FuG12>
 	</radios>
 	<physics>
 		<detailed>
 			<engines>
-				<Maybach_HL_108_TR_R>
-					<smplEnginePower>
-						264.3203
-						<!--BW_String-->
-					</smplEnginePower>
-					<smplFwMaxSpeed>42</smplFwMaxSpeed>
-				</Maybach_HL_108_TR_R>
-				<Maybach_HL_120_TRM_112_R>
+				<Maybach_HL_120_TRM_112_Hummel>
 					<smplEnginePower>
 						287.5805
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>42</smplFwMaxSpeed>
-				</Maybach_HL_120_TRM_112_R>
-				<Maybach_HL_120_TRM_R>
+				</Maybach_HL_120_TRM_112_Hummel>
+				<Maybach_HL_120_TRM_Hummel>
 					<smplEnginePower>
 						317.1843
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>42</smplFwMaxSpeed>
-				</Maybach_HL_120_TRM_R>
+				</Maybach_HL_120_TRM_Hummel>
 			</engines>
 			<chassis>
-				<Hummel_Ausf_1943>
-					<grounds>
-						<soft>
-							<rollingFriction>
-								0.20125
-								<!--BW_String-->
-							</rollingFriction>
-						</soft>
-						<medium>
-							<rollingFriction>
-								0.12075
-								<!--BW_String-->
-							</rollingFriction>
-						</medium>
-						<firm>
-							<rollingFriction>
-								0.10465
-								<!--BW_String-->
-							</rollingFriction>
-						</firm>
-					</grounds>
-				</Hummel_Ausf_1943>
-				<Hummel_Ausf_1944>
+				<Chassis_G02_Hummel>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -6649,7 +6588,29 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Hummel_Ausf_1944>
+				</Chassis_G02_Hummel>
+				<Chassis_G02_Hummel_2>
+					<grounds>
+						<soft>
+							<rollingFriction>
+								0.18515
+								<!--BW_String-->
+							</rollingFriction>
+						</soft>
+						<medium>
+							<rollingFriction>
+								0.1127
+								<!--BW_String-->
+							</rollingFriction>
+						</medium>
+						<firm>
+							<rollingFriction>
+								0.0966
+								<!--BW_String-->
+							</rollingFriction>
+						</firm>
+					</grounds>
+				</Chassis_G02_Hummel_2>
 			</chassis>
 		</detailed>
 	</physics>

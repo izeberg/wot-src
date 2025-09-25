@@ -1965,7 +1965,6 @@
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<weight>3000</weight>
-			<maxLoad>21000</maxLoad>
 			<terrainResistance>
 				1 1.2 2
 				<!--BW_String-->
@@ -4034,10 +4033,7 @@
 				<armor_4>25</armor_4>
 				<armor_5>10</armor_5>
 				<armor_6>20</armor_6>
-				<armor_7>
-					20
-					<vehicleDamageFactor>0</vehicleDamageFactor>
-				</armor_7>
+				<armor_7>50</armor_7>
 				<armor_8>0</armor_8>
 				<armor_9>30</armor_9>
 				<armor_10>40</armor_10>
@@ -4071,6 +4067,11 @@
 							0
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
+						<armor_5>
+							10
+							<vehicleDamageFactor>0</vehicleDamageFactor>
+							<tags>screen</tags>
+						</armor_5>
 						<armor_6>10</armor_6>
 						<gun>20</gun>
 					</armor>

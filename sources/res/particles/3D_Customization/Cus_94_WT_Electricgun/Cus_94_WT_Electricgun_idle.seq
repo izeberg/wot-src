@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<duration>1.000000</duration>
+	<sequenceObject>
+		<name>Root</name>
+		<type>model</type>
+		<resource/>
+	</sequenceObject>
+	<sequenceObject>
+		<name>Model 0</name>
+		<type>model</type>
+		<resource>particles/3D_Customization/Cus_94_WT_Electricgun/Cus_94_WT_Electricgun_idle_02.model</resource>
+		<castsShadow>false</castsShadow>
+		<track>
+			<name>attach</name>
+			<type>attach</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<duration>1.000000</duration>
+				<value>Root|joint_body</value>
+			</frame>
+		</track>
+		<track>
+			<name>position</name>
+			<type>vector3</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000 -0.286700 -0.004387</value>
+				<inTangent>0.000000 0.000000 0.000000</inTangent>
+				<outTangent>0.000000 0.000000 0.000000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+		</track>
+		<track>
+			<name>material property color</name>
+			<type>vector4</type>
+			<identifier>lambert5</identifier>
+			<property>TintlColor</property>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.623529 0.662745 1.000000 0.000000</value>
+				<inTangent>0.000000 0.000000 0.000000 0.188280</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 0.188280</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+			<frame>
+				<startTime>0.633333</startTime>
+				<value>0.623529 0.662745 1.000000 0.650000</value>
+				<inTangent>0.000000 0.000000 0.000000 3.561223</inTangent>
+				<outTangent>0.000000 0.000000 0.000000 -7.053208</outTangent>
+				<tangentMode>66307</tangentMode>
+			</frame>
+			<frame>
+				<startTime>1.000000</startTime>
+				<value>0.623529 0.662745 1.000000 0.000000</value>
+				<inTangent>-0.000000 -0.000000 -0.000000 0.042309</inTangent>
+				<outTangent>-0.000000 -0.000000 -0.000000 0.042309</outTangent>
+				<tangentMode>771</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<events/>
+</root>

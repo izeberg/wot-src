@@ -5,40 +5,22 @@ msgid "battle/widget/baseText"
 msgstr "Оцените этот бой:"
 
 msgid "battle/widget/hintBarKeyboardText"
-msgstr "Вернуться в Ангар"
+msgstr "Выйти"
 
 msgid "battle/widget/hintBarMouseText"
-msgstr "Переключайтесь между союзниками"
-
-msgid "battle/widget/onDislikeTextOptionFive"
-msgstr "Сожалеем, что так получилось."
-
-msgid "battle/widget/onDislikeTextOptionFour"
-msgstr "Благодарим за ответ."
-
-msgid "battle/widget/onDislikeTextOptionOne"
-msgstr "Спасибо за поддержку WoT."
-
-msgid "battle/widget/onDislikeTextOptionThree"
-msgstr "Получено сообщение."
-
-msgid "battle/widget/onDislikeTextOptionTwo"
-msgstr "Ваш ответ сохранён."
-
-msgid "battle/widget/onLikeTextOptionFive"
-msgstr "Рады, что вам понравилось!"
-
-msgid "battle/widget/onLikeTextOptionFour"
-msgstr "Благодарим, командир!"
-
-msgid "battle/widget/onLikeTextOptionOne"
-msgstr "Отличный бой, так держать."
-
-msgid "battle/widget/onLikeTextOptionThree"
-msgstr "Без вас бы не получилось!"
-
-msgid "battle/widget/onLikeTextOptionTwo"
-msgstr "Вы довольны — мы счастливы!"
+msgstr "Переключить камеру"
 
 msgid "battle/widget/onNeutralText"
 msgstr "Принято, командир!"
+
+msgid "battleResult/battleRating/better/header"
+msgstr "Лучше, чем обычно"
+
+msgid "battleResult/battleRating/unset/header"
+msgstr "Оцените бой"
+
+msgid "battleResult/battleRating/usual/header"
+msgstr "Как обычно"
+
+msgid "battleResult/battleRating/worse/header"
+msgstr "Хуже, чем обычно"

@@ -4,6 +4,7 @@ package net.wg.gui.messenger.views
    import flash.display.MovieClip;
    import flash.events.Event;
    import flash.events.MouseEvent;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import flash.ui.Keyboard;
    import net.wg.data.constants.UserTags;
@@ -102,9 +103,9 @@ package net.wg.gui.messenger.views
          return new <InteractiveObject>[InteractiveObject(this.searchInput),this.searchBtn,this.list].concat(super.getFocusChain());
       }
       
-      override public function setViewSize(param1:Number, param2:Number) : void
+      override public function setViewSize(param1:Number, param2:Number, param3:Rectangle = null) : void
       {
-         super.setViewSize(param1,param2);
+         super.setViewSize(param1,param2,param3);
          validateNow();
       }
       

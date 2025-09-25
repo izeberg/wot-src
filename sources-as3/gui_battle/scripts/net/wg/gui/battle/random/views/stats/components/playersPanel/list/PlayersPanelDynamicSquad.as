@@ -288,5 +288,15 @@ package net.wg.gui.battle.random.views.stats.components.playersPanel.list
             this._tooltip.hide();
          }
       }
+      
+      protected function getCurrentPlayerAnonymized() : Boolean
+      {
+         return this._isCurrentPlayerAnonymized;
+      }
+      
+      protected function getCurrentPlayerInClan() : Boolean
+      {
+         return this._isCurrentPlayerInClan;
+      }
    }
 }

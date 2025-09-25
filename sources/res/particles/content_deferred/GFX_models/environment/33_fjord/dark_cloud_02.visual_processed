@@ -42,10 +42,11 @@
 					<property>
 						selfIllumLight
 						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
 					</property>
 					<property>
 						TintlColor
-						<Vector4>1.000000 1.000000 1.000000 0.700000</Vector4>
+						<Vector4>1.000000 1.000000 1.000000 0.390000</Vector4>
 					</property>
 					<property>
 						distortion_UV_Speed_Amount

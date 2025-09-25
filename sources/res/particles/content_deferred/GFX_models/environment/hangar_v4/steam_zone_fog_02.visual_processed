@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>volume</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/dark_cloud_map_02_seamless.dds</Texture>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.100000 0.100000 0.018000 0.018000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/vel_smoke_1.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>0.250000 0.150000 0.100000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector3>1.000000 0.643137 0.427451</Vector3>
+					</property>
+					<property>
+						softFactor
+						<Float>70.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.847059 0.309804 0.105882 1.000000</Vector4>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.010000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.000000 0.025000 0.000000</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-3.931575 0.000000 -1.633246</min>
+		<max>3.931575 0.050000 1.633246</max>
+	</boundingBox>
+	<geometrySize>1092</geometrySize>
+</root>

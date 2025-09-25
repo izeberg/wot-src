@@ -9,7 +9,7 @@ from gui import GUI_SETTINGS
 from gui.shared.formatters import text_styles
 from gui.shared.gui_items import KPI
 from gui.shared.gui_items.Tankman import isSkillLearnt, crewMemberRealSkillLevel
-from gui.shared.items_parameters import calcGunParams, calcShellParams, getShotsPerMinute, getGunDescriptors, isAutoReloadGun, isDualGun, isDualAccuracy, isTwinGun
+from gui.shared.items_parameters import calcGunParams, calcShellParams, getShotsPerMinute, getGunDescriptors, isAutoReloadGun, isDualGun, isDualAccuracy, isTwinGun, getMechanicsReloadDelay
 from gui.shared.items_parameters import functions, getShellDescriptors, getOptionalDeviceWeight, NO_DATA
 from gui.shared.items_parameters.comparator import rateParameterState, PARAM_STATE
 from gui.shared.items_parameters.functions import getBasicShell, getRocketAccelerationKpiFactors
@@ -27,6 +27,8 @@ from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.shared import IItemsCache
 from soft_exception import SoftException
 from helpers_common import computePiercingPowerAtDist, computeDamageAtDist
+from vehicles.mechanics.mechanic_info import hasVehicleMechanic
+from vehicles.mechanics.mechanic_constants import VehicleMechanic
 if typing.TYPE_CHECKING:
     from items.vehicles import VehicleDescriptor, CompositeVehicleDescriptor, VehicleDescr
     from gui.shared.gui_items.Vehicle import Vehicle
@@ -218,10 +220,6 @@ class ChassisParams(WeightedParam):
     itemsCache = dependency.descriptor(IItemsCache)
 
     @property
-    def maxLoad(self):
-        return self._itemDescr.maxLoad / 1000
-
-    @property
     def rotationSpeed(self):
         if not self.isWheeled or self.isWheeledOnSpotRotation:
             return int(round(math.degrees(self._itemDescr.rotationSpeed)))
@@ -320,7 +318,7 @@ class VehicleParams(_ParameterBase):
 
     @property
     def vehicleWeight(self):
-        return _Weight(self._itemDescr.physics['weight'] / 1000, self._itemDescr.miscAttrs['maxWeight'] / 1000)
+        return self._itemDescr.physics['weight'] / 1000
 
     @property
     def enginePower(self):
@@ -348,32 +346,31 @@ class VehicleParams(_ParameterBase):
 
     @property
     def enginePowerPerTon(self):
-        powerPerTon = round(self.enginePower / self.vehicleWeight.current, 2)
+        powerPerTon = round(self.enginePower / self.vehicleWeight, 2)
         if self._itemDescr.hasTurboshaftEngine:
-            return (powerPerTon, round(self.turboshaftEnginePower / self.vehicleWeight.current, 2))
+            return (powerPerTon, round(self.turboshaftEnginePower / self.vehicleWeight, 2))
         if self._itemDescr.hasRocketAcceleration:
-            return (powerPerTon, round(self.rocketAccelerationEnginePower / self.vehicleWeight.current, 2))
+            return (powerPerTon, round(self.rocketAccelerationEnginePower / self.vehicleWeight, 2))
         return (
          powerPerTon,)
 
     @property
     def speedLimits(self):
-        return self.__speedLimits(self._itemDescr.physics['speedLimits'], ('forwardMaxSpeedKMHTerm',
-                                                                           'backwardMaxSpeedKMHTerm'))
+        return self.__speedLimits(self._itemDescr, ('forwardMaxSpeedKMHTerm', 'backwardMaxSpeedKMHTerm'))
 
     @property
     def wheeledSpeedModeSpeed(self):
         if self.__hasWheeledSwitchMode():
-            return self.__speedLimits(self._itemDescr.siegeVehicleDescr.physics['speedLimits'], ('forwardMaxSpeedKMHTerm',
-                                                                                                 'backwardMaxSpeedKMHTerm'))
+            return self.__speedLimits(self._itemDescr.siegeVehicleDescr, ('forwardMaxSpeedKMHTerm',
+                                                                          'backwardMaxSpeedKMHTerm'))
         else:
             return
 
     @property
     def turboshaftSpeedModeSpeed(self):
         if self.__hasTurboshaftSwitchMode():
-            return self.__speedLimits(self._itemDescr.siegeVehicleDescr.physics['speedLimits'], ('forwardMaxSpeedKMHTerm',
-                                                                                                 'backwardMaxSpeedKMHTerm'))
+            return self.__speedLimits(self._itemDescr.siegeVehicleDescr, ('forwardMaxSpeedKMHTerm',
+                                                                          'backwardMaxSpeedKMHTerm'))
         else:
             return
 
@@ -890,9 +887,9 @@ class VehicleParams(_ParameterBase):
 
     @property
     def burstFireRate(self):
-        if self.__hasBurst():
+        if self.__hasBurst() and not hasVehicleMechanic(self.__vehicle.descriptor, VehicleMechanic.CHARGEABLE_BURST):
             gun = self._itemDescr.gun
-            burstCountLeft, burstInterval = gun.burst
+            burstCountLeft, burstInterval, _ = gun.burst
             return (
              burstInterval, gun.clip[0] / burstCountLeft, burstCountLeft)
         else:
@@ -902,7 +899,7 @@ class VehicleParams(_ParameterBase):
     def turboshaftBurstFireRate(self):
         if self.__hasUnsupportedSwitchMode():
             gun = self._itemDescr.siegeVehicleDescr.gun
-            burstCountLeft, burstInterval = gun.burst
+            burstCountLeft, burstInterval, _ = gun.burst
             return (
              burstInterval, gun.clip[0] / burstCountLeft, burstCountLeft)
         else:
@@ -1078,10 +1075,14 @@ class VehicleParams(_ParameterBase):
     @property
     def twinGunTopSpeed(self):
         if self.__hasTwinGun():
-            return self.__speedLimits(self._itemDescr.siegeVehicleDescr.physics['speedLimits'], ('forwardMaxSpeedKMHTerm',
-                                                                                                 'backwardMaxSpeedKMHTerm'))
+            return self.__speedLimits(self._itemDescr.siegeVehicleDescr, ('forwardMaxSpeedKMHTerm',
+                                                                          'backwardMaxSpeedKMHTerm'))
         else:
             return
+
+    @property
+    def mechanicsReloadDelay(self):
+        return getMechanicsReloadDelay(self._itemDescr.mechanicsParams)
 
     def getParamsDict(self, preload=False):
         conditionalParams = (
@@ -1228,12 +1229,13 @@ class VehicleParams(_ParameterBase):
              repairChassisKpi))
         return chassisRepairTime / repairFactor / repairKpi / repairChassisKpi
 
-    def __speedLimits(self, limits, miscAttrs=None):
+    def __speedLimits(self, itemDescr, miscAttrs=None):
         correction = []
+        limits = itemDescr.physics['speedLimits']
         if miscAttrs:
             if len(miscAttrs) > len(limits):
                 raise SoftException('correction can not be less than speed limits')
-            correction = map(self._itemDescr.miscAttrs.get, miscAttrs)
+            correction = map(itemDescr.miscAttrs.get, miscAttrs)
         skillName = 'driver_motorExpert'
         realSkillLevel = crewMemberRealSkillLevel(self.__vehicle, skillName)
         if realSkillLevel != tankmen.NO_SKILL:
@@ -1279,7 +1281,7 @@ class VehicleParams(_ParameterBase):
     def __getRealSpeedLimit(self):
         enginePower = self._itemDescr.miscAttrs['enginePowerFactor'] * self.__getEnginePhysics()['smplEnginePower']
         rollingFriction = self.__getChassisPhysics()['grounds']['medium']['rollingFriction']
-        return enginePower / self.vehicleWeight.current * METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR * self.__factors['engine/power'] / 12.25 / rollingFriction
+        return enginePower / self.vehicleWeight * METERS_PER_SECOND_TO_KILOMETERS_PER_HOUR * self.__factors['engine/power'] / 12.25 / rollingFriction
 
     def __getInvisibilityValues(self, itemDescription):
         camouflageFactor = self.__factors.get('camouflage', 1)
@@ -1369,6 +1371,7 @@ class VehicleParams(_ParameterBase):
             LOG_DEBUG('baseReloadTime:%f * loader_meleeFactor:%f * loader_desperadoFactor:%f' % (
              baseReloadTime, loaderMeleeReloadFactor, loaderDesperadoReloadFactor))
         reloadTime = self.__calcParamWithSkillFactorAmp(baseReloadTime, (loaderMeleeReloadFactor, loaderDesperadoReloadFactor))
+        reloadTime = reloadTime + self.mechanicsReloadDelay
         return (
          getShotsPerMinute(self._itemDescr.gun, reloadTime, hasAutoReload),)
 
@@ -1378,7 +1381,7 @@ class VehicleParams(_ParameterBase):
             if self.__hasAutoReload():
                 reloadTime = sum(items_utils.getClipReloadTime(self._itemDescr, self.__factors))
             else:
-                reloadTime = items_utils.getReloadTime(self._itemDescr, self.__factors)
+                reloadTime = items_utils.getReloadTime(self._itemDescr, self.__factors) + self.mechanicsReloadDelay
             return (reloadTime, clipData[1], clipData[0])
         else:
             if self.__hasDualGun():
@@ -1699,6 +1702,10 @@ class ShellParams(CompatibleParams):
 
     @property
     def avgDamage(self):
+        if self._vehicleDescr is not None:
+            shot = self.__getShellDescriptor()
+            if shot is not None:
+                return shot.shell.armorDamage[0]
         return self._itemDescr.armorDamage[0]
 
     @property

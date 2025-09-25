@@ -2,6 +2,7 @@
 <root>
 	<NonChunkUDO>true</NonChunkUDO>
 	<flora>spaces/33_fjord/flora.xml</flora>
+	<borderMask>borderMask.dds</borderMask>
 	<bounds>
 		<minX>-7</minX>
 		<maxX>6</maxX>
@@ -24,7 +25,7 @@
 				<name>GBufferDecals</name>
 				<atlas>
 					<width>4096</width>
-					<height>2048</height>
+					<height>4352</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
@@ -36,7 +37,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>2048</height>
+					<height>4352</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
@@ -48,7 +49,7 @@
 				</atlas>
 				<atlas>
 					<width>4096</width>
-					<height>2048</height>
+					<height>4352</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>256</minWidth>
@@ -80,7 +81,7 @@
 				<name>GBufferDecals</name>
 				<atlas>
 					<width>2048</width>
-					<height>1024</height>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -92,7 +93,7 @@
 				</atlas>
 				<atlas>
 					<width>2048</width>
-					<height>1024</height>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -104,7 +105,7 @@
 				</atlas>
 				<atlas>
 					<width>2048</width>
-					<height>1024</height>
+					<height>2048</height>
 					<format>DXT5</format>
 					<constrains>
 						<minWidth>64</minWidth>
@@ -137,4 +138,5 @@
 	<enableClusteredShading>false</enableClusteredShading>
 	<isSHGridQualityOverridden>false</isSHGridQualityOverridden>
 	<overrideSHGridQuality>0</overrideSHGridQuality>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
 </root>

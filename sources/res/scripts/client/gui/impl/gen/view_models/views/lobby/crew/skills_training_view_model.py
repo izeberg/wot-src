@@ -1,5 +1,4 @@
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from gui.impl.gen.view_models.common.vehicle_info_model import VehicleInfoModel
 from gui.impl.gen.view_models.views.lobby.crew.skills_list_model import SkillsListModel
 from gui.impl.gen.view_models.views.lobby.crew.sort_dropdown_item_model import SortDropdownItemModel

@@ -19,12 +19,6 @@ msgstr "AN/GRC-7"
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
 
-msgid "APCNR"
-msgstr "Pzgr. 41 HK"
-
-msgid "APCNR.erz"
-msgstr "Pzgr. 41 StK"
-
 msgid "APCNR.erzu"
 msgstr "Pzgr. 41 StKU"
 
@@ -39,6 +33,12 @@ msgstr "Pzgr. 41 HKU"
 
 msgid "Argus_12LD330H"
 msgstr "Argus 12LD330H"
+
+msgid "Argus_12LD330HL"
+msgstr "Argus 12LD330HL"
+
+msgid "Argus_12LD330HL_short"
+msgstr "Argus 12LD330HL"
 
 msgid "Argus_12LD330H_short"
 msgstr "12LD330H"
@@ -138,17 +138,30 @@ msgstr "E 100"
 msgid "Chassis_E-25"
 msgstr "E 25"
 
-msgid "Chassis_E-50"
-msgstr "E 50"
-
-msgid "Chassis_E-50_2"
-msgstr "E 50 verstärkteketten"
-
-msgid "Chassis_E50_Ausf_M"
-msgstr "E 50 Ausf. M"
-
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Chassis_G02_Hummel"
+msgstr "Hummel"
+
+msgid "Chassis_G02_Hummel_2"
+msgstr "Hummel verstärkteketten"
+
+msgid "Chassis_G03_PzV_Panther"
+msgstr "Pz.Kpfw. Panther Ausf. A"
+
+msgid "Chassis_G03_PzV_Panther_2"
+msgstr "Pz.Kpfw. Panther Ausf. G"
+
+msgid "Chassis_G03_PzV_Panther_2_short"
+msgstr ""
+"Pz.Kpfw. Panther\n"
+"Ausf. G"
+
+msgid "Chassis_G03_PzV_Panther_short"
+msgstr ""
+"Pz.Kpfw. Panther\n"
+"Ausf. A"
 
 msgid "Chassis_G04_PzVI_Tiger_I"
 msgstr "Pz.Kpfw. VI H Ausf. H1"
@@ -211,6 +224,16 @@ msgstr "Spähpanzer Ru 251 PT I"
 
 msgid "Chassis_G103_RU_251_2"
 msgstr "Spähpanzer Ru 251 PT II"
+
+msgid "Chassis_G103_RU_251_2_short"
+msgstr ""
+"Spähpanzer Ru 251\n"
+"PT II"
+
+msgid "Chassis_G103_RU_251_short"
+msgstr ""
+"Spähpanzer Ru 251\n"
+"PT I"
 
 msgid "Chassis_G104_Stug_IV"
 msgstr "StuG IV"
@@ -325,6 +348,9 @@ msgstr "HWK 12"
 
 msgid "Chassis_G126_HWK_12_2"
 msgstr "HWK 12 verbessert"
+
+msgid "Chassis_G12_Ltraktor"
+msgstr "Leichttraktor verstärkteketten"
 
 msgid "Chassis_G134_PzKpfw_VII"
 msgstr "Pz.Kpfw. VII"
@@ -487,14 +513,69 @@ msgstr "Jagdpanzer IV"
 msgid "Chassis_G184_Windhund"
 msgstr "Windhund"
 
+msgid "Chassis_G185_Leopard_120_Verbessert"
+msgstr "Leopard 120 Verbessert"
+
 msgid "Chassis_G186_Schwertwal"
 msgstr "Schwertwal"
+
+msgid "Chassis_G187_Taschenratte"
+msgstr "Taschenratte"
+
+msgid "Chassis_G188_LeKpz_Borkenkafer"
+msgstr "leKpz Borkenkäfer"
+
+msgid "Chassis_G189_Hirschkafer"
+msgstr "Hirschkäfer"
 
 msgid "Chassis_G18_JagdPanther"
 msgstr "Jagdpanther"
 
 msgid "Chassis_G18_JagdPanther_2"
 msgstr "Jagdpanther verstärkteketten"
+
+msgid "Chassis_G23_Grille"
+msgstr "Grille"
+
+msgid "Chassis_G23_Grille_2"
+msgstr "Grille verstärkteketten"
+
+msgid "Chassis_G24_VK3002DB"
+msgstr "VK 30.02 (D)"
+
+msgid "Chassis_G24_VK3002DB_2"
+msgstr "VK 30.02 (D) verstärkteketten"
+
+msgid "Chassis_G24_VK3002DB_2_short"
+msgstr ""
+"VK 30.02 (D)\n"
+"verstärkteketten"
+
+msgid "Chassis_G24_VK3002DB_short"
+msgstr "VK 30.02 (D)"
+
+msgid "Chassis_G25_PzII_Luchs"
+msgstr "Luchs"
+
+msgid "Chassis_G25_PzII_Luchs_2"
+msgstr "Luchs verstärkteketten"
+
+msgid "Chassis_G26_VK1602"
+msgstr "VK 16.02 Leopard"
+
+msgid "Chassis_G26_VK1602_2"
+msgstr "VK 16.02 Leopard verstärkteketten"
+
+msgid "Chassis_G27_VK3001P"
+msgstr "VK 30.01 (P)"
+
+msgid "Chassis_G27_VK3001P_2"
+msgstr "VK 30.01 (P) verstärkteketten"
+
+msgid "Chassis_G27_VK3001P_2_short"
+msgstr ""
+"VK 30.01 (P)\n"
+"verstärkteketten"
 
 msgid "Chassis_G37_Ferdinand"
 msgstr "Ferdinand"
@@ -508,6 +589,21 @@ msgstr "Elefant"
 msgid "Chassis_G37_Ferdinand_short"
 msgstr "Ferdinand"
 
+msgid "Chassis_G40_Nashorn"
+msgstr "Nashorn"
+
+msgid "Chassis_G40_Nashorn_2"
+msgstr "Nashorn verstärkteketten"
+
+msgid "Chassis_G42_Maus"
+msgstr "Maus"
+
+msgid "Chassis_G43_Sturer_Emil"
+msgstr "Schwere Betonknacker"
+
+msgid "Chassis_G43_Sturer_Emil_2"
+msgstr "Pz.Sfl. für 12,8 cm K. 40"
+
 msgid "Chassis_G44_JagdTiger"
 msgstr "Jagdtiger"
 
@@ -520,6 +616,32 @@ msgstr "Jagdtiger verstärkteketten"
 msgid "Chassis_G44_JagdTiger_short"
 msgstr "Jagdtiger"
 
+msgid "Chassis_G45_G_Tiger"
+msgstr "G.W. Tiger"
+
+msgid "Chassis_G45_G_Tiger_2"
+msgstr "G.W. Tiger verstärkteketten"
+
+msgid "Chassis_G45_G_Tiger_2_short"
+msgstr ""
+"G.W. Tiger\n"
+"verstärkteketten"
+
+msgid "Chassis_G45_G_Tiger_short"
+msgstr "G.W. Tiger"
+
+msgid "Chassis_G49_G_Panther"
+msgstr "G.W. Panther"
+
+msgid "Chassis_G49_G_Panther_2"
+msgstr "G.W. Panther verstärkteketten"
+
+msgid "Chassis_G54_E-50"
+msgstr "E 50"
+
+msgid "Chassis_G54_E-50_2"
+msgstr "E 50 verstärkteketten"
+
 msgid "Chassis_G55_E-75"
 msgstr "E 75"
 
@@ -529,23 +651,144 @@ msgstr "E 75 verstärkteketten"
 msgid "Chassis_G56_E-100"
 msgstr "E 100"
 
+msgid "Chassis_G57_PzVI_Tiger_P"
+msgstr "Tiger (P)"
+
+msgid "Chassis_G57_PzVI_Tiger_P_2"
+msgstr "Tiger (P) verstärkteketten"
+
+msgid "Chassis_G57_PzVI_Tiger_P_2_short"
+msgstr ""
+"Tiger (P)\n"
+"verstärkteketten"
+
+msgid "Chassis_G57_PzVI_Tiger_P_short"
+msgstr "Tiger (P)"
+
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
+
+msgid "Chassis_G58_VK4502P7"
+msgstr "VK 45.02 (P) Ausf. B7"
+
+msgid "Chassis_G58_VK4502P7_short"
+msgstr "VK 45.02 (P) Ausf. B7"
+
+msgid "Chassis_G58_VK4502P_2"
+msgstr "VK 45.02(P) Ausf. B verstärkteketten"
+
+msgid "Chassis_G58_VK4502P_2_short"
+msgstr ""
+"VK 45.02(P) Ausf. B\n"
+"verstärkteketten"
 
 msgid "Chassis_G58_VK4502P_short"
 msgstr "VK 45.02(P) Ausf. B"
 
+msgid "Chassis_G61_G_E"
+msgstr "G.W. E 100"
+
+msgid "Chassis_G64_Panther_II"
+msgstr "Panther II"
+
+msgid "Chassis_G64_Panther_II_2"
+msgstr "Panther II verstärkteketten"
+
+msgid "Chassis_G64_Panther_II_2_short"
+msgstr ""
+"Panther II\n"
+"verstärkteketten"
+
+msgid "Chassis_G64_Panther_II_short"
+msgstr "Panther II"
+
+msgid "Chassis_G66_VK2801"
+msgstr "VK 28.01"
+
+msgid "Chassis_G66_VK2801_2"
+msgstr "VK 28.01 verstärkteketten"
+
+msgid "Chassis_G66_VK2801_2_short"
+msgstr ""
+"VK 28.01\n"
+"verstärkteketten"
+
+msgid "Chassis_G66_VK2801_short"
+msgstr "VK 28.01"
+
+msgid "Chassis_G67_VK4502A"
+msgstr "VK 45.02 (P) Ausf. A"
+
+msgid "Chassis_G67_VK4502A_2"
+msgstr "VK 45.02 (P) Ausf. A verstärkteketten"
+
+msgid "Chassis_G67_VK4502A_2_short"
+msgstr ""
+"VK 45.02 (P) Ausf. A\n"
+"verstärkteketten"
+
+msgid "Chassis_G67_VK4502A_short"
+msgstr "VK 45.02 (P) Ausf. A"
+
 msgid "Chassis_G72_JagdPz_E100"
 msgstr "Jagdpanzer E 100"
 
-msgid "Chassis_G72_JagdPz_E100_FEP23"
-msgstr "Sturmgeschütz E 100 Ketten"
+msgid "Chassis_G72_JagdPz_E100_7x7"
+msgstr "Jagdpanzer E 100"
+
+msgid "Chassis_G73_E50_Ausf_M"
+msgstr "E 50 Ausf. M"
+
+msgid "Chassis_G81_Pz_IV_AusfH"
+msgstr "Pz.Kpfw. IV Ausf. G"
+
+msgid "Chassis_G81_Pz_IV_AusfH_2"
+msgstr "Pz.Kpfw. IV Ausf. H"
 
 msgid "Chassis_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 
+msgid "Chassis_G82_Pz_II_AusfG"
+msgstr "VK 9.01"
+
+msgid "Chassis_G82_Pz_II_AusfG_2"
+msgstr "Pz.Kpfw. II Ausf. G"
+
 msgid "Chassis_G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
+
+msgid "Chassis_G88_Indien_Panzer"
+msgstr "B-PS 102"
+
+msgid "Chassis_G88_Indien_Panzer_2"
+msgstr "Indien-Panzer"
+
+msgid "Chassis_G89_Leopard1"
+msgstr "Leopard 1"
+
+msgid "Chassis_G91_Pro_Ag_A"
+msgstr "Leopard Prototyp A1"
+
+msgid "Chassis_G91_Pro_Ag_A_2"
+msgstr "Leopard Prototyp A2"
+
+msgid "Chassis_G94_GW_Tiger_P"
+msgstr "G.W. Tiger (P)"
+
+msgid "Chassis_G94_GW_Tiger_P_2"
+msgstr "G.W. Tiger (P) verstärkteketten"
+
+msgid "Chassis_G96_VK3002M"
+msgstr "VK 30.02 (M)"
+
+msgid "Chassis_G96_VK3002M_2"
+msgstr "VK 30.02 Ausf. A"
+
+msgid "Chassis_G97_Waffentrager_IV"
+msgstr "Waffenträger auf Pz. IV für 12,8 cm"
+
+msgid "Chassis_G97_Waffentrager_IV_2"
+msgstr "Waffenträger auf Pz. IV für 15 cm"
 
 msgid "Chassis_G98_WT_auf_E_100_Phonix"
 msgstr "WT auf E 100 Phönix"
@@ -556,11 +799,11 @@ msgstr "Waffenträger auf E 100 (P)"
 msgid "Chassis_G98_Waffentrager_E100_WO"
 msgstr "WT 12"
 
-msgid "Chassis_GW_Elefant"
-msgstr "G.W. Tiger (P)"
+msgid "Chassis_G99_RhB_Waffentrager"
+msgstr "Rhm.-B. WT"
 
-msgid "Chassis_GW_Elefant_2"
-msgstr "G.W. Tiger (P) verstärkteketten"
+msgid "Chassis_G99_RhB_Waffentrager_2"
+msgstr "Rhm.-B. WT verstärkteketten"
 
 msgid "Chassis_GW_Mk_IVe"
 msgstr "Light Tank Mk. VIB"
@@ -574,35 +817,6 @@ msgstr "G.Pz. Mk. VI (e)"
 msgid "Chassis_GW_Mk_IVe_short"
 msgstr "Light Tank Mk. VIB"
 
-msgid "Chassis_G_E"
-msgstr "G.W. E 100"
-
-msgid "Chassis_G_Panther_1"
-msgstr "G.W. Panther"
-
-msgid "Chassis_G_Panther_2"
-msgstr "G.W. Panther verstärkteketten"
-
-msgid "Chassis_G_Tiger"
-msgstr "G.W. Tiger"
-
-msgid "Chassis_G_Tiger2"
-msgstr "G.W. Tiger verstärkteketten"
-
-msgid "Chassis_G_Tiger2_short"
-msgstr ""
-"G.W. Tiger\n"
-"verstärkteketten"
-
-msgid "Chassis_G_Tiger_short"
-msgstr "G.W. Tiger"
-
-msgid "Chassis_Indien_Panzer"
-msgstr "B-PS 102"
-
-msgid "Chassis_Indien_Panzer_2"
-msgstr "Indien-Panzer"
-
 msgid "Chassis_JagdPantherII"
 msgstr "Jagdpanther II"
 
@@ -611,9 +825,6 @@ msgstr "Jagdpanther II verstärkteketten"
 
 msgid "Chassis_JagdTiger_SdKfz_185"
 msgstr "Jagdtiger 8,8"
-
-msgid "Chassis_Leopard1"
-msgstr "Leopard 1"
 
 msgid "Chassis_Lowe"
 msgstr "Löwe"
@@ -624,34 +835,8 @@ msgstr "Panzerjäger 38 Ausf. H"
 msgid "Chassis_Marder_III_2"
 msgstr "Panzerjäger 38 Ausf. M"
 
-msgid "Chassis_Nashorn"
-msgstr "Nashorn"
-
-msgid "Chassis_Nashorn_2"
-msgstr "Nashorn verstärkteketten"
-
-msgid "Chassis_Panther_II"
-msgstr "Panther II"
-
-msgid "Chassis_Panther_II_2"
-msgstr "Panther II verstärkteketten"
-
-msgid "Chassis_Panther_II_2_short"
-msgstr ""
-"Panther II\n"
-"verstärkteketten"
-
-msgid "Chassis_Panther_II_short"
-msgstr "Panther II"
-
 msgid "Chassis_Panther_M10"
 msgstr "Panther/M10"
-
-msgid "Chassis_Pro_Ag_A"
-msgstr "Leopard Prototyp A1"
-
-msgid "Chassis_Pro_Ag_A_2"
-msgstr "Leopard Prototyp A2"
 
 msgid "Chassis_Pz38_NA_1"
 msgstr "Pz.Kpfw. 38 (t) n.A."
@@ -682,26 +867,6 @@ msgstr "VK 6.01"
 msgid "Chassis_PzI_ausf_C_2"
 msgstr "VK 6.02"
 
-msgid "Chassis_PzVI_Tiger_P"
-msgstr "Tiger (P)"
-
-msgid "Chassis_PzVI_Tiger_P_2"
-msgstr "Tiger (P) verstärkteketten"
-
-msgid "Chassis_PzVI_Tiger_P_2_short"
-msgstr ""
-"Tiger (P)\n"
-"verstärkteketten"
-
-msgid "Chassis_PzVI_Tiger_P_short"
-msgstr "Tiger (P)"
-
-msgid "Chassis_Pz_II_AusfG"
-msgstr "VK 9.01"
-
-msgid "Chassis_Pz_II_AusfG_2"
-msgstr "Pz.Kpfw. II Ausf. G"
-
 msgid "Chassis_Pz_IV_AusfA"
 msgstr "Pz.Kpfw. IV Ausf. A"
 
@@ -713,12 +878,6 @@ msgstr "Pz.Kpfw. IV Ausf. C"
 
 msgid "Chassis_Pz_IV_AusfD_2"
 msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Chassis_Pz_IV_AusfH"
-msgstr "Pz.Kpfw. IV Ausf. G"
-
-msgid "Chassis_Pz_IV_AusfH_2"
-msgstr "Pz.Kpfw. IV Ausf. H"
 
 msgid "Chassis_Pz_Sfl_IVb"
 msgstr "Pz.Sfl. IVb"
@@ -732,18 +891,6 @@ msgstr "Pz.Sfl. IVc"
 msgid "Chassis_Pz_Sfl_IVc_2"
 msgstr "Pz.Sfl. IVc verstärkteketten"
 
-msgid "Chassis_RhB_Waffentrager"
-msgstr "Rhm.-B. WT"
-
-msgid "Chassis_RhB_Waffentrager_2"
-msgstr "Rhm.-B. WT verstärkteketten"
-
-msgid "Chassis_Sturer_Emil"
-msgstr "Schwere Betonknacker"
-
-msgid "Chassis_Sturer_Emil_2"
-msgstr "Pz.Sfl. für 12,8 cm K. 40"
-
 msgid "Chassis_T-15"
 msgstr "Pz.Kpfw. T 15"
 
@@ -756,60 +903,20 @@ msgstr "VK 20.01 (III)"
 msgid "Chassis_VK2001DB_2"
 msgstr "VK 20.01 (D)"
 
-msgid "Chassis_VK2801"
-msgstr "VK 28.01"
-
-msgid "Chassis_VK2801_2"
-msgstr "VK 28.01 verstärkteketten"
-
-msgid "Chassis_VK2801_2_short"
-msgstr ""
-"VK 28.01\n"
-"verstärkteketten"
-
-msgid "Chassis_VK2801_short"
-msgstr "VK 28.01"
-
 msgid "Chassis_VK3002DB_V1"
 msgstr "VK 30.01 (D)"
 
 msgid "Chassis_VK3002DB_V1_2"
 msgstr "VK 30.01 (D) verstärkteketten"
 
-msgid "Chassis_VK3002M"
-msgstr "VK 30.02 (M)"
-
-msgid "Chassis_VK3002M_2"
-msgstr "VK 30.02 Ausf. A"
-
-msgid "Chassis_VK4502A"
-msgstr "VK 45.02 (P) Ausf. A"
-
-msgid "Chassis_VK4502A_2"
-msgstr "VK 45.02 (P) Ausf. A verstärkteketten"
-
-msgid "Chassis_VK4502A_2_short"
-msgstr ""
-"VK 45.02 (P) Ausf. A\n"
-"verstärkteketten"
-
 msgid "Chassis_VK4502A_SH"
 msgstr "VK 40.02 (A)"
-
-msgid "Chassis_VK4502A_short"
-msgstr "VK 45.02 (P) Ausf. A"
 
 msgid "Chassis_VK7201"
 msgstr "VK 72.01 (K)"
 
 msgid "Chassis_Waffentrager_E100"
 msgstr "Waffenträger auf E 100"
-
-msgid "Chassis_Waffentrager_IV"
-msgstr "Waffenträger auf Pz. IV für 12,8 cm"
-
-msgid "Chassis_Waffentrager_IV_2"
-msgstr "Waffenträger auf Pz. IV für 15 cm"
 
 msgid "Chrysler_361B"
 msgstr "Chrysler 361B"
@@ -830,6 +937,18 @@ msgstr ""
 "Continental\n"
 "AVI-1790-8"
 
+msgid "DB_603_A1"
+msgstr "DB 603 A1"
+
+msgid "DB_603_A2"
+msgstr "DB 603 A2"
+
+msgid "DB_603_mit_mechanischer_Aufladung"
+msgstr "DB 603 mit mechanischer Aufladung"
+
+msgid "DB_603_mit_mechanischer_Aufladung_short"
+msgstr "DB 603 mit Aufladung"
+
 msgid "DW_II"
 msgstr "Durchbruchswagen 2"
 
@@ -844,18 +963,6 @@ msgstr ""
 
 msgid "DW_II_short"
 msgstr "D.W. 2"
-
-msgid "Daimler-Benz_DB-603"
-msgstr "DB 603 mit mechanischer Aufladung"
-
-msgid "Daimler-Benz_DB-603A2"
-msgstr "MB 507"
-
-msgid "Daimler-Benz_DB-603A2_short"
-msgstr "MB 507"
-
-msgid "Daimler-Benz_DB-603_short"
-msgstr "DB 603 mit Aufladung"
 
 msgid "Daimler-Benz_MB-809"
 msgstr "Daimler-Benz MB 809"
@@ -898,19 +1005,6 @@ msgstr "Dicker Max"
 msgid "DickerMax_short_special"
 msgstr "Отличный обзор и углы склонения орудия, высокий разовый урон"
 
-msgid "E-100"
-msgstr "E 100"
-
-msgid "E-100_descr"
-msgstr ""
-"В июне 1943 года компания Adlerwerke получила заказ на разработку танка E "
-"100. Однако в 1944 году все работы над тяжёлыми танками были прекращены. К "
-"концу войны было изготовлено шасси прототипа, захваченное впоследствии "
-"британской армией."
-
-msgid "E-100_short"
-msgstr "E 100"
-
 msgid "E-25"
 msgstr "E 25"
 
@@ -931,38 +1025,11 @@ msgstr ""
 msgid "E-25_short_special"
 msgstr "Отличная мобильность, скорострельность и маскировка"
 
-msgid "E-50"
-msgstr "E 50"
-
 msgid "E-50_FL"
 msgstr "E 50 FL"
 
 msgid "E-50_FL_short"
 msgstr "E 50 FL"
-
-msgid "E-50_descr"
-msgstr ""
-"В 1945 году Е 50 должен был стать основным немецким средним танком и "
-"заменить «Пантеру» и «Пантеру II». Работы над танком были прекращены на "
-"стадии эскизного проектирования."
-
-msgid "E-50_short"
-msgstr "E 50"
-
-msgid "E-75"
-msgstr "E 75"
-
-msgid "E-75_descr"
-msgstr ""
-"В 1945 году E 75 должен был стать основным немецким тяжёлым танком и "
-"заменить «Тигра II». Работы над танком были прекращены на стадии эскизного "
-"проектирования."
-
-msgid "E-75_short"
-msgstr "E 75"
-
-msgid "E50_Ausf_M"
-msgstr "E 50 Ausf. M"
 
 msgid "E50_Ausf_M_7x7"
 msgstr "E 50 Ausf. M 7x7"
@@ -979,26 +1046,8 @@ msgstr ""
 msgid "E50_Ausf_M_7x7_short"
 msgstr "E 50 M 7x7"
 
-msgid "E50_Ausf_M_descr"
-msgstr ""
-"Одним из требований, выдвигаемых военными к танкам E-серии, было перенесение"
-" трансмиссии в кормовую часть корпуса. Однако в процессе разработки танков E"
-" 50 и E 75 для ускорения работы была полностью заимствована компоновка "
-"моторно-трансмиссионного отделения танка Tiger II, что полностью исключало "
-"перенос трансмиссии назад. E 50 Ausf. M — реконструкция проекта E 50 с "
-"задним расположением трансмиссии."
-
-msgid "E50_Ausf_M_short"
-msgstr "E 50 M"
-
 msgid "Engine_Auf_Panther"
 msgstr "Maybach HL 295 Ausf. A"
-
-msgid "Flakmausketten_FEP"
-msgstr "Flakmausketten"
-
-msgid "Flakmausturm_FEP"
-msgstr "Flakmausturm für 8,8 cm Flakzwilling"
 
 msgid "FuG10"
 msgstr "FuG 10"
@@ -1093,6 +1142,9 @@ msgstr "Fu 7S"
 msgid "Fu_7_90"
 msgstr "Fu 7/90"
 
+msgid "Fu_8"
+msgstr "Fu 8"
+
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
 
@@ -1111,8 +1163,37 @@ msgstr "?empty?"
 msgid "G00_Bomber_SH_short"
 msgstr "Брандер"
 
+msgid "G02_Hummel"
+msgstr "Hummel"
+
+msgid "G02_Hummel_descr"
+msgstr ""
+"Осенью 1942 года фирма Alkett приступила к разработке новой САУ со 150-мм "
+"орудием. Для ускорения производства предусматривалось максимальное "
+"использование уже имеющихся узлов и агрегатов Pz. III и Pz. IV. САУ "
+"производилась на том же шасси, что и тяжёлая самоходная противотанковая "
+"установка Nashorn. Всего было выпущено 714 машин и 150 подвозчиков "
+"боеприпасов на этой же базе."
+
+msgid "G02_Hummel_short"
+msgstr "Hummel"
+
+msgid "G03_PzV_Panther"
+msgstr "Panther"
+
+msgid "G03_PzV_Panther_descr"
+msgstr ""
+"Этот знаменитый танк выпускался с января 1943 по апрель 1945 года. Всего "
+"было выпущено 5796 машин, не считая восьми шасси серии F."
+
+msgid "G03_PzV_Panther_short"
+msgstr "Panther"
+
 msgid "G04"
 msgstr "G04"
+
+msgid "G04_PzVI_Tiger_I"
+msgstr "Tiger I"
 
 msgid "G04_PzVI_Tiger_IA"
 msgstr "Tiger I L/56"
@@ -1134,6 +1215,17 @@ msgstr "Медведь"
 msgid "G04_PzVI_Tiger_I_SHXXI_B_short"
 msgstr "Медведь"
 
+msgid "G04_PzVI_Tiger_I_descr"
+msgstr ""
+"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
+" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
+" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
+"на Курской Дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
+" I» использовался до конца войны. Всего было выпущено 1354 танка."
+
+msgid "G04_PzVI_Tiger_I_short"
+msgstr "Tiger I"
+
 msgid "G05_StuG_40_AusfG"
 msgstr "StuG III Ausf. G"
 
@@ -1147,6 +1239,19 @@ msgstr ""
 
 msgid "G05_StuG_40_AusfG_short"
 msgstr "StuG III G"
+
+msgid "G06_PzII"
+msgstr "Pz.Kpfw. II"
+
+msgid "G06_PzII_descr"
+msgstr ""
+"Последняя модификация лёгкого танка серии Pz. II. Основное отличие от "
+"предыдущих вариантов — усиленное бронирование, орудие 2 cm KwK 38 и "
+"улучшенные смотровые приборы. В период с марта 1941 по декабрь 1942 года "
+"было выпущено 524 машины."
+
+msgid "G06_PzII_short"
+msgstr "Pz. II"
 
 msgid "G100_Gtraktor_Krupp"
 msgstr "Großtraktor - Krupp"
@@ -1186,6 +1291,21 @@ msgstr ""
 
 msgid "G101_StuG_III_short"
 msgstr "StuG III B"
+
+msgid "G102_Pz_III"
+msgstr "Pz.Kpfw. III Ausf. E"
+
+msgid "G102_Pz_III_descr"
+msgstr ""
+"Заказ на создание боевой гусеничной машины массой 15 тонн с пушечным "
+"вооружением поступил ещё в 1935 году. И хотя масса первой крупносерийной "
+"машины Pz.Kpfw. III Ausf. E уже достигла 19,5 тонн, её конструкция была "
+"признана удачной, и количество машин в серии достигло 96. Последующие "
+"модификации выпускались ещё более крупными партиями, в результате чего Pz. "
+"Kpfw. III стал самым массовым танком Вермахта."
+
+msgid "G102_Pz_III_short"
+msgstr "Pz. III E"
 
 msgid "G103_RU_251"
 msgstr "Spähpanzer Ru 251"
@@ -1352,6 +1472,22 @@ msgstr "Steyr WT"
 
 msgid "G109_Steyr_WT_short_special"
 msgstr "Комфортное орудие, хорошая маскировка"
+
+msgid "G10_PzIII_AusfJ"
+msgstr "Pz.Kpfw. III Ausf. J"
+
+msgid "G10_PzIII_AusfJ_descr"
+msgstr ""
+"Выпуск модификации J начался с марта 1941 года. Машина помимо усиления "
+"бронирования получила новое весьма удачное 50-мм орудие KwK38, а 1067 машин "
+"были вооружены орудием с ещё большей пробиваемостью — KwK39. Попытка "
+"установить 75-мм орудие (модификация N) была признана неудачной, и самыми "
+"крупносерийными стали модификации J, L и M с хорошо зарекомендовавшими себя "
+"50-миллиметровками. Всего была выпущена 5691 машина, из них 1969 с "
+"длинноствольной и 2391 с короткоствольной 50-мм пушкой."
+
+msgid "G10_PzIII_AusfJ_short"
+msgstr "Pz. III J"
 
 msgid "G110_Typ_205"
 msgstr "Mäuschen"
@@ -1555,9 +1691,9 @@ msgstr ""
 msgid "G117_Toldi_III_long_special"
 msgstr ""
 "Немецкий лёгкий танк III уровня с хорошей динамикой и приличными "
-"показателями маскировки. Из-за слабого обзора заниматься разведкой может "
-"быть опасно. Намного полезнее будет оперативно занять ключевую позицию и "
-"активно помогать команде в атаке или обороне."
+"показателями маскировки. Из-за слабого обзора вести разведку может быть "
+"опасно. Намного полезнее будет быстро занять ключевую позицию и активно "
+"помогать команде в атаке или обороне."
 
 msgid "G117_Toldi_III_short"
 msgstr "Toldi III"
@@ -1800,6 +1936,17 @@ msgstr ""
 msgid "G126_HWK_12_short"
 msgstr "HWK 12"
 
+msgid "G12_Ltraktor"
+msgstr "Leichttraktor"
+
+msgid "G12_Ltraktor_descr"
+msgstr ""
+"В 1930–1934 гг. было изготовлено четыре опытных танка, различавшихся по "
+"вооружению, составу экипажа, массе и особенностям ходовой части."
+
+msgid "G12_Ltraktor_short"
+msgstr "L.Tr."
+
 msgid "G134_PzKpfw_VII"
 msgstr "Pz.Kpfw. VII"
 
@@ -1932,6 +2079,22 @@ msgstr "MKA"
 
 msgid "G139_MKA_short_special"
 msgstr "Достойная мобильность, универсальность использования"
+
+msgid "G13_VK3001H"
+msgstr "VK 30.01 (H)"
+
+msgid "G13_VK3001H_descr"
+msgstr ""
+"Заказ на танк был выдан 9 сентября 1939 года. В процессе разработки инженеры"
+" компании Henschel активно использовали наработки по проекту DW II. Первые "
+"два прототипа были готовы к марту 1942 года, ещё два были построены к "
+"октябрю. Прототипы активно испытывались на заводском полигоне, однако без "
+"башни и вооружения. По окончании испытаний два шасси были переделаны в "
+"тяжёлые истребители танков. Шесть башен, изготовленных компанией Krupp, были"
+" установлены на «Атлантическом валу»."
+
+msgid "G13_VK3001H_short"
+msgstr "VK 30.01 H"
 
 msgid "G140_HWK_30"
 msgstr "HWK 30"
@@ -2192,6 +2355,22 @@ msgstr "KPz 3 Pr.07HK"
 
 msgid "G159_KPZ_3_Project_07_HK_short_special"
 msgstr "Осадный режим, низкий силуэт"
+
+msgid "G15_VK3601H"
+msgstr "VK 36.01 (H)"
+
+msgid "G15_VK3601H_descr"
+msgstr ""
+"Немецкий опытный тяжёлый танк времён Второй мировой войны, разработанный "
+"компанией Henschel, дальнейшее развитие проекта VK 30.01 (H). Проект стал "
+"одним из этапов разработки танка «Тигр». Всего в начале 1942 года было "
+"построено 8 шасси и 1 прототип. В ходе работы над прототипом были отработаны"
+" многие технические решения, которые впоследствии послужили основой при "
+"разработке тяжёлых танков Германии во Второй мировой войне. В дальнейшем "
+"шасси использовались в качестве базы для ремонтно-эвакуационных машин."
+
+msgid "G15_VK3601H_short"
+msgstr "VK 36.01 H"
 
 msgid "G160_Pz_Kpfw_35_R_mit_T_26_Turm"
 msgstr "Pz.Kpfw. 35 R"
@@ -2468,6 +2647,9 @@ msgstr "T 54D"
 msgid "G169_T_54D_short_special"
 msgstr "Точное орудие, усиленное бронирование"
 
+msgid "G16_PzVIB_Tiger_II"
+msgstr "Tiger II"
+
 msgid "G16_PzVIB_Tiger_II_F_long_special"
 msgstr ""
 "Немецкий тяжёлый танк VII уровня, представляющий серьёзную опасность для "
@@ -2477,6 +2659,19 @@ msgstr ""
 
 msgid "G16_PzVIB_Tiger_II_F_short_special"
 msgstr "Крепкая броня, точное орудие"
+
+msgid "G16_PzVIB_Tiger_II_descr"
+msgstr ""
+"Наиболее защищённый танк с самой мощной противотанковой пушкой, но с "
+"перегруженной моторно-трансмисcионной группой и ходовой частью, а также со "
+"слишком большой массой. При условии навязывания противнику огневого боя на "
+"большой дистанции преимущества «Тигра II» в вооружении и броневой защите "
+"были подавляющими. Однако из-за большой массы, низкой надёжности двигателя и"
+" трансмиссии, а также вследствие небольшого количества произведённых машин "
+"«Тигр II» не оказал серьёзного влияния на ход боевых действий."
+
+msgid "G16_PzVIB_Tiger_II_short"
+msgstr "Tiger II"
 
 msgid "G170_PzKpfwIV_Ausf_F2"
 msgstr "Pz.Kpfw. IV Ausf. F2"
@@ -2769,6 +2964,31 @@ msgstr ""
 msgid "G184_Windhund_short_special"
 msgstr "Гидропневматическая подвеска, высокое бронепробитие"
 
+msgid "G185_Leopard_120_Verbessert"
+msgstr "Leopard 120 Verbessert"
+
+msgid "G185_Leopard_120_Verbessert_descr"
+msgstr ""
+"В конце 1970-х годов немецкие военные задумались об установке 120-мм "
+"гладкоствольного орудия от разрабатываемого Leopard 2 на все танки Leopard "
+"1. Это значительно повысило бы их огневую мощь. Рассматривались различные "
+"варианты модернизации, однако после запуска серийного производства Leopard 2"
+" от идеи отказались, чтобы не создавать дефицит орудий и не снижать темпы "
+"выпуска новых танков."
+
+msgid "G185_Leopard_120_Verbessert_long_special"
+msgstr ""
+"Игровой стиль Leopard 120 Verbessert будет знаком каждому, кто имел дело с "
+"классическими снайперскими средними танками. Защищённость машины оставляет "
+"желать лучшего, однако у неё отличные параметры подвижности и огневой мощи. "
+"Эта «стеклянная пушка» зачастую должна находиться на значительном расстоянии"
+" от противника, ведь именно на дальней дистанции лучше всего раскрывается её"
+" снайперская специализация, усиленная уникальной системой повышения "
+"точности."
+
+msgid "G185_Leopard_120_Verbessert_short"
+msgstr "Leopard 120"
+
 msgid "G186_Schwertwal"
 msgstr "Schwertwal"
 
@@ -2791,14 +3011,95 @@ msgstr ""
 "Schwertwal — немецкий штурмовой тяжёлый танк X уровня, вооружённый 15-см "
 "орудием с высоким уроном за выстрел. Танк отлично подходит для ближнего боя "
 "благодаря крепкой башне, в которой нет уязвимых зон. Кроме того, на машине "
-"установлены ракетные ускорители с увеличенным временем действия, которые "
-"позволяют увеличить базовую подвижность."
+"установлены реактивные ускорители с увеличенным временем действия, которые "
+"улучшают базовую подвижность."
 
 msgid "G186_Schwertwal_short"
 msgstr "Schwertwal"
 
 msgid "G186_Schwertwal_short_special"
 msgstr "Ракетные ускорители, отличное бронирование башни"
+
+msgid "G187_Taschenratte"
+msgstr "Taschenratte"
+
+msgid "G187_Taschenratte_descr"
+msgstr ""
+"Проект модернизации Panzerkampfwagen VIII «Maus», в котором особое внимание "
+"уделили оптимизации корпуса. Перераспределение углов наклона и толщины "
+"бронелистов повысило защиту без значительного увеличения массы, а "
+"доработанная башня исключила вероятность рикошета снарядов в крышу корпуса. "
+"Двигатель и трансмиссию переместили в кормовую часть, а башню — ближе к "
+"центру массы, что должно было положительно сказаться на развесовке и "
+"внутреннем пространстве. Танк планировалось оснастить системой обнаружения "
+"мин и защитой от ОМП (в т. ч. от радиации), однако проект закрыли из-за "
+"нерешённой проблемы низкой мобильности."
+
+msgid "G187_Taschenratte_long_special"
+msgstr ""
+"Taschenratte — сверхтяжёлый монстр, который жертвует своей мобильностью в "
+"пользу ультимативной бронезащиты. Важным отличием от остальных "
+"высокоуровневых немецких тяжёлых танков является количество зон брони с "
+"рациональными углами наклона. Taschenratte великолепно показывает себя в "
+"обороне и методичных прорывах линий обороны противника. Огневая мощь усилена"
+" вспомогательной огневой системой, которая расширяет боевые возможности "
+"машины."
+
+msgid "G187_Taschenratte_short"
+msgstr "Taschenratte"
+
+msgid "G188_LeKpz_Borkenkafer"
+msgstr "leKpz Borkenkäfer"
+
+msgid "G188_LeKpz_Borkenkafer_descr"
+msgstr ""
+"В 1970-х годах в Германии начали разработку универсального шасси для лёгких "
+"гусеничных машин Бундесвера. Одним из проектов с новой ходовой стал лёгкий "
+"танк с неофициальным названием Borkenkäfer (Короед). Машина обладала "
+"достаточно мощным орудием (до 105 мм) и отменными параметрами подвижности. "
+"Высокую точность стрельбы в любых погодных условиях обеспечивала современная"
+" СУО с двухканальным прицелом и двумя дальномерами. Из-за сложности системы "
+"управления огнём программа редуцировалась в проект PUMA (Panzer Unter "
+"Minimalen Aufwand — танк с минимальными расходами), а затем закрылась. И "
+"хотя шасси было построено, машина существовала только на чертежах."
+
+msgid "G188_LeKpz_Borkenkafer_long_special"
+msgstr ""
+"Главная особенность Borkenkäfer — это комбинация великолепной мобильности и "
+"комфортного орудия. Машина способна выполнять широкий спектр боевых задач в "
+"зависимости от текущих условий на карте. На начальных этапах сражения "
+"Borkenkäfer занимается классической разведкой и контрразведкой, а в середине"
+" и завершающей стадии реализует свою огневую мощь. Кроме того, благодаря "
+"экспериментальной системе целеуказания противника машина обладает "
+"расширенными возможностями для ведения разведки."
+
+msgid "G188_LeKpz_Borkenkafer_short"
+msgstr "Borkenkäfer"
+
+msgid "G189_Hirschkafer"
+msgstr "Hirschkäfer"
+
+msgid "G189_Hirschkafer_descr"
+msgstr ""
+"Проект немецкой противотанковой САУ конца 1970-х годов на базе танка Leopard"
+" 1 с автоматом заряжания. Предполагалось, что машина сможет эффективно "
+"поражать танки противника с дистанций, на которых ответный огонь не "
+"представлял бы угрозы. Однако выяснилось, что с этой задачей отлично "
+"справляется новейший танк Бундесвера Leopard 2, который активно "
+"разрабатывался в то время. В итоге от постройки опытного образца самоходки "
+"было решено отказаться."
+
+msgid "G189_Hirschkafer_long_special"
+msgstr ""
+"Hirschkäfer представляет собой квинтэссенцию снайперского стиля. Её орудие "
+"обладает выдающимися параметрами разброса и комфорта стрельбы, а "
+"великолепная подвижность обеспечивает свободу перемещения по полю боя. "
+"Однако командиру следует действовать осторожно — эта машина не прощает "
+"ошибок. Грамотный выбор позиции и выдержка позволят выбрать идеальный момент"
+" для совершения усиленного выстрела."
+
+msgid "G189_Hirschkafer_short"
+msgstr "Hirschkäfer"
 
 msgid "G18_JagdPanther"
 msgstr "Jagdpanther"
@@ -2825,11 +3126,86 @@ msgstr ""
 msgid "G20_Marder_II_short"
 msgstr "Marder II"
 
+msgid "G23_Grille"
+msgstr "Grille"
+
+msgid "G23_Grille_descr"
+msgstr ""
+"Немецкая самоходная гаубица времён Второй мировой войны. Создана на шасси "
+"чехословацкого лёгкого танка Pz.Kpfw. 38(t). Производство данного типа САУ "
+"велось с 1943 по 1944 годы. Всего было выпущено 282 машины."
+
+msgid "G23_Grille_short"
+msgstr "Grille"
+
+msgid "G24_VK3002DB"
+msgstr "VK 30.02 (D)"
+
+msgid "G24_VK3002DB_descr"
+msgstr ""
+"Весенний прототип 1942 г. должен был представлять собой доработанный проект "
+"концерна Daimler-Benz. Была разработана новая ходовая часть с торсионной "
+"подвеской и восемью опорными катками, расположенными в шахматном порядке. В "
+"качестве силовой установки планировалось использовать бензиновый двигатель "
+"Maybach HL 210 P45. На машину предполагалось установить 75-мм орудие KwK 42 "
+"L/71, но в итоге предпочтение было отдано проекту компании MAN — будущему "
+"танку Pz.Kpfw. V «Panther». Ни один прототип VK 30.02 (DB) полностью "
+"закончен не был."
+
+msgid "G24_VK3002DB_short"
+msgstr "VK 30.02 D"
+
+msgid "G25_PzII_Luchs"
+msgstr "Pz.Kpfw. II Luchs"
+
 msgid "G25_PzII_Luchs_SHXXI_B"
 msgstr "Заяц"
 
 msgid "G25_PzII_Luchs_SHXXI_B_short"
 msgstr "Заяц"
+
+msgid "G25_PzII_Luchs_descr"
+msgstr ""
+"Основными отличиями данной машины от Pz.Kpfw. II Ausf. С являлись новый "
+"корпус, башня и ходовая с шахматным расположением опорных катков. Данная "
+"разведывательная машина обладала высокими характеристиками, однако в связи с"
+" дороговизной был произведён всего 131 танк модификации L."
+
+msgid "G25_PzII_Luchs_short"
+msgstr "Luchs"
+
+msgid "G26_VK1602"
+msgstr "VK 16.02 Leopard"
+
+msgid "G26_VK1602_descr"
+msgstr ""
+"Дизайн VK 16.02, получившего название «Леопард», основывался на более ранних"
+" разработках Panzer II Ausf. J (VK 16.01) и Panzer II Ausf. M (VK 13.01). "
+"Макет был готов в мае–июне 1942 года, а первый прототип закончен к 1 "
+"сентября 1942 года. Полномасштабное производство должно было начаться в "
+"апреле 1943 года. Программой «Panzerprogramm 41» было предусмотрено "
+"производство 339 танков Leopard (105 к декабрю 1943 года и ещё 150 к "
+"середине 1944 года). Однако производство танка так и не было начато. Позже "
+"башня «Леопарда» была установлена на бронемашину Sd.Kfz.234/2 «Пума»."
+
+msgid "G26_VK1602_short"
+msgstr "Leopard"
+
+msgid "G27_VK3001P"
+msgstr "VK 30.01 (P)"
+
+msgid "G27_VK3001P_descr"
+msgstr ""
+"Идея проекта нового танка компании Porsche появилась ещё в 1939 году, когда "
+"была разработана новая концепция. После многочисленных согласований 5 марта "
+"1941 года были разработаны чертежи, а в июле 1941 был изготовлен корпус из "
+"мягкой стали. Корпус и шасси прошли ходовые испытания, в том числе с "
+"навесным оборудованием для рытья траншей. Был сделан только один деревянный "
+"макет башни, а также деревянный макет корпуса. В 1942 году проект закрыли в "
+"пользу новых тяжёлых танков."
+
+msgid "G27_VK3001P_short"
+msgstr "VK 30.01 P"
 
 msgid "G32_PzV_PzIV_CN_long_special"
 msgstr ""
@@ -2905,18 +3281,45 @@ msgstr ""
 "Машина создана на базе «Тигра» Порше. Всего в апреле – мае 1943 года было "
 "изготовлено 90 машин, которые впервые были использованы в Курской битве."
 
-msgid "G42_Maus_FEP23"
-msgstr "Flakpanzer VIII Flakmaus"
+msgid "G40_Nashorn"
+msgstr "Nashorn"
 
-msgid "G42_Maus_FEP23_descr"
+msgid "G40_Nashorn_descr"
 msgstr ""
-"Проект зенитной самоходной установки на базе сверхтяжёлого танка Maus. К "
-"принятию на вооружение рассматривались различные варианты орудийных систем "
-"на сверхтяжёлом шасси, включая сдвоенные 88-мм орудия. Машина не была "
-"изготовлена."
+"Полное название ПТ-САУ Nashorn («Носорог») — 8,8 cm PaK 43/1 auf "
+"Geschützwagen III/IV (Sf). До 1944 года называлась Hornisse («Шершень»). "
+"Производилась на том же шасси, что и тяжёлая САУ артподдержки Hummel. "
+"Впервые использована в бою летом 1943 года на Восточном фронте. Всего было "
+"выпущено 494 машины."
 
-msgid "G42_Maus_FEP23_short"
-msgstr "Flakmaus"
+msgid "G40_Nashorn_short"
+msgstr "Nashorn"
+
+msgid "G42_Maus"
+msgstr "Maus"
+
+msgid "G42_Maus_descr"
+msgstr ""
+"Разрабатывался с июня 1942 по июль 1944 года. Было изготовлено два "
+"прототипа, из которых только один получил башню с вооружением."
+
+msgid "G42_Maus_short"
+msgstr "Maus"
+
+msgid "G43_Sturer_Emil"
+msgstr "Sturer Emil"
+
+msgid "G43_Sturer_Emil_descr"
+msgstr ""
+"Немецкая опытная ПТ-САУ. Создана в 1942 году в ходе эксперимента по "
+"установке опытного 128-мм противотанкового орудия на удлинённое шасси танка "
+"VK 30.01 (H). Всего было выпущено две машины, которые использовались в "
+"боевых действиях на Южном фронте летом-осенью 1942 года. Из-за выявленных в "
+"ходе фронтовых испытаний многочисленных недостатков машина не вошла в "
+"серийное производство."
+
+msgid "G43_Sturer_Emil_short"
+msgstr "St. Emil"
 
 msgid "G44_JagdTiger"
 msgstr "Jagdtiger"
@@ -2943,8 +3346,93 @@ msgstr ""
 "было выпущено всего, по разным данным, от 70 до 79 ПТ-САУ, поставленных на "
 "вооружение 653-го и 512-го тяжёлых батальонов истребителей танков."
 
+msgid "G45_G_Tiger"
+msgstr "G.W. Tiger"
+
+msgid "G45_G_Tiger_descr"
+msgstr ""
+"Разработка САУ на базе Pz.Kpfw. VIB Tiger II началась в 1942 году. Проект "
+"предполагал создание общего самоходного лафета для 170-мм пушки 17 cm Kanone"
+" 72 и 210-мм мортиры 21 cm Mörser 18/1. Концепция данной САУ подразумевала "
+"возможность использования артиллерийских систем как с машины, так и с "
+"грунта. В 1945 году была начата сборка экспериментального образца."
+
+msgid "G45_G_Tiger_short"
+msgstr "G.W. Tiger"
+
+msgid "G49_G_Panther"
+msgstr "G.W. Panther"
+
+msgid "G49_G_Panther_descr"
+msgstr ""
+"Разрабатывалась компанией Krupp в 1943–1944 гг. Был построен только макет "
+"САУ."
+
+msgid "G49_G_Panther_short"
+msgstr "G.W. Panther"
+
+msgid "G54_E-50"
+msgstr "E 50"
+
+msgid "G54_E-50_descr"
+msgstr ""
+"В 1945 году Е 50 должен был стать основным немецким средним танком и "
+"заменить «Пантеру» и «Пантеру II». Работы над танком были прекращены на "
+"стадии эскизного проектирования."
+
+msgid "G54_E-50_short"
+msgstr "E 50"
+
+msgid "G55_E-75"
+msgstr "E 75"
+
+msgid "G55_E-75_descr"
+msgstr ""
+"В 1945 году E 75 должен был стать основным немецким тяжёлым танком и "
+"заменить «Тигра II». Работы над танком были прекращены на стадии эскизного "
+"проектирования."
+
+msgid "G55_E-75_short"
+msgstr "E 75"
+
+msgid "G56_E-100"
+msgstr "E 100"
+
+msgid "G56_E-100_descr"
+msgstr ""
+"В июне 1943 года компания Adlerwerke получила заказ на разработку танка E "
+"100. Однако в 1944 году все работы над тяжёлыми танками были прекращены. К "
+"концу войны было изготовлено шасси прототипа, захваченное впоследствии "
+"британской армией."
+
+msgid "G56_E-100_short"
+msgstr "E 100"
+
+msgid "G57_PzVI_Tiger_P"
+msgstr "Tiger (P)"
+
+msgid "G57_PzVI_Tiger_P_descr"
+msgstr ""
+"26 мая 1941 года Адольф Гитлер приказал доктору Порше и компании Henschel "
+"разработать прототипы нового тяжёлого танка, которые были продемонстрированы"
+" фюреру 20 апреля 1942 года. Машина разработки Порше не пошла в производство"
+" из-за слишком сложной системы привода и управления, а также необходимости "
+"использования большого количества меди. Позднее 90 оставшихся корпусов "
+"переделали в ПТ-САУ Ferdinand."
+
+msgid "G57_PzVI_Tiger_P_short"
+msgstr "Tiger (P)"
+
 msgid "G58_VK4502P"
+msgstr "VK 45.02 (P) Ausf. B"
+
+msgid "G58_VK4502P7"
 msgstr "VK 45.02 (P) Ausf. B7"
+
+msgid "G58_VK4502P7_descr"
+msgstr ""
+"Вариант с передним и задним расположением башни был разработан Фердинандом "
+"Порше. Серийно не выпускался."
 
 msgid "G58_VK4502P7_long_special"
 msgstr ""
@@ -2952,6 +3440,9 @@ msgstr ""
 "разовым уроном, большим запасом прочности, а также великолепным лобовым "
 "бронированием, но слабой бронёй бортов и плохой подвижностью. Отличается "
 "задним расположением башни, из-за чего требует особой тактики."
+
+msgid "G58_VK4502P7_short"
+msgstr "VK 45.02 B7"
 
 msgid "G58_VK4502P7_short_special"
 msgstr "Крепкая лобовая броня, мощное орудие"
@@ -2962,7 +3453,54 @@ msgstr ""
 "Порше. Серийно не выпускался."
 
 msgid "G58_VK4502P_short"
-msgstr "VK 45.02 B7"
+msgstr "VK 45.02 B"
+
+msgid "G61_G_E"
+msgstr "G.W. E 100"
+
+msgid "G61_G_E_descr"
+msgstr ""
+"Проект установки 210-мм мортиры на шасси танка E 100. Прототип построен не "
+"был."
+
+msgid "G61_G_E_short"
+msgstr "G.W. E 100"
+
+msgid "G64_Panther_II"
+msgstr "Panther II"
+
+msgid "G64_Panther_II_descr"
+msgstr ""
+"Планы создания машины появились уже в 1943 году. В 1944 г. были заказаны два"
+" прототипа с башнями от «Пантеры I». К 1945 году компанией MAN был "
+"изготовлен только один прототип."
+
+msgid "G64_Panther_II_short"
+msgstr "Panther II"
+
+msgid "G66_VK2801"
+msgstr "VK 28.01"
+
+msgid "G66_VK2801_descr"
+msgstr ""
+"Разведывательный танк, разрабатывавшийся компанией Daimler-Benz. В металле "
+"проект реализован не был."
+
+msgid "G66_VK2801_short"
+msgstr "VK 28.01"
+
+msgid "G67_VK4502A"
+msgstr "VK 45.02 (P) Ausf. A"
+
+msgid "G67_VK4502A_descr"
+msgstr ""
+"Проект развития немецкого тяжёлого танка VK 45.01 (P). Опытный экземпляр "
+"построен не был, так как 10-цилиндровый двигатель Porsche не прошёл "
+"испытания. В дальнейшем уже изготовленные для танка башни были установлены "
+"на первые серийные Tiger II."
+
+msgid "G67_VK4502A_short"
+msgstr "VK 45.02 A"
 
 msgid "G70_PzIV_Hydro_long_special"
 msgstr ""
@@ -2977,18 +3515,17 @@ msgstr "Хорошие бронепробиваемость и УВН, высо�
 msgid "G72_JagdPz_E100"
 msgstr "Jagdpanzer E 100"
 
-msgid "G72_JagdPz_E100_FEP23"
-msgstr "Sturmgeschütz E 100"
+msgid "G72_JagdPz_E100_7x7"
+msgstr "Jagdpanzer E 100 7x7"
 
-msgid "G72_JagdPz_E100_FEP23_descr"
+msgid "G72_JagdPz_E100_7x7_descr"
 msgstr ""
-"По замыслу разработчиков тяжёлое 50-мм роторное орудие должно было расчищать"
-" атакуемый участок, сметая живую силу противника и уничтожая его позиции: от"
-" пулемётных гнёзд до долговременных огневых точек. Проект не был реализован "
-"из-за свёртывания работ по роторному орудию."
+"На базе танка E 100 предполагалось выпускать САУ артподдержки, зенитную "
+"самоходную установку и ПТ-САУ, однако эти проекты даже не успели начать "
+"разрабатывать."
 
-msgid "G72_JagdPz_E100_FEP23_short"
-msgstr "StuG E 100"
+msgid "G72_JagdPz_E100_7x7_short"
+msgstr "Jg. E 100 7x7"
 
 msgid "G72_JagdPz_E100_descr"
 msgstr ""
@@ -2999,11 +3536,29 @@ msgstr ""
 msgid "G72_JagdPz_E100_short"
 msgstr "Jg.Pz. E 100"
 
+msgid "G73_E50_Ausf_M"
+msgstr "E 50 Ausf. M"
+
+msgid "G73_E50_Ausf_M_descr"
+msgstr ""
+"Одним из требований, выдвигаемых военными к танкам E-серии, было перенесение"
+" трансмиссии в кормовую часть корпуса. Однако в процессе разработки танков E"
+" 50 и E 75 для ускорения работы была полностью заимствована компоновка "
+"моторно-трансмиссионного отделения танка Tiger II, что полностью исключало "
+"перенос трансмиссии назад. E 50 Ausf. M — реконструкция проекта E 50 с "
+"задним расположением трансмиссии."
+
+msgid "G73_E50_Ausf_M_short"
+msgstr "E 50 M"
+
 msgid "G77_PzIV_Schmalturm_SHXXI_B"
 msgstr "Волк"
 
 msgid "G77_PzIV_Schmalturm_SHXXI_B_short"
 msgstr "Волк"
+
+msgid "G81_Pz_IV_AusfH"
+msgstr "Pz.Kpfw. IV Ausf. H"
 
 msgid "G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
@@ -3032,6 +3587,27 @@ msgstr "Pz. IV H Ankou"
 msgid "G81_Pz_IV_AusfH_GuP_short_special"
 msgstr "Достойное бронепробитие, хорошие УВН, наличие экранов"
 
+msgid "G81_Pz_IV_AusfH_descr"
+msgstr ""
+"Pz. IV модификации G выпускался с мая 1942 года. В апреле 1943 года параллельно начался выпуск машин модификации Н, которая стала самой массовой в истории Pz. IV. Дополнительное бронирование на первых моделях было навесным, а впоследствии было заменено единой плитой толщиной 80 мм.\n"
+"Была установлена новая трансмиссия, хотя и несколько снизившая скорость машины, но более надёжная. Также на танки этих модификаций стали ставить экраны толщиной 5-8 мм. Всего было выпущено 3774 машины модификации H."
+
+msgid "G81_Pz_IV_AusfH_short"
+msgstr "Pz. IV H"
+
+msgid "G82_Pz_II_AusfG"
+msgstr "Pz.Kpfw. II Ausf. G"
+
+msgid "G82_Pz_II_AusfG_descr"
+msgstr ""
+"Немецкий лёгкий разведывательный танк времён Второй мировой войны. Являлся "
+"модернизированным вариантом Pz. II c улучшенным корпусом и ходовой, более "
+"мощным двигателем, а также улучшенным обзором за счёт наличия смотровых "
+"приборов для радиста и механика-водителя."
+
+msgid "G82_Pz_II_AusfG_short"
+msgstr "Pz. II G"
+
 msgid "G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
 
@@ -3056,6 +3632,44 @@ msgstr "Aufkl.Pz. V"
 msgid "G85_Aufklarungspanzer_V_short_special"
 msgstr "Хорошая динамика, отличное бронепробитие подкалиберными снарядами"
 
+msgid "G88_Indien_Panzer"
+msgstr "Indien-Panzer"
+
+msgid "G88_Indien_Panzer_descr"
+msgstr ""
+"Проект, разработанный в рамках конкурса по созданию среднего танка для нужд "
+"индийской армии. Работы велись в 1954–1955 гг. компаниями Porsche, Daimler-"
+"Benz и Zahnradfabrik AG of Friedrichshafen. Однако машина оказалась слишком "
+"сложной для производства в Индии, и все работы по проекту были свёрнуты."
+
+msgid "G88_Indien_Panzer_short"
+msgstr "Indien-Pz."
+
+msgid "G89_Leopard1"
+msgstr "Leopard 1"
+
+msgid "G89_Leopard1_descr"
+msgstr ""
+"Основной боевой танк ФРГ. Работы по созданию машины начались в 1956 году. "
+"Первые опытные образцы были построены в 1965 году на заводе Krauss-Maffei. "
+"Состоял на вооружении более чем в 10 странах мира."
+
+msgid "G89_Leopard1_short"
+msgstr "Leopard 1"
+
+msgid "G91_Pro_Ag_A"
+msgstr "Leopard Prototyp A"
+
+msgid "G91_Pro_Ag_A_descr"
+msgstr ""
+"Прототип, разработанный в рамках конкурса по созданию среднего танка для "
+"нужд Бундесвера. Разрабатывался в 1960–1961 гг. Всего было изготовлено 26 "
+"опытных образцов, которые проходили испытания до 1963 года. Являлся "
+"непосредственным предшественником среднего танка Leopard."
+
+msgid "G91_Pro_Ag_A_short"
+msgstr "Leopard PT A"
+
 msgid "G92_VK7201_long_special"
 msgstr ""
 "Немецкий тяжёлый танк X уровня с высоким разовым уроном, неплохой "
@@ -3066,6 +3680,45 @@ msgstr ""
 
 msgid "G92_VK7201_short_special"
 msgstr "Отличная броня, хороший разовый урон"
+
+msgid "G94_GW_Tiger_P"
+msgstr "G.W. Tiger (P)"
+
+msgid "G94_GW_Tiger_P_descr"
+msgstr ""
+"Реконструкция внешнего облика тяжёлой САУ на удлинённом шасси «Тигра» "
+"Porsche. Известно, что Фердинанд Порше собирался заняться разработкой САУ, "
+"но планы так и не были реализованы."
+
+msgid "G94_GW_Tiger_P_short"
+msgstr "G.W. Tiger P"
+
+msgid "G96_VK3002M"
+msgstr "VK 30.02 (M)"
+
+msgid "G96_VK3002M_descr"
+msgstr ""
+"Средний танк, разработанный компанией MAN в рамках конкурса по созданию "
+"нового 30-ти тонного танка. Одновременно работы велись компанией Daimler-"
+"Benz. 13 мая 1942 года Министерству вооружения Германии были представлены "
+"сравнительные характеристики проектов. Предпочтение было отдано проекту MAN."
+" Танк был принят на вооружение под названием Pz.Kpfw. V «Пантера»."
+
+msgid "G96_VK3002M_short"
+msgstr "VK 30.02 M"
+
+msgid "G97_Waffentrager_IV"
+msgstr "Waffenträger auf Pz. IV"
+
+msgid "G97_Waffentrager_IV_descr"
+msgstr ""
+"ПТ-САУ, разработанная в феврале 1944 года на базе узлов и агрегатов PzIV. "
+"Существовала только в эскизах. Работы над проектом были прекращены в пользу "
+"аналогичной машины, разработанной на базе узлов и агрегатов Krupp "
+"Waffentrager 12,8 cm PaK 44 чешского производства."
+
+msgid "G97_Waffentrager_IV_short"
+msgstr "WT auf Pz. IV"
 
 msgid "G98_WT_auf_E_100_Phonix"
 msgstr "WT auf E 100 Phönix"
@@ -3142,6 +3795,22 @@ msgstr "WT 12"
 msgid "G98_Waffentrager_E100_WO_short_special"
 msgstr "Великолепное орудие, вращающаяся башня"
 
+msgid "G99_RhB_Waffentrager"
+msgstr "Rhm.-Borsig Waffenträger"
+
+msgid "G99_RhB_Waffentrager_descr"
+msgstr ""
+"Проект компании Rheinmetall-Borsig был разработан в рамках конкурса по "
+"созданию специального артиллерийского транспортёра. Машина позволяла не "
+"только перевозить артиллерийскую систему, но и вести огонь непосредственно с"
+" шасси. В конструкции предполагалось широко использовать детали ходовой "
+"части САУ Hetzer. Разработка велась с конца 1942 до середины 1944 года, "
+"однако из-за сложности конструкции, высокой стоимости и большой массы "
+"предпочтение было отдано проекту компании Ardelt."
+
+msgid "G99_RhB_Waffentrager_short"
+msgstr "Rhm.-B. WT"
+
 msgid "GT_101"
 msgstr "GT 101"
 
@@ -3161,54 +3830,6 @@ msgstr ""
 msgid "GW_Mk_VIe_short"
 msgstr "G.Pz. Mk. VI"
 
-msgid "GW_Tiger_P"
-msgstr "G.W. Tiger (P)"
-
-msgid "GW_Tiger_P_descr"
-msgstr ""
-"Реконструкция внешнего облика тяжёлой САУ на удлинённом шасси «Тигра» "
-"Porsche. Известно, что Фердинанд Порше собирался заняться разработкой САУ, "
-"но планы так и не были реализованы."
-
-msgid "GW_Tiger_P_short"
-msgstr "G.W. Tiger P"
-
-msgid "G_E"
-msgstr "G.W. E 100"
-
-msgid "G_E_descr"
-msgstr ""
-"Проект установки 210-мм мортиры на шасси танка E 100. Прототип построен не "
-"был."
-
-msgid "G_E_short"
-msgstr "G.W. E 100"
-
-msgid "G_Panther"
-msgstr "G.W. Panther"
-
-msgid "G_Panther_descr"
-msgstr ""
-"Разрабатывалась компанией Krupp в 1943–1944 гг. Был построен только макет "
-"САУ."
-
-msgid "G_Panther_short"
-msgstr "G.W. Panther"
-
-msgid "G_Tiger"
-msgstr "G.W. Tiger"
-
-msgid "G_Tiger_descr"
-msgstr ""
-"Разработка САУ на базе Pz.Kpfw. VIB Tiger II началась в 1942 году. Проект "
-"предполагал создание общего самоходного лафета для 170-мм пушки 17 cm Kanone"
-" 72 и 210-мм мортиры 21 cm Mörser 18/1. Концепция данной САУ подразумевала "
-"возможность использования артиллерийских систем как с машины, так и с "
-"грунта. В 1945 году была начата сборка экспериментального образца."
-
-msgid "G_Tiger_short"
-msgstr "G.W. Tiger"
-
 msgid "Ganz_VIII_VGT_107"
 msgstr "Ganz VIII. VGT. 107"
 
@@ -3217,27 +3838,6 @@ msgstr "General Motors 6V53"
 
 msgid "General_Motors_6V53T"
 msgstr "General Motors 6V53T"
-
-msgid "Grille"
-msgstr "Grille"
-
-msgid "Grille_descr"
-msgstr ""
-"Немецкая самоходная гаубица времён Второй мировой войны. Создана на шасси "
-"чехословацкого лёгкого танка Pz.Kpfw. 38(t). Производство данного типа САУ "
-"велось с 1943 по 1944 годы. Всего было выпущено 282 машины."
-
-msgid "Grille_mod_1"
-msgstr "Grille"
-
-msgid "Grille_short"
-msgstr "Grille"
-
-msgid "Grilleketten_ausf_A"
-msgstr "Grille"
-
-msgid "Grilleketten_ausf_B"
-msgstr "Grille verstärkteketten"
 
 msgid "Gun_1_G00_Bomber_SH"
 msgstr "?empty?"
@@ -3291,48 +3891,11 @@ msgstr "Hotchkiss"
 msgid "Hotchkiss_6_Zyl_Benzin_154_PS"
 msgstr "Hotchkiss 6-Zyl. Benzin 154 PS"
 
-msgid "Hotchkiss_6_Zyl_Benzin_164_PS"
-msgstr "Hotchkiss 6-Zyl. Benzin 190 PS"
+msgid "Hotchkiss_6_Zyl_Benzin_PT_I"
+msgstr "Hotchkiss 6-Zyl. Benzin PT I"
 
-msgid "Hotchkiss_6_Zyl_Benzin_195_PS"
-msgstr "Hotchkiss 6-Zyl. Benzin 230 PS"
-
-msgid "Hummel"
-msgstr "Hummel"
-
-msgid "Hummel_0"
-msgstr "Hummel"
-
-msgid "Hummel_Ausf_1943"
-msgstr "Hummel"
-
-msgid "Hummel_Ausf_1944"
-msgstr "Hummel verstärkteketten"
-
-msgid "Hummel_descr"
-msgstr ""
-"Осенью 1942 года фирма Alkett приступила к разработке новой САУ со 150-мм "
-"орудием. Для ускорения производства предусматривалось максимальное "
-"использование уже имеющихся узлов и агрегатов Pz. III и Pz. IV. САУ "
-"производилась на том же шасси, что и тяжёлая самоходная противотанковая "
-"установка Nashorn. Всего было выпущено 714 машин и 150 подвозчиков "
-"боеприпасов на этой же базе."
-
-msgid "Hummel_short"
-msgstr "Hummel"
-
-msgid "Indien_Panzer"
-msgstr "Indien-Panzer"
-
-msgid "Indien_Panzer_descr"
-msgstr ""
-"Проект, разработанный в рамках конкурса по созданию среднего танка для нужд "
-"индийской армии. Работы велись в 1954–1955 гг. компаниями Porsche, Daimler-"
-"Benz и Zahnradfabrik AG of Friedrichshafen. Однако машина оказалась слишком "
-"сложной для производства в Индии, и все работы по проекту были свёрнуты."
-
-msgid "Indien_Panzer_short"
-msgstr "Indien-Pz."
+msgid "Hotchkiss_6_Zyl_Benzin_PT_II"
+msgstr "Hotchkiss 6-Zyl. Benzin PT II"
 
 msgid "JagdPantherII"
 msgstr "Jagdpanther II"
@@ -3401,41 +3964,20 @@ msgstr "Krupp M305"
 msgid "Krupp_M311"
 msgstr "Krupp M311"
 
+msgid "Krupp_M311_LTr"
+msgstr "Krupp M311 (LTr)"
+
 msgid "LT-40_turm"
 msgstr "Pz.Kpfw. 38 (t) Ausf. A"
 
 msgid "Leichtertaktorketten"
 msgstr "Leichttraktor"
 
-msgid "LeichtertaktorkettenB"
-msgstr "Leichttraktor verstärkteketten"
-
-msgid "Leopard1"
-msgstr "Leopard 1"
-
 msgid "Leopard1_bob"
 msgstr "Leopard 1 BB"
 
 msgid "Leopard1_bob_short"
 msgstr "Leopard 1 BB"
-
-msgid "Leopard1_descr"
-msgstr ""
-"Основной боевой танк ФРГ. Работы по созданию машины начались в 1956 году. "
-"Первые опытные образцы были построены в 1965 году на заводе Krauss-Maffei. "
-"Состоял на вооружении более чем в 10 странах мира."
-
-msgid "Leopard1_short"
-msgstr "Leopard 1"
-
-msgid "Leopardketten_Ausf_A"
-msgstr "VK 16.02 Leopard"
-
-msgid "Leopardketten_Ausf_B"
-msgstr "VK 16.02 Leopard verstärkteketten"
-
-msgid "Leopardturm"
-msgstr "VK 16.02 Leopard"
 
 msgid "Lowe"
 msgstr "Löwe"
@@ -3466,22 +4008,8 @@ msgstr ""
 msgid "Lowe_short_special"
 msgstr "Точное и пробивное орудие, хорошая защищённость"
 
-msgid "Ltraktor"
-msgstr "Leichttraktor"
-
-msgid "Ltraktor_descr"
-msgstr ""
-"В 1930–1934 гг. было изготовлено четыре опытных танка, различавшихся по "
-"вооружению, составу экипажа, массе и особенностям ходовой части."
-
-msgid "Ltraktor_short"
-msgstr "L.Tr."
-
-msgid "Luchsketten_Ausf_A"
-msgstr "Luchs"
-
-msgid "Luchsketten_Ausf_B"
-msgstr "Luchs verstärkteketten"
+msgid "MAN_D2840_LXE"
+msgstr "MAN D2840 LXE"
 
 msgid "MB-503"
 msgstr "Daimler-Benz MB 503"
@@ -3489,53 +4017,29 @@ msgstr "Daimler-Benz MB 503"
 msgid "MB-503_short"
 msgstr "MB 503"
 
-msgid "MB-837"
-msgstr "MTU MB 837 Aa 500"
-
-msgid "MB-837-Aa"
-msgstr "MB 837 Aa"
-
 msgid "MB-837-Aa_A"
 msgstr "MB 837 Aa"
 
 msgid "MB-837-Ba-600"
 msgstr "MB 837 Ea 600"
 
-msgid "MB-837-Ea-600"
-msgstr "MB 837 Ea 600"
-
-msgid "MB-837A"
-msgstr "MTU MB 837 Ba 500"
-
-msgid "MB-837A_short"
-msgstr "MB 837 Ba-500"
-
-msgid "MB-838_CAM-500"
-msgstr "MTU MB 838 CaM 500"
-
-msgid "MB-838_CAM-500_1"
-msgstr "MTU MB 838 CaM 500A"
-
-msgid "MB-838_CAM-500_1_short"
-msgstr "MB 838 CaM 500A"
-
-msgid "MB-838_CAM-500_short"
-msgstr "MB 838 CaM 500"
-
-msgid "MB507"
-msgstr "DB 603 A2"
-
 msgid "MB507_7x7"
 msgstr "DB 603 A2"
-
-msgid "MB507_FEP"
-msgstr "Maybach 507 Ausf. F"
 
 msgid "MB517"
 msgstr "MB 517"
 
-msgid "MB517P"
+msgid "MB_507"
+msgstr "MB 507"
+
+msgid "MB_507_short"
+msgstr "MB 507"
+
+msgid "MB_517"
 msgstr "MB 517"
+
+msgid "MB_517_Spezialausfuehrung"
+msgstr "MB 517 Spezialausfuehrung"
 
 msgid "MB_803_12"
 msgstr "MB 803/12"
@@ -3549,9 +4053,6 @@ msgstr "MB 837 F"
 msgid "MB_837_K"
 msgstr "MB 837 K"
 
-msgid "MB_881"
-msgstr "MB 881"
-
 msgid "MB_881_P"
 msgstr "MB 881 P"
 
@@ -3560,6 +4061,48 @@ msgstr "MTU803"
 
 msgid "MTU_MB_833_Ea_500"
 msgstr "MTU MB 833 Ea-500"
+
+msgid "MTU_MB_837_Aa"
+msgstr "MTU MB 837 Aa"
+
+msgid "MTU_MB_837_Aa_500"
+msgstr "MTU MB 837 Aa-500"
+
+msgid "MTU_MB_837_Ba_500"
+msgstr "MTU MB 837 Ba-500"
+
+msgid "MTU_MB_837_Ba_500_I_P"
+msgstr "MTU MB 837 Ba-500 (I-P)"
+
+msgid "MTU_MB_837_Ba_500_I_P_short"
+msgstr "MTU MB 837 Ba-500 (I-P)"
+
+msgid "MTU_MB_837_Ba_500_short"
+msgstr "MTU MB 837 Ba-500"
+
+msgid "MTU_MB_837_Ea_600"
+msgstr "MTU MB 837 Ea-600"
+
+msgid "MTU_MB_838_CaM_500"
+msgstr "MTU MB 838 CaM-500"
+
+msgid "MTU_MB_838_CaM_500A"
+msgstr "MTU MB 838 CaM-500A"
+
+msgid "MTU_MB_838_CaM_500A_short"
+msgstr "MTU MB 838 CaM-500A"
+
+msgid "MTU_MB_838_CaM_500H"
+msgstr "MTU MB 838 CaM 500H"
+
+msgid "MTU_MB_838_CaM_500_short"
+msgstr "MTU MB 838 CaM-500"
+
+msgid "MTU_MB_838_CaM_501"
+msgstr "MTU MB 838 CaM 501"
+
+msgid "MTU_MB_881"
+msgstr "MTU MB 881"
 
 msgid "MTU_MB_8V837D"
 msgstr "MTU MB 8V837"
@@ -3603,43 +4146,18 @@ msgstr "Marder 38T"
 msgid "Marderturm"
 msgstr "Marder II"
 
-msgid "Maus"
-msgstr "Maus"
-
 msgid "Maus_7x7"
 msgstr "Maus 7x7"
 
 msgid "Maus_7x7_descr"
 msgstr ""
-"Самый защищённый серийный тяжёлый танк Второй мировой войны. Оснащался "
-"орудием с наибольшей бронепробиваемостью, но обладал перегруженными "
-"двигателем, трансмиссией, ходовой частью и был очень тяжёлым. Над корпусом с"
-" 1942 года работала фирма Henschel, а более технологичная башня стала уже "
-"второй разработкой фирмы Krupp для этой машины. В боях на большой дистанции "
-"преимущества Tiger II в огневой мощи и бронезащите были подавляющими перед "
-"всеми серийными танками антигитлеровской коалиции. Из-за слишком тяжёлой "
-"конструкции, перегруженности силовой установки и ходовой, а также небольшого"
-" количества построенных машин, Tiger II не смог оказать серьёзного влияния "
-"на ход боевых действий."
+"Разрабатывался с июня 1942 по июль 1944 года. Было изготовлено два "
+"прототипа, из которых только один получил башню с вооружением."
 
 msgid "Maus_7x7_short"
 msgstr "Maus 7x7"
 
-msgid "Maus_descr"
-msgstr ""
-"Разрабатывался с июня 1942 по июль 1944 года. Было изготовлено два "
-"прототипа, из которых только один получил башню с вооружением."
-
-msgid "Maus_short"
-msgstr "Maus"
-
-msgid "Mausketten"
-msgstr "Maus"
-
 msgid "Mausketten_7x7"
-msgstr "Maus"
-
-msgid "Mausturm"
 msgstr "Maus"
 
 msgid "Mausturm_7x7"
@@ -3672,6 +4190,14 @@ msgstr "2 x Maybach HL 66 P"
 msgid "Maybach_HL90"
 msgstr "Maybach HL 90"
 
+msgid "Maybach_HL_100_WT_IV"
+msgstr "Maybach HL 100 (WT IV)"
+
+msgid "Maybach_HL_100_WT_IV_short"
+msgstr ""
+"Maybach HL 100\n"
+"(WT IV)"
+
 msgid "Maybach_HL_108TR"
 msgstr "Maybach HL 108 TR"
 
@@ -3680,6 +4206,9 @@ msgstr "Maybach HL 108 TR R"
 
 msgid "Maybach_HL_116"
 msgstr "Maybach HL 116"
+
+msgid "Maybach_HL_116_Emil"
+msgstr "Maybach HL 116 (Emil)"
 
 msgid "Maybach_HL_116_S"
 msgstr "Maybach HL 116 S"
@@ -3690,8 +4219,16 @@ msgstr "Maybach HL 120 TR"
 msgid "Maybach_HL_120_TRM"
 msgstr "Maybach HL 120 TRM"
 
+msgid "Maybach_HL_120_TRM_112_Hummel"
+msgstr "Maybach HL 120 TRM 112 (Hummel)"
+
 msgid "Maybach_HL_120_TRM_112_R"
 msgstr "Maybach HL 120 TRM 112 R"
+
+msgid "Maybach_HL_120_TRM_112_R_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM 112 R"
 
 msgid "Maybach_HL_120_TRM_Ausf_H"
 msgstr "Maybach HL 120 TRM Ausf. H"
@@ -3702,11 +4239,19 @@ msgstr "Maybach HL 120 TRM V12"
 msgid "Maybach_HL_120_TRM_E"
 msgstr "Maybach HL 120 TRM (E)"
 
+msgid "Maybach_HL_120_TRM_E_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM (E)"
+
 msgid "Maybach_HL_120_TRM_F"
 msgstr "Maybach HL 120 TRM"
 
 msgid "Maybach_HL_120_TRM_G"
 msgstr "Maybach HL 120 TRM/G"
+
+msgid "Maybach_HL_120_TRM_Hummel"
+msgstr "Maybach HL 120 TRM (Hummel)"
 
 msgid "Maybach_HL_120_TRM_IV_1"
 msgstr "Maybach HL 120 TRM (IV/1)"
@@ -3717,8 +4262,18 @@ msgstr "Maybach HL 120 TRM (IV/2)"
 msgid "Maybach_HL_120_TRM_IV_F"
 msgstr "Maybach HL 120 TRM (F)"
 
+msgid "Maybach_HL_120_TRM_IV_F_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM (F)"
+
 msgid "Maybach_HL_120_TRM_IV_G"
 msgstr "Maybach HL 120 TRM (G)"
+
+msgid "Maybach_HL_120_TRM_IV_G_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM (G)"
 
 msgid "Maybach_HL_120_TRM_J"
 msgstr "Maybach HL 120 TRM/J"
@@ -3726,11 +4281,21 @@ msgstr "Maybach HL 120 TRM/J"
 msgid "Maybach_HL_120_TRM_L"
 msgstr "Maybach HL 120 TRM L"
 
+msgid "Maybach_HL_120_TRM_L_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM L"
+
 msgid "Maybach_HL_120_TRM_M"
 msgstr "Maybach HL 120 TRM/M"
 
 msgid "Maybach_HL_120_TRM_R"
 msgstr "Maybach HL 120 TRM R"
+
+msgid "Maybach_HL_120_TRM_R_short"
+msgstr ""
+"Maybach HL 120\n"
+"TRM R"
 
 msgid "Maybach_HL_120_TRM_x2"
 msgstr "2 x Maybach HL 120 TRM"
@@ -3744,6 +4309,11 @@ msgstr "Maybach HL 120 TR Ausf. H"
 msgid "Maybach_HL_120_TR_B"
 msgstr "Maybach HL 120 TR (B)"
 
+msgid "Maybach_HL_120_TR_B_short"
+msgstr ""
+"Maybach HL 120\n"
+"TR (B)"
+
 msgid "Maybach_HL_120_TR_E"
 msgstr "Maybach HL 120 TR/E"
 
@@ -3756,7 +4326,7 @@ msgstr "Maybach HL 150"
 msgid "Maybach_HL_157P"
 msgstr "Maybach HL 157 P"
 
-msgid "Maybach_HL_157P_A"
+msgid "Maybach_HL_157_P_A"
 msgstr "Maybach HL 157 P A"
 
 msgid "Maybach_HL_174"
@@ -3789,11 +4359,13 @@ msgstr "Maybach HL 230 P30"
 msgid "Maybach_HL_210_TRM_P30"
 msgstr "Maybach HL 210 TRM P30"
 
-msgid "Maybach_HL_210_TRM_P30L"
-msgstr "Argus 12LD330HL"
+msgid "Maybach_HL_210_TRM_P30_3002M"
+msgstr "Maybach HL 210 TRM P30 (3002M)"
 
-msgid "Maybach_HL_210_TRM_P30L_short"
-msgstr "Argus 12LD330HL"
+msgid "Maybach_HL_210_TRM_P30_3002M_short"
+msgstr ""
+"Maybach HL 210\n"
+"TRM P30 (3002M)"
 
 msgid "Maybach_HL_210_TRM_P30_A"
 msgstr "Maybach HL 210 TRM P30"
@@ -3802,6 +4374,22 @@ msgid "Maybach_HL_210_TRM_P30_A_short"
 msgstr ""
 "Maybach\n"
 "HL 210 TRM P30"
+
+msgid "Maybach_HL_210_TRM_P30_G"
+msgstr "Maybach HL 210 TRM P30 (G)"
+
+msgid "Maybach_HL_210_TRM_P30_G_short"
+msgstr ""
+"Maybach\n"
+"HL 210 TRM P30 (G)"
+
+msgid "Maybach_HL_210_TRM_P30_II"
+msgstr "Maybach HL 210 TRM P30 (II)"
+
+msgid "Maybach_HL_210_TRM_P30_II_short"
+msgstr ""
+"Maybach\n"
+"HL 210 TRM P30 (II)"
 
 msgid "Maybach_HL_210_TRM_P30_JP"
 msgstr "Maybach HL 210 TRM P30 (JP)"
@@ -3846,6 +4434,22 @@ msgstr ""
 "Maybach HL 210\n"
 "TRM P45"
 
+msgid "Maybach_HL_210_TRM_P45_GW_T"
+msgstr "Maybach HL 210 TRM P45 (GW T)"
+
+msgid "Maybach_HL_210_TRM_P45_GW_T_short"
+msgstr ""
+"Maybach HL 210\n"
+"TRM P45 (GW T)"
+
+msgid "Maybach_HL_210_TRM_P45_I"
+msgstr "Maybach HL 210 TRM P45 (I)"
+
+msgid "Maybach_HL_210_TRM_P45_I_short"
+msgstr ""
+"Maybach HL 210\n"
+"TRM P45 (I)"
+
 msgid "Maybach_HL_210_TRM_P45_short"
 msgstr ""
 "Maybach HL 210\n"
@@ -3871,6 +4475,46 @@ msgstr "Maybach HL 130 P50"
 
 msgid "Maybach_HL_230_TRM_P30"
 msgstr "Maybach HL 230 TRM P30"
+
+msgid "Maybach_HL_230_TRM_P30_3002D"
+msgstr "Maybach HL 230 TRM P30 (3002D)"
+
+msgid "Maybach_HL_230_TRM_P30_3002D_short"
+msgstr ""
+"Maybach HL 230\n"
+"TRM P30 (3002D)"
+
+msgid "Maybach_HL_230_TRM_P30_3002M"
+msgstr "Maybach HL 230 TRM P30 (3002M)"
+
+msgid "Maybach_HL_230_TRM_P30_3002M_short"
+msgstr ""
+"Maybach HL 230\n"
+"TRM P30 (3002M)"
+
+msgid "Maybach_HL_230_TRM_P30_50"
+msgstr "Maybach HL 230 TRM P30 (50)"
+
+msgid "Maybach_HL_230_TRM_P30_50_short"
+msgstr ""
+"Maybach\n"
+"HL 230 TRM P30 (50)"
+
+msgid "Maybach_HL_230_TRM_P30_G"
+msgstr "Maybach HL 230 TRM P30 (G)"
+
+msgid "Maybach_HL_230_TRM_P30_G_short"
+msgstr ""
+"Maybach\n"
+"HL 230 TRM P30 (G)"
+
+msgid "Maybach_HL_230_TRM_P30_II"
+msgstr "Maybach HL 230 TRM P30 (II)"
+
+msgid "Maybach_HL_230_TRM_P30_II_short"
+msgstr ""
+"Maybach\n"
+"HL 230 TRM P30 (II)"
 
 msgid "Maybach_HL_230_TRM_P30_JP"
 msgstr "Maybach HL 230 TRM P30 (JP)"
@@ -3902,6 +4546,22 @@ msgstr "DB 603F"
 msgid "Maybach_HL_230_TRM_P45"
 msgstr "Maybach HL 230 TRM P45"
 
+msgid "Maybach_HL_230_TRM_P45_GW_T"
+msgstr "Maybach HL 230 TRM P45 (GW T)"
+
+msgid "Maybach_HL_230_TRM_P45_GW_T_short"
+msgstr ""
+"Maybach HL 230\n"
+"TRM P45 (GW T)"
+
+msgid "Maybach_HL_230_TRM_P45_I"
+msgstr "Maybach HL 230 TRM P45 (I)"
+
+msgid "Maybach_HL_230_TRM_P45_I_short"
+msgstr ""
+"Maybach HL 230\n"
+"TRM P45 (I)"
+
 msgid "Maybach_HL_230_TRM_P45_MapsTraining_Player_HT_2"
 msgstr "Maybach HL 230 TRM P45"
 
@@ -3916,7 +4576,7 @@ msgstr ""
 "TRM P45"
 
 msgid "Maybach_HL_234"
-msgstr "Maybach NL 234"
+msgstr "Maybach HL 234"
 
 msgid "Maybach_HL_234K"
 msgstr "Maybach HL 234K"
@@ -3940,12 +4600,6 @@ msgstr "Maybach HL 295 (A)"
 
 msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
-
-msgid "Maybach_HL_234P60_E100_FEP"
-msgstr "Maybach Neues Projekt F"
-
-msgid "Maybach_HL_234P60_E100_FEP_short"
-msgstr "Maybach Neues Projekt F"
 
 msgid "Maybach_HL_234P60_P"
 msgstr "Maybach Neues Projekt P"
@@ -3981,14 +4635,6 @@ msgstr ""
 msgid "Maybach_HL_234_TRM_P45"
 msgstr "Maybach HL 234 TRM P45"
 
-msgid "Maybach_HL_234_TRM_P45_1"
-msgstr "Maybach HL 234 TRM P45 G.W."
-
-msgid "Maybach_HL_234_TRM_P45_1_short"
-msgstr ""
-"Maybach HL 234\n"
-"TRM P45 G.W."
-
 msgid "Maybach_HL_234_TRM_P45_Leicht"
 msgstr "Maybach HL 295 Ausf. A"
 
@@ -4011,11 +4657,41 @@ msgstr "Maybach HL 275"
 msgid "Maybach_HL_45P"
 msgstr "Maybach HL 45 P"
 
+msgid "Maybach_HL_45_P_II_G"
+msgstr "Maybach HL 45 P (II G)"
+
+msgid "Maybach_HL_45_P_II_G_short"
+msgstr ""
+"Maybach HL 45 P\n"
+"(II G)"
+
 msgid "Maybach_HL_57_TRM"
 msgstr "Maybach HL 57 TRM"
 
 msgid "Maybach_HL_62_TRM"
 msgstr "Maybach HL 62 TRM"
+
+msgid "Maybach_HL_66_P_II_G"
+msgstr "Maybach HL 66 P (II G)"
+
+msgid "Maybach_HL_66_P_II_G_short"
+msgstr ""
+"Maybach HL 66 P\n"
+"(II G)"
+
+msgid "Maybach_HL_66_P_II_L"
+msgstr "Maybach HL 66 P (II L)"
+
+msgid "Maybach_HL_90_II_L"
+msgstr "Maybach HL 90 (II L)"
+
+msgid "Maybach_HL_90_WT_IV"
+msgstr "Maybach HL 90 (WT IV)"
+
+msgid "Maybach_HL_90_WT_IV_short"
+msgstr ""
+"Maybach HL 90\n"
+"(WT IV)"
 
 msgid "Maybach_HL_98"
 msgstr "Maybach HL 98"
@@ -4026,7 +4702,25 @@ msgstr "Maybach HL 38 TR"
 msgid "Maybach_Neues_Projekt_90"
 msgstr "Maybach Neues Projekt 90"
 
+msgid "Maybach_Neues_Projekt_E_100"
+msgstr "Maybach Neues Projekt (E 100)"
+
+msgid "Maybach_Neues_Projekt_E_100_short"
+msgstr "Maybach Neues Projekt (E 100)"
+
+msgid "Maybach_Neues_Projekt_GW_E"
+msgstr "Maybach Neues Projekt (GW E)"
+
+msgid "Maybach_Neues_Projekt_GW_E_short"
+msgstr "Maybach Neues Projekt (GW E)"
+
 msgid "Maybach_Neues_Projekt_J"
+msgstr "Maybach Neues Projekt (J)"
+
+msgid "Maybach_Neues_Projekt_J_7x7"
+msgstr "Maybach Neues Projekt (J)"
+
+msgid "Maybach_Neues_Projekt_J_7x7_short"
 msgstr "Maybach Neues Projekt (J)"
 
 msgid "Maybach_Neues_Projekt_J_short"
@@ -4037,32 +4731,6 @@ msgstr "Meadows E.S.T.L."
 
 msgid "Mercedes_Benz_MB_507"
 msgstr "Mercedes-Benz MB 507"
-
-msgid "Nashorn"
-msgstr "Nashorn"
-
-msgid "Nashorn_descr"
-msgstr ""
-"Полное название ПТ-САУ Nashorn («Носорог») — 8,8 cm PaK 43/1 auf "
-"Geschützwagen III/IV (Sf). До 1944 года называлась Hornisse («Шершень»). "
-"Производилась на том же шасси, что и тяжёлая САУ артподдержки Hummel. "
-"Впервые использована в бою летом 1943 года на Восточном фронте. Всего было "
-"выпущено 494 машины."
-
-msgid "Nashorn_short"
-msgstr "Nashorn"
-
-msgid "Panther_II"
-msgstr "Panther II"
-
-msgid "Panther_II_descr"
-msgstr ""
-"Планы создания машины появились уже в 1943 году. В 1944 г. были заказаны два"
-" прототипа с башнями от «Пантеры I». К 1945 году компанией MAN был "
-"изготовлен только один прототип."
-
-msgid "Panther_II_short"
-msgstr "Panther II"
 
 msgid "Panther_M10"
 msgstr "Panther/M10"
@@ -4108,13 +4776,10 @@ msgstr ""
 msgid "PanzerJager_I_short"
 msgstr "Pz.Jäg. I"
 
+msgid "Porsche_16_Cyl"
+msgstr "Porsche 16 Cyl."
+
 msgid "Porsche_16_Cyl_Y"
-msgstr "Porsche Typ 212 NL"
-
-msgid "Porsche_16_Cyl_Y1"
-msgstr "Porsche 16 Cyl. Y"
-
-msgid "Porsche_16_Cyl_Y2"
 msgstr "Porsche Typ 212 NL"
 
 msgid "Porsche_Deutz_Typ180_2"
@@ -4124,6 +4789,22 @@ msgid "Porsche_Deutz_Typ180_2_short"
 msgstr ""
 "Porsche Deutz\n"
 "Typ 180/2"
+
+msgid "Porsche_Deutz_Typ_180_1B"
+msgstr "Porsche Deutz Typ 180/1B"
+
+msgid "Porsche_Deutz_Typ_180_1B_short"
+msgstr ""
+"Porsche Deutz\n"
+"Typ 180/1B"
+
+msgid "Porsche_Deutz_Typ_180_2B"
+msgstr "Porsche Deutz Typ 180/2B"
+
+msgid "Porsche_Deutz_Typ_180_2B_short"
+msgstr ""
+"Porsche Deutz\n"
+"Typ 180/2B"
 
 msgid "Porsche_Typ_100"
 msgstr "2x Porsche Typ 100"
@@ -4155,14 +4836,17 @@ msgstr "2x Porsche Typ 101/P"
 msgid "Porsche_Typ_205_2"
 msgstr "Porsche Typ 205/2"
 
-msgid "Porsche_Typ_220"
-msgstr "DB 603 A1"
+msgid "Porsche_Typ_212_NL"
+msgstr "Porsche Typ 212 NL"
 
 msgid "Praga_AE"
 msgstr "Praga AE"
 
 msgid "Praga_AusfIV"
 msgstr "Praga Ausf. IV"
+
+msgid "Praga_Ausf_IV_Rhm"
+msgstr "Praga Ausf. IV (Rhm)"
 
 msgid "Praga_C9"
 msgstr "Škoda V12 19.8 liter 450"
@@ -4179,6 +4863,9 @@ msgstr "Praga EPA/3"
 msgid "Praga_EPA_AC"
 msgstr "Praga EPA AC"
 
+msgid "Praga_EPA_AC_Grille"
+msgstr "Praga EPA AC (Grille)"
+
 msgid "Praga_NR"
 msgstr "Praga NR"
 
@@ -4193,51 +4880,6 @@ msgstr "Praga TNPS"
 
 msgid "Praga_TN_100"
 msgstr "Praga TN 100"
-
-msgid "Pro_Ag_A"
-msgstr "Leopard Prototyp A"
-
-msgid "Pro_Ag_A_descr"
-msgstr ""
-"Прототип, разработанный в рамках конкурса по созданию среднего танка для "
-"нужд Бундесвера. Разрабатывался в 1960–1961 гг. Всего было изготовлено 26 "
-"опытных образцов, которые проходили испытания до 1963 года. Являлся "
-"непосредственным предшественником среднего танка Leopard."
-
-msgid "Pro_Ag_A_short"
-msgstr "Leopard PT A"
-
-msgid "Pz-V_Shmallturm"
-msgstr "Pz.Kpfw. Panther Schmalturm"
-
-msgid "Pz-V_Shmallturm_short"
-msgstr ""
-"Pz.Kpfw. Panther\n"
-"Schmalturm"
-
-msgid "Pz-V_Standardketten"
-msgstr "Pz.Kpfw. Panther Ausf. A"
-
-msgid "Pz-V_Standardketten_short"
-msgstr ""
-"Pz.Kpfw. Panther\n"
-"Ausf. A"
-
-msgid "Pz-V_Standardturm"
-msgstr "Pz.Kpfw. Panther Ausf. G"
-
-msgid "Pz-V_Standardturm_short"
-msgstr ""
-"Pz.Kpfw. Panther\n"
-"Ausf. G"
-
-msgid "Pz-V_Vetstaerktketten"
-msgstr "Pz.Kpfw. Panther Ausf. G"
-
-msgid "Pz-V_Vetstaerktketten_short"
-msgstr ""
-"Pz.Kpfw. Panther\n"
-"Ausf. G"
 
 msgid "Pz35t"
 msgstr "Pz.Kpfw. 35 (t)"
@@ -4324,45 +4966,11 @@ msgstr "Pz. 38 (t)"
 msgid "PzI"
 msgstr "Pz.Kpfw. I"
 
-msgid "PzII"
-msgstr "Pz.Kpfw. II"
-
 msgid "PzIII-IV"
 msgstr "Pz.Kpfw. III/IV"
 
 msgid "PzIII-IV_ausf_B"
 msgstr "Pz.Kpfw. III/IV verstärkteketten"
-
-msgid "PzIII_A"
-msgstr "Pz.Kpfw. III Ausf. E"
-
-msgid "PzIII_A_descr"
-msgstr ""
-"Заказ на создание боевой гусеничной машины массой 15 тонн с пушечным "
-"вооружением поступил ещё в 1935 году. И хотя масса первой крупносерийной "
-"машины Pz.Kpfw. III Ausf. E уже достигла 19,5 тонн, её конструкция была "
-"признана удачной, и количество машин в серии достигло 96. Последующие "
-"модификации выпускались ещё более крупными партиями, в результате чего Pz. "
-"Kpfw. III стал самым массовым танком Вермахта."
-
-msgid "PzIII_A_short"
-msgstr "Pz. III E"
-
-msgid "PzIII_AusfJ"
-msgstr "Pz.Kpfw. III Ausf. J"
-
-msgid "PzIII_AusfJ_descr"
-msgstr ""
-"Выпуск модификации J начался с марта 1941 года. Машина помимо усиления "
-"бронирования получила новое весьма удачное 50-мм орудие KwK38, а 1067 машин "
-"были вооружены орудием с ещё большей пробиваемостью — KwK39. Попытка "
-"установить 75-мм орудие (модификация N) была признана неудачной, и самыми "
-"крупносерийными стали модификации J, L и M с хорошо зарекомендовавшими себя "
-"50-миллиметровками. Всего была выпущена 5691 машина, из них 1969 с "
-"длинноствольной и 2391 с короткоствольной 50-мм пушкой."
-
-msgid "PzIII_AusfJ_short"
-msgstr "Pz. III J"
 
 msgid "PzIII_Ausf_A"
 msgstr "Pz.Kpfw. III Ausf. A"
@@ -4386,12 +4994,6 @@ msgstr ""
 msgid "PzIII_IV_short"
 msgstr "Pz. III/IV"
 
-msgid "PzIIL_Grosseturm"
-msgstr "Luchs 5 cm"
-
-msgid "PzIIL_Luchsturm"
-msgstr "Luchs 2 cm"
-
 msgid "PzII_J"
 msgstr "Pz.Kpfw. II Ausf. J"
 
@@ -4406,31 +5008,8 @@ msgstr ""
 msgid "PzII_J_short"
 msgstr "Pz. II J"
 
-msgid "PzII_Luchs"
-msgstr "Pz.Kpfw. II Luchs"
-
-msgid "PzII_Luchs_descr"
-msgstr ""
-"Основными отличиями данной машины от Pz.Kpfw. II Ausf. С являлись новый "
-"корпус, башня и ходовая с шахматным расположением опорных катков. Данная "
-"разведывательная машина обладала высокими характеристиками, однако в связи с"
-" дороговизной был произведён всего 131 танк модификации L."
-
-msgid "PzII_Luchs_short"
-msgstr "Luchs"
-
 msgid "PzII_ausf_J"
 msgstr "Pz.Kpfw. II Ausf. J"
-
-msgid "PzII_descr"
-msgstr ""
-"Последняя модификация лёгкого танка серии Pz. II. Основное отличие от "
-"предыдущих вариантов — усиленное бронирование, орудие 2 cm KwK 38 и "
-"улучшенные смотровые приборы. В период с марта 1941 по декабрь 1942 года "
-"было выпущено 524 машины."
-
-msgid "PzII_short"
-msgstr "Pz. II"
 
 msgid "PzIIturm_ausf_J"
 msgstr "Pz.Kpfw. II Ausf. J"
@@ -4551,17 +5130,8 @@ msgstr "Panzerjäger I"
 msgid "PzJgd_ketten_II"
 msgstr "Panzerjäger I verstärkteketten"
 
-msgid "PzV"
-msgstr "Panther"
-
 msgid "PzV-IVketten"
 msgstr "Pz.Kpfw. V/IV"
-
-msgid "PzVI"
-msgstr "Tiger I"
-
-msgid "PzVIB_Tiger_II"
-msgstr "Tiger II"
 
 msgid "PzVIB_Tiger_II_F"
 msgstr "Tiger II (H)"
@@ -4586,19 +5156,6 @@ msgstr ""
 msgid "PzVIB_Tiger_II_F_short"
 msgstr "Tiger II (H)"
 
-msgid "PzVIB_Tiger_II_descr"
-msgstr ""
-"Наиболее защищённый танк с самой мощной противотанковой пушкой, но с "
-"перегруженной моторно-трансмисcионной группой и ходовой частью, а также со "
-"слишком большой массой. При условии навязывания противнику огневого боя на "
-"большой дистанции преимущества «Тигра II» в вооружении и броневой защите "
-"были подавляющими. Однако из-за большой массы, низкой надёжности двигателя и"
-" трансмиссии, а также вследствие небольшого количества произведённых машин "
-"«Тигр II» не оказал серьёзного влияния на ход боевых действий."
-
-msgid "PzVIB_Tiger_II_short"
-msgstr "Tiger II"
-
 msgid "PzVI_Anfangsturm_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. VI H Ausf. H2"
 
@@ -4621,31 +5178,8 @@ msgstr ""
 msgid "PzVI_Standardketten_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. VI H Ausf. H1"
 
-msgid "PzVI_Tiger_P"
-msgstr "Tiger (P)"
-
-msgid "PzVI_Tiger_P_descr"
-msgstr ""
-"26 мая 1941 года Адольф Гитлер приказал доктору Порше и компании Henschel "
-"разработать прототипы нового тяжёлого танка, которые были продемонстрированы"
-" фюреру 20 апреля 1942 года. Машина разработки Порше не пошла в производство"
-" из-за слишком сложной системы привода и управления, а также необходимости "
-"использования большого количества меди. Позднее 90 оставшихся корпусов "
-"переделали в ПТ-САУ Ferdinand."
-
-msgid "PzVI_Tiger_P_short"
-msgstr "Tiger (P)"
-
 msgid "PzVI_Vetstaerktketten_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
-
-msgid "PzVI_descr"
-msgstr ""
-"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
-" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
-" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
-"на Курской Дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
-" I» использовался до конца войны. Всего было выпущено 1354 танка."
 
 msgid "PzVI_descr_MapsTraining_Player_HT_2"
 msgstr ""
@@ -4699,27 +5233,6 @@ msgstr ""
 msgid "PzV_PzIV_short"
 msgstr "Pz. V/IV"
 
-msgid "PzV_descr"
-msgstr ""
-"Этот знаменитый танк выпускался с января 1943 по апрель 1945 года. Всего "
-"было выпущено 5796 машин, не считая восьми шасси серии F."
-
-msgid "PzV_short"
-msgstr "Panther"
-
-msgid "Pz_II_AusfG"
-msgstr "Pz.Kpfw. II Ausf. G"
-
-msgid "Pz_II_AusfG_descr"
-msgstr ""
-"Немецкий лёгкий разведывательный танк времён Второй мировой войны. Являлся "
-"модернизированным вариантом Pz. II c улучшенным корпусом и ходовой, более "
-"мощным двигателем, а также улучшенным обзором за счёт наличия смотровых "
-"приборов для радиста и механика-водителя."
-
-msgid "Pz_II_AusfG_short"
-msgstr "Pz. II G"
-
 msgid "Pz_IV_AusfA"
 msgstr "Pz.Kpfw. IV Ausf. A"
 
@@ -4750,24 +5263,17 @@ msgstr ""
 msgid "Pz_IV_AusfD_short"
 msgstr "Pz. IV D"
 
-msgid "Pz_IV_AusfH"
-msgstr "Pz.Kpfw. IV Ausf. H"
-
-msgid "Pz_IV_AusfH_descr"
-msgstr ""
-"Pz. IV модификации G выпускался с мая 1942 года. В апреле 1943 года параллельно начался выпуск машин модификации Н, которая стала самой массовой в истории Pz. IV. Дополнительное бронирование на первых моделях было навесным, а впоследствии было заменено единой плитой толщиной 80 мм.\n"
-"Была установлена новая трансмиссия, хотя и несколько снизившая скорость машины, но более надёжная. Также на танки этих модификаций стали ставить экраны толщиной 5-8 мм. Всего было выпущено 3774 машины модификации H."
-
-msgid "Pz_IV_AusfH_short"
-msgstr "Pz. IV H"
-
 msgid "Pz_Sfl_IVb"
 msgstr "Pz.Sfl. IVb"
 
 msgid "Pz_Sfl_IVb_descr"
 msgstr ""
-"Опытный образец САУ, вооружённый 105-мм гаубицей. Исходный вариант был разработан в 1939 году компанией Krupp. В 1940 году подвергся изменениям. Первые два прототипа машины были готовы 7 января 1942 года. В этом же году была выпущена опытная серия в количестве десяти САУ. Шесть из них были направлены в войска для испытаний,\n"
-"а четыре — в учебные подразделения Вермахта."
+"Опытный образец САУ, вооружённый 105-мм гаубицей. Исходный вариант был "
+"разработан в 1939 году компанией Krupp. В 1940 году подвергся изменениям. "
+"Первые два прототипа машины были готовы 7 января 1942 года. В этом же году "
+"была выпущена опытная серия в количестве десяти САУ. Шесть из них были "
+"направлены в войска для испытаний, а четыре — в учебные подразделения "
+"Вермахта."
 
 msgid "Pz_Sfl_IVb_short"
 msgstr "Pz.Sfl. IVb"
@@ -4806,22 +5312,6 @@ msgstr "Renault"
 
 msgid "Renault_V4_german"
 msgstr "Renault V4"
-
-msgid "RhB_Waffentrager"
-msgstr "Rhm.-Borsig Waffenträger"
-
-msgid "RhB_Waffentrager_descr"
-msgstr ""
-"Проект компании Rheinmetall-Borsig был разработан в рамках конкурса по "
-"созданию специального артиллерийского транспортёра. Машина позволяла не "
-"только перевозить артиллерийскую систему, но и вести огонь непосредственно с"
-" шасси. В конструкции предполагалось широко использовать детали ходовой "
-"части САУ Hetzer. Разработка велась с конца 1942 до середины 1944 года, "
-"однако из-за сложности конструкции, высокой стоимости и большой массы "
-"предпочтение было отдано проекту компании Ardelt."
-
-msgid "RhB_Waffentrager_short"
-msgstr "Rhm.-B. WT"
 
 msgid "Rolls_Royce_I6"
 msgstr "Rolls-Royce I-6"
@@ -4862,14 +5352,23 @@ msgstr "SEM 25A"
 msgid "SEM_25B"
 msgstr "SEM 25B"
 
+msgid "SEM_25BK"
+msgstr "SEM 25BK"
+
 msgid "SEM_25C"
 msgstr "SEM 25C funkgerät"
 
 msgid "SEM_25E"
 msgstr "SEM 25E"
 
+msgid "SEM_25H"
+msgstr "SEM 25H"
+
 msgid "SEM_25K"
 msgstr "SEM 25K"
+
+msgid "SEM_25V"
+msgstr "SEM 25V"
 
 msgid "SEM_25W"
 msgstr "SEM 25W"
@@ -4903,17 +5402,6 @@ msgstr "Somua S40"
 
 msgid "Somuaturm"
 msgstr "Pz.Kpfw. S35 739 (f)"
-
-msgid "Sturer_Emil"
-msgstr "Sturer Emil"
-
-msgid "Sturer_Emil_descr"
-msgstr ""
-"Немецкая опытная ПТ-САУ. Создана в 1942 году в ходе эксперимента по установке опытного 128-мм противотанкового орудия на удлинённое шасси танка\n"
-"VK 30.01 (H). Всего было выпущено две машины, которые использовались в боевых действиях на Южном фронте летом-осенью 1942 года. Из-за выявленных в ходе фронтовых испытаний многочисленных недостатков машина не вошла в серийное производство."
-
-msgid "Sturer_Emil_short"
-msgstr "St. Emil"
 
 msgid "SturmpanzerII"
 msgstr "15 cm s.I.G. 33B Sfl."
@@ -4949,9 +5437,6 @@ msgstr "15 cm s.I.G. 33B Sfl."
 
 msgid "Sturmpanzerketten_ausf_B"
 msgstr "15 cm s.I.G. 33B Sfl. verstärkteketten"
-
-msgid "Swedish_Bofors"
-msgstr "Leichttraktor"
 
 msgid "T-15"
 msgstr "Pz.Kpfw. T 15"
@@ -4998,19 +5483,16 @@ msgstr "Хорошая мобильность, большой запас про�
 msgid "T_Bison"
 msgstr "Sturmpanzer I Bison"
 
-msgid "Tatra_V-103"
-msgstr "Tatra Typ 103"
-
-msgid "Tatra_V-103_R"
+msgid "Tatra_Typ_TD_103_P"
 msgstr "Tatra Typ TD 103 P"
 
-msgid "Tatra_V-103_R_short"
+msgid "Tatra_Typ_TD_103_P_short"
 msgstr ""
 "Tatra Typ\n"
 "TD 103 P"
 
-msgid "Tiger_short"
-msgstr "Tiger I"
+msgid "Tatra_V-103"
+msgstr "Tatra Typ 103"
 
 msgid "Tiger_short_MapsTraining_Player_HT_2"
 msgstr "Tiger I (yч.)"
@@ -5027,14 +5509,19 @@ msgstr "Dicker Max"
 msgid "Turret_1_E-25"
 msgstr "E 25"
 
-msgid "Turret_1_E-50"
-msgstr "E 50 Ausf. A"
-
-msgid "Turret_1_E50_Ausf_M"
-msgstr "E 50 Ausf. M"
-
 msgid "Turret_1_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Turret_1_G02_Hummel"
+msgstr "Hummel"
+
+msgid "Turret_1_G03_PzV_Panther"
+msgstr "Pz.Kpfw. Panther Ausf. G"
+
+msgid "Turret_1_G03_PzV_Panther_short"
+msgstr ""
+"Pz.Kpfw. Panther\n"
+"Ausf. G"
 
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -5155,6 +5642,9 @@ msgstr "Rheinmetall Panzerwagen"
 
 msgid "Turret_1_G126_HWK_12"
 msgstr "HWK 12"
+
+msgid "Turret_1_G12_Ltraktor"
+msgstr "Leichttraktor"
 
 msgid "Turret_1_G134_PzKpfw_VII"
 msgstr "Pz.Kpfw. VII"
@@ -5295,38 +5785,147 @@ msgstr "Jagdpanzer IV"
 msgid "Turret_1_G184_Windhund"
 msgstr "Windhund"
 
+msgid "Turret_1_G185_Leopard_120_Verbessert"
+msgstr "Leopard 120 Verbessert"
+
 msgid "Turret_1_G186_Schwertwal"
 msgstr "Schwertwal"
+
+msgid "Turret_1_G187_Taschenratte"
+msgstr "Taschenratte"
+
+msgid "Turret_1_G188_LeKpz_Borkenkafer"
+msgstr "leKpz Borkenkäfer"
+
+msgid "Turret_1_G189_Hirschkafer"
+msgstr "Hirschkäfer"
 
 msgid "Turret_1_G18_JagdPanther"
 msgstr "Jagdpanther"
 
+msgid "Turret_1_G23_Grille"
+msgstr "Grille"
+
+msgid "Turret_1_G24_VK3002DB"
+msgstr "VK 30.02 (D)"
+
+msgid "Turret_1_G25_PzII_Luchs"
+msgstr "Luchs 2 cm"
+
+msgid "Turret_1_G26_VK1602"
+msgstr "VK 16.02 Leopard"
+
+msgid "Turret_1_G27_VK3001P"
+msgstr "Porsche Typ 100"
+
+msgid "Turret_1_G27_VK3001P_short"
+msgstr "Porsche Typ 100"
+
 msgid "Turret_1_G37_Ferdinand"
 msgstr "Ferdinand"
+
+msgid "Turret_1_G40_Nashorn"
+msgstr "Nashorn"
+
+msgid "Turret_1_G42_Maus"
+msgstr "Maus"
+
+msgid "Turret_1_G43_Sturer_Emil"
+msgstr "Pz.Sfl. V"
 
 msgid "Turret_1_G44_JagdTiger"
 msgstr "Jagdtiger"
 
+msgid "Turret_1_G45_G_Tiger"
+msgstr "G.W. Tiger"
+
+msgid "Turret_1_G49_G_Panther"
+msgstr "G.W. Panther"
+
+msgid "Turret_1_G54_E-50"
+msgstr "E 50 Ausf. A"
+
 msgid "Turret_1_G55_E-75"
 msgstr "E 75 Ausf. A"
+
+msgid "Turret_1_G57_PzVI_Tiger_P"
+msgstr "Tiger (P) Turm Nr. 1"
+
+msgid "Turret_1_G57_PzVI_Tiger_P_short"
+msgstr ""
+"Tiger (P)\n"
+"Turm Nr. 1"
 
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
 
+msgid "Turret_1_G58_VK4502P7"
+msgstr "VK 45.02 (P) Ausf. B7"
+
+msgid "Turret_1_G58_VK4502P7_short"
+msgstr "VK 45.02 (P) Ausf. B7"
+
 msgid "Turret_1_G58_VK4502P_short"
 msgstr "VK 45.02 (P) Ausf. B"
+
+msgid "Turret_1_G61_G_E"
+msgstr "G.W. E 100"
+
+msgid "Turret_1_G64_Panther_II"
+msgstr "Turm-Panther (schmale Blende)"
+
+msgid "Turret_1_G64_Panther_II_short"
+msgstr ""
+"Turm-Panther\n"
+"(schmale Blende)"
+
+msgid "Turret_1_G66_VK2801"
+msgstr "VK 28.01 Ausf. A"
+
+msgid "Turret_1_G67_VK4502A"
+msgstr "VK 45.02 (P) Ausf. A"
+
+msgid "Turret_1_G67_VK4502A_short"
+msgstr "VK 45.02 (P) Ausf. A"
 
 msgid "Turret_1_G72_JagdPz_E100"
 msgstr "Jagdpanzer E 100"
 
-msgid "Turret_1_G72_JagdPz_E100_FEP23"
-msgstr "Sturmgeschütz E 100"
+msgid "Turret_1_G72_JagdPz_E100_7x7"
+msgstr "Jagdpanzer E 100"
+
+msgid "Turret_1_G73_E50_Ausf_M"
+msgstr "E 50 Ausf. M"
+
+msgid "Turret_1_G81_Pz_IV_AusfH"
+msgstr "Pz.Kpfw. IV Ausf. G"
 
 msgid "Turret_1_G81_Pz_IV_AusfH_GuP"
 msgstr "Pz.Kpfw. IV Ausf. H Ankou"
 
+msgid "Turret_1_G82_Pz_II_AusfG"
+msgstr "Pz.Kpfw. II Ausf. C"
+
 msgid "Turret_1_G85_Aufklarungspanzer_V"
 msgstr "Aufklärungspanzer V"
+
+msgid "Turret_1_G88_Indien_Panzer"
+msgstr "Indien-Panzer"
+
+msgid "Turret_1_G89_Leopard1"
+msgstr "Leopard 1"
+
+msgid "Turret_1_G91_Pro_Ag_A"
+msgstr "Leopard Prototyp A2"
+
+msgid "Turret_1_G94_GW_Tiger_P"
+msgstr "G.W. Tiger (P)"
+
+msgid "Turret_1_G96_VK3002M"
+msgstr "VK 30.02 (M)"
+
+msgid "Turret_1_G97_Waffentrager_IV"
+msgstr "Waffenträger auf Pz. IV für 12,8 cm"
 
 msgid "Turret_1_G98_WT_auf_E_100_Phonix"
 msgstr "WT auf E 100 Phönix"
@@ -5337,20 +5936,11 @@ msgstr "Waffenträger auf E 100 (P)"
 msgid "Turret_1_G98_Waffentrager_E100_WO"
 msgstr "WT 12"
 
-msgid "Turret_1_GW_Elefant"
-msgstr "G.W. Tiger (P)"
+msgid "Turret_1_G99_RhB_Waffentrager"
+msgstr "Rhm.-Borsig Waffenträger"
 
 msgid "Turret_1_GW_Mk_IVe"
 msgstr "G.Pz. Mk. VI (e)"
-
-msgid "Turret_1_G_E"
-msgstr "G.W. E 100"
-
-msgid "Turret_1_G_Panther"
-msgstr "G.W. Panther"
-
-msgid "Turret_1_G_Tiger"
-msgstr "G.W. Tiger"
 
 msgid "Turret_1_JagdPantherII"
 msgstr "Jagdpanther II"
@@ -5358,31 +5948,14 @@ msgstr "Jagdpanther II"
 msgid "Turret_1_JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
 
-msgid "Turret_1_Leopard1"
-msgstr "Leopard 1"
-
 msgid "Turret_1_Lowe"
 msgstr "Löwe"
 
 msgid "Turret_1_Marder_III"
 msgstr "Marder 38T"
 
-msgid "Turret_1_Nashorn"
-msgstr "Nashorn"
-
-msgid "Turret_1_Panther_II"
-msgstr "Turm-Panther (schmale Blende)"
-
-msgid "Turret_1_Panther_II_short"
-msgstr ""
-"Turm-Panther\n"
-"(schmale Blende)"
-
 msgid "Turret_1_Panther_M10"
 msgstr "Panther/M10"
-
-msgid "Turret_1_Pro_Ag_A"
-msgstr "Leopard Prototyp A2"
 
 msgid "Turret_1_Pz38_NA"
 msgstr "Pz.Kpfw. 38 (t) Ausf. G"
@@ -5396,37 +5969,17 @@ msgstr "Pz.Kpfw. IV hydrostatischer"
 msgid "Turret_1_PzI_ausf_C"
 msgstr "Pz.Kpfw. I Breda"
 
-msgid "Turret_1_PzVI_Tiger_P"
-msgstr "Tiger (P) Turm Nr. 1"
-
-msgid "Turret_1_PzVI_Tiger_P_short"
-msgstr ""
-"Tiger (P)\n"
-"Turm Nr. 1"
-
-msgid "Turret_1_Pz_II_AusfG"
-msgstr "Pz.Kpfw. II Ausf. C"
-
 msgid "Turret_1_Pz_IV_AusfA"
 msgstr "Pz.Kpfw. IV Ausf. A"
 
 msgid "Turret_1_Pz_IV_AusfD"
 msgstr "Pz.Kpfw. IV Ausf. C"
 
-msgid "Turret_1_Pz_IV_AusfH"
-msgstr "Pz.Kpfw. IV Ausf. G"
-
 msgid "Turret_1_Pz_Sfl_IVb"
 msgstr "Pz.Sfl. IVb"
 
 msgid "Turret_1_Pz_Sfl_IVc"
 msgstr "Pz.Sfl. IVc Flak 37"
-
-msgid "Turret_1_RhB_Waffentrager"
-msgstr "Rhm.-Borsig Waffenträger"
-
-msgid "Turret_1_Sturer_Emil"
-msgstr "Pz.Sfl. V"
 
 msgid "Turret_1_T-15"
 msgstr "Pz.Kpfw. T 15"
@@ -5437,26 +5990,11 @@ msgstr "Pz.Kpfw. T 25"
 msgid "Turret_1_VK2001DB"
 msgstr "VK 20.01 (D)"
 
-msgid "Turret_1_VK2801"
-msgstr "VK 28.01 Ausf. A"
-
 msgid "Turret_1_VK3002DB_V1"
 msgstr "Pz.Kpfw. III/IV Ausf. B"
 
-msgid "Turret_1_VK3002M"
-msgstr "VK 30.02 (M)"
-
-msgid "Turret_1_VK4502A"
-msgstr "VK 45.02 (P) Ausf. A"
-
-msgid "Turret_1_VK4502A_short"
-msgstr "VK 45.02 (P) Ausf. A"
-
 msgid "Turret_1_Waffentrager_E100"
 msgstr "Waffenträger auf E 100"
-
-msgid "Turret_1_Waffentrager_IV"
-msgstr "Waffenträger auf Pz. IV für 12,8 cm"
 
 msgid "Turret_2_Auf_Panther"
 msgstr "VK 28.01 Ausf. C"
@@ -5464,11 +6002,19 @@ msgstr "VK 28.01 Ausf. C"
 msgid "Turret_2_DW_II"
 msgstr "VK 30.01 (H) 0-Serie"
 
-msgid "Turret_2_E-50"
-msgstr "E 50 Ausf. B"
-
 msgid "Turret_2_E-50_SH"
 msgstr "E 50 Basiert"
+
+msgid "Turret_2_G02_Hummel"
+msgstr "Hummel L/29.5"
+
+msgid "Turret_2_G03_PzV_Panther"
+msgstr "Pz.Kpfw. Panther Schmalturm"
+
+msgid "Turret_2_G03_PzV_Panther_short"
+msgstr ""
+"Pz.Kpfw. Panther\n"
+"Schmalturm"
 
 msgid "Turret_2_G04_PzVI_Tiger_I"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -5528,20 +6074,73 @@ msgstr ""
 "Tiger II\n"
 "Serienturm"
 
+msgid "Turret_2_G24_VK3002DB"
+msgstr "VK 30.02 (D) Schmalturm"
+
+msgid "Turret_2_G25_PzII_Luchs"
+msgstr "Luchs 5 cm"
+
+msgid "Turret_2_G27_VK3001P"
+msgstr "VK 30.01 (P) Krupp Turm"
+
+msgid "Turret_2_G27_VK3001P_short"
+msgstr ""
+"VK 30.01 (P)\n"
+"Krupp Turm"
+
+msgid "Turret_2_G54_E-50"
+msgstr "E 50 Ausf. B"
+
 msgid "Turret_2_G55_E-75"
 msgstr "E 75 Ausf. B"
 
 msgid "Turret_2_G56_E-100"
 msgstr "E 100"
 
-msgid "Turret_2_Indien_Panzer"
-msgstr "Indien-Panzer"
+msgid "Turret_2_G57_PzVI_Tiger_P"
+msgstr "Tiger (P) Neuer Turm"
 
-msgid "Turret_2_Panther_II"
+msgid "Turret_2_G57_PzVI_Tiger_P_short"
+msgstr ""
+"Tiger (P)\n"
+"Neuer Turm"
+
+msgid "Turret_2_G58_VK4502P"
+msgstr "VK 45.02 (P) Ausf. B Schwerer Turm"
+
+msgid "Turret_2_G58_VK4502P_short"
+msgstr ""
+"VK 45.02 (P) Ausf. B\n"
+"Schwerer Turm"
+
+msgid "Turret_2_G64_Panther_II"
 msgstr "Panther II Schmalturm"
 
-msgid "Turret_2_Pro_Ag_A"
+msgid "Turret_2_G66_VK2801"
+msgstr "VK 28.01 Ausf. B"
+
+msgid "Turret_2_G67_VK4502A"
+msgstr "VK 45.02 (P) Ausf. A Schwerer Turm"
+
+msgid "Turret_2_G67_VK4502A_short"
+msgstr ""
+"VK 45.02 (P) Ausf. A\n"
+"Schwerer Turm"
+
+msgid "Turret_2_G81_Pz_IV_AusfH"
+msgstr "Pz.Kpfw. IV Ausf. H"
+
+msgid "Turret_2_G82_Pz_II_AusfG"
+msgstr "Pz.Kpfw. II Ausf. G"
+
+msgid "Turret_2_G91_Pro_Ag_A"
 msgstr "Porsche Standardpanzer"
+
+msgid "Turret_2_G96_VK3002M"
+msgstr "VK 30.02 Ausf. A"
+
+msgid "Turret_2_G97_Waffentrager_IV"
+msgstr "Waffenträger auf Pz. IV für 15 cm"
 
 msgid "Turret_2_Pz38_NA"
 msgstr "Pz.Kpfw. 38 (t) n.A."
@@ -5552,25 +6151,11 @@ msgstr "Pz.Kpfw. I Breda"
 msgid "Turret_2_PzI_ausf_C"
 msgstr "Pz.Kpfw. I Ausf. C"
 
-msgid "Turret_2_PzVI_Tiger_P"
-msgstr "Tiger (P) Neuer Turm"
-
-msgid "Turret_2_PzVI_Tiger_P_short"
-msgstr ""
-"Tiger (P)\n"
-"Neuer Turm"
-
-msgid "Turret_2_Pz_II_AusfG"
-msgstr "Pz.Kpfw. II Ausf. G"
-
 msgid "Turret_2_Pz_IV_AusfA"
 msgstr "Pz.Kpfw. IV Ausf. B"
 
 msgid "Turret_2_Pz_IV_AusfD"
 msgstr "Pz.Kpfw. IV Ausf. D"
-
-msgid "Turret_2_Pz_IV_AusfH"
-msgstr "Pz.Kpfw. IV Ausf. H"
 
 msgid "Turret_2_Pz_Sfl_IVc"
 msgstr "Pz.Sfl. IVc Flak 41"
@@ -5578,25 +6163,8 @@ msgstr "Pz.Sfl. IVc Flak 41"
 msgid "Turret_2_VK2001DB"
 msgstr "Pz.Kpfw. III Ausf. M"
 
-msgid "Turret_2_VK2801"
-msgstr "VK 28.01 Ausf. B"
-
 msgid "Turret_2_VK3002DB_V1"
 msgstr "VK 30.01 (D)"
-
-msgid "Turret_2_VK3002M"
-msgstr "VK 30.02 Ausf. A"
-
-msgid "Turret_2_VK4502A"
-msgstr "VK 45.02 (P) Ausf. A Schwerer Turm"
-
-msgid "Turret_2_VK4502A_short"
-msgstr ""
-"VK 45.02 (P) Ausf. A\n"
-"Schwerer Turm"
-
-msgid "Turret_2_Waffentrager_IV"
-msgstr "Waffenträger auf Pz. IV für 15 cm"
 
 msgid "Turret_3_E-75_TS_SH"
 msgstr "E 75 TSM"
@@ -5616,23 +6184,6 @@ msgstr ""
 "остановилась на стадии проектирования. Машина так и не была реализована в "
 "металле."
 
-msgid "VK1602"
-msgstr "VK 16.02 Leopard"
-
-msgid "VK1602_descr"
-msgstr ""
-"Дизайн VK 16.02, получившего название «Леопард», основывался на более ранних"
-" разработках Panzer II Ausf. J (VK 16.01) и Panzer II Ausf. M (VK 13.01). "
-"Макет был готов в мае–июне 1942 года, а первый прототип закончен к 1 "
-"сентября 1942 года. Полномасштабное производство должно было начаться в "
-"апреле 1943 года. Программой «Panzerprogramm 41» было предусмотрено "
-"производство 339 танков Leopard (105 к декабрю 1943 года и ещё 150 к "
-"середине 1944 года). Однако производство танка так и не было начато. Позже "
-"башня «Леопарда» была установлена на бронемашину Sd.Kfz.234/2 «Пума»."
-
-msgid "VK1602_short"
-msgstr "Leopard"
-
 msgid "VK2001DB"
 msgstr "VK 20.01 (D)"
 
@@ -5648,76 +6199,8 @@ msgstr ""
 msgid "VK2001DB_short"
 msgstr "VK 20.01 D"
 
-msgid "VK2801"
-msgstr "VK 28.01"
-
-msgid "VK2801_descr"
-msgstr ""
-"Разведывательный танк, разрабатывавшийся компанией Daimler-Benz. В металле "
-"проект реализован не был."
-
-msgid "VK2801_short"
-msgstr "VK 28.01"
-
-msgid "VK3001H"
-msgstr "VK 30.01 (H)"
-
-msgid "VK3001H_descr"
-msgstr ""
-"Заказ на танк был выдан 9 сентября 1939 года. В процессе разработки инженеры"
-" компании Henschel активно использовали наработки по проекту DW II. Первые "
-"два прототипа были готовы к марту 1942 года, ещё два были построены к "
-"октябрю. Прототипы активно испытывались на заводском полигоне, однако без "
-"башни и вооружения. По окончании испытаний два шасси были переделаны в "
-"тяжёлые истребители танков. Шесть башен, изготовленных компанией Krupp, были"
-" установлены на «Атлантическом валу»."
-
-msgid "VK3001H_short"
-msgstr "VK 30.01 H"
-
-msgid "VK3001P"
-msgstr "VK 30.01 (P)"
-
-msgid "VK3001P_Krupp_turm"
-msgstr "Porsche Typ 100"
-
-msgid "VK3001P_Krupp_turm_short"
-msgstr "Porsche Typ 100"
-
-msgid "VK3001P_Porsche_turm"
-msgstr "VK 30.01 (P) Krupp Turm"
-
 msgid "VK3001P_Porsche_turm_SH"
 msgstr "VK 30.03 Krupp Turm"
-
-msgid "VK3001P_Porsche_turm_short"
-msgstr ""
-"VK 30.01 (P)\n"
-"Krupp Turm"
-
-msgid "VK3001P_ausf_B"
-msgstr "VK 30.01 (P) verstärkteketten"
-
-msgid "VK3001P_ausf_B_short"
-msgstr ""
-"VK 30.01 (P)\n"
-"verstärkteketten"
-
-msgid "VK3001P_descr"
-msgstr ""
-"Идея проекта нового танка компании Porsche появилась ещё в 1939 году, когда "
-"была разработана новая концепция. После многочисленных согласований 5 марта "
-"1941 года были разработаны чертежи, а в июле 1941 был изготовлен корпус из "
-"мягкой стали. Корпус и шасси прошли ходовые испытания, в том числе с "
-"навесным оборудованием для рытья траншей. Был сделан только один деревянный "
-"макет башни, а также деревянный макет корпуса. В 1942 году проект закрыли в "
-"пользу новых тяжёлых танков."
-
-msgid "VK3001P_short"
-msgstr "VK 30.01 P"
-
-msgid "VK3002DB"
-msgstr "VK 30.02 (D)"
 
 msgid "VK3002DB_SH"
 msgstr "Walküre"
@@ -5731,17 +6214,8 @@ msgstr ""
 msgid "VK3002DB_SH_short"
 msgstr "Walküre"
 
-msgid "VK3002DB_Shmallturm"
-msgstr "VK 30.02 (D) Schmalturm"
-
-msgid "VK3002DB_Standardtketten"
-msgstr "VK 30.02 (D)"
-
 msgid "VK3002DB_Standardtketten_SH"
 msgstr "VK 35.02 (D)"
-
-msgid "VK3002DB_Standardtketten_short"
-msgstr "VK 30.02 (D)"
 
 msgid "VK3002DB_V1"
 msgstr "VK 30.01 (D)"
@@ -5758,113 +6232,6 @@ msgstr ""
 
 msgid "VK3002DB_V1_short"
 msgstr "VK 30.01 D"
-
-msgid "VK3002DB_Vetstaerktketten"
-msgstr "VK 30.02 (D) verstärkteketten"
-
-msgid "VK3002DB_Vetstaerktketten_short"
-msgstr ""
-"VK 30.02 (D)\n"
-"verstärkteketten"
-
-msgid "VK3002DB_descr"
-msgstr ""
-"Весенний прототип 1942 г. должен был представлять собой доработанный проект "
-"концерна Daimler-Benz. Была разработана новая ходовая часть с торсионной "
-"подвеской и восемью опорными катками, расположенными в шахматном порядке. В "
-"качестве силовой установки планировалось использовать бензиновый двигатель "
-"Maybach HL 210 P45. На машину предполагалось установить 75-мм орудие KwK 42 "
-"L/71, но в итоге предпочтение было отдано проекту компании MAN — будущему "
-"танку Pz.Kpfw. V «Panther». Ни один прототип VK 30.02 (DB) полностью "
-"закончен не был."
-
-msgid "VK3002DB_short"
-msgstr "VK 30.02 D"
-
-msgid "VK3002DB_turm"
-msgstr "VK 30.02 (D)"
-
-msgid "VK3002M"
-msgstr "VK 30.02 (M)"
-
-msgid "VK3002M_descr"
-msgstr ""
-"Средний танк, разработанный компанией MAN в рамках конкурса по созданию "
-"нового 30-ти тонного танка. Одновременно работы велись компанией Daimler-"
-"Benz. 13 мая 1942 года Министерству вооружения Германии были представлены "
-"сравнительные характеристики проектов. Предпочтение было отдано проекту MAN."
-" Танк был принят на вооружение под названием Pz.Kpfw. V «Пантера»."
-
-msgid "VK3002M_short"
-msgstr "VK 30.02 M"
-
-msgid "VK3601H"
-msgstr "VK 36.01 (H)"
-
-msgid "VK3601H_descr"
-msgstr ""
-"Немецкий опытный тяжёлый танк времён Второй мировой войны, разработанный "
-"компанией Henschel, дальнейшее развитие проекта VK 30.01 (H). Проект стал "
-"одним из этапов разработки танка «Тигр». Всего в начале 1942 года было "
-"построено 8 шасси и 1 прототип. В ходе работы над прототипом были отработаны"
-" многие технические решения, которые впоследствии послужили основой при "
-"разработке тяжёлых танков Германии во Второй мировой войне. В дальнейшем "
-"шасси использовались в качестве базы для ремонтно-эвакуационных машин."
-
-msgid "VK3601H_short"
-msgstr "VK 36.01 H"
-
-msgid "VK4502A"
-msgstr "VK 45.02 (P) Ausf. A"
-
-msgid "VK4502A_descr"
-msgstr ""
-"Проект развития немецкого тяжёлого танка VK 45.01 (P). Опытный экземпляр "
-"построен не был, так как 10-цилиндровый двигатель Porsche не прошёл "
-"испытания. В дальнейшем уже изготовленные для танка башни были установлены "
-"на первые серийные Tiger II."
-
-msgid "VK4502A_short"
-msgstr "VK 45.02 A"
-
-msgid "VK4502P"
-msgstr "VK 45.02 (P) Ausf. B"
-
-msgid "VK4502P_Eliteturm"
-msgstr "VK 45.02 (P) Ausf. B Schwerer Turm"
-
-msgid "VK4502P_Eliteturm_short"
-msgstr ""
-"VK 45.02 (P) Ausf. B\n"
-"Schwerer Turm"
-
-msgid "VK4502P_Standardketten"
-msgstr "VK 45.02(P) Ausf. B"
-
-msgid "VK4502P_Standardketten_short"
-msgstr "VK 45.02(P) Ausf. B"
-
-msgid "VK4502P_Standardturm"
-msgstr "VK 45.02 (P) Ausf. B"
-
-msgid "VK4502P_Standardturm_short"
-msgstr "VK 45.02 (P) Ausf. B"
-
-msgid "VK4502P_Vetstaerktketten"
-msgstr "VK 45.02(P) Ausf. B verstärkteketten"
-
-msgid "VK4502P_Vetstaerktketten_short"
-msgstr ""
-"VK 45.02(P) Ausf. B\n"
-"verstärkteketten"
-
-msgid "VK4502P_descr"
-msgstr ""
-"Разработан Фердинандом Порше. Был разработан вариант с передним и задним "
-"расположением башни. Серийно не выпускался."
-
-msgid "VK4502P_short"
-msgstr "VK 45.02 B"
 
 msgid "VK7201"
 msgstr "VK 72.01 (K)"
@@ -5901,19 +6268,6 @@ msgstr ""
 
 msgid "Waffentrager_E100_short"
 msgstr "WT E 100"
-
-msgid "Waffentrager_IV"
-msgstr "Waffenträger auf Pz. IV"
-
-msgid "Waffentrager_IV_descr"
-msgstr ""
-"ПТ-САУ, разработанная в феврале 1944 года на базе узлов и агрегатов PzIV. "
-"Существовала только в эскизах. Работы над проектом были прекращены в пользу "
-"аналогичной машины, разработанной на базе узлов и агрегатов Krupp "
-"Waffentrager 12,8 cm PaK 44 чешского производства."
-
-msgid "Waffentrager_IV_short"
-msgstr "WT auf Pz. IV"
 
 msgid "Weiss_Manfred_V_8H"
 msgstr "Weiss Manfréd V-8H"
@@ -5960,17 +6314,8 @@ msgstr "Gr 39 H1A"
 msgid "_105mmGr39H1A_SH"
 msgstr "Gr 39/46 HL"
 
-msgid "_105mmGr_39H1A_K"
-msgstr "Gr 39 H1A K"
-
-msgid "_105mm_APCR_DM23"
-msgstr "DM23"
-
 msgid "_105mm_APDS_M_SH"
 msgstr "M 42/43"
-
-msgid "_105mm_AP_DM13"
-msgstr "DM13"
 
 msgid "_105mm_AP_DM7_SH"
 msgstr "DM7 42"
@@ -5981,8 +6326,14 @@ msgstr "DS 11/42"
 msgid "_105mm_BK_L7"
 msgstr "10,5 cm Bordkanone L7"
 
-msgid "_105mm_BK_L7A3_L51"
+msgid "_105mm_Bordkanone_L7A3"
 msgstr "10,5 cm Bordkanone L7A3"
+
+msgid "_105mm_DM11"
+msgstr "DM11"
+
+msgid "_105mm_DM11_A"
+msgstr "DM11 (A)"
 
 msgid "_105mm_DM11_Kurz"
 msgstr "DM11 Kurz"
@@ -5990,8 +6341,14 @@ msgstr "DM11 Kurz"
 msgid "_105mm_DM12"
 msgstr "DM12"
 
+msgid "_105mm_DM12_20"
+msgstr "DM12-20"
+
 msgid "_105mm_DM12_Kurz"
 msgstr "DM12 Kurz"
+
+msgid "_105mm_DM13"
+msgstr "DM13"
 
 msgid "_105mm_DM13A2"
 msgstr "DM13A2"
@@ -5999,11 +6356,26 @@ msgstr "DM13A2"
 msgid "_105mm_DM13A3"
 msgstr "DM13A3"
 
+msgid "_105mm_DM13_20"
+msgstr "DM13-20"
+
+msgid "_105mm_DM13_A"
+msgstr "DM13 (A)"
+
 msgid "_105mm_DM13_Kurz"
 msgstr "DM13 Kurz"
 
+msgid "_105mm_DM23"
+msgstr "DM23"
+
+msgid "_105mm_DM23_A"
+msgstr "DM23 (A)"
+
 msgid "_105mm_DM502"
 msgstr "DM502"
+
+msgid "_105mm_DM502_20"
+msgstr "DM502-20"
 
 msgid "_105mm_DM503"
 msgstr "DM503"
@@ -6011,14 +6383,26 @@ msgstr "DM503"
 msgid "_105mm_Exp_APDS"
 msgstr "Exp. APDS"
 
+msgid "_105mm_Exp_APDS_Rh"
+msgstr "Exp. APDS (Rh)"
+
 msgid "_105mm_Exp_HE"
 msgstr "Exp. HE"
 
 msgid "_105mm_Exp_HEAT"
 msgstr "Exp. HEAT"
 
+msgid "_105mm_Exp_HEAT_Rh"
+msgstr "Exp. HEAT (Rh)"
+
+msgid "_105mm_Exp_HE_Rh"
+msgstr "Exp. HE (Rh)"
+
 msgid "_105mm_Gr19"
 msgstr "Gr 19"
+
+msgid "_105mm_Gr_19_Emil"
+msgstr "Gr. 19 (Emil)"
 
 msgid "_105mm_Gr_39H1H_SH"
 msgstr "Gr 39H1H"
@@ -6029,8 +6413,11 @@ msgstr "Gr. 39 H1/A (A)"
 msgid "_105mm_Gr_39_H1_A_B"
 msgstr "Gr. 39 H1/A (B)"
 
-msgid "_105mm_HE_DM11"
-msgstr "DM11"
+msgid "_105mm_Gr_39_Hl_A_Ausf_H"
+msgstr "Gr. 39 Hl/A Ausf. H"
+
+msgid "_105mm_Gr_39_Hl_A_K"
+msgstr "Gr. 39 Hl/A K"
 
 msgid "_105mm_K18_L52"
 msgstr "10,5 cm Pak L/52"
@@ -6041,33 +6428,14 @@ msgstr "10,5 cm Kanone 18"
 msgid "_105mm_Kanone"
 msgstr "105 mm Kanone"
 
-msgid "_105mm_KwK45_L52"
-msgstr "10,5 cm Kw.K. L/52"
+msgid "_105mm_Kanone_18"
+msgstr "10,5 cm Kanone 18"
 
 msgid "_105mm_KwK45_L52_N"
 msgstr "10.5 cm Kw.K. L/52 Ausf. B"
 
 msgid "_105mm_KwK45_L52_SH"
 msgstr "10,5 cm Kw.K. L/52"
-
-msgid "_105mm_KwK45_L52_ausf_B"
-msgstr "10,5 cm Kw.K. L/52 Ausf. B"
-
-msgid "_105mm_KwK45_L52_ausf_B_short"
-msgstr ""
-"10,5 cm Kw.K. L/52\n"
-"Ausf. B"
-
-msgid "_105mm_KwK45_L52_ausf_K"
-msgstr "10,5 cm Kw.K. L/52 Ausf. K"
-
-msgid "_105mm_KwK45_L52_ausf_K_short"
-msgstr ""
-"10,5 cm Kw.K. L/52\n"
-"Ausf. K"
-
-msgid "_105mm_KwK46_L68"
-msgstr "10,5 cm Kw.K. L/68"
 
 msgid "_105mm_KwK46_L68_N"
 msgstr "10.5 cm Kw.K. L/68 Ausf. B"
@@ -6077,6 +6445,34 @@ msgstr "10,5 cm Kw.K. L/70"
 
 msgid "_105mm_KwK46_L70_SH"
 msgstr "10,5 cm Kw.K. L/70"
+
+msgid "_105mm_Kw_K_L_28_Ausf_H"
+msgstr "10,5 cm Kw.K. L/28 Ausf. H"
+
+msgid "_105mm_Kw_K_L_52"
+msgstr "10,5 cm Kw.K. L/52"
+
+msgid "_105mm_Kw_K_L_52_180A"
+msgstr "10,5 cm Kw.K. L/52 (180A)"
+
+msgid "_105mm_Kw_K_L_52_Ausf_B"
+msgstr "10,5 cm Kw.K. L/52 Ausf. B"
+
+msgid "_105mm_Kw_K_L_52_Ausf_B_short"
+msgstr ""
+"10,5 cm Kw.K. L/52\n"
+"Ausf. B"
+
+msgid "_105mm_Kw_K_L_52_Ausf_K"
+msgstr "10,5 cm Kw.K. L/52 Ausf. K"
+
+msgid "_105mm_Kw_K_L_52_Ausf_K_short"
+msgstr ""
+"10,5 cm Kw.K. L/52\n"
+"Ausf. K"
+
+msgid "_105mm_Kw_K_L_68"
+msgstr "10,5 cm Kw.K. L/68"
 
 msgid "_105mm_Kw_K_L_68_Ausf_E"
 msgstr "10.5 cm Kw.K. L/68 Ausf. E"
@@ -6095,9 +6491,6 @@ msgstr "M430"
 
 msgid "_105mm_PzGr.40Rot"
 msgstr "PzGr 40 rot"
-
-msgid "_105mm_PzGr39G"
-msgstr "PzGr 39 G"
 
 msgid "_105mm_PzGr39K"
 msgstr "Pzgr 39 K"
@@ -6120,17 +6513,8 @@ msgstr "PzGr rot"
 msgid "_105mm_Pzgr.40"
 msgstr "Pzgr 40"
 
-msgid "_105mm_Pzgr.40G"
-msgstr "Pzgr 40 G"
-
-msgid "_105mm_Pzgr.40K"
-msgstr "Pzgr 40 K"
-
 msgid "_105mm_Pzgr.40L1"
 msgstr "Pzgr 40 L1"
-
-msgid "_105mm_Pzgr.40_n"
-msgstr "Pzgr ver. 40"
 
 msgid "_105mm_Pzgr.41L1_SH"
 msgstr "Pzgr 41 L1"
@@ -6144,11 +6528,38 @@ msgstr "Pzgr. 39/45"
 msgid "_105mm_Pzgr_39_E"
 msgstr "Pzgr. 39 E"
 
+msgid "_105mm_Pzgr_39_G"
+msgstr "Pzgr. 39 G"
+
+msgid "_105mm_Pzgr_39_K_Ausf_H"
+msgstr "Pzgr. 39 K Ausf. H"
+
 msgid "_105mm_Pzgr_39_K_B"
 msgstr "Pzgr. 39 K (B)"
 
+msgid "_105mm_Pzgr_39_L_100"
+msgstr "Pzgr. 39 L (100)"
+
+msgid "_105mm_Pzgr_39_L_180A"
+msgstr "Pzgr. 39 L (180A)"
+
+msgid "_105mm_Pzgr_39_L_180B"
+msgstr "Pzgr. 39 L (180B)"
+
+msgid "_105mm_Pzgr_40"
+msgstr "Pzgr. 40"
+
 msgid "_105mm_Pzgr_40W"
 msgstr "Pzgr 40W"
+
+msgid "_105mm_Pzgr_40_100"
+msgstr "Pzgr. 40 (100)"
+
+msgid "_105mm_Pzgr_40_180A"
+msgstr "Pzgr. 40 (180A)"
+
+msgid "_105mm_Pzgr_40_180B"
+msgstr "Pzgr. 40 (180B)"
 
 msgid "_105mm_Pzgr_40_45"
 msgstr "Pzgr. 40/45"
@@ -6156,20 +6567,29 @@ msgstr "Pzgr. 40/45"
 msgid "_105mm_Pzgr_40_E"
 msgstr "Pzgr. 40 E"
 
+msgid "_105mm_Pzgr_40_G"
+msgstr "Pzgr. 40 G"
+
 msgid "_105mm_Pzgr_40_JP"
 msgstr "Pzgr. 40 (JP)"
+
+msgid "_105mm_Pzgr_40_K"
+msgstr "Pzgr. 40 K"
+
+msgid "_105mm_Pzgr_40_rot_Emil"
+msgstr "Pzgr. 40 rot (Emil)"
+
+msgid "_105mm_Pzgr_rot_Emil"
+msgstr "Pzgr. rot (Emil)"
 
 msgid "_105mm_RH_Gun"
 msgstr "10,5 cm RH GUN"
 
+msgid "_105mm_Rh_105_20"
+msgstr "105 mm Rh 105-20"
+
 msgid "_105mm_Rheinmetall_V1"
 msgstr "10,5 cm Rheinmetall V1"
-
-msgid "_105mm_Sprg.18G"
-msgstr "Sprgr 18G"
-
-msgid "_105mm_Sprg.18K"
-msgstr "Sprgr 18 K"
 
 msgid "_105mm_Sprg_K"
 msgstr "Sprgr K"
@@ -6186,14 +6606,32 @@ msgstr "Sprgr LW"
 msgid "_105mm_Sprg_L_n"
 msgstr "Sprgr LV"
 
+msgid "_105mm_Sprgr_18_G"
+msgstr "Sprgr. 18 G"
+
+msgid "_105mm_Sprgr_18_K"
+msgstr "Sprgr. 18 K"
+
 msgid "_105mm_Sprgr_45"
 msgstr "Sprgr. 45"
 
 msgid "_105mm_Sprgr_E"
 msgstr "Sprgr. E"
 
+msgid "_105mm_Sprgr_K_Ausf_H"
+msgstr "Sprgr. K Ausf. H"
+
 msgid "_105mm_Sprgr_K_B"
 msgstr "Sprgr. K (B)"
+
+msgid "_105mm_Sprgr_L_100"
+msgstr "Sprgr. L (100)"
+
+msgid "_105mm_Sprgr_L_180A"
+msgstr "Sprgr. L (180A)"
+
+msgid "_105mm_Sprgr_L_180B"
+msgstr "Sprgr. L (180B)"
 
 msgid "_105mm_Sprgr_L_JP"
 msgstr "Sprgr. L (JP)"
@@ -6219,14 +6657,14 @@ msgstr "10,5 cm Panzerkanone L7A3"
 msgid "_10WSc"
 msgstr "10WSc"
 
-msgid "_10WSc_FEP"
-msgstr "10WSc M"
-
 msgid "_10WSc_P"
 msgstr "10WSc P"
 
 msgid "_10WSc_WT"
 msgstr "10WSc A"
+
+msgid "_10WSc_j_7x7"
+msgstr "10WSc"
 
 msgid "_10_5_cm_Bordkanone_L7W"
 msgstr "10,5 cm Bordkanone L7W"
@@ -6270,6 +6708,24 @@ msgstr "12 cm Panzerkanone Rh2B"
 msgid "_120mm_APDS_DM14"
 msgstr "DM14"
 
+msgid "_120mm_DM12_MZ"
+msgstr "DM12 MZ"
+
+msgid "_120mm_DM12_MZS"
+msgstr "DM12 MZS"
+
+msgid "_120mm_DM13"
+msgstr "DM13"
+
+msgid "_120mm_DM13S"
+msgstr "DM13S"
+
+msgid "_120mm_DM_HE"
+msgstr "DM HE"
+
+msgid "_120mm_DM_HES"
+msgstr "DM HES"
+
 msgid "_120mm_Delta_1965"
 msgstr "120mm Delta 1965"
 
@@ -6306,6 +6762,12 @@ msgstr "M908"
 msgid "_120mm_RhD"
 msgstr "120 mm RhD"
 
+msgid "_120mm_Rheinmetall_Geweih"
+msgstr "12 cm Rheinmetall Geweih"
+
+msgid "_120mm_Rheinmetall_L_44"
+msgstr "12 cm Rheinmetall L/44"
+
 msgid "_120mm_SDRN1"
 msgstr "SDRN1 HE"
 
@@ -6327,20 +6789,23 @@ msgstr "120 mm L65 Versuchskanone"
 msgid "_128mm_K43_L55"
 msgstr "12,8 cm Kanone 43 L/55"
 
-msgid "_128mm_K44_2_L61"
-msgstr "12,8 cm Kanone L/61"
-
 msgid "_128mm_K44_2_L61_P"
 msgstr "12,8 cm Kanone L/61"
 
 msgid "_128mm_K44_2_L61_WT"
 msgstr "12,8 cm Kanone L/61 A"
 
-msgid "_128mm_K44_L55"
+msgid "_128mm_Kanone_40"
+msgstr "12,8 cm Kanone 40"
+
+msgid "_128mm_Kanone_44_L_55"
 msgstr "12,8 cm Kanone 44 L/55"
 
-msgid "_128mm_KwK44_L55"
-msgstr "12,8 cm Kw.K. 44 L/55"
+msgid "_128mm_Kanone_44_L_55_Rhm"
+msgstr "12,8 cm Kanone 44 L/55 (Rhm)"
+
+msgid "_128mm_Kanone_L_61"
+msgstr "12,8 cm Kanone L/61"
 
 msgid "_128mm_KwK44_L55_7x7"
 msgstr "12,8 cm Kw.K. 44 L/55"
@@ -6351,25 +6816,37 @@ msgstr "12.8 cm Kw.K. 44 L/55 Ausf. B"
 msgid "_128mm_KwK44_L55_SH"
 msgstr "12,8 cm Kw.K. 44 L/55"
 
-msgid "_128mm_KwK46_L61"
-msgstr "12,8 cm Kw.K. 46 L/61"
-
 msgid "_128mm_KwK_L50"
 msgstr "12,8 cm Kw.K. L/50 Ausf. A"
 
 msgid "_128mm_KwK_L55_TM"
 msgstr "12,8 cm Kw.K. L/55 TM"
 
+msgid "_128mm_Kw_K_44_L_55"
+msgstr "12,8 cm Kw.K. 44 L/55"
+
+msgid "_128mm_Kw_K_44_L_55_170"
+msgstr "12,8 cm Kw.K. 44 L/55 (170)"
+
+msgid "_128mm_Kw_K_44_L_55_180B"
+msgstr "12,8 cm Kw.K. 44 L/55 (180B)"
+
 msgid "_128mm_Kw_K_44_L_55_Ausf_E"
 msgstr "12.8 cm Kw.K. 44 L/55 Ausf. E"
+
+msgid "_128mm_Kw_K_L_50"
+msgstr "12,8 cm Kw.K. L/50"
+
+msgid "_128mm_Kw_K_L_50_100"
+msgstr "12,8 cm Kw.K. L/50 (100)"
+
+msgid "_128mm_Kw_K_L_61"
+msgstr "12,8 cm Kw.K. L/61"
 
 msgid "_128mm_Kw_K_L_61K"
 msgstr "12,8 cm Kw.K. L/61K"
 
 msgid "_128mm_L50"
-msgstr "12,8 cm Kw.K. L/50"
-
-msgid "_128mm_L50A"
 msgstr "12,8 cm Kw.K. L/50"
 
 msgid "_128mm_L50P"
@@ -6456,6 +6933,12 @@ msgstr "Pzgr 44M"
 msgid "_128mm_Pzgr_39L_JT"
 msgstr "Pzgr. 39L (JT)"
 
+msgid "_128mm_Pzgr_39_170"
+msgstr "Pzgr. 39 (170)"
+
+msgid "_128mm_Pzgr_39_180B"
+msgstr "Pzgr. 39 (180B)"
+
 msgid "_128mm_Pzgr_39_E"
 msgstr "Pzgr. 39 E"
 
@@ -6464,6 +6947,33 @@ msgstr "Pzgr. 39 (F)"
 
 msgid "_128mm_Pzgr_39_JT"
 msgstr "Pzgr. 39 (JT)"
+
+msgid "_128mm_Pzgr_39_K_100"
+msgstr "Pzgr. 39 K (100)"
+
+msgid "_128mm_Pzgr_39_K_170"
+msgstr "Pzgr. 39 K (170)"
+
+msgid "_128mm_Pzgr_39_L_VII"
+msgstr "Pzgr. 39 L (VII)"
+
+msgid "_128mm_Pzgr_39_L_WT_IV"
+msgstr "Pzgr. 39 L (WT IV)"
+
+msgid "_128mm_Pzgr_39_Maus"
+msgstr "Pzgr. 39 (Maus)"
+
+msgid "_128mm_Pzgr_39_Rhm"
+msgstr "Pzgr. 39 (Rhm)"
+
+msgid "_128mm_Pzgr_39_WT_IV"
+msgstr "Pzgr. 39 (WT IV)"
+
+msgid "_128mm_Pzgr_40_170"
+msgstr "Pzgr. 40 (170)"
+
+msgid "_128mm_Pzgr_40_180B"
+msgstr "Pzgr. 40 (180B)"
 
 msgid "_128mm_Pzgr_40_E"
 msgstr "Pzgr. 40 E"
@@ -6474,14 +6984,35 @@ msgstr "Pzgr. 40 (F)"
 msgid "_128mm_Pzgr_40_JT"
 msgstr "Pzgr. 40 (JT)"
 
+msgid "_128mm_Pzgr_40_K_100"
+msgstr "Pzgr. 40 K (100)"
+
+msgid "_128mm_Pzgr_40_K_170"
+msgstr "Pzgr. 40 K (170)"
+
+msgid "_128mm_Pzgr_40_Maus"
+msgstr "Pzgr. 40 (Maus)"
+
+msgid "_128mm_Pzgr_40_Rhm"
+msgstr "Pzgr. 40 (Rhm)"
+
+msgid "_128mm_Pzgr_40_WT_IV"
+msgstr "Pzgr. 40 (WT IV)"
+
 msgid "_128mm_Pzgr_43_JT"
 msgstr "Pzgr. 43 (JT)"
 
-msgid "_128mm_Pzgr_N4"
+msgid "_128mm_Pzgr_43_VII"
+msgstr "Pzgr. 43 (VII)"
+
+msgid "_128mm_Pzgr_43_WT_IV"
+msgstr "Pzgr. 43 (WT IV)"
+
+msgid "_128mm_Pzgr_Nr_4"
 msgstr "Pzgr. Nr. 4"
 
-msgid "_128mm_SF_L61"
-msgstr "12,8 cm Kanone 40"
+msgid "_128mm_Pzgr_Nr_5"
+msgstr "Pzgr. Nr. 5"
 
 msgid "_128mm_SprG18"
 msgstr "Sprgr 18"
@@ -6507,6 +7038,15 @@ msgstr "Sprgr 19"
 msgid "_128mm_SprG19P"
 msgstr "Sprgr 19P"
 
+msgid "_128mm_Sprgr_18_100"
+msgstr "Sprgr. 18 (100)"
+
+msgid "_128mm_Sprgr_18_170"
+msgstr "Sprgr. 18 (170)"
+
+msgid "_128mm_Sprgr_18_180B"
+msgstr "Sprgr. 18 (180B)"
+
 msgid "_128mm_Sprgr_18_E"
 msgstr "Sprgr. 18 E"
 
@@ -6516,10 +7056,28 @@ msgstr "Sprgr. 18 (F)"
 msgid "_128mm_Sprgr_18_JT"
 msgstr "Sprgr. 18 (JT)"
 
+msgid "_128mm_Sprgr_18_K_170"
+msgstr "Sprgr. 18 K (170)"
+
+msgid "_128mm_Sprgr_18_Maus"
+msgstr "Sprgr. 18 (Maus)"
+
+msgid "_128mm_Sprgr_18_Rhm"
+msgstr "Sprgr. 18 (Rhm)"
+
+msgid "_128mm_Sprgr_18_WT_IV"
+msgstr "Sprgr. 18 (WT IV)"
+
 msgid "_128mm_Sprgr_19_JT"
 msgstr "Sprgr. 19 (JT)"
 
-msgid "_128mm_Sprgr_N9"
+msgid "_128mm_Sprgr_19_VII"
+msgstr "Sprgr. 19 (VII)"
+
+msgid "_128mm_Sprgr_19_WT_IV"
+msgstr "Sprgr. 19 (WT IV)"
+
+msgid "_128mm_Sprgr_Nr_9"
 msgstr "Sprgr. Nr. 9"
 
 msgid "_12_8_cm_Pak_44_L_55_F"
@@ -6528,17 +7086,20 @@ msgstr "12,8 cm Pak 44 L/55 (F)"
 msgid "_12_8_cm_Pak_44_L_55_JT"
 msgstr "12,8 cm Pak 44 L/55 (JT)"
 
-msgid "_150mmGr_39H1A"
-msgstr "Gr 39 H1A"
+msgid "_132mm_Gr"
+msgstr "Gr."
 
-msgid "_150mmGr_39H1A_G"
-msgstr "Gr 39 H1A G"
+msgid "_132mm_Hl_Gr"
+msgstr "Hl. Gr."
+
+msgid "_132mm_Kw_K_L_66"
+msgstr "13,2 cm Kw.K. L/66"
+
+msgid "_132mm_Pzgr"
+msgstr "Pzgr."
 
 msgid "_150mmGr_39H1A_L"
 msgstr "Gr 39 H1A L"
-
-msgid "_150mmGr_39H2A_G"
-msgstr "Gr 39 H2A G"
 
 msgid "_150mmGr_39H3A_G"
 msgstr "Gr 39 H3A G"
@@ -6547,10 +7108,43 @@ msgid "_150mm_Exp_APDS_SH"
 msgstr "APDS Exp."
 
 msgid "_150mm_Gr_19_Stg"
-msgstr "15 cm Gr. 19 Stg"
+msgstr "Gr. 19 Stg"
 
 msgid "_150mm_Gr_19_Stg_FES"
-msgstr "15 cm Gr. 19 Stg FES"
+msgstr "Gr. 19 Stg FES"
+
+msgid "_150mm_Gr_19_Stg_FES_Hummel"
+msgstr "Gr. 19 Stg FES (Hummel)"
+
+msgid "_150mm_Gr_19_Stg_Grille"
+msgstr "Gr. 19 Stg (Grille)"
+
+msgid "_150mm_Gr_39_Hl_A"
+msgstr "Gr. 39 Hl/A"
+
+msgid "_150mm_Gr_39_Hl_A_G"
+msgstr "Gr. 39 Hl/A G"
+
+msgid "_150mm_Gr_39_Hl_A_G_Hummel"
+msgstr "Gr. 39 Hl/A G (Hummel)"
+
+msgid "_150mm_Gr_39_Hl_A_Grille"
+msgstr "Gr. 39 Hl/A (Grille)"
+
+msgid "_150mm_Gr_39_Hl_A_L_Grille"
+msgstr "Gr. 39 Hl/A L (Grille)"
+
+msgid "_150mm_Gr_39_Hl_B_G"
+msgstr "Gr. 39 Hl/B G"
+
+msgid "_150mm_Gr_39_Hl_C_G_E_100"
+msgstr "Gr. 39 Hl/C G (E 100)"
+
+msgid "_150mm_Gr_39_Hl_C_G_Rhm"
+msgstr "Gr. 39 Hl/C G (Rhm)"
+
+msgid "_150mm_Gr_39_Hl_C_G_WT_IV"
+msgstr "Gr. 39 Hl/C G (WT IV)"
 
 msgid "_150mm_Gr_44_Hl_A"
 msgstr "Gr. 44 Hl/A"
@@ -6567,11 +7161,17 @@ msgstr "15 cm Kw.K. L/38"
 msgid "_150mm_KwK44_L38_SH"
 msgstr "15 cm Kw.K. L/38"
 
-msgid "_150mm_Pak_L63"
-msgstr "15 cm Pak L/63"
+msgid "_150mm_Pak_L_29_5"
+msgstr "15 cm Pak L/29.5"
+
+msgid "_150mm_Pak_L_38"
+msgstr "15 cm Pak L/38"
 
 msgid "_150mm_Pak_L_44"
 msgstr "15 cm Pak L/44"
+
+msgid "_150mm_Pak_L_63"
+msgstr "15 cm Pak L/63"
 
 msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
@@ -6582,29 +7182,20 @@ msgstr "Pzgr 42"
 msgid "_150mm_Pzgr"
 msgstr "Pzgr."
 
+msgid "_150mm_Pzgr_42_E_100"
+msgstr "Pzgr. 42 (E 100)"
+
+msgid "_150mm_Pzgr_42_Rhm"
+msgstr "Pzgr. 42 (Rhm)"
+
+msgid "_150mm_Pzgr_42_WT_IV"
+msgstr "Pzgr. 42 (WT IV)"
+
 msgid "_150mm_Pzgr_44"
 msgstr "Pzgr. 44"
 
 msgid "_150mm_Pzgr_m_Hb"
 msgstr "Pzgr. (m.Hb)"
-
-msgid "_150mm_Rohr_L29_5"
-msgstr "15 cm Pak L/29.5"
-
-msgid "_150mm_Rohr_L38"
-msgstr "15 cm Pak L/38"
-
-msgid "_150mm_Sprg"
-msgstr "Sprgr 18"
-
-msgid "_150mm_SprgG"
-msgstr "Sprgr G"
-
-msgid "_150mm_SprgG31"
-msgstr "Sprgr G 31"
-
-msgid "_150mm_SprgG36"
-msgstr "Sprgr 36"
 
 msgid "_150mm_SprgG_ausf_45"
 msgstr "Sprgr G 45"
@@ -6618,53 +7209,119 @@ msgstr "Sprgr L erz."
 msgid "_150mm_Sprgr"
 msgstr "Sprgr."
 
+msgid "_150mm_Sprgr_18"
+msgstr "Sprgr. 18"
+
+msgid "_150mm_Sprgr_18_Grille"
+msgstr "Sprgr. 18 (Grille)"
+
+msgid "_150mm_Sprgr_36"
+msgstr "Sprgr. 36"
+
+msgid "_150mm_Sprgr_G"
+msgstr "Sprgr. G"
+
+msgid "_150mm_Sprgr_G_31"
+msgstr "Sprgr. G 31"
+
 msgid "_150mm_Sprgr_G_44"
 msgstr "Sprgr. G 44"
+
+msgid "_150mm_Sprgr_G_45_E_100"
+msgstr "Sprgr. G 45 (E 100)"
+
+msgid "_150mm_Sprgr_G_45_Rhm"
+msgstr "Sprgr. G 45 (Rhm)"
+
+msgid "_150mm_Sprgr_G_45_WT_IV"
+msgstr "Sprgr. G 45 (WT IV)"
+
+msgid "_150mm_Sprgr_G_Hummel"
+msgstr "Sprgr. G (Hummel)"
 
 msgid "_150mm_Sprgr_Kz_m_Hb"
 msgstr "Sprgr. Kz (m.Hb)"
 
+msgid "_150mm_Sprgr_L_Grille"
+msgstr "Sprgr. L (Grille)"
+
+msgid "_150mm_Sprgr_L_erz_Grille"
+msgstr "Sprgr. L erz. (Grille)"
+
 msgid "_150mm_TbtsK_C_36"
 msgstr "15 cm TbtsK C/36"
-
-msgid "_150mm_sFH13_L17"
-msgstr "15 cm s.F.H. 13 L/17"
-
-msgid "_150mm_sFH18_L30"
-msgstr "15 cm s.F.H. 18 L/29.5"
-
-msgid "_150mm_sFH36_L43"
-msgstr "15 cm s.F.H. 43"
-
-msgid "_150mm_sFH36_L43_short"
-msgstr "15 cm s.F.H. 43"
 
 msgid "_150mm_sIG33L11"
 msgstr "15 cm s.I.G. 33 L/11"
 
-msgid "_170mm_K72_Sf_"
+msgid "_150mm_s_F_H_13_L_17"
+msgstr "15 cm s.F.H. 13 L/17"
+
+msgid "_150mm_s_F_H_13_L_17_Grille"
+msgstr "15 cm s.F.H. 13 L/17 (Grille)"
+
+msgid "_150mm_s_F_H_18_L_29_5"
+msgstr "15 cm s.F.H. 18 L/29.5"
+
+msgid "_150mm_s_F_H_18_L_29_5_Hummel"
+msgstr "15 cm s.F.H. 18 L/29.5 (Hummel)"
+
+msgid "_150mm_s_F_H_43"
+msgstr "15 cm s.F.H. 43"
+
+msgid "_150mm_s_F_H_43_short"
+msgstr "15 cm s.F.H. 43"
+
+msgid "_150mm_s_I_G_33_L_11_Grille"
+msgstr "15 cm s.I.G. 33 L/11 (Grille)"
+
+msgid "_170mm_Kanone_72"
 msgstr "17 cm Kanone 72"
 
+msgid "_170mm_Kanone_72_GW_P"
+msgstr "17 cm Kanone 72 (GW P)"
+
 msgid "_170mm_PaK_K72"
+msgstr "17 cm Pak"
+
+msgid "_170mm_PaK_K72_7x7"
 msgstr "17 cm Pak"
 
 msgid "_170mm_PaK_K72_PzGr43"
 msgstr "PzGr 46"
 
+msgid "_170mm_PaK_K72_PzGr43_7x7"
+msgstr "PzGr 46"
+
 msgid "_170mm_PaK_K72_PzGr45"
+msgstr "Gr 46 H1A"
+
+msgid "_170mm_PaK_K72_PzGr45_7x7"
 msgstr "Gr 46 H1A"
 
 msgid "_170mm_PaK_K72_SprgG_ausf_46"
 msgstr "SprgG 46"
 
+msgid "_170mm_PaK_K72_SprgG_ausf_46_7x7"
+msgstr "SprgG 46"
+
 msgid "_170mm_Pzgr_73"
-msgstr "Pzgr 73"
+msgstr "Pzgr. 73"
 
-msgid "_170mm_Sprg18"
-msgstr "Sprgr 18"
+msgid "_170mm_Pzgr_73_GW_P"
+msgstr "Pzgr. 73 (GW P)"
 
-msgid "_170mm_Sprg18_Ausf_G"
-msgstr "Sprg18 Ausf. G"
+msgid "_170mm_Sprgr_18"
+msgstr "Sprgr. 18"
+
+msgid "_170mm_Sprgr_18_Ausf_G"
+msgstr "Sprgr. 18 Ausf. G"
+
+msgid "_170mm_Sprgr_18_Ausf_G_GW_P"
+msgstr "Sprgr. 18 Ausf. G (GW P)"
+
+msgid "_170mm_Sprgr_18_GW_P"
+msgstr "Sprgr. 18 (GW P)"
 
 msgid "_20cm_Pzgr40"
 msgstr "Pzgr 40"
@@ -6672,8 +7329,14 @@ msgstr "Pzgr 40"
 msgid "_20cm_Pzgr40_S"
 msgstr "20×138mmBs"
 
+msgid "_20cm_Pzgr_40_LTr"
+msgstr "Pzgr. 40 (LTr)"
+
 msgid "_20mm_Breda"
 msgstr "2 cm Breda (i)"
+
+msgid "_20mm_Breda_i_LTr"
+msgstr "2 cm Breda (i) (LTr)"
 
 msgid "_20mm_Flak_38_L112"
 msgstr "2 cm Flak 38"
@@ -6693,6 +7356,12 @@ msgstr "2 cm Kw.K. 38"
 msgid "_20mm_Kw_K_38_Ausf_F"
 msgstr "2 cm Kw.K. 38 Ausf. F"
 
+msgid "_20mm_Kw_K_38_II_G"
+msgstr "2 cm Kw.K. 38 (II G)"
+
+msgid "_20mm_Kw_K_38_II_L"
+msgstr "2 cm Kw.K. 38 (II L)"
+
 msgid "_20mm_Pzgr39"
 msgstr "Pzgr 39"
 
@@ -6702,50 +7371,126 @@ msgstr "20×138mmB"
 msgid "_20mm_Pzgr_39F"
 msgstr "Pzgr. 39F"
 
+msgid "_20mm_Pzgr_39_II_G"
+msgstr "Pzgr. 39 (II G)"
+
+msgid "_20mm_Pzgr_39_II_L"
+msgstr "Pzgr. 39 (II L)"
+
+msgid "_20mm_Pzgr_39_LTr"
+msgstr "Pzgr. 39 (LTr)"
+
 msgid "_20mm_Pzgr_40F"
 msgstr "Pzgr. 40F"
+
+msgid "_20mm_Pzgr_40_II_G"
+msgstr "Pzgr. 40 (II G)"
+
+msgid "_20mm_Pzgr_40_II_L"
+msgstr "Pzgr. 40 (II L)"
 
 msgid "_20mm_Solothurn_S_18_1000"
 msgstr "Solothurn S-18/1000"
 
-msgid "_210mm_Gr.18Be"
+msgid "_210mm_Gr_18"
+msgstr "Gr. 18"
+
+msgid "_210mm_Gr_18_Be"
 msgstr "Gr. 18 Be"
+
+msgid "_210mm_Gr_18_Be_GW_P"
+msgstr "Gr. 18 Be (GW P)"
+
+msgid "_210mm_Gr_18_Be_GW_T"
+msgstr "Gr. 18 Be (GW T)"
+
+msgid "_210mm_Gr_18_GW_P"
+msgstr "Gr. 18 (GW P)"
+
+msgid "_210mm_Gr_18_GW_T"
+msgstr "Gr. 18 (GW T)"
+
+msgid "_210mm_Gr_18_Stg"
+msgstr "Gr. 18 Stg"
+
+msgid "_210mm_Gr_18_Stg_GW_P"
+msgstr "Gr. 18 Stg (GW P)"
+
+msgid "_210mm_Gr_18_Stg_GW_T"
+msgstr "Gr. 18 Stg (GW T)"
 
 msgid "_210mm_Morser_18"
 msgstr "21 cm Mörser 18/2"
 
-msgid "_210mm_Morser_21"
+msgid "_210mm_Morser_18_1"
 msgstr "21 cm Mörser 18/1"
 
-msgid "_210mm_Sprg18"
-msgstr "Gr. 18 Stg"
+msgid "_210mm_Morser_18_1_GW_P"
+msgstr "21 cm Mörser 18/1 (GW P)"
 
-msgid "_210mm_Sprg18_Ausf_G"
-msgstr "Gr. 18"
+msgid "_210mm_Morser_21"
+msgstr "21 cm Mörser 21"
 
 msgid "_2x_Hanomag_Boxer"
 msgstr "2x Hanomag Boxer"
 
+msgid "_2x_Porsche_Typ_100_1_180A"
+msgstr "2x Porsche Typ 100/1 (180A)"
+
 msgid "_2x_Porsche_Typ_100_1_F"
 msgstr "2x Porsche Typ 100/1 (F)"
+
+msgid "_2x_Porsche_Typ_100_1_F_short"
+msgstr ""
+"2x Porsche\n"
+"Typ 100/1 (F)"
+
+msgid "_2x_Porsche_Typ_100_3_180A"
+msgstr "2x Porsche Typ 100/3 (180A)"
 
 msgid "_2x_Porsche_Typ_100_3_F"
 msgstr "2x Porsche Typ 100/3 (F)"
 
-msgid "_30mm_M"
-msgstr "Spgr. Patr. 103 M"
+msgid "_2x_Porsche_Typ_100_3_F_short"
+msgstr ""
+"2x Porsche\n"
+"Typ 100/3 (F)"
 
-msgid "_30mm_MK103"
-msgstr "3 cm M.K. 103"
+msgid "_30mm_H_Pzgr_Patr_103_u"
+msgstr "H-Pzgr. Patr. 103 (u)"
 
-msgid "_30mm_MK103A"
-msgstr "3 cm M.K. 103A"
+msgid "_30mm_H_Pzgr_Patr_103_u_II_G"
+msgstr "H-Pzgr. Patr. 103 (u) (II G)"
 
-msgid "_30mm_Pzgr"
+msgid "_30mm_H_Pzgr_Patr_103_u_II_L"
+msgstr "H-Pzgr. Patr. 103 (u) (II L)"
+
+msgid "_30mm_H_Pzgr_Patr_103_w"
 msgstr "H-Pzgr. Patr. 103 (w)"
 
-msgid "_30mm_Pzgr43"
-msgstr "H-Pzgr. Patr. 103 (u)"
+msgid "_30mm_H_Pzgr_Patr_103_w_II_G"
+msgstr "H-Pzgr. Patr. 103 (w) (II G)"
+
+msgid "_30mm_H_Pzgr_Patr_103_w_II_L"
+msgstr "H-Pzgr. Patr. 103 (w) (II L)"
+
+msgid "_30mm_M_K_103_1602"
+msgstr "3 cm M.K. 103 (1602)"
+
+msgid "_30mm_M_K_103_II_G"
+msgstr "3 cm M.K. 103 (II G)"
+
+msgid "_30mm_M_K_103_II_L"
+msgstr "3 cm M.K. 103 (II L)"
+
+msgid "_30mm_Sprgr_Patr_103_M"
+msgstr "Sprgr. Patr. 103 M"
+
+msgid "_30mm_Sprgr_Patr_103_M_II_G"
+msgstr "Sprgr. Patr. 103 M (II G)"
+
+msgid "_30mm_Sprgr_Patr_103_M_II_L"
+msgstr "Sprgr. Patr. 103 M (II L)"
 
 msgid "_37cm_Pzgr40"
 msgstr "Pzgr 40"
@@ -6801,11 +7546,11 @@ msgstr "3,7 cm SA 38 L/34"
 msgid "_37mm_Sprg.18"
 msgstr "Sprgr 18"
 
-msgid "_37mm_Sprg.18f"
-msgstr "Sprgr 18f"
-
 msgid "_37mm_Sprg.18t"
 msgstr "Sprgr 18 (t)"
+
+msgid "_37mm_Sprgr_18f"
+msgstr "Sprgr. 18f"
 
 msgid "_37mm_Sprgr_34_D_T"
 msgstr "Sprgr. 34 D.T."
@@ -6882,9 +7627,6 @@ msgstr "5 cm Kw.K. 38 L/42"
 msgid "_50mm_KwK_39_L60"
 msgstr "5 cm Kw.K. 39 L/60"
 
-msgid "_50mm_KwK_39_L60L"
-msgstr "5 cm Kw.K. 39 L/60L"
-
 msgid "_50mm_KwK_39_L60L1"
 msgstr "5 cm Kw.K. 39 L/60L1"
 
@@ -6897,11 +7639,17 @@ msgstr "5 cm Kw.K. 38 L/42 Ausf. F"
 msgid "_50mm_Kw_K_38_L_42_Ausf_J"
 msgstr "5 cm Kw.K. 38 L/42 Ausf. J"
 
+msgid "_50mm_Kw_K_39_L_60_1602"
+msgstr "5 cm Kw.K. 39 L/60 (1602)"
+
+msgid "_50mm_Kw_K_39_L_60_2801"
+msgstr "5 cm Kw.K. 39 L/60 (2801)"
+
 msgid "_50mm_Kw_K_39_L_60_Ausf_L"
 msgstr "5 cm Kw.K. 39 L/60 Ausf. L"
 
-msgid "_50mm_MK_46_ROTARY_FEP"
-msgstr "5 cm MK-272 L/60"
+msgid "_50mm_Kw_K_39_L_60_II_L"
+msgstr "5 cm Kw.K. 39 L/60 (II L)"
 
 msgid "_50mm_PaK_39_L60"
 msgstr "5 cm Pak 38 L/60"
@@ -6909,14 +7657,8 @@ msgstr "5 cm Pak 38 L/60"
 msgid "_50mm_Pzgr39"
 msgstr "Pzgr 39"
 
-msgid "_50mm_Pzgr39_FEP"
-msgstr "5 cm H-Pzgr. Patr. 272 (w)"
-
 msgid "_50mm_Pzgr40"
 msgstr "Pzgr 40"
-
-msgid "_50mm_Pzgr47_FEP"
-msgstr "5 cm H-Pzgr. Patr. 272S (u)"
 
 msgid "_50mm_Pzgr_39E"
 msgstr "Pzgr. 39E"
@@ -6930,6 +7672,15 @@ msgstr "Pzgr. 39J"
 msgid "_50mm_Pzgr_39L"
 msgstr "Pzgr. 39L"
 
+msgid "_50mm_Pzgr_39_1602"
+msgstr "Pzgr. 39 (1602)"
+
+msgid "_50mm_Pzgr_39_2801"
+msgstr "Pzgr. 39 (2801)"
+
+msgid "_50mm_Pzgr_39_II_L"
+msgstr "Pzgr. 39 (II L)"
+
 msgid "_50mm_Pzgr_40E"
 msgstr "Pzgr. 40E"
 
@@ -6941,6 +7692,15 @@ msgstr "Pzgr. 40J"
 
 msgid "_50mm_Pzgr_40L"
 msgstr "Pzgr. 40L"
+
+msgid "_50mm_Pzgr_40_1602"
+msgstr "Pzgr. 40 (1602)"
+
+msgid "_50mm_Pzgr_40_2801"
+msgstr "Pzgr. 40 (2801)"
+
+msgid "_50mm_Pzgr_40_II_L"
+msgstr "Pzgr. 40 (II L)"
 
 msgid "_50mm_Sprg.18"
 msgstr "Sprgr 18"
@@ -6957,6 +7717,15 @@ msgstr "Sprgr. 18J"
 msgid "_50mm_Sprgr_18L"
 msgstr "Sprgr. 18L"
 
+msgid "_50mm_Sprgr_18_1602"
+msgstr "Sprgr. 18 (1602)"
+
+msgid "_50mm_Sprgr_18_2801"
+msgstr "Sprgr. 18 (2801)"
+
+msgid "_50mm_Sprgr_18_II_L"
+msgstr "Sprgr. 18 (II L)"
+
 msgid "_7.92mm_AP"
 msgstr "Patrone 318 SmK-Rs-L'spur"
 
@@ -6972,8 +7741,23 @@ msgstr "Pzgr. 41 H.K."
 msgid "_75_55_mm_Pzgr_41_W"
 msgstr "Pzgr. 41 W"
 
+msgid "_75_55_mm_Sprgr_41"
+msgstr "Sprgr. 41"
+
+msgid "_75_55_mm_Sprgr_41A"
+msgstr "Sprgr. 41A"
+
+msgid "_75_55_mm_Waffe_0725"
+msgstr "7,5/5,5 cm Waffe 0725"
+
 msgid "_75_55_mm_Waffe_0725_Ausf_A"
 msgstr "7,5/5,5 cm Waffe 0725 Ausf. A"
+
+msgid "_75_55mm_Pzgr_41_HK"
+msgstr "Pzgr. 41 HK"
+
+msgid "_75_55mm_Pzgr_41_StK"
+msgstr "Pzgr. 41 StK"
 
 msgid "_75mm_40_M_Kulonleges_Nemet_Pancelgranat"
 msgstr "40 (40W) M. KNP"
@@ -6999,9 +7783,6 @@ msgstr "7,5 cm Flak L/60"
 msgid "_75mm_KwK41_L58U_conic"
 msgstr "7,5/5,5 cm Waffe SP"
 
-msgid "_75mm_KwK41_L58_conic"
-msgstr "7,5/5,5 cm Waffe 0725"
-
 msgid "_75mm_KwK45_L100"
 msgstr "7,5 cm Kw.K. L/100"
 
@@ -7026,9 +7807,6 @@ msgstr "7,5 cm Kw.K. 40 L/48"
 msgid "_75mm_KwK_40_L48D"
 msgstr "7,5 cm Kw.K. 40 L/48 (K)"
 
-msgid "_75mm_KwK_40_L48L"
-msgstr "7,5 cm Kw.K. 40 L/48L"
-
 msgid "_75mm_KwK_40_L48_KW_Ir"
 msgstr "7,5 cm Kw.K. 40 L/48 SchF"
 
@@ -7047,11 +7825,32 @@ msgstr "7,5 cm Kw.K. 42 L/70"
 msgid "_75mm_Kw_K_40_L_43_T_3001"
 msgstr "7,5 cm Kw.K. 40 T 3001"
 
+msgid "_75mm_Kw_K_40_L_48_2801"
+msgstr "7,5 cm Kw.K. 40 L/48 (2801)"
+
+msgid "_75mm_Kw_K_40_L_48_3002M"
+msgstr "7,5 cm Kw.K. 40 L/48 (3002M)"
+
 msgid "_75mm_Kw_K_40_L_48_Ausf_H"
 msgstr "7,5 cm Kw.K. 40 Ausf. H"
 
 msgid "_75mm_Kw_K_40_L_48_Typ_100"
-msgstr "7,5 cm Kw.K. 40 L/48 Typ 100"
+msgstr "7,5 cm Kw.K. 40 L/48"
+
+msgid "_75mm_Kw_K_42_L_70_3002D"
+msgstr "7,5 cm Kw.K. 42 L/70 (3002D)"
+
+msgid "_75mm_Kw_K_42_L_70_3002M"
+msgstr "7,5 cm Kw.K. 42 L/70 (3002M)"
+
+msgid "_75mm_Kw_K_42_L_70_Ausf_A"
+msgstr "7,5 cm Kw.K. 42 L/70 Ausf. A"
+
+msgid "_75mm_Kw_K_42_L_70_Ausf_G"
+msgstr "7,5 cm Kw.K. 42 L/70 Ausf. G"
+
+msgid "_75mm_Kw_K_42_L_70_II"
+msgstr "7,5 cm Kw.K. 42 L/70 (II)"
 
 msgid "_75mm_PaK_39_L48"
 msgstr "7,5 cm Pak 39 L/48"
@@ -7098,6 +7897,12 @@ msgstr "Pzgr. 39L (G)"
 msgid "_75mm_Pzgr_39L_IV"
 msgstr "Pzgr. 39L (IV)"
 
+msgid "_75mm_Pzgr_39_2801"
+msgstr "Pzgr. 39 (2801)"
+
+msgid "_75mm_Pzgr_39_3002M"
+msgstr "Pzgr. 39 (3002M)"
+
 msgid "_75mm_Pzgr_39_Ausf_H"
 msgstr "Pzgr. 39 Ausf. H"
 
@@ -7109,6 +7914,21 @@ msgstr "Pzgr. 39 (E)"
 
 msgid "_75mm_Pzgr_39_G"
 msgstr "Pzgr. 39 (G)"
+
+msgid "_75mm_Pzgr_39_L_3002D"
+msgstr "Pzgr. 39 L (3002D)"
+
+msgid "_75mm_Pzgr_39_L_3002M"
+msgstr "Pzgr. 39 L (3002M)"
+
+msgid "_75mm_Pzgr_39_L_A"
+msgstr "Pzgr. 39 L (A)"
+
+msgid "_75mm_Pzgr_39_L_G"
+msgstr "Pzgr. 39 L (G)"
+
+msgid "_75mm_Pzgr_39_L_II"
+msgstr "Pzgr. 39 L (II)"
 
 msgid "_75mm_Pzgr_39_T_3001"
 msgstr "Pzgr. 39 T 3001"
@@ -7122,6 +7942,12 @@ msgstr "Pzgr. 40L (G)"
 msgid "_75mm_Pzgr_40L_IV"
 msgstr "Pzgr. 40L (IV)"
 
+msgid "_75mm_Pzgr_40_2801"
+msgstr "Pzgr. 40 (2801)"
+
+msgid "_75mm_Pzgr_40_3002M"
+msgstr "Pzgr. 40 (3002M)"
+
 msgid "_75mm_Pzgr_40_Ausf_H"
 msgstr "Pzgr. 40 Ausf. H"
 
@@ -7133,6 +7959,21 @@ msgstr "Pzgr. 40 (E)"
 
 msgid "_75mm_Pzgr_40_G"
 msgstr "Pzgr. 40 (G)"
+
+msgid "_75mm_Pzgr_40_L_3002D"
+msgstr "Pzgr. 40 L (3002D)"
+
+msgid "_75mm_Pzgr_40_L_3002M"
+msgstr "Pzgr. 40 L (3002M)"
+
+msgid "_75mm_Pzgr_40_L_A"
+msgstr "Pzgr. 40 L (A)"
+
+msgid "_75mm_Pzgr_40_L_G"
+msgstr "Pzgr. 40 L (G)"
+
+msgid "_75mm_Pzgr_40_L_II"
+msgstr "Pzgr. 40 L (II)"
 
 msgid "_75mm_Pzgr_40_T_3001"
 msgstr "Pzgr. 40 T 3001"
@@ -7164,6 +8005,12 @@ msgstr "Sprgr. 18L (G)"
 msgid "_75mm_Sprgr_18L_IV"
 msgstr "Sprgr. 18L (IV)"
 
+msgid "_75mm_Sprgr_18_2801"
+msgstr "Sprgr. 18 (2801)"
+
+msgid "_75mm_Sprgr_18_3002M"
+msgstr "Sprgr. 18 (3002M)"
+
 msgid "_75mm_Sprgr_18_Ausf_H"
 msgstr "Sprgr. 18 Ausf. H"
 
@@ -7172,6 +8019,21 @@ msgstr "Sprgr. 18 (E)"
 
 msgid "_75mm_Sprgr_18_G"
 msgstr "Sprgr. 18 (G)"
+
+msgid "_75mm_Sprgr_18_L_3002D"
+msgstr "Sprgr. 18 L (3002D)"
+
+msgid "_75mm_Sprgr_18_L_3002M"
+msgstr "Sprgr. 18 L (3002M)"
+
+msgid "_75mm_Sprgr_18_L_A"
+msgstr "Sprgr. 18 L (A)"
+
+msgid "_75mm_Sprgr_18_L_G"
+msgstr "Sprgr. 18 L (G)"
+
+msgid "_75mm_Sprgr_18_L_II"
+msgstr "Sprgr. 18 L (II)"
 
 msgid "_75mm_Sprgr_18_T_3001"
 msgstr "Sprgr. 18 T 3001"
@@ -7231,14 +8093,18 @@ msgstr ""
 msgid "_7_5_cm_Pak_42_L_70_IV"
 msgstr "7,5 cm Pak 42 L/70 (IV)"
 
+msgid "_7_5_cm_Pak_42_L_70_IV_short"
+msgstr ""
+"7,5 cm Pak 42\n"
+"L/70 (IV)"
+
 msgid "_7_5_cm_Stu_K_40_L_43_B"
 msgstr "7,5 cm Stu.K. 40 L/43 (B)"
 
-msgid "_88mm_FlakGr39_FEP"
-msgstr "8,8 cm Pzgr 39/46 für HA"
-
-msgid "_88mm_FlakGr40_FEP"
-msgstr "8,8 cm Pzgr 40/46 für HA"
+msgid "_7_5_cm_Stu_K_40_L_43_B_short"
+msgstr ""
+"7,5 cm Stu.K. 40\n"
+"L/43 (B)"
 
 msgid "_88mm_Flak_37_L56"
 msgstr "8,8 cm Flak 37 L/56"
@@ -7246,17 +8112,8 @@ msgstr "8,8 cm Flak 37 L/56"
 msgid "_88mm_Flak_41_L74"
 msgstr "8,8 cm Flak 41 L/74"
 
-msgid "_88mm_Flakzwilling_FEP"
-msgstr "8,8 cm Flak 41 Zwilling"
-
-msgid "_88mm_KwK_36_L56"
-msgstr "8,8 cm Kw.K. 36 L/56"
-
 msgid "_88mm_KwK_36_L56A"
 msgstr "8,8 cm Kw.K. 36 L/56"
-
-msgid "_88mm_KwK_43_L71"
-msgstr "8,8 cm Kw.K. 43 L/71"
 
 msgid "_88mm_KwK_43_L71A"
 msgstr "8,8 cm Pak 43 L/71"
@@ -7279,6 +8136,12 @@ msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
 msgid "_88mm_KwK_L100"
 msgstr "8,8 cm Kw.K. L/100"
 
+msgid "_88mm_Kw_K_36_L_56"
+msgstr "8,8 cm Kw.K. 36 L/56"
+
+msgid "_88mm_Kw_K_36_L_56_3601"
+msgstr "8,8 cm Kw.K. 36 L/56 (3601)"
+
 msgid "_88mm_Kw_K_36_L_56_Ausf_E"
 msgstr "8,8 cm Kw.K. 36 L/56 Ausf. E"
 
@@ -7287,6 +8150,26 @@ msgstr "8,8 cm Kw.K. 36 L/56 Typ 100"
 
 msgid "_88mm_Kw_K_36_L_56_Typ_101"
 msgstr "8,8 cm Kw.K. 36 L/56 Typ 101"
+
+msgid "_88mm_Kw_K_43_L_71"
+msgstr "8,8 cm Kw.K. 43 L/71"
+
+msgid "_88mm_Kw_K_43_L_71_180A"
+msgstr "8,8 cm Kw.K. 43 L/71 (180A)"
+
+msgid "_88mm_Kw_K_43_L_71_50"
+msgstr "8,8 cm Kw.K. 43 L/71 (50)"
+
+msgid "_88mm_Kw_K_43_L_71_I"
+msgstr "8.8 cm Kw.K. 43 L/71 (I)"
+
+msgid "_88mm_Kw_K_43_L_71_II"
+msgstr "8,8 cm Kw.K. 43 L/71 (II)"
+
+msgid "_88mm_Kw_K_43_L_71_I_short"
+msgstr ""
+"8.8 cm Kw.K. 43\n"
+"L/71 (I)"
 
 msgid "_88mm_Kw_K_43_L_71_Typ_101"
 msgstr "8,8 cm Kw.K. 43 L/71 Typ 101"
@@ -7297,8 +8180,14 @@ msgstr "8,8 cm Pak L/56"
 msgid "_88mm_PaK_43_L71"
 msgstr "8,8 cm Pak 43 L/71"
 
+msgid "_88mm_Pak_36_L_56_164"
+msgstr "8,8 cm Pak L/56 (164)"
+
 msgid "_88mm_Pak_43_L71A"
 msgstr "8,8 cm Pak 43 L/71A"
+
+msgid "_88mm_Pak_43_L_71_164"
+msgstr "8,8 cm Pak 43 L/71 (164)"
 
 msgid "_88mm_Pzgr.40"
 msgstr "Pzgr 40"
@@ -7311,9 +8200,6 @@ msgstr "Pzgr 40 L1"
 
 msgid "_88mm_Pzgr.40_43"
 msgstr "Pzgr 40/43"
-
-msgid "_88mm_Pzgr.40_43_n"
-msgstr "Pzgr. 40/43 Ausf. E"
 
 msgid "_88mm_Pzgr39"
 msgstr "Pzgr 39"
@@ -7345,11 +8231,38 @@ msgstr "Pzgr. 40/43 Flak 41"
 msgid "_88mm_Pzgr40_43D"
 msgstr "Pzgr 40/43K"
 
+msgid "_88mm_Pzgr_39_164"
+msgstr "Pzgr. 39 (164)"
+
+msgid "_88mm_Pzgr_39_3002D"
+msgstr "Pzgr. 39 (3002D)"
+
+msgid "_88mm_Pzgr_39_3601"
+msgstr "Pzgr. 39 (3601)"
+
 msgid "_88mm_Pzgr_39_43A"
 msgstr "Pzgr 39/43A"
 
+msgid "_88mm_Pzgr_39_43_164"
+msgstr "Pzgr. 39/43 (164)"
+
+msgid "_88mm_Pzgr_39_43_180A"
+msgstr "Pzgr. 39/43 (180A)"
+
+msgid "_88mm_Pzgr_39_43_50"
+msgstr "Pzgr. 39/43 (50)"
+
 msgid "_88mm_Pzgr_39_43_F"
 msgstr "Pzgr. 39/43 (F)"
+
+msgid "_88mm_Pzgr_39_43_I"
+msgstr "Pzgr. 39/43 (I)"
+
+msgid "_88mm_Pzgr_39_43_II"
+msgstr "Pzgr. 39/43 (II)"
+
+msgid "_88mm_Pzgr_39_43_I_P"
+msgstr "Pzgr. 39/43 (I-P)"
 
 msgid "_88mm_Pzgr_39_43_JP"
 msgstr "Pzgr. 39/43 (JP)"
@@ -7372,8 +8285,38 @@ msgstr "Pzgr. 39 Typ 100"
 msgid "_88mm_Pzgr_39_Typ_101"
 msgstr "Pzgr. 39 Typ 101"
 
+msgid "_88mm_Pzgr_40_164"
+msgstr "Pzgr. 40 (164)"
+
+msgid "_88mm_Pzgr_40_3002D"
+msgstr "Pzgr. 40 (3002D)"
+
+msgid "_88mm_Pzgr_40_3601"
+msgstr "Pzgr. 40 (3601)"
+
+msgid "_88mm_Pzgr_40_43_164"
+msgstr "Pzgr. 40/43 (164)"
+
+msgid "_88mm_Pzgr_40_43_180A"
+msgstr "Pzgr. 40/43 (180A)"
+
+msgid "_88mm_Pzgr_40_43_50"
+msgstr "Pzgr. 40/43 (50)"
+
+msgid "_88mm_Pzgr_40_43_Ausf_E"
+msgstr "Pzgr. 40/43 Ausf. E"
+
 msgid "_88mm_Pzgr_40_43_F"
 msgstr "Pzgr. 40/43 (F)"
+
+msgid "_88mm_Pzgr_40_43_I"
+msgstr "Pzgr. 40/43 (I)"
+
+msgid "_88mm_Pzgr_40_43_II"
+msgstr "Pzgr. 40/43 (II)"
+
+msgid "_88mm_Pzgr_40_43_I_P"
+msgstr "Pzgr. 40/43 (I-P)"
 
 msgid "_88mm_Pzgr_40_43_JP"
 msgstr "Pzgr. 40/43 (JP)"
@@ -7408,14 +8351,20 @@ msgstr "Sprgr 18 L1"
 msgid "_88mm_Sprg.43"
 msgstr "Sprgr 43"
 
-msgid "_88mm_Sprg.43_n"
-msgstr "Sprgr. 43 Ausf. E"
-
 msgid "_88mm_Sprg43D"
 msgstr "Sprgr 43K"
 
 msgid "_88mm_Sprgr.Flak_41"
 msgstr "Sprgr. Flak 41"
+
+msgid "_88mm_Sprgr_18_164"
+msgstr "Sprgr. 18 (164)"
+
+msgid "_88mm_Sprgr_18_3002D"
+msgstr "Sprgr. 18 (3002D)"
+
+msgid "_88mm_Sprgr_18_3601"
+msgstr "Sprgr. 18 (3601)"
 
 msgid "_88mm_Sprgr_18_Ausf_E"
 msgstr "Sprgr. 18 Ausf. E"
@@ -7429,8 +8378,29 @@ msgstr "Sprgr. 18 Typ 100"
 msgid "_88mm_Sprgr_18_Typ_101"
 msgstr "Sprgr. 18 Typ 101"
 
+msgid "_88mm_Sprgr_43_164"
+msgstr "Sprgr. 43 (164)"
+
+msgid "_88mm_Sprgr_43_180A"
+msgstr "Sprgr. 43 (180A)"
+
+msgid "_88mm_Sprgr_43_50"
+msgstr "Sprgr. 43 (50)"
+
+msgid "_88mm_Sprgr_43_Ausf_E"
+msgstr "Sprgr. 43 Ausf. E"
+
 msgid "_88mm_Sprgr_43_F"
 msgstr "Sprgr. 43 (F)"
+
+msgid "_88mm_Sprgr_43_I"
+msgstr "Sprgr. 43 (I)"
+
+msgid "_88mm_Sprgr_43_II"
+msgstr "Sprgr. 43 (II)"
+
+msgid "_88mm_Sprgr_43_I_P"
+msgstr "Sprgr. 43 (I-P)"
 
 msgid "_88mm_Sprgr_43_JP"
 msgstr "Sprgr. 43 (JP)"
@@ -7452,6 +8422,12 @@ msgstr "8,8 cm Pak 43 L/71 (JP)"
 
 msgid "_8_8_cm_Pak_L_56_IV"
 msgstr "8,8 cm Pak L/56 (IV)"
+
+msgid "_8_cm_8H62_2"
+msgstr "8 cm 8H62-2"
+
+msgid "_8_cm_W_Gr_5071"
+msgstr "W. Gr. 5071"
 
 msgid "_90_76mm_US_Kanone_M_32"
 msgstr "90/76 mm US-Kanone M 32"
@@ -7477,11 +8453,17 @@ msgstr "DM13A"
 msgid "_90mm_DM13A1"
 msgstr "DM13A1"
 
+msgid "_90mm_DM13A_251"
+msgstr "DM13A (251)"
+
 msgid "_90mm_DM13A_K"
 msgstr "DM13AK"
 
 msgid "_90mm_DM502"
 msgstr "DM502"
+
+msgid "_90mm_DM502_251"
+msgstr "DM502 (251)"
 
 msgid "_90mm_DM502_K"
 msgstr "DM502K"
@@ -7506,6 +8488,9 @@ msgstr "9 cm Kanone M41"
 
 msgid "_90mm_M431"
 msgstr "M431"
+
+msgid "_90mm_M431_251"
+msgstr "M431 (251)"
 
 msgid "_90mm_M431_K"
 msgstr "M431K"
@@ -7540,13 +8525,13 @@ msgstr "Mecar N HEAT"
 msgid "_90mm_Mecar_mit_Mehrladeeinrichtung"
 msgstr "90 mm Mecar mit Mehrladeeinrichtung"
 
-msgid "_90mm_OCC_90"
+msgid "_90mm_OCC"
 msgstr "OCC"
 
-msgid "_90mm_OE_90"
+msgid "_90mm_OE"
 msgstr "OE"
 
-msgid "_90mm_OFL_90"
+msgid "_90mm_OFL"
 msgstr "OFL"
 
 msgid "_90mm_Pzgr39_48"
@@ -7555,16 +8540,28 @@ msgstr "Pzgr 39/48"
 msgid "_90mm_Pzgr40_48"
 msgstr "Pzgr 40/48"
 
+msgid "_90mm_Pzgr_A"
+msgstr "Pzgr. (A)"
+
+msgid "_90mm_Pzgr_I_P"
+msgstr "Pzgr. (I-P)"
+
+msgid "_90mm_Pzgr_N_A"
+msgstr "Pzgr. N (A)"
+
+msgid "_90mm_Pzgr_N_I_P"
+msgstr "Pzgr. N (I-P)"
+
 msgid "_90mm_RhD"
 msgstr "9 cm Kanone RhD"
 
 msgid "_90mm_Rh_69_1"
 msgstr "90 mm Rh 69-1"
 
-msgid "_90mm_Rheinmetall_90_L40"
+msgid "_90mm_Rheinmetall_90_L40A"
 msgstr "90 mm Rheinmetall DM1"
 
-msgid "_90mm_Rheinmetall_90_L40A"
+msgid "_90mm_Rheinmetall_DM1"
 msgstr "90 mm Rheinmetall DM1"
 
 msgid "_90mm_Rheinmetall_DM1M"
@@ -7573,11 +8570,20 @@ msgstr "90 mm Rheinmetall DM1M"
 msgid "_90mm_Sprg48"
 msgstr "Sprgr 48"
 
+msgid "_90mm_Sprgr_A"
+msgstr "Sprgr. (A)"
+
+msgid "_90mm_Sprgr_I_P"
+msgstr "Sprgr. (I-P)"
+
 msgid "_9cm_Kan"
 msgstr "9 cm Kanone"
 
-msgid "_9cm_KwK_51_L71"
+msgid "_9cm_Kanone"
 msgstr "9 cm Kanone"
+
+msgid "_9cm_Kanone_I_P"
+msgstr "9 cm Kanone (I-P)"
 
 msgid "_Gr_38_HL_A"
 msgstr "Gr 38 HL A"

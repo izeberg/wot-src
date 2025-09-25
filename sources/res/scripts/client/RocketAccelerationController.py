@@ -1,22 +1,30 @@
-import logging
+import logging, typing
 from functools import partial
 import BigWorld, CGF
 from Event import Event
 from constants import ROCKET_ACCELERATION_STATE
 from wotdecorators import noexcept
+from vehicles.components.component_life_cycle import createComponentLifeCycleEvents, ILifeCycleComponent
 from vehicle_systems.model_assembler import loadAppearancePrefab
+if typing.TYPE_CHECKING:
+    from vehicles.components.component_life_cycle.life_cycle_interfaces import IComponentLifeCycleEvents
 _logger = logging.getLogger(__name__)
 _DEFAULT_OUTFIT = 'default'
 
-class RocketAccelerationController(BigWorld.DynamicScriptComponent):
+class RocketAccelerationController(BigWorld.DynamicScriptComponent, ILifeCycleComponent):
 
     def __init__(self):
         super(RocketAccelerationController, self).__init__()
         self.__prefabGameObject = None
+        self.__lifeCycleEvents = createComponentLifeCycleEvents(self)
         self.__onStateChanged = Event()
         self.__onTryActivate = Event()
         self.__initAppearance()
         return
+
+    @property
+    def lifeCycleEvents(self):
+        return self.__lifeCycleEvents
 
     def tryActivate(self):
         if self.stateStatus.status == ROCKET_ACCELERATION_STATE.READY:
@@ -25,7 +33,7 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent):
 
     @noexcept
     def set_stateStatus(self, _=None):
-        self.__onStateChanged(self.stateStatus)
+        self.__onStateChanged(self.stateStatus, False)
 
     def onDestroy(self):
         self.cleanup()
@@ -40,7 +48,7 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent):
             if tryActivateCallback is not None:
                 self.__onTryActivate += tryActivateCallback
             if callback is not None and self.stateStatus is not None:
-                callback(self.stateStatus)
+                callback(self.stateStatus, True)
         except Exception as ex:
             _logger.exception(ex)
             self.cleanup()
@@ -57,11 +65,12 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent):
         return
 
     def sendStateToAllSubscribers(self):
-        self.__onStateChanged(self.stateStatus)
+        self.__onStateChanged(self.stateStatus, False)
 
     def cleanup(self):
         if self.entity.isDestroyed or not self.entity.inWorld:
             return
+        self.__lifeCycleEvents.destroy()
         self.__onStateChanged.clear()
         self.__onTryActivate.clear()
         self.entity.onAppearanceReady -= self.__tryUpdatePrefab
@@ -92,6 +101,6 @@ class RocketAccelerationController(BigWorld.DynamicScriptComponent):
                 return False
             modelsSet = appearance.outfit.modelsSet
             outfit = _DEFAULT_OUTFIT if not modelsSet else modelsSet
-            prefabPath = typeDescriptor.type.rocketAccelerationParams.effectsPrefab[outfit]
+            prefabPath = typeDescriptor.type.prefabs[outfit]['mechanicEffects'][0]
             loadAppearancePrefab(prefabPath, appearance, partial(self.__onLoaded, prefabPath))
             return True

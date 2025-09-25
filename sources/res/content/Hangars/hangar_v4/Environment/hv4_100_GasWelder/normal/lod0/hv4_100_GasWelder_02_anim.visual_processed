@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>root</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Root_M</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.723507 -0.000000</row3>
+				</transform>
+				<node>
+					<identifier>Tail01lf_L</identifier>
+					<transform>
+						<row0>0.935802 -0.344959 -0.072655</row0>
+						<row1>-0.345873 -0.938281 0.000000</row1>
+						<row2>-0.068171 0.025129 -0.997357</row2>
+						<row3>0.333856 0.552115 -0.065216</row3>
+					</transform>
+					<node>
+						<identifier>Tail02lf_L</identifier>
+						<transform>
+							<row0>0.913100 0.407731 -0.002056</row0>
+							<row1>-0.407496 0.912724 0.029685</row1>
+							<row2>0.013980 -0.026268 0.999557</row2>
+							<row3>0.106837 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Tail03lf_L</identifier>
+							<transform>
+								<row0>0.909086 0.411939 -0.062197</row0>
+								<row1>-0.411090 0.911210 0.026484</row1>
+								<row2>0.067584 0.001492 0.997712</row2>
+								<row3>0.066524 0.000000 -0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Tail04lf_L</identifier>
+								<transform>
+									<row0>0.976706 0.214349 -0.009973</row0>
+									<row1>-0.214367 0.976753 -0.000777</row1>
+									<row2>0.009575 0.002896 0.999950</row2>
+									<row3>0.080624 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Tail05lf_L</identifier>
+									<transform>
+										<row0>0.982147 0.187800 0.010905</row0>
+										<row1>-0.187783 0.982207 -0.002537</row1>
+										<row2>-0.011188 0.000444 0.999937</row2>
+										<row3>0.121565 0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Tail06lf_L</identifier>
+										<transform>
+											<row0>0.973690 0.227416 -0.014487</row0>
+											<row1>-0.227448 0.973790 -0.000538</row1>
+											<row2>0.013985 0.003819 0.999895</row2>
+											<row3>0.125926 -0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Tail07lf_L</identifier>
+											<transform>
+												<row0>0.992985 0.090978 -0.075521</row0>
+												<row1>-0.091354 0.995817 -0.001534</row1>
+												<row2>0.075065 0.008422 0.997143</row2>
+												<row3>0.125729 0.000000 0.000000</row3>
+											</transform>
+											<node>
+												<identifier>Tail08lf_L</identifier>
+												<transform>
+													<row0>0.998485 0.026891 0.048005</row0>
+													<row1>-0.026803 0.999638 -0.002481</row1>
+													<row2>-0.048054 0.001191 0.998844</row2>
+													<row3>0.128756 0.000000 -0.000000</row3>
+												</transform>
+												<node>
+													<identifier>Tail09lf_L</identifier>
+													<transform>
+														<row0>0.997690 -0.067764 0.004726</row0>
+														<row1>0.067750 0.997698 0.003000</row1>
+														<row2>-0.004919 -0.002673 0.999984</row2>
+														<row3>0.125305 -0.000000 -0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Tail10lf_L</identifier>
+														<transform>
+															<row0>0.990070 -0.123247 0.067610</row0>
+															<row1>0.123201 0.992370 0.004860</row1>
+															<row2>-0.067694 0.003518 0.997700</row2>
+															<row3>0.129590 0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Tail11lf_L</identifier>
+															<transform>
+																<row0>0.929734 -0.365285 0.046482</row0>
+																<row1>0.366113 0.930512 -0.010450</row1>
+																<row2>-0.039435 0.026733 0.998864</row2>
+																<row3>0.121156 0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>Tail12lf_L</identifier>
+																<transform>
+																	<row0>0.888986 -0.457934 -0.000562</row0>
+																	<row1>0.457661 0.888496 -0.033494</row1>
+																	<row2>0.015837 0.029518 0.999439</row2>
+																	<row3>0.120427 0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>Tail13lf_L</identifier>
+																	<transform>
+																		<row0>0.897452 -0.440622 -0.020782</row0>
+																		<row1>0.440011 0.897545 -0.028363</row1>
+																		<row2>0.031150 0.016310 0.999382</row2>
+																		<row3>0.109646 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>Tail14lf_L</identifier>
+																		<transform>
+																			<row0>0.941014 -0.336621 -0.034340</row0>
+																			<row1>0.336397 0.941640 -0.012276</row1>
+																			<row2>0.036469 -0.000000 0.999335</row2>
+																			<row3>0.102702 0.000000 0.000000</row3>
+																		</transform>
+																		<node>
+																			<identifier>Tail15lf_L</identifier>
+																			<transform>
+																				<row0>0.994139 -0.108112 -0.000471</row0>
+																				<row1>0.108112 0.994139 -0.000228</row1>
+																				<row2>0.000493 0.000176 1.000000</row2>
+																				<row3>0.055117 0.000000 -0.000000</row3>
+																			</transform>
+																			<node>
+																				<identifier>Tail16lf_L</identifier>
+																				<transform>
+																					<row0>1.000000 0.000000 0.000000</row0>
+																					<row1>0.000000 1.000000 0.000000</row1>
+																					<row2>0.000000 0.000000 1.000000</row2>
+																					<row3>0.119052 0.000000 0.000000</row3>
+																				</transform>
+																				<node>
+																					<identifier>Tail17lf_L</identifier>
+																					<transform>
+																						<row0>0.999954 0.009627 -0.000000</row0>
+																						<row1>-0.009627 0.999954 0.000000</row1>
+																						<row2>0.000000 0.000000 1.000000</row2>
+																						<row3>0.119052 0.000000 0.000000</row3>
+																					</transform>
+																					<node>
+																						<identifier>Tail18lf_L</identifier>
+																						<transform>
+																							<row0>0.999962 -0.008742 0.000000</row0>
+																							<row1>0.008742 0.999962 0.000000</row1>
+																							<row2>0.000000 0.000000 1.000000</row2>
+																							<row3>0.118716 0.000000 0.000000</row3>
+																						</transform>
+																						<node>
+																							<identifier>Tail19lf_L</identifier>
+																							<transform>
+																								<row0>1.000000 -0.000885 0.000000</row0>
+																								<row1>0.000885 1.000000 0.000000</row1>
+																								<row2>0.000000 0.000000 1.000000</row2>
+																								<row3>0.118737 0.000000 0.000000</row3>
+																							</transform>
+																							<node>
+																								<identifier>Tail20lf_L</identifier>
+																								<transform>
+																									<row0>1.000000 0.000000 0.000000</row0>
+																									<row1>0.000000 1.000000 0.000000</row1>
+																									<row2>0.000000 0.000000 1.000000</row2>
+																									<row3>0.118528 0.000000 0.000000</row3>
+																								</transform>
+																								<node>
+																									<identifier>Tail21lf_L</identifier>
+																									<transform>
+																										<row0>1.000000 0.000000 0.000000</row0>
+																										<row1>0.000000 1.000000 0.000000</row1>
+																										<row2>0.000000 0.000000 1.000000</row2>
+																										<row3>0.118528 0.000000 0.000000</row3>
+																									</transform>
+																									<node>
+																										<identifier>Tail22lf_L</identifier>
+																										<transform>
+																											<row0>1.000000 0.000000 0.000000</row0>
+																											<row1>0.000000 1.000000 0.000000</row1>
+																											<row2>0.000000 0.000000 1.000000</row2>
+																											<row3>0.118137 0.000000 0.000000</row3>
+																										</transform>
+																										<node>
+																											<identifier>Tail23lf_L</identifier>
+																											<transform>
+																												<row0>1.000000 0.000000 0.000000</row0>
+																												<row1>0.000000 1.000000 0.000000</row1>
+																												<row2>0.000000 0.000000 1.000000</row2>
+																												<row3>0.118137 0.000000 0.000000</row3>
+																											</transform>
+																											<node>
+																												<identifier>Tail24lf_L</identifier>
+																												<transform>
+																													<row0>1.000000 0.000000 0.000000</row0>
+																													<row1>0.000000 1.000000 0.000000</row1>
+																													<row2>0.000000 0.000000 1.000000</row2>
+																													<row3>0.117919 0.000000 0.000000</row3>
+																												</transform>
+																												<node>
+																													<identifier>Tail25lf_L</identifier>
+																													<transform>
+																														<row0>1.000000 0.000000 0.000000</row0>
+																														<row1>0.000000 1.000000 0.000000</row1>
+																														<row2>0.000000 0.000000 1.000000</row2>
+																														<row3>0.117919 0.000000 0.000000</row3>
+																													</transform>
+																													<node>
+																														<identifier>Tail26lf_L</identifier>
+																														<transform>
+																															<row0>1.000000 0.000000 0.000000</row0>
+																															<row1>0.000000 1.000000 0.000000</row1>
+																															<row2>0.000000 0.000000 1.000000</row2>
+																															<row3>0.117431 0.000000 0.000000</row3>
+																														</transform>
+																														<node>
+																															<identifier>Tail27lf_L</identifier>
+																															<transform>
+																																<row0>1.000000 0.000000 0.000000</row0>
+																																<row1>0.000000 1.000000 0.000000</row1>
+																																<row2>0.000000 0.000000 1.000000</row2>
+																																<row3>0.190691 0.000000 -0.000000</row3>
+																															</transform>
+																															<node>
+																																<identifier>Tail27lf_L_BlendBone</identifier>
+																																<transform>
+																																	<row0>1.000000 0.000000 0.000000</row0>
+																																	<row1>0.000000 -1.000000 -0.000000</row1>
+																																	<row2>-0.000000 -0.000000 1.000000</row2>
+																																	<row3>-2.068701 0.014958 -0.073517</row3>
+																																</transform>
+																															</node>
+																														</node>
+																														<node>
+																															<identifier>Tail26lf_L_BlendBone</identifier>
+																															<transform>
+																																<row0>1.000000 0.000000 0.000000</row0>
+																																<row1>0.000000 -1.000000 -0.000000</row1>
+																																<row2>-0.000000 -0.000000 1.000000</row2>
+																																<row3>-1.878009 0.014958 -0.073518</row3>
+																															</transform>
+																														</node>
+																													</node>
+																													<node>
+																														<identifier>Tail25lf_L_BlendBone</identifier>
+																														<transform>
+																															<row0>1.000000 0.000000 0.000000</row0>
+																															<row1>0.000000 -1.000000 -0.000000</row1>
+																															<row2>-0.000000 -0.000000 1.000000</row2>
+																															<row3>-1.760579 0.014958 -0.073518</row3>
+																														</transform>
+																													</node>
+																												</node>
+																												<node>
+																													<identifier>Tail24lf_L_BlendBone</identifier>
+																													<transform>
+																														<row0>1.000000 0.000000 0.000000</row0>
+																														<row1>0.000000 -1.000000 -0.000000</row1>
+																														<row2>-0.000000 -0.000000 1.000000</row2>
+																														<row3>-1.642660 0.014958 -0.073518</row3>
+																													</transform>
+																												</node>
+																											</node>
+																											<node>
+																												<identifier>Tail23lf_L_BlendBone</identifier>
+																												<transform>
+																													<row0>1.000000 0.000000 0.000000</row0>
+																													<row1>0.000000 -1.000000 -0.000000</row1>
+																													<row2>-0.000000 -0.000000 1.000000</row2>
+																													<row3>-1.524742 0.014958 -0.073518</row3>
+																												</transform>
+																											</node>
+																										</node>
+																										<node>
+																											<identifier>Tail22lf_L_BlendBone</identifier>
+																											<transform>
+																												<row0>1.000000 0.000000 0.000000</row0>
+																												<row1>0.000000 -1.000000 -0.000000</row1>
+																												<row2>-0.000000 -0.000000 1.000000</row2>
+																												<row3>-1.406604 0.014958 -0.073518</row3>
+																											</transform>
+																										</node>
+																									</node>
+																									<node>
+																										<identifier>Tail21lf_L_BlendBone</identifier>
+																										<transform>
+																											<row0>1.000000 0.000000 0.000000</row0>
+																											<row1>0.000000 -1.000000 -0.000000</row1>
+																											<row2>-0.000000 -0.000000 1.000000</row2>
+																											<row3>-1.288467 0.014958 -0.073518</row3>
+																										</transform>
+																									</node>
+																								</node>
+																								<node>
+																									<identifier>Tail20lf_L_BlendBone</identifier>
+																									<transform>
+																										<row0>1.000000 0.000000 0.000000</row0>
+																										<row1>0.000000 -1.000000 -0.000000</row1>
+																										<row2>-0.000000 -0.000000 1.000000</row2>
+																										<row3>-1.169939 0.014958 -0.073518</row3>
+																									</transform>
+																								</node>
+																							</node>
+																							<node>
+																								<identifier>Tail19lf_L_BlendBone</identifier>
+																								<transform>
+																									<row0>1.000000 0.000000 0.000000</row0>
+																									<row1>0.000000 -1.000000 -0.000000</row1>
+																									<row2>-0.000000 -0.000000 1.000000</row2>
+																									<row3>-1.051411 0.014958 -0.073518</row3>
+																								</transform>
+																							</node>
+																						</node>
+																						<node>
+																							<identifier>Tail18lf_L_BlendBone</identifier>
+																							<transform>
+																								<row0>1.000000 -0.000885 0.000000</row0>
+																								<row1>-0.000885 -1.000000 -0.000000</row1>
+																								<row2>-0.000000 -0.000000 1.000000</row2>
+																								<row3>-0.932661 0.015889 -0.073518</row3>
+																							</transform>
+																						</node>
+																					</node>
+																					<node>
+																						<identifier>Tail17lf_L_BlendBone</identifier>
+																						<transform>
+																							<row0>0.999954 -0.009627 0.000000</row0>
+																							<row1>-0.009627 -0.999954 -0.000000</row1>
+																							<row2>-0.000000 -0.000000 1.000000</row2>
+																							<row3>-0.813771 0.024042 -0.073518</row3>
+																						</transform>
+																					</node>
+																				</node>
+																				<node>
+																					<identifier>Tail16lf_L_BlendBone</identifier>
+																					<transform>
+																						<row0>1.000000 0.000000 0.000000</row0>
+																						<row1>0.000000 -1.000000 -0.000000</row1>
+																						<row2>-0.000000 -0.000000 1.000000</row2>
+																						<row3>-0.694912 0.016206 -0.073518</row3>
+																					</transform>
+																				</node>
+																			</node>
+																			<node>
+																				<identifier>Tail15lf_L_BlendBone</identifier>
+																				<transform>
+																					<row0>1.000000 0.000000 0.000000</row0>
+																					<row1>0.000000 -1.000000 -0.000000</row1>
+																					<row2>-0.000000 -0.000000 1.000000</row2>
+																					<row3>-0.575860 0.016206 -0.073518</row3>
+																				</transform>
+																			</node>
+																		</node>
+																		<node>
+																			<identifier>Tail14lf_L_BlendBone</identifier>
+																			<transform>
+																				<row0>0.994139 -0.108112 -0.000471</row0>
+																				<row1>-0.108112 -0.994139 0.000228</row1>
+																				<row2>0.000493 0.000176 1.000000</row2>
+																				<row3>-0.515652 0.078356 -0.073250</row3>
+																			</transform>
+																		</node>
+																	</node>
+																	<node>
+																		<identifier>Tail13lf_L_BlendBone</identifier>
+																		<transform>
+																			<row0>0.899112 -0.436451 -0.033282</row0>
+																			<row1>-0.436152 -0.899728 0.016145</row1>
+																			<row2>0.036992 -0.000000 0.999316</row2>
+																			<row3>-0.358846 0.247362 -0.056456</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>Tail12lf_L_BlendBone</identifier>
+																	<transform>
+																		<row0>0.613830 -0.788446 -0.039568</row0>
+																		<row1>-0.786813 -0.615104 0.050718</row1>
+																		<row2>0.064327 0.000000 0.997929</row2>
+																		<row3>-0.105318 0.379213 -0.055979</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>Tail11lf_L_BlendBone</identifier>
+																<transform>
+																	<row0>0.184219 -0.982793 -0.013482</row0>
+																	<row1>-0.980171 -0.184712 0.071734</row1>
+																	<row2>0.072990 0.000000 0.997333</row2>
+																	<row3>0.199466 0.383505 -0.068590</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>Tail10lf_L_BlendBone</identifier>
+															<transform>
+																<row0>-0.188007 -0.982153 0.005366</row0>
+																<row1>-0.981753 0.188083 0.028022</row1>
+																<row2>0.028531 0.000000 0.999593</row2>
+																<row3>0.449718 0.282161 -0.063248</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Tail09lf_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.307506 -0.951469 -0.012131</row0>
+															<row1>-0.950729 0.307745 -0.037505</row1>
+															<row2>-0.039418 0.000000 0.999223</row2>
+															<row3>0.613887 0.224359 -0.031326</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Tail08lf_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.371198 -0.928408 -0.016439</row0>
+														<row1>-0.927499 0.371562 -0.041074</row1>
+														<row2>-0.044242 0.000000 0.999021</row2>
+														<row3>0.753128 0.182327 -0.027751</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Tail07lf_L_BlendBone</identifier>
+												<transform>
+													<row0>-0.344961 -0.938073 -0.031935</row0>
+													<row1>-0.934079 0.346436 -0.086473</row1>
+													<row2>-0.092182 0.000000 0.995742</row2>
+													<row3>0.877190 0.202480 0.007983</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Tail06lf_L_BlendBone</identifier>
+											<transform>
+												<row0>-0.259242 -0.965803 -0.004353</row0>
+												<row1>-0.965666 0.259279 -0.016215</row1>
+												<row2>-0.016789 0.000000 0.999859</row2>
+												<row3>0.978868 0.281505 -0.058597</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Tail05lf_L_BlendBone</identifier>
+										<transform>
+											<row0>-0.032813 -0.999462 -0.000078</row0>
+											<row1>-0.999459 0.032813 -0.002364</row1>
+											<row2>-0.002365 0.000000 0.999997</row2>
+											<row3>1.014193 0.496514 -0.072922</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Tail04lf_L_BlendBone</identifier>
+									<transform>
+										<row0>0.155456 -0.987840 0.002101</row0>
+										<row1>-0.987750 -0.155470 -0.013346</row1>
+										<row2>-0.013511 0.000000 0.999909</row2>
+										<row3>1.025230 0.678112 -0.063118</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Tail03lf_L_BlendBone</identifier>
+								<transform>
+									<row0>0.363616 -0.931548 0.001317</row0>
+									<row1>-0.931542 -0.363618 -0.003374</row1>
+									<row2>-0.003622 0.000000 0.999994</row2>
+									<row3>0.936003 0.881923 -0.073865</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Tail02lf_L_BlendBone</identifier>
+							<transform>
+								<row0>0.713597 -0.699046 -0.045973</row0>
+								<row1>-0.697600 -0.715076 0.044942</row1>
+								<row2>0.064291 0.000000 0.997931</row2>
+								<row3>0.549890 1.189083 -0.108556</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Tail01lf_L_BlendBone</identifier>
+						<transform>
+							<row0>0.935802 -0.345873 -0.068171</row0>
+							<row1>-0.344959 -0.938281 0.025129</row1>
+							<row2>0.072655 0.000000 0.997357</row2>
+							<row3>0.122877 1.312364 -0.074341</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Tail01rt_L</identifier>
+					<transform>
+						<row0>0.939829 -0.284296 -0.189464</row0>
+						<row1>-0.289540 -0.957166 -0.000000</row1>
+						<row2>-0.181349 0.054857 -0.981888</row2>
+						<row3>0.104946 0.714456 -0.065216</row3>
+					</transform>
+					<node>
+						<identifier>Tail02rt_L</identifier>
+						<transform>
+							<row0>0.803450 0.570208 0.171265</row0>
+							<row1>-0.591036 0.798542 0.114046</row1>
+							<row2>-0.071733 -0.192854 0.978602</row2>
+							<row3>0.095414 0.000000 0.000000</row3>
+						</transform>
+						<node>
+							<identifier>Tail03rt_L</identifier>
+							<transform>
+								<row0>0.898026 0.439734 -0.013543</row0>
+								<row1>-0.433244 0.889286 0.146530</row1>
+								<row2>0.076478 -0.125720 0.989114</row2>
+								<row3>0.072971 0.000000 0.000000</row3>
+							</transform>
+							<node>
+								<identifier>Tail04rt_L</identifier>
+								<transform>
+									<row0>0.987455 0.144369 -0.063951</row0>
+									<row1>-0.141971 0.989038 0.040590</row1>
+									<row2>0.069109 -0.031001 0.997127</row2>
+									<row3>0.102433 0.000000 0.000000</row3>
+								</transform>
+								<node>
+									<identifier>Tail05rt_L</identifier>
+									<transform>
+										<row0>0.989483 0.076637 -0.122675</row0>
+										<row1>-0.075219 0.997036 0.016152</row1>
+										<row2>0.123550 -0.006755 0.992315</row2>
+										<row3>0.130475 -0.000000 0.000000</row3>
+									</transform>
+									<node>
+										<identifier>Tail06rt_L</identifier>
+										<transform>
+											<row0>0.995322 0.064570 -0.071873</row0>
+											<row1>-0.064329 0.997913 0.005670</row1>
+											<row2>0.072090 -0.001020 0.997398</row2>
+											<row3>0.121798 0.000000 0.000000</row3>
+										</transform>
+										<node>
+											<identifier>Tail07rt_L</identifier>
+											<transform>
+												<row0>0.999145 0.038221 -0.015785</row0>
+												<row1>-0.038216 0.999269 0.000604</row1>
+												<row2>0.015796 0.000000 0.999875</row2>
+												<row3>0.118747 0.000000 -0.000000</row3>
+											</transform>
+											<node>
+												<identifier>Tail08rt_L</identifier>
+												<transform>
+													<row0>0.999918 0.012779 -0.000000</row0>
+													<row1>-0.012779 0.999918 0.000000</row1>
+													<row2>0.000000 0.000000 1.000000</row2>
+													<row3>0.121586 0.000000 0.000000</row3>
+												</transform>
+												<node>
+													<identifier>Tail09rt_L</identifier>
+													<transform>
+														<row0>0.999992 -0.003977 0.000000</row0>
+														<row1>0.003977 0.999992 -0.000000</row1>
+														<row2>-0.000000 0.000000 1.000000</row2>
+														<row3>0.120146 0.000000 0.000000</row3>
+													</transform>
+													<node>
+														<identifier>Tail10rt_L</identifier>
+														<transform>
+															<row0>0.988588 -0.150641 -0.000848</row0>
+															<row1>0.150641 0.988589 0.000000</row1>
+															<row2>0.000838 -0.000128 1.000000</row2>
+															<row3>0.121905 -0.000000 0.000000</row3>
+														</transform>
+														<node>
+															<identifier>Tail11rt_L</identifier>
+															<transform>
+																<row0>0.991037 -0.131692 -0.022401</row0>
+																<row1>0.131728 0.991286 0.000112</row1>
+																<row2>0.022191 -0.003062 0.999749</row2>
+																<row3>0.124685 0.000000 0.000000</row3>
+															</transform>
+															<node>
+																<identifier>Tail12rt_L</identifier>
+																<transform>
+																	<row0>0.949115 -0.266996 -0.167017</row0>
+																	<row1>0.271824 0.962326 0.006319</row1>
+																	<row2>0.159037 -0.051397 0.985934</row2>
+																	<row3>0.119293 0.000000 0.000000</row3>
+																</transform>
+																<node>
+																	<identifier>Tail13rt_L</identifier>
+																	<transform>
+																		<row0>0.921900 -0.382027 -0.064468</row0>
+																		<row1>0.386196 0.919416 0.074343</row1>
+																		<row2>0.030872 -0.093434 0.995147</row2>
+																		<row3>0.121817 0.000000 0.000000</row3>
+																	</transform>
+																	<node>
+																		<identifier>Tail14rt_L</identifier>
+																		<transform>
+																			<row0>0.945207 -0.326073 0.016122</row0>
+																			<row1>0.323883 0.942775 0.079214</row1>
+																			<row2>-0.041028 -0.069652 0.996727</row2>
+																			<row3>0.124113 -0.000000 -0.000000</row3>
+																		</transform>
+																		<node>
+																			<identifier>Tail15rt_L</identifier>
+																			<transform>
+																				<row0>0.956202 -0.244182 0.161406</row0>
+																				<row1>0.239005 0.969675 0.051053</row1>
+																				<row2>-0.168978 -0.010241 0.985567</row2>
+																				<row3>0.121176 0.000000 0.000000</row3>
+																			</transform>
+																			<node>
+																				<identifier>Tail16rt_L</identifier>
+																				<transform>
+																					<row0>1.000000 -0.000000 0.000000</row0>
+																					<row1>-0.000000 1.000000 0.000000</row1>
+																					<row2>-0.000000 0.000000 1.000000</row2>
+																					<row3>0.114031 0.000000 0.000000</row3>
+																				</transform>
+																				<node>
+																					<identifier>Tail16rt_L_BlendBone</identifier>
+																					<transform>
+																						<row0>0.978843 -0.200454 0.041051</row0>
+																						<row1>-0.200278 -0.979703 -0.008399</row1>
+																						<row2>-0.041901 0.000000 0.999122</row2>
+																						<row3>-0.500147 0.123031 -0.110365</row3>
+																					</transform>
+																				</node>
+																			</node>
+																			<node>
+																				<identifier>Tail15rt_L_BlendBone</identifier>
+																				<transform>
+																					<row0>0.978843 -0.200454 0.041051</row0>
+																					<row1>-0.200278 -0.979703 -0.008399</row1>
+																					<row2>-0.041901 0.000000 0.999122</row2>
+																					<row3>-0.386116 0.123031 -0.110365</row3>
+																				</transform>
+																			</node>
+																		</node>
+																		<node>
+																			<identifier>Tail14rt_L_BlendBone</identifier>
+																			<transform>
+																				<row0>0.881126 -0.433812 0.188215</row0>
+																				<row1>-0.424241 -0.901004 -0.090621</row1>
+																				<row2>-0.208895 0.000000 0.977938</row2>
+																				<row3>-0.199974 0.214713 -0.164813</row3>
+																			</transform>
+																		</node>
+																	</node>
+																	<node>
+																		<identifier>Tail13rt_L_BlendBone</identifier>
+																		<transform>
+																			<row0>0.684620 -0.709408 0.167441</row0>
+																			<row1>-0.689098 -0.704798 -0.168536</row1>
+																			<row2>-0.237573 0.000000 0.971370</row2>
+																			<row3>0.011399 0.279112 -0.150489</row3>
+																		</transform>
+																	</node>
+																</node>
+																<node>
+																	<identifier>Tail12rt_L_BlendBone</identifier>
+																	<transform>
+																		<row0>0.362349 -0.929429 0.069752</row0>
+																		<row1>-0.912672 -0.369002 -0.175690</row1>
+																		<row2>-0.189030 -0.000000 0.981971</row2>
+																		<row3>0.235472 0.266326 -0.129743</row3>
+																	</transform>
+																</node>
+															</node>
+															<node>
+																<identifier>Tail11rt_L_BlendBone</identifier>
+																<transform>
+																	<row0>0.102363 -0.994744 0.002380</row0>
+																	<row1>-0.994476 -0.102390 -0.023119</row1>
+																	<row2>-0.023241 0.000000 0.999730</row2>
+																	<row3>0.394543 0.200091 -0.165563</row3>
+																</transform>
+															</node>
+														</node>
+														<node>
+															<identifier>Tail10rt_L_BlendBone</identifier>
+															<transform>
+																<row0>-0.029537 -0.999564 -0.000025</row0>
+																<row1>-0.999563 0.029537 -0.000848</row1>
+																<row2>-0.000848 0.000000 1.000000</row2>
+																<row3>0.538375 0.146895 -0.174337</row3>
+															</transform>
+														</node>
+													</node>
+													<node>
+														<identifier>Tail09rt_L_BlendBone</identifier>
+														<transform>
+															<row0>-0.179776 -0.983708 -0.000000</row0>
+															<row1>-0.983708 0.179776 -0.000000</row1>
+															<row2>-0.000000 -0.000000 1.000000</row2>
+															<row3>0.676119 0.064140 -0.174794</row3>
+														</transform>
+													</node>
+												</node>
+												<node>
+													<identifier>Tail08rt_L_BlendBone</identifier>
+													<transform>
+														<row0>-0.183687 -0.982985 -0.000000</row0>
+														<row1>-0.982985 0.183687 -0.000000</row1>
+														<row2>-0.000000 -0.000000 1.000000</row2>
+														<row3>0.796514 0.061450 -0.174794</row3>
+													</transform>
+												</node>
+											</node>
+											<node>
+												<identifier>Tail07rt_L_BlendBone</identifier>
+												<transform>
+													<row0>-0.171111 -0.985252 0.000000</row0>
+													<row1>-0.985252 0.171111 0.000000</row1>
+													<row2>0.000000 -0.000000 1.000000</row2>
+													<row3>0.917250 0.071624 -0.174794</row3>
+												</transform>
+											</node>
+										</node>
+										<node>
+											<identifier>Tail06rt_L_BlendBone</identifier>
+											<transform>
+												<row0>-0.133312 -0.991072 0.002106</row0>
+												<row1>-0.990948 0.133329 0.015655</row1>
+												<row2>0.015796 0.000000 0.999875</row2>
+												<row3>1.029714 0.106629 -0.189207</row3>
+											</transform>
+										</node>
+									</node>
+									<node>
+										<identifier>Tail05rt_L_BlendBone</identifier>
+										<transform>
+											<row0>-0.068782 -0.997613 0.006063</row0>
+											<row1>-0.993760 0.069049 0.087593</row1>
+											<row2>0.087803 0.000000 0.996138</row2>
+											<row3>1.126195 0.173088 -0.262120</row3>
+										</transform>
+									</node>
+								</node>
+								<node>
+									<identifier>Tail04rt_L_BlendBone</identifier>
+									<transform>
+										<row0>0.007730 -0.999969 -0.001660</row0>
+										<row1>-0.977681 -0.007906 0.209945</row1>
+										<row2>0.209952 0.000000 0.977712</row2>
+										<row3>1.199422 0.260654 -0.395466</row3>
+									</transform>
+								</node>
+							</node>
+							<node>
+								<identifier>Tail03rt_L_BlendBone</identifier>
+								<transform>
+									<row0>0.149485 -0.987840 -0.042738</row0>
+									<row1>-0.949785 -0.155475 0.271545</row1>
+									<row2>0.274887 0.000000 0.961477</row2>
+									<row3>1.222473 0.443216 -0.460454</row3>
+								</transform>
+							</node>
+						</node>
+						<node>
+							<identifier>Tail02rt_L_BlendBone</identifier>
+							<transform>
+								<row0>0.558949 -0.807365 -0.189046</row0>
+								<row1>-0.764806 -0.590053 0.258670</row1>
+								<row2>0.320388 0.000000 0.947286</row2>
+								<row3>0.943549 0.989596 -0.407053</row3>
+							</transform>
+						</node>
+					</node>
+					<node>
+						<identifier>Tail01rt_L_BlendBone</identifier>
+						<transform>
+							<row0>0.939829 -0.289540 -0.181349</row0>
+							<row1>-0.284296 -0.957166 0.054857</row1>
+							<row2>0.189464 0.000000 0.981888</row2>
+							<row3>0.297819 1.406755 -0.123886</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Root_M_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.000000 -0.723507 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Tail27lf_L_BlendBone</node>
+		<node>Tail26lf_L_BlendBone</node>
+		<node>Tail25lf_L_BlendBone</node>
+		<node>Root_M_BlendBone</node>
+		<node>Tail07rt_L_BlendBone</node>
+		<node>Tail08rt_L_BlendBone</node>
+		<node>Tail01rt_L_BlendBone</node>
+		<node>Tail02rt_L_BlendBone</node>
+		<node>Tail03rt_L_BlendBone</node>
+		<node>Tail04rt_L_BlendBone</node>
+		<node>Tail01lf_L_BlendBone</node>
+		<node>Tail02lf_L_BlendBone</node>
+		<node>Tail03lf_L_BlendBone</node>
+		<node>Tail14lf_L_BlendBone</node>
+		<node>Tail15lf_L_BlendBone</node>
+		<node>Tail15rt_L_BlendBone</node>
+		<node>Tail14rt_L_BlendBone</node>
+		<node>Tail13rt_L_BlendBone</node>
+		<node>Tail12lf_L_BlendBone</node>
+		<node>Tail12rt_L_BlendBone</node>
+		<node>Tail11rt_L_BlendBone</node>
+		<node>Tail13lf_L_BlendBone</node>
+		<node>Tail10rt_L_BlendBone</node>
+		<node>Tail09rt_L_BlendBone</node>
+		<node>Tail06rt_L_BlendBone</node>
+		<node>Tail05rt_L_BlendBone</node>
+		<node>Tail16rt_L_BlendBone</node>
+		<node>Tail05lf_L_BlendBone</node>
+		<node>Tail04lf_L_BlendBone</node>
+		<node>Tail06lf_L_BlendBone</node>
+		<node>Tail11lf_L_BlendBone</node>
+		<node>Tail10lf_L_BlendBone</node>
+		<node>Tail09lf_L_BlendBone</node>
+		<node>Tail08lf_L_BlendBone</node>
+		<node>Tail07lf_L_BlendBone</node>
+		<node>Tail24lf_L_BlendBone</node>
+		<node>Tail22lf_L_BlendBone</node>
+		<node>Tail23lf_L_BlendBone</node>
+		<node>Tail20lf_L_BlendBone</node>
+		<node>Tail21lf_L_BlendBone</node>
+		<node>Tail18lf_L_BlendBone</node>
+		<node>Tail19lf_L_BlendBone</node>
+		<node>Tail16lf_L_BlendBone</node>
+		<node>Tail17lf_L_BlendBone</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_100_GasWelder/hv4_100_GasWelder_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_100_GasWelder/hv4_100_GasWelder_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/hangar_v4/Environment/hv4_100_GasWelder/hv4_100_GasWelder_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>1.076114 0.842948 0.019087</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>
+			-1 -0.003261 -0.179339
+			<!--BW_String-->
+		</min>
+		<max>
+			2.470578 1.689157 2
+			<!--BW_String-->
+		</max>
+	</boundingBox>
+	<geometrySize>101156</geometrySize>
+</root>

@@ -2213,8 +2213,8 @@
 		</camouflage>
 	</hull>
 	<chassis>
-		<Chassis_T110E3>
-			<userString>#usa_vehicles:Chassis_T110E3</userString>
+		<Chassis_A85_T110E3>
+			<userString>#usa_vehicles:Chassis_A85_T110E3</userString>
 			<tags/>
 			<level>10</level>
 			<price>82500</price>
@@ -2224,7 +2224,6 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>8000</weight>
-			<maxLoad>78000</maxLoad>
 			<terrainResistance>
 				1.5 1.7 3
 				<!--BW_String-->
@@ -4424,11 +4423,11 @@
 				6.85714293
 				<!--BW_String-->
 			</repairTime>
-		</Chassis_T110E3>
+		</Chassis_A85_T110E3>
 	</chassis>
 	<turrets0>
-		<Turret_1_T110E3>
-			<userString>#usa_vehicles:Turret_1_T110E3</userString>
+		<Turret_1_A85_T110E3>
+			<userString>#usa_vehicles:Turret_1_A85_T110E3</userString>
 			<tags>cannotDetach</tags>
 			<level>10</level>
 			<price>66000</price>
@@ -4440,12 +4439,9 @@
 			<maxHealth>390</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>185</maxHealth>
+				<maxRegenHealth>93</maxRegenHealth>
+				<repairCost>10</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>370</circularVisionRadius>
 			<surveyingDeviceHealth>
@@ -4457,7 +4453,7 @@
 				</repairCost>
 			</surveyingDeviceHealth>
 			<guns>
-				<_155mm_AT_Gun_T7E2>
+				<_155mm_AT_Gun_T7E3>
 					shared
 					<maxAmmo>27</maxAmmo>
 					<pitchLimits>
@@ -4597,7 +4593,7 @@
 						</density>
 						<aoTextureSize>512 512</aoTextureSize>
 					</camouflage>
-				</_155mm_AT_Gun_T7E2>
+				</_155mm_AT_Gun_T7E3>
 			</guns>
 			<models>
 				<undamaged>vehicles/american/A85_T110E3/normal/lod0/Turret_01.model</undamaged>
@@ -4627,10 +4623,10 @@
 					<camouflage/>
 				</customizableVehicleAreas>
 			</customization>
-		</Turret_1_T110E3>
+		</Turret_1_A85_T110E3>
 	</turrets0>
 	<engines>
-		<AOI-1490>shared</AOI-1490>
+		<Continental_AOI_1490E3>shared</Continental_AOI_1490E3>
 	</engines>
 	<fuelTanks>
 		<Large>shared</Large>
@@ -4641,16 +4637,16 @@
 	<physics>
 		<detailed>
 			<engines>
-				<AOI-1490>
+				<Continental_AOI_1490E3>
 					<smplEnginePower>
 						925.121
 						<!--BW_String-->
 					</smplEnginePower>
 					<smplFwMaxSpeed>24</smplFwMaxSpeed>
-				</AOI-1490>
+				</Continental_AOI_1490E3>
 			</engines>
 			<chassis>
-				<Chassis_T110E3>
+				<Chassis_A85_T110E3>
 					<grounds>
 						<soft>
 							<rollingFriction>
@@ -4671,7 +4667,7 @@
 							</rollingFriction>
 						</firm>
 					</grounds>
-				</Chassis_T110E3>
+				</Chassis_A85_T110E3>
 			</chassis>
 		</detailed>
 	</physics>

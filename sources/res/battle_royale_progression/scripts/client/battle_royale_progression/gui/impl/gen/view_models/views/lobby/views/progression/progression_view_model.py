@@ -1,6 +1,5 @@
 from enum import Enum
-from frameworks.wulf import Array
-from frameworks.wulf import ViewModel
+from frameworks.wulf import Array, ViewModel
 from battle_royale_progression.gui.impl.gen.view_models.views.lobby.views.battle_quests_model import BattleQuestsModel
 from battle_royale_progression.gui.impl.gen.view_models.views.lobby.views.progression.progress_level_model import ProgressLevelModel
 
@@ -10,9 +9,9 @@ class ProgressionState(Enum):
 
 
 class ProgressionViewModel(ViewModel):
-    __slots__ = ('onClose', 'onAboutClicked')
+    __slots__ = ('onClose', )
 
-    def __init__(self, properties=6, commands=2):
+    def __init__(self, properties=9, commands=1):
         super(ProgressionViewModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -57,6 +56,24 @@ class ProgressionViewModel(ViewModel):
     def getProgressLevelsType():
         return ProgressLevelModel
 
+    def getStartTimestamp(self):
+        return self._getNumber(6)
+
+    def setStartTimestamp(self, value):
+        self._setNumber(6, value)
+
+    def getEndTimestamp(self):
+        return self._getNumber(7)
+
+    def setEndTimestamp(self, value):
+        self._setNumber(7, value)
+
+    def getCalendarTooltipId(self):
+        return self._getString(8)
+
+    def setCalendarTooltipId(self, value):
+        self._setString(8, value)
+
     def _initialize(self):
         super(ProgressionViewModel, self)._initialize()
         self._addViewModelProperty('battleQuests', BattleQuestsModel())
@@ -65,5 +82,7 @@ class ProgressionViewModel(ViewModel):
         self._addNumberProperty('prevProgressPoints', 0)
         self._addNumberProperty('pointsForLevel', 0)
         self._addArrayProperty('progressLevels', Array())
+        self._addNumberProperty('startTimestamp', 0)
+        self._addNumberProperty('endTimestamp', 0)
+        self._addStringProperty('calendarTooltipId', '')
         self.onClose = self._addCommand('onClose')
-        self.onAboutClicked = self._addCommand('onAboutClicked')

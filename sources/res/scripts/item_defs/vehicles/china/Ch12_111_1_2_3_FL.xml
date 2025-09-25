@@ -99,7 +99,7 @@
 		</armor>
 		<primaryArmor>armor_2 armor_3 armor_4</primaryArmor>
 		<weight>18820</weight>
-		<maxHealth>1400</maxHealth>
+		<maxHealth>1520</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>210</maxHealth>
 			<maxRegenHealth>140</maxRegenHealth>
@@ -1958,14 +1958,13 @@
 				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>10000</weight>
-			<maxLoad>48000</maxLoad>
 			<terrainResistance>
 				0.9 1 2
 				<!--BW_String-->
 			</terrainResistance>
 			<brakeForce>50000</brakeForce>
 			<rotationIsAroundCenter>false</rotationIsAroundCenter>
-			<rotationSpeed>28</rotationSpeed>
+			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
 					0.18
@@ -4081,7 +4080,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>12000</weight>
-			<maxHealth>450</maxHealth>
+			<maxHealth>380</maxHealth>
 			<rotationSpeed>26</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>160</maxHealth>
@@ -4111,7 +4110,7 @@
 					<pitchLimits>
 						<minPitch>0 -23 1 -23</minPitch>
 						<maxPitch>
-							0 5 0.366894 5 0.430556 3 0.569444 3 0.633106 5 1 5
+							0 6 0.366894 6 0.430556 3 0.569444 3 0.633106 6 1 6
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>
@@ -5397,10 +5396,7 @@
 		<detailed>
 			<engines>
 				<_12150LT_FL>
-					<smplEnginePower>
-						634.3687
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>650</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</_12150LT_FL>
 			</engines>

@@ -111,8 +111,6 @@ package net.wg.gui.battle.views.consumablesPanel
       
       private var _isFillPartially:Boolean = false;
       
-      private var _noBack:Boolean = false;
-      
       public function BattleEquipmentButton()
       {
          this._scheduler = App.utils.scheduler;
@@ -524,25 +522,13 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function set noBack(param1:Boolean) : void
-      {
-         this._noBack = param1;
-      }
-      
       public function set activated(param1:Boolean) : void
       {
          if(!param1)
          {
             return;
          }
-         if(!this._noBack)
-         {
-            this.state = BATTLE_ITEM_STATES.RELOADED;
-         }
-         else
-         {
-            this.state = BATTLE_ITEM_STATES.RELOADED_NOBACK;
-         }
+         this.state = BATTLE_ITEM_STATES.RELOADED;
          this.isActivated = true;
       }
       

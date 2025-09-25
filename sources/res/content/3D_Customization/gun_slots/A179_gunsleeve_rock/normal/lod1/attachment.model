@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<parent>content/3D_Customization/gun_slots/A179_gunsleeve_rock/normal/lod2/attachment</parent>
+	<visibilityBox>
+		<min>-0.258535 -0.305422 -1.893083</min>
+		<max>0.230129 0.241239 1.314119</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/gun_slots/A179_gunsleeve_rock/normal/lod1/attachment</nodefullVisual>
+</root>

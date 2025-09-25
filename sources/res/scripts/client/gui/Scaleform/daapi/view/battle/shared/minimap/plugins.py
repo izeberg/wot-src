@@ -39,7 +39,8 @@ _LOCATION_SUBTYPE_TO_FLASH_SYMBOL_NAME = {LocationMarkerSubType.SPG_AIM_AREA_SUB
    LocationMarkerSubType.ATTENTION_TO_MARKER_SUBTYPE: settings.ENTRY_SYMBOL_NAME.ATTENTION_MARKER, 
    LocationMarkerSubType.SHOOTING_POINT_SUBTYPE: settings.ENTRY_SYMBOL_NAME.SHOOTING_POINT_MARKER, 
    LocationMarkerSubType.NAVIGATION_POINT_SUBTYPE: settings.ENTRY_SYMBOL_NAME.NAVIGATION_POINT_MARKER, 
-   LocationMarkerSubType.FLAG_POINT_SUBTYPE: settings.ENTRY_SYMBOL_NAME.FLAG_POINT_MARKER}
+   LocationMarkerSubType.FLAG_POINT_SUBTYPE: settings.ENTRY_SYMBOL_NAME.FLAG_POINT_MARKER, 
+   LocationMarkerSubType.TARGET_DESIGNATOR_UNSPOTTED_MARKER_HIT: settings.ENTRY_SYMBOL_NAME.UNSPOTTED_MARKER}
 _PING_FLASH_MINIMAP_SUBTYPES = {
  LocationMarkerSubType.GOING_TO_MARKER_SUBTYPE,
  LocationMarkerSubType.ATTENTION_TO_MARKER_SUBTYPE,
@@ -1106,15 +1107,17 @@ class EquipmentsPlugin(common.IntervalPlugin):
         return settings.EQ_MARKER_TO_SYMBOL.get(marker, None)
 
     def __onEquipmentMarkerShown(self, equipment, position, _, interval, team=None):
-        uniqueID = self.__generator.next()
-        arenaDP = self.sessionProvider.getArenaDP()
-        isAllyTeam = team is None or arenaDP is None or arenaDP.isAllyTeam(team)
-        marker = equipment.getMarker() if isAllyTeam else equipment.getEnemyMarker()
-        symbol = self._getSymbolFromMarker(marker)
-        if symbol is None:
-            LOG_ERROR('Symbol is not found for equipment', equipment)
+        if not equipment.showMinimapMarker():
             return
         else:
+            uniqueID = self.__generator.next()
+            arenaDP = self.sessionProvider.getArenaDP()
+            isAllyTeam = team is None or arenaDP is None or arenaDP.isAllyTeam(team)
+            marker = equipment.getMarker() if isAllyTeam else equipment.getEnemyMarker()
+            symbol = self._getSymbolFromMarker(marker)
+            if symbol is None:
+                LOG_ERROR('Symbol is not found for equipment', equipment)
+                return
             matrix = minimap_utils.makePositionMatrix(position)
             model = self._addEntryEx(uniqueID, symbol, _C_NAME.EQUIPMENTS, matrix=matrix, active=True)
             if model is not None:
