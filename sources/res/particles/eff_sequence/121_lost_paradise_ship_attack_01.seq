@@ -378,8 +378,8 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>64.033340</duration>
+				<startTime>17.000000</startTime>
+				<duration>37.000004</duration>
 				<value>A_26B_01|</value>
 			</frame>
 		</track>
@@ -387,11 +387,43 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>3.300000</startTime>
-				<duration>60.733341</duration>
+				<startTime>17.000000</startTime>
+				<duration>37.000004</duration>
 				<sequenceSound>amb_map_121_lost_paradise_bomber</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>17.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>1.499997</inTangent>
+				<outTangent>1.499997</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>17.666668</startTime>
+				<value>1.000000</value>
+				<inTangent>1.499997</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>49.000004</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.200000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>54.000004</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.200000</inTangent>
+				<outTangent>-0.200000</outTangent>
+				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>
@@ -680,30 +712,6 @@
 				<inTangent>-0.535715 -0.535715 -0.535715</inTangent>
 				<outTangent>-0.535715 -0.535715 -0.535715</outTangent>
 				<tangentMode>1</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Sound A_26B_02</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>54.400002</duration>
-				<value>A_26B_02|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>3.300000</startTime>
-				<duration>51.100002</duration>
-				<sequenceSound>amb_map_121_lost_paradise_bomber</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>
@@ -1031,30 +1039,6 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound A_26B_03</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>70.966667</duration>
-				<value>A_26B_03|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>3.300000</startTime>
-				<duration>67.666664</duration>
-				<sequenceSound>amb_map_121_lost_paradise_bomber</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
 		<name>A_26B_04</name>
 		<type>model</type>
 		<resource>content/Outland/hd_out_AM_005_A-26B/normal/lod0/hd_out_AM_005_A-26B.model</resource>
@@ -1374,30 +1358,6 @@
 				<inTangent>-0.612246 -0.612246 -0.612246</inTangent>
 				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
 				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Sound A_26B_04</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>67.766670</duration>
-				<value>A_26B_04|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>3.166667</startTime>
-				<duration>64.600006</duration>
-				<sequenceSound>amb_map_121_lost_paradise_bomber</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

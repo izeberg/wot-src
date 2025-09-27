@@ -760,29 +760,29 @@
 			<frame>
 				<startTime>86.000008</startTime>
 				<value>187.869904 561.689697 210.241669</value>
-				<inTangent>0.019081 -4.208326 2.773204</inTangent>
-				<outTangent>0.019081 -4.208326 2.773204</outTangent>
+				<inTangent>0.019723 -4.194578 2.737221</inTangent>
+				<outTangent>0.019723 -4.194578 2.737221</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>87.494766</startTime>
+				<startTime>87.500008</startTime>
 				<value>187.320312 549.927368 241.027237</value>
-				<inTangent>-1.187654 -8.673962 6.380806</inTangent>
-				<outTangent>-1.187654 -8.673962 6.380806</outTangent>
+				<inTangent>-1.189145 -8.670284 6.336499</inTangent>
+				<outTangent>-1.189145 -8.670284 6.336499</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
 				<startTime>89.966675</startTime>
 				<value>182.357635 526.496460 221.662140</value>
-				<inTangent>-0.278489 -9.634840 -4.349600</inTangent>
-				<outTangent>-0.278489 -9.634840 -4.349600</outTangent>
+				<inTangent>-0.280318 -9.646965 -4.358105</inTangent>
+				<outTangent>-0.280318 -9.646965 -4.358105</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
-				<startTime>92.767845</startTime>
+				<startTime>92.766670</startTime>
 				<value>186.421158 499.070740 219.238754</value>
-				<inTangent>0.725326 -4.895404 -0.432567</inTangent>
-				<outTangent>0.725326 -4.895404 -0.432567</outTangent>
+				<inTangent>0.725630 -4.897458 -0.432748</inTangent>
+				<outTangent>0.725630 -4.897458 -0.432748</outTangent>
 				<tangentMode>0</tangentMode>
 			</frame>
 			<frame>
@@ -1827,8 +1827,8 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>85.800003</duration>
+				<startTime>18.000000</startTime>
+				<duration>64.000008</duration>
 				<value>P-40B|</value>
 			</frame>
 		</track>
@@ -1836,11 +1836,43 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>85.800003</duration>
+				<startTime>18.000000</startTime>
+				<duration>64.000008</duration>
 				<sequenceSound>amb_map_121_lost_paradise_plane_mustang</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>18.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.250000</inTangent>
+				<outTangent>0.250000</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>22.000002</startTime>
+				<value>1.000000</value>
+				<inTangent>0.250000</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>76.000008</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.166667</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>82.000008</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.166667</inTangent>
+				<outTangent>-0.166667</outTangent>
+				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>
@@ -1936,8 +1968,8 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>80.200005</duration>
+				<startTime>24.066668</startTime>
+				<duration>56.033340</duration>
 				<value>A6MZero|</value>
 			</frame>
 		</track>
@@ -1945,8 +1977,8 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>76.000008</duration>
+				<startTime>18.000000</startTime>
+				<duration>58.000008</duration>
 				<sequenceSound>amb_map_121_lost_paradise_plane_il2</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
@@ -1972,6 +2004,31 @@
 				<sequenceSound>amb_map_121_lost_paradise_plane_crash</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>18.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.333333</inTangent>
+				<outTangent>0.333333</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>21.000002</startTime>
+				<value>1.000000</value>
+				<inTangent>0.333333</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>80.100006</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>0</tangentMode>
 			</frame>
 		</track>
 		<track>

@@ -8,6 +8,7 @@ class BattleMattersMainViewModel(ViewModel):
                  'onShowAnimForQuest', 'onShowMainReward', 'onSelectDelayedReward',
                  'onClose')
     ARG_QUEST_ID = 'questID'
+    ARG_TOKEN_ID = 'tokenID'
     NAME_VEHICLE_REWARD = 'vehicle'
     NAME_TOKEN_REWARD = 'token'
 

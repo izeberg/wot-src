@@ -10,7 +10,7 @@ package net.wg.gui.battle.views.dualGunPanel
    public class DualGunPanelTimer extends SimpleDisposable
    {
       
-      private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
+      private static const FRACTIONAL_FORMAT_CMD:String = "getFractionalFormat";
       
       public static const STYLE_DEBUFF:String = "debuff";
       

@@ -550,7 +550,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>33.333336</duration>
+				<duration>26.733335</duration>
 				<value>airplane|</value>
 			</frame>
 		</track>
@@ -559,10 +559,42 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>33.333336</duration>
+				<duration>26.733335</duration>
 				<sequenceSound>amb_map_121_lost_paradise_plane_il2</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>0.000000</startTime>
+				<value>0.000000</value>
+				<inTangent>0.205882</inTangent>
+				<outTangent>0.205882</outTangent>
+				<tangentMode>0</tangentMode>
+			</frame>
+			<frame>
+				<startTime>3.400000</startTime>
+				<value>0.700000</value>
+				<inTangent>0.205882</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>24.433334</startTime>
+				<value>0.700000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.304348</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.733335</startTime>
+				<value>0.000000</value>
+				<inTangent>-0.304348</inTangent>
+				<outTangent>-0.304348</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>

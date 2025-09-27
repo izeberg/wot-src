@@ -173,17 +173,7 @@ package net.wg.data.constants.generated
       
       public static const BIRTHDAY_BANNER_ENTRY_POINT:String = "BirthdayBannerEntryPoint";
       
-      public static const LOOTBOXES_WIDGET:String = "eventBoxEntryWidget";
-      
-      public static const WHITE_TIGER_WIDGET:String = "whiteTigerWidget";
-      
-      public static const WT_EVENT_ENTRY_POINT:String = "WTEventEntryPoint";
-      
-      public static const EVENT_CAROUSEL_WIDGET:String = "eventCarouselWidget";
-      
-      public static const EVENT_CREW_WIDGET:String = "eventCrewWidget";
-      
-      public static const EVENT_PARAMS_WIDGET:String = "eventParamsWidget";
+      public static const BLACK_MARKET_ENTRY_POINT:String = "BlackMarketEntryPoint";
        
       
       public function HANGAR_ALIASES()

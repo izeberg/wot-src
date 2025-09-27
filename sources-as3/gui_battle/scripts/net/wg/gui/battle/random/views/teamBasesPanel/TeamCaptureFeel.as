@@ -43,16 +43,16 @@ package net.wg.gui.battle.random.views.teamBasesPanel
          this.onDispose();
       }
       
-      public function getBarWidth() : Number
-      {
-         return this._fillTarget.width;
-      }
-      
       public function onDispose() : void
       {
          this._colorType = null;
          this.clearGraphic();
          this._fillTarget = null;
+      }
+      
+      public function getBarWidth() : Number
+      {
+         return this._fillTarget.width;
       }
       
       protected function getBitmapSrcPrefix() : String

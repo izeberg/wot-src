@@ -47,8 +47,8 @@ msgstr "T-11"
 msgid "Chassis_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
-msgid "Chassis_Cz04_T50_51_Waf_Hound_3DSt"
-msgstr "Jiskra"
+msgid "Chassis_Cz04_T50_51_ISP"
+msgstr "TVP T 50/51"
 
 msgid "Chassis_Cz05_T34_100"
 msgstr "T-34/85"
@@ -151,6 +151,9 @@ msgstr "Vz. 59"
 
 msgid "Chassis_Cz38_Projekt_SAT"
 msgstr "Projekt SAT"
+
+msgid "Chassis_Cz39_SD_122_49_Sekera"
+msgstr "SD-122/49"
 
 msgid "Cz00_COSM_Gravizapa"
 msgstr "Спадарожнік"
@@ -261,19 +264,24 @@ msgstr "LT vz. 35"
 msgid "Cz04_T50_51"
 msgstr "TVP T 50/51"
 
-msgid "Cz04_T50_51_Waf_Hound_3DSt"
-msgstr "Jiskra"
+msgid "Cz04_T50_51_ISP"
+msgstr "TVP T 50/51 (И)"
 
-msgid "Cz04_T50_51_Waf_Hound_3DSt_descr"
+msgid "Cz04_T50_51_ISP_descr"
 msgstr ""
-"«Типовой разведчик Альянса, представляющий собой довольно удобную платформу для бесконечных модернизаций. Выживаемость машины была сразу отодвинута на задний план, что высвободило ресурсы для работы непосредственно над мобильностью и вооружением. Один на один этот танк, конечно, не может составить конкуренцию более крепким и универсальным машинам, но если эти \"Молнии\" налетают на противника стаей, от последнего вряд ли что-то останется, кроме воспоминаний. На то и ставка».\n"
-"Серьёзно? Вот это они скармливают своим новобранцам в качестве рекламы машины? Мол, мы дадим вам пушку и скорость, но вы ничего не сможете сделать без помощи союзников? Отличный ход, вы действительно умеете заинтересовать потенциальные экипажи лезть в это жестяное ведро."
+"Сумесны праект кампаній Škoda і ČKD. 14 студзеня 1950 г. пачалося "
+"абмеркаванне спецыфікацый будучага танка, аднак ужо 4 сакавіка 1950 г. "
+"Міністэрства абароны Чэхаславакіі абвясціла пра спыненне работы над "
+"праектам. Першаўзор пабудаваны не быў. Існаваў толькі ў чарцяжах."
 
-msgid "Cz04_T50_51_Waf_Hound_3DSt_short"
-msgstr "Jiskra"
+msgid "Cz04_T50_51_ISP_long_special"
+msgstr "?empty?"
 
-msgid "Cz04_T50_51_Waf_Hound_3DSt_short_special"
-msgstr "ОБТ с глубокой модернизацией"
+msgid "Cz04_T50_51_ISP_short"
+msgstr "TVP T 50/51 (И)"
+
+msgid "Cz04_T50_51_ISP_short_special"
+msgstr "?empty?"
 
 msgid "Cz04_T50_51_descr"
 msgstr ""
@@ -484,7 +492,7 @@ msgid "Cz17_Vz_55_CN_short"
 msgstr "Warrior"
 
 msgid "Cz17_Vz_55_CN_short_special"
-msgstr "Унікальны выгляд, магазін на 2 снарады"
+msgstr "Уникальный внешний вид, магазин на два снаряда"
 
 msgid "Cz17_Vz_55_descr"
 msgstr ""
@@ -736,17 +744,39 @@ msgstr "Projekt SAT"
 
 msgid "Cz38_Projekt_SAT_descr"
 msgstr ""
-" \n"
+"З 1945 года чэхаславацкі Ваенна-тэхнічны інстытут (VTU) распрацоўваў праект сярэдняга танка TVP. У пачатку 1950-х гадоў гэты праект быў закрыты, аднак ідэя стварэння ўласнага сярэдняга танка не была адкінута. У сярэдзіне таго ж дзесяцігоддзя была ініцыявана праца над новым праектам — сярэднім танкам SAT (Standardní armádní tank). Яго распрацоўка вялася з улікам досведу савецкага танкабудавання, але з выкарыстаннем чэхаславацкіх вузлоў і агрэгатаў. Нягледзячы на ​​пэўную архаічнасць агульнага дызайну і канструкцыі асобных вузлоў, паводле меркаваных тактыка-тэхнічных характарыстык машына выглядала досыць перспектыўнай. Тым не менш, распрацоўка танка SAT не выйшла за межы эскізнага праекта.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "Cz38_Projekt_SAT_long_special"
-msgstr "?empty?"
+msgstr ""
+"Сярэдні танк з добрымі дынамічнымі паказчыкамі і камфортнай гарматай. Машына"
+" хоць і мае высокі сілуэт, але моцная вежа дазволіць займаць зручныя пазіцыі"
+" для рэалізацыі агнявога патэнцыялу, а высокая забойнасць стрэлу і доўгае "
+"перанабіванне дазваляюць яе мага радзей падстаўляць уразлівыя зоны."
 
 msgid "Cz38_Projekt_SAT_short"
 msgstr "Projekt SAT"
 
 msgid "Cz38_Projekt_SAT_short_special"
+msgstr "Добрая дынаміка, моцная вежа"
+
+msgid "Cz39_SD_122_49_Sekera"
+msgstr "SD-122/49 Sekera"
+
+msgid "Cz39_SD_122_49_Sekera_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "Cz39_SD_122_49_Sekera_long_special"
+msgstr "?empty?"
+
+msgid "Cz39_SD_122_49_Sekera_short"
+msgstr "Sekera"
+
+msgid "Cz39_SD_122_49_Sekera_short_special"
 msgstr "?empty?"
 
 msgid "DTN_10"
@@ -774,6 +804,9 @@ msgid "PepelacRadio"
 msgstr "Метэор"
 
 msgid "Praga_AXK"
+msgstr "Praga AXK"
+
+msgid "Praga_AXK_ISP"
 msgstr "Praga AXK"
 
 msgid "Praga_AXK_X16"
@@ -821,6 +854,9 @@ msgstr "Radiostanice RM-31T"
 msgid "Radiostanice_RM_31T_A_CN"
 msgstr "Radiostanice RM-31T GW"
 
+msgid "Radiostanice_RM_31T_A_ISP"
+msgstr "Radiostanice RM-31T"
+
 msgid "Radiostanice_RM_31T_K"
 msgstr "Radiostanice RM-31T"
 
@@ -837,6 +873,9 @@ msgid "Radiostanice_R_113_D"
 msgstr "Radiostanice R-113"
 
 msgid "Radiostanice_R_113_S"
+msgstr "Radiostanice R-113"
+
+msgid "Radiostanice_R_113_SK"
 msgstr "Radiostanice R-113"
 
 msgid "Radiostanice_vz_29"
@@ -935,8 +974,8 @@ msgstr "LT vz. 35"
 msgid "Turret_1_Cz04_T50_51"
 msgstr "TVP T 50/51"
 
-msgid "Turret_1_Cz04_T50_51_Waf_Hound_3DSt"
-msgstr "Jiskra"
+msgid "Turret_1_Cz04_T50_51_ISP"
+msgstr "TVP T 50/51"
 
 msgid "Turret_1_Cz05_T34_100"
 msgstr "Konštrukta T-34/100 varianta II"
@@ -1013,6 +1052,9 @@ msgstr "Vz. 59"
 msgid "Turret_1_Cz38_Projekt_SAT"
 msgstr "Projekt SAT"
 
+msgid "Turret_1_Cz39_SD_122_49_Sekera"
+msgstr "SD-122/49"
+
 msgid "Turret_2_Cz02_TVP_T50"
 msgstr "Škoda T 50 (1950)"
 
@@ -1049,6 +1091,9 @@ msgstr "Vz. 44-2"
 msgid "V_12_6"
 msgstr "V-12-6"
 
+msgid "V_12_7"
+msgstr "V-12-7"
+
 msgid "V_12_F"
 msgstr "V-12F"
 
@@ -1068,6 +1113,9 @@ msgid "_100mm_A20"
 msgstr "100 mm A20"
 
 msgid "_100mm_AK1"
+msgstr "100 mm AK1"
+
+msgid "_100mm_AK1_ISP"
 msgstr "100 mm AK1"
 
 msgid "_100mm_BS_3"
@@ -1094,10 +1142,16 @@ msgstr "Nárazový vz. 49"
 msgid "_100mm_Narazovy_vz_50"
 msgstr "Nárazový vz. 50"
 
+msgid "_100mm_Narazovy_vz_50_ISP"
+msgstr "Nárazový vz. 50"
+
 msgid "_100mm_Prupalny_s_53"
 msgstr "Průpalný S 53"
 
 msgid "_100mm_Prupalny_vz_50"
+msgstr "Průpalný vz. 50"
+
+msgid "_100mm_Prupalny_vz_50_ISP"
 msgstr "Průpalný vz. 50"
 
 msgid "_100mm_Prupalny_vz_PP5"
@@ -1121,19 +1175,8 @@ msgstr "Průrazný vz. 49 (s jádrem)"
 msgid "_100mm_Prurazny_vz_50"
 msgstr "Průrazný vz. 50"
 
-msgid "_100mm_Prurazny_vz_50_WT"
-msgstr "Серебряная пуля"
-
-msgid "_100mm_Prurazny_vz_50_WT_descr"
-msgstr "Гордость оружейников Альянса."
-
-msgid "_100mm_Prurazny_vz_50_WT_long_special"
-msgstr ""
-"При перегрузке генератора гончие получают заряд плазмы, который увеличивает "
-"наносимый урон на 25%, вплоть до 100%"
-
-msgid "_100mm_Prurazny_vz_50_WT_short_special"
-msgstr "Дополнительный урон плазмой"
+msgid "_100mm_Prurazny_vz_50_ISP"
+msgstr "Průrazný vz. 50"
 
 msgid "_100mm_Prurazny_vz_PJ8_Dravec"
 msgstr "Průrazný vz. PJ8"
@@ -1198,14 +1241,23 @@ msgstr "Vz. 42N VM-TST"
 msgid "_10RT_26"
 msgstr "10RT-26"
 
+msgid "_122mm_D_25_SK"
+msgstr "122 mm D-25SK"
+
 msgid "_122mm_Narazovy_vz_47"
 msgstr "Nárazový vz. 47"
+
+msgid "_122mm_Narazovy_vz_471N"
+msgstr "Nárazový vz. 471N"
 
 msgid "_122mm_Narazovy_vz_48"
 msgstr "Nárazový vz. 48"
 
 msgid "_122mm_Prurazny_vz_47"
 msgstr "Průrazný vz. 47"
+
+msgid "_122mm_Prurazny_vz_471B"
+msgstr "Průrazný vz. 471B"
 
 msgid "_122mm_Prurazny_vz_48"
 msgstr "Průrazný vz. 48"
@@ -1216,8 +1268,11 @@ msgstr "Průrazný vz. 49 (s jádrem)"
 msgid "_122mm_Prurazny_vz_50_s_oc_jadrem"
 msgstr "Průrazný vz. 50 (s jádrem)"
 
+msgid "_122mm_Prurazny_vz_BS7"
+msgstr "Průrazný vz. BS7"
+
 msgid "_122mm_vz_122_L52"
-msgstr "122mm Vz. 122/L52"
+msgstr "122mm vz. 122/L52"
 
 msgid "_122mm_vz_44_51"
 msgstr "122 mm vz. 44-51"

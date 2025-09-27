@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.097626 -0.097626 -0.097626</min>
+		<max>0.097626 0.097626 0.097626</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod0/Turret_01</nodefullVisual>
+</root>

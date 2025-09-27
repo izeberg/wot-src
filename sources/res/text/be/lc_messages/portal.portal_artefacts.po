@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ability/descr/usage"
+msgstr "Время перезарядки: %(cooldown)d с."
+
+msgid "berserk_portal/descr"
+msgstr ""
+"На время увеличивает урон, который вы наносите врагу, и существенно снижает "
+"урон, который наносят вам."
+
+msgid "berserk_portal/name"
+msgstr "Адреналин"
+
+msgid "curse_shot_portal/descr"
+msgstr ""
+"Следующий выстрел, пробивший вражескую машину, нанесёт ей сразу несколько "
+"критических повреждений."
+
+msgid "curse_shot_portal/name"
+msgstr "Замыкание"
+
+msgid "fire_shot_portal/descr"
+msgstr "Следующий выстрел, пробивший вражескую машину, подожжёт её."
+
+msgid "fire_shot_portal/name"
+msgstr "Пирокинез"
+
+msgid "frozen_shot_portal/descr"
+msgstr ""
+"Следующий выстрел, пробивший вражескую машину, снизит скорость её движения и"
+" перезарядки."
+
+msgid "frozen_shot_portal/name"
+msgstr "Заморозка"
+
+msgid "guided_missile/descr"
+msgstr ""
+"Выпускает снаряд, который начнёт двигаться в направлении, которое вы ему "
+"зададите. При попадании во вражескую машину наносит фиксированный урон."
+
+msgid "guided_missile/name"
+msgstr "Шаровая молния"
+
+msgid "laugh_shot_portal/descr"
+msgstr ""
+"Следующий выстрел, пробивший вражескую машину, сделает её на время "
+"практически неуправляемой."
+
+msgid "laugh_shot_portal/name"
+msgstr "Ошибка кода"
+
+msgid "minefield_portal/descr"
+msgstr ""
+"Появляется в обозначенной зоне, попав в которую, вражеская машина получает "
+"урон, а её гусеницы оказываются сбиты. Минное поле не повреждает технику "
+"союзников."
+
+msgid "minefield_portal/longDescr"
+msgstr "?empty?"
+
+msgid "minefield_portal/name"
+msgstr "Минное поле"
+
+msgid "minefield_portal/shortDescr"
+msgstr "?empty?"
+
+msgid "reload_aura_portal/descr"
+msgstr ""
+"Создаёт зону, в которой вся техника сможет в течение некоторого времени "
+"перезаряжаться быстрее."
+
+msgid "reload_aura_portal/name"
+msgstr "Огневой рубеж"
+
+msgid "sentry_gun/descr"
+msgstr ""
+"Разместив статичную турель, временно имитирующую настоящую машину, вы "
+"сможете атаковать ей врагов. Турель имеет ограниченный запас прочности и "
+"может быть уничтожена."
+
+msgid "sentry_gun/name"
+msgstr "Турель"
+
+msgid "shield_portal/descr"
+msgstr ""
+"Делает вашу машину временно неуязвимой к оглушению и урону от вражеских "
+"снарядов."
+
+msgid "shield_portal/name"
+msgstr "Защитный барьер"
+
+msgid "trap_portal/descr"
+msgstr "Создаёт мощное поле, затягивающее в себя вражеские машины."
+
+msgid "trap_portal/name"
+msgstr "Магнит"
+
+msgid "vehicle_change_shot/descr"
+msgstr ""
+"Позволяет вселиться во вражескую машину и в нужный момент вызвать на неё "
+"огонь."
+
+msgid "vehicle_change_shot/name"
+msgstr "Перехват"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/german/G181_StuG_Maus_17cm/crash/lod3/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G181_StuG_Maus_17cm/crash/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.870503 -0.563870 0.007230</min>
+		<max>0.851368 0.694332 7.494764</max>
+	</visibilityBox>
+</root>

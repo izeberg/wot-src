@@ -107,8 +107,6 @@ package net.wg.data.constants.generated
       
       public static const TOOLTIP_BUILD_BLOCK_VIOLET_LINKAGE:String = "TooltipBuildUpBlockVioletBgUI";
       
-      public static const TOOLTIP_BUILD_BLOCK_GOLD_LINKAGE:String = "TooltipBuildUpBlockGoldBgUI";
-      
       public static const TOOLTIP_BUILD_BLOCK_VIOLET_BIG_LINKAGE:String = "TooltipBuildUpBlockVioletBgBigUI";
       
       public static const TOOLTIP_BUILD_BLOCK_YELLOW_LINKAGE:String = "TooltipBuildUpBlockYellowBgUI";
@@ -124,8 +122,6 @@ package net.wg.data.constants.generated
       public static const TOOLTIP_QUEST_PROGRESS_BLOCK_LINKAGE:String = "QuestProgressBlockUI";
       
       public static const TOOLTIP_QUEST_OR_CONDITION_BLOCK_LINKAGE:String = "QuestOrConditionBlockUI";
-      
-      public static const TOOLTIP_BUILD_BLOCK_WT_RENT_LINKAGE:String = "TooltipBuildUpBlockWtRentBgUI";
       
       public static const ALIGN_LEFT:String = "left";
       

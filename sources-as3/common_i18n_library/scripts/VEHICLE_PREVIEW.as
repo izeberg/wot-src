@@ -262,6 +262,18 @@ package
       public static const SHOWCASESTYLEBUYING_ACTIONBTN_TOOLTIP_UNAVAILABLE:String = "#vehicle_preview:showcaseStyleBuying/actionBtn/tooltip/unavailable";
       
       public static const SHOWCASESTYLEBUYING_ACTIONBTN_TOOLTIP_SERVICEUNAVAILABLE:String = "#vehicle_preview:showcaseStyleBuying/actionBtn/tooltip/serviceUnavailable";
+      
+      public static const STATTRACKERPANEL_LABEL:String = "#vehicle_preview:statTrackerPanel/label";
+      
+      public static const TOOLTIPS_STATTRACK_TITLE:String = "#vehicle_preview:tooltips/statTrack/title";
+      
+      public static const TOOLTIPS_STATTRACK_DESCRIPTION_FIRSTPART:String = "#vehicle_preview:tooltips/statTrack/description/firstPart";
+      
+      public static const TOOLTIPS_STATTRACK_DESCRIPTION_SECONDPART:String = "#vehicle_preview:tooltips/statTrack/description/secondPart";
+      
+      public static const TOOLTIPS_STATTRACK_DESCRIPTION_THIRDPART:String = "#vehicle_preview:tooltips/statTrack/description/thirdPart";
+      
+      public static const TOOLTIPS_STATTRACK_MOREINFO:String = "#vehicle_preview:tooltips/statTrack/moreInfo";
        
       
       public function VEHICLE_PREVIEW()

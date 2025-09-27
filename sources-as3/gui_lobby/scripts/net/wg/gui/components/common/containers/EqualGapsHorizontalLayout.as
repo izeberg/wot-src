@@ -22,7 +22,6 @@ package net.wg.gui.components.common.containers
       {
          var _loc1_:DisplayObject = null;
          var _loc7_:int = 0;
-         var _loc9_:int = 0;
          var _loc10_:UIComponent = null;
          var _loc2_:int = _target.numChildren;
          var _loc3_:int = 0;
@@ -46,7 +45,7 @@ package net.wg.gui.components.common.containers
          var _loc6_:int = !!this._paddingGap ? int(_loc3_ + 1) : int(_loc3_ - 1);
          _loc7_ = (this._availableSize - _loc4_) / _loc6_;
          var _loc8_:Boolean = _loc7_ >= 0 ? Boolean(this._paddingGap) : Boolean(false);
-         _loc9_ = !!_loc8_ ? int(_loc7_) : int(0);
+         var _loc9_:int = !!_loc8_ ? int(_loc7_) : int(0);
          _loc5_ = 0;
          while(_loc5_ < _loc2_)
          {

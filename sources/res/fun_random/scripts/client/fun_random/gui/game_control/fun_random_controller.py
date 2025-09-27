@@ -31,6 +31,7 @@ class FunRandomController(IFunRandomController, IGlobalListener):
         super(FunRandomController, self).__init__()
         self.__serverSettings = None
         self.__funRandomSettings = None
+        self.isRelogin = False
         self.__subscription = FunSubscription()
         self.__subModesHolder = FunSubModesHolder(self.__subscription)
         self.__subModesInfo = FunSubModesInfo(self.__subModesHolder)
@@ -73,6 +74,7 @@ class FunRandomController(IFunRandomController, IGlobalListener):
         self.__notifications.startNotificationPushing()
         self.__subModesHolder.startNotification()
         self.startGlobalListening()
+        self.isRelogin = False
 
     def onLobbyStarted(self, ctx):
         self.setDesiredSubModeID(ctx.get(FUN_EVENT_ID_KEY, self.__subModesHolder.getDesiredSubModeID()))
@@ -132,6 +134,9 @@ class FunRandomController(IFunRandomController, IGlobalListener):
         self.__subModesHolder.setDesiredSubModeID(subModeID, trustedSource)
         self.__hiddenVehicles.updateCurrentVehicle(self.__subModesHolder.getDesiredSubMode())
         self.__subscription.resume()
+
+    def getDesiredSubModeID(self):
+        return self.__subModesHolder.getDesiredSubMode()
 
     @adisp_async
     @adisp_process

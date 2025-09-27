@@ -12,6 +12,8 @@ package net.wg.gui.components.crosshairPanel
    import net.wg.gui.components.crosshairPanel.VO.GunMarkerIndicatorVO;
    import net.wg.gui.components.crosshairPanel.components.ClipQuantityIndicator;
    import net.wg.gui.components.crosshairPanel.components.CrosshairClipQuantityBarContainer;
+   import net.wg.gui.components.crosshairPanel.components.ShotDamageInd;
+   import net.wg.gui.components.crosshairPanel.components.ShotFlyTimeInd;
    import net.wg.gui.components.crosshairPanel.components.autoloader.AutoloaderIndicator;
    import net.wg.gui.components.crosshairPanel.components.autoloader.BoostIndicatorStateParamsVO;
    import net.wg.gui.components.crosshairPanel.components.overheatBar.OverheatBar;
@@ -24,7 +26,7 @@ package net.wg.gui.components.crosshairPanel
       
       private static const TYPE_PREFIX:String = "type";
       
-      private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
+      private static const FRACTIONAL_FORMAT_CMD:String = "getFractionalFormat";
       
       private static const TF_LEFT_MARGIN:int = 2;
        
@@ -58,6 +60,10 @@ package net.wg.gui.components.crosshairPanel
       public var autoloaderComponent:AutoloaderIndicator = null;
       
       public var mbAutoloaderComponent:AutoloaderIndicator = null;
+      
+      public var shotFlyTimeInd:ShotFlyTimeInd = null;
+      
+      public var shotDamageInd:ShotDamageInd = null;
       
       protected var health:Number = 0;
       
@@ -406,6 +412,39 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function setShotDamageIndValue(param1:int, param2:int) : void
+      {
+         if(this.shotDamageInd)
+         {
+            this.shotDamageInd.setValue(param1);
+            this.shotDamageInd.setState(param2);
+         }
+      }
+      
+      public function setShotDamageIndVisibility(param1:Boolean) : void
+      {
+         if(this.shotDamageInd)
+         {
+            this.shotDamageInd.visible = param1;
+         }
+      }
+      
+      public function setShotFlyTimeIndValue(param1:Number) : void
+      {
+         if(this.shotFlyTimeInd)
+         {
+            this.shotFlyTimeInd.setValue(param1);
+         }
+      }
+      
+      public function setShotFlyTimeIndVisibility(param1:Boolean) : void
+      {
+         if(this.shotFlyTimeInd)
+         {
+            this.shotFlyTimeInd.visible = param1;
+         }
+      }
+      
       public function setTimerReloadingState() : void
       {
          var _loc1_:Boolean = !(this.reloadingState == CrosshairConsts.RELOADING_ENDED || this.reloadingState == CrosshairConsts.RELOADING_END);
@@ -522,6 +561,16 @@ package net.wg.gui.components.crosshairPanel
          this.cassetteMC = null;
          this.mbCassetteMC.dispose();
          this.mbCassetteMC = null;
+         if(this.shotFlyTimeInd)
+         {
+            this.shotFlyTimeInd.dispose();
+            this.shotFlyTimeInd = null;
+         }
+         if(this.shotDamageInd)
+         {
+            this.shotDamageInd.dispose();
+            this.shotDamageInd = null;
+         }
          if(this._overheatBar)
          {
             this._overheatBar.dispose();

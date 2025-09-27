@@ -17,6 +17,8 @@ package net.wg.data.constants.generated
       
       public static const BOTTOM_PANEL_WOT_PLUS_LINKAGE:String = "VehiclePreviewBottomPanelWotPlusUI";
       
+      public static const BOTTOM_PANEL_STAT_TRACK_LINKAGE:String = "VehiclePreviewBottomPanelStatTrackUI";
+      
       public static const BOTTOM_PANEL_OFFER_GIFT_LINKAGE:String = "VehiclePreviewBottomPanelOfferGiftUI";
       
       public static const BOTTOM_PANEL_WELL:String = "VehiclePreviewBottomPanelWellUI";

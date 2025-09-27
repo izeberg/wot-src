@@ -117,10 +117,6 @@ def getPlayerSeniorityAwardsUrl():
     return _getUrl('seniorityAwardsProducts')
 
 
-def getBuyLootboxesUrl():
-    return _getUrl('buyLootboxes')
-
-
 def getSplitPageUrl(params):
     url = _getUrl('splitUrl')
     return addParamsToUrlQuery(url, params, True)
@@ -142,8 +138,8 @@ def getIntegratedAuctionUrl():
     return _getUrl('integratedAuction')
 
 
-def getEventLootBoxesUrl():
-    return _getUrl('eventLootboxes')
+def getBlackMarketUrl():
+    return _getUrl('blackMarket')
 
 
 def getShowcaseUrl():
@@ -165,3 +161,7 @@ def getCosmic2024ShopUrl():
 
 def getComp7ProductsUrl():
     return _getUrl('comp7Products')
+
+
+def getPortalShopUrl():
+    return _getUrl('portalShop')

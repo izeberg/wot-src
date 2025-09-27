@@ -53,8 +53,6 @@ package net.wg.gui.battle.views.battleMessenger
       
       private static const NAME_SWAP_AREA:String = "swapArea";
       
-      private static const NAME_MESSAGER_CONTAINER:String = "messagesContainer";
-      
       private static const NAME_USER_INTERACTION_CMP:String = "userInteractionCmp";
        
       
@@ -164,6 +162,8 @@ package net.wg.gui.battle.views.battleMessenger
       
       private var _poolsCreated:Boolean = false;
       
+      private var _greenMessageColorOverride:int = -1;
+      
       public function BattleMessenger()
       {
          this.swapArea = new Sprite();
@@ -178,7 +178,6 @@ package net.wg.gui.battle.views.battleMessenger
          addChild(this.swapArea);
          TextFieldEx.setNoTranslate(this.receiverField,true);
          TextFieldEx.setNoTranslate(this.messageInputField,true);
-         this._messagesContainer.name = NAME_MESSAGER_CONTAINER;
          addChild(this._messagesContainer);
          this._messagesContainer.name = MESSAGES_CONTAINER;
          this._messagesContainer.mouseEnabled = false;
@@ -376,10 +375,6 @@ package net.wg.gui.battle.views.battleMessenger
       public function as_enterPressed(param1:int) : void
       {
          var _loc2_:String = null;
-         if(!this.visible)
-         {
-            return;
-         }
          if(this._isCtrlButtonPressed)
          {
             return;
@@ -1018,6 +1013,7 @@ package net.wg.gui.battle.views.battleMessenger
             this.updateFullStack();
          }
          var _loc4_:BattleMessage = param2.createItem(this.userInteraction);
+         _loc4_.greenMessageColorOverride = this._greenMessageColorOverride;
          _loc4_.messageID = param3;
          _loc4_.setMessageData(param1);
          this.pushMessage(_loc4_);
@@ -1299,6 +1295,11 @@ package net.wg.gui.battle.views.battleMessenger
             }
             this.updateMessagesPosition();
          }
+      }
+      
+      public function set greenMessageColorOverride(param1:int) : void
+      {
+         this._greenMessageColorOverride = param1;
       }
       
       public function set isSmallState(param1:Boolean) : void

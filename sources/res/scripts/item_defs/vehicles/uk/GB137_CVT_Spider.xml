@@ -2388,7 +2388,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>380</circularVisionRadius>
+			<circularVisionRadius>390</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -3107,7 +3107,7 @@
 		<detailed>
 			<engines>
 				<Rolls_Royce_B81F>
-					<smplEnginePower>500</smplEnginePower>
+					<smplEnginePower>560</smplEnginePower>
 					<smplFwMaxSpeed>65</smplFwMaxSpeed>
 				</Rolls_Royce_B81F>
 			</engines>

@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root</identifier>
+			<transform>
+				<row0>0.998912 0.040896 0.022428</row0>
+				<row1>-0.040886 0.999163 -0.000918</row1>
+				<row2>-0.022447 -0.000000 0.999748</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Head</identifier>
+				<transform>
+					<row0>1.000000 0.000000 -0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-1.470106 -58.203426 40.593407</row3>
+				</transform>
+				<node>
+					<identifier>L_Eye_J</identifier>
+					<transform>
+						<row0>0.998912 -0.040886 -0.022447</row0>
+						<row1>0.040896 0.999163 -0.000000</row1>
+						<row2>0.022428 -0.000918 0.999748</row2>
+						<row3>27.661499 55.036167 -75.627518</row3>
+					</transform>
+					<node>
+						<identifier>L_Eye_J_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 -0.000000</row0>
+							<row1>0.000000 1.000000 -0.000000</row1>
+							<row2>-0.000000 -0.000000 -1.000000</row2>
+							<row3>-27.078804 2.093469 34.434944</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>R_Eye_J</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>0.000000 1.000000 -0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>-31.765583 55.036167 -75.627518</row3>
+					</transform>
+					<node>
+						<identifier>R_Eye_J_BlendBone</identifier>
+						<transform>
+							<row0>0.998912 -0.040886 -0.022447</row0>
+							<row1>0.040896 0.999163 0.000000</row1>
+							<row2>-0.022428 0.000918 -0.999748</row2>
+							<row3>33.235687 3.167254 35.034115</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Head_BlendBone</identifier>
+					<transform>
+						<row0>0.998912 -0.040886 -0.022447</row0>
+						<row1>0.040896 0.999163 0.000000</row1>
+						<row2>-0.022428 0.000918 -0.999748</row2>
+						<row3>1.470106 58.203426 -40.593407</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head_BlendBone</node>
+		<geometry>
+			<vertices>HeadShape.vertices</vertices>
+			<primitive>HeadShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Head_mat_skinned</identifier>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>107</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Characters/hd_char_m_Portal25_0001_Katrina/hd_char_m_Portal25_0001_Katrina_AM.dds</Texture>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Characters/hd_char_m_Portal25_0001_Katrina/hd_char_m_Portal25_0001_Katrina_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Characters/hd_char_m_Portal25_0001_Katrina/hd_char_m_Portal25_0001_Katrina_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-1.486626 9.566319 -30.962078</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Head_BlendBone</node>
+		<geometry>
+			<vertices>LavaShape.vertices</vertices>
+			<stream>LavaShape.colour</stream>
+			<primitive>LavaShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Lava_mat_skinned</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>107</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Characters/hd_char_m_Portal25_0001_Katrina/hd_char_m_Portal25_0001_Katrina_Fire.dds</Texture>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 0.015000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>content/Characters/hd_char_m_Portal25_0001_Katrina/hd_char_m_Portal25_0001_Katrina_AM.dds</Texture>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>8.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-1.311443 20.543869 -8.707668</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>L_Eye_J_BlendBone</node>
+		<node>R_Eye_J_BlendBone</node>
+		<geometry>
+			<vertices>EyesShape.vertices</vertices>
+			<primitive>EyesShape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>Eyes_mat_skinned</identifier>
+					<fx>shaders/std_effects/glow_skinned.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>107</materialKind>
+					<property>
+						diffuseMap
+						<Texture>content/Characters/hd_char_m_Portal25_0001_Katrina/hd_char_m_Portal25_0001_Katrina_AM.dds</Texture>
+					</property>
+					<property>
+						g_ditherCoeff
+						<Float>24.000000</Float>
+					</property>
+					<property>
+						selfIllumination
+						<Float>40.000000</Float>
+					</property>
+				</material>
+				<groupOrigin>-2.599602 -3.346341 40.845779</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-88.381798 -110.176735 -84.017159</min>
+		<max>85.408546 129.309372 145.941315</max>
+	</boundingBox>
+	<geometrySize>375670</geometrySize>
+	<minUVDensity>0.000001</minUVDensity>
+</root>

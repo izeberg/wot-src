@@ -41,15 +41,15 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>64.933334</duration>
-				<sequenceSound>ay_vo_jaginskaya_intercom_simple_Jaginskaya</sequenceSound>
+				<duration>64.875000</duration>
+				<sequenceSound>ay_vo_jaginskaya_intercom_simple_1_Jaginskaya</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>ay_vo_jaginskaya_intercom_simple_Intercom</name>
+		<name>ay_vo_jaginskaya_intercom_simple_1_Intercom</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
@@ -76,8 +76,8 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>64.966667</duration>
-				<sequenceSound>ay_vo_jaginskaya_intercom_simple_Intercom</sequenceSound>
+				<duration>64.875000</duration>
+				<sequenceSound>ay_vo_jaginskaya_intercom_simple_1_Intercom</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

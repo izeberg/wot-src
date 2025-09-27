@@ -20,6 +20,12 @@ package net.wg.data.constants.generated
       public static const CROSSHAIR_BLINK_INVISIBLE:int = 0;
       
       public static const CROSSHAIR_BLINK_GREEN_HORIZONTAL:int = 1;
+      
+      public static const SHOT_DAMAGE_IND_LOW:int = 1;
+      
+      public static const SHOT_DAMAGE_IND_MEDIUM:int = 2;
+      
+      public static const SHOT_DAMAGE_IND_HIGH:int = 3;
        
       
       public function CROSSHAIR_CONSTANTS()

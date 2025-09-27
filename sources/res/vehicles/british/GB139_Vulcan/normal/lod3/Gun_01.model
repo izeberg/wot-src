@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB139_Vulcan/normal/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.700838 -0.894998 -3.283988</min>
+		<max>0.410085 0.322042 6.351968</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod3/Gun_01</nodefullVisual>
+</root>

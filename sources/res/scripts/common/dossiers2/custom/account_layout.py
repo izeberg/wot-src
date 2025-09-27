@@ -242,7 +242,8 @@ _STEAM_BLOCK_LAYOUT = [
  'steamHorizonSupportMedal', 'steamSmallSupportMedal', 'steamBreakThrough',
  'steamBreakThroughMedal', 'steamStop', 'steamStopMedal', 'steamRandomFightMedal',
  'steamMainGunMedal', 'steamBootcampMedal', 'steamBriefingMedal',
- 'steamDoPotapovQuestMedal', 'steamDoAllBranchPotapovQuestMedal', 'steamDoOperationMedal',
+ 'steamDoPersonalMissionQuestMedal', 'steamDoAllBranchPersonalMissionQuestMedal',
+ 'steamDoOperationMedal',
  'steamGetTankLevel5Medal', 'steamGetTankLevel6Medal', 'steamGetTankLevel7Medal',
  'steamGetTankLevel8Medal', 'steamGetTankLevel9Medal', 'steamGetTankLevel10Medal',
  'steamShellTypeMedal', 'steamEquipTypeMedal', 'steamLastHeroMedal', 'steamShootToKillMedal',
@@ -366,7 +367,8 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'BattlePassCommonPr_16_Marathon',
  'hb25MedalOffence', 'hb25MedalDefence', 'support_2025', 'BattlePassCommonPr_17',
  'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend', 'BirthdayPr_2025', 'wt2025',
- 'comp7_5_1', 'comp7_5_1_champion', 'comp7_5_1_legend', 'BattlePassCommonPr_18']
+ 'comp7_5_1', 'comp7_5_1_champion', 'comp7_5_1_legend', 'BattlePassCommonPr_18',
+ 'portal2025Medal_1', 'portal2025Medal_2', '15YearsOfService']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -435,7 +437,7 @@ _singleAchievementsPopUps = [
  'hb25MedalOffence', 'hb25MedalDefence', 'support_2025', 'BattlePassCommonPr_17',
  'BattlePassCommonPr_16_Marathon', 'comp7_4_4', 'comp7_4_4_champion', 'comp7_4_4_legend',
  'BirthdayPr_2025', 'wt2025', 'comp7_5_1', 'comp7_5_1_champion', 'comp7_5_1_legend',
- 'BattlePassCommonPr_18']
+ 'BattlePassCommonPr_18', 'portal2025Medal_1', 'portal2025Medal_2', '15YearsOfService']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

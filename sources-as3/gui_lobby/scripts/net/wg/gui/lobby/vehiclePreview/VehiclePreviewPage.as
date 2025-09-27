@@ -22,6 +22,7 @@ package net.wg.gui.lobby.vehiclePreview
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanel;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelEarlyAccess;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelOfferGift;
+   import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelStatTrack;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelTradeIn;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelWell;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelWotPlus;
@@ -407,6 +408,10 @@ package net.wg.gui.lobby.vehiclePreview
          if(this.bottomPanel is VPBottomPanelEarlyAccess)
          {
             return VEHPREVIEW_CONSTANTS.BOTTOM_PANEL_EARLY_ACCESS_PY_ALIAS;
+         }
+         if(this.bottomPanel is VPBottomPanelStatTrack)
+         {
+            return VEHPREVIEW_CONSTANTS.BOTTOM_PANEL_STAT_TRACK_LINKAGE;
          }
          return null;
       }

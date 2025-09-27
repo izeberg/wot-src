@@ -24,7 +24,8 @@ from gui.server_events.events_helpers import getIdxFromQuestID
 from gui.server_events.recruit_helper import getSourceIdFromQuest
 from gui.shared.formatters import text_styles
 from gui.shared.money import Currency
-from helpers import dependency, time_utils
+from helpers import dependency, int2roman
+from helpers import time_utils
 from messenger import g_settings
 from messenger.formatters import TimeFormatter
 from messenger.formatters.service_channel import WaitItemsSyncFormatter, QuestAchievesFormatter, RankedQuestAchievesFormatter, ServiceChannelFormatter, PersonalMissionsQuestAchievesFormatter, BattlePassQuestAchievesFormatter, InvoiceReceivedFormatter, BattleMattersQuestAchievesFormatter, CollectionsFormatter, Comp7QualificationRewardsFormatter
@@ -36,7 +37,6 @@ from skeletons.gui.game_control import ICollectionsSystemController, IRankedBatt
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
 from skeletons.gui.system_messages import ISystemMessages
-from gui.wt_event.wt_event_helpers import isWTEventProgressionQuest
 _logger = logging.getLogger(__name__)
 
 class ITokenQuestsSubFormatter(object):
@@ -214,7 +214,7 @@ class RankedSeasonTokenQuestFormatter(RankedTokenQuestFormatter):
         customizations = data.get('customizations', [])
         for customizationItem in customizations:
             customizationType = customizationItem['custType']
-            _, itemUserName, _ = getCustomizationItemData(customizationItem['id'], customizationType)
+            _, itemUserName = getCustomizationItemData(customizationItem['id'], customizationType)
             if customizationType == 'style':
                 result.append(itemUserName)
 
@@ -381,9 +381,9 @@ class PersonalMissionsTokenQuestsFormatter(AsyncTokenQuestsSubFormatter):
             completedQuestIDs = self.getQuestOfThisGroup(dataQuestIDs)
             pmQuestsIDs = set(qID for qID in completedQuestIDs if personal_missions.g_cache.isPersonalMission(qID))
             rewards = getRewardsForQuests(message, completedQuestIDs)
-            potapovQuestID = data.get('potapovQuestID', None)
-            if potapovQuestID is not None:
-                rewards.update({'potapovQuestID': potapovQuestID})
+            pmQuestID = data.get('pmQuestID', None)
+            if pmQuestID is not None:
+                rewards.update({'pmQuestID': pmQuestID})
             rewards['popUpRecords'] = self.getPopUps(message)
             specialMessage = self.__formatSpecialMissions(completedQuestIDs, pmQuestsIDs, message, rewards)
             fmt = self._achievesFormatter.formatQuestAchieves(rewards, asBattleFormatter=False, processCustomizations=not specialMessage)
@@ -598,6 +598,7 @@ class BattleMattersAwardsFormatterBase(ServiceChannelFormatter, TokenQuestsSubFo
     def __buildMessage(self, questID, message):
         data = message.data or {}
         isWithButton = self._achievesFormatter.isWithSelectableReward(data)
+        rewardToken = first([ k for k in data.get('tokens', {}) if self.__battleMattersController.isDelayedRewardToken(k) ])
         rewards = data.get('detailedRewards', {}).get(questID, {})
         fmt = self._achievesFormatter.formatQuestAchieves(rewards, asBattleFormatter=False)
         if fmt is not None:
@@ -610,10 +611,15 @@ class BattleMattersAwardsFormatterBase(ServiceChannelFormatter, TokenQuestsSubFo
                 quest = self.__battleMattersController.getQuestByIdx(questIdx - 1)
                 awardText = R.strings.messenger.serviceChannelMessages.battleMatters.awards
                 body = backport.text(awardText.body(), questIdx=text_styles.stats(backport.text(awardText.questIdx(), questIdx=str(questIdx))), questName=text_styles.stats(quest.getUserName() if quest else ''))
-            templateParams = {'achieves': fmt or '', 'body': body}
+            templateParams = {'achieves': fmt or '', 
+               'body': body}
+            if isWithButton:
+                level = self.__battleMattersController.getDelayedRewardVehiclesLevel(rewardToken)
+                footer = backport.text(R.strings.messenger.serviceChannelMessages.battleMatters.awards.footer(), level=int2roman(int(level)))
+                templateParams['footer'] = footer
             template = self.__MESSAGE_TEMPLATE.format(self.__TOKEN_TYPE if isWithButton else self.__AWARD_TYPE)
             settings = self._getGuiSettings(message, template)
-            formatted = g_settings.msgTemplates.format(template, templateParams)
+            formatted = g_settings.msgTemplates.format(template, ctx=templateParams, data={'savedData': {'rewardToken': rewardToken}})
             return MessageData(formatted, settings)
         else:
             return
@@ -1016,10 +1022,3 @@ class ParagonsTokenQuestsSubformatter(SyncTokenQuestsSubFormatter):
     @classmethod
     def _isQuestOfThisGroup(cls, questID):
         return isParagonsQuestID(questID)
-
-
-class WtEventProgressionQuestFormatter(WaitItemsSyncFormatter, TokenQuestsSubFormatter):
-
-    @classmethod
-    def _isQuestOfThisGroup(cls, questID):
-        return isWTEventProgressionQuest(questID)

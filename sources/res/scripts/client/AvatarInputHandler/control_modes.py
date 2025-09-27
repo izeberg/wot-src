@@ -1,7 +1,7 @@
 import logging, time, weakref
 from collections import namedtuple
 from functools import partial
-import BigWorld, GUI, Keys, Math, ResMgr, BattleReplay, CommandMapping, SoundGroups, TriggersManager, VideoCamera, cameras, constants, math_utils
+import BigWorld, GUI, Keys, Math, ResMgr, BattleReplay, CommandMapping, SoundGroups, TriggersManager, VideoCamera, ATGMCamera, cameras, constants, math_utils
 from AimingSystems import getShotTargetInfo
 from AimingSystems.magnetic_aim import magneticAimProcessor, MagneticAimSettings
 from AvatarInputHandler import AimingSystems, aih_global_binding, gun_marker_ctrl
@@ -306,6 +306,12 @@ class VideoCameraControlMode(_GunControlMode):
 
     def _createCamera(self, cameraDataSection):
         self._cam = VideoCamera.VideoCamera(cameraDataSection)
+
+
+class ATGMCameraControlMode(VideoCameraControlMode):
+
+    def _createCamera(self, cameraDataSection):
+        self._cam = ATGMCamera.ATGMCamera(cameraDataSection)
 
 
 class DebugControlMode(IControlMode):

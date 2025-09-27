@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod4/Hull</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.665143 -0.780744 -4.129196</min>
+		<max>1.664829 0.787529 3.441820</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod3/Hull</nodefullVisual>
+</root>

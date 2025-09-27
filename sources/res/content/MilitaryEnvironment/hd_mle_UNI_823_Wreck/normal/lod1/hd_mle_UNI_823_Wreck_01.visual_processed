@@ -25,18 +25,6 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						diffuseMap
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_823_Wreck/hd_mle_UNI_823_Wreck_Details_01_AM.dds</Texture>
 					</property>
@@ -63,31 +51,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile2Tint
-						<Vector4>
-							0.995 0.995 0.995 1
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						g_tile1Tint
-						<Vector4>1 1 1 1</Vector4>
-					</property>
-					<property>
-						g_tile0Tint
-						<Vector4>1 1 1 1</Vector4>
+						<Vector4>0.995000 0.995000 0.995000 1.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -156,23 +121,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.05 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.050000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -241,23 +191,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.05 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.050000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -326,23 +261,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>112</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.05 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.050000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -411,23 +331,8 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>108</materialKind>
 					<property>
-						alphaReference
-						<Int>0</Int>
-					</property>
-					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						g_tile1Tint
-						<Vector4>
-							0.8 0.8 0.8 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.800000 0.800000 0.800000 1.000000</Vector4>
 					</property>
 					<property>
 						g_atlasSizes
@@ -443,10 +348,7 @@
 					</property>
 					<property>
 						g_fakeShadowsAndDetailParams
-						<Vector4>
-							0.05 0.5 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.050000 0.500000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_enableTerrainBlending

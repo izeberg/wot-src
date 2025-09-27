@@ -158,13 +158,14 @@ msgid "invite/tooltip/noVehicles"
 msgstr "Патрэбная прынамсі адна машына ў Гаражы."
 
 msgid "mapsView/carousel/title/hidden"
-msgstr "Карты Аркады"
+msgstr "Карты Полевых испытаний"
 
 msgid "mapsView/carousel/title/visible"
 msgstr "Выберыце мапу"
 
 msgid "mapsView/infoBlock/firstBlock/empty"
-msgstr "На выбранной карте какие-либо модификаторы Аркады не действуют."
+msgstr ""
+"На выбранной карте какие-либо модификаторы Полевых испытаний не действуют."
 
 msgid "mapsView/infoBlock/firstBlock/title"
 msgstr "Дзейныя мадыфікатары на мапе:"
@@ -175,7 +176,7 @@ msgstr ""
 "пра ўсе асаблівасці."
 
 msgid "mapsView/infoBlock/secondBlock/empty"
-msgstr "На выбранной карте нет особых точек интереса Аркады."
+msgstr "На выбранной карте нет особых точек интереса Полевых испытаний."
 
 msgid "mapsView/infoBlock/secondBlock/repairZone/description"
 msgstr ""
@@ -187,7 +188,7 @@ msgid "mapsView/infoBlock/secondBlock/repairZone/title"
 msgstr "— Рамонтная зона"
 
 msgid "mapsView/title"
-msgstr "ОСОБЕННОСТИ АРКАДЫ"
+msgstr "ОСОБЕННОСТИ Полевых испытаний"
 
 msgid "metaProgressionTooltip/header/completedFinal"
 msgstr "УСЕ ЭТАПЫ ПРОЙДЗЕНЫЯ"
@@ -323,92 +324,87 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
-msgid "modes/slowAmmo137/capsUserName"
-msgstr "ТОРПЕДНЫЙ УДАР"
+msgid "modes/fep138/capsUserName"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
 
-msgid "modes/slowAmmo137/detailedUserName"
+msgid "modes/fep138/detailedUserName"
 msgstr "%(modeName)s"
 
-msgid "modes/slowAmmo137/metaProgressionTooltip/header/active"
-msgstr "Задача Аркады. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
+msgid "modes/fep138/metaProgressionTooltip/header/active"
+msgstr ""
+"Задача полевых испытаний. Этап: %(done)s{par_Open}/%(total)s{par_Close}"
 
-msgid "modes/slowAmmo137/metaProgressionTooltip/reward/tip"
-msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
+msgid "modes/fep138/metaProgressionTooltip/subheader"
+msgstr "Задача полевых испытаний."
 
-msgid "modes/slowAmmo137/metaProgressionTooltip/subheader"
-msgstr "Задача Аркады"
+msgid "modes/fep138/metaProgressionTooltip/timer/completedResettable"
+msgstr "до новой задачи Полевых испытаний"
 
-msgid "modes/slowAmmo137/metaProgressionTooltip/timer/completedResettable"
-msgstr "да новай задачы Аркады"
+msgid "modes/fep138/modeSubSelector/progression/info"
+msgstr "?empty?"
 
-msgid "modes/slowAmmo137/modeSubSelector/progression/info"
-msgstr "Прагрэс выканання ўлічваецца ў любым падрэжыме Аркады."
+msgid "modes/fep138/modeSubSelector/progression/timer"
+msgstr "до новой задачи Полевых испытаний"
 
-msgid "modes/slowAmmo137/modeSubSelector/progression/timer"
-msgstr "да новай задачы Аркады"
-
-msgid "modes/slowAmmo137/mode_selector/battleCondition"
+msgid "modes/fep138/mode_selector/battleCondition"
 msgstr "15x15"
 
-msgid "modes/slowAmmo137/mode_selector/description"
-msgstr "Экспериментальные бои с измененными параметрами снарядов."
+msgid "modes/fep138/mode_selector/description"
+msgstr "Ограничение специальных снарядов."
 
-msgid "modes/slowAmmo137/mode_selector/levelCondition"
-msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
+msgid "modes/fep138/mode_selector/levelCondition"
+msgstr "?empty?"
 
-msgid "modes/slowAmmo137/mode_selector/progression/resettable"
-msgstr "да новай задачы Аркады"
+msgid "modes/fep138/mode_selector/progression/resettable"
+msgstr "До новой задачи Полевых испытаний"
 
-msgid "modes/slowAmmo137/notification/finishSubModes/withProgression"
-msgstr "Падрэжым %(subModeName)s завершаны: прагрэсія скінутая."
+msgid "modes/fep138/notification/finishSubModes/withProgression"
+msgstr "Режим %(subModeName)s завершён: прогрессия сброшена."
 
-msgid "modes/slowAmmo137/notification/finishSubModes/withoutProgression"
-msgstr "Падрэжым %(subModeName)s завершаны."
+msgid "modes/fep138/notification/finishSubModes/withoutProgression"
+msgstr "Режим %(subModeName)s завершён."
 
-msgid "modes/slowAmmo137/notification/newSubModes/withProgression"
-msgstr "Даступныя новыя ўзнагароды і падрэжым %(subModeName)s."
+msgid "modes/fep138/notification/newSubModes/withProgression"
+msgstr "Доступны новые награды и режим %(subModeName)s."
 
-msgid "modes/slowAmmo137/notification/newSubModes/withoutProgression"
-msgstr "Даступны новы падрэжым — %(subModeName)s."
+msgid "modes/fep138/notification/newSubModes/withoutProgression"
+msgstr "Доступен новый режим — %(subModeName)s."
 
-msgid "modes/slowAmmo137/notification/switchOffSubModes"
-msgstr "Падрэжым %(subModeName)s недаступны: вядуцца тэхнічныя работы."
+msgid "modes/fep138/notification/switchOffSubModes"
+msgstr "Режим %(subModeName)s недоступен: ведутся технические работы."
 
-msgid "modes/slowAmmo137/notification/switchOnSubModes"
-msgstr "Падрэжым %(subModeName)s зноў даступны."
+msgid "modes/fep138/notification/switchOnSubModes"
+msgstr "Режим %(subModeName)s снова доступен."
 
-msgid "modes/slowAmmo137/progression/congratulation/descr"
-msgstr "Вы прайшлі ўсе этапы Аркады"
+msgid "modes/fep138/progression/congratulation/descr"
+msgstr "Вы выполнили все задачи Полевых испытаний"
 
-msgid "modes/slowAmmo137/progression/info"
-msgstr "Задачу можна выконваць у любым падрэжыме Аркады."
+msgid "modes/fep138/progression/title"
+msgstr "ЗАДАЧА ПОЛЕВЫХ ИСПЫТАНИЙ"
 
-msgid "modes/slowAmmo137/progression/title"
-msgstr "ЗАДАЧА АРКАДЫ"
+msgid "modes/fep138/scheduler/notification/available"
+msgstr "Бои режима %(subModeName)s снова доступны."
 
-msgid "modes/slowAmmo137/scheduler/notification/available"
-msgstr "Баі падрэжыму %(subModeName)s зноў даступныя."
-
-msgid "modes/slowAmmo137/scheduler/notification/available/title"
+msgid "modes/fep138/scheduler/notification/available/title"
 msgstr "Рэжым спынення агню"
 
-msgid "modes/slowAmmo137/scheduler/notification/primeTime"
+msgid "modes/fep138/scheduler/notification/primeTime"
 msgstr ""
-"Баі падрэжыму %(subModeName)s недаступныя да заканчэння рэжыму спынення "
-"агню."
+"Бои режима %(subModeName)s недоступны до окончания режима прекращения огня."
 
-msgid "modes/slowAmmo137/scheduler/notification/primeTime/title"
+msgid "modes/fep138/scheduler/notification/primeTime/title"
 msgstr "Рэжым спынення агню"
 
-msgid "modes/slowAmmo137/tooltip/filter/body"
+msgid "modes/fep138/tooltip/filter/body"
 msgstr ""
-"Включить/отключить отображение подходящей техники для режима «Аркада»."
+"Включить/отключить отображение подходящей техники для режима «Полевые "
+"испытания»."
 
-msgid "modes/slowAmmo137/tooltip/filter/header"
-msgstr "Аркадная тэхніка"
+msgid "modes/fep138/tooltip/filter/header"
+msgstr "Техника режима «Полевые испытания»"
 
-msgid "modes/slowAmmo137/userName"
-msgstr "Аркада: Торпедный удар"
+msgid "modes/fep138/userName"
+msgstr "Полевые испытания"
 
 msgid "modes/undefined/capsUserName"
 msgstr "АРКАДА"
@@ -489,7 +485,8 @@ msgstr "Рэжым спынення агню"
 
 msgid "modes/undefined/tooltip/filter/body"
 msgstr ""
-"Включить/отключить отображение подходящей техники для режима «Аркада»."
+"Включить/отключить отображение подходящей техники для режима «Полевые "
+"испытания»."
 
 msgid "modes/undefined/tooltip/filter/header"
 msgstr "Аркадная тэхніка"
@@ -501,12 +498,12 @@ msgid "modifiersPanel/subtitle"
 msgstr "Падрабязней"
 
 msgid "modifiersPanel/title"
-msgstr "Особенности Аркады"
+msgstr "Особенности Полевых испытаний"
 
 msgid "modifiersPanel/tooltipBody"
 msgstr ""
 "Нажмите, чтобы узнать подробнее об особенностях игры на картах режима "
-"«Аркада»."
+"«Полевые испытания»."
 
 msgid "navigationButton/goTo/maps_view"
 msgstr "Мапы Аркады"
@@ -550,7 +547,7 @@ msgid "notification/newSubModes/withoutProgression"
 msgstr "Даступныя новыя падрэжымы: %(subModesNames)s."
 
 msgid "notification/progressionComplete"
-msgstr "Вы выполнили все доступные задачи Аркады. Получена награда:"
+msgstr "Вы выполнили все доступные задачи %(modeName)s. Получена награда:"
 
 msgid "notification/progressionComplete/resetLessDay"
 msgstr ""
@@ -563,7 +560,7 @@ msgstr ""
 "выканаць задачы яшчэ раз."
 
 msgid "notification/progressionStageComplete"
-msgstr "Вы выполнили задач Аркады: %(counter)s. Получена награда:"
+msgstr "Вы выполнили задач %(modeName)s: %(counter)s. Получена награда:"
 
 msgid "notification/subModesSeparator"
 msgstr ", "
@@ -774,55 +771,55 @@ msgstr "?empty?"
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
 
-msgid "sub_modes/slowAmmo137/capsUserName"
-msgstr "АРКАДА: ТОРПЕДНЫЙ УДАР"
+msgid "sub_modes/fep138/capsUserName"
+msgstr "ПОЛЕВЫЕ ИСПЫТАНИЯ"
 
-msgid "sub_modes/slowAmmo137/detailsHelp/page1/description"
+msgid "sub_modes/fep138/detailsHelp/page1/description"
 msgstr ""
-"Перемещайтесь! Несмотря на сниженные характеристики двигателей, от медленных"
-" снарядов всё ещё довольно легко уклоняться даже на тяжёлом танке. Стреляйте"
-" на упреждение, постоянно оценивайте своё текущее положение и помните: "
-"близкая дистанция — это и преимущество, и риск."
+"Снаряды получили параметр массы, и теперь ваш боекомплект — это не просто "
+"арсенал, а стратегический выбор. Планируйте с умом: баланс между мощью и "
+"количеством может решить исход боя."
 
-msgid "sub_modes/slowAmmo137/detailsHelp/page1/title"
-msgstr "Торпедный удар"
+msgid "sub_modes/fep138/detailsHelp/page1/title"
+msgstr "Вес имеет значение"
 
-msgid "sub_modes/slowAmmo137/detailsHelpHint/description"
+msgid "sub_modes/fep138/detailsHelpHint/description"
 msgstr "для знакомства с особенностями режима"
 
-msgid "sub_modes/slowAmmo137/detailsHelpHint/press"
+msgid "sub_modes/fep138/detailsHelpHint/press"
 msgstr "Нажмите"
 
-msgid "sub_modes/slowAmmo137/detailsHelpTitle"
-msgstr "Аркада: Торпедный удар"
+msgid "sub_modes/fep138/detailsHelpTitle"
+msgstr "Полевые испытания"
 
-msgid "sub_modes/slowAmmo137/subModeCard/battleCondition"
-msgstr "?empty?"
+msgid "sub_modes/fep138/subModeCard/battleCondition"
+msgstr "15x15"
 
-msgid "sub_modes/slowAmmo137/subModeCard/description"
-msgstr "Аркада: Торпедный удар"
-
-msgid "sub_modes/slowAmmo137/subModeCard/levelCondition"
-msgstr "?empty?"
-
-msgid "sub_modes/slowAmmo137/subModeCard/title"
-msgstr "Аркада: Торпедный удар"
-
-msgid "sub_modes/slowAmmo137/tips/tip1/description"
+msgid "sub_modes/fep138/subModeCard/description"
 msgstr ""
-"Перемещайтесь! Несмотря на сниженные характеристики двигателей, от медленных"
-" снарядов всё ещё довольно легко уклоняться даже на тяжёлом танке. Стреляйте"
-" на упреждение, постоянно оценивайте своё текущее положение и помните: "
-"близкая дистанция — это и преимущество, и риск."
+"Стандартные бои без модификаторов\n"
+"и учёта в статистику"
 
-msgid "sub_modes/slowAmmo137/tips/tip1/title"
-msgstr "Торпедный удар"
+msgid "sub_modes/fep138/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} %(levels)s&nbsp;узроўні"
 
-msgid "sub_modes/slowAmmo137/userName"
-msgstr "Торпедный удар"
+msgid "sub_modes/fep138/subModeCard/title"
+msgstr "Полевые испытания"
 
-msgid "sub_modes/slowAmmo137/userName/quoted"
-msgstr "«Торпедный удар»"
+msgid "sub_modes/fep138/tips/tip1/description"
+msgstr ""
+"Снаряды получили параметр массы, и теперь ваш боекомплект — это не просто "
+"арсенал, а стратегический выбор. Планируйте с умом: баланс между мощью и "
+"количеством может решить исход боя."
+
+msgid "sub_modes/fep138/tips/tip1/title"
+msgstr "Вес имеет значение"
+
+msgid "sub_modes/fep138/userName"
+msgstr "Полевые испытания"
+
+msgid "sub_modes/fep138/userName/quoted"
+msgstr "Полевые испытания"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

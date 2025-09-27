@@ -328,8 +328,8 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>lid_BlendBone</node>
 		<geometry>
-			<vertices>rtsdf_shape.vertices</vertices>
-			<primitive>rtsdf_shape.indices</primitive>
+			<vertices>teleport_anim_Shape.vertices</vertices>
+			<primitive>teleport_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -365,8 +365,8 @@
 		<node>Leg_rt_front04_jnt_BlendBone</node>
 		<node>Leg_rt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>sdfs_shape.vertices</vertices>
-			<primitive>sdfs_shape.indices</primitive>
+			<vertices>leg_anim_04_Shape.vertices</vertices>
+			<primitive>leg_anim_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -402,8 +402,8 @@
 		<node>Leg_rt_back04_jnt_BlendBone</node>
 		<node>Leg_rt_back03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>gdfs_shape.vertices</vertices>
-			<primitive>gdfs_shape.indices</primitive>
+			<vertices>leg_anim_03_Shape.vertices</vertices>
+			<primitive>leg_anim_03_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -439,8 +439,8 @@
 		<node>leg_lt_front04_jnt_BlendBone</node>
 		<node>leg_lt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>asqt_shape.vertices</vertices>
-			<primitive>asqt_shape.indices</primitive>
+			<vertices>leg_anim_02_Shape.vertices</vertices>
+			<primitive>leg_anim_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -476,8 +476,8 @@
 		<node>Leg_lt_back04_jnt_BlendBone</node>
 		<node>Leg_lt_back03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>asf_shape.vertices</vertices>
-			<primitive>asf_shape.indices</primitive>
+			<vertices>leg_anim_01_Shape.vertices</vertices>
+			<primitive>leg_anim_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -508,9 +508,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-2.052703 -1.141893 -2.036822</min>
-		<max>2.086697 0.803666 3.489422</max>
+		<min>-2.052701 -1.141893 -2.036823</min>
+		<max>2.086697 0.803666 3.489417</max>
 	</boundingBox>
-	<geometrySize>188912</geometrySize>
-	<minUVDensity>0.009836</minUVDensity>
+	<geometrySize>188552</geometrySize>
+	<minUVDensity>0.033840</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.297471 -0.033549 -1.349704</min>
+		<max>1.299548 4.356175 1.396495</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/russian/R226_Object_757A/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R226_Object_757A/normal/lod0/Turret_01</nodefullVisual>
+</root>

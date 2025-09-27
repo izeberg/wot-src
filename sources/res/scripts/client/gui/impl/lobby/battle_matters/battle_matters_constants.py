@@ -1,5 +1,5 @@
 from enum import Enum
-CARDS_CONFIG_XML_PATH = 'gui/battle_matters_cards.xml'
+CARDS_CONFIG_XML_PATH_PATTERN = 'gui/battle_matters_cards_%s.xml'
 
 class QuestCardSections(Enum):
     ID = 'id'

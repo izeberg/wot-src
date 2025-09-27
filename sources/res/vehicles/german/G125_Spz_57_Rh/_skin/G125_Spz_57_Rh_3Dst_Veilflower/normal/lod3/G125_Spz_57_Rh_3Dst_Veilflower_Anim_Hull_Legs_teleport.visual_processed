@@ -328,8 +328,8 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>lid_BlendBone</node>
 		<geometry>
-			<vertices>weryhrt.vertices</vertices>
-			<primitive>weryhrt.indices</primitive>
+			<vertices>teleport_anim_Shape.vertices</vertices>
+			<primitive>teleport_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -362,11 +362,11 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Leg_rt_front01_jnt_BlendBone</node>
 		<node>Leg_rt_front02_jnt_BlendBone</node>
-		<node>Leg_rt_front03_jnt_BlendBone</node>
 		<node>Leg_rt_front04_jnt_BlendBone</node>
+		<node>Leg_rt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>nxcvx.vertices</vertices>
-			<primitive>nxcvx.indices</primitive>
+			<vertices>leg_anim_04_Shape.vertices</vertices>
+			<primitive>leg_anim_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -391,7 +391,7 @@
 						<Texture>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/Spz_57_Rh_3Dst_Veilflower_equipment_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.672764 -0.346199 -2.725268</groupOrigin>
+				<groupOrigin>1.672764 -0.294713 -2.725268</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -402,8 +402,8 @@
 		<node>Leg_rt_back03_jnt_BlendBone</node>
 		<node>Leg_rt_back04_jnt_BlendBone</node>
 		<geometry>
-			<vertices>ghf.vertices</vertices>
-			<primitive>ghf.indices</primitive>
+			<vertices>leg_anim_03_Shape.vertices</vertices>
+			<primitive>leg_anim_03_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -437,9 +437,10 @@
 		<node>leg_lt_front01_jnt_BlendBone</node>
 		<node>leg_lt_front02_jnt_BlendBone</node>
 		<node>leg_lt_front04_jnt_BlendBone</node>
+		<node>leg_lt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>rtyt.vertices</vertices>
-			<primitive>rtyt.indices</primitive>
+			<vertices>leg_anim_02_Shape.vertices</vertices>
+			<primitive>leg_anim_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -464,7 +465,7 @@
 						<Texture>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/Spz_57_Rh_3Dst_Veilflower_equipment_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.552237 -0.334133 -2.955876</groupOrigin>
+				<groupOrigin>-1.552181 -0.320483 -2.949878</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -472,11 +473,11 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Leg_lt_back01_jnt_BlendBone</node>
 		<node>Leg_lt_back02_jnt_BlendBone</node>
-		<node>Leg_lt_back03_jnt_BlendBone</node>
 		<node>Leg_lt_back04_jnt_BlendBone</node>
+		<node>Leg_lt_back03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>adfg.vertices</vertices>
-			<primitive>adfg.indices</primitive>
+			<vertices>leg_anim_01_Shape.vertices</vertices>
+			<primitive>leg_anim_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -507,9 +508,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-1.970991 -1.143890 -2.031576</min>
-		<max>2.076597 0.805417 3.497942</max>
+		<min>-1.970991 -1.143329 -2.031577</min>
+		<max>2.076597 0.805417 3.497589</max>
 	</boundingBox>
-	<geometrySize>18332</geometrySize>
-	<minUVDensity>0.005022</minUVDensity>
+	<geometrySize>18092</geometrySize>
+	<minUVDensity>0.005830</minUVDensity>
 </root>

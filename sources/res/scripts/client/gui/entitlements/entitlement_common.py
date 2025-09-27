@@ -4,7 +4,6 @@ from skeletons.gui.game_control import IGuiLootBoxesController, IParagonsControl
 if typing.TYPE_CHECKING:
     from typing import FrozenSet, Generator, Type
     from skeletons.gui.game_control import IEntitlementsConsumer
-LOOT_BOX_COUNTER_ENTITLEMENT = 'loot_box_counter'
 ENTITLEMENTS = ()
 _CONSUMERS = frozenset((
  IGuiLootBoxesController,

@@ -140,12 +140,12 @@ package net.wg.gui.battle.views.ribbonsPanel
          }
       }
       
-      public function setFreeWorkingHeight(param1:int) : void
+      override public function setFreeWorkingHeight(param1:int) : void
       {
          this._calculatedMaxCountRenderers = Math.min(param1 / RibbonCtrl.ITEM_HEIGHT ^ 0,MAX_COUNT_RIBBONS);
       }
       
-      public function setSettings(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : void
+      override public function setSettings(param1:Boolean, param2:Boolean, param3:Boolean, param4:Boolean) : void
       {
          if(param1 != this._isVisible)
          {
@@ -157,7 +157,7 @@ package net.wg.gui.battle.views.ribbonsPanel
          dispatchEvent(new Event(Event.CHANGE));
       }
       
-      public function shiftItems() : void
+      override public function shiftItems() : void
       {
          var _loc1_:RibbonCtrl = null;
          var _loc2_:int = this._countVisibleItems;
@@ -317,12 +317,12 @@ package net.wg.gui.battle.views.ribbonsPanel
          return param1 > -1 ? this._bonusLabels[param1] : null;
       }
       
-      public function get freeHeightForRenderers() : int
+      override public function get freeHeightForRenderers() : int
       {
          return this._calculatedMaxCountRenderers * RibbonCtrl.ITEM_HEIGHT;
       }
       
-      public function get offsetX() : int
+      override public function get offsetX() : int
       {
          return this._offsetX;
       }

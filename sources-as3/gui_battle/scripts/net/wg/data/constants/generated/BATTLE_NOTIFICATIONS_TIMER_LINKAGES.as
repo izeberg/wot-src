@@ -169,23 +169,19 @@ package net.wg.data.constants.generated
       
       public static const THERMAL_VISION_WARNING:String = "thermalVisionWarningUI";
       
-      public static const WT_TIMER_UI:String = "WtTimerUI";
+      public static const PORTAL_DEATH_ZONE_ICON:String = "PortalDeathZoneIconUI";
       
-      public static const WT_STUN_ICON:String = "secondaryWTStunIconUI";
+      public static const PORTAL_RATTE_AURA_ICON:String = "PortalRatteAuraIconUI";
       
-      public static const WT_STUN_AREA_ICON:String = "secondaryWTStunAreaIconUI";
+      public static const PORTAL_RATTE_AURA_SMALL_ICON:String = "PortalRatteAuraSmallIconUI";
       
-      public static const WT_HYPERION_WARNING_ICON:String = "destroyTimerWtHyperionUI";
+      public static const PORTAL_TELEPORT_HOOK_ICON:String = "PortalTeleportHookIconUI";
       
-      public static const WT_HYPERION_WARNING_2025_ICON:String = "destroyTimerWtHyperion2025UI";
+      public static const PORTAL_TELEPORT_HORSE_ICON:String = "PortalTeleportHorseIconUI";
       
-      public static const WT_BOMB_CAPTURE:String = "WtBombCaptureUI";
+      public static const PORTAL_TELEPORT_LOGO_ICON:String = "PortalTeleportLogoIconUI";
       
-      public static const WT_BOMB_DEPLOY:String = "WtBombDeployUI";
-      
-      public static const WT_BOMB_ABSORB:String = "WtBombAbsorbUI";
-      
-      public static const WT_BOMB_CARRY:String = "WtBombCarryUI";
+      public static const PORTAL_TELEPORT_SATELLITE_ICON:String = "PortalTeleportSatelliteIconUI";
        
       
       public function BATTLE_NOTIFICATIONS_TIMER_LINKAGES()

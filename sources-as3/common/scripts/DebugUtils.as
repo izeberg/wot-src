@@ -3,7 +3,7 @@ package
    public class DebugUtils
    {
       
-      private static const CPP_DO_LOG_METHOD_NAME:String = "WG.doLog";
+      private static const CPP_DO_LOG_METHOD_NAME:String = "doLog";
       
       private static const SEVERITY_TRACE:Number = 65536;
       

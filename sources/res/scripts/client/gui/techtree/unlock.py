@@ -79,41 +79,48 @@ class UnlockItemValidator(proc_plugs.SyncValidator):
     def _validate(self):
         itemCD, itemTypeID, parentCD, unlockIdx = self.__unlockCtx[:]
         itemGetter = self.itemsCache.items.getItemByCD
+        xpCost = self.__costCtx['xpCost']
         vehicle = itemGetter(parentCD)
         item = itemGetter(itemCD)
-        xpCost = self.__costCtx['xpCost']
-        if vehicle.itemTypeID != GUI_ITEM_TYPE.VEHICLE:
-            LOG_ERROR('Int compact descriptor is not for vehicle', parentCD)
+        if vehicle is None:
+            LOG_ERROR('Vehicle is invalid', self.__unlockCtx)
             return proc_plugs.makeError('vehicle_invalid')
-        if not vehicle.isUnlocked:
-            LOG_ERROR('Vehicle is not unlocked', itemCD, parentCD)
-            return proc_plugs.makeError('vehicle_locked')
-        if item.isUnlocked:
-            return proc_plugs.makeError('already_unlocked')
-        stats = self.itemsCache.items.stats
-        unlockStats = UnlockStats(stats.unlocks, stats.vehiclesXPs, stats.freeXP)
-        if itemTypeID == GUI_ITEM_TYPE.VEHICLE:
-            result, _ = g_techTreeDP.isNext2Unlock(itemCD, **unlockStats._asdict())
-            if not result:
-                LOG_ERROR('Required items are not unlocked', self.__unlockCtx)
-                return proc_plugs.makeError('required_locked')
         else:
-            _xpCost, _itemCD, required = vehicle.getUnlocksDescr(unlockIdx)
-            if _itemCD != itemCD:
+            if item is None:
                 LOG_ERROR('Item is invalid', self.__unlockCtx)
                 return proc_plugs.makeError('item_invalid')
-            if _xpCost != xpCost:
-                LOG_ERROR('XP cost is invalid', self.__unlockCtx)
-                return proc_plugs.makeError('xp_cost_invalid')
-            if not unlockStats.isSeqUnlocked(required):
-                LOG_ERROR('Required items are not unlocked', self.__unlockCtx)
-                return proc_plugs.makeError('required_locked')
-        if unlockStats.getVehTotalXP(parentCD) < xpCost:
-            LOG_ERROR('XP not enough for unlock', self.__unlockCtx)
-            return proc_plugs.makeError()
-        if RequestState.inProcess('unlock'):
-            return proc_plugs.makeError('in_processing')
-        return proc_plugs.makeSuccess()
+            if vehicle.itemTypeID != GUI_ITEM_TYPE.VEHICLE:
+                LOG_ERROR('Int compact descriptor is not for vehicle', parentCD)
+                return proc_plugs.makeError('vehicle_invalid')
+            if not vehicle.isUnlocked:
+                LOG_ERROR('Vehicle is not unlocked', itemCD, parentCD)
+                return proc_plugs.makeError('vehicle_locked')
+            if item.isUnlocked:
+                return proc_plugs.makeError('already_unlocked')
+            stats = self.itemsCache.items.stats
+            unlockStats = UnlockStats(stats.unlocks, stats.vehiclesXPs, stats.freeXP)
+            if itemTypeID == GUI_ITEM_TYPE.VEHICLE:
+                result, _ = g_techTreeDP.isNext2Unlock(itemCD, **unlockStats._asdict())
+                if not result:
+                    LOG_ERROR('Required items are not unlocked', self.__unlockCtx)
+                    return proc_plugs.makeError('required_locked')
+            else:
+                _xpCost, _itemCD, required = vehicle.getUnlocksDescr(unlockIdx)
+                if _itemCD != itemCD:
+                    LOG_ERROR('Item is invalid', self.__unlockCtx)
+                    return proc_plugs.makeError('item_invalid')
+                if _xpCost != xpCost:
+                    LOG_ERROR('XP cost is invalid', self.__unlockCtx)
+                    return proc_plugs.makeError('xp_cost_invalid')
+                if not unlockStats.isSeqUnlocked(required):
+                    LOG_ERROR('Required items are not unlocked', self.__unlockCtx)
+                    return proc_plugs.makeError('required_locked')
+            if unlockStats.getVehTotalXP(parentCD) < xpCost:
+                LOG_ERROR('XP not enough for unlock', self.__unlockCtx)
+                return proc_plugs.makeError()
+            if RequestState.inProcess('unlock'):
+                return proc_plugs.makeError('in_processing')
+            return proc_plugs.makeSuccess()
 
 
 class UnlockItemProcessor(Processor):

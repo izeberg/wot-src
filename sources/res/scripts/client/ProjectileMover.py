@@ -66,7 +66,7 @@ class ProjectileMover(object):
 
         return
 
-    def add(self, shotID, effectsDescr, gravity, refStartPoint, refVelocity, startPoint, maxDistance, attackerID=0, tracerCameraPos=Math.Vector3(0, 0, 0)):
+    def add(self, shotID, effectsDescr, acceleration, refStartPoint, refVelocity, startPoint, maxDistance, attackerID=0, tracerCameraPos=Math.Vector3(0, 0, 0)):
         import BattleReplay
         if BattleReplay.g_replayCtrl.isTimeWarpInProgress:
             return
@@ -75,12 +75,12 @@ class ProjectileMover(object):
                 startPoint = refStartPoint
             artID = effectsDescr.get('artilleryID')
             if artID is not None:
-                self.salvo.addProjectile(artID, gravity, refStartPoint, refVelocity)
+                self.salvo.addProjectile(artID, -acceleration.y, refStartPoint, refVelocity)
                 return
             isOwnShoot = attackerID == BigWorld.player().playerVehicleID
-            projectileMotor, collisionTime, _ = self.__ballistics.addProjectile(shotID, gravity, refStartPoint, refVelocity, startPoint, maxDistance, isOwnShoot, attackerID, ownVehicleGunShotPositionGetter(), tracerCameraPos)
+            projectileMotor, collisionTime, _ = self.__ballistics.addProjectile(shotID, acceleration, refStartPoint, refVelocity, startPoint, maxDistance, isOwnShoot, attackerID, ownVehicleGunShotPositionGetter(), tracerCameraPos)
             if self.__debugDrawer is not None:
-                self.__debugDrawer.addProjectile(shotID, attackerID, refStartPoint, refVelocity, Math.Vector3(0.0, -gravity, 0.0), maxDistance, isOwnShoot)
+                self.__debugDrawer.addProjectile(shotID, attackerID, refStartPoint, refVelocity, acceleration, maxDistance, isOwnShoot)
             if projectileMotor is None:
                 return
             projModelName, projModelOwnShotName, projEffects = effectsDescr['projectile']
@@ -109,9 +109,9 @@ class ProjectileMover(object):
                     ribbons = self.ribbonsByAttacker
                     if not ribbons.get(attackerID, None):
                         ribbons[attackerID] = [
-                         BigWorld.FlamethrowerRibbon(BigWorld.player().spaceID, -gravity, maxLifeTime, isOwnShoot, ribbonDescr.id)]
+                         BigWorld.FlamethrowerRibbon(BigWorld.player().spaceID, acceleration.y, maxLifeTime, isOwnShoot, ribbonDescr.id)]
                     elif ribbons[attackerID][(-1)].timeFromLastBullet() > ribbons[attackerID][(-1)].connectionTimeThreshold():
-                        ribbons[attackerID].append(BigWorld.FlamethrowerRibbon(BigWorld.player().spaceID, -gravity, maxLifeTime, isOwnShoot, ribbonDescr.id))
+                        ribbons[attackerID].append(BigWorld.FlamethrowerRibbon(BigWorld.player().spaceID, acceleration.y, maxLifeTime, isOwnShoot, ribbonDescr.id))
                     ribbon = proj['flamethrowerRibbon'] = ribbons[attackerID][(-1)]
                     removalCallback = self.removalCallbacks.pop(ribbon, None)
                     if removalCallback:

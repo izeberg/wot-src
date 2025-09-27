@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G00_Ratte/normal/lod0/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-6.936769 -0.002328 -17.480202</min>
+		<max>6.936769 3.273285 17.828400</max>
+	</visibilityBox>
+	<parent>vehicles/german/G00_Ratte/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

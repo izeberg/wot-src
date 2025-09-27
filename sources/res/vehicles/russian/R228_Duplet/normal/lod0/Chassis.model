@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R228_Duplet/normal/lod1/Chassis</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.608567 -0.000023 -3.221016</min>
+		<max>1.608567 1.035437 3.166345</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R228_Duplet/normal/lod0/Chassis</nodefullVisual>
+</root>

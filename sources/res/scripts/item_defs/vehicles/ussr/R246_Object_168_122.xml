@@ -2711,26 +2711,26 @@
 			<price>70000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<armor_1>160</armor_1>
-				<armor_2>150</armor_2>
-				<armor_3>110</armor_3>
-				<armor_4>60</armor_4>
-				<armor_5>30</armor_5>
-				<armor_6>140</armor_6>
-				<armor_7>150</armor_7>
+				<armor_1>210</armor_1>
+				<armor_2>190</armor_2>
+				<armor_3>160</armor_3>
+				<armor_4>140</armor_4>
+				<armor_5>100</armor_5>
+				<armor_6>170</armor_6>
+				<armor_7>190</armor_7>
 				<armor_8>0</armor_8>
 				<armor_10>30</armor_10>
-				<armor_11>140</armor_11>
-				<armor_12>140</armor_12>
-				<armor_13>180</armor_13>
+				<armor_11>190</armor_11>
+				<armor_12>190</armor_12>
+				<armor_13>210</armor_13>
 				<armor_14>
 					30
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_14>
-				<armor_15>50</armor_15>
-				<armor_16>105</armor_16>
-				<armor_17>105</armor_17>
-				<armor_18>100</armor_18>
+				<armor_15>100</armor_15>
+				<armor_16>150</armor_16>
+				<armor_17>130</armor_17>
+				<armor_18>140</armor_18>
 				<armor_19>100</armor_19>
 				<armor_20>110</armor_20>
 				<armor_21>110</armor_21>
@@ -2759,9 +2759,10 @@
 			<guns>
 				<_122mm_M62_168>
 					shared
+					<maxAmmo>60</maxAmmo>
 					<armor>
 						<armor_1>
-							160
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_1>
 						<armor_2>
@@ -2773,16 +2774,15 @@
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_4>
 						<armor_6>
-							180
+							250
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_6>
 						<armor_7>
-							150
+							160
 							<vehicleDamageFactor>0</vehicleDamageFactor>
 						</armor_7>
 						<gun>60</gun>
 					</armor>
-					<maxAmmo>50</maxAmmo>
 					<pitchLimits>
 						<minPitch>0 -20 1 -20</minPitch>
 						<maxPitch>
@@ -2795,15 +2795,15 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.34
+						0.32
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						9.8
+						9.0
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
-						2.3
+						2.0
 						<!--BW_String-->
 					</aimingTime>
 					<shotDispersionFactors>
@@ -2852,11 +2852,11 @@
 							<slotType>insigniaOnGun</slotType>
 							<slotId>49000</slotId>
 							<rayStart>
-								0 0 3.17
+								0 0 1.61
 								<!--BW_String-->
 							</rayStart>
 							<rayEnd>
-								0 0 3.91
+								0 0 2.34
 								<!--BW_String-->
 							</rayEnd>
 							<rayUp>

@@ -33,7 +33,7 @@ from helpers.i18n import makeString as _ms
 from helpers.i18n import doesTextExist
 from nations import ALLIANCES_TAGS_ORDER, ALLIANCE_IDS
 from personal_missions import PM_BRANCH
-from potapov_quests import PM_BRANCH_TO_FREE_TOKEN_NAME
+from pm_quests import PM_BRANCH_TO_FREE_TOKEN_NAME
 from shared_utils import first, findFirst
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache

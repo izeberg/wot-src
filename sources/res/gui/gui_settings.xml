@@ -1365,6 +1365,11 @@
 				<type>url</type>
 			</item>
 			<item>
+				$PARAMS(/auction/auction)
+				<name>blackMarket</name>
+				<type>url</type>
+			</item>
+			<item>
 				$PARAMS(/showcase/styles_2d)
 				<name>showcase</name>
 				<type>url</type>
@@ -1387,6 +1392,11 @@
 			<item>
 				$PARAMS(/white-tiger-overlay/wt_category)
 				<name>buyLootboxes</name>
+				<type>url</type>
+			</item>
+			<item>
+				$PARAMS(/portal_category)
+				<name>portalShop</name>
 				<type>url</type>
 			</item>
 		</value>
@@ -2223,6 +2233,23 @@
 			<item>
 				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/birthday-2025/
 				<name>default</name>
+				<type>url</type>
+			</item>
+		</value>
+	</setting>
+	<setting>
+		<name>portalInfoPageURL</name>
+		<type>macros</type>
+		<macros>AUTH_REALM</macros>
+		<value>
+			<item>
+				https://webbrg.tanki.su/$LANGUAGE_CODE/promocontent/razlom/
+				<name>default</name>
+				<type>url</type>
+			</item>
+			<item>
+				https://webbrg-rpt.tanki.su/$LANGUAGE_CODE/promocontent/razlom/
+				<name>CT</name>
 				<type>url</type>
 			</item>
 		</value>

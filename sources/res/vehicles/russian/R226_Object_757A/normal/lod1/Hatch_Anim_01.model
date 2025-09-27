@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R226_Object_757A/normal/lod2/Hatch_Anim_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.108601 0.075145 -1.344368</min>
+		<max>0.207684 0.289173 -1.123127</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/russian/R226_Object_757A/normal/lod1/Hatch_anim_01</nodefullVisual>
+	<tank>true</tank>
+</root>

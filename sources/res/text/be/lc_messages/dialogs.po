@@ -569,8 +569,8 @@ msgstr "Скасаваць"
 
 msgid "buyPremWithoutBenefitsConfirmation/message"
 msgstr ""
-"Купить Танковый премиум аккаунт на %(days)s д за %(gold)s золота?\n"
-" %(alertIcon)s %(alertColorTagOpen)s В связи с техническими проблемами дополнительный опыт и серебро не будут начислены. Вы можете выбрать другой бой или купить Танковый премиум аккаунт стандартным способом.%(tagClose)s"
+"Ці купіць Танкавы прэміум акаўнт на %(days)s сут за %(gold)s золата?\n"
+" %(alertIcon)s %(alertColorTagOpen)s Праз тэхнічныя праблемы дадатковы досвед і срэбра не будуць налічаны. Вы можаце выбраць іншы бой або купіць Танкавы прэміум акаўнт стандартным спосабам.%(tagClose)s"
 
 msgid "buyPremWithoutBenefitsConfirmation/submit"
 msgstr "Купіць"
@@ -1094,19 +1094,6 @@ msgstr "Агулам"
 msgid "confirmModuleDialog/totalLabel"
 msgstr "Агулам:"
 
-msgid "confirmReward/cancel"
-msgstr "Скасаваць"
-
-msgid "confirmReward/message"
-msgstr ""
-" Если имущество получено из портала Инженера, вы не сможете его заменить."
-
-msgid "confirmReward/submit"
-msgstr "Забрать"
-
-msgid "confirmReward/title"
-msgstr "Забрать награду"
-
 msgid "confirmUnlock/cancel"
 msgstr "Не"
 
@@ -1523,7 +1510,7 @@ msgstr ""
 "працягу %(time)s."
 
 msgid "dismissTankman/description/timeText"
-msgstr "%(time)s д."
+msgstr "%(time)s сут."
 
 msgid "dismissTankman/header"
 msgstr "Дэмабілізацыя танкіста"
@@ -2522,7 +2509,8 @@ msgid "punishmentWindow/message/penalty"
 msgstr ""
 "Уважаемый игрок, ввиду нарушения вами игровых правил на карте %(arenaName)s в %(time)s, а именно статьи «%(reason)s», к вам применено дисциплинарное взыскание. Указанный ниже штраф является крайней мерой наказания.\n"
 "\n"
-"Принятые меры:"
+"Принятые меры:\n"
+" "
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
@@ -2996,18 +2984,6 @@ msgstr "Працягнуць"
 
 msgid "reportBug/title"
 msgstr "Пераход на форум гульні"
-
-msgid "rerollReward/cancel"
-msgstr "Скасаваць"
-
-msgid "rerollReward/confirm"
-msgstr "Замяніць"
-
-msgid "rerollReward/message"
-msgstr "Это обойдётся в"
-
-msgid "rerollReward/title"
-msgstr "Желаете заменить предлагаемую награду?"
 
 msgid "resetGraphics/cancel"
 msgstr "Працягнуць"
@@ -3806,21 +3782,6 @@ msgstr ""
 
 msgid "waterQualityNotPossible/title"
 msgstr "Якасць вады недаступная"
-
-msgid "white_tiger/deserter/cancel"
-msgstr "Скасаваць"
-
-msgid "white_tiger/deserter/message"
-msgstr ""
-"Бегство с поля боя до окончания сражения расценивается как дезертирство, "
-"влечёт применение дисциплинарного взыскания и лишение прогресса по текущим "
-"задачам. Одумайтесь!"
-
-msgid "white_tiger/deserter/submit"
-msgstr "Уцячы"
-
-msgid "white_tiger/deserter/title"
-msgstr "Пакінуць бой?"
 
 msgid "wotPlusRental/cancel"
 msgstr "Скасаваць"

@@ -70,7 +70,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.data.constants.generated.EPICBATTLES_ALIASES;
    import net.wg.data.constants.generated.EVENTBOARDS_ALIASES;
    import net.wg.data.constants.generated.EVENTPROGRESSION_ALIASES;
-   import net.wg.data.constants.generated.EVENT_BATTLES_ALIASES;
    import net.wg.data.constants.generated.FITTING_TYPES;
    import net.wg.data.constants.generated.FORTIFICATION_ALIASES;
    import net.wg.data.constants.generated.FUNRANDOM_ALIASES;
@@ -1197,6 +1196,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ArmoryYardWidgetEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BREntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BirthdayBannerEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BlackMarketEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CollectionEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CommonEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.Comp7EntryPoint;
@@ -1206,11 +1206,11 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.FunRandomEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MapBoxEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MarathonEntryPoint;
+   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.PortalBannerEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.RankedEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ResizableEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ShopSalesEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.StrongholdEntryPoint;
-   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.WTEventEntryPoint;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
@@ -1244,7 +1244,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPoint;
    import net.wg.gui.lobby.hangar.quests.SecondaryEntryPointContent;
    import net.wg.gui.lobby.hangar.quests.UniversalFlagEntryPoint;
-   import net.wg.gui.lobby.hangar.quests.WhiteTigerWidget;
    import net.wg.gui.lobby.hangar.quests.WinbackWidget;
    import net.wg.gui.lobby.hangar.tcarousel.BaseTankIcon;
    import net.wg.gui.lobby.hangar.tcarousel.CarouselProgressionPoints;
@@ -1270,10 +1269,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamAbility;
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRenderer;
    import net.wg.gui.lobby.hangar.vehicleParameters.components.VehParamRendererWithHighlight;
-   import net.wg.gui.lobby.hangar.wtEvent.WTEventBoxEntryPointWidget;
-   import net.wg.gui.lobby.hangar.wtEvent.WTEventCarouselWidget;
-   import net.wg.gui.lobby.hangar.wtEvent.WTEventCrewWidget;
-   import net.wg.gui.lobby.hangar.wtEvent.WTEventParamsWidget;
    import net.wg.gui.lobby.header.BadgeSlot;
    import net.wg.gui.lobby.header.LobbyHeader;
    import net.wg.gui.lobby.header.OnlineCounter;
@@ -1521,6 +1516,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.modulesPanel.interfaces.IDeviceSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModuleSlot;
    import net.wg.gui.lobby.modulesPanel.interfaces.IModulesPanel;
+   import net.wg.gui.lobby.notify_center.NotifyCenterDialog;
    import net.wg.gui.lobby.personalMissions.CampaignOperationsContainer;
    import net.wg.gui.lobby.personalMissions.PersonalMissionsPage;
    import net.wg.gui.lobby.personalMissions.components.AllOperationsContent;
@@ -2635,6 +2631,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelEarlyAccess;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelOfferGift;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelShowcaseStyleBuying;
+   import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelStatTrack;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelStyleBuying;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelStyleProgression;
    import net.wg.gui.lobby.vehiclePreview.bottomPanel.VPBottomPanelTradeIn;
@@ -2657,6 +2654,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehiclePreview.data.VPSetItemsVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPSetVehiclesVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPShowcaseStyleBuyingVO;
+   import net.wg.gui.lobby.vehiclePreview.data.VPStatTrackVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPTradeInBuyingPanelVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPVehicleCarouselVO;
    import net.wg.gui.lobby.vehiclePreview.data.VPWotPlusPanelData;
@@ -2723,7 +2721,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellOnVehicleShellVo;
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellVehicleItemBaseVo;
    import net.wg.gui.lobby.vehicleTradeWnds.sell.vo.SellVehicleVo;
-   import net.wg.gui.lobby.wgnc.WGNCDialog;
    import net.wg.gui.lobby.window.AwardWindow;
    import net.wg.gui.lobby.window.BaseExchangeWindow;
    import net.wg.gui.lobby.window.BaseExchangeWindowRateVO;
@@ -3133,8 +3130,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EVENTBOARDS_ALIASES:Class = EVENTBOARDS_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_EVENTPROGRESSION_ALIASES:Class = EVENTPROGRESSION_ALIASES;
-      
-      public static const NET_WG_DATA_CONSTANTS_GENERATED_EVENT_BATTLES_ALIASES:Class = EVENT_BATTLES_ALIASES;
       
       public static const NET_WG_DATA_CONSTANTS_GENERATED_FITTING_TYPES:Class = FITTING_TYPES;
       
@@ -5442,6 +5437,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BIRTHDAYBANNERENTRYPOINT:Class = BirthdayBannerEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BLACKMARKETENTRYPOINT:Class = BlackMarketEntryPoint;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BRENTRYPOINT:Class = BREntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_COLLECTIONENTRYPOINT:Class = CollectionEntryPoint;
@@ -5462,6 +5459,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_MARATHONENTRYPOINT:Class = MarathonEntryPoint;
       
+      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_PORTALBANNERENTRYPOINT:Class = PortalBannerEntryPoint;
+      
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RANKEDENTRYPOINT:Class = RankedEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RESIZABLEENTRYPOINT:Class = ResizableEntryPoint;
@@ -5469,8 +5468,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_SHOPSALESENTRYPOINT:Class = ShopSalesEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_STRONGHOLDENTRYPOINT:Class = StrongholdEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_WTEVENTENTRYPOINT:Class = WTEventEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_INTERFACES_IHANGAR:Class = IHangar;
       
@@ -5538,8 +5535,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_UNIVERSALFLAGENTRYPOINT:Class = UniversalFlagEntryPoint;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WHITETIGERWIDGET:Class = WhiteTigerWidget;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_WINBACKWIDGET:Class = WinbackWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_TCAROUSEL_BASETANKICON:Class = BaseTankIcon;
@@ -5589,14 +5584,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_VEHICLEPARAMETERS_COMPONENTS_VEHPARAMRENDERER:Class = VehParamRenderer;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_VEHICLEPARAMETERS_COMPONENTS_VEHPARAMRENDERERWITHHIGHLIGHT:Class = VehParamRendererWithHighlight;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTBOXENTRYPOINTWIDGET:Class = WTEventBoxEntryPointWidget;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTCAROUSELWIDGET:Class = WTEventCarouselWidget;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTCREWWIDGET:Class = WTEventCrewWidget;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_WTEVENT_WTEVENTPARAMSWIDGET:Class = WTEventParamsWidget;
       
       public static const NET_WG_GUI_LOBBY_HEADER_BADGESLOT:Class = BadgeSlot;
       
@@ -6091,6 +6078,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESLOT:Class = IModuleSlot;
       
       public static const NET_WG_GUI_LOBBY_MODULESPANEL_INTERFACES_IMODULESPANEL:Class = IModulesPanel;
+      
+      public static const NET_WG_GUI_LOBBY_NOTIFY_CENTER_NOTIFYCENTERDIALOG:Class = NotifyCenterDialog;
       
       public static const NET_WG_GUI_LOBBY_PERSONALMISSIONS_CAMPAIGNOPERATIONSCONTAINER:Class = CampaignOperationsContainer;
       
@@ -8298,6 +8287,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELSHOWCASESTYLEBUYING:Class = VPBottomPanelShowcaseStyleBuying;
       
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELSTATTRACK:Class = VPBottomPanelStatTrack;
+      
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELSTYLEBUYING:Class = VPBottomPanelStyleBuying;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_BOTTOMPANEL_VPBOTTOMPANELSTYLEPROGRESSION:Class = VPBottomPanelStyleProgression;
@@ -8339,6 +8330,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPSETVEHICLESVO:Class = VPSetVehiclesVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPSHOWCASESTYLEBUYINGVO:Class = VPShowcaseStyleBuyingVO;
+      
+      public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPSTATTRACKVO:Class = VPStatTrackVO;
       
       public static const NET_WG_GUI_LOBBY_VEHICLEPREVIEW_DATA_VPTRADEINBUYINGPANELVO:Class = VPTradeInBuyingPanelVO;
       
@@ -8495,8 +8488,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_VEHPOSTPROGRESSION_DATA_VEHPOSTPROGRESSIONVIEWVO:Class = VehPostProgressionViewVO;
       
       public static const NET_WG_GUI_LOBBY_VEHPOSTPROGRESSION_EVENTS_DEMOUNTALLBTNEVENT:Class = DemountAllBtnEvent;
-      
-      public static const NET_WG_GUI_LOBBY_WGNC_WGNCDIALOG:Class = WGNCDialog;
       
       public static const NET_WG_GUI_LOBBY_WINDOW_AWARDWINDOW:Class = AwardWindow;
       
@@ -9077,6 +9068,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_UTILS_VO_UNITSLOTPROPERTIES:Class = UnitSlotProperties;
       
       public static const NET_WG_INFRASTRUCTURE_BASE_ABSTRACTCONFIRMITEMDIALOG:Class = AbstractConfirmItemDialog;
+      
+      public static const NET_WG_INFRASTRUCTURE_BASE_META_IMPL_VEHICLEPREVIEWBOTTOMPANELSTATTRACKMETA:Class = VehiclePreviewBottomPanelStatTrackMeta;
       
       public static const NET_WG_INFRASTRUCTURE_EVENTS_DRAGEVENT:Class = DragEvent;
       

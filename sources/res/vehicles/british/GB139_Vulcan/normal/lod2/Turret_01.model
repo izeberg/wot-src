@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB139_Vulcan/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.715511 -0.155063 -0.713565</min>
+		<max>0.877546 0.660903 0.741211</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod2/Turret_01</nodefullVisual>
+</root>

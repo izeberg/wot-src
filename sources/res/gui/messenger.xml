@@ -662,8 +662,6 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<rankedBonusBattlesAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/rankedBonusBattlesAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;%(bonusBattles)s&lt;/font&gt;</rankedBonusBattlesAccruedInvoiceReceived>
 		<rankedBonusBattlesDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/rankedBonusBattlesDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;%(bonusBattles)s&lt;/font&gt;</rankedBonusBattlesDebitedInvoiceReceived>
 		<questTokenInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</questTokenInvoiceReceived>
-		<lootboxesReceived>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/event/lootboxes) &lt;font color=&apos;#8C8C7E&apos;&gt;%(amount)s&lt;/font&gt;</lootboxesReceived>
-		<ticketsReceived>&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/event/tickets) &lt;font color=&apos;#8C8C7E&apos;&gt;%(amount)s&lt;/font&gt;</ticketsReceived>
 		<offersAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/offersAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;%(offer)s&lt;/font&gt;</offersAccruedInvoiceReceived>
 		<offersDebitedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/offersDebited): &lt;font color=&apos;#8C8C7E&apos;&gt;%(offer)s&lt;/font&gt;</offersDebitedInvoiceReceived>
 		<lbKeysAccruedInvoiceReceived>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued): &lt;font color=&apos;#8C8C7E&apos;&gt;%(lootbox_key)s(x%(amount)s)&lt;/font&gt;</lbKeysAccruedInvoiceReceived>
@@ -1429,16 +1427,16 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>InformationIcon</icon>
 			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;%(imageBlock)s</message>
 		</PaymentMethodUnlinkSysMessage>
-		<PaymentMethodLinkWgncSysMessage>
+		<PaymentMethodLinkNotifyCenterSysMessage>
 			<type>grey</type>
 			<icon>ConfirmIcon</icon>
 			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;%(imageBlock)s</message>
-		</PaymentMethodLinkWgncSysMessage>
-		<PaymentMethodUnlinkWgncSysMessage>
+		</PaymentMethodLinkNotifyCenterSysMessage>
+		<PaymentMethodUnlinkNotifyCenterSysMessage>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
 			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;%(imageBlock)s</message>
-		</PaymentMethodUnlinkWgncSysMessage>
+		</PaymentMethodUnlinkNotifyCenterSysMessage>
 		<MessageHeaderSysMessage>
 			<type>grey</type>
 			<icon>MessageIcon</icon>
@@ -1909,11 +1907,11 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			</buttonsLayout>
 			<message>&lt;font color=&apos;#8C8C7E&apos;&gt;%(text)s&lt;/font&gt;</message>
 		</friendshipRequest>
-		<wgncNotification_v2>
+		<notifyCenterNotification_v2>
 			<type>grey</type>
 			<icon>InformationIcon</icon>
 			<message>%(topic)s&lt;font color=&apos;#8C8C7E&apos;&gt;%(body)s&lt;/font&gt;</message>
-		</wgncNotification_v2>
+		</notifyCenterNotification_v2>
 		<telecomVehicleReceived>
 			<priority>medium</priority>
 			<type>grey</type>
@@ -2233,6 +2231,12 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#lootboxes:notification/header)&lt;/font&gt;&lt;br/&gt;&lt;br/&gt;%(text)s</message>
 		</LootBoxRewardsSysMessage>
+		<WtEventLootBoxesAutoOpenMessage>
+			<priority>high</priority>
+			<type>yellow</type>
+			<icon>WarningIcon</icon>
+			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/header)&lt;/font&gt;&lt;br/&gt;&lt;font face=&quot;$FieldFont&quot; size=&quot;14&quot; color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/text)&lt;/font&gt;&lt;br/&gt;_(#messenger:serviceChannelMessages/lootBoxesAutoOpen/event/boxes)&lt;br/&gt;%(rewards)s</message>
+		</WtEventLootBoxesAutoOpenMessage>
 		<LunarBoxesAutoOpenMessage>
 			<priority>high</priority>
 			<type>yellow</type>
@@ -2649,7 +2653,7 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 			<bgIconSizeAuto>true</bgIconSizeAuto>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#messenger:serviceChannelMessages/battleMatters/awards/header)&lt;/font&gt;
 &lt;font color=&apos;#8C8C7E&apos;&gt;%(body)s&lt;/font&gt;&lt;br/&gt;&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleMatters/awards/received)&lt;/font&gt;&lt;br/&gt;%(achieves)s&lt;br/&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleMatters/awards/footer)&lt;/font&gt;&lt;br/&gt;</message>
+&lt;font color=&apos;#8C8C7E&apos;&gt;%(footer)s&lt;/font&gt;&lt;br/&gt;</message>
 			<buttonsLayout>
 				<button>
 					<type>submit</type>
@@ -3130,6 +3134,66 @@ _(#messenger:serviceChannelMessages/piggyBank/continueAfterSmashed)</message>
 				</button>
 			</buttonsLayout>
 		</IntegratedAuctionStageFinish>
+		<BlackMarketVehicleAuctionStageStart>
+			<type>auctionStart</type>
+			<linkage>AuctionMessage</linkage>
+			<icon>BlackMarketVehicleStartIcon</icon>
+			<bgIcon>BlackMarketBG</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;6&quot; color=&quot;#8C8C7E&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;font size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/integratedAuction/button)</label>
+					<action>showBlackMarketStartShop</action>
+				</button>
+			</buttonsLayout>
+		</BlackMarketVehicleAuctionStageStart>
+		<BlackMarketVehicleAuctionStageFinish>
+			<type>auctionFinish</type>
+			<linkage>AuctionMessage</linkage>
+			<icon>BlackMarketVehicleFinishIcon</icon>
+			<bgIcon>BlackMarketBG</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;6&quot; color=&quot;#8C8C7E&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;font size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/integratedAuction/button)</label>
+					<action>showBlackMarketFinishShop</action>
+				</button>
+			</buttonsLayout>
+		</BlackMarketVehicleAuctionStageFinish>
+		<BlackMarketAuctionStageStart>
+			<type>auctionStart</type>
+			<linkage>AuctionMessage</linkage>
+			<icon>BlackMarketStartIcon</icon>
+			<bgIcon>BlackMarketBG</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;6&quot; color=&quot;#8C8C7E&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;font size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/integratedAuction/button)</label>
+					<action>showBlackMarketStartShop</action>
+				</button>
+			</buttonsLayout>
+		</BlackMarketAuctionStageStart>
+		<BlackMarketAuctionStageFinish>
+			<type>auctionFinish</type>
+			<linkage>AuctionMessage</linkage>
+			<icon>BlackMarketFinishIcon</icon>
+			<bgIcon>BlackMarketBG</bgIcon>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<message>&lt;textformat leading=&quot;-1&quot;&gt;&lt;p align=&quot;center&quot;&gt;&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&gt;%(title)s&lt;/font&gt;&lt;p align=&quot;center&quot;&gt;&lt;font size=&quot;6&quot; color=&quot;#8C8C7E&quot;&gt;&lt;/font&gt;&lt;/p&gt;&lt;font size=&quot;14&quot; color=&quot;#8C8C7E&quot;&gt;%(text)s&lt;/font&gt;&lt;/p&gt;&lt;/textformat&gt;</message>
+			<buttonsLayout>
+				<button>
+					<type>submit</type>
+					<label>_(#messenger:serviceChannelMessages/integratedAuction/button)</label>
+					<action>showBlackMarketFinishShop</action>
+				</button>
+			</buttonsLayout>
+		</BlackMarketAuctionStageFinish>
 		<IntegratedAuctionOperationSysMessage>
 			<type>grey</type>
 			<icon>AuctionOperationIcon</icon>

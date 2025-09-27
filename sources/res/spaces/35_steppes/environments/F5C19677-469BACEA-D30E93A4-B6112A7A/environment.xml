@@ -8,7 +8,7 @@
 		<outerBB>-795.000000 -800.000000 700.000000 700.000000</outerBB>
 		<deferred>
 			<useEdgeFog>false</useEdgeFog>
-			<color>0.411765 0.600000 1.000000 5.000000</color>
+			<color>0.584314 0.752941 0.933333 5.000000</color>
 			<density>0.002400</density>
 			<height>5.000000</height>
 			<heightFalloff>0.030000</heightFalloff>
@@ -42,9 +42,9 @@
 			<dirtAmount>0.800000</dirtAmount>
 		</bloom>
 		<environment>
-			<sunlightLumMultiplier>30.000000</sunlightLumMultiplier>
+			<sunlightLumMultiplier>20.000000</sunlightLumMultiplier>
 			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
-			<sunLumMultiplier>50.750000</sunLumMultiplier>
+			<sunLumMultiplier>50.000000</sunLumMultiplier>
 			<skyLumMultiplier>5.000000</skyLumMultiplier>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
@@ -91,8 +91,8 @@
 			<scale>0.120000</scale>
 		</filmgrain>
 		<camera>
-			<fnumberDown>15.100000</fnumberDown>
-			<fnumberUp>12.100000</fnumberUp>
+			<fnumberDown>12.700000</fnumberDown>
+			<fnumberUp>7.500000</fnumberUp>
 			<shutterSpeed>6.643856</shutterSpeed>
 			<keyValue>0.120000</keyValue>
 		</camera>
@@ -194,6 +194,7 @@
 		<enable>false</enable>
 		<applyOnVehicles>false</applyOnVehicles>
 		<colorTintMap/>
+		<layerMask/>
 	</overlayMaterial>
 	<day_night_cycle>
 		<forward>
@@ -202,13 +203,14 @@
 			<angleShadow>15.000000</angleShadow>
 		</forward>
 		<deferred>
-			<angle>7.000000</angle>
+			<angle>9.000000</angle>
 			<angleZ>278.000000</angleZ>
 		</deferred>
 		<sunScale>3.000000</sunScale>
+		<sunlightAngularSize>0.000000</sunlightAngularSize>
 		<sunColor>199.000000 95.000000 69.000000</sunColor>
 		<sunTexture/>
-		<sunLightColor>1.000000 0.670588 0.541176</sunLightColor>
+		<sunLightColor>0.600000 0.447059 0.352941</sunLightColor>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
 		<sunScaleForward>0.000000</sunScaleForward>

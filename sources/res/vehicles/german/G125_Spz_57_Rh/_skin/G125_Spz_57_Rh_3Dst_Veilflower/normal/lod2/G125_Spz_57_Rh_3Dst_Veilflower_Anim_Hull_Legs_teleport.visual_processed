@@ -328,8 +328,8 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>lid_BlendBone</node>
 		<geometry>
-			<vertices>aejhert.vertices</vertices>
-			<primitive>aejhert.indices</primitive>
+			<vertices>teleport_anim_Shape.vertices</vertices>
+			<primitive>teleport_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -362,11 +362,11 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Leg_rt_front01_jnt_BlendBone</node>
 		<node>Leg_rt_front02_jnt_BlendBone</node>
-		<node>Leg_rt_front03_jnt_BlendBone</node>
 		<node>Leg_rt_front04_jnt_BlendBone</node>
+		<node>Leg_rt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>vndf.vertices</vertices>
-			<primitive>vndf.indices</primitive>
+			<vertices>leg_anim_04_Shape.vertices</vertices>
+			<primitive>leg_anim_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -391,7 +391,7 @@
 						<Texture>vehicles/german/G125_Spz_57_Rh/_skin/G125_Spz_57_Rh_3Dst_Veilflower/Spz_57_Rh_3Dst_Veilflower_equipment_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.672764 -0.346199 -2.725268</groupOrigin>
+				<groupOrigin>1.672764 -0.294523 -2.725268</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -402,8 +402,8 @@
 		<node>Leg_rt_back03_jnt_BlendBone</node>
 		<node>Leg_rt_back04_jnt_BlendBone</node>
 		<geometry>
-			<vertices>fghjk.vertices</vertices>
-			<primitive>fghjk.indices</primitive>
+			<vertices>leg_anim_03_Shape.vertices</vertices>
+			<primitive>leg_anim_03_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -436,11 +436,11 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>leg_lt_front01_jnt_BlendBone</node>
 		<node>leg_lt_front02_jnt_BlendBone</node>
-		<node>leg_lt_front03_jnt_BlendBone</node>
 		<node>leg_lt_front04_jnt_BlendBone</node>
+		<node>leg_lt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>ertw.vertices</vertices>
-			<primitive>ertw.indices</primitive>
+			<vertices>leg_anim_02_Shape.vertices</vertices>
+			<primitive>leg_anim_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -473,11 +473,11 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Leg_lt_back01_jnt_BlendBone</node>
 		<node>Leg_lt_back02_jnt_BlendBone</node>
-		<node>Leg_lt_back03_jnt_BlendBone</node>
 		<node>Leg_lt_back04_jnt_BlendBone</node>
+		<node>Leg_lt_back03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>fghfg.vertices</vertices>
-			<primitive>fghfg.indices</primitive>
+			<vertices>leg_anim_01_Shape.vertices</vertices>
+			<primitive>leg_anim_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -508,8 +508,8 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-2.027343 -1.141893 -2.031576</min>
-		<max>2.076597 0.805417 3.488901</max>
+		<min>-2.027341 -1.141893 -2.031577</min>
+		<max>2.076597 0.805417 3.488896</max>
 	</boundingBox>
 	<geometrySize>28484</geometrySize>
 	<minUVDensity>0.005357</minUVDensity>

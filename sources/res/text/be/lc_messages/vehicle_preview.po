@@ -130,8 +130,8 @@ msgstr "Абмен машыны: %(name)s"
 
 msgid "buyingPanel/pmCampaignVehicleLabel"
 msgstr ""
-"Покупка недоступна: эта машина — награда за выполнение всех задач кампании "
-"«%(operationName)s» с отличием."
+"Купля недаступная: гэтая машына — узнагарода за выкананне ўсіх задач "
+"кампаніі «%(operationName)s» з адзнакай."
 
 msgid "buyingPanel/pmOperationVehicleLabel"
 msgstr ""
@@ -261,7 +261,7 @@ msgid "header/backBtn/descrLabel/ranked"
 msgstr "ДА РАНГАВЫХ БАЁЎ"
 
 msgid "header/backBtn/descrLabel/referralProgram"
-msgstr "К КОНТЕЙНЕРУ"
+msgstr "ДА КАНТЭЙНЕРА"
 
 msgid "header/backBtn/descrLabel/researchTree"
 msgstr "ДА ДРЭВА ДАСЛЕДАВАННЯЎ"
@@ -414,6 +414,33 @@ msgstr "Продаж завершаны"
 
 msgid "showcaseStyleBuying/timeRemaining/desc"
 msgstr "Даступна на працягу:"
+
+msgid "statTrackerPanel/label"
+msgstr "Счётчик уничтоженных"
+
+msgid "tooltips/statTrack/description/firstPart"
+msgstr ""
+"Это уникальный экземпляр машины со встроенным %(whiteSpanish_Open)sсчётчиком"
+" уничтоженных целей%(whiteSpanish_Close)s."
+
+msgid "tooltips/statTrack/description/secondPart"
+msgstr ""
+"Особое устройство располагается спереди танка и на задней части башни.\n"
+"Показывает текущее количество уничтоженных машин противника за всё время владения этой машиной."
+
+msgid "tooltips/statTrack/description/thirdPart"
+msgstr ""
+"Засчитываются цели, уничтоженные в Случайных боях (исключая Генеральное сражение).\n"
+"Максимальное число отображаемых уничтожений — %(maxValue), по достижении которого счётчик навсегда фиксируется на этом значении."
+
+msgid "tooltips/statTrack/moreInfo"
+msgstr ""
+"Из-за тяжёлых условий эксплуатации и несвоевременного обслуживания "
+"энергоцепи машины определённые сочетания цифр могут не отображаться на "
+"счётчике."
+
+msgid "tooltips/statTrack/title"
+msgstr "Счётчик уничтоженных целей"
 
 msgid "topPanel/tab/baseVehicle/vehicle"
 msgstr "СТАНДАРТ"

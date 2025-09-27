@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A175_OTAC_MT_58/normal/lod1/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A175_OTAC_MT_58/normal/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.563589 -0.329387 -0.015249</min>
+		<max>0.564683 0.339181 2.105402</max>
+	</visibilityBox>
+</root>

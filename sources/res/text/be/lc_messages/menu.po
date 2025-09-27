@@ -537,7 +537,7 @@ msgid "barracks/dismissedTankmenCount"
 msgstr "Дэмабілізаваныя танкісты: %(curValue)s из %(total)s"
 
 msgid "barracks/menu/locationFilter/barracks"
-msgstr "В казарме"
+msgstr "В Казарме"
 
 msgid "barracks/menu/locationFilter/barracksAndTanks"
 msgstr "У Жаўнерні і на тэхніцы"
@@ -701,7 +701,7 @@ msgid "bonusType/4"
 msgstr "Адмысловы бой"
 
 msgid "bonusType/42"
-msgstr "«%(modeName)s»"
+msgstr "Полевые испытания"
 
 msgid "bonusType/43"
 msgstr "Націск"
@@ -1108,6 +1108,9 @@ msgstr "Стварыць звяз падзеі"
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
 
+msgid "contextMenu/createPortalSquad"
+msgstr "Взвод события «Разлом»"
+
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
 
@@ -1116,9 +1119,6 @@ msgstr "Стварыць звяз для Рангавага бою"
 
 msgid "contextMenu/createSquad"
 msgstr "Стварыць звяз"
-
-msgid "contextMenu/createWhiteTigerSquad"
-msgstr "Создать взвод Гончих"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Змяніць члена экіпажа"
@@ -1420,7 +1420,7 @@ msgstr ""
 "бітва"
 
 msgid "crystals/info/tab/earn/level/mod/2"
-msgstr "Натиск"
+msgstr "Націск"
 
 msgid "crystals/info/tab/earn/level/title"
 msgstr "УЗРОВЕНЬ ТЭХНІКІ"
@@ -1446,7 +1446,7 @@ msgid "crystals/info/tab/earnTab"
 msgstr "Як здабыць"
 
 msgid "crystals/info/tab/get/card/comp7Description"
-msgstr "Топ-%(position)s по очкам престижа"
+msgstr "Топ-%(position)s паводле ачкоў прэстыжу"
 
 msgid "crystals/info/tab/get/card/condition"
 msgstr "Умовы"
@@ -1461,7 +1461,7 @@ msgid "crystals/info/tab/get/card/win"
 msgstr "Перамога"
 
 msgid "crystals/info/tab/get/comp7"
-msgstr "НАТИСК"
+msgstr "НАЦІСК"
 
 msgid "crystals/info/tab/get/description"
 msgstr ""
@@ -1484,11 +1484,11 @@ msgstr "Умовы налічэння"
 
 msgid "crystals/info/tab/spend/card/comp7Shop/description"
 msgstr ""
-"В магазине Натиска вас ожидают эксклюзивная техника и стили, а также "
-"выгодная система скидок."
+"У краме Націску вас чакаюць эксклюзіўная тэхніка і стылі, а таксама выгадная"
+" сістэма зніжак."
 
 msgid "crystals/info/tab/spend/card/comp7Shop/title"
-msgstr "Магазин Натиска"
+msgstr "Крама Націску"
 
 msgid "crystals/info/tab/spend/card/instructions/description"
 msgstr "Узмацняюць эфект, які дае ўсталяванае абсталяванне."
@@ -1738,11 +1738,8 @@ msgstr "Пракат машыны даступны"
 msgid "currentVehicleStatus/rentableAgain"
 msgstr "Прадоўжыць пракат"
 
-msgid "currentVehicleStatus/rentalBattleIsOver"
-msgstr "Бои исчерпаны"
-
 msgid "currentVehicleStatus/rentalIsOver"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "currentVehicleStatus/rotationGroupLocked"
 msgstr "Недаступна"
@@ -1758,9 +1755,6 @@ msgstr "Падпіска скасавана"
 
 msgid "currentVehicleStatus/tempUnavailable"
 msgstr "Часова недаступна"
-
-msgid "currentVehicleStatus/ticketsShortage"
-msgstr "Нет ключа"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "Да бою гатовы!"
@@ -2632,9 +2626,6 @@ msgstr "Абслугоўванне"
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Выгляд"
 
-msgid "hangar/closeBtn"
-msgstr "ПОКИНУТЬ РЕЖИМ"
-
 msgid "hangar/crew/rody/dog/moreInfoLabel"
 msgstr "Падрабязней"
 
@@ -3065,9 +3056,6 @@ msgstr "Супольныя вучэнні"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
-
-msgid "headerButtons/battle/types/event"
-msgstr "Ваффентрагер: Наследие"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
@@ -5166,19 +5154,19 @@ msgstr ""
 "за кожны бой"
 
 msgid "premium/buyMessage"
-msgstr "Купить Танковый премиум аккаунт"
+msgstr "Купіць Танкавы прэміум акаўнт"
 
 msgid "premium/buyTitle"
-msgstr "Покупка Танкового премиум аккаунта"
+msgstr "Купля Танкавага прэміум акаўнту"
 
 msgid "premium/cancel"
 msgstr "Скасаваць"
 
 msgid "premium/continueMessage"
-msgstr "Продлить Танковый премиум аккаунт"
+msgstr "Працягнуць Танкавы прэміум акаўнт"
 
 msgid "premium/continueTitle"
-msgstr "Продление Танкового премиум аккаунта"
+msgstr "Працяг Танкавага прэміум акаўнту"
 
 msgid "premium/gold"
 msgstr "золата"
@@ -5380,7 +5368,7 @@ msgid "profile/premiumBuy"
 msgstr "Купіць прэміум"
 
 msgid "profile/premiumContinue"
-msgstr "Продлить Танковый премиум аккаунт"
+msgstr "Працягнуць Танкавы прэміум акаўнт"
 
 msgid "profile/premiunExpirationDate"
 msgstr "Заканчваецца %s"
@@ -6311,7 +6299,7 @@ msgid "store/vehicleStates/rentableAgain/ranked"
 msgstr "Прадоўжыць пракат"
 
 msgid "store/vehicleStates/rentalIsOver"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "store/vehicleStates/rented/epic"
 msgstr "Пракат на этап %(cycles)s"
@@ -6433,11 +6421,8 @@ msgstr "Прадоўжыць пракат"
 msgid "tankCarousel/vehicleStates/rentableAgain/ranked"
 msgstr "Прадоўжыць пракат"
 
-msgid "tankCarousel/vehicleStates/rentalBattleIsOver"
-msgstr "Бои исчерпаны"
-
 msgid "tankCarousel/vehicleStates/rentalIsOver"
-msgstr "Час пракату закончыўся"
+msgstr "Пракат завершаны"
 
 msgid "tankCarousel/vehicleStates/restoreTank"
 msgstr "Аднавіць машыну"
@@ -6461,9 +6446,6 @@ msgstr ""
 
 msgid "tankCarousel/vehicleStates/tempUnavailable"
 msgstr "Часова недаступна"
-
-msgid "tankCarousel/vehicleStates/ticketsShortage"
-msgstr "Нет ключа"
 
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недаступна"
@@ -7208,7 +7190,7 @@ msgid "vehicle/igrRentLeft/hours"
 msgstr "гадзін: %(hours)s"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Ещё боёв: %(battles)s"
+msgstr "Боёв доступно: %(battles)s"
 
 msgid "vehicle/rentLeft/days"
 msgstr "Сутак пракату: %(days)s"

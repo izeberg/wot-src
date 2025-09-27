@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>cover_Shape.vertices</vertices>
+			<primitive>cover_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>n_metal0</identifier>
+					<fx>shaders/std_effects/PBS_ext.fx</fx>
+					<materialKind>73</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Sleeves/GB139_Vulcan_ammo/Vulcan_ammo_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Sleeves/GB139_Vulcan_ammo/Vulcan_ammo_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Sleeves/GB139_Vulcan_ammo/Vulcan_ammo_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.824658 -0.133875 -1.524763</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.009732 -0.289109 -1.628888</min>
+		<max>-0.639584 0.021359 -1.420639</max>
+	</boundingBox>
+	<geometrySize>8644</geometrySize>
+	<minUVDensity>0.358939</minUVDensity>
+</root>

@@ -1,10 +1,10 @@
 package net.wg.infrastructure.base.meta.impl
 {
    import net.wg.data.constants.Errors;
-   import net.wg.gui.battle.components.BattleDisplayable;
+   import net.wg.gui.battle.views.ribbonsPanel.RibbonsPanelBase;
    import net.wg.infrastructure.exceptions.AbstractException;
    
-   public class RibbonsPanelMeta extends BattleDisplayable
+   public class RibbonsPanelMeta extends RibbonsPanelBase
    {
        
       

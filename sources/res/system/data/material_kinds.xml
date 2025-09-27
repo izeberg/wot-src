@@ -517,7 +517,6 @@
 		<terrain>maps/landscape/00_Allterrain3_tiles/Sand_Grass_00379_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Gravel_Damaged_Dirty_Fine_02_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Soil_Stony_Foliage_Fine_01_AM</terrain>
-		<terrain>maps/landscape/00_AllTerrain3_tiles/Foliage_Stony_Fine_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_sand_01_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/PBS_sand_river_water_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/sand_flat_02_AM</terrain>
@@ -574,6 +573,7 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/ForestFloor-04_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Foliage_yellow_02_00236_am</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Debris_Nature_01_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Foliage_Stony_Fine_01_AM</terrain>
 	</kind>
 	<kind>
 		<id>105</id>
@@ -659,6 +659,9 @@
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Asphalt_01_0052_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Rock_25_AM</terrain>
 		<terrain>maps/landscape/00_AllTerrain3_tiles/Concrete_02_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava_3_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava2_AM</terrain>
+		<terrain>maps/landscape/00_AllTerrain3_tiles/Lava_AM</terrain>
 	</kind>
 	<kind>
 		<id>108</id>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.841976 0.000000 -3.262157</min>
+		<max>1.841976 1.370027 3.223080</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod3/Chassis</nodefullVisual>
+</root>

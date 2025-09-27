@@ -219,8 +219,8 @@ class EventsCache(IEventsCache):
                 self.__personalMissions.update(self, diff)
 
             if diff is not None:
-                isQPUpdated = 'quests' in diff or 'potapovQuests' in diff
-                isQPUpdated |= 'pm_progress' in diff or 'pqStates' in diff.get('cache', {})
+                isQPUpdated = 'quests' in diff or 'personalMissionQuests' in diff
+                isQPUpdated |= 'pm_progress' in diff or 'pmQuestsStates' in diff.get('cache', {})
                 if not isQPUpdated and 'tokens' in diff:
                     for tokenID in diff['tokens'].iterkeys():
                         if any(tokenID.startswith(t) for t in PM_TOKEN_PREFIXES):

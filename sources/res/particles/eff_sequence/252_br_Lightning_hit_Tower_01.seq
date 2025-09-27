@@ -250,6 +250,7 @@
 		<name>electricity_top_small_01</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small_01.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -305,6 +306,7 @@
 		<name>electricity_top_small_02</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small_01.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -360,6 +362,7 @@
 		<name>electricity_top_01</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -415,6 +418,7 @@
 		<name>electricity_top_02</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -462,6 +466,7 @@
 		<name>electricity_top_03</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -517,6 +522,7 @@
 		<name>electricity_top_04</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -572,6 +578,7 @@
 		<name>electricity_top_05</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -627,6 +634,7 @@
 		<name>electricity_bottom_01</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -682,6 +690,7 @@
 		<name>electricity_bottom_02</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -745,6 +754,7 @@
 		<name>electricity_bottom_03</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -811,6 +821,7 @@
 		<name>electricity_bottom_04</name>
 		<type>model</type>
 		<resource>particles/content_deferred/GFX_models/environment/252_battle_city/lightning_01_small.model</resource>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>
@@ -1239,6 +1250,7 @@
 		<name>Delay</name>
 		<type>model</type>
 		<resource/>
+		<castsShadow>false</castsShadow>
 		<track>
 			<name>position</name>
 			<type>vector3</type>

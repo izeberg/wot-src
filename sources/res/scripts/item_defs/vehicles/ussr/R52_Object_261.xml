@@ -4549,7 +4549,7 @@
 			<guns>
 				<_180mm_B-1-P>
 					shared
-					<maxAmmo>20</maxAmmo>
+					<maxAmmo>28</maxAmmo>
 					<armor>
 						<armor_1>20</armor_1>
 						<gun>30</gun>
@@ -4558,7 +4558,7 @@
 						0.59
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>32</reloadTime>
+					<reloadTime>34</reloadTime>
 					<aimingTime>
 						4.5
 						<!--BW_String-->

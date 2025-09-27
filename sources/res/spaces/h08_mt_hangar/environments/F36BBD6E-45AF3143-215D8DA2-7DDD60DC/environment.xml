@@ -158,7 +158,7 @@
 		<dynamicShadowsLightSize>13.000000</dynamicShadowsLightSize>
 	</Shadow>
 	<SSShadows>
-		<enable>false</enable>
+		<enableFromPreset>-1</enableFromPreset>
 		<amplify>0.500000</amplify>
 	</SSShadows>
 	<VFX>
@@ -210,13 +210,13 @@
 	</overlayMaterial>
 	<day_night_cycle>
 		<forward>
-			<angle>77.250000</angle>
-			<angleZ>360.000000</angleZ>
-			<angleShadow>77.250000</angleShadow>
+			<angle>37.000000</angle>
+			<angleZ>160.000000</angleZ>
+			<angleShadow>192.000000</angleShadow>
 		</forward>
 		<deferred>
-			<angle>33.000000</angle>
-			<angleZ>110.349998</angleZ>
+			<angle>7.000000</angle>
+			<angleZ>192.000000</angleZ>
 		</deferred>
 		<sunScale>0.000000</sunScale>
 		<sunlightAngularSize>0.000000</sunlightAngularSize>
@@ -297,4 +297,5 @@
 			<contrast>1.000000</contrast>
 		</forward>
 	</AlbedoScaleSettings>
+	<visibilityMask>4294967295</visibilityMask>
 </root>

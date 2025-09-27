@@ -704,7 +704,7 @@ msgid "bonusType/4"
 msgstr "Специальный бой"
 
 msgid "bonusType/42"
-msgstr "«%(modeName)s»"
+msgstr "Полевые испытания"
 
 msgid "bonusType/43"
 msgstr "Натиск"
@@ -1113,6 +1113,9 @@ msgstr "Создать взвод события"
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: создать взвод"
 
+msgid "contextMenu/createPortalSquad"
+msgstr "Взвод события «Разлом»"
+
 msgid "contextMenu/createPrivateChannel"
 msgstr "Отправить сообщение"
 
@@ -1121,9 +1124,6 @@ msgstr "Создать взвод для Рангового боя"
 
 msgid "contextMenu/createSquad"
 msgstr "Создать взвод"
-
-msgid "contextMenu/createWhiteTigerSquad"
-msgstr "Создать взвод Гончих"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Сменить члена экипажа"
@@ -1744,9 +1744,6 @@ msgstr "Доступна аренда машины"
 msgid "currentVehicleStatus/rentableAgain"
 msgstr "Продлить аренду"
 
-msgid "currentVehicleStatus/rentalBattleIsOver"
-msgstr "Бои исчерпаны"
-
 msgid "currentVehicleStatus/rentalIsOver"
 msgstr "Аренда завершена"
 
@@ -1764,9 +1761,6 @@ msgstr "Подписка отменена"
 
 msgid "currentVehicleStatus/tempUnavailable"
 msgstr "Временно недоступно"
-
-msgid "currentVehicleStatus/ticketsShortage"
-msgstr "Нет ключа"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "К бою готов!"
@@ -2647,9 +2641,6 @@ msgstr "Обслуживание"
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Внешний вид"
 
-msgid "hangar/closeBtn"
-msgstr "ПОКИНУТЬ РЕЖИМ"
-
 msgid "hangar/crew/rody/dog/moreInfoLabel"
 msgstr "Подробнее"
 
@@ -3079,9 +3070,6 @@ msgstr "Тренировочный бой"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Линия фронта"
-
-msgid "headerButtons/battle/types/event"
-msgstr "Ваффентрагер: наследие"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Ивентовый взвод"
@@ -6454,9 +6442,6 @@ msgstr "Продлить аренду"
 msgid "tankCarousel/vehicleStates/rentableAgain/ranked"
 msgstr "Продлить аренду"
 
-msgid "tankCarousel/vehicleStates/rentalBattleIsOver"
-msgstr "Бои исчерпаны"
-
 msgid "tankCarousel/vehicleStates/rentalIsOver"
 msgstr "Аренда завершена"
 
@@ -6482,9 +6467,6 @@ msgstr ""
 
 msgid "tankCarousel/vehicleStates/tempUnavailable"
 msgstr "Временно недоступно"
-
-msgid "tankCarousel/vehicleStates/ticketsShortage"
-msgstr "Нет ключа"
 
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недоступно"
@@ -7229,7 +7211,7 @@ msgid "vehicle/igrRentLeft/hours"
 msgstr "часов: %(hours)s"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Ещё боёв: %(battles)s"
+msgstr "Боёв доступно: %(battles)s"
 
 msgid "vehicle/rentLeft/days"
 msgstr "Дней аренды: %(days)s"

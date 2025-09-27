@@ -132,6 +132,12 @@ class VEHICLE_PREVIEW(object):
     SHOWCASESTYLEBUYING_ACTIONBTN_TOOLTIP_NOTENOUGHFUNDS = '#vehicle_preview:showcaseStyleBuying/actionBtn/tooltip/notEnoughFunds'
     SHOWCASESTYLEBUYING_ACTIONBTN_TOOLTIP_UNAVAILABLE = '#vehicle_preview:showcaseStyleBuying/actionBtn/tooltip/unavailable'
     SHOWCASESTYLEBUYING_ACTIONBTN_TOOLTIP_SERVICEUNAVAILABLE = '#vehicle_preview:showcaseStyleBuying/actionBtn/tooltip/serviceUnavailable'
+    STATTRACKERPANEL_LABEL = '#vehicle_preview:statTrackerPanel/label'
+    TOOLTIPS_STATTRACK_TITLE = '#vehicle_preview:tooltips/statTrack/title'
+    TOOLTIPS_STATTRACK_DESCRIPTION_FIRSTPART = '#vehicle_preview:tooltips/statTrack/description/firstPart'
+    TOOLTIPS_STATTRACK_DESCRIPTION_SECONDPART = '#vehicle_preview:tooltips/statTrack/description/secondPart'
+    TOOLTIPS_STATTRACK_DESCRIPTION_THIRDPART = '#vehicle_preview:tooltips/statTrack/description/thirdPart'
+    TOOLTIPS_STATTRACK_MOREINFO = '#vehicle_preview:tooltips/statTrack/moreInfo'
     HEADER_BACKBTN_DESCRLABEL_ENUM = (
      HEADER_BACKBTN_DESCRLABEL_RESEARCHTREE,
      HEADER_BACKBTN_DESCRLABEL_PERSONALAWARDS,

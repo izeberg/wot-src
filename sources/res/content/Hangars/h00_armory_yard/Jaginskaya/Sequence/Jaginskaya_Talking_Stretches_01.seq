@@ -32,7 +32,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>30.900002</duration>
+				<duration>21.000000</duration>
 				<value>Root|Head</value>
 			</frame>
 		</track>
@@ -41,8 +41,8 @@
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>30.997499</duration>
-				<sequenceSound>ay_vo_jaginskaya_idle_talking</sequenceSound>
+				<duration>21.000000</duration>
+				<sequenceSound>ay_vo_jaginskaya_idle_talking_1</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

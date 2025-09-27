@@ -43,6 +43,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.battle.views.vehicleMarkers.IVehicleMarkerInvokable;
    import net.wg.gui.battle.views.vehicleMarkers.IVehicleMarkersManager;
    import net.wg.gui.battle.views.vehicleMarkers.PyrometerAction;
+   import net.wg.gui.battle.views.vehicleMarkers.StatTrackMarker;
    import net.wg.gui.battle.views.vehicleMarkers.StaticArtyMarker;
    import net.wg.gui.battle.views.vehicleMarkers.StaticObjectMarker;
    import net.wg.gui.battle.views.vehicleMarkers.TargetMarker;
@@ -170,6 +171,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATICARTYMARKER:Class = StaticArtyMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATICOBJECTMARKER:Class = StaticObjectMarker;
+      
+      public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_STATTRACKMARKER:Class = StatTrackMarker;
       
       public static const NET_WG_GUI_BATTLE_VIEWS_VEHICLEMARKERS_TARGETMARKER:Class = TargetMarker;
       

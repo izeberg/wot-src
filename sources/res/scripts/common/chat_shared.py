@@ -1496,7 +1496,7 @@ SYS_MESSAGE_TYPE = Enumeration('systemMessageType', [
  'vehicleRented',
  'rentalsExpired',
  'rentCompensation',
- 'potapovQuestBonus',
+ 'pmQuestBonus',
  'premiumPersonalDiscount',
  'goodieRemoved',
  'specBattleInvite',

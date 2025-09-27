@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.663463 -0.009031 -2.802984</min>
+		<max>1.664783 1.032660 2.893351</max>
+	</visibilityBox>
+	<parent>vehicles/american/A175_OTAC_MT_58/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A175_OTAC_MT_58/crash/lod0/Chassis</nodefullVisual>
+</root>

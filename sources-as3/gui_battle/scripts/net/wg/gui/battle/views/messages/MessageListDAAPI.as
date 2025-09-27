@@ -2,6 +2,7 @@ package net.wg.gui.battle.views.messages
 {
    import flash.display.DisplayObjectContainer;
    import flash.events.Event;
+   import net.wg.data.constants.Values;
    import net.wg.data.constants.generated.BATTLE_MESSAGES_CONSTS;
    import net.wg.gui.battle.views.messages.VO.FadingMessageListSettingsVO;
    import net.wg.gui.battle.views.messages.VO.PoolSettingsVO;
@@ -34,6 +35,8 @@ package net.wg.gui.battle.views.messages
       private var _goldMessagesPool:FadedMessagesPool;
       
       private var _selfMessagesPool:FadedMessagesPool;
+      
+      private var _greenMessageColorOverride:int = -1;
       
       public function MessageListDAAPI(param1:DisplayObjectContainer)
       {
@@ -209,8 +212,29 @@ package net.wg.gui.battle.views.messages
             closeOldestMessage();
          }
          var _loc4_:FadedTextMessage = param3.createItem();
-         _loc4_.setData(param1,param2);
+         if(param3 != this._greenMessagesPool)
+         {
+            _loc4_.setData(param1,param2);
+         }
+         else if(this._greenMessageColorOverride == Values.DEFAULT_INT)
+         {
+            _loc4_.setData(param1,param2);
+         }
+         else
+         {
+            _loc4_.setData(param1,param2,true,this._greenMessageColorOverride);
+         }
          pushMessage(_loc4_);
+      }
+      
+      public function get greenMessageColorOverride() : int
+      {
+         return this._greenMessageColorOverride;
+      }
+      
+      public function set greenMessageColorOverride(param1:int) : void
+      {
+         this._greenMessageColorOverride = param1;
       }
       
       public function get isDAAPIInited() : Boolean

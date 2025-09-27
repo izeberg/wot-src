@@ -52,10 +52,6 @@ _LONG_WAITING_LEVELS = (9, 10, 11)
 _LONG_WAITING_FOR_LEVEL = (11, )
 _HTMLTEMP_PLAYERSLABEL = 'html_templates:lobby/queue/playersLabel'
 
-def _timeLabel(time):
-    return '%d:%02d' % divmod(time, 60)
-
-
 class QueueProvider(object):
 
     def __init__(self, proxy, qType=constants.QUEUE_TYPE.UNKNOWN):
@@ -124,9 +120,6 @@ class QueueProvider(object):
         if currPlayer is not None and hasattr(currPlayer, 'createArenaFromQueue'):
             currPlayer.createArenaFromQueue()
         return
-
-    def getVehicle(self):
-        return g_currentVehicle.item
 
     def _doRequestQueueInfo(self, currPlayer):
         params = self._getRequestQueueInfoParams()
@@ -317,7 +310,7 @@ class BattleQueue(BattleQueueMeta, LobbySubView):
         g_playerEvents.onArenaCreated += self.onStartBattle
         self.__updateQueueInfo()
         self.__updateTimer()
-        self.updateClientState()
+        self.__updateClientState()
         MusicControllerWWISE.play()
 
     def _dispose(self):
@@ -328,38 +321,39 @@ class BattleQueue(BattleQueueMeta, LobbySubView):
         self._blur.fini()
         super(BattleQueue, self)._dispose()
 
-    def updateClientState(self):
-        if self.prbEntity is None or self.__provider is None:
+    def __updateClientState(self):
+        if self.prbEntity is None:
             return
-        permissions = self.prbEntity.getPermissions()
-        if not permissions.canExitFromQueue():
-            self.as_showExitS(False)
-        guiType = prb_getters.getArenaGUIType(queueType=self.__provider.getQueueType())
-        title = self.__provider.getTitle(guiType)
-        descriptionRes = R.strings.menu.loading.battleTypes.desc.num(guiType)
-        description = backport.text(descriptionRes()) if descriptionRes.exists() else ''
-        if guiType != constants.ARENA_GUI_TYPE.UNKNOWN and guiType in constants.ARENA_GUI_TYPE_LABEL.LABELS:
-            iconlabel = constants.ARENA_GUI_TYPE_LABEL.LABELS[guiType]
         else:
-            iconlabel = 'neutral'
-        additional = self.__provider.additionalInfo()
-        vehicle = self.__provider.getVehicle()
-        textLabel = self.__provider.getTankInfoLabel()
-        tankName = self.__provider.getTankName(vehicle)
-        iconPath = self.__provider.getTankIcon(vehicle)
-        layoutStr = self.__provider.getLayoutStr()
-        typeInfo = {'iconLabel': iconlabel, 
-           'iconPath': self.__provider.getIconPath(iconlabel), 
-           'title': title, 
-           'description': description, 
-           'additional': additional, 
-           'tankLabel': text_styles.main(textLabel), 
-           'tankIcon': iconPath, 
-           'tankName': tankName, 
-           'layoutStr': layoutStr}
-        typeInfo.update(self.__provider.getAdditionalParams())
-        self.as_setTypeInfoS(typeInfo)
-        return
+            permissions = self.prbEntity.getPermissions()
+            if not permissions.canExitFromQueue():
+                self.as_showExitS(False)
+            guiType = prb_getters.getArenaGUIType(queueType=self.__provider.getQueueType())
+            title = self.__provider.getTitle(guiType)
+            descriptionRes = R.strings.menu.loading.battleTypes.desc.num(guiType)
+            description = backport.text(descriptionRes()) if descriptionRes.exists() else ''
+            if guiType != constants.ARENA_GUI_TYPE.UNKNOWN and guiType in constants.ARENA_GUI_TYPE_LABEL.LABELS:
+                iconlabel = constants.ARENA_GUI_TYPE_LABEL.LABELS[guiType]
+            else:
+                iconlabel = 'neutral'
+            additional = self.__provider.additionalInfo()
+            vehicle = g_currentVehicle.item
+            textLabel = self.__provider.getTankInfoLabel()
+            tankName = self.__provider.getTankName(vehicle)
+            iconPath = self.__provider.getTankIcon(vehicle)
+            layoutStr = self.__provider.getLayoutStr()
+            typeInfo = {'iconLabel': iconlabel, 
+               'iconPath': self.__provider.getIconPath(iconlabel), 
+               'title': title, 
+               'description': description, 
+               'additional': additional, 
+               'tankLabel': text_styles.main(textLabel), 
+               'tankIcon': iconPath, 
+               'tankName': tankName, 
+               'layoutStr': layoutStr}
+            typeInfo.update(self.__provider.getAdditionalParams())
+            self.as_setTypeInfoS(typeInfo)
+            return
 
     def __stopUpdateScreen(self):
         if self.__timerCallback is not None:
@@ -383,7 +377,7 @@ class BattleQueue(BattleQueueMeta, LobbySubView):
         self.__timerCallback = None
         self.__timerCallback = BigWorld.callback(1, self.__updateTimer)
         textLabel = text_styles.main(makeString(MENU.PREBATTLE_TIMERLABEL))
-        timeLabel = _timeLabel(self.__createTime)
+        timeLabel = '%d:%02d' % divmod(self.__createTime, 60)
         self.as_setTimerS(textLabel, timeLabel)
         self.__createTime += 1
         return

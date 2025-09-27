@@ -1,16 +1,16 @@
 <version.xml>
 	<appname>	#menu:login/version	</appname>
-	<version> v.1.37.0.0 #1999 </version>
+	<version> v.1.38.0.0 #2111 </version>
 	<showLicense> 42 </showLicense>
 	<ingameHelpVersion>	1	</ingameHelpVersion>
 	<meta>
-		<client> 2192676 </client>
+		<client> 2205830 </client>
 		<overrides> 4978 RPT </overrides>
-		<localization> 27162 </localization>
+		<localization> 27184 </localization>
 		<target_region> RU </target_region>
 		<realm> RPT </realm>
 		<build_profile> RU </build_profile>
-		<branch> 1.37 </branch>
+		<branch> 1.38 </branch>
 		<buildScriptsRevision> 2162215 </buildScriptsRevision>
 	</meta>
 </version.xml>

@@ -5675,7 +5675,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.86
+						0.82
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
@@ -5693,7 +5693,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>7</aimingTime>
+					<aimingTime>6</aimingTime>
 					<turretYawLimits>
 						-7.5 7.5
 						<!--BW_String-->
@@ -5813,13 +5813,10 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
-						0.85
+						0.8
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						31.6
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>27</reloadTime>
 					<shotDispersionFactors>
 						<turretRotation>
 							0.44
@@ -5834,7 +5831,7 @@
 							<!--BW_String-->
 						</whileGunDamaged>
 					</shotDispersionFactors>
-					<aimingTime>7</aimingTime>
+					<aimingTime>6</aimingTime>
 					<turretYawLimits>
 						-7.5 7.5
 						<!--BW_String-->

@@ -5387,11 +5387,11 @@
 						<gun>25</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.84
+						0.82
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						6.5
+						6.0
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -5537,10 +5537,7 @@
 						0.78
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>
-						23.5
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>21</reloadTime>
 					<aimingTime>6</aimingTime>
 					<invisibilityFactorAtShot>
 						0.15

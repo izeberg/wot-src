@@ -27,7 +27,7 @@ _logger = logging.getLogger(__name__)
 REG_EXP_QUEST_SUBTYPE = ':([Y, y]\\d*)|:([A,a,B,b][T,t])'
 _T50_2_STYLE_NAME = backport.text(R.strings.vehicle_customization.special_style.t50_2())
 _EXCLUDED_BONUSES = ('slots', )
-_BONUSES_ORDER = ({'getLabel': _T50_2_STYLE_NAME}, {'getName': 'crystal'}, {'getName': 'credits'}, {'getName': 'premium_plus'}, {'getName': 'customizations', 'getIcon': 'style'}, {'getName': 'goodies', 'getIcon': 'credits'}, {'getName': 'goodies', 'getIcon': 'xp'}, {'getIcon': 'universalBook'}, {'getIcon': 'recertificationForm'}, {'getName': 'badge'}, {'getIcon': 'projectionDecal'}, {'getName': 'customizations', 'getIcon': 'emblem'}, {'getName': 'dossier_achievement'})
+_BONUSES_ORDER = ({'getLabel': _T50_2_STYLE_NAME}, {'getName': 'crystal'}, {'getName': 'credits'}, {'getName': 'premium_plus'}, {'getName': 'customizations', 'getIcon': 'style'}, {'getName': 'goodies', 'getIcon': 'credits'}, {'getName': 'goodies', 'getIcon': 'xp'}, {'getIcon': 'universalBook'}, {'getIcon': 'recertificationForm'}, {'getName': 'badge'}, {'getName': 'dossier_achievement'}, {'getIcon': 'projectionDecal'}, {'getName': 'customizations', 'getIcon': 'emblem'})
 
 def _keySortOrder(bonus, _):
     for index, criteria in enumerate(_BONUSES_ORDER):

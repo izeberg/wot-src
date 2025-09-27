@@ -120,9 +120,6 @@ msgstr "Уключыць галасавую сувязь"
 msgid "buttons/unMute/description"
 msgstr "Націсніце, каб уключыць галасавую сувязь у звязе."
 
-msgid "event_squad"
-msgstr "Взвод Гончих"
-
 msgid "headerButton/inSquad"
 msgstr "У звязе"
 
@@ -180,14 +177,11 @@ msgstr "Звяз"
 
 msgid "headerButton/tooltips/eventSquad/body"
 msgstr ""
-"Создание формирования из 2-3 игроков для совместной игры в режиме "
-"«Ваффентрагер: Наследие» на стороне Гончих."
+"Создание формирования из 2–3 игроков для совместной игры в событии «Большие "
+"гонки»."
 
 msgid "headerButton/tooltips/eventSquad/header"
-msgstr "Взвод Гончих"
-
-msgid "headerButton/tooltips/inEventSquad/header"
-msgstr "Взвод Гончих"
+msgstr "Взвод события «Большие гонки»"
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
 msgstr "Націсніце, каб перайсці ў меню звязу."
@@ -207,6 +201,20 @@ msgstr ""
 
 msgid "headerButton/tooltips/mapboxSquad/header"
 msgstr "Разведка боем: звяз"
+
+msgid "headerButton/tooltips/portalSquad/body"
+msgstr ""
+"Объединяйте усилия с другими танкистами (числом от 2 до 5): только вместе вы"
+" сможете одолеть Катрину!"
+
+msgid "headerButton/tooltips/portalSquad/header"
+msgstr "Собирайтесь во взводы!"
+
+msgid "headerButton/tooltips/portalSquadOff/body"
+msgstr "Создание взвода невозможно. Но это временно."
+
+msgid "headerButton/tooltips/portalSquadOff/header"
+msgstr "Отказано."
 
 msgid "headerButton/tooltips/rankedSquad/body"
 msgstr ""
@@ -314,7 +322,7 @@ msgid "members/header/epic"
 msgstr ": Лінія фронту"
 
 msgid "members/header/event"
-msgstr ": Ваффентрагер: вызов"
+msgstr ": Событие"
 
 msgid "members/header/mapbox"
 msgstr ": Разведка боем"
@@ -353,6 +361,9 @@ msgstr ""
 
 msgid "members/header/tooltip/epic/header"
 msgstr "Правілы фармавання звязу"
+
+msgid "members/header/tooltip/event/body"
+msgstr "Взвод должен состоять из трёх специальных машин режима."
 
 msgid "members/header/tooltip/event/header"
 msgstr "Правілы фармавання звязу"

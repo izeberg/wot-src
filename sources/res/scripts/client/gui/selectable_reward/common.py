@@ -122,6 +122,14 @@ class SelectableRewardManager(object):
             return offer.availableTokens + countReceivedGifts
 
     @classmethod
+    def getTokenByGiftToken(cls, giftToken):
+        offer = cls.__offersDataProvider.getOfferByGiftToken(giftToken)
+        if offer is None:
+            return
+        else:
+            return offer.token
+
+    @classmethod
     def getRemainedChoicesForFeature(cls):
         result = 0
         for token in cls.__getFeatureTokens():
@@ -134,6 +142,14 @@ class SelectableRewardManager(object):
     @classmethod
     def getTabTooltipData(cls, selectableBonus):
         return
+
+    @classmethod
+    def getRewardProperties(cls, tokenID):
+        offer = SelectableRewardManager.__offersDataProvider.getOfferByToken(tokenID)
+        if offer is None:
+            return {}
+        else:
+            return offer.properties
 
     @classmethod
     def _createSelectableBonus(cls, tokenID, token):
@@ -190,7 +206,7 @@ class PersonalMissionsSelectableRewardManager(SelectableRewardManager):
     @classmethod
     def isAvailableBonus(cls, tokenID):
         if tokenID.startswith(PM3_OFFER_TOKEN_PREFIX):
-            tokenID = tokenID.replace('_gift', '')
+            tokenID = tokenID.replace(PersonalMissionsSelectableRewardManager.__REWARD_EXTRA_ENDING, '')
         offer = cls.__offersDataProvider.getOfferByToken(tokenID)
         return offer is not None and offer.isOfferAvailable
 
@@ -227,7 +243,7 @@ class BattleMattersSelectableRewardManager(SelectableRewardManager):
 
     @classmethod
     def isFeatureReward(cls, tokenID):
-        return tokenID == cls._battleMattersController.getDelayedRewardToken()
+        return cls._battleMattersController.isDelayedRewardToken(tokenID)
 
     @classmethod
     def getTabTooltipData(cls, selectableBonus):

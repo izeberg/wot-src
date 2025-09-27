@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod1/Gun_01</nodefullVisual>
+	<visibilityBox>
+		<min>-0.728048 -0.287425 -0.059773</min>
+		<max>0.725447 0.378129 5.196526</max>
+	</visibilityBox>
+	<parent>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

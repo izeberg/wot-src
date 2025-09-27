@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod2/Turret_anim</nodefullVisual>
+	<visibilityBox>
+		<min>-0.629470 0.011998 -0.317394</min>
+		<max>-0.348948 0.370310 -0.088424</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB139_Vulcan/normal/lod3/Turret_anim</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+</root>

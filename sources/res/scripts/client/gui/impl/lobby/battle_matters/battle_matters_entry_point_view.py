@@ -53,7 +53,7 @@ class BattleMattersEntryPointView(ViewImpl):
             state = State.NORMAL
             if self.__battleMattersController.isPaused():
                 state = State.ERROR
-            elif self.__battleMattersController.hasDelayedRewards():
+            elif self.__battleMattersController.hasUnobtainedDelayedRewards():
                 state = State.HASTOKEN
             tx.setState(state)
             if currentQuest is not None:
@@ -63,6 +63,5 @@ class BattleMattersEntryPointView(ViewImpl):
                 tx.setMaxProgress(maxProgress)
         return
 
-    @staticmethod
-    def __onClick():
+    def __onClick(self):
         showBattleMatters()

@@ -194,5 +194,21 @@ package net.wg.gui.components.crosshairPanel
       public function setFlameDistanceVisibility(param1:Boolean, param2:String) : void
       {
       }
+      
+      public function setShotFlyTimeIndVisibility(param1:Boolean) : void
+      {
+      }
+      
+      public function setShotFlyTimeIndValue(param1:Number) : void
+      {
+      }
+      
+      public function setShotDamageIndVisibility(param1:Boolean) : void
+      {
+      }
+      
+      public function setShotDamageIndValue(param1:int, param2:int) : void
+      {
+      }
    }
 }

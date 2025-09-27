@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.211627 -0.895000 -3.276580</min>
+		<max>1.141161 0.330996 6.339994</max>
+	</visibilityBox>
+	<parent>vehicles/british/GB139_Vulcan/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/british/GB139_Vulcan/crash/lod0/Gun_01</nodelessVisual>
+</root>

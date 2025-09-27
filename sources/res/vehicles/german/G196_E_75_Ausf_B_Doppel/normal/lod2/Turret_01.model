@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/german/G196_E_75_Ausf_B_Doppel/normal/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.410422 -0.000004 -2.316536</min>
+		<max>1.411636 1.568006 1.576079</max>
+	</visibilityBox>
+</root>

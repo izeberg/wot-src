@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB139_Vulcan/crash/lod4/Gun_01</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-0.206838 -0.894999 -3.284292</min>
+		<max>1.125414 0.322041 6.351664</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/crash/lod3/Gun_01</nodefullVisual>
+</root>

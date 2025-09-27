@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod4/Chassis</parent>
+	<tank>true</tank>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.760362 0.000021 -3.721677</min>
+		<max>1.760362 1.418304 3.779604</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod3/Chassis</nodefullVisual>
+</root>

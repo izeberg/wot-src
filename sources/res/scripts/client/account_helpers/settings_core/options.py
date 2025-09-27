@@ -673,7 +673,7 @@ class VOIPCaptureDevicesSetting(UserPrefsStringSetting):
         return deviceIdx
 
     def _getOptions(self):
-        return [ i18n.encodeUtf8(device.decode(sys.getfilesystemencoding())) for device in self._getRawOptions()
+        return [ i18n.encodeUtf8(device.split('|', 1)[1].decode(sys.getfilesystemencoding())) for device in self._getRawOptions()
                ]
 
     def _getRawOptions(self):
@@ -1053,7 +1053,7 @@ class MonitorSetting(SettingAbstract):
         self._storage.monitor = int(value)
 
     def _getOptions(self):
-        return BigWorld.wg_getMonitorNames()
+        return BigWorld.getMonitorNames()
 
     def pack(self):
         result = super(MonitorSetting, self).pack()
@@ -2832,11 +2832,13 @@ class InterfaceScaleSetting(UserPrefsFloatSetting):
         scale = self.__getScale()
         if BattleReplay.isPlaying():
             return scale
-        self.__checkAndCorrectScaleValue(scale)
-        return scale
+        return self.__checkAndCorrectScaleValue(scale)
 
     def getDefaultValue(self):
         return AccountSettings.getSettingsDefault(self.sectionName)
+
+    def updateScale(self):
+        self.setSystemValue(self.__checkAndCorrectScaleValue(self.__userData))
 
     def setSystemValue(self, scale):
         width, height = GUI.screenResolution()[:2]
@@ -2901,6 +2903,7 @@ class InterfaceScaleSetting(UserPrefsFloatSetting):
             self.__userData = self.AUTO_SCALE
             self.setSystemValue(self.__getScale())
             self.settingsCore.interfaceScale.scaleChanged()
+        return self.__getScale()
 
 
 class GraphicsQualityNote(SettingAbstract):

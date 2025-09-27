@@ -8044,16 +8044,13 @@
 				<_203mm_B-4>
 					shared
 					<maxAmmo>16</maxAmmo>
-					<reloadTime>
-						53.2
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>51</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -60 1 -60</minPitch>
 						<maxPitch>0 0 1 0</maxPitch>
 					</pitchLimits>
 					<shotDispersionRadius>
-						0.82
+						0.79
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<shotDispersionFactors>
@@ -8075,7 +8072,7 @@
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<aimingTime>
-						6.6
+						6.2
 						<!--BW_String-->
 					</aimingTime>
 					<turretYawLimits>-4 4</turretYawLimits>

@@ -8,6 +8,24 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "A1001_OTAC_MT_58_T"
+msgstr "OTAC MT-58-105"
+
+msgid "A1001_OTAC_MT_58_T_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "A1001_OTAC_MT_58_T_long_special"
+msgstr "?empty?"
+
+msgid "A1001_OTAC_MT_58_T_short"
+msgstr "MT-58-105"
+
+msgid "A1001_OTAC_MT_58_T_short_special"
+msgstr "?empty?"
+
 msgid "A101_M56"
 msgstr "M56 Scorpion"
 
@@ -367,20 +385,6 @@ msgstr ""
 "паказчыкаў бранявой аховы, не адрозніваліся ад M60, абсталяваных такімі "
 "самымі ўзбраеннем і рухавіком."
 
-msgid "A120_M48A5_hound_TLXXL"
-msgstr "Thunderbolt"
-
-msgid "A120_M48A5_hound_TLXXL_descr"
-msgstr ""
-"«Я читала досье фон Кригера до того, как оказаться здесь. По крайней мере, то, с чем мне по допуску разрешили ознакомиться. Как странно. Мне казалось, должен нарисоваться образ врага, которого нужно устранить любым методом. Но нет, даже в сухих строках его личного дела читается уважение к его персоне, может даже восхищение в какой-то мере. Альянс выставляет его оппонентом (но не врагом!) и называет техническим гением, каких мы ещё не видели. Да что говорить — даже оружие, которым мы теперь обладаем, вот хотя бы этот «Тандерболт» — это же его наработки, фон Кригера. Он настолько силён, что единственное, чем можно его остановить — его же оружие. Мне было бы весьма любопытно с ним пообщаться, узнать его мотивацию. Я не вижу в нём врага. Да и Альянс таковым не считает, как мне показалось. Но мы тут, а он — там. И бою быть. Настоящему бою.\n"
-"И опять «Тандерболт». Скоро уже каски и ботинки с этим именем начнут делать. А пройдут годы, закончатся предметы, они начнут называть новые изделия «Тандерболт ll» — и всё по новой. У Альянса скорее с фантазией проблемы, а не с фон Кригером»."
-
-msgid "A120_M48A5_hound_TLXXL_short"
-msgstr "Thunderbolt"
-
-msgid "A120_M48A5_hound_TLXXL_short_special"
-msgstr "ОБТ с глубокой модернизацией"
-
 msgid "A120_M48A5_short"
 msgstr "M48 Patton"
 
@@ -616,9 +620,9 @@ msgstr "T32M"
 
 msgid "A12_T32_M_descr"
 msgstr ""
-"Эксперыментальны цяжкі танк перыяду Другой сусветнай вайны. Распрацоўваўся на аснове танкаў М26 Pershing і Т29. Доследныя ўзоры былі пабудаваны ў 1946 г. У сувязі з заканчэннем Другой сусветнай вайны Т32 на ўзбраенне прыняты не быў і серыйна не вырабляўся.\n"
+"Разработка нового тяжёлого танка была инициирована в 1945-м году с максимальным использованием узлов танка M26 Pershing. Проект также предусматривал применение в силовом агрегате трансмиссии с поперечным приводом, аналогичной той, что планировалась для тяжёлого танка T29. Отличительной особенностью модификации T32M по сравнению с проектом, воплотившимся в нескольких опытных образцах, должно было стать оснащение модернизированной 105-мм пушкой T5E1M — несмотря на одинаковый калибр, это орудие было более мощным и превосходило оригинальную версию по показателям бронепробиваемости. Однако, поскольку Департамент вооружений счёл усовершенствование этой пушки неприоритетной задачей, а разработку проектного тяжёлого танка — избыточной ещё до испытаний его опытных образцов, проект T32M так и остался на уровне предварительного обсуждения.\n"
 "\n"
-"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+"Характеристики машины могут быть изменены без компенсации."
 
 msgid "A12_T32_M_long_special"
 msgstr ""
@@ -1017,7 +1021,7 @@ msgstr "MBT-B Test"
 
 msgid "A150_MBT_B_T_descr"
 msgstr ""
-"У ліпені 1964 года карпарацыя General Motors прэзентавала праект перспектыўнага асноўнага баявога танка (MBT). Праект увабраў у сябе найбольш перспектыўныя тэндэнцыі развіцця танкабудаўніцтва пачатку 1960-х гадоў: паніжаны сілуэт, добрую рухомасць і гідрапнеўматычную падвеску, якая забяспечвала плаўную хаду. Шмат увагі надавалася зніжэнню ўздзеяння радыяцыі. Праводзіліся працы над камбінаванай бранёй, якая мела б павысіць абарону ад кумулятыўных снарадаў. Меркавалася ўзброіць танк 120-мм гарматай або 120-мм гарматна-пускавой устаноўкай. Апераджала свой час рашэнне ўсталяваць на карме вежы ТВ-камеры для агляду прасторы ззаду і ваджэння машыны заднім ходам. Працы былі спынены на стадыі праектавання поўнаразмернага макета, а ўсе напрацоўкі ляглі ў аснову амерыканская праекта перспектыўнага танка 1970-х гадоў — МВТ70.\n"
+"У ліпені 1964 года карпарацыя General Motors прэзентавала праект перспектыўнага асноўнага баявога танка (MBT). Праект увабраў у сябе найбольш перспектыўныя тэндэнцыі развіцця танкабудаўніцтва пачатку 1960-х гадоў: паніжаны сілуэт, добрую рухомасць і гідрапнеўматычную падвеску, якая забяспечвала плаўную хаду. Шмат увагі надавалася зніжэнню ўздзеяння радыяцыі. Праводзіліся працы над камбінаванай бранёй, якая мела б павысіць абарону ад кумулятыўных снарадаў. Меркавалася ўзброіць танк 120-мм гарматай або 120-мм гарматна-пускавой устаноўкай. Апераджала свой час рашэнне ўсталяваць на карме вежы ТВ-камеры для агляду прасторы ззаду і ваджэння машыны заднім ходам. Працы былі спынены на стадыі праектавання поўнаразмернага макета, а ўсе напрацоўкі ляглі ў аснову амерыканскага праекта перспектыўнага танка 1970-х гадоў — МВТ70.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -1032,7 +1036,7 @@ msgstr "?empty?"
 
 msgid "A150_MBT_B_descr"
 msgstr ""
-"У ліпені 1964 года карпарацыя General Motors прэзентавала праект перспектыўнага асноўнага баявога танка (MBT). Праект увабраў у сябе найбольш перспектыўныя тэндэнцыі развіцця танкабудаўніцтва пачатку 1960-х гадоў: паніжаны сілуэт, добрую рухомасць і гідрапнеўматычную падвеску, якая забяспечвала плаўную хаду. Шмат увагі надавалася зніжэнню ўздзеяння радыяцыі. Праводзіліся працы над камбінаванай бранёй, якая мела б павысіць абарону ад кумулятыўных снарадаў. Меркавалася ўзброіць танк 120-мм гарматай або 120-мм гарматна-пускавой устаноўкай. Апераджала свой час рашэнне ўсталяваць на карме вежы ТВ-камеры для агляду прасторы ззаду і ваджэння машыны заднім ходам. Працы былі спынены на стадыі праектавання поўнаразмернага макета, а ўсе напрацоўкі ляглі ў аснову амерыканская праекта перспектыўнага танка 1970-х гадоў — МВТ70.\n"
+"У ліпені 1964 года карпарацыя General Motors прэзентавала праект перспектыўнага асноўнага баявога танка (MBT). Праект увабраў у сябе найбольш перспектыўныя тэндэнцыі развіцця танкабудаўніцтва пачатку 1960-х гадоў: паніжаны сілуэт, добрую рухомасць і гідрапнеўматычную падвеску, якая забяспечвала плаўную хаду. Шмат увагі надавалася зніжэнню ўздзеяння радыяцыі. Праводзіліся працы над камбінаванай бранёй, якая мела б павысіць абарону ад кумулятыўных снарадаў. Меркавалася ўзброіць танк 120-мм гарматай або 120-мм гарматна-пускавой устаноўкай. Апераджала свой час рашэнне ўсталяваць на карме вежы ТВ-камеры для агляду прасторы ззаду і ваджэння машыны заднім ходам. Працы былі спынены на стадыі праектавання поўнаразмернага макета, а ўсе напрацоўкі ляглі ў аснову амерыканскага праекта перспектыўнага танка 1970-х гадоў — МВТ70.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
@@ -1522,9 +1526,9 @@ msgstr "GMC M36B1"
 
 msgid "A174_M36B1_GMC_descr"
 msgstr ""
-".\n"
+" \n"
 "\n"
-"Характеристики машины могут быть изменены без компенсации."
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "A174_M36B1_GMC_long_special"
 msgstr "?empty?"
@@ -1533,6 +1537,24 @@ msgid "A174_M36B1_GMC_short"
 msgstr "M36B1"
 
 msgid "A174_M36B1_GMC_short_special"
+msgstr "?empty?"
+
+msgid "A175_OTAC_MT_58"
+msgstr "OTAC MT-58"
+
+msgid "A175_OTAC_MT_58_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "A175_OTAC_MT_58_long_special"
+msgstr "?empty?"
+
+msgid "A175_OTAC_MT_58_short"
+msgstr "MT-58"
+
+msgid "A175_OTAC_MT_58_short_special"
 msgstr "?empty?"
 
 msgid "A21_T14_long_special"
@@ -1545,6 +1567,26 @@ msgstr ""
 msgid "A21_T14_short_special"
 msgstr ""
 "Добрая забойнасць за хвіліну, трывалая лабавая браня, выдатная дынаміка"
+
+msgid "A23_M7_med_02"
+msgstr "M7 Wayfarer"
+
+msgid "A23_M7_med_02_descr"
+msgstr ""
+"У врат на границе миров появляется осознание того, что нет ничего вечного. Здесь металл превращается в пыль, а пыль просто растворяется. Здесь разбиваются мечты, здесь тают надежды. За этой гранью нет ответов, нет смысла и нет никаких дорог. На той стороне лишь пустота, и она куда глубже и безрадостнее, чем бескрайний космос. Кто по доброй воли пройдёт эти ворота, которые открываются только в одну сторону? Кому не достаточно предупреждений, домыслов, слухов? И если на вашем жизненном пути останется лишь один последний шаг, неужели вы потратите его на пересечение этой границы?\n"
+"\n"
+"Конечно, потратите. Не сомневайтесь. Ведь в этот момент вы будете не одни. \n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "A23_M7_med_02_long_special"
+msgstr "?empty?"
+
+msgid "A23_M7_med_02_short"
+msgstr "Wayfarer"
+
+msgid "A23_M7_med_02_short_special"
+msgstr "?empty?"
 
 msgid "A27_T82"
 msgstr "T82 HMC"
@@ -1720,8 +1762,11 @@ msgstr "AN-VRC-7A"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
-msgid "AN-VRC-7_WT"
-msgstr "AN/VRC-7 «Thunderbolt»"
+msgid "AN_GRC_3"
+msgstr "AN/GRC-3"
+
+msgid "AN_GRC_3_T"
+msgstr "AN/GRC-3"
 
 msgid "AN_GRC_7"
 msgstr "AN/GRC-7"
@@ -1765,6 +1810,9 @@ msgstr "AN/VRC-24"
 msgid "AN_VRC-3"
 msgstr "AN/VRC-3"
 
+msgid "AN_VRC-3_ISP"
+msgstr "AN/VRC-3"
+
 msgid "AN_VRC-3_MBT_T"
 msgstr "AN/VRC-3"
 
@@ -1782,6 +1830,14 @@ msgstr "AN/VRC-3"
 
 msgid "AOI-1490"
 msgstr "Continental AOI-1490"
+
+msgid "AOI-1490_ISP"
+msgstr "Continental AOI-1490"
+
+msgid "AOI-1490_ISP_short"
+msgstr ""
+"Continental\n"
+"AOI-1490"
 
 msgid "AOI-1490_short"
 msgstr ""
@@ -1815,6 +1871,9 @@ msgstr "Wireless Set No. 19"
 
 msgid "Buick_series_60"
 msgstr "Buick Series 60"
+
+msgid "Chassis_A1001_OTAC_MT_58_T"
+msgstr "MT-58"
 
 msgid "Chassis_A100_T49"
 msgstr "T49"
@@ -1884,9 +1943,6 @@ msgstr "M4A3E8 Thunderbolt VII"
 
 msgid "Chassis_A120_M48A5"
 msgstr "M48A5 Patton"
-
-msgid "Chassis_A120_M48A5_hound_TLXXL"
-msgstr "M48A5 Patton «Thunderbolt»"
 
 msgid "Chassis_A121_M26_Cologne"
 msgstr "T26E3"
@@ -2062,6 +2118,9 @@ msgstr "TF-2"
 msgid "Chassis_A174_M36B1_GMC"
 msgstr "VVSS Т48"
 
+msgid "Chassis_A175_OTAC_MT_58"
+msgstr "MT-58"
+
 msgid "Chassis_A27_T82"
 msgstr "T82 Pilot No. 1"
 
@@ -2179,7 +2238,13 @@ msgstr "T110E27"
 msgid "Chassis_T110E3"
 msgstr "T110E3"
 
+msgid "Chassis_T110E3_ISP"
+msgstr "T110E3"
+
 msgid "Chassis_T110E4"
+msgstr "T110E4"
+
+msgid "Chassis_T110E4_ISP"
 msgstr "T110E4"
 
 msgid "Chassis_T18"
@@ -2255,6 +2320,9 @@ msgid "Chassis_T54E1_2"
 msgstr "T54E1M2"
 
 msgid "Chassis_T57_58"
+msgstr "T97"
+
+msgid "Chassis_T57_58_ISP"
 msgstr "T97"
 
 msgid "Chassis_T57_58_T"
@@ -2595,9 +2663,6 @@ msgstr ""
 msgid "Continental_AV-1790-7B"
 msgstr "Continental AV-1790-7B"
 
-msgid "Continental_AV-1790-7B_WT"
-msgstr "Continental «Thunderbolt»"
-
 msgid "Continental_AV-1790-7B_short"
 msgstr ""
 "Continental\n"
@@ -2710,6 +2775,14 @@ msgstr ""
 
 msgid "Continental_AV_1790_5C"
 msgstr "Continental AV-1790-5C"
+
+msgid "Continental_AV_1790_5C_ISP"
+msgstr "Continental AV-1790-5C"
+
+msgid "Continental_AV_1790_5C_ISP_short"
+msgstr ""
+"Continental\n"
+"AV-1790-5C"
 
 msgid "Continental_AV_1790_5C_T"
 msgstr "Continental AV-1790-5C"
@@ -2953,6 +3026,12 @@ msgstr "HVSS T51"
 
 msgid "Hercules_HXE"
 msgstr "Hercules HXE"
+
+msgid "LDS_750"
+msgstr "LDS-750"
+
+msgid "LDS_750_T"
+msgstr "LDS-750"
 
 msgid "LVDS_1100_2"
 msgstr "LVDS 1100-2"
@@ -3215,6 +3294,9 @@ msgstr "M46 Patton"
 msgid "M47"
 msgstr "M47"
 
+msgid "M47_02"
+msgstr "M47"
+
 msgid "M4A2E4"
 msgstr "M4A2E4 Sherman"
 
@@ -3466,6 +3548,9 @@ msgstr "QF 6-pdr Mk. III"
 msgid "QF_6_pounder_Mk_IIIA"
 msgstr "QF 6-pdr Mk. IIIA"
 
+msgid "QF_6_pounder_Mk_III_02"
+msgstr "QF 6-pdr Mk. III"
+
 msgid "Ram-II"
 msgstr "Ram II"
 
@@ -3521,6 +3606,9 @@ msgstr "SCR 528AM"
 msgid "SCR_528R1"
 msgstr "SCR 528A"
 
+msgid "SCR_528_02"
+msgstr "SCR 528"
+
 msgid "SCR_528_594"
 msgstr "SCR 528"
 
@@ -3573,6 +3661,28 @@ msgstr "T110E5"
 msgid "T110E3"
 msgstr "T110E3"
 
+msgid "T110E3_ISP"
+msgstr "T110E3 (И)"
+
+msgid "T110E3_ISP_descr"
+msgstr ""
+"У 1954 г. к Дэтройце прайшла канферэнцыя па пытанні будучых цяжкіх танкаў, "
+"на якой былі прадстаўлены некалькі аванпраектаў новых машын. На аснове "
+"аднаго з праектаў (TS-31) кампанія Chrysler Corporation прапанавала "
+"распрацаваць новы цяжкі танк. Асноўнай умовай праекта было стварыць машыну, "
+"якая магла бы свабодна прайсці па Бернскім нацыянальным тунэлі. Пасля "
+"прапрацоўвання некалькіх варыянтаў канструкцыі работы над танкам былі "
+"спынены."
+
+msgid "T110E3_ISP_long_special"
+msgstr "?empty?"
+
+msgid "T110E3_ISP_short"
+msgstr "T110E3 (И)"
+
+msgid "T110E3_ISP_short_special"
+msgstr "?empty?"
+
 msgid "T110E3_descr"
 msgstr ""
 "У 1954 г. к Дэтройце прайшла канферэнцыя па пытанні будучых цяжкіх танкаў, "
@@ -3609,6 +3719,28 @@ msgid "T110E4_7x7_short"
 msgstr "T110E4 7x7"
 
 msgid "T110E4_7x7_short_special"
+msgstr "?empty?"
+
+msgid "T110E4_ISP"
+msgstr "T110E4 (И)"
+
+msgid "T110E4_ISP_descr"
+msgstr ""
+"У 1954 г. к Дэтройце прайшла канферэнцыя па пытанні будучых цяжкіх танкаў, "
+"на якой былі прадстаўлены некалькі аванпраектаў новых машын. На аснове "
+"аднаго з праектаў (TS-31) кампанія Chrysler Corporation прапанавала "
+"распрацаваць новы цяжкі танк. Асноўнай умовай праекта было стварыць машыну, "
+"якая магла бы свабодна прайсці па Бернскім нацыянальным тунэлі. Пасля "
+"прапрацоўвання некалькіх варыянтаў канструкцыі работы над танкам былі "
+"спынены."
+
+msgid "T110E4_ISP_long_special"
+msgstr "?empty?"
+
+msgid "T110E4_ISP_short"
+msgstr "T110E4 (И)"
+
+msgid "T110E4_ISP_short_special"
 msgstr "?empty?"
 
 msgid "T110E4_descr"
@@ -4139,6 +4271,25 @@ msgstr "T57"
 msgid "T57_58"
 msgstr "T57 Heavy Tank"
 
+msgid "T57_58_ISP"
+msgstr "T57 Heavy Tank (И)"
+
+msgid "T57_58_ISP_descr"
+msgstr ""
+"Праект цяжкага танка з калыхальнай вежай і аўтаматам набівання. "
+"Распрацоўваўся з 1951 г. Да 1957 г. былі выраблены доследныя вежы пад 120-мм"
+" і 155-мм гарматы, аднак праграму стварэння такіх машын прызналі "
+"бесперспектыўнай, і ўсе работы былі спынены."
+
+msgid "T57_58_ISP_long_special"
+msgstr "?empty?"
+
+msgid "T57_58_ISP_short"
+msgstr "T57 Heavy (И)"
+
+msgid "T57_58_ISP_short_special"
+msgstr "?empty?"
+
 msgid "T57_58_descr"
 msgstr ""
 "Праект цяжкага танка з калыхальнай вежай і аўтаматам набівання. "
@@ -4302,6 +4453,9 @@ msgstr "T99E2"
 msgid "Torsion_bar_T80"
 msgstr "T23E3"
 
+msgid "Turret_1_A1001_OTAC_MT_58_T"
+msgstr "MT-58"
+
 msgid "Turret_1_A100_T49"
 msgstr "T49"
 
@@ -4352,9 +4506,6 @@ msgstr "M4A3E8 Thunderbolt VII"
 
 msgid "Turret_1_A120_M48A5"
 msgstr "M48A5 Patton"
-
-msgid "Turret_1_A120_M48A5_hound_TLXXL"
-msgstr "M48A5 Patton «Thunderbolt»"
 
 msgid "Turret_1_A121_M26_Cologne"
 msgstr "T26E3"
@@ -4500,6 +4651,9 @@ msgstr "TF-2"
 msgid "Turret_1_A174_M36B1_GMC"
 msgstr "M36"
 
+msgid "Turret_1_A175_OTAC_MT_58"
+msgstr "MT-58"
+
 msgid "Turret_1_A27_T82"
 msgstr "T82 HMC"
 
@@ -4572,7 +4726,13 @@ msgstr "M4A2E2T110"
 msgid "Turret_1_T110E3"
 msgstr "T110E3"
 
+msgid "Turret_1_T110E3_ISP"
+msgstr "T110E3"
+
 msgid "Turret_1_T110E4"
+msgstr "T110E4"
+
+msgid "Turret_1_T110E4_ISP"
 msgstr "T110E4"
 
 msgid "Turret_1_T1_E6"
@@ -4609,6 +4769,9 @@ msgid "Turret_1_T54E1"
 msgstr "T157"
 
 msgid "Turret_1_T57_58"
+msgstr "T169"
+
+msgid "Turret_1_T57_58_ISP"
 msgstr "T169"
 
 msgid "Turret_1_T57_58_T"
@@ -4797,6 +4960,9 @@ msgstr "VVSS T48"
 msgid "VVSS_T48A"
 msgstr "VVSS T48A"
 
+msgid "VVSS_T48A_02"
+msgstr "VVSS T48A"
+
 msgid "VVSS_T51"
 msgstr "VVSS T51"
 
@@ -4814,6 +4980,12 @@ msgstr "Wright Continental R-975C1"
 
 msgid "Wright_Continental_R-975C1L"
 msgstr "Wright Continental R-975C1L"
+
+msgid "Wright_Continental_R-975C1L_02"
+msgstr "Wright Continental R-975C1L"
+
+msgid "Wright_Continental_R-975C1L_02_short"
+msgstr "Wright C. R-975C1L"
 
 msgid "Wright_Continental_R-975C1L_short"
 msgstr "Wright C. R-975C1L"
@@ -4925,20 +5097,6 @@ msgstr "APCR M4"
 msgid "_105mm_APCR_M68M2"
 msgstr "APDS-T M392"
 
-msgid "_105mm_APCR_M68M2_WT"
-msgstr "Серебряная пуля"
-
-msgid "_105mm_APCR_M68M2_WT_descr"
-msgstr "Гордость оружейников Альянса."
-
-msgid "_105mm_APCR_M68M2_WT_long_special"
-msgstr ""
-"При перегрузке генератора гончие получают заряд плазмы, который увеличивает "
-"наносимый урон на 25%, вплоть до 100%."
-
-msgid "_105mm_APCR_M68M2_WT_short_special"
-msgstr "Дополнительный урон плазмой"
-
 msgid "_105mm_APCR_M735"
 msgstr "APDS M735P"
 
@@ -4956,6 +5114,9 @@ msgstr "T29E3M2E"
 
 msgid "_105mm_APCR_T29E3_M"
 msgstr "APCR T29E3 M"
+
+msgid "_105mm_APDS_M392_T"
+msgstr "APDS М392"
 
 msgid "_105mm_AP_T140E3"
 msgstr "AP-T T182E1"
@@ -5002,9 +5163,6 @@ msgstr "105 mm Gun M68P"
 msgid "_105mm_Gun_M68_SH"
 msgstr "105 mm Gun M68"
 
-msgid "_105mm_Gun_M68_WT"
-msgstr "105 mm Gun M68 «Thunderbolt»"
-
 msgid "_105mm_Gun_T140E2"
 msgstr "105 mm Gun T140E2"
 
@@ -5044,6 +5202,9 @@ msgstr "HEAT-T T384E4"
 msgid "_105mm_HEAT-T_T384E4_SH"
 msgstr "AP-T T384E4"
 
+msgid "_105mm_HEAT_M456_T"
+msgstr "HEAT М456"
+
 msgid "_105mm_HEAT_M67"
 msgstr "HEAT M67"
 
@@ -5070,6 +5231,9 @@ msgstr "M11A2E"
 
 msgid "_105mm_HE_M11_M"
 msgstr "HE M11 M"
+
+msgid "_105mm_HE_M393_T"
+msgstr "HE М393"
 
 msgid "_105mm_HE_M39A1"
 msgstr "HE M393A1"
@@ -5116,6 +5280,9 @@ msgstr "105 mm T140 Y IV"
 msgid "_105mm_T254A"
 msgstr "105 mm T254A"
 
+msgid "_105mm_T254_T"
+msgstr "105 mm T254"
+
 msgid "_110mm_Gun_EXP_7"
 msgstr "EXP-7"
 
@@ -5138,6 +5305,9 @@ msgid "_120mm_2B_British_gun"
 msgstr "120 mm 2B British Gun"
 
 msgid "_120mm_AP-T_M358"
+msgstr "AP-T M358"
+
+msgid "_120mm_AP-T_M358_ISP"
 msgstr "AP-T M358"
 
 msgid "_120mm_AP-T_XM66F"
@@ -5209,6 +5379,9 @@ msgstr "120 mm Gun T124"
 msgid "_120mm_Gun_T179"
 msgstr "120 mm Gun T179"
 
+msgid "_120mm_Gun_T179_ISP"
+msgstr "120 mm Gun T179"
+
 msgid "_120mm_Gun_T179_M169"
 msgstr "120 mm Gun T179 in Mount 169"
 
@@ -5225,6 +5398,9 @@ msgid "_120mm_HE-T67"
 msgstr "HE T67"
 
 msgid "_120mm_HEAT-T_M469"
+msgstr "HEAT-T M469"
+
+msgid "_120mm_HEAT-T_M469_ISP"
 msgstr "HEAT-T M469"
 
 msgid "_120mm_HEAT-T_M469_SH"
@@ -5252,6 +5428,9 @@ msgid "_120mm_HE_M358"
 msgstr "HE M358"
 
 msgid "_120mm_HE_Shot"
+msgstr "HE Shell"
+
+msgid "_120mm_HE_Shot_ISP"
 msgstr "HE Shell"
 
 msgid "_120mm_HE_T_M356"
@@ -5302,8 +5481,14 @@ msgstr "XM252"
 msgid "_120mm_XM31"
 msgstr "XM31"
 
+msgid "_152mm_APFSDS_XM578E1"
+msgstr "XM578E1"
+
 msgid "_152mm_Gun_Launcher_M81"
 msgstr "152 mm Gun-Launcher XM81 (conventional)"
+
+msgid "_152mm_HEAT_M409"
+msgstr "T13E1"
 
 msgid "_152mm_HEAT_XM409"
 msgstr "HEAT XM409"
@@ -5311,8 +5496,14 @@ msgstr "HEAT XM409"
 msgid "_152mm_HE_XM657E2"
 msgstr "HE XM657E2"
 
+msgid "_152mm_HE_XM657E2_2"
+msgstr "T13E2"
+
 msgid "_152mm_HE_XM657E3"
 msgstr "HE XM657E3"
+
+msgid "_152mm_XM81E1"
+msgstr "152mm XM81E1"
 
 msgid "_155mm_AP_M111"
 msgstr "AP M111"
@@ -5322,6 +5513,9 @@ msgstr "AP M111E1"
 
 msgid "_155mm_AP_M111E1_57"
 msgstr "M111/57"
+
+msgid "_155mm_AP_M111E1_ISP"
+msgstr "AP M111E1"
 
 msgid "_155mm_AP_M111_H3"
 msgstr "M111/H3"
@@ -5335,6 +5529,9 @@ msgstr "AP M112"
 msgid "_155mm_AP_M112E1"
 msgstr "APCR M112E1"
 
+msgid "_155mm_AP_M112E1_ISP"
+msgstr "APCR M112E1"
+
 msgid "_155mm_AP_M112_SPG"
 msgstr "AP M112"
 
@@ -5345,6 +5542,9 @@ msgid "_155mm_AT_Gun_T7E1_57"
 msgstr "155 mm AT Gun T7E1/57"
 
 msgid "_155mm_AT_Gun_T7E2"
+msgstr "155 mm AT Gun T7E2"
+
+msgid "_155mm_AT_Gun_T7E2_ISP"
 msgstr "155 mm AT Gun T7E2"
 
 msgid "_155mm_Gun_M1918M1"
@@ -5376,6 +5576,9 @@ msgstr "HE M101E1"
 
 msgid "_155mm_HE_M101E1_57"
 msgstr "M357/57"
+
+msgid "_155mm_HE_M101E1_ISP"
+msgstr "HE M101E1"
 
 msgid "_155mm_HE_M101M2"
 msgstr "HE M101M2"
@@ -5607,8 +5810,17 @@ msgstr "HE T18"
 msgid "_6pdr_APCR_MK_1T"
 msgstr "APCR Mk. 1T"
 
+msgid "_6pdr_APCR_MK_1T_02"
+msgstr "APCR Mk. 1T"
+
 msgid "_6pdr_AP_MKs_4"
 msgstr "AP Mk. 4"
+
+msgid "_6pdr_AP_MKs_4_02"
+msgstr "AP Mk. 4"
+
+msgid "_6pdr_HE_M7_02"
+msgstr "HE Mk. 5"
 
 msgid "_75mm_AT_Gun_M3_L37"
 msgstr "75 mm AT Gun M3"

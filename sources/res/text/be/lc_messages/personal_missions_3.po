@@ -463,7 +463,7 @@ msgid "VehicleTabs/tooltip/title"
 msgstr "Галіна %(minVehicleLevel)s-%(maxVehicleLevel)s узроўню"
 
 msgid "VehicleView/additionalRewards/body/campaign"
-msgstr "За выполнение кампании с отличием"
+msgstr "За выкананне кампаніі з адзнакай"
 
 msgid "VehicleView/additionalRewards/body/default"
 msgstr "За выкананне аперацыі"
@@ -510,14 +510,14 @@ msgstr ""
 "самых опытных и целеустремлённых игроков. Отличная машина для продавливания "
 "направлений и позиционных боёв, оснащённая мощной двухорудийной установкой. "
 "Крепкая броня, некоторые листы которой расположены под рациональными углами,"
-" позволяет прощать ошибки и могут дать дополнительную возможность "
+" позволяет прощать ошибки и может дать дополнительную возможность "
 "реализовать огневой потенциал."
 
 msgid "VehicleView/goTo"
 msgstr "ДА АПЕРАЦЫІ"
 
 msgid "VehicleView/goToMany"
-msgstr "К ОПЕРАЦИИЯМ"
+msgstr "ДА АПЕРАЦЫЙ"
 
 msgid "VehicleView/preview/label"
 msgstr "Перадпрагляд"
@@ -527,8 +527,8 @@ msgstr "Для атрымання машыны неабходна выканац
 
 msgid "VehicleView/researchCondition/finalBody"
 msgstr ""
-"Для получения машины необходимо выполнить все замыкающие задачи кампании "
-"«&zwnbsp;Новые&nbsp;горизонты&zwnbsp;»"
+"Для атрымання машыны неабходна выканаць усе замыкальныя задачы кампаніі "
+"«&zwnbsp;Новыя&nbsp;гарызонты&zwnbsp;»"
 
 msgid "VehicleView/researchCondition/header"
 msgstr "УМОВЫ АТРЫМАННЯ ТЭХНІКІ"
@@ -558,10 +558,10 @@ msgid "VehicleView/restoreTooltip/seconds"
 msgstr "< 1м"
 
 msgid "VehicleView/title"
-msgstr "НАГРАДЫ ОПЕРАЦИИ «%(name)s»"
+msgstr "УЗНАГАРОДЫ АПЕРАЦЫІ «%(name)s»"
 
 msgid "VehicleView/titleMany"
-msgstr "НАГРАДЫ КАМПАНИИ «НОВЫЕ ГОРИЗОНТЫ»"
+msgstr "УЗНАГАРОДА КАМПАНІІ «НОВЫЯ ГАРЫЗОНТЫ»"
 
 msgid "VehicleView/vehicleInfo/body/inHangar"
 msgstr "У Гаражы"
@@ -609,7 +609,8 @@ msgid "introView/infoCard/second"
 msgstr "Новыя танкі VII-X узроўню: ARMT, TF-2 CLARK і Projet Murat."
 
 msgid "introView/infoCard/third"
-msgstr "Главная награда: сверхтяжёлый двухорудийный танк XI уровня Mausekönig"
+msgstr ""
+"Галоўная ўзнагарода: звышцяжкі двухгарматны танк ХІ узроўню Mausekönig"
 
 msgid "introView/videoButton/buttonText"
 msgstr "ПРА КАМПАНІЮ"

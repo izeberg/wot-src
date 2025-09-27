@@ -5978,7 +5978,10 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>30</reloadTime>
-					<aimingTime>6</aimingTime>
+					<aimingTime>
+						5.7
+						<!--BW_String-->
+					</aimingTime>
 					<invisibilityFactorAtShot>
 						0.135
 						<!--BW_String-->

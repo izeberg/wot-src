@@ -509,6 +509,12 @@ msgstr[0] "И ещё %(count)s возможная награда"
 msgstr[1] "И ещё %(count)s возможные награды"
 msgstr[2] "И ещё %(count)s возможных наград"
 
+msgid "tooltips/bonusGroup/statTrack/body"
+msgstr "со встроенным счётчиком уничтоженных"
+
+msgid "tooltips/bonusGroup/statTrack/header"
+msgstr "Уникальный %(label)s"
+
 msgid "tooltips/currencyKey/descriptionPart1/tanks_birthday_2024_key"
 msgstr ""
 "Ключ открывает контейнер «%(lootboxName)s» с вероятностью "

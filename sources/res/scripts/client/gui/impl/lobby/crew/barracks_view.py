@@ -175,7 +175,7 @@ class BarracksView(BaseTankmanListView):
          (
           'tokens', self.__onNewRecruits),
          (
-          'potapovQuests', self.__onNewRecruits))
+          'personalMissionQuests', self.__onNewRecruits))
 
     def _fillTankmanCard(self, cardsList, tankman):
         tm = TankmanModel()

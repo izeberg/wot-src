@@ -127,8 +127,6 @@ package net.wg.data.constants.generated
       
       public static const SENIORITY_AWARD_VEHICLE:String = "seniorityAwardVehicle";
       
-      public static const WT_PORTAL_VEHICLE:String = "portalVehicle";
-      
       public static const DEFAULT_SHELL:String = "defaultShell";
       
       public static const HANGAR_SHELL:String = "hangarShell";
@@ -176,8 +174,6 @@ package net.wg.data.constants.generated
       public static const COMMANDER_BONUS:String = "commanderBonus";
       
       public static const EFFICIENCY_PARAM:String = "efficiencyParam";
-      
-      public static const TOTAL_EFFICIENCY_PARAM:String = "totalEfficiencyParam";
       
       public static const MAP:String = "map";
       
@@ -246,8 +242,6 @@ package net.wg.data.constants.generated
       public static const EVENT_QUESTS_PREVIEW:String = "EventQuestsPreview";
       
       public static const PERSONAL_QUESTS_PREVIEW:String = "presonalQuestsPreview";
-      
-      public static const EVENT_BATTLES_QUESTS_PREVIEW:String = "eventBattlesQuestsReview";
       
       public static const SHEDULE_QUEST:String = "scheduleQuest";
       
@@ -534,30 +528,6 @@ package net.wg.data.constants.generated
       public static const BATTLE_ROYALE_SELECTOR_INFO:String = "battleRoyaleSelectorInfo";
       
       public static const BATTLE_ROYALE_SELECTOR_CALENDAR_INFO:String = "battleRoyaleSelectorCalendarInfo";
-      
-      public static const EVENT_BATTLES_SELECTOR_INFO:String = "eventBattlesSelectorInfo";
-      
-      public static const EVENT_BATTLES_SERVER_PRIMETIME:String = "eventBattlesServerPrimeTime";
-      
-      public static const EVENT_BATTLES_CALENDAR:String = "eventBattlesCalendar";
-      
-      public static const EVENT_BATTLES_END:String = "eventBattlesEnd";
-      
-      public static const EVENT_BATTLES_TICKET:String = "eventBattlesTicket";
-      
-      public static const EVENT_MAIN_PRIZE_DISCOUNT:String = "mainPrizeDiscount";
-      
-      public static const EVENT_STAMP:String = "eventStamp";
-      
-      public static const EVENT_CAROUSEL_VEHICLE:String = "eventCarouselVehicle";
-      
-      public static const EVENT_LOOTBOX:String = "eventLootbox";
-      
-      public static const EVENT_BUY_LOOTBOX:String = "eventBuyLootbox";
-      
-      public static const WT_GUARANTED_REWARD:String = "wtGuarantedReward";
-      
-      public static const EVENT_VEHICLE_COMPENSATION:String = "eventVehicleCompensation";
       
       public static const BLUEPRINT_INFO:String = "blueprintInfo";
       
@@ -849,7 +819,7 @@ package net.wg.data.constants.generated
       
       public static const PARAGONS_VEH_BRANCH_LOCKED:String = "paragonsVehBranchLocked";
       
-      public static const EVENT_LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT:String = "eventLootBoxesVehicleBlueprintFragment";
+      public static const VEHICLE_STAT_TRACK:String = "vehicleStatTrack";
       
       public static const BIRTHDAY_GIFT_SYSTEM_POSTMARK:String = "birthdayGiftSystemPostmark";
       
@@ -893,7 +863,7 @@ package net.wg.data.constants.generated
       
       public static const VEH_CMP_SET:Array = [VEH_CMP_CUSTOMIZATION,VEH_CMP_SKILLS];
       
-      public static const VEHICLES_SET:Array = [CAROUSEL_VEHICLE,INVENTORY_VEHICLE,TECHTREE_VEHICLE,SHOP_VEHICLE,AWARD_VEHICLE,EXTENDED_AWARD_VEHICLE,SENIORITY_AWARD_VEHICLE,TRADE_IN,TRADE_IN_PRICE,HISTORICAL_VEHICLE,BASE_VEHICLE_PARAMETERS,VEHICLE_CMP_PARAMETERS,VEHICLE_AVG_PARAMETERS,VEHICLE_ADVANCED_PARAMETERS,VEHICLE_PREVIEW_AVG_PARAMETERS,VEHICLE_PREVIEW_ADVANCED_PARAMETERS,DEFAULT_CREW_MEMBER,VEHICLE_PREVIEW_CREW_MEMBER,TECHTREE_VEHICLE_ANNOUNCEMENT,TECHTREE_VEHICLE_STATUS,VEHICLE_TANK_SETUP_PARAMETERS,VEHICLE_POST_PROGRESSION_PARAMETERS,VEHICLE_ROLES,WT_PORTAL_VEHICLE];
+      public static const VEHICLES_SET:Array = [CAROUSEL_VEHICLE,INVENTORY_VEHICLE,TECHTREE_VEHICLE,SHOP_VEHICLE,AWARD_VEHICLE,EXTENDED_AWARD_VEHICLE,SENIORITY_AWARD_VEHICLE,TRADE_IN,TRADE_IN_PRICE,HISTORICAL_VEHICLE,BASE_VEHICLE_PARAMETERS,VEHICLE_CMP_PARAMETERS,VEHICLE_AVG_PARAMETERS,VEHICLE_ADVANCED_PARAMETERS,VEHICLE_PREVIEW_AVG_PARAMETERS,VEHICLE_PREVIEW_ADVANCED_PARAMETERS,DEFAULT_CREW_MEMBER,VEHICLE_PREVIEW_CREW_MEMBER,TECHTREE_VEHICLE_ANNOUNCEMENT,TECHTREE_VEHICLE_STATUS,VEHICLE_TANK_SETUP_PARAMETERS,VEHICLE_POST_PROGRESSION_PARAMETERS,VEHICLE_ROLES,VEHICLE_STAT_TRACK];
       
       public static const BLUEPRINTS_SET:Array = [BLUEPRINT_INFO,BLUEPRINT_FRAGMENT_INFO,BLUEPRINT_EMPTY_SLOT_INFO,BLUEPRINT_CONVERT_INFO,BLUEPRINT_RANDOM_INFO,BLUEPRINT_RANDOM_NATIONAL_INFO];
       
@@ -952,12 +922,6 @@ package net.wg.data.constants.generated
       public static const EARLY_ACCESS_LOBBY_SET:Array = [EARLY_ACCESS_COMMON_INFO,EARLY_ACCESS_VEHICLE_LOCKED,EARLY_ACCESS_PAUSED,EARLY_ACCESS_CAROUSEL_VEHICLE_POST_PROGRESSION,EARLY_ACCESS_CURRENCY,EARLY_ACCESS_ENTRY_POINT];
       
       public static const BIRTHDAY_SET:Array = [BIRTHDAY_GIFT_SYSTEM_POSTMARK,BIRTHDAY_GOLDEN_TICKET,ECONOMY_BONUS_TOOLTIP];
-      
-      public static const EFFICIENCY_SET:Array = [TOTAL_EFFICIENCY_PARAM];
-      
-      public static const EVENT_BATTLES_SET:Array = [EVENT_BATTLES_SELECTOR_INFO,EVENT_BATTLES_SERVER_PRIMETIME,EVENT_BATTLES_CALENDAR,EVENT_LOOTBOX,EVENT_BATTLES_QUESTS_PREVIEW,EVENT_BATTLES_TICKET,EVENT_STAMP,EVENT_MAIN_PRIZE_DISCOUNT,EVENT_CAROUSEL_VEHICLE,EVENT_BUY_LOOTBOX,WT_GUARANTED_REWARD,EVENT_BATTLES_END];
-      
-      public static const EVLB_LOBBY_SET:Array = [EVENT_LOOT_BOXES_VEHICLE_BLUEPRINT_FRAGMENT];
        
       
       public function TOOLTIPS_CONSTANTS()

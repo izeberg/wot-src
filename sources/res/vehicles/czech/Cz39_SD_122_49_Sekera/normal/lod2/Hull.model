@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.820935 -0.785504 -3.879542</min>
+		<max>1.809812 2.558529 3.950282</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod2/Hull</nodefullVisual>
+</root>

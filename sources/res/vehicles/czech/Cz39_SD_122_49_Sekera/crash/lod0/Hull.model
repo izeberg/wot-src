@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<parent>vehicles/czech/Cz39_SD_122_49_Sekera/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.916458 -1.124735 -3.861960</min>
+		<max>1.927804 1.925246 3.928510</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz39_SD_122_49_Sekera/crash/lod0/Hull</nodefullVisual>
+</root>

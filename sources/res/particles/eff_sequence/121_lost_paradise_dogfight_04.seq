@@ -673,8 +673,8 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>20.900002</duration>
+				<startTime>7.466667</startTime>
+				<duration>13.433334</duration>
 				<value>A6MZero|</value>
 			</frame>
 		</track>
@@ -682,8 +682,8 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>20.900002</duration>
+				<startTime>7.466667</startTime>
+				<duration>13.433334</duration>
 				<sequenceSound>amb_map_121_lost_paradise_plane_il2</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
@@ -700,6 +700,31 @@
 				<fade>0.000000</fade>
 			</frame>
 		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>1.875002</inTangent>
+				<outTangent>1.875002</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>1.875002</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>20.900002</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
 	</sequenceObject>
 	<sequenceObject>
 		<name>Sound P-40B</name>
@@ -708,8 +733,8 @@
 			<name>attach</name>
 			<type>attach</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>31.600002</duration>
+				<startTime>7.466667</startTime>
+				<duration>20.066668</duration>
 				<value>P-40B|</value>
 			</frame>
 		</track>
@@ -717,11 +742,43 @@
 			<name>Sound</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>31.600002</duration>
+				<startTime>7.466667</startTime>
+				<duration>20.066668</duration>
 				<sequenceSound>amb_map_121_lost_paradise_plane_mustang</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
+			</frame>
+		</track>
+		<track>
+			<name>volume</name>
+			<type>float</type>
+			<frame>
+				<startTime>7.466667</startTime>
+				<value>0.000000</value>
+				<inTangent>1.875002</inTangent>
+				<outTangent>1.875002</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>8.000000</startTime>
+				<value>1.000000</value>
+				<inTangent>1.875002</inTangent>
+				<outTangent>0.000000</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>26.833334</startTime>
+				<value>1.000000</value>
+				<inTangent>-0.000000</inTangent>
+				<outTangent>-1.428570</outTangent>
+				<tangentMode>257</tangentMode>
+			</frame>
+			<frame>
+				<startTime>27.533335</startTime>
+				<value>0.000000</value>
+				<inTangent>-1.428570</inTangent>
+				<outTangent>-1.428570</outTangent>
+				<tangentMode>257</tangentMode>
 			</frame>
 		</track>
 	</sequenceObject>

@@ -84,13 +84,6 @@
 			<private/>
 			<disabledInRoaming/>
 			<event_battles/>
-			<wt_boss/>
-			<wt_boss_2025/>
-			<wt_hunter/>
-			<special_wt_boss/>
-			<squad_restricted/>
-			<random_only/>
-			<wt_bot/>
 			<fallout/>
 			<epic_battles/>
 			<bob/>
@@ -107,6 +100,7 @@
 			<pillbox/>
 			<dog/>
 			<excluded_from_sandbox/>
+			<calculate_bbox/>
 			<testTank/>
 			<inGame/>
 			<telecom/>
@@ -170,24 +164,7 @@
 			<rentEligible/>
 			<bot_hunter/>
 			<debutBoxes/>
-			<noSortBuiltinEquipment/>
-			<builtinLargeMedkit_wt_user/>
-			<builtinRepairkit_wt_user/>
-			<builtinInstantStunShoot_wt_user/>
-			<builtinImpulse_wt_user/>
-			<builtinAfterburning_wt_user/>
-			<builtinShield_wt_user/>
-			<builtinSelfRepair_wt_user/>
-			<builtinStronghold_wt_user/>
-			<builtinTeleport_wt_user/>
-			<builtinTeleport_wt_2025_user/>
-			<builtinChargedShot_wt_user/>
-			<builtinExplosiveShot_wt_user/>
-			<builtinHyperion_wt_user/>
-			<builtinUnionStrength_wt_user/>
-			<builtinPlasmaExtractor_wt_user/>
-			<builtinHyperion_wt_2025_user/>
-			<builtinStunArea_wt_user/>
+			<portal/>
 		</tags>
 	</vehicle>
 	<vehicleChassis>
@@ -278,6 +255,7 @@
 			<minefield/>
 			<artillery/>
 			<bomber/>
+			<GLUM/>
 		</tags>
 	</shell>
 	<equipment>
@@ -310,9 +288,7 @@
 			<firepower/>
 			<mobility/>
 			<premium_equipment/>
-			<eventShellOverride/>
 			<builtin/>
-			<hideBuiltinInfo/>
 			<trophyUpgraded/>
 			<turbocharger/>
 			<healthReserve/>
@@ -329,12 +305,9 @@
 			<poiEquipment/>
 			<visualScriptAbilityEquipment/>
 			<abilityEquipment/>
+			<portal_ability/>
 			<public/>
 			<stopOutsideBattle/>
-			<eventItem/>
-			<eventPassiveItem/>
-			<wtEquipmentItem/>
-			<hidden/>
 		</tags>
 	</equipment>
 	<customizationItem>
@@ -387,6 +360,7 @@
 			<onlyVerticalMirror/>
 			<hideIfIncompatible/>
 			<styleSerialNumber/>
+			<styleStatTrackFrags/>
 			<lockedOnVehicle/>
 			<paragons/>
 			<NY2018_style/>
@@ -403,7 +377,6 @@
 			<offspringArenaMusic/>
 			<sabatonArenaMusic/>
 			<ariaArenaMusic/>
-			<WTEvent/>
 		</tags>
 	</customizationItem>
 	<crewSkin>

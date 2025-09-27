@@ -431,7 +431,7 @@ msgstr "Паглядзець у Гаражы"
 
 msgid "rewards/gift/header/moreSenders"
 msgid_plural "moreSendersCount"
-msgstr[0] "и ещё %(moreSendersCount)d игрока"
+msgstr[0] "і яшчэ %(moreSendersCount)d гульцы"
 msgstr[1] "і яшчэ %(moreSendersCount)d гульцоў"
 msgstr[2] "і яшчэ %(moreSendersCount)d гульцоў"
 
@@ -503,6 +503,12 @@ msgid_plural "count"
 msgstr[0] "І яшчэ %(count)s магчымая ўзнагарода"
 msgstr[1] "І яшчэ %(count)s магчымыя ўзнагароды"
 msgstr[2] "І яшчэ %(count)s магчымых узнагарод"
+
+msgid "tooltips/bonusGroup/statTrack/body"
+msgstr "со встроенным счётчиком уничтоженных"
+
+msgid "tooltips/bonusGroup/statTrack/header"
+msgstr "Уникальный %(label)s"
 
 msgid "tooltips/currencyKey/descriptionPart1/tanks_birthday_2024_key"
 msgstr ""

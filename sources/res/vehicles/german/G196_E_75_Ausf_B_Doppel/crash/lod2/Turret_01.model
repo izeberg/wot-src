@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/german/G196_E_75_Ausf_B_Doppel/crash/lod3/Turret_01</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.414508 -0.000001 -2.553625</min>
+		<max>1.415120 1.412479 1.578063</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G196_E_75_Ausf_B_Doppel/crash/lod2/Turret_01</nodefullVisual>
+</root>

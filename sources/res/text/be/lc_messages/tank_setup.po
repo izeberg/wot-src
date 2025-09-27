@@ -862,7 +862,7 @@ msgstr ""
 "спрашчае выяўленне праціўніка."
 
 msgid "kpi/bonus/longDescr/negative/vehicleGunShotDispersion"
-msgstr "от разброса при движении и поворотах машины"
+msgstr "ад роскіду падчас руху і паваротаў машыны"
 
 msgid "kpi/bonus/longDescr/negative/vehicleOwnSpottingTime"
 msgstr "ад часу вашай бачнасці"
@@ -925,7 +925,7 @@ msgstr ""
 "спрашчае выкрыццё праціўніка."
 
 msgid "kpi/bonus/longDescr/positive/vehicleGunShotDispersion"
-msgstr "к разбросу при движении и поворотах машины"
+msgstr "да роскіду падчас руху і паваротаў машыны"
 
 msgid "kpi/bonus/longDescr/positive/vehicleOwnSpottingTime"
 msgstr "да часу вашай бачнасці"
@@ -1991,6 +1991,18 @@ msgstr "Аўтапапаўненне адключана"
 
 msgid "shells/autofillOn"
 msgstr "Аўтапапаўненне ўключана"
+
+msgid "shells/counter"
+msgstr "%(value)s/%(maximum)s"
+
+msgid "shells/limitTooltip/body"
+msgstr "Загруженные снаряды / Максимально возможное количество"
+
+msgid "shells/limitTooltip/header"
+msgstr "Лимит боекомплекта"
+
+msgid "shells/limitValue/counterDash"
+msgstr "/"
 
 msgid "shells/shortSpecification/inStorage"
 msgstr "На Складзе:"

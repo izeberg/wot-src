@@ -176,7 +176,7 @@
 			<primitiveGroup>
 				1
 				<material>
-					<identifier>tank_equipment_01</identifier>
+					<identifier>tank_equip_01</identifier>
 					<fx>shaders/std_effects/PBS_tank.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>

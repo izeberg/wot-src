@@ -20,7 +20,6 @@ registerTokenQuestsSubFormatters((
  token_quest_subformatters.WotPlusAttendanceRewardsFormatterTestSMViewer(),
  token_quest_subformatters.BattleMattersAwardsFormatter(),
  token_quest_subformatters.Comp7RewardsFormatter(),
- token_quest_subformatters.WtEventProgressionQuestFormatter(),
  token_quest_subformatters.CrewPerksFormatter(),
  token_quest_subformatters.ParagonsTokenQuestsSubformatter()))
 registerConvertersSubFormatter('newYear25', NewYearMandarinsConverterFormatter)
@@ -57,7 +56,7 @@ SERVER_FORMATTERS = {_SM_TYPE.serverReboot.index(): _sc.ServerRebootFormatter(),
    _SM_TYPE.fortEvent.index(): _sc.StrongholdMessageFormatter(), 
    _SM_TYPE.vehicleRented.index(): _sc.VehicleRentedFormatter(), 
    _SM_TYPE.rentalsExpired.index(): _sc.RentalsExpiredFormatter(), 
-   _SM_TYPE.potapovQuestBonus.index(): _sc.TokenQuestsFormatter(subFormatters=_PERSONAL_MISSIONS_SUB_FORMATTERS), 
+   _SM_TYPE.pmQuestBonus.index(): _sc.TokenQuestsFormatter(subFormatters=_PERSONAL_MISSIONS_SUB_FORMATTERS), 
    _SM_TYPE.goodieRemoved.index(): _sc.GoodyRemovedFormatter(), 
    _SM_TYPE.goodieDisabled.index(): _sc.GoodyDisabledFormatter(), 
    _SM_TYPE.goodieEnabled.index(): _sc.GoodieEnabledFormatter(), 
@@ -166,7 +165,7 @@ def initRegistrationFormatters():
     registerMessengerServerFormatter(_SM_TYPE.fortEvent.index(), _sc.StrongholdMessageFormatter())
     registerMessengerServerFormatter(_SM_TYPE.vehicleRented.index(), _sc.VehicleRentedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.rentalsExpired.index(), _sc.RentalsExpiredFormatter())
-    registerMessengerServerFormatter(_SM_TYPE.potapovQuestBonus.index(), _sc.TokenQuestsFormatter(subFormatters=_PERSONAL_MISSIONS_SUB_FORMATTERS))
+    registerMessengerServerFormatter(_SM_TYPE.pmQuestBonus.index(), _sc.TokenQuestsFormatter(subFormatters=_PERSONAL_MISSIONS_SUB_FORMATTERS))
     registerMessengerServerFormatter(_SM_TYPE.goodieRemoved.index(), _sc.GoodyRemovedFormatter())
     registerMessengerServerFormatter(_SM_TYPE.goodieDisabled.index(), _sc.GoodyDisabledFormatter())
     registerMessengerServerFormatter(_SM_TYPE.goodieEnabled.index(), _sc.GoodieEnabledFormatter())

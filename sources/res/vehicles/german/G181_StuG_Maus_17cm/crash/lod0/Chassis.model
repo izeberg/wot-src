@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.730939 0.000000 -4.252625</min>
+		<max>1.730939 1.414294 4.409120</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G181_StuG_Maus_17cm/crash/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G181_StuG_Maus_17cm/crash/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

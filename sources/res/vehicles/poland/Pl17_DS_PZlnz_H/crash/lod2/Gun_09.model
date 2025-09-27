@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl17_DS_PZlnz_H/crash/lod3/Gun_09</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.356344 -0.392132 -1.217543</min>
+		<max>0.678384 0.303268 4.350442</max>
+	</visibilityBox>
+	<nodelessVisual>vehicles/poland/Pl17_DS_PZlnz_H/crash/lod2/Gun_09</nodelessVisual>
+</root>

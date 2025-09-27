@@ -101,19 +101,14 @@ msgid "awards/yes"
 msgstr "Так!"
 
 msgid "battleMessages/enableVOIP"
-msgstr ""
-"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
-"Увайсці ў галасавы чат (%(keyName)s)"
+msgstr "Войти в голосовой чат (%(keyName)s)"
 
 msgid "battleMessages/specifyVOIP"
-msgstr ""
-"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
-"Для хуткага доступу да галасавой сувязі прызначце гарачую клавішу."
+msgstr "Для быстрого доступа к голосовой связи назначьте горячую клавишу."
 
 msgid "battleMessages/withoutVOIP"
 msgstr ""
-"Каманда сфармаваная. Выбірайце тэхніку — і ў бой!\n"
-"Для выкарыстання галасавой сувязі ўключыце гэтую функцыю ў наладах гульні."
+"Для использования голосовой связи включите эту функцию в настройках игры."
 
 msgid "battleResult/losers"
 msgstr "Пераможаныя"
@@ -477,18 +472,16 @@ msgstr "Ачкі Баявога пропуска"
 
 msgid "introPage/blocks/block3/description"
 msgstr ""
-"Цяпер у Рангавых баях можна выкарыстоўваць галасавую сувязь для лепшай "
-"каардынацыі дзеянняў, а таксама гуляць звязам — гэта і весялей, і больш "
-"эфектыўна!"
+"В Ранговых боях можно использовать голосовую связь для лучшей координации "
+"действий, а также играть взводом — это и веселее, и эффективнее!"
 
 msgid "introPage/blocks/block3/title"
 msgstr "Звязы і галасавая сувязь"
 
 msgid "introPage/blocks/yearRewardDisabled"
 msgstr ""
-"Цяпер у Рангавых баях можна выкарыстоўваць галасавую сувязь для лепшай "
-"каардынацыі дзеянняў, а таксама гуляць звязам — гэта і весялей, і больш "
-"эфектыўна!"
+"В Ранговых боях можно использовать голосовую связь для лучшей координации "
+"действий, а также играть взводом — это и веселее, и эффективнее!"
 
 msgid "introPage/btns/accept"
 msgstr "Так!"
@@ -556,43 +549,43 @@ msgstr "Забраць узнагароду"
 
 msgid "postbattleStatus/title/final"
 msgstr ""
-"Дивизионы пройдены.\n"
-"Награды получены."
+"Дывізіёны пройдзены.\n"
+"Узнагароды атрыманы"
 
 msgid "postbattleStatus/title/finalWithReward"
 msgstr ""
-"Дивизионы пройдены.\n"
-"Заберите свою заслуженную награду!"
+"Дывізіёны пройдзены\n"
+"Забярыце сваю заслужаную ўзнагароду!"
 
 msgid "postbattleStatus/title/getChevron"
-msgstr "Получен шеврон!"
+msgstr "Атрыманы шаўрон!"
 
 msgid "postbattleStatus/title/getChevrons"
-msgstr "Получены шевроны!"
+msgstr "Атрыманы шаўроны!"
 
 msgid "postbattleStatus/title/getDivision"
-msgstr "Дивизион повышен!"
+msgstr "Дывізіён павышаны!"
 
 msgid "postbattleStatus/title/getRank"
-msgstr "Получен новый ранг!"
+msgstr "Атрыманы новы ранг!"
 
 msgid "postbattleStatus/title/saveChevron"
 msgstr "Шаўрон захаваны"
 
 msgid "postbattleStatus/title/saveDivision"
-msgstr "Дивизион защищён"
+msgstr "Дывізіён абаронены"
 
 msgid "postbattleStatus/title/saveRank"
-msgstr "Ранг защищён"
+msgstr "Ранг абаронены"
 
 msgid "postbattleStatus/title/wasteChevron"
 msgstr "Шаўрон страчаны"
 
 msgid "postbattleStatus/title/wasteChevrons"
-msgstr "Шевроны потеряны"
+msgstr "Шаўроны страчаны"
 
 msgid "postbattleStatus/title/wasteDivision"
-msgstr "Дивизион понижен"
+msgstr "Дывізіён паніжаны"
 
 msgid "postbattleStatus/title/wasteRank"
 msgstr "Ранг страчаны"
