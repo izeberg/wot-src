@@ -2962,6 +2962,15 @@ msgstr "?empty?"
 msgid "camouflage/bp_2025_18_4/label"
 msgstr "巅峰之作"
 
+msgid "camouflage/bp_2025_by/label"
+msgstr "圣质隐修会装甲"
+
+msgid "camouflage/bp_2025_mh/label"
+msgstr "麦克斯·哈斯3"
+
+msgid "camouflage/bp_2025_sch/label"
+msgstr "黑浪MK-61"
+
 msgid "camouflage/bp_holiday_1/description"
 msgstr "?empty?"
 
@@ -15206,6 +15215,27 @@ msgstr "一览无余！"
 msgid "inscription/special/special_828"
 msgstr "看镜头，笑一笑！"
 
+msgid "inscription/special/special_831"
+msgstr "不落人后"
+
+msgid "inscription/special/special_832"
+msgstr "寂静之拥"
+
+msgid "inscription/special/special_833"
+msgstr "骨牌效应"
+
+msgid "inscription/special/special_834"
+msgstr "领军人物"
+
+msgid "inscription/special/special_835"
+msgstr "恐怖威廉"
+
+msgid "inscription/special/special_836"
+msgstr "生命值充足"
+
+msgid "inscription/special/special_837"
+msgstr "Wolfenstein"
+
 msgid "inscription/special/special_90"
 msgstr "2017年总决赛，莫斯科"
 
@@ -21392,12 +21422,30 @@ msgstr "F系装甲"
 msgid "projection_decals/special/projection_decal_96/description"
 msgstr "理论上来说，查狄伦25t的玩家也不是完全不能依靠装甲。实际上，FV4005的玩家一次又一次证明了F系装甲只不过是个错觉。"
 
+msgid "projection_decals/special/projection_decal_966"
+msgstr "全民公敌"
+
+msgid "projection_decals/special/projection_decal_967"
+msgstr "新秩序"
+
+msgid "projection_decals/special/projection_decal_968"
+msgstr "虎胆龙威"
+
+msgid "projection_decals/special/projection_decal_969"
+msgstr "苦难面具"
+
 msgid "projection_decals/special/projection_decal_97"
 msgstr "KV分线"
 
 msgid "projection_decals/special/projection_decal_97/description"
 msgstr ""
 "很久以前，KV坦克位于升级路线的V级，分支中接下来的坦克为KV-1和KV-2。然而，由于需要研发太多的模块才能研发下一级坦克，所以0.7.3版本中干脆将它分成了两个坦克分支。"
+
+msgid "projection_decals/special/projection_decal_970"
+msgstr "深入敌营"
+
+msgid "projection_decals/special/projection_decal_971"
+msgstr "8位像素乔瑟夫"
 
 msgid "projection_decals/special/projection_decal_98"
 msgstr "冲锋的IS"
@@ -24739,6 +24787,18 @@ msgstr ""
 "Mika(车长)、Aki(炮手兼装填手)、Mikko(驾驶员)。BT-42最适合近距离缠斗，因为这种距离可以充分发挥其高倍径榴弹炮的威力，振奋人心的康特勒琴乐曲\"沙基雅尔文·波尔卡\"则可以进一步提高坦克乘员的战斗效能。在继续高中协助大洗女子学园对抗大学选拔队的战斗中，BT-42迎来了属于自己的高光时刻，它凭借克里斯蒂悬挂装置在没有履带的情况下疾驰，并且英勇地击毁了一整个小队的M26"
 " \"潘兴\"。"
 
+msgid "special_style/G177_E65_Zwilling_W25_3Dst"
+msgstr "神之拳"
+
+msgid "special_style/G177_E65_Zwilling_W25_3Dst_desc"
+msgstr "本是用于终结反抗军的武器，被缴获后反而成了反抗军的助力。"
+
+msgid "special_style/G177_E65_Zwilling_W25_3Dst_desc/long"
+msgstr ""
+"\"都给我听好了。这就是神之拳。看看那加固的装甲，双管火炮，能轻松击毁一只机械军犬...敌人创造这头怪物就是为了消灭所有反抗势力。但反抗军抢先一步将其缴获。这辆坦克本该成为让人们屈服的工具，但对这个怪物来说，只要为它指明目标，怪物可不在乎那是不是它的创造者。\n"
+"\n"
+"既然敌人在玩火，那就别怪我们火上浇油了。\""
+
 msgid "special_style/G42_Maus_BPXVIII_3Dst"
 msgstr "钢铁凝视"
 
@@ -26862,6 +26922,40 @@ msgstr "打破您所认为的可能性边界。"
 
 msgid "special_style/bp_2025_18_4_desc/long"
 msgstr "这款试验型外观历经无数试炼，每一道醒目的波状线条都预示着毁灭艺术的全新浪潮正在降临。"
+
+msgid "special_style/bp_2025_by"
+msgstr "圣质隐修会装甲"
+
+msgid "special_style/bp_2025_by_desc"
+msgstr "应用这款全地形风格，感受圣质隐修会的古老伟力。"
+
+msgid "special_style/bp_2025_by_desc/long"
+msgstr ""
+"几个世纪前，神秘的圣质隐修会为一个他们祈祷永远不会到来的黑暗未来打造了武器——宛如神话和机械融合而成的惊人造物。后来，敌人发现了一处隐藏这些神器的宝库，并亵渎了其中的科技造物，制造出让世界屈服的战争机器。\n"
+"\n"
+"但在敌方遗留的神器中，有一套动力装甲——虽然它比任何现存势力都要古老，但其先进程度却令人难以置信。这种科技对普通装甲的强化效果远超一般的加固方式，赋予反抗军继续战斗的力量。"
+
+msgid "special_style/bp_2025_mh"
+msgstr "麦克斯·哈斯3"
+
+msgid "special_style/bp_2025_mh_desc"
+msgstr "一款全地形风格，致敬心地善良的勇士。"
+
+msgid "special_style/bp_2025_mh_desc/long"
+msgstr ""
+"这曾是一辆缴获的敌方坦克，直到麦克斯·哈斯拿起了画笔。作为克莱稍集团中深受爱戴的成员，这位温柔的巨人心胸宽广。麦克斯很少张口，但他知道如何表达自己。现在，他那凌乱、孩童般的涂鸦\"哈斯3\"大大方方地涂在坦克上，旁边还有色彩鲜艳的旋涡和蝴蝶。为什么是\"3\"？因为在麦克斯眼中，这是一辆全新的坦克。不再是压迫民众的工具，而是他的伙伴。他的钢铁双胞胎——装上履带的麦克斯。它充满欢乐，有点古怪，满怀热情。就像他一样。"
+
+msgid "special_style/bp_2025_sch"
+msgstr "黑浪MK-61"
+
+msgid "special_style/bp_2025_sch_desc"
+msgstr "应用这款威风的全地形风格，粉碎敌方势力。"
+
+msgid "special_style/bp_2025_sch_desc/long"
+msgstr ""
+"\"这证明了机器优于血肉之躯！\"\n"
+"\n"
+"这辆坦克体现了一个庞大势力那冷酷且压抑的基调，他们不计后果地传播恐惧和压迫。该坦克源自威廉·斯特拉斯那可怕的\"研究设施\"(以科学为幌子的罪恶温床)，每个抛光的表面都反映出该势力机械化军团的可怕力量。它是为粉碎反抗组织和扼杀希望而生的武器，是黑暗的使者，也昭示着一个科技被邪恶势力垄断的世界。"
 
 msgid "special_style/bp_holiday_1"
 msgstr "拟态聚合金"

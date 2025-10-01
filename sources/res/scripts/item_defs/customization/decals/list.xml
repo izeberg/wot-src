@@ -8182,6 +8182,26 @@
 		</decal>
 	</itemGroup>
 	<itemGroup>
+		<name>Battle Pass 2025</name>
+		<type>EMBLEM</type>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1182</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_872.dds</texture>
+			<userString>#vehicle_customization:special_style/bp_2025_sch</userString>
+			<mirror>false</mirror>
+			<tags>hiddenInUI</tags>
+		</decal>
+	</itemGroup>
+	<itemGroup>
 		<name>China New Year 2018 CN</name>
 		<userString>#vehicle_customization:emblem/special</userString>
 		<season>ALL</season>
@@ -15510,6 +15530,24 @@
 			<id>1130</id>
 			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_786.dds</texture>
 			<userString>#vehicle_customization:inscription/special/special_786</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1183</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_835.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_835</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1184</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_836.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_836</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1185</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_837.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_837</userString>
 			<mirror>false</mirror>
 		</decal>
 		<name>Battle Pass 2025</name>

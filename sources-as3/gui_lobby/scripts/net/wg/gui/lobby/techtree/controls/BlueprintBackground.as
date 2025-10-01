@@ -39,11 +39,12 @@ package net.wg.gui.lobby.techtree.controls
       
       private static function placeBgImg(param1:DisplayObject, param2:Number, param3:Number) : void
       {
+         var _loc7_:int = 0;
          var _loc8_:Boolean = false;
          var _loc4_:Number = param2 / param3;
          var _loc5_:Number = param1.width / param1.height;
          var _loc6_:int = 0;
-         var _loc7_:int = 0;
+         _loc7_ = 0;
          if(_loc5_ > 0 && _loc4_ > 0)
          {
             _loc8_ = _loc4_ > _loc5_;

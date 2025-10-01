@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-2.544326 -0.669731 -4.196975</min>
+		<max>2.466832 0.894523 3.839994</max>
+	</visibilityBox>
+</root>

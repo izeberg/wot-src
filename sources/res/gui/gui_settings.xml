@@ -2831,7 +2831,7 @@
 					<item>
 						<name>hasAdditionalBackground</name>
 						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 				</value>
 			</item>
@@ -2857,6 +2857,11 @@
 								<name>183</name>
 								<type>bool</type>
 								<value>False</value>
+							</item>
+							<item>
+								<name>184</name>
+								<type>bool</type>
+								<value>True</value>
 							</item>
 						</value>
 					</item>

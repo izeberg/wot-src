@@ -352574,4 +352574,246 @@
 			<userString>#vehicle_customization:camouflage/Wt25Mirium/label</userString>
 		</camouflage>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1025</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_by_hull.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_by/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.72 2.72
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.75 0.72
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_by_hull_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1026</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_by_turret.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_by/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					3.16 3.16
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.32 -0.19
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_by_turret_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1027</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_sch_hull.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_sch/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.22 1.22
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-3.96 0.25
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_sch_hull_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1028</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_sch_turret.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_sch/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.63 1.63
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.93 0.3
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_sch_turret_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1029</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_sch_gun.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_sch/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.28 2.28
+					<!--BW_String-->
+				</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_sch_gun_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1030</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_mh_hull.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_mh/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.45 1.45
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-8.66 -1.66
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>0.329169</HULL>
+				<TURRET>0.329169</TURRET>
+				<GUN>0.329169</GUN>
+			</rotation>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_mh_hull_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1031</id>
+			<texture>vehicles/russian/Camouflage/bp_2025_mh_turret.dds</texture>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<userString>#vehicle_customization:camouflage/bp_2025_mh/label</userString>
+			<tags>fullRGB hiddenInUI</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.56 2.56
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-9.76 -1.94
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>0.329169</HULL>
+				<TURRET>0.329169</TURRET>
+				<GUN>0.329169</GUN>
+			</rotation>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp_2025_mh_turret_GMM.dds</glossMetallicMap>
+		</camouflage>
+	</itemGroup>
 </root>
