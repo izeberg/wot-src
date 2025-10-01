@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<params>
+		<param>
+			<name>Shot</name>
+			<type>trigger</type>
+		</param>
+	</params>
+	<node>
+		<name>Idle</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/empty_sequence.seq</resource>
+		<isLoop>true</isLoop>
+		<loop>-1</loop>
+		<transition>
+			<to>Null3</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions>
+				<condition>
+					<type>trigger</type>
+					<name>Shot</name>
+				</condition>
+			</conditions>
+		</transition>
+		<uiPosition>-79.000000 -10.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Shot</name>
+		<type>sequence</type>
+		<resource>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/GunTower_shot.seq</resource>
+		<isLoop>false</isLoop>
+		<loop>1</loop>
+		<transition>
+			<to>Null4</to>
+			<blendDuration>5.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-77.000000 294.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Null3</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>Shot</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>-247.000000 124.000000 0.000000</uiPosition>
+	</node>
+	<node>
+		<name>Null4</name>
+		<type>sleep</type>
+		<time>0.010000 0.010000</time>
+		<transition>
+			<to>Idle</to>
+			<blendDuration>0.000000</blendDuration>
+			<conditions/>
+		</transition>
+		<uiPosition>106.000000 141.000000 0.000000</uiPosition>
+	</node>
+</root>

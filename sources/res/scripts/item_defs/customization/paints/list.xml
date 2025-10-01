@@ -9126,6 +9126,51 @@
 			<userString>#vehicle_customization:special_style/pub_liveops</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>586</id>
+			<texture>gui/maps/vehicles/repaints/czech_color_04.png</texture>
+			<color>46 44 44 255</color>
+			<gloss>
+				0.64
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.37
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp_2025_by</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>587</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_22.png</texture>
+			<color>17 17 33 255</color>
+			<gloss>
+				0.05
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp_2025_sch</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>588</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_10.png</texture>
+			<color>139 153 149 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp_2025_mh</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 		<usages>
 			<item>
 				<componentType>ALL</componentType>
