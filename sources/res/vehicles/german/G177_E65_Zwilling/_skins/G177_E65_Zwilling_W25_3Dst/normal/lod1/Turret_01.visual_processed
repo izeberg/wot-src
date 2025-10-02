@@ -1,0 +1,462 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_G177_Attachment_Turret_01</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+			</node>
+		</node>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>vent_joint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.998892 -0.047072</row1>
+					<row2>0.000000 0.047072 0.998892</row2>
+					<row3>0.000859 0.744000 -0.757001</row3>
+				</transform>
+				<node>
+					<identifier>vent_joint_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 0.998892 0.047072</row1>
+						<row2>0.000000 0.047072 -0.998892</row2>
+						<row3>-0.000859 -0.778808 0.721141</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>HP_gunJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.000001 0.376887 1.188742</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>vent_joint_BlendBone</node>
+		<geometry>
+			<vertices>turret_01_animated_Shape.vertices</vertices>
+			<primitive>turret_01_animated_Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						DetailsMaps
+						<Texture>vehicles/russian/Tank_detail/Detail_T2DA.dds</Texture>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>65561600</element>
+							<element>1006632960</element>
+							<element>391394795</element>
+							<element>1018707528</element>
+							<element>295260160</element>
+							<element>1006648904</element>
+							<element>427834265</element>
+							<element>1006632960</element>
+							<element>226509127</element>
+							<element>1006632960</element>
+							<element>1308572815</element>
+							<element>1090846720</element>
+							<element>142619177</element>
+							<element>1006632960</element>
+							<element>469727232</element>
+							<element>1006648904</element>
+						</matrix>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.450000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.483764</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.310332</Float>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>0.000622 0.858156 0.760370</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>turret_Shape1.vertices</vertices>
+			<primitive>turret_Shape1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_turret_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_turret_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>65561600</element>
+							<element>1006632960</element>
+							<element>391394795</element>
+							<element>1018707528</element>
+							<element>295260160</element>
+							<element>1006648904</element>
+							<element>427834265</element>
+							<element>1006632960</element>
+							<element>226509127</element>
+							<element>1006632960</element>
+							<element>1308572815</element>
+							<element>1090846720</element>
+							<element>142619177</element>
+							<element>1006632960</element>
+							<element>469727232</element>
+							<element>1006648904</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.450000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.483764</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.310332</Float>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>-0.026456 0.943294 -0.540128</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>tank_havok</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>3.507000 3.506850 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67051817</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>394271775</element>
+							<element>1009335880</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>129187840</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.490000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.531734</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.103690</Float>
+					</property>
+				</material>
+				<groupOrigin>-0.038123 0.477998 -0.826023</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						diffuseMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_AO.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013999 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/E65_Zwilling_W25_3Dst_equipment_ANM.dds</Texture>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67059067</element>
+							<element>1006632960</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>426131456</element>
+							<element>1068367872</element>
+							<element>771716413</element>
+							<element>1073741824</element>
+							<element>598950912</element>
+							<element>1006632960</element>
+							<element>612409036</element>
+							<element>1006632960</element>
+							<element>591775835</element>
+							<element>1026752512</element>
+							<element>661208443</element>
+							<element>1060962304</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.210000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.417343</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.321402</Float>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>0.368690 0.952430 -0.803193</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-1.476290 -0.000081 -2.718107</min>
+		<max>1.429766 1.886669 1.582848</max>
+	</boundingBox>
+	<geometrySize>497980</geometrySize>
+</root>
