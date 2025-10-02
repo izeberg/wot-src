@@ -69,7 +69,7 @@ class Portal2DAreaMarkersPlugin(plugins.MarkerPlugin, PortalAreaMarkerListener):
             elif progress is not None:
                 self._invokeMarker(markerID, 'setProgress', progress)
             elif maxHP is not None:
-                self._invokeMarker(markerID, 'setVehicleInfo', 'portal', 'portal', backport.text(R.strings.portal_hud_widget.portalHP.title()), 0, 'pFullName', 'pName', '', '', int(maxHP), 'enemy', False, 0, '')
+                self._invokeMarker(markerID, 'setVehicleInfo', 'portal', 'portal', backport.text(R.strings.portal_hud_widget.portalHP.title()), 0, '', '', '', '', int(maxHP), 'enemy', False, 0, '')
             elif currentHP is not None:
                 self._invokeMarker(markerID, 'setHealth', currentHP)
         else:

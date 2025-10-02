@@ -2021,6 +2021,8 @@ package net.wg.data.constants.generated
       
       public static const USA_A01_T1_CUNNINGHAM:String = "usa-A01_T1_Cunningham";
       
+      public static const USA_A01_T1_CUNNINGHAM_CLONE:String = "usa-a01_t1_cunningham_clone";
+      
       public static const USA_A02_M2_LT:String = "usa-A02_M2_lt";
       
       public static const USA_A03_M3_STUART:String = "usa-A03_M3_Stuart";

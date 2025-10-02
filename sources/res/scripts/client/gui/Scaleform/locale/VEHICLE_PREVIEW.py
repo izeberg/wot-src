@@ -100,6 +100,8 @@ class VEHICLE_PREVIEW(object):
     INFOPANEL_PREMIUM_BONSTEXT = '#vehicle_preview:infoPanel/premium/bonsText'
     INFOPANEL_PREMIUM_BUILTINEQUPMENTTITLE = '#vehicle_preview:infoPanel/premium/builtInEqupmentTitle'
     INFOPANEL_PREMIUM_BUILTINEQUPMENTTEXT = '#vehicle_preview:infoPanel/premium/builtInEqupmentText'
+    INFOPANEL_PREFERENTIALTITLE = '#vehicle_preview:infoPanel/preferentialTitle'
+    INFOPANEL_PREFERENTIALTEXT = '#vehicle_preview:infoPanel/preferentialText'
     INFOPANEL_COLLECTIBLE_TITLE = '#vehicle_preview:infoPanel/collectible/title'
     INFOPANEL_COLLECTIBLE_DESC = '#vehicle_preview:infoPanel/collectible/desc'
     BUYINGPANEL_FRONTLINEPACK_TITLELABEL_ACTIVE = '#vehicle_preview:buyingPanel/frontlinePack/titleLabel/active'

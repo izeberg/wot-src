@@ -482,6 +482,8 @@ class HeaderBlockConstructor(VehicleTooltipBlockConstructor):
         if self.vehicle.role != constants.ROLE_TYPE.NOT_DEFINED:
             roleLabel = self.vehicle.roleLabel
             headerBlocks.append(formatters.packTextBlockData(text_styles.main(backport.text(R.strings.menu.roleExp.roleLabel()) + ' ' + backport.text(R.strings.menu.roleExp.roleName.dyn(roleLabel)(), groupName=backport.text(R.strings.menu.roleExp.roleGroupName.dyn(roleLabel)()))), padding=formatters.packPadding(top=-9, left=leftOffset, bottom=9)))
+        if self.vehicle.isPreferential:
+            headerBlocks.append(formatters.packTextBlockData(text_styles.neutral(backport.text(R.strings.tooltips.tankCaruselTooltip.preferential())), padding=formatters.packPadding(top=-11, left=leftOffset, bottom=9)))
         block.append(formatters.packBuildUpBlockData(headerBlocks, stretchBg=False, linkage=bgLinkage, padding=formatters.packPadding(left=-self.leftPadding)))
         return block
 

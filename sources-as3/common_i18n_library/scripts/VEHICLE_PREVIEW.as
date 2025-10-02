@@ -199,6 +199,10 @@ package
       
       public static const INFOPANEL_PREMIUM_BUILTINEQUPMENTTEXT:String = "#vehicle_preview:infoPanel/premium/builtInEqupmentText";
       
+      public static const INFOPANEL_PREFERENTIALTITLE:String = "#vehicle_preview:infoPanel/preferentialTitle";
+      
+      public static const INFOPANEL_PREFERENTIALTEXT:String = "#vehicle_preview:infoPanel/preferentialText";
+      
       public static const INFOPANEL_COLLECTIBLE_TITLE:String = "#vehicle_preview:infoPanel/collectible/title";
       
       public static const INFOPANEL_COLLECTIBLE_DESC:String = "#vehicle_preview:infoPanel/collectible/desc";

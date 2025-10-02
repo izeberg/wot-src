@@ -689,7 +689,7 @@ package net.wg.portal.gui.battle.views.vehicleMarkers
       protected function updatePartsVisibility() : Vector.<Boolean>
       {
          var _loc8_:Point = null;
-         var _loc1_:Boolean = this.getIsPartVisible(P_NAME_LBL);
+         var _loc1_:Boolean = this.getIsPartVisible(P_NAME_LBL) && StringUtils.isNotEmpty(this.model.pName);
          var _loc2_:Boolean = this.getIsPartVisible(V_NAME_LBL);
          var _loc3_:Boolean = this.getIsPartVisible(HEALTH_BAR);
          var _loc4_:Boolean = this.getIsPartVisible(HEALTH_LBL);

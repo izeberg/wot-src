@@ -147,10 +147,6 @@ class PortalReplicableMarkerStatesManager(CGF.ComponentManager):
     @staticmethod
     def __invalidateMarkerState(markerStateComponent):
         markerStateComponent.activeMarkerComponent = None
-        markerStateComponent.autoProgressStartTime = -1
-        markerStateComponent.autoProgressDuration = -1
-        markerStateComponent.currentProgress = -1
-        markerStateComponent.maxProgress = -1
         return
 
 

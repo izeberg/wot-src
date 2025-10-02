@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<tank>true</tank>
 	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod0/Attach_Anim_full</nodefullVisual>
 	<visibilityBox>
 		<min>-0.705627 -1.098400 -2.904114</min>
-		<max>0.184316 0.110283 0.879608</max>
+		<max>-0.249977 0.110284 0.879607</max>
 	</visibilityBox>
 	<parent>vehicles/british/GB139_Vulcan/normal/lod1/Attach_Anim_full</parent>
 	<extent>32.000000</extent>
-	<tank>true</tank>
 </root>

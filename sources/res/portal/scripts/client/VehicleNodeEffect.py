@@ -41,26 +41,29 @@ class VehicleNodeEffect(DynamicScriptComponent):
             self.__delayedNodeID = None
         return
 
-    def __getNodeAnimator(self, nodeID):
+    def __getNodeAnimators(self, nodeID):
         if not self.__go or not self.__go.isValid():
-            return
+            return []
         hm = CGF.HierarchyManager(self.spaceID)
+        animators = []
         for effectGO in hm.getChildren(self.__go):
-            if effectGO.name == nodeID:
-                return effectGO.findComponentByType(AnimatorComponent)
+            if nodeID in effectGO.name:
+                animators.append(effectGO.findComponentByType(AnimatorComponent))
 
-        return
+        return animators
 
     def __startNodeEffect(self, nodeID):
         if not self.__go:
             self.__delayedNodeID = nodeID
             return
-        animator = self.__getNodeAnimator(nodeID)
-        if animator:
-            animator.start()
-            BigWorld.callback(animator.getDuration(), partial(self.__stopNodeEffect, nodeID))
+        animators = self.__getNodeAnimators(nodeID)
+        for animator in animators:
+            if animator:
+                animator.start()
+                BigWorld.callback(animator.getDuration(), partial(self.__stopNodeEffect, nodeID))
 
     def __stopNodeEffect(self, nodeID):
-        animator = self.__getNodeAnimator(nodeID)
-        if animator:
-            animator.stop()
+        animators = self.__getNodeAnimators(nodeID)
+        for animator in animators:
+            if animator:
+                animator.stop()

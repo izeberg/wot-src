@@ -171,6 +171,14 @@
 			</value>
 		</message>
 		<message>
+			<name>DEATH_ZONE_ENEMY_ALLY</name>
+			<type>list</type>
+			<value>
+				<item>_(#portal.portal_battle:player_messages/DEATH_ZONE_ENEMY_ALLY)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
 			<name>SUPER_BOSS_AURA_ALLY_SUICIDE</name>
 			<type>list</type>
 			<value>
@@ -183,6 +191,14 @@
 			<type>list</type>
 			<value>
 				<item>_(#portal.portal_battle:player_messages/DEATH_FROM_SENTINEL_ATTACK_SELF_SUICIDE)</item>
+				<item>red,purple</item>
+			</value>
+		</message>
+		<message>
+			<name>DEATH_FROM_DEATH_ZONE_ENEMY_SELF</name>
+			<type>list</type>
+			<value>
+				<item>_(#portal.portal_battle:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF)</item>
 				<item>red,purple</item>
 			</value>
 		</message>

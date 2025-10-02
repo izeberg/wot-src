@@ -3,9 +3,9 @@
 	<parent>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod3/Gun_01</parent>
 	<extent>96.000000</extent>
 	<visibilityBox>
-		<min>-1.012759 -0.752959 -1.558162</min>
-		<max>1.025998 0.944622 5.146340</max>
+		<min>-1.007735 -0.754602 -1.558162</min>
+		<max>1.025998 1.055591 5.146340</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod2/Gun_01</nodefullVisual>
 	<tank>true</tank>
+	<nodefullVisual>vehicles/czech/Cz37_Vz_59_Dravec/crash/lod2/Gun_01</nodefullVisual>
 </root>

@@ -1,8 +1,8 @@
-import Event, BigWorld, CGF, logging
-from portal_common.portal_constants import PORTAL_GAME_PARAMS_KEY
+import Event, CGF, logging
+from gui.battle_control import avatar_getter
+from script_component.DynamicScriptComponent import DynamicScriptComponent
 from portal_constants import PORTAL_FRONTIER_MARKERS
 from TeleportReplicableComponent import TeleportReplicableComponent
-from script_component.DynamicScriptComponent import DynamicScriptComponent
 from portal_common_cgf.portal_2d_markers.components import PortalReplicableMarkerStatesComponent as replicableMarkerStatesComponentBase
 from portal_client_cgf.portal_2d_markers.components import PortalAreaMarker
 _logger = logging.getLogger(__name__)
@@ -29,6 +29,9 @@ class PortalReplicableMarkerStatesComponent(DynamicScriptComponent, replicableMa
     def gameObject(self):
         return self.entity.entityGameObject
 
+    def _onAvatarReady(self):
+        TeleportReplicableComponent.onTeleportLinked += self.__onTeleportLinked
+
     def set_markerID(self, prev):
         self.onMarkerStateChanged(self.gameObject, self.markerID)
 
@@ -38,20 +41,10 @@ class PortalReplicableMarkerStatesComponent(DynamicScriptComponent, replicableMa
     def set_currentProgress(self, prev):
         self.onMarkerProgressChanged(self.gameObject, self.currentProgress, self.maxProgress)
 
-    def initTeleportTunnelMarkers(self, teleportGO, linkedTeleportGO):
-        teleportName = teleportGO.name
-        linkedTeleportName = linkedTeleportGO.name
+    def initTeleportTunnelMarkers(self, teleportGO, frontierName):
         hm = CGF.HierarchyManager(self.spaceID)
         markerGOQuery = hm.findComponentsInHierarchy(teleportGO, PortalAreaMarker)
         markerComponents = [ markerComp for _, markerComp in markerGOQuery ]
-        campName = self.getCampNameByTeleport(teleportName) or self.getCampNameByTeleport(linkedTeleportName)
-        if not campName:
-            _logger.error('There is no camp for teleports %s | %s', teleportName, linkedTeleportName)
-            return
-        frontierName = self.__getFrontierNameByCamp(campName)
-        if not frontierName:
-            _logger.error('There is no campFrontier in config! %s', campName)
-            return
         frontierMarkers = getattr(PORTAL_FRONTIER_MARKERS, frontierName.upper())
         teleportMarkers = frontierMarkers['teleport']
         for markerComponent in markerComponents:
@@ -62,7 +55,8 @@ class PortalReplicableMarkerStatesComponent(DynamicScriptComponent, replicableMa
 
     def initCampMarkers(self, campGO, markerComponents):
         campName = campGO.name
-        frontierName = self.__getFrontierNameByCamp(campName)
+        battleState = avatar_getter.getArenaInfo().portalBattleStateComponent
+        frontierName = battleState.getCampFrontier(campName)
         if not frontierName:
             _logger.error('There is no campFrontier in config! %s', campName)
             return
@@ -74,35 +68,25 @@ class PortalReplicableMarkerStatesComponent(DynamicScriptComponent, replicableMa
 
         self.onMarkersInitialized(campGO)
 
-    def _onAvatarReady(self):
-        TeleportReplicableComponent.onTeleportLinked += self.__onTeleportLinked
-
-    def getCampNameByTeleport(self, teleportName):
-        player = BigWorld.player()
-        portalConfig = player.lobbyContext.getServerSettings().getSettings()[PORTAL_GAME_PARAMS_KEY]
-        campTeleports = portalConfig['scenario']['teleportSettings']['campTeleports']
-        return campTeleports.get(teleportName)
-
     def __onTeleportLinked(self, teleportGO):
+        if not self.gameObject or teleportGO.id != self.gameObject.id:
+            return
         sourceComponent = teleportGO.findComponentByType(TeleportReplicableComponent)
         index = sourceComponent.index
         teleports = CGF.Query(self.spaceID, (CGF.GameObject, TeleportReplicableComponent)).values()
         linkedTeleports = [ teleportGO for teleportGO, component in teleports if component.index == index ]
         if len(linkedTeleports) != 2:
             return
-        sourceTeleport = linkedTeleports[0]
-        destinationTeleport = linkedTeleports[1]
-        self.initTeleportTunnelMarkers(sourceTeleport, destinationTeleport)
-        linkedMarkersComponent = destinationTeleport.findComponentByType(PortalReplicableMarkerStatesComponent)
-        linkedMarkersComponent.initTeleportTunnelMarkers(destinationTeleport, sourceTeleport)
+        else:
+            battleState = avatar_getter.getArenaInfo().portalBattleStateComponent
+            frontierName = None
+            for teleport in linkedTeleports:
+                frontierName = battleState.getTeleportFrontier(teleport.name)
+                if frontierName:
+                    break
 
-    def __getFrontierNameByCamp(self, campName):
-        player = BigWorld.player()
-        portalConfig = player.lobbyContext.getServerSettings().getSettings()[PORTAL_GAME_PARAMS_KEY]
-        frontierInfos = portalConfig['scenario']['campsSettings']['frontiers']
-        campFrontier = None
-        for frontier, frontierInfo in frontierInfos.iteritems():
-            if campName in frontierInfo['camps']:
-                campFrontier = frontier
+            for teleport in linkedTeleports:
+                markersComponent = teleport.findComponentByType(PortalReplicableMarkerStatesComponent)
+                markersComponent.initTeleportTunnelMarkers(teleport, frontierName)
 
-        return campFrontier
+            return

@@ -190,6 +190,7 @@
 		<_152mm_XM81E1>31022</_152mm_XM81E1>
 		<QF_6_pounder_Mk_III_02>31023</QF_6_pounder_Mk_III_02>
 		<_120mm_Gun_M58A_T>31007</_120mm_Gun_M58A_T>
+		<_105mm_Gun_T5E1_832>35000</_105mm_Gun_T5E1_832>
 		<_120mm_RHD_MBT_T>35001</_120mm_RHD_MBT_T>
 		<_105mm_T254_T>35002</_105mm_T254_T>
 		<_120mm_Gun_T179_ISP>37000</_120mm_Gun_T179_ISP>
@@ -11554,6 +11555,118 @@
 				</_105mm_HE_M11_M>
 			</shots>
 		</_105mm_Gun_T5E1_M>
+		<_105mm_Gun_T5E1_832>
+			<userString>#usa_vehicles:_105mm_Gun_T5E1_832</userString>
+			<tags/>
+			<level>8</level>
+			<price>118000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.48
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.16
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large_mb</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -20.0 1.0 -20.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 10.0 1.0 10.0
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>
+				35.0
+				<!--BW_String-->
+			</rotationSpeed>
+			<reloadTime>
+				9.48571428571429
+				<!--BW_String-->
+			</reloadTime>
+			<maxAmmo>46</maxAmmo>
+			<aimingTime>
+				2.28571428571429
+				<!--BW_String-->
+			</aimingTime>
+			<weight>2400</weight>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.1
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.422857142857143
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_105mm_AP_T32_832>
+					<defaultPortion>
+						0.9
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>945</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>218 208</piercingPower>
+				</_105mm_AP_T32_832>
+				<_105mm_APCR_T29E3_832>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1181</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>252 245</piercingPower>
+				</_105mm_APCR_T29E3_832>
+				<_105mm_HE_M11_832>
+					<defaultPortion>
+						0.1
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>945</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_HE_M11_832>
+			</shots>
+		</_105mm_Gun_T5E1_832>
 		<_105mm_Gun_T5E1_1>
 			<userString>#usa_vehicles:_105mm_Gun_T5E1_1</userString>
 			<tags/>

@@ -1842,22 +1842,22 @@
 									<row3>0.000000 1.243180 -0.044479</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>2.910720 -0.000000 0.000000</row0>
+									<row0>3.014560 0.000000 0.000000</row0>
 									<row1>0.000000 0.300000 0.000000</row1>
 									<row2>0.000000 0.000000 6.837990</row2>
-									<row3>0.000001 1.353910 0.016621</row3>
+									<row3>0.000001 1.310670 0.016621</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>0.708170 0.000000 0.000000</row0>
-									<row1>-0.000000 0.258710 0.151886</row1>
-									<row2>-0.000000 -0.220569 0.375698</row2>
-									<row3>-1.128270 1.328610 3.327660</row3>
+									<row0>0.708170 0.000000 -0.000000</row0>
+									<row1>0.000000 0.258710 0.151886</row1>
+									<row2>0.000000 -0.220569 0.375698</row2>
+									<row3>-1.151440 1.274460 3.363660</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>0.752805 -0.000001 0.000001</row0>
-									<row1>0.000000 0.224346 -0.199171</row1>
+									<row1>0.000001 0.224346 -0.199171</row1>
 									<row2>0.000000 0.289235 0.325795</row2>
-									<row3>-1.093480 1.344090 -3.302600</row3>
+									<row3>-1.151000 1.344090 -3.302600</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1936,22 +1936,22 @@
 									<row3>0.000000 1.389950 0.016506</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>2.910720 -0.000000 0.000000</row0>
-									<row1>0.000000 0.300000 0.000000</row1>
-									<row2>0.000000 0.000000 6.837985</row2>
-									<row3>0.000001 1.353914 0.016621</row3>
+									<row0>3.014560 0.000000 0.000000</row0>
+									<row1>0.000000 0.300000 -0.000000</row1>
+									<row2>0.000000 -0.000000 6.837990</row2>
+									<row3>0.000001 1.310220 0.016621</row3>
 								</boxCollider>
 								<boxCollider>
-									<row0>0.708170 0.000000 0.000000</row0>
-									<row1>-0.000000 0.258710 0.151886</row1>
-									<row2>-0.000000 -0.220569 0.375698</row2>
-									<row3>1.128000 1.328610 3.327660</row3>
+									<row0>0.708170 -0.000001 -0.000001</row0>
+									<row1>0.000000 0.258710 0.151886</row1>
+									<row2>0.000000 -0.220569 0.375698</row2>
+									<row3>1.151000 1.270570 3.361370</row3>
 								</boxCollider>
 								<boxCollider>
 									<row0>0.752805 -0.000001 0.000001</row0>
-									<row1>0.000000 0.224346 -0.199171</row1>
+									<row1>0.000001 0.224346 -0.199171</row1>
 									<row2>0.000000 0.289235 0.325795</row2>
-									<row3>1.093000 1.344090 -3.302600</row3>
+									<row3>1.151000 1.344090 -3.302600</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1987,7 +1987,10 @@
 					<isLeft>true</isLeft>
 					<template>WD_L</template>
 					<geometry>
-						<radius>0.149539</radius>
+						<radius>
+							0.16254
+							<!--BW_String-->
+						</radius>
 					</geometry>
 					<startIndex>1</startIndex>
 					<count>3</count>
@@ -2045,7 +2048,10 @@
 					<isLeft>false</isLeft>
 					<template>WD_R</template>
 					<geometry>
-						<radius>0.149539</radius>
+						<radius>
+							0.15354
+							<!--BW_String-->
+						</radius>
 					</geometry>
 					<startIndex>1</startIndex>
 					<count>3</count>
@@ -2263,7 +2269,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2277,7 +2283,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2291,7 +2297,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2305,7 +2311,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2319,7 +2325,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2333,7 +2339,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2347,7 +2353,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2361,7 +2367,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2375,7 +2381,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2389,7 +2395,7 @@
 						<!--BW_String-->
 					</minOffset>
 					<maxOffset>
-						0.3
+						0.1
 						<!--BW_String-->
 					</maxOffset>
 					<trackPairIdx>0</trackPairIdx>
@@ -2426,7 +2432,10 @@
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>131</segmentsCount>
 					<segmentsOuterThickness>0.011831</segmentsOuterThickness>
-					<segmentsInnerThickness>0.020735</segmentsInnerThickness>
+					<segmentsInnerThickness>
+						-0.01
+						<!--BW_String-->
+					</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						-1.176
 						<!--BW_String-->
@@ -3152,7 +3161,7 @@
 					<trackPairIdx>0</trackPairIdx>
 					<segmentsCount>131</segmentsCount>
 					<segmentsOuterThickness>0.011831</segmentsOuterThickness>
-					<segmentsInnerThickness>0.020735</segmentsInnerThickness>
+					<segmentsInnerThickness>0</segmentsInnerThickness>
 					<segmentsPlaneOffset>
 						1.176
 						<!--BW_String-->

@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.065362 2.144348</row3>
+							<row3>0.000000 0.065362 1.751366</row3>
 						</transform>
 					</node>
 					<node>
@@ -77,30 +77,31 @@
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_guns_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>7.014000 3.506850 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
 						<Float>
 							0.35
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
 							<!--BW_String-->
 						</Float>
 					</property>
@@ -112,36 +113,35 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>7.014000 3.507000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_guns_ID.dds</Texture>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>0.008750 0.155621 -1.793599</groupOrigin>
@@ -153,6 +153,6 @@
 		<min>-1.009120 -0.752548 -1.559143</min>
 		<max>1.026620 1.063789 5.146340</max>
 	</boundingBox>
-	<geometrySize>777330</geometrySize>
+	<geometrySize>778962</geometrySize>
 	<minUVDensity>0.013969</minUVDensity>
 </root>

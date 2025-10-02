@@ -104,8 +104,10 @@ class PortalBattlePage(ClassicPage):
          'battleMessenger', 'consumablesPanel', 'battleTimer', 'battleEndWarningPanel',
          'perksPanel', 'battleDamageLogPanel', 'battleVehicleMessages',
          'statusNotificationsPanel', 'battleVehicleErrorMessages', 'ribbonsPanel',
-         'portalHudWidgetView', 'enemiesDataPanel', 'damageInfoPanel',
+         'portalHudWidgetView', 'damageInfoPanel',
          'battlePlayerMessages', 'prebattleTimer', 'debugPanel'}
+        if self.battleState.battleState != BattleState.SUPER_BOSS_FIGHT:
+            atgmToggleableComponents.add(PORTAL_BATTLE_VIEW_ALIASES.ENEMIES_DATA_PANEL)
         if ctrlMode == CTRL_MODE_NAME.ATGM:
             self._setComponentsVisibility(visible={
              PORTAL_BATTLE_VIEW_ALIASES.GUIDED_MISSILE_WIDGET}, hidden=atgmToggleableComponents)

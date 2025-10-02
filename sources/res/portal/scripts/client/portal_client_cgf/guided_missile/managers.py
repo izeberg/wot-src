@@ -68,7 +68,7 @@ class DisplayPortalReplicableValuesManager(CGF.ComponentManager):
         r.onReplicated -= self.__onReplicationDone
         player = BigWorld.player()
         if player is not None and player.id == r.replicableAvatarId and not r.isDeploying:
-            if player.vehicle.health > 0:
+            if player.vehicle and player.vehicle.health > 0:
                 self.__updateControlMode(CTRL_MODE_NAME.ARCADE, r.replicableAvatarId)
             else:
                 self.__updateControlMode(CTRL_MODE_NAME.POSTMORTEM, r.replicableAvatarId)
@@ -86,6 +86,7 @@ class DisplayPortalReplicableValuesManager(CGF.ComponentManager):
             InputHandler.g_instance.onKeyUp += self.__handleEndBoostKeyEvent
             InputHandler.g_instance.onKeyDown += self.__handleDetonateKeyEvent
             play2DSound(PortalAbilitySound.GUIDED_MISSILE_FLY)
+            player.autoAim(None, False)
         if not r.isDeploying:
             gm = go.findComponentByType(components.PortalGuidedMissileComponent)
             go.createComponent(GenericComponents.ParticleComponent, gm.trailEffectPath, True, 1.0)

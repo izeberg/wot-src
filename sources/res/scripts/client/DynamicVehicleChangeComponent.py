@@ -46,6 +46,8 @@ class DynamicVehicleChangeComponent(ScriptComponent):
                 oldVehicle.isPlayerVehicle = False
                 self.__sessionProvider.startVehicleVisual(oldVehicle, True)
                 oldVehicle.show(True)
+                oldVehicle.targetCaps = [1]
+                oldVehicle.appearance.highlighter.setVehicleOwnership()
             gunRotator = self.avatar.gunRotator
             if gunRotator is not None:
                 gunRotator.clientMode = True
@@ -59,6 +61,9 @@ class DynamicVehicleChangeComponent(ScriptComponent):
             self.__sessionProvider.stopVehicleVisual(vehicleID, False)
             self.avatar.updateObservedVehicleData()
             self.avatar.vehicleTypeDescriptor = newVehicle.typeDescriptor
+            newVehicle.targetCaps = [
+             0]
+            newVehicle.appearance.highlighter.setVehicleOwnership()
             self.__onStartVehicleControlSuccess(vehicleID)
             return
 

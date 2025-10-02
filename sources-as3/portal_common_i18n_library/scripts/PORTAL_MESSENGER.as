@@ -59,8 +59,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_EVENTSTATE_SUSPENDED:String = "#portal.portal_messenger:serviceChannelMessages/eventState/suspended";
       
-      public static const SERVICECHANNELMESSAGES_EVENTSTATE_RESUMED:String = "#portal.portal_messenger:serviceChannelMessages/eventState/resumed";
-      
       public static const SERVICECHANNELMESSAGES_EVENTSTATE_EVENTLOCKED:String = "#portal.portal_messenger:serviceChannelMessages/eventState/eventLocked";
       
       public static const SERVICECHANNELMESSAGES_EVENTSTATE_EVENTUNLOCKED:String = "#portal.portal_messenger:serviceChannelMessages/eventState/eventUnlocked";

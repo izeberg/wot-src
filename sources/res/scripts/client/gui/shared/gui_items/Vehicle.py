@@ -1148,6 +1148,10 @@ class Vehicle(FittingItem):
         return self.isDualGun and self.isClipGun
 
     @property
+    def isPreferential(self):
+        return self._descriptor.isPreferential
+
+    @property
     def chassisType(self):
         return self._descriptor.chassisType
 

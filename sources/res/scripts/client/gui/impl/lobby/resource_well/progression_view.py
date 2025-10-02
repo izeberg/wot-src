@@ -92,7 +92,9 @@ class ProgressionView(ViewImpl):
          (
           self.__resourceWell.onNumberRequesterUpdated, self.__onNumberRequesterUpdated),
          (
-          self.__resourceWell.onEventUpdated, self.__onEventStateUpdated))
+          self.__resourceWell.onEventUpdated, self.__onEventStateUpdated),
+         (
+          self.__resourceWell.onEventStateChanged, self.__onEventStateChanged))
 
     def __updateModel(self):
         with self.viewModel.transaction() as (model):
@@ -190,6 +192,9 @@ class ProgressionView(ViewImpl):
         if not self.__resourceWell.isActive():
             self.__close()
             return
+        self.__updateModel()
+
+    def __onEventStateChanged(self):
         self.__updateModel()
 
     def __getReminderTimeLeft(self):

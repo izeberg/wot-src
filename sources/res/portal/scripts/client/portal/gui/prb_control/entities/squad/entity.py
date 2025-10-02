@@ -1,4 +1,4 @@
-import typing, cPickle, account_helpers
+import typing, AccountUnitAPI, account_helpers
 from debug_utils import LOG_ERROR
 from helpers import dependency
 from UnitBase import UNIT_ROLE
@@ -32,8 +32,8 @@ class PortalEntryPoint(SquadEntryPoint):
     def __buildModeExtraParams(self):
         battleLevel = self.__portalEventController.battleLevel
         maxAvailableBattleLevel = self.__portalEventController.maxComplexityLevel
-        return cPickle.dumps({'battleLevel': battleLevel, 
-           'maxAvailableBattleLevel': maxAvailableBattleLevel}, -1)
+        return AccountUnitAPI.dumpExtras({'battleLevel': battleLevel, 
+           'maxAvailableBattleLevel': maxAvailableBattleLevel})
 
 
 class PortalSquadEntity(SquadEntity):

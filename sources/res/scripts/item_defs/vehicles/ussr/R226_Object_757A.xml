@@ -1192,11 +1192,11 @@
 			<rotationSpeed>35</rotationSpeed>
 			<shotDispersionFactors>
 				<vehicleMovement>
-					10.0
+					0.22
 					<!--BW_String-->
 				</vehicleMovement>
 				<vehicleRotation>
-					10.0
+					0.22
 					<!--BW_String-->
 				</vehicleRotation>
 			</shotDispersionFactors>
@@ -2768,11 +2768,11 @@
 					</autoreload>
 					<shotDispersionFactors>
 						<turretRotation>
-							10.0
+							0.2
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
-							4.0
+							6.0
 							<!--BW_String-->
 						</afterShot>
 						<whileGunDamaged>
@@ -2781,7 +2781,7 @@
 						</whileGunDamaged>
 					</shotDispersionFactors>
 					<aimingTime>
-						0.5
+						1.0
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>
@@ -3275,7 +3275,16 @@
 	<radios>
 		<R113_757>shared</R113_757>
 	</radios>
-	<clientAdjustmentFactors/>
+	<clientAdjustmentFactors>
+		<guns>
+			<_125mm_D_126S>
+				<delta>
+					0.033
+					<!--BW_String-->
+				</delta>
+			</_125mm_D_126S>
+		</guns>
+	</clientAdjustmentFactors>
 	<physics>
 		<detailed>
 			<engines>
@@ -3311,6 +3320,48 @@
 			</chassis>
 		</detailed>
 	</physics>
+	<extras>
+		<surprise>
+			NoneExtra : CustomAttributeModifier
+			<modifiers>
+				<mul>
+					<name>dynAttrs/chassis/shotDispersionFactors/movement</name>
+					<value>
+						100.0
+						<!--BW_String-->
+					</value>
+				</mul>
+				<mul>
+					<name>dynAttrs/chassis/shotDispersionFactors/rotation</name>
+					<value>
+						100.0
+						<!--BW_String-->
+					</value>
+				</mul>
+				<mul>
+					<name>dynAttrs/gun/shotDispersionFactors/afterShot</name>
+					<value>
+						100.0
+						<!--BW_String-->
+					</value>
+				</mul>
+				<mul>
+					<name>dynAttrs/gun/shotDispersionFactors/turretRotation</name>
+					<value>
+						100.0
+						<!--BW_String-->
+					</value>
+				</mul>
+				<mul>
+					<name>dynAttrs/gun/aimingTime</name>
+					<value>
+						0.25
+						<!--BW_String-->
+					</value>
+				</mul>
+			</modifiers>
+		</surprise>
+	</extras>
 	<effects>
 		<collision/>
 		<damagedStateGroup>large</damagedStateGroup>

@@ -1337,6 +1337,7 @@ class TOOLTIPS(object):
     TANKCARUSELTOOLTIP_VEHICLETYPE_ELITE_HEAVYTANK = '#tooltips:tankCaruselTooltip/vehicleType/elite/heavyTank'
     TANKCARUSELTOOLTIP_VEHICLETYPE_ELITE_AT_SPG = '#tooltips:tankCaruselTooltip/vehicleType/elite/AT-SPG'
     TANKCARUSELTOOLTIP_VEHICLETYPE_ELITE_SPG = '#tooltips:tankCaruselTooltip/vehicleType/elite/SPG'
+    TANKCARUSELTOOLTIP_PREFERENTIAL = '#tooltips:tankCaruselTooltip/preferential'
     TANKMAN_STATUS_WRONGVEHICLE_HEADER = '#tooltips:tankman/status/wrongVehicle/header'
     TANKMAN_STATUS_WRONGVEHICLE_TEXT = '#tooltips:tankman/status/wrongVehicle/text'
     TANKMAN_STATUS_WRONGPREMIUMVEHICLE_HEADER = '#tooltips:tankman/status/wrongPremiumVehicle/header'

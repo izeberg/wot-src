@@ -378,10 +378,16 @@ msgstr "(град/с)"
 msgid "params/varTitle"
 msgstr "%(title)s %(value)s"
 
+msgid "repair/always"
+msgstr "Постоянное действие:"
+
+msgid "repair/operatingTime"
+msgstr "Время работы: %(time)s с."
+
 msgid "repair/repairDescription"
 msgstr ""
-"Починка всех повреждённых модулей. Используется многократно за бой. "
-"Снаряжение списывается после боя, если было хоть раз применено."
+"Починка всех повреждённых модулей. Используется многократно за бой. Модули "
+"не могут быть повреждены, пока действует эффект этого снаряжения."
 
 msgid "repair/repairSpeed"
 msgstr "%(percents)s к скорости ремонта модулей"
@@ -424,18 +430,6 @@ msgstr "%(from)s-%(to)s"
 
 msgid "shell/type/ARMOR_PIERCING"
 msgstr "Бронебойный"
-
-msgid "simple/progressionEntryPoint/desc"
-msgstr "++Нажмите, чтобы перейти в прогрессию события.++"
-
-msgid "simple/progressionEntryPoint/title"
-msgstr "++Прогрессия события++"
-
-msgid "simple/shopEntryPoint/desc"
-msgstr "++Нажмите, чтобы перейти в магазин события.++"
-
-msgid "simple/shopEntryPoint/title"
-msgstr "++Магазин события++"
 
 msgid "squad/complexity/squadLocked/description"
 msgstr "Кто-то из участников вашего взвода ещё не достиг этого уровня."

@@ -547,7 +547,7 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
         return self.__eventConfig.stampsPerProgressionStage
 
     def getSeasonStartEndDate(self):
-        season = self.getCurrentSeason()
+        season = self.getCurrentSeason() if self.getCurrentSeason() else self.getNextSeason()
         return (season.getStartDate(), season.getEndDate())
 
     def getAbilityDuration(self, abilityName):
@@ -700,8 +700,6 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
     def __onBattleSwitchChanged(self, isSuspended):
         if isSuspended:
             SystemMessages.pushMessage(text=backport.text(R.strings.portal_messenger.serviceChannelMessages.eventState.suspended()), type=SystemMessages.SM_TYPE.ErrorSimple, priority=NotificationPriorityLevel.MEDIUM)
-        else:
-            SystemMessages.pushMessage(text=backport.text(R.strings.portal_messenger.serviceChannelMessages.eventState.resumed()), priority=NotificationPriorityLevel.MEDIUM)
 
     def __onFrozenStateChanged(self, isFrozen):
         if isFrozen:

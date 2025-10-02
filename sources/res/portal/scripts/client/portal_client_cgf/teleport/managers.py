@@ -10,6 +10,7 @@ from portal_common_cgf.teleport.components import TeleportEffectComponent, Telep
 from portal_common_cgf.portal_helpers import registerPortalManager
 from portal.sounds.sound_constants import PortalBattleSound
 from TeleportReplicableComponent import TeleportReplicableComponent
+from shared_utils import nextTick
 if typing.TYPE_CHECKING:
     from PortalBattleStateComponent import PortalBattleStateComponent
 
@@ -91,14 +92,16 @@ class TeleportManager(CGF.ComponentManager):
         teleportComponent = teleportGO.findComponentByType(TeleportReplicableComponent)
         return teleportComponent.teleportingVehicleID == vehicleID
 
+    @nextTick
     def __changeAnimation(self, go, animation):
         animator = go.findComponentByType(AnimatorComponent)
         if not animator:
             LOG_ERROR('Could not find an Animator Component on GO', go.name)
             return
-        animator.stop()
-        if animation:
-            animator.startLayerByName(animation)
+        if animator.isValid():
+            animator.stop()
+            if animation:
+                animator.startLayerByName(animation)
 
     def __activateModel(self, animationsGO):
         self.__changeAnimation(animationsGO, None)

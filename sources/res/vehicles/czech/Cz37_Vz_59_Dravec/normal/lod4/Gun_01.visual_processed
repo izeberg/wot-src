@@ -38,7 +38,7 @@
 							<row0>1.000000 0.000000 0.000000</row0>
 							<row1>0.000000 1.000000 0.000000</row1>
 							<row2>0.000000 0.000000 1.000000</row2>
-							<row3>0.000000 0.065362 2.144348</row3>
+							<row3>0.000000 0.065362 1.751366</row3>
 						</transform>
 					</node>
 					<node>
@@ -74,6 +74,7 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
 			<vertices>gun_01_Shape.vertices</vertices>

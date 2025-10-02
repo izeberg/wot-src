@@ -9,7 +9,7 @@
 	</crew>
 	<supplySlots>8 8 8</supplySlots>
 	<speedLimits>
-		<forward>40</forward>
+		<forward>50</forward>
 		<backward>17</backward>
 	</speedLimits>
 	<invisibility>
@@ -6947,15 +6947,15 @@
 			<engines>
 				<V-2K_H>
 					<smplEnginePower>760</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</V-2K_H>
 				<V-2-54M_H>
 					<smplEnginePower>1500</smplEnginePower>
-					<smplFwMaxSpeed>35</smplFwMaxSpeed>
+					<smplFwMaxSpeed>40</smplFwMaxSpeed>
 				</V-2-54M_H>
 				<M-40-2V_H>
 					<smplEnginePower>1206</smplEnginePower>
-					<smplFwMaxSpeed>45</smplFwMaxSpeed>
+					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</M-40-2V_H>
 			</engines>
 			<chassis>

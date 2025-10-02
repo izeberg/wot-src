@@ -57,6 +57,8 @@ package
       
       public static const PLAYER_MESSAGES_SENTINEL_ATTACK_ALLY_SUICIDE:String = "#portal.portal_battle:player_messages/SENTINEL_ATTACK_ALLY_SUICIDE";
       
+      public static const PLAYER_MESSAGES_DEATH_ZONE_ENEMY_ALLY:String = "#portal.portal_battle:player_messages/DEATH_ZONE_ENEMY_ALLY";
+      
       public static const PLAYER_MESSAGES_SUPER_BOSS_AURA_ALLY_SUICIDE:String = "#portal.portal_battle:player_messages/SUPER_BOSS_AURA_ALLY_SUICIDE";
       
       public static const EFFICIENCYRIBBONS_GUIDEDMISSILE:String = "#portal.portal_battle:efficiencyRibbons/guidedMissile";
@@ -65,7 +67,11 @@ package
       
       public static const EFFICIENCYRIBBONS_SENTINELATTACK:String = "#portal.portal_battle:efficiencyRibbons/sentinelAttack";
       
+      public static const EFFICIENCYRIBBONS_PORTALDEATHZONE:String = "#portal.portal_battle:efficiencyRibbons/portalDeathZone";
+      
       public static const PLAYER_MESSAGES_DEATH_FROM_SENTINEL_ATTACK_SELF_SUICIDE:String = "#portal.portal_battle:player_messages/DEATH_FROM_SENTINEL_ATTACK_SELF_SUICIDE";
+      
+      public static const PLAYER_MESSAGES_DEATH_FROM_DEATH_ZONE_ENEMY_SELF:String = "#portal.portal_battle:player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF";
       
       public static const PLAYER_MESSAGES_DEATH_FROM_SUPER_BOSS_AURA_SELF_SUICIDE:String = "#portal.portal_battle:player_messages/DEATH_FROM_SUPER_BOSS_AURA_SELF_SUICIDE";
       

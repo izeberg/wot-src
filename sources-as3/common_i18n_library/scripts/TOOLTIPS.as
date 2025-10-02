@@ -2651,6 +2651,8 @@ package
       
       public static const TANKCARUSELTOOLTIP_VEHICLETYPE_ELITE_SPG:String = "#tooltips:tankCaruselTooltip/vehicleType/elite/SPG";
       
+      public static const TANKCARUSELTOOLTIP_PREFERENTIAL:String = "#tooltips:tankCaruselTooltip/preferential";
+      
       public static const TANKMAN_STATUS_WRONGVEHICLE_HEADER:String = "#tooltips:tankman/status/wrongVehicle/header";
       
       public static const TANKMAN_STATUS_WRONGVEHICLE_TEXT:String = "#tooltips:tankman/status/wrongVehicle/text";

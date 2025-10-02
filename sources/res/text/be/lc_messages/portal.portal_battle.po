@@ -97,11 +97,14 @@ msgstr "Захват Башни (%(percent)s%%)"
 msgid "efficiencyRibbons/guidedMissile"
 msgstr "Вы нанесли урон Шаровой молнией"
 
+msgid "efficiencyRibbons/portalDeathZone"
+msgstr "Урон от Зоны-убийцы"
+
 msgid "efficiencyRibbons/sentinelAttack"
 msgstr "Урон от Врат"
 
 msgid "efficiencyRibbons/superBossAura"
-msgstr "Урон от испепеляющей ауры"
+msgstr "Урон от Ауры Ратте"
 
 msgid "finalStatistics/commonStats/resultlabel/lose"
 msgstr "ПОРАЖЕНИЕ!"
@@ -199,11 +202,17 @@ msgstr "Магнит готов к использованию."
 msgid "player_messages/COMBAT_EQUIPMENT_READY_VEHICLE_CHANGE_SHOT_PORTAL"
 msgstr "Перехват готов к использованию."
 
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "%(target)s уничтожен Зоной-убийцей."
+
 msgid "player_messages/DEATH_FROM_SENTINEL_ATTACK_SELF_SUICIDE"
-msgstr "Машина уничтожена атакой Врат"
+msgstr "%(target)s уничтожен Вратами."
 
 msgid "player_messages/DEATH_FROM_SUPER_BOSS_AURA_SELF_SUICIDE"
-msgstr "Машина уничтожена испепеляющей Аурой"
+msgstr "%(target)s уничтожен Аурой Ратте."
+
+msgid "player_messages/DEATH_ZONE_ENEMY_ALLY"
+msgstr "%(target)s уничтожен Зоной-убийцей."
 
 msgid "player_messages/GUIDED_MISSILE_ALLY_ENEMY"
 msgstr "Шаровая молния %(attacker)s уничтожила %(target)s."

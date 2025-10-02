@@ -89,24 +89,6 @@
 				</node>
 			</node>
 			<node>
-				<identifier>Roller_feed_5_jnt</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.124375 0.000215 -1.806369</row3>
-				</transform>
-				<node>
-					<identifier>Roller_feed_5_jnt_BlendBone</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>-0.124375 -0.000215 1.806369</row3>
-					</transform>
-				</node>
-			</node>
-			<node>
 				<identifier>container_jnt</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
@@ -236,21 +218,49 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Lever_1_jnt_BlendBone</node>
-		<node>Lever_2_jnt_BlendBone</node>
-		<node>lever_drive_3_jnt_BlendBone</node>
-		<node>lever_drive_2_jnt_BlendBone</node>
-		<node>lever_drive_1_jnt_BlendBone</node>
-		<node>Roller_feed_2_jnt_BlendBone</node>
-		<node>Roller_feed_3_jnt_BlendBone</node>
-		<node>Roller_feed_5_jnt_BlendBone</node>
+		<node>projectile_jnt_BlendBone</node>
 		<node>container_jnt_BlendBone</node>
 		<node>cover_jnt_BlendBone</node>
 		<node>engine_jnt_BlendBone</node>
-		<node>projectile_jnt_BlendBone</node>
 		<geometry>
-			<vertices>Attach_anim_Shape1.vertices</vertices>
-			<primitive>Attach_anim_Shape1.indices</primitive>
+			<vertices>gun_01_animShape1_split_2.vertices</vertices>
+			<primitive>gun_01_animShape1_split_2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_ammo3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.468884 -0.664039 -0.288331</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Roller_feed_2_jnt_BlendBone</node>
+		<node>lever_drive_2_jnt_BlendBone</node>
+		<node>lever_drive_1_jnt_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape1_split_1.vertices</vertices>
+			<primitive>gun_01_animShape1_split_1.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -274,50 +284,53 @@
 						normalMap
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>-0.259464 -0.064174 1.886722</groupOrigin>
+				<groupOrigin>-0.505801 -0.140101 1.203825</groupOrigin>
 			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Roller_feed_3_jnt_BlendBone</node>
+		<node>Lever_1_jnt_BlendBone</node>
+		<node>Lever_2_jnt_BlendBone</node>
+		<node>lever_drive_3_jnt_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape1_split_0.vertices</vertices>
+			<primitive>gun_01_animShape1_split_0.indices</primitive>
 			<primitiveGroup>
-				1
+				0
 				<material>
-					<identifier>tank_ammo3_skinned</identifier>
+					<identifier>tank_guns3_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
-						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_AM.dds</Texture>
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AM.dds</Texture>
 					</property>
 					<property>
 						excludeMaskAndAOMap
-						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_AO.dds</Texture>
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AO.dds</Texture>
 					</property>
 					<property>
 						metallicGlossMap
-						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_GMM.dds</Texture>
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_GMM.dds</Texture>
 					</property>
 					<property>
 						normalMap
-						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_ANM.dds</Texture>
-					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.468884 -0.664039 -0.288331</groupOrigin>
+				<groupOrigin>-0.476390 -0.060994 2.087260</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
 		<min>-0.705904 -1.097075 -2.903136</min>
-		<max>0.186976 0.108100 0.878853</max>
+		<max>-0.246876 0.108101 0.878853</max>
 	</boundingBox>
-	<geometrySize>57824</geometrySize>
+	<geometrySize>55604</geometrySize>
 	<minUVDensity>0.013751</minUVDensity>
 </root>

@@ -76,6 +76,10 @@ class VehiclePreviewBrowseTab(VehiclePreviewBrowseTabMeta):
                         text = R.strings.vehicle_preview.infoPanel.premium.noCrewTransferPenaltyText()
                     bonuses.append({'iconSrc': backport.image(R.images.gui.maps.shop.kpi.crow_benefits()), 
                        'labelStr': text_styles.concatStylesToMultiLine(text_styles.highTitle(backport.text(R.strings.vehicle_preview.infoPanel.premium.crewTransferTitle())), text_styles.main(backport.text(text)))})
+                if item.isPreferential:
+                    text = R.strings.vehicle_preview.infoPanel.preferentialText()
+                    bonuses.append({'iconSrc': backport.image(R.images.gui.maps.shop.kpi.preferential()), 
+                       'labelStr': text_styles.concatStylesToMultiLine(text_styles.highTitle(backport.text(R.strings.vehicle_preview.infoPanel.preferentialTitle())), text_styles.main(backport.text(text)))})
                 builtInEquipmentIDs = item.getBuiltInEquipmentIDs()
                 builtInCount = len(builtInEquipmentIDs) if builtInEquipmentIDs else 0
                 if builtInCount > 0:

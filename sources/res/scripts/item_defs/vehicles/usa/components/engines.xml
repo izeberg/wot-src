@@ -172,6 +172,7 @@
 		<LDS_750>31028</LDS_750>
 		<Wright_Continental_R-975C1L_02>31029</Wright_Continental_R-975C1L_02>
 		<Continental_AOSI_1195_5_T>31009</Continental_AOSI_1195_5_T>
+		<Continental_AV-1790-3_832>35000</Continental_AV-1790-3_832>
 		<Continental_AVCR_MBT_T>35001</Continental_AVCR_MBT_T>
 		<LDS_750_T>35002</LDS_750_T>
 		<Continental_AV_1790_5C_ISP>37000</Continental_AV_1790_5C_ISP>
@@ -1220,6 +1221,26 @@
 			<rpm_min>409</rpm_min>
 			<rpm_max>2863</rpm_max>
 		</Continental_AV-1790-3_M>
+		<Continental_AV-1790-3_832>
+			<userString>#usa_vehicles:Continental_AV-1790-3_832</userString>
+			<tags>gasoline</tags>
+			<level>8</level>
+			<price>59000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
+			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<power>865</power>
+			<weight>569</weight>
+			<maxHealth>260</maxHealth>
+			<maxRegenHealth>130</maxRegenHealth>
+			<repairCost>6</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>409</rpm_min>
+			<rpm_max>2863</rpm_max>
+		</Continental_AV-1790-3_832>
 		<Continental_AV-1790-3A1>
 			<userString>#usa_vehicles:Continental_AV-1790-3A1</userString>
 			<shortUserString>#usa_vehicles:Continental_AV-1790-3A1_short</shortUserString>

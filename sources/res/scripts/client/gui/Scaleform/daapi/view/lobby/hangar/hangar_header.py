@@ -414,6 +414,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         self.__updateResourceWellEntryPoint()
         self.__updateCollectiveGoalEntryPoint()
         self.__updateUniversalFlagEntryPoint()
+        self.__updateBattleMattersEntryPoint()
         self.as_updateEconomyWidgetS({'isVisible': EconomyWidgetHandler.isEconomyWidgetVisible(), 
            'bonusValue': EconomyWidgetHandler.backportEconomyWidgetText()})
 

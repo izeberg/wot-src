@@ -1014,7 +1014,7 @@
 				0
 				<material>
 					<identifier>track_mat_L_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -1086,7 +1086,7 @@
 				0
 				<material>
 					<identifier>track_mat_R_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>

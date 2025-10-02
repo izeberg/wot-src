@@ -254,6 +254,7 @@ class RES_SHOP(object):
     MAPS_SHOP_KPI_CROW_BENEFITS = '../maps/shop/kpi/crow_benefits.png'
     MAPS_SHOP_KPI_INFINITY_BENEFITS = '../maps/shop/kpi/infinity_benefits.png'
     MAPS_SHOP_KPI_MONEY_BENEFITS = '../maps/shop/kpi/money_benefits.png'
+    MAPS_SHOP_KPI_PREFERENTIAL = '../maps/shop/kpi/preferential.png'
     MAPS_SHOP_KPI_STAR_ICON_BENEFITS = '../maps/shop/kpi/star_icon_benefits.png'
     MAPS_SHOP_MODULES_180X135_VEHICLECHASSIS = '../maps/shop/modules/180x135/vehicleChassis.png'
     MAPS_SHOP_MODULES_180X135_VEHICLEENGINE = '../maps/shop/modules/180x135/vehicleEngine.png'

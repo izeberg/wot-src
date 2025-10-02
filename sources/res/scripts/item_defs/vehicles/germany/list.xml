@@ -497,7 +497,7 @@
 		<shortUserString>#germany_vehicles:PzI_short</shortUserString>
 		<description>#germany_vehicles:PzI_descr</description>
 		<price>3600</price>
-		<tags>lightTank HD collectorVehicle improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
+		<tags>lightTank HD collectorVehicle improvedVentilation_class3_user extraHealthReserve_class3_user preferential</tags>
 		<level>2</level>
 	</G53_PzI>
 	<G82_Pz_II_AusfG>
@@ -1421,7 +1421,7 @@
 			4500
 			<gold/>
 		</price>
-		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user preferential</tags>
 		<level>5</level>
 	</G32_PzV_PzIV>
 	<G36_PzII_J>
@@ -1466,7 +1466,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>heavyTank HD improvedVentilation_class3_user extraHealthReserve_class3_user</tags>
+		<tags>heavyTank HD improvedVentilation_class3_user extraHealthReserve_class3_user preferential</tags>
 		<level>4</level>
 	</G35_B-1bis_captured>
 	<G33_H39_captured>
@@ -1511,7 +1511,7 @@
 			4500
 			<gold/>
 		</price>
-		<tags>mediumTank HD private disabledInRoaming improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank HD private disabledInRoaming improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user preferential</tags>
 		<level>5</level>
 	</G32_PzV_PzIV_ausf_Alfa>
 	<G51_Lowe>
@@ -1568,7 +1568,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank HD improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user preferential</tags>
 		<level>5</level>
 	</G70_PzIV_Hydro>
 	<G65_JagdTiger_SdKfz_185>
@@ -1583,7 +1583,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_assault HD beast heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user</tags>
+		<tags>AT-SPG role_ATSPG_assault HD beast heavyAT-SPG improvedVentilation_class1_user tankRammer_class1_user extraHealthReserve_class1_user antifragmentationLining_superheavy_user preferential</tags>
 		<level>8</level>
 	</G65_JagdTiger_SdKfz_185>
 	<G48_E-25>
@@ -1597,7 +1597,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>AT-SPG role_ATSPG_sniper HD mediumAT-SPG AT-SPG1 improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user preferential</tags>
 		<level>7</level>
 	</G48_E-25>
 	<G37_Ferdinand_FL>
@@ -1711,7 +1711,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>mediumTank role_MT_universal HD beast improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>mediumTank role_MT_universal HD beast improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user preferential</tags>
 		<level>7</level>
 	</G78_Panther_M10>
 	<G73_E50_Ausf_M_7x7>
@@ -1829,7 +1829,7 @@
 			<gold/>
 		</price>
 		<notInShop>true</notInShop>
-		<tags>AT-SPG HD special mediumAT-SPG improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user</tags>
+		<tags>AT-SPG HD special mediumAT-SPG improvedVentilation_class2_user tankRammer_class2_user extraHealthReserve_class2_user antifragmentationLining_medium_user preferential</tags>
 		<level>5</level>
 	</G104_Stug_IV>
 	<G105_T-55_NVA_DDR>

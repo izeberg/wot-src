@@ -132,13 +132,12 @@ class VehicleFireShot(BasePortalArtefact):
 
     def __init__(self):
         super(VehicleFireShot, self).__init__()
-        self.duration = 0
+        self.duration = component_constants.ZERO_INT
         self.gunFirePrefab = component_constants.EMPTY_STRING
         self.hitPrefab = component_constants.EMPTY_STRING
 
     def _readConfig(self, xmlCtx, section):
         super(VehicleFireShot, self)._readConfig(xmlCtx, section)
-        self.duration = self.cooldownSeconds
         self.gunFirePrefab = _xml.readString(xmlCtx, section, 'gunFirePrefab')
         self.hitPrefab = _xml.readString(xmlCtx, section, 'hitPrefab')
 

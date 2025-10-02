@@ -73,4 +73,7 @@ class PortalRibbonsPanel(BattleRibbonsPanel):
           backport.text(R.strings.portal_battle.efficiencyRibbons.superBossAura())],
          [
           _BET.RECEIVED_BY_THUNDER_STRIKE,
-          backport.text(R.strings.portal_battle.efficiencyRibbons.sentinelAttack())]]
+          backport.text(R.strings.portal_battle.efficiencyRibbons.sentinelAttack())],
+         [
+          _BET.DEATH_ZONE,
+          backport.text(R.strings.portal_battle.efficiencyRibbons.portalDeathZone())]]

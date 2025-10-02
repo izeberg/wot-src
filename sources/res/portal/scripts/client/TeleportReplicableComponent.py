@@ -20,18 +20,26 @@ class TeleportReplicableComponent(DynamicScriptComponent, TeleportReplicableComp
                 self.onTeleportingChanged(self.go, self.teleportingVehicleID, self.teleportingFinishTime)
 
     def set_isTeleportLinked(self, prev):
+        if not self.go:
+            return
         if self.isTeleportLinked != prev:
             self.onTeleportLinked(self.go)
 
     def set_isCooldown(self, prev):
+        if not self.go:
+            return
         if self.isCooldown != prev:
             self.onCooldownChanged(self.go, self.isCooldown)
 
     def set_teleportingVehicleID(self, prev):
+        if not self.go:
+            return
         if self.teleportingVehicleID != 0:
             self.onTeleportOccupied(self.go, self.teleportingVehicleID)
         else:
             self.onTeleportFreed(self.go)
 
     def set_teleportingFinishTime(self, prev):
+        if not self.go:
+            return
         self.onTeleportingChanged(self.go, self.teleportingVehicleID, self.teleportingFinishTime)

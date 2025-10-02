@@ -390,7 +390,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>vehicles/british/GB139_Vulcan/Sequencer/Gun_anim_gate.seq</value>
+										<value>vehicles/british/GB139_Vulcan/Sequencer/G_anim_gate.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -401,7 +401,10 @@
 											</property>
 											<property>
 												<name>speed</name>
-												<value>1</value>
+												<value>
+													2.84686
+													<!--BW_String-->
+												</value>
 											</property>
 											<property>
 												<name>loop</name>
@@ -444,7 +447,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/british/GB139_Vulcan/Sequencer/Gun_anim_gate.seq</value>
+						<value>vehicles/british/GB139_Vulcan/Sequencer/G_anim_gate.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -452,7 +455,10 @@
 					</property>
 					<property>
 						<name>Speed</name>
-						<value>1</value>
+						<value>
+							2.84686
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Loop</name>
@@ -480,7 +486,7 @@
 									<property>
 										<name>Path</name>
 										<isAsset>true</isAsset>
-										<value>vehicles/british/GB139_Vulcan/Sequencer/Turret_anim.seq</value>
+										<value>vehicles/british/GB139_Vulcan/Sequencer/T_anim.seq</value>
 									</property>
 									<property>
 										<name>Properties</name>
@@ -491,7 +497,10 @@
 											</property>
 											<property>
 												<name>speed</name>
-												<value>1</value>
+												<value>
+													2.84686
+													<!--BW_String-->
+												</value>
 											</property>
 											<property>
 												<name>loop</name>
@@ -534,7 +543,7 @@
 					<property>
 						<name>Path</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/british/GB139_Vulcan/Sequencer/Turret_anim.seq</value>
+						<value>vehicles/british/GB139_Vulcan/Sequencer/T_anim.seq</value>
 					</property>
 					<property>
 						<name>Delay</name>
@@ -542,7 +551,10 @@
 					</property>
 					<property>
 						<name>Speed</name>
-						<value>1</value>
+						<value>
+							2.84686
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Loop</name>
@@ -581,7 +593,10 @@
 											</property>
 											<property>
 												<name>speed</name>
-												<value>1</value>
+												<value>
+													2.84686
+													<!--BW_String-->
+												</value>
 											</property>
 											<property>
 												<name>loop</name>
@@ -635,7 +650,10 @@
 											</property>
 											<property>
 												<name>speed</name>
-												<value>1</value>
+												<value>
+													2.84686
+													<!--BW_String-->
+												</value>
 											</property>
 											<property>
 												<name>loop</name>
@@ -686,7 +704,10 @@
 					</property>
 					<property>
 						<name>Speed</name>
-						<value>1</value>
+						<value>
+							2.84686
+							<!--BW_String-->
+						</value>
 					</property>
 					<property>
 						<name>Loop</name>
@@ -1129,7 +1150,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/british/GB139_Vulcan/normal/lod0/Gun_anim_gate.model</value>
+						<value>vehicles/british/GB139_Vulcan/normal/lod0/G_anim_gate.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>
@@ -1148,7 +1169,7 @@
 					<property>
 						<name>Model name</name>
 						<isAsset>true</isAsset>
-						<value>vehicles/british/GB139_Vulcan/normal/lod0/Turret_anim.model</value>
+						<value>vehicles/british/GB139_Vulcan/normal/lod0/T_anim.model</value>
 					</property>
 					<property>
 						<name>Cast Shadows</name>

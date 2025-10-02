@@ -210,12 +210,12 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel.browse
             if(this._benefitsComponent == null)
             {
                this._benefitsComponent = new BenefitsComponent();
+               this._benefitsComponent.compact = param1.length <= BenefitsComponent.MINIMAL_RENDERS_TO_COMPACT;
                this._benefitsComponent.mouseEnabled = this._benefitsComponent.mouseChildren = false;
                this.addChild(this._benefitsComponent);
                invalidateSize();
             }
             this._benefitsComponent.setData(param1);
-            this._benefitsComponent.compact = true;
          }
       }
       

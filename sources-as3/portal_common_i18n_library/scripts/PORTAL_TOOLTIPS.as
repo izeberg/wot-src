@@ -49,13 +49,17 @@ package
       
       public static const REPAIR_TITLE:String = "#portal.portal_tooltips:repair/title";
       
+      public static const REPAIR_OPERATINGTIME:String = "#portal.portal_tooltips:repair/operatingTime";
+      
       public static const REPAIR_SUBTITLE:String = "#portal.portal_tooltips:repair/subtitle";
       
-      public static const REPAIR_WHENUSE:String = "#portal.portal_tooltips:repair/whenUse";
+      public static const REPAIR_ALWAYS:String = "#portal.portal_tooltips:repair/always";
       
       public static const REPAIR_REPAIRSPEED:String = "#portal.portal_tooltips:repair/repairSpeed";
       
       public static const REPAIR_TENPERCENTS:String = "#portal.portal_tooltips:repair/tenPercents";
+      
+      public static const REPAIR_WHENUSE:String = "#portal.portal_tooltips:repair/whenUse";
       
       public static const REPAIR_REPAIRDESCRIPTION:String = "#portal.portal_tooltips:repair/repairDescription";
       
@@ -80,14 +84,6 @@ package
       public static const COMPLEXITY_LOCK_DESCRIPTION:String = "#portal.portal_tooltips:complexity/lock/description";
       
       public static const COMPLEXITY_RECOMENDEDLEVEL:String = "#portal.portal_tooltips:complexity/recomendedLevel";
-      
-      public static const SIMPLE_PROGRESSIONENTRYPOINT_TITLE:String = "#portal.portal_tooltips:simple/progressionEntryPoint/title";
-      
-      public static const SIMPLE_PROGRESSIONENTRYPOINT_DESC:String = "#portal.portal_tooltips:simple/progressionEntryPoint/desc";
-      
-      public static const SIMPLE_SHOPENTRYPOINT_TITLE:String = "#portal.portal_tooltips:simple/shopEntryPoint/title";
-      
-      public static const SIMPLE_SHOPENTRYPOINT_DESC:String = "#portal.portal_tooltips:simple/shopEntryPoint/desc";
       
       public static const ABILITY_NAME_BERSERK_PORTAL:String = "#portal.portal_tooltips:ability/name/berserk_portal";
       

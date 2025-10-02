@@ -52,15 +52,34 @@
 					</transform>
 				</node>
 			</node>
+			<node>
+				<identifier>Roller_feed_5_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.124375 0.000215 -4.807798</row3>
+				</transform>
+				<node>
+					<identifier>Roller_feed_5_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>-0.124375 -0.000215 4.807798</row3>
+					</transform>
+				</node>
+			</node>
 		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Gate_BlendBone</node>
 		<node>Gate_tonue_jnt_BlendBone</node>
+		<node>Roller_feed_5_jnt_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_anim_gate_Shape.vertices</vertices>
-			<primitive>gun_01_anim_gate_Shape.indices</primitive>
+			<vertices>hfghf1eShape.vertices</vertices>
+			<primitive>hfghf1eShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -89,15 +108,15 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.000000 0.001746 4.467313</groupOrigin>
+				<groupOrigin>0.009112 0.001746 4.548329</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.165000 -0.265411 -4.710074</min>
-		<max>0.165000 0.268904 -4.224552</max>
+		<min>-0.165000 -0.265411 -4.872107</min>
+		<max>0.183225 0.268904 -4.224552</max>
 	</boundingBox>
-	<geometrySize>6918</geometrySize>
+	<geometrySize>8038</geometrySize>
 	<minUVDensity>0.018556</minUVDensity>
 </root>

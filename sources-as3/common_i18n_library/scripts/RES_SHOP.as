@@ -509,6 +509,8 @@ package
       
       public static const MAPS_SHOP_KPI_MONEY_BENEFITS:String = "../maps/shop/kpi/money_benefits.png";
       
+      public static const MAPS_SHOP_KPI_PREFERENTIAL:String = "../maps/shop/kpi/preferential.png";
+      
       public static const MAPS_SHOP_KPI_STAR_ICON_BENEFITS:String = "../maps/shop/kpi/star_icon_benefits.png";
       
       public static const MAPS_SHOP_MODULES_180X135_VEHICLECHASSIS:String = "../maps/shop/modules/180x135/vehicleChassis.png";

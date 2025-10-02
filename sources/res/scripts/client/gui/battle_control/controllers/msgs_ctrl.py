@@ -315,6 +315,7 @@ class PortalMessagesController(BattleMessagesController):
         self._attackReasonCodes[_AR_INDICES['guided_missile']] = 'GUIDED_MISSILE'
         self._attackReasonCodes[_AR_INDICES['sentinel_attack']] = 'SENTINEL_ATTACK'
         self._attackReasonCodes[_AR_INDICES['super_boss_aura']] = 'SUPER_BOSS_AURA'
+        self._attackReasonCodes[_AR_INDICES['death_zone']] = 'DEATH_ZONE'
 
 
 @dependency.replace_none_kwargs(battleSessionProvider=IBattleSessionProvider)

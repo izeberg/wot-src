@@ -49,7 +49,6 @@ if typing.TYPE_CHECKING:
     from typing import List, Tuple, Any
     from gui.techtree.nodes import ExposedNode
 _logger = getLogger(__name__)
-_BENEFIT_ITEMS_LIMIT = 4
 
 class _VehicleState(object):
     CAN_UNLOCK = 0
@@ -72,6 +71,14 @@ def _getMoneyBenefits(benefits, root, _=None):
          backport.image(R.images.gui.maps.shop.kpi.money_benefits()),
          backport.text(R.strings.vehicle_preview.infoPanel.premium.creditsMultiplier()),
          backport.text(R.strings.vehicle_preview.infoPanel.premium.creditsText())))
+
+
+def _getPreferentialBenefits(benefits, root, _=None):
+    if root.isPreferential:
+        benefits.append((
+         backport.image(R.images.gui.maps.shop.kpi.preferential()),
+         backport.text(R.strings.vehicle_preview.infoPanel.preferentialTitle()),
+         backport.text(R.strings.vehicle_preview.infoPanel.preferentialText())))
 
 
 def _getCrewBenefits(benefits, root, _=None):
@@ -111,9 +118,7 @@ def _getEquipmentBenefits(benefits, root, itemsCache=None):
 
 def _formatBenefits(benefitData):
     formattedBenefits = []
-    for i, (icon, title, body) in enumerate(benefitData, 1):
-        if i > _BENEFIT_ITEMS_LIMIT:
-            break
+    for _, (icon, title, body) in enumerate(benefitData, 1):
         formattedBenefits.append({'iconSrc': icon, 
            'labelStr': text_styles.concatStylesToMultiLine(text_styles.highTitle(title), text_styles.main(body))})
 
@@ -146,7 +151,8 @@ _BENEFIT_GETTERS = (
  _getMoneyBenefits,
  _getCrystalsBenefit,
  _getCrewBenefits,
- _getEquipmentBenefits)
+ _getEquipmentBenefits,
+ _getPreferentialBenefits)
 
 class States(object):
     RESTORE = 'restore'

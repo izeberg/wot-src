@@ -75,6 +75,7 @@
 		<AN_GRC_3>31017</AN_GRC_3>
 		<SCR_528_02>31018</SCR_528_02>
 		<AN_GRC_8_T>31006</AN_GRC_8_T>
+		<SCR_528_832>35000</SCR_528_832>
 		<AN_VRC-3_MBT_T>35001</AN_VRC-3_MBT_T>
 		<AN_GRC_3_T>35002</AN_GRC_3_T>
 		<AN_VRC-3_ISP>37000</AN_VRC-3_ISP>
@@ -293,6 +294,18 @@
 			<maxRegenHealth>150</maxRegenHealth>
 			<repairCost>3</repairCost>
 		</SCR_528_M>
+		<SCR_528_832>
+			<userString>#usa_vehicles:SCR_528_832</userString>
+			<tags/>
+			<level>10</level>
+			<price>54000</price>
+			<notInShop>true</notInShop>
+			<weight>80</weight>
+			<distance>745</distance>
+			<maxHealth>200</maxHealth>
+			<maxRegenHealth>150</maxRegenHealth>
+			<repairCost>3</repairCost>
+		</SCR_528_832>
 		<SCR_528A1>
 			<userString>#usa_vehicles:SCR_528A1</userString>
 			<tags/>

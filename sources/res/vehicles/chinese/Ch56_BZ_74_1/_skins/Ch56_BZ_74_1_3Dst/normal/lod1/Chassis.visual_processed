@@ -1013,28 +1013,38 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_L_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_L_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/chinese/tracks/BZ_74_1_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/tracks/BZ_74_1_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/chinese/tracks/BZ_74_1_track_AM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1042,7 +1052,15 @@
 						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/tracks/BZ_74_1_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1050,12 +1068,19 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/tracks/BZ_74_1_track_GMM.dds</Texture>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/chinese/tracks/BZ_74_1_track_ANM.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						crash_coefficient
+						<Float>0.300000</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.467032 0.699055 -0.106205</groupOrigin>
@@ -1085,28 +1110,38 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>track_mat_R_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
+					<identifier>track_mat_R_skinned</identifier>
 					<collisionFlags>0</collisionFlags>
 					<property>
-						alphaReference
-						<Int>128</Int>
+						diffuseMap
+						<Texture>vehicles/chinese/tracks/BZ_74_1_track_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/tracks/BZ_74_1_track_GMM.dds</Texture>
+					</property>
+					<property>
+						g_detailPowerGloss
+						<Float>
+							0.35
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						crash_coefficient
-						<Float>0.300000</Float>
+						g_maskBias
+						<Float>
+							0.18
+							<!--BW_String-->
+						</Float>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/chinese/tracks/BZ_74_1_track_AM.dds</Texture>
-					</property>
-					<property>
-						doubleSided
+						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1114,7 +1149,15 @@
 						<Vector4>3.506850 0.876712 0.000000 0.000000</Vector4>
 					</property>
 					<property>
-						g_useDetailMetallic
+						g_detailPower
+						<Float>5</Float>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/tracks/BZ_74_1_track_ANM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 					<property>
@@ -1122,12 +1165,19 @@
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/tracks/BZ_74_1_track_GMM.dds</Texture>
+						alphaReference
+						<Int>128</Int>
 					</property>
 					<property>
-						normalMap
-						<Texture>vehicles/chinese/tracks/BZ_74_1_track_ANM.dds</Texture>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
+					</property>
+					<property>
+						crash_coefficient
+						<Float>0.300000</Float>
 					</property>
 				</material>
 				<groupOrigin>1.467032 0.699055 -0.106205</groupOrigin>
@@ -1162,13 +1212,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 1.753000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1178,11 +1236,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1192,40 +1247,39 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.506850 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.416831 0.709094 -0.075786</groupOrigin>
@@ -1260,13 +1314,21 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_chassis_01_skinned</identifier>
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<identifier>tank_chassis_01_skinned</identifier>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_detailUVTiling
-						<Vector4>3.506850 1.753000 0.000000 0.000000</Vector4>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AM.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_GMM.dds</Texture>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -1276,11 +1338,8 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPowerAlbedo
-						<Float>
-							0.11
-							<!--BW_String-->
-						</Float>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 					<property>
 						g_maskBias
@@ -1290,40 +1349,39 @@
 						</Float>
 					</property>
 					<property>
-						g_detailPower
-						<Float>5</Float>
-					</property>
-					<property>
-						metallicDetailMap
-						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
-					</property>
-					<property>
 						g_useDetailMetallic
 						<Bool>true</Bool>
 					</property>
 					<property>
-						metallicGlossMap
-						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_GMM.dds</Texture>
+						g_detailUVTiling
+						<Vector4>3.506850 1.753000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_detailPower
+						<Float>5</Float>
 					</property>
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_ANM.dds</Texture>
 					</property>
 					<property>
-						diffuseMap
-						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AM.dds</Texture>
-					</property>
-					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
 					</property>
 					<property>
 						alphaReference
 						<Int>128</Int>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>true</Bool>
+						g_detailPowerAlbedo
+						<Float>
+							0.11
+							<!--BW_String-->
+						</Float>
 					</property>
 				</material>
 				<groupOrigin>1.416831 0.708699 -0.076611</groupOrigin>

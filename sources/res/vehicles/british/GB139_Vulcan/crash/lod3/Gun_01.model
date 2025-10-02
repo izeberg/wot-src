@@ -4,8 +4,8 @@
 	<tank>true</tank>
 	<extent>192.000000</extent>
 	<visibilityBox>
-		<min>-0.206838 -0.894999 -3.284292</min>
-		<max>1.125414 0.322041 6.351664</max>
+		<min>-0.700838 -0.894998 -3.283988</min>
+		<max>0.631413 0.322042 6.351968</max>
 	</visibilityBox>
-	<nodefullVisual>vehicles/british/GB139_Vulcan/crash/lod3/Gun_01</nodefullVisual>
+	<nodelessVisual>vehicles/british/GB139_Vulcan/crash/lod3/Gun_01</nodelessVisual>
 </root>

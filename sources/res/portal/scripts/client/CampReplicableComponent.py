@@ -14,20 +14,28 @@ class CampReplicableComponent(DynamicScriptComponent, CampReplicableComponentBas
         return self.entity.entityGameObject
 
     def set_canBeCaptured(self, prev):
+        if not self.gameObject:
+            return
         if not prev and self.canBeCaptured:
             self.onCanBeCaptured(self.gameObject)
 
     def set_isCaptured(self, prev):
+        if not self.gameObject:
+            return
         if not prev and self.isCaptured:
             self.onCaptured(self.gameObject)
 
     def set_captureProgress(self, _):
+        if not self.gameObject:
+            return
         if isclose(self.captureProgress, 0.0):
             return
         info = self.__getCapturableInfo()
         self.onCapturing(info)
 
     def set_captureCurrentSpeed(self, prev):
+        if not self.gameObject:
+            return
         if isclose(self.captureCurrentSpeed, 0.0):
             self.onStopCapturing(self.gameObject)
             return

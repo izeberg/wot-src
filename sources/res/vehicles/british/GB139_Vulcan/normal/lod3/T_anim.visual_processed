@@ -9,7 +9,7 @@
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
 		<node>
-			<identifier>Root_Gun_Animt_Gate</identifier>
+			<identifier>Root_turret</identifier>
 			<transform>
 				<row0>1.000000 0.000000 0.000000</row0>
 				<row1>0.000000 1.000000 0.000000</row1>
@@ -17,38 +17,38 @@
 				<row3>0.000000 0.000000 0.000000</row3>
 			</transform>
 			<node>
-				<identifier>Gate</identifier>
+				<identifier>Luke_jnt</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 -0.000102 -4.582654</row3>
+					<row3>-0.612152 0.196939 -0.296286</row3>
 				</transform>
 				<node>
-					<identifier>Gate_BlendBone</identifier>
+					<identifier>Luke_jnt_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000000 0.000102 4.582654</row3>
+						<row3>0.612152 -0.196939 0.296286</row3>
 					</transform>
 				</node>
 			</node>
 			<node>
-				<identifier>Gate_tonue_jnt</identifier>
+				<identifier>Roller_feed_1_jnt</identifier>
 				<transform>
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.000031 -0.204697 -4.263898</row3>
+					<row3>-0.467570 0.274800 -0.186171</row3>
 				</transform>
 				<node>
-					<identifier>Gate_tonue_jnt_BlendBone</identifier>
+					<identifier>Roller_feed_1_jnt_BlendBone</identifier>
 					<transform>
 						<row0>1.000000 0.000000 0.000000</row0>
 						<row1>0.000000 1.000000 0.000000</row1>
 						<row2>0.000000 0.000000 -1.000000</row2>
-						<row3>0.000031 0.204697 4.263898</row3>
+						<row3>0.467570 -0.274800 0.186171</row3>
 					</transform>
 				</node>
 			</node>
@@ -56,11 +56,10 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>Gate_BlendBone</node>
-		<node>Gate_tonue_jnt_BlendBone</node>
+		<node>Luke_jnt_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_anim_gate_Shape.vertices</vertices>
-			<primitive>gun_01_anim_gate_Shape.indices</primitive>
+			<vertices>turret_anim_Shape.vertices</vertices>
+			<primitive>turret_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -68,6 +67,10 @@
 					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
 					<property>
 						diffuseMap
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AM.dds</Texture>
@@ -84,20 +87,16 @@
 						normalMap
 						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
 					</property>
-					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
-					</property>
 				</material>
-				<groupOrigin>0.000000 -0.000102 4.527766</groupOrigin>
+				<groupOrigin>-0.496686 0.190806 0.302303</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-0.165000 -0.265102 -4.835232</min>
-		<max>0.165000 0.264898 -4.220300</max>
+		<min>-0.629469 0.011998 -0.317394</min>
+		<max>-0.363902 0.369614 -0.287211</max>
 	</boundingBox>
-	<geometrySize>29738</geometrySize>
-	<minUVDensity>0.020400</minUVDensity>
+	<geometrySize>2340</geometrySize>
+	<minUVDensity>0.015034</minUVDensity>
 </root>

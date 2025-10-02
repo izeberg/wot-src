@@ -21,7 +21,9 @@ class PortalVehicleInfluenceZoneComponent(BigWorld.DynamicScriptComponent):
                         go.removeComponent(sentinelOnSound3D)
                     go.createComponent(Sound.Sound3DComponent, soundName, soundName, True)
             else:
-                self.entity.appearance.hideTerrainCircle()
+                compoundAppearance = self.entity.appearance
+                if compoundAppearance.activated:
+                    compoundAppearance.hideTerrainCircle()
                 go = self.entity.entityGameObject
                 sound3D = go.findComponentByType(Sound.Sound3DComponent)
                 if sound3D:

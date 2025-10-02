@@ -13,30 +13,22 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>Scene Root</node>
 		<geometry>
-			<vertices>vertices</vertices>
-			<primitive>indices</primitive>
+			<vertices>gun_01_Shape.vertices</vertices>
+			<primitive>gun_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>tank_guns</identifier>
+					<identifier>proxy</identifier>
 					<fx>shaders/std_effects/PBS_tank_crash.fx</fx>
-					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
 					<property>
-						g_crashUVTiling
-						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 					<property>
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
-					</property>
-					<property>
-						metallicGlossMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_GMM.dds</Texture>
-					</property>
-					<property>
-						normalMap
-						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_ANM.dds</Texture>
 					</property>
 					<property>
 						diffuseMap
@@ -47,8 +39,16 @@
 						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_AO.dds</Texture>
 					</property>
 					<property>
-						colorIdMap
-						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+						g_crashUVTiling
+						<Vector4>4.000000 4.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/czech/Cz37_Vz_59_Dravec/Vz_59_Dravec_proxy_ANM.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.014858 0.052643 1.790783</groupOrigin>

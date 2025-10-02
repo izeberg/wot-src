@@ -517,6 +517,7 @@ class VehicleDescriptor(object):
     isYawHullAimingAvailable = property(lambda self: self.type.hullAimingParams['yaw']['isAvailable'])
     isClipGun = property(lambda self: 'clip' in self.gun.tags)
     isAutoReloadGun = property(lambda self: 'autoreload' in self.gun.tags)
+    isPreferential = property(lambda self: self.type.preferential)
 
     @property
     def circularVisionRadius(self):
@@ -1885,7 +1886,7 @@ class VehicleType(object):
      'nationChangeGroupId', 'isCollectorVehicle', 'isPremium', 'hasTurboshaftEngine', 'hasHydraulicChassis',
      'hasSpeedometer', 'supplySlots', 'optDevsOverrides', 'postProgressionTree', 'postProgressionPricesOverrides',
      'customRoleSlotOptions', 'hasRocketAcceleration', 'rocketAccelerationParams', 'classTag', 'armorMaxHealth',
-     'prefabAttachments', 'ability', '__weakref__')
+     'prefabAttachments', 'ability', 'preferential', '__weakref__')
 
     def __init__(self, nationID, basicInfo, xmlPath, vehMode=VEHICLE_MODE.DEFAULT):
         self.name = basicInfo.name
@@ -1921,6 +1922,7 @@ class VehicleType(object):
         self.hasCharge = 'charger' in self.tags
         self.builtins = {t.split('_user')[0] for t in self.tags if t.startswith('builtin') if t.startswith('builtin')}
         self.hasRocketAcceleration = 'rocketAcceleration' in self.tags
+        self.preferential = 'preferential' in self.tags
         VehicleType.currentReadingVeh = self
         self.baseColorID = section.readInt('baseColorID', 0)
         self.hasCustomDefaultCamouflage = section.readBool('customDefaultCamouflage', False)

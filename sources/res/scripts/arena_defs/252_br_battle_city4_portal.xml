@@ -63,6 +63,18 @@
 		</loadBanks>
 		<events>
 			<event>
+				<name>artilleryStrike_tracer</name>
+				<mod>ev_portal_artilleryStrike_tracer</mod>
+			</event>
+			<event>
+				<name>hit_barrage_expl_close_ground</name>
+				<mod>ev_portal_hit_barrage_expl_close_ground</mod>
+			</event>
+			<event>
+				<name>hit_barrage_expl_far</name>
+				<mod>ev_portal_hit_barrage_expl_far</mod>
+			</event>
+			<event>
 				<name>eb_ability_minefield_explosion</name>
 				<mod>ev_portal_ability_minefield_explosion</mod>
 			</event>
