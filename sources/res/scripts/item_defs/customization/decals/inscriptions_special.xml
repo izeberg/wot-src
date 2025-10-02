@@ -5453,6 +5453,24 @@
 			<userString>#vehicle_customization:inscription/special/special_786</userString>
 			<mirror>false</mirror>
 		</decal>
+		<decal>
+			<id>1183</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_835.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_835</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1184</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_836.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_836</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1185</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_837.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_837</userString>
+			<mirror>false</mirror>
+		</decal>
 		<name>Battle Pass 2025</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>

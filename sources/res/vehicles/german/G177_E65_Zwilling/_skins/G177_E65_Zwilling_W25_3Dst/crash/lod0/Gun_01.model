@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.461533 1.862441 -0.248258</min>
+		<max>0.461533 2.626448 6.374972</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/crash/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/german/G177_E65_Zwilling/_skins/G177_E65_Zwilling_W25_3Dst/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>
