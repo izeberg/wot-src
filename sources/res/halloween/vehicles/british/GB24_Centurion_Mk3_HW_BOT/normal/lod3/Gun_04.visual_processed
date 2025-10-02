@@ -68,8 +68,8 @@
 		<node>G_BlendBone</node>
 		<node>Gun_BlendBone</node>
 		<geometry>
-			<vertices>gun_04_Shape.vertices</vertices>
-			<primitive>gun_04_Shape.indices</primitive>
+			<vertices>gun_0Shape4.vertices</vertices>
+			<primitive>gun_0Shape4.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -102,7 +102,7 @@
 						<Texture>halloween/vehicles/british/GB24_Centurion_Mk3_HW_BOT/Centurion_Mk3_HW_BOT_guns_EM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.006447 0.010438 -2.063498</groupOrigin>
+				<groupOrigin>0.006447 -0.003223 -2.075284</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -111,5 +111,5 @@
 		<min>-0.660943 -0.257555 -0.144138</min>
 		<max>0.673837 0.278432 4.271133</max>
 	</boundingBox>
-	<geometrySize>5890</geometrySize>
+	<geometrySize>6974</geometrySize>
 </root>

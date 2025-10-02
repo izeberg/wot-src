@@ -397,7 +397,7 @@ def showFinalRewardPreviewBattlePassState(chapterID, bonusID=None, level=None, i
         previewItemPack = (
          ItemPackEntry(type=ItemPackType.CREW_100, groupID=1),)
         allRewardTypes = getAllFinalRewards(chapterID)
-        if FinalReward.VEHICLE in allRewardTypes:
+        if not bonusID and FinalReward.VEHICLE in allRewardTypes:
             vehicle, style = getVehicleInfoForChapter(chapterID, awardSource=BattlePassConsts.REWARD_BOTH)
             if styleInfo is not None:
                 showStylePreview(vehicle.intCD, style=styleInfo, topPanelData={'linkage': VEHPREVIEW_CONSTANTS.TOP_PANEL_TABS_LINKAGE, 
@@ -407,6 +407,6 @@ def showFinalRewardPreviewBattlePassState(chapterID, bonusID=None, level=None, i
                    'style': styleInfo}, itemsPack=previewItemPack)
             else:
                 showVehiclePreviewWithoutBottomPanel(vehicle.intCD, itemsPack=previewItemPack, style=style)
-        elif FinalReward.STYLE in allRewardTypes or bonusID:
+        else:
             showStylePreview(vehicleCD, style=styleInfo, itemsPack=previewItemPack)
         return

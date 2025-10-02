@@ -240,7 +240,7 @@ class HalloweenController(IHalloweenController, Notifiable, SeasonProvider, IGlo
                 if wasBattlesEnabled.get(queueType, False) and not queueTypeEnabled:
                     systemMessages.append(backport.text(R.strings.halloween_system_messages.serviceChannelMessages.switchedOffDifficulty(), difficulty=self.__getQueueTypeLocalizedName(queueType)))
 
-            if len(systemMessages) == len(isBattlesEnabled):
+            if len(isBattlesEnabled) == len(systemMessages) > 0:
                 systemMessages = [
                  backport.text(R.strings.halloween_system_messages.serviceChannelMessages.switchedOff())]
             if wasEnabled != isEnabled and not isEnabled:

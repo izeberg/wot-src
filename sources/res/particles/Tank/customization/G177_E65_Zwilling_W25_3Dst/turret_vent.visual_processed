@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<stream>colour</stream>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>mt_glow</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/hull_glows.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fadeMaxDistance
+						<Float>0.010000</Float>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>2.000000 0.200000 0.100000 0.000000</Vector4>
+					</property>
+					<property>
+						softFactor
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.905882 0.635294 0.223529 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>0.001807 0.216409 0.006116</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>mt_dot</identifier>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/hull_glows.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						fadeMaxDistance
+						<Float>0.010000</Float>
+					</property>
+					<property>
+						fogAdjustBlend
+						<Float>1.000000</Float>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>10.000000 0.200000 0.100000 0.000000</Vector4>
+					</property>
+					<property>
+						softFactor
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.905882 0.635294 0.223529 1.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.000000 0.093531 0.007446</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-0.122704 0.005431 -0.115068</min>
+		<max>0.126318 0.224179 0.127300</max>
+	</boundingBox>
+	<geometrySize>2376</geometrySize>
+</root>

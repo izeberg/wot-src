@@ -103,7 +103,7 @@ msgid "modifier/name/aimingTime"
 msgstr "Время сведения"
 
 msgid "modifier/name/ammoBayHealth"
-msgstr "++Прочность боеукладки++"
+msgstr "Прочность боеукладки"
 
 msgid "modifier/name/autoreloadTime"
 msgstr "Время перезарядки техники с механизмом дозаряжания"
@@ -118,7 +118,7 @@ msgid "modifier/name/burstInterval"
 msgstr "Время перезарядки снарядов в магазине"
 
 msgid "modifier/name/chassisHealth"
-msgstr "++Прочность ходовой++"
+msgstr "Прочность ходовой"
 
 msgid "modifier/name/clipInterval"
 msgstr "Время перезарядки между выстрелами в магазине"
@@ -148,7 +148,7 @@ msgid "modifier/name/engineFireFactor"
 msgstr "Вероятность возгорания двигателя"
 
 msgid "modifier/name/engineHealth"
-msgstr "++Прочность двигателя++"
+msgstr "Прочность двигателя"
 
 msgid "modifier/name/enginePower"
 msgstr "Мощность двигателя"
@@ -169,7 +169,7 @@ msgid "modifier/name/equipmentCooldown"
 msgstr "Время подготовки снаряжения"
 
 msgid "modifier/name/fuelTankHealth"
-msgstr "++Прочность топливных баков++"
+msgstr "Прочность топливных баков"
 
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Максимальная скорость движения вперёд"
@@ -178,7 +178,7 @@ msgid "modifier/name/gravityFactor"
 msgstr "Гравитация техники"
 
 msgid "modifier/name/gunHealth"
-msgstr "++Прочность орудия++"
+msgstr "Прочность орудия"
 
 msgid "modifier/name/gunRotationSpeed"
 msgstr "Скорость перевода орудия в неподвижной рубке"
@@ -220,7 +220,7 @@ msgid "modifier/name/shotDispersionRadius"
 msgstr "Разброс на 100 метров"
 
 msgid "modifier/name/surveyingDeviceHealth"
-msgstr "++Прочность приборов наблюдения++"
+msgstr "Прочность приборов наблюдения"
 
 msgid "modifier/name/turretPressureDamage"
 msgstr "Урон от давления сорванной башни"
@@ -232,7 +232,7 @@ msgid "modifier/name/turretRotationSpeed"
 msgstr "Скорость поворота башни"
 
 msgid "modifier/name/turretRotatorHealth"
-msgstr "++Прочность механизма вращения башни++"
+msgstr "Прочность механизма вращения башни"
 
 msgid "modifier/name/twinGunReloadTime"
 msgstr "Перезарядка орудия в режиме залпа"

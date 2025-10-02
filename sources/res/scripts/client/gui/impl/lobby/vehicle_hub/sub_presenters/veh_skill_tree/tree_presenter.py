@@ -1,4 +1,4 @@
-from __future__ import absolute_import
+from __future__ import absolute_import, division
 import logging, typing
 from gui.shared.lock_overlays import lockNotificationManager
 from wg_async import wg_async
@@ -27,6 +27,7 @@ from helpers import dependency
 from helpers.algorithms import shortestPath
 from skeletons.gui.shared import IItemsCache
 from uilogging.veh_skill_tree.logger import SkillTreeUILogger
+from gui.impl.lobby.exchange.exchange_rates_helper import calculateMaxPossibleFreeXp
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.veh_skill_tree.tree_view_model import TreeViewModel, ResearchAvailability
 from gui.impl.gen.view_models.views.lobby.vehicle_hub.views.sub_models.veh_skill_tree.path_model import PathModel, LineType
@@ -312,13 +313,20 @@ class TreePresenter(SubModelPresenter, IPresenterLocationController):
             return Status.SELECTED
         return Status.DEFAULT
 
-    def __getResearchState(self):
+    def __notEnoughXp(self):
         progression = self.__vehicle.postProgression
-        _, reason = self.__vehicle.postProgressionAvailability()
-        researchCost = sum([ progression.getStep(nodeID).getPrice().xp for nodeID in self.__selectedNodeIDs ])
         freeXP = self.__itemsCache.items.stats.freeXP
         eliteXP = getEliteExpirience(exclude=(self.__vehicle.intCD,))
-        if reason == PostProgressionAvailability.AVAILABLE and researchCost > self.__vehicle.xp + freeXP + eliteXP:
+        maxXp = calculateMaxPossibleFreeXp(eliteXP, validateGold=False)
+        researchCost = sum([ progression.getStep(nodeID).getPrice().xp for nodeID in self.__selectedNodeIDs ])
+        sumXp = self.__vehicle.xp + freeXP + eliteXP
+        if sumXp >= researchCost:
+            return researchCost > maxXp + freeXP
+        return True
+
+    def __getResearchState(self):
+        _, reason = self.__vehicle.postProgressionAvailability()
+        if reason == PostProgressionAvailability.AVAILABLE and self.__notEnoughXp():
             return ResearchAvailability.NOT_ENOUGH_EXP
         return _AVAILABILITY_MAP.get(reason, ResearchAvailability.AVAILABLE)
 

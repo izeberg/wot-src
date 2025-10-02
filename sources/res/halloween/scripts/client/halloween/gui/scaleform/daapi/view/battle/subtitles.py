@@ -1,4 +1,5 @@
 import BigWorld
+from Avatar import PlayerAvatar
 from gui import makeHtmlString
 from halloween.gui.scaleform.daapi.view.meta.HWSubtitlesMeta import HWSubtitlesMeta
 from halloween.gui.sounds.sound_constants import VO
@@ -38,9 +39,9 @@ class BattleSubtitles(HWSubtitlesMeta):
         if not VO.SUBTITLES_ENABLED_SETTING:
             return
         else:
-            avatar = BigWorld.player()
-            if avatar:
-                self._soundNotifications = avatar.soundNotifications
+            player = BigWorld.player()
+            if isinstance(player, PlayerAvatar):
+                self._soundNotifications = player.soundNotifications
                 if self._soundNotifications:
                     self._soundNotifications.onSubtitleShow -= self._onSubtitleShow
                     self._soundNotifications.onSubtitleHide -= self._onSubtitleHide

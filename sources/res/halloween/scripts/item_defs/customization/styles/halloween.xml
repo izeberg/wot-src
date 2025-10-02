@@ -614,6 +614,50 @@
 				</outfit>
 			</outfits>
 		</style>
+		<style>
+			<id>9611</id>
+			<texture>gui/maps/vehicles/styles/none.png</texture>
+			<userString>#halloween.vehicle_customization.extend:special_style/EVIL_PLAYERS</userString>
+			<outfits>
+				<outfit>
+					<season>ALL</season>
+					<sequences>
+						<item>
+							<id>8104</id>
+							<slotId>38000</slotId>
+						</item>
+						<item>
+							<id>8104</id>
+							<slotId>48000</slotId>
+						</item>
+						<item>
+							<id>8109</id>
+							<slotId>48001</slotId>
+						</item>
+						<item>
+							<id>8110</id>
+							<slotId>48002</slotId>
+						</item>
+						<item>
+							<id>8001</id>
+							<slotId>18000</slotId>
+						</item>
+						<item>
+							<id>8001</id>
+							<slotId>18001</slotId>
+						</item>
+						<item>
+							<id>8001</id>
+							<slotId>18002</slotId>
+						</item>
+						<item>
+							<id>8001</id>
+							<slotId>18003</slotId>
+						</item>
+					</sequences>
+				</outfit>
+			</outfits>
+		</style>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:styles/special_styles</userString>

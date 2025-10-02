@@ -3,7 +3,7 @@ from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.framework.entities.View import ViewKey
 from gui.impl import backport
 from gui.impl.gen import R
-from gui.lobby_state_machine.states import SFViewLobbyState, SubScopeSubLayerState, LobbyStateDescription, LobbyState, LobbyStateFlags
+from gui.lobby_state_machine.states import LobbyState, LobbyStateDescription, LobbyStateFlags, SubScopeSubLayerState, ViewLobbyState
 
 def registerStates(machine):
     machine.addState(VehiclePreviewState())
@@ -32,7 +32,7 @@ def registerTransitions(machine):
     addTransition(machine.getStateByCls(VehiclePreviewStateWithTopPanel))
 
 
-class _VehiclePreviewStateProto(SFViewLobbyState):
+class _VehiclePreviewStateProto(ViewLobbyState):
 
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(_VehiclePreviewStateProto, self).__init__(flags=flags)
@@ -177,7 +177,7 @@ class OfferGiftVehiclePreviewState(_VehiclePreviewStateProto):
         return params
 
 
-class _StylePreviewStateProto(SFViewLobbyState):
+class _StylePreviewStateProto(ViewLobbyState):
 
     def __init__(self, flags=StateFlags.UNDEFINED):
         super(_StylePreviewStateProto, self).__init__(flags=flags)

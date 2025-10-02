@@ -345,10 +345,10 @@
 			<splineDesc>
 				<trackPair>
 					<trackPairIdx>0</trackPairIdx>
-					<segmentModelLeft>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_01.model</segmentModelLeft>
-					<segmentModelRight>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_01.model</segmentModelRight>
-					<segment2ModelLeft>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_02.model</segment2ModelLeft>
-					<segment2ModelRight>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_02.model</segment2ModelRight>
+					<segmentModelLeft>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_01_L.model</segmentModelLeft>
+					<segmentModelRight>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_01_R.model</segmentModelRight>
+					<segment2ModelLeft>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_02_L.model</segment2ModelLeft>
+					<segment2ModelRight>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/segment_02_R.model</segment2ModelRight>
 					<left>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/left.track</left>
 					<right>halloween/vehicles/german/G00_K_bomber__HW_21_AI/track/right.track</right>
 					<segmentLength>

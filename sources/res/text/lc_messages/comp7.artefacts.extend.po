@@ -21,7 +21,7 @@ msgstr "Активная разведка"
 
 msgid "comp7_ally_support/descr/active"
 msgstr ""
-"На следующие {colorTagOpen}%(duration)s с{colorTagClose} экипаж получает {colorTagOpen}%(crewBuff_1)s/%(crewBuff_2)s/%(crewBuff_3)s%-й%{colorTagClose} бонус к эффективности за каждую машину другой роли в вашей команде.\n"
+"На следующие {colorTagOpen}%(duration)s с{colorTagClose} экипаж получает {colorTagOpen}%(crewBuff_1)s/%(crewBuff_2)s/%(crewBuff_3)s%%-й{colorTagClose} бонус к эффективности за каждую машину другой роли в вашей команде.\n"
 "\n"
 "Ваша машина всегда учитывается при расчёте бонуса."
 

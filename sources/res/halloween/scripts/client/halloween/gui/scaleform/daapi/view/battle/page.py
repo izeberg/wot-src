@@ -1,4 +1,5 @@
 import BigWorld, BattleReplay
+from Avatar import PlayerAvatar
 from debug_utils import LOG_DEBUG
 from constants import ARENA_PERIOD
 from gui.Scaleform.daapi.view.battle.classic.page import DynamicAliases
@@ -276,9 +277,9 @@ class HalloweenBattlePage(HalloweenBattlePageMeta):
             ctrl.onPlayerFeedbackReceived -= self.__onPlayerFeedbackReceived
         g_playerEvents.onRoundFinished -= self.__onRoundFinished
         g_playerEvents.onArenaPeriodChange -= self.__onArenaPeriodChange
-        avatar = BigWorld.player()
-        if avatar is not None:
-            avatar.onAvatarVehicleChanged -= self.__onAvatarVehicleChanged
+        player = BigWorld.player()
+        if isinstance(player, PlayerAvatar):
+            player.onAvatarVehicleChanged -= self.__onAvatarVehicleChanged
         super(HalloweenBattlePage, self)._stopBattleSession()
         return
 

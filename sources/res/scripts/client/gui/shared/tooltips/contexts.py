@@ -560,11 +560,11 @@ class HangarParamContext(BaseHangarParamContext):
         self.formatters = NO_BONUS_SIMPLIFIED_SCHEME
 
     def getComparator(self):
-        item = g_currentVehicle.item or g_currentPreviewVehicle.item
+        item = g_currentPreviewVehicle.defaultItem or g_currentVehicle.item
         return params_helper.similarCrewComparator(item)
 
     def buildItem(self, *args, **kwargs):
-        return g_currentVehicle.item or g_currentPreviewVehicle.item
+        return g_currentPreviewVehicle.defaultItem or g_currentVehicle.item
 
 
 class PreviewParamContext(HangarParamContext):

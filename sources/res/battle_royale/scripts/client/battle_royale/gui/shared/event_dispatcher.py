@@ -12,11 +12,12 @@ def showBattleRoyaleResultsView(ctx, notificationsMgr=None):
 def showBattleRoyaleResultsInfo(ctx, appLoader=None):
     from battle_royale.gui.impl.lobby.views.states import BattleRoyaleBattleResultsState
     view = appLoader.getApp().containerManager.getViewByKey(BattleRoyaleBattleResultsState.VIEW_KEY)
-    if view is not None and view.content.arenaUniqueID == ctx.get('arenaUniqueID'):
-        return
-    else:
-        BattleRoyaleBattleResultsState.goTo(**ctx)
-        return
+    if view is not None:
+        if view.content.arenaUniqueID == ctx.get('arenaUniqueID'):
+            return
+        view.destroy()
+    BattleRoyaleBattleResultsState.goTo(**ctx)
+    return
 
 
 def showHangar():

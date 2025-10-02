@@ -2105,10 +2105,12 @@ class EmailConfirmationQuestHandler(ServiceChannelHandler):
         return
 
 
-class PersonalMission3OperationAwardHandler(ServiceChannelHandler):
+class PersonalMission3OperationAwardHandler(MultiTypeServiceChannelHandler):
 
     def __init__(self, awardCtrl):
-        super(PersonalMission3OperationAwardHandler, self).__init__(SYS_MESSAGE_TYPE.tokenQuests.index(), awardCtrl)
+        super(PersonalMission3OperationAwardHandler, self).__init__((
+         SYS_MESSAGE_TYPE.battleResults.index(),
+         SYS_MESSAGE_TYPE.tokenQuests.index()), awardCtrl)
 
     def _showAward(self, ctx, clientCtx=None):
         _, message = ctx

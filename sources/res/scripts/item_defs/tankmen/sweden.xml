@@ -5819,5 +5819,105 @@
 				<_3301>tankmen_bp18_4.png</_3301>
 			</icons>
 		</tankmen_bp18_4>
+		<tankmen_bp18_5>
+			<groupID>320</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_5</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3306>#sweden_crew:names/tankmen_bp18_5_n</_3306>
+			</firstNames>
+			<lastNames>
+				<_3306>#sweden_crew:names/tankmen_bp18_5</_3306>
+			</lastNames>
+			<icons>
+				<_3306>tankmen_bp18_5.png</_3306>
+			</icons>
+		</tankmen_bp18_5>
+		<tankmen_bp18_6>
+			<groupID>321</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_6</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3307>#sweden_crew:names/tankmen_bp18_6_n</_3307>
+			</firstNames>
+			<lastNames>
+				<_3307>#sweden_crew:names/tankmen_bp18_6</_3307>
+			</lastNames>
+			<icons>
+				<_3307>tankmen_bp18_6.png</_3307>
+			</icons>
+		</tankmen_bp18_6>
+		<tankmen_bp18_7>
+			<groupID>322</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_7</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3308>#sweden_crew:names/tankmen_bp18_7_n</_3308>
+			</firstNames>
+			<lastNames>
+				<_3308>#sweden_crew:names/tankmen_bp18_7</_3308>
+			</lastNames>
+			<icons>
+				<_3308>tankmen_bp18_7.png</_3308>
+			</icons>
+		</tankmen_bp18_7>
+		<tankmen_bp18_8>
+			<groupID>323</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_8</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3309>#sweden_crew:names/tankmen_bp18_8_n</_3309>
+			</firstNames>
+			<lastNames>
+				<_3309>#sweden_crew:names/tankmen_bp18_8</_3309>
+			</lastNames>
+			<icons>
+				<_3309>tankmen_bp18_8.png</_3309>
+			</icons>
+		</tankmen_bp18_8>
+		<tankmen_bp18_9>
+			<groupID>324</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_9</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3310>#sweden_crew:names/tankmen_bp18_9_n</_3310>
+			</firstNames>
+			<lastNames>
+				<_3310>#sweden_crew:names/tankmen_bp18_9</_3310>
+			</lastNames>
+			<icons>
+				<_3310>tankmen_bp18_9.png</_3310>
+			</icons>
+		</tankmen_bp18_9>
 	</premiumGroups>
 </root>

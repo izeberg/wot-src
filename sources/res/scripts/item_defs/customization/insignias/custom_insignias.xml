@@ -905,4 +905,44 @@
 			<texture>gui/maps/vehicles/decals/insignia/custom/onslaught_2025_3.dds</texture>
 		</insignia>
 	</itemGroup>
+	<itemGroup>
+		<name>Battle Pass 2025</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>92</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_by.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_by.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_by_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>93</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_sch.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_sch.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_sch_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>94</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_mh.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_mh.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_mh_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>G177_E65_Zwilling_W25_3Dst</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>95</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_g177.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_g177.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_g177_3.dds</texture>
+		</insignia>
+	</itemGroup>
 </root>

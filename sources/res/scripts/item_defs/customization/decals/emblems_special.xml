@@ -5989,6 +5989,26 @@
 		</decal>
 	</itemGroup>
 	<itemGroup>
+		<name>Battle Pass 2025</name>
+		<type>EMBLEM</type>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1182</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_872.dds</texture>
+			<userString>#vehicle_customization:special_style/bp_2025_sch</userString>
+			<mirror>false</mirror>
+			<tags>hiddenInUI</tags>
+		</decal>
+	</itemGroup>
+	<itemGroup>
 		<userString>#vehicle_customization:emblem/special</userString>
 		<season>ALL</season>
 		<historical>1</historical>

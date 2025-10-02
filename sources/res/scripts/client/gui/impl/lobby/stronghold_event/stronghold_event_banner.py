@@ -92,6 +92,8 @@ class StrongholdEventBanner(Notifiable, BaseEventBanner):
             eventEndDate = self.__eventSettings.getEventConfig().getEndDate()
             if timeNow < eventStartDate:
                 return StrongholdEventBannerTooltip(EventBannerState.ANNOUNCE, eventStartDate, eventEndDate)
+            if timeNow >= eventEndDate:
+                return StrongholdEventBannerTooltip(EventBannerState.INACTIVE, 0, 0)
             if timeNow < primeTimeStart:
                 return StrongholdEventBannerTooltip(EventBannerState.INACTIVE, primeTimeStart, 0)
             if primeTimeStart < timeNow < primeTimeEnd:
