@@ -3612,6 +3612,9 @@ msgstr "Машина заблокирована. Нельзя продать «%
 msgid "seniority_awards/claim_reward_failed"
 msgstr "Ошибка начисления награды: начисление временно недоступно."
 
+msgid "seniority_awards/rewardChoice/error"
+msgstr "Произошла ошибка при выборе наград. Пожалуйста, попробуйте ещё раз."
+
 msgid "serverInstallError"
 msgstr ""
 "Произошла серверная ошибка установки модуля %s «%s». Попробуйте повторить "

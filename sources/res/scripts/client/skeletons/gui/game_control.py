@@ -2703,6 +2703,10 @@ class ISeniorityAwardsController(IGameController):
         raise NotImplementedError
 
     @property
+    def isNeedToShowOfferNotification(self):
+        raise NotImplementedError
+
+    @property
     def pendingReminderTimestamp(self):
         raise NotImplementedError
 
@@ -2713,6 +2717,9 @@ class ISeniorityAwardsController(IGameController):
         raise NotImplementedError
 
     def getSACoin(self):
+        raise NotImplementedError
+
+    def replaceCompTokens(self, rewards):
         raise NotImplementedError
 
 

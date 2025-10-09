@@ -1117,8 +1117,8 @@
 			<level>8</level>
 			<price>55000</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Ford_GAA_pc</wwsoundPC>
-			<wwsoundNPC>eng_Ford_GAA_npc</wwsoundNPC>
+			<wwsoundPC>eng_Continental_R975_C1_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_C1_npc</wwsoundNPC>
 			<power>580</power>
 			<weight>1200</weight>
 			<maxHealth>260</maxHealth>
@@ -1128,8 +1128,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>524</rpm_min>
-			<rpm_max>2602</rpm_max>
+			<rpm_min>419</rpm_min>
+			<rpm_max>2481</rpm_max>
 		</Maybach_HL_275>
 		<Maybach_HL_295_1250>
 			<userString>#france_vehicles:Maybach_HL_295_1250</userString>

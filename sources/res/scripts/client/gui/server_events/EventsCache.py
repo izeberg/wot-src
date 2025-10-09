@@ -647,9 +647,8 @@ class EventsCache(IEventsCache):
         needTokens = defaultdict(list)
         for qID, q in quests.iteritems():
             if q.getType() not in (EVENT_TYPE.GROUP, EVENT_TYPE.PERSONAL_MISSION):
-                for tokenBonus in q.getBonuses('tokens'):
-                    for t in tokenBonus.getTokens():
-                        makeTokens[t].append(qID)
+                for t in q.getRawBonuses().get('tokens', {}):
+                    makeTokens[t].append(qID)
 
                 for t in q.accountReqs.getTokens():
                     needTokens[qID].append(t.getID())

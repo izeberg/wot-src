@@ -707,6 +707,9 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 		<rpPointsAdded>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralProgramPointsAdded/body):&lt;/font&gt; &lt;font color=&apos;#CBAC77&apos;&gt;%(points)s&lt;/font&gt;</rpPointsAdded>
 		<rpPointsDebited>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralProgramPointsDebited/body):&lt;/font&gt; &lt;font color=&apos;#CBAC77&apos;&gt;%(points)s&lt;/font&gt;</rpPointsDebited>
 		<transactionTime>&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/referralTransaction/date):&lt;/font&gt; &lt;font color=&apos;#8C8C7E&apos;&gt;%(at)s&lt;/font&gt;</transactionTime>
+		<SeniorityAwardsCompensationHeader>&lt;font color=&quot;#8C8C7E&quot; face=&quot;$TitleFont&quot; size=&quot;14&quot;&gt;_(#seniority_awards:serviceChannelMessages/compensation/header)&lt;/font&gt;</SeniorityAwardsCompensationHeader>
+		<SeniorityAwardsSacoinCompensation>&lt;font color=&apos;#8C8C7E&apos;&gt;%(item)s _(#seniority_awards:serviceChannelMessages/compensation/sacoins)&lt;/font&gt; &lt;font color=&apos;#C9C9B6&apos;&gt;%(sacoins)s&lt;/font&gt;&lt;/font&gt;</SeniorityAwardsSacoinCompensation>
+		<SeniorityAwardsCreditsCompensation>&lt;font color=&apos;#8C8C7E&apos;&gt;%(item)s _(#seniority_awards:serviceChannelMessages/compensation/credits)&lt;/font&gt; &lt;font color=&apos;#CED9D9&apos;&gt;%(credits)s&lt;/font&gt;&lt;/font&gt;</SeniorityAwardsCreditsCompensation>
 	</htmlTemplatesSimple>
 	<htmlTemplates>
 		<SimpleGiftSysMessage>
@@ -1548,7 +1551,8 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			<type>battleResult</type>
 			<icon>InformationIcon</icon>
 			<message>&lt;font face=&quot;$TitleFont&quot; size=&quot;15&quot; color=&quot;#E9E2BF&quot;&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/seniorityRewardHeader)&lt;/font&gt;
-&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/seniorityRewardBody):&lt;/font&gt;&lt;br/&gt;%(achieves)s</message>
+&lt;font color=&apos;#8C8C7E&apos;&gt;_(#messenger:serviceChannelMessages/battleResults/seniorityRewardBody):&lt;/font&gt;&lt;br/&gt;%(achieves)s
+&lt;/br&gt;%(compensation)s</message>
 		</SeniorityAwardsQuest>
 		<seniorityAwardsTokens>
 			<priority>medium</priority>
@@ -1580,6 +1584,17 @@ _(#messenger:battle/toolTips/mutePlayer){/BODY}</value>
 			</buttonsLayout>
 			<buttonsAlign>center</buttonsAlign>
 		</seniorityAwardsQuest22>
+		<seniorityAwardsVehicleOffer>
+			<priority>medium</priority>
+			<groupID>offer</groupID>
+			<bgIconSizeAuto>true</bgIconSizeAuto>
+			<gfViewName>SeniorityVehicleOfferNotification</gfViewName>
+			<gfViewPopUpHeight>302</gfViewPopUpHeight>
+			<gfViewPopUpWidth>288</gfViewPopUpWidth>
+			<gfViewHeight>294</gfViewHeight>
+			<gfViewWidth>282</gfViewWidth>
+			<linkage>GamefaceNotification</linkage>
+		</seniorityAwardsVehicleOffer>
 		<achievementRating>
 			<priority>high</priority>
 			<groupID>offer</groupID>

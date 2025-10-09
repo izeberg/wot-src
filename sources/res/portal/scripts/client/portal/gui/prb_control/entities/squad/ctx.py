@@ -1,5 +1,6 @@
 from gui.prb_control.entities.base.unit.ctx import UnitRequestCtx
 from gui.shared.utils.decorators import ReprInjector
+from portal.gui.portal_gui_constants import REQUEST_TYPE
 
 @ReprInjector.withParent(('_battleLevel', ))
 class SetUnitBattleLevelCtx(UnitRequestCtx):
@@ -11,3 +12,9 @@ class SetUnitBattleLevelCtx(UnitRequestCtx):
 
     def getBattleLevel(self):
         return self._battleLevel
+
+    def getRequestType(self):
+        return REQUEST_TYPE.PORTAL_SET_BATTLE_LEVEL
+
+    def getCooldown(self):
+        return 1.0

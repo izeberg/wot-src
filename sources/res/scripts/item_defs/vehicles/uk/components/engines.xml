@@ -270,8 +270,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>500</rpm_min>
-			<rpm_max>2200</rpm_max>
+			<rpm_min>439</rpm_min>
+			<rpm_max>2411</rpm_max>
 		</Rolls_Royce_B81F>
 		<Rolls_Royce_B80>
 			<userString>#gb_vehicles:Rolls_Royce_B80</userString>
@@ -2708,7 +2708,7 @@
 			<repairCost>0</repairCost>
 			<fireStartingChance>0</fireStartingChance>
 			<rpm_min>409</rpm_min>
-			<rpm_max>2517</rpm_max>
+			<rpm_max>2516</rpm_max>
 		</Rolls_Royse_Meteor_H>
 		<Rolls_Royse_Meteor_Mk_XI_supercharged_H>
 			<userString>#gb_vehicles:Rolls_Royse_Meteor_Mk_XI_supercharged_H</userString>
@@ -2724,7 +2724,7 @@
 			<maxRegenHealth>65</maxRegenHealth>
 			<repairCost>0</repairCost>
 			<fireStartingChance>0</fireStartingChance>
-			<rpm_min>418</rpm_min>
+			<rpm_min>417</rpm_min>
 			<rpm_max>2263</rpm_max>
 		</Rolls_Royse_Meteor_Mk_XI_supercharged_H>
 		<Leyland_L60_No_4_H>

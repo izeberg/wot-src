@@ -24461,6 +24461,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VEHICLES_RENT:String = "../maps/icons/quests/bonuses/big/vehicles_rent.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VEHICLE_10_GIFT:String = "../maps/icons/quests/bonuses/big/vehicle_10_gift.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/big/virtuosoBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_BIG_XPDIRECTIVESBATTLEBOOSTER1:String = "../maps/icons/quests/bonuses/big/xpDirectivesBattleBooster1.png";
@@ -24638,6 +24640,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RAZLOM_COIN:String = "../maps/icons/quests/bonuses/s180x135/razlom_coin.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_RECERTIFICATIONFORM:String = "../maps/icons/quests/bonuses/s180x135/recertificationForm.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_SACOIN:String = "../maps/icons/quests/bonuses/s180x135/sacoin.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S180X135_SLOTS:String = "../maps/icons/quests/bonuses/s180x135/slots.png";
       
@@ -24998,6 +25002,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_RECERTIFICATIONFORM:String = "../maps/icons/quests/bonuses/s232x174/recertificationForm.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s232x174/removedRpmLimiter.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_SACOIN:String = "../maps/icons/quests/bonuses/s232x174/sacoin.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S232X174_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s232x174/sixthSenseBattleBooster.png";
       
@@ -25543,6 +25549,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s296x222/removedRpmLimiter.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_SACOIN:String = "../maps/icons/quests/bonuses/s296x222/sacoin.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/sixthSenseBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_SLOTS:String = "../maps/icons/quests/bonuses/s296x222/slots.png";
@@ -25764,6 +25772,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TURBOCHARGER:String = "../maps/icons/quests/bonuses/s296x222/turbocharger.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_TURBOCHARGERBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/turbochargerBattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_VEHICLE_10_GIFT:String = "../maps/icons/quests/bonuses/s296x222/vehicle_10_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S296X222_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s296x222/virtuosoBattleBooster.png";
       
@@ -26299,6 +26309,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_REMOVEDRPMLIMITER:String = "../maps/icons/quests/bonuses/s400x300/removedRpmLimiter.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_SACOIN:String = "../maps/icons/quests/bonuses/s400x300/sacoin.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/sixthSenseBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_SLOTS:String = "../maps/icons/quests/bonuses/s400x300/slots.png";
@@ -26522,6 +26534,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TURBOCHARGER:String = "../maps/icons/quests/bonuses/s400x300/turbocharger.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_TURBOCHARGERBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/turbochargerBattleBooster.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_VEHICLE_10_GIFT:String = "../maps/icons/quests/bonuses/s400x300/vehicle_10_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S400X300_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s400x300/virtuosoBattleBooster.png";
       
@@ -26835,6 +26849,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_S32_BOFORS_TORNVAGN:String = "../maps/icons/quests/bonuses/s600x450/S32_Bofors_Tornvagn.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_SACOIN:String = "../maps/icons/quests/bonuses/s600x450/sacoin.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/sixthSenseBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_SLOTS:String = "../maps/icons/quests/bonuses/s600x450/slots.png";
@@ -27062,6 +27078,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_TURBOCHARGERBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/turbochargerBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_VEHICLES_RENT:String = "../maps/icons/quests/bonuses/s600x450/vehicles_rent.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_VEHICLE_10_GIFT:String = "../maps/icons/quests/bonuses/s600x450/vehicle_10_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_S600X450_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/s600x450/virtuosoBattleBooster.png";
       
@@ -27539,6 +27557,8 @@ package
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_REWARD_SHEET:String = "../maps/icons/quests/bonuses/small/reward_sheet.png";
       
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_SACOIN:String = "../maps/icons/quests/bonuses/small/sacoin.png";
+      
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_SIXTHSENSEBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/small/sixthSenseBattleBooster.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_SLOTS:String = "../maps/icons/quests/bonuses/small/slots.png";
@@ -27596,6 +27616,8 @@ package
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_VEHICLES:String = "../maps/icons/quests/bonuses/small/vehicles.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_VEHICLES_RENT:String = "../maps/icons/quests/bonuses/small/vehicles_rent.png";
+      
+      public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_VEHICLE_10_GIFT:String = "../maps/icons/quests/bonuses/small/vehicle_10_gift.png";
       
       public static const MAPS_ICONS_QUESTS_BONUSES_SMALL_VIRTUOSOBATTLEBOOSTER:String = "../maps/icons/quests/bonuses/small/virtuosoBattleBooster.png";
       
@@ -30095,6 +30117,10 @@ package
       
       public static const MAPS_ICONS_SENIORITYAWARDS_AWARD_BG:String = "../maps/icons/seniorityAwards/award_bg.png";
       
+      public static const MAPS_ICONS_SENIORITYAWARDS_COMPENSATION:String = "../maps/icons/seniorityAwards/compensation.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_COMPENSATION_SMALL:String = "../maps/icons/seniorityAwards/compensation_small.png";
+      
       public static const MAPS_ICONS_SENIORITYAWARDS_HEADERFRAME:String = "../maps/icons/seniorityAwards/headerFrame.png";
       
       public static const MAPS_ICONS_SENIORITYAWARDS_HEADERFRAMEREVERTED:String = "../maps/icons/seniorityAwards/headerFrameReverted.png";
@@ -30108,6 +30134,32 @@ package
       public static const MAPS_ICONS_SENIORITYAWARDS_MESSENGER_SYS_NOTIFICATION_QUEST_BG:String = "../maps/icons/seniorityAwards/messenger/sys_notification_quest_bg.png";
       
       public static const MAPS_ICONS_SENIORITYAWARDS_MESSENGER_SYS_NOTIFICATION_TOKENS_BG:String = "../maps/icons/seniorityAwards/messenger/sys_notification_tokens_bg.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_MESSENGER_VEHICLE_10_GIFT:String = "../maps/icons/seniorityAwards/messenger/vehicle_10_gift.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_MESSENGER_VEHICLE_POPUP_BG:String = "../maps/icons/seniorityAwards/messenger/vehicle_popup_bg.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_MESSENGER_VEHICLE_POPUP_LIGHT:String = "../maps/icons/seniorityAwards/messenger/vehicle_popup_light.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_MESSENGER_WIDGET_EXPLOSION:String = "../maps/icons/seniorityAwards/messenger/widget_explosion.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_TOOLTIPS_COMPENSATIONTOOLTIP_ARROW:String = "../maps/icons/seniorityAwards/tooltips/compensationTooltip/arrow.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_TOOLTIPS_COMPENSATIONTOOLTIP_COMPENSATIONVEHICLES:String = "../maps/icons/seniorityAwards/tooltips/compensationTooltip/compensationVehicles.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_DISABLEDPATTERN:String = "../maps/icons/seniorityAwards/vehicleSelector/disabledPattern.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_GLOW_ARROW:String = "../maps/icons/seniorityAwards/vehicleSelector/glow_arrow.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_POPOVER_DIVIDER:String = "../maps/icons/seniorityAwards/vehicleSelector/popover_divider.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_SEPARATOR:String = "../maps/icons/seniorityAwards/vehicleSelector/separator.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_SMALLVEHICLE:String = "../maps/icons/seniorityAwards/vehicleSelector/smallVehicle.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_VEHICLEICON:String = "../maps/icons/seniorityAwards/vehicleSelector/vehicleIcon.png";
+      
+      public static const MAPS_ICONS_SENIORITYAWARDS_VEHICLESELECTOR_VEHICLE_SELECTOR_BG:String = "../maps/icons/seniorityAwards/vehicleSelector/vehicle_selector_bg.png";
       
       public static const MAPS_ICONS_SEQUENCE_ALTBTN_SHINE_SPRITE_0:String = "../maps/icons/sequence/altBtn_shine/sprite_0.png";
       

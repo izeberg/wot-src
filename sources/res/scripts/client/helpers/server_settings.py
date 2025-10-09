@@ -628,11 +628,13 @@ class SeniorityAwardsConfig(typing.NamedTuple('SeniorityAwardsConfig', (
  (
   'claimRewardToken', str),
  (
-  'rewardQuestsPrefix', str)))):
+  'rewardQuestsPrefix', str),
+ (
+  'offerCreditsCompensation', int)))):
     __slots__ = ()
 
     def __new__(cls, **kwargs):
-        defaults = dict(enabled=False, endTime=0, reminders=[], clockOnNotification=0, showRewardNotification=False, receivedRewardsToken='', rewardEligibilityToken='', claimRewardToken='', rewardQuestsPrefix='')
+        defaults = dict(enabled=False, endTime=0, reminders=[], clockOnNotification=0, showRewardNotification=False, receivedRewardsToken='', rewardEligibilityToken='', claimRewardToken='', rewardQuestsPrefix='', offerCreditsCompensation=0)
         defaults.update(kwargs)
         return super(SeniorityAwardsConfig, cls).__new__(cls, **defaults)
 

@@ -35,7 +35,7 @@ class SquadActionsHandler(AbstractActionsHandler):
             g_eventDispatcher.loadHangar()
         return
 
-    def setPlayerInfoChanged(self):
+    def setPlayerInfoChanged(self, pInfo=None):
         g_eventDispatcher.updateUI()
 
     def setPlayersChanged(self):

@@ -40,6 +40,9 @@ class IPortalEventController(IGameController, ISeasonProvider):
     def setMaxAvailableComplexityLevel(self, maxAvailableComplexityLevel):
         raise NotImplementedError
 
+    def onSquadBattleLevelChanged(self, battleLevel):
+        raise NotImplementedError
+
     def selectRandomBattle(self):
         raise NotImplementedError
 

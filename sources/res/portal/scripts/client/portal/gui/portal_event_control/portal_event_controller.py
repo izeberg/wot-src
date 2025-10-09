@@ -152,10 +152,12 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
     def onPrbEnter(self):
         self.__inPortalLobby = True
         g_eventBus.addListener(events.ViewEventType.LOAD_VIEW, self.__viewLoaded, EVENT_BUS_SCOPE.LOBBY, priority=EventPriority.VERY_LOW)
+        g_eventBus.addListener(events.HangarVehicleEvent.SELECT_VEHICLE_IN_HANGAR, self.__onHangarVehicleSelected, EVENT_BUS_SCOPE.LOBBY)
 
     def onPrbLeave(self):
         self.__inPortalLobby = False
         g_eventBus.removeListener(events.ViewEventType.LOAD_VIEW, self.__viewLoaded, EVENT_BUS_SCOPE.LOBBY)
+        g_eventBus.removeListener(events.HangarVehicleEvent.SELECT_VEHICLE_IN_HANGAR, self.__onHangarVehicleSelected, EVENT_BUS_SCOPE.LOBBY)
         getTutorialGlobalStorage().setValue(GLOBAL_FLAG.PORTAL_ACTIVE, False)
         play2DSound(PortalMusicState.EXIT)
 
@@ -230,10 +232,10 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
 
     @battleLevel.setter
     def battleLevel(self, battleLevel):
-        if self.__battleLevel != battleLevel:
-            setSelectedComplexityLevel(battleLevel)
-            self.__battleLevel = battleLevel
-            self.onComplexityLevelChanged(self.battleLevel)
+        if self.prbDispatcher and self.prbDispatcher.getFunctionalState().isInUnit(PREBATTLE_TYPE.PORTAL):
+            self.prbEntity.setBattleLevel(battleLevel)
+            return
+        self.__setBattleLevel(battleLevel)
 
     @property
     def maxComplexityLevel(self):
@@ -244,6 +246,9 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
         self.onMaxAvailableComplexityLevelChanged()
         if self.__maxAvailableComplexityLevel and self.battleLevel > self.__maxAvailableComplexityLevel:
             self.battleLevel = self.__maxAvailableComplexityLevel
+
+    def onSquadBattleLevelChanged(self, battleLevel):
+        self.__setBattleLevel(battleLevel)
 
     @adisp_process
     def selectRandomBattle(self):
@@ -717,3 +722,14 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
         if self.__hangarSpace.spacePath == PORTAL_HANGAR_SPACE_PATH:
             play2DSound(PortalMusicState.EXIT)
             play2DSound(PortalMusicState.ENTER)
+
+    def __onHangarVehicleSelected(self, event):
+        vehicle = self.__itemsCache.items.getVehicle(event.ctx['vehicleInvID'])
+        if vehicle and PORTAL_VEHICLE not in vehicle.tags:
+            self.selectRandomBattle()
+
+    def __setBattleLevel(self, battleLevel):
+        if self.__battleLevel != battleLevel:
+            setSelectedComplexityLevel(battleLevel)
+            self.__battleLevel = battleLevel
+            self.onComplexityLevelChanged(self.battleLevel)

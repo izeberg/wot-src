@@ -49,6 +49,7 @@ class BossEdgeDrawer(CGF.ComponentManager):
             return
         else:
             if vehicle.position.distTo(transform.position) >= self._EDGE_DRAWING_DISTANCE:
+                self.removeHighlight(go)
                 return
             gameObjectID = self.__getGameObjectUnderCrosshair()
             if gameObjectID is None:

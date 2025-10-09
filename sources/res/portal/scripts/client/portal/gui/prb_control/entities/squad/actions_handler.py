@@ -34,18 +34,23 @@ class PortalSquadActionsHandler(SquadActionsHandler):
             g_eventDispatcher.loadHangar()
         return
 
-    def setPlayerInfoChanged(self):
-        _, unit = self._entity.getUnit()
-        player = unit.getPlayer(dbID=account_helpers.getAccountDatabaseID())
-        extraData = player.get('extraData', {})
-        portalEnqueueData = extraData.get('portalEnqueueData', {})
-        battleLevel = portalEnqueueData.get('battleLevel')
-        if battleLevel is not None:
-            self.__portalEventController.battleLevel = battleLevel
-        maxAvailableBattleLevel = portalEnqueueData.get('maxAvailableBattleLevel')
-        if maxAvailableBattleLevel is not None:
-            self.__portalEventController.setMaxAvailableComplexityLevel(maxAvailableBattleLevel)
-        return
+    def setPlayerInfoChanged(self, pInfo=None):
+        if pInfo and pInfo.dbID != account_helpers.getAccountDatabaseID():
+            return
+        else:
+            extraData = pInfo.extraData if pInfo else {}
+            if not pInfo:
+                _, unit = self._entity.getUnit()
+                player = unit.getPlayer(dbID=account_helpers.getAccountDatabaseID())
+                extraData = player.get('extraData', {})
+            portalEnqueueData = extraData.get('portalEnqueueData', {})
+            battleLevel = portalEnqueueData.get('battleLevel')
+            if battleLevel is not None:
+                self.__portalEventController.onSquadBattleLevelChanged(battleLevel)
+            maxAvailableBattleLevel = portalEnqueueData.get('maxAvailableBattleLevel')
+            if maxAvailableBattleLevel is not None:
+                self.__portalEventController.setMaxAvailableComplexityLevel(maxAvailableBattleLevel)
+            return
 
     @th_async
     def _validateUnitState(self, entity, checkAmmo=False):

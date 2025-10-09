@@ -2418,6 +2418,12 @@
 					10
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_19>
+				<armor_20>260</armor_20>
+				<armor_21>200</armor_21>
+				<armor_22>155</armor_22>
+				<armor_24>185</armor_24>
+				<armor_25>160</armor_25>
+				<armor_26>30</armor_26>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>18000</weight>
@@ -3347,7 +3353,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				1.065 -0.04 1.072 0 0.948 -0.036 0.804 0.605 0.357 0.5 0.422 0.5 0.262 0.503 0.278
+				1.093 -0.04 0.874 0 0.716 0 0.804 0.605 0.357 0.5 0.388 0.5 0.262 0.503 0.041
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>

@@ -518,6 +518,7 @@ class PersonalMissionsFormatter(PersonalMissionsTokenQuestsFormatter):
 
 
 class SeniorityAwardsFormatter(AsyncTokenQuestsSubFormatter):
+    __OFFER_TOKEN_NAME = constants.SENIORITY_AWARDS_COMPENSATION_BONUS + ':offer'
     __MESSAGE_TEMPLATE = 'SeniorityAwardsQuest'
     __seniorityAwardCtrl = dependency.descriptor(ISeniorityAwardsController)
 
@@ -528,9 +529,14 @@ class SeniorityAwardsFormatter(AsyncTokenQuestsSubFormatter):
         messageDataList = []
         if isSynced:
             data = message.data or {}
-            completedQuestIDs = self.getQuestOfThisGroup(data.get('completedQuestIDs', set()))
+            completedQuestIDs = self.__getNeededQuests(data.get('completedQuestIDs', set()))
             detailedRewards = data.get('detailedRewards', {})
-            mergedRewards = getMergedBonusesFromDicts(detailedRewards.get(qID, {}) for qID in completedQuestIDs)
+            rewards = {}
+            for qID in completedQuestIDs:
+                rewards.update(detailedRewards.get(qID, {}))
+
+            rewards = self.__seniorityAwardCtrl.replaceCompTokens(rewards)
+            mergedRewards = getMergedBonusesFromDicts([rewards])
             messageData = self.__buildMessage(mergedRewards, message)
             if messageData is not None:
                 messageDataList.append(messageData)
@@ -541,10 +547,23 @@ class SeniorityAwardsFormatter(AsyncTokenQuestsSubFormatter):
         return
 
     @classmethod
+    def __getNeededQuests(cls, questIDs):
+        return set(quest for quest in questIDs if cls.__isNeededQuest(quest))
+
+    @classmethod
+    def __isNeededQuest(cls, questID):
+        questPrefix = cls.__seniorityAwardCtrl.seniorityQuestPrefix
+        if questPrefix and questID.startswith(questPrefix):
+            return True
+        return False
+
+    @classmethod
     def _isQuestOfThisGroup(cls, questID):
         questPrefix = cls.__seniorityAwardCtrl.seniorityQuestPrefix
-        if questPrefix:
-            return questID.startswith(questPrefix)
+        if questPrefix and questID.startswith(questPrefix):
+            return True
+        if questID.startswith(constants.SENIORITY_AWARDS_COMP_QUEST_PREFIX):
+            return True
         return False
 
     def __buildMessage(self, rewards, message):
@@ -556,9 +575,11 @@ class SeniorityAwardsFormatter(AsyncTokenQuestsSubFormatter):
         if popUps:
             questData['popUpRecords'] = popUps
         questData.update(rewards)
+        compensationData = {'tokens': {self.__OFFER_TOKEN_NAME: questData.get('tokens', {}).pop(self.__OFFER_TOKEN_NAME, {})}, 'meta': questData.pop('meta', {})}
         fmt = self._achievesFormatter.formatQuestAchieves(questData, asBattleFormatter=False)
+        compensation = self._achievesFormatter.formatQuestAchieves(compensationData, asBattleFormatter=False)
         if fmt is not None:
-            templateParams = {'achieves': fmt}
+            templateParams = {'achieves': fmt, 'compensation': compensation or ''}
             settings = self._getGuiSettings(message, self.__MESSAGE_TEMPLATE)
             formatted = g_settings.msgTemplates.format(self.__MESSAGE_TEMPLATE, templateParams)
             return MessageData(formatted, settings)

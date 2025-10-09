@@ -15,7 +15,7 @@ from early_access_common import EARLY_ACCESS_POSTPR_KEY
 from battle_pass_common import FinalReward
 from chat_shared import SYS_MESSAGE_TYPE
 from collector_vehicle import CollectorVehicleConsts
-from constants import ARENA_BONUS_TYPE, AUTO_MAINTENANCE_RESULT, DAILY_QUESTS_CONFIG, DOG_TAGS_CONFIG, MAPS_TRAINING_ENABLED_KEY, PremiumConfigs, SwitchState, DailyQuestsLevels
+from constants import ARENA_BONUS_TYPE, AUTO_MAINTENANCE_RESULT, DAILY_QUESTS_CONFIG, DOG_TAGS_CONFIG, MAPS_TRAINING_ENABLED_KEY, PremiumConfigs, SwitchState, DailyQuestsLevels, SENIORITY_AWARDS_VEHICLE_OFFER
 from debug_utils import LOG_DEBUG, LOG_ERROR
 from gui import SystemMessages
 from gui.ClientUpdateManager import g_clientUpdateManager
@@ -60,7 +60,7 @@ from helpers.events_handler import EventsHandler
 from helpers.time_utils import getTimestampByStrDate
 from messenger import MessengerEntry
 from messenger.formatters import TimeFormatter
-from messenger.m_constants import PROTO_TYPE, SCH_CLIENT_MSG_TYPE, USER_ACTION_ID
+from messenger.m_constants import PROTO_TYPE, SCH_CLIENT_MSG_TYPE, USER_ACTION_ID, GFNotificationTemplates
 from messenger.proto import proto_getter
 from messenger.proto.events import g_messengerEvents
 from messenger.proto.xmpp.xmpp_constants import XMPP_ITEM_TYPE
@@ -1688,6 +1688,47 @@ class SeniorityAwardsQuestListener(_NotificationListener):
             return
 
 
+class SeniorityAwardsOfferListener(_NotificationListener):
+    __TYPE = NOTIFICATION_TYPE.SENIORITY_AWARDS_OFFER
+    __TEMPLATE = GFNotificationTemplates.SENIORITY_VEHICLE_OFFER
+    __ENTITY_ID = 1
+    __seniorityAwardCtrl = dependency.descriptor(ISeniorityAwardsController)
+
+    def start(self, model):
+        result = super(SeniorityAwardsOfferListener, self).start(model)
+        self.__seniorityAwardCtrl.onUpdated += self.__onEventUpdated
+        if self.__seniorityAwardCtrl.isEnabled:
+            g_clientUpdateManager.addCallback('tokens', self.__onTokensUpdate)
+            self.__tryNotify()
+        return result
+
+    def stop(self):
+        super(SeniorityAwardsOfferListener, self).stop()
+        g_clientUpdateManager.removeCallback('tokens', self.__onTokensUpdate)
+        self.__seniorityAwardCtrl.onUpdated -= self.__onEventUpdated
+
+    def __onEventUpdated(self):
+        g_clientUpdateManager.removeCallback('tokens', self.__onTokensUpdate)
+        if self.__seniorityAwardCtrl.isEnabled:
+            g_clientUpdateManager.addCallback('tokens', self.__onTokensUpdate)
+            self.__tryNotify()
+
+    def __tryNotify(self):
+        model = self._model()
+        if not model:
+            return
+        if self.__seniorityAwardCtrl.isNeedToShowOfferNotification:
+            if not model.hasNotification(self.__TYPE, self.__ENTITY_ID):
+                model.addNotification(SeniorityAwardsDecorator(self.__ENTITY_ID, self.__TYPE, {'giftToken': SENIORITY_AWARDS_VEHICLE_OFFER}, model, self.__TEMPLATE, NotificationPriorityLevel.MEDIUM, useCounterOnce=False))
+                WWISE.WW_eventGlobal(backport.sound(R.sounds.wdr_hangar_notification()))
+        else:
+            model.removeNotification(self.__TYPE, self.__ENTITY_ID)
+
+    def __onTokensUpdate(self, diff):
+        if SENIORITY_AWARDS_VEHICLE_OFFER in diff:
+            self.__tryNotify()
+
+
 class ResourceWellListener(_NotificationListener):
     __RESOURCE_WELL_MESSAGES = R.strings.messenger.serviceChannelMessages.resourceWell
     __START_ENTITY_ID = 0
@@ -3036,7 +3077,7 @@ registerNotificationsListeners((
  SeniorityAwardsQuestListener, SeniorityAwardsTokenListener, CollectionsListener, ArmoryYardListener,
  ReferralProgramListener, BattleMattersTaskReminderListener, TradingCaravanListener, CustomNotificationListener,
  SubscriptionListener, EarlyAccessListener, PersonalMissionsListener, ParagonsListener,
- DailyBonusQuestListener))
+ DailyBonusQuestListener, SeniorityAwardsOfferListener))
 
 class NotificationsListeners(_NotificationListener):
 

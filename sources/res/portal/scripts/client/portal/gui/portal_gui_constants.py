@@ -32,5 +32,9 @@ class SCH_CLIENT_MSG_TYPE(m_constants.SCH_CLIENT_MSG_TYPE, ConstInjector):
     PORTAL_MSG_TYPE = 700
 
 
+class REQUEST_TYPE(settings.REQUEST_TYPE, ConstInjector):
+    PORTAL_SET_BATTLE_LEVEL = 48
+
+
 class PortalPrebattleTypes(Enum):
     PORTAL = 'portal'

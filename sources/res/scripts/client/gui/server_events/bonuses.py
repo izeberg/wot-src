@@ -8,7 +8,7 @@ from battle_pass_common import BATTLE_PASS_OFFER_TOKEN_PREFIX, BATTLE_PASS_Q_CHA
 from blueprints.BlueprintTypes import BlueprintTypes
 from blueprints.FragmentTypes import getFragmentType
 from comp7_common import COMP7_TOKEN_WEEKLY_REWARD_NAME, COMP7_TOKEN_WEEKLY_REWARD_ID, COMP7_TOKEN_COUPON_REWARD_NAME, COMP7_TOKEN_COUPON_REWARD_ID
-from constants import CURRENCY_TOKEN_PREFIX, DOSSIER_TYPE, EVENT_TYPE as _ET, LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, LOOTBOX_KEY_PREFIX, RESOURCE_TOKEN_PREFIX, RentType, CUSTOMIZATION_PROGRESS_PREFIX, WoTPlusBonusType, VERSUS_AI_PROGRESSION_TOKEN_PREFIX
+from constants import CURRENCY_TOKEN_PREFIX, DOSSIER_TYPE, EVENT_TYPE as _ET, LOOTBOX_TOKEN_PREFIX, PREMIUM_ENTITLEMENTS, LOOTBOX_KEY_PREFIX, RESOURCE_TOKEN_PREFIX, RentType, CUSTOMIZATION_PROGRESS_PREFIX, WoTPlusBonusType, VERSUS_AI_PROGRESSION_TOKEN_PREFIX, SENIORITY_AWARDS_COMPENSATION_BONUS, OFFER_TOKEN_PREFIX
 from debug_utils import LOG_CURRENT_EXCEPTION, LOG_ERROR
 from dossiers2.custom.records import RECORD_DB_IDS
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK, BADGES_BLOCK
@@ -469,6 +469,19 @@ class CurrenciesBonus(IntegralBonus):
 
     def __ifPlatformCurrency(self, currencyCode):
         return currencyCode not in Currency.ALL + (CURRENCIES_CONSTANTS.FREE_XP,)
+
+
+class SaCoinCompensationBonus(SimpleBonus):
+
+    def __init__(self, _, value, isCompensation=False, ctx=None, compensationReason=None):
+        self._name = 'sacoin'
+        super(SaCoinCompensationBonus, self).__init__(self._name, value, isCompensation, ctx, compensationReason)
+
+    def getCampaignID(self):
+        return self._value.get('bonus', {}).get('campaignID')
+
+    def getCount(self):
+        return self._value.get('count', 1)
 
 
 class FreeXpBonus(IntegralBonus):
@@ -1186,6 +1199,31 @@ class SelectableBonus(TokensBonus):
          self.getType(),)
 
 
+class SACompensationBonus(TokensBonus):
+
+    def __init__(self, value, isCompensation=False, ctx=None, name=SENIORITY_AWARDS_COMPENSATION_BONUS):
+        super(SACompensationBonus, self).__init__(name, value, isCompensation, ctx)
+
+    def isShowInGUI(self):
+        return True
+
+    def getType(self):
+        return first(self._value.keys()).split(':')[1]
+
+    def formatValue(self):
+        if self._value:
+            return str(self._value)
+        else:
+            return
+
+    def getLightViewModelData(self):
+        return (
+         self.getType(),)
+
+    def getAmount(self):
+        return first(first(self._value.values()).get('extItems', [{}])).get('bonus', {}).get('amount', 0)
+
+
 class EntitlementBonus(SimpleBonus):
     _ENTITLEMENT_RECORD = namedtuple('_ENTITLEMENT_RECORD', ['id', 'amount'])
     _FORMATTED_AMOUNT = ['ranked_202203_access']
@@ -1476,6 +1514,8 @@ def tokensFactory(name, value, isCompensation=False, ctx=None):
             result.append(CollectionTokenBonus(COLLECTION_ITEM_BONUS_NAME, {tID: tValue}, isCompensation, ctx))
         elif tID.startswith(VERSUS_AI_PROGRESSION_TOKEN_PREFIX):
             result.append(VersusAIProgressionsTokenBonus(name, {tID: tValue}, isCompensation, ctx))
+        elif tID.startswith(SENIORITY_AWARDS_COMPENSATION_BONUS):
+            result.append(SACompensationBonus({tID: tValue}, isCompensation, ctx))
         else:
             result.append(BattleTokensBonus(name, {tID: tValue}, isCompensation, ctx))
 
@@ -3585,8 +3625,4 @@ def formatBlueprint(bonus, count=None):
 
 
 def _isSelectableBonusID(bonusID):
-    offers = dependency.instance(IOffersDataProvider)
-    isSelectableBonus = any(bonusID.startswith(prefix) for prefix in FEATURE_TO_PREFIX.itervalues()) or isDynamicOfferToken(bonusID)
-    if isSelectableBonus and offers.getOfferByToken(bonusID) is None:
-        _logger.debug('Offer token %s has no offer', bonusID)
-    return isSelectableBonus
+    return bonusID.startswith(OFFER_TOKEN_PREFIX) and (any(bonusID.startswith(prefix) for prefix in FEATURE_TO_PREFIX.itervalues()) or isDynamicOfferToken(bonusID))

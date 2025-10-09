@@ -949,6 +949,12 @@ def showSeniorityRewardAwardWindow(completedQuests, data, notificationMgr=None):
     notificationMgr.append(WindowNotificationCommand(window))
 
 
+def showSeniorityVehicleSelectorWindow(giftToken):
+    from gui.impl.lobby.seniority_awards.vehicle_selector import VehicleSelectorWindow
+    window = VehicleSelectorWindow(giftToken)
+    window.load()
+
+
 @dependency.replace_none_kwargs(battlePassController=IBattlePassController)
 def showBattlePassAwardsWindow(bonuses, data, useQueue=False, needNotifyClosing=True, packageRewards=None, battlePassController=None):
     from gui.impl.lobby.battle_pass.battle_pass_awards_view import BattlePassAwardWindow

@@ -3,12 +3,11 @@ from debug_utils import LOG_ERROR
 from helpers import dependency
 from UnitBase import UNIT_ROLE
 from gui.ClientUpdateManager import g_clientUpdateManager
-from gui.prb_control import settings
 from gui.prb_control.entities.base.squad.entity import SquadEntryPoint, SquadEntity
 from gui.prb_control.storages import storage_getter, RECENT_PRB_STORAGE
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
-from portal.gui.portal_gui_constants import PREBATTLE_ACTION_NAME, FUNCTIONAL_FLAG
+from portal.gui.portal_gui_constants import PREBATTLE_ACTION_NAME, FUNCTIONAL_FLAG, REQUEST_TYPE
 from portal.gui.prb_control.entities.pre_queue.scheduler import PortalBattleScheduler
 from portal.gui.prb_control.entities.squad.vehicles_watcher import PortalVehiclesWatcher
 from portal.gui.prb_control.entities.squad.actions_validator import PortalSquadActionsValidator
@@ -61,7 +60,6 @@ class PortalSquadEntity(SquadEntity):
         self.invalidateVehicleStates()
         self.lobbyContext.getServerSettings().onServerSettingsChange += self._onServerSettingChanged
         self.eventsCache.onSyncCompleted += self._onServerSettingChanged
-        self.__portalEventController.onComplexityLevelChanged += self.__onComplexityLevelChanged
         g_clientUpdateManager.addCallbacks({'inventory.1': self._onInventoryVehiclesUpdated})
         self.__watcher = PortalVehiclesWatcher()
         self.__watcher.start()
@@ -70,7 +68,6 @@ class PortalSquadEntity(SquadEntity):
 
     def fini(self, ctx=None, woEvents=False):
         self.__portalEventController.onPortalSquadStateChanged(False, self.isCommander())
-        self.__portalEventController.onComplexityLevelChanged -= self.__onComplexityLevelChanged
         self.lobbyContext.getServerSettings().onServerSettingsChange -= self._onServerSettingChanged
         self.eventsCache.onSyncCompleted -= self._onServerSettingChanged
         g_clientUpdateManager.removeObjectCallbacks(self, force=True)
@@ -126,6 +123,13 @@ class PortalSquadEntity(SquadEntity):
         if playerID == account_helpers.getAccountDatabaseID():
             self.unit_onUnitRosterChanged()
 
+    def setBattleLevel(self, battleLevel):
+        pInfo = self.getPlayerInfo()
+        if not pInfo.isCommander():
+            return
+        ctx = SetUnitBattleLevelCtx(battleLevel, waitingID='prebattle/change_settings')
+        self.__setBattleLevel(ctx)
+
     @property
     def _showUnitActionNames(self):
         return (PREBATTLE_ACTION_NAME.PORTAL_BATTLE, PREBATTLE_ACTION_NAME.PORTAL_BATTLE_SQUAD)
@@ -161,15 +165,9 @@ class PortalSquadEntity(SquadEntity):
     def __onUnitPortalPlayerInfoChanged(self, playerID, playerData):
         self._actionsHandler.setPortalPlayerInfoChanged()
 
-    def __onComplexityLevelChanged(self, battleLevel):
-        pInfo = self.getPlayerInfo()
-        if not pInfo.isCommander():
-            return
-        battleLevel = self.__portalEventController.battleLevel
-        ctx = SetUnitBattleLevelCtx(battleLevel, waitingID='prebattle/change_settings')
-        self.__setBattleLevel(ctx)
-
     def __setBattleLevel(self, ctx, callback=None):
+        if self._isInCoolDown(REQUEST_TYPE.PORTAL_SET_BATTLE_LEVEL, coolDown=ctx.getCooldown()):
+            return
         pPermissions = self.getPermissions()
         if not pPermissions.canChangeRosters():
             LOG_ERROR('Player can not change battle level', pPermissions)
@@ -177,4 +175,4 @@ class PortalSquadEntity(SquadEntity):
                 callback(False)
             return
         self._requestsProcessor.doRequest(ctx, 'doUnitCmd', CLIENT_UNIT_CMD.SET_PORTAL_UNIT_BATTLE_LEVEL, ctx.getBattleLevel(), 0, '', callback=callback)
-        self._cooldown.process(settings.REQUEST_TYPE.CHANGE_SETTINGS, coolDown=ctx.getCooldown())
+        self._cooldown.process(REQUEST_TYPE.PORTAL_SET_BATTLE_LEVEL, coolDown=ctx.getCooldown())

@@ -3005,6 +3005,12 @@ class QuestAchievesFormatter(object):
                     text = backport.text(R.strings.lootboxes.userName.dyn(key.userName)())
                     if key:
                         itemsNames.append(makeHtmlString(b'html_templates:lobby/quests/bonuses', b'lootBoxKey', {b'name': text, b'count': intCount}))
+                elif tokenID == constants.PERSONAL_MISSION_FREE_TOKEN_NAME:
+                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.seniority_awards.personalMissions.freeSheet.title(), campaignName=backport.text(R.strings.personal_missions.campaignTitle.dyn(b'c_1')())), count=count))
+                elif tokenID == constants.PERSONAL_MISSION_2_FREE_TOKEN_NAME:
+                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.seniority_awards.personalMissions.freeSheet.title(), campaignName=backport.text(R.strings.personal_missions.campaignTitle.dyn(b'c_2')())), count=count))
+                elif tokenID == constants.SENIORITY_AWARDS_VEHICLE_OFFER:
+                    itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.seniority_awards.selectBonus.vehicle_10_gift()), count=count))
 
         entitlementsList = [ (eID, eData.get(b'count', 0)) for eID, eData in data.get(b'entitlements', {}).iteritems() ]
         entitlementsStr = InvoiceReceivedFormatter.getEntitlementsString(entitlementsList)
@@ -6081,3 +6087,45 @@ class PlayStreakSysMessageRewardsFormatter(WaitItemsSyncFormatter):
         else:
             callback([MessageData(None, None)])
         return
+
+
+class SeniorityAwardsCompensationExtQuestAchievesSubFormatter(IQuestAchievesSubformatter):
+
+    @classmethod
+    def format(cls, data, asBattleFormatter, result, processCustomizations=True, processTokens=True):
+        if not asBattleFormatter:
+            isHeaderAppended = False
+            compensationBlank1 = data.get(b'meta', {}).get(b'compensation_token:blank_1')
+            if compensationBlank1:
+                if not isHeaderAppended:
+                    result.append(g_settings.htmlTemplates.format(b'SeniorityAwardsCompensationHeader'))
+                    isHeaderAppended = True
+                campaignKey = 1
+                sacoinsCount = compensationBlank1.get(b'bonus', {}).get(b'amount', 1)
+                result.append(cls.__makeQuestsAchieve(b'SeniorityAwardsSacoinCompensation', item=cls.__getFreeSheetTitle(campaignKey), sacoins=str(sacoinsCount)))
+            compensationBlank2 = data.get(b'meta', {}).get(b'compensation_token:blank_2')
+            if compensationBlank2:
+                if not isHeaderAppended:
+                    result.append(g_settings.htmlTemplates.format(b'SeniorityAwardsCompensationHeader'))
+                    isHeaderAppended = True
+                campaignKey = 2
+                sacoinsCount = compensationBlank2.get(b'bonus', {}).get(b'amount', 1)
+                result.append(cls.__makeQuestsAchieve(b'SeniorityAwardsSacoinCompensation', item=cls.__getFreeSheetTitle(campaignKey), sacoins=str(sacoinsCount)))
+            compensationOffer = data.get(b'tokens', {}).get(b'compensation_token:offer')
+            if compensationOffer:
+                if not isHeaderAppended:
+                    result.append(g_settings.htmlTemplates.format(b'SeniorityAwardsCompensationHeader'))
+                    isHeaderAppended = True
+                credits = first(compensationOffer.get(b'extItems', [{}])).get(b'bonus', {}).get(b'amount')
+                count = compensationOffer.get(b'count', 1)
+                if credits:
+                    result.extend([ cls.__makeQuestsAchieve(b'SeniorityAwardsCreditsCompensation', item=backport.text(R.strings.seniority_awards.vehicle_offer.title()), credits=str(credits)) for _ in range(count)
+                                  ])
+
+    @classmethod
+    def __getFreeSheetTitle(cls, campaignID):
+        return backport.text(R.strings.seniority_awards.personalMissions.freeSheet.title(), campaignName=backport.text(R.strings.personal_missions.campaignTitle.dyn((b'c_{}').format(campaignID))()))
+
+    @classmethod
+    def __makeQuestsAchieve(cls, key, **kwargs):
+        return g_settings.htmlTemplates.format(key, kwargs)
