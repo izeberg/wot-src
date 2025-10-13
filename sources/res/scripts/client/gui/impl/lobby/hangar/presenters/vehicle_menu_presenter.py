@@ -183,7 +183,8 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
         if not g_currentVehicle.isPresent():
             return VehicleMenuModel.DISABLED
         menuItemStateValue = self._menuItems[name].state()
-        if isinstance(menuItemStateValue, tuple) and hasattr(menuItemStateValue, '_fields'):
+        hasFields = isinstance(menuItemStateValue, tuple) and hasattr(menuItemStateValue, '_fields')
+        if hasFields:
             return menuItemStateValue.state
         return menuItemStateValue
 

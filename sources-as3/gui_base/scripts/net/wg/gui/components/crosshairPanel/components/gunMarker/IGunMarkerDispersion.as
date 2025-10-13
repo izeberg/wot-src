@@ -14,5 +14,7 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       function setThickness(param1:String) : void;
       
       function setType(param1:Number) : void;
+      
+      function setChargeableBurstMode(param1:Boolean) : void;
    }
 }

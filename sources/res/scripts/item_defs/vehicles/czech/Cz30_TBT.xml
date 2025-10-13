@@ -16,11 +16,11 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.061
+			0.06
 			<!--BW_String-->
 		</moving>
 		<still>
-			0.122
+			0.119
 			<!--BW_String-->
 		</still>
 		<camouflageBonus>
@@ -28,7 +28,7 @@
 			<!--BW_String-->
 		</camouflageBonus>
 		<firePenalty>
-			0.183
+			0.179
 			<!--BW_String-->
 		</firePenalty>
 	</invisibility>
@@ -752,12 +752,12 @@
 		<Chassis_Cz30_TBT>
 			<userString>#czech_vehicles:Chassis_Cz30_TBT</userString>
 			<tags/>
-			<level>8</level>
+			<level>9</level>
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
-				<leftTrack>30</leftTrack>
-				<rightTrack>30</rightTrack>
+				<leftTrack>20</leftTrack>
+				<rightTrack>20</rightTrack>
 			</armor>
 			<weight>12000</weight>
 			<terrainResistance>
@@ -2145,7 +2145,7 @@
 		<Turret_1_Cz30_TBT>
 			<userString>#czech_vehicles:Turret_1_Cz30_TBT</userString>
 			<tags/>
-			<level>8</level>
+			<level>9</level>
 			<price>60000</price>
 			<notInShop>true</notInShop>
 			<armor>
@@ -2314,7 +2314,7 @@
 						</maxPitch>
 					</pitchLimits>
 					<invisibilityFactorAtShot>
-						0.162
+						0.153
 						<!--BW_String-->
 					</invisibilityFactorAtShot>
 					<shotDispersionRadius>
@@ -3367,19 +3367,19 @@
 					<grounds>
 						<soft>
 							<rollingFriction>
-								0.18515
+								0.161
 								<!--BW_String-->
 							</rollingFriction>
 						</soft>
 						<medium>
 							<rollingFriction>
-								0.1127
+								0.0966
 								<!--BW_String-->
 							</rollingFriction>
 						</medium>
 						<firm>
 							<rollingFriction>
-								0.10465
+								0.0805
 								<!--BW_String-->
 							</rollingFriction>
 						</firm>

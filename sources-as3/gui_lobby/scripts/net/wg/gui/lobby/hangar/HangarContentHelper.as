@@ -85,12 +85,6 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.PRESTIGE_WIDGET:
                   this._hangar.removePrestigeWidget();
                   break;
-               case HANGAR_CONSTS.BR_PANELS:
-                  this._hangar.tryRemoveBattleRoyaleContainer();
-                  break;
-               case HANGAR_CONSTS.BATTLE_ROYALE_TOURNAMENT_BANNER:
-                  this._hangar.removeEventTournamentBanner(HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT_BANNER);
-                  break;
             }
          }
       }
@@ -150,12 +144,6 @@ package net.wg.gui.lobby.hangar
                   break;
                case HANGAR_CONSTS.PRESTIGE_WIDGET:
                   this._hangar.addPrestigeWidget();
-                  break;
-               case HANGAR_CONSTS.BR_PANELS:
-                  this._hangar.createBattleRoyaleComponents();
-                  break;
-               case HANGAR_CONSTS.BATTLE_ROYALE_TOURNAMENT_BANNER:
-                  this._hangar.addEventTournamentBanner(HANGAR_ALIASES.BATTLE_ROYALE_TOURNAMENT_BANNER);
                   break;
             }
          }

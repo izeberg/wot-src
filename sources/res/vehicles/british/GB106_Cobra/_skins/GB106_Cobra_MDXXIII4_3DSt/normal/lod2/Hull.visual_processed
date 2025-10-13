@@ -136,6 +136,10 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.000367 -0.043319 0.103554</groupOrigin>
 			</primitiveGroup>
@@ -177,6 +181,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB106_Cobra/_skins/GB106_Cobra_MDXXIII4_3DSt/Cobra_MDXXIII4_3DSt_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000093 0.244841 0.107317</groupOrigin>

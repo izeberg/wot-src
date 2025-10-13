@@ -1,0 +1,746 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: <plural forms>\n"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"You can customize the default event hotkey presets for Combat Abilities and shells.\n"
+"This change applies only to event battles and will not affect any other modes.\n"
+"You can still modify individual hotkeys in Menu — Settings — Controls (under Consumables)."
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "Consumable Hotkey Presets Change"
+
+msgid "badgeWidget/tooltipBody"
+msgstr ""
+"Complete current mission to receive a unique Babylon: Forbidden Zone badge:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "Epic Achievement Mission"
+
+msgid "bundleView/btn/keys"
+msgstr "Purchase"
+
+msgid "bundleView/btn/shop"
+msgstr "View in Store"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "MOBILIZE SENTINELS"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "GO ALL IN"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "CUSTOMIZE"
+
+msgid "bundleView/bundle/header/hw25bundle_keys"
+msgstr "PURCHASE KEYS"
+
+msgid "bundleView/bundle/serviceChannelMessages/hw25bundle_keys"
+msgstr "Keys purchased"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr ""
+"A special bundle to accelerate your progress through Babylon: Forbidden "
+"Zone."
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "An exclusive Babylon: Forbidden Zone offer for the ultimate bundle."
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr ""
+"3D styles and other elements that capture the atmosphere of the event."
+
+msgid "bundleView/bundle/subHeader/hw25bundle_keys"
+msgstr "Keys are used to decrypt or skip Records. One Key costs {cost} gold."
+
+msgid "bundleView/eventName"
+msgstr "Babylon Project"
+
+msgid "bundleView/reward/hw_artefact_key"
+msgstr "Decryption Keys (Bonus)"
+
+msgid "bundleView/subTitle"
+msgid_plural "plural/bundleView/subTitle"
+msgstr[0] "{key} MORE REQUIRED FOR RECORD {slide}"
+msgstr[1] "{key} MORE REQUIRED FOR RECORD {slide}"
+msgstr[2] "{key} MORE REQUIRED FOR RECORD {slide}"
+
+msgid "bundleView/title"
+msgstr "DECRYPTION KEYS"
+
+msgid "bundleView/title/default"
+msgstr "SELECT KEY PURCHASE METHOD"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "SELECT THE AMOUNT OF KEYS TO PURCHASE"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "SELECT AN EVENT BUNDLE"
+
+msgid "bundleView/tooltip/cerfToken/body"
+msgstr "A special event crew member of your choice with a voiceover."
+
+msgid "bundleView/tooltip/cerfToken/header"
+msgstr "Event crew member to select from"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr ""
+"The option to earn ×5 XP, starting from the second victory of the day in any"
+" vehicle."
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "Mission for ×5 to XP earned in battle"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "Set the number of Keys to decrypt or skip locked Records."
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "Keys to decrypt locked Records"
+
+msgid "carousel/card/inBattle"
+msgstr "In battle"
+
+msgid "carousel/card/inPlatoon"
+msgstr "In tactical unit"
+
+msgid "carousel/card/inQueue"
+msgstr "In Queue"
+
+msgid "carousel/card/locked"
+msgstr "Locked "
+
+msgid "carousel/daily/header"
+msgstr "Daily vehicle mission"
+
+msgid "common/back"
+msgstr "BACK"
+
+msgid "common/btnContinue"
+msgstr "CONTINUE"
+
+msgid "common/close"
+msgstr "CLOSE"
+
+msgid "common/progress"
+msgstr "{value} / {maxValue}"
+
+msgid "common/toEvent"
+msgstr "TO EVENT"
+
+msgid "common/toRewardPath"
+msgstr "TO REWARD PATH"
+
+msgid "common/yes"
+msgstr "AFFIRMATIVE!"
+
+msgid "comparisonWindow/categoryName/armour"
+msgstr ""
+"Durability\n"
+"(HP)"
+
+msgid "comparisonWindow/categoryName/damage"
+msgstr ""
+"Firepower\n"
+"(units)"
+
+msgid "comparisonWindow/categoryName/speed"
+msgstr ""
+"Top Speed\n"
+"(km/h)"
+
+msgid "comparisonWindow/tank/name/france_F17_AMX_13_90_Halloween_event"
+msgstr "Hornet"
+
+msgid "comparisonWindow/tank/name/italy_It19_Progetto_C50_mod_66_hw21"
+msgstr "Legio Ferrata"
+
+msgid "comparisonWindow/tank/name/uk_GB24_Centurion_Mk3_Halloween_event"
+msgstr "Cerberus"
+
+msgid "comparisonWindow/tank/name/usa_A100_T49_Halloween_event"
+msgstr "Grenadier"
+
+msgid "comparisonWindow/tank/name/ussr_R171_IS_3_II_hw21"
+msgstr "Double"
+
+msgid "comparisonWindow/tank/name/ussr_R40_T_54_Halloween_event"
+msgstr "Malachite"
+
+msgid "comparisonWindow/tank/ttcType/autoloader_2"
+msgstr "An HE gun featuring a&nbsp;2-shell autoreloading system"
+
+msgid "comparisonWindow/tank/ttcType/autoloader_4"
+msgstr "An improved 3-shell autoreloading system"
+
+msgid "comparisonWindow/tank/ttcType/crit_chance"
+msgstr "An increased chance to damage enemy vehicles' modules"
+
+msgid "comparisonWindow/tank/ttcType/crit_resistance"
+msgstr "Protection for your vehicle's&nbsp;modules"
+
+msgid "comparisonWindow/tank/ttcType/double_gun"
+msgstr "Double Gun System"
+
+msgid "comparisonWindow/tank/ttcType/magazine"
+msgstr "A&nbsp;5-shell&nbsp;magazine"
+
+msgid "comparisonWindow/title"
+msgstr "VEHICLE COMPARISON"
+
+msgid "crewShowcase/play"
+msgstr "Play"
+
+msgid "crewShowcase/status/inBaseReward"
+msgstr "In Base Rewards"
+
+msgid "crewShowcase/status/inShop"
+msgstr "In a special bundle"
+
+msgid "crewShowcase/status/received"
+msgstr "Received"
+
+msgid "crewShowcase/subTitle"
+msgstr "All crew members have enough Crew XP to train three perks to 100%."
+
+msgid "crewShowcase/title"
+msgstr "UNIQUE CREW MEMBERS"
+
+msgid "crewShowcase/viewInStore"
+msgstr "View in Store"
+
+msgid "decrypt/affirmative"
+msgstr "Affirmative!"
+
+msgid "decrypt/completed"
+msgstr "Objective completed. Rewards received:"
+
+msgid "decrypt/voiceover"
+msgstr "Voiceover"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr ""
+"Enables or disables voice narration on all screens with decrypted Records."
+
+msgid "difficult/disabled/body"
+msgstr ""
+"You are in a Platoon. Only the Commander can change the difficulty level."
+
+msgid "difficult/disabled/header"
+msgstr "Changing Difficulty Unavailable"
+
+msgid "difficult/level_1"
+msgstr "Normal"
+
+msgid "difficult/level_2"
+msgstr "Hard"
+
+msgid "difficult/level_3"
+msgstr "Nightmare"
+
+msgid "difficult/new"
+msgstr "NEW"
+
+msgid "difficult/tooltip/description/level1"
+msgstr ""
+"Enemies have lower durability and weaker armor. Standard battle reward."
+
+msgid "difficult/tooltip/description/level2"
+msgstr ""
+"Enemies have stronger armor, while the reward and the number of Keys earned "
+"per battle are increased."
+
+msgid "difficult/tooltip/description/level3"
+msgstr ""
+"There are more enemies with stronger armor. The reward and the number of "
+"Keys earned per battle are increased."
+
+msgid "difficult/tooltip/header/level1"
+msgstr "Normal"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "Hard"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "Nightmare"
+
+msgid "difficult/tooltip/locked"
+msgstr "Locked"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr ""
+"To unlock this difficulty level, defeat the boss on Normal difficulty."
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "To unlock this difficulty level, defeat the boss on Hard difficulty."
+
+msgid "difficult/tooltip/state/default"
+msgstr "Available"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "Selected"
+
+msgid "difficult/tooltip/subHeader/level1"
+msgstr "5 Objectives"
+
+msgid "difficult/tooltip/subHeader/level2"
+msgstr "5 Objectives"
+
+msgid "difficult/tooltip/subHeader/level3"
+msgstr "6 Objectives"
+
+msgid "difficult/uppercase/level_1"
+msgstr "NORMAL"
+
+msgid "difficult/uppercase/level_2"
+msgstr "HARD"
+
+msgid "difficult/uppercase/level_3"
+msgstr "NIGHTMARE"
+
+msgid "difficultyWindow/description/level_2"
+msgstr ""
+"Enemies have stronger armor, while the reward and the number of Keys earned "
+"per battle are increased."
+
+msgid "difficultyWindow/description/level_3"
+msgstr ""
+"There are more enemies with stronger armor. The reward and the number of "
+"Keys earned per battle are increased."
+
+msgid "difficultyWindow/header/level_2"
+msgstr "HARD DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "NIGHTMARE DIFFICULTY LEVEL"
+
+msgid "difficultyWindow/title"
+msgstr "AVAILABLE"
+
+msgid "hangar/about"
+msgstr "ABOUT EVENT"
+
+msgid "hangar/exit"
+msgstr "LEAVE EVENT"
+
+msgid "hangar/tooltipAbout"
+msgstr "Learn more about the Babylon: Forbidden Zone event."
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "COMBAT ABILITIES"
+
+msgid "headerButtons/battle/types/halloween"
+msgstr "Babylon: Forbidden Zone"
+
+msgid "iconButton/comparison/default"
+msgstr "Vehicle comparison"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "Vehicle comparison is unavailable"
+
+msgid "iconButton/preview/default"
+msgstr "Preview vehicle"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "Vehicle preview is unavailable"
+
+msgid "keyCard/name"
+msgstr "Decryption Keys"
+
+msgid "keys/get"
+msgstr "RECEIVE"
+
+msgid "kingRewardCongratsView/btn/garage"
+msgstr "View in Garage"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "To Story Conclusion"
+
+msgid "kingRewardCongratsView/header"
+msgstr "MAIN REWARD RECEIVED"
+
+msgid "kingRewardCongratsView/reward/crew100/value"
+msgstr "100%"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "Rewards:"
+
+msgid "kingRewardCongratsView/tankName"
+msgstr "{level}{icon}{userName}"
+
+msgid "kingRewardCongratsView/title"
+msgstr "FINAL OBJECTIVE COMPLETED"
+
+msgid "meta/btn/decrypt"
+msgstr "DECRYPT"
+
+msgid "meta/btn/skip"
+msgstr "SKIP"
+
+msgid "meta/btn/view"
+msgstr "VIEW"
+
+msgid "meta/receive/description"
+msgstr ""
+"Collect %(keys) / %(decrypt) %(icon)\n"
+"to decrypt this Record"
+
+msgid "meta/shortStory/hw_artefact_1"
+msgstr "Military photographer Alex Morgan enters the anomaly."
+
+msgid "meta/shortStory/hw_artefact_10"
+msgstr "Alex finds a German outpost with a huge tank."
+
+msgid "meta/shortStory/hw_artefact_11"
+msgstr "Alex decides to help the military."
+
+msgid "meta/shortStory/hw_artefact_12"
+msgstr "Too much time in the Anomaly causes Alex to have visions."
+
+msgid "meta/shortStory/hw_artefact_13"
+msgstr "Alex examines a giant tank."
+
+msgid "meta/shortStory/hw_artefact_14"
+msgstr ""
+"The military receives a message from Alex and learns that the attack will be"
+" over soon."
+
+msgid "meta/shortStory/hw_artefact_15"
+msgstr ""
+"Captain Smith ponders the fate of those who stay in the anomaly for too "
+"long."
+
+msgid "meta/shortStory/hw_artefact_16"
+msgstr "Alex takes her last photograph."
+
+msgid "meta/shortStory/hw_artefact_17"
+msgstr ""
+"TOP SECRET\n"
+"BABYLON SECURITY OFFICE\n"
+"FOR THE MILITARY COMMITTEE"
+
+msgid "meta/shortStory/hw_artefact_2"
+msgstr "Alex finds a ship hanging in the sky and deciphers a strange signal."
+
+msgid "meta/shortStory/hw_artefact_3"
+msgstr "Alex finds a \"stitched\" echo tank."
+
+msgid "meta/shortStory/hw_artefact_4"
+msgstr "Alex finds dosimeters inside Mirium crystals."
+
+msgid "meta/shortStory/hw_artefact_5"
+msgstr ""
+"Alex photographs an engagement between the military and echo tanks but gets "
+"too close to the battle."
+
+msgid "meta/shortStory/hw_artefact_6"
+msgstr ""
+"Alex needs to return to the evacuation zone, but instead decides to continue"
+" her investigation."
+
+msgid "meta/shortStory/hw_artefact_7"
+msgstr "The military disobeys orders and helps Alex."
+
+msgid "meta/shortStory/hw_artefact_8"
+msgstr "Alex enters the forbidden zone."
+
+msgid "meta/shortStory/hw_artefact_9"
+msgstr "Alex tries to comprehend the nature of Mirium."
+
+msgid "meta/story/hw_artefact_1"
+msgstr ""
+"{e9e2bfBold_open}Military photographer Alex Morgan enters the anomaly.{e9e2bfBold_close}{paragraph_open} {paragraph_close}The first entry into the anomaly. The dosimeter needle is in the green. I have teleported successfully.{paragraph_open} {paragraph_close}The first thing standing out is that there is nothing alive out here. It all looks like an inanimate echo copy of our world.{paragraph_open} {paragraph_close}The surroundings resemble the Babylon Research Center grounds. Except everything's been destroyed, either because of constant fighting or because this is how Mirium copies our world.{paragraph_open} {paragraph_close}I'm setting out to study the anomaly.{paragraph_open} {paragraph_close}Sure enough, it exists. The anomaly.{paragraph_open} {paragraph_close}I've got this weird sense of déjà vu. It's as if I've been here before.{paragraph_open} {paragraph_close}Everything in here looks just like the Ferryman told us.{paragraph_open} {paragraph_close}There's no time to waste—the dosimeter needle has already started to move. Mirium has begun to settle on my hazmat suit. I need to move.{paragraph_open} {paragraph_close}Get past the military. Stay away from echo tanks. Avoid the forbidden zone with unstable gravity. Easy as pie.{paragraph_open} {paragraph_close}Time to find out what the military is doing here and what it's hiding.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"When you first go into battle with a new tank, double-check that you have installed special equipment that provides Mirium abilities.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_10"
+msgstr ""
+"{e9e2bfBold_open}Alex finds a German outpost with a huge tank.{e9e2bfBold_close}{paragraph_open} {paragraph_close}I don't know how much time has passed since I entered the Anomaly. The needle is nearing the red. I'm getting a little woozy. It's hard to focus.{paragraph_open} {paragraph_close}There are well-arranged constructions around me. Whole, not distorted. They don't look like echo reflections. I can see an inscription that says, \"Vorposten: Stahlspross 23.\" It's a German military object.{paragraph_open} {paragraph_close}There's a... tank inside. Hanging on chains.{paragraph_open} {paragraph_close}So the rumors were true. The Germans used to build bases in the subspace.{paragraph_open} {paragraph_close}This tank on chains... Did the Germans build it? Is this the one the soldiers were talking about? An enemy that didn't exist before. With a giant autocannon.{paragraph_open} {paragraph_close}New attacks started when these vehicles appeared. Who controls them? There's no one here. Only the hanging tank. And Mirium dripping into it from the chains.{paragraph_open} {paragraph_close}But this Mirium is different. I haven't seen it before. It's darker and denser.{paragraph_open} {paragraph_close}Are they filling the tank with the dark Mirium to control it? This means the military is not fighting Mirium itself. But those who control it.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"When fighting the boss, use the special ammo picked up in phases, along with your vehicle's special perks, to deal more damage to the vulnerable spots in your enemy's armor.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_11"
+msgstr ""
+"{e9e2bfBold_open}Alex decides to help the military.{e9e2bfBold_close}{paragraph_open} {paragraph_close}How odd... Each turn, each hallway... I think I know what comes next. It's all Mirium. I need to hurry—the needle is in the red already.{paragraph_open} {paragraph_close}Everything is covered in dust, as if it stayed like that for a couple years and came alive just now.{paragraph_open} {paragraph_close}\"Autopanzer...\" Someone has activated the outpost and is sending these giant tanks into battle. The military doesn't know about this place. They think they're still fighting Mirium itself—the mystery substance. But it's actually just being used against us.{paragraph_open} {paragraph_close}The military, or at least the tankers, don't seem like bad guys now. Truth is, they're protecting us from the ones who built all this.{paragraph_open} {paragraph_close}I need to tell them about this outpost. Tell them there aren't many big tanks left here. And that it will be over soon if they manage to hold out.{paragraph_open} {paragraph_close}I need to get back. I'll just rest for a bit. Five minutes. Just five minutes, and I'll head back. Just five minutes...{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Hold together, but not too close to one another. Remember that a Trapper can appear at any moment. In which case, both of you will be in one big trap and may not manage to escape in time.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_12"
+msgstr ""
+"{e9e2bfBold_open}Too much time in the Anomaly causes Alex to have visions.{e9e2bfBold_close}{paragraph_open} {paragraph_close}The Dark Tower. A nightmare I've been having since I was a kid. But I never noticed that this light flickered in a pattern. Dash-dash-dot.{paragraph_open} {paragraph_close}\"G R E T C H E N, come home.\"{paragraph_open} {paragraph_close}No. That's not possible. It can't be the same Dark Tower the Ferryman talked about. The German base where thousands of tanks are stored, ready to invade. Is this where the outpost was activated from?{paragraph_open} {paragraph_close}Nonsense. I couldn't have possibly had this dream as a kid. I couldn't have known about the Dark Tower. It's all Mirium. It's in my head. I dreamed about something else.{paragraph_open} {paragraph_close}I have to wake up! I have to get out of here! Go home... It's time to go home.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"If you have Energy Shield, use it only as a last resort—if your hit points are low or before an encounter with a Hedgehog.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_13"
+msgstr ""
+"{e9e2bfBold_open}Alex examines a giant tank.{e9e2bfBold_close}{paragraph_open} {paragraph_close}I fell asleep! Damn it!{paragraph_open} {paragraph_close}The tank! Another one has been filled with dark Mirium and fallen from its chains.{paragraph_open} {paragraph_close}It's even scarier up close. A dark substance is oozing from every seam. And the smell... It's metallic. Like blood, but with a whiff of something else... An eerie blend of human technology and Mirium echo.{paragraph_open} {paragraph_close}One last photo. I have to go.{paragraph_open} {paragraph_close}The needle is nearing the purple already! How do I get out? Maybe the tankers can help? I need to contact them, pass on the message.{paragraph_open} {paragraph_close}But how? How do I do it? They won't go into the forbidden zone.{paragraph_open} {paragraph_close}Echo! Mirium will help me!{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"The collector on your vehicle can fit 120 units of Mirium. As soon as you gather enough, remember your vehicle's special abilities. There is no use hoarding Mirium—use it to gain advantage in battle and complete your objectives faster.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_14"
+msgstr ""
+"{e9e2bfBold_open}The military receives a message from Alex and learns that the attack will be over soon.{e9e2bfBold_close}{paragraph_open} {paragraph_close}I thought nothing could surprise me anymore. She's alive. And she's left a message for us. It appeared in all of the phases. It looks like she studied Mirium. Learned to use its ability to create echo copies and send us a message from the forbidden zone. How did she get there, and how did she survive?{paragraph_open} {paragraph_close}Can she be believed? We have a direct order not to enter the forbidden zone. We need to report this and request a rescue mission. And it'd be swell if that fop from the Security Office didn't find out.{paragraph_open} {paragraph_close}In the meantime all we can do is keep fighting. Sooner or later we'll see the end of these tanks. Turns out we're fighting not Mirium itself but those who've already tried to break out from the depths. Those who are hiding in the Dark Tower. Looks like they won't leave us alone until we've dealt with them once and for all.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"When fighting the boss, focus your fire in the correct sequence: Hedgehogs, Trappers, echo tanks, and only then the boss.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_15"
+msgstr ""
+"{e9e2bfBold_open}Captain Smith ponders the fate of those who stay in the anomaly for too long.{e9e2bfBold_close}{paragraph_open} {paragraph_close}Everyone who enters the anomaly gets a dosimeter—a compact device with a dial and a needle. Green range—everything's fine. Yellow—you should make haste. Red—time to get out of there. And purple...{paragraph_open} {paragraph_close}If the needle reaches the purple range, you won't see home again. You will become one of the Lost. You will roam the phases, attacking all living things that get in your way.{paragraph_open} {paragraph_close}The tank holds up against Mirium, but cannot stop it completely. That stuff can even seep through armor. Slow but steady.{paragraph_open} {paragraph_close}We all know the rules. You keep your eyes on the needle. You don't stay in a phase longer than you should. You come back home alive and well.{paragraph_open} {paragraph_close}Why did you go there, Alex? Why couldn't you stay put? The information you sent will help us, but at what cost? How long has it been since you left us a message?{paragraph_open} {paragraph_close}Are you still with us? Or have you become one of them?{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"When the boss activates Haste, expect brutal ramming attacks. Don't count on your Energy Shield—dodge or get flattened. Turbocharger will be a lifesaver.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_16"
+msgstr ""
+"{e9e2bfBold_open}Alex takes her last "
+"photograph.{e9e2bfBold_close}{paragraph_open} {paragraph_close}Purple range."
+" I didn't make it in time.{paragraph_open} {paragraph_close}This suit is "
+"pointless now. Mirium is in my system. The weird thing is, I'm not scared "
+"anymore.{paragraph_open} {paragraph_close}I'm Alex Morgan, and this is my "
+"last photo.{paragraph_open} {paragraph_close}Mirium is already playing "
+"tricks on my mind. I think I recognize Morse code again. Dash-dot-dash. Komm"
+" zurück nach Hause.{paragraph_open} {paragraph_close}Teleport! The same "
+"transportation device the Ferryman used to send me over "
+"here!{paragraph_open} {paragraph_close}But how? How did it end up here, in "
+"the forbidden zone? This can't be a coincidence. Someone knew I'd come here."
+" They knew I would enter the forbidden zone and start searching for a way "
+"out.{paragraph_open} {paragraph_close}It was the Ferryman. He was the one "
+"behind all this. But why? I'll figure it out once I'm back.{paragraph_open} "
+"{paragraph_close}Komm zurück nach Hause. I'm coming home."
+
+msgid "meta/story/hw_artefact_17"
+msgstr ""
+"TOP SECRET\n"
+"BABYLON SECURITY OFFICE\n"
+"FOR THE MILITARY COMMITTEE{paragraph_open} {paragraph_close}I am reporting that Operation Ishtar has been completed successfully. Object 71 has reached the designated point and activated the German Teleport.{paragraph_open} {paragraph_close}There is a high probability that the Object is that same Gretchen, the daughter of General von Eckhardt. She survived, and the device has transported her to a phase we have not yet been to.{paragraph_open} {paragraph_close}The tracker built into her dosimeter has been activated and is transmitting her precise coordinates. We assume that she has \"returned home\" and is in the Dark Tower phase.{paragraph_open} {paragraph_close}I am requesting authorization to launch the next operation and initiate preparations for a tank landing force to conduct an assault on the Dark Tower.{paragraph_open} {paragraph_close}According to our intelligence, the technology referenced in the Architect's satellite encryptions is stored at that location.{paragraph_open} {paragraph_close}Also reporting: on the day of Object 71's transition, Captain Smith discovered a frozen object in the third phase. After thawing, it was identified as one of the previously lost tanks. The means of its relocation and the reasons for cryostasis are currently unknown. It may be related to an alternative method of phase transition. The investigation is ongoing.{paragraph_open} {paragraph_close}Submitted for your review, L.\n"
+"Babylon Head of Security"
+
+msgid "meta/story/hw_artefact_2"
+msgstr ""
+"{e9e2bfBold_open}Alex finds a ship hanging in the sky and deciphers a strange signal.{e9e2bfBold_close}{paragraph_open} {paragraph_close}Time: 36 minutes after entry into the anomaly The dosimeter needle is in the green.{paragraph_open} {paragraph_close}The main deck is covered with Mirium dust. It's sparkling in the light of a signal lamp, which is still working. The lamp's flashing in a rhythm. Looks like the Morse code.{paragraph_open} {paragraph_close}What's the message? K-O-M... Komm zurück nach Hause. It's German, but broken German. \"Come back home.\"{paragraph_open} {paragraph_close}Come back home? Me? No one except for the Ferryman knows I'm here. Has the military detected me? Or is it Mirium speaking to all of us down here? Asking us to go away?{paragraph_open} {paragraph_close}Alex, get a grip! If anyone's trying to scare me off, I need to go further.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Use the tactical map and coordinate your actions. Mark the point you are heading to so that the platoon moves with you. Or proceed to a position chosen by another commander. Always stick together.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_3"
+msgstr ""
+"{e9e2bfBold_open}Alex finds a \"stitched\" echo tank.{e9e2bfBold_close}{paragraph_open} {paragraph_close}Time: 1 hour 12 minutes after entry into... The dosimeter needle...{paragraph_open} {paragraph_close}Damn it! Damn it! It almost killed me! Why did I even go there?!{paragraph_open} {paragraph_close}All I had to do was take a photo from a distance and leave. I'm an observer. I shouldn't have gotten myself involved. It's just a tank. It's not alive... But it was trying so desperately to get out. While being slowly sucked into those massive millstones.{paragraph_open} {paragraph_close}It looked like the victim of some heinous experiment. With that scar through its center. Stitched back up with chains. It got stuck and couldn't get out.{paragraph_open} {paragraph_close}The whole thing looked like it had been staged. A helpless victim about to be ground up by huge millstones. And those metal cables nearby. As if someone was testing whether I would help it. All I needed to do was to slide the cable through the loops on its armor.{paragraph_open} {paragraph_close}\"Stay away from echo tanks.\" Damn it. It could have crushed me.{paragraph_open} {paragraph_close}What is going on out here? Is it the military grinding down tanks? Or is it someone else?{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Do not attempt to destroy the Immortal. Do not waste your time and ammo. We will find a way to neutralize it again. In the meantime, do not stand still. Move. Do not let yourself get cornered.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_4"
+msgstr ""
+"{e9e2bfBold_open}Alex finds dosimeters inside Mirium crystals.{e9e2bfBold_close}{paragraph_open} {paragraph_close}Time: 2 hours 18 minutes after entry into the anomaly. The dosimeter needle is getting closer to the yellow. I'm feeling good. My mind is clear.{paragraph_open} {paragraph_close}But this déjà vu again... I feel like I've been here before. It's not just déjà vu—it's something stronger. Like a memory I'm struggling to recall. Could it be a Mirium effect? Maybe it not only creates echo copies of our world, but also distorts reality to feel... like our own?{paragraph_open} {paragraph_close}Everything looks familiar. Except for those Mirium crystals. How do they appear? Do they grow out of the ground? Or form around objects? There seems to be something inside.{paragraph_open} {paragraph_close}Dosimeters?{paragraph_open} {paragraph_close}How many of them are there? Dozens, hundreds. They look just like mine. Each one has the needle in the purple range. This means I'm not the first. How many people has the Ferryman sent here before me? And where are they now? He's clearly hiding something.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Always stick together. Remember: when you break away from the platoon and go to another point alone, you provoke the echo tanks. Once your vehicle is destroyed, they will start attacking your allies from behind. Do not jeopardize your mission.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_5"
+msgstr ""
+"{e9e2bfBold_open}Alex photographs an engagement between the military and echo tanks but gets too close to the battle.{e9e2bfBold_close}{paragraph_open} {paragraph_close}3 hours 42 minutes after entry into the anomaly. The dosimeter needle is in the yellow. I need to wrap it up and get back to the evacuation zone.{paragraph_open} {paragraph_close}I made it to Magnus. A massive structure at the center of the anomaly, just like at the Babylon. Only it's not distorted by the Mirium echo.{paragraph_open} {paragraph_close}Military tanks are approaching. I'll take some photos of the fight and come back. There's too much to think about.{paragraph_open} {paragraph_close}Unbelievable. Echo tanks... they're just appearing out of thin air! Mirium is getting thicker, taking shape, and now there's a battle-ready tank standing right here.{paragraph_open} {paragraph_close}The ones that get hit just \"spill out.\" Mirium appears to be taking the material back to create new vehicles. So it's an endless cycle?{paragraph_open} {paragraph_close}How do we defeat them if they keep appearing time and again?{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Do not only rely on your tank's armor. Seek cover and hide your vulnerable areas. It's trite advice, but many do forget about it in the anomaly. Perhaps due to how Mirium affects our minds.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_6"
+msgstr ""
+"{e9e2bfBold_open}Alex needs to return to the evacuation zone, but instead decides to continue her investigation.{e9e2bfBold_close}{paragraph_open} {paragraph_close}They fired at me. A military tank fired in my direction.{paragraph_open} {paragraph_close}Time... Damn it! My watch is broken. I don't know how long I was out.{paragraph_open} {paragraph_close}There's vehicle debris everywhere... Some of it looks like it's been here for years.{paragraph_open} {paragraph_close}What's this all for? So many casualties...{paragraph_open} {paragraph_close}The Ferryman said that the military is protecting Babylon and the entire world, but it looks more like an invasion or a landgrab.{paragraph_open} {paragraph_close}Why did the military fire at me? A warning? For me to stay away from Magnus?{paragraph_open} {paragraph_close}The dosimeter needle is in the yellow. I have to get back to the Teleport.{paragraph_open} {paragraph_close}The military is gathering around Magnus. Getting ready to move into the next phase. I won't be coming here again....{paragraph_open} {paragraph_close}What are you hiding? Why do you keep going into that damn anomaly? You don't want me anywhere near Magnus? Well, you can go to hell! I'll find out what you're hiding out there.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Mark the vehicles you are going to attack to coordinate fire and prompt your allies to focus on one enemy. Amass a local firepower advantage.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_7"
+msgstr ""
+"{e9e2bfBold_open}The military disobeys orders and helps Alex.{e9e2bfBold_close}{paragraph_open} {paragraph_close}FERRYMAN: You disobeyed the order, Captain.{paragraph_open} {paragraph_close}SMITH: An echo tank appeared behind his back! I couldn't just stand by and watch!{paragraph_open} {paragraph_close}FERRYMAN: You jeopardized the entire operation.{paragraph_open} {paragraph_close}SMITH: I have to protect my people!{paragraph_open} {paragraph_close}FERRYMAN: Your people?{paragraph_open} {paragraph_close}SMITH: He's one of us! Who else could enter the Anomaly? It's not some tourist with a camera.{paragraph_open} {paragraph_close}FERRYMAN: She has her own role, Captain.{paragraph_open} {paragraph_close}SMITH: She?! It's a she? Who is she, anyway?{paragraph_open} {paragraph_close}FERRYMAN: What happened next?{paragraph_open} {paragraph_close}SMITH: She entered the Magnus zone. But she wasn't with us after the transfer. No one has seen her since.{paragraph_open} {paragraph_close}FERRYMAN: I see. You'll receive new instructions tonight, Captain.{paragraph_open} {paragraph_close}...{paragraph_open} {paragraph_close}SMITH: This damned security office with its scheming. If you were there with us, we'd see how you'd do.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Keep an eye on the allied vehicles' hit points. If you have Group Repairs, restore hit points to the damaged platoon members. Even one lost vehicle jeopardizes the entire mission.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_8"
+msgstr ""
+"{e9e2bfBold_open}Alex enters the forbidden zone.{e9e2bfBold_close}{paragraph_open} {paragraph_close}Moving to a new phase feels different with the help of Magnus. Time... Ah, damn it. The dosimeter needle is in the middle of the yellow range. I need to hurry.{paragraph_open} {paragraph_close}I'm near the... I have no idea where I am. Everything is different here. There's nothing like this at Babylon. Am I outside the Magnus safe zone? Am I in the forbidden zone?{paragraph_open} {paragraph_close}But I'm fine. No unstable gravity, no splitting into atoms. It was all lies. Command forbids detachments to drive in here not for safety reasons, but to hide something. To stop tankers from seeing something they shouldn't.{paragraph_open} {paragraph_close}Like this...{paragraph_open} {paragraph_close}What's going on here? Is Mirium doing this to them? Or... not. Looks more like another echo. A reflection. As if people were experimenting on vehicles. Disassembling them. Tearing them apart. And Mirium just copied that. Distorted it.{paragraph_open} {paragraph_close}Mirium, what are you?{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Remember: when moving to a new phase, the Anomaly affects the crew and you receive random enhancements. Study them and change your tactics with the new options in mind.\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_9"
+msgstr ""
+"{e9e2bfBold_open}Alex tries to comprehend the nature of Mirium.{e9e2bfBold_close}{paragraph_open} {paragraph_close}\"Eris, uta, fracht, zue, Nur petre an wiede rue?\" This counting rhyme is stuck in my brain even though I only heard it once. The same child's voice on the radio that the military mentioned. They call it Gretchen, the ghost of the Anomaly. Why am I repeating it again and again? As if I've heard it before. Is Mirium seeping inside me already?{paragraph_open} {paragraph_close}No one knows what Mirium really is. The Ferryman said that some believe it to be sentient—as in it wants to conquer our world. Others think it just wants to get back to its own dimension and is seeping through our world on its way home.{paragraph_open} {paragraph_close}But the longer I stay here, the more I believe that I understand Mirium. It doesn't \"want\" anything. It just reflects things. Distorts them. Like a funhouse mirror.{paragraph_open} {paragraph_close}But people really do always want something. German troops, Babylon engineers, the military, the Ferryman—they're all trying to use Mirium, control it, turn it into a weapon or a tool.{paragraph_open} {paragraph_close}But without much success.{paragraph_open} {paragraph_close}The dosimeter needle is past the middle of the yellow range now. I need to find out what's hidden in this forbidden zone and get back.{paragraph_open} {paragraph_close}{AC8FFFBold_open}From the manual:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"Turbocharger does not use Mirium to activate. However, it has a cooldown period. Use Turbocharger when absolutely necessary: to get away from the Hedgehog, dodge the Charger, jump out of the Immortal's aura, or dash to Magnus when everyone is ready to teleport.\"{AC8FFF_close}"
+
+msgid "metaCmp/completed"
+msgstr "%(icon) Reward received"
+
+msgid "metaCmp/name"
+msgstr "REWARD PATH"
+
+msgid "metaIntro/description/fight"
+msgstr ""
+"Fight in event battles and earn Decryption Keys to progress through "
+"Objectives toward the main event reward."
+
+msgid "metaIntro/description/progress"
+msgstr "Decrypt all Records using Decryption Keys earned in event battles."
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"Complete all Objectives and decrypt all Records to receive the main event "
+"reward—the unique {whiteSpanish_Start}%(tankName)s{whiteSpanish_End}. Tier "
+"%(level)s Premium heavy tank."
+
+msgid "metaIntro/header/fight"
+msgstr "Battle Raids"
+
+msgid "metaIntro/header/progress"
+msgstr "Decrypting Records"
+
+msgid "metaIntro/header/reward"
+msgstr "Unique Rewards"
+
+msgid "metaIntro/title"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "missionWidget/complete"
+msgstr ""
+"Mission complete.\n"
+"Come back tomorrow."
+
+msgid "missionWidget/tooltipBody"
+msgstr ""
+"Complete current Daily Mission which is available every 24 h to receive the "
+"reward. Today's mission:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "Daily Mission"
+
+msgid "preBattle/leave"
+msgstr "Exit Battle"
+
+msgid "preBattle/searching"
+msgstr "SEARCHING FOR ALLIES..."
+
+msgid "preBattle/tip"
+msgstr ""
+"Taking too long to find a Recon Squad? Try changing the difficulty level."
+
+msgid "preBattle/uppercase/leave"
+msgstr "EXIT BATTLE"
+
+msgid "promoWindow/btn"
+msgstr "AFFIRMATIVE!"
+
+msgid "promoWindow/header"
+msgstr "PLAY BABYLON: FORBIDDEN ZONE"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"Explore this special new PvE game mode {dateRange}.\n"
+"Complete {regularArtefactsLength} Objectives to earn an exclusive vehicle."
+
+msgid "reward/rest"
+msgstr "And %(count)s more"
+
+msgid "rewardPath/about"
+msgstr "ABOUT OBJECTIVES"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "Learn more about the event"
+
+msgid "rewardPath/completed"
+msgstr "Main reward received"
+
+msgid "rewardPath/crewMembers"
+msgstr ""
+"CREW\n"
+"MEMBERS"
+
+msgid "rewardPath/crewMembersTooltip"
+msgstr "Click to see all event crew members."
+
+msgid "rewardPath/description"
+msgstr "Decrypt %(count)s more Records to reach the main reward"
+
+msgid "rewardPath/intro"
+msgstr "INTRODUCTION"
+
+msgid "rewardPath/introTooltip"
+msgstr "Watch the introductory video"
+
+msgid "rewardPath/premium"
+msgstr "Premium Tank"
+
+msgid "rewardPath/title"
+msgstr "REWARD PATH"
+
+msgid "rewardPathCard/name"
+msgstr "Reward Path"
+
+msgid "rewardSelection/button"
+msgstr "CLAIM REWARD"
+
+msgid "rewardSelection/crew"
+msgstr "Crew Members"
+
+msgid "rewardSelection/limit"
+msgstr "Limit Reached"
+
+msgid "rewardSelection/limitTooltip"
+msgstr ""
+"You have reached the maximum amount. Deselect a crew member to change your "
+"selection."
+
+msgid "rewardSelection/title"
+msgstr "SELECT YOUR REWARD"
+
+msgid "shopCard/name"
+msgstr "Event Bundles"
+
+msgid "shopCmp/name"
+msgstr "Event Bundles"
+
+msgid "squad/goToAnother/cancel"
+msgstr "Cancel"
+
+msgid "squad/goToAnother/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/goToAnother/submit"
+msgstr "Leave"
+
+msgid "squad/goToAnother/title"
+msgstr "Leave the Babylon: Forbidden Zone event?"
+
+msgid "squad/leave/cancel"
+msgstr "Cancel"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "Affirmative!"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "The Babylon: Forbidden Zone event has ended"
+
+msgid "squad/leave/message"
+msgstr "The Platoon will be dismissed."
+
+msgid "squad/leave/submit"
+msgstr "Leave"
+
+msgid "squad/leave/title"
+msgstr "Leave the Babylon: Forbidden Zone Platoon?"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "Continue"
+
+msgid "squad/leaveDisabled/message"
+msgstr "You are in the Platoon and ready for battle."
+
+msgid "squad/leaveDisabled/title"
+msgstr "You cannot leave the Platoon!"
+
+msgid "vehicle/rent/label"
+msgstr ""
+"Complete {cream_open}Objective %(number)s{cream_close} or purchase an "
+"{cream_open}event bundle{cream_close} to gain access to this vehicle."
+
+msgid "vehicle/rent/packs"
+msgstr "To Event Bundle"
+
+msgid "vehicle/rent/tasks"
+msgstr "To Objective"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"Complete the current task ({cream_open}Objective %(number)s{cream_close}) or"
+" purchase an {cream_open}event bundle{cream_close} to gain access to this "
+"vehicle."

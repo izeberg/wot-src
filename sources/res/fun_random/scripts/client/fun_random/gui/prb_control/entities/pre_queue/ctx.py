@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants import QUEUE_TYPE
 from gui.prb_control.entities.base.pre_queue.ctx import QueueCtx, JoinPreQueueModeCtx
 from gui.prb_control.settings import FUNCTIONAL_FLAG

@@ -211,6 +211,9 @@ msgstr "SHB-1-2"
 msgid "Chassis_J42_Chi_Se"
 msgstr "Chi-Se"
 
+msgid "Chassis_J42_Chi_Se_CFE_A"
+msgstr "Stitch"
+
 msgid "Chassis_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -231,6 +234,9 @@ msgstr "Type Mitsu 108"
 
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
+
+msgid "Chassis_J51_Ashigaru"
+msgstr "Ashigaru"
 
 msgid "Chassis_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
@@ -288,6 +294,9 @@ msgstr "Chi-Nu Kai"
 
 msgid "Chi_Nu_Kai_short_special"
 msgstr "High accuracy, penetration and good armoring of the gun mantlet"
+
+msgid "Continental_AOSI_1195_6"
+msgstr "Continental AOSI-1195-6"
 
 msgid "Edelweiss_Engine"
 msgstr "Edelweiss"
@@ -892,6 +901,33 @@ msgstr "Type 68"
 msgid "J42_Chi_Se"
 msgstr "Chi-Se"
 
+msgid "J42_Chi_Se_CFE_A"
+msgstr "Stitch"
+
+msgid "J42_Chi_Se_CFE_A_descr"
+msgstr ""
+"The past has been torn apart. The unnecessary has been extracted. The truth has been forged. The stitches are your only memory.\n"
+"\n"
+"\"Charging to Magnus with our collector ripped off was a bad idea. But we had no choice—leaping into the unknown still beats staying behind to roam the swept phase forever, like some headless horseman. So we jumped. For better or worse, I can't say. But we survived. Our coordinates are untraceable. We've lost all connection. Magnus' location is unrecorded.\n"
+"\n"
+"...And now there's a crowd outside—running around in gas masks, muttering that gibberish of theirs, and doing all they can to pry us out of here. Humans, in the Mirium zone?! No way that means anything good. We've sealed all the hatches tight.\n"
+"\n"
+"...I'm liking it less and less here. I don't even know why. Maybe it's the chanting from the folks outside. Or that massive contraption with hooks on chains that our tank is attached to. Or maybe it's the black goo dripping from every direction...\""
+
+msgid "J42_Chi_Se_CFE_A_long_special"
+msgstr ""
+"The Stitch is a Tier VIII Japanese heavy tank. It has good mobility for a "
+"heavy and decent armor. Its gun is very versatile, with a decent combination"
+" of accuracy, DPM, and penetration. The main feature of this tank is its "
+"excellent gun depression angles, allowing it to play from a wide variety of "
+"positions."
+
+msgid "J42_Chi_Se_CFE_A_short"
+msgstr "Stitch"
+
+msgid "J42_Chi_Se_CFE_A_short_special"
+msgstr "Excellent gun depression, good mobility"
+
 msgid "J42_Chi_Se_descr"
 msgstr ""
 "In 1943, a delegation of Imperial Japanese Army representatives attended a "
@@ -986,6 +1022,30 @@ msgstr "Ho-Ni II"
 msgid "J50_Type_1_Ho_Ni_II_short_special"
 msgstr "Huge damage per shot, sufficient mobility"
 
+msgid "J51_Ashigaru"
+msgstr "Ashigaru"
+
+msgid "J51_Ashigaru_descr"
+msgstr ""
+"A Japanese project for a wheeled self-propelled gun, developed for high "
+"maneuverability and the ability to quickly change firing positions. The "
+"design features included an integrated air-cooling system for the gun "
+"barrel, which was supposed to stabilize temperature conditions during "
+"intense firing."
+
+msgid "J51_Ashigaru_long_special"
+msgstr ""
+"The Ashigaru is a Tier X Japanese wheeled tank destroyer equipped with a "
+"highly versatile gun, good mobility, and strong maneuverability. Its double "
+"aiming system further enhances its already impressive accuracy, giving it "
+"surgical precision on the battlefield."
+
+msgid "J51_Ashigaru_short"
+msgstr "Ashigaru"
+
+msgid "J51_Ashigaru_short_special"
+msgstr "Good mobility, versatile gun with double aiming system"
+
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
 
@@ -997,6 +1057,9 @@ msgstr "JAN/GRC-3Z"
 
 msgid "JAN-GRC-4Z"
 msgstr "JAN/GRC-4Z"
+
+msgid "JAN_GRC_3Z_A"
+msgstr "JAN/GRC-3Z A"
 
 msgid "Kawasaki_Ha_60_LB"
 msgstr "Kawasaki Ha-60-lb"
@@ -1259,6 +1322,9 @@ msgstr "SHB-1"
 msgid "Turret_1_J42_Chi_Se"
 msgstr "Chi-Se"
 
+msgid "Turret_1_J42_Chi_Se_CFE_A"
+msgstr "Stitch"
+
 msgid "Turret_1_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -1270,6 +1336,9 @@ msgstr "Mitsu 75"
 
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
+
+msgid "Turret_1_J51_Ashigaru"
+msgstr "Ashigaru"
 
 msgid "Turret_1_Ke_Ho"
 msgstr "Type 5 Ke-Ho"
@@ -1355,6 +1424,9 @@ msgstr "APDS Common Type 68 (57)"
 msgid "_105mm_APCR_M68"
 msgstr "APDS Common Type 68"
 
+msgid "_105mm_APCR_Type_52_A"
+msgstr "APCR Type 52A"
+
 msgid "_105mm_APHE_Type95"
 msgstr "APHE Type 95"
 
@@ -1396,6 +1468,9 @@ msgstr "M392XC"
 
 msgid "_105mm_AP_Type_1_Ni"
 msgstr "AP Type 1 Ni"
+
+msgid "_105mm_AP_Type_52_A"
+msgstr "AP Type 52A"
 
 msgid "_105mm_AP_Type_92"
 msgstr "Type 92 AP"
@@ -1442,6 +1517,9 @@ msgstr "10 cm Experimental Tank Gun Kai"
 msgid "_105mm_Gun_Shin"
 msgstr "10.5 cm Gun Shin"
 
+msgid "_105mm_Gun_Type_52"
+msgstr "105 mm Gun Type 52"
+
 msgid "_105mm_Gun_Type_91"
 msgstr "10.5 cm Gun Type 91"
 
@@ -1477,6 +1555,9 @@ msgstr "HE Type 93"
 
 msgid "_105mm_HE_Type_1_Ni"
 msgstr "HE Type 1 Ni"
+
+msgid "_105mm_HE_Type_52_A"
+msgstr "HE Type 52A"
 
 msgid "_105mm_HE_Type_92"
 msgstr "HE Type 92A"

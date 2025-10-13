@@ -448,6 +448,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixing;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingAccuracyGun;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingChargeGun;
+   import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingChargeableBurst;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingDualGun;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingDualGunSniper;
    import net.wg.gui.components.crosshairPanel.components.gunMarker.GunMarkerMixingSolid;
@@ -1784,6 +1785,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXING:Class = GunMarkerMixing;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGACCURACYGUN:Class = GunMarkerMixingAccuracyGun;
+      
+      public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGCHARGEABLEBURST:Class = GunMarkerMixingChargeableBurst;
       
       public static const NET_WG_GUI_COMPONENTS_CROSSHAIRPANEL_COMPONENTS_GUNMARKER_GUNMARKERMIXINGCHARGEGUN:Class = GunMarkerMixingChargeGun;
       

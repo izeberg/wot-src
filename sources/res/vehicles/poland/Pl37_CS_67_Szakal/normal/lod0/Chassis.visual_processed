@@ -1396,6 +1396,14 @@
 						g_useNormalPackDXT1
 						<Bool>false</Bool>
 					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.320004 0.575484 -0.054941</groupOrigin>
 			</primitiveGroup>
@@ -1490,6 +1498,14 @@
 					</property>
 					<property>
 						g_useNormalPackDXT1
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
 						<Bool>false</Bool>
 					</property>
 				</material>
@@ -1626,8 +1642,12 @@
 						<Float>0.225461</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.241720 0.602881 -0.027742</groupOrigin>
@@ -1763,8 +1783,12 @@
 						<Float>0.225461</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
 					</property>
 				</material>
 				<groupOrigin>1.241720 0.602881 -0.027742</groupOrigin>

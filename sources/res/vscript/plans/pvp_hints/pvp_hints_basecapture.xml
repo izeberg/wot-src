@@ -932,14 +932,14 @@
 				</slots>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_59</id>
+				<class>CanShowHint</class>
+				<id>CanShowHint_9</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>CanShowHint</class>
-				<id>CanShowHint_9</id>
+				<class>If</class>
+				<id>If_59</id>
 				<params/>
 				<slots/>
 			</block>
@@ -1672,6 +1672,18 @@
 				</slots>
 			</block>
 			<block>
+				<class>And</class>
+				<id>And_37</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_5</id>
 				<params>
@@ -1691,18 +1703,6 @@
 						<const>\true\</const>
 					</slot>
 				</slots>
-			</block>
-			<block>
-				<class>And</class>
-				<id>And_37</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVariable</class>
@@ -1836,6 +1836,60 @@
 				</slots>
 			</block>
 			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_31</id>
+				<buddy>Variable_21</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVehicleTransform</class>
+				<id>GetVehicleTransform_2</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>VectorLength</class>
+				<id>VectorLength_3</id>
+				<params>
+					<param>
+						Vector3T
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareFloats</class>
+				<id>CompareFloats_16</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\350.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>SubtractVector</class>
+				<id>SubtractVector_4</id>
+				<params>
+					<param>
+						Vector3T
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_6</id>
 				<params/>
@@ -1855,50 +1909,60 @@
 			</block>
 			<block>
 				<class>If</class>
-				<id>If_12</id>
+				<id>If_63</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>OnPlayerVehicleDetectEnemy</class>
+				<id>OnPlayerVehicleDetectEnemy_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVehicleTransform</class>
+				<id>GetVehicleTransform_3</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>Constant</class>
+				<id>Constant_1</id>
+				<params>
+					<param>
+						BoolT
+						<name>Value Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>value</name>
+						<const>\false\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_64</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_65</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>OnAnyVehicleDamaged</class>
-				<id>OnAnyVehicleDamaged_2</id>
+				<id>OnAnyVehicleDamaged_1</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>IsVehicleValid</class>
-				<id>IsVehicleValid_3</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_31</id>
-				<buddy>Variable_21</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_19</id>
+				<id>IsVehicleValid_6</id>
 				<params/>
 				<slots/>
 			</block>
@@ -1909,34 +1973,28 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_19</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_1</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
 				<class>GetVariable</class>
-				<id>GetVariable_95</id>
-				<buddy>Variable_48</buddy>
+				<id>GetVariable_102</id>
+				<buddy>Variable_21</buddy>
 				<params>
 					<param>
-						BoolT
+						VehicleT
 						<name>Variable Type</name>
 						<type>TypeT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>And</class>
-				<id>And_36</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>CanShowHint</class>
-				<id>CanShowHint_35</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -1979,20 +2037,14 @@
 				</slots>
 			</block>
 			<block>
-				<class>SelectHint</class>
-				<id>SelectHint_3</id>
-				<params>
-					<param>
-						newbie.newbie.PPH_BASE_CAPTURE_04
-						<name>scope, hintId</name>
-						<type>StringT</type>
-					</param>
-				</params>
+				<class>OnPlayerVehicleDeviceCrit</class>
+				<id>OnPlayerVehicleDeviceCrit_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>OnPlayerVehicleDeviceCrit</class>
-				<id>OnPlayerVehicleDeviceCrit_1</id>
+				<class>CanShowHint</class>
+				<id>CanShowHint_35</id>
 				<params/>
 				<slots/>
 			</block>
@@ -2033,14 +2085,13 @@
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_4</id>
-				<buddy>Variable_20</buddy>
+				<class>SelectHint</class>
+				<id>SelectHint_3</id>
 				<params>
 					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
+						newbie.newbie.PPH_BASE_CAPTURE_04
+						<name>scope, hintId</name>
+						<type>StringT</type>
 					</param>
 				</params>
 				<slots/>
@@ -2053,6 +2104,19 @@
 						2
 						<name>Input Count</name>
 						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_4</id>
+				<buddy>Variable_20</buddy>
+				<params>
+					<param>
+						IntT
+						<name>Variable Type</name>
+						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -2570,30 +2634,6 @@
 				<slots/>
 			</block>
 			<block>
-				<class>DoOnce</class>
-				<id>DoOnce_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>start_closed</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_93</id>
-				<buddy>Variable_48</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>Macro</class>
 				<id>Macro_15</id>
 				<params>
@@ -2628,35 +2668,21 @@
 				<slots/>
 			</block>
 			<block>
-				<class>And</class>
-				<id>And_34</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>CanShowHint</class>
 				<id>CanShowHint_33</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_27</id>
-				<buddy>Variable_21</buddy>
-				<params>
-					<param>
-						VehicleT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_28</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\14\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -2671,49 +2697,13 @@
 				<slots/>
 			</block>
 			<block>
-				<class>CompareFloats</class>
-				<id>CompareFloats_17</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\50.000000\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_1</id>
-				<params>
-					<param>
-						distanceToBase
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>And</class>
 				<id>And_14</id>
 				<params>
 					<param>
-						2
+						3
 						<name>Input Count</name>
 						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_3</id>
-				<buddy>Variable_20</buddy>
-				<params>
-					<param>
-						IntT
-						<name>Variable Type</name>
-						<type>TypeT</type>
 					</param>
 				</params>
 				<slots/>
@@ -2747,6 +2737,55 @@
 						<const>\100\</const>
 					</slot>
 				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_103</id>
+				<buddy>Variable_21</buddy>
+				<params>
+					<param>
+						VehicleT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareFloats</class>
+				<id>CompareFloats_17</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>b</name>
+						<const>\50.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_21</id>
+				<params>
+					<param>
+						distanceToBase
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_105</id>
+				<buddy>Variable_20</buddy>
+				<params>
+					<param>
+						IntT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
@@ -3472,6 +3511,12 @@
 				<output>true</output>
 			</connection>
 			<connection>
+				<from>SelectHint_18</from>
+				<input>hintId</input>
+				<to>CanShowHint_9</to>
+				<output>id</output>
+			</connection>
+			<connection>
 				<from>If_16</from>
 				<input>input</input>
 				<to>If_59</to>
@@ -3482,12 +3527,6 @@
 				<input>value</input>
 				<to>If_59</to>
 				<output>res</output>
-			</connection>
-			<connection>
-				<from>SelectHint_18</from>
-				<input>hintId</input>
-				<to>CanShowHint_9</to>
-				<output>id</output>
 			</connection>
 			<connection>
 				<from>Macro_11</from>
@@ -3976,18 +4015,6 @@
 				<output>onHit</output>
 			</connection>
 			<connection>
-				<from>If_57</from>
-				<input>Show_Hint</input>
-				<to>Macro_5</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>SelectHint_6</from>
-				<input>HintID</input>
-				<to>Macro_5</to>
-				<output>id</output>
-			</connection>
-			<connection>
 				<from>GetVariable_96</from>
 				<input>i1</input>
 				<to>And_37</to>
@@ -3998,6 +4025,18 @@
 				<input>i2</input>
 				<to>And_37</to>
 				<output>result</output>
+			</connection>
+			<connection>
+				<from>If_57</from>
+				<input>Show_Hint</input>
+				<to>Macro_5</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>SelectHint_6</from>
+				<input>HintID</input>
+				<to>Macro_5</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>SelectHint_6</from>
@@ -4078,61 +4117,127 @@
 				<output>invadersCount</output>
 			</connection>
 			<connection>
+				<from>GetVariable_31</from>
+				<input>vehicle</input>
+				<to>GetVehicleTransform_2</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>SubtractVector_4</from>
+				<input>a</input>
+				<to>VectorLength_3</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>VectorLength_3</from>
+				<input>a</input>
+				<to>CompareFloats_16</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVehicleTransform_2</from>
+				<input>a</input>
+				<to>SubtractVector_4</to>
+				<output>position</output>
+			</connection>
+			<connection>
+				<from>GetVehicleTransform_3</from>
+				<input>b</input>
+				<to>SubtractVector_4</to>
+				<output>position</output>
+			</connection>
+			<connection>
 				<from>SelectHint_15</from>
 				<input>hintId</input>
 				<to>CanShowHint_6</to>
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDamaged_2</from>
+				<from>OnPlayerVehicleDetectEnemy_1</from>
 				<input>input</input>
-				<to>If_12</to>
+				<to>If_63</to>
+				<output>onDetect</output>
+			</connection>
+			<connection>
+				<from>OnPlayerVehicleDetectEnemy_1</from>
+				<input>input</input>
+				<to>If_63</to>
+				<output>onLost</output>
+			</connection>
+			<connection>
+				<from>CompareFloats_16</from>
+				<input>value</input>
+				<to>If_63</to>
+				<output>less</output>
+			</connection>
+			<connection>
+				<from>Constant_1</from>
+				<input>active</input>
+				<to>OnPlayerVehicleDetectEnemy_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnPlayerVehicleDetectEnemy_1</from>
+				<input>vehicle</input>
+				<to>GetVehicleTransform_3</to>
+				<output>target</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_1</from>
+				<input>input</input>
+				<to>If_64</to>
 				<output>onDamaged</output>
 			</connection>
 			<connection>
-				<from>IsVehicleValid_3</from>
+				<from>IsVehicleValid_6</from>
 				<input>value</input>
-				<to>If_12</to>
+				<to>If_64</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>CanShowHint_6</from>
-				<input>active</input>
-				<to>OnAnyVehicleDamaged_2</to>
-				<output>result</output>
-			</connection>
-			<connection>
-				<from>OnAnyVehicleDamaged_2</from>
-				<input>vehicle</input>
-				<to>IsVehicleValid_3</to>
-				<output>target</output>
-			</connection>
-			<connection>
-				<from>If_12</from>
+				<from>If_64</from>
 				<input>input</input>
-				<to>If_1</to>
+				<to>If_65</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>CompareVehicles_2</from>
+				<from>CompareVehicles_1</from>
 				<input>value</input>
-				<to>If_1</to>
+				<to>If_65</to>
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>OnAnyVehicleDamaged_2</from>
-				<input>a</input>
-				<to>CompareVehicles_2</to>
+				<from>Constant_1</from>
+				<input>active</input>
+				<to>OnAnyVehicleDamaged_1</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>OnAnyVehicleDamaged_1</from>
+				<input>vehicle</input>
+				<to>IsVehicleValid_6</to>
 				<output>target</output>
 			</connection>
 			<connection>
-				<from>GetVariable_31</from>
-				<input>b</input>
-				<to>CompareVehicles_2</to>
-				<output>value</output>
+				<from>If_19</from>
+				<input>input</input>
+				<to>If_56</to>
+				<output>true</output>
 			</connection>
 			<connection>
-				<from>If_1</from>
+				<from>CanShowHint_35</from>
+				<input>value</input>
+				<to>If_56</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>If_63</from>
+				<input>input</input>
+				<to>If_19</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>If_65</from>
 				<input>input</input>
 				<to>If_19</to>
 				<output>true</output>
@@ -4156,34 +4261,16 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>If_19</from>
-				<input>input</input>
-				<to>If_56</to>
-				<output>true</output>
+				<from>OnAnyVehicleDamaged_1</from>
+				<input>a</input>
+				<to>CompareVehicles_1</to>
+				<output>target</output>
 			</connection>
 			<connection>
-				<from>And_36</from>
-				<input>value</input>
-				<to>If_56</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>GetVariable_95</from>
-				<input>i1</input>
-				<to>And_36</to>
+				<from>GetVariable_102</from>
+				<input>b</input>
+				<to>CompareVehicles_1</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>CanShowHint_35</from>
-				<input>i2</input>
-				<to>And_36</to>
-				<output>result</output>
-			</connection>
-			<connection>
-				<from>SelectHint_3</from>
-				<input>hintId</input>
-				<to>CanShowHint_35</to>
-				<output>id</output>
 			</connection>
 			<connection>
 				<from>Macro_16</from>
@@ -4204,10 +4291,16 @@
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>CanShowHint_6</from>
+				<from>Constant_1</from>
 				<input>active</input>
 				<to>OnPlayerVehicleDeviceCrit_1</to>
-				<output>result</output>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>SelectHint_3</from>
+				<input>hintId</input>
+				<to>CanShowHint_35</to>
+				<output>id</output>
 			</connection>
 			<connection>
 				<from>Macro_12</from>
@@ -4540,28 +4633,16 @@
 				<output>ShowHintOutput</output>
 			</connection>
 			<connection>
-				<from>DoOnce_1</from>
+				<from>If_25</from>
 				<input>input</input>
 				<to>If_54</to>
-				<output>completed</output>
+				<output>true</output>
 			</connection>
 			<connection>
-				<from>And_34</from>
+				<from>CanShowHint_33</from>
 				<input>value</input>
 				<to>If_54</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_25</from>
-				<input>input</input>
-				<to>DoOnce_1</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>If_25</from>
-				<input>reset</input>
-				<to>DoOnce_1</to>
-				<output>true</output>
+				<output>result</output>
 			</connection>
 			<connection>
 				<from>If_54</from>
@@ -4576,50 +4657,32 @@
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>GetVariable_93</from>
-				<input>i1</input>
-				<to>And_34</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>CanShowHint_33</from>
-				<input>i2</input>
-				<to>And_34</to>
-				<output>result</output>
-			</connection>
-			<connection>
 				<from>SelectHint_2</from>
 				<input>hintId</input>
 				<to>CanShowHint_33</to>
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>Macro_1</from>
+				<from>OnCaptureControlPoint_10</from>
 				<input>a</input>
-				<to>CompareFloats_17</to>
-				<output>res</output>
+				<to>CompareIntegers_28</to>
+				<output>points</output>
 			</connection>
 			<connection>
-				<from>GetVariable_27</from>
-				<input>vehicle</input>
-				<to>Macro_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVariable_3</from>
-				<input>Team</input>
-				<to>Macro_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>CompareFloats_17</from>
+				<from>CompareIntegers_28</from>
 				<input>i1</input>
 				<to>And_14</to>
-				<output>less</output>
+				<output>greater</output>
 			</connection>
 			<connection>
 				<from>CompareIntegers_27</from>
 				<input>i2</input>
+				<to>And_14</to>
+				<output>less</output>
+			</connection>
+			<connection>
+				<from>CompareFloats_17</from>
+				<input>i3</input>
 				<to>And_14</to>
 				<output>less</output>
 			</connection>
@@ -4634,6 +4697,24 @@
 				<input>a</input>
 				<to>CompareIntegers_27</to>
 				<output>points</output>
+			</connection>
+			<connection>
+				<from>Macro_21</from>
+				<input>a</input>
+				<to>CompareFloats_17</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_103</from>
+				<input>vehicle</input>
+				<to>Macro_21</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_105</from>
+				<input>Team</input>
+				<to>Macro_21</to>
+				<output>value</output>
 			</connection>
 			<connection>
 				<from>SelectHint_10</from>

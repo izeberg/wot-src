@@ -1,6 +1,6 @@
+from gui.filters.carousel_filter import FILTER_KEYS
 from gui.Scaleform.daapi.view.common.common_constants import FILTER_POPOVER_SECTION
 from gui.Scaleform.daapi.view.common.filter_popover import TankCarouselFilterPopover
-from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_filter import FILTER_KEYS
 
 class FrontlineBattleTankCarouselFilterPopover(TankCarouselFilterPopover):
     _BASE_SPECIALS_LIST = [

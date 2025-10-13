@@ -1320,7 +1320,7 @@ package net.wg.gui.battle.views.vehicleMarkers
          return _loc2_[this._markerColor];
       }
       
-      private function cleanupDynamicObject(param1:Object) : Object
+      protected function cleanupDynamicObject(param1:Object) : Object
       {
          var _loc3_:* = undefined;
          var _loc2_:Array = [];

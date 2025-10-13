@@ -49,6 +49,9 @@ msgstr "A-220A"
 msgid "A_220A-DZT"
 msgstr "A-220A-DZT"
 
+msgid "A_220A-DZT_CFE_A"
+msgstr "A-220A-DZT"
+
 msgid "A_220B_1_QL"
 msgstr "A-220B QL"
 
@@ -57,6 +60,9 @@ msgstr "A-220B/79"
 
 msgid "A_220_70"
 msgstr "A-220-70"
+
+msgid "A_220_YB"
+msgstr "A-220YB"
 
 msgid "Armstrong_Siddeley"
 msgstr "Armstrong Siddeley V4"
@@ -1266,6 +1272,31 @@ msgstr "A rapid gun and good concealment"
 msgid "Ch61_DZT_159"
 msgstr "DZT-159"
 
+msgid "Ch61_DZT_159_CFE_A"
+msgstr "DZT-159 Dragon's Soul"
+
+msgid "Ch61_DZT_159_CFE_A_descr"
+msgstr ""
+"The arena burns. The crowd roars. The golden dragon waits.\n"
+"\n"
+"For centuries, this ancient guardian has watched countless battles unfold. It has seen many warriors rise to glory—and far more fade into obscurity. Weary after so many years unmatched in power, it seeks true champions—warriors whose strength and skill rival its own.\n"
+"\n"
+"When the smoke clears and the surviving heroes catch their breath among the fading embers, the dragon's gaze settles on a chosen few: those destined to inspire legends yet to come."
+
+msgid "Ch61_DZT_159_CFE_A_long_special"
+msgstr ""
+"The Dragon's Soul is a medium tank that combines serious frontal armor and a"
+" classic Chinese high-caliber gun for a vehicle of its size. As if that "
+"wasn't enough, some experimental rocket accelerators were additionally "
+"mounted. All this makes it a unique, dangerous assault vehicle more than "
+"capable of finding its place on the battlefield."
+
+msgid "Ch61_DZT_159_CFE_A_short"
+msgstr "Dragon's Soul"
+
+msgid "Ch61_DZT_159_CFE_A_short_special"
+msgstr "Strong turret armor, jet boosters"
+
 msgid "Ch61_DZT_159_descr"
 msgstr ""
 "At the end of 1959, China decided to develop an alternative medium tank "
@@ -1320,6 +1351,34 @@ msgstr "Divine Valor"
 
 msgid "Ch62_BZ_75_M_short_special"
 msgstr "Jet boosters, unique exterior"
+
+msgid "Ch63_Yong_Bing"
+msgstr "Yong Bing"
+
+msgid "Ch63_Yong_Bing_descr"
+msgstr ""
+"In the 1960s in China, in light of successful experiments using jet boosters"
+" on heavy tanks, it became necessary to increase their firepower. The "
+"decision was made to develop and mount two guns on one vehicle; however, "
+"during the technical calculations it became clear that increasing the weight"
+" and speed of the tank would negatively affect its handling and drive train "
+"durability. As a result, the project was closed at the concept development "
+"stage."
+
+msgid "Ch63_Yong_Bing_long_special"
+msgstr ""
+"The Yong Bing is a Tier IX Chinese heavy tank with a unique combination of "
+"two mechanics: jet boosters and a double gun system. While its base mobility"
+" is mediocre, the ten short but powerful jet boosters allow it to operate as"
+" a true breakthrough heavy tank. This aggressive playstyle is further "
+"complemented by its armor layout: thick frontal armor and less reliable "
+"sides."
+
+msgid "Ch63_Yong_Bing_short"
+msgstr "Yong Bing"
+
+msgid "Ch63_Yong_Bing_short_special"
+msgstr "Thick frontal armor, jet boosters, and double gun system"
 
 msgid "Ch65_Type59_IC4_3DSt"
 msgstr "Type 59 First Warrior"
@@ -1665,8 +1724,14 @@ msgstr "Vickers Mk. E Type B"
 msgid "Chassis_Ch61_DZT_159"
 msgstr "DZT-159"
 
+msgid "Chassis_Ch61_DZT_159_CFE_A"
+msgstr "Dragon's Soul"
+
 msgid "Chassis_Ch62_BZ_75_M"
 msgstr "Divine Valor"
+
+msgid "Chassis_Ch63_Yong_Bing"
+msgstr "Yong Bing"
 
 msgid "Chassis_Ch65_Type59_IC4_3DSt"
 msgstr "IC4"
@@ -1951,8 +2016,14 @@ msgstr "Vickers Mk. E Type B"
 msgid "Turret_1_Ch61_DZT_159"
 msgstr "DZT-159"
 
+msgid "Turret_1_Ch61_DZT_159_CFE_A"
+msgstr "Dragon's Soul"
+
 msgid "Turret_1_Ch62_BZ_75_M"
 msgstr "Divine Valor"
+
+msgid "Turret_1_Ch63_Yong_Bing"
+msgstr "Yong Bing"
 
 msgid "Turret_1_Ch65_Type59_IC4_3DSt"
 msgstr "IC4"
@@ -2368,6 +2439,9 @@ msgstr "12150L3"
 msgid "_12150L3-II"
 msgstr "12150L3-II"
 
+msgid "_12150L3-II_CFE_A"
+msgstr "12150L3-II"
+
 msgid "_12150L3G"
 msgstr "12150L3G"
 
@@ -2476,6 +2550,9 @@ msgstr "122 mm Type-59-2"
 msgid "_122mm_57I"
 msgstr "122 mm 57-I"
 
+msgid "_122mm_57I_CFE_A"
+msgstr "122 mm 57-I"
+
 msgid "_122mm_60_122TG"
 msgstr "122 mm 60-122TG"
 
@@ -2499,6 +2576,12 @@ msgstr "Chuan bei-472T"
 
 msgid "_122mm_CB-57I"
 msgstr "Chuan bei-57I"
+
+msgid "_122mm_CB-57I_CFE_A"
+msgstr "Chuan bei-57I"
+
+msgid "_122mm_CB_472_Y"
+msgstr "Chuan bei-472Y"
 
 msgid "_122mm_Chuan_bei_471_110"
 msgstr "Chuan bei-471 (110)"
@@ -2548,6 +2631,12 @@ msgstr "Po-122T"
 msgid "_122mm_PO-57I"
 msgstr "Po-57I"
 
+msgid "_122mm_PO-57I_CFE_A"
+msgstr "Po-57I"
+
+msgid "_122mm_PO_122_Y"
+msgstr "Po-122Y"
+
 msgid "_122mm_Po_122_111_1"
 msgstr "Po-122 (111-1)"
 
@@ -2580,6 +2669,12 @@ msgstr "Sha bao-472T"
 
 msgid "_122mm_SB-57I"
 msgstr "Sha bao-57I"
+
+msgid "_122mm_SB-57I_CFE_A"
+msgstr "Sha bao-57I"
+
+msgid "_122mm_SB_472_Y"
+msgstr "Sha bao-472Y"
 
 msgid "_122mm_Sha_bao_471_110"
 msgstr "Sha bao-471 (110)"
@@ -2616,6 +2711,9 @@ msgstr "Chuan bei-411CJ"
 
 msgid "_122mm_Type_61"
 msgstr "122 mm Type-61"
+
+msgid "_122mm_Type_61_DB"
+msgstr "122 mm Type 61 DB"
 
 msgid "_122mm_Type_64"
 msgstr "Po-471"
@@ -3326,6 +3424,9 @@ msgstr "8V135 (132A)"
 
 msgid "_8V135_M"
 msgstr "8V135-M"
+
+msgid "_8V135_YB"
+msgstr "8V-135-YB"
 
 msgid "_90mm_AP_M318"
 msgstr "AP M318"

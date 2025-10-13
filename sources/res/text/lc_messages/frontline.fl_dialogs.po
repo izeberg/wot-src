@@ -10,56 +10,62 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "confirm/btn/buy"
-msgstr "Purchase"
-
 msgid "confirm/btn/buyAndMount"
 msgstr "Purchase and Mount"
 
 msgid "confirm/btn/install"
 msgstr "Mount"
 
+msgid "confirm/item/battleAbility"
+msgstr "Combat Reserve"
+
+msgid "confirm/items/battleAbility"
+msgstr "Combat Reserves"
+
 msgid "confirm/modificationBonus"
 msgstr ""
-"%(icon)s In the {whiteSpanish_Start}Twist of Fate{whiteSpanish_End} "
-"scenario, the chance of each Combat Reserve placed in the slot before the "
-"battle being offered is increased by "
-"{whiteSpanish_Start}{bonus}%{whiteSpanish_End}."
+"In the {FFE4C0_Start}Twist of Fate{FFE4C0_End} scenario, each Combat Reserve placed in the slot in advance\n"
+"has a {FFE4C0_Start}{bonus}%{FFE4C0_End} higher chance of being offered during the battle."
 
 msgid "confirm/price"
-msgstr "Total: %(price) %(icon)"
+msgstr "Total: {{price}}"
 
 msgid "confirm/quotedName"
-msgstr "\"%(name)s\""
-
-msgid "confirm/title/buy/forAllOfType/item"
-msgstr ""
-"Purchase and Mount the \"&zwnbsp;%(reserveName)s&zwnbsp;\" %(type)s\n"
-" for all %(vehicleIcon)s %(vehicleType)s?"
+msgstr "\"{name}\""
 
 msgid "confirm/title/buy/forAllOfType/items"
 msgstr ""
-"Purchase and Mount %(type)s\n"
-" for all %(vehicleIcon)s %(vehicleType)s?"
+"Purchase and mount %(type)s\n"
+" for all %(vehicleIcon)s %(vehicleType)s&zwnbsp;?"
 
 msgid "confirm/title/buy/item"
-msgstr "Purchase the \"&zwnbsp;%(reserveName)s&zwnbsp;\" %(type)s?"
+msgstr "Purchase and mount the %(abilityName)s %(type)s&zwnbsp;?"
 
 msgid "confirm/title/buy/items"
-msgstr "Purchase %(type)s?"
-
-msgid "confirm/title/install/forAllOfType/item"
-msgstr ""
-"Mount the \"&zwnbsp;%(reserveName)s&zwnbsp;\" %(type)s\n"
-" for all %(vehicleIcon)s %(vehicleType)s?"
+msgstr "Purchase and mount %(type)s&zwnbsp;?"
 
 msgid "confirm/title/install/forAllOfType/items"
 msgstr ""
 "Mount the selected %(type)s\n"
-" for all %(vehicleIcon)s %(vehicleType)s?"
+" for all %(vehicleIcon)s %(vehicleType)s&zwnbsp;?"
 
 msgid "confirm/title/install/item"
-msgstr "Mount the \"&zwnbsp;%(reserveName)s&zwnbsp;\" %(type)s?"
+msgstr "Mount the %(abilityName)s %(type)s&zwnbsp;?"
 
 msgid "confirm/title/install/items"
-msgstr "Mount %(type)s?"
+msgstr "Mount %(type)s&zwnbsp;?"
+
+msgid "confirm/vehicleType/AT-SPG"
+msgstr "tank destroyers"
+
+msgid "confirm/vehicleType/SPG"
+msgstr "SPGs"
+
+msgid "confirm/vehicleType/heavyTank"
+msgstr "heavy tanks"
+
+msgid "confirm/vehicleType/lightTank"
+msgstr "light tanks"
+
+msgid "confirm/vehicleType/mediumTank"
+msgstr "medium tanks"

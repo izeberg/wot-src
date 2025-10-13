@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.982660 -0.624824 -3.905443</min>
+		<max>1.982349 0.798817 4.086333</max>
+	</visibilityBox>
+</root>

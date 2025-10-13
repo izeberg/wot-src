@@ -137,5 +137,7 @@ package net.wg.infrastructure.base.meta
       function as_setReloadBoostBorderBlink() : void;
       
       function as_setNetSeparatorType(param1:String) : void;
+      
+      function as_setChargeableBurstMode(param1:Boolean) : void;
    }
 }

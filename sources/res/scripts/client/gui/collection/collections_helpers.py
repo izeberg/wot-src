@@ -1,4 +1,3 @@
-from functools import partial
 import typing, SoundGroups, nations
 from CurrentVehicle import g_currentVehicle
 from collections_common import UNUSABLE_COLLECTION_ENTITIES, USABLE_COLLECTION_ENTITIES
@@ -26,10 +25,10 @@ if typing.TYPE_CHECKING:
     from gui.shared.gui_items.Vehicle import Vehicle
 
 @replace_none_kwargs(itemsCache=IItemsCache)
-def showCollectionStylePreview(styleCD, backCallback=None, backBtnDescrLabel='', itemsCache=None):
+def showCollectionStylePreview(styleCD, itemsCache=None):
     style = itemsCache.items.getItemByCD(styleCD)
     vehicle = getVehicleForCollectionStyle(style)
-    (showStyleProgressionPreview if style.isProgression else showStylePreview)(vehicle.intCD, style, style.getDescription(), backCallback or showHangar, backBtnDescrLabel)
+    (showStyleProgressionPreview if style.isProgression else showStylePreview)(vehicle.intCD, style, style.getDescription())
 
 
 @replace_none_kwargs(itemsCache=IItemsCache)
@@ -70,10 +69,8 @@ def loadBattlePassFromCollections(presenterID=None, chapterID=0):
 
 
 @replace_none_kwargs(battlePass=IBattlePassController)
-def loadCollectionsFromBattlePass(backLayoutID, chapterID=0, battlePass=None):
-    backText = backport.text(getCollectionRes(battlePass.getCurrentCollectionId()).featureName())
-    backCallback = partial(loadBattlePassFromCollections, backLayoutID, chapterID)
-    showCollectionWindow(collectionId=battlePass.getCurrentCollectionId(), backCallback=backCallback, backBtnText=backText)
+def loadCollectionsFromBattlePass(battlePass=None):
+    showCollectionWindow(collectionId=battlePass.getCurrentCollectionId())
 
 
 @replace_none_kwargs(collections=ICollectionsSystemController)

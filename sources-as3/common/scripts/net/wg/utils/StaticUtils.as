@@ -1,6 +1,7 @@
 package net.wg.utils
 {
    import flash.display.DisplayObject;
+   import flash.display.Stage;
    import flash.utils.getQualifiedClassName;
    
    public class StaticUtils
@@ -15,7 +16,7 @@ package net.wg.utils
       public static function getObjectHierarchy(param1:DisplayObject, param2:DisplayObject = null, param3:Boolean = true, param4:Boolean = true) : String
       {
          var _loc7_:String = null;
-         if(param1 == null || param1 == param2 || param1 == App.stage)
+         if(param1 == null || param1 == param2 || param1 is Stage)
          {
             return null;
          }

@@ -30,6 +30,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.infrastructure.base.UIComponentEx;
    import net.wg.infrastructure.interfaces.IFocusChainContainer;
    import net.wg.utils.IClassFactory;
+   import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    
    public class CustomizationCarousel extends ScrollCarousel implements IFocusChainContainer, IMagneticClickHandler
@@ -50,8 +51,6 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const EXTRA_OFFSET:int = 79;
       
       private static const SCROLL_Y_OFFSET:int = 10;
-      
-      private static const MIN_RESOLUTION:int = 900;
       
       private static const FILTERS_GAP_OFFSET:int = -5;
       
@@ -87,7 +86,7 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const SHOP_ENTRY_X:int = 0;
       
-      private static const SHORT_LIST_MAX_LEFT_OFFSET:int = 90;
+      private static const SHORT_LIST_MAX_LEFT_OFFSET:int = 80;
       
       private static const INVALID_BOOKMARKS_LAYOUT:String = "InvalidBookmarksLayout";
        
@@ -187,15 +186,13 @@ package net.wg.gui.lobby.vehicleCustomization
       
       override protected function updateLayout(param1:int, param2:int = 0) : void
       {
-         var _loc5_:int = 0;
-         var _loc8_:Number = NaN;
          var _loc9_:Number = NaN;
-         var _loc10_:Point = null;
-         var _loc11_:Number = NaN;
+         var _loc10_:Number = NaN;
+         var _loc11_:Point = null;
          var _loc12_:Rectangle = null;
          var _loc3_:int = param2 + OFFSET_ARROW + EXTRA_OFFSET + this.leftOffset;
          var _loc4_:int = param1 - _loc3_ - OFFSET_ARROW;
-         _loc5_ = _loc4_ + leftArrowOffset - rightArrowOffset;
+         var _loc5_:int = _loc4_ + leftArrowOffset - rightArrowOffset;
          if(this.shopEntryPointBtn)
          {
             this.shopEntryPointBtn.x = SHOP_ENTRY_X;
@@ -205,28 +202,29 @@ package net.wg.gui.lobby.vehicleCustomization
          this.carouselFilters.x = FILTERS_LEFT_OFFSET + this.leftOffset;
          _loc3_ = (_loc4_ - _loc5_ >> 1) + _loc3_;
          var _loc6_:HorizontalScroller = HorizontalScroller(scrollList);
+         var _loc7_:Number = 0;
          if(_loc6_.minHorizontalScrollPosition == _loc6_.maxHorizontalScrollPosition && _loc6_.maxHorizontalScrollPosition == 0)
          {
-            _loc8_ = scrollList.viewPort.visibleWidth;
-            _loc9_ = 0;
+            _loc9_ = scrollList.viewPort.visibleWidth;
+            _loc10_ = 0;
             if(_loc6_.usesLayoutController())
             {
-               _loc10_ = this._layoutController.getMaxExtents();
-               _loc9_ = _loc10_.x - _loc8_;
+               _loc11_ = this._layoutController.getMaxExtents();
+               _loc10_ = _loc11_.x - _loc9_;
             }
             else
             {
-               _loc9_ = _loc6_.minHorizontalScrollPosition + scrollList.viewPort.validWidth - _loc8_;
+               _loc10_ = _loc6_.minHorizontalScrollPosition + scrollList.viewPort.validWidth - _loc9_;
             }
-            if(_loc9_ < 0)
+            if(_loc10_ < 0)
             {
-               _loc11_ = Math.min(-1 * _loc9_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
-               _loc3_ -= _loc11_;
+               _loc7_ = Math.min(-1 * _loc10_ >> 1,SHORT_LIST_MAX_LEFT_OFFSET);
             }
          }
-         var _loc7_:int = scrollList.width;
+         var _loc8_:int = scrollList.width;
+         _loc4_ -= _loc7_ << 1;
          super.updateLayout(_loc4_,_loc3_);
-         if(_loc7_ != scrollList.width)
+         if(_loc8_ != scrollList.width)
          {
             invalidate(INVALID_BOOKMARKS_LAYOUT);
          }
@@ -243,7 +241,7 @@ package net.wg.gui.lobby.vehicleCustomization
          this.scrollBar.y = leftArrow.y + leftArrow.height + SCROLL_Y_OFFSET;
          this.carouselFilters.gapOffset = int(this._isMinResolution) * FILTERS_GAP_OFFSET;
          this.projectionDecalHint.x = scrollList.x + scrollList.maskOffsetLeft;
-         this.projectionDecalHint.width = scrollList.width - scrollList.maskOffsetLeft - scrollList.maskOffsetRight;
+         this.projectionDecalHint.width = scrollList.width - scrollList.maskOffsetLeft - scrollList.maskOffsetRight + (_loc7_ << 1);
          this.projectionDecalHint.y = scrollList.y;
          this.projectionDecalHint.height = !!this._isMinResolution ? Number(HIT_AREA_HEIGHT_MIN) : Number(HIT_AREA_HEIGHT);
          this.emptyStateComponent.invalidateLayout();
@@ -284,7 +282,7 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc12_:Boolean = false;
          var _loc13_:int = 0;
          super.draw();
-         var _loc1_:Boolean = App.appHeight < MIN_RESOLUTION;
+         var _loc1_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          if((this._oldWidth != _width || this._isMinResolution != _loc1_) && isInvalid(InvalidationType.SIZE))
          {
             this._oldWidth = _width;

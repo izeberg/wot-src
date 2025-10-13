@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A178_SPHT/normal/lod0/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/american/A178_SPHT/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.133030 -0.000001 -2.435831</min>
+		<max>1.139140 2.219220 1.644088</max>
+	</visibilityBox>
+</root>

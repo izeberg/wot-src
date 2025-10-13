@@ -157,7 +157,7 @@ msgid "research/notEnoughExp"
 msgstr "Not enough XP to research the selected nodes."
 
 msgid "research/notInInventory"
-msgstr "Purchase the vehicle to be able to research its nodes"
+msgstr "You need to own this vehicle to be able to research its nodes"
 
 msgid "research/perks"
 msgstr "{{amount}} nodes"
@@ -361,11 +361,13 @@ msgstr ""
 
 msgid "tooltips/description/g187_mechanic_0"
 msgstr ""
-"Reduces auxiliary gun reload time by {colorTagOpen}{value}%{colorTagClose}."
+"Reduces reload time of auxiliary guns by "
+"{colorTagOpen}{value}%{colorTagClose}."
 
 msgid "tooltips/description/g187_mechanic_1"
 msgstr ""
-"Reduces auxiliary gun reload time by {colorTagOpen}{value}%{colorTagClose}."
+"Reduces reload time of auxiliary guns by "
+"{colorTagOpen}{value}%{colorTagClose}."
 
 msgid "tooltips/description/g188_mechanic_0"
 msgstr ""

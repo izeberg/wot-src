@@ -143,19 +143,19 @@ msgid "ribbon/usesLeft"
 msgstr "Available applications: %(count)s"
 
 msgid "sub_modes/development/navigation/battleResults"
-msgstr "Dev Personal Score"
+msgstr "Dev OVERVIEW"
 
 msgid "sub_modes/development/navigation/teamEfficiency"
-msgstr "Dev Team Score"
+msgstr "Dev TEAM SCORE"
 
 msgid "sub_modes/development/team/singleTeam"
 msgstr "Players"
 
 msgid "sub_modes/undefined/navigation/battleResults"
-msgstr "Personal Score"
+msgstr "OVERVIEW"
 
 msgid "sub_modes/undefined/navigation/teamEfficiency"
-msgstr "Team Score"
+msgstr "TEAM SCORE"
 
 msgid "sub_modes/undefined/team/empty/finishTime"
 msgstr "-- : -- . --"
@@ -165,3 +165,6 @@ msgstr "{minutes}:{seconds}.{milliseconds}"
 
 msgid "sub_modes/undefined/team/singleTeam"
 msgstr "Players"
+
+msgid "title"
+msgstr "BATTLE RESULTS"

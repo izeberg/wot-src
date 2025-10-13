@@ -91,6 +91,9 @@ msgstr "C.13/B.47"
 msgid "C42"
 msgstr "SR C42"
 
+msgid "C42_214t"
+msgstr "C42T"
+
 msgid "C42_B47"
 msgstr "C42/B47 AFV stations complete"
 
@@ -311,6 +314,9 @@ msgstr "Conqueror Mk. I"
 msgid "Chassis_GB12_Conqueror_2"
 msgstr "Conqueror Mk. II"
 
+msgid "Chassis_GB130_FV225_Collector"
+msgstr "FV225 Collector"
+
 msgid "Chassis_GB131_Crusher"
 msgstr "Crusher"
 
@@ -386,6 +392,12 @@ msgstr "Churchill St. Gloriana"
 
 msgid "Chassis_GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 Breaker"
+
+msgid "Chassis_GB156_Black_Prince_II"
+msgstr "Black Prince II"
+
+msgid "Chassis_GB157_FV214t"
+msgstr "FV214t"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -1454,6 +1466,31 @@ msgstr ""
 msgid "GB12_Conqueror_short"
 msgstr "Conqueror"
 
+msgid "GB130_FV225_Collector"
+msgstr "FV225 Collector"
+
+msgid "GB130_FV225_Collector_descr"
+msgstr ""
+"A British project for a heavy tank with a twin gun featuring a selective "
+"fire modes system. The idea for the vehicle came in response to the "
+"U.S.S.R.'s development of the T-10 heavy tank. The design implied increasing"
+" the crew to five members and significantly enhancing the armor. However, "
+"this meant a significant increase in the tank's combat weight and so work on"
+" the vehicle was soon stopped."
+
+msgid "GB130_FV225_Collector_long_special"
+msgstr ""
+"The FV225 Collector is a Tier X British heavy tank armed with a twin 110 mm "
+"gun featuring selective fire modes that delivers exceptional DPM. Designed "
+"as a breakthrough heavy, it boasts good mobility and frontal armor, but has "
+"weaker side protection."
+
+msgid "GB130_FV225_Collector_short"
+msgstr "Collector"
+
+msgid "GB130_FV225_Collector_short_special"
+msgstr "Selective fire modes, good frontal armor"
+
 msgid "GB131_Crusher"
 msgstr "Crusher"
 
@@ -1857,6 +1894,50 @@ msgstr ""
 
 msgid "GB152_AT_FV230_Breaker_short"
 msgstr "Breaker"
+
+msgid "GB156_Black_Prince_II"
+msgstr "Black Prince II"
+
+msgid "GB156_Black_Prince_II_descr"
+msgstr ""
+"A project for the A43 Infantry Tank Black Prince II heavy tank, with a "
+"welded turret equipped with two powerful 77 mm guns. The vehicle was never "
+"produced."
+
+msgid "GB156_Black_Prince_II_long_special"
+msgstr ""
+"The Black Prince II is a Tier VII British heavy tank distinguished by its "
+"double gun system. The mechanic's short salvo preparation time and low usage"
+" penalty allow it to be employed effectively multiple times per battle, "
+"while the vehicle also boasts reliable turret and hull armor."
+
+msgid "GB156_Black_Prince_II_short"
+msgstr "BP II"
+
+msgid "GB156_Black_Prince_II_short_special"
+msgstr "Double gun system, reliable turret and hull armor"
+
+msgid "GB157_FV214t"
+msgstr "FV214t"
+
+msgid "GB157_FV214t_descr"
+msgstr ""
+"The FV 214 Conqueror was a British heavy tank of the post-World War II era. "
+"It was developed as a response to the Soviet IS-3 heavy tank. This model "
+"differs from the \"classic\" one by its more powerful 114 mm gun."
+
+msgid "GB157_FV214t_long_special"
+msgstr ""
+"The FV214t is a Tier IX British heavy tank from the Conqueror family that "
+"offers a fresh take on the classic British heavy formula. Combining good "
+"mobility with excellent gun handling, it also boasts the ability to swiftly "
+"reposition across the map."
+
+msgid "GB157_FV214t_short"
+msgstr "FV214t"
+
+msgid "GB157_FV214t_short_special"
+msgstr "Excellent handling, reliable frontal turret armor"
 
 msgid "GB15_Stuart_I"
 msgstr "Stuart I-IV"
@@ -3232,6 +3313,9 @@ msgstr "OQF 55-pdr AT Gun"
 msgid "OQF_55_pdr_CG"
 msgstr "OQF 55-pdr CG"
 
+msgid "OQF_55_pdr_Gun_214t"
+msgstr "OQF 55-pdr Gun (214t)"
+
 msgid "OQF_77mm_AT_Gun_MkII"
 msgstr "OQF 77 mm AT Gun Mk. II"
 
@@ -3409,8 +3493,14 @@ msgstr "Rolls-Royce Griffon"
 msgid "Rolls_Royce_Griffon_180"
 msgstr "Rolls-Royce Griffon 180"
 
+msgid "Rolls_Royce_Griffon_180_B"
+msgstr "Rolls-Royce Griffon 180B"
+
 msgid "Rolls_Royce_Griffon_214"
 msgstr "Rolls-Royce Griffon (214)"
+
+msgid "Rolls_Royce_Griffon_214t"
+msgstr "Rolls-Royce Griffon (214t)"
 
 msgid "Rolls_Royce_Griffon_217"
 msgstr "Rolls-Royce Griffon (217)"
@@ -3559,6 +3649,9 @@ msgstr "Rolls-Royce Phantom"
 msgid "Rolls_Royce_Phantom_I"
 msgstr "Rolls-Royce Phantom (I)"
 
+msgid "Rolls_Royce_V12"
+msgstr "Rolls-Royce V12"
+
 msgid "Rolls_Royse_Meteor_Mk12"
 msgstr "Rolls-Royce Meteor Mk. 12"
 
@@ -3588,6 +3681,9 @@ msgstr "Rover Meteorite"
 
 msgid "SR_C42H"
 msgstr "SR C42H"
+
+msgid "SR_C42I"
+msgstr "SR C42I"
 
 msgid "SR_C42O"
 msgstr "SR C42O"
@@ -3718,6 +3814,9 @@ msgstr "Nemesis"
 msgid "Turret_1_GB12_Conqueror"
 msgstr "Conqueror Mk. II"
 
+msgid "Turret_1_GB130_FV225_Collector"
+msgstr "FV225 Collector"
+
 msgid "Turret_1_GB131_Crusher"
 msgstr "Crusher"
 
@@ -3768,6 +3867,12 @@ msgstr "Churchill St. Gloriana"
 
 msgid "Turret_1_GB152_AT_FV230_Breaker"
 msgstr "Beaver"
+
+msgid "Turret_1_GB156_Black_Prince_II"
+msgstr "Black Prince II"
+
+msgid "Turret_1_GB157_FV214t"
+msgstr "FV214t"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "Stuart I"
@@ -4097,6 +4202,9 @@ msgstr "Twin 105 mm Gun L7 MBC"
 msgid "Twin_105_mm_Gun_T8_MBC"
 msgstr "Twin 105 mm T8 Gun MBC"
 
+msgid "Twin_110_mm_Gun_MBC"
+msgstr "Twin 110 mm Gun MBC"
+
 msgid "Twin_120_mm_Gun_L1_MBC"
 msgstr "Twin 120 mm Gun L1 MBC"
 
@@ -4114,6 +4222,9 @@ msgstr "Twin 32-pdr Gun MBC Mk. 2"
 
 msgid "Twin_4_5_in_Gun_MBC"
 msgstr "Twin 4.5-in. Gun MBC"
+
+msgid "Twin_OQF_77mm_Gun_Mk_II"
+msgstr "Twin OQF 77 mm Gun Mk. II"
 
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "Bedford Twin-Six"
@@ -4141,6 +4252,9 @@ msgstr "WS No. 19 GD"
 
 msgid "WS_No_19_Mk_IIB"
 msgstr "WS No. 19 Mk. IIB"
+
+msgid "WS_No_19_Mk_III"
+msgstr "WS No. 19 Mk. III"
 
 msgid "WS_No_22_Mk_3"
 msgstr "WS No. 22 Mk. 3"
@@ -4337,6 +4451,15 @@ msgstr "105 mm MV HE"
 
 msgid "_105mm_SPH_M4_L23"
 msgstr "105 mm M4"
+
+msgid "_110mm_MK_1_HC_MBC"
+msgstr "HC Mk. 1 MBC"
+
+msgid "_110mm_MK_3_APDS_MBC"
+msgstr "APDS Mk. 3 MBC"
+
+msgid "_110mm_MK_7_HE_MBC"
+msgstr "HE Mk. 7 MBC"
 
 msgid "_110mm_MVN_AP"
 msgstr "110 mm MVN AP"
@@ -5244,8 +5367,14 @@ msgstr "HE Mk. XIII (Bishop)"
 msgid "_55pdr_APCBC"
 msgstr "APCBC"
 
+msgid "_55pdr_APCBC_214t"
+msgstr "55-pdr APCBC"
+
 msgid "_55pdr_APDS"
 msgstr "APDS"
+
+msgid "_55pdr_APDS_214t"
+msgstr "55-pdr APDS"
 
 msgid "_55pdr_APSA"
 msgstr "APSA"
@@ -5258,6 +5387,9 @@ msgstr "HE"
 
 msgid "_55pdr_HESA"
 msgstr "HESA"
+
+msgid "_55pdr_HE_214t"
+msgstr "55-pdr HE"
 
 msgid "_5_5_in_AP_80_lb_Mk_3"
 msgstr "AP 80-lb Mk. 3"
@@ -5715,6 +5847,9 @@ msgstr "AP M79(M7)"
 msgid "_77mm_APCBC_Mk8T"
 msgstr "APCBC 77 mm Mk. 8T"
 
+msgid "_77mm_APCBC_Mk8T_3"
+msgstr "APCBC 77 mm Mk. 8T3"
+
 msgid "_77mm_APCBC_Mk8T_T"
 msgstr "APCBC 77 mm Mk. 8T2"
 
@@ -5730,6 +5865,9 @@ msgstr "APCBC 77 mm Mk. 8T (AT 8)"
 msgid "_77mm_APDS_Mk1T"
 msgstr "APDS 77 mm Mk. 1T"
 
+msgid "_77mm_APDS_Mk1T_2"
+msgstr "APDS 77 mm Mk. 1T2"
+
 msgid "_77mm_APDS_Mk_1T_A22F"
 msgstr "APDS 77 mm Mk. 1T (A22F)"
 
@@ -5744,6 +5882,9 @@ msgstr "APDS-T 77 mm Mk. 1T"
 
 msgid "_77mm_HE_Mk1T"
 msgstr "HE 77 mm Mk. 1T"
+
+msgid "_77mm_HE_Mk1T_2"
+msgstr "HE 77 mm Mk. 1T2"
 
 msgid "_77mm_HE_Mk1T_T"
 msgstr "HE 77 mm Mk. 1T"

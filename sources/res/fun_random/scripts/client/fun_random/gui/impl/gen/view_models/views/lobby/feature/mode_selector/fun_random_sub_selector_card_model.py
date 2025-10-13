@@ -1,6 +1,6 @@
 from enum import IntEnum
 from frameworks.wulf import Array, ViewModel
-from gui.impl.gen.view_models.views.lobby.mode_selector.mode_selector_performance_model import ModeSelectorPerformanceModel
+from gui.impl.gen.view_models.views.lobby.common.mode_performance_model import ModePerformanceModel
 
 class CardState(IntEnum):
     NOT_STARTED = 0
@@ -21,7 +21,7 @@ class FunRandomSubSelectorCardModel(ViewModel):
 
     @staticmethod
     def getPerformanceType():
-        return ModeSelectorPerformanceModel
+        return ModePerformanceModel
 
     def getAssetsPointer(self):
         return self._getString(1)
@@ -77,7 +77,7 @@ class FunRandomSubSelectorCardModel(ViewModel):
 
     def _initialize(self):
         super(FunRandomSubSelectorCardModel, self)._initialize()
-        self._addViewModelProperty('performance', ModeSelectorPerformanceModel())
+        self._addViewModelProperty('performance', ModePerformanceModel())
         self._addStringProperty('assetsPointer', '')
         self._addNumberProperty('subModeId', 0)
         self._addStringProperty('conditions', '')

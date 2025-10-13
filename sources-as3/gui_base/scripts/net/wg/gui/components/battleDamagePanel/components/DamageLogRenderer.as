@@ -6,6 +6,7 @@ package net.wg.gui.components.battleDamagePanel.components
    import flash.text.TextFieldAutoSize;
    import flash.text.TextFormat;
    import net.wg.data.constants.Values;
+   import net.wg.data.constants.generated.BATTLEATLAS;
    import net.wg.data.constants.generated.BATTLEDAMAGELOG_IMAGES;
    import net.wg.data.constants.generated.DAMAGE_LOG_SHELL_BG_TYPES;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
@@ -35,8 +36,6 @@ package net.wg.gui.components.battleDamagePanel.components
       private static const BLIND_POSTFIX:String = "Blind";
       
       private static const VEH_TF_X_OFFSET:uint = 10;
-      
-      private static const ICONS_WITH_BLIND:Vector.<String> = new <String>[BATTLEDAMAGELOG_IMAGES.DAMAGELOG_BURN_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_CRITICAL_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_DAMAGE_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_RAM_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_BY_MINE_FIELD_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_AIRSTRIKE_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_AIRSTRIKE_EQ_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_ARTILLERY_ENEMY_16X16,BATTLEDAMAGELOG_IMAGES.DAMAGELOG_ARTILLERY_EQ_ENEMY_16X16];
       
       private static const SHELL_TF_BORDER_PADDING:uint = 2;
       
@@ -222,7 +221,7 @@ package net.wg.gui.components.battleDamagePanel.components
             return;
          }
          var _loc2_:String = this._actionAtlasIconPath;
-         if(param1 && ICONS_WITH_BLIND.indexOf(_loc2_) >= 0)
+         if(param1 && BATTLEATLAS.DAMAGE_LOG_ALL_16X16_BLIND_ENUM.indexOf(_loc2_ + BLIND_POSTFIX) >= 0)
          {
             _loc2_ += BLIND_POSTFIX;
          }

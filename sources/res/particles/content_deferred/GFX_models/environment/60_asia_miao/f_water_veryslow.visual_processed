@@ -72,7 +72,7 @@
 						<Vector4>0.862745 0.800000 0.717647 1.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.198669 -5.484592 -1.193613</groupOrigin>
+				<groupOrigin>-0.200464 -9.101227 -1.365134</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -81,5 +81,5 @@
 		<max>2.195831 0.011668 0.224806</max>
 	</boundingBox>
 	<primitivesName>particles/content_deferred/GFX_models/environment/33_fjord/waterfall_main_02</primitivesName>
-	<geometrySize>1092</geometrySize>
+	<geometrySize>4272</geometrySize>
 </root>

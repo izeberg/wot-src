@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
 from fun_random_common.fun_constants import UNKNOWN_EVENT_ID
@@ -85,7 +86,7 @@ def getTotalTMenXPToShow(reusable, _=None, __=None):
 
 def getTotalGoldToShow(reusable):
     records = getDirectMoneyRecords(reusable).extraValue
-    return sum([ records.findRecord(recordName) for recordName in ('eventGoldList_', ) ])
+    return sum(records.findRecord(recordName) for recordName in ('eventGoldList_', ))
 
 
 def isFunAddXpBonusStatusAcceptable(status, reusable, hasPremiumPlus):

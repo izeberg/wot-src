@@ -60,18 +60,10 @@
 					<name>comp7GrandTournamentBanner</name>
 					<visible>False</visible>
 				</component>
-				<component>
-					<name>battleRoyalePanels</name>
-					<visible>False</visible>
-				</component>
-				<component>
-					<name>battleRoyaleTournamentBanner</name>
-					<visible>False</visible>
-				</component>
 			</components>
 		</preset>
 		<preset>
-			<name>random</name>
+			<name>default</name>
 			<basePreset>empty</basePreset>
 			<components>
 				<component>
@@ -104,10 +96,6 @@
 					<visible>True</visible>
 				</component>
 				<component>
-					<name>dailyQuest</name>
-					<visible>True</visible>
-				</component>
-				<component>
 					<name>prestigeWidget</name>
 					<visible>True</visible>
 					<isChangeable>True</isChangeable>
@@ -129,8 +117,13 @@
 			</components>
 		</preset>
 		<preset>
+			<name>random</name>
+			<basePreset>default</basePreset>
+			<components/>
+		</preset>
+		<preset>
 			<name>ranked</name>
-			<basePreset>random</basePreset>
+			<basePreset>default</basePreset>
 			<components>
 				<component>
 					<name>alertMessage</name>
@@ -155,7 +148,7 @@
 		</preset>
 		<preset>
 			<name>mapbox</name>
-			<basePreset>random</basePreset>
+			<basePreset>default</basePreset>
 			<components>
 				<component>
 					<name>alertMessage</name>
@@ -175,7 +168,7 @@
 		</preset>
 		<preset>
 			<name>comp7</name>
-			<basePreset>random</basePreset>
+			<basePreset>default</basePreset>
 			<components>
 				<component>
 					<name>alertMessage</name>
@@ -206,12 +199,16 @@
 	</presets>
 	<queueTypePresets>
 		<item>
+			<queueType>0</queueType>
+			<presetName>default</presetName>
+		</item>
+		<item>
 			<queueType>1</queueType>
 			<presetName>random</presetName>
 		</item>
 		<item>
 			<queueType>7</queueType>
-			<presetName>random</presetName>
+			<presetName>default</presetName>
 		</item>
 		<item>
 			<queueType>17</queueType>
@@ -223,7 +220,7 @@
 		</item>
 		<item>
 			<queueType>24</queueType>
-			<presetName>random</presetName>
+			<presetName>default</presetName>
 		</item>
 		<item>
 			<queueType>29</queueType>
@@ -231,11 +228,11 @@
 		</item>
 		<item>
 			<queueType>30</queueType>
-			<presetName>random</presetName>
+			<presetName>default</presetName>
 		</item>
 		<item>
 			<queueType>32</queueType>
-			<presetName>random</presetName>
+			<presetName>default</presetName>
 		</item>
 	</queueTypePresets>
 </root>

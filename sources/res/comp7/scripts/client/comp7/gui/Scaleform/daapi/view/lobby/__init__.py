@@ -25,8 +25,8 @@ def getViewSettings():
     from gui.Scaleform.daapi.view.lobby.vehicle_preview.configurable_vehicle_preview import ConfigurableVehiclePreview
     return (
      ViewSettings(COMP7_HANGAR_ALIASES.COMP7_PRIME_TIME_ALIAS, Comp7PrimeTimeView, getSwfExtensionUrl('comp7_core', COMP7_CORE_HANGAR_ALIASES.COMP7_CORE_PRIME_TIME_SWF), WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_PRIME_TIME_ALIAS, ScopeTemplates.LOBBY_SUB_SCOPE, True),
-     ViewSettings(COMP7_HANGAR_ALIASES.COMP7_STYLE_PREVIEW, VehicleStylePreview, getSwfExtensionUrl('comp7_core', COMP7_CORE_HANGAR_ALIASES.COMP7_CORE_STYLE_PREVIEW_SWF), WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_STYLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
-     ViewSettings(COMP7_HANGAR_ALIASES.COMP7_CONFIGURABLE_VEHICLE_PREVIEW, ConfigurableVehiclePreview, getSwfExtensionUrl('comp7_core', COMP7_CORE_HANGAR_ALIASES.COMP7_CORE_VEHICLE_PREVIEW_SWF), WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_CONFIGURABLE_VEHICLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
+     ViewSettings(COMP7_HANGAR_ALIASES.COMP7_STYLE_PREVIEW, VehicleStylePreview, 'vehicleBasePreview.swf', WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_STYLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
+     ViewSettings(COMP7_HANGAR_ALIASES.COMP7_CONFIGURABLE_VEHICLE_PREVIEW, ConfigurableVehiclePreview, 'vehiclePreview.swf', WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_CONFIGURABLE_VEHICLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(COMP7_HANGAR_ALIASES.COMP7_LOBBY_HANGAR, Comp7HangarWindow, '', WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_LOBBY_HANGAR, ScopeTemplates.LOBBY_SUB_SCOPE),
      ComponentSettings(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER, TournamentsWidgetComponent, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER, Comp7GrandTournamentsWidgetComponent, ScopeTemplates.DEFAULT_SCOPE),

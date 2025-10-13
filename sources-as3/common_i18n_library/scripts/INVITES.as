@@ -45,6 +45,8 @@ package
       
       public static const INVITES_PREBATTLE_ALREADYJOINED_TRAINING_COMP7:String = "#invites:invites/prebattle/alreadyJoined/TRAINING_COMP7";
       
+      public static const INVITES_PREBATTLE_ALREADYJOINED_BATTLE_ROYALE:String = "#invites:invites/prebattle/alreadyJoined/BATTLE_ROYALE";
+      
       public static const INVITES_TEXT_CREATORNAME:String = "#invites:invites/text/creatorName";
       
       public static const INVITES_TEXT_SQUAD:String = "#invites:invites/text/SQUAD";

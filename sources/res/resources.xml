@@ -39,6 +39,7 @@
 		<terrain2>system/data/terrain2.xml</terrain2>
 		<lightOnlyEffect>shaders/std_effects/lightonly.fx</lightOnlyEffect>
 		<defaultFloorTexture>helpers/maps/system/default.dds</defaultFloorTexture>
+		<defaultTankDetailAtlas>vehicles/russian/Tank_detail/Detail_T2DA.dds</defaultTankDetailAtlas>
 		<decalEffect>shaders/decal/decal.fx</decalEffect>
 		<textureDetailLevels>system/data/texture_detail_levels.xml</textureDetailLevels>
 		<bloom>
@@ -306,6 +307,7 @@
 			<path>particles/Tank/rocket_accelerator/Ch61_DZT_159_Rocket.prefab</path>
 			<path>particles/Tank/customization/Ch62_BZ_75_M/Ch62_BZ_75_M_Rocket.prefab</path>
 			<path>particles/Tank/rocket_accelerator/G186_Schwertwal_Rocket.prefab</path>
+			<path>particles/Tank/rocket_accelerator/Ch63_Yong_Bing_Rocket.prefab</path>
 			<path>particles/Tank/customization/Ch62_BZ_75_M/Ch62_BZ_75_M_Rocket.prefab</path>
 			<path>content/CGFPrefabs/Vehicle/mechanic_effects/concentration_mode_vfx.prefab</path>
 			<path>content/CGFPrefabs/Vehicle/mechanic_effects/battle_fury.prefab</path>

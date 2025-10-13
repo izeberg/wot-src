@@ -1332,7 +1332,7 @@ class FrontlineInstallReserves(AsyncGUIItemAction):
         if not self.__skillsInteractor:
             callback(True)
         else:
-            dialogResult = yield future_async.wg_await(shared_events.showFrontlineConfirmDialog(skillsInteractor=self.__skillsInteractor, vehicleType=self.__vehicle.type, isBuy=False))
+            dialogResult = yield future_async.wg_await(shared_events.showFrontlineConfirmDialog(skillsInteractor=self.__skillsInteractor, vehicleType=self.__vehicle.type))
             if dialogResult is None or dialogResult.busy:
                 callback(False)
             isOK, data = dialogResult.result

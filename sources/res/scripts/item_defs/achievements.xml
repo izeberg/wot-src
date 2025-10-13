@@ -11717,7 +11717,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1447.6
+					1468.1
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -11741,7 +11741,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1447.7
+					1468.2
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -11765,7 +11765,7 @@
 					<name>section</name>
 				</item>
 				<item>
-					1447.8
+					1468.3
 					<!--BW_String-->
 					<name>weight</name>
 					<type>float</type>
@@ -12372,6 +12372,30 @@
 				</item>
 				<item>
 					random
+					<name>mode</name>
+				</item>
+			</value>
+		</achievement>
+		<achievement>
+			<name>singleAchievements:hw2025Medal</name>
+			<type>dict</type>
+			<value>
+				<item>
+					single
+					<name>type</name>
+				</item>
+				<item>
+					action
+					<name>section</name>
+				</item>
+				<item>
+					1448.7
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					all
 					<name>mode</name>
 				</item>
 			</value>

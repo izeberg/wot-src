@@ -64,6 +64,10 @@
 						colorIdMap
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.000986 0.469519 0.000436</groupOrigin>
 			</primitiveGroup>

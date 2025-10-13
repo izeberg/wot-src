@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It37_Serpente/crash/lod2/Gun_02</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It37_Serpente/crash/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.670208 -0.812122 -1.808584</min>
+		<max>0.671972 0.380260 7.194800</max>
+	</visibilityBox>
+</root>

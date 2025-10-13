@@ -198,8 +198,8 @@
 						<Float>0.151661</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.014371 0.095166 0.230137</groupOrigin>

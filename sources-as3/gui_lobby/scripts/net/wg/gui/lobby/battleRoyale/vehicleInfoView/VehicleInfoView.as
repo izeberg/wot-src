@@ -13,20 +13,17 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
    import net.wg.data.constants.generated.TOOLTIPS_CONSTANTS;
    import net.wg.gui.components.battleRoyale.VehModuleConfiguratorCmp;
    import net.wg.gui.components.controls.ImageTextComponent;
-   import net.wg.gui.interfaces.ISoundButtonEx;
    import net.wg.gui.lobby.battleRoyale.vehicleInfoView.data.VehicleInfoViewVO;
    import net.wg.infrastructure.base.meta.IBattleRoyaleVehicleInfoMeta;
    import net.wg.infrastructure.base.meta.impl.BattleRoyaleVehicleInfoMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import scaleform.clik.constants.InvalidationType;
-   import scaleform.clik.events.ButtonEvent;
    
-   public class VehicleInfoView extends BattleRoyaleVehicleInfoMeta implements IBattleRoyaleVehicleInfoMeta
+   public class VehicleInfoView extends BattleRoyaleVehicleInfoMeta implements IBattleRoyaleVehicleInfoMeta, IInnerView
    {
       
-      private static const CLOSE_BUTTON_OFFSET:int = -40;
-      
-      private static const INFO_LABEL_OFFSET:int = -32;
+      private static const INFO_LABEL_OFFSET:int = -90;
       
       private static const MESSENGER_BAR_HEIGHT:int = 38;
       
@@ -37,13 +34,15 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
       private static const ICON_OFFSET_Y:int = 3;
       
       private static const VEHICLE_TITLE_X_OFFSET:int = 20;
+      
+      private static const VEHICLE_TITLE_Y_OFFSET:int = 120;
+      
+      private static const TUTORIAL_Y_OFFSET:int = 40;
        
       
       public var moduleConfigurator:VehModuleConfiguratorCmp = null;
       
       public var background:Sprite = null;
-      
-      public var closeButton:ISoundButtonEx = null;
       
       public var vehicleTitle:ImageTextComponent = null;
       
@@ -83,7 +82,6 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
          this.infoLabel.horizontalAlign = this.infoLabel.verticalAlign = AlignType.CENTER;
          this.vehicleTitle.horizontalAlign = this.vehicleTitle.verticalAlign = AlignType.CENTER;
          App.gameInputMgr.setKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscape,true);
-         this.closeButton.addEventListener(ButtonEvent.CLICK,this.handleEscape,false,0,true);
          this._tooltipMgr = App.toolTipMgr;
          this.infoLabel.addEventListener(MouseEvent.ROLL_OVER,this.onInfoLabelRollOverHandler,false,0,true);
          this.infoLabel.addEventListener(MouseEvent.ROLL_OUT,this.onInfoLabelRollOutHandler,false,0,true);
@@ -98,7 +96,6 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
          {
             this.vehicleTitle.htmlText = this._dataVO.vehTitle;
             this.vehicleTitle.iconSource = this._dataVO.vehTypeIcon;
-            this.closeButton.label = this._dataVO.btnCloseLabel;
             this.infoLabel.iconSource = this._dataVO.infoIconSource;
             this.infoLabel.htmlText = this._dataVO.infoText;
             this.tutorialTF.text = this._dataVO.tutorialText;
@@ -108,9 +105,10 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
             this.background.width = width;
             this.background.height = height + MESSENGER_BAR_HEIGHT;
             this.vehicleTitle.x = this.infoLabel.x = (width >> 1) - VEHICLE_TITLE_X_OFFSET;
-            this.infoLabel.y = height + INFO_LABEL_OFFSET | 0;
-            this.closeButton.x = width - this.closeButton.width + CLOSE_BUTTON_OFFSET | 0;
+            this.infoLabel.y = height + INFO_LABEL_OFFSET;
             this.tutorialTF.x = width - this.tutorialTF.width >> 1;
+            this.vehicleTitle.y = VEHICLE_TITLE_Y_OFFSET;
+            this.tutorialTF.y = this.vehicleTitle.y + TUTORIAL_Y_OFFSET;
             _loc1_ = height - TITLE_HEIGHT;
             _loc2_ = this.moduleConfigurator.getBounds(this.moduleConfigurator);
             this.moduleConfigurator.x = (width - _loc2_.width >> 1) - _loc2_.x;
@@ -125,13 +123,10 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
          App.gameInputMgr.clearKeyHandler(Keyboard.ESCAPE,KeyboardEvent.KEY_DOWN,this.handleEscape);
          this.infoLabel.removeEventListener(MouseEvent.ROLL_OVER,this.onInfoLabelRollOverHandler);
          this.infoLabel.removeEventListener(MouseEvent.ROLL_OUT,this.onInfoLabelRollOutHandler);
-         this.closeButton.removeEventListener(ButtonEvent.CLICK,this.handleEscape);
          this.vehicleTitle.dispose();
          this.vehicleTitle = null;
          this.infoLabel.dispose();
          this.infoLabel = null;
-         this.closeButton.dispose();
-         this.closeButton = null;
          this.moduleConfigurator = null;
          this.background = null;
          this.tutorialTF = null;
@@ -145,6 +140,16 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView
          this._dataVO = param1;
          invalidateData();
          invalidateSize();
+      }
+      
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         setViewSize(param1,param2);
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return true;
       }
       
       private function handleEscape(param1:Event) : void

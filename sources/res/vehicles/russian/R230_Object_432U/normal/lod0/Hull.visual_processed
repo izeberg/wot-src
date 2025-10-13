@@ -177,12 +177,12 @@
 						<Float>0.210405</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.430000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.000000 -0.022819 0.179344</groupOrigin>

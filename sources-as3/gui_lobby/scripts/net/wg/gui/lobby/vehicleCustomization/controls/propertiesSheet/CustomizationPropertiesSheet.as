@@ -13,6 +13,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
    import net.wg.gui.lobby.vehicleCustomization.events.propertiesSheet.CustomizationSheetRendererEvent;
    import net.wg.infrastructure.base.meta.ICustomizationPropertiesSheetMeta;
    import net.wg.infrastructure.base.meta.impl.CustomizationPropertiesSheetMeta;
+   import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.ui.InputDetails;
    
@@ -25,11 +26,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
       
       private static const SWITCHERS_H_OFFSET:int = -12;
       
-      private static const ELEMENT_CONTROLS_SMALL_SCALE:Number = 0.85;
+      private static const ELEMENT_CONTROLS_SMALL_SCALE:Number = 0.7;
+      
+      private static const ELEMENT_CONTROLS_MEDIUM_SCALE:Number = 0.85;
       
       private static const ELEMENT_CONTROLS_NORMAL_SCALE:Number = 1;
-      
-      private static const ELEMENT_CONTROLS_SMALL_HEIGHT:int = 900;
       
       private static const CLOSE_STATUS_INVALID:String = "closeStatusInvalid";
        
@@ -136,7 +137,19 @@ package net.wg.gui.lobby.vehicleCustomization.controls.propertiesSheet
       
       private function onStageResizeHandler(param1:Event = null) : void
       {
-         var _loc2_:Number = App.appHeight > ELEMENT_CONTROLS_SMALL_HEIGHT ? Number(ELEMENT_CONTROLS_NORMAL_SCALE) : Number(ELEMENT_CONTROLS_SMALL_SCALE);
+         var _loc2_:Number = NaN;
+         if(App.appHeight < StageSizeBoundaries.HEIGHT_900)
+         {
+            _loc2_ = ELEMENT_CONTROLS_SMALL_SCALE;
+         }
+         else if(App.appHeight < StageSizeBoundaries.HEIGHT_1080)
+         {
+            _loc2_ = ELEMENT_CONTROLS_MEDIUM_SCALE;
+         }
+         else
+         {
+            _loc2_ = ELEMENT_CONTROLS_NORMAL_SCALE;
+         }
          this.elementsControls.scaleX = this.elementsControls.scaleY = _loc2_;
       }
       

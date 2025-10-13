@@ -27,9 +27,6 @@ msgstr "This mode is not available on the %(serverName)s server"
 msgid "alertMessage/button/changeServer"
 msgstr "Select Another Server"
 
-msgid "alertMessage/button/moreInfo"
-msgstr "Details"
-
 msgid "alertMessage/notAvailable"
 msgstr "Ceasefire is in effect on the %(serverName)s server"
 
@@ -66,7 +63,10 @@ msgid "alertMessage/undefined"
 msgstr "?empty?"
 
 msgid "alertMessage/unsuitableVehicles"
-msgstr "No suitable vehicles in your Garage"
+msgstr "No suitable vehicles"
+
+msgid "banner/progression/steps"
+msgstr "{{done}}/{{total}}"
 
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
@@ -77,23 +77,26 @@ msgstr "%(start)s–%(end)s"
 msgid "calendarDay/title"
 msgstr "Schedule"
 
-msgid "entryPoint/activeStatus"
-msgstr "Until %(endDate)s"
+msgid "entryPoint/tooltip/modeBtnText"
+msgstr "MODE"
 
-msgid "entryPoint/endDate"
-msgstr "Until %(month)s %(day)s"
+msgid "entryPoint/tooltip/modeDescription"
+msgstr "{{mode}} — switching to another game mode"
 
-msgid "entryPoint/lessMinute"
-msgstr "<1 min"
+msgid "entryPoint/tooltip/state/announce"
+msgstr "Mode will be available"
 
-msgid "entryPoint/notPrimeTimes/status"
-msgstr "Battles will be available soon"
+msgid "entryPoint/tooltip/state/ceasefire"
+msgstr "Ceasefire {{timer}}"
 
-msgid "entryPoint/seasonFinished/status"
+msgid "entryPoint/tooltip/state/finished/description"
 msgstr "Battles have ended"
 
-msgid "entryPoint/startDate"
-msgstr "From %(month)s %(day)s"
+msgid "entryPoint/tooltip/state/finished/title"
+msgstr "Mode is no longer available"
+
+msgid "entryPoint/tooltip/state/progress"
+msgstr "Mode will be available for {{timer}}"
 
 msgid "funRandomCarousel/lockedTooltip/vehClass/body"
 msgstr "%(forbiddenClass)s cannot fight in %(modeName)s battles."
@@ -221,10 +224,16 @@ msgid "modeSubSelector/subModeCard/soonWillStart"
 msgstr "Coming Soon"
 
 msgid "modeSubSelector/subModeCard/startTimer"
-msgstr "Starts in:"
+msgstr "It will start in"
 
 msgid "modeSubSelector/subtitle"
 msgstr "SELECT SUBMODE"
+
+msgid "modes/development/banner/progression/finish"
+msgstr "Dev All Stages completed"
+
+msgid "modes/development/banner/progression/resettable"
+msgstr "Dev Progression update"
 
 msgid "modes/development/capsUserName"
 msgstr "?empty?"
@@ -232,16 +241,29 @@ msgstr "?empty?"
 msgid "modes/development/detailedUserName"
 msgstr "?empty?"
 
-msgid "modes/development/entryPoint/performance/tooltip/highRisk/body"
+msgid "modes/development/entryPoint/inProgress/description"
+msgstr "Join the action!"
+
+msgid "modes/development/entryPoint/intro/description"
+msgstr "Enter the fray!"
+
+msgid "modes/development/entryPoint/tooltip/description"
+msgstr ""
+"Arcade Cabinet events are unique, time-limited activities that offer "
+"something different! Battle in exclusive modes with game-changing rules, "
+"complete missions, and earn rare rewards."
+
+msgid "modes/development/entryPoint/tooltip/performance/highRisk/description"
 msgstr "Dev High risks description."
 
-msgid "modes/development/entryPoint/performance/tooltip/highRisk/header"
+msgid "modes/development/entryPoint/tooltip/performance/highRisk/header"
 msgstr "Dev Low Performance"
 
-msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/body"
+msgid ""
+"modes/development/entryPoint/tooltip/performance/mediumRisk/description"
 msgstr "Dev Medium risks description."
 
-msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/header"
+msgid "modes/development/entryPoint/tooltip/performance/mediumRisk/header"
 msgstr "Dev Reduced Performance"
 
 msgid "modes/development/lootbox/fep_epic"
@@ -335,7 +357,7 @@ msgid "modes/development/progression/infinite/mainProgressionFinished"
 msgstr "?empty?"
 
 msgid "modes/development/progression/questsList/quest/infinityStageProgress"
-msgstr "?empty?"
+msgstr "Dev Get as many rewards as you can:"
 
 msgid "modes/development/progression/questsList/totalPointsEarned"
 msgstr "?empty?"
@@ -383,33 +405,247 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/equalized/banner/progression/finish"
+msgstr "All Stages completed"
+
+msgid "modes/equalized/banner/progression/resettable"
+msgstr "Progression update"
+
+msgid "modes/equalized/capsUserName"
+msgstr "EQUALIZE!"
+
+msgid "modes/equalized/detailedUserName"
+msgstr "%(subModeName)s"
+
+msgid "modes/equalized/entryPoint/inProgress/description"
+msgstr "Bring down the giants!"
+
+msgid "modes/equalized/entryPoint/intro/description"
+msgstr "Bring down the giants!"
+
+msgid "modes/equalized/entryPoint/tooltip/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, damage, and penetration. The lower a vehicle's tier, the more its parameters are enhanced—making low-tier vehicles much more dangerous!\n"
+"Spending and earning resources in battles is disabled."
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "modes/equalized/lootbox/fep_epic"
+msgstr "Epic random reward"
+
+msgid "modes/equalized/lootbox/fep_legendary"
+msgstr "Legendary random reward"
+
+msgid "modes/equalized/lootbox/fep_ordinary"
+msgstr "Common random reward"
+
+msgid "modes/equalized/lootbox/fep_rare"
+msgstr "Rare random reward"
+
+msgid "modes/equalized/lootbox/fep_unusual"
+msgstr "Uncommon random reward"
+
+msgid "modes/equalized/metaProgressionTooltip/header/active"
+msgstr "Equalize! Mission – Stage: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/equalized/metaProgressionTooltip/reward/tip"
+msgstr "Your progress is counted in any Arcade Cabinet submode."
+
+msgid "modes/equalized/metaProgressionTooltip/subheader"
+msgstr "Equalize! Mission"
+
+msgid "modes/equalized/modeSubSelector/progression/info"
+msgstr "Your progress is counted in any Arcade Cabinet submode."
+
+msgid "modes/equalized/modeSubSelector/progression/timer"
+msgstr "until a new Arcade Cabinet mission is available"
+
+msgid "modes/equalized/mode_selector/battleCondition"
+msgstr "Battles format: 15v15"
+
+msgid "modes/equalized/mode_selector/description"
+msgstr "Experimental battles with non-standard rules."
+
+msgid "modes/equalized/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "modes/equalized/mode_selector/performance/highRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
+
+msgid "modes/equalized/mode_selector/progression/resettable"
+msgstr "A new Equalize! mission is available in:"
+
+msgid "modes/equalized/notification/finishSubModes/withProgression"
+msgstr "The %(subModeName)s submode has ended. Progression reset."
+
+msgid "modes/equalized/notification/finishSubModes/withoutProgression"
+msgstr "The %(subModeName)s submode has ended."
+
+msgid "modes/equalized/notification/newSubModes/withProgression"
+msgstr "New rewards and the %(subModeName)s submode are available."
+
+msgid "modes/equalized/notification/newSubModes/withoutProgression"
+msgstr "A new submode is available: %(subModeName)s."
+
+msgid "modes/equalized/notification/switchOffSubModes"
+msgstr "The %(subModeName)s submode is unavailable due to maintenance."
+
+msgid "modes/equalized/notification/switchOnSubModes"
+msgstr "The %(subModeName)s submode is available again."
+
+msgid "modes/equalized/progression/cardsFan/listOfRandomRewards"
+msgstr "Reward List"
+
+msgid "modes/equalized/progression/complete/congratulations"
+msgstr "Congratulations!"
+
+msgid "modes/equalized/progression/complete/title"
+msgstr "You completed the Progression"
+
+msgid "modes/equalized/progression/infinite/congratulations"
+msgstr "Congratulations!"
+
+msgid "modes/equalized/progression/infinite/infinityStep"
+msgstr "Repeatable Stage"
+
+msgid "modes/equalized/progression/infinite/mainProgressionFinished"
+msgstr "You completed the Main Progression"
+
+msgid "modes/equalized/progression/questsList/quest/infinityStageProgress"
+msgstr "Get as many rewards as you can:"
+
+msgid "modes/equalized/progression/questsList/totalPointsEarned"
+msgstr "Points earned: {{progressionSteps}}"
+
+msgid ""
+"modes/equalized/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "Points earned:"
+
+msgid "modes/equalized/progression/title"
+msgstr "EQUALIZE! MISSIONS"
+
+msgid "modes/equalized/rewardsView/header"
+msgstr "LEGENDARY REWARD RECEIVED"
+
+msgid "modes/equalized/scheduler/notification/available"
+msgstr "The %(subModeName)s battles are available again."
+
+msgid "modes/equalized/scheduler/notification/available/title"
+msgstr "Ceasefire"
+
+msgid "modes/equalized/scheduler/notification/modeEnded"
+msgstr "The %(subModeName)s battles have ended"
+
+msgid "modes/equalized/scheduler/notification/modeEnded/title"
+msgstr "Ceasefire"
+
+msgid "modes/equalized/scheduler/notification/primeTime"
+msgstr ""
+"Ceasefire is in effect. The %(subModeName)s battles are temporarily "
+"unavailable."
+
+msgid "modes/equalized/scheduler/notification/primeTime/title"
+msgstr "Ceasefire"
+
+msgid "modes/equalized/tierList/description"
+msgstr ""
+"Each random reward is an item from the list below that you can receive with "
+"a certain probability."
+
+msgid "modes/equalized/tierList/title"
+msgstr "What's Inside?"
+
+msgid "modes/equalized/tooltip/filter/body"
+msgstr "Show/hide suitable vehicles for Equalize! mode."
+
+msgid "modes/equalized/tooltip/filter/header"
+msgstr "Equalize! Vehicles"
+
+msgid "modes/equalized/userName"
+msgstr "Equalize!"
+
+msgid "modes/undefined/banner/progression/finish"
+msgstr "All Stages completed"
+
+msgid "modes/undefined/banner/progression/resettable"
+msgstr "Progression update"
+
 msgid "modes/undefined/capsUserName"
 msgstr "ARCADE CABINET"
 
 msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s: %(subModeName)s"
 
-msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/body"
+msgid "modes/undefined/entryPoint/inProgress/description"
+msgstr "Join the action!"
+
+msgid "modes/undefined/entryPoint/intro/description"
+msgstr "Enter the fray!"
+
+msgid "modes/undefined/entryPoint/tooltip/description"
 msgstr ""
-"At low graphics settings, visual artifacts and issues may occur. We "
-"recommend selecting the highest graphics setting for the best experience "
-"possible, provided that your computer specs meet the requirements. The mode "
-"demands high computer performance. The FPS rate may decrease during "
-"intensive fighting."
+"Arcade Cabinet events are unique, time-limited activities that offer "
+"something different! Battle in exclusive modes with game-changing rules, "
+"complete missions, and earn rare rewards."
 
-msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/header"
-msgstr "Highest graphics settings recommended"
-
-msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/body"
+msgid "modes/undefined/entryPoint/tooltip/performance/highRisk/description"
 msgstr ""
-"At low graphics settings, visual artifacts and issues may occur. We "
-"recommend selecting the highest graphics setting for the best experience "
-"possible, provided that your computer specs meet the requirements. The mode "
-"demands high computer performance. The FPS rate may decrease during "
-"intensive fighting."
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
 
-msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/header"
-msgstr "Highest graphics settings recommended"
+msgid "modes/undefined/entryPoint/tooltip/performance/highRisk/header"
+msgstr "Possible Reduced Performance"
+
+msgid "modes/undefined/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "modes/undefined/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "Possible Reduced Performance"
 
 msgid "modes/undefined/lootbox/fep_epic"
 msgstr "Epic random reward"
@@ -519,10 +755,10 @@ msgid "modes/undefined/progression/infinite/mainProgressionFinished"
 msgstr "You completed the Main Progression"
 
 msgid "modes/undefined/progression/questsList/quest/infinityStageProgress"
-msgstr "Get as many rewards as you can: %(currentPoints) / %(infinitySign)s"
+msgstr "Get as many rewards as you can:"
 
 msgid "modes/undefined/progression/questsList/totalPointsEarned"
-msgstr "Points earned: %(progressionSteps)s"
+msgstr "Points earned: {{progressionSteps}}"
 
 msgid ""
 "modes/undefined/progression/questsList/totalPointsEarnedStandAloneTitle"
@@ -756,7 +992,7 @@ msgid "primeTimes/timeText/undefined"
 msgstr "?empty?"
 
 msgid "progression/cards/points"
-msgstr "Points"
+msgstr "points"
 
 msgid "progression/complete/affirmative"
 msgstr "Affirmative!"
@@ -767,8 +1003,8 @@ msgstr "Earn Points and advance through the Progression."
 msgid "progression/infinite/pointsEarned"
 msgstr "Points earned:"
 
-msgid "progression/infinite/steps"
-msgstr "%(done)s / %(total)s"
+msgid "progression/questsList/quest/completed"
+msgstr "Completed:"
 
 msgid "progression/questsList/quest/infinityProgress"
 msgstr "Repeatable"
@@ -777,28 +1013,34 @@ msgid "progression/questsList/quest/pointsPlus"
 msgstr "+%(pointsCount)s"
 
 msgid "progression/questsList/quest/progressChangeLabel/forCompletion"
-msgstr "For completion: %(points)s"
+msgstr "For completion:"
 
 msgid "progression/questsList/quest/progressChangeLabel/forLoss"
-msgstr "For defeat: %(points)s"
+msgstr "For defeat:"
 
 msgid "progression/questsList/quest/progressChangeLabel/forWin"
-msgstr "For victory: %(points)s"
+msgstr "For victory:"
 
 msgid "progression/questsList/quest/progressChangeLabel/pointsEarned"
-msgstr "Received: %(points)s"
+msgstr "Received:"
+
+msgid "progression/questsList/quest/progressChangeLabel/template"
+msgstr "{{reason}} {{value}}"
 
 msgid "progression/questsList/quest/progressTitle"
-msgstr "Completed: %(currentPoints) / %(totalPoints)s"
+msgstr "{{completed}} {{currentPoints}} {{delimeter}} {{totalPoints}}"
+
+msgid "progression/questsList/questsFinishTimerOnelineTitle"
+msgstr "The active phase ends in: {{time}}"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "The active phase ends in: %(time)s"
+msgstr "The active phase ends in:"
 
 msgid "progression/questsList/questsRenewTimerTitle"
-msgstr "Next launch in: %(time)s"
+msgstr "Next launch in:"
 
 msgid "progression/steps"
-msgstr "%(done)s / %(total)s"
+msgstr "{{done}} {{delimeter}} {{total}}"
 
 msgid "progression/stepsCurrent"
 msgstr "{yellow_Open}%(done)s{yellow_Close} / %(total)s"
@@ -889,6 +1131,81 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/equalized/capsUserName"
+msgstr "EQUALIZE!"
+
+msgid "sub_modes/equalized/detailsHelp/page1/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, "
+"damage, and penetration. The lower a vehicle's tier, the more its parameters"
+" are enhanced—making low-tier vehicles much more dangerous!"
+
+msgid "sub_modes/equalized/detailsHelp/page1/title"
+msgstr "EQUALIZE!"
+
+msgid "sub_modes/equalized/detailsHelpHint/description"
+msgstr "?empty?"
+
+msgid "sub_modes/equalized/detailsHelpHint/press"
+msgstr "?empty?"
+
+msgid "sub_modes/equalized/detailsHelpTitle"
+msgstr "EQUALIZE!"
+
+msgid "sub_modes/equalized/subModeCard/battleCondition"
+msgstr "15x15"
+
+msgid "sub_modes/equalized/subModeCard/description"
+msgstr "Unknown subModeCard description"
+
+msgid "sub_modes/equalized/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close} Tiers&nbsp;%(levels)s"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"At low graphics settings, visual artifacts and issues may occur. We "
+"recommend selecting the highest graphics setting for the best experience "
+"possible, provided that your computer specs meet the requirements. The mode "
+"demands high computer performance. The FPS rate may decrease during "
+"intensive fighting."
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/header"
+msgstr "Highest graphics settings recommended"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon) Highest graphics settings recommended"
+
+msgid "sub_modes/equalized/subModeCard/title"
+msgstr "Unknown subModeCard title"
+
+msgid "sub_modes/equalized/tips/tip1/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, damage, and penetration. The lower a vehicle's tier, the more its parameters are enhanced—making low-tier vehicles much more dangerous!\n"
+"Spending and earning resources in battles is disabled."
+
+msgid "sub_modes/equalized/tips/tip1/title"
+msgstr "Tier I–X Battles"
+
+msgid "sub_modes/equalized/userName"
+msgstr "Equalize!"
+
+msgid "sub_modes/equalized/userName/quoted"
+msgstr "Equalize!"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

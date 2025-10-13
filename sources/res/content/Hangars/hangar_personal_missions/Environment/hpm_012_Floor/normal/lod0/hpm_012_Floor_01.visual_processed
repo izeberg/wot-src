@@ -47,8 +47,8 @@
 				<material>
 					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_tiled.fx</fx>
-					<collisionFlags>255</collisionFlags>
-					<materialKind>105</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>112</materialKind>
 					<property>
 						albedoHeightTile0
 						<Texture>content/Hangars/hangar_personal_missions/Environment/hpm_012_Floor/hpm_012_Floor_AM.dds</Texture>
@@ -111,8 +111,8 @@
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-22.231447 -0.060913 -41.273632</min>
-		<max>22.231455 1.296632 39.724033</max>
+		<min>-22.231447 -0.412959 -41.273632</min>
+		<max>23.104605 1.296632 39.724033</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
 	<geometrySize>288380</geometrySize>

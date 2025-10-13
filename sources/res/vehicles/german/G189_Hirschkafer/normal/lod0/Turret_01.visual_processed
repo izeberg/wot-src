@@ -289,8 +289,20 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.800000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.200000</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.048089 0.850559 1.000255</groupOrigin>
@@ -376,16 +388,16 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_glossMax
 						<Float>0.690173</Float>
 					</property>
 					<property>
 						g_glossMin
 						<Float>0.233526</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000825 1.380715 -0.653018</groupOrigin>

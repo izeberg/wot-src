@@ -23,15 +23,6 @@ DeathZoneWallParameters = namedtuple('DeathZoneWallParameters', [
  'enableCenter', 'maxAlpha', 'centerAlpha', 'wallHeight', 'centerHeight', 'color', 'groundLineHeight',
  'groundLineAlpha'])
 
-class DeathZoneUpdaterManager(CGF.ComponentManager):
-
-    @onProcessQuery(ArenaInfoDeathZonesComponent, tickGroup='Simulation', period=_UPDATE_PERIOD)
-    def onProcess(self, deathZones):
-        if deathZones.updatedZones:
-            g_eventBus.handleEvent(DeathZoneEvent(DeathZoneEvent.UPDATE_DEATH_ZONE, ctx={'deathZones': deathZones}), scope=EVENT_BUS_SCOPE.BATTLE)
-            deathZones.updatedZones = []
-
-
 class DeathZoneDrawManager(CGF.ComponentManager):
 
     def __init__(self, args):
@@ -50,13 +41,15 @@ class DeathZoneDrawManager(CGF.ComponentManager):
         halfSizeY = self._zoneSizeY * 0.5
         self._zonePositionOffset = Math.Vector3(halfSizeX, 0, halfSizeY)
         self._zoneScale = Math.Vector4(-halfSizeX, -halfSizeY, halfSizeX, halfSizeY)
-        g_eventBus.addListener(DeathZoneEvent.UPDATE_DEATH_ZONE, self._updateZones, scope=EVENT_BUS_SCOPE.BATTLE)
 
-    def deactivate(self):
-        g_eventBus.removeListener(DeathZoneEvent.UPDATE_DEATH_ZONE, self._updateZones, scope=EVENT_BUS_SCOPE.BATTLE)
+    @onProcessQuery(ArenaInfoDeathZonesComponent, tickGroup='Simulation', period=_UPDATE_PERIOD)
+    def onProcess(self, deathZones):
+        if deathZones.updatedZones:
+            g_eventBus.handleEvent(DeathZoneEvent(DeathZoneEvent.UPDATE_DEATH_ZONE, ctx={'deathZones': deathZones}), scope=EVENT_BUS_SCOPE.BATTLE)
+            self._updateZones(deathZones)
+            deathZones.updatedZones = []
 
-    def _updateZones(self, event):
-        deathZones = event.ctx['deathZones']
+    def _updateZones(self, deathZones):
         for zoneID in deathZones.updatedZones:
             self._drawZones(zoneID, deathZones)
 
@@ -151,7 +144,3 @@ class DeathZonesRule(Rule):
         return (
          DeathZoneWallParameters(self.activeEnableCenter, self.activeMaxAlpha, self.activeCentarAlpha, self.activeWallHeight, self.activeCenterHeight, self.activeColor, self.activeGroundLineHeight, self.activeGroundLineAlpha),
          DeathZoneWallParameters(self.waitingEnableCenter, self.waitingMaxAlpha, self.waitingCentarAlpha, self.waitingWallHeight, self.waitingCenterHeight, self.waitingColor, self.waitingGroundLineHeight, self.waitingGroundLineAlpha))
-
-    @registerManager(DeathZoneUpdaterManager)
-    def registerDeathZoneUpdaterManager(self):
-        return

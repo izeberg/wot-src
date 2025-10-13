@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl36_Wz_64GC_Bzyg/crash/lod1/Gun_03</nodefullVisual>
+	<parent>vehicles/poland/Pl36_Wz_64GC_Bzyg/crash/lod2/Gun_03</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.350352 -0.285975 -1.468532</min>
+		<max>0.397805 0.391109 5.564356</max>
+	</visibilityBox>
+</root>

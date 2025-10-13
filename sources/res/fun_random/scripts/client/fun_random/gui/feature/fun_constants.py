@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from enum import unique, Enum
 from gui.periodic_battles.models import PeriodType
 FEP_MODE_ITEMS_QUEST_ID = 'FEP_mode_items'

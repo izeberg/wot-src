@@ -109,7 +109,19 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          super.onDispose();
       }
       
+      public function setAccuracyStacks(param1:int) : void
+      {
+      }
+      
+      public function setAccuracyStacksVisible(param1:Boolean) : void
+      {
+      }
+      
       public function setAimDamageStage(param1:String) : void
+      {
+      }
+      
+      public function setChargeableBurstMode(param1:Boolean) : void
       {
       }
       
@@ -146,6 +158,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       {
       }
       
+      public function showPenetrationFx() : void
+      {
+      }
+      
       protected function setCurrentReloading(param1:Number) : void
       {
          var _loc2_:String = param1 < 1 ? NODE_TYPE_RED : NODE_TYPE_GREEN;
@@ -155,10 +171,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             this._nodes[_loc3_].gotoAndStop(_loc2_);
             _loc3_++;
          }
-      }
-      
-      public function showPenetrationFx() : void
-      {
       }
    }
 }

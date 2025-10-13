@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.battle_control.arena_info.arena_descrs import ArenaDescriptionWithInvitation
 from gui.impl import backport
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
@@ -6,7 +7,7 @@ from fun_random.gui.feature.util.fun_wrappers import hasBattleSubMode
 class FunRandomArenaDescription(ArenaDescriptionWithInvitation, FunAssetPacksMixin, FunSubModesWatcher):
 
     def getBattleTypeIconPath(self, sizeFolder='c_136x136'):
-        iconRes = self.getModeIconsResRoot().battle_type.dyn(sizeFolder).dyn(self.getFrameLabel())
+        iconRes = self.getModeIconsResRoot().battleTypes.dyn(sizeFolder).dyn(self.getFrameLabel())
         if iconRes.exists():
             return backport.image(iconRes())
         return ''

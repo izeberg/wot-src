@@ -1717,6 +1717,10 @@
 					2.1 2.1 0.000000 0.000000
 					<!--BW_String-->
 				</uk:GB12_Conqueror>
+				<uk:GB157_FV214t>
+					2.1 2.1 0.000000 0.000000
+					<!--BW_String-->
+				</uk:GB157_FV214t>
 				<uk:GB12_Conqueror_FL>
 					2.1 2.1 0.000000 0.000000
 					<!--BW_String-->
@@ -4850,6 +4854,10 @@
 					1.08108 1.08108 0.000000 1
 					<!--BW_String-->
 				</uk:GB12_Conqueror>
+				<uk:GB157_FV214t>
+					1.08108 1.08108 0.000000 1
+					<!--BW_String-->
+				</uk:GB157_FV214t>
 				<uk:GB12_Conqueror_FL>
 					1.08108 1.08108 0.000000 1
 					<!--BW_String-->
@@ -11009,59 +11017,6 @@
 					-1.12 -6.01
 					<!--BW_String-->
 				</offset>
-			</tilingSettings>
-		</camouflage>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:camouflage/opaque</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF usa:A13_T34_hvy_BF ussr:R61_Object252_BF usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
-		<camouflage>
-			<id>377</id>
-			<texture>vehicles/russian/Camouflage/yandex.dds</texture>
-			<description>#vehicle_customization:camouflage/yandex/description</description>
-			<scales>
-				1.3 1 0.7
-				<!--BW_String-->
-			</scales>
-			<userString>#vehicle_customization:camouflage/yandex/label</userString>
-			<tags>fullRGB hiddenInUI</tags>
-			<invisibilityFactor>1</invisibilityFactor>
-			<palettes>
-				<palette>
-					<c0>255 0 0 255</c0>
-					<c1>0 255 0 255</c1>
-					<c2>0 0 255 255</c2>
-					<c3>0 0 0 0</c3>
-				</palette>
-			</palettes>
-			<rotation>
-				<HULL>
-					-1.06832
-					<!--BW_String-->
-				</HULL>
-				<TURRET>
-					-1.06832
-					<!--BW_String-->
-				</TURRET>
-				<GUN>
-					-1.06832
-					<!--BW_String-->
-				</GUN>
-			</rotation>
-			<tilingSettings>
-				<type>relativeWithFactor</type>
-				<factor>
-					2.6 2.6
-					<!--BW_String-->
-				</factor>
-				<offset>-0.000000 -0.000000</offset>
 			</tilingSettings>
 		</camouflage>
 	</itemGroup>

@@ -98,11 +98,7 @@
 						<Texture>vehicles/russian/R08_BT-2/BT-2_guns_ID.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
+						g_useDetail
 						<Bool>false</Bool>
 					</property>
 				</material>

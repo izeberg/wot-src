@@ -1,14 +1,16 @@
 package net.wg.gui.lobby.window
 {
    import flash.display.MovieClip;
+   import flash.geom.Rectangle;
    import flash.text.TextField;
    import net.wg.data.constants.generated.TEXT_MANAGER_STYLES;
    import net.wg.infrastructure.base.meta.IEpicPrimeTimeMeta;
    import net.wg.infrastructure.base.meta.impl.EpicPrimeTimeMeta;
+   import net.wg.infrastructure.interfaces.IInnerView;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    
-   public class EpicPrimeTime extends EpicPrimeTimeMeta implements IEpicPrimeTimeMeta
+   public class EpicPrimeTime extends EpicPrimeTimeMeta implements IEpicPrimeTimeMeta, IInnerView
    {
       
       private static const TITLE_TF_DEF_OFFSET:int = 70;
@@ -25,6 +27,8 @@ package net.wg.gui.lobby.window
       private var _titleText:String = null;
       
       private var _txtStyle:String = null;
+      
+      private var _isFullscreenModeSupported:Boolean = false;
       
       public function EpicPrimeTime()
       {
@@ -66,6 +70,18 @@ package net.wg.gui.lobby.window
          }
       }
       
+      public function updateStageWithPadding(param1:Number, param2:Number, param3:Rectangle) : void
+      {
+         setViewSize(param1,param2);
+         recalculateBgSize(param1,param2);
+         updateBG();
+      }
+      
+      public function isFullScreenModeSupported() : Boolean
+      {
+         return this._isFullscreenModeSupported;
+      }
+      
       public function as_setBackgroundSource(param1:String) : void
       {
          setBackground(param1);
@@ -75,6 +91,22 @@ package net.wg.gui.lobby.window
       {
          this._titleText = param1;
          invalidateSize();
+      }
+      
+      public function as_setFullscreenModeSupported(param1:Boolean) : void
+      {
+         this._isFullscreenModeSupported = param1;
+         invalidateSize();
+      }
+      
+      public function as_setCloseBtnVisibility(param1:Boolean) : void
+      {
+         closeBtn.visible = param1;
+      }
+      
+      public function as_setShadowVisibility(param1:Boolean) : void
+      {
+         this.shadow.visible = param1;
       }
    }
 }

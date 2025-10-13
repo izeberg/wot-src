@@ -9,5 +9,11 @@ package net.wg.infrastructure.base.meta
       function as_setHeaderText(param1:String) : void;
       
       function as_setBackgroundSource(param1:String) : void;
+      
+      function as_setFullscreenModeSupported(param1:Boolean) : void;
+      
+      function as_setCloseBtnVisibility(param1:Boolean) : void;
+      
+      function as_setShadowVisibility(param1:Boolean) : void;
    }
 }

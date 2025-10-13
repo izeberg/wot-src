@@ -1,5 +1,4 @@
 import logging
-from collections import namedtuple
 from constants import ARENA_BONUS_TYPE
 from gui.Scaleform.locale.BATTLE_ROYALE import BATTLE_ROYALE
 from gui.battle_control.arena_info import vos_collections
@@ -8,8 +7,6 @@ from helpers import dependency
 from skeletons.gui.lobby_context import ILobbyContext
 _logger = logging.getLogger(__name__)
 _logger.addHandler(logging.NullHandler())
-_StatsItemValues = namedtuple('_StatsItemValues', ('value', 'maxValue'))
-_NO_MAX_VALUE = -1
 
 class StatsItemType(object):
     PLACE = 'place'

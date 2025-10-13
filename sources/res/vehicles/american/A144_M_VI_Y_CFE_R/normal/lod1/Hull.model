@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A144_M_VI_Y_CFE_R/normal/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.794528 -0.467737 -3.800058</min>
+		<max>1.795309 0.849926 3.361308</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A144_M_VI_Y_CFE_R/normal/lod1/Hull</nodefullVisual>
+</root>

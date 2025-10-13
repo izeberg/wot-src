@@ -13,8 +13,6 @@ package net.wg.data.constants.generated
       
       public static const SPECIAL_TANKMAN:String = "specialTankman";
       
-      public static const BATTLE_ROYALE_PROXY_CURRENCY:String = "battleRoyaleProxyCurrency";
-      
       public static const CONTACT:String = "contact";
       
       public static const BATTLE_STATS_ACHIEVS:String = "battleStatsAchievementData";
@@ -258,6 +256,8 @@ package net.wg.data.constants.generated
       public static const FRONTLINE_RANK:String = "frontlineRank";
       
       public static const FRONTLINE_RANDOM_RESERVE:String = "FLRandomReserve";
+      
+      public static const FRONTLINE_BATTLE_ABILITY:String = "frontlineBattleAbility";
       
       public static const SPECIAL:String = "special";
       
@@ -530,16 +530,6 @@ package net.wg.data.constants.generated
       public static const BATTLE_ROYALE_MODULES_HANGAR:String = "battleRoyaleModulesHangar";
       
       public static const BATTLE_ROYALE_BATTLE_PROGRESSION:String = "battleRoyaleBattleProgression";
-      
-      public static const BATTLE_ROYALE_EQUIPMENT:String = "battleRoyaleEquipment";
-      
-      public static const BATTLE_ROYALE_VEHICLE:String = "battleRoyaleVehicle";
-      
-      public static const BATTLE_ROYALE_PERF_SIMPLE:String = "battleRoyalePerfSimple";
-      
-      public static const BATTLE_ROYALE_PERF_ADVANCED:String = "battleRoyalePerfAdvanced";
-      
-      public static const BATTLE_ROYALE_SELECTOR_INFO:String = "battleRoyaleSelectorInfo";
       
       public static const BATTLE_ROYALE_SELECTOR_CALENDAR_INFO:String = "battleRoyaleSelectorCalendarInfo";
       
@@ -827,7 +817,7 @@ package net.wg.data.constants.generated
       
       public static const FRONTLINE_SET:Array = [FRONTLINE_COUPON,FRONTLINE_RANK];
       
-      public static const FRONTLINE_BATTLE_SET:Array = [FRONTLINE_RANDOM_RESERVE];
+      public static const FRONTLINE_BATTLE_SET:Array = [FRONTLINE_RANDOM_RESERVE,FRONTLINE_BATTLE_ABILITY];
       
       public static const SESSION_STATS_SET:Array = [SESSION_STATS_TANK_INFO,SESSION_STATS_EFFICIENCY_PARAM];
       
@@ -847,7 +837,7 @@ package net.wg.data.constants.generated
       
       public static const ROYALE_BATTLE_SET:Array = [BATTLE_ROYALE_MODULES];
       
-      public static const ROYALE_LOBBY_SET:Array = [BATTLE_ROYALE_VEHICLE,BATTLE_ROYALE_MODULES_HANGAR,BATTLE_ROYALE_BATTLE_PROGRESSION,BATTLE_ROYALE_EQUIPMENT,BATTLE_ROYALE_PERF_SIMPLE,BATTLE_ROYALE_PERF_ADVANCED,BATTLE_ROYALE_SELECTOR_INFO,BATTLE_ROYALE_COMPLETED_QUESTS_INFO,BATTLE_ROYALE_SELECTOR_CALENDAR_INFO,BATTLE_ROYALE_PROXY_CURRENCY];
+      public static const ROYALE_LOBBY_SET:Array = [BATTLE_ROYALE_MODULES_HANGAR,BATTLE_ROYALE_BATTLE_PROGRESSION,BATTLE_ROYALE_SELECTOR_CALENDAR_INFO,BATTLE_ROYALE_COMPLETED_QUESTS_INFO];
       
       public static const MAPBOX_LOBBY_SET:Array = [MAPBOX_SELECTOR_INFO,MAPBOX_PROGRESSION_PREVIEW,MAPBOX_CALENDAR,MAPBOX_CALENDAR_DAY];
       

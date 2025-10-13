@@ -54,29 +54,26 @@
 			<dirtAmount>0.530000</dirtAmount>
 		</bloom>
 		<environment>
-			<sunlightLumMultiplier>0.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
+			<sunlightLumMultiplier>2.000000</sunlightLumMultiplier>
 			<sunLumMultiplier>6.370000</sunLumMultiplier>
 			<skyLumMultiplier>5.600000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.390000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>4.710000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.287860</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.680000</middleGray>
 				<whitePoint>1.690000</whitePoint>
 				<blackPoint>1.220000</blackPoint>
 			</tonemapping>
@@ -255,11 +252,11 @@
 		<sunScale>1.200000</sunScale>
 		<sunColor>119.000000 158.000000 255.000000</sunColor>
 		<sunTexture>system/maps/sun_small.dds</sunTexture>
-		<sunLightColor>1.000000 0.580000 0.400000</sunLightColor>
+		<sunLightColor>0.000000 0.000000 0.000000</sunLightColor>
 		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>false</drawSunAndMoon>
-		<sunLightColorSimplifiedDeferred>1.000000 0.580000 0.400000</sunLightColorSimplifiedDeferred>
+		<sunLightColorSimplifiedDeferred>1.000000 0.756863 0.650980</sunLightColorSimplifiedDeferred>
 		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>1.200000</sunScaleForward>
 		<sunColorForward>119.093002 157.591995 255.000000</sunColorForward>

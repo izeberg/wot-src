@@ -3479,12 +3479,9 @@
 			<maxHealth>300</maxHealth>
 			<rotationSpeed>16</rotationSpeed>
 			<turretRotatorHealth>
-				<maxHealth>100</maxHealth>
-				<maxRegenHealth>50</maxRegenHealth>
-				<repairCost>
-					1.0
-					<!--BW_String-->
-				</repairCost>
+				<maxHealth>170</maxHealth>
+				<maxRegenHealth>85</maxRegenHealth>
+				<repairCost>9</repairCost>
 			</turretRotatorHealth>
 			<circularVisionRadius>360</circularVisionRadius>
 			<surveyingDeviceHealth>

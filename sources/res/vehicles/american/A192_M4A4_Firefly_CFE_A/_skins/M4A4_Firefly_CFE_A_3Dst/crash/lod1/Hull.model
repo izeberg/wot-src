@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/_skins/M4A4_Firefly_CFE_A_3Dst/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.442430 -1.093471 -3.177530</min>
+		<max>1.441950 0.808997 3.274039</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/_skins/M4A4_Firefly_CFE_A_3Dst/crash/lod1/Hull</nodefullVisual>
+</root>

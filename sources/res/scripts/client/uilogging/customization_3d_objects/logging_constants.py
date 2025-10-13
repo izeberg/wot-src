@@ -1,6 +1,6 @@
 from enum import Enum
+from gui.filters.carousel_filter import FILTER_KEYS
 from gui.Scaleform.daapi.view.lobby.customization.shared import CustomizationTabs, CustomizationModes
-from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_filter import FILTER_KEYS
 from items.components.c11n_constants import AttachmentType
 FEATURE = 'customization_3d_objects'
 

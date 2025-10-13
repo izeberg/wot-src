@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/sweden/S35_Stridsyxa/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/sweden/S35_Stridsyxa/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.514034 -0.614220 -3.251504</min>
+		<max>1.523438 0.456587 3.286313</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

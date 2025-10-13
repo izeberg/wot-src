@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A175_LTC_II/crash/lod3/Hull</nodefullVisual>
+	<parent>vehicles/american/A175_LTC_II/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.722419 -0.822628 -3.520905</min>
+		<max>1.791278 0.840317 3.615385</max>
+	</visibilityBox>
+</root>

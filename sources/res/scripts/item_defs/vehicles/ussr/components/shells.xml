@@ -9524,7 +9524,7 @@
 		<effects>largeAPCR</effects>
 		<damage>
 			<armor>450</armor>
-			<devices>129</devices>
+			<devices>169</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
@@ -9541,7 +9541,7 @@
 		<effects>largeHollowCharge</effects>
 		<damage>
 			<armor>450</armor>
-			<devices>129</devices>
+			<devices>169</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
 		<piercingPowerLossFactorByDistance>
@@ -9565,7 +9565,7 @@
 		<effects>largeHighExplosive</effects>
 		<damage>
 			<armor>550</armor>
-			<devices>129</devices>
+			<devices>169</devices>
 		</damage>
 		<armorSpalls>
 			<impactRadius>
@@ -9574,8 +9574,8 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>260</armor>
-				<devices>60</devices>
+				<armor>275</armor>
+				<devices>85</devices>
 			</damage>
 		</armorSpalls>
 	</_125mm_3OF22_61>

@@ -1,4 +1,0 @@
-from script_component.DynamicScriptComponent import DynamicScriptComponent
-
-class LSVehicleMultiAuraHandlerComponent(DynamicScriptComponent):
-    pass

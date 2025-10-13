@@ -20,66 +20,49 @@
 				0
 				<material>
 					<identifier>Material #47</identifier>
-					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
-					<property>
-						diffuseMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/waterfall_parts_02.dds</Texture>
-					</property>
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
+					<fx>shaders/custom/volumetric_effect_vtx.fx</fx>
 					<property>
-						selfIllumLight
-						<Vector4>
-							1 1 1 0.000000
-							<!--BW_String-->
-						</Vector4>
+						TintlColor
+						<Vector4>0.870589 0.925490 0.984314 1.000000</Vector4>
+					</property>
+					<property>
+						diffuseUVSpeedAlphaOffset
+						<Vector4>0.000000 -0.400000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.000000 -0.600000 0.000000 0.100000</Vector4>
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							1 0.08 0.08 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.000000 0.080000 0.080000 0.000000</Vector4>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector4>1.000000 1.000000 1.000000 0.000000</Vector4>
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
+					</property>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 4.000000 2.000000 0.150000</Vector4>
 					</property>
 					<property>
 						enableLighting
 						<Bool>true</Bool>
 					</property>
 					<property>
-						distortion_UV_Speed_Amount
-						<Vector4>
-							0.000000 -0.8 0.000000 0.1
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/Distortion01.dds</Texture>
-					</property>
-					<property>
-						diffuseUVSpeedAlphaOffset
-						<Vector4>
-							0.000000 -0.8 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
 						alphaFreshnelEnable
 						<Bool>true</Bool>
 					</property>
 					<property>
-						alphaFadeAmountFresnel
-						<Vector4>
-							1 4 2 0.15
-							<!--BW_String-->
-						</Vector4>
+						diffuseMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/waterfall_parts_02.dds</Texture>
 					</property>
 					<property>
-						TintlColor
-						<Vector4>
-							0.870589 0.92549 0.984314 1
-							<!--BW_String-->
-						</Vector4>
+						distortionMap
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/Distortion01.dds</Texture>
 					</property>
 				</material>
 				<groupOrigin>0.057537 0.003472 2.553648</groupOrigin>

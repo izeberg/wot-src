@@ -693,27 +693,10 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.battleResults.progressReport.NewSkillInfo;
    import net.wg.gui.lobby.battleResults.progressReport.ProgressReportLinkageSelector;
    import net.wg.gui.lobby.battleResults.progressReport.UnlockLinkEvent;
-   import net.wg.gui.lobby.battleRoyale.BattleRoyaleSmallTankIcon;
-   import net.wg.gui.lobby.battleRoyale.BattleRoyaleTankCarousel;
-   import net.wg.gui.lobby.battleRoyale.BattleRoyaleTankCarouselFilters;
-   import net.wg.gui.lobby.battleRoyale.BattleRoyaleTankCarouselItemRenderer;
-   import net.wg.gui.lobby.battleRoyale.BattleRoyaleTankIcon;
-   import net.wg.gui.lobby.battleRoyale.BattleTypeSelector;
-   import net.wg.gui.lobby.battleRoyale.BottomPanelComponent;
-   import net.wg.gui.lobby.battleRoyale.HangarComponentsContainer;
-   import net.wg.gui.lobby.battleRoyale.HeaderAnimationController;
-   import net.wg.gui.lobby.battleRoyale.ProxyCurrencyPanel;
-   import net.wg.gui.lobby.battleRoyale.TechParametersComponent;
-   import net.wg.gui.lobby.battleRoyale.events.BattleTypeSelectorEvent;
-   import net.wg.gui.lobby.battleRoyale.levelUpView.BattleRoyaleLevelUpView;
-   import net.wg.gui.lobby.battleRoyale.levelUpView.BattleRoyaleMaxLevelInfo;
-   import net.wg.gui.lobby.battleRoyale.levelUpView.data.BattleRoyaleLevelUpViewVO;
    import net.wg.gui.lobby.battleRoyale.vehicleInfoView.VehicleInfoView;
    import net.wg.gui.lobby.battleRoyale.vehicleInfoView.components.ColumnHeader;
    import net.wg.gui.lobby.battleRoyale.vehicleInfoView.components.ConfiguratorRenderer;
    import net.wg.gui.lobby.battleRoyale.vehicleInfoView.data.VehicleInfoViewVO;
-   import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleHangarWidget;
-   import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleHangarWidgetVO;
    import net.wg.gui.lobby.battleRoyale.widget.data.BattleRoyaleTournamentWidget;
    import net.wg.gui.lobby.battlequeue.BattleQueue;
    import net.wg.gui.lobby.battlequeue.BattleQueueItemRenderer;
@@ -937,26 +920,20 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.epicBattles.components.EpicBattlesWidgetComponent;
    import net.wg.gui.lobby.epicBattles.components.EpicReservesPointsPanel;
    import net.wg.gui.lobby.epicBattles.components.EpicReservesPointsPanelWrapper;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesAfterBattleFameProgressBar;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesAfterBattleMaxLevelInfo;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesAnimatedTitleTextfield;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesFamePointsCounter;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesMetaLevelProgressBar;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicBattlesPlayerRank;
-   import net.wg.gui.lobby.epicBattles.components.afterBattle.EpicMetaLevelProgressBarIcons;
    import net.wg.gui.lobby.epicBattles.components.common.AlignedIconTextButton;
+   import net.wg.gui.lobby.epicBattles.components.common.EpicBattlesFamePointsCounter;
+   import net.wg.gui.lobby.epicBattles.components.common.EpicBattlesMetaLevelProgressBar;
+   import net.wg.gui.lobby.epicBattles.components.common.EpicMetaLevelProgressBarIcons;
    import net.wg.gui.lobby.epicBattles.components.common.EpicProgressBar;
    import net.wg.gui.lobby.epicBattles.components.common.alignedIconTextButton.AlignedIconTextButtonMainStates;
    import net.wg.gui.lobby.epicBattles.components.prestigeView.AwardRendererAnim;
    import net.wg.gui.lobby.epicBattles.components.prestigeView.AwardsRibbonAnim;
    import net.wg.gui.lobby.epicBattles.components.prestigeView.RewardRibbon;
    import net.wg.gui.lobby.epicBattles.components.prestigeView.TextBlock;
-   import net.wg.gui.lobby.epicBattles.data.EpicBattlesAfterBattleViewVO;
    import net.wg.gui.lobby.epicBattles.data.EpicBattlesMetaLevelVO;
    import net.wg.gui.lobby.epicBattles.data.EpicBattlesWidgetEvent;
    import net.wg.gui.lobby.epicBattles.data.EpicBattlesWidgetVO;
    import net.wg.gui.lobby.epicBattles.events.AfterBattleFameBarEvent;
-   import net.wg.gui.lobby.epicBattles.views.EpicBattlesAfterBattleView;
    import net.wg.gui.lobby.eventBoards.EventBoardsDetailsContainerView;
    import net.wg.gui.lobby.eventBoards.EventBoardsTableView;
    import net.wg.gui.lobby.eventBoards.MissionsEventBoardsView;
@@ -1138,16 +1115,13 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.eventEntryPoint.HangarEventEntriesContainer;
    import net.wg.gui.lobby.hangar.eventEntryPoint.IEventEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.data.EntryPointVO;
-   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.BREntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CommonEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.CraftMachineEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.EpicBattlesEntryPoint;
-   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.FunRandomEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MapBoxEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.MarathonEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.RankedEntryPoint;
    import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.ResizableEntryPoint;
-   import net.wg.gui.lobby.hangar.eventEntryPoint.gfWrapper.StrongholdEntryPoint;
    import net.wg.gui.lobby.hangar.interfaces.IHangar;
    import net.wg.gui.lobby.hangar.interfaces.IHangarHeader;
    import net.wg.gui.lobby.hangar.interfaces.IHeaderQuestsContainer;
@@ -1159,7 +1133,6 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.hangar.quests.BattleMattersEntryPoint;
    import net.wg.gui.lobby.hangar.quests.BattlePassEntryPoint;
    import net.wg.gui.lobby.hangar.quests.FlagContainer;
-   import net.wg.gui.lobby.hangar.quests.FunRandomHangarWidget;
    import net.wg.gui.lobby.hangar.quests.HEADER_QUESTS_CONSTANTS;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetDAAPI;
    import net.wg.gui.lobby.hangar.quests.HangarWidgetInject;
@@ -1284,6 +1257,7 @@ package net.wg.infrastructure.base.meta.impl
    import net.wg.gui.lobby.manualChapter.events.ManualViewEvent;
    import net.wg.gui.lobby.menu.Copyright;
    import net.wg.gui.lobby.menu.LobbyMenu;
+   import net.wg.gui.lobby.menu.RegionalPanel;
    import net.wg.gui.lobby.messengerBar.ButtonWithCounter;
    import net.wg.gui.lobby.messengerBar.MessegerBarInitVO;
    import net.wg.gui.lobby.messengerBar.MessengerBar;
@@ -4388,36 +4362,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_BATTLERESULTS_PROGRESSREPORT_UNLOCKLINKEVENT:Class = UnlockLinkEvent;
       
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BATTLEROYALESMALLTANKICON:Class = BattleRoyaleSmallTankIcon;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BATTLEROYALETANKCAROUSEL:Class = BattleRoyaleTankCarousel;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BATTLEROYALETANKCAROUSELFILTERS:Class = BattleRoyaleTankCarouselFilters;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BATTLEROYALETANKCAROUSELITEMRENDERER:Class = BattleRoyaleTankCarouselItemRenderer;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BATTLEROYALETANKICON:Class = BattleRoyaleTankIcon;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BATTLETYPESELECTOR:Class = BattleTypeSelector;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_BOTTOMPANELCOMPONENT:Class = BottomPanelComponent;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_HANGARCOMPONENTSCONTAINER:Class = HangarComponentsContainer;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_HEADERANIMATIONCONTROLLER:Class = HeaderAnimationController;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_PROXYCURRENCYPANEL:Class = ProxyCurrencyPanel;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_TECHPARAMETERSCOMPONENT:Class = TechParametersComponent;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_EVENTS_BATTLETYPESELECTOREVENT:Class = BattleTypeSelectorEvent;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_LEVELUPVIEW_BATTLEROYALELEVELUPVIEW:Class = BattleRoyaleLevelUpView;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_LEVELUPVIEW_BATTLEROYALEMAXLEVELINFO:Class = BattleRoyaleMaxLevelInfo;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_LEVELUPVIEW_DATA_BATTLEROYALELEVELUPVIEWVO:Class = BattleRoyaleLevelUpViewVO;
-      
       public static const NET_WG_GUI_LOBBY_BATTLEROYALE_VEHICLEINFOVIEW_VEHICLEINFOVIEW:Class = VehicleInfoView;
       
       public static const NET_WG_GUI_LOBBY_BATTLEROYALE_VEHICLEINFOVIEW_COMPONENTS_COLUMNHEADER:Class = ColumnHeader;
@@ -4425,10 +4369,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_BATTLEROYALE_VEHICLEINFOVIEW_COMPONENTS_CONFIGURATORRENDERER:Class = ConfiguratorRenderer;
       
       public static const NET_WG_GUI_LOBBY_BATTLEROYALE_VEHICLEINFOVIEW_DATA_VEHICLEINFOVIEWVO:Class = VehicleInfoViewVO;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_WIDGET_DATA_BATTLEROYALEHANGARWIDGET:Class = BattleRoyaleHangarWidget;
-      
-      public static const NET_WG_GUI_LOBBY_BATTLEROYALE_WIDGET_DATA_BATTLEROYALEHANGARWIDGETVO:Class = BattleRoyaleHangarWidgetVO;
       
       public static const NET_WG_GUI_LOBBY_BATTLEROYALE_WIDGET_DATA_BATTLEROYALETOURNAMENTWIDGET:Class = BattleRoyaleTournamentWidget;
       
@@ -4858,21 +4798,13 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_EPICRESERVESPOINTSPANELWRAPPER:Class = EpicReservesPointsPanelWrapper;
       
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICBATTLESAFTERBATTLEFAMEPROGRESSBAR:Class = EpicBattlesAfterBattleFameProgressBar;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICBATTLESAFTERBATTLEMAXLEVELINFO:Class = EpicBattlesAfterBattleMaxLevelInfo;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICBATTLESANIMATEDTITLETEXTFIELD:Class = EpicBattlesAnimatedTitleTextfield;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICBATTLESFAMEPOINTSCOUNTER:Class = EpicBattlesFamePointsCounter;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICBATTLESMETALEVELPROGRESSBAR:Class = EpicBattlesMetaLevelProgressBar;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICBATTLESPLAYERRANK:Class = EpicBattlesPlayerRank;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_AFTERBATTLE_EPICMETALEVELPROGRESSBARICONS:Class = EpicMetaLevelProgressBarIcons;
-      
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_COMMON_ALIGNEDICONTEXTBUTTON:Class = AlignedIconTextButton;
+      
+      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_COMMON_EPICBATTLESFAMEPOINTSCOUNTER:Class = EpicBattlesFamePointsCounter;
+      
+      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_COMMON_EPICBATTLESMETALEVELPROGRESSBAR:Class = EpicBattlesMetaLevelProgressBar;
+      
+      public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_COMMON_EPICMETALEVELPROGRESSBARICONS:Class = EpicMetaLevelProgressBarIcons;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_COMMON_EPICPROGRESSBAR:Class = EpicProgressBar;
       
@@ -4886,8 +4818,6 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_COMPONENTS_PRESTIGEVIEW_TEXTBLOCK:Class = TextBlock;
       
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_DATA_EPICBATTLESAFTERBATTLEVIEWVO:Class = EpicBattlesAfterBattleViewVO;
-      
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_DATA_EPICBATTLESMETALEVELVO:Class = EpicBattlesMetaLevelVO;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_DATA_EPICBATTLESWIDGETEVENT:Class = EpicBattlesWidgetEvent;
@@ -4895,8 +4825,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_DATA_EPICBATTLESWIDGETVO:Class = EpicBattlesWidgetVO;
       
       public static const NET_WG_GUI_LOBBY_EPICBATTLES_EVENTS_AFTERBATTLEFAMEBAREVENT:Class = AfterBattleFameBarEvent;
-      
-      public static const NET_WG_GUI_LOBBY_EPICBATTLES_VIEWS_EPICBATTLESAFTERBATTLEVIEW:Class = EpicBattlesAfterBattleView;
       
       public static const NET_WG_GUI_LOBBY_EVENTBOARDS_EVENTBOARDSDETAILSCONTAINERVIEW:Class = EventBoardsDetailsContainerView;
       
@@ -5260,15 +5188,11 @@ package net.wg.infrastructure.base.meta.impl
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_DATA_ENTRYPOINTVO:Class = EntryPointVO;
       
-      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_BRENTRYPOINT:Class = BREntryPoint;
-      
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_COMMONENTRYPOINT:Class = CommonEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_CRAFTMACHINEENTRYPOINT:Class = CraftMachineEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_EPICBATTLESENTRYPOINT:Class = EpicBattlesEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_FUNRANDOMENTRYPOINT:Class = FunRandomEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_MAPBOXENTRYPOINT:Class = MapBoxEntryPoint;
       
@@ -5277,8 +5201,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RANKEDENTRYPOINT:Class = RankedEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_RESIZABLEENTRYPOINT:Class = ResizableEntryPoint;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_EVENTENTRYPOINT_GFWRAPPER_STRONGHOLDENTRYPOINT:Class = StrongholdEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_INTERFACES_IHANGAR:Class = IHangar;
       
@@ -5301,8 +5223,6 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_BATTLEPASSENTRYPOINT:Class = BattlePassEntryPoint;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FLAGCONTAINER:Class = FlagContainer;
-      
-      public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_FUNRANDOMHANGARWIDGET:Class = FunRandomHangarWidget;
       
       public static const NET_WG_GUI_LOBBY_HANGAR_QUESTS_HANGARWIDGETDAAPI:Class = HangarWidgetDAAPI;
       
@@ -5551,6 +5471,8 @@ package net.wg.infrastructure.base.meta.impl
       public static const NET_WG_GUI_LOBBY_MENU_COPYRIGHT:Class = Copyright;
       
       public static const NET_WG_GUI_LOBBY_MENU_LOBBYMENU:Class = LobbyMenu;
+      
+      public static const NET_WG_GUI_LOBBY_MENU_REGIONALPANEL:Class = RegionalPanel;
       
       public static const NET_WG_GUI_LOBBY_MESSENGERBAR_BUTTONWITHCOUNTER:Class = ButtonWithCounter;
       

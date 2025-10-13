@@ -1,0 +1,23 @@
+from enum import Enum
+from frameworks.wulf import ViewModel
+
+class ModeStatus(Enum):
+    ALERT = 'alert'
+    BATTLESELECTOR = 'battleSelector'
+
+
+class HeaderModel(ViewModel):
+    __slots__ = ()
+
+    def __init__(self, properties=1, commands=0):
+        super(HeaderModel, self).__init__(properties=properties, commands=commands)
+
+    def getModeStatus(self):
+        return ModeStatus(self._getString(0))
+
+    def setModeStatus(self, value):
+        self._setString(0, value.value)
+
+    def _initialize(self):
+        super(HeaderModel, self)._initialize()
+        self._addStringProperty('modeStatus', ModeStatus.BATTLESELECTOR.value)

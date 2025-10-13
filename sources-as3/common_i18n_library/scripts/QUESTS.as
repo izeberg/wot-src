@@ -3437,6 +3437,8 @@ package
       
       public static const DAILYQUESTS_POSTBATTLE_CONDITIONTYPEAND:String = "#quests:dailyQuests/postBattle/conditionTypeAnd";
       
+      public static const DAILYQUESTS_POSTBATTLE_CONDITIONTYPEOR:String = "#quests:dailyQuests/postBattle/conditionTypeOr";
+      
       public static const DAILYQUESTS_TAKEREWARDSBUTTON_TEXT:String = "#quests:dailyQuests/takeRewardsButton/text";
       
       public static const DAILYQUESTS_TAKEREWARDSBUTTON_COUNTDOWN:String = "#quests:dailyQuests/takeRewardsButton/countdown";

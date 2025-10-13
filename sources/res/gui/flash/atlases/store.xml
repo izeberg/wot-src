@@ -1,35 +1,42 @@
 <root>
 	<SubTexture>
 		<name> ammo </name>
-		<x> 319 </x>
-		<y> 329 </y>
+		<x> 238 </x>
+		<y> 444 </y>
 		<width> 45 </width>
 		<height> 39 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> card_discount </name>
-		<x> 241 </x>
-		<y> 181 </y>
+		<x> 0 </x>
+		<y> 362 </y>
 		<width> 237 </width>
 		<height> 147 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> icon_tree_selected_093 </name>
-		<x> 414 </x>
-		<y> 329 </y>
+		<x> 238 </x>
+		<y> 362 </y>
 		<width> 64 </width>
 		<height> 32 </height>
 	</SubTexture>
 	<SubTexture>
+		<name> slots </name>
+		<x> 238 </x>
+		<y> 395 </y>
+		<width> 48 </width>
+		<height> 48 </height>
+	</SubTexture>
+	<SubTexture>
 		<name> slot_0 </name>
-		<x> 241 </x>
+		<x> 0 </x>
 		<y> 0 </y>
 		<width> 240 </width>
 		<height> 180 </height>
 	</SubTexture>
 	<SubTexture>
 		<name> slot_1 </name>
-		<x> 0 </x>
+		<x> 241 </x>
 		<y> 0 </y>
 		<width> 240 </width>
 		<height> 180 </height>
@@ -40,12 +47,5 @@
 		<y> 181 </y>
 		<width> 240 </width>
 		<height> 180 </height>
-	</SubTexture>
-	<SubTexture>
-		<name> slots </name>
-		<x> 365 </x>
-		<y> 329 </y>
-		<width> 48 </width>
-		<height> 48 </height>
 	</SubTexture>
 </root>

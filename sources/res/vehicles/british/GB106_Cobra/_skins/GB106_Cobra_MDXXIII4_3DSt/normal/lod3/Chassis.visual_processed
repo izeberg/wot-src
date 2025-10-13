@@ -1010,6 +1010,10 @@
 						normalMap
 						<Texture>vehicles/british/GB106_Cobra/_skins/GB106_Cobra_MDXXIII4_3DSt/Cobra_MDXXIII4_3DSt_chassis_01_ANM.dds</Texture>
 					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.015549 0.701279 -0.004015</groupOrigin>
 			</primitiveGroup>
@@ -1070,6 +1074,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB106_Cobra/_skins/GB106_Cobra_MDXXIII4_3DSt/Cobra_MDXXIII4_3DSt_chassis_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.015520 0.669206 0.009567</groupOrigin>

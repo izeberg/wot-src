@@ -28,7 +28,7 @@ class PrebattleModel(ViewModel):
     MAPS_TRAINING = 'MAPS_TRAINING'
     BATTLE_ROYALE_TOURNAMENT = 'BATTLE_ROYALE_TOURNAMENT'
 
-    def __init__(self, properties=5, commands=1):
+    def __init__(self, properties=6, commands=1):
         super(PrebattleModel, self).__init__(properties=properties, commands=commands)
 
     @property
@@ -67,6 +67,12 @@ class PrebattleModel(ViewModel):
     def setBattleStatus(self, value):
         self._setString(4, value)
 
+    def getBattleButtonAlwaysOn(self):
+        return self._getBool(5)
+
+    def setBattleButtonAlwaysOn(self, value):
+        self._setBool(5, value)
+
     def _initialize(self):
         super(PrebattleModel, self)._initialize()
         self._addViewModelProperty('battleVehicle', VehicleModel())
@@ -74,4 +80,5 @@ class PrebattleModel(ViewModel):
         self._addStringProperty('currentMode', '')
         self._addStringProperty('queueType', '')
         self._addStringProperty('battleStatus', '')
+        self._addBoolProperty('battleButtonAlwaysOn', False)
         self.onAction = self._addCommand('onAction')

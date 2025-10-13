@@ -1,6 +1,6 @@
+from gui.filters.epic_battle_carousel_filter import EpicBattleCarouselFilter
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.basic.tank_carousel import TankCarousel
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.epicBattle.carousel_data_provider import EpicBattleCarouselDataProvider
-from gui.Scaleform.daapi.view.lobby.hangar.carousels.epicBattle.carousel_filter import EpicBattleCarouselFilter
 from helpers import dependency
 from skeletons.gui.game_control import IEpicBattleMetaGameController
 

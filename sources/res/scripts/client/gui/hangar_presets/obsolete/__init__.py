@@ -1,0 +1,4 @@
+from gui.hangar_presets.obsolete.hangar_presets_reader import DefaultPresetReader, SpecBattlePresetReader
+from gui.shared.system_factory import registerHangarPresetsReader
+registerHangarPresetsReader(DefaultPresetReader)
+registerHangarPresetsReader(SpecBattlePresetReader)

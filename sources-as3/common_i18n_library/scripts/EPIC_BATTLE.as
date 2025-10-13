@@ -407,18 +407,6 @@ package
       
       public static const DEPLOYMENTMAP_RESPAWNWARNING:String = "#epic_battle:deploymentMap/respawnWarning";
       
-      public static const EPIC_BATTLES_AFTER_BATTLE_TITLE:String = "#epic_battle:epic_battles_after_battle/Title";
-      
-      public static const EPIC_BATTLES_AFTER_BATTLE_ACHIEVED_RANK:String = "#epic_battle:epic_battles_after_battle/Achieved_Rank";
-      
-      public static const EPIC_BATTLES_AFTER_BATTLE_LEVEL_UP_TITLE:String = "#epic_battle:epic_battles_after_battle/Level_Up_Title";
-      
-      public static const EPIC_BATTLES_AFTER_BATTLE_MAX_LEVEL_INFO_TITLE:String = "#epic_battle:epic_battles_after_battle/max_level_info/title";
-      
-      public static const EPIC_BATTLES_AFTER_BATTLE_MAX_LEVEL_INFO_DESCRIPTION:String = "#epic_battle:epic_battles_after_battle/max_level_info/description";
-      
-      public static const EPIC_BATTLES_AFTER_BATTLE_CHOOSEREWARDS:String = "#epic_battle:epic_battles_after_battle/chooseRewards";
-      
       public static const SELECTORTOOLTIP_EPICBATTLE_HEADER:String = "#epic_battle:selectorTooltip/epicBattle/header";
       
       public static const SELECTORTOOLTIP_EPICBATTLE_BODY:String = "#epic_battle:selectorTooltip/epicBattle/body";

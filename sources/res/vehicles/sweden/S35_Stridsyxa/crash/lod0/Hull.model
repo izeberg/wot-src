@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S35_Stridsyxa/crash/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.521825 -0.900293 -3.261683</min>
+		<max>1.521565 0.461684 3.315565</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S35_Stridsyxa/crash/lod0/Hull</nodefullVisual>
+</root>

@@ -6774,6 +6774,7 @@ def objectLod(*args, **kwargs): pass
 def onInterfaceScaleChanged(*args, **kwargs): pass
 def overrideGraphicsSetting(*args, **kwargs): pass
 def pauseDRRAutoscaling(*args, **kwargs): pass
+def pingMeAndThenJustTouchMe(*args, **kwargs): pass
 platform = u'windows'
 def playMovie(*args, **kwargs): pass
 def player(*args, **kwargs): pass
@@ -6844,6 +6845,7 @@ def setWatcher(*args, **kwargs): pass
 def sinkKeyEvents(*args, **kwargs): pass
 def solvePow(*args, **kwargs): pass
 def spaceLoadStatus(*args, **kwargs): pass
+def spaceReload(*args, **kwargs): pass
 def spaceTimeOfDay(*args, **kwargs): pass
 
 class spaces(pybind11_object):

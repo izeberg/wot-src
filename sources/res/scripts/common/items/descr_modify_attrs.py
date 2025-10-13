@@ -571,6 +571,9 @@ def gunPitchLimitsProcessor(obj, valueName, index, operation, attrName, value, v
          index]
     applier = APPLIERS[operation]
     for ind in indexes:
+        if ind >= len(valueObj):
+            LOG_WARNING('[DESCR_MODIFY] Index for gunPitchLimits out of range', attrName, ind)
+            continue
         arrayItemApplyerDegrees(valueObj[ind], 1, value, applier)
 
     return True

@@ -1009,6 +1009,14 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.025036 0.517869 0.044300</groupOrigin>
 			</primitiveGroup>
@@ -1104,6 +1112,14 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.024916 0.517869 0.044300</groupOrigin>
@@ -1205,10 +1221,6 @@
 						<Texture>vehicles/russian/Tank_detail/Detail_T2DA.dds</Texture>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_detailParams
 						<matrix>
 							<element>67067904</element>
@@ -1240,6 +1252,14 @@
 					<property>
 						g_tilingRatio
 						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.999739 0.547032 0.019072</groupOrigin>
@@ -1341,10 +1361,6 @@
 						<Texture>vehicles/russian/Tank_detail/Detail_T2DA.dds</Texture>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_detailParams
 						<matrix>
 							<element>67067904</element>
@@ -1376,6 +1392,14 @@
 					<property>
 						g_tilingRatio
 						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.999739 0.547032 0.019072</groupOrigin>

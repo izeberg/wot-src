@@ -7727,7 +7727,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeArmorPiercing</effects>
 		<damage>
-			<armor>420</armor>
+			<armor>450</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>5</normalizationAngle>
@@ -7744,7 +7744,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeAPCR</effects>
 		<damage>
-			<armor>420</armor>
+			<armor>450</armor>
 			<devices>165</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
@@ -7765,7 +7765,7 @@
 		<isTracer>true</isTracer>
 		<effects>largeHighExplosive</effects>
 		<damage>
-			<armor>515</armor>
+			<armor>530</armor>
 			<devices>165</devices>
 		</damage>
 		<armorSpalls>
@@ -7775,7 +7775,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>260</armor>
+				<armor>265</armor>
 				<devices>85</devices>
 			</damage>
 		</armorSpalls>
@@ -7857,7 +7857,7 @@
 		<effects>largeAPCR</effects>
 		<damage>
 			<armor>550</armor>
-			<devices>100</devices>
+			<devices>165</devices>
 		</damage>
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
@@ -7874,7 +7874,7 @@
 		<effects>largeHollowCharge</effects>
 		<damage>
 			<armor>550</armor>
-			<devices>100</devices>
+			<devices>165</devices>
 		</damage>
 		<ricochetAngle>85</ricochetAngle>
 		<piercingPowerLossFactorByDistance>
@@ -7898,7 +7898,7 @@
 		<effects>largeHighExplosive</effects>
 		<damage>
 			<armor>660</armor>
-			<devices>100</devices>
+			<devices>165</devices>
 		</damage>
 		<armorSpalls>
 			<impactRadius>
@@ -7907,8 +7907,8 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>300</armor>
-				<devices>45</devices>
+				<armor>330</armor>
+				<devices>85</devices>
 			</damage>
 		</armorSpalls>
 	</_120mm_DM_HES>

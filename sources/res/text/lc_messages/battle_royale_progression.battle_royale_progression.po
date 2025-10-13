@@ -59,8 +59,12 @@ msgid "progressionView/card/points"
 msgstr ""
 "%(whiteSpanish_Open)s%(current)s/%(whiteSpanish_Close)s%(par_Open)s%(total)s%(par_Close)s"
 
+msgid "progressionView/seasonRange"
+msgstr "%(startDate)s – %(endDate)s"
+
 msgid "progressionView/subTitle/completed"
-msgstr "Earn Steel Seals to get Steel Hunter styles."
+msgstr ""
+"Progression completed. Keep playing Steel Hunter to earn more rewards."
 
 msgid "progressionView/subTitle/endEvent"
 msgstr ""
@@ -70,12 +74,6 @@ msgid "progressionView/subTitle/inProgress"
 msgstr ""
 "Complete missions to earn Progression Points.\n"
 "The number of Points you earn also depends on your position in battle. %(infotip)s"
-
-msgid "progressionView/title/completed"
-msgstr "HUNTER'S PATH COMPLETED!"
-
-msgid "progressionView/title/inProgress"
-msgstr "HUNTER'S PATH"
 
 msgid "quests/bonuses/progressionToken/body"
 msgstr ""

@@ -2,6 +2,7 @@ from __future__ import absolute_import, division
 import math
 from collections import OrderedDict
 from future.builtins import round
+from future.utils import listvalues
 import typing, BigWorld, GUI, armor_inspector, math_utils
 from AvatarInputHandler import cameras
 from Vehicle import SegmentCollisionResultExt
@@ -238,7 +239,7 @@ def stackMaterials(materials, tier):
             fraction = (math_utils.clamp(minimum, maximum, nominalArmor) - minimum) / (maximum - minimum)
             consolidatedMap[key] = MaterialUIData(partName=partName, nominalArmor=nominalArmor, viewAngle=material.viewAngle, resArmor=material.resArmor, isSpacedArmor=isSpacedArmor, color=_colorInt2Str(armor_inspector.getColor(fraction, isSpacedArmor)))
 
-    return list(consolidatedMap.values())
+    return listvalues(consolidatedMap)
 
 
 def getMaxArmor(typeDescriptor):

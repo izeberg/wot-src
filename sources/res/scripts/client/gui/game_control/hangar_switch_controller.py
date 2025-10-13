@@ -129,7 +129,7 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
     def onPrbEntitySwitched(self):
         if self.prbEntity.getFunctionalFlags() & FUNCTIONAL_FLAG.LEGACY_INIT:
             return
-        self.processPossibleSceneChange()
+        self.processPossibleSceneChange(force=True)
         g_eventBus.handleEvent(events.HangarSpacesSwitcherEvent(events.HangarSpacesSwitcherEvent.SWITCH_TO_HANGAR_SPACE), scope=EVENT_BUS_SCOPE.LOBBY)
 
     def hangarSpaceUpdate(self, sceneName):
@@ -167,7 +167,7 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
         self.hangarSpace.onSpaceCreate -= self._delayedProcessChange
         nextTick(self.processPossibleSceneChange)()
 
-    def processPossibleSceneChange(self):
+    def processPossibleSceneChange(self, force=False):
         self.hangarSpaceUpdated = False
         prevSceneName = self.currentSceneName
         self.onCheckSceneChange()
@@ -177,12 +177,12 @@ class HangarSpaceSwitchController(IHangarSpaceSwitchController, IGlobalListener)
             currentSceneConfig = self._sceneSpaceParams[self.currentSceneName]
             hangarSpacePath = self.hangarSpaceReloader.buildHangarSpacePath(currentSceneConfig.getHangarSpaceId())
             if hangarSpacePath != self.hangarSpaceReloader.hangarSpacePath:
-                success, err = self.hangarSpaceReloader.changeHangarSpace(currentSceneConfig.getHangarSpaceId(), currentSceneConfig.getVisibilityMask(), currentSceneConfig.waitingMessage, currentSceneConfig.waitingBackground)
+                success, err = self.hangarSpaceReloader.changeHangarSpace(currentSceneConfig.getHangarSpaceId(), currentSceneConfig.getVisibilityMask(), currentSceneConfig.waitingMessage, currentSceneConfig.waitingBackground, force=force)
         else:
             self.currentSceneName = DEFAULT_HANGAR_SCENE
             hangarSpacePath = self._defaultHangarSpaceConfig.getHangarSpaceId(self.hangarSpace.isPremium)
             if hangarSpacePath != self.hangarSpaceReloader.hangarSpacePath:
-                success, err = self.hangarSpaceReloader.changeHangarSpace(hangarSpacePath, self._defaultHangarSpaceConfig.getVisibilityMask(self.hangarSpace.isPremium))
+                success, err = self.hangarSpaceReloader.changeHangarSpace(hangarSpacePath, self._defaultHangarSpaceConfig.getVisibilityMask(self.hangarSpace.isPremium), force=force)
         if success:
             self.hangarSpace.onSpaceCreate += self._onSpaceCreatedCallback
         elif err == ErrorFlags.DUPLICATE_REQUEST:

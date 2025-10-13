@@ -28,26 +28,12 @@
 						<Texture>particles/content_deferred/GFX_models/GFX_textures/dark_cloud_map_01.dds</Texture>
 					</property>
 					<property>
-						texAddressMode
-						<Int>1</Int>
-					</property>
-					<property>
-						doubleSided
-						<Bool>false</Bool>
-					</property>
-					<property>
 						TintlColor
-						<Vector4>
-							0.7998 0.807626 0.860003 0.6
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.799800 0.807626 0.860003 0.370000</Vector4>
 					</property>
 					<property>
 						lightMultipliers
-						<Vector4>
-							4 0.3 0.8 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>4.000000 0.300000 0.800000 0.000000</Vector4>
 					</property>
 					<property>
 						enableLighting
@@ -55,28 +41,19 @@
 					</property>
 					<property>
 						distortionMap
-						<Texture>particles/content_deferred/GFX_models/GFX_textures/vel_smoke__01.dds</Texture>
+						<Texture>particles/content_deferred/GFX_models/GFX_textures/vel_smoke.dds</Texture>
 					</property>
 					<property>
 						diffuseUVSpeedAlphaOffset
-						<Vector4>
-							-0.002 0.000000 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>-0.002000 0.000000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						distortion_UV_Speed_Amount
-						<Vector4>
-							0.02 0.01 0.012 0.1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.020000 0.010000 0.012000 0.100000</Vector4>
 					</property>
 					<property>
 						FreshnelColor
-						<Vector4>
-							0.64175 0.720204 0.755 1
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>0.641750 0.720204 0.755000 1.000000</Vector4>
 					</property>
 					<property>
 						alphaFreshnelEnable
@@ -88,24 +65,11 @@
 							1 1 1 0.000000
 							<!--BW_String-->
 						</Vector4>
+						<Vector3>1.000000 1.000000 1.000000</Vector3>
 					</property>
 					<property>
 						fadeMaxDistance
-						<Float>
-							1.4
-							<!--BW_String-->
-						</Float>
-					</property>
-					<property>
-						alphaFadeAmountFresnel
-						<Vector4>
-							1 0.000000 1 0.000000
-							<!--BW_String-->
-						</Vector4>
-					</property>
-					<property>
-						alphaAdditiveEnable
-						<Bool>false</Bool>
+						<Float>1.400000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000000 2.274115 10.000000</groupOrigin>
