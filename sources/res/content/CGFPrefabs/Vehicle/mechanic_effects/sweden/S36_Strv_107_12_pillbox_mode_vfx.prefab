@@ -97,7 +97,7 @@
 				<config>
 					<property>
 						<name>activeLayer</name>
-						<value>0</value>
+						<value>2</value>
 					</property>
 					<property>
 						<name>speed</name>
@@ -1602,7 +1602,7 @@
 																					<property>
 																						<name>time</name>
 																						<value>
-																							1.5
+																							1.4
 																							<!--BW_String-->
 																						</value>
 																					</property>
@@ -3625,7 +3625,7 @@
 					</property>
 					<property>
 						<name>Rotation</name>
-						<value>-0 0 0</value>
+						<value>-0 0 -0</value>
 					</property>
 				</config>
 			</component>
@@ -3728,6 +3728,10 @@
 					</property>
 					<property>
 						<name>Cast Shadows</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>decorType</name>
 						<value>0</value>
 					</property>
 				</config>

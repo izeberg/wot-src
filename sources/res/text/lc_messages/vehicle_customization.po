@@ -401,6 +401,24 @@ msgstr "百宝箱"
 msgid "attachment/st_patricks_day_2025/Cus_35_SP_CamoNet"
 msgstr "伪装网"
 
+msgid "attachment/tactical_supplies"
+msgstr "战术补给"
+
+msgid "attachment/tactical_supplies/Cus_78_NationsA_Lamp"
+msgstr "复古灯具"
+
+msgid "attachment/tactical_supplies/Cus_79_NationsA_Gatling"
+msgstr "加特林机枪"
+
+msgid "attachment/tactical_supplies/Cus_80_NationsA_Saddle"
+msgstr "补给驮具"
+
+msgid "attachment/tactical_supplies/Cus_81_NationsA_Ammorifles"
+msgstr "弹药木箱"
+
+msgid "attachment/tactical_supplies/Cus_82_NationsA_Ammogun"
+msgstr "车载机枪补给箱"
+
 msgid "attachment/test"
 msgstr "测试对象"
 
@@ -2602,6 +2620,12 @@ msgstr "黑风凶煞"
 msgid "camouflage/bicolor"
 msgstr "双色"
 
+msgid "camouflage/black_friday_2025_1/label"
+msgstr "赛道之星"
+
+msgid "camouflage/black_friday_2025_2/label"
+msgstr "赤铜脉络"
+
 msgid "camouflage/blank_camouflage/description"
 msgstr "二次透明涂装"
 
@@ -3352,6 +3376,15 @@ msgstr "?empty?"
 
 msgid "camouflage/clan_urban/label"
 msgstr "军团城市"
+
+msgid "camouflage/clans_2d_2025_2/label"
+msgstr "阿波罗神弓"
+
+msgid "camouflage/clans_2d_2025_3/label"
+msgstr "二郎神三尖两刃刀"
+
+msgid "camouflage/clans_2d_2025_4/label"
+msgstr "亚瑟王圣剑"
 
 msgid "camouflage/clans_2d_thor/description"
 msgstr "?empty?"
@@ -6072,6 +6105,12 @@ msgstr "?empty?"
 msgid "camouflage/sh2020_paid_4/label"
 msgstr "第瓦那之盾"
 
+msgid "camouflage/sh2025_1/label"
+msgstr "锈迹斑斑"
+
+msgid "camouflage/sh2025_2/label"
+msgstr "侵蚀封锁"
+
 msgid "camouflage/sh_2023/description"
 msgstr "?empty?"
 
@@ -6218,6 +6257,15 @@ msgstr "第一卫队野战军风格涂装。"
 
 msgid "camouflage/strong/label"
 msgstr "第一卫队野战军"
+
+msgid "camouflage/strongholds_2025_1/label"
+msgstr "晶脉脉冲"
+
+msgid "camouflage/strongholds_2025_2/label"
+msgstr "老兵之路"
+
+msgid "camouflage/strongholds_2025_3/label"
+msgstr "闪电帷幕"
 
 msgid "camouflage/summer"
 msgstr "草地"
@@ -15215,18 +15263,6 @@ msgstr "一览无余！"
 msgid "inscription/special/special_828"
 msgstr "看镜头，笑一笑！"
 
-msgid "inscription/special/special_831"
-msgstr "不落人后"
-
-msgid "inscription/special/special_832"
-msgstr "寂静之拥"
-
-msgid "inscription/special/special_833"
-msgstr "骨牌效应"
-
-msgid "inscription/special/special_834"
-msgstr "领军人物"
-
 msgid "inscription/special/special_835"
 msgstr "恐怖威廉"
 
@@ -17409,18 +17445,6 @@ msgstr "新人猎手"
 msgid "projection_decals/cool/projection_decal_29/description"
 msgstr "在钢铁猎手模式中达到5级所奖励的贴花。"
 
-msgid "projection_decals/cool/projection_decal_30"
-msgstr "马克 I钢铁猎手"
-
-msgid "projection_decals/cool/projection_decal_30/description"
-msgstr "为同名模式开发的贴花"
-
-msgid "projection_decals/cool/projection_decal_31"
-msgstr "马克 II钢铁猎手"
-
-msgid "projection_decals/cool/projection_decal_31/description"
-msgstr "为同名模式开发的贴花"
-
 msgid "projection_decals/cool/projection_decal_32"
 msgstr "赛车手"
 
@@ -18263,6 +18287,9 @@ msgstr "Darjeeling海报"
 
 msgid "projection_decals/pin_up/projection_decal_70"
 msgstr "Alice海报"
+
+msgid "projection_decals/pin_up/projection_decal_71"
+msgstr "Kei海报"
 
 msgid "projection_decals/progression"
 msgstr "可升级"
@@ -21413,6 +21440,12 @@ msgstr "分享蛋糕"
 msgid "projection_decals/special/projection_decal_956"
 msgstr "烟花绽放"
 
+msgid "projection_decals/special/projection_decal_957"
+msgstr "不服来钓"
+
+msgid "projection_decals/special/projection_decal_958"
+msgstr "愿者上钩"
+
 msgid "projection_decals/special/projection_decal_959"
 msgstr "木乃伊归来"
 
@@ -21447,11 +21480,23 @@ msgstr "深入敌营"
 msgid "projection_decals/special/projection_decal_971"
 msgstr "8位像素乔瑟夫"
 
+msgid "projection_decals/special/projection_decal_979"
+msgstr "马克 I钢铁猎手"
+
+msgid "projection_decals/special/projection_decal_979/description"
+msgstr "为同名模式开发的贴花"
+
 msgid "projection_decals/special/projection_decal_98"
 msgstr "冲锋的IS"
 
 msgid "projection_decals/special/projection_decal_98/description"
 msgstr "我站在路边，看到70吨的钢铁以超过60公里的时速朝我冲过来，我惊出一身冷汗。这不是在做梦吧？"
+
+msgid "projection_decals/special/projection_decal_980"
+msgstr "马克 II钢铁猎手"
+
+msgid "projection_decals/special/projection_decal_980/description"
+msgstr "为同名模式开发的贴花"
 
 msgid "projection_decals/special/projection_decal_99"
 msgstr "削弱自行火炮"
@@ -21459,6 +21504,9 @@ msgstr "削弱自行火炮"
 msgid "projection_decals/special/projection_decal_99/description"
 msgstr ""
 "不久以前，自行火炮让很多坦克世界的车长感到恐惧。它一炮就能打掉坦克100%的生命值，让不走运的玩家抓狂，砸碎了键盘、椅子和其他家具。很快，自行火炮受到了削弱。"
+
+msgid "projection_decals/special/projection_decal_991"
+msgstr "Q版Kei"
 
 msgid "projection_decals/test_unified_decals"
 msgstr "测试统一栏位贴花"
@@ -22866,6 +22914,9 @@ msgstr "炭灰色"
 msgid "repaint/girls_und_panzer_rabbit"
 msgstr "苔藓绿色"
 
+msgid "repaint/girls_und_panzer_saunders"
+msgstr "桑德斯大学附属高中"
+
 msgid "repaint/girls_und_panzer_turtle"
 msgstr "沙黄色"
 
@@ -24148,6 +24199,16 @@ msgid "special_style/A176_M103_110_HBP_3Dst_desc/long"
 msgstr ""
 "\"队长呼叫乌鸦。乌鸦请回答。兰博？我是特劳特曼。好好听着。在我见过的士兵里，你最优秀。你那次驾驶坦克的表现非常英勇，但是也很鲁莽，还好你小子命大。约翰，这次可不能冒险。坦克部队之间的战斗需要不同的应对策略。本次任务不是单兵作战，跟以前一样，你需要与团队合作。我知道你能行。嘿，你说不定还会乐在其中。出发吧，小伙，给他们些颜色瞧瞧。\""
 
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst"
+msgstr "\"萤火虫\"桑德斯"
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc"
+msgstr "?empty?"
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc/long"
+msgstr ""
+"M系M4A4\"谢尔曼\"的变体，这辆坦克配备了克莱斯勒A57型30缸多组结构发动机，据Y系记录称这个型号的发动机非常可靠。该坦克于1944年初研发，其特点包括更强劲的17磅火炮、改变了无线电台的位置、扩大弹药架容量，并且移除了车体机枪和副驾驶的座位。\\n这辆坦克由经验丰富的桑德斯大学附属高中学生驾驶。该学园的所有M系坦克喷漆均以深橄榄绿为基色，展现了其M系文化的传承。这辆\"谢尔曼\"具有该学园的徽章——在一个下部尖锐的盾牌上描绘了一个蓝色五角星，五角星里还有一个黄色的闪电图案，学园的名字则写在一条红色丝带上。"
+
 msgid "special_style/A40_T95_SC_3DSt"
 msgstr "美妙的震动"
 
@@ -24753,6 +24814,13 @@ msgstr ""
 "在测试的一个阶段中，发生了出人意料的事情。坦克没有射击目标，反而以超乎寻常的灵活度和速度疾驰——仿佛它将要起飞一样。虽然坦克一炮没开，但所有目标都被烧得面目全非。\n"
 "第二天，指挥部命令该坦克的设计师前往总部报道，但此时这名设计师连带那辆坦克都已不知所踪。后来只在车库中发现了一张写着神秘信息的纸条: \"勇士万岁。\""
 
+msgid "special_style/G168_KJpz_T_III_AS5_3Dst"
+msgstr "初始载体"
+
+msgid "special_style/G168_KJpz_T_III_AS5_3Dst_desc/long"
+msgstr ""
+"\"我踉跄起身，擦去面罩与相机上的漆黑銤元素碎屑。二者竟奇迹般完好无损，而那辆险些碾过我的坦克却是面目全非。凝视愈久，愈觉眼前并非损毁的钢铁造物，而是受伤的活体生物。更诡谲的是，其\"创伤\"竟被钢链粗暴缝合——宛若对野战医护救治伤兵的残酷戏仿。不过，余响坦克终究是坦克，无生命体征，绝无流血可能。可为何銤元素正从其变形的车体中不断渗漏？又为何它竟似...惶恐不安？\""
+
 msgid "special_style/G16_PzVIB_Tiger_II_3DSt_NEx"
 msgstr "施耐德战斗群"
 
@@ -25185,6 +25253,19 @@ msgstr ""
 "您的儿子伊恩谨上。\n"
 "\n"
 "附言: 完成任务后我会给您带把缴获的帕拉贝鲁姆。\""
+
+msgid "special_style/J42_Chi_Se_AS5_3Dst"
+msgstr "缝生体"
+
+msgid "special_style/J42_Chi_Se_AS5_3Dst_desc/long"
+msgstr ""
+"过去被撕碎，冗余被剔除，真相被强行锻造。你唯一的记忆，只剩下那一道道缝合的伤痕。\n"
+"\n"
+"\"失去收集装置后仍冲向马格努斯，本就是下策。但我们别无选择——跃入未知，总好过永远困在已经探索完毕的阶段里，像个无头骑士般游荡。所以，我们决定孤注一掷。结果如何，我无法断言。但至少，我们还活着。坐标已彻底丢失，通讯完全中断，马格努斯的位置也再无可查。\n"
+"\n"
+"...此刻，外面聚集着一群怪影——全都戴着防毒面具，低声念叨着诡异的咒语，竭力想把我们从钢铁壳里赶出去。人类？出现在銤元素区域？这绝不是好兆头。我们只能牢牢封闭所有舱口\n"
+"\n"
+"...我越来越感到不安。甚至说不清缘由。也许是外面那阵阵低沉的吟唱；也许是那台巨大的装置，铁链与钩爪紧紧锁住了我们的坦克；也许只是那不知从何而来的黑色黏液，从四面八方缓缓滴落...\""
 
 msgid "special_style/KanonenPanter_105"
 msgstr "黑豹"
@@ -26457,6 +26538,26 @@ msgstr ""
 " "
 "轻摇古老森林的树叶，掀起惊涛骇浪，凿刻悬崖峡谷。我飞越崇山峻岭，席卷广阔海洋，横跨干旱沙漠，舞动于贫瘠的草原之上。我是带来天昏地暗的风暴，也是高耸入云的气旋，亦是孕育风暴的低语。\""
 
+msgid "special_style/black_friday_2025_1"
+msgstr "赛道之星"
+
+msgid "special_style/black_friday_2025_1_desc"
+msgstr "使用这款全地形风格，把您的坦克装点得像赛车一样酷炫。"
+
+msgid "special_style/black_friday_2025_1_desc/long"
+msgstr ""
+"各就各位，预备...出发！纵然生为战斗机器，心怀赛车世界的光鲜与荣耀又有何妨？当炮火撕裂战场，何不将震耳轰鸣听作万众欢呼？若能将艰苦的野战维修，换作一次豪华维修站的奢侈享受？呵...终是幻想。但至少，可为忠诚座驾披上源自赛车的炫酷疯狂，让残酷沙场乍现一抹疾驰流光！"
+
+msgid "special_style/black_friday_2025_2"
+msgstr "赤铜脉络"
+
+msgid "special_style/black_friday_2025_2_desc"
+msgstr "为您的座驾披上这款历经千年锤炼的全地形风格。"
+
+msgid "special_style/black_friday_2025_2_desc/long"
+msgstr ""
+"亘古闪耀的铜矿，与人类文明进程紧密交织。从蛮荒时代的工具到祭祀礼器，其温润光泽与千般用途曾推动神话传播与贸易往来，宣告冶金时代降临，重塑先民物质疆界。既受上古文明膜拜，亦是今日战略资源，此不朽矿脉终铸为您的战甲。神祇与帝国的金属永续传承——为当代战士重铸荣光。"
+
 msgid "special_style/black_prince_2019_3dst"
 msgstr "霍巴特滑稽坦克"
 
@@ -27192,6 +27293,38 @@ msgstr "军团通用"
 
 msgid "special_style/clan_urban"
 msgstr "军团都市"
+
+msgid "special_style/clans_2d_2025_2"
+msgstr "阿波罗神弓"
+
+msgid "special_style/clans_2d_2025_2_desc"
+msgstr "一款全地形风格，灵感源于光明与预言之神阿波罗的神弓。"
+
+msgid "special_style/clans_2d_2025_2_desc/long"
+msgstr ""
+"奥林匹斯光明与预言之神阿波罗的鎏金长弓，乃希腊神话核心圣器。由神匠赫菲斯托斯亲手锻造，赠予年少阿波罗用以守护其母勒托，终结巨蟒皮同。自此，此弓化为秩序守护与神罚之具，箭无虚发贯长空——或播撒爱意或降下瘟疫，皆凭神旨一念间。"
+
+msgid "special_style/clans_2d_2025_3"
+msgstr "二郎神三尖两刃刀"
+
+msgid "special_style/clans_2d_2025_3_desc"
+msgstr "一款全地形风格，灵感源于战神二郎真君的三尖两刃刀。"
+
+msgid "special_style/clans_2d_2025_3_desc/long"
+msgstr ""
+"三尖两刃刀，又称神戟，由战神二郎真君执掌，乃东方神话至尊兵器。此圣器配其战神威名与天道权柄，非寻常征伐之器，实为代行天罚之宝: "
+"铸造精绝，邪祟幻魔触之即破。二郎执此戟荡尽妖魔万众，纵与宿敌齐天大圣孙悟空交锋时，亦能运戟如虹，尽显神威浩荡。"
+
+msgid "special_style/clans_2d_2025_4"
+msgstr "亚瑟王圣剑"
+
+msgid "special_style/clans_2d_2025_4_desc"
+msgstr "一款全地形风格，灵感源于亚瑟王的神秘兵器——圣剑。"
+
+msgid "special_style/clans_2d_2025_4_desc/long"
+msgstr ""
+"亚瑟王的这柄名为圣剑的神秘兵器，数百年来在岛屿的传说中回荡不息。其来历扑朔迷离，众说纷纭: "
+"有人称少年亚瑟从石中拔剑，彰显天命加身；也有人言这是湖中仙女的恩赐。无论真相如何，这柄神剑的力量远胜凡人铸造之刃，更昭示着亚瑟王的勇武与高贵之魂。"
 
 msgid "special_style/clans_2d_thor"
 msgstr "雷神之锤"
@@ -28112,6 +28245,16 @@ msgid "special_style/girls_und_panzer_desc/long"
 msgstr ""
 "在与其他学校的战斗中，大洗女子学园的坦克数量往往处于劣势。为了弥补实力差距，鮟鱇组队长Miho "
 "Nishizumi选择剑走偏锋，首先转移敌方注意力，然后打敌方一个措手不及。\\n除鮟鱇组外，大洗女子学园最初的阵容还包括乌龟组、河马组、兔子组、家鸭组。坦克和队伍的数量随着时间的推移不断增加。虽然这些新成员的战斗经验不足，但是她们在战车道社团中快速地掌握了坦克的各种细节，并在大洗女子学园的数场高调胜利中鼎力相助。"
+
+msgid "special_style/girls_und_panzer_saunders"
+msgstr "桑德斯大学附属高中"
+
+msgid "special_style/girls_und_panzer_saunders_desc"
+msgstr "一款全地形风格，具有出色学园——桑德斯大学附属高中的徽章。"
+
+msgid "special_style/girls_und_panzer_saunders_desc/long"
+msgstr ""
+"富甲一方的桑德斯大学附属高中坐拥强大的M系坦克阵容。这所学园的战车道人员数量惊人，除了爱炫耀令人印象深刻的M4\"谢尔曼\"方阵以外，她们还喜欢举办奢华的派对——欣赏宾客们在海量快餐面前目瞪口呆的样子！不过可别把这些女孩的好客误当成软弱——她们的策略是以数量优势压制对手，而这往往需要精准炮术与老练的战术。"
 
 msgid "special_style/give_paw"
 msgstr "拍爪称赞"
@@ -30045,6 +30188,15 @@ msgstr "第瓦那之盾"
 msgid "special_style/sh2020_paid_4_desc"
 msgstr "一个在2020钢铁猎手第四阶段期间可购买的全地形风格。它以斯拉夫神话中的狩猎女神命名。"
 
+msgid "special_style/sh2025_1"
+msgstr "锈迹斑斑"
+
+msgid "special_style/sh2025_2"
+msgstr "侵蚀封锁"
+
+msgid "special_style/sh2025_desc"
+msgstr "一款为钢铁猎手设计的全地形风格。"
+
 msgid "special_style/sh_2023"
 msgstr "破坏性腐蚀"
 
@@ -30236,6 +30388,36 @@ msgstr "在钢铁猎手中达成成就而获得的一款全地形风格。"
 
 msgid "special_style/steel_hunter_arcade_2"
 msgstr "阿尔扎吉风暴"
+
+msgid "special_style/strongholds_2025_1"
+msgstr "晶脉脉冲"
+
+msgid "special_style/strongholds_2025_1_desc"
+msgstr "应用这款全地形风格，从昔日蛰伏于顽石，到今朝融入钢铁猛兽驰骋疆场。"
+
+msgid "special_style/strongholds_2025_1_desc/long"
+msgstr ""
+"\"我们当时正在进行矿脉编录，不过是常规的野外作业。直到钻头触碰到了那个神秘的晶球体。在地层深处，我们明显感觉到某种存在被惊醒了。随之而来的沉寂...仿佛带有意识。蓝绿色的幽光从地底裂隙中渗出，如脉搏般缓缓跳动。紧接着通讯系统全面失灵，仪器也开始显示各种匪夷所思的数据。出于自负，我们凿取样本带回实验室。当夜所有成员都梦见了低沉肃穆的吟诵，醒来后这声音仍如影随形。后来我们将这种岩石复合进装甲时，还自欺欺人地称之为科研需要。殊不知，我们早已成了它传播扩散的帮凶。\""
+
+msgid "special_style/strongholds_2025_2"
+msgstr "老兵之路"
+
+msgid "special_style/strongholds_2025_2_desc"
+msgstr "一款全地形风格，专为资深指挥官打造。"
+
+msgid "special_style/strongholds_2025_2_desc/long"
+msgstr ""
+"战场上的从容需要历练。要学会从纷乱战局中洞察战机，听炮弹破空之声便能预判弹道，懂得何时固守阵地、何时发动侧翼突袭、何时引诱对手犯错。没错，这身装甲确实布满刮痕，处处可见磕碰的印记，锈迹也日渐加深，但在您眼中，这些战损痕迹无伤大雅。新兵与老兵的差距正在于此——能跻身此列，您早已无需向任何人证明自己。"
+
+msgid "special_style/strongholds_2025_3"
+msgstr "闪电帷幕"
+
+msgid "special_style/strongholds_2025_3_desc"
+msgstr "应用这款全地形风格，释放天穹之怒。"
+
+msgid "special_style/strongholds_2025_3_desc/long"
+msgstr ""
+"早在火炮问世之前，烈焰便已撕裂苍穹。在引擎轰鸣尚未响起时，风暴早已裹挟着元素之怒席卷天地。纵然被这股原始伟力重创，人类却未曾屈服，反而从中获得启迪。为再现自然的毁灭威能，我们潜心钻研，不断锻造改良，终将钢铁铸就成了属于人类自己的风暴。须知凡胎肉体永远无法真正驾驭自然——我们所能做的，唯有献上最崇高的致敬。"
 
 msgid "special_style/summer"
 msgstr "夏季"

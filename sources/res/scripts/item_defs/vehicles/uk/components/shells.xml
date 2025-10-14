@@ -3884,6 +3884,78 @@
 			</damage>
 		</armorSpalls>
 	</_77mm_HE_Mk1T>
+	<_77mm_APCBC_Mk8T_3>
+		<id>326</id>
+		<userString>#gb_vehicles:_77mm_APCBC_Mk8T_3</userString>
+		<icon>ap</icon>
+		<price>200</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>
+			76.2
+			<!--BW_String-->
+		</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumArmorPiercing</effects>
+		<damage>
+			<armor>150</armor>
+			<devices>105</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_77mm_APCBC_Mk8T_3>
+	<_77mm_APDS_Mk1T_2>
+		<id>327</id>
+		<userString>#gb_vehicles:_77mm_APDS_Mk1T_2</userString>
+		<icon>ap_cr_premium</icon>
+		<price>3200</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>
+			76.2
+			<!--BW_String-->
+		</caliber>
+		<isTracer>true</isTracer>
+		<effects>mediumAPCR</effects>
+		<damage>
+			<armor>150</armor>
+			<devices>105</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_77mm_APDS_Mk1T_2>
+	<_77mm_HE_Mk1T_2>
+		<id>328</id>
+		<userString>#gb_vehicles:_77mm_HE_Mk1T_2</userString>
+		<icon>he_modern</icon>
+		<price>112</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>
+			76.2
+			<!--BW_String-->
+		</caliber>
+		<explosionRadius>
+			1.09
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>mediumHighExplosive</effects>
+		<damage>
+			<armor>190</armor>
+			<devices>105</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.09
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>95</armor>
+				<devices>55</devices>
+			</damage>
+		</armorSpalls>
+	</_77mm_HE_Mk1T_2>
 	<_77mm_HE_Mk_1T_A43>
 		<id>2104</id>
 		<userString>#gb_vehicles:_77mm_HE_Mk_1T_A43</userString>
@@ -6379,6 +6451,22 @@
 		<normalizationAngle>5</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_32pdr_APCBC_Mk_3>
+	<_55pdr_APCBC_214t>
+		<id>323</id>
+		<userString>#gb_vehicles:_55pdr_APCBC_214t</userString>
+		<icon>ap</icon>
+		<price>832</price>
+		<kind>ARMOR_PIERCING</kind>
+		<caliber>114</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeArmorPiercing</effects>
+		<damage>
+			<armor>370</armor>
+			<devices>154</devices>
+		</damage>
+		<normalizationAngle>5</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_55pdr_APCBC_214t>
 	<_32_Pr_APCBC_Mk_3_221>
 		<id>2111</id>
 		<userString>#gb_vehicles:_32_Pr_APCBC_Mk_3_221</userString>
@@ -6479,6 +6567,23 @@
 		<normalizationAngle>2</normalizationAngle>
 		<ricochetAngle>70</ricochetAngle>
 	</_32pdr_APDS_Mk_3>
+	<_55pdr_APDS_214t>
+		<id>324</id>
+		<userString>#gb_vehicles:_55pdr_APDS_214t</userString>
+		<icon>ap_cr_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>114</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>370</armor>
+			<devices>154</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_55pdr_APDS_214t>
 	<_32_Pr_APDS_Mk_3_221>
 		<id>2112</id>
 		<userString>#gb_vehicles:_32_Pr_APDS_Mk_3_221</userString>
@@ -6633,6 +6738,36 @@
 			</damage>
 		</armorSpalls>
 	</_32pdr_HE_Mk_3>
+	<_55pdr_HE_214t>
+		<id>325</id>
+		<userString>#gb_vehicles:_55pdr_HE_214t</userString>
+		<icon>he_modern</icon>
+		<price>1009</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>114</caliber>
+		<explosionRadius>
+			2.21
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>480</armor>
+			<devices>154</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				2.21
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>240</armor>
+				<devices>80</devices>
+			</damage>
+		</armorSpalls>
+	</_55pdr_HE_214t>
 	<_32_Pr_HE_Mk_3_221>
 		<id>2113</id>
 		<userString>#gb_vehicles:_32_Pr_HE_Mk_3_221</userString>
@@ -8051,7 +8186,7 @@
 		</damage>
 		<armorSpalls>
 			<impactRadius>
-				1.91
+				2.08
 				<!--BW_String-->
 			</impactRadius>
 			<coneAngle>90</coneAngle>
@@ -8061,6 +8196,72 @@
 			</damage>
 		</armorSpalls>
 	</_110mm_MV_HE_7x7>
+	<_110mm_MK_3_APDS_MBC>
+		<id>286</id>
+		<userString>#gb_vehicles:_110mm_MK_3_APDS_MBC</userString>
+		<icon>ap_cr</icon>
+		<price>921</price>
+		<kind>ARMOR_PIERCING_CR</kind>
+		<caliber>110</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeAPCR</effects>
+		<damage>
+			<armor>350</armor>
+			<devices>150</devices>
+		</damage>
+		<normalizationAngle>2</normalizationAngle>
+		<ricochetAngle>70</ricochetAngle>
+	</_110mm_MK_3_APDS_MBC>
+	<_110mm_MK_1_HC_MBC>
+		<id>287</id>
+		<userString>#gb_vehicles:_110mm_MK_1_HC_MBC</userString>
+		<icon>hc_premium</icon>
+		<price>5200</price>
+		<improved>true</improved>
+		<kind>HOLLOW_CHARGE</kind>
+		<caliber>110</caliber>
+		<isTracer>true</isTracer>
+		<effects>largeHollowCharge</effects>
+		<damage>
+			<armor>350</armor>
+			<devices>150</devices>
+		</damage>
+		<ricochetAngle>85</ricochetAngle>
+		<piercingPowerLossFactorByDistance>
+			0.05
+			<!--BW_String-->
+		</piercingPowerLossFactorByDistance>
+	</_110mm_MK_1_HC_MBC>
+	<_110mm_MK_7_HE_MBC>
+		<id>288</id>
+		<userString>#gb_vehicles:_110mm_MK_7_HE_MBC</userString>
+		<icon>he_modern</icon>
+		<price>484</price>
+		<kind>HIGH_EXPLOSIVE</kind>
+		<mechanics>MODERN</mechanics>
+		<caliber>110</caliber>
+		<explosionRadius>
+			1.91
+			<!--BW_String-->
+		</explosionRadius>
+		<isTracer>true</isTracer>
+		<effects>largeHighExplosive</effects>
+		<damage>
+			<armor>440</armor>
+			<devices>150</devices>
+		</damage>
+		<armorSpalls>
+			<impactRadius>
+				1.91
+				<!--BW_String-->
+			</impactRadius>
+			<coneAngle>90</coneAngle>
+			<damage>
+				<armor>220</armor>
+				<devices>75</devices>
+			</damage>
+		</armorSpalls>
+	</_110mm_MK_7_HE_MBC>
 	<_4_5_in_HE_Mk_XIII>
 		<id>94</id>
 		<userString>#gb_vehicles:_4_5_in_HE_Mk_XIII</userString>

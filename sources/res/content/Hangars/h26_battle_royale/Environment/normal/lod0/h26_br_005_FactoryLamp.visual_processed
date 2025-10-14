@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>FactoryLamp_Root</identifier>
+			<transform>
+				<row0>0.000199 -0.999994 -0.003398</row0>
+				<row1>0.997467 0.000441 -0.071136</row1>
+				<row2>0.071137 -0.003375 0.997461</row2>
+				<row3>0.000000 0.004000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>FactoryLamp_lamp</identifier>
+				<transform>
+					<row0>0.999766 -0.021617 -0.000110</row0>
+					<row1>0.021617 0.999766 0.000000</row1>
+					<row2>0.000110 -0.000002 1.000000</row2>
+					<row3>5.505323 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>FactoryLamp_lamp_BlendBone</identifier>
+					<transform>
+						<row0>-0.021371 0.997238 0.071135</row0>
+						<row1>-0.999770 -0.021177 -0.003485</row1>
+						<row2>0.001969 0.071193 -0.997461</row2>
+						<row3>-5.500039 -0.118925 -0.000591</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>FactoryLamp_Root_BlendBone</identifier>
+				<transform>
+					<row0>0.000199 0.997467 0.071137</row0>
+					<row1>-0.999994 0.000441 -0.003375</row1>
+					<row2>0.003398 0.071136 -0.997461</row2>
+					<row3>0.004000 -0.000002 0.000013</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>FactoryLamp_lamp_BlendBone</node>
+		<geometry>
+			<vertices>sShape1.vertices</vertices>
+			<stream>sShape1.colour</stream>
+			<primitive>sShape1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/custom/volumetric_effect_vtx_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h26_battle_royale/Environment/h26_br_005_FactoryLamp_AM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>false</Bool>
+					</property>
+					<property>
+						alphaFreshnelEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						enableLighting
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaAdditiveEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						softFactor
+						<Float>0.001000</Float>
+					</property>
+					<property>
+						fadeMaxDistance
+						<Float>3.000000</Float>
+					</property>
+					<property>
+						selfIllumLight
+						<Vector4>1.000000 0.749020 0.262745 0.000000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>10.000000 3.000000 6.000000 0.000000</Vector4>
+					</property>
+				</material>
+				<groupOrigin>-0.014996 -6.102732 0.014589</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>FactoryLamp_Root_BlendBone</node>
+		<node>FactoryLamp_lamp_BlendBone</node>
+		<geometry>
+			<vertices>sShape0.vertices</vertices>
+			<primitive>sShape0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0_skinned</identifier>
+					<collisionFlags>255</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_ext_skinned.fx</fx>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h26_battle_royale/Environment/h26_br_005_FactoryLamp_AM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>content/Hangars/h26_battle_royale/Environment/h26_br_005_FactoryLamp_ANM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>content/Hangars/h26_battle_royale/Environment/h26_br_005_FactoryLamp_GMM.dds</Texture>
+					</property>
+					<property>
+						doubleSided
+						<Bool>false</Bool>
+					</property>
+					<property>
+						dynamicObject
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>false</Bool>
+					</property>
+					<property>
+						alphaReference
+						<Int>0</Int>
+					</property>
+					<property>
+						g_enableAO
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>-0.014997 -3.152150 0.014589</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.464927 -6.308303 -0.464610</min>
+		<max>0.434933 0.004003 0.435432</max>
+	</boundingBox>
+	<geometrySize>8956</geometrySize>
+</root>

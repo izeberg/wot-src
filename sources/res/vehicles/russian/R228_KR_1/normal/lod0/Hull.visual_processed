@@ -202,16 +202,16 @@
 						<Float>0.279556</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_metallicDetailInfluence
 						<Float>0.910000</Float>
 					</property>
 					<property>
 						g_dirtLevel
 						<Float>0.470000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.010752 0.091703 -0.159044</groupOrigin>

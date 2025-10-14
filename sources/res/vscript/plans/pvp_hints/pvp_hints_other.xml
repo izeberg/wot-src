@@ -86,43 +86,6 @@
 				</slots>
 			</block>
 			<block>
-				<class>Variable</class>
-				<id>Variable_50</id>
-				<params>
-					<param>
-						playerIsNewbie
-						<name>Variable Name</name>
-						<type>StringT</type>
-					</param>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-					<param>
-						false
-						<name>External Init</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Is Const</name>
-						<type>BoolT</type>
-					</param>
-					<param>
-						false
-						<name>Initial Value</name>
-						<type>BoolT</type>
-					</param>
-				</params>
-				<slots>
-					<slot>
-						<name>default</name>
-						<const>\false\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>StartScript</class>
 				<id>StartScript_1</id>
 				<params/>
@@ -156,19 +119,6 @@
 				<class>CanShowHint</class>
 				<id>CanShowHint_9</id>
 				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_51</id>
-				<buddy>Variable_50</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
 				<slots/>
 			</block>
 			<block>
@@ -206,29 +156,6 @@
 					</param>
 				</params>
 				<slots/>
-			</block>
-			<block>
-				<class>Get Player Vehicle</class>
-				<id>Get Player Vehicle_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVehicleTier</class>
-				<id>GetVehicleTier_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>CompareIntegers</class>
-				<id>CompareIntegers_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>b</name>
-						<const>\4\</const>
-					</slot>
-				</slots>
 			</block>
 			<block>
 				<class>Not</class>
@@ -357,7 +284,7 @@
 				<slots>
 					<slot>
 						<name>time</name>
-						<const>\2.000000\</const>
+						<const>\5.000000\</const>
 					</slot>
 					<slot>
 						<name>stack</name>
@@ -384,20 +311,8 @@
 				<slots/>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_6</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_53</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_54</id>
+				<id>SetVariable_55</id>
 				<buddy>Variable_48</buddy>
 				<params>
 					<param>
@@ -414,15 +329,10 @@
 				</slots>
 			</block>
 			<block>
-				<class>FlowGate</class>
-				<id>FlowGate_2</id>
+				<class>If</class>
+				<id>If_54</id>
 				<params/>
-				<slots>
-					<slot>
-						<name>openAtStart</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
+				<slots/>
 			</block>
 			<block>
 				<class>Counter</class>
@@ -436,21 +346,19 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_90</id>
-				<buddy>Variable_48</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
+				<class>FlowGate</class>
+				<id>FlowGate_1</id>
+				<params/>
+				<slots>
+					<slot>
+						<name>openAtStart</name>
+						<const>\true\</const>
+					</slot>
+				</slots>
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_4</id>
+				<id>Macro_5</id>
 				<params>
 					<param>
 						Hint_Manager
@@ -470,51 +378,20 @@
 				</slots>
 			</block>
 			<block>
-				<class>And</class>
-				<id>And_34</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_87</id>
-				<buddy>Variable_50</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
+				<class>OnBattleRoundFinished</class>
+				<id>OnBattleRoundFinished_1</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>CanShowHint</class>
-				<id>CanShowHint_33</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>If</class>
-				<id>If_22</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>OnBattleRoundFinished</class>
-				<id>OnBattleRoundFinished_2</id>
+				<id>CanShowHint_34</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
-				<id>SelectHint_2</id>
+				<id>SelectHint_1</id>
 				<params>
 					<param>
 						newbie.newbie.PPH_OTHER_02
@@ -522,12 +399,6 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>RandomBool</class>
-				<id>RandomBool_1</id>
-				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -581,14 +452,14 @@
 				<slots/>
 			</block>
 			<block>
-				<class>IsPlayerVehicle</class>
-				<id>IsPlayerVehicle_2</id>
+				<class>If</class>
+				<id>If_53</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>SetVariable</class>
-				<id>SetVariable_55</id>
+				<id>SetVariable_54</id>
 				<buddy>Variable_48</buddy>
 				<params>
 					<param>
@@ -605,25 +476,14 @@
 				</slots>
 			</block>
 			<block>
-				<class>If</class>
-				<id>If_54</id>
+				<class>IsPlayerVehicle</class>
+				<id>IsPlayerVehicle_2</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
-				<class>FlowGate</class>
-				<id>FlowGate_1</id>
-				<params/>
-				<slots>
-					<slot>
-						<name>openAtStart</name>
-						<const>\true\</const>
-					</slot>
-				</slots>
-			</block>
-			<block>
 				<class>Macro</class>
-				<id>Macro_5</id>
+				<id>Macro_4</id>
 				<params>
 					<param>
 						Hint_Manager
@@ -643,45 +503,14 @@
 				</slots>
 			</block>
 			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_91</id>
-				<buddy>Variable_48</buddy>
-				<params>
-					<param>
-						BoolT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>OnBattleRoundFinished</class>
-				<id>OnBattleRoundFinished_1</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>And</class>
-				<id>And_35</id>
-				<params>
-					<param>
-						2
-						<name>Input Count</name>
-						<type>IntT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
 				<class>CanShowHint</class>
-				<id>CanShowHint_34</id>
+				<id>CanShowHint_33</id>
 				<params/>
 				<slots/>
 			</block>
 			<block>
 				<class>SelectHint</class>
-				<id>SelectHint_1</id>
+				<id>SelectHint_2</id>
 				<params>
 					<param>
 						newbie.newbie.PPH_OTHER_03
@@ -1621,18 +1450,6 @@
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>If_8</from>
-				<input>input</input>
-				<to>SetVariable_51</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>CompareIntegers_1</from>
-				<input>value</input>
-				<to>SetVariable_51</to>
-				<output>less</output>
-			</connection>
-			<connection>
 				<from>SelectHint_16</from>
 				<input>hintId</input>
 				<to>CanShowHint_10</to>
@@ -1643,18 +1460,6 @@
 				<input>hintId</input>
 				<to>CanShowHint_11</to>
 				<output>id</output>
-			</connection>
-			<connection>
-				<from>Get Player Vehicle_1</from>
-				<input>vehicle</input>
-				<to>GetVehicleTier_1</to>
-				<output>vehicle</output>
-			</connection>
-			<connection>
-				<from>GetVehicleTier_1</from>
-				<input>a</input>
-				<to>CompareIntegers_1</to>
-				<output>tier</output>
 			</connection>
 			<connection>
 				<from>Or_6</from>
@@ -1753,52 +1558,22 @@
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>Counter_2</from>
+				<from>Macro_5</from>
 				<input>input</input>
-				<to>If_6</to>
-				<output>completed</output>
-			</connection>
-			<connection>
-				<from>GetVariable_87</from>
-				<input>value</input>
-				<to>If_6</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>FlowGate_2</from>
-				<input>input</input>
-				<to>If_53</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>And_34</from>
-				<input>value</input>
-				<to>If_53</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>Macro_4</from>
-				<input>input</input>
-				<to>SetVariable_54</to>
+				<to>SetVariable_55</to>
 				<output>ShowHintOutput</output>
 			</connection>
 			<connection>
-				<from>If_6</from>
+				<from>FlowGate_1</from>
 				<input>input</input>
-				<to>FlowGate_2</to>
-				<output>true</output>
+				<to>If_54</to>
+				<output>out</output>
 			</connection>
 			<connection>
-				<from>If_22</from>
-				<input>input</input>
-				<to>FlowGate_2</to>
-				<output>true</output>
-			</connection>
-			<connection>
-				<from>OnBattleRoundFinished_2</from>
-				<input>close</input>
-				<to>FlowGate_2</to>
-				<output>onFinished</output>
+				<from>CanShowHint_34</from>
+				<input>value</input>
+				<to>If_54</to>
+				<output>result</output>
 			</connection>
 			<connection>
 				<from>Delay_6</from>
@@ -1813,46 +1588,34 @@
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>If_53</from>
+				<from>Counter_2</from>
+				<input>input</input>
+				<to>FlowGate_1</to>
+				<output>completed</output>
+			</connection>
+			<connection>
+				<from>OnBattleRoundFinished_1</from>
+				<input>close</input>
+				<to>FlowGate_1</to>
+				<output>onFinished</output>
+			</connection>
+			<connection>
+				<from>If_54</from>
 				<input>Show_Hint</input>
-				<to>Macro_4</to>
+				<to>Macro_5</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>SelectHint_2</from>
+				<from>SelectHint_1</from>
 				<input>HintID</input>
-				<to>Macro_4</to>
+				<to>Macro_5</to>
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>GetVariable_90</from>
-				<input>i1</input>
-				<to>And_34</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>CanShowHint_33</from>
-				<input>i2</input>
-				<to>And_34</to>
-				<output>result</output>
-			</connection>
-			<connection>
-				<from>SelectHint_2</from>
+				<from>SelectHint_1</from>
 				<input>hintId</input>
-				<to>CanShowHint_33</to>
+				<to>CanShowHint_34</to>
 				<output>id</output>
-			</connection>
-			<connection>
-				<from>If_6</from>
-				<input>input</input>
-				<to>If_22</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>RandomBool_1</from>
-				<input>value</input>
-				<to>If_22</to>
-				<output>res</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDestroyed_4</from>
@@ -1891,69 +1654,45 @@
 				<output>target</output>
 			</connection>
 			<connection>
+				<from>If_54</from>
+				<input>input</input>
+				<to>If_53</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>CanShowHint_33</from>
+				<input>value</input>
+				<to>If_53</to>
+				<output>result</output>
+			</connection>
+			<connection>
+				<from>Macro_4</from>
+				<input>input</input>
+				<to>SetVariable_54</to>
+				<output>ShowHintOutput</output>
+			</connection>
+			<connection>
 				<from>OnAnyVehicleDestroyed_4</from>
 				<input>vehicle</input>
 				<to>IsPlayerVehicle_2</to>
 				<output>target</output>
 			</connection>
 			<connection>
-				<from>Macro_5</from>
-				<input>input</input>
-				<to>SetVariable_55</to>
-				<output>ShowHintOutput</output>
-			</connection>
-			<connection>
-				<from>FlowGate_1</from>
-				<input>input</input>
-				<to>If_54</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>And_35</from>
-				<input>value</input>
-				<to>If_54</to>
-				<output>res</output>
-			</connection>
-			<connection>
-				<from>If_22</from>
-				<input>input</input>
-				<to>FlowGate_1</to>
-				<output>false</output>
-			</connection>
-			<connection>
-				<from>OnBattleRoundFinished_1</from>
-				<input>close</input>
-				<to>FlowGate_1</to>
-				<output>onFinished</output>
-			</connection>
-			<connection>
-				<from>If_54</from>
+				<from>If_53</from>
 				<input>Show_Hint</input>
-				<to>Macro_5</to>
+				<to>Macro_4</to>
 				<output>true</output>
 			</connection>
 			<connection>
-				<from>SelectHint_1</from>
+				<from>SelectHint_2</from>
 				<input>HintID</input>
-				<to>Macro_5</to>
+				<to>Macro_4</to>
 				<output>id</output>
 			</connection>
 			<connection>
-				<from>GetVariable_91</from>
-				<input>i1</input>
-				<to>And_35</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>CanShowHint_34</from>
-				<input>i2</input>
-				<to>And_35</to>
-				<output>result</output>
-			</connection>
-			<connection>
-				<from>SelectHint_1</from>
+				<from>SelectHint_2</from>
 				<input>hintId</input>
-				<to>CanShowHint_34</to>
+				<to>CanShowHint_33</to>
 				<output>id</output>
 			</connection>
 			<connection>

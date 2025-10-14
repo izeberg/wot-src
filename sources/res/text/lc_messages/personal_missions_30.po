@@ -313,7 +313,7 @@ msgstr ""
 
 msgid "detail/descr/historical/s3_t8_vehElement_5"
 msgstr ""
-"今天在车体侧面加装了防尘板。这可以有效地提高坦克执行长期任务的效率，是一个实用的部件。\n"
+"今天在车体侧面加装了防尘板。这可以有效地提高坦克执行长期任务的耐久性，是一个实用的部件。\n"
 "\n"
 "从缴获的晨光诊所文件中发现了耐人寻味的记录: 一位在1943年被官方宣告\"阵亡\"的工程师，三周后竟出现在该诊所的收治名单上。\n"
 "\n"
@@ -872,7 +872,7 @@ msgid "tooltip/assembling/zoomOut"
 msgstr "点击隐藏描述。"
 
 msgid "tooltip/missionProgress/completed"
-msgstr "已完成: {{completed}}{{@class $totalClass}}/{{total}}{{/}}"
+msgstr "已完成: {{completed}}{{@ class $totalClass}}/{{total}}{{/}}"
 
 msgid "tooltip/missionProgress/description"
 msgstr "若要完成任务，您必须使用符合要求的不同坦克多次达成其条件。"

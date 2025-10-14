@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch63_Yong_Bing/crash/lod1/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.602680 -0.000936 -3.927458</min>
+		<max>1.602682 1.017253 3.869989</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_Yong_Bing/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

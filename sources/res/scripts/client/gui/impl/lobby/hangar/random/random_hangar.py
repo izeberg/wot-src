@@ -1,11 +1,11 @@
 from __future__ import absolute_import
-import logging, typing
+import typing
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
 from PlayerEvents import g_playerEvents
 from frameworks.wulf import WindowFlags
 from gui.app_loader import app_getter
-from gui.Scaleform.daapi.view.lobby.hangar.carousels.battle_pass.carousel_filter import BattlePassCarouselFilter
+from gui.filters.battle_pass_carousel_filter import BattlePassCarouselFilter
 from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.game_loading.resources.consts import Milestones
 from gui.impl.gen import R
@@ -42,29 +42,12 @@ from hangar_selectable_objects import HangarSelectableLogic
 from helpers import dependency
 from helpers.statistics import HANGAR_LOADING_STATE
 from shared_utils import nextTick
-from skeletons.gui.customization import ICustomizationService
 from skeletons.helpers.statistics import IStatisticsCollector
 from skeletons.gui.offers import IOffersBannerController
 if typing.TYPE_CHECKING:
-    from gui.shared.utils.requesters import RequestCriteria
     from gui.impl.pub.view_impl import TViewModel
     from hangar_selectable_objects.interfaces import ISelectableLogic
-_logger = logging.getLogger(__name__)
-
-def _createRandomModeCriteria():
-    randomCriteria = REQ_CRITERIA.EMPTY
-    randomCriteria |= ~REQ_CRITERIA.VEHICLE.MODE_HIDDEN
-    randomCriteria |= ~REQ_CRITERIA.VEHICLE.BATTLE_ROYALE
-    randomCriteria |= ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE
-    randomCriteria |= REQ_CRITERIA.VEHICLE.ACTIVE_IN_NATION_GROUP
-    return randomCriteria
-
-
-class HangarSpaceSelectable(object):
-    VEHICLE_PREVIEW_FLAG = 'vehiclePreviewFlag'
-    HERO_TANK_PREVIEW_FLAG = 'heroTankPreviewFlag'
-    HANGAR_FLAG = 'hangarFlag'
-
+RANDOM_MODE_CRITERIA = ~REQ_CRITERIA.VEHICLE.MODE_HIDDEN | ~REQ_CRITERIA.VEHICLE.BATTLE_ROYALE | ~REQ_CRITERIA.VEHICLE.EVENT_BATTLE | REQ_CRITERIA.VEHICLE.ACTIVE_IN_NATION_GROUP
 
 class HangarWindow(WindowImpl):
     _statsCollector = dependency.descriptor(IStatisticsCollector)
@@ -80,16 +63,13 @@ class HangarWindow(WindowImpl):
 
 class RandomHangar(ViewComponent[RouterModel], IRoutableView):
     _COMMON_SOUND_SPACE = RANDOM_HANGAR_SOUND_SPACE
-    __customizationService = dependency.descriptor(ICustomizationService)
     __offersBannerController = dependency.descriptor(IOffersBannerController)
 
     def __init__(self, layoutId=R.views.mono.hangar.main(), model=RouterModel):
         super(RandomHangar, self).__init__(layoutId, model)
         self.__inputManager = None
-        self.__baseCriteria = _createRandomModeCriteria()
-        self.__accountVehiclesCriteria = self.__baseCriteria | REQ_CRITERIA.INVENTORY
-        self.__allModeVehicleFilter = VehiclesFilterComponent(self.__baseCriteria)
-        self.__accountVehicleFilter = VehiclesFilterComponent(self.__accountVehiclesCriteria)
+        self.__randomVehicleFilter = VehiclesFilterComponent(RANDOM_MODE_CRITERIA)
+        self.__randomInvVehicleFilter = VehiclesFilterComponent(REQ_CRITERIA.INVENTORY | RANDOM_MODE_CRITERIA)
         self.__carouselFilter = BattlePassCarouselFilter()
         self.__carouselFilter.setDisabledUpdateCriteries(True)
         self.__accountStyles = AccountStyles()
@@ -101,12 +81,12 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
 
     def _getChildComponents(self):
         hangar = R.aliases.hangar.shared
-        return {hangar.VehiclesInfo(): lambda : VehiclesInfoPresenter(self.__allModeVehicleFilter), 
-           hangar.VehiclesStatistics(): lambda : VehiclesStatisticsPresenter(self.__accountVehicleFilter, self.__accountStyles), 
+        return {hangar.VehiclesInfo(): lambda : VehiclesInfoPresenter(self.__randomVehicleFilter), 
+           hangar.VehiclesStatistics(): lambda : VehiclesStatisticsPresenter(self.__randomInvVehicleFilter, self.__accountStyles), 
            hangar.Loadout(): LoadoutPresenter, 
            hangar.Crew(): CrewPresenter, 
            hangar.VehicleParams(): HangarVehicleParamsPresenter, 
-           hangar.VehiclesInventory(): lambda : VehicleInventoryPresenter(self.__accountVehiclesCriteria), 
+           hangar.VehiclesInventory(): lambda : VehicleInventoryPresenter(self.__randomInvVehicleFilter), 
            hangar.VehicleFilters(): lambda : VehicleFiltersDataProvider(self.__carouselFilter), 
            hangar.MainMenu(): lambda : MainMenuPresenter(getMenuItems()), 
            hangar.SpaceInteraction(): lambda : SpaceInteractionPresenter(self.__createSelectableLogic()), 
@@ -133,8 +113,8 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
 
     def _onLoading(self, *args, **kwargs):
         self.__inputManager = self.__app.gameInputManager
-        self.__allModeVehicleFilter.initialize()
-        self.__accountVehicleFilter.initialize()
+        self.__randomVehicleFilter.initialize()
+        self.__randomInvVehicleFilter.initialize()
         self._initializeRouter()
         self.__accountStyles.initialize()
         super(RandomHangar, self)._onLoading(*args, **kwargs)
@@ -154,12 +134,11 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
 
     def _finalize(self):
         super(RandomHangar, self)._finalize()
-        self.__allModeVehicleFilter.destroy()
-        self.__allModeVehicleFilter = None
-        self.__accountVehicleFilter.destroy()
-        self.__accountVehicleFilter = None
+        self.__randomVehicleFilter.destroy()
+        self.__randomVehicleFilter = None
+        self.__randomInvVehicleFilter.destroy()
+        self.__randomInvVehicleFilter = None
         self.__carouselFilter = None
-        self.__baseCriteria = None
         self._router.fini()
         self._router = None
         self.__inputManager = None

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<timeline>
+		<lightingEnd>
+			0.2
+			<!--BW_String-->
+		</lightingEnd>
+		<soundplaystop>3</soundplaystop>
+		<endpixie>1</endpixie>
+		<end>1</end>
+	</timeline>
+	<effects>
+		<flashBang>
+			<startKey>start</startKey>
+			<stages>
+				<stage>
+					0.1
+					<!--BW_String-->
+					<color>0 0 0 0</color>
+				</stage>
+				<stage>
+					0.5
+					<!--BW_String-->
+					<color>
+						1.0 0.0 0.0 0.5
+						<!--BW_String-->
+					</color>
+				</stage>
+				<stage>
+					0.0
+					<!--BW_String-->
+					<color>0 0 0 0</color>
+				</stage>
+			</stages>
+		</flashBang>
+	</effects>
+</root>

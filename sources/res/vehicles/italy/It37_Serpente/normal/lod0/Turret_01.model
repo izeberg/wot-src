@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.170450 0.000923 -1.029910</min>
+		<max>1.170444 2.141815 1.029919</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/italy/It37_Serpente/normal/lod0/Turret_01</nodefullVisual>
+	<parent>vehicles/italy/It37_Serpente/normal/lod1/Turret_01</parent>
+	<extent>32.000000</extent>
+</root>

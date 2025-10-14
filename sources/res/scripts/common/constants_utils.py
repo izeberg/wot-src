@@ -278,7 +278,6 @@ class AbstractBattleMode(object):
     _SM_TYPES = []
     _CLIENT_SM_TYPES = []
     _FAIRPLAY_VEHICLE_BATTLE_STATS_COMPONENT = None
-    _CLIENT_SETTINGS_VIEW_ALIAS = None
 
     def __init__(self, personality):
         self._personality = personality
@@ -417,6 +416,14 @@ class AbstractBattleMode(object):
         return []
 
     @property
+    def _client_gfNotifications(self):
+        return {}
+
+    @property
+    def _client_awardControllerHandlers(self):
+        return []
+
+    @property
     def _client_lootBoxAutoOpenSubFormatters(self):
         return []
 
@@ -510,7 +517,7 @@ class AbstractBattleMode(object):
         return
 
     @property
-    def _client_hangarPresetsGetter(self):
+    def _client_hangarDynamicGuiProvider(self):
         return
 
     @property
@@ -772,6 +779,10 @@ class AbstractBattleMode(object):
         for sysMsgType, formatter in self._client_messengerServerFormatters.iteritems():
             registerMessengerServerFormatter(sysMsgType, formatter, True)
 
+    def registerClientGamefaceNotifications(self):
+        from gui.shared.system_factory import registerGamefaceNotifications
+        registerGamefaceNotifications(self._client_gfNotifications)
+
     def registerClientTokenQuestsSubFormatters(self):
         from gui.shared.system_factory import registerTokenQuestsSubFormatters
         registerTokenQuestsSubFormatters(self._client_tokenQuestsSubFormatters)
@@ -783,6 +794,10 @@ class AbstractBattleMode(object):
     def registerClientViewsForMonitoring(self):
         from gui.shared.system_factory import registerViewsForMonitoring
         registerViewsForMonitoring(self._client_viewsForMonitoring)
+
+    def registerClientAwardControllerHandlers(self):
+        from gui.shared.system_factory import registerAwardControllerHandlers
+        registerAwardControllerHandlers(self._client_awardControllerHandlers)
 
     def registerClientLootBoxAutoOpenSubFormatters(self):
         from gui.shared.system_factory import registerLootBoxAutoOpenSubFormatters
@@ -833,9 +848,9 @@ class AbstractBattleMode(object):
         if self._client_hangarPresetsReader:
             from gui.shared.system_factory import registerHangarPresetsReader
             registerHangarPresetsReader(self._client_hangarPresetsReader)
-        if self._client_hangarPresetsGetter:
-            from gui.shared.system_factory import registerHangarPresetGetter
-            registerHangarPresetGetter(self._QUEUE_TYPE, self._client_hangarPresetsGetter)
+        if self._client_hangarDynamicGuiProvider:
+            from gui.shared.system_factory import registerHangarDynamicGuiProvider
+            registerHangarDynamicGuiProvider(self._QUEUE_TYPE, self._client_hangarDynamicGuiProvider)
 
     def registerNonReplayMode(self):
         ARENA_BONUS_TYPE.REPLAY_DISABLE_RANGE.append(self._ARENA_BONUS_TYPE)
@@ -858,7 +873,3 @@ class AbstractBattleMode(object):
     def registerPrbTypeForWotPlusAssistant(self, loadoutType):
         from gui.game_control.wot_plus_assistant import registerAllowedPrebattleType
         registerAllowedPrebattleType(self._PREBATTLE_TYPE, loadoutType)
-
-    def registerSettingsWindow(self):
-        from gui.Scaleform.daapi.view.lobby.lobby_constants import registerSettingsWindow
-        registerSettingsWindow(self._PREBATTLE_TYPE, self._CLIENT_SETTINGS_VIEW_ALIAS)

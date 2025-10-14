@@ -1149,10 +1149,18 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>2.104110 0.526027 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.350688 0.605568 -0.079838</groupOrigin>
+				<groupOrigin>-1.354138 0.605646 -0.055838</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1243,10 +1251,18 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>4.208219 1.052055 0.000000 0.000000</Vector4>
+						<Vector4>2.104110 0.526027 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.350707 0.605659 -0.080484</groupOrigin>
+				<groupOrigin>1.354158 0.605630 -0.055065</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1274,8 +1290,8 @@
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1349,12 +1365,20 @@
 						</matrix>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.240000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.800000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.200000</Float>
 					</property>
 				</material>
 				<groupOrigin>-1.318335 0.605417 -0.031190</groupOrigin>
@@ -1385,8 +1409,8 @@
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1460,12 +1484,20 @@
 						</matrix>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.240000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.800000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.200000</Float>
 					</property>
 				</material>
 				<groupOrigin>1.318354 0.605722 -0.031501</groupOrigin>

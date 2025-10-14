@@ -2165,6 +2165,7 @@
 						<and>
 							<vehiclesOwned>
 								<levels>6 7 8 9 10 11</levels>
+								<excludeTags>event_battles</excludeTags>
 								<greaterOrEqual>1</greaterOrEqual>
 							</vehiclesOwned>
 							<token>
@@ -2448,6 +2449,7 @@
 						<and>
 							<vehiclesOwned>
 								<levels>7 8 9 10 11</levels>
+								<excludeTags>event_battles</excludeTags>
 								<greaterOrEqual>1</greaterOrEqual>
 							</vehiclesOwned>
 							<token>
@@ -2741,6 +2743,7 @@
 						<and>
 							<vehiclesOwned>
 								<levels>8 9 10 11</levels>
+								<excludeTags>event_battles</excludeTags>
 								<greaterOrEqual>1</greaterOrEqual>
 							</vehiclesOwned>
 							<token>

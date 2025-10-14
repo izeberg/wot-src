@@ -932,6 +932,14 @@
 						g_detailUVTiling
 						<Vector4>7.013699 1.753425 0.000000 0.000000</Vector4>
 					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.304864 0.635212 0.011918</groupOrigin>
 			</primitiveGroup>
@@ -1022,6 +1030,14 @@
 					<property>
 						g_detailUVTiling
 						<Vector4>7.013699 1.753425 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.304865 0.635212 0.011975</groupOrigin>
@@ -1156,8 +1172,8 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.255948 0.653333 0.048067</groupOrigin>
@@ -1292,8 +1308,8 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.255949 0.653332 0.048067</groupOrigin>

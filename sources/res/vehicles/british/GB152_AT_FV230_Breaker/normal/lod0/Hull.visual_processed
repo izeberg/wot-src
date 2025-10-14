@@ -439,8 +439,20 @@
 						</matrix>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.800000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.200000</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.000542 0.804213 2.579890</groupOrigin>
@@ -518,8 +530,8 @@
 						<Float>0.365683</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.005217 0.811274 3.641650</groupOrigin>
@@ -622,10 +634,6 @@
 						</matrix>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_glossMax
 						<Float>0.638745</Float>
 					</property>
@@ -636,6 +644,10 @@
 					<property>
 						g_dirtLevel
 						<Float>0.440000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000002 0.977600 -0.162106</groupOrigin>
@@ -709,12 +721,12 @@
 						<Float>0.155351</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.390000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.060064 0.591952 -1.423449</groupOrigin>

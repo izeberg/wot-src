@@ -1,0 +1,106 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "eventShop"
+msgstr "活动商店"
+
+msgid "progress/counter"
+msgstr "{{current}}{{divider}}{{total}}"
+
+msgid "progressionComplete"
+msgstr "已完成主要进度！"
+
+msgid "tooltip/banner/description"
+msgstr ""
+"体验变幻莫测、背景设定在末世的军事演习模式，成为笑到最后的猎手。驾驶8辆可在战斗过程中升级的特殊坦克，每升一级就能变得更强。专属奖励以及更多精彩内容等待着您！"
+
+msgid "tooltip/banner/mode/description"
+msgstr "——游戏模式。点击了解详情"
+
+msgid "tooltip/banner/mode/label"
+msgstr "模式"
+
+msgid "tooltip/banner/performanceRisk/description/high"
+msgstr "您的计算机性能不足以运行此模式。您可能会遇到图形和坦克移动方面的问题。游戏客户端也有可能崩溃。"
+
+msgid "tooltip/banner/performanceRisk/description/medium"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "tooltip/banner/performanceRisk/title/high"
+msgstr "低性能"
+
+msgid "tooltip/banner/performanceRisk/title/medium"
+msgstr "可能会降低性能"
+
+msgid "tooltip/banner/timer/text/accent"
+msgstr "活动将开放{{timer}}"
+
+msgid "tooltip/banner/timer/text/cooldown"
+msgstr "休战期{{timer}}"
+
+msgid "tooltip/banner/title"
+msgstr "钢铁猎手"
+
+msgid "tooltip/daily_quests/header"
+msgstr "已完成"
+
+msgid "tooltip/daily_quests/new_daily_missions"
+msgstr "距新的钢铁猎手任务开放还有{{timeLeft}}"
+
+msgid "tooltip/daily_quests/reward"
+msgid_plural "plural/tooltip/daily_quests/reward"
+msgstr[0] "奖励:"
+msgstr[1] "奖励:"
+msgstr[2] "奖励:"
+
+msgid "tooltip/daily_quests/text"
+msgstr "已完成全部任务！"
+
+msgid "tooltip/progressionWidget/description/completed"
+msgstr "干得漂亮，指挥官，再接再厉！"
+
+msgid "tooltip/progressionWidget/description/header"
+msgstr "已完成主要进度！"
+
+msgid "tooltip/progressionWidget/description/inProgress"
+msgstr "完成任务、在钢铁猎手战斗中取得靠前的名次，即可推动进度。"
+
+msgid "tooltip/progressionWidget/subTitle"
+msgstr "距该模式结束还有%(value)s"
+
+msgid "tooltip/progressionWidget/title"
+msgstr "钢铁猎手"
+
+msgid "tooltip/quest/header"
+msgstr "钢铁猎手任务"
+
+msgid "tooltip/shop/subtitle"
+msgstr "使用{{@ colorLegacy 'ede6d9'}}钢铁印章{{/}}兑换特殊奖励。"
+
+msgid "tooltip/shop/text"
+msgstr "通过在战斗中表现出色、在战斗结果中排名靠前，以及完成任务来获得钢铁印章。"
+
+msgid "tooltip/shop/title"
+msgstr "钢铁猎手商店"
+
+msgid "upgrades/description"
+msgstr "对敌方坦克造成损伤、在地图上收集各种物资，即可获得经验并提高等级。每达到一个等级，您都可以在\"升级菜单\"中升级一个模块，大幅增强坦克性能。"
+
+msgid "upgrades/footer"
+msgstr "模块只能在战斗中升级。"
+
+msgid "upgrades/subtitle"
+msgstr "您将驾驶I级坦克进入战斗。"
+
+msgid "upgrades/title"
+msgstr "在战斗中升级坦克"

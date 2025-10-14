@@ -1441,8 +1441,8 @@
 				0.12
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>250</rpm_min>
-			<rpm_max>2800</rpm_max>
+			<rpm_min>350</rpm_min>
+			<rpm_max>2480</rpm_max>
 		</MB_517_Spezialausfuehrung>
 		<DB_603_A1>
 			<userString>#germany_vehicles:DB_603_A1</userString>
@@ -1667,7 +1667,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_ContinentalR_pc</wwsoundPC>
 			<wwsoundNPC>eng_ContinentalR_npc</wwsoundNPC>
-			<power>1200</power>
+			<power>1310</power>
 			<weight>750</weight>
 			<maxHealth>310</maxHealth>
 			<maxRegenHealth>155</maxRegenHealth>
@@ -1676,8 +1676,8 @@
 				0.2
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>404</rpm_min>
-			<rpm_max>2305</rpm_max>
+			<rpm_min>373</rpm_min>
+			<rpm_max>2404</rpm_max>
 		</Maybach_Neues_Projekt_90>
 		<Maybach_HL_234>
 			<userString>#germany_vehicles:Maybach_HL_234</userString>
@@ -2405,7 +2405,7 @@
 			<notInShop>true</notInShop>
 			<wwsoundPC>eng_mtu_mb_838_PC</wwsoundPC>
 			<wwsoundNPC>eng_mtu_mb_838_NPC</wwsoundNPC>
-			<power>850</power>
+			<power>900</power>
 			<weight>2000</weight>
 			<maxHealth>255</maxHealth>
 			<maxRegenHealth>127</maxRegenHealth>
@@ -2414,8 +2414,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>225</rpm_min>
-			<rpm_max>2525</rpm_max>
+			<rpm_min>200</rpm_min>
+			<rpm_max>2600</rpm_max>
 		</MTU803>
 		<Engine_VK4502P>
 			<userString>#germany_vehicles:Engine_VK4502P</userString>
@@ -4859,8 +4859,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>210</rpm_min>
-			<rpm_max>2570</rpm_max>
+			<rpm_min>235</rpm_min>
+			<rpm_max>2495</rpm_max>
 		</MTU_MB_838_CaM_500H>
 		<Maybach_HL_210P30_Ausf_A_IGR>
 			<userString>#igr_vehicles:Maybach_HL_210P30_Ausf_A_IGR</userString>

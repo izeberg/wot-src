@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S35_Stridsyxa/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.499503 -0.000000 -3.241876</min>
+		<max>1.499510 1.111291 3.359871</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S35_Stridsyxa/normal/lod0/Chassis</nodefullVisual>
+</root>

@@ -3112,7 +3112,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<reloadTime>
-						7.5
+						6.6
 						<!--BW_String-->
 					</reloadTime>
 					<aimingTime>
@@ -3125,7 +3125,7 @@
 					</invisibilityFactorAtShot>
 					<shotDispersionFactors>
 						<turretRotation>
-							0.16
+							0.12
 							<!--BW_String-->
 						</turretRotation>
 						<afterShot>
@@ -3270,7 +3270,7 @@
 		<detailed>
 			<engines>
 				<Meteor_Mark_IVB>
-					<smplEnginePower>900</smplEnginePower>
+					<smplEnginePower>950</smplEnginePower>
 					<smplFwMaxSpeed>50</smplFwMaxSpeed>
 				</Meteor_Mark_IVB>
 			</engines>

@@ -9,6 +9,21 @@
 		</aspect>
 		<blocks>
 			<block>
+				<class>ArenaPeriodStartEvent</class>
+				<id>ArenaPeriodStartEvent_3</id>
+				<params>
+					<param>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
+					</param>
+				</params>
+			</block>
+			<block>
+				<class>StartScript</class>
+				<id>StartScript_1</id>
+			</block>
+			<block>
 				<class>ContextGetSelf</class>
 				<id>ContextGetSelf_1</id>
 				<params>
@@ -23,7 +38,10 @@
 						<type>StringT</type>
 					</param>
 				</params>
-				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_18</id>
 			</block>
 			<block>
 				<class>ComponentMethod</class>
@@ -51,27 +69,23 @@
 				</slots>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_2</id>
+				<class>ArenaPeriod</class>
+				<id>ArenaPeriod_1</id>
 				<params>
 					<param>
-						CustomizationVehicleEvents
-						<name>Macro Name</name>
-						<type>StringT</type>
+						Battle
+						<name>Period</name>
+						<type>EArenaPeriodT</type>
 					</param>
 				</params>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_17</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>OnAnyVehicleDamaged</class>
 				<id>OnAnyVehicleDamaged_1</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>active</name>
@@ -80,40 +94,28 @@
 				</slots>
 			</block>
 			<block>
+				<class>CompareVehicles</class>
+				<id>CompareVehicles_6</id>
+			</block>
+			<block>
 				<class>GetVehicleGameObject</class>
 				<id>GetVehicleGameObject_1</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GameObjectToVehicle</class>
 				<id>GameObjectToVehicle_2</id>
-				<params/>
-				<slots/>
-			</block>
-			<block>
-				<class>CompareVehicles</class>
-				<id>CompareVehicles_6</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>GetVehicleHealth</class>
 				<id>GetVehicleHealth_2</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_7</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_15</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -135,7 +137,6 @@
 			<block>
 				<class>GetVehicleMaxHealth</class>
 				<id>GetVehicleMaxHealth_2</id>
-				<params/>
 				<slots>
 					<slot>
 						<name>type</name>
@@ -146,14 +147,10 @@
 			<block>
 				<class>CompareFloats</class>
 				<id>CompareFloats_8</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>If</class>
 				<id>If_16</id>
-				<params/>
-				<slots/>
 			</block>
 			<block>
 				<class>MultiplyFloat</class>
@@ -225,22 +222,34 @@
 		</blocks>
 		<connections>
 			<connection>
-				<from>Macro_2</from>
+				<from>StartScript_1</from>
+				<input>input</input>
+				<to>If_18</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriod_1</from>
+				<input>value</input>
+				<to>If_18</to>
+				<output>isActive</output>
+			</connection>
+			<connection>
+				<from>If_18</from>
 				<input>in</input>
 				<to>ComponentMethod_33</to>
-				<output>onBattleStart</output>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ArenaPeriodStartEvent_3</from>
+				<input>in</input>
+				<to>ComponentMethod_33</to>
+				<output>start</output>
 			</connection>
 			<connection>
 				<from>ContextGetSelf_1</from>
 				<input>gameObject</input>
 				<to>ComponentMethod_33</to>
 				<output>value</output>
-			</connection>
-			<connection>
-				<from>GameObjectToVehicle_2</from>
-				<input>vehicle</input>
-				<to>Macro_2</to>
-				<output>vehicle</output>
 			</connection>
 			<connection>
 				<from>OnAnyVehicleDamaged_1</from>
@@ -255,18 +264,6 @@
 				<output>res</output>
 			</connection>
 			<connection>
-				<from>ContextGetSelf_1</from>
-				<input>gameObject</input>
-				<to>GetVehicleGameObject_1</to>
-				<output>value</output>
-			</connection>
-			<connection>
-				<from>GetVehicleGameObject_1</from>
-				<input>gameObject</input>
-				<to>GameObjectToVehicle_2</to>
-				<output>vehicleObject</output>
-			</connection>
-			<connection>
 				<from>GameObjectToVehicle_2</from>
 				<input>a</input>
 				<to>CompareVehicles_6</to>
@@ -277,6 +274,18 @@
 				<input>b</input>
 				<to>CompareVehicles_6</to>
 				<output>target</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>GetVehicleGameObject_1</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVehicleGameObject_1</from>
+				<input>gameObject</input>
+				<to>GameObjectToVehicle_2</to>
+				<output>vehicleObject</output>
 			</connection>
 			<connection>
 				<from>GameObjectToVehicle_2</from>
@@ -420,7 +429,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -432,7 +440,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -487,7 +494,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -499,7 +505,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Sequence</class>
@@ -511,7 +516,6 @@
 								<type>IntT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>Timer</class>
@@ -540,7 +544,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -552,7 +555,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>ComponentMethod</class>
@@ -603,7 +605,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
 					</block>
 					<block>
 						<class>MacroInput</class>

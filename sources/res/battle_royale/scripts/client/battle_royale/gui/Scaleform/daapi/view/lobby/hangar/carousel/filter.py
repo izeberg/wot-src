@@ -1,5 +1,5 @@
 from account_helpers.AccountSettings import ROYALE_CAROUSEL_FILTER_1, ROYALE_CAROUSEL_FILTER_2, ROYALE_CAROUSEL_FILTER_CLIENT_1
-from gui.Scaleform.daapi.view.common.vehicle_carousel import carousel_filter
+from gui.filters import carousel_filter
 
 class RoyaleCarouselFilter(carousel_filter.CarouselFilter):
 

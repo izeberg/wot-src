@@ -13,6 +13,9 @@ msgstr ""
 msgid "AOS_895"
 msgstr "AOS-895"
 
+msgid "AOS_895_S"
+msgstr "AOS 895 S"
+
 msgid "AVS_1195"
 msgstr "AVS-1195"
 
@@ -199,6 +202,9 @@ msgstr "LS-120"
 msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Chassis_S35_Stridsyxa"
+msgstr "\"战斧\""
+
 msgid "Chassis_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
@@ -258,6 +264,9 @@ msgstr "Ra 100"
 
 msgid "Ra_105"
 msgstr "Ra 105"
+
+msgid "Ra_121"
+msgstr "Ra 121"
 
 msgid "Ra_146"
 msgstr "Ra 146"
@@ -718,6 +727,24 @@ msgstr "Lago M38"
 msgid "S34_Lago_M38_short_special"
 msgstr "可靠的正面装甲和较高的射速"
 
+msgid "S35_Stridsyxa"
+msgstr "\"战斧\""
+
+msgid "S35_Stridsyxa_descr"
+msgstr ""
+"20世纪50年代为V系陆军研发的中型坦克方案。该计划采用了多项创新设计: "
+"主炮偏离炮塔中轴线布置，车体前部的几何构型有助于优化内部布局，提升了驾驶员舒适性，悬挂装置采用交错式负重轮结构。蓝图于1954年提交，但计划最终也仅停留在蓝图阶段。"
+
+msgid "S35_Stridsyxa_long_special"
+msgstr ""
+"\"战斧\"是一辆V系VIII级中型坦克，配备一门105毫米火炮，拥有舒适的俯仰角、可靠的火炮手感和高额的平均每分钟损伤。得益于良好的机动性和可靠的正面装甲，它还能快速转场，这也是其本已多样的战术之一。"
+
+msgid "S35_Stridsyxa_short"
+msgstr "\"战斧\""
+
+msgid "S35_Stridsyxa_short_special"
+msgstr "可靠的正面装甲，良好的火炮手感"
+
 msgid "S36_Strv_107_12"
 msgstr "Strv 107-12"
 
@@ -891,6 +918,9 @@ msgstr "LS-120"
 msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Turret_1_S35_Stridsyxa"
+msgstr "\"战斧\""
+
 msgid "Turret_1_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
@@ -1038,6 +1068,9 @@ msgstr "10.5cm m/42防空炮"
 msgid "_105mm_psgr_m_49"
 msgstr "psgr m/49"
 
+msgid "_105mm_sgr_LS_50_S"
+msgstr "slsgr L/50 S"
+
 msgid "_105mm_sgr_L_53"
 msgstr "sgr L/53"
 
@@ -1053,6 +1086,9 @@ msgstr "sgr m/52"
 msgid "_105mm_sgr_m_52_52E2"
 msgstr "sgr m/52 (52E2)"
 
+msgid "_105mm_slpgr_LS_50_S"
+msgstr "slpgr L/50 S"
+
 msgid "_105mm_slpgr_m_42"
 msgstr "slpgr m/42"
 
@@ -1064,6 +1100,9 @@ msgstr "slpgr m/43(1)"
 
 msgid "_105mm_slpgr_m_612"
 msgstr "slpgr m/612"
+
+msgid "_105mm_slpprj_LS_50_S"
+msgstr "slpprj L/50 S"
 
 msgid "_105mm_slpprj_L_53"
 msgstr "slpprj L/53"
@@ -1220,6 +1259,9 @@ msgstr "slpprj L/45"
 
 msgid "_105mm_strvkan_L_45_G4_SH"
 msgstr "10.5cm L/45坦克炮"
+
+msgid "_105mm_strvkan_L_50_S"
+msgstr "10.5cm L/50 S坦克炮"
 
 msgid "_105mm_strvkan_L_51"
 msgstr "10.5cm L/51坦克炮"

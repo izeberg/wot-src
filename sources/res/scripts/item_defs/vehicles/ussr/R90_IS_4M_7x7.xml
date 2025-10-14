@@ -2871,7 +2871,7 @@
 			<guns>
 				<_122mm_M62-T2_7x7>
 					shared
-					<maxAmmo>30</maxAmmo>
+					<maxAmmo>40</maxAmmo>
 					<armor>
 						<armor_1>
 							300
@@ -4196,10 +4196,7 @@
 		<detailed>
 			<engines>
 				<V-12_7x7>
-					<smplEnginePower>
-						792.9609
-						<!--BW_String-->
-					</smplEnginePower>
+					<smplEnginePower>850</smplEnginePower>
 					<smplFwMaxSpeed>43</smplFwMaxSpeed>
 				</V-12_7x7>
 			</engines>

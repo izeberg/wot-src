@@ -339,18 +339,18 @@
 	</vm_stun_enemy_schema>
 	<vm_stun_br_ally_schema>
 		<default>
-			<schemeGroup>redStatusMarkerColor</schemeGroup>
+			<schemeGroup>greenStatusMarkerColor</schemeGroup>
 		</default>
 		<color_blind>
-			<schemeGroup>purpleStatusMarkerColor</schemeGroup>
+			<schemeGroup>greenStatusMarkerColor</schemeGroup>
 		</color_blind>
 	</vm_stun_br_ally_schema>
 	<vm_stun_br_squadman_schema>
 		<default>
-			<schemeGroup>redStatusMarkerColor</schemeGroup>
+			<schemeGroup>greenStatusMarkerColor</schemeGroup>
 		</default>
 		<color_blind>
-			<schemeGroup>purpleStatusMarkerColor</schemeGroup>
+			<schemeGroup>greenStatusMarkerColor</schemeGroup>
 		</color_blind>
 	</vm_stun_br_squadman_schema>
 	<vm_stun_br_enemy_schema>

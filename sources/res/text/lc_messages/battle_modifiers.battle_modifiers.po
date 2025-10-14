@@ -52,6 +52,14 @@ msgstr "一组表示坦克造成损伤能力的参数。"
 msgid "domain/damageDealing/name"
 msgstr "输出参数"
 
+msgid "domain/equalization/description"
+msgstr ""
+"每个等级都具有不同的生命值、内部和外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！\n"
+"在战斗中无需花费资源，也无法获取资源。"
+
+msgid "domain/equalization/name"
+msgstr "I-X级坦克战斗"
+
 msgid "domain/mobility/description"
 msgstr "一组表示您坦克机动及速度特性的参数。"
 
@@ -85,6 +93,9 @@ msgstr "防护性"
 msgid "modifier/name/aimingTime"
 msgstr "瞄准时间"
 
+msgid "modifier/name/ammoBayHealth"
+msgstr "弹药架耐久度"
+
 msgid "modifier/name/autoreloadTime"
 msgstr "拥有自动装填炮的坦克的装填时间"
 
@@ -96,6 +107,9 @@ msgstr "最大倒车速度"
 
 msgid "modifier/name/burstInterval"
 msgstr "装填整个弹夹中炮弹的时间"
+
+msgid "modifier/name/chassisHealth"
+msgstr "悬挂装置耐久度"
 
 msgid "modifier/name/clipInterval"
 msgstr "弹夹中两次射击之间的装填时间"
@@ -124,6 +138,9 @@ msgstr "火炮受损时的炮弹散布范围"
 msgid "modifier/name/engineFireFactor"
 msgstr "发动机起火几率"
 
+msgid "modifier/name/engineHealth"
+msgstr "发动机耐久度"
+
 msgid "modifier/name/enginePower"
 msgstr "发动机功率"
 
@@ -142,11 +159,17 @@ msgstr "撞击时乘员受伤的几率"
 msgid "modifier/name/equipmentCooldown"
 msgstr "给养冷却时间"
 
+msgid "modifier/name/fuelTankHealth"
+msgstr "油箱耐久度"
+
 msgid "modifier/name/fwMaxSpeed"
 msgstr "最大前进速度"
 
 msgid "modifier/name/gravityFactor"
 msgstr "坦克重力"
+
+msgid "modifier/name/gunHealth"
+msgstr "火炮耐久度"
 
 msgid "modifier/name/gunRotationSpeed"
 msgstr "固定战斗室的火炮旋转速度"
@@ -187,6 +210,9 @@ msgstr "炮弹速度"
 msgid "modifier/name/shotDispersionRadius"
 msgstr "100米精度"
 
+msgid "modifier/name/surveyingDeviceHealth"
+msgstr "观察设备耐久度"
+
 msgid "modifier/name/turretPressureDamage"
 msgstr "被炸飞炮塔压住所承受的损伤"
 
@@ -195,6 +221,9 @@ msgstr "被炸飞炮塔撞击所承受的损伤"
 
 msgid "modifier/name/turretRotationSpeed"
 msgstr "炮塔旋转速度"
+
+msgid "modifier/name/turretRotatorHealth"
+msgstr "炮塔环耐久度"
 
 msgid "modifier/name/twinGunReloadTime"
 msgstr "齐射射击模式下的装填时间"

@@ -10,53 +10,62 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "confirm/btn/buy"
-msgstr "购买"
-
 msgid "confirm/btn/buyAndMount"
 msgstr "购买并安装"
 
 msgid "confirm/btn/install"
 msgstr "安装"
 
+msgid "confirm/item/battleAbility"
+msgstr "战斗储备"
+
+msgid "confirm/items/battleAbility"
+msgstr "战斗储备"
+
 msgid "confirm/modificationBonus"
 msgstr ""
-"%(icon)s在{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}场景中，加入战斗前放入栏位的各个战斗储备的出现几率提高{whiteSpanish_Start}{bonus}%{whiteSpanish_End}。"
+"在{FFE4C0_Start}扭转乾坤{FFE4C0_End}场景中，加入战斗前\n"
+"放入栏位的各个战斗储备的出现几率提高{FFE4C0_Start}{bonus}%{FFE4C0_End}。"
 
 msgid "confirm/price"
-msgstr "总计: %(price)%(icon)"
+msgstr "总计: {{price}}"
 
 msgid "confirm/quotedName"
-msgstr "\"%(name)s\""
-
-msgid "confirm/title/buy/forAllOfType/item"
-msgstr ""
-"为所有%(vehicleIcon)s%(vehicleType)s购买\n"
-"并安装%(type)s\"%(reserveName)s\"？"
+msgstr "\"{name}\""
 
 msgid "confirm/title/buy/forAllOfType/items"
 msgstr ""
-"为所有%(vehicleIcon)s%(vehicleType)s购买\n"
+"为全部%(vehicleIcon)s%(vehicleType)s购买\n"
 "并安装%(type)s？"
 
 msgid "confirm/title/buy/item"
-msgstr "购买%(type)s\"&zwnbsp;%(reserveName)s&zwnbsp;\"?"
+msgstr "购买并安装%(abilityName)s%(type)s？"
 
 msgid "confirm/title/buy/items"
-msgstr "购买下列%(type)s？"
-
-msgid "confirm/title/install/forAllOfType/item"
-msgstr ""
-"为所有%(vehicleIcon)s%(vehicleType)s安装\n"
-"%(type)s\"%(reserveName)s\"？"
+msgstr "购买并安装%(type)s？"
 
 msgid "confirm/title/install/forAllOfType/items"
 msgstr ""
-"为所有%(vehicleIcon)s%(vehicleType)s安装\n"
+"为全部%(vehicleIcon)s%(vehicleType)s安装\n"
 "所选的%(type)s？"
 
 msgid "confirm/title/install/item"
-msgstr "安装%(type)s\"%(reserveName)s\"？"
+msgstr "安装%(abilityName)s%(type)s？"
 
 msgid "confirm/title/install/items"
 msgstr "安装%(type)s？"
+
+msgid "confirm/vehicleType/AT-SPG"
+msgstr "自行反坦克炮"
+
+msgid "confirm/vehicleType/SPG"
+msgstr "自行火炮"
+
+msgid "confirm/vehicleType/heavyTank"
+msgstr "重型坦克"
+
+msgid "confirm/vehicleType/lightTank"
+msgstr "轻型坦克"
+
+msgid "confirm/vehicleType/mediumTank"
+msgstr "中型坦克"

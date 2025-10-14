@@ -47,6 +47,8 @@ package net.wg.gui.lobby.menu
       private static const VERSION_LEFT_OFFSET:int = 8;
       
       private static const TEXT_ALPHA:Number = 0.52;
+      
+      private static const REGIONAL_PANEL_BOTTOM_MARGIN:int = 28;
        
       
       public var header:TextField;
@@ -74,6 +76,8 @@ package net.wg.gui.lobby.menu
       public var versionTF:TextField;
       
       public var copyright:Copyright;
+      
+      public var regionalPanel:RegionalPanel;
       
       private var _btns:Dictionary;
       
@@ -166,12 +170,14 @@ package net.wg.gui.lobby.menu
          this.cancelBtn.dispose();
          this.manualBtn.dispose();
          this.postBtn.dispose();
+         this.regionalPanel.dispose();
          this.logoffBtn = null;
          this.settingsBtn = null;
          this.quitBtn = null;
          this.cancelBtn = null;
          this.manualBtn = null;
          this.postBtn = null;
+         this.regionalPanel = null;
          this.versionTF = null;
          this.header = null;
          this.background = null;
@@ -435,6 +441,13 @@ package net.wg.gui.lobby.menu
       {
          this.copyright.y = this.background.y + this.background.height - (BACKGROUND_SIZE_FIX >> 1) - COPYRIGHT_MIN_BOTTOM_MARGIN - this.copyright.getHeight() | 0;
          this.copyright.x = this.background.x + (this.background.width - this.copyright.getWidth() >> 1) | 0;
+         this.updateRegionalPanelPos();
+      }
+      
+      private function updateRegionalPanelPos() : void
+      {
+         this.regionalPanel.x = this.bounds.x + (this.bounds.width >> 1);
+         this.regionalPanel.y = this.copyright.y - REGIONAL_PANEL_BOTTOM_MARGIN;
       }
    }
 }

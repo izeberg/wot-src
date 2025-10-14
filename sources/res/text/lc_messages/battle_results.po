@@ -147,8 +147,8 @@ msgstr "激活《坦克世界》高级账号后，为所选胜利战斗应用{{@
 
 msgid "common/details/premiumAdvertising/credits"
 msgstr ""
-"{{/}}激活《坦克世界》高级账号后{{/}}，每{{@ style}}{{durationInDays}}天{{@ "
-"split}}获得最多{{bonusCredits}}。"
+"{{@ split}}激活《坦克世界》高级账号后，每{{@ "
+"style}}{{durationInDays}}天{{/}}获得最多{{bonusCredits}}。{{/}}"
 
 msgid "common/details/premiumPlus/bonus"
 msgstr "将x%(multiplier)d经验奖励到坦克世界高级账号所选定的胜利战斗中。"

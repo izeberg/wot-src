@@ -3,6 +3,12 @@ package
    public class FL_INFO_PAGE
    {
       
+      public static const PLUSVALUE:String = "#frontline.fl_info_page:plusValue";
+      
+      public static const PLUSPERCENTVALUE:String = "#frontline.fl_info_page:plusPercentValue";
+      
+      public static const PERCENTVALUE:String = "#frontline.fl_info_page:percentValue";
+      
       public static const PAGE_HEADERUPPER:String = "#frontline.fl_info_page:page/headerUpper";
       
       public static const PAGE_BACKBTN:String = "#frontline.fl_info_page:page/backBtn";
@@ -219,7 +225,7 @@ package
       
       public static const ADDONS_CELLRENT_TEXT_9:String = "#frontline.fl_info_page:addons/cellRent/text_9";
       
-      public static const ADDONS_CELLRENT_TEXT_8:String = "#frontline.fl_info_page:addons/cellRent/text_8";
+      public static const ADDONS_CELLRENT_TEXT_10:String = "#frontline.fl_info_page:addons/cellRent/text_10";
       
       public static const ADDONS_CELLTIME_HEADER:String = "#frontline.fl_info_page:addons/cellTime/header";
       

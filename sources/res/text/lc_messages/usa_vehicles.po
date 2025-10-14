@@ -645,6 +645,25 @@ msgstr "M-V-Y"
 msgid "A144_M_VI_Y"
 msgstr "M-VI-Y"
 
+msgid "A144_M_VI_Y_CFE_R"
+msgstr "M-VI-Y (120)"
+
+msgid "A144_M_VI_Y_CFE_R_desc"
+msgstr ""
+"一项由H.L. "
+"Yoh公司提出的坦克计划，属于应急履带型前瞻坦克研发计划的一部分。其特点在于为大口径火炮配备了高效的炮口制退器，与该公司的其他设计形成显著差异。该计划最终未投入生产。"
+
+msgid "A144_M_VI_Y_CFE_R_long_special"
+msgstr ""
+"M-VI-Y "
+"(120)是一辆M系IX级重型坦克，得益于令人印象深刻的炮塔装甲和出色的火炮俯角，它擅长据守关键位置。作为Yoh系列的最新成员，它能造成可观的平均单发损伤，并拥有玩家熟悉的应急履带机制。"
+
+msgid "A144_M_VI_Y_CFE_R_short"
+msgstr "M-VI-Y (120)"
+
+msgid "A144_M_VI_Y_CFE_R_short_special"
+msgstr "优异的炮塔装甲，出色的火炮俯角"
+
 msgid "A144_M_VI_Y_descr"
 msgstr ""
 "M-VI-Y是H.L. "
@@ -1092,6 +1111,25 @@ msgstr "毒刺"
 msgid "A174_T57_58_Rush_Ep1_short_special"
 msgstr "弹夹装填系统，独特外观"
 
+msgid "A175_LTC_II"
+msgstr "LTC II"
+
+msgid "A175_LTC_II_descr"
+msgstr ""
+"1957年，G.O. Noville & Associates公司根据乔治·诺维尔的概念方案，提出研发代号ATAC "
+"II(两栖坦克替代概念第二方案)的两栖坦克。这项有趣的计划配备90毫米火炮、喷水推进系统与空心铝制负重轮等创新技术，但造价高昂。与此同时，军方要求研发可被C-130大力神运输机空运的低成本轻型坦克，为此取消了两栖功能并改用钢制负重轮。然而，减重与降成本效果未达预期，计划在原型车建造前就被叫停，后续研发重点转向M551\"谢里登\"坦克。"
+
+msgid "A175_LTC_II_long_special"
+msgstr ""
+"LTC "
+"II是一辆M系IX级轻型坦克，配备一门高容量弹夹炮，清空弹夹可造成惊人损伤。它具有与Yoh坦克类似的应急履带机制，几乎无法通过击毁履带使其彻底丧失机动性。"
+
+msgid "A175_LTC_II_short"
+msgstr "LTC II"
+
+msgid "A175_LTC_II_short_special"
+msgstr "应急履带，高容量弹夹炮"
+
 msgid "A176_M103_110"
 msgstr "M103M"
 
@@ -1125,6 +1163,23 @@ msgstr "M103M"
 
 msgid "A176_M103_110_short_special"
 msgstr "较高的射速，良好的正面装甲"
+
+msgid "A178_SPHT"
+msgstr "SPHT"
+
+msgid "A178_SPHT_descr"
+msgstr ""
+"该计划与20世纪50年代末至60年代初研发的M系坦克相比，主要在外观上与众不同，突出特点在于车体采用轧制装甲板拼接，而非传统的整体铸造。当时的M系坦克大多使用铸造车体与炮塔，由少数工厂生产，足以应对和平时期的需求，却难以满足战时动员。为此，军方提出备用方案，要求使用轧制钢板建造坦克。独立工程公司承担了研发任务，并提出了炮塔与车体均由轧制钢板构成的方案。该计划在假靶射击试验阶段被终止。"
+
+msgid "A178_SPHT_long_special"
+msgstr ""
+"SPHT是一辆M系IX级重型坦克，融合了重型坦克与中型坦克的特性。尽管装甲较为平庸，但机动性和速度出众。凭借具有优秀精度、高额平均每分钟损伤的火炮，它能稳定输出；同时，坚固的炮塔与良好的俯角使其能够高效运用\"卖头\"玩法。"
+
+msgid "A178_SPHT_short"
+msgstr "SPHT"
+
+msgid "A178_SPHT_short_special"
+msgstr "良好的机动性，性能全面的火炮"
 
 msgid "A179_Black_Rock"
 msgstr "黑岩"
@@ -1178,6 +1233,23 @@ msgstr "M41"
 msgid "A18_M41_descr"
 msgstr ""
 "以M24底盘为基础改装的轻型自行火炮，在M系陆军中一直服役到50年代中期，另有一部分被提供给F系军队。不同的资料显示，该自行火炮的总产量在85至250辆之间。"
+
+msgid "A192_M4A4_Firefly_CFE_A"
+msgstr "\"萤火虫\"桑德斯"
+
+msgid "A192_M4A4_Firefly_CFE_A_descr"
+msgstr ""
+"M系M4A4\"谢尔曼\"的变体，这辆坦克配备了克莱斯勒A57型30缸多组结构发动机，据Y系记录称这个型号的发动机非常可靠。该坦克于1944年初研发，其特点包括更强劲的17磅火炮、改变了无线电台的位置、扩大弹药架容量，并且移除了车体机枪和副驾驶的座位。\n"
+"这辆坦克由经验丰富的桑德斯大学附属高中学生驾驶。该学园的所有M系坦克喷漆均以深橄榄绿为基色，展现了其M系文化的传承。这辆\"谢尔曼\"具有该学园的徽章——在一个下部尖锐的盾牌上描绘了一个蓝色五角星，五角星里还有一个黄色的闪电图案，学园的名字则写在一条红色丝带上。"
+
+msgid "A192_M4A4_Firefly_CFE_A_long_special"
+msgstr "虽然这辆中型坦克的机动性和装甲均乏善可陈，但其出色的火炮能够胜任任何距离的战斗，不俗的观察范围则意味着它可以轻松点亮敌方坦克。"
+
+msgid "A192_M4A4_Firefly_CFE_A_short"
+msgstr "\"萤火虫\"桑德斯"
+
+msgid "A192_M4A4_Firefly_CFE_A_short_special"
+msgstr "精准且射速较快的火炮，炮弹穿透力高"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -1261,7 +1333,8 @@ msgid "A35_Pershing"
 msgstr "M26 \"潘兴\""
 
 msgid "A35_Pershing_descr"
-msgstr "?empty?"
+msgstr ""
+"M系中型坦克，名称来自一位在战事期间领导M系远征军的将领。1944-1946年期间，M26在M系部队中被暂时归类为重型坦克。1945年2月后，该坦克投入西线战事。"
 
 msgid "A35_Pershing_short"
 msgstr "M26 \"潘兴\""
@@ -1556,6 +1629,12 @@ msgstr "AN/VRC-7"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
+msgid "AN_ARC_27_RC"
+msgstr "AN/GRC-7 RC"
+
+msgid "AN_GRC_6_SPHT"
+msgstr "AN/GRC-6 SPHT"
+
 msgid "AN_GRC_7"
 msgstr "AN/GRC-7"
 
@@ -1567,6 +1646,9 @@ msgstr "AN/GRC-7"
 
 msgid "AN_GRC_7BR"
 msgstr "AN/GRC-7BR"
+
+msgid "AN_GRC_7_LTC"
+msgstr "AN/GRC-7 LTC"
 
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
@@ -1651,6 +1733,9 @@ msgstr ""
 
 msgid "British_Wireless_set_N19"
 msgstr "WS No.19"
+
+msgid "British_Wireless_set_N19A"
+msgstr "WS No.19特型A"
 
 msgid "Buick_series_60"
 msgstr "别克60系列"
@@ -1853,6 +1938,9 @@ msgstr "M-VI-Y A型"
 msgid "Chassis_A144_M_VI_Y_2"
 msgstr "M-VI-Y B型"
 
+msgid "Chassis_A144_M_VI_Y_CFE_R"
+msgstr "M-VI-Y (120)"
+
 msgid "Chassis_A145_TS_54"
 msgstr "TS-54"
 
@@ -1934,11 +2022,17 @@ msgstr "谢尔曼 \"螃蟹\""
 msgid "Chassis_A174_T57_58_Rush_Ep1"
 msgstr "毒刺"
 
+msgid "Chassis_A175_LTC_II"
+msgstr "LTC II"
+
 msgid "Chassis_A176_M103_110"
 msgstr "M103M"
 
 msgid "Chassis_A176_M103_110_CFE_R"
 msgstr "兰博"
+
+msgid "Chassis_A178_SPHT"
+msgstr "SPHT"
 
 msgid "Chassis_A179_Black_Rock"
 msgstr "黑岩"
@@ -1954,6 +2048,9 @@ msgstr "T72"
 
 msgid "Chassis_A18_M41_2"
 msgstr "T72E1"
+
+msgid "Chassis_A192_M4A4_Firefly_CFE_A"
+msgstr "\"萤火虫\"桑德斯"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
@@ -2204,6 +2301,9 @@ msgstr "T95E6"
 msgid "Chrysler_1200_HP"
 msgstr "克莱斯勒 1200马力"
 
+msgid "Chrysler_A57_multibank_A"
+msgstr "克莱斯勒 A57多排式A"
+
 msgid "Continental_AOI-1195-5"
 msgstr "大陆 AOI-1195-5"
 
@@ -2363,6 +2463,14 @@ msgstr ""
 "大陆\n"
 "AOSI-1195-5 Y VI B"
 
+msgid "Continental_AOSI_1195_5_Y_VI_RC"
+msgstr "大陆 AOSI-1195-5 Y VI RC"
+
+msgid "Continental_AOSI_1195_5_Y_VI_RC_short"
+msgstr ""
+"大陆\n"
+"AOSI-1195-5 Y VI RC"
+
 msgid "Continental_AOSI_1195_5_Y_V_short"
 msgstr ""
 "大陆\n"
@@ -2412,6 +2520,14 @@ msgid "Continental_AOSI_895_5_short"
 msgstr ""
 "大陆\n"
 "AOSI-895-5"
+
+msgid "Continental_AOSI_895_6_LTC"
+msgstr "大陆 AOSI-895-6 LTC"
+
+msgid "Continental_AOSI_895_6_LTC_short"
+msgstr ""
+"大陆\n"
+"AOSI-895-6 LTC"
 
 msgid "Continental_AOS_895_1"
 msgstr "大陆 AOS-895-1"
@@ -2539,6 +2655,14 @@ msgid "Continental_AVDS_1790_2D_short"
 msgstr ""
 "大陆\n"
 "AVDS-1790-2D"
+
+msgid "Continental_AVDS_1790_2_SPHT"
+msgstr "大陆 AVDS-1790-2 SPHT"
+
+msgid "Continental_AVDS_1790_2_SPHT_short"
+msgstr ""
+"大陆\n"
+"AVDS-1790-2 SPHT"
 
 msgid "Continental_AVDS_1790_8BR"
 msgstr "大陆 AVDS-1790-8BR"
@@ -3195,6 +3319,9 @@ msgstr "WS No.19 Mk.I"
 msgid "NVSS_T80_BPXIV"
 msgstr "NVSS T80"
 
+msgid "OQF_17pdr_Gun_Mk_VIIA"
+msgstr "OQF 17磅炮 Mk.VIIA型"
+
 msgid "Ordnance_QF_2pdr_AT_Gun_Mk.X"
 msgstr "QF 2磅AT炮 Mk.X"
 
@@ -3716,6 +3843,9 @@ msgstr "M-V-Y JJ"
 msgid "Turret_1_A144_M_VI_Y"
 msgstr "M-VI-Y A型"
 
+msgid "Turret_1_A144_M_VI_Y_CFE_R"
+msgstr "M-VI-Y (120)"
+
 msgid "Turret_1_A145_TS_54"
 msgstr "TS-54"
 
@@ -3791,11 +3921,17 @@ msgstr "谢尔曼 \"螃蟹\""
 msgid "Turret_1_A174_T57_58_Rush_Ep1"
 msgstr "毒刺"
 
+msgid "Turret_1_A175_LTC_II"
+msgstr "LTC II"
+
 msgid "Turret_1_A176_M103_110"
 msgstr "M103M"
 
 msgid "Turret_1_A176_M103_110_CFE_R"
 msgstr "兰博"
+
+msgid "Turret_1_A178_SPHT"
+msgstr "SPHT"
 
 msgid "Turret_1_A179_Black_Rock"
 msgstr "黑岩"
@@ -3808,6 +3944,9 @@ msgstr "XM69 \"开拓者\""
 
 msgid "Turret_1_A18_M41"
 msgstr "M41"
+
+msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
+msgstr "\"萤火虫\"桑德斯"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 \"斯图亚特\""
@@ -4730,6 +4869,9 @@ msgstr "M358/66"
 msgid "_120mm_APBC_M358"
 msgstr "APBC M358"
 
+msgid "_120mm_APCR_M361_M_VI_Y_RC"
+msgstr "APCR M361 (M-VI-Y) RC"
+
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
@@ -4829,6 +4971,12 @@ msgstr "120mm T53 AT炮 (T95)"
 msgid "_120mm_American_British_Gun"
 msgstr "120mm US-GBR炮"
 
+msgid "_120mm_American_British_Gun_RC"
+msgstr "120mm US-GBR炮 RC"
+
+msgid "_120mm_Delta_SPHT"
+msgstr "120mm 德尔塔 SPHT"
+
 msgid "_120mm_Gun_M58"
 msgstr "120mm M58炮"
 
@@ -4886,6 +5034,9 @@ msgstr "HEAT-T M469C"
 msgid "_120mm_HEAT-T_M469_SH"
 msgstr "AP-T M469"
 
+msgid "_120mm_HEATFS_M469_SPHT"
+msgstr "M469 SPHT"
+
 msgid "_120mm_HEAT_M469E5"
 msgstr "HEAT M469E5"
 
@@ -4897,6 +5048,9 @@ msgstr "HEAT M469 (M103)"
 
 msgid "_120mm_HEAT_M469_M_VI_Y"
 msgstr "HEAT M469 (M-VI-Y)"
+
+msgid "_120mm_HEAT_M469_M_VI_Y_RC"
+msgstr "HEAT M469 (M-VI-Y) RC"
 
 msgid "_120mm_HEAT_M469_T122"
 msgstr "HEAT M469 (T122)"
@@ -4931,6 +5085,9 @@ msgstr "HE M356E5"
 msgid "_120mm_HE_M356_M103"
 msgstr "HE M356 (M103)"
 
+msgid "_120mm_HE_M356_SPHT"
+msgstr "M356 SPHT"
+
 msgid "_120mm_HE_M358"
 msgstr "HE M358"
 
@@ -4945,6 +5102,9 @@ msgstr "HE C型"
 
 msgid "_120mm_HE_T15E3_M_VI_Y"
 msgstr "HE T15E3 (M-VI-Y)"
+
+msgid "_120mm_HE_T15E3_M_VI_Y_RC"
+msgstr "HE T15E3 (M-VI-Y) RC"
 
 msgid "_120mm_HE_T15E3_T122"
 msgstr "HE T15E3 (T122)"
@@ -4978,6 +5138,9 @@ msgstr "HE-T M356E1"
 
 msgid "_120mm_HE_XM66F"
 msgstr "M357/66"
+
+msgid "_120mm_HVAPDS_T102_SPHT"
+msgstr "T102 SPHT"
 
 msgid "_120mm_MPP_Gun_RHD"
 msgstr "120mm MPP RHD炮"
@@ -5194,6 +5357,15 @@ msgstr "155mm M1榴弹炮 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155mm M45榴弹炮"
+
+msgid "_17pdr_APC_Mk4TA"
+msgstr "APDS 17磅Mk.1TA"
+
+msgid "_17pdr_AP_Mk3TA"
+msgstr "APCBC 17磅Mk.9TA"
+
+msgid "_17pdr_HE_Mk1TA"
+msgstr "HE 17磅Mk.2TA"
 
 msgid "_203mm_AP_M106_M78"
 msgstr "AP M106/M78"
@@ -6008,6 +6180,9 @@ msgstr "APFSDS T320"
 msgid "_90mm_APFSDS_T320_HLY"
 msgstr "APFSDS T320 HLY"
 
+msgid "_90mm_APFSDS_T320_LTC"
+msgstr "T320 LTC"
+
 msgid "_90mm_AP_M318"
 msgstr "AP M318"
 
@@ -6185,6 +6360,9 @@ msgstr "90mm T208炮(线膛)"
 msgid "_90mm_Gun_T208_rifled_HLY"
 msgstr "90mm T208 HLY炮(线膛) "
 
+msgid "_90mm_Gun_T208_rifled_LTC"
+msgstr "90mm T208炮(线膛) LTC"
+
 msgid "_90mm_Gun_T7"
 msgstr "90mm T7炮"
 
@@ -6214,6 +6392,9 @@ msgstr "AP M431"
 
 msgid "_90mm_HEAT_T108E45"
 msgstr "HEAT T108E45"
+
+msgid "_90mm_HEAT_T328_LTC"
+msgstr "T328 LTC"
 
 msgid "_90mm_HEP_T142E2"
 msgstr "HEP T142E2"
@@ -6268,6 +6449,9 @@ msgstr "HE M71 (T32)"
 
 msgid "_90mm_HE_T340"
 msgstr "HE T340"
+
+msgid "_90mm_HE_T340E14H_LTC"
+msgstr "T340E14H LTC"
 
 msgid "_90mm_HE_T340_M_II_Y"
 msgstr "HE T340 (M-II-Y)"

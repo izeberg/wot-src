@@ -117,7 +117,7 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound_seq_ability_repair_kit</name>
+		<name>seq_ability_group_repair</name>
 		<type>sound</type>
 		<track>
 			<name>attach</name>
@@ -125,18 +125,18 @@
 			<frame>
 				<startTime>0.000000</startTime>
 				<duration>2.766667</duration>
-				<value>bubble|</value>
+				<value>bubble|root</value>
 			</frame>
 		</track>
 		<track>
-			<name>Sound_seq_ability_repair_kit</name>
+			<name>Wwise event</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.033333</startTime>
-				<duration>2.732462</duration>
-				<sequenceSound>ev_hw_mirny13_gameplay_ability_repair_kit_extinguisher</sequenceSound>
+				<duration>2.733334</duration>
+				<sequenceSound>ev_hw_gp_ability_group_repair_3D_seq</sequenceSound>
 				<type>play_till_end</type>
-				<fade>0.000000</fade>
+				<fade>1.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

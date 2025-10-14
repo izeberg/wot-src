@@ -332,6 +332,7 @@ class HangarSpace(IHangarSpace):
             self.__space.destroy()
             self.__inited = False
             self.__spaceInited = False
+            Waiting.hide('loadHangarSpace')
         if self.__delayedRefreshCallback is not None:
             BigWorld.cancelCallback(self.__delayedRefreshCallback)
             self.__delayedRefreshCallback = None

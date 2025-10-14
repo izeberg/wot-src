@@ -1429,10 +1429,10 @@ def getAvailableSlotsCount(item, vehicleDescriptor):
 
 
 @lru_cache(maxsize=10)
-def isVehicleHasSlots(vehicleDescriptor, slotType):
+def isVehicleHasSlots(vehicleComponents, slotType):
     isDecal = slotType in SLOT_TYPE_NAMES.DECALS
     for partName in CUSTOMIZATION_SLOTS_VEHICLE_PARTS:
-        part = getattr(vehicleDescriptor, partName)
+        part = getattr(vehicleComponents, partName)
         slots = part.emblemSlots if isDecal else part.slotsAnchors
         if any(slot.type == slotType for slot in slots):
             return True

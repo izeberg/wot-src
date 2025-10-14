@@ -176,36 +176,31 @@ package net.wg.gui.lobby.profile.pages.awards
       
       override protected function applyResizing() : void
       {
-         var _loc1_:Number = Math.round(currentDimension.x / 2 - centerOffset);
+         var _loc1_:Number = NaN;
+         var _loc11_:AwardsTileListBlock = null;
+         _loc1_ = Math.round(currentDimension.x / 2 - centerOffset);
          var _loc2_:Boolean = App.appWidth < StageSizeBoundaries.WIDTH_1280;
-         this.dropdownMenu.x = this._startMenuX + _loc1_;
+         var _loc3_:int = !!isWindowed ? int(DROP_DOWN_WINDOW_X) : int(0);
+         var _loc4_:int = -this.txtLabel.width - TXT_LABEL_OFFSET_X + _loc3_;
+         this.dropdownMenu.x = this._startMenuX + _loc1_ + (!!isWindowed ? DROP_DOWN_WINDOW_X : 0);
          this.txtLabel.autoSize = TextFieldAutoSize.LEFT;
-         this.txtLabel.x = this.dropdownMenu.x - this.txtLabel.width - TXT_LABEL_OFFSET_X;
-         if(isWindowed)
-         {
-            this.dropdownMenu.x = this._startMenuX + _loc1_ + DROP_DOWN_WINDOW_X;
-            this.txtLabel.x = this.dropdownMenu.x - this.txtLabel.width - TXT_LABEL_OFFSET_X + DROP_DOWN_WINDOW_X;
-         }
-         else
-         {
-            y = Math.max(paddings.y - TOP_PADDING,0);
-         }
-         var _loc3_:Number = Math.min(ProfileConstants.MIN_APP_WIDTH,currentDimension.x);
-         this.mainScrollPane.target.x = _loc1_ + (_loc3_ - this.mainScrollPane.target.width >> 1) + MAIN_SCROLLPANE_OFFSET_X;
-         var _loc4_:int = currentDimension.y;
-         _loc4_ += !!isWindowed ? SCROLL_OFFSET : SCROLL_OFFSET_SMALL;
-         this.mainScrollPane.setSize(currentDimension.x,_loc4_ - y - paddings.height);
+         this.txtLabel.x = this.dropdownMenu.x + _loc4_;
+         y = !!isWindowed ? Number(0) : Number(Math.max(paddings.y - TOP_PADDING,0));
+         var _loc5_:Number = Math.min(ProfileConstants.MIN_APP_WIDTH,currentDimension.x);
+         this.mainScrollPane.target.x = _loc1_ + (_loc5_ - this.mainScrollPane.target.width >> 1) + MAIN_SCROLLPANE_OFFSET_X;
+         var _loc6_:int = currentDimension.y;
+         var _loc7_:int = !!isWindowed ? int(SCROLL_OFFSET) : int(SCROLL_OFFSET_SMALL);
+         this.mainScrollPane.setSize(currentDimension.x,_loc6_ + _loc7_ - y - paddings.height);
          windowOffset = -WINDOW_OFFSET;
-         var _loc5_:AwardsMainContainer = this.getMainContainer();
-         var _loc6_:Vector.<AwardsTileListBlock> = _loc5_.blocks;
-         var _loc7_:AwardsTileListBlock = null;
-         var _loc8_:int = 0;
-         while(_loc8_ < _loc6_.length)
+         var _loc8_:AwardsMainContainer = this.getMainContainer();
+         var _loc9_:Vector.<AwardsTileListBlock> = _loc8_.blocks;
+         var _loc10_:int = 0;
+         while(_loc10_ < _loc9_.length)
          {
-            _loc7_ = _loc6_[_loc8_];
-            _loc7_.tileList.columnCount = isWindowed || !_loc2_ ? uint(COLUMN_COUNT) : uint(COLUMN_COUNT_SMALL);
-            _loc7_.tileList.x = isWindowed || !_loc2_ ? Number(0) : Number(BLOCK_OFFSET);
-            _loc8_++;
+            _loc11_ = _loc9_[_loc10_];
+            _loc11_.tileList.columnCount = isWindowed || !_loc2_ ? uint(COLUMN_COUNT) : uint(COLUMN_COUNT_SMALL);
+            _loc11_.tileList.x = isWindowed || !_loc2_ ? Number(0) : Number(BLOCK_OFFSET);
+            _loc10_++;
          }
          title.visible = !isWindowed;
          title.x = App.appWidth - title.width >> 1;
@@ -279,11 +274,11 @@ package net.wg.gui.lobby.profile.pages.awards
       
       override public function set isWindowed(param1:Boolean) : void
       {
-         super.isWindowed = param1;
-         if(isWindowed)
+         if(super.isWindowed == param1)
          {
-            this.mainScrollPane.height += WINDOW_OFFSET;
+            return;
          }
+         super.isWindowed = param1;
       }
       
       private function onDropdownMenuMouseOverHandler(param1:MouseEvent) : void

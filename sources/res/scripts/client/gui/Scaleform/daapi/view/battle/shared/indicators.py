@@ -1,5 +1,6 @@
 import typing, BigWorld, GUI, SCALEFORM, SoundGroups
 from Event import Event
+from ReplayEvents import g_replayEvents
 from account_helpers.settings_core.settings_constants import SOUND, DAMAGE_INDICATOR, GRAPHICS
 from constants import VEHICLE_SIEGE_STATE as _SIEGE_STATE, DIRECT_DETECTION_TYPE
 from debug_utils import LOG_DEBUG, LOG_DEBUG_DEV, LOG_WARNING
@@ -452,6 +453,7 @@ class SixthSenseIndicator(SixthSenseMeta):
         self.__callbackID = None
         self.__enabled = True
         self.__sound = SixthSenseSound()
+        self.__hasIndicator = False
         return
 
     @property
@@ -461,6 +463,16 @@ class SixthSenseIndicator(SixthSenseMeta):
     @enabled.setter
     def enabled(self, enabled):
         self.__enabled = enabled
+
+    def as_showS(self):
+        self.__hasIndicator = True
+        super(SixthSenseIndicator, self).as_showS()
+
+    def as_hideS(self, force):
+        if not self.__hasIndicator:
+            return
+        self.__hasIndicator = False
+        super(SixthSenseIndicator, self).as_hideS(force)
 
     def show(self):
         self.onSixthSensePreShow()
@@ -490,7 +502,7 @@ class SixthSenseIndicator(SixthSenseMeta):
         return
 
     def _show(self):
-        if not self.__enabled:
+        if not self.__enabled or g_replayEvents.isTimeWarp:
             return
         self.__sound.play()
         self.show()
@@ -598,18 +610,10 @@ class TargetDesignatorUnspottedIndicator(SixthSenseMeta):
         super(TargetDesignatorUnspottedIndicator, self)._dispose()
         return
 
-    def __onVehicleControlling(self, vehicle):
-        ctrl = self.session.shared.vehicleState
-        state = VEHICLE_VIEW_STATE.TARGET_DESIGNATOR
-        value = ctrl.getStateValue(state)
-        if value is None:
-            return
-        else:
-            self.__onVehicleStateUpdated(state, value)
-            return
-
     def __onVehicleStateUpdated(self, state, ctrl):
         if state != VEHICLE_VIEW_STATE.TARGET_DESIGNATOR or not self.enabled:
+            return
+        if g_replayEvents.isTimeWarp:
             return
         if ctrl.hasUnspottedIndicator and ctrl.entity.id == getVehicleIDAttached():
             if not self.__hasIndicator:
@@ -621,6 +625,16 @@ class TargetDesignatorUnspottedIndicator(SixthSenseMeta):
     def __onSixthSensePreShow(self):
         if self.enabled:
             self.__asHideS(True)
+
+    def __onVehicleControlling(self, vehicle):
+        ctrl = self.session.shared.vehicleState
+        state = VEHICLE_VIEW_STATE.TARGET_DESIGNATOR
+        value = ctrl.getStateValue(state)
+        if value is None:
+            return
+        else:
+            self.__onVehicleStateUpdated(state, value)
+            return
 
     def __asHideS(self, force=False):
         if self.__hasIndicator:

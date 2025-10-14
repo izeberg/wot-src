@@ -227,17 +227,6 @@ def getEventBoardsFormattersMap():
     return mapping
 
 
-def getEpicBattleFormattersMap():
-    mapping = getDefaultFormattersMap()
-    mapping.update({'abilityPts': EpicAbilityPtsFormatter(), 
-       'items': EpicItemsBonusFormatter(), 
-       'dossier': EpicDossierBonusFormatter(), 
-       'vehicles': RankedVehiclesBonusFormatter(), 
-       'epicSelectToken': InstructionEpicBattleBonusFormatter(), 
-       'goodies': GoodiesEpicBattleBonusFormatter()})
-    return mapping
-
-
 def getEpicSetFormattersMap():
     mapping = getDefaultFormattersMap()
     mapping.update({'abilityPts': EpicAbilityPtsFormatter(), 
@@ -324,10 +313,6 @@ def getMissionsDefaultAwardFormatter():
 
 def getEpicAwardFormatter():
     return AwardsPacker(getEpicFormattersMap())
-
-
-def getEpicBattleViewAwardPacker():
-    return AwardsPacker(getEpicBattleFormattersMap())
 
 
 def getEpicViewAwardPacker():
@@ -468,9 +453,6 @@ class QuestsBonusComposer(object):
     def getFormattedBonuses(self, bonuses, size=AWARDS_SIZES.SMALL):
         preformattedBonuses = self.getPreformattedBonuses(bonuses)
         return self._packBonuses(preformattedBonuses, size)
-
-    def addFormatter(self, formatters):
-        self.__bonusFormatter.getFormatters().update(formatters)
 
     def _packBonuses(self, preformattedBonuses, size):
         result = []

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.536921 -0.282676 0.165533</min>
+		<max>0.452832 0.685189 6.391476</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_Yong_Bing/normal/lod3/Gun_03</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch63_Yong_Bing/normal/lod2/Gun_03</nodefullVisual>
+</root>

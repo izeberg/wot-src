@@ -44,8 +44,8 @@ msgstr "关闭"
 
 msgid "footer"
 msgstr ""
-"在战斗中获取您应得的奖励。\n"
-"狩猎季开始了！"
+"投身战斗，获取属于您的奖励！\n"
+"狩猎季现已开启！"
 
 msgid "generalDescription/accent"
 msgstr "每辆坦克都拥有2种通用战斗能力和2种独特战斗能力，外加重生机制。"
@@ -68,19 +68,26 @@ msgstr "菲努菲尔"
 
 msgid "maps/subtitle"
 msgstr ""
-"狩猎将在3张地图上展开: %(whiteSpanish_Open)s阿尔扎吉 "
-"4.04、梦境之地、菲努菲尔%(whiteSpanish_Close)s。这些地图比标准模式地图更大。第1张地图是遍布沙坑和干涸小溪的开阔沙漠地形。第2张地图具有密集的城镇区域，您可以轻松的在其中躲避敌人。第3张地图则是被白雪覆盖的北方苔原，具有高低起伏的地形、小村庄和冰封的池塘。"
+"狩猎将在3张地图上展开: {{@ colorLegacy 'ecca9d'}}阿尔扎吉 "
+"4.04、梦境之地、菲努菲尔{{/}}。这些地图比标准模式地图更大。第1张地图是遍布沙坑和干涸小溪的开阔沙漠地形。第2张地图具有密集的城镇区域，您可以轻松地在其中躲避敌人。第3张地图则是被白雪覆盖的北方苔原，具有高低起伏的地形、小村庄和冰封的池塘。"
 
 msgid "maps/title"
 msgstr "3张地图"
 
+msgid "marauders/footer"
+msgstr "击毁游猎者即可获得一些战利品。"
+
+msgid "marauders/marauder1"
+msgstr "{{@ colorLegacy 'ecca9d'}}狡兔{{/}}——胆小但迅捷"
+
+msgid "marauders/marauder2"
+msgstr "{{@ colorLegacy 'ecca9d'}}饿狼{{/}}——会攻击并追捕猎物的勇猛斗士"
+
+msgid "marauders/marauder3"
+msgstr "{{@ colorLegacy 'ecca9d'}}怒熊{{/}}——会竭力守护自己领地的凶悍对手"
+
 msgid "marauders/text"
-msgstr ""
-"钢铁猎手赛事结束后，一些AI控制的坦克开始搜刮地图上散布的坦克残骸。它们在战斗中的威胁性不大。已知类型如下: \n"
-"%(whiteSpanish_Open)s狡兔%(whiteSpanish_Close)s——胆小但迅捷\n"
-"%(whiteSpanish_Open)s饿狼%(whiteSpanish_Close)s——会攻击并追捕猎物的勇猛斗士\n"
-"%(whiteSpanish_Open)s怒熊%(whiteSpanish_Close)s——会竭力守护自己领地的凶悍对手\n"
-"击毁游猎者即可获得诱人的战利品。"
+msgstr "钢铁猎手赛事结束后，一些AI控制的坦克开始搜刮地图上散布的坦克残骸。它们在战斗中的威胁性不大。已知类型如下:"
 
 msgid "marauders/title"
 msgstr "游猎者"
@@ -113,8 +120,7 @@ msgid "mosaic/title"
 msgstr "综合信息"
 
 msgid "pointsBPDetailsSettings/subtitle"
-msgstr ""
-"一种特殊的战斗通行证资源，可于整个2025赛季期间在钢铁猎手模式中获取。所获点数取决于您在战斗结果中的排名。钢铁猎手模式中的坦克没有点数上限。"
+msgstr "一种特殊的战斗通行证资源，可在各种模式中获取，包括钢铁猎手。所获点数取决于您在战斗结果中的排名。钢铁猎手模式中的坦克没有点数上限。"
 
 msgid "pointsBPDetailsSettings/title"
 msgstr "战斗通行证点数"
@@ -150,14 +156,17 @@ msgstr "无线电探测"
 
 msgid "respawn/block1/subtitle"
 msgstr ""
-"坦克在被击毁后自动重生。该机制在战斗的前%(whiteSpanish_Open)s%(soloRespawnPeriod)s分钟%(whiteSpanish_Close)s内生效。"
+"坦克在击毁后自动重生。该机制在战斗的前{{@ colorLegacy "
+"'ecca9d'}}{{soloRespawnPeriod}}分钟{{/}}内生效。"
 
 msgid "respawn/block1/title"
 msgstr "单人战斗时"
 
 msgid "respawn/block2/subtitle"
 msgstr ""
-"您需要停止交火%(whiteSpanish_Open)s%(platoonTimeToResurrect)s秒%(whiteSpanish_Close)s才能使盟友重生。该机制仅在战斗的前%(whiteSpanish_Open)s%(platoonRespawnPeriod)s分钟%(whiteSpanish_Close)s内生效。小队成员共享重生充能次数。"
+"您需要停止交火{{@ colorLegacy "
+"'ecca9d'}}{{platoonTimeToResurrect}}秒{{/}}才能使盟友重生。该机制仅在战斗的前{{@ colorLegacy "
+"'ecca9d'}}{{platoonRespawnPeriod}}分钟{{/}}内生效。小队成员共享重生充能次数。"
 
 msgid "respawn/block2/title"
 msgstr "组队战斗时"
@@ -168,10 +177,13 @@ msgstr "该机制让您可以在坦克被击毁后重返战斗。在这种情况
 msgid "respawn/title"
 msgstr "重生"
 
-msgid "sectorDetails/subtitle"
+msgid "sectorDetails/text1"
+msgstr "新的视野系统基于锥形观察范围。如果敌方坦克、物资或空投不在锥形观察范围内，您不会看到它们。"
+
+msgid "sectorDetails/text2"
 msgstr ""
-"新的视野系统基于锥形观察范围。如果敌方坦克、物资或空投不在锥形观察范围内，您将看不到它们。\n"
-"如果敌方坦克距离您过近，它将被自动点亮。请注意，在战斗中，敌方坦克能够在您看不到它的情况下对您造成损伤。坦克的锥形观察范围与炮塔\"绑定\"，因此，请记得旋转炮塔来点亮周围目标。"
+"如果敌方坦克距离您过近，它将被自动点亮。请注意: "
+"在战斗中，敌方坦克能够在您看不到它的情况下对您造成损伤。坦克的锥形观察范围与炮塔\"绑定\"，因此，请记得旋转炮塔来点亮周围目标。"
 
 msgid "sectorDetails/title"
 msgstr "锥形观察范围"
@@ -180,14 +192,13 @@ msgid "shopDetails/text1"
 msgstr "您可使用钢铁印章在军械库的对应版块中兑换钢铁猎手风格和贴花。"
 
 msgid "shopDetails/text2"
-msgstr ""
-"%(whiteSpanish_Open)s拥有《坦克世界》高级账号的玩家可在战斗中获得更多印章。%(whiteSpanish_Close)s"
+msgstr "{{@ colorLegacy 'ecca9d'}}拥有《坦克世界》高级账号的玩家可在战斗中获得更多钢铁印章。{{/}}"
 
 msgid "shopDetails/title"
 msgstr "商店"
 
 msgid "subtitle"
-msgstr "模式开放时间为%(startDate)s至%(endDate)s"
+msgstr "活动开放时间为{{startDate}}至{{endDate}}"
 
 msgid "tableBPDetailsSettings/subtitle"
 msgstr "每场战斗结束后，您将根据战斗结果排名获得对应数量的战斗通行证点数。"
@@ -231,9 +242,10 @@ msgid "towerBlock/trophies/title"
 msgstr "战利品"
 
 msgid "zones/subtitle"
-msgstr ""
-"躲避在角落并不可取。该模式鼓励公平战斗。地图会随时间推移而缩小，游戏区域也会减少，最终迫使猎手们正面对决。\n"
-"地图缩小会随机发生，发生频率取决于战斗中坦克的数量。请保持警惕并尽量提前离开危险区域。"
+msgstr "躲避在角落并不可取。该模式鼓励公平战斗。地图会随时间推移而缩小，游戏区域也会减少，最终迫使猎手们正面对决。"
+
+msgid "zones/subtitle2"
+msgstr "地图缩小会随机发生，发生频率取决于战斗中坦克的数量。请保持警惕并尽量提前离开危险区域。"
 
 msgid "zones/title"
 msgstr "逐渐缩小的游戏区域"

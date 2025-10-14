@@ -317,7 +317,7 @@ package net.wg.gui.battle.battleRoyale
          registerComponent(this.corrodingShotIndicator,BATTLE_VIEW_ALIASES.CORRODING_SHOT_INDICATOR);
          registerComponent(this.timersPanel,BATTLE_VIEW_ALIASES.BR_TIMERS_PANEL);
          registerComponent(this.winnerCongrats,BATTLE_VIEW_ALIASES.BATTLE_ROYALE_WINNER_CONGRATS);
-         setChildIndex(postmortemPanelUI,getChildIndex(this.consumablesPanel) - 1);
+         setChildIndex(postmortemPanelUI,getChildIndex(ribbonsPanel) + 1);
          this._minimap.mapShortcutLabel.visible = false;
       }
       

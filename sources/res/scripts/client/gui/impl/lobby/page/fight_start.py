@@ -1,9 +1,9 @@
 from __future__ import absolute_import
 from CurrentVehicle import g_currentVehicle, g_currentPreviewVehicle
 from constants import PREBATTLE_TYPE
-from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import _EXT_FIGHT_BUTTON_TOOLTIP_GETTERS
 from gui.Scaleform.daapi.view.lobby.header.helpers.fight_btn_tooltips import getEpicBattlesOnlyVehicleTooltipData, getPreviewTooltipData
 from gui.impl.gen.view_models.views.lobby.page.header.fight_start_model import FightStartModel
+from gui.impl.lobby.common.lobby_header_utils import findExtensionTooltip
 from gui.impl.pub.view_component import ViewComponent
 from gui.prb_control.entities.base.listener import IPrbListener
 from gui.shared import events, EVENT_BUS_SCOPE
@@ -37,10 +37,11 @@ class FightStartPresenter(ViewComponent[FightStartModel], IPrbListener):
     def _getListeners(self):
         return (
          (
-          events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self.__onFightButtonUpdateEventHandler,
-          EVENT_BUS_SCOPE.LOBBY),)
+          events.LobbyHeaderMenuEvent.UPDATE_PREBATTLE_CONTROLS, self.__onUpdatePrbControls, EVENT_BUS_SCOPE.LOBBY),
+         (
+          events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self.__onUpdatePrbControls, EVENT_BUS_SCOPE.LOBBY))
 
-    def __onFightButtonUpdateEventHandler(self, _):
+    def __onUpdatePrbControls(self, _):
         self._onFightButtonUpdate()
 
     def _onFightButtonUpdate(self):
@@ -48,7 +49,7 @@ class FightStartPresenter(ViewComponent[FightStartModel], IPrbListener):
         pFuncState = prbDispatcher.getFunctionalState()
         pValidation = prbEntity.canPlayerDoAction()
         isNavigationEnabled = not pFuncState.isNavigationDisabled()
-        controlsHelper = self.__hangarGuiCtrl.getLobbyHeaderHelper()
+        controlsHelper = self.__hangarGuiCtrl.currentGuiProvider.getLobbyHeaderHelper()
         isInSquad = any(pFuncState.isInUnit(prbType) for prbType in PREBATTLE_TYPE.SQUAD_PREBATTLES)
         isButtonLocked = not pValidation.isValid
         tooltip, _ = '', False
@@ -56,18 +57,10 @@ class FightStartPresenter(ViewComponent[FightStartModel], IPrbListener):
             if g_currentVehicle.isOnlyForEpicBattles() and (g_currentVehicle.isUnsuitableToQueue() or g_currentVehicle.isDisabledInRent()):
                 tooltip = getEpicBattlesOnlyVehicleTooltipData(pValidation)
             else:
-                tooltip = self.__findExtensionTooltip(pValidation)
+                tooltip = findExtensionTooltip(pValidation)
             if tooltip is None and g_currentPreviewVehicle.isPresent():
                 tooltip = getPreviewTooltipData()
         if not tooltip and controlsHelper is not None:
             tooltip, _ = controlsHelper.getFightControlTooltipData(pValidation, isInSquad, isButtonLocked, isNavigationEnabled)
         self.viewModel.setTooltip(tooltip)
-        return
-
-    def __findExtensionTooltip(self, pValidation):
-        for getter in _EXT_FIGHT_BUTTON_TOOLTIP_GETTERS:
-            tooltip = getter(pValidation)
-            if tooltip is not None:
-                return tooltip
-
         return

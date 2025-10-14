@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random.gui.battle_control import registerFunRandomBattle
 from fun_random.gui.game_control import registerFunRandomAwardControllers
 from fun_random.gui.prb_control import registerFunRandomOthersPrbParams
@@ -12,7 +13,9 @@ from gui.prb_control.prb_utils import initGuiTypes, initRequestType
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.genConsts.FUNRANDOM_ALIASES import FUNRANDOM_ALIASES
 _LOBBY_EXT_PACKAGES = [
- 'fun_random.gui.impl.lobby.hangar']
+ 'fun_random.gui.impl.lobby.feature',
+ 'fun_random.gui.impl.lobby.hangar',
+ 'fun_random.gui.impl.lobby.mode_selector']
 
 class ClientFunRandomBattleMode(FunRandomBattleMode):
     _CLIENT_BATTLE_PAGE = VIEW_ALIAS.CLASSIC_BATTLE_PAGE
@@ -68,8 +71,13 @@ class ClientFunRandomBattleMode(FunRandomBattleMode):
         return FunRandomSelectorItem
 
     @property
+    def _client_hangarEventBannerType(self):
+        from fun_random.gui.impl.lobby.feature.fun_random_event_banner_view import FunRandomEventBannerView
+        return FunRandomEventBannerView
+
+    @property
     def _client_bannerEntryPointValidatorMethod(self):
-        from fun_random.gui.impl.lobby.feature.fun_random_entry_point_view import isFunRandomEntryPointAvailable
+        from fun_random.gui.impl.lobby.feature.fun_random_event_banner_view import isFunRandomEntryPointAvailable
         return isFunRandomEntryPointAvailable
 
     @property
@@ -150,14 +158,9 @@ class ClientFunRandomBattleMode(FunRandomBattleMode):
         return (FunRandomVehicleViewState,)
 
     @property
-    def _client_hangarPresetsReader(self):
-        from fun_random.gui.hangar_presets.fun_hangar_presets_reader import FunRandomPresetsReader
-        return FunRandomPresetsReader
-
-    @property
-    def _client_hangarPresetsGetter(self):
-        from fun_random.gui.hangar_presets.fun_hangar_presets_getter import FunRandomPresetsGetter
-        return FunRandomPresetsGetter
+    def _client_hangarDynamicGuiProvider(self):
+        from fun_random.gui.hangar_presets.fun_hangar_dynamic_gui_provider import FunRandomHangarDynamicGuiProvider
+        return FunRandomHangarDynamicGuiProvider
 
 
 def preInit():
@@ -171,6 +174,7 @@ def preInit():
     battleMode.registerClient()
     battleMode.registerClientSelector()
     battleMode.registerClientHangarPresets()
+    battleMode.registerHangarEventBanner()
     battleMode.registerBannerEntryPointValidatorMethod()
     battleMode.registerBannerEntryPointLUIRule()
     battleMode.registerProviderBattleQueue()

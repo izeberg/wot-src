@@ -25,9 +25,6 @@ msgstr "此模式在%(serverName)s服务器上不开放"
 msgid "alertMessage/button/changeServer"
 msgstr "选择其他服务器"
 
-msgid "alertMessage/button/moreInfo"
-msgstr "详情"
-
 msgid "alertMessage/notAvailable"
 msgstr "%(serverName)s服务器已进入休战期"
 
@@ -62,7 +59,10 @@ msgid "alertMessage/undefined"
 msgstr "?empty?"
 
 msgid "alertMessage/unsuitableVehicles"
-msgstr "您的车库中没有满足要求的坦克"
+msgstr "没有满足要求的坦克"
+
+msgid "banner/progression/steps"
+msgstr "{{done}}/{{total}}"
 
 msgid "calendarDay/serverName"
 msgstr "%(server)s"
@@ -73,23 +73,26 @@ msgstr "%(start)s–%(end)s"
 msgid "calendarDay/title"
 msgstr "时间表"
 
-msgid "entryPoint/activeStatus"
-msgstr "%(endDate)s结束"
+msgid "entryPoint/tooltip/modeBtnText"
+msgstr "模式"
 
-msgid "entryPoint/endDate"
-msgstr "%(month)s%(day)s日结束"
+msgid "entryPoint/tooltip/modeDescription"
+msgstr "{{mode}}——点击即可切换游戏模式"
 
-msgid "entryPoint/lessMinute"
-msgstr "少于1分钟"
+msgid "entryPoint/tooltip/state/announce"
+msgstr "模式即将开放"
 
-msgid "entryPoint/notPrimeTimes/status"
-msgstr "战斗即将开放"
+msgid "entryPoint/tooltip/state/ceasefire"
+msgstr "休战期{{timer}}"
 
-msgid "entryPoint/seasonFinished/status"
+msgid "entryPoint/tooltip/state/finished/description"
 msgstr "战斗已结束"
 
-msgid "entryPoint/startDate"
-msgstr "%(month)s%(day)s日开始"
+msgid "entryPoint/tooltip/state/finished/title"
+msgstr "模式不再开放"
+
+msgid "entryPoint/tooltip/state/progress"
+msgstr "模式将开放{{timer}}"
 
 msgid "funRandomCarousel/lockedTooltip/vehClass/body"
 msgstr "%(forbiddenClass)s无法参加%(modeName)s的战斗。"
@@ -214,10 +217,16 @@ msgid "modeSubSelector/subModeCard/soonWillStart"
 msgstr "敬请期待"
 
 msgid "modeSubSelector/subModeCard/startTimer"
-msgstr "距开始还有:"
+msgstr "距开启还有"
 
 msgid "modeSubSelector/subtitle"
 msgstr "选择子模式"
+
+msgid "modes/development/banner/progression/finish"
+msgstr "Dev 已完成所有阶段"
+
+msgid "modes/development/banner/progression/resettable"
+msgstr "Dev 进度更新"
 
 msgid "modes/development/capsUserName"
 msgstr "?empty?"
@@ -225,16 +234,26 @@ msgstr "?empty?"
 msgid "modes/development/detailedUserName"
 msgstr "?empty?"
 
-msgid "modes/development/entryPoint/performance/tooltip/highRisk/body"
+msgid "modes/development/entryPoint/inProgress/description"
+msgstr "投身激烈战斗！"
+
+msgid "modes/development/entryPoint/intro/description"
+msgstr "加入混战！"
+
+msgid "modes/development/entryPoint/tooltip/description"
+msgstr "街机模式活动独具特色、限时开放，为您带来与众不同的体验！在具有颠覆性规则的专属模式中战斗，完成任务，获取稀有奖励。"
+
+msgid "modes/development/entryPoint/tooltip/performance/highRisk/description"
 msgstr "Dev High risks description."
 
-msgid "modes/development/entryPoint/performance/tooltip/highRisk/header"
+msgid "modes/development/entryPoint/tooltip/performance/highRisk/header"
 msgstr "Dev Low Performance"
 
-msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/body"
+msgid ""
+"modes/development/entryPoint/tooltip/performance/mediumRisk/description"
 msgstr "Dev Medium risks description."
 
-msgid "modes/development/entryPoint/performance/tooltip/mediumRisk/header"
+msgid "modes/development/entryPoint/tooltip/performance/mediumRisk/header"
 msgstr "Dev Reduced Performance"
 
 msgid "modes/development/lootbox/fep_epic"
@@ -328,7 +347,7 @@ msgid "modes/development/progression/infinite/mainProgressionFinished"
 msgstr "?empty?"
 
 msgid "modes/development/progression/questsList/quest/infinityStageProgress"
-msgstr "?empty?"
+msgstr "Dev 尽可能获取更多奖励:"
 
 msgid "modes/development/progression/questsList/totalPointsEarned"
 msgstr "?empty?"
@@ -376,25 +395,220 @@ msgstr "?empty?"
 msgid "modes/development/userName"
 msgstr "?empty?"
 
+msgid "modes/equalized/banner/progression/finish"
+msgstr "已完成全部阶段"
+
+msgid "modes/equalized/banner/progression/resettable"
+msgstr "进度更新"
+
+msgid "modes/equalized/capsUserName"
+msgstr "并驾齐驱！"
+
+msgid "modes/equalized/detailedUserName"
+msgstr "%(subModeName)s"
+
+msgid "modes/equalized/entryPoint/inProgress/description"
+msgstr "四两拨千斤！"
+
+msgid "modes/equalized/entryPoint/intro/description"
+msgstr "四两拨千斤！"
+
+msgid "modes/equalized/entryPoint/tooltip/description"
+msgstr ""
+"每个等级都具有不同的生命值、内部和外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！\n"
+"在战斗中无需花费资源，也无法获取资源。"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/highRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/equalized/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/equalized/lootbox/fep_epic"
+msgstr "随机史诗奖励"
+
+msgid "modes/equalized/lootbox/fep_legendary"
+msgstr "随机传说奖励"
+
+msgid "modes/equalized/lootbox/fep_ordinary"
+msgstr "随机普通奖励"
+
+msgid "modes/equalized/lootbox/fep_rare"
+msgstr "随机稀有奖励"
+
+msgid "modes/equalized/lootbox/fep_unusual"
+msgstr "随机罕见奖励"
+
+msgid "modes/equalized/metaProgressionTooltip/header/active"
+msgstr "\"并驾齐驱！\"任务 – 阶段: %(done)s{par_Open}/%(total)s{par_Close}"
+
+msgid "modes/equalized/metaProgressionTooltip/reward/tip"
+msgstr "您在所有街机模式子模式中的进度都将纳入计算。"
+
+msgid "modes/equalized/metaProgressionTooltip/subheader"
+msgstr "\"并驾齐驱！\"任务"
+
+msgid "modes/equalized/modeSubSelector/progression/info"
+msgstr "您在所有街机模式子模式中的进度都将纳入计算。"
+
+msgid "modes/equalized/modeSubSelector/progression/timer"
+msgstr "后新的街机模式任务可用"
+
+msgid "modes/equalized/mode_selector/battleCondition"
+msgstr "战斗形式：15对15"
+
+msgid "modes/equalized/mode_selector/description"
+msgstr "具有非常规规则的试验性战斗。"
+
+msgid "modes/equalized/mode_selector/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "modes/equalized/mode_selector/performance/highRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "modes/equalized/mode_selector/performance/mediumRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
+
+msgid "modes/equalized/mode_selector/progression/resettable"
+msgstr "距新的\"并驾齐驱！\"任务开放还有:"
+
+msgid "modes/equalized/notification/finishSubModes/withProgression"
+msgstr "%(subModeName)s子模式已结束。进度已重置。"
+
+msgid "modes/equalized/notification/finishSubModes/withoutProgression"
+msgstr "%(subModeName)s子模式已结束。"
+
+msgid "modes/equalized/notification/newSubModes/withProgression"
+msgstr "新的奖励和%(subModeName)s子模式已开放。"
+
+msgid "modes/equalized/notification/newSubModes/withoutProgression"
+msgstr "新的子模式已开放: %(subModeName)s。"
+
+msgid "modes/equalized/notification/switchOffSubModes"
+msgstr "由于系统维护，%(subModeName)s子模式暂不开放。"
+
+msgid "modes/equalized/notification/switchOnSubModes"
+msgstr "%(subModeName)s子模式已再次开放。"
+
+msgid "modes/equalized/progression/cardsFan/listOfRandomRewards"
+msgstr "奖励列表"
+
+msgid "modes/equalized/progression/complete/congratulations"
+msgstr "恭喜!"
+
+msgid "modes/equalized/progression/complete/title"
+msgstr "您已完成进度"
+
+msgid "modes/equalized/progression/infinite/congratulations"
+msgstr "恭喜!"
+
+msgid "modes/equalized/progression/infinite/infinityStep"
+msgstr "可重复完成的阶段"
+
+msgid "modes/equalized/progression/infinite/mainProgressionFinished"
+msgstr "您已完成主要进度"
+
+msgid "modes/equalized/progression/questsList/quest/infinityStageProgress"
+msgstr "尽可能获取更多奖励:"
+
+msgid "modes/equalized/progression/questsList/totalPointsEarned"
+msgstr "获得点数: {{progressionSteps}}"
+
+msgid ""
+"modes/equalized/progression/questsList/totalPointsEarnedStandAloneTitle"
+msgstr "获得点数:"
+
+msgid "modes/equalized/progression/title"
+msgstr "\"并驾齐驱！\"任务"
+
+msgid "modes/equalized/rewardsView/header"
+msgstr "已获得传说奖励"
+
+msgid "modes/equalized/scheduler/notification/available"
+msgstr "\"%(subModeName)s\"战斗已再次开放。"
+
+msgid "modes/equalized/scheduler/notification/available/title"
+msgstr "休战"
+
+msgid "modes/equalized/scheduler/notification/modeEnded"
+msgstr "\"%(subModeName)s\"战斗已结束"
+
+msgid "modes/equalized/scheduler/notification/modeEnded/title"
+msgstr "休战"
+
+msgid "modes/equalized/scheduler/notification/primeTime"
+msgstr "目前处于休战期。\"%(subModeName)s\"战斗暂不开放。"
+
+msgid "modes/equalized/scheduler/notification/primeTime/title"
+msgstr "休战"
+
+msgid "modes/equalized/tierList/description"
+msgstr "下方列表展示了您有机会获得的随机奖励，每个物品都具有特定的掉落率。"
+
+msgid "modes/equalized/tierList/title"
+msgstr "奖励列表"
+
+msgid "modes/equalized/tooltip/filter/body"
+msgstr "显示/隐藏符合\"并驾齐驱！\"模式条件的坦克。"
+
+msgid "modes/equalized/tooltip/filter/header"
+msgstr "\"并驾齐驱！\"坦克"
+
+msgid "modes/equalized/userName"
+msgstr "并驾齐驱！"
+
+msgid "modes/undefined/banner/progression/finish"
+msgstr "已完成全部阶段"
+
+msgid "modes/undefined/banner/progression/resettable"
+msgstr "进度更新"
+
 msgid "modes/undefined/capsUserName"
 msgstr "街机模式"
 
 msgid "modes/undefined/detailedUserName"
 msgstr "%(modeName)s:%(subModeName)s"
 
-msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/body"
-msgstr ""
-"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+msgid "modes/undefined/entryPoint/inProgress/description"
+msgstr "投身激烈战斗！"
 
-msgid "modes/undefined/entryPoint/performance/tooltip/highRisk/header"
-msgstr "建议选择最高的图形质量设置"
+msgid "modes/undefined/entryPoint/intro/description"
+msgstr "加入混战！"
 
-msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/body"
-msgstr ""
-"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+msgid "modes/undefined/entryPoint/tooltip/description"
+msgstr "街机模式活动独具特色、限时开放，为您带来与众不同的体验！在具有颠覆性规则的专属模式中战斗，完成任务，获取稀有奖励。"
 
-msgid "modes/undefined/entryPoint/performance/tooltip/mediumRisk/header"
-msgstr "建议选择最高的图形质量设置"
+msgid "modes/undefined/entryPoint/tooltip/performance/highRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/undefined/entryPoint/tooltip/performance/highRisk/header"
+msgstr "可能会降低性能"
+
+msgid "modes/undefined/entryPoint/tooltip/performance/mediumRisk/description"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "modes/undefined/entryPoint/tooltip/performance/mediumRisk/header"
+msgstr "可能会降低性能"
 
 msgid "modes/undefined/lootbox/fep_epic"
 msgstr "随机史诗奖励"
@@ -486,7 +700,7 @@ msgid "modes/undefined/progression/complete/title"
 msgstr "您已完成进度"
 
 msgid "modes/undefined/progression/infinite/congratulations"
-msgstr "恭喜！"
+msgstr "恭喜!"
 
 msgid "modes/undefined/progression/infinite/infinityStep"
 msgstr "可重复完成的阶段"
@@ -495,10 +709,10 @@ msgid "modes/undefined/progression/infinite/mainProgressionFinished"
 msgstr "您已完成主要进度"
 
 msgid "modes/undefined/progression/questsList/quest/infinityStageProgress"
-msgstr "尽可能获取更多奖励: %(currentPoints)/%(infinitySign)s"
+msgstr "尽可能获取更多奖励:"
 
 msgid "modes/undefined/progression/questsList/totalPointsEarned"
-msgstr "获得点数: %(progressionSteps)s"
+msgstr "获得点数: {{progressionSteps}}"
 
 msgid ""
 "modes/undefined/progression/questsList/totalPointsEarnedStandAloneTitle"
@@ -720,8 +934,8 @@ msgstr "获取点数即可推进活动进度。"
 msgid "progression/infinite/pointsEarned"
 msgstr "获得点数:"
 
-msgid "progression/infinite/steps"
-msgstr "%(done)s/%(total)s"
+msgid "progression/questsList/quest/completed"
+msgstr "已完成:"
 
 msgid "progression/questsList/quest/infinityProgress"
 msgstr "可重复完成"
@@ -730,28 +944,34 @@ msgid "progression/questsList/quest/pointsPlus"
 msgstr "+%(pointsCount)s"
 
 msgid "progression/questsList/quest/progressChangeLabel/forCompletion"
-msgstr "完成后: %(points)s"
+msgstr "完成:"
 
 msgid "progression/questsList/quest/progressChangeLabel/forLoss"
-msgstr "失败: %(points)s"
+msgstr "失败:"
 
 msgid "progression/questsList/quest/progressChangeLabel/forWin"
-msgstr "胜利: %(points)s"
+msgstr "胜利:"
 
 msgid "progression/questsList/quest/progressChangeLabel/pointsEarned"
-msgstr "已获得: %(points)s"
+msgstr "已获得:"
+
+msgid "progression/questsList/quest/progressChangeLabel/template"
+msgstr "{{reason}}{{value}}"
 
 msgid "progression/questsList/quest/progressTitle"
-msgstr "已完成: %(currentPoints)/%(totalPoints)s"
+msgstr "{{completed}}{{currentPoints}}{{delimeter}}{{totalPoints}}"
+
+msgid "progression/questsList/questsFinishTimerOnelineTitle"
+msgstr "距激活的阶段结束还有: {{time}}"
 
 msgid "progression/questsList/questsFinishTimerTitle"
-msgstr "距激活的阶段结束还有: %(time)s"
+msgstr "距激活的阶段结束还有:"
 
 msgid "progression/questsList/questsRenewTimerTitle"
-msgstr "距下次发布还有: %(time)s"
+msgstr "距下次发布还有:"
 
 msgid "progression/steps"
-msgstr "%(done)s/%(total)s"
+msgstr "{{done}}{{delimeter}}{{total}}"
 
 msgid "progression/stepsCurrent"
 msgstr "{yellow_Open}%(done)s{yellow_Close}/%(total)s"
@@ -842,6 +1062,70 @@ msgstr "?empty?"
 
 msgid "sub_modes/development/userName/quoted"
 msgstr "?empty?"
+
+msgid "sub_modes/equalized/capsUserName"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/detailsHelp/page1/description"
+msgstr "每个等级都具有不同的生命值、内部和外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！"
+
+msgid "sub_modes/equalized/detailsHelp/page1/title"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/detailsHelpHint/description"
+msgstr "?empty?"
+
+msgid "sub_modes/equalized/detailsHelpHint/press"
+msgstr "?empty?"
+
+msgid "sub_modes/equalized/detailsHelpTitle"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/subModeCard/battleCondition"
+msgstr "15对15"
+
+msgid "sub_modes/equalized/subModeCard/description"
+msgstr "Unknown subModeCard description"
+
+msgid "sub_modes/equalized/subModeCard/levelCondition"
+msgstr "{parSecondary_open}I{parSecondary_close}&nbsp;%(levels)s级"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "sub_modes/equalized/subModeCard/performance/highRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/description"
+msgstr ""
+"在低图形质量设置下，可能会出现视觉伪影等问题。建议您在电脑配置允许的情况下，选择最高的图形质量设置以获得最佳体验。该模式对电脑性能要求较高，战况激烈时可能会发生掉帧问题。"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/header"
+msgstr "建议选择最高的图形质量设置"
+
+msgid "sub_modes/equalized/subModeCard/performance/mediumRisk/headerIcon"
+msgstr "%(icon)建议选择最高的图形质量设置"
+
+msgid "sub_modes/equalized/subModeCard/title"
+msgstr "Unknown subModeCard title"
+
+msgid "sub_modes/equalized/tips/tip1/description"
+msgstr ""
+"每个等级都具有不同的生命值、内部和外部模块耐久度、损伤和穿透力修改器。坦克等级越低，参数增强得越多——赋予低等级坦克不容小觑的实力！\n"
+"在战斗中无需花费资源，也无法获取资源。"
+
+msgid "sub_modes/equalized/tips/tip1/title"
+msgstr "I-X级坦克战斗"
+
+msgid "sub_modes/equalized/userName"
+msgstr "并驾齐驱！"
+
+msgid "sub_modes/equalized/userName/quoted"
+msgstr "并驾齐驱！"
 
 msgid "sub_modes/undefined/capsUserName"
 msgstr "UNKNOWN SUB MODE NAME"

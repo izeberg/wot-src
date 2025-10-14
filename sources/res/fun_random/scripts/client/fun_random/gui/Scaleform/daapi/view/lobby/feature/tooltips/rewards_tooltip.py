@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random.gui.Scaleform.daapi.view.lobby.server_events.awards_formatters import FunCurtailingAwardsComposer, getFunAwardsPacker
 from fun_random.gui.feature.util.fun_mixins import FunProgressionWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasActiveProgression

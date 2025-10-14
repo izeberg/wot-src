@@ -335,17 +335,17 @@
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>front_L_BlendBone</node>
-		<node>back_L_BlendBone</node>
-		<node>back_L_lower_BlendBone</node>
-		<node>front_R_BlendBone</node>
 		<node>back_R_BlendBone</node>
-		<node>back_R_lower_BlendBone</node>
-		<node>back_mid_upper_BlendBone</node>
-		<node>back_mid_BlendBone</node>
-		<node>back_mid_lower_BlendBone</node>
-		<node>back_L_upper_BlendBone</node>
 		<node>back_R_upper_BlendBone</node>
+		<node>back_L_BlendBone</node>
+		<node>back_L_upper_BlendBone</node>
+		<node>back_mid_BlendBone</node>
+		<node>back_mid_upper_BlendBone</node>
+		<node>back_R_lower_BlendBone</node>
+		<node>back_L_lower_BlendBone</node>
+		<node>back_mid_lower_BlendBone</node>
+		<node>front_R_BlendBone</node>
+		<node>front_L_BlendBone</node>
 		<geometry>
 			<vertices>animatedShape.vertices</vertices>
 			<primitive>animatedShape.indices</primitive>
@@ -414,7 +414,7 @@
 						<Vector4>8.416438 8.416438 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.000546 0.804213 2.580037</groupOrigin>
+				<groupOrigin>-0.000004 0.803607 2.579890</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -460,8 +460,8 @@
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
 		<node>hull</node>
 		<geometry>
-			<vertices>hull_Shape.vertices</vertices>
-			<primitive>hull_Shape.indices</primitive>
+			<vertices>hullShape.vertices</vertices>
+			<primitive>hullShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -502,7 +502,7 @@
 						<Vector4>8.416438 8.416438 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>-0.000001 0.969570 -0.161531</groupOrigin>
+				<groupOrigin>-0.000001 0.969571 -0.161531</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -540,14 +540,14 @@
 						<Vector4>4.208219 4.208219 0.000000 0.000000</Vector4>
 					</property>
 				</material>
-				<groupOrigin>0.061516 0.588383 -1.423460</groupOrigin>
+				<groupOrigin>0.061517 0.588385 -1.423460</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-2.010411 -0.631841 -4.237470</min>
-		<max>2.010408 2.570980 3.879876</max>
+		<min>-2.010411 -0.631839 -4.237470</min>
+		<max>2.010408 2.570982 3.879876</max>
 	</boundingBox>
-	<geometrySize>921938</geometrySize>
+	<geometrySize>930696</geometrySize>
 </root>

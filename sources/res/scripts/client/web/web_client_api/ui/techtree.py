@@ -17,3 +17,7 @@ class TechTreeTabWebApiMixin(object):
     @w2c(_OpenTechTreeSchema, 'research')
     def openResearch(self, cmd):
         event_dispatcher.showResearchView(cmd.vehicle_id)
+
+    @w2c(_OpenTechTreeSchema, 'vehicleHubOverview')
+    def openVehicleHubOverview(self, cmd):
+        event_dispatcher.showVehicleHubOverview(cmd.vehicle_id)

@@ -2,6 +2,7 @@
 <root>
 	<NonChunkUDO>true</NonChunkUDO>
 	<flora>spaces/33_fjord/flora.xml</flora>
+	<borderMask>borderMask.dds</borderMask>
 	<bounds>
 		<minX>-7</minX>
 		<maxX>6</maxX>

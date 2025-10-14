@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>halloween/vehicles/italy/It19_Progetto_C50_mod_66_HW_BOT/crash/lod3/Gun_06</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>halloween/vehicles/italy/It19_Progetto_C50_mod_66_HW_BOT/crash/lod2/Gun_06</nodefullVisual>
+	<visibilityBox>
+		<min>-0.476955 -0.272633 -0.114015</min>
+		<max>0.475575 0.271150 7.079719</max>
+	</visibilityBox>
+</root>

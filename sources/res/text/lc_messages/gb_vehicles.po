@@ -91,6 +91,9 @@ msgstr "C.13/B.47"
 msgid "C42"
 msgstr "SR C42"
 
+msgid "C42_214t"
+msgstr "C42T"
+
 msgid "C42_B47"
 msgstr "C42/B47 AFV SC"
 
@@ -308,6 +311,9 @@ msgstr "征服者 Mk.I"
 msgid "Chassis_GB12_Conqueror_2"
 msgstr "征服者 Mk.II"
 
+msgid "Chassis_GB130_FV225_Collector"
+msgstr "FV225 收藏家"
+
 msgid "Chassis_GB131_Crusher"
 msgstr "克鲁瑟"
 
@@ -383,6 +389,12 @@ msgstr "\"丘吉尔\" St.G"
 
 msgid "Chassis_GB152_AT_FV230_Breaker"
 msgstr "AT-FV230 \"破碎者\""
+
+msgid "Chassis_GB156_Black_Prince_II"
+msgstr "\"黑亲王\" II"
+
+msgid "Chassis_GB157_FV214t"
+msgstr "FV214t"
 
 msgid "Chassis_GB15_Stuart_I"
 msgstr "\"斯图亚特\"I型"
@@ -1226,6 +1238,24 @@ msgstr "?empty?"
 msgid "GB12_Conqueror_short"
 msgstr "征服者"
 
+msgid "GB130_FV225_Collector"
+msgstr "FV225 收藏家"
+
+msgid "GB130_FV225_Collector_descr"
+msgstr ""
+"一项Y系重型坦克计划，配备双管火炮，并具有可选射击模式系统，旨在应对S系T-10重型坦克的威胁。设计方案包括将乘员增至5名，并大幅强化装甲，然而，这导致坦克战斗全重大幅增加，坦克的研发工作随后被叫停。"
+
+msgid "GB130_FV225_Collector_long_special"
+msgstr ""
+"FV225 "
+"收藏家是一辆Y系X级重型坦克，配备具有可选射击模式的110毫米双管火炮，每分钟可输出高额损伤。其定位为突破型重型坦克，兼具良好的机动性和正面装甲，但侧面防护较弱。"
+
+msgid "GB130_FV225_Collector_short"
+msgstr "FV225 收藏家"
+
+msgid "GB130_FV225_Collector_short_special"
+msgstr "可选射击模式，良好的正面装甲"
+
 msgid "GB131_Crusher"
 msgstr "克鲁瑟"
 
@@ -1498,6 +1528,39 @@ msgstr ""
 
 msgid "GB152_AT_FV230_Breaker_short"
 msgstr "AT-FV230 \"破碎者\""
+
+msgid "GB156_Black_Prince_II"
+msgstr "\"黑亲王\" II"
+
+msgid "GB156_Black_Prince_II_descr"
+msgstr "A43步兵坦克\"黑亲王\" II重型坦克计划，采用焊接式炮塔，并搭载两门强劲的77毫米火炮。 该坦克从未投入生产。"
+
+msgid "GB156_Black_Prince_II_long_special"
+msgstr ""
+"\"黑亲王\" "
+"II是一辆Y系VII级重型坦克，其特色在于双管火炮系统。该机制具有较短的齐射准备时间和装填停滞时间，因此在每场战斗中可以频繁且高效地使用，同时，该坦克还拥有可靠的炮塔装甲和车体装甲。"
+
+msgid "GB156_Black_Prince_II_short"
+msgstr "\"黑亲王\" II"
+
+msgid "GB156_Black_Prince_II_short_special"
+msgstr "双管火炮系统，可靠的炮塔装甲和车体装甲"
+
+msgid "GB157_FV214t"
+msgstr "FV214t"
+
+msgid "GB157_FV214t_descr"
+msgstr "FV214 征服者是战事后期设计的重型坦克，专为应对S系IS-3重型坦克的威胁而研发。该型号与\"经典\"版本的区别在于其更强劲的114毫米火炮。"
+
+msgid "GB157_FV214t_long_special"
+msgstr ""
+"FV214t是一辆Y系IX级重型坦克，属于征服者系列，为经典Y系重型坦克理念带来了新的诠释。它兼具良好的机动性与出色的火炮手感，同时还具备快速转场的能力。"
+
+msgid "GB157_FV214t_short"
+msgstr "FV214t"
+
+msgid "GB157_FV214t_short_special"
+msgstr "出色的火炮手感，可靠的炮塔正面装甲"
 
 msgid "GB15_Stuart_I"
 msgstr "\"斯图亚特\" I-IV"
@@ -2517,6 +2580,9 @@ msgstr "OQF 55磅反坦克炮"
 msgid "OQF_55_pdr_CG"
 msgstr "OQF 55磅 CG"
 
+msgid "OQF_55_pdr_Gun_214t"
+msgstr "OQF 55磅炮 (214t)"
+
 msgid "OQF_77mm_AT_Gun_MkII"
 msgstr "OQF 77mm AT炮 Mk.II"
 
@@ -2694,8 +2760,14 @@ msgstr "罗·罗 格里芬"
 msgid "Rolls_Royce_Griffon_180"
 msgstr "罗·罗 格里芬 180"
 
+msgid "Rolls_Royce_Griffon_180_B"
+msgstr "罗·罗 格里芬 180B"
+
 msgid "Rolls_Royce_Griffon_214"
 msgstr "罗·罗 格里芬 (214)"
+
+msgid "Rolls_Royce_Griffon_214t"
+msgstr "罗·罗 格里芬 (214t)"
 
 msgid "Rolls_Royce_Griffon_217"
 msgstr "罗·罗 格里芬 (217)"
@@ -2852,6 +2924,9 @@ msgstr "罗·罗 幻影"
 msgid "Rolls_Royce_Phantom_I"
 msgstr "罗·罗 幻影 (I)"
 
+msgid "Rolls_Royce_V12"
+msgstr "罗·罗 V12"
+
 msgid "Rolls_Royse_Meteor_Mk12"
 msgstr "罗.罗 流星 Mk.12"
 
@@ -2881,6 +2956,9 @@ msgstr "流浪者陨石"
 
 msgid "SR_C42H"
 msgstr "SR C42H"
+
+msgid "SR_C42I"
+msgstr "SR C42I"
 
 msgid "SR_C42O"
 msgstr "SR C42O"
@@ -3011,6 +3089,9 @@ msgstr "复仇女神"
 msgid "Turret_1_GB12_Conqueror"
 msgstr "征服者 Mk.II"
 
+msgid "Turret_1_GB130_FV225_Collector"
+msgstr "FV225 收藏家"
+
 msgid "Turret_1_GB131_Crusher"
 msgstr "克鲁瑟"
 
@@ -3061,6 +3142,12 @@ msgstr "\"丘吉尔\" St.G"
 
 msgid "Turret_1_GB152_AT_FV230_Breaker"
 msgstr "\"海狸\""
+
+msgid "Turret_1_GB156_Black_Prince_II"
+msgstr "\"黑亲王\" II"
+
+msgid "Turret_1_GB157_FV214t"
+msgstr "FV214t"
 
 msgid "Turret_1_GB15_Stuart_I"
 msgstr "\"斯图亚特\" I"
@@ -3390,6 +3477,9 @@ msgstr "105mm L7 MBC双管炮"
 msgid "Twin_105_mm_Gun_T8_MBC"
 msgstr "105mm T8 MBC双管炮"
 
+msgid "Twin_110_mm_Gun_MBC"
+msgstr "110mm MBC双管炮"
+
 msgid "Twin_120_mm_Gun_L1_MBC"
 msgstr "120mm L1 MBC双管炮"
 
@@ -3407,6 +3497,9 @@ msgstr "32磅 MBC Mk.2双管炮"
 
 msgid "Twin_4_5_in_Gun_MBC"
 msgstr "4.5英寸 MBC双管炮"
+
+msgid "Twin_OQF_77mm_Gun_Mk_II"
+msgstr "OQF 77mm双管炮 Mk.II"
 
 msgid "Vauxhall_Bedford_Twin_Six"
 msgstr "贝德福德双六缸"
@@ -3434,6 +3527,9 @@ msgstr "WS No.19 GD"
 
 msgid "WS_No_19_Mk_IIB"
 msgstr "WS No.19 Mk.IIB"
+
+msgid "WS_No_19_Mk_III"
+msgstr "WS No.19 Mk.III"
 
 msgid "WS_No_22_Mk_3"
 msgstr "WS No.22 Mk.3"
@@ -3630,6 +3726,15 @@ msgstr "105mm MV HE"
 
 msgid "_105mm_SPH_M4_L23"
 msgstr "105mm M4炮"
+
+msgid "_110mm_MK_1_HC_MBC"
+msgstr "HC Mk.1 MBC"
+
+msgid "_110mm_MK_3_APDS_MBC"
+msgstr "APDS Mk.3 MBC"
+
+msgid "_110mm_MK_7_HE_MBC"
+msgstr "HE Mk.7 MBC"
 
 msgid "_110mm_MVN_AP"
 msgstr "110mm MVN AP"
@@ -4537,8 +4642,14 @@ msgstr "HE Mk.XIII (\"主教\")"
 msgid "_55pdr_APCBC"
 msgstr "APCBC"
 
+msgid "_55pdr_APCBC_214t"
+msgstr "55磅 APCBC"
+
 msgid "_55pdr_APDS"
 msgstr "APDS"
+
+msgid "_55pdr_APDS_214t"
+msgstr "55磅 APDS"
 
 msgid "_55pdr_APSA"
 msgstr "APSA"
@@ -4551,6 +4662,9 @@ msgstr "HE"
 
 msgid "_55pdr_HESA"
 msgstr "HESA"
+
+msgid "_55pdr_HE_214t"
+msgstr "55磅 HE"
 
 msgid "_5_5_in_AP_80_lb_Mk_3"
 msgstr "AP 80磅 Mk.3"
@@ -5008,6 +5122,9 @@ msgstr "AP M79(M7)"
 msgid "_77mm_APCBC_Mk8T"
 msgstr "APCBC Mk.8T"
 
+msgid "_77mm_APCBC_Mk8T_3"
+msgstr "APCBC 77mm Mk.8T3"
+
 msgid "_77mm_APCBC_Mk8T_T"
 msgstr "APCBC 77mm Mk.8T2"
 
@@ -5023,6 +5140,9 @@ msgstr "APCBC 77mm Mk.8T (AT 8)"
 msgid "_77mm_APDS_Mk1T"
 msgstr "APDS 17磅Mk.1T"
 
+msgid "_77mm_APDS_Mk1T_2"
+msgstr "APDS 77mm Mk.1T2"
+
 msgid "_77mm_APDS_Mk_1T_A22F"
 msgstr "APDS 77mm Mk.1T (A22F)"
 
@@ -5037,6 +5157,9 @@ msgstr "APDS-T 77mm Mk.1T"
 
 msgid "_77mm_HE_Mk1T"
 msgstr "HE Mk.1T"
+
+msgid "_77mm_HE_Mk1T_2"
+msgstr "HE 77mm Mk.1T2"
 
 msgid "_77mm_HE_Mk1T_T"
 msgstr "HE Mk.1T"

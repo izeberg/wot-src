@@ -76,10 +76,7 @@
 					<identifier>tank_guns_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							1.40274 1.40274 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>1.753000 1.753000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPower
@@ -138,12 +135,25 @@
 						<Texture>vehicles/british/GB15_Stuart_I/Stuart_I_guns_ID.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
-						<Bool>false</Bool>
+						g_detailParams
+						<matrix>
+							<element>56692122</element>
+							<element>1040200752</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
 					</property>
 				</material>
 				<groupOrigin>-0.002095 -0.000531 -0.696190</groupOrigin>

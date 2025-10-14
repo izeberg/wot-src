@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It37_Serpente/normal/lod3/Hull</nodefullVisual>
+	<parent>vehicles/italy/It37_Serpente/normal/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.384270 -0.603975 -3.102024</min>
+		<max>1.390916 0.607222 3.269758</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

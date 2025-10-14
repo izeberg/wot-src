@@ -1,7 +1,10 @@
+import typing
 from constants import ARENA_BONUS_TYPE, ARENA_BONUS_TYPE_NAMES, PREM_BONUS_TYPES
 from debug_utils import LOG_ERROR
 from soft_exception import SoftException
 from BonusCaps import BonusCapsConfig
+if typing.TYPE_CHECKING:
+    from typing import Dict, FrozenSet
 
 class ARENA_BONUS_TYPE_CAPS():
     RESULTS = 'RESULTS'
@@ -179,7 +182,7 @@ class ARENA_BONUS_TYPE_CAPS():
     AFL_ENABLED = 'AFL_ENABLED'
     __RULES = (
      lambda caps: not set(ARENA_BONUS_TYPE_CAPS.DOSSIER_ACHIEVEMENTS) & set(caps) or ARENA_BONUS_TYPE_CAPS.MULTITEAMS not in caps,
-     lambda caps: not set(ARENA_BONUS_TYPE_CAPS.DOSSIER_ACHIEVEMENTS) & set(caps) or ARENA_BONUS_TYPE_CAPS.RESPAWN not in caps or ARENA_BONUS_TYPE_CAPS.DOSSIER_ACHIEVEMENTS_EPIC_BATTLE in caps,
+     lambda caps: not set(ARENA_BONUS_TYPE_CAPS.DOSSIER_ACHIEVEMENTS) & set(caps) or ARENA_BONUS_TYPE_CAPS.DOSSIER_ACHIEVEMENTS_EPIC_BATTLE in caps,
      lambda caps: ARENA_BONUS_TYPE_CAPS.CYBERSPORT_RATING not in caps or ARENA_BONUS_TYPE_CAPS.MULTITEAMS not in caps,
      lambda caps: ARENA_BONUS_TYPE_CAPS.WIN_POINTS_MECHANICS not in caps or ARENA_BONUS_TYPE_CAPS.INTERACTIVE_STATS in caps,
      lambda caps: (ARENA_BONUS_TYPE_CAPS.QUESTS in caps) != (ARENA_BONUS_TYPE_CAPS.AVATAR_QUESTS in caps) or ARENA_BONUS_TYPE_CAPS.QUESTS not in caps)

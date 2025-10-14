@@ -211,6 +211,9 @@ msgstr "SHB-1-2"
 msgid "Chassis_J42_Chi_Se"
 msgstr "十三式重战"
 
+msgid "Chassis_J42_Chi_Se_CFE_A"
+msgstr "缝生体"
+
 msgid "Chassis_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -231,6 +234,9 @@ msgstr "三重108式"
 
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
+
+msgid "Chassis_J51_Ashigaru"
+msgstr "足轻"
 
 msgid "Chassis_Ke_Ho"
 msgstr "五式轻战"
@@ -279,6 +285,9 @@ msgstr "三式改"
 
 msgid "Chi_Nu_Kai_short_special"
 msgstr "火炮精度高、穿透力强，炮盾装甲良好。"
+
+msgid "Continental_AOSI_1195_6"
+msgstr "大陆 AOSI-1195-6"
 
 msgid "Edelweiss_Engine"
 msgstr "雪绒花"
@@ -682,6 +691,29 @@ msgstr "六八式"
 msgid "J42_Chi_Se"
 msgstr "十三式重战"
 
+msgid "J42_Chi_Se_CFE_A"
+msgstr "缝生体"
+
+msgid "J42_Chi_Se_CFE_A_descr"
+msgstr ""
+"过去被撕碎，冗余被剔除，真相被强行锻造。你唯一的记忆，只剩下那一道道缝合的伤痕。\n"
+"\n"
+"\"失去收集装置后仍冲向马格努斯，本就是下策。但我们别无选择——跃入未知，总好过永远困在已经探索完毕的阶段里，像个无头骑士般游荡。所以，我们决定孤注一掷。结果如何，我无法断言。但至少，我们还活着。坐标已彻底丢失，通讯完全中断，马格努斯的位置也再无可查。\n"
+"\n"
+"...此刻，外面聚集着一群怪影——全都戴着防毒面具，低声念叨着诡异的咒语，竭力想把我们从钢铁壳里赶出去。人类？出现在銤元素区域？这绝不是好兆头。我们只能牢牢封闭所有舱口\n"
+"\n"
+"...我越来越感到不安。甚至说不清缘由。也许是外面那阵阵低沉的吟唱；也许是那台巨大的装置，铁链与钩爪紧紧锁住了我们的坦克；也许只是那不知从何而来的黑色黏液，从四面八方缓缓滴落...\""
+
+msgid "J42_Chi_Se_CFE_A_long_special"
+msgstr ""
+"缝生体是一辆R系VIII级重型坦克。它拥有相对于重型坦克来说良好的机动性，装甲也不错。其火炮性能全面，集良好的精度、平均每分钟损伤和穿透力于一身。这辆坦克的主要特点是其出色的火炮俯角，使其能够利用各种点位展开攻击。"
+
+msgid "J42_Chi_Se_CFE_A_short"
+msgstr "缝生体"
+
+msgid "J42_Chi_Se_CFE_A_short_special"
+msgstr "出色的火炮俯角，良好的机动性"
+
 msgid "J42_Chi_Se_descr"
 msgstr ""
 "1943年，R系陆军代表团在库默斯多夫观摩了D系\"虎\"式E型重型坦克的演示，并对该坦克印象深刻。他们随即决定为R系陆军打造一辆类似的坦克。设计采用大量D系坦克的技术方案，本有望大获成功。然而到1945年，R系内部局势已极度恶化，建造坦克面临重重挑战。正因如此，R系战时最后一辆重型坦克的命运就此注定。"
@@ -741,6 +773,22 @@ msgstr "二式炮战车"
 msgid "J50_Type_1_Ho_Ni_II_short_special"
 msgstr "高额的平均单发损伤，不俗的机动性"
 
+msgid "J51_Ashigaru"
+msgstr "足轻"
+
+msgid "J51_Ashigaru_descr"
+msgstr "一项R系轮式自行反坦克炮项目，设计目标是优秀的操控性与快速改变射击点位的能力。其特色在于集成式炮管风冷系统，可在持续射击时有效控制膛温。"
+
+msgid "J51_Ashigaru_long_special"
+msgstr ""
+"足轻是一辆R系X级轮式自行反坦克炮，配备一门性能十分全面的火炮，具有良好的机动性与出色的操控性。其双重瞄准系统进一步强化了本已出众的精度，使其在战场上具备外科手术般的精准打击能力。"
+
+msgid "J51_Ashigaru_short"
+msgstr "足轻"
+
+msgid "J51_Ashigaru_short_special"
+msgstr "良好的机动性，具有双重瞄准系统、性能全面的火炮"
+
 msgid "JAN-GRC-3Z"
 msgstr "JAN/GRC-3Z"
 
@@ -752,6 +800,9 @@ msgstr "JAN/GRC-3Z"
 
 msgid "JAN-GRC-4Z"
 msgstr "JAN/GRC-4Z"
+
+msgid "JAN_GRC_3Z_A"
+msgstr "JAN/GRC-3Z A"
 
 msgid "Kawasaki_Ha_60_LB"
 msgstr "川崎 Ha-60-lb"
@@ -989,6 +1040,9 @@ msgstr "SHB-1"
 msgid "Turret_1_J42_Chi_Se"
 msgstr "十三式重战"
 
+msgid "Turret_1_J42_Chi_Se_CFE_A"
+msgstr "缝生体"
+
 msgid "Turret_1_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -1000,6 +1054,9 @@ msgstr "三重75"
 
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "二式炮战车"
+
+msgid "Turret_1_J51_Ashigaru"
+msgstr "足轻"
 
 msgid "Turret_1_Ke_Ho"
 msgstr "五式轻战"
@@ -1085,6 +1142,9 @@ msgstr "APDS 六八式通常弹 (57)"
 msgid "_105mm_APCR_M68"
 msgstr "APDS 六八式通常弹"
 
+msgid "_105mm_APCR_Type_52_A"
+msgstr "APCR 五二式A型"
+
 msgid "_105mm_APHE_Type95"
 msgstr "APHE 九五式"
 
@@ -1126,6 +1186,9 @@ msgstr "M392XC"
 
 msgid "_105mm_AP_Type_1_Ni"
 msgstr "AP 一式II"
+
+msgid "_105mm_AP_Type_52_A"
+msgstr "AP 五二式A型"
 
 msgid "_105mm_AP_Type_92"
 msgstr "九二式 AP"
@@ -1172,6 +1235,9 @@ msgstr "试制10cm坦克炮改"
 msgid "_105mm_Gun_Shin"
 msgstr "10.5cm新炮"
 
+msgid "_105mm_Gun_Type_52"
+msgstr "105mm 五二式炮"
+
 msgid "_105mm_Gun_Type_91"
 msgstr "10.5cm 九一式炮"
 
@@ -1207,6 +1273,9 @@ msgstr "HE 九三式"
 
 msgid "_105mm_HE_Type_1_Ni"
 msgstr "HE 一式II"
+
+msgid "_105mm_HE_Type_52_A"
+msgstr "HE 五二式A型"
 
 msgid "_105mm_HE_Type_92"
 msgstr "HE 九二式A型"

@@ -247,7 +247,7 @@ class TwitchRewardWindow(LobbyNotificationWindow):
 
 
 class DynamicRewardWindowContent(BaseRewardWindowContent):
-    __slots__ = ('__bonuses', '_eventName')
+    __slots__ = ('__bonuses', )
     _BONUSES_ORDER = (
      Currency.GOLD, 'vehicles', 'premium_plus', 'dossier', 'customizations', 'slots', 'goodies', 'blueprints',
      'blueprintsAny', 'items', Currency.CRYSTAL, Currency.CREDITS, 'freeXP', 'tokens')
@@ -299,7 +299,7 @@ class DynamicRewardWindow(RewardWindowBase):
 
 
 class GiveAwayRewardWindowContent(QuestRewardWindowContent):
-    __slots__ = ('__items', '_eventName', '_quest', '_vehicles')
+    __slots__ = ()
     _BONUSES_ORDER = (
      Currency.CRYSTAL, 'badgesGroup', 'dossier', 'vehicles', Currency.CREDITS, 'customizations', 'items')
 

@@ -1,7 +1,7 @@
+from gui.filters.battle_pass_carousel_filter import BattlePassCarouselFilter
 from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.basic.tank_carousel import TankCarousel
 from gui.Scaleform.daapi.view.lobby.hangar.carousels.battle_pass.carousel_data_provider import BattlePassCarouselDataProvider
-from gui.Scaleform.daapi.view.lobby.hangar.carousels.battle_pass.carousel_filter import BattlePassCarouselFilter
 from helpers import dependency
 from skeletons.gui.game_control import IBattlePassController
 

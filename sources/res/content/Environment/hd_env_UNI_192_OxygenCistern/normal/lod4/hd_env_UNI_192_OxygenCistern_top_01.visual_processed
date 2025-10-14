@@ -56,6 +56,10 @@
 						<Vector4>0.100000 1.000000 1.000000 0.000000</Vector4>
 					</property>
 					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+					<property>
 						g_fakeShadowsAndDetailParams
 						<Vector4>0.080000 1.000000 1.000000 0.000000</Vector4>
 					</property>

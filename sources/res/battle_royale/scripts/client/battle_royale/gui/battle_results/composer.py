@@ -8,7 +8,6 @@ class BattleRoyaleStatsComposer(IBattleResultStatsCtrl):
     def __init__(self, _):
         super(BattleRoyaleStatsComposer, self).__init__()
         self._block = base.StatsBlock(templates.BR_TOTAL_VO_META)
-        self._block.addNextComponent(templates.BR_TABS_BLOCK.clone())
         self._block.addNextComponent(templates.BR_TEAM_STATS_BLOCK.clone())
         self._block.addNextComponent(templates.BR_COMMON_STATS_BLOCK.clone())
         self._block.addNextComponent(templates.BR_PERSONAL_STATS_BLOCK.clone())
@@ -22,10 +21,9 @@ class BattleRoyaleStatsComposer(IBattleResultStatsCtrl):
     def getVO(self):
         return self._block.getVO()
 
+    def onResultsPosted(self, arenaUniqueID):
+        event_dispatcher.showBattleRoyaleResultsView({'arenaUniqueID': arenaUniqueID})
+
     @staticmethod
     def onShowResults(arenaUniqueID):
         return
-
-    @staticmethod
-    def onResultsPosted(arenaUniqueID):
-        event_dispatcher.showBattleRoyaleResultsView({'arenaUniqueID': arenaUniqueID})

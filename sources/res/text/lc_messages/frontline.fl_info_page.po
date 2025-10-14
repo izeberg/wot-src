@@ -30,7 +30,7 @@ msgid "about/scoresTable/loseHeader"
 msgstr "失败"
 
 msgid "about/scoresTable/topCell"
-msgstr "获得的经验排名前%(top)"
+msgstr "所获经验排名前{{top}}"
 
 msgid "about/scoresTable/winHeader"
 msgstr "胜利"
@@ -42,12 +42,13 @@ msgstr ""
 msgid "addons/cellRent/header"
 msgstr "坦克租用"
 
-msgid "addons/cellRent/text_8"
-msgstr "有数辆不同的%(vehiclesLevel)级坦克供您使用银币租用。系别、类型相同的坦克之间转移乘员不会招致任何处罚，也不需要重新训练。"
+msgid "addons/cellRent/text_10"
+msgstr "有数辆不同的{{vehiclesLevel}}级坦克供您花费银币租用。系别、类型相同的坦克之间转移乘员不会招致任何处罚，也不需要再训练。"
 
 msgid "addons/cellRent/text_9"
 msgstr ""
-"有数辆不同的%(vehiclesLevelFrom)级和%(vehiclesLevelTo)级坦克供您使用银币租用。系别、类型相同的坦克之间转移乘员不会招致任何处罚，也不需要重新训练。"
+"有数辆不同的{{@ colorLegacy "
+"'FFE4C0'}}{{vehiclesLevel}}{{/}}级坦克供您花费银币租用。系别、类型相同的坦克之间转移乘员不会招致任何处罚，也不需要再训练。"
 
 msgid "addons/cellSpectator/header"
 msgstr "观察者模式"
@@ -68,45 +69,47 @@ msgid "addons/header"
 msgstr "更多信息"
 
 msgid "levelUp/sectionHeader"
-msgstr "%(level)级坦克"
+msgstr "{{level}}级坦克"
 
 msgid "levelUp/text"
 msgstr ""
-"和以前一样，您最初只能使用%(vehiclesLevelFrom)级坦克加入战斗，但可以同时在车库中准备好%(vehiclesLevelTo)级坦克。一旦第二战线中的任意基地(D、E、F)被占领，双方团队都可以使用%(vehiclesLevelTo)级坦克。"
+"一如既往，您最初只能使用{{vehiclesLevelFrom}}级坦克参加战斗，但可以同时在车库中准备好{{vehiclesLevelTo}}级坦克。一旦第二战线中的任意基地(D、E、F)被占领，双方团队都可以使用{{vehiclesLevelTo}}级坦克。"
 
 msgid "main/cellDuration/header"
 msgstr "持续时间"
 
 msgid "main/cellDuration/text"
-msgstr ""
-"前线模式将持续%(days)。\n"
-"下次开启的日期会另行公布。"
+msgstr "前线模式将会持续{{@ colorLegacy 'FFE4C0'}}{{days}}{{/}}。下次发布的日期会另行公布。"
 
 msgid "main/cellFrontline/header"
 msgstr "前线模式"
 
 msgid "main/cellFrontline/text_8"
 msgstr ""
-"驾驶%(vehiclesLevel)级坦克在诺曼底、发电厂和海市蜃楼地图上进行的30对30大规模战斗。进攻方必须摧毁5座炮台中的3座，而防守方则需要保护它们。"
+"驾驶{{vehiclesLevel}}级坦克在{{@ colorLegacy 'FFE4C0'}}诺曼底、发电厂{{/}}和{{@ "
+"colorLegacy "
+"'FFE4C0'}}海市蜃楼{{/}}地图上进行的30对30大规模战斗。进攻方必须摧毁5座炮台中的3座，而防守方则需要保护这些炮台。"
 
 msgid "main/cellFrontline/text_9"
 msgstr ""
-"驾驶%(vehiclesLevelFrom)-%(vehiclesLevelTo)级坦克在诺曼底、发电厂和海市蜃楼地图上进行的30对30大规模战斗。进攻方必须摧毁5座炮台中的3座，而防守方则需要保护它们。"
+"驾驶{{vehiclesLevelFrom}}-{{vehiclesLevelTo}}级坦克在{{@ colorLegacy "
+"'FFE4C0'}}诺曼底、发电厂{{/}}和{{@ colorLegacy "
+"'FFE4C0'}}海市蜃楼{{/}}地图上进行的30对30大规模战斗。进攻方必须摧毁5座炮台中的3座，而防守方则需要保护这些炮台。"
 
 msgid "main/cellLevel9/header"
-msgstr "%(vehiclesLevel)级坦克"
+msgstr "{{vehiclesLevel}}级坦克"
 
 msgid "main/cellLevel9/text"
-msgstr "当第二防线的其中一个基地(D、E或F)被占领后，您将可以驾驶%(vehiclesLevel)级坦克进入战斗。"
+msgstr "当第二防线的其中一个基地(D、E或F)被占领后，您将可以驾驶{{vehiclesLevel}}级坦克进入战斗。"
 
 msgid "main/cellLevels/header"
-msgstr "%(vehiclesLevel)级坦克"
+msgstr "{{vehiclesLevel}}级坦克"
 
 msgid "main/cellLevels/text_8"
-msgstr "仅%(vehiclesLevel)级坦克可以参加该模式。"
+msgstr "仅{{@ colorLegacy 'FFE4C0'}}{{vehiclesLevel}}{{/}}级坦克可以参加该模式。"
 
 msgid "main/cellLevels/text_9"
-msgstr "只能使用%(vehiclesLevel)级坦克进入战斗。"
+msgstr "只能使用{{vehiclesLevel}}级坦克进入战斗。"
 
 msgid "main/cellPass/header"
 msgstr "战斗通行证"
@@ -127,8 +130,9 @@ msgstr "战斗场景"
 
 msgid "main/cellScenarios/text"
 msgstr ""
-"前线模式战斗使用以下场景之一: "
-"{whiteSpanish_Start}标准战斗{whiteSpanish_End}、{whiteSpanish_Start}作战支援{whiteSpanish_End}或{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}。当前战斗场景的信息会在载入界面中、战前倒计时期间或按下Tab键时显示。"
+"前线模式战斗使用以下场景之一: {{@ colorLegacy 'FFE4C0'}}标准战斗{{/}}、{{@ colorLegacy "
+"'FFE4C0'}}作战支援{{/}}或{{@ colorLegacy "
+"'FFE4C0'}}扭转乾坤{{/}}。当前战斗场景的信息会在战斗加载界面中、战前倒计时期间或按下Tab键时显示。"
 
 msgid "main/sectionHeader"
 msgstr "综合信息"
@@ -139,23 +143,37 @@ msgstr "返回"
 msgid "page/headerUpper"
 msgstr "前线模式"
 
+msgid "percentValue"
+msgstr "{{value}}%"
+
+msgid "plusPercentValue"
+msgstr "+{{value}}%"
+
+msgid "plusValue"
+msgstr "+{{value}}"
+
 msgid "progression/levelsSection/experienceText"
-msgstr "您所达到的军阶将决定您能够获得的前线模式经验与战斗经验数量。前线模式经验可用于提升您的前线模式等级。共有20个等级。"
+msgstr ""
+"所达到的军阶将决定能够获得的前线模式经验与战斗经验数量。前线模式经验可用于提高前线模式等级。共有{{@ colorLegacy "
+"'FFE4C0'}}20个等级{{/}}。"
 
 msgid "progression/levelsSection/header"
 msgstr "前线模式等级"
 
 msgid "progression/levelsSection/rewardsText"
 msgstr ""
-"提高{whiteSpanish_Start}前线模式等级{whiteSpanish_End}即可获得奖励，包括战斗通行证点数、战斗储备积分、战争债券、指令、再训练命令、授业许可和乘员手册。"
+"提高{{@ colorLegacy "
+"'FFE4C0'}}前线模式等级{{/}}即可获得奖励，包括战斗通行证点数、战斗储备积分、战争债券、指令、再训练命令、授业许可和乘员手册。"
 
 msgid "progression/levelsSection/rewardsTextNoBP"
 msgstr ""
-"{whiteSpanish_Start}前线模式等级{whiteSpanish_End}提升后，您可获得战斗储备积分、战争债券、指令、再训练命令和乘员手册。"
+"提高{{@ colorLegacy 'FFE4C0'}}前线模式等级{{/}}即可获得奖励，包括战斗储备积分、战争债券、指令、再训练命令和乘员手册。"
 
 msgid "progression/ranksSection/experience"
 msgstr ""
-"{whiteSpanish_Start}军阶{whiteSpanish_End}不仅反映了您在单场战斗中的效率，还能为战斗经验提供加成。该加成将应用于您所有参战坦克所获得的全部基础经验。当您或盟友达到将军军阶后，整个团队的乘员表现(主要专业水平)均会获得{brown_Start}1.5%{brown_End}至{brown_Start}15%{brown_End}的加成。"
+"{{@ colorLegacy "
+"'FFE4C0'}}军阶{{/}}不仅反映您在单场战斗中的效率，还提供战斗经验加成。该加成将应用于您所有参战坦克获得的全部基础经验。当您或盟友达到将军军阶后，整个团队的乘员表现(乘员效率)均会获得{{@"
+" colorLegacy 'FFE4C0'}}1.5%{{/}}至{{@ colorLegacy 'FFE4C0'}}15%{{/}}的加成。"
 
 msgid "progression/ranksSection/header"
 msgstr "军阶"
@@ -216,14 +234,15 @@ msgid "reserveCategories/categories/support"
 msgstr "辅助"
 
 msgid "reserveCategories/config/footerText"
-msgstr "在{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}场景中，战斗储备的解锁顺序并不取决于坦克类型。"
+msgstr "在{{@ colorLegacy 'FFE4C0'}}扭转乾坤{{/}}场景中，战斗储备的解锁顺序并不取决于坦克类型。"
 
 msgid "reserveCategories/config/header"
-msgstr "储备配置"
+msgstr "各种坦克类型的储备配置"
 
 msgid "reserveCategories/config/text"
 msgstr ""
-"在{whiteSpanish_Start}标准战斗{whiteSpanish_End}和{whiteSpanish_Start}作战支援{whiteSpanish_End}场景中，所有3个战斗储备栏位均会对全部坦克类型开放。不过，其解锁顺序取决于坦克类型。"
+"在{{@ colorLegacy 'FFE4C0'}}标准战斗{{/}}和{{@ colorLegacy "
+"'FFE4C0'}}作战支援{{/}}场景中，所有3个战斗储备栏位均会对全部坦克类型开放。不过，其解锁顺序将取决于坦克类型。"
 
 msgid "reserveCategories/config/vehicles/destroyer"
 msgstr "自行反坦克炮"
@@ -242,7 +261,8 @@ msgstr "自行火炮"
 
 msgid "reserveCategories/levelUpNote"
 msgstr ""
-"*只有在{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}场景中{whiteSpanish_Start}购买{whiteSpanish_End}的战斗储备才能加强至这个等级。"
+"*只有在{{@ colorLegacy 'FFE4C0'}}扭转乾坤{{/}}场景中{{@ colorLegacy "
+"'FFE4C0'}}购买{{/}}的战斗储备才能加强至该等级。"
 
 msgid "reserveCategories/levels/header"
 msgstr "如何解锁栏位和强化战斗储备"
@@ -252,7 +272,8 @@ msgstr "战斗开始时，对您开放的只有一个战斗储备。其他储备
 
 msgid "reserveCategories/progression/tableCell"
 msgstr ""
-"等级{whiteSpanish_Start}%(level){whiteSpanish_End}或{whiteSpanish_Start}%(levelNext)*{whiteSpanish_End}"
+"等级{{@ colorLegacy 'FFE4C0'}}{{level}}{{/}}或{{@ colorLegacy "
+"'FFE4C0'}}{{levelNext}}*{{/}}"
 
 msgid "reserveCategories/ranks/captain"
 msgstr "上尉"
@@ -277,7 +298,9 @@ msgstr "扭转乾坤"
 
 msgid "reserveCategories/scenarios/random/text"
 msgstr ""
-"在战斗中，玩家可从对所有坦克类型开放的随机储备中二选一。战前将储备放入栏位，其出现几率可提高{whiteSpanish_Start}10%{whiteSpanish_End}。购买储备可将其提高至等级{whiteSpanish_Start}II{whiteSpanish_End}，并有机会加强至等级{whiteSpanish_Start}IV{whiteSpanish_End}。"
+"在战斗中，玩家可从对所有坦克类型开放的随机储备中二选一。战前将储备放入栏位，其出现几率可提高{{@ colorLegacy "
+"'FFE4C0'}}10%{{/}}。购买储备可将其提高至等级{{@ colorLegacy "
+"'FFE4C0'}}II{{/}}，并有机会加强至等级{{@ colorLegacy 'FFE4C0'}}IV{{/}}。"
 
 msgid "reserveCategories/scenarios/sectionHeader"
 msgstr "前线模式战斗场景"
@@ -292,18 +315,19 @@ msgid "reserveCategories/scenarios/support/header"
 msgstr "作战支援"
 
 msgid "reserveCategories/scenarios/support/list/reserveOpen"
-msgstr "解锁储备后: {whiteSpanish_Start}-50%{whiteSpanish_End}"
+msgstr "解锁储备后: {{@ colorLegacy 'FFE4C0'}}-50%{{/}}"
 
 msgid "reserveCategories/scenarios/support/list/respawn"
-msgstr "重返战斗后: {whiteSpanish_Start}-70%{whiteSpanish_End}"
+msgstr "重返战斗后: {{@ colorLegacy 'FFE4C0'}}-70%{{/}}"
 
 msgid "reserveCategories/scenarios/support/text"
 msgstr "战斗储备的冷却时间缩短且节奏更快的战斗场景:"
 
 msgid "reserveCategories/scenarios/text"
 msgstr ""
-"前线模式战斗使用以下场景之一: "
-"{whiteSpanish_Start}标准战斗{whiteSpanish_End}、{whiteSpanish_Start}作战支援{whiteSpanish_End}或{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}。战斗场景会改变在战斗中使用战斗储备的条件。当前战斗场景的信息会在载入界面中、战前倒计时期间或按下Tab键时显示。"
+"前线模式战斗使用以下场景之一: {{@ colorLegacy 'FFE4C0'}}标准战斗{{/}}、{{@ colorLegacy "
+"'FFE4C0'}}作战支援{{/}}或{{@ colorLegacy "
+"'FFE4C0'}}扭转乾坤{{/}}。战斗场景会改变在战斗中使用战斗储备的条件。当前战斗场景的信息会在战斗加载界面中、战前倒计时期间或按下Tab键时显示。"
 
 msgid "reserveCategories/sectionHeader"
 msgstr "战斗储备类别"
@@ -358,7 +382,8 @@ msgstr ""
 
 msgid "rules/base/textTop"
 msgstr ""
-"{whiteSpanish_Start}进攻方团队{whiteSpanish_End}必须依次占领基地才能到达炮台。占领一个基地，战斗持续时间延长2分钟。占领最后一个基地，战斗持续时间延长4分钟。"
+"{{@ colorLegacy "
+"'FFE4C0'}}进攻方团队{{/}}必须依次占领基地才能到达炮台。占领一个基地，战斗持续时间延长2分钟。占领最后一个基地，战斗持续时间延长4分钟。"
 
 msgid "rules/sectionHeader"
 msgstr "基本规则"
@@ -373,34 +398,40 @@ msgid "rules/weapons/header"
 msgstr "目标: 5个炮台中的3个"
 
 msgid "rules/weapons/list/back"
-msgstr "后部装甲: {whiteSpanish_Start}90毫米。{whiteSpanish_End}"
+msgstr "后部装甲: {{@ colorLegacy 'FFE4C0'}}90毫米。{{/}}"
 
 msgid "rules/weapons/list/roof"
-msgstr "顶部和正面装甲:炮弹{whiteSpanish_Start}无法击穿{whiteSpanish_End}。"
+msgstr "顶部和正面装甲: 炮弹{{@ colorLegacy 'FFE4C0'}}无法击穿{{/}}。"
 
 msgid "rules/weapons/list/sides"
-msgstr "侧面装甲: {whiteSpanish_Start}180毫米。{whiteSpanish_End}"
+msgstr "侧面装甲: {{@ colorLegacy 'FFE4C0'}}180毫米。{{/}}"
 
 msgid "rules/weapons/list/sides_9"
-msgstr "侧面装甲: {whiteSpanish_Start}210毫米。{whiteSpanish_End}"
+msgstr "侧面装甲: {{@ colorLegacy 'FFE4C0'}}210毫米。{{/}}"
 
 msgid "rules/weapons/list/vulnerable"
-msgstr "弱点部位: {whiteSpanish_Start}舱门(70毫米)和通风口(25毫米)。{whiteSpanish_End}"
+msgstr "弱点部位: {{@ colorLegacy 'FFE4C0'}}舱门(70毫米)和通风口(25毫米)。{{/}}"
 
 msgid "rules/weapons/text"
 msgstr "防守方领地的大后方有5个炮台，它们是战斗的主要目标。进攻方团队需要摧毁3个炮台防御工事，而防守方团队则需要尽力保护它们。"
 
 msgid "subTitle/differentMonth"
-msgstr "%(startMonth)s%(from)s日至%(endMonth)s%(to)s日"
+msgstr ""
+"{{@ colorLegacy 'FFE4C0'}}{{startMonth}}{{from}}日{{/}}至{{@ colorLegacy "
+"'FFE4C0'}}{{endMonth}}{{to}}日{{/}}"
 
 msgid "subTitle/differentYears"
-msgstr "%(startYear)s年%(startMonth)s%(from)s日至%(endYear)s年%(endMonth)s%(to)s日"
+msgstr ""
+"{{@ colorLegacy 'FFE4C0'}}{{startYear}}年{{startMonth}}{{from}}日{{/}}至{{@ "
+"colorLegacy 'FFE4C0'}}{{endYear}}年{{endMonth}}{{to}}日{{/}}"
 
 msgid "subTitle/sameMonth"
-msgstr "%(endMonth)s%(from)s日至%(to)s日"
+msgstr ""
+"{{@ colorLegacy 'FFE4C0'}}{{endMonth}}{{from}}日{{/}}至{{@ colorLegacy "
+"'FFE4C0'}}{{to}}日{{/}}"
 
 msgid "winStrategy/firstLine"
-msgstr "{whiteSpanish_Start}第一战线{whiteSpanish_End}中的A、B、C区域是双方团队的起始点。"
+msgstr "{{@ colorLegacy 'FFE4C0'}}第一战线的{{/}}A、B、C区域是双方团队的起始点。"
 
 msgid "winStrategy/header"
 msgstr "致胜之道"
@@ -409,9 +440,9 @@ msgid "winStrategy/mapZones"
 msgstr "该模式地图拥有3条平行的防线:"
 
 msgid "winStrategy/secondLine"
-msgstr ""
-"在占领了第一战线的区域后，战斗就会在{whiteSpanish_Start}第二战线{whiteSpanish_End}的D、E、F区域继续。"
+msgstr "占领第一战线的区域后，战斗就会在{{@ colorLegacy 'FFE4C0'}}第二战线的{{/}}D、E、F区域继续展开。"
 
 msgid "winStrategy/thirdLine"
 msgstr ""
-"{whiteSpanish_Start}第三战线{whiteSpanish_End}不分区域；战斗的最终阶段在此展开。炮台防御工事位于此处，进攻方团队击毁大部分炮台防御工事即可获胜。进攻方需要在第二战线至少占领一个区域，才能解锁该主要目标。一个区域失守后，防守方玩家有1分钟时间撤离，之后该区域就会被轰炸，未撤离的防守方玩家将被空袭摧毁。在第二和第三战线中，如果进攻方未占领前一个区域就直接进入下一个区域，同样也会被空袭摧毁。"
+"{{@ colorLegacy "
+"'FFE4C0'}}第三战线{{/}}不分区域；战斗的最终阶段在此展开。炮台防御工事位于此处，进攻方团队击毁大部分炮台防御工事即可获胜。进攻方需要在第二战线至少占领一个区域，才能解锁该主要目标。一个区域失守后，防守方玩家有1分钟时间撤离，之后该区域就会被轰炸，未撤离的防守方玩家将被空袭摧毁。在第二和第三战线中，如果进攻方未占领前一个区域就直接进入下一个区域，同样也会被空袭摧毁。"

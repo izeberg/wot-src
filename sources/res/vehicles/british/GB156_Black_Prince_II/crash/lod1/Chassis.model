@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB156_Black_Prince_II/crash/lod1/Chassis</nodefullVisual>
+	<parent>vehicles/british/GB156_Black_Prince_II/crash/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.612996 -0.000000 -3.565306</min>
+		<max>1.612998 1.520332 3.710452</max>
+	</visibilityBox>
+</root>

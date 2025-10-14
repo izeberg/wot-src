@@ -1,5 +1,5 @@
+import enum
 ROYALE_POSTBATTLE_REWARDS_COUNT = 8
-BR_AMMO_PANEL_TYPE = 'BattleRoyaleAmmunitionPanelView'
 
 class BattleRoyaleEquipments(object):
     LARGE_REPAIRKIT = 'large_repairkit_battle_royale'
@@ -78,3 +78,11 @@ class BattleRoyaleSubMode(object):
     SQUAD_MODE_ID = 3
     ALL_RANGE = (
      SOLO_MODE_ID, SOLO_DYNAMIC_MODE_ID, SQUAD_MODE_ID)
+
+
+class BattleRoyaleModeState(enum.Enum):
+    Regular = 0
+    CeasefireCurrentServer = 1
+    CeasefireAllServers = 2
+    Unavailable = 3
+    Finished = 4

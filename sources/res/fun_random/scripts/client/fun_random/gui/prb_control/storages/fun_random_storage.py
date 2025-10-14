@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random_common.fun_constants import UNKNOWN_EVENT_ID
 from gui.prb_control.storages.local_storage import SessionStorage
 from helpers import dependency

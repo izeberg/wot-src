@@ -567,6 +567,7 @@ class OpenLinkEvent(SharedEvent):
     STEAM_SUBSCRIPTION_MANAGEMENT = 'steamSubscriptionManagementURL'
     LOOT_BOXES_LIST = 'lootBoxesList'
     REPORT_CONTENT = 'reportContent'
+    OPEN_BUNDLE_STEPS = 'openBundleSteps'
 
     def __init__(self, eventType, url='', title='', params=None):
         super(OpenLinkEvent, self).__init__(eventType)

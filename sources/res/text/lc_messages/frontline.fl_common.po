@@ -14,9 +14,6 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
-msgid "ammunitionSetup/btn/info/label"
-msgstr "前线模式战斗场景"
-
 msgid "battleType/description/fast"
 msgstr "在该场景中，战斗储备的冷却时间会缩短。"
 
@@ -89,26 +86,8 @@ msgstr "战斗储备等级"
 msgid "loading"
 msgstr "加载中..."
 
-msgid "tab/info/description"
-msgstr "前线模式详情。"
+msgid "widget/eventStartSoon"
+msgstr "活动即将开启！"
 
-msgid "tab/info/name"
-msgstr "关于前线模式"
-
-msgid "tab/progress/description"
-msgstr "前线模式等级进度。"
-
-msgid "tab/progress/name"
-msgstr "前线模式等级"
-
-msgid "tab/rewards/description"
-msgstr "前线模式奖励和获取奖励的条件。"
-
-msgid "tab/rewards/name"
-msgstr "奖励"
-
-msgid "tab/skills/description"
-msgstr "前线模式中使用的战斗储备列表。"
-
-msgid "tab/skills/name"
-msgstr "激活储备"
+msgid "widget/maxTier"
+msgstr "您已达到最高等级！"

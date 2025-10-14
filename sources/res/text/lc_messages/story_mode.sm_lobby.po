@@ -90,6 +90,9 @@ msgstr "诺曼底行动"
 msgid "battleResult/missionName/6"
 msgstr "邮差行动"
 
+msgid "battleResult/missionName/7"
+msgstr "沸点行动"
+
 msgid "battleResult/noTasksToComplete"
 msgstr ""
 "目前没有进行\n"
@@ -233,6 +236,11 @@ msgstr ""
 "邮差\n"
 "行动"
 
+msgid "missionSelection/lockedMissionName/7"
+msgstr ""
+"沸点\n"
+"行动"
+
 msgid "missionSelection/missionDescription/1"
 msgstr ""
 "布鲁克斯: \"你感觉怎样？没事吧？待会儿让医护兵给你看看，现在人员短缺。行动已经开始了。由于我们没能按时抵达目的地，所以另一个侧翼吸引了敌方的全部注意力。 这为我们创造了机会，现在立刻进攻，我们就能突入城镇，前后夹击敌人。\n"
@@ -323,6 +331,14 @@ msgstr ""
 "\n"
 "出发。\""
 
+msgid "missionSelection/missionDescription/7"
+msgstr ""
+"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
+"\n"
+"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
+"\n"
+"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
+
 msgid "missionSelection/missionName/1"
 msgstr "破甲行动"
 
@@ -355,6 +371,9 @@ msgstr "诺曼底行动"
 
 msgid "missionSelection/missionName/6"
 msgstr "邮差行动"
+
+msgid "missionSelection/missionName/7"
+msgstr "沸点行动"
 
 msgid "missionSelection/specialVehicle"
 msgstr "特殊坦克"
@@ -451,6 +470,15 @@ msgstr "完成主要任务目标，并击毁%(kill_enemies)s辆或更少的敌�
 
 msgid "missionSelection/taskDescription/6/3"
 msgstr "在不损失任何坦克的情况下完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/7/1"
+msgstr "抵达指挥中心，阻止导弹发射。"
+
+msgid "missionSelection/taskDescription/7/2"
+msgstr "在%(win_timer)s内完成主要任务目标。"
+
+msgid "missionSelection/taskDescription/7/3"
+msgstr "在不损失任何自身坦克的情况下完成主要任务目标。"
 
 msgid "missionSelection/taskDescription/kill_enemies"
 msgid_plural "plural/missionSelection/taskDescription/kill_enemies"

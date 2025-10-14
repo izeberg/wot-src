@@ -33,7 +33,8 @@ _LOBBY_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.lobby', 'gui.Scaleform.daap
                            'gui.impl.lobby.maps_blacklist', 'gui.impl.lobby.daily_experience',
                            'gui.impl.lobby.personal_missions_30', 'gui.impl.lobby.personal_reserves',
                            'gui.impl.lobby.battle_pass', 'gui.impl.lobby.clan_supply',
-                           'gui.impl.lobby.crew')
+                           'gui.impl.lobby.crew', 'gui.impl.lobby.lootbox_system',
+                           'gui.impl.lobby.collection')
 _LOBBY_DEBUG_PACKAGES = ('gui.development.ui.messenger.view.lobby', 'gui.development.ui.demo',
                          'gui.development.ui.gf_viewer')
 _BATTLE_RELEASE_PACKAGES = ('gui.Scaleform.daapi.view.battle.shared', 'gui.Scaleform.daapi.view.battle.shared.vehicle_mechanics',

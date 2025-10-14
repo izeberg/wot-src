@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A175_LTC_II/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/american/A175_LTC_II/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.435126 -0.001275 -2.545999</min>
+		<max>1.440290 1.604142 1.435867</max>
+	</visibilityBox>
+</root>

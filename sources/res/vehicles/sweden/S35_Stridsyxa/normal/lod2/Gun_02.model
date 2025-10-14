@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S35_Stridsyxa/normal/lod3/Gun_02</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.411073 -0.278392 -0.111309</min>
+		<max>0.400988 0.268230 3.849152</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/sweden/S35_Stridsyxa/normal/lod2/Gun_02</nodefullVisual>
+</root>

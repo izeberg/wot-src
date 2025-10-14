@@ -48,6 +48,7 @@
 		<_120mm_Bofors>55</_120mm_Bofors>
 		<_47mm_Bohler_M35>56</_47mm_Bohler_M35>
 		<_105mm_kan_strv_107_L_62>57</_105mm_kan_strv_107_L_62>
+		<_105mm_strvkan_L_50_S>58</_105mm_strvkan_L_50_S>
 		<_120mm_akan_L_40B>300</_120mm_akan_L_40B>
 		<_120mm_Bofors_strvkan_L_40>301</_120mm_Bofors_strvkan_L_40>
 		<_105mm_strvkan_L_45_16>2000</_105mm_strvkan_L_45_16>
@@ -5286,7 +5287,7 @@
 		<_105mm_kan_strv_103_L_62_FL>
 			<userString>#sweden_vehicles:_105mm_kan_strv_103_L_62</userString>
 			<tags/>
-			<level>10</level>
+			<level>9</level>
 			<price>330000</price>
 			<notInShop>true</notInShop>
 			<impulse>
@@ -6447,6 +6448,109 @@
 				</_120mm_sgr_m_60>
 			</shots>
 		</_120mm_Bofors_strvkan_L_40>
+		<_105mm_strvkan_L_50_S>
+			<userString>#sweden_vehicles:_105mm_strvkan_L_50_S</userString>
+			<tags/>
+			<level>8</level>
+			<price>100000</price>
+			<notInShop>true</notInShop>
+			<impulse>
+				0.44
+				<!--BW_String-->
+			</impulse>
+			<recoil>
+				<lodDist>MEDIUM</lodDist>
+				<amplitude>
+					0.56
+					<!--BW_String-->
+				</amplitude>
+				<recoilEffect>main</recoilEffect>
+			</recoil>
+			<effects>shot_large</effects>
+			<reloadEffect>reload85_107</reloadEffect>
+			<pitchLimits>
+				<minPitch>
+					0.0 -15.0 1.0 -15.0
+					<!--BW_String-->
+				</minPitch>
+				<maxPitch>
+					0.0 10 1.0 10
+					<!--BW_String-->
+				</maxPitch>
+			</pitchLimits>
+			<turretYawLimits>-180 180</turretYawLimits>
+			<rotationSpeed>33</rotationSpeed>
+			<reloadTime>8</reloadTime>
+			<maxAmmo>34</maxAmmo>
+			<aimingTime>2</aimingTime>
+			<weight>1500</weight>
+			<maxHealth>180</maxHealth>
+			<maxRegenHealth>90</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<invisibilityFactorAtShot>
+				0.22
+				<!--BW_String-->
+			</invisibilityFactorAtShot>
+			<shotDispersionRadius>
+				0.4
+				<!--BW_String-->
+			</shotDispersionRadius>
+			<shotDispersionFactors>
+				<turretRotation>
+					0.16
+					<!--BW_String-->
+				</turretRotation>
+				<afterShot>
+					4.0
+					<!--BW_String-->
+				</afterShot>
+				<whileGunDamaged>
+					2.0
+					<!--BW_String-->
+				</whileGunDamaged>
+			</shotDispersionFactors>
+			<shots>
+				<_105mm_slpgr_LS_50_S>
+					<defaultPortion>
+						0.95
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>980</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>219 205</piercingPower>
+				</_105mm_slpgr_LS_50_S>
+				<_105mm_slpprj_LS_50_S>
+					<defaultPortion>
+						0.0
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>1230</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>252 233</piercingPower>
+				</_105mm_slpprj_LS_50_S>
+				<_105mm_sgr_LS_50_S>
+					<defaultPortion>
+						0.05
+						<!--BW_String-->
+					</defaultPortion>
+					<speed>980</speed>
+					<gravity>
+						9.81
+						<!--BW_String-->
+					</gravity>
+					<maxDistance>720</maxDistance>
+					<piercingPower>53 53</piercingPower>
+				</_105mm_sgr_LS_50_S>
+			</shots>
+		</_105mm_strvkan_L_50_S>
 		<_105mm_kan_m_41_strv_G1_SH>
 			<userString>#sweden_vehicles:_105mm_kan_m_41_strv_G1_SH</userString>
 			<tags/>

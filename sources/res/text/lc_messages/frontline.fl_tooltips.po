@@ -10,14 +10,138 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
-msgid "notEnoughPoints/body"
-msgstr "提高前线模式等级即可获得战斗储备积分。"
+msgid "bannerTooltip/curfewTime"
+msgstr "休战期{{timer}}"
 
-msgid "notEnoughPoints/header"
-msgstr "积分不足"
+msgid "bannerTooltip/dateRange"
+msgstr "{{icon}}{{startDate}} - {{endDate}}"
 
-msgid "notEnoughPoints/value"
-msgstr "需要: %(points)s%(icon)s"
+msgid "bannerTooltip/dateRangeLabel"
+msgstr "活动开放时间"
+
+msgid "bannerTooltip/description"
+msgstr ""
+"驾驶{{vehicleTier}}级坦克在诺曼底、发电厂以及海市蜃楼地图上进行的30对30大规模战斗。进攻方必须摧毁5座炮台中的3座，而防守方则需要保护这些炮台。"
+
+msgid "bannerTooltip/descriptionActive"
+msgstr "在激烈战斗中展现您的实力，赢得声望，获取珍贵奖励，并晋升军阶。"
+
+msgid "bannerTooltip/descriptionEnded"
+msgstr "活动已结束，您尚未领取已完成前线模式等级的奖励。"
+
+msgid "bannerTooltip/header"
+msgstr "前线模式"
+
+msgid "bannerTooltip/headerWithTier"
+msgstr "前线模式 | 等级{{curLevel}}{{@ class $maxTierClass}}/{{maxLevel}}{{/}}"
+
+msgid "bannerTooltip/mode"
+msgstr "{{mode}}——游戏模式。点击探索"
+
+msgid "bannerTooltip/performanceRisk/text"
+msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
+
+msgid "bannerTooltip/performanceRisk/title"
+msgstr "可能会降低性能"
+
+msgid "bannerTooltip/progress"
+msgstr "{{value}}/{{maxValue}}"
+
+msgid "bannerTooltip/rewardInfo"
+msgstr "选择已完成等级的奖励({{value}})"
+
+msgid "battleAbilities/button/notEnough"
+msgstr "余额不足，无法购买。"
+
+msgid "battleAbilities/checkbox/AT-SPG"
+msgstr "变动将应用于所有自行反坦克炮。"
+
+msgid "battleAbilities/checkbox/SPG"
+msgstr "变动将应用于所有自行火炮。"
+
+msgid "battleAbilities/checkbox/heavyTank"
+msgstr "变动将应用于所有重型坦克。"
+
+msgid "battleAbilities/checkbox/lightTank"
+msgstr "变动将应用于所有轻型坦克。"
+
+msgid "battleAbilities/checkbox/mediumTank"
+msgstr "变动将应用于所有中型坦克。"
+
+msgid "battleAbilities/incompatibleVehicle"
+msgstr "坦克不符"
+
+msgid "battleAbilities/points/body"
+msgstr "累积所需的积分，解锁前线模式战斗储备。"
+
+msgid "battleAbilities/points/header"
+msgstr "战斗储备积分"
+
+msgid "battleAbilityTooltip/activation_depends"
+msgstr "在战斗中晋升至上尉和少校军阶可提高战斗储备等级。最高等级取决于战斗场景。"
+
+msgid "battleAbilityTooltip/addInfo"
+msgstr "更多信息"
+
+msgid "battleAbilityTooltip/category/firesupport"
+msgstr "进攻储备"
+
+msgid "battleAbilityTooltip/category/reconnaissance"
+msgstr "侦察储备"
+
+msgid "battleAbilityTooltip/category/tactics"
+msgstr "战术储备"
+
+msgid "battleAbilityTooltip/characteristicsList"
+msgstr "{{label}}: {{@ class $valueClass}}{{value}}{{/}}"
+
+msgid "battleAbilityTooltip/characteristicsTitle"
+msgstr "永久参数:"
+
+msgid "battleAbilityTooltip/description"
+msgstr ""
+"把战斗储备放入该栏位，会使其在{{@ colorLegacy 'FFE4C0'}}扭转乾坤{{/}}场景中出现的几率提高{{@ colorLegacy "
+"'FFE4C0'}}10%{{/}}。"
+
+msgid "battleAbilityTooltip/levelsTitle"
+msgstr "储备等级:"
+
+msgid "battleAbilityTooltip/notPurchased"
+msgstr "未购买！"
+
+msgid "commonTooltip/descriptionEnded"
+msgstr "活动已结束。"
+
+msgid "infoButton/body"
+msgstr "点击查看更多信息。"
+
+msgid "infoButton/header"
+msgstr "关于活动"
+
+msgid "levelReserves/desc"
+msgstr "达到新的军阶后，战斗储备等级提高:"
+
+msgid "levelReserves/info"
+msgstr ""
+"在{{@ colorLegacy 'FFE4C0'}}扭转乾坤{{/}}场景中，购买战斗储备可将该储备提高一个等级，并有机会将其加强至等级{{@ "
+"colorLegacy 'FFE4C0'}}{{lvl}}{{/}}。"
+
+msgid "levelReserves/level"
+msgstr "达到以下军阶时提高: {{@ colorLegacy 'FFE4C0'}}{{lvl}}{{/}}"
+
+msgid "levelReserves/levelAvailable"
+msgstr "以下军阶时开放: {{@ colorLegacy 'FFE4C0'}}{{lvl}}{{/}}"
+
+msgid "levelReserves/levelTitle"
+msgstr "等级 - {{lvl}}"
+
+msgid "levelReserves/optionalReserve"
+msgstr ""
+"适用于在{{@ colorLegacy 'FFE4C0'}}扭转乾坤{{/}}场景中{{@ colorLegacy "
+"'FFE4C0'}}购买的战斗储备{{/}}。"
+
+msgid "levelReserves/title"
+msgstr "战斗储备等级"
 
 msgid "randomReserve/characteristic/improved"
 msgstr "已提高战斗储备参数"
@@ -32,12 +156,10 @@ msgid "randomReserve/purchased"
 msgstr "已购买战斗储备"
 
 msgid "skillOrderTooltip/body"
-msgstr "战斗储备的解锁顺序取决于战斗场景、储备类别和坦克类型。"
+msgstr "每种坦克类型都具有不同的储备解锁顺序:"
 
 msgid "skillOrderTooltip/header"
 msgstr "战斗储备解锁顺序"
 
 msgid "skillOrderTooltip/info"
-msgstr ""
-"在{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}场景中，战斗储备的解锁顺序并不取决于\n"
-"储备类别或坦克类型。"
+msgstr "在{{@ colorLegacy 'whiteSpanish'}}扭转乾坤{{/}}场景中，战斗储备的解锁顺序并不取决于坦克类型。"

@@ -1,0 +1,700 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2023-01-12 10:00+0300\n"
+"PO-Revision-Date: 2023-01-12 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+msgid "ammoSetup/changeHotKey/body"
+msgstr ""
+"您可自定义战斗能力和炮弹的默认活动热键设置。\n"
+"此更改仅适用于活动战斗，不会影响其他任何模式。\n"
+"您仍可在菜单—游戏设置—控制(给养版块)中修改各个热键。"
+
+msgid "ammoSetup/changeHotKey/header"
+msgstr "更改给养热键设置"
+
+msgid "badgeWidget/tooltipBody"
+msgstr "完成当前任务即可获得独特的\"巴比伦:荣耀征途\"奖章:"
+
+msgid "badgeWidget/tooltipHeader"
+msgstr "史诗成就任务"
+
+msgid "bundleView/btn/keys"
+msgstr "购买"
+
+msgid "bundleView/btn/shop"
+msgstr "在军械库中查看"
+
+msgid "bundleView/bundle/header/bundleGroupEventPack"
+msgstr "动员守望者"
+
+msgid "bundleView/bundle/header/bundleGroupLuxuryEventPack"
+msgstr "全力出击"
+
+msgid "bundleView/bundle/header/bundleGroupStyle"
+msgstr "个性化"
+
+msgid "bundleView/bundle/header/hw25bundle_keys"
+msgstr "购买密钥"
+
+msgid "bundleView/bundle/serviceChannelMessages/hw25bundle_keys"
+msgstr "已购买密钥"
+
+msgid "bundleView/bundle/subHeader/bundleGroupEventPack"
+msgstr "一款特殊礼包，助您加快推动巴比伦:荣耀征途的进度。"
+
+msgid "bundleView/bundle/subHeader/bundleGroupLuxuryEventPack"
+msgstr "巴比伦:荣耀征途专属特惠: 究极礼包。"
+
+msgid "bundleView/bundle/subHeader/bundleGroupStyle"
+msgstr "3D风格和其他元素，充满了该活动的氛围。"
+
+msgid "bundleView/bundle/subHeader/hw25bundle_keys"
+msgstr "密钥可用于解密或跳过胶片。一把密钥需要花费{cost}金币。"
+
+msgid "bundleView/eventName"
+msgstr "巴比伦计划"
+
+msgid "bundleView/reward/hw_artefact_key"
+msgstr "解密密钥(奖励)"
+
+msgid "bundleView/subTitle"
+msgid_plural "plural/bundleView/subTitle"
+msgstr[0] "还需要{key}才能解密胶片{slide}"
+msgstr[1] "还需要{key}才能解密胶片{slide}"
+msgstr[2] "还需要{key}才能解密胶片{slide}"
+
+msgid "bundleView/title"
+msgstr "解密密钥"
+
+msgid "bundleView/title/default"
+msgstr "选择密钥购买方式"
+
+msgid "bundleView/title/onlyKeysBundle"
+msgstr "选择要购买的密钥数量"
+
+msgid "bundleView/title/onlyShopBundle"
+msgstr "选择活动礼包"
+
+msgid "bundleView/tooltip/cerfToken/body"
+msgstr "一名自选特殊活动乘员，附带专属语音。"
+
+msgid "bundleView/tooltip/cerfToken/header"
+msgstr "1名自选活动乘员"
+
+msgid "bundleView/tooltip/expVehicleX5/body"
+msgstr "驾驶任意已取得当天首胜奖励的坦克，从第2场胜利开始获得5倍经验。"
+
+msgid "bundleView/tooltip/expVehicleX5/header"
+msgstr "5倍乘员经验任务"
+
+msgid "bundleView/tooltip/stepper/body"
+msgstr "选择您要获取的密钥数量，用来解密或跳过加密胶片。"
+
+msgid "bundleView/tooltip/stepper/header"
+msgstr "解密加密胶片的密钥"
+
+msgid "carousel/card/inBattle"
+msgstr "在战斗中"
+
+msgid "carousel/card/inPlatoon"
+msgstr "在小队中"
+
+msgid "carousel/card/inQueue"
+msgstr "在队列中"
+
+msgid "carousel/card/locked"
+msgstr "未解锁"
+
+msgid "carousel/daily/header"
+msgstr "每日坦克任务"
+
+msgid "common/back"
+msgstr "返回"
+
+msgid "common/btnContinue"
+msgstr "继续"
+
+msgid "common/close"
+msgstr "关闭"
+
+msgid "common/progress"
+msgstr "{value}/{maxValue}"
+
+msgid "common/toEvent"
+msgstr "活动"
+
+msgid "common/toRewardPath"
+msgstr "探秘之旅"
+
+msgid "common/yes"
+msgstr "收到!"
+
+msgid "comparisonWindow/categoryName/armour"
+msgstr ""
+"生命值\n"
+"(点)"
+
+msgid "comparisonWindow/categoryName/damage"
+msgstr ""
+"火力\n"
+"(点)"
+
+msgid "comparisonWindow/categoryName/speed"
+msgstr ""
+"最大速度\n"
+"(千米/小时)"
+
+msgid "comparisonWindow/tank/name/france_F17_AMX_13_90_Halloween_event"
+msgstr "大黄蜂"
+
+msgid "comparisonWindow/tank/name/italy_It19_Progetto_C50_mod_66_hw21"
+msgstr "装甲军团"
+
+msgid "comparisonWindow/tank/name/uk_GB24_Centurion_Mk3_Halloween_event"
+msgstr "地狱犬"
+
+msgid "comparisonWindow/tank/name/usa_A100_T49_Halloween_event"
+msgstr "掷弹兵"
+
+msgid "comparisonWindow/tank/name/ussr_R171_IS_3_II_hw21"
+msgstr "双枪斗士"
+
+msgid "comparisonWindow/tank/name/ussr_R40_T_54_Halloween_event"
+msgstr "孔雀石"
+
+msgid "comparisonWindow/tank/ttcType/autoloader_2"
+msgstr "火炮可以使用HE炮弹，装备2连发自动装填系统"
+
+msgid "comparisonWindow/tank/ttcType/autoloader_4"
+msgstr "经过改进的3连发自动装填系统"
+
+msgid "comparisonWindow/tank/ttcType/crit_chance"
+msgstr "损伤敌方坦克模块的几率较高"
+
+msgid "comparisonWindow/tank/ttcType/crit_resistance"
+msgstr "坦克模块防护性能提高&nbsp;"
+
+msgid "comparisonWindow/tank/ttcType/double_gun"
+msgstr "双火炮系统"
+
+msgid "comparisonWindow/tank/ttcType/magazine"
+msgstr "5连发弹夹炮"
+
+msgid "comparisonWindow/title"
+msgstr "坦克对比"
+
+msgid "crewShowcase/play"
+msgstr "播放"
+
+msgid "crewShowcase/status/inBaseReward"
+msgstr "在基础奖励中"
+
+msgid "crewShowcase/status/inShop"
+msgstr "在特殊礼包中"
+
+msgid "crewShowcase/status/received"
+msgstr "已获得"
+
+msgid "crewShowcase/subTitle"
+msgstr "全部乘员均附带足以将3项特长训练至100%熟练度的乘员经验。"
+
+msgid "crewShowcase/title"
+msgstr "独特乘员"
+
+msgid "crewShowcase/viewInStore"
+msgstr "前往军械库查看"
+
+msgid "decrypt/affirmative"
+msgstr "收到！"
+
+msgid "decrypt/completed"
+msgstr "目标已完成。已获得奖励:"
+
+msgid "decrypt/voiceover"
+msgstr "配音"
+
+msgid "decrypt/voiceoverTooltip"
+msgstr "开启/关闭所有解密胶片界面的配音。"
+
+msgid "difficult/disabled/body"
+msgstr "您在小队中。仅小队指挥官可更改难度等级。"
+
+msgid "difficult/disabled/header"
+msgstr "无法更改难度等级"
+
+msgid "difficult/level_1"
+msgstr "普通"
+
+msgid "difficult/level_2"
+msgstr "困难"
+
+msgid "difficult/level_3"
+msgstr "梦魇"
+
+msgid "difficult/new"
+msgstr "新"
+
+msgid "difficult/tooltip/description/level1"
+msgstr "敌人的生命值较低，装甲较为薄弱。可获得标准战斗奖励。"
+
+msgid "difficult/tooltip/description/level2"
+msgstr "敌人拥有较为坚固的装甲，同时，每场战斗可获得较多的奖励和密钥。"
+
+msgid "difficult/tooltip/description/level3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多的奖励和密钥。"
+
+msgid "difficult/tooltip/header/level1"
+msgstr "普通"
+
+msgid "difficult/tooltip/header/level2"
+msgstr "困难"
+
+msgid "difficult/tooltip/header/level3"
+msgstr "梦魇"
+
+msgid "difficult/tooltip/locked"
+msgstr "未解锁"
+
+msgid "difficult/tooltip/lockedDescr/level2"
+msgstr "击败普通难度等级中的首领，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/lockedDescr/level3"
+msgstr "击败困难难度等级中的首领，即可解锁该难度等级。"
+
+msgid "difficult/tooltip/state/default"
+msgstr "已开放"
+
+msgid "difficult/tooltip/state/selected"
+msgstr "已选择"
+
+msgid "difficult/tooltip/subHeader/level1"
+msgstr "5个目标"
+
+msgid "difficult/tooltip/subHeader/level2"
+msgstr "5个目标"
+
+msgid "difficult/tooltip/subHeader/level3"
+msgstr "6个目标"
+
+msgid "difficult/uppercase/level_1"
+msgstr "普通"
+
+msgid "difficult/uppercase/level_2"
+msgstr "困难"
+
+msgid "difficult/uppercase/level_3"
+msgstr "梦魇"
+
+msgid "difficultyWindow/description/level_2"
+msgstr "敌人拥有较为坚固的装甲，同时，每场战斗可获得较多的奖励和密钥。"
+
+msgid "difficultyWindow/description/level_3"
+msgstr "敌人数量更多，装甲也更坚固。每场战斗可获得更多的奖励和密钥。"
+
+msgid "difficultyWindow/header/level_2"
+msgstr "困难难度等级"
+
+msgid "difficultyWindow/header/level_3"
+msgstr "梦魇难度等级"
+
+msgid "difficultyWindow/title"
+msgstr "已开放"
+
+msgid "hangar/about"
+msgstr "关于活动"
+
+msgid "hangar/exit"
+msgstr "离开活动"
+
+msgid "hangar/tooltipAbout"
+msgstr "了解关于巴比伦:荣耀征途活动的更多信息。"
+
+msgid "hangarAmmunitionSetup/header"
+msgstr "战斗能力"
+
+msgid "headerButtons/battle/types/halloween"
+msgstr "巴比伦:荣耀征途"
+
+msgid "iconButton/comparison/default"
+msgstr "坦克对比"
+
+msgid "iconButton/comparison/isDisabled"
+msgstr "坦克对比不可用"
+
+msgid "iconButton/preview/default"
+msgstr "预览坦克"
+
+msgid "iconButton/preview/isDisabled"
+msgstr "坦克预览不可用"
+
+msgid "keyCard/name"
+msgstr "解密密钥"
+
+msgid "keys/get"
+msgstr "获取"
+
+msgid "kingRewardCongratsView/btn/garage"
+msgstr "在车库中查看"
+
+msgid "kingRewardCongratsView/btn/outro"
+msgstr "前往故事结局"
+
+msgid "kingRewardCongratsView/header"
+msgstr "已获得主要奖励"
+
+msgid "kingRewardCongratsView/reward/crew100/value"
+msgstr "100%"
+
+msgid "kingRewardCongratsView/rewardsTitle"
+msgstr "奖励:"
+
+msgid "kingRewardCongratsView/tankName"
+msgstr "{level}{icon}{userName}"
+
+msgid "kingRewardCongratsView/title"
+msgstr "已完成最终目标"
+
+msgid "meta/btn/decrypt"
+msgstr "解密"
+
+msgid "meta/btn/skip"
+msgstr "跳过"
+
+msgid "meta/btn/view"
+msgstr "查看"
+
+msgid "meta/receive/description"
+msgstr ""
+"该胶片解密进度:\n"
+"%(keys)/%(decrypt)%(icon)"
+
+msgid "meta/shortStory/hw_artefact_1"
+msgstr "军事摄影师亚历克斯·摩根踏入异象。"
+
+msgid "meta/shortStory/hw_artefact_10"
+msgstr "亚历克斯发现了一个放有巨型坦克的D系前哨。"
+
+msgid "meta/shortStory/hw_artefact_11"
+msgstr "亚历克斯决定协助军方。"
+
+msgid "meta/shortStory/hw_artefact_12"
+msgstr "在异象中停留过久，导致亚历克斯产生了幻觉。"
+
+msgid "meta/shortStory/hw_artefact_13"
+msgstr "亚历克斯检查了一辆巨型坦克。"
+
+msgid "meta/shortStory/hw_artefact_14"
+msgstr "军方收到了亚历克斯的讯息，得知攻击即将结束。"
+
+msgid "meta/shortStory/hw_artefact_15"
+msgstr "史密斯上尉陷入了沉思: 那些长时间滞留异象之中的坦克将面临何种命运。"
+
+msgid "meta/shortStory/hw_artefact_16"
+msgstr "亚历克斯拍下了最后一张照片。"
+
+msgid "meta/shortStory/hw_artefact_17"
+msgstr ""
+"最高机密\n"
+"巴比伦安全部\n"
+"致军事委员会兹报告"
+
+msgid "meta/shortStory/hw_artefact_2"
+msgstr "亚历克斯发现了悬浮在空中的货船，并破译了奇怪信号。"
+
+msgid "meta/shortStory/hw_artefact_3"
+msgstr "亚历克斯发现了\"经过缝合\"的余响坦克。"
+
+msgid "meta/shortStory/hw_artefact_4"
+msgstr "亚历克斯在銤元素晶体内发现了剂量计。"
+
+msgid "meta/shortStory/hw_artefact_5"
+msgstr "亚历克斯拍摄了军方与余响坦克的交战场面，但过于靠近战场。"
+
+msgid "meta/shortStory/hw_artefact_6"
+msgstr "虽然亚历克斯需要返回撤离区，但她仍决定继续调查。"
+
+msgid "meta/shortStory/hw_artefact_7"
+msgstr "军方违抗命令，帮助了亚历克斯。"
+
+msgid "meta/shortStory/hw_artefact_8"
+msgstr "亚历克斯进入了禁区。"
+
+msgid "meta/shortStory/hw_artefact_9"
+msgstr "亚历克斯试图理解銤元素的本质。"
+
+msgid "meta/story/hw_artefact_1"
+msgstr ""
+"{e9e2bfBold_open}军事摄影师亚历克斯·摩根进入了异象。{e9e2bfBold_close}{paragraph_open} {paragraph_close}首次进入异象。剂量计指针处于绿色范围。我已传送成功。{paragraph_open} {paragraph_close}首先映入眼帘的是，这里没有任何生命迹象。一切都像是我们世界的一个余响副本。{paragraph_open} {paragraph_close}周遭环境酷似巴比伦研究中心。只不过一切均已化为废墟——或许是无休止战斗的恶果，又或许这就是銤元素复制世界的方式。{paragraph_open} {paragraph_close}我要开始对异象进行调查了。{paragraph_open} {paragraph_close}异象...果然存在。{paragraph_open} {paragraph_close}我有一种奇怪的似曾相识的感觉，就好像我曾经来过这里。{paragraph_open} {paragraph_close}这里的一切，都和费里曼描述的一模一样。{paragraph_open} {paragraph_close}没时间浪费了——剂量计的指针已经开始偏转。防护服上的銤元素沉积得越来越多。必须马上行动。{paragraph_open} {paragraph_close}甩开军方、远离余响坦克、避开重力异常的禁区。小菜一碟。{paragraph_open} {paragraph_close}是时候查清楚军方在这里的行动，以及他们要掩盖的秘密了。{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"驾驶新坦克首次参战时，请务必确认已安装提供銤元素能力的特殊配件。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_10"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯发现了一个放有巨型坦克的D系前哨。{e9e2bfBold_close}{paragraph_open} {paragraph_close}我不知道进入异象多久了。剂量计的指针正在逼近红色范围。我有点头晕...很难集中注意力。{paragraph_open} {paragraph_close}我周围是一些排列规整的建筑。这些建筑完好无损，没有扭曲。它们看起来不像余响镜像。我看到一处铭文，写着\"前哨: 钢芽23\"。这是D系军事设施。{paragraph_open} {paragraph_close}里面有...一辆坦克，用锁链吊着。{paragraph_open} {paragraph_close}所以传闻是真的。D系过去真的在亚空间里建造过基地。{paragraph_open} {paragraph_close}这辆用锁链吊着的坦克...是D系建造的吗？它就是士兵们所谈论的那个...前所未见且装备巨型自动炮的敌人？{paragraph_open} {paragraph_close}新的攻击正是在这些坦克出现后开始的。是谁在控制它们？这里空无一人。只有这辆被吊着的坦克，以及沿着锁链滴入坦克的銤元素。{paragraph_open} {paragraph_close}但这种銤元素有所不同。我之前从没见过。其颜色更深、浓度更高。{paragraph_open} {paragraph_close}难道他们是在将这种黑暗銤元素注入坦克，从而控制它？这意味着，军方并非在与銤元素本身作战，而是在与控制着它的人作战。{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"与首领交战时，使用阶段内获取的特殊弹药，结合坦克的特殊能力，攻击敌人装甲弱点来造成更多损伤。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_11"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯决定协助军方。{e9e2bfBold_close}{paragraph_open} {paragraph_close}真奇怪...每一个转角，每一条走廊...我竟然对这里的布局一清二楚。这都是銤元素在作祟。我必须加快速度...指针已经进入红色范围了。{paragraph_open} {paragraph_close}一切都覆满着粉尘，仿佛已经沉寂了数年，直到此刻才刚刚苏醒。{paragraph_open} {paragraph_close}\"自动坦克...\"有人激活了这座前哨，正把这些巨型坦克派往战场。军方对此处一无所知。他们还以为自己在对抗神秘物质——銤元素本身。但实际上，銤元素只是被用来对付我们的工具。{paragraph_open} {paragraph_close}现在看来，军方或者至少那些坦克手并不像坏人。事实上，他们是在保护我们，对抗建造了这一切的幕后主使。{paragraph_open} {paragraph_close}我必须把这座前哨的情报告诉他们。他们需要知道，这里的大型坦克已经所剩无几。只要能坚持住，战斗很快就会结束。{paragraph_open} {paragraph_close}我得回去了。先休息一下。五分钟...就五分钟，然后我就动身返回。就...五分钟...{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"保持协同队形，但避免间距过近。记住: 捕猎者可能随时出现。这种情况下，多辆坦克将同时陷入崩坏区域，可能无法及时逃脱。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_12"
+msgstr ""
+"{e9e2bfBold_open}在异象中停留过久，导致亚历克斯产生了幻觉。{e9e2bfBold_close}{paragraph_open} {paragraph_close}黑塔——我从小就反复做着关于它的噩梦。但我从未注意到，那道光会以某种规律闪烁着。长-长-短。{paragraph_open}{ paragraph_close}\"格-雷-琴，回家。\"{paragraph_open} {paragraph_close}不。这不可能。怎么可能是费里曼提到的那座黑塔？该D系基地存放着数千辆已做好入侵准备的坦克。那座前哨...就是从黑塔激活的吗？{paragraph_open} {paragraph_close}荒谬。我小时候不可能梦见过这个，也不可能知道什么黑塔。这都是銤元素在作祟，它已经侵入了我的意识。我梦见的肯定是别的东西。{paragraph_open} {paragraph_close}我必须醒过来！离开这里！回家...是时候回家了。{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"若安装能量护盾，建议只在最后关头使用——生命值较低或即将遭遇刺猬时。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_13"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯检查了一辆巨型坦克。{e9e2bfBold_close}{paragraph_open} {paragraph_close}我竟然睡着了！可恶！{paragraph_open} {paragraph_close}那辆坦克！又一辆被黑暗銤元素注满的坦克从锁链上掉了下来。{paragraph_open} {paragraph_close}近看更加恐怖。黑色的液体正在从每一道接缝中渗出。还有那股气味...是金属的气味。像腥味，但又夹杂着别的什么...是人类科技与銤元素余响的一种诡异融合。{paragraph_open} {paragraph_close}再拍最后一张照片。我必须撤离了。{paragraph_open} {paragraph_close}指针已经逼近紫色范围了！我该怎么出去？也许坦克手们能帮上忙？我必须联系到他们，把信息传递出去。{paragraph_open} {paragraph_close}可是要怎么做？如何才能成功？他们绝不会进入这片禁区的。{paragraph_open} {paragraph_close}余响！...对，用余响！銤元素会帮我！{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"坦克收集装置可容纳120单位銤元素。收集足够数量后，记得激活坦克的特殊能力。切忌囤积銤元素——应将其转化为战场优势，加速完成目标。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_14"
+msgstr ""
+"{e9e2bfBold_open}军方收到了亚历克斯的信息，得知攻击即将结束。{e9e2bfBold_close}{paragraph_open} {paragraph_close}本来以为再没什么能让我震惊了。直到得知她还活着，而且给我们留下了信息。所有阶段都发现了信息。看来她研究过銤元素，并学会了利用其生成余响副本的能力，从禁区给我们发来了信息。她究竟是怎么抵达那里的，又是怎么活下来的？{paragraph_open} {paragraph_close}她的话可信吗？我们可是接到命令，不准进入禁区。我们必须上报，请求组织营救。最好别让安全部那群穿西装的混蛋发现。{paragraph_open} {paragraph_close}眼下我们只能继续战斗。这些源源不断的坦克终有耗尽之时——现在清楚了，我们对抗的并非銤元素本身，而是那些早已从缝隙深处逃出来的怪物...那些藏在黑塔里的敌人。不把它们一次性彻底消灭，我们就永无宁日。{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"对抗首领时，请按正确顺序集火: 优先解决刺猬、捕猎者、余响坦克，最后对付首领。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_15"
+msgstr ""
+"{e9e2bfBold_open}史密斯上尉陷入了沉思: 那些长时间滞留异象之中的坦克将面临何种命运。{e9e2bfBold_close}{paragraph_open} {paragraph_close}每个进入异象的人都会配发剂量计——一个带刻度盘和指针的小装置。绿色范围——一切正常。黄色范围——必须抓紧时间。红色范围——是时候撤离了。至于紫色范围...{paragraph_open} {paragraph_close}一旦指针进入紫色范围，你就永远回不来了。然后成为\"迷失者\"的一员，在各个阶段中游荡，攻击挡在你面前的任何活物。{paragraph_open} {paragraph_close}坦克装甲能抵御銤元素侵蚀，但无法完全阻隔。那东西甚至能慢慢渗透装甲，虽然缓慢，却持续不断。{paragraph_open} {paragraph_close}规矩每个人都懂。盯紧指针，不要在任何阶段超时逗留，然后毫发无伤地回来。{paragraph_open} {paragraph_close}你为什么要闯入那里，亚历克斯？为什么就不能安分守己？你传回的情报会帮助我们，可这代价又是什么？距离你上次留下信息已经过去多久了？{paragraph_open} {paragraph_close}你...还是你吗？还是说，你已经变成了他们的一员？{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"首领启动急速状态时，将发动高强度冲撞攻击。切勿依赖能量护盾——及时规避，否则将被摧毁。涡轮增压器可帮您化险为夷。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_16"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯拍下了最后一张照片。{e9e2bfBold_close}{paragraph_open} "
+"{paragraph_close}紫色范围了。我还是没能及时赶到。{paragraph_open} "
+"{paragraph_close}这身防护服已经没用了。銤元素侵入了我的身体。但奇怪的是，我反而不害怕了。{paragraph_open} "
+"{paragraph_close}我叫亚历克斯·摩根，而这将是我最后一张照片。{paragraph_open} "
+"{paragraph_close}銤元素已经开始影响我的心智。我又听到了那段摩斯电码。长-短-长。回家。{paragraph_open} "
+"{paragraph_close}传送点！是费里曼把我送来时用的那种传送装置！{paragraph_open} "
+"{paragraph_close}可它怎么会出现在这里？出现在禁区里？这绝不是巧合。有人知道我会来，算准了我会进入禁区，并开始寻找出路。{paragraph_open}"
+" {paragraph_close}就是费里曼。这一切都是他在幕后操纵。可他为什么要这么做？等我回去，自会查个水落石出。{paragraph_open}"
+" {paragraph_close}回家。我要返回了。"
+
+msgid "meta/story/hw_artefact_17"
+msgstr ""
+"最高机密\n"
+"巴比伦安全部\n"
+"致军事委员会兹报告{paragraph_open} {paragraph_close}\"伊什塔尔\"行动已成功完成。\"目标71\"已抵达指定地点，并激活了D系传送点。{paragraph_open} {paragraph_close}目标极有可能是冯·埃克哈特将军之女——格雷琴。她幸存了下来，传送装置已将其传送至一个我们尚未涉足的阶段。{paragraph_open} {paragraph_close}其剂量计内置的追踪器已被激活，正在传送其精确坐标。我们推测她已\"回家\"，目前正处在黑塔阶段。{paragraph_open} {paragraph_close}本人请求授权启动下一阶段行动，并筹备组建一支坦克登陆部队，对黑塔发起强攻。{paragraph_open} {paragraph_close}根据我方情报，缔造者在卫星加密信息中提及的科技，就储存于此处。{paragraph_open} {paragraph_close}另报告: 在\"目标71\"传送当天，史密斯上尉在第3阶段发现了一个冷冻物体。解冻后，确认是先前失踪坦克之一。其传送方式和冷冻原因目前未知，可能与另一种阶段转移方式有关。调查仍在进行中。{paragraph_open} {paragraph_close}呈报审阅，L.\n"
+"巴比伦安全主管"
+
+msgid "meta/story/hw_artefact_2"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯发现了悬浮在空中的货船，并破译了奇怪信号。{e9e2bfBold_close}{paragraph_open} {paragraph_close}时间: 进入异象后36分钟。剂量计指针处于绿色范围。{paragraph_open} {paragraph_close}主甲板上覆盖着一层銤元素粉尘，在信号灯的照射下闪闪发光——那盏灯居然还在工作。灯光正以某种节奏闪烁，似乎是摩尔斯电码。{paragraph_open} {paragraph_close}是什么信息？K-O-M...Komm zuruck nach Hause。是德语，但语法不通，意思是\"回家\"。{paragraph_open} {paragraph_close}\"回家\"？叫我回家吗？除了费里曼之外，根本没人知道我在这里。是军方发现我了？还是銤元素在对这里的所有人说话，让我们离开？{paragraph_open} {paragraph_close}亚历克斯，冷静！要是有人想吓退我，那我偏要继续深入。\"{paragraph_open} {paragraph_close}{AC8FFFBold_open}手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"利用战术地图协同作战。标记前进目标，以便盟友一同行动；或前往其他指挥官选定的位置。并肩作战，众志成城。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_3"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯发现了\"经过缝合\"的余响坦克。{e9e2bfBold_close}{paragraph_open} {paragraph_close}时间: 进入异...1小时12分钟。剂量计指针正...{paragraph_open} {paragraph_close}可恶！真可恶！那东西差点要了我的命！我究竟为什么要去那里？{paragraph_open} {paragraph_close}我本来只需要远远拍张照片就离开。我只是个观察者，不该卷入其中。那不过是一辆坦克，没有生命...但它却拼命想要逃脱，但又被那些巨大的石磨缓缓吞噬。{paragraph_open} {paragraph_close}它看上去就像某个残忍实验的牺牲品。车体中央布满用铁链缝合的疤痕。它被困住了，无法脱身。{paragraph_open} {paragraph_close}整个场面看起来就像是设计好的。一个即将被巨型石磨碾碎的无助牺牲品，旁边还放着几根金属缆绳。就好像有人在测试我会不会出手相助。我所要做的，只是把缆绳穿过它装甲上的挂环。{paragraph_open} {paragraph_close}\"远离余响坦克。\"可恶，我刚才差点就被碾碎了。{paragraph_open} {paragraph_close}这里到底是怎么回事？是军方在碾碎这些坦克吗？还是说另有其人？{paragraph_open} {paragraph_close}{AC8FFFBold_open}手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"请勿试图击毁不朽者，不要浪费时间和弹药。我们会再想办法来终结它。与此同时，切忌静止不动，保持移动。避免让自己陷入困境。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_4"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯在銤元素晶体内发现了剂量计。{e9e2bfBold_close}{paragraph_open} {paragraph_close}时间: 进入异象后2小时18分钟。剂量计指针正偏向黄色范围。我感觉良好，头脑也很清醒。{paragraph_open} {paragraph_close}但是那种似曾相识的感觉又出现了...我觉得自己来过这里。不仅仅是似曾相识的感觉，而是某种更强烈的感应，就像一段我努力要回想起来的记忆。难道是銤元素在作祟？也许它不只会生成我们世界的余响副本，还会扭曲现实，感觉起来...如此真实？{paragraph_open} {paragraph_close}一切都很眼熟，除了那些銤元素水晶。它们是如何出现的？从地里长出来的？还是附着在物体上生成的？水晶里面好像有什么东西。{paragraph_open} {paragraph_close}剂量计？！{paragraph_open} {paragraph_close}这里到底有多少个？几十个？几百个？这些剂量计和我的这个一模一样。每一个的指针都停在了紫色范围。这意味着...我不是第一个。在我之前，费里曼到底派了多少人来这里？那些人如今又在哪里？他肯定有秘密瞒着我。{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"并肩作战。记住: 当您脱离团队，独自前往其他位置时，会引来余响坦克。一旦您的坦克被击毁，它们就会从后方攻击您的盟友。切勿危及任务。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_5"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯拍摄了军方与余响坦克的交战场面，但过于靠近战场。{e9e2bfBold_close}{paragraph_open} {paragraph_close}进入异象后3小时42分钟。剂量计指针处于黄色范围。我得结束工作，开始撤退。{paragraph_open} {paragraph_close}我抵达了马格努斯。它是异象中心的一座巨型建筑，和巴比伦的那座如出一辙。唯一不同的是，它没有被銤元素的余响所扭曲。{paragraph_open} {paragraph_close}军方的坦克正在靠近。我去拍一些战斗照片就回来。脑子快不够用了。{paragraph_open} {paragraph_close}难以置信。余响坦克...它们简直是凭空出现的！銤元素不断变浓，聚合成形，然后，一辆整装待发的坦克就赫然出现在眼前。{paragraph_open} {paragraph_close}被击毁的坦克直接\"液化分解\"。銤元素似乎会回收这些材料，再创造出新的坦克。所以，这是一个无限循环？{paragraph_open} {paragraph_close}如果敌人可以一次又一次地重生，我们如何才能击败它们？{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"单纯依赖坦克装甲是大忌。寻找掩体并隐藏薄弱部位。虽是老生常谈，但许多人在异象中总会忘记这点——或许是銤元素影响心智所致。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_6"
+msgstr ""
+"{e9e2bfBold_open}虽然亚历克斯需要返回撤离区，但她仍决定继续调查。{e9e2bfBold_close}{paragraph_open} {paragraph_close}他们朝我射击了。一辆军方坦克向我这边开了火。{paragraph_open} {paragraph_close}时间...可恶！手表坏了。我不知道自己昏过去了多久。{paragraph_open} {paragraph_close}到处都是坦克残骸...有的看起来已经有些年头了。{paragraph_open} {paragraph_close}这一切到底是为了什么？造成这么大的伤亡...{paragraph_open} {paragraph_close}费里曼说军队是在保护巴比伦和整个世界，但这看起来更像是入侵或抢占地盘。{paragraph_open} {paragraph_close}军方为什么要朝我开火？是警告吗？警告我离马格努斯远一点？{paragraph_open} {paragraph_close}剂量计的指针已经处于黄色范围了。我必须返回传送点。{paragraph_open} {paragraph_close}军方正在马格努斯周围集结，准备前往下一个阶段。我不会再来这里了...{paragraph_open} {paragraph_close}你们到底在隐藏什么？为什么非要一次次进入那可恶的异象？不想让我靠近马格努斯？去你们的吧！我发誓，我一定会查清楚你们在那里掩盖的秘密！{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"标记您将要攻击的目标，协同集火，并引导盟友集中打击单一敌人，形成局部火力优势。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_7"
+msgstr ""
+"{e9e2bfBold_open}军方违抗命令，帮助了亚历克斯。{e9e2bfBold_close}{paragraph_open} {paragraph_close}费里曼: 你违抗了命令，上尉。{paragraph_open} {paragraph_close}史密斯: 一辆余响坦克突然出现在他身后！我总不能袖手旁观吧！{paragraph_open} {paragraph_close}费里曼: 你的行为危及了整个行动。{paragraph_open} {paragraph_close}史密斯: 我必须保护我的人！{paragraph_open} {paragraph_close}费里曼: 你的人？{paragraph_open} {paragraph_close}史密斯: 肯定是自己人！能进入异象的，除了我们的人，还能有谁？总不能是背着相机的游客吧。{paragraph_open} {paragraph_close}费里曼: 这名女战士有自己的职责，上尉。{paragraph_open} {paragraph_close}史密斯: 什么？！是个女的？她究竟是谁？{paragraph_open} {paragraph_close}费里曼: 接下来发生了什么？{paragraph_open} {paragraph_close}史密斯: 她进入了马格努斯区域，但传送后就没跟我们在一起了。从那以后就没有人再见过她。{paragraph_open} {paragraph_close}费里曼: 明白了。今晚你会收到新的指示，上尉。{paragraph_open} {paragraph_close}...{paragraph_open} {paragraph_close}史密斯: 可恶的安全部，净会耍阴招。有本事跟我们到这里来试试！{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"密切关注盟友坦克的生命值。若您拥有团体维修，记得为受损盟友恢复生命值。即便损失一辆坦克也会危及整个任务。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_8"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯进入了禁区。{e9e2bfBold_close}{paragraph_open} {paragraph_close}通过马格努斯进入新阶段的感觉很不一样。时间...啊，可恶。剂量计指针已经在黄色范围中间了。我必须抓紧时间。{paragraph_open} {paragraph_close}我来到了...我完全不知道这是哪里。一切都截然不同，巴比伦根本没有这样的地方。这里难道是马格努斯的安全区外面？还是说...我已经进入了禁区？{paragraph_open} {paragraph_close}但我安然无恙。重力稳定，坦克也没有分解成原子。一切都是谎言。指挥部禁止分遣队进入此地，不是出于安全考虑，而是为了掩盖秘密。防止坦克手们看到不该看的。{paragraph_open} {paragraph_close}就像这个...{paragraph_open} {paragraph_close}这里到底发生了什么？是銤元素造成的吗？还是说...不对。看上去更像是另一种余响，一种镜像。仿佛有人在对坦克进行试验，拆解它们，将其拆得七零八落。而銤元素，只是把这一切复制了下来，并加以扭曲。{paragraph_open} {paragraph_close}銤元素，你究竟是什么？{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"注意: 进入新阶段时，异象将影响乘员，并赋予坦克随机战斗加成。请研究加成效果，并据此调整战术策略。\"{AC8FFF_close}"
+
+msgid "meta/story/hw_artefact_9"
+msgstr ""
+"{e9e2bfBold_open}亚历克斯试图理解銤元素的本质。{e9e2bfBold_close}{paragraph_open} {paragraph_close}\"一二三四，只有父亲去休息？\"——这首童谣在我脑中挥之不去，可我明明只听过一次。就是军方提到的那个无线电里的童声。他们称她为格雷琴——异象幽灵。我为什么会一遍又一遍地重复童谣？就好像我以前就听过似的。难道銤元素已经开始侵入我的身体了？{paragraph_open} {paragraph_close}没人真正了解銤元素是什么。听费里曼说，一些人认为它有自主意识，想要征服我们的世界。另一些人则认为，它只是想回到自己的次元，在归途中意外渗入了我们的世界。{paragraph_open} {paragraph_close}但在这里呆得越久，我就越觉得自己理解銤元素了。它什么都不\"想要\"。它只是像一面哈哈镜，映照万物，并将其扭曲。{paragraph_open} {paragraph_close}但人类却总是另有所图。D系部队、巴比伦的工程师、军方，还有费里曼——所有人都想利用銤元素，控制它，把它变成武器或工具。{paragraph_open} {paragraph_close}但都收效甚微。{paragraph_open} {paragraph_close}剂量计的指针现已越过黄色范围的中间。我必须查清楚这片禁区里到底隐藏着什么，然后安全返回。{paragraph_open} {paragraph_close}{AC8FFFBold_open}作战手册规范:{AC8FFFBold_close}\n"
+"{AC8FFF_open}\"涡轮增压器无需消耗銤元素即可激活，但设有冷却时间。建议仅在紧要关头使用: 规避刺猬的攻击、躲开冲锋者的冲撞、脱离不朽者的光环，或在全员准备传送时快速抵达马格努斯。\"{AC8FFF_close}"
+
+msgid "metaCmp/completed"
+msgstr "已获得奖励%(icon)"
+
+msgid "metaCmp/name"
+msgstr "探秘之旅"
+
+msgid "metaIntro/description/fight"
+msgstr "参与活动战斗，获取密钥，完成目标，获得主要活动奖励。"
+
+msgid "metaIntro/description/progress"
+msgstr "使用在活动战斗中获得的密钥解密所有胶片。"
+
+msgid "metaIntro/description/reward"
+msgstr ""
+"完成所有目标、解密所有胶片即可获得主要活动奖励——独特的%(level)s级金币重型坦克{whiteSpanish_Start}%(tankName)s{whiteSpanish_End}。"
+
+msgid "metaIntro/header/fight"
+msgstr "战斗突击"
+
+msgid "metaIntro/header/progress"
+msgstr "解密胶片"
+
+msgid "metaIntro/header/reward"
+msgstr "独特奖励"
+
+msgid "metaIntro/title"
+msgstr "关于目标"
+
+msgid "missionWidget/complete"
+msgstr ""
+"任务完成。\n"
+"明天再来。"
+
+msgid "missionWidget/tooltipBody"
+msgstr "完成每24小时开放一次的每日任务，即可获得奖励。今日任务:"
+
+msgid "missionWidget/tooltipHeader"
+msgstr "每日任务"
+
+msgid "preBattle/leave"
+msgstr "退出战斗"
+
+msgid "preBattle/searching"
+msgstr "搜索盟友..."
+
+msgid "preBattle/tip"
+msgstr "仍未找到侦察分队？请尝试更改难度等级。"
+
+msgid "preBattle/uppercase/leave"
+msgstr "退出战斗"
+
+msgid "promoWindow/btn"
+msgstr "收到!"
+
+msgid "promoWindow/header"
+msgstr "畅玩巴比伦:荣耀征途"
+
+msgid "promoWindow/subheader"
+msgstr ""
+"{dateRange}，体验特殊的全新PvE游戏模式。\n"
+"完成{regularArtefactsLength}个目标，即可获得专属坦克。"
+
+msgid "reward/rest"
+msgstr "还有%(count)s个"
+
+msgid "rewardPath/about"
+msgstr "关于目标"
+
+msgid "rewardPath/aboutTooltip"
+msgstr "查看活动详情"
+
+msgid "rewardPath/completed"
+msgstr "已获得主要奖励"
+
+msgid "rewardPath/crewMembers"
+msgstr "乘员"
+
+msgid "rewardPath/crewMembersTooltip"
+msgstr "点击即可查看所有活动乘员。"
+
+msgid "rewardPath/description"
+msgstr "再解密%(count)s个胶片即可获得主要奖励"
+
+msgid "rewardPath/intro"
+msgstr "简介"
+
+msgid "rewardPath/introTooltip"
+msgstr "观看简介视频"
+
+msgid "rewardPath/premium"
+msgstr "金币坦克"
+
+msgid "rewardPath/title"
+msgstr "探秘之旅"
+
+msgid "rewardPathCard/name"
+msgstr "探秘之旅"
+
+msgid "rewardSelection/button"
+msgstr "领取奖励"
+
+msgid "rewardSelection/crew"
+msgstr "乘员"
+
+msgid "rewardSelection/limit"
+msgstr "已达到上限"
+
+msgid "rewardSelection/limitTooltip"
+msgstr "您已达到数量上限。取消选择一名乘员，即可更改您的选择。"
+
+msgid "rewardSelection/title"
+msgstr "选择您的奖励"
+
+msgid "shopCard/name"
+msgstr "活动礼包"
+
+msgid "shopCmp/name"
+msgstr "活动礼包"
+
+msgid "squad/goToAnother/cancel"
+msgstr "取消"
+
+msgid "squad/goToAnother/message"
+msgstr "小队将被解散。"
+
+msgid "squad/goToAnother/submit"
+msgstr "离开"
+
+msgid "squad/goToAnother/title"
+msgstr "离开巴比伦:荣耀征途活动？"
+
+msgid "squad/leave/cancel"
+msgstr "取消"
+
+msgid "squad/leave/disabledEvent/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/disabledEvent/submit"
+msgstr "收到！"
+
+msgid "squad/leave/disabledEvent/title"
+msgstr "巴比伦:荣耀征途活动已结束"
+
+msgid "squad/leave/message"
+msgstr "小队将被解散。"
+
+msgid "squad/leave/submit"
+msgstr "离开"
+
+msgid "squad/leave/title"
+msgstr "离开巴比伦:荣耀征途小队？"
+
+msgid "squad/leaveDisabled/cancel"
+msgstr "继续"
+
+msgid "squad/leaveDisabled/message"
+msgstr "您所在小队已做好战斗准备。"
+
+msgid "squad/leaveDisabled/title"
+msgstr "您无法离开小队！"
+
+msgid "vehicle/rent/label"
+msgstr ""
+"完成{cream_open}目标%(number)s{cream_close}或购买相应{cream_open}活动礼包{cream_close}，即可解锁该坦克。"
+
+msgid "vehicle/rent/packs"
+msgstr "前往活动礼包"
+
+msgid "vehicle/rent/tasks"
+msgstr "前往目标"
+
+msgid "vehicle/tasks/locked"
+msgstr ""
+"完成当前任务({cream_open}目标%(number)s{cream_close})或购买相应{cream_open}活动礼包{cream_close}，即可解锁该坦克。"

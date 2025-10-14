@@ -31,6 +31,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       
       public var mixingType5:GunMarkerMixingWithoutProgress = null;
       
+      public var chargeableBurst:GunMarkerMixingChargeableBurst = null;
+      
       public var invalidateCrosshair:Function = null;
       
       private var _type:Number = -1;
@@ -44,6 +46,8 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
       private var _isSecondary:Boolean = false;
       
       private var _mixings:Object = null;
+      
+      private var _isBurst:Boolean = false;
       
       public function GunMarkerDispersionCircle()
       {
@@ -59,11 +63,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             "type7":this.mixingType5
          };
          this.mixingType0.visible = this.mixingType1.visible = this.mixingType2.visible = this.mixingType3.visible = this.mixingType4.visible = this.mixingType5.visible = false;
-      }
-      
-      protected function get mixings() : Object
-      {
-         return this._mixings;
+         if(this.chargeableBurst)
+         {
+            this.chargeableBurst.visible = false;
+         }
       }
       
       override protected function draw() : void
@@ -75,7 +78,14 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             {
                this.currMixingMC.visible = false;
             }
-            this.currMixingMC = this._mixings[GunMarkerConsts.GUN_MIXING_PREFIX + this._type];
+            if(this._isBurst && this.chargeableBurst)
+            {
+               this.currMixingMC = this.chargeableBurst;
+            }
+            else
+            {
+               this.currMixingMC = this._mixings[GunMarkerConsts.GUN_MIXING_PREFIX + this._type];
+            }
             if(this.currMixingMC)
             {
                if(this.invalidateCrosshair != null)
@@ -125,6 +135,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.mixingType4 = null;
          this.mixingType5.dispose();
          this.mixingType5 = null;
+         if(this.chargeableBurst)
+         {
+            this.chargeableBurst.dispose();
+            this.chargeableBurst = null;
+         }
          this._mixings = this.cleanupObject(this._mixings);
          super.onDispose();
       }
@@ -138,6 +153,15 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
             this.currMixingMC.alpha = this.mixingAlpha;
          }
          invalidate(GunMarkerConsts.GUN_ALPHA_VALIDATION);
+      }
+      
+      public function setChargeableBurstMode(param1:Boolean) : void
+      {
+         if(this._isBurst != param1)
+         {
+            this._isBurst = param1;
+            invalidate(GunMarkerConsts.GUN_MIXING_TYPE_VALIDATION);
+         }
       }
       
       public function setReloadingParams(param1:Number, param2:String) : void
@@ -167,11 +191,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
       }
       
-      protected function get mixingAlpha() : Number
-      {
-         return this._alpha;
-      }
-      
       private function updateAlpha() : void
       {
          var _loc2_:SimpleContainer = null;
@@ -179,6 +198,10 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          for each(_loc2_ in this._mixings)
          {
             _loc2_.alpha = _loc1_;
+         }
+         if(this.chargeableBurst)
+         {
+            this.chargeableBurst.alpha = _loc1_;
          }
       }
       
@@ -201,6 +224,16 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
          _loc2_.splice(0,_loc2_.length);
          return null;
+      }
+      
+      protected function get mixings() : Object
+      {
+         return this._mixings;
+      }
+      
+      protected function get mixingAlpha() : Number
+      {
+         return this._alpha;
       }
    }
 }

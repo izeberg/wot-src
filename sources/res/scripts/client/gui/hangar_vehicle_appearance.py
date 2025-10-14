@@ -355,13 +355,16 @@ class HangarVehicleAppearance(ScriptGameObject):
             additionalChassisParts = additionalChassisParts + (bspModel,)
 
         bspModels = bspModels + additionalChassisParts
+
+        def _getCapsule(partIndex, partDescr, defaultScale):
+            hitTester = partDescr.hitTesterManager.modelHitTester
+            scale = defaultScale if hitTester.extraCapsuleScale is None else hitTester.extraCapsuleScale + defaultScale
+            return (partIndex, hitTester.bspModelName, scale, True)
+
         bspModels = bspModels + (
-         (
-          self._cameraPartsIdx, vDesc.hull.hitTesterManager.modelHitTester.bspModelName, capsuleScale, True),
-         (
-          self._cameraPartsIdx + 1, vDesc.turret.hitTesterManager.modelHitTester.bspModelName, capsuleScale, True),
-         (
-          self._cameraPartsIdx + 2, vDesc.gun.hitTesterManager.modelHitTester.bspModelName, gunScale, True))
+         _getCapsule(self._cameraPartsIdx, vDesc.hull, capsuleScale),
+         _getCapsule(self._cameraPartsIdx + 1, vDesc.turret, capsuleScale),
+         _getCapsule(self._cameraPartsIdx + 2, vDesc.gun, gunScale))
         if vDesc.hull.hitTesterManager.crashedModelHitTester:
             crashedBspModels = crashedBspModels + (
              (

@@ -391,6 +391,9 @@ msgstr "行动5"
 msgid "prebattle/mission/stage/6"
 msgstr "行动6"
 
+msgid "prebattle/mission/stage/7"
+msgstr "行动7"
+
 msgid "prebattle/mission/task/1"
 msgstr "{whiteSpanish_Start}任务: {whiteSpanish_End}攻击城镇并击毁所有敌方坦克。"
 
@@ -423,6 +426,9 @@ msgstr "{whiteSpanish_Start}突破防线，摧毁岸防炮，占领滩头。{whi
 
 msgid "prebattle/mission/task/6"
 msgstr "{whiteSpanish_Start}将停火命令传达给盟军部队。{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/7"
+msgstr "{whiteSpanish_Start}抵达指挥中心，阻止导弹发射。{whiteSpanish_End}"
 
 msgid "prebattle/mission/text/1"
 msgstr ""
@@ -518,6 +524,14 @@ msgstr ""
 "\n"
 "出发。\""
 
+msgid "prebattle/mission/text/7"
+msgstr ""
+"莱妮·沙夫: \"当前事态非常严峻。西海岸的导弹基地已完全失联。侦察机一去不回，先遣坦克登陆部队也遭未知敌军消灭。\n"
+"\n"
+"情报显示敌人正在准备发射弹道导弹。我们不知道他们的目标，但在当前的政治局势下，一枚导弹就足以引爆全球冲突。\n"
+"\n"
+"似曾相识的情形，对吧？又一个成功率几乎于零的任务，但我们必须潜入敌后化不可能为可能。出击！\""
+
 msgid "prebattle/mission/title/1"
 msgstr "破甲"
 
@@ -550,6 +564,9 @@ msgstr "诺曼底行动"
 
 msgid "prebattle/mission/title/6"
 msgstr "邮差行动"
+
+msgid "prebattle/mission/title/7"
+msgstr "沸点行动"
 
 msgid "ruinberg/hint01"
 msgstr "寻找迂回路线，从侧翼攻击敌人"

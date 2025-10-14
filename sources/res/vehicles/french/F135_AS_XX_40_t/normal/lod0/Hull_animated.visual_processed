@@ -167,10 +167,6 @@
 						<Texture>vehicles/russian/Tank_detail/Detail_T2DA.dds</Texture>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_detailParams
 						<matrix>
 							<element>67065354</element>
@@ -202,6 +198,10 @@
 					<property>
 						g_dirtLevel
 						<Float>0.470000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.007124 -0.360952 -0.504250</groupOrigin>
@@ -291,12 +291,12 @@
 						<Float>0.365683</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.420000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.007234 -0.367482 0.285841</groupOrigin>

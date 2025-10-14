@@ -137,16 +137,16 @@ msgid "ribbon/usesLeft"
 msgstr "可应用次数: %(count)s"
 
 msgid "sub_modes/development/navigation/battleResults"
-msgstr "Dev Personal Score"
+msgstr "Dev 概览"
 
 msgid "sub_modes/development/navigation/teamEfficiency"
-msgstr "Dev Team Score"
+msgstr "Dev 团队战绩"
 
 msgid "sub_modes/development/team/singleTeam"
 msgstr "玩家"
 
 msgid "sub_modes/undefined/navigation/battleResults"
-msgstr "个人战绩"
+msgstr "概览"
 
 msgid "sub_modes/undefined/navigation/teamEfficiency"
 msgstr "团队战绩"
@@ -159,3 +159,6 @@ msgstr "{minutes}:{seconds}.{milliseconds}"
 
 msgid "sub_modes/undefined/team/singleTeam"
 msgstr "玩家"
+
+msgid "title"
+msgstr "战斗结果"

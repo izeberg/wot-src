@@ -184,6 +184,9 @@ msgstr "SDP 40 Z加强型"
 msgid "Chassis_Pl34_Cs53_56_Woitek"
 msgstr "CS-53/56"
 
+msgid "Chassis_Pl36_Wz_64GC_Bzyg"
+msgstr "Wz.64GC B"
+
 msgid "Chassis_Pl37_CS_67_Szakal"
 msgstr "CS-67 S"
 
@@ -207,6 +210,9 @@ msgstr "GG-85/175mm炮"
 
 msgid "GG_85_175_mm_60"
 msgstr "GG-85/175mm炮 (60)"
+
+msgid "GG_85_175_mm_GC"
+msgstr "GG-85/175mm GC炮"
 
 msgid "GTD"
 msgstr "GTD"
@@ -334,6 +340,9 @@ msgstr "PP-GG m85/175"
 msgid "PP_GG_m85_175_60"
 msgstr "PP-GG m85/175 (60)"
 
+msgid "PP_GG_m85_175_GC"
+msgstr "PP-GG m85/175 GC"
+
 msgid "PPrz_GG_m100_162"
 msgstr "PPrz-GG m100/162"
 
@@ -352,6 +361,9 @@ msgstr "PPrz-GG m85/175"
 msgid "PPrz_GG_m85_175_60"
 msgstr "PPrz-GG m85/175 (60)"
 
+msgid "PPrz_GG_m85_175_GC"
+msgstr "PPrz-GG m85/175 GC"
+
 msgid "PW_GG_m100_162"
 msgstr "PW-GG m100/162"
 
@@ -369,6 +381,9 @@ msgstr "PW-GG m85/175"
 
 msgid "PW_GG_m85_175_60"
 msgstr "PW-GG m85/175 (60)"
+
+msgid "PW_GG_m85_175_GC"
+msgstr "PW-GG m85/175 GC"
 
 msgid "Pl01_TKS_20mm"
 msgstr "TKS z n.k.m.20mm"
@@ -832,6 +847,25 @@ msgstr "CS-53/56 W"
 msgid "Pl34_Cs53_56_Woitek_short_special"
 msgstr "高额的平均单发损伤，可靠的炮塔装甲"
 
+msgid "Pl36_Wz_64GC_Bzyg"
+msgstr "Wz.64GC B"
+
+msgid "Pl36_Wz_64GC_Bzyg_descr"
+msgstr ""
+"上世纪60年代，B系军方受S系研发启发，计划为坦克配备初速更高的深膛线火炮。这个B系项目采用经典重型坦克设计: "
+"焊接式车体与炮塔、雷达测距仪及炮塔联动高射机枪，并预留122毫米火炮作为备选方案。后因深膛线火炮被论证没有前景，B系追随S系叫停了火炮和重型坦克计划的全部研发工作。该计划最终停留在蓝图阶段。"
+
+msgid "Pl36_Wz_64GC_Bzyg_long_special"
+msgstr ""
+"Wz.64GC "
+"B是一辆B系X级重型坦克，配备深膛线火炮，在近战中，兼具高额平均单发损伤与可观的平均每分钟损伤。其最大防护优势集中于车体与炮塔的正面装甲。"
+
+msgid "Pl36_Wz_64GC_Bzyg_short"
+msgstr "Wz.64GC B"
+
+msgid "Pl36_Wz_64GC_Bzyg_short_special"
+msgstr "深膛线火炮，良好的正面装甲"
+
 msgid "Pl37_CS_67_Szakal"
 msgstr "CS-67 S"
 
@@ -886,6 +920,9 @@ msgstr "R-113"
 
 msgid "R_113_CFE_A"
 msgstr "R-113"
+
+msgid "R_113_GC"
+msgstr "R-113 GC"
 
 msgid "R_113_P"
 msgstr "R-113P"
@@ -1055,6 +1092,9 @@ msgstr "SDP 40 Z"
 msgid "Turret_1_Pl34_Cs53_56_Woitek"
 msgstr "CS-53/56"
 
+msgid "Turret_1_Pl36_Wz_64GC_Bzyg"
+msgstr "Wz.64GC B"
+
 msgid "Turret_1_Pl37_CS_67_Szakal"
 msgstr "CS 67 S"
 
@@ -1129,6 +1169,9 @@ msgstr "W-2-57D"
 
 msgid "W_2_58D"
 msgstr "W-2-58D"
+
+msgid "W_2_64_GC"
+msgstr "W-2-64 GC"
 
 msgid "W_44"
 msgstr "W-44"

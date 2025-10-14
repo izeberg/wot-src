@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.905382 0.070316 -3.882978</min>
+		<max>1.735144 1.613609 3.734498</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_Yong_Bing/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/chinese/Ch63_Yong_Bing/crash/lod2/Hull</nodefullVisual>
+</root>

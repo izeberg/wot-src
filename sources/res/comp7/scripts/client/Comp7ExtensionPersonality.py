@@ -105,9 +105,12 @@ class ClientComp7BattleMode(Comp7BattleMode):
     def _client_platoonLayouts(self):
         from gui.impl.gen import R
         from gui.impl.lobby.platoon.platoon_config import EPlatoonLayout, MembersWindow, PlatoonLayout
+        from gui.impl.lobby.platoon.view.platoon_selection_view import SelectionWindow
         return [
          (
-          EPlatoonLayout.MEMBER, PlatoonLayout(R.views.comp7.lobby.MembersWindow(), MembersWindow))]
+          EPlatoonLayout.MEMBER, PlatoonLayout(R.views.comp7.lobby.MembersWindow(), MembersWindow)),
+         (
+          EPlatoonLayout.WELCOME, PlatoonLayout(R.views.comp7.lobby.PlatoonDropdown(), SelectionWindow))]
 
     @property
     def _client_platoonViewClass(self):
@@ -185,9 +188,9 @@ class ClientComp7BattleMode(Comp7BattleMode):
           USER.CREATE_COMP7_SQUAD, addComp7SquadInfo, createComp7Squad),)
 
     @property
-    def _client_hangarPresetsGetter(self):
-        from comp7.gui.hangar_presets.hangar_presets_getters import Comp7PresetsGetter
-        return Comp7PresetsGetter
+    def _client_hangarDynamicGuiProvider(self):
+        from comp7.gui.hangar_presets.comp7_dynamic_gui_provider import Comp7HangarDynamicGuiProvider
+        return Comp7HangarDynamicGuiProvider
 
     @property
     def _client_DynamicObjectCacheClass(self):

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from account_helpers.settings_core.options import BattleLoadingTipSetting
 from gui.Scaleform.daapi.view.battle.shared.battle_loading import BattleLoading
 

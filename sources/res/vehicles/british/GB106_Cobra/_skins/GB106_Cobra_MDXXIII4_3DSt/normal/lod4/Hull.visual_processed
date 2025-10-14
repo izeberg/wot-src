@@ -140,6 +140,10 @@
 						crashTileMap
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.004586 -0.031675 0.115603</groupOrigin>
 			</primitiveGroup>

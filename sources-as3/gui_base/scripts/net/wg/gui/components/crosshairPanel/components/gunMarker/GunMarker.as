@@ -73,6 +73,11 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.aimDamage.setStage(param1);
       }
       
+      public function setChargeableBurstMode(param1:Boolean) : void
+      {
+         this.radiusMC.setChargeableBurstMode(param1);
+      }
+      
       public function setColor(param1:String) : void
       {
          this.gunTag.setColor(param1);

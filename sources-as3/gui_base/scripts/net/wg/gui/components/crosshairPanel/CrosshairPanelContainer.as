@@ -580,6 +580,14 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setChargeableBurstMode(param1:Boolean) : void
+      {
+         if(this._gunMarkersContainer != null)
+         {
+            this._gunMarkersContainer.setChargeableBurstMode(param1);
+         }
+      }
+      
       public function as_setClipParams(param1:Number, param2:Number, param3:int) : void
       {
          this._clipReloadingType = param3;
@@ -778,17 +786,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setSize(param1:Number, param2:Number) : void
-      {
-         if(this._width == param1 && this._height == param2)
-         {
-            return;
-         }
-         this._width = param1;
-         this._height = param2;
-         this._currentCrosshair.setSize(param1,param2);
-      }
-      
       public function as_setScale(param1:Number) : void
       {
          var _loc2_:ICrosshair = null;
@@ -830,6 +827,17 @@ package net.wg.gui.components.crosshairPanel
          {
             this._currentCrosshair.setQuickReloadingTime(this._isQuickReloadingActive,this._quickReloadingTime);
          }
+      }
+      
+      public function as_setSize(param1:Number, param2:Number) : void
+      {
+         if(this._width == param1 && this._height == param2)
+         {
+            return;
+         }
+         this._width = param1;
+         this._height = param2;
+         this._currentCrosshair.setSize(param1,param2);
       }
       
       public function as_setSpeedMode(param1:Boolean) : void

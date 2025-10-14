@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch63_Yong_Bing/normal/lod1/Turret_01</nodefullVisual>
+	<visibilityBox>
+		<min>-1.443950 -0.000001 -1.770000</min>
+		<max>1.443950 4.250063 1.777910</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_Yong_Bing/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+</root>

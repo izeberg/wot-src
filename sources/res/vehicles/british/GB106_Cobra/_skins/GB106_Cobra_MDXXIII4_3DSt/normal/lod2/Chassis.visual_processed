@@ -1010,6 +1010,10 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>-0.941533 0.687146 -0.000996</groupOrigin>
 			</primitiveGroup>
@@ -1070,6 +1074,10 @@
 					<property>
 						alphaTestEnable
 						<Bool>true</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>0.941241 0.696768 -0.010050</groupOrigin>

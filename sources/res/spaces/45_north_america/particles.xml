@@ -62,6 +62,30 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_5.vfx</fn_effect_bin>
@@ -296,13 +320,17 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_009_MetalDepot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_013_TownShop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_smoke_light_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/28_desert_smoke_light_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/34_redshire_leaves_air_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/34_redshire_leaves_air_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_north_america_lightning.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_north_america_lightning_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_storm_base.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_storm_stone.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_storm_trashtotornado.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/45_storm_trashtotornado.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_AM_035_SmallShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_EU_038_PortWall_FenceEnd.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
@@ -582,6 +610,26 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/hd_bld_AM_033_ServiceStation_5.vfx</fn_effect_bin>
@@ -824,13 +872,17 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_009_MetalDepot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_hd_bld_AM_013_TownShop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/28_desert_shimmer_distant.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/28_desert_smoke_light_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/28_desert_smoke_light_thin.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/34_redshire_leaves_air_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/34_redshire_leaves_air_around.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_north_america_lightning.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_north_america_lightning_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_storm_base.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_storm_stone.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/45_storm_trashtotornado.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/45_storm_trashtotornado.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_AM_035_SmallShed.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_bld_EU_038_PortWall_FenceEnd.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>

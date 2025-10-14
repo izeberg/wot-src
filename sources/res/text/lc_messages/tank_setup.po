@@ -14,64 +14,6 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
-msgid "abilities/actions/toInfoPage"
-msgstr "更多详情"
-
-msgid "abilities/actions/toReserves"
-msgstr "管理储备"
-
-msgid "abilities/applyToType"
-msgstr "应用于全部%(icon)s%(vehicle)s"
-
-msgid "abilities/details/description/locked"
-msgstr ""
-"在{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}场景中，购买战斗储备\n"
-"可将该储备提高一个等级，并有机会将其加强至等级{whiteSpanish_Start}IV{whiteSpanish_End}。"
-
-msgid "abilities/details/description/unlocked"
-msgstr ""
-"在{whiteSpanish_Start}扭转乾坤{whiteSpanish_End}场景中，加入战斗前放入栏位的\n"
-"各个战斗储备的出现几率提高{whiteSpanish_Start}10%{whiteSpanish_End}。"
-
-msgid "abilities/details/level"
-msgstr "等级:"
-
-msgid "abilities/details/param/valueTemplate/default"
-msgstr "%(sign)s%(value)s"
-
-msgid "abilities/details/param/valueTemplate/meters"
-msgstr "%(sign)s%(value)s米"
-
-msgid "abilities/details/param/valueTemplate/percents"
-msgstr "%(sign)s%(value)s%"
-
-msgid "abilities/details/param/valueTemplate/percentsBySecond"
-msgstr "%(sign)s%(value)s%/秒"
-
-msgid "abilities/details/param/valueTemplate/seconds"
-msgstr "%(sign)s%(value)s秒"
-
-msgid "abilities/details/paramDiff"
-msgstr "(%(diff)s)"
-
-msgid "abilities/details/status/locked"
-msgstr "未购买战斗储备"
-
-msgid "abilities/details/status/unlocked"
-msgstr "已购买战斗储备"
-
-msgid "abilities/noSelected/subTitle"
-msgstr "在储备管理界面激活它们。"
-
-msgid "abilities/noSelected/title"
-msgstr "未激活储备"
-
-msgid "abilities/noSelected/toReserves"
-msgstr "管理储备"
-
-msgid "abilities/pointsAmount"
-msgstr "战斗储备积分: %(points)s"
-
 msgid "categories/body/firepower"
 msgstr "一组表示击毁敌方坦克效率的参数。该过滤器可用于显示/隐藏涉及这组参数的配件。"
 
@@ -92,9 +34,6 @@ msgstr "火力"
 
 msgid "categories/mobility"
 msgstr "机动"
-
-msgid "categories/reserves/config"
-msgstr "%(icon)s%(vehicle)s配置"
 
 msgid "categories/slotEffect/empty"
 msgstr "为这辆坦克指定第二个配件栏位类别的机会。"
@@ -286,9 +225,6 @@ msgstr "您可以拆卸配件并将其送至仓库。"
 msgid "dialogs/confirm/doesNotWork"
 msgstr "将不起作用"
 
-msgid "dialogs/confirm/item/battleAbility"
-msgstr "战斗储备"
-
 msgid "dialogs/confirm/item/battleBooster"
 msgstr "指令"
 
@@ -307,9 +243,6 @@ msgstr "配件"
 msgid "dialogs/confirm/item/postProgressionPairModification"
 msgstr "双重改装"
 
-msgid "dialogs/confirm/items/battleAbility"
-msgstr "战斗储备"
-
 msgid "dialogs/confirm/items/battleBooster"
 msgstr "指令"
 
@@ -324,9 +257,6 @@ msgstr "配件"
 
 msgid "dialogs/confirm/message/lastSeparation"
 msgstr " 和 "
-
-msgid "dialogs/confirm/title/changeSlots/battleAbility"
-msgstr "是否保存对储备栏的改动？"
 
 msgid "dialogs/confirm/title/changeSlots/battleBooster"
 msgstr "是否保存对指令栏的改动？"
@@ -721,21 +651,6 @@ msgstr "获取合金元件"
 msgid "filters/shown"
 msgstr "显示： "
 
-msgid "hints/ammunition/reserves/applyToTypeCheckbox"
-msgstr ""
-"新\n"
-"选项"
-
-msgid "hints/ammunition/reserves/control"
-msgstr ""
-"新的战斗\n"
-"储备管理"
-
-msgid "hints/ammunitionPanel/reserves/changed"
-msgstr ""
-"战斗储备\n"
-"改动"
-
 msgid "hints/dragAndDrop/section"
 msgstr ""
 "拖放\n"
@@ -763,7 +678,7 @@ msgstr ""
 
 msgid "introduction/message/modernized"
 msgstr ""
-"具有3个升级等级的特殊配件，可通过完成任务和在特定游戏活动中获得。您无法购买或出售该配件，但可以将其拆解为特殊部件——%(currencyName)s(%(currencyIcon)s)。通过拆解获得的合金元件可以用来升级任意试验型配件。"
+"具有3个升级等级的特殊配件，可通过完成任务和在特定游戏活动中获得。您无法摧毁或出售该配件，但可以将其拆解为特殊部件——%(currencyName)s(%(currencyIcon)s)。通过拆解获得的合金元件可以用来升级任意试验型配件。"
 
 msgid "introduction/message/trophy"
 msgstr ""
@@ -2101,27 +2016,6 @@ msgstr "将从坦克中拆解: %(vehicleNames)s"
 
 msgid "tooltip/deconstructConfirm/listSeparator"
 msgstr "、"
-
-msgid "tooltips/abilities/actions/checkbox/AT-SPG"
-msgstr "变动将应用于所有自行反坦克炮。"
-
-msgid "tooltips/abilities/actions/checkbox/SPG"
-msgstr "变动将应用于所有自行火炮。"
-
-msgid "tooltips/abilities/actions/checkbox/heavyTank"
-msgstr "变动将应用于所有重型坦克。"
-
-msgid "tooltips/abilities/actions/checkbox/lightTank"
-msgstr "变动将应用于所有轻型坦克。"
-
-msgid "tooltips/abilities/actions/checkbox/mediumTank"
-msgstr "变动将应用于所有中型坦克。"
-
-msgid "tooltips/abilities/points/body"
-msgstr "通过提高前线模式等级，您可获得战斗储备积分。累积足够数量的积分后，您将能够激活该模式的战斗储备。"
-
-msgid "tooltips/abilities/points/header"
-msgstr "战斗储备积分"
 
 msgid "tooltips/action/description/add_one"
 msgstr "点击以购买要在该栏位中安装的物品。"

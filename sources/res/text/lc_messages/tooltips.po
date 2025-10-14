@@ -2012,7 +2012,7 @@ msgid "battle_royale/hangar/perf/medium_risk/header"
 msgstr "可能会降低性能"
 
 msgid "battle_royale/hangar/tankSetupPanel/ability/cooldownTime"
-msgstr "{whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close}秒冷却时间"
+msgstr "冷却时间: {whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close}秒"
 
 msgid "battle_royale/hangar/vehicle/description/china"
 msgstr "这辆C系坦克的设计团队运用了最先进的坦克制造工艺。能够在钢铁猎手这样的极端条件下测试硬件性能，对设计它的工程师而言无疑是千载难逢的好机会。"
@@ -2023,7 +2023,7 @@ msgstr ""
 
 msgid "battle_royale/hangar/vehicle/description/germany"
 msgstr ""
-"无论是冶金工程还是高质量装配工艺，D系工程师都特别在行。这辆坦克是完美的战场独狼，它不依赖队友，性能全面，并且能够轻松适应任何战斗情况以求生存。"
+"无论是冶金工程还是高质量装配工艺，D系工程师都特别在行。这辆坦克是名副其实的战场独狼，它不依赖队友，性能全面，并且能够轻松适应任何战斗情况以求生存。"
 
 msgid "battle_royale/hangar/vehicle/description/poland"
 msgstr ""
@@ -2031,11 +2031,11 @@ msgstr ""
 
 msgid "battle_royale/hangar/vehicle/description/sweden"
 msgstr ""
-"V系工程师从来不会忽视坦克制造的潮流，钢铁猎手更是让其中的佼佼者有了充分发挥的舞台。这辆坦克同时汇聚了最激进和最巧妙的理念，它既能造成大量损伤，也能承受反复攻击，从这个结果来看，它的设计无疑是成功的。"
+"V系工程师向来重视坦克制造技术的最新发展趋势，钢铁猎手更是让其中的佼佼者有了充分发挥的舞台。这辆坦克同时汇聚了最激进和最巧妙的理念，它既能造成大量损伤，也能承受反复攻击，从这个结果来看，它的设计无疑是成功的。"
 
 msgid "battle_royale/hangar/vehicle/description/uk"
 msgstr ""
-"Y系工程师继续展示他们如何制造完美的坦克。这辆坦克不仅能吸引经验丰富的指挥官，还能在战场上为敌人带来恐惧。这辆具有传奇色彩的Y系钢铁猛兽已准备好再次在战场上展示其霸主地位。"
+"Y系工程师展示了他们高超的坦克制造技艺。这辆坦克不仅能吸引经验丰富的指挥官，还能在战场上让敌人心惊胆颤。这辆具有传奇色彩的Y系钢铁猛兽已准备好再次在战场上展示其霸主地位。"
 
 msgid "battle_royale/hangar/vehicle/description/usa"
 msgstr ""
@@ -7079,6 +7079,16 @@ msgstr "特殊乘员"
 msgid "notrecruitedtankman/expireTitle"
 msgstr "招募"
 
+msgid "notrecruitedtankman/fisherman/desc"
+msgstr ""
+"我从小在沼泽地摸爬滚打——那儿空气潮湿得能拧出水，鳄鱼蹲在暗处虎视眈眈。还没识字前，老爸就教我甩竿捕鱼，成天窝在他那破渔船里，从鳄鱼横行的水洼子里捞鲈鱼、鲶鱼。说实话，那地方可不会给你感到恐惧的机会。现在他们让我开钢铁猛兽，其实没啥不同。还是要手稳眼尖，胆识过人。别把我当英雄，就是个沼泽佬，一如既往地尽自己的本分。"
+
+msgid "notrecruitedtankman/fisherman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/fisherman/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "零历练特长"
 
@@ -7090,6 +7100,46 @@ msgid "notrecruitedtankman/frontman/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/frontman/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_alisa/desc"
+msgstr ""
+"个头不高、脾气急躁，这位紧张易怒的副指挥官最喜欢的战术就是打探对手团队的情报。只要能获胜，她毫不介意曲解战车道规则，一旦其诡计暴露，往往会被Kei训斥。"
+
+msgid "notrecruitedtankman/girls_und_panzer_alisa/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_alisa/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_kei/desc"
+msgstr ""
+"Kei性格外向，一直秉持着公平竞争的原则，是桑德斯大学附属高中战车道团队中既活泼又技艺高超的指挥官。她是全队的精神支柱，也时刻提醒队友：玩得开心，才能让胜利更加令人愉悦。"
+
+msgid "notrecruitedtankman/girls_und_panzer_kei/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_kei/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_naomi/desc"
+msgstr "这名喜欢嚼口香糖的神枪手非常酷...但战车道才是最酷的！Naomi也许比一些队友更冷静、更内向，但任何对手都不敢小瞧她的炮术。"
+
+msgid "notrecruitedtankman/girls_und_panzer_naomi/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_naomi/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saunders/desc"
+msgstr ""
+"桑德斯战车道团队的一员，往常与Alisa一起驾驶M4A1 "
+"\"谢尔曼\"。对于Alisa发火时经常拿自己当出气筒，并且还要被迫听Alisa失恋时的各种抱怨，她觉得不胜其烦。"
+
+msgid "notrecruitedtankman/girls_und_panzer_saunders/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saunders/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/howToGet"
@@ -7206,6 +7256,62 @@ msgstr ""
 
 msgid "notrecruitedtankman/hw24_commander5/label"
 msgstr "巴比伦计划"
+
+msgid "notrecruitedtankman/hw25_DaKun_CN/desc"
+msgstr ""
+"作为首席战术研究员，大坤在巴比伦事件中凭借战场动态预判能力带领小队突围。其随身携带的改造版“实验记录仪”可实时解析敌方弱点，并通过加密频道向车组播报战术指令。因长期接触异常能量体，其听觉神经变异获得声波成像能力，能穿透战场迷雾标记高危目标，但代价是间歇性幻听——表现为突然插入冷笑话的广播杂讯。"
+
+msgid "notrecruitedtankman/hw25_DaKun_CN/label"
+msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/hw25_LuJun_CN/desc"
+msgstr ""
+"作为同盟组织的精英坦克手，陆军在巴比伦銤元素污染灾难中幸存，成为少数未被完全腐化的“人类火炬”。他凭借顶尖的战场直觉和个人号召力，带领小队突破次元裂隙，对抗被銤元素同化的怪物坦克。"
+
+msgid "notrecruitedtankman/hw25_LuJun_CN/label"
+msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Mailand/desc"
+msgstr ""
+"探员Mailand以严谨作战风格克服重重挑战，从与銤元素钢铁怪兽的激战中凯旋归来。他携久经考验的战术心得与操作技巧，倾囊相授顶尖坦克手之道。与Mailand并肩作战，精进战术，击溃所有对手！"
+
+msgid "notrecruitedtankman/hw25_Mailand/label"
+msgstr "巴比伦:荣耀征途"
+
+msgid "notrecruitedtankman/hw25_MouzAkrobat/desc"
+msgstr ""
+"探员mouzAkrobat在征战巴比伦异象途中屡破险局。现在，这名指挥官携宝贵独特的战术技巧、实战淬炼的作战经验荣耀归来，引领您掌控战场绝对主导权。与mouzAkrobat一道，将坦克操作技巧提升至全新境界！"
+
+msgid "notrecruitedtankman/hw25_MouzAkrobat/label"
+msgstr "巴比伦:荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Panchezhang_CN/desc"
+msgstr ""
+"他在混乱中始终保持古井不波的战术心态，当队友因未知恐惧陷入慌乱时，他总能以“换个角度看战局，废墟里也能找掩体”的从容话术稳定军心，其丰富的实战经验与大口径坦克信仰，使他在战斗中屡次以极限操作逆转战局。"
+
+msgid "notrecruitedtankman/hw25_Panchezhang_CN/label"
+msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Quickybaby/desc"
+msgstr ""
+"探员QuickyBaby平安归来！在銤元素神秘力量的对抗中，他以无畏之姿幸存，愈战愈强，化身真正的战场英雄。如今，他将携亲身经验与实战智慧，带头冲锋，揭示成为顶尖坦克指挥官的制胜之道。立即追随QuickyBaby的征战步伐，精进作战技巧，制霸全场！"
+
+msgid "notrecruitedtankman/hw25_Quickybaby/label"
+msgstr "巴比伦:荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Skill4ltu/desc"
+msgstr ""
+"探员Skill4ltu屡次深入銤元素亚空间执行任务，直面终极挑战未显丝毫动摇。如今，他携弥足珍贵的战场洞察与千锤百炼的战术智慧荣耀归来，倾授作战精髓，助您成为无敌指挥官。与Skill4ltu协同作战，胜利征途由您主宰！"
+
+msgid "notrecruitedtankman/hw25_Skill4ltu/label"
+msgstr "巴比伦:荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Titi_CN/desc"
+msgstr ""
+"作为前线战术指挥官，她凭借硬核实力和天生的战场直觉，驾驶坦克为队友撤离断后，并在銤元素污染中幸存。当巴比伦次元裂隙扩大，她将带领小队深入污染区，成为首批深入污染区的女车长。"
+
+msgid "notrecruitedtankman/hw25_Titi_CN/label"
+msgstr "巴比伦: 荣耀征途"
 
 msgid "notrecruitedtankman/ny19men/desc"
 msgstr "\"我会向你们每一个人发出最诚挚的祝贺，保证没有任何玩家会感到难过！\""
@@ -11461,34 +11567,34 @@ msgid "tankCaruselTooltip/vehicleType/normal/mediumTank"
 msgstr "中型坦克"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/AT_SPG"
-msgstr "{{@ split}}{{tier}}级精英自行反坦克炮"
+msgstr "{{@ split}}{{tier}}级精英自行反坦克炮{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/SPG"
-msgstr "{{@ split}}{{tier}}级精英自行火炮"
+msgstr "{{@ split}}{{tier}}级精英自行火炮{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/heavyTank"
-msgstr "{{@ split}}{{tier}}级精英重型坦克"
+msgstr "{{@ split}}{{tier}}级精英重型坦克{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/lightTank"
-msgstr "{{@ split}}{{tier}}级精英轻型坦克"
+msgstr "{{@ split}}{{tier}}级精英轻型坦克{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/mediumTank"
-msgstr "{{@ split}}{{tier}}级精英中型坦克"
+msgstr "{{@ split}}{{tier}}级精英中型坦克{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/AT_SPG"
-msgstr "{{@ split}}{{tier}}级自行反坦克炮"
+msgstr "{{@ split}}{{tier}}级自行反坦克炮{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/SPG"
-msgstr "{{@ split}}{{tier}}级自行火炮"
+msgstr "{{@ split}}{{tier}}级自行火炮{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/heavyTank"
-msgstr "{{@ split}}{{tier}}级重型坦克"
+msgstr "{{@ split}}{{tier}}级重型坦克{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/lightTank"
-msgstr "{{@ split}}{{tier}}级轻型坦克"
+msgstr "{{@ split}}{{tier}}级轻型坦克{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/mediumTank"
-msgstr "{{@ split}}{{tier}}级中型坦克"
+msgstr "{{@ split}}{{tier}}级中型坦克{{/}}"
 
 msgid "tank_params/avgParamComment/damage"
 msgstr "最小-最大损伤%(units)s"

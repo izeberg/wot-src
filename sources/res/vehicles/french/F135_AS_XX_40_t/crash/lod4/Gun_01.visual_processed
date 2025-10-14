@@ -47,7 +47,7 @@
 						<Texture>vehicles/french/F135_AS_XX_40_t/AS_XX_40_t_proxy_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.010723 1.029980 1.482005</groupOrigin>
+				<groupOrigin>0.002170 0.082234 1.498507</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -56,5 +56,5 @@
 		<max>1.109643 2.816589 5.166802</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>5220</geometrySize>
+	<geometrySize>6972</geometrySize>
 </root>

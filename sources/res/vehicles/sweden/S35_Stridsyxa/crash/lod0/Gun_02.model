@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/sweden/S35_Stridsyxa/crash/lod1/Gun_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/sweden/S35_Stridsyxa/crash/lod0/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.358289 -0.237210 -1.405539</min>
+		<max>0.352739 0.234869 3.844455</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

@@ -14,29 +14,20 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=1; plural=0;"
 
-msgid "alertMessage/allPeripheriesHalt"
-msgstr "所有服务器已进入休战期。距战斗开放还有%(time)s"
+msgid "alertMessage/ceasefireAllServers"
+msgstr "开放的所有服务器都已进入休战期。"
 
-msgid "alertMessage/button"
-msgstr "选择其他服务器"
+msgid "alertMessage/ceasefireCurrentServer"
+msgstr "该服务器已进入休战期。"
 
-msgid "alertMessage/seasonAlmostFinished"
-msgstr "钢铁猎手模式将于%(time)s后结束"
+msgid "alertMessage/changeServerButton"
+msgstr "切换服务器"
 
-msgid "alertMessage/seasonFinished"
+msgid "alertMessage/modeIsFinished"
 msgstr "钢铁猎手模式已结束"
 
-msgid "alertMessage/seasonIsComing"
-msgstr "钢铁猎手模式将于%(time)s后开始"
-
-msgid "alertMessage/singleModeHalt"
-msgstr "该服务器已进入休战期。距战斗开放还有%(time)s"
-
-msgid "alertMessage/somePeripheriesHalt"
-msgstr "%(serverName)s已进入休战期"
-
-msgid "alertMessage/unsuitablePeriphery"
-msgstr "该服务器目前禁止战斗。"
+msgid "alertMessage/modeIsUnavailable"
+msgstr "该模式在此服务器上不开放"
 
 msgid "banner/info/disabled"
 msgstr "休战"
@@ -269,23 +260,35 @@ msgstr "选择一辆钢铁猎手特殊坦克。"
 msgid "battleRoyaleCarousel/lockedToolTip/header"
 msgstr "坦克不符"
 
-msgid "battleTypeSelector/tab/hint"
-msgstr "特殊任务"
-
-msgid "battleTypeSelector/tab/platoon"
-msgstr "与好友组队"
-
-msgid "battleTypeSelector/tab/randomPlatoon"
-msgstr "随机组队"
-
-msgid "battleTypeSelector/tab/solo"
-msgstr "单人战斗"
-
 msgid "button/modules"
 msgstr "升级路线"
 
 msgid "button/repair"
 msgstr "维修"
+
+msgid "ceasefire/header/ceasefireAllServers"
+msgstr "战斗暂不开放"
+
+msgid "ceasefire/header/ceasefireCurrentServer"
+msgstr "战斗暂不开放"
+
+msgid "ceasefire/header/modeIsUnavailable"
+msgstr "模式不开放"
+
+msgid "ceasefire/header/schedule"
+msgstr "战斗时间表"
+
+msgid "ceasefire/template/schedule"
+msgstr "{{start}}–{{end}}"
+
+msgid "ceasefire/text/ceasefireAllServers"
+msgstr "活动开放的所有服务器都已进入休战期。您可以在下方查看时间表。"
+
+msgid "ceasefire/text/ceasefireCurrentServer"
+msgstr "该服务器已进入休战期。您可切换至其他服务器来参加该模式。"
+
+msgid "ceasefire/text/modeIsUnavailable"
+msgstr "钢铁猎手在该服务器上不开放。请切换至其他服务器来参加该模式。"
 
 msgid "commanderInfo/commonRank"
 msgstr "车长"
@@ -421,34 +424,6 @@ msgstr "战斗中:"
 
 msgid "hangarVehicleInfo/tutorialText"
 msgstr "您的钢铁猎手坦克可通过造成损伤或收集物资获取经验。一旦累积的经验数量满足要求，您即可升至下一等级，并可选择其中一个模块进行升级。"
-
-msgid "intro/aboutButton"
-msgstr "模式介绍"
-
-msgid "intro/button"
-msgstr "收到！"
-
-msgid "intro/slide1/text"
-msgstr "3辆全新坦克: 1辆B系中型坦克、1辆C系轻型坦克和1辆V系重型坦克。"
-
-msgid "intro/slide1/title"
-msgstr "全新坦克"
-
-msgid "intro/slide3/text"
-msgstr ""
-"绿色烟雾中的物资可恢复生命值，并包含恢复的1次充能、炮弹，以及可用于升级坦克和增强其能力的经验。黄色烟雾中的物资包含修理箱或独特战斗能力的1次充能。"
-
-msgid "intro/slide3/title"
-msgstr "物资内容改动"
-
-msgid "intro/slide4/text"
-msgstr "一片被白雪覆盖的北方苔原，地形高低起伏，散布着小村庄和冰封的池塘。"
-
-msgid "intro/slide4/title"
-msgstr "全新地图"
-
-msgid "intro/title"
-msgstr "钢铁猎手"
 
 msgid "levelUp/severalTitles"
 msgstr "获得升级: %(firstLevel)s升至%(lastLevel)s级！"
@@ -612,29 +587,8 @@ msgstr ""
 msgid "proxyPanel/store"
 msgstr "商店"
 
-msgid "questsTooltip/lessThanDay"
-msgstr "少于1天"
-
-msgid "questsTooltip/mission_info/timeLeft"
-msgstr "阶段%(cycle)s将于%(time)s后结束"
-
-msgid "questsTooltip/startIn"
-msgstr "新任务将于%(time)s后解锁"
-
 msgid "questsTooltip/timeLeft"
 msgstr "距离赛季结束还有%(time)s"
-
-msgid "questsTooltip/timeLeftShort/days"
-msgstr "%(day)s天"
-
-msgid "questsTooltip/timeLeftShort/hours"
-msgstr "%(hour)s时"
-
-msgid "questsTooltip/timeLeftShort/lessMin"
-msgstr "少于1分钟"
-
-msgid "questsTooltip/timeLeftShort/min"
-msgstr "%(min)s分"
 
 msgid "radar/hint/noBinding"
 msgstr "尚未为无线电探测分配按键"
@@ -789,6 +743,15 @@ msgstr "我们的装甲正在受到腐蚀！"
 msgid "statusNotificationTimers/thunderStrike"
 msgstr "机动性下降！"
 
+msgid "tab/lable/platoon"
+msgstr "小队"
+
+msgid "tab/lable/solo"
+msgstr "单人"
+
+msgid "tab/lable/team"
+msgstr "与好友"
+
 msgid "techParams/type/damage"
 msgstr "火力"
 
@@ -861,40 +824,38 @@ msgstr "炮塔旋转速度"
 msgid "tooltip/battleTypeSelector/bonus"
 msgstr "+15%"
 
-msgid "tooltip/battleTypeSelector/tab/bonusDescription"
-msgstr ""
-"最多%(experience)s点经验\n"
-"最多%(credits)s银币"
+msgid "tooltip/battleTypeSelector/bonusDescription/credits"
+msgstr "最多{{credits}}银币"
 
-msgid "tooltip/battleTypeSelector/tab/bonusTitle/platoon"
+msgid "tooltip/battleTypeSelector/bonusDescription/experience"
+msgstr "最多{{experience}}经验"
+
+msgid "tooltip/battleTypeSelector/bonusTitle"
 msgstr "组队战斗加成"
 
-msgid "tooltip/battleTypeSelector/tab/bonusTitle/randomPlatoon"
-msgstr "组队战斗加成"
+msgid "tooltip/battleTypeSelector/description/platoon"
+msgstr "与随机盟友组队参加战斗。协同配合，对抗9组敌方小队。小队任务可在该模式中完成。小队会在战斗结束后自动解散。"
 
-msgid "tooltip/battleTypeSelector/tab/description/platoon"
-msgstr "与好友组队参战。作为一个团队对战9组敌方小队。小队任务可在该模式中完成。"
-
-msgid "tooltip/battleTypeSelector/tab/description/randomPlatoon"
-msgstr "与随机队友组队参战。作为一个团队对战9组敌方小队。小队任务可在该模式中完成。小队会在战斗结束后自动解散。"
-
-msgid "tooltip/battleTypeSelector/tab/description/solo"
+msgid "tooltip/battleTypeSelector/description/solo"
 msgstr "经典钢铁猎手。所有玩家各自为战。收集资源、升级坦克、使用独特能力，成为最后的赢家！"
 
-msgid "tooltip/battleTypeSelector/tab/title/platoon"
-msgstr "与好友组队"
+msgid "tooltip/battleTypeSelector/description/team"
+msgstr "与好友组队参战。协同配合，对抗9组敌方小队。小队任务可在该模式中完成。"
 
-msgid "tooltip/battleTypeSelector/tab/title/randomPlatoon"
+msgid "tooltip/battleTypeSelector/header/platoon"
 msgstr "随机组队"
 
-msgid "tooltip/battleTypeSelector/tab/title/solo"
-msgstr "单人战斗"
+msgid "tooltip/battleTypeSelector/header/solo"
+msgstr "单人模式"
+
+msgid "tooltip/battleTypeSelector/header/team"
+msgstr "与好友组队"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/29"
 msgstr "单人"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/30"
-msgstr "在小队中"
+msgstr "小队"
 
 msgid "tooltip/progression/leaderboardReward/header"
 msgstr "点数获取规则"
@@ -905,51 +866,6 @@ msgstr "排名%(place)s"
 msgid "tooltip/progression/leaderboardReward/text/places"
 msgstr "排名%(place)s"
 
-msgid "tooltip/widget/hangar/battleSchedule/schedule"
-msgstr "%(start)s–%(end)s"
-
-msgid "tooltip/widget/hangar/description/header"
-msgstr "主要进度已完成！"
-
-msgid "tooltip/widget/hangar/description/text/completed"
-msgstr "每日任务现已对您开放。"
-
-msgid "tooltip/widget/hangar/description/text/inProgress"
-msgstr "完成钢铁猎手任务可获得进度点数。战斗结果也会影响您所获得的点数。"
-
-msgid "tooltip/widget/hangar/header/battleLeaveTime/today"
-msgstr "今天"
-
-msgid "tooltip/widget/hangar/header/battleLeaveTime/tomorrow"
-msgstr "明天"
-
-msgid "tooltip/widget/hangar/header/subTitle/text"
-msgstr "距活动结束还有%(value)s"
-
-msgid "tooltip/widget/hangar/header/title"
-msgstr "钢铁猎手"
-
-msgid "tooltip/widget/hangar/performance/description/high"
-msgstr "您的计算机在此模式下性能不足。您可能会遇到图形和坦克移动方面的问题。亦有可能造成游戏客户端崩溃。"
-
-msgid "tooltip/widget/hangar/performance/description/low"
-msgstr "如果计算机性能不足，请在设置中尝试降低图形质量。"
-
-msgid "tooltip/widget/hangar/performance/description/medium"
-msgstr "该模式需要较高的计算机性能。您可能会遇到地图加载、图形和坦克移动方面的问题。如果性能不足，请在设置中尝试较低的图形质量。"
-
-msgid "tooltip/widget/hangar/performance/header/high"
-msgstr "低性能"
-
-msgid "tooltip/widget/hangar/performance/header/low"
-msgstr "该模式对计算机性能要求较高。"
-
-msgid "tooltip/widget/hangar/performance/header/medium"
-msgstr "低性能"
-
-msgid "tooltip/widget/hangar/timeTable/title"
-msgstr "战斗时间表"
-
 msgid "tooltips/awards/achievement"
 msgstr "勋章"
 
@@ -958,21 +874,6 @@ msgstr "奖章"
 
 msgid "tooltips/awards/pattern"
 msgstr "%(typeName)s：\"%(userName)s\""
-
-msgid "tooltips/brCoin/earn/description"
-msgstr "良好的战斗表现、在战斗结果中取得较高的名次和完成模式任务都可获得钢铁印章。"
-
-msgid "tooltips/brCoin/earn/title"
-msgstr "如何获得印章"
-
-msgid "tooltips/brCoin/spend/description"
-msgstr "使用所获得的钢铁印章购买钢铁猎手风格。"
-
-msgid "tooltips/brCoin/spend/title"
-msgstr "印章的用处"
-
-msgid "tooltips/brCoin/title"
-msgstr "钢铁印章"
 
 msgid "tooltips/respawn/common/description"
 msgstr "让您可以在坦克被击毁后重返战斗。在这种情况下，坦克的升级等级不会丢失。每场战斗均有使用次数限制。"

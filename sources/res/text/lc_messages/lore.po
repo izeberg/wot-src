@@ -295,6 +295,10 @@ msgstr ""
 msgid "tankman/lore/default_lore_descr"
 msgstr "@ some text for future "
 
+msgid "tankman/lore/fisherman"
+msgstr ""
+"我从小在沼泽地摸爬滚打——那儿空气潮湿得能拧出水，鳄鱼蹲在暗处虎视眈眈。还没识字前，老爸就教我甩竿捕鱼，成天窝在他那破渔船里，从鳄鱼横行的水洼子里捞鲈鱼、鲶鱼。说实话，那地方可不会给你感到恐惧的机会。现在他们让我开钢铁猛兽，其实没啥不同。还是要手稳眼尖，胆识过人。别把我当英雄，就是个沼泽佬，一如既往地尽自己的本分。"
+
 msgid "tankman/lore/frontman"
 msgstr ""
 "马歇尔·古恩——从主唱到坦克指挥官。我曾在舞台聚光灯下大放异彩，在真正踏上战场前，我早就在人生战场上燃烧激情、放飞自我。放纵的生活让我坠入深渊，巡演生涯几乎将我彻底吞噬。乐队解散，乐声消散，我放下六弦吉他，执掌六十吨重的钢铁猛兽。再没有欢呼的人群，再没有爆满的场馆——唯有战乱与硝烟，以及震耳欲聋的寂静，这寂静足以淹没我过往的梦魇。如果恶魔要来讨债，他非常清楚该去哪儿找我。"
@@ -311,6 +315,10 @@ msgstr "她对坦克的痴迷使她在小时候很难交到朋友。为了刺探
 msgid "tankman/lore/girls_und_panzer_alice"
 msgstr ""
 "Alice是一位名副其实的天才，年纪轻轻就已经成为一名技艺高超且经验丰富的指挥官。尽管性格腼腆，但她在战场上的表现不容小觑，战斗风格激进，经常采用出乎敌人意料的进攻战术。"
+
+msgid "tankman/lore/girls_und_panzer_alisa"
+msgstr ""
+"个头不高、脾气急躁，这位紧张易怒的副指挥官最喜欢的战术就是打探对手团队的情报。只要能获胜，她毫不介意曲解战车道规则，一旦其诡计暴露，往往会被Kei训斥。"
 
 msgid "tankman/lore/girls_und_panzer_anna"
 msgstr "一名多面手，她可以驾驶多个型号的坦克，并且是一名摔跤发烧友。"
@@ -339,11 +347,18 @@ msgstr "Maho前往德国后，Erika成为了黑森峰学园的新任队长，虽
 msgid "tankman/lore/girls_und_panzer_isuzu"
 msgstr "延续了家族传统——花道，一种插花艺术。后来，她决定尝试战车道。加入战车道队伍后，Hana一开始担任驾驶员，后来转职为炮手。"
 
+msgid "tankman/lore/girls_und_panzer_kei"
+msgstr ""
+"Kei性格外向，一直秉持着公平竞争的原则，是桑德斯大学附属高中战车道团队中既活泼又技艺高超的指挥官。她是全队的精神支柱，也时刻提醒队友：玩得开心，才能让胜利更加令人愉悦。"
+
 msgid "tankman/lore/girls_und_panzer_mika"
 msgstr "继续高中战车道队伍的神秘车长，她非常喜爱自己的标志性郁金香帽和康特勒琴。"
 
 msgid "tankman/lore/girls_und_panzer_mikko"
 msgstr "一名出色的驾驶员，Mikko的驾驶技术是继续高中非主流战略里不可或缺的一环。"
+
+msgid "tankman/lore/girls_und_panzer_naomi"
+msgstr "这名喜欢嚼口香糖的神枪手非常酷...但战车道才是最酷的！Naomi也许比一些队友更冷静、更内向，但任何对手都不敢小瞧她的炮术。"
 
 msgid "tankman/lore/girls_und_panzer_nishizumi"
 msgstr ""
@@ -367,6 +382,11 @@ msgstr ""
 
 msgid "tankman/lore/girls_und_panzer_rukuriri"
 msgstr "Rukuriri是葛罗莉安娜团队中的一名得力干将，喜欢在前线奋战。她性格直率，但其冲锋陷阵的战斗风格，却与其学院的精致传统大相径庭。"
+
+msgid "tankman/lore/girls_und_panzer_saunders"
+msgstr ""
+"桑德斯战车道团队的一员，往常与Alisa一起驾驶M4A1 "
+"\"谢尔曼\"。对于Alisa发火时经常拿自己当出气筒，并且还要被迫听Alisa失恋时的各种抱怨，她觉得不胜其烦。"
 
 msgid "tankman/lore/girls_und_panzer_takebe"
 msgstr ""
@@ -439,6 +459,38 @@ msgstr ""
 msgid "tankman/lore/hw24_commander5"
 msgstr ""
 "由于长期待在銤元素亚空间中，埃里亚斯平时敏锐的才智和敏捷的思维可能有些迟钝，但经过一段康复治疗后，他已经准备好重新回到亚空间深处继续探险。凭借丰富的经验和临危不乱的处事风格，他仍然是分队的无价之宝。"
+
+msgid "tankman/lore/hw25_DaKun_CN"
+msgstr ""
+"作为首席战术研究员，大坤在巴比伦事件中凭借战场动态预判能力带领小队突围。其随身携带的改造版“实验记录仪”可实时解析敌方弱点，并通过加密频道向车组播报战术指令。因长期接触异常能量体，其听觉神经变异获得声波成像能力，能穿透战场迷雾标记高危目标，但代价是间歇性幻听——表现为突然插入冷笑话的广播杂讯。"
+
+msgid "tankman/lore/hw25_LuJun_CN"
+msgstr ""
+"作为同盟组织的精英坦克手，陆军在巴比伦銤元素污染灾难中幸存，成为少数未被完全腐化的“人类火炬”。他凭借顶尖的战场直觉和个人号召力，带领小队突破次元裂隙，对抗被銤元素同化的怪物坦克。"
+
+msgid "tankman/lore/hw25_Mailand"
+msgstr ""
+"探员Mailand以严谨作战风格克服重重挑战，从与銤元素钢铁怪兽的激战中凯旋归来。他携久经考验的战术心得与操作技巧，倾囊相授顶尖坦克手之道。与Mailand并肩作战，精进战术，击溃所有对手！"
+
+msgid "tankman/lore/hw25_MouzAkrobat"
+msgstr ""
+"探员mouzAkrobat在征战巴比伦异象途中屡破险局。现在，这名指挥官携宝贵独特的战术技巧、实战淬炼的作战经验荣耀归来，引领您掌控战场绝对主导权。与mouzAkrobat一道，将坦克操作技巧提升至全新境界！"
+
+msgid "tankman/lore/hw25_Panchezhang_CN"
+msgstr ""
+"他在混乱中始终保持古井不波的战术心态，当队友因未知恐惧陷入慌乱时，他总能以“换个角度看战局，废墟里也能找掩体”的从容话术稳定军心，其丰富的实战经验与大口径坦克信仰，使他在战斗中屡次以极限操作逆转战局。"
+
+msgid "tankman/lore/hw25_Quickybaby"
+msgstr ""
+"探员QuickyBaby平安归来！在銤元素神秘力量的对抗中，他以无畏之姿幸存，愈战愈强，化身真正的战场英雄。如今，他将携亲身经验与实战智慧，带头冲锋，揭示成为顶尖坦克指挥官的制胜之道。立即追随QuickyBaby的征战步伐，精进作战技巧，制霸全场！"
+
+msgid "tankman/lore/hw25_Skill4ltu"
+msgstr ""
+"探员Skill4ltu屡次深入銤元素亚空间执行任务，直面终极挑战未显丝毫动摇。如今，他携弥足珍贵的战场洞察与千锤百炼的战术智慧荣耀归来，倾授作战精髓，助您成为无敌指挥官。与Skill4ltu协同作战，胜利征途由您主宰！"
+
+msgid "tankman/lore/hw25_Titi_CN"
+msgstr ""
+"作为前线战术指挥官，她凭借硬核实力和天生的战场直觉，驾驶坦克为队友撤离断后，并在銤元素污染中幸存。当巴比伦次元裂隙扩大，她将带领小队深入污染区，成为首批深入污染区的女车长。"
 
 msgid "tankman/lore/men2_text_usa"
 msgstr "狂怒(坦克名称)的乘员，这是同名电影中的英勇坦克，该电影基于M系的M4A2。"

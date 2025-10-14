@@ -3719,6 +3719,21 @@
 				<cost>1</cost>
 			</item>
 		</usages>
+		<paint>
+			<id>5602</id>
+			<texture>gui/maps/vehicles/repaints/czech_color_02.png</texture>
+			<color>50 69 39 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/girls_und_panzer_saunders</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>flavor of asia</name>
@@ -9919,6 +9934,39 @@
 		</paint>
 	</itemGroup>
 	<itemGroup>
+		<name>Yandex</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>232</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_25.png</texture>
+			<color>11 11 25 255</color>
+			<gloss>
+				0.6
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/yandex</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<usages>
+			<item>
+				<componentType>ALL</componentType>
+				<cost>1</cost>
+			</item>
+		</usages>
+	</itemGroup>
+	<itemGroup>
 		<name>Battle Pass 2025</name>
 		<userString>#vehicle_customization:repaint/color_group_04</userString>
 		<season>ALL</season>
@@ -10263,6 +10311,168 @@
 					<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
 				</exclude>
 			</vehicleFilter>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>Strongholds 2025</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<include>
+				<levels>8 9 10 11</levels>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>584</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<color>33 30 25 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/strongholds_2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>585</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>17 17 20 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/strongholds_2025_3</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>Clans 2D Styles 2025</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+			<include>
+				<levels>8 9 10 11</levels>
+			</include>
+		</vehicleFilter>
+		<paint>
+			<id>589</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<color>51 32 49 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/clans_2d_2025_2</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>590</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>17 46 38 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/clans_2d_2025_3</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>591</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>30 33 43 255</color>
+			<gloss>
+				0.63
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.235
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/clans_2d_2025_4</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>Black Friday 2025</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>593</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<color>0 0 0 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/black_friday_2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>594</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_15.png</texture>
+			<color>186 129 106 255</color>
+			<gloss>
+				0.66
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.75
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/black_friday_2025_2</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>595</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_20.png</texture>
+			<color>0 0 0 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/black_friday_2025_1</userString>
+			<tags>hiddenInUI</tags>
 		</paint>
 	</itemGroup>
 </root>

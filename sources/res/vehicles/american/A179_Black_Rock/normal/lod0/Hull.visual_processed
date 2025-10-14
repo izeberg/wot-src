@@ -195,10 +195,6 @@
 						</matrix>
 					</property>
 					<property>
-						g_dirtLevel
-						<Float>0.410000</Float>
-					</property>
-					<property>
 						g_glossMax
 						<Float>0.770000</Float>
 					</property>
@@ -207,8 +203,8 @@
 						<Float>0.210000</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000380 0.021695 -0.075558</groupOrigin>

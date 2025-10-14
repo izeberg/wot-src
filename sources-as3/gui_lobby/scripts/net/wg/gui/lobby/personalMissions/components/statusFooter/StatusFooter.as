@@ -43,7 +43,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
       
       private static const TUTORIAL_TEXT_STYLE_FILTER:DropShadowFilter = new DropShadowFilter(0,0,16711680,1,16,16,2,2);
       
-      private static const STATUS_TEXT_WIDTH:int = 500;
+      private static const STATUS_TEXT_WIDTH:int = 600;
        
       
       public var statusText:TextField = null;
@@ -117,7 +117,6 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
                   this.descrText.visible = true;
                }
             }
-            invalidateSize();
          }
          if(this._data != null && isInvalid(InvalidationType.SIZE))
          {
@@ -188,6 +187,7 @@ package net.wg.gui.lobby.personalMissions.components.statusFooter
             this.sheetsBlock.update(this._data.sheetsBlockData);
             this.tankgirlsBlock.update(this._data.tankgirlsBlockData);
             invalidateData();
+            invalidateSize();
             this.separator.visible = this._data.sheetsBlockData.visible || this._data.tankgirlsBlockData.visible;
          }
       }

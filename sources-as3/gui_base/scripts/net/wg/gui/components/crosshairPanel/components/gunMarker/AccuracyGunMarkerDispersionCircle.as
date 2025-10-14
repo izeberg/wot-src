@@ -27,12 +27,6 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          this.currMixingMC = this.accuracyGunMixing;
       }
       
-      public function setAccuracyStacks(param1:int) : void
-      {
-         this._accuracyStacks = param1;
-         invalidate(STACKS_VALIDATION);
-      }
-      
       override protected function draw() : void
       {
          super.draw();
@@ -55,6 +49,21 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          super.onDispose();
       }
       
+      public function setAccuracyStacks(param1:int) : void
+      {
+         this._accuracyStacks = param1;
+         invalidate(STACKS_VALIDATION);
+      }
+      
+      public function setAlpha(param1:Number, param2:Boolean) : void
+      {
+         this.accuracyGunMixing.alpha = param1;
+      }
+      
+      public function setChargeableBurstMode(param1:Boolean) : void
+      {
+      }
+      
       public function setReloadingParams(param1:Number, param2:String) : void
       {
          if(this._reloadingState != param2 || this._reloadingInPercent != param1)
@@ -65,23 +74,18 @@ package net.wg.gui.components.crosshairPanel.components.gunMarker
          }
       }
       
-      public function setZoomFactor(param1:Number) : void
-      {
-         this.accuracyGunMixing.setZoomFactor(param1);
-      }
-      
       public function setThickness(param1:String) : void
       {
          this.accuracyGunMixing.setThickness(param1);
       }
       
-      public function setAlpha(param1:Number, param2:Boolean) : void
-      {
-         this.accuracyGunMixing.alpha = param1;
-      }
-      
       public function setType(param1:Number) : void
       {
+      }
+      
+      public function setZoomFactor(param1:Number) : void
+      {
+         this.accuracyGunMixing.setZoomFactor(param1);
       }
    }
 }

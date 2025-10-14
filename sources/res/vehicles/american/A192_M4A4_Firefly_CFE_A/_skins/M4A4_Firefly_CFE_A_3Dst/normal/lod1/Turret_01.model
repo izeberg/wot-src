@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/_skins/M4A4_Firefly_CFE_A_3Dst/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.043449 -0.002032 -1.644910</min>
+		<max>1.048122 2.313215 0.981687</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/_skins/M4A4_Firefly_CFE_A_3Dst/normal/lod1/Turret_01</nodefullVisual>
+</root>

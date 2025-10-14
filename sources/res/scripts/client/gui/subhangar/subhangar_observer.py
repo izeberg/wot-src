@@ -182,7 +182,8 @@ class SubhangarObserver(BaseStateObserver):
             else:
                 self.__callbackDelayer.clearCallbacks()
                 _logger.debug('No camera specified for current set of rooms. Returning camera to tank.')
-                cameraManager.switchToTank()
+                if self.__hangarSpace.spaceInited:
+                    cameraManager.switchToTank()
 
     def __switchToCameraWhenLoaded(self, cameraName, cameraMover):
         hangarSpaceId = self.__hangarSpace.spaceID

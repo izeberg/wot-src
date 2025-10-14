@@ -98,7 +98,7 @@ msgid "hint/PPH_OTHER_01"
 msgstr "您被<font color='#EE7000'>点亮</font>了——射击可能会暴露您的行踪！"
 
 msgid "hint/PPH_OTHER_02"
-msgstr "您的坦克被击毁。可按下<font color='#EE7000'>Esc</font>键离开战斗。"
+msgstr "您的坦克被击毁。可按下<font color='#EE7000'>Esc</font>键离开战斗，没有处罚。"
 
 msgid "hint/PPH_OTHER_03"
 msgstr "您的坦克被击毁。可点击鼠标<font color='#EE7000'>观察</font>您的盟友。"
@@ -119,16 +119,16 @@ msgid "hint/PPH_SNIPER_02"
 msgstr "您可以滑动鼠标滚轮<font color='#EE7000'>退出</font>狙击模式"
 
 msgid "hint/PPH_WEAK_SPOTS_01"
-msgstr "<font color='#EE7000'>绿色准星</font>表示击穿敌方装甲的概率较高"
+msgstr "<font color='#EE7000'>绿色的中心准星</font>表示击穿敌方装甲的概率较高"
 
 msgid "hint/PPH_WEAK_SPOTS_02"
-msgstr "即使准星显示为绿色，也<font color='#EE7000'>不能保证</font>能够击穿敌方装甲"
+msgstr "即使中心准星显示为绿色，也<font color='#EE7000'>无法保证</font>能够击穿敌方装甲"
 
 msgid "hint/PPH_WEAK_SPOTS_03"
 msgstr "火炮的精度并非100%，因此每次射击<font color='#EE7000'>不一定会击中准星中心</font>"
 
 msgid "hint/PPH_WEAK_SPOTS_04"
-msgstr "准星可以显示击穿敌方装甲的概率。可在<font color='#EE7000'>设置界面</font>将此功能开启。"
+msgstr "中心准星表示击穿敌方装甲的几率。可在<font color='#EE7000'>设置</font>中开启该功能。"
 
 msgid "penetration/chance/high"
 msgstr "高几率"

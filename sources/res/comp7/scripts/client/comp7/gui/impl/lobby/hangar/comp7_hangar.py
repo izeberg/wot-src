@@ -71,8 +71,7 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
         super(Comp7Hangar, self).__init__(layoutId, model)
         self.__inputManager = None
         self.__routerObserver = None
-        self.__baseCriteria = getComp7Criteria()
-        self.__vehicleFilter = VehiclesFilterComponent(self.__baseCriteria)
+        self.__vehicleFilter = VehiclesFilterComponent(getComp7Criteria())
         self.__carouselFilter = Comp7CarouselFilter()
         self.__carouselFilter.setDisabledUpdateCriteries(True)
         self.__accountStyles = AccountStyles()
@@ -89,7 +88,7 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
            hangar.Loadout(): Comp7LoadoutPresenter, 
            hangar.Crew(): CrewPresenter, 
            hangar.VehicleParams(): HangarVehicleParamsPresenter, 
-           hangar.VehiclesInventory(): lambda : VehicleInventoryPresenter(self.__baseCriteria), 
+           hangar.VehiclesInventory(): lambda : VehicleInventoryPresenter(self.__vehicleFilter), 
            hangar.VehicleFilters(): lambda : Comp7CoreVehicleFiltersDataProvider(self.__carouselFilter), 
            hangar.MainMenu(): lambda : MainMenuPresenter(getMenuItems()), 
            hangar.VehicleMenu(): VehicleMenuPresenter, 
@@ -140,7 +139,6 @@ class Comp7Hangar(ViewComponent[RouterModel], IRoutableView):
         self.__vehicleFilter.destroy()
         self.__vehicleFilter = None
         self.__carouselFilter = None
-        self.__baseCriteria = None
         self.__inputManager = None
         self.__accountStyles.destroy()
         self.__accountStyles = None

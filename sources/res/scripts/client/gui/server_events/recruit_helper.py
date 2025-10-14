@@ -222,6 +222,8 @@ class _BaseRecruitInfo(object):
         lastName = self.getLastName()
         if not firstName:
             return lastName
+        if not lastName:
+            return firstName
         return ('{} {}').format(firstName, lastName)
 
     def getRankID(self):

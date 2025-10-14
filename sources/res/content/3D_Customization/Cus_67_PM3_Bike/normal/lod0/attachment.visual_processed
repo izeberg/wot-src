@@ -48,7 +48,7 @@
 					</property>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506000 1.753000 0.000000 0.000000</Vector4>
+						<Vector4>3.506000 3.506000 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_useDetailMetallic
@@ -57,6 +57,31 @@
 					<property>
 						metallicDetailMap
 						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>53677466</element>
+							<element>1020081200</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+						</matrix>
+					</property>
+					<property>
+						g_metallicDetailInfluence
+						<Float>0.600000</Float>
 					</property>
 				</material>
 				<groupOrigin>-0.166654 0.260366 -0.101806</groupOrigin>

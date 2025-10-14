@@ -53,11 +53,14 @@ def isViewShown(key, settingsCore=None):
 def _needToShowComp7Intro(comp7Ctrl=None, includePreannounced=False):
     if not comp7Ctrl.isAvailable():
         return False
-    season = comp7Ctrl.getCurrentSeason(includePreannounced=includePreannounced) or comp7Ctrl.getNextSeason()
-    if not season:
-        return False
-    settings = AccountSettings.getUIFlag(COMP7_UI_SECTION)
-    return settings.get(COMP7_LAST_SEASON) != seasonNameBySeasonNumber(season.getNumber())
+    else:
+        nextSeason = comp7Ctrl.getNextSeason()
+        launchedNextSeason = nextSeason if nextSeason and not nextSeason.hasTentativeDates() else None
+        season = comp7Ctrl.getCurrentSeason(includePreannounced=includePreannounced) or launchedNextSeason
+        if not season:
+            return False
+        settings = AccountSettings.getUIFlag(COMP7_UI_SECTION)
+        return settings.get(COMP7_LAST_SEASON) != seasonNameBySeasonNumber(season.getNumber())
 
 
 @dependency.replace_none_kwargs(comp7Controller=IComp7Controller, itemsCache=IItemsCache)

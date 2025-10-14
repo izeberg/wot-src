@@ -1,6 +1,7 @@
+from __future__ import absolute_import
 from collections import namedtuple
-from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import HeaderMenuVisibilityState, LobbyHeaderVisibilityAction
 from gui.shared import events, g_eventBus, EVENT_BUS_SCOPE
+from .lobby_header_utils import HeaderMenuVisibilityState, LobbyHeaderVisibilityAction
 LobbyHeaderState = namedtuple('LobbyHeaderState', ('view', 'state', 'action'))
 
 class LobbyHeaderVisibility(object):
