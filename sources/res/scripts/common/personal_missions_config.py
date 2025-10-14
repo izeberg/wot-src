@@ -12788,7 +12788,9 @@ _config = {'regular_1_1_1': {'win': {'type': PROGRESS_TEMPLATE.BINARY,
                                              'isMain': True, 
                                              'isAward': True, 
                                              'visibleScope': [
-                                                            VISIBLE_SCOPE.HANGAR, VISIBLE_SCOPE.BATTLE]}, 
+                                                            VISIBLE_SCOPE.HANGAR, VISIBLE_SCOPE.BATTLE], 
+                                             'params': {PROCESSOR_PARAMETERS.TARGET_CLASSES: [
+                                                                                            VEHICLE_CLASS.HEAVY_TANK]}}, 
                                   'description': DESCRIPTIONS.REGULAR(iconID=CONDITION_ICON.ASSIST_STUN, isInOrGroup=True, priority=1)}}, 
    'pm3_10_3_15': {'damageAndAssist': {'type': PROGRESS_TEMPLATE.VALUE, 
                                        'config': {'goal': 9000, 

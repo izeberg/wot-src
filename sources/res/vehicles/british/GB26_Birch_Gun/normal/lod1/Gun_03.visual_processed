@@ -76,10 +76,7 @@
 					<identifier>tank_guns_skinned</identifier>
 					<property>
 						g_detailUVTiling
-						<Vector4>
-							3.50685 1.75342 0.000000 0.000000
-							<!--BW_String-->
-						</Vector4>
+						<Vector4>3.506850 1.753420 0.000000 0.000000</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss
@@ -138,11 +135,7 @@
 						<Texture>vehicles/british/GB26_Birch_Gun/Birch_Gun_guns_ID.dds</Texture>
 					</property>
 					<property>
-						alphaTestEnable
-						<Bool>false</Bool>
-					</property>
-					<property>
-						g_useNormalPackDXT1
+						g_useDetail
 						<Bool>false</Bool>
 					</property>
 				</material>

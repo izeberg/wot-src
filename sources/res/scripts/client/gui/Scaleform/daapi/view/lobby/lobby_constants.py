@@ -1,10 +1,4 @@
-import typing
-from constants import ARENA_BONUS_TYPE
-from gui.Scaleform.daapi.settings.views import VIEW_ALIAS
-from helpers import dependency
-from skeletons.gui.game_control import IPlatoonController
-if typing.TYPE_CHECKING:
-    from typing import Dict
+
 
 class USER(object):
     INFO = 'userInfo'
@@ -26,16 +20,3 @@ class USER(object):
     VEHICLE_INFO = 'vehicleInfoEx'
     END_REFERRAL_COMPANY = 'endReferralCompany'
     CREATE_MAPBOX_SQUAD = 'createMapboxSquad'
-
-
-SETTINGS_WINDOWS_MAP = {}
-DEFAULT_SETTINGS_ALIAS = VIEW_ALIAS.SETTINGS_WINDOW
-
-def registerSettingsWindow(arenaBonusType, viewAlias):
-    SETTINGS_WINDOWS_MAP[arenaBonusType] = viewAlias
-
-
-def getSettingsWindowAlias():
-    platoonController = dependency.instance(IPlatoonController)
-    arenaBonusCaps = platoonController.getPrbEntityType()
-    return SETTINGS_WINDOWS_MAP.get(arenaBonusCaps, DEFAULT_SETTINGS_ALIAS)

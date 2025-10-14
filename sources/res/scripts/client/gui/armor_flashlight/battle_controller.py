@@ -1,4 +1,4 @@
-import typing, BigWorld, CGF, armor_flashlight
+import logging, typing, BigWorld, CGF, armor_flashlight
 from AvatarInputHandler import aih_global_binding, AvatarInputHandler
 from AvatarInputHandler.aih_global_binding import BINDING_ID
 from AvatarInputHandler.gun_marker_ctrl import computePiercingPowerAtDist
@@ -13,13 +13,15 @@ from gui.armor_flashlight.interfaces import IArmorFlashlightBattleController
 from gui.armor_flashlight.utils import getAllMatInfos
 from gui.battle_control import avatar_getter
 from gui.battle_control.arena_info.interfaces import IArenaLoadController
-from gui.battle_control.battle_constants import BATTLE_CTRL_ID
+from gui.battle_control.battle_constants import BATTLE_CTRL_ID, CROSSHAIR_VIEW_ID
 from helpers import dependency, isPlayerAvatar
 from skeletons.account_helpers.settings_core import ISettingsCore
 from skeletons.gui.battle_session import IBattleSessionProvider
 if typing.TYPE_CHECKING:
     from ProjectileMover import EntityCollisionData
     from items.vehicles import VehicleDescriptor
+    from aih_constants import GunMarkerState
+_logger = logging.getLogger(__name__)
 GUN_PIERCING = 'gunPiercing'
 SETTINGS_TRIGGER_CHANGES = (ArmorFlashlight.ENABLED, ArmorFlashlight.FILL, ArmorFlashlight.OPACITY,
  ArmorFlashlight.COLOR_SCHEMA, GRAPHICS.COLOR_BLIND, ArmorFlashlight.RESOLUTION,
@@ -56,6 +58,9 @@ class ArmorFlashlightBattleController(IArenaLoadController, IArmorFlashlightBatt
         if self._armorFlashlightSingleton is not None:
             self._stopFlashlight()
             self._armorFlashlightSingleton = None
+        self._unsubscribeFromBattleSessionEvents()
+        self.sessionProvider.onBattleSessionStart -= self._subscribeToBattleSessionEvents
+        self.sessionProvider.onBattleSessionStop -= self._unsubscribeFromBattleSessionEvents
         self.settingsCore.onSettingsChanged -= self._onSettingsChanged
         BigWorld.player().arena.onVehicleKilled -= self._onArenaVehicleKilled
         return
@@ -67,6 +72,9 @@ class ArmorFlashlightBattleController(IArenaLoadController, IArmorFlashlightBatt
             if not BigWorld.player().hasBonusCap(ARENA_BONUS_TYPE_CAPS.AFL_ENABLED):
                 return
             self._isVisible = self.settingsCore.getSetting(ArmorFlashlight.ENABLED)
+            self.sessionProvider.onBattleSessionStop += self._unsubscribeFromBattleSessionEvents
+            if not self._subscribeToBattleSessionEvents():
+                self.sessionProvider.onBattleSessionStart += self._subscribeToBattleSessionEvents
             self.settingsCore.onSettingsChanged += self._onSettingsChanged
             BigWorld.player().arena.onVehicleKilled += self._onArenaVehicleKilled
             self._armorFlashlightSingleton = CGF.findSingleton(avatar_getter.getSpaceID(), armor_flashlight.ArmorFlashlightSingleton)
@@ -79,32 +87,6 @@ class ArmorFlashlightBattleController(IArenaLoadController, IArmorFlashlightBatt
     def getControllerID(self):
         return BATTLE_CTRL_ID.ARMOR_FLASHLIGHT
 
-    def updateVisibilityState(self, markerType, hitPoint, direction, collision, gunAimingCircleSize):
-        if self._armorFlashlightSingleton is None:
-            return
-        else:
-            if markerType == GUN_MARKER_TYPE.CLIENT and not self.gunMarkersFlags & GUN_MARKER_FLAG.CLIENT_MODE_ENABLED:
-                return
-            if self._myTeam is None or not isPlayerAvatar():
-                self._stopFlashlight()
-                return
-            player = BigWorld.player()
-            if _inputIsBad(player.inputHandler) or _collisionIsBad(collision, self._myTeam):
-                self._stopFlashlight()
-                return
-            if not self._isVisible:
-                return
-            self._startFlashlight(collision.entity)
-            self._setShootingParams(hitPoint, direction, gunAimingCircleSize)
-            return
-
-    def hide(self):
-        if self._armorFlashlightSingleton is None:
-            return
-        else:
-            self._stopFlashlight()
-            return
-
     def toggle(self):
         if self._armorFlashlightSingleton is None:
             return False
@@ -115,6 +97,65 @@ class ArmorFlashlightBattleController(IArenaLoadController, IArmorFlashlightBatt
                 self._resolveTargetTank(True)
                 return True
             return False
+
+    def _subscribeToBattleSessionEvents(self, *_, **__):
+        crosshair = self.sessionProvider.shared.crosshair
+        if crosshair is not None:
+            _logger.debug('Subscribed to crosshair events.')
+            crosshair.onCrosshairViewChanged += self._onCrosshairViewChanged
+            return True
+        else:
+            return False
+
+    def _unsubscribeFromBattleSessionEvents(self, *_, **__):
+        crosshair = self.sessionProvider.shared.crosshair
+        if crosshair is not None:
+            _logger.debug('Unsubscribed from crosshair events.')
+            crosshair.onCrosshairViewChanged -= self._onCrosshairViewChanged
+            crosshair.onGunMarkerStateChanged -= self._updateVisibilityState
+        return
+
+    def _onCrosshairViewChanged(self, viewID):
+        self._hide()
+        crosshair = self.sessionProvider.shared.crosshair
+        if crosshair is None:
+            _logger.error('Crosshair controller is missing.')
+            return
+        else:
+            if viewID == CROSSHAIR_VIEW_ID.SNIPER:
+                _logger.debug('Subscribed to crosshair onGunMarkerStateChanged event.')
+                crosshair.onGunMarkerStateChanged += self._updateVisibilityState
+            else:
+                _logger.debug('Unsubscribed from crosshair onGunMarkerStateChanged event.')
+                crosshair.onGunMarkerStateChanged -= self._updateVisibilityState
+            return
+
+    def _updateVisibilityState(self, markerType, gunMarkerState, *_, **__):
+        if self._armorFlashlightSingleton is None:
+            return
+        else:
+            if markerType == GUN_MARKER_TYPE.CLIENT and not self.gunMarkersFlags & GUN_MARKER_FLAG.CLIENT_MODE_ENABLED:
+                return
+            if self._myTeam is None or not isPlayerAvatar():
+                self._stopFlashlight()
+                return
+            player = BigWorld.player()
+            collision = gunMarkerState.collData
+            if _inputIsBad(player.inputHandler) or _collisionIsBad(collision, self._myTeam):
+                self._stopFlashlight()
+                return
+            if not self._isVisible:
+                return
+            self._startFlashlight(collision.entity)
+            self._setShootingParams(gunMarkerState.position, gunMarkerState.direction, gunMarkerState.size)
+            return
+
+    def _hide(self):
+        if self._armorFlashlightSingleton is None:
+            return
+        else:
+            self._stopFlashlight()
+            return
 
     def _setShootingParams(self, hitPoint, direction, gunAimingCircleSize):
         player = BigWorld.player()

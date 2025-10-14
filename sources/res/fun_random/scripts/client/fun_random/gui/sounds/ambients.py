@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from gui.sounds.ambients import BattleResultsEnv
 
 class FunRandomBattleResultsEnv(BattleResultsEnv):

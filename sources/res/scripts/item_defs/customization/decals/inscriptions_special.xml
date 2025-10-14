@@ -5852,7 +5852,7 @@
 		<priceGroup>inscriptions 285g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -5867,5 +5867,25 @@
 			<userString>#vehicle_customization:inscription/special/special_820</userString>
 			<mirror>false</mirror>
 		</decal>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1217</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_260.dds</texture>
+			<userString>#vehicle_customization:inscription/special/inscription_260</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>SH 2025</name>
+		<type>INSCRIPTION</type>
 	</itemGroup>
 </root>

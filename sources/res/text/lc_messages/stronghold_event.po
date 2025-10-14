@@ -1,0 +1,35 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "tooltip/text"
+msgstr ""
+"A thrilling, clan-exclusive event where fast-paced battles test your "
+"strategy and teamwork. Earn Fame Points, progress through stages, and secure"
+" exclusive rewards. Rally your clan and rise to the top!"
+
+msgid "tooltip/timer/ceasefire"
+msgstr "Ceasefire {timer}"
+
+msgid "tooltip/timer/dateRange/divider"
+msgstr "{{startDate}} - {{endDate}}"
+
+msgid "tooltip/timer/inProgress"
+msgstr "Today's battles end in {timer}"
+
+msgid "tooltip/timer/inactive"
+msgstr "Battles completed"
+
+msgid "tooltip/timer/notStarted"
+msgstr "Will be available: {timer}"
+
+msgid "tooltip/title"
+msgstr "Maneuvers"

@@ -6,4 +6,6 @@
 		<max>1.457300 0.477537 0.105673</max>
 	</visibilityBox>
 	<nodefullVisual>vehicles/french/F135_AS_XX_40_t/normal/lod3/Hull_animated</nodefullVisual>
+	<parent>vehicles/french/F135_AS_XX_40_t/normal/lod4/Hull_animated</parent>
+	<extent>192.000000</extent>
 </root>

@@ -77,6 +77,8 @@ package net.wg.gui.components.controls
       
       private var _infoIcoType:String = "";
       
+      private var _infoIcoFixedY:Boolean = false;
+      
       private var _infoTooltipMaxWidth:uint = 0;
       
       private var _hitHeight:int;
@@ -323,7 +325,14 @@ package net.wg.gui.components.controls
          if(this._infoIco)
          {
             this._infoIco.x = this.x + textField.x + textField.textWidth + InfoIcon.CHECK_BOX_MARGIN ^ 0;
-            this._infoIco.y = this.y + (textField.y + textField.height >> 1);
+            if(!this._infoIcoFixedY)
+            {
+               this._infoIco.y = this.y + (textField.y + textField.height >> 1);
+            }
+            else
+            {
+               this._infoIco.y = this.y + textField.y + InfoIcon.CHECK_BOX_MARGIN;
+            }
          }
       }
       
@@ -493,6 +502,16 @@ package net.wg.gui.components.controls
          }
          this._infoIcoType = param1;
          invalidate(INFO_INV);
+      }
+      
+      public function set infoIcoFixedY(param1:Boolean) : void
+      {
+         if(param1 == this._infoIcoFixedY)
+         {
+            return;
+         }
+         this._infoIcoFixedY = param1;
+         invalidateData();
       }
       
       public function get toolTip() : String

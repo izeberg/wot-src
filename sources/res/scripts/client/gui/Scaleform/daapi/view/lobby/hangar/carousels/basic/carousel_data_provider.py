@@ -2,10 +2,10 @@ import typing, BigWorld
 from account_helpers.telecom_rentals import TelecomRentals
 from arena_bonus_type_caps import ARENA_BONUS_TYPE_CAPS as _CAPS
 from gui.ClientUpdateManager import g_clientUpdateManager
+from gui.filters.carousel_filter import FILTER_KEYS
 from gui.Scaleform import MENU
 from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_data_provider import CarouselDataProvider
 from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_data_provider import getStatusStrings
-from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_filter import FILTER_KEYS
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.Scaleform.locale.RES_ICONS import RES_ICONS
 from gui.Scaleform.locale.TOOLTIPS import TOOLTIPS
@@ -223,6 +223,6 @@ class HangarCarouselDataProvider(CarouselDataProvider):
         return
 
     def _updateDynamicFilters(self):
-        state, hangarGuiCtrl = self._dynamicFiltersState, self.__hangarGuiCtrl
-        state[FILTER_KEYS.CRYSTALS] = hangarGuiCtrl.checkCurrentCrystalRewards(default=True)
-        state[FILTER_KEYS.BONUS] = hangarGuiCtrl.checkCurrentBonusCaps(_CAPS.DAILY_MULTIPLIED_XP, default=True)
+        state, dynamicEconomics = self._dynamicFiltersState, self.__hangarGuiCtrl.dynamicEconomics
+        state[FILTER_KEYS.CRYSTALS] = dynamicEconomics.checkCurrentCrystalRewards(default=True)
+        state[FILTER_KEYS.BONUS] = dynamicEconomics.checkCurrentBonusCaps(_CAPS.DAILY_MULTIPLIED_XP, default=True)

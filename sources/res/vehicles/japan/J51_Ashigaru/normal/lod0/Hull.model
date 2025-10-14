@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J51_Ashigaru/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.474249 -0.634905 -3.442193</min>
+		<max>1.474249 0.836637 2.490325</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J51_Ashigaru/normal/lod1/Hull</parent>
+	<extent>32</extent>
+</root>

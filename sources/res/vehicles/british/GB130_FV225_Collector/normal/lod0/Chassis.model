@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-1.986167 0.004178 -3.759514</min>
+		<max>1.986167 1.327695 3.872031</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB130_FV225_Collector/normal/lod1/Chassis</parent>
+	<extent>32</extent>
+	<nodefullVisual>vehicles/british/GB130_FV225_Collector/normal/lod0/Chassis</nodefullVisual>
+</root>

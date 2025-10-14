@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/crash/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.067470 -0.029782 -1.643417</min>
+		<max>1.121418 2.288859 0.978399</max>
+	</visibilityBox>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/crash/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+</root>

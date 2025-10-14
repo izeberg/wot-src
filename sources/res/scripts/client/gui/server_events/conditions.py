@@ -28,12 +28,6 @@ _AVAILABLE_GUI_TYPES_LABELS = {constants.ARENA_BONUS_TYPE.REGULAR: constants.ARE
 _AVAILABLE_BONUS_TYPES_LABELS = {constants.ARENA_BONUS_TYPE.CYBERSPORT: 'team7x7'}
 _RELATIONS = formatters.RELATIONS
 _RELATIONS_SCHEME = formatters.RELATIONS_SCHEME
-_RELATIONS_HANDLERS = {_RELATIONS.LS: lambda source, toCompare: source < toCompare, 
-   _RELATIONS.LSQ: lambda source, toCompare: source <= toCompare, 
-   _RELATIONS.EQ: lambda source, toCompare: source == toCompare, 
-   _RELATIONS.NEQ: lambda source, toCompare: source != toCompare, 
-   _RELATIONS.GT: lambda source, toCompare: source > toCompare, 
-   _RELATIONS.GTQ: lambda source, toCompare: source >= toCompare}
 _ET = constants.EVENT_TYPE
 _TOKEN_REQUIREMENT_QUESTS = set(_ET.LIKE_BATTLE_QUESTS + _ET.LIKE_TOKEN_QUESTS)
 
@@ -74,12 +68,18 @@ _SORT_ORDER = ('igrType', 'premiumPlusAccount', 'premiumAccount', 'inClan', 'GR'
 _SORT_ORDER_INDICES = dict((name, idx) for idx, name in enumerate(_SORT_ORDER))
 
 def _handleRelation(relation, source, toCompare):
-    handler = _RELATIONS_HANDLERS.get(relation, None)
-    if handler:
-        return handler(source, toCompare)
-    else:
-        LOG_WARNING('Unknown kind of values relation', relation, source, toCompare)
-        return False
+    if relation == _RELATIONS.EQ:
+        return source == toCompare
+    if relation == _RELATIONS.GT:
+        return source > toCompare
+    if relation == _RELATIONS.GTQ:
+        return source >= toCompare
+    if relation == _RELATIONS.LS:
+        return source < toCompare
+    if relation == _RELATIONS.LSQ:
+        return source <= toCompare
+    LOG_WARNING('Unknown kind of values relation', relation, source, toCompare)
+    return False
 
 
 def _findRelation(condDataKeys):

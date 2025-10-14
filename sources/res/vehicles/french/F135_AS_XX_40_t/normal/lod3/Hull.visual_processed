@@ -157,7 +157,7 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.016964 0.144137 0.053241</groupOrigin>
+				<groupOrigin>0.016964 0.144135 0.053241</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -203,7 +203,7 @@
 						<Texture>vehicles/french/F135_AS_XX_40_t/AS_XX_40_t_equipment_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.085806 0.385468 0.407193</groupOrigin>
+				<groupOrigin>0.085806 0.410130 0.407193</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -211,5 +211,5 @@
 		<min>-1.605991 -0.525108 -3.401753</min>
 		<max>1.639918 0.813382 3.556220</max>
 	</boundingBox>
-	<geometrySize>80772</geometrySize>
+	<geometrySize>89544</geometrySize>
 </root>

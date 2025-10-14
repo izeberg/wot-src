@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from constants import PREMIUM_ENTITLEMENTS
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin
 from fun_random.gui.impl.lobby.common.lootboxes import FunRandomLootBoxTypes, sortTokenFunc
@@ -36,7 +38,7 @@ class FunRandomLootBoxFormatter(TokenBonusFormatter, FunAssetPacksMixin):
 
     def _format(self, bonus):
         result = []
-        for token in sorted(bonus.getTokens().itervalues(), key=sortTokenFunc):
+        for token in sorted(viewvalues(bonus.getTokens()), key=sortTokenFunc):
             formatted = self._getFormattedBonus(token.id, token, bonus)
             if formatted is not None:
                 result.append(formatted)

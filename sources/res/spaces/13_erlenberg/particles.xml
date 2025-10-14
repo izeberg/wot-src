@@ -15,6 +15,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/04_himmelsdorf_firesmoke_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/04_himmelsdorf_smoke_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/04_himmelsdorf_smoke_big_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_light_area.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_very_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/13_erlenberg_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/13_erlenberg_roof_water_drop.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/34_redshire_water_foam_river.vfx</fn_effect_bin>
@@ -34,12 +37,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env009_Firewoodstack_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env203_DrawWell_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env208_Log_Firewood_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env208_Log_Firewood_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env209_Benches_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env409_AdvertisingPillar.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env414_Pole_Fall_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env414_Pole_Touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env428_CallBox01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env601_BunchLogs3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env601_BunchLogs_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env615_Pier_Crash.vfx</fn_effect_bin>
@@ -91,9 +92,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/13_attack_airplane.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/13_plane_explosion.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/13_plane_flight.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/02_malinovka_ground_smoke_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/random_events/05_prohorovka_smoke_light_small_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
@@ -130,13 +130,22 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_FireSmoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_01.eff</fn_effect_bin>
@@ -153,12 +162,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env009_Firewoodstack3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env203_DrawWell_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env208_Log_Firewood_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env208_Log_Firewood_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env209_Benches_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env409_AdvertisingPillar.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Fall_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env428_CallBox01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env615_Pier_Crash.eff</fn_effect_bin>
@@ -210,9 +217,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_town_bench_des.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/13_attack_airplane.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/13_plane_explosion.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/13_plane_flight.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/02_malinovka_ground_smoke_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/05_prohorovka_smoke_light_small_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>
@@ -271,6 +277,9 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/04_himmelsdorf_firesmoke_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/04_himmelsdorf_smoke_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/04_himmelsdorf_smoke_big_2.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_light_area.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_very_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/13_erlenberg_fire.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/13_erlenberg_roof_water_drop.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/34_redshire_water_foam_river.vfx</fn_effect_bin>
@@ -290,12 +299,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env009_Firewoodstack_3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env203_DrawWell_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env208_Log_Firewood_1.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env208_Log_Firewood_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env209_Benches_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env409_AdvertisingPillar.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env414_Pole_Fall_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env414_Pole_Touchdown.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env428_CallBox01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env601_BunchLogs3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env601_BunchLogs_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env615_Pier_Crash.vfx</fn_effect_bin>
@@ -347,9 +354,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_fracture.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_streetlamp_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_town_bench_des.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/13_attack_airplane.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/13_plane_explosion.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/13_plane_flight.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/02_malinovka_ground_smoke_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/random_events/05_prohorovka_smoke_light_small_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_touchdown.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_fall_small.vfx</fn_effect_bin>
@@ -386,13 +392,22 @@
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_03.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_04.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/buildings/inf_bld_UNI_000_Base_05.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_FireSmoke.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_firesmoke_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/04_himmelsdorf_smoke_big_2.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/13_erlenberg_fire.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/13_erlenberg_roof_water_drop.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/34_redshire_water_foam_river.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/interior/water_garbage_fastriver.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_112_11_AdvertisingCloset_01.eff</fn_effect_bin>
@@ -409,12 +424,10 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env009_Firewoodstack3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env203_DrawWell_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env208_Log_Firewood_1.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env208_Log_Firewood_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env209_Benches_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env409_AdvertisingPillar.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Fall_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env414_Pole_Touchdown.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env428_CallBox01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env601_BunchLogs_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env615_Pier_Crash.eff</fn_effect_bin>
@@ -466,9 +479,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_fracture.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_streetlamp_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_town_bench_des.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/13_attack_airplane.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/13_plane_explosion.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/13_plane_flight.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/02_malinovka_ground_smoke_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/random_events/05_prohorovka_smoke_light_small_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_touchdown.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_fall_small.eff</fn_effect_bin>

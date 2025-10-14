@@ -139,16 +139,20 @@
 						<Float>0.631365</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_glossMin
 						<Float>0.284502</Float>
 					</property>
 					<property>
 						g_tilingRatio
 						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.500000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.024081 1.000656 -1.454407</groupOrigin>

@@ -210,6 +210,7 @@ package net.wg.gui.lobby.settings
                      if(_loc10_.toolTip != null)
                      {
                         _loc10_.infoIcoType = InfoIcon.TYPE_INFO;
+                        _loc10_.infoIcoFixedY = true;
                      }
                      _loc10_.validateNow();
                      break;

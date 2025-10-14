@@ -58,6 +58,14 @@ msgstr ""
 msgid "domain/damageDealing/name"
 msgstr "Causing Damage"
 
+msgid "domain/equalization/description"
+msgstr ""
+"Each tier has different modifiers to HP, internal and external modules, damage, and penetration. The lower a vehicle's tier, the more its parameters are enhanced—making low-tier vehicles much more dangerous!\n"
+"Spending and earning resources in battles is disabled."
+
+msgid "domain/equalization/name"
+msgstr "Tier I–X Battles"
+
 msgid "domain/mobility/description"
 msgstr ""
 "A set of parameters that show the dynamic and speed characteristics of your "
@@ -98,6 +106,9 @@ msgstr "Resistance"
 msgid "modifier/name/aimingTime"
 msgstr "Aiming time"
 
+msgid "modifier/name/ammoBayHealth"
+msgstr "Ammo rack durability"
+
 msgid "modifier/name/autoreloadTime"
 msgstr "Reload time for vehicles with autoreloaders"
 
@@ -109,6 +120,9 @@ msgstr "Top reverse speed"
 
 msgid "modifier/name/burstInterval"
 msgstr "Time for reloading shells in the magazine"
+
+msgid "modifier/name/chassisHealth"
+msgstr "Chassis durability"
 
 msgid "modifier/name/clipInterval"
 msgstr "Time for loading between shots in the magazine"
@@ -137,6 +151,9 @@ msgstr "Dispersion with a damaged gun"
 msgid "modifier/name/engineFireFactor"
 msgstr "Engine fire chance"
 
+msgid "modifier/name/engineHealth"
+msgstr "Engine durability"
+
 msgid "modifier/name/enginePower"
 msgstr "Engine power"
 
@@ -155,11 +172,17 @@ msgstr "Crew injuries during impact"
 msgid "modifier/name/equipmentCooldown"
 msgstr "Consumable cooldown time"
 
+msgid "modifier/name/fuelTankHealth"
+msgstr "Fuel tank durability"
+
 msgid "modifier/name/fwMaxSpeed"
 msgstr "Top forward speed"
 
 msgid "modifier/name/gravityFactor"
 msgstr "Vehicle gravity"
+
+msgid "modifier/name/gunHealth"
+msgstr "Gun durability"
 
 msgid "modifier/name/gunRotationSpeed"
 msgstr "Gun traverse speed in a stationary cabin"
@@ -202,6 +225,9 @@ msgstr "Shell velocity"
 msgid "modifier/name/shotDispersionRadius"
 msgstr "Dispersion at 100 m"
 
+msgid "modifier/name/surveyingDeviceHealth"
+msgstr "Surveying device durability"
+
 msgid "modifier/name/turretPressureDamage"
 msgstr "Damage from pressure of a torn-off turret"
 
@@ -210,6 +236,9 @@ msgstr "Damage from a torn-off turret"
 
 msgid "modifier/name/turretRotationSpeed"
 msgstr "Turret traverse speed"
+
+msgid "modifier/name/turretRotatorHealth"
+msgstr "Turret rotator durability"
 
 msgid "modifier/name/twinGunReloadTime"
 msgstr "Gun Loading in Salvo Fire Mode"

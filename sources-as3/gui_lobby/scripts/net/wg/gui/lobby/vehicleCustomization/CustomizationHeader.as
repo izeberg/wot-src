@@ -22,6 +22,8 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const RIGHT_TF_OFFSET:int = -12;
       
       private static const TF_ELITE_EXTRA_OFFSET:int = 10;
+      
+      private static const PROGRESSION_INFO_BTN_TOP_OFFSET:int = 10;
        
       
       public var tankTier:TextField = null;

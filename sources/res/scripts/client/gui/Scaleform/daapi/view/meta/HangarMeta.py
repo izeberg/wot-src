@@ -93,10 +93,6 @@ class HangarMeta(View):
         if self._isDAAPIInited():
             return self.flashObject.as_updateHangarComponents(showComponents, hideComponents)
 
-    def as_setBattleRoyaleSpaceLoadedS(self, showAnimation):
-        if self._isDAAPIInited():
-            return self.flashObject.as_setBattleRoyaleSpaceLoaded(showAnimation)
-
     def as_setComp7SpaceLoadedS(self, isLoaded):
         if self._isDAAPIInited():
             return self.flashObject.as_setComp7SpaceLoaded(isLoaded)

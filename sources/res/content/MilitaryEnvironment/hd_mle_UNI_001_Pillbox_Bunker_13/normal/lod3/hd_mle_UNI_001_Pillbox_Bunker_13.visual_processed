@@ -49,7 +49,7 @@
 						<Texture>content/MilitaryEnvironment/hd_mle_UNI_001_Pillbox_Bunker_13/hd_mle_UNI_001_Pillbox_Bunker_13_gun_AM2.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.051177 5.901567 -2.661343</groupOrigin>
+				<groupOrigin>0.051177 6.151395 -2.736634</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -395,7 +395,7 @@
 						<Texture>content/MilitaryEnvironment/00_Detail_Sets/Bunker_Details_GMM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-16.538622 -0.545780 -2.854593</groupOrigin>
+				<groupOrigin>-3.479670 3.482363 -2.790206</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				6
@@ -410,8 +410,8 @@
 	</renderSet>
 	<boundingBox>
 		<min>-30.369648 -5.557908 -21.231516</min>
-		<max>18.304575 11.994062 13.417760</max>
+		<max>18.304575 12.517692 13.417760</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>59828</geometrySize>
+	<geometrySize>69976</geometrySize>
 </root>

@@ -1,4 +1,6 @@
+from __future__ import absolute_import
 from collections import namedtuple
+from future.utils import viewitems
 from fun_random_common.fun_constants import DEFAULT_ASSETS_PACK, DEFAULT_SETTINGS_KEY, DEFAULT_PRIORITY, UNKNOWN_WWISE_REMAPPING, UNKNOWN_EVENT_ID, FunSubModeImpl
 from shared_utils import makeTupleByDict
 
@@ -50,8 +52,8 @@ class FunSubModeSeasonalityConfig(namedtuple('FunSubModeSeasonalityConfig', ('is
 
     @classmethod
     def __packSeasonalityConfig(cls, data):
-        data['primeTimes'] = {int(peripheryID):value for peripheryID, value in data['primeTimes'].iteritems()}
-        data['seasons'] = {int(seasonID):value for seasonID, value in data['seasons'].iteritems()}
+        data['primeTimes'] = {int(peripheryID):value for peripheryID, value in viewitems(data['primeTimes'])}
+        data['seasons'] = {int(seasonID):value for seasonID, value in viewitems(data['seasons'])}
 
 
 class FunSubModeConfig(namedtuple('_FunSubModeConfig', ('eventID', 'isEnabled', 'seasonality', 'filtration',
@@ -60,7 +62,7 @@ class FunSubModeConfig(namedtuple('_FunSubModeConfig', ('eventID', 'isEnabled', 
 
     def __new__(cls, **kwargs):
         defaults = dict(eventID=UNKNOWN_EVENT_ID, isEnabled=False, seasonality={}, filtration={}, client={})
-        allowedFields = defaults.keys()
+        allowedFields = set(defaults)
         defaults.update(kwargs)
         cls.__packConfigPart(FunSubModeClientConfig, 'client', defaults)
         cls.__packConfigPart(FunSubModeFiltrationConfig, 'filtration', defaults)
@@ -74,7 +76,7 @@ class FunSubModeConfig(namedtuple('_FunSubModeConfig', ('eventID', 'isEnabled', 
 
     @classmethod
     def __filterAllowedFields(cls, data, allowedFields):
-        return dict((k, v) for k, v in data.iteritems() if k in allowedFields)
+        return dict((k, v) for k, v in viewitems(data) if k in allowedFields)
 
     @classmethod
     def __packConfigPart(cls, configPartCls, configPartName, data):
@@ -119,7 +121,7 @@ class FunRandomConfig(namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', '
 
     def __new__(cls, **kwargs):
         defaults = dict(isEnabled=False, subModes={}, metaProgression={}, assetsPointer=DEFAULT_ASSETS_PACK, settingsKey=DEFAULT_SETTINGS_KEY, infoPageUrl='')
-        allowedFields = defaults.keys()
+        allowedFields = set(defaults)
         defaults.update(kwargs)
         cls.__packSubModesConfigs(defaults)
         cls.__packMetaProgressionConfig(defaults)
@@ -138,7 +140,7 @@ class FunRandomConfig(namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', '
 
     @classmethod
     def __filterAllowedFields(cls, data, allowedFields):
-        return dict((k, v) for k, v in data.iteritems() if k in allowedFields)
+        return dict((k, v) for k, v in viewitems(data) if k in allowedFields)
 
     @classmethod
     def __packMetaProgressionConfig(cls, data):
@@ -149,5 +151,5 @@ class FunRandomConfig(namedtuple('_FunRandomConfig', ('isEnabled', 'subModes', '
     @classmethod
     def __packSubModesConfigs(cls, data):
         events = data['events'] if data['isEnabled'] else {}
-        data['subModes'] = {int(eID):FunSubModeConfig(**eData) for eID, eData in events.iteritems() if eData.get('isEnabled', False) and eData.get('eventID', UNKNOWN_EVENT_ID) if eData.get('isEnabled', False) and eData.get('eventID', UNKNOWN_EVENT_ID)}
+        data['subModes'] = {int(eID):FunSubModeConfig(**eData) for eID, eData in viewitems(events) if eData.get('isEnabled', False) and eData.get('eventID', UNKNOWN_EVENT_ID) if eData.get('isEnabled', False) and eData.get('eventID', UNKNOWN_EVENT_ID)}
         return data

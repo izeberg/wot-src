@@ -1005,6 +1005,14 @@
 						doubleSided
 						<Bool>true</Bool>
 					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.292875 0.578265 -0.081787</groupOrigin>
 			</primitiveGroup>
@@ -1096,6 +1104,14 @@
 					<property>
 						doubleSided
 						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.292759 0.578395 -0.081505</groupOrigin>
@@ -1222,16 +1238,16 @@
 						<Float>0.284502</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.320000</Float>
 					</property>
 					<property>
 						g_tilingRatio
 						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.291229 0.608900 -0.108923</groupOrigin>
@@ -1358,16 +1374,16 @@
 						<Float>0.284502</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.320000</Float>
 					</property>
 					<property>
 						g_tilingRatio
 						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.305846 0.608444 -0.108923</groupOrigin>

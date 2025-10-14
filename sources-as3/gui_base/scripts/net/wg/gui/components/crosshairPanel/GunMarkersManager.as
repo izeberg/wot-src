@@ -219,6 +219,15 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function setChargeableBurstMode(param1:Boolean) : void
+      {
+         var _loc2_:IGunMarker = null;
+         for each(_loc2_ in this._gunMarkers)
+         {
+            _loc2_.setChargeableBurstMode(param1);
+         }
+      }
+      
       public function setDualAccActive(param1:Boolean) : void
       {
          var _loc2_:IGunMarker = null;

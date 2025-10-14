@@ -68,8 +68,8 @@
 		<node>Gun_BlendBone</node>
 		<node>G_BlendBone</node>
 		<geometry>
-			<vertices>gun_01_Shape.vertices</vertices>
-			<primitive>gun_01_Shape.indices</primitive>
+			<vertices>gun_01Shape.vertices</vertices>
+			<primitive>gun_01Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -98,7 +98,7 @@
 						<Texture>vehicles/french/F135_AS_XX_40_t/AS_XX_40_t_proxy_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.010723 1.029980 -1.482005</groupOrigin>
+				<groupOrigin>0.002170 0.082230 -1.498507</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -107,5 +107,5 @@
 		<min>-1.088197 -0.756629 -2.202792</min>
 		<max>1.109643 2.816589 5.166802</max>
 	</boundingBox>
-	<geometrySize>6396</geometrySize>
+	<geometrySize>8460</geometrySize>
 </root>

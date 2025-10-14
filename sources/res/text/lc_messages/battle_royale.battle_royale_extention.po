@@ -1,0 +1,124 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: \n"
+
+msgid "eventShop"
+msgstr "Event Shop"
+
+msgid "progress/counter"
+msgstr "{{current}}{{divider}}{{total}}"
+
+msgid "progressionComplete"
+msgstr "Main Progression Complete!"
+
+msgid "tooltip/banner/description"
+msgstr ""
+"Dynamic last-man-standing battle royale in a post-apocalyptic setting. Fight"
+" in eight special vehicles that can be upgraded as you battle, growing "
+"stronger with each tier. Exclusive rewards and much more await you!"
+
+msgid "tooltip/banner/mode/description"
+msgstr "— Game mode. Click to explore"
+
+msgid "tooltip/banner/mode/label"
+msgstr "MODE"
+
+msgid "tooltip/banner/performanceRisk/description/high"
+msgstr ""
+"Your computer's performance is insufficient for this mode. You may "
+"experience issues with graphics and vehicle movement. Game client crashes "
+"are also likely."
+
+msgid "tooltip/banner/performanceRisk/description/medium"
+msgstr ""
+"This mode demands high computer performance. You may experience issues with "
+"map loading, graphics, and vehicle movement. In case of insufficient "
+"performance, try a lower graphics quality in Settings."
+
+msgid "tooltip/banner/performanceRisk/title/high"
+msgstr "Low Performance"
+
+msgid "tooltip/banner/performanceRisk/title/medium"
+msgstr "Possible Reduced Performance"
+
+msgid "tooltip/banner/timer/text/accent"
+msgstr "Event available for {{timer}}"
+
+msgid "tooltip/banner/timer/text/cooldown"
+msgstr "Ceasefire {{timer}}"
+
+msgid "tooltip/banner/title"
+msgstr "Steel Hunter"
+
+msgid "tooltip/daily_quests/header"
+msgstr "Completed"
+
+msgid "tooltip/daily_quests/new_daily_missions"
+msgstr "New Steel Hunter missions in {{timeLeft}}"
+
+msgid "tooltip/daily_quests/reward"
+msgid_plural "plural/tooltip/daily_quests/reward"
+msgstr[0] "Reward:"
+msgstr[1] "Rewards:"
+msgstr[2] "Rewards:"
+
+msgid "tooltip/daily_quests/text"
+msgstr "All missions completed!"
+
+msgid "tooltip/progressionWidget/description/completed"
+msgstr "Solid work, Commander. Keep it up!"
+
+msgid "tooltip/progressionWidget/description/header"
+msgstr "Main Progression Complete!"
+
+msgid "tooltip/progressionWidget/description/inProgress"
+msgstr ""
+"To advance through the Progression, complete missions and reach the top "
+"positions in Steel Hunter battles."
+
+msgid "tooltip/progressionWidget/subTitle"
+msgstr "The mode ends in %(value)s"
+
+msgid "tooltip/progressionWidget/title"
+msgstr "Steel Hunter"
+
+msgid "tooltip/quest/header"
+msgstr "Steel Hunter Mission"
+
+msgid "tooltip/shop/subtitle"
+msgstr ""
+"Exchange your {{@ colorLegacy 'ede6d9'}}Steel Seals{{/}} for special "
+"rewards."
+
+msgid "tooltip/shop/text"
+msgstr ""
+"Earn Steel Seals by performing effectively in battle, ranking highly in "
+"post-battle results, and completing missions."
+
+msgid "tooltip/shop/title"
+msgstr "Steel Hunter Shop"
+
+msgid "upgrades/description"
+msgstr ""
+"Cause damage to enemy vehicles and collect Spoils of War on the map to "
+"receive experience and advance through tiers. Each tier reached allows you "
+"to upgrade a module from the Upgrade Menu and significantly improve your "
+"vehicle's characteristics."
+
+msgid "upgrades/footer"
+msgstr "Modules can only be upgraded in battle."
+
+msgid "upgrades/subtitle"
+msgstr "You enter battle in a Tier I vehicle."
+
+msgid "upgrades/title"
+msgstr "Vehicle Upgrades in Battle"

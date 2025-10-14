@@ -4612,7 +4612,7 @@ msgid "pm3_10_3_2_description_kills"
 msgstr "Destroy an enemy light tank or SPG"
 
 msgid "pm3_10_3_2_description_topByExp"
-msgstr "Be the top player on both teams by experience earned"
+msgstr "Be the only top player on both teams by experience earned"
 
 msgid "pm3_10_3_2_short"
 msgstr "Assistance-2"
@@ -5344,7 +5344,7 @@ msgid "pm3_8_3_2"
 msgstr "Assistance-2"
 
 msgid "pm3_8_3_2_description_topByExp"
-msgstr "Be the top player on both teams by experience earned"
+msgstr "Be the only top player on both teams by experience earned"
 
 msgid "pm3_8_3_2_short"
 msgstr "Assistance-2"
@@ -6221,7 +6221,7 @@ msgid "pm3_9_3_7_description_alive"
 msgstr "Survive the battle"
 
 msgid "pm3_9_3_7_description_topByExp"
-msgstr "Be the top player on both teams by experience earned"
+msgstr "Be the only top player on both teams by experience earned"
 
 msgid "pm3_9_3_7_short"
 msgstr "Assistance-7"
@@ -6251,8 +6251,8 @@ msgstr "Assistance-9"
 
 msgid "pm3_9_3_9_description_damageCausedBlindly"
 msgstr ""
-"Cause %(damageDealt)s HP of damage to an enemy vehicle that is unspotted "
-"when the damage is caused"
+"Cause %(damageDealt)s HP of damage to enemy vehicles that are unspotted when"
+" the damage is caused"
 
 msgid "pm3_9_3_9_description_kills"
 msgstr "Destroy %(goal)s enemy light tanks or SPGs"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A178_SPHT/normal/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.610267 -0.000000 -3.449237</min>
+		<max>1.611499 1.096816 3.278750</max>
+	</visibilityBox>
+	<parent>vehicles/american/A178_SPHT/normal/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+</root>

@@ -38,6 +38,7 @@ package net.wg.gui.lobby.vehicleCustomization.controls
    import net.wg.infrastructure.managers.ISoundManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.IScheduler;
+   import net.wg.utils.StageSizeBoundaries;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.core.UIComponent;
@@ -93,10 +94,6 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private static const ALREADY_USED_STYLE_NAME_ALPHA:Number = 0.3;
       
       private static const TEXTFIELD_PADDING:int = 8;
-      
-      private static const MIN_WIDTH_RESOLUTION:int = 1280;
-      
-      private static const MIN_HEIGHT_RESOLUTION:int = 900;
       
       private static const SHADOW_SCALE:Number = 0.6;
       
@@ -518,16 +515,17 @@ package net.wg.gui.lobby.vehicleCustomization.controls
       private function applyData() : void
       {
          var _loc5_:Boolean = false;
-         var _loc11_:Boolean = false;
-         var _loc12_:int = 0;
+         var _loc11_:String = null;
+         var _loc12_:Boolean = false;
          var _loc13_:int = 0;
          var _loc14_:int = 0;
          var _loc15_:int = 0;
+         var _loc16_:int = 0;
          var _loc1_:Boolean = this._data != null && this._data.intCD;
-         var _loc2_:Boolean = this.isResponsive && App.appHeight < MIN_HEIGHT_RESOLUTION;
+         var _loc2_:Boolean = this.isResponsive && App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          if(this.considerWidth && !_loc2_)
          {
-            _loc2_ = this.isResponsive && App.appWidth <= MIN_WIDTH_RESOLUTION;
+            _loc2_ = this.isResponsive && App.appWidth <= StageSizeBoundaries.WIDTH_1280;
          }
          var _loc3_:Rectangle = CustomizationShared.computeItemSize(Boolean(this._data) ? Boolean(this._data.isWide) : Boolean(false),_loc2_);
          this._customWidth = _loc3_.width;
@@ -777,8 +775,9 @@ package net.wg.gui.lobby.vehicleCustomization.controls
          if(this.styleNameTF.visible)
          {
             this.styleNameTF.alpha = Values.DEFAULT_ALPHA;
-            this.styleNameTF.htmlText = !!_loc2_ ? this._data.styleNameSmall : this._data.styleName;
             this.styleNameTF.filters = !!_loc2_ ? [] : this._styleTfFiltersPreset;
+            _loc11_ = !!_loc2_ ? this._data.styleNameSmall : this._data.styleName;
+            App.utils.commons.truncateTextFieldMultiline(this.styleNameTF,_loc11_,2,"...");
          }
          this.styleNameTF.y = STYLE_NAME_TF_V_POS + int(_loc2_) * STYLE_NAME_TF_V_OFFSET;
          this.styleNameTF.width = !!_loc2_ ? Number(STYLE_NAME_TF_WIDE_SMALL_WIDTH) : Number(STYLE_NAME_TF_WIDE_WIDTH);
@@ -819,11 +818,11 @@ package net.wg.gui.lobby.vehicleCustomization.controls
             this.compoundPrice.visible = StringUtils.isEmpty(this._data.quantity) && !this._data.showDisabled;
             if(this.compoundPrice.visible)
             {
-               _loc11_ = this._data.buyPrice.action != null;
-               _loc12_ = !!_loc2_ ? int(0) : int(-ICON_PADDING_RIGHT);
-               _loc13_ = !!_loc11_ ? int(ACTION_ICON_PADDING_RIGHT) : int(0);
-               _loc14_ = _loc11_ && _loc2_ ? int(ACTION_MIN_RES_OFFSET) : int(0);
-               this.compoundPrice.x = this._customWidth + _loc12_ + _loc13_ + _loc14_;
+               _loc12_ = this._data.buyPrice.action != null;
+               _loc13_ = !!_loc2_ ? int(0) : int(-ICON_PADDING_RIGHT);
+               _loc14_ = !!_loc12_ ? int(ACTION_ICON_PADDING_RIGHT) : int(0);
+               _loc15_ = _loc12_ && _loc2_ ? int(ACTION_MIN_RES_OFFSET) : int(0);
+               this.compoundPrice.x = this._customWidth + _loc13_ + _loc14_ + _loc15_;
                this.compoundPrice.y = this._customHeight;
             }
          }
@@ -834,10 +833,10 @@ package net.wg.gui.lobby.vehicleCustomization.controls
                this.rentalTF.visible = this.rentalIcon.visible = true;
                this.storageIcon.visible = this.storageTF.visible = false;
                this.rentalTF.text = this._data.quantity.toString();
-               _loc15_ = this._customWidth - this.rentalTF.textWidth - RENTAL_TF_PADDING_RIGHT;
-               this.rentalTF.x = _loc15_;
+               _loc16_ = this._customWidth - this.rentalTF.textWidth - RENTAL_TF_PADDING_RIGHT;
+               this.rentalTF.x = _loc16_;
                this.rentalTF.y = this._customHeight - this.rentalTF.height ^ 0;
-               this.rentalIcon.x = _loc15_ - RENTAL_ICON_SIZE + RENTAL_ICON_OFFSET_X;
+               this.rentalIcon.x = _loc16_ - RENTAL_ICON_SIZE + RENTAL_ICON_OFFSET_X;
                this.rentalIcon.y = this._customHeight - RENTAL_ICON_SIZE + RENTAL_ICON_OFFSET_Y;
                this.rentalIcon.source = !!this._data.autoRentEnabled ? RES_ICONS.MAPS_ICONS_CUSTOMIZATION_ICON_RENT : RES_ICONS.MAPS_ICONS_LIBRARY_CLOCKICON_1;
             }

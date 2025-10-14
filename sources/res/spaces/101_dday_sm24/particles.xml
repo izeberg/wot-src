@@ -68,6 +68,30 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_tex_108_normandy.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/environment/storymode/101_dday_ship_glare.eff</fn_effect_bin>
@@ -476,6 +500,26 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/Spark.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_108_normandy.dds</texture>
 		</preload>
 		<fn_effect_bin>particles/environment/storymode/101_dday_ship_glare.eff</fn_effect_bin>
@@ -499,6 +543,9 @@
 		<fn_effect_bin>particles/environment/scenarios/121_lost_paradise_airplane_fire_trail.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/scenarios/121_lost_paradise_attack_airplane_a6m1-zero.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/storymode/101_dday_flare_red.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/storymode/sherman_demining_sand.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/Storymode/sherman_demining_sand_anim.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/storymode/sherman_mine_clearence_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/storymode/101_dday_ship_glare.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/storymode/101_dday_bunker_explosion_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/storymode/101_dday_bunker_explosion_02.vfx</fn_effect_bin>
@@ -525,6 +572,9 @@
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/121_lost_paradise_airplane_fire_trail.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/pfx/environment/scenarios/121_lost_paradise_attack_airplane_a6m1-zero.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/environment/storymode/101_dday_flare_red.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Storymode/sherman_demining_sand.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Storymode/sherman_demining_sand_anim.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Storymode/sherman_mine_clearence_explosion.vfx</fn_effect_bin>
 		<preloadVisual>particles/content_deferred/GFX_models/environment/Storymode/Mines_Sign_red.visual</preloadVisual>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_101_03_Vhouse03_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_101_04_VShed01_01.vfx</fn_effect_bin>

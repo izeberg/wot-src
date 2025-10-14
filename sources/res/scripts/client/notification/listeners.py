@@ -2075,7 +2075,7 @@ class BattleMattersTaskReminderListener(BaseReminderListener, EventsHandler):
 
     def _createNotificationData(self, priority, **ctx):
         currentQuest = self.__bmCtrl.getCurrentQuest()
-        data = {'questIndex': currentQuest.getOrder()}
+        data = {'questIndex': currentQuest.getOrder() if currentQuest else len(self.__bmCtrl.getCompletedBattleMattersQuests())}
         return NotificationData(self._getNotificationId(), data, priority, None)
 
     def _createDecorator(self, data):
@@ -2091,14 +2091,13 @@ class BattleMattersTaskReminderListener(BaseReminderListener, EventsHandler):
         self.__tryNotify()
 
     def __tryNotify(self):
-        isAdding = self.__bmCtrl.isActive() and self.__bmCtrl.getCurrentQuest() is not None
+        isAdding = self.__bmCtrl.isActive() or self.__bmCtrl.hasDelayedRewards()
         needToPopUp = self.__bmCtrl.progressWatcher.isJustBackFromBattle(reset=True) and (self.__isLongTimeWithoutProgress() or not self.__isShowedToday())
         priority = NotificationPriorityLevel.LOW
         if isAdding and needToPopUp:
             priority = NotificationPriorityLevel.MEDIUM
             AccountSettings.setBattleMattersSetting(BattleMatters.REMINDER_LAST_DISPLAY_TIME, time_utils.getServerUTCTime())
         self._notifyOrRemove(isAdding, priority=priority)
-        return
 
     def __isLongTimeWithoutProgress(self):
         battlesWithoutProgress = self.__bmCtrl.progressWatcher.getBattlesCountWithoutProgress()

@@ -6,7 +6,7 @@ from gui.Scaleform.daapi.view.meta.MissionDetailsContainerViewMeta import Missio
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
 from gui.server_events.events_helpers import isDailyQuest, isPremium
 from gui.server_events.formatters import parseComplexToken
-from gui.server_events.events_constants import BATTLE_ROYALE_GROUPS_ID, FUN_RANDOM_GROUP_ID
+from gui.server_events.events_constants import BATTLE_ROYALE_GROUPS_ID
 from gui.shared import events, event_bus_handlers, EVENT_BUS_SCOPE
 from helpers import dependency
 from skeletons.gui.server_events import IEventsCache
@@ -115,8 +115,6 @@ class MissionDetailsContainerView(LobbySubView, MissionDetailsContainerViewMeta)
 
         if groupID == BATTLE_ROYALE_GROUPS_ID:
             return self.__battleRoyaleController.getQuests()
-        if groupID == FUN_RANDOM_GROUP_ID:
-            return self.eventsCache.getQuests(lambda q: q.getGroupID() == groupID)
         return self.eventsCache.getQuests(missionsFilter)
 
     def __isQuestInvalid(self, eventID):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod3/Chassis</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.646182 -0.000249 -3.414715</min>
+		<max>1.646178 1.216176 3.379533</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod2/Chassis</nodefullVisual>
+</root>

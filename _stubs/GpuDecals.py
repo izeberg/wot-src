@@ -191,6 +191,7 @@ class GeneralConfig(pybind11_object):
 	compoundOverlay = property(lambda self: None)
 	cutoffAngle = property(lambda self: None)
 	influenceMask = property(lambda self: None)
+	projectionType = property(lambda self: None)
 	tintColor = property(lambda self: None)
 
 
@@ -353,6 +354,36 @@ class ParallaxConfig(pybind11_object):
 	amplitude = property(lambda self: None)
 	enabled = property(lambda self: None)
 	offset = property(lambda self: None)
+
+
+class ProjectionType(pybind11_object):
+	CYLINDRICAL = ProjectionType.CYLINDRICAL
+	ORTHONORMAL = ProjectionType.ORTHONORMAL
+	def __delattr__(*args, **kwargs): pass
+	__doc__ = u'Members:\n\n  ORTHONORMAL\n\n  CYLINDRICAL'
+	__entries = {u'ORTHONORMAL': (ProjectionType.ORTHONORMAL, None), u'CYLINDRICAL': (ProjectionType.CYLINDRICAL, None)}
+	def __eq__(self, *args, **kwargs): pass
+	def __format__(*args, **kwargs): pass
+	def __getattribute__(*args, **kwargs): pass
+	def __getstate__(self, *args, **kwargs): pass
+	def __hash__(self, *args, **kwargs): pass
+	def __init__(self, *args, **kwargs): pass
+	def __int__(self, *args, **kwargs): pass
+	def __long__(self, *args, **kwargs): pass
+	__members__ = {u'ORTHONORMAL': ProjectionType.ORTHONORMAL, u'CYLINDRICAL': ProjectionType.CYLINDRICAL}
+	__module__ = 'GpuDecals'
+	def __ne__(self, *args, **kwargs): pass
+	def __new__(*args, **kwargs): pass
+	__qualname__ = 'ProjectionType'
+	def __reduce__(*args, **kwargs): pass
+	def __reduce_ex__(*args, **kwargs): pass
+	def __repr__(self, *args, **kwargs): pass
+	def __setattr__(*args, **kwargs): pass
+	def __setstate__(self, *args, **kwargs): pass
+	def __sizeof__(*args, **kwargs): pass
+	def __str__(*args, **kwargs): pass
+	def __subclasshook__(*args, **kwargs): pass
+	name = property(lambda self: None)
 
 __doc__ = None
 __name__ = 'GpuDecals'

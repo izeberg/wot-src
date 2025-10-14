@@ -7125,7 +7125,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -7167,7 +7167,7 @@
 					<type>string</type>
 				</item>
 				<item>
-					False
+					True
 					<name>achievable</name>
 					<type>bool</type>
 				</item>
@@ -7725,6 +7725,60 @@
 					2
 					<name>layout</name>
 					<type>int</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>hw_2025_01</name>
+			<type>dict</type>
+			<value>
+				<item>
+					217
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					5.13
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
+				</item>
+				<item>
+					False
+					<name>achievable</name>
+					<type>bool</type>
+				</item>
+			</value>
+		</badge>
+		<badge>
+			<name>hw_2025_02</name>
+			<type>dict</type>
+			<value>
+				<item>
+					218
+					<name>id</name>
+					<type>int</type>
+				</item>
+				<item>
+					5.14
+					<!--BW_String-->
+					<name>weight</name>
+					<type>float</type>
+				</item>
+				<item>
+					gold
+					<name>highlight</name>
+					<type>string</type>
 				</item>
 				<item>
 					False

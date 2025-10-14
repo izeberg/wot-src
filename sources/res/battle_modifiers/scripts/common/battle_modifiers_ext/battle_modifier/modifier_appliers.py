@@ -1,3 +1,6 @@
+from __future__ import absolute_import
+from builtins import round
+from future.utils import viewitems
 from itertools import chain
 from typing import TYPE_CHECKING, Optional, Dict, Union
 from battle_modifiers_common.battle_modifiers import BattleParams
@@ -21,8 +24,8 @@ _dataTypeAppliers = {DataType.INT: {UseType.VAL: _defaultVal,
                     UseType.ADD: _defaultAdd}, 
    DataType.STRING: _defaultVal, 
    DataType.DICT: {UseType.VAL: _defaultVal, 
-                   UseType.MUL: lambda val, paramVal, _=None: {k:v for k, v in chain(paramVal.iteritems(), val.iteritems())}, 
-                   UseType.ADD: lambda val, paramVal, _=None: {k:v for k, v in chain(val.iteritems(), paramVal.iteritems())}}}
+                   UseType.MUL: lambda val, paramVal, _=None: dict(chain(viewitems(paramVal), viewitems(val))), 
+                   UseType.ADD: lambda val, paramVal, _=None: dict(chain(viewitems(val), viewitems(paramVal)))}}
 
 def _shotEffectsApplier(value, paramVal, ctx=None):
     from items import vehicles

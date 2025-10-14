@@ -205,18 +205,6 @@
 		<name>128_last_frontier_v</name>
 	</map>
 	<map>
-		<id>508</id>
-		<name>35_steppes_wt</name>
-	</map>
-	<map>
-		<id>509</id>
-		<name>34_redshire_wt</name>
-	</map>
-	<map>
-		<id>510</id>
-		<name>14_siegfried_line_wt</name>
-	</map>
-	<map>
 		<id>1008</id>
 		<name>209_wg_epic_suburbia</name>
 	</map>
@@ -242,6 +230,12 @@
 		<packAllEnvironments>True</packAllEnvironments>
 	</map>
 	<map>
+		<id>2014</id>
+		<name>251_br_battle_city3_hw25</name>
+		<packAllEnvironments>True</packAllEnvironments>
+		<isDevelopment>false</isDevelopment>
+	</map>
+	<map>
 		<isHangar>True</isHangar>
 		<name>h33_battle_royale_2021</name>
 	</map>
@@ -254,8 +248,8 @@
 		<name>hangar_v4</name>
 	</map>
 	<map>
-		<id>2013</id>
-		<name>251_br_battle_city3_ls_2_0</name>
-		<packAllEnvironments>True</packAllEnvironments>
+		<isHangar>true</isHangar>
+		<name>hangar_v4_halloween</name>
+		<isDevelopment>false</isDevelopment>
 	</map>
 </root>

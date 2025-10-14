@@ -3928,6 +3928,166 @@
 				<_27005>hw24_commander5.png</_27005>
 			</icons>
 		</hw24_commander5>
+		<hw25_Quickybaby>
+			<groupID>500</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew hw25_Quickybaby_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27006>#czech_crew:names/hw25_Quickybaby_n</_27006>
+			</firstNames>
+			<lastNames>
+				<_27006>#czech_crew:names/hw25_Quickybaby</_27006>
+			</lastNames>
+			<icons>
+				<_27006>hw25_Quickybaby.png</_27006>
+			</icons>
+		</hw25_Quickybaby>
+		<hw25_Mailand>
+			<groupID>501</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew hw25_Mailand_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27007>#czech_crew:names/hw25_Mailand_n</_27007>
+			</firstNames>
+			<lastNames>
+				<_27007>#czech_crew:names/hw25_Mailand</_27007>
+			</lastNames>
+			<icons>
+				<_27007>hw25_Mailand.png</_27007>
+			</icons>
+		</hw25_Mailand>
+		<hw25_MouzAkrobat>
+			<groupID>502</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew hw25_MouzAkrobat_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27008>#czech_crew:names/hw25_MouzAkrobat_n</_27008>
+			</firstNames>
+			<lastNames>
+				<_27008>#czech_crew:names/hw25_MouzAkrobat</_27008>
+			</lastNames>
+			<icons>
+				<_27008>hw25_MouzAkrobat.png</_27008>
+			</icons>
+		</hw25_MouzAkrobat>
+		<hw25_Skill4ltu>
+			<groupID>503</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew hw25_Skill4ltu_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27009>#czech_crew:names/hw25_Skill4ltu_n</_27009>
+			</firstNames>
+			<lastNames>
+				<_27009>#czech_crew:names/hw25_Skill4ltu</_27009>
+			</lastNames>
+			<icons>
+				<_27009>hw25_Skill4ltu.png</_27009>
+			</icons>
+		</hw25_Skill4ltu>
+		<hw25_LuJun_CN>
+			<groupID>504</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew_CN hw25_LuJun_CN_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27010>#china_crew:names/hw25_LuJun_CN_n</_27010>
+			</firstNames>
+			<lastNames>
+				<_27010>#china_crew:names/hw25_LuJun_CN</_27010>
+			</lastNames>
+			<icons>
+				<_27010>hw25_LuJun_CN.png</_27010>
+			</icons>
+		</hw25_LuJun_CN>
+		<hw25_Titi_CN>
+			<groupID>505</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew_CN hw25_Titi_CN_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27011>#china_crew:names/hw25_Titi_CN_n</_27011>
+			</firstNames>
+			<lastNames>
+				<_27011>#china_crew:names/hw25_Titi_CN</_27011>
+			</lastNames>
+			<icons>
+				<_27011>hw25_Titi_CN.png</_27011>
+			</icons>
+		</hw25_Titi_CN>
+		<hw25_DaKun_CN>
+			<groupID>506</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew_CN hw25_DaKun_CN_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27012>#china_crew:names/hw25_DaKun_CN_n</_27012>
+			</firstNames>
+			<lastNames>
+				<_27012>#china_crew:names/hw25_DaKun_CN</_27012>
+			</lastNames>
+			<icons>
+				<_27012>hw25_DaKun_CN.png</_27012>
+			</icons>
+		</hw25_DaKun_CN>
+		<hw25_Panchezhang_CN>
+			<groupID>507</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden commander gunner driver radioman loader hw25_Crew_CN hw25_Panchezhang_CN_SpecialVoice</tags>
+			<roles>commander gunner driver radioman loader</roles>
+			<firstNames>
+				<_27013>#china_crew:names/hw25_Panchezhang_CN_n</_27013>
+			</firstNames>
+			<lastNames>
+				<_27013>#china_crew:names/hw25_Panchezhang_CN</_27013>
+			</lastNames>
+			<icons>
+				<_27013>hw25_Panchezhang_CN.png</_27013>
+			</icons>
+		</hw25_Panchezhang_CN>
 		<ny21_men>
 			<groupID>61</groupID>
 			<weight>
@@ -8008,6 +8168,26 @@
 				<_3291>wt_clone_hunter_2.png</_3291>
 			</icons>
 		</wt_clone_hunter_2>
+		<fisherman>
+			<groupID>306</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>commander passportReplacementForbidden</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3292>#usa_crew:names/fisherman_n</_3292>
+			</firstNames>
+			<lastNames>
+				<_3292>#usa_crew:names/fisherman</_3292>
+			</lastNames>
+			<icons>
+				<_3292>fisherman.png</_3292>
+			</icons>
+		</fisherman>
 		<tankmen_bp17_11>
 			<groupID>307</groupID>
 			<weight>
@@ -8188,6 +8368,86 @@
 				<_3301>tankmen_bp18_4.png</_3301>
 			</icons>
 		</tankmen_bp18_4>
+		<girls_und_panzer_kei>
+			<groupID>316</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>commander  passportReplacementForbidden keiSpecialVoice</tags>
+			<roles>commander</roles>
+			<firstNames>
+				<_3302>#usa_crew:names/girls_und_panzer_kei_n</_3302>
+			</firstNames>
+			<lastNames>
+				<_3302>#usa_crew:names/girls_und_panzer_kei</_3302>
+			</lastNames>
+			<icons>
+				<_3302>girls_und_panzer_kei.png</_3302>
+			</icons>
+		</girls_und_panzer_kei>
+		<girls_und_panzer_naomi>
+			<groupID>317</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>gunner  passportReplacementForbidden</tags>
+			<roles>gunner</roles>
+			<firstNames>
+				<_3303>#usa_crew:names/girls_und_panzer_naomi_n</_3303>
+			</firstNames>
+			<lastNames>
+				<_3303>#usa_crew:names/girls_und_panzer_naomi</_3303>
+			</lastNames>
+			<icons>
+				<_3303>girls_und_panzer_naomi.png</_3303>
+			</icons>
+		</girls_und_panzer_naomi>
+		<girls_und_panzer_saunders>
+			<groupID>318</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>driver  passportReplacementForbidden</tags>
+			<roles>driver</roles>
+			<firstNames>
+				<_3304>#usa_crew:names/girls_und_panzer_saunders_n</_3304>
+			</firstNames>
+			<lastNames>
+				<_3304>#usa_crew:names/girls_und_panzer_saunders</_3304>
+			</lastNames>
+			<icons>
+				<_3304>girls_und_panzer_saunders.png</_3304>
+			</icons>
+		</girls_und_panzer_saunders>
+		<girls_und_panzer_alisa>
+			<groupID>319</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>loader radioman  passportReplacementForbidden</tags>
+			<roles>loader radioman</roles>
+			<firstNames>
+				<_3305>#usa_crew:names/girls_und_panzer_alisa_n</_3305>
+			</firstNames>
+			<lastNames>
+				<_3305>#usa_crew:names/girls_und_panzer_alisa</_3305>
+			</lastNames>
+			<icons>
+				<_3305>girls_und_panzer_alisa.png</_3305>
+			</icons>
+		</girls_und_panzer_alisa>
 		<tankmen_bp18_5>
 			<groupID>320</groupID>
 			<weight>

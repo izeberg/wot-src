@@ -80,9 +80,9 @@ class ClientComp7LightBattleMode(Comp7LightBattleMode):
         return canSelectComp7LightPrbEntity
 
     @property
-    def _client_hangarPresetsGetter(self):
-        from comp7_light.gui.hangar_presets.hangar_presets_getters import Comp7LightPresetsGetter
-        return Comp7LightPresetsGetter
+    def _client_hangarDynamicGuiProvider(self):
+        from comp7_light.gui.hangar_presets.comp7_light_dynamic_gui_provider import Comp7LightHangarDynamicGuiProvider
+        return Comp7LightHangarDynamicGuiProvider
 
     @property
     def _client_providerBattleQueue(self):
@@ -123,9 +123,12 @@ class ClientComp7LightBattleMode(Comp7LightBattleMode):
     def _client_platoonLayouts(self):
         from gui.impl.gen import R
         from gui.impl.lobby.platoon.platoon_config import EPlatoonLayout, MembersWindow, PlatoonLayout
+        from gui.impl.lobby.platoon.view.platoon_selection_view import SelectionWindow
         return [
          (
-          EPlatoonLayout.MEMBER, PlatoonLayout(R.views.comp7_light.lobby.MembersWindow(), MembersWindow))]
+          EPlatoonLayout.MEMBER, PlatoonLayout(R.views.comp7_light.lobby.MembersWindow(), MembersWindow)),
+         (
+          EPlatoonLayout.WELCOME, PlatoonLayout(R.views.comp7_light.lobby.PlatoonDropdown(), SelectionWindow))]
 
     @property
     def _client_platoonViewClass(self):

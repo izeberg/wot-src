@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch63_Yong_Bing/normal/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.602683 -0.000929 -3.508870</min>
+		<max>1.602682 1.025207 3.568981</max>
+	</visibilityBox>
+	<parent>vehicles/chinese/Ch63_Yong_Bing/normal/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+</root>

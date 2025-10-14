@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.043584 -0.002019 -1.644921</min>
+		<max>1.048120 2.313215 0.981624</max>
+	</visibilityBox>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/normal/lod2/Turret_01</parent>
+	<extent>64.000000</extent>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/normal/lod1/Turret_01</nodefullVisual>
+</root>

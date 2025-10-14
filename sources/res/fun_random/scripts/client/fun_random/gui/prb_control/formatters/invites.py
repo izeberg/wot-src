@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random_common.fun_constants import UNKNOWN_EVENT_ID
 from fun_random.gui.feature.util.fun_mixins import FunAssetPacksMixin, FunSubModesWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasSpecifiedSubMode

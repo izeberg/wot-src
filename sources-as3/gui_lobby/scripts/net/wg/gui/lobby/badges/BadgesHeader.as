@@ -53,7 +53,7 @@ package net.wg.gui.lobby.badges
       
       private static const SLOT_CLOSE_BTN_GAP:int = -17;
       
-      private static const NAME_MAX_LENGTH:int = 14;
+      private static const NAME_MAX_LENGTH:int = 25;
        
       
       public var backButton:BackButton = null;

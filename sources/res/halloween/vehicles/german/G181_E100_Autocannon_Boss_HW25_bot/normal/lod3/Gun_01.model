@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>halloween/vehicles/german/G181_E100_Autocannon_Boss_HW25_bot/normal/lod3/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>halloween/vehicles/german/G181_E100_Autocannon_Boss_HW25_bot/normal/lod4/Gun_01</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-2.109658 -1.345787 -7.187701</min>
+		<max>3.804199 2.240416 13.416027</max>
+	</visibilityBox>
+</root>

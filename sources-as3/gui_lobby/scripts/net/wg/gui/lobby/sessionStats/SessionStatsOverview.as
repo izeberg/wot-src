@@ -33,6 +33,10 @@ package net.wg.gui.lobby.sessionStats
       private static const BTN_BOTTOM_GAP:int = 15;
       
       private static const BUTTON_STATES_INVALID:String = "buttonStatesInvalid";
+      
+      private static const LONG_SESSION:Number = 9999;
+      
+      private static const LONG_SESSION_OFFSET:Number = 10;
        
       
       public var battleStats:SessionBattleStatsView = null;
@@ -77,8 +81,9 @@ package net.wg.gui.lobby.sessionStats
          var _loc1_:int = 0;
          var _loc2_:uint = 0;
          var _loc3_:SessionStatsTabVO = null;
-         var _loc4_:ISoundButtonEx = null;
-         var _loc5_:ButtonPropertiesVO = null;
+         var _loc4_:Boolean = false;
+         var _loc5_:ISoundButtonEx = null;
+         var _loc6_:ButtonPropertiesVO = null;
          if(this._data && isInvalid(InvalidationType.DATA))
          {
             this.battleStats.update(this._data);
@@ -100,7 +105,8 @@ package net.wg.gui.lobby.sessionStats
             this.title.htmlText = this._data.title;
             this.counterAnimated.goToNumber(this._data.lastBattleCount);
             this.counterAnimated.animateTo(this._data.battleCount);
-            this.counterAnimated.x = width >> 1;
+            _loc4_ = this._data.battleCount > LONG_SESSION;
+            this.counterAnimated.x = !!_loc4_ ? Number((width - this.counterAnimated.width) / 2 + LONG_SESSION_OFFSET) : Number(width >> 1);
          }
          if(this._buttonStates && isInvalid(BUTTON_STATES_INVALID))
          {
@@ -108,14 +114,14 @@ package net.wg.gui.lobby.sessionStats
             _loc1_ = 0;
             while(_loc1_ < _loc2_)
             {
-               _loc4_ = this._buttons[_loc1_];
-               _loc5_ = this._buttonStates[_loc1_];
-               _loc4_.tooltip = _loc5_.btnTooltip;
-               _loc4_.label = _loc5_.btnLabel;
-               _loc4_.enabled = _loc5_.btnEnabled;
-               if(_loc4_ is IButtonIconLoader)
+               _loc5_ = this._buttons[_loc1_];
+               _loc6_ = this._buttonStates[_loc1_];
+               _loc5_.tooltip = _loc6_.btnTooltip;
+               _loc5_.label = _loc6_.btnLabel;
+               _loc5_.enabled = _loc6_.btnEnabled;
+               if(_loc5_ is IButtonIconLoader)
                {
-                  (_loc4_ as IButtonIconLoader).iconSource = _loc5_.btnIcon;
+                  (_loc5_ as IButtonIconLoader).iconSource = _loc6_.btnIcon;
                }
                _loc1_++;
             }

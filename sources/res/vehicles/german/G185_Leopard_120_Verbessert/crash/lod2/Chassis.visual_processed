@@ -68,9 +68,9 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
-			<primitive>track_R_Shape.indices</primitive>
+			<vertices>track_RShape.vertices</vertices>
+			<stream>track_RShape.uv2</stream>
+			<primitive>track_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -103,7 +103,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.349276 0.594378 0.155325</groupOrigin>
+				<groupOrigin>1.355283 0.598154 0.206100</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -112,9 +112,9 @@
 		<node>Tank_BlendBone</node>
 		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>track_L_Shape.vertices</vertices>
-			<stream>track_L_Shape.uv2</stream>
-			<primitive>track_L_Shape.indices</primitive>
+			<vertices>track_LShape.vertices</vertices>
+			<stream>track_LShape.uv2</stream>
+			<primitive>track_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -147,7 +147,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.355635 0.605701 -0.073070</groupOrigin>
+				<groupOrigin>-1.354138 0.606411 -0.055838</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -156,5 +156,5 @@
 		<min>-1.632318 -0.000583 -3.441289</min>
 		<max>1.624276 1.211985 3.240160</max>
 	</boundingBox>
-	<geometrySize>56916</geometrySize>
+	<geometrySize>55104</geometrySize>
 </root>

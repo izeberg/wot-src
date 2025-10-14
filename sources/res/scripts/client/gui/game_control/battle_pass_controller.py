@@ -157,7 +157,8 @@ class BattlePassController(IBattlePassController, EventsHandler):
 
     def isValidBattleType(self, prbEntity):
         return prbEntity.getQueueType() in (QUEUE_TYPE.RANDOMS, QUEUE_TYPE.MAPBOX, QUEUE_TYPE.WINBACK,
-         QUEUE_TYPE.COMP7, QUEUE_TYPE.COMP7_LIGHT)
+         QUEUE_TYPE.COMP7, QUEUE_TYPE.COMP7_LIGHT, QUEUE_TYPE.EPIC,
+         QUEUE_TYPE.BATTLE_ROYALE)
 
     def isGameModeEnabled(self, arenaBonusType):
         return self.__getConfig().isGameModeEnabled(arenaBonusType)

@@ -250,6 +250,9 @@ msgstr "Felice"
 msgid "Chassis_It36_Progetto_C45_mod_71_M"
 msgstr "Stone Sentinel"
 
+msgid "Chassis_It37_Serpente"
+msgstr "Serpente"
+
 msgid "Continental_AOI_1490_italy"
 msgstr "Continental AOI-1490-I"
 
@@ -927,8 +930,32 @@ msgstr "Stone Sentinel"
 msgid "It36_Progetto_C45_mod_71_M_short_special"
 msgstr "A unique gun and spaced armor"
 
+msgid "It37_Serpente"
+msgstr "Serpente"
+
+msgid "It37_Serpente_descr"
+msgstr ""
+"In the 1960s, the Italian Ministry of Defense determined the requirements for a promising medium tank capable of competing with Warsaw Pact and NATO vehicles. The designers proposed a configuration with an unmanned oscillating turret. The three-man crew was located at the front of the vehicle, with the commander and the gunner observing the battlefield through cameras from there.\n"
+"To meet the military's requirements, armor and the volume of ammunition had to be sacrificed, due to which the tank was planned for ambushing. However, because the cameras had poor image quality and the electronics were unreliable, the project was closed before a prototype was built."
+
+msgid "It37_Serpente_long_special"
+msgstr ""
+"The Serpente is a Tier IX Italian medium tank. Unlike most Italian mediums, "
+"it boasts a double gun system instead of an autoreloader, allowing it to "
+"deliver fast, accurate salvos. Its armor offers only basic protection, but "
+"this is offset by the vehicle's excellent mobility."
+
+msgid "It37_Serpente_short"
+msgstr "Serpente"
+
+msgid "It37_Serpente_short_special"
+msgstr "Double gun system, good mobility"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
+
+msgid "MB_833_Ka_500"
+msgstr "MB 833 Ka-500"
 
 msgid "MB_837C"
 msgstr "MB 837C"
@@ -1028,6 +1055,9 @@ msgstr "SEM-24"
 
 msgid "SEM_25"
 msgstr "SEM-25"
+
+msgid "SEM_25_S"
+msgstr "SEM-25S"
 
 msgid "SEM_35"
 msgstr "SEM-35"
@@ -1190,6 +1220,9 @@ msgstr "Felice"
 
 msgid "Turret_1_It36_Progetto_C45_mod_71_M"
 msgstr "Stone Sentinel"
+
+msgid "Turret_1_It37_Serpente"
+msgstr "Serpente"
 
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42 modificata"
@@ -1398,6 +1431,9 @@ msgstr "Cannone da 120/60"
 msgid "_120mm_Cannone_Da_120_62"
 msgstr "Cannone da 120/62"
 
+msgid "_120mm_Cannone_binato_da_120_59"
+msgstr "Cannone binato da 120/59"
+
 msgid "_120mm_Cannone_da_120_67_T53"
 msgstr "Cannone da 120/67 T53"
 
@@ -1416,6 +1452,9 @@ msgstr "c.c. 120/59 M469 (67)"
 msgid "_120mm_c_c_120_60_M469_CC1"
 msgstr "c.c. 120/60 M469 (CC1)"
 
+msgid "_120mm_c_g_120_59_HE_T"
+msgstr "c.g. 120/59 HE-T"
+
 msgid "_120mm_c_g_120_59_M356_67"
 msgstr "c.g. 120/59 M356 (67)"
 
@@ -1424,6 +1463,12 @@ msgstr "c.g. 120/60 M356 (CC1)"
 
 msgid "_120mm_c_g_120_62_M356_50"
 msgstr "c.g. 120/62 M356 (50)"
+
+msgid "_120mm_c_p_120_59_AP_T"
+msgstr "c.p. 120/59 AP-T"
+
+msgid "_120mm_c_p_120_59_HVAP_T"
+msgstr "c.p. 120/59 HVAP-T"
 
 msgid "_120mm_c_p_120_59_M365_67"
 msgstr "c.p. 120/59 M365 (67)"

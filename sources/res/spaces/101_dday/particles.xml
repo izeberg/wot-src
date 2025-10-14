@@ -66,6 +66,22 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_forward/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_forward/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_101_03_Vhouse03_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_101_04_VShed01_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
@@ -80,7 +96,10 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_beach_sand_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_ground_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_mill_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_dark_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_ground_lg.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_light_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_light_medium.vfx</fn_effect_bin>
@@ -88,6 +107,9 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_plume_sm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_smoke_very_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/101_dday_tree_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/127_japort_water_foam_ship.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_shore_waves.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/interior/31_airfield_shore_wavesmall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_101_RoadPoles_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/hd_env_101_RoadPoles_01_touchdown.vfx</fn_effect_bin>
@@ -141,8 +163,8 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_101_09_WoodenFurniture_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_101_10_ChickenCoop.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_101_11_FirewoodPile_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_112_16_LostStuff.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_19_05_Barell_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_19_27_MarketStall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_AF_026_Cart.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_UNI_040_Snag.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_env_UNI_622_FieldJunk_01.vfx</fn_effect_bin>
@@ -188,16 +210,12 @@
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_UNI_806_SdKfz251.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_UNI_806_SdKfz251_Ram.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mle_UNI_820_EightyEight_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_02_45mm_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_02_45mm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_05_03_Pak40_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Objects/inf_smallpole.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/101_dday_airdefence.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_forward/PFX/Environment/Scenarios/101_dday_paratroopers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -242,7 +260,10 @@
 		<fn_effect_bin>particles/environment/interior/101_dday_beach_sand_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_ground_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_dark_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground_lg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_medium.eff</fn_effect_bin>
@@ -250,6 +271,12 @@
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_plume_sm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_tree_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_water_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_water_splash_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/127_japort_water_foam_ship.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_waves.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wavesmall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_touchdown.eff</fn_effect_bin>
@@ -303,8 +330,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_09_WoodenFurniture_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_10_ChickenCoop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_11_FirewoodPile_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_env_112_16_LostStuff.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_19_05_Barell_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env_19_27_MarketStall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_AF_026_Cart.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_040_Snag.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_622_FieldJunk_01.eff</fn_effect_bin>
@@ -350,16 +377,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_806_SdKfz251.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_806_SdKfz251_Ram.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_820_EightyEight_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_03_Pak40_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_smallpole.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/101_dday_airdefence.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/101_dday_paratroopers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>
@@ -429,6 +452,10 @@
 			<texture>particles/content_deferred/PFX_textures/eff_tex_water_101_dday_ext.dds</texture>
 		</preload>
 		<preload>
+			<shader>\data\shaders\ps_water_displacement.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_tex_water_10_hills.dds</texture>
+		</preload>
+		<preload>
 			<shader>\data\shaders\ps_foam.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_tex_water.dds</texture>
 		</preload>
@@ -496,6 +523,22 @@
 			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/eff_rocket_accelerator.dds</texture>
 		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/eff_customization_2.dds</texture>
+		</preload>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_101_03_Vhouse03_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_101_04_VShed01_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Buildings/inf_bld_UNI_000_Base_01.vfx</fn_effect_bin>
@@ -510,7 +553,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_beach_sand_01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_ground_fire.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_mill_smoke.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_dark_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_ground.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_ground_lg.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_light_area.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_light_medium.vfx</fn_effect_bin>
@@ -518,6 +564,17 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_plume_sm.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_smoke_very_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_tree_fire_small.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_water_splash.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_water_splash_big.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/101_dday_water_splash_P.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/127_japort_water_foam_ship.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wave.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wave_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_waves.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_waves_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wavesmall.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_shore_wavesmall_s.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/interior/31_airfield_splash_P.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env007_SnagHeap3.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_101_RoadPoles_01_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/hd_env_101_RoadPoles_01_touchdown.vfx</fn_effect_bin>
@@ -571,8 +628,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_101_09_WoodenFurniture_02.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_101_10_ChickenCoop.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_101_11_FirewoodPile_02.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_112_16_LostStuff.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_19_05_Barell_2.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_19_27_MarketStall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_AF_026_Cart.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_UNI_040_Snag.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_env_UNI_622_FieldJunk_01.vfx</fn_effect_bin>
@@ -618,16 +675,12 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_UNI_806_SdKfz251.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_UNI_806_SdKfz251_Ram.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mle_UNI_820_EightyEight_01.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleAF_002_Radiolocator.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_02_45mm_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_02_45mm_2.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_05_03_Pak40_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_mleSU_83_02_OpelBlitz_1.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_medium.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_shells_detonation_small.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Objects/inf_smallpole.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/101_dday_airdefence.vfx</fn_effect_bin>
-		<fn_effect_bin>particles/content_deferred/PFX/Environment/Scenarios/101_dday_paratroopers.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_big.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Trees/Broadleaves/inf_tree_bush_dry_fall_small.vfx</fn_effect_bin>
@@ -672,7 +725,10 @@
 		<fn_effect_bin>particles/environment/interior/101_dday_beach_sand_01.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_ground_fire.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_mill_smoke.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_dark_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_ground_lg.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_area.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_light_medium.eff</fn_effect_bin>
@@ -680,6 +736,12 @@
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_plume_sm.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_smoke_very_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/environment/interior/101_dday_tree_fire_small.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_water_splash.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/101_dday_water_splash_big.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/127_japort_water_foam_ship.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wave.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_waves.eff</fn_effect_bin>
+		<fn_effect_bin>particles/environment/interior/31_airfield_shore_wavesmall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env007_SnagHeap3.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/hd_env_101_RoadPoles_01_touchdown.eff</fn_effect_bin>
@@ -733,8 +795,8 @@
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_09_WoodenFurniture_02.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_10_ChickenCoop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_101_11_FirewoodPile_02.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Environment/objects/inf_env_112_16_LostStuff.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_19_05_Barell_2.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_env_19_27_MarketStall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_AF_026_Cart.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_040_Snag.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_env_UNI_622_FieldJunk_01.eff</fn_effect_bin>
@@ -780,16 +842,12 @@
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_806_SdKfz251.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_806_SdKfz251_Ram.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mle_UNI_820_EightyEight_01.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mleAF_002_Radiolocator.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_02_45mm_2.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_05_03_Pak40_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_mleSU_83_02_OpelBlitz_1.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_medium.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_shells_detonation_small.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/objects/inf_smallpole.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/101_dday_airdefence.eff</fn_effect_bin>
-		<fn_effect_bin>particles/Environment/scenarios/101_dday_paratroopers.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_big.eff</fn_effect_bin>
 		<fn_effect_bin>particles/Environment/trees/Broadleaves/inf_tree_bush_dry_fall_small.eff</fn_effect_bin>

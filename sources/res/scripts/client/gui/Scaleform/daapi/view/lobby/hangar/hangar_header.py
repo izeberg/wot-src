@@ -66,7 +66,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         return
 
     def onQuestBtnClick(self, questType, questID):
-        _, flagsGetter = self.__hangarGuiCtrl.getHangarHeaderBlock()
+        _, flagsGetter = self.__hangarGuiCtrl.sfController.currentPresetGetter.getHangarHeaderBlock()
         if flagsGetter is not None:
             flagsGetter.showQuestsInfo(questType, questID)
         return
@@ -153,7 +153,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         return
 
     def _makeHeaderVO(self):
-        isVisible, flagsGetter = self.__hangarGuiCtrl.getHangarHeaderBlock()
+        isVisible, flagsGetter = self.__hangarGuiCtrl.sfController.currentPresetGetter.getHangarHeaderBlock()
         if flagsGetter is None:
             return {'isVisible': isVisible, 'quests': []}
         else:
@@ -192,7 +192,7 @@ class HangarHeader(HangarHeaderMeta, IGlobalListener, IEventBoardsListener):
         return ''
 
     def __updateWidget(self):
-        alias = self.__hangarGuiCtrl.getHangarWidgetAlias() or self.__getBPWidget()
+        alias = self.__hangarGuiCtrl.sfController.currentPresetGetter.getHangarWidgetAlias() or self.__getBPWidget()
         if not self.__activeWidgets.update(ActiveWidgets.CENTER, alias):
             return
         self.as_addEntryPointS(alias)

@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import FUN_RANDOM_NOTIFICATIONS

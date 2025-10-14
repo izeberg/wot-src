@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewitems
 from chat_shared import SYS_MESSAGE_TYPE
 from fun_random.gui.feature.util.fun_mixins import FunProgressionWatcher
 from fun_random.gui.fun_gui_constants import SCH_CLIENT_MSG_TYPE
@@ -55,7 +57,7 @@ class FunRandomLootBoxAutoOpenHandler(ServiceChannelHandler, FunProgressionWatch
     def __showAward(self):
         legendaryRewards = []
         otherRewards = []
-        for lootboxID, lootboxData in self.__lootBoxData.iteritems():
+        for lootboxID, lootboxData in viewitems(self.__lootBoxData):
             lb = self.itemsCache.items.tokens.getLootBoxByID(lootboxID)
             if lb and lb.getCategory() == FEP_CATEGORY:
                 awardList = legendaryRewards if lb.getType() == FunRandomLootBoxTypes.LEGENDARY else otherRewards

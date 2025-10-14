@@ -2476,10 +2476,10 @@
 			<cooldownTime>25</cooldownTime>
 			<spottedMarkedTime>10</spottedMarkedTime>
 			<unspottedMarkedTime>7</unspottedMarkedTime>
-			<damageIncome_armor>
+			<damageIncomeFactor>
 				1.1
 				<!--BW_String-->
-			</damageIncome_armor>
+			</damageIncomeFactor>
 		</targetDesignator>
 	</mechanics>
 	<effects>

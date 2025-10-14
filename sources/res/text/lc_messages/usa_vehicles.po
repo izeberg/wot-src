@@ -979,6 +979,30 @@ msgstr "M-V-Y"
 msgid "A144_M_VI_Y"
 msgstr "M-VI-Y"
 
+msgid "A144_M_VI_Y_CFE_R"
+msgstr "M-VI-Y (120)"
+
+msgid "A144_M_VI_Y_CFE_R_desc"
+msgstr ""
+"A project proposed by the H.L. Yoh company as part of a program to develop "
+"prospective tanks with a so-called reserve track. It had a powerful muzzle "
+"brake on a high-caliber gun, which distinguished it from other vehicles "
+"developed by the company. The project was never produced."
+
+msgid "A144_M_VI_Y_CFE_R_long_special"
+msgstr ""
+"The M-VI-Y (120) is a Tier IX American heavy tank that excels at holding "
+"down key positions thanks to its impressive turret armor and exceptional gun"
+" depression angles. The newest member of the Yoh family, it is capable of "
+"causing significant single-shot damage, and also boasts the familiar reserve"
+" track mechanic."
+
+msgid "A144_M_VI_Y_CFE_R_short"
+msgstr "M-VI-Y (120)"
+
+msgid "A144_M_VI_Y_CFE_R_short_special"
+msgstr "Impressive turret armor, exceptional gun depression angles"
+
 msgid "A144_M_VI_Y_descr"
 msgstr ""
 "The M-VI-Y is one of the projects put forward by H.L. Yoh Company Inc. as a "
@@ -1648,6 +1672,35 @@ msgstr "Stinger"
 msgid "A174_T57_58_Rush_Ep1_short_special"
 msgstr "Magazine loading system and a unique exterior"
 
+msgid "A175_LTC_II"
+msgstr "LTC II"
+
+msgid "A175_LTC_II_descr"
+msgstr ""
+"In 1957, G.O. Noville & Associates proposed developing an amphibious tank in"
+" line with a concept from George Noville. It was designated ATAC II "
+"(Amphibious Tank Alternate Concept, second variant). An interesting albeit "
+"expensive project was developed for a vehicle with a 90 mm gun, a jet drive,"
+" hollow aluminum rollers, and other innovations. At the same time, the "
+"military wanted to produce a cheaper light tank, primarily to ensure that it"
+" could be transported by C-130 Hercules aircraft. In order to do this, the "
+"tank's amphibious capability was removed by replacing the bogie wheels with "
+"steel ones. However, the weight and cost reduction turned out to be so "
+"insignificant that the project was discontinued before a prototype was "
+"built. The M551 Sheridan tank became a priority area for development."
+
+msgid "A175_LTC_II_long_special"
+msgstr ""
+"The LTC II is a Tier IX American light tank with a high-capacity autoloader "
+"capable of dealing impressive damage in a single clip. Its reserve track "
+"mechanic, similar to that of Yoh tanks, means it is rarely immobilized."
+
+msgid "A175_LTC_II_short"
+msgstr "LTC II"
+
+msgid "A175_LTC_II_short_special"
+msgstr "Reserve track, high-capacity autoloader"
+
 msgid "A176_M103_110"
 msgstr "M103M"
 
@@ -1699,6 +1752,34 @@ msgstr "M103M"
 
 msgid "A176_M103_110_short_special"
 msgstr "High rate of fire, good frontal armor"
+
+msgid "A178_SPHT"
+msgstr "SPHT"
+
+msgid "A178_SPHT_descr"
+msgstr ""
+"This project stood out from U.S. tanks developed in the late 1950s to early "
+"1960s chiefly in terms of appearance, since the vehicle was assembled from "
+"rolled armor plates. In that period, American tanks had cast hulls and "
+"turrets produced by a limited number of factories. This was sufficient "
+"during peacetime, but not enough under mobilization conditions. The military"
+" needed to build a tank using rolled plates as a fall-back. The Detroit-"
+"based Independent Engineering Company started the development and proposed a"
+" design for a vehicle with a turret and hull made from rolled steel. The "
+"project was terminated at the stage of firing at dummies."
+
+msgid "A178_SPHT_long_special"
+msgstr ""
+"The SPHT is a Tier IX American heavy tank that blends the traits of heavies "
+"and mediums. Despite its mediocre armor, it has strong mobility and speed. "
+"Its accurate, high-DPM gun makes it a solid damage dealer, while a sturdy "
+"turret and good depression angles enable effective hull-down play."
+
+msgid "A178_SPHT_short"
+msgstr "SPHT"
+
+msgid "A178_SPHT_short_special"
+msgstr "Good mobility, versatile gun"
 
 msgid "A179_Black_Rock"
 msgstr "Black Rock"
@@ -1790,6 +1871,26 @@ msgstr ""
 "Light SPG on the M24 chassis saw service in the U.S. Army until the mid "
 "1950s. Some vehicles were supplied to France. According to various sources, "
 "about 85–250 SPGs were manufactured."
+
+msgid "A192_M4A4_Firefly_CFE_A"
+msgstr "Sherman Firefly Saunders"
+
+msgid "A192_M4A4_Firefly_CFE_A_descr"
+msgstr ""
+"A variant of the American M4A4 Sherman, this tank was fitted with a 30-cylinder Chrysler A57 Multibank engine that, according to British records, proved highly reliable. Developed in early 1944, it stood out with its more powerful 17-pounder gun, relocated radio, expanded ammo rack, and the removal of both the bow gun and the assistant driver's seat.\n"
+"The tank is crewed by seasoned students from Saunders University High School. True to their tradition of showcasing American culture, the team fights in U.S.-made vehicles painted in a dark-olive base color. This Sherman carries the school's emblem—a pointed shield with a blue star and yellow lightning bolt, topped with a red ribbon bearing the school's name."
+
+msgid "A192_M4A4_Firefly_CFE_A_long_special"
+msgstr ""
+"This medium tank may not boast outstanding dynamics or armor, but its "
+"exceptional gun can deal damage at any distance, while its decent view range"
+" allows for easy spotting of enemy vehicles."
+
+msgid "A192_M4A4_Firefly_CFE_A_short"
+msgstr "Firefly Saunders"
+
+msgid "A192_M4A4_Firefly_CFE_A_short_special"
+msgstr "An accurate gun with high penetration and rate of fire"
 
 msgid "A21_T14_long_special"
 msgstr ""
@@ -2345,6 +2446,12 @@ msgstr "AN/VRC-7"
 msgid "AN-VRC-7_SH"
 msgstr "AN/VRC-7A"
 
+msgid "AN_ARC_27_RC"
+msgstr "AN/GRC-7 RC"
+
+msgid "AN_GRC_6_SPHT"
+msgstr "AN/GRC-6 SPHT"
+
 msgid "AN_GRC_7"
 msgstr "AN/GRC-7"
 
@@ -2356,6 +2463,9 @@ msgstr "AN/GRC-7"
 
 msgid "AN_GRC_7BR"
 msgstr "AN/GRC-7BR"
+
+msgid "AN_GRC_7_LTC"
+msgstr "AN/GRC-7 LTC"
 
 msgid "AN_GRC_8"
 msgstr "AN/GRC-8"
@@ -2440,6 +2550,9 @@ msgstr ""
 
 msgid "British_Wireless_set_N19"
 msgstr "Wireless Set No. 19"
+
+msgid "British_Wireless_set_N19A"
+msgstr "WS No. 19 A Special"
 
 msgid "Buick_series_60"
 msgstr "Buick Series 60"
@@ -2642,6 +2755,9 @@ msgstr "M-VI-Y A"
 msgid "Chassis_A144_M_VI_Y_2"
 msgstr "M-VI-Y B"
 
+msgid "Chassis_A144_M_VI_Y_CFE_R"
+msgstr "M-VI-Y (120)"
+
 msgid "Chassis_A145_TS_54"
 msgstr "TS-54"
 
@@ -2723,11 +2839,17 @@ msgstr "Sherman Crab"
 msgid "Chassis_A174_T57_58_Rush_Ep1"
 msgstr "Stinger"
 
+msgid "Chassis_A175_LTC_II"
+msgstr "LTC II"
+
 msgid "Chassis_A176_M103_110"
 msgstr "M103M"
 
 msgid "Chassis_A176_M103_110_CFE_R"
 msgstr "Rambo"
+
+msgid "Chassis_A178_SPHT"
+msgstr "SPHT"
 
 msgid "Chassis_A179_Black_Rock"
 msgstr "Black Rock"
@@ -2743,6 +2865,9 @@ msgstr "T72"
 
 msgid "Chassis_A18_M41_2"
 msgstr "T72E1"
+
+msgid "Chassis_A192_M4A4_Firefly_CFE_A"
+msgstr "Sherman Firefly Saunders"
 
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -2993,6 +3118,9 @@ msgstr "T95E6"
 msgid "Chrysler_1200_HP"
 msgstr "Chrysler 1200 HP"
 
+msgid "Chrysler_A57_multibank_A"
+msgstr "Chrysler A57 Multibank A"
+
 msgid "Continental_AOI-1195-5"
 msgstr "Continental AOI-1195-5"
 
@@ -3152,6 +3280,14 @@ msgstr ""
 "Continental\n"
 "AOSI-1195-5 Y VI B"
 
+msgid "Continental_AOSI_1195_5_Y_VI_RC"
+msgstr "Continental AOSI-1195-5 Y VI RC"
+
+msgid "Continental_AOSI_1195_5_Y_VI_RC_short"
+msgstr ""
+"Continental\n"
+"AOSI-1195-5 Y VI RC"
+
 msgid "Continental_AOSI_1195_5_Y_V_short"
 msgstr ""
 "Continental\n"
@@ -3201,6 +3337,14 @@ msgid "Continental_AOSI_895_5_short"
 msgstr ""
 "Continental\n"
 "AOSI-895-5"
+
+msgid "Continental_AOSI_895_6_LTC"
+msgstr "Continental AOSI-895-6 LTC"
+
+msgid "Continental_AOSI_895_6_LTC_short"
+msgstr ""
+"Continental\n"
+"AOSI-895-6 LTC"
 
 msgid "Continental_AOS_895_1"
 msgstr "Continental AOS-895-1"
@@ -3328,6 +3472,14 @@ msgid "Continental_AVDS_1790_2D_short"
 msgstr ""
 "Continental\n"
 "AVDS-1790-2D"
+
+msgid "Continental_AVDS_1790_2_SPHT"
+msgstr "Continental AVDS-1790-2 SPHT"
+
+msgid "Continental_AVDS_1790_2_SPHT_short"
+msgstr ""
+"Continental\n"
+"AVDS-1790-2 SPHT"
 
 msgid "Continental_AVDS_1790_8BR"
 msgstr "Continental AVDS-1790-8BR"
@@ -4040,6 +4192,9 @@ msgstr "WS No. 19 Mk. I"
 msgid "NVSS_T80_BPXIV"
 msgstr "NVSS T80"
 
+msgid "OQF_17pdr_Gun_Mk_VIIA"
+msgstr "OQF 17-pdr Gun Mk. VIIA"
+
 msgid "Ordnance_QF_2pdr_AT_Gun_Mk.X"
 msgstr "QF 2-pdr Mk. IX"
 
@@ -4668,6 +4823,9 @@ msgstr "M-V-Y JJ"
 msgid "Turret_1_A144_M_VI_Y"
 msgstr "M-VI-Y A"
 
+msgid "Turret_1_A144_M_VI_Y_CFE_R"
+msgstr "M-VI-Y (120)"
+
 msgid "Turret_1_A145_TS_54"
 msgstr "TS-54"
 
@@ -4743,11 +4901,17 @@ msgstr "Sherman Crab"
 msgid "Turret_1_A174_T57_58_Rush_Ep1"
 msgstr "Stinger"
 
+msgid "Turret_1_A175_LTC_II"
+msgstr "LTC II"
+
 msgid "Turret_1_A176_M103_110"
 msgstr "M103M"
 
 msgid "Turret_1_A176_M103_110_CFE_R"
 msgstr "Rambo"
+
+msgid "Turret_1_A178_SPHT"
+msgstr "SPHT"
 
 msgid "Turret_1_A179_Black_Rock"
 msgstr "Black Rock"
@@ -4760,6 +4924,9 @@ msgstr "XM69 Hacker"
 
 msgid "Turret_1_A18_M41"
 msgstr "M41 HMC"
+
+msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
+msgstr "Sherman Firefly Saunders"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -5680,6 +5847,9 @@ msgstr "M358/66"
 msgid "_120mm_APBC_M358"
 msgstr "APBC M358"
 
+msgid "_120mm_APCR_M361_M_VI_Y_RC"
+msgstr "APCR M361 (M-VI-Y) RC"
+
 msgid "_120mm_APCR_T62"
 msgstr "APCR T62"
 
@@ -5779,6 +5949,12 @@ msgstr "120 mm AT Gun T53 (T95)"
 msgid "_120mm_American_British_Gun"
 msgstr "120 mm American British Gun"
 
+msgid "_120mm_American_British_Gun_RC"
+msgstr "120 mm American British Gun RC"
+
+msgid "_120mm_Delta_SPHT"
+msgstr "120 mm Delta SPHT"
+
 msgid "_120mm_Gun_M58"
 msgstr "120 mm Gun M58"
 
@@ -5836,6 +6012,9 @@ msgstr "HEAT-T M469C"
 msgid "_120mm_HEAT-T_M469_SH"
 msgstr "AP-T M469"
 
+msgid "_120mm_HEATFS_M469_SPHT"
+msgstr "M469 SPHT"
+
 msgid "_120mm_HEAT_M469E5"
 msgstr "HEAT M469E5"
 
@@ -5847,6 +6026,9 @@ msgstr "HEAT M469 (M103)"
 
 msgid "_120mm_HEAT_M469_M_VI_Y"
 msgstr "HEAT M469 (M-VI-Y)"
+
+msgid "_120mm_HEAT_M469_M_VI_Y_RC"
+msgstr "HEAT M469 (M-VI-Y) RC"
 
 msgid "_120mm_HEAT_M469_T122"
 msgstr "HEAT M469 (T122)"
@@ -5881,6 +6063,9 @@ msgstr "HE M356E5"
 msgid "_120mm_HE_M356_M103"
 msgstr "HE M356 (M103)"
 
+msgid "_120mm_HE_M356_SPHT"
+msgstr "M356 SPHT"
+
 msgid "_120mm_HE_M358"
 msgstr "HE M358"
 
@@ -5895,6 +6080,9 @@ msgstr "HE Shell C"
 
 msgid "_120mm_HE_T15E3_M_VI_Y"
 msgstr "HE T15E3 (M-VI-Y)"
+
+msgid "_120mm_HE_T15E3_M_VI_Y_RC"
+msgstr "HE T15E3 (M-VI-Y) RC"
 
 msgid "_120mm_HE_T15E3_T122"
 msgstr "HE T15E3 (T122)"
@@ -5928,6 +6116,9 @@ msgstr "HE-T M356E1"
 
 msgid "_120mm_HE_XM66F"
 msgstr "M357/66"
+
+msgid "_120mm_HVAPDS_T102_SPHT"
+msgstr "T102 SPHT"
 
 msgid "_120mm_MPP_Gun_RHD"
 msgstr "120 mm MPP Gun RHD"
@@ -6144,6 +6335,15 @@ msgstr "155 mm Howitzer M1 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
+
+msgid "_17pdr_APC_Mk4TA"
+msgstr "APDS 17-Pr. Mk. 1TA"
+
+msgid "_17pdr_AP_Mk3TA"
+msgstr "APCBC 17-Pr. Mk. 9TA"
+
+msgid "_17pdr_HE_Mk1TA"
+msgstr "HE 17-Pr. Mk. 2TA"
 
 msgid "_203mm_AP_M106_M78"
 msgstr "AP M106/M78"
@@ -6948,6 +7148,9 @@ msgstr "APFSDS T320"
 msgid "_90mm_APFSDS_T320_HLY"
 msgstr "APFSDS T320 HLY"
 
+msgid "_90mm_APFSDS_T320_LTC"
+msgstr "T320 LTC"
+
 msgid "_90mm_AP_M318"
 msgstr "AP M318"
 
@@ -7125,6 +7328,9 @@ msgstr "90 mm Gun T208 (rifled)"
 msgid "_90mm_Gun_T208_rifled_HLY"
 msgstr "90 mm Gun T208 (rifled) HLY"
 
+msgid "_90mm_Gun_T208_rifled_LTC"
+msgstr "90mm Gun T208 (rifled) LTC"
+
 msgid "_90mm_Gun_T7"
 msgstr "90 mm Gun T7"
 
@@ -7154,6 +7360,9 @@ msgstr "AP M431"
 
 msgid "_90mm_HEAT_T108E45"
 msgstr "HEAT T108E45"
+
+msgid "_90mm_HEAT_T328_LTC"
+msgstr "T328 LTC"
 
 msgid "_90mm_HEP_T142E2"
 msgstr "HEP T142E2"
@@ -7208,6 +7417,9 @@ msgstr "HE M71 (T32)"
 
 msgid "_90mm_HE_T340"
 msgstr "HE T340"
+
+msgid "_90mm_HE_T340E14H_LTC"
+msgstr "T340E14H LTC"
 
 msgid "_90mm_HE_T340_M_II_Y"
 msgstr "HE T340 (M-II-Y)"

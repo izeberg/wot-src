@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.741068 0.002480 -3.601313</min>
+		<max>1.736429 1.224208 3.561091</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod0/Chassis</nodefullVisual>
+	<parent>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod1/Chassis</parent>
+	<extent>32.000000</extent>
+</root>

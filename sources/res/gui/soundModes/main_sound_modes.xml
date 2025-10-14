@@ -975,6 +975,96 @@
 			</wwbanks>
 		</mode>
 		<mode>
+			<name>hw25_Quickybaby_en</name>
+			<wwise_language>HW25/HW25_en_GB_Quickybaby</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_en_GB_Quickybaby/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_Mailand_de</name>
+			<wwise_language>HW25/HW25_de_DE_Mailand</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_de_DE_Mailand/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_MouzAkrobat_de</name>
+			<wwise_language>HW25/HW25_de_DE_MouzAkrobat</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_de_DE_MouzAkrobat/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_Skill4ltu_en</name>
+			<wwise_language>HW25/HW25_en_US_Skill4ltu</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_en_US_Skill4ltu/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_full_crew_en</name>
+			<wwise_language>HW25/HW25_en_US_FullCrew</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_en_US_FullCrew/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_LuJun_cn</name>
+			<wwise_language>HW25/HW25_zh_CN_LuJun</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_zh_CN_LuJun/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_Titi_cn</name>
+			<wwise_language>HW25/HW25_zh_CN_Titi</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_zh_CN_Titi/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_DaKun_cn</name>
+			<wwise_language>HW25/HW25_zh_CN_DaKun</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_zh_CN_DaKun/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_Panchezhang_cn</name>
+			<wwise_language>HW25/HW25_zh_CN_Panchezhang</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_zh_CN_Panchezhang/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>hw25_full_crewCN_cn</name>
+			<wwise_language>HW25/HW25_zh_CN_FullCrewCN</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>HW25/HW25_zh_CN_FullCrewCN/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
 			<name>celebrity2023_en</name>
 			<wwise_language>cel_23_en</wwise_language>
 			<description/>
@@ -1269,6 +1359,15 @@
 			<invisible>True</invisible>
 			<wwbanks>
 				<bank>gup_jp/gup_crew_25/voiceover.bnk</bank>
+			</wwbanks>
+		</mode>
+		<mode>
+			<name>gup_kei</name>
+			<wwise_language>gup_jp/gup_kei</wwise_language>
+			<description/>
+			<invisible>True</invisible>
+			<wwbanks>
+				<bank>gup_jp/gup_kei/voiceover.bnk</bank>
 			</wwbanks>
 		</mode>
 		<mode>

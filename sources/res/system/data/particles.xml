@@ -282,6 +282,8 @@
 		<fn_effect_bin>particles/3D_Customization/Cus_101_WT_Container/Cus_101_WT_Container_idle.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_99_WT_Machinegun/cus_99_wt_machinegun_shot.eff</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_97_WT_Electriccontainer/Cus_97_WT_Electriccontainer_Close.eff</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/idle_fire_big01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/rocket_accelerator/idle_fire_big01.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/destruction/bc_25t_extendedammo_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Tank/destruction/bc_25t_extendedammo_explosion.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/rocket_accelerator/idle_liquidfuel_bz79.eff</fn_effect_bin>
@@ -310,6 +312,10 @@
 		<preloadVisual>particles/Tank/mechanics/ion_engine_flame.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_glow.visual</preloadVisual>
 		<preloadVisual>particles/Tank/mechanics/ion_engine_glow_side.visual</preloadVisual>
+		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_forward/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_forward/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>
@@ -3071,6 +3077,10 @@
 		</preload>
 		<preload>
 			<shader>\data\shaders\ps_long.fx</shader>
+			<texture>particles/content_deferred/PFX_textures/FireTrunkAtlasLong_03.dds</texture>
+		</preload>
+		<preload>
+			<shader>\data\shaders\ps_long.fx</shader>
 			<texture>particles/content_deferred/PFX_textures/electric_engine.dds</texture>
 		</preload>
 		<preload>
@@ -3298,6 +3308,8 @@
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_engine.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/3D_Customization/Cus_66_PM3_Jetpack/Cus_66_PM3_Jetpack_start.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/tank/rocket_accelerator/idle_fire_big01.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/rocket_accelerator/idle_fire_big01.vfx</fn_effect_bin>
 		<preloadVisual>particles/gpu_mesh/mesh/metal_sheet_medium_02.visual</preloadVisual>
 		<fn_effect_bin>particles/Tank/destruction/bc_25t_extendedammo_explosion.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/destruction/bc_25t_extendedammo_explosion.vfx</fn_effect_bin>
@@ -3335,6 +3347,10 @@
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/exhaust/cs67_turbo_start.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/Tank/exhaust/cs67_turbo_stop.eff</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Tank/exhaust/cs67_turbo_stop.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.eff</fn_effect_bin>
+		<fn_effect_bin>particles/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.eff</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/mgun_shooting.vfx</fn_effect_bin>
+		<fn_effect_bin>particles/content_deferred/PFX/Tank/customization/G177_E65_Zwilling_W25_3Dst/steam_exhaust.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_gearup.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_idle.vfx</fn_effect_bin>
 		<fn_effect_bin>particles/content_deferred/PFX/Environment/Battle_Royal/Afterburning/br_nitro_load.vfx</fn_effect_bin>

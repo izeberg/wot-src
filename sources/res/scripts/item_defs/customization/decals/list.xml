@@ -1865,8 +1865,32 @@
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/cool</userString>
 		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>848</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_74.dds</texture>
+			<userString>#vehicle_customization:emblem/cool/sticker_74</userString>
+			<mirror>true</mirror>
+		</decal>
+		<name>Yandex</name>
+		<type>EMBLEM</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/cool</userString>
+		<season>ALL</season>
 		<historical>0</historical>
 		<priceGroup>emblems 50g</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>15668</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_01.dds</texture>
@@ -1905,17 +1929,17 @@
 		</decal>
 		<name>Cool</name>
 		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/cool</userString>
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>407</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_520.dds</texture>
@@ -1924,17 +1948,17 @@
 		</decal>
 		<name>Roaring Waves</name>
 		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/cool</userString>
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>414</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_52.dds</texture>
@@ -1943,17 +1967,17 @@
 		</decal>
 		<name>EU: 24 Hour Stream</name>
 		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/cool</userString>
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>367</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_53.dds</texture>
@@ -1968,17 +1992,17 @@
 		</decal>
 		<name>EU: Mother&apos;s Day and Father&apos;s Day</name>
 		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/cool</userString>
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>427</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_60.dds</texture>
@@ -1987,17 +2011,17 @@
 		</decal>
 		<name>Brazil Carnival</name>
 		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/cool</userString>
 		<season>ALL</season>
 		<historical>1</historical>
 		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
 		<decal>
 			<id>486</id>
 			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_62.dds</texture>
@@ -2012,30 +2036,6 @@
 		</decal>
 		<name>Cosmonautics Day 2021</name>
 		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
-	</itemGroup>
-	<itemGroup>
-		<userString>#vehicle_customization:emblem/cool</userString>
-		<season>ALL</season>
-		<historical>1</historical>
-		<priceGroup>emblems 50g notInShop</priceGroup>
-		<decal>
-			<id>848</id>
-			<texture>gui/maps/vehicles/decals/player_stickers/cool/sticker_74.dds</texture>
-			<userString>#vehicle_customization:emblem/cool/sticker_74</userString>
-			<mirror>true</mirror>
-		</decal>
-		<name>Yandex</name>
-		<type>EMBLEM</type>
-		<vehicleFilter>
-			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1 poland:Pl15_60TP_Lewandowskiego_CFE_A</vehicles>
-			</exclude>
-		</vehicleFilter>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/auto</userString>
@@ -8895,7 +8895,7 @@
 		<priceGroup>emblems 150g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -8932,6 +8932,43 @@
 			<mirror>false</mirror>
 			<tags>hiddenInUI</tags>
 		</decal>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:emblem/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>emblems 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+			<include>
+				<levels>8 9 10 11</levels>
+			</include>
+		</vehicleFilter>
+		<decal>
+			<id>1186</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_873.dds</texture>
+			<userString>#vehicle_customization:special_style/clans_2d_2025_2</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1187</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_874.dds</texture>
+			<userString>#vehicle_customization:special_style/clans_2d_2025_3</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1188</id>
+			<texture>gui/maps/vehicles/decals/player_stickers/special/sticker_875.dds</texture>
+			<userString>#vehicle_customization:special_style/clans_2d_2025_4</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>Clans 2D 2025</name>
+		<type>EMBLEM</type>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:emblem/IGR</userString>
@@ -17047,7 +17084,7 @@
 		<priceGroup>inscriptions 285g notInShop</priceGroup>
 		<vehicleFilter>
 			<exclude>
-				<vehicles>usa:A174_T57_58_Rush_Ep1</vehicles>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
 			</exclude>
 		</vehicleFilter>
 		<decal>
@@ -17062,6 +17099,26 @@
 			<userString>#vehicle_customization:inscription/special/special_820</userString>
 			<mirror>false</mirror>
 		</decal>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1217</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_260.dds</texture>
+			<userString>#vehicle_customization:inscription/special/inscription_260</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>SH 2025</name>
+		<type>INSCRIPTION</type>
 	</itemGroup>
 	<itemGroup>
 		<userString>#vehicle_customization:inscription/IGR</userString>

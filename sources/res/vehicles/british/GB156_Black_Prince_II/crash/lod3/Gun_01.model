@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.557055 -0.173349 -1.052034</min>
+		<max>0.557924 0.161143 3.426622</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB156_Black_Prince_II/crash/lod3/Gun_01</nodefullVisual>
+	<parent>vehicles/british/GB156_Black_Prince_II/crash/lod4/Gun_01</parent>
+	<extent>192</extent>
+</root>

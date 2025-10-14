@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/_skins/J42_Chi_Se_AS5_3Dst/crash/lod2/Hull</nodefullVisual>
+	<parent>vehicles/japan/J42_Chi_Se/_skins/J42_Chi_Se_AS5_3Dst/crash/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.826866 -1.014404 -3.952541</min>
+		<max>1.825357 0.856448 3.669312</max>
+	</visibilityBox>
+	<tank>true</tank>
+</root>

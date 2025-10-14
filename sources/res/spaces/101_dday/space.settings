@@ -65,7 +65,7 @@
 			<type>
 				<name>GBufferDecals</name>
 				<atlas>
-					<width>2560</width>
+					<width>2304</width>
 					<height>1024</height>
 					<format>DXT5</format>
 					<constrains>
@@ -77,7 +77,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>2560</width>
+					<width>2304</width>
 					<height>1024</height>
 					<format>DXT5</format>
 					<constrains>
@@ -89,7 +89,7 @@
 					</constrains>
 				</atlas>
 				<atlas>
-					<width>2560</width>
+					<width>2304</width>
 					<height>1024</height>
 					<format>DXT5</format>
 					<constrains>
@@ -106,8 +106,8 @@
 	<flora>spaces/101_dday/flora.xml</flora>
 	<bounds>
 		<minX>-7</minX>
-		<maxX>7</maxX>
-		<minY>-8</minY>
+		<maxX>6</maxX>
+		<minY>-7</minY>
 		<maxY>6</maxY>
 	</bounds>
 	<farPlane>
@@ -146,4 +146,7 @@
 			<bitIndex>1</bitIndex>
 		</type>
 	</spaceVisibilityFlags>
+	<lightsCutOffDistance>500.000000</lightsCutOffDistance>
+	<isSimplifiedSHGridQualityOverridden>false</isSimplifiedSHGridQualityOverridden>
+	<overrideSimplifiedSHGridQuality>2</overrideSimplifiedSHGridQuality>
 </root>

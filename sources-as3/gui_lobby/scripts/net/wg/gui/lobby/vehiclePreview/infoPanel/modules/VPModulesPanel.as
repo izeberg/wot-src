@@ -38,6 +38,8 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel.modules
       
       private var _scheduler:IScheduler;
       
+      private var _isAnimationPlayed:Boolean = false;
+      
       public function VPModulesPanel()
       {
          this._scheduler = App.utils.scheduler;
@@ -47,6 +49,11 @@ package net.wg.gui.lobby.vehiclePreview.infoPanel.modules
       override public function playAnimation() : void
       {
          var _loc1_:IModuleSlot = null;
+         if(this._isAnimationPlayed)
+         {
+            return;
+         }
+         this._isAnimationPlayed = true;
          var _loc2_:int = _modules.length;
          var _loc3_:int = 0;
          while(_loc3_ < _loc2_)

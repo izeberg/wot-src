@@ -341,7 +341,7 @@ class IHangarSpaceReloader(object):
     def destroy(self):
         raise NotImplementedError
 
-    def changeHangarSpace(self, spaceName, visibilityMask, waitingMessage=None, backgroundImage=None):
+    def changeHangarSpace(self, spaceName, visibilityMask, waitingMessage=None, backgroundImage=None, force=False):
         raise NotImplementedError
 
     @property

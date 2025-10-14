@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/american/A178_SPHT/normal/lod1/Gun_03</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.692089 -0.274083 0.041080</min>
+		<max>0.328331 0.430215 5.195452</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A178_SPHT/normal/lod0/Gun_03</nodefullVisual>
+</root>

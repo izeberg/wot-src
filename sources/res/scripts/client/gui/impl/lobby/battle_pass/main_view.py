@@ -134,17 +134,19 @@ class MainView(ViewComponent[MainViewModel], IRoutableView):
         self.__safeCallOnActivePresenter('onExtraChapterExpired')
 
     def __switchSubView(self, presenterID, **kwargs):
-        if self.__activePresenterID in self._childrenUidByPosition:
+        parentPresenterID = _PARENTS.get(presenterID, presenterID)
+        if self.__activePresenterID in self._childrenUidByPosition and self.__activePresenterID != parentPresenterID:
             self.__safeCallOnActivePresenter('deactivate')
         kwargs['originStateID'] = self.__activePresenterID
         kwargs['childStateID'] = presenterID
-        self.__activePresenterID = _PARENTS.get(presenterID, presenterID)
+        self.__activePresenterID = parentPresenterID
         self.__updateActiveChapterID(**kwargs)
         if self.__activePresenterID not in self._childrenUidByPosition:
             self._registerChild(self.__activePresenterID, _PRESENTERS[self.__activePresenterID](**kwargs))
         else:
             self.__safeCallOnActivePresenter('updateInitialData', **kwargs)
-            self.__safeCallOnActivePresenter('activate')
+            if self.__activePresenterID != kwargs['originStateID']:
+                self.__safeCallOnActivePresenter('activate')
         self.__playSwitchSounds(kwargs.get('originStateID'), kwargs.get('chapterID'))
 
     def __updateActiveChapterID(self, **kwargs):

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod1/Hull</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>-1.701956 -0.674883 -3.947000</min>
+		<max>1.696333 0.559363 3.514001</max>
+	</visibilityBox>
+</root>

@@ -336,7 +336,7 @@ class _DetailsBlock(base.StatsBlock):
 
 
 class DamageDetailsBlock(_DetailsBlock):
-    __slots__ = ('piercings', 'damageDealtValues', 'damageDealtNames', '_isEmpty')
+    __slots__ = ('piercings', 'damageDealtValues', 'damageDealtNames')
 
     def __init__(self, meta=None, field='', *path):
         super(DamageDetailsBlock, self).__init__(meta, field, *path)

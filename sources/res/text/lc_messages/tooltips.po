@@ -2311,8 +2311,7 @@ msgid "battle_royale/hangar/perf/medium_risk/header"
 msgstr "Possible Reduced Performance"
 
 msgid "battle_royale/hangar/tankSetupPanel/ability/cooldownTime"
-msgstr ""
-"{whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close}s Cooldown time (s)"
+msgstr "{whiteSpanish_Open}%(cooldown)s{whiteSpanish_Close} Cooldown time (s)"
 
 msgid "battle_royale/hangar/vehicle/description/china"
 msgstr ""
@@ -8109,6 +8108,23 @@ msgstr "A unique crew member"
 msgid "notrecruitedtankman/expireTitle"
 msgstr "Recruitment"
 
+msgid "notrecruitedtankman/fisherman/desc"
+msgstr ""
+"Grew up where the air's thick enough to chew, and the gators are always "
+"watchin' your every move. My old man taught me to cast a line 'fore I could "
+"read, and I spent most my days on his beat-up boat, pullin' bass and catfish"
+" from waters full o' teeth. Ain't much room for fear out there, I tell ya. "
+"Now they got me drivin' a steel beast instead, and truth be told, it ain't "
+"all that different. Still takes steady hands, sharp eyes, and nerves tough "
+"as ol' leather. I ain't no hero, mind. Just a swamp man doin' his part, same"
+" as always."
+
+msgid "notrecruitedtankman/fisherman/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/fisherman/label"
+msgstr "?empty?"
+
 msgid "notrecruitedtankman/freeSkillsTitle"
 msgstr "Zero Perks"
 
@@ -8127,6 +8143,60 @@ msgid "notrecruitedtankman/frontman/howToGetInfo"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/frontman/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_alisa/desc"
+msgstr ""
+"A little short in stature as well as temper, this high-strung Vice-Commander"
+" considers intelligence-gathering on rival teams her favorite tactic. She "
+"has no qualms about bending the rules of Sensha-Dō if it means securing "
+"victory. So much so that she often gets chewed out by Kei when she gets "
+"caught."
+
+msgid "notrecruitedtankman/girls_und_panzer_alisa/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_alisa/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_kei/desc"
+msgstr ""
+"With her extraverted personality and impeccable sense of fair play, Kei is "
+"the playful yet skilled commander of Saunders University High School's "
+"Sensha-Dō team. She is the spiritual pillar of the team, and helps her "
+"teammates remember that victory tastes sweeter when it's served with a "
+"generous helping of fun."
+
+msgid "notrecruitedtankman/girls_und_panzer_kei/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_kei/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_naomi/desc"
+msgstr ""
+"This gum-chewing sharpshooter is too cool for school... unless, of course, "
+"that school has a Sensha-Dō team! Naomi may be calmer and more introverted "
+"than some of her teammates, but her skill with a gun is an immense threat to"
+" any opponent."
+
+msgid "notrecruitedtankman/girls_und_panzer_naomi/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_naomi/label"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saunders/desc"
+msgstr ""
+"A member of the Saunders Sensha-Dō team who usually operates in the M4A1 "
+"Sherman, commanded by Alisa. She's low-key getting tired of being caught in "
+"the crossfire of Alisa's occasional outbursts—and sitting through her rants "
+"about her frequent heartbreaks."
+
+msgid "notrecruitedtankman/girls_und_panzer_saunders/howToGetInfo"
+msgstr "?empty?"
+
+msgid "notrecruitedtankman/girls_und_panzer_saunders/label"
 msgstr "?empty?"
 
 msgid "notrecruitedtankman/howToGet"
@@ -8290,6 +8360,79 @@ msgstr ""
 
 msgid "notrecruitedtankman/hw24_commander5/label"
 msgstr "Babylon Project"
+
+msgid "notrecruitedtankman/hw25_DaKun_CN/desc"
+msgstr ""
+"作为首席战术研究员，大坤在巴比伦事件中凭借战场动态预判能力带领小队突围。其随身携带的改造版“实验记录仪”可实时解析敌方弱点，并通过加密频道向车组播报战术指令。因长期接触异常能量体，其听觉神经变异获得声波成像能力，能穿透战场迷雾标记高危目标，但代价是间歇性幻听——表现为突然插入冷笑话的广播杂讯。"
+
+msgid "notrecruitedtankman/hw25_DaKun_CN/label"
+msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/hw25_LuJun_CN/desc"
+msgstr ""
+"作为同盟组织的精英坦克手，陆军在巴比伦銤元素污染灾难中幸存，成为少数未被完全腐化的“人类火炬”。他凭借顶尖的战场直觉和个人号召力，带领小队突破次元裂隙，对抗被銤元素同化的怪物坦克。"
+
+msgid "notrecruitedtankman/hw25_LuJun_CN/label"
+msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Mailand/desc"
+msgstr ""
+"Operative Mailand returns from thrilling encounters within Mirium-infused "
+"steel beasts, overcoming each challenge with precise German accuracy. "
+"Equipped with strategic insights and battle-tested techniques, he's ready to"
+" share his expert tips and help you become a top-tier tanker. Join Mailand "
+"to refine your tactics and take down the opposition!"
+
+msgid "notrecruitedtankman/hw25_Mailand/label"
+msgstr "Babylon: Forbidden Zone"
+
+msgid "notrecruitedtankman/hw25_MouzAkrobat/desc"
+msgstr ""
+"Operative mouzAkrobat has faced some mysterious dangers over his journey to "
+"the Babylon anomaly. Now armed with valuable and unique tactical skills and "
+"battle-honed experience, this German commander returns to guide you toward "
+"absolute dominance on the battlefield. Elevate your tanking skills to new "
+"heights with mouzAkrobat!"
+
+msgid "notrecruitedtankman/hw25_MouzAkrobat/label"
+msgstr "Babylon: Forbidden Zone"
+
+msgid "notrecruitedtankman/hw25_Panchezhang_CN/desc"
+msgstr ""
+"他在混乱中始终保持古井不波的战术心态，当队友因未知恐惧陷入慌乱时，他总能以“换个角度看战局，废墟里也能找掩体”的从容话术稳定军心，其丰富的实战经验与大口径坦克信仰，使他在战斗中屡次以极限操作逆转战局。"
+
+msgid "notrecruitedtankman/hw25_Panchezhang_CN/label"
+msgstr "巴比伦: 荣耀征途"
+
+msgid "notrecruitedtankman/hw25_Quickybaby/desc"
+msgstr ""
+"Operative QuickyBaby survived the mysterious forces of Mirium and emerged "
+"stronger than ever as a true hero. Armed with firsthand insights and battle-"
+"proven wisdom, he leads the charge, showing exactly what it takes to become "
+"a formidable tank commander. Join him to sharpen your skills and dominate "
+"the battlefield!"
+
+msgid "notrecruitedtankman/hw25_Quickybaby/label"
+msgstr "Babylon: Forbidden Zone"
+
+msgid "notrecruitedtankman/hw25_Skill4ltu/desc"
+msgstr ""
+"Operative Skill4ltu has completed several missions deep within the Mirium "
+"subspace, having faced its most challenging threats without flinching. Now "
+"he's back—armed with invaluable battlefield insights and refined tactical "
+"wisdom—and ready to share his expertise to help you become a truly "
+"unstoppable commander. With Skill4ltu at your side, the road to victory is "
+"yours to pave!"
+
+msgid "notrecruitedtankman/hw25_Skill4ltu/label"
+msgstr "Babylon: Forbidden Zone"
+
+msgid "notrecruitedtankman/hw25_Titi_CN/desc"
+msgstr ""
+"作为前线战术指挥官，她凭借硬核实力和天生的战场直觉，驾驶坦克为队友撤离断后，并在銤元素污染中幸存。当巴比伦次元裂隙扩大，她将带领小队深入污染区，成为首批深入污染区的女车长。"
+
+msgid "notrecruitedtankman/hw25_Titi_CN/label"
+msgstr "巴比伦: 荣耀征途"
 
 msgid "notrecruitedtankman/ny19men/desc"
 msgstr ""
@@ -12955,7 +13098,7 @@ msgid "setting_window/controls/key_input/ptt/warning"
 msgstr "The %(keyName)s key is already assigned to another action."
 
 msgid "setting_window/controls/key_input/warning"
-msgstr "Key %(keyName)s assigned."
+msgstr "Key %(keyName)s reserved."
 
 msgid "settings/damagelog/details/body"
 msgstr ""
@@ -13732,34 +13875,34 @@ msgid "tankCaruselTooltip/vehicleType/normal/mediumTank"
 msgstr "Medium Tank"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/AT_SPG"
-msgstr "{{@ split}}{{tier}} Elite Tank Destroyer"
+msgstr "{{@ split}}{{tier}} Elite Tank Destroyer{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/SPG"
-msgstr "{{@ split}}{{tier}} Elite SPG"
+msgstr "{{@ split}}{{tier}} Elite SPG{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/heavyTank"
-msgstr "{{@ split}}{{tier}} Elite Heavy Tank"
+msgstr "{{@ split}}{{tier}} Elite Heavy Tank{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/lightTank"
-msgstr "{{@ split}}{{tier}} Elite Light Tank"
+msgstr "{{@ split}}{{tier}} Elite Light Tank{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/elite/mediumTank"
-msgstr "{{@ split}}{{tier}} Elite Medium Tank"
+msgstr "{{@ split}}{{tier}} Elite Medium Tank{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/AT_SPG"
-msgstr "{{@ split}}{{tier}} Tank Destroyer"
+msgstr "{{@ split}}{{tier}} Tank Destroyer{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/SPG"
-msgstr "{{@ split}}{{tier}} SPG"
+msgstr "{{@ split}}{{tier}} SPG{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/heavyTank"
-msgstr "{{@ split}}{{tier}} Heavy Tank"
+msgstr "{{@ split}}{{tier}} Heavy Tank{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/lightTank"
-msgstr "{{@ split}}{{tier}} Light Tank"
+msgstr "{{@ split}}{{tier}} Light Tank{{/}}"
 
 msgid "tankCaruselTooltip/vehicleType/tier/normal/mediumTank"
-msgstr "{{@ split}}{{tier}} Medium Tank"
+msgstr "{{@ split}}{{tier}} Medium Tank{{/}}"
 
 msgid "tank_params/avgParamComment/damage"
 msgstr "Minimum-maximum damage %(units)s"

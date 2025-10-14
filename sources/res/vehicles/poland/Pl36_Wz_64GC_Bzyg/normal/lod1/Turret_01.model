@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod1/Turret_01</nodefullVisual>
+	<parent>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod2/Turret_01</parent>
+	<extent>64</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.368036 -0.018174 -2.702109</min>
+		<max>1.429411 2.204507 1.704960</max>
+	</visibilityBox>
+</root>

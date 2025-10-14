@@ -48,8 +48,6 @@ package net.wg.gui.lobby.hangar.quests
       
       private static const QUESTS_FLAGS_OFFSET_X:int = 15;
       
-      public static const BATTLE_ROYALE_FLAGS_OFFSET_Y:int = 8;
-      
       private static const INV_SECONDARY_ENTRY_POINT:String = "invSecondaryEntryPoint";
       
       private static const FLAGS_TWEEN_DELAY_TIME:int = 100;

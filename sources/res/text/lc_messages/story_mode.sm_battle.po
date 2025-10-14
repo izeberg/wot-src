@@ -392,6 +392,9 @@ msgstr "Operation 5"
 msgid "prebattle/mission/stage/6"
 msgstr "Operation 6"
 
+msgid "prebattle/mission/stage/7"
+msgstr "Operation 7"
+
 msgid "prebattle/mission/task/1"
 msgstr ""
 "{whiteSpanish_Start}Mission:{whiteSpanish_End} Attack the town and destroy "
@@ -446,6 +449,11 @@ msgid "prebattle/mission/task/6"
 msgstr ""
 "{whiteSpanish_Start}Deliver the ceasefire order to your "
 "allies.{whiteSpanish_End}"
+
+msgid "prebattle/mission/task/7"
+msgstr ""
+"{whiteSpanish_Start}Reach the command center and stop the missile "
+"launch.{whiteSpanish_End}"
 
 msgid "prebattle/mission/text/1"
 msgstr ""
@@ -545,6 +553,14 @@ msgstr ""
 "\n"
 "Roll out.\""
 
+msgid "prebattle/mission/text/7"
+msgstr ""
+"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
+"\n"
+"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
+"\n"
+"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
+
 msgid "prebattle/mission/title/1"
 msgstr "Steel Avalanche"
 
@@ -577,6 +593,9 @@ msgstr "Operation Overlord"
 
 msgid "prebattle/mission/title/6"
 msgstr "Operation Postman"
+
+msgid "prebattle/mission/title/7"
+msgstr "Operation Boiling Point"
 
 msgid "ruinberg/hint01"
 msgstr "Find a detour and flank the enemy"

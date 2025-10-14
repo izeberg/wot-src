@@ -13,7 +13,7 @@ from gui.Scaleform.daapi.view.lobby.store.browser.shop_helpers import getBattleP
 from gui.Scaleform.genConsts.TOOLTIPS_CONSTANTS import TOOLTIPS_CONSTANTS
 from gui.battle_pass.battle_pass_bonuses_packers import changeBonusTooltipData, packBonusModelAndTooltipData, packSpecialTooltipData
 from gui.battle_pass.battle_pass_constants import ChapterState, MIN_LEVEL
-from gui.battle_pass.battle_pass_helpers import fillBattlePassCompoundPrice, getChapterType, getDataByTankman, getExtraInfoPageURL, getFinalTankmen, getInfoPageURL, getIntroVideoURL, getRewardSourceByType, getStyleForChapter, getVehicleInfoForChapter, isSeasonEndingSoon, updateBuyAnimationFlag
+from gui.battle_pass.battle_pass_helpers import fillBattlePassCompoundPrice, getChapterType, getDataByTankman, getExtraInfoPageURL, getFinalTankmen, getInfoPageURL, getIntroVideoURL, getRewardSourceByType, getStyleForChapter, getVehicleInfoForChapter, isSeasonEndingSoon, updateBuyAnimationFlag, showFinalRewardPreviewBattlePassState
 from gui.battle_pass.sounds import BattlePassSounds
 from gui.collection.collections_helpers import loadCollectionsFromBattlePass
 from gui.customization.shared import getSingleVehicleForCustomization
@@ -24,13 +24,13 @@ from gui.impl.gen.view_models.views.lobby.battle_pass.battle_pass_progressions_v
 from gui.impl.gen.view_models.views.lobby.battle_pass.reward_level_model import RewardLevelModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.skill_model import SkillModel
 from gui.impl.gui_decorators import args2params
-from gui.impl.lobby.battle_pass.states import BattlePassState, FinalRewardPreviewBattlePassState
+from gui.impl.lobby.battle_pass.states import BattlePassState
 from gui.impl.pub.view_component import ViewComponent
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.lootbox_system.base.common import ViewID, Views
 from gui.shared import events
 from gui.shared.event_bus import EVENT_BUS_SCOPE
-from gui.shared.event_dispatcher import showBattlePass, showBattlePassHowToEarnPointsView, showBattlePassTankmenVoiceover, showBrowserOverlayView, showHangar, showShop
+from gui.shared.event_dispatcher import showBattlePass, showBattlePassHowToEarnPointsView, showBattlePassTankmenVoiceover, showBrowserOverlayView, showShop
 from gui.shared.utils.scheduled_notifications import Notifiable, PeriodicNotifier, SimpleNotifier
 from helpers import dependency, time_utils
 from shared_utils import findFirst, first
@@ -537,11 +537,11 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
     def __onProgressiveStylePreview(self, args):
         level = args.get('level')
         if level is not None:
-            FinalRewardPreviewBattlePassState.goTo(chapterID=self.__chapterID, level=level, origin=self.layoutID)
+            showFinalRewardPreviewBattlePassState(chapterID=self.__chapterID, level=level)
         return
 
     def __onFinalRewardPreview(self):
-        FinalRewardPreviewBattlePassState.goTo(chapterID=self.__chapterID, origin=self.layoutID)
+        showFinalRewardPreviewBattlePassState(chapterID=self.__chapterID)
 
     def __onPointsUpdated(self):
         with self.viewModel.transaction() as (model):
@@ -686,7 +686,7 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
         if not AccountSettings.getSettings(IS_BATTLE_PASS_COLLECTION_SEEN):
             AccountSettings.setSettings(IS_BATTLE_PASS_COLLECTION_SEEN, True)
             self.__onCollectionsUpdated()
-        loadCollectionsFromBattlePass(self.layoutID, self.__chapterID, battlePass=self.__battlePass)
+        loadCollectionsFromBattlePass(battlePass=self.__battlePass)
 
     @staticmethod
     def __showCoinsShop():
@@ -733,7 +733,6 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
         return first(finalTankmen)
 
     def __showTickets(self):
-        showHangar()
         Views.load(ViewID.MAIN, eventName=BATTLE_PASS_TICKETS_EVENT, backCallback=partial(showBattlePass, R.aliases.battle_pass.Progression(), self.__chapterID))
 
     def __onTicketsUpdated(self):
@@ -744,4 +743,4 @@ class ProgressionPresenter(ViewComponent[BattlePassProgressionsViewModel]):
 
     @args2params(int)
     def __onStyleBonusPreview(self, bonusId):
-        FinalRewardPreviewBattlePassState.goTo(chapterID=self.__chapterID, bonusID=bonusId, origin=self.layoutID)
+        showFinalRewardPreviewBattlePassState(chapterID=self.__chapterID, bonusID=bonusId)

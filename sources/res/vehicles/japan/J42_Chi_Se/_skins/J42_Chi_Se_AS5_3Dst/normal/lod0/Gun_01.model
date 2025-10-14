@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/japan/J42_Chi_Se/_skins/J42_Chi_Se_AS5_3Dst/normal/lod1/Gun_01</parent>
+	<visibilityBox>
+		<min>-0.364912 -0.217149 -0.306901</min>
+		<max>0.830389 0.755983 4.559999</max>
+	</visibilityBox>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J42_Chi_Se/_skins/J42_Chi_Se_AS5_3Dst/normal/lod0/Gun_01</nodefullVisual>
+</root>

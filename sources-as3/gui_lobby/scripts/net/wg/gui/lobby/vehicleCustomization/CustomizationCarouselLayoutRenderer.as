@@ -7,6 +7,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.gui.components.carousels.interfaces.IScroller;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselArrowVO;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
+   import net.wg.utils.StageSizeBoundaries;
    
    public class CustomizationCarouselLayoutRenderer implements IDisposable
    {
@@ -22,8 +23,6 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const ARROW_ENABLED_STATE:String = "enabled";
       
       private static const ARROW_DISABLED_STATE:String = "disabled";
-      
-      private static const MIN_RESOLUTION:int = 900;
        
       
       private var _scrollList:IScroller = null;
@@ -67,7 +66,7 @@ package net.wg.gui.lobby.vehicleCustomization
       {
          var _loc3_:CustomizationCarouselArrowVO = null;
          var _loc4_:Point = null;
-         this._isMinResolution = App.appHeight < MIN_RESOLUTION;
+         this._isMinResolution = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          var _loc1_:Dictionary = this._layoutController.getArrowsLayout();
          var _loc2_:Vector.<Point> = this._layoutController.getSeparatorsLayout();
          this.cleanUpItems(this._arrowItems);
@@ -109,9 +108,8 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private function addArrowItem(param1:Point, param2:Boolean) : void
       {
-         var _loc4_:MovieClip = null;
          var _loc3_:Class = App.instance.utils.classFactory.getClass(!!this._isMinResolution ? ITEM_ARROW_SMALL_MOVIE : ITEM_ARROW_BIG_MOVIE);
-         _loc4_ = new _loc3_() as MovieClip;
+         var _loc4_:MovieClip = new _loc3_() as MovieClip;
          if(_loc4_ != null)
          {
             _loc4_.gotoAndStop(!!param2 ? ARROW_ENABLED_STATE : ARROW_DISABLED_STATE);

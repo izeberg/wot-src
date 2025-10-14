@@ -20,7 +20,7 @@
 		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
-		<sunLightColorSimplifiedDeferred>0.701961 0.631373 0.588235</sunLightColorSimplifiedDeferred>
+		<sunLightColorSimplifiedDeferred>1.000000 0.903750 0.835000</sunLightColorSimplifiedDeferred>
 		<ambientTintSimplifiedDeferred>1.000000 1.000000 1.000000</ambientTintSimplifiedDeferred>
 		<sunScaleForward>5.000000</sunScaleForward>
 		<sunColorForward>146.625000 113.575996 74.778702</sunColorForward>
@@ -49,16 +49,16 @@
 		</deferred>
 		<simplifiedDeferred>
 			<useEdgeFog>true</useEdgeFog>
-			<color>0.425000 0.603251 1.000000 7.643890</color>
-			<density>0.001200</density>
-			<height>50.000000</height>
-			<heightFalloff>0.005000</heightFalloff>
-			<startDistance>125.000000</startDistance>
+			<color>1.000000 0.945098 0.800000 1.000000</color>
+			<density>0.004500</density>
+			<height>41.810001</height>
+			<heightFalloff>0.029000</heightFalloff>
+			<startDistance>75.000000</startDistance>
 			<scatterStart>25.000000</scatterStart>
 			<scatterExponent>6.000000</scatterExponent>
-			<scatterColor>0.600000 0.482353 0.337255 11.342400</scatterColor>
-			<skyLow>0.000000</skyLow>
-			<skyHigh>0.290000</skyHigh>
+			<scatterColor>1.000000 0.804250 0.565000 11.342400</scatterColor>
+			<skyLow>0.010000</skyLow>
+			<skyHigh>0.280000</skyHigh>
 		</simplifiedDeferred>
 		<forward>
 			<useEdgeFog>true</useEdgeFog>
@@ -93,19 +93,16 @@
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.400000</middleGray>
 				<whitePoint>1.000000</whitePoint>
 				<blackPoint>1.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.310000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.480000</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.090000</blackPoint>
 			</tonemapping>
@@ -285,10 +282,11 @@
 		<densityFix>1.000000</densityFix>
 	</VolumetricFog>
 	<SimplifiedDeferred>
-		<terrainBakedShadowFactor>0.900000</terrainBakedShadowFactor>
-		<bakedAOToShadow>1.600000</bakedAOToShadow>
+		<terrainBakedShadowFactor>0.600000</terrainBakedShadowFactor>
+		<bakedAOToShadow>0.990000</bakedAOToShadow>
 		<bakedAOPower>1.000000</bakedAOPower>
-		<vegetationMetallicMult>0.590000</vegetationMetallicMult>
+		<vegetationMetallicMult>0.560000</vegetationMetallicMult>
 		<transmissionMult>0.600000</transmissionMult>
+		<waterReflectionAttenuation>1.500000</waterReflectionAttenuation>
 	</SimplifiedDeferred>
 </root>

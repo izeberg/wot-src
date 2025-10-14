@@ -154,7 +154,6 @@ WHEELED_DEATH_DELAY_COUNT = 'wheeledDeathCounter'
 FREE_CAM_USES_COUNT = 'killCamBattlesCount'
 LAST_BATTLE_PASS_POINTS_SEEN = 'lastBattlePassPointsSeen'
 LAST_BATTLE_PASS_CYCLES_SEEN = 'lastBattlePassCyclesSeen'
-BR_PROGRESSION_POINTS_SEEN = 'brProgressionPointsSeen'
 IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN = 'isBattlePassExtraStarted'
 IS_BATTLE_PASS_COLLECTION_SEEN = 'isCollectionSeen'
 IS_BATTLE_PASS_START_NOTIFICATION_SEEN = 'isBattlePassStarted'
@@ -163,6 +162,9 @@ BUY_ANIMATIONS_WAS_SHOWN = 'buyAnimationsWasShown'
 IS_BATTLE_PASS_START_ANIMATION_SEEN = 'isBattlePassStartAnimationSeen'
 LAST_BATTLE_PASS_EXTRA_CHAPTER_SEEN = 'lastBattlePassExtraChapterSeen'
 UMG_BATTLE_PASS_EXTRA_CHAPTER_SEEN = 'umgBattlePassExtraChapterSeen'
+BR_UI_SECTION = 'battleRoyale'
+BR_PROGRESSION_SEEN_QUESTS = 'battleRoyaleSeenQuests'
+BR_PROGRESSION_POINTS_SEEN = 'brProgressionPointsSeen'
 CRYSTALS_INFO_SHOWN = 'crystalsInfoShown'
 IS_CUSTOMIZATION_INTRO_VIEWED = 'isCustomizationIntroViewed'
 NPS_STORAGE = 'nps_storage'
@@ -278,6 +280,12 @@ LOOT_BOXES_HAS_NEW = 'lootBoxesHasNew'
 LOOT_BOXES_SELECTED_BOX = 'lootBoxesSelectedBox'
 LOOT_BOXES_UNIQUE_ID = 'lootBoxesUniqueID'
 LOOT_BOXES_INTRO_VIDEO_SHOWN = 'lootBoxesIntroVideoShown'
+OPEN_BUNDLE_NOTIFICATIONS = 'openBundle'
+OPEN_BUNDLE_START_SHOWN = 'openBundleStartShown'
+OPEN_BUNDLE_REMINDER_SHOWN = 'openBundleEndSoonShown'
+OPEN_BUNDLE_ENTRY_POINT_SHOWN = 'openBundleEntryIntroShown'
+OPEN_BUNDLE_ENTRY_POINT_ANIMATION_SHOWN = 'openBundleEntryAnimationShown'
+OPEN_BUNDLE_INTRO_SHOWN = 'openBundleIntroShown'
 COLLECTIONS_SECTION = 'collections'
 COLLECTIONS_INTRO_SHOWN = 'collectionsIntroShown'
 COLLECTION_SHOWN_NEW_REWARDS = 'collectionsNewRewards'
@@ -329,8 +337,6 @@ VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE = 'vehSkillTreeRecordedNotificationNod
 VEH_SKILL_TREE_PRESTIGE_GLARE_SHOWN = 'vehSkillTreePrestigeGlareShown'
 VEH_SKILL_TREE_INTRO_SHOWN = 'vehSkillTreeIntroShown'
 PERSONAL_MISSION_3 = 'PERSONAL_MISSION_3'
-OTG_BATTLES_PLAYED_BEFORE_START = 'OTGBattlesPlayedBeforeStart'
-OTG_REWARD_AVAILABLE_NOTIFICATION_SHOWN = 'OTGRewardAvailableNotificationShown'
 
 class BattleMatters(object):
     BATTLE_MATTERS_SETTINGS = 'battleMattersSettings'
@@ -363,6 +369,12 @@ class AdventCalendar(object):
     LAST_DAY_POPUP_SEEN = 'adventCalendarLastDayPopupSeen'
 
 
+class StrongholdEvent(object):
+    SETTINGS = 'strongholdEventSettings'
+    IS_BANNER_FIRST_APPEARANCE_SEEN = 'isBannerFirstAppearanceSeen'
+    FIRST_BANNER_ENTERING_MADE = 'firstBannerEnteringMade'
+
+
 class OptionalDevicesAssistant(object):
     SELECTED_PRESET = 'optionalDevicesAssistantSelectedPreset'
 
@@ -375,6 +387,8 @@ FRONTLINE_BANNER_FIRST_APPEARANCE_TIMESTAMP = 'frontlineBannerFirstAppearanceTim
 FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP = 'frontlineBannerIntroClickTimestamp'
 COMP7_BANNER_FIRST_APPEARANCE_TIMESTAMP = 'comp7BannerFirstAppearanceTimestamp'
 COMP7_LIGHT_BANNER_FIRST_APPEARANCE_TIMESTAMP = 'comp7LightBannerFirstAppearanceTimestamp'
+BATTLE_ROYALE_BANNER_FIRST_APPEARANCE_TIMESTAMP = 'battleRoyaleBannerFirstAppearanceTimestamp'
+FUN_RANDOM_BANNER_INTRO_CLICK_TIMESTAMP = 'funRandomBannerIntroClickTimestamp'
 FUN_RANDOM_LAST_PRESET = 'funRandomLastPreset'
 FUN_RANDOM_PROGRESSION_OPENED = 'funRandomProgressionOpened'
 FUN_RANDOM_INF_PROGRESSION_OPENED = 'funRandomInfProgressionOpened'
@@ -616,14 +630,14 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                 'level_6': False, 
                                                 'level_7': False, 
                                                 'level_8': True, 
-                                                'level_9': True, 
+                                                'level_9': False, 
                                                 'level_10': False, 
                                                 'level_11': False}, 
                  EPICBATTLE_CAROUSEL_FILTER_2: {'premium': False, 
                                                 'elite': False, 
                                                 'igr': False, 
                                                 'rented': True, 
-                                                'event': True, 
+                                                'event': False, 
                                                 'gameMode': False, 
                                                 'favorite': False, 
                                                 'bonus': False, 
@@ -645,13 +659,11 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                 'role_SPG': False}, 
                  EPICBATTLE_CAROUSEL_FILTER_3: {'own3DStyle': False, 
                                                 'canInstallAttachments': False}, 
-                 EPICBATTLE_CAROUSEL_FILTER_CLIENT_1: {'epicBattleSeason': 0, 
-                                                       'level_8': True, 
+                 EPICBATTLE_CAROUSEL_FILTER_CLIENT_1: {'level_8': True, 
                                                        'level_9': True, 
                                                        'searchNameVehicle': '', 
                                                        'clanRented': False}, 
-                 EPICBATTLE_CAROUSEL_FILTER_CLIENT_2: {'epicBattleSeason': 0, 
-                                                       'level_8': True, 
+                 EPICBATTLE_CAROUSEL_FILTER_CLIENT_2: {'level_8': True, 
                                                        'level_9': False, 
                                                        'searchNameVehicle': '', 
                                                        'clanRented': False}, 
@@ -1238,6 +1250,8 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   FRONTLINE_BANNER_INTRO_CLICK_TIMESTAMP: 0, 
                   COMP7_BANNER_FIRST_APPEARANCE_TIMESTAMP: 0, 
                   COMP7_LIGHT_BANNER_FIRST_APPEARANCE_TIMESTAMP: 0, 
+                  BATTLE_ROYALE_BANNER_FIRST_APPEARANCE_TIMESTAMP: 0, 
+                  FUN_RANDOM_BANNER_INTRO_CLICK_TIMESTAMP: 0, 
                   FUN_RANDOM_LAST_PRESET: 'undefined', 
                   FUN_RANDOM_PROGRESSION_OPENED: False, 
                   FUN_RANDOM_INF_PROGRESSION_OPENED: False, 
@@ -1251,7 +1265,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                                           BattleMatters.LAST_QUEST_PROGRESS: 0, 
                                                           BattleMatters.REMINDER_LAST_DISPLAY_TIME: 0, 
                                                           BattleMatters.LAST_BATTLE_TIME: 0}, 
-                  BR_PROGRESSION_POINTS_SEEN: 0, 
                   ROYALE_INTRO_VIDEO_SHOWN_FOR_SEASON: 0, 
                   ROYALE_SQUAD_TIP_SHOWN_FOR_SEASON: 0, 
                   LOOTBOX_SYSTEM: {}, CUSTOM_SHOP_SETTINGS: {}, Winback.WINBACK_SETTINGS: {Winback.COMPLETED_STARTING_QUEST_COUNT: 0, 
@@ -1292,7 +1305,11 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                        PersonalMission3.PM_BANNER_ANIMATION_KEY: False, 
                                        PersonalMission3.CHECKED_PM3_POINTS: 0, 
                                        PersonalMission3.PART_NO: 0}, 
-                  NATIONS_VISITED: set()}, 
+                  NATIONS_VISITED: set(), 
+                  OPEN_BUNDLE_ENTRY_POINT_SHOWN: set(), 
+                  OPEN_BUNDLE_ENTRY_POINT_ANIMATION_SHOWN: set(), 
+                  OPEN_BUNDLE_INTRO_SHOWN: set(), 
+                  StrongholdEvent.SETTINGS: {}}, 
    KEY_COUNTERS: {NEW_HOF_COUNTER: {PROFILE_CONSTANTS.HOF_ACHIEVEMENTS_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VEHICLES_BUTTON: True, 
                                     PROFILE_CONSTANTS.HOF_VIEW_RATING_BUTTON: True}, 
@@ -1328,7 +1345,9 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                        COLLECTIONS_NOTIFICATIONS: {COLLECTION_START_SEEN: [], COLLECTION_RENEW_SEEN: {}, COLLECTIONS_UPDATED_ENTRY_SEEN: False}, 
                        COMP7_BOND_EQUIPMENT_REMINDER_SHOWN_TIMESTAMP: None, 
                        COMP7_LAST_SEASON_WITH_SEEN_REWARD: None, 
-                       COMP7_LAST_MASKOT_WITH_SEEN_REWARD: None}, 
+                       COMP7_LAST_MASKOT_WITH_SEEN_REWARD: None, 
+                       OPEN_BUNDLE_NOTIFICATIONS: {OPEN_BUNDLE_START_SHOWN: set(), 
+                                                   OPEN_BUNDLE_REMINDER_SHOWN: set()}}, 
    KEY_SESSION_SETTINGS: {STORAGE_VEHICLES_CAROUSEL_FILTER_1: {'ussr': False, 
                                                                'germany': False, 
                                                                'usa': False, 
@@ -1436,6 +1455,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                                            COMP7_LIGHT_PROGRESSION_POINTS_SEEN: 0, 
                                            COMP7_LIGHT_UMG_PROGRESSION_POINTS_SEEN: 0, 
                                            COMP7_LIGHT_UMG_SEEN_QUESTS: {}, COMP7_LIGHT_UMG_ENTRY_POINT_SEEN: False}, 
+                  BR_UI_SECTION: {BR_PROGRESSION_SEEN_QUESTS: {}, BR_PROGRESSION_POINTS_SEEN: 0}, 
                   COLLECTIONS_SECTION: {COLLECTION_SHOWN_NEW_REWARDS: {}, COLLECTION_SHOWN_NEW_ITEMS: {}, COLLECTION_SHOWN_NEW_ITEMS_COUNT: {}, COLLECTION_TUTORIAL_COMPLETED: set(), 
                                         COLLECTION_WAS_ENABLED: True, 
                                         COLLECTIONS_INTRO_SHOWN: False, 
@@ -1454,7 +1474,6 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   'uiSpamVisited_PersonalMissionOperations': False, 
                   'uiSpamVisited_referralButtonCounter': False, 
                   'uiSpamVisited_AmmunitionPanelHintZoneHint': False, 
-                  'uiSpamVisited_AmmunitionPanelBattleAbilitiesHint': False, 
                   'uiSpamVisited_CustomizationProgressionViewHint': False, 
                   'uiSpamVisited_TechTreeEvent': False, 
                   'uiSpamVisited_DogTagHangarHint': False, 
@@ -1467,9 +1486,7 @@ DEFAULT_VALUES = {KEY_FILTERS: {STORE_TAB: 0,
                   EXCHANGE_XP_RATE_DISCOUNT_ANIMATION_SHOWED: set(), 
                   VEH_SKILL_TREE_HINT_SHOWN: {}, VEH_SKILL_TREE_POPUP_SHOWN: set(), 
                   VEH_SKILL_TREE_RECORDED_NOFITICATION_NODE: {}, VEH_SKILL_TREE_PRESTIGE_GLARE_SHOWN: set(), 
-                  VEH_SKILL_TREE_INTRO_SHOWN: False, 
-                  OTG_BATTLES_PLAYED_BEFORE_START: None, 
-                  OTG_REWARD_AVAILABLE_NOTIFICATION_SHOWN: False}, 
+                  VEH_SKILL_TREE_INTRO_SHOWN: False}, 
    KEY_BATTLE_HINTS: {}, KEY_NEWBIE_HINTS: {}}
 
 def _filterAccountSection(dataSec):
@@ -1898,13 +1915,13 @@ class AccountSettings(object):
             if currVersion < 35:
                 AccountSettings.settingsCore.applySetting('loginServerSelection', False)
             if currVersion < 36:
-                from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import LobbyHeader
+                from gui.impl.lobby.common.main_menu_utils import TABS
                 for key, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_COUNTERS)
                     if NEW_LOBBY_TAB_COUNTER in accSettings.keys():
                         counters = _unpack(accSettings[NEW_LOBBY_TAB_COUNTER].asString)
-                        if LobbyHeader.TABS.PERSONAL_MISSIONS in counters:
-                            counters[LobbyHeader.TABS.PERSONAL_MISSIONS] = True
+                        if TABS.PERSONAL_MISSIONS in counters:
+                            counters[TABS.PERSONAL_MISSIONS] = True
                             accSettings.write(NEW_LOBBY_TAB_COUNTER, _pack(counters))
 
             if currVersion < 37:
@@ -2245,7 +2262,6 @@ class AccountSettings(object):
             if currVersion < 81:
                 pass
             if currVersion < 82:
-                from gui.Scaleform.daapi.view.lobby.header.LobbyHeader import LobbyHeader
                 for key, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_COUNTERS)
                     if accSettings.has_key(NEW_SHOP_TABS):
@@ -2361,6 +2377,16 @@ class AccountSettings(object):
                         UiSettings.write(COMP7_UMG_PROGRESSION_POINTS_SEEN, 0)
 
             if currVersion < 95:
+                flFilters = (EPICBATTLE_CAROUSEL_FILTER_CLIENT_2, EPICBATTLE_CAROUSEL_FILTER_CLIENT_1)
+                for key, section in _filterAccountSection(ads):
+                    filtersSection = AccountSettings._readSection(section, KEY_FILTERS)
+                    for filterKey in filtersSection.keys():
+                        if filterKey in flFilters:
+                            data = _unpack(filtersSection[filterKey].asString)
+                            if 'epicBattleSeason' in data:
+                                data.pop('epicBattleSeason', None)
+                                filtersSection.write(filterKey, _pack(data))
+
                 for _, section in _filterAccountSection(ads):
                     accSettings = AccountSettings._readSection(section, KEY_SETTINGS)
                     if NEW_SETTINGS_COUNTER in accSettings.keys():

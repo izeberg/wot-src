@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from account_helpers import AccountSettings
 from account_helpers.AccountSettings import FUN_RANDOM_LAST_PRESET
@@ -187,6 +188,6 @@ class FunRandomController(IFunRandomController, IGlobalListener):
     def __storeFunRandomPreset(self):
         currPreset = self.__funRandomSettings.settingsKey
         lastPreset = AccountSettings.getSettings(FUN_RANDOM_LAST_PRESET)
-        if currPreset != DEFAULT_SETTINGS_KEY and lastPreset != currPreset:
+        if currPreset not in (DEFAULT_SETTINGS_KEY, lastPreset):
             AccountSettings.setSettings(FUN_RANDOM_LAST_PRESET, currPreset)
             setBattleTypeAsUnknown(SELECTOR_BATTLE_TYPES.FUN_RANDOM)

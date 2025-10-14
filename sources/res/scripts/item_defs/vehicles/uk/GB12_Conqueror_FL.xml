@@ -17,7 +17,7 @@
 	</speedLimits>
 	<invisibility>
 		<moving>
-			0.039
+			0.04
 			<!--BW_String-->
 		</moving>
 		<still>
@@ -124,7 +124,7 @@
 		</armor>
 		<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 		<weight>35270</weight>
-		<maxHealth>1480</maxHealth>
+		<maxHealth>1600</maxHealth>
 		<ammoBayHealth>
 			<maxHealth>260</maxHealth>
 			<maxRegenHealth>180</maxRegenHealth>
@@ -4844,7 +4844,7 @@
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>14400</weight>
-			<maxHealth>470</maxHealth>
+			<maxHealth>400</maxHealth>
 			<rotationSpeed>32</rotationSpeed>
 			<turretRotatorHealth>
 				<maxHealth>120</maxHealth>
@@ -4870,7 +4870,7 @@
 					<pitchLimits>
 						<minPitch>0 -15 1 -15</minPitch>
 						<maxPitch>
-							0 10 0.416667 10 0.444444 4.5 0.555556 4.5 0.583333 10 1 10
+							0.00000 10.00 0.41667 10.00 0.44444 5.00 0.55556 5.00 0.58333 10.00 1.00000 10.00
 							<!--BW_String-->
 						</maxPitch>
 					</pitchLimits>

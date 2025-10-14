@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random.gui.feature.fun_constants import FunSubModesState
 from fun_random.gui.feature.util.fun_mixins import FunProgressionWatcher, FunSubModesWatcher
 from notification.decorators import MessageDecorator

@@ -388,6 +388,16 @@
 			<!--BW_String-->
 		</burstLastShellOffset>
 		<burstLastShell>gui_abl_chargeable_burst_load_lastshell</burstLastShell>
+		<nextBurstShellLoadingOffset>
+			700.0
+			<!--BW_String-->
+		</nextBurstShellLoadingOffset>
+		<nextBurstShellLoading>gui_abl_chargeable_burst_reload_start</nextBurstShellLoading>
+		<nextBurstShellLoadedOffset>
+			500.0
+			<!--BW_String-->
+		</nextBurstShellLoadedOffset>
+		<nextBurstShellLoaded>gui_abl_chargeable_burst_reload</nextBurstShellLoaded>
 		<intuition_overrides>
 			<duration>
 				1000.0

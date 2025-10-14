@@ -79,7 +79,7 @@ class PlayersPanel(IBattleFieldListener, PlayersPanelMeta, IAbstractPeriodView):
     def _populate(self):
         super(PlayersPanel, self)._populate()
         self.addListener(events.GameEvent.NEXT_PLAYERS_PANEL_MODE, self._handleNextMode, EVENT_BUS_SCOPE.BATTLE)
-        self.addListener(events.GameEvent.SHOW_EXTENDED_INFO, self.__handleShowExtendedInfo, scope=EVENT_BUS_SCOPE.BATTLE)
+        self.addListener(events.GameEvent.SHOW_EXTENDED_INFO, self._handleShowExtendedInfo, scope=EVENT_BUS_SCOPE.BATTLE)
         if self.settingsCore:
             self.settingsCore.onSettingsChanged += self.__onSettingsChanged
             playersHPBarsVisibilitySetting = self.settingsCore.getSetting(GAME.SHOW_VEHICLE_HP_IN_PLAYERS_PANEL)
@@ -90,7 +90,7 @@ class PlayersPanel(IBattleFieldListener, PlayersPanelMeta, IAbstractPeriodView):
 
     def _dispose(self):
         self.removeListener(events.GameEvent.NEXT_PLAYERS_PANEL_MODE, self._handleNextMode, EVENT_BUS_SCOPE.BATTLE)
-        self.removeListener(events.GameEvent.SHOW_EXTENDED_INFO, self.__handleShowExtendedInfo, scope=EVENT_BUS_SCOPE.BATTLE)
+        self.removeListener(events.GameEvent.SHOW_EXTENDED_INFO, self._handleShowExtendedInfo, scope=EVENT_BUS_SCOPE.BATTLE)
         if self.settingsCore:
             self.settingsCore.onSettingsChanged -= self.__onSettingsChanged
         self.battleCommunications.onChanged -= self.__onBattleCommunicationSettingsChanged
@@ -105,7 +105,7 @@ class PlayersPanel(IBattleFieldListener, PlayersPanelMeta, IAbstractPeriodView):
         self._mode = mode
         self.as_setPanelModeS(self._mode)
 
-    def __handleShowExtendedInfo(self, event):
+    def _handleShowExtendedInfo(self, event):
         self.as_setOverrideExInfoS(event.ctx['isDown'])
 
     def __onSettingsChanged(self, diff):

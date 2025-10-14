@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J51_Ashigaru/crash/lod4/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.425185 -0.309323 -0.167139</min>
+		<max>0.426618 0.308693 4.548489</max>
+	</visibilityBox>
+</root>

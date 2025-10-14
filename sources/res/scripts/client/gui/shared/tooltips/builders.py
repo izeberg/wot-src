@@ -62,7 +62,7 @@ class AdvancedBuilder(TooltipBuilder):
 
 
 class DataBuilder(SimpleBuilder):
-    __slots__ = ('_provider', )
+    __slots__ = ()
 
     def __init__(self, tooltipType, linkage, provider):
         super(DataBuilder, self).__init__(tooltipType, linkage)
