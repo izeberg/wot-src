@@ -29,13 +29,13 @@ class RandomBattleResultStatsCtrl(IBattleResultStatsCtrl):
     def getResults(self):
         return self._battleResults
 
-    @staticmethod
-    def onShowResults(arenaUniqueID):
-        return
-
     def onResultsPosted(self, arenaUniqueID):
         if self._battleResults:
             bonusType = self._battleResults.reusable.bonusType
             showRandomBattleResultsWindow(arenaUniqueID, bonusType)
             return
         pushNoBattleResultsDataMessage()
+
+    @staticmethod
+    def onShowResults(arenaUniqueID):
+        return

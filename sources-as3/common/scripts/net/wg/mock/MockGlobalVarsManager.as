@@ -26,6 +26,11 @@ package net.wg.mock
          return false;
       }
       
+      public function isAsiaS() : Boolean
+      {
+         return false;
+      }
+      
       public function isChinaS() : Boolean
       {
          return false;

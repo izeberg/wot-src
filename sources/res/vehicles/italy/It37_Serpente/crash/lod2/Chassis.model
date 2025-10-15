@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It37_Serpente/crash/lod2/Chassis</nodefullVisual>
+	<visibilityBox>
+		<min>-1.347217 -0.000379 -3.118804</min>
+		<max>1.348795 1.130941 3.370724</max>
+	</visibilityBox>
+	<parent>vehicles/italy/It37_Serpente/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+</root>

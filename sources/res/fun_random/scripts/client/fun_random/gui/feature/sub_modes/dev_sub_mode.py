@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing
 from fun_random.gui.feature.sub_modes.base_sub_mode import FunBaseSubMode
 if typing.TYPE_CHECKING:

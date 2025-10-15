@@ -906,7 +906,7 @@ msgid "tooltip/assembling/zoomOut"
 msgstr "Click to hide description."
 
 msgid "tooltip/missionProgress/completed"
-msgstr "Completed: {{completed}}{{@class $totalClass}} / {{total}}{{/}}"
+msgstr "Completed: {{completed}}{{@ class $totalClass}} / {{total}}{{/}}"
 
 msgid "tooltip/missionProgress/description"
 msgstr ""

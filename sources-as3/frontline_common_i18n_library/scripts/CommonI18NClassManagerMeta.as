@@ -3,19 +3,19 @@ package
    public class CommonI18NClassManagerMeta
    {
       
-      public static const FL_BANNER:Class = FL_BANNER;
+      public static const FL_BATTLE_ABILITIES_SETUP:Class = FL_BATTLE_ABILITIES_SETUP;
       
       public static const FL_COMMON:Class = FL_COMMON;
       
       public static const FL_DIALOGS:Class = FL_DIALOGS;
       
+      public static const FL_HANGAR:Class = FL_HANGAR;
+      
       public static const FL_INFO_PAGE:Class = FL_INFO_PAGE;
       
-      public static const FL_PROGRESS:Class = FL_PROGRESS;
+      public static const FL_POST_BATTLE_REWARDS:Class = FL_POST_BATTLE_REWARDS;
       
-      public static const FL_REWARDS:Class = FL_REWARDS;
-      
-      public static const FL_SKILLS_PAGE:Class = FL_SKILLS_PAGE;
+      public static const FL_PROGRESSION_SCREEN:Class = FL_PROGRESSION_SCREEN;
       
       public static const FL_TOOLTIPS:Class = FL_TOOLTIPS;
       

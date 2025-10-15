@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from constants_utils import ConstInjector
 from gui.limited_ui.lui_rules_storage import LUI_RULES
 from gui.prb_control import settings

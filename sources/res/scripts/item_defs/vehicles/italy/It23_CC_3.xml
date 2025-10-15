@@ -4373,9 +4373,12 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38000</slotId>
-					<position>-0.920999 0.988657 -0.171489</position>
+					<position>
+						-0.920999 1.09653 -0.175068
+						<!--BW_String-->
+					</position>
 					<rotation>
-						-0.033161 0 0
+						-0.033161 -0 0
 						<!--BW_String-->
 					</rotation>
 					<scale>
@@ -4388,12 +4391,9 @@
 				<slot>
 					<slotType>attachment</slotType>
 					<slotId>38001</slotId>
-					<position>
-						0.319 0.762 -1.686
-						<!--BW_String-->
-					</position>
+					<position>0.311031 1.018404 -1.696971</position>
 					<rotation>
-						-0.042761 0 0
+						-0.042761 -0 0
 						<!--BW_String-->
 					</rotation>
 					<scale>

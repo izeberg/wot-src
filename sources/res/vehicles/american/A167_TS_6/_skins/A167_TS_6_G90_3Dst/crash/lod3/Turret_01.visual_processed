@@ -65,7 +65,7 @@
 						<Texture>vehicles/russian/Tank_detail/crash_tile.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.031257 0.813902 -0.989596</groupOrigin>
+				<groupOrigin>-0.031164 0.813902 -0.989596</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -99,7 +99,7 @@
 						<Texture>vehicles/american/A167_TS_6/_skins/A167_TS_6_G90_3Dst/TS_6_G90_3Dst_equipment_01_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.021431 0.808355 -3.153691</groupOrigin>
+				<groupOrigin>-0.021338 0.808355 -3.153691</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -107,5 +107,5 @@
 		<min>-1.615490 -0.030036 -3.798907</min>
 		<max>1.552977 1.657839 1.710782</max>
 	</boundingBox>
-	<geometrySize>98392</geometrySize>
+	<geometrySize>98072</geometrySize>
 </root>

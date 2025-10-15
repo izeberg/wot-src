@@ -138,11 +138,13 @@
 		<locName>ch67_mechanic_1</locName>
 		<categories>mechanics</categories>
 		<modifiers>
-			<mul>
-				<name>dynAttrs/vehicle/maxSpeed/forward</name>
-				<value>1.107143</value>
-				<filter>rechargeableNitro</filter>
-			</mul>
+			<add>
+				<name>miscAttrs/rechargeableNitro/addMaxSpeedForwardBonus</name>
+				<value>
+					0.15
+					<!--BW_String-->
+				</value>
+			</add>
 		</modifiers>
 		<kpi>
 			<add>
@@ -181,14 +183,13 @@
 		<locName>ch67_mechanic_0</locName>
 		<categories>mechanics</categories>
 		<modifiers>
-			<mul>
-				<name>dynAttrs/vehicle/rotationSpeed</name>
+			<add>
+				<name>miscAttrs/rechargeableNitro/addRotationSpeedBonus</name>
 				<value>
-					1.5
+					0.1
 					<!--BW_String-->
 				</value>
-				<filter>rechargeableNitro</filter>
-			</mul>
+			</add>
 		</modifiers>
 		<kpi>
 			<add>

@@ -198,8 +198,8 @@
 						<Float>0.325092</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.021259 0.135998 -0.026591</groupOrigin>
@@ -289,12 +289,12 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_dirtLevel
 						<Float>0.450000</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.023117 0.407596 0.377596</groupOrigin>

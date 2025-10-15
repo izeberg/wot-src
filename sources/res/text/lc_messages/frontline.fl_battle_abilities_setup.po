@@ -1,0 +1,71 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 10:00+0300\n"
+"PO-Revision-Date: 2010-06-01 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "dealPanel/applyToType"
+msgstr "Apply to all {{icon}} {{type}}"
+
+msgid "header/points"
+msgstr "Combat Reserve Points: {{value}}"
+
+msgid "header/title"
+msgstr "COMBAT RESERVES"
+
+msgid "infoPanel/category/firesupport"
+msgstr "Attack Reserves"
+
+msgid "infoPanel/category/reconnaissance"
+msgstr "Recon Reserves"
+
+msgid "infoPanel/category/tactics"
+msgstr "Tactical Reserves"
+
+msgid "infoPanel/category/title"
+msgstr "Category: {{icon}} {{category}}"
+
+msgid "infoPanel/description/locked"
+msgstr ""
+"In the {{@ colorLegacy 'FFE4C0'}}Twist of Fate{{/}} scenario, purchasing a "
+"Combat Reserve will increase its level by one and provide the opportunity to"
+" improve it to Level {{@ colorLegacy 'FFE4C0'}}IV{{/}}."
+
+msgid "infoPanel/description/unlocked"
+msgstr ""
+"In the {{@ colorLegacy 'FFE4C0'}}Twist of Fate{{/}} scenario, the chance of "
+"each Combat Reserve placed in the slot before the battle being offered is "
+"increased by {{@ colorLegacy 'FFE4C0'}}10%{{/}}."
+
+msgid "infoPanel/level"
+msgstr "Level:"
+
+msgid "infoPanel/param/valueTemplate/default"
+msgstr "{{sign}}{{value}}"
+
+msgid "infoPanel/param/valueTemplate/meters"
+msgstr "{{sign}}{{value}}m"
+
+msgid "infoPanel/param/valueTemplate/percents"
+msgstr "{{sign}}{{value}}%"
+
+msgid "infoPanel/param/valueTemplate/percentsBySecond"
+msgstr "{{sign}}{{value}}%/s"
+
+msgid "infoPanel/param/valueTemplate/seconds"
+msgstr "{{sign}}{{value}}s"
+
+msgid "infoPanel/paramDiff"
+msgstr "({{diff}})"
+
+msgid "infoPanel/status/locked"
+msgstr "Combat Reserve not purchased"
+
+msgid "infoPanel/status/unlocked"
+msgstr "Combat Reserve purchased"

@@ -979,10 +979,8 @@ class BattleResultsFormatter(WaitItemsSyncFormatter):
 
     def __makeBRCoinString(self, battleResults):
         value = battleResults.get(b'brcoin', 0) + self.__getBrCoinsQuestBonus(battleResults)
-        if value:
-            text = backport.text(R.strings.messenger.serviceChannelMessages.BRbattleResults.battleRoyaleBrCoin(), value=text_styles.neutral(value))
-            return g_settings.htmlTemplates.format(b'battleResultBrcoin', ctx={b'brcoin': text})
-        return b''
+        text = backport.text(R.strings.messenger.serviceChannelMessages.BRbattleResults.battleRoyaleBrCoin(), value=text_styles.neutral(value))
+        return g_settings.htmlTemplates.format(b'battleResultBrcoin', ctx={b'brcoin': text})
 
     def __getBrCoinsQuestBonus(self, battleResults):
         questBonus = 0
@@ -2891,7 +2889,10 @@ class QuestAchievesFormatter(object):
         personalExchangeDiscountsInfo = []
         if tokens:
             for tokenID, tokenData in tokens.iteritems():
-                count = backport.getIntegralFormat(tokenData.get(b'count', 1))
+                count = tokenData.get(b'count', 0)
+                if count <= 0:
+                    continue
+                count = backport.getIntegralFormat(count)
                 if tokenID.startswith(BATTLE_BONUS_X5_TOKEN):
                     itemsNames.append(backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.items.name(), name=backport.text(R.strings.quests.bonusName.battle_bonus_x5()), count=count))
                 elif tokenID.startswith(CREW_BONUS_X3_TOKEN):
@@ -2902,7 +2903,7 @@ class QuestAchievesFormatter(object):
                     lootboxStr = cls._processLootBoxToken(tokenID, count)
                     if lootboxStr:
                         itemsNames.append(lootboxStr)
-                elif isPM3Points(tokenID) and tokenData.get(b'count', 0) >= 0:
+                elif isPM3Points(tokenID):
                     itemsNames.insert(0, backport.text(R.strings.messenger.serviceChannelMessages.battleResults.quests.personal_missions_points(), count=count))
 
         entitlementsList = [ (eID, eData.get(b'count', 0)) for eID, eData in data.get(b'entitlements', {}).iteritems() ]

@@ -1,7 +1,7 @@
 import itertools, logging
 from collections import namedtuple
 import nations, typing
-from battle_pass_common import BattlePassConsts, BattlePassTankmenSource, HOLIDAY_SEASON_OFFSET, TANKMAN_QUEST_CHAIN_ENTITLEMENT_POSTFIX, isPostProgressionChapter
+from battle_pass_common import BattlePassConsts, BattlePassTankmenSource, HOLIDAY_SEASON_OFFSET, TANKMAN_QUEST_CHAIN_ENTITLEMENT_POSTFIX, isPostProgressionChapter, FinalReward
 from constants import ARENA_BONUS_TYPE, QUEUE_TYPE
 from enum import Enum
 from items.tankmen import getNationGroups
@@ -10,19 +10,24 @@ from shared_utils import findFirst, first
 from account_helpers.AccountSettings import AccountSettings, IS_BATTLE_PASS_COLLECTION_SEEN, IS_BATTLE_PASS_EXTRA_START_NOTIFICATION_SEEN, EXTRA_CHAPTERS_VIDEO_SHOWN, BUY_ANIMATIONS_WAS_SHOWN, IS_BATTLE_PASS_START_ANIMATION_SEEN, IS_BATTLE_PASS_START_NOTIFICATION_SEEN, LAST_BATTLE_PASS_CYCLES_SEEN, LAST_BATTLE_PASS_POINTS_SEEN
 from account_helpers.settings_core.settings_constants import BattlePassStorageKeys
 from gui import GUI_SETTINGS
+from gui.Scaleform.genConsts.VEHPREVIEW_CONSTANTS import VEHPREVIEW_CONSTANTS
 from gui.impl.gen import R
 from gui.impl.gen.view_models.common.price_model import PriceModel
 from gui.impl.wrappers.user_compound_price_model import PriceModelBuilder
+from gui.impl.gen.view_models.views.lobby.vehicle_preview.top_panel.top_panel_tabs_model import TabID
 from gui.prb_control.dispatcher import g_prbLoader
 from gui.server_events.bonuses import VehiclesBonus
 from gui.server_events.recruit_helper import getRecruitInfo
 from gui.shared.formatters import time_formatters
 from gui.shared.gui_items import GUI_ITEM_TYPE
 from gui.shared.money import Currency
+from gui.shared.event_dispatcher import showBattlePassStyleProgressionPreview, showStylePreview, showVehiclePreviewWithoutBottomPanel
 from helpers import dependency, time_utils
 from helpers.dependency import replace_none_kwargs
+from skeletons.gui.shared import IItemsCache
 from skeletons.gui.customization import ICustomizationService
 from skeletons.gui.game_control import IBattlePassController
+from web.web_client_api.common import ItemPackEntry, ItemPackType
 if typing.TYPE_CHECKING:
     from typing import Any, Dict, List, Set
     from gui.impl.wrappers.user_compound_price_model import UserCompoundPriceModel
@@ -378,3 +383,30 @@ def _updateServerSettings(data):
     data[BattlePassStorageKeys.INTRO_SHOWN] = False
     data[BattlePassStorageKeys.INTRO_VIDEO_SHOWN] = False
     data[BattlePassStorageKeys.EXTRA_CHAPTER_INTRO_SHOWN] = False
+
+
+@dependency.replace_none_kwargs(itemsCache=IItemsCache)
+def showFinalRewardPreviewBattlePassState(chapterID, bonusID=None, level=None, itemsCache=None):
+    from gui.Scaleform.daapi.view.lobby.storage.storage_helpers import getVehicleCDForStyle
+    styleInfo = getStyleForChapter(chapterID) if bonusID is None else itemsCache.items.getItemByCD(bonusID)
+    vehicleCD = getVehicleCDForStyle(styleInfo)
+    if styleInfo is not None and styleInfo.isProgression:
+        showBattlePassStyleProgressionPreview(vehicleCD, styleInfo, styleInfo.getDescription(), chapterId=chapterID, styleLevel=int(level or styleInfo.getProgressionLevel() or 1))
+        return
+    else:
+        previewItemPack = (
+         ItemPackEntry(type=ItemPackType.CREW_100, groupID=1),)
+        allRewardTypes = getAllFinalRewards(chapterID)
+        if not bonusID and FinalReward.VEHICLE in allRewardTypes:
+            vehicle, style = getVehicleInfoForChapter(chapterID, awardSource=BattlePassConsts.REWARD_BOTH)
+            if styleInfo is not None:
+                showStylePreview(vehicle.intCD, style=styleInfo, topPanelData={'linkage': VEHPREVIEW_CONSTANTS.TOP_PANEL_TABS_LINKAGE, 
+                   'tabIDs': (
+                            TabID.VEHICLE, TabID.STYLE), 
+                   'currentTabID': TabID.STYLE, 
+                   'style': styleInfo}, itemsPack=previewItemPack)
+            else:
+                showVehiclePreviewWithoutBottomPanel(vehicle.intCD, itemsPack=previewItemPack, style=style)
+        else:
+            showStylePreview(vehicleCD, style=styleInfo, itemsPack=previewItemPack)
+        return

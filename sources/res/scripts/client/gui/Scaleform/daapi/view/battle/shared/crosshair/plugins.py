@@ -7,7 +7,6 @@ import BattleReplay, SoundGroups
 from account_helpers.settings_core.settings_constants import GRAPHICS, AIM, GAME, SPGAim
 from AvatarInputHandler import gun_marker_ctrl
 from AvatarInputHandler.spg_marker_helpers.spg_marker_helpers import SPGShotResultEnum
-from ChargeableBurstComponent import ChargeableBurstModeState
 from DualAccuracy import getVehicleDualAccuracy
 from PlayerEvents import g_playerEvents
 from ReplayEvents import g_replayEvents
@@ -62,6 +61,7 @@ if typing.TYPE_CHECKING:
     from items.components.gun_installation_components import GunInstallationSlot
     from StationaryReloadController import StationaryReloadState
     from TwinGunController import TwinGunController
+    from ChargeableBurstComponent import ChargeableBurstModeState
     from PillboxSiegeComponent import PillboxSiegeModeState
     from Vehicle import Vehicle
     from items.vehicles import VehicleDescr
@@ -1116,9 +1116,7 @@ class ShotResultIndicatorPlugin(CrosshairPlugin):
 
     def __onGunMarkerStateChanged(self, markerType, gunMarkerState, supportMarkersInfo):
         if not self.__isEnabled:
-            self.sessionProvider.shared.armorFlashlight.hide()
             return
-        self.sessionProvider.shared.armorFlashlight.updateVisibilityState(markerType, gunMarkerState.position, gunMarkerState.direction, gunMarkerState.collData, gunMarkerState.size)
         shotResult = self._getShotResult(gunMarkerState, supportMarkersInfo)
         if self.__cache[markerType] == shotResult:
             return
@@ -1665,7 +1663,6 @@ class SPGShotResultIndicatorPlugin(CrosshairPlugin):
         currentState = self.sessionProvider.shared.crosshair.getSPGShotsIndicatorState()
         if not self.__isEnabled:
             self.__clear()
-            self.sessionProvider.shared.armorFlashlight.hide()
         elif currentState:
             self.__onSPGShotsIndicatorStateChanged(currentState)
 
@@ -2362,6 +2359,25 @@ class ChargeableBurstPlugin(CrosshairUpdatersPlugin, ComponentListener, IMechani
     def __init__(self, *args):
         super(ChargeableBurstPlugin, self).__init__(*args)
         self.__charges = 0
+        self.__isBurstMode = False
+
+    def start(self):
+        super(ChargeableBurstPlugin, self).start()
+        ammoCtrl = self.sessionProvider.shared.ammo
+        if ammoCtrl is not None:
+            ammoCtrl.onShellsUpdated += self.__onShellsUpdated
+            ammoCtrl.onCurrentShellChanged += self.__onCurrentShellChanged
+            ammoCtrl.onCurrentShellReset += self.__onCurrentShellReset
+        return
+
+    def stop(self):
+        ammoCtrl = self.sessionProvider.shared.ammo
+        if ammoCtrl is not None:
+            ammoCtrl.onShellsUpdated -= self.__onShellsUpdated
+            ammoCtrl.onCurrentShellChanged -= self.__onCurrentShellChanged
+            ammoCtrl.onCurrentShellReset -= self.__onCurrentShellReset
+        super(ChargeableBurstPlugin, self).stop()
+        return
 
     @eventHandler
     def onStatePrepared(self, state):
@@ -2373,9 +2389,33 @@ class ChargeableBurstPlugin(CrosshairUpdatersPlugin, ComponentListener, IMechani
             self.parentObj.as_showPenetrationFxS()
         self.__charges = state.charges
 
+    @eventHandler
+    def onStateTransition(self, prevState, newState):
+        if self.__isBurstMode != newState.isBurstActive:
+            self.__isBurstMode = newState.isBurstActive
+            self.__invalidateChargeableBurstMode()
+
     def _getViewUpdaters(self):
         return [
          VehicleMechanicStatesUpdater(VehicleMechanic.CHARGEABLE_BURST, self)]
+
+    def __onShellsUpdated(self, intCD, quantity, quantityInClip, result):
+        self.__invalidateChargeableBurstMode()
+
+    def __onCurrentShellChanged(self, intCD):
+        self.__invalidateChargeableBurstMode()
+
+    def __onCurrentShellReset(self):
+        self.__invalidateChargeableBurstMode()
+
+    def __getCurrentShellsLeft(self):
+        ammoCtrl = self.sessionProvider.shared.ammo
+        quantity, _ = ammoCtrl.getCurrentShells()
+        return quantity
+
+    def __invalidateChargeableBurstMode(self):
+        quantity = self.__getCurrentShellsLeft()
+        self.parentObj.as_setChargeableBurstModeS(self.__isBurstMode and quantity)
 
 
 class StationaryReloadingPlugin(CrosshairUpdatersPlugin, ComponentListener, IMechanicStatesListenerLogic):

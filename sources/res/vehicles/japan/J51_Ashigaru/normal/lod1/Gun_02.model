@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/japan/J51_Ashigaru/normal/lod1/Gun_02</nodefullVisual>
+	<visibilityBox>
+		<min>-0.427164 -0.310909 -0.161747</min>
+		<max>0.427575 0.371727 4.570985</max>
+	</visibilityBox>
+	<parent>vehicles/japan/J51_Ashigaru/normal/lod2/Gun_02</parent>
+	<extent>64</extent>
+</root>

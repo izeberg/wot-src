@@ -130,6 +130,10 @@
 						g_detailUVTiling
 						<Vector4>3.506850 1.753425 0.000000 0.000000</Vector4>
 					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
+					</property>
 				</material>
 				<groupOrigin>0.003273 -0.333369 -0.758579</groupOrigin>
 			</primitiveGroup>
@@ -167,6 +171,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/british/GB106_Cobra/_skins/GB106_Cobra_MDXXIII4_3DSt/Cobra_MDXXIII4_3DSt_equipment_01_ANM.dds</Texture>
+					</property>
+					<property>
+						g_useDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.133348 0.449034 0.737392</groupOrigin>

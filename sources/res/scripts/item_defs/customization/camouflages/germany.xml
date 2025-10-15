@@ -27813,11 +27813,6 @@
 		<season>ALL</season>
 		<historical>0</historical>
 		<priceGroup>camouflages 50g notInShop</priceGroup>
-		<vehicleFilter>
-			<include>
-				<vehicles>germany:G98_Waffentrager_E100_TLXXL_S</vehicles>
-			</include>
-		</vehicleFilter>
 		<camouflage>
 			<id>899</id>
 			<texture>vehicles/german/Camouflage/Polylines.dds</texture>
@@ -27851,12 +27846,6 @@
 					<!--BW_String-->
 				</GUN>
 			</rotation>
-			<tiling>
-				<germany:G98_Waffentrager_E100_TLXXL_S>
-					1.84 1.84 1.65 0.2
-					<!--BW_String-->
-				</germany:G98_Waffentrager_E100_TLXXL_S>
-			</tiling>
 			<tilingSettings>
 				<type>relative</type>
 				<factor>

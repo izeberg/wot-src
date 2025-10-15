@@ -44,6 +44,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.infrastructure.interfaces.ICursorManager;
    import net.wg.infrastructure.interfaces.IInnerView;
    import net.wg.utils.IGameInputManager;
+   import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.data.DataProvider;
    import scaleform.clik.events.IndexEvent;
@@ -56,11 +57,9 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const BOTTOM_OFFSET:int = 248;
       
-      private static const MIN_RES_BOTTOM_OFFSET:int = 270;
+      private static const MIN_RES_BOTTOM_OFFSET:int = 295;
       
       private static const BOTTOM_PANEL_HEIGHT:int = 214;
-      
-      private static const MIN_RESOLUTION:int = 900;
       
       private static const INV_FOCUS_CHAIN:String = "InvFocusChain";
       
@@ -203,7 +202,7 @@ package net.wg.gui.lobby.vehicleCustomization
             this.customizationHeader.updateSize(this._actualWidth);
             this.styleInfo.y = this._topOffset;
             this.vehicleView.updateSize(this._actualWidth,this._actualHeight);
-            _loc1_ = App.appHeight < MIN_RESOLUTION;
+            _loc1_ = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
             _loc2_ = !!_loc1_ ? int(MIN_RES_BOTTOM_OFFSET) : int(BOTTOM_OFFSET);
             this.bottomPanel.y = this._actualHeight - this.bottomPanel.height + _loc2_ - this._bottomOffset ^ 0;
             this.bottomPanel.width = this._actualWidth;
@@ -546,7 +545,7 @@ package net.wg.gui.lobby.vehicleCustomization
             return;
          }
          var _loc2_:Boolean = App.appWidth < SIDEBAR_MIN_SCREEN_SIZE;
-         var _loc3_:Boolean = App.appHeight < MIN_RESOLUTION;
+         var _loc3_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          var _loc4_:Number = !!_loc3_ ? Number(ENTRY_POINT_MIN_SCALE) : Number(ENTRY_POINT_SCALE);
          var _loc5_:int = this.getInnerEntriesCount();
          var _loc6_:Boolean = _loc5_ > 1;

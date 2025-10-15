@@ -36,6 +36,7 @@ package net.wg.gui.lobby.battleResults
    import net.wg.infrastructure.interfaces.IViewStackContent;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.ILocale;
+   import net.wg.utils.IScheduler;
    import org.idmedia.as3commons.util.StringUtils;
    import scaleform.clik.constants.DirectionMode;
    import scaleform.clik.constants.InvalidationType;
@@ -160,6 +161,8 @@ package net.wg.gui.lobby.battleResults
       
       private var _toolTipMgr:ITooltipMgr;
       
+      private var _scheduler:IScheduler;
+      
       private var _register:IBaseDAAPIComponentMeta;
       
       private const RANK_IMAGE_LIST:Vector.<String> = new <String>[RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_RECRUIT,RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_PRIVATE,RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_SERGEANT,RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_LIEUTENANT,RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_CAPTAIN,RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_MAJOR,RES_ICONS.MAPS_ICONS_LIBRARY_EPICRANK_MSG_RANK_GENERAL];
@@ -170,6 +173,7 @@ package net.wg.gui.lobby.battleResults
          this._statsUtilsManager = StatsUtilsManager.getInstance();
          this._locale = App.utils.locale;
          this._toolTipMgr = App.toolTipMgr;
+         this._scheduler = App.utils.scheduler;
          super();
       }
       
@@ -205,6 +209,8 @@ package net.wg.gui.lobby.battleResults
       
       override protected function onDispose() : void
       {
+         this._scheduler.cancelTask(this.showEfficiencyList);
+         this._scheduler = null;
          this.getPremBtn.removeEventListener(ButtonEvent.CLICK,this.onGetPremiumBtnClickHandler);
          this.rankIconLoader.removeEventListener(MouseEvent.MOUSE_OVER,this.onRankIconLoaderMouseOverHandler);
          this.rankIconLoader.removeEventListener(MouseEvent.MOUSE_OUT,this.onRankIconLoaderMouseOutHandler);
@@ -486,7 +492,7 @@ package net.wg.gui.lobby.battleResults
          {
             this.tryCleanEfficiencyListDataProvider();
             this.epicEfficiencyList.dataProvider = new DataProvider(getEfficiencyStats(param1));
-            App.utils.scheduler.scheduleOnNextFrame(this.showEfficiencyList);
+            this._scheduler.scheduleOnNextFrame(this.showEfficiencyList);
          }
          else
          {

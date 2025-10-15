@@ -68,8 +68,8 @@
 		<node>V_BlendBone</node>
 		<node>Tank_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -131,17 +131,17 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-1.298072 0.556756 -0.096200</groupOrigin>
+				<groupOrigin>1.275924 0.598551 -0.080290</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
-		<node>V_BlendBone</node>
 		<node>Tank_BlendBone</node>
+		<node>V_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -203,7 +203,7 @@
 						<Texture>vehicles/russian/common/common_ID.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.298072 0.556756 -0.096200</groupOrigin>
+				<groupOrigin>-1.358310 0.598550 -0.080290</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -212,5 +212,5 @@
 		<min>-1.577918 -0.009437 -3.050446</min>
 		<max>1.577918 1.122949 3.242846</max>
 	</boundingBox>
-	<geometrySize>3536</geometrySize>
+	<geometrySize>3056</geometrySize>
 </root>

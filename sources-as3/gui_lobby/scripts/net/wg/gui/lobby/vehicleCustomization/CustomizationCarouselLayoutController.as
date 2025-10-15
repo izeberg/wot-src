@@ -9,6 +9,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselBookmarkVO;
    import net.wg.gui.lobby.vehicleCustomization.data.customizationPanel.CustomizationCarouselDataVO;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
+   import net.wg.utils.StageSizeBoundaries;
    
    public class CustomizationCarouselLayoutController implements IScrollerLayoutController, IDisposable
    {
@@ -20,8 +21,6 @@ package net.wg.gui.lobby.vehicleCustomization
       private static const BOOK_MARK_HORIZONTAL_SHIFT:int = -3;
       
       private static const BOOK_MARK_VERTICAL_SHIFT:int = -23;
-      
-      private static const MIN_RESOLUTION:int = 900;
       
       private static const GAP_WITH_SEPARATOR_MULTIPLIER:int = 3;
        
@@ -98,7 +97,7 @@ package net.wg.gui.lobby.vehicleCustomization
          {
             _loc9_ = _loc8_ > 0;
             _loc10_ = this._itemLayoutSize[_loc8_];
-            _loc4_ = CustomizationShared.computeItemSize(_loc10_,App.appHeight < MIN_RESOLUTION);
+            _loc4_ = CustomizationShared.computeItemSize(_loc10_,App.appHeight < StageSizeBoundaries.HEIGHT_1080);
             _loc11_ = this.testForBookmark(_loc8_,_loc1_);
             if(_loc11_)
             {

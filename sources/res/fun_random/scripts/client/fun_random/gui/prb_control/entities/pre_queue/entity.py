@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import logging, typing, BigWorld
 from CurrentVehicle import g_currentVehicle
 from constants import QUEUE_TYPE

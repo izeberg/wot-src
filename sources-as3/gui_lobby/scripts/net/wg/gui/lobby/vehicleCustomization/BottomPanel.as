@@ -39,6 +39,7 @@ package net.wg.gui.lobby.vehicleCustomization
    import net.wg.infrastructure.managers.IPopoverManager;
    import net.wg.infrastructure.managers.ITooltipMgr;
    import net.wg.utils.IUtils;
+   import net.wg.utils.StageSizeBoundaries;
    import scaleform.clik.constants.InvalidationType;
    import scaleform.clik.events.ButtonEvent;
    import scaleform.gfx.MouseEventEx;
@@ -66,15 +67,17 @@ package net.wg.gui.lobby.vehicleCustomization
       
       private static const PRICE_OFFSET_HORIZONTAL:int = 13;
       
-      private static const STAGE_SWITCHER_Y:int = -140;
+      private static const STAGE_SWITCHER_Y:int = -85;
+      
+      private static const CAROUSEL_Y:int = -75;
+      
+      private static const CAROUSEL_Y_SMALL:int = -94;
       
       private static const ITEMS_BUTTON_OFFSET:int = 5;
       
       private static const NON_HISTORIC_ICON_OFFSET_X:int = 25;
       
       private static const NON_HISTORIC_FIX_ICON_WIDTH:int = 60;
-      
-      private static const MIN_RESOLUTION:int = 900;
       
       private static const TOP_SMALL_OFFSET:int = 6;
       
@@ -282,12 +285,13 @@ package net.wg.gui.lobby.vehicleCustomization
          var _loc4_:int = 0;
          var _loc5_:UniversalBtn = null;
          super.draw();
-         var _loc1_:Boolean = App.appHeight < MIN_RESOLUTION;
+         var _loc1_:Boolean = App.appHeight < StageSizeBoundaries.HEIGHT_1080;
          if(isInvalid(InvalidationType.SIZE))
          {
             this.background.width = _width;
             this.background.height = App.appHeight - (y + this.background.y);
             this.carousel.width = _width;
+            this.carousel.y = !!_loc1_ ? Number(CAROUSEL_Y_SMALL) : Number(CAROUSEL_Y);
             this.carousel.invalidateSize();
             this.overlay.updateSize(_width,_height,_loc1_);
             this.tabNavigator.updateStage(_width,App.appHeight);

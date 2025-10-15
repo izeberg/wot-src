@@ -4,16 +4,14 @@
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
-		<enabledInEditor>true</enabledInEditor>
 		<resource/>
 	</sequenceObject>
 	<sequenceObject>
 		<name>phase_01</name>
 		<type>particle</type>
-		<enabledInEditor>true</enabledInEditor>
 		<resource>particles/Environment/halloween/enemies/creeps_incame.eff</resource>
 		<track>
-			<name>emmision</name>
+			<name>emission</name>
 			<type>float</type>
 			<frame>
 				<startTime>0.000000</startTime>
@@ -48,10 +46,9 @@
 	<sequenceObject>
 		<name>phase_02</name>
 		<type>particle</type>
-		<enabledInEditor>true</enabledInEditor>
 		<resource>particles/Environment/halloween/enemies/creeps_incame_end.eff</resource>
 		<track>
-			<name>emmision</name>
+			<name>emission</name>
 			<type>float</type>
 			<frame>
 				<startTime>0.000000</startTime>
@@ -86,7 +83,6 @@
 	<sequenceObject>
 		<name>shadow</name>
 		<type>model</type>
-		<enabledInEditor>true</enabledInEditor>
 		<resource>particles/content_deferred/GFX_models/other/shadow_cube.model</resource>
 		<castsShadow>false</castsShadow>
 		<track>
@@ -103,13 +99,13 @@
 				<startTime>2.666667</startTime>
 				<value>21.000000 21.000000 21.000000</value>
 				<inTangent>7.837499 7.837499 7.837499</inTangent>
-				<outTangent>-50.160015 -50.160015 -50.160015</outTangent>
+				<outTangent>-52.250019 -52.250019 -52.250019</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.083333</startTime>
+				<startTime>3.066667</startTime>
 				<value>0.100000 0.100000 0.100000</value>
-				<inTangent>-50.160015 -50.160015 -50.160015</inTangent>
+				<inTangent>-52.250019 -52.250019 -52.250019</inTangent>
 				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
@@ -130,15 +126,30 @@
 				<startTime>2.666667</startTime>
 				<value>0.000000 0.000000 0.000000 1.000000</value>
 				<inTangent>-0.000000 -0.000000 -0.000000 0.187500</inTangent>
-				<outTangent>0.000000 0.000000 0.000000 -2.400001</outTangent>
+				<outTangent>0.000000 0.000000 0.000000 -2.500001</outTangent>
 				<tangentMode>257</tangentMode>
 			</frame>
 			<frame>
-				<startTime>3.083333</startTime>
+				<startTime>3.066667</startTime>
 				<value>0.000000 0.000000 0.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000 -2.400001</inTangent>
+				<inTangent>-0.000000 -0.000000 -0.000000 -2.500001</inTangent>
 				<outTangent>-0.000000 -0.000000 -0.000000 -2.000000</outTangent>
 				<tangentMode>257</tangentMode>
+			</frame>
+		</track>
+	</sequenceObject>
+	<sequenceObject>
+		<name>seq_spawn_bots</name>
+		<type>sound</type>
+		<track>
+			<name>Wwise sound</name>
+			<type>sound</type>
+			<frame>
+				<startTime>0.033333</startTime>
+				<duration>6.966667</duration>
+				<sequenceSound>ev_hw_gp_bot_spawn_seq</sequenceSound>
+				<type>play_till_end</type>
+				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

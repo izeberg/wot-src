@@ -14,31 +14,20 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=2; plural=(n != 1);"
 
-msgid "alertMessage/allPeripheriesHalt"
-msgstr ""
-"Ceasefire is in effect on all servers. Battles will be available in %(time)s"
+msgid "alertMessage/ceasefireAllServers"
+msgstr "Ceasefire is in effect on all available servers."
 
-msgid "alertMessage/button"
-msgstr "Select Another Server"
+msgid "alertMessage/ceasefireCurrentServer"
+msgstr "Ceasefire is in effect on this server."
 
-msgid "alertMessage/seasonAlmostFinished"
-msgstr "Steel Hunter will end in %(time)s"
+msgid "alertMessage/changeServerButton"
+msgstr "Change server"
 
-msgid "alertMessage/seasonFinished"
-msgstr "Steel Hunter has finished"
+msgid "alertMessage/modeIsFinished"
+msgstr "Steel Hunter has ended"
 
-msgid "alertMessage/seasonIsComing"
-msgstr "Steel Hunter will start in %(time)s"
-
-msgid "alertMessage/singleModeHalt"
-msgstr ""
-"Ceasefire is in effect on this server. Battles will be available in %(time)s"
-
-msgid "alertMessage/somePeripheriesHalt"
-msgstr "Ceasefire is in effect on %(serverName)s"
-
-msgid "alertMessage/unsuitablePeriphery"
-msgstr "Battles are unavailable on this server"
+msgid "alertMessage/modeIsUnavailable"
+msgstr "Mode unavailable on this server"
 
 msgid "banner/info/disabled"
 msgstr "Ceasefire"
@@ -276,23 +265,41 @@ msgstr "Select one of the special vehicles for Steel Hunter."
 msgid "battleRoyaleCarousel/lockedToolTip/header"
 msgstr "Incompatible Vehicle"
 
-msgid "battleTypeSelector/tab/hint"
-msgstr "Special Missions"
-
-msgid "battleTypeSelector/tab/platoon"
-msgstr "PLATOON WITH A FRIEND"
-
-msgid "battleTypeSelector/tab/randomPlatoon"
-msgstr "RANDOM PLATOON"
-
-msgid "battleTypeSelector/tab/solo"
-msgstr "SOLO BATTLE"
-
 msgid "button/modules"
 msgstr "TECH TREE"
 
 msgid "button/repair"
 msgstr "Repair"
+
+msgid "ceasefire/header/ceasefireAllServers"
+msgstr "Battles Temporarily Unavailable"
+
+msgid "ceasefire/header/ceasefireCurrentServer"
+msgstr "Battles Temporarily Unavailable"
+
+msgid "ceasefire/header/modeIsUnavailable"
+msgstr "Mode Unavailable"
+
+msgid "ceasefire/header/schedule"
+msgstr "Battle Schedule"
+
+msgid "ceasefire/template/schedule"
+msgstr "{{start}}–{{end}}"
+
+msgid "ceasefire/text/ceasefireAllServers"
+msgstr ""
+"Ceasefire is in effect on all available servers. You can view the schedule "
+"below."
+
+msgid "ceasefire/text/ceasefireCurrentServer"
+msgstr ""
+"Ceasefire is in effect on this server. You can switch to another server to "
+"access the mode."
+
+msgid "ceasefire/text/modeIsUnavailable"
+msgstr ""
+"Steel Hunter is unavailable on this server. You can switch to another server"
+" to access it."
 
 msgid "commanderInfo/commonRank"
 msgstr "Commander"
@@ -443,41 +450,6 @@ msgstr ""
 "collecting Spoils of War. Once the required amount of experience is "
 "accumulated, you can reach the next tier and select an upgrade for one of "
 "the modules."
-
-msgid "intro/aboutButton"
-msgstr "ABOUT MODE"
-
-msgid "intro/button"
-msgstr "Affirmative!"
-
-msgid "intro/slide1/text"
-msgstr ""
-"Three new vehicles: a Polish medium tank, Chinese light tank, and Swedish "
-"heavy tank."
-
-msgid "intro/slide1/title"
-msgstr "NEW VEHICLES"
-
-msgid "intro/slide3/text"
-msgstr ""
-"Spoils of War in green fumes restore hit points and contain a charge for "
-"Recovery, shells, and experience to upgrade your vehicle and increase its "
-"power. In yellow fumes, you will find Spoils of War with charges for Repair "
-"Kit or unique combat abilities."
-
-msgid "intro/slide3/title"
-msgstr "CHANGES IN SPOILS OF WAR CONTENT"
-
-msgid "intro/slide4/text"
-msgstr ""
-"A snowy tundra in Scandinavia, with its characteristic rolling terrain, "
-"small villages, and frozen ponds."
-
-msgid "intro/slide4/title"
-msgstr "NEW MAP"
-
-msgid "intro/title"
-msgstr "STEEL HUNTER"
 
 msgid "levelUp/severalTitles"
 msgstr "RECEIVED LEVELS: %(firstLevel)s–%(lastLevel)s!"
@@ -641,29 +613,8 @@ msgstr ""
 msgid "proxyPanel/store"
 msgstr "STORE"
 
-msgid "questsTooltip/lessThanDay"
-msgstr "less than 1 d"
-
-msgid "questsTooltip/mission_info/timeLeft"
-msgstr "Stage %(cycle)s ends in %(time)s"
-
-msgid "questsTooltip/startIn"
-msgstr "New missions will be available in %(time)s"
-
 msgid "questsTooltip/timeLeft"
 msgstr "Season ends in %(time)s"
-
-msgid "questsTooltip/timeLeftShort/days"
-msgstr "%(day)s d"
-
-msgid "questsTooltip/timeLeftShort/hours"
-msgstr "%(hour)s h"
-
-msgid "questsTooltip/timeLeftShort/lessMin"
-msgstr "less than a minute"
-
-msgid "questsTooltip/timeLeftShort/min"
-msgstr "%(min)s min"
 
 msgid "radar/hint/noBinding"
 msgstr "No key is assigned to Radio Detection"
@@ -835,20 +786,29 @@ msgstr "Our armor is corroding!"
 msgid "statusNotificationTimers/thunderStrike"
 msgstr "Mobility decreased!"
 
+msgid "tab/lable/platoon"
+msgstr "PLATOON"
+
+msgid "tab/lable/solo"
+msgstr "SOLO"
+
+msgid "tab/lable/team"
+msgstr "WITH FRIEND"
+
 msgid "techParams/type/damage"
-msgstr "DAMAGE"
+msgstr "Damage"
 
 msgid "techParams/type/difficulty"
-msgstr "DIFFICULTY"
+msgstr "Difficulty"
 
 msgid "techParams/type/mobility"
-msgstr "MOBILITY"
+msgstr "Mobility"
 
 msgid "techParams/type/spotting"
-msgstr "SPOTTING"
+msgstr "Spotting"
 
 msgid "techParams/type/survivability"
-msgstr "SURVIVABILITY"
+msgstr "Survivability"
 
 msgid "techtree/body_armor"
 msgstr "Armor"
@@ -907,48 +867,46 @@ msgstr "Rotation Speed"
 msgid "tooltip/battleTypeSelector/bonus"
 msgstr "+15%"
 
-msgid "tooltip/battleTypeSelector/tab/bonusDescription"
-msgstr ""
-"Up to %(experience)s XP\n"
-"Up to %(credits)s credits"
+msgid "tooltip/battleTypeSelector/bonusDescription/credits"
+msgstr "Up to {{credits}} credits"
 
-msgid "tooltip/battleTypeSelector/tab/bonusTitle/platoon"
-msgstr "Bonus for playing in a Platoon"
+msgid "tooltip/battleTypeSelector/bonusDescription/experience"
+msgstr "Up to {{experience}} XP"
 
-msgid "tooltip/battleTypeSelector/tab/bonusTitle/randomPlatoon"
-msgstr "Bonus for playing in a Platoon"
+msgid "tooltip/battleTypeSelector/bonusTitle"
+msgstr "Platoon battle bonus"
 
-msgid "tooltip/battleTypeSelector/tab/description/platoon"
-msgstr ""
-"Battle in a Platoon with a friend. Play as a team against nine enemy "
-"Platoons. Platoon missions can be completed in this mode."
-
-msgid "tooltip/battleTypeSelector/tab/description/randomPlatoon"
+msgid "tooltip/battleTypeSelector/description/platoon"
 msgstr ""
 "Battle in a Platoon with a random ally. Play as a team against nine enemy "
 "Platoons. Platoon missions can be completed in this mode. The Platoon will "
 "be automatically disbanded after the battle."
 
-msgid "tooltip/battleTypeSelector/tab/description/solo"
+msgid "tooltip/battleTypeSelector/description/solo"
 msgstr ""
 "Classic Steel Hunter. Each player is fighting for themselves. Collect "
 "resources, upgrade your vehicle, and use its unique abilities to be the last"
 " one standing!"
 
-msgid "tooltip/battleTypeSelector/tab/title/platoon"
-msgstr "Platoon with a friend"
+msgid "tooltip/battleTypeSelector/description/team"
+msgstr ""
+"Battle in a Platoon with a friend. Play as a team against nine enemy "
+"Platoons. Platoon missions can be completed in this mode."
 
-msgid "tooltip/battleTypeSelector/tab/title/randomPlatoon"
+msgid "tooltip/battleTypeSelector/header/platoon"
 msgstr "Random Platoon"
 
-msgid "tooltip/battleTypeSelector/tab/title/solo"
-msgstr "Solo Battle"
+msgid "tooltip/battleTypeSelector/header/solo"
+msgstr "Solo Mode"
+
+msgid "tooltip/battleTypeSelector/header/team"
+msgstr "Platoon With Friend"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/29"
 msgstr "Solo"
 
 msgid "tooltip/progression/leaderboardReward/battleTypesHeader/30"
-msgstr "In Platoon"
+msgstr "Platoon"
 
 msgid "tooltip/progression/leaderboardReward/header"
 msgstr "Rules for earning Points"
@@ -959,61 +917,6 @@ msgstr "%(place)s place"
 msgid "tooltip/progression/leaderboardReward/text/places"
 msgstr "%(place)s places"
 
-msgid "tooltip/widget/hangar/battleSchedule/schedule"
-msgstr "%(start)s–%(end)s"
-
-msgid "tooltip/widget/hangar/description/header"
-msgstr "Main Progression Complete!"
-
-msgid "tooltip/widget/hangar/description/text/completed"
-msgstr "Daily missions are now available to you."
-
-msgid "tooltip/widget/hangar/description/text/inProgress"
-msgstr ""
-"Complete Steel Hunter missions to receive Progression Points. Your battle "
-"results also affect how many Points you receive."
-
-msgid "tooltip/widget/hangar/header/battleLeaveTime/today"
-msgstr "today"
-
-msgid "tooltip/widget/hangar/header/battleLeaveTime/tomorrow"
-msgstr "tomorrow"
-
-msgid "tooltip/widget/hangar/header/subTitle/text"
-msgstr "The event ends in %(value)s"
-
-msgid "tooltip/widget/hangar/header/title"
-msgstr "Steel Hunter"
-
-msgid "tooltip/widget/hangar/performance/description/high"
-msgstr ""
-"Your computer's performance is insufficient for this mode. You may "
-"experience issues with graphics and vehicle movement. Game client crashes "
-"are also likely."
-
-msgid "tooltip/widget/hangar/performance/description/low"
-msgstr ""
-"In case of insufficient performance, try a lower graphics quality in "
-"Settings."
-
-msgid "tooltip/widget/hangar/performance/description/medium"
-msgstr ""
-"This mode demands high computer performance. You may experience issues with "
-"map loading, graphics, and vehicle movement. In case of insufficient "
-"performance, try a lower graphics quality in Settings."
-
-msgid "tooltip/widget/hangar/performance/header/high"
-msgstr "Low Performance"
-
-msgid "tooltip/widget/hangar/performance/header/low"
-msgstr "This mode demands high computer performance."
-
-msgid "tooltip/widget/hangar/performance/header/medium"
-msgstr "Low Performance"
-
-msgid "tooltip/widget/hangar/timeTable/title"
-msgstr "Battle Schedule"
-
 msgid "tooltips/awards/achievement"
 msgstr "Medal"
 
@@ -1022,23 +925,6 @@ msgstr "Badge"
 
 msgid "tooltips/awards/pattern"
 msgstr "%(typeName)s: \"%(userName)s\""
-
-msgid "tooltips/brCoin/earn/description"
-msgstr ""
-"Receive Steel Seals for efficient battle performance, achieving high "
-"positions in the battle results, and completing the mode missions."
-
-msgid "tooltips/brCoin/earn/title"
-msgstr "How to Earn Seals"
-
-msgid "tooltips/brCoin/spend/description"
-msgstr "Use the earned Steel Seals to purchase Steel Hunter styles."
-
-msgid "tooltips/brCoin/spend/title"
-msgstr "What to Spend Seals On"
-
-msgid "tooltips/brCoin/title"
-msgstr "Steel Seals"
 
 msgid "tooltips/respawn/common/description"
 msgstr ""

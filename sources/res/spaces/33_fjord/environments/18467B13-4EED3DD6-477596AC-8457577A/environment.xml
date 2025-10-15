@@ -84,28 +84,25 @@
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>3.500000</sunlightLumMultiplier>
-			<ambientLumMultiplier>2.500000</ambientLumMultiplier>
 			<sunLumMultiplier>8.000000</sunLumMultiplier>
 			<skyLumMultiplier>0.700000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.220000</middleGray>
 				<whitePoint>-3.700000</whitePoint>
 				<blackPoint>2.000000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.380000</middleGray>
 				<whitePoint>2.300000</whitePoint>
 				<blackPoint>0.110000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.380000</middleGray>
 				<whitePoint>2.300000</whitePoint>
 				<blackPoint>0.110000</blackPoint>
 			</tonemapping>
@@ -191,11 +188,11 @@
 			<windStrength>5.000000</windStrength>
 			<angle>143.630005</angle>
 			<offset>0.000000 0.000000</offset>
-			<tiling>200.000000</tiling>
+			<tiling>400.000000</tiling>
 			<shadowFactor>0.600000</shadowFactor>
 		</layer0>
 		<layer1>
-			<texture>maps/fx/cloud_16.dds</texture>
+			<texture>maps/fx/cloud_16_2.dds</texture>
 			<windDir>1.000000 0.000000</windDir>
 			<windStrength>0.000000</windStrength>
 			<angle>121.919998</angle>

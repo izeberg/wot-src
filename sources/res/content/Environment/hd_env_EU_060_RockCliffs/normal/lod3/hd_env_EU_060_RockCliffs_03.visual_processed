@@ -96,7 +96,7 @@
 						<Texture>content/Environment/00_Tiles/hd_env_EU_004_Snow_rocks_dirt_01_DM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>1.348645 11.100581 0.034132</groupOrigin>
+				<groupOrigin>0.876474 11.100581 0.034132</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -105,5 +105,5 @@
 		<max>12.286098 25.112888 34.547245</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>3876</geometrySize>
+	<geometrySize>4430</geometrySize>
 </root>

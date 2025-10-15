@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.731515 -1.155344 -3.987455</min>
+		<max>1.891523 0.574554 3.944954</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB156_Black_Prince_II/crash/lod1/Hull</nodefullVisual>
+	<parent>vehicles/british/GB156_Black_Prince_II/crash/lod2/Hull</parent>
+	<extent>64</extent>
+</root>

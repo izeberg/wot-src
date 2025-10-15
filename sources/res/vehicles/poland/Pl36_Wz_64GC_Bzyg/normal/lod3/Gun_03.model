@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod4/Gun_03</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.384255 -0.310790 0.062157</min>
+		<max>0.388637 0.734506 5.309600</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/poland/Pl36_Wz_64GC_Bzyg/normal/lod3/Gun_03</nodefullVisual>
+</root>

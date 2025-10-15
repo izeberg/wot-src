@@ -23,7 +23,8 @@ __all__ = (
  'AmmoReplayPlayer',
  'AutoReloadingBoostStates',
  'ReloadingTimeSnapshot')
-_ClipBurstSettings = namedtuple('_ClipBurstSettings', 'size interval')
+_ClipSettings = namedtuple('_ClipBurstSettings', 'size interval')
+_BurstSettings = namedtuple('_ClipBurstSettings', 'size interval syncReloading')
 _HUNDRED_PERCENT = 100.0
 _DualGunShellChangeTime = namedtuple('_DualGunShellChangeTime', 'left right activeIdx')
 _TIME_CORRECTION_THRESHOLD = 0.01
@@ -32,6 +33,7 @@ _DUPLET_SHELLS_AMOUNT = 2
 _logger = logging.getLogger(__name__)
 if typing.TYPE_CHECKING:
     from typing import Set, Optional
+    from ChargeableBurstComponent import ChargeableBurstModeState
     from gui.battle_control.controllers.consumables.blockers import IShellChangeBlocker, IShotBlocker
     from gui.shared.gui_items.vehicle_modules import Shell
     from items.vehicle_items import Gun
@@ -43,14 +45,14 @@ class _GunSettings(namedtuple('_GunSettings', (
 
     @classmethod
     def default(cls):
-        return cls.__new__(cls, _ClipBurstSettings(1, 0.0), _ClipBurstSettings(1, 0.0), {}, None, None, None, False, False, 0.0, 0.0, 0.0)
+        return cls.__new__(cls, _ClipSettings(1, 0.0), _BurstSettings(1, 0.0, False), {}, None, None, None, False, False, 0.0, 0.0, 0.0)
 
     @classmethod
     def make(cls, vehicleDescr):
         gun = vehicleDescr.gun
         shots = {}
-        clip = _ClipBurstSettings(*gun.clip)
-        burst = _ClipBurstSettings(*gun.burst)
+        clip = _ClipSettings(*gun.clip)
+        burst = _BurstSettings(*gun.burst)
         reloadEffect = None
         reloadEffectDesc = gun.reloadEffect
         if reloadEffectDesc is not None:
@@ -987,9 +989,9 @@ class AmmoController(MethodsRules, ViewComponentsController):
         self.__nextShellCD = None
         return
 
-    def setBurstActive(self, isActive):
+    def setChargeableBurstState(self, mechanicState):
         if self.__gunSettings.reloadEffect is not None:
-            self.__gunSettings.reloadEffect.setBurstActive(isActive)
+            self.__gunSettings.reloadEffect.setChargeableBurstState(mechanicState)
         return
 
     def setDualGunShellChangeTime(self, left, right, activeIdx):

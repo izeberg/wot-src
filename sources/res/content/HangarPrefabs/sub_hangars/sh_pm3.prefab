@@ -655,7 +655,7 @@
 		<GameObject>
 			<name>hpm_012_Floor_01</name>
 			<UUID>e7374ded-2f8e-32dd-9bf9-3b7a931c2e9e</UUID>
-			<flags>0</flags>
+			<flags>2</flags>
 		</GameObject>
 		<GameObject>
 			<name>hpm_013_TankPodium_01</name>
@@ -58860,6 +58860,39 @@
 		<ComponentPool>
 			<type>Colliders</type>
 			<version>1</version>
+			<component>
+				<UUID>e7374ded-2f8e-32dd-9bf9-3b7a931c2e9e</UUID>
+				<flags>35</flags>
+				<config>
+					<property>
+						<name>Colliders</name>
+						<collection>
+							<item>
+								<object>
+									<property>
+										<name>Type</name>
+										<value>3</value>
+									</property>
+									<property>
+										<name>Parameters</name>
+										<object>
+											<property>
+												<name>Model name</name>
+												<isAsset>true</isAsset>
+												<value>content/Hangars/hangar_personal_missions/Environment/hpm_012_Floor/normal/lod0/hpm_012_Floor_01.model</value>
+											</property>
+											<property>
+												<name>Module name</name>
+												<value>default</value>
+											</property>
+										</object>
+									</property>
+								</object>
+							</item>
+						</collection>
+					</property>
+				</config>
+			</component>
 			<component>
 				<UUID>e7365b01-d8af-3f18-aa8d-3b5eb48e6ad3</UUID>
 				<flags>35</flags>

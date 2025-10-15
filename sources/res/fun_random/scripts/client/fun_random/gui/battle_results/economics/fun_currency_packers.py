@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 import typing
 from fun_random.gui.battle_results.pbs_helpers import isPremiumAdvertisingShown, getAdvertising
 from gui.battle_results.pbs_helpers.economics import getDirectMoneyRecords

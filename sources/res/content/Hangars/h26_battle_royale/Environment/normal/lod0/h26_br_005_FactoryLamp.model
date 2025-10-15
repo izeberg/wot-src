@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/Hangars/h26_battle_royale/Environment/normal/lod1/h26_br_005_FactoryLamp</parent>
+	<extent>30.000000</extent>
+	<visibilityBox>
+		<min>-0.464927 -6.308303 -0.464610</min>
+		<max>0.434933 0.004004 0.435432</max>
+	</visibilityBox>
+	<nodefullVisual>content/Hangars/h26_battle_royale/Environment/normal/lod0/h26_br_005_FactoryLamp</nodefullVisual>
+</root>

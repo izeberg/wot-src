@@ -220,8 +220,16 @@
 						<Float>0.370000</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.800000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.200000</Float>
 					</property>
 				</material>
 				<groupOrigin>0.000000 0.006914 0.099067</groupOrigin>

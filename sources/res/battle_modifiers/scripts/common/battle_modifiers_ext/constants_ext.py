@@ -1,5 +1,6 @@
 import typing
 from collections import OrderedDict
+from future.utils import viewitems
 from constants import IS_DEVELOPMENT, SHELL_TYPES, BATTLE_LOG_SHELL_TYPES
 if typing.TYPE_CHECKING:
     from items.vehicle_items import Shell
@@ -148,9 +149,8 @@ class ClientDomain(object):
     ALL = None
 
 
-ClientDomain.ALL = set([ v for k, v in ClientDomain.__dict__.iteritems() if not k.startswith('_') and k not in ('UNDEFINED',
-                                                                                                                'ALL')
-                       ])
+ClientDomain.ALL = set(v for k, v in viewitems(ClientDomain.__dict__) if not k.startswith('_') and k not in ('UNDEFINED',
+                                                                                                             'ALL'))
 
 class GameplayImpact(object):
     UNDEFINED = 0
@@ -247,7 +247,7 @@ class ShellKind(object):
      SHELL_TYPES.ARMOR_PIERCING_CR, SHELL_TYPES.SMOKE,
      SHELL_TYPES.HIGH_EXPLOSIVE_MODERN, SHELL_TYPES.HIGH_EXPLOSIVE_LEGACY_STUN,
      SHELL_TYPES.HIGH_EXPLOSIVE_LEGACY_NO_STUN}
-    ALL_IMPROVED = set([ key + SHELL_TYPES.IMPROVED_POSTFIX for key in ALL_REGULAR ])
+    ALL_IMPROVED = set(key + SHELL_TYPES.IMPROVED_POSTFIX for key in ALL_REGULAR)
 
     @classmethod
     def get(cls, shellDescr, withGold=True):

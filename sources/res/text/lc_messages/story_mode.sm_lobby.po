@@ -90,6 +90,9 @@ msgstr "OPERATION OVERLORD"
 msgid "battleResult/missionName/6"
 msgstr "OPERATION POSTMAN"
 
+msgid "battleResult/missionName/7"
+msgstr "OPERATION BOILING POINT"
+
 msgid "battleResult/noTasksToComplete"
 msgstr ""
 "No active\n"
@@ -239,6 +242,11 @@ msgstr ""
 "OPERATION\n"
 "POSTMAN"
 
+msgid "missionSelection/lockedMissionName/7"
+msgstr ""
+"OPERATION\n"
+"BOILING POINT"
+
 msgid "missionSelection/missionDescription/1"
 msgstr ""
 "Brooks: \"So how are you? Have you come 'round? You'll see the medics later. Every gun counts now. The assault has already begun. And because we were late, the enemy's focused all their attention on another flank. This is our chance. We attack pronto. Break into town and squeeze them from both sides.\n"
@@ -333,6 +341,14 @@ msgstr ""
 "\n"
 "Roll out.\""
 
+msgid "missionSelection/missionDescription/7"
+msgstr ""
+"Leni Scharf: \"The situation is critical. We've lost contact with our missile base in the Norwegian Sea. The reconnaissance flight never returned, and the initial tank landing force was wiped out by an unknown enemy.\n"
+"\n"
+"Intelligence suggests they're preparing to launch a ballistic missile. We don't know the target, but in this political climate, a single launch could trigger a global conflict.\n"
+"\n"
+"Feels like the old days, doesn't it? Just another impossible mission behind enemy lines. Roll out!\""
+
 msgid "missionSelection/missionName/1"
 msgstr "OPERATION STEEL AVALANCHE"
 
@@ -365,6 +381,9 @@ msgstr "OPERATION OVERLORD"
 
 msgid "missionSelection/missionName/6"
 msgstr "OPERATION POSTMAN"
+
+msgid "missionSelection/missionName/7"
+msgstr "OPERATION BOILING POINT"
 
 msgid "missionSelection/specialVehicle"
 msgstr "Special Vehicle"
@@ -469,6 +488,15 @@ msgstr ""
 "%(kill_enemies)s."
 
 msgid "missionSelection/taskDescription/6/3"
+msgstr "Complete the main mission objectives without losing a single vehicle."
+
+msgid "missionSelection/taskDescription/7/1"
+msgstr "Reach the command center and stop the missile launch."
+
+msgid "missionSelection/taskDescription/7/2"
+msgstr "Complete the main mission objectives in under %(win_timer)s."
+
+msgid "missionSelection/taskDescription/7/3"
 msgstr "Complete the main mission objectives without losing a single vehicle."
 
 msgid "missionSelection/taskDescription/kill_enemies"

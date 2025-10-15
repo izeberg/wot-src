@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/crash/lod2/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.270995 -0.000431 -3.152593</min>
+		<max>1.270995 1.138020 2.900539</max>
+	</visibilityBox>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+</root>

@@ -51,7 +51,6 @@ LUI_RULES = Enumeration('Limited UI rules', [
  'sysMsgCollectionsUpdatedEntry',
  'storage',
  'PersonalReservesHangarButton',
- 'StrongholdEntryPoint',
  'BREntryPoint',
  'WDRNewbieReward',
  'LiveOpsWebEventsEntryPoint',

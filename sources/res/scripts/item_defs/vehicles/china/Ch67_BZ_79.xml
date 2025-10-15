@@ -3190,6 +3190,14 @@
 				<!--BW_String-->
 			</threshold>
 			<cooldown>5</cooldown>
+			<addMaxSpeedForwardBonus>
+				0.4
+				<!--BW_String-->
+			</addMaxSpeedForwardBonus>
+			<addRotationSpeedBonus>
+				-0.8
+				<!--BW_String-->
+			</addRotationSpeedBonus>
 			<impulse>
 				<magnitude>50</magnitude>
 				<applyPoint>
@@ -3210,23 +3218,9 @@
 					</value>
 				</mul>
 				<mul>
-					<name>dynAttrs/vehicle/maxSpeed/forward</name>
-					<value>
-						1.4
-						<!--BW_String-->
-					</value>
-				</mul>
-				<mul>
 					<name>dynAttrs/vehicle/maxSpeed/backward</name>
 					<value>
 						0.1
-						<!--BW_String-->
-					</value>
-				</mul>
-				<mul>
-					<name>dynAttrs/vehicle/rotationSpeed</name>
-					<value>
-						0.2
 						<!--BW_String-->
 					</value>
 				</mul>
@@ -3236,20 +3230,6 @@
 					<name>vehicleEnginePower</name>
 					<value>
 						2.5
-						<!--BW_String-->
-					</value>
-				</mul>
-				<mul>
-					<name>vehicleForwardMaxSpeed</name>
-					<value>
-						1.4
-						<!--BW_String-->
-					</value>
-				</mul>
-				<mul>
-					<name>vehicleBackwardMaxSpeed</name>
-					<value>
-						0.1
 						<!--BW_String-->
 					</value>
 				</mul>

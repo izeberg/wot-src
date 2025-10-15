@@ -1,6 +1,6 @@
 import BigWorld, CGF
 from cgf_script.managers_registrator import autoregister
-from constants import IS_CLIENT
+from constants import IS_CLIENT, IS_UE_EDITOR
 if IS_CLIENT:
     from Avatar import PlayerAvatar
     from ClientArena import ClientArena
@@ -8,6 +8,8 @@ if IS_CLIENT:
 def bonusCapsManager(bonusCap, domain=CGF.DomainOption.DomainAll):
 
     def predicate(spaceID):
+        if IS_UE_EDITOR and not hasattr(BigWorld, 'player'):
+            return False
         player = BigWorld.player()
         if spaceID != ClientArena.DEFAULT_ARENA_WORLD_ID and isinstance(player, PlayerAvatar):
             return player.hasBonusCap(bonusCap)

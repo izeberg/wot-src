@@ -10,6 +10,38 @@
 		<blocks>
 			<block>
 				<class>Variable</class>
+				<id>Variable_47</id>
+				<params>
+					<param>
+						Variable_2
+						<name>Variable Name</name>
+						<type>StringT</type>
+					</param>
+					<param>
+						IntT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+					<param>
+						false
+						<name>External Init</name>
+						<type>BoolT</type>
+					</param>
+					<param>
+						false
+						<name>Is Const</name>
+						<type>BoolT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>default</name>
+						<const>\0\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Variable</class>
 				<id>Variable_2</id>
 				<params>
 					<param>
@@ -1435,6 +1467,50 @@
 				<slots/>
 			</block>
 			<block>
+				<class>If</class>
+				<id>If_44</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_121</id>
+				<buddy>Variable_2</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Or</class>
+				<id>Or_6</id>
+				<params>
+					<param>
+						2
+						<name>Input Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_122</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_64</id>
 				<params>
@@ -1472,6 +1548,30 @@
 				<slots/>
 			</block>
 			<block>
+				<class>Macro</class>
+				<id>Macro_90</id>
+				<params>
+					<param>
+						DisableTurbo3DSounds
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_26</id>
+				<params>
+					<param>
+						3
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Sequence</class>
 				<id>Sequence_2</id>
 				<params>
@@ -1498,31 +1598,7 @@
 			</block>
 			<block>
 				<class>Macro</class>
-				<id>Macro_35</id>
-				<params>
-					<param>
-						DisableTurbo3DSounds
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_36</id>
-				<params>
-					<param>
-						StopVFX
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_56</id>
+				<id>Macro_91</id>
 				<params>
 					<param>
 						StopSounds
@@ -1587,6 +1663,106 @@
 				<slots/>
 			</block>
 			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_10</id>
+				<params>
+					<param>
+						Animator.getDurationByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\start\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_11</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\start\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_3</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_13</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\idle\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_12</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\start\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_25</id>
+				<params>
+					<param>
+						3
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
 				<class>Macro</class>
 				<id>Macro_44</id>
 				<params>
@@ -1605,9 +1781,9 @@
 				<slots/>
 			</block>
 			<block>
-				<class>SetVariable</class>
-				<id>SetVariable_43</id>
-				<buddy>Variable_44</buddy>
+				<class>GetVariable</class>
+				<id>GetVariable_118</id>
+				<buddy>Variable_3</buddy>
 				<params>
 					<param>
 						BoolT
@@ -1615,6 +1791,50 @@
 						<type>TypeT</type>
 					</param>
 				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_43</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>CompareIntegers</class>
+				<id>CompareIntegers_11</id>
+				<params/>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_119</id>
+				<buddy>Variable_3</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_120</id>
+				<buddy>Variable_4</buddy>
+				<params>
+					<param>
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>If</class>
+				<id>If_42</id>
+				<params/>
 				<slots/>
 			</block>
 			<block>
@@ -1630,11 +1850,169 @@
 				<slots/>
 			</block>
 			<block>
-				<class>Macro</class>
-				<id>Macro_6</id>
+				<class>SetVariable</class>
+				<id>SetVariable_43</id>
+				<buddy>Variable_44</buddy>
 				<params>
 					<param>
-						UpdateVFX
+						BoolT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_24</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Timer</class>
+				<id>Timer_4</id>
+				<params>
+					<param>
+						1
+						<name>Timer Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_16</id>
+				<params>
+					<param>
+						Animator.startLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\end\</const>
+					</slot>
+					<slot>
+						<name>arg#1</name>
+						<const>\0.000000\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_17</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\end\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_14</id>
+				<params>
+					<param>
+						Animator.stopLayerByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\idle\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>ComponentMethod</class>
+				<id>ComponentMethod_15</id>
+				<params>
+					<param>
+						Animator.getDurationByName
+						<name>Component Type</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots>
+					<slot>
+						<name>arg#0</name>
+						<const>\end\</const>
+					</slot>
+				</slots>
+			</block>
+			<block>
+				<class>GetVariable</class>
+				<id>GetVariable_11</id>
+				<buddy>Variable_1</buddy>
+				<params>
+					<param>
+						GameObjectT
+						<name>Variable Type</name>
+						<type>TypeT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Sequence</class>
+				<id>Sequence_23</id>
+				<params>
+					<param>
+						2
+						<name>Output Count</name>
+						<type>IntT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_43</id>
+				<params>
+					<param>
+						UpdateMechanicState
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_82</id>
+				<params>
+					<param>
+						ResolveSwitchSound
+						<name>Macro Name</name>
+						<type>StringT</type>
+					</param>
+				</params>
+				<slots/>
+			</block>
+			<block>
+				<class>Macro</class>
+				<id>Macro_59</id>
+				<params>
+					<param>
+						ResolveEngineDeadSounds
 						<name>Macro Name</name>
 						<type>StringT</type>
 					</param>
@@ -1671,55 +2049,6 @@
 				<params>
 					<param>
 						ResolveTurboActivation3DSound
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_59</id>
-				<params>
-					<param>
-						ResolveEngineDeadSounds
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_82</id>
-				<params>
-					<param>
-						ResolveSwitchSound
-						<name>Macro Name</name>
-						<type>StringT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>GetVariable</class>
-				<id>GetVariable_11</id>
-				<buddy>Variable_1</buddy>
-				<params>
-					<param>
-						GameObjectT
-						<name>Variable Type</name>
-						<type>TypeT</type>
-					</param>
-				</params>
-				<slots/>
-			</block>
-			<block>
-				<class>Macro</class>
-				<id>Macro_43</id>
-				<params>
-					<param>
-						UpdateMechanicState
 						<name>Macro Name</name>
 						<type>StringT</type>
 					</param>
@@ -2012,6 +2341,30 @@
 				<output>value</output>
 			</connection>
 			<connection>
+				<from>Sequence_26</from>
+				<input>input</input>
+				<to>If_44</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>Or_6</from>
+				<input>value</input>
+				<to>If_44</to>
+				<output>res</output>
+			</connection>
+			<connection>
+				<from>GetVariable_121</from>
+				<input>i1</input>
+				<to>Or_6</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_122</from>
+				<input>i2</input>
+				<to>Or_6</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>SetVariable_22</from>
 				<input>in</input>
 				<to>Macro_64</to>
@@ -2036,28 +2389,28 @@
 				<output>isCurrentVehicle</output>
 			</connection>
 			<connection>
+				<from>Sequence_26</from>
+				<input>in</input>
+				<to>Macro_90</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>OnStanceDanceState_1</from>
+				<input>input</input>
+				<to>Sequence_26</to>
+				<output>unsubscribeOut</output>
+			</connection>
+			<connection>
 				<from>SetVariable_44</from>
 				<input>input</input>
 				<to>Sequence_2</to>
 				<output>out</output>
 			</connection>
 			<connection>
-				<from>OnStanceDanceState_1</from>
+				<from>Sequence_26</from>
 				<input>in</input>
-				<to>Macro_35</to>
-				<output>unsubscribeOut</output>
-			</connection>
-			<connection>
-				<from>Macro_35</from>
-				<input>in</input>
-				<to>Macro_36</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_36</from>
-				<input>in</input>
-				<to>Macro_56</to>
-				<output>out</output>
+				<to>Macro_91</to>
+				<output>o2</output>
 			</connection>
 			<connection>
 				<from>Macro_44</from>
@@ -2082,6 +2435,84 @@
 				<input>input</input>
 				<to>Sequence_3</to>
 				<output>out</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_11</from>
+				<input>in</input>
+				<to>ComponentMethod_10</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_10</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Sequence_25</from>
+				<input>in</input>
+				<to>ComponentMethod_11</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_11</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_10</from>
+				<input>windup</input>
+				<to>Timer_3</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Sequence_24</from>
+				<input>cancel</input>
+				<to>Timer_3</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_10</from>
+				<input>time0</input>
+				<to>Timer_3</to>
+				<output>return</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_12</from>
+				<input>in</input>
+				<to>ComponentMethod_13</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_13</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Timer_3</from>
+				<input>in</input>
+				<to>ComponentMethod_12</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Timer_3</from>
+				<input>in</input>
+				<to>ComponentMethod_12</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_12</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>If_43</from>
+				<input>input</input>
+				<to>Sequence_25</to>
+				<output>true</output>
 			</connection>
 			<connection>
 				<from>OnStanceDanceState_1</from>
@@ -2180,16 +2611,40 @@
 				<output>value</output>
 			</connection>
 			<connection>
-				<from>Macro_42</from>
+				<from>If_42</from>
 				<input>input</input>
-				<to>SetVariable_43</to>
-				<output>out</output>
+				<to>If_43</to>
+				<output>false</output>
 			</connection>
 			<connection>
-				<from>OnStanceDanceState_1</from>
+				<from>GetVariable_119</from>
 				<input>value</input>
-				<to>SetVariable_43</to>
-				<output>isEnoughEnergyToActivate</output>
+				<to>If_43</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_118</from>
+				<input>a</input>
+				<to>CompareIntegers_11</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>GetVariable_120</from>
+				<input>b</input>
+				<to>CompareIntegers_11</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Sequence_23</from>
+				<input>input</input>
+				<to>If_42</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>CompareIntegers_11</from>
+				<input>value</input>
+				<to>If_42</to>
+				<output>equal</output>
 			</connection>
 			<connection>
 				<from>OnStanceDanceState_1</from>
@@ -2210,39 +2665,105 @@
 				<output>turboEnergyRatio</output>
 			</connection>
 			<connection>
+				<from>Macro_42</from>
+				<input>input</input>
+				<to>SetVariable_43</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>OnStanceDanceState_1</from>
+				<input>value</input>
+				<to>SetVariable_43</to>
+				<output>isEnoughEnergyToActivate</output>
+			</connection>
+			<connection>
+				<from>If_43</from>
+				<input>input</input>
+				<to>Sequence_24</to>
+				<output>false</output>
+			</connection>
+			<connection>
+				<from>If_44</from>
+				<input>input</input>
+				<to>Sequence_24</to>
+				<output>true</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_15</from>
+				<input>windup</input>
+				<to>Timer_4</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Sequence_25</from>
+				<input>cancel</input>
+				<to>Timer_4</to>
+				<output>o0</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_15</from>
+				<input>time0</input>
+				<to>Timer_4</to>
+				<output>return</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_14</from>
+				<input>in</input>
+				<to>ComponentMethod_16</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_16</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Timer_4</from>
+				<input>in</input>
+				<to>ComponentMethod_17</to>
+				<output>event0</output>
+			</connection>
+			<connection>
+				<from>Timer_4</from>
+				<input>in</input>
+				<to>ComponentMethod_17</to>
+				<output>cancelOut</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_17</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>Sequence_24</from>
+				<input>in</input>
+				<to>ComponentMethod_14</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_14</to>
+				<output>value</output>
+			</connection>
+			<connection>
+				<from>ComponentMethod_16</from>
+				<input>in</input>
+				<to>ComponentMethod_15</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>ContextGetSelf_1</from>
+				<input>gameObject</input>
+				<to>ComponentMethod_15</to>
+				<output>value</output>
+			</connection>
+			<connection>
 				<from>Macro_43</from>
-				<input>in</input>
-				<to>Macro_6</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_6</from>
-				<input>in</input>
-				<to>Macro_26</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_26</from>
-				<input>in</input>
-				<to>Macro_72</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_72</from>
-				<input>in</input>
-				<to>Macro_71</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_71</from>
-				<input>in</input>
-				<to>Macro_59</to>
-				<output>out</output>
-			</connection>
-			<connection>
-				<from>Macro_59</from>
-				<input>in</input>
-				<to>Macro_82</to>
+				<input>input</input>
+				<to>Sequence_23</to>
 				<output>out</output>
 			</connection>
 			<connection>
@@ -2322,6 +2843,36 @@
 				<input>prevIsSwitchingState</input>
 				<to>Macro_43</to>
 				<output>prevIsSwitchingState</output>
+			</connection>
+			<connection>
+				<from>Macro_59</from>
+				<input>in</input>
+				<to>Macro_82</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_71</from>
+				<input>in</input>
+				<to>Macro_59</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Sequence_23</from>
+				<input>in</input>
+				<to>Macro_26</to>
+				<output>o1</output>
+			</connection>
+			<connection>
+				<from>Macro_26</from>
+				<input>in</input>
+				<to>Macro_72</to>
+				<output>out</output>
+			</connection>
+			<connection>
+				<from>Macro_72</from>
+				<input>in</input>
+				<to>Macro_71</to>
+				<output>out</output>
 			</connection>
 			<connection>
 				<from>Sequence_2</from>
@@ -3010,26 +3561,21 @@
 						<slots/>
 					</block>
 					<block>
-						<class>If</class>
-						<id>If_33</id>
-						<params/>
+						<class>Sequence</class>
+						<id>Sequence_1</id>
+						<params>
+							<param>
+								2
+								<name>Output Count</name>
+								<type>IntT</type>
+							</param>
+						</params>
 						<slots/>
 					</block>
 					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_3</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
+						<class>If</class>
+						<id>If_33</id>
+						<params/>
 						<slots/>
 					</block>
 					<block>
@@ -3047,25 +3593,6 @@
 					<block>
 						<class>GetVariable</class>
 						<id>GetVariable_3</id>
-						<buddy>Variable_3</buddy>
-						<params>
-							<param>
-								BoolT
-								<name>Variable Type</name>
-								<type>TypeT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>CompareIntegers</class>
-						<id>CompareIntegers_10</id>
-						<params/>
-						<slots/>
-					</block>
-					<block>
-						<class>GetVariable</class>
-						<id>GetVariable_106</id>
 						<buddy>Variable_3</buddy>
 						<params>
 							<param>
@@ -3099,13 +3626,20 @@
 						<slots/>
 					</block>
 					<block>
-						<class>Sequence</class>
-						<id>Sequence_1</id>
+						<class>CompareIntegers</class>
+						<id>CompareIntegers_10</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
+						<class>GetVariable</class>
+						<id>GetVariable_106</id>
+						<buddy>Variable_3</buddy>
 						<params>
 							<param>
-								2
-								<name>Output Count</name>
-								<type>IntT</type>
+								BoolT
+								<name>Variable Type</name>
+								<type>TypeT</type>
 							</param>
 						</params>
 						<slots/>
@@ -3140,6 +3674,23 @@
 						</params>
 						<slots/>
 					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_3</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
 				</blocks>
 				<connections>
 					<connection>
@@ -3159,6 +3710,12 @@
 						<input>value</input>
 						<to>If_32</to>
 						<output>equal</output>
+					</connection>
+					<connection>
+						<from>MacroInput_6</from>
+						<input>input</input>
+						<to>Sequence_1</to>
+						<output>in</output>
 					</connection>
 					<connection>
 						<from>If_32</from>
@@ -3189,12 +3746,6 @@
 						<input>b</input>
 						<to>CompareIntegers_10</to>
 						<output>value</output>
-					</connection>
-					<connection>
-						<from>MacroInput_6</from>
-						<input>input</input>
-						<to>Sequence_1</to>
-						<output>in</output>
 					</connection>
 					<connection>
 						<from>Sequence_1</from>
@@ -3642,23 +4193,6 @@
 						<slots/>
 					</block>
 					<block>
-						<class>ContextGetSelf</class>
-						<id>ContextGetSelf_6</id>
-						<params>
-							<param>
-								CGFGameObjectContext
-								<name>Context Name</name>
-								<type>StringT</type>
-							</param>
-							<param>
-								getSelf
-								<name>Member Name</name>
-								<type>StringT</type>
-							</param>
-						</params>
-						<slots/>
-					</block>
-					<block>
 						<class>GetVariable</class>
 						<id>GetVariable_9</id>
 						<buddy>Variable_2</buddy>
@@ -3743,6 +4277,23 @@
 								EventT
 								<name>Output Type</name>
 								<type>TypeT</type>
+							</param>
+						</params>
+						<slots/>
+					</block>
+					<block>
+						<class>ContextGetSelf</class>
+						<id>ContextGetSelf_6</id>
+						<params>
+							<param>
+								CGFGameObjectContext
+								<name>Context Name</name>
+								<type>StringT</type>
+							</param>
+							<param>
+								getSelf
+								<name>Member Name</name>
+								<type>StringT</type>
 							</param>
 						</params>
 						<slots/>
@@ -4232,6 +4783,12 @@
 						<slots/>
 					</block>
 					<block>
+						<class>If</class>
+						<id>If_22</id>
+						<params/>
+						<slots/>
+					</block>
+					<block>
 						<class>Macro</class>
 						<id>Macro_84</id>
 						<params>
@@ -4241,12 +4798,6 @@
 								<type>StringT</type>
 							</param>
 						</params>
-						<slots/>
-					</block>
-					<block>
-						<class>If</class>
-						<id>If_22</id>
-						<params/>
 						<slots/>
 					</block>
 					<block>
@@ -4540,12 +5091,6 @@
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>If_22</from>
-						<input>in</input>
-						<to>Macro_84</to>
-						<output>true</output>
-					</connection>
-					<connection>
 						<from>SetVariable_32</from>
 						<input>input</input>
 						<to>If_22</to>
@@ -4556,6 +5101,12 @@
 						<input>value</input>
 						<to>If_22</to>
 						<output>value</output>
+					</connection>
+					<connection>
+						<from>If_22</from>
+						<input>in</input>
+						<to>Macro_84</to>
+						<output>true</output>
 					</connection>
 					<connection>
 						<from>GetVariable_22</from>
@@ -7172,6 +7723,23 @@
 				<name>InitVFX</name>
 				<blocks>
 					<block>
+						<class>Macro</class>
+						<id>Macro_89</id>
+						<params>
+							<param>
+								PrintToLogs
+								<name>Macro Name</name>
+								<type>StringT</type>
+							</param>
+						</params>
+						<slots>
+							<slot>
+								<name>msg</name>
+								<const>\stance_dance_vfx__initVfx_CALL\</const>
+							</slot>
+						</slots>
+					</block>
+					<block>
 						<class>ContextGetSelf</class>
 						<id>ContextGetSelf_20</id>
 						<params>
@@ -7282,6 +7850,12 @@
 				</blocks>
 				<connections>
 					<connection>
+						<from>If_35</from>
+						<input>in</input>
+						<to>Macro_89</to>
+						<output>true</output>
+					</connection>
+					<connection>
 						<from>Sequence_17</from>
 						<input>input</input>
 						<to>If_35</to>
@@ -7294,10 +7868,10 @@
 						<output>value</output>
 					</connection>
 					<connection>
-						<from>If_35</from>
+						<from>Macro_89</from>
 						<input>in</input>
 						<to>ComponentMethod_9</to>
-						<output>true</output>
+						<output>out</output>
 					</connection>
 					<connection>
 						<from>ContextGetSelf_20</from>

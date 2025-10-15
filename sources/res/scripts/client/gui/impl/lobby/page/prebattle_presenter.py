@@ -13,6 +13,7 @@ from gui.prb_control.entities.listener import IGlobalListener
 from gui.prb_control.settings import FUNCTIONAL_FLAG, convertFlagsToNames, REQUEST_TYPE
 from gui.shared import events, EVENT_BUS_SCOPE
 from gui.shared.event_dispatcher import showActiveTestConfirmDialog
+from gui.shared.system_factory import collectBattleButtonManualControl
 from helpers import dependency
 from helpers.CallbackDelayer import CallbackDelayer
 from skeletons.connection_mgr import IConnectionManager
@@ -62,7 +63,9 @@ class PrebattlePresenter(ViewComponent[PrebattleModel], IGlobalListener, Callbac
     def _getListeners(self):
         return (
          (
-          events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self.__onPrebattleUpdateEventHandler, EVENT_BUS_SCOPE.LOBBY),
+          events.LobbyHeaderMenuEvent.UPDATE_PREBATTLE_CONTROLS, self.__onUpdatePrbControls, EVENT_BUS_SCOPE.LOBBY),
+         (
+          events.FightButtonEvent.FIGHT_BUTTON_UPDATE, self.__onUpdatePrbControls, EVENT_BUS_SCOPE.LOBBY),
          (
           events.LobbyHeaderControlsEvent.DISABLE, self.__onControlsDisable, EVENT_BUS_SCOPE.LOBBY),
          (
@@ -71,6 +74,7 @@ class PrebattlePresenter(ViewComponent[PrebattleModel], IGlobalListener, Callbac
           events.CoolDownEvent.PREBATTLE, self.__onSetPrebattleCoolDown, EVENT_BUS_SCOPE.LOBBY))
 
     def onPrbEntitySwitched(self):
+        self.__arenaCreated = False
         self._onPrebattleUpdate()
 
     def onEnqueued(self, *args, **kwargs):
@@ -149,7 +153,7 @@ class PrebattlePresenter(ViewComponent[PrebattleModel], IGlobalListener, Callbac
             self.__setStates()
             self.delayCallback(event.coolDown, self.__setStates)
 
-    def __onPrebattleUpdateEventHandler(self, _):
+    def __onUpdatePrbControls(self, _):
         self._onPrebattleUpdate()
 
     def __setVehicleInfo(self):
@@ -169,6 +173,7 @@ class PrebattlePresenter(ViewComponent[PrebattleModel], IGlobalListener, Callbac
         status = self.__getBattleStatus()
         self.viewModel.setBattleStatus(status)
         self.__setStates()
+        self.__setBattleButtonAlwaysOn()
 
     def __getBattleStatus(self):
         if self.__arenaCreated:
@@ -186,11 +191,16 @@ class PrebattlePresenter(ViewComponent[PrebattleModel], IGlobalListener, Callbac
         pFuncState = prbDispatcher.getFunctionalState()
         pInfo = prbDispatcher.getPlayerInfo()
         inCooldown = pFuncState.isReadyActionSupported() and not pInfo.isCreator and self.__platoonCtrl.isInCoolDown(REQUEST_TYPE.SET_PLAYER_STATE)
+        battleButtonHandler = collectBattleButtonManualControl().get(self.prbEntity.getQueueType())
         trueStates = {self.viewModel.ACTION_ENABLED: pValidation.isValid and self.__enabled and not inCooldown, 
            self.viewModel.PLAYER_CREATOR: pInfo.isCreator, 
-           self.viewModel.PLAYER_READY: pInfo.isReady, 
+           self.viewModel.PLAYER_READY: pInfo.isReady or battleButtonHandler and battleButtonHandler(self.prbEntity), 
            self.viewModel.READINESS_AVAILABLE: pFuncState.isReadyActionSupported()}
         self.viewModel.getStates().update(trueStates)
+
+    def __setBattleButtonAlwaysOn(self):
+        queueType = self.prbEntity.getQueueType()
+        self.viewModel.setBattleButtonAlwaysOn(queueType in collectBattleButtonManualControl())
 
     def __onControlsDisable(self):
         self.__enabled = False

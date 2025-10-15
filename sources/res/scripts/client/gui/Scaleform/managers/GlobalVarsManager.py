@@ -30,6 +30,9 @@ class GlobalVarsManager(GlobalVarsMgrMeta):
     def isKorea(self):
         return constants.IS_KOREA
 
+    def isAsia(self):
+        return constants.CURRENT_REALM == 'ASIA'
+
     def isTutorialRunning(self, tutorialID):
         return self.__tutorialLoader.isRunning and self.__tutorialLoader.tutorialID == tutorialID
 

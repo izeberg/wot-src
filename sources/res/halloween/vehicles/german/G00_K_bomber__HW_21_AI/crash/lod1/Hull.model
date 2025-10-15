@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/german/G00_K_bomber__HW_21_AI/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.881228 -2.812476 -3.014270</min>
+		<max>2.881228 2.916089 2.982750</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/german/G00_K_bomber__HW_21_AI/crash/lod1/Hull</nodefullVisual>
+</root>

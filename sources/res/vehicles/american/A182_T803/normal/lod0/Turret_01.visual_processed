@@ -151,8 +151,8 @@
 						<Vector2>1.000000 0.500000</Vector2>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000000 0.726376 -0.881170</groupOrigin>
@@ -226,16 +226,16 @@
 						<Float>0.350000</Float>
 					</property>
 					<property>
-						g_useDetail
-						<Bool>true</Bool>
-					</property>
-					<property>
 						g_glossMax
 						<Float>0.739306</Float>
 					</property>
 					<property>
 						g_glossMin
 						<Float>0.262428</Float>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
 					</property>
 				</material>
 				<groupOrigin>-0.000000 1.147499 -0.966297</groupOrigin>

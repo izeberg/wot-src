@@ -15,7 +15,6 @@ from gui.Scaleform.genConsts.FORTIFICATION_ALIASES import FORTIFICATION_ALIASES
 from gui.Scaleform.genConsts.QUESTS_ALIASES import QUESTS_ALIASES
 from gui.battle_results import RequestResultsContext
 from gui.clans.clan_helpers import showAcceptClanInviteDialog
-from gui.collection.collections_helpers import loadHangarFromCollections
 from gui.customization.constants import CustomizationModeSource, CustomizationModes
 from gui.impl import backport
 from gui.impl.auxiliary.crew_books_helper import crewBooksViewedCache
@@ -1303,8 +1302,7 @@ class _OpenCollectionHandler(NavigationDisabledActionHandler):
     def doAction(self, model, entityID, action):
         collectionID = (model.getNotification(self.getNotType(), entityID).getSavedData() or {}).get('collectionId')
         if collectionID:
-            backText = backport.text(R.strings.menu.viewHeader.backBtn.descrLabel.hangar())
-            showCollectionWindow(collectionID, backCallback=loadHangarFromCollections, backBtnText=backText)
+            showCollectionWindow(collectionID)
         else:
             showCollectionsMainPage()
 

@@ -45,3 +45,4 @@ class ModeSelectorRewardID(Enum):
     LOOT_BOXES = 'lootBoxes'
     ATTACHMENT = 'attachment'
     EXPERIMENTAL_EQUIPMENT = 'experimentalEquipment'
+    HW_CREW = 'hwCrew'

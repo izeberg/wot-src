@@ -187,12 +187,15 @@ class GuiImplViewLobbyState(LobbyState):
     def _getViewLoadCtx(self, event):
         return event.params
 
+    def _getViewLoadParams(self, event):
+        return GuiImplViewLoadParams(self.getViewKey().alias, self._viewImplClass, self._scope)
+
     def _onEntered(self, event):
         super(GuiImplViewLobbyState, self)._onEntered(event)
         uiLoader = dependency.instance(IGuiLoader)
-        view = uiLoader.windowsManager.getViewByLayoutID(self.VIEW_KEY.alias)
+        view = uiLoader.windowsManager.getViewByLayoutID(self.getViewKey().alias)
         if view is None:
-            g_eventBus.handleEvent(LoadGuiImplViewEvent(GuiImplViewLoadParams(self.getViewKey().alias, self._viewImplClass, self._scope), **self._getViewLoadCtx(event)), scope=EVENT_BUS_SCOPE.LOBBY)
+            g_eventBus.handleEvent(LoadGuiImplViewEvent(self._getViewLoadParams(event), **self._getViewLoadCtx(event)), scope=EVENT_BUS_SCOPE.LOBBY)
         else:
             self._focusView(view, event)
         return

@@ -14,9 +14,6 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=2; plural=(n != 1);"
 
-msgid "ammunitionSetup/btn/info/label"
-msgstr "FRONTLINE SCENARIOS"
-
 msgid "battleType/description/fast"
 msgstr "A scenario with reduced Combat Reserve cooldown."
 
@@ -98,26 +95,8 @@ msgstr "Combat Reserve Levels"
 msgid "loading"
 msgstr "Loading…"
 
-msgid "tab/info/description"
-msgstr "Frontline mode details."
+msgid "widget/eventStartSoon"
+msgstr "The event will start soon!"
 
-msgid "tab/info/name"
-msgstr "About Frontline"
-
-msgid "tab/progress/description"
-msgstr "Frontline Tier Progression."
-
-msgid "tab/progress/name"
-msgstr "Frontline Tier"
-
-msgid "tab/rewards/description"
-msgstr "Frontline rewards and conditions for receiving them."
-
-msgid "tab/rewards/name"
-msgstr "Rewards"
-
-msgid "tab/skills/description"
-msgstr "The list of available Combat Reserves used in Frontline mode."
-
-msgid "tab/skills/name"
-msgstr "Activating Reserves"
+msgid "widget/maxTier"
+msgstr "You have reached the maximum Tier!"

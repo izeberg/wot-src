@@ -13,8 +13,6 @@ RANDOM_GROUPS = (
   TankSetupConstants.OPT_DEVICES, TankSetupConstants.BATTLE_BOOSTERS)),
  GroupData(AmmunitionPanelConstants.EQUIPMENT_AND_SHELLS, (
   TankSetupConstants.SHELLS, TankSetupConstants.CONSUMABLES)))
-FRONTLINE_GROUPS = RANDOM_GROUPS + (
- GroupData(AmmunitionPanelConstants.NO_GROUP, (TankSetupConstants.BATTLE_ABILITIES,)),)
 
 class AmmunitionGroupsController(object):
     __slots__ = ('_vehicle', '_controller', '_autoCreating')

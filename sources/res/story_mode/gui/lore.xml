@@ -53,6 +53,14 @@
 		</music>
 	</mission>
 	<mission>
+		<id>7</id>
+		<vo>vo_sm_char17_m07_stg84_01</vo>
+		<battleMusic>sm_gp_scc_enter</battleMusic>
+		<music>
+			<start>sm_gp_scc_music_start</start>
+		</music>
+	</mission>
+	<mission>
 		<id>1000</id>
 		<vo>vo_sm_char06_m05_stg70_01</vo>
 		<battleMusic>sm_gp_dday_music_01_intro</battleMusic>

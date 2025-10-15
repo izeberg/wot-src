@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_78_NationsA_Lamp/normal/lod2/Cus_78_NationsA_Lamp_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.205919 -0.200000 -0.049893</min>
+		<max>0.145877 0.598146 0.205176</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_78_NationsA_Lamp/normal/lod1/Cus_78_NationsA_Lamp_01</nodefullVisual>
+</root>

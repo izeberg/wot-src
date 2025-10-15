@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB157_FV214t/normal/lod1/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/british/GB157_FV214t/normal/lod2/Chassis</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.933650 -0.000000 -3.793919</min>
+		<max>1.933650 1.385029 3.889995</max>
+	</visibilityBox>
+</root>

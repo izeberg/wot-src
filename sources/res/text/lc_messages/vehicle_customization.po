@@ -439,6 +439,24 @@ msgstr "Treasure Chest"
 msgid "attachment/st_patricks_day_2025/Cus_35_SP_CamoNet"
 msgstr "Camouflage Net"
 
+msgid "attachment/tactical_supplies"
+msgstr "Tactical Supplies"
+
+msgid "attachment/tactical_supplies/Cus_78_NationsA_Lamp"
+msgstr "Vintage Lamp"
+
+msgid "attachment/tactical_supplies/Cus_79_NationsA_Gatling"
+msgstr "Gatling Gun"
+
+msgid "attachment/tactical_supplies/Cus_80_NationsA_Saddle"
+msgstr "Supply Saddle"
+
+msgid "attachment/tactical_supplies/Cus_81_NationsA_Ammorifles"
+msgstr "Ammunition Crate"
+
+msgid "attachment/tactical_supplies/Cus_82_NationsA_Ammogun"
+msgstr "Mounted Gun Crate"
+
 msgid "attachment/test"
 msgstr "Test Subjects"
 
@@ -2833,6 +2851,12 @@ msgstr "Cyclone"
 msgid "camouflage/bicolor"
 msgstr "Two-tone"
 
+msgid "camouflage/black_friday_2025_1/label"
+msgstr "Premier Prix"
+
+msgid "camouflage/black_friday_2025_2/label"
+msgstr "Copper Vein"
+
 msgid "camouflage/blank_camouflage/description"
 msgstr "Transparent secondary camouflage."
 
@@ -3607,6 +3631,15 @@ msgstr "?empty?"
 
 msgid "camouflage/clan_urban/label"
 msgstr "Clan Urban"
+
+msgid "camouflage/clans_2d_2025_2/label"
+msgstr "Apollo's Bow"
+
+msgid "camouflage/clans_2d_2025_3/label"
+msgstr "Erlang Shen's Spear"
+
+msgid "camouflage/clans_2d_2025_4/label"
+msgstr "King Arthur's Sword"
 
 msgid "camouflage/clans_2d_thor/description"
 msgstr "?empty?"
@@ -6546,6 +6579,12 @@ msgstr "?empty?"
 msgid "camouflage/sh2020_paid_4/label"
 msgstr "Shield of Devana"
 
+msgid "camouflage/sh2025_1/label"
+msgstr "Rusted Steel"
+
+msgid "camouflage/sh2025_2/label"
+msgstr "Decay Containment"
+
 msgid "camouflage/sh_2023/description"
 msgstr "?empty?"
 
@@ -6693,6 +6732,15 @@ msgstr "A camouflage for the 1st Guards Field Army style."
 
 msgid "camouflage/strong/label"
 msgstr "1st Guards Field Army"
+
+msgid "camouflage/strongholds_2025_1/label"
+msgstr "Geode Pulse"
+
+msgid "camouflage/strongholds_2025_2/label"
+msgstr "Veteran's Path"
+
+msgid "camouflage/strongholds_2025_3/label"
+msgstr "Lightning Veil"
 
 msgid "camouflage/summer"
 msgstr "Summer"
@@ -16049,18 +16097,6 @@ msgstr "Mapped Out!"
 msgid "inscription/special/special_828"
 msgstr "Say Cheese!"
 
-msgid "inscription/special/special_831"
-msgstr "Second to None"
-
-msgid "inscription/special/special_832"
-msgstr "Death's Embrace"
-
-msgid "inscription/special/special_833"
-msgstr "Domino Effect"
-
-msgid "inscription/special/special_834"
-msgstr "Pacesetter"
-
 msgid "inscription/special/special_835"
 msgstr "TERROR-BILLY"
 
@@ -18603,18 +18639,6 @@ msgstr "Novice Hunter"
 msgid "projection_decals/cool/projection_decal_29/description"
 msgstr "A decal awarded for reaching Rank 5 in Steel Hunter mode."
 
-msgid "projection_decals/cool/projection_decal_30"
-msgstr "Steel Hunter, Mk. I"
-
-msgid "projection_decals/cool/projection_decal_30/description"
-msgstr "A decal developed for the same-name mode."
-
-msgid "projection_decals/cool/projection_decal_31"
-msgstr "Steel Hunter, Mk. II"
-
-msgid "projection_decals/cool/projection_decal_31/description"
-msgstr "A decal developed for the same-name mode."
-
 msgid "projection_decals/cool/projection_decal_32"
 msgstr "Racing Driver"
 
@@ -19457,6 +19481,9 @@ msgstr "Pin-Up Darjeeling"
 
 msgid "projection_decals/pin_up/projection_decal_70"
 msgstr "Pin-Up Alice"
+
+msgid "projection_decals/pin_up/projection_decal_71"
+msgstr "Pin-up Kei"
 
 msgid "projection_decals/progression"
 msgstr "Progressive"
@@ -22824,6 +22851,12 @@ msgstr "Cake Cutter"
 msgid "projection_decals/special/projection_decal_956"
 msgstr "Sparks Will Fly"
 
+msgid "projection_decals/special/projection_decal_957"
+msgstr "Bite Me"
+
+msgid "projection_decals/special/projection_decal_958"
+msgstr "Line and Sinker"
+
 msgid "projection_decals/special/projection_decal_959"
 msgstr "Mummy Dearest"
 
@@ -22863,6 +22896,12 @@ msgstr "Among Wolves"
 msgid "projection_decals/special/projection_decal_971"
 msgstr "8-Bit.J."
 
+msgid "projection_decals/special/projection_decal_979"
+msgstr "Steel Hunter, Mk. I"
+
+msgid "projection_decals/special/projection_decal_979/description"
+msgstr "A decal developed for the same-name mode."
+
 msgid "projection_decals/special/projection_decal_98"
 msgstr "Charging IS"
 
@@ -22871,6 +22910,12 @@ msgstr ""
 "I was standing on the road and saw 70 tons of steel rushing towards me at a "
 "speed of over 60 km/h. I woke up in a cold sweat. It was just a dream, "
 "right?"
+
+msgid "projection_decals/special/projection_decal_980"
+msgstr "Steel Hunter, Mk. II"
+
+msgid "projection_decals/special/projection_decal_980/description"
+msgstr "A decal developed for the same-name mode."
 
 msgid "projection_decals/special/projection_decal_99"
 msgstr "SPG Nerf"
@@ -22881,6 +22926,9 @@ msgstr ""
 "shot to take 100% of a vehicle's hit points, making unlucky players go "
 "ballistic, crushing keyboards, armchairs, and other home decor items. Soon, "
 "SPGs were nerfed."
+
+msgid "projection_decals/special/projection_decal_991"
+msgstr "Chibi-Kei"
 
 msgid "projection_decals/test_unified_decals"
 msgstr "Test Unified Slots Decals"
@@ -24289,6 +24337,9 @@ msgstr "Charcoal"
 
 msgid "repaint/girls_und_panzer_rabbit"
 msgstr "Moss"
+
+msgid "repaint/girls_und_panzer_saunders"
+msgstr "Saunders University High School"
 
 msgid "repaint/girls_und_panzer_turtle"
 msgstr "Sand"
@@ -25841,6 +25892,25 @@ msgstr ""
 "know you've got what it takes. Heck, you might even enjoy it. Now get out "
 "there and give 'em hell, son.\""
 
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst"
+msgstr "Sherman Firefly Saunders"
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc"
+msgstr "?empty?"
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc/long"
+msgstr ""
+"A variant of the American M4A4 Sherman, this tank was fitted with a "
+"30-cylinder Chrysler A57 Multibank engine that, according to British "
+"records, proved highly reliable. Developed in early 1944, it stood out with "
+"its more powerful 17-pounder gun, relocated radio, expanded ammo rack, and "
+"the removal of both the bow gun and the assistant driver's seat.\\nThe tank "
+"is crewed by seasoned students from Saunders University High School. True to"
+" their tradition of showcasing American culture, the team fights in "
+"U.S.-made vehicles painted in a dark-olive base color. This Sherman carries "
+"the school's emblem—a pointed shield with a blue star and yellow lightning "
+"bolt, topped with a red ribbon bearing the school's name."
+
 msgid "special_style/A40_T95_SC_3DSt"
 msgstr "Nice Vibrations"
 
@@ -26795,6 +26865,20 @@ msgstr ""
 "During one of the stages, something unexpected happened. Instead of just shooting at the target, the tank began to maneuver with such agility and at such a speed that it seemed for a second as if it would take off. It hadn't fired a single shell, but all the targets looked as though they'd been pulled out of a fire.\n"
 "The next day, the command summoned the designer to the headquarters, but neither he nor the machine were there anymore. Later, in the garage, all they found was a scrap of paper with a mysterious message: \"Long live the fighters.\""
 
+msgid "special_style/G168_KJpz_T_III_AS5_3Dst"
+msgstr "Patient Zero"
+
+msgid "special_style/G168_KJpz_T_III_AS5_3Dst_desc/long"
+msgstr ""
+"\"I staggered to my feet, wiping black Mirium debris from my mask and "
+"camera. Somehow, both were still in one piece. The same could hardly be said"
+" for the vehicle that had just nearly hit me. The longer I stared, the more "
+"I felt I was looking at a wounded creature instead of a broken machine. "
+"Stranger still, its \"wounds\" had been stitched with a steel chain—like a "
+"twisted mockery of a field medic's work on a downed soldier. But echo tanks "
+"are just that—tanks. They're not alive. They definitely can't bleed. So why "
+"was Mirium leaking from its warped hull? And why did it seem... afraid?\""
+
 msgid "special_style/G16_PzVIB_Tiger_II_3DSt_NEx"
 msgstr "Kampfgruppe Schneide"
 
@@ -27460,6 +27544,19 @@ msgstr ""
 "Sincerely, your son Ian.\n"
 "\n"
 "P.S. When we're done here, I'll bring you a captured Parabellum.\""
+
+msgid "special_style/J42_Chi_Se_AS5_3Dst"
+msgstr "Stitch"
+
+msgid "special_style/J42_Chi_Se_AS5_3Dst_desc/long"
+msgstr ""
+"The past has been torn apart. The unnecessary has been extracted. The truth has been forged. The stitches are your only memory.\n"
+"\n"
+"\"Charging to Magnus with our collector ripped off was a bad idea. But we had no choice—leaping into the unknown still beats staying behind to roam the swept phase forever, like some headless horseman. So we jumped. For better or worse, I can't say. But we survived. Our coordinates are untraceable. We've lost all connection. Magnus' location is unrecorded.\n"
+"\n"
+"...And now there's a crowd outside—running around in gas masks, muttering that gibberish of theirs, and doing all they can to pry us out of here. Humans, in the Mirium zone?! No way that means anything good. We've sealed all the hatches tight.\n"
+"\n"
+"...I'm liking it less and less here. I don't even know why. Maybe it's the chanting from the folks outside. Or that massive contraption with hooks on chains that our tank is attached to. Or maybe it's the black goo dripping from every direction...\""
 
 msgid "special_style/KanonenPanter_105"
 msgstr "Black Panther"
@@ -29180,6 +29277,40 @@ msgstr ""
 " I am the dizzying tempest, the towering cyclone, the whisper that births "
 "storms.\""
 
+msgid "special_style/black_friday_2025_1"
+msgstr "Premier Prix"
+
+msgid "special_style/black_friday_2025_1_desc"
+msgstr "Deck out your vehicle like a race car with this all-season style."
+
+msgid "special_style/black_friday_2025_1_desc/long"
+msgstr ""
+"On your marks, get set... roll out! Sure, your vehicle was made for the "
+"battlefield, but what if it dreams of the glamor and prestige of the world "
+"of motorsports? Think about it: when you're fighting for your life, it's fun"
+" to imagine the roar of artillery fire is actually from a cheering crowd. "
+"And what if, just once, yet another round of grueling emergency field "
+"repairs could be swapped for a luxurious pit-stop pampering? Yeah... Not "
+"likely. Well, at least you can surprise your trusty tank with a fresh coat "
+"of paint inspired by stylish race cars."
+
+msgid "special_style/black_friday_2025_2"
+msgstr "Copper Vein"
+
+msgid "special_style/black_friday_2025_2_desc"
+msgstr ""
+"Wrap your vehicle in an all-season style that was millennia in the making."
+
+msgid "special_style/black_friday_2025_2_desc/long"
+msgstr ""
+"Timeless and radiant, copper is deeply intertwined with the rise of human "
+"civilization. From primitive tools to sacred art, its warm glow and "
+"versatility influenced mythology and trade, marking the dawn of metallurgy "
+"and shaping the material world for our ancestors. Revered by ancient "
+"cultures and still essential today, it was only a matter of time before this"
+" immortal vein flowed into your armor. The metal of gods and empires "
+"endures—reforged for the modern warrior."
+
 msgid "special_style/black_prince_2019_3dst"
 msgstr "Hobart's Funnies"
 
@@ -30244,6 +30375,61 @@ msgstr "Clan universal"
 
 msgid "special_style/clan_urban"
 msgstr "Clan urban"
+
+msgid "special_style/clans_2d_2025_2"
+msgstr "Apollo's Bow"
+
+msgid "special_style/clans_2d_2025_2_desc"
+msgstr ""
+"An all-season style dedicated to the bow of Apollo, god of light and "
+"prophecy."
+
+msgid "special_style/clans_2d_2025_2_desc/long"
+msgstr ""
+"The golden bow of Apollo—Olympian god of light, prophecy, archery, and "
+"more—is a central weapon in Greek mythology. Crafted by the divine "
+"blacksmith Hephaestus, it was bestowed upon Apollo in his youth to defend "
+"his mother, Leto, from the monstrous serpent Python. From that moment on, "
+"Apollo bore the bow as a guardian of order and an agent of divine justice, "
+"striking from afar with unerring precision and arrows that could inspire "
+"love or unleash plague—all depending on his will."
+
+msgid "special_style/clans_2d_2025_3"
+msgstr "Erlang Shen's Spear"
+
+msgid "special_style/clans_2d_2025_3_desc"
+msgstr ""
+"An all-season style dedicated to the three-pointed spear of the warrior "
+"deity, Erlang Shen."
+
+msgid "special_style/clans_2d_2025_3_desc/long"
+msgstr ""
+"The three-pointed, double-edged spear—also known as the Divine Spear—wielded"
+" by the warrior deity Erlang Shen is one of the most revered weapons in all "
+"of Chinese mythology. As befits a champion of Erlang's renown and cosmic "
+"authority, it is not merely an instrument of war, but a tool of divine "
+"justice, intricately forged and capable of piercing through evil and "
+"illusion alike. Battling legions of demons and malevolent spirits, Erlang "
+"commands the spear with unparalleled dexterity and grace—even as he "
+"confronts his most formidable adversary: the Monkey King, Sun Wukong."
+
+msgid "special_style/clans_2d_2025_4"
+msgstr "King Arthur's Sword"
+
+msgid "special_style/clans_2d_2025_4_desc"
+msgstr ""
+"An all-season style dedicated to Excalibur, the mythical sword of King "
+"Arthur."
+
+msgid "special_style/clans_2d_2025_4_desc/long"
+msgstr ""
+"The mythical sword of the great King Arthur, the very name Excalibur has "
+"echoed through the legends of Britain for centuries. So profound is its "
+"mystery that even the tales of its origin offer no single truth: some say "
+"the young king drew it from a stone, proving his divine right to rule; "
+"others that it was gifted to him by the enigmatic Lady of the Lake. However "
+"it was won, Excalibur's power surpassed any blade forged in the realms of "
+"men—and spoke of the valor and noble spirit of the king who wielded it."
 
 msgid "special_style/clans_2d_thor"
 msgstr "Thor's Hammer"
@@ -31616,6 +31802,25 @@ msgstr ""
 "experience in battle, they quickly learned the subtleties of tank science in"
 " the Sensha-do club and became part of the high-profile victories of the "
 "Oarai school."
+
+msgid "special_style/girls_und_panzer_saunders"
+msgstr "Saunders University High School"
+
+msgid "special_style/girls_und_panzer_saunders_desc"
+msgstr ""
+"An all-season style sporting the insignia of the splendid Saunders "
+"University High School."
+
+msgid "special_style/girls_und_panzer_saunders_desc/long"
+msgstr ""
+"The fabulously wealthy Saunders University High School boasts a formidable "
+"arsenal of U.S. tanks. In fact, the only thing its vast number of Sensha-Dō "
+"players love as much as showing off their impressive fleet of M4 Sherman is "
+"throwing extravagant parties—and watching their guests' jaws drop at the "
+"mountains of fast food provided! Don't mistake these girls' hospitality for "
+"meekness, though—their strategy relies on overwhelming opponents with "
+"numerical advantage, which often calls for accurate shots and astute "
+"tactics."
 
 msgid "special_style/give_paw"
 msgstr "Pawesome"
@@ -34317,6 +34522,15 @@ msgstr ""
 "An all-season style available for purchase during Stage IV of Steel Hunter "
 "2020. It was named after the goddess of the hunt in Slavic mythology."
 
+msgid "special_style/sh2025_1"
+msgstr "Rusted Steel"
+
+msgid "special_style/sh2025_2"
+msgstr "Decay Containment"
+
+msgid "special_style/sh2025_desc"
+msgstr "An all-season style dedicated to Steel Hunter."
+
 msgid "special_style/sh_2023"
 msgstr "Destructive Corrosion"
 
@@ -34589,6 +34803,57 @@ msgstr "An all-season style received for achievements in Steel Hunter."
 
 msgid "special_style/steel_hunter_arcade_2"
 msgstr "Arzagir Storm"
+
+msgid "special_style/strongholds_2025_1"
+msgstr "Geode Pulse"
+
+msgid "special_style/strongholds_2025_1_desc"
+msgstr ""
+"What once slept in stone now rolls in steel with this all-season style."
+
+msgid "special_style/strongholds_2025_1_desc/long"
+msgstr ""
+"\"We were cataloging mineral seams. Routine field work. Until our drill hit "
+"that geode. Deep below us, we sensed something shift. The silence that "
+"followed felt... aware. Blue and green light poured from the earth, pulsing "
+"slowly. Then our comms failed. Our instruments gave impossible readings. In "
+"our hubris, we chipped off a sample and brought it back to the lab. That "
+"night, we all had the same dream: low, reverent chanting that hasn't left us"
+" since we awoke. As we layered the rock into armor, we told ourselves it was"
+" research. But by then, we were only helping it spread.\""
+
+msgid "special_style/strongholds_2025_2"
+msgstr "Veteran's Path"
+
+msgid "special_style/strongholds_2025_2_desc"
+msgstr "A battleworn all-season style for seasoned commanders."
+
+msgid "special_style/strongholds_2025_2_desc/long"
+msgstr ""
+"It takes time to get comfortable on the battlefield. To tell real threats "
+"from background noise. To hear the rattle of incoming shells and know which "
+"ones will miss. To know when to hold your position, push a flanking attack, "
+"or let your opponent make the mistake. Sure, this armor is a bit scuffed, a "
+"little chipped in places, and more rusted than last time you looked, but you"
+" see nothing wrong with a few battle scars. That's the difference between "
+"wide-eyed rookies and seasoned commanders—if you've made it this far, you "
+"know that real veterans have nothing to prove."
+
+msgid "special_style/strongholds_2025_3"
+msgstr "Lightning Veil"
+
+msgid "special_style/strongholds_2025_3_desc"
+msgstr "Unleash the sky's wrath with this all-season style."
+
+msgid "special_style/strongholds_2025_3_desc/long"
+msgstr ""
+"Fire pierced the air long before artillery was invented. Long before engines"
+" roared, storms tore through the skies and scorched the earth with elemental"
+" wrath. Though battered and broken by the primal forces that surround us, "
+"humanity did not buckle. Instead, we were inspired. Obsessed with mirroring "
+"the devastating power of nature, we studied, built, and refined until we "
+"bent steel into storms of our own creation. Man cannot harness nature—we can"
+" only offer her tribute."
 
 msgid "special_style/summer"
 msgstr "Summer"

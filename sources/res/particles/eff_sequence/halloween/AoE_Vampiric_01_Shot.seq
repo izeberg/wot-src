@@ -868,15 +868,15 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound _seq_HW23_ability_vampiric</name>
+		<name>seq_vampiric_shot_player</name>
 		<type>sound</type>
 		<track>
-			<name>ev_halloween_2021_ability_vampiric</name>
+			<name>Wwise event</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
 				<duration>3.833333</duration>
-				<sequenceSound>ev_halloween_2021_ability_vampiric</sequenceSound>
+				<sequenceSound>ev_hw_gp_ability_vampiric_shot_3D_seq</sequenceSound>
 				<type>play_till_end</type>
 				<fade>5.000000</fade>
 			</frame>

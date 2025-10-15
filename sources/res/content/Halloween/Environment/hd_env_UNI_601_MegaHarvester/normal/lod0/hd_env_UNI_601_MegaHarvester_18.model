@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
+	<nodefullVisual>content/Halloween/Environment/hd_env_UNI_601_MegaHarvester/normal/lod0/hd_env_UNI_601_MegaHarvester_18</nodefullVisual>
+	<visibilityBox>
+		<min>-11.250507 -1.863567 -11.238856</min>
+		<max>9.783829 25.076244 9.783829</max>
+	</visibilityBox>
 	<parent>content/Halloween/Environment/hd_env_UNI_601_MegaHarvester/normal/lod1/hd_env_UNI_601_MegaHarvester_18</parent>
-	<extent>35.000000</extent>
-	<nodelessVisual>content/Halloween/Environment/hd_env_UNI_601_MegaHarvester/normal/lod0/hd_env_UNI_601_MegaHarvester_18</nodelessVisual>
-	<parent>content/Environment/hd_env_UNI_601_MegaHarvester/normal/lod1/hd_env_UNI_601_MegaHarvester_18</parent>
 	<extent>96.000000</extent>
 </root>

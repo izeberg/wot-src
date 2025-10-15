@@ -1371,7 +1371,7 @@ class BattleMattersReminderDecorator(MessageDecorator):
     def _getButtonState(self):
         state = NOTIFICATION_BUTTON_STATE.VISIBLE
         tooltip = ''
-        if self.__battleMattersController.isActive():
+        if self.__battleMattersController.isActive() or self.__battleMattersController.hasDelayedRewards():
             state |= NOTIFICATION_BUTTON_STATE.ENABLED
         return (state, tooltip)
 
@@ -1475,6 +1475,9 @@ class PersonalMission3QuestDecorator(LockButtonMessageDecorator):
 
     def _getButtonType(self):
         return 'submitGhost'
+
+    def isShouldCountOnlyOnce(self):
+        return True
 
     def _updateButtonsState(self, lock=False):
         serverSettings = self.__lobbyContext.getServerSettings()

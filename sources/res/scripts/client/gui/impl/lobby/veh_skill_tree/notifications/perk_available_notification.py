@@ -68,9 +68,10 @@ class PerkAvailableNotification(IGlobalListener, NotificationBase):
             self.viewModel.setIsDisabled(pInfo.isReady)
 
     def __isButtonDisabled(self):
-        if self.prbEntity and (self.prbEntity.isInQueue() or self.prbEntity.getModeFlags() & TRAINING_FLAGS):
+        if self.prbEntity and self.prbEntity.isInQueue():
             return True
-        if self.prbDispatcher is not None and self.prbDispatcher.getFunctionalState().isInUnit():
-            if self.prbEntity and self.prbEntity.getPlayerInfo().isReady:
-                return True
-        return False
+        else:
+            if self.prbDispatcher is not None and self.prbDispatcher.getFunctionalState().isInUnit():
+                if self.prbEntity and self.prbEntity.getPlayerInfo().isReady:
+                    return True
+            return False

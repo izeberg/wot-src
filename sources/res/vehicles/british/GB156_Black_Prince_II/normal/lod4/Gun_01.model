@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.549523 -0.141273 -0.052719</min>
+		<max>0.554887 0.144272 3.427235</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB156_Black_Prince_II/normal/lod4/Gun_01</nodefullVisual>
+</root>

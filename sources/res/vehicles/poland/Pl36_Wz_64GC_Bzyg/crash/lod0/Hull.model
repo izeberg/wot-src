@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/poland/Pl36_Wz_64GC_Bzyg/crash/lod0/Hull</nodefullVisual>
+	<parent>vehicles/poland/Pl36_Wz_64GC_Bzyg/crash/lod1/Hull</parent>
+	<extent>32</extent>
+	<visibilityBox>
+		<min>-1.701956 -0.963750 -3.948920</min>
+		<max>1.708135 0.559363 3.512082</max>
+	</visibilityBox>
+</root>

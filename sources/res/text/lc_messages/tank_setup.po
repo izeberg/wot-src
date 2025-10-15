@@ -14,66 +14,6 @@ msgstr ""
 msgid "#PluralForms"
 msgstr "nplurals=2; plural=(n != 1);"
 
-msgid "abilities/actions/toInfoPage"
-msgstr "MORE DETAILS"
-
-msgid "abilities/actions/toReserves"
-msgstr "Manage Reserves"
-
-msgid "abilities/applyToType"
-msgstr "Apply to all %(icon)s %(vehicle)s"
-
-msgid "abilities/details/description/locked"
-msgstr ""
-"In the {whiteSpanish_Start}Twist of Fate{whiteSpanish_End} scenario, "
-"purchasing a Combat Reserve will increase its level by one and provide the "
-"opportunity to improve it to Level {whiteSpanish_Start}IV{whiteSpanish_End}."
-
-msgid "abilities/details/description/unlocked"
-msgstr ""
-"In the {whiteSpanish_Start}Twist of Fate{whiteSpanish_End} scenario, the "
-"chance of each Combat Reserve placed in the slot before the battle being "
-"offered is increased by {whiteSpanish_Start}10%{whiteSpanish_End}."
-
-msgid "abilities/details/level"
-msgstr "Level:"
-
-msgid "abilities/details/param/valueTemplate/default"
-msgstr "%(sign)s%(value)s"
-
-msgid "abilities/details/param/valueTemplate/meters"
-msgstr "%(sign)s%(value)s m"
-
-msgid "abilities/details/param/valueTemplate/percents"
-msgstr "%(sign)s%(value)s %"
-
-msgid "abilities/details/param/valueTemplate/percentsBySecond"
-msgstr "%(sign)s%(value)s %/s"
-
-msgid "abilities/details/param/valueTemplate/seconds"
-msgstr "%(sign)s%(value)s s"
-
-msgid "abilities/details/paramDiff"
-msgstr "(%(diff)s)"
-
-msgid "abilities/details/status/locked"
-msgstr "Combat Reserve not purchased"
-
-msgid "abilities/details/status/unlocked"
-msgstr "Combat Reserve purchased"
-
-msgid "abilities/noSelected/subTitle"
-msgstr "Activate them on the Manage Reserves screen."
-
-msgid "abilities/noSelected/title"
-msgstr "Reserves Not Activated"
-
-msgid "abilities/noSelected/toReserves"
-msgstr "Manage Reserves"
-
-msgid "abilities/pointsAmount"
-msgstr "Combat Reserve Points: %(points)s"
-
 msgid "categories/body/firepower"
 msgstr ""
 "A set of parameters that show the effectiveness of destroying enemy "
@@ -104,9 +44,6 @@ msgstr "Firepower"
 
 msgid "categories/mobility"
 msgstr "Mobility"
-
-msgid "categories/reserves/config"
-msgstr "%(icon)s %(vehicle)s CONFIGURATION"
 
 msgid "categories/slotEffect/empty"
 msgstr ""
@@ -319,9 +256,6 @@ msgstr "You can demount the equipment to send it to the Depot."
 msgid "dialogs/confirm/doesNotWork"
 msgstr "WILL NOT WORK"
 
-msgid "dialogs/confirm/item/battleAbility"
-msgstr "Combat Reserve"
-
 msgid "dialogs/confirm/item/battleBooster"
 msgstr "directive"
 
@@ -341,9 +275,6 @@ msgstr "equipment"
 msgid "dialogs/confirm/item/postProgressionPairModification"
 msgstr "Dual Modification"
 
-msgid "dialogs/confirm/items/battleAbility"
-msgstr "Combat Reserves"
-
 msgid "dialogs/confirm/items/battleBooster"
 msgstr "directives"
 
@@ -358,9 +289,6 @@ msgstr "equipment"
 
 msgid "dialogs/confirm/message/lastSeparation"
 msgstr " and "
-
-msgid "dialogs/confirm/title/changeSlots/battleAbility"
-msgstr "Save changes to the reserve slots?"
 
 msgid "dialogs/confirm/title/changeSlots/battleBooster"
 msgstr "Save changes to the directive slots?"
@@ -767,21 +695,6 @@ msgstr "Get Components"
 msgid "filters/shown"
 msgstr "Displayed: "
 
-msgid "hints/ammunition/reserves/applyToTypeCheckbox"
-msgstr ""
-"NEW\n"
-"OPTION"
-
-msgid "hints/ammunition/reserves/control"
-msgstr ""
-"NEW COMBAT\n"
-"RESERVE MANAGEMENT"
-
-msgid "hints/ammunitionPanel/reserves/changed"
-msgstr ""
-"COMBAT RESERVE\n"
-"CHANGES"
-
 msgid "hints/dragAndDrop/section"
 msgstr ""
 "DRAG AND DROP\n"
@@ -813,7 +726,7 @@ msgid "introduction/message/modernized"
 msgstr ""
 "A specialized type of equipment with three Upgrade Levels that is rewarded "
 "for completing missions and during certain game events. This equipment "
-"cannot be purchased or sold, but it can be disassembled to get special "
+"cannot be destroyed or sold, but it can be disassembled to get special "
 "parts—%(currencyName)s (%(currencyIcon)s). The received components can be "
 "used to upgrade any Experimental Equipment."
 
@@ -2229,30 +2142,6 @@ msgstr "Will be disassembled from the vehicles: %(vehicleNames)s"
 
 msgid "tooltip/deconstructConfirm/listSeparator"
 msgstr ", "
-
-msgid "tooltips/abilities/actions/checkbox/AT-SPG"
-msgstr "Changes will be applied to all tank destroyers."
-
-msgid "tooltips/abilities/actions/checkbox/SPG"
-msgstr "Changes will be applied to all SPGs."
-
-msgid "tooltips/abilities/actions/checkbox/heavyTank"
-msgstr "Changes will be applied to all heavy tanks."
-
-msgid "tooltips/abilities/actions/checkbox/lightTank"
-msgstr "Changes will be applied to all light tanks."
-
-msgid "tooltips/abilities/actions/checkbox/mediumTank"
-msgstr "Changes will be applied to all medium tanks."
-
-msgid "tooltips/abilities/points/body"
-msgstr ""
-"By increasing your Frontline Tier, you receive Combat Reserve Points. Once "
-"you accumulate the required number of Points, you will be able to activate "
-"Combat Reserves for this mode."
-
-msgid "tooltips/abilities/points/header"
-msgstr "Combat Reserve Points"
 
 msgid "tooltips/action/description/add_one"
 msgstr "Click to purchase additional items for this slot."

@@ -1110,7 +1110,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>-1.350689 0.600210 -0.081325</groupOrigin>
+				<groupOrigin>-1.354138 0.600349 -0.058357</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1162,7 +1162,7 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>1.350706 0.605659 -0.075433</groupOrigin>
+				<groupOrigin>1.354158 0.605630 -0.050095</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -1190,8 +1190,8 @@
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1248,8 +1248,8 @@
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1287,5 +1287,5 @@
 		<min>-1.626540 -0.000847 -3.089696</min>
 		<max>1.626557 1.211980 3.250619</max>
 	</boundingBox>
-	<geometrySize>241672</geometrySize>
+	<geometrySize>240160</geometrySize>
 </root>

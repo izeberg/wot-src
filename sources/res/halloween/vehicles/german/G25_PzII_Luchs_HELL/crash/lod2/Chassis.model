@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>halloween/vehicles/german/G25_PzII_Luchs_HELL/crash/lod3/Chassis</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<materialNames/>
+	<visibilityBox>
+		<min>-1.240150 -0.001329 -2.089628</min>
+		<max>1.240150 1.053922 2.292963</max>
+	</visibilityBox>
+	<nodefullVisual>halloween/vehicles/german/G25_PzII_Luchs_HELL/crash/lod2/Chassis</nodefullVisual>
+</root>

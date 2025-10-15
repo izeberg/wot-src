@@ -48,7 +48,7 @@ class BuyLevelsPresenter(ViewComponent[BattlePassBuyLevelViewModel]):
     def updateInitialData(self, **kwargs):
         self.__backCallback = kwargs.get('backCallback')
         newChapterID = kwargs.get('chapterID')
-        if newChapterID is not None and (newChapterID != self.__chapterID or kwargs.get('reset', False)):
+        if newChapterID is not None and newChapterID != self.__chapterID:
             self.__chapterID = newChapterID
             self.__package = PackageAnyLevels(self.__chapterID)
         self.viewModel.setIsWalletAvailable(self.__wallet.isAvailable)
@@ -61,11 +61,15 @@ class BuyLevelsPresenter(ViewComponent[BattlePassBuyLevelViewModel]):
         return
 
     def activate(self):
-        self.__battlePass.onLevelUp += self.__onLevelUp
+        self._subscribe()
 
     def deactivate(self):
-        self.__battlePass.onLevelUp -= self.__onLevelUp
+        self.__chapterID = None
+        self.__package = None
+        self.__clearTooltips()
+        self._unsubscribe()
         g_eventBus.removeListener(events.BattlePassEvent.AWARD_VIEW_CLOSE, self.__onAwardViewClose, EVENT_BUS_SCOPE.LOBBY)
+        return
 
     def onExtraChapterExpired(self):
         if self.__battlePass.isExtraChapter(self.__chapterID):

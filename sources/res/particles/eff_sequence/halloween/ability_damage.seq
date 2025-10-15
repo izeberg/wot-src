@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<duration>5.000000</duration>
+	<duration>3.000000</duration>
 	<sequenceObject>
 		<name>Root</name>
 		<type>model</type>
@@ -407,35 +407,26 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound_seq_hw23_ability_damage</name>
+		<name>seq_ability_energy_shot</name>
 		<type>sound</type>
 		<track>
-			<name>position</name>
-			<type>vector3</type>
+			<name>attach</name>
+			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<value>0.000000 0.000000 0.000000</value>
-				<inTangent>0.000000 0.000000 0.000000</inTangent>
-				<outTangent>0.000000 0.000000 0.000000</outTangent>
-				<tangentMode>0</tangentMode>
-			</frame>
-			<frame>
-				<startTime>5.000000</startTime>
-				<value>0.000000 0.000000 0.000000</value>
-				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
-				<outTangent>-0.000000 -0.000000 -0.000000</outTangent>
-				<tangentMode>0</tangentMode>
+				<duration>3.000000</duration>
+				<value>damage_center|</value>
 			</frame>
 		</track>
 		<track>
-			<name>ev_halloween_2021_ability_damage</name>
+			<name>Wwise event</name>
 			<type>sound</type>
 			<frame>
-				<startTime>0.000000</startTime>
-				<duration>5.000000</duration>
-				<sequenceSound>ev_halloween_2021_ability_damage</sequenceSound>
+				<startTime>0.033333</startTime>
+				<duration>2.966667</duration>
+				<sequenceSound>ev_hw_gp_ability_energy_shot_3D_seq</sequenceSound>
 				<type>play_till_end</type>
-				<fade>0.000000</fade>
+				<fade>1.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

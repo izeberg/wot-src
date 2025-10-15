@@ -264,3 +264,7 @@ class CrosshairPanelContainerMeta(DAAPISimpleContainerMeta):
     def as_setNetSeparatorTypeS(self, netSeparatorType):
         if self._isDAAPIInited():
             return self.flashObject.as_setNetSeparatorType(netSeparatorType)
+
+    def as_setChargeableBurstModeS(self, value):
+        if self._isDAAPIInited():
+            return self.flashObject.as_setChargeableBurstMode(value)

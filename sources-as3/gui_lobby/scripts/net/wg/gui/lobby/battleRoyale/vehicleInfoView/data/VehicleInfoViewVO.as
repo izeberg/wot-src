@@ -10,8 +10,6 @@ package net.wg.gui.lobby.battleRoyale.vehicleInfoView.data
       
       public var vehTypeIcon:String = "";
       
-      public var btnCloseLabel:String = "";
-      
       public var infoIconSource:String = "";
       
       public var tutorialText:String = "";

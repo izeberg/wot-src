@@ -17,6 +17,8 @@ package net.wg.infrastructure.base.meta.impl
       
       public var isKorea:Function;
       
+      public var isAsia:Function;
+      
       public var isTutorialRunning:Function;
       
       public var isRoamingEnabled:Function;
@@ -72,6 +74,12 @@ package net.wg.infrastructure.base.meta.impl
       {
          App.utils.asserter.assertNotNull(this.isKorea,"isKorea" + Errors.CANT_NULL);
          return this.isKorea();
+      }
+      
+      public function isAsiaS() : Boolean
+      {
+         App.utils.asserter.assertNotNull(this.isAsia,"isAsia" + Errors.CANT_NULL);
+         return this.isAsia();
       }
       
       public function isTutorialRunningS(param1:String) : Boolean

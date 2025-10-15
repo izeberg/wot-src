@@ -220,7 +220,10 @@
 					<materialKind>0</materialKind>
 					<property>
 						g_detailUVTiling
-						<Vector4>3.506850 3.506850 0.000000 0.000000</Vector4>
+						<Vector4>
+							7.014 3.507 0.000000 0.000000
+							<!--BW_String-->
+						</Vector4>
 					</property>
 					<property>
 						g_detailPowerGloss

@@ -1,3 +1,5 @@
+from __future__ import absolute_import
+from future.utils import viewvalues
 from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher
 from fun_random.gui.shared.tooltips import TooltipType
 from gui.impl.gen import R
@@ -12,7 +14,7 @@ class FunRandomCalendarDayTooltip(PeriodicCalendarDayTooltip, FunSubModesWatcher
         return self.getDesiredSubMode()
 
 
-class FunRandomModeSelectorCalendarTooltip(FunRandomCalendarDayTooltip, FunSubModesWatcher):
+class FunRandomModeSelectorCalendarTooltip(FunRandomCalendarDayTooltip):
 
     def _getController(self, subModeID=None, *_):
         if subModeID is None:
@@ -21,5 +23,5 @@ class FunRandomModeSelectorCalendarTooltip(FunRandomCalendarDayTooltip, FunSubMo
             return self.getSubMode(subModeID)
 
     def _isValidPrimeTimes(self, serversPeriodsMapping):
-        periods = [ periods for serverPeriods in serversPeriodsMapping.values() for periods in serverPeriods ]
-        return any([ period[1] - period[0] != ONE_DAY for period in periods ])
+        periods = (periods for serverPeriods in viewvalues(serversPeriodsMapping) for periods in serverPeriods)
+        return any(period[1] - period[0] != ONE_DAY for period in periods)

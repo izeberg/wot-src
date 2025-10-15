@@ -360,6 +360,62 @@
 			</specialModes>
 		</tankman>
 		<tankman>
+			<tag>hw25_Quickybaby_SpecialVoice</tag>
+			<languageMode>hw25_Quickybaby_en</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crew_en</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_Mailand_SpecialVoice</tag>
+			<languageMode>hw25_Mailand_de</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crew_en</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_MouzAkrobat_SpecialVoice</tag>
+			<languageMode>hw25_MouzAkrobat_de</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crew_en</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_Skill4ltu_SpecialVoice</tag>
+			<languageMode>hw25_Skill4ltu_en</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crew_en</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_LuJun_CN_SpecialVoice</tag>
+			<languageMode>hw25_LuJun_cn</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crewCN_cn</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_Titi_CN_SpecialVoice</tag>
+			<languageMode>hw25_Titi_cn</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crewCN_cn</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_DaKun_CN_SpecialVoice</tag>
+			<languageMode>hw25_DaKun_cn</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crewCN_cn</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>hw25_Panchezhang_CN_SpecialVoice</tag>
+			<languageMode>hw25_Panchezhang_cn</languageMode>
+			<specialModes>
+				<isFullCrew>hw25_full_crewCN_cn</isFullCrew>
+			</specialModes>
+		</tankman>
+		<tankman>
 			<tag>quickyBabySpecialVoice</tag>
 			<gender>male</gender>
 			<languageMode>quickyBaby</languageMode>
@@ -537,6 +593,11 @@
 			<specialModes>
 				<isFullCrew>gup_crew_25</isFullCrew>
 			</specialModes>
+		</tankman>
+		<tankman>
+			<tag>keiSpecialVoice</tag>
+			<gender>male</gender>
+			<languageMode>gup_kei</languageMode>
 		</tankman>
 		<tankman>
 			<tag>tankmen_bp14_5</tag>

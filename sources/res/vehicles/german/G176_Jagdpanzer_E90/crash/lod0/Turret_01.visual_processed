@@ -22,7 +22,7 @@
 					<row0>1.000000 0.000000 0.000000</row0>
 					<row1>0.000000 1.000000 0.000000</row1>
 					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>-0.411627 -0.039661 -0.547968</row3>
+					<row3>0.001530 -0.039661 -0.547972</row3>
 				</transform>
 			</node>
 		</node>
@@ -40,13 +40,13 @@
 					<collisionFlags>0</collisionFlags>
 					<materialKind>0</materialKind>
 				</material>
-				<groupOrigin>-0.411627 -0.039661 -0.547968</groupOrigin>
+				<groupOrigin>0.001530 -0.039661 -0.547972</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.420297 -0.049041 -0.563961</min>
-		<max>-0.402957 -0.030280 -0.531974</max>
+		<min>-0.007140 -0.049041 -0.563966</min>
+		<max>0.010200 -0.030280 -0.531979</max>
 	</boundingBox>
 	<geometrySize>102</geometrySize>
 </root>

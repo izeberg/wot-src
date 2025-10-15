@@ -13,6 +13,9 @@ msgstr ""
 msgid "AOS_895"
 msgstr "AOS-895"
 
+msgid "AOS_895_S"
+msgstr "AOS 895 S"
+
 msgid "AVS_1195"
 msgstr "AVS-1195"
 
@@ -199,6 +202,9 @@ msgstr "Lätt Stridsfordon 120"
 msgid "Chassis_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Chassis_S35_Stridsyxa"
+msgstr "Stridsyxa"
+
 msgid "Chassis_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
@@ -258,6 +264,9 @@ msgstr "Ra 100"
 
 msgid "Ra_105"
 msgstr "Ra 105"
+
+msgid "Ra_121"
+msgstr "Ra 121"
 
 msgid "Ra_146"
 msgstr "Ra 146"
@@ -949,6 +958,32 @@ msgstr "Lago M38"
 msgid "S34_Lago_M38_short_special"
 msgstr "Nice frontal armor and high rate of fire"
 
+msgid "S35_Stridsyxa"
+msgstr "Stridsyxa"
+
+msgid "S35_Stridsyxa_descr"
+msgstr ""
+"A medium tank variant developed for the Swedish Army in the 1950s. The "
+"project featured unusual component solutions, including shifting the gun "
+"relative to the turret's central axis. The geometry of the frontal part of "
+"the hull made it possible to optimize the layout and ensure comfort for the "
+"driver. The suspension was designed with a staggered roller arrangement. The"
+" blueprint was presented in 1954, but development went no further."
+
+msgid "S35_Stridsyxa_long_special"
+msgstr ""
+"The Stridsyxa is a Tier VIII Swedish medium tank equipped with a 105 mm gun "
+"that offers comfortable vertical angles, reliable gun handling, and strong "
+"damage per minute. Thanks to its good mobility and dependable frontal armor,"
+" it can also count on swift repositioning across the map as one of its "
+"already versatile range of battle tactics."
+
+msgid "S35_Stridsyxa_short"
+msgstr "Stridsyxa"
+
+msgid "S35_Stridsyxa_short_special"
+msgstr "Reliable frontal armor, comfortable gun"
+
 msgid "S36_Strv_107_12"
 msgstr "Strv 107-12"
 
@@ -1131,6 +1166,9 @@ msgstr "Lätt Stridsfordon 120"
 msgid "Turret_1_S34_Lago_M38"
 msgstr "Lago M38"
 
+msgid "Turret_1_S35_Stridsyxa"
+msgstr "Stridsyxa"
+
 msgid "Turret_1_S36_Strv_107_12"
 msgstr "Strv 107-12"
 
@@ -1278,6 +1316,9 @@ msgstr "10,5 cm lvkan m/42"
 msgid "_105mm_psgr_m_49"
 msgstr "psgr m/49"
 
+msgid "_105mm_sgr_LS_50_S"
+msgstr "slsgr L/50 S"
+
 msgid "_105mm_sgr_L_53"
 msgstr "sgr L/53"
 
@@ -1293,6 +1334,9 @@ msgstr "sgr m/52"
 msgid "_105mm_sgr_m_52_52E2"
 msgstr "sgr m/52 (52E2)"
 
+msgid "_105mm_slpgr_LS_50_S"
+msgstr "slpgr L/50 S"
+
 msgid "_105mm_slpgr_m_42"
 msgstr "slpgr m/42"
 
@@ -1304,6 +1348,9 @@ msgstr "slpgr m/43(1)"
 
 msgid "_105mm_slpgr_m_612"
 msgstr "slpgr m/612"
+
+msgid "_105mm_slpprj_LS_50_S"
+msgstr "slpprj L/50 S"
 
 msgid "_105mm_slpprj_L_53"
 msgstr "slpprj L/53"
@@ -1460,6 +1507,9 @@ msgstr "slpprj L/45"
 
 msgid "_105mm_strvkan_L_45_G4_SH"
 msgstr "10.5 cm strvkan L/45"
+
+msgid "_105mm_strvkan_L_50_S"
+msgstr "10,5 cm strvkan L/50 S"
 
 msgid "_105mm_strvkan_L_51"
 msgstr "10,5 cm strvkan L/51"

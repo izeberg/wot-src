@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod3/Hull</nodefullVisual>
 	<parent>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod4/Hull</parent>
 	<extent>192.000000</extent>
 	<tank>true</tank>
@@ -8,4 +7,5 @@
 		<min>-1.763503 -0.777613 -4.101112</min>
 		<max>1.849779 0.692234 3.479187</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/french/F10_AMX_50B/_skins/F10_AMX_50B_BPXVIII_3Dst/normal/lod3/Hull</nodefullVisual>
 </root>

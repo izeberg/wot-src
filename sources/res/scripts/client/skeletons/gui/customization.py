@@ -17,6 +17,10 @@ class ICustomizationService(object):
     def isOver3dScene(self):
         raise NotImplementedError
 
+    @property
+    def lastAppliedSeason(self):
+        raise NotImplementedError
+
     def init(self):
         raise NotImplementedError
 
@@ -33,6 +37,9 @@ class ICustomizationService(object):
         raise NotImplementedError
 
     def createCtx(self, season=None, modeId=None, tabId=None, source=None, itemCD=None):
+        raise NotImplementedError
+
+    def saveLastWrittenDataFromCtx(self):
         raise NotImplementedError
 
     def destroyCtx(self):

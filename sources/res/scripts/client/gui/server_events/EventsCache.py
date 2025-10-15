@@ -9,7 +9,7 @@ from debug_utils import LOG_DEBUG
 from dossiers2.ui.achievements import ACHIEVEMENT_BLOCK
 from gui.server_events import caches as quests_caches
 from gui.server_events.event_items import MotiveQuest, Quest, ServerEventAbstract, createAction, createQuest
-from gui.server_events.events_helpers import getEventsData, getRerollTimeout, isBattleRoyale, isDailyEpic, isBattleMattersQuestID, isMapsTraining, isMarathon, isPremium, isRankedDaily, isRankedPlatform, isFunRandomQuest, isSuitableForPM, getWeeklyRerollTimeout
+from gui.server_events.events_helpers import getEventsData, getRerollTimeout, isBattleRoyale, isDailyEpic, isBattleMattersQuestID, isMapsTraining, isMarathon, isPremium, isRankedDaily, isRankedPlatform, isSuitableForPM, getWeeklyRerollTimeout
 from gui.server_events.formatters import getLinkedActionID
 from gui.server_events.modifiers import ACTION_MODIFIER_TYPE, ACTION_SECTION_TYPE, clearModifiersCache
 from gui.server_events.personal_missions_cache import PersonalMissionsCache
@@ -22,7 +22,7 @@ from items import getTypeOfCompactDescr
 from personal_missions import PERSONAL_MISSIONS_XML_PATH, PM_BRANCH
 from quest_cache_helpers import readQuestsFromFile
 from shared_utils import first, findFirst
-from skeletons.gui.game_control import IBattleRoyaleController, IEpicBattleMetaGameController, IRankedBattlesController, IFunRandomController
+from skeletons.gui.game_control import IBattleRoyaleController, IEpicBattleMetaGameController, IRankedBattlesController
 from skeletons.gui.battle_matters import IBattleMattersController
 from skeletons.gui.lobby_context import ILobbyContext
 from skeletons.gui.server_events import IEventsCache
@@ -92,7 +92,6 @@ class EventsCache(IEventsCache):
     rankedController = dependency.descriptor(IRankedBattlesController)
     __epicController = dependency.descriptor(IEpicBattleMetaGameController)
     __battleRoyaleController = dependency.descriptor(IBattleRoyaleController)
-    __funRandomController = dependency.descriptor(IFunRandomController)
 
     def __init__(self):
         self.__isForPMSync = True
@@ -276,7 +275,6 @@ class EventsCache(IEventsCache):
     def getAdvisableQuests(self, filterFunc=None):
         filterFunc = filterFunc or (lambda a: True)
         isRankedSeasonOff = self.rankedController.getCurrentSeason() is None
-        isFunRandomOff = not self.__funRandomController.subModesInfo.isAvailable()
         isEpicBattleEnabled = self.__epicController.isEnabled()
 
         def userFilterFunc(q):
@@ -298,8 +296,6 @@ class EventsCache(IEventsCache):
             if isMapsTraining(qGroup):
                 return q.shouldBeShown()
             if isRankedSeasonOff and (isRankedDaily(qGroup) or isRankedPlatform(qGroup)):
-                return False
-            if isFunRandomOff and isFunRandomQuest(qID):
                 return False
             return filterFunc(q)
 

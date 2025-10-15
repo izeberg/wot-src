@@ -25,8 +25,6 @@ package net.wg.data.constants.generated
       
       public static const ALLY_SPG_ELITE:String = "ally_SPG_elite";
       
-      public static const AMMO_CIRCLE:String = "ammoCircle";
-      
       public static const ARTILLERY:String = "artillery";
       
       public static const AT_SPG:String = "AT-SPG";
@@ -48,8 +46,6 @@ package net.wg.data.constants.generated
       public static const BOSS:String = "boss";
       
       public static const BUNKER_TURRET:String = "bunkerTurret";
-      
-      public static const COMMANDER_CIRCLE:String = "commanderCircle";
       
       public static const CRIT:String = "crit";
       
@@ -79,14 +75,6 @@ package net.wg.data.constants.generated
       
       public static const DAMAGE_STANDARD_BLIND:String = "damageStandardBlind";
       
-      public static const DRIVER_CIRCLE:String = "driverCircle";
-      
-      public static const ENGINE_CIRCLE:String = "engineCircle";
-      
-      public static const GUN_CIRCLE:String = "gunCircle";
-      
-      public static const GUNNER_CIRCLE:String = "gunnerCircle";
-      
       public static const HEAVY_TANK:String = "heavyTank";
       
       public static const HEAVY_TANK_ELITE:String = "heavyTank_elite";
@@ -95,43 +83,31 @@ package net.wg.data.constants.generated
       
       public static const LIGHT_TANK_ELITE:String = "lightTank_elite";
       
-      public static const LS_ALPHA:String = "ls_alpha";
-      
-      public static const LS_BOMBER:String = "ls_bomber";
-      
-      public static const LS_BOMBER_ALPHA:String = "ls_bomber_alpha";
-      
-      public static const LS_BOSS:String = "ls_boss";
-      
-      public static const LS_CATCHER:String = "ls_catcher";
-      
-      public static const LS_CHARGER:String = "ls_charger";
-      
-      public static const LS_DETONATOR:String = "ls_detonator";
-      
-      public static const LS_HUNTER:String = "ls_hunter";
-      
-      public static const LS_RIPPER:String = "ls_ripper";
-      
-      public static const LS_RUNNER:String = "ls_runner";
-      
-      public static const LS_SENTRY:String = "ls_sentry";
-      
-      public static const LS_TURRET:String = "ls_turret";
-      
       public static const MEDIUM_TANK:String = "mediumTank";
       
       public static const MEDIUM_TANK_ELITE:String = "mediumTank_elite";
+      
+      public static const SPG:String = "SPG";
+      
+      public static const SPG_ELITE:String = "SPG_elite";
+      
+      public static const AMMO_CIRCLE:String = "ammoCircle";
+      
+      public static const COMMANDER_CIRCLE:String = "commanderCircle";
+      
+      public static const DRIVER_CIRCLE:String = "driverCircle";
+      
+      public static const ENGINE_CIRCLE:String = "engineCircle";
+      
+      public static const GUN_CIRCLE:String = "gunCircle";
+      
+      public static const GUNNER_CIRCLE:String = "gunnerCircle";
       
       public static const RADIO_CIRCLE:String = "radioCircle";
       
       public static const RADIOMAN_CIRCLE:String = "radiomanCircle";
       
       public static const RELOADER_CIRCLE:String = "reloaderCircle";
-      
-      public static const SPG:String = "SPG";
-      
-      public static const SPG_ELITE:String = "SPG_elite";
       
       public static const TANKS_CIRCLE:String = "tanksCircle";
       
@@ -142,6 +118,30 @@ package net.wg.data.constants.generated
       public static const TURRET_CIRCLE:String = "turretCircle";
       
       public static const WHEEL_CIRCLE:String = "wheelCircle";
+      
+      public static const HW_ALPHA:String = "hw_alpha";
+      
+      public static const HW_BOMBER:String = "hw_bomber";
+      
+      public static const HW_BOMBER_ALPHA:String = "hw_bomber_alpha";
+      
+      public static const HW_BOSS:String = "hw_boss";
+      
+      public static const HW_CATCHER:String = "hw_catcher";
+      
+      public static const HW_CHARGER:String = "hw_charger";
+      
+      public static const HW_DETONATOR:String = "hw_detonator";
+      
+      public static const HW_HUNTER:String = "hw_hunter";
+      
+      public static const HW_RIPPER:String = "hw_ripper";
+      
+      public static const HW_RUNNER:String = "hw_runner";
+      
+      public static const HW_SENTRY:String = "hw_sentry";
+      
+      public static const HW_TURRET:String = "hw_turret";
        
       
       public function DAMAGEINDICATOR()

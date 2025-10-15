@@ -69,6 +69,7 @@
 			<!--BW_String-->
 		</gammaCorrectionSpeed>
 		<maxFrameRate>1000</maxFrameRate>
+		<maxDetailDistance>50</maxDetailDistance>
 		<reducedFrameRate>60</reducedFrameRate>
 		<settings/>
 		<useLatentOcclusionQueries>true</useLatentOcclusionQueries>

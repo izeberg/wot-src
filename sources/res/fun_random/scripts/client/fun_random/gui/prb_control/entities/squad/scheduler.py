@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random.gui.feature.util.fun_wrappers import hasSpecifiedSubMode
 from fun_random.gui.prb_control.entities.pre_queue.scheduler import FunRandomScheduler
 from gui import SystemMessages

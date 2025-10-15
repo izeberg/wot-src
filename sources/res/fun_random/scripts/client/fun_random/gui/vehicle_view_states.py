@@ -1,3 +1,4 @@
+from __future__ import absolute_import
 from fun_random.gui.feature.util.fun_mixins import FunSubModesWatcher
 from fun_random.gui.feature.util.fun_wrappers import hasDesiredSubMode
 from gui.vehicle_view_states import SelectedViewState

@@ -1,5 +1,5 @@
 import typing
-from gui.Scaleform.daapi.view.common.vehicle_carousel.carousel_filter import FILTER_KEYS
+from gui.filters.carousel_filter import FILTER_KEYS
 from gui.impl.lobby.hangar.presenters.vehicle_filters_presenter import VehicleFiltersDataProvider
 if typing.TYPE_CHECKING:
     from typing import List

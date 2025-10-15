@@ -2,11 +2,10 @@ from battle_pass_common import BattlePassConsts, BattlePassTankmenSource
 from gui.battle_pass.battle_pass_award import BattlePassAwardsManager
 from gui.battle_pass.battle_pass_bonuses_packers import packBonusModelAndTooltipData
 from gui.battle_pass.battle_pass_constants import ChapterState
-from gui.battle_pass.battle_pass_helpers import getReceivedTankmenCount, getTankmenShopPackages, getVehicleInfoForChapter, isSeasonEndingSoon
+from gui.battle_pass.battle_pass_helpers import getReceivedTankmenCount, getTankmenShopPackages, getVehicleInfoForChapter, isSeasonEndingSoon, showFinalRewardPreviewBattlePassState
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.battle_pass.holiday_final_view_model import HolidayFinalViewModel
 from gui.impl.gen.view_models.views.lobby.battle_pass.package_item import ChapterStates
-from gui.impl.lobby.battle_pass.states import FinalRewardPreviewBattlePassState
 from gui.impl.pub.view_component import ViewComponent
 from gui.impl.wrappers.function_helpers import replaceNoneKwargsModel
 from gui.shared import events
@@ -156,7 +155,7 @@ class HolidayFinalPresenter(ViewComponent[HolidayFinalViewModel]):
         self.viewModel.setState(state)
 
     def __onPreview(self):
-        FinalRewardPreviewBattlePassState.goTo(chapterID=self.__chapterID, origin=self.layoutID)
+        showFinalRewardPreviewBattlePassState(chapterID=self.__chapterID)
 
     def __takeAllRewards(self):
         self.__battlePass.takeAllRewards()

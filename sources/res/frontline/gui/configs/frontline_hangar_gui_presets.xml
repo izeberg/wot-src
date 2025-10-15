@@ -3,7 +3,7 @@
 	<presets>
 		<preset>
 			<name>frontline</name>
-			<basePreset>random</basePreset>
+			<basePreset>default</basePreset>
 			<components>
 				<component>
 					<name>alertMessage</name>

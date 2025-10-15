@@ -45,8 +45,6 @@ package
       
       public static const MAPS_ICONS_DEMOUNTKIT_BG:String = "../maps/icons/demountKit/bg.png";
       
-      public static const MAPS_ICONS_EPICBATTLES_ARROW_BG:String = "../maps/icons/epicBattles/arrow/bg.png";
-      
       public static const MAPS_ICONS_EPICBATTLES_SKILLS_INTRO_BG:String = "../maps/icons/epicBattles/skills/intro/bg.png";
       
       public static const MAPS_ICONS_HANGAR_BUYVEHICLE_BG:String = "../maps/icons/hangar/buyVehicle/bg.png";

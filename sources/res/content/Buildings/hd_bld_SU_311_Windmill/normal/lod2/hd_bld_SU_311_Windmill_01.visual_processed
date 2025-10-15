@@ -8,42 +8,6 @@
 			<row2>0.000000 0.000000 1.000000</row2>
 			<row3>0.000000 0.000000 0.000000</row3>
 		</transform>
-		<node>
-			<identifier>hd_bld_SU_311_Windmill_01</identifier>
-			<transform>
-				<row0>1.000000 0.000000 0.000000</row0>
-				<row1>0.000000 1.000000 0.000000</row1>
-				<row2>0.000000 0.000000 1.000000</row2>
-				<row3>0.000000 0.000000 0.000000</row3>
-			</transform>
-			<node>
-				<identifier>lod2</identifier>
-				<transform>
-					<row0>1.000000 0.000000 0.000000</row0>
-					<row1>0.000000 1.000000 0.000000</row1>
-					<row2>0.000000 0.000000 1.000000</row2>
-					<row3>0.000000 0.000000 0.000000</row3>
-				</transform>
-				<node>
-					<identifier>s1</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-				<node>
-					<identifier>s2</identifier>
-					<transform>
-						<row0>1.000000 0.000000 0.000000</row0>
-						<row1>0.000000 1.000000 0.000000</row1>
-						<row2>0.000000 0.000000 1.000000</row2>
-						<row3>0.000000 0.000000 0.000000</row3>
-					</transform>
-				</node>
-			</node>
-		</node>
 	</node>
 	<renderSet>
 		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
@@ -55,9 +19,9 @@
 			<primitiveGroup>
 				0
 				<material>
-					<identifier>s_nd2</identifier>
+					<identifier>s_nd0</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<materialKind>111</materialKind>
+					<materialKind>108</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
@@ -84,7 +48,7 @@
 						<Texture>content/Buildings/hd_bld_SU_311_Windmill/hd_bld_SU_311_Windmill_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>0.071828 1.109166 0.000353</groupOrigin>
+				<groupOrigin>-0.437646 18.794186 -0.011513</groupOrigin>
 			</primitiveGroup>
 			<primitiveGroup>
 				1
@@ -123,9 +87,9 @@
 			<primitiveGroup>
 				2
 				<material>
-					<identifier>s_nd0</identifier>
+					<identifier>s_nd2</identifier>
 					<fx>shaders/std_effects/PBS_ext_dual.fx</fx>
-					<materialKind>108</materialKind>
+					<materialKind>111</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
 						diffuseMap
@@ -152,7 +116,7 @@
 						<Texture>content/Buildings/hd_bld_SU_311_Windmill/hd_bld_SU_311_Windmill_ANM.dds</Texture>
 					</property>
 				</material>
-				<groupOrigin>-0.437646 18.794186 -0.011513</groupOrigin>
+				<groupOrigin>0.071828 1.109166 0.000353</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
@@ -161,5 +125,5 @@
 		<max>8.641943 24.722841 6.717456</max>
 	</boundingBox>
 	<customBsp>true</customBsp>
-	<geometrySize>36506</geometrySize>
+	<geometrySize>36874</geometrySize>
 </root>
