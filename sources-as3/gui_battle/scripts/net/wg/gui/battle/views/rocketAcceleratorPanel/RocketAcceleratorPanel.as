@@ -10,7 +10,7 @@ package net.wg.gui.battle.views.rocketAcceleratorPanel
    public class RocketAcceleratorPanel extends CommonIndicatorMeta implements ICommonIndicatorMeta
    {
       
-      private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
+      private static const FRACTIONAL_FORMAT_CMD:String = "getFractionalFormat";
       
       private static const INSTANTLY_POSTFIX:String = "_instantly";
       

@@ -1239,6 +1239,12 @@ msgstr "Стандартны прызавы бой."
 msgid "bonusName/rankedDailyBattles"
 msgstr "Штодзённы прызавы бой."
 
+msgid "bonusName/razlom_coin"
+msgstr "Манеты «Разлом»"
+
+msgid "bonusName/sacoin"
+msgstr "Жэтоны заслужанай узнагароды"
+
 msgid "bonusName/slots"
 msgstr "Слоты ў Гаражы"
 
@@ -2200,9 +2206,6 @@ msgstr "Атрымаць адметную адзнаку на гармату"
 msgid "details/conditions/cumulative/maxDamage"
 msgstr "Найбольшыя пашкоджанні"
 
-msgid "details/conditions/cumulative/maxWtPlasmaBonus"
-msgstr "Атрымаць пэўны узовень узмацнення агнявой моцы ў межах аднаго бою"
-
 msgid "details/conditions/cumulative/mileage"
 msgstr "Прабег за бой, не менш за (м)"
 
@@ -2284,18 +2287,6 @@ msgstr "Параметр для каманды: %(param)s"
 
 msgid "details/conditions/cumulative/tkills"
 msgstr "Знішчаныя машыны хаўруснікаў"
-
-msgid "details/conditions/cumulative/wtBossVulnerableDamage"
-msgstr "Прычыніць пашкоджанні машыне Інжынера, пакуль яна без шчыта"
-
-msgid "details/conditions/cumulative/wtDeathCount"
-msgstr "Колькасць адраджэнняў"
-
-msgid "details/conditions/cumulative/wtGeneratorsCaptured"
-msgstr "Узяць удзел у перагрузцы ўказанай колькасці генератараў"
-
-msgid "details/conditions/cumulative/wtTotalGeneratorsCaptured"
-msgstr "Колькасць перагружаных генератараў"
 
 msgid "details/conditions/cumulative/xp"
 msgstr "Здабыты досвед"

@@ -41,7 +41,7 @@
 			<type>attach</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>4.000000</duration>
+				<duration>2.666667</duration>
 				<value>Root|</value>
 			</frame>
 		</track>
@@ -57,12 +57,12 @@
 			</frame>
 		</track>
 		<track>
-			<name>Sound</name>
+			<name>ay_ep_07_seq_stage_03</name>
 			<type>sound</type>
 			<frame>
 				<startTime>0.000000</startTime>
-				<duration>3.916104</duration>
-				<sequenceSound>ay_ep_06_seq_stage_03</sequenceSound>
+				<duration>2.166667</duration>
+				<sequenceSound>ay_ep_07_seq_stage_03</sequenceSound>
 				<type>play_till_end</type>
 				<fade>0.000000</fade>
 			</frame>

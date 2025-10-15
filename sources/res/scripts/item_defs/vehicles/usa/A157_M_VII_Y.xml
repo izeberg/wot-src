@@ -1540,8 +1540,8 @@
 		</customization>
 		<hangarShadowTexture>vehicles/american/A157_M_VII_Y/M_VII_Y_HangarShadowMap.dds</hangarShadowTexture>
 		<camouflage>
-			<density>106.275467 105.091187</density>
-			<aoTextureSize>1024 512</aoTextureSize>
+			<density>109.065628 108.731155</density>
+			<aoTextureSize>1024 1024</aoTextureSize>
 		</camouflage>
 	</hull>
 	<chassis>
@@ -5149,7 +5149,7 @@
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
-				<density>106.275467 105.091187</density>
+				<density>104.286064 103.187096</density>
 				<aoTextureSize>1024 512</aoTextureSize>
 			</camouflage>
 		</Turret_1_A157_M_VII_Y>
@@ -5262,7 +5262,10 @@
 	</extrasProtection>
 	<chassis>
 		<Chassis_A157_M_VII_Y>
-			<camouflage/>
+			<camouflage>
+				<density>106.275467 105.091187</density>
+				<aoTextureSize>1024 512</aoTextureSize>
+			</camouflage>
 		</Chassis_A157_M_VII_Y>
 	</chassis>
 	<effects>

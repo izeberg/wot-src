@@ -1,0 +1,123 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "serviceChannelMessages/difficulty/title"
+msgstr "Складанасць"
+
+msgid "serviceChannelMessages/eventState/disabled/body"
+msgstr "Падзея «Разлом» завершана."
+
+msgid "serviceChannelMessages/eventState/enabled/body"
+msgstr ""
+"Падзея «Разлом» пачалася. Ліквідуйце Партал, каб разбурыць цёмныя планы "
+"Катрыны!"
+
+msgid "serviceChannelMessages/eventState/enabled/openBtnLabel"
+msgstr "Перайсці"
+
+msgid "serviceChannelMessages/eventState/eventLocked"
+msgstr ""
+"Падзея «Разлом» часова недаступная. Увесь ваш прагрэс будзе захаваны. Сачыце"
+" за навінамі на сайце гульні."
+
+msgid "serviceChannelMessages/eventState/eventUnlocked"
+msgstr "Падзея «Разлом» зноў даступная."
+
+msgid "serviceChannelMessages/eventState/suspended"
+msgstr ""
+"Уступіць у бой падзеі «Разлом» часова немагчыма.\n"
+"Паспрабуйце пазней."
+
+msgid "serviceChannelMessages/maxLevelCompleted/body"
+msgstr ""
+"Вы здабылі перамогу на самым складаным узроўні падзеі «Разлом». Атрымана ўзнагарода:\n"
+"%(rewards)s"
+
+msgid "serviceChannelMessages/maxLevelCompleted/header"
+msgstr "Віншуем!"
+
+msgid "serviceChannelMessages/maxLevelCompleted/openBtnLabel"
+msgstr "Падрабязней"
+
+msgid "serviceChannelMessages/portalBattleResults/eventName"
+msgstr "Падзея: «Разлом»"
+
+msgid "serviceChannelMessages/portalBattleResults/progressionPoints"
+msgstr "Атрымана Ачкоў прагрэсу"
+
+msgid "serviceChannelMessages/portalBattleResults/vehicleUpgradePoints"
+msgstr "Атрымана Ачкоў досведу"
+
+msgid "serviceChannelMessages/portalDifficultyLevel/body"
+msgstr ""
+"Вам стаў даступны ўзровень складанасці «%(level)s». Змяніць яго можна ў "
+"Гаражы падзеі «Разлом»."
+
+msgid "serviceChannelMessages/portalDifficultyLevel/header"
+msgstr "Разблакаваны ўзровень складанасці"
+
+msgid "serviceChannelMessages/progression/allStagesCompleted/body"
+msgstr ""
+"Вы завяршылі %(stage)s этап прагрэсіі падзеі «Разлом». Атрымана ўзнагарода:\n"
+"%(rewards)s"
+
+msgid "serviceChannelMessages/progression/header"
+msgstr "Віншуем!"
+
+msgid "serviceChannelMessages/progression/stageAchieved/body"
+msgstr ""
+"Вы завяршылі %(stage)s этап прагрэсіі падзеі «Разлом». Атрымана ўзнагарода:\n"
+"%(rewards)s"
+
+msgid "serviceChannelMessages/progression/stageAchieved/openBtnLabel"
+msgstr "Падрабязней"
+
+msgid "serviceChannelMessages/vehicleUpgrade/allVehiclesUpgraded/body"
+msgstr ""
+"Вы дасягнулі максімальнага ўзроўню ўзмацненняў усіх машын падзеі «Разлом». Атрымана ўзнагарода:\n"
+"%(rewards)s"
+
+msgid "serviceChannelMessages/vehicleUpgrade/header"
+msgstr "Віншуем!"
+
+msgid "serviceChannelMessages/vehicleUpgrade/levelUpgrade/abilities/body"
+msgstr "Вывучана здольнасць %(abilityName)s."
+
+msgid ""
+"serviceChannelMessages/vehicleUpgrade/levelUpgrade/battleModifier/damageFactor"
+msgstr "Вывучана ўзмацненне Вялікі бонус да пашкоджанняў."
+
+msgid ""
+"serviceChannelMessages/vehicleUpgrade/levelUpgrade/battleModifier/engine_power"
+msgstr "Вывучана ўзмацненне Малы бонус да мабільнасці."
+
+msgid ""
+"serviceChannelMessages/vehicleUpgrade/levelUpgrade/battleModifier/gun_reloadTime"
+msgstr "Вывучана ўзмацненне Бонус да перанабівання."
+
+msgid "serviceChannelMessages/vehicleUpgrade/levelUpgrade/common/body"
+msgstr "Вы павысілі ўзровень %(vehicleName)s да %(upgradeLevel)s."
+
+msgid "serviceChannelMessages/vehicleUpgrade/levelUpgrade/modules/body"
+msgstr "Вывучана ўзмацненне %(moduleName)s."
+
+msgid "serviceChannelMessages/vehicleUpgrade/levelUpgrade/spentPoints"
+msgstr "Патрачана Ачкоў досведу: "
+
+msgid "serviceChannelMessages/vehicleUpgrade/openBtnLabel"
+msgstr "Падрабязней"
+
+msgid "serviceChannelMessages/vehicleUpgrade/reset/body"
+msgstr ""
+"Узмацненні скінуты. Вы можаце даследаваць узмацненні нанова. Атрымана Ачкоў "
+"досведу:"
+
+msgid "serviceChannelMessages/vehicleUpgrade/reset/title"
+msgstr "Скід узмацненняў"

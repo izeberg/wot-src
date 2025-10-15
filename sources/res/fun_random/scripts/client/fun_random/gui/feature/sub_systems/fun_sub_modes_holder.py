@@ -1,4 +1,5 @@
 import operator, typing
+from helpers import dependency
 from fun_random_common.fun_constants import FUN_EVENT_ID_KEY, UNKNOWN_EVENT_ID
 from fun_random.gui.feature.fun_constants import FunSubModeBroadcast
 from fun_random.gui.feature.util.fun_wrappers import skipNoSubModesAction
@@ -12,6 +13,7 @@ if typing.TYPE_CHECKING:
     from skeletons.gui.battle_session import IClientArenaVisitor
 
 class FunSubModesHolder(IFunRandomController.IFunSubModesHolder):
+    __funRandomCtrl = dependency.descriptor(IFunRandomController)
 
     def __init__(self, subscription):
         super(FunSubModesHolder, self).__init__()
@@ -20,6 +22,8 @@ class FunSubModesHolder(IFunRandomController.IFunSubModesHolder):
         self.__subscription = subscription
 
     def clear(self):
+        if self.__funRandomCtrl.isRelogin:
+            return
         self.__destroySubModes(set(self.__subModes.keys()))
         self.__desiredSubModeID = UNKNOWN_EVENT_ID
 

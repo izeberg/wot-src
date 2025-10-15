@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R46_KV-13_H/crash/lod4/Gun_07</parent>
+	<extent>192.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/russian/R46_KV-13_H/crash/lod3/Gun_07</nodelessVisual>
+	<visibilityBox>
+		<min>-0.499270 -0.313851 -1.458075</min>
+		<max>1.021327 0.260223 4.761784</max>
+	</visibilityBox>
+</root>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s2Shape.vertices</vertices>
+			<primitive>s2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Environment/hd_env_EVT_P25_0011_KoshcheevaObj/glow_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.752941 0.329412 0.329412 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>21.500000</Float>
+					</property>
+				</material>
+				<groupOrigin>-1.674214 8.487253 -2.353273</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/emissive_playground.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						angleFalloffParams
+						<Vector4>1.000000 1.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						animationMode
+						<Int>1</Int>
+					</property>
+					<property>
+						destBlend
+						<Int>5</Int>
+					</property>
+					<property>
+						emissionMap
+						<Texture>content/Environment/hd_env_EVT_P25_0011_KoshcheevaObj/glow_AM.dds</Texture>
+					</property>
+					<property>
+						g_chromaOffsetBlue
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_chromaOffsetGreen
+						<Float>0.500000</Float>
+					</property>
+					<property>
+						g_contrast
+						<Float>2.000000</Float>
+					</property>
+					<property>
+						g_deferredMult
+						<Float>21.910000</Float>
+					</property>
+					<property>
+						g_offsetBlack
+						<Float>0.010000</Float>
+					</property>
+					<property>
+						g_tint
+						<Vector4>0.764706 0.368627 0.368627 1.000000</Vector4>
+					</property>
+					<property>
+						pattern
+						<Texture>content/Environment/hd_env_EVT_P25_0011_KoshcheevaObj/Pattern.dds</Texture>
+					</property>
+					<property>
+						patternNumber
+						<Int>3</Int>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Environment/hd_env_EVT_P25_0011_KoshcheevaObj/noise_EP.dds</Texture>
+					</property>
+					<property>
+						speed
+						<Float>0.280000</Float>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						usePhaseMap
+						<Bool>true</Bool>
+					</property>
+					<property>
+						waveLen
+						<Float>2.560000</Float>
+					</property>
+				</material>
+				<groupOrigin>-1.454390 8.214116 -1.864831</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<stream>s0Shape.uv2</stream>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/std_effects/PBS_tiled.fx</fx>
+					<materialKind>112</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						albedoHeightTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paint_02_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_05_Painted_512_AM.dds</Texture>
+					</property>
+					<property>
+						albedoHeightTile2
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_01_1024_AM.dds</Texture>
+					</property>
+					<property>
+						blendMask
+						<Texture>content/Environment/hd_env_EVT_P25_0011_KoshcheevaObj/hd_env_EVT_P25_0011_KoshcheevaObj_blend.png</Texture>
+					</property>
+					<property>
+						colorTex
+						<Texture>content/Environment/hd_env_EVT_P25_0011_KoshcheevaObj/hd_env_EVT_P25_0011_KoshcheevaObj_GCM.dds</Texture>
+					</property>
+					<property>
+						dirtMap
+						<Texture>content/Buildings/00_Tiles/Dirt_Leaks_08_512_DM.dds</Texture>
+					</property>
+					<property>
+						g_dirtColor
+						<Vector4>0.470000 0.430000 0.380000 0.700000</Vector4>
+					</property>
+					<property>
+						g_dirtColorParams
+						<Vector4>0.200000 1.000000 1.000000 0.420000</Vector4>
+					</property>
+					<property>
+						g_fakeShadowsAndDetailParams
+						<Vector4>0.500000 0.500000 1.000000 0.005700</Vector4>
+					</property>
+					<property>
+						g_tile1Tint
+						<Vector4>1.000000 0.466667 0.000000 1.000000</Vector4>
+					</property>
+					<property>
+						metallicAOTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paint_02_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_05_Painted_512_MAO.dds</Texture>
+					</property>
+					<property>
+						metallicAOTile2
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_01_1024_MAO.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile0
+						<Texture>content/Buildings/00_Tiles/dds/Paint_02_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile1
+						<Texture>content/Buildings/00_Tiles/dds/Borders_05_Painted_512_GBMT.dds</Texture>
+					</property>
+					<property>
+						normalGlossSpecTile2
+						<Texture>content/Environment/00_Tiles/dds/Metal_Bare_01_1024_GBMT.dds</Texture>
+					</property>
+					<property>
+						g_enableTerrainBlending
+						<Bool>true</Bool>
+					</property>
+				</material>
+				<groupOrigin>0.015026 4.401027 -2.743697</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-2.838898 -4.120546 -18.578127</min>
+		<max>2.864503 12.922601 13.090733</max>
+	</boundingBox>
+	<customBsp>true</customBsp>
+	<geometrySize>95584</geometrySize>
+	<minUVDensity>0.000374</minUVDensity>
+</root>

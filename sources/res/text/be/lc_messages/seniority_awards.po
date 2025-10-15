@@ -8,6 +8,69 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "buttons/applyButton"
+msgstr "Так!"
+
+msgid "buttons/claim"
+msgstr "Забраць"
+
+msgid "buttons/claimLater"
+msgstr "Выбраць пазней"
+
+msgid "buttons/clearFilter"
+msgstr "Скінуць фільтр"
+
+msgid "buttons/selectReward"
+msgstr "Выбраць"
+
+msgid "compensationToken/offer"
+msgstr "Кампенсацыя за тэхніку Х узроўню"
+
+msgid "compensationTooltip/content/compensationCount"
+msgstr "x%(count)s"
+
+msgid "compensationTooltip/content/compensationCountCurrency"
+msgstr "%(count)s"
+
+msgid "compensationTooltip/content/label"
+msgstr "%(label)s (x%(count)s)"
+
+msgid "compensationTooltip/content/vehicleBonusToken"
+msgstr "Тэхніка Х узроўню"
+
+msgid "compensationTooltip/description/collectionItem"
+msgstr "Кампенсацыя за элемент калекцыі"
+
+msgid "compensationTooltip/description/freeTokens"
+msgstr "Кампенсацыя за бланкі загаду кампаніі %(missionName)s"
+
+msgid "compensationTooltip/description/selectableBonus"
+msgstr "Кампенсацыя за машыну"
+
+msgid "compensationTooltip/description/vehicles"
+msgstr "Кампенсацыя за машыну"
+
+msgid "compensationTooltip/footerDetails/collectionItem"
+msgstr "Кампенсацыя за ўжо наяўны элемент калекцыі."
+
+msgid "compensationTooltip/footerDetails/freeTokens"
+msgstr "Узнагарода, якая выдаецца як кампенсацыя."
+
+msgid "compensationTooltip/footerDetails/selectableBonus"
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+
+msgid "compensationTooltip/footerDetails/vehicles"
+msgstr "Кампенсацыя за машыну, якая ўжо ёсць у вас у Гаражы."
+
+msgid "compensationTooltip/title/credits"
+msgstr "Срэбра"
+
+msgid "compensationTooltip/title/gold"
+msgstr "Золата"
+
+msgid "compensationTooltip/title/sacoin"
+msgstr "Жэтоны заслужанай узнагароды"
+
 msgid "multiOpenView/applyLabel"
 msgstr "Так!"
 
@@ -33,6 +96,14 @@ msgstr ""
 
 msgid "notifications/header"
 msgstr "Заслужаная ўзнагарода"
+
+msgid "notifications/offer/button"
+msgstr "Выбраць машыну"
+
+msgid "notifications/offer/title"
+msgstr ""
+"Не забудзьцеся забраць падарунка. \n"
+"Машына Х узроўню чакае вас!"
 
 msgid "notifications/quest/button"
 msgstr "Забраць узнагароды"
@@ -65,6 +136,14 @@ msgstr ""
 "Мяняйце жэтоны па выслузе\n"
 "гадоў на жаданую ўзнагароду!"
 
+msgid "offer/tooltip/description/vehicle_10_gift"
+msgstr ""
+"Вы можаце выбраць даследаваную тэхніку Х узроўню, якой у вас няма ў "
+"наяўнасці (акрамя штурмавых САУ)"
+
+msgid "offer/tooltip/title/vehicle_10_gift"
+msgstr "Тэхніка Х узроўню на выбар"
+
 msgid "openBoxView/autoOpenTooltip/body"
 msgstr ""
 "{date} мы адкрыем за вас скрынкі з заслужанай узнагародай і выдадзім "
@@ -87,11 +166,11 @@ msgstr "Заслужаная ўзнагарода"
 msgid "openBoxView/openBoxesLabel"
 msgstr "Адкрыць {count} шт."
 
+msgid "personalMissions/freeSheet/title"
+msgstr "Бланк загаду кампаніі «%(campaignName)s»"
+
 msgid "rewardsScreen/showGiftButtonLabel"
 msgstr "Да ўзнагароды"
-
-msgid "rewardsView/applyBtn"
-msgstr "Так!"
 
 msgid "rewardsView/exchangeCoins"
 msgstr "Абмяняйце жэтоны на ўзнагароды ў Краме."
@@ -170,6 +249,9 @@ msgstr ""
 
 msgid "rewardsView/subTitle/Y14"
 msgstr "УЗНАГАРОДА ЗА %(gradientStart)s14 ГАДОЎ%(gradientEnd)s У СТРАІ"
+
+msgid "rewardsView/subTitle/Y15"
+msgstr "УЗНАГАРОДА ЗА %(gradientStart)s15 ГАДОЎ%(gradientEnd)s У СТРАІ"
 
 msgid "rewardsView/subTitle/Y1_BT"
 msgstr ""
@@ -255,6 +337,18 @@ msgstr "ДА ТЭХНІКІ"
 msgid "rewardsView/title"
 msgstr "ВІНШУЕМ!"
 
+msgid "selectBonus/vehicle_10_gift"
+msgstr "Тэхніка Х узроўню на выбар"
+
+msgid "serviceChannelMessages/compensation/credits"
+msgstr "срэбрам:"
+
+msgid "serviceChannelMessages/compensation/header"
+msgstr "Кампенсацыя:"
+
+msgid "serviceChannelMessages/compensation/sacoins"
+msgstr "жэтонамі заслужанай узнагароды:"
+
 msgid "specialItem/body"
 msgstr ""
 "Выдаюцца за баявыя заслугі. Пасля завяршэння падзеі рэшта жэтонаў будзе "
@@ -265,3 +359,91 @@ msgstr "%(count)s шт. жэтонаў за выслугу гадоў"
 
 msgid "tooltip/restrictedMode"
 msgstr "Аперацыя часова недаступная. Паспрабуйце пазней."
+
+msgid "vehicleSelector/errorScreen/subTitle"
+msgstr ""
+"Інфармацыя часова недаступная. Выбачайце за нязручнасці, паспрабуйце "
+"абнавіць экран пазней."
+
+msgid "vehicleSelector/errorScreen/title"
+msgstr "Не ўдалося адкрыць выбар тэхнікі"
+
+msgid "vehicleSelector/selectScreen/filter/shownCount"
+msgstr "Паказана:"
+
+msgid "vehicleSelector/selectScreen/filter/shownCountDivider"
+msgstr "/ %(count)s"
+
+msgid "vehicleSelector/selectScreen/filter/tooltip/clearFilter/body"
+msgstr "Націсніце, каб скінуць налады фільтра на стандартныя."
+
+msgid "vehicleSelector/selectScreen/filter/tooltip/clearFilter/header"
+msgstr "Паставіць стандартныя налады"
+
+msgid "vehicleSelector/selectScreen/filter/vehicleNameSearch"
+msgstr "Пошук паводле назвы"
+
+msgid "vehicleSelector/selectScreen/footer/actionText/active"
+msgstr "Выбрана машын: %(amountRewards)s %(infoIcon)s"
+
+msgid "vehicleSelector/selectScreen/footer/selectExpirationTime"
+msgstr "Выбар тэхнікі будзе даступны да %(selectExexpirationTime)s"
+
+msgid "vehicleSelector/selectScreen/footer/vehicleCount"
+msgstr "%(selectedCount)s / %(allCount)s"
+
+msgid "vehicleSelector/selectScreen/noVehicles/clearFilter"
+msgstr "Нічога не знойдзена. Змяніце налады або скіньце фільтр."
+
+msgid "vehicleSelector/selectScreen/noVehicles/hasAllVehicles"
+msgstr ""
+"Вы ўжо маеце ўсю даследаваную тэхніку {brown_Open}X узроўню{brown_Close}."
+
+msgid "vehicleSelector/selectScreen/popover/nationTitle"
+msgstr "Нацыя"
+
+msgid "vehicleSelector/selectScreen/popover/title"
+msgstr "Фільтр тэхнікі"
+
+msgid "vehicleSelector/selectScreen/popover/tooltip/body"
+msgstr "Налады паказу тэхнікі з улікам дзяржавы, тыпу"
+
+msgid "vehicleSelector/selectScreen/popover/tooltip/header"
+msgstr "Фільтр параметраў"
+
+msgid "vehicleSelector/selectScreen/popover/vehicleTitle"
+msgstr "Тып тэхнікі"
+
+msgid "vehicleSelector/selectScreen/subTitleMultiple"
+msgstr ""
+"Выберыце машыны {brown_Open}X узроўню{brown_Close}, якія хочаце пакінуць "
+"сабе (акрамя шутрмавых САУ)"
+
+msgid "vehicleSelector/selectScreen/subTitleSingle"
+msgstr ""
+"Выберыце машыну {brown_Open}X узроўню{brown_Close}, якую хочаце пакінуць "
+"сабе (акрамя штурмавых САУ)"
+
+msgid "vehicleSelector/selectScreen/title"
+msgstr "ВЫБЕРЫЦЕ ТЭХНІКУ"
+
+msgid "vehicleSelector/selectScreen/tooltip/rewardDiscount/subtitle"
+msgstr "Націсніце «Забраць» і атрымайце выбраную тэхніку."
+
+msgid "vehicleSelector/selectScreen/tooltip/rewardDiscount/subtitleEmpty"
+msgstr "Выберыце тэхніку, якая спадабалася, каб забраць яе."
+
+msgid "vehicleSelector/selectScreen/tooltip/rewardDiscount/title"
+msgstr "Выбрана тэхнікі: %(amountRewards)s"
+
+msgid "vehicleSelector/selectScreen/tooltip/rewardDiscountVehicle/subtitle"
+msgstr "{white_Open}%(name)s{white_Close}"
+
+msgid "vehicleSelector/selectScreen/tooltip/rewardDiscountVehicle/title"
+msgstr "Тэхніка %(level)s узроўню"
+
+msgid "vehicleSelector/selectScreen/vehicleCard/vehicleName"
+msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"
+
+msgid "vehicle_offer/title"
+msgstr "Тэхніка Х узроўню"

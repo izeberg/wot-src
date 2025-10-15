@@ -2118,6 +2118,8 @@ RECORDS = (
  (
   'singleAchievements', 'betaTester', 'p', 'B', 1),
  (
+  'singleAchievements', '15YearsOfService', 'p', 'B', 1),
+ (
   'singleAchievements', '14YearsOfService', 'p', 'B', 1),
  (
   'singleAchievements', '13YearsOfService', 'p', 'B', 1),
@@ -2892,9 +2894,9 @@ RECORDS = (
  (
   'steamAchievements', 'steamGetTankLevel10Medal', 'p', 'B', 1),
  (
-  'steamAchievements', 'steamDoPotapovQuestMedal', 'p', 'B', 1),
+  'steamAchievements', 'steamDoPersonalMissionQuestMedal', 'p', 'B', 1),
  (
-  'steamAchievements', 'steamDoAllBranchPotapovQuestMedal', 'p', 'B', 1),
+  'steamAchievements', 'steamDoAllBranchPersonalMissionQuestMedal', 'p', 'B', 1),
  (
   'steamAchievements', 'steamDoOperationMedal', 'p', 'B', 1),
  (
@@ -3556,7 +3558,11 @@ RECORDS = (
  (
   'singleAchievements', 'comp7_5_1_legend', 'p', 'B', 1),
  (
-  'singleAchievements', 'BattlePassCommonPr_18', 'p', 'B', 1))
+  'singleAchievements', 'BattlePassCommonPr_18', 'p', 'B', 1),
+ (
+  'singleAchievements', 'portal2025Medal_1', 'p', 'B', 1),
+ (
+  'singleAchievements', 'portal2025Medal_2', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -4914,8 +4920,8 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('steamAchievements', 'steamGetTankLevel8Medal'): 1628, 
    ('steamAchievements', 'steamGetTankLevel9Medal'): 1629, 
    ('steamAchievements', 'steamGetTankLevel10Medal'): 1630, 
-   ('steamAchievements', 'steamDoPotapovQuestMedal'): 1631, 
-   ('steamAchievements', 'steamDoAllBranchPotapovQuestMedal'): 1632, 
+   ('steamAchievements', 'steamDoPersonalMissionQuestMedal'): 1631, 
+   ('steamAchievements', 'steamDoAllBranchPersonalMissionQuestMedal'): 1632, 
    ('steamAchievements', 'steamDoOperationMedal'): 1633, 
    ('steamAchievements', 'steamEquipTypeMedal'): 1634, 
    ('steamAchievements', 'steamShellTypeMedal'): 1635, 
@@ -5336,7 +5342,10 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'comp7_5_1'): 31138, 
    ('singleAchievements', 'comp7_5_1_champion'): 31139, 
    ('singleAchievements', 'comp7_5_1_legend'): 31140, 
-   ('singleAchievements', 'BattlePassCommonPr_18'): 31141}
+   ('singleAchievements', 'BattlePassCommonPr_18'): 31141, 
+   ('singleAchievements', 'portal2025Medal_1'): 31142, 
+   ('singleAchievements', 'portal2025Medal_2'): 31143, 
+   ('singleAchievements', '15YearsOfService'): 31144}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 
@@ -5556,12 +5565,12 @@ PLATFORM_ACHIEVEMENTS = {'steamLittleSavingsMedal': (
    'steamGetTankLevel10Medal': (
                               (
                                'steamAchievements', 'steamGetTankLevel10Medal'), None), 
-   'steamDoPotapovQuestMedal': (
-                              (
-                               'steamAchievements', 'steamDoPotapovQuestMedal'), None), 
-   'steamDoAllBranchPotapovQuestMedal': (
-                                       (
-                                        'steamAchievements', 'steamDoAllBranchPotapovQuestMedal'), None), 
+   'steamDoPersonalMissionQuestMedal': (
+                                      (
+                                       'steamAchievements', 'steamDoPersonalMissionQuestMedal'), None), 
+   'steamDoAllBranchPersonalMissionQuestMedal': (
+                                               (
+                                                'steamAchievements', 'steamDoAllBranchPersonalMissionQuestMedal'), None), 
    'steamDoOperationMedal': (
                            (
                             'steamAchievements', 'steamDoOperationMedal'), None), 

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/normal/lod1/Lamp_01</nodelessVisual>
+	<parent>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/normal/lod2/Lamp_01</parent>
+	<extent>64.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.588841 0.864889 -2.183406</min>
+		<max>-0.233083 1.018353 -2.056874</max>
+	</visibilityBox>
+</root>

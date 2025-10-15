@@ -8,13 +8,13 @@ package net.wg.gui.lobby.techtree.controls
    public class BenefitsComponent extends UIComponentEx
    {
       
+      public static const MINIMAL_RENDERS_TO_COMPACT:uint = 4;
+      
       private static const BENEFITS_GAP:uint = 15;
       
-      private static const COLUMN:uint = 4;
+      private static const COLUMN:uint = 3;
       
       private static const COMPACT_COLUMN:uint = 2;
-      
-      private static const MINIMAL_RENDERS_TO_COMPACT:uint = 4;
       
       private static const BENEFIT_RENDERER:String = "BenefitRendererUI";
        
@@ -53,10 +53,20 @@ package net.wg.gui.lobby.techtree.controls
          super.onDispose();
       }
       
+      public function isDualRow() : Boolean
+      {
+         return this._rendersCount > this.getColumnCount();
+      }
+      
       public function setData(param1:IDataProvider) : void
       {
          this._premiumGroup.dataProvider = param1;
          this._rendersCount = param1.length;
+      }
+      
+      private function getColumnCount() : int
+      {
+         return !!this._isCompact ? int(COMPACT_COLUMN) : int(COLUMN);
       }
       
       override public function get height() : Number
@@ -78,8 +88,8 @@ package net.wg.gui.lobby.techtree.controls
       {
          if(this._isCompact != param1)
          {
-            this._isCompact = param1 && this._rendersCount >= MINIMAL_RENDERS_TO_COMPACT;
-            this._tiledLayout.columns = !!this._isCompact ? uint(COMPACT_COLUMN) : uint(COLUMN);
+            this._isCompact = param1 && this._rendersCount <= MINIMAL_RENDERS_TO_COMPACT;
+            this._tiledLayout.columns = this.getColumnCount();
          }
       }
    }

@@ -127,7 +127,7 @@ class MemberChangeView(BaseCrewView, BaseTankmanListView):
          (
           'tokens', self._onCrewChanged),
          (
-          'potapovQuests', self._onCrewChanged))
+          'personalMissionQuests', self._onCrewChanged))
 
     def _setWidgets(self, **kwargs):
         super(MemberChangeView, self)._setWidgets(**kwargs)

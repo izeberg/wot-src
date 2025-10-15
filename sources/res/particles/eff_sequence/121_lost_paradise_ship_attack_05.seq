@@ -400,30 +400,6 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound P-40B_01</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>43.066669</duration>
-				<value>P-40B_01|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>43.066669</duration>
-				<sequenceSound>amb_map_121_lost_paradise_plane_il2</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
 		<name>P-40B_02</name>
 		<type>model</type>
 		<resource>content/Outland/hd_out_AM_003_P-40B/normal/lod0/hd_out_AM_003_P-40B_01.model</resource>
@@ -873,30 +849,6 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound P-40B_02</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>43.700001</duration>
-				<value>P-40B_02|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>43.733337</duration>
-				<sequenceSound>amb_map_121_lost_paradise_plane_il2</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
 		<name>P-40B_03</name>
 		<type>model</type>
 		<resource>content/Outland/hd_out_AM_003_P-40B/normal/lod0/hd_out_AM_003_P-40B_01.model</resource>
@@ -1279,30 +1231,6 @@
 				<inTangent>-0.000000 -0.000000 -0.000000</inTangent>
 				<outTangent>-0.613636 -0.613636 -0.613636</outTangent>
 				<tangentMode>257</tangentMode>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
-		<name>Sound P-40B_03</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>32.266670</duration>
-				<value>P-40B_03|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>32.300003</duration>
-				<sequenceSound>amb_map_121_lost_paradise_plane_mustang</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
 			</frame>
 		</track>
 	</sequenceObject>

@@ -27,6 +27,8 @@ package
       
       public static const ENTRYPOINTTOOLTIP_TOKEN:String = "#battle_matters:entryPointTooltip/token";
       
+      public static const ENTRYPOINTTOOLTIP_MULTIPLETOKENS:String = "#battle_matters:entryPointTooltip/multipleTokens";
+      
       public static const REWARDS_TITLE:String = "#battle_matters:rewards/title";
       
       public static const REWARDS_SUBTITLE_REGULAR:String = "#battle_matters:rewards/subTitle/regular";

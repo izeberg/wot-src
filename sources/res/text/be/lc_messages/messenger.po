@@ -880,9 +880,7 @@ msgstr ""
 "толькі для тэхнікі %(level)s узроўню."
 
 msgid "dialogs/squadChannel/headerMsg/eventFormationRestriction"
-msgstr ""
-"+++ event +++\n"
-"+++ event +++"
+msgstr "?empty?"
 
 msgid "dialogs/squadChannel/headerMsg/squadFormation"
 msgstr ""
@@ -1257,6 +1255,9 @@ msgstr "Спісана асабістых ачкоў славы"
 msgid "platformCurrencyMsg/debited/freeXP"
 msgstr "Вольны досвед спісаны"
 
+msgid "platformCurrencyMsg/debited/razlom_coin"
+msgstr "Спісана манет «Разлом»"
+
 msgid "platformCurrencyMsg/debited/sacoin"
 msgstr "Спісана жэтонаў за выслугу гадоў"
 
@@ -1274,6 +1275,9 @@ msgstr "Налічана асабістых ачкоў славы"
 
 msgid "platformCurrencyMsg/received/freeXP"
 msgstr "Атрымана вольнага досведу"
+
+msgid "platformCurrencyMsg/received/razlom_coin"
+msgstr "Налічана манет «Разлом»"
 
 msgid "platformCurrencyMsg/received/sacoin"
 msgstr "Дададзена жэтонаў за выслугу гадоў"
@@ -1700,7 +1704,7 @@ msgid "serviceChannelMessages/battleMatters/awards/done/body"
 msgstr "Вы выканалі ўвесь ланцужок задач Танкавай акадэміі."
 
 msgid "serviceChannelMessages/battleMatters/awards/footer"
-msgstr "Жэтон можна абмяняць на любую даследаваную машыну VI узроўню."
+msgstr "Жэтон можна абмяняць на любую даследаваную машыну %(level)s узроўню."
 
 msgid "serviceChannelMessages/battleMatters/awards/footer/button"
 msgstr "Да выбару машыны"
@@ -1746,7 +1750,7 @@ msgid "serviceChannelMessages/battleMatters/taskReminder/title"
 msgstr "ТАНКАВАЯ АКАДЭМІЯ"
 
 msgid "serviceChannelMessages/battleMatters/token"
-msgstr "Жэтон акадэміі"
+msgstr "Жэтон акадэміі: %(level)s"
 
 msgid "serviceChannelMessages/battlePass/capReset/header"
 msgstr "Абноўлены штотыднёвы ліміт ачкоў Баявога пропуска"
@@ -2302,7 +2306,7 @@ msgid "serviceChannelMessages/currenciesReserves/smash/title"
 msgstr "Рэзервовае сховішча адчынена!"
 
 msgid "serviceChannelMessages/currencyUpdate/auction"
-msgstr "Аўкцыён"
+msgstr "Чорны аўкцыён"
 
 msgid "serviceChannelMessages/currencyUpdate/battlepass"
 msgstr "Баявы пропуск"
@@ -2335,7 +2339,7 @@ msgid "serviceChannelMessages/currencyUpdate/financial_transaction"
 msgstr "Фінансавая аперацыя"
 
 msgid "serviceChannelMessages/currencyUpdate/integratedAuction"
-msgstr "Аўкцыён"
+msgstr "Чорны аўкцыён"
 
 msgid "serviceChannelMessages/currencyUpdate/received/bpcoin"
 msgstr "Атрымана жэтонаў"
@@ -2433,12 +2437,6 @@ msgstr "• Эксперыментальнае абсталяванне на в�
 
 msgid "serviceChannelMessages/epicReward/recertificationForm_gift"
 msgstr "• Бланкі перападрыхтоўкі"
-
-msgid "serviceChannelMessages/event/lootboxes"
-msgstr "Атрымана стартараў:"
-
-msgid "serviceChannelMessages/event/tickets"
-msgstr "Атрымана ключоў:"
 
 msgid "serviceChannelMessages/eventCoinReceivedAsGift"
 msgstr "Ад адміністрацыі атрымана юбілейных манет: %(eventCoin)s."
@@ -2618,18 +2616,18 @@ msgid "serviceChannelMessages/goldReceivedAsGift"
 msgstr "Ад адміністрацыі атрымана золата: %(gold)s."
 
 msgid "serviceChannelMessages/integratedAuction/belowCompetitiveRate/header"
-msgstr "Аўкцыён: канкурэнтная стаўка перавышае вашу"
+msgstr "Канкурэнтная стаўка перавысіла вашу стаўку"
 
 msgid "serviceChannelMessages/integratedAuction/belowCompetitiveRate/text"
 msgstr ""
-"Шанцы выйграць у бягучых таргах зніжаныя: ваша стаўка цяпер ніжэйшая за "
-"канкурэнтную."
+"Вырасла імавернасць прайграць на аўкцыёне, бо сярэдняе значэнне ставак "
+"перавышае вашу прапанову."
 
 msgid "serviceChannelMessages/integratedAuction/button"
 msgstr "Да аўкцыёну"
 
 msgid "serviceChannelMessages/integratedAuction/lostRate/header"
-msgstr "Стаўка прайграла. Вернецца:"
+msgstr "Стаўка прайграла. На акаўнт будзе вернута"
 
 msgid "serviceChannelMessages/integratedAuction/lostRate/text"
 msgstr ""
@@ -2645,17 +2643,17 @@ msgstr "Памылка"
 
 msgid "serviceChannelMessages/integratedAuction/rateError/text"
 msgstr ""
-"Адбылася памылка пры здзяйсненні стаўкі. Сродкі не былі спісаныя. "
+"Адбылася памылка пры здзяйсненні стаўкі. Рэсурсы не будуць спісаныя. "
 "Паспрабуйце яшчэ раз."
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/text"
-msgstr "Таргі набліжаюцца да завяршэння."
+msgstr "Таргі набліжаюцца да завяршэння, не зацягвай."
 
 msgid "serviceChannelMessages/integratedAuction/stageFinish/title"
 msgstr "Паспейце зрабіць стаўку!"
 
 msgid "serviceChannelMessages/integratedAuction/stageStart/text"
-msgstr "Паспейце зрабіць стаўку! Колькасць тавару абмежаваная."
+msgstr "Паспей зрабіць стаўку, у нас тут на ўсіх не хопіць."
 
 msgid "serviceChannelMessages/integratedAuction/stageStart/title"
 msgstr "Таргі за новыя лоты ўжо пачаліся!"
@@ -2950,7 +2948,7 @@ msgid "serviceChannelMessages/lootBoxesAutoOpen/button"
 msgstr "Паглядзець"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/boxes"
-msgstr "Спісана: %(boxes)s"
+msgstr "Адчынена парталаў: %(boxes)s"
 
 msgid "serviceChannelMessages/lootBoxesAutoOpen/event/counter"
 msgstr "%(boxName)s (x%(count)d)"

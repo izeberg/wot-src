@@ -1478,6 +1478,11 @@ def _migrateTo140(core, data, initialized):
     AccountSettings.setSettings(NEW_SETTINGS_COUNTER, newSettingsCounter)
 
 
+def _migrateTo141(core, data, initialized):
+    from account_helpers.settings_core.ServerSettingsManager import GUI_START_BEHAVIOR
+    data[GUI_START_BEHAVIOR][GuiSettingsBehavior.RANKED_WELCOME_VIEW_SHOWED] = False
+
+
 _versions = (
  (
   1, _initializeDefaultSettings, True, False),
@@ -1756,7 +1761,9 @@ _versions = (
  (
   139, _migrateTo139, False, False),
  (
-  140, _migrateTo140, False, False))
+  140, _migrateTo140, False, False),
+ (
+  141, _migrateTo141, False, False))
 
 @adisp_async
 @adisp_process

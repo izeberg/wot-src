@@ -123,12 +123,6 @@ package
       
       public static const PLAYER_ERRORS_EQUIPMENT_POI_UNAVAILABLE:String = "#ingame_gui:player_errors/equipment/poi/unavailable";
       
-      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_HEALTHATFULLHP:String = "#ingame_gui:player_messages/equipment/wtEvent/healthAtFullHP";
-      
-      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_HUNTERABILITIESDISABLED:String = "#ingame_gui:player_messages/equipment/wtEvent/hunterAbilitiesDisabled";
-      
-      public static const PLAYER_MESSAGES_EQUIPMENT_WTEVENT_NOACTIVESHIELDONBOSS:String = "#ingame_gui:player_messages/equipment/wtEvent/noActiveShieldOnBoss";
-      
       public static const PLAYER_MESSAGES_DEVICE_CRITICAL_AT_SHOT:String = "#ingame_gui:player_messages/DEVICE_CRITICAL_AT_SHOT";
       
       public static const PLAYER_MESSAGES_DEVICE_DESTROYED_AT_SHOT:String = "#ingame_gui:player_messages/DEVICE_DESTROYED_AT_SHOT";
@@ -1299,10 +1293,6 @@ package
       
       public static const EFFICIENCYRIBBONS_ARTILLERYDMG:String = "#ingame_gui:efficiencyRibbons/ArtilleryDmg";
       
-      public static const EFFICIENCYRIBBONS_HEALTHADDED:String = "#ingame_gui:efficiencyRibbons/healthAdded";
-      
-      public static const EFFICIENCYRIBBONS_WTRECEIVEDCIRCUITOVERLOAD:String = "#ingame_gui:efficiencyRibbons/wtReceivedCircuitOverload";
-      
       public static const DAMAGELOG_SHELLTYPE_ARMOR_PIERCING:String = "#ingame_gui:damageLog/shellType/ARMOR_PIERCING";
       
       public static const DAMAGELOG_SHELLTYPE_HIGH_EXPLOSIVE:String = "#ingame_gui:damageLog/shellType/HIGH_EXPLOSIVE";
@@ -2041,6 +2031,12 @@ package
       
       public static const PREBATTLEMARKER_PREBATTLEMARKER_51:String = "#ingame_gui:prebattlemarker/prebattlemarker_51";
       
+      public static const PREBATTLEMARKER_PREBATTLEMARKER_52:String = "#ingame_gui:prebattlemarker/prebattlemarker_52";
+      
+      public static const PREBATTLEMARKER_PREBATTLEMARKER_53:String = "#ingame_gui:prebattlemarker/prebattlemarker_53";
+      
+      public static const PREBATTLEMARKER_PREBATTLEMARKER_54:String = "#ingame_gui:prebattlemarker/prebattlemarker_54";
+      
       public static const OPTDEVICERESURRECTION_ENGINE:String = "#ingame_gui:optDeviceResurrection/engine";
       
       public static const OPTDEVICERESURRECTION_FUELTANK:String = "#ingame_gui:optDeviceResurrection/fuelTank";
@@ -2094,14 +2090,6 @@ package
       public static const PLAYER_ERRORS_THERMALVISION_ALREADYACTIVATED:String = "#ingame_gui:player_errors/thermalVision/alreadyActivated";
       
       public static const PLAYER_ERRORS_THERMALVISION_OVERTURNED:String = "#ingame_gui:player_errors/thermalVision/overturned";
-      
-      public static const WT_VEHICLE_MESSAGES_INCREASE_PLASMA_COUNT:String = "#ingame_gui:wt_vehicle_messages/INCREASE_PLASMA_COUNT";
-      
-      public static const WT_VEHICLE_MESSAGES_DECREASE_PLASMA_COUNT:String = "#ingame_gui:wt_vehicle_messages/DECREASE_PLASMA_COUNT";
-      
-      public static const WT_VEHICLE_MESSAGES_STUN_AREA_APPLIED:String = "#ingame_gui:wt_vehicle_messages/STUN_AREA_APPLIED";
-      
-      public static const WT_VEHICLE_MESSAGES_STUN_AREA_STOPPED:String = "#ingame_gui:wt_vehicle_messages/STUN_AREA_STOPPED";
        
       
       public function INGAME_GUI()

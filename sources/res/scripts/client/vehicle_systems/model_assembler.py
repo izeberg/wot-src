@@ -1,6 +1,6 @@
 import logging, math
 from collections import namedtuple
-import BigWorld, CGF, DataLinks, GenericComponents, Math, Vehicular, WWISE, material_kinds, math_utils
+import BigWorld, CGF, DataLinks, GenericComponents, Math, Vehicular, WWISE, constants, material_kinds, math_utils
 from constants import IS_DEVELOPMENT, IS_EDITOR, IS_UE_EDITOR
 from helpers import DecalMap, dependency
 from items.components import shared_components, component_constants
@@ -664,7 +664,10 @@ def assembleWaterSensor(vehicleDesc, appearance, lodStateLink, spaceID):
     sensor = appearance.createComponent(Vehicular.WaterSensor, sensorConfig)
     sensor.sensorPlaneLink = appearance.compoundModel.root
     sensor.speedLink = DataLinks.createFloatLink(appearance.filter, 'averageSpeed')
-    sensor.onWaterSplash = appearance.onWaterSplash
+    player = getattr(BigWorld, 'player', None)
+    arena = player and getattr(player(), 'arena', None)
+    if not arena or arena.bonusType != getattr(constants.ARENA_BONUS_TYPE, 'PORTAL', -1):
+        sensor.onWaterSplash = appearance.onWaterSplash
     sensor.onUnderWaterSwitch = appearance.onUnderWaterSwitch
     sensor.setLodLink(lodStateLink)
     sensor.setLodSettings(shared_components.LodSettings(WATER_SENSOR_LOD_DIST, WATER_SENSOR_MAX_PRIORITY))

@@ -96,6 +96,8 @@ package net.wg.data.constants.generated
       public static const DAMAGELOG_ARTILLERY_EQ_16X16:String = "damageLog_artillery_eq_16x16";
       
       public static const DAMAGELOG_ARTILLERY_EQ_ENEMY_16X16:String = "damageLog_artillery_eq_enemy_16x16";
+      
+      public static const DAMAGE_LOG_SENTINEL_ENEMY_16X16:String = "damageLog_sentinel_enemy_16x16";
        
       
       public function BATTLEDAMAGELOG_IMAGES()

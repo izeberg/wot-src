@@ -1601,6 +1601,8 @@ package
       
       public static const SENIORITY_AWARDS_CLAIM_REWARD_FAILED:String = "#system_messages:seniority_awards/claim_reward_failed";
       
+      public static const SENIORITY_AWARDS_REWARDCHOICE_ERROR:String = "#system_messages:seniority_awards/rewardChoice/error";
+      
       public static const PERSONALMISSIONS_SELECT_SUCCESS:String = "#system_messages:personalMissions/select/success";
       
       public static const PERSONALMISSIONS_SELECT_SERVER_ERROR:String = "#system_messages:personalMissions/select/server_error";

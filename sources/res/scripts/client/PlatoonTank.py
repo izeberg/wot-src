@@ -15,14 +15,14 @@ from account_helpers.settings_core.settings_constants import GAME
 from vehicle_systems.tankStructure import ModelStates, ColliderTypes
 from vehicle_systems import camouflages
 from items import vehicles
-from items.components.c11n_constants import SeasonType
+from items.components.c11n_constants import SeasonType, STAT_TRACK_FRAGS_NOT_SUPPORTED
 if TYPE_CHECKING:
     from vehicle_outfit.outfit import Outfit as TOutfit
     from items.vehicles import VehicleDescrType
 _logger = logging.getLogger(__name__)
 PlatoonTankInfo = namedtuple('PlatoonTankInfo', ('canDisplayModel', 'vehCompDescr',
                                                  'vehOutfitCD', 'seasonType', 'marksOnGun',
-                                                 'clanDBID', 'playerName'))
+                                                 'clanDBID', 'playerName', 'statTrackFrags'))
 
 class _PlatoonTankAppearance(HangarVehicleAppearance):
     _c11nService = dependency.descriptor(ICustomizationService)
@@ -80,6 +80,12 @@ class _PlatoonTankAppearance(HangarVehicleAppearance):
     def _getColliderType(self):
         return ColliderTypes.PLATOON_VEHICLE_COLLIDER
 
+    def getThisVehicleDossierStatTrackFrags(self):
+        if self.__tankInfo is not None:
+            return self.__tankInfo.statTrackFrags
+        else:
+            return STAT_TRACK_FRAGS_NOT_SUPPORTED
+
 
 class PlatoonTank(ClientSelectableCameraVehicle):
     _platoonCtrl = dependency.descriptor(IPlatoonController)
@@ -134,9 +140,9 @@ class PlatoonTank(ClientSelectableCameraVehicle):
         def debugDisplayTankModel(self, tankTypeName):
             if tankTypeName:
                 vDescriptor = vehicles.VehicleDescr(typeName=tankTypeName)
-                tankInfo = PlatoonTankInfo(True, vDescriptor.makeCompactDescr(), '', SeasonType.SUMMER, 0, 0, vDescriptor.type.userString)
+                tankInfo = PlatoonTankInfo(True, vDescriptor.makeCompactDescr(), '', SeasonType.SUMMER, 0, 0, vDescriptor.type.userString, STAT_TRACK_FRAGS_NOT_SUPPORTED)
             else:
-                tankInfo = PlatoonTankInfo(True, '', '', SeasonType.SUMMER, 0, 0, '')
+                tankInfo = PlatoonTankInfo(True, '', '', SeasonType.SUMMER, 0, 0, '', STAT_TRACK_FRAGS_NOT_SUPPORTED)
             self._updatePlatoonTank({self.slotIndex: tankInfo})
 
     def _createAppearance(self):
@@ -148,7 +154,8 @@ class PlatoonTank(ClientSelectableCameraVehicle):
         if self.slotIndex not in updatedTankInfoDict:
             return
         tankInfo = updatedTankInfoDict[self.slotIndex]
-        _logger.debug('Updating platoon tank: slot: %s, tankInfo: %s', self.slotIndex, str(tankInfo))
+        if tankInfo and tankInfo.canDisplayModel:
+            _logger.info('Updating platoon tank: slot: %s', self.slotIndex)
         self.__tankInfo = tankInfo
         self._setVisible(True)
 

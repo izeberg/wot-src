@@ -147,7 +147,7 @@ class BaseCustomizationItem(object):
 class PaintItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.PAINT
-    __slots__ = ('color', 'usageCosts', 'gloss', 'metallic')
+    __slots__ = ('color', 'usageCosts', 'gloss', 'metallic', 'colorGroup')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
@@ -155,6 +155,7 @@ class PaintItem(BaseCustomizationItem):
         self.usageCosts = {area:1 for area in ApplyArea.RANGE}
         self.gloss = 0.0
         self.metallic = 0.0
+        self.colorGroup = 'color_group_05'
         super(PaintItem, self).__init__(parentGroup)
 
     def getAmount(self, parts):
@@ -171,19 +172,21 @@ class PaintItem(BaseCustomizationItem):
 class DecalItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.DECAL
-    __slots__ = ('type', 'canBeMirrored')
+    __slots__ = ('type', 'canBeMirrored', 'decalGroup')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
         self.type = 0
         self.canBeMirrored = False
+        self.decalGroup = 'special'
         super(DecalItem, self).__init__(parentGroup)
 
 
 class ProjectionDecalItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.PROJECTION_DECAL
-    __slots__ = ('canBeMirroredHorizontally', 'glossTexture', 'scaleFactorId', 'emissionSettings')
+    __slots__ = ('canBeMirroredHorizontally', 'glossTexture', 'scaleFactorId', 'emissionSettings',
+                 'projectionDecalGroup')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
@@ -193,6 +196,7 @@ class ProjectionDecalItem(BaseCustomizationItem):
         self.emissionSettings = {'emissionMap': '', 'emissionPatternMap': '', 'forwardEmissionBrightness': DEFAULT_FORWARD_EMISSION, 
            'deferredEmissionBrightness': DEFAULT_DEFERRED_EMISSION, 
            'emissionAnimationSpeed': DEFAULT_EMISSION_ANIMATION_SPEED}
+        self.projectionDecalGroup = 'special'
         super(ProjectionDecalItem, self).__init__(parentGroup)
 
     @property
@@ -344,7 +348,7 @@ class StyleItem(BaseCustomizationItem):
     itemType = CustomizationType.STYLE
     __slots__ = ('outfits', 'isRent', 'rentCount', 'modelsSet', 'isEditable', 'alternateItems',
                  'itemsFilters', '_changeableSlotTypes', 'styleProgressions', 'questsProgression',
-                 'dependencies', 'dependenciesAncestors', 'nonTankMaterials')
+                 'dependencies', 'dependenciesAncestors', 'nonTankMaterials', 'styleGroup')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
@@ -361,6 +365,7 @@ class StyleItem(BaseCustomizationItem):
         self.styleProgressions = {}
         self.questsProgression = None
         self.nonTankMaterials = ['PBS_ext.fx', 'PBS_ext_skinned.fx']
+        self.styleGroup = 'special_styles'
         super(StyleItem, self).__init__(parentGroup)
         return
 
@@ -439,6 +444,10 @@ class StyleItem(BaseCustomizationItem):
         return ItemTags.PROGRESSION_REWIND_ENABLED in self.tags
 
     @property
+    def isStatTrackStyle(self):
+        return ItemTags.STYLE_STAT_TRACK_FRAGS in self.tags
+
+    @property
     def hasDependent(self):
         return bool(self.dependencies)
 
@@ -492,7 +501,7 @@ class StyleItem(BaseCustomizationItem):
 class InsigniaItem(BaseCustomizationItem):
     __metaclass__ = ReflectionMetaclass
     itemType = CustomizationType.INSIGNIA
-    __slots__ = ('atlas', 'alphabet', 'canBeMirrored', 'emissionSettings')
+    __slots__ = ('atlas', 'alphabet', 'canBeMirrored', 'emissionSettings', 'insigniaGroup')
     allSlots = BaseCustomizationItem.__slots__ + __slots__
 
     def __init__(self, parentGroup=None):
@@ -502,6 +511,7 @@ class InsigniaItem(BaseCustomizationItem):
         self.emissionSettings = {'emissionMap': '', 'emissionPatternMap': '', 'forwardEmissionBrightness': DEFAULT_FORWARD_EMISSION, 
            'deferredEmissionBrightness': DEFAULT_DEFERRED_EMISSION, 
            'emissionAnimationSpeed': DEFAULT_EMISSION_ANIMATION_SPEED}
+        self.insigniaGroup = 'special'
         super(InsigniaItem, self).__init__(parentGroup)
 
 

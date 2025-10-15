@@ -1,0 +1,248 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "battle_hints/allCampsCaptured"
+msgstr ""
+"Усе Вежы захоплены. Шлях да Партала адкрыты. \n"
+"Паспяшайцеся."
+
+msgid "battle_hints/almostBase"
+msgstr ""
+"Ворагі амаль дабраліся да Базы. \n"
+" Абараняйце"
+
+msgid "battle_hints/almostBase/1"
+msgstr "верхні рубеж!"
+
+msgid "battle_hints/almostBase/2"
+msgstr "сярэдні рубеж!"
+
+msgid "battle_hints/almostBase/3"
+msgstr "ніжні рубеж!"
+
+msgid "battle_hints/almostTimeout"
+msgstr ""
+"Час знаходжання ў Разломе амаль выйшаў \n"
+"Паспяшайцеся!"
+
+msgid "battle_hints/battleStarted"
+msgstr ""
+"Цемра згушчаецца... \n"
+"Адпраўляйцеся да Вежаў. Захапіце іх — і Брама аслабне."
+
+msgid "battle_hints/campBecameCapturable"
+msgstr "Вежу можна захопліваць."
+
+msgid "battle_hints/campCaptured"
+msgstr ""
+"Вежа захоплена. \n"
+" Можна тэлепартавацца на Базу."
+
+msgid "battle_hints/subwaveStarted"
+msgstr "Ворагі на"
+
+msgid "battle_hints/subwaveStarted/1"
+msgstr "верхнім рубяжы!"
+
+msgid "battle_hints/subwaveStarted/2"
+msgstr "сярэднім рубяжы!"
+
+msgid "battle_hints/subwaveStarted/3"
+msgstr "ніжнім рубяжы!"
+
+msgid "battle_hints/subwaveStarted/description"
+msgstr "Час кінуць сілы на абарону Базы."
+
+msgid "battle_hints/superBossFightStarted"
+msgstr ""
+"Партал разбураны. \n"
+"Але ёсць яшчэ штосьці... Штосьці."
+
+msgid "battle_hints/waveStarted"
+msgstr "Ідзе хваля №"
+
+msgid "battle_hints/waveStarted/1"
+msgstr "верхнім рубяжы."
+
+msgid "battle_hints/waveStarted/2"
+msgstr "сярэднім рубяжы."
+
+msgid "battle_hints/waveStarted/3"
+msgstr "ніжнім рубяжы."
+
+msgid "battle_hints/waveStarted/description/1"
+msgstr "Ворагі на"
+
+msgid "battle_hints/waveStarted/description/2"
+msgstr "Не падпускайце іх да Базы!"
+
+msgid "battle_hints/wavesBuffed"
+msgstr ""
+"Ворагі сталі мацнейшымі! \n"
+" Знішчайце іх, каб аслабіць агульную сілу."
+
+msgid "battle_hints/wavesBuffed/description"
+msgstr "Чым больш ворагаў, тым складаней іх адолець."
+
+msgid "camp/capturing"
+msgstr "Захоп Вежы (%(percent)s%%)"
+
+msgid "efficiencyRibbons/guidedMissile"
+msgstr "Вы прычынілі пашкоджанні Шаравой маланкай"
+
+msgid "efficiencyRibbons/portalDeathZone"
+msgstr "Пашкоджанні ад Зоны-забойцы"
+
+msgid "efficiencyRibbons/sentinelAttack"
+msgstr "Пашкоджанні ад Брамы"
+
+msgid "efficiencyRibbons/superBossAura"
+msgstr "Пашкоджанні ад Аўры Ратэ"
+
+msgid "finalStatistics/commonStats/resultlabel/lose"
+msgstr "ПАРАЖЭННЕ!"
+
+msgid "finalStatistics/commonStats/resultlabel/lose/timeout"
+msgstr "ПАРАЖЭННЕ"
+
+msgid "finalStatistics/commonStats/resultlabel/win"
+msgstr "ПЕРАМОГА!"
+
+msgid "finish/lose/reason/base"
+msgstr "Слугі Катрыны захапілі Базу."
+
+msgid "finish/lose/reason/super_boss"
+msgstr "Вы не паспелі. Магчыма, наступным разам вам гэта ўдасца."
+
+msgid "finish/lose/reason/timeout"
+msgstr "Вы не паспел разбурыць Партал."
+
+msgid "finish/win/reason/boss"
+msgstr "Партал знішчаны... Катрына пераможана."
+
+msgid "finish/win/reason/super_boss"
+msgstr "Вам удалося знішчыць Ратэ!"
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_BERSERK_PORTAL"
+msgstr "Адрэналін актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_CURSE_SHOT_PORTAL"
+msgstr "Замыканне актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_FIRE_SHOT_PORTAL"
+msgstr "Піракінез актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_FROZEN_SHOT_PORTAL"
+msgstr "Замарозка актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_GUIDED_MISSILE_PORTAL"
+msgstr "Шаравая маланка актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_LAUGH_SHOT_PORTAL"
+msgstr "Памылка коду актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_MINEFIELD_PORTAL"
+msgstr "Міннае поле актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_RELOAD_AURA_PORTAL"
+msgstr "Агнявы рубеж актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_SENTRY_GUN_PORTAL"
+msgstr "Турэль актывавана."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_SHIELD_PORTAL"
+msgstr "Ахоўны бар'ер актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_TRAP_PORTAL"
+msgstr "Магніт актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_ACTIVATED_VEHICLE_CHANGE_SHOT_PORTAL"
+msgstr "Перахоп актываваны."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_BERSERK_PORTAL"
+msgstr "Адрэналін гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_CURSE_SHOT_PORTAL"
+msgstr "Замыканне гатовае да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_FIRE_SHOT_PORTAL"
+msgstr "Піракінез гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_FROZEN_SHOT_PORTAL"
+msgstr "Замарозка гатовая да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_GUIDED_MISSILE_PORTAL"
+msgstr "Шаравая маланка гатовая да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_LAUGH_SHOT_PORTAL"
+msgstr "Памылка коду гатовая да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_MINEFIELD_PORTAL"
+msgstr "Міннае поле гатовае да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_RELOAD_AURA_PORTAL"
+msgstr "Агнявы рубеж гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SENTRY_GUN_PORTAL"
+msgstr "Турэль гатовая да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_SHIELD_PORTAL"
+msgstr "Ахоўны бар'ер гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_TRAP_PORTAL"
+msgstr "Магніт гатовы да выкарыстання."
+
+msgid "player_messages/COMBAT_EQUIPMENT_READY_VEHICLE_CHANGE_SHOT_PORTAL"
+msgstr "Перахоп гатовы да выкарыстання."
+
+msgid "player_messages/DEATH_FROM_DEATH_ZONE_ENEMY_SELF"
+msgstr "%(target)s знішчаны Зонай-забойцай."
+
+msgid "player_messages/DEATH_FROM_SENTINEL_ATTACK_SELF_SUICIDE"
+msgstr "%(target)s знішчаны Брамай."
+
+msgid "player_messages/DEATH_FROM_SUPER_BOSS_AURA_SELF_SUICIDE"
+msgstr "%(target)s знішчаны Аўрай Ратэ."
+
+msgid "player_messages/DEATH_ZONE_ENEMY_ALLY"
+msgstr "%(target)s знішчаны Зонай-забойцай."
+
+msgid "player_messages/GUIDED_MISSILE_ALLY_ENEMY"
+msgstr "Шаравая маланка %(attacker)s знішчыла %(target)s."
+
+msgid "player_messages/MINEFIELD_EQ_ALLY_ENEMY"
+msgstr "Міннае поле %(attacker)s знішчыла %(target)s."
+
+msgid "player_messages/SENTINEL_ATTACK_ALLY_SUICIDE"
+msgstr "%(target)s знішчаны Брамай."
+
+msgid "player_messages/SUPER_BOSS_AURA_ALLY_SUICIDE"
+msgstr "%(target)s знішчаны Аўрай Ратэ."
+
+msgid "postmortem/deadMsg"
+msgstr "Ваша машына знішчана"
+
+msgid "postmortem/respawnMsg"
+msgstr "Чым часцей гэта будзе адбывацца, тым даўжэй яна будзе адраджацца."
+
+msgid "postmortem/waitMsg"
+msgstr "Не церпіцца вярнуцца?.."
+
+msgid "timers_panel/anomaly"
+msgstr "?empty?"
+
+msgid "timers_panel/death_zone"
+msgstr "Зона-забойца"
+
+msgid "timers_panel/ratte_aura"
+msgstr "Аўра-Ратэ"
+
+msgid "timers_panel/teleport"
+msgstr "Тэлепартацыя"

@@ -1965,6 +1965,34 @@
 			<keyBindToVehicle>KEY_B</keyBindToVehicle>
 		</camera>
 	</videoMode>
+	<atgmMode>
+		<defaultOffset>
+			0.0 0.0
+			<!--BW_String-->
+		</defaultOffset>
+		<camera>
+			<sensitivity>
+				0.15
+				<!--BW_String-->
+			</sensitivity>
+			<angularVelocity>
+				1.0
+				<!--BW_String-->
+			</angularVelocity>
+			<angularVelocityAcceleration>
+				0.8
+				<!--BW_String-->
+			</angularVelocityAcceleration>
+			<linearFriction>
+				2.0
+				<!--BW_String-->
+			</linearFriction>
+			<rotationFriction>
+				1.0
+				<!--BW_String-->
+			</rotationFriction>
+		</camera>
+	</atgmMode>
 	<epicVideoMode>
 		<defaultOffset>
 			0.0 0.0

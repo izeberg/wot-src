@@ -176,10 +176,6 @@
 			<Type>AVATAR_AMMO_VIEWS</Type>
 			<Flags>ALL_CLIENTS</Flags>
 		</ammoViews>
-		<ammoAdvanced>
-			<Type>AVATAR_AMMO_FOR_CELL</Type>
-			<Flags>CELL_PRIVATE</Flags>
-		</ammoAdvanced>
 		<cp>
 			<Type>PYTHON</Type>
 			<Flags>CELL_PRIVATE</Flags>
@@ -309,7 +305,6 @@
 			<Arg>UINT8</Arg>
 			<Arg>INT16</Arg>
 			<Arg>INT16</Arg>
-			<Arg>INT16</Arg>
 		</updateVehicleAmmo>
 		<onSwitchViewpoint>
 			<Arg>OBJECT_ID</Arg>
@@ -399,7 +394,7 @@
 			<Arg>UINT8</Arg>
 			<Arg>VECTOR3</Arg>
 			<Arg>VECTOR3</Arg>
-			<Arg>FLOAT32</Arg>
+			<Arg>VECTOR3</Arg>
 			<Arg>FLOAT32</Arg>
 			<Arg>UINT8</Arg>
 		</showTracer>
@@ -628,11 +623,6 @@
 			<Exposed>OWN_CLIENT</Exposed>
 			<Arg>UINT16</Arg>
 		</activateEquipment>
-		<activateVehicleEquipment>
-			<Exposed>OWN_CLIENT</Exposed>
-			<Arg>UINT16</Arg>
-			<Arg>STRING</Arg>
-		</activateVehicleEquipment>
 		<setEquipmentApplicationPoint>
 			<Exposed>OWN_CLIENT</Exposed>
 			<Arg>UINT16</Arg>

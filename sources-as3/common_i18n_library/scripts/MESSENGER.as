@@ -983,10 +983,6 @@ package
       
       public static const SERVICECHANNELMESSAGES_INVOICERECEIVED_LBKEYSACCRUED:String = "#messenger:serviceChannelMessages/invoiceReceived/lbKeysAccrued";
       
-      public static const SERVICECHANNELMESSAGES_EVENT_LOOTBOXES:String = "#messenger:serviceChannelMessages/event/lootboxes";
-      
-      public static const SERVICECHANNELMESSAGES_EVENT_TICKETS:String = "#messenger:serviceChannelMessages/event/tickets";
-      
       public static const SERVICECHANNELMESSAGES_DURATIONOFPREMIUMACCOUNTEXPIRES:String = "#messenger:serviceChannelMessages/durationOfPremiumAccountExpires";
       
       public static const SERVICECHANNELMESSAGES_PREMIUMBOUGHT:String = "#messenger:serviceChannelMessages/premiumBought";
@@ -2474,6 +2470,10 @@ package
       public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESINPROGRESS_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesInProgress/body";
       
       public static const SERVICECHANNELMESSAGES_PLAYSTREAKFREEZESEND_BODY:String = "#messenger:serviceChannelMessages/playStreakFreezesEnd/body";
+      
+      public static const PLATFORMCURRENCYMSG_RECEIVED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/received/razlom_coin";
+      
+      public static const PLATFORMCURRENCYMSG_DEBITED_RAZLOM_COIN:String = "#messenger:platformCurrencyMsg/debited/razlom_coin";
       
       public static const DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_ENUM:Array = [DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_OFFLINE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_NOTREADY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_READY,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_INBATTLE,DIALOGS_SQUADCHANNEL_TOOLTIPS_STATUS_AFK];
        

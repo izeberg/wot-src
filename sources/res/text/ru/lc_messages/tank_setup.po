@@ -1993,6 +1993,18 @@ msgstr "Автопополнение отключено"
 msgid "shells/autofillOn"
 msgstr "Автопополнение включено"
 
+msgid "shells/counter"
+msgstr "%(value)s/%(maximum)s"
+
+msgid "shells/limitTooltip/body"
+msgstr "Загруженные снаряды / Максимально возможное количество"
+
+msgid "shells/limitTooltip/header"
+msgstr "Лимит боекомплекта"
+
+msgid "shells/limitValue/counterDash"
+msgstr "/"
+
 msgid "shells/shortSpecification/inStorage"
 msgstr "На Складе:"
 

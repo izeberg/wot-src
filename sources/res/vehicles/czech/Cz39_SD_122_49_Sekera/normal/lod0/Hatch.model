@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.100438 -0.113509 -0.146015</min>
+		<max>0.127106 0.166334 0.102473</max>
+	</visibilityBox>
+	<parent>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod1/Hatch</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/czech/Cz39_SD_122_49_Sekera/normal/lod0/Hatch</nodefullVisual>
+	<tank>true</tank>
+</root>

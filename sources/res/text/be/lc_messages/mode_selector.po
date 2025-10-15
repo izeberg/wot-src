@@ -32,13 +32,6 @@ msgstr "Рангавыя баі пачнуцца %(date)s"
 msgid "event/paused"
 msgstr "Рангавыя баі часова недаступныя"
 
-msgid "event/wt/collection"
-msgstr ""
-"Прагрэсія: %(whiteSpanish_Open)s%(current)d%(whiteSpanish_Close)s/%(total)d"
-
-msgid "event/wt/tickets"
-msgstr "Ключы:"
-
 msgid "hint/showProgression"
 msgstr "ПРАГЛЯД У РЭЖЫМЕ ПРАГРЭСІІ"
 
@@ -265,7 +258,7 @@ msgid "mode/versusAI/battlePassTooltip/header"
 msgstr "Ачкі Баявога пропуска"
 
 msgid "mode/versusAI/condition"
-msgstr "12x12 %(parSecondary_open)sI%(parSecondary_close)s I-X&nbsp;узроўні"
+msgstr "12x12 %(parSecondary_open)sI%(parSecondary_close)s I-XІ&nbsp;узроўні"
 
 msgid "mode/versusAI/description"
 msgstr "Баі супраць ШІ."

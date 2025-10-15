@@ -1,0 +1,368 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>hd_h13_P25_0002_01_Portal</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>lod0</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 0.000000 0.000000</row3>
+				</transform>
+				<node>
+					<identifier>s0</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s1</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s2</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s3</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+				<node>
+					<identifier>s4</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 1.000000</row2>
+						<row3>0.000000 0.000000 0.000000</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s0</node>
+		<geometry>
+			<vertices>s0Shape.vertices</vertices>
+			<primitive>s0Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd0</identifier>
+					<fx>shaders/custom/emissive.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						emissiveTexture
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_alfa_AM.dds</Texture>
+					</property>
+					<property>
+						g_coldColor
+						<Vector4>0.780392 0.301961 0.168627 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissiveParams
+						<Vector4>0.480000 1.880000 0.020000 91.580002</Vector4>
+					</property>
+					<property>
+						g_envDependentLumMultiplier
+						<Float>6.680000</Float>
+					</property>
+					<property>
+						g_hotColor
+						<Vector4>0.913725 0.372549 0.090196 1.000000</Vector4>
+					</property>
+					<property>
+						g_maskFromTex
+						<Bool>true</Bool>
+					</property>
+					<property>
+						phaseTexture
+						<Texture>content/Hangars/h13_mt_portal_2025/Environment/noise.dds</Texture>
+					</property>
+					<property>
+						g_usePulse
+						<Bool>false</Bool>
+					</property>
+					<sortOrder>5</sortOrder>
+				</material>
+				<groupOrigin>-0.300601 0.559951 -0.205769</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s1</node>
+		<geometry>
+			<vertices>s1Shape.vertices</vertices>
+			<stream>s1Shape.colour</stream>
+			<primitive>s1Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd1</identifier>
+					<fx>shaders/custom/vector_animation.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						alphaFadeAmountFresnel
+						<Vector4>1.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						destBlend
+						<Int>2</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_alfa3_AM.dds</Texture>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.010000 0.050000 0.010000 0.010000</Vector4>
+					</property>
+					<property>
+						distortionFrames
+						<Vector4>0.100000 0.100000 0.500000 0.500000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Distortion.dds</Texture>
+					</property>
+					<property>
+						FreshnelColor
+						<Vector4>0.478431 0.478431 0.478431 1.000000</Vector4>
+					</property>
+					<property>
+						gradientMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Distortion.dds</Texture>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>4.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Displace.dds</Texture>
+					</property>
+					<property>
+						phase_UV_Speed_Scale
+						<Vector4>0.010000 0.100000 4.000000 4.000000</Vector4>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Distortion.dds</Texture>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.996078 0.662745 0.407843 1.000000</Vector4>
+					</property>
+					<property>
+						srcBlend
+						<Int>3</Int>
+					</property>
+					<sortOrder>4</sortOrder>
+				</material>
+				<groupOrigin>-0.300581 0.559969 -0.353929</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s2</node>
+		<geometry>
+			<vertices>s2Shape.vertices</vertices>
+			<stream>s2Shape.colour</stream>
+			<primitive>s2Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd2</identifier>
+					<fx>shaders/custom/vector_animation.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_AM.dds</Texture>
+					</property>
+					<property>
+						distortion_UV_Speed_Amount
+						<Vector4>0.020000 0.040000 0.010000 0.100000</Vector4>
+					</property>
+					<property>
+						distortionMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Distortion.dds</Texture>
+					</property>
+					<property>
+						gradientMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Distortion.dds</Texture>
+					</property>
+					<property>
+						opacity_UV_Distortion_Amount
+						<Vector4>0.020000 0.020000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						opacity_UV_Speed_Scale
+						<Vector4>0.000000 0.050000 2.000000 2.000000</Vector4>
+					</property>
+					<property>
+						opacityMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Noise.dds</Texture>
+					</property>
+					<property>
+						phase_UV_Speed_Scale
+						<Vector4>0.000000 0.100000 8.000000 4.000000</Vector4>
+					</property>
+					<property>
+						phaseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_Displace.dds</Texture>
+					</property>
+					<property>
+						destBlend
+						<Int>7</Int>
+					</property>
+					<property>
+						TintlColor
+						<Vector4>0.498039 0.498039 0.498039 0.800000</Vector4>
+					</property>
+					<property>
+						lightMultipliers
+						<Vector4>10.000000 0.000000 0.000000 0.000000</Vector4>
+					</property>
+					<sortOrder>12</sortOrder>
+				</material>
+				<groupOrigin>-0.305041 0.540093 1.121246</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s3</node>
+		<geometry>
+			<vertices>s3Shape.vertices</vertices>
+			<primitive>s3Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd3</identifier>
+					<fx>shaders/custom/emissive.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						emissiveTexture
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_alfa_AM.dds</Texture>
+					</property>
+					<property>
+						g_coldColor
+						<Vector4>0.756863 0.466667 0.262745 1.000000</Vector4>
+					</property>
+					<property>
+						g_emissiveParams
+						<Vector4>2.000000 1.880000 0.370000 74.040001</Vector4>
+					</property>
+					<property>
+						g_envDependentLumMultiplier
+						<Float>0.000000</Float>
+					</property>
+					<property>
+						g_hotColor
+						<Vector4>0.513726 0.313726 0.141176 1.000000</Vector4>
+					</property>
+					<property>
+						phaseTexture
+						<Texture>content/Hangars/h13_mt_portal_2025/Environment/noise.dds</Texture>
+					</property>
+					<property>
+						g_maskFromTex
+						<Bool>true</Bool>
+					</property>
+					<property>
+						srcBlend
+						<Int>2</Int>
+					</property>
+					<sortOrder>2</sortOrder>
+				</material>
+				<groupOrigin>-0.300601 0.559951 -0.220330</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>s4</node>
+		<geometry>
+			<vertices>s4Shape.vertices</vertices>
+			<stream>s4Shape.colour</stream>
+			<primitive>s4Shape.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>s_nd4</identifier>
+					<fx>shaders/std_effects/glow.fx</fx>
+					<materialKind>108</materialKind>
+					<collisionFlags>255</collisionFlags>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						depthAccess
+						<Int>3</Int>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>content/Hangars/h08_mt_hangar/enviroment/hd_h13_P25_0002_Portal_AM.dds</Texture>
+					</property>
+					<property>
+						g_tintColor
+						<Vector4>0.164706 0.145098 0.137255 1.000000</Vector4>
+					</property>
+					<property>
+						selfIllumination
+						<Float>56.200001</Float>
+					</property>
+					<sortOrder>1</sortOrder>
+				</material>
+				<groupOrigin>-0.303945 0.538190 1.139880</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-11.601215 -10.740664 -1.628075</min>
+		<max>11.000014 11.860566 1.218296</max>
+	</boundingBox>
+	<geometrySize>22436</geometrySize>
+	<minUVDensity>0.000723</minUVDensity>
+</root>

@@ -178,6 +178,16 @@ package net.wg.gui.components.crosshairPanel
       
       private var _fadeTween:Tween = null;
       
+      private var _shotDamageIndVisible:Boolean = true;
+      
+      private var _shotDamageIndValue:int = 0;
+      
+      private var _shotDamageIndState:int = 0;
+      
+      private var _shotFlyTimeIndVisible:Boolean = true;
+      
+      private var _shotFlyTimeIndValue:Number = 0;
+      
       public function CrosshairPanelContainer()
       {
          this._indicatorsData = new Vector.<GunMarkerIndicatorVO>();
@@ -407,15 +417,6 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      public function as_setDistanceVisibility(param1:Boolean, param2:String) : void
-      {
-         var _loc3_:ICrosshair = null;
-         for each(_loc3_ in this._crosshairs)
-         {
-            _loc3_.setFlameDistanceVisibility(param1,param2);
-         }
-      }
-      
       public function as_removeSpeedometer() : void
       {
          if(this._speedometer)
@@ -530,6 +531,15 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setDistanceVisibility(param1:Boolean, param2:String) : void
+      {
+         var _loc3_:ICrosshair = null;
+         for each(_loc3_ in this._crosshairs)
+         {
+            _loc3_.setFlameDistanceVisibility(param1,param2);
+         }
+      }
+      
       public function as_setDualAccActive(param1:Boolean) : void
       {
          this._gunMarkersContainer.setDualAccActive(param1);
@@ -605,16 +615,16 @@ package net.wg.gui.components.crosshairPanel
          this._currentCrosshair.setOverheatProgress(param1,param2,false,param3);
       }
       
-      public function as_setOverheatStatus(param1:Boolean) : void
-      {
-         this._overheatStatus = param1;
-         this._currentCrosshair.setOverheatStatus(param1);
-      }
-      
       public function as_setOverheatState(param1:Number) : void
       {
          this._overheatState = param1;
          this._currentCrosshair.setOverheatState(param1);
+      }
+      
+      public function as_setOverheatStatus(param1:Boolean) : void
+      {
+         this._overheatStatus = param1;
+         this._currentCrosshair.setOverheatStatus(param1);
       }
       
       public function as_setReloading(param1:Number, param2:Number, param3:Number, param4:Boolean) : void
@@ -747,6 +757,43 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
+      public function as_setShotDamageIndValue(param1:int, param2:int) : void
+      {
+         this._shotDamageIndValue = param1;
+         this._shotDamageIndState = param2;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setShotDamageIndValue(param1,param2);
+         }
+      }
+      
+      public function as_setShotDamageIndVisibility(param1:Boolean) : void
+      {
+         this._shotDamageIndVisible = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setShotDamageIndVisibility(this._shotDamageIndVisible);
+         }
+      }
+      
+      public function as_setShotFlyTimeIndValue(param1:Number) : void
+      {
+         this._shotFlyTimeIndValue = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setShotFlyTimeIndValue(param1);
+         }
+      }
+      
+      public function as_setShotFlyTimeIndVisibility(param1:Boolean) : void
+      {
+         this._shotFlyTimeIndVisible = param1;
+         if(this._currentCrosshair)
+         {
+            this._currentCrosshair.setShotFlyTimeIndVisibility(param1);
+         }
+      }
+      
       public function as_setSpeedMode(param1:Boolean) : void
       {
          this._speedMode = param1;
@@ -787,6 +834,10 @@ package net.wg.gui.components.crosshairPanel
             {
                this._currentCrosshair.autoloaderBoostUpdate(_loc3_,0,true);
             }
+            this._currentCrosshair.setShotDamageIndVisibility(this._shotDamageIndVisible);
+            this._currentCrosshair.setShotDamageIndValue(this._shotDamageIndValue,this._shotDamageIndState);
+            this._currentCrosshair.setShotFlyTimeIndValue(this._shotFlyTimeIndValue);
+            this._currentCrosshair.setShotFlyTimeIndVisibility(this._shotFlyTimeIndVisible);
          }
          this._sniperCameraTransitionFx.setView(param1,this._currentCrosshair);
          this.applySettings();
@@ -833,26 +884,6 @@ package net.wg.gui.components.crosshairPanel
          {
             this.clearAutoloaderReloadTimer();
             this._currentCrosshair.autoloaderShowShot();
-         }
-      }
-      
-      public function as_showPlasmaIndicator(param1:Number, param2:Number, param3:String) : void
-      {
-         if(this._currentCrosshair is WTCrosshairBase)
-         {
-            (this._currentCrosshair as WTCrosshairBase).showPlasmaIndicator(param1,param2,param3);
-         }
-      }
-      
-      public function as_showExplosiveShotIndicator(param1:Boolean) : void
-      {
-         if(this._gunMarkersContainer != null)
-         {
-            this._gunMarkersContainer.setExplosiveShotMarker(param1);
-         }
-         if(this._currentCrosshair is WTCrosshairBase)
-         {
-            (this._currentCrosshair as WTCrosshairBase).setExplosiveShotVisible(param1);
          }
       }
       
@@ -1162,14 +1193,14 @@ package net.wg.gui.components.crosshairPanel
          }
       }
       
-      private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void
-      {
-         as_playSound(param1.key);
-      }
-      
       private function get isAutoloader() : Boolean
       {
          return this._clipType == CROSSHAIR_CASSETTE_TYPES.AUTOLOADER || this._clipType == CROSSHAIR_CASSETTE_TYPES.MULTIPLE_BARREL_AUTOLOADER;
+      }
+      
+      private function onCrosshairPanelSoundHandler(param1:CrosshairPanelEvent) : void
+      {
+         as_playSound(param1.key);
       }
    }
 }

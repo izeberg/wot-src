@@ -120,8 +120,12 @@ package net.wg.infrastructure.base.meta
       
       function as_setOverheatState(param1:Number) : void;
       
-      function as_showPlasmaIndicator(param1:Number, param2:Number, param3:String) : void;
+      function as_setShotFlyTimeIndVisibility(param1:Boolean) : void;
       
-      function as_showExplosiveShotIndicator(param1:Boolean) : void;
+      function as_setShotFlyTimeIndValue(param1:Number) : void;
+      
+      function as_setShotDamageIndVisibility(param1:Boolean) : void;
+      
+      function as_setShotDamageIndValue(param1:int, param2:int) : void;
    }
 }

@@ -2,7 +2,7 @@ import weakref
 from collections import namedtuple
 from account_helpers.settings_core import settings_constants, longToInt32
 from account_helpers.settings_core.migrations import migrateToVersion
-from account_helpers.settings_core.settings_constants import VERSION, GuiSettingsBehavior, OnceOnlyHints, SPGAim, CONTOUR, NewYearStorageKeys, WTLootBoxesViewedKeys
+from account_helpers.settings_core.settings_constants import VERSION, GuiSettingsBehavior, OnceOnlyHints, SPGAim, CONTOUR, NewYearStorageKeys
 from adisp import adisp_process, adisp_async
 from debug_utils import LOG_ERROR, LOG_DEBUG
 from gui.battle_pass.battle_pass_helpers import updateBattlePassSettings
@@ -74,7 +74,6 @@ class SETTINGS_SECTIONS(CONST_CONTAINER):
     ARMORY_YARD = 'ARMORY_YARD'
     NEW_YEAR = 'NEW_YEAR'
     ONCE_ONLY_HINTS_GROUP = (ONCE_ONLY_HINTS, ONCE_ONLY_HINTS_2, ONCE_ONLY_HINTS_3)
-    LOOT_BOX_VIEWED = 'LOOT_BOX_VIEWED'
 
 
 class UI_STORAGE_KEYS(CONST_CONTAINER):
@@ -610,8 +609,7 @@ class ServerSettingsManager(object):
                                          BATTLE_EVENTS.RECEIVED_DAMAGE: 15, 
                                          BATTLE_EVENTS.RECEIVED_CRITS: 16, 
                                          BATTLE_EVENTS.ENEMY_ASSIST_STUN: 17, 
-                                         BATTLE_EVENTS.ENEMIES_STUN: 18, 
-                                         BATTLE_EVENTS.HEALTH_ADDED: 20}, offsets={}), 
+                                         BATTLE_EVENTS.ENEMIES_STUN: 18}, offsets={}), 
        SETTINGS_SECTIONS.BATTLE_BORDER_MAP: Section(masks={}, offsets={BATTLE_BORDER_MAP.MODE_SHOW_BORDER: Offset(0, 3), 
                                              BATTLE_BORDER_MAP.TYPE_BORDER: Offset(2, 3 << 2)}), 
        SETTINGS_SECTIONS.SIXTH_SENSE: Section(masks={}, offsets={SIXTH_SENSE.INDICATOR_SIZE: Offset(0, 3), 
@@ -904,9 +902,7 @@ class ServerSettingsManager(object):
                                                        'role_SPG': 25, 
                                                        'role_SPG_flame': 26, 
                                                        'role_SPG_assault': 27, 
-                                                       'paragons': 29}, offsets={}), 
-       SETTINGS_SECTIONS.LOOT_BOX_VIEWED: Section(masks={}, offsets={WTLootBoxesViewedKeys.HUNTER_LAST_VIEWED: Offset(0, 65535), 
-                                           WTLootBoxesViewedKeys.BOSS_LAST_VIEWED: Offset(16, 4294901760)})}
+                                                       'paragons': 29}, offsets={})}
     AIM_MAPPING = {'net': 1, 
        'netType': 1, 
        'centralTag': 1, 
@@ -1355,7 +1351,7 @@ class ServerSettingsManager(object):
     @adisp_process
     def _updateToVersion(self, callback=None):
         currentVersion = self.settingsCache.getVersion()
-        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'feedbackSixthSense': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'onceOnlyHints3': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, 'eventStorage': {}, 'lootboxViewed': {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, 'nyStorage': {}, SETTINGS_SECTIONS.ARMORY_YARD: {}}
+        data = {'gameData': {}, 'gameExtData': {}, 'gameExtData2': {}, 'gameplayData': {}, 'controlsData': {}, 'aimData': {}, 'markersData': {}, 'graphicsData': {}, 'marksOnGun': {}, 'fallout': {}, 'carousel_filter': {}, 'feedbackDamageIndicator': {}, 'feedbackDamageLog': {}, 'feedbackBattleEvents': {}, 'feedbackSixthSense': {}, 'onceOnlyHints': {}, 'onceOnlyHints2': {}, 'onceOnlyHints3': {}, 'uiStorage': {}, SETTINGS_SECTIONS.UI_STORAGE_2: {}, 'epicCarouselFilter2': {}, 'rankedCarouselFilter1': {}, 'rankedCarouselFilter2': {}, 'comp7CarouselFilter1': {}, 'comp7CarouselFilter2': {}, 'sessionStats': {}, 'battleComm': {}, 'dogTags': {}, 'battleHud': {}, 'spgAim': {}, GUI_START_BEHAVIOR: {}, 'battlePassStorage': {}, SETTINGS_SECTIONS.CONTOUR: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_1: {}, SETTINGS_SECTIONS.ROYALE_CAROUSEL_FILTER_2: {}, 'clear': {}, 'delete': [], SETTINGS_SECTIONS.LIMITED_UI_1: {}, SETTINGS_SECTIONS.LIMITED_UI_2: {}, SETTINGS_SECTIONS.BATTLE_MATTERS_QUESTS: {}, 'nyStorage': {}, SETTINGS_SECTIONS.ARMORY_YARD: {}}
         yield migrateToVersion(currentVersion, self._core, data)
         self._setSettingsSections(data)
         callback(self)
@@ -1491,9 +1487,6 @@ class ServerSettingsManager(object):
         clearBPStorage = clear.get('battlePassStorage', 0)
         if BPStorage or clearBPStorage:
             settings[SETTINGS_SECTIONS.BATTLE_PASS_STORAGE] = self._buildSectionSettings(SETTINGS_SECTIONS.BATTLE_PASS_STORAGE, BPStorage) ^ clearBPStorage
-        lootboxesViewedStorage = data.get('lootboxViewed', {})
-        if lootboxesViewedStorage:
-            settings[SETTINGS_SECTIONS.LOOT_BOX_VIEWED] = self._buildSectionSettings(SETTINGS_SECTIONS.LOOT_BOX_VIEWED, lootboxesViewedStorage)
         spgAimData = data.get('spgAim', {})
         clearSpgAimData = clear.get(SETTINGS_SECTIONS.SPG_AIM, 0)
         if spgAimData or clearSpgAimData:

@@ -1546,17 +1546,10 @@
 		<id>1031</id>
 		<imgName>improvedSpallingResistance</imgName>
 		<modifiers>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					0.1
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
-				<name>miscAttrs/repeatedStunDurationFactor</name>
+				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					0.85
+					1.1
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1570,9 +1563,9 @@
 		</modifiers>
 		<kpi>
 			<mul>
-				<name>crewStunDuration</name>
+				<name>crewHitChance</name>
 				<value>
-					0.9
+					1.1
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1596,17 +1589,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					-0.1
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
-				<name>miscAttrs/repeatedStunDurationFactor</name>
+				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					1.15
+					0.9
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1620,9 +1606,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
+				<name>crewHitChance</name>
 				<value>
-					1.1
+					0.9
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1639,17 +1625,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1681,16 +1660,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					0.92
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1736,17 +1708,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					-0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -1771,16 +1736,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					1.08
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -2201,17 +2159,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -2239,16 +2190,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					0.92
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -2293,17 +2237,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					-0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -2331,16 +2268,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					1.08
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -4583,17 +4513,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -4611,16 +4534,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					0.92
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -4645,17 +4561,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					-0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -4673,16 +4582,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					1.08
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -5361,17 +5263,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -5392,16 +5287,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					0.92
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -5432,17 +5320,10 @@
 					<!--BW_String-->
 				</value>
 			</mul>
-			<add>
-				<name>miscAttrs/stunResistanceDuration</name>
-				<value>
-					-0.08
-					<!--BW_String-->
-				</value>
-			</add>
 			<mul>
 				<name>miscAttrs/crewChanceToHitFactor</name>
 				<value>
-					1.2
+					1.25
 					<!--BW_String-->
 				</value>
 			</mul>
@@ -5463,16 +5344,9 @@
 				</value>
 			</mul>
 			<mul>
-				<name>crewStunDuration</name>
-				<value>
-					1.08
-					<!--BW_String-->
-				</value>
-			</mul>
-			<mul>
 				<name>crewHitChance</name>
 				<value>
-					0.8
+					0.75
 					<!--BW_String-->
 				</value>
 			</mul>

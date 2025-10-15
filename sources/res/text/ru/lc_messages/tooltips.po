@@ -951,14 +951,6 @@ msgstr ""
 "позволяет развернуться на месте. Модуль также влияет на стабилизацию орудия "
 "(чем лучше стабилизация, тем меньше разброс при стрельбе)."
 
-msgid "advanced/wt_largeMedkit"
-msgstr ""
-"При использовании мгновенно лечит всех раненых членов экипажа и снимает "
-"оглушение."
-
-msgid "advanced/wt_largeRepairkit"
-msgstr "При использовании мгновенно чинит все повреждённые модули."
-
 msgid "ammo/auto/body"
 msgstr ""
 "При необходимости боекомплект будет пополняться\n"
@@ -1516,6 +1508,15 @@ msgstr "Вы сможете купить товары из раздела «То
 
 msgid "awardItem/ranked_202203_access/header"
 msgstr "Доступ к покупке"
+
+msgid "awardItem/razlom_coin/body"
+msgstr ""
+"Находясь в мире Разлома, вы сможете зарабатывать особые монеты, которые "
+"можно обменять на ценные предметы в Модуле снабжения. Монеты можно получить "
+"в награду за закрытие этапов Разлома или найти внутри особых наборов."
+
+msgid "awardItem/razlom_coin/header"
+msgstr "Монета «Разлом»"
 
 msgid "awardItem/slots/body"
 msgstr "Дополнительный свободный слот для новой машины в Ангаре."
@@ -5664,9 +5665,6 @@ msgstr "Выберите карту, чтобы выйти в бой."
 msgid "hangar/startBtn/mapsTraining/notReady/header"
 msgstr "Недоступно"
 
-msgid "hangar/startBtn/noTicket/body"
-msgstr "Для выхода в бой нужен ключ"
-
 msgid "hangar/startBtn/notSupportFor11lvl/body"
 msgstr "Выбранная машина временно недоступна для выхода в бой"
 
@@ -5675,13 +5673,6 @@ msgstr "Выход в бой невозможен"
 
 msgid "hangar/startBtn/preview/body"
 msgstr "Чтобы выйти в бой, вернитесь в Ангар к выбору машины."
-
-msgid "hangar/startBtn/primeNotAvailable/body"
-msgstr ""
-"На этом сервере режим прекращения огня. Попробуйте перейти на другой сервер."
-
-msgid "hangar/startBtn/primeNotAvailable/header"
-msgstr "Выход в бой невозможен"
 
 msgid "hangar/startBtn/squadNotReady/body"
 msgstr "Для выхода в бой выберите машину и подтвердите готовность."
@@ -8974,6 +8965,48 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_May25_3/label"
 msgstr "Событие «Время героев»"
 
+msgid "notrecruitedtankman/tankmen_Portal25_1/desc"
+msgstr ""
+"Выдающийся оператор ЭВМ, ведущий специалист в вычислительном отделе НППО "
+"«Перспектива». Создатель программного обеспечения марсоходов, отправленных "
+"на Марс в ходе космических экспедиций. Смела, любознательна, открыта новому."
+" Технику любит больше, чем людей."
+
+msgid "notrecruitedtankman/tankmen_Portal25_1/label"
+msgstr "Событие «Разлом»"
+
+msgid "notrecruitedtankman/tankmen_Portal25_2/desc"
+msgstr ""
+"Бывший разведчик, длительное время работавший в международной организации "
+"«Альянс». Умён, спокоен, широко эрудирован. Имеет высшее техническое "
+"образование, что позволяет ему быть куратором технических проектов, в том "
+"числе на базе НППО «Перспектива». Мастер убеждения и манипуляции, благодаря "
+"чему ему успешно вербует ценные кадры."
+
+msgid "notrecruitedtankman/tankmen_Portal25_2/label"
+msgstr "Событие «Разлом»"
+
+msgid "notrecruitedtankman/tankmen_Portal25_3/desc"
+msgstr ""
+"Специалист по международным связям и торговле в НППО «Перспектива». Сын "
+"высокопоставленного дипломата. Получил блестящее образование, обладает "
+"тонким вкусом. Добрый, но хвастливый и заносчивый. Считает, что всё знает "
+"лучше других. Любит подшутить над другими, но плохо переносит юмор в свой "
+"адрес."
+
+msgid "notrecruitedtankman/tankmen_Portal25_3/label"
+msgstr "Событие «Разлом»"
+
+msgid "notrecruitedtankman/tankmen_Portal25_4/desc"
+msgstr ""
+"Ведущий инженер в экспериментальном сборочном цехе НППО «Перспектива». Умна,"
+" талантлива, самодостаточна. Обладает своеобразным чувством юмора, мало кому"
+" понятным. Общению с людьми предпочитает работу, на которой практически "
+"живёт в компании любимого питомца, енота Матраса."
+
+msgid "notrecruitedtankman/tankmen_Portal25_4/label"
+msgstr "Событие «Разлом»"
+
 msgid "notrecruitedtankman/tankmen_Razvedchik_3/desc"
 msgstr ""
 "Командир разведвзвода. Опытный и опалённый войной офицер, ушедший на фронт "
@@ -11878,13 +11911,6 @@ msgstr ""
 "Файлы выбранного голоса уведомлений\n"
 "повреждены или отсутствуют."
 
-msgid "setttingsDisabledNotification/body"
-msgstr ""
-"В этом игровом режиме часть настроек недоступна, выберите другой режим."
-
-msgid "setttingsDisabledNotification/header"
-msgstr "Недоступно"
-
 msgid "shell/basic"
 msgstr "Базовый"
 
@@ -12198,7 +12224,7 @@ msgstr "Поставки из тыла"
 msgid "storage/mainMenu/personal_reserves/body"
 msgstr ""
 "Содержит личные резервы, позволяющие на время получить прибавку к заработку "
-"опыта или серебру в боях."
+"опыта или серебра в боях."
 
 msgid "storage/mainMenu/personal_reserves/header"
 msgstr "Личные резервы"
@@ -12291,6 +12317,9 @@ msgstr "Машина группы %(groupNum)s недоступна"
 
 msgid "tankCarusel/xpMultiplier/body"
 msgstr "Множитель опыта за первую победу в день."
+
+msgid "tankCaruselTooltip/preferential"
+msgstr "Льготный танк"
 
 msgid "tankCaruselTooltip/vehicleType/elite/AT-SPG"
 msgstr "Элитная ПТ-САУ"
@@ -12712,9 +12741,6 @@ msgstr "%(vehicleType)s (%(nation)s)"
 
 msgid "tankman/section/specialization"
 msgstr "Специализация:"
-
-msgid "tankman/skillsTitle"
-msgstr "Преимущества"
 
 msgid "tankman/status/inactiveSkills/header"
 msgstr "Неподходящие навыки"
@@ -13211,9 +13237,6 @@ msgstr "Скидка %(actionPrc)s, прежняя стоимость: %(oldPric
 msgid "vehicle/additional/header"
 msgstr "С машиной идёт:"
 
-msgid "vehicle/afterEventEnd/title"
-msgstr "Все бои проведены, машина недоступна."
-
 msgid "vehicle/allModules/header"
 msgstr "Все исследованные модули"
 
@@ -13310,9 +13333,6 @@ msgstr "Аренда от"
 msgid "vehicle/multiplied_xp"
 msgstr "Боевой опыт"
 
-msgid "vehicle/overview/title"
-msgstr "Общее:"
-
 msgid "vehicle/radioDistance"
 msgstr "<h1>Дальность связи</h1> <h2>(км)</h2>"
 
@@ -13342,9 +13362,6 @@ msgstr "%(timeNum)s мин"
 
 msgid "vehicle/rentLeft/hours"
 msgstr "Часов аренды осталось"
-
-msgid "vehicle/rentLeft/noTimeLeft"
-msgstr "Все бои проведены, машина недоступна."
 
 msgid "vehicle/rentLeft/wins"
 msgstr "Осталось побед до завершения аренды"
@@ -13381,6 +13398,12 @@ msgstr "Продажа"
 
 msgid "vehicle/speedLimits"
 msgstr "<h1>Скорость</h1> <h2>(км/ч)</h2>"
+
+msgid "vehicle/statTrack/label"
+msgstr "Счётчик уничтоженных"
+
+msgid "vehicle/statTrack/labelCount"
+msgstr "Счётчик уничтоженных: "
 
 msgid "vehicle/stats/footnote"
 msgstr "ТТХ указаны для машины с экипажем, обученным на 100%."
@@ -14121,9 +14144,6 @@ msgstr "Нет в Ангаре"
 
 msgid "vehicleStatus/operationError/header"
 msgstr "Финансовая операция недоступна"
-
-msgid "vehicleStatus/rentalBattleIsOver/header"
-msgstr "Аренда завершена"
 
 msgid "vehicleStatus/rentalIsOver/header"
 msgstr "Аренда завершена"

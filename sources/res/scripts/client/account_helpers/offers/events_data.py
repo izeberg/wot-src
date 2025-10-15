@@ -64,6 +64,10 @@ class OfferEventData(object):
         return self._data.get('showInGUI')
 
     @property
+    def properties(self):
+        return self._data.get('properties', {})
+
+    @property
     def cdnLocFilePath(self):
         _path = self._data.get(CDN_KEY, {}).get('localization')
         if _path:

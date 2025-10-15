@@ -22,7 +22,7 @@ package net.wg.gui.battle.views.consumablesPanel
    public class BattleEquipmentButton extends BattleToolTipButton implements IConsumablesButton, ICoolDownCompleteHandler
    {
       
-      protected static const KEY_VALIDATION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
+      private static const KEY_VALIDATION:uint = InvalidationType.SYSTEM_FLAGS_BORDER << 2;
       
       private static const COOLDOWN_COUNTER_BG_RED:String = "red";
       
@@ -460,10 +460,6 @@ package net.wg.gui.battle.views.consumablesPanel
          }
       }
       
-      public function setStage(param1:int) : void
-      {
-      }
-      
       protected function updateStateBeforeCooldown() : void
       {
       }
@@ -522,7 +518,7 @@ package net.wg.gui.battle.views.consumablesPanel
          this._coolDownTimer.start(param1,this,Math.round(COOLDOWN_FRAME_COUNT * param2),DEFAULT_TIME_COEF,param3,param4);
       }
       
-      protected function clearCoolDownText() : void
+      private function clearCoolDownText() : void
       {
          this.cooldownTimerTf.text = Values.EMPTY_STR;
          this.counterBg.gotoAndStop(COOLDOWN_COUNTER_BG_HIDE);

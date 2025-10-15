@@ -303,6 +303,12 @@ msgstr ""
 msgid "infoPanel/level"
 msgstr "%(level)s уровня"
 
+msgid "infoPanel/preferentialText"
+msgstr "Бои со своим уровнем или ниже"
+
+msgid "infoPanel/preferentialTitle"
+msgstr "Льготный танк"
+
 msgid "infoPanel/premium/bonsText"
 msgstr "Возможность заработка"
 
@@ -411,6 +417,33 @@ msgstr "Продажа завершена"
 
 msgid "showcaseStyleBuying/timeRemaining/desc"
 msgstr "Доступно в течение:"
+
+msgid "statTrackerPanel/label"
+msgstr "Счётчик уничтоженных"
+
+msgid "tooltips/statTrack/description/firstPart"
+msgstr ""
+"Это уникальный экземпляр машины со встроенным %(whiteSpanish_Open)sсчётчиком"
+" уничтоженных целей%(whiteSpanish_Close)s."
+
+msgid "tooltips/statTrack/description/secondPart"
+msgstr ""
+"Особое устройство располагается спереди танка и на задней части башни.\n"
+"Показывает текущее количество уничтоженных машин противника за всё время владения этой машиной."
+
+msgid "tooltips/statTrack/description/thirdPart"
+msgstr ""
+"Засчитываются цели, уничтоженные в Случайных боях (исключая Генеральное сражение).\n"
+"Максимальное число отображаемых уничтожений — %(maxValue), по достижении которого счётчик навсегда фиксируется на этом значении."
+
+msgid "tooltips/statTrack/moreInfo"
+msgstr ""
+"Из-за тяжёлых условий эксплуатации и несвоевременного обслуживания "
+"энергоцепи машины определённые сочетания цифр могут не отображаться на "
+"счётчике."
+
+msgid "tooltips/statTrack/title"
+msgstr "Счётчик уничтоженных целей"
 
 msgid "topPanel/tab/baseVehicle/vehicle"
 msgstr "СТАНДАРТ"

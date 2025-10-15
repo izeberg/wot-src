@@ -1014,7 +1014,7 @@
 				0
 				<material>
 					<identifier>track_mat_L_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -1048,6 +1048,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/tracks/BZ_74_1_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>-1.467032 0.698902 -0.104014</groupOrigin>
@@ -1078,7 +1082,7 @@
 				0
 				<material>
 					<identifier>track_mat_R_skinned</identifier>
-					<fx>shaders/std_effects/PBS_tank_skinned_ao.fx</fx>
+					<fx>shaders/std_effects/PBS_tank_uvtransform_skinned_ao.fx</fx>
 					<materialKind>0</materialKind>
 					<collisionFlags>0</collisionFlags>
 					<property>
@@ -1112,6 +1116,10 @@
 					<property>
 						normalMap
 						<Texture>vehicles/chinese/tracks/BZ_74_1_track_ANM.dds</Texture>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.467032 0.698902 -0.104014</groupOrigin>
@@ -1199,6 +1207,14 @@
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AO.dds</Texture>
 					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.416830 0.714634 -0.068044</groupOrigin>
 			</primitiveGroup>
@@ -1284,6 +1300,14 @@
 					<property>
 						excludeMaskAndAOMap
 						<Texture>vehicles/chinese/Ch56_BZ_74_1/_skins/Ch56_BZ_74_1_3Dst/BZ_74_1_3DSt_chassis_01_AO.dds</Texture>
+					</property>
+					<property>
+						alphaReference
+						<Int>128</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
 					</property>
 				</material>
 				<groupOrigin>1.416830 0.712577 -0.088531</groupOrigin>

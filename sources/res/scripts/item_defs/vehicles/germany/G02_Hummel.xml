@@ -6038,10 +6038,7 @@
 							<cost>6300</cost>
 						</gun>
 					</unlocks>
-					<reloadTime>
-						26.4
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>25</reloadTime>
 					<maxAmmo>27</maxAmmo>
 					<armor>
 						<gun>25</gun>
@@ -6051,7 +6048,7 @@
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						4.9
+						5.8
 						<!--BW_String-->
 					</aimingTime>
 					<pitchLimits>
@@ -6301,10 +6298,7 @@
 							<cost>61100</cost>
 						</vehicle>
 					</unlocks>
-					<reloadTime>
-						31.1
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>29</reloadTime>
 					<armor>
 						<gun>25</gun>
 					</armor>

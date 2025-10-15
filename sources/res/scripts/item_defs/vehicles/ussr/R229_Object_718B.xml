@@ -128,6 +128,13 @@
 			<undamaged>vehicles/russian/R229_Object_718B/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/russian/R229_Object_718B/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/russian/R229_Object_718B/crash/lod0/Hull.model</exploded>
+			<sets>
+				<R229_Object_718B_3Dst_01>
+					<undamaged>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Hull.model</exploded>
+				</R229_Object_718B_3Dst_01>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -1028,6 +1035,60 @@
 				<showOn>16</showOn>
 				<clipAngle>1.514422</clipAngle>
 			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15057</slotId>
+				<tags>direction_left_to_right formfactor_square</tags>
+				<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+				<position>-0.000009 1.135788 3.718987</position>
+				<rotation>
+					0.504771 0 3.141592
+					<!--BW_String-->
+				</rotation>
+				<scale>
+					0.45 0.2 0.45
+					<!--BW_String-->
+				</scale>
+				<showOn>16</showOn>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15058</slotId>
+				<tags>direction_left_to_right formfactor_square</tags>
+				<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+				<position>
+					-1.24987 1.16908 3.88907
+					<!--BW_String-->
+				</position>
+				<rotation>1.063995 -0.000001 3.141592</rotation>
+				<scale>0.527752 0.604839 0.527752</scale>
+				<showOn>16</showOn>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15059</slotId>
+				<tags>direction_right_to_left formfactor_square</tags>
+				<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+				<position>
+					1.24986 1.15124 3.88168
+					<!--BW_String-->
+				</position>
+				<rotation>1.063994 0.000001 3.141592</rotation>
+				<scale>0.524739 0.601386 0.524739</scale>
+				<showOn>16</showOn>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18001</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -1087,6 +1148,13 @@
 				<undamaged>vehicles/russian/R229_Object_718B/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/russian/R229_Object_718B/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/russian/R229_Object_718B/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<R229_Object_718B_3Dst_01>
+						<undamaged>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Chassis.model</exploded>
+					</R229_Object_718B_3Dst_01>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -2350,6 +2418,12 @@
 					10
 					<vehicleDamageFactor>0</vehicleDamageFactor>
 				</armor_19>
+				<armor_20>260</armor_20>
+				<armor_21>200</armor_21>
+				<armor_22>155</armor_22>
+				<armor_24>185</armor_24>
+				<armor_25>160</armor_25>
+				<armor_26>30</armor_26>
 			</armor>
 			<primaryArmor>armor_1 armor_3 armor_4</primaryArmor>
 			<weight>18000</weight>
@@ -2478,6 +2552,29 @@
 							</size>
 							<isUVProportional>false</isUVProportional>
 						</slot>
+						<slot>
+							<slotType>insigniaOnGun</slotType>
+							<slotId>49001</slotId>
+							<rayStart>
+								0 0 2.02
+								<!--BW_String-->
+							</rayStart>
+							<rayEnd>
+								0 0 2.66
+								<!--BW_String-->
+							</rayEnd>
+							<rayUp>
+								0.15 0 0
+								<!--BW_String-->
+							</rayUp>
+							<applyToFabric>false</applyToFabric>
+							<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+							<size>
+								0.64
+								<!--BW_String-->
+							</size>
+							<isUVProportional>false</isUVProportional>
+						</slot>
 					</customizationSlots>
 					<customization>
 						<customizableVehicleAreas>
@@ -2489,6 +2586,13 @@
 						<undamaged>vehicles/russian/R229_Object_718B/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/russian/R229_Object_718B/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/russian/R229_Object_718B/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<R229_Object_718B_3Dst_01>
+								<undamaged>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Gun_01.model</exploded>
+							</R229_Object_718B_3Dst_01>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/russian/R229_Object_718B/collision/Gun_01.model</collisionModelServer>
@@ -2506,6 +2610,13 @@
 				<undamaged>vehicles/russian/R229_Object_718B/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/russian/R229_Object_718B/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/russian/R229_Object_718B/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<R229_Object_718B_3Dst_01>
+						<undamaged>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/russian/R229_Object_718B/_skins/R229_Object_718B_3Dst_01/crash/lod0/Turret_01.model</exploded>
+					</R229_Object_718B_3Dst_01>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/russian/R229_Object_718B/collision/Turret_01.model</collisionModelServer>
@@ -3177,6 +3288,63 @@
 					<showOn>256</showOn>
 					<verticalMirror>true</verticalMirror>
 				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35045</slotId>
+					<tags>direction_left_to_right formfactor_square</tags>
+					<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+					<position>
+						-0.601474 2.658048 0.63414
+						<!--BW_String-->
+					</position>
+					<rotation>
+						-0 0 3.141593
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.4 0.399999 0.4
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+					<clipAngle>0.866556</clipAngle>
+					<verticalMirror>true</verticalMirror>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35046</slotId>
+					<tags>direction_left_to_right formfactor_square</tags>
+					<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+					<position>0.586309 2.656572 0.636169</position>
+					<rotation>
+						-0 0 3.141593
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.4 0.399999 0.4
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+					<clipAngle>0.866556</clipAngle>
+					<verticalMirror>true</verticalMirror>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35047</slotId>
+					<tags>direction_left_to_right formfactor_square</tags>
+					<compatibleModels>R229_Object_718B_3Dst_01</compatibleModels>
+					<position>0.385721 2.846577 -0.846554</position>
+					<rotation>
+						2.76914 0 -0.014835
+						<!--BW_String-->
+					</rotation>
+					<scale>
+						0.4 0.4 0.4
+						<!--BW_String-->
+					</scale>
+					<showOn>256</showOn>
+					<clipAngle>0.866556</clipAngle>
+					<verticalMirror>true</verticalMirror>
+				</slot>
 			</customizationSlots>
 			<customization>
 				<customizableVehicleAreas>
@@ -3186,7 +3354,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_mech_trav</wwturretRotatorSoundManual>
 			<physicsShape>
-				1.065 -0.04 1.072 0 0.948 -0.036 0.804 0.605 0.357 0.5 0.422 0.5 0.262 0.503 0.278
+				1.093 -0.04 0.874 0 0.716 0 0.804 0.605 0.357 0.5 0.388 0.5 0.262 0.503 0.041
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>

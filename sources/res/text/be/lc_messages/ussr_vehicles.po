@@ -206,6 +206,9 @@ msgstr "Т-10"
 msgid "Chassis_IS8_2"
 msgstr "Т-10М"
 
+msgid "Chassis_IS_M_H"
+msgstr "ІС-М"
+
 msgid "Chassis_IS_M_SH"
 msgstr "ІС-М"
 
@@ -214,6 +217,9 @@ msgstr "КВ-13 узору 1942 г."
 
 msgid "Chassis_KV-13_2"
 msgstr "КВ-13 узору 1943 г."
+
+msgid "Chassis_KV-13_H"
+msgstr "КВ-13"
 
 msgid "Chassis_KV-13_SH"
 msgstr "КВ-13"
@@ -261,6 +267,9 @@ msgid "Chassis_Object416_2"
 msgstr "Аб'ект 416 узору 1953 г."
 
 msgid "Chassis_Object_140"
+msgstr "Аб'ект 140"
+
+msgid "Chassis_Object_140_ISP"
 msgstr "Аб'ект 140"
 
 msgid "Chassis_Object_212"
@@ -494,6 +503,9 @@ msgstr "Т-34 экранаваны (112)"
 msgid "Chassis_R155_Object_277"
 msgstr "Аб'ект 277"
 
+msgid "Chassis_R155_Object_277_ISP"
+msgstr "Аб'ект 277"
+
 msgid "Chassis_R156_IS_2M"
 msgstr "ІС-2М"
 
@@ -695,8 +707,14 @@ msgstr "Т-54"
 msgid "Chassis_R224_IS_3_1945"
 msgstr "ІС-3-П"
 
+msgid "Chassis_R226_Object_757A"
+msgstr "Аб'ект 757А"
+
 msgid "Chassis_R227_Object_407_MZ"
 msgstr "Аб'ект 407"
+
+msgid "Chassis_R228_Duplet"
+msgstr "Дуплет"
 
 msgid "Chassis_R229_Object_718B"
 msgstr "Аб'ект 718Б"
@@ -704,14 +722,11 @@ msgstr "Аб'ект 718Б"
 msgid "Chassis_R230_Maus"
 msgstr "Ш-Мыш"
 
-msgid "Chassis_R232_IS-7G"
-msgstr "Алаід-Б"
-
-msgid "Chassis_R232_IS-7W"
-msgstr "Алаід"
-
 msgid "Chassis_R246_Object_168_122"
 msgstr "Аб'ект 168Н 122"
+
+msgid "Chassis_R248_T44_Storm"
+msgstr "Т-44Ш"
 
 msgid "Chassis_R45_IS-7_02"
 msgstr "ІС-7"
@@ -733,9 +748,6 @@ msgstr "Аб'ект 430"
 
 msgid "Chassis_R96_Object_430_2"
 msgstr "Аб'ект 430 палепшаная"
-
-msgid "Chassis_R97_Object_140_hound_TLXXL"
-msgstr "Рэзістар"
 
 msgid "Chassis_ST_I"
 msgstr "СТ-I"
@@ -922,8 +934,14 @@ msgstr "Д-744"
 msgid "D37812_LL"
 msgstr "D37812"
 
+msgid "DGM"
+msgstr "ДГМ"
+
 msgid "DM_45"
 msgstr "ДМ-45"
+
+msgid "DTN_10"
+msgstr "ДТН-10"
 
 msgid "Engine_R219_VK4502P_G"
 msgstr "Майбах-234В"
@@ -998,6 +1016,9 @@ msgstr "ІС-3"
 
 msgid "IS-3M"
 msgstr "ІС-3М"
+
+msgid "IS-3M_H"
+msgstr "ІС-3 ТБ"
 
 msgid "IS-3M_SH"
 msgstr "ІС-3 ТБ"
@@ -1186,6 +1207,19 @@ msgstr "КВ"
 
 msgid "KV-13"
 msgstr "КВ-13"
+
+msgid "KV-13_H"
+msgstr "Бессмяротны"
+
+msgid "KV-13_H_descr"
+msgstr ""
+"Гэты танк, пабудаваны са спісаных вузлоў і агрэгатаў з розных "
+"танкабудаўнічых заводаў, уяўляе сур'ёзную пагрозу. Нават у палявых умовах "
+"можна сабраць сапраўднага звера, калі выйсці за межы чарцяжоў і "
+"дакументацыі."
+
+msgid "KV-13_H_short"
+msgstr "Бессмяротны"
 
 msgid "KV-13_SH"
 msgstr "Вараг"
@@ -1402,6 +1436,9 @@ msgstr "М-17Л 1445 аб/хв"
 msgid "M-17T"
 msgstr "М-17Л 1400 аб/хв"
 
+msgid "M-40-2V_H"
+msgstr "М-40 Біс"
+
 msgid "M-40-2V_SH"
 msgstr "М-40 Біс"
 
@@ -1491,13 +1528,13 @@ msgstr "М-50ТІ"
 msgid "M_50TI_2"
 msgstr "М-50ТІ"
 
-msgid "M_50TI_W"
-msgstr "М-50ТІ В"
-
 msgid "M_50TS"
 msgstr "М-50ТС"
 
 msgid "M_850"
+msgstr "М-850"
+
+msgid "M_850_ISP"
 msgstr "М-850"
 
 msgid "Matilda"
@@ -1583,6 +1620,25 @@ msgstr "Аб. 416"
 
 msgid "Object_140"
 msgstr "Аб'ект 140"
+
+msgid "Object_140_ISP"
+msgstr "Аб'ект 140 (І)"
+
+msgid "Object_140_ISP_descr"
+msgstr ""
+"Доследны варыянт сярэдняга танка. Распрацоўваўся ў 1953–1958 гг. у Ніжнім "
+"Тагіле ў рамках праграмы стварэння новага танка на замену Т-54. Былі "
+"выпушчаны два доследныя ўзоры, але ў 1958 г. усе работы былі спынены на "
+"карысць больш дасканалага «Аб'екта 430»."
+
+msgid "Object_140_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Object_140_ISP_short"
+msgstr "Аб. 140 (І)"
+
+msgid "Object_140_ISP_short_special"
+msgstr "?empty?"
 
 msgid "Object_140_descr"
 msgstr ""
@@ -2013,8 +2069,8 @@ msgstr "Р-113"
 msgid "R113M_DR"
 msgstr "Р-113Д"
 
-msgid "R113M_WT"
-msgstr "Р-113 «Рэзістар»"
+msgid "R113M_ISP"
+msgstr "Р-113"
 
 msgid "R113_120"
 msgstr "Р-113"
@@ -2022,8 +2078,17 @@ msgstr "Р-113"
 msgid "R113_45"
 msgstr "Р-113"
 
+msgid "R113_757"
+msgstr "Р-113"
+
 msgid "R113_B"
 msgstr "R-113"
+
+msgid "R113_D"
+msgstr "Р-113"
+
+msgid "R113_H"
+msgstr "Р-113-УКВ"
 
 msgid "R113_M"
 msgstr "Р-113"
@@ -2054,6 +2119,9 @@ msgstr "Добрая забойнасць стрэлу, годнае круга�
 
 msgid "R113_R200_KV_4_Turchaninov"
 msgstr "Р-113Т"
+
+msgid "R113_S"
+msgstr "Р-113Ш"
 
 msgid "R113_SH"
 msgstr "Р-113-УКВ"
@@ -2992,6 +3060,29 @@ msgstr "Добрая маскіроўка, вуглы верт. наводкі �
 
 msgid "R155_Object_277"
 msgstr "Аб'ект 277"
+
+msgid "R155_Object_277_ISP"
+msgstr "Аб'ект 277 (І)"
+
+msgid "R155_Object_277_ISP_descr"
+msgstr ""
+"Распрацоўваўся ў асобым канструктарскім бюро па танках Ленінградскага "
+"Кіраўскага завода пад кіраўніцтвам галоўнага канструктара Ж.Я. Коціна ў "
+"1956-1958 гг. Былі выраблены два доследныя ўзоры, якія праходзілі "
+"выпрабаванні ў 1959 – пачатку 1960 г. Таксама былі выраблены корпус і вежа "
+"для абстрэлу іх на палігоне з мэтай выпрабавання. Работы над танкам былі "
+"спынены летам 1960 г. у сувязі з недастатковай распрацаванасцю некаторых "
+"сістэм і агрэгатаў і адсутнасцю тактыка-тэхнічных пераваг над цяжкім танкам "
+"Аб'ект 770."
+
+msgid "R155_Object_277_ISP_long_special"
+msgstr "?empty?"
+
+msgid "R155_Object_277_ISP_short"
+msgstr "Аб. 277 (І)"
+
+msgid "R155_Object_277_ISP_short_special"
+msgstr "?empty?"
 
 msgid "R155_Object_277_descr"
 msgstr ""
@@ -4366,6 +4457,24 @@ msgstr "Парадны"
 msgid "R224_IS_3_1945_short_special"
 msgstr "Высокая забойнасць стрэлу, добрае браніраванне"
 
+msgid "R226_Object_757A"
+msgstr "Аб'ект 757А"
+
+msgid "R226_Object_757A_descr"
+msgstr ""
+" \n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "R226_Object_757A_long_special"
+msgstr "?empty?"
+
+msgid "R226_Object_757A_short"
+msgstr "Аб. 757А"
+
+msgid "R226_Object_757A_short_special"
+msgstr "?empty?"
+
 msgid "R227_Object_407_MZ"
 msgstr "Аб'ект 407 МЗ"
 
@@ -4390,23 +4499,46 @@ msgstr "Аб. 407 МЗ"
 msgid "R227_Object_407_MZ_short_special"
 msgstr "Механізм данабівання, камфортная гармата"
 
-msgid "R229_Object_718B"
-msgstr "Аб'ект 718Б"
+msgid "R228_Duplet"
+msgstr "Дуплет"
 
-msgid "R229_Object_718B_descr"
+msgid "R228_Duplet_descr"
 msgstr ""
 " \n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
-msgid "R229_Object_718B_long_special"
+msgid "R228_Duplet_long_special"
 msgstr "?empty?"
+
+msgid "R228_Duplet_short"
+msgstr "Дуплет"
+
+msgid "R228_Duplet_short_special"
+msgstr "?empty?"
+
+msgid "R229_Object_718B"
+msgstr "Аб'ект 718Б"
+
+msgid "R229_Object_718B_descr"
+msgstr ""
+"Стварэнне Аб'екта 718Б распачалося на заданне ДБТУ КА на Кіраўскім заводзе Чалябінска ў 1946-м годзе. У канструкцыі танка, які атрымаўся масай 70 тон, была выкарыстана вялікая колькасць інавацыйных рашэнняў: яго абсталявалі магутнай доследнай 152-мм наразной гарматай М-51 і газатурбінным рухавіком з эжэкцыйнай сістэмай ахаладжэння. У якасці пругкіх элементаў падвескі выкарыстоўвалі пучковыя тарсіёны. Для ўзмацнення абароны ад кумулятыўных снарадаў корпус і вежу абсталявалі раскладнымі рашэцістымі экранамі. Аднак у пачатку 50-х гадоў было прынята рашэнне абмежаваць масу цяжкіх танкаў 50-ю тонамі, у выніку 70-тонны Аб'ект 718Б так і застаўся на паперы.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "R229_Object_718B_long_special"
+msgstr ""
+"Машына вылучаецца наяўнасцю газатурбіннага рухавіка, што дазваляе хутка "
+"займаць нетыповыя для цяжкіх танкаў пазіцыі і распраўляцца з праціўнікам за "
+"кошт магутнай гарматы з высокай забойнасцю стрэлу. Танк добра абаронены, "
+"выдатна падыдзе аматарам прарыву напрамкаў і гульні на пярэдняй лініі, дзе "
+"можна эфектыўна «разменьваць» ачкі трываласці."
 
 msgid "R229_Object_718B_short"
 msgstr "Аб. 718Б"
 
 msgid "R229_Object_718B_short_special"
-msgstr "?empty?"
+msgstr "Магутная гармата, газатурбінны рухавік"
 
 msgid "R230_Maus"
 msgstr "Трафейная «Мыш»"
@@ -4431,63 +4563,50 @@ msgstr "Мыш"
 msgid "R230_Maus_short_special"
 msgstr "Моцная браня, выдатны запас трываласці"
 
-msgid "R232_IS-7G"
-msgstr "Алаід-Б"
-
-msgid "R232_IS-7G_descr"
-msgstr ""
-"«Наколькі далёка мы зойдзем? Пытанне не ў тым, наколькі далёка. Пытанне ў "
-"тым, наколькі мы моцныя. Наколькі глыбокая ваша вера, каб зайсці настолькі "
-"далёка, наколькі трэба»."
-
-msgid "R232_IS-7G_long_special"
-msgstr "?empty?"
-
-msgid "R232_IS-7G_short"
-msgstr "Алаід-Б"
-
-msgid "R232_IS-7G_short_special"
-msgstr "Улюбёная цацка Лемартэна"
-
-msgid "R232_IS-7W"
-msgstr "Алаід"
-
-msgid "R232_IS-7W_descr"
-msgstr ""
-"«Наколькі далёка мы зойдзем? Пытанне не ў тым, наколькі далёка. Пытанне ў "
-"тым, наколькі мы моцныя. Наколькі глыбокая ваша вера, каб зайсці настолькі "
-"далёка, наколькі трэба»."
-
-msgid "R232_IS-7W_long_special"
-msgstr "?empty?"
-
-msgid "R232_IS-7W_short"
-msgstr "Алаід"
-
-msgid "R232_IS-7W_short_special"
-msgstr "Улюбёная цацка Лемартэна"
-
 msgid "R246_Object_168_122"
-msgstr "Аб'ект 168Н 122"
+msgstr "Аб'ект 168Н-122 Квант"
 
 msgid "R246_Object_168_122_descr"
 msgstr ""
-"У другой палове 1960-х гадоў на этапе эскізнага праектавання ў межах «Тэмы 101» КБ-520 Уралвагонзавода прапрацоўвала варыянт новага сярэдняга танка з улікам нямецкага досведу з Леапардам-1. У распрацоўцы машына атрымала індэкс «Аб'ект 168Н», дзе Н — «нямецкі». Яе асаблівасцю была значная рухомасць і энергаёмістая падвеска з вялікімі хадамі. У канструкцыю машыны ўкаранілі яшчэ цэлы шэраг інавацый, аднак праз недасканалы рухавік праца была спынена.\n"
+"На этапе эскізнага праектавання ў рамках «Тэмы 101» КБ-520 «Уралвагонзавода» прапрацоўвала варыянт новага сярэдняга танка з улікам замежнага досведу, у тым ліку перспектыўных узораў танкаў ФРГ. У распрацоўцы машына атрымала індэкс «Аб'ект 168». Яе асаблівасцю была значная рухомасць і энергаёмістая падвеска з вялікімі хадамі. Адным з кірункаў у праектаванні была спроба размясціць 122-мм гармату ў фактычна сярэднім танку, але гэта накладвала на праект занадта шмат іншых абмежаванняў, і развіцця тэма не атрымала.\n"
 "\n"
 "Характарыстыкі машыны могуць быць зменены без кампенсацыі."
 
 msgid "R246_Object_168_122_long_special"
 msgstr ""
-"Сярэдні танк з выдатнай мабільнасцю і камфортнай гарматай, які будзе "
-"асабліва эфектыўны для падтрымкі хаўруснікаў на сярэдніх і далёкіх "
-"дыстанцыях. Браніраваннем танка ахвяравалі на карысць дынамікі, таму лепш "
-"лішні раз не падстаўляцца і гуляць асцярожна: высокая цана памылкі."
+"Сціплае браніраванне, але пры гэтым дасканалай дынаміка. Машына ўзброена "
+"дакладнай і хуткастрэльнай гарматай з высокай забойнасцю стрэлу. У выніку вы"
+" атрымліваеце снайперскі сярэдні танк, прызначаны для падтрымкі хаўруснікаў "
+"на кірунках атакі, вельмі рухомы і здольны займаць выгадныя агнявыя пазіцыі,"
+" за кароткі прамежак часу мяняючы фланг пры неабходнасці."
 
 msgid "R246_Object_168_122_short"
-msgstr "Аб. 168Н 122"
+msgstr "Квант"
 
 msgid "R246_Object_168_122_short_special"
-msgstr "Камфортная гармата, выдатная мабільнасць"
+msgstr "Камфортная гармата, выдатныя дынамічныя ТТХ"
+
+msgid "R248_T44_Storm"
+msgstr "Т-44 Шторм"
+
+msgid "R248_T44_Storm_descr"
+msgstr ""
+"Асноўнай ідэяй гэтай распрацоўкі была мадэрнізацыя наяўнага сярэдняга танка Т-44 шляхам усталявання новай гарматы. Выкарыстанне 122-мм гарматы патрабавала сур'ёзна перарабіць баявое аддзяленне. Гармата вылучалася аблегчанай канструкцыяй і паменшанымі габарытамі казённай часткі ў параўнанні з базавым Д-25Т, якія выкарыстоўваліся на ІС-2. Разам з гарматай машына ў 1944 году атрымала і больш магутны рухавік. Ад базавага Т-44 доследны танк адрозніваўся значным прыростам агнявой моцы і рэальнай магчымасцю знішчэння любых нямецкіх бронемашын на значных дыстанцыях. Пры гэтым Т-44-122 захоўваў усе плюсы папярэдніка, а менавіта досыць магутную абароны і добрую рухомасць. Нягледзячы на цалкам паспяховыя выпрабаванні (за выключэннем надзейнасці гарматы, эрганомікі баявога аддзялення і невялікага боекамплекту), ад машыны адмовіліся на карысць больш сучасных перспектыўных распрацовак.\n"
+"\n"
+"Характарыстыкі машыны могуць быць зменены без кампенсацыі."
+
+msgid "R248_T44_Storm_long_special"
+msgstr ""
+"Дынамічны сярэдні танк з даволі магутнай гарматай. Няблага паказвае сябе на "
+"першай лініі, здольны ўступаць у эфектыўную перастрэлку нават з цяжкімі "
+"танкамі, паколькі ўзброены фактычна аналагічнай гарматай. Таксама ў плюсы "
+"можна запісаць нізкі сілуэт, што ўскладняе праціўніку прыцэльванне."
+
+msgid "R248_T44_Storm_short"
+msgstr "Шторм"
+
+msgid "R248_T44_Storm_short_special"
+msgstr "Добрая дынаміка, выдатная гармата блізкага бою."
 
 msgid "R34_BT-SV_long_special"
 msgstr ""
@@ -4755,28 +4874,6 @@ msgstr "Аб. 140 КЛ"
 
 msgid "R97_Object_140_cl_short_special"
 msgstr "?empty?"
-
-msgid "R97_Object_140_hound_TLXXL"
-msgstr "Рэзістар"
-
-msgid "R97_Object_140_hound_TLXXL_descr"
-msgstr ""
-"Зваліліся калісьці на Варону аж чатыры вольты.\n"
-"Варона ж зазямлілася на «нуль».\n"
-"Ажно сябе збіралася ўключыць,\n"
-"Але хоць дзюбай «нуль» трымала,\n"
-"«Зямля» раптоўна дзесь прапала.\n"
-"Варону токам так прабрала, бы шар зямны зламаўся папалам.\n"
-"Ну а высновы так і просяцца ўсім нам:\n"
-"Старанна ізалюйце згодна з ДАСТам,\n"
-"Бо ад няўважнай застанецца птушкі\n"
-"Рэзістар вугальны з чарнушкі."
-
-msgid "R97_Object_140_hound_TLXXL_short"
-msgstr "Рэзістар"
-
-msgid "R97_Object_140_hound_TLXXL_short_special"
-msgstr "АБТ з глыбокай мадэрнізацыяй"
 
 msgid "R98_T44_85M_long_special"
 msgstr ""
@@ -5538,8 +5635,8 @@ msgstr ""
 msgid "TD-12"
 msgstr "ТД-12"
 
-msgid "TD-12_WT"
-msgstr "ТД-12 «Рэзістар»"
+msgid "TD-12_ISP"
+msgstr "ТД-12"
 
 msgid "TD-30"
 msgstr "М-50Д"
@@ -5618,6 +5715,9 @@ msgid "Turret_1_Object416"
 msgstr "Аб'ект 416 узору 1952 г."
 
 msgid "Turret_1_Object_140"
+msgstr "Аб'ект 140"
+
+msgid "Turret_1_Object_140_ISP"
 msgstr "Аб'ект 140"
 
 msgid "Turret_1_Object_212"
@@ -5809,6 +5909,9 @@ msgstr "Т-34 экранаваны (112)"
 msgid "Turret_1_R155_Object_277"
 msgstr "Аб'ект 277"
 
+msgid "Turret_1_R155_Object_277_ISP"
+msgstr "Аб'ект 277"
+
 msgid "Turret_1_R156_IS_2M"
 msgstr "ІС-2М"
 
@@ -5989,8 +6092,14 @@ msgstr "Т-54"
 msgid "Turret_1_R224_IS_3_1945"
 msgstr "ІС-3-П"
 
+msgid "Turret_1_R226_Object_757A"
+msgstr "Аб'ект 757А"
+
 msgid "Turret_1_R227_Object_407_MZ"
 msgstr "Аб'ект 407"
+
+msgid "Turret_1_R228_Duplet"
+msgstr "Дуплет"
 
 msgid "Turret_1_R229_Object_718B"
 msgstr "Аб'ект 718Б"
@@ -5998,14 +6107,11 @@ msgstr "Аб'ект 718Б"
 msgid "Turret_1_R230_Maus"
 msgstr "Б-Мыш"
 
-msgid "Turret_1_R232_IS-7G"
-msgstr "Алаід-Б"
-
-msgid "Turret_1_R232_IS-7W"
-msgstr "Алаід"
-
 msgid "Turret_1_R246_Object_168_122"
 msgstr "Аб'ект 168Н 122"
+
+msgid "Turret_1_R248_T44_Storm"
+msgstr "Т-44-122"
 
 msgid "Turret_1_R45_IS-7_02"
 msgstr "ІС-7"
@@ -6021,9 +6127,6 @@ msgstr "Аб'ект 263"
 
 msgid "Turret_1_R96_Object_430"
 msgstr "Аб'ект 430"
-
-msgid "Turret_1_R97_Object_140_hound_TLXXL"
-msgstr "Рэзістар"
 
 msgid "Turret_1_ST_I"
 msgstr "Аб'ект 701-1"
@@ -6068,6 +6171,9 @@ msgid "Turret_1_T-70"
 msgstr "Т-70"
 
 msgid "Turret_1_T150"
+msgstr "Т-150-КВ"
+
+msgid "Turret_1_T150_H"
 msgstr "Т-150-КВ"
 
 msgid "Turret_1_T150_SH"
@@ -6120,6 +6226,9 @@ msgstr "А-44 экранаваная"
 
 msgid "Turret_2_IS8"
 msgstr "Т-10М"
+
+msgid "Turret_2_IS8_H"
+msgstr "Аб'ект 250-4"
 
 msgid "Turret_2_IS8_SH"
 msgstr "Аб'ект 250-4"
@@ -6198,6 +6307,9 @@ msgstr "Т-50-2М"
 
 msgid "Turret_2_Un04_Vickers_MBT_EXP"
 msgstr "Мk. 3"
+
+msgid "Turret_3_KV4_H"
+msgstr "КВ-4"
 
 msgid "Turret_3_KV4_SH"
 msgstr "КВ-4"
@@ -6343,6 +6455,9 @@ msgstr "В-2-54"
 msgid "V-2-54IS"
 msgstr "В-2-54ІС"
 
+msgid "V-2-54M_H"
+msgstr "В-2-54 М2"
+
 msgid "V-2-54M_SH"
 msgstr "В-2-54 М2"
 
@@ -6376,6 +6491,9 @@ msgstr "В-2СН"
 msgid "V-2K_D15"
 msgstr "В-2КШ"
 
+msgid "V-2K_H"
+msgstr "В-2КТ"
+
 msgid "V-2K_SH"
 msgstr "В-2КТ"
 
@@ -6407,6 +6525,9 @@ msgid "V-54"
 msgstr "В-54"
 
 msgid "V-54-6"
+msgstr "В-54-6"
+
+msgid "V-54-6_S"
 msgstr "В-54-6"
 
 msgid "V-54K"
@@ -6590,6 +6711,12 @@ msgstr "3УБК4А"
 msgid "_100mm_3UBK4M"
 msgstr "3УБК4М"
 
+msgid "_100mm_3UBK4M_H"
+msgstr "ЗБ 4КМ"
+
+msgid "_100mm_3UBK4M_ISP"
+msgstr "3УБК4М"
+
 msgid "_100mm_3UBK4M_SH"
 msgstr "ЗБ 4КМ"
 
@@ -6603,6 +6730,9 @@ msgid "_100mm_3UBK_LMK"
 msgstr "3УБК (ЛК)"
 
 msgid "_100mm_3UOF10"
+msgstr "3УОФ10"
+
+msgid "_100mm_3UOF10_ISP"
 msgstr "3УОФ10"
 
 msgid "_100mm_3UOF10_fallout"
@@ -6625,6 +6755,9 @@ msgstr "3ВББ"
 
 msgid "_100mm_3VBM"
 msgstr "3ВБМ"
+
+msgid "_100mm_3VBM2_H"
+msgstr "3ВБМ-2"
 
 msgid "_100mm_3VBM2_SH"
 msgstr "3ВБМ-2"
@@ -6689,8 +6822,8 @@ msgstr "100-мм Д-54ТС"
 msgid "_100mm_D54_TS"
 msgstr "100-мм У-8ТС"
 
-msgid "_100mm_D54_TS_WT"
-msgstr "100 мм У-8ТС «Рэзістар»"
+msgid "_100mm_D54_TS_ISP"
+msgstr "100-мм У-8ТС"
 
 msgid "_100mm_D54_TS_fallout"
 msgstr "100-мм У-8ТС"
@@ -6728,6 +6861,9 @@ msgstr "100-мм ЛБ-1БМ"
 msgid "_100mm_LB-1S"
 msgstr "100-мм ЛБ-1С"
 
+msgid "_100mm_LB1_dualgun"
+msgstr "100 мм ЛБ-1Д"
+
 msgid "_100mm_M-63"
 msgstr "100-мм М-63"
 
@@ -6745,6 +6881,9 @@ msgstr "100 мм С-34ДП"
 
 msgid "_100mm_S34_dualgun"
 msgstr "100 мм С-34Д"
+
+msgid "_100mm_S34_dualgun_H"
+msgstr "100-мм С-34 ДП"
 
 msgid "_100mm_S34_dualgun_SH"
 msgstr "100-мм С-34 ДП"
@@ -6791,28 +6930,23 @@ msgstr "УБР-412ПБМ"
 msgid "_100mm_UBR-412PBU"
 msgstr "УБР-412П"
 
-msgid "_100mm_UBR-412PB_WT"
-msgstr "Срэбная куля"
-
-msgid "_100mm_UBR-412PB_WT_descr"
-msgstr "Гонар збройнікаў Альянсу."
-
-msgid "_100mm_UBR-412PB_WT_long_special"
-msgstr ""
-"Пры перагрузцы генератара ганчакі атрымліваюць зарад плазмы, якія павялічвае"
-" прычыненыя пашкоджанні на 25%, ажно да 100%."
-
-msgid "_100mm_UBR-412PB_WT_short_special"
-msgstr "Дадатковыя пашкоджанні плазмай"
+msgid "_100mm_UBR-412PB_ISP"
+msgstr "УБР-412ПБ"
 
 msgid "_100mm_UBR-412PB_fallout"
 msgstr "УБР-412ПБ А"
+
+msgid "_100mm_UBR-412P_D"
+msgstr "БР-412П"
 
 msgid "_100mm_UBR-412P_T"
 msgstr "УБР-412П Т"
 
 msgid "_100mm_UBR-412U"
 msgstr "УБР-412У"
+
+msgid "_100mm_UBR-412_D"
+msgstr "БР-412"
 
 msgid "_100mm_UBR-413VR"
 msgstr "УБР-413Б"
@@ -6843,6 +6977,9 @@ msgstr "УОФ-412Б1"
 
 msgid "_100mm_UOF-412BM"
 msgstr "УОФ-412БМ"
+
+msgid "_100mm_UOF-412_D"
+msgstr "ОФ-412"
 
 msgid "_100mm_UOF-412_T"
 msgstr "УОФ-412 Т"
@@ -6892,6 +7029,9 @@ msgstr "105 mm L7A3"
 msgid "_107mm_9S1"
 msgstr "107 мм 9С1"
 
+msgid "_107mm_BP450M_H"
+msgstr "БП-450М"
+
 msgid "_107mm_BP450M_SH"
 msgstr "БП-450М"
 
@@ -6918,6 +7058,9 @@ msgstr "УБР-420ПМ"
 
 msgid "_107mm_UBR-420PM1"
 msgstr "УБР-420ПМК"
+
+msgid "_107mm_UBR-420PM_H"
+msgstr "УБР-420ПМ"
 
 msgid "_107mm_UBR-420PM_SH"
 msgstr "УБР-420ПМ"
@@ -6967,6 +7110,9 @@ msgstr "107-мм ЗІС-6М"
 msgid "_107mm_ZiS-6_S"
 msgstr "107-мм ЗІС-6С"
 
+msgid "_107mm_ZiS-6_dualgun_H"
+msgstr "107 мм ЗІС-6ДП"
+
 msgid "_107mm_ZiS-6_dualgun_SH"
 msgstr "107 мм ЗІС-6ДП"
 
@@ -6988,9 +7134,6 @@ msgstr "10РК-26"
 msgid "_10RK-26_CN"
 msgstr "10РК-26М"
 
-msgid "_10RK-26_W"
-msgstr "10РК-26 В"
-
 msgid "_10RK-26_fallout"
 msgstr "10РК-26"
 
@@ -6999,6 +7142,9 @@ msgstr "10РКМ"
 
 msgid "_10RK_2"
 msgstr "10РК-2"
+
+msgid "_10RK_H"
+msgstr "10РК-ДВ"
 
 msgid "_10RK_SH"
 msgstr "10РК-ДВ"
@@ -7192,6 +7338,9 @@ msgstr "122-мм БЛ-9"
 msgid "_122mm_BL-9S"
 msgstr "122-мм БЛ-9С"
 
+msgid "_122mm_BL-9_H"
+msgstr "122-мм БЛ-9ОМ"
+
 msgid "_122mm_BL-9_SH"
 msgstr "122-мм БЛ-9ОМ"
 
@@ -7234,8 +7383,14 @@ msgstr "БП-460П"
 msgid "_122mm_BP450SO"
 msgstr "БП-460АО"
 
+msgid "_122mm_BP450SO_H"
+msgstr "3УБК1Д"
+
 msgid "_122mm_BP450SO_SH"
 msgstr "3УБК1Д"
+
+msgid "_122mm_BP450S_H"
+msgstr "ЗУБК 5С"
 
 msgid "_122mm_BP450S_SH"
 msgstr "ЗУБК 5С"
@@ -7261,6 +7416,9 @@ msgstr "БР-471М"
 msgid "_122mm_BR_471PM"
 msgstr "БР-471ПМ"
 
+msgid "_122mm_BR_471PM_H"
+msgstr "БР-471ПС"
+
 msgid "_122mm_BR_471PM_SH"
 msgstr "БР-471ПС"
 
@@ -7272,6 +7430,9 @@ msgstr "122-мм Д-25-44"
 
 msgid "_122mm_D-25-44_CN"
 msgstr "122 мм Д-25-44 С"
+
+msgid "_122mm_D-25-44_S"
+msgstr "122-мм Д-25-44"
 
 msgid "_122mm_D-25C_mod1944"
 msgstr "122-мм Д-25С узору 1944 г."
@@ -7317,6 +7478,9 @@ msgstr "122-мм M62-T2"
 
 msgid "_122mm_M62-T2S"
 msgstr "122-мм М62-С2"
+
+msgid "_122mm_M62-T2_H"
+msgstr "122-мм М62-Т3СТ"
 
 msgid "_122mm_M62-T2_SH"
 msgstr "122-мм М62-Т3СТ"
@@ -7405,6 +7569,15 @@ msgstr "БР-471ДГ"
 msgid "_122mm_UBR-471P_KV4"
 msgstr "БР-471ДС"
 
+msgid "_122mm_UBR-471P_S"
+msgstr "ЗБК-471"
+
+msgid "_122mm_UBR-471_S"
+msgstr "БР-471Д"
+
+msgid "_122mm_UBR-472PBM_H"
+msgstr "УБР-472ПБМ"
+
 msgid "_122mm_UBR-472PBM_SH"
 msgstr "УБР-472ПБМ"
 
@@ -7419,6 +7592,9 @@ msgstr "УБР-471"
 
 msgid "_122mm_UBR_471_T"
 msgstr "УБР-471"
+
+msgid "_122mm_UBR_472PM_H"
+msgstr "УБР-472ПМ"
 
 msgid "_122mm_UBR_472PM_SH"
 msgstr "УБР-472ПМ"
@@ -7438,6 +7614,9 @@ msgstr "УОФ-471МД"
 msgid "_122mm_UOF-471_CN"
 msgstr "УОФ-470"
 
+msgid "_122mm_UOF-471_S"
+msgstr "УОФ-471"
+
 msgid "_122mm_UOF-472"
 msgstr "УОФ-472"
 
@@ -7456,6 +7635,9 @@ msgstr "УОФ-471"
 msgid "_122mm_UOF_472U"
 msgstr "УОФ-472У"
 
+msgid "_122mm_VBR472B_H"
+msgstr "ВБР-472Б"
+
 msgid "_122mm_VBR472B_SH"
 msgstr "ВБР-472Б"
 
@@ -7468,6 +7650,9 @@ msgstr "122-мм гаўбіца М-30 уз. 1938 г."
 msgid "_122mm_cannon_U-11"
 msgstr "122-мм У-11"
 
+msgid "_122mm_cannon_U-11_H"
+msgstr "122-мм У-11"
+
 msgid "_122mm_cannon_U-11_SH"
 msgstr "122-мм У-11"
 
@@ -7476,6 +7661,15 @@ msgstr "122-мм гаўбіца ўзору 1910/30 г."
 
 msgid "_122mm_howitzer_A-19"
 msgstr "122-мм гаўбіца А-19"
+
+msgid "_125mm_Bur"
+msgstr "Бур-ОФ"
+
+msgid "_125mm_D_126S"
+msgstr "125 мм Д-126С"
+
+msgid "_125mm_Rubin"
+msgstr "Бур-К"
 
 msgid "_128mm_KwK44_L55"
 msgstr "128-мм КВК-44/55"
@@ -7507,6 +7701,9 @@ msgstr "12РТ"
 msgid "_12RT_715"
 msgstr "12Р-Ш"
 
+msgid "_12RT_H"
+msgstr "12РТ-ДВ"
+
 msgid "_12RT_Roz"
 msgstr "12РТ ТИТТ"
 
@@ -7531,11 +7728,20 @@ msgstr "3ВБК"
 msgid "_130mm_3VBKS"
 msgstr "3ВБКС"
 
+msgid "_130mm_3VBK_H"
+msgstr "3УБК12М"
+
+msgid "_130mm_3VBK_ISP"
+msgstr "3ВБК"
+
 msgid "_130mm_3VBK_SH"
 msgstr "3УБК12М"
 
 msgid "_130mm_3VBM_CH"
 msgstr "3ВБМ-Ч"
+
+msgid "_130mm_3VBM_H"
+msgstr "3ВБМ14С"
 
 msgid "_130mm_3VBM_SH"
 msgstr "3ВБМ14С"
@@ -7564,11 +7770,17 @@ msgstr "53-ВБР-482"
 msgid "_130mm_53_VBR_482S"
 msgstr "53-ВБР-482С"
 
+msgid "_130mm_53_VBR_482_ISP"
+msgstr "53-ВБР-482"
+
 msgid "_130mm_53_VOF_482V"
 msgstr "53-ВОФ-482В"
 
 msgid "_130mm_53_VOF_482VS"
 msgstr "53-ВАФ-482ВС"
+
+msgid "_130mm_53_VOF_482V_ISP"
+msgstr "53-ВОФ-482В"
 
 msgid "_130mm_B-13-S2"
 msgstr "130-мм Б-13-С2"
@@ -7593,6 +7805,9 @@ msgstr "130 мм М-65М"
 
 msgid "_130mm_M_65_279_T"
 msgstr "130 мм М-65М"
+
+msgid "_130mm_M_65_ISP"
+msgstr "130-мм М-65"
 
 msgid "_130mm_OF-46"
 msgstr "ОФ-46"
@@ -7621,11 +7836,11 @@ msgstr "130-мм С-70A"
 msgid "_130mm_S-70_2"
 msgstr "130 мм С-70-2"
 
-msgid "_130mm_S-70_SH"
+msgid "_130mm_S-70_H"
 msgstr "130-мм С-70ОМ"
 
-msgid "_130mm_S-70_dualgun"
-msgstr "130 мм С-70 x2"
+msgid "_130mm_S-70_SH"
+msgstr "130-мм С-70ОМ"
 
 msgid "_130mm_S-70_fallout"
 msgstr "130-мм С-70"
@@ -7647,18 +7862,6 @@ msgstr "УБР-482ПМ"
 
 msgid "_130mm_UBR-482P_fallout"
 msgstr "УБР-482П А"
-
-msgid "_130mm_UBR-482_D_WT"
-msgstr "Ларэта"
-
-msgid "_130mm_UBR-482_D_WT_descr"
-msgstr "Нязменная муза Жан-Марка Лемартэна"
-
-msgid "_130mm_UBR-482_D_WT_long_special"
-msgstr "Стрэл, які прычыняе значныя пашкоджанні тэхніцы праціўніка."
-
-msgid "_130mm_UBR-482_D_WT_short_special"
-msgstr "Пры выкарыстанні:"
 
 msgid "_130mm_UBR-482_fallout"
 msgstr "УБР-482 А"

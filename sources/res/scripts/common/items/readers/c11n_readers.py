@@ -110,6 +110,15 @@ class BaseCustomizationItemXmlReader(object):
             fn.tags = iv._readTags(xmlCtx, section, 'tags', 'vehicle')
         return fn
 
+    @staticmethod
+    def _parseGroup(userString):
+        parts = userString.split('/')
+        if len(parts) != 2:
+            return ''
+        if not parts[0].startswith('#vehicle_customization:'):
+            return ''
+        return parts[1]
+
 
 class PaintXmlReader(BaseCustomizationItemXmlReader):
     __slots__ = ()
@@ -131,6 +140,9 @@ class PaintXmlReader(BaseCustomizationItemXmlReader):
                     if ctype & i:
                         target.usageCosts[i] = cost
 
+        if section.has_key('userString') and section.name == 'itemGroup':
+            target.colorGroup = self._parseGroup(ix.readString(xmlCtx, section, 'userString'))
+
     def _readClientOnlyFromXml(self, target, xmlCtx, section, cache=None):
         super(PaintXmlReader, self)._readClientOnlyFromXml(target, xmlCtx, section)
         if section.has_key('texture'):
@@ -150,6 +162,10 @@ class DecalXmlReader(BaseCustomizationItemXmlReader):
         super(DecalXmlReader, self)._readFromXml(target, xmlCtx, section)
         if section.has_key('type'):
             target.type = readEnum(xmlCtx, section, 'type', DecalType)
+        if section.name == 'itemGroup' and section.has_key('userString'):
+            target.decalGroup = self._parseGroup(ix.readString(xmlCtx, section, 'userString'))
+        if target.parentGroup and target.parentGroup.itemPrototype.type == 0:
+            target.parentGroup.itemPrototype.type = target.type
 
     def _readClientOnlyFromXml(self, target, xmlCtx, section, cache=None):
         super(DecalXmlReader, self)._readClientOnlyFromXml(target, xmlCtx, section)
@@ -176,6 +192,8 @@ class ProjectionDecalXmlReader(BaseCustomizationItemXmlReader):
            'forwardEmissionBrightness': section.readFloat('forwardEmissionBrightness', DEFAULT_FORWARD_EMISSION), 
            'deferredEmissionBrightness': section.readFloat('deferredEmissionBrightness', DEFAULT_DEFERRED_EMISSION), 
            'emissionAnimationSpeed': section.readFloat('emissionAnimationSpeed', DEFAULT_EMISSION_ANIMATION_SPEED)}
+        if section.name == 'itemGroup' and section.has_key('userString'):
+            target.projectionDecalGroup = self._parseGroup(ix.readString(xmlCtx, section, 'userString'))
 
     def _readClientOnlyFromXml(self, target, xmlCtx, section, cache=None):
         super(ProjectionDecalXmlReader, self)._readClientOnlyFromXml(target, xmlCtx, section)
@@ -420,6 +438,8 @@ class StyleXmlReader(BaseCustomizationItemXmlReader):
         totalSeason = sum(target.outfits)
         if totalSeason != target.season and not prototype:
             ix.raiseWrongXml(xmlCtx, 'outfits', 'style season must correspond to declared outfits')
+        if section.name == 'itemGroup' and section.has_key('userString'):
+            target.styleGroup = self._parseGroup(ix.readString(xmlCtx, section, 'userString'))
 
     @staticmethod
     def _readItemsFilterFromXml(itemType, xmlCtx, section):
@@ -476,6 +496,8 @@ class InsigniaXmlReader(BaseCustomizationItemXmlReader):
 
     def _readFromXml(self, target, xmlCtx, section, cache=None):
         super(InsigniaXmlReader, self)._readFromXml(target, xmlCtx, section)
+        if section.name == 'itemGroup' and section.has_key('userString'):
+            target.insigniaGroup = self._parseGroup(ix.readString(xmlCtx, section, 'userString'))
 
     def _readClientOnlyFromXml(self, target, xmlCtx, section, cache=None):
         super(InsigniaXmlReader, self)._readClientOnlyFromXml(target, xmlCtx, section)

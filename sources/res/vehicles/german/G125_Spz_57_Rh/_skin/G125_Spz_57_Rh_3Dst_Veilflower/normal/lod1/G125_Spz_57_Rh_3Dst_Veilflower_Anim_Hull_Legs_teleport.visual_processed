@@ -328,8 +328,8 @@
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>lid_BlendBone</node>
 		<geometry>
-			<vertices>afga.vertices</vertices>
-			<primitive>afga.indices</primitive>
+			<vertices>teleport_anim_Shape.vertices</vertices>
+			<primitive>teleport_anim_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -365,8 +365,8 @@
 		<node>Leg_rt_front04_jnt_BlendBone</node>
 		<node>Leg_rt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>fghd.vertices</vertices>
-			<primitive>fghd.indices</primitive>
+			<vertices>leg_anim_04_Shape.vertices</vertices>
+			<primitive>leg_anim_04_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -402,8 +402,8 @@
 		<node>Leg_rt_back04_jnt_BlendBone</node>
 		<node>Leg_rt_back03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>tyhjty.vertices</vertices>
-			<primitive>tyhjty.indices</primitive>
+			<vertices>leg_anim_03_Shape.vertices</vertices>
+			<primitive>leg_anim_03_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -439,8 +439,8 @@
 		<node>leg_lt_front04_jnt_BlendBone</node>
 		<node>leg_lt_front03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>jgthj.vertices</vertices>
-			<primitive>jgthj.indices</primitive>
+			<vertices>leg_anim_02_Shape.vertices</vertices>
+			<primitive>leg_anim_02_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -476,8 +476,8 @@
 		<node>Leg_lt_back04_jnt_BlendBone</node>
 		<node>Leg_lt_back03_jnt_BlendBone</node>
 		<geometry>
-			<vertices>fgh.vertices</vertices>
-			<primitive>fgh.indices</primitive>
+			<vertices>leg_anim_01_Shape.vertices</vertices>
+			<primitive>leg_anim_01_Shape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -508,9 +508,9 @@
 	</renderSet>
 	<constraints/>
 	<boundingBox>
-		<min>-2.036662 -1.141893 -2.031576</min>
-		<max>2.076597 0.803692 3.489372</max>
+		<min>-2.036660 -1.141893 -2.031577</min>
+		<max>2.076597 0.803692 3.489367</max>
 	</boundingBox>
-	<geometrySize>56110</geometrySize>
+	<geometrySize>55750</geometrySize>
 	<minUVDensity>0.014712</minUVDensity>
 </root>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/russian/R228_Duplet/normal/lod1/Hull</parent>
+	<tank>true</tank>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/russian/R228_Duplet/normal/lod0/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.653288 -0.556303 -3.658319</min>
+		<max>1.653288 0.621213 3.276753</max>
+	</visibilityBox>
+</root>

@@ -880,6 +880,9 @@
 			<isElite>
 				<Type>BOOL</Type>
 			</isElite>
+			<statTrackFrags>
+				<Type>INT32</Type>
+			</statTrackFrags>
 		</Properties>
 	</ARENA_VEH_INFO>
 	<USER_EXTRA_SETTINGS>
@@ -977,15 +980,15 @@
 			<igrType>
 				<Type>INT8</Type>
 			</igrType>
-			<potapovQuestIDs>
+			<pmQuestsIDs>
 				<Type>
 					ARRAY
 					<of>UINT16</of>
 				</Type>
-			</potapovQuestIDs>
-			<potapovQuestInfo>
+			</pmQuestsIDs>
+			<pmQuestInfo>
 				<Type>PYTHON</Type>
-			</potapovQuestInfo>
+			</pmQuestInfo>
 			<vehiclesInfo>
 				<Type>
 					ARRAY
@@ -1213,9 +1216,6 @@
 			<gunPiercing>
 				<Type>FLOAT</Type>
 			</gunPiercing>
-			<gunCanShoot>
-				<Type>BOOL</Type>
-			</gunCanShoot>
 		</Properties>
 	</VEHICLE_SYNC_ATTRS>
 	<IS_OBSERVED_BY_ENEMY>
@@ -1539,10 +1539,6 @@
 		ARRAY
 		<of>INT32</of>
 	</LIST_OF_COMP_DESCRS>
-	<LIST_OF_IDX>
-		ARRAY
-		<of>INT8</of>
-	</LIST_OF_IDX>
 	<AVATAR_AMMO_VIEWS>
 		FIXED_DICT
 		<Properties>
@@ -1557,23 +1553,6 @@
 			</compDescrs>
 		</Properties>
 	</AVATAR_AMMO_VIEWS>
-	<AVATAR_AMMO_FOR_CELL>
-		FIXED_DICT
-		<Properties>
-			<abilitiesIDs>
-				<Type>
-					ARRAY
-					<of>INT8</of>
-				</Type>
-			</abilitiesIDs>
-			<purchasedAbilities>
-				<Type>
-					ARRAY
-					<of>INT8</of>
-				</Type>
-			</purchasedAbilities>
-		</Properties>
-	</AVATAR_AMMO_FOR_CELL>
 	<POST_PROGRESSION_SETUPS>
 		FIXED_DICT
 		<Properties>
@@ -2018,15 +1997,15 @@
 			<igrType>
 				<Type>INT8</Type>
 			</igrType>
-			<potapovQuestIDs>
+			<pmQuestsIDs>
 				<Type>
 					ARRAY
 					<of>UINT16</of>
 				</Type>
-			</potapovQuestIDs>
-			<potapovQuestInfo>
+			</pmQuestsIDs>
+			<pmQuestInfo>
 				<Type>PYTHON</Type>
-			</potapovQuestInfo>
+			</pmQuestInfo>
 			<ranked>
 				<Type>PYTHON</Type>
 			</ranked>
@@ -2060,6 +2039,9 @@
 			<botDisplayStatus>
 				<Type>UINT8</Type>
 			</botDisplayStatus>
+			<statTrackFrags>
+				<Type>INT32</Type>
+			</statTrackFrags>
 		</Properties>
 	</CLIENT_VEHICLE_PUBLIC_INFO>
 	<PLAY_LIMITS>
@@ -2638,46 +2620,6 @@
 		ARRAY
 		<of>DEBUFF_INFO</of>
 	</DEBUFF_INFO_LIST>
-	<TIMER_INFO>
-		FIXED_DICT
-		<Properties>
-			<factor>
-				<Type>FLOAT32</Type>
-			</factor>
-			<left>
-				<Type>FLOAT32</Type>
-			</left>
-			<endTime>
-				<Type>FLOAT32</Type>
-			</endTime>
-		</Properties>
-	</TIMER_INFO>
-	<HEALTH_INFO>
-		FIXED_DICT
-		<Properties>
-			<vehicleID>
-				<Type>OBJECT_ID</Type>
-			</vehicleID>
-			<health>
-				<Type>UINT16</Type>
-			</health>
-		</Properties>
-	</HEALTH_INFO>
-	<HEALTH_INFO_LIST>
-		ARRAY
-		<of>HEALTH_INFO</of>
-	</HEALTH_INFO_LIST>
-	<UDO_INFO>
-		FIXED_DICT
-		<Properties>
-			<guid>
-				<Type>STRING</Type>
-			</guid>
-			<position>
-				<Type>VECTOR2</Type>
-			</position>
-		</Properties>
-	</UDO_INFO>
 	<ROCKET_ACCELERATION_STATE_STATUS>
 		FIXED_DICT
 		<AllowNone>true</AllowNone>
@@ -2876,9 +2818,6 @@
 			<stage>
 				<Type>UINT8</Type>
 			</stage>
-			<locked>
-				<Type>BOOL</Type>
-			</locked>
 		</Properties>
 	</VISUAL_SCRIPT_EQUIPMENT_STATE>
 	<VISUAL_SCRIPT_EQUIPMENT_PUBLIC_STATE>
@@ -2887,9 +2826,6 @@
 			<stage>
 				<Type>UINT8</Type>
 			</stage>
-			<prevStage>
-				<Type>UINT8</Type>
-			</prevStage>
 		</Properties>
 	</VISUAL_SCRIPT_EQUIPMENT_PUBLIC_STATE>
 	<SPAWN_AVAILABLE_VEHICLE>
@@ -3028,42 +2964,4 @@
 			</lockedLives>
 		</Properties>
 	</TEAM_LIVES>
-	<RESPAWN_TIME_INFO>
-		FIXED_DICT
-		<Properties>
-			<vehicleID>
-				<Type>OBJECT_ID</Type>
-			</vehicleID>
-			<spawnTime>
-				<Type>FLOAT32</Type>
-			</spawnTime>
-			<delay>
-				<Type>FLOAT32</Type>
-			</delay>
-		</Properties>
-	</RESPAWN_TIME_INFO>
-	<CIRCUIT_OVERLOAD_INFO>
-		FIXED_DICT
-		<AllowNone>true</AllowNone>
-		<Properties>
-			<prefabPath>
-				<Type>STRING</Type>
-			</prefabPath>
-		</Properties>
-	</CIRCUIT_OVERLOAD_INFO>
-	<IMPACT_AREA_INFO>
-		FIXED_DICT
-		<AllowNone>true</AllowNone>
-		<Properties>
-			<timeBeforeDamage>
-				<Type>FLOAT</Type>
-			</timeBeforeDamage>
-			<isVisible>
-				<Type>BOOL</Type>
-			</isVisible>
-			<bossType>
-				<Type>STRING</Type>
-			</bossType>
-		</Properties>
-	</IMPACT_AREA_INFO>
 </root>

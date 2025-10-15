@@ -1,0 +1,82 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "result/continueButton"
+msgstr "ПРАЦЯГНУЦЬ"
+
+msgid "result/finishReasonDescr/baseCaptured"
+msgstr "ВАШУ БАЗУ ЗАХАПІЛІ. ХВАЛЯЎ ПРОЙДЗЕНА: %(wavesDone)s З %(wavesCount)s"
+
+msgid "result/finishReasonDescr/defaultWin"
+msgstr "ПАРТАЛ ЗНІШЧАНЫ"
+
+msgid "result/finishReasonDescr/ratteDestroyed"
+msgstr "РАТЭ ПЕРАМОЖАНЫ"
+
+msgid "result/finishReasonDescr/technicalDefeat"
+msgstr ""
+"КАМАНДА ПАКІНУЛА БОЙ. ХВАЛЯЎ ПРОЙДЗЕНА: %(wavesDone)s З %(wavesCount)s"
+
+msgid "result/finishReasonDescr/timeOut"
+msgstr "ЧАС ВЫЙШАЎ. ХВАЛЯЎ ПРОЙДЗЕНА: %(wavesDone)s З %(wavesCount)s"
+
+msgid "result/footer/event"
+msgstr "ПАДЗЕЯ «РАЗЛОМ»"
+
+msgid "result/footer/eventTime"
+msgstr "%(date)s, працягласць бою: %(time)s"
+
+msgid "result/footer/eventTitle"
+msgstr "%(event)s • СКЛАДАНАСЦЬ: %(level)s"
+
+msgid "result/leaderBoard/ally"
+msgstr "Хаўруснікі"
+
+msgid "result/stats/damageBlockedByArmor"
+msgstr "Заблакавана"
+
+msgid "result/stats/damageDealt"
+msgstr "Пашкоджанні"
+
+msgid "result/stats/kills"
+msgstr "Знішчана"
+
+msgid "result/stats/place"
+msgstr "Месца"
+
+msgid "result/tooltip/stat/damageBlockedByArmor/descr"
+msgstr "Колькасць адзінак пашкоджанняў, заблакаваных бранёй вашай машыны."
+
+msgid "result/tooltip/stat/damageBlockedByArmor/title"
+msgstr "Заблакавана пашкоджанняў"
+
+msgid "result/tooltip/stat/damageDealt/descr"
+msgstr "Колькасць прычыненых вамі пашкоджанняў."
+
+msgid "result/tooltip/stat/damageDealt/title"
+msgstr "Прычыненыя пашкоджанні"
+
+msgid "result/tooltip/stat/kills/descr"
+msgstr "Колькасць знішчаных вамі варожых машын."
+
+msgid "result/tooltip/stat/kills/title"
+msgstr "Знішчана ворагаў"
+
+msgid "result/tooltip/stat/place/descr"
+msgstr "Ваша пазіцыя па выніках бою."
+
+msgid "result/tooltip/stat/place/title"
+msgstr "Занятае месца"
+
+msgid "tab/leaderboard"
+msgstr "Камандны вынік"
+
+msgid "tab/result"
+msgstr "Вынікі бою"

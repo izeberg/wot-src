@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/german/G181_StuG_Maus_17cm/crash/lod4/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.852282 -0.553511 -0.012209</min>
+		<max>0.852282 0.685929 7.482591</max>
+	</visibilityBox>
+</root>

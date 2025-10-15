@@ -8,11 +8,25 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "awardView/description"
+msgstr ""
+"Отличное пополнение в рядах тяжёлых советских танков, логичное развитие "
+"концепции тяжелобронированной и прекрасно вооружённой машины прорыва, "
+"способной в одиночку удерживать высоты или продавливать направления, больно "
+"кусая снарядами 152-мм орудия и реализуя неукротимый потенциал "
+"инновационного газотурбинного двигателя."
+
 msgid "awardView/end"
 msgstr "СОБЫТИЕ ЗАВЕРШЕНО"
 
+msgid "awardView/inHangar"
+msgstr "В Ангаре"
+
 msgid "awardView/info"
 msgstr "Номер стиля"
+
+msgid "awardView/role"
+msgstr "Средний танк поддержки"
 
 msgid "awardView/toHangar"
 msgstr "Посмотреть в Ангаре"
@@ -139,6 +153,14 @@ msgstr "Собрано ресурсов:"
 msgid "mainView/footer/backToHangar/button/text"
 msgstr "Вернуться в Ангар"
 
+msgid "mainView/footer/beforeEvent/subTitle"
+msgstr "?empty?"
+
+msgid "mainView/footer/beforeEvent/title"
+msgstr ""
+"Поторопитесь вложить необходимые для сборки ресурсы и получите "
+"%(vehicleName)s!"
+
 msgid "mainView/footer/buttonChoose/text"
 msgstr "Выбрать ресурсы"
 
@@ -184,6 +206,9 @@ msgstr "До"
 
 msgid "mainView/timer/leftTime"
 msgstr "Осталось"
+
+msgid "mainView/timer/lessThanMinute"
+msgstr "< 1 мин."
 
 msgid "resourcesLoadingView/buttons/close"
 msgstr "Закрыть"
@@ -237,7 +262,7 @@ msgid "resourcesLoadingView/resourcesHeader/blueprints"
 msgstr "Фрагменты чертежей"
 
 msgid "resourcesLoadingView/resourcesHeader/currency"
-msgstr "Валюты"
+msgstr "Ресурсы"
 
 msgid "resourcesLoadingView/resourcesHeader/premiums"
 msgstr "Дни премиум аккаунта"
@@ -278,10 +303,10 @@ msgstr "Машины без номера"
 msgid "tooltips/entryPoint/notStartedEvent/text"
 msgstr ""
 "Участвуйте в событии, вкладывайте ресурсы и получите %(vehicleName) "
-"%(uniqVehicleText). Количество машин ограничено."
+"%(uniqVehicleText)Количество машин ограничено."
 
 msgid "tooltips/entryPoint/notStartedEvent/vehicleString/text"
-msgstr "с номерным 3D-стилем"
+msgstr "с номерным 3D-стилем."
 
 msgid "tooltips/entryPoint/paused/text"
 msgstr "Событие временно недоступно"
@@ -346,11 +371,12 @@ msgstr "Фрагменты чертежей"
 
 msgid "tooltips/resourcesLoadingView/header/currency_description"
 msgstr ""
-"Начисляются за активные действия в бою. Также приобретаются за реальные "
-"деньги."
+"Ряд игровых валют, которые можно использовать для обмена. Золото можно "
+"приобрести за реальные деньги, остальное — заработать в сражениях, получить "
+"за боевые задачи и другие активные действия в игре."
 
 msgid "tooltips/resourcesLoadingView/header/currency_title"
-msgstr "Валюты"
+msgstr "Ресурсы"
 
 msgid "tooltips/resourcesLoadingView/header/premiums_description"
 msgstr "Дни Танкового премиум аккаунта."
@@ -384,8 +410,9 @@ msgstr ""
 
 msgid "tooltips/uniq_style/description/secondPart"
 msgstr ""
-"Номер находится на передней и задней частях корпуса. Количество машин с "
-"уникальными номерами ограничено."
+"Номер располагается на стволе с двух сторон и на задней части корпуса. "
+"Машина у каждого владельца имеет свой уникальный номер, который не может "
+"повторяться. Количество машин с уникальными номерами ограничено."
 
 msgid "tooltips/uniq_style/moreInfo"
 msgstr ""

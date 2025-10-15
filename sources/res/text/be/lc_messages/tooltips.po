@@ -947,14 +947,6 @@ msgstr ""
 " развярнуцца на месцы. Модуль таксама ўплывае на стабілізацыю гарматы (чым "
 "лепшая стабілізацыя, тым меншы роскід падчас руху)."
 
-msgid "advanced/wt_largeMedkit"
-msgstr ""
-"Пры выкарыстанні імгненна лечыць усіх параненых членаў экіппажа і здымае "
-"аглушэнне."
-
-msgid "advanced/wt_largeRepairkit"
-msgstr "Пры выкарыстанні імгненна рамантуе ўсе пашкоджаныя модулі."
-
 msgid "ammo/auto/body"
 msgstr ""
 "Па вяртанні машыны з бою боезапас\n"
@@ -1512,6 +1504,16 @@ msgstr "Вы зможаце купіць тавары з раздзела «Та
 
 msgid "awardItem/ranked_202203_access/header"
 msgstr "Доступ да куплі"
+
+msgid "awardItem/razlom_coin/body"
+msgstr ""
+"Знаходзячыся ў свеце разлому, вы зможаце зарабляць адмысловыя манеты, якія "
+"можна абмяняць на каштоўныя прадметы ў Модулі забеспячэння. Манеты можна "
+"атрымаць ва ўзнагароду за закрыццё этапаў Разлому або знайсці ўнутры "
+"адмысловых набораў."
+
+msgid "awardItem/razlom_coin/header"
+msgstr "Манета «Разлом»"
 
 msgid "awardItem/slots/body"
 msgstr "Дадатковы вольны слот для новай машыны ў Гаражы."
@@ -5665,9 +5667,6 @@ msgstr "Выберыце мапу, каб уступіць у бой."
 msgid "hangar/startBtn/mapsTraining/notReady/header"
 msgstr "Недаступна"
 
-msgid "hangar/startBtn/noTicket/body"
-msgstr "Для ўваходу ў бой патрэбны ключ"
-
 msgid "hangar/startBtn/notSupportFor11lvl/body"
 msgstr "Выбраная машына часова недаступная для ўступлення ў бой"
 
@@ -5676,13 +5675,6 @@ msgstr "Немагчыма ўступіць у бой"
 
 msgid "hangar/startBtn/preview/body"
 msgstr "Каб уступіць у бой, вярніцеся ў Гараж і выберыце машыну."
-
-msgid "hangar/startBtn/primeNotAvailable/body"
-msgstr ""
-"На гэтым серверы дзейнічае рэжым спынення агню. Перайдзіце на іншы сервер."
-
-msgid "hangar/startBtn/primeNotAvailable/header"
-msgstr "Немагчыма ўступіць у бой"
 
 msgid "hangar/startBtn/squadNotReady/body"
 msgstr "Каб выйсці ў бой, выберыце машыну і пацвердзіце гатоўнасць."
@@ -8950,6 +8942,47 @@ msgstr ""
 msgid "notrecruitedtankman/tankmen_May25_3/label"
 msgstr "Падзея «Час герояў»"
 
+msgid "notrecruitedtankman/tankmen_Portal25_1/desc"
+msgstr ""
+"Выбітны аператар ЭВМ, вядучы спецыяліст у вылічальным аддзеле НПВА "
+"«Перспектыва». Стваральнік праграмнага забеспячэння марсаходаў, адпраўленых "
+"на Марс у межах касмічных экспедыцый. Смелая, дапытлівая, адкрытая на новае."
+" Тэхніку любіць больш, чым людзей."
+
+msgid "notrecruitedtankman/tankmen_Portal25_1/label"
+msgstr "Падзея «Разлом»"
+
+msgid "notrecruitedtankman/tankmen_Portal25_2/desc"
+msgstr ""
+"Былы разведчык, які доўгі час працаваў у міжнароднай арганізацыі «Альянс». "
+"Разумны, спакойны, з шырокай эрудыцыяй. Мае вышэйшую тэхнічную адукацыю, што"
+" дазваляе яму быць куратарам тэхнічных праектаў, у тым ліку на базе НПВА "
+"«Перспектыва». Майстар пераканання і маніпуляцыі, дзякуючы чаму паспяхова "
+"вярбуе каштоўныя кадры."
+
+msgid "notrecruitedtankman/tankmen_Portal25_2/label"
+msgstr "Падзея «Разлом»"
+
+msgid "notrecruitedtankman/tankmen_Portal25_3/desc"
+msgstr ""
+"Спецыяліст па міжнародных сувязях і гандлі ў НПВА «Перспектыва». Сын "
+"высокапастаўленага дыпламата. Атрымаў бліскучую адукацыю, валодае тонкім "
+"густам. Добры, але выхвальны і ганарысты. Лічыць, што ўсё ведае лепш за "
+"іншых. Любіць пакпіць з іншых, але дрэнна пераносіць гумар на свой адрас."
+
+msgid "notrecruitedtankman/tankmen_Portal25_3/label"
+msgstr "Падзея «Разлом»"
+
+msgid "notrecruitedtankman/tankmen_Portal25_4/desc"
+msgstr ""
+"Вядучы інжынер у эксперыментальным зборачным цэху НПВА «Перспектыва». "
+"Разумная, таленавітая, самадастатковая. Валодае своеасаблівым пачуццём "
+"гумару, мала каму зразумелым. Перад зносінамі з людзьмі аддае перавагу "
+"працы, на якой практычна жыве ў кампаніі любімага гадаванца, янота Матраса."
+
+msgid "notrecruitedtankman/tankmen_Portal25_4/label"
+msgstr "Падзея «Разлом»"
+
 msgid "notrecruitedtankman/tankmen_Razvedchik_3/desc"
 msgstr ""
 "Камандзір разведвальнага звязу. Дасведчаны і абпалены вайной афіцэр, які "
@@ -9101,8 +9134,8 @@ msgstr ""
 "Правая рука фон Крыгера, тэхнік і авантурыст да мозга касцей, былы механік "
 "праекта «Сталёвы паляўнічы», цяперашні біёграф і другі пілот Інжынера. Адзін"
 " з нямногіх, хто здольны цярпець паганы характар фон Крыгера, умеючы ўдала і"
-" дасціпна парыраваць любыя шпількі ў свой адрас. Цалкам пазбаўлены інстынкту"
-" самазахавання."
+" дасціпна парыраваць любыя шпількі на свой адрас. Цалкам пазбаўлены "
+"інстынкту самазахавання."
 
 msgid "notrecruitedtankman/tankmen_WT2025_1/label"
 msgstr "Падзея «Вафэнтрагер: рэванш»"
@@ -11845,12 +11878,6 @@ msgstr ""
 "Файлы выбранай агучкі\n"
 "пашкоджаны або адсутнічаюць."
 
-msgid "setttingsDisabledNotification/body"
-msgstr "У гэтым рэжыме частка наладаў недаступная, выберыце іншы рэжым."
-
-msgid "setttingsDisabledNotification/header"
-msgstr "Недаступна"
-
 msgid "shell/basic"
 msgstr "Базавы"
 
@@ -12164,8 +12191,8 @@ msgstr "Пастаўкі з тылу"
 
 msgid "storage/mainMenu/personal_reserves/body"
 msgstr ""
-"Змяшчае асабістыя рэзервы, якія дазваляюць часова атрымаць надбаўку да "
-"досведу або срэбра, якія здабываюцца ў баях."
+"Змяшчае асабістыя рэзервы, якія дазваляюць часова атрымаць прыбаўку да "
+"досведу або срэбра ў баях."
 
 msgid "storage/mainMenu/personal_reserves/header"
 msgstr "Асабістыя рэзервы"
@@ -12258,6 +12285,9 @@ msgstr "Машына групы %(groupNum)s недаступная"
 
 msgid "tankCarusel/xpMultiplier/body"
 msgstr "Множнік досведу за першую перамогу за дзень."
+
+msgid "tankCaruselTooltip/preferential"
+msgstr "Ільготны танк"
 
 msgid "tankCaruselTooltip/vehicleType/elite/AT-SPG"
 msgstr "Элітная СТ-САУ"
@@ -12678,9 +12708,6 @@ msgstr "%(vehicleType)s (%(nation)s)"
 
 msgid "tankman/section/specialization"
 msgstr "Спецыялізацыя:"
-
-msgid "tankman/skillsTitle"
-msgstr "Перавагі"
 
 msgid "tankman/status/inactiveSkills/header"
 msgstr "Непрыдатныя навыкі"
@@ -13178,9 +13205,6 @@ msgstr "Зніжка %(actionPrc)s, колішні кошт: %(oldPrice)s"
 msgid "vehicle/additional/header"
 msgstr "З машынай ідзе:"
 
-msgid "vehicle/afterEventEnd/title"
-msgstr "Усе баі праведзены, машына недаступная."
-
 msgid "vehicle/allModules/header"
 msgstr "Усе даследаваныя модулі"
 
@@ -13278,9 +13302,6 @@ msgstr "Кошт пракату ад"
 msgid "vehicle/multiplied_xp"
 msgstr "Баявы досвед"
 
-msgid "vehicle/overview/title"
-msgstr "Агульнае:"
-
 msgid "vehicle/radioDistance"
 msgstr "<h1>Далёкасць сувязі</h1> <h2>(км)</h2>"
 
@@ -13310,9 +13331,6 @@ msgstr "%(timeNum)s хв"
 
 msgid "vehicle/rentLeft/hours"
 msgstr "Гадзін пракату засталося"
-
-msgid "vehicle/rentLeft/noTimeLeft"
-msgstr "Усе баі праведзены, машына недаступная."
 
 msgid "vehicle/rentLeft/wins"
 msgstr "Засталося перамог да сканчэння пракату"
@@ -13349,6 +13367,12 @@ msgstr "Продаж"
 
 msgid "vehicle/speedLimits"
 msgstr "<h1>Хуткасць</h1> <h2>(км/гадз)</h2>"
+
+msgid "vehicle/statTrack/label"
+msgstr "Лічыльнік знішчаных"
+
+msgid "vehicle/statTrack/labelCount"
+msgstr "Лічыльнік знішчаных: "
 
 msgid "vehicle/stats/footnote"
 msgstr "ТТХ паказаны для машыны з экіпажам, спрактыкаваным на 100%."
@@ -14088,9 +14112,6 @@ msgstr "Няма ў Гаражы"
 
 msgid "vehicleStatus/operationError/header"
 msgstr "Фінансавая аперацыя недаступная"
-
-msgid "vehicleStatus/rentalBattleIsOver/header"
-msgstr "Пракат завершаны"
 
 msgid "vehicleStatus/rentalIsOver/header"
 msgstr "Пракат завершаны"

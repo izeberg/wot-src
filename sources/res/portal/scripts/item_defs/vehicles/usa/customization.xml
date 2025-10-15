@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<xmlns:ussr>ussr</xmlns:ussr>
+	<xmlns:germany>germany</xmlns:germany>
+	<xmlns:usa>usa</xmlns:usa>
+	<xmlns:france>france</xmlns:france>
+	<xmlns:uk>uk</xmlns:uk>
+	<xmlns:czech>czech</xmlns:czech>
+	<xmlns:poland>poland</xmlns:poland>
+	<xmlns:china>china</xmlns:china>
+	<xmlns:japan>japan</xmlns:japan>
+	<xmlns:sweden>sweden</xmlns:sweden>
+	<xmlns:italy>italy</xmlns:italy>
+	<camouflageGroups>
+		<winter>
+			<userString>#vehicle_customization:camouflage/winter</userString>
+		</winter>
+		<summer>
+			<userString>#vehicle_customization:camouflage/summer</userString>
+		</summer>
+		<desert>
+			<userString>#vehicle_customization:camouflage/desert</userString>
+		</desert>
+	</camouflageGroups>
+</root>

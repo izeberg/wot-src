@@ -157,6 +157,9 @@ msgstr "E 50 Ausf. M"
 msgid "Chassis_G00_Bomber_SH"
 msgstr "?empty?"
 
+msgid "Chassis_G00_Ratte"
+msgstr "Ratte"
+
 msgid "Chassis_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
 
@@ -258,6 +261,9 @@ msgstr "leKpz M 41 90 mm"
 msgid "Chassis_G121_Grille_15_L63"
 msgstr "Grille 15"
 
+msgid "Chassis_G121_Grille_15_L63_ISP"
+msgstr "Grille 15"
+
 msgid "Chassis_G122_VK6501H"
 msgstr "VK 65.01 (H)"
 
@@ -354,11 +360,17 @@ msgstr "Находка-4"
 msgid "Chassis_G178_Sturmtiger_V1"
 msgstr "Pz.VI Ausf. E"
 
+msgid "Chassis_G181_StuG_Maus_17cm"
+msgstr "Maus"
+
 msgid "Chassis_G182_Mausekonig"
 msgstr "Mausekönig"
 
 msgid "Chassis_G189_E100_02"
-msgstr "E 100"
+msgstr "E 100 Feuerbär"
+
+msgid "Chassis_G196_E_75_Ausf_B_Doppel"
+msgstr "E 75"
 
 msgid "Chassis_G58_VK4502P"
 msgstr "VK 45.02(P) Ausf. B"
@@ -374,12 +386,6 @@ msgstr "Aufklärungspanzer V"
 
 msgid "Chassis_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
-
-msgid "Chassis_G98_Waffentrager_E100_TLXXL"
-msgstr "Waffenträger"
-
-msgid "Chassis_G98_Waffentrager_E100_TLXXL_S"
-msgstr "Waffenträger"
 
 msgid "Chassis_G98_Waffentrager_E100_WO"
 msgstr "WT 12"
@@ -444,6 +450,9 @@ msgid "Chassis_JagdTiger_SdKfz_185"
 msgstr "Jagdtiger 8,8"
 
 msgid "Chassis_Leopard1"
+msgstr "Leopard 1"
+
+msgid "Chassis_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Chassis_Lowe"
@@ -732,19 +741,6 @@ msgstr "Отличный обзор и углы склонения орудия,
 msgid "E-100"
 msgstr "E 100"
 
-msgid "E-100_WT"
-msgstr "E 100 WT"
-
-msgid "E-100_WT_descr"
-msgstr ""
-"В июне 1943 года компания Adlerwerke получила заказ на разработку танка E "
-"100. Однако в 1944 году все работы над тяжёлыми танками были прекращены. К "
-"концу войны было изготовлено шасси прототипа, захваченное впоследствии "
-"британской армией."
-
-msgid "E-100_WT_short"
-msgstr "E 100 WT"
-
 msgid "E-100_descr"
 msgstr ""
 "В июне 1943 года компания Adlerwerke получила заказ на разработку танка E "
@@ -784,18 +780,6 @@ msgstr "E 50 FL"
 msgid "E-50_FL_short"
 msgstr "E 50 FL"
 
-msgid "E-50_WT"
-msgstr "E 50"
-
-msgid "E-50_WT_descr"
-msgstr ""
-"В 1945 году Е 50 должен был стать основным немецким средним танком и "
-"заменить «Пантеру» и «Пантеру II». Работы над танком были прекращены на "
-"стадии эскизного проектирования."
-
-msgid "E-50_WT_short"
-msgstr "E 50"
-
 msgid "E-50_descr"
 msgstr ""
 "В 1945 году Е 50 должен был стать основным немецким средним танком и "
@@ -822,18 +806,6 @@ msgstr "E 75 FL"
 
 msgid "E-75_FL_short_special"
 msgstr "Немецкий тяжёлый танк для режима «Линия фронта»."
-
-msgid "E-75_WT"
-msgstr "E 75"
-
-msgid "E-75_WT_descr"
-msgstr ""
-"В 1945 году E 75 должен был стать основным немецким тяжёлым танком и "
-"заменить «Тигра II». Работы над танком были прекращены на стадии эскизного "
-"проектирования."
-
-msgid "E-75_WT_short"
-msgstr "E 75"
 
 msgid "E-75_descr"
 msgstr ""
@@ -868,21 +840,6 @@ msgstr "E 50 M 7x7"
 msgid "E50_Ausf_M_7x7_short_special"
 msgstr "?empty?"
 
-msgid "E50_Ausf_M_WT"
-msgstr "E 50 Ausf. M"
-
-msgid "E50_Ausf_M_WT_descr"
-msgstr ""
-"Одним из требований, выдвигаемых военными к танкам E-серии, было перенесение"
-" трансмиссии в кормовую часть корпуса. Однако в процессе разработки танков E"
-" 50 и E 75 для ускорения работы была полностью заимствована компоновка "
-"моторно-трансмиссионного отделения танка «Tiger II», что полностью исключало"
-" перенос трансмиссии назад. E 50 Ausf. M — реконструкция проекта E 50 с "
-"задним расположением трансмиссии."
-
-msgid "E50_Ausf_M_WT_short"
-msgstr "E 50 M"
-
 msgid "E50_Ausf_M_descr"
 msgstr ""
 "Одним из требований, выдвигаемых военными к танкам E-серии, было перенесение"
@@ -897,9 +854,6 @@ msgstr "E 50 M"
 
 msgid "Engine_Auf_Panther"
 msgstr "Maybach HL 295 Ausf. A"
-
-msgid "Engine_VK4502P_2"
-msgstr "Maybach Neues Projekt WT"
 
 msgid "Engine_VK4502P_G"
 msgstr "Maybach HL 234 W"
@@ -942,6 +896,9 @@ msgstr "FuG 12"
 msgid "FuG12A"
 msgstr "FuG 12 A"
 
+msgid "FuG12D"
+msgstr "FuG 12"
+
 msgid "FuG12_MapsTraining_Player_HT_2"
 msgstr "FuG 12"
 
@@ -949,7 +906,7 @@ msgid "FuG12_SH"
 msgstr "FuG 12 L2"
 
 msgid "FuG12_ST"
-msgstr "FuG 12"
+msgstr "FuG 12 ST"
 
 msgid "FuG16"
 msgstr "Fu 16"
@@ -1011,9 +968,6 @@ msgstr "FuG Spr. 1"
 msgid "FuG_Spr.A"
 msgstr "Fu.Spr.Ger. \"a\""
 
-msgid "FuG_WT"
-msgstr "FuG WT"
-
 msgid "Fu_8_SE_30_M"
 msgstr "Fu 8 SE 30 M"
 
@@ -1037,6 +991,15 @@ msgstr "Брандер 21"
 
 msgid "G00_K_bomber__HW_21_AI_short"
 msgstr "Брандер 21"
+
+msgid "G00_Ratte"
+msgstr "Ратте"
+
+msgid "G00_Ratte_descr"
+msgstr "Ратте"
+
+msgid "G00_Ratte_short"
+msgstr "Ратте"
 
 msgid "G04"
 msgstr "G04"
@@ -1105,22 +1068,6 @@ msgstr "StuG III B"
 
 msgid "G103_RU_251"
 msgstr "Spähpanzer Ru 251"
-
-msgid "G103_RU_251_WT"
-msgstr "Ru 251"
-
-msgid "G103_RU_251_WT_descr"
-msgstr ""
-"Был построен компанией Henschel в 1964 году по программе замены устаревающих"
-" танков M41 Walker Bulldog в немецкой армии, где ими вооружались "
-"разведывательные батальоны танковых дивизий и другие подразделения. Базой "
-"послужила ПТ-САУ Kanonenjagdpanzer 4–5. Машина не была выпущена в серийное "
-"производство, но некоторые технические решения использовались в "
-"проектировании других танков. Количество изготовленных прототипов "
-"неизвестно."
-
-msgid "G103_RU_251_WT_short"
-msgstr "Ru 251"
 
 msgid "G103_RU_251_descr"
 msgstr ""
@@ -1353,18 +1300,6 @@ msgstr "KanJPz"
 
 msgid "G112_KanonenJagdPanzer_short_special"
 msgstr "Прекрасная мобильность и маскировка"
-
-msgid "G1134_PzKpfw_VII_WT_bot"
-msgstr "Pz.Kpfw. VII"
-
-msgid "G1134_PzKpfw_VII_WT_bot_descr"
-msgstr ""
-"Вариант сверхтяжёлого танка фирмы Krupp с задним расположением башни, "
-"прорабатывавшийся в 1942 году. Проект был свёрнут в пользу более тяжёлых "
-"машин. Не было выпущено ни одного экземпляра."
-
-msgid "G1134_PzKpfw_VII_WT_bot_short"
-msgstr "Pz.Kpfw. VII"
 
 msgid "G113_SP_I_C"
 msgstr "Spähpanzer SP I C"
@@ -1648,6 +1583,30 @@ msgstr "Отличное орудие, хорошая подвижность"
 msgid "G121_Grille_15_L63"
 msgstr "Grille 15"
 
+msgid "G121_Grille_15_L63_ISP"
+msgstr "Grille 15 (И)"
+
+msgid "G121_Grille_15_L63_ISP_descr"
+msgstr ""
+"Летом 1942 года Управление вооружений сухопутных сил Германии заключило "
+"договор с компаниями Krupp и Rheinmetall на создание САУ на шасси танка "
+"Panther. Рассматривались варианты установки 128-мм орудия K 43 и 150-мм "
+"гаубицы sFH 43. Проекты получили обозначение Grille 12 и Grille 15. Имели "
+"заднее расположение боевого отделения и отличались между собой только типом "
+"артсистемы. Позднее было принято требование об установке 150-мм пушки с "
+"длиной ствола в 63 калибра на Grille 15. Такое орудие имело возможность "
+"пробития снарядами 200-мм брони на дистанции 4000 метров. Однако работы "
+"затянулись, и проект Grille 15 так и не был реализован в металле."
+
+msgid "G121_Grille_15_L63_ISP_long_special"
+msgstr "?empty?"
+
+msgid "G121_Grille_15_L63_ISP_short"
+msgstr "Grille 15 (И)"
+
+msgid "G121_Grille_15_L63_ISP_short_special"
+msgstr "?empty?"
+
 msgid "G121_Grille_15_L63_descr"
 msgstr ""
 "Летом 1942 года Управление вооружений сухопутных сил Германии заключило "
@@ -1720,22 +1679,6 @@ msgstr "HWK 12 FL"
 
 msgid "G126_HWK_12_FL_short_special"
 msgstr "?empty?"
-
-msgid "G126_HWK_12_WT"
-msgstr "HWK 12"
-
-msgid "G126_HWK_12_WT_descr"
-msgstr ""
-"Серия лёгких гусеничных бронетранспортеров HWK 10 разрабатывалась компанией "
-"Henschel-Werke в конце 1950-х – первой половине 1960-х годов. Машины "
-"разрабатывались для экспортных поставок. Первый прототип бронетранспортера "
-"HWK 11 был создан в 1963-м году, сорок машин были поставлены в Мексику. "
-"Также было создано два прототипа разведывательной машины HWK 13. На базе "
-"общего шасси планировалось создание танка HWK 12, однако прототип построен "
-"не был."
-
-msgid "G126_HWK_12_WT_short"
-msgstr "HWK 12"
 
 msgid "G126_HWK_12_descr"
 msgstr ""
@@ -2420,6 +2363,24 @@ msgstr "Sturmtiger"
 msgid "G178_Sturmtiger_V1_short_special"
 msgstr "Огромный калибр, высокий разовый урон"
 
+msgid "G181_StuG_Maus_17cm"
+msgstr "StuG Maus 17 cm"
+
+msgid "G181_StuG_Maus_17cm_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G181_StuG_Maus_17cm_long_special"
+msgstr "?empty?"
+
+msgid "G181_StuG_Maus_17cm_short"
+msgstr "StuG Maus"
+
+msgid "G181_StuG_Maus_17cm_short_special"
+msgstr "?empty?"
+
 msgid "G182_Mausekonig"
 msgstr "Mausekönig"
 
@@ -2469,6 +2430,24 @@ msgstr "Feuerbär"
 
 msgid "G189_E100_02_short_special"
 msgstr "Все плюсы и минусы привычного Е 100, ракетные ускорители"
+
+msgid "G196_E_75_Ausf_B_Doppel"
+msgstr "E 75 Ausf B Doppel"
+
+msgid "G196_E_75_Ausf_B_Doppel_descr"
+msgstr ""
+".\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "G196_E_75_Ausf_B_Doppel_long_special"
+msgstr "?empty?"
+
+msgid "G196_E_75_Ausf_B_Doppel_short"
+msgstr "Doppel"
+
+msgid "G196_E_75_Ausf_B_Doppel_short_special"
+msgstr "?empty?"
 
 msgid "G20_Marder_II"
 msgstr "Marder II"
@@ -2695,48 +2674,6 @@ msgstr "Великолепное орудие, вращающаяся башня
 msgid "G98_Waffentrager_E100_P_short_special"
 msgstr "Магазинная система заряжания, высокая огневая мощь"
 
-msgid "G98_Waffentrager_E100_TLXXL"
-msgstr "Waffenträger"
-
-msgid "G98_Waffentrager_E100_TLXXL_S"
-msgstr "Blitzträger"
-
-msgid "G98_Waffentrager_E100_TLXXL_S_desc"
-msgstr ""
-"Если шасси, признанное слишком громоздким и неперспективным, попадёт в "
-"правильные руки, то на его основе можно построить настоящее произведение "
-"инженерного искусства — что и сделал в своё время Макс Леонард фон Кригер: "
-"выдающийся немецкий инженер, который в связи с рядом обстоятельств больше "
-"доверяет железу, чем людям. Днями и ночами он трудился, стремясь вдохнуть "
-"жизнь в своё детище. Когда достигнутый результат превзошёл все ожидания и "
-"стал вожделенным объектом охоты со стороны бывшего работодателя — Альянса, "
-"фон Кригер понял, что где как не в бою крестить своего механического "
-"монстра."
-
-msgid "G98_Waffentrager_E100_TLXXL_S_short"
-msgstr "BT"
-
-msgid "G98_Waffentrager_E100_TLXXL_S_short_special"
-msgstr "Opus Magnum фон Кригера"
-
-msgid "G98_Waffentrager_E100_TLXXL_desc"
-msgstr ""
-"Если шасси, признанное слишком громоздким и неперспективным, попадёт в "
-"правильные руки, то на его основе можно построить настоящее произведение "
-"инженерного искусства — что и сделал в своё время Макс Леонард фон Кригер: "
-"выдающийся немецкий инженер, который в связи с рядом обстоятельств больше "
-"доверяет железу, чем людям. Днями и ночами он трудился, стремясь вдохнуть "
-"жизнь в своё детище. Когда достигнутый результат превзошёл все ожидания и "
-"стал вожделенным объектом охоты со стороны бывшего работодателя — Альянса, "
-"фон Кригер понял, что где как не в бою крестить своего механического "
-"монстра."
-
-msgid "G98_Waffentrager_E100_TLXXL_short"
-msgstr "WT"
-
-msgid "G98_Waffentrager_E100_TLXXL_short_special"
-msgstr "Opus Magnum фон Кригера"
-
 msgid "G98_Waffentrager_E100_WO"
 msgstr "WT 12"
 
@@ -2870,9 +2807,6 @@ msgstr "Grille verstärkteketten"
 
 msgid "Gun_1_G00_Bomber_SH"
 msgstr "?empty?"
-
-msgid "Gun_Waffentrager_E100_WT"
-msgstr "Gun WT"
 
 msgid "H35ketten"
 msgstr "Pz.Kpfw. 38H 735 (f)"
@@ -3133,6 +3067,24 @@ msgstr "Leichttraktor verstärkteketten"
 msgid "Leopard1"
 msgstr "Leopard 1"
 
+msgid "Leopard1_ISP"
+msgstr "Leopard 1 (И)"
+
+msgid "Leopard1_ISP_descr"
+msgstr ""
+"Основной боевой танк ФРГ. Работы по созданию машины начались в 1956 году. "
+"Первые опытные образцы были построены в 1965 году на заводе Krauss-Maffei. "
+"Состоял на вооружении более чем в 10 странах мира."
+
+msgid "Leopard1_ISP_long_special"
+msgstr "?empty?"
+
+msgid "Leopard1_ISP_short"
+msgstr "Leopard 1 (И)"
+
+msgid "Leopard1_ISP_short_special"
+msgstr "?empty?"
+
 msgid "Leopard1_bob"
 msgstr "Leopard 1 BB"
 
@@ -3203,6 +3155,9 @@ msgstr "Luchs"
 msgid "Luchsketten_Ausf_B"
 msgstr "Luchs verstärkteketten"
 
+msgid "MAN_V12Z32_44"
+msgstr "MAN V12Z32/44"
+
 msgid "MB-503"
 msgstr "Daimler-Benz MB 503"
 
@@ -3236,6 +3191,12 @@ msgstr "MTU MB 838 CaM 500"
 msgid "MB-838_CAM-500_1"
 msgstr "MTU MB 838 CaM 500A"
 
+msgid "MB-838_CAM-500_1_ISP"
+msgstr "MTU MB 838 CaM 500A"
+
+msgid "MB-838_CAM-500_1_ISP_short"
+msgstr "MB 838 CaM 500A"
+
 msgid "MB-838_CAM-500_1_short"
 msgstr "MB 838 CaM 500A"
 
@@ -3247,6 +3208,9 @@ msgstr "DB 603 A2"
 
 msgid "MB509"
 msgstr "MB 509"
+
+msgid "MB509_StGM"
+msgstr "Daimler-Benz MB 509"
 
 msgid "MB517"
 msgstr "MB 517"
@@ -3304,17 +3268,6 @@ msgstr "Marder II"
 
 msgid "Maus"
 msgstr "Maus"
-
-msgid "Maus_WT"
-msgstr "Maus WT"
-
-msgid "Maus_WT_descr"
-msgstr ""
-"Разрабатывался с июня 1942 по июль 1944 года. Было изготовлено два "
-"прототипа, из которых только один получил башню с вооружением."
-
-msgid "Maus_WT_short"
-msgstr "Maus WT"
 
 msgid "Maus_descr"
 msgstr ""
@@ -3556,10 +3509,10 @@ msgid "Maybach_HL_234P60"
 msgstr "Maybach Neues Projekt"
 
 msgid "Maybach_HL_234P60_02"
-msgstr "Maybach Neues Projekt"
+msgstr "Maybach Neues Projekt F"
 
 msgid "Maybach_HL_234P60_02_short"
-msgstr "Maybach Neues Projekt"
+msgstr "Maybach Neues Projekt F"
 
 msgid "Maybach_HL_234P60_WT"
 msgstr "Maybach Neues Projekt A"
@@ -3569,6 +3522,9 @@ msgstr "Maybach Neues Projekt A"
 
 msgid "Maybach_HL_234P60_short"
 msgstr "Maybach Neues Projekt"
+
+msgid "Maybach_HL_234_ISP"
+msgstr "Maybach NL 234"
 
 msgid "Maybach_HL_234_TRM_P30"
 msgstr "Maybach HL 234 TRM P30"
@@ -3596,6 +3552,9 @@ msgstr ""
 
 msgid "Maybach_HL_235"
 msgstr "Maybach HL 235"
+
+msgid "Maybach_HL_295"
+msgstr "Maybach HL 295"
 
 msgid "Maybach_HL_45P"
 msgstr "Maybach HL 45 P"
@@ -3640,18 +3599,6 @@ msgstr "Panther II FL"
 
 msgid "Panther_II_FL_short_special"
 msgstr "?empty?"
-
-msgid "Panther_II_WT"
-msgstr "Panther II"
-
-msgid "Panther_II_WT_descr"
-msgstr ""
-"Планы создания машины появились уже в 1943 году. В 1944 г. были заказаны два"
-" прототипа с башнями от «Пантеры I». К 1945 году компанией MAN был "
-"изготовлен только один прототип."
-
-msgid "Panther_II_WT_short"
-msgstr "Panther II"
 
 msgid "Panther_II_descr"
 msgstr ""
@@ -3925,21 +3872,6 @@ msgstr "Pz.Kpfw. III/IV verstärkteketten"
 msgid "PzIII_A"
 msgstr "Pz.Kpfw. III Ausf. E"
 
-msgid "PzIII_A_WT"
-msgstr "Pz.Kpfw. III Ausf. E WT"
-
-msgid "PzIII_A_WT_descr"
-msgstr ""
-"Заказ на создание боевой гусеничной машины массой 15 тонн с пушечным "
-"вооружением поступил ещё в 1935 году. И хотя масса первой крупносерийной "
-"машины Pz.Kpfw. III Ausf. E уже достигла 19,5 тонн, её конструкция была "
-"признана удачной, и количество машин в серии достигло 96. Последующие "
-"модификации выпускались ещё более крупными партиями, в результате чего Pz. "
-"Kpfw. III стал самым массовым танком Вермахта."
-
-msgid "PzIII_A_WT_short"
-msgstr "Pz. III E WT"
-
 msgid "PzIII_A_descr"
 msgstr ""
 "Заказ на создание боевой гусеничной машины массой 15 тонн с пушечным "
@@ -4068,19 +4000,6 @@ msgstr "Pz. II J"
 
 msgid "PzII_Luchs"
 msgstr "Pz.Kpfw. II Luchs"
-
-msgid "PzII_Luchs_WT"
-msgstr "Pz.Kpfw. II Luchs WT"
-
-msgid "PzII_Luchs_WT_descr"
-msgstr ""
-"Основными отличиями данной машины от Pz.Kpfw. II Ausf. С являлись новый "
-"корпус, башня и ходовая с шахматным расположением опорных катков. Данная "
-"разведывательная машина обладала высокими характеристиками, однако в связи с"
-" дороговизной был произведён всего 131 танк модификации L."
-
-msgid "PzII_Luchs_WT_short"
-msgstr "Luchs WT"
 
 msgid "PzII_Luchs_descr"
 msgstr ""
@@ -4311,22 +4230,6 @@ msgstr ""
 msgid "PzVIB_Tiger_II_F_short"
 msgstr "Tiger II (H)"
 
-msgid "PzVIB_Tiger_II_WT"
-msgstr "Tiger II"
-
-msgid "PzVIB_Tiger_II_WT_descr"
-msgstr ""
-"Наиболее защищённый танк с самой мощной противотанковой пушкой, но с "
-"перегруженной моторно-трансмисcионной группой и ходовой частью, а также со "
-"слишком большой массой. При условии навязывания противнику огневого боя на "
-"большой дистанции преимущества «Тигра II» в вооружении и броневой защите "
-"были подавляющими. Однако из-за большой массы, низкой надёжности двигателя и"
-" трансмиссии, а также вследствие небольшого количества произведённых машин "
-"«Тигр II» не оказал серьёзного влияния на ход боевых действий."
-
-msgid "PzVIB_Tiger_II_WT_short"
-msgstr "Tiger II"
-
 msgid "PzVIB_Tiger_II_descr"
 msgstr ""
 "Наиболее защищённый танк с самой мощной противотанковой пушкой, но с "
@@ -4423,23 +4326,12 @@ msgstr "Pz.Kpfw. Tiger Ausf. E"
 msgid "PzVI_Vetstaerktketten_MapsTraining_Player_HT_2"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
 
-msgid "PzVI_WT"
-msgstr "Tiger I"
-
-msgid "PzVI_WT_descr"
-msgstr ""
-"Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
-" с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
-" участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
-"на Курской Дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
-" I» использовался до конца войны. Всего было выпущено 1354 танка."
-
 msgid "PzVI_descr"
 msgstr ""
 "Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
 " с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
 " участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
-"на Курской Дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
+"на Курской дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
 " I» использовался до конца войны. Всего было выпущено 1354 танка."
 
 msgid "PzVI_descr_MapsTraining_Player_HT_2"
@@ -4447,7 +4339,7 @@ msgstr ""
 "Разработка танка началась в 1937 году компанией Henschel. Выпускался серийно"
 " с 1942 года. Впервые использовался в боевых действиях под Ленинградом. Танк"
 " участвовал в боях в Тунисе, самое массовое применение было в ходе сражения "
-"на Курской Дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
+"на Курской дуге. Несмотря на прекращение производства летом 1944 года, «Тигр"
 " I» использовался до конца войны. Всего было выпущено 1354 танка."
 
 msgid "PzV_PzIV"
@@ -4493,17 +4385,6 @@ msgstr ""
 
 msgid "PzV_PzIV_short"
 msgstr "Pz. V/IV"
-
-msgid "PzV_WT"
-msgstr "Panther"
-
-msgid "PzV_WT_descr"
-msgstr ""
-"Этот знаменитый танк выпускался с января 1943 по апрель 1945 года. Всего "
-"было выпущено 5796 машин, не считая восьми шасси серии F."
-
-msgid "PzV_WT_short"
-msgstr "Panther WT"
 
 msgid "PzV_descr"
 msgstr ""
@@ -4559,17 +4440,6 @@ msgstr "Pz. IV D"
 msgid "Pz_IV_AusfH"
 msgstr "Pz.Kpfw. IV Ausf. H"
 
-msgid "Pz_IV_AusfH_WT"
-msgstr "Pz.Kpfw. IV Ausf. H WT"
-
-msgid "Pz_IV_AusfH_WT_descr"
-msgstr ""
-"Pz. IV модификации G выпускался с мая 1942 года. В апреле 1943 года параллельно начался выпуск машин модификации Н, которая стала самой массовой в истории Pz. IV. Дополнительное бронирование на первых моделях было навесным, а впоследствии было заменено единой плитой толщиной 80 мм.\n"
-"Была установлена новая трансмиссия, хотя и несколько снизившая скорость машины, но более надёжная. Также на танки этих модификаций стали ставить экраны толщиной 5-8 мм. Всего было выпущено 3774 машины модификации H."
-
-msgid "Pz_IV_AusfH_WT_short"
-msgstr "Pz. IV H WT"
-
 msgid "Pz_IV_AusfH_descr"
 msgstr ""
 "Pz. IV модификации G выпускался с мая 1942 года. В апреле 1943 года параллельно начался выпуск машин модификации Н, которая стала самой массовой в истории Pz. IV. Дополнительное бронирование на первых моделях было навесным, а впоследствии было заменено единой плитой толщиной 80 мм.\n"
@@ -4615,11 +4485,11 @@ msgstr "R/5a"
 msgid "Radio_Auf_Panther"
 msgstr "FuG 12 A-OR"
 
-msgid "Radio_VK4502P"
-msgstr "10WSc WT"
-
 msgid "Radio_VK4502P_G"
 msgstr "FuG5 W"
+
+msgid "Ratte_Radio"
+msgstr "10WSc"
 
 msgid "Renault"
 msgstr "Renault"
@@ -4674,6 +4544,9 @@ msgid "SEM25"
 msgstr "SEM 25"
 
 msgid "SEM25_1"
+msgstr "SEM 25A"
+
+msgid "SEM25_1_ISP"
 msgstr "SEM 25A"
 
 msgid "SEM_25A"
@@ -4837,9 +4710,6 @@ msgstr ""
 "Tatra Typ\n"
 "TD 103 P"
 
-msgid "Tiger_WT_short"
-msgstr "Tiger I"
-
 msgid "Tiger_short"
 msgstr "Tiger I"
 
@@ -4869,6 +4739,9 @@ msgstr "E 50 Ausf. M"
 
 msgid "Turret_1_G00_Bomber_SH"
 msgstr "?empty?"
+
+msgid "Turret_1_G00_Ratte"
+msgstr "Ratte"
 
 msgid "Turret_1_G04_PzVI_Tiger_IA"
 msgstr "Pz.Kpfw. Tiger Ausf. E"
@@ -4959,6 +4832,9 @@ msgid "Turret_1_G120_M41_90_GrandFinal"
 msgstr "leKpz M 41 90 mm"
 
 msgid "Turret_1_G121_Grille_15_L63"
+msgstr "Grille 15"
+
+msgid "Turret_1_G121_Grille_15_L63_ISP"
 msgstr "Grille 15"
 
 msgid "Turret_1_G122_VK6501H"
@@ -5057,8 +4933,14 @@ msgstr "Находка-4"
 msgid "Turret_1_G178_Sturmtiger_V1"
 msgstr "Sturmtiger"
 
+msgid "Turret_1_G181_StuG_Maus_17cm"
+msgstr "StuG Maus"
+
 msgid "Turret_1_G182_Mausekonig"
 msgstr "Mausekönig"
+
+msgid "Turret_1_G196_E_75_Ausf_B_Doppel"
+msgstr "Doppel"
 
 msgid "Turret_1_G58_VK4502P"
 msgstr "VK 45.02 (P) Ausf. B"
@@ -5074,12 +4956,6 @@ msgstr "Aufklärungspanzer V"
 
 msgid "Turret_1_G98_Waffentrager_E100_P"
 msgstr "Waffenträger auf E 100 (P)"
-
-msgid "Turret_1_G98_Waffentrager_E100_TLXXL"
-msgstr "Waffenträger"
-
-msgid "Turret_1_G98_Waffentrager_E100_TLXXL_S"
-msgstr "Waffenträger"
 
 msgid "Turret_1_G98_Waffentrager_E100_WO"
 msgstr "WT 12"
@@ -5109,6 +4985,9 @@ msgid "Turret_1_JagdTiger_SdKfz_185"
 msgstr "8,8 cm Pak 43 Jagdtiger"
 
 msgid "Turret_1_Leopard1"
+msgstr "Leopard 1"
+
+msgid "Turret_1_Leopard1_ISP"
 msgstr "Leopard 1"
 
 msgid "Turret_1_Lowe"
@@ -5233,7 +5112,7 @@ msgid "Turret_2_G126_HWK_12"
 msgstr "HWK 12 verbessert"
 
 msgid "Turret_2_G189_E100_02"
-msgstr "E 100"
+msgstr "E 100 Feuerbär"
 
 msgid "Turret_2_Indien_Panzer"
 msgstr "Indien-Panzer"
@@ -5351,17 +5230,6 @@ msgstr "VK 20.01 D"
 
 msgid "VK2801"
 msgstr "VK 28.01"
-
-msgid "VK2801_WT"
-msgstr "VK 28.01 WT"
-
-msgid "VK2801_WT_descr"
-msgstr ""
-"Разведывательный танк, разрабатывавшийся компанией Daimler-Benz. В металле "
-"проект реализован не был."
-
-msgid "VK2801_WT_short"
-msgstr "VK 28.01 WT"
 
 msgid "VK2801_descr"
 msgstr ""
@@ -5572,22 +5440,6 @@ msgstr "VK 36.01 (H)"
 msgid "VK3601H_Standardturm_short"
 msgstr "VK 36.01 (H)"
 
-msgid "VK3601H_WT"
-msgstr "VK 36.01 (H) WT"
-
-msgid "VK3601H_WT_descr"
-msgstr ""
-"Немецкий опытный тяжёлый танк времён Второй мировой войны, разработанный "
-"компанией Henschel, дальнейшее развитие проекта VK 30.01 (H). Проект стал "
-"одним из этапов разработки танка «Тигр». Всего в начале 1942 года было "
-"построено 8 шасси и 1 прототип. В ходе работы над прототипом были отработаны"
-" многие технические решения, которые впоследствии послужили основой при "
-"разработке тяжёлых танков Германии во Второй мировой войне. В дальнейшем "
-"шасси использовались в качестве базы для ремонтно-эвакуационных машин."
-
-msgid "VK3601H_WT_short"
-msgstr "VK 36.01 H WT"
-
 msgid "VK3601H_descr"
 msgstr ""
 "Немецкий опытный тяжёлый танк времён Второй мировой войны, разработанный "
@@ -5764,10 +5616,16 @@ msgstr "Gr 39 H1A K"
 msgid "_105mm_APCR_DM23"
 msgstr "DM23"
 
+msgid "_105mm_APCR_DM23_ISP"
+msgstr "DM23"
+
 msgid "_105mm_APDS_M_SH"
 msgstr "M 42/43"
 
 msgid "_105mm_AP_DM13"
+msgstr "DM13"
+
+msgid "_105mm_AP_DM13_ISP"
 msgstr "DM13"
 
 msgid "_105mm_AP_DM7_SH"
@@ -5780,6 +5638,9 @@ msgid "_105mm_BK_L7"
 msgstr "10,5 cm Bordkanone L7"
 
 msgid "_105mm_BK_L7A3_L51"
+msgstr "10,5 cm Bordkanone L7A3"
+
+msgid "_105mm_BK_L7A3_L51_ISP"
 msgstr "10,5 cm Bordkanone L7A3"
 
 msgid "_105mm_DM11A1"
@@ -5822,6 +5683,9 @@ msgid "_105mm_Gr_39H1H_SH"
 msgstr "Gr 39H1H"
 
 msgid "_105mm_HE_DM11"
+msgstr "DM11"
+
+msgid "_105mm_HE_DM11_ISP"
 msgstr "DM11"
 
 msgid "_105mm_K18_L52"
@@ -5976,9 +5840,15 @@ msgid "_10WSc"
 msgstr "10WSc"
 
 msgid "_10WSc_02"
+msgstr "10WSc F"
+
+msgid "_10WSc_ISP"
 msgstr "10WSc"
 
 msgid "_10WSc_MK"
+msgstr "10WSc"
+
+msgid "_10WSc_StGM"
 msgstr "10WSc"
 
 msgid "_10WSc_WT"
@@ -6019,18 +5889,6 @@ msgstr "VKL65MZ"
 
 msgid "_120mm_Versuchskanone_L65"
 msgstr "120 mm L65 Versuchskanone"
-
-msgid "_128mm_AP_Waffentrager_E100_WT"
-msgstr "Гунгнир"
-
-msgid "_128mm_AP_Waffentrager_E100_WT_descr"
-msgstr "Сокрушающее копье Макса фон Кригера."
-
-msgid "_128mm_AP_Waffentrager_E100_WT_long_special"
-msgstr "Выстрел, наносящий значительный урон технике противника."
-
-msgid "_128mm_AP_Waffentrager_E100_WT_short_special"
-msgstr "При использовании:"
 
 msgid "_128mm_K43_L55"
 msgstr "12,8 cm Kanone 43 L/55"
@@ -6242,6 +6100,9 @@ msgstr "15 cm Gr. 19 Stg FES"
 msgid "_150mm_Gr_HL"
 msgstr "Gr. HL"
 
+msgid "_150mm_Gr_HL_ISP"
+msgstr "Gr. HL"
+
 msgid "_150mm_KwK44_L38"
 msgstr "15 cm Kw.K. L/38"
 
@@ -6254,6 +6115,9 @@ msgstr "15 cm Kw.K. L/38"
 msgid "_150mm_Pak_L63"
 msgstr "15 cm Pak L/63"
 
+msgid "_150mm_Pak_L63_ISP"
+msgstr "15 cm Pak L/63"
+
 msgid "_150mm_PzGr39H2_SH"
 msgstr "Pzgr 39 H2"
 
@@ -6264,6 +6128,9 @@ msgid "_150mm_PzGr42_02"
 msgstr "Pzgr 42"
 
 msgid "_150mm_Pzgr"
+msgstr "Pzgr."
+
+msgid "_150mm_Pzgr_ISP"
 msgstr "Pzgr."
 
 msgid "_150mm_Rohr_L29_5"
@@ -6297,6 +6164,9 @@ msgid "_150mm_Sprg_L.erz"
 msgstr "Sprgr L erz."
 
 msgid "_150mm_Sprgr"
+msgstr "Sprgr."
+
+msgid "_150mm_Sprgr_ISP"
 msgstr "Sprgr."
 
 msgid "_150mm_sFH13_L17"
@@ -6337,6 +6207,18 @@ msgstr "Sprgr 18"
 
 msgid "_170mm_Sprg18_Ausf_G"
 msgstr "Sprg18 Ausf. G"
+
+msgid "_170mm_StuK_L53"
+msgstr "17 cm StuK L/53"
+
+msgid "_170mm_StuK_L53_HlGr43"
+msgstr "HlGr 43"
+
+msgid "_170mm_StuK_L53_PzGr43"
+msgstr "Pzgr 43"
+
+msgid "_170mm_StuK_L53_Sprgr_39"
+msgstr "Sprgr 39"
 
 msgid "_20cm_Pzgr40"
 msgstr "Pzgr 40"
@@ -6385,6 +6267,18 @@ msgstr "Gr. 18 Stg"
 
 msgid "_210mm_Sprg18_Ausf_G"
 msgstr "Gr. 18"
+
+msgid "_283mm_PzGr_L44"
+msgstr "Pz.Gr. L/4,4"
+
+msgid "_283mm_SKC_34"
+msgstr "28 cm SKC/34"
+
+msgid "_283mm_SprGr_L44"
+msgstr "Spr.Gr. L/4,4 Bdz"
+
+msgid "_283mm_SprGr_L46"
+msgstr "Spr.Gr. L/4,6 Kz"
 
 msgid "_2x_Hanomag_Boxer"
 msgstr "2x Hanomag Boxer"
@@ -6695,6 +6589,9 @@ msgstr "8,8 cm Pak 43 L/71"
 msgid "_88mm_KwK_43_L71B"
 msgstr "8,8 cm Kw.K. 43 L/71"
 
+msgid "_88mm_KwK_43_L71_Dual"
+msgstr "8,8 cm Kw.K. 43 L/71 D"
+
 msgid "_88mm_KwK_43_L71_N"
 msgstr "8,8 cm Kw.K. 43 L/71 mod.Vlt"
 
@@ -6728,6 +6625,9 @@ msgstr "Pzgr 40 L1"
 msgid "_88mm_Pzgr.40_43"
 msgstr "Pzgr 40/43"
 
+msgid "_88mm_Pzgr.40_43_d"
+msgstr "Pzgr 48 D"
+
 msgid "_88mm_Pzgr.40_43_n"
 msgstr "Pzgr 48"
 
@@ -6745,6 +6645,9 @@ msgstr "Pzgr. 39/1 Flak 41"
 
 msgid "_88mm_Pzgr39_43"
 msgstr "Pzgr 39/43"
+
+msgid "_88mm_Pzgr39_43_d"
+msgstr "Pzgr ver. 39/43 D"
 
 msgid "_88mm_Pzgr39_43_n"
 msgstr "Pzgr ver. 39/43"
@@ -6769,6 +6672,9 @@ msgstr "Sprgr 18 L1"
 
 msgid "_88mm_Sprg.43"
 msgstr "Sprgr 43"
+
+msgid "_88mm_Sprg.43_d"
+msgstr "Sprgr ver. 43 D"
 
 msgid "_88mm_Sprg.43_n"
 msgstr "Sprgr ver. 43"

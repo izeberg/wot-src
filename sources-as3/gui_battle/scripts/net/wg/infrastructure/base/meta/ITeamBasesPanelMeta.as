@@ -6,7 +6,7 @@ package net.wg.infrastructure.base.meta
    {
        
       
-      function as_add(param1:Number, param2:Number, param3:String, param4:String, param5:Number, param6:String, param7:String) : void;
+      function as_add(param1:Number, param2:Number, param3:String, param4:String, param5:Number, param6:String, param7:String, param8:Boolean) : void;
       
       function as_remove(param1:Number) : void;
       

@@ -8652,7 +8652,7 @@
 				<_152mm_BR-2>
 					shared
 					<maxAmmo>32</maxAmmo>
-					<reloadTime>27</reloadTime>
+					<reloadTime>25</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -60 1 -60</minPitch>
 						<maxPitch>0 0 1 0</maxPitch>
@@ -8829,7 +8829,7 @@
 				<_203mm_B-4>
 					shared
 					<maxAmmo>16</maxAmmo>
-					<reloadTime>44</reloadTime>
+					<reloadTime>41</reloadTime>
 					<pitchLimits>
 						<minPitch>0 -60 1 -60</minPitch>
 						<maxPitch>0 0 1 0</maxPitch>
@@ -8861,7 +8861,7 @@
 						<gun>30</gun>
 					</armor>
 					<aimingTime>
-						5.6
+						5.3
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

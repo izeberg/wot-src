@@ -1495,16 +1495,6 @@ package
       
       public static const DETAILS_CONDITIONS_CUMULATIVE_XP_OTHER:String = "#quests:details/conditions/cumulative/xp/other";
       
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTBOSSVULNERABLEDAMAGE:String = "#quests:details/conditions/cumulative/wtBossVulnerableDamage";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_MAXWTPLASMABONUS:String = "#quests:details/conditions/cumulative/maxWtPlasmaBonus";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtGeneratorsCaptured";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTTOTALGENERATORSCAPTURED:String = "#quests:details/conditions/cumulative/wtTotalGeneratorsCaptured";
-      
-      public static const DETAILS_CONDITIONS_CUMULATIVE_WTDEATHCOUNT:String = "#quests:details/conditions/cumulative/wtDeathCount";
-      
       public static const DETAILS_DOSSIER_SNIPERSERIES:String = "#quests:details/dossier/sniperSeries";
       
       public static const DETAILS_DOSSIER_MAXSNIPERSERIES:String = "#quests:details/dossier/maxSniperSeries";
@@ -2434,6 +2424,8 @@ package
       public static const BONUSNAME_EVENTCOIN:String = "#quests:bonusName/eventCoin";
       
       public static const BONUSNAME_BPCOIN:String = "#quests:bonusName/bpcoin";
+      
+      public static const BONUSNAME_SACOIN:String = "#quests:bonusName/sacoin";
       
       public static const BONUSNAME_EQUIPCOIN:String = "#quests:bonusName/equipCoin";
       
@@ -3662,6 +3654,8 @@ package
       public static const SWITCH_ISWEEKLYENABLED:String = "#quests:switch/isWeeklyEnabled";
       
       public static const SWITCH_ISWEEKLYENABLEDTITLE:String = "#quests:switch/isWeeklyEnabledTitle";
+      
+      public static const BONUSNAME_RAZLOM_COIN:String = "#quests:bonusName/razlom_coin";
       
       public static const BATTLECONDITION_STATE_ENUM:Array = [BATTLECONDITION_STATE_COMPLETED,BATTLECONDITION_STATE_COMPLETED_PERFECTLY,BATTLECONDITION_STATE_IN_PROGRESS,BATTLECONDITION_STATE_FAILED];
       

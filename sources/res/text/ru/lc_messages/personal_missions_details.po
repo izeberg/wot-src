@@ -258,21 +258,19 @@ msgstr "Союз-8. Вспомогательный калибр"
 msgid "pm2_5_1_8_description_assist"
 msgstr ""
 "Помочь союзникам нанести %(goal)s урона технике противника, передавая "
-"разведданные, обездвижив её или оглушив."
+"разведданные или сбивая гусеницы."
 
-msgid "pm2_5_1_8_description_stunTimeInBattle"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_5_1_8_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "pm2_5_1_8_short"
 msgstr "Союз-8"
 
 msgid "pm2_5_1_8_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "pm2_5_1_8_title_stunTimeInBattle"
-msgstr "Оглушить"
+msgid "pm2_5_1_8_title_crits"
+msgstr "Содействие"
 
 msgid "pm2_5_1_9"
 msgstr "Союз-9. Год за два"
@@ -318,22 +316,20 @@ msgstr "Уничтожить"
 msgid "pm2_5_2_11"
 msgstr "Блок-11. «Вместо меня заговорят ружья»"
 
+msgid "pm2_5_2_11_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
+
 msgid "pm2_5_2_11_description_damage"
 msgstr "Нанести %(goal)s урона технике противника."
-
-msgid "pm2_5_2_11_description_stunTimeInBattle"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
 
 msgid "pm2_5_2_11_short"
 msgstr "Блок-11"
 
+msgid "pm2_5_2_11_title_crits"
+msgstr "Содействие"
+
 msgid "pm2_5_2_11_title_damage"
 msgstr "Урон"
-
-msgid "pm2_5_2_11_title_stunTimeInBattle"
-msgstr "Оглушить"
 
 msgid "pm2_5_2_12"
 msgstr "Блок-12. На передовой"
@@ -491,7 +487,7 @@ msgid "pm2_5_2_5_description_killsInBattle"
 msgstr "Уничтожить %(goal)s ед. техники противника."
 
 msgid "pm2_5_2_5_description_piercings"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_5_2_5_short"
 msgstr "Блок-5"
@@ -505,22 +501,20 @@ msgstr "Пробить броню"
 msgid "pm2_5_2_6"
 msgstr "Блок-6. Разоружение"
 
+msgid "pm2_5_2_6_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
+
 msgid "pm2_5_2_6_description_kills"
 msgstr "Уничтожить %(goal)s ед. техники противника."
-
-msgid "pm2_5_2_6_description_stunTimeInBattle"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
 
 msgid "pm2_5_2_6_short"
 msgstr "Блок-6"
 
+msgid "pm2_5_2_6_title_crits"
+msgstr "Содействие"
+
 msgid "pm2_5_2_6_title_kills"
 msgstr "Уничтожить"
-
-msgid "pm2_5_2_6_title_stunTimeInBattle"
-msgstr "Оглушить"
 
 msgid "pm2_5_2_7"
 msgstr "Блок-7. «Иду на вы!»"
@@ -665,23 +659,23 @@ msgid "pm2_5_3_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "pm2_5_3_14"
-msgstr "Альянс-14. Оглушён, сломлен, уничтожен"
+msgstr "Альянс-14. Команда была «Стоять!»"
 
 msgid "pm2_5_3_14_description_assistedKills"
 msgstr ""
-"Союзники должны уничтожить %(goal)s ед. техники противника, оглушённых вами."
+"Союзники должны уничтожить суммарно %(goal)s обездвиженных вами машин."
 
-msgid "pm2_5_3_14_description_stunNumberInBattle"
-msgstr "Одновременно оглушить %(stunSeveralTargets)s ед. техники противника."
+msgid "pm2_5_3_14_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "pm2_5_3_14_short"
 msgstr "Альянс-14"
 
 msgid "pm2_5_3_14_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "pm2_5_3_14_title_stunNumberInBattle"
-msgstr "Оглушить"
+msgid "pm2_5_3_14_title_crits"
+msgstr "Содействие"
 
 msgid "pm2_5_3_15"
 msgstr "Альянс-15. Герой Альянса"
@@ -719,10 +713,8 @@ msgstr "Уничтожить"
 msgid "pm2_5_3_2"
 msgstr "Альянс-2. Удар сверху"
 
-msgid "pm2_5_3_2_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_5_3_2_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "pm2_5_3_2_description_topByExp"
 msgstr "Попасть в Топ-3 по опыту в своей команде."
@@ -730,8 +722,8 @@ msgstr "Попасть в Топ-3 по опыту в своей команде.
 msgid "pm2_5_3_2_short"
 msgstr "Альянс-2"
 
-msgid "pm2_5_3_2_title_stunTime"
-msgstr "Оглушить"
+msgid "pm2_5_3_2_title_crits"
+msgstr "Содействие"
 
 msgid "pm2_5_3_2_title_topByExp"
 msgstr "Топ-3"
@@ -829,24 +821,21 @@ msgstr "Топ-1"
 msgid "pm2_5_3_8"
 msgstr "Альянс-8. От осколков не уйдут"
 
-msgid "pm2_5_3_8_description_stunNumber"
+msgid "pm2_5_3_8_description_assistedKills"
 msgstr ""
-"Одновременно оглушить %(stunSeveralTargets)s ед. техники противника, раз: "
-"%(goal)s"
+"Союзники должны уничтожить суммарно %(goal)s обездвиженных вами машин."
 
-msgid "pm2_5_3_8_description_stunTimeInBattle"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_5_3_8_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "pm2_5_3_8_short"
 msgstr "Альянс-8"
 
-msgid "pm2_5_3_8_title_stunNumber"
-msgstr "Оглушить"
+msgid "pm2_5_3_8_title_assistedKills"
+msgstr "Содействие"
 
-msgid "pm2_5_3_8_title_stunTimeInBattle"
-msgstr "Оглушить"
+msgid "pm2_5_3_8_title_crits"
+msgstr "Содействие"
 
 msgid "pm2_5_3_9"
 msgstr "Альянс-9. Сокращение штата"
@@ -1000,22 +989,20 @@ msgstr "Уничтожить"
 msgid "pm2_5_4_2"
 msgstr "Коалиция-2. Живого места нет"
 
-msgid "pm2_5_4_2_description_crits"
-msgstr ""
-"Повредить или вывести из строя суммарно %(goal)s внутренних модулей или "
-"членов экипажа противника."
+msgid "pm2_5_4_2_description_critsAdv"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "pm2_5_4_2_description_stunNumberInBattle"
-msgstr "Одновременно оглушить %(stunSeveralTargets)s ед. техники противника."
+msgid "pm2_5_4_2_description_hits"
+msgstr "Нанести урон %(goal)s разным машинам противника."
 
 msgid "pm2_5_4_2_short"
 msgstr "Коалиция-2"
 
-msgid "pm2_5_4_2_title_crits"
-msgstr "Крит. попадания"
+msgid "pm2_5_4_2_title_critsAdv"
+msgstr "Содействие"
 
-msgid "pm2_5_4_2_title_stunNumberInBattle"
-msgstr "Оглушить"
+msgid "pm2_5_4_2_title_hits"
+msgstr "Урон"
 
 msgid "pm2_5_4_3"
 msgstr "Коалиция-3. Здоровая конкуренция"
@@ -1198,22 +1185,20 @@ msgstr "Победить"
 msgid "pm2_6_1_12"
 msgstr "Союз-12. До звона в ушах"
 
+msgid "pm2_6_1_12_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
+
 msgid "pm2_6_1_12_description_kills"
 msgstr "Уничтожить %(goal)s ед. техники противника."
-
-msgid "pm2_6_1_12_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
 
 msgid "pm2_6_1_12_short"
 msgstr "Союз-12"
 
+msgid "pm2_6_1_12_title_crits"
+msgstr "Содействие"
+
 msgid "pm2_6_1_12_title_kills"
 msgstr "Уничтожить"
-
-msgid "pm2_6_1_12_title_stunTime"
-msgstr "Оглушить"
 
 msgid "pm2_6_1_13"
 msgstr "Союз-13. Комплексный обед"
@@ -1266,7 +1251,7 @@ msgstr "Союз-15. Доспехи бога"
 msgid "pm2_6_1_15_description_damageDealtReceivedAndBlocked"
 msgstr ""
 "Сумма нанесённого, полученного и заблокированного бронёй урона должна "
-"составлять %(goal)s"
+"составлять %(goal)s."
 
 msgid "pm2_6_1_15_description_totalDamagePercent"
 msgstr "Нанести 20%% от суммарного урона своей команды."
@@ -1879,7 +1864,7 @@ msgid "pm2_6_3_11_description_damage"
 msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "pm2_6_3_11_description_hits"
-msgstr "Выстрелами нанести урон средним танкам противника, раз: %(goal)s"
+msgstr "Выстрелами нанести урон средним танкам противника, раз: %(goal)s."
 
 msgid "pm2_6_3_11_description_kills"
 msgstr "Уничтожить средний танк противника."
@@ -1951,13 +1936,8 @@ msgstr "Альянс-14. Как снег на голову"
 
 msgid "pm2_6_3_14_description_assist"
 msgstr ""
-"Обездвижить противника, сбив ему гусеницу. Союзники должны нанести ему "
-"%(goal)s урона, пока он обездвижен."
-
-msgid "pm2_6_3_14_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "pm2_6_3_14_description_win"
 msgstr "Уничтожить противника / захватить или защитить базу."
@@ -1966,10 +1946,7 @@ msgid "pm2_6_3_14_short"
 msgstr "Альянс-14"
 
 msgid "pm2_6_3_14_title_assist"
-msgstr "Обездвиживание"
-
-msgid "pm2_6_3_14_title_stunTime"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "pm2_6_3_14_title_win"
 msgstr "Победить"
@@ -2050,22 +2027,20 @@ msgstr "Сбить гусеницу"
 msgid "pm2_6_3_3"
 msgstr "Альянс-3. Возможны осадки в виде снарядов"
 
+msgid "pm2_6_3_3_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
+
 msgid "pm2_6_3_3_description_hitsInBattle"
 msgstr "Выстрелами нанести урон технике противника %(goal)s раз."
-
-msgid "pm2_6_3_3_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
 
 msgid "pm2_6_3_3_short"
 msgstr "Альянс-3"
 
+msgid "pm2_6_3_3_title_crits"
+msgstr "Содействие"
+
 msgid "pm2_6_3_3_title_hitsInBattle"
 msgstr "Урон"
-
-msgid "pm2_6_3_3_title_stunTime"
-msgstr "Оглушить"
 
 msgid "pm2_6_3_4"
 msgstr "Альянс-4. Фактор внезапности"
@@ -2117,17 +2092,10 @@ msgid "pm2_6_3_5_title_win"
 msgstr "Победить"
 
 msgid "pm2_6_3_6"
-msgstr "Альянс-6. Оглушительная тишина"
+msgstr "Альянс-6. Раздать на орехи"
 
 msgid "pm2_6_3_6_description_assistedKills"
-msgstr ""
-"Союзники должны уничтожить %(goal)s ед. техники противника, оглушённых или "
-"обездвиженных вами."
-
-msgid "pm2_6_3_6_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgstr "Союзники должны уничтожить %(goal)s обездвиженные вами машины."
 
 msgid "pm2_6_3_6_description_win"
 msgstr "Уничтожить противника / захватить или защитить базу."
@@ -2136,10 +2104,7 @@ msgid "pm2_6_3_6_short"
 msgstr "Альянс-6"
 
 msgid "pm2_6_3_6_title_assistedKills"
-msgstr "Поддержка"
-
-msgid "pm2_6_3_6_title_stunTime"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "pm2_6_3_6_title_win"
 msgstr "Победить"
@@ -2376,7 +2341,7 @@ msgstr "Обездвижить противника, сбив гусеницу %
 
 msgid "pm2_6_4_2_description_hits"
 msgstr ""
-"Выстрелами нанести урон обездвиженной технике противника, раз: %(goal)s"
+"Выстрелами нанести урон обездвиженной технике противника, раз: %(goal)s."
 
 msgid "pm2_6_4_2_description_kills"
 msgstr "Уничтожить %(goal)s ед. обездвиженной техники противника."
@@ -2482,7 +2447,7 @@ msgstr "Нанести %(goal)s урона технике противника."
 msgid "pm2_6_4_6_description_hits"
 msgstr ""
 "Выстрелами нанести урон технике противника своего уровня или выше, раз: "
-"%(goal)s"
+"%(goal)s."
 
 msgid "pm2_6_4_6_short"
 msgstr "Коалиция-6"
@@ -2590,10 +2555,10 @@ msgid "pm2_7_1_11_description_piercingsAdv"
 msgstr "Совершить в среднем %(goal)s пробитий брони противника за бой."
 
 msgid "pm2_7_1_11_description_piercingsInBattle"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_7_1_11_description_piercingsInBattleAdv"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_7_1_11_short"
 msgstr "Союз-11"
@@ -2647,23 +2612,19 @@ msgstr "Для улучшения результата"
 msgid "pm2_7_1_14"
 msgstr "Союз-14. Метеоритный дождь"
 
-msgid "pm2_7_1_14_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_7_1_14_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
-msgid "pm2_7_1_14_description_stunTimeAdv"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_7_1_14_description_critsAdv"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "pm2_7_1_14_short"
 msgstr "Союз-14"
 
-msgid "pm2_7_1_14_title_stunTime"
-msgstr "Оглушить"
+msgid "pm2_7_1_14_title_crits"
+msgstr "Содействие"
 
-msgid "pm2_7_1_14_title_stunTimeAdv"
+msgid "pm2_7_1_14_title_critsAdv"
 msgstr "Для улучшения результата"
 
 msgid "pm2_7_1_15"
@@ -2758,11 +2719,11 @@ msgstr "Союз-4. «Ты не пробьёшь!»"
 
 msgid "pm2_7_1_4_description_blockedHits"
 msgstr ""
-"Среднее количество заблокированных попаданий должно составлять %(goal)s"
+"Среднее количество заблокированных попаданий должно составлять %(goal)s."
 
 msgid "pm2_7_1_4_description_blockedHitsAdv"
 msgstr ""
-"Среднее количество заблокированных попаданий должно составлять %(goal)s"
+"Среднее количество заблокированных попаданий должно составлять %(goal)s."
 
 msgid "pm2_7_1_4_description_blockedHitsInBattle"
 msgstr "Заблокировать %(goal)s попадания."
@@ -3151,10 +3112,10 @@ msgid "pm2_7_2_8"
 msgstr "Блок-8. Под бронебойным дождём"
 
 msgid "pm2_7_2_8_description_piercingsInBattle"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_7_2_8_description_piercingsInBattleAdv"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_7_2_8_short"
 msgstr "Блок-8"
@@ -3217,19 +3178,19 @@ msgstr "Альянс-11. В нужное время в нужном месте"
 
 msgid "pm2_7_3_11_description_assistInBattle"
 msgstr ""
-"Помочь союзникам нанести суммарно %(goal)s урона технике противника, "
-"оглушённой вами."
+"Cоюзники должны нанести по %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "pm2_7_3_11_description_assistInBattleAdv"
 msgstr ""
-"Помочь союзникам нанести суммарно %(goal)s урона технике противника, "
-"оглушённой вами."
+"Cоюзники должны нанести по %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "pm2_7_3_11_short"
 msgstr "Альянс-11"
 
 msgid "pm2_7_3_11_title_assistInBattle"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "pm2_7_3_11_title_assistInBattleAdv"
 msgstr "Для улучшения результата"
@@ -3398,23 +3359,19 @@ msgstr "Для улучшения результата"
 msgid "pm2_7_3_5"
 msgstr "Альянс-5. Головокружительный успех"
 
-msgid "pm2_7_3_5_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_7_3_5_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
-msgid "pm2_7_3_5_description_stunTimeAdv"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_7_3_5_description_critsAdv"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "pm2_7_3_5_short"
 msgstr "Альянс-5"
 
-msgid "pm2_7_3_5_title_stunTime"
-msgstr "Оглушить"
+msgid "pm2_7_3_5_title_crits"
+msgstr "Содействие"
 
-msgid "pm2_7_3_5_title_stunTimeAdv"
+msgid "pm2_7_3_5_title_critsAdv"
 msgstr "Для улучшения результата"
 
 msgid "pm2_7_3_6"
@@ -3439,10 +3396,10 @@ msgid "pm2_7_3_7"
 msgstr "Альянс-7. Броня не подведёт"
 
 msgid "pm2_7_3_7_description_blockedDamage"
-msgstr "Средний заблокированный урон должен составлять %(goal)s"
+msgstr "Средний заблокированный урон должен составлять %(goal)s."
 
 msgid "pm2_7_3_7_description_blockedDamageAdv"
-msgstr "Средний заблокированный урон должен составлять %(goal)s"
+msgstr "Средний заблокированный урон должен составлять %(goal)s."
 
 msgid "pm2_7_3_7_description_blockedDamageInBattle"
 msgstr "Заблокировать в бою %(goal)s урона."
@@ -3484,23 +3441,19 @@ msgstr "Для улучшения результата"
 msgid "pm2_7_3_9"
 msgstr "Альянс-9. Искры из глаз"
 
-msgid "pm2_7_3_9_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_7_3_9_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
-msgid "pm2_7_3_9_description_stunTimeAdv"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s сек. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "pm2_7_3_9_description_critsAdv"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "pm2_7_3_9_short"
 msgstr "Альянс-9"
 
-msgid "pm2_7_3_9_title_stunTime"
-msgstr "Оглушить"
+msgid "pm2_7_3_9_title_crits"
+msgstr "Содействие"
 
-msgid "pm2_7_3_9_title_stunTimeAdv"
+msgid "pm2_7_3_9_title_critsAdv"
 msgstr "Для улучшения результата"
 
 msgid "pm2_7_4_1"
@@ -3731,10 +3684,10 @@ msgid "pm2_7_4_6"
 msgstr "Коалиция-6. Стилет"
 
 msgid "pm2_7_4_6_description_piercings"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_7_4_6_description_piercingsAdv"
-msgstr "Пробить броню противника, раз: %(goal)s"
+msgstr "Пробить броню противника, раз: %(goal)s."
 
 msgid "pm2_7_4_6_short"
 msgstr "Коалиция-6"
@@ -9910,7 +9863,7 @@ msgid "quest_5_12_short"
 msgstr "САУ-12"
 
 msgid "quest_5_13"
-msgstr "САУ-13. Совместные действия"
+msgstr "САУ-13. Трёхочковый"
 
 msgid "quest_5_13_advise"
 msgstr "?empty?"
@@ -9970,7 +9923,7 @@ msgid "quest_5_1_short"
 msgstr "САУ-1"
 
 msgid "quest_5_2"
-msgstr "САУ-2. Тик-так"
+msgstr "САУ-2. На перехват"
 
 msgid "quest_5_2_advise"
 msgstr "?empty?"
@@ -10043,9 +9996,7 @@ msgstr "?empty?"
 msgid "quest_5_6_descr"
 msgstr ""
 "Вы — поддержка команды. С оглушёнными целями разбираться проще, потому "
-"союзники будут вам только благодарны за ваши успешные попадания. Помните, "
-"что не очень удачный выстрел может оглушить и союзника: старайтесь этого "
-"избегать."
+"союзники будут вам только благодарны за ваши успешные попадания."
 
 msgid "quest_5_6_short"
 msgstr "САУ-6"
@@ -10099,22 +10050,22 @@ msgid "quest_5_9_short"
 msgstr "САУ-9"
 
 msgid "quest_common_condition_description_alive"
-msgstr "Не быть уничтоженным по итогу боя"
+msgstr "Не быть уничтоженным по итогу боя."
 
 msgid "quest_common_condition_description_attackerUnharmed"
 msgstr "Не получить никакого урона в бою."
 
 msgid "quest_common_condition_description_base"
-msgstr "Принять участие в успешном захвате или сбитии захвата базы"
+msgstr "Принять участие в успешном захвате или сбитии захвата базы."
 
 msgid "quest_common_condition_description_empty"
 msgstr "?empty?"
 
 msgid "quest_common_condition_description_isNotSpotted"
-msgstr "Выжить и не быть обнаруженным в течение боя"
+msgstr "Выжить и не быть обнаруженным в течение боя."
 
 msgid "quest_common_condition_description_win"
-msgstr "Уничтожить противника / захватить или защитить базу"
+msgstr "Уничтожить противника / захватить или защитить базу."
 
 msgid "quest_common_condition_title_alive"
 msgstr "Выжить"
@@ -10183,16 +10134,16 @@ msgid "quest_common_conditioncommon_condition_title_spotted"
 msgstr "Обнаружить"
 
 msgid "regular_1_1_10_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_1_1_10_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_1_1_11_description_damage"
-msgstr "Выстрелами нанести %(goal)s урона технике противника"
+msgstr "Выстрелами нанести %(goal)s урона технике противника."
 
 msgid "regular_1_1_11_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике своего уровня или выше"
+msgstr "Выстрелами %(goal)s раза нанести урон технике своего уровня или выше."
 
 msgid "regular_1_1_11_title_damage"
 msgstr "Урон"
@@ -10203,13 +10154,13 @@ msgstr "Урон"
 msgid "regular_1_1_12_description_assist"
 msgstr ""
 "Передать разведданные на %(goal)s урона, оставаясь незамеченным в момент его"
-" нанесения"
+" нанесения."
 
 msgid "regular_1_1_12_description_installedCamouflage"
-msgstr "Выйти в бой с камуфляжем, нанесённым как минимум на корпус машины"
+msgstr "Выйти в бой с камуфляжем, нанесённым как минимум на корпус машины."
 
 msgid "regular_1_1_12_description_installedModules"
-msgstr "Выйти в бой с маскировочной сетью"
+msgstr "Выйти в бой с маскировочной сетью."
 
 msgid "regular_1_1_12_title_assist"
 msgstr "Разведданные"
@@ -10221,10 +10172,10 @@ msgid "regular_1_1_12_title_installedModules"
 msgstr "Подготовка к бою"
 
 msgid "regular_1_1_13_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_1_1_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_1_13_title_assist"
 msgstr "Разведданные"
@@ -10233,7 +10184,7 @@ msgid "regular_1_1_13_title_damage"
 msgstr "Урон"
 
 msgid "regular_1_1_14_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_1_1_14_title_assist"
 msgstr "Разведданные"
@@ -10241,7 +10192,7 @@ msgstr "Разведданные"
 msgid "regular_1_1_15_description_assistedHits"
 msgstr ""
 "Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_1_1_15_description_damageAndAssist"
 msgstr ""
@@ -10255,22 +10206,22 @@ msgid "regular_1_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_1_1_1_description_topByExp"
-msgstr "Попасть в топ-10 по опыту в своей команде"
+msgstr "Попасть в топ-10 по опыту в своей команде."
 
 msgid "regular_1_1_1_title_topByExp"
 msgstr "Топ-10"
 
 msgid "regular_1_1_2_description_spotNumber"
-msgstr "Обнаружить %(goal)s машины противника"
+msgstr "Обнаружить %(goal)s машины противника."
 
 msgid "regular_1_1_2_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_1_1_3_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раза нанести урон технике противника."
 
 msgid "regular_1_1_3_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_1_3_title_hits"
 msgstr "Урон"
@@ -10281,10 +10232,10 @@ msgstr "Уничтожить"
 msgid "regular_1_1_4_description_assistedHits"
 msgstr ""
 "Обездвижить противника, сбив ему гусеницу. Союзники должны нанести ему урон,"
-" пока он обездвижен"
+" пока он обездвижен."
 
 msgid "regular_1_1_4_description_crits"
-msgstr "Обездвижить противника, сбив ему гусеницу"
+msgstr "Обездвижить противника, сбив ему гусеницу."
 
 msgid "regular_1_1_4_title_assistedHits"
 msgstr "Обездвиживание"
@@ -10294,10 +10245,10 @@ msgstr "Сбить гусеницу"
 
 msgid "regular_1_1_5_description_assistedHits"
 msgstr ""
-"Передать разведданные для нанесения союзниками урона по %(goal)s целям"
+"Передать разведданные для нанесения союзниками урона по %(goal)s целям."
 
 msgid "regular_1_1_5_description_assistedKills"
-msgstr "Передать разведданные для уничтожения %(goal)s машины"
+msgstr "Передать разведданные для уничтожения %(goal)s машины."
 
 msgid "regular_1_1_5_title_assistedHits"
 msgstr "Разведданные"
@@ -10308,10 +10259,10 @@ msgstr "Разведданные"
 msgid "regular_1_1_6_description_assistedHits"
 msgstr ""
 "Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_1_1_6_description_installedModules"
-msgstr "Выйти в бой с просветлённой оптикой"
+msgstr "Выйти в бой с просветлённой оптикой."
 
 msgid "regular_1_1_6_title_assistedHits"
 msgstr "Поддержка"
@@ -10320,19 +10271,19 @@ msgid "regular_1_1_6_title_installedModules"
 msgstr "Подготовка к бою"
 
 msgid "regular_1_1_7_description_hits"
-msgstr "Нанести урон САУ противника"
+msgstr "Нанести урон САУ противника."
 
 msgid "regular_1_1_7_title_hits"
 msgstr "Урон по САУ"
 
 msgid "regular_1_1_8_description_baseCapture"
-msgstr "Принять участие в успешном захвате базы"
+msgstr "Принять участие в успешном захвате базы."
 
 msgid "regular_1_1_8_description_dropCapture"
-msgstr "Принять участие в успешном сбитии захвата базы"
+msgstr "Принять участие в успешном сбитии захвата базы."
 
 msgid "regular_1_1_8_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_1_8_title_baseCapture"
 msgstr "Захват"
@@ -10344,27 +10295,27 @@ msgid "regular_1_1_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_1_9_description_spotNumber"
-msgstr "Обнаружить машину противника, оставаясь необнаруженным"
+msgstr "Обнаружить машину противника, оставаясь необнаруженным."
 
 msgid "regular_1_1_9_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_1_2_10_description_topByExp"
-msgstr "Попасть в топ-3 по урону в своей команде"
+msgstr "Попасть в топ-3 по урону в своей команде."
 
 msgid "regular_1_2_10_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_1_2_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_2_11_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_1_2_11_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_1_2_11_title_damage"
 msgstr "Урон"
@@ -10377,10 +10328,11 @@ msgstr "Выжить"
 
 msgid "regular_1_2_12_description_blockedDamage"
 msgstr ""
-"Получить заблокированного бронёй урона не менее прочности собственной машины"
+"Получить заблокированного бронёй урона не менее прочности собственной "
+"машины."
 
 msgid "regular_1_2_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_2_12_title_blockedDamage"
 msgstr "Эффективность брони"
@@ -10389,13 +10341,13 @@ msgid "regular_1_2_12_title_damage"
 msgstr "Урон"
 
 msgid "regular_1_2_13_description_kills"
-msgstr "Уничтожить машину противника в первые 3 минуты боя"
+msgstr "Уничтожить машину противника в первые 3 минуты боя."
 
 msgid "regular_1_2_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_14_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов."
 
 msgid "regular_1_2_14_title_killsDiversity"
 msgstr "Уничтожить"
@@ -10404,7 +10356,7 @@ msgid "regular_1_2_15_description_damageDealtReceivedAndBlocked"
 msgstr "Нанести урона, получить и заблокировать суммарно на %(goal)s ед."
 
 msgid "regular_1_2_15_description_totalDamagePercent"
-msgstr "Нанести 20%% от суммарного урона своей команды"
+msgstr "Нанести 20%% от суммарного урона своей команды."
 
 msgid "regular_1_2_15_title_damageDealtReceivedAndBlocked"
 msgstr "Комплексное условие"
@@ -10413,10 +10365,10 @@ msgid "regular_1_2_15_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_1_2_1_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_2_1_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_2_1_title_damage"
 msgstr "Урон"
@@ -10425,10 +10377,10 @@ msgid "regular_1_2_1_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_2_2_description_kills"
-msgstr "Уничтожить машину противника с расстояния 100 метров и ближе"
+msgstr "Уничтожить машину противника с расстояния 100 метров и ближе."
 
 msgid "regular_1_2_2_title_damage"
 msgstr "Урон"
@@ -10437,10 +10389,10 @@ msgid "regular_1_2_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_3_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_2_3_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины разных типов"
+msgstr "Уничтожить %(goal)s машины разных типов."
 
 msgid "regular_1_2_3_title_damage"
 msgstr "Урон"
@@ -10449,16 +10401,16 @@ msgid "regular_1_2_3_title_killsDiversity"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_4_description_crits"
-msgstr "Повредить или вывести из строя внутренний модуль или члена экипажа"
+msgstr "Повредить или вывести из строя внутренний модуль или члена экипажа."
 
 msgid "regular_1_2_4_title_crits"
 msgstr "Крит. попадания"
 
 msgid "regular_1_2_5_description_damage"
-msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора"
+msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора."
 
 msgid "regular_1_2_5_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_1_2_5_title_damage"
 msgstr "Урон"
@@ -10467,19 +10419,19 @@ msgid "regular_1_2_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_6_description_kills"
-msgstr "Уничтожить суммарно %(goal)s тяжёлых или средних танка"
+msgstr "Уничтожить суммарно %(goal)s тяжёлых или средних танка."
 
 msgid "regular_1_2_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_7_description_baseCaptureOrDropCapture"
-msgstr "Принять участие в успешном захвате или сбитии захвата базы"
+msgstr "Принять участие в успешном захвате или сбитии захвата базы."
 
 msgid "regular_1_2_7_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_2_7_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_2_7_title_baseCaptureOrDropCapture"
 msgstr "Захват/защита"
@@ -10491,10 +10443,10 @@ msgid "regular_1_2_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_8_description_damage"
-msgstr "Нанести %(goal)s урона тяжёлым танкам"
+msgstr "Нанести %(goal)s урона тяжёлым танкам."
 
 msgid "regular_1_2_8_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_1_2_8_title_damage"
 msgstr "Урон по ТТ"
@@ -10503,16 +10455,16 @@ msgid "regular_1_2_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_2_9_description_kills"
-msgstr "Уничтожить тараном машину противника"
+msgstr "Уничтожить тараном машину противника."
 
 msgid "regular_1_2_9_title_kills"
 msgstr "Таран"
 
 msgid "regular_1_3_10_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раза нанести урон технике противника."
 
 msgid "regular_1_3_10_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_3_10_title_hits"
 msgstr "Урон"
@@ -10521,16 +10473,16 @@ msgid "regular_1_3_10_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_3_11_description_hits"
-msgstr "Нанести урон тараном"
+msgstr "Нанести урон тараном."
 
 msgid "regular_1_3_11_title_hits"
 msgstr "Таран"
 
 msgid "regular_1_3_12_description_hits"
-msgstr "Поджечь машину противника"
+msgstr "Поджечь машину противника."
 
 msgid "regular_1_3_12_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_1_3_12_title_hits"
 msgstr "Поджог"
@@ -10539,10 +10491,10 @@ msgid "regular_1_3_12_title_topByExp"
 msgstr "Топ-5"
 
 msgid "regular_1_3_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_3_13_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_1_3_13_title_damage"
 msgstr "Урон"
@@ -10551,10 +10503,10 @@ msgid "regular_1_3_13_title_topByExp"
 msgstr "Топ-5"
 
 msgid "regular_1_3_14_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_3_14_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_1_3_14_title_damage"
 msgstr "Урон"
@@ -10563,10 +10515,10 @@ msgid "regular_1_3_14_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_3_15_description_hits"
-msgstr "Нанести урон %(goal)s машинам"
+msgstr "Нанести урон %(goal)s машинам."
 
 msgid "regular_1_3_15_description_kills"
-msgstr "Уничтожить %(goal)s ПТ-САУ противника"
+msgstr "Уничтожить %(goal)s ПТ-САУ противника."
 
 msgid "regular_1_3_15_title_hits"
 msgstr "Урон"
@@ -10575,10 +10527,10 @@ msgid "regular_1_3_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_3_1_description_hits"
-msgstr "Нанести урон технике противника"
+msgstr "Нанести урон технике противника."
 
 msgid "regular_1_3_1_description_topByExp"
-msgstr "Попасть в топ-10 по опыту в своей команде"
+msgstr "Попасть в топ-10 по опыту в своей команде."
 
 msgid "regular_1_3_1_title_hits"
 msgstr "Урон"
@@ -10587,10 +10539,10 @@ msgid "regular_1_3_1_title_topByExp"
 msgstr "Топ-10"
 
 msgid "regular_1_3_2_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_1_3_2_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_3_2_title_hits"
 msgstr "Урон"
@@ -10599,19 +10551,19 @@ msgid "regular_1_3_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_3_3_description_hits"
-msgstr "Нанести урон в первые 2 минуты боя"
+msgstr "Нанести урон в первые 2 минуты боя."
 
 msgid "regular_1_3_3_title_hits"
 msgstr "Урон"
 
 msgid "regular_1_3_4_description_crits"
-msgstr "Обездвижить противника, сбив гусеницу"
+msgstr "Обездвижить противника, сбив гусеницу."
 
 msgid "regular_1_3_4_description_hits"
-msgstr "Выстрелом нанести урон обездвиженной машине"
+msgstr "Выстрелом нанести урон обездвиженной машине."
 
 msgid "regular_1_3_4_description_kills"
-msgstr "Уничтожить обездвиженную машину противника"
+msgstr "Уничтожить обездвиженную машину противника."
 
 msgid "regular_1_3_4_title_crits"
 msgstr "Сбить гусеницу"
@@ -10623,28 +10575,28 @@ msgid "regular_1_3_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_3_5_description_hits"
-msgstr "Нанести урон лёгкому танку"
+msgstr "Нанести урон лёгкому танку."
 
 msgid "regular_1_3_5_title_hits"
 msgstr "Урон по ЛТ"
 
 msgid "regular_1_3_6_description_hitsDiversity"
-msgstr "Нанести урон технике %(uniqueGoal)s разных типов"
+msgstr "Нанести урон технике %(uniqueGoal)s разных типов."
 
 msgid "regular_1_3_6_title_hitsDiversity"
 msgstr "Урон"
 
 msgid "regular_1_3_7_description_hits"
-msgstr "Выстрелом нанести урон САУ"
+msgstr "Выстрелом нанести урон САУ."
 
 msgid "regular_1_3_7_title_hits"
 msgstr "Урон по САУ"
 
 msgid "regular_1_3_8_description_damage"
-msgstr "Нанести средним танкам %(goal)s урона"
+msgstr "Нанести средним танкам %(goal)s урона."
 
 msgid "regular_1_3_8_description_hits"
-msgstr "Выстрелами нанести урон средним танкам %(goal)s раза"
+msgstr "Выстрелами нанести урон средним танкам %(goal)s раза."
 
 msgid "regular_1_3_8_title_damage"
 msgstr "Урон по СТ"
@@ -10653,10 +10605,10 @@ msgid "regular_1_3_8_title_hits"
 msgstr "Урон по СТ"
 
 msgid "regular_1_3_9_description_damage"
-msgstr "Нанести тяжёлым танкам %(goal)s урона"
+msgstr "Нанести тяжёлым танкам %(goal)s урона."
 
 msgid "regular_1_3_9_description_kills"
-msgstr "Уничтожить тяжёлый танк"
+msgstr "Уничтожить тяжёлый танк."
 
 msgid "regular_1_3_9_title_damage"
 msgstr "Урон по ТТ"
@@ -10665,16 +10617,17 @@ msgid "regular_1_3_9_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_10_description_damage"
-msgstr "Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения"
+msgstr ""
+"Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения."
 
 msgid "regular_1_4_10_title_damage"
 msgstr "Урон"
 
 msgid "regular_1_4_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_4_11_description_topByDamage"
-msgstr "Занять первое место по урону в своей команде"
+msgstr "Занять первое место по урону в своей команде."
 
 msgid "regular_1_4_11_title_damage"
 msgstr "Урон"
@@ -10683,10 +10636,10 @@ msgid "regular_1_4_11_title_topByDamage"
 msgstr "Топ-1"
 
 msgid "regular_1_4_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_4_12_description_kills"
-msgstr "Уничтожить тяжёлый танк противника"
+msgstr "Уничтожить тяжёлый танк противника."
 
 msgid "regular_1_4_12_title_damage"
 msgstr "Урон"
@@ -10695,22 +10648,22 @@ msgid "regular_1_4_12_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_13_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_1_4_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_14_description_totalDamagePercent"
-msgstr "Нанести 10%% от суммарного урона своей команды"
+msgstr "Нанести 10%% от суммарного урона своей команды."
 
 msgid "regular_1_4_14_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_1_4_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_4_15_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_1_4_15_title_damage"
 msgstr "Урон"
@@ -10719,18 +10672,18 @@ msgid "regular_1_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_1_description_topByExp"
-msgstr "Попасть в топ-7 по опыту в своей команде"
+msgstr "Попасть в топ-7 по опыту в своей команде."
 
 msgid "regular_1_4_1_title_topByExp"
-msgstr "Топ-7"
+msgstr "Результат"
 
 msgid "regular_1_4_2_description_crits"
-msgstr "Вывести из строя внутренний модуль или члена экипажа"
+msgstr "Вывести из строя внутренний модуль или члена экипажа."
 
 msgid "regular_1_4_2_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_1_4_2_title_crits"
 msgstr "Крит. попадания"
@@ -10739,17 +10692,18 @@ msgid "regular_1_4_2_title_noCrits"
 msgstr "Выжить"
 
 msgid "regular_1_4_3_description_hits"
-msgstr "Нанести урон %(goal)s машинам противника"
+msgstr "Нанести урон %(goal)s машинам противника."
 
 msgid "regular_1_4_3_title_hits"
 msgstr "Урон"
 
 msgid "regular_1_4_4_description_installedModules"
-msgstr "Выйти в бой с маскировочной сетью"
+msgstr "Выйти в бой с маскировочной сетью."
 
 msgid "regular_1_4_4_description_kills"
 msgstr ""
-"Уничтожить машину противника, оставаясь незамеченным в момент её уничтожения"
+"Уничтожить машину противника, оставаясь незамеченным в момент её "
+"уничтожения."
 
 msgid "regular_1_4_4_title_installedModules"
 msgstr "Маскировка"
@@ -10758,10 +10712,10 @@ msgid "regular_1_4_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_5_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_4_5_description_hits"
-msgstr "Нанести урон с расстояния не менее 300 метров"
+msgstr "Нанести урон с расстояния не менее 300 метров."
 
 msgid "regular_1_4_5_title_damage"
 msgstr "Урон"
@@ -10770,10 +10724,10 @@ msgid "regular_1_4_5_title_hits"
 msgstr "Урон"
 
 msgid "regular_1_4_6_description_hits"
-msgstr "Нанести урон с расстояния не менее 250 метров"
+msgstr "Нанести урон с расстояния не менее 250 метров."
 
 msgid "regular_1_4_6_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_4_6_title_hits"
 msgstr "Урон"
@@ -10782,22 +10736,22 @@ msgid "regular_1_4_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_7_description_kills"
-msgstr "Уничтожить машину противника, не потеряв прочности до этого момента"
+msgstr "Уничтожить машину противника, не потеряв прочности до этого момента."
 
 msgid "regular_1_4_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_1_4_8_description_damage"
-msgstr "Нанести в 2 раза больше урона, чем прочность собственной машины"
+msgstr "Нанести в 2 раза больше урона, чем прочность собственной машины."
 
 msgid "regular_1_4_8_title_damage"
 msgstr "Урон"
 
 msgid "regular_1_4_9_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_1_4_9_description_piercingSeries"
-msgstr "Пробить броню %(goal)s раза подряд"
+msgstr "Пробить броню %(goal)s раза подряд."
 
 msgid "regular_1_4_9_title_kills"
 msgstr "Уничтожить"
@@ -10806,194 +10760,162 @@ msgid "regular_1_4_9_title_piercingSeries"
 msgstr "Пробить броню"
 
 msgid "regular_1_5_10_description_assistedKills"
-msgstr "Союзники должны уничтожить оглушённую или обездвиженную вами машину"
+msgstr "Союзники должны уничтожить обездвиженную вами машину."
 
 msgid "regular_1_5_10_description_damageAndAssist"
-msgstr "Суммарно нанести урона, оглушить или обездвижить на %(goal)s ед."
+msgstr "Суммарно нанести и/или обездвижить на %(goal)s ед. урона."
 
 msgid "regular_1_5_10_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_1_5_10_title_damageAndAssist"
 msgstr "Комплексное условие"
 
-msgid "regular_1_5_11_description_stunNumber"
-msgstr "Оглушить %(stunSeveralTargets)s машины противника одним выстрелом"
+msgid "regular_1_5_11_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_1_5_11_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_1_5_11_description_critsAdv"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_1_5_11_title_stunNumber"
-msgstr "Оглушить"
+msgid "regular_1_5_11_title_crits"
+msgstr "Содействие"
 
-msgid "regular_1_5_11_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_11_title_critsAdv"
+msgstr "Содействие"
 
 msgid "regular_1_5_12_description_assistedKills"
-msgstr "Союзники должны уничтожить оглушённую или обездвиженную вами машину"
+msgstr "Союзники должны уничтожить обездвиженную вами машину."
 
-msgid "regular_1_5_12_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_1_5_12_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "regular_1_5_12_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_1_5_12_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_12_title_crits"
+msgstr "Содействие"
 
 msgid "regular_1_5_13_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике противника"
-
-msgid "regular_1_5_13_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgstr "Выстрелами нанести урон технике противника %(goal)s раза."
 
 msgid "regular_1_5_13_title_hits"
 msgstr "Урон"
 
-msgid "regular_1_5_13_title_stunTime"
-msgstr "Оглушить"
-
 msgid "regular_1_5_14_description_assist"
 msgstr ""
-"Союзники должны нанести %(goal)s урона обездвиженной машине со сбитой вами "
-"гусеницей"
-
-msgid "regular_1_5_14_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_1_5_14_title_assist"
-msgstr "Обездвиживание"
-
-msgid "regular_1_5_14_title_stunTime"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "regular_1_5_15_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_1_5_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_1_5_15_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_1_5_15_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_1_5_15_title_damage"
 msgstr "Урон"
 
 msgid "regular_1_5_15_title_topByExp"
-msgstr "Топ-5"
+msgstr "Результат"
+
+msgid "regular_1_5_1_description_crits"
+msgstr "Сбить гусеницу машине противника."
 
 msgid "regular_1_5_1_description_hits"
-msgstr "%(goal)s раза нанести урон технике противника"
+msgstr "%(goal)s раза нанести урон технике противника."
 
-msgid "regular_1_5_1_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_1_5_1_title_crits"
+msgstr "Содействие"
 
 msgid "regular_1_5_1_title_hits"
 msgstr "Урон"
 
-msgid "regular_1_5_1_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_2_description_crits"
+msgstr "Сбить гусеницу машине противника."
 
 msgid "regular_1_5_2_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
-msgid "regular_1_5_2_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_1_5_2_title_crits"
+msgstr "Содействие"
 
 msgid "regular_1_5_2_title_kills"
 msgstr "Уничтожить"
 
-msgid "regular_1_5_2_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_3_description_crits"
+msgstr "Сбить гусеницу машине противника."
 
-msgid "regular_1_5_3_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_1_5_3_title_crits"
+msgstr "Содействие"
 
-msgid "regular_1_5_3_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_4_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_1_5_4_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
-
-msgid "regular_1_5_4_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_4_title_crits"
+msgstr "Содействие"
 
 msgid "regular_1_5_5_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_1_5_5_description_hits"
-msgstr "%(goal)s раза нанести урон технике противника"
+msgstr "%(goal)s раза нанести урон технике противника."
 
 msgid "regular_1_5_5_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_1_5_5_title_hits"
 msgstr "Урон"
 
 msgid "regular_1_5_6_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_1_5_6_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_1_5_7_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_1_5_7_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_1_5_7_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_1_5_7_title_crits"
+msgstr "Содействие"
 
 msgid "regular_1_5_8_description_topByExp"
-msgstr "Попасть в топ-7 по опыту в своей команде"
+msgstr "Попасть в топ-7 по опыту в своей команде."
 
 msgid "regular_1_5_8_title_topByExp"
-msgstr "Топ-7"
+msgstr "Результат"
 
-msgid "regular_1_5_9_description_crits"
-msgstr ""
-"Повредить или вывести из строя суммарно %(goal)s любых модуля или члена "
-"экипажа"
+msgid "regular_1_5_9_description_hits"
+msgstr "Нанести урон %(goal)s разным машинам противника."
 
-msgid "regular_1_5_9_title_crits"
-msgstr "Крит. попадания"
+msgid "regular_1_5_9_title_hits"
+msgstr "Урон"
 
 msgid "regular_2_1_10_description_topByExp"
-msgstr "Занять первое место по опыту в своей команде"
+msgstr "Занять первое место по опыту в своей команде."
 
 msgid "regular_2_1_10_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_2_1_11_description_damage"
-msgstr "Выстрелами нанести %(goal)s урона технике противника"
+msgstr "Выстрелами нанести %(goal)s урона технике противника."
 
 msgid "regular_2_1_11_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике своего уровня или выше"
+msgstr "Выстрелами %(goal)s раз нанести урон технике своего уровня или выше."
 
 msgid "regular_2_1_11_title_damage"
 msgstr "Урон"
@@ -11004,16 +10926,16 @@ msgstr "Урон"
 msgid "regular_2_1_12_description_assist"
 msgstr ""
 "Передать разведданные на %(goal)s урона, оставаясь незамеченным в момент его"
-" нанесения"
+" нанесения."
 
 msgid "regular_2_1_12_title_assist"
 msgstr "Разведданные"
 
 msgid "regular_2_1_13_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_2_1_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_1_13_title_assist"
 msgstr "Разведданные"
@@ -11022,7 +10944,7 @@ msgid "regular_2_1_13_title_damage"
 msgstr "Урон"
 
 msgid "regular_2_1_14_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_2_1_14_title_assist"
 msgstr "Разведданные"
@@ -11030,7 +10952,7 @@ msgstr "Разведданные"
 msgid "regular_2_1_15_description_assistedHits"
 msgstr ""
 "Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_2_1_15_description_damageAndAssist"
 msgstr ""
@@ -11044,22 +10966,22 @@ msgid "regular_2_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_2_1_1_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_2_1_1_title_topByExp"
 msgstr "Топ-5"
 
 msgid "regular_2_1_2_description_spotNumber"
-msgstr "Обнаружить %(goal)s машины противника"
+msgstr "Обнаружить %(goal)s машины противника."
 
 msgid "regular_2_1_2_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_2_1_3_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раза нанести урон технике противника."
 
 msgid "regular_2_1_3_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_1_3_title_hits"
 msgstr "Урон"
@@ -11070,15 +10992,15 @@ msgstr "Уничтожить"
 msgid "regular_2_1_4_description_assist"
 msgstr ""
 "Обездвижить противника, сбив ему гусеницу. Союзники должны нанести ему "
-"%(goal)s урона, пока он обездвижен"
+"%(goal)s урона, пока он обездвижен."
 
 msgid "regular_2_1_4_description_assistedKills"
 msgstr ""
 "Обездвижить противника, сбив ему гусеницу. Союзники должны его уничтожить, "
-"пока он обездвижен"
+"пока он обездвижен."
 
 msgid "regular_2_1_4_description_crits"
-msgstr "Обездвижить противника, сбив ему гусеницу"
+msgstr "Обездвижить противника, сбив ему гусеницу."
 
 msgid "regular_2_1_4_title_assist"
 msgstr "Обездвиживание"
@@ -11091,10 +11013,10 @@ msgstr "Сбить гусеницу"
 
 msgid "regular_2_1_5_description_assistedHits"
 msgstr ""
-"Передать разведданные для нанесения союзниками урона по %(goal)s целям"
+"Передать разведданные для нанесения союзниками урона по %(goal)s целям."
 
 msgid "regular_2_1_5_description_assistedKills"
-msgstr "Передать разведданные для уничтожения %(goal)s целей"
+msgstr "Передать разведданные для уничтожения %(goal)s целей."
 
 msgid "regular_2_1_5_title_assistedHits"
 msgstr "Разведданные"
@@ -11105,12 +11027,12 @@ msgstr "Разведданные"
 msgid "regular_2_1_6_description_assistedHits"
 msgstr ""
 "Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_2_1_6_description_assistedKills"
 msgstr ""
 "Помочь союзникам уничтожить %(goal)s машину противника, передавая "
-"разведданные или обездвиживая противника, сбивая гусеницы"
+"разведданные или обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_2_1_6_title_assistedHits"
 msgstr "Поддержка"
@@ -11119,7 +11041,7 @@ msgid "regular_2_1_6_title_assistedKills"
 msgstr "Поддержка"
 
 msgid "regular_2_1_7_description_spotAndDamage"
-msgstr "Обнаружить и нанести урон %(goal)s САУ противника"
+msgstr "Обнаружить и нанести урон %(goal)s САУ противника."
 
 msgid "regular_2_1_7_title_spotAndDamage"
 msgstr "Обнаружить"
@@ -11127,15 +11049,15 @@ msgstr "Обнаружить"
 msgid "regular_2_1_8_description_baseCapture"
 msgstr ""
 "Принять участие в успешном захвате базы, заработав %(goal)s соответствующих "
-"очков"
+"очков."
 
 msgid "regular_2_1_8_description_dropCapture"
 msgstr ""
 "Принять участие в успешном сбитии захвата базы, заработав %(goal)s "
-"соответствующих очков"
+"соответствующих очков."
 
 msgid "regular_2_1_8_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_2_1_8_title_baseCapture"
 msgstr "Захват"
@@ -11147,27 +11069,27 @@ msgid "regular_2_1_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_1_9_description_spotNumber"
-msgstr "Обнаружить %(goal)s машины, оставаясь необнаруженным"
+msgstr "Обнаружить %(goal)s машины, оставаясь необнаруженным."
 
 msgid "regular_2_1_9_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_2_2_10_description_topByExp"
-msgstr "Попасть в топ-3 по урону в обеих командах"
+msgstr "Попасть в топ-3 по урону в обеих командах."
 
 msgid "regular_2_2_10_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_2_2_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_2_11_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_2_11_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_2_2_11_title_damage"
 msgstr "Урон"
@@ -11181,10 +11103,10 @@ msgstr "Выжить"
 msgid "regular_2_2_12_description_blockedDamage"
 msgstr ""
 "Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
-" прочности собственной машины"
+" прочности собственной машины."
 
 msgid "regular_2_2_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_2_12_title_blockedDamage"
 msgstr "Эффективность брони"
@@ -11193,13 +11115,13 @@ msgid "regular_2_2_12_title_damage"
 msgstr "Урон"
 
 msgid "regular_2_2_13_description_kills"
-msgstr "Уничтожить %(goal)s машины в первые 4 минуты боя"
+msgstr "Уничтожить %(goal)s машины в первые 4 минуты боя."
 
 msgid "regular_2_2_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_14_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов."
 
 msgid "regular_2_2_14_title_killsDiversity"
 msgstr "Уничтожить"
@@ -11208,7 +11130,7 @@ msgid "regular_2_2_15_description_damageDealtReceivedAndBlocked"
 msgstr "Нанести урона, получить и заблокировать суммарно на %(goal)s ед."
 
 msgid "regular_2_2_15_description_totalDamagePercent"
-msgstr "Нанести 20%% от суммарного урона своей команды"
+msgstr "Нанести 20%% от суммарного урона своей команды."
 
 msgid "regular_2_2_15_title_damageDealtReceivedAndBlocked"
 msgstr "Комплексное условие"
@@ -11217,10 +11139,10 @@ msgid "regular_2_2_15_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_2_2_1_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_2_1_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_2_1_title_damage"
 msgstr "Урон"
@@ -11229,10 +11151,10 @@ msgid "regular_2_2_1_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_2_2_description_kills"
-msgstr "Уничтожить 2 машины с расстояния 100 метров и ближе"
+msgstr "Уничтожить 2 машины с расстояния 100 метров и ближе."
 
 msgid "regular_2_2_2_title_damage"
 msgstr "Урон"
@@ -11241,10 +11163,10 @@ msgid "regular_2_2_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_3_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_2_3_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов."
 
 msgid "regular_2_2_3_title_damage"
 msgstr "Урон"
@@ -11255,10 +11177,10 @@ msgstr "Уничтожить"
 msgid "regular_2_2_4_description_crits"
 msgstr ""
 "Повредить или вывести из строя суммарно %(goal)s внутренних модуля или члена"
-" экипажа"
+" экипажа."
 
 msgid "regular_2_2_4_description_kills"
-msgstr "Уничтожить машину противника"
+msgstr "Уничтожить машину противника."
 
 msgid "regular_2_2_4_title_crits"
 msgstr "Крит. попадания"
@@ -11267,10 +11189,10 @@ msgid "regular_2_2_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_5_description_damage"
-msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора"
+msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора."
 
 msgid "regular_2_2_5_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_2_5_title_damage"
 msgstr "Урон"
@@ -11281,19 +11203,19 @@ msgstr "Уничтожить"
 msgid "regular_2_2_6_description_kills"
 msgstr ""
 "Уничтожить суммарно %(goal)s тяжёлых или средних танка своего уровня или "
-"выше"
+"выше."
 
 msgid "regular_2_2_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_7_description_baseCaptureOrDropCapture"
-msgstr "Принять участие в успешном захвате или сбитии захвата базы"
+msgstr "Принять участие в успешном захвате или сбитии захвата базы."
 
 msgid "regular_2_2_7_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_2_7_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_2_7_title_baseCaptureOrDropCapture"
 msgstr "Захват/защита"
@@ -11305,10 +11227,10 @@ msgid "regular_2_2_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_8_description_damage"
-msgstr "Нанести %(goal)s урона тяжёлым танкам"
+msgstr "Нанести %(goal)s урона тяжёлым танкам."
 
 msgid "regular_2_2_8_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_2_8_title_damage"
 msgstr "Урон по ТТ"
@@ -11317,16 +11239,16 @@ msgid "regular_2_2_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_2_9_description_kills"
-msgstr "Уничтожить тараном машину противника. Выжить при таране"
+msgstr "Уничтожить тараном машину противника. Выжить при таране."
 
 msgid "regular_2_2_9_title_kills"
 msgstr "Таран"
 
 msgid "regular_2_3_10_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раза нанести урон технике противника."
 
 msgid "regular_2_3_10_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_3_10_title_hits"
 msgstr "Урон"
@@ -11335,19 +11257,19 @@ msgid "regular_2_3_10_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_11_description_kills"
-msgstr "Уничтожить тараном машину противника"
+msgstr "Уничтожить тараном машину противника."
 
 msgid "regular_2_3_11_title_kills"
 msgstr "Таран"
 
 msgid "regular_2_3_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_3_12_description_hits"
-msgstr "Поджечь машину противника"
+msgstr "Поджечь машину противника."
 
 msgid "regular_2_3_12_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_2_3_12_title_damage"
 msgstr "Урон"
@@ -11359,10 +11281,10 @@ msgid "regular_2_3_12_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_2_3_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_3_13_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_2_3_13_title_damage"
 msgstr "Урон"
@@ -11371,10 +11293,10 @@ msgid "regular_2_3_13_title_topByExp"
 msgstr "Топ-5"
 
 msgid "regular_2_3_14_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_3_14_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_3_14_title_damage"
 msgstr "Урон"
@@ -11383,13 +11305,13 @@ msgid "regular_2_3_14_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_15_description_damage"
-msgstr "Нанести %(goal)s урона ПТ-САУ"
+msgstr "Нанести %(goal)s урона ПТ-САУ."
 
 msgid "regular_2_3_15_description_hits"
-msgstr "Нанести урон %(goal)s машинам"
+msgstr "Нанести урон %(goal)s машинам."
 
 msgid "regular_2_3_15_description_kills"
-msgstr "Уничтожить %(goal)s ПТ-САУ"
+msgstr "Уничтожить %(goal)s ПТ-САУ."
 
 msgid "regular_2_3_15_title_damage"
 msgstr "Урон по ПТ-САУ"
@@ -11401,10 +11323,10 @@ msgid "regular_2_3_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_1_description_hits"
-msgstr "Нанести урон технике противника"
+msgstr "Нанести урон технике противника."
 
 msgid "regular_2_3_1_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_2_3_1_title_hits"
 msgstr "Урон"
@@ -11413,10 +11335,10 @@ msgid "regular_2_3_1_title_topByExp"
 msgstr "Топ-5"
 
 msgid "regular_2_3_2_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_2_3_2_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_3_2_title_hits"
 msgstr "Урон"
@@ -11425,7 +11347,7 @@ msgid "regular_2_3_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_3_description_damage"
-msgstr "Нанести %(goal)s урона в первые 2 минуты боя"
+msgstr "Нанести %(goal)s урона в первые 2 минуты боя."
 
 msgid "regular_2_3_3_title_damage"
 msgstr "Урон"
@@ -11434,10 +11356,10 @@ msgid "regular_2_3_4_description_crits"
 msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам."
 
 msgid "regular_2_3_4_description_hits"
-msgstr "Выстрелами нанести урон обездвиженной машине %(goal)s раза"
+msgstr "Выстрелами нанести урон обездвиженной машине %(goal)s раза."
 
 msgid "regular_2_3_4_description_kills"
-msgstr "Уничтожить обездвиженную машину противника"
+msgstr "Уничтожить обездвиженную машину противника."
 
 msgid "regular_2_3_4_title_crits"
 msgstr "Сбить гусеницу"
@@ -11449,28 +11371,28 @@ msgid "regular_2_3_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_5_description_kills"
-msgstr "Уничтожить лёгкий танк"
+msgstr "Уничтожить лёгкий танк."
 
 msgid "regular_2_3_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_6_description_damageDiversity"
-msgstr "Нанести %(goal)s урона технике %(uniqueGoal)s разных типов"
+msgstr "Нанести %(goal)s урона технике %(uniqueGoal)s разных типов."
 
 msgid "regular_2_3_6_title_damageDiversity"
 msgstr "Урон"
 
 msgid "regular_2_3_7_description_kills"
-msgstr "Уничтожить %(goal)s САУ"
+msgstr "Уничтожить %(goal)s САУ."
 
 msgid "regular_2_3_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_3_8_description_damage"
-msgstr "Нанести средним танкам %(goal)s урона"
+msgstr "Нанести средним танкам %(goal)s урона."
 
 msgid "regular_2_3_8_description_hits"
-msgstr "Выстрелами нанести урон средним танкам %(goal)s раз"
+msgstr "Выстрелами нанести урон средним танкам %(goal)s раз."
 
 msgid "regular_2_3_8_title_damage"
 msgstr "Урон по СТ"
@@ -11479,10 +11401,10 @@ msgid "regular_2_3_8_title_hits"
 msgstr "Урон по СТ"
 
 msgid "regular_2_3_9_description_damage"
-msgstr "Нанести тяжёлым танкам %(goal)s урона"
+msgstr "Нанести тяжёлым танкам %(goal)s урона."
 
 msgid "regular_2_3_9_description_kills"
-msgstr "Уничтожить тяжёлый танк"
+msgstr "Уничтожить тяжёлый танк."
 
 msgid "regular_2_3_9_title_damage"
 msgstr "Урон по ТТ"
@@ -11491,16 +11413,17 @@ msgid "regular_2_3_9_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_10_description_damage"
-msgstr "Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения"
+msgstr ""
+"Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения."
 
 msgid "regular_2_4_10_title_damage"
 msgstr "Урон"
 
 msgid "regular_2_4_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_4_11_description_topByDamage"
-msgstr "Занять первое место по урону в своей команде"
+msgstr "Занять первое место по урону в своей команде."
 
 msgid "regular_2_4_11_title_damage"
 msgstr "Урон"
@@ -11509,10 +11432,10 @@ msgid "regular_2_4_11_title_topByDamage"
 msgstr "Топ-1"
 
 msgid "regular_2_4_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_4_12_description_kills"
-msgstr "Уничтожить тяжёлый танк на уровень выше"
+msgstr "Уничтожить тяжёлый танк на уровень выше."
 
 msgid "regular_2_4_12_title_damage"
 msgstr "Урон"
@@ -11521,22 +11444,22 @@ msgid "regular_2_4_12_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_13_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_4_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_14_description_totalDamagePercent"
-msgstr "Нанести 15%% от суммарного урона своей команды"
+msgstr "Нанести 15%% от суммарного урона своей команды."
 
 msgid "regular_2_4_14_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_2_4_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_4_15_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_4_15_title_damage"
 msgstr "Урон"
@@ -11545,21 +11468,21 @@ msgid "regular_2_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_1_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_2_4_1_title_topByExp"
-msgstr "Топ-5"
+msgstr "Результат"
 
 msgid "regular_2_4_2_description_crits"
-msgstr "Вывести из строя внутренний модуль или члена экипажа"
+msgstr "Вывести из строя внутренний модуль или члена экипажа."
 
 msgid "regular_2_4_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_4_2_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_2_4_2_title_crits"
 msgstr "Крит. попадания"
@@ -11571,23 +11494,23 @@ msgid "regular_2_4_2_title_noCrits"
 msgstr "Выжить"
 
 msgid "regular_2_4_3_description_hits"
-msgstr "Нанести урон %(goal)s машинам противника"
+msgstr "Нанести урон %(goal)s машинам противника."
 
 msgid "regular_2_4_3_title_hits"
 msgstr "Урон"
 
 msgid "regular_2_4_4_description_kills"
 msgstr ""
-"Уничтожить %(goal)s машины, оставаясь незамеченным в момент их уничтожения"
+"Уничтожить %(goal)s машины, оставаясь незамеченным в момент их уничтожения."
 
 msgid "regular_2_4_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_5_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_4_5_description_kills"
-msgstr "Уничтожить машину противника с расстояния не менее 300 метров"
+msgstr "Уничтожить машину противника с расстояния не менее 300 метров."
 
 msgid "regular_2_4_5_title_damage"
 msgstr "Урон"
@@ -11596,10 +11519,10 @@ msgid "regular_2_4_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_6_description_damage"
-msgstr "Нанести %(goal)s урона с расстояния не менее 250 метров"
+msgstr "Нанести %(goal)s урона с расстояния не менее 250 метров."
 
 msgid "regular_2_4_6_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_4_6_title_damage"
 msgstr "Урон"
@@ -11608,22 +11531,22 @@ msgid "regular_2_4_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_7_description_kills"
-msgstr "Уничтожить %(goal)s машины, не потеряв прочности до этого момента"
+msgstr "Уничтожить %(goal)s машины, не потеряв прочности до этого момента."
 
 msgid "regular_2_4_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_2_4_8_description_damage"
-msgstr "Нанести в 3 раза больше урона, чем прочность собственной машины"
+msgstr "Нанести в 3 раза больше урона, чем прочность собственной машины."
 
 msgid "regular_2_4_8_title_damage"
 msgstr "Урон"
 
 msgid "regular_2_4_9_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_2_4_9_description_piercingSeries"
-msgstr "Пробить броню %(goal)s раза подряд"
+msgstr "Пробить броню %(goal)s раза подряд."
 
 msgid "regular_2_4_9_title_kills"
 msgstr "Уничтожить"
@@ -11632,195 +11555,162 @@ msgid "regular_2_4_9_title_piercingSeries"
 msgstr "Пробить броню"
 
 msgid "regular_2_5_10_description_assistedKills"
-msgstr "Союзники должны уничтожить оглушённую или обездвиженную вами машину"
+msgstr "Союзники должны уничтожить обездвиженную вами машину."
 
 msgid "regular_2_5_10_description_damageAndAssist"
-msgstr "Суммарно нанести урона, оглушить или обездвижить на %(goal)s ед."
+msgstr "Суммарно нанести и/или обездвижить на %(goal)s ед. урона."
 
 msgid "regular_2_5_10_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_2_5_10_title_damageAndAssist"
 msgstr "Комплексное условие"
 
-msgid "regular_2_5_11_description_stunNumber"
-msgstr ""
-"Дважды оглушить %(stunSeveralTargets)s машины противника одним выстрелом"
+msgid "regular_2_5_11_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_2_5_11_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_2_5_11_description_critsAdv"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_2_5_11_title_stunNumber"
-msgstr "Оглушить"
+msgid "regular_2_5_11_title_crits"
+msgstr "Содействие"
 
-msgid "regular_2_5_11_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_11_title_critsAdv"
+msgstr "Содействие"
 
 msgid "regular_2_5_12_description_assistedKills"
-msgstr "Союзники должны уничтожить оглушённую или обездвиженную вами машину"
+msgstr "Союзники должны уничтожить обездвиженную вами машину."
 
-msgid "regular_2_5_12_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_2_5_12_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "regular_2_5_12_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_2_5_12_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_12_title_crits"
+msgstr "Содействие"
 
 msgid "regular_2_5_13_description_hits"
-msgstr "Выстрелами %(goal)s раза нанести урон технике противника"
-
-msgid "regular_2_5_13_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgstr "Выстрелами нанести урон технике противника %(goal)s раза."
 
 msgid "regular_2_5_13_title_hits"
 msgstr "Урон"
 
-msgid "regular_2_5_13_title_stunTime"
-msgstr "Оглушить"
-
 msgid "regular_2_5_14_description_assist"
 msgstr ""
-"Союзники должны нанести %(goal)s урона обездвиженной машине со сбитой вами "
-"гусеницей"
-
-msgid "regular_2_5_14_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_2_5_14_title_assist"
-msgstr "Обездвиживание"
-
-msgid "regular_2_5_14_title_stunTime"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "regular_2_5_15_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_2_5_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_2_5_15_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_2_5_15_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_2_5_15_title_damage"
 msgstr "Урон"
 
 msgid "regular_2_5_15_title_topByExp"
-msgstr "Топ-3"
+msgstr "Результат"
+
+msgid "regular_2_5_1_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "regular_2_5_1_description_hits"
-msgstr "%(goal)s раз нанести урон технике противника"
+msgstr "%(goal)s раз нанести урон технике противника."
 
-msgid "regular_2_5_1_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_2_5_1_title_crits"
+msgstr "Содействие"
 
 msgid "regular_2_5_1_title_hits"
 msgstr "Урон"
 
-msgid "regular_2_5_1_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_2_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "regular_2_5_2_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
-msgid "regular_2_5_2_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_2_5_2_title_crits"
+msgstr "Содействие"
 
 msgid "regular_2_5_2_title_kills"
 msgstr "Уничтожить"
 
-msgid "regular_2_5_2_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_3_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_2_5_3_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_2_5_3_title_crits"
+msgstr "Содействие"
 
-msgid "regular_2_5_3_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_4_description_crits"
+msgstr "Сбить гусеницу машине противника."
 
-msgid "regular_2_5_4_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
-
-msgid "regular_2_5_4_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_4_title_crits"
+msgstr "Содействие"
 
 msgid "regular_2_5_5_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_2_5_5_description_hits"
-msgstr "%(goal)s раз нанести урон технике противника"
+msgstr "%(goal)s раз нанести урон технике противника."
 
 msgid "regular_2_5_5_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_2_5_5_title_hits"
 msgstr "Урон"
 
 msgid "regular_2_5_6_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_2_5_6_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_2_5_7_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_2_5_7_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_2_5_7_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_2_5_7_title_crits"
+msgstr "Содействие"
 
 msgid "regular_2_5_8_description_topByExp"
-msgstr "Попасть в топ-5 по опыту в своей команде"
+msgstr "Попасть в топ-5 по опыту в своей команде."
 
 msgid "regular_2_5_8_title_topByExp"
-msgstr "Топ-5"
+msgstr "Результат"
 
-msgid "regular_2_5_9_description_crits"
-msgstr ""
-"Повредить или вывести из строя суммарно %(goal)s любых модулей или членов "
-"экипажа"
+msgid "regular_2_5_9_description_hits"
+msgstr "Нанести урон %(goal)s разным машинам противника."
 
-msgid "regular_2_5_9_title_crits"
-msgstr "Крит. попадания"
+msgid "regular_2_5_9_title_hits"
+msgstr "Урон"
 
 msgid "regular_3_1_10_description_topByExp"
-msgstr "Занять первое место по опыту в обеих командах"
+msgstr "Занять первое место по опыту в обеих командах."
 
 msgid "regular_3_1_10_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_3_1_11_description_damage"
-msgstr "Выстрелами нанести %(goal)s урона технике противника"
+msgstr "Выстрелами нанести %(goal)s урона технике противника."
 
 msgid "regular_3_1_11_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике своего уровня или выше"
+msgstr "Выстрелами %(goal)s раз нанести урон технике своего уровня или выше."
 
 msgid "regular_3_1_11_title_damage"
 msgstr "Урон"
@@ -11831,16 +11721,16 @@ msgstr "Урон"
 msgid "regular_3_1_12_description_assist"
 msgstr ""
 "Передать разведданные на %(goal)s урона, оставаясь незамеченным в момент его"
-" нанесения"
+" нанесения."
 
 msgid "regular_3_1_12_title_assist"
 msgstr "Разведданные"
 
 msgid "regular_3_1_13_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_3_1_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_1_13_title_assist"
 msgstr "Разведданные"
@@ -11849,7 +11739,7 @@ msgid "regular_3_1_13_title_damage"
 msgstr "Урон"
 
 msgid "regular_3_1_14_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_3_1_14_title_assist"
 msgstr "Разведданные"
@@ -11857,7 +11747,7 @@ msgstr "Разведданные"
 msgid "regular_3_1_15_description_assistedKills"
 msgstr ""
 "Помочь союзникам уничтожить %(goal)s цели, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_3_1_15_description_damageAndAssist"
 msgstr ""
@@ -11871,25 +11761,25 @@ msgid "regular_3_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_3_1_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_3_1_1_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_3_1_2_description_spotNumber"
-msgstr "Обнаружить %(goal)s машин противника"
+msgstr "Обнаружить %(goal)s машин противника."
 
 msgid "regular_3_1_2_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_3_1_3_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_3_1_3_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_1_3_description_spotNumber"
-msgstr "Обнаружить %(goal)s машины противника"
+msgstr "Обнаружить %(goal)s машины противника."
 
 msgid "regular_3_1_3_title_hits"
 msgstr "Урон"
@@ -11903,15 +11793,15 @@ msgstr "Обнаружить"
 msgid "regular_3_1_4_description_assist"
 msgstr ""
 "Обездвижить противника, сбив ему гусеницу. Союзники должны нанести ему "
-"%(goal)s урона, пока он обездвижен"
+"%(goal)s урона, пока он обездвижен."
 
 msgid "regular_3_1_4_description_assistedKills"
 msgstr ""
 "Обездвижить противника, сбив гусеницу %(goal)s разным машинам. Союзники "
-"должны их уничтожить, пока они обездвижены"
+"должны их уничтожить, пока они обездвижены."
 
 msgid "regular_3_1_4_description_crits"
-msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам"
+msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам."
 
 msgid "regular_3_1_4_title_assist"
 msgstr "Обездвиживание"
@@ -11924,10 +11814,10 @@ msgstr "Сбить гусеницу"
 
 msgid "regular_3_1_5_description_assistedHits"
 msgstr ""
-"Передать разведданные для нанесения союзниками урона по %(goal)s целям"
+"Передать разведданные для нанесения союзниками урона по %(goal)s целям."
 
 msgid "regular_3_1_5_description_assistedKills"
-msgstr "Передать разведданные для уничтожения %(goal)s целей"
+msgstr "Передать разведданные для уничтожения %(goal)s целей."
 
 msgid "regular_3_1_5_title_assistedHits"
 msgstr "Разведданные"
@@ -11938,12 +11828,12 @@ msgstr "Разведданные"
 msgid "regular_3_1_6_description_assistedHits"
 msgstr ""
 "Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_3_1_6_description_assistedKills"
 msgstr ""
 "Помочь союзникам уничтожить %(goal)s цели, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_3_1_6_title_assistedHits"
 msgstr "Поддержка"
@@ -11952,10 +11842,10 @@ msgid "regular_3_1_6_title_assistedKills"
 msgstr "Поддержка"
 
 msgid "regular_3_1_7_description_kills"
-msgstr "Уничтожить %(goal)s САУ противника"
+msgstr "Уничтожить %(goal)s САУ противника."
 
 msgid "regular_3_1_7_description_spotAndDamage"
-msgstr "Обнаружить и нанести урон %(goal)s САУ противника"
+msgstr "Обнаружить и нанести урон %(goal)s САУ противника."
 
 msgid "regular_3_1_7_title_kills"
 msgstr "Уничтожить"
@@ -11966,15 +11856,15 @@ msgstr "Обнаружить"
 msgid "regular_3_1_8_description_baseCapture"
 msgstr ""
 "Принять участие в успешном захвате базы, заработав %(goal)s соответствующих "
-"очков"
+"очков."
 
 msgid "regular_3_1_8_description_dropCapture"
 msgstr ""
 "Принять участие в успешном сбитии захвата базы, заработав %(goal)s "
-"соответствующих очков"
+"соответствующих очков."
 
 msgid "regular_3_1_8_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_1_8_title_baseCapture"
 msgstr "Захват"
@@ -11986,27 +11876,27 @@ msgid "regular_3_1_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_1_9_description_spotNumber"
-msgstr "Обнаружить %(goal)s машины, оставаясь необнаруженным"
+msgstr "Обнаружить %(goal)s машины, оставаясь необнаруженным."
 
 msgid "regular_3_1_9_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_3_2_10_description_topByExp"
-msgstr "Занять первое место по урону в своей команде"
+msgstr "Занять первое место по урону в своей команде."
 
 msgid "regular_3_2_10_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_3_2_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_11_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_2_11_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_3_2_11_title_damage"
 msgstr "Урон"
@@ -12020,10 +11910,10 @@ msgstr "Выжить"
 msgid "regular_3_2_12_description_blockedDamage"
 msgstr ""
 "Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
-" прочности собственной машины"
+" прочности собственной машины."
 
 msgid "regular_3_2_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_12_title_blockedDamage"
 msgstr "Эффективность брони"
@@ -12032,13 +11922,13 @@ msgid "regular_3_2_12_title_damage"
 msgstr "Урон"
 
 msgid "regular_3_2_13_description_kills"
-msgstr "Уничтожить %(goal)s машины в первые 3 минуты боя"
+msgstr "Уничтожить %(goal)s машины в первые 3 минуты боя."
 
 msgid "regular_3_2_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_14_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов."
 
 msgid "regular_3_2_14_title_killsDiversity"
 msgstr "Уничтожить"
@@ -12047,7 +11937,7 @@ msgid "regular_3_2_15_description_damageDealtReceivedAndBlocked"
 msgstr "Нанести урона, получить и заблокировать суммарно на %(goal)s ед."
 
 msgid "regular_3_2_15_description_totalDamagePercent"
-msgstr "Нанести 25%% от суммарного урона своей команды"
+msgstr "Нанести 25%% от суммарного урона своей команды."
 
 msgid "regular_3_2_15_title_damageDealtReceivedAndBlocked"
 msgstr "Комплексное условие"
@@ -12056,10 +11946,10 @@ msgid "regular_3_2_15_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_3_2_1_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_1_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_2_1_title_damage"
 msgstr "Урон"
@@ -12068,10 +11958,10 @@ msgid "regular_3_2_1_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_2_description_kills"
-msgstr "Уничтожить 3 машины с расстояния 100 метров и ближе"
+msgstr "Уничтожить 3 машины с расстояния 100 метров и ближе."
 
 msgid "regular_3_2_2_title_damage"
 msgstr "Урон"
@@ -12080,10 +11970,10 @@ msgid "regular_3_2_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_3_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_3_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов."
 
 msgid "regular_3_2_3_title_damage"
 msgstr "Урон"
@@ -12094,10 +11984,10 @@ msgstr "Уничтожить"
 msgid "regular_3_2_4_description_crits"
 msgstr ""
 "Повредить или вывести из строя суммарно %(goal)s внутренних модулей или "
-"членов экипажа"
+"членов экипажа."
 
 msgid "regular_3_2_4_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_2_4_title_crits"
 msgstr "Крит. попадания"
@@ -12106,10 +11996,10 @@ msgid "regular_3_2_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_5_description_damage"
-msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора"
+msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора."
 
 msgid "regular_3_2_5_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_2_5_title_damage"
 msgstr "Урон"
@@ -12118,10 +12008,10 @@ msgid "regular_3_2_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_6_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_6_description_kills"
-msgstr "Уничтожить суммарно %(goal)s тяжёлых или средних танка"
+msgstr "Уничтожить суммарно %(goal)s тяжёлых или средних танка."
 
 msgid "regular_3_2_6_title_damage"
 msgstr "Урон"
@@ -12130,13 +12020,13 @@ msgid "regular_3_2_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_7_description_baseCaptureOrDropCapture"
-msgstr "Принять участие в успешном захвате или сбитии захвата базы"
+msgstr "Принять участие в успешном захвате или сбитии захвата базы."
 
 msgid "regular_3_2_7_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_2_7_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_2_7_title_baseCaptureOrDropCapture"
 msgstr "Захват/защита"
@@ -12148,10 +12038,10 @@ msgid "regular_3_2_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_2_8_description_damage"
-msgstr "Нанести %(goal)s урона тяжёлым танкам"
+msgstr "Нанести %(goal)s урона тяжёлым танкам."
 
 msgid "regular_3_2_8_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_2_8_title_damage"
 msgstr "Урон по ТТ"
@@ -12162,16 +12052,16 @@ msgstr "Уничтожить"
 msgid "regular_3_2_9_description_kills"
 msgstr ""
 "Уничтожить тараном машину противника, потеряв меньше очков прочности, чем "
-"цель. Выжить при таране"
+"цель. Выжить при таране."
 
 msgid "regular_3_2_9_title_kills"
 msgstr "Таран"
 
 msgid "regular_3_3_10_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_3_3_10_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_3_10_title_hits"
 msgstr "Урон"
@@ -12180,16 +12070,16 @@ msgid "regular_3_3_10_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_11_description_kills"
-msgstr "Уничтожить тараном машину противника и выжить при таране"
+msgstr "Уничтожить тараном машину противника и выжить при таране."
 
 msgid "regular_3_3_11_title_kills"
 msgstr "Таран"
 
 msgid "regular_3_3_12_description_hits"
-msgstr "Поджечь машину противника своего уровня или выше"
+msgstr "Поджечь машину противника своего уровня или выше."
 
 msgid "regular_3_3_12_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_3_3_12_title_hits"
 msgstr "Поджог"
@@ -12198,10 +12088,10 @@ msgid "regular_3_3_12_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_3_3_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_3_13_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_3_3_13_title_damage"
 msgstr "Урон"
@@ -12210,10 +12100,10 @@ msgid "regular_3_3_13_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_3_3_14_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_3_14_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_3_3_14_title_damage"
 msgstr "Урон"
@@ -12222,10 +12112,10 @@ msgid "regular_3_3_14_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_15_description_damage"
-msgstr "Нанести %(goal)s урона ПТ-САУ"
+msgstr "Нанести %(goal)s урона ПТ-САУ."
 
 msgid "regular_3_3_15_description_hits"
-msgstr "Нанести урон %(goal)s машинам"
+msgstr "Нанести урон %(goal)s машинам."
 
 msgid "regular_3_3_15_title_damage"
 msgstr "Урон по ПТ-САУ"
@@ -12234,10 +12124,10 @@ msgid "regular_3_3_15_title_hits"
 msgstr "Урон"
 
 msgid "regular_3_3_1_description_hits"
-msgstr "Нанести урон технике противника"
+msgstr "Нанести урон технике противника."
 
 msgid "regular_3_3_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_3_3_1_title_hits"
 msgstr "Урон"
@@ -12246,10 +12136,10 @@ msgid "regular_3_3_1_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_3_3_2_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_3_3_2_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_3_2_title_hits"
 msgstr "Урон"
@@ -12258,7 +12148,7 @@ msgid "regular_3_3_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_3_description_kills"
-msgstr "Уничтожить машину противника в первые 3 минуты боя"
+msgstr "Уничтожить машину противника в первые 3 минуты боя."
 
 msgid "regular_3_3_3_title_kills"
 msgstr "Уничтожить"
@@ -12267,10 +12157,10 @@ msgid "regular_3_3_4_description_crits"
 msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам."
 
 msgid "regular_3_3_4_description_hits"
-msgstr "Выстрелами нанести урон обездвиженной машине %(goal)s раза"
+msgstr "Выстрелами нанести урон обездвиженной машине %(goal)s раза."
 
 msgid "regular_3_3_4_description_kills"
-msgstr "Уничтожить %(goal)s обездвиженные машины"
+msgstr "Уничтожить %(goal)s обездвиженные машины."
 
 msgid "regular_3_3_4_title_crits"
 msgstr "Сбить гусеницу"
@@ -12282,22 +12172,22 @@ msgid "regular_3_3_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_5_description_kills"
-msgstr "Уничтожить лёгкий танк в первые 2 минуты боя"
+msgstr "Уничтожить лёгкий танк в первые 2 минуты боя."
 
 msgid "regular_3_3_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_6_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машины %(uniqueGoal)s разных типов."
 
 msgid "regular_3_3_6_title_killsDiversity"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_7_description_hits"
-msgstr "Выстрелами нанести урон САУ %(goal)s раза"
+msgstr "Выстрелами нанести урон САУ %(goal)s раза."
 
 msgid "regular_3_3_7_description_kills"
-msgstr "Уничтожить %(goal)s САУ"
+msgstr "Уничтожить %(goal)s САУ."
 
 msgid "regular_3_3_7_title_hits"
 msgstr "Урон по САУ"
@@ -12306,13 +12196,13 @@ msgid "regular_3_3_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_8_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_3_8_description_hits"
-msgstr "Выстрелами нанести урон средним танкам %(goal)s раз"
+msgstr "Выстрелами нанести урон средним танкам %(goal)s раз."
 
 msgid "regular_3_3_8_description_kills"
-msgstr "Уничтожить средний танк"
+msgstr "Уничтожить средний танк."
 
 msgid "regular_3_3_8_title_damage"
 msgstr "Урон"
@@ -12324,10 +12214,10 @@ msgid "regular_3_3_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_3_9_description_damage"
-msgstr "Нанести тяжёлым танкам %(goal)s урона"
+msgstr "Нанести тяжёлым танкам %(goal)s урона."
 
 msgid "regular_3_3_9_description_kills"
-msgstr "Уничтожить %(goal)s тяжёлых танка"
+msgstr "Уничтожить %(goal)s тяжёлых танка."
 
 msgid "regular_3_3_9_title_damage"
 msgstr "Урон по ТТ"
@@ -12336,16 +12226,17 @@ msgid "regular_3_3_9_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_10_description_damage"
-msgstr "Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения"
+msgstr ""
+"Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения."
 
 msgid "regular_3_4_10_title_damage"
 msgstr "Урон"
 
 msgid "regular_3_4_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_4_11_description_topByDamage"
-msgstr "Занять первое место по урону в обеих командах"
+msgstr "Занять первое место по урону в обеих командах."
 
 msgid "regular_3_4_11_title_damage"
 msgstr "Урон"
@@ -12354,10 +12245,10 @@ msgid "regular_3_4_11_title_topByDamage"
 msgstr "Топ-1"
 
 msgid "regular_3_4_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_4_12_description_kills"
-msgstr "Уничтожить %(goal)s тяжёлых танка"
+msgstr "Уничтожить %(goal)s тяжёлых танка."
 
 msgid "regular_3_4_12_title_damage"
 msgstr "Урон"
@@ -12366,22 +12257,22 @@ msgid "regular_3_4_12_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_13_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_4_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_14_description_totalDamagePercent"
-msgstr "Нанести 20%% от суммарного урона своей команды"
+msgstr "Нанести 20%% от суммарного урона своей команды."
 
 msgid "regular_3_4_14_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_3_4_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_4_15_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_3_4_15_title_damage"
 msgstr "Урон"
@@ -12390,22 +12281,22 @@ msgid "regular_3_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_1_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_3_4_1_title_topByExp"
-msgstr "Топ-3"
+msgstr "Результат"
 
 msgid "regular_3_4_2_description_crits"
 msgstr ""
-"Вывести из строя суммарно %(goal)s внутренних модуля или члена экипажа"
+"Вывести из строя суммарно %(goal)s внутренних модуля или члена экипажа."
 
 msgid "regular_3_4_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_4_2_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_3_4_2_title_crits"
 msgstr "Крит. попадания"
@@ -12417,23 +12308,23 @@ msgid "regular_3_4_2_title_noCrits"
 msgstr "Выжить"
 
 msgid "regular_3_4_3_description_hits"
-msgstr "Нанести урон %(goal)s машинам противника"
+msgstr "Нанести урон %(goal)s машинам противника."
 
 msgid "regular_3_4_3_title_hits"
 msgstr "Урон"
 
 msgid "regular_3_4_4_description_kills"
 msgstr ""
-"Уничтожить %(goal)s машины, оставаясь незамеченным в момент их уничтожения"
+"Уничтожить %(goal)s машины, оставаясь незамеченным в момент их уничтожения."
 
 msgid "regular_3_4_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_5_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_4_5_description_kills"
-msgstr "Уничтожить %(goal)s машины с расстояния не менее 300 метров"
+msgstr "Уничтожить %(goal)s машины с расстояния не менее 300 метров."
 
 msgid "regular_3_4_5_title_damage"
 msgstr "Урон"
@@ -12442,10 +12333,10 @@ msgid "regular_3_4_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_6_description_damage"
-msgstr "Нанести %(goal)s урона с расстояния не менее 250 метров"
+msgstr "Нанести %(goal)s урона с расстояния не менее 250 метров."
 
 msgid "regular_3_4_6_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_4_6_title_damage"
 msgstr "Урон"
@@ -12454,22 +12345,22 @@ msgid "regular_3_4_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_7_description_kills"
-msgstr "Уничтожить %(goal)s машины, не потеряв прочности до этого момента"
+msgstr "Уничтожить %(goal)s машины, не потеряв прочности до этого момента."
 
 msgid "regular_3_4_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_3_4_8_description_damage"
-msgstr "Нанести в 4 раза больше урона, чем прочность собственной машины"
+msgstr "Нанести в 4 раза больше урона, чем прочность собственной машины."
 
 msgid "regular_3_4_8_title_damage"
 msgstr "Урон"
 
 msgid "regular_3_4_9_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_3_4_9_description_piercingSeries"
-msgstr "Пробить броню %(goal)s раз подряд"
+msgstr "Пробить броню %(goal)s раз подряд."
 
 msgid "regular_3_4_9_title_kills"
 msgstr "Уничтожить"
@@ -12478,196 +12369,162 @@ msgid "regular_3_4_9_title_piercingSeries"
 msgstr "Пробить броню"
 
 msgid "regular_3_5_10_description_assistedKills"
-msgstr ""
-"Союзники должны уничтожить %(goal)s оглушённые или обездвиженные вами машины"
+msgstr "Союзники должны уничтожить %(goal)s обездвиженные вами машины."
 
 msgid "regular_3_5_10_description_damageAndAssist"
-msgstr "Суммарно нанести урона, оглушить или обездвижить на %(goal)s ед."
+msgstr "Суммарно нанести и/или обездвижить на %(goal)s ед. урона."
 
 msgid "regular_3_5_10_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_3_5_10_title_damageAndAssist"
 msgstr "Комплексное условие"
 
-msgid "regular_3_5_11_description_stunNumber"
-msgstr "Оглушить %(stunSeveralTargets)s машины противника одним выстрелом"
+msgid "regular_3_5_11_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_3_5_11_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_3_5_11_description_critsAdv"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
-msgid "regular_3_5_11_title_stunNumber"
-msgstr "Оглушить"
+msgid "regular_3_5_11_title_crits"
+msgstr "Содействие"
 
-msgid "regular_3_5_11_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_11_title_critsAdv"
+msgstr "Содействие"
 
 msgid "regular_3_5_12_description_assistedKills"
-msgstr ""
-"Союзники должны уничтожить %(goal)s оглушённые или обездвиженные вами машины"
+msgstr "Союзники должны уничтожить %(goal)s обездвиженные вами машины."
 
-msgid "regular_3_5_12_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_3_5_12_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "regular_3_5_12_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_3_5_12_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_12_title_crits"
+msgstr "Содействие"
 
 msgid "regular_3_5_13_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
-
-msgid "regular_3_5_13_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgstr "Выстрелами нанести урон технике противника %(goal)s раз."
 
 msgid "regular_3_5_13_title_hits"
 msgstr "Урон"
 
-msgid "regular_3_5_13_title_stunTime"
-msgstr "Оглушить"
-
 msgid "regular_3_5_14_description_assist"
 msgstr ""
-"Союзники должны нанести %(goal)s урона обездвиженной машине со сбитой вами "
-"гусеницей"
-
-msgid "regular_3_5_14_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_3_5_14_title_assist"
-msgstr "Обездвиживание"
-
-msgid "regular_3_5_14_title_stunTime"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "regular_3_5_15_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_3_5_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_3_5_15_description_topByExp"
-msgstr "Занять первое место по опыту в своей команде"
+msgstr "Занять первое место по опыту в своей команде."
 
 msgid "regular_3_5_15_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_3_5_15_title_damage"
 msgstr "Урон"
 
 msgid "regular_3_5_15_title_topByExp"
-msgstr "Топ-1"
+msgstr "Результат"
+
+msgid "regular_3_5_1_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
 msgid "regular_3_5_1_description_hits"
-msgstr "%(goal)s раз нанести урон технике противника"
+msgstr "%(goal)s раз нанести урон технике противника."
 
-msgid "regular_3_5_1_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_3_5_1_title_crits"
+msgstr "Содействие"
 
 msgid "regular_3_5_1_title_hits"
 msgstr "Урон"
 
-msgid "regular_3_5_1_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_2_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "regular_3_5_2_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
-msgid "regular_3_5_2_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_3_5_2_title_crits"
+msgstr "Содействие"
 
 msgid "regular_3_5_2_title_kills"
 msgstr "Уничтожить"
 
-msgid "regular_3_5_2_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_3_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_3_5_3_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_3_5_3_title_crits"
+msgstr "Содействие"
 
-msgid "regular_3_5_3_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_4_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_3_5_4_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
-
-msgid "regular_3_5_4_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_4_title_crits"
+msgstr "Содействие"
 
 msgid "regular_3_5_5_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_3_5_5_description_hits"
-msgstr "%(goal)s раз нанести урон технике противника"
+msgstr "%(goal)s раз нанести урон технике противника."
 
 msgid "regular_3_5_5_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_3_5_5_title_hits"
 msgstr "Урон"
 
 msgid "regular_3_5_6_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_3_5_6_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_3_5_7_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_3_5_7_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_3_5_7_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_3_5_7_title_crits"
+msgstr "Содействие"
 
 msgid "regular_3_5_8_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_3_5_8_title_topByExp"
-msgstr "Топ-3"
+msgstr "Результат"
 
-msgid "regular_3_5_9_description_crits"
-msgstr ""
-"Повредить или вывести из строя суммарно %(goal)s любых модулей или членов "
-"экипажа"
+msgid "regular_3_5_9_description_hits"
+msgstr "Нанести урон %(goal)s разным машинам противника."
 
-msgid "regular_3_5_9_title_crits"
-msgstr "Крит. попадания"
+msgid "regular_3_5_9_title_hits"
+msgstr "Урон"
 
 msgid "regular_4_1_10_description_topByExp"
-msgstr "Занять первое место по опыту в обеих командах"
+msgstr "Занять первое место по опыту в обеих командах."
 
 msgid "regular_4_1_10_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_4_1_11_description_damage"
-msgstr "Выстрелами нанести %(goal)s урона технике противника"
+msgstr "Выстрелами нанести %(goal)s урона технике противника."
 
 msgid "regular_4_1_11_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике своего уровня или выше"
+msgstr "Выстрелами %(goal)s раз нанести урон технике своего уровня или выше."
 
 msgid "regular_4_1_11_title_damage"
 msgstr "Урон"
@@ -12678,16 +12535,16 @@ msgstr "Урон"
 msgid "regular_4_1_12_description_assist"
 msgstr ""
 "Передать разведданные на %(goal)s урона, оставаясь незамеченным в момент его"
-" нанесения"
+" нанесения."
 
 msgid "regular_4_1_12_title_assist"
 msgstr "Разведданные"
 
 msgid "regular_4_1_13_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_4_1_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_1_13_title_assist"
 msgstr "Разведданные"
@@ -12696,7 +12553,7 @@ msgid "regular_4_1_13_title_damage"
 msgstr "Урон"
 
 msgid "regular_4_1_14_description_assist"
-msgstr "Передать разведданные на %(goal)s урона"
+msgstr "Передать разведданные на %(goal)s урона."
 
 msgid "regular_4_1_14_title_assist"
 msgstr "Разведданные"
@@ -12704,7 +12561,7 @@ msgstr "Разведданные"
 msgid "regular_4_1_15_description_assistedKills"
 msgstr ""
 "Помочь союзникам уничтожить %(goal)s целей, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_4_1_15_description_damageAndAssist"
 msgstr ""
@@ -12718,25 +12575,25 @@ msgid "regular_4_1_15_title_damageAndAssist"
 msgstr "Комплексное условие"
 
 msgid "regular_4_1_1_description_topByExp"
-msgstr "Занять первое место по опыту в своей команде"
+msgstr "Занять первое место по опыту в своей команде."
 
 msgid "regular_4_1_1_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_4_1_2_description_spotNumber"
-msgstr "Обнаружить %(goal)s машин противника"
+msgstr "Обнаружить %(goal)s машин противника."
 
 msgid "regular_4_1_2_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_4_1_3_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_4_1_3_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_4_1_3_description_spotNumber"
-msgstr "Обнаружить %(goal)s машин противника"
+msgstr "Обнаружить %(goal)s машин противника."
 
 msgid "regular_4_1_3_title_hits"
 msgstr "Урон"
@@ -12750,12 +12607,12 @@ msgstr "Обнаружить"
 msgid "regular_4_1_4_description_assist"
 msgstr ""
 "Обездвижить противника, сбив ему гусеницу. Союзники должны нанести ему "
-"%(goal)s урона, пока он обездвижен"
+"%(goal)s урона, пока он обездвижен."
 
 msgid "regular_4_1_4_description_assistedKills"
 msgstr ""
 "Обездвижить противника, сбив гусеницу %(goal)s разным машинам. Союзники "
-"должны их уничтожить, пока они обездвижены"
+"должны их уничтожить, пока они обездвижены."
 
 msgid "regular_4_1_4_description_crits"
 msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам."
@@ -12771,10 +12628,10 @@ msgstr "Сбить гусеницу"
 
 msgid "regular_4_1_5_description_assistedHits"
 msgstr ""
-"Передать разведданные для нанесения союзниками урона по %(goal)s целям"
+"Передать разведданные для нанесения союзниками урона по %(goal)s целям."
 
 msgid "regular_4_1_5_description_assistedKills"
-msgstr "Передать разведданные для уничтожения %(goal)s целей"
+msgstr "Передать разведданные для уничтожения %(goal)s целей."
 
 msgid "regular_4_1_5_title_assistedHits"
 msgstr "Разведданные"
@@ -12785,12 +12642,12 @@ msgstr "Разведданные"
 msgid "regular_4_1_6_description_assistedHits"
 msgstr ""
 "Помочь союзникам нанести урон по %(goal)s целям, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_4_1_6_description_assistedKills"
 msgstr ""
 "Помочь союзникам уничтожить %(goal)s цели, передавая разведданные или "
-"обездвиживая противника, сбивая гусеницы"
+"обездвиживая противника, сбивая гусеницы."
 
 msgid "regular_4_1_6_title_assistedHits"
 msgstr "Поддержка"
@@ -12799,7 +12656,7 @@ msgid "regular_4_1_6_title_assistedKills"
 msgstr "Поддержка"
 
 msgid "regular_4_1_7_description_spotAndDamage"
-msgstr "Обнаружить и нанести урон 2 САУ противника"
+msgstr "Обнаружить и нанести урон 2 САУ противника."
 
 msgid "regular_4_1_7_title_spotAndDamage"
 msgstr "Обнаружить"
@@ -12807,15 +12664,15 @@ msgstr "Обнаружить"
 msgid "regular_4_1_8_description_baseCapture"
 msgstr ""
 "Принять участие в успешном захвате базы, заработав %(goal)s соответствующих "
-"очков"
+"очков."
 
 msgid "regular_4_1_8_description_dropCapture"
 msgstr ""
 "Принять участие в успешном сбитии захвата базы, заработав %(goal)s "
-"соответствующих очков"
+"соответствующих очков."
 
 msgid "regular_4_1_8_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_4_1_8_title_baseCapture"
 msgstr "Захват"
@@ -12827,27 +12684,27 @@ msgid "regular_4_1_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_1_9_description_spotNumber"
-msgstr "Обнаружить %(goal)s машин, оставаясь необнаруженным"
+msgstr "Обнаружить %(goal)s машин, оставаясь необнаруженным."
 
 msgid "regular_4_1_9_title_spotNumber"
 msgstr "Обнаружить"
 
 msgid "regular_4_2_10_description_topByExp"
-msgstr "Занять первое место по урону в обеих командах"
+msgstr "Занять первое место по урону в обеих командах."
 
 msgid "regular_4_2_10_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_4_2_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_11_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_2_11_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_4_2_11_title_damage"
 msgstr "Урон"
@@ -12861,10 +12718,10 @@ msgstr "Выжить"
 msgid "regular_4_2_12_description_blockedDamage"
 msgstr ""
 "Получить заблокированного бронёй урона в %(vehicleHealthFactor)s раза больше"
-" прочности собственной машины"
+" прочности собственной машины."
 
 msgid "regular_4_2_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_12_title_blockedDamage"
 msgstr "Эффективность брони"
@@ -12873,13 +12730,13 @@ msgid "regular_4_2_12_title_damage"
 msgstr "Урон"
 
 msgid "regular_4_2_13_description_kills"
-msgstr "Уничтожить %(goal)s машины в первые 4 минуты боя"
+msgstr "Уничтожить %(goal)s машины в первые 4 минуты боя."
 
 msgid "regular_4_2_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_14_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машин %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машин %(uniqueGoal)s разных типов."
 
 msgid "regular_4_2_14_title_killsDiversity"
 msgstr "Уничтожить"
@@ -12888,7 +12745,7 @@ msgid "regular_4_2_15_description_damageDealtReceivedAndBlocked"
 msgstr "Нанести урона, получить и заблокировать суммарно на %(goal)s ед."
 
 msgid "regular_4_2_15_description_totalDamagePercent"
-msgstr "Нанести 25%% от суммарного урона своей команды"
+msgstr "Нанести 25%% от суммарного урона своей команды."
 
 msgid "regular_4_2_15_title_damageDealtReceivedAndBlocked"
 msgstr "Комплексное условие"
@@ -12897,10 +12754,10 @@ msgid "regular_4_2_15_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_4_2_1_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_1_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_2_1_title_damage"
 msgstr "Урон"
@@ -12909,10 +12766,10 @@ msgid "regular_4_2_1_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_2_description_kills"
-msgstr "Уничтожить 4 машины с расстояния 100 метров и ближе"
+msgstr "Уничтожить 4 машины с расстояния 100 метров и ближе."
 
 msgid "regular_4_2_2_title_damage"
 msgstr "Урон"
@@ -12921,10 +12778,10 @@ msgid "regular_4_2_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_3_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_3_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машин %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машин %(uniqueGoal)s разных типов."
 
 msgid "regular_4_2_3_title_damage"
 msgstr "Урон"
@@ -12935,10 +12792,10 @@ msgstr "Уничтожить"
 msgid "regular_4_2_4_description_crits"
 msgstr ""
 "Повредить или вывести из строя суммарно %(goal)s внутренних модулей или "
-"членов экипажа"
+"членов экипажа."
 
 msgid "regular_4_2_4_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_2_4_title_crits"
 msgstr "Крит. попадания"
@@ -12947,10 +12804,10 @@ msgid "regular_4_2_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_5_description_damage"
-msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора"
+msgstr "Нанести %(goal)s урона технике, попадающей в ваш радиус обзора."
 
 msgid "regular_4_2_5_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_2_5_title_damage"
 msgstr "Урон"
@@ -12959,10 +12816,10 @@ msgid "regular_4_2_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_6_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_6_description_kills"
-msgstr "Уничтожить суммарно %(goal)s тяжёлых или средних танка"
+msgstr "Уничтожить суммарно %(goal)s тяжёлых или средних танка."
 
 msgid "regular_4_2_6_title_damage"
 msgstr "Урон"
@@ -12971,13 +12828,13 @@ msgid "regular_4_2_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_7_description_baseCaptureOrDropCapture"
-msgstr "Принять участие в успешном захвате или сбитии захвата базы"
+msgstr "Принять участие в успешном захвате или сбитии захвата базы."
 
 msgid "regular_4_2_7_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_2_7_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_4_2_7_title_baseCaptureOrDropCapture"
 msgstr "Захват/защита"
@@ -12989,10 +12846,10 @@ msgid "regular_4_2_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_8_description_damage"
-msgstr "Нанести %(goal)s урона тяжёлым танкам"
+msgstr "Нанести %(goal)s урона тяжёлым танкам."
 
 msgid "regular_4_2_8_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_2_8_title_damage"
 msgstr "Урон по ТТ"
@@ -13001,16 +12858,16 @@ msgid "regular_4_2_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_2_9_description_kills"
-msgstr "Уничтожить тараном машину противника на уровень выше"
+msgstr "Уничтожить тараном машину противника на уровень выше."
 
 msgid "regular_4_2_9_title_kills"
 msgstr "Таран"
 
 msgid "regular_4_3_10_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_4_3_10_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_4_3_10_title_hits"
 msgstr "Урон"
@@ -13019,19 +12876,19 @@ msgid "regular_4_3_10_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_11_description_kills"
-msgstr "Уничтожить тараном машину противника на уровень выше"
+msgstr "Уничтожить тараном машину противника на уровень выше."
 
 msgid "regular_4_3_11_title_kills"
 msgstr "Таран"
 
 msgid "regular_4_3_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_3_12_description_hits"
-msgstr "Поджечь машину противника своего уровня или выше"
+msgstr "Поджечь машину противника своего уровня или выше."
 
 msgid "regular_4_3_12_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_4_3_12_title_damage"
 msgstr "Урон"
@@ -13043,10 +12900,10 @@ msgid "regular_4_3_12_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_4_3_13_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_3_13_description_topByExp"
-msgstr "Попасть в топ-3 по опыту в своей команде"
+msgstr "Попасть в топ-3 по опыту в своей команде."
 
 msgid "regular_4_3_13_title_damage"
 msgstr "Урон"
@@ -13055,10 +12912,10 @@ msgid "regular_4_3_13_title_topByExp"
 msgstr "Топ-3"
 
 msgid "regular_4_3_14_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_3_14_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_3_14_title_damage"
 msgstr "Урон"
@@ -13067,10 +12924,10 @@ msgid "regular_4_3_14_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_15_description_damage"
-msgstr "Нанести %(goal)s урона ПТ-САУ"
+msgstr "Нанести %(goal)s урона ПТ-САУ."
 
 msgid "regular_4_3_15_description_hits"
-msgstr "Нанести урон %(goal)s машинам"
+msgstr "Нанести урон %(goal)s машинам."
 
 msgid "regular_4_3_15_title_damage"
 msgstr "Урон по ПТ-САУ"
@@ -13079,10 +12936,10 @@ msgid "regular_4_3_15_title_hits"
 msgstr "Урон"
 
 msgid "regular_4_3_1_description_hits"
-msgstr "Нанести урон технике противника"
+msgstr "Нанести урон технике противника."
 
 msgid "regular_4_3_1_description_topByExp"
-msgstr "Занять первое место по опыту в своей команде"
+msgstr "Занять первое место по опыту в своей команде."
 
 msgid "regular_4_3_1_title_hits"
 msgstr "Урон"
@@ -13091,10 +12948,10 @@ msgid "regular_4_3_1_title_topByExp"
 msgstr "Топ-1"
 
 msgid "regular_4_3_2_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
+msgstr "Выстрелами %(goal)s раз нанести урон технике противника."
 
 msgid "regular_4_3_2_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_3_2_title_hits"
 msgstr "Урон"
@@ -13103,7 +12960,7 @@ msgid "regular_4_3_2_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_3_description_kills"
-msgstr "Уничтожить %(goal)s машины в первые 3 минуты боя"
+msgstr "Уничтожить %(goal)s машины в первые 3 минуты боя."
 
 msgid "regular_4_3_3_title_kills"
 msgstr "Уничтожить"
@@ -13112,10 +12969,10 @@ msgid "regular_4_3_4_description_crits"
 msgstr "Обездвижить противника, сбив гусеницу %(goal)s разным машинам."
 
 msgid "regular_4_3_4_description_hits"
-msgstr "Выстрелами нанести урон обездвиженной машине %(goal)s раза"
+msgstr "Выстрелами нанести урон обездвиженной машине %(goal)s раза."
 
 msgid "regular_4_3_4_description_kills"
-msgstr "Уничтожить %(goal)s обездвиженные машины"
+msgstr "Уничтожить %(goal)s обездвиженные машины."
 
 msgid "regular_4_3_4_title_crits"
 msgstr "Сбить гусеницу"
@@ -13127,22 +12984,22 @@ msgid "regular_4_3_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_5_description_kills"
-msgstr "Уничтожить %(goal)s лёгких танка"
+msgstr "Уничтожить %(goal)s лёгких танка."
 
 msgid "regular_4_3_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_6_description_killsDiversity"
-msgstr "Уничтожить %(goal)s машин %(uniqueGoal)s разных типов"
+msgstr "Уничтожить %(goal)s машин %(uniqueGoal)s разных типов."
 
 msgid "regular_4_3_6_title_killsDiversity"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_7_description_hits"
-msgstr "Выстрелами нанести урон САУ %(goal)s раза"
+msgstr "Выстрелами нанести урон САУ %(goal)s раза."
 
 msgid "regular_4_3_7_description_kills"
-msgstr "Уничтожить %(goal)s САУ"
+msgstr "Уничтожить %(goal)s САУ."
 
 msgid "regular_4_3_7_title_hits"
 msgstr "Урон по САУ"
@@ -13151,10 +13008,10 @@ msgid "regular_4_3_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_8_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_3_8_description_kills"
-msgstr "Уничтожить %(goal)s средних танка"
+msgstr "Уничтожить %(goal)s средних танка."
 
 msgid "regular_4_3_8_title_damage"
 msgstr "Урон"
@@ -13163,10 +13020,10 @@ msgid "regular_4_3_8_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_3_9_description_damage"
-msgstr "Нанести тяжёлым танкам %(goal)s урона"
+msgstr "Нанести тяжёлым танкам %(goal)s урона."
 
 msgid "regular_4_3_9_description_kills"
-msgstr "Уничтожить %(goal)s тяжёлых танка"
+msgstr "Уничтожить %(goal)s тяжёлых танка."
 
 msgid "regular_4_3_9_title_damage"
 msgstr "Урон по ТТ"
@@ -13175,16 +13032,17 @@ msgid "regular_4_3_9_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_10_description_damage"
-msgstr "Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения"
+msgstr ""
+"Нанести %(goal)s урона, оставаясь незамеченным в момент его нанесения."
 
 msgid "regular_4_4_10_title_damage"
 msgstr "Урон"
 
 msgid "regular_4_4_11_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_4_11_description_topByDamage"
-msgstr "Занять первое место по урону в обеих командах"
+msgstr "Занять первое место по урону в обеих командах."
 
 msgid "regular_4_4_11_title_damage"
 msgstr "Урон"
@@ -13193,10 +13051,10 @@ msgid "regular_4_4_11_title_topByDamage"
 msgstr "Топ-1"
 
 msgid "regular_4_4_12_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_4_12_description_kills"
-msgstr "Уничтожить %(goal)s тяжёлых танка"
+msgstr "Уничтожить %(goal)s тяжёлых танка."
 
 msgid "regular_4_4_12_title_damage"
 msgstr "Урон"
@@ -13205,22 +13063,22 @@ msgid "regular_4_4_12_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_13_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_4_13_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_14_description_totalDamagePercent"
-msgstr "Нанести 25%% от суммарного урона своей команды"
+msgstr "Нанести 25%% от суммарного урона своей команды."
 
 msgid "regular_4_4_14_title_totalDamagePercent"
 msgstr "Урон"
 
 msgid "regular_4_4_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_4_15_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_4_15_title_damage"
 msgstr "Урон"
@@ -13229,22 +13087,22 @@ msgid "regular_4_4_15_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_1_description_topByExp"
-msgstr "Занять первое место по опыту в своей команде"
+msgstr "Занять первое место по опыту в своей команде."
 
 msgid "regular_4_4_1_title_topByExp"
-msgstr "Топ-1"
+msgstr "Результат"
 
 msgid "regular_4_4_2_description_crits"
 msgstr ""
-"Вывести из строя суммарно %(goal)s внутренних модуля или члена экипажа"
+"Вывести из строя суммарно %(goal)s внутренних модуля или члена экипажа."
 
 msgid "regular_4_4_2_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_4_2_description_noCrits"
 msgstr ""
 "Не иметь к моменту завершения боя повреждённых или выведенных из строя "
-"внутренних модулей или раненых членов экипажа"
+"внутренних модулей или раненых членов экипажа."
 
 msgid "regular_4_4_2_title_crits"
 msgstr "Крит. попадания"
@@ -13256,23 +13114,23 @@ msgid "regular_4_4_2_title_noCrits"
 msgstr "Выжить"
 
 msgid "regular_4_4_3_description_hits"
-msgstr "Нанести урон %(goal)s машинам противника"
+msgstr "Нанести урон %(goal)s машинам противника."
 
 msgid "regular_4_4_3_title_hits"
 msgstr "Урон"
 
 msgid "regular_4_4_4_description_kills"
 msgstr ""
-"Уничтожить %(goal)s машины, оставаясь незамеченным в момент их уничтожения"
+"Уничтожить %(goal)s машины, оставаясь незамеченным в момент их уничтожения."
 
 msgid "regular_4_4_4_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_5_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_4_5_description_kills"
-msgstr "Уничтожить %(goal)s машины с расстояния не менее 300 метров"
+msgstr "Уничтожить %(goal)s машины с расстояния не менее 300 метров."
 
 msgid "regular_4_4_5_title_damage"
 msgstr "Урон"
@@ -13281,10 +13139,10 @@ msgid "regular_4_4_5_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_6_description_damage"
-msgstr "Нанести %(goal)s урона с расстояния не менее 250 метров"
+msgstr "Нанести %(goal)s урона с расстояния не менее 250 метров."
 
 msgid "regular_4_4_6_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
 msgid "regular_4_4_6_title_damage"
 msgstr "Урон"
@@ -13293,22 +13151,22 @@ msgid "regular_4_4_6_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_7_description_kills"
-msgstr "Уничтожить %(goal)s машины, не потеряв прочности до этого момента"
+msgstr "Уничтожить %(goal)s машины, не потеряв прочности до этого момента."
 
 msgid "regular_4_4_7_title_kills"
 msgstr "Уничтожить"
 
 msgid "regular_4_4_8_description_damage"
-msgstr "Нанести в 5 раз больше урона, чем прочность собственной машины"
+msgstr "Нанести в 5 раз больше урона, чем прочность собственной машины."
 
 msgid "regular_4_4_8_title_damage"
 msgstr "Урон"
 
 msgid "regular_4_4_9_description_kills"
-msgstr "Уничтожить %(goal)s машин противника"
+msgstr "Уничтожить %(goal)s машин противника."
 
 msgid "regular_4_4_9_description_piercingSeries"
-msgstr "Пробить броню %(goal)s раз подряд"
+msgstr "Пробить броню %(goal)s раз подряд."
 
 msgid "regular_4_4_9_title_kills"
 msgstr "Уничтожить"
@@ -13317,185 +13175,150 @@ msgid "regular_4_4_9_title_piercingSeries"
 msgstr "Пробить броню"
 
 msgid "regular_4_5_10_description_assistedKills"
-msgstr ""
-"Союзники должны уничтожить %(goal)s оглушённые или обездвиженные вами машины"
+msgstr "Союзники должны уничтожить %(goal)s обездвиженные вами машины."
 
 msgid "regular_4_5_10_description_damageAndAssist"
-msgstr "Суммарно нанести урона, оглушить или обездвижить на %(goal)s ед."
+msgstr "Суммарно нанести и/или обездвижить на %(goal)s ед. урона."
 
 msgid "regular_4_5_10_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_4_5_10_title_damageAndAssist"
 msgstr "Комплексное условие"
 
-msgid "regular_4_5_11_description_stunNumber"
-msgstr ""
-"Дважды оглушить %(stunSeveralTargets)s машины противника одним выстрелом"
+msgid "regular_4_5_11_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
-msgid "regular_4_5_11_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_4_5_11_description_critsAdv"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
-msgid "regular_4_5_11_title_stunNumber"
-msgstr "Оглушить"
+msgid "regular_4_5_11_title_crits"
+msgstr "Содействие"
 
-msgid "regular_4_5_11_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_11_title_critsAdv"
+msgstr "Содействие"
 
 msgid "regular_4_5_12_description_assistedKills"
-msgstr ""
-"Союзники должны уничтожить %(goal)s оглушённые или обездвиженные вами машины"
+msgstr "Союзники должны уничтожить %(goal)s обездвиженные вами машины."
 
-msgid "regular_4_5_12_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_4_5_12_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "regular_4_5_12_title_assistedKills"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_4_5_12_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_12_title_crits"
+msgstr "Содействие"
 
 msgid "regular_4_5_13_description_hits"
-msgstr "Выстрелами %(goal)s раз нанести урон технике противника"
-
-msgid "regular_4_5_13_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgstr "Выстрелами нанести урон технике противника %(goal)s раз."
 
 msgid "regular_4_5_13_title_hits"
 msgstr "Урон"
 
-msgid "regular_4_5_13_title_stunTime"
-msgstr "Оглушить"
-
 msgid "regular_4_5_14_description_assist"
 msgstr ""
-"Союзники должны нанести %(goal)s урона обездвиженной машине со сбитой вами "
-"гусеницей"
-
-msgid "regular_4_5_14_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_4_5_14_title_assist"
-msgstr "Обездвиживание"
-
-msgid "regular_4_5_14_title_stunTime"
-msgstr "Оглушить"
+msgstr "Содействие"
 
 msgid "regular_4_5_15_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_4_5_15_description_damage"
-msgstr "Нанести %(goal)s урона технике противника"
+msgstr "Нанести %(goal)s урона технике противника."
 
 msgid "regular_4_5_15_description_topByExp"
-msgstr "Занять первое место по опыту в обеих командах"
+msgstr "Занять первое место по опыту среди обеих команд."
 
 msgid "regular_4_5_15_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_4_5_15_title_damage"
 msgstr "Урон"
 
 msgid "regular_4_5_15_title_topByExp"
-msgstr "Топ-1"
+msgstr "Результат"
+
+msgid "regular_4_5_1_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "regular_4_5_1_description_hits"
-msgstr "%(goal)s раз нанести урон технике противника"
+msgstr "%(goal)s раз нанести урон технике противника."
 
-msgid "regular_4_5_1_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_4_5_1_title_crits"
+msgstr "Содействие"
 
 msgid "regular_4_5_1_title_hits"
 msgstr "Урон"
 
-msgid "regular_4_5_1_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_2_description_crits"
+msgstr "%(goal)s раз сбить гусеницы технике противника."
 
 msgid "regular_4_5_2_description_kills"
-msgstr "Уничтожить %(goal)s машины противника"
+msgstr "Уничтожить %(goal)s машины противника."
 
-msgid "regular_4_5_2_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_4_5_2_title_crits"
+msgstr "Содействие"
 
 msgid "regular_4_5_2_title_kills"
 msgstr "Уничтожить"
 
-msgid "regular_4_5_2_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_3_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_4_5_3_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_4_5_3_title_crits"
+msgstr "Содействие"
 
-msgid "regular_4_5_3_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_4_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_4_5_4_description_stunTime"
-msgstr ""
-"Оглушить тяжёлые танки или ПТ-САУ суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
-
-msgid "regular_4_5_4_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_4_title_crits"
+msgstr "Содействие"
 
 msgid "regular_4_5_5_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_4_5_5_description_hits"
-msgstr "%(goal)s раз нанести урон технике противника"
+msgstr "%(goal)s раз нанести урон технике противника."
 
 msgid "regular_4_5_5_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
 msgid "regular_4_5_5_title_hits"
 msgstr "Урон"
 
 msgid "regular_4_5_6_description_assist"
 msgstr ""
-"Помочь союзникам нанести %(goal)s урона, оглушив противника или сбив ему "
-"гусеницу"
+"Союзники должны нанести %(goal)s ед. урона технике противника, пока она "
+"обездвижена вашим попаданием."
 
 msgid "regular_4_5_6_title_assist"
-msgstr "Поддержка"
+msgstr "Содействие"
 
-msgid "regular_4_5_7_description_stunTime"
-msgstr ""
-"Оглушить технику противника суммарно на %(goal)s секунд. В зачёт идёт "
-"потенциальная длительность оглушения."
+msgid "regular_4_5_7_description_crits"
+msgstr "%(goal)s раза сбить гусеницы технике противника."
 
-msgid "regular_4_5_7_title_stunTime"
-msgstr "Оглушить"
+msgid "regular_4_5_7_title_crits"
+msgstr "Содействие"
 
 msgid "regular_4_5_8_description_topByExp"
-msgstr "Занять первое место по опыту в своей команде"
+msgstr "Занять первое место по опыту в своей команде."
 
 msgid "regular_4_5_8_title_topByExp"
-msgstr "Топ-1"
+msgstr "Результат"
 
-msgid "regular_4_5_9_description_crits"
-msgstr ""
-"Повредить или вывести из строя суммарно %(goal)s любых модулей или членов "
-"экипажа"
+msgid "regular_4_5_9_description_hits"
+msgstr "Нанести урон %(goal)s разным машинам противника."
 
-msgid "regular_4_5_9_title_crits"
-msgstr "Крит. попадания"
+msgid "regular_4_5_9_title_hits"
+msgstr "Урон"
 
 msgid "season_1"
 msgstr "«Долгожданное подкрепление»"

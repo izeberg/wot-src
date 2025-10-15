@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<materialNames/>
+	<visibilityBox>
+		<min>-0.896866 -0.313511 -1.748050</min>
+		<max>0.765975 0.378129 5.193445</max>
+	</visibilityBox>
+	<parent>vehicles/german/G196_E_75_Ausf_B_Doppel/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodelessVisual>vehicles/german/G196_E_75_Ausf_B_Doppel/crash/lod0/Gun_01</nodelessVisual>
+</root>

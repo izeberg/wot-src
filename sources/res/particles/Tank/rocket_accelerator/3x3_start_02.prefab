@@ -972,1110 +972,6 @@
 			</component>
 		</ComponentPool>
 		<ComponentPool>
-			<type>ComponentsVisibilityController</type>
-			<version>1</version>
-			<component>
-				<objectIndex>1</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>2</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>3</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>4</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>5</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>6</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>7</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>8</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>9</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>12</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>13</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>14</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>15</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>16</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>17</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>18</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>19</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>20</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>22</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>23</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>24</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-			<component>
-				<objectIndex>25</objectIndex>
-				<flags>3</flags>
-				<config>
-					<property>
-						<name>Visible in ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in SNIPER MODE</name>
-						<value>0</value>
-					</property>
-					<property>
-						<name>Visible in STRATEGIC MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in ARTY MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in POSTMORTEM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in RESPAWN_DEATH MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DEATH_FREE_CAM MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in DUAL_GUN MODE</name>
-						<value>1</value>
-					</property>
-					<property>
-						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
-						<value>1</value>
-					</property>
-				</config>
-			</component>
-		</ComponentPool>
-		<ComponentPool>
 			<type>Particle</type>
 			<version>1</version>
 			<component>
@@ -2433,6 +1329,10 @@
 										<value>1</value>
 									</property>
 									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
 										<name>Auto Start</name>
 										<value>1</value>
 									</property>
@@ -2516,6 +1416,10 @@
 									</property>
 									<property>
 										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
 										<value>1</value>
 									</property>
 									<property>
@@ -2605,6 +1509,10 @@
 										<value>1</value>
 									</property>
 									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
 										<name>Auto Start</name>
 										<value>1</value>
 									</property>
@@ -2688,6 +1596,10 @@
 									</property>
 									<property>
 										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
 										<value>1</value>
 									</property>
 									<property>
@@ -2777,6 +1689,10 @@
 										<value>1</value>
 									</property>
 									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
 										<name>Auto Start</name>
 										<value>1</value>
 									</property>
@@ -2860,6 +1776,10 @@
 									</property>
 									<property>
 										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
 										<value>1</value>
 									</property>
 									<property>
@@ -2949,6 +1869,10 @@
 										<value>1</value>
 									</property>
 									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
 										<name>Auto Start</name>
 										<value>1</value>
 									</property>
@@ -3032,6 +1956,10 @@
 									</property>
 									<property>
 										<name>Weight</name>
+										<value>1</value>
+									</property>
+									<property>
+										<name>LOD Scale</name>
 										<value>1</value>
 									</property>
 									<property>
@@ -3121,6 +2049,10 @@
 										<value>1</value>
 									</property>
 									<property>
+										<name>LOD Scale</name>
+										<value>1</value>
+									</property>
+									<property>
 										<name>Auto Start</name>
 										<value>1</value>
 									</property>
@@ -3152,6 +2084,1110 @@
 					<property>
 						<name>Loop Count</name>
 						<value>-1</value>
+					</property>
+				</config>
+			</component>
+		</ComponentPool>
+		<ComponentPool>
+			<type>ComponentsVisibilityController</type>
+			<version>1</version>
+			<component>
+				<objectIndex>1</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>2</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>3</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>4</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>5</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>6</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>7</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>8</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>9</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>12</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>13</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>14</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>15</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>16</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>17</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>18</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>19</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>20</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>22</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>23</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>24</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
+					</property>
+				</config>
+			</component>
+			<component>
+				<objectIndex>25</objectIndex>
+				<flags>3</flags>
+				<config>
+					<property>
+						<name>Visible in ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in SNIPER MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in STRATEGIC MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in ARTY MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in POSTMORTEM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in RESPAWN_DEATH MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DEATH_FREE_CAM MODE</name>
+						<value>1</value>
+					</property>
+					<property>
+						<name>Visible in DUAL_GUN MODE</name>
+						<value>0</value>
+					</property>
+					<property>
+						<name>Visible in MAP_CASE_ARCADE_EPIC_MINEFIELD MODE</name>
+						<value>1</value>
 					</property>
 				</config>
 			</component>

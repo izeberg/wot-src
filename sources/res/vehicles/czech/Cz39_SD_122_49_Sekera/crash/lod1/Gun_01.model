@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/czech/Cz39_SD_122_49_Sekera/crash/lod2/Gun_01</parent>
+	<tank>true</tank>
+	<extent>
+		64.0
+		<!--BW_String-->
+	</extent>
+	<nodelessVisual>vehicles/czech/Cz39_SD_122_49_Sekera/crash/lod1/Gun_01</nodelessVisual>
+	<visibilityBox>
+		<min>-0.349721 -0.392937 -2.136260</min>
+		<max>0.341259 0.441979 6.402112</max>
+	</visibilityBox>
+</root>

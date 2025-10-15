@@ -44,6 +44,12 @@ msgstr ""
 "что в 1941–1942 годах AMX 40 заменит танки SOMUA S35 и S40, однако в июле "
 "1940 года проектирование было прекращено. Прототип построен не был."
 
+msgid "AMX40_portal"
+msgstr "AMX 40 Marat"
+
+msgid "AMX40_portal_short"
+msgstr "AMX 40 Marat"
+
 msgid "AMX40_short"
 msgstr "AMX 40"
 
@@ -238,6 +244,28 @@ msgstr "AMX 50 120"
 msgid "AMX_50_68t"
 msgstr "AMX 50 B"
 
+msgid "AMX_50_68t_ISP"
+msgstr "AMX 50 B (И)"
+
+msgid "AMX_50_68t_ISP_descr"
+msgstr ""
+"Разработка была начата в 1951 году компанией DEFA. К 1958 году танк AMX 50 B"
+" получил ряд улучшений: более низкий, частично литой корпус и торсионную "
+"подвеску. На него также была установлена новая башня качающегося типа со "
+"120-мм орудием. Несмотря на то, что предельная мощность двигателя Maybach "
+"составляла 1000 л.с., специалисты из немецкой компании Gruppe M пытались "
+"разработать решение, которое позволило бы танку развивать скорость до 65 "
+"км/ч. Был построен всего один завершённый прототип данной модификации."
+
+msgid "AMX_50_68t_ISP_long_special"
+msgstr "?empty?"
+
+msgid "AMX_50_68t_ISP_short"
+msgstr "AMX 50 B (И)"
+
+msgid "AMX_50_68t_ISP_short_special"
+msgstr "?empty?"
+
 msgid "AMX_50_68t_bob"
 msgstr "AMX 50 B BB"
 
@@ -303,6 +331,9 @@ msgid "AMX_B_270"
 msgstr "AMX B 270"
 
 msgid "AMX_B_271"
+msgstr "AMX B 271"
+
+msgid "AMX_B_271_H"
 msgstr "AMX B 271"
 
 msgid "AMX_B_271_SH"
@@ -472,6 +503,9 @@ msgstr ""
 "105 mm AC court\n"
 "mle. 1934 S"
 
+msgid "Canon_de_105_court_mle_1934S_H"
+msgstr "105 mm court mle. 1934 S"
+
 msgid "Canon_de_105_court_mle_1934S_SH"
 msgstr "105 mm court mle. 1934 S"
 
@@ -541,6 +575,9 @@ msgstr "Canon de 75 mm Vo 920 m/s"
 msgid "Canon_de_75mm_Vo_920_m_s_EBR"
 msgstr "Canon de 75 mm Vo 920 m/s (EBR)"
 
+msgid "Canon_de_75mm_Vo_920_m_s_dualgun_H"
+msgstr "Canon de 75 mm Vo 920 m/s DP"
+
 msgid "Canon_de_75mm_Vo_920_m_s_dualgun_SH"
 msgstr "Canon de 75 mm Vo 920 m/s DP"
 
@@ -550,6 +587,9 @@ msgstr "Canon de 90 mm Vo 930 m/s"
 msgid "Chassis_105_leFH18B2"
 msgstr "leFH18B2"
 
+msgid "Chassis_AMC_35_H"
+msgstr "AMC 35"
+
 msgid "Chassis_AMC_35_SH"
 msgstr "AMC 35"
 
@@ -557,6 +597,9 @@ msgid "Chassis_AMX13_57_100"
 msgstr "AMX 13 57"
 
 msgid "Chassis_AMX13_57_100_GrandFinal"
+msgstr "AMX 13 57"
+
+msgid "Chassis_AMX13_57_100_H"
 msgstr "AMX 13 57"
 
 msgid "Chassis_AMX13_57_100_SH"
@@ -637,6 +680,9 @@ msgstr "AMX 50 120 bis"
 msgid "Chassis_AMX_50_68t"
 msgstr "AMX 50 B"
 
+msgid "Chassis_AMX_50_68t_ISP"
+msgstr "AMX 50 B"
+
 msgid "Chassis_AMX_50_68t_fallout"
 msgstr "AMX 50 B"
 
@@ -705,6 +751,9 @@ msgstr "Batignolles-Châtillon 155 mle. 56"
 
 msgid "Chassis_Bat_Chatillon25t_2"
 msgstr "Batignolles-Châtillon 25 t"
+
+msgid "Chassis_Bat_Chatillon25t_2_H"
+msgstr "Bat.-Châtillon 25 t"
 
 msgid "Chassis_Bat_Chatillon25t_2_SH"
 msgstr "Bat.-Châtillon 25 t"
@@ -781,6 +830,9 @@ msgstr "Lorraine 50 t bis"
 msgid "Chassis_F116_Bat_Chatillon_Bourrasque"
 msgstr "Batignolles-Châtillon 12 t bis"
 
+msgid "Chassis_F116_Bat_Chatillon_Bourrasque_02"
+msgstr "Batignolles-Châtillon 12 t bis"
+
 msgid "Chassis_F117_Alt_Proto_AMX_30"
 msgstr "AltProto-AMX-30"
 
@@ -813,9 +865,6 @@ msgstr "Projet 57"
 
 msgid "Chassis_F133_Projet_57_Ampere"
 msgstr "Projet 57 Ampere"
-
-msgid "Chassis_F18_Bat_Chatillon25t_hound_TLXXL"
-msgstr "Batignolles-Châtillon «Foudre»"
 
 msgid "Chassis_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -1023,6 +1072,9 @@ msgid "Detroit_Diesel_6V53T-S_short"
 msgstr ""
 "Detroit Diesel\n"
 "6V53T-S"
+
+msgid "Detroit_Diesel_6V53T_H"
+msgstr "Detroit Diesel 6V53T"
 
 msgid "Detroit_Diesel_6V53T_SH"
 msgstr "Detroit Diesel 6V53T"
@@ -1313,6 +1365,29 @@ msgstr "Хорошая динамика, точное орудие"
 msgid "F116_Bat_Chatillon_Bourrasque"
 msgstr "Bat.-Châtillon Bourrasque"
 
+msgid "F116_Bat_Chatillon_Bourrasque_02"
+msgstr "Bat.-Châtillon Mistral"
+
+msgid "F116_Bat_Chatillon_Bourrasque_02_descr"
+msgstr ""
+"Иронично, но на чёрном рынке всё по-белому. Здесь не обманут, не введут в заблуждение, не добавят в договор строчку мелким шрифтом. Здесь уважают интересы обеих сторон и прекрасно понимают, что есть чёткие правила, нормативы, неписанные законы, отступление от которых — изгнание и разрыв всех отношений. В какой-то степени. И если в другом месте вас просто выгонят в шею, то тут ещё и объяснят, в чём вы ошиблись. Объяснят доходчиво, и так, что вряд ли придётся повторять. Переступая порог, вы принимаете правила. Те правила, по которым живёт и работает вторая сторона сделки. И сторона эта свои правила соблюдает. Самое важное для вас — запомнить, что фраза «во всех правилах есть исключения» работает где угодно, кроме этого места.\n"
+"\n"
+"Характеристики машины могут быть изменены без компенсации."
+
+msgid "F116_Bat_Chatillon_Bourrasque_02_long_special"
+msgstr ""
+"Динамичный танк с мощным орудием, оснащённым магазинной системой заряжания "
+"на два снаряда. Скромное бронирование и невысокая прочность не способствуют "
+"эффективной игре на передовой, однако скорость и мобильность позволяют "
+"делать внезапные обходные манёвры в борта и тыл противника, разрядиться и "
+"тут же отойти на перезарядку."
+
+msgid "F116_Bat_Chatillon_Bourrasque_02_short"
+msgstr "Mistral"
+
+msgid "F116_Bat_Chatillon_Bourrasque_02_short_special"
+msgstr "Хорошие мобильность и незаметность, эффективный магазин"
+
 msgid "F116_Bat_Chatillon_Bourrasque_descr"
 msgstr ""
 "Проект французского танка, разрабатывавшийся компанией Batignolles-"
@@ -1592,20 +1667,6 @@ msgstr "Projet 57"
 msgid "F133_Projet_57_short_special"
 msgstr "Хорошая динамика, отличное орудие с магазином заряжания"
 
-msgid "F18_Bat_Chatillon25t_hound_TLXXL"
-msgstr "Foudre"
-
-msgid "F18_Bat_Chatillon25t_hound_TLXXL_descr"
-msgstr ""
-"«Это выглядело какой-то шуткой до того момента, пока я не забрался внутрь. Ну они серьёзно? Засовывать чуть ли не целую электростанцию в стальную коробку? Это же как трансформаторная будка! На них же всегда пишут предупреждения, а тут — лезь внутрь всем экипажем, воюй. Но нет, они всё-таки нашли возможность использовать карболит и резину, чтобы всё изолировать. Спасибо, это они учли.\n"
-"Вот только никто не догадался сделать нормальную вентиляцию, и теперь, если нас не сожгут собственные молнии, то мы определённо сваримся в этой дикой жаре и духоте. Я только недавно бился за Бир-Хакейм, только забыл эту страшную жару — но нет. Африку я покинул, но она опять меня нашла»."
-
-msgid "F18_Bat_Chatillon25t_hound_TLXXL_short"
-msgstr "Foudre"
-
-msgid "F18_Bat_Chatillon25t_hound_TLXXL_short_special"
-msgstr "ОБТ с глубокой модернизацией"
-
 msgid "F19_Lorraine40t"
 msgstr "Lorraine 40 t"
 
@@ -1694,6 +1755,19 @@ msgstr "AMR 35"
 msgid "F42_AMR_35_short_special"
 msgstr "Хорошее орудие, отличная маскировка"
 
+msgid "F43_AMC_35_H"
+msgstr "Василиск"
+
+msgid "F43_AMC_35_H_descr"
+msgstr ""
+"Лёгкость, плавность форм, изящество — три кита, на которых зиждется "
+"танкостроение французов. В этой машине никакого заимствования, никаких "
+"технологий, добытых путём промышленного шпионажа — только оригинальные и "
+"эффективные идеи и решения."
+
+msgid "F43_AMC_35_H_short"
+msgstr "Василиск"
+
 msgid "F64_AMX_50Fosh_B"
 msgstr "AMX 50 Foch B"
 
@@ -1723,7 +1797,7 @@ msgid "F68_AMX_Chasseur_de_char_46"
 msgstr "AMX Chasseur de chars"
 
 msgid "F68_AMX_Chasseur_de_char_46_02"
-msgstr "AMX CDC Test"
+msgstr "AMX CDC Rafale Mortelle"
 
 msgid "F68_AMX_Chasseur_de_char_46_02_descr"
 msgstr ""
@@ -1742,7 +1816,7 @@ msgstr ""
 " ещё надо попасть!"
 
 msgid "F68_AMX_Chasseur_de_char_46_02_short"
-msgstr "AMX CDC (T)"
+msgstr "R. Mortelle"
 
 msgid "F68_AMX_Chasseur_de_char_46_02_short_special"
 msgstr "Комфортное орудие, отличная динамика, хороший обзор"
@@ -2213,11 +2287,11 @@ msgstr "Hispano-Suiza HS 110"
 msgid "Hispano-Suiza_HS110_A"
 msgstr "Hispano-Suiza HS 110 pré-série"
 
-msgid "Hispano-Suiza_HS110_SH"
+msgid "Hispano-Suiza_HS110_H"
 msgstr "Hispano-Suiza HS 110"
 
-msgid "Hispano-Suiza_HS110_WT"
-msgstr "Hispano-Suiza HS 110 «Foudre»"
+msgid "Hispano-Suiza_HS110_SH"
+msgstr "Hispano-Suiza HS 110"
 
 msgid "Hispano_219CV_V8"
 msgstr "Hispano-Suiza V8"
@@ -2390,6 +2464,9 @@ msgid "Maybach_HL_295_FA"
 msgstr "Maybach HL 295 F"
 
 msgid "Maybach_HL_295_FA_02"
+msgstr "Maybach HL 295 F"
+
+msgid "Maybach_HL_295_F_ISP"
 msgstr "Maybach HL 295 F"
 
 msgid "Maybach_HL_295_F_fallout"
@@ -2618,6 +2695,9 @@ msgstr "SCR 508"
 msgid "SCR_508_1"
 msgstr "SCR 508/2"
 
+msgid "SCR_508_H"
+msgstr "SCR 508"
+
 msgid "SCR_508_SH"
 msgstr "SCR 508"
 
@@ -2636,14 +2716,14 @@ msgstr "SCR 528F"
 msgid "SCR_528_F"
 msgstr "SCR-528 F"
 
+msgid "SCR_528_F_H"
+msgstr "SCR-528 F"
+
 msgid "SCR_528_F_SH"
 msgstr "SCR-528 F"
 
 msgid "SCR_528_Fr"
 msgstr "SCR-528 Fr"
-
-msgid "SCR_528_WT"
-msgstr "SCR-528 «Foudre»"
 
 msgid "SCR_610"
 msgstr "SCR 610"
@@ -2653,6 +2733,9 @@ msgstr "SCR 619"
 
 msgid "SCR_619_F155"
 msgstr "SCR 619F"
+
+msgid "SCR_619_ISP"
+msgstr "SCR 619"
 
 msgid "SCR_619_fallout"
 msgstr "SCR 619"
@@ -2782,6 +2865,9 @@ msgstr "TRVP-13-A3"
 msgid "TRVP_13_A_1"
 msgstr "TRVP-13-A1"
 
+msgid "TRVP_13_H"
+msgstr "TRVP-13"
+
 msgid "TRVP_13_P"
 msgstr "TRVP-13"
 
@@ -2837,6 +2923,9 @@ msgid "Turret_1_AMX_50_120"
 msgstr "AMX 50 120"
 
 msgid "Turret_1_AMX_50_68t"
+msgstr "AMX 50 B"
+
+msgid "Turret_1_AMX_50_68t_ISP"
 msgstr "AMX 50 B"
 
 msgid "Turret_1_AMX_50_68t_fallout"
@@ -2939,6 +3028,9 @@ msgstr "T.C.B. 120"
 msgid "Turret_1_F116_Bat_Chatillon_Bourrasque"
 msgstr "Panhard EBR-S 105"
 
+msgid "Turret_1_F116_Bat_Chatillon_Bourrasque_02"
+msgstr "Panhard EBR-S 105"
+
 msgid "Turret_1_F117_Alt_Proto_AMX_30"
 msgstr "AltProto-AMX-30"
 
@@ -2968,14 +3060,6 @@ msgstr "Projet 57"
 
 msgid "Turret_1_F133_Projet_57_Ampere"
 msgstr "Projet 57 Ampere"
-
-msgid "Turret_1_F18_Bat_Chatillon25t_hound_TLXXL"
-msgstr "Batignolles-Châtillon «Foudre»"
-
-msgid "Turret_1_F18_Bat_Chatillon25t_hound_TLXXL_short"
-msgstr ""
-"Batignolles-Châtillon\n"
-"«Foudre»"
 
 msgid "Turret_1_F19_Lorraine40t"
 msgstr "Lorraine 40 t"
@@ -3015,6 +3099,9 @@ msgstr "AMX Canon d'assaut de 105"
 
 msgid "Turret_1_F97_ELC_EVEN_90"
 msgstr "ELC EVEN tourelle de 90"
+
+msgid "Turret_1_F97_ELC_EVEN_90_H"
+msgstr "EVEN-Z Tourelle"
 
 msgid "Turret_1_F97_ELC_EVEN_90_SH"
 msgstr "EVEN-Z Tourelle"
@@ -3109,6 +3196,9 @@ msgstr "D2 APX 4"
 msgid "Turret_2_F109_AMD_Panhard_178B"
 msgstr "Panhard AMD 178B FL 1"
 
+msgid "Turret_2_F62_ELC_AMX_H"
+msgstr "Basé sur un ELC bis"
+
 msgid "Turret_2_F62_ELC_AMX_SH"
 msgstr "Basé sur un ELC bis"
 
@@ -3135,6 +3225,9 @@ msgstr "ARL 42"
 
 msgid "Turret_2_Somua_S35"
 msgstr "ARL 2C"
+
+msgid "Turret_3_F87_Bat-Chatillon12t_H"
+msgstr "Basé sur un Bat.-Châtillon 12 t"
 
 msgid "Turret_3_F87_Bat-Chatillon12t_SH"
 msgstr "Basé sur un Bat.-Châtillon 12 t"
@@ -3231,22 +3324,14 @@ msgstr "105 mm OFL-105E3"
 msgid "_105mm_APCR_OFL_E1"
 msgstr "OFL-105-57"
 
-msgid "_105mm_APCR_OFL_E1_WT"
-msgstr "Серебряная пуля"
-
-msgid "_105mm_APCR_OFL_E1_WT_descr"
-msgstr "Гордость оружейников Альянса."
-
-msgid "_105mm_APCR_OFL_E1_WT_long_special"
-msgstr ""
-"При перегрузке генератора гончие получают заряд плазмы, который увеличивает "
-"наносимый урон на 25%, вплоть до 100%."
-
-msgid "_105mm_APCR_OFL_E1_WT_short_special"
-msgstr "Дополнительный урон плазмой"
+msgid "_105mm_APCR_OFL_H"
+msgstr "APCR-OLF"
 
 msgid "_105mm_APCR_OFL_SH"
 msgstr "APCR-OLF"
+
+msgid "_105mm_AP_OFL_H"
+msgstr "Prf. 105"
 
 msgid "_105mm_AP_OFL_SH"
 msgstr "Prf. 105"
@@ -3257,11 +3342,11 @@ msgstr "105 mm CN 105"
 msgid "_105mm_CN_105_57"
 msgstr "105 mm mle. 57 (D. 1504)"
 
-msgid "_105mm_CN_105_57_SH"
+msgid "_105mm_CN_105_57_H"
 msgstr "105 mm mle. 57 (D. 1504)"
 
-msgid "_105mm_CN_105_57_WT"
-msgstr "105 mm mle. 57 (D. 1504) «Foudre»"
+msgid "_105mm_CN_105_57_SH"
+msgstr "105 mm mle. 57 (D. 1504)"
 
 msgid "_105mm_D1504"
 msgstr "105 mm D. 1504"
@@ -3320,6 +3405,9 @@ msgstr "OCC 105-F1"
 msgid "_105mm_OCO_mle._1936"
 msgstr "OCO mle. 1936"
 
+msgid "_105mm_OCO_mle._1936_H"
+msgstr "Prf. mle. 1936"
+
 msgid "_105mm_OCO_mle._1936_SH"
 msgstr "Prf. mle. 1936"
 
@@ -3364,6 +3452,9 @@ msgstr "OFL-105 D. 1504"
 
 msgid "_105mm_OFL_105_D1504_L51"
 msgstr "OFL-105 D. 1504 L/51"
+
+msgid "_105mm_OFL_105_D1_H"
+msgstr "OLF-105D1"
 
 msgid "_105mm_OFL_105_D1_SH"
 msgstr "OLF-105D1"
@@ -3428,6 +3519,9 @@ msgstr "120 mm D. 1203 P"
 msgid "_120mm_FrtPrf1945"
 msgstr "Frt.Prf. mle. 1945"
 
+msgid "_120mm_FrtPrf1945_ISP"
+msgstr "Frt.Prf. mle. 1945"
+
 msgid "_120mm_FrtPrf1945_fallout"
 msgstr "Frt.Prf. mle. 1945 A"
 
@@ -3447,6 +3541,9 @@ msgid "_120mm_OE_1930"
 msgstr "ОЕ Mle 1930"
 
 msgid "_120mm_OE_mle_1930"
+msgstr "OE mle. 1930"
+
+msgid "_120mm_OE_mle_1930_ISP"
 msgstr "OE mle. 1930"
 
 msgid "_120mm_OE_mle_1930_fallout"
@@ -3473,6 +3570,9 @@ msgstr "ОР Mle 1943"
 msgid "_120mm_Prf1943"
 msgstr "Prf. mle. 1943"
 
+msgid "_120mm_Prf1943_ISP"
+msgstr "Prf. mle. 1943"
+
 msgid "_120mm_Prf1943_fallout"
 msgstr "Prf. mle. 1943 A"
 
@@ -3491,10 +3591,16 @@ msgstr "120 mm AC SA46"
 msgid "_120mm_SA_46_AC_G"
 msgstr "120mm SA46"
 
+msgid "_120mm_SA_46_ISP"
+msgstr "120 mm SA46"
+
 msgid "_120mm_SA_46_fallout"
 msgstr "120 mm SA46"
 
 msgid "_127mm_54_Model_1948"
+msgstr "127 mm/54 Model 1948"
+
+msgid "_127mm_54_Model_1948_H"
 msgstr "127 mm/54 Model 1948"
 
 msgid "_127mm_54_Model_1948_SH"
@@ -3509,8 +3615,14 @@ msgstr "Capped Common Semi-AP"
 msgid "_127mm_Common_HE"
 msgstr "Common HE"
 
+msgid "_127mm_OE_127_D_700_H"
+msgstr "OE-127 D. 700"
+
 msgid "_127mm_OE_127_D_700_SH"
 msgstr "OE-127 D. 700"
+
+msgid "_127mm_OE_127_Mle_55_H"
+msgstr "OE-127-Mle. 55"
 
 msgid "_127mm_OE_127_Mle_55_SH"
 msgstr "OE-127-Mle. 55"
@@ -3734,6 +3846,9 @@ msgstr "Frt.Prf. mle. 1944"
 msgid "_75mm_FrtPrf1944A"
 msgstr "Frt.Prf. mle. 1944A"
 
+msgid "_75mm_FrtPrf1946_H"
+msgstr "75 Frt.Prf. mle. 1945"
+
 msgid "_75mm_FrtPrf1946_SH"
 msgstr "75 Frt.Prf. mle. 1945"
 
@@ -3775,6 +3890,9 @@ msgstr "OCC mle. 54"
 
 msgid "_75mm_OCO_mle._1926"
 msgstr "OCO mle. 1926"
+
+msgid "_75mm_OCO_mle._1926_H"
+msgstr "Prf. mle. 1926"
 
 msgid "_75mm_OCO_mle._1926_SH"
 msgstr "Prf. mle. 1926"
@@ -3926,6 +4044,9 @@ msgstr "90 mm F3"
 msgid "_90mm_F3M"
 msgstr "90 mm F3M"
 
+msgid "_90mm_F3M_H"
+msgstr "90 mm F3M"
+
 msgid "_90mm_F3M_SH"
 msgstr "90 mm F3M"
 
@@ -3935,8 +4056,14 @@ msgstr "Frt.Prf. mle. 1944"
 msgid "_90mm_FrtPrf1944_02"
 msgstr "OCC mle. 1944"
 
+msgid "_90mm_FrtPrf1945_H"
+msgstr "90 Frt.Prf. mle. 1945"
+
 msgid "_90mm_FrtPrf1945_SH"
 msgstr "90 Frt.Prf. mle. 1945"
+
+msgid "_90mm_HEAT_OCC_F1_H"
+msgstr "Prf. 90 F1"
 
 msgid "_90mm_HEAT_OCC_F1_SH"
 msgstr "Prf. 90 F1"
@@ -3949,6 +4076,9 @@ msgstr "HE américain"
 
 msgid "_90mm_OCC_90"
 msgstr "OCC"
+
+msgid "_90mm_OCC_90_H"
+msgstr "Prf. 90"
 
 msgid "_90mm_OCC_90_SH"
 msgstr "Prf. 90"
@@ -3970,6 +4100,9 @@ msgstr "OFL"
 
 msgid "_90mm_OFL_90"
 msgstr "OFL"
+
+msgid "_90mm_OFL_90_DS2_H"
+msgstr "OLF-90-DS2"
 
 msgid "_90mm_OFL_90_DS2_SH"
 msgstr "OLF-90-DS2"
@@ -4008,6 +4141,9 @@ msgstr "90 mm AC DCA 45"
 
 msgid "_90mm_canon_DCA_45_AC_A_02"
 msgstr "90 mm AC DCA 45 Auto"
+
+msgid "_90mm_canon_DCA_45_AC_A_dualgun_H"
+msgstr "90 mm AC DCA 45 DP"
 
 msgid "_90mm_canon_DCA_45_AC_A_dualgun_SH"
 msgstr "90 mm AC DCA 45 DP"

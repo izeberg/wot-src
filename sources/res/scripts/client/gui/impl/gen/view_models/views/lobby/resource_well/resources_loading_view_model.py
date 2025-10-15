@@ -8,6 +8,7 @@ class ProgressionState(Enum):
     ACTIVE = 'active'
     NOPROGRESS = 'noProgress'
     NOVEHICLES = 'noVehicles'
+    BEFOREEVENT = 'beforeEvent'
 
 
 class ResourcesLoadingViewModel(ViewModel):

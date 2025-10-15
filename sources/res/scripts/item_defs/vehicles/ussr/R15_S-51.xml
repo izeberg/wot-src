@@ -5941,19 +5941,16 @@
 				<_203mm_B-4>
 					shared
 					<maxAmmo>12</maxAmmo>
-					<reloadTime>
-						52.3
-						<!--BW_String-->
-					</reloadTime>
+					<reloadTime>50</reloadTime>
 					<armor>
 						<gun>30</gun>
 					</armor>
 					<shotDispersionRadius>
-						0.83
+						0.79
 						<!--BW_String-->
 					</shotDispersionRadius>
 					<aimingTime>
-						6.3
+						6.0
 						<!--BW_String-->
 					</aimingTime>
 					<invisibilityFactorAtShot>

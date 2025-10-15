@@ -30,6 +30,8 @@ package net.wg.data.constants.generated
       public static const MINI_CLIENT:String = "miniClient";
       
       public static const BR_PANELS:String = "battleRoyalePanels";
+      
+      public static const PORTAL_EVENT_MODIFIERS:String = "portalEventModifiers";
        
       
       public function HANGAR_CONSTS()

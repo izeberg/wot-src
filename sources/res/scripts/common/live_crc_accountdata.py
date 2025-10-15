@@ -1,6 +1,6 @@
 from live_crc import *
 accountPersistentCacheDataScheme = {INCLUDE: {
-           'economics', 'inventory', 'quests', 'tokens', 'potapovQuests', 'intUserSettings'}, 
+           'economics', 'inventory', 'quests', 'tokens', 'personalMissionQuests', 'intUserSettings'}, 
    'stats': {INCLUDE: {
                      'dossier', 'eliteVehicles', 'unlocks', 'vehTypeXP'}}}
 accountDataPersistentHash = gen_livehash_fn(accountPersistentCacheDataScheme)
@@ -10,7 +10,7 @@ accountDataExtractPersistent = gen_extract_fn(accountPersistentCacheDataScheme)
 
 def accountDataGetDiffForPersistent(diff):
     good_keys = {
-     'economics', 'inventory', 'stats', 'quests', 'tokens', 'potapovQuests', 'intUserSettings'}
+     'economics', 'inventory', 'stats', 'quests', 'tokens', 'personalMissionQuests', 'intUserSettings'}
     mydiff = {}
     for k, v in diff.items():
         if k in good_keys or isinstance(k, tuple) and k[0] in good_keys:

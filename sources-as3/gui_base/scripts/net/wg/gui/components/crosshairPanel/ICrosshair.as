@@ -86,5 +86,13 @@ package net.wg.gui.components.crosshairPanel
       function set isUseFrameAnimation(param1:Boolean) : void;
       
       function set scaleWidgetEnabled(param1:Boolean) : void;
+      
+      function setShotFlyTimeIndVisibility(param1:Boolean) : void;
+      
+      function setShotFlyTimeIndValue(param1:Number) : void;
+      
+      function setShotDamageIndVisibility(param1:Boolean) : void;
+      
+      function setShotDamageIndValue(param1:int, param2:int) : void;
    }
 }

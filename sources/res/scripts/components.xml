@@ -9,6 +9,7 @@
 		<ArenaTriggerSystemComponent/>
 		<AccountRankedComponent/>
 		<ArenaRankedComponent/>
+		<DynamicVehicleChangeComponent/>
 	</StaticComponents>
 	<DynamicComponents>
 		<OwnVehicle/>
@@ -23,9 +24,6 @@
 		<MapsTrainingStorageComponent/>
 		<BattleHintsComponent/>
 		<Fire/>
-		<CircuitOverload/>
-		<ImpactZoneNotificationComponent/>
-		<DamageImpactArea/>
 		<RocketAccelerationController/>
 		<AutoShootGunController/>
 		<TemperatureGunController/>
@@ -34,7 +32,6 @@
 		<RocketAcceleration/>
 		<ThermalVisionController/>
 		<VisualScriptEquipment/>
-		<VisualScriptEquipmentPublic/>
 		<VisualScriptCache/>
 		<VisualScriptEquipmentPublic/>
 		<VisualScriptPlan/>
@@ -70,20 +67,7 @@
 		<SequenceNetworkSync/>
 		<DualAccuracy/>
 		<RankedVoiceComponent/>
-		<VehicleShellOverride/>
-		<VehicleProtect/>
-		<PrefabComponent/>
-		<UdoOccupier/>
-		<PublicHealth/>
-		<HealthTracker/>
-		<PublicCounter/>
-		<Capturable/>
-		<ArenaTimer/>
-		<AlwaysVisible/>
-		<LightningTargetComponent/>
-		<Proximity/>
-		<IndexPool/>
-		<BspComponent/>
-		<PlayersPanelComponent/>
+		<MasterVehicleEventsListener/>
+		<VehicleTeamOverride/>
 	</DynamicComponents>
 </root>

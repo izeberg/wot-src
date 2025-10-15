@@ -701,7 +701,7 @@ msgid "bonusType/4"
 msgstr "Адмысловы бой"
 
 msgid "bonusType/42"
-msgstr "«%(modeName)s»"
+msgstr "Палявыя выпрабаванні"
 
 msgid "bonusType/43"
 msgstr "Націск"
@@ -717,6 +717,9 @@ msgstr "Палігон"
 
 msgid "bonusType/6"
 msgstr "Баявое навучанне"
+
+msgid "bonusType/61"
+msgstr "Разлом"
 
 msgid "bonusType/7"
 msgstr "Камандны бой"
@@ -1108,6 +1111,9 @@ msgstr "Стварыць звяз падзеі"
 msgid "contextMenu/createMapboxSquad"
 msgstr "Разведка боем: стварыць звяз"
 
+msgid "contextMenu/createPortalSquad"
+msgstr "Звяз падзеі «Разлом»"
+
 msgid "contextMenu/createPrivateChannel"
 msgstr "Адправіць паведамленне"
 
@@ -1116,9 +1122,6 @@ msgstr "Стварыць звяз для Рангавага бою"
 
 msgid "contextMenu/createSquad"
 msgstr "Стварыць звяз"
-
-msgid "contextMenu/createWhiteTigerSquad"
-msgstr "Стварыць звяз Ганчакоў"
 
 msgid "contextMenu/crewWidgetChangeCrewMember"
 msgstr "Змяніць члена экіпажа"
@@ -1738,9 +1741,6 @@ msgstr "Пракат машыны даступны"
 msgid "currentVehicleStatus/rentableAgain"
 msgstr "Прадоўжыць пракат"
 
-msgid "currentVehicleStatus/rentalBattleIsOver"
-msgstr "Баі вычарпаны"
-
 msgid "currentVehicleStatus/rentalIsOver"
 msgstr "Пракат завершаны"
 
@@ -1758,9 +1758,6 @@ msgstr "Падпіска скасавана"
 
 msgid "currentVehicleStatus/tempUnavailable"
 msgstr "Часова недаступна"
-
-msgid "currentVehicleStatus/ticketsShortage"
-msgstr "Няма ключа"
 
 msgid "currentVehicleStatus/undamaged"
 msgstr "Да бою гатовы!"
@@ -2632,9 +2629,6 @@ msgstr "Абслугоўванне"
 msgid "hangar/ammunitionPanel/tuningBtn"
 msgstr "Выгляд"
 
-msgid "hangar/closeBtn"
-msgstr "ПАКІНУЦЬ РЭЖЫМ"
-
 msgid "hangar/crew/rody/dog/moreInfoLabel"
 msgstr "Падрабязней"
 
@@ -3065,9 +3059,6 @@ msgstr "Супольныя вучэнні"
 
 msgid "headerButtons/battle/types/epicTraining/descr"
 msgstr "Лінія фронту"
-
-msgid "headerButtons/battle/types/event"
-msgstr "Вафэнтрагер: спадчына"
 
 msgid "headerButtons/battle/types/eventSquad"
 msgstr "Івэнтавы звяз"
@@ -6433,9 +6424,6 @@ msgstr "Прадоўжыць пракат"
 msgid "tankCarousel/vehicleStates/rentableAgain/ranked"
 msgstr "Прадоўжыць пракат"
 
-msgid "tankCarousel/vehicleStates/rentalBattleIsOver"
-msgstr "Баі вычарпаны"
-
 msgid "tankCarousel/vehicleStates/rentalIsOver"
 msgstr "Пракат завершаны"
 
@@ -6461,9 +6449,6 @@ msgstr ""
 
 msgid "tankCarousel/vehicleStates/tempUnavailable"
 msgstr "Часова недаступна"
-
-msgid "tankCarousel/vehicleStates/ticketsShortage"
-msgstr "Няма ключа"
 
 msgid "tankCarousel/vehicleStates/unavailable"
 msgstr "Недаступна"
@@ -7208,7 +7193,7 @@ msgid "vehicle/igrRentLeft/hours"
 msgstr "гадзін: %(hours)s"
 
 msgid "vehicle/rentLeft/battles"
-msgstr "Яшчэ баёў: %(battles)s"
+msgstr "Баёў даступна: %(battles)s"
 
 msgid "vehicle/rentLeft/days"
 msgstr "Сутак пракату: %(days)s"

@@ -57,6 +57,9 @@ msgstr "Выполнено задач: {cream_Open}%(done)s{cream_Close}/%(total
 msgid "entryPointTooltip/header/title"
 msgstr "Танковая академия"
 
+msgid "entryPointTooltip/multipleTokens"
+msgstr "Обменяйте жетоны на любые исследуемые машины соответствующего уровня."
+
 msgid "entryPointTooltip/rewardsTitle"
 msgstr "Награда за выполнение:"
 
@@ -81,7 +84,7 @@ msgid "entryPointTooltip/task/title"
 msgstr "%(index)s. %(title)s"
 
 msgid "entryPointTooltip/token"
-msgstr "Обменяйте жетон на любую исследуемую машину VI уровня."
+msgstr "Обменяйте жетон на любую исследуемую машину соответствующего уровня."
 
 msgid "mainRewardsScreen/buttons/back"
 msgstr "НАЗАД"
@@ -205,20 +208,21 @@ msgid "rewards/token/action"
 msgstr "Выбрать машину"
 
 msgid "rewards/token/description"
-msgstr "Используйте жетон, чтобы мгновенно получить любую машину VI уровня."
+msgstr ""
+"Используйте жетон, чтобы мгновенно получить любую машину %(level)s уровня."
 
 msgid "rewards/token/title"
 msgstr "Обменяйте жетон академии на машину"
 
 msgid "tokenTooltip/condition"
 msgstr ""
-"Жетон выдаётся за успешное выполнение цепочки обучающих задач и достижение "
+"Выдаётся за успешное выполнение цепочки обучающих задач и достижение "
 "необходимого прогресса в рамках Танковой академии."
 
 msgid "tokenTooltip/description"
 msgstr ""
-"Жетон можно обменять на любую исследуемую машину VI уровня. С машиной идёт "
-"100%-й экипаж и слот в Ангаре."
+"Жетон можно обменять на любую исследуемую машину %(level)s уровня. С машиной"
+" идёт 100%-й экипаж и слот в Ангаре."
 
 msgid "tokenTooltip/timer/days"
 msgstr "Жетон доступен: {cream_open}%(days)s д{cream_close}"
@@ -233,7 +237,7 @@ msgid "tokenTooltip/timer/minutes"
 msgstr "Жетон доступен: {cream_open}%(minutes)s мин{cream_close}"
 
 msgid "tokenTooltip/title"
-msgstr "Жетон академии"
+msgstr "Жетон академии: %(level)s"
 
 msgid "vehicleSelection/additions/base"
 msgstr ""
@@ -280,8 +284,8 @@ msgstr "Сбросить фильтр"
 
 msgid "vehicleSelection/noVehicles/subtitle"
 msgstr ""
-"У вас исследована вся техника VI уровня, доступная для обмена на жетон "
-"академии."
+"У вас исследована вся техника %(level)s уровня, доступная для обмена на "
+"жетон академии."
 
 msgid "vehicleSelection/noVehicles/title"
 msgstr "Отсутствует машина для выбора"
@@ -303,11 +307,11 @@ msgstr "Показано:"
 
 msgid "vehicleSelection/subtitle"
 msgstr ""
-"Обменяйте жетон на любую исследуемую машину VI уровня. С машиной\n"
+"Обменяйте жетон на любую исследуемую машину %(level)s уровня. С машиной\n"
 "идёт 100%-й экипаж и слот в Ангаре."
 
 msgid "vehicleSelection/title"
-msgstr "Выберите любую исследуемую машину VI уровня"
+msgstr "Выберите любую исследуемую машину %(level)s уровня"
 
 msgid "vehicleSelection/vehicleName"
 msgstr "%(type)s {cream_Open}%(level)s{cream_Close} %(name)s"

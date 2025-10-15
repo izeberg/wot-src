@@ -9,7 +9,7 @@ package net.wg.gui.components.crosshairPanel.components.autoloader
    public class AutoloaderTimer extends MovieClip implements IDisposable
    {
       
-      private static const FRACTIONAL_FORMAT_CMD:String = "WG.getFractionalFormat";
+      private static const FRACTIONAL_FORMAT_CMD:String = "getFractionalFormat";
        
       
       public var timerReloading:AutoloaderTimerText = null;

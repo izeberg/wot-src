@@ -196,15 +196,6 @@ msgstr ""
 msgid "11_murovanka/name"
 msgstr "Мураванка"
 
-msgid "11_murovanka_wt/description"
-msgstr ""
-"Тактыка бою вызначаецца наяўнасцю балот, яроў і пагоркаў. Невялікая "
-"колькасць будынкаў дае адчувальную перавагу артылерыі. Сканцэнтруйце вашы "
-"сілы на адным кірунку, абмежаваўшыся абаронай на астатніх."
-
-msgid "11_murovanka_wt/name"
-msgstr "Мураванка"
-
 msgid "121_lost_paradise_v/description"
 msgstr ""
 "Ключавая зона сутыкнення на гэтым вулканічным паўвостраве — пакручастая "
@@ -267,15 +258,6 @@ msgstr ""
 
 msgid "14_siegfried_line_nom/name"
 msgstr "Заходні вал"
-
-msgid "14_siegfried_line_wt/description"
-msgstr ""
-"Асаблівасць гэтай мапы — удалае спалучэнне адкрытых прастораў і гарадскіх "
-"кварталаў. Пакручастыя вулкі дазваляюць пранікнуць у тыл праціўніка, а "
-"шматлікія доты можна выкарыстоўваць у якасці ўкрыццяў."
-
-msgid "14_siegfried_line_wt/name"
-msgstr "Лінія Зігфрыда"
 
 msgid "17_munchen/description"
 msgstr ""
@@ -394,6 +376,12 @@ msgstr ""
 msgid "252_br_battle_city4/name"
 msgstr "Фірнульфір"
 
+msgid "252_br_battle_city4_portal/description"
+msgstr "Разлом!"
+
+msgid "252_br_battle_city4_portal/name"
+msgstr "Тэрыторыя зла"
+
 msgid "280_cosmic/description"
 msgstr ""
 "Невялікае плато, загубленае ў даліне каньёнаў Марса. Чырвоныя пяскі і "
@@ -413,12 +401,6 @@ msgstr ""
 "што дазваляе наступаць з нечаканых кірункаў."
 
 msgid "28_desert/name"
-msgstr "Пясчаная рака"
-
-msgid "28_desert_wt/description"
-msgstr "Адмысловая мапа для рэжыму."
-
-msgid "28_desert_wt/name"
 msgstr "Пясчаная рака"
 
 msgid "29_el_hallouf/description"
@@ -460,15 +442,6 @@ msgstr ""
 msgid "34_redshire/name"
 msgstr "Рэдшыр"
 
-msgid "34_redshire_wt/description"
-msgstr ""
-"Гэта мапа асаблівая. Палі, якія плаўна пераходзяць у пагоркі, — гэта "
-"выдатнае месца для рашучых атак. Рака ў сярэдзіне мапы служыць добрым "
-"арыенцірам, а не перашкодай."
-
-msgid "34_redshire_wt/name"
-msgstr "Рэдшыр"
-
 msgid "35_steppes/description"
 msgstr ""
 "Гэтая мапа вылучаецца багаццем адкрытай прасторы, якая дазваляе "
@@ -477,16 +450,6 @@ msgstr ""
 "ўдараў."
 
 msgid "35_steppes/name"
-msgstr "Стэп"
-
-msgid "35_steppes_wt/description"
-msgstr ""
-"Гэтая мапа вылучаецца багаццем адкрытай прасторы, якая дазваляе "
-"канцэнтраваць сілы на розных кірунках. Дарога па цэнтры дазваляе хутка "
-"дабрацца да базы праціўніка. Таксама мапа зручная для фланговых абыходаў і "
-"ўдараў."
-
-msgid "35_steppes_wt/name"
 msgstr "Стэп"
 
 msgid "36_fishing_bay/description"
@@ -676,16 +639,10 @@ msgstr "?empty?"
 msgid "h08_mt_hangar/name"
 msgstr "?empty?"
 
-msgid "h08_mt_hangar_wt/description"
+msgid "h13_mt_portal_2025/description"
 msgstr "?empty?"
 
-msgid "h08_mt_hangar_wt/name"
-msgstr "?empty?"
-
-msgid "h14_mt_wt_2025/description"
-msgstr "?empty?"
-
-msgid "h14_mt_wt_2025/name"
+msgid "h13_mt_portal_2025/name"
 msgstr "?empty?"
 
 msgid "modified"

@@ -1,12 +1,12 @@
 from frameworks.wulf import Array
 from frameworks.wulf import ViewModel
-from gui.impl.gen.view_models.common.missions.bonuses.bonus_model import BonusModel
 from gui.impl.gen.view_models.views.lobby.common.vehicle_model import VehicleModel
+from gui.impl.gen.view_models.views.lobby.seniority_awards.main_reward_bonus_model import MainRewardBonusModel
 
 class SeniorityRewardAwardViewModel(ViewModel):
-    __slots__ = ('onOpenBtnClick', )
+    __slots__ = ('onOpenShop', 'onSelectVehicle')
 
-    def __init__(self, properties=5, commands=1):
+    def __init__(self, properties=6, commands=2):
         super(SeniorityRewardAwardViewModel, self).__init__(properties=properties, commands=commands)
 
     def getCategory(self):
@@ -23,7 +23,7 @@ class SeniorityRewardAwardViewModel(ViewModel):
 
     @staticmethod
     def getBonusesType():
-        return BonusModel
+        return MainRewardBonusModel
 
     def getVehicles(self):
         return self._getArray(2)
@@ -35,23 +35,35 @@ class SeniorityRewardAwardViewModel(ViewModel):
     def getVehiclesType():
         return VehicleModel
 
+    def getMainRewards(self):
+        return self._getArray(3)
+
+    def setMainRewards(self, value):
+        self._setArray(3, value)
+
+    @staticmethod
+    def getMainRewardsType():
+        return MainRewardBonusModel
+
     def getSpecialCurrencyCount(self):
-        return self._getNumber(3)
+        return self._getNumber(4)
 
     def setSpecialCurrencyCount(self, value):
-        self._setNumber(3, value)
+        self._setNumber(4, value)
 
     def getIsShopOnOpenLocked(self):
-        return self._getBool(4)
+        return self._getBool(5)
 
     def setIsShopOnOpenLocked(self, value):
-        self._setBool(4, value)
+        self._setBool(5, value)
 
     def _initialize(self):
         super(SeniorityRewardAwardViewModel, self)._initialize()
         self._addStringProperty('category', '')
         self._addArrayProperty('bonuses', Array())
         self._addArrayProperty('vehicles', Array())
+        self._addArrayProperty('mainRewards', Array())
         self._addNumberProperty('specialCurrencyCount', -1)
         self._addBoolProperty('isShopOnOpenLocked', False)
-        self.onOpenBtnClick = self._addCommand('onOpenBtnClick')
+        self.onOpenShop = self._addCommand('onOpenShop')
+        self.onSelectVehicle = self._addCommand('onSelectVehicle')

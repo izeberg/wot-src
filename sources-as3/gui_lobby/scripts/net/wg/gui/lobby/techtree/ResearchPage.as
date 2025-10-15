@@ -239,7 +239,6 @@ package net.wg.gui.lobby.techtree
       
       protected function updateLayouts() : void
       {
-         var _loc4_:int = 0;
          var _loc1_:int = width >> 1;
          var _loc2_:int = height >> 1;
          this.researchItems.y = _loc2_;
@@ -251,9 +250,7 @@ package net.wg.gui.lobby.techtree
          this.title.isSmallSized = _loc3_ < TITLE_SIZE_Y_FACTOR;
          if(this._benefitsComponent != null)
          {
-            this._benefitsComponent.compact = width < PREMIUM_VIEW_COMPACT_WIDTH;
-            _loc4_ = !!this._benefitsComponent.compact ? int(PREMIUM_LAYOUT_OFFSET_SMALL_Y) : int(PREMIUM_LAYOUT_OFFSET_Y);
-            this._benefitsComponent.y = _loc2_ - _loc4_;
+            this._benefitsComponent.y = _loc2_ - (!!this._benefitsComponent.isDualRow() ? PREMIUM_LAYOUT_OFFSET_SMALL_Y : PREMIUM_LAYOUT_OFFSET_Y);
             this._benefitsComponent.x = _loc1_ + PREMIUM_LAYOUT_OFFSET_X * width / PREMIUM_VIEW_NOMINAL_WIDTH | 0;
          }
          this.footerBg.width = _width;

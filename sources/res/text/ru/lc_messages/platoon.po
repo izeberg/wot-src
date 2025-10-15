@@ -120,9 +120,6 @@ msgstr "Включить голосовую связь"
 msgid "buttons/unMute/description"
 msgstr "Нажмите, чтобы включить голосовую связь во взводе."
 
-msgid "event_squad"
-msgstr "Взвод Гончих"
-
 msgid "headerButton/inSquad"
 msgstr "Во взводе"
 
@@ -179,15 +176,10 @@ msgid "headerButton/tooltips/dominationSquad/header"
 msgstr "Взвод"
 
 msgid "headerButton/tooltips/eventSquad/body"
-msgstr ""
-"Создание формирования из 2-3 игроков для совместной игры в режиме "
-"«Ваффентрагер: Наследие» на стороне Гончих."
+msgstr "Создание формирования из 2–3 игроков для совместной игры в событии."
 
 msgid "headerButton/tooltips/eventSquad/header"
-msgstr "Взвод Гончих"
-
-msgid "headerButton/tooltips/inEventSquad/header"
-msgstr "Взвод Гончих"
+msgstr "Взвод события"
 
 msgid "headerButton/tooltips/inMapboxSquad/body"
 msgstr "Нажмите, чтобы перейти в меню взвода."
@@ -207,6 +199,20 @@ msgstr ""
 
 msgid "headerButton/tooltips/mapboxSquad/header"
 msgstr "Разведка боем: взвод"
+
+msgid "headerButton/tooltips/portalSquad/body"
+msgstr ""
+"Объединяйте усилия с другими танкистами (числом от 2 до 5): только вместе вы"
+" сможете одолеть Катрину!"
+
+msgid "headerButton/tooltips/portalSquad/header"
+msgstr "Собирайтесь во взводы!"
+
+msgid "headerButton/tooltips/portalSquadOff/body"
+msgstr "Создание взвода невозможно. Но это временно."
+
+msgid "headerButton/tooltips/portalSquadOff/header"
+msgstr "Отказано."
 
 msgid "headerButton/tooltips/rankedSquad/body"
 msgstr ""
@@ -314,16 +320,16 @@ msgid "members/header/epic"
 msgstr ": Линия фронта"
 
 msgid "members/header/event"
-msgstr ": Ваффентрагер: вызов"
+msgstr ": Событие"
 
 msgid "members/header/mapbox"
 msgstr ": Разведка боем"
 
 msgid "members/header/noBonusPlaceholder/tooltip/body"
-msgstr "+++NO BONUS TOOLTIP BODY PLACEHOLDER+++"
+msgstr "?empty?"
 
 msgid "members/header/noBonusPlaceholder/tooltip/header"
-msgstr "+++NO BONUS TOOLTIP HEADER PLACEHOLDER+++"
+msgstr "?empty?"
 
 msgid "members/header/ranked"
 msgstr ": Ранговый бой"
@@ -354,6 +360,9 @@ msgstr ""
 
 msgid "members/header/tooltip/epic/header"
 msgstr "Правила формирования взвода"
+
+msgid "members/header/tooltip/event/body"
+msgstr "Взвод должен состоять из трёх специальных машин режима."
 
 msgid "members/header/tooltip/event/header"
 msgstr "Правила формирования взвода"

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<parent>vehicles/british/GB139_Vulcan/normal/lod3/T_anim</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.629469 0.011998 -0.317394</min>
+		<max>-0.348948 0.370310 -0.088424</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod2/T_anim</nodefullVisual>
+</root>

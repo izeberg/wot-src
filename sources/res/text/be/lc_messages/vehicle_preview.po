@@ -306,6 +306,12 @@ msgstr ""
 msgid "infoPanel/level"
 msgstr "%(level)s узроўню"
 
+msgid "infoPanel/preferentialText"
+msgstr "Баі са сваім узроўнем або ніжэйшым"
+
+msgid "infoPanel/preferentialTitle"
+msgstr "Ільготны танк"
+
 msgid "infoPanel/premium/bonsText"
 msgstr "Магчымасць заробку"
 
@@ -414,6 +420,32 @@ msgstr "Продаж завершаны"
 
 msgid "showcaseStyleBuying/timeRemaining/desc"
 msgstr "Даступна на працягу:"
+
+msgid "statTrackerPanel/label"
+msgstr "Лічыльнік знішчаных"
+
+msgid "tooltips/statTrack/description/firstPart"
+msgstr ""
+"Гэта ўнікальны экзэмпляр машыны з убудаваным "
+"%(whiteSpanish_Open)sслічыльнікам знішчаных цэляў%(whiteSpanish_Close)s."
+
+msgid "tooltips/statTrack/description/secondPart"
+msgstr ""
+"Адмысловая прылада размяшчаецца спераду танка і на задняй частцы вежы.\n"
+"Паказвае бягучую колькасць знішчаных машын праціўніка за ўвесь час валодання гэтай машынай."
+
+msgid "tooltips/statTrack/description/thirdPart"
+msgstr ""
+"Залічваюцца цэлі, знішчаныя ў Выпадковых баях (за выключэннем Генеральнай бітвы).\n"
+"Максімальная колькасць паказаных знішчэнняў — %(maxValue), па дасягненні якой лічыльнік назаўжды фіксуецца на гэтым значэнні."
+
+msgid "tooltips/statTrack/moreInfo"
+msgstr ""
+"Праз цяжкія ўмовы эксплуатацыі і несвоечасовае абслугоўванне энергаланцуга "
+"машыны пэўныя спалучэнні лічбаў могуць не паказвацца на лічыльніку."
+
+msgid "tooltips/statTrack/title"
+msgstr "Лічыльнік знішчаных цэляў"
 
 msgid "topPanel/tab/baseVehicle/vehicle"
 msgstr "СТАНДАРТ"

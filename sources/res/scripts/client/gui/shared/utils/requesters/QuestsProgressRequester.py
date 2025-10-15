@@ -100,11 +100,11 @@ class PersonalMissionsProgressRequester(_QuestsProgressRequester):
         self._questsType = questsType
         return
 
-    def getPersonalMissionProgress(self, pqType, personalMissionID):
+    def getPersonalMissionProgress(self, pmQuestType, personalMissionID):
         personalMissionsProgress = self.__getQuestsData()
         if personalMissionsProgress:
             flags, state = self.__pmStorage.get(personalMissionID)
-            return self.PersonalMissionProgress(state, flags, personalMissionID in personalMissionsProgress['selected'], pqType.maySelectQuest(self.__pmStorage.unlockedPQIDs()), self.getTokenCount(pqType.mainAwardListQuestID) > 0)
+            return self.PersonalMissionProgress(state, flags, personalMissionID in personalMissionsProgress['selected'], pmQuestType.maySelectQuest(self.__pmStorage.unlockedPMQuestsIDs()), self.getTokenCount(pmQuestType.mainAwardListQuestID) > 0)
         return self.PersonalMissionProgress(personal_missions.PM_STATE.NONE, (), 0, False)
 
     def getConditionsProgress(self, conditionsProgressID):
@@ -114,31 +114,31 @@ class PersonalMissionsProgressRequester(_QuestsProgressRequester):
         return self.__pmStorage
 
     def getPersonalMissionsFreeSlots(self, removedCount=0):
-        pqProgress = self.__getQuestsData()
-        if pqProgress:
-            return pqProgress['slots'] - len(pqProgress['selected']) + removedCount
+        pmQuestsProgress = self.__getQuestsData()
+        if pmQuestsProgress:
+            return pmQuestsProgress['slots'] - len(pmQuestsProgress['selected']) + removedCount
         return 0
 
     def getSelectedPersonalMissionsIDs(self):
-        pqProgress = self.__getQuestsData()
-        if pqProgress:
+        pmQuestsProgress = self.__getQuestsData()
+        if pmQuestsProgress:
             return self.__getQuestsData()['selected']
         return []
 
     def getTankmanLastIDs(self, nationID):
-        pqProgress = self.__getPersonalMissionsData()
-        if pqProgress:
-            return pqProgress['lastIDs'].get(nationID, self._DefaultLastWomanIDs)
+        pmQuestsProgress = self.__getPersonalMissionsData()
+        if pmQuestsProgress:
+            return pmQuestsProgress['lastIDs'].get(nationID, self._DefaultLastWomanIDs)
         return self._DefaultLastWomanIDs
 
     def _response(self, resID, value, callback=None):
         if value is not None:
-            self.__pmStorage = personal_missions.PMStorage(storage=value['pqStates'])
+            self.__pmStorage = personal_missions.PMStorage(storage=value['pmQuestsStates'])
         super(_QuestsProgressRequester, self)._response(resID, value, callback)
         return
 
     def __getPersonalMissionsData(self):
-        return self.getCacheValue('potapovQuests', {})
+        return self.getCacheValue('personalMissionQuests', {})
 
     def __getConditionsProgress(self):
         return self.getCacheValue('pm_progress', {})

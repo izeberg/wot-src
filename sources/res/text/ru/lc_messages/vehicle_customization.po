@@ -334,9 +334,7 @@ msgid "ArmoryYard_02_Inscription_2025/name"
 msgstr "Памятный след"
 
 msgid "ArmoryYard_02_Style_2025/description"
-msgstr ""
-"Всесезонный стиль, выдаваемый за определённые успехи в событии «Сборочный "
-"цех»."
+msgstr "Всесезонный стиль, доступный в рамках события «Сборочный цех»."
 
 msgid "ArmoryYard_02_Style_2025/longDescription"
 msgstr ""
@@ -413,9 +411,7 @@ msgid "ArmoryYard_4_Paint_2024/name"
 msgstr "Аллигатор"
 
 msgid "ArmoryYard_4_Style_2024/description"
-msgstr ""
-"Всесезонный стиль, выдаваемый за определённые успехи при строительстве "
-"машины в рамках события «Сборочный цех»."
+msgstr "Всесезонный стиль, доступный в рамках события «Сборочный цех»."
 
 msgid "ArmoryYard_4_Style_2024/longDescription"
 msgstr ""
@@ -2694,6 +2690,98 @@ msgstr "?empty?"
 msgid "BattlePass_S16_Style_04_2025/name"
 msgstr "Штабная карта"
 
+msgid "BlackMarket_01_Camo_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_01_Camo_138/name"
+msgstr "Чёрное перо"
+
+msgid "BlackMarket_01_Decal_01_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_01_Decal_01_138/name"
+msgstr "Чёрное перо"
+
+msgid "BlackMarket_01_Paint_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_01_Paint_138/name"
+msgstr "Чёрное перо"
+
+msgid "BlackMarket_01_Style_138/description"
+msgstr "Всесезонный стиль, доступный в рамках события «Чёрный рынок»."
+
+msgid "BlackMarket_01_Style_138/longDescription"
+msgstr ""
+"Вороны не прячутся. Они появляются там, где заканчивается иллюзия контроля. "
+"Этот орнамент — отсылка к тем, кто побеждает не количеством снарядов, а "
+"качеством решения. Каждое перо — как след разума: чёрное — тень, фиолетовое "
+"— намёк, белое — последний шанс уйти. Кто не успевает — тонет в пучине "
+"истории. Кто применяет стиль — становится её автором."
+
+msgid "BlackMarket_01_Style_138/name"
+msgstr "Чёрное перо"
+
+msgid "BlackMarket_02_Camo_Hull_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_02_Camo_Hull_138/name"
+msgstr "Гордый ворон"
+
+msgid "BlackMarket_02_Camo_Turret_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_02_Camo_Turret_138/name"
+msgstr "Гордый ворон"
+
+msgid "BlackMarket_02_Paint_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_02_Paint_138/name"
+msgstr "Гордый ворон"
+
+msgid "BlackMarket_02_Style_138/description"
+msgstr "Всесезонный стиль, доступный в рамках события «Чёрный рынок»."
+
+msgid "BlackMarket_02_Style_138/longDescription"
+msgstr ""
+"Этот стиль связан с неофициальными поставками и закрытыми аукционами. "
+"Говорят, подобная маркировка в ходу у так называемого «Чёрного рынка» — "
+"места, где техника и ценности переходят из рук в руки без документов и "
+"лишних вопросов. Это не просто ворон в фиолетовых тонах. Это — своеобразный "
+"«штрих-код» ценного лота, метка, понятная лишь узкому кругу. Точное "
+"происхождение стиля остаётся загадкой. Но известно одно: те, кто его "
+"получают, редко рассказывают, во что это им обошлось."
+
+msgid "BlackMarket_02_Style_138/name"
+msgstr "Гордый ворон"
+
+msgid "BlackMarket_03_Camo_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_03_Camo_138/name"
+msgstr "Злая стая"
+
+msgid "BlackMarket_03_Paint_138/description"
+msgstr "?empty?"
+
+msgid "BlackMarket_03_Paint_138/name"
+msgstr "Злая стая"
+
+msgid "BlackMarket_03_Style_138/description"
+msgstr "Всесезонный стиль, доступный в рамках события «Чёрный рынок»."
+
+msgid "BlackMarket_03_Style_138/longDescription"
+msgstr ""
+"А, ещё одна метка того самого аукциона. Этот стиль совсем недавно на Чёрном "
+"рынке. Эксклюзив, если желаете. Стая чёрно-фиолетовых воронов — это не "
+"только символ удачной сделки, но и предупреждение: обладатель стиля вступил "
+"в игру, где ставки выше, чем кажется. А тот, кто не согласен с правилами, "
+"берёт билет в один конец."
+
+msgid "BlackMarket_03_Style_138/name"
+msgstr "Злая стая"
+
 msgid "Blitztech_Camo/description"
 msgstr "?empty?"
 
@@ -2773,6 +2861,29 @@ msgstr ""
 
 msgid "Bloggers_Style_2025/name"
 msgstr "Стрит-арт"
+
+msgid "Bot_Camo_138/description"
+msgstr "?empty?"
+
+msgid "Bot_Camo_138/name"
+msgstr "Огненный покров"
+
+msgid "Bot_Paint_138/description"
+msgstr "?empty?"
+
+msgid "Bot_Paint_138/name"
+msgstr "Огненный покров"
+
+msgid "Bot_Style_138/description"
+msgstr ""
+"Особый стиль для техники, управляемой ИИ в рамках определённого события. "
+"Недоступен для нанесения на регулярные машины."
+
+msgid "Bot_Style_138/longDescription"
+msgstr "?empty?"
+
+msgid "Bot_Style_138/name"
+msgstr "Огненный покров"
 
 msgid "COSM_Camo_01_2025/description"
 msgstr "?empty?"
@@ -3892,6 +4003,54 @@ msgstr ""
 msgid "ClanTournaments_Style_Knight_2025/name"
 msgstr "Рыцарь"
 
+msgid "Clan_R246_Camo_Gun_138/description"
+msgstr "?empty?"
+
+msgid "Clan_R246_Camo_Gun_138/name"
+msgstr "Цвета клана"
+
+msgid "Clan_R246_Camo_Hull_138/description"
+msgstr "?empty?"
+
+msgid "Clan_R246_Camo_Hull_138/name"
+msgstr "Цвета клана"
+
+msgid "Clan_R246_Camo_Turret_138/description"
+msgstr "?empty?"
+
+msgid "Clan_R246_Camo_Turret_138/name"
+msgstr "Цвета клана"
+
+msgid "Clan_R246_Decal_01_138/description"
+msgstr "?empty?"
+
+msgid "Clan_R246_Decal_01_138/name"
+msgstr "Цвета клана-1"
+
+msgid "Clan_R246_Decal_02_138/description"
+msgstr "?empty?"
+
+msgid "Clan_R246_Decal_02_138/name"
+msgstr "Цвета клана-2"
+
+msgid "Clan_R246_Paint_138/description"
+msgstr "?empty?"
+
+msgid "Clan_R246_Paint_138/name"
+msgstr "Цвета клана"
+
+msgid "Clan_R246_Style_138/description"
+msgstr ""
+"Уникальный, всесезонный, редкий и значимый для игроков клановый стиль (и ещё"
+" множество эпитетов), подходящий только для советского среднего танка Объект"
+" 168-122 Квант."
+
+msgid "Clan_R246_Style_138/longDescription"
+msgstr "?empty?"
+
+msgid "Clan_R246_Style_138/name"
+msgstr "Цвета клана"
+
 msgid "Clan_Tournaments_Paladin_Camo_01/description"
 msgstr "?empty?"
 
@@ -3994,6 +4153,279 @@ msgstr "?empty?"
 msgid "Cyberport_2024_Paint_4_MT/name"
 msgstr "Восходящая звезда 4"
 
+msgid "DeservedAward_Camo_138/description"
+msgstr "?empty?"
+
+msgid "DeservedAward_Camo_138/name"
+msgstr "Звезда гексагона"
+
+msgid "DeservedAward_Inscription_138/description"
+msgstr "?empty?"
+
+msgid "DeservedAward_Inscription_138/name"
+msgstr "Звезда гексагона"
+
+msgid "DeservedAward_Paint_138/description"
+msgstr "?empty?"
+
+msgid "DeservedAward_Paint_138/name"
+msgstr "Звезда гексагона"
+
+msgid "DeservedAward_Style_01_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_01_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_01_138/name"
+msgstr "Звезда гексагона (1 год)"
+
+msgid "DeservedAward_Style_02_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_02_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_02_138/name"
+msgstr "Звезда гексагона (2 года)"
+
+msgid "DeservedAward_Style_03_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_03_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_03_138/name"
+msgstr "Звезда гексагона (3 года)"
+
+msgid "DeservedAward_Style_04_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_04_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_04_138/name"
+msgstr "Звезда гексагона (4 года)"
+
+msgid "DeservedAward_Style_05_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_05_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_05_138/name"
+msgstr "Звезда гексагона (5 лет)"
+
+msgid "DeservedAward_Style_06_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_06_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_06_138/name"
+msgstr "Звезда гексагона (6 лет)"
+
+msgid "DeservedAward_Style_07_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_07_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_07_138/name"
+msgstr "Звезда гексагона (7 лет)"
+
+msgid "DeservedAward_Style_08_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_08_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_08_138/name"
+msgstr "Звезда гексагона (8 лет)"
+
+msgid "DeservedAward_Style_09_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_09_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_09_138/name"
+msgstr "Звезда гексагона (9 лет)"
+
+msgid "DeservedAward_Style_10_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_10_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_10_138/name"
+msgstr "Звезда гексагона (10 лет)"
+
+msgid "DeservedAward_Style_11_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_11_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_11_138/name"
+msgstr "Звезда гексагона (11 лет)"
+
+msgid "DeservedAward_Style_12_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_12_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_12_138/name"
+msgstr "Звезда гексагона (12 лет)"
+
+msgid "DeservedAward_Style_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_138/name"
+msgstr "Звезда гексагона"
+
+msgid "DeservedAward_Style_13_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_13_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_13_138/name"
+msgstr "Звезда гексагона (13 лет)"
+
+msgid "DeservedAward_Style_14_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_14_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_14_138/name"
+msgstr "Звезда гексагона (14 лет)"
+
+msgid "DeservedAward_Style_Alpha_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_Alpha_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_Alpha_138/name"
+msgstr "Звезда гексагона (альфа-тест)"
+
+msgid "DeservedAward_Style_Beta_138/description"
+msgstr ""
+"Всесезонный стиль, приуроченный к очередной годовщине вашего участия в "
+"проекте. Спасибо, что остаётесь с нами!"
+
+msgid "DeservedAward_Style_Beta_138/longDescription"
+msgstr ""
+"Всесезонный стиль, выдаваемый в благодарность нашим любимым игрокам, чей "
+"ценный вклад в развитие проекта открывает новые горизонты и мотивирует нас "
+"продолжать совершенствовать нашу с вами игру. Выдаётся в рамках акции "
+"«Заслуженная награда» с 2020 года."
+
+msgid "DeservedAward_Style_Beta_138/name"
+msgstr "Звезда гексагона (бета-тест)"
+
 msgid "Dom_Camo_2024_MT/description"
 msgstr "?empty?"
 
@@ -4052,9 +4484,6 @@ msgstr ""
 
 msgid "EsportsLeague_Style_2024/name"
 msgstr "На киберстиле"
-
-msgid "G98_Waffentrager_E100_TLXXL_S/name"
-msgstr "?empty?"
 
 msgid "GB120_Concept_No_5_3dst_BP13_MT/description"
 msgstr ""
@@ -5641,6 +6070,133 @@ msgstr ""
 msgid "Paragons_Style_05_2024_MT/name"
 msgstr "Орбита \"Вулкана\""
 
+msgid "Parivision_Camo_138/description"
+msgstr "?empty?"
+
+msgid "Parivision_Camo_138/name"
+msgstr "Штандарт PARIVISION"
+
+msgid "Parivision_Decal_138/description"
+msgstr "?empty?"
+
+msgid "Parivision_Decal_138/name"
+msgstr "Логотип PARIVISION"
+
+msgid "Parivision_Inscription_138/description"
+msgstr "?empty?"
+
+msgid "Parivision_Inscription_138/name"
+msgstr "PARIVISION"
+
+msgid "Parivision_Paint_138/description"
+msgstr "?empty?"
+
+msgid "Parivision_Paint_138/name"
+msgstr "Штандарт PARIVISION"
+
+msgid "Parivision_St_Decal_138/description"
+msgstr "?empty?"
+
+msgid "Parivision_St_Decal_138/name"
+msgstr "Штандарт PARIVISION"
+
+msgid "Parivision_St_Inscription_138/description"
+msgstr "?empty?"
+
+msgid "Parivision_St_Inscription_138/name"
+msgstr "Штандарт PARIVISION"
+
+msgid "Parivision_Style_138/description"
+msgstr ""
+"Всесезонный стиль, выполненный в цветах киберспортивной команды PARIVISION и"
+" доступный в рамках проведения специальной акции."
+
+msgid "Parivision_Style_138/longDescription"
+msgstr "?empty?"
+
+msgid "Parivision_Style_138/name"
+msgstr "Штандарт PARIVISION"
+
+msgid "Portal_Camo_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Camo_138/name"
+msgstr "Цветы зла"
+
+msgid "Portal_Deca_01_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Deca_01_138/name"
+msgstr "Я тебя вижу"
+
+msgid "Portal_Deca_02_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Deca_02_138/name"
+msgstr "Трещины в памяти"
+
+msgid "Portal_Deca_03_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Deca_03_138/name"
+msgstr "Тайный груз"
+
+msgid "Portal_Deca_04_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Deca_04_138/name"
+msgstr "Затерянный спутник"
+
+msgid "Portal_Deca_05_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Deca_05_138/name"
+msgstr "Эхо пустоты"
+
+msgid "Portal_Lava_Camo_2025/description"
+msgstr "?empty?"
+
+msgid "Portal_Lava_Camo_2025/name"
+msgstr "Магмовый панцирь"
+
+msgid "Portal_Lava_Paint_2025/description"
+msgstr "?empty?"
+
+msgid "Portal_Lava_Paint_2025/name"
+msgstr "Магмовый панцирь"
+
+msgid "Portal_Lava_Style_2025/description"
+msgstr "Всесезонный стиль, доступный в рамках события «Разлом» в 2025-м году."
+
+msgid "Portal_Lava_Style_2025/longDescription"
+msgstr "?empty?"
+
+msgid "Portal_Lava_Style_2025/name"
+msgstr "Магмовый панцирь"
+
+msgid "Portal_Paint_138/description"
+msgstr "?empty?"
+
+msgid "Portal_Paint_138/name"
+msgstr "Цветы зла"
+
+msgid "Portal_Style_138/description"
+msgstr ""
+"Всесезонный стиль, выдаваемый за прохождение прогрессии в событии «Разлом»."
+
+msgid "Portal_Style_138/longDescription"
+msgstr ""
+"Встреча с настоящим злом не оставляет тебе выбора. Ты можешь окружить себя "
+"стеной света и добра, но зло рано или поздно пробьёт в ней дыру. И тебе "
+"останется только наблюдать за тем, как в твоём мире распускаются цветы зла. "
+"Покрывая всё вокруг равнодушно, без спешки. Пожирая каждый сантиметр твоего "
+"любимого сада. Как ржавчина пожирает броню. И рано или поздно ты сдашься. "
+"Поймёшь, что у тебя нет выбора. Что есть только один способ сохранить то, "
+"что тебе дорого: отплатив силой за силу. Злом за зло."
+
+msgid "Portal_Style_138/name"
+msgstr "Цветы зла"
+
 msgid "Prostokvashino_2025_Camo_01/description"
 msgstr "?empty?"
 
@@ -5971,6 +6527,43 @@ msgstr "?empty?"
 msgid "Pve_May_inscription_MK_2024_MT/name"
 msgstr "Московский колхозник"
 
+msgid "R229_Object_718B_3Dst_01/description"
+msgstr "?empty?"
+
+msgid "R229_Object_718B_3Dst_01/longDescription"
+msgstr ""
+"«Скажи мне, друг мой, Витёк, сколько мне ещё прикрывать твой тыл, объясняя "
+"комбату, зачем нам в очередной раз тащить БРЭМ через эти болота? Ты, когда "
+"на мехвода учился, глаза открывал? У тебя вообще — \"вижу цель — не вижу "
+"препятствий\" — как смысл всей жизни что ли? Мы в третий раз вытаскиваем "
+"танк из одного и того же места, из одной и той же дыры, куда ты нас загнал, "
+"Витёк. Маслом тебе тут намазано, что ли? Скажи мне, а когда ты не топишь "
+"матчасть в болотах, чем другим развлекаешься? Над нами в части уже все ржут "
+"в полный голос — будто от такого экипажа танк сам пытается смыться на дно. "
+"Ну вот что. Давай-ка ты... Чёрт, да я даже не знаю, какое наказание тебе "
+"придумать. Ты и так не получился, Витёк. Хуже тебе уже не сделать»."
+
+msgid "R229_Object_718B_3Dst_01/name"
+msgstr "Водяной"
+
+msgid "R229_Object_718B_3Dst_01_Desert_Camo/description"
+msgstr "?empty?"
+
+msgid "R229_Object_718B_3Dst_01_Desert_Camo/name"
+msgstr "Водяной (пустынный)"
+
+msgid "R229_Object_718B_3Dst_01_Summer_Camo/description"
+msgstr "?empty?"
+
+msgid "R229_Object_718B_3Dst_01_Summer_Camo/name"
+msgstr "Водяной (летний)"
+
+msgid "R229_Object_718B_3Dst_01_Winter_Camo/description"
+msgstr "?empty?"
+
+msgid "R229_Object_718B_3Dst_01_Winter_Camo/name"
+msgstr "Водяной (зимний)"
+
 msgid "RAM_Camo_2024/description"
 msgstr "?empty?"
 
@@ -6045,6 +6638,21 @@ msgstr "?empty?"
 
 msgid "RED_Style_2025/name"
 msgstr "РЭДкая удача!"
+
+msgid "Ratte_camo_01/description"
+msgstr "?empty?"
+
+msgid "Ratte_camo_01/name"
+msgstr "Раттенкёниг"
+
+msgid "Ratte_style_01/description"
+msgstr "Особый всесезонный стиль для танка Ratte."
+
+msgid "Ratte_style_01/longDescription"
+msgstr "?empty?"
+
+msgid "Ratte_style_01/name"
+msgstr "Раттенкёниг"
 
 msgid "RedClove_Camo_2024_MT/description"
 msgstr "?empty?"
@@ -6945,12 +7553,13 @@ msgstr "2D-стиль выдаётся за достижения в игрово
 
 msgid "RushShopCollectionConfrontation_Style_01_2025/longDescription"
 msgstr ""
-"Дух противостояния сложно описать одним словом. Это порыв ветра и скорость, "
-"с которой противник остаётся позади. Это драйв от нового вызова и испытания "
-"способностей. Это пьянящая радость от триумфа или же твёрдая решимость "
-"одержать верх в следующий раз. Это секунда, которая вот-вот нарушит баланс "
-"весов. Играй с умом, иди до конца, не останавливайся ни перед чем и всегда "
-"держи в рукаве парочку козырей. Таков рецепт успеха Натиска. Всё или ничего."
+"Это желанное, а порой и недостижимое ощущение трудно описать одним словом. "
+"Это порыв ветра и скорость, с которой противник остаётся позади. Это драйв "
+"от нового вызова и испытания способностей. Это пьянящая радость от триумфа "
+"или же твёрдая решимость одержать верх в следующий раз. Это секунда, которая"
+" вот-вот нарушит баланс весов. Играй с умом, иди до конца, не останавливайся"
+" ни перед чем и всегда держи в рукаве парочку козырей. Таков рецепт успеха "
+"Натиска. Всё или ничего."
 
 msgid "RushShopCollectionConfrontation_Style_01_2025/name"
 msgstr "Вкус соперничества"
@@ -9573,7 +10182,8 @@ msgstr "Готов к погрузке"
 
 msgid "TradingCaravan_Style_02_2025/description"
 msgstr ""
-"Всесезонный стиль, выдаваемый за участие в событии «Торговый караван»."
+"Всесезонный стиль, доступный для покупки в рамках события «Торговый "
+"караван»."
 
 msgid "TradingCaravan_Style_02_2025/longDescription"
 msgstr ""
@@ -9588,7 +10198,8 @@ msgstr "Караван в пути"
 
 msgid "TradingCaravan_Style_03_2025/description"
 msgstr ""
-"Всесезонный стиль, выдаваемый за участие в событии «Торговый караван»."
+"Всесезонный стиль, доступный для покупки в рамках события «Торговый "
+"караван»."
 
 msgid "TradingCaravan_Style_03_2025/longDescription"
 msgstr ""
@@ -9609,6 +10220,77 @@ msgstr ""
 
 msgid "Type74_Camo_MT/name"
 msgstr "Далайнор"
+
+msgid "UN_Camo_Desert_138/description"
+msgstr "?empty?"
+
+msgid "UN_Camo_Desert_138/name"
+msgstr "Аравийский песчаник (пустынный)"
+
+msgid "UN_Camo_Summer_138/description"
+msgstr "?empty?"
+
+msgid "UN_Camo_Summer_138/name"
+msgstr "Аравийский песчаник (летний)"
+
+msgid "UN_Camo_Winter_138/description"
+msgstr "?empty?"
+
+msgid "UN_Camo_Winter_138/name"
+msgstr "Аравийский песчаник (зимний)"
+
+msgid "UN_Style_138/description"
+msgstr ""
+"Всесезонный стиль, доступный для нанесения исключительно на технику Сборной "
+"наций."
+
+msgid "UN_Style_138/longDescription"
+msgstr "?empty?"
+
+msgid "UN_Style_138/name"
+msgstr "Аравийский песчаник"
+
+msgid "VelesNight_Camo_138/description"
+msgstr "?empty?"
+
+msgid "VelesNight_Camo_138/name"
+msgstr "Велесова ночь"
+
+msgid "VelesNight_Decal_01_138/description"
+msgstr "?empty?"
+
+msgid "VelesNight_Decal_01_138/name"
+msgstr "Велесова ночь 1"
+
+msgid "VelesNight_Decal_02_138/description"
+msgstr "?empty?"
+
+msgid "VelesNight_Decal_02_138/name"
+msgstr "Велесова ночь 2"
+
+msgid "VelesNight_Paint_138/description"
+msgstr "?empty?"
+
+msgid "VelesNight_Paint_138/name"
+msgstr "Велесова ночь"
+
+msgid "VelesNight_Style_138/description"
+msgstr ""
+"Всесезонный стиль, доступный в рамках события «Последовательные наборы»."
+
+msgid "VelesNight_Style_138/longDescription"
+msgstr ""
+"Каждый год в конце октября наступает особое время, когда природа уходит на "
+"покой и грань между мирами теряет строгие очертания. Силы, дремавшие в "
+"тёплую пору, вступают в свои права. Духи бродят по земле, где им вздумается,"
+" и многое может произойти. В Велесову ночь эта грань истончается до предела,"
+" и нужно быть очень внимательным, чтобы уберечь себя от зла. Но тот, кто "
+"сумеет снискать благосклонность Велеса — могущественного бога, которому "
+"подвластны все три мира: реальный, загробный и мир богов, — получит "
+"невиданную помощь во всех начинаниях."
+
+msgid "VelesNight_Style_138/name"
+msgstr "Велесова ночь"
 
 msgid "VictoryDay_2024_MT/description"
 msgstr ""
@@ -11097,6 +11779,47 @@ msgstr ""
 
 msgid "WayOfVictory_Style_2025/name"
 msgstr "Кремлёвские звёзды"
+
+msgid "WebEventHW_Camo_Hull_138/description"
+msgstr "?empty?"
+
+msgid "WebEventHW_Camo_Hull_138/name"
+msgstr "Закалённое сердце"
+
+msgid "WebEventHW_Camo_Turret_138/description"
+msgstr "?empty?"
+
+msgid "WebEventHW_Camo_Turret_138/name"
+msgstr "Закалённое сердце"
+
+msgid "WebEventHW_Paint_01_138/description"
+msgstr "?empty?"
+
+msgid "WebEventHW_Paint_01_138/name"
+msgstr "Закалённое сердце"
+
+msgid "WebEventHW_Paint_02_138/description"
+msgstr "?empty?"
+
+msgid "WebEventHW_Paint_02_138/name"
+msgstr "Закалённое сердце"
+
+msgid "WebEventHW_Style_138/description"
+msgstr "Всесезонный стиль, выдаваемый в рамках события «Между мирами»."
+
+msgid "WebEventHW_Style_138/longDescription"
+msgstr ""
+"Испытания ждут всех на жизненном пути. И все проходят через них по-разному. "
+"Кто-то более достойно, кто-то менее. Иногда испытания слишком тяжелы, чтобы "
+"пережить их с высоко поднятой головой, — но разве это так важно? Гораздо "
+"важнее сохранить при этом себя, остаться верным своим идеалам и убеждениям. "
+"Вынырнуть из пучины адского пламени — и узнать себя в зеркале души. "
+"Преодолеть то, о чём другие боятся даже помыслить, и продолжить путь, не "
+"усомнившись в верности поставленной цели. Не позволить своему сердцу "
+"окаменеть. Но лишь закалить его во имя будущих свершений."
+
+msgid "WebEventHW_Style_138/name"
+msgstr "Закалённое сердце"
 
 msgid "WebEvent_03_Camo_2024_MT/description"
 msgstr "?empty?"
@@ -35505,6 +36228,17 @@ msgstr "?empty?"
 msgid "special_style/23feb"
 msgstr "23"
 
+msgid "special_style/23feb/description"
+msgstr ""
+"Всесезонный стиль, посвящённый ежегодному празднованию Дня защитника "
+"Отечества."
+
+msgid "special_style/23feb/longDescription"
+msgstr ""
+"Ежегодно 23 февраля отмечается День защитника Отечества — праздник, который за свою историю сменил несколько названий и в итоге приобрёл самое широкое и обобщающее значение. И это был правильный шаг: наше Отечество — это не только государственные границы. Это ещё и стены нашего дома, наша семья, дети, пожилые родители. Всё, что нам дорого. Всё, что нас окружает. И всё, что нужно защищать 24/7 — независимо от того, носишь ли ты погоны или нет.\n"
+"\n"
+"Очень точно передаёт эту мысль текст песни «С чего начинается Родина»: ведь общее ткётся из частного. Если мы найдём в себе мужество защитить кого-то или что-то рядом с собой — пусть даже это будет лишь капля в огромном океане жизни, — значит, справимся и с остальным. Без страха. Без исключений."
+
 msgid "special_style/360_anniversary"
 msgstr "Кои"
 
@@ -35816,6 +36550,17 @@ msgstr ""
 
 msgid "special_style/BlackFriday"
 msgstr "Чёрная пятница"
+
+msgid "special_style/BlackFriday/description"
+msgstr ""
+"Всесезонный стиль, посвящённый ежегодной мировой распродаже, известной как "
+"«Чёрная пятница»."
+
+msgid "special_style/BlackFriday/longDescription"
+msgstr ""
+"Штрихкод — универсальный язык, на котором с 50-х годов говорят почти все товары, произведённые промышленным способом. Такая маркировка, состоящая из прямых линий разной толщины и с разными промежутками, служит чем-то вроде «отпечатков пальцев», в которые заложена вся информация о товаре. На штрихкоде также присутствует числовой код, способный вместить множество полезных данных: страну происхождения, код предприятия и другую информацию. Интересная особенность штрихкода — его гибкость. Это словно конструктор: его можно создать и внедрить локально, например, для маркировки товара местного значения в пределах небольшой территории.\n"
+"\n"
+"К примеру, промаркировать брёвна на лесозаготовке с помощью самодельного, но полностью функционального штрихкода, чтобы древообрабатывающее производство (и только оно) могло считывать через него нужные сведения. У — удобство."
 
 msgid "special_style/Breadboard"
 msgstr "Макетная плата"
@@ -36953,9 +37698,7 @@ msgid "special_style/R208_Object_156O_3dst_MT"
 msgstr "Горыныч"
 
 msgid "special_style/R208_Object_156O_3dst_MT/description"
-msgstr ""
-"Всесезонный стиль, подходящий только для советской огнемётной машины Объект "
-"156 О."
+msgstr "Всесезонный стиль, доступный в рамках события «Сборочный цех»."
 
 msgid "special_style/R208_Object_156O_3dst_MT/description/long"
 msgstr ""
@@ -41904,9 +42647,9 @@ msgstr "Всесезонный стиль, доступный в рамках с
 
 msgid "styles/ArmoryYard_2023_MT/description/long"
 msgstr ""
-"Бегал, крутился под ногами. Чертежи мне путал. Где я  последний раз нашла болт, который битую неделю вытачивала? Утащил к себе и спрятал под лежанкой! Енот-воришка. Но стоило ему пропасть, и из меня как будто важную деталь вытащили. Не самую главную, конечно, но всё же. Не могу сказать, что как-то сильно к нему привязана. Енот как енот. Потешный, правда. Ребятки его между собой (как будто от меня можно что-то скрыть, какие наивные!) называют «Муж Ягинской». Меня это даже забавляло. Обедом его подкармливать пытались (это я сразу пресекла. Пусть сами едят, что они там едят).\n"
+"«Бегал, крутился под ногами. Чертежи мне путал. Где я  последний раз нашла болт, который битую неделю вытачивала? Утащил к себе и спрятал под лежанкой! Енот-воришка. Но стоило ему пропасть, и из меня как будто важную деталь вытащили. Не самую главную, конечно, но всё же. Не могу сказать, что как-то сильно к нему привязана. Енот как енот. Потешный, правда. Ребятки его между собой (как будто от меня можно что-то скрыть, какие наивные!) называют \"Муж Ягинской\". Меня это даже забавляло. Обедом его подкармливать пытались (это я сразу пресекла. Пусть сами едят, что они там едят).\n"
 "\n"
-"Конечно, проку от енота никакого. Но, если разобраться, и от людей проку тоже с гулькин нос. Зато они несут чушь и отвлекают от дел. Собаки, опять же, — навязчивые, вечно внимания хотят. Коты — эти только есть и спать умеют. А енот… енот это… что-то среднее. Между людьми, котами и собаками… Что это меня понесло? Да и зачем я вообще так много думаю о еноте? Но всё же когда Матрас рядом — мне как-то спокойнее, да и работа идёт быстрее. Хотя я сама себя обманываю: пытаюсь как-то его значимость принизить, а ведь кроме него и нет у меня никого. Единственное существо, которое меня терпит такой. Эх, Матрас, знал бы ты, сколько листовок «Пропал енот» я в типографии напечатала — да ими всеми если танк обклеить, он корабельные пушки держать начнёт."
+"Конечно, проку от енота никакого. Но, если разобраться, и от людей проку тоже с гулькин нос. Зато они несут чушь и отвлекают от дел. Собаки, опять же, — навязчивые, вечно внимания хотят. Коты — эти только есть и спать умеют. А енот… енот это… что-то среднее. Между людьми, котами и собаками… Что это меня понесло? Да и зачем я вообще так много думаю о еноте? Но всё же когда Матрас рядом — мне как-то спокойнее, да и работа идёт быстрее. Хотя я сама себя обманываю: пытаюсь как-то его значимость принизить, а ведь кроме него и нет у меня никого. Единственное существо, которое меня терпит такой. Эх, Матрас, знал бы ты, сколько листовок «Пропал енот» я в типографии напечатала — да ими всеми если танк обклеить, он корабельные пушки держать начнёт»."
 
 msgid "styles/Award_2023_MT"
 msgstr "Гексагональная броня"

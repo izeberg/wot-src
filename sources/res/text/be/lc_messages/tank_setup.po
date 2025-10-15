@@ -1992,6 +1992,18 @@ msgstr "Аўтапапаўненне адключана"
 msgid "shells/autofillOn"
 msgstr "Аўтапапаўненне ўключана"
 
+msgid "shells/counter"
+msgstr "%(value)s/%(maximum)s"
+
+msgid "shells/limitTooltip/body"
+msgstr "Загружаныя снарады / Максімальна магчымая колькасць"
+
+msgid "shells/limitTooltip/header"
+msgstr "Ліміт боекамплекту"
+
+msgid "shells/limitValue/counterDash"
+msgstr "/"
+
 msgid "shells/shortSpecification/inStorage"
 msgstr "На Складзе:"
 

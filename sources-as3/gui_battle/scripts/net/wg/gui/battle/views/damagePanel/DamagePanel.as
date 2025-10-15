@@ -502,6 +502,11 @@ package net.wg.gui.battle.views.damagePanel
          this.updateSpeed(param1);
       }
       
+      public function setHealthBarProgressImageName(param1:String) : void
+      {
+         this.healthBar.setProgressImageName(param1);
+      }
+      
       private function updateSpeed(param1:int) : void
       {
          if(this._speed == param1)

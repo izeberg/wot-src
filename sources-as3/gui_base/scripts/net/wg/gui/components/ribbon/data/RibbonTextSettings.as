@@ -41,6 +41,8 @@ package net.wg.gui.components.ribbon.data
       
       private var _shadowColor:uint = 0;
       
+      private var _rendererType:String = "";
+      
       public function RibbonTextSettings(param1:String)
       {
          super();
@@ -91,6 +93,7 @@ package net.wg.gui.components.ribbon.data
             default:
                App.utils.asserter.assert(false,"No such rendererType: " + param1);
          }
+         this._rendererType = param1;
       }
       
       public function get valueTextColor() : uint
@@ -106,6 +109,11 @@ package net.wg.gui.components.ribbon.data
       public function get ribbonNameTextColor() : uint
       {
          return this._ribbonNameTextColor;
+      }
+      
+      public function get rendererType() : String
+      {
+         return this._rendererType;
       }
    }
 }

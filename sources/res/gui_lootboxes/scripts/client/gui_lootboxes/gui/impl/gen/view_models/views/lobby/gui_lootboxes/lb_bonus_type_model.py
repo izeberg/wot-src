@@ -4,7 +4,8 @@ from frameworks.wulf import ViewModel
 class BonusType(IntEnum):
     VEHICLE = 0
     RENTEDVEHICLE = 1
-    DEFAULT = 2
+    STATTRACKVEHICLE = 2
+    DEFAULT = 3
 
 
 class LbBonusTypeModel(ViewModel):

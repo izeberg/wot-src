@@ -1094,19 +1094,6 @@ msgstr "Агулам"
 msgid "confirmModuleDialog/totalLabel"
 msgstr "Агулам:"
 
-msgid "confirmReward/cancel"
-msgstr "Скасаваць"
-
-msgid "confirmReward/message"
-msgstr ""
-" Калі маёмасць атрымана з партала Інжынера, вы не зможаце яе замяніць."
-
-msgid "confirmReward/submit"
-msgstr "Забраць"
-
-msgid "confirmReward/title"
-msgstr "Забраць узнагароду"
-
 msgid "confirmUnlock/cancel"
 msgstr "Не"
 
@@ -2522,7 +2509,8 @@ msgid "punishmentWindow/message/penalty"
 msgstr ""
 "Шаноўны гулец, за парушэнне вамі правіл гульні на мапе %(arenaName)s у %(time)s, а менавіта артыкула «%(reason)s», на вас накладзена дысцыплінарнае спагнанне. Паказаны ніжэй штраф — крайняя мера пакарання.\n"
 "\n"
-"Прынятыя меры:"
+"Прынятыя меры:\n"
+" "
 
 msgid "punishmentWindow/message/warning"
 msgstr ""
@@ -2996,18 +2984,6 @@ msgstr "Працягнуць"
 
 msgid "reportBug/title"
 msgstr "Пераход на форум гульні"
-
-msgid "rerollReward/cancel"
-msgstr "Скасаваць"
-
-msgid "rerollReward/confirm"
-msgstr "Замяніць"
-
-msgid "rerollReward/message"
-msgstr "Гэта абыдзецца ў"
-
-msgid "rerollReward/title"
-msgstr "Ці хочаце замяніць прапанаваную ўзнагароду?"
 
 msgid "resetGraphics/cancel"
 msgstr "Працягнуць"
@@ -3806,21 +3782,6 @@ msgstr ""
 
 msgid "waterQualityNotPossible/title"
 msgstr "Якасць вады недаступная"
-
-msgid "white_tiger/deserter/cancel"
-msgstr "Скасаваць"
-
-msgid "white_tiger/deserter/message"
-msgstr ""
-"Уцёкі з поля бою да заканчэння бітвы расцэньваюцца як дэзерцірства, а "
-"таксама вядуць да дысцыплінарнага спагнання і пазбаўлення прагрэсу ў бягучых"
-" задачах. Падумайце яшчэ раз!"
-
-msgid "white_tiger/deserter/submit"
-msgstr "Уцячы"
-
-msgid "white_tiger/deserter/title"
-msgstr "Пакінуць бой?"
 
 msgid "wotPlusRental/cancel"
 msgstr "Скасаваць"

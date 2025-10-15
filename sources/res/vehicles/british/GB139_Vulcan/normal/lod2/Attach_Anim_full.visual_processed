@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>Root_Attach</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>Lever_1_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.590000 0.002451 -2.788268</row3>
+				</transform>
+				<node>
+					<identifier>Lever_2_jnt</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 -0.000000 1.000000</row2>
+						<row3>0.125233 -0.002541 0.590680</row3>
+					</transform>
+					<node>
+						<identifier>Lever_2_jnt_BlendBone</identifier>
+						<transform>
+							<row0>1.000000 0.000000 0.000000</row0>
+							<row1>0.000000 1.000000 0.000000</row1>
+							<row2>0.000000 0.000000 -1.000000</row2>
+							<row3>0.464767 0.000091 2.197588</row3>
+						</transform>
+					</node>
+				</node>
+				<node>
+					<identifier>Lever_1_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.590000 -0.002451 2.788268</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Roller_feed_2_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.474688 -0.140101 -0.966146</row3>
+				</transform>
+				<node>
+					<identifier>Roller_feed_2_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.474688 0.140101 0.966146</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>Roller_feed_3_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.310000 0.000174 -1.328646</row3>
+				</transform>
+				<node>
+					<identifier>Roller_feed_3_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.310000 -0.000174 1.328646</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>container_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.829288 0.558821</row1>
+					<row2>0.000000 -0.558821 0.829288</row2>
+					<row3>-0.468813 -0.608235 0.205122</row3>
+				</transform>
+				<node>
+					<identifier>container_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>0.000000 0.829288 -0.558821</row1>
+						<row2>0.000000 -0.558821 -0.829288</row2>
+						<row3>0.468813 0.389776 -0.510000</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>cover_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.829288 0.558821</row1>
+					<row2>0.000000 -0.558821 0.829288</row2>
+					<row3>-0.468884 -0.945939 0.706265</row3>
+				</transform>
+				<node>
+					<identifier>cover_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>0.000000 0.829288 -0.558821</row1>
+						<row2>0.000000 -0.558821 -0.829288</row2>
+						<row3>0.468884 0.389780 -1.114308</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>engine_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.829288 0.558821</row1>
+					<row2>0.000000 -0.558821 0.829288</row2>
+					<row3>-0.468813 -0.333325 -0.202846</row3>
+				</transform>
+				<node>
+					<identifier>engine_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>0.000000 0.829288 -0.558821</row1>
+						<row2>0.000000 -0.558821 -0.829288</row2>
+						<row3>0.468813 0.389777 -0.018051</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>lever_drive_1_jnt</identifier>
+				<transform>
+					<row0>-0.000005 0.945522 -0.325557</row0>
+					<row1>-0.999743 -0.007391 -0.021451</row1>
+					<row2>-0.022689 0.325473 0.945279</row2>
+					<row3>-0.413131 -0.176780 -1.271894</row3>
+				</transform>
+				<node>
+					<identifier>lever_drive_1_jnt_BlendBone</identifier>
+					<transform>
+						<row0>-0.000005 -0.999743 -0.022689</row0>
+						<row1>0.945522 -0.007391 0.325473</row1>
+						<row2>0.325557 0.021451 -0.945279</row2>
+						<row3>-0.246926 -0.441615 1.250458</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>lever_drive_2_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.580000 -0.210019 -1.438647</row3>
+				</transform>
+				<node>
+					<identifier>lever_drive_2_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.580000 0.210019 1.438647</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>lever_drive_3_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.590110 -0.210016 -2.788597</row3>
+				</transform>
+				<node>
+					<identifier>lever_drive_3_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 0.000000</row0>
+						<row1>0.000000 1.000000 0.000000</row1>
+						<row2>0.000000 0.000000 -1.000000</row2>
+						<row3>0.590110 0.210016 2.788597</row3>
+					</transform>
+				</node>
+			</node>
+			<node>
+				<identifier>projectile_jnt</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.829288 0.558821</row1>
+					<row2>0.000000 -0.558821 0.829288</row2>
+					<row3>-0.468490 -0.684430 0.318189</row3>
+				</transform>
+				<node>
+					<identifier>projectile_jnt_BlendBone</identifier>
+					<transform>
+						<row0>1.000000 0.000000 -0.000000</row0>
+						<row1>0.000000 0.829288 -0.558821</row1>
+						<row2>0.000000 -0.558821 -0.829288</row2>
+						<row3>0.468490 0.389779 -0.646344</row3>
+					</transform>
+				</node>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>projectile_jnt_BlendBone</node>
+		<node>container_jnt_BlendBone</node>
+		<node>cover_jnt_BlendBone</node>
+		<node>engine_jnt_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape2_split_2.vertices</vertices>
+			<primitive>gun_01_animShape2_split_2.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_ammo3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_ammo_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.468884 -0.663746 -0.289732</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Roller_feed_2_jnt_BlendBone</node>
+		<node>lever_drive_1_jnt_BlendBone</node>
+		<node>lever_drive_2_jnt_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape2_split_1.vertices</vertices>
+			<primitive>gun_01_animShape2_split_1.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.508403 -0.137910 1.201742</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<renderSet>
+		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
+		<node>Roller_feed_3_jnt_BlendBone</node>
+		<node>Lever_1_jnt_BlendBone</node>
+		<node>Lever_2_jnt_BlendBone</node>
+		<node>lever_drive_3_jnt_BlendBone</node>
+		<geometry>
+			<vertices>gun_01_animShape2_split_0.vertices</vertices>
+			<primitive>gun_01_animShape2_split_0.indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_guns3_skinned</identifier>
+					<fx>shaders/std_effects/PBS_tank_skinned.fx</fx>
+					<materialKind>0</materialKind>
+					<collisionFlags>0</collisionFlags>
+					<property>
+						diffuseMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_AO.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/british/GB139_Vulcan/Vulcan_guns_ANM.dds</Texture>
+					</property>
+				</material>
+				<groupOrigin>-0.476434 -0.059458 2.080934</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<constraints/>
+	<boundingBox>
+		<min>-0.704025 -1.097263 -2.897565</min>
+		<max>-0.248842 0.108087 0.882804</max>
+	</boundingBox>
+	<geometrySize>32016</geometrySize>
+	<minUVDensity>0.012314</minUVDensity>
+</root>

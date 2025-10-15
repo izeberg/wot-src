@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<Properties>
+		<prefabPath>
+			<Type>STRING</Type>
+			<Flags>ALL_CLIENTS</Flags>
+		</prefabPath>
+		<position>
+			<Type>VECTOR3</Type>
+			<Flags>ALL_CLIENTS</Flags>
+			<Default>
+				0.0 0.0 0.0
+				<!--BW_String-->
+			</Default>
+		</position>
+	</Properties>
+	<ofEntity>
+		<Vehicle/>
+	</ofEntity>
+</root>

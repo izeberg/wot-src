@@ -1,0 +1,112 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Mir tankov\n"
+"PO-Revision-Date: \n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "ability/descr/usage"
+msgstr "Час перанабівання: %(cooldown)d с."
+
+msgid "berserk_portal/descr"
+msgstr ""
+"На час павялічвае пашкоджання, якія вы прычыняеце ворагу, і істотна зніжае "
+"пашкоджанні, якія прычыняюць вам."
+
+msgid "berserk_portal/name"
+msgstr "Адрэналін"
+
+msgid "curse_shot_portal/descr"
+msgstr ""
+"Наступны стрэл, які прабіў варожую машыну, прычыніць ёй адразу некалькі "
+"крытычных пашкоджанняў."
+
+msgid "curse_shot_portal/name"
+msgstr "Замыканне"
+
+msgid "fire_shot_portal/descr"
+msgstr "Наступны, стрэл, які прабіў варожую машыну, падпаліць яе."
+
+msgid "fire_shot_portal/name"
+msgstr "Піракінез"
+
+msgid "frozen_shot_portal/descr"
+msgstr ""
+"Наступны стрэл, які прабіў варожую машыну, знізіць хуткасць яе руху і "
+"перанабівання."
+
+msgid "frozen_shot_portal/name"
+msgstr "Замарозка"
+
+msgid "guided_missile/descr"
+msgstr ""
+"Выпускае снарад, які пачне рухацца ў кірунку, які вы яму задасце. Пры "
+"траплянні ў варожую машыну прычыняе фіксаваныя пашкоджанні."
+
+msgid "guided_missile/name"
+msgstr "Шаравая маланка"
+
+msgid "laugh_shot_portal/descr"
+msgstr ""
+"Наступны стрэл, які прабіў варожую машыну, зробіць яе на час практычна "
+"некіраванай."
+
+msgid "laugh_shot_portal/name"
+msgstr "Памылка коду"
+
+msgid "minefield_portal/descr"
+msgstr ""
+"З'яўляецца ў пазначанай зоне, патрапіўшы ў якую, варожая машына атрымлівае "
+"пашкоджанні, а яе тракавыя пасы збіваюцца. Міннае поле не пашкоджвае тэхніку"
+" хаўруснікаў."
+
+msgid "minefield_portal/longDescr"
+msgstr "?empty?"
+
+msgid "minefield_portal/name"
+msgstr "Міннае поле"
+
+msgid "minefield_portal/shortDescr"
+msgstr "?empty?"
+
+msgid "reload_aura_portal/descr"
+msgstr ""
+"Стварае зону, у якой уся тэхніка зможа на працягу пэўнага часу перанабівацца"
+" хутчэй."
+
+msgid "reload_aura_portal/name"
+msgstr "Агнявы рубеж"
+
+msgid "sentry_gun/descr"
+msgstr ""
+"Размясціўшы статычную турэль, якая часова імітуе сапраўдную машыну, вы "
+"зможаце атакаваць ёй ворагаў. Турэль мае абмежаваны запас трываласці і можна"
+" быць знішчана."
+
+msgid "sentry_gun/name"
+msgstr "Турэль"
+
+msgid "shield_portal/descr"
+msgstr ""
+"Робіць вашу машыну часова няўразлівай да аглушэння і пашкоджанняў ад варожых"
+" снарадаў."
+
+msgid "shield_portal/name"
+msgstr "Ахоўны бар'ер"
+
+msgid "trap_portal/descr"
+msgstr "Стварае магутнае поле, якое зацягвае ў сябе варожыя машыны."
+
+msgid "trap_portal/name"
+msgstr "Магніт"
+
+msgid "vehicle_change_shot/descr"
+msgstr ""
+"Дазваляе ўсяліцца ў варожую машыну і ў патрэбны момант выклікаць на яе "
+"агонь."
+
+msgid "vehicle_change_shot/name"
+msgstr "Перахоп"

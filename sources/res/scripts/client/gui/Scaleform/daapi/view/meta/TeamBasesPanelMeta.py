@@ -2,9 +2,9 @@ from gui.Scaleform.framework.entities.BaseDAAPIComponent import BaseDAAPICompone
 
 class TeamBasesPanelMeta(BaseDAAPIComponent):
 
-    def as_addS(self, barId, sortWeight, colorType, title, points, captureTime, vehiclesCount):
+    def as_addS(self, barId, sortWeight, colorType, title, points, captureTime, vehiclesCount, isMinPreset=False):
         if self._isDAAPIInited():
-            return self.flashObject.as_add(barId, sortWeight, colorType, title, points, captureTime, vehiclesCount)
+            return self.flashObject.as_add(barId, sortWeight, colorType, title, points, captureTime, vehiclesCount, isMinPreset)
 
     def as_removeS(self, id):
         if self._isDAAPIInited():

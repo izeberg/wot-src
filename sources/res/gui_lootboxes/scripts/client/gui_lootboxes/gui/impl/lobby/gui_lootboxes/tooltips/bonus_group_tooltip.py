@@ -44,7 +44,9 @@ class BonusGroupTooltip(ViewImpl):
         bonusRowsModel = model.getBonusRows()
         packer = getLootBoxesBonusPacker()
         if first(self.__bonuses).getName() == VEHICLES_BONUS_NAME:
-            premiumVehicles, rentedVehicles = self.__splitVehicleGroup(splitBonuses(self.__bonuses))
+            premiumVehicles, rentedVehicles, statTrackVehicles = self.__splitVehicleGroup(splitBonuses(self.__bonuses))
+            if statTrackVehicles:
+                bonusRowsModel.addViewModel(self.__createBonusRow(statTrackVehicles, packer))
             if premiumVehicles:
                 bonusRowsModel.addViewModel(self.__createBonusRow(premiumVehicles, packer))
             if rentedVehicles:
@@ -64,12 +66,15 @@ class BonusGroupTooltip(ViewImpl):
     def __splitVehicleGroup(self, bonuses):
         premiumVehicles = []
         rentedVehicles = []
+        statTrackVehicles = []
         for b in bonuses:
             bonusType = detectBonusType((b,))
             if bonusType == BonusType.VEHICLE:
                 premiumVehicles.append(b)
             elif bonusType == BonusType.RENTEDVEHICLE:
                 rentedVehicles.append(b)
+            elif bonusType == BonusType.STATTRACKVEHICLE:
+                statTrackVehicles.append(b)
 
         return (
-         premiumVehicles, rentedVehicles)
+         premiumVehicles, rentedVehicles, statTrackVehicles)

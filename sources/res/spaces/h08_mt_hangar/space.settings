@@ -18,6 +18,7 @@
 	</farPlane>
 	<chunkSize>100.000000</chunkSize>
 	<DecalsInfo>
+		<VisualDecals>false</VisualDecals>
 		<PBSDecals>true</PBSDecals>
 		<scene>
 			<anisotropy>4</anisotropy>

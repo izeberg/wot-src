@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB139_Vulcan/normal/lod3/Hull</parent>
+	<tank>true</tank>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/british/GB139_Vulcan/normal/lod2/Hull</nodefullVisual>
+	<visibilityBox>
+		<min>-1.471663 -0.567371 -3.506706</min>
+		<max>1.471663 1.125058 3.571032</max>
+	</visibilityBox>
+</root>

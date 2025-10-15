@@ -32,13 +32,6 @@ msgstr "Ранговые бои начнутся %(date)s"
 msgid "event/paused"
 msgstr "Ранговые бои временно недоступны"
 
-msgid "event/wt/collection"
-msgstr ""
-"Прогрессия: %(whiteSpanish_Open)s%(current)d%(whiteSpanish_Close)s/%(total)d"
-
-msgid "event/wt/tickets"
-msgstr "Ключи:"
-
 msgid "hint/showProgression"
 msgstr "ПРОСМОТР В РЕЖИМЕ ПРОГРЕССИИ"
 
@@ -263,7 +256,7 @@ msgid "mode/versusAI/battlePassTooltip/header"
 msgstr "Очки Боевого пропуска"
 
 msgid "mode/versusAI/condition"
-msgstr "12x12 %(parSecondary_open)sI%(parSecondary_close)s I-X&nbsp;уровни"
+msgstr "12x12 %(parSecondary_open)sI%(parSecondary_close)s I-XI&nbsp;уровни"
 
 msgid "mode/versusAI/description"
 msgstr "Бои против ИИ."

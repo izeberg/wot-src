@@ -505,52 +505,6 @@
 		</track>
 	</sequenceObject>
 	<sequenceObject>
-		<name>Sound P-40B</name>
-		<type>sound</type>
-		<track>
-			<name>attach</name>
-			<type>attach</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>24.300001</duration>
-				<value>P-40B|</value>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>0.000000</startTime>
-				<duration>24.300001</duration>
-				<sequenceSound>amb_map_121_lost_paradise_plane_il2</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>24.300001</startTime>
-				<duration>3.745646</duration>
-				<sequenceSound>amb_map_121_lost_paradise_water_explosion</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-		<track>
-			<name>Sound</name>
-			<type>sound</type>
-			<frame>
-				<startTime>21.533335</startTime>
-				<duration>2.766666</duration>
-				<sequenceSound>amb_map_121_lost_paradise_crash_loop</sequenceSound>
-				<type>play_till_end</type>
-				<fade>0.000000</fade>
-			</frame>
-		</track>
-	</sequenceObject>
-	<sequenceObject>
 		<name>EffSfx_Flakvierling38_fire_01</name>
 		<type>model</type>
 		<resource>content/Environment/env_null_model/null_model.model</resource>

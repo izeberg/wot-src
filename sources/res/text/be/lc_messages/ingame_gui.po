@@ -742,9 +742,6 @@ msgstr "Цэль абаронена"
 msgid "efficiencyRibbons/enemySectorCaptured"
 msgstr "Зона захоплена"
 
-msgid "efficiencyRibbons/healthAdded"
-msgstr "Машына адрамантавана"
-
 msgid "efficiencyRibbons/kill"
 msgstr "Знішчыў"
 
@@ -804,9 +801,6 @@ msgstr "Машына пакінута"
 
 msgid "efficiencyRibbons/worldCollision"
 msgstr "Пашкоджанні пры падзенні"
-
-msgid "efficiencyRibbons/wtReceivedCircuitOverload"
-msgstr "Пашкоджанні электрычнасцю"
 
 msgid "epic_players_panel/state/hidden/body"
 msgstr "Схаваць панэлі камандаў."
@@ -1577,15 +1571,6 @@ msgstr "База%s супраціўніка захоплена!"
 msgid "player_messages/enemy_team_name"
 msgstr "Праціўнік"
 
-msgid "player_messages/equipment/wtEvent/healthAtFullHP"
-msgstr "[%(name)s] Рамонт не патрэбны: пашкоджанняў няма."
-
-msgid "player_messages/equipment/wtEvent/hunterAbilitiesDisabled"
-msgstr "Недаступна: машына абясточана"
-
-msgid "player_messages/equipment/wtEvent/noActiveShieldOnBoss"
-msgstr "Здольнасць недаступная без актыўнага шчыта."
-
 msgid "player_messages/poi_equipment_used_by_ally"
 msgstr "Хаўруснік %(name)s прымяніў тактычную звычку «%(equipment)s»"
 
@@ -1997,6 +1982,15 @@ msgstr "Дырыжабль"
 
 msgid "prebattlemarker/prebattlemarker_51"
 msgstr "Склады"
+
+msgid "prebattlemarker/prebattlemarker_52"
+msgstr "Верхні рубеж"
+
+msgid "prebattlemarker/prebattlemarker_53"
+msgstr "Ніжні рубеж"
+
+msgid "prebattlemarker/prebattlemarker_54"
+msgstr "Сярэдні рубеж"
 
 msgid "prebattlemarker/prebattlemarker_6"
 msgstr "Бераг"
@@ -3249,15 +3243,3 @@ msgstr "Тактычная звычка «%(equipment)s» выкарыстана
 
 msgid "warning_zone/indicator"
 msgstr "Асцярожна! Вы побач з небяспечнай зонай."
-
-msgid "wt_vehicle_messages/DECREASE_PLASMA_COUNT"
-msgstr "Зарад плазмы страчаны."
-
-msgid "wt_vehicle_messages/INCREASE_PLASMA_COUNT"
-msgstr "Зарад плазмы атрыманы"
-
-msgid "wt_vehicle_messages/STUN_AREA_APPLIED"
-msgstr "Машына абясточана здольнасцю Вафэнтрагера «Электрамагнітная сетка»!"
-
-msgid "wt_vehicle_messages/STUN_AREA_STOPPED"
-msgstr "Напружанне ў машыне адноўлена."

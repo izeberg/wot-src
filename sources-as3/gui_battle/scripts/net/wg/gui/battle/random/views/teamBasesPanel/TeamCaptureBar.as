@@ -198,7 +198,7 @@ package net.wg.gui.battle.random.views.teamBasesPanel
       
       private function showReset(param1:Number, param2:Number) : void
       {
-         var _loc3_:Number = this.progressBar.x + param1 * POINTS_2_BAR_RATIO * this.progressBar.getBarWidth();
+         var _loc3_:Number = this.progressBar.x + param1 * POINTS_2_BAR_RATIO * this.progressBar.barColor.width;
          var _loc4_:Number = param2 * POINTS_2_BAR_RATIO;
          if(this.progressBarReset.isAnimating && this.progressBarReset.scaleX + _loc4_ <= 1)
          {

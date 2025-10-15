@@ -411,7 +411,7 @@ class Shell(BasicItem):
                  'stun', 'effectsIndex', 'tags', 'secondaryAttackReason', 'useAltDamageRandomization',
                  'dynamicEffectsIndexes', 'hitDeviceChanceMultiplier', 'hitCrewChanceMultiplier',
                  'maxDistanceInsideVehicle', 'damagedDevicesLimit', 'engineFireFactor',
-                 'distanceDmg', 'skipSelfDamage')
+                 'distanceDmg', 'distanceFactor', 'ammoWeight')
 
     def __init__(self, typeID, componentID, componentName, compactDescr):
         super(Shell, self).__init__(typeID, componentID, componentName, compactDescr)
@@ -425,7 +425,6 @@ class Shell(BasicItem):
         self.type = None
         self.effectsIndex = component_constants.ZERO_INT
         self.dynamicEffectsIndexes = component_constants.EMPTY_TUPLE
-        self.skipSelfDamage = False
         self.isGold = False
         self.icon = None
         self.iconName = None
@@ -437,6 +436,8 @@ class Shell(BasicItem):
         self.damagedDevicesLimit = None
         self.engineFireFactor = None
         self.distanceDmg = None
+        self.distanceFactor = None
+        self.ammoWeight = component_constants.ZERO_INT
         return
 
     def __repr__(self):

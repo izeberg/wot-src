@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-2.013210 -0.978073 -3.578885</min>
+		<max>1.962410 0.567821 3.205458</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<parent>vehicles/british/GB107_Cavalier_H/crash/lod1/Hull_02</parent>
+	<extent>32.000000</extent>
+	<nodefullVisual>vehicles/british/GB107_Cavalier_H/crash/lod0/Hull_02</nodefullVisual>
+</root>

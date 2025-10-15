@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.863077 -0.803572 -4.785983</min>
+		<max>1.861727 2.538327 4.601815</max>
+	</visibilityBox>
+	<parent>vehicles/german/G181_StuG_Maus_17cm/normal/lod3/Hull</parent>
+	<extent>96.000000</extent>
+	<nodefullVisual>vehicles/german/G181_StuG_Maus_17cm/normal/lod2/Hull</nodefullVisual>
+</root>

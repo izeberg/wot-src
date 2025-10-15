@@ -16,7 +16,7 @@ package net.wg.infrastructure.managers.impl.cursor.base
       
       private static const SPRITE_TO_DETACH_IS_NULL:String = "Sprite to detach " + Errors.CANT_NULL;
       
-      private static const CPP_SET_CURSOR_METHOD_NAME:String = "WG.setCursor";
+      private static const CPP_SET_CURSOR_METHOD_NAME:String = "setCursor";
        
       
       private var _attachedSprite:Sprite = null;
