@@ -317,12 +317,9 @@ class TreePresenter(SubModelPresenter, IPresenterLocationController):
         progression = self.__vehicle.postProgression
         freeXP = self.__itemsCache.items.stats.freeXP
         eliteXP = getEliteExpirience(exclude=(self.__vehicle.intCD,))
-        maxXp = calculateMaxPossibleFreeXp(eliteXP, validateGold=False)
+        exchangeableEliteXp = calculateMaxPossibleFreeXp(eliteXP, validateGold=False)
         researchCost = sum([ progression.getStep(nodeID).getPrice().xp for nodeID in self.__selectedNodeIDs ])
-        sumXp = self.__vehicle.xp + freeXP + eliteXP
-        if sumXp >= researchCost:
-            return researchCost > maxXp + freeXP
-        return True
+        return researchCost > self.__vehicle.xp + exchangeableEliteXp + freeXP
 
     def __getResearchState(self):
         _, reason = self.__vehicle.postProgressionAvailability()
