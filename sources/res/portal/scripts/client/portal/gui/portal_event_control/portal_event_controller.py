@@ -423,17 +423,17 @@ class PortalEventController(IPortalEventController, PerformanceAnalyzerMixin, No
         self.__timerUpdate()
 
     def __timerUpdate(self):
-        isPortalActive = self.getCurrentSeason() is not None
+        isPortalActive = self.isAvailable()
         if isPortalActive:
             if not isPortalStartedNotificationViewed():
                 SystemMessages.pushMessage(text=backport.text(R.strings.portal_messenger.serviceChannelMessages.eventState.enabled.body()), type=SystemMessages.SM_TYPE.PortalEventEnabled, priority=NotificationPriorityLevel.MEDIUM)
                 setPortalStartedNotificationViewed(True)
-        elif not isPortalFinishedNotificationViewed():
-            SystemMessages.pushMessage(text=backport.text(R.strings.portal_messenger.serviceChannelMessages.eventState.disabled.body()), type=SystemMessages.SM_TYPE.PortalEventDisabled, priority=NotificationPriorityLevel.MEDIUM)
-            setPortalFinishedNotificationViewed(True)
+        elif isPortalStartedNotificationViewed():
+            if not isPortalFinishedNotificationViewed():
+                SystemMessages.pushMessage(text=backport.text(R.strings.portal_messenger.serviceChannelMessages.eventState.disabled.body()), type=SystemMessages.SM_TYPE.PortalEventDisabled, priority=NotificationPriorityLevel.MEDIUM)
+                setPortalFinishedNotificationViewed(True)
         status, _, _ = self.getPrimeTimeStatus()
         self.onPrimeTimeStatusUpdated(status)
-        return
 
     def __onCheckSceneChange(self):
         if self.isPortalMode():
