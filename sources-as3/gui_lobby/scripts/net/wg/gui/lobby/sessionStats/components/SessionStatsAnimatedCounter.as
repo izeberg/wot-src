@@ -16,8 +16,6 @@ package net.wg.gui.lobby.sessionStats.components
       
       public var number_4:SessionStatsAnimatedNumber = null;
       
-      public var number_5:SessionStatsAnimatedNumber = null;
-      
       private var numbers:Vector.<SessionStatsAnimatedNumber> = null;
       
       private var currentNumberV:Vector.<int>;
@@ -50,7 +48,6 @@ package net.wg.gui.lobby.sessionStats.components
          this.numbers.push(this.number_2);
          this.numbers.push(this.number_3);
          this.numbers.push(this.number_4);
-         this.numbers.push(this.number_5);
       }
       
       public function goToNumber(param1:int) : void
@@ -68,9 +65,8 @@ package net.wg.gui.lobby.sessionStats.components
       private function animateToTarget() : void
       {
          var _loc1_:int = 0;
-         var _loc3_:int = 0;
          var _loc2_:int = this.numbers.length;
-         _loc3_ = this.targetNumberV.length;
+         var _loc3_:int = this.targetNumberV.length;
          var _loc4_:SessionStatsAnimatedNumber = null;
          var _loc5_:Boolean = _loc3_ != this.currentNumberV.length;
          _loc1_ = 0;
@@ -102,8 +98,9 @@ package net.wg.gui.lobby.sessionStats.components
       
       private function applyCurrentNumber() : void
       {
+         var _loc1_:int = 0;
          var _loc4_:int = 0;
-         var _loc1_:int = this.numbers.length;
+         _loc1_ = this.numbers.length;
          var _loc2_:int = this.currentNumberV.length;
          var _loc3_:SessionStatsAnimatedNumber = null;
          _loc4_ = 0;
@@ -135,8 +132,6 @@ package net.wg.gui.lobby.sessionStats.components
          this.number_3 = null;
          this.number_4.dispose();
          this.number_4 = null;
-         this.number_5.dispose();
-         this.number_5 = null;
          super.onDispose();
       }
    }
