@@ -1010,4 +1010,3 @@ __package__ = None
 def findParentSlot(*args, **kwargs): pass
 def findRootSlot(*args, **kwargs): pass
 def findSlot(*args, **kwargs): pass
-def setSpaceItemsVisibilityMask(*args, **kwargs): pass
