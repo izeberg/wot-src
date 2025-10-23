@@ -162,7 +162,7 @@
 		</exhaust>
 		<turretPositions>
 			<turret>
-				0.413157 1.24397 2.33843
+				0 1.24397 2.33843
 				<!--BW_String-->
 			</turret>
 		</turretPositions>
@@ -3847,7 +3847,10 @@
 				<collisionModelServer>vehicles/german/G176_Jagdpanzer_E90/collision/Turret_01.model</collisionModelServer>
 				<collisionModelClient>vehicles/german/G176_Jagdpanzer_E90/collision_client/Turret_01.model</collisionModelClient>
 			</hitTester>
-			<gunPosition>-0.411627 -0.039661 -0.547968</gunPosition>
+			<gunPosition>
+				0.00153 -0.039661 -0.547968
+				<!--BW_String-->
+			</gunPosition>
 			<customization>
 				<customizableVehicleAreas>
 					<paint/>
@@ -3856,7 +3859,7 @@
 			</customization>
 			<wwturretRotatorSoundManual>tur_man_trav_06</wwturretRotatorSoundManual>
 			<physicsShape>
-				1.98 0.004 1.959 0 1.357 0 0.5 0.5 0.5 1 0 0.5 0.6 0.296 1
+				1 0 2 0 1.203 0 0.5 0.1 0.5 0.5 0.053 0.5 0 0.495 0.5
 				<!--BW_String-->
 			</physicsShape>
 			<camouflage>
