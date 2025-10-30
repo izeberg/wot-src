@@ -3935,7 +3935,7 @@
 					<!--BW_String-->
 				</repairCost>
 			</turretRotatorHealth>
-			<circularVisionRadius>400</circularVisionRadius>
+			<circularVisionRadius>380</circularVisionRadius>
 			<surveyingDeviceHealth>
 				<maxHealth>120</maxHealth>
 				<maxRegenHealth>60</maxRegenHealth>
@@ -3973,7 +3973,7 @@
 						0.34
 						<!--BW_String-->
 					</shotDispersionRadius>
-					<reloadTime>27</reloadTime>
+					<reloadTime>29</reloadTime>
 					<clip>
 						<count>3</count>
 						<rate>
