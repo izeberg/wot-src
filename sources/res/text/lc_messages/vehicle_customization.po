@@ -481,6 +481,29 @@ msgstr "Test Subject 004—Whispering Reaper"
 msgid "attachment/test/testAttachment5"
 msgstr "Test Subject 005—Eyes of the Void"
 
+msgid "attachment/the_walking_dead"
+msgstr "The Walking Dead"
+
+msgid "attachment/the_walking_dead/Cus_136_BP18_Loudspeaker"
+msgstr "Walker Bait System"
+
+msgid "attachment/the_walking_dead/Cus_137_BP18_Machinegun"
+msgstr "Saviors' Machine Gun"
+
+msgid "attachment/the_walking_dead/Cus_138_BP18_Locker"
+msgstr "Walker Containment Locker"
+
+msgid "attachment/the_walking_dead/Cus_138_BP18_Locker/description"
+msgstr ""
+"Don't open. Dead inside. But when your engine dies and you find yourself "
+"surrounded, what lurks beneath may just be the thing that saves you."
+
+msgid "attachment/the_walking_dead/Cus_139_BP18_SaviorsGear"
+msgstr "Tribute Supplies"
+
+msgid "attachment/the_walking_dead/Cus_140_BP18_SurvivalsGear"
+msgstr "Survival Gear"
+
 msgid "attachment/thunderstrike"
 msgstr "Thunderstrike"
 
@@ -3066,6 +3089,15 @@ msgstr "?empty?"
 
 msgid "camouflage/bp2025_s17_4/label"
 msgstr "Peacekeeper"
+
+msgid "camouflage/bp2025_s18_1/label"
+msgstr "What Comes After"
+
+msgid "camouflage/bp2025_s18_2/label"
+msgstr "Days Gone Bye"
+
+msgid "camouflage/bp2025_s18_3/label"
+msgstr "Welcome to the New World"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -7860,6 +7892,18 @@ msgstr "?empty?"
 
 msgid "camouflage/watcher_wakes/label"
 msgstr "The Watcher Wakes"
+
+msgid "camouflage/wci2025_1/label"
+msgstr "Gilded Shadow"
+
+msgid "camouflage/wci2025_progressive_st1/label"
+msgstr "Orders on the Board"
+
+msgid "camouflage/wci2025_progressive_st2/label"
+msgstr "General's Command"
+
+msgid "camouflage/wci2025_progressive_st3/label"
+msgstr "Stroke of Victory"
 
 msgid "camouflage/wci_2024_1/description"
 msgstr "?empty?"
@@ -16106,6 +16150,18 @@ msgstr "Vitals: Full"
 msgid "inscription/special/special_837"
 msgstr "Wolfenstein"
 
+msgid "inscription/special/special_847"
+msgstr "Don't Open Dead Inside"
+
+msgid "inscription/special/special_848"
+msgstr "Lucille Is Thirsty"
+
+msgid "inscription/special/special_849"
+msgstr "You Got No Guts"
+
+msgid "inscription/special/special_850"
+msgstr "Eeny, Meeny, Miny, Moe"
+
 msgid "inscription/special/special_90"
 msgstr "Grand Finals 2017, Moscow"
 
@@ -19754,11 +19810,35 @@ msgstr "Balance Improvements"
 msgid "projection_decals/special/projection_decal_100/description"
 msgstr "The description of this decal is unbalanced and needs to be improved."
 
+msgid "projection_decals/special/projection_decal_1000"
+msgstr "Graceful Visage"
+
+msgid "projection_decals/special/projection_decal_1001"
+msgstr "Strategist's Mark"
+
+msgid "projection_decals/special/projection_decal_1002"
+msgstr "WCI 2025"
+
+msgid "projection_decals/special/projection_decal_1008"
+msgstr "Fight the Dead"
+
+msgid "projection_decals/special/projection_decal_1009"
+msgstr "Lucille"
+
 msgid "projection_decals/special/projection_decal_101"
 msgstr "Wings"
 
 msgid "projection_decals/special/projection_decal_101/description"
 msgstr "A unique decal awarded during the special event."
+
+msgid "projection_decals/special/projection_decal_1010"
+msgstr "Negan"
+
+msgid "projection_decals/special/projection_decal_1011"
+msgstr "Survivors"
+
+msgid "projection_decals/special/projection_decal_1012"
+msgstr "We Fight for Our Future"
 
 msgid "projection_decals/special/projection_decal_102"
 msgstr "Playing With Fire"
@@ -25819,6 +25899,21 @@ msgstr ""
 "Tuh-dun-dun-tuhdun.\n"
 "Tuh-dun-dun-tuhdun."
 
+msgid "special_style/A166_H_3_WD_3Dst"
+msgstr "No Sanctuary"
+
+msgid "special_style/A166_H_3_WD_3Dst_desc/long"
+msgstr ""
+"\"Doesn't seem all that long ago one of us found himself stuck inside one of"
+" these things, surrounded by walkers and ready to meet his maker. But "
+"someone up there must like us, 'cause he managed to make it out still "
+"breathing. Since then, our crew of survivors has salvaged this tank and made"
+" it into a true survival machine. Big enough to haul our weapons and "
+"supplies, tough enough to withstand an onslaught. This sure ain't the world "
+"we wanted, but it's all we know now. We do what we need to do—and then we "
+"get to live. But no matter what, I know we'll be okay. Because this is how "
+"we survive.\""
+
 msgid "special_style/A167_TS_6_G90_3Dst"
 msgstr "Duke"
 
@@ -26253,6 +26348,20 @@ msgid "special_style/Ch58_111_Vz51_PLA_3DSt_desc/long"
 msgstr ""
 "\"Father was rarely at home, but he never missed special occasions or my and Yongmei's birthdays. He wasn't really interested in anything and spent his rare days off in his study or playing Mahjong in the teahouse. I think fortune often favored him. The last time I ever saw him was in June 1966. Father came early in the morning. My sister and I were having breakfast when he approached us, smiled, and presented me with a photo of a tank I'd never seen, even though by then I was very interested in them. Mother said he was sent off on another business trip that same day.\n"
 "...I saw him! It was my father, no doubt about it! He appeared out of nowhere, emerged from smoke and flames. He shielded us from machine gun fire, flattened the enemy pillbox, and disappeared as quickly as he had appeared. It all happened so fast. My guys didn't even realize what saved them. But I'd been looking at that photo so much...\""
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst"
+msgstr "DZT-159 Dragon's Soul"
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst_desc"
+msgstr "Glide on golden wings with this prestigious style."
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst_desc/long"
+msgstr ""
+"The arena burns. The crowd roars. The golden dragon waits.\n"
+"\n"
+"For centuries, this ancient guardian has watched countless battles unfold. It has seen many warriors rise to glory—and far more fade into obscurity. Weary after so many years unmatched in power, it seeks true champions—warriors whose strength and skill rival its own.\n"
+"\n"
+"When the smoke clears and the surviving heroes catch their breath among the fading embers, the dragon's gaze settles on a chosen few: those destined to inspire legends yet to come."
 
 msgid "special_style/Ch62_BZ_75_M"
 msgstr "Divine Valor"
@@ -29728,6 +29837,49 @@ msgstr ""
 "thought—until they saw her in action. Conditions worsened and tensions "
 "frayed, but Alessia's focus never wavered. Whatever she'd been contemplating"
 " in the forest, it was damn well working."
+
+msgid "special_style/bp2025_s18_1"
+msgstr "What Comes After"
+
+msgid "special_style/bp2025_s18_1_desc"
+msgstr "An all-season style for what comes after the dead start walking."
+
+msgid "special_style/bp2025_s18_1_desc/long"
+msgstr ""
+"\"I used to beg for quiet. Couldn't stand all that city racket—folks running"
+" their mouths like they had something worth saying, music blasting, engines "
+"screaming down the street... It's quiet now. All you hear are the cicadas "
+"and the crows. That is, if you're lucky, anyway. Otherwise, you hear the "
+"walkers—their hungry growls. Yeah... I used to hate all that noise. Now I "
+"miss it.\""
+
+msgid "special_style/bp2025_s18_2"
+msgstr "Days Gone Bye"
+
+msgid "special_style/bp2025_s18_2_desc"
+msgstr "An ominous all-season style. Don't get too close to this one..."
+
+msgid "special_style/bp2025_s18_2_desc/long"
+msgstr ""
+"\"Feels like a lifetime ago, waking up in that hospital bed. No doctors, no "
+"nurses, just a whole lot of blood and smashed up gear, lights flickering. "
+"The place stank of rot. I came across a pair of chained-up doors: DON'T OPEN"
+" DEAD INSIDE was painted across 'em. Wasn't ‘til later I truly understood "
+"what that meant. Whoever was in that room... they'd already died once. That "
+"should've been enough.\""
+
+msgid "special_style/bp2025_s18_3"
+msgstr "Welcome to the New World"
+
+msgid "special_style/bp2025_s18_3_desc"
+msgstr "Face a grisly new reality in this all-season style."
+
+msgid "special_style/bp2025_s18_3_desc/long"
+msgstr ""
+"\"Thought you were gonna have it easy, huh? Good job, nice house, fancy "
+"neighborhood. That's all gone now. The dead make every day a struggle, and "
+"the living are the ones you really gotta be afraid of. Every day's a test, "
+"and most folks won’t make it. Welcome to the new world.\""
 
 msgid "special_style/bp8_auction_1"
 msgstr "Emperor's Wrath"
@@ -35639,6 +35791,42 @@ msgstr ""
 "from a thousand-year nap—and really didn't like what they saw. The thing "
 "didn't speak. Just stared. Like it was planning to trade up: your tank for "
 "its tomb. Nobody's volunteered for desert patrol since."
+
+msgid "special_style/wci2025_1"
+msgstr "Gilded Shadow"
+
+msgid "special_style/wci2025_1_desc"
+msgstr ""
+"A thematic 2D style to commemorate the World of Tanks Championship "
+"International tournament 2025 in Suzhou, China."
+
+msgid "special_style/wci2025_1_desc/long"
+msgstr ""
+"With a sharp glimmer, your gilded steel catches the light. Only for an "
+"instant, but that is all you need. The moment your opponent aims their "
+"turret toward the golden flash, it has already vanished. You have coiled "
+"back into the shadows, poised to ambush your prey. A hollow thud echoes as "
+"your shell loads into the chamber. The enemy's treads churn against the dirt"
+" as their optics scramble, recalibrating for a ghost. But they're too late. "
+"Like an armored assassin, you strike unseen."
+
+msgid "special_style/wci2025_progressive"
+msgstr "Orders on the Board"
+
+msgid "special_style/wci2025_progressive_desc"
+msgstr ""
+"A thematic progressive 2D style to commemorate the World of Tanks "
+"Championship International tournament 2025 in Suzhou, China."
+
+msgid "special_style/wci2025_progressive_desc/long"
+msgstr ""
+"Epic battlefield showdowns may seem a world away from the cerebral "
+"discipline of xiangqi, but commanding a tank demands a similar kind of "
+"methodical precision. You survey the terrain like a game board, tracking "
+"enemy movements to best position your vehicle. Like the grandmaster "
+"maneuvering a chariot to bait the horse or shield the general, your "
+"decisions shape the course of battle as much as the firepower you wield. "
+"This style reflects that mastery, evolving through three distinct tiers."
 
 msgid "special_style/wci_2024_1"
 msgstr "Perseverance"

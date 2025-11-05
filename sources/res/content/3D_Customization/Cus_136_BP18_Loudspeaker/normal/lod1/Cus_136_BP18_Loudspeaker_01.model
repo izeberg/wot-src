@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_136_BP18_Loudspeaker/normal/lod2/Cus_136_BP18_Loudspeaker_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.220888 -0.200000 -0.092350</min>
+		<max>0.202209 0.596521 0.345101</max>
+	</visibilityBox>
+	<nodefullVisual>content/3D_Customization/Cus_136_BP18_Loudspeaker/normal/lod1/Cus_136_BP18_Loudspeaker_01</nodefullVisual>
+	<tank>true</tank>
+</root>

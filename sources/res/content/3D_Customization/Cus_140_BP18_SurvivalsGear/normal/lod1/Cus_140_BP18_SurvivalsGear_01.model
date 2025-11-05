@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_140_BP18_SurvivalsGear/normal/lod2/Cus_140_BP18_SurvivalsGear_01</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.542815 -0.001395 -0.855586</min>
+		<max>0.152288 0.517723 0.690456</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_140_BP18_SurvivalsGear/normal/lod1/Cus_140_BP18_SurvivalsGear_01</nodefullVisual>
+</root>

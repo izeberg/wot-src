@@ -931,6 +931,24 @@
 			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_mh.xml</alphabet>
 			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_mh_3.dds</texture>
 		</insignia>
+		<insignia>
+			<id>107</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_1.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_1.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_1_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>108</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_2.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_2.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_2_3.dds</texture>
+		</insignia>
+		<insignia>
+			<id>109</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_3.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_3.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_bp2025_s18_3_3.dds</texture>
+		</insignia>
 	</itemGroup>
 	<itemGroup>
 		<name>G177_E65_Zwilling_W25_3Dst</name>
@@ -944,6 +962,34 @@
 			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_g177.dds</atlas>
 			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_g177.xml</alphabet>
 			<texture>gui/maps/vehicles/decals/insignia/custom/gun_g177_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>A166_H_3_WD_3Dst</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>2</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>99</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/gun_a166.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/gun_a166.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/gun_a166_3.dds</texture>
+		</insignia>
+	</itemGroup>
+	<itemGroup>
+		<name>Ch61_DZT_159_WCI_3Dst</name>
+		<userString>#vehicle_customization:insignias/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>insignias 50g notInShop</priceGroup>
+		<tags>hiddenInUI</tags>
+		<insignia>
+			<id>106</id>
+			<atlas>gui/maps/vehicles/decals/insignia/custom/wci.dds</atlas>
+			<alphabet>gui/maps/vehicles/decals/insignia/custom/wci.xml</alphabet>
+			<texture>gui/maps/vehicles/decals/insignia/custom/wci_3.dds</texture>
 		</insignia>
 	</itemGroup>
 	<itemGroup>

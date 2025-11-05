@@ -1471,6 +1471,8 @@ package net.wg.data.constants.generated
       
       public static const ITALY_IT37_SERPENTE:String = "italy-It37_Serpente";
       
+      public static const ITALY_IT39_COCCODRILLO:String = "italy-It39_Coccodrillo";
+      
       public static const JAPAN_J01_NC27:String = "japan-J01_NC27";
       
       public static const JAPAN_J02_TE_KE:String = "japan-J02_Te_Ke";
