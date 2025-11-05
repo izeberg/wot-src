@@ -5843,5 +5843,105 @@
 				<_3310>tankmen_bp18_9.png</_3310>
 			</icons>
 		</tankmen_bp18_9>
+		<tankmen_bp18_10>
+			<groupID>328</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_10</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3314>#poland_crew:names/tankmen_bp18_10_n</_3314>
+			</firstNames>
+			<lastNames>
+				<_3314>#poland_crew:names/tankmen_bp18_10</_3314>
+			</lastNames>
+			<icons>
+				<_3314>tankmen_bp18_10.png</_3314>
+			</icons>
+		</tankmen_bp18_10>
+		<tankmen_bp18_11>
+			<groupID>329</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_11</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3315>#poland_crew:names/tankmen_bp18_11_n</_3315>
+			</firstNames>
+			<lastNames>
+				<_3315>#poland_crew:names/tankmen_bp18_11</_3315>
+			</lastNames>
+			<icons>
+				<_3315>tankmen_bp18_11.png</_3315>
+			</icons>
+		</tankmen_bp18_11>
+		<tankmen_bp18_12>
+			<groupID>330</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_12</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3316>#poland_crew:names/tankmen_bp18_12_n</_3316>
+			</firstNames>
+			<lastNames>
+				<_3316>#poland_crew:names/tankmen_bp18_12</_3316>
+			</lastNames>
+			<icons>
+				<_3316>tankmen_bp18_12.png</_3316>
+			</icons>
+		</tankmen_bp18_12>
+		<tankmen_bp18_13>
+			<groupID>331</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_13</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3317>#poland_crew:names/tankmen_bp18_13_n</_3317>
+			</firstNames>
+			<lastNames>
+				<_3317>#poland_crew:names/tankmen_bp18_13</_3317>
+			</lastNames>
+			<icons>
+				<_3317>tankmen_bp18_13.png</_3317>
+			</icons>
+		</tankmen_bp18_13>
+		<tankmen_bp18_14>
+			<groupID>332</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_14</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_3318>#poland_crew:names/tankmen_bp18_14_n</_3318>
+			</firstNames>
+			<lastNames>
+				<_3318>#poland_crew:names/tankmen_bp18_14</_3318>
+			</lastNames>
+			<icons>
+				<_3318>tankmen_bp18_14.png</_3318>
+			</icons>
+		</tankmen_bp18_14>
 	</premiumGroups>
 </root>

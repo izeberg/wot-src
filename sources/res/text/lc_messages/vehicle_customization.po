@@ -440,6 +440,27 @@ msgstr "004号测试对象——低语收割者"
 msgid "attachment/test/testAttachment5"
 msgstr "005号测试对象——虚空之眼"
 
+msgid "attachment/the_walking_dead"
+msgstr "The Walking Dead"
+
+msgid "attachment/the_walking_dead/Cus_136_BP18_Loudspeaker"
+msgstr "噬皮者诱饵系统"
+
+msgid "attachment/the_walking_dead/Cus_137_BP18_Machinegun"
+msgstr "救世军机枪"
+
+msgid "attachment/the_walking_dead/Cus_138_BP18_Locker"
+msgstr "噬皮者隔离仓"
+
+msgid "attachment/the_walking_dead/Cus_138_BP18_Locker/description"
+msgstr "不要打开。内有噬皮者。但当您的发动机熄火，自己又被敌人包围时，里面关着的东西反而可能助您逃出生天。"
+
+msgid "attachment/the_walking_dead/Cus_139_BP18_SaviorsGear"
+msgstr "上供物资"
+
+msgid "attachment/the_walking_dead/Cus_140_BP18_SurvivalsGear"
+msgstr "求生装备"
+
 msgid "attachment/thunderstrike"
 msgstr "撼人心魄"
 
@@ -2835,6 +2856,15 @@ msgstr "?empty?"
 
 msgid "camouflage/bp2025_s17_4/label"
 msgstr "和平捍卫者"
+
+msgid "camouflage/bp2025_s18_1/label"
+msgstr "末日之后"
+
+msgid "camouflage/bp2025_s18_2/label"
+msgstr "时过境迁"
+
+msgid "camouflage/bp2025_s18_3/label"
+msgstr "欢迎来到新世界"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -7319,6 +7349,18 @@ msgstr "?empty?"
 
 msgid "camouflage/watcher_wakes/label"
 msgstr "觉醒之眼"
+
+msgid "camouflage/wci2025_1/label"
+msgstr "鎏金魅影"
+
+msgid "camouflage/wci2025_progressive_st1/label"
+msgstr "棋局点兵"
+
+msgid "camouflage/wci2025_progressive_st2/label"
+msgstr "将帅号令"
+
+msgid "camouflage/wci2025_progressive_st3/label"
+msgstr "制胜一击"
 
 msgid "camouflage/wci_2024_1/description"
 msgstr "?empty?"
@@ -15272,6 +15314,18 @@ msgstr "生命值充足"
 msgid "inscription/special/special_837"
 msgstr "Wolfenstein"
 
+msgid "inscription/special/special_847"
+msgstr "幸存者字迹"
+
+msgid "inscription/special/special_848"
+msgstr "露西尔很渴"
+
+msgid "inscription/special/special_849"
+msgstr "你没那个胆量"
+
+msgid "inscription/special/special_850"
+msgstr "点兵点将"
+
 msgid "inscription/special/special_90"
 msgstr "2017年总决赛，莫斯科"
 
@@ -18552,11 +18606,35 @@ msgstr "平衡优化"
 msgid "projection_decals/special/projection_decal_100/description"
 msgstr "此贴花的说明不平衡，需要优化。"
 
+msgid "projection_decals/special/projection_decal_1000"
+msgstr "芳华韵姿"
+
+msgid "projection_decals/special/projection_decal_1001"
+msgstr "谋略印记"
+
+msgid "projection_decals/special/projection_decal_1002"
+msgstr "2025WCI"
+
+msgid "projection_decals/special/projection_decal_1008"
+msgstr "活下去"
+
+msgid "projection_decals/special/projection_decal_1009"
+msgstr "露西尔"
+
 msgid "projection_decals/special/projection_decal_101"
 msgstr "飞翼"
 
 msgid "projection_decals/special/projection_decal_101/description"
 msgstr "特别活动奖励的独特贴花。"
+
+msgid "projection_decals/special/projection_decal_1010"
+msgstr "尼根"
+
+msgid "projection_decals/special/projection_decal_1011"
+msgstr "末日幸存者"
+
+msgid "projection_decals/special/projection_decal_1012"
+msgstr "我们为我们的未来而战"
 
 msgid "projection_decals/special/projection_decal_102"
 msgstr "玩火上身"
@@ -24156,6 +24234,13 @@ msgstr ""
 "铛-铛-铛-铛铛。\n"
 "铛-铛-铛-铛铛。"
 
+msgid "special_style/A166_H_3_WD_3Dst"
+msgstr "没有避难所"
+
+msgid "special_style/A166_H_3_WD_3Dst_desc/long"
+msgstr ""
+"\"好像就在不久前，我们的某个伙伴被噬皮者困在这个大家伙里，命悬一线。可老天似乎还眷顾着我们，他居然活着逃了出来。后来，我们这些幸存者把这辆坦克拖了回来，将其改造成一辆真正的求生机器。里面的空间够大，足以运输我们的武器和补给；也很抗造，经得起折腾。世界的现状并不理想，但我们只能面对现实。我们做该做的事——然后活下去。不管发生什么，我都能挺过去。因为这就是我们的生存之道。\""
+
 msgid "special_style/A167_TS_6_G90_3Dst"
 msgstr "Duke"
 
@@ -24442,6 +24527,20 @@ msgid "special_style/Ch58_111_Vz51_PLA_3DSt_desc/long"
 msgstr ""
 "\"父亲虽然很少在家，但他从来没有缺席过家里重要的日子，也没错过我和永梅的生日。他并没有什么特殊爱好，即便迎来少有的假日，他除了窝在书房里就是去茶馆打麻将。想必他的手气不错。1966年6月份是我见到他最后一面的日子。父亲一大早就回来了。当时我和妹妹还在吃早饭，他笑容满面地递给我一张相片，相片里竟然是一辆我不认识的坦克，要知道我当时可是个坦克迷弟。母亲说他当天又要出差了。\n"
 "...我见到他了！那肯定是父亲！他从硝烟烈火之间凭空出现。为我们挡下了机枪的扫射，砸扁了敌人的地堡，然后在眨眼之间消失不见。一切发生得太快了。我的战友都没有意识到是什么救了他们。自那之后我经常会端详那张相片...\""
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst"
+msgstr "龙魂"
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst_desc"
+msgstr "应用这款威风凛凛的风格，如展金翼，叱咤战场。"
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst_desc/long"
+msgstr ""
+"竞技场烈焰沸腾，观众呼声震天，金龙整装待发。\n"
+"\n"
+"千百年来，这位古老守护者见证无数战起战落，多少英豪崭露锋芒，更多士卒湮没尘烟。久居巅峰孤寂求败，而今只待真正的勇士——唯有力技双绝的战士，方堪与之匹敌。\n"
+"\n"
+"当硝烟渐散，余烬中的幸存者喘息未定，龙瞳已然锁定天命之子: 唯此辈方能缔造新的战场传奇。"
 
 msgid "special_style/Ch62_BZ_75_M"
 msgstr "神威勇武"
@@ -26838,6 +26937,37 @@ msgstr "一款抽象的全地形风格，采用醒目的高对比度配色方案
 msgid "special_style/bp2025_s17_4_desc/long"
 msgstr ""
 "阿莱西亚淡然自若，近乎空灵的脾气，让许多竞争对手都始料未及。闲暇时，他们发现她在兵营后面的林中冥想，凝听鸟鸣——哪怕大雨将她浑身浇透。他们不知该如何评判，只觉得如此冷静超然的人，上了战场定会被生吞活剥。他们始终这么认为——直至看到她在战场上的表现。即使战况恶化、气氛紧张，阿莱西亚仍能保持专注，丝毫不受影响。无论她曾在林间参悟过什么，效果真是好极了。"
+
+msgid "special_style/bp2025_s18_1"
+msgstr "末日之后"
+
+msgid "special_style/bp2025_s18_1_desc"
+msgstr "一款全地形风格，描绘了末日降临后的情景。"
+
+msgid "special_style/bp2025_s18_1_desc/long"
+msgstr ""
+"\"我以前只想求个清静。受不了城市里的那些噪音——人们喋喋不休地说着那些没有意义的话题，扰民的音乐，街上发动机的轰鸣...现在一切都安静了。只能听到蝉鸣和乌鸦的叫声。当然，前提是您运气好。否则，您听到的可能就是噬皮者饥饿的低吼。是啊...我曾经讨厌噪音。但现在我却想念它了。\""
+
+msgid "special_style/bp2025_s18_2"
+msgstr "时过境迁"
+
+msgid "special_style/bp2025_s18_2_desc"
+msgstr "一款不祥的全地形风格。注意与它保持距离..."
+
+msgid "special_style/bp2025_s18_2_desc/long"
+msgstr ""
+"\"从那张医院病床上醒来，仿佛已经是很久以前的事了。没有医生，也没有护士，只有一地血迹和砸坏的医疗器材，灯光忽明忽暗。空气中弥漫着腐臭。我路过一扇用铁链锁住的门:"
+" 上面刷着\"不要打开，内有噬皮者\"。直到后来我才真正明白那是什么意思。房间里的人...早已与世长辞。但他的躯体却又动了起来。\""
+
+msgid "special_style/bp2025_s18_3"
+msgstr "欢迎来到新世界"
+
+msgid "special_style/bp2025_s18_3_desc"
+msgstr "一款全地形风格，见证残酷的新世界吧。"
+
+msgid "special_style/bp2025_s18_3_desc/long"
+msgstr ""
+"\"你不会认为还能正常生活吧？好工作、好房子、高档社区。现在这些全都没了。噬皮者每时每刻都在威胁着你的安危，并且其他幸存者对你的威胁有过之而无不及。每天都是一次考验，大多数人根本活不下去。欢迎来到新世界。\""
 
 msgid "special_style/bp8_auction_1"
 msgstr "帝皇怒火"
@@ -30942,6 +31072,26 @@ msgid "special_style/watcher_wakes_desc/long"
 msgstr ""
 "这本该是一次例行巡逻。靴子里灌满沙子，烈日灼烤着后背，无线电台里只有静电杂音。接着地面突然颤动。有什么东西从沙下蠕动而出，仿佛沙漠正试图咳出它的秘密。陈旧泛黄的绷带，干枯脆弱。而在其后…眼睛。几十只巨大、浑圆的橙色眼睛，如同刚结束千年长眠般猛然睁开——而且显然对眼前的一切感到不悦。那东西没有开口。只是凝视。像是在盘算一场交易:"
 " 用你们的坦克换它的陵墓。自那以后，再没人自愿参加沙漠巡逻了。"
+
+msgid "special_style/wci2025_1"
+msgstr "鎏金魅影"
+
+msgid "special_style/wci2025_1_desc"
+msgstr "一款主题2D风格，专为纪念2025年在中国苏州举办的《坦克世界》国际冠军赛(WCI)而设计。"
+
+msgid "special_style/wci2025_1_desc/long"
+msgstr ""
+"闪光一掠，鎏金装甲发出锐利光芒。虽转瞬即逝，陷阱却已布下。当敌人旋转炮塔企图瞄准，您早已消失无踪，再次潜入暗影，静候猎物。炮弹装填声低沉回荡。敌方履带搅动尘土，疯狂搜寻那道幻影。但一切已太迟——您如披甲的刺客，从阴影中发起关键一击。"
+
+msgid "special_style/wci2025_progressive"
+msgstr "棋局点兵"
+
+msgid "special_style/wci2025_progressive_desc"
+msgstr "一款主题2D风格，专为纪念2025年在中国苏州举办的《坦克世界》国际冠军赛(WCI)而设计。"
+
+msgid "special_style/wci2025_progressive_desc/long"
+msgstr ""
+"史诗般的战场对决看似与象棋的脑力竞技相距甚远，但指挥坦克需要同等的缜密精准。您如审视棋盘般勘察地形，追踪敌方动向以驾驶坦克占据最佳点位。恰似象棋大师调遣车马诱敌护帅，您的战术决策与火力运用同样决定战局走向。该风格通过3个独特等级的演变，完美诠释兵家之道。"
 
 msgid "special_style/wci_2024_1"
 msgstr "锲而不舍"

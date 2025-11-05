@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/american/A166_H_3/_skins/A166_H_3_WD_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.033970 -0.769639 -3.118720</min>
+		<max>1.079610 1.017890 6.241359</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A166_H_3/_skins/A166_H_3_WD_3Dst/normal/lod0/Gun_01</nodefullVisual>
+</root>

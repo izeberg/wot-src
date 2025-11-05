@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/american/A166_H_3/_skins/A166_H_3_WD_3Dst/crash/lod2/Gun_01</nodelessVisual>
+	<parent>vehicles/american/A166_H_3/_skins/A166_H_3_WD_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.992291 -0.780917 -2.741727</min>
+		<max>0.808988 0.858773 6.243994</max>
+	</visibilityBox>
+</root>

@@ -37,6 +37,9 @@ msgstr "105mm L/55炮"
 msgid "Cannone_da_105_Rh_V1"
 msgstr "105mm Rh V1炮"
 
+msgid "Cannone_da_127_OTO_Melara_veloce"
+msgstr "奥托·梅莱拉·韦洛切 127mm炮"
+
 msgid "Cannone_da_37_20"
 msgstr "37mm L/20炮"
 
@@ -252,6 +255,9 @@ msgstr "大地精魄"
 
 msgid "Chassis_It37_Serpente"
 msgstr "\"鞭蛇\""
+
+msgid "Chassis_It39_Coccodrillo"
+msgstr "\"战鳄\""
 
 msgid "Continental_AOI_1490_italy"
 msgstr "大陆 AOI-1490-I"
@@ -717,6 +723,23 @@ msgstr "\"鞭蛇\""
 msgid "It37_Serpente_short_special"
 msgstr "双管火炮系统，良好的机动性"
 
+msgid "It39_Coccodrillo"
+msgstr "\"战鳄\""
+
+msgid "It39_Coccodrillo_descr"
+msgstr ""
+"I系军方于1961年获得S系T-10M重型坦克的情报后，他们决定创造一辆可以与之抗衡的坦克。由于技术参数的准备有所推迟，该坦克的开发直到1965年才走上正轨。这辆坦克被称为\"战鳄\"，是一辆支援型中型坦克。1970年时，该计划已基本完成；但当时I系已启动\"豹\"I坦克的授权生产。相较于\"豹\"I，\"战鳄\"的生产成本更高并且机动性略逊一筹，最终导致I系停止了\"战鳄\"的开发计划。"
+
+msgid "It39_Coccodrillo_long_special"
+msgstr ""
+"\"战鳄\"是一辆I系X级中型坦克。该坦克具有奇特的装甲布局，炮塔和车体正面装甲均具有良好的倾斜角度。这辆坦克还拥有不俗的机动性，它的主要卖点则是其火炮。\"战鳄\"配备了127毫米的自动装填炮，使其可以对敌方坦克造成大量损伤。"
+
+msgid "It39_Coccodrillo_short"
+msgstr "\"战鳄\""
+
+msgid "It39_Coccodrillo_short_special"
+msgstr "不俗的装甲和机动性，配备自动装填炮"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -734,6 +757,9 @@ msgstr "MB 837 Ea"
 
 msgid "MB_838"
 msgstr "MB 838"
+
+msgid "MB_838_CaM_500A"
+msgstr "MB 838 CaM-500A"
 
 msgid "MTU_870"
 msgstr "MTU 870"
@@ -818,6 +844,9 @@ msgstr "R.F.C.R."
 
 msgid "SEM_24"
 msgstr "SEM-24"
+
+msgid "SEM_24C"
+msgstr "SEM-24C"
 
 msgid "SEM_25"
 msgstr "SEM-25"
@@ -989,6 +1018,9 @@ msgstr "大地精魄"
 
 msgid "Turret_1_It37_Serpente"
 msgstr "\"鞭蛇\""
+
+msgid "Turret_1_It39_Coccodrillo"
+msgstr "\"战鳄\""
 
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42改进型"
@@ -1278,17 +1310,26 @@ msgstr "奥托·梅莱拉 127mm炮"
 msgid "_127mm_a_e_127_51"
 msgstr "a.e. 127/51 Mk.115"
 
+msgid "_127mm_a_e_127_54_Mk_115"
+msgstr "a.e. 127/54 Mk.115"
+
 msgid "_127mm_a_e_127_58_Mark_116_CC1"
 msgstr "a.e. 127/58 Mk.116 (CC1)"
 
 msgid "_127mm_c_c_127_51"
 msgstr "c.c. 127/51 Mk.410"
 
+msgid "_127mm_c_c_127_54_Mk_410"
+msgstr "c.c. 127/54 Mk.410"
+
 msgid "_127mm_c_c_127_58_Mk_411_CC1"
 msgstr "c.c. 127/58 Mk.411 (CC1)"
 
 msgid "_127mm_c_p_127_51"
 msgstr "c.p. 127/51 Mk.315"
+
+msgid "_127mm_c_p_127_54_Mk_315"
+msgstr "c.p. 127/54 Mk.315"
 
 msgid "_130mm_AP_Mark_46"
 msgstr "c.p. 130/45 Mk.46"

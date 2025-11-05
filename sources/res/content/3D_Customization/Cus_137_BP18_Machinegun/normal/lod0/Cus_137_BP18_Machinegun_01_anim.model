@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<visibilityBox>
+		<min>-0.479179 -0.202013 -0.636118</min>
+		<max>0.126509 0.635606 1.041469</max>
+	</visibilityBox>
+	<parent>content/3D_Customization/Cus_137_BP18_Machinegun/normal/lod1/Cus_137_BP18_Machinegun_01_anim</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_137_BP18_Machinegun/normal/lod0/Cus_137_BP18_Machinegun_01_anim</nodefullVisual>
+</root>
