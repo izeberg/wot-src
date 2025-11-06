@@ -9186,6 +9186,51 @@
 			<userString>#vehicle_customization:special_style/bp_2025_mh</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>624</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_10.png</texture>
+			<color>112 102 83 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2025_s18_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>625</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_10.png</texture>
+			<color>40 44 50 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2025_s18_2</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>626</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_10.png</texture>
+			<color>61 62 63 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.25
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/bp2025_s18_3</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 		<usages>
 			<item>
 				<componentType>ALL</componentType>
@@ -10473,6 +10518,63 @@
 				<!--BW_String-->
 			</metallic>
 			<userString>#vehicle_customization:special_style/black_friday_2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+	</itemGroup>
+	<itemGroup>
+		<name>WCI 2025</name>
+		<userString>#vehicle_customization:repaint/color_group_04</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>paints 20g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<paint>
+			<id>619</id>
+			<texture>gui/maps/vehicles/repaints/germany_color_04.png</texture>
+			<color>38 38 38 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.46
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>620</id>
+			<texture>gui/maps/vehicles/repaints/italy_base_color.png</texture>
+			<color>125 110 89 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
+		<paint>
+			<id>621</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_23.png</texture>
+			<color>20 18 17 255</color>
+			<gloss>
+				0.7
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.3
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:special_style/wci2025_1</userString>
 			<tags>hiddenInUI</tags>
 		</paint>
 	</itemGroup>

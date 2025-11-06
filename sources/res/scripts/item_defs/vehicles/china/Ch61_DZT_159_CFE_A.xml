@@ -122,6 +122,13 @@
 			<undamaged>vehicles/chinese/Ch61_DZT_159/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/chinese/Ch61_DZT_159/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/chinese/Ch61_DZT_159/crash/lod0/Hull.model</exploded>
+			<sets>
+				<Ch61_DZT_159_WCI_3Dst>
+					<undamaged>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Hull.model</exploded>
+				</Ch61_DZT_159_WCI_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -170,6 +177,25 @@
 				</rayUp>
 				<size>
 					0.35
+					<!--BW_String-->
+				</size>
+				<hideIfDamaged>true</hideIfDamaged>
+			</slot>
+			<slot>
+				<slotType>clan</slotType>
+				<slotId>10001</slotId>
+				<compatibleModels>Ch61_DZT_159_WCI_3Dst</compatibleModels>
+				<rayStart>
+					-0.299189 0.275741 2.87588
+					<!--BW_String-->
+				</rayStart>
+				<rayEnd>-0.299189 -0.070661 2.675885</rayEnd>
+				<rayUp>
+					0 0.5 -0.866026
+					<!--BW_String-->
+				</rayUp>
+				<size>
+					0.31
 					<!--BW_String-->
 				</size>
 				<hideIfDamaged>true</hideIfDamaged>
@@ -251,6 +277,13 @@
 				<undamaged>vehicles/chinese/Ch61_DZT_159/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/chinese/Ch61_DZT_159/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/chinese/Ch61_DZT_159/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<Ch61_DZT_159_WCI_3Dst>
+						<undamaged>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Chassis.model</exploded>
+					</Ch61_DZT_159_WCI_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -366,6 +399,51 @@
 									<row3>0.000002 1.036136 -3.579102</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>Ch61_DZT_159_WCI_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.216187 0.000000 0.000000</row0>
+									<row1>0.000000 1.018773 0.000000</row1>
+									<row2>0.000000 0.000000 6.388177</row2>
+									<row3>0.000000 0.908764 0.000000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.410178 -0.000000 0.000000</row0>
+									<row1>0.000000 0.311940 -0.010675</row1>
+									<row2>-0.000000 0.218481 6.384443</row2>
+									<row3>0.000000 1.306718 -0.001844</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.287639 -0.085177 0.002915</row0>
+									<row1>0.138092 0.465783 -0.015939</row1>
+									<row2>-0.000001 0.228202 6.668496</row2>
+									<row3>-1.812160 1.163496 -0.172702</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.410180 0.000000 0.000001</row0>
+									<row1>0.000000 0.255209 0.179691</row1>
+									<row2>0.000000 -0.248942 0.353563</row2>
+									<row3>-0.000000 1.263798 3.098258</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.292431 -0.054583 -0.038794</row0>
+									<row1>0.108434 0.376043 0.288290</row1>
+									<row2>-0.004480 -0.345544 0.452409</row2>
+									<row3>-1.802523 1.255177 3.250887</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.410180 0.000000 0.000001</row0>
+									<row1>0.000000 0.289143 0.203584</row1>
+									<row2>0.000000 -0.248942 0.353563</row2>
+									<row3>0.000002 1.021287 -3.558013</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 -0.000000</row0>
+									<row1>0.000000 0.676267 -0.023143</row1>
+									<row2>0.000000 0.228208 6.668499</row2>
+									<row3>-1.871565 0.688359 -0.173884</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -461,6 +539,51 @@
 									<row1>-0.000000 0.289143 0.203584</row1>
 									<row2>-0.000000 -0.248942 0.353563</row2>
 									<row3>0.000002 1.036136 -3.579102</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>Ch61_DZT_159_WCI_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.216187 0.000000 0.000000</row0>
+									<row1>0.000000 1.018773 0.000000</row1>
+									<row2>0.000000 0.000000 6.388177</row2>
+									<row3>0.000000 0.908764 0.000000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.410178 -0.000000 0.000000</row0>
+									<row1>0.000000 0.311940 -0.010675</row1>
+									<row2>-0.000000 0.218481 6.384443</row2>
+									<row3>0.000000 1.306718 -0.001844</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.287639 -0.085177 0.002915</row0>
+									<row1>0.138092 0.465783 -0.015939</row1>
+									<row2>-0.000001 0.228202 6.668496</row2>
+									<row3>-1.812160 1.163496 -0.172702</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.410180 0.000000 0.000001</row0>
+									<row1>0.000000 0.255209 0.179691</row1>
+									<row2>0.000000 -0.248942 0.353563</row2>
+									<row3>-0.000000 1.263800 3.098260</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.292431 -0.054583 -0.038794</row0>
+									<row1>0.108434 0.376043 0.288290</row1>
+									<row2>-0.004480 -0.345544 0.452409</row2>
+									<row3>-1.802523 1.255177 3.250887</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.410180 0.000000 0.000001</row0>
+									<row1>0.000000 0.289143 0.203584</row1>
+									<row2>0.000000 -0.248942 0.353563</row2>
+									<row3>0.000002 1.021287 -3.558013</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 0.000000 -0.000000</row0>
+									<row1>-0.000000 0.676267 -0.023143</row1>
+									<row2>0.000000 0.228208 6.668499</row2>
+									<row3>1.872000 0.688359 -0.173884</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -932,7 +1055,7 @@
 						<wheel>
 							<name>WD_L0</name>
 							<radius>
-								0.3072
+								0.309
 								<!--BW_String-->
 							</radius>
 						</wheel>
@@ -1212,7 +1335,7 @@
 						<wheel>
 							<name>WD_R0</name>
 							<radius>
-								0.3072
+								0.309
 								<!--BW_String-->
 							</radius>
 						</wheel>
@@ -1888,6 +2011,13 @@
 						<undamaged>vehicles/chinese/Ch61_DZT_159/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/chinese/Ch61_DZT_159/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/chinese/Ch61_DZT_159/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<Ch61_DZT_159_WCI_3Dst>
+								<undamaged>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Gun_01.model</exploded>
+							</Ch61_DZT_159_WCI_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/chinese/Ch61_DZT_159/collision/Gun_01.model</collisionModelServer>
@@ -1907,6 +2037,13 @@
 				<undamaged>vehicles/chinese/Ch61_DZT_159/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/chinese/Ch61_DZT_159/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/chinese/Ch61_DZT_159/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<Ch61_DZT_159_WCI_3Dst>
+						<undamaged>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod0/Turret_01.model</exploded>
+					</Ch61_DZT_159_WCI_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/chinese/Ch61_DZT_159/collision/Turret_01.model</collisionModelServer>
@@ -2137,6 +2274,11 @@
 	</effects>
 	<prefabs>
 		<mechanicEffects>particles/Tank/rocket_accelerator/Ch61_DZT_159_Rocket.prefab</mechanicEffects>
+		<sets>
+			<Ch61_DZT_159_WCI_3Dst>
+				<mechanicEffects>particles/Tank/rocket_accelerator/Ch61_DZT_159_Rocket.prefab</mechanicEffects>
+			</Ch61_DZT_159_WCI_3Dst>
+		</sets>
 	</prefabs>
 	<emblems>
 		<default>15505</default>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/normal/lod2/Turret_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/normal/lod3/Turret_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.870786 -0.027142 -2.424176</min>
+		<max>1.870224 1.892491 1.738629</max>
+	</visibilityBox>
+</root>

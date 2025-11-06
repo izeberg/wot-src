@@ -357326,4 +357326,303 @@
 			<tiling/>
 		</camouflage>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1070</id>
+			<texture>vehicles/russian/Camouflage/bp2025_s18_1.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2025_s18_1/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.45 2.45
+					<!--BW_String-->
+				</factor>
+				<offset>
+					0.42 -0.17
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>-0.289725</HULL>
+				<TURRET>-0.289725</TURRET>
+				<GUN>-0.289725</GUN>
+			</rotation>
+		</camouflage>
+		<camouflage>
+			<id>1071</id>
+			<texture>vehicles/russian/Camouflage/bp2025_s18_2.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2025_s18_2/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					3.14 3.14
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-0.81 -0.17
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<rotation>
+				<HULL>0.376991</HULL>
+				<TURRET>0.376991</TURRET>
+				<GUN>0.376991</GUN>
+			</rotation>
+			<glossMetallicMap>vehicles/russian/Camouflage/bp2025_s18_2_GMM.dds</glossMetallicMap>
+		</camouflage>
+		<camouflage>
+			<id>1072</id>
+			<texture>vehicles/russian/Camouflage/bp2025_s18_3.dds</texture>
+			<userString>#vehicle_customization:camouflage/bp2025_s18_3/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>hiddenInUI fullRGB</tags>
+			<invisibilityFactor>1</invisibilityFactor>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.17 2.17
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-2.79 -9.61
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<tiling/>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1064</id>
+			<texture>vehicles/russian/Camouflage/wci2025_1.dds</texture>
+			<userString>#vehicle_customization:camouflage/wci2025_1/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.23 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>hiddenInUI fullRGB</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>
+					0.20944
+					<!--BW_String-->
+				</HULL>
+				<TURRET>
+					0.20944
+					<!--BW_String-->
+				</TURRET>
+				<GUN>
+					0.20944
+					<!--BW_String-->
+				</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					4.18 4.18
+					<!--BW_String-->
+				</factor>
+				<offset>0 0</offset>
+			</tilingSettings>
+			<glossMetallicMap>vehicles/russian/Camouflage/wci2025_1_GMM.dds</glossMetallicMap>
+		</camouflage>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:camouflage/opaque</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>camouflages 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>china:Ch01_Type59_Gold germany:G114_Rheinmetall_Skorpian germany:G119_Panzer58_BF poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A13_T34_hvy_BF usa:A174_T57_58_Rush_Ep1 ussr:R61_Object252_BF</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<camouflage>
+			<id>1065</id>
+			<texture>vehicles/russian/Camouflage/wci2025_progressive_st1.dds</texture>
+			<userString>#vehicle_customization:camouflage/wci2025_progressive_st1/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB questsProgression</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.112923</HULL>
+				<TURRET>-0.112923</TURRET>
+				<GUN>-0.112923</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.1 2.1
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.6 -2.55
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<style>1232</style>
+		</camouflage>
+		<camouflage>
+			<id>1066</id>
+			<texture>vehicles/russian/Camouflage/wci2025_progressive_st2.dds</texture>
+			<userString>#vehicle_customization:camouflage/wci2025_progressive_st2/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB questsProgression</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.112923</HULL>
+				<TURRET>-0.112923</TURRET>
+				<GUN>-0.112923</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					2.1 2.1
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.6 -2.55
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<style>1233</style>
+		</camouflage>
+		<camouflage>
+			<id>1067</id>
+			<texture>vehicles/russian/Camouflage/wci2025_progressive_st3.dds</texture>
+			<userString>#vehicle_customization:camouflage/wci2025_progressive_st3/label</userString>
+			<description>#vehicle_customization:camouflage/empty/description</description>
+			<invisibilityFactor>1</invisibilityFactor>
+			<scales>
+				1.2 1 0.7
+				<!--BW_String-->
+			</scales>
+			<tags>styleOnly fullRGB questsProgression</tags>
+			<palettes>
+				<palette>
+					<c0>255 0 0 255</c0>
+					<c1>0 255 0 255</c1>
+					<c2>0 0 255 255</c2>
+					<c3>0 0 0 255</c3>
+				</palette>
+			</palettes>
+			<rotation>
+				<HULL>-0.698132</HULL>
+				<TURRET>-0.698132</TURRET>
+				<GUN>-0.698132</GUN>
+			</rotation>
+			<tilingSettings>
+				<type>relativewithfactor</type>
+				<factor>
+					1.8 1.8
+					<!--BW_String-->
+				</factor>
+				<offset>
+					-1.8 -4.3
+					<!--BW_String-->
+				</offset>
+			</tilingSettings>
+			<style>1234</style>
+			<glossMetallicMap>vehicles/russian/Camouflage/wci2025_progressive_st3_GMM.dds</glossMetallicMap>
+			<tiling>
+				<germany:G42_Maus>
+					2.56 2.56 0.15 -0.89
+					<!--BW_String-->
+				</germany:G42_Maus>
+			</tiling>
+		</camouflage>
+	</itemGroup>
 </root>

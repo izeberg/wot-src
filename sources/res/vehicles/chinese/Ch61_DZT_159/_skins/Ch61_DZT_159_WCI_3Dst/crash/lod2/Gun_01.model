@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod2/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<parent>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-0.291752 -0.260486 -1.381131</min>
+		<max>0.293536 0.405782 6.011042</max>
+	</visibilityBox>
+</root>

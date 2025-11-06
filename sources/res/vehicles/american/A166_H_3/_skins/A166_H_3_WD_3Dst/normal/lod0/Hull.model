@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A166_H_3/_skins/A166_H_3_WD_3Dst/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/american/A166_H_3/_skins/A166_H_3_WD_3Dst/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-2.616940 -1.087923 -3.888470</min>
+		<max>2.221340 0.429966 4.960890</max>
+	</visibilityBox>
+</root>

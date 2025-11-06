@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<node>
+		<identifier>Scene Root</identifier>
+		<transform>
+			<row0>1.000000 0.000000 0.000000</row0>
+			<row1>0.000000 1.000000 0.000000</row1>
+			<row2>0.000000 0.000000 1.000000</row2>
+			<row3>0.000000 0.000000 0.000000</row3>
+		</transform>
+		<node>
+			<identifier>nodes_01</identifier>
+			<transform>
+				<row0>1.000000 0.000000 0.000000</row0>
+				<row1>0.000000 1.000000 0.000000</row1>
+				<row2>0.000000 0.000000 1.000000</row2>
+				<row3>0.000000 0.000000 0.000000</row3>
+			</transform>
+			<node>
+				<identifier>HP_Fire_1</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000000 -0.058812 -2.938561</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Fire_2</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>-0.562800 -0.058812 1.928656</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.733525 0.679663</row1>
+					<row2>0.000000 -0.679663 0.733525</row2>
+					<row3>-1.375000 0.047179 3.201964</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_LRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.484257 -0.874926</row1>
+					<row2>-0.000000 -0.874926 -0.484257</row2>
+					<row3>-1.375000 -0.127712 -3.315525</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RFront</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.733525 0.679663</row1>
+					<row2>0.000000 -0.679663 0.733525</row2>
+					<row3>1.375000 0.050042 3.206028</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_TrackUp_RRear</identifier>
+				<transform>
+					<row0>-1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 0.484257 -0.874926</row1>
+					<row2>-0.000000 -0.874926 -0.484257</row2>
+					<row3>1.375000 -0.127919 -3.316640</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_Track_Exhaus_1</identifier>
+				<transform>
+					<row0>0.000000 0.000000 1.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>-1.000000 0.000000 0.000000</row2>
+					<row3>-1.667500 0.252041 -1.680349</row3>
+				</transform>
+			</node>
+			<node>
+				<identifier>HP_turretJoint</identifier>
+				<transform>
+					<row0>1.000000 0.000000 0.000000</row0>
+					<row1>0.000000 1.000000 0.000000</row1>
+					<row2>0.000000 0.000000 1.000000</row2>
+					<row3>0.000075 0.435322 0.149829</row3>
+				</transform>
+			</node>
+		</node>
+	</node>
+	<renderSet>
+		<treatAsWorldSpaceObject>false</treatAsWorldSpaceObject>
+		<node>Scene Root</node>
+		<geometry>
+			<vertices>vertices</vertices>
+			<primitive>indices</primitive>
+			<primitiveGroup>
+				0
+				<material>
+					<identifier>tank_hull_01</identifier>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_hull_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_hull_01_ANM.dds</Texture>
+					</property>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_hull_01_AM.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_hull_01_AO.dds</Texture>
+					</property>
+					<property>
+						colorIdMap
+						<Texture>vehicles/russian/common/common_ID.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.013699 7.013699 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67061760</element>
+							<element>1020067840</element>
+							<element>805257216</element>
+							<element>986529352</element>
+							<element>469721845</element>
+							<element>1036205408</element>
+							<element>503265280</element>
+							<element>977076224</element>
+							<element>436168704</element>
+							<element>1006648904</element>
+							<element>131378175</element>
+							<element>1001259008</element>
+							<element>399261696</element>
+							<element>1006648904</element>
+							<element>805257216</element>
+							<element>986513408</element>
+						</matrix>
+					</property>
+					<property>
+						g_dirtLevel
+						<Float>0.480000</Float>
+					</property>
+					<property>
+						g_glossMax
+						<Float>0.720000</Float>
+					</property>
+					<property>
+						g_glossMin
+						<Float>0.250000</Float>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -0.042395 -0.303558</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				1
+				<material>
+					<identifier>apparat_and_scrat</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_apparat_and_scrat_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_apparat_and_scrat_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_apparat_and_scrat_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_apparat_and_scrat_AO.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						alphaReference
+						<Int>65</Int>
+					</property>
+					<property>
+						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>56692122</element>
+							<element>1020081200</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>276629504</element>
+							<element>1006649714</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>1.750000 0.852000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>-0.044945 -0.051270 3.039285</groupOrigin>
+			</primitiveGroup>
+			<primitiveGroup>
+				2
+				<material>
+					<identifier>tank_equipment_01</identifier>
+					<property>
+						diffuseMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_equipment_01_AM.dds</Texture>
+					</property>
+					<property>
+						metallicGlossMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_equipment_01_GMM.dds</Texture>
+					</property>
+					<property>
+						normalMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_equipment_01_ANM.dds</Texture>
+					</property>
+					<collisionFlags>0</collisionFlags>
+					<materialKind>0</materialKind>
+					<fx>shaders/std_effects/PBS_tank.fx</fx>
+					<property>
+						excludeMaskAndAOMap
+						<Texture>vehicles/chinese/Ch61_DZT_159/_skins/Ch61_DZT_159_WCI_3Dst/DZT_159_WCI_3Dst_equipment_01_AO.dds</Texture>
+					</property>
+					<property>
+						metallicDetailMap
+						<Texture>vehicles/russian/Tank_detail/Details_map.dds</Texture>
+					</property>
+					<property>
+						g_useDetailMetallic
+						<Bool>true</Bool>
+					</property>
+					<property>
+						g_defaultDetail
+						<Bool>false</Bool>
+					</property>
+					<property>
+						g_detailParams
+						<matrix>
+							<element>67061760</element>
+							<element>1020067840</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>134184960</element>
+							<element>979763200</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>4261412864</element>
+							<element>0</element>
+							<element>469716992</element>
+							<element>1001259008</element>
+							<element>395950079</element>
+							<element>1031471104</element>
+							<element>1373519155</element>
+							<element>1018050013</element>
+						</matrix>
+					</property>
+					<property>
+						g_detailUVTiling
+						<Vector4>7.000000 3.500000 0.000000 0.000000</Vector4>
+					</property>
+					<property>
+						g_tilingRatio
+						<Vector2>1.000000 0.500000</Vector2>
+					</property>
+				</material>
+				<groupOrigin>0.000000 -0.152193 0.102677</groupOrigin>
+			</primitiveGroup>
+		</geometry>
+	</renderSet>
+	<boundingBox>
+		<min>-1.901892 -0.638294 -3.920171</min>
+		<max>1.901892 0.553504 3.470308</max>
+	</boundingBox>
+	<geometrySize>2015538</geometrySize>
+</root>

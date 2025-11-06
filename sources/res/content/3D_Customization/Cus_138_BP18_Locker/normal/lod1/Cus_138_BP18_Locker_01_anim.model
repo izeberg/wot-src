@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/3D_Customization/Cus_138_BP18_Locker/normal/lod2/Cus_138_BP18_Locker_01_anim</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-0.557451 -0.004703 -0.940027</min>
+		<max>0.092712 0.468555 0.940028</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>content/3D_Customization/Cus_138_BP18_Locker/normal/lod1/Cus_138_BP18_Locker_01_anim</nodefullVisual>
+</root>

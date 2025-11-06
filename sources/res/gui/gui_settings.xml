@@ -2805,7 +2805,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapter
+				/$LANGUAGE_CODE/promocontent/bp-special-chapter-november-2025/
 				<name>extraInfoPage</name>
 				<type>url</type>
 			</item>
@@ -2815,7 +2815,7 @@
 				<type>url</type>
 			</item>
 			<item>
-				/$LANGUAGE_CODE/promocontent/specialchapterVideo/
+				/$LANGUAGE_CODE/promocontent/bp-special-chapter-november-2025-Video/
 				<name>extraVideo</name>
 				<type>url</type>
 			</item>
@@ -2831,7 +2831,7 @@
 					<item>
 						<name>hasAdditionalBackground</name>
 						<type>bool</type>
-						<value>False</value>
+						<value>True</value>
 					</item>
 				</value>
 			</item>
@@ -2857,6 +2857,11 @@
 								<name>183</name>
 								<type>bool</type>
 								<value>False</value>
+							</item>
+							<item>
+								<name>185</name>
+								<type>bool</type>
+								<value>True</value>
 							</item>
 						</value>
 					</item>

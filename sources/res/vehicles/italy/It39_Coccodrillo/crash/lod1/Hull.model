@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It39_Coccodrillo/crash/lod1/Hull</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It39_Coccodrillo/crash/lod2/Hull</parent>
+	<extent>64.000000</extent>
+	<visibilityBox>
+		<min>-1.899633 -0.916731 -3.994696</min>
+		<max>1.868589 0.424253 4.060710</max>
+	</visibilityBox>
+</root>
