@@ -16788,5 +16788,105 @@
 				<_8310>tankmen_bp18_9.png</_8310>
 			</icons>
 		</tankmen_bp18_9>
+		<tankmen_bp18_10>
+			<groupID>328</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_10</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8314>#italy_crew:names/tankmen_bp18_10_n</_8314>
+			</firstNames>
+			<lastNames>
+				<_8314>#italy_crew:names/tankmen_bp18_10</_8314>
+			</lastNames>
+			<icons>
+				<_8314>tankmen_bp18_10.png</_8314>
+			</icons>
+		</tankmen_bp18_10>
+		<tankmen_bp18_11>
+			<groupID>329</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_11</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8315>#italy_crew:names/tankmen_bp18_11_n</_8315>
+			</firstNames>
+			<lastNames>
+				<_8315>#italy_crew:names/tankmen_bp18_11</_8315>
+			</lastNames>
+			<icons>
+				<_8315>tankmen_bp18_11.png</_8315>
+			</icons>
+		</tankmen_bp18_11>
+		<tankmen_bp18_12>
+			<groupID>830</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_12</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8316>#italy_crew:names/tankmen_bp18_12_n</_8316>
+			</firstNames>
+			<lastNames>
+				<_8316>#italy_crew:names/tankmen_bp18_12</_8316>
+			</lastNames>
+			<icons>
+				<_8316>tankmen_bp18_12.png</_8316>
+			</icons>
+		</tankmen_bp18_12>
+		<tankmen_bp18_13>
+			<groupID>831</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>female</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_13</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8317>#italy_crew:names/tankmen_bp18_13_n</_8317>
+			</firstNames>
+			<lastNames>
+				<_8317>#italy_crew:names/tankmen_bp18_13</_8317>
+			</lastNames>
+			<icons>
+				<_8317>tankmen_bp18_13.png</_8317>
+			</icons>
+		</tankmen_bp18_13>
+		<tankmen_bp18_14>
+			<groupID>832</groupID>
+			<weight>
+				0.0
+				<!--BW_String-->
+			</weight>
+			<sex>male</sex>
+			<notInShop>true</notInShop>
+			<tags>passportReplacementForbidden tankmen_bp18_14</tags>
+			<roles>commander radioman loader driver gunner</roles>
+			<firstNames>
+				<_8318>#italy_crew:names/tankmen_bp18_14_n</_8318>
+			</firstNames>
+			<lastNames>
+				<_8318>#italy_crew:names/tankmen_bp18_14</_8318>
+			</lastNames>
+			<icons>
+				<_8318>tankmen_bp18_14.png</_8318>
+			</icons>
+		</tankmen_bp18_14>
 	</premiumGroups>
 </root>
