@@ -1,9 +1,10 @@
 import CGF
-from cgf_script.managers_registrator import registerManager, Rule, registerRule
+from cgf_script.managers_registrator import Rule, registerManager, registerRule
+from gui.pet_system.cgf_components.pet_place_component import PetPrefabManager
 from hover_component import HoverManager
 from highlight_component import HighlightManager
+from hover_group_components import HoverGroupManager
 from on_click_components import ClickManager
-from hangar_camera_manager import HangarCameraManager
 
 @registerRule
 class SelectionRule(Rule):
@@ -22,12 +23,16 @@ class SelectionRule(Rule):
     def reg3(self):
         return
 
+    @registerManager(HoverGroupManager)
+    def reg4(self):
+        return
+
 
 @registerRule
-class CameraRule(Rule):
+class PetPlaceRule(Rule):
     category = 'Hangar rules'
     domain = CGF.DomainOption.DomainClient
 
-    @registerManager(HangarCameraManager)
+    @registerManager(PetPrefabManager)
     def reg1(self):
         return

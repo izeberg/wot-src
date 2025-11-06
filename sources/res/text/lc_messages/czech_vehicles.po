@@ -10,6 +10,9 @@ msgstr ""
 "Content-Type: text/plain; charset=utf-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 
+msgid "B_58_J"
+msgstr "B-58J"
+
 msgid "CKD_AXK"
 msgstr "ČKD AXK"
 
@@ -133,6 +136,9 @@ msgstr "Vz. 60S"
 msgid "Chassis_Cz21_Vz_60S_Dravec"
 msgstr "Vz. 60S Dravec"
 
+msgid "Chassis_Cz22_Skoda_T_15A"
+msgstr "Škoda T 15A"
+
 msgid "Chassis_Cz23_Skoda_T_17"
 msgstr "Škoda T 17 první model"
 
@@ -168,6 +174,9 @@ msgstr "Vz. 71 Tesák"
 
 msgid "Chassis_Cz35_T56_G"
 msgstr "TT-130M"
+
+msgid "Chassis_Cz36_Jezevec"
+msgstr "Jezevec"
 
 msgid "Chassis_Cz37_SDT_58_Vlkodav"
 msgstr "SDT-58 Vlkodav"
@@ -631,6 +640,33 @@ msgstr "Vz. 60S"
 msgid "Cz21_Vz_60S_short_special"
 msgstr "Отличная броня, сбалансированное орудие"
 
+msgid "Cz22_Skoda_T_15A"
+msgstr "Škoda T 15A"
+
+msgid "Cz22_Skoda_T_15A_descr"
+msgstr ""
+"Проект танка-разведчика компании Škodawerk. Разработка началась летом "
+"1940-го, в октябре и декабре того же года были построены первые опытные "
+"образцы Škoda T-15. В ходе сравнительных испытаний танк оказался на третьем "
+"месте, уступив и Pz.Sp.Wg.II Luchs, и Pz.Kpfw.38 n.A. Однако работы "
+"продолжились, в результате чего появилась улучшенная версия машины — "
+"Škoda T 15A. Существует несколько эскизных проектов и деревянный макет. В "
+"металле танк построен не был."
+
+msgid "Cz22_Skoda_T_15A_long_special"
+msgstr ""
+"Škoda T 15A — чехословацкий лёгкий танк IV уровня. Наносит значительный для "
+"своего типа урон за выстрел, а также отличается хорошими показателями "
+"бронепробиваемости и времени перезарядки. Высокая максимальная скорость и "
+"впечатляющая удельная мощность делают этот лёгкий танк одним из самых "
+"мобильных на своём уровне."
+
+msgid "Cz22_Skoda_T_15A_short"
+msgstr "Škoda T 15A"
+
+msgid "Cz22_Skoda_T_15A_short_special"
+msgstr "Мощное орудие, хорошая мобильность"
+
 msgid "Cz23_Skoda_T_17"
 msgstr "Škoda T 17"
 
@@ -840,6 +876,28 @@ msgstr "TT-130M"
 msgid "Cz35_T56_G_short_special"
 msgstr "Реактивные ускорители, мощное бронирование"
 
+msgid "Cz36_Jezevec"
+msgstr "Jezevec"
+
+msgid "Cz36_Jezevec_descr"
+msgstr ""
+"В начале 1960-х годов было принято решение о проектировании среднего танка, "
+"сочетающего в себе достаточную огневую мощь и низкий силуэт. Члены экипажа "
+"размещались в корпусе. В свою очередь, боевое отделение находилось в "
+"кормовой части машины. Орудие устанавливалось в качающейся части башни и "
+"управлялось дистанционно, а подачу боеприпасов обеспечивал автомат "
+"заряжания. Двигатель и трансмиссия предполагались в передней части танка для"
+" обеспечения дополнительной защиты экипажа. Проект остался на бумаге."
+
+msgid "Cz36_Jezevec_long_special"
+msgstr "Cz36_Jezevec_long_special"
+
+msgid "Cz36_Jezevec_short"
+msgstr "Jezevec"
+
+msgid "Cz36_Jezevec_short_special"
+msgstr "Cz36_Jezevec_short_special"
+
 msgid "Cz37_SDT_58_Vlkodav"
 msgstr "SDT-58 Vlkodav"
 
@@ -1006,6 +1064,9 @@ msgstr "Radiostanice 9RM"
 msgid "Radiostanice_Fu_12"
 msgstr "Radiostanice Fu 12"
 
+msgid "Radiostanice_Fu_5"
+msgstr "Radiostanice Fu 5"
+
 msgid "Radiostanice_Fu_7"
 msgstr "Radiostanice Fu 7"
 
@@ -1032,6 +1093,9 @@ msgstr "Radiostanice R-112"
 
 msgid "Radiostanice_R_113"
 msgstr "Radiostanice R-113"
+
+msgid "Radiostanice_R_113_J"
+msgstr "Radiostanice R-123J"
 
 msgid "Radiostanice_R_113_JA"
 msgstr "Radiostanice R-123JA"
@@ -1126,6 +1190,9 @@ msgstr "Škoda 16 cylinder diesel (660)"
 msgid "Skoda_V16_diesel_660_a"
 msgstr "Škoda 16 cylinder diesel (A660)"
 
+msgid "Skoda_V8"
+msgstr "Škoda V8"
+
 msgid "Skoda_V8_diesel"
 msgstr "Škoda V8 diesel"
 
@@ -1204,6 +1271,9 @@ msgstr "Vz. 60S"
 msgid "Turret_1_Cz21_Vz_60S_Dravec"
 msgstr "Vz. 60S Dravec"
 
+msgid "Turret_1_Cz22_Skoda_T_15A"
+msgstr "Škoda T 15A"
+
 msgid "Turret_1_Cz23_Skoda_T_17"
 msgstr "Škoda T 17 první model"
 
@@ -1230,6 +1300,9 @@ msgstr "Vz. 71 Tesák"
 
 msgid "Turret_1_Cz35_T56_G"
 msgstr "TT-130M"
+
+msgid "Turret_1_Cz36_Jezevec"
+msgstr "Jezevec"
 
 msgid "Turret_1_Cz37_SDT_58_Vlkodav"
 msgstr "SDT-58 Vlkodav"
@@ -1726,6 +1799,9 @@ msgstr "Nárazový"
 msgid "_47mm_Narazovy_vz_36"
 msgstr "Nárazový vz. 36"
 
+msgid "_47mm_Narazovy_vz_36_A"
+msgstr "Nárazový vz. 36 A"
+
 msgid "_47mm_Narazovy_vz_36_A11"
 msgstr "Nárazový vz. 36 (A11)"
 
@@ -1738,6 +1814,9 @@ msgstr "Průrazný (s oc. jádrem)"
 msgid "_47mm_Prurazny_vz_36"
 msgstr "Průrazný vz. 36"
 
+msgid "_47mm_Prurazny_vz_36_A"
+msgstr "Průrazný vz. 36 A"
+
 msgid "_47mm_Prurazny_vz_36_A11"
 msgstr "Průrazný vz. 36 (A11)"
 
@@ -1747,6 +1826,9 @@ msgstr "Průrazný vz. 40 (A11 s wolf. jádrem)"
 msgid "_47mm_Prurazny_vz_40_s_wolf_jadrem"
 msgstr "Průrazný vz. 40 (s wolf. jádrem)"
 
+msgid "_47mm_Prurazny_vz_40_s_wolf_jadrem_A"
+msgstr "Průrazný vz. 40 (s wolf. jádrem) A"
+
 msgid "_47mm_Rychlopalne_delo_Vickers_L_20"
 msgstr "47 mm Rychlopalné dělo Vickers L/20"
 
@@ -1755,6 +1837,9 @@ msgstr "47 mm Škoda A11"
 
 msgid "_47mm_Skoda_A11_vylepseny"
 msgstr "47 mm Škoda A11 vylepšený"
+
+msgid "_47mm_Skoda_A24"
+msgstr "47 mm Škoda A24"
 
 msgid "_47mm_Skoda_A9"
 msgstr "47 mm Škoda A9"
@@ -1884,6 +1969,18 @@ msgstr "75 mm Škoda A18 (auto)"
 
 msgid "_75mm_Skoda_A26"
 msgstr "75 mm Škoda A26"
+
+msgid "_85mm_D_58J"
+msgstr "85 mm D-58J"
+
+msgid "_85mm_UBR_372I"
+msgstr "85 mm UBR 372I"
+
+msgid "_85mm_UBR_372S"
+msgstr "85 mm UBR 372S"
+
+msgid "_85mm_UOF_372F"
+msgstr "85 mm UOF 372F"
 
 msgid "_85mm_vz_44S"
 msgstr "85 mm vz. 44S"

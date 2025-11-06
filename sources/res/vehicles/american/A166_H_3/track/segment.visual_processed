@@ -59,13 +59,13 @@
 						<Bool>true</Bool>
 					</property>
 				</material>
-				<groupOrigin>0.000000 -0.015000 -0.000000</groupOrigin>
+				<groupOrigin>0.000000 -0.015000 -0.010322</groupOrigin>
 			</primitiveGroup>
 		</geometry>
 	</renderSet>
 	<boundingBox>
-		<min>-0.300000 -0.100000 -0.146156</min>
-		<max>0.300000 0.070000 0.146156</max>
+		<min>-0.300000 -0.100000 -0.156479</min>
+		<max>0.300000 0.070000 0.135834</max>
 	</boundingBox>
 	<geometrySize>6912</geometrySize>
 </root>

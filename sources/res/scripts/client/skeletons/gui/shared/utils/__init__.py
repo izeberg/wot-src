@@ -90,6 +90,10 @@ class IItemsRequester(requesters.IRequester):
         raise NotImplementedError
 
     @property
+    def petSystem(self):
+        raise NotImplementedError
+
+    @property
     def tankmenStatsCache(self):
         raise NotImplementedError
 
@@ -174,6 +178,9 @@ class IItemsRequester(requesters.IRequester):
     def getItemByCD(self, typeCompDescr):
         raise NotImplementedError
 
+    def getTypedItemsByCDs(self, itemType, itemCDs):
+        raise NotImplementedError
+
     def getItem(self, itemTypeID, nationID, innationID):
         raise NotImplementedError
 
@@ -237,6 +244,10 @@ class IHangarSpace(object):
     onSpaceChanged = None
     onNotifyCursorOver3dScene = None
     onSpaceChangedByAction = None
+
+    @property
+    def videoCameraController(self):
+        raise NotImplementedError
 
     @property
     def space(self):

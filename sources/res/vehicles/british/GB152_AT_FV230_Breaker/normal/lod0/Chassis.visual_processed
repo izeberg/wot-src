@@ -1029,8 +1029,8 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_L7_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_L6_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_L5_BlendBone</node>
 		<node>Track_L4_BlendBone</node>
 		<node>Track_L3_BlendBone</node>
@@ -1129,8 +1129,8 @@
 	<renderSet>
 		<treatAsWorldSpaceObject>true</treatAsWorldSpaceObject>
 		<node>Track_R7_BlendBone</node>
-		<node>V_BlendBone</node>
 		<node>Track_R6_BlendBone</node>
+		<node>V_BlendBone</node>
 		<node>Track_R5_BlendBone</node>
 		<node>Track_R4_BlendBone</node>
 		<node>Track_R3_BlendBone</node>
@@ -1252,8 +1252,8 @@
 		<node>WD_L4_BlendBone</node>
 		<node>WD_L5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_L_Shape.vertices</vertices>
-			<primitive>chassis_L_Shape.indices</primitive>
+			<vertices>chassis_LShape.vertices</vertices>
+			<primitive>chassis_LShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1398,8 +1398,8 @@
 		<node>WD_R4_BlendBone</node>
 		<node>WD_R5_BlendBone</node>
 		<geometry>
-			<vertices>chassis_R_Shape.vertices</vertices>
-			<primitive>chassis_R_Shape.indices</primitive>
+			<vertices>chassis_RShape.vertices</vertices>
+			<primitive>chassis_RShape.indices</primitive>
 			<primitiveGroup>
 				0
 				<material>
@@ -1521,7 +1521,7 @@
 	<constraints/>
 	<boundingBox>
 		<min>-1.873917 -0.000000 -3.959974</min>
-		<max>1.876797 1.295666 3.812624</max>
+		<max>1.876797 1.295667 3.812624</max>
 	</boundingBox>
 	<geometrySize>1937980</geometrySize>
 </root>

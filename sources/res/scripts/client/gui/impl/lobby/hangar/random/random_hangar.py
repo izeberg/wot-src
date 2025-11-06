@@ -3,6 +3,7 @@ import typing
 from ClientSelectableCameraObject import ClientSelectableCameraObject
 from CurrentVehicle import g_currentPreviewVehicle, g_currentVehicle
 from PlayerEvents import g_playerEvents
+from account_helpers.AccountSettings import HANGAR_VIEW_SETTINGS, HANGAR_KEY_BINDINGS
 from frameworks.wulf import WindowFlags
 from gui.app_loader import app_getter
 from gui.filters.battle_pass_carousel_filter import BattlePassCarouselFilter
@@ -10,7 +11,11 @@ from gui.Scaleform.lobby_entry import getLobbyStateMachine
 from gui.game_loading.resources.consts import Milestones
 from gui.impl.gen import R
 from gui.impl.gen.view_models.views.lobby.common.router_model import RouterModel
+from gui.impl.gen.view_models.views.lobby.hangar.hangar_settings_model import HangarSettingsModel
+from gui.impl.gen.view_models.views.lobby.hangar.key_bindings_model import KeyBindingsModel
+from gui.impl.lobby.common.presenters.settings_presenter import SettingsPresenter
 from gui.impl.lobby.hangar.base.account_styles import AccountStyles
+from gui.impl.lobby.hangar.base.blur import RandomHangarBlur
 from gui.impl.lobby.hangar.base.vehicles_filter_component import VehiclesFilterComponent
 from gui.impl.lobby.hangar.presenters.crew_presenter import CrewPresenter
 from gui.impl.lobby.hangar.presenters.hangar_vehicle_params_presenter import HangarVehicleParamsPresenter
@@ -19,6 +24,7 @@ from gui.impl.lobby.hangar.presenters.loadout_presenter import LoadoutPresenter
 from gui.impl.lobby.hangar.presenters.lootbox_entry_point_presenter import LootboxEntryPointPresenter
 from gui.impl.lobby.hangar.presenters.main_menu_presenter import MainMenuPresenter
 from gui.impl.lobby.hangar.presenters.optional_devices_assistant_presenter import OptionalDevicesAssistantPresenter
+from gui.impl.lobby.hangar.presenters.pet_object_tooltip_presenter import PetObjectTooltipPresenter
 from gui.impl.lobby.hangar.presenters.space_interaction_presenter import SpaceInteractionPresenter
 from gui.impl.lobby.hangar.presenters.teaser_presenter import TeaserPresenter
 from gui.impl.lobby.hangar.presenters.user_missions_presenter import UserMissionsPresenter
@@ -28,7 +34,7 @@ from gui.impl.lobby.hangar.presenters.vehicle_inventory_presenter import Vehicle
 from gui.impl.lobby.hangar.presenters.vehicle_menu_presenter import VehicleMenuPresenter
 from gui.impl.lobby.hangar.presenters.vehicle_playlists_presenter import VehiclePlaylistsPresenter
 from gui.impl.lobby.hangar.presenters.vehicle_statistics_presenter import VehiclesStatisticsPresenter
-from gui.impl.lobby.hangar.presenters.vehicles_info_presenter import VehiclesInfoPresenter
+from gui.impl.lobby.common.presenters.vehicles_info_presenter import VehiclesInfoPresenter
 from gui.impl.lobby.hangar.random.sound_manager import RANDOM_HANGAR_SOUND_SPACE
 from gui.impl.pub import WindowImpl
 from gui.impl.pub.view_component import ViewComponent
@@ -73,8 +79,13 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
         self.__carouselFilter = BattlePassCarouselFilter()
         self.__carouselFilter.setDisabledUpdateCriteries(True)
         self.__accountStyles = AccountStyles()
+        self.__blur = RandomHangarBlur()
         self._router = None
         return
+
+    @property
+    def blur(self):
+        return self.__blur
 
     def getRouterModel(self):
         return self.getViewModel()
@@ -96,7 +107,10 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
            hangar.HeroTank(): HeroTankPresenter, 
            hangar.OptionalDevicesAssistant(): OptionalDevicesAssistantPresenter, 
            hangar.VehiclePlaylists(): VehiclePlaylistsPresenter, 
-           hangar.UserMissions(): UserMissionsPresenter}
+           hangar.UserMissions(): UserMissionsPresenter, 
+           hangar.PetObjectTooltip(): PetObjectTooltipPresenter, 
+           hangar.Settings(): lambda : SettingsPresenter(HangarSettingsModel, HANGAR_VIEW_SETTINGS), 
+           hangar.KeyBindings(): lambda : SettingsPresenter(KeyBindingsModel, HANGAR_KEY_BINDINGS, readOnly=True)}
 
     def _subscribe(self):
         super(RandomHangar, self)._subscribe()
@@ -117,12 +131,14 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
         self.__randomInvVehicleFilter.initialize()
         self._initializeRouter()
         self.__accountStyles.initialize()
+        self.__blur.init()
         super(RandomHangar, self)._onLoading(*args, **kwargs)
 
     def _onShown(self):
         super(RandomHangar, self)._onShown()
         nextTick(ClientSelectableCameraObject.switchCamera)()
         g_eventBus.handleEvent(events.HangarCustomizationEvent(events.HangarCustomizationEvent.RESET_VEHICLE_MODEL_TRANSFORM), scope=EVENT_BUS_SCOPE.LOBBY)
+        g_eventBus.handleEvent(events.PetSystemEvent(events.PetSystemEvent.MEDAL_ANIMATION_SHOW), scope=EVENT_BUS_SCOPE.LOBBY)
         g_currentPreviewVehicle.selectNoVehicle()
         if g_currentVehicle.isPresent():
             g_currentVehicle.refreshModel()
@@ -144,6 +160,8 @@ class RandomHangar(ViewComponent[RouterModel], IRoutableView):
         self.__inputManager = None
         self.__accountStyles.destroy()
         self.__accountStyles = None
+        self.__blur.destroy()
+        self.__blur = None
         return
 
     @app_getter

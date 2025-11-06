@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>vehicles/british/GB137_Cromwell_Applique/crash/lod4/Hull</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.532172 -0.886951 -3.213749</min>
+		<max>
+			1.532173 0.718086 3.0388
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/british/GB137_Cromwell_Applique/crash/lod3/Hull</nodefullVisual>
+</root>

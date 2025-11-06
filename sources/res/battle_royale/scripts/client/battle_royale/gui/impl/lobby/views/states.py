@@ -99,6 +99,9 @@ class BattleRoyaleBattleResultsState(ViewLobbyState):
     STATE_ID = 'battleRoyaleBattleResults'
     VIEW_KEY = ViewKey(BATTLEROYALE_ALIASES.BR_BATTLE_RESULTS)
 
+    def __init__(self, flags=StateFlags.UNDEFINED):
+        super(BattleRoyaleBattleResultsState, self).__init__(flags=flags | LobbyStateFlags.POST_BATTLE_RESULTS)
+
     def getNavigationDescription(self):
         return LobbyStateDescription(title=backport.text(R.strings.pages.titles.battleRoyale.battle_results()))
 

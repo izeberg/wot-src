@@ -320,6 +320,9 @@ msgstr "FV225 Collector"
 msgid "Chassis_GB131_Crusher"
 msgstr "Crusher"
 
+msgid "Chassis_GB132_Taurus_CAT"
+msgstr "Frieseke & Hoepfner «Hydrop»"
+
 msgid "Chassis_GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
 
@@ -328,6 +331,9 @@ msgstr "Gryphon"
 
 msgid "Chassis_GB136_Churchill_BPXIV"
 msgstr "Churchill VII"
+
+msgid "Chassis_GB137_Cromwell_Applique"
+msgstr "A27 Cromwell Applique"
 
 msgid "Chassis_GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
@@ -1519,6 +1525,33 @@ msgstr "Crusher"
 msgid "GB131_Crusher_short_special"
 msgstr "Скорострельное орудие, тяжёлая броня"
 
+msgid "GB132_Taurus_CAT"
+msgstr "Taurus CAT"
+
+msgid "GB132_Taurus_CAT_desc"
+msgstr ""
+"Проект перспективного танка, разработанный Королевским бронетанковым "
+"корпусом в 1968 году и получивший обозначение COMBAT ARM TANK. При "
+"разработке машины ставились следующие приоритеты: огневая мощь, мобильность,"
+" защита и минимальный экипаж. Танк должен был пойти на вооружение "
+"объединённых войск Королевского бронетанкового корпуса и пехоты (Combat "
+"Arm), однако из-за смены планов развития сухопутных войск Великобритании "
+"потребность в машине отпала — проект закрыли."
+
+msgid "GB132_Taurus_CAT_long_special"
+msgstr ""
+"Taurus CAT — британская ПТ-САУ VIII уровня. Это первая британская машина с "
+"гидропневматической подвеской, а также первая самоходка этой нации с "
+"магазином заряжания вместо обычного циклического орудия. Она быстрая и "
+"манёвренная, что в совокупности со скорострельным барабаном позволяет "
+"действовать активнее и агрессивнее."
+
+msgid "GB132_Taurus_CAT_short"
+msgstr "Taurus CAT"
+
+msgid "GB132_Taurus_CAT_short_special"
+msgstr "Магазин заряжания, гидропневматическая подвеска"
+
 msgid "GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
 
@@ -1600,6 +1633,37 @@ msgstr "Crocodile"
 
 msgid "GB136_Churchill_BPXIV_short_special"
 msgstr "Хороший урон в минуту, точное орудие"
+
+msgid "GB137_Cromwell_Applique"
+msgstr "Cromwell Applique"
+
+msgid "GB137_Cromwell_Applique_desc"
+msgstr ""
+"Экранированный вариант танка Cromwell, известный как Cromwell Applique. "
+"Разрабатывался компанией Rolls Royce в 1943 году с учётом роста "
+"эффективности вражеской противотанковой артиллерии и усиления бронетехники "
+"вермахта. На корпус и башню устанавливались сварные экраны, доводившие "
+"лобовую броню до 101 мм, но увеличивавшие массу танка до 29 тонн. Экраны от "
+"Sheffield Steel Co испытывались обстрелом 21 июня 1943 года — при попаданиях"
+" по краям возникали трещины, из-за чего требовалось повысить прочность "
+"сварных швов. Позднее танк, догруженный до 31 тонны, прошёл 174 мили по "
+"шоссе и 110 по грунту. Подвеска справилась, но выявился износ двух катков и "
+"необходимость усиления тормозов. Экранирование одобрили для всех серийных "
+"Cromwell, однако таких машин выпустили менее 200 штук — слишком мало и "
+"поздно. В результате Cromwell быстро заменялись более совершенными Comet."
+
+msgid "GB137_Cromwell_Applique_long_special"
+msgstr ""
+"Cromwell Appliqué — британский средний танк V уровня. Эта версия Cromwell "
+"обладает дополнительным лобовым бронированием, повышающим выживаемость, но "
+"увеличивающим массу машины. Тем не менее, танк остаётся довольно мобильным и"
+" вооружён знакомым британским скорострельным орудием."
+
+msgid "GB137_Cromwell_Applique_short"
+msgstr "Cromwell A"
+
+msgid "GB137_Cromwell_Applique_short_special"
+msgstr "Хорошие показатели бронирования, мобильности и скорострельности"
 
 msgid "GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
@@ -3184,6 +3248,9 @@ msgstr "WS No. 19 Mk. I"
 msgid "N19Mk2"
 msgstr "WS No. 19 Mk. II"
 
+msgid "N19Mk2A"
+msgstr "WS NO.19 Mk. IIA"
+
 msgid "N19Mk2_Aust"
 msgstr "WS No. 19 Mk. II (Aust.)"
 
@@ -3424,6 +3491,9 @@ msgstr "QF 6-pdr 8 cwt AT Gun Mk. I"
 msgid "QF_6_pounder_Mk_III"
 msgstr "QF 6-pdr Mk. III"
 
+msgid "QF_6_pounder_Mk_IIIA"
+msgstr "QF 6-pdr Mk. III A"
+
 msgid "QF_6_pounder_Mk_III_AT"
 msgstr "QF 6-pdr AT Gun Mk. III"
 
@@ -3474,6 +3544,9 @@ msgstr "Q.F. 4.5-in. Howitzer (Bishop)"
 
 msgid "Q_F_6_in_Gun_Mk_V"
 msgstr "Q.F. 6-in. Gun Mk. V"
+
+msgid "Rolls_Royce_717"
+msgstr "Rolls-Royce 717"
 
 msgid "Rolls_Royce_B80"
 msgstr "Rolls-Royce B80"
@@ -3537,6 +3610,9 @@ msgstr "Rolls-Royce Meteor"
 
 msgid "Rolls_Royce_Meteor_4101"
 msgstr "Rolls-Royce Meteor (4101)"
+
+msgid "Rolls_Royce_Meteor_A"
+msgstr "Rolls-Royce Meteor A"
 
 msgid "Rolls_Royce_Meteor_A27M"
 msgstr "Rolls-Royce Meteor (A27M)"
@@ -3688,6 +3764,9 @@ msgstr "2x Rolls-Royce Phantom II"
 msgid "Rover_Meteorite"
 msgstr "Rover Meteorite"
 
+msgid "SR_40_E"
+msgstr "SR 40 E"
+
 msgid "SR_C42H"
 msgstr "SR C42H"
 
@@ -3829,11 +3908,17 @@ msgstr "FV225 Collector"
 msgid "Turret_1_GB131_Crusher"
 msgstr "Crusher"
 
+msgid "Turret_1_GB132_Taurus_CAT"
+msgstr "Taurus CAT"
+
 msgid "Turret_1_GB133_Charioteer_MkVII"
 msgstr "Charioteer Nomad"
 
 msgid "Turret_1_GB134_Gryphon"
 msgstr "Gryphon"
+
+msgid "Turret_1_GB137_Cromwell_Applique"
+msgstr "A27M Cromwell Applique"
 
 msgid "Turret_1_GB139_FV226_Contradictious"
 msgstr "FV226 Contradictious"
@@ -4320,6 +4405,9 @@ msgstr "APCR T29E3 MBC"
 msgid "_105mm_APC_EX20"
 msgstr "105 mm APC EX20"
 
+msgid "_105mm_APDS_HVKE"
+msgstr "APDS HVKE"
+
 msgid "_105mm_APDS_Kl14"
 msgstr "APDS Kl/14"
 
@@ -4368,6 +4456,9 @@ msgstr "105 mm Gun L7A2"
 msgid "_105mm_Gun_L7_HEAT_SH"
 msgstr "105 mm Gun L7A2"
 
+msgid "_105mm_HEAT_HVKE"
+msgstr "HEAT HVKE"
+
 msgid "_105mm_HEAT_L7"
 msgstr "US HEAT M456"
 
@@ -4413,6 +4504,9 @@ msgstr "HESH-T P-35"
 msgid "_105mm_HE_EX20"
 msgstr "105 mm HE EX20"
 
+msgid "_105mm_HE_HVKE"
+msgstr "HE HVKE"
+
 msgid "_105mm_HE_L7"
 msgstr "HESH-T L-35"
 
@@ -4430,6 +4524,9 @@ msgstr "HE M1"
 
 msgid "_105mm_HE_M11_MBC"
 msgstr "HE M11 MBC"
+
+msgid "_105mm_HVKE"
+msgstr "105 mm HVKE"
 
 msgid "_105mm_HV_AP"
 msgstr "105mm HV AP"
@@ -5568,6 +5665,9 @@ msgstr "HE Mk. V"
 msgid "_6_in_HE_Mk_VI"
 msgstr "HE Mk. VI"
 
+msgid "_6pdr_APCR_MK_1A"
+msgstr "APCR Mk. 1A"
+
 msgid "_6pdr_APCR_MK_1GD"
 msgstr "APCR Mk. 1GD"
 
@@ -5579,6 +5679,9 @@ msgstr "APCR Mk. 1T"
 
 msgid "_6pdr_APCR_MK_1TM"
 msgstr "APCR Mk. IA"
+
+msgid "_6pdr_AP_MK_1A"
+msgstr "AP Mk. 1A"
 
 msgid "_6pdr_AP_MK_1GD"
 msgstr "AP Mk. 1GD"
@@ -5612,6 +5715,9 @@ msgstr "HE Mk. 10T"
 
 msgid "_6pdr_HE_MK_10TM"
 msgstr "HE Mk. XA"
+
+msgid "_6pdr_HE_MK_1A"
+msgstr "HE Mk. 1A"
 
 msgid "_75mm_APCR_HV_Mk3"
 msgstr "APCR HV Mk. 3"

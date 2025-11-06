@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<nodefullVisual>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod0/Hull</nodefullVisual>
+	<parent>vehicles/german/G175_Rheinmetall_Begleitwagen/normal/lod1/Hull</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-1.449823 -0.640098 -2.807411</min>
+		<max>1.450589 0.703399 2.707409</max>
+	</visibilityBox>
+</root>

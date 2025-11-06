@@ -15,9 +15,7 @@ def getContextMenuHandlers():
 
 
 def getViewSettings():
-    from comp7.gui.impl.lobby.tournaments_widget import TournamentsWidgetComponent
     from comp7.gui.Scaleform.daapi.view.lobby.comp7_prime_time_view import Comp7PrimeTimeView
-    from comp7.gui.impl.lobby.comp7_grand_tournament_widget import Comp7GrandTournamentsWidgetComponent
     from comp7.gui.Scaleform.daapi.view.lobby.hangar.carousels.tank_carousel import Comp7TankCarousel
     from comp7.gui.impl.lobby.hangar.comp7_hangar import Comp7HangarWindow
     from gui.Scaleform.framework import getSwfExtensionUrl
@@ -28,8 +26,6 @@ def getViewSettings():
      ViewSettings(COMP7_HANGAR_ALIASES.COMP7_STYLE_PREVIEW, VehicleStylePreview, 'vehicleBasePreview.swf', WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_STYLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(COMP7_HANGAR_ALIASES.COMP7_CONFIGURABLE_VEHICLE_PREVIEW, ConfigurableVehiclePreview, 'vehiclePreview.swf', WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_CONFIGURABLE_VEHICLE_PREVIEW, ScopeTemplates.LOBBY_SUB_SCOPE),
      ViewSettings(COMP7_HANGAR_ALIASES.COMP7_LOBBY_HANGAR, Comp7HangarWindow, '', WindowLayer.SUB_VIEW, COMP7_HANGAR_ALIASES.COMP7_LOBBY_HANGAR, ScopeTemplates.LOBBY_SUB_SCOPE),
-     ComponentSettings(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER, TournamentsWidgetComponent, ScopeTemplates.DEFAULT_SCOPE),
-     ComponentSettings(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER, Comp7GrandTournamentsWidgetComponent, ScopeTemplates.DEFAULT_SCOPE),
      ComponentSettings(COMP7_HANGAR_ALIASES.COMP7_TANK_CAROUSEL, Comp7TankCarousel, ScopeTemplates.DEFAULT_SCOPE))
 
 

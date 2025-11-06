@@ -3476,7 +3476,7 @@ RECORDS = (
  (
   'singleAchievements', 'BattlePassCommonPr_18extra_1', 'p', 'B', 1),
  (
-  'singleAchievements', 'BPReserveAchievement_7', 'p', 'B', 1),
+  'singleAchievements', 'BattlePassCommonPr_18extra_2', 'p', 'B', 1),
  (
   'singleAchievements', 'BPReserveAchievement_8', 'p', 'B', 1),
  (
@@ -3622,7 +3622,9 @@ RECORDS = (
  (
   'singleAchievements', 'twoPointZeroMedal', 'p', 'B', 1),
  (
-  'singleAchievements', 'twoPointZeroCollectorMedal', 'p', 'B', 1))
+  'singleAchievements', 'twoPointZeroCollectorMedal', 'p', 'B', 1),
+ (
+  'singleAchievements', 'hw2025Medal', 'p', 'B', 1))
 RECORD_INDICES = dict((rec[:2], idx) for idx, rec in enumerate(RECORDS))
 RECORD_DB_IDS = {('total', 'creationTime'): 68, 
    ('total', 'lastBattleTime'): 7, 
@@ -5359,7 +5361,7 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('singleAchievements', 'BattlePassCommonPr_17extra_3'): 2014, 
    ('singleAchievements', 'BattlePassCommonPr_18'): 2015, 
    ('singleAchievements', 'BattlePassCommonPr_18extra_1'): 2016, 
-   ('singleAchievements', 'BPReserveAchievement_7'): 2017, 
+   ('singleAchievements', 'BattlePassCommonPr_18extra_2'): 2017, 
    ('singleAchievements', 'BPReserveAchievement_8'): 2018, 
    ('singleAchievements', 'BPReserveAchievement_9'): 2019, 
    ('singleAchievements', 'BPReserveAchievement_10'): 2020, 
@@ -5435,7 +5437,8 @@ RECORD_DB_IDS = {('total', 'creationTime'): 68,
    ('steamAchievements', 'steamGetTankLevel11Medal'): 2092, 
    ('singleAchievements', 'wt2025progression'): 2093, 
    ('singleAchievements', 'twoPointZeroMedal'): 2094, 
-   ('singleAchievements', 'twoPointZeroCollectorMedal'): 2095}
+   ('singleAchievements', 'twoPointZeroCollectorMedal'): 2095, 
+   ('singleAchievements', 'hw2025Medal'): 2096}
 DB_ID_TO_RECORD = dict([ (value, key) for key, value in RECORD_DB_IDS.iteritems() ])
 RECORD_DB_IDS.update({('vehTypeFrags', ''): 863, 
    ('a15x15Cut', ''): 864, 

@@ -2108,6 +2108,22 @@ msgstr "Сбросить"
 msgid "perksReset/title"
 msgstr "Сбросить все навыки?"
 
+msgid "physicsSoundQualityDoesNotMatch/cancel"
+msgstr "Отменить"
+
+msgid "physicsSoundQualityDoesNotMatch/message"
+msgstr ""
+"Выбранная вами настройка качества физики звука отличается от автоматически "
+"определённой. Включение этой настройки может повлиять на быстродействие "
+"игры. Рекомендуем проверить быстродействие перед подтверждением. Применить "
+"изменения?"
+
+msgid "physicsSoundQualityDoesNotMatch/submit"
+msgstr "Подтвердить"
+
+msgid "physicsSoundQualityDoesNotMatch/title"
+msgstr "Несовпадение настроек физики звука"
+
 msgid "postmortem/cancel"
 msgstr "Выйти"
 
@@ -2766,7 +2782,10 @@ msgid "retrain/submit"
 msgstr "Переобучить"
 
 msgid "retrain/title/massive"
-msgstr "Переобучить на машину %(vehicleName)s?"
+msgstr "Переобучить на машину %(vehicleName)s&zwnbsp;?"
+
+msgid "retrain/title/massiveVehicleTag"
+msgstr "%(vehicleName)s?"
 
 msgid "retrain/title/single/complex"
 msgstr ""

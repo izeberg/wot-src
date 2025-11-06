@@ -29,6 +29,7 @@ from gui.shared.gui_items.processors.vehicle import VehicleAutoReturnProcessor
 from gui.shared.items_cache import CACHE_SYNC_REASON
 from gui.shared.notifications import NotificationPriorityLevel
 from gui.shared.utils import decorators
+from gui.shared.utils.HangarSpace import HangarVideoCameraController
 from gui.shared.utils.module_upd_available_helper import getResearchInfo
 from gui.shared.utils.requesters import REQ_CRITERIA
 from gui.veh_post_progression.helpers import storeLastSeenStep, needToShowCounter
@@ -42,6 +43,7 @@ from skeletons.gui.shared import IItemsCache
 from skeletons.gui.game_control import IPlatoonController
 from gui.prb_control.entities.base.listener import IPrbListener
 from gui.shared import events, EVENT_BUS_SCOPE
+from skeletons.gui.shared.utils import IHangarSpace
 if typing.TYPE_CHECKING:
     from gui.shared.utils.requesters import RequestCriteria
 _logger = logging.getLogger(__name__)
@@ -60,16 +62,22 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
     __platoonCtrl = dependency.descriptor(IPlatoonController)
     __cmpBasket = dependency.descriptor(IVehicleComparisonBasket)
     __lobbyContext = dependency.descriptor(ILobbyContext)
+    __hangarSpace = dependency.descriptor(IHangarSpace)
 
     def __init__(self):
         super(VehicleMenuPresenter, self).__init__(model=VehicleMenuModel)
         self._menuItems = {}
         self.__hasInventoryTankman = False
         self.__hasTankman = False
+        self.__isVehicleChanging = False
 
     @property
     def viewModel(self):
         return super(VehicleMenuPresenter, self).getViewModel()
+
+    @property
+    def _cameraController(self):
+        return self.__hangarSpace.videoCameraController
 
     def _createMenuItems(self):
         return {VehicleMenuModel.CUSTOMIZATION: _ItemInfo(partial(self.__getStylesState, requestCriteria=~REQ_CRITERIA.CUSTOMIZATION.HAS_TAGS([ItemTags.IS_3D])), 0, self.__customizationService.showCustomization), 
@@ -91,9 +99,13 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
     def _getEvents(self):
         return (
          (
-          g_currentVehicle.onChanged, self.__updateModel),
+          g_currentVehicle.onChanged, self.__onVehicleChanged),
+         (
+          g_currentVehicle.onChangeStarted, self.__onVehicleChanging),
          (
           AccountSettings.onSettingsChanging, self.__onAccountSettingsChanging),
+         (
+          g_playerEvents.onConfigModelUpdated, self.__configChangeHandler),
          (
           self.viewModel.onNavigate, self.__onNavigate),
          (
@@ -107,7 +119,7 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
          (
           self.__cmpBasket.onSwitchChange, self.__onVehCmpBasketStateChanged),
          (
-          g_playerEvents.onConfigModelUpdated, self.__configChangeHandler))
+          self._cameraController.onEnabledChange, self.__onCameraEnabledChage))
 
     def _getListeners(self):
         return (
@@ -127,7 +139,18 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
         super(VehicleMenuPresenter, self)._finalize()
         self._menuItems = {}
         self.__styleCriteria = None
+        self.__isVehicleChanging = False
         return
+
+    def __onCameraEnabledChage(self, _):
+        self.__updateModel()
+
+    def __onVehicleChanging(self):
+        self.__isVehicleChanging = True
+
+    def __onVehicleChanged(self):
+        self.__isVehicleChanging = False
+        self.__updateModel()
 
     def __onPlatoonMembersUpdate(self, *_):
         self.__updateModel()
@@ -180,6 +203,8 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
         menuItems.set(name, json.dumps(data))
 
     def __getMenuItemState(self, name):
+        if self._cameraController.isEnabled:
+            return VehicleMenuModel.DISABLED
         if not g_currentVehicle.isPresent():
             return VehicleMenuModel.DISABLED
         menuItemStateValue = self._menuItems[name].state()
@@ -449,6 +474,13 @@ class VehicleMenuPresenter(ViewComponent[VehicleMenuModel], IPrbListener):
 
     def __onNavigate(self, args):
         name = args.get('name')
+        _logger.debug('Navigate to %s', name)
+        if self.__isVehicleChanging:
+            _logger.debug('Vehicle is changing, canceling the navigation')
+            return
+        if self._cameraController.isEnabled:
+            _logger.debug('Navigate to %s disabled by free camera', name)
+            return
         if name == VehicleMenuModel.FIELD_MODIFICATION:
             self.__updateLastSeenModification()
         self._menuItems[name].handler()

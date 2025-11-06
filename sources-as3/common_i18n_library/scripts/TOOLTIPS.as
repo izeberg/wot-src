@@ -6429,6 +6429,38 @@ package
       
       public static const NOTRECRUITEDTANKMAN_HW24_COMMANDER5_DESC:String = "#tooltips:notrecruitedtankman/hw24_commander5/desc";
       
+      public static const NOTRECRUITEDTANKMAN_HW25_QUICKYBABY_LABEL:String = "#tooltips:notrecruitedtankman/hw25_Quickybaby/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_QUICKYBABY_DESC:String = "#tooltips:notrecruitedtankman/hw25_Quickybaby/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_MAILAND_LABEL:String = "#tooltips:notrecruitedtankman/hw25_Mailand/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_MAILAND_DESC:String = "#tooltips:notrecruitedtankman/hw25_Mailand/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_MOUZAKROBAT_LABEL:String = "#tooltips:notrecruitedtankman/hw25_MouzAkrobat/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_MOUZAKROBAT_DESC:String = "#tooltips:notrecruitedtankman/hw25_MouzAkrobat/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_SKILL4LTU_LABEL:String = "#tooltips:notrecruitedtankman/hw25_Skill4ltu/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_SKILL4LTU_DESC:String = "#tooltips:notrecruitedtankman/hw25_Skill4ltu/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_LUJUN_CN_LABEL:String = "#tooltips:notrecruitedtankman/hw25_LuJun_CN/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_LUJUN_CN_DESC:String = "#tooltips:notrecruitedtankman/hw25_LuJun_CN/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_TITI_CN_LABEL:String = "#tooltips:notrecruitedtankman/hw25_Titi_CN/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_TITI_CN_DESC:String = "#tooltips:notrecruitedtankman/hw25_Titi_CN/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_DAKUN_CN_LABEL:String = "#tooltips:notrecruitedtankman/hw25_DaKun_CN/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_DAKUN_CN_DESC:String = "#tooltips:notrecruitedtankman/hw25_DaKun_CN/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_PANCHEZHANG_CN_LABEL:String = "#tooltips:notrecruitedtankman/hw25_Panchezhang_CN/label";
+      
+      public static const NOTRECRUITEDTANKMAN_HW25_PANCHEZHANG_CN_DESC:String = "#tooltips:notrecruitedtankman/hw25_Panchezhang_CN/desc";
+      
       public static const NOTRECRUITEDTANKMAN_COMMANDER_BP1_LABEL:String = "#tooltips:notrecruitedtankman/commander_bp1/label";
       
       public static const NOTRECRUITEDTANKMAN_COMMANDER_BP1_DESC:String = "#tooltips:notrecruitedtankman/commander_bp1/desc";
@@ -8591,6 +8623,30 @@ package
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_4_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_4/howToGetInfo";
       
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_KEI_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_kei/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_KEI_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_kei/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_KEI_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_kei/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_NAOMI_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_naomi/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_NAOMI_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_naomi/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_NAOMI_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_naomi/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_SAUNDERS_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_saunders/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_SAUNDERS_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_saunders/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_SAUNDERS_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_saunders/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_ALISA_LABEL:String = "#tooltips:notrecruitedtankman/girls_und_panzer_alisa/label";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_ALISA_DESC:String = "#tooltips:notrecruitedtankman/girls_und_panzer_alisa/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_GIRLS_UND_PANZER_ALISA_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/girls_und_panzer_alisa/howToGetInfo";
+      
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_5/label";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_5_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_5/desc";
@@ -8620,6 +8676,42 @@ package
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_9_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_9/desc";
       
       public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_9_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_9/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_LABEL:String = "#tooltips:notrecruitedtankman/john_christmas/label";
+      
+      public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_DESC:String = "#tooltips:notrecruitedtankman/john_christmas/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_JOHN_CHRISTMAS_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/john_christmas/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_10_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_10/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_10_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_10/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_10_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_10/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_11_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_11/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_11_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_11/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_11_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_11/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_12_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_12/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_12_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_12/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_12_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_12/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_13_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_13/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_13_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_13/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_13_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_13/howToGetInfo";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_14_LABEL:String = "#tooltips:notrecruitedtankman/tankmen_bp18_14/label";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_14_DESC:String = "#tooltips:notrecruitedtankman/tankmen_bp18_14/desc";
+      
+      public static const NOTRECRUITEDTANKMAN_TANKMEN_BP18_14_HOWTOGETINFO:String = "#tooltips:notrecruitedtankman/tankmen_bp18_14/howToGetInfo";
       
       public static const ELEN_SUMMARY_RANK_ENUM:Array = [ELEN_SUMMARY_RANK_1,ELEN_SUMMARY_RANK_2,ELEN_SUMMARY_RANK_3,ELEN_SUMMARY_RANK_4,ELEN_SUMMARY_RANK_NORANK];
       

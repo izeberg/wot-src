@@ -42,8 +42,8 @@ class MinimapEntry(object):
                                                                                         'enemy'), ('_classTag',
                                                                                                    'class'))
 class VehicleEntry(MinimapEntry):
-    __slots__ = ('_entryID', '_classTag', '_location', '_guiLabel', '_spottedCount',
-                 '_spottedTime', '_isInAoI', '_isEnemy', '_isAlive')
+    __slots__ = ('_classTag', '_location', '_guiLabel', '_spottedCount', '_spottedTime',
+                 '_isInAoI', '_isEnemy', '_isAlive')
 
     def __init__(self, entryID, active, matrix=None, location=VEHICLE_LOCATION.UNDEFINED):
         super(VehicleEntry, self).__init__(entryID, active, matrix=matrix)

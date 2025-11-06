@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.521835 -0.179525 0.017761</min>
+		<max>0.521914 0.291287 3.678792</max>
+	</visibilityBox>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/_skins/M4A4_Firefly_CFE_A_3Dst/normal/lod0/Gun_01</nodefullVisual>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/_skins/M4A4_Firefly_CFE_A_3Dst/normal/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+</root>

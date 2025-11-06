@@ -131,7 +131,7 @@ class VehiclesStatisticsPresenter(ViewComponent[VehicleStatisticsModel]):
         model.setBpSpecial(self.__battlePass.isSpecialVehicle(vehicle.intCD))
         model.setMaxBpScore(bpCap)
         model.setBpProgress(bpProgress)
-        model.setOwn3DStyle(self.__accountStyles.criteria(vehicle))
+        model.setOwn3DStyle(vehicle.intCD in self.__accountStyles.vehiclesWith3DStyles and not vehicle.isOutfitLocked)
         if vehicle.isEarnCrystals:
             numberOfCrystalEarned = model.getNumberOfCrystalEarned()
             for numberOfCrystals in vehicle.getCrystalsEarnedInfo():

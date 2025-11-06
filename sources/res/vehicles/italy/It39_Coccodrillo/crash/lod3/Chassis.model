@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It39_Coccodrillo/crash/lod3/Chassis</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It39_Coccodrillo/crash/lod4/Chassis</parent>
+	<extent>192.000000</extent>
+	<visibilityBox>
+		<min>-1.761192 -0.002526 -3.775422</min>
+		<max>1.761176 1.188573 3.621190</max>
+	</visibilityBox>
+</root>

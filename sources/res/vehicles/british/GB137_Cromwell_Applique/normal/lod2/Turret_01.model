@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/british/GB137_Cromwell_Applique/normal/lod2/Turret_01</nodefullVisual>
+	<parent>vehicles/british/GB137_Cromwell_Applique/normal/lod3/Turret_01</parent>
+	<extent>96</extent>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-1.163134 -0.000044 -1.598841</min>
+		<max>
+			0.9607 1.946654 0.947533
+			<!--BW_String-->
+		</max>
+	</visibilityBox>
+</root>

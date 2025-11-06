@@ -461,6 +461,9 @@ msgstr "AS-XX 40 t"
 msgid "Chassis_F136_AMX_67_Imbattable"
 msgstr "AMX 67 Imbattable"
 
+msgid "Chassis_F138_Renault_R35_FCM_36"
+msgstr "Renault R35"
+
 msgid "Chassis_F13_AMX38"
 msgstr "AMX 38 1er prototype"
 
@@ -818,6 +821,9 @@ msgstr "ER 53"
 
 msgid "ER_54"
 msgstr "ER 54"
+
+msgid "ER_54A"
+msgstr "ER 54A"
 
 msgid "ER_55"
 msgstr "ER 55"
@@ -1619,6 +1625,30 @@ msgstr ""
 
 msgid "F136_AMX_67_Imbattable_short"
 msgstr "Imbattable"
+
+msgid "F138_Renault_R35_FCM_36"
+msgstr "Renault R35/FCM 36"
+
+msgid "F138_Renault_R35_FCM_36_desc"
+msgstr ""
+"В рамках французской программы 1930-х годов по разработке и производству "
+"новых танков активно велись работы по унификации башен различных машин. "
+"Одним из таких экспериментальных проектов стал лёгкий танк R35 с башней от "
+"FCM 36. Серийно не выпускался."
+
+msgid "F138_Renault_R35_FCM_36_long_special"
+msgstr ""
+"Renault R35/FCM 36 — французский лёгкий танк II уровня. Машина сочетает "
+"корпус Renault R35 с башней от FCM 36. Вооружена очень скорострельным 37-мм "
+"орудием и обладает надёжным бронированием. Сочетание этих характеристик "
+"позволяет удерживать ключевые позиции и вести наступление, невзирая на "
+"ответный огонь."
+
+msgid "F138_Renault_R35_FCM_36_short"
+msgstr "R35/FCM 36"
+
+msgid "F138_Renault_R35_FCM_36_short_special"
+msgstr "Хорошее бронирование, высокая скорострельность"
 
 msgid "F13_AMX38"
 msgstr "AMX 38"
@@ -2964,6 +2994,9 @@ msgstr "Renault T14 (V39)"
 msgid "Renault_V4"
 msgstr "Renault V4"
 
+msgid "Renault_V4A"
+msgstr "Renault V4A"
+
 msgid "SARL42"
 msgstr "SARL 42"
 
@@ -3289,6 +3322,9 @@ msgstr "AS-XX 40 t"
 
 msgid "Turret_1_F136_AMX_67_Imbattable"
 msgstr "AMX 67 Imbattable"
+
+msgid "Turret_1_F138_Renault_R35_FCM_36"
+msgstr "FCM 36"
 
 msgid "Turret_1_F13_AMX38"
 msgstr "AMX 38"
@@ -4254,11 +4290,17 @@ msgstr ""
 msgid "_37mm_APX_SA18"
 msgstr "37 mm APX SA18"
 
+msgid "_37mm_APX_SA18A"
+msgstr "37 mm APX SA18A"
+
 msgid "_37mm_APX_SA18_FT"
 msgstr "37 mm APX SA18 (FT)"
 
 msgid "_37mm_FrtPrf1935"
 msgstr "Frt.Prf. mle. 1935"
+
+msgid "_37mm_FrtPrf1935A"
+msgstr "Frt.Prf. mle. 1935A"
 
 msgid "_37mm_Frt_Prf_mle_1935_FT"
 msgstr "Frt.Prf. mle. 1935 (FT)"
@@ -4290,6 +4332,9 @@ msgstr "OE mle. 1932 (38)"
 msgid "_37mm_OE_mle_1932_FCM"
 msgstr "OE mle. 1932 (FCM)"
 
+msgid "_37mm_OE_mle__1916A"
+msgstr "OE mle. 1916A"
+
 msgid "_37mm_Odr_mle._1932"
 msgstr "ODR mle. 1932"
 
@@ -4298,6 +4343,9 @@ msgstr "ODR mle. 1935"
 
 msgid "_37mm_Odr_mle._1939"
 msgstr "ODR mle. 1939"
+
+msgid "_37mm_Odr_mle__1935A"
+msgstr "ODR mle. 1935A"
 
 msgid "_37mm_Oe_mle._1932"
 msgstr "OE mle. 1932"

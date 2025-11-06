@@ -95,6 +95,8 @@ class BaseBattlePassEntryPointView(IGlobalListener, EventsHandler):
 
     @property
     def chapterID(self):
+        if self.__battlePass.isHoliday():
+            return self.__battlePass.getHolidayChapterID()
         return self.__battlePass.getCurrentChapterID()
 
     @property
@@ -134,6 +136,14 @@ class BaseBattlePassEntryPointView(IGlobalListener, EventsHandler):
     @property
     def isPostProgressionActive(self):
         return self.__battlePass.isPostProgressionActive()
+
+    @property
+    def isAnyExtraActive(self):
+        return self.__battlePass.getCurrentChapterID() in self.__battlePass.getExtraChapterIDs()
+
+    @property
+    def isAllExtraCompleted(self):
+        return all(self.__battlePass.isChapterCompleted(chapterID) for chapterID in self.__battlePass.getExtraChapterIDs())
 
     @property
     def isPaused(self):

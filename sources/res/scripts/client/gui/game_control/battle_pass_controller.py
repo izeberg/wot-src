@@ -699,7 +699,7 @@ class BattlePassController(IBattlePassController, EventsHandler):
         self.__chapterToTankmenScreen = {}
         for screenID, screen in self.getTankmenScreens().iteritems():
             for chapterID in screen['chapters']:
-                if chapterID in self.getMainChapterIDs():
+                if chapterID in self.__getConfig().getChapterIDs():
                     self.__chapterToTankmenScreen[chapterID] = screenID
 
     def __updateSpecialTankmen(self):
@@ -802,7 +802,6 @@ class BattlePassController(IBattlePassController, EventsHandler):
         self.__oldPoints = newPoints
         self.__oldLevel = newLevel
         if 'chapterID' in data:
-            self.__lastActiveChapterID = data['chapterID']
             self.onChapterChanged()
 
     def __onOffersUpdated(self):

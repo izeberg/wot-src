@@ -2353,4 +2353,62 @@
 			</cust_progress_1>
 		</unlockChains>
 	</styleProgress>
+	<styleProgress>
+		<id>1214</id>
+		<finishTime>
+			31.12.2025 06:00
+			<!--BW_String-->
+		</finishTime>
+		<unlockChains>
+			<cust_progress_1>
+				<item>
+					<level>1</level>
+					<camouflage>
+						<id>1050</id>
+					</camouflage>
+				</item>
+				<item>
+					<level>2</level>
+					<camouflage>
+						<id>1051</id>
+					</camouflage>
+				</item>
+				<item>
+					<level>3</level>
+					<camouflage>
+						<id>1052</id>
+					</camouflage>
+				</item>
+			</cust_progress_1>
+		</unlockChains>
+	</styleProgress>
+	<styleProgress>
+		<id>1231</id>
+		<finishTime>
+			30.12.2025 00:00
+			<!--BW_String-->
+		</finishTime>
+		<unlockChains>
+			<cust_progress_1>
+				<item>
+					<level>1</level>
+					<camouflage>
+						<id>1065</id>
+					</camouflage>
+				</item>
+				<item>
+					<level>2</level>
+					<camouflage>
+						<id>1066</id>
+					</camouflage>
+				</item>
+				<item>
+					<level>3</level>
+					<camouflage>
+						<id>1067</id>
+					</camouflage>
+				</item>
+			</cust_progress_1>
+		</unlockChains>
+	</styleProgress>
 </root>

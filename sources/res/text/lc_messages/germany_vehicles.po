@@ -487,6 +487,9 @@ msgstr "15 tonnin rynnäkkötykkipanssarivaunu BT-42"
 msgid "Chassis_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
 
+msgid "Chassis_G175_Rheinmetall_Begleitwagen"
+msgstr "Rheinmetall Begleitwagen"
+
 msgid "Chassis_G176_Jagdpanzer_E90"
 msgstr "Jagdpanzer E 90"
 
@@ -1096,6 +1099,9 @@ msgstr "FuG 5 A"
 
 msgid "FuG6"
 msgstr "FuG 6"
+
+msgid "FuG6_SE20v"
+msgstr "FuG 6 SE20v"
 
 msgid "FuG7"
 msgstr "FuG 7"
@@ -2812,6 +2818,36 @@ msgstr "GST Turm"
 msgid "G174_Kpz3_GST_Turm_short_special"
 msgstr "Прочная лобовая броня, автоматическая гидропневматическая подвеска"
 
+msgid "G175_Rheinmetall_Begleitwagen"
+msgstr "Rheinmetall Begleitwagen"
+
+msgid "G175_Rheinmetall_Begleitwagen_desc"
+msgstr ""
+"Во второй половине 1934 года в Германии начались работы по созданию танка с "
+"обозначением Verbesserten Nb.Fz. Проектированием занялась компания "
+"Rheinmetall. Машина должна была весить 17–18 тонн. Вооружение состояло из "
+"короткой 75-мм пушки со спаренным пулемётом. Ещё один пулемёт размещался в "
+"малой башне в передней части корпуса. Более плотная компоновка с "
+"трансмиссией в передней части позволила значительно укоротить корпус. Также "
+"предполагалось использовать специальный V-образный 10-литровый "
+"12-цилиндровый двигатель Maybach HL 100 TR мощностью 300 л.с. Rheinmetall "
+"изготовила полноразмерный деревянный макет, а позже — шасси из "
+"конструкционной стали, которое многократно дорабатывалось, но основой для "
+"серийного танка так и не стало."
+
+msgid "G175_Rheinmetall_Begleitwagen_long_special"
+msgstr ""
+"Rheinmetall Begleitwagen — немецкий средний танк III уровня. Вооружён 7,5-см"
+" орудием с впечатляющим разовым уроном. У машины среднее для этого уровня "
+"бронирование и неплохая мобильность. Благодаря хорошей «альфе» Begleitwagen "
+"лучше всего проявляет себя в «разменах» на ближней дистанции."
+
+msgid "G175_Rheinmetall_Begleitwagen_short"
+msgstr "B.W.(Rh)"
+
+msgid "G175_Rheinmetall_Begleitwagen_short_special"
+msgstr "Мощное орудие, неплохая мобильность"
+
 msgid "G176_Jagdpanzer_E90"
 msgstr "Jagdpanzer E 90"
 
@@ -4189,6 +4225,9 @@ msgstr "2 x Maybach HL 66 P"
 
 msgid "Maybach_HL90"
 msgstr "Maybach HL 90"
+
+msgid "Maybach_HL_100TR_BW"
+msgstr "Maybach HL 100 TR BW"
 
 msgid "Maybach_HL_100_WT_IV"
 msgstr "Maybach HL 100 (WT IV)"
@@ -5766,6 +5805,9 @@ msgstr "BT-rynnäkkötykki"
 
 msgid "Turret_1_G174_Kpz3_GST_Turm"
 msgstr "Kampfpanzer 3 GST Turm"
+
+msgid "Turret_1_G175_Rheinmetall_Begleitwagen"
+msgstr "Rheinmetall Begleitwagen"
 
 msgid "Turret_1_G176_Jagdpanzer_E90"
 msgstr "Jagdpanzer E 90"
@@ -7780,11 +7822,20 @@ msgstr "APCBC"
 msgid "_75mm_Flak_L60"
 msgstr "7,5 cm Flak L/60"
 
+msgid "_75mm_Gr_38_HL_C"
+msgstr "Gr 38 HL C"
+
+msgid "_75mm_K_Gr_rot_Pz_C"
+msgstr "K.Gr.rot.Pz.C"
+
 msgid "_75mm_KwK41_L58U_conic"
 msgstr "7,5/5,5 cm Waffe SP"
 
 msgid "_75mm_KwK45_L100"
 msgstr "7,5 cm Kw.K. L/100"
+
+msgid "_75mm_KwK_36_L21"
+msgstr "7,5 cm Kw.K. 36 L/21"
 
 msgid "_75mm_KwK_37_L24"
 msgstr "7,5 cm Kw.K. 37 L/24"
@@ -7998,6 +8049,9 @@ msgstr "Sprgr.Patr 18"
 
 msgid "_75mm_Sprg_18_B"
 msgstr "Sprgr. 18 (B)"
+
+msgid "_75mm_Sprg_34_C"
+msgstr "Sprgr 34 C"
 
 msgid "_75mm_Sprgr_18L_G"
 msgstr "Sprgr. 18L (G)"

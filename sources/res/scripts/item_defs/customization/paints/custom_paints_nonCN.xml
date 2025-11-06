@@ -871,6 +871,21 @@
 			</metallic>
 			<tags>hiddenInUI</tags>
 		</paint>
+		<paint>
+			<id>5603</id>
+			<texture>gui/maps/vehicles/repaints/custom_color_17.png</texture>
+			<color>158 165 166 255</color>
+			<gloss>
+				0.509
+				<!--BW_String-->
+			</gloss>
+			<metallic>
+				0.23
+				<!--BW_String-->
+			</metallic>
+			<userString>#vehicle_customization:repaint/snowy_climb</userString>
+			<tags>hiddenInUI</tags>
+		</paint>
 	</itemGroup>
 	<itemGroup>
 		<name>PUB West German Reunification 2025</name>

@@ -97,9 +97,11 @@ class AnimatorComponent(PyComponentWrapperBase):
 	def id(self, *args, **kwargs): pass
 	def isPlaying(self, *args, **kwargs): pass
 	def isPlayingByName(self, *args, **kwargs): pass
+	def removeEventReaction(self, *args, **kwargs): pass
 	def reset(self, *args, **kwargs): pass
 	def setBoolParam(self, *args, **kwargs): pass
 	def setFloatParam(self, *args, **kwargs): pass
+	def setIntParam(self, *args, **kwargs): pass
 	def setTrigger(self, *args, **kwargs): pass
 	def start(self, *args, **kwargs): pass
 	def startLayerByIndex(self, *args, **kwargs): pass
@@ -1010,4 +1012,3 @@ __package__ = None
 def findParentSlot(*args, **kwargs): pass
 def findRootSlot(*args, **kwargs): pass
 def findSlot(*args, **kwargs): pass
-def setSpaceItemsVisibilityMask(*args, **kwargs): pass

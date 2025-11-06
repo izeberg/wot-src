@@ -121,6 +121,12 @@ msgstr "Обмен техники"
 msgid "carousel/filters/allVehicle"
 msgstr "Вся моя техника"
 
+msgid "myVehicles/buttons/crewToggle"
+msgstr "Экипаж"
+
+msgid "myVehicles/buttons/ttcToggle"
+msgstr "Характеристики"
+
 msgid "rentalCounter/count/battles"
 msgid_plural "plural/rentalCounter/count/battles"
 msgstr[0] "{{count}} бой"
@@ -150,6 +156,27 @@ msgstr "Нажмите, чтобы перейти к плейлистам тех
 
 msgid "tooltip/filters/myVehicle/header"
 msgstr "Моя техника"
+
+msgid "vehicleMenu/menuButton/tooltip/crew/body"
+msgstr "Управление, обучение и переобучение экипажа."
+
+msgid "vehicleMenu/menuButton/tooltip/crew/header"
+msgstr "Управление экипажем"
+
+msgid "vehicleMenu/menuButton/tooltip/customization/body"
+msgstr "Внешний вид машины: 2D-/3D-стили и другие элементы."
+
+msgid "vehicleMenu/menuButton/tooltip/customization/header"
+msgstr "Внешний вид"
+
+msgid "vehicleMenu/menuButton/tooltip/hotkey/title"
+msgstr "Нажмите, чтобы открыть"
+
+msgid "vehicleMenu/menuButton/tooltip/vehicle/body"
+msgstr "Информация о машине, исследование, сравнение, ремонт."
+
+msgid "vehicleMenu/menuButton/tooltip/vehicle/header"
+msgstr "Управление машиной"
 
 msgid "vehicleMenu/menuItem/aboutVehicle/title"
 msgstr "О МАШИНЕ"

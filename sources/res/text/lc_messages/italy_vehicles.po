@@ -37,6 +37,9 @@ msgstr "Cannone da 105/55"
 msgid "Cannone_da_105_Rh_V1"
 msgstr "Cannone da 105 Rh V1"
 
+msgid "Cannone_da_127_OTO_Melara_veloce"
+msgstr "Cannone da 127 OTO Melara veloce"
+
 msgid "Cannone_da_37_20"
 msgstr "Cannone da 37/20"
 
@@ -252,6 +255,9 @@ msgstr "Каменный страж"
 
 msgid "Chassis_It37_Serpente"
 msgstr "Serpente"
+
+msgid "Chassis_It39_Coccodrillo"
+msgstr "Coccodrillo"
 
 msgid "Continental_AOI_1490_italy"
 msgstr "Continental AOI-1490-I"
@@ -952,6 +958,35 @@ msgstr "Serpente"
 msgid "It37_Serpente_short_special"
 msgstr "Спаренная орудийная установка, хорошая мобильность"
 
+msgid "It39_Coccodrillo"
+msgstr "Coccodrillo"
+
+msgid "It39_Coccodrillo_descr"
+msgstr ""
+"В 1961 году, после ознакомления итальянских военных с разведданными о "
+"советском Т-10М, было принято решение создать собственный танк для борьбы с "
+"противником из СССР. Подготовка технического задания затянулась, и "
+"разработка началась лишь в 1965-м. Машина получила условное обозначение "
+"Coccodrillo и задумывалась как средний танк поддержки. К 1970 году проект "
+"был в целом завершён, однако в это же время в Италии развернули лицензионное"
+" производство Leopard 1. В результате от дальнейшей реализации Coccodrillo "
+"отказались из-за высокой стоимости и низкой подвижности по сравнению с "
+"немецкой машиной."
+
+msgid "It39_Coccodrillo_long_special"
+msgstr ""
+"Coccodrillo — итальянский средний танк X уровня. Благодаря необычной "
+"компоновке лобовая броня как башни, так и корпуса расположена под "
+"рациональными углами. У машины неплохая мобильность, но главный сюрприз — "
+"его огневая мощь. Танк оснащён 127-мм орудием с системой дозарядки, которое "
+"может нанести серьёзный урон противнику."
+
+msgid "It39_Coccodrillo_short"
+msgstr "Coccodrillo"
+
+msgid "It39_Coccodrillo_short_special"
+msgstr "Достойная броня и мобильность, система дозарядки"
+
 msgid "MB_822_Ka_500"
 msgstr "MB 822 Ka-500"
 
@@ -969,6 +1004,9 @@ msgstr "MB 837 Ea"
 
 msgid "MB_838"
 msgstr "MB 838"
+
+msgid "MB_838_CaM_500A"
+msgstr "MB 838 CaM-500A"
 
 msgid "MTU_870"
 msgstr "MTU 870"
@@ -1053,6 +1091,9 @@ msgstr "R.F.C.R."
 
 msgid "SEM_24"
 msgstr "SEM-24"
+
+msgid "SEM_24C"
+msgstr "SEM-24C"
 
 msgid "SEM_25"
 msgstr "SEM-25"
@@ -1224,6 +1265,9 @@ msgstr "Каменный страж"
 
 msgid "Turret_1_It37_Serpente"
 msgstr "Serpente"
+
+msgid "Turret_1_It39_Coccodrillo"
+msgstr "Coccodrillo"
 
 msgid "Turret_2_It03_M15_42"
 msgstr "M15/42 modificata"
@@ -1513,17 +1557,26 @@ msgstr "127 mm OTO Melara"
 msgid "_127mm_a_e_127_51"
 msgstr "a.e. 127/51 Mk. 115"
 
+msgid "_127mm_a_e_127_54_Mk_115"
+msgstr "a.e. 127/54 Mk. 115"
+
 msgid "_127mm_a_e_127_58_Mark_116_CC1"
 msgstr "a.e. 127/58 Mk. 116 (CC1)"
 
 msgid "_127mm_c_c_127_51"
 msgstr "c.c. 127/51 Mk. 410"
 
+msgid "_127mm_c_c_127_54_Mk_410"
+msgstr "c.c. 127/54 Mk. 410"
+
 msgid "_127mm_c_c_127_58_Mk_411_CC1"
 msgstr "c.c. 127/58 Mk. 411 (CC1)"
 
 msgid "_127mm_c_p_127_51"
 msgstr "c.p. 127/51 Mk. 315"
+
+msgid "_127mm_c_p_127_54_Mk_315"
+msgstr "c.p. 127/54 Mk. 315"
 
 msgid "_130mm_AP_Mark_46"
 msgstr "c.p. 130/45 Mk. 46"

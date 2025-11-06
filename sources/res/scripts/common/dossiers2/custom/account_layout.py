@@ -377,14 +377,14 @@ _SINGLE_ACHIEVEMENTS_VALUES = [
  'NY25_CelebChallenge', '14YearsOfService', 'BattlePassCommonPr_NY25',
  'BattlePassCommonPr_16', 'BattlePassCommonPr_17', 'BattlePassCommonPr_17extra_1',
  'BattlePassCommonPr_17extra_2', 'BattlePassCommonPr_17extra_3', 'BattlePassCommonPr_18',
- 'BattlePassCommonPr_18extra_1', 'BPReserveAchievement_7', 'BPReserveAchievement_8',
- 'BPReserveAchievement_9', 'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal',
- 'wot15thAnniversary', 'wot15thAnniversaryElite',
+ 'BattlePassCommonPr_18extra_1', 'BattlePassCommonPr_18extra_2',
+ 'BPReserveAchievement_8', 'BPReserveAchievement_9', 'BPReserveAchievement_10',
+ 'vDayHero', 'ls2025Medal', 'wot15thAnniversary', 'wot15thAnniversaryElite',
  'meritPM3', 'comp7_5_1', 'comp7_5_2', 'comp7_5_3',
  'comp7_5_yearly_iron', 'comp7_5_yearly_bronze', 'comp7_5_yearly_silver',
  'comp7_5_yearly_gold', 'comp7_5_yearly_champion', 'comp7_5_yearly_legend',
  'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
- 'twoPointZeroCollectorMedal']
+ 'twoPointZeroCollectorMedal', 'hw2025Medal']
 _singleAchievementsPopUps = [
  'titleSniper', 'invincible', 'diehard', 'handOfDeath',
  'armorPiercer', 'battleCitizen', 'WFC2014', 'tacticalBreakthrough', 'aimer',
@@ -453,14 +453,14 @@ _singleAchievementsPopUps = [
  '14YearsOfService', 'BattlePassCommonPr_NY25', 'BattlePassCommonPr_16',
  'BattlePassCommonPr_17', 'BattlePassCommonPr_17extra_1', 'BattlePassCommonPr_17extra_2',
  'BattlePassCommonPr_17extra_3', 'BattlePassCommonPr_18', 'BattlePassCommonPr_18extra_1',
- 'BPReserveAchievement_7', 'BPReserveAchievement_8', 'BPReserveAchievement_9',
+ 'BattlePassCommonPr_18extra_2', 'BPReserveAchievement_8', 'BPReserveAchievement_9',
  'BPReserveAchievement_10', 'vDayHero', 'ls2025Medal',
  'wot15thAnniversary', 'wot15thAnniversaryElite',
  'meritPM3', 'comp7_5_1', 'comp7_5_2', 'comp7_5_3',
  'comp7_5_yearly_iron', 'comp7_5_yearly_bronze', 'comp7_5_yearly_silver',
  'comp7_5_yearly_gold', 'comp7_5_yearly_champion', 'comp7_5_yearly_legend',
  'ls2_0Medal', 'sccHero', 'wt2025progression', 'twoPointZeroMedal',
- 'twoPointZeroCollectorMedal']
+ 'twoPointZeroCollectorMedal', 'hw2025Medal']
 _singleAchievementsBlockBuilder = BinarySetDossierBlockBuilder('singleAchievements', _SINGLE_ACHIEVEMENTS_VALUES, SINGLE_ACHIEVEMENTS_DEPENDENCIES, _singleAchievementsPopUps)
 FORT_ACHIEVEMENTS_BLOCK_LAYOUT = [
  'conqueror', 'fireAndSword', 'crusher', 'counterblow', 'kampfer', 'soldierOfFortune']

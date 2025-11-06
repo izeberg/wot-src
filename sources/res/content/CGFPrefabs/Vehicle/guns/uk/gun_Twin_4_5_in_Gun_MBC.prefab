@@ -63,7 +63,7 @@
 			<flags>0</flags>
 		</GameObject>
 		<GameObject>
-			<name>sound_main_extra_dg.prefab</name>
+			<name>sound_large_dg.prefab</name>
 			<UUID>fff79f67-1a05-4cac-93e4-d7767117629e</UUID>
 			<flags>0</flags>
 		</GameObject>
@@ -643,7 +643,7 @@
 					<property>
 						<name>content</name>
 						<section>
-							<resource>content/CGFPrefabs/Vehicle/gun_effects/sounds/sound_main_extra_dg.prefab</resource>
+							<resource>content/CGFPrefabs/Vehicle/gun_effects/sounds/sound_large_dg.prefab</resource>
 						</section>
 					</property>
 				</config>

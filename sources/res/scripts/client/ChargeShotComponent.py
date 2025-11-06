@@ -1,16 +1,17 @@
-import typing, weakref, BigWorld
+import weakref, BigWorld, typing
 from constants import CHARGE_SHOT_FLAGS as FLAGS
 from constants import VEHICLE_SETTING
 from gui.battle_control.battle_constants import CANT_SHOOT_ERROR
 from gui.battle_control.controllers.consumables.blockers import IShellChangeBlocker, IShotBlocker
 from helpers import dependency
+from helpers.time_utils import makeLocalServerTime
 from skeletons.gui.battle_session import IBattleSessionProvider
-from vehicles.mechanics.mechanic_commands import IMechanicCommandsComponent, createMechanicCommandsEvents
-from vehicles.components.vehicle_component import VehicleMechanicPrefabDynamicComponent
-from vehicles.mechanics.mechanic_constants import VehicleMechanic, VehicleMechanicCommand
-from vehicles.mechanics.mechanic_states import createMechanicStatesEvents, IMechanicState, IMechanicStatesComponent
-from vehicles.mechanics.mechanic_helpers import getVehicleMechanicParams
 from vehicles.components.component_wrappers import ifPlayerVehicle
+from vehicles.components.vehicle_component import VehicleMechanicPrefabDynamicComponent
+from vehicles.mechanics.mechanic_commands import IMechanicCommandsComponent, createMechanicCommandsEvents
+from vehicles.mechanics.mechanic_constants import VehicleMechanic, VehicleMechanicCommand
+from vehicles.mechanics.mechanic_helpers import getVehicleMechanicParams
+from vehicles.mechanics.mechanic_states import createMechanicStatesEvents, IMechanicState, IMechanicStatesComponent
 if typing.TYPE_CHECKING:
     from items.components.gun_installation_components import GunInstallationSlot
 
@@ -29,7 +30,8 @@ class ChargeShotState(IMechanicState):
         self.isGunDestroyed = bool(flags & FLAGS.GUN_DESTROYED)
 
     def timeLeft(self):
-        return max(0.0, self.endTime - BigWorld.serverTime() if self.endTime >= 0 else self.baseTime)
+        correctedTime = makeLocalServerTime(BigWorld.serverTime())
+        return max(0.0, self.endTime - correctedTime if self.endTime >= 0 else self.baseTime)
 
     def progress(self, timeLeft):
         return max(0.0, 1.0 - timeLeft / self.baseTime if self.baseTime > 0 else 1.0)

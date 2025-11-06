@@ -211,6 +211,9 @@ msgstr "SHB-1-2"
 msgid "Chassis_J42_Chi_Se"
 msgstr "Chi-Se"
 
+msgid "Chassis_J42_Chi_Se_CFE_A"
+msgstr "Шрам"
+
 msgid "Chassis_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -228,6 +231,9 @@ msgstr "Type Mitsu 95"
 
 msgid "Chassis_J45_Mitsu_108_2"
 msgstr "Type Mitsu 108"
+
+msgid "Chassis_J48_Saryuda"
+msgstr "Saryuda"
 
 msgid "Chassis_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
@@ -310,6 +316,9 @@ msgstr "Experimental 57 mm Tank Gun Shin (2)"
 
 msgid "FuG5A"
 msgstr "Fu 5 mit 20 WS.E."
+
+msgid "HA_9_V_SAR"
+msgstr "Kawasaki Ha9 Army Type 98"
 
 msgid "J01_NC27"
 msgstr "Renault Otsu"
@@ -886,6 +895,33 @@ msgstr "Type 68"
 msgid "J42_Chi_Se"
 msgstr "Chi-Se"
 
+msgid "J42_Chi_Se_CFE_A"
+msgstr "Шрам"
+
+msgid "J42_Chi_Se_CFE_A_descr"
+msgstr ""
+"Прошлое — разорвано. Ненужное — изъято. Истинное — выковано. Шрамы — всё, что осталось на месте памяти.\n"
+"\n"
+"«Соваться в Волот с оторванным коллектором было плохой идеей. Но выбора у нас, собственно, не было. Прыгнуть в неизвестность всё же лучше, чем вечно бродить по зачищенной фазе, как всадник без головы. В общем, мы прыгнули. Не знаю, к лучшему или к худшему, но остались в живых. Координаты неизвестны, связь отсутствует, положение Волота не фиксируется.…\n"
+"\n"
+"А ещё снаружи бегает толпа в противогазах, разговаривает на своём тарабарском языке и всячески пытается нас отсюда выковырять. Люди в мириумном пространстве?! Ничего хорошего от них мы не ждём, поэтому все люки задраили наглухо…\n"
+"\n"
+"Что-то мне нравится здесь всё меньше. Даже не знаю, в чём причина. То ли в этих песнопениях, которые тянут ребята снаружи, то ли в здоровенной штуковине с крючьями на цепях, к которой прицепили наш танк, то ли в чёрной жиже, которая капает со всех сторон…»"
+
+msgid "J42_Chi_Se_CFE_A_long_special"
+msgstr ""
+"«Шрам» — японский тяжёлый танк VIII уровня. У него хорошая для «тяжа» "
+"мобильность и достаточно надёжная броня. Универсальное орудие машины "
+"сочетает неплохие показатели разброса, урона в минуту и бронепробития. Но "
+"главное преимущество танка — невероятные углы вертикального наведения "
+"орудия, позволяющие играть с самых разных позиций."
+
+msgid "J42_Chi_Se_CFE_A_short"
+msgstr "Шрам"
+
+msgid "J42_Chi_Se_CFE_A_short_special"
+msgstr "Отличные УВН, хорошая мобильность"
+
 msgid "J42_Chi_Se_descr"
 msgstr ""
 "В 1943 году делегация представителей Императорской армии Японии "
@@ -957,6 +993,36 @@ msgstr ""
 
 msgid "J45_Mitsu_108_short"
 msgstr "Mitsu 108"
+
+msgid "J48_Saryuda"
+msgstr "Saryuda"
+
+msgid "J48_Saryuda_descr"
+msgstr ""
+"Ожидая, что Вторая мировая война подойдёт к берегам Империи, Япония начала "
+"готовиться к обороне Хонсю и других островов архипелага. В результате "
+"появилось задание на создание ПТ-САУ, которая могла бы вести береговую "
+"оборону, а также противостоять любым бронетанковым средствам Союзников в "
+"боях на суше. В качестве орудия рассматривались различные варианты морских "
+"пушек, которые были построены, но уже не пригодились Императорскому флоту. "
+"Для увеличения скорострельности была спроектирована спаренная установка "
+"орудий, размещавшаяся в просторной сварной башне. Также для повышения "
+"огневой мощи планировалась установка трёх пулемётов (два курсовых и "
+"кормовой) и 20-мм скорострельной пушки на башне. Однако слишком большая "
+"масса и сложность производства привели к закрытию проекта."
+
+msgid "J48_Saryuda_long_special"
+msgstr ""
+"Saryuda — японская ПТ-САУ IX уровня, вооружённая 12,7-см спаренной орудийной"
+" установкой с высоким уроном за выстрел и разрушительным залпом. Мобильности"
+" ПТ-САУ хватает, чтобы занимать ключевые позиции, а надёжная броня позволяет"
+" эффективно их защищать от техники противника."
+
+msgid "J48_Saryuda_short"
+msgstr "Saryuda"
+
+msgid "J48_Saryuda_short_special"
+msgstr "Спаренная орудийная установка, надёжная лобовая броня"
 
 msgid "J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
@@ -1126,6 +1192,9 @@ msgstr "Nameless"
 msgid "Nameless_Radio"
 msgstr "Nameless"
 
+msgid "Rensouhou_127_mm_Type_89"
+msgstr "Rensouhou 12.7 cm Type 89"
+
 msgid "STA_2_3"
 msgstr "STA-2"
 
@@ -1284,6 +1353,9 @@ msgstr "SHB-1"
 msgid "Turret_1_J42_Chi_Se"
 msgstr "Chi-Se"
 
+msgid "Turret_1_J42_Chi_Se_CFE_A"
+msgstr "Шрам"
+
 msgid "Turret_1_J43_Type_4_Ju-To"
 msgstr "Shi-Ro"
 
@@ -1292,6 +1364,9 @@ msgstr "Type 3 Ju-Nu Plan 1"
 
 msgid "Turret_1_J45_Mitsu_108"
 msgstr "Mitsu 75"
+
+msgid "Turret_1_J48_Saryuda"
+msgstr "Saryuda"
 
 msgid "Turret_1_J50_Type_1_Ho_Ni_II"
 msgstr "Type 1 Ho-Ni II"
@@ -1361,6 +1436,9 @@ msgstr "Mitsu 105"
 
 msgid "Turret_2_Ke_Ni"
 msgstr "Type 2 Ke-To"
+
+msgid "Type3_Ko_SAR"
+msgstr "Type 3 Ko"
 
 msgid "Type_100_Kakyuu_V_12_CT"
 msgstr "Type 100 Kakyuu V-12 (CT)"
@@ -1716,11 +1794,20 @@ msgstr "12.7 cm Capped Common AP"
 msgid "_127mm_Capped_Common_Type_1"
 msgstr "12.7 cm Capped Common Type 1 APHE"
 
+msgid "_127mm_Common_AP_2_DB"
+msgstr "APHE Common Type 89B"
+
+msgid "_127mm_Common_AP_DB"
+msgstr "AP Common Type 89B"
+
 msgid "_127mm_Common_AP_J_1"
 msgstr "AP Common Type 89"
 
 msgid "_127mm_Common_AP_J_2"
 msgstr "APHE Common Type 89"
+
+msgid "_127mm_Common_HE_DB"
+msgstr "HE Common Type 89B"
 
 msgid "_127mm_Common_HE_J_1"
 msgstr "HE Common Type 89"

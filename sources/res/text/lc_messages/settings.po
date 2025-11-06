@@ -2138,6 +2138,9 @@ msgstr "Звук срабатывания «Шестого чувства»"
 msgid "otherTitle"
 msgstr "Прочее"
 
+msgid "physicsQuality"
+msgstr "Качество физики звука"
+
 msgid "refreshRate"
 msgstr "Частота обновления монитора"
 
@@ -2410,6 +2413,45 @@ msgid "sounds/nightMode/description"
 msgstr ""
 "Уменьшает разницу громкостей, приглушает резкие звуки и уменьшает количество"
 " низких частот в игре, обеспечивая комфортную тихую игру в ночное время."
+
+msgid "sounds/physicsQuality/attention"
+msgstr "Эта настройка может повлиять на быстродействие."
+
+msgid "sounds/physicsQuality/body"
+msgstr ""
+"Отвечает за качество физики звука.\n"
+"\n"
+"Просчитывает отражение и прохождение звука через поверхности на карте.\n"
+"\n"
+"Использует геометрию карты для создания отражений звуков машины от ближайших объектов.\n"
+" "
+
+msgid "sounds/physicsQuality/header"
+msgstr "Качество физики звука"
+
+msgid "sounds/physicsQuality/options/disabled"
+msgstr "Отключено"
+
+msgid "sounds/physicsQuality/options/high"
+msgstr "Высокое"
+
+msgid "sounds/physicsQuality/options/low"
+msgstr "Низкое"
+
+msgid "sounds/physicsQuality/options/medium"
+msgstr "Среднее"
+
+msgid "sounds/physicsQualityRecommended"
+msgstr "Рекомендуемое"
+
+msgid "sounds/physicsQualityRecommended/description"
+msgstr ""
+"Определяет оптимальное качество физики звука для вашего компьютера.\n"
+"\n"
+"Процесс может занять некоторое время."
+
+msgid "sounds/physicsQualityRecommended/name"
+msgstr "Рекомендуемое"
 
 msgid "sounds/sixthSense/body"
 msgstr ""

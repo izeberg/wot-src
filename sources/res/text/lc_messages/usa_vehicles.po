@@ -1885,6 +1885,26 @@ msgstr ""
 "до середины 1950-х годов, а также поставлялась во Францию. По разным данным,"
 " было произведено 85–250 машин."
 
+msgid "A192_M4A4_Firefly_CFE_A"
+msgstr "Sherman Firefly Saunders"
+
+msgid "A192_M4A4_Firefly_CFE_A_descr"
+msgstr ""
+"Вариант американского танка M4A4 Sherman с 30-цилиндровым двигателем Chrysler A57 Multibank, который, согласно собранной британцами статистике, отличался высокой надёжностью. Машина была разработана в начале 1944 года. Основные отличия заключались в установке более мощного 17-фунтового орудия, переносе радиостанции и увеличении площади боеукладки, а также в отказе от курсового пулемёта и места для ассистента механика-водителя.\n"
+"Экипаж танка составляют опытные студентки школы «Сандерс». Команда традиционно представляет культуру США, поэтому выступает на технике американского производства, выкрашенной в тёмно-оливковый базовый цвет. Этот Sherman украшен символом школы — заострённым щитом, на котором изображена синяя пятиконечная звезда с жёлтой молнией внутри, а также красная лента с названием школы."
+
+msgid "A192_M4A4_Firefly_CFE_A_long_special"
+msgstr ""
+"Этот средний танк не может похвастаться выдающимися показателями динамики "
+"или защиты, зато его обзор позволяет легко обнаруживать технику противника, "
+"а точное орудие наносит урон с любой дистанции."
+
+msgid "A192_M4A4_Firefly_CFE_A_short"
+msgstr "Firefly Saunders"
+
+msgid "A192_M4A4_Firefly_CFE_A_short_special"
+msgstr "Точное, пробивное и скорострельное орудие"
+
 msgid "A21_T14_long_special"
 msgstr ""
 "Американский тяжёлый танк V уровня. Обладает наклонной лобовой бронёй, "
@@ -2551,6 +2571,9 @@ msgstr ""
 msgid "British_Wireless_set_N19"
 msgstr "Wireless Set No. 19"
 
+msgid "British_Wireless_set_N19A"
+msgstr "WS No. 19 A Special"
+
 msgid "Buick_series_60"
 msgstr "Buick Series 60"
 
@@ -2863,6 +2886,9 @@ msgstr "T72"
 msgid "Chassis_A18_M41_2"
 msgstr "T72E1"
 
+msgid "Chassis_A192_M4A4_Firefly_CFE_A"
+msgstr "Sherman Firefly Saunders"
+
 msgid "Chassis_A22_M5_Stuart"
 msgstr "M5 Stuart"
 
@@ -3111,6 +3137,9 @@ msgstr "T95E6"
 
 msgid "Chrysler_1200_HP"
 msgstr "Chrysler 1200 HP"
+
+msgid "Chrysler_A57_multibank_A"
+msgstr "Chrysler A57 Multibank A"
 
 msgid "Continental_AOI-1195-5"
 msgstr "Continental AOI-1195-5"
@@ -4182,6 +4211,9 @@ msgstr "WS No. 19 Mk. I"
 msgid "NVSS_T80_BPXIV"
 msgstr "HVSS T80"
 
+msgid "OQF_17pdr_Gun_Mk_VIIA"
+msgstr "OQF 17-pdr Gun Mk. VIIA"
+
 msgid "Ordnance_QF_2pdr_AT_Gun_Mk.X"
 msgstr "QF 2-pdr Mk. IX"
 
@@ -4920,6 +4952,9 @@ msgstr "XM69 Hacker"
 
 msgid "Turret_1_A18_M41"
 msgstr "M41 HMC"
+
+msgid "Turret_1_A192_M4A4_Firefly_CFE_A"
+msgstr "Sherman Firefly Saunders"
 
 msgid "Turret_1_A22_M5_Stuart"
 msgstr "M5 Stuart"
@@ -6328,6 +6363,15 @@ msgstr "155 mm Howitzer M1 (M41)"
 
 msgid "_155mm_Howitzer_M45"
 msgstr "155 mm Howitzer M45"
+
+msgid "_17pdr_APC_Mk4TA"
+msgstr "APDS 17-Pr. Mk. 1TA"
+
+msgid "_17pdr_AP_Mk3TA"
+msgstr "APCBC 17-Pr. Mk. 9TA"
+
+msgid "_17pdr_HE_Mk1TA"
+msgstr "HE 17-Pr. Mk. 2TA"
 
 msgid "_203mm_AP_M106_M78"
 msgstr "AP M106/M78"

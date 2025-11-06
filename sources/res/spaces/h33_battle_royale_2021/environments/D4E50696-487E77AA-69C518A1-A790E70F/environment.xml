@@ -55,28 +55,25 @@
 		</bloom>
 		<environment>
 			<sunlightLumMultiplier>1.000000</sunlightLumMultiplier>
-			<ambientLumMultiplier>1.000000</ambientLumMultiplier>
 			<sunLumMultiplier>0.250000</sunLumMultiplier>
 			<skyLumMultiplier>0.000000</skyLumMultiplier>
+			<skyLumMultiplierDeferred>1.000000</skyLumMultiplierDeferred>
 			<LDR2HDRenableLumaMask>false</LDR2HDRenableLumaMask>
 			<LDR2HDRsaturation>1.000000</LDR2HDRsaturation>
 		</environment>
 		<tonemappings>
 			<tonemapping>
 				<name>RexpTM</name>
-				<middleGray>0.190000</middleGray>
 				<whitePoint>5.000000</whitePoint>
 				<blackPoint>6.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>FilmicTM</name>
-				<middleGray>0.310000</middleGray>
 				<whitePoint>12.790000</whitePoint>
 				<blackPoint>3.500000</blackPoint>
 			</tonemapping>
 			<tonemapping>
 				<name>LinearExpTM</name>
-				<middleGray>0.487224</middleGray>
 				<whitePoint>1.750000</whitePoint>
 				<blackPoint>1.310000</blackPoint>
 			</tonemapping>
@@ -204,10 +201,14 @@
 			<angle>90.000000</angle>
 			<angleZ>218.000000</angleZ>
 		</deferred>
+		<simplified_deferred>
+			<angle>90.000000</angle>
+		</simplified_deferred>
 		<sunScale>4.000000</sunScale>
 		<sunColor>255.000000 235.000000 215.000000</sunColor>
 		<sunTexture/>
 		<sunLightColor>0.000000 0.000000 0.000000</sunLightColor>
+		<ambientTint>1.000000 1.000000 1.000000</ambientTint>
 		<isMoon>false</isMoon>
 		<drawSunAndMoon>true</drawSunAndMoon>
 		<sunLightColorSimplifiedDeferred>0.149020 0.149020 0.149020</sunLightColorSimplifiedDeferred>

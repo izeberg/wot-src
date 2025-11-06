@@ -5888,4 +5888,86 @@
 		<name>SH 2025</name>
 		<type>INSCRIPTION</type>
 	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1198</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_838.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_838</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1199</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_839.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_839</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>Win back with CCs</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1226</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_490.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_490</userString>
+			<tags>hiddenInUI</tags>
+			<mirror>false</mirror>
+		</decal>
+		<name>Advent Calendar 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
+	<itemGroup>
+		<userString>#vehicle_customization:inscription/special</userString>
+		<season>ALL</season>
+		<historical>1</historical>
+		<priceGroup>inscriptions 50g notInShop</priceGroup>
+		<vehicleFilter>
+			<exclude>
+				<vehicles>poland:Pl15_60TP_Lewandowskiego_CFE_A usa:A174_T57_58_Rush_Ep1</vehicles>
+			</exclude>
+		</vehicleFilter>
+		<decal>
+			<id>1227</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_847.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_847</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1228</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_848.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_848</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1229</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_849.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_849</userString>
+			<mirror>false</mirror>
+		</decal>
+		<decal>
+			<id>1230</id>
+			<texture>gui/maps/vehicles/decals/inscriptions/special/inscription_850.dds</texture>
+			<userString>#vehicle_customization:inscription/special/special_850</userString>
+			<mirror>false</mirror>
+		</decal>
+		<name>BattlePass 2025</name>
+		<type>INSCRIPTION</type>
+	</itemGroup>
 </root>

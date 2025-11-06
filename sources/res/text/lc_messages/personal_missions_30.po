@@ -935,9 +935,9 @@ msgstr ""
 
 msgid "tooltip/missionsCategory/footer"
 msgstr ""
-"{{@ split}}Задачи операции {{@ colorLegacy "
-"'b2afab'}}«{{operationName}}»{{/}} могут быть выполнены только на технике "
-"{{@ colorLegacy 'b2afab'}}{{minLevel}}–{{maxLevel}}{{/}} уровней."
+"Задачи операции {{@ colorLegacy 'b2afab'}}«{{operationName}}»{{/}} могут "
+"быть выполнены только на технике {{@ colorLegacy "
+"'b2afab'}}{{minLevel}}–{{maxLevel}}{{/}} уровней."
 
 msgid "tooltip/missionsCategory/innerBlock/description/assault"
 msgstr ""

@@ -79,6 +79,7 @@
 		<V_2_54SCT>265</V_2_54SCT>
 		<V_2_54SCR>266</V_2_54SCR>
 		<NORINCO_12150L_70_x2>267</NORINCO_12150L_70_x2>
+		<_12150L3-II_CFE_A>271</_12150L3-II_CFE_A>
 		<_12150L3-II>268</_12150L3-II>
 		<_12150LSG_111>2000</_12150LSG_111>
 		<_12150LTG_111>2001</_12150LTG_111>
@@ -691,6 +692,26 @@
 			<rpm_min>349</rpm_min>
 			<rpm_max>2152</rpm_max>
 		</_12150L3-II>
+		<_12150L3-II_CFE_A>
+			<userString>#china_vehicles:_12150L3-II_CFE_A</userString>
+			<tags>diesel</tags>
+			<level>9</level>
+			<price>99500</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
+			<power>640</power>
+			<weight>750</weight>
+			<maxHealth>260</maxHealth>
+			<maxRegenHealth>130</maxRegenHealth>
+			<repairCost>8</repairCost>
+			<fireStartingChance>
+				0.12
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>349</rpm_min>
+			<rpm_max>2152</rpm_max>
+		</_12150L3-II_CFE_A>
 		<_12150LSG>
 			<userString>#china_vehicles:_12150LSG</userString>
 			<tags>diesel</tags>

@@ -1615,15 +1615,6 @@ msgstr "Доступен управляемый бонус к опыту от Wo
 msgid "serviceChannelMessages/additionalXP/unavailable/title"
 msgstr "Управляемый бонус к опыту от WoT Plus недоступен"
 
-msgid "serviceChannelMessages/adventCalendar/reward/button"
-msgstr "Получить награду"
-
-msgid "serviceChannelMessages/adventCalendar/reward/description"
-msgstr "Открывайте окна Календаря каждый день и получайте подарки."
-
-msgid "serviceChannelMessages/adventCalendar/reward/header"
-msgstr "Доступен подарок Новогоднего календаря!"
-
 msgid "serviceChannelMessages/autoBoosterErrorNoWallet"
 msgstr ""
 "Не удалось пополнить снаряжение на %s. Всё ваше золото станет доступно после"
@@ -2188,6 +2179,9 @@ msgstr "%(name)s (x%(count)s)"
 
 msgid "serviceChannelMessages/battleResults/quests/personal_missions_points"
 msgstr "Очки кампании: %(count)s"
+
+msgid "serviceChannelMessages/battleResults/quests/pets"
+msgstr "Получены питомцы"
 
 msgid "serviceChannelMessages/battleResults/quests/premium"
 msgstr "Добавлено дней Общего премиум аккаунта"

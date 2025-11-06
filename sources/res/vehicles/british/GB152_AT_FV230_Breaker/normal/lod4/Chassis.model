@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <root>
-	<nodefullVisual>vehicles/british/GB152_AT_FV230_Breaker/normal/lod4/Chassis</nodefullVisual>
 	<tank>true</tank>
 	<visibilityBox>
 		<min>-1.855000 0.002000 -3.950000</min>
 		<max>1.855000 1.240000 3.830000</max>
 	</visibilityBox>
+	<nodefullVisual>vehicles/british/GB152_AT_FV230_Breaker/normal/lod4/Chassis</nodefullVisual>
 </root>

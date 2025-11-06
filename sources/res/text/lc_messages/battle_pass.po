@@ -649,7 +649,10 @@ msgstr "«%(chapterName)s»"
 msgid "holidayFinalScreen/completed"
 msgstr "ГЛАВА ПРОЙДЕНА"
 
-msgid "holidayFinalScreen/finalState/button"
+msgid "holidayFinalScreen/finalState/button/showHangar"
+msgstr "Назад в Ангар"
+
+msgid "holidayFinalScreen/finalState/button/showVehicle"
 msgstr "Посмотреть в Ангаре"
 
 msgid "holidayFinalScreen/finalState/label"
@@ -878,7 +881,7 @@ msgid "navigation/chapterChoice"
 msgstr "БОЕВОЙ ПРОПУСК, СЕЗОН %(seasonNum)s"
 
 msgid "navigation/holidayFinal"
-msgstr "?empty?"
+msgstr "БОЕВОЙ ПРОПУСК"
 
 msgid "navigation/intro"
 msgstr "БОЕВОЙ ПРОПУСК, СЕЗОН %(seasonNum)s"
@@ -990,6 +993,9 @@ msgstr "Купить Улучшенный пропуск"
 msgid "progression/battlePassBuyDescr"
 msgstr ""
 "Улучшенный пропуск разблокирует линейку улучшенных наград для текущей главы."
+
+msgid "progression/battlePassBuyHolidayDescr"
+msgstr "Улучшенный пропуск разблокирует линейку улучшенных наград."
 
 msgid "progression/battlePassNextChapterBuyDescr"
 msgstr ""
@@ -1548,6 +1554,10 @@ msgstr ""
 "Докупив этапы, вы мгновенно получите за них базовые и улучшенные награды. "
 "Этапы покупаются отдельно для каждой главы."
 
+msgid "tooltips/footerBuyBtn/episode/holidayDescr"
+msgstr ""
+"Докупив этапы, вы мгновенно получите за них базовые и улучшенные награды."
+
 msgid "tooltips/goldMission/description"
 msgstr ""
 "%(highlight)s если вы пропустите день, золото за него начислено не будет."
@@ -1579,6 +1589,19 @@ msgstr ""
 "получите все улучшенные награды за пройденные этапы соответствующей главы. "
 "Улучшить награду можно на основном экране Боевого пропуска, нажав на кнопку "
 "«Купить Улучшенный пропуск»."
+
+msgid "tooltips/iconLock/holidayDescr1"
+msgstr ""
+"Вы можете расширить список добычи в главе, купив Улучшенный пропуск. С ним "
+"вы будете получать награды из обеих линеек за прохождение каждого "
+"последующего этапа."
+
+msgid "tooltips/iconLock/holidayDescr2"
+msgstr ""
+"Купить улучшенный пропуск можно в любое время. В этом случае вы мгновенно "
+"получите все улучшенные награды за пройденные этапы. Улучшить награду можно "
+"на основном экране Боевого пропуска, нажав кнопку «Купить Улучшенный "
+"пропуск»."
 
 msgid "tooltips/iconLock/title"
 msgstr "Улучшенная награда Боевого пропуска"

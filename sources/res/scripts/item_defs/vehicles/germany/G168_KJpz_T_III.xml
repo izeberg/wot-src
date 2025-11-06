@@ -117,6 +117,13 @@
 			<undamaged>vehicles/german/G168_KJpz_T_III/normal/lod0/Hull.model</undamaged>
 			<destroyed>vehicles/german/G168_KJpz_T_III/crash/lod0/Hull.model</destroyed>
 			<exploded>vehicles/german/G168_KJpz_T_III/crash/lod0/Hull.model</exploded>
+			<sets>
+				<G168_KJpz_T_III_AS5_3Dst>
+					<undamaged>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod0/Hull.model</undamaged>
+					<destroyed>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Hull.model</destroyed>
+					<exploded>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Hull.model</exploded>
+				</G168_KJpz_T_III_AS5_3Dst>
+			</sets>
 		</models>
 		<swinging>
 			<lodDist>FAR</lodDist>
@@ -159,6 +166,21 @@
 				</rayUp>
 				<size>
 					0.32
+					<!--BW_String-->
+				</size>
+			</slot>
+			<slot>
+				<slotType>clan</slotType>
+				<slotId>10001</slotId>
+				<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+				<rayStart>-1.154742 0.689079 1.614663</rayStart>
+				<rayEnd>-1.154763 0.292983 1.558966</rayEnd>
+				<rayUp>
+					0 0.139245 -0.990258
+					<!--BW_String-->
+				</rayUp>
+				<size>
+					0.3
 					<!--BW_String-->
 				</size>
 			</slot>
@@ -841,6 +863,77 @@
 					<!--BW_String-->
 				</anchorShift>
 			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15029</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+				<position>
+					0.872245 1.45514 2.1441
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0.136333 -0.001746 3.14158
+					<!--BW_String-->
+				</rotation>
+				<scale>0.583297 0.099535 0.583292</scale>
+				<showOn>16</showOn>
+				<clipAngle>0.896092</clipAngle>
+				<anchorShift>
+					0.07
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15030</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+				<position>
+					-1.56549 1.43281 -0.031552
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0.945585 -1.56477 3.11679
+					<!--BW_String-->
+				</rotation>
+				<scale>0.420854 0.332127 0.420849</scale>
+				<showOn>16</showOn>
+				<clipAngle>0.896092</clipAngle>
+				<anchorShift>
+					0.1
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>projectionDecal</slotType>
+				<slotId>15031</slotId>
+				<tags>formfactor_square</tags>
+				<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+				<position>
+					1.56552 1.43278 -0.031551
+					<!--BW_String-->
+				</position>
+				<rotation>
+					0.945605 1.56469 -3.11681
+					<!--BW_String-->
+				</rotation>
+				<scale>0.420854 0.332127 0.420849</scale>
+				<showOn>16</showOn>
+				<clipAngle>0.896092</clipAngle>
+				<anchorShift>
+					0.1
+					<!--BW_String-->
+				</anchorShift>
+			</slot>
+			<slot>
+				<slotType>attachment</slotType>
+				<slotId>18000</slotId>
+				<position>0 0 0</position>
+				<rotation>0 0 0</rotation>
+				<scale>1 1 1</scale>
+				<hiddenForUser>true</hiddenForUser>
+			</slot>
 		</customizationSlots>
 		<customization>
 			<customizableVehicleAreas>
@@ -897,6 +990,13 @@
 				<undamaged>vehicles/german/G168_KJpz_T_III/normal/lod0/Chassis.model</undamaged>
 				<destroyed>vehicles/german/G168_KJpz_T_III/crash/lod0/Chassis.model</destroyed>
 				<exploded>vehicles/german/G168_KJpz_T_III/crash/lod0/Chassis.model</exploded>
+				<sets>
+					<G168_KJpz_T_III_AS5_3Dst>
+						<undamaged>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod0/Chassis.model</undamaged>
+						<destroyed>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Chassis.model</destroyed>
+						<exploded>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Chassis.model</exploded>
+					</G168_KJpz_T_III_AS5_3Dst>
+				</sets>
 			</models>
 			<traces>
 				<lodDist>MEDIUM</lodDist>
@@ -1002,6 +1102,39 @@
 									<row3>-1.886508 0.958939 -0.127337</row3>
 								</boxCollider>
 							</hullCollider>
+							<hullCollider>
+								<modelsSet>G168_KJpz_T_III_AS5_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.198728 0.000000 0.000000</row0>
+									<row1>0.000000 1.638023 0.000000</row1>
+									<row2>0.000000 0.000000 7.530000</row2>
+									<row3>0.000000 1.231138 -0.067000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.660974 0.000000 0.000000</row0>
+									<row1>0.000000 0.654448 0.000000</row1>
+									<row2>0.000000 0.000000 7.428100</row2>
+									<row3>0.000000 1.577627 -0.091660</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.656000 -0.000001 -0.000001</row0>
+									<row1>-0.000000 0.191579 -0.230863</row1>
+									<row2>0.000000 0.392764 0.325930</row2>
+									<row3>-0.000000 1.145024 -3.826887</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.657000 -0.000000 0.000000</row0>
+									<row1>0.000000 0.178617 0.241031</row1>
+									<row2>-0.000000 -0.441900 0.327471</row2>
+									<row3>0.000000 1.286525 3.572052</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 -0.000000 -0.000000</row0>
+									<row1>0.000000 0.689000 -0.000000</row1>
+									<row2>0.000000 0.000000 7.747000</row2>
+									<row3>-1.886508 1.095952 0.192000</row3>
+								</boxCollider>
+							</hullCollider>
 						</physicalParams>
 					</trackDebris>
 					<trackDebris>
@@ -1081,6 +1214,39 @@
 									<row1>0.000000 1.000000 0.000000</row1>
 									<row2>0.000000 0.000000 7.446138</row2>
 									<row3>1.886508 0.958939 -0.127337</row3>
+								</boxCollider>
+							</hullCollider>
+							<hullCollider>
+								<modelsSet>G168_KJpz_T_III_AS5_3Dst</modelsSet>
+								<boxCollider>
+									<row0>2.198730 0.000000 0.000000</row0>
+									<row1>0.000000 1.638020 0.000000</row1>
+									<row2>0.000000 0.000000 7.530000</row2>
+									<row3>0.000000 1.231140 -0.067000</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.660974 0.000000 0.000000</row0>
+									<row1>0.000000 0.654448 0.000000</row1>
+									<row2>0.000000 0.000000 7.428100</row2>
+									<row3>-0.000000 1.577627 -0.091660</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.656000 -0.000001 -0.000001</row0>
+									<row1>-0.000000 0.191579 -0.230863</row1>
+									<row2>0.000000 0.392764 0.325930</row2>
+									<row3>-0.000000 1.145020 -3.826890</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>3.657000 -0.000000 0.000000</row0>
+									<row1>0.000000 0.178617 0.241031</row1>
+									<row2>-0.000000 -0.441900 0.327471</row2>
+									<row3>0.000000 1.286520 3.572050</row3>
+								</boxCollider>
+								<boxCollider>
+									<row0>0.300000 -0.000000 -0.000000</row0>
+									<row1>0.000000 0.689000 -0.000000</row1>
+									<row2>0.000000 0.000000 7.747000</row2>
+									<row3>1.887000 1.095950 0.192000</row3>
 								</boxCollider>
 							</hullCollider>
 						</physicalParams>
@@ -1431,6 +1597,14 @@
 						<UTiles>1</UTiles>
 						<VTiles>1</VTiles>
 					</atlas>
+					<modelSets>
+						<G168_KJpz_T_III_AS5_3Dst>
+							<segmentModelLeft>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_01.model</segmentModelLeft>
+							<segmentModelRight>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_01.model</segmentModelRight>
+							<segment2ModelLeft>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_02.model</segment2ModelLeft>
+							<segment2ModelRight>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_02.model</segment2ModelRight>
+						</G168_KJpz_T_III_AS5_3Dst>
+					</modelSets>
 				</trackPair>
 				<lodDist>SPLINE_TRACK</lodDist>
 			</splineDesc>
@@ -1451,6 +1625,12 @@
 						<model>vehicles/german/G168_KJpz_T_III/track/segment_02.model</model>
 						<length>0.099929</length>
 					</secSegment>
+					<modelSets>
+						<G168_KJpz_T_III_AS5_3Dst>
+							<mainSegmentModel>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_01.model</mainSegmentModel>
+							<secSegmentModel>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_02.model</secSegmentModel>
+						</G168_KJpz_T_III_AS5_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.097418</back>
@@ -1760,6 +1940,12 @@
 						<model>vehicles/german/G168_KJpz_T_III/track/segment_02.model</model>
 						<length>0.100141</length>
 					</secSegment>
+					<modelSets>
+						<G168_KJpz_T_III_AS5_3Dst>
+							<mainSegmentModel>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_01.model</mainSegmentModel>
+							<secSegmentModel>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/track/segment_02.model</secSegmentModel>
+						</G168_KJpz_T_III_AS5_3Dst>
+					</modelSets>
 					<springsLength>
 						<backwardMovement>
 							<back>0.097805</back>
@@ -2460,6 +2646,13 @@
 						<undamaged>vehicles/german/G168_KJpz_T_III/normal/lod0/Gun_01.model</undamaged>
 						<destroyed>vehicles/german/G168_KJpz_T_III/crash/lod0/Gun_01.model</destroyed>
 						<exploded>vehicles/german/G168_KJpz_T_III/crash/lod0/Gun_01.model</exploded>
+						<sets>
+							<G168_KJpz_T_III_AS5_3Dst>
+								<undamaged>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod0/Gun_01.model</undamaged>
+								<destroyed>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Gun_01.model</destroyed>
+								<exploded>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Gun_01.model</exploded>
+							</G168_KJpz_T_III_AS5_3Dst>
+						</sets>
 					</models>
 					<hitTester>
 						<collisionModelServer>vehicles/german/G168_KJpz_T_III/collision/Gun_01.model</collisionModelServer>
@@ -2476,6 +2669,13 @@
 				<undamaged>vehicles/german/G168_KJpz_T_III/normal/lod0/Turret_01.model</undamaged>
 				<destroyed>vehicles/german/G168_KJpz_T_III/crash/lod0/Turret_01.model</destroyed>
 				<exploded>vehicles/german/G168_KJpz_T_III/crash/lod0/Turret_01.model</exploded>
+				<sets>
+					<G168_KJpz_T_III_AS5_3Dst>
+						<undamaged>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/normal/lod0/Turret_01.model</undamaged>
+						<destroyed>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Turret_01.model</destroyed>
+						<exploded>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod0/Turret_01.model</exploded>
+					</G168_KJpz_T_III_AS5_3Dst>
+				</sets>
 			</models>
 			<hitTester>
 				<collisionModelServer>vehicles/german/G168_KJpz_T_III/collision/Turret_01.model</collisionModelServer>
@@ -2956,6 +3156,86 @@
 						0.04
 						<!--BW_String-->
 					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35017</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+					<position>
+						-1.21247 2.07866 -1.5478
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.61064 0.87579 -0.248695
+						<!--BW_String-->
+					</rotation>
+					<scale>0.374843 0.144883 0.374839</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						1.42584
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>
+						0.1
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35018</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+					<position>
+						1.21252 2.07864 -1.5478
+						<!--BW_String-->
+					</position>
+					<rotation>
+						1.61064 -0.87548 0.249034
+						<!--BW_String-->
+					</rotation>
+					<scale>0.374843 0.144883 0.374839</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						1.42584
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>
+						0.1
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>projectionDecal</slotType>
+					<slotId>35019</slotId>
+					<tags>formfactor_square</tags>
+					<compatibleModels>G168_KJpz_T_III_AS5_3Dst</compatibleModels>
+					<position>
+						0.86063 2.16094 -0.409223
+						<!--BW_String-->
+					</position>
+					<rotation>
+						0.681411 0.09487 2.92769
+						<!--BW_String-->
+					</rotation>
+					<scale>0.457908 0.176989 0.457902</scale>
+					<showOn>256</showOn>
+					<clipAngle>
+						1.42584
+						<!--BW_String-->
+					</clipAngle>
+					<anchorShift>
+						0.06
+						<!--BW_String-->
+					</anchorShift>
+				</slot>
+				<slot>
+					<slotType>attachment</slotType>
+					<slotId>38000</slotId>
+					<position>0 0 0</position>
+					<rotation>0 0 0</rotation>
+					<scale>1 1 1</scale>
+					<hiddenForUser>true</hiddenForUser>
 				</slot>
 			</customizationSlots>
 			<customization>

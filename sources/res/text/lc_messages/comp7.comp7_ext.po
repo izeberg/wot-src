@@ -471,33 +471,6 @@ msgstr ""
 msgid "generalRankTooltip/subheading"
 msgstr "Включает дивизионы: %(divisions)s"
 
-msgid "grandTournamentWidget/countdown"
-msgstr "%(timer)Турнир начинается через %(countdown)s"
-
-msgid "grandTournamentWidget/countdownShort"
-msgstr "%(timer)Начало через %(countdown)s"
-
-msgid "grandTournamentWidget/counter/days"
-msgstr "%(days)s д %(hours)s ч"
-
-msgid "grandTournamentWidget/counter/hours"
-msgstr "%(hours)s ч %(minutes)s мин"
-
-msgid "grandTournamentWidget/counter/lastMinute"
-msgstr "<1 мин"
-
-msgid "grandTournamentWidget/counter/minutes"
-msgstr "%(minutes)s мин"
-
-msgid "grandTournamentWidget/dayIsOver"
-msgstr "%(timer)Новые матчи через %(countdown)s"
-
-msgid "grandTournamentWidget/finished"
-msgstr "Чемпион определён!"
-
-msgid "grandTournamentWidget/live"
-msgstr "Смотрите в прямом эфире!"
-
 msgid "infoPageButtonLabel"
 msgstr "О СОБЫТИИ"
 
@@ -1699,14 +1672,21 @@ msgstr "Сезонные обновления"
 msgid "tournament/battleResult/personal/tooltip/descr"
 msgstr "В турнире нельзя получить или потерять очки рейтинга."
 
-msgid "tournamentsWidget/heading"
-msgstr "Турниры «Натиска»"
+msgid "tournamentsEntryPointTooltip/description"
+msgstr ""
+"На Международном чемпионате по World of Tanks в китайском Сучжоу состоится "
+"эпичная битва: сильнейшие команды со всей планеты поборются за престижный "
+"титул чемпиона мира. Бои пройдут по правилам режима «Натиск». Наблюдайте за "
+"рождением новых легенд!"
 
-msgid "tournamentsWidget/text/active"
-msgstr "Не пропустите сражение!"
+msgid "tournamentsEntryPointTooltip/heading"
+msgstr "WCI 2025"
 
-msgid "tournamentsWidget/text/registration"
-msgstr "Регистрация открыта!"
+msgid "tournamentsEntryPointTooltip/live"
+msgstr "Трансляции будут доступны %(timer)s"
+
+msgid "tournamentsEntryPointTooltip/showmatch"
+msgstr "Новые матчи через %(timer)s"
 
 msgid "training/battleResult/personal/tooltip/descr"
 msgstr "Очки рейтинга нельзя заработать в тренировке режима «Натиск»."
@@ -1725,6 +1705,146 @@ msgstr "Войти в голосовой чат"
 
 msgid "waitingSpinner/message"
 msgstr "Загрузка содержимого..."
+
+msgid "wci/LBFinals"
+msgstr "ФИНАЛ НС"
+
+msgid "wci/LBRound1"
+msgstr "НС РАУНД 1"
+
+msgid "wci/LBRound2"
+msgstr "НС РАУНД 2"
+
+msgid "wci/LBSemifinals"
+msgstr "ПОЛУФИНАЛ НС"
+
+msgid "wci/UBFinals"
+msgstr "ФИНАЛ ВС"
+
+msgid "wci/UBSemifinals"
+msgstr "ПОЛУФИНАЛ ВС"
+
+msgid "wci/bestOf"
+msgstr "ЛУЧШИЙ ИЗ %(number)s"
+
+msgid "wci/cny"
+msgstr "%(amount)s CNY"
+
+msgid "wci/cnySign"
+msgstr "¥%(amount)s"
+
+msgid "wci/comeBack"
+msgstr "Повторите попытку позже"
+
+msgid "wci/comingSoon"
+msgstr "СКОРО %(addition)s"
+
+msgid "wci/comingSoonAddition"
+msgstr "ВРЕМЯ ЗАВИСИТ ОТ ПРОДОЛЖИТЕЛЬНОСТИ МАТЧЕЙ"
+
+msgid "wci/completed"
+msgstr "ЗАВЕРШЁН"
+
+msgid "wci/douyin"
+msgstr "Смотреть на Douyin"
+
+msgid "wci/drops/huya"
+msgstr ""
+"Смотрите на Huya и получайте эксклюзивные\n"
+"Huya Drops!"
+
+msgid "wci/drops/twitch"
+msgstr ""
+"Смотрите на Twitch и получайте эксклюзивные\n"
+"Twitch Drops!"
+
+msgid "wci/dropsShort/huya"
+msgstr "И получайте эксклюзивные Huya Drops!"
+
+msgid "wci/dropsShort/twitch"
+msgstr "И получайте эксклюзивные Twitch Drops!"
+
+msgid "wci/error"
+msgstr "ОШИБКА ЗАГРУЗКИ ДАННЫХ"
+
+msgid "wci/finalResult"
+msgstr "ПОБЕДИТЕЛЬ"
+
+msgid "wci/fundDistribution"
+msgstr "РАСПРЕДЕЛЕНИЕ ПРИЗОВОГО ФОНДА"
+
+msgid "wci/grandFinals"
+msgstr "ГРАНД-ФИНАЛ"
+
+msgid "wci/huya"
+msgstr "Смотреть на Huya"
+
+msgid "wci/noMatches"
+msgstr "НЕТ МАТЧЕЙ В РАСПИСАНИИ"
+
+msgid "wci/placement"
+msgstr "%(firstPlace)s – %(secondPlace)s"
+
+msgid "wci/prize"
+msgstr "ПРИЗОВОЙ ФОНД %(addition)s"
+
+msgid "wci/prizeAddition"
+msgstr "И ШАНС ЗАСЛУЖИТЬ ВЕЧНУЮ СЛАВУ"
+
+msgid "wci/refresh"
+msgstr "Обновить"
+
+msgid "wci/refreshing"
+msgstr "Обновляется..."
+
+msgid "wci/roundOf"
+msgstr "РАУНД ИЗ %(number)s"
+
+msgid "wci/roundRobin"
+msgstr "КРУГОВАЯ СИСТЕМА"
+
+msgid "wci/separator"
+msgstr "ИЛИ"
+
+msgid "wci/tab/overview"
+msgstr "ОБЩЕЕ"
+
+msgid "wci/tab/schedule"
+msgstr "РАСПИСАНИЕ"
+
+msgid "wci/teamPlaceholder"
+msgstr "TBD"
+
+msgid "wci/toShop"
+msgstr "В Магазин"
+
+msgid "wci/tooltip/infoPageButton/header"
+msgstr "О турнире"
+
+msgid "wci/twitch"
+msgstr "Смотреть на Twitch"
+
+msgid "wci/viewFull"
+msgstr "Просмотреть всё"
+
+msgid "wci/visitShop/description"
+msgstr ""
+"Продемонстрируйте свой азарт с помощью тематических элементов внешнего вида "
+"и уникальных машин!"
+
+msgid "wci/visitShop/heading"
+msgstr "НАБОРЫ WCI"
+
+msgid "wci/vsBestOf"
+msgstr ""
+"VS\n"
+"ЛУЧШИЙ ИЗ %(number)s"
+
+msgid "wci/winner"
+msgstr "Победитель"
+
+msgid "wci/youtube"
+msgstr "Смотреть на YouTube"
 
 msgid "weeklyQuestWidgetTooltip/completed"
 msgstr "Задачи «Натиска» выполнены"

@@ -52,7 +52,8 @@ class _VehicleHubChildState(LobbyState, SubhangarStateGroupConfigProvider):
         lsm = self.getMachine()
         self.addNavigationTransition(lsm.getStateByCls(VehicleCompareState), record=True)
         self.addNavigationTransition(lsm.getStateByCls(BlueprintState), record=True)
-        self.addNavigationTransition(lsm.getStateByCls(_LoadingState), record=True)
+        loadingState = lsm.getStateByCls(_LoadingState)
+        self.addTransition(loadingState.makeTransition(TransitionType.INTERNAL, True), loadingState)
         from gui.Scaleform.daapi.view.lobby.profile.states import ServiceRecordState
         self.addNavigationTransition(lsm.getStateByCls(ServiceRecordState), record=True)
 
@@ -273,8 +274,10 @@ class VehSkillTreeInitialState(_VehSkillTreeSubStateBase):
 
     def _onEntered(self, event):
         super(VehSkillTreeInitialState, self)._onEntered(event)
-        view = self.getMachine().getRelatedView(self)
-        vhCtx = view.vehicleCtx
+        vhCtx = event.params.get('vhCtx')
+        if not vhCtx:
+            view = self.getMachine().getRelatedView(self)
+            vhCtx = view.vehicleCtx
         vehicle = self.__itemsCache.items.getItemByCD(vhCtx.intCD)
         if vehicle is not None and vehicle.postProgression.isVehSkillTree():
             if vehicle.postProgression.getCompletion() == PostProgressionCompletion.FULL:

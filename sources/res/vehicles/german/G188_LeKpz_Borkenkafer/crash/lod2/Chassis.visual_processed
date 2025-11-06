@@ -69,7 +69,6 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_R_Shape.vertices</vertices>
-			<stream>track_R_Shape.uv2</stream>
 			<primitive>track_R_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -98,6 +97,10 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.025072 0.515776 0.332895</groupOrigin>
 			</primitiveGroup>
@@ -109,7 +112,6 @@
 		<node>V_BlendBone</node>
 		<geometry>
 			<vertices>track_L_Shape.vertices</vertices>
-			<stream>track_L_Shape.uv2</stream>
 			<primitive>track_L_Shape.indices</primitive>
 			<primitiveGroup>
 				0
@@ -138,6 +140,10 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>-1.024916 0.517865 0.039631</groupOrigin>
 			</primitiveGroup>
@@ -148,5 +154,5 @@
 		<min>-1.250024 0.000313 -2.831028</min>
 		<max>1.250163 1.035418 2.744709</max>
 	</boundingBox>
-	<geometrySize>54702</geometrySize>
+	<geometrySize>46430</geometrySize>
 </root>

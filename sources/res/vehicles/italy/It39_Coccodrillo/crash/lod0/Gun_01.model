@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/italy/It39_Coccodrillo/crash/lod0/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<parent>vehicles/italy/It39_Coccodrillo/crash/lod1/Gun_01</parent>
+	<extent>32.000000</extent>
+	<visibilityBox>
+		<min>-0.396510 -0.397999 -0.592211</min>
+		<max>0.396511 0.462887 6.282918</max>
+	</visibilityBox>
+</root>

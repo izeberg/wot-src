@@ -1,9 +1,14 @@
 import typing
+from account_helpers.AccountSettings import HANGAR_VIEW_SETTINGS, HANGAR_KEY_BINDINGS
 from frontline.gui.impl.lobby.presenters.alert_presenter import AlertPresenter
 from gui.impl.gen import R
+from gui.impl.gen.view_models.views.lobby.hangar.hangar_settings_model import HangarSettingsModel
+from gui.impl.gen.view_models.views.lobby.hangar.key_bindings_model import KeyBindingsModel
+from gui.impl.lobby.common.presenters.settings_presenter import SettingsPresenter
 from gui.impl.lobby.hangar.base.sound_constants import HangarSoundStates
 from gui.sounds.epic_sound_constants import EPIC_SOUND
 from helpers.statistics import HANGAR_LOADING_STATE
+from gui.impl.lobby.hangar.base.blur import RandomHangarBlur
 from shared_utils import nextTick
 from gui.impl.pub import WindowImpl
 from helpers import dependency
@@ -17,7 +22,7 @@ from gui.impl.gen.view_models.views.lobby.common.router_model import RouterModel
 from gui.shared.event_dispatcher import showLobbyMenu
 from gui.app_loader import app_getter
 from gui.impl.lobby.hangar.presenters.utils import getMenuItems
-from gui.impl.lobby.hangar.presenters.vehicles_info_presenter import VehiclesInfoPresenter
+from gui.impl.lobby.common.presenters.vehicles_info_presenter import VehiclesInfoPresenter
 from gui.impl.lobby.hangar.base.vehicles_filter_component import VehiclesFilterComponent
 from frontline.gui.impl.lobby.presenters.frontline_loadout_presenter import FrontlineLoadoutPresenter
 from frontline.gui.impl.lobby.presenters.fl_vehicle_inventory_presenter import FLVehicleInventoryPresenter
@@ -83,7 +88,12 @@ class FrontlineHangar(ViewComponent[RouterModel], IRoutableView):
         self.__baseCriteria = _createFrontlineCriteria()
         self.__vehicleFilter = VehiclesFilterComponent(self.__baseCriteria)
         self.__invVehicleFilter = VehiclesFilterComponent(self.__baseCriteria | REQ_CRITERIA.INVENTORY)
+        self.__blur = RandomHangarBlur()
         return
+
+    @property
+    def blur(self):
+        return self.__blur
 
     def createToolTipContent(self, event, contentID):
         if contentID == R.views.frontline.mono.lobby.tooltips.level_reserves_tooltip():
@@ -110,6 +120,8 @@ class FrontlineHangar(ViewComponent[RouterModel], IRoutableView):
            hangar.Teaser(): TeaserPresenter, 
            hangar.HeroTank(): HeroTankPresenter, 
            hangar.OptionalDevicesAssistant(): OptionalDevicesAssistantPresenter, 
+           hangar.Settings(): lambda : SettingsPresenter(HangarSettingsModel, HANGAR_VIEW_SETTINGS), 
+           hangar.KeyBindings(): lambda : SettingsPresenter(KeyBindingsModel, HANGAR_KEY_BINDINGS, readOnly=True), 
            frontlineHangar.UserMissions(): FrontlineUserMissionsPresenter, 
            frontlineHangar.AlertMessage(): AlertPresenter}
 
@@ -118,6 +130,7 @@ class FrontlineHangar(ViewComponent[RouterModel], IRoutableView):
         self.__vehicleFilter.initialize()
         self.__invVehicleFilter.initialize()
         self.__accountStyles.initialize()
+        self.__blur.init()
         super(FrontlineHangar, self)._onLoading(*args, **kwargs)
 
     def _onShown(self):
@@ -157,6 +170,8 @@ class FrontlineHangar(ViewComponent[RouterModel], IRoutableView):
         self.__inputManager = None
         self.__accountStyles.destroy()
         self.__accountStyles = None
+        self.__blur.destroy()
+        self.__blur = None
         return
 
     @app_getter

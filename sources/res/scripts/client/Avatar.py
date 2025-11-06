@@ -1046,7 +1046,7 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
     def enemySPGShotSound(self, shooterPosition, targetPosition):
         self.complexSoundNotifications.notifyEnemySPGShotSound((self.getOwnVehiclePosition() - targetPosition).length, shooterPosition)
 
-    def __waitVehilceInfoForStartVisual(self, vehicle, resetControllers):
+    def __waitVehicleInfoForStartVisual(self, vehicle, resetControllers):
         if vehicle.id in self.arena.vehicles:
             if vehicle.id in self.__vehiclesWaitedInfo:
                 del self.__vehiclesWaitedInfo[vehicle.id]
@@ -1054,13 +1054,23 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.__vehiclesWaitedInfo[vehicle.id] = (weakref.proxy(vehicle), resetControllers)
         return True
 
+    def __onVehiclesListUpdatedForStartVisual(self):
+        for vehID in self.arena.vehicles:
+            self.__onVehicleInfoAddedForStartVisual(vehID)
+            if vehID == self.playerVehicleID and self.initCompleted:
+                vehicle = BigWorld.entities.get(vehID)
+                if vehicle is not None:
+                    vehicle.cell.sendStateToOwnClient()
+
+        return
+
     def __onVehicleInfoAddedForStartVisual(self, vehID):
         if vehID in self.__vehiclesWaitedInfo:
             params = self.__vehiclesWaitedInfo.pop(vehID)
             self.__startVehicleVisual(*params)
 
     def __startVehicleVisual(self, vehicle, resetControllers=False):
-        if self.__waitVehilceInfoForStartVisual(vehicle, resetControllers):
+        if self.__waitVehicleInfoForStartVisual(vehicle, resetControllers):
             return
         else:
             if vehicle.isDestroyed or not hasattr(vehicle, 'isHidden'):
@@ -2563,12 +2573,14 @@ class PlayerAvatar(BigWorld.Entity, ClientChat, CombatEquipmentManager, AvatarOb
         self.inputHandler.start()
         self.arena.onVehicleKilled += self.__onArenaVehicleKilled
         self.arena.onVehicleAdded += self.__onVehicleInfoAddedForStartVisual
+        self.arena.onNewVehicleListReceived += self.__onVehiclesListUpdatedForStartVisual
         MessengerEntry.g_instance.onAvatarInitGUI()
         self.soundNotifications.start()
 
     def __destroyGUI(self):
         self.arena.onVehicleKilled -= self.__onArenaVehicleKilled
         self.arena.onVehicleAdded -= self.__onVehicleInfoAddedForStartVisual
+        self.arena.onNewVehicleListReceived -= self.__onVehiclesListUpdatedForStartVisual
         self.soundNotifications.destroy()
         self.soundNotifications = None
         self.complexSoundNotifications.destroy()

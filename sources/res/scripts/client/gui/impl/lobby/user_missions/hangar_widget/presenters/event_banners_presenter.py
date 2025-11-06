@@ -1,6 +1,5 @@
-import json
+import json, BigWorld
 from typing import TYPE_CHECKING
-import BigWorld
 from debug_utils import LOG_ERROR
 from gui.impl.gen.view_models.views.lobby.user_missions.widget.event_banner_model import EventBannerModel
 from gui.impl.gen.view_models.views.lobby.user_missions.widget.event_banners_list_model import EventBannersListModel
@@ -130,6 +129,7 @@ class EventBannersPresenter(TooltipPositionerMixin, OverlapCtrlMixin, ViewCompon
         model.setIconsPath(banner.iconsPath)
         model.setVideosPath(banner.videosPath)
         model.setBorderColor(banner.borderColor)
+        model.setTimerText(banner.timerText)
         model.setTimerValue(banner.timerValue)
         model.setEventEndDate(banner.eventEndDate)
         model.setEventStartDate(banner.eventStartDate)

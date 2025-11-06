@@ -20,7 +20,7 @@
 				<material>
 					<identifier>s_010</identifier>
 					<fx>shaders/std_effects/glow_tone_mapping_compensation.fx</fx>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<materialKind>0</materialKind>
 					<property>
 						diffuseMap

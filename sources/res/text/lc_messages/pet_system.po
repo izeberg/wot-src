@@ -1,0 +1,232 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: World Of Tanks\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-04-22 10:00+0300\n"
+"PO-Revision-Date: 2025-04-22 10:00+0300\n"
+"Last-Translator: WoT Translator <noreply@wargaming.net>\n"
+"Language-Team: WoT Team <noreply@wargaming.net>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+msgid "bonus/credits/description"
+msgstr "Получите бонус к кредитам, чтобы увеличить их заработок в бою."
+
+msgid "bonus/credits/title"
+msgstr "Кредиты"
+
+msgid "bonus/crew/description"
+msgstr "Получите бонус к опыту экипажа, чтобы увеличить его заработок в бою."
+
+msgid "bonus/crew/title"
+msgstr "Опыт экипажа"
+
+msgid "bonus/crystal/description"
+msgstr "Получите бонус к бонам, чтобы увеличить их заработок в бою."
+
+msgid "bonus/crystal/title"
+msgstr "Боны"
+
+msgid "bonus/events/description"
+msgstr "Вас ждут увлекательные истории и множество наград!"
+
+msgid "bonus/events/title"
+msgstr "События"
+
+msgid "bonus/freeXP/title"
+msgstr "Свободный опыт"
+
+msgid "bonus/gold/title"
+msgstr "Золото​"
+
+msgid "bonus/showoff/description"
+msgstr "Пусть весь мир узнает о вашем преданном друге!"
+
+msgid "bonus/showoff/title"
+msgstr "Демонстрация"
+
+msgid "bonus/tankmenXP/description"
+msgstr "Получите бонус к боевому опыту, чтобы увеличить его заработок в бою."
+
+msgid "bonus/tankmenXP/title"
+msgstr "Боевой опыт"
+
+msgid "breedName/dog_1"
+msgstr "Немецкая овчарка"
+
+msgid "eventView/button"
+msgstr "Так точно!"
+
+msgid "infoPageEntryPoint"
+msgstr "Как подружиться со своим питомцем?"
+
+msgid "message/petAdded/button"
+msgstr "К уголку"
+
+msgid "message/petAdded/header"
+msgstr "К вам прибыл новый питомец: %(petType)s"
+
+msgid "message/petAdded/text"
+msgstr "Питомец «%(petBreed)s» прибыл в уголок"
+
+msgid "message/petBuy/success"
+msgstr "Питомец %(petName)s успешно приобретён. Потрачено %(price)s."
+
+msgid "message/server_error"
+msgstr "Операция временно недоступна. Попробуйте позже."
+
+msgid "message/synergyLevelUp/header"
+msgstr "Повышен уровень синергии с питомцем %(petName)s!"
+
+msgid "message/synergyLevelUp/text"
+msgstr ""
+"Доступны новые анимации. Продолжайте в том же духе, чтобы разблокировать "
+"больше анимаций!"
+
+msgid "message/synergyMaxLevel/header"
+msgstr "Повышен уровень синергии с питомцем %(petName)s!"
+
+msgid "message/synergyMaxLevel/text"
+msgstr "Доступны новые анимации"
+
+msgid "petDescription/dog_1"
+msgstr ""
+"Немецкая овчарка бесшумно бежала по полю боя за своим хозяином. Когда взрыв "
+"сбил человека с ног, собака оттащила его в укрытие и прикрывала своим телом "
+"до прибытия подмоги. Несмотря на раны, пёс оставался с хозяином — настоящий "
+"друг и соратник."
+
+msgid "petEventTooltip/body"
+msgstr "Пока вас не было, ваш питомец %(petName)s что-то нашёл. Посмотрите!"
+
+msgid "petHouseMarker/default"
+msgstr "Уголок"
+
+msgid "petHouseMarker/pet"
+msgstr "Уголок: {{petName}}"
+
+msgid "petSettings/cancelButton"
+msgstr "Отменить"
+
+msgid "petSettings/naming/subtitle"
+msgstr "Вы можете изменить кличку вашего питомца"
+
+msgid "petSettings/naming/tip/subtitle"
+msgstr "Дать питомцу новую кличку"
+
+msgid "petSettings/naming/tip/title"
+msgstr "Сменить кличку"
+
+msgid "petSettings/naming/title"
+msgstr "Кличка"
+
+msgid "petSettings/saveButton/label"
+msgstr "Сохранить"
+
+msgid "petSettings/uniqueName/tip/subtitle"
+msgstr "Это особый питомец — его кличку нельзя изменить."
+
+msgid "petSettings/uniqueName/tip/title"
+msgstr "Недоступно"
+
+msgid "petSettings/visibility/select/always"
+msgstr "Показывать всегда"
+
+msgid "petSettings/visibility/select/disableAnimation"
+msgstr "Отключить анимации"
+
+msgid "petSettings/visibility/select/onlyIntoPetPlace"
+msgstr "Показывать только в Ангаре"
+
+msgid "petSettings/visibility/subtitle"
+msgstr "Вы можете отправить питомца в Ангар, если он не слушается."
+
+msgid "petSettings/visibility/tip/subtitle"
+msgstr "Сменить режим отображения питомца"
+
+msgid "petSettings/visibility/tip/title"
+msgstr "Отображение питомца"
+
+msgid "petSettings/visibility/title"
+msgstr "Отображение питомца"
+
+msgid "petStorage/petBonus/title"
+msgstr "Активный бонус:"
+
+msgid "petStorage/petBonus/tooltip/content"
+msgstr ""
+"Бонус увеличивает награду вне зависимости от результатов боя. После "
+"достижения лимита бонус перестаёт действовать."
+
+msgid "petStorage/petCard/promo"
+msgstr "НОВОЕ"
+
+msgid "petStorage/progressbarDescription"
+msgstr "Увеличивает награду на определённое количество боёв в день."
+
+msgid "petStorage/progressbarTitle"
+msgstr "Остаток боевого бонуса"
+
+msgid "petStorage/progressbarTooltip/content"
+msgstr ""
+"Количество доступных бонусных боёв будет обновлено завтра. В бою "
+"используется один бонус, который увеличивает награду вне зависимости от "
+"результатов боя."
+
+msgid "petStorage/progressbarTooltip/title"
+msgstr "Доступные бонусы"
+
+msgid "petStorage/status/select"
+msgstr "Выбрать"
+
+msgid "petStorage/status/selected"
+msgstr "Выбрано"
+
+msgid "petStorage/title"
+msgstr "Уголок"
+
+msgid "petStorageTooltip/bonus/caption"
+msgstr "Осталось боёв. Обновится завтра"
+
+msgid "petStorageTooltip/bonus/currentBonus"
+msgstr "{{value}} за каждый бой"
+
+msgid "petStorageTooltip/bonus/inProgress"
+msgstr "Осталось боёв"
+
+msgid "petStorageTooltip/bonus/title"
+msgstr "Бонус"
+
+msgid "petType/dog"
+msgstr "собака"
+
+msgid "plusPercentValue"
+msgstr "+{{value}}%"
+
+msgid "promotion/button/challenge"
+msgstr "Задачи"
+
+msgid "promotion/button/purchase"
+msgstr "К покупке"
+
+msgid "promotion/challengeInfo/text_1"
+msgstr "Информация о задачах"
+
+msgid "promotion/challengeInfo/title_1"
+msgstr "Задачи"
+
+msgid "synergyTooltip/description/done"
+msgstr ""
+"С каждым новым уровнем синергии крепнет ваша дружба с питомцем. Этот боевой "
+"товарищ — лучший союзник, какого только можно представить, однако если вы "
+"долго будете неактивны, уровень снизится."
+
+msgid "synergyTooltip/description/inProgress"
+msgstr ""
+"Взаимодействуйте с питомцем, чтобы повысить уровень синергии. По достижении "
+"максимального уровня вы станете боевыми товарищами, однако если вы долго "
+"будете неактивны, уровень снизится."
+
+msgid "synergyTooltip/title"
+msgstr "Боевые товарищи"

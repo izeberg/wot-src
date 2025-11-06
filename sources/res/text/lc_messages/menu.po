@@ -2055,6 +2055,9 @@ msgstr ""
 msgid "disconnect/codes/1014"
 msgstr "рассинхронизация исследованных компонентов (код 1014)"
 
+msgid "discount/description/pet"
+msgstr "%(effectValue)s от стоимости покупки"
+
 msgid "discount/description/vehicle"
 msgstr "скидка %(effectValue)s на покупку %(targetName)s"
 
@@ -2898,6 +2901,9 @@ msgstr "Тренировочный бой"
 msgid "headerButtons/battle/menu/unit"
 msgstr "Командный бой"
 
+msgid "headerButtons/battle/modeInfo"
+msgstr "Режим: {{mode}}"
+
 msgid "headerButtons/battle/types/battleRoyale"
 msgstr "Стальной охотник"
 
@@ -3136,6 +3142,9 @@ msgstr "Командный бой"
 
 msgid "headerButtons/battle/types/winback"
 msgstr "Случайный бой: Разминка"
+
+msgid "headerButtons/battle/vehicleInfo"
+msgstr "Бой в режиме «{{mode}}» на технике {{level}}{{type}}{{name}}"
 
 msgid "headerButtons/browser"
 msgstr "Браузер"

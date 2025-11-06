@@ -15,7 +15,8 @@ __all__ = ('ArgsEvent', 'ComponentEvent', 'LoadViewEvent', 'LoadGuiImplViewEvent
            'ChannelManagementEvent', 'PreBattleChannelEvent', 'AmmunitionSetupViewEvent',
            'HasCtxEvent', 'DogTagsEvent', 'DeathCamEvent', 'FullscreenModeSelectorEvent',
            'ModeSelectorPopoverEvent', 'ModeSubSelectorEvent', 'NavigationEvent',
-           'BackNavigationEvent', 'PersonalMissionsEvent', 'UserMissionsEvent', 'GUICommonEvent')
+           'BackNavigationEvent', 'PersonalMissionsEvent', 'UserMissionsEvent', 'GUICommonEvent',
+           'PetObjectHoverEvent', 'PetSystemEvent')
 _logger = logging.getLogger(__name__)
 
 class HasCtxEvent(SharedEvent):
@@ -928,3 +929,16 @@ class UserMissionsEvent(SharedEvent):
         self.showMissionDetails = showMissionDetails
         self.y = y
         self.height = height
+
+
+class PetObjectHoverEvent(HasCtxEvent):
+    HOVER_IN = 'petObject/hoverIn'
+    HOVER_OUT = 'petObject/hoverOut'
+
+
+class PetSystemEvent(HasCtxEvent):
+    MEDAL_ANIMATION_SHOW = 'medalAnimation'
+    SEEN_IN_STORAGE_PET_IDS_UPDATED = 'seenInStoragePetIDsUpdated'
+    LAST_SEEN_SYNERGY_LEVEL_UPDATED = 'lastSeenSynergyLevelUpdated'
+    PET_OBJECT_PRESENTER_LOADING = 'petObjectPresenterLoading'
+    PET_OBJECT_PRESENTER_CLOSING = 'petObjectPresenterClosing'

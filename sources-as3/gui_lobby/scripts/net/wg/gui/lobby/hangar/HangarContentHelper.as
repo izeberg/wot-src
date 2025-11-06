@@ -1,6 +1,5 @@
 package net.wg.gui.lobby.hangar
 {
-   import net.wg.data.constants.generated.HANGAR_ALIASES;
    import net.wg.data.constants.generated.HANGAR_CONSTS;
    import net.wg.infrastructure.interfaces.entity.IDisposable;
    
@@ -76,12 +75,6 @@ package net.wg.gui.lobby.hangar
                case HANGAR_CONSTS.ALERT_MESSAGE:
                   this._hangar.removeAlertMessage();
                   break;
-               case HANGAR_CONSTS.COMP7_TOURNAMENT_BANNER:
-                  this._hangar.removeEventTournamentBanner(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER);
-                  break;
-               case HANGAR_CONSTS.COMP7_GRAND_TOURNAMENT_BANNER:
-                  this._hangar.removeEventTournamentBanner(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER);
-                  break;
                case HANGAR_CONSTS.PRESTIGE_WIDGET:
                   this._hangar.removePrestigeWidget();
                   break;
@@ -135,12 +128,6 @@ package net.wg.gui.lobby.hangar
                   break;
                case HANGAR_CONSTS.ALERT_MESSAGE:
                   this._hangar.addAlertMessage();
-                  break;
-               case HANGAR_CONSTS.COMP7_TOURNAMENT_BANNER:
-                  this._hangar.addEventTournamentBanner(HANGAR_ALIASES.COMP7_TOURNAMENT_BANNER);
-                  break;
-               case HANGAR_CONSTS.COMP7_GRAND_TOURNAMENT_BANNER:
-                  this._hangar.addEventTournamentBanner(HANGAR_ALIASES.COMP7_GRAND_TOURNAMENT_BANNER);
                   break;
                case HANGAR_CONSTS.PRESTIGE_WIDGET:
                   this._hangar.addPrestigeWidget();

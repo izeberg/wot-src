@@ -130,7 +130,7 @@ class PureDialogBuilder(object):
 
 
 class SimpleDialogBuilder(PureDialogBuilder):
-    __slots__ = ('_windowClass', '__message', '__formattedMessage', '__messageArgs')
+    __slots__ = ('__message', '__formattedMessage', '__messageArgs')
 
     def __init__(self):
         super(SimpleDialogBuilder, self).__init__()

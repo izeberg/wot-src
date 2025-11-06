@@ -46,6 +46,10 @@ class BaseEventBanner(object):
         return ''
 
     @property
+    def timerText(self):
+        return ''
+
+    @property
     def timerValue(self):
         return 0
 
@@ -65,6 +69,10 @@ class BaseEventBanner(object):
     def showTimerBeforeEventEnd(self):
         hoursBeforeEnd = 72
         return hoursBeforeEnd * time_utils.ONE_HOUR
+
+    @property
+    def isVisible(self):
+        return self._isVisible
 
     def createToolTipContent(self, event):
         return

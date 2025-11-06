@@ -175,6 +175,7 @@
 		<V-12V>256</V-12V>
 		<_6TD_K>257</_6TD_K>
 		<V_2_34_43>258</V_2_34_43>
+		<M_17F_T>259</M_17F_T>
 		<D-12-5>260</D-12-5>
 		<GMC_6046I>261</GMC_6046I>
 		<V_11_704>265</V_11_704>
@@ -571,8 +572,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>370</rpm_min>
+			<rpm_max>2088</rpm_max>
 		</V-2-34_B>
 		<V_2_34E>
 			<userString>#ussr_vehicles:V_2_34E</userString>
@@ -591,8 +592,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>373</rpm_min>
+			<rpm_max>2080</rpm_max>
 		</V_2_34E>
 		<V-2-34_C>
 			<userString>#ussr_vehicles:V-2-34_C</userString>
@@ -767,6 +768,26 @@
 			<rpm_min>312</rpm_min>
 			<rpm_max>2801</rpm_max>
 		</M_17T_SU_8>
+		<M_17F_T>
+			<userString>#ussr_vehicles:M_17F_T</userString>
+			<tags>gasoline</tags>
+			<level>5</level>
+			<price>20000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<power>550</power>
+			<weight>610</weight>
+			<maxHealth>170</maxHealth>
+			<maxRegenHealth>85</maxRegenHealth>
+			<repairCost>5</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>280</rpm_min>
+			<rpm_max>2901</rpm_max>
+		</M_17F_T>
 		<M-17B-IT>
 			<userString>#ussr_vehicles:M-17B-IT</userString>
 			<tags>gasoline</tags>
@@ -1691,8 +1712,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>386</rpm_min>
-			<rpm_max>2040</rpm_max>
+			<rpm_min>360</rpm_min>
+			<rpm_max>2120</rpm_max>
 		</V_2K_P>
 		<V-4>
 			<userString>#ussr_vehicles:V-4</userString>
@@ -2447,8 +2468,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>320</rpm_min>
-			<rpm_max>2240</rpm_max>
+			<rpm_min>293</rpm_min>
+			<rpm_max>2320</rpm_max>
 		</V-12_7x7>
 		<V-12A>
 			<userString>#ussr_vehicles:V-12A</userString>
@@ -4559,8 +4580,8 @@
 			<level>5</level>
 			<price>13500</price>
 			<notInShop>true</notInShop>
-			<wwsoundPC>eng_Hetzer_pc</wwsoundPC>
-			<wwsoundNPC>eng_Hetzer_npc</wwsoundNPC>
+			<wwsoundPC>eng_v55_pc</wwsoundPC>
+			<wwsoundNPC>eng_v55_npc</wwsoundNPC>
 			<power>500</power>
 			<weight>2318</weight>
 			<maxHealth>176</maxHealth>
@@ -4570,8 +4591,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>217</rpm_min>
-			<rpm_max>2265</rpm_max>
+			<rpm_min>386</rpm_min>
+			<rpm_max>2040</rpm_max>
 		</GMC_6046>
 		<TD_30>
 			<userString>#ussr_vehicles:TD_30</userString>

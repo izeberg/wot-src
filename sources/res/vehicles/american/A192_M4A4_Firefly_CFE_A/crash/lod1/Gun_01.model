@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodefullVisual>vehicles/american/A192_M4A4_Firefly_CFE_A/crash/lod1/Gun_01</nodefullVisual>
+	<tank>true</tank>
+	<visibilityBox>
+		<min>-0.524337 -0.399769 -1.067272</min>
+		<max>0.523771 0.296229 3.682231</max>
+	</visibilityBox>
+	<parent>vehicles/american/A192_M4A4_Firefly_CFE_A/crash/lod2/Gun_01</parent>
+	<extent>64.000000</extent>
+</root>

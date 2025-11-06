@@ -21,7 +21,7 @@
 					<identifier>Disk</identifier>
 					<fx>shaders/controlPoint/wg_controlPointRadius.fx</fx>
 					<materialKind>0</materialKind>
-					<collisionFlags>0</collisionFlags>
+					<collisionFlags>255</collisionFlags>
 					<property>
 						diffuseMap
 						<Texture>content/Interface/CheckPoint/Marker_03_AM.dds</Texture>

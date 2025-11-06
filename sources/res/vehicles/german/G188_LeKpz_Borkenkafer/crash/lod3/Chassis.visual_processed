@@ -98,6 +98,10 @@
 						alphaTestEnable
 						<Bool>true</Bool>
 					</property>
+					<property>
+						doubleSided
+						<Bool>true</Bool>
+					</property>
 				</material>
 				<groupOrigin>1.025028 0.515504 0.331111</groupOrigin>
 			</primitiveGroup>
@@ -136,6 +140,10 @@
 					</property>
 					<property>
 						alphaTestEnable
+						<Bool>true</Bool>
+					</property>
+					<property>
+						doubleSided
 						<Bool>true</Bool>
 					</property>
 				</material>

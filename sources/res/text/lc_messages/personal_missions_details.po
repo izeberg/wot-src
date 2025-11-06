@@ -3995,7 +3995,8 @@ msgstr "Авангард-14"
 
 msgid "pm3_10_1_14_description_counterAttack"
 msgstr ""
-"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
+"Нанести %(goal)s ед. урона машинам противника, которые попали по вашей "
+"машине."
 
 msgid "pm3_10_1_14_short"
 msgstr "Авангард-14"
@@ -4194,7 +4195,7 @@ msgid "pm3_10_2_10_description_kills"
 msgstr ""
 "Уничтожить суммарно не менее %(goal)s лёгких или средних танков противника."
 
-msgid "pm3_10_2_10_description_spotAndKill"
+msgid "pm3_10_2_10_description_soloAssist"
 msgstr "Уничтожить %(goal)s ед. лично обнаруженной техники противника."
 
 msgid "pm3_10_2_10_short"
@@ -4203,7 +4204,7 @@ msgstr "Засада-10"
 msgid "pm3_10_2_10_title_kills"
 msgstr "Уничтожение"
 
-msgid "pm3_10_2_10_title_spotAndKill"
+msgid "pm3_10_2_10_title_soloAssist"
 msgstr "Уничтожение"
 
 msgid "pm3_10_2_11"
@@ -4959,7 +4960,8 @@ msgstr "Авангард-9"
 
 msgid "pm3_8_1_9_description_counterAttack"
 msgstr ""
-"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
+"Нанести %(goal)s ед. урона машинам противника, которые попали по вашей "
+"машине."
 
 msgid "pm3_8_1_9_short"
 msgstr "Авангард-9"
@@ -5121,7 +5123,7 @@ msgid "pm3_8_2_5_description_kills"
 msgstr ""
 "Уничтожить суммарно не менее %(goal)s лёгких или средних танков противника."
 
-msgid "pm3_8_2_5_description_spotAndKill"
+msgid "pm3_8_2_5_description_soloAssist"
 msgstr "Уничтожить лично обнаруженную машину противника."
 
 msgid "pm3_8_2_5_short"
@@ -5130,7 +5132,7 @@ msgstr "Засада-5"
 msgid "pm3_8_2_5_title_kills"
 msgstr "Уничтожение"
 
-msgid "pm3_8_2_5_title_spotAndKill"
+msgid "pm3_8_2_5_title_soloAssist"
 msgstr "Уничтожение"
 
 msgid "pm3_8_2_6"
@@ -5529,7 +5531,8 @@ msgstr "Авангард-14"
 
 msgid "pm3_9_1_14_description_counterAttack"
 msgstr ""
-"Нанести %(goal)s ед. урона машинам противника, которые нанесли вам урон."
+"Нанести %(goal)s ед. урона машинам противника, которые попали по вашей "
+"машине."
 
 msgid "pm3_9_1_14_short"
 msgstr "Авангард-14"
@@ -5873,7 +5876,7 @@ msgid "pm3_9_2_5_description_kills"
 msgstr ""
 "Уничтожить %(goal)s ед. техники противника, не потеряв очков прочности."
 
-msgid "pm3_9_2_5_description_spotAndKill"
+msgid "pm3_9_2_5_description_soloAssist"
 msgstr "Уничтожить %(goal)s ед. лично обнаруженной техники противника."
 
 msgid "pm3_9_2_5_short"
@@ -5882,7 +5885,7 @@ msgstr "Засада-5"
 msgid "pm3_9_2_5_title_kills"
 msgstr "Уничтожение"
 
-msgid "pm3_9_2_5_title_spotAndKill"
+msgid "pm3_9_2_5_title_soloAssist"
 msgstr "Уничтожение"
 
 msgid "pm3_9_2_6"

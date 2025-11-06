@@ -155,6 +155,7 @@
 		<M_17T_nestejaahdytteinen_bensiinimoottori>160</M_17T_nestejaahdytteinen_bensiinimoottori>
 		<G04>161</G04>
 		<Maybach_Neues_Projekt_90>162</Maybach_Neues_Projekt_90>
+		<Maybach_HL_100TR_BW>163</Maybach_HL_100TR_BW>
 		<Mercedes_Benz_MB_507>263</Mercedes_Benz_MB_507>
 		<_2x_Hanomag_Boxer>264</_2x_Hanomag_Boxer>
 		<Maybach_HL_230P30D>265</Maybach_HL_230P30D>
@@ -430,6 +431,26 @@
 			<rpm_min>424</rpm_min>
 			<rpm_max>2440</rpm_max>
 		</Maybach_HL_108TR>
+		<Maybach_HL_100TR_BW>
+			<userString>#germany_vehicles:Maybach_HL_100TR_BW</userString>
+			<tags>gasoline</tags>
+			<level>3</level>
+			<price>5000</price>
+			<notInShop>true</notInShop>
+			<wwsoundPC>eng_Continental_R975_pc</wwsoundPC>
+			<wwsoundNPC>eng_Continental_R975_npc</wwsoundNPC>
+			<power>300</power>
+			<weight>500</weight>
+			<maxHealth>100</maxHealth>
+			<maxRegenHealth>50</maxRegenHealth>
+			<repairCost>3</repairCost>
+			<fireStartingChance>
+				0.2
+				<!--BW_String-->
+			</fireStartingChance>
+			<rpm_min>437</rpm_min>
+			<rpm_max>2400</rpm_max>
+		</Maybach_HL_100TR_BW>
 		<Maybach_HL_108TR_T>
 			<userString>#germany_vehicles:Maybach_HL_108TR</userString>
 			<tags>gasoline</tags>
@@ -2830,8 +2851,8 @@
 				0.15
 				<!--BW_String-->
 			</fireStartingChance>
-			<rpm_min>253</rpm_min>
-			<rpm_max>2440</rpm_max>
+			<rpm_min>232</rpm_min>
+			<rpm_max>2504</rpm_max>
 		</Simmering_Graz_Pauker_SLa_16>
 		<MB-503>
 			<userString>#germany_vehicles:MB-503</userString>

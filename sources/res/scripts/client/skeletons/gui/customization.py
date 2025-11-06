@@ -84,6 +84,9 @@ class ICustomizationService(object):
     def getItemByID(self, itemTypeID, itemID):
         raise NotImplementedError
 
+    def getTypedItemsByCDs(self, itemTypeID, itemCDs):
+        raise NotImplementedError
+
     def getItemByCD(self, itemCD):
         raise NotImplementedError
 

@@ -40,6 +40,10 @@ package net.wg.infrastructure.base.meta
       
       function restartNewbieBattleHintsS() : void;
       
+      function autodetectPhysicsSoundQualityS() : String;
+      
+      function canSelectPhysicsSoundQualityS(param1:int) : Boolean;
+      
       function as_setData(param1:Object) : void;
       
       function as_setCaptureDevices(param1:Number, param2:Array) : void;
@@ -49,6 +53,8 @@ package net.wg.infrastructure.base.meta
       function as_confirmWarningDialog(param1:Boolean, param2:String) : void;
       
       function as_showLimitedUISetting(param1:Boolean) : void;
+      
+      function as_showPhysicsSoundSettings(param1:Boolean) : void;
       
       function as_ConfirmationOfApplication(param1:Boolean) : void;
       
@@ -69,5 +75,7 @@ package net.wg.infrastructure.base.meta
       function as_setFeedbackDataProvider(param1:Array) : void;
       
       function as_setDisabledTabsOverlay(param1:Array, param2:String) : void;
+      
+      function as_onPhysicsSoundQualityApply(param1:Boolean) : void;
    }
 }

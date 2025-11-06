@@ -481,6 +481,29 @@ msgstr "Объект исследования 004 — Шепчущий жнец"
 msgid "attachment/test/testAttachment5"
 msgstr "Объект исследования 005 — Глаза пустоты"
 
+msgid "attachment/the_walking_dead"
+msgstr "The Walking Dead"
+
+msgid "attachment/the_walking_dead/Cus_136_BP18_Loudspeaker"
+msgstr "Система приманки ходячих"
+
+msgid "attachment/the_walking_dead/Cus_137_BP18_Machinegun"
+msgstr "Пулемёт Спасителей"
+
+msgid "attachment/the_walking_dead/Cus_138_BP18_Locker"
+msgstr "Шкафчик содержания ходячих"
+
+msgid "attachment/the_walking_dead/Cus_138_BP18_Locker/description"
+msgstr ""
+"Не открывать. Внутри мертвецы. Но, когда умрёт ваш двигатель и вы окажетесь "
+"в окружении, быть может, вас спасёт то, что здесь скрыто."
+
+msgid "attachment/the_walking_dead/Cus_139_BP18_SaviorsGear"
+msgstr "Возданные припасы"
+
+msgid "attachment/the_walking_dead/Cus_140_BP18_SurvivalsGear"
+msgstr "Снаряжение для выживания"
+
 msgid "attachment/thunderstrike"
 msgstr "Рок жив"
 
@@ -3073,6 +3096,15 @@ msgstr "?empty?"
 
 msgid "camouflage/bp2025_s17_4/label"
 msgstr "Миротворец"
+
+msgid "camouflage/bp2025_s18_1/label"
+msgstr "Что происходит после"
+
+msgid "camouflage/bp2025_s18_2/label"
+msgstr "Дни, изменившие мир"
+
+msgid "camouflage/bp2025_s18_3/label"
+msgstr "Добро пожаловать в новый мир"
 
 msgid "camouflage/bp8_auction_1_hull/description"
 msgstr "?empty?"
@@ -6306,6 +6338,9 @@ msgstr "?empty?"
 msgid "camouflage/pub_west_charity_2/label"
 msgstr "Золотое сердце"
 
+msgid "camouflage/pub_west_ebr_racing/label"
+msgstr "Гоночные полосы"
+
 msgid "camouflage/pub_west_germany_reunification_2025/description"
 msgstr "?empty?"
 
@@ -6629,6 +6664,12 @@ msgstr "?empty?"
 msgid "camouflage/shreder/label"
 msgstr "Ороку Саки"
 
+msgid "camouflage/snowy_climb/description"
+msgstr "?empty?"
+
+msgid "camouflage/snowy_climb/label"
+msgstr "Заснеженный подъём"
+
 msgid "camouflage/solo_dday_2024/description"
 msgstr ""
 "Камуфляж, вдохновлённый действиями союзной техники во время высадки в "
@@ -6836,6 +6877,12 @@ msgstr "?empty?"
 
 msgid "camouflage/tankfest_2025/label"
 msgstr "В городских условиях"
+
+msgid "camouflage/tankmas_2025/description"
+msgstr "?empty?"
+
+msgid "camouflage/tankmas_2025/label"
+msgstr "Десертный десант"
 
 msgid "camouflage/tanksmen_day/description"
 msgstr ""
@@ -7938,6 +7985,18 @@ msgstr "?empty?"
 msgid "camouflage/watcher_wakes/label"
 msgstr "Пробуждённый наблюдатель"
 
+msgid "camouflage/wci2025_1/label"
+msgstr "Золотая тень"
+
+msgid "camouflage/wci2025_progressive_st1/label"
+msgstr "Приказы на доске"
+
+msgid "camouflage/wci2025_progressive_st2/label"
+msgstr "Генеральские указания"
+
+msgid "camouflage/wci2025_progressive_st3/label"
+msgstr "Победный штрих"
+
 msgid "camouflage/wci_2024_1/description"
 msgstr "?empty?"
 
@@ -8091,6 +8150,12 @@ msgstr ""
 
 msgid "camouflage/white_tiger_2021_standalone/label"
 msgstr "Трансреактор (выкл.)"
+
+msgid "camouflage/winback_1/label"
+msgstr "Выбор «Акробата»"
+
+msgid "camouflage/winback_2/label"
+msgstr "Cygnition"
 
 msgid "camouflage/winter"
 msgstr "Зимние"
@@ -13417,6 +13482,15 @@ msgstr "Юбилейная Котя"
 msgid "emblem/special/sticker_871"
 msgstr "Юбилейный Мыш"
 
+msgid "emblem/special/sticker_876"
+msgstr "Mouz"
+
+msgid "emblem/special/sticker_877"
+msgstr "Улыбка Cyganzor"
+
+msgid "emblem/special/sticker_879"
+msgstr "Заснеженный подъём"
+
 msgid "filter/popover/bonusType/title"
 msgstr "Типы бонусов"
 
@@ -16253,6 +16327,24 @@ msgstr "Показатели в норме"
 
 msgid "inscription/special/special_837"
 msgstr "Wolfenstein"
+
+msgid "inscription/special/special_838"
+msgstr "MOUZAKROBAT"
+
+msgid "inscription/special/special_839"
+msgstr "CYGANZOR"
+
+msgid "inscription/special/special_847"
+msgstr "Не открывать. Внутри мертвецы"
+
+msgid "inscription/special/special_848"
+msgstr "Люсиль голодна"
+
+msgid "inscription/special/special_849"
+msgstr "У тебя кишка тонка"
+
+msgid "inscription/special/special_850"
+msgstr "Вышел месяц из тумана"
 
 msgid "inscription/special/special_90"
 msgstr "Гранд-финал 2017 Москва"
@@ -19121,6 +19213,141 @@ msgstr "Воздушные змеи"
 msgid "projection_decals/holiday/projection_decal_08"
 msgstr "Маскот программы благотворительности"
 
+msgid "projection_decals/holiday/projection_decal_101"
+msgstr "Золотые ямбы «Три благодати»"
+
+msgid "projection_decals/holiday/projection_decal_102"
+msgstr "Амулет из монеты «Три благодати»"
+
+msgid "projection_decals/holiday/projection_decal_103"
+msgstr "Амулет из монеты «Дракон и феникс»"
+
+msgid "projection_decals/holiday/projection_decal_104"
+msgstr "Амулет из монеты «Пять благодатей»"
+
+msgid "projection_decals/holiday/projection_decal_105"
+msgstr "Золотой амулет из десяти монет"
+
+msgid "projection_decals/holiday/projection_decal_106"
+msgstr "Красный амулет из десяти монет"
+
+msgid "projection_decals/holiday/projection_decal_107"
+msgstr "Китайский узел с золотыми краями"
+
+msgid "projection_decals/holiday/projection_decal_108"
+msgstr "Золотая монета счастья"
+
+msgid "projection_decals/holiday/projection_decal_109"
+msgstr "Золотая монета мира"
+
+msgid "projection_decals/holiday/projection_decal_110"
+msgstr "Золотая монета долголетия"
+
+msgid "projection_decals/holiday/projection_decal_111"
+msgstr "Ветви бамбука"
+
+msgid "projection_decals/holiday/projection_decal_112"
+msgstr "Левкой"
+
+msgid "projection_decals/holiday/projection_decal_113"
+msgstr "Белые нарциссы"
+
+msgid "projection_decals/holiday/projection_decal_114"
+msgstr "Жёлтые нарциссы"
+
+msgid "projection_decals/holiday/projection_decal_115"
+msgstr "Цветущая ветка персикового дерева"
+
+msgid "projection_decals/holiday/projection_decal_116"
+msgstr "Процветание и удача"
+
+msgid "projection_decals/holiday/projection_decal_117"
+msgstr "Позолоченный медальон счастья"
+
+msgid "projection_decals/holiday/projection_decal_118"
+msgstr "Позолоченное украшение для весеннего фестиваля"
+
+msgid "projection_decals/holiday/projection_decal_119"
+msgstr "Китайский узел счастья с золотыми нитями"
+
+msgid "projection_decals/holiday/projection_decal_120"
+msgstr "Позолоченный свиток счастья"
+
+msgid "projection_decals/holiday/projection_decal_121"
+msgstr "Фейерверк из одуванчиков"
+
+msgid "projection_decals/holiday/projection_decal_122"
+msgstr "Трёхцветный пионовый фейерверк"
+
+msgid "projection_decals/holiday/projection_decal_123"
+msgstr "Фейерверк из хризантем"
+
+msgid "projection_decals/holiday/projection_decal_124"
+msgstr "Барабан с драконьими узорами"
+
+msgid "projection_decals/holiday/projection_decal_125"
+msgstr "Связка позолоченных хлопушек"
+
+msgid "projection_decals/holiday/projection_decal_126"
+msgstr "Позолоченные хлопушки"
+
+msgid "projection_decals/holiday/projection_decal_127"
+msgstr "Тёмно-золотое облако"
+
+msgid "projection_decals/holiday/projection_decal_128"
+msgstr "Веер счастья с тремя косичками"
+
+msgid "projection_decals/holiday/projection_decal_129"
+msgstr "Красный веер с золотыми бамбуковыми узорами"
+
+msgid "projection_decals/holiday/projection_decal_130"
+msgstr "Красный веер с узорами в виде зимоцвета"
+
+msgid "projection_decals/holiday/projection_decal_131"
+msgstr "Цветочный фонарь с узорами в виде зимоцвета"
+
+msgid "projection_decals/holiday/projection_decal_132"
+msgstr "Красный фонарь с узорами в виде золотого карпа"
+
+msgid "projection_decals/holiday/projection_decal_133"
+msgstr "Веерный фонарь с узорами в виде зимоцвета"
+
+msgid "projection_decals/holiday/projection_decal_134"
+msgstr "Дворцовый фонарь с узорами в виде зимоцвета"
+
+msgid "projection_decals/holiday/projection_decal_135"
+msgstr "Вазовый фонарь с весенними мотивами"
+
+msgid "projection_decals/holiday/projection_decal_136"
+msgstr "Фонарь гармонии с золотыми драконьими узорами"
+
+msgid "projection_decals/holiday/projection_decal_137"
+msgstr "Большой красный фонарь удачи"
+
+msgid "projection_decals/holiday/projection_decal_138"
+msgstr "Шестигранный фонарь счастья"
+
+msgid "projection_decals/holiday/projection_decal_139"
+msgstr "Бумажный фонарь с золотыми ободами"
+
+msgid "projection_decals/holiday/projection_decal_140"
+msgstr "Маленький красный фонарь с весенними мотивами"
+
+msgid "projection_decals/holiday/projection_decal_141"
+msgstr "Золотая кадильница с драконьими ручками"
+
+msgid "projection_decals/holiday/projection_decal_142"
+msgstr "Золотая трёхногая жаба"
+
+msgid "projection_decals/holiday/projection_decal_143"
+msgstr "Золотая драконья черепаха"
+
+msgid "projection_decals/holiday/projection_decal_144"
+msgstr "Золотой лев"
+
+msgid "projection_decals/holiday/projection_decal_145"
+msgstr "Золотой карп"
+
 msgid "projection_decals/holiday/projection_decal_146"
 msgstr "Заряжай сердца!"
 
@@ -19604,6 +19831,9 @@ msgstr "Пинап Дарджилинг"
 msgid "projection_decals/pin_up/projection_decal_70"
 msgstr "Пинап Арису"
 
+msgid "projection_decals/pin_up/projection_decal_71"
+msgstr "Пинап-Кей"
+
 msgid "projection_decals/progression"
 msgstr "Этапные"
 
@@ -19871,11 +20101,44 @@ msgstr ""
 "Описание этой декали тоже немного выбивается из баланса и требует доработки "
 "напильником."
 
+msgid "projection_decals/special/projection_decal_1000"
+msgstr "Тонкие черты"
+
+msgid "projection_decals/special/projection_decal_1001"
+msgstr "Отметка стратега"
+
+msgid "projection_decals/special/projection_decal_1002"
+msgstr "WCI 2025"
+
+msgid "projection_decals/special/projection_decal_1008"
+msgstr "Сражайся с мёртвыми"
+
+msgid "projection_decals/special/projection_decal_1009"
+msgstr "Люсиль"
+
 msgid "projection_decals/special/projection_decal_101"
 msgstr "Крылья"
 
 msgid "projection_decals/special/projection_decal_101/description"
 msgstr "Декаль, выдаваемая участникам специальной акции."
+
+msgid "projection_decals/special/projection_decal_1010"
+msgstr "Ниган"
+
+msgid "projection_decals/special/projection_decal_1011"
+msgstr "Выжившие"
+
+msgid "projection_decals/special/projection_decal_1012"
+msgstr "Мы сражаемся за будущее"
+
+msgid "projection_decals/special/projection_decal_1013"
+msgstr "Украсьте корпус"
+
+msgid "projection_decals/special/projection_decal_1014"
+msgstr "Командир отряда"
+
+msgid "projection_decals/special/projection_decal_1015"
+msgstr "Ледорубы"
 
 msgid "projection_decals/special/projection_decal_102"
 msgstr "Ой, тёпленькая пошла!"
@@ -23004,6 +23267,12 @@ msgstr "Среди волков"
 msgid "projection_decals/special/projection_decal_971"
 msgstr "Восьмибитный Би Джей"
 
+msgid "projection_decals/special/projection_decal_976"
+msgstr "mouzAkrobat"
+
+msgid "projection_decals/special/projection_decal_977"
+msgstr "Фиолетовая планета"
+
 msgid "projection_decals/special/projection_decal_979"
 msgstr "Стальной охотник, Mk. I"
 
@@ -23032,6 +23301,9 @@ msgstr ""
 "Раньше эти парни знали, как за секунду лишить танк противника 100% "
 "прочности, а его владельца — нервов, клавиатуры, стула и любых попавшихся "
 "под руку предметов. Пришлось немного усмирить пыл САУ."
+
+msgid "projection_decals/special/projection_decal_991"
+msgstr "Чиби-Кей"
 
 msgid "projection_decals/test_unified_decals"
 msgstr "Test Unified Slots Decals"
@@ -24441,6 +24713,9 @@ msgstr "Древесно-угольный"
 msgid "repaint/girls_und_panzer_rabbit"
 msgstr "Болотный"
 
+msgid "repaint/girls_und_panzer_saunders"
+msgstr "Школа Сандерс"
+
 msgid "repaint/girls_und_panzer_turtle"
 msgstr "Песочный"
 
@@ -24773,6 +25048,9 @@ msgstr "Меч Деваны"
 
 msgid "repaint/shreder"
 msgstr "Ороку Саки"
+
+msgid "repaint/snowy_climb"
+msgstr "Заснеженный подъём"
 
 msgid "repaint/solo_dday_2024_us_desc"
 msgstr ""
@@ -25916,6 +26194,20 @@ msgstr ""
 "Та-дам-там-татам.\n"
 "Та-дам-там-татам."
 
+msgid "special_style/A166_H_3_WD_3Dst"
+msgstr "Убежища нет"
+
+msgid "special_style/A166_H_3_WD_3Dst_desc/long"
+msgstr ""
+"«Кажется, совсем недавно один из наших застрял в такой штуковине в окружении"
+" ходячих и уже был готов отправиться к праотцам. Но кто-то наверху сжалился,"
+" видать, потому что ему всё-таки удалось выбраться. Наша команда подлатала "
+"этот танк и сделала из него настоящую машину для выживания. Достаточно "
+"большую, чтобы перевозить оружие и припасы, и достаточно прочную, чтобы "
+"пережить нападение. Конечно, не о таком мире мы мечтали, но это всё, что у "
+"нас есть. Мы делаем то, что должны. Будет день — будем жить. И что бы нас ни"
+" ожидало, я знаю, мы справимся, ведь именно так мы и выживаем»."
+
 msgid "special_style/A167_TS_6_G90_3Dst"
 msgstr "Дюк"
 
@@ -25987,6 +26279,27 @@ msgstr ""
 "задание, как ты привык. Тут нужно работать в команде. Но я знаю, что ты "
 "справишься. Может, тебе даже понравится. Чем чёрт не шутит! А теперь вперёд,"
 " и задай им жару, сынок»."
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst"
+msgstr "Sherman Firefly Saunders"
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc"
+msgstr "?empty?"
+
+msgid "special_style/A192_M4A4_Firefly_CFE_A_3Dst_desc/long"
+msgstr ""
+"Вариант американского танка М4А4 Sherman с 30-цилиндровым двигателем "
+"Chrysler A57 Multibank, который, согласно собранной британцами статистике, "
+"отличался высокой надёжностью. Машина была разработана в начале 1944 года. "
+"Основные отличия заключались в установке более мощного 17-фунтового орудия, "
+"переносе радиостанции и увеличении площади боеукладки, а также в отказе от "
+"курсового пулемёта и места для ассистента механика-водителя.\\nЭкипаж танка "
+"составляют опытные студентки школы «Сандерс». Команда традиционно "
+"представляет культуру США, поэтому выступает на технике американского "
+"производства, выкрашенной в тёмно-оливковый базовый цвет. Этот Sherman "
+"украшен символом школы — заострённым щитом, на котором изображена синяя "
+"пятиконечная звезда с жёлтой молнией внутри, а также красная лента с "
+"названием школы."
 
 msgid "special_style/A40_T95_SC_3DSt"
 msgstr "Клаудбрейк"
@@ -26329,6 +26642,20 @@ msgid "special_style/Ch58_111_Vz51_PLA_3DSt_desc/long"
 msgstr ""
 "«Отец нечасто бывал дома, но праздники и наши с Юнмэй дни рождения не пропускал. Он мало чем интересовался, а свои редкие выходные проводил либо в кабинете, либо за игрой в маджонг в чайном домике. Кажется, ему часто везло. В июне шестьдесят шестого я видел его последний раз. Отец пришёл под утро. Мы с сестрой завтракали, когда он подошёл к нам, улыбнулся и подарил мне фотографию с танком, которого я никогда не видел, хотя уже неплохо в них разбирался. По словам мамы, в тот же день он уехал в очередную командировку.\n"
 "…Я видел его! Это, без сомнений, был отец! Он появился из ниоткуда, из дыма и пламени. Закрыл нас от пулемётной очереди, превратил в пыль вражеский дот и так же внезапно исчез. Всё произошло слишком быстро. Мои ребята даже не поняли, что их спасло. Но я слишком часто рассматривал фотографию этого танка...»"
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst"
+msgstr "DZT-159 Душа дракона"
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst_desc"
+msgstr "Парите на золотых крыльях с этим престижным стилем."
+
+msgid "special_style/Ch61_DZT_159_WCI_3Dst_desc/long"
+msgstr ""
+"Арена пылает. Толпа ревёт. Золотой дракон наблюдает.\n"
+"\n"
+"Веками перед этим древним стражем разворачивались бесчисленные битвы. Он видел, как многие достигли славы и ещё больше — канули в безвестность. Устав от стольких лет без достойных соперников, он ищет истинных чемпионов — воинов, чья сила и мастерство не уступают его собственным.\n"
+"\n"
+"Когда дым рассеивается, и выжившие герои переводят дух среди тлеющих углей, дракон останавливает взгляд на избранных. Тех, кому суждено стать легендами."
 
 msgid "special_style/Ch62_BZ_75_M"
 msgstr "Небесная доблесть"
@@ -26931,6 +27258,20 @@ msgstr ""
 "В день испытаний всё шло как обычно. Танк, казалось, доставили из будущего, но за футуристичной внешностью скрывалась всем известная машина. Вернее, все так думали. В документах он значился под кодовым именем «Ветер Арракиса».\n"
 "На одном из этапов произошло что-то неожиданное. Вместо того чтобы просто вести огонь по целям, танк начал маневрировать с такой гибкостью и скоростью, что на секунду показалось, что он сейчас взлетит. Он не выпустил ни единого снаряда, но все мишени выглядели так, будто их вытащили из пожара.\n"
 "На следующий день командование вызвало конструктора в штаб, но ни его, ни машины в части уже не было. Позже в ангаре обнаружили лишь небольшой клочок бумаги с загадочной надписью «Да здравствуют бесстрашные воители»."
+
+msgid "special_style/G168_KJpz_T_III_AS5_3Dst"
+msgstr "Нулевой пациент"
+
+msgid "special_style/G168_KJpz_T_III_AS5_3Dst_desc/long"
+msgstr ""
+"«Я с трудом поднялась на ноги, вытерла остатки мириума с маски и камеры. Как"
+" ни странно, обе были в порядке, чего не скажешь о машине, что чуть меня не "
+"сбила. Чем дольше я на неё смотрела, тем больше она напоминала раненое "
+"животное, а не сломанный аппарат. Странно: её «раны» были стянуты стальной "
+"цепью. Какая-то дикая пародия на работу полевого медика, который зашивает "
+"раненного солдата. Но ведь эхо-танки — просто танки. Они же не живые, верно?"
+" Они не могут истекать кровью. Так почему тогда из этого искорёженного "
+"корпуса течёт мириум? И почему он выглядел... испуганным?»"
 
 msgid "special_style/G16_PzVIB_Tiger_II_3DSt_NEx"
 msgstr "Кампфгруппа Schneide"
@@ -27571,6 +27912,19 @@ msgstr ""
 "\n"
 "P.S. Когда разберёмся здесь, привезу тебе трофейный «Парабеллум»."
 
+msgid "special_style/J42_Chi_Se_AS5_3Dst"
+msgstr "Шрам"
+
+msgid "special_style/J42_Chi_Se_AS5_3Dst_desc/long"
+msgstr ""
+"Прошлое — разорвано. Ненужное — изъято. Истинное — выковано. Шрамы — всё, что осталось на месте памяти.\n"
+"\n"
+"«Соваться в Волот с оторванным коллектором было плохой идеей. Но выбора у нас, собственно, не было. Прыгнуть в неизвестность всё же лучше, чем вечно бродить по зачищенной фазе, как всадник без головы. В общем, мы прыгнули. Не знаю, к лучшему или к худшему, но остались в живых. Координаты неизвестны, связь отсутствует, положение Волота не фиксируется.…\n"
+"\n"
+"А ещё снаружи бегает толпа в противогазах, разговаривает на своём тарабарском языке и всячески пытается нас отсюда выковырять. Люди в мириумном пространстве?! Ничего хорошего от них мы не ждём, поэтому все люки задраили наглухо…\n"
+"\n"
+"Что-то мне нравится здесь всё меньше. Даже не знаю, в чём причина. То ли в этих песнопениях, которые тянут ребята снаружи, то ли в здоровенной штуковине с крючьями на цепях, к которой прицепили наш танк, то ли в чёрной жиже, которая капает со всех сторон…»"
+
 msgid "special_style/KanonenPanter_105"
 msgstr "Чёрная пантера"
 
@@ -28165,6 +28519,20 @@ msgstr "Волшебная игрушка"
 msgid "special_style/advent_calendar_2024_2_desc"
 msgstr ""
 "Всесезонный стиль, посвящённый самому желанному на Новый год — подаркам."
+
+msgid "special_style/advent_calendar_2025_1_desc"
+msgstr ""
+"Этот ледяной всесезонный стиль поможет сохранить хладнокровие даже в пылу "
+"самой жаркой битвы."
+
+msgid "special_style/advent_calendar_2025_2_desc"
+msgstr ""
+"Нанесите на свою броню всесезонный стиль, высеченный изо льда, и станьте "
+"единым целым с тундрой."
+
+msgid "special_style/advent_calendar_2025_3_desc"
+msgstr ""
+"Всесезонный стиль, который защитит вашу машину от суровых объятий зимы."
 
 msgid "special_style/allbetsareoff"
 msgstr "Ставки сделаны"
@@ -29711,6 +30079,51 @@ msgstr ""
 "пока не увидели её в деле. Условия ухудшались, напряжение росло, но Алессия "
 "ни на секунду не теряла концентрации. Что бы она ни обдумывала в лесу, это "
 "работало чертовски хорошо."
+
+msgid "special_style/bp2025_s18_1"
+msgstr "Что происходит после"
+
+msgid "special_style/bp2025_s18_1_desc"
+msgstr ""
+"С этим всесезонным стилем вы будете готовы к тому, что произойдёт после "
+"пробуждения мертвецов."
+
+msgid "special_style/bp2025_s18_1_desc/long"
+msgstr ""
+"«Когда-то я мечтал о тишине. Терпеть не мог весь этот городской шум: люди "
+"болтают, будто им есть что сказать, музыка гремит, моторы ревут... Теперь "
+"всё смолкло. Слышно только цикад и ворон — и это если повезёт. А если нет — "
+"слышно ходячих и их голодное рычание. Да уж... Раньше я ненавидел шум. "
+"Теперь я по нему скучаю»."
+
+msgid "special_style/bp2025_s18_2"
+msgstr "Дни, изменившие мир"
+
+msgid "special_style/bp2025_s18_2_desc"
+msgstr "Зловещий всесезонный стиль. Близко к нему лучше не подходить..."
+
+msgid "special_style/bp2025_s18_2_desc/long"
+msgstr ""
+"«Кажется, целая вечность прошла с тех пор, как я тогда проснулся на "
+"больничной койке. Ни врачей, ни медсестёр — только лужи крови, разбитое "
+"вдребезги оборудование и мерцающий свет. Воняло гнилью. Я наткнулся на "
+"стянутые цепями двери, на которых краской было написано: \"НЕ ОТКРЫВАТЬ. "
+"ВНУТРИ МЕРТВЕЦЫ\". До меня только потом дошло, что это значило. Кто бы ни "
+"был в той комнате... однажды они уже умерли. Этого должно было быть "
+"достаточно»."
+
+msgid "special_style/bp2025_s18_3"
+msgstr "Добро пожаловать в новый мир"
+
+msgid "special_style/bp2025_s18_3_desc"
+msgstr "Всесезонный стиль для встречи с новой, ужасающей реальностью."
+
+msgid "special_style/bp2025_s18_3_desc/long"
+msgstr ""
+"«Думал, ты вытянул счастливый билет? Хорошая работа, красивый дом, элитный "
+"район... Всё это теперь в прошлом. С мёртвыми дни превратились в русскую "
+"рулетку, но по-настоящему бояться нужно живых. Каждый день — испытание, "
+"которое многие не пройдут. Добро пожаловать в новый мир»."
 
 msgid "special_style/bp8_auction_1"
 msgstr "Гнев Императора"
@@ -31765,6 +32178,21 @@ msgstr ""
 "росло. Несмотря на недостаток боевого опыта, ученики быстро познавали "
 "премудрости танкового сражения в клубе сэнся-до и были причастными к "
 "грандиозным победам школы Оараи."
+
+msgid "special_style/girls_und_panzer_saunders"
+msgstr "Школа Сандерс"
+
+msgid "special_style/girls_und_panzer_saunders_desc"
+msgstr "Всесезонный стиль c элементами блистательной школы «Сандерс»."
+
+msgid "special_style/girls_und_panzer_saunders_desc/long"
+msgstr ""
+"Сказочно богатая школа «Сандерс» может похвастаться внушительным арсеналом "
+"американских танков. А её многочисленные ученицы обожают устраивать "
+"роскошные вечеринки с горами фастфуда не меньше, чем хвастаться своим парком"
+" M4 Sherman! Однако не стоит принимать гостеприимство этих девушек за "
+"мягкость. Их стратегия построена на подавлении противника числом, но при "
+"случае они могут прибегнуть и к более изощрённой тактике."
 
 msgid "special_style/give_paw"
 msgstr "Дай лапу"
@@ -33876,6 +34304,20 @@ msgstr ""
 "сколько возможностей. Здесь вы контролируете ситуацию — так покажите "
 "покажите же, чего стоите!"
 
+msgid "special_style/pub_west_ebr_racing"
+msgstr "Гоночные полосы"
+
+msgid "special_style/pub_west_ebr_racing_desc"
+msgstr "Всесезонный стиль для ситуаций, когда скорость важнее всего."
+
+msgid "special_style/pub_west_ebr_racing_desc/long"
+msgstr ""
+"Гоночные машины — это, конечно, круто: быстрые, стильные, все дела. Но могут"
+" они похвастаться гусеницами или огромной пушкой? Вот и я о том же. "
+"Объедините лучшее из этих разных миров с помощью изысканной покраски и "
+"выбирайте между тремя расцветками, чтобы либо раствориться на поле боя, либо"
+" привлечь все взгляды."
+
 msgid "special_style/pub_west_germany_reunification_2025"
 msgstr "Единый Берлин"
 
@@ -34534,6 +34976,19 @@ msgstr ""
 "зазевавшейся жертвы. Сержант Василевич, тащи известь и кисти, будем красоту "
 "наводить»."
 
+msgid "special_style/snowy_climb"
+msgstr "Заснеженный подъём"
+
+msgid "special_style/snowy_climb_desc"
+msgstr "С этим всесезонным стилем можно горы свернуть. Буквально."
+
+msgid "special_style/snowy_climb_desc/long"
+msgstr ""
+"Похоже, на пути к величию вам покорились новые высоты, командир! Этот "
+"суровый стиль, вдохновлённый безжизненными пейзажами заснеженных вершин, "
+"поможет вам пробудить в себе альпиниста. Но даже если вы любите приключения,"
+" лучше не смотрите вниз, чтобы сохранить в бою ясную голову."
+
 msgid "special_style/solo_dday_2024_uk"
 msgstr "Моя ошибка"
 
@@ -34905,6 +35360,25 @@ msgstr "Всесезонный стиль, приуроченный к собы�
 
 msgid "special_style/tankfest_desc/long"
 msgstr "?empty?"
+
+msgid "special_style/tankmas_2025"
+msgstr "Десертный десант"
+
+msgid "special_style/tankmas_2025_desc"
+msgstr ""
+"Аппетитный всесезонный стиль, который украсит вашу машину листьями падуба."
+
+msgid "special_style/tankmas_2025_desc/long"
+msgstr ""
+"«Загадка: большой, отважный и слегка пахнет цитрусами. Кто это? Правильно, "
+"я. Меня нарядили, как пирог: украсили корпус листьями падуба и великолепным "
+"красным бантом, от которого щекотно при езде. Раньше я был весь в пыли и "
+"грязи, а теперь стал звездой новогоднего бала. Экипажи посмеиваются, дети "
+"машут, и даже снежинки, кажется, танцуют, когда я проезжаю мимо. В воздухе "
+"витает аромат сосен, и праздничное настроение окутывает меня, словно "
+"покрывало из сахарной пудры. Наступили праздники, и я полон радости, не "
+"говоря уже об изюме. Только не пытайтесь меня съесть — может, я мягкий и "
+"воздушный, но всё ещё кусаюсь»."
 
 msgid "special_style/tanksman_day"
 msgstr "День танкиста"
@@ -35549,6 +36023,42 @@ msgstr ""
 "Как будто планировало обмен: твой танк на саркофаг. С тех пор никто не "
 "вызывался патрулировать пустыню»."
 
+msgid "special_style/wci2025_1"
+msgstr "Золотая тень"
+
+msgid "special_style/wci2025_1_desc"
+msgstr ""
+"Тематический 2D-стиль, посвящённый Международному чемпионату по World of "
+"Tanks 2025 в городе Сучжоу, Китай."
+
+msgid "special_style/wci2025_1_desc/long"
+msgstr ""
+"Ваш позолоченный борт сияет на солнце яркой искрой — всего на мгновение, но "
+"этого достаточно. Противник наводится на золотой отблеск, но тот уже исчез. "
+"Вы отступили в тень в полной готовности застать жертву врасплох. С глухим "
+"стуком заряжается снаряд. Гусеницы противника взрывают землю, оптика "
+"судорожно ищет призрака... но уже слишком поздно. Словно бронированный "
+"киллер, вы устранили свою цель, оставшись незамеченным."
+
+msgid "special_style/wci2025_progressive"
+msgstr "Приказы на доске"
+
+msgid "special_style/wci2025_progressive_desc"
+msgstr ""
+"Тематический прогрессионный стиль, посвящённый Международному чемпионату по "
+"World of Tanks 2025 в городе Сучжоу, Китай."
+
+msgid "special_style/wci2025_progressive_desc/long"
+msgstr ""
+"Казалось бы, что может быть общего у эпических танковых сражений с неспешной"
+" игрой в сянци? На самом деле, управление бронированной машиной требует не "
+"меньшей сосредоточенности и мастерства. Сначала вы изучаете ландшафт, словно"
+" игровую доску. Вы отслеживаете передвижение противника, чтобы занять лучшую"
+" позицию. Подобно тому, как искусный игрок передвигает ладью, заманивая в "
+"ловушку вражеского коня или защищая генерала, ваши решения на поле боя "
+"определяют исход битвы. Этот стиль развивается в рамках трёх уровней по мере"
+" того, как растёт ваше мастерство."
+
 msgid "special_style/wci_2024_1"
 msgstr "Упорство"
 
@@ -35690,6 +36200,35 @@ msgstr "Катушка индуктивности"
 
 msgid "special_style/white_tiger_2021_hounds"
 msgstr "Системная плата (вкл.)"
+
+msgid "special_style/winback_1"
+msgstr "Выбор «Акробата»"
+
+msgid "special_style/winback_1_desc"
+msgstr ""
+"Поддержите MouzAkrobat с помощью этого заряженного всесезонного стиля."
+
+msgid "special_style/winback_1_desc/long"
+msgstr ""
+"По имени — Mouz, по духу — настоящий мамонт. Этот парень — ваш проводник в "
+"мир стратегических видео и игровых стримов. Истинный мастер с холодной "
+"головой и тактическим мышлением, а также настоящая кладезь танковых знаний. "
+"Покрасьте свою броню в цвета его канала и докажите, что учились у лучших, "
+"добавив ярких акцентов на поле боя."
+
+msgid "special_style/winback_2"
+msgstr "Cygnition"
+
+msgid "special_style/winback_2_desc"
+msgstr "Яркий всесезонный стиль, вдохновлённый блоггером Cyganzor."
+
+msgid "special_style/winback_2_desc/long"
+msgstr ""
+"Говорят, что улыбка — лучшее украшение, так почему бы не добавить их "
+"побольше? Уверены, Cyganzor бы одобрил. Этот блогер на подъёме и "
+"демонстрирует безупречный стиль игры и хитрые тактики, при этом всегда "
+"оставаясь в хорошем настроении. Поддержите его, украсив свою машину этим "
+"ярким стилем."
 
 msgid "special_style/winter"
 msgstr "Зима"

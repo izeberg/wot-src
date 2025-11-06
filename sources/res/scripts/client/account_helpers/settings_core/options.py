@@ -1,6 +1,6 @@
 from enum import Enum
 from typing import TYPE_CHECKING
-import base64, cPickle, random, sys, fractions, itertools, weakref
+import Sound, base64, cPickle, random, sys, fractions, itertools, weakref
 from collections import namedtuple, OrderedDict
 from operator import itemgetter
 import logging, AvatarInputHandler.control_modes
@@ -27,7 +27,7 @@ from debug_utils import LOG_NOTE, LOG_DEBUG, LOG_ERROR, LOG_CURRENT_EXCEPTION, L
 from gui.Scaleform.managers.windows_stored_data import g_windowsStoredData
 from messenger import g_settings as messenger_settings
 from account_helpers.AccountSettings import AccountSettings, SPEAKERS_DEVICE, COLOR_SETTINGS_TAB_IDX, APPLIED_COLOR_SETTINGS
-from account_helpers.settings_core.settings_constants import SOUND, SPGAimEntranceModeOptions, GRAPHICS, COLOR_GRADING_TECHNIQUE_DEFAULT, POST_PROCESSING_QUALITY
+from account_helpers.settings_core.settings_constants import SOUND, SPGAimEntranceModeOptions, GRAPHICS, COLOR_GRADING_TECHNIQUE_DEFAULT, POST_PROCESSING_QUALITY, SoundPhysicsQuality
 from messenger.storage import storage_getter
 from shared_utils import CONST_CONTAINER, forEach
 from gui import GUI_SETTINGS
@@ -161,7 +161,7 @@ class SettingAbstract(ISetting):
         if options is None:
             return self._get()
         else:
-            return self.PackStruct(self._get(), self._getOptions())._asdict()
+            return self.PackStruct(self._get(), options)._asdict()
 
     def dump(self):
         pass
@@ -2525,7 +2525,7 @@ class SoundQualitySetting(AccountSetting):
 
     @classmethod
     def isAvailable(cls):
-        return True
+        return False
 
     def _set(self, isEnabled):
         self.setSystemValue(isEnabled)
@@ -2533,6 +2533,48 @@ class SoundQualitySetting(AccountSetting):
 
     def setSystemValue(self, isEnabled):
         WWISE.WW_setLowQuality(isEnabled)
+
+
+class PhysicsQualitySoundSettings(UserPrefsStringSetting):
+    _SETTINGS = SoundPhysicsQuality.ORDER
+
+    def __init__(self):
+        super(PhysicsQualitySoundSettings, self).__init__(SOUND.PHYSICS_QUALITY)
+
+    def _set(self, presetID):
+        if self._get() != presetID:
+            Sound.setSpatialAudioPreset(self._SETTINGS[presetID])
+        super(PhysicsQualitySoundSettings, self)._set(presetID)
+
+    def _getString(self):
+        presetName = self._readValue(Settings.g_instance.userPrefs['soundPrefs'])
+        if presetName in self._SETTINGS:
+            return presetName
+        presetName = Sound.getSpatialAudioPreset()
+        if presetName in self._SETTINGS:
+            return presetName
+        return Sound.getRecommendedPreset()
+
+    def _get(self):
+        return self._SETTINGS.index(self._getString())
+
+    def _save(self, presetID):
+        return self._writeValue(Settings.g_instance.userPrefs['soundPrefs'], self._SETTINGS[presetID])
+
+    def isPresetSupportedByIdx(self, optionIdx):
+        if optionIdx < len(self._SETTINGS):
+            optionID = self._SETTINGS[optionIdx]
+            recommendedQuality = Sound.getRecommendedPreset()
+            return self._SETTINGS.index(optionID) >= self._SETTINGS.index(recommendedQuality)
+
+    def _getOptions(self):
+        options = []
+        locale = R.strings.settings.sounds.physicsQuality.options
+        for guiID in self._SETTINGS:
+            options.append({'data': guiID, 
+               'label': backport.text(locale.dyn(guiID)())})
+
+        return options
 
 
 class BassBoostSetting(AccountSetting):

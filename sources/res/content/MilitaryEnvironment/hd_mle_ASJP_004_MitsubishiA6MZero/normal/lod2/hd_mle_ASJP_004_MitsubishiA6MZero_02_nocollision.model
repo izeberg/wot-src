@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<parent>content/MilitaryEnvironment/hd_mle_ASJP_004_MitsubishiA6MZero/normal/lod3/hd_mle_ASJP_004_MitsubishiA6MZero_02_nocollision</parent>
+	<extent>150.000000</extent>
+	<visibilityBox>
+		<min>-7.442543 -0.905754 -7.308391</min>
+		<max>7.442503 1.885494 3.215560</max>
+	</visibilityBox>
+	<nodelessVisual>content/MilitaryEnvironment/hd_mle_ASJP_004_MitsubishiA6MZero/normal/lod2/hd_mle_ASJP_004_MitsubishiA6MZero_02_nocollision</nodelessVisual>
+</root>

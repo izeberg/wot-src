@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+	<nodelessVisual>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod2/Gun_01</nodelessVisual>
+	<tank>true</tank>
+	<parent>vehicles/german/G168_KJpz_T_III/_skins/G168_KJpz_T_III_AS5_3Dst/crash/lod3/Gun_01</parent>
+	<extent>96.000000</extent>
+	<visibilityBox>
+		<min>-1.305167 -0.417274 -1.760342</min>
+		<max>1.295949 0.660993 7.262046</max>
+	</visibilityBox>
+</root>

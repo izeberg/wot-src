@@ -230,12 +230,6 @@
 		<packAllEnvironments>True</packAllEnvironments>
 	</map>
 	<map>
-		<id>2014</id>
-		<name>251_br_battle_city3_hw25</name>
-		<packAllEnvironments>True</packAllEnvironments>
-		<isDevelopment>false</isDevelopment>
-	</map>
-	<map>
 		<isHangar>True</isHangar>
 		<name>h33_battle_royale_2021</name>
 	</map>
@@ -246,5 +240,9 @@
 	<map>
 		<isHangar>true</isHangar>
 		<name>hangar_v4</name>
+	</map>
+	<map>
+		<isHangar>true</isHangar>
+		<name>hangar_v4_advent</name>
 	</map>
 </root>

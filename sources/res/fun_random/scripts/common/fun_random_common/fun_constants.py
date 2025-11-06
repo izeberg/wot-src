@@ -13,8 +13,7 @@ BATTLE_MODE_VEH_TAGS_EXCEPT_FUN = constants.BATTLE_MODE_VEHICLE_TAGS - {'fun_ran
 class FunSubModeImpl(object):
     DEV_TEST = 0
     DEFAULT = 1
-    EQUALIZATION = 2
-    ALL = (DEFAULT, EQUALIZATION) + ((DEV_TEST,) if constants.IS_DEVELOPMENT else ())
+    ALL = (DEFAULT,) + ((DEV_TEST,) if constants.IS_DEVELOPMENT else ())
 
 
 class FunProgressionCondition(object):

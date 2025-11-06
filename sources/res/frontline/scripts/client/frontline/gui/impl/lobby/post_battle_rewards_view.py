@@ -247,7 +247,7 @@ class PostBattleRewardsView(ViewImpl, LobbyHeaderVisibility, IGlobalListener):
                 showFrontlineAwards(bonuses=rewards, onAnimationEndedCallback=_onAwardsAnimationEnded)
 
         currLvl, _ = self.__epicController.getPlayerLevelInfo()
-        self.__rewardsSelectionWindow = showEpicRewardsSelectionWindow(level=currLvl, onRewardsReceivedCallback=_onRewardReceived, onCloseCallback=self.destroy, isAutoDestroyWindowsOnReceivedRewards=False, parent=self.getParentWindow())
+        self.__rewardsSelectionWindow = showEpicRewardsSelectionWindow(level=currLvl, onRewardsReceivedCallback=_onRewardReceived, onLoadedCallback=self.__onClose, isAutoDestroyWindowsOnReceivedRewards=False)
 
     def __onEpicUpdated(self, diff):
         if 'metaLevel' in diff:
@@ -289,4 +289,4 @@ class PostBattleRewardsView(ViewImpl, LobbyHeaderVisibility, IGlobalListener):
 class PostBattleRewardsWindow(WindowImpl):
 
     def __init__(self, ctx=None, parent=None):
-        super(PostBattleRewardsWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=PostBattleRewardsView(ctx=ctx), layer=WindowLayer.FULLSCREEN_WINDOW, parent=parent)
+        super(PostBattleRewardsWindow, self).__init__(WindowFlags.WINDOW | WindowFlags.WINDOW_FULLSCREEN, content=PostBattleRewardsView(ctx=ctx), layer=WindowLayer.WINDOW, parent=parent)
