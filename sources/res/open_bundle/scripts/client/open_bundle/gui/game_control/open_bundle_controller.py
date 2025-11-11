@@ -51,6 +51,7 @@ class OpenBundleController(IOpenBundleController, EventsHandler):
 
     def onDisconnected(self):
         self.__stop()
+        self.__clear()
 
     def init(self):
         g_playerEvents.onClientUpdated += self.__onClientUpdated
@@ -59,6 +60,7 @@ class OpenBundleController(IOpenBundleController, EventsHandler):
     def fini(self):
         g_playerEvents.onClientUpdated -= self.__onClientUpdated
         self.__stop()
+        self.__clear()
         self.__eventsManager.clear()
         self.__bonusLayoutConfig.clear()
 
@@ -128,9 +130,11 @@ class OpenBundleController(IOpenBundleController, EventsHandler):
     def __stop(self):
         self._unsubscribe()
         self.__switchHelper.stop()
-        self.__syncData.clear()
         self.__settingsConfig = None
         return
+
+    def __clear(self):
+        self.__syncData.clear()
 
     def __startNotifiers(self):
         self.__statusChangeNotifiers = [ SimpleNotifier(partial(self.__getTimeToStatusChange, bundleID), partial(self.onStatusChanged, bundleID)) for bundleID in self.bundleIDs
