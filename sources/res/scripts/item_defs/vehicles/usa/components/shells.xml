@@ -4550,7 +4550,7 @@
 		<isForceTracer>true</isForceTracer>
 		<effects>largeNursMissleExplosive</effects>
 		<damage>
-			<armor>910</armor>
+			<armor>840</armor>
 			<devices>203</devices>
 		</damage>
 		<armorSpalls>
@@ -4560,7 +4560,7 @@
 			</impactRadius>
 			<coneAngle>90</coneAngle>
 			<damage>
-				<armor>455</armor>
+				<armor>420</armor>
 				<devices>100</devices>
 			</damage>
 		</armorSpalls>
@@ -4600,7 +4600,7 @@
 		<isForceTracer>true</isForceTracer>
 		<effects>largeNursMissleCumulative</effects>
 		<damage>
-			<armor>700</armor>
+			<armor>650</armor>
 			<devices>203</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>

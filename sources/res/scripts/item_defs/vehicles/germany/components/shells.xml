@@ -4571,7 +4571,7 @@
 		<effects>hugeArmorPiercing</effects>
 		<damage>
 			<armor>950</armor>
-			<devices>228</devices>
+			<devices>227</devices>
 		</damage>
 	</_170mm_StuK_L53_PzGr43>
 	<_170mm_StuK_L53_HlGr43>
@@ -4586,7 +4586,7 @@
 		<effects>hugeHollowCharge</effects>
 		<damage>
 			<armor>950</armor>
-			<devices>228</devices>
+			<devices>227</devices>
 		</damage>
 		<piercingPowerLossFactorByDistance>
 			0.05
@@ -4609,7 +4609,7 @@
 		<effects>hugeHighExplosive</effects>
 		<damage>
 			<armor>1300</armor>
-			<devices>228</devices>
+			<devices>227</devices>
 		</damage>
 		<armorSpalls>
 			<impactRadius>
